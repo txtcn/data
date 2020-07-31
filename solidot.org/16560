@@ -1,0 +1,57 @@
+➜BBC纪录片曝光了铁路控制中心的密码
+https://www.solidot.org/story?sid=43942	11348
+<div align="center"><img src="http://img.solidot.com.cn/0/243/liUvVM9CxUUBE.jpg" align="" height="338" width="450"><br>
+<br>
+</div>
+BBC2台上周播出了纪录片《<a target="_blank" href="http://www.bbc.co.uk/programmes/b05sz83j"><u>Nick and Margaret: The Trouble with Our Trains</u></a>》，展现了私有化20多年后英国铁路网络的悲惨现状。但在两位主持人参观伦敦滑铁卢车站Wessex Integrated控制中心时，摄像机<a target="_blank" href="https://grahamcluley.com/2015/05/train-control-centre-passwords-revealed/"><u>拍下了</u></a>控制中心的密码（如图所示）。画面中的密码非常清晰，也非常引人瞩目——他们使用的密码竟然就是Password3。也许下次BBC在播出纪录片时知道需要提前模糊密码，或者控制中心需要知道Password3是一个非常弱的密码。
+➜Io.js 2.0.0发布
+https://www.solidot.org/story?sid=43943	12482
+不到4个月时间，JavaScript运行时环境Io.js的版本号就从<a target="_blank" href="http://www.solidot.org/story?sid=42675"><u>1.0.0</u></a>升级到了<a target="_blank" href="https://iojs.org/dist/v2.0.0/"><u>2.0.0</u></a>。Io.js由前Node.js主要开发者在与Joyent公司<a target="_blank" href="http://www.solidot.org/story?sid=42171"><u>闹翻后</u></a>fork的版本，其更新频率之快令人侧目，GitHub的文本编辑器Atom已从Node.js<a target="_blank" href="http://www.solidot.org/story?sid=42939"><u>切换到了</u></a>Io.js。v2.0.0版的特性包括：V8 4.2.77.18，弃用smalloc模块，npm 2.9.0，显著减少TLS 的内存开销，等等。详细变化可参考<a target="_blank" href="https://github.com/iojs/io.js/blob/master/CHANGELOG.md"><u>ChangeLog</u></a>。
+➜美国律师事务所代表投资者调查360评测作弊事件
+https://www.solidot.org/story?sid=43944	15601
+三大安全评测机构上周以作弊为由取消了奇虎360的评测奖项，而奇虎随后以阴谋论、诉诸公众及情感的手法发表声明，宣布退出评测。奇虎是一家纳斯达克上市公司，它涉嫌作弊的行为也引起了投资者们的关注，律师事务所Pomerantz LLP<a target="_blank" href="http://finance.yahoo.com/news/shareholder-alert-pomerantz-law-firm-181200430.html"><u>宣布</u></a>代表投资者调查这起事件，它的调查主要集中在奇虎的高管或董事是否违反了《<a target="_blank" href="https://www.sec.gov/about/laws/sea34.pdf"><u>1934年证券交易法</u></a>》（PDF）的10(b)和20(a)章节。
+➜微软称一个IP地址被用于激活了数百Windows 7拷贝
+https://www.solidot.org/story?sid=43945	17607
+微软向西雅图地区法院<a target="_blank" href="http://torrentfreak.com/microsoft-logs-ip-addresses-to-catch-windows-7-pirates-150504/"><u>提起诉讼</u></a>，称Verizon的一个IP地址——<a target="_blank" href="http://ia601507.us.archive.org/10/items/gov.uscourts.wawd.214013/gov.uscourts.wawd.214013.1.0.pdf"><u>74.111.202.30</u></a>——被用于激活了数百Windows 7拷贝，它怀疑IP背后的人卷入了盗版活动。用户在激活微软产品时会自动向微软提供激活日期和IP地址等信息。微软称，它的取证工具允许该公司分析数以十亿计的软件激活模式。它发现了数百个源自74.111.202.30的产品激活，根据激活特征相信被告使用同一IP激活了盗版软件。微软称，被告使用了从供应链窃取或从未发行或超过授权限制多次使用产品密钥去激活了数百Windows 7拷贝。<br>
+➜微软谴责Android的更新方法
+https://www.solidot.org/story?sid=43946	18768
+微软的Windows主管Terry Myerson在芝加哥举行的Ignite会议上<a target="_blank" href="http://www.theverge.com/2015/5/4/8545917/microsoft-slams-android-security"><u>公开抨击</u></a>Google的Android更新方法，称Google没有承诺也拒绝承担责任为客户的Android设备提供更新，让每天使用Android设备的终端用户和企业日益暴露在安全漏洞之下。Android的碎片化早就备受诟病，但这本身就是Android生态系统的一个特征，而微软在WP产品上也没有做的比Google多出色。
+➜HardenedBSD：安全加固的FreeBSD
+https://www.solidot.org/story?sid=43947	29886
+<a href="http://citypw.blogspot.com">Shawn the R0ck</a> 写道<i> "<span lang="EN-US"><a target="_blank" href="https://hardenedbsd.org/">HardenedBSD</a>是由</span><span lang="EN-US"><span lang="EN-US">Oliver Pinter和Shawn Webb于2014年发起的<a target="_blank" href="https://github.com/HardenedBSD/hardenedBSD">一个自由软件项目</a>，其目的是为了改善FreeBSD的安全性，为了让<a target="_blank" href="http://seclists.org/fulldisclosure/2013/Jun/161">FreeBSD解决尴尬的”裸奔“</a>安全<a target="_blank" href="https://fail0verflow.com/blog/2012/cve-2012-0217-intel-sysret-freebsd.html">现状</a>，HardenedBSD主要的目标是通过系统级加固增强FreeBSD内核防御未知漏洞利用的能力和</span></span><span lang="EN-US"><span lang="EN-US"><span lang="EN-US"><span lang="EN-US">通过密码工程来</span></span>提升安全运维的可靠性。HardenedBSD在内核加固的项目上会为FreeBSD的x86和x86_64增加SMAP支持以让漏洞利用代码无法在内核态那么”舒服“的访问用户空间的数据，其中ASLR，<a target="_blank" href="http://mail-index.netbsd.org/tech-kern/2006/11/22/0002.html">SEGVGUARD</a>，mprotect以及针对procfs/linprocfs的加固实现都借鉴于<a target="_blank" href="http://www.solidot.org/story?sid=40244">PaX/Grsecurity</a>，由于ASLR的实现是基于PaX/Grsecurity的，所以去年让自我感觉良好的标准GNU/Linux防御(ASLR/PIE/NX)一夜之间崩溃的<a target="_blank" href="http://www.solidot.org/story?sid=42174">offset2lib绕过方式</a>对HardenedBSD无效。HardenedBSD社区哲学是尽量把代码提交到upstream，但如果FreeBSD upstream不接收的部分就自己维护。</span></span>
+</i>
+<p style="text-align: justify; text-justify: kashida; text-kashida: 0%;">
+<i><span lang="EN-US"><span lang="EN-US"></span></span></i></p>
+<i>
+<span lang="EN-US"><span lang="EN-US">btw：2015年的今天，面对这样的0ld sch00l社区，你还能抱怨地下精神死掉了吗？不管是斯拉夫兵工厂，还是数字军火商，”拣软柿子捏“的年代已经一去不返;-)
+</span></span>"</i>
+➜恶意程序被发现会通过破坏硬盘逃避检测
+https://www.solidot.org/story?sid=43948	31897
+<div align="center"><img src="http://img.solidot.com.cn/0/245/liZ5KDW9XtWU.png" align="" height="303" width="450"><br>
+<br>
+</div>
+思科Talos Group的研究人员报告<a target="_blank" href="http://arstechnica.com/security/2015/05/04/super-secretive-malware-wipes-hard-drive-to-prevent-analysis/"><u>发现了</u></a>一个恶意程序会采用多种方式破坏逃避检测，其中包括破坏硬盘和防止虚拟机分析。研究人员将恶意程序命名为<a target="_blank" href="http://blogs.cisco.com/security/talos/rombertik"><u>Rombertik</u></a>，它会不加选择的收集用户在互联网上的所有操作，可能是为了收集登录信息和其它敏感数据。它主要是通过邮件的恶意附件安装在用户电脑上。研究人员逆向工程了Rombertik，发现它采用了多种方法逃避分析。程序包含了多重混淆和反分析功能，让外人难以一窥内部工作。当程序主要组件检测到它正被安全研究人员或竞争对手仔细分析，它会自毁，同时破坏用户的所有数据。破坏方法首先是复写主引导记录，如果恶意程序没有权限复写主引导记录，它会用随机生成的密钥加密用户的主文件夹，然后重启。复写的主引导记录包含了打印文字“Carbon crack attempt, failed”的代码（如图）。为了躲避允许在可控环境下运行的沙盒工具，恶意程序会向内存写入9.6亿次随机数据。
+➜Facebook开放Internet.org平台，但不包括高带宽需求的网站
+https://www.solidot.org/story?sid=43949	33327
+为发展中国家提供免费网络服务的Internet.org计划在印度引发了网络中立的争议，迫使部分印度合作伙伴<a target="_blank" href="http://www.solidot.org/story?sid=43744"><u>退出了Internet.org</u></a>。作为回应，Facebook<a target="_blank" href="https://newsroom.fb.com/news/2015/05/announcing-the-internet-org-platform/"><u>宣布</u></a>开放Internet.org<a target="_blank" href="https://internet.org/platform"><u>平台</u></a>，允许开发者创建与 Internet.org集成在一起的服务。任何开发者都可以构建通过 Internet.org免费访问的服务，但有一个限制条件：高带宽需求的服务不包含在内。Internet.org不支持VoIP、视频、文件传输、高分辨率照片和大容量照片。Facebook CEO Mark Zuckerberg解释说，让互联网上的任何东西都免费访问在经济上无法做到可持续性，所以服务必须使用尽可能少的数据，能在普通手机上访问，不能使用JavaScript 或SSL/TLS/HTTPS。
+➜可能存在第六种碱基
+https://www.solidot.org/story?sid=43950	35112
+构成DNA和RNA的<a target="_blank" href="http://zh.wikipedia.org/wiki/%E6%A0%B8%E9%B9%BC%E5%9F%BA"><u>碱基</u></a>已知道有五种：胞嘧啶（C）、鸟嘌呤（G）、腺嘌呤（A）、胸腺嘧啶（T）和尿嘧啶（U）。西班牙科学家Holger Heyn和Manel Esteller在《细胞》期刊上<a target="_blank" href="http://www.cell.com/cell/abstract/S0092-8674%2815%2900438-9?_returnURL=http%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867415004389%3Fshowall%3Dtrue"><u>发表论文</u></a>，称可能存在<a target="_blank" href="http://www.sciencedaily.com/releases/2015/05/150504101254.htm"><u>第六种碱基</u></a>——甲基化腺嘌呤（mA）。Manel Esteller说，细菌使用甲基化腺嘌呤作为保护功能防止其它有机物的遗传材料插入到它的基因组中，这种现象被认为只存在于原始细胞中。最新一期的《细胞》发表了三篇论文，显示如人类体细胞之类的真核细胞也存在mA，mA充当了管理特定基因表达的功能，它构成了一种新的遗传外标记。
+➜Node.js和io.js准备合作
+https://www.solidot.org/story?sid=43951	38255
+因为对Node.js管理方Joyent公司不满，多位核心开发者自创门户建立了分支io.js，其开发非常活跃。两个互相竞争的项目如今正在Node.js基金会的名义下<a target="_blank" href="https://github.com/jasnell/dev-policy/blob/master/convergence.md#converging-the-projects"><u>准备合并</u></a>，合并完成之后github.org/iojs项目的所有权将转移到Node.js基金会，iojs.org 和nodejs.org域名的所有权以及相关社交媒体账号也都将转移给Node.js基金会。io.js将重新命名为Node.js基金会。不到半年时间，两个项目突然就化敌为友了。
+➜天涯社区准备上市
+https://www.solidot.org/story?sid=43952	39433
+成立16年的社区网站天涯<a target="_blank" href="http://tech.sina.com.cn/i/2015-05-05/doc-ichmifpz0980862.shtml"><u>准备挂牌上市</u></a>，而该公司已经连续两年净亏损。数据显示，天涯社区主要的收入来源为广告，2014年及2013年亏损金额分别为4465万元和3161万元，公司经营活动现金流量净额分别为负2571万元及负1880万元。2014年，百度是其第一大客户，贡献了1328万元的收入。海南省旅游发展委员会是天涯的第三大客户，贡献收入222.64万元。天涯董事长邢明表示天涯准备转型，但转型的脚步被认为走得太慢了。曾经受欢迎的社交网站人人网、猫扑，西祠胡同也都过了巅峰期。
+➜心理学研究存在可再现问题
+https://www.solidot.org/story?sid=43953	42259
+一个试图重现100项心理学研究发现的<a target="_blank" href="https://osf.io/ezcuj/wiki/home/"><u>众包项目</u></a>公布了初步结果，数据看起来令人担忧：只有39项研究能被重现。一篇论文结论被成功再现的认知心理学家Hal Pashler说，结果应该能说服每一个人，<a target="_blank" href="http://www.nature.com/news/first-results-from-psychology-s-largest-reproducibility-test-1.17433"><u>心理学存在可再现问题</u></a>。他说，许多科学家都假设论文如果出版了那么它就是正确的。研究偏见和学术不端的斯坦福大学科学家Daniele Fanelli说， 心理学的可再现问题并不比其它学科高，如癌症和药物发现领域的可再现比例更低。
+➜空调将大量增加电力使用
+https://www.solidot.org/story?sid=43954	43567
+美国和欧洲家庭耗电量将趋于平稳，但发展中国家和中等收入国家的能源使用将大幅增长，<a target="_blank" href="http://spectrum.ieee.org/energywise/energy/environment/electricity-consumption-could-soar-as-global-middle-class-embraces-ac"><u>原因是空调</u></a>。在中国，空调销量过去五年翻了近一番，仅仅2013年就售出了6000多万台空调。Hass商学院教授Lucas Davis说，空调将会改善30多亿热带和亚热带地区居民的生活。但要满足新的电力需求将需要集中投资建设电网，而空调带来的电网满负荷运作持续的时间不长，这意味着一年中的大部分时间电网是低效率运行。
+➜智能手机应用悄悄连接用户跟踪和广告网站
+https://www.solidot.org/story?sid=43955	45743
+法国EURECOM网络安全部的研究人员在预印本网站arxiv上发表了一份<a target="_blank" href="http://arxiv.org/pdf/1504.06093v2.pdf"><u>研究报告（PDF）</u></a>，他们从官方市场Google Play上下载了2000多个免费应用，在三星Galaxy SIII上运行这些应用，设置所有流量都经过他们的服务器，监视它们访问了哪些网站，然后将访问的网址名单与EasyList和EasyPrivacy的广告网站数据库进行对比。他们发现应用连接了2000多个顶级域名的25万个不同网址。大多数应用都是试图连接广告和跟踪网站，但有部分应用令人吃惊——其中名叫Music Volume EQ的应用访问了大约2000个不同的网址，有10%的应用访问了500多个不同网址，90%的应用主要是连接Google的广告服务。超过70%的应用没有访问任何用户跟踪网站，但有部分应用连接了800多个用户跟踪网站——名叫Eurosport Player的应用访问了810个跟踪网站。还有少部分应用试图访问与恶意程序相关联的可疑网站。智能手机用户们则<a target="_blank" href="http://www.technologyreview.com/view/537186/the-truth-about-smartphone-apps-that-secretly-connect-to-user-tracking-and-ad-sites/"><u>对此几乎一无所知</u></a>。研究人员开发了应用<a target="_blank" href="http://www.ghacks.net/download/113298/"><u>NoSuchApp（NSA）</u></a>（可能<a target="_blank" href="http://www.ghacks.net/2015/05/03/nosuchapp-for-android-highlights-apps-secretly-connecting-to-tracking-sites/"><u>不支持</u></a>你使用的手机）去告诉用户他们手机上的应用试图访问哪些外链。
+➜FDA对有害保健品保持沉默
+https://www.solidot.org/story?sid=43956	46256
+一项新研究表明，目前在全美各地数百家维生素商店销售的多种广受欢迎的减肥和健身补充剂中含有一种几乎完全等同于苯丙胺（即安非他明，一种强力兴奋剂）的化学物质，可对服用者的健康造成危害。去年12月，加拿大卫生当局指出这种简称BMPEA的化学物质是“一个严重的健康风险”，并将含有该物质的补充剂撤下商店的货架。FDA就已将九种含有这种化学物质的补充剂记录在案，但该机构既未公开这些产品的名称和生产它们的公司，也没有召回这些产品或像对待其他受污染的补充剂那样向消费者发布健康警报。公共卫生专家表示FDA不愿意对这件事采取行动，表明实际上还存在更广泛的问题。他们称，该机构未能有效监管补充剂行业的部分原因在于这一最高监管机构的成员本身就来自该行业，<a target="_blank" href="http://cn.nytstyle.com/health/20150505/t05fda/"><u>因此会产生利益冲突</u></a>。

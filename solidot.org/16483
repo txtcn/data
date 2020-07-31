@@ -1,0 +1,15 @@
+➜持续性攻击组织Equation Group曝光
+https://www.solidot.org/story?sid=43085	20529
+<a href="http://citypw.blogspot.com">Shawn the R0ck</a> 写道<i> "卡巴斯基实验室（Kaspersky Lab）<a target="_blank" href="http://www.kaspersky.com/about/news/virus/2015/equation-group-the-crown-creator-of-cyber-espionage">曝光了隐藏了20年之久的牵涉NSA的网络间谍组织</a>:Equation Group。之所以叫Equation是因为他们非常擅长使用各类加密手段，他们过去多年持续性的针对全球各类机构包括政府，外交机构，电信，能源，军队，金融，核能研究机构以及纳米技术公司等有“价值的目标”进行<a href="https://securelist.com/files/2015/02/Equation_group_questions_and_answers.pdf" target="_blank">持续性的定制木马</a>，在报道里讲了一个<a target="_blank" href="https://securelist.com/blog/research/68750/equation-the-death-star-of-malware-galaxy/">常见的故事</a>：某个教授在参与了一个会议回家后收到了一张寄来的光盘，然后打开运行后被“种上”了定制型木马。卡巴斯基的文件显示至少42个国家的500家机构被感染。中国也是<a target="_blank" href="http://arstechnica.com/security/2015/02/how-omnipotent-hackers-tied-to-the-nsa-hid-for-14-years-and-were-found-at-last/">重灾区</a>。目前已经有<a target="_blank" href="https://github.com/citypw/citypw-SCFE/raw/master/security/Documentation/tmp_sam/Equation_x86_x64.zip">恶意样本提供下载</a>，分析恶意特征的<a target="_blank" href="http://pastebin.com/P0Fb9DPb">YARA规则</a>。"</i>
+➜deb.haskell.org遭入侵
+https://www.solidot.org/story?sid=43086	48234
+函数编程语言项目Haskell.org<a target="_blank" href="https://status.haskell.org/"><u>报告</u></a>它的Debian构建服务器deb.haskell.org遭到入侵。托管主机的监视系统在2月12日探测到可疑传出流量后就将服务器下线，Haskell称软件包纂改的窗口非常小，他们正继续调查入侵和遭修改软件包扩散的范围。Debian支持检查下载的软件包和软件包源，但如果源文件遭到纂改，那么这种检查也提供不了安全性。
+➜Vint Cerf警告数字黑暗时代
+https://www.solidot.org/story?sid=43087	49458
+TCP/IP之父、Google副总裁Vint Cerf在 San Jose举办的美国科学促进会年度会议上对<a target="_blank" href="http://www.bbc.com/news/science-environment-31450389"><u>数字黑暗时代</u></a>发出了警告，表示需要更好的方法保存我们今天创造的数字信息。Vint Cerf称他担心我们今天保存在计算机上的图像和文件最终会遗失，原因是软件和硬件会有淘汰的一天。他担心未来几代人将会缺乏21世纪的信息。我们的生活、记忆和珍视的家庭照片日益作为比特信息储存在硬盘或云端，但随着技术的前进，它们可能会因为数字革命的加速而丢失。我们多数人都已经经历过类似事情，比如旧的文件格式无法被软件的最新版本读取。他的想法是保存软件和硬件的每一部分，让它们永远不会被丢弃——即数字形式的博物馆。
+➜IE将支持HSTS
+https://www.solidot.org/story?sid=43088	50248
+微软IE官方博客<a target="_blank" href="http://blogs.msdn.com/b/ie/archive/2015/02/16/http-strict-transport-security-comes-to-internet-explorer.aspx"><u>宣布</u></a>，IE浏览器的最新版本将支持HTTP Strict Transport Security（HSTS），Windows 10技术预览版的用户将能预览最新的变化。HSTS是帮助网站将用户从不安全的HTTP版本重定向到安全的HTTPS版本的一种机制。如果你访问的网站启用了HSTS，那么浏览器将会记住这一标记，确保你未来每次访问该网站都会自动定向到HTTPS。在这之前，主流浏览器只有IE<a target="_blank" href="http://www.solidot.org/story?threshold=0&amp;mode=thread&amp;sid=42570"><u>不支持HSTS</u></a>。
+➜抽烟比以前认为的更致命
+https://www.solidot.org/story?sid=43089	53494
+抽烟比我们以前认为的更致命。根据发表在《新英格兰医学期刊》上的一项<a target="_blank" href="http://www.nejm.org/doi/full/10.1056/NEJMsa1407211"><u>新研究</u></a>，除了众所周知的肺癌，冠心病、心脏病、慢性肺疾病和中风外，研究人员发现吸烟还与显著增加感染风险、肾脏疾病、血流量不足导致的肠道疾病，以及以前认为无关的心脏和肺部疾病有关联。研究人员分析了2000年到2011年年龄超过55岁的421,378男性和532,651女性的五项健康调查数据，调查期间有181,377人死亡，其中16,475死者为烟民。烟民的死亡率确实高于非烟民，但烟草相关疾病导致死亡只占烟民超额死亡的83%。研究人员<a target="_blank" href="http://www.nytimes.com/2015/02/12/health/smokings-health-toll-worse-than-previously-thought-study-says.html"><u>认为这个数字太低</u></a>，他们深度挖掘了数据，发现烟民死亡感染、肾病、被认为与烟草无关的呼吸系统疾病、高血压和心脏疾病的风险是非烟民的两倍。吸烟导致的死亡人数比以前认为的更多。

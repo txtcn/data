@@ -1,0 +1,50 @@
+➜Windows随机数字生成器漏洞
+https://www.solidot.org/story?sid=4399	600
+<a href="http://www.eurekalert.org/pub_releases/2007-11/uoh-slf111207.php">Windows操作系统使用的随机数字生成器（Windows Random Number Generator，简写WRNG）是伪随机的</a>。根据微软自己的说法，WRNG是在Windows 95中引入的，所有后续版本的Windows如Windows XP 和Windows 2000中都包含随机生成器，总体上并没有发生变化。WRNG也是目前世界上使用最广泛的伪随机数字生成器。WRNG使用了一个很复杂的分层式结构，用上了RC4和SHA-1加密算法，这些加密技术最初引入的时候是安全的，但现在已不再是。最近Haifa大学计算机科学系的Benny Pinkas博士领导的研究小组<a href="http://eprint.iacr.org/2007/419">详细分析了Windows伪随机生成器</a>，发现了其中的安全漏洞，找到了解密数字生成器工作的方法，能够计算出电脑前后使用的加密钥匙，从而获取秘密信息。论文结论认为微软需要改进数据编码的方法。他们建议微软公开随机数字生成器的源代码，以及其它Windows安全系统的原理，好让微软之外的计算机安全专家评估其成效。研究人员选用的操作系统是Windows 2000，他们推测XP和Vista使用了类似的随机数字生成器，后果是更容易受攻击。<a href="http://eprint.iacr.org/2007/419.pdf">论文PDF全文</a>。
+➜每日新闻加入雅虎阵营
+https://www.solidot.org/story?sid=4400	4200
+<a href="http://www.maoxinyu.cn/">maoxinyu</a> 写道 "根据最新消息，雅虎的报网合作阵营继续扩大，<a href="http://www.yeeyan.com/articles/view/goldsheng/3023">纽约每日新闻已经正式宣布加入雅虎的合作计划</a>。纽约每日新闻报计划利用雅虎精湛的网络技术来发展自身的广告业务，增强新闻产品传播力度，并改善招聘版面热门工作。每日新闻报的首席执行官Marc Kramer在一份声明中称，"作为这个报业联盟中规模最大的报纸，我们非常高兴能够成为这个大家庭中的新成员。无论是对我们的广告客户，对求职者，还是对所有读者来说，每日新闻与雅虎公司的合作关系将为他们带来更多宝贵机会。""
+➜魔戒风格的"web技术冒险地图"
+https://www.solidot.org/story?sid=4401	6300
+<a href="mailto:dexter.yy@gmail.com">dexter_yy</a> 写道 "其实这张手绘地图的名字应该是<a href="http://blog.whatfettle.com/2007/10/31/the_web_is_agreement/">“和谐web，和谐世界”（The Web is Agreement）</a>
+<i>
+地图从左到右是作者心目中的善良阵营和邪恶阵营……开源社区、创作共用协议、web2.0里的blog圈,tag,mashup技术，RDF, RSS之类的开放架构都在左边……而微软的FUD，DRM技术，病毒，垃圾邮件，SOA之类的企业架构被放在右边……出人意料的是“google的全知全能之眼”也在邪恶一边，是因为google的平台不够开放还是因为用户隐私问题？
+中间的圣山顶端是W3C组织和IETF，很多人在下面争吵和游说……
+地图从下到上的象征意义比较复杂，有点像web技术从简单到复杂，也像是从前端到后端的关系……最下面是最简单的URL地址和REST/HTTP架构的设计者Fielding博士……往上是各种前端技术，javascript/ajax是一座跨越“富用户体验”的桥梁……最上面的终点是一片混沌，叫做“不兼容的大漩涡”，右边的魔多软件（微软）往里面排入ie，activex之类的私有技术，左边的开源社区往里面排入更多的技术，产品和代码……从perl, php，java到linux……
+</i>
+还有很多很多细节……总之这张地图告诉我们的是：web技术这个世界很危险……好孩子不要来玩……
+<a href="http://www.flickr.com/photos/psd/1805709102/">注释版</a>，<a href="http://ia351403.us.archive.org/2/items/TheWebIsAgreement/web.PDF">下载PDF</a>。"
+➜Yahoo! 案和解
+https://www.solidot.org/story?sid=4402	13800
+<a href="http://moses.mason.googlepages.com/">Moses</a> 写道 "BBC 报导说, <a href="http://news.bbc.co.uk/chinese/simp/hi/newsid_7090000/newsid_7093500/7093569.stm">互联网巨头 Yahoo! 就异见人士在美国控告雅虎侵犯人权一案达成庭外和解.</a>
+<br>
+➜会隐身的等离子天线
+https://www.solidot.org/story?sid=4403	17400
+一种新型的<a href="http://www.scientificblogging.com/news_account/stealth_antenna_made_of_gas_impervious_to_jamming">由等离子体（自由电子和带电离子为主要成分的物质）组成的天线</a>，工作方式和普通天线一样，神奇之处之于一旦关闭电源它就消失了。商业上的价值或许不大，但在军事领域则意义重大。因为脱离等离子状态后，通信设备将很难被敌方探测到，此外它还可以快速的改变频宽，避开干扰。
+➜Miro 1.0版发布
+https://www.solidot.org/story?sid=4404	20100
+开源网络视频播放软件<a href="http://www.getmiro.com/">Miro</a>（就是以前那个<a href="__SLASHLINK__" sect="software" sid="07/07/19/0737250" sn="article" tid="116">民主主义播放器</a>：Democracy Player）正式发布了1.0版。开发者表示：<i>
+Miro是一款开源、采用GPL许可，支持RSS聚合器和BitTorrent的视频播放软件，内置了一个视频种子向导。它由<a href="http://www.pculture.org/">Participatory Culture基金会</a>创建，致力于让在线视频更易于观看，得到了Mozilla和<a href="http://www.kapor.com/">Mitch Kapor</a>等许多开源名人的支持。对比许多闭源、商业私有性软件，Miro拥护开放标准，支持DRM-free视频。我们开发这款软件是因为我们认为互联网视频绝对应该以开放技术为基础，我们不需要看门狗。
+</i>
+<a href="http://www.getmiro.com/features/">功能介绍</a>，<a href="http://www.getmiro.com/screencasts/">Demo</a>，<a href="http://www.getmiro.com/download/">下载</a>。
+➜Windows 7‘愿望列表（wishlist）’泄漏
+https://www.solidot.org/story?sid=4405	24300
+很显然，虽然微软正忙于处理Vista平台的一系列问题，但它还是在着手准备开发下一代的操作系统：Windows 7。这里一份已经在网络上到处流传的，推测是从微软泄漏出来的“<a href="http://tech.blorge.com/Structure:%20/2007/11/12/microsoft-windows-7-wishlist-leaked/">wishlist</a>”，包含了许多重要的将在新版Windows中实现的新功能。其中值得注意的功能有：整合字体管理；“网络连接”系统托盘将增加菜单；回收站需要添加视觉效果；IE中每一个标签上都要增加关闭按钮（Firefox 2有该功能）；关闭光驱时，Windows不要每次都自动运行；整合杀毒软件等等。这些功能看起来都是为了<a href="http://it.slashdot.org/article.pl?sid=07/11/13/2218259">改善用户体验</a>。
+➜基因改造老鼠不再怕猫
+https://www.solidot.org/story?sid=4406	27000
+日本东京大学的研究人员用基因技术<a href="http://www.pinktentacle.com/2007/11/scientists-create-fearless-mouse/">改造了一种不怕猫的老鼠</a>。通过让嗅球（olfactory bulb，是大脑中一个直接从嗅觉受体接受气味信息的区域）功能失效，研究人员创造了一种大胆的老鼠，当它闻到猫、狐狸或其它天敌的气味时不会逃走。研究人员指出，哺乳动物是否害怕其它动物气味，或是否躲避天敌的机制不是由更高级的大脑官能决定的。相反，是由比较低等的大脑功能嗅球神经回路决定的。
+➜第30版超级计算机TOP500发布
+https://www.solidot.org/story?sid=4407	28800
+每年公布两次的<a href="http://top500.org/list/2007/11/100">TOP500</a>超级计算机排行榜，最近成为热门讨论话题，因为最新一版的列表中，TOP10<a href="http://osnews.com/comment.php?news_id=18913">有一半的超级计算机是新面孔</a>。高居榜首的仍然是IBM的“蓝色基因/L”，但多个新超级电脑上榜证明这个市场相当活跃。其中印度拥有的由惠普制造的Cluster Platform 3000 BL460c排名第4，中国排在最前列的是胜利油田和地球物理研究所使用的<a href="http://top500.org/site/2749">IBM BladeCenter HS21 Cluster</a>，排在第59。71%的超级计算机使用Intel处理器，比半年前的58%增长了很多。Linux依旧是这一领域的统治者，85%（半年前是77%）的超级计算机运行着基于Linux 的操作系统。具体如下：<i>
+Linux：426 systems (85.2%)<br>
+Mixed：34 systems (6.8%)<br>
+Unix：30 systems (6%)<br>
+Windows：6 systems (1.2%)<br>
+BSD：2 systems (0.4%)<br>
+Mac OS：2 systems (0.4%)</i>
+➜豆瓣用户正式突破100万
+https://www.solidot.org/story?sid=4408	30300
+我们很少关注国内新闻，主要原因是要同时满足“有趣”和“和谐”比较困难。今天的一个重要事件是国内Web 2.0 网站的代表、真正富有原创性的网站——<a href="http://www.douban.com/">豆瓣网</a>——注册用户正式突破<a href="http://www.douban.com/location/world/">100万</a>（貌似solidot连1万都没到，slashdot估计在120万左右）。国内原创性的网站比较少，豆瓣网是一个， <a href="http://www.v2ex.com/">V2EX</a>也算一个（可惜）。突破100万的时间是<a href="http://www.caobian.info/?p=2723">2007年11月13日下午17点43分</a>。希望有一天我们能达到它的十分之一（还是先达到百分之一再说）。
+➜日本造音乐之路，让汽车演奏音乐
+https://www.solidot.org/story?sid=4409	34200
+《卫报》报道，日本北海道工业研究所的工程师设计了一种<a href="http://www.guardian.co.uk/international/story/0,,2209957,00.html?gusrc=rss&amp;feed=technology">特别的音乐马路</a>，汽车被当作音叉，驾驶就变成演奏音乐。工作原理是路面上制造出类似唱片的凹槽，用特定的间隔分割凹槽，当汽车慢速行驶过这些标记，就能产生出咕噜声音。音乐之路用间距来创造不同音符。

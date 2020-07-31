@@ -1,0 +1,130 @@
+➜正经的我，做了个不正经的项目 —— Pornhub 风格 Logo 生成器
+https://www.solidot.org/story?sid=60038	6182
+<a href="mailto:xiqingongzi@gmail.com">Bestony</a> 写道 "<i><b>TL；DR
+</b>
+<p>Logoly.Pro 是一个在线的 PornHub 风格 Logo 生成工具，可以帮助你快速生成类似 PornHub 风格的 Logo</p>
+<p>
+</p>
+<p>
+</p>
+<p></p>
+<p></p>
+<p>目前项目已经上线：<a href="https://logoly.pro/" style="box-sizing: border-box; border-bottom: 1px solid rgb(74, 74, 74);">https://logoly.pro/</a>&nbsp;</p>
+<p>代码也已开源：<a href="https://github.com/bestony/logoly" style="box-sizing: border-box; border-bottom: 1px solid rgb(74, 74, 74);">https://github.com/bestony/logoly</a>
+</p>
+<p>欢迎各位前来试用 &amp;&amp; 求 Star !</p>
+<p>昨晚，我花了 5 个小时，在肝一个项目，如今，让他成功上线，我便向大家介绍一下他。</p>
+<b>
+突发的灵感
+</b>
+<p>我自己平时经常要做一些 Side Project ，在做 Side Project 的时候，就涉及到了要做 Logo ，但是作为一个没有设计感的程序员，在做 Logo 时总是会做出一些很丑的 Logo ，于是痛定思痛，想想有没有什么有用的工具可以帮助我生成好看的 Logo。对于我来说，也不需要太过复杂，能够满足我自己的要求就行。
+<p></p>
+<!--more-->
+<p></p>
+</p>
+<p>那么这就要求这个 Logo 有一些特点</p>
+<ol style="box-sizing: border-box; padding-left: 2em;">
+<li style="box-sizing: border-box; margin: 10px 0px;">设计简单：很多带吉祥物的 Logo 就不适合我了，因为要去准备吉祥物的图片。</li>
+<li style="box-sizing: border-box; margin: 10px 0px;">辨识度高：单纯的简单并没有太多的用处， Logo 需要让用户能够记住</li></ol>
+<p>经过一番筛选，PornHub 的 Logo 进入到我的视线。</p>
+<p></p>
+<p></p>
+<b>
+设计产品
+</b>
+<p>在开发之前，我先进行了产品方面的考虑，看看我需要做哪些功能，哪些不做，最终得到了这样一个清单：</p>
+<p>要做的项目</p>
+<ol style="box-sizing: border-box; padding-left: 2em;">
+<li style="box-sizing: border-box; margin: 10px 0px;">项目使用 Vue 开发，因为可以快速上线</li>
+<li style="box-sizing: border-box; margin: 10px 0px;">项目使用 Netlify 部署，这样就可以使用自己的域名，并使用 SSL，速度还要比 Github Pages 快一些。</li>
+<li style="box-sizing: border-box; margin: 10px 0px;">项目应当支持自定义文字，这个是最基础的功能需求，必须要做的。</li>
+<li style="box-sizing: border-box; margin: 10px 0px;">项目应当支持自定义颜色，毕竟可能有其他的方面，需要类似风格，但是不同的颜色的 Logo</li>
+<li style="box-sizing: border-box; margin: 10px 0px;">项目应当支持自定义文字大小，毕竟我导出的是 PNG，如果不能自定义大小，大家可能会很困扰。</li>
+<li style="box-sizing: border-box; margin: 10px 0px;">项目应当加入 Google Analytics，加入统计，就知道有多少人用过我的项目了，也是一种成就感。</li>
+<li style="box-sizing: border-box; margin: 10px 0px;">项目应当加入我的个人信息，用来给我自己推广，顺便刷一波脸。</li>
+<li style="box-sizing: border-box; margin: 10px 0px;">社会化分享，应当有个方便的分享方法，这样才能够更好的帮助项目在前期成长。</li></ol>
+<p>不做的项目</p>
+<ol style="box-sizing: border-box; padding-left: 2em;">
+<li style="box-sizing: border-box; margin: 10px 0px;">自定义字体：原汁原味的 PH 风格，怎能瞎改字体呢？</li>
+<li style="box-sizing: border-box; margin: 10px 0px;">导出 JPG： 有了透明背景的 PNG，不透明的 JPG 的需求就没那么大了。</li></ol>
+<p>后续迭代实现的</p>
+<ol style="box-sizing: border-box; padding-left: 2em;">
+<li style="box-sizing: border-box; margin: 10px 0px;">其他简单的 Logo：比如 Youtube.</li></ol>
+<b>
+设计布局
+</b>
+<p>在完成了产品的功能，我又进行了布局的设计，这次我用的是 Adobe XD，最近很喜欢用这个工具来设计产品的界面，非常的方便。最终设计完成的版本如下：</p>
+<p></p>
+<p></p>
+<p>设计完成后，就要开始准备开始编码了。</p>
+<b>
+找库
+</b>
+<p>一开始，我考虑使用一些 UI Framework ,不过，由于一开始没有引入 UI Framework， 快写完了才发现基本不需要组件库，干脆将错就错，这样用了。</p>
+<p>在完成了基本的界面后，就是涉及到的一些库的使用了，这里要感谢前端生态圈的繁荣，我从&nbsp;1和&nbsp;2&nbsp;的源码里找到了我想要用的库。</p>
+<ul style="box-sizing: border-box; padding-left: 2em;">
+<li style="box-sizing: border-box; margin: 10px 0px;">dom-to-image: 将 Dom 元素转换成为图片，以备下载。</li>
+<li style="box-sizing: border-box; margin: 10px 0px;">file-save: 在 Vue 组件里调用系统的下载接口，下载图片</li></ul>
+<p>其他我用到的库还有</p>
+<ul style="box-sizing: border-box; padding-left: 2em;">
+<li style="box-sizing: border-box; margin: 10px 0px;">v-tooltips: 用户提醒，之前用的 Vue-Tour,但是跳跃感太强了，所以弃用了。</li>
+<li style="box-sizing: border-box; margin: 10px 0px;">vue-analytics： Vue 下的 Google Analytics 工具，可以很方便的调用 GA 进行统计。</li></ul>
+<b>
+上线
+</b>
+<p>在完成了开发后，将代码上传到 Github，准备部署。</p>
+<p>在前面提到，我考虑用 Netlify 进行部署，这里非常方便，在 Netlify 上直接创建项目，选择你的项目，然后填入命令即可。</p>
+<p></p>
+<p></p>
+<p>并配置一下域名，将自己的域名设置为主域名</p>
+<p></p>
+<p></p>
+<p>稍等一会，就会自动为你的域名签注 Let's Encrypt 的证书。</p>
+<p></p>
+<p></p>
+<b>
+最后
+</b>
+<p>关于这个项目的故事，我已经说完了所有我能想到的了，接下来，就是你的提问时间了，欢迎你针对项目对我提问，无论是产品、设计、编码，都可以~</p>
+<p>希望大家能够给这个项目一个 Star:&nbsp;<a href="https://github.com/bestony/logoly" style="box-sizing: border-box; border-bottom: 1px solid rgb(74, 74, 74);">https://github.com/bestony/logoly</a></p>
+<p style="box-sizing: border-box; line-height: 26px; margin: 0px 0px 20px;"><span style="box-sizing: border-box;"><a href="https://github.com/bestony/logoly" style="box-sizing: border-box; border-bottom: 1px solid rgb(74, 74, 74);"></a></span></p>
+</i>"
+➜NASA 因宇航服不合身取消全女性太空行走
+https://www.solidot.org/story?sid=60039	14293
+NASA <a href="http://news.sciencenet.cn/htmlnews/2019/3/424538.shtm"><u>宣布</u></a>，原定于 29 日在国际空间站实施的全女性太空行走取消，原因是没有合适的宇航服。3 月 6 日，NASA 宣布由安妮 · 麦克莱恩和克里斯蒂娜 · 科赫两位女性航天员执行 3 月 29 日的太空行走任务，为国际空间站换装功能更强的锂离子电池。26 日，NASA 宣布 29 日任务改由克里斯蒂娜 · 科赫和男航天员尼克 · 海牙合作完成。原因是安妮 · 麦克莱恩在 22 日已经完成过一次太空行走，她发现她的舱外航天服不合身，中等号码更合适。但到 29 日仅有一件中号航天服可供使用，只能满足一名女航天员出舱。因此 NASA 地面任务管理人员在与麦克莱恩等人沟通后决定更改任务部署。航天员要在失重状态下、穿着 160 公斤的航天服出舱工作 7 个小时。航天服不合身会影响航天员手、手腕、手臂灵活配合，甚至可能导致航天服与空间站碰撞、剐蹭等风险。
+➜华硕发布补丁应对 ShadowHammer 攻击
+https://www.solidot.org/story?sid=60040	18114
+卡巴斯基研究人员<a href="https://www.solidot.org/story?sid=60030" target="_blank"><u>公开了</u></a> ShadowHammer 攻击，攻击者通过入侵华硕自动更新工具的服务器，利用自动更新将恶意后门推送到客户计算机。华硕现在宣布了它释出了自动更新工具 ASUS Live Update 的新版本 3.6.8，加入了多个安全验证机制，防止软件自动更新或其它方式进行的任何恶意操纵，实现了一个端对端加密机制，加强了服务器到终端的软件架构，防止未来类似的攻击再次发生。华硕还发布了一个<a href="https://dlcdnets.asus.com/pub/ASUS/nb/Apps_for_Win10/ASUSDiagnosticTool/ASDT_v1.0.1.0.zip"><u>诊断工具</u></a>，帮助华硕客户诊断是否感染了恶意后门。
+➜高通与苹果专利战官司各下一城
+https://www.solidot.org/story?sid=60041	18910
+美国国际贸易委员会 (ITC) 周二对苹果与高通之间的专利权争议作出截然不同的决定，这一次两家公司<a href="https://cn.reuters.com/article/qualcomm-apple-patent-lawsuit-0327-idCNKCS1R806H?il=0"><u>基本打成平手</u></a>。 ITC 就两家公司的一项诉讼宣布对苹果有利的最后裁决；然而 ITC 行政法官在另案中做出一个支持高通但不具约束力的建议。高通在这两个案子中皆诉求禁止进口采用英特尔芯片的 iPhone 7、iPhone 8 与 iPhone X。由于 iPhone 都是在海外制造，因此进口禁令将导致 iPhone 在美国国内被禁止销售。“高通正利用这些案子转移注意力，回避对真正的问题做出回应，也就是他们垄断性的商业行为，” 苹果在声明中表示。高通赞扬了第一项于己方有利的裁决，但在第二项裁定公布后未立即表示意见。该公司主张，采用英特尔芯片的 iPhone 也从高通专利中获得了好处，苹果未足额缴纳权利金。
+➜Google 将 AMP 带到 Gmail
+https://www.solidot.org/story?sid=60042	19903
+Google 将它受争议的 AMP 技术<a href="https://arstechnica.com/gadgets/2019/03/google-brings-amp-to-email-turning-your-inbox-into-an-app/#p3"><u>带到了 Gmail</u></a>。从今天开始，Web 版 Gmail 将支持嵌入  AMP 内容，移动版 Gmail 将在晚些时候支持这一功能。嵌入的 AMP 内容允许用户直接在收件箱里与内容进行互动。Accelerated Mobile Pages（AMP）项目旨在提升移动设备对网站的访问速度，它在 HTML 等技术基础上进行改良，其核心称作 AMP HTML，是 HTML 的一种。但该项目受到了很多抵制和<a href="https://news.ycombinator.com/item?id=19493378"><u>批评</u></a>，批评者认为 AMP 项目创造了一个围墙花园，只服务于搜索巨人的利益。Google 则坚称 AMP 的使命能让开放 Web 受益。
+➜暗网市场 Dream Market 将于下月底关闭
+https://www.solidot.org/story?sid=60043	24380
+暗网市场 Dream Market 发表声明<a href="https://www.zdnet.com/article/top-dark-web-marketplace-will-shut-down-next-month/" target="_blank"><u>宣布</u></a>将于 4 月 30 日关闭。同一天，<a href="https://www.europol.europa.eu/newsroom/news/global-law-enforcement-action-against-vendors-and-buyers-dark-web" target="_blank"><u>欧洲刑警组织</u></a>、<a href="https://www.fbi.gov/news/stories/j-code-operation-sabotor-032619"><u>FBI</u></a> 和<a href="https://www.dea.gov/press-releases/2019/03/26/j-code-announces-61-arrests-its-second-coordinated-law-enforcement" target="_blank"><u>美国缉毒署</u></a>宣布对暗网毒品走私展开大规模打击，执行了数十次逮捕。Dream Market 是目前最大的暗网市场之一，它宣布关闭的时机在用户中间引发了怀疑：即 Dream Market 可能早就被执法机关扣押了，目前只是把它作为蜜罐运营。这种情况有过先例，2017 年荷兰警方接管了暗网市场 Hansa Market，然后继续运行了一个月去收集其用户的证据，执法机构还利用收集到的用户密码去访问用户在其它暗网市场的账号。
+➜欧盟通过受争议的新版权法
+https://www.solidot.org/story?sid=60045	30309
+欧盟议会周二<a href="https://www.dw.com/zh/%E6%AC%A7%E7%9B%9F%E8%AE%AE%E4%BC%9A%E9%80%9A%E8%BF%87%E6%96%B0%E7%89%88%E6%9D%83%E6%B3%95-%E4%BA%89%E8%AE%AE%E6%B3%95%E6%A1%88%E5%8A%A8%E4%BA%86%E8%B0%81%E7%9A%84%E5%A5%B6%E9%85%AA/a-48064196"><u>对版权法改革进行表决</u></a>，348 名欧洲议会议员投出赞成票，274 人投出反对票，另有 36 人弃权。议案得到通过。新版权法意味着互联网公司将需要为链接付费和审查受保护的内容。新版权法的第 11 条要求，网络平台不能在没有得到相关出版商的允诺的情况下，登载作品 -- 即便只是很短的片断。以 Google 为例，这意味着谷歌不能再像目前一样，直接在搜索引擎、Google 新闻中显示文章的部分内容了，而是要先获得出版方的同意，并可能要为显示这些内容付费。第 13 条 -- 在最终的法案中变为了第 17 条 -- 则规定，具有一定规模的网络平台须从作品上载前就展开版权保护义务。给受版权保护的作品发许可，否则不能上传。另外，一旦有内容被非法上传至网络平台，如果平台没有尽最大努力阻止该上传，该平台就要对侵权行为负责。对于很多网络运营商而言，这意味着要安装相关的过滤软件，以核查上传行为是否侵权。批评者认为，这种过滤会造成一些合法内容也遭到屏蔽，例如引经据典或者旨在搞笑的山寨作品。他们认为，这会限制言论自由。
+➜欧盟无意全面封杀华为
+https://www.solidot.org/story?sid=60046	30640
+欧盟执委会周二<a href="https://cn.reuters.com/article/eu-5g-security-risks-huawei-0326-tues-idCNKCS1R8036"><u>表示</u></a>，将要求成员国共享 5G 网络安全风险方面的数据，并在年底前制定相关举措。欧盟未理会美国要求其全面禁止华为进入的呼吁。欧盟执委会表示，目标在于利用现有安全规范下可用的工具并加强跨境合作，让各欧盟各国自行决定是否要根据国家安全考虑禁止任何企业进入本国市场。欧盟成员国需要在6月底之前完成对 5G 的安全风险评估，在 10 月 1 日前完成全欧盟范围的评估。在此基础上，成员国需在年底前就降低风险的举措达成一致。这些措施可能包括认证要求、对被认为存在潜在安全风险的产品或供应商进行测试。欧盟将在 2020 年 10 月 1 日前决定是否采取进一步行动。华为称欧盟的举措是客观合理的。
+➜微软发现华为驱动的提权漏洞
+https://www.solidot.org/story?sid=60047	34275
+微软<a href="https://www.microsoft.com/security/blog/2019/03/25/from-alert-to-driver-vulnerability-microsoft-defender-atp-investigation-unearths-privilege-escalation-flaw/"><u>披露了</u></a>华为笔记本电脑 MateBook 自带 PCManager 程序的驱动提权漏洞。华为已经在今年 1 月<a href="https://www.huawei.com/en/psirt/security-advisories/huawei-sa-20190109-01-pcmanager-en"><u>释出了补丁</u></a>，如果你的华为笔记本电脑运行了最新版本，那么漏洞已经修复了。Windows version 1809 内置了新的监视功能去跟踪  DOUBLEPULSAR 类型的后门，DOUBLEPULSAR 是 NSA 以及恶意程序广泛使用的技术之一。微软监视到指示  DOUBLEPULSAR 后门的异步过程调用，但进一步的调查没有发现恶意程序，而是华为写的驱动。华为的驱动监视了 PCManager 的一个用户模式服务，如果该服务崩溃或停止运行，驱动将会重启它。为了执行重启，驱动向一个高权 Windows 进程注入代码，然后使用异步过程调用运行代码——这是恶意程序常用的技术。不清楚为什么华为要采用这种方法重启服务，因为 Windows 已经内置了重启崩溃服务的功能。除此之外，微软研究员还观察到驱动存在其它漏洞。<br>
+➜Mike Pence 告诉 NASA 在五年内登月
+https://www.solidot.org/story?sid=60048	35685
+美国副总统 Mike Pence <a href="https://science.slashdot.org/story/19/03/27/0028206/mike-pence-tells-nasa-to-accelerate-human-missions-to-the-moon-by-any-means-necessary"><u>告诉</u></a> NASA 采取任何必要的手段加速载人登月。Pence 说，美国要展开一场 21 世纪的 “太空竞赛”，在 2024 年前将美国宇航员<a href="http://news.sciencenet.cn/htmlnews/2019/3/424549.shtm" target="_blank"><u>再次送上月球</u></a>。这比美国航天局现有登月计划提前 4 年。Pence 表示，在 5 年内将美国宇航员送上月球是 “本届政府的既定政策”。“让我明确一点：登上月球的第一位女性和下一位男性都将是美国宇航员，由美国火箭从美国本土发射。”Pence 说，月球南极具有 “巨大的科学、经济和战略价值”，所以美国国家太空委员会建议，美国宇航员再次登月地点首选月球南极。美国将从月岩中开采氧气为飞船提供燃料，利用核能从月球南极陨石坑中提取水，最终将使美国宇航员搭载新一代飞船在数月之内而不是花费数年飞抵火星。
+➜比特大陆 IPO 申请失效
+https://www.solidot.org/story?sid=60049	38027
+比特大陆的 IPO <a href="http://www.ftchinese.com/story/001082063"><u>申请已失效</u></a>。这家最大矿机供应商的境况因为比特币价格暴跌而变糟。去年 9 月，比特大陆申请赴香港上市，有望缔造全球规模最大的加密货币企业 IPO。据银行人士称，该公司原本计划通过上市最高融资 30 亿美元。比特大陆的招股说明书详细描述了 3 年的高速增长，在截至 2018 年 6 月底的 6 个月里，收入达到 28.4 亿美元，飙升了 8 倍。但比特币价格下挫让投资者感到恐慌。比特币的当前价格让挖矿变得几乎无利可图。比特大陆向私人投资者展示的数据与招股说明书中的差距引发了进一步的担忧。比特大陆自己持有的加密货币加剧了该公司的困境。
+➜三位 AI 技术开拓者赢得图灵奖
+https://www.solidot.org/story?sid=60050	44669
+美国计算机学会（ACM）<a href="https://amturing.acm.org/byyear.cfm"><u>宣布</u></a> 2018 年度的图灵奖<a href="https://www.nytimes.com/2019/03/27/technology/turing-award-hinton-lecun-bengio.html"><u>授予了</u></a>三位在神经网络上做出突破性贡献的计算机科学家：  纽约大学的 Yann LeCunn，多伦多大学的 Geoffrey Hinton 和蒙特利尔大学的 Yoshua Bengio。图灵奖是计算机科学领域的最高奖，三位科学家将分享一百万美元的奖金。Hinton 博士现在为 Google 工作，LeCunn 博士为 Facebook 工作，Bengio 博士则与 IBM 和微软有合作。神经网络是通过分析大量数据从中学习离散任务的复杂数学系统，比如通过分析大量通话学习去识别口语。神经网络让人工智能以以前不可能的速度快速发展。
+➜研究称每天吃两个鸡蛋会增加早亡风险
+https://www.solidot.org/story?sid=60051	45455
+专家就鸡蛋对人们健康到底是有益还是有害的辩论已经持续了许多年。根据发表在《美国医学会杂志》上的最新医学研究表明，鸡蛋对身体有没有好处取决于你一个星期吃几个。研<a href="https://www.bbc.com/zhongwen/simp/science-47692875"><u>究发现</u></a>，如果一天吃两个鸡蛋会导致心血管损伤和过早死亡。这是因为蛋黄中有大量的胆固醇。例如，据美国农业部的数据显示，一个较大的鸡蛋中大约含有 185 毫克的胆固醇。世界卫生组织（WHO）对胆固醇的推荐量为每天 300 毫克。也就是说，如果你每天吃一个鸡蛋，你已经用了胆固醇推荐量的一半以上，如果吃两个鸡蛋那就绝对超量了。研究一共分析了 6 个相关试验的数据，试验人数超过 3 万人，并长达 17 年之久。研究人员得出结论称，一天摄取 300 毫克以上胆固醇可以使心血管疾病风险增加 17%，早亡率则上升 18%。如果每周吃 3 到 4 个鸡蛋，可以使心血管疾病和早亡率分别增加 6% 和 8%。而每天吃 2 个鸡蛋心血管疾病风险则上升 27% ，早亡率上升 34%。
+➜LHCb 发现新的 5 夸克粒子
+https://www.solidot.org/story?sid=60052	47228
+欧洲粒子物理研究所大强子对撞机 LHCb 实验<a href="https://home.cern/news/news/physics/lhcb-experiment-discovers-new-pentaquark" target="_blank"><u>报告</u></a>观察到新的 5 夸克粒子。新粒子被命名为 P<sub>c</sub>(4312)<sup>+</sup>,，会衰减成一个质子和一个  J/ψ 粒子（由一个粲夸克和反粲夸克构成）。 最新观察的统计显著性达到了 7.3&nbsp;sigma，远远超过了 5 sigma 这个阈值。5 夸克代表着一种聚合夸克的新形式，LHCb 在 2015 年报告了两种五夸克粒子P<sub>c</sub>(4450)<sup>+</sup> 和 P<sub>c</sub>(4380)<sup>+</sup>。

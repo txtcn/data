@@ -1,0 +1,43 @@
+➜Blink：Google创建WebKit引擎分支
+https://www.solidot.org/story?sid=34144	11313
+Google<a href="http://blog.chromium.org/2013/04/blink-rendering-engine-for-chromium.html"><u>宣布</u></a>fork WebKit渲染引擎，它给出的一个理由是加快创新。新引擎被命名为<a href="http://www.chromium.org/blink"><u>Blink</u></a>，Opera同时<a href="http://www.brucelawson.co.uk/2013/hello-blink/"><u>证实</u></a>将从WebKit切换到Blink。<a href="http://arstechnica.com/information-technology/2013/04/google-going-its-own-way-forking-webkit-rendering-engine/"><u>浏览器开发领域正发生有意思的转变</u></a>。<br>
+<i>WebKit项目是苹果公司在2001年启动的开源项目，本身也是fork了开源渲染引擎KHTML。WebKit包含了处理HTML和CSS的核心渲染引擎WebCore，JavaScript引擎JavaScriptCore以及浏览器使用的高级API。Google的Chrome浏览器只使用了WebKit中的WebCore，它目前是 WebKit项目最活跃的开发者。对Google来说，付出已经超过了给予，而为了支持WebKit的下一代引擎WebKit2，WebCore正日益复杂化，它新增的许多功能Google都不需要，例如WebKit2有多进程模式和沙盒模式，而Google开发了自己多进程模式和沙盒模式。因此通过fork WebCore创建Blink，剥离掉只支持 WebKit2的功能，Google认为能推动创新，使浏览器生态系统更富多样性。<br>
+</i>
+➜Iain Banks只剩下不到一年生命
+https://www.solidot.org/story?sid=34145	15239
+这是一个令人悲伤的消息：著名作家、科幻小说《Culture》系列作者Iain Banks<a href="http://friends.banksophilia.com/"><u>宣布</u></a>，他已确诊为胆囊癌末期，还有不到一年的寿命可活，“极其不可能会活过一年”。Banks宣布将停止参加所有公众活动，《The Quarry》将是他的最后一本小说，去年出版的《The Hydrogen Sonata》将是《Culture》系列的绝唱。<a href="http://en.wikipedia.org/wiki/Iain_Banks"><u>Iain Banks</u></a>的作品横跨主流小说和科幻小说，而且都取得了不俗的成绩，被誉为过去五十年最杰出的英国作家之一，他的《<a href="http://en.wikipedia.org/wiki/Culture_series"><u>Culture</u></a>》系列刻画了一个无政府主义、社会主义和乌托邦式的未来社会，没有贫穷、死亡和疾病。小说主要描述了社会边缘群体：外交官、间谍和雇佣兵，都是干脏活的。
+➜Mt.Gox 受 DDOS 攻击, BTC 价格过山车
+https://www.solidot.org/story?sid=34146	25628
+<a href="http://moses.appspot.com">Moses</a> 写道<i> "<span style="color: rgb(51, 51, 51); font-family: 宋体; font-size: 14px; line-height: 23px; background-color: rgb(255, 255, 255);">BTC 在周二与周三交易中出现<a href="http://finance.sina.com.cn/world/20130403/232315047756.shtml">剧烈波动</a>, 在最主要的交易所 Mt.Gox, BTC 上涨至 $147 美元, 在人民币交易所, 更超过 1BTC 兑 ￥1000 人民币, 曾达到兑&nbsp;</span><span style="color: rgb(51, 51, 51); font-family: 宋体; font-size: 14px; line-height: 23px; background-color: rgb(255, 255, 255);">￥</span><span style="color: rgb(51, 51, 51); font-family: 宋体; font-size: 14px; line-height: 23px; background-color: rgb(255, 255, 255);">1069 人民币,&nbsp;</span><span style="color: rgb(51, 51, 51); font-family: 宋体; font-size: 14px; line-height: 23px; background-color: rgb(255, 255, 255);">Mt.Gox 价格则快速在 $125 美元至 $141 美元之间波动, 之后&nbsp;<a href="https://twitter.com/MtGox/status/319658491516162048">Mt.Gox 受到 DDOS 攻击</a>, 一些用户出现无法访问, 无法交易和交易延迟的情形. 网站恢复后, 出现了恐慌性抛售. 不过虽然 Mt.Gox 在 4 月 1 日说准备支持 LTC 和 NMC 的消息开始被认为是愚人节玩笑, 从而这两种货币价格也应声下跌, 但从 Mt.Gox API 的更新中发现可能<a href="https://data.mtgox.com/api/2/NMCUSD/money/ticker">并非如此</a>.</span>"</i>
+➜开放获取的计算机安全书籍
+https://www.solidot.org/story?sid=34147	27480
+<a href="/~mtjs">mtjs</a> 写道<i> "剑桥大学计算机安全实验室教授<a href="http://en.wikipedia.org/wiki/Ross_J._Anderson">罗斯.安德森</a>在网上发布了他的《计算机安全工程》第二版的<a href="http://www.cl.cam.ac.uk/~rja14/book.html">在线版本</a>，该书的实体书版本由Wiley出版集团<a href="https://www.novainfosec.com/2013/04/03/free-must-have-security-engineering-book/">发行</a>，第一版在2001年发行，四年后他们决定将第一版的章节内容发布到网上，随后发现，这样做促进了实体书的销售，于是在第二版发行四年后他们又把第二版的内容发布到了网上。该书涵盖了从如何开始计算机安全领域的活动到具体的实施步骤，尽管学院气较其他的书籍要多，但是从Wiley出版集团将这本书作为goto系列计算机安全书籍参考书目可以看出该书的价值，不花钱就可以学到知识是多么地幸福的一件事，请对罗斯.安德森教授和Wiley出版集团报以感恩的心，中国的读者请不要做这种“把人家的内容翻译一下，作者换成自己”的事情。"</i>
+➜迪士尼关闭LucasArts
+https://www.solidot.org/story?sid=34148	33404
+迪士尼<a href="http://www.gameinformer.com/b/news/archive/2013/04/03/disney-closes-game-publisher-lucasarts.aspx"><u>关闭了</u></a>有三十年历史的LucasArts游戏工作室。创建于1982年的LucasArts曾开发和发行过许多经典游戏，如《Labyrinth》、《猴岛小英雄》、《X翼战机》和《星球大战：前线》，以及《星球大战之星系》、《星球大战之旧共和国武士》和《星球大战之旧共和国》。迪士尼已通知了遭解雇的雇员，LucasArts业务重心将转向游戏授权，授权外部游戏工作室开发基于卢卡斯影业所持知识产权的游戏。这一结果并不是太出人意料，因为LucasArts最近几年的星球大战游戏无论质量还是销量都令人失望。
+➜Mozilla和三星合作为Android开发新的浏览器引擎
+https://www.solidot.org/story?sid=34149	50535
+Mozilla和三星<a href="https://blog.mozilla.org/blog/2013/04/03/mozilla-and-samsung-collaborate-on-next-generation-web-browser-engine/"><u>宣布</u></a>合作新一代Web浏览器引擎Servo，但何时发布两家公司尚无一致的时间表。Mozilla将在三星的协助下把Rust 编程语言和Servo引擎带到Android和ARM上。Rust是一种可被编译、静态类型、面向对象程序语言，Mozilla计划用Rust替代C++成为Firefox的编译语言。三星向Rust贡献了ARM 后端和交叉编译到Android必要的构建基础设施。<a href="https://github.com/mozilla/rust">Rust</a>和<a href="https://github.com/mozilla/servo">Servo</a>的源代码已经发布到 GitHub。
+➜纽约白人孩子也上补习班
+https://www.solidot.org/story?sid=34150	52865
+纽约补习学校的学生原本主要来自华裔，但如今正日益多样化，<a href="http://cn.nytimes.com/article/education/2013/04/04/c04cram/"><u>而补习学校也开始在英文媒体上打广告</u></a>。在一般纽约家长看来，这种原本以华、韩和俄裔美国学生为主的补习学校开始吸引非亚裔家长的注意并不意外，这些家长希望提高孩子的考试成绩，以便能上那些很难挤进去的天才班和热门的中小学。据市场调查机构IBISWorld近期发布的一份报告，备考产业在2013年有望带来8.404亿美元的收入。预计这个数字到2018年将达到8.769亿美元。专家们称，纽约父母之所以热衷于这些另类学校，正是因为他们非常关注以下问题：上大学的竞争越来越激烈、更严格的国民教育标准，以及对本地公立学校的不信任。
+➜阿尔法磁谱仪或发现暗物质信号
+https://www.solidot.org/story?sid=34151	56471
+欧洲粒子物理研究所<a href="http://press.web.cern.ch/press-releases/2013/04/ams-experiment-measures-antimatter-excess-space"><u>宣布</u></a>，国际太空站安装的阿尔法磁谱仪探测到了宇宙神秘暗物质的可能信号。用于寻找高能量粒子得阿尔法磁谱仪，又被称为反物质太空磁谱仪，于2011年5月安装到国际空间站。仪器并不能直接对暗物质定位，但能够寻找暗物质粒子相撞产生的残余。阿尔法磁谱仪通过探测源自深空的<a href="http://news.sciencemag.org/sciencenow/2013/04/two-billion-dollar-cosmic-ray-de.html?ref=hp"><u>电子和正电子</u></a>，计算其能量，以试图解答暗物质是否存在这一困扰科学家很长时间的谜团。对暗物质的研究是现代宇宙学和粒子物理的重要课题。<a href="http://www.bbc.co.uk/zhongwen/simp/science/2013/04/130403_dark_matter.shtml"><u>科学家强调</u></a>，要准确地描述暗物质粒子，仍然需要做很多研究，可能还需要很多年才能有确切结果。
+➜《发展受阻》第四季将于5月26日上线
+https://www.solidot.org/story?sid=34152	57676
+<a href="http://www.solidot.org/story?sid=27071"><u>被Netflix复活</u></a>的情景喜剧《发展受阻（Arrested Development）》第四季全季15集将于5月26日凌晨12点01分<a href="http://www.ign.com/articles/2013/04/04/arrested-development-season-4-netflix-premiere-date-return-date-announced"><u>上线</u></a>。这部情景喜剧口碑极佳、IMDb评分在电视剧类别中高居前列，但由于收视率不高而在第三季上映中间被福克斯取消，类似科幻电视剧《萤火虫（Firefly）》。《发展受阻》被评为历史上最伟大的剧集之一，故事围绕Bluth一家，他们曾经很富有，家庭成员之间彼此勾心斗角，冲突不断。Netflix此前推出的电视剧《纸牌屋》大受好评。《发展受阻》所有主演都回归参演了第四季，但为主演档期着想，新季的每一集都围绕着一个特定角色展开。<br>
+➜Tor真的匿名和安全吗？
+https://www.solidot.org/story?sid=34153	63222
+<a href="http://baham.co">ceshi</a> 写道 "很多人上网时使用<a href="https://www.torproject.org/">Tor</a>，因为Tor可以提供很高的匿名性，原则上Tor上的信息无法追踪到数据源头，因此也成为了的罪犯和儿童色情者的最爱。但是Tor是绝对<b>安全</b>的吗？<a href="http://www.howtogeek.com/142380/htg-explains-is-tor-really-anonymous-and-secure/">How To Geek</a>（<a href="http://baham.co/04_03_torzhen-de-ni-ming-he-an-quan-ma-%3F.html">中文</a>）总结了一篇文章。
+<p>1，访问支持HTTPS的网站；</p>
+<p>2，禁用JavaScript和浏览器插件；</p>
+<p>3，不要做Tor网络的<b>出口节点</b>。</p>
+<p>
+</p>
+<p>
+</p>
+<p>最后给出了一句非常醒人的总结：</p>
+<p>如果你不仅仅是在Tor
+Bundle上浏览HTML网页，那么你计算机上的并非为隐藏IP设计的软件都会带给你风险。
+"</p>
