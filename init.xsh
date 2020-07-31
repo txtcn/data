@@ -13,11 +13,14 @@ version = int(version)
 tmpdir = tempfile.mkdtemp()
 mkdir -p @(tmpdir)
 
+# host = "github.com"
+host = "github.strcpy.cn"
+
 for i in range(1,version+1):
   i = str(i)
   downfile = join(tmpdir,i)
   print(downfile)
-  wget -c https://github.com/txtcn/data/releases/download/@(prefix).@(i)/data.tar.xz -O @(downfile)
+  wget -c https://@(host)/txtcn/data/releases/download/@(prefix).@(i)/data.tar.xz -O @(downfile)
   tar -Jxf @(downfile) -C @(_DIR)/
 
 rm -rf @(tmpdir)
