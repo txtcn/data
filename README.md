@@ -9,18 +9,18 @@
 
 于是，有了这个项目 : 《中文语料库-每日自动更新版》 。
 
-核心思想，通过[RSS订阅](https://www.ruanyifeng.com/blog/2006/01/rss.html)，存档内容。
+核心思想，通过[RSS订阅](//www.ruanyifeng.com/blog/2006/01/rss.html)，存档内容。
 
-然后通过[GitHub Actions](https://github.com/features/actions)来实现每日运行，这样就实现了一个无服务器的自动更新语料库。
+然后通过[GitHub Actions](//github.com/features/actions)来实现每日运行，这样就实现了一个无服务器的自动更新语料库。
 
 Github仓库有1GB容量的限制，但热度高的项目能申请更多存储空间。
 
 **为了避免空间不足导致语料库无法更新，请大家给[语料仓库](https://github.com/txtcn/data)多多加星。**
 
-* 语料仓库 : [github.com/txtcn/data](https://github.com/txtcn/data)
-* 爬虫仓库 : [github.com/txtcn/dump](https://github.com/txtcn/dump)
+* 语料仓库 : [github.com/txtcn/data](//github.com/txtcn/data)
+* 爬虫仓库 : [github.com/txtcn/dump](//github.com/txtcn/dump)
 
-为了节约空间，历史语料被打包发布到了 github release ，克隆语料仓库后，首先运行 `./init.sh` 导入历史语料。
+为了节约空间，历史语料被打包发布到了 [github release](//github.com/txtcn/data/releases) ，克隆语料仓库后，首先运行 `./init.sh` 导入历史语料。
 
 ## 已收录网站
 
