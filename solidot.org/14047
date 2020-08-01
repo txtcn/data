@@ -1,0 +1,49 @@
+➜Intel用《雷神战争》演示光线追踪技术
+https://www.solidot.org/story?sid=6650	720
+在Research@Intel Day 2008上，<a href="http://www.tgdaily.com/content/view/37925/113/">Intel演示了《雷神战争》（Enemy Territory: Quake Wars）的光线追踪（Ray Traced）版</a>。这应该是Intel首次以标准的游戏分辨率1280x720，演示它的CPU架构执行类似图形光栅渲染的表现，在16核处理器（4 socket、4 core），运行频率2.93 GHz，64位Linux 系统上，《雷神战争》的运行速度为14-29 fps。而仅仅两年前，早期的<a href="http://www.q4rt.de/">《雷神战争》光线追踪版</a>还只能在<a href="http://www.q4rt.de/benchmarks.html">256x256分辨率上以17 fps速度</a>运行。对比旧版，Intel新演示的系统增加了<a href="http://www.tgdaily.com/images/slideshows/200806121/etqw_03_overview.jpg">水反射</a>、地板的雾阴影和玻璃表面的反射，修正了水折射的物理错误。如果你从水里向上看，整个世界都是 <a href="http://www.tgdaily.com/images/slideshows/200806121/etqw_08_underwater.jpg">扭曲</a>的，《雷神战争》实现了同样的效果。Intel声称光线追踪技术支持32位和64位的Linux和Windows操作系统。<a href="http://www.pcghx.com/aid,646920/News/Video_shows_ray_traced_Quake_Wars/">演示视频</a>。
+➜Google 的搜索统治地位能维持多久？
+https://www.solidot.org/story?sid=6651	4200
+<a href="http://www.comsharp.com/">35</a> 写道 "Google 在搜索市场占据<a href="http://www.comscore.com/press/release.asp?press=2230">60%的份额</a>，而且拥有一种<a href="http://www.wired.com/techbiz/it/news/2008/01/google_recession">抵抗衰退的业务模式</a>，任何人短期内想赶上并挑战 <a href="http://blog.wired.com/business/2008/06/could-google-to.html">Google 的主导地位都是不可能的事</a>。<a href="http://searchengineland.com/">Search Engine Land</a> 的执行编辑 Chris Sherman 说，我确信世界级的搜索引擎之争已经不复存在，那太昂贵。Google 和其它搜索引擎已经为此花费了巨额开支，就搜索引擎的开发与架构而言，新公司很难获得这些资源。上周，Google 和 Yahoo 之间的交易，无疑会巩固 Google 的市场地位。根据协议，Google 会在 Yahoo 的搜索结果中提供广告。           Colins Stewart 的分析家 Sandeep Aggarwal 说，Google 与 Yahoo 的交易，对 Google 带来非常正面的意义，Google 不仅赢得了 Yahoo 这么一个 AdSense 合作伙伴，而且增强了自己在搜索上优势，同时，他为自己市场地位的安全买了一份新保险。 <br> <br>微软的市场挑战非常有限，用户目前还不会离开 Google。 <br> <br>Sherman 说，如果你看一下微软正在做的一些事情，比如，图片搜索，事实上是领先于 Google 的，但微软面临的挑战是他们必须说服用户去尝试他们的东西。但对那些希望分一杯羹的小公司，仍然还有一定的空间。 <br> <br>关于搜索市场，我们可以和电视相比，我们有3个主要的电视网络，人们早已习惯了这个，他们并不觉得还有别的选择，广告客户也认为他们拥有面向大众的全部资源，突然，我们有了有线电视，有了500个频道，每个频道都面向一个立基市场，他们给观众带来更多选择，对广告客户来讲也相当诱人。 <br> <br>我们仍有提升的空间，新公司不断涌现，<a href="http://www.wikia.com/">Wikia</a> 去年发布了他自己的<a href="http://re.search.wikia.com/">开源搜索引擎</a>，俄罗斯搜索引擎 <a href="http://www.quintura.com/">Quintura</a> 说他们不惧怕 Google，<a href="http://www.blinkx.com/">Blinkx</a> 正在从事视频搜索，<a href="http://www.powerset.com/">Powerset</a> 在语义搜索上亦步亦趋，<a href="http://www.kosmix.com/">Kosmix</a> 正在开发话题搜索。 <br> <br>Sherman 说，搜索引擎市场仍有非常多的机会，Google 在导航搜索上固然做得非常非常好，但如果你要寻找某段特别的信息，有时候它未必好，这些机会存在于一些分支技术上，Google 可能不会去开发，因为风险很大。
+➜日本开通首个网络音频全文字检索网站
+https://www.solidot.org/story?sid=6652	9240
+pdgz_pdgz 写道 "日本产业技术综合研究所日前<a href="http://news.xinhuanet.com/newscenter/2008-06/14/content_8367190.htm">发布了一个音频搜索网站</a>，首次实现用音频内容中出现的字句进行检索。
+据日本《读卖新闻》网站13日报道，人们检索音频资料时通常都是利用文件名的关键字来检索文件。而这项服务采用声音识别技术，将声音数据全部自动转换成文字，收集到数据库中，使人们方便地进行音频检索。比如在网站搜索栏中输入日文“元旦”,就能搜索到出现“元旦”两个字的音频资料.
+这个网站的网址是 <a href="http://podcastle.jp./">http://podcastle.jp./</a>。研究人员介绍说，目前这项检索服务还不完善，能够检索到的信息也相对有限。他们计划今后让使用者通过简单操作参与更正检索错误，努力提高检索准确率和检索信息量。
+真希望这样的新东西也能在中国的互联网上快点出现！"
+➜女性程序员编的程序更有用？
+https://www.solidot.org/story?sid=6653	11700
+数据库先锋<a href="http://zh.wikipedia.org/wiki/Ingres">Ingres</a>公司的高级副总裁和硅谷最著名的女性程序员之一相信男性和女性编写的程序是有区别的。<a href="http://blogs.wsj.com/biztech/2008/06/06/men-write-code-from-mars-women-write-more-helpful-code-from-venus/">火星男人编写的代码很不清晰，而金星女人编写的代码更有用</a>。出生于爱尔兰，于1992年加入Ingres的Emma McGrattan认为，女性过于感情化，她们会着眼于以后的代码使用。因此女性程序员会用有用的注解和说明点缀代码，解释一行行代码的作用。这些代码就像“路标”，其他人可以方便的修改和增添代码。男人，从另一方面说，可不会这么做，为了展现聪明才华，他们总是写一些模糊的代码，<a href="http://developers.slashdot.org/article.pl?sid=08/06/16/1212240">他们把一切都搞得不清不楚</a>，而且不留下说明指示以供后来者参考。
+➜哥伦比亚儿童获得65000台OLPC
+https://www.solidot.org/story?sid=6654	12600
+<a href="http://talk.blogbus.com/">shizhao</a> 写道 <i>"<a href="http://www.scidev.net/es/news/colombia-65-mil-escolares-tendr-n-su-propio-comput.html">哥伦比亚与OLPC签署了一份协议</a>(西班牙语)，从今年开始将为哥伦比亚的1.5万名公立小学学生提供OLPC，分三年共提供65000台。目前已经部署了400台OLPC进行测试，同时培训教师。"</i>
+➜开源药物FAQ
+https://www.solidot.org/story?sid=6655	14100
+<a href="http://talk.blogbus.com/">shizhao</a> 写道 "科学与发展网络采访了印度<a href="http://en.wikipedia.org/wiki/Council_of_Scientific_and_Industrial_Research">CSIR</a>著名的遗传学家Samir Brahmachari。Brahmachari正在启动一个“开源”药物研发，专注于结核病。他<a href="http://www.scidev.net/zh/features/zh-132434.html">回答</a>了为何要使用开源的方式来开发新药物。
+<i>Brahmachari设想了这样一个系统：全世界的科学家研究不同的药物设计领域，他们把发现存放于一个公开的数据库，可供其他人使用和评论——特别是针对影响全世界穷人的传染病。Brahmachari认为，开源模型中有才气的头脑的参与。哪里的知识得到了解放，哪里的才华就会蓬勃发展。我相信，在原则上，诸如能源、水和粮食等技术领域也能够从开源模型中受益。对于能源，我们可能发明利用太阳能、风能、水力发电和其他能源的解决方案。在其他领域也可能采用类似的方法。"</i>
+➜17日到了，Firefox3在哪里？
+https://www.solidot.org/story?sid=6656	18600
+shmech 写道 "17日到了，Firefox3在哪里？迫不及待想体验下正式版。"<i>
+根据<a href="http://blog.mozilla.com/blog/2008/06/16/download-day-kickoff/">Mozilla博客</a>上公布的时间，Firefox3将于太平洋标准时间<a href="http://www.timeanddate.com/worldclock/fixedtime.html?month=6&amp;day=17&amp;year=2008&amp;hour=10&amp;min=0&amp;sec=0&amp;p1=224&amp;sort=1">17日上午10时发布</a>，也就是北京时间18日早上1点。</i>
+➜可取代原油的基因改造细菌
+https://www.solidot.org/story?sid=6657	22500
+<a href="http://www.timesonline.co.uk/tol/news/environment/article4133668.ece">《泰晤士报》报道</a>，一家硅谷公司的科学家培育了一种基因改造细菌，能够吞噬废弃物如木屑、甘蔗或其它物质，通过发酵将它们转换成生物燃料，可以直接取代原油。科学家们希望以巴西甘蔗为细菌食用原料，将生物燃料的成本控制在每桶50美元左右。这家公司声称整个过程是负碳排放。
+➜惊艳的Ubuntu 8.10 ( Intrepid Ibex ) 主题
+https://www.solidot.org/story?sid=6658	25080
+<a href="http://www.ownlinux.cn/">OwnLinux.cn</a> 写道 "<a href="http://www.ubuntu.com/">Ubuntu 8.10</a> ( Intrepid Ibex ) 将进一步得改善用户视觉体验，相信这也是很多 Ubuntu 用户所期待的。也许你看这了这个主题会加强你对 Ubuntu 8.10 ( Intrepid Ibex ) 的期待之情吧。这个惊艳的主题被很多国外的 Ubuntu 用户看好，因为带来很多时尚的元素，让 Ubuntu 的桌面更加的华丽炫目。整个主题的设计得十分的简洁，而且还让部分操作也变成更加便捷。 <a href="http://www.ownlinux.cn/2008/06/17/ubuntu-810-intrepid-ibex-theme/">查看主题的截图</a>"
+➜用R2-D2监控网站服务器状况
+https://www.solidot.org/story?sid=6659	27600
+《星球大战》中的R2-D2是第一流的故障维修专家，它的全息放映设备还能用于传送秘密消息。现在R2-D2的崇拜者，日本主机公司<a href="http://blog.syun.co.jp/2008/06/r2d2_server_monitoring_system.html">Syun</a>的职员将一台<a href="http://shop.starwars.com/catalog/product.xml?product_id=1218818">R2-D2 DVD 放映机</a>变成基于开源网络监视工具 <a href="http://www.nagios.org/">Nagios</a>的<a href="http://gizmodo.com/5016555/r2+d2s-in-ur-serverz-monitoring-ur-packetz">服务器监控系统</a>。当服务器下线，机器人R2-D2就会发出警告，然后用放映机发出错误信息图示。<a href="http://www.youtube.com/watch?v=15rUkIJ25EE">视频</a>生动的演示了整个过程。
+➜天文学家发现三颗超级地球
+https://www.solidot.org/story?sid=6660	30000
+一个国际天文学家小组发现了<a href="http://esciencenews.com/articles/2008/06/16/a.trio.super.earths">一个有三颗超级地球的太阳系</a>(<a href="http://www.chinanews.com.cn/gj/ywdd/news/2008/06-17/1283550.shtml">中新网相关报道</a>)。这三颗超级地球位于42光年外的南剑鱼座和外绘架座，围绕一颗质量比太阳略小的恒星公转。论文合著者，来自法国巴黎的天文学家François Bouchy称，“过去5年我们精确测量了恒星HD 40307的速度，清楚的分辨出了三颗类地行星。这几颗行星，质量分别是地球的4.2，6.7，和9.4倍。公转周期是4.3，9.6，和20.4天。”相比它们的恒星，这些行星质量都非常非常小，天文学家是通过使用高灵敏度的<a href="http://en.wikipedia.org/wiki/HARPS">HARPS</a>（高精度径向速度行星搜索器）才发现它们的踪迹。
+➜被人遗忘的互联网先驱
+https://www.solidot.org/story?sid=6661	32700
+《纽约时报》报道了20世纪早期的一位被人遗忘的互联网先驱、比利时人<a href="http://en.wikipedia.org/wiki/Paul_Otlet">Paul Otlet</a>。<i>1934年，Otlet粗略的<a href="http://www.nytimes.com/2008/06/17/science/17mund.html?_r=1&amp;ref=science&amp;oref=slogin">勾画了一个全球计算机网络的草图</a>（他称之为电子望远镜），允许人们浏览和搜索数百万链接起来的文档、图像、音频和视频文件。他描绘了人们如何使用这个设备向其他人发送信息，共享文件甚至是组建一个在线社区。他把这一切叫做“réseau”，翻译过来就是“网络（network）”，或者是“环球网（Web）”。Tim Berners-Lee在1991年发布了第一个浏览器，但早在半个世纪之前，Otlet就描述了网络化的世界。虽然他设想的原始网络更像是是索引卡和电报机的拼凑，但无疑预言了当今世界的超链接结构。《连线》杂志的前编辑Kevin Kelly说，“这是超文本的蒸汽朋克版”。Otlet构想的网络机器的一个想法是在文档中加入符号，今天看来显而易见的概念在1934年绝对是巨大的突破，超链接是上个世纪未得到公允评价的最伟大发明之一。</i>
+➜仍然不能Moderate
+https://www.solidot.org/story?sid=6662	36000
+<a href="mailto:mymalware@gmail.com">Rui</a> 写道 "这两天被发了5分 Moderate point, 很爽。今天想用了，突然发现<a href="__SLASHLINK__" sect="ask" sid="08/05/26/0152252" sn="article" tid="59">之前出现过的问题</a>，终于成功地出现在了自己身上。这是怎么回事？系统的BUG？没有人修？难道现在comment者都得不到moderate point了吗？最近曾因评论得过分的请举手。"
+➜Camspace将Wii游戏控制器带入千家万户
+https://www.solidot.org/story?sid=6663	37200
+一台不用花250美元的Wii游戏机，你可以把任何东西当作输入设备，甚至是手指。<i>
+<a href="http://www.camspace.com/">CamSpace</a>相当于WII的纯软件版，它可以与大多数电脑摄像头配合使用（支持市面上95%的摄像头），最多能追踪4个细小的物体（即使只有5毫米大小）——实时、高精度和高可靠性（只支持Windows）。详细介绍可见<a href="http://www.techcrunch.com/2008/06/11/camspace-creates-a-wii-for-everyone-minus-the-nintendo-console/">Techcrunch</a>
+，CamSpace刚刚发布了<a href="http://www.camspace.com/blog/2008/06/camspace-beta-1-released/">Beta 1</a>，但却是封闭性测试，测试者需要获得<a href="http://www.camspace.com/Signup.php">邀请</a>。</i> <a href="http://www.youtube.com/watch?v=v0srY37kkMw">演示视频</a>

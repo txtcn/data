@@ -1,0 +1,95 @@
+➜Java项目实战第8天：分页查询功能
+http://www.sohu.com/a/410718112_455717	1200
+<p>今天是刘小爱自学Java的第107天。</p>
+<p>感谢你的观看，谢谢你。</p>
+<p>话不多说，开始今天的学习：</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200731/a5d659877c2a4a8c8161efe7ef09a76b.png" max-width="600" /></p>
+<h1>一、分页概述</h1>
+<p>我们现在在网络上查询数据，通过关键字查询，一次性会查询出很多数据。</p>
+<p>比如说在浏览器上搜索“刘小爱”，会有12万条数据。</p>
+<p>如果要将其一次性地展现出来太困难了，需要浏览器不停地渲染数据才行，这样对浏览器的损耗也很大。</p>
+<p>所以为了解决这个问题，就引入了分页的功能，基本上大家都应该见到过分页的应用：</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200731/c20e1a8b111c4d2c9c6cde6de46b95fe.png" max-width="600" /></p>
+<p>现在网站一般涉及到查询功能时，都会使用到分页，关于分页其中牵扯到3个重要的参数：</p>
+<ul>
+<li>当前页面的页码数pageNum。</li>
+<li>每页展示的数据条数pageSize。</li>
+<li>每页数据的起始索引startCount。</li>
+</ul>
+<p>根据前端能得到的数据为：当前页码数和每页数据条数。</p>
+<p>而去数据库中查询需要：数据的起始索引以及每页数据条数。</p>
+<p>所以我们要找出其中的规律：</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200731/1f2900ace8184f339e937bbe24c1f118.png" max-width="600" /></p>
+<p>数据库中相关的数据有很多个，假设每页显示的数据为8个，那么</p>
+<ul>
+<li>第1页：从索引位为0开始的8条数据。</li>
+<li>第2页：从索引位为8开始的8条数据。</li>
+<li>第3页：从索引位为16开始的8条数据。</li>
+</ul>
+<p>从中我们可以找出其中的规律为：</p>
+<p>每页初始索引位=（页码数-1）*页面数据量，从而确定sql语句的编写，使用limt这个关键字。</p>
+<p>思路分析完毕就可以开始编写代码了。</p>
+<p><strong>前端发送请求</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200731/d9a20122d6984de2af184ec7668ecdd8.png" max-width="600" /></p>
+<p>其中关于静态页面，将数据写死了。这边主要只暂时考虑分页的功能实现。 </p>
+<p>在每个显示页码的地方绑定一个点击事件，其对应的函数即为getPageData()。</p>
+<p>getPageData(pageNum,pageSize)，有两个参数：</p>
+<ul>
+<li>pageNum当前页面页码数。</li>
+<li>pageSize当前页面数据条数。</li>
+</ul>
+<p>事件绑定成功后，一点击对应的页码数，就会发送请求到服务器 ：</p>
+<ul>
+<li>请求对应后台中的RouteServlet。</li>
+<li>在pageQuery方法中处理该请求。</li>
+<li>请求中的参数数据为pageNum和pageSize这两个键值对。</li>
+</ul>
+<h1>二、后台代码编写</h1>
+<p><strong>1web层</strong></p>
+<p>创建一个RouteServlet来接受请求，同时在pageQuery方法中编写具体的代码：</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200731/5e252810dcbe46b095526b9cda5c7c18.png" max-width="600" /></p>
+<p>web层里的代码其实无外乎就是核心三步骤：获取请求数据、调用service层以及响应数据。</p>
+<ul>
+<li>请求中有两个键值对数据，通过getParameter()方法分别获取对应的值。</li>
+<li>再将它们作为参数，调用service层的方法具体处理。</li>
+<li>最后响应处理后的数据。</li>
+</ul>
+<p><strong>2service层</strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200731/2e91e291ea104903b21e5396603fa898.png" max-width="600" /></p>
+<p><strong>①分页数据三大参数</strong></p>
+<ul>
+<li>当前页面页码数pageNum。</li>
+<li>当前页面数据条数pageSize。</li>
+<li>当前页面数据起始索引startCount。</li>
+</ul>
+<p>其默认值分别为1,8,0，即第1页的数据就是从0索引位开始查询8条数据。</p>
+<p>在最开始也分析过，它们之间的关系为：</p>
+<p>startCount=(pageNum-1)*pageSize</p>
+<p>不过现在前端有请求参数了，所以跟随请求参数动态变化。</p>
+<p><strong>②将字符串数据转换成int类型</strong></p>
+<p>请求中的数据是字符串，所以需要将其转化成int，在转换前需要对其做一个非空判断。</p>
+<p>使用apache提供的工具类StringUtils的isNotBlank()方法，可以对字符串做一个非空判断：</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200731/e0465129396445cf8893b6db4407bcf7.png" max-width="600" /></p>
+<p>该工具类能够判断三种数据：字符串里什么都没有，null，字符串里只有空格。</p>
+<p>所以功能更加地强大，也很实用。</p>
+<p><strong>③封装数据</strong></p>
+<p>从dao层查询数据，返回值为一个route对象集合，将该集合封装到一个map中，</p>
+<p>最后再转换成json数据并返回给web层。</p>
+<p><strong>3dao层</strong></p>
+<p>利用service传来的pageSize和startCount这两个参数从数据库中查询数据。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200731/b85e95c2feba44ddb92881d8af062924.png" max-width="600" /></p>
+<p>请求本来是pageNum和pageSize参数。</p>
+<p>上述service层主要的作用其实也就是将它们转换成了数据库查询需要的参数。</p>
+<p>注意sql语句中的Limt的使用，即从第startCount索引位数据开始，查询pageSize条数据。</p>
+<h1>三、前端渲染页面</h1>
+<p>前端在接受到后台响应的数据之后，要将数据处理并渲染到对应的页面标签中：</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200731/3e023cf5485440a8a25dfbea4adf3a23.png" max-width="600" /></p>
+<p>响应数据是一个集合，既然如此肯定需要遍历数据，使用jQuery的forEach方法遍历数据。 </p>
+<p>同时在每次遍历时获取对应元素的值，将该值拼接到静态页面中。</p>
+<p>最后使用id选择器将拼接后的数据渲染到页面对应的标签中。</p>
+<h1>最后</h1>
+<p>因为个人精力和时间受限，分页查询的功能并没有完整地实现，但是思路基本上是这么一个思路。</p>
+<p>我觉得学习很多时候学的不是某个具体的知识点，对我来说，学习最大的意义在于：</p>
+<p>学会如何去学习，以及我有面对一切问题以及想办法将其解决的勇气。</p>
+<p>谢谢你的观看。</p>
+<p>如果可以的话，麻烦帮忙点个赞，谢谢你。</p>

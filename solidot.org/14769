@@ -1,0 +1,181 @@
+➜编写跨浏览器兼容的 CSS 代码的金科玉律
+https://www.solidot.org/story?sid=18297	480
+<a href="http://www.comsharp.com/">锐商企业CMS</a> 写道 "作为 Web 设计师，你的网站在各种浏览器中有完全一样的表现是很多人的目标，然而这是一个永远无法真正实现的目标，很多人认为，<a href="http://dowebsitesneedtolookexactlythesameineverybrowser.com/">完美的跨浏览器兼容并不必要</a>，这样说虽然没错，但在很多情形，一种近似的兼容还是很容易实现的，本文讲的是各种跨浏览器兼容的 CSS 编码准则和技巧（<a href="http://www.comsharp.com/GetKnowledge/zh-CN/CMS_K980.aspx">完整图文版</a>）。           理解 CSS 盒子模型
+<br> <br>如果你想实现不需要很多奇巧淫技的跨浏览器兼容的 CSS 代码，透彻地理解 CSS 盒子模型是首要事情，CSS 盒子模型并不难，且基本支持所有浏览器，除了某些特定条件下的 IE 浏览器。
+<br> <br>CSS 盒子模型负责处理以下事情:
+<ul>
+<li>一个 blcok （区块）级对象占据多大的空间</li>
+<li>该对象的边界，留白</li>
+<li>盒子的尺寸</li>
+<li>盒子与页面其它元素的相对位置</li>
+</ul>
+CSS 盒子模型有以下准则:
+<ul>
+<li>Block （区块）对象都是矩形 （事实上所有对象都如此）</li>
+<li>其尺寸由 width, height, padding,  borders, 以及 margins 决定</li>
+<li>如果不设置高度，该盒子的高度将自动适应其包含的内容，加上留白等（除非使用了 float）</li>
+<li>如果不设置宽度，一个非 float 型盒子水平上将充满其父容器（扣除父容器的留白）</li>
+</ul>
+处理 block 级对象时，必须注意以下事项:
+<ul>
+<li>如果一个盒子的宽度设置为 100%，它就不能再设置 margins, padding, 和 borders，否则会撑破其父容器</li>
+<li>垂直毗邻的 margin 会引起<a href="http://reference.sitepoint.com/css/collapsingmargins">复杂的坍塌问题</a>，导致布局问题（比如两个垂直毗邻的 Block 对象，上面的对象的 bottom-margin 为 40，下面的对象的  top-margin 为 20，则两个对象的间距将是 40，而不是 60 - 译者）</li>
+<li>拥有相对位置和绝对位置的对象，拥有不同的行为</li>
+</ul>
+<b> <i>在 Firefox 的 Firebug 中显示的盒子模型<br> </i> </b>
+理解 block  级和 inline 级 对象的区别
+<br> <br>这个看似简单的问题事如果能透彻地理解，会<a href="http://css-tricks.com/the-css-ah-ha-moment/">受益匪浅</a>。
+<br> <br>下图讲解了 block 级对象和 inline 级对象的区别:
+<br> <br>下面是 block 级对象和 inline 级对象的基本区别:
+<ul>
+<li>Block 级对象会自然地水平充满其父容器，因此没有必要为之设置 100% 宽度属性</li>
+<li>Block 级对象的起始摆放位置是其父容器的左上边界，并顺排在其前面的兄弟 Block 对象的下方（除非设置 float 或绝对位置）</li>
+<li>Inline 级对象会忽略其宽度和高度设置</li>
+<li> <tt>Inline 级对象会随着文字排版，并受排版属性的影响（如 white-space, font-size, letter-spacing）<br> </tt> </li>
+<li>Inline 级对象可以使用 vertical-align 属性控制其垂直对齐，block 级对象不可以</li>
+<li>Inline 级对象的下方会保留一些自然的空间，以适应字母 g 一类的会向下探出的笔画</li>
+<li>一个设置为 float 的 inline 对象将变成 block 对象</li>
+</ul>
+理解 Floating 和 Clearing 属性
+<br> <br>实现多栏排版的最好方法是使用 <a href="http://www.smashingmagazine.com/2009/10/19/the-mystery-of-css-float-property/">float</a> 属性，float 也是一个将使你受益匪浅的属性。一个 float 对象可以居左或居右，一个设置为 float 的对象，将根据设置的方向，左移或右移到其父容器的边界，或其前面的 float 对象的边界，而紧随其后的非 float 对象或内容，则包围在其相反的方向。
+<br> <br>以下是使用 float 和 clear 属性的一些重要准则:
+<ul>
+<li>一个 float 对象，将从其置身的 block 级非 float 内容流中跳出，换句话说，如果你要将一个 box 向左边 float，它后面的 block 级非  float 对象会显示到下方，inline 级内容会在旁边包围</li>
+<li>要让一段内容从一侧包围一个 float  对象，这段内容必须要么是 inline 级的，要么也设置为相同方向的 float</li>
+<li>一个 float 对象，如果没有设置宽度，则会自动缩成其包含的内容的宽度，因此最好为 float 对象明确设置宽度</li>
+<li>如果一个 block  对象包含 float  子对象，会出现<a href="http://www.sitepoint.com/blogs/2005/02/26/simple-clearing-of-floats/">本文中阐述的问题</a>。</li>
+<li>一个设置了 clear 属性的对象，将不会包围其前面的 float 对象</li>
+<li>一个既设置了 clear 又设置了 float 属性的对象，只有 clear:left 属性生效，clear:right 不起作用</li>
+</ul>
+首先使用 IE 进行测试
+<br> <br>虽然我们都痛恨 IE6 和 IE7，但当你开始一个新项目的时候，最好还是首先针对这两种浏览器进行测试，否则，如果你在设计在后期才想起针对 IE6 和 IE7 进行测试，将出现以下问题：
+<ul>
+<li>你将不得不使用一些奇巧淫技，甚至使用独立的 IE6/7 CSS，导致 CSS 文件臃肿。</li>
+<li>某些地方的布局将不得不重新设计</li>
+<li>会增加测试的时间</li>
+<li>你的布局在 IE/6/7 中和其它浏览器中不一样</li>
+</ul>
+如果你设计的是个人项目，Web 程序等，则不建议你针对旧版本 IE 做太多工作，而对一些公司类站点，它的用户群中有大量 IE 用户，这些技巧会让你避免大量的头痛。如果将 IE 的问题归类为 IE 的 BUG 而不去处理，会带来很多负面的影响，和 IE 和平共处是 Web 开发与设计者不可逃避的现实。
+<br> <br>译者注：在 IE6/7 仍有大量用户基础的国内（感谢中行，建行，农行，工行，以及各级政府网站），忽视这两种浏览器是极不明智的，首先针对 IE6/7 进行设计是一种很好的方法，一般来说，在IE6/7 通过测试的站点，在 Firefox，Chrome，Safari，Opera 等标准浏览器面前基本不会出现问题，前提是，你的 CSS 设计是基于 W3C 标准的。
+IE 浏览器最常见的问题
+<ul>
+<li>IE6 中不可滥用 float，否则会带来<a href="http://haslayout.net/css/Disappearing-Content-Bug">内容消失</a>以及<a href="http://www.impressivewebs.com/ie6-ghost-text-bug-with-multiple-solutions/">文字重复</a>等稀奇古怪的问题</li>
+<li>IE6 中，float 对象，在 float 方向的那边，会出现双倍 margin，将 display 设置为 inline 会解决这个问题</li>
+<li>IE6/7 中，一个没有直接或间接设置 hasLayout 的对象，会发生各种稀奇古怪的问题 （译者注：对这类问题，zoom 这个 css 属性可以帮很大的忙，将 zoom 设置为除了 normal 之外的其它值，可以迫使一个对象 hasLayout 同时不影响这个对象的任何视觉外观）</li>
+<li> <tt>IE6 不支持 min-width, max-width, min-height, max-height 一类的属性<br> </tt> </li>
+<li>IE6 不支持固定位置背景图</li>
+<li>IE6/7 不支持很多 display 属性值（如 <tt>inline-table</tt>,  <tt>table-cell</tt>, <tt>table-row</tt>）</li>
+<li>IE6 中，只有 a 这个对象才可以使用 :hover 这个伪类</li>
+<li> IE 的某些版本对某些 CSS 选择器支持很少（如属性选择器，子对象选择器）</li>
+<li>IE6~8 对 CSS3 的支持很有限 (不过有一些<a href="http://www.smashingmagazine.com/2010/04/28/css3-solutions-for-internet-explorer/">变通方法</a>)</li>
+</ul>
+永远不要指望在所有浏览器中都一模一样
+<br> <br>在不同浏览器实现相同的体验个功能是可能的，实现近似像素级的一致外观也是可能的，但永远不要指望一模一样。<br> <br>
+Form 控件在不同浏览器显示总是不同
+<br> <br>以下是 <a href="http://www.facebook.com/">Facebook</a> 首页中的 select 控件，在5种不同浏览器的显示差异（基于 <a href="https://browserlab.adobe.com/">Adobe’s Browserlab</a> 截图）
+<br> <br>某些 Form 控件，如果要求必须跨浏览器一致，可以找到变通办法，如，可以使用图片 替代 submit 按钮，但有一些控件，比如 radio，select， textarea，文件选择框，是永远都不可能一模一样的。
+字体的表现都有差异
+<br> <br>先不谈有的字体在有的系统中根本不存在，即时存在，它们在不同系统的渲染效果也不完全一样，比如，<a href="http://www.microsoft.com/typography/cleartype/tuner/step1.aspx">Windows   ClearType</a> 支持 IE7，但不支持 IE6，导致同一个字体在 IE7 和 IE6 有不同的样子。
+<br> <br> <b> <i>A List Apart’s 文章字体在 IE6 and IE7 中的区别<br> </i> </b>
+使用 CSS 清零
+<br> <br>使用 CSS 清零（CSS Reset）是实现跨浏览器兼容的灵丹妙药，CSS 清零可以消除不同浏览器对 margin，padding 这些属性的默认表现，你可以更容易控制诸如对齐，间隙等等问题。推荐使用 <a href="http://meyerweb.com/eric/tools/css/reset/">Eric Meyer’s CSS  清零代码</a>。
+<br> <br>
+参考 SitePoint’s  CSS 兼容表
+<br> <br> <a href="http://reference.sitepoint.com/css">SitePoint CSS  Reference</a> 是一个非常好的资源（<a href="http://www.sitepoint.com/books/cssref1/">下载离线版</a>），可以用来检查某些 CSS 属性的跨浏览器兼容问题
+<br> <br>
+结语
+<br> <br>跨浏览器兼容是个永恒的话题，本文介绍的跨浏览器兼容 CSS 准则只是帮助 Web 开发设计者尽可能实现这一目标，除了这些，<a href="http://perishablepress.com/press/2010/01/11/css3-progressive-enhancement-smart-design/">基于 CSS3 的渐进式增强设计也是一种趋势</a>，Web 开发与设计者可以针对某些浏览器提供增强功能，而在不支持这些增强功能的浏览器中降级使用基本功能。<br> <br>
+延伸阅读
+<ul>
+<li> <a href="http://www.comsharp.com/GetKnowledge/zh-CN/CMS_K975.aspx">跨浏览器测试资源大全</a> </li>
+<li> <a href="http://www.comsharp.com/GetKnowledge/zh-CN/It_News_K735.aspx">跨浏览器兼容测试8大利器</a> </li>
+<li> <a href="http://www.comsharp.com/GetKnowledge/zh-CN/It_News_K973.aspx">关于跨浏览器测试那点事</a> </li>
+</ul>
+本文国际来源：Smashing Magazine <a href="http://www.smashingmagazine.com/2010/06/07/the-principles-of-cross-browser-css-coding/">The Principles Of Cross-Browser CSS Coding</a>
+<br> <br>原文作者：<a href="http://www.smashingmagazine.com/author/louis-lazaris/">Louis Lazaris</a>
+<br> <br> <i>Louis  Lazaris 是一位自由职业 Web 开发者，住在多伦多，他创办了 </i> <i> <a href="http://www.impressivewebs.com/">Impressive Webs</a>, 以及</i> <i> <a href="http://interviewsbydesign.com/">Interviews by  Design</a>，后者主要是一些著名 Web 设计师访谈，他的 Twitter 地址是 </i> <a href="http://twitter.com/ImpressiveWebs">http://twitter.com/ImpressiveWebs</a>。
+<br> <br>中文编译来源：<a href="http://www.comsharp.com/"> <b>锐商企业CMS</b> 网站内容管理系统</a> 官方网站"
+➜谷歌进军汽车行业
+https://www.solidot.org/story?sid=18298	3600
+<a href="http://www.hi2020.com/">书评影评</a> 写道 "据cnet<a href="http://reviews.cnet.com/8301-13746_7-20007051-48.html">报道</a>，谷歌正在通过一些交易进军汽车行业。其中一项交易可能令谷歌搜索引擎与竞争对手微软的产品协同工作。
+<i>
+福特计划于6月份开始至全年将谷歌地图加入其Sync车载通讯平台，这一Sync通讯平台系统采用了微软的软件，将装备在2010年的所有车型。最新的Send to Sync功能使汽车司机可以将谷歌地图中的目的地信息通过蓝牙传送到汽车里，这是通过应用程序“Sync Traffic，Directions，and Information”完成的。
+</i>
+深度整合谷歌产品到其汽车中的汽车制造商不止福特一家。通用汽车公司全资子公司OnStar的产品用户可选择在谷歌地图中搜索、识别目的地信息，将其发送至汽车的Turn-by-Turn导航系统（Turn-by-Turn Navigation Service）。这一功能将于本月晚些时候出现在通用2006年以来生产的所有车型。它将OnStar目的地下载工具直接与汽车的显示导航系统整合起来，使用该下载工具可以直接发送目的地信息至后者。"
+➜Tor测试默认启用网桥中继
+https://www.solidot.org/story?sid=18299	5760
+Tor官方博客<a href="https://blog.torproject.org/blog/technology-preview-bridge-default-microsoft-windows-clients">宣布</a>，Tor Windows客户端开始测试默认设置启用网桥中继。<i>
+目前测试的软件包是Windows Tor安装套件（Tor 0.2.2.13-alpha、Vidalia 0.2.9、Polipo 1.0.4.1）。在启动之后，Vidalia会尝试用UPnP去配置NAT/router设备，打开tor使用的9001端口，以及用于中继目录镜像的9030端口。网桥中继默认设置的带宽消耗为大于1.5 Mbps。上述的端口设置并非是最终的方案，只是用于测试它是否能正常工作的临时方案。</i>
+➜中国互联网状况白皮书误把微博客翻成Twitter
+https://www.solidot.org/story?sid=18300	7440
+作为一次罕见的网络监管透明化举措，中国国务院新闻办公室<a href="__SLASHLINK__" sect="internet" sid="10/06/08/047219" sn="article" tid="17">发布</a>了《中国互联网状况》白皮书(<a href="http://www.scio.gov.cn/zxbd/wz/201006/t660625.htm">中文版</a>、<a href="http://www.china.org.cn/government/whitepaper/node_7093508.htm">英文版</a>)。<i>
+白皮书的内容没什么可说，只是重复一些陈词滥调，甚至还偷换概念，将互联网言论自由等同于数量多少（有多少万论坛，多少亿博客，有多少万帖子等等）。但具有讽刺意味的是，白皮书的<a href="http://www.scio.gov.cn/zxbd/tt/jd/201006/t660840_3.htm">英文版</a>将微博客<a href="http://cn.wsj.com/gb/20100609/rth085409.asp">称做Twitter</a>(原文已经改正为microblog，但中国网站喜欢<a href="http://news.youth.cn/sz/201006/t20100608_1253726_5.htm">原文转载</a>，<a href="http://i.imgur.com/ABfxz.png">截图</a>)，每日发帖量超过几千万的微博客Twitter在中国是无法访问的。</i>
+➜农民火炮武器部分被收缴
+https://www.solidot.org/story?sid=18301	9720
+武汉56岁农民杨友德，为保卫自己承包的田地，以礼炮为武器，<a href="__SLASHLINK__" sect="society" sid="10/06/07/0535240" sn="article" tid="119">用自制火炮两次打退拆迁队</a>。<i>
+新京报<a href="http://epaper.bjnews.com.cn/html/2010-06/09/content_110355.htm?div=-1">报道</a>，警方以违反治安管理处罚法，让他交出烟花炮。杨友德交出了5枚礼炮（他共购买了三箱烟花，每箱24枚），并要求警方开出收缴礼炮的书面通知。在<a href="http://epaper.bjnews.com.cn/html/2010-06/09/content_110356.htm?div=-1">接受记者采访</a>中，杨友德表示，“一个人在暴力的方面，你要看他产生的环境。我不是强买强卖，国家有法律有政策规定，我不是多要，我不是暴民。还有人叫我刁民，我也不是刁民。我要回自己的利益，维护自己的利益，我并没有把别人的东西抢为己有，我不是刁民。”</i>
+➜奥林巴斯数码相机携带病毒
+https://www.solidot.org/story?sid=18302	11520
+日本奥林巴斯公司向购买Stylus Tough 6010数码相机的客户发出<a href="http://www.olympus.co.jp/jp/support/cs/info/if20100608.cfm">警告</a>，表示该型号照相机的内置存储卡中不小心携带了病毒。<i>
+这个能自动运行的病毒不会感染数码相机本身，但通过USB端口插入电脑后会感染Windows系统，将自己拷贝到电脑中，随后将能感染任何外置USB设备。奥林巴斯对此事故表示真诚的道歉，表示将会尽一切努力改进质量控制流程。被病毒感染的照相机大约有1700台。安全公司Sophos<a href="http://www.sophos.com/blogs/gc/g/2010/06/08/olympus-stylus-tough-camera-carries-malware-infection/">表示</a>，企业需要确保它们的电子产品不会感染上病毒，而消费者应该学会禁用Autorun功能，并在使用前用杀毒软件进行扫描。</i>
+➜三峡大坝面临严峻问题
+https://www.solidot.org/story?sid=18303	14400
+今年3月，重庆市副市长谭栖伟透露重庆境内的三峡库区<a href="__SLASHLINK__" sect="society" sid="10/03/07/0326211" sn="article" tid="100">有超过一万处隐患点</a>。<i>
+美国之音<a href="http://www1.voanews.com/chinese/news/20100608-Three-Gorges-Dam-95861319.html">报道</a>，长江专家、四川地矿局区域地质调查队工程师范晓表示，地质灾害主要包括滑坡、崩塌、泥石流。中国的相关部门最近几年也对三峡库区做了一些比较系统的调查。据国土部的勘察，现在比较确定的大概是在5千到6千处以上地质灾害地或者是潜在的。政府现在安排了专门对地质灾害的治理，现在已经在做第3期了，总投资到现在已经超过近两百个亿。以后还要不断地做下去。他认为，至少到目前为止三峡大坝弊大于利，“除了地质灾害，还有就是对生态环境的影响。在没有三峡大坝之前，长江的水是流动相对较快，它是有一定的自我净化的能力。建了水库以后，它的流速变缓，导致它很多污染物质在水中不断地累积。水库两旁有许多支流汇入长江，主要是在这些支流的下游出现水质的恶化。许多地方的水质现在是在劣5类，最差的。由于水质变坏，出现大量的包括水藻的繁殖，主要是绿藻和蓝藻。”</i>
+➜UC俞永福：中国企业国际化的三种路径
+https://www.solidot.org/story?sid=18305	15600
+UC手机浏览器的CEO俞永福谈到国际化，给了三个数字：联想依靠进销存、供应链体系国际化，市值500亿；腾讯依靠资本国际化（国内赚钱，投资国外互联网公司），市值2900亿；华为依靠技术国际化，市值不低于3000亿。而销售额华为是前两者的数倍，所以依靠技术国际化才是王道。不过他认为，联想柳传志关于管理的”定战略、建班子、带队伍“值得借鉴。今天14：00点会做俞永福的在线访谈：<a href="http://www.cnetnews.com.cn/2010/0608/1770243.shtml#">这里是地址</a>，会谈中国互联网企业的国际化问题。
+➜风险投资者们开始反对软件专利
+https://www.solidot.org/story?sid=18304	18300
+<a href="http://citypw.blogspot.com/">Shawn the R0ck</a> 写道<i> "无论最高法院对于<a href="http://en.swpat.org/wiki/Bilski_overview">"Bilski"</a>的决策如何，这都将引起软件专利问题在美国的又一次辩论---另一方面会展开关于新立法的争论。<a href="http://www.feld.com/wp/archives/2010/06/mailing-out-patent-absurdity.html">和风险投资人Brad Feld一起的游说团已经开始行动</a>了，他们把<a href="http://patentabsurdity.com/">Patent Absurdity</a>发给了200位专利政策制定者。Feld谈到"我们特别想要说明的是让公众明白软件专利在美国的高税率和阻碍创新已经是很严重的问题"。专利律师和大量专利的拥有者经常告诉公众说专利来保护投资，有趣的是这次风险投资者们站在了对立面。Brad Feld并不是仅有的一位风险投资人，而且越来越多的<a href="http://en.swpat.org/wiki/Statements_from_venture_capitalists">家伙开始加入了反对现有软件专利的阵营</a>。"</i>
+➜Next3 for Linux宣布
+https://www.solidot.org/story?sid=18306	21840
+<a href="http://zh.wikipedia.org/zh/Ext3">ext3文件系统</a>久经考验，但它确实缺乏许多实用的功能。例如快照技术（Snapshot）——在任意时间创建文件系统的一个副本。虽然ext3文件系统可以通过间接方法创建快照，但受很多限制。一个名叫<a href="http://sourceforge.net/apps/mediawiki/next3/index.php?title=Main_Page">Next3</a>的文件系统试图为 Linux用户提供一种简单灵活的方法——<a href="http://lwn.net/Articles/387231/">直接在ext3文件系统中实现快照</a>。<i>
+Next3由CTERA Networks开发，目前主要用于其<a href="http://www.ctera.com/home/ctera-c200.html">C200</a>网络附加存储设备。CTERA<a href="http://lwn.net/Articles/391339/rss">表示</a>Next3的快照能创建文件系统的任意时间点数据副本，可以随时从灾难中恢复到先前的状态。Next3为Linux用户提供了一种免费的、GPL授权的文件系统级别的快照技术。Next3的源代码已发布在SourceForge上，开发者提议将其合并到mainline kernel，不过内核维护者Ted Ts'o对此表示疑虑。Next3是一种新类型的文件系统，而不仅仅是ext3的一个扩展，它通过创建一种特殊的文件去代表文件系统的一个快照，总体上它与存储容量的大小相同，但它们是稀疏文件，因此一开始几乎不占任何空间。当硬盘上一个块发生变化，文件系统会首先检查这个块是否已经保存在最近的快照中。如果没有，受影响的块会移动到快照文件，然后分配一个新块去替代它。</i>
+➜Chris Lattner因LLVM的工作而获得首届SIGPLAN奖
+https://www.solidot.org/story?sid=18307	23760
+美国计算机协会编程语言Special Interest Group<a href="http://www.acm.org/press-room/news-releases/2010/sigplan-software-award/view">宣布</a>，LLVM创始人Chris Lattner<a href="http://lwn.net/Articles/391278/">获得</a>了首届“程序设计语言软件奖”。 <i>
+Vikram Adve和Chris Lattner最初开发LLVM是把它作为一种新的研究基础框架，当时Lattner是伊利诺伊大学香槟分校Adve研究小组的成员。后来在Lattner的努力下，LLVM逐渐成长为一个强大的，广泛应用的商业品质产品。LLVM始于2000年，2003年10月以开源软件的方式对外发布，在学术、商业和开源领域日益流行。</i>
+➜弓形虫可能影响人类行为
+https://www.solidot.org/story?sid=18308	27360
+《经济学人》<a href="http://www.economist.com/sciencetechnology/displaystory.cfm?story_id=16271339&amp;fsrc=scn/tw/te/rss/pe">报道</a>：如果异形昆虫侵入了半数人口的大脑，劫持他们的神经化学系统，改变他们的行为，并让其中部分人变疯。之后你可能预计会从媒体上看到一些耸人听闻的大标题。但相似的事情正不为人知的发生着。<i>
+弓形虫不是一种外星异形，它是病原体疟原虫的近亲，疟原虫是导致疟疾的祸首。它十分普遍，在世界某些地区有多达60%的人口感染了弓形虫。它会伤害胎儿和艾滋病毒携带者，因为他们的免疫系统无法应付这种寄生虫。对于其他人群，症状并不明显，通常只会引发感冒之类的温和病症。然而越来越多的证据显示寄生虫似乎永久性的改变了某些人的行为。一，有理由怀疑一个国家的弓形虫感染水平似乎和这个国家的人口中的神经过敏症表现有关联。二，被感染者通常会反应迟钝，因此更有可能引发交通事故。三，被感染者容易分心，对新颖事物的兴趣不大。四，最可怕的联系，精神分裂者比非精神分裂者更有可能感染弓形虫。除了人类之外，弓形虫有两个常见宿主：老鼠和猫。</i>
+➜微软发布Office在线版
+https://www.solidot.org/story?sid=18309	29520
+微软<a href="http://arstechnica.com/microsoft/news/2010/06/microsoft-launches-free-office-web-apps.ars">正式发布</a>了免费版的<a href="http://office.live.com/?docsf=">Office Web Apps</a>，包括Word、Excel、PowerPoint和OneNote的浏览器版本，与Windows Live SkyDrive整合在一起，目前只有美国、英国、加拿大和爱尔兰的居民能使用在线版Office，支持的语言为英语、法语（加拿大）和西班牙语（ZDNET台湾称有<a href="http://www.zdnet.com.tw/news/web/0,2000085679,20145967,00.htm">繁体中文版</a>），微软表示未来几个月会向更多国家开发，支持更多语言。<i>
+Office Web Apps允许用户直接通过浏览器浏览、编辑和共享Word、PowerPoint、Excel和OneNote文档。支持的浏览器包括Internet Explorer 7+、Chrome、Firefox 3.5+和Safari 4+。微软表示支持通过手机浏览器访问Office Web Apps，包括Windows Mobile 5+的Internet Explorer浏览器，iPhone 3G或3GS的Safari 4，BlackBerry 4.x+，Nokia S60，NetFront 3.4，3.5+，Opera Mobile 8.65+，Openwave 6.2和7.0。</i>
+➜Adobe联手Greystripe将Flash变为HTML5
+https://www.solidot.org/story?sid=18310	30480
+<a href="http://yi-it.com/blog/">易IT</a> 写道 "<i>根据Greystripe 的官方 <a href="http://www.greystripe.com/flashads/">消息</a>，他们能够无痛而且快速的<a href="http://cn.engadget.com/2010/06/09/adobe-and-greystripe-partner-for-ads-that-convert-flash-to-html5/">将 Flash 内容，重新以 HTML5 编译</a>，这也是吸引 Adobe 跟其合作的原因；Adobe 往后将跟 Greystripe 共同开发一个跨平台的交互式广告解决方案（同时也支持 Android 跟 Jave 相关的产品），未来这个平台的建立，可以预见的竞争目标，就是苹果的 iAd。
+</i>至于苹果会不会再度限缩自家的开发者使用条款，看来是要等等看 Adobe 的成品啰！<a href="http://www.engadget.com/2010/06/08/adobe-and-greystripe-partner-for-ads-that-convert-flash-to-html5/">官方新闻稿</a>在此，有兴趣的朋友可以仔细阅读一下！"
+➜AT&T让乔布斯演讲出糗
+https://www.solidot.org/story?sid=18311	33360
+苹果CEO乔布斯（Steve Jobs）周一在全球开发者会议上遭遇Wi-Fi断线、演讲中断的<a href="http://www.zdnet.com.tw/news/comm/0,2000085675,20145968,00.htm">窘况</a>（<a href="http://www.zdnet.com.tw/news/video/0,2003031390,20145950,00.htm">视频</a>），一度无法下载文档以说明iPhone 3G与新款iPhone 4的屏幕画质的不同。乔布斯后来要求台下听众关闭各自的无线接入点（access point），指出演讲厅内有多达570条Wi-Fi连线，以至于产生干扰。<i>
+WildPackets创办人暨董事长Mahboud Zabetian当时也在现场，他认为问题出在新的iPhone 4用的是802.11n，而其它用来示范的iPhone 3G手机用的是802.11g。显然会场里的无线接入点大多采用802.11n，而与802.11n接近的网络就只有这么多可用。问题纯粹出在新一代iPhone无法从接入点取得所需的信号。Zabetian认为，如果AT&amp;T允许tethering功能，让用户通过iPhone让笔记型电脑上网，那么会场里的人或许不必自己建立接入点，只要利用手机提供的频宽即可。</i>
+➜波兰化学阉割法律正式生效
+https://www.solidot.org/story?sid=18312	36000
+波兰去年九月通过了一项法律，<a href="__SLASHLINK__" sect="science" sid="10/03/17/145231" sn="article" tid="50">对部分强奸犯和恋童癖实施化学阉割</a>。所谓化学阉割实际上是一种药物控制法，通过注射药物，减少男性荷尔蒙，抑制性冲动。现在据BBC<a href="http://news.bbc.co.uk/2/hi/europe/10269055.stm">报道</a>，阉割法律正式生效。根据这项法律，罪犯服刑结束后必须服用药物抑制性冲动，不过在下达命令前法庭将先咨询精神科医生的意见。
+➜UEFI或将在三年内取代BIOS
+https://www.solidot.org/story?sid=18313	38400
+微星公司计划从今年年底开始<a href="http://hardware.slashdot.org/story/10/06/08/1719222/BIOS-Will-Be-Dead-In-Three-Years">采用UEFI（通用可扩展固件接口）</a>，此举可能暗示着BIOS时代即将终结。<i>
+<a href="http://zh.wikipedia.org/zh-cn/BIOS">BIOS</a>(基本输出输入系统)诞生于PC的早期时代，但至今仍然是电脑中一个关键组成，它是加载在电脑硬件系统上的最基本的软件代码。英特尔公司从2000年开始，发明了可扩展固件接口，用以规范BIOS的开发。而支持EFI规范的BIOS也被称为EFI BIOS。之后为了推广EFI，业界多家著名公司共同成立了统一可扩展固件接口论坛（UEFI Forum）。现在主板制造商微星的一位匿名官员<a href="http://www.thinq.co.uk/2010/6/8/exclusive-msi-bios-will-be-dead-three-years/">表示</a>将从年底开始逐步采用UEFI系统，他们认为三年后UEFI将会得到广泛应用。</i>
+➜Alkasir v1.2.0版发布
+https://www.solidot.org/story?sid=18314	40500
+Alkasir<a href="https://alkasir.com/v1_2_0_news">发布</a>了v1.2.0版（<a href="https://alkasir.com/downloads">下载</a>）。<i>
+简单而言，Alkasir是一款跟踪和绕过网络封锁的免费软件，其开发目的是帮助压制言论表达的国家居民能自由获得信息，因此与类似软件不同的是，Alkasir有严格的内容访问限制政策，不允许用户访问色情等方面的内容。Alkasir基于Mozilla Gecko引擎，有英语和阿拉伯语两种语言，只允许用户使用代理服务器绕过列入屏蔽名单的网址，用户可以向其报告被屏蔽的网址。作为一款免费软件，在第一次使用前，用户需要“付出”15分钟时间回答一系列问题，这项调查仅用于学术目的。</i>
+➜女同性恋的子女更会生活和学习
+https://www.solidot.org/story?sid=18315	41760
+<a href="http://cnnet.us/">淘日本</a> 写道 <i>"同性恋与异性恋抚养长大的孩子有许多的差异是众所周知的事实，为了进一步了解其中的差异，<a href="http://www.nllfs.org/team.htm">美国国家纵向女同性恋家庭研究组织</a>(San Francisco-based National Longitudinal Lesbian Family Study research team)对女同性恋者的子女进行了长达24年的观察研究，观察他们从出生到青春期的生长、生活和学习情况，最后得出的<a href="http://www.time.com/time/health/article/0,8599,1994480,00.html">结论</a>表明女同性恋的子女在学术和社会能力方面整体优于其他同辈。"</i>
+➜现场球迷情绪影响裁判决定
+https://www.solidot.org/story?sid=18316	48480
+Stranger 写道 "<a href="http://sports.xin.msn.com/world-cup-2010/features/article.aspx?cp-documentid=4078516">英国学者对群体噪音给裁判带来的影响进行了研究</a>。
+<i>
+他们对来自40个国家的国家级裁判进行了调查，这些裁判有的刚刚出道，有的已经执法40年。研究者播放了1999年利物浦队与莱斯特队的一场比赛录像，让这些裁判对比赛中的47起争议进行研判。其中22人观看的录像带有观众发出的噪音，另有18人在观看时没有噪音。结果，能静静观战的裁判对于自己做出的决定更为肯定，而且提出更多惩罚利物浦队而利于客队的处罚，在嘈杂声中观看比赛的裁判并没有对客队做出更多惩罚....研究还发现，在模棱两可的处罚中，高个球员往往被认定是犯规者，而矮个球员多半受到同情，即便没有犯规情况发生时，情况也是如此。"</i>
+➜RIAA说LimeWire欠它10亿美元
+https://www.solidot.org/story?sid=18317	52560
+RIAA告诉美国联邦法官，p2p共享网站LimeWire欠他们超过10亿美元——<a href="http://www.wired.com/threatlevel/2010/06/limewire-owes-billion/">这是RIAA最新的消灭LimeWire的尝试</a>。<i>
+数周前纽约法官<a href="http://www.wired.com/images_blogs/threatlevel/2010/05/limewireruling.pdf">裁定</a>(PDF)LimeWire侵权事实成立，而开发LimeWire的公司Lime Group并没有采取行动减少侵权。RIAA写信给联邦地区法官Kimba M. Wood，要求法院<a href="http://www.wired.com/images_blogs/threatlevel/2010/06/limewire.pdf">冻结LimeWire的资产</a>（PDF）。RIAA的最新法庭文件显示唱片行业寻求能尽快关闭和从财政上消灭LimeWire。版权法规定，每项侵权指控的赔偿从750美元到最高15万美元。用RIAA律师Kelly M. Klaus的数学计算：以每首歌750美元计算，赔偿总金额将<a href="http://news.slashdot.org/story/10/06/08/159217/RIAA-Says-LimeWire-Owes-15-Trillion">高达1.5万亿美元</a>。</i>
+➜陌生人看法影响配偶选择
+https://www.solidot.org/story?sid=18318	54180
+Stranger 写道 "一项新研究显示，<a href="http://www.livescience.com/culture/Strangers-Influences-Dating-Choices-100607.html">你钟情的对象往往是他人认为有吸引力的人</a>。这一研究成果支持了如下观点：吸引力是相对的，在个人对美的看法方面，陌生人和朋友的影响一样大。印第安纳大学心理学与脑科学系的斯凯勒•普菜斯领导的研究发现，个人会模仿其他人的配偶选择行为。研究成果将刊登在最新一期《进化与人类行为》杂志上。<i>
+普莱斯及其同事让40名男性和40名女性分别观看8个速配互动现场的视频。进行速配时，男女之间进行大量“迷你约会”，每场约会持续大约3分钟。每场约会后，实验参与者要表明是否愿意见见视频中的速配者。男性实验参与者对视频中女性的看法通常是肯定的，但如果视频中的男性速配者表现出了对这名女子的兴趣，他们的兴趣就会大大增强。然而，如果视频中的男性表现得不感兴趣，男性实验参与者的兴趣也不会发生很大变化。至于女性实验参与者，如果视频中的女性表现出对视频中的男性感兴趣，她们的兴趣就会增强。但是，与男性实验参与者不同，如果视频中的女性表现得不感兴趣，她们的兴趣就会减弱。"</i>

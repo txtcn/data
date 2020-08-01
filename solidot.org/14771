@@ -1,0 +1,162 @@
+➜《中国互联网状况》白皮书上的数字
+https://www.solidot.org/story?sid=18338	300
+<a href="http://xizhizhu.blogspot.com/">xizhi.zhu</a> 写道 "中国国务院新闻办公室前两天发表的《<a href="http://www.scio.gov.cn/zxbd/wz/201006/t660625.htm">中国互联网状况</a>》白皮书上说到：<br>
+截至2009年底，中国网民人数达到3.84亿。<i>
+中国现有上百万个论坛，2.2亿个博客用户，据抽样统计，每天人们通过论坛、新闻评论、博客等渠道发表的言论达300多万条，超过66%的中国网民经常在网上发表言论，就各种话题进行讨论，充分表达思想观点和利益诉求。</i>
+然后我做了点<a href="http://xizhizhu.blogspot.com/2010/06/internet-in-china-whitepaper-lie-and.html">小学算数</a>：<i>
+假设这300多万条言论全是在论坛发表的，现有1百多万个论坛，那算下来每个论坛平均下来每天也就不到4个贴子和回复。而这些言论还包括了新闻评论和博客等，也就是说，中国的大部分论坛都处于濒死状态。
+假设现在中国仍然是3.84亿网民，也只有66%经常发表言论的活跃网民，那算下来就是2.53亿活跃网民。如果每个活跃网民平均每天发表一条言论，那每天就是2.53亿条言论。如果每个活跃网民平均十天发表一条言论，那每天就是2534万条言论。而“抽样统计”表示每天只有300多万条言论，大家自行联想。"</i>
+➜W3C验证的是是非非
+https://www.solidot.org/story?sid=18339	3360
+<a href="http://www.comsharp.com/">锐商企业CMS</a> 写道 "W3C 验证让很多 Web 设计与开发者感到纠结，在自己的网页上放置一个验证按钮，点击以后，当看到 <a href="http://validator.w3.org/">W3C</a> 为你给出的全部是绿色对勾的时候，满足感油然而生，然而对这种机器验证的过度依赖往往带来另外的问题，本文讲述的是 W3C 验证中的一些是与非（<a href="http://www.comsharp.com/GetKnowledge/zh-CN/It_News_K982.aspx">完整图文版</a>）。           W3C Web 验证的现状
+<br> <br>必须明白，所有有生命的东西必须在机械与常识之间取得平衡，虽然 Web 标准如今被奉为圭皋，然而那些用来对你的代码进行验证的工具并不代表<a href="http://sixrevisions.com/project-management/adopting-a-does-it-really-matter-philosophy/">最好的判断</a>。下面的代码或许通不过验证，但在没有更好的替代方法之前是可以接受的。
+<br> <br>
+那些不遵守代码验证的站点
+<br> <br>我们可以对 <a href="http://www.alexa.com/topsites/countries">Alexa 排名前 100 的站点</a>进行 W3C 验证测试，会发现，大量的站点根本通不过验证，Amazon 的首页包含了大量的验证错误和警告，当然并不能说明 Amazon 存在什么严重的问题，不过，压根不关心验证和过于依赖验证都不可取。
+<br> <br>
+盲从验证规则
+<br> <br>那些过分依赖验证的情形也值得我们担忧，很多人对验证形成了药物般的依赖，常常是为验证而验证，为了通过验证，他们不惜使用各种奇巧淫技。如果你对验证非常纠结，会很熟悉下面这些自动验证工具。
+<br> <br>
+语境为王
+<br> <br>对验证而言，很多人经常忽视的一个问题是语境，验证工具是机器，而非人，机器永远无法取代人的判断。下面这个站点的设计，机器的评价会怎么样？它完全判断不了，机器看到的只是代码。
+<br> <br>
+人能做出决断而机器不能
+<br> <br>目前的技术，机器智能离真正的智能还有很远的距离，机器并不能理解语境和语义，将来也许能，但现在不能。
+<br> <br>
+代码验证的问题
+<br> <br>当前，最著名的代码验证包括 W3C 的 <a href="http://validator.w3.org/">HTML</a> 及 <a href="http://jigsaw.w3.org/css-validator/">CSS</a> 验证。很多网站会放置一个 HTML 和 CSS 验证按钮，表示自己的站点通过了验证，然而，通过了验证并不意味着你设计的东西是完美的。
+<br> <br>
+无法顾及未来标准
+<br> <br>如果你在设计中使用了未来的 Web 标准，如 CSS3，将无法通过验证，而现在非常有效的一种设计方式是，针对未来的标准使用渐进式设计，这种设计模式将很难通过验证。<br> <br>
+为验证而验证
+<br> <br>为了取悦验证工具，一些设计师不得不对那些非 W3C 标准，然而却被普遍认可的对象或属性下手，最终，人们的设计是为机器，而不是用户设计。事实上，在你的网站上放一个或几个验证按钮，对用户来说，有什么意义？很多用户并不知道什么事 HTML，什么是 CSS，他们对你是否通过了什么验证毫无兴趣。<br> <br>
+可访问性验证
+<br> <br>Cynthia 一类的 Web 可访问性验证工具只能验证它们所能认识的东西，也就是代码，而这对真正的可访问性验证远远不够。
+<br> <br>
+可访问性与易用性测试只能通过人来进行
+<br> <br>可访问性与易用性是非常主观的东西，那些基于代码验证的测试工具往往并不能发现真正的问题，需要真正的用户告诉你他们是否可以无障碍的，轻松地访问你的站点。下面的站点可以通过可访问性验证，但...
+<br> <br>
+验证工具就像机器翻译
+<br> <br>现在最常用的机器翻译工具，如 Google Translate 以及 Babel fish 可以证明，没有什么东西比人更聪明，人类的语言不仅仅是一堆单词的堆砌，更要靠语境，而机器是无法理解语境的。验证工具和机器翻译是一个道理。
+<br> <br>
+用翻译实验看看机器翻译的能力
+<br> <br>你可以找一段话，复制到 <a href="http://translate.google.com/">Google Translate, </a>先翻成别的语言，再从别的语言翻译回来，如此三番几次，就会知道机器翻译的局限。
+<br> <br>
+结语
+<br> <br>关于 W3C 代码验证，一个事实就是，验证本身并不能保证你的站点在语义，可访问性，易用性，乃至用户体验上的的完美，通过这些验证工具，发现你代码中的错误和问题是应该的，但过分追求验证的结果，为验证而验证时不可取的。
+<br> <br>本文国际来源：Six Revisions <a href="http://sixrevisions.com/web-standards/problems-with-using-website-validation-services/">Problems with Using Website Validation Services</a> (原文作者：Alexander Dawson)
+<br> <br>中文编译来源：<a href="http://www.comsharp.com/"> <b>锐商企业CMS</b> 网站内容管理系统</a> 官方网站"
+➜Google引入随后撤下模仿Bing的背景图布局
+https://www.solidot.org/story?sid=18340	4320
+Google于6月9日开展<a href="http://googleblog.blogspot.com/2010/06/art-of-homepage.html">一项试验</a>，在搜索主页引入了模仿微软Bing风格的背景图设置。Google计划进行为期24小时的试验，以了解用户对新主页布局的反应，他们究竟是喜欢还是厌恶？然而仅仅过了13小时，Google就在用户的<a href="http://www.google.com/support/forum/p/Web%20Search/thread?tid=52d49a85dcfbdb9f&amp;hl=en">声讨</a>下<a href="http://search.slashdot.org/story/10/06/10/1933214/Google-Introduces-Then-Scraps-Bing-Style-Background-Images?art_pos=8">撤下了背景图</a>。而“移除Google背景图（remove Google background）”的关键词一度在<a href="http://google.com/trends/hottrends?sa=X#">Google趋势</a>中排在第7位。
+➜Linus Torvalds讨厌C++
+https://www.solidot.org/story?sid=18341	5700
+C 写道<i> "Linux内核的创始人Linus Torvalds<a href="http://www.realworldtech.com/forums/index.cfm?action=detail&amp;id=110618&amp;threadid=110549&amp;roomid=2">最近在一封邮件中说明了内核开发需要使用C语言而非C++的理由</a>。在庞大的项目中，人们对不是自己开发的模块并不了解，能快速理解其他模块中函数的确切含义才能提高开发效率，而C++引入的各种抽象则使代码变得晦涩难读。另外Linus还认为C++的内存管理方式很弱智(that idiotic "new" keyword in C++)。邮件最后的总结是：很显然C并不适合所有项目，不过C++？还是算了吧。垃圾回收和并发等等，这些才是真正重要的特性。</i>
+那么他所期待的C+＋替代会是什么呢？是方兴未艾的<a href="http://golang.org/">Go语言</a>？还是<a href="http://www.digitalmars.com/d/2.0/index.html">即将迎来2.0的D语言</a>？或是用Java, .net这些基于虚拟机的语言去代替？"
+➜Flash 10.1发布
+https://www.solidot.org/story?sid=18342	10440
+Adobe发布了<a href="http://blogs.adobe.com/flashplayer/2010/06/flash_player_101_now_available.html">Flash 10.1</a>。Adobe和苹果之间的口水仗让Flash受到了越来越多的审视。新版Flash担负着重任，它需要使用更少的资源，同时又要更快、更稳定和更安全。<i>
+Osnews<a href="http://www.osnews.com/story/23438/Flash_Player_10_1_Released">认为</a>Adobe确实在新版本上投入了巨大的心力，10.1版的Beta和RC版测试显示显著的降低了CPU负载，从而减轻了笔记本电池的压力。例如，当一个不可见标签页中有Flash内容在运行，Flash 10.1能减少处理器占用率，降低内存使用。如果内存即将耗尽，Flash播放器会自动关闭，让位于其它任务。Flash 10.1还支持Windows上H264内容的硬件加速，但不支持Mac OS X和Linux上的硬件加速。Adobe解释说，Linux上没有支持H264硬件编解码的标准API，而Mac OS X则因为苹果不公开所用的API。</i>
+➜Google申请继续在中国提供地图服务
+https://www.solidot.org/story?sid=18343	10800
+5月中旬，国家测绘局<a href="__SLASHLINK__" sect="internet" sid="10/05/28/0118248" sn="article" tid="120">公布了《互联网地图服务专业标准》</a>，规定在中国提供地图服务需要牌照，未获牌照将被查处。<i>
+《华尔街日报》<a href="http://cn.wsj.com/gb/20100611/tec071826.asp">报道</a>，谷歌申请继续在中国提供地图服务。一名了解相关规定的政府官员称，谷歌已经提交了申请，但这名官员未透露审批状态。国家测绘局发言人拒绝置评。谷歌一位发言人只说，不管在哪里运营，我们都遵守当地的法律法规。《华尔街日报》<a href="http://cn.wsj.com/gb/20100611/bch095704.asp">认为</a>，符合要求也不一定就能拿到许可证，特别是对于谷歌来说，因为它曾抵制网络审查、与政府发生纠葛。首批获得通过的公司名单预计会在本月晚些时候公布，未遵守新规的公司名单将在年内公布。申请被驳回的公司将被禁止继续在中国提供在线地图服务。目前所知的是地图服务网站Mapabc已经获得了国家测绘局的批准。</i>
+➜多任务对神经元并不是问题
+https://www.solidot.org/story?sid=18344	12000
+在人类和灵长类动物中，前额叶皮层负责执行高层次的任务，如学习、决策和计划。神经科学家一直想知道，这部分的大脑神经元是否只能执行某一类型的任务，或者是它们是“通才”——能参与到多种任务中。MIT Picower学习和记忆研究院的新研究<a href="http://web.mit.edu/newsoffice/2010/multitask-neuro-0610.html">支持了“通才”猜想</a>。<i>
+MIT教授<a href="http://www.ekmiller.org/">Earl Miller</a>及其实验室的同事研究显示，当他们训练猴子执行两种不同的分类任务——区分猫与狗、以及区分赛车和轿车，有半数的神经元能在两者之间切换。他们的发现发表在6月10日出版的《神经元》杂志上，暗示大脑前额叶皮层中的神经元比大脑其它部分的神经元，能更好的适应不同的认知需求。研究结果证实了神经元具有易适应性。</i>
+➜Twitter收购数据分析公司Smallthought
+https://www.solidot.org/story?sid=18345	13800
+<a href="http://www.hi2020.com/">书评影评</a> 写道 "据TechCrunch<a href="http://techcrunch.com/2010/06/10/twitter-analytics-no-longer-an-afterthought-with-smallthought-buy/">报道</a>，Twitter周四宣布收购云网络分析应用软件开发商Smallthought系统公司。
+<i>
+Smallthought系统公司Trendly软件允许网站站长深入挖掘谷歌Google Analytics工具收集的网站使用和流量数据。这次收购使Smallthought的职员并入到Twitter数据分析团队，他们将把Trendly功能与技术整合到Twitter现有系统中，并帮助开发新的产品。"</i>
+➜AT&T iPad资料泄漏黑客接受ZDnet专访
+https://www.solidot.org/story?sid=18346	15900
+<a href="http://yi-it.com/">易IT</a> 写道 <i>"让AT&amp;T的iPAD用户e-mail外泄的骇客团体成员辩称，他们的行动是为了公众利益。AT&amp;T日前狼狈地修补造成10万以上iPad用户e-mail地址外泄的网站漏洞。该公司表示，他们7日接获一个企业顾客通知，便在隔日修补完成。而踢爆这个安全瑕疵的骇客团体<a href="http://security.goatse.fr/">Goatse Security</a>，也在9日将详情公布在一个博客网站，引发媒体疯狂追踪。联邦调查局（FBI）已针对这起连带曝光许多政府高官和媒体名人e-mail地址的事件，展开调查。</i>
+<a href="http://www.zdnet.com.tw/news/web/0,2000085679,20146056,00.htm">ZDNET于10日采访了Goatse的主要成员</a>：Escher Auernheimer（别名Weev），说明该团体的动机。           <b>Q: AT&amp;T发言人说你们没有联络他们，你能说明吗？ </b>  <br> <br>
+Auernheimer: 我们选择不采取直接对话。我们一直等到8日，确定他们网站的漏洞已经修补好之后，才公布资料和攻击的细节。而且我们只把消息放给Gawker Media（八卦网站）的Ryan Tate，因为他答应会检查（隐藏）ICCID和e-mail，以免被有心人利用。我们尽了最大的努力，但我们不想直接和AT&amp;T接触，以免他们试图对我们不利或发出禁止令。  <br> <br>
+<b>如果你们没有直接连络AT&amp;T，那是用什么方式和他们接触？ </b>  <br> <br>
+Auernheimer: 那不是我的责任。另一个人负责确定AT&amp;T已经防护好他们的网站，和这个漏洞不会被其他任何人利用。我是负责确定攻击程式的作者已经确认该漏洞被封闭，然后才对外公布资料和细节。那是我们的公司程序。  <br> <br>
+<b>所以，Goatse Security 的行动是有商业目的？ </b>  <br> <br>
+Auernheimer: 我们有一个我们非常重视的客户基础，他们的利益优先。但那些客户之外，我们最看重的是公众利益。我们为大众服务，而公开这件事的原因，是因为民众有知的权利。这个问题可能产生几个严重后果，尤其是如果有人偷走了这些资料，然后发动一个Safari攻击…现在就有几个我知道的零时差（未修补）攻击漏洞存在。有多少人拥有这个东西？我不知道，但如果他们可以拿到这份资料，就等于有一份攻击的候选人名单。那是非常危险的。 <br> <br>
+因此，我认为有必要用这种特别的方式告知大众。我知道有些人批评我们不负责任，但我们在这件事情上，是尽了全力扮演好人。我们等到漏洞修补好、我们只把资料提供给一位同意隐藏重要部分的记者。这都是为了民众的最大利益。  <br> <br>
+<b>Gawker取得这份资料没有付出任何报酬吗？ </b>  <br> <br>
+Auernheimer: 完全没有。  <br> <br>
+<b>除了那位记者之外，你们还有和任何人分享这个资讯和攻击指令吗？它有没有可能落到居心不良的人手中？ </b>  <br> <br>
+Auernheimer: 指令有可能落入第三方手中，但我不认为那会发生。我认为参与这次行动的每个人都非常负责，我没有理由怀疑他们。 <br> <br>
+<b>所以是你们其中一位成员有一台iPad，然后发现这个与AT&amp;T网站的奇特互动？</b>  <br> <br>
+Auernheimer: 他使用这一项AT&amp;T的安全维护程式，并且发现，这个普通的使用者经验中的某部分，可以用来骗取资料。  <br> <br>
+<b>然后就写出自动执行的指令了？ </b>  <br> <br>
+Auernheimer: 没错。 <br> <br>
+<b>这种网站安全瑕疵是非常普遍的，对吗？</b>  <br> <br>
+Auernheimer: 或许。针对这种俄罗斯地下市场可能已经备好攻击码的装置，AT&amp;T竟然还有这种问题，令人相当震惊。   <br> <br>
+<b>那些ID验证码能被用来执行锁定或控制该装置的目标性攻击吗？所有iPad使用者都会受影响吗？</b>  <br> <br>
+Auernheimer: 理论上有可能。我认为最坏的状况是某人发出一个Safari攻击码到那些e-mail地址，然后有人用他们的iPad点入连结…我最担心的是，有人拿到这份e-mail名单，再到RBN （俄罗斯商业网路地下市场）买到Safari攻击码，然后用来攻击美国政府官员和企业高层。那就不好了。所以这是为了民众的利益，至少现在他们知道了。至少大家知道自己可能被攻击。你或许想变更与iPad有关的e-mail地址。民众可以采取自保的步骤，那些过去大家不以为意的事情。我认为那是非常重要的。   <br> <br>
+<b>苹果有任何过失吗？他们是否该要求使用者以不同于Mac或iPad的e-mail地址去注册新装置？</b>  <br> <br>
+Auernheimer: 对我而言，真正的威胁是借由e-mail附件传送的攻击码，而那部分只要换新的e-mail即可解决，网路上有很多免费的e-mail帐号可申请。苹果应该对电信商的安全防护作某种程度的评估吗？他们应该作业务稽核评估吗？他们应该作网路应用程式审核吗？也许，但我认为大部分的错在AT&amp;T。  <br> <br>
+<b>你们究竟是什么组织？帮企业测试安全防护的顾问公司吗？</b>  <br> <br>
+Auernheimer: 没错。我们接受几方的咨询，对新工作保持开放，我们也喜欢作有趣的研究。我们有高竿的员工，我们的团队包含一些世上最聪明的人。我很荣幸能与Sam Hocevar这些人共事，他是一位影像处理（captcha-breaking）天才。有些人更是让我佩服的五体投地，我的同事都很伟大，我很高兴能成为其中一员，也对我们的成果引以为傲。  <br> <br>
+<b>你们总共有多少人？</b>  <br> <br>
+Auernheimer: 核心成员有9位，还有一些外包成员。 <br> <br>
+<b>你们以美国为基地吗？ </b>  <br> <br>
+Auernheimer: 我们没有任何基地。我们都在自己家里工作，有几个人在德州，几个在洛杉矶，有一个人在法国，其他分散在各处。 <br> <br>
+你们公司的名字，和一个恶心的惊骇网站(请见 <a href="http://en.wikipedia.org/wiki/Goatse.cx">维基百科解释</a>)一样。那是否会损伤你们的信誉和名声？  <br> <br>
+Auernheimer: （笑）我不认为。我们的研究和成果能证明一切。我们上一次公开的成果（我们大部分的成果都没有对外公布），是一个Safari溢流错误。我们的团队和我们的成果都非常棒，如果有人因为我们的发言感到极度不爽，以致于无法用文明的方式接受我们，那他们就是混蛋，我们也不想为他们工作。  <br> <br>
+<b>你说你们大部分的工作都没有曝光，你的意思是没有告知受影响的公司，或居心不良的人吗？</b>  <br> <br>
+Auernheimer: 这是本益分析的问题。当你发现一个错误，特别是在某种情况下，有时候不公布比较有利，如果这是为了你客户的利益，或某人的利益。我们的客户是最高优先，除此之外，如果我们没有接受任何人的委托，我们会把公众放在最先。但每样东西都有价钱，我相信所谓揭露的道德，当然也有价码。但若不为钱，就要为公众的利益。 <br> <br>
+<b>所以，你们的研究都不会流入地下市场或坏人的手中？ </b>  <br> <br>
+Auernheimer: 绝对不会。我们爱美国，我们爱美国人，而我们绝不会帮助美国商业上的策略对手。绝对不会。 <br> <br>
+纽约时报对你有一篇相当<a href="http://www.nytimes.com/2008/08/03/magazine/03trolls-t.html?_r=2&amp;pagewanted=all">丰富的报导</a>…  <br> <br>
+Auernheimer: 那个人根本是通篇胡言，像他说我占据别人女儿的手机要赎金。我从没宣称自己做过那种事，我也从未作过那种事。他根本不想写真实的报导，他要把我放到他编造的故事里。   <br> <br>
+<b>被封为网路巨怪和顽童，你同意吗？</b>  <br> <br>
+Auernheimer: 那部分我俯首认罪。 <br> <br>
+<b>还有什么大家应该知道的事吗？ </b>  <br> <br>
+Auernheimer: 我认为苹果的使用者会特别感到幻灭。现在执行OS X的产品，已经是可替换的商品。随着苹果使用者成为数量更可观的少数，他们对安全防护的不实际幻想，也将随之破灭。"
+➜日本宇宙飞船成功展开太阳帆
+https://www.solidot.org/story?sid=18347	18480
+日本宇宙航空研究开发机构(JAXA)于5月21日在种子岛发射了太阳帆飞船Ikaros（太阳辐射推进型行星际风筝飞船的英文缩写），比原定发射日期<a href="__SLASHLINK__" sect="science" sid="10/04/29/107213" sn="article" tid="102">晚了3天</a>。<i>
+根据<a href="http://www.isas.jaxa.jp/home/IKAROS-blog/">Ikaros项目官方博客</a>(日文)的帖子和照片，Ikaros已经成功的<a href="http://science.slashdot.org/story/10/06/10/1951231/Japan-Successfully-Deploys-First-Solar-Sail-In-Space">在太空中展开了太阳帆</a>，成为有史以来第一个完全依赖太阳能推进的宇宙飞船。《连线》引用行星学会执行董事Louis Friedman话<a href="http://www.wired.com/wiredscience/2010/06/solar-sail-deployment/">指出</a>，如果Ikaros能成功的演示利用太阳帆飞行，这将是一个具有里程碑意义的事件。太阳帆将是深空探索的希望，因为它消除了飞船携带燃料所面临的困难。</i>
+➜法官拒绝SCO重新举行一次审判的动议
+https://www.solidot.org/story?sid=18348	21840
+Ars Technica<a href="http://arstechnica.com/tech-policy/news/2010/06/scowned-no-new-trial-novell-can-shut-down-ibm-lawsuit.ars">报道</a>，SCO遭受了又一次重创，联邦地区法官Ted Stewart拒绝了它提出的举行一次新审判的动议。<i>
+Stewart和陪审团曾在今年4月作出一项裁决，裁定Novell是UNIX SVRX的合法拥有者。Stewart称，他之所以驳回动议，原因是SCO未能给出与陪审团判决相反的证据。他在决定书中指出，有大量的证据表示Novell有意识的保留了UNIX版权，SCO没有权利举行另一次审判。SCO自2003年开始攻击Linux操作系统，声称Linux是UNIX的未经授权的衍生版本。随后它与IBM和Novell等公司展开了漫长的UNIX版权诉讼案，SCO屡败屡战。最新的决定意味着它无法继续起诉IBM和其它Linux用户。</i>
+➜openSUSE Build Service 1.8及2.0发布
+https://www.solidot.org/story?sid=18349	25200
+openSUSE<a href="http://lwn.net/Articles/391704/">宣布</a>发布openSUSE Build Service 1.8及2.0版。
+<i>
+<a href="http://en.opensuse.org/Build_Service">openSUSE Build Service</a>是一个开放且完整的发行版本开发平台，允许开发者为不同发行版和硬件架构打包编译。openSUSE Build Service是一个开放服务，面向所有开源开发者，它支持的大发行版包括了Debian、Fedora、Mandriva、openSUSE、Red Hat Enterprise Linux、SUSE Linux Enterprise和Ubuntu，也支持编译openSUSE和MeeGo发行版。最新的2.0版本带来了新设计的Web UI，匿名访问、增强请求系统；而1.8版本增加了MeeGo所要求的访问控制功能。</i>
+➜智能手机 VS 超级电脑
+https://www.solidot.org/story?sid=18350	27360
+超级计算机通常是用<a href="http://en.wikipedia.org/wiki/LINPACK">Linpack Benchmark</a>去测量浮点计算能力。<a href="__SLASHLINK__" sect="hardware" sid="10/06/01/0137245" sn="article" tid="124">最新TOP500名单</a>两周前出炉，美国能源部橡树岭国家实验室的Jaguar排名第一，其Linpack Benchmark得分为1.75 petaflop/s，如果用普通PC作比较的话，Jaguar一天的计算量一台标准电脑需要不眠不休的运算100年。如今的智能手机大有取代桌面电脑的趋势，<a href="http://www.walkingrandomly.com/?p=2684">那么智能手机与超级电脑相比又如何呢</a>？<i>
+开发者已经开发出Linpack Benchmark的<a href="http://www.netlib.org/benchmark/linpackjava/">Java版</a>，GreeneComputing推出了一个<a href="http://www.greenecomputing.com/apps/linpack/">Android版</a>，并对一系列Android智能手机进行测试(<a href="http://www.greenecomputing.com/apps/linpack/linpack-top-10/">TOP 10</a>)。结果显示，一台HTC Hero手机（运行Android 1.5）的浮点计算能力为2.3 Mflop/s，比1979年的Cray 1超级电脑快66%；一台微调过的Motorola Droid手机为52 Mflop/s，比Cray 1超级电脑快15倍；Nexus One手机最高有55.5 Mflop/s...</i>
+➜美国科学家为五角大楼设计智能救命内裤
+https://www.solidot.org/story?sid=18351	28800
+加州大学圣迭戈分校纳米工程学教授Joseph Wang领导的一个研究小组设计出一种<a href="http://tech.slashdot.org/story/10/06/10/163233/Smart-Underwear-Designed-For-Military">据称能拯救生命的内裤</a>。<i>
+<a href="http://cn.reuters.com/article/oddlyEnoughNews/idCNCHINA-2459920100610">这种新式男用内裤</a>与皮肤接触的部分有电子生物传感器，用于测量血压、心率等生命体征。智能内裤的初衷是监测士兵在战场接受手术时的伤口情况，以一种最不具侵犯性的传感器来确定伤口的位置和伤势。设计者还希望未来有一天内裤还能向伤口释放药物，以减轻疼痛和治愈伤口。智能内裤技术与传统的丝网印刷术类似，但染料中含有碳电极。Joseph Wang表示，这种技术不仅仅适用于军方，还可用于民间。</i>
+➜苹果iPhone 4“韩国造”
+https://www.solidot.org/story?sid=18352	30480
+<a href="http://www.iestew.com/">squarefw</a> 写道 "<i>《朝鲜日报》<a href="http://english.chosun.com/site/data/html_dir/2010/06/10/2010061001059.html">报道</a>，业内人士开玩笑的说苹果公司最新发布的iPhone 4手机实际上是韩国出品的（Made in Korea），包括屏幕、处理器、内存、电池等主要零件均由韩国厂商提供。被苹果大力推荐的视网膜显示屏由LG电子制造，A4处理器是韩国三星电子生产，大容量电池和片式多层陶瓷电容器也是三星电子生产，闪存芯片同样来自三星电子。此外iPhone 4还使用了由韩国企业生产的零件，包括压敏电阻器和柔性印刷电路板等部件。</i>
+➜在伊朗，互联网是生命线也是绞索
+https://www.solidot.org/story?sid=18353	32400
+《美国之音》<a href="http://www1.voanews.com/english/news/science-technology/In-Iran-Internet-is-Lifeline-and-a-Noose-95977139.html">报道</a>，去年的这个时候，伊朗爆发了抗议选举不公的大规模游行示威，互联网、社交网站、博客和手机成为反对派和居民手中最强有力的工具。然而一年之后，同样的技术被伊朗政府用于压制不同意见和批评，互联网变成了一个危机四伏的场所。<i>
+记者无国界组织称，过去一年至少170多位记者和博客被捕，其中22位被判了合计超过135年的刑期。在互联网上发表批评伊朗政府言论比以往任何时候风险都高。记者和博客Omid Memarian说，政府过滤互联网，监视短信通讯，试图控制和遏制信息流通，在一定程度上他们取得了成功。</i>
+➜海藻油能源飞机
+https://www.solidot.org/story?sid=18354	34920
+DNA24 写道 "德国科学家研发<a href="http://www.google.com/hostednews/afp/article/ALeqM5jS3vyX3sLXet11TWcN3Eg4Yd7iMQ">利用海藻作为能源的环保飞机</a>，有助减少温室气体排放。<i>
+在<a href="http://www.ila-berlin.de/ila2010/home/index_e.cfm">柏林航空展</a>上亮相的小型飞机，是全球第一架用海藻油做燃料的飞机，海藻油是非常理想的洁净能源，能源含量比传统的飞机燃料高百分之十，燃烧得更加彻底，可以减少飞机引擎排放的废气。海藻油可以说是取之不尽的新生物能源，因为只要有阳光，任何地方都可以培植海藻，然后把海藻细胞所含的油份提炼出来，就成为清纯的海藻油，而且海藻在生长时会吸收二氧化碳，有助减少温室气体。但海藻油飞机的普及最少要等五至十年，原因是目前生产成本太贵。"</i>
+➜美国将解密4亿页机密文档
+https://www.solidot.org/story?sid=18355	37200
+美国总统奥巴马责成新建立的<a href="http://www.archives.gov/declassification/faqs.html">国家解密中心</a>2013年前解密超过25年时间的<a href="http://yro.slashdot.org/story/10/06/10/1819245/New-Declassification-Process-To-Open-400-Million-Pages-of-Records">4亿多页秘密文献</a>。<i>
+美国国家档案馆已经编写了一份优先次序的<a href="http://www.archives.gov/declassification/prioritization-plan.html">计划草案</a>，以指导解密活动，并邀请公众对此发表意见，有关公共论坛将在6月23日举行。解密的文档预计将包含大量让历史学家和情报迷们感兴趣的内容，包括加密技术相关信息、图像分析和间谍活动。</i>
+➜报道称富士康考虑关闭部分大陆工厂
+https://www.solidot.org/story?sid=18356	38700
+香港《东方日报》<a href="http://orientaldaily.on.cc/cnt/china_world/20100609/00178_001.html">报道</a>了尚无其它可靠来源证实的消息：富士康决定撤走大陆部分生产线。<i>富士康母公司鸿海集团董事长郭台铭在股东会上，突然宣布会把富士康部分在大陆的生产线撤回台湾，改用机器生产以无人工厂方式运作；而富士康除了会加大在越南生产线外，亦计划将部分生产线迁至印度等国家。郭名铭再次就跳楼事件解释，形容自己“背了十二个十字架”，强调员工跳楼跟工作无显著关系，并公开一跳楼员工的遗书，指员工在遗书中叫父母不用伤心，“因为富士康多少会赔点钱”。他指为免有员工为了抚恤金轻生，富士康已停止所有抚恤金的发放。</i>
+The Register也引用《东方日报》的消息进行了<a href="http://www.theregister.co.uk/2010/06/10/foxconn_restructuring/">报道</a>，德国之声记者<a href="http://www.dw-world.de/dw/article/0,,5672555,00.html">实地走访“富士康”</a>。
+➜土星之环孕育迷你卫星
+https://www.solidot.org/story?sid=18357	52560
+早在航海家号时代，天文学家便观察到土星的环是一个动态系统，环与周围的微小卫星组成了一个复杂结构。现在，在卡西尼号飞船的帮助下，科学家能近距离观察土星最外部的环—A环—边缘的小卫星。令科学家惊讶的是，这些卫星比太阳系45亿年龄要年轻得多，它们的形状、密度以及外表都暗示其形成时间可能不到1亿年。研究人员猜想这些小卫星的形成可能源自环内的某种交互作用，他们建立了模型。<i>
+最新一期《自然》杂志上的一篇<a href="http://dx.doi.org/10.1038/nature09096/">论文</a>描述了<a href="http://arstechnica.com/science/news/2010/06/saturns-rings-gave-birth-to-mini-moons.ars">一种与观察相当吻合的模型</a>。模型有两部分，A环本身被形容成一种粘性液体，在土星引力的约束下缓慢延伸。在某一时刻，A环超过了Roche极限，Roche极限是在土星引力下物质无法凝聚的一个轨道位置点。超过Roche极限之后，物质就可能开始凝聚。凝聚物质通过碰撞而逐渐增大质量。一个大质量的天体一旦形成，环会向其转移部分角动量，导致新形成的卫星向外迁移，失去角动量，然后环通过作用使其停留在一个轨道共振点。当系统稳定下来后，环又开始向外延伸，同样的事情再次发生。模型显示，迷你卫星的形成十分迅速，只需经历千万年，而环和卫星最终稳定下来前则需要再进化几百万年。</i>
+➜缘分定于迪士尼乐园
+https://www.solidot.org/story?sid=18358	56700
+世界很小，没有人比Alex和Donna Voutsinas夫妇更能理解这一点。<i>
+《每日邮报》<a href="http://www.dailymail.co.uk/news/worldnews/article-1285238/Engaged-couple-discover-paths-crossed-Disney-World-toddlers.html">报道</a>（<a href="http://www.merit-times.com.tw/NewsPage.aspx?Unid=186716">中文</a>），Alex和Donna直到15年前才相似，之前一个是加拿大人，一个是美国人。在结婚前几天，Alex翻看未婚妻童年照时，赫然发现父亲的身影。照片中的Donna只得5岁，当日是在佛罗里达迪士尼世界内与兄弟一起跟卡通角色合照留念。合影中，Alex的父亲正好位于他们的右后方，小Alex就在父亲推着的娃娃车内。当时Alex一家居住在加拿大，而Donna一家住在佛罗里达。双方家庭毫无联系，互不相识。现在两人已结婚八年。他们后来找来Alex的童年照，确认两人的确在20年前的同一天到迪士尼游玩。</i>

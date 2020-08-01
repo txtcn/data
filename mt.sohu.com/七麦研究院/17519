@@ -1,0 +1,149 @@
+➜如何在iTC设置App内购，这是一篇细致到代码都给你看的指南！
+http://www.sohu.com/a/211469143_100065715	42289
+<p>本文由国内专业的移动应用数据分析平台 七麦数据 提供。</p>
+<p>在 iOS 11 App Store 中，已经支持搜索结果中显示内购了，那你知道为 App 添加内购商品要注意些什么吗？今天这篇文章我们就和大家详细的讲一下添加内购的流程，主要内容分为以下几个方面：</p>
+<p><strong>协议、税务和银行业务信息填写</strong></p>
+<p><strong>内购商品的添加</strong></p>
+<p><strong>添加沙盒测试账号</strong></p>
+<p><strong>内购代码的具体实现</strong></p>
+<p><strong>内购的注意事项</strong></p>
+<p><strong>一、协议、税务和银行业务信息填写</strong></p>
+<p><strong>1.协议、税务和银行业务信息填写的入口</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/ba8d0deb9e504f7482b492e00e434337.jpg" max-width="600" /></p>
+<p><strong>2.选择申请合同类型</strong></p>
+<p>进入协议、税务和银行业务页面后，会有 3 种合同类型，如果你之前没有主动申请过去合同，那么一般你现在激活的合同只有 iOS Free Application 一种。</p>
+<p><strong>页面内容分为两块：</strong></p>
+<p>Request Contracts(申请合同)</p>
+<p>Contracts In Effect(已生效合同)</p>
+<p><strong>合同类型分为 3 种：</strong></p>
+<p>iOS Free Application(免费应用合同)</p>
+<p>iOS Paid Application(付费应用合同)</p>
+<p>iAd App NetNetwork(广告合同)</p>
+<p>这篇文章我们主要讲的是付费应用合同的申请流程。</p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/d7141be8258d46ef89b4c10088543830.jpg" max-width="600" /></p>
+<p><strong>3.申请 iOS Paid Application 合同(协议、税务和银行业务 3 个都要填写)</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/8ad39e468baf448f863ee3d15e6ef1b8.jpg" max-width="600" /></p>
+<p><strong>4.Contact Info(填写联系方式)</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/eca6f7aa66994b3aa743ab79f522914e.jpg" max-width="600" /></p>
+<p>如果你没有添加过联系人，你需要通过 Add New Contact 按钮来添加一个新的联系人，然后指定联系人的职务。如下：</p>
+<p><strong>Senior Management</strong>：高管</p>
+<p><strong>Financial</strong>：财务</p>
+<p><strong>Technical</strong>：技术支持</p>
+<p><strong>Legal</strong>：法务</p>
+<p><strong>Marketing</strong>：市场推广</p>
+<p><strong>如果你是独立开发者，可以全部填你自己一个人。</strong></p>
+<p><strong>5.填写银行信息</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/f40ef6e97ee349a3bb9f27fb0b286ed1.jpg" max-width="600" /></p>
+<p>选择你的银行账户，如果你没有，点击旁边的 Add Bank Account 添加一个账户。下面是添加一个账户的流程。</p>
+<p><strong>①选择银行所在的国家</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/5fdf63afcdf84c56b6447403e17bd792.jpg" max-width="600" /></p>
+<p><strong>②填写银行标识 CNAPS Code</strong></p>
+<p>如果你不知道 CNAPS Code 是多少，可以百度搜 CNAPS Code 来查询，查询时会根据 3 个关键信息来查询，如下：</p>
+<p><strong>Bank Name</strong>：银行的英文名称(不能是拼音)</p>
+<p><strong>City</strong>：银行所在的城市英文名称(中国的城市用拼音)</p>
+<p><strong>Postal Code</strong>：邮编</p>
+<p>然后在下面就会出来备选的银行，选择正确的银行后，点击 next，进入下一步。</p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/ee17bbf035324466a05850bfbc9260f7.jpg" max-width="600" /></p>
+<p><strong>③确认银行信息</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/1b5a4aa4b97440f681d15cc84f7c6698.jpg" max-width="600" /></p>
+<p><strong>④填写银行账号信息</strong></p>
+<p><strong>Bank Account Number</strong>：银行账号</p>
+<p><strong>Confirm Bank Account Number</strong>：再次输入银行账号</p>
+<p><strong>Account Holder Name</strong>：持卡人姓名，中文名用拼写，名在前，姓在后</p>
+<p><strong>Bank Account Currency</strong>：货币类型，一般国内的开发者选择 CNY</p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/58c4930e32574028bd748c7e48f9618c.jpg" max-width="600" /></p>
+<p><strong>⑤确认所有信息</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/ac185ccee0df4414a196b3ec5ee80814.jpg" max-width="600" /></p>
+<p><strong>6.填写税务信息</strong><strong>(这个内容比较多)</strong></p>
+<p><strong>①税务信息分 3 种：</strong></p>
+<p><strong>U.S Tax Forms</strong>：美国税务</p>
+<p><strong>Australia Tax Forms</strong>：澳大利亚税务</p>
+<p><strong>Canada Tax Forms</strong>：加拿大税务</p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/577617016f7346a4b752a7329cd1094a.jpg" max-width="600" /></p>
+<p><strong>②一堆条约</strong></p>
+<p>我选择的是 U.S Tax Forms，选择后会问你两个问题：</p>
+<p>第 1 个问题询问你是否是美国居民，有没有美国伙伴关系或者美国公司，如果没有直接选择 No。</p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/9b7c8e9d878f4b6e96bea4ce23c14f0e.jpg" max-width="600" /></p>
+<p>第 2 个问题询问你有没有在美国的商业性活动，没有也直接选 No。</p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/4a63149d739b4f2fa645c93b24ba2dd5.jpg" max-width="600" /></p>
+<p><strong>③然后填写你的税务信息，包括以下几点：</strong></p>
+<p><strong>Individual or Organization Name</strong>：个人或者组织名称</p>
+<p><strong>Country of incorporation</strong>： 所在国家</p>
+<p><strong>Type of Beneficial Owner</strong>：受益方式，独立开发者选个人</p>
+<p><strong>Permanent Residence</strong>：居住地址</p>
+<p><strong>Mailing address</strong>：邮寄地址</p>
+<p><strong>Name of Person Making this Declaration</strong>：声明人</p>
+<p><strong>Title</strong>：头衔</p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/bd4e61be85f14022b2244a11b70ddfaa.jpg" max-width="600" /></p>
+<p><strong>④打钩</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/5612b1ba38e04e19a9411c8d27f1b762.jpg" max-width="600" /></p>
+<p><strong>⑤澳大利亚的不要管了</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/bf76863719f84030a6cc0b87f9687de0.jpg" max-width="600" /></p>
+<p><strong>⑥加拿大的也不用管了</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/7f26427f9e214f7f91976ef98dc73699.jpg" max-width="600" /></p>
+<p><strong>7.填写完成</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/661c254a189d45b09700e05bf6843cad.jpg" max-width="600" /></p>
+<p><strong>8.待审核</strong></p>
+<p>你填写完所有资料后，合同状态就会变成 Processing，大概 24 小时内就会有结果。</p>
+<p><strong>二、内购商品的添加</strong></p>
+<p><strong>1.创建内购商品</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/30393b097d804d57909c4e79ca8f4fa6.jpg" max-width="600" /></p>
+<p><strong>2.选择内购类型</strong></p>
+<p><strong>①消耗型商品</strong></p>
+<p>类似游戏中的钻石，还有现在某些 App 中的货币，比如斗鱼里的鱼丸、映客里的映票。会被消耗的，要选择消耗型商品。</p>
+<p><strong>注意：大多数的消耗型商品都是需要登录的，因为需要在数据库存余额。</strong><strong>在登录之前，你最好不要让用户看到商品，有可能会因为这个原因被拒</strong>（大家都说看运气）。</p>
+<p><strong>②非消耗型商品</strong></p>
+<p>无法被消耗的商品，比如上文提到的视频课程，一次购买，就应该永久可以观看。</p>
+<p><strong>注意：当你使用非消耗型商品时，你需要添加一个恢复购买的按钮。</strong>这个常见于各种游戏中，其实知道这个规定以后还是挺好理解的，非消耗型商品是不可被消耗的，一次购买终身使用的。</p>
+<p><strong>③订阅类型商品</strong></p>
+<p>如果你的公司是外包公司，有订阅类型商品的 App，一定要用客户的账号提交审核！因为当 App 中有过订阅类型商品，注意是有过，创建过再删除也算，这个 App 无法被转移账号。</p>
+<p><strong>注意：使用或曾经使用过订阅型商品的 App 无法转移</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/19a472f78b3e441588c9624c0fadb52c.jpg" max-width="600" /></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/39c880d4101249e3987dff4a31d4b89f.jpg" max-width="600" /></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/7434efc329d1456f87f3fd90beff13e9.jpg" max-width="600" /></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/7ca8cdb291e2417182f4b6c582af8c2a.jpg" max-width="600" /></p>
+<p><strong> 3.创建好的产品</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/1ef5b6d03cb14c498741ab28262b4330.jpg" max-width="600" /></p>
+<p><strong>4.在上线的时候记得添加内购的商品</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/c2d7cd67d4054cb198515b902862fcb8.jpg" max-width="600" /></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/42474f5fef044483a6c23775e6cffa9d.jpg" max-width="600" /></p>
+<p><strong>三、添加沙盒测试账号</strong></p>
+<p><strong>1.添加沙盒测试的入口</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/5b4a1dbf51e44eaeafa2109a2e563bfb.jpg" max-width="600" /></p>
+<p><strong>2.添加沙盒测试账号</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/c962cce184d94c91bfc0db7d99822bcf.jpg" max-width="600" /></p>
+<p><strong>3.具体的测试账号信息填写</strong></p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/28cb884260ff40168003aa0628996937.jpg" max-width="600" /></p>
+<p><strong>四、内购代码的具体实现</strong></p>
+<p>我创建了一个购买金币的内购控制器<strong>ApplePayCIOViewController。</strong>在这里，向大家贴出.m 的详细代码。</p>
+<p><strong>1.内购的流程详细讲解</strong></p>
+<p>①用户先拿到购买产品的单子</p>
+<p>②缴费、盖章</p>
+<p>③把已盖章的单子传到自己的服务器，验证是否支付成功</p>
+<p>④根据服务器返回的信息做具体的处理</p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/9f4467540bed45369ddea2fde3e950dd.jpg" max-width="600" /></p>
+<p><strong>2.代码</strong></p>
+<p>①先导入 StoreKit.framework 库</p>
+<p>②创建 ApplePayCIOViewController，遵守协议<strong> </strong></p>
+<p>③ApplePayCIOViewController.m 代码</p>
+<p>向下滑动查看多图</p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171219/f5dc2cc8343540a6a1ff43d9228a5b90.jpg" max-width="600" /></p>
+<p><strong>五、内购的注意事项</strong></p>
+<p>1.一般发生于首次提交 App 或添加新商品。当你的 App 通过审核以后，你发现在生产环境下获取不到商品，这是因为 App 虽然过审核了，但是内购商品还没有正式添加到苹果的服务器里，耐心等待一段时间就可以啦～</p>
+<p>2. 代码中的_currentProId 所填写的是你的购买项目的的 ID，这个和第二步创建的内购的 productID 要一致；本例中是 123。</p>
+<p>3. 在监听购买结果后，一定要调用<strong>[[SKPaymentQueue defaultQueue] finishTransaction:tran]</strong>;来允许你从支付队列中移除交易。</p>
+<p><strong>4. 沙盒环境测试 App Store 内购流程的时候，请使用没越狱的设备。</strong></p>
+<p><strong>5. 请务必使用真机来测试，一切以真机为准。</strong></p>
+<p>6. 项目的 Bundle identifier 需要与您申请 App ID 时填写的 Bundle ID 一致，不然会无法请求到商品信息。</p>
+<p>7. 真机测试的时候，一定要退出原来的账号，才能用沙盒测试账号</p>
+<p>8. 二次验证，请注意区分宏， 测试用沙盒验证，App Store 审核的时候也使用的是沙盒购买，所以验证购买凭证的时候需要判断返回 Status Code 决定是否去沙盒进行二次验证，为了线上用户的使用，验证的顺序肯定是先验证正式环境，此时若返回值为 21007，就需要去沙盒二次验证，因为此购买的是在沙盒进行的。</p>
+<p>9.您的应用是否处于等待开发者发布（Pending Developer Release）状态？等待发布状态的 IAP 是无法测试的。</p>
+<p>10.您的内购项目是否是最近才新建的，或者进行了更改？内购项目需要一段时间才能反应到所有服务器上，这个过程一般是一两小时，也可能再长一些达到若干小时。</p>
+<p>11.您在 iTC 中 Contracts, Tax, and Banking Information 项目中是否有还没有设置或者过期了的项目？不完整的财务信息无法进行内购测试。</p>
+<p>12.您是在越狱设备上进行内购测试么？<strong>越狱设备不能用于正常内购</strong>，您需要重装或者寻找一台没有越狱的设备。</p>
+<p>13.您的应用是否是被拒状态（Rejected）或自己拒绝（Developer Rejected）了？<strong>被拒绝状态的应用的话对应还未通过的内购项目也会一起被拒</strong>，因此您需要重新将 IAP 项目设为 Cleared for Sale。</p>
+<p>14.您使用的测试账号是否是美国区账号？虽然不是一定需要，但是<strong>鉴于其他地区的测试账号经常抽风，加上美国区账号一直很稳定，因此强烈建议使用美国区账号</strong>。正常情况下 IAP 不需要进行信用卡绑定和其他信息填写，如果你遇到了这种情况，可以试试删除这个测试账号再新建一个其他地区的。</p>
+<p>15.您是否将设备上原来的 App 删除了，并重新进行了安装？如果是，记得在安装前做一下 Clean 和 Clean Build Folder。</p>
+<p>16.您的 plist 中的 Bundle identifier 的内容是否和您的 App ID 一致。</p>
+<p>不能再详细指南到此结束，快去给你的 App 设置内购吧~</p>
+<p>*本文由 CocoaChina 授权发布，著作权归 CocoaChina 所有，转载请联系 CocoaChina 获得授权，非商业转载请注明出处。</p>

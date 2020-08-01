@@ -1,0 +1,196 @@
+➜时代的眼泪：繁华落尽的SPARC处理器
+http://www.sohu.com/a/410729445_458015	21031
+<p>「网络就是电脑」（The Network Is TheComputer）这句格言，是在1984 年，由Sun 第21 名员工John Gage 创造。别说网络，在连个人电脑都尚未普及的年代，如此独树一帜的另类论点，恐怕让不少人「想问候小朋友」，但今日云端计算的普及，却充分印证了Sun 的另类观点，的确高瞻远瞩。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200731/d39923661f6b442d90fee91d979c5190.jpeg" max-width="600" /></p>
+<p>稍有年纪的读者，还记得20 多年前，在电脑中心随处可见的Sun Ultra 系列工作站，那高贵的Sony 特丽霓虹显像屏幕、听说手感还不错的键盘、戏称为「Slow -Laris」的Solaris 操作系统与里面的心脏：UltraSPARC 处理器吗？</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200731/1f814f322c36493bab0bc1d9dfd3355a.jpeg" max-width="600" /></p>
+<p>头发绑马尾的Jonathan Ian Schwartz 在任职Sun CEO期间，没事就在官方部落格长篇大论左批HP 右打IBM，更是当时资讯业界与科技媒体茶余饭后的必聊话题。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200731/4057a257ee2346709921c5a2b4734eca.jpeg" max-width="600" /></p>
+<p>2008 年4 月20日，Sun 董事会通过决议，同意将以每股9.5 美元价格，将这间拥有UltraSPARC 处理器、Solaris 操作系统、ZFS 文件系统、Java 程序语言、MySQL数据库、效能分析工具DTrace、庞大的服务器工作站产品线、无数大型企业客户、无数软硬件创新（如无人不知的NFS 网络文件系统和大型多处理器服务器）的硅谷知名公司，出售给以数据库与ERP 闻名于世的Oracle。</p>
+<p>当时坊间舆论亦不乏对此购并案的担忧，但看在「Oracle大多数数据库产品都运行在Solaris，且往往跑得还比IBMAIX 还快」份上，加上Oracle 从此晋升为「软硬兼备」的强权，足以跟IBM 分庭抗礼，所以外界仍抱着「审慎乐观」态度。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200731/35fd1c95c0f74aba91a32c3c513778aa.jpeg" max-width="600" /></p>
+<p>不过很不幸的是，继在2017年初全球大裁员先砍了一批人，主管旧Sun产品线的系统部门执行副总裁John Fowler，8月2日因不明原因离职，2017年9月初，Oracle更一口气裁撤所有SPARC处理器与Solaris操作系统的964人，曾在互联网萌芽时代高悬天际的Sun，终究难逃陨落下场。</p>
+<p>那时候网络也不缺替Oracle「洗白」的言论，像「产品计划表还有『SPARC.Next』和『Solaris.Next』这些未来产品」、「Fujitsu 还是会继续推出新SPARC64 处理器」、「Solaris 11.5 还是会在2019 年准时发表」，连「Solaris 的技术支持时限直到2034 年」这种借口都讲得出口。然后随着时间流逝，Solaris 11.4 已是将近两年前的往事，Solaris 12 则看来永远不会出现。曾几何时，这誉为「最普及的商用RISC 处理器与Unix 操作系统」无以为继，让人不胜唏嘘。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200731/56043f2707c64edbbafc563ec49bfdd7.jpeg" max-width="600" /></p>
+<p>Oracle之所以购并Sun，以事后诸葛的角度，看似无心永续发展技术与价值，反而更像利用Sun多年累积的庞大专利权和商标权，让公司法务部门到处诉讼，狂找其他公司「讨债」，例如控告Google在Android手机使用JavaAPI索赔90亿美元，结果败诉。原本今年3月Google和Oracle要在美国最高法院大决战，因新冠肺炎影响，继续一拖再拖。</p>
+<p>法国漫画家Manu 曾在2010 年，画了好几张「奇葩组织图」一次调侃苹果、Google、Oracle、微软、Facebook、亚马逊这6 家超级公司，Oracle 这张似乎冥冥之中预言了Sun 的命运。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200731/0322942e3c674bb4aa4f5e3d0293dee1.jpeg" max-width="600" /></p>
+<p><strong>「相对开放才有出路」的年代</strong></p>
+<p>成立于1982 年2 月、全名源自「Stanford University Network」的Sun Microsystems，因3 位创办人都是斯坦福大学研究生，从诞生到消失，一直保有浓浓的学术味。十几年前，Sun 尚未被Oracle 购并时，曾有Sun 高级主管当面对笔者这样形容他们的企业文化：这间公司感觉就很像大学。</p>
+<p>从21 世纪开始，「开源软件」和「开放系统」成为不可质疑的政治正确，你不使用「日用品」等级的x86 指令集兼容处理器或开源操作系统，就是「不够开放」，而1980 年代以雨后春笋之势蓬勃发展的Unix 操作系统与他们的RISC 服务器平台，就纷纷被贴上「昂贵封闭」标签。但讽刺的是，所谓的「开放」到头来也只是相对概念，Sun 能从工作站市场发迹，就是因为「比较放得开」。</p>
+<p>这里不得不先提那时的工作站（Workstation）市场。成立于1980 年的Apollo Computer（容易让人误认为阿波罗登月计划的导航电脑）是这领域的先驱者，而工作站其实就是比较高端的通用微型电脑，特别是远优于一般个人电脑的图形处理能力，而电脑辅助设计（ComputerAided Design，CAD）就刚好是最适当的需求。知道Autodesk这间公司在做什么的，应该清楚这种应用的大致样貌。</p>
+<p>Apollo Computer 最大的客户，也不外乎像电子辅助设计工具业者（Mentor，现今EDA 工具三大巨头之一，仅次于Cadence 与Synopsys，在2017 年被德国西门子以45 亿美元现金收购）、汽车业（通用汽车、福特、克莱斯勒）和航空业（波音）等。</p>
+<p>即使Apollo Computer 初代产品DN100 工作站采用的处理器，是普及到不能再普及的Motorola 68000，但仍难摆脱1970 年代的「遗风」，软硬件规格都具强烈封闭性，除了专属硬件规格，连操作系统也是仅提供类似Unix 操作指令的Aegis / Domain。不过Sun 就完全相反，一开始就选择「开放」，不生产定制化硬件，不同工作站都使用统一Unix 操作系统，再授权给不同公司制造产品。</p>
+<p>凭着标准化软硬件，让Sun 更容易打造价格更低的产品，快速进入市场。短短几年，Apollo Computer 很快就被Sun 和DEC 超车，失去工作站市场的龙头地位。1987 年推出的Sun-4 首度成为采用SPARC 指令集兼容处理器的工作站，当年Sun 也跃升为工作站市场老大，从1985 年到1989 年，年复合成长率是美国企业最高的145%。Apollo Computer 则在1989 年被HP 以4 .76亿美元（相当于2019 年的9 亿8,200 万美元）代价购并，慢慢转形成HP 高效能运算产品线品牌之一。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200731/a2ac09e251c64636a450c374f1775232.jpeg" max-width="600" /></p>
+<p>当然，也可以自行解释成「学生创业就是这样，像什么有名大站和电玩小站，还不是起源于放在学生宿舍或研究室、脚边随时都会不小心踢到而挂站的DIY 电脑」 。Sun 创办人之一AndyBechtolsheim 设计的Sun-1 工作站，第一批的部分器件还是从斯坦福电脑科学系弄来的，你不「开放一点」根本没有其他出路。</p>
+<p><strong>名列商用RISC 处理器始祖精灵之一的SPARC</strong></p>
+<p>这种起源于学校的开放思想背景，自然也影响了Sun 自行研发的RISC 指令集处理器。Sun 在1984年开始进行SPARC（Scalable ProcessorArchitecture，可扩展式处理器架构）指令集研究，开发顾问则是大名鼎鼎的David Patterson，他是两本必读电脑架构图书的的作者、RISC的创造者、RISC-V 的发起者。2018年3月22日， DavidPatterson因开发了RISC微处理器并且让这一概念流行起来的工程师获得了2017 ACM图灵奖。</p>
+<p>SPARC 深受早期RISC「精简」思潮熏陶，希望所有运算动作都可单时钟周期搞定并高度流水线化，像整数除法之类的「复杂」指令就付之阙如，透过重复的简单运算取代之，这部分到了1990 年的SPARC v8 才补完。</p>
+<p>Sun 在1986 年发表32 位元的SPARC v7 指令集，但Sun并不像其他厂商自己做芯片，而是开放出来并定义严谨版本，让其他厂商也能研制SPARC 指令集的兼容处理器，1987年问世的Sun-4 系列工作站，处理器来源是日本Fujitsu 与Cypress（分别搭配来自Weitek 和TI 的浮点辅助运算器）；世界首颗实做出来的SPARC 指令集兼容处理器，也并非出自于Sun，而是1986 年的Fujitsu MB86900。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200731/e3b649d023494c1a926620d639fbc599.jpeg" max-width="600" /></p>
+<p>1995 年SPARC v9 扩充到64 位元与SIMD 指令集VIS（Visual Instruction Set），Sun 跟Fujitsu 在2002 年联合提出JPS（Joint Programming Specification）规范并持续演进到UA（UltraSPARC Architecture）、OSA（Oracle SPARC Architecture ）和Fujitsu 自行定义的高效能运算HPC-ACE（High Performance Computing – Arithmetic Computational Extensions）。</p>
+<p>不限指令集架构，SPARC 也出现开放VHDL 语言原始码的LEON 处理器系列（使用针对嵌入式应用而生的SPARC v8E 指令集），采用LGPL 授权，并由非营利SPARC International 组织负责管理。Sun 日后也陆续开源UltraSPARC T1 与T2，成为OpenSPARCT1、S1（单核心的T1）和OpenSPARC T2，让更多人发出「啊，原来某种处理器技术的实做细节是长这样，教科书和技术文件根本不会教你怎么下手」的感慨。</p>
+<p>总之，有别于80×86世界多年来迟迟缺乏公定版本的乱象，关于电脑最基础「语言」的指令集架构，SPARC一直都有统一标准。也因此，SPARC指令集兼容处理器的发展史，踩满了众多厂商的足迹，让历代SPARC处理器的型号总数，秒杀同时期的IBM Power（不算PowerPC）、DEC Alpha、HP PA- RISC及MIPS（如果只算高端处理器的话）等老对手。但这也让公认当代最强大的SPARC指令集兼容处理器，并非出自创造SPARC的Sun，而是日本Fujitsu。</p>
+<p>如果还记得现在x86指令集兼容处理器的战场，扣掉英特尔、AMD双雄加上台湾VIA的Centaur，还有一间俄罗斯 Elbrus，所属的MCST公司全名就叫「Moscow Center for SPARC Technologies」（莫斯科SPARC技术中心），持续研制一系列应用在俄系军事武器的SPARC处理器。</p>
+<p>然后网络也随处可见将「指令集架构」与「处理器微架构」混为一谈的高论，讲得好像Fujitsu、Cypress 和TI（德州仪器）这些公司「授权生产Sun 设计的SPARC 处理器」，但根本就不是这么一回事。如同英特尔和AMD 在x86 指令集兼容处理器的地位，Sun 和Fujitsu 身为高效能SPARC指令集兼容处理器的两大主角，两边的处理器微架构方向根本大相径庭，一边冲多核心多线程，另一边则是把RISC 处理器当成大型主机来做，不会有人敢说技术源流来自HAL 和Ross 的FujitsuSPARC64 系列，是Sun 授权的「设计」。</p>
+<p>SPARC 历代指令集版本文件封面那句大大的「OneArchitecture……Multiple Innovative Implementations」（统一的指令集架构，多种创新的微架构实作），就是最佳写照，只是傻傻分不清楚的人还是继续看不懂。</p>
+<p><strong>源自「寄存器窗口」的可延展性</strong></p>
+<p>SPARC 指令集里那个「可扩展」（Scalable），起因于独特的「寄存器窗口」（Register Window），亦可见于Berkeley RISC、AMD Am29000、英特尔i960 与Itanium，即使名称可能有点不同。</p>
+<p>当处理器碰到中断（如外部I/O 呼叫）、例外（像算术溢位）、进程切换，须将当前的执行状态，包含所有可存取的寄存器，都以事先定义好的数据结构回存到存储器，如x86 指令集的TSS（TaskStatus Segment），当恢复先前状态，再从存储器载回处理器。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200731/3dcde80817084b06b7f5694801313afe.jpeg" max-width="600" /></p>
+<p>因近代程序架构都高度模组化，不同副程序间的呼叫动作（SubroutineCall），也会造成频繁的上下文切换（Context Switch），增加寄存器和存储器间的数据传输量。过于庞大的「可见」寄存器数量，也会增加处理器的电路复杂度与上下文切换的负担，并危害到提升处理器运行时钟的延展性。</p>
+<p>那该如何降低上下文切换的负担，减少多余的内容值交换？以「空间换取时间」的Register Window 为此而生。ARM 指令集的Banked Register 也是类似方法。英特尔Itanium 处理器的IA-64 指令集也具备相同的机制，但命名为Register Stack，看似比较贴切。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200731/179ab1e9cc6b4f2ba550a9db6ec8d2d0.jpeg" max-width="600" /></p>
+<p>Register Window 借由「重叠」不同程序使用的寄存器，即可交换不同程序的数据，但「软件眼中随时可见」的寄存器数量仍为32 个，8 个全域（Global），剩下24个当作Register Window，8 个输入（In）、8 个区域（Local）、8 个输出（Out），逻辑上可视为一个巨大堆叠，Register Window 指标器（CWP）一次移动16 个寄存器的距离，前一个程序的输出变成下一个程序的输入，当程序切换时，无须将专属于特定程序的8 个区域寄存器搬到存储器，也减少了寄存器和存储器之间的数据搬移量。</p>
+<p><strong>以下举一个3 个Register Window 案例，一看就懂。</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200731/853816ab627148bf9ba09f4844786e95.jpeg" max-width="600" /></p>
+<p>因此SPARC 指令集兼容处理器的「实际」通用寄存器数量是可变的，从力求最低成本的嵌入式应用到重视多工效率的服务器，一般介于72~640。假如想要追求副程序互通有无的效率，也愿意付出较多硬件成本（像8 个Register Window 的UltraSPARC I，144 个寄存器拥有多达7 个读取埠和3个写入埠）， Register Window 数量就多多益善，但假若想要减少电路成本、又想缩短发生上下文切换的处理负担，那就少一点刚刚好。SPARC 名中的「可延展」之意即在此，和日后为人称道的「多处理器延展性」一点关系都没有。</p>
+<p><strong>效能最好的SPARC 处理器并非出自Sun</strong></p>
+<p>由于本文主角是Sun，后面将聚焦服务器与工作站处理器。但随着时间流逝，一般坊间评价「最好的SPARC 指令集兼容处理器」却不是来自「Sun 本家」，而是日本Fujitsu（与1990 年代的Ross和HAL），直到Oracle 摆明不玩、只剩下这间日本公司，别无分号为止。</p>
+<p>先从指令集版本的演进，用一个表格画出SPARC 发展史的大致轮廓，至于型号相同、制程不同的微缩版就在此不论（UltraSPARC 历代出现过大量的制程改进版本）。如前面所述，Sun 让SPARC 指令集成为「充分开放的业界标准」，除了Fujitsu 为了高效能运算而自定义的HPC-ACE，理论上所有SPARC 处理器，皆可兼容先前所有SPARC 指令集。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200731/e8e2720d86134a65aa9d0b1139968696.jpeg" max-width="600" /></p>
+<p>但在踏入主要SPARC 处理器历史前，笔者必须先理清Sun 和其他SPARC 处理器厂商的最大思想差异，这也是「软件色彩极度浓厚」的Sun，与「高效能处理器传统路线」的Fujitsu最大的不同点。</p>
+<p>对于21 世纪初期略闻SPARC 处理器的读者，应经历过Sun 与Fujitsu 两家组成APL（AdvancedProduct Line）联盟的历史。Sun 的处理器日程表上演大风吹，取消双核心UltraSPARC II「Gemini」及UltraSPARC V「Millennium」，转战「超多简单核心、超级多线程、巨量存储器频宽、目标锁定网络应用」的Throughput Computing，Fujitsu SPARC64 继续专注「较少复杂核心、优秀单线程效能、大型主机等级可靠度、应对高效数据处理」，再彼此截长补短，采用对方的处理器推出服务器产品。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200731/f0e4ff0f5e9541d085b4c0a623bd55f5.jpeg" max-width="600" /></p>
+<p>当时还被IBM 公开嘲讽APL 应改名为「Sujitsu」，这些年来，IBM 对SPARC 阵营的嘴炮攻势，更是从来没有停过。反正客户永远不嫌多，能挖来一个算一个。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200731/edea4d8a5d2646f1a4268a09413f46be.jpeg" max-width="600" /></p>
+<p>那时刚好英特尔积极推动Itanium取代RISC处理器、x86处理器挟着64位元这个新兵器在服务器市场四处攻城掠地（AMD靠着Opteron在此崛起）、IBM的Power正展现无穷威力，坊间看法多半是「Sun本来就不擅长研发高效能处理器，加上先进半导体制程与产品研发的成本持续水涨船高，已无力维持高效能处理器的竞争优势，不得不改弦易辙，另辟出路」，像UltraSPARC发展到第四代的2004年，依旧缺乏非循序指令预测执行能力，远远落后其他厂商，效能不如对手的事实，也充分展现于SPEC CPU等效能测试标竿的平庸表现。</p>
+<p>但假若回顾Sun 这间公司的历史──尤其身为Java 创造者的身分，以及长年研究高效能Java 处理器（像对SPARC 处理器发展影响深远的MAJC，这以后会有专文介绍）的经验─ ─他们「似乎」从来就不认同近代高效能处理器的诸多重大特色，如高度指令平行化、大型化多层快取存储器、动态分支预测、非循序指令预测执行等，执行Java 这种虚拟机化物件导向程序语言时，能发挥多少实际效用。至于「地球最先进的服务器操作系统」Solaris 的优异多线程排程能力，更是Sun「胆敢」采取激进策略的信心来源。</p>
+<p>换言之，Sun 更偏向以软件角度，如Java 程序语言与Solaris 操作系统为出发点，思考最合理的处理器架构，结论就不外乎强化多线程和存储器子系统效能。如果说以UltraSPARC T1 为起点的Throuhgput Computing 是「山不转路转」，还不如说是「发扬光大」，甚至「走火入魔」亦不为过。</p>
+<p><strong>从遥遥领先到苦苦追赶的历程</strong></p>
+<p>软硬兼备的Sun，在1980 年代工作站市场、1990 年代的服务器市场，均获得极重大的成功，这从处理器业界效能指标SPEC CPU 的参考基准，即可略见一斑：SPEC CPU 95 是SuperSPARC ，SPEC CPU 2000 是UltraSPARC I，SPEC CPU 2006 则是时钟296MHz 的UltraSPARC II。值得一提的是，有别于IBM、Intel、AMD 和DEC，Sun 没有自建晶圆厂，自行研发的SPARC 处理器均交由TI 代工制造，被Oracle 购并后转向台积电。</p>
+<p>但商业优异成就，却难以掩盖处理器研发进展逐渐脱队的事实。如果和同期x86处理器（与诸多RISC老相好）相比，Sun的高端SPARC处理器发展史，可谓一部从「遥遥领先」到「苦苦追赶」的赛道纪录。各位可好好唤醒尘封已久的回忆，回想一下那一年x86处理器有哪些让你印象深刻的产品。</p>
+<p>1992年的SuperSPARC（0.8μm制程，时钟33-60MHz）：那时英特尔Pentium尚未上市。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200731/bbee7bf92ddb470db61e83178d99f39a.jpeg" max-width="600" /></p>
+<p>1994年的SuperSPARC II（0.8μm制程，时钟75-90MHz）：那年已经出现100MHz英特尔Pentium。</p>
+<p>1995年的UltraSPARC I（0.47μm制程，时钟143-167MHz）：英特尔推出x86历史首次正面挑战服务器市场的Pentium Pro，时钟直扑200MHz，并具备原生四处理器架构与非循序预测指令执行。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200731/f71528c9eb5c4081b54b404c44eb8212.jpeg" max-width="600" /></p>
+<p>当然，对那段往事稍有印象的人，也许会这样指摘：人家UltraSPARC可是货真价实的64 位元处理器（相较Pentium Pro 看起来很没诚意的PAE-36），又有VIS 指令集和更强的多处理器延展性（像Enterprise 6500 服务器就塞了30 颗UltraSPARC I，Ultra 4000 工作站也有14 颗），但请稍安勿躁，让我们继续慢慢看下去。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200731/98048472c74f44de9605dcd0a59f6093.jpeg" max-width="600" /></p>
+<p>1997年的UltraSPARC II（0.35μm制程，时钟250MHz）：英特尔推出300MHz的Pentium II，而UltraSPARC II的微架构基本沿用UltraSPARC I。</p>
+<p>1997 年的UltraSPARC IIi（0.35μm制程，时钟270-360MHz）：整合PCI控制器的微幅改进版，从256kB激增到2MB的L2快取存储器是最大的亮点。</p>
+<p>1998 年的UltraSPARC IIi（0.25μm制程，时钟333-480MHz）：当年6月时钟400MHz的首款英特尔Xeon问世，x86世界总算有了服务器处理器专用的品牌。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200731/34aa74373e5245a6a55b148838b31bf7.jpeg" max-width="600" /></p>
+<p>2000 年的UltraSPARC IIe（0.25μm制程，时钟400-500MHz）：AMD抢先在英特尔之前登顶1GHz大关。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200731/afa1190073474859b3705d5d7d135c1c.jpeg" max-width="600" /></p>
+<p>2001 年的UltraSPARC III（0.18μm制程，时钟600MHz）：0.18μm制程的英特尔Pentum 4 / Xeon时钟抵达2GHz。同年发表的UltraSPARC III Cu，终于靠着0.13μm制程和铜导线，冲破了1GHz，真是可喜可贺。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200731/8000ab223e1f4824b28e9b9664c7be20.jpeg" max-width="600" /></p>
+<p>反观同时期英特尔（P5→P6→P68）和AMD（K5→K6→K7）的飞跃性演进，UltraSPARC III 在微架构层面的改进幅度并不明显，维持每个时钟周期撷取解码4道指令，仍然没有非循序指令预测执行，仅略为扩增处理器内派发指令的宽度与管线深度与追加VIS 2 指令集。整合存储器控制器是最实际的改善点，如同AMD 的K8 方法，大幅强化存储器频宽并缩减存取延迟。</p>
+<p>但即使上市日期整整延宕2 年，原先设定要对抗DEC Alpha 21264 和英特尔Itanium 的UltraSPARC III 依然「借由优秀的多处理器延展性」获得那年MicroprocessorReport 的最佳服务器／工作站奖项，隔年则轮到原生双核心的IBM Power4。</p>
+<p>另外，取代Sun Enterprise 的Sun Fire 服务器产品线，也一起和UltraSPARC III 登场。Sun Fire 最令人称道之处，莫过于美观又易维护的优异机构设计，理念皆出自于「Sun天字第一号员工」Andreas Bechtolsheim 之手，其x86 服务器亦雨露均沾，有接触过Galaxy系列AMD Opteron 产品线（以Sun Fire X4100 / X4200 为开端）的人，多半都印象深刻。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200731/e8752dce4c9d495f87048cdb36d69839.jpeg" max-width="600" /></p>
+<p>之后Sun Fire 和Fujitsu 的PrimePower，再一同被Sun / Fujitsu 携手的SPARC Enterprise 品牌取代，2010 年后，再统一更名成SPARC M / T（与后来追加的S）系列。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200731/88652f62eda04b31b0a427abda8c64ae.jpeg" max-width="600" /></p>
+<p>Sun Fire 也是UltraSPARC 处理器在高端服务器的巅峰，Sun Fire 15K 最多支援106 颗UltraSPARC III Cu，而Sun Fire E25K 更是72 颗UltraSPARC IV（144核心）。</p>
+<p>2002 年的UltraSPARC IIe+（0.18μm制程，时钟550-650MHz）：0.13μm制程的英特尔Pentium 4 / Xeon已达3GHz。你没看错，到了这时候，UltraSPARC II还活着。</p>
+<p>2003 年的UltraSPARC IIIi（0.13μm制程，时钟1GH-1.6GHz）：这年AMD K8让x86的世界深入64位元疆界，Opteron处理器品牌也从此改变了AMD与Sun的命运。</p>
+<p>2004 年的UltraSPARC IV（0.13μm制程，时钟1GH-1.3GHz）：UltraSPARC处理器挤身双核心之列（等于2颗改良版UltraSPARC III），但已经看不到IBM的车尾灯，那年刚好是IBM Power5在高端服务器市场的效能战争横扫千军的高峰。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200731/467ed54906f34858a22534e27979710d.jpeg" max-width="600" /></p>
+<p>2004 年，Sun 宣布腰斩UltraSPARC V「Millennium」和双核心UltraSPARC II「Gemini」，但已不值一提。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200731/ff448a647cb64edfb97e8e23d795ec46.jpeg" max-width="600" /></p>
+<p>2005 年的UltraSPARC IV+（0.09μm制程，时钟1.5GH-2.1GHz）：「传统」UltraSPARC处理器的绝响，这时双核心64位元英特尔Xeon和AMDOpteron已在服务器市场杀声震天，再次确立x86处理器主导服务器市场和云端数据中心的大势。</p>
+<p>爬文至此，各位恐怕不难想见Sun 在21 世纪初期被「看衰小」的程度，也难怪会成为英特尔推动Itanium 取代「封闭RISC 系统」大战略，第一个锁定「挖墙角」的对象。在2005 年，英特尔扶植的Itanium 解决方案联盟，启动ISV Platform ExpansionProgram，透过Transitive 的QuickTransit二进位执行档转换技术，鼓励既有使用SPARC 处理器／Solaris操作系统的用户，转移至Itanium 平台。</p>
+<p>更糟糕的还在后头：SPARC 处理器阵营的另一位要角Fujitsu，不但在2005 年4 月发表Itanium 服务器PrimeQuest 产品线，还是采用自研系统芯片组、最大32 处理器64 核心的巨兽，秋季IDF（Intel Developer Forum）的Itanium 解决方案联盟发表会，资深行销副总裁Richard McCormack 更是第一位上台开场致词的来宾，刚好满脸黑线的笔者有幸坐在台下躬逢其盛。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200731/c9ab92c3feb941d397a5cb730072d07b.jpeg" max-width="600" /></p>
+<p>理所当然的，英特尔势必对Fujitsu 施以重金、诱之以利，大概又是什么行销赞助基金之类的。每当笔者多次在公开场合碰到Fujitsu 相关人士，偷偷打探英特尔到底付了多少「补助津贴」，总是得到尴尬又不失礼貌的营业式微笑。随着AMD「逼出英特尔研发x86 处理器的巨大潜能」而造就Itanium 边缘化，PrimeQuest 也跟HP 的旗舰SuperDome 一样，「转进」到Xeon 处理器，沉没的Itanic 号观光邮轮，就再也没有浮出水面。</p>
+<p>迈向Throughput Computing</p>
+<p>Sun 在2004 年逐步重整服务器产品布局，除了短暂推出英特尔Xeon 处理器的Sun Fire V60 系列，兵分三路，成果可简述成以下数点：</p>
+<ul>
+<li>通用型服务器：Sun成为率先压宝AMD Opteron的一线服务器大厂，并推出「Galaxy」系列服务器，8颗Opteron的Sun Fire M4600为象征。这件事对AMD也意义深远，不仅提升AMD验证产品的能力，更强化企业用户对「AMD服务器」的信心。</li>
+<li>高效能服务器：与Fujitsu携手APL（Advanced Product Line），沿用SPARC64系列，标榜大型主机等级的可靠性。</li>
+<li>网站与数据库：Sun购并Afara Websystems后，以追求「像瀑布般的巨大数据吞吐量」的Throughput Computing为名，集中资源打造针对网站服务器特化的UltraSPARC T系列（Niagara）与数据库导向的UltraSPARC RK（Rock）。</li>
+</ul>
+<p>其中最值得大书特书的就是奠定Sun SPARC 处理器发展方向的Throughput Computing：简单多核心、超多线程、大量存储器频宽。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200731/06f1f16dd2f74ed5b8c883e51e616dda.jpeg" max-width="600" /></p>
+<p>2005 年的UltraSPARC T1（0.09μm制程，时钟1GH-1.4GHz）：8个简单微架构核心（单指令派发）、32粗质线程（碰到存储器存取等较长延迟，才会切换线程）。</p>
+<p>台湾最大的电玩资讯站巴哈姆特，曾测试Sun FireT2000 足足一周，一台取代所有前端网站服务器群，瞬间涌入500 名使用者的系统反应时间，从8 秒缩短到0.3 秒，足以见证威力。但UltraSPARCT1 只有一个浮点运算器，不难想见针对网站服务器「最佳化」的程度。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200731/70177ac554b841a88079dd6631162074.jpeg" max-width="600" /></p>
+<p>2007 年的UltraSPARC T2（65纳米制程，时钟1~1.6GHz）：前者的强化版，线程倍增至64条，每个核心都拥有独立的浮点运算器，因此整数运算加倍，浮点运算提升时倍，更高时钟带来1.4倍的单线程效能。后继的UltraSPARC T2+则是追加4处理器延展性的版本。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200731/a1eff5e7a5c04489a6444c5372ded24f.jpeg" max-width="600" /></p>
+<p>2010 年取消的UltraSPARC RK，就是让人感到极度惋惜的未竟之憾了，16 个4 指令派发的非循序预测执行核心（Sun 的历史创举），每个核心2 条同时多线程（SMT），总计切成4 块共享1 个32kB 指令快取、2 个32kB 数据快取、2 个浮点运算器的丛集（Cluster），耗电量高达250W，也具备了更精细多线程存储器数据同步的Transactional Memory（近似英特尔TSX）。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200731/5a1560c938c74cacb783db099206b8a7.jpeg" max-width="600" /></p>
+<p>Sun 曾在UltraSPARC RK 砸了不少预算，也持续「堆高」规格，导致芯片开发到2.0 版。或许失控的功耗和经费，就是新东家Oracle 决定腰斩的主因。Oracle 接手Sun 后，「SoftwareIn Silicon」也成为最常喊的口号。</p>
+<p>虽然无缘见证UltraSPARC RK 的实际威力，但Oracle 购并Sun 之后的SPARCT 系列，却处处可见Rock 的残影，并同时融合Niagara的色彩。像2011 年的SPARC T4，就是8 个双指令派发、非循序预测执行的S3 核心（代表第三代SPARC 核心，并追加VIS 3 指令集），每个核心8 条同时多线程的产物，一路「核心堆堆乐」到12 核96 线程的SPARC M6。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200731/cc6170cd03c249b08872360b3974a171.jpeg" max-width="600" /></p>
+<p>SPARC M7 升级成具改良后的快取存储器阶层和VIS 4 指令集的S4 核心，演进到2017 年的32 核心256 线程的SPARC M8。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200731/f010542cefe646aba60e5a89d8da850c.jpeg" max-width="600" /></p>
+<ul>
+<li>2010 年的SPARC T3：40纳米制程，时钟1.65GHz，16核128线程，可视为UltraSPARC T2的加倍版，然后SPARC Enterprise服务器品牌也取消，统一称为SPARC T系列。</li>
+<li>2011 年的SPARC T4：40纳米制程，时钟2.85~3GHz，8核64线程。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200731/268b7eda433c4aed8099465ebc61f724.jpeg" max-width="600" /></p>
+<ul>
+<li>2013 年的SPARC T5：28纳米制程，时钟3.6GHz，16核128线程。</li>
+<li>2013 年的SPARC M5：28纳米制程，时钟3.6GHz，6核48线程。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200731/2a41acaba9034e739ec967917fac5152.jpeg" max-width="600" /></p>
+<ul>
+<li>2013 年的SPARC M6：28纳米制程，时钟3.6GHz，12核96线程。</li>
+<li>2015 年的SPARC M7：20纳米制程，时钟4.33GHz，32核256线程，S4核心。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200731/2b173fc0fa6343bfa1afd04e7203de2e.jpeg" max-width="600" /></p>
+<ul>
+<li>2016 年的SPARC S7：20纳米制程，时钟4.27GHz，8核64线程，SPARC M7的低价微缩版。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200731/8f41237eca74422c9719c6afc9f1fb01.jpeg" max-width="600" /></p>
+<ul>
+<li>2017 年的SPARC M8：20纳米制程，时钟5GHz，32核256线程，一颗怪物级的大芯片。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200731/923bd622aab1479abfafa7817036abfa.jpeg" max-width="600" /></p>
+<p>下面呢？下面就没有了。</p>
+<p>顺道一提，Sun 体系的SPARC 处理器，从40 纳米制程的SPARCT3 开始，转由台积电生产，结束了Sun 与TI 的长期合作关系。</p>
+<p><strong>按部就班、稳扎稳打的Fujitsu SPARC64</strong></p>
+<p>既然Oracle 已确定中断Sun SPARC 处理器的技术血脉，在1986 年打造出世界第一颗SPARC 指令集兼容处理器MB86900 的日本Fujitsu，就成为唯一硕果仅存的高端SPARC 处理器供应商。相对于「激进敢冲」的Sun，Fujitsu 可谓「传统保守」，或许更精确一点，他们的诉求是把RISC 处理器，做成与大型主机一样「高、上、大」。</p>
+<p>但打从一开始仅专注嵌入式应用的Fujitsu，高效能SPARC 微架构也并非从头做起，技术源流可追溯至以hyperSPARC 跟Sun 正面竞争的Ross（Cyress的子公司，后来被Fujitsu 取得技术与专利）和Fujitsu投资的HAL（由IBM Power 的主要设计者Andrew Heller 所创立，有趣的是，HAL 的3 个字母，下一个就是IBM）。</p>
+<p>SPARC64 之名继承自HAL，而在2001 年取消HAL 原案、基于FujitsuGS8900 大型主机而重新开发的SPARC64 V，则是Fujitsu在高端SPARC 处理器的最重要里程碑：四指令派发、非循序指令预测执行、大型主机等级的高可靠度，效能也明显优于Sun UltraSPARC III。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200731/20d3bdff0d9944ff8425140e1dfb5d6f.jpeg" max-width="600" /></p>
+<p>值得一提的是，出自HAL 的初版SPARC64 V 是个指令平行化极宽（远高于4 道指令）并具备和英特尔NetBurst 微架构大同小异的Trace Cache（依照分支预测的结果，依序存放解码的指令执行序列），不幸与Sun 的UltraSPARC RK 一起变成消逝在历史洪流的遗憾。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200731/dd441492d40e4b4f89b049cb2f2f26e6.jpeg" max-width="600" /></p>
+<p><strong>SPARC64 V 的后继发展如下：</strong></p>
+<ul>
+<li>2004 年的SPARC64 V+：90纳米制程，时钟1.65~2.16GHz。</li>
+<li>2007 年的SPARC64 VI：90纳米制程，时钟1.5~2.4GHz，双核心，导入粗质多线程（CMT，Fujitsu称为VMT），也是首款引进浮点乘积和指令的SPARC处理器。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200731/4e3d04d9c8d0482992bcc089b1bb3644.jpeg" max-width="600" /></p>
+<ul>
+<li>2008 年的SPARC64 VII：65纳米制程，时钟2.4~2.75GHz，四核心，导入同时多线程（SMT），强化数据可靠性（整数寄存器数据透过ECC保护，错误检查点增加到3,400个）。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200731/507f13dddacb447ea541134450c6d2f9.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200731/d0dcbe6833724f40b66975726982cd67.jpeg" max-width="600" /></p>
+<ul>
+<li>2009 年的SPARC64 VIIIfx：45纳米制程，时钟2GHz，8核心，为了「京」（K）超级电脑计划而生的高效能运算衍生款，追加Fujitsu自行定义的HPC-ACE指令集与256个浮点运算寄存器。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200731/6726458752eb4c778fba025afc310279.jpeg" max-width="600" /></p>
+<p>因为SPARC v9 指令集的编码位元，不足以定址所有的浮点寄存器，256 个寄存器需要8 位元，浮点乘积和（FMA，A×B＋C＝D）指令会用到4 个寄存器，将会吃光32 位元编码，连运算码都没地方放了，须在运算指令前，排入「补充」寄存器定址位元数的前置指令（SXAR）。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200731/b98fd9bd16594e2b8f817c8fd9eb60ea.jpeg" max-width="600" /></p>
+<ul>
+<li>2010 年的SPARC64 VII+：65纳米制程，时钟提升到3GHz，L2快取加倍到12MB。</li>
+<li>2011 年的SPARC64 IXfx：40纳米制程，时钟2.85GHz，16核心，配合PRIMEHPC FX10超级电脑而同步发表。总之，只要看到名称内有那个小写的fx就知道这是超级电脑特规版了。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200731/a43053a0b961435ca4c619e0c304e17e.jpeg" max-width="600" /></p>
+<ul>
+<li>2012 年的SPARC64 X：28纳米制程，时钟3GHz，16核心32线程，耗电量冲上270W，存储器控制器也「搬家」到处理器内部了。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200731/452c59b295a74e31bee8b4e7fccdb5e3.jpeg" max-width="600" /></p>
+<ul>
+<li>2013 年的SPARC64 X+：28纳米制程，时钟2~3.7GHz，16核心32线程，激增的时钟也充分反应在高达392W的耗电量。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200731/21407aabb981478484bca91e13c9b7d6.jpeg" max-width="600" /></p>
+<p>2014 年的SPARC64 XIfx：台积电20纳米制程，时钟2GHz，34核心（32个运算加2个辅助），新增HPC-ACE2指令集。高度整合存储器控制器与汇流排界面的SPARC64 XIfx堪称SPARC世界第一颗超级电脑系统单芯片。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200731/8297607284dc4de2a9b1e3c35132a680.jpeg" max-width="600" /></p>
+<p>近期夺下Top500首位的日本理化学研究所超级电脑「富岳」，心脏Fujitsu A64FX，实际上就是将指令集架构，从SPARC v9和HPC-ACE2，替换成ARM v8.2A加SVE的进化版。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200731/977dbabb06974057b3f438f0aa237500.jpeg" max-width="600" /></p>
+<ul>
+<li>2017 年的SPARC64 XII：台积电20纳米制程，时钟2.5~4.35GHz，12核心96线程（一个核心8线程，和IBM Power9一样）。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200731/a267e8fad7af4ac4b3730a2e296dfea9.jpeg" max-width="600" /></p>
+<p>目前据闻Fujitsu 可能将在2020 年（也没剩几个月了）发表新一代SPARC64，就让我们拭目以待，但也只能祈祷这不会是高端SPARC 处理器的绝响。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200731/a7c0b6bc629c44dc8d3c2d9abb16314e.jpeg" max-width="600" /></p>
+<p><strong>SPARC 还有未来吗？</strong></p>
+<p>这是没人敢打包票的大哉问，特别当Fujitsu 在A64FX 开了「用ARM 换掉SPARC」的第一枪，先不提软件解决方案从哪里来，哪天想不开如法泡制，做出一颗货真价实的高端服务器ARM 芯片，好像也不是太让人感到奇怪的事，加上ARM 服务器最近好像声势又有点起色，多少会让人怀疑「会不会哪天Solaris＋SPARC 将被Linux＋ARM 取而代之」 ，步上OpenVMS＋Alpha（DEC）、Irix＋MIPS（SGI）和HP-UX＋PA-RISC（HP）一个一个淡出舞台的后尘。</p>
+<p>平心而论，毕竟现有使用SPARC 服务器和Solaris 操作系统的客户还是这么多（应该吧？），Oracle 也不可能不管商誉而弃之不顾，短期应该不必担心「断粮」（不是说好Solaris 的技术支援要维持到2034 年吗？）。但正如x86 指令集的最重要价值，彻头彻尾建立在「微软Windows 兼容性」上，SPARC 指令集赖以维生的Solaris 操作系统，假以时日，「老兵不死，只是逐渐凋零」仍是极有可能成真的现实。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200731/343434401bb148aaac235b1dcf41f540.jpeg" max-width="600" /></p>
+<p>回顾SPARC 指令集兼容处理器30 年来大起大落，总让笔者脑中回荡着已故香港歌手罗文的台视八点档《八月桂花香》主题曲〈尘缘〉，歌词那句「繁华落尽，一身憔悴在风里」，相信曾陪伴那票Sun 服务器工作站的读者，心中多少也有类似感触。昔日任何RISC 处理器家族无不像SPARC，在工作站和服务器，曾独享极盛一时的繁华。</p>
+<p>对亲身体验过那段互联网大爆发年代的年长读者，再多千言万语，亦诉不尽Sun 这间神奇的公司，带给各位的点点滴滴。往事历历在目，至少还记得电脑教室快要冻死人的冷气。</p>
+<p>但往好处想，最起码当下SPARC 还活得好好的，总比Alpha、PA-RISC 和Itanium幸运太多太多了。不过在遥远的将来，不会只剩下MCST 那票俄罗斯人在做军用SPARC 处理器吧？</p>

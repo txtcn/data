@@ -1,0 +1,83 @@
+➜GIMP开发者谈新功能和未来改进
+https://www.solidot.org/story?sid=9253	300
+Linux &amp; Photography博客<a href="http://osnews.com/story/20701/Interview_Martin_Nordholts_the_GIMP">采访</a>了GIMP的核心开发者<a href="http://www.chromecode.com/">Martin Nordholts</a>。他谈论了GIMP的现状，解释了<a href="__SLASHLINK__" sect="linux" sid="08/10/02/015207" sn="article" tid="108">GIMP 2.6</a>新功能，展望了未来的2.8。GIMP 2.6整合了<a href="http://www.gegl.org/">GEGL</a>，基于GtkObjects的图像处理库，引入了更高的位深度(Bit Depth)和非破坏性图像编辑。Nordholts称GEGL将使GIMP成为一个高品质的色彩管理工具，但仍然需要在GIMP核心上做更多工作，为了支持新框架，原有的组件有些将被取代，有些将需要重写。他还提到了用户迫切关注的UI问题：<i>
+UI团队已经讨论了用户感兴趣的单窗口基于标签（tabb-based）的界面，最新的变动已经朝着更好的处理浮动选择和对层组支持迈出了一大步，GIMP 2.8将会取得突破。GIMP 2.8还将整合三项Google Summer of Code项目，包括简化矢量层支持，<a href="http://code.google.com/soc/2008/gimp/appinfo.html?csaid=5A92AE2694E9ECE4">画布文字编辑器</a>和<a href="http://code.google.com/soc/2008/gimp/appinfo.html?csaid=E44148C52A0819A6">tagging of GIMP resources</a>。</i>
+➜中国承认学校建筑有缺陷
+https://www.solidot.org/story?sid=9254	1800
+自五月毁灭性的四川大地震以来，在一份最权威的报告中中国政府承认<a href="http://www.nytimes.com/2008/12/27/world/asia/27china.html?scp=2&amp;sq=China&amp;st=cse">全国许多学校的建筑物质量很差</a>，承认云南省20%的小学建筑不安全。<i>
+大地震发生后学校建设质量已经成为一个微妙问题，地震造成8.8万人死亡，其中许多儿童埋在粉碎的建筑下。<a href="http://www.moe.edu.cn/">教育部</a>的报告呼吁中央政府资助不安全的学校迅速展开重建和改造工作，尤其是农村和地震多发的西部地区。全国人大副委员长路甬祥表示，将根据地区不同，增加25%到150%的建设补助。路称全国有2.5%的中小学有结构性问题。</i>
+➜人类仍然享受服从的乐趣
+https://www.solidot.org/story?sid=9256	3000
+耶鲁大学心理学家斯坦利·米尔格拉姆（Stanley Milgram）在1963年设计了一项具有重要意义的权力服从研究，史称<a href="http://zh.wikipedia.org/wiki/%E7%B1%B3%E5%B0%94%E6%A0%BC%E6%8B%89%E5%A7%86%E5%AE%9E%E9%AA%8C">米尔格拉姆实验</a>（Milgram experiment）。实验的目的是为了测试受测者，在遭遇权威者下达违背良心的命令时，人性所能发挥的拒绝力量到底有多少。看起来，40年后人类本质的一些东西并没有发生改变。<i>
+Santa Clara大学的Jerry Burger在修改部分条件后重做了<a href="http://scienceblogs.com/dispatches/2008/12/this_just_in_people_still_suck.php">这一臭名昭著的实验</a>，<a href="http://news.yahoo.com/s/nm/20081219/od_nm/us_torture_odd">结果显示</a>，70%的志愿者服从权威者下达的对其他人电击的命令——或者至少他们相信执行了电击——即使在演员声称他们很痛苦后。Burger表示，他们的发现确认了一个论点——如果把人放在某个特定位置上，他会做出匪夷所思的事情来。在米尔格拉姆原始实验中，82.5%的志愿者在受害者高呼疼痛的150伏特后继续实施电击，新实验降到了70%，尽管数字仍然惊人，但至少有所进步。</i>
+➜用激光快速生成随机数
+https://www.solidot.org/story?sid=9257	7200
+随机数是没有模式的数字，在今日的许多应用如计算机模拟、统计学和密码术中它都是必不可少的。有许多方法生成随机数，包括电信号噪声和放射性衰变，但这些方法都无法产生大量随机数。<i>
+现在日本拓殖（Takushoku）大学、琦玉（Saitama）大学和日本电报电话公司（NTT）使用半导体光激射器实现了<a href="http://www.physorg.com/news148660964.html">每秒产生1.7G的随机数列</a>，比第二好的使用物理现象的方法要高出10倍。他们的报告发表在《自然光子学》杂志山。未来的研究将集中于设计激光仪器，以实现每秒10G的比率。</i>
+➜Michael Meeks称OOo项目“处于困境中”
+https://www.solidot.org/story?sid=9258	12000
+如何判断一个开源项目的成功？上传和下载？递交bug和修正bug一样好？志愿的推销员和志愿的开发者一样重要？.....<a href="http://en.wikipedia.org/wiki/Michael_Meeks_(software)">Michael Meeks</a>，<a href="http://www.openoffice.org/">OpenOffice</a>项目的全职开发人员，在他的博客上称OOo项目“<a href="http://www.gnome.org/~michael/blog/ooo-commit-stats-2008.html">处于困境中</a>”：<i>
+“一个健康的项目我们预计会看到大量志愿开发者的参与，此外我们预计将看到大量的企业同行捐助通用代码库，在OpenOffice.org项目中我们没有看到。”相反OO.o的活跃开发者数量很低：2004年只有70位活跃开发者，而Linux kernel有接近300名，并且呈上升趋势，有300+组织参与开发。作者认为从开发者的角度看OO.o目前是停滞不前。有<a href="http://developers.slashdot.org/article.pl?sid=08/12/28/0124230">评论</a>认为这种局面和Sun有很大关系，并举例说Kohei开发了一个功能完备的<a href="http://kohei.us/2007/10/02/history-of-calc-solver/">solver模块</a>，然而<a href="http://blogs.sun.com/GullFOSS/entry/the_parrot_sketch_is_not">Sun并没有采用</a>，而是自己重新开发了一个。</i>
+➜乌贼粗暴的性爱
+https://www.solidot.org/story?sid=9259	17100
+如果你生活在伸手不见五指的黑暗环境中，承受着巨大压力，你怎么将自己的基因传给下一代？<a href="http://www.sciam.com/blog/60-second-science/post.cfm?id=rough-sex-at-40000-leagues-under-th-2008-12-24">不择手段的粗暴</a>。深海中的乌贼向来以阴险著称，它遇见异性的机会非常稀少，因此每一次相会都具有重大意义。<i>
+根据德国杂志《<a href="http://www.spiegel.de/international/zeitgeist/0,1518,598222,00.html">明镜周刊</a>》的报道，一种名叫Taningia danae的雄性乌贼，它的阴茎长三英尺，遇见雌性后它会用尖嘴或触须上的钩子在配偶身上切开一个超过2英寸的洞，好让输精管的精液送入到雌性体内。《明镜周刊》称雄性如此暴力原因是它们的自卑情绪，因为它们体型一般比较小，如果不使用一些迅速、聪明和粗暴的手段，它们很可能成为雌性的口中之食。研究人员发现雄性在将精囊“注入”雌性时候偶尔也会错失标记，在一个例子中，乌贼意外的把精囊注入到皮肤下，按字面意义大概就是动物世界的搬起石头砸自己的脚。对雌性乌贼来说，性真的是一生一次的体验，而且是非常可怕的体验。它们不会想要第二次，研究人员发现以后雌性再也不让雄性靠近，这种行为用一个术语描述的话就是“创伤性受精”。</i>
+➜储存风能的电池
+https://www.solidot.org/story?sid=9260	19800
+《科学美国人》报道，一家明尼苏达公司Xcel Energy开始在1100兆瓦风力涡轮机上测试<a href="http://www.sciam.com/article.cfm?id=storing-the-breeze-new-battery-might-make-wind-power-reliable">一项新技术用电池储存风能</a>。<i>
+这家公司称，风不总是在吹，而更糟糕的是，常常在人们不需要太多电力的时候——如深夜——风的强度最大。Xcel收到了明尼苏达能源发展基金会的<a href="http://www.xcelenergy.com/SiteCollectionDocuments/docs/AppendixE.pdf">1百万美元补助</a>（PDF），发电厂将在2009年第一季度安装巨大的电池系统。如果测试取得成功，在2020年之前将有更多发电站应用电池储存技术。</i>
+➜Debian 关于 firmware 投票结果已出
+https://www.solidot.org/story?sid=9261	24120
+<a href="mailto:lidaobing@gmail.com">lidaobing</a> 写道 "Debian 关于 firmware 是否满足 Debian 自由软件准则的<a href="http://www.debian.org/vote/2008/vote_003">投票</a>已经出<a href="http://groups.google.com/group/linux.debian.vote/browse_thread/thread/f7091d6ae1573754">结果</a>了: "Assume blobs comply with GPL unless proven otherwise" (没有其他证据的情况下假定二进制代码满足 GPL)，我们可以期待 Debian lenny (5.0) 能够在近期发布了。
+<i>这次投票解决的主要问题是很多硬件驱动中包含一些二进制串，这些串没有对应的源码，所以可能违反了 Debian 自由软件准则，但完全剔除这些代码又可能造成 Debian 在很多硬件上无法正常安装/运行。比如 r128 的 drm 驱动中有如下一段代码:<br>
+static u32 r128_cce_microcode[] = {
+0, 276838400, 0, 268449792, 2, 142, 2, 145, 0, 1076765731, 0,
+1617039951, 0, 774592877, 0, 1987540286, 0, 2307490946U, 0, ...
+</i>更多信息参见 linux.debian.devel 上的<a href="http://groups.google.com/group/linux.debian.devel/browse_thread/thread/95f5c4fbe05c9163/f9731e148c78f1b9">讨论</a>"
+➜Debian 关于 firmware 投票结果已出
+https://www.solidot.org/story?sid=9262	25440
+<a href="mailto:lidaobing@gmail.com">lidaobing</a> 写道 "Debian 关于 firmware 是否满足 Debian 自由软件准则的<a href="http://www.debian.org/vote/2008/vote_003">投票</a>已经出<a href="http://groups.google.com/group/linux.debian.vote/browse_thread/thread/f7091d6ae1573754">结果</a>了: "Assume blobs comply with GPL unless proven otherwise" (没有其他证据的情况下假定二进制代码满足 GPL)，我们可以期待 Debian lenny (5.0) 能够在近期发不了。
+<br> <br>这次投票解决的主要问题是很多内核驱动中包含一些二进制串，这些串没有对应的源码，所以可能违反了 Debian 自由软件准则，但完全剔除这些代码又可能造成 Debian 在很多硬件上无法正常安装/运行。比如 r128 的 drm 驱动中有如下一段代码:<br>
+static u32 r128_cce_microcode[] = {
+0, 276838400, 0, 268449792, 2, 142, 2, 145, 0, 1076765731, 0,
+1617039951, 0, 774592877, 0, 1987540286, 0, 2307490946U, 0, ...
+<br> <br>更多信息参见 linux.debian.devel 上的<a href="http://groups.google.com/group/linux.debian.devel/browse_thread/thread/95f5c4fbe05c9163/f9731e148c78f1b9">讨论</a>"
+➜2008年10大最受欢迎的BT网站
+https://www.solidot.org/story?sid=9263	28200
+Torrentfreak列出了本年度的<a href="http://torrentfreak.com/top-10-torrent-sites-of-2008-081228/">10大最受欢迎的BT网站</a>，海盗湾超过Mininova和isoHunt占据领先位置，另外今年还有一家大型BT网站<a href="http://torrentspy.com/">TorrentSpy</a>被迫关闭。
+1.<a href="http://thepiratebay.org/">The Pirate Bay</a>：活跃P2P用户超过了2500万。
+2.<a href="http://mininova.org/">Mininova</a>：过去一年BT种子下载量超过30亿次。
+3.<a href="http://isohunt.com/">IsoHunt</a>；
+4.<a href="http://www.torrentz.com/">Torrentz</a>；
+5.<a href="http://torrentreactor.net/">TorrentReactor</a>；
+6.<a href="http://demonoid.com/">Demonoid</a>；
+7.<a href="http://btjunkie.org/">BTjunkie</a>；
+9.<a href="http://sumotorrent.com/">SumoTorrent</a>；
+9.<a href="http://btmon.com/">BTmon</a>；
+10.<a href="http://torrentportal.com/">TorrentPortal</a>。
+➜微软为学生发明$1.15/时的家庭作业费
+https://www.solidot.org/story?sid=9264	31320
+微软眼里的未来计算机应用将是何等模式，也许可从它在圣诞节公开的专利申请中瞧出端倪。
+<i>
+这项名为“<a href="http://appft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=%2220080319910%22.PGNR.&amp;OS=DN/20080319910&amp;RS=DN/20080319910">Metered Pay-As-You-Go Computing Experience</a>”的专利描述了按使用付费（pay-per-use）的商业模式，系统由一台可升级硬件性能的计算机，可选的软件和服务选项组成。可升级的硬件包括处理器、内存、显示控制器等。软件和服务包括字处理、电子邮件、数据库访问、浏览器等。每一种选择都针对了不同的价格，允许用户按不同用途和实际选择付费。按照微软的计划和设想，学生可选用<a href="http://farm4.static.flickr.com/3007/3139325990_773d464d87_o.jpg">$1.15/时的服务</a>做家庭作业，玩家可选择$1.25/时的游戏服务，另外还有一个浏览服务模式。微软声称，新的商业模式可以让用户和供应商都受益。供应商能开发出一个比现有一次性购买模式价值更高的现金流产业。</i>
+➜Vertor：避开下载假种子和Spam
+https://www.solidot.org/story?sid=9265	37680
+BitTorrent网站上有着数以百万计的潜在目标，因为也成为spammer和恶意程序的大舞台。一个新成立的BT网站<a href="http://www.vertor.com/">Vertor</a>（意思为验证过的torrents）试图<a href="http://torrentfreak.com/avoid-downloading-fake-torrents-and-spam-with-vertor-081228/">消除这些潜在威胁</a>。<i>
+网站上的每个种子都使用软件去检查是否有病毒、或DRM、或者是密码保护的文档，用户在下载之前还可以浏览内容。对于视频文件，Vertor提供了一些截图，用户可以了解其质量；对于音乐，Vertor提供了20秒的预览。目前网站包含了超过13万8千种子。</i>
+➜以色列轰炸加沙
+https://www.solidot.org/story?sid=9266	42120
+12月27日周六，当地时间11点30分，以色列出动战机对<a href="http://en.wikipedia.org/wiki/2008_Gaza_Strip_bombings">加沙地带的哈马斯目标发动空袭</a>，目的是消灭哈马斯的火箭发射平台。到27日晚上，以色列空军扔下了100多枚炸弹，95%抵达了他们的指定目标，破坏了50个哈马斯操作的安全设施；28日以色列空军破坏了哈马斯控制的电视台；29日加沙伊斯兰大学的一个实验室建筑物被炸毁。<a href="http://news.bbc.co.uk/2/hi/middle_east/7802515.stm">空袭</a>至今已造成313人死亡（至少56位平民），大约1400人受伤。<i>
+轰炸发生后伊斯兰国家集体谴责以色列，推崇和谐的中国外交部表示<a href="http://news.sina.com.cn/z/yjkxhms/index.shtml">反对巴以用武力解决争端</a>，美国则谴责哈马斯没有遵守停火协议。空袭的起因是，2008年截至12月21日哈马斯平均每个月向以色列发射215枚火箭，而过去的一周，也就是圣诞节前夕，<a href="http://atlasshrugs2000.typepad.com/atlas_shrugs/2008/12/merry-christm-2.html">哈马斯更叫变本加厉</a>，以色列外长称空袭行动是为了让以色列人民过上和平的日子。对于阿拉伯国家民众的抗议和为死难者的落泪，有评论指责是<a href="http://www.jihadwatch.org/archives/024090.php">鳄鱼的眼泪</a>。</i>
+➜雾件2008
+https://www.solidot.org/story?sid=9267	48240
+《连线》杂志宣布了<a href="http://www.wired.com/culture/culturereviews/news/2008/12/YE8_vaporware">第11年度雾件奖</a>（Vaporware Awards），列出了IT行业内最令人气馁和无法履行的承诺。<i>
+10.<a href="http://www.us.playstation.com/PSN/Home">Sony PlayStation Home</a>：索尼最初是在2007年宣布的，几经拖延直至12月初才公开beta测试，而且看起来仍然没有完成，缺乏许多功能。<br>
+9.<a href="http://www.myka.tv/">Myka</a>：内置BT客户端的机顶盒，支持HDMI、H.264，最高500G硬盘，Linux系统。<br>
+8.《英雄之路（<a href="http://www.play.net/hj/">Hero's Journey</a>）》：它在2005年的E3展上就公布了，但官方FAQ称发布日期未定。<br>
+7.<a href="http://www.zapworld.com/">ZAP-X</a>：售价约6万美元的全电动SUV上市日期已经推迟到2010年。<br>
+6.<a href="http://www.microvision.com/pico_projector_displays/">口袋大小的放映机</a>：包括东芝在内的几家公司都计划近期推出小型放映机，然而Microvision的设备迟迟未公开。<br>
+5.<a href="http://www8.garmin.com/nuvifone/">n√ºvifone 3G设备</a>：预载入的世界地图，实时交通情况，Google Maps和本地搜索，内置照相机能自动在照片上标记地理信息，整合Google Panaramio图片分享服务等等，原计划在第三季度发布，现在可能要到明年一季度。<br>
+4.《<a href="http://www.starcraft2.com/">星际争霸II</a>》：暴雪承诺是2008年。<br>
+3.除T-Mobile G1之外的Android手机<br>
+2.<a href="http://www.microsoft.com/windows/internet-explorer/beta/default.aspx">Internet Explorer 8</a>：IE8将在明年与用户见面。<br>
+1.《永远的毁灭公爵》：都开发了12年了。</i>

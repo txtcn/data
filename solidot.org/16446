@@ -1,0 +1,16 @@
+➜Chilling Effects屏蔽搜索引擎抓取
+https://www.solidot.org/story?sid=42625	40034
+Google与<a target="_blank" href="https://www.chillingeffects.org"><u>Chilling Effects</u></a>合作在其网站上公开收到的URL删除通知，Google每年收到的删除通知数以亿计，Chilling Effects上因此包含了大量指向版权材料的网址。一个被认为含有侵权材料的网址被移除后，你在Google上检索不到多少条相关结果，但其中却可能返回Chilling Effects的相关网页。此举相当令版权所有者感到不爽。 随着对Chilling Effects 项目的批评日益增多，项目团队作出决定，在<a target="_blank" href="https://www.chillingeffects.org/robots.txt"><u>robots.txt</u></a>的文件中加入了“User-agent: *
+Disallow: /
+Allow: /pages”，屏蔽了所有搜索引擎抓取。此举被认为是自我审查，但项目团队认为<a target="_blank" href="http://torrentfreak.com/chilling-effects-dmca-archive-censors-itself-150110/#disqus_thread"><u>这是出于平衡的需要</u></a>。
+➜新闻界的艰难抉择
+https://www.solidot.org/story?sid=42626	41199
+<a href="http://https://pp4.global.ssl.fastly.net/articles">paopao</a> 写道 <i>"被伊斯兰恐怖分子袭击的《查理周刊》曾经数次被法国国内的伊斯兰群体起诉，均以失败告终，法国法院给出的理由是，言论自由不容侵犯。然而，捍卫言论自由的代价是沉痛的。人们也开始反思，身为事件最大受害者的《查理周刊》，是否也应承担一定责任？言论自由是否意味着可以不受约束地对他人信仰进行挑衅意味浓厚的批判？新闻工作者是否具有“侮辱”他人却不受谴责的豁免权？言论自由是否有边界？支持言论自由者多认为，言论自由是基本人权不容侵犯。在言论不自由的国家查理事件则被作为“言论自由之恶”的论据。新闻自由正在经历一种新的“<a target="_blank" href="http://www.theatlantic.com/international/archive/2015/01/show-the-cartoons-charlie-hebdo-sony-attack/384304/"><u>斗争模式“（a new phase of conflict）</u></a>。历史上，审查势力试图通过影响政府的政策来对新闻机构进行审查，而现在，审查暴力直接作用到了记者和编辑的身上。这意味着，<a target="_blank" href="https://pp5.global.ssl.fastly.net/article/334">新闻媒体
+的管理层必须要像政治家们一样来做决定：选择妥协，或是反抗</a>。
+"</i>
+➜从浏览器看朝鲜的大局域网
+https://www.solidot.org/story?sid=42627	41857
+被人泄漏到国际互联网之后，朝鲜Linux桌面发行版Red Star OS 3.0引发了<a target="_blank" href="http://www.solidot.org/story?sid=42609"><u>人们的浓厚兴趣</u></a>。通过分析Red Star及其软件，我们可以从中一窥朝鲜的大局域网架构，以及没有经验的人才会犯的严重错误。Red Star使用的浏览器是基于 Firefox 3.5的Naenara Browser，安全研究员Robert Hansen<a target="_blank" href="https://blog.whitehatsec.com/north-koreas-naenara-web-browser-its-weirder-than-we-thought/"><u>发现</u></a>，浏览器每次载入时第一步是向一个无法路由到IP地址 <a href="http://10.76.1.11/">http://10.76.1.11/</a>发出请求，在朝鲜之外你是无法访问这个地址的。朝鲜将整个国家置于一个巨大的局域网内，政府控制所有的进出流量。Naenara在处理电子邮件、日历和证书上也与众不同，朝鲜政府会记录用户每次下载反钓鱼和恶意软件名单的精确时间，记录软件崩溃的信息，电子邮件和日历都路由经过10.76.1.11，浏览器只接受朝鲜政府发行的证书。另一名安全研究员<a target="_blank" href="http://seclists.org/oss-sec/2015/q1/101"><u>发现了</u></a>Red Star的一个严重的安全漏洞：udev规则文件/etc/udev/rules.d/85-hplj10xx.rules是全域可写，能被修改执行任意指令。
+➜更多的微软项目迁移到GitHub
+https://www.solidot.org/story?sid=42628	49223
+更多的微软开源项目正迁移到GitHub。最新的一个项目是Visual Basic团队的Roslyn OSS。Visual Basic团队官方博客<a target="_blank" href="http://blogs.msdn.com/b/vbteam/archive/2015/01/10/we-re-moving-to-github.aspx"><u>宣布了这一消息</u></a>，它还没有公开细节。VB团队项目经理Kasey Uhlenhuth称，他们正将代码从CodePlex迁移到GitHub，内部的版本控制系统正切换到Git。CodePlex是微软的开源托管平台。Uhlenhuth表示，GitHub有一个更活跃的开源社区。从开源.NET核心架构开始，微软开始表现出了不同的行为，曾经敌视开源社区的软件巨人<a target="_blank" href="https://news.ycombinator.com/item?id=8869401"><u>正在改变其不佳的形象</u></a>。

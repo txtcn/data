@@ -1,0 +1,27 @@
+➜谷歌：将额外给予14天的漏洞公开宽限期
+https://www.solidot.org/story?sid=43068	29520
+<a href="/~"></a> 匿名读者 写道 "在接连披漏多个 Windows 系统漏洞和 OS X 漏洞后，谷歌的 Project Zero 项目这种漏洞公开机制似乎遭到了一些人的指责。不过， Project Zero 今日发表<a target="_blank" href="http://arstechnica.com/information-technology/2015/01/google-drops-more-windows-0-days-somethings-gotta-give/">博文</a>称，可额外给予14天的漏洞公开宽限期，当然前提是在90天内厂商通知他们漏洞补丁正在制作中，需要延期。<i>
+<p>谷歌在文中表示，90天的期限是行业惯例，并且谷歌在发现漏洞时已经通知相关厂商。谷歌还列举了 Project Zero 项目的一些数据：Adobe Flash Player在 90 天内修复了大约 37 个 Project Zero 提交的漏洞（及时修复率几乎是100%）；目前为止，有154个 Project Zero 项目报告的漏洞在90天内被修复，占总漏洞的85%；2014年10月1日之后提交的漏洞，有95%在90天内被修复。</p>
+<p>
+谷歌表示在研究了某些厂商的漏洞回应反馈后，对 Project Zero 的漏洞披漏机制做了如下更改：</p>
+<p>
+如果最后期限是周末或美国公众假期，截止日期将延期到正常工作日。
+</p>
+<p>宽限期：我们现在给予14天的宽限期。如果90天的期限将到期，但相关供应商让我们知道：修补程序将会在90天后的14天内发布，那么额外给予2周的漏洞公开宽限期。</p>
+<p>谷歌还说明，在 Project Zero 项目中，每个厂商的漏洞将公平对待，包括自己家的Chrome 和 Android。"</i></p>
+➜Rust 1.0将在5月15日发布正式版
+https://www.solidot.org/story?sid=43069	32664
+Rust编程语言团队<a target="_blank" href="http://blog.rust-lang.org/2015/02/13/Final-1.0-timeline.html"><u>公布了</u></a>进展报告和正式发布时间表。Rust是Mozilla发起的注重安全、并发和性能的编程语言项目。Rust语言在上个月<a target="_blank" href="http://www.solidot.org/story?sid=42620"><u>发布了</u></a>1.0-alpha1，1.0-alpha2将在2月20日发布，3月9日nightly版的所有1.0模块稳定（stable），3月31日发布1.0-beta ，5月15日发布1.0正式版。1.0-alpha1代表语言及核心库已经特性完整，而1.0-alpha2则代表则主要API的修改结束，所有模块以后只会进行小的调整。
+➜中国科学家预言五边形石墨烯
+https://www.solidot.org/story?sid=43070	35902
+中国北京大学和中科院的研究人员在PNAS上发表了一篇<a target="_blank" href="http://www.pnas.org/content/early/2015/01/27/1416591112"><u>论文</u></a>，预言了一种五边形结构的石墨烯材料。<a target="_blank" href="http://zh.wikipedia.org/wiki/%E7%9F%B3%E5%A2%A8%E7%83%AF"><u>石墨烯</u></a>是六边形结构的碳单原子层。研究人员将他们的碳五元环结构单原子层称之为penta-graphene(五边-石墨烯)，五边形结构给予了新的材料一些有意思的物理属性。论文通讯作者、北大的王前教授称她受到了一家北京饭店墙壁上的五边艺术图的启发，构思了完全由五边形构成的碳单原子层。研究人员<a target="_blank" href="http://capt.pku.edu.cn/newsweb/newsweb_20150207.html"><u>提出</u></a>：五边石墨烯具有罕见的负泊松比效应，即当一个方向受到拉伸应变时，其垂直方向具有扩张效应，这与普通材料具有收缩效应是不同的；在承受双轴拉伸应变时，它具有可与石墨烯媲美的超高力学强度；五边石墨烯具有一个大的内秉带隙，因而不需要象石墨烯那样通过化学或物理的修饰来打开带隙，因此可用作半导体材料；能承受730摄氏度的高温，等等。
+➜微信审查用户图像但效果有限
+https://www.solidot.org/story?sid=43071	50520
+腾讯的微信除了有关键词过滤还有图像过滤，但图像过滤的难度要比关键词匹配大得多，简单的翻转图像然后保存就足以挫败了腾讯的图像过滤，在图像识别上腾讯与北京邮电大学模式识别实验室还有段距离，北邮称它的正检率能<a target="_blank" href="http://www.pris.net.cn/applications/image_recognition"><u>超过90%</u></a>。变态辣椒在微信朋友圈<a target="_blank" href="https://pp8.global.ssl.fastly.net/article/364"><u>测试了图像过滤</u></a>，发现无法显示的图片翻转180度发布可以正常显示，变态辣椒说：“好好笑，看来敏感图库还没那么高智商。当然，他们应该会升级，到时候总有更高明的新姿势来破解他们的封锁。
+”
+➜Nvidia以为用户着想为由禁止移动显卡超频
+https://www.solidot.org/story?sid=43072	53277
+使用GTX 900M系列显卡（基于Maxwell架构的GTX 980M、970M、860M、965M等）的笔记本电脑用户注意了，Nvidia的新驱动已经<a target="_blank" href="http://www.techradar.com/news/computing-components/graphics-cards/nvidia-disables-overclocking-says-it-s-for-your-own-good-1284668"><u>关闭了你们超频的能力</u></a>，理由是为了你们着想。在Nvidia的官方论坛上，用户正在激烈讨论此事。Nvidia的一位代表<a target="_blank" href="https://forums.geforce.com/default/topic/805791/geforce-drivers/gtx-900m-overclocking-with-347-09-347-25/post/4458903/#4458903"><u>发表声明</u></a>称，Nvidia笔记本没有设计支持超频，他解释说超频不是一个简单的功能，需要考虑到散热、供电等诸如此类的事情。接着恐吓用户说，超频有可能会对系统造成严重破坏，比如减少笔记本电脑的使用寿命，等等。Nvidia代表说他们是为了防止超出设计限制运行而禁用了超频。
+➜报道称苹果可能在研发电动汽车
+https://www.solidot.org/story?sid=43073	55436
+《华尔街日报》援引知情人士的消息<a target="_blank" href="http://www.wsj.com/articles/apples-titan-car-project-to-challenge-tesla-1423868072"><u>报道</u></a>（付费墙），苹果雇佣了数百人研究电动汽车项目。报道承认，苹果的电动车可能永远不会公开也可能需要许多年才会公开。苹果的电动车项目代号为Titan，参与该项目的人包括前福特设计师、现苹果产品设计副总裁 Steve Zadesky。而苹果最近还雇佣了前福特设计师Marc Newson。Newson曾为福特汽车公司设计了备受好评的021C概念车。《华尔街日报》还称，苹果执行官已与高端汽车的合同制造商举行了会谈。

@@ -1,0 +1,43 @@
+➜氢化镧的超导性能出现在 7 摄氏度极端高压条件下
+https://www.solidot.org/story?sid=59127	11882
+本月早些时候，德国马普化学研究所的 Mikhail Eremets 和同事<a href="https://www.solidot.org/story?sid=58937"><u>发现</u></a>氢化镧（LaH<sub>10 </sub>）的超导性出现在
+250K 或 -23℃ 温度下，但需要 170 吉帕的高压条件，相当于 170 万倍标准大气压或地球中心压力的一半。与此同时，美国乔治华盛顿大学的研究人员发现相同的材料能在 280 K (7°C)上出现超导性，但所需的压力为 202 吉帕，即 202 万倍标准大气压。今天最好的超导体需要冷却到液氦或液氮温度下，室温超导是科学家长期寻找的目标。氢化镧的高压室温超导性是在 2014 年发现的。德国研究人员使用的材料样本非常小，尚未能测量超导性的另一个关键指标迈斯纳效应（Meissner effect），而美国研究人员声称他们观察到了迈斯纳效应。其他科学家对此结果<a href="https://physicsworld.com/a/could-high-pressure-hydrides-be-high-temperature-superconductors/" target="_blank"><u>表达了谨慎态度</u></a>。Eremets 等人的<a href="https://arxiv.org/abs/1812.01561"><u>论文</u></a>发表在 arXiv 上，美国研究人员的论文将发表在《Physical Review Letters》期刊上。
+➜Google 移除了 Fuchsia 中代号 Armadillo 的系统 UI
+https://www.solidot.org/story?sid=59128	13909
+过去两年，Google 一直在开发一个全新的开源操作系统 Fuchsia，没有使用 Linux 内核，而是使用名叫 Zircon 的微内核。Google 同时还抛弃的 GPL 许可证，Fuchsia 的许可证混合了 BSD 3 clause、MIT 和 Apache 2.0。它是作为一个开源项目开发的，因此外界能跟踪它的开发进度。去年它<a href="https://www.solidot.org/story?sid=52333"><u>被发现</u></a>引入了一个新系统 UI。它的 UI 层使用的是 Dart 语言开发的 Flutter SDK，系统 UI 代号为 Armadillo。有人甚至设法在 Pixelbook 上演示了 Armadillo。然而 Google 在最近的代码变更中<a href="https://tech.slashdot.org/story/18/12/28/2155257/everything-we-knew-about-fuchsias-ui-armadillo-is-gone"><u>完全移除了</u></a> Armadillo，开发者甚至起了一个标题叫“<a href="https://fuchsia-review.googlesource.com/c/topaz/+/235313"><u>Armadillo fainted!</u></a>”，Armadillo 现在被面向开发者的 Shell Ermine 替代了。<br>
+➜LibreSilicon：打破芯片制造垄断
+https://www.solidot.org/story?sid=59129	16371
+<a href="http://github.com/hardenedlinux">HardenedLinux</a> 写道 <i>"最近几年RISC-V的兴起让更多厂商和个人可以使用自由开源的Verilog/VHDL/Chisel工具链开发自己的处理器，然而对于自由硬件社区而言自由的制造过程依然是缺失的环节，近日的35C3（第35界<a href="https://hardenedlinux.github.io/translation/2016/03/02/chaos-communication-congress-a-very-german-hacking-conference.html" target="_blank">混沌计算大会</a>）上LibreSilicon项目的芯片研究人员分享了他们如何让半导体制造过程变得更开放，使用完全自由和开放的工具使<a href="https://media.ccc.de/v/35c3-9410-libresilicon" target="_blank">芯片设计和制造过程打破大厂商垄断</a>以及绕过厂商的NDA（保密协议），LibreSilicon项目为此尝试打造多个开源项目包括<a href="https://github.com/libresilicon/process" target="_blank">基于自由和开放的芯片制造流程</a>，高质量的<a href="https://github.com/chipforge/StdCellLib" target="_blank">标准单元库</a>（单元生成器目前由Tcl语言编写，未来可能会使用Rust或者Scheme重写））以及<a href="https://github.com/leviathanch/qtflow" target="_blank">自由开源的EDA工具</a>。&nbsp;LibreSilicon目前使用<a href="https://www.electronics-tutorial.net/CMOS-Processing-Technology/Twin-tub-Process/" target="_blank">双井</a>CMOS三层金属过程，设计和制造了1微米（1,000纳米）工艺的<a href="https://github.com/libresilicon/PearlRiver" target="_blank">PearlRiver (珠江芯片一号)</a>，目前LibreSilicon团队已经有500纳米工艺的制造设备。<a href="https://www.fbo.gov/utils/view?id=12e50bed54824d56cc448401c117bf06" target="_blank">硬件对于可审计</a>的需求越来越大，但硬件安全的坑并不比软件和固件少，HardenedLinux社区会直面Ring -4的威胁。"</i>
+➜Apache NetBeans 10.0 发布
+https://www.solidot.org/story?sid=59130	17734
+Apache 软件基金会<a href="https://netbeans.apache.org/download/nb100/nb100.html"><u>释出了</u></a> NetBeans 10.0。NetBeans IDE 在 2016 年被甲骨文捐赠给了 Apache 软件基金会。Apache NetBeans 10.0 的<a href="https://netbeans.apache.org/download/nb100/index.html" target="_blank"><u>主要变化</u></a>包括：JDK 11 支持，整合 nb-javac 项目，移除 CORBA 模块，支持 JEP 309 动态类文件常量，支持 JEP 323 Local-Variable Syntax for Lambda Parameters，支持  LVTI Support for Lamdba Parameters；PHP 7.3、PHP 7.2、PHP 7.1 下的新特性，JUnit 5.3.1 等等。
+➜Google 应土耳其政府要求移除库尔德人地图
+https://www.solidot.org/story?sid=59131	19452
+在土耳其政府要求下 Google <a href="http://www.kurdistan24.net/en/news/e6a0b65e-84fa-447b-9ed4-5df8390961d3"><u>移除了</u></a>勾勒大库尔德斯坦地理范围的地图，当用户尝试访问该地图会返回地图违反服务条款/政策而不可用。Google Maps 的 My Maps 服务允许用户创建定制地图供个人使用或分享。大库尔德斯坦地图已经存在多年。<a href="https://zh.wikipedia.org/wiki/%E5%BA%93%E5%B0%94%E5%BE%B7%E4%BA%BA"><u>库尔德人</u></a>主要分布在土耳其、叙利亚、伊拉克、伊朗四国境内，1925 年库尔德人因土耳其的高压而爆发起义，在凯末尔领导的政府将这波起义镇压之后禁止使用库尔德斯坦（Kurdistan）这一名字。
+➜Facebook如何避免 Messenger 在新年祝贺中崩溃
+https://www.solidot.org/story?sid=59133	28058
+新年前夕，数以百万计的人将会使用 Facebook 的 Messenger app 祝朋友家人新年快乐，如果一切顺利，信息将会在几个毫秒内发送给接受者，然后生活将会继续。但如果发送失败，社交巨人的软件工程师团队将需要快速做出响应。Isaac Ahdout 和 Thomas Georgiou 都是这个工程师团队中的一员。他们即将迎来年度考试。在时钟走到各自时区的午夜时分，新年钟声敲响之际，无数人会点击信息发送的按钮。Ahdout 称他们最大的担忧是如何防止发生级联故障——即一个故障紧跟着另一个故障，像滚雪球一样越滚越大，直至不可开交。一种应对方法是进行广泛的负载测试，模拟大量信息的同时发送。去年新年前夕，当一个数据中心难以处理海量信息，工程师团队将流量从一个数据中心导向另一个数据中心。他们随后构建了工具能更容易的切换流量。
+➜Larry Ellison 进入特斯拉董事会
+https://www.solidot.org/story?sid=59134	30156
+为了遵守与 SEC 达成的和解，特斯拉<a href="https://www.tesla.cn/blog/tesla-welcomes-larry-ellison-and-kathleen-wilson-thompson-new-independent-directors-its-board"><u>任命</u></a> Larry Ellison 和 Kathleen Wilson-Thompson 为董事。其中 Wilson-Thompson 是 Walgreens Boots Alliance 的全球人力资源总监，而 Ellison 则是甲骨文联合创始人兼执行主席，他<a href="https://www.cnbc.com/2018/12/28/tesla-names-new-board-members-after-sec-settlement.html"><u>最近披露</u></a>在特斯拉持有大量个人股份。Ellison 持有 300 万股特斯拉股票，价值接近 10 亿美元，他称自己是特斯拉 CEO Elon Musk 的密友。Musk 因为通过 Twitter 就私有化发表误导性言论而遭到 SEC 的调查，达成和解后同意任命一名新的董事会主席和两名独立董事。
+➜科学家改造杂交稻基因克隆自己种子
+https://www.solidot.org/story?sid=59135	36695
+加州戴维斯分校的科学家利用基因编辑技术 CRISPR <a href="https://www.sciencenews.org/article/hybrid-rice-engineered-crispr-can-clone-its-seeds" target="_blank"><u>改造杂交粳稻</u></a>，使其能克隆自己的种子。<a href="https://www.nature.com/articles/s41586-018-0785-8"><u>研究报告</u></a>发表在《自然》期刊上。研究人员发现修改两组基因能导致杂交稻克隆自己的种子，他们首先发现植物受精卵中，只有雄性版本的基因 BABY BOOM1 能触发种子胚的发育，他们因此插入了启动子当作启动开关，让雌性版本的相同基因做相同的工作，不再需要雄性就能触发种子胚的发育。
+➜Ubuntu 上最受欢迎的 Snap 应用
+https://www.solidot.org/story?sid=59136	40310
+为了减少 Linux 应用的依赖库问题，Canonical 开发了 Snap 应用打包格式（Redhat 则开发了类似的 Flatpak），但由于用户无法控制 Snap 包的更新，因此它受到了一些争议。尽管如此，Canonical  最近声称自家的 Snap 应用包取得了惊人的成功。它<a href="https://betanews.com/2018/12/27/canonical-10-snaps-linux-2018/"><u>公布了</u></a> 2018 年最受欢迎的 10 个 Snap 应用，这些应用基本上都是流行应用，大部分包管理器里都有：Spotify，Slack，VLC，Nextcloud，Android Studio，Discord，Plex Media Server，Xonotic，Notepad++，Shotcut。
+➜中国科学家利用溅射法”变铜为金“
+https://www.solidot.org/story?sid=59137	41237
+中科院大连化学物理研究所的研究人员和浙江师范大学、宁夏大学和日本富山大学等合作，在《Science Advances》期刊上发表<a href="http://advances.sciencemag.org/content/4/12/eaau3275"><u>论文</u></a>，报告<a href="http://www.dicp.ac.cn/xwdt/kyjz/201812/t20181222_5219429.html"><u>发现了</u></a>一种可替代贵金属的铜基加氢催化剂，在加氢反应中表现出与传统铜催化剂完全不同的催化性能。与同族的金和银等贵金属相比，铜在催化反应中更易失去外围电子，在氧化或加氢等催化反应中常表现出铜零价和一价共存的化学态。研究人员通过高能等离子体流轰击的策略，改变了铜的外围电子结构，使铜表现出了贵金属金和银的特性。这种新材料并不能真的将铜变成金，它的密度仍然和铜相同，但可以在某些需要贵金属的制造过程中作为替代使用。
+➜elementary OS 可能是 Linux 走向主流的最佳希望
+https://www.solidot.org/story?sid=59138	43782
+我们天天都在用 Linux，但大部分人认识不到这一点，原因是 Linux 唯一没有征服的领域是桌面，而大部分人接触的桌面或者是 Windows 或者是 macOS，即使 Linux 统治了物联网、移动和数据中心，没有在桌面上取得成功，它仍然被认为没有进入主流。Ars 介绍了发行版 elementary OS，认为<a href="https://arstechnica.com/gadgets/2018/12/a-tour-of-elementary-os-perhaps-the-linux-worlds-best-hope-for-the-mainstream/#p3"><u>它是 Linux 走向主流的最佳希望</u></a>。elementary OS&nbsp; 诞生之初引发了争议，原因是它采用的是随你付下载（你也可以支付 0 元）模式，但问题不是付费下载，而是开发者描述付费下载的文字在社区引发了争议，开发者本质上是将不付费的用户称为小偷。对此，创始人 Daniel Foré 颇感后悔，称他们是一个小团队，对公关基本上没有任何经验。今天 elementary OS 的资助模式转变到了应用随你付模式，它的应用商店提供了用户可以随意支付价格的应用。
+➜研究发现猫舌头是梳理毛发的理想选择
+https://www.solidot.org/story?sid=59139	47366
+根据发表在 PNAS 期刊上的<a href="https://www.pnas.org/content/115/49/12377"><u>一项研究</u></a>，乔治亚理工大学 David Hu 实验室的研究人员<a href="https://arstechnica.com/science/2018/12/science-says-your-cats-tongue-is-ideally-suited-for-grooming-fur/"><u>发现</u></a>，猫的舌头是梳理毛发的理想选择。David Hu 的一位研究生 Alexis Noel 有一个晚上看到她的猫在舔毛毯，注意到猫的舌头勾住了毯子上的纤维，她调查后发现对于猫梳理毛发的生物机械原理没有多少研究，因此提出了研究设想，用 CT 对猫的舌头进行了扫描。猫需要保持皮肤上毛发的清洁，去除跳蚤，小杂物和多余的热量，猫只有爪子上有汗腺因此需要散热，如果不梳理的话有可能会发生感染。猫睡眠的时间长达 14 个小时，它花很大一部分清醒时间去梳理毛发。
+➜戴尔重返股市
+https://www.solidot.org/story?sid=59140	48090
+戴尔公司<a href="http://www.ftchinese.com/story/001080889"><u>重返股市</u></a>，结束了为期五年的私有化，周五收盘价<a href="https://finance.yahoo.com/quote/DELL?p=DELL&amp;.tsrc=fin-srch" target="_blank"><u> 45.43 美元</u></a>。私有化期间公司创始人迈克尔 • 戴尔和私人股本合伙人银湖 利用财务操作、交易撮合及大举借债对戴尔公司进行了彻底改革，其中包括以 670 亿美元收购数据存储制造商 EMC，以及累积了超过 500 亿美元的债务。广泛的交易使戴尔控制了一个极大扩展了的科技帝国。今年早些时候，人们预计，他将获得其新上市公司大约一半的股份，而在 2013 年退市前，这一比例仅为 14%。
+➜广电总局公布了首批游戏审批结果
+https://www.solidot.org/story?sid=59141	48886
+在时隔八个月之后，成为中宣部旗下的国家新闻出版广电总局<a href="http://www.sapprft.gov.cn/sapprft/contents/7029/391058.shtml" target="_blank"><u>公布了首批游戏审批结果</u></a>，大部分是手游，还有部分页游端游，唯一的主机游戏是 PS4 游戏《人类拯救计划》，腾讯旗下的热门手游绝地求生没有上榜，意味着它仍然无法收费。此前<a href="https://www.solidot.org/story?sid=59034"><u>审批的冻结</u></a>一度导致腾讯市值蒸发近半。中宣部还成立了网络游戏道德委员会去审查游戏。

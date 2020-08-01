@@ -1,0 +1,99 @@
+➜一键下载多设备，苹果出台通用购买功能；iOS新增两大类，抢占用户新机遇？
+http://www.sohu.com/a/376559726_100065715	38386
+<p>作者 - 孙冠男</p>
+<p>2 月 5 日，苹果开发者网站发布了通用购买和 App Store 类别近期改动的通知。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200228/f7912b342d324f71b92925edc2cff82b.JPG" max-width="600" /></p>
+<p>也就是说，自 3 月起，开发者即可通过通用购买的方式在 iOS、iPadOS、macOS以及 Apple TVOS 分发 App，用户只需购买一次即可在所有平台使用 App 和 App 内购买项目。</p>
+<p><strong> Xcode 11.4 Beta 即可实现通用购买</strong></p>
+<p><strong>1、自 2020 年 3 月起，开发者可以以通用购买的方式分发 iOS、iPadOS、macOS 和 Apple TVOS 版的 App</strong></p>
+<p>从 3 月开始，开发者可以提供一个捆绑包，其中包含来自各种 Apple 平台的应用程序，即使用 Apple 的 Catalyst 技术构建应用版本，如果客户购买一个版本，它将自动为所有可用平台解锁该应用程序。</p>
+<p><strong>这意味着开发者可以以较低的价格提供所有应用程序的捆绑包，以吸引更多的用户。</strong></p>
+<p>根据苹果近 5 年营收同比数据曲线显示，在过去几年中，苹果智能手机业务的确处于比较低迷的态势，销量跌幅加大，新 iPhone 销量的下跌将很大的影响 App，尤其是老牌 App 的用户增长，也就是说预计会影响原本市场占比较大的 App 新用户扩展空间。苹果此次开通通用购买，开发者则可以横向扩展，关注 iPad、Mac 等设备带来的增长机会，毕竟多了分发渠道绝对是一件好事。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200228/dae8b03559fe40a2b2c5fa5e7d9c0f27.JPG" max-width="600" /></p>
+<p><strong>2、Xcode 11.4 Beta 实现跨平台开发应用</strong></p>
+<p>Xcode 11.4 Beta 2 在发行说明中说明新功能如下：</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200228/4cb0d373cfba41119ffda2a244c6b197.JPG" max-width="600" /></p>
+<p><strong>翻译：</strong></p>
+<ul>
+<li>Xcode 11.4 支持以通用购买的方式构建和分发 macOS 应用。要将 macOS 应用作为通用购买进行分发，请在创建新项目时在 Xcode 模板助手中指定与 iOS 应用相同的捆绑包标识符。如果您有现有项目，请在“项目编辑器”中编辑标识符。</li>
+<li>默认情况下，在 Xcode 11.4 中创建的新 Mac Catalyst 应用程序启用通用购买。创建新的Mac Catalyst应用程序时，它将使用与 iOS 应用程序相同的捆绑包标识符。</li>
+<li>Xcode 11.4 中的自动签名支持使用自定义标识符构建 Mac Catalyst 应用。您可以使用项目编辑器中的“签名和功能”选项卡编辑应用程序的捆绑包标识符。如果选择使用与 iOS 应用程序不匹配的自定义捆绑包标识符来构建 Mac Catalyst 应用程序，则将无法以通用购买的形式分发该应用程序。</li>
+</ul>
+<p><strong>解读：</strong></p>
+<p>1、Xcode 11.4 可以构建和分发 macOS 应用，并且实现通用购买。如果开发者想实现通用购买，就需要在 Xcode 模板助手中将 macOS 应用设定与 iOS 应用相同的捆绑包识别符。如果目前已经有 macOS 应用，需要在“项目编辑器”中设定捆绑包标识符。</p>
+<p>2、在 Xcode 11.4 中构建的新 Mac Catalyst 应用，即默认启用通用购买，并且捆绑包标识符与 iOS 应用一致。</p>
+<p>3、开发者可以在“签名和功能”选项中自定义捆绑包标识符，但必须与 iOS 应用一致，否则就不能实现通用购买。</p>
+<p>建议开发者在 3 月（通用购买生效）前完成相关的开发和配置，并适配通用购买支持的所有系统。</p>
+<p><strong>开发成本降低，用户体验仍需考虑</strong></p>
+<p>随着 iOS 应用同时转移到 macOS 上，系统、屏幕的不同势必会影响用户的使用体验，而在这之前，已经有部分产品转移到 Mac 上。</p>
+<p>2019 年 WWDC 大会，苹果提出了 Project Catalyst 计划，这项计划旨在帮助开发者将 iOS 应用移植到 Mac上，随后第一批通过 Project Catalyst 技术适配 macOS 版本的 App 也正式上架 Mac App Store。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200228/a84759e8b05b4e83b7731ea9c1d684d3.JPG" max-width="600" /></p>
+<p>七麦数据盘点整理了专辑推荐中的所有为 macOS 版本适配的 46 款 App 发现，效率、商务、教育、游戏 App 适配 Mac 的数量相对较多，免费和收费 App 的比例几乎持平。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200228/2291427cf86042dcad419146e5180eb2.JPG" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200228/9e496ed9c9bd4d6396e29ceb92789e01.JPG" max-width="600" /></p>
+<p>从这部分产品的表现可以推测，效率、商务、教育、游戏类产品或许更适合跨平台开发，但需要提醒开发者的是，虽然跨平台的开发成本越来越低，但还是要考虑不同操作系统带来的交互问题，只有针对不同使用场景、不同功能作出差异化处理，才能更好地提升用户体验。</p>
+<p><strong>App Store 和 Mac App Store 将统一 App 类别</strong></p>
+<p>App Store 将增设“软件开发工具”和“图形和设计”类别，macOS App Store 增设“图书”、“美食佳饮”、“报刊杂志”、“导航”和“购物”类别，“摄影”和“视频”合并为“摄影与录像”类别，游戏不再包含“儿童”子类别。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200228/cc395b33a54540efa738fd53aff619d0.JPG" max-width="600" /></p>
+<p>App 类别属于元数据之一，可以帮助用户在浏览或筛选搜索结果时找到心仪的 App，并决定 App 将出现在 App Store 的哪一类标签中。因此为 App 选择合适的类别有助于 App 的曝光。在统一 App 类别后，若新增类别更加符合自己的 App 属性，建议开发者尽快登录 iTC 后台进行修改。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200228/09493011598345eb9d1efc5b1f59dda5.JPG" max-width="600" /></p>
+<p><strong>修改 App 类别步骤：</strong></p>
+<p>1、登录 iTC 后台，选择“我的 App”。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200228/602af4e83eb945c1915a1c35ca88e8ee.JPG" max-width="600" /></p>
+<p>2、选择要修改类别的 App，如果 App 过多，可使用“搜索”工具查找 App。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200228/e4ec62abae6047cea8e08b7ca72f483f.JPG" max-width="600" /></p>
+<p>3、在 App 信息中修改 App 类别。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200228/a1d92948fe10428ca83d8ada0524a702.JPG" max-width="600" /></p>
+<p><strong>注意：</strong></p>
+<p>1、macOS App 同时需要在 Xcode 中设置 App 类别，并且要与在 iTC 后台中设置的主要类别一致。</p>
+<p>2、使用 Newsstand Kit 的 App，必须把 App 的主要或次要类别设置为“报刊杂志”。</p>
+<p>写在最后</p>
+<p>从 2018 年 WWDC 苹果推出 Marzipan 项目到 2019 年升级成 Project Catalyst 计划，不难看出苹果想完成自家平台的“大一统”，对于苹果自身来说，可以带动开发者的积极性，同时可以带动自家产品的销售，可以说是一箭双雕；而对于开发者来说，降低了开发成本的同时，还可以多一种分发渠道，也是大有裨益的事，但不一定所有的产品都适合跨平台展现，开发者仍然需要认真考虑自己 App 的目标用户、接受程度以及用户量等因素。</p>
+➜数据实测 | CPA Goal & CPT Bid 调整对广告影响
+http://www.sohu.com/a/376560777_100065715	38608
+<p>作者 - S.F.</p>
+<p>大家在使用 Advanced 模式投放 ASM 时，都会发现在关键词组或是关键词的设置界面中，有两项关于成本的调控数据。一个是 CPT Bid，意思是对点击成本出价；另一个是 CPA Goal，是目标安装成本。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200228/bfcea6d4ba23494ab04f551998d8aa97.JPG" max-width="600" /></p>
+<p>从字面上来看，它们都是用来控制成本的，但它们本质作用并不相同，CPT Bid 是竞争中的出价，作用是竞争苹果分配的展示量和控制点击成本。但是一般投放者为了竞争到更多的展示量级，对 CPT 的出价会远高于目标点击成本；</p>
+<p>CPA Goal 可以帮助投放者控制最终的安装成本。但因为 ASM 是按照点击收费的，所以严格意义上讲苹果并不能够直接控制广告的安装成本，CPA Goal 对安装成本的控制事实上是基于苹果预估的安装量，按照点击成本等于安装成本乘以点击率的公式去控制点击成本的。也就是说，对于很多设置了 CPA Goal 的广告来说，它的点击成本设置事实上并不是 CPT Bid，而是 CPA Goal 乘以苹果预估的安装率所得出的金额。</p>
+<p>那这两者的变动对产品数据会产生什么影响呢？会提升产品量级吗？可以降成本吗？我们通过两个月时间进行了 7 次研究测试，发现它们二者在调控数据后，会对广告数据产生不同程度的影响。</p>
+<p>本次研究数据共分为 4 组，分别是：</p>
+<p><strong>1． CPT Bid 不变，调整 CPA Goal；</strong></p>
+<p><strong>2． CPA Goal 不变，调整 CPT Bid；</strong></p>
+<p><strong>3． 不设置 CPA Goal，调整 CPT Bid；</strong></p>
+<p><strong>4． 同时提升CPA Goal 与CPT Bid。</strong></p>
+<p>注：红色字体代表数据上升，蓝色字体代表数据下降</p>
+<p><strong>CPA Goal 上下调整 50%，CPT Bid 不变</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200228/2dd74bbf2b8c40c69a88c8c2bf991ae4.JPG" max-width="600" /></p>
+<p>数据显示，在 CPT Bid 不变的情况下，CPA Goal 上调 50% 后，展示和成本都是呈上升趋势的，且涨幅较大，转化率却有所下降；</p>
+<p>在 CPT Bid 不变的情况下，CPA Goal 下调 50% 后，除转化率有少许提高外，其他数据都呈现了较大幅度的下降。</p>
+<p>也就是说，提高 CPA Goal 时，转化率会降低，而降低 CPA Goal 时，转化率反而会上升。这是因为转化率数据与广告 CPA 是成反比的（CPT=CPA*CR），所以当固定 CPT 出价不变时，提高 CPA Goal 可能会导致转化率下降。</p>
+<p>从研究数据来看提高 CPA Goal 对展示量的提升还是很明显的，安装成本会随着 CPA Goal 的提升而上升，随着 CPA Goal 的下降而下降。</p>
+<p><strong>CPT Bid 上下调整 50%，CPA Goal 不变</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200228/4224822aef91487b966aaebbbf4e738b.JPG" max-width="600" /></p>
+<p>数据显示，在 CPA Goal 不变的情况下，CPT Bid 上调后，与上组情况相同，展示与成本都有所上升，转化率有所下降；</p>
+<p>在 CPA Goal 不变的情况下，CPT Bid 下调后，除成本外的其他数据都是下降趋势。</p>
+<p>逻辑上来说，降低 CPT Bid 应该会使成本下降，但受竞价环境的影响，如果你下调后的 CPT Bid 还是比调整前的点击成本高，那么成本很大可能会上升。</p>
+<p>例如你调整前的出价为 5 美金，点击成本为 2 美金，那么即使你将出价下调为 4 美金，受竞品出价影响，广告的点击成本还是有可能会涨到 3 美金。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200228/3025f38e7c22490d987bc3d12a0088f1.JPG" max-width="600" /></p>
+<p>对比上调 CPA Goal 和 CPT Bid 的数据可以发现，同是可以提升产品展示量级，相比 CPT Bid ,调整 CPA Goal 后产品量级的增长幅度更大。</p>
+<p><strong>不设置 CPA Goal ，CPT Bid 上下调整 50%</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200228/e6b433b1102647c3ab3cee534a308710.JPG" max-width="600" /></p>
+<p>这组实验主要是与第 2 组（设置 CPA Goal，调整CPT Bid）数据做对比，很明显不设置 CPA Goal 时调整 CPT Bid 更能提升产品量级。如果目前不需要通过设置 CPA Goal 来控制成本，使成本更稳定的话，可以考虑先不设置 CPA Goal。</p>
+<p><strong>CPA Goal 、CPT Bid 同时上调 50%</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200228/eff8c04371474c3fbb902ca92516d059.JPG" max-width="600" /></p>
+<p>最后我们测试了一下，同时上调 CPA Goal 和 CPT Bid，与前三组数据进行对比发现，同时提升 CPA Goal 与 CPT Bid，产品量级提升幅度并没有特别明显。与单提升 CPT Bid 涨幅一致，甚至会低于仅调整 CPA Goal 所提升的量级数据。</p>
+<p>对比本次研究数据，我们可以发现在提升量级上，调高 CPA Goal &gt;调高 CPT Bid（不设置 CPA Goal）&gt;调高 CPT Bid（设置 CPA Goal）=同时上调 CPA Goal 和 CPT Bid；</p>
+<p>但此规律不适用于所有广告，因为具体变化数据会受苹果判定成本限制的规则影响。</p>
+<p>苹果本身认定的点击成本限制是“CPA Goal*CR”与 CPT Bid 中更小的数值。</p>
+<p>例如我们设置 CPT Bid 为 3 美金，CPA Goal 为 5 美金，假如苹果预估这款产品 CR 为 50%，那么苹果认定的你的点击成本限制就是 5*50% = 2.5 美金。</p>
+<p>若你的 CPA Goal 值不变，不论你的 CPT Bid 升为 100 美金还是 1000 美金，苹果认定的点击成本限制始终是 2.5 美金，也就是关于 CPT Bid 调整对于广告数据不会有丝毫影响。同样道理，也可能因为 CPT Bid 的设置数额，导致 CPA Goal 的调整结果受到影响。</p>
+<p>因此，在调整 CPA Goal &amp; CPT Bid 数值时，需要考虑不要把一方金额设置过高，否则苹果会认定另一项数值为成本限制，这样会造成调整数据对产品量级没有太大影响的结果。</p>
+<p>结语</p>
+<p> </p>
+<ul>
+<li>CPA Goal 与转化率成正比，提升 CPA Goal 会使转化率下降，相反降低 CPA Goal 时可以提高转化率；</li>
+<li>在本案例中，CPA Goal &amp; CPT Bid上调可以有效提升产品量级，提升 CPA Goal 后量级的上升幅度更为明显，但具体变化量级会受初始设置金额及苹果判定规则影响；</li>
+<li>在本案例中，广告成本会随着 CPA Goal &amp; CPT Bid 的上调而变高，受竞价环境影响，下调 CPA Goal &amp; CPT Bid 不一定会降低成本。</li>
+</ul>
+<p></p>

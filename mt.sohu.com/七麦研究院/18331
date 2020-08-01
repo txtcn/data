@@ -1,0 +1,58 @@
+➜中了 3.1.1 的毒？内购支付流程 & 5 条过审技巧收好不谢！
+http://www.sohu.com/a/379035711_100065715	38552
+<p>作者 - 孙冠男</p>
+<p><strong>什么是 App 内购买项目？</strong></p>
+<p>如果开发者想在 App 中解锁如订阅、游戏内货币、游戏关卡等访问权限，则必须使用 App 内购买项目。开发者可提供四种类型的 App 内购买项目。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200310/78bf8fcd42364f39a5740994ff369935.jpeg" max-width="600" /></p>
+<p><strong>内购支付流程</strong></p>
+<p>从用户发起内购请求到完成支付，大致流程如下，开发者可以根据流程做具体代码实现。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200310/7fbb09a6fa33441eae2313e3a47ec3f2.jpeg" max-width="600" /></p>
+<p>需要注意的是，要确保 App 在 Xcode 中的套装标识符和产品标识符与开发者帐户中针对该 App 的标识符以及在 iTC 后台中配置的 App 内购买项目的标识符相匹配。启用 App 内购买项目后，即可开始创建和设计 App 内购买项目。</p>
+<p><strong>创建 App 内购买项目流程</strong></p>
+<p>1、登录 iTC 后台，点击“我的 App”，然后选择要添加 App 内购买项目的 App。</p>
+<p>2、在工具栏中点击“功能”，在左列选择“App 内购买项目”。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200310/22e0c2860c474e15b2f7874fe50798dd.png" max-width="600" /></p>
+<p>3、点击“添加（+）”来添加 App 内购买项目。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200310/1d1161b706c349189e0cc68cf2be8043.png" max-width="600" /></p>
+<p>4、选择要创建的 App 内购买项目类型。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200310/9e1de4ed790d4795a88817db7c8c7263.png" max-width="600" /></p>
+<p>5、添加参考名称、产品 ID 和本地化显示名称。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200310/22d575398b2a4faca5c648c0e178e968.png" max-width="600" /></p>
+<p>6、点击“存储”或“提交以供审核”。</p>
+<p>注：创建自动续期订阅时，需增加创建订阅群组，再将订阅产品添加至订阅群组即可。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200310/d64a7ba251924b708483a216c39c9692.png" max-width="600" /></p>
+<p><strong>5 条过审技巧</strong></p>
+<p>七麦数据曾在《效率骤升！审核时长仅11.13h；摄影与录像类产品获最多推荐 | 2月App Store推广报告》中提到，苹果加大对条款 3.1.1（App 内购买项目）的审核力度，同时条款 3.1.2（订阅）也成为被拒条款 Top6，特此整理五大防拒妙招，助力各位开发者摆脱 3.1.1。</p>
+<p><strong>1、内购产品上架需与 App 上架的包一起提交</strong></p>
+<p>这里需要重点注意一下，<strong>内购产品上架的时候一定要和 App 上架的包一起提交审核，不可以分开提交。</strong>如果你选择分开提交了，那内购永远不可能上架成功的。亲测过，一定要注意了。</p>
+<p><strong>2、App 内购买项目多地区上架，选择本地化适配或可增加过审几率</strong></p>
+<p>有时候，我们的产品并不是只在一个地区上架，会选择在多个地区甚至是多个国家上架。<strong>那么在 App 上架的地区过多的话，那么相对应上架的产品，包括 App 内购买项目，也要做相对应的本地化适配。</strong>如你的产品在中国、俄罗斯、法国、美国四个国家上架，那么你上架的内购买项目的解释语言，也要包括中文、俄文、法文和英文四种语言。</p>
+<p>在 App Store 审核条款中，也指出“如果我们无法理解 App 的工作方式，或者 App 内购买项目不是那么一目了然，则审核会有所延误，并可能会导致 App 被拒绝。”所以，如果你的产品要是在多个地区上架的话，建议开发者要做好 App 内购买项目本地化工作，以免审核被拒。</p>
+<p>App Store 审核指南 — 3. Business</p>
+<p>If we can’t understand how your app works or your in-app purchases aren’t immediately obvious, it will delay your review and may trigger a rejection. </p>
+<p><strong>3、四种声明条款</strong></p>
+<p><strong>①用户协议和隐私条款</strong></p>
+<p>在 App 登录页面和产品购买页面，一定要有用户协议和隐私条款这两个东西。</p>
+<p><strong>②连续包月协议说明和自动续费声明</strong></p>
+<p>如果你的产品中有自动订阅产品类型，则需要加入连续包月协议说明。同时，还要在 App 产品页面写上自动续费声明。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200310/82f2e97b1e214442be2986f923f31018.jpeg" max-width="600" /></p>
+<p><strong>4、App 应用描述中加入自动订阅描述</strong></p>
+<p>如果还是有些担心 App 内购买项目审核被拒，则可以选择在 App 应用描述当中加入自动订阅的内容描述，让苹果审核人员能够更加直观、清楚的看到 App 内购买项目相关情况。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200310/8efd7adb9ea44b6f8ead3716494d87d0.jpeg" max-width="600" /></p>
+<p><strong>5、虚拟产品不要加入第三方支付的 SDK</strong></p>
+<p>以上内容都准备好了的话，那最后就需要注意一下：<strong>如果你的 App 内购买项目是虚拟产品的话，不包括实物，请不要加入支付第三方的 SDK，不然检测出来可能会被拒掉。</strong></p>
+<p><strong>Tips:</strong>由于 App 内购买项目的产品 ID 具有唯一性，即生成一次后就无法再次生成同一个 ID 的产品，包括删除后也无法使用同一个 ID。因此在选择产品类型，填写产品 ID 时，需要注意避免填错或误删了。</p>
+➜小编叽歪 | 它它它竟然崩了！想和偶像一起上课这么难？
+http://www.sohu.com/a/379036463_100065715	38834
+<p>作者 - 13</p>
+<p>疫情期间，众多平台纷纷推出线上直播课，加持国家政策的鼓励，使线上教学开展的异常火热。3 月 9 日，由教育部和人民网共同主办了一期“全国大学生同上一堂课疫情防控思政大课”，人民智云以及咪咕视频提供在线直播。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200310/84b61fd122bc4b7ea7fa0333dbbfe46e.jpeg" max-width="600" /></p>
+<p>而这一举措，也使得人民智云从榜单外一跃升至应用榜（免费）Top1，击败霸榜长达 34 天的钉钉。谁能想到史上霸榜最长记录的应用，最终败给了一场直播课呢？真是社畜不如大学生啊……</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200310/133cd035c4394a19981dfea68998be4d.jpeg" max-width="600" /></p>
+<p>但随后，直播课并未能如期进行，全国数百万的大学生严重超出了 App 所能承载的最高负荷，#人民智云崩了#的话题也瞬间登上微博热搜，话题阅读量已累计超 2 亿次，讨论人数超 14.4 万。对此，不少网友表示庆幸，称这样就不用上网课了。但也有网友表示遗憾，称这样就无法跟同样是大学生的易烊千玺、王俊凯、刘昊然上同一堂课了。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200310/b1787bbb554c4b88a882d21da073e9ae.jpeg" max-width="600" /></p>
+<p>同时，七麦数据观察到，此事也对产品的评分带来了一定影响，人民智云 App 的差评数量在 3 月 9 日迅速增加，使产品评分低至 1.2 分。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200310/4d7bb6e479204849858e1126c45ed51b.jpeg" max-width="600" /></p>
+<p>不禁让人想起前不久的钉钉遭小学生打一星事件，看来不只是小学生，当代大学生也是很有脾气的！</p>
+<p>而据悉，此次网课除当代大学生外，也有众多明星大学生的粉丝前来准备听课，目的就是为了能和自家 idol 一起云上课。</p>
+<p>前有钉钉，后有人民智云，产品屡遭学生暴打一星，而面对产品评论即将开放无需跳转 App Store 的新模式，又该如何拯救你的产品评论呢？欢迎留言说说你的看法。</p>

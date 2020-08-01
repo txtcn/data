@@ -1,0 +1,22 @@
+➜Privacy Pass – 由 Cloudflare、hCaptcha 提供，减少访问网页时“我是人类”验证[Chrome/Firefox]
+https://www.appinn.com/privacy-pass/	43456
+<p><a href="https://www.appinn.com/privacy-pass/" class="rank-math-link">Privacy Pass</a> 是一款开源的浏览器插件，在浏览网页的时候，能够帮助使用者减少在“我是人类”验证次数，由 Cloudflare 和 hCaptcha 联合开发。@Appinn</p>
+<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202007/privacy-pass.jpg!o" alt=""/><figcaption>“我是人类“认证页面</figcaption></figure>
+<p>来自 @<a href="https://meta.appinn.net/u/pessoa">pessoa</a> 同学的推荐：</p>
+<p><a href="https://github.com/privacypass/challenge-bypass-extension" class="rank-math-link">Privacy Pass (Beta)</a> 是 <a href="https://www.hcaptcha.com/privacy-pass" class="rank-math-link">hCaptcha</a> 和 <a href="https://blog.cloudflare.com/supporting-the-latest-version-of-the-privacy-pass-protocol/" class="rank-math-link">Cloudflare</a> 联合开发的一款开源的浏览器插件， <a href="https://addons.mozilla.org/en-US/firefox/addon/privacy-pass/" class="rank-math-link">Firefox</a>（👈 商店）和 <a href="https://chrome.google.com/webstore/detail/privacy-pass/ajhmfdgkijocedmfjonnpjfojldioehi" class="rank-math-link">Chrome</a>（👈 商店）都可用。</p>
+<p>这个插件不能替你一劳永逸地消除所有人机验证，而是每人工选图片验证一次后，在插件中会储存一定的次数，之后可以免除这个次数的验证。到次数用完了，自然得再人工选一次。</p>
+<p>例如，当你手动通过一次&nbsp;<strong>hCaptcha</strong>&nbsp;的验证后，插件图标上会显示一个 “5”。下一次你遇到&nbsp;<strong>hCaptcha</strong>&nbsp;验证时，直接点击“我是人类”即可，不需要再选图片，而插件图标上的数字会变成 “4”，即你还可以免除 4 次验证。</p>
+<p>插件所需的权限只有一条“Read your browsing history”，不算过分。对于常遇到 hCaptcha 的人来说，装着总比不装好。</p>
+<hr class="wp-block-separator"/>
+<p>由于网络上的恶意流量，很多网站都开启了“我是人类”认证，皆在确认访问者是正常人类，并为之提供服务。而如果是机器人或者恶意访问者，则会中断访问。</p>
+<p>理想是美好的，现实中很多正常用户会被当作机器人而被迫进行验证，比较经典的验证是在一堆图片中选择几个规定的图片，比如红绿灯、烟囱、大巴车等。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202007/screenshot-2020-07-26-at-19-49-47.jpg!o" alt="" width="391" height="604"/></figure></div>
+<p>有时候要好几遍，这样很烦。</p>
+<p>在安装浏览器扩展 Privacy Pass 之后，就可以先验证，再使用了。</p>
+<p>点击扩展栏的 Privacy Pass 会出现 Cloudflare 和 hCaptcha 两个按钮，再点击进去，进行正常“我是人类”验证，通过之后，就会在 Privacy Pass 里显示剩余次数了。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202007/screenshot_2020-07-26_at_19_53_18.jpg!o" alt=""/></figure></div>
+<p>之后，只要再次遇到“我是人类”验证，直接点击对勾，不会出现图片验证，直接通过：</p>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202007/screenshot-2020-07-26-at-19-57-55.jpg!o" alt="" width="356" height="113"/></figure></div>
+<p>没错，使用 Privacy Pass 并不会减去验证的步骤，但它可以保证不会出现图片验证，已经非常方便了。</p>
+<p>有需求的同学可以去试试了。</p>
+<p>比较有趣的是，在已经有剩余验证次数的情况下再次获取更多次数时，Cloudflare 会叠加次数，hCaptcha 会扣除次数 😂</p>

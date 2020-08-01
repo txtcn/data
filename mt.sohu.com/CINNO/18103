@@ -1,0 +1,184 @@
+➜“平头哥”发布首款芯片玄铁910，RISC-V 或成为真正国产自主指令集架构
+http://www.sohu.com/a/329526662_159067	29495
+<p style="text-align: center;"><span style="font-size: 16px;">来源 ：EDN</span></p>
+<p><span style="font-size: 16px;">去年4月，阿里巴巴集团宣布，公司研发部门达摩院正研发一款神经网络芯片“Ali-NPU”。同年 9 月，阿里巴巴成立独立芯片企业，马云赐名“平头哥”，由阿里内部的芯片业务与外部收购而来的中天微系统有限公司整合而成，阿里全资控股。</span></p>
+<p><span style="font-size: 16px;">今天，阿里自研芯片平头哥终于发布了首款处理器，不过仍然是“半遮面”。</span></p>
+<p><span style="font-size: 16px;"><strong><span>平头哥首个成果——玄铁910</span></strong></span><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">这家芯片公司发布了首款处理器——玄铁910（“玄铁”取自金庸小说、杨过手里的神剑之名，有重剑无锋大巧不工的含义）。据官方介绍，这款处理器基于开源RISC-V架构，同时也是该架构下性能最强的处理器，采用 12nm 制程，主频 2.5GHz，7.1Coremark/MHZ（世界公认的 BenchMark）。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190726/da6c3450f79a4695ad7b9c40b06776fd.jpeg" /></p>
+<p><span style="font-size: 16px;">架构上，玄铁 910 采用 16core 结构，12 级乱序流水线，并行 3 发射 8 执行 2 内存访问，最大支持 8MB 二级缓存，AI 增强的向量计算引擎。</span></p>
+<p><span style="font-size: 16px;">据了解，玄铁910采用的 3 发射 8 执行的复杂乱序执行架构，是业界首个实现每周期2条内存访问的RISC-V处理器；基于RISC-V扩展了50余条指令，系统性增强了RISC-V的计算、存储和多核等方面能力。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190726/0df5c26229464d6d97213fae1ff0848d.jpeg" /></p>
+<p><span style="font-size: 16px;">据现场公布数据，玄铁910较业界主流芯片性能提高40%，较标准指令性能高出20%。戚肖宁介绍，这源于平头哥体系架构、指令系统、系统优化，以及中天微十余年的量产经验而达到的整体效果。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190726/693c9017ad42406190f7a90ca1b1e0b3.jpeg" /></p>
+<p><span style="font-size: 16px;">该颗芯片适用于用在人工智能加速器、5G、网络通讯、人工智能、自动将驾驶领域，可嵌入 CPU、SOC 芯片中。</span></p>
+<p><span style="font-size: 16px;">为了进一步降低芯片设计门槛，加速行业创新，平头哥还现场发布英雄帖，邀请有量产能力企业和高校科研机构共同打造标杆项目，并宣布“普惠芯片”计划，在开源的RISC-V基础上进一步降低企业设计芯片的门槛：</span></p>
+<p><span style="font-size: 16px;">全面开放玄铁910 IP Core，全球开发者可以免费下载该处理器的FPGA代码，快速开展芯片原型设计和架构创新；</span></p>
+<p><span style="font-size: 16px;">同时，平头哥还打造了面向领域定制优化的芯片平台(Domain specific SoC)，提供包括CPU IP、SoC平台以及算法在内的软硬件资源，面向不同AIoT场景为企业和开发者提供不同层次的芯片服务。</span></p>
+<p><span style="font-size: 16px;">换而言之，平头哥要将芯片性能提升一倍以上之余还可以将芯片成本降低一半。</span></p>
+<p><span style="font-size: 16px;"><strong><span>RISC-V 可能真正能成为国产的自主的指令集架构</span></strong></span><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">此次架构中采用的 RISC-V 是一种免费开源指令集架构 (ISA)。诞生于加州大学伯克利分校的RISC-V因为其开源、灵活和低成本等优势，从面世开始就受到了开发者的热烈支持和厂商的广泛关注。尤其是进入最近几年，在AIoT潮流和各国政府的支持下，RISC-V更是呈现出一种星火燎原之势。</span></p>
+<p><span style="font-size: 16px;">该指令集设计非常简单，采用了基础指令集与扩展指令集的方式，基础指令集只包含了不到 50 条指令。</span></p>
+<p><span style="font-size: 16px;">“RISC-V 可能真正能成为国产的自主的指令集架构。”RISC-V 技术领袖、芯来科技 CEO 胡振波在接受媒体采访时谈道，RISC-V 作为免费的架构，将会和 ARM 产生竞争。在手机等传统 ARM 的垄断领域会保持强势存在，在一些新兴的边缘领域，比如 IoT、AI、边缘计算领域，RISC-V 将具有爆发空间。</span></p>
+<p><span style="font-size: 16px;"><strong><span>阿里加码芯片竞争有哪些优势？</span></strong></span><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">据了解，阿里的芯片研发团队目前已经将近两百余人，分设于上海、美国两地，去年对外公布为数十人，一年时间里发展迅速。</span></p>
+<p><span style="font-size: 16px;">其核心团队拥有十年以上的CPU和芯片研发经验，长期从事自研指令架构、CPU微体系结构与系统芯片产品的研发，累计开发了7款嵌入式CPU IP核；同时这些产品均已得到大规模量产的验证，授权客户超100家，累计销售超十亿颗，这些芯片被广泛应用于机器视觉、工业控制、车载终端、移动通信、多媒体、无线接入和信息安全等领域，主要客户为一线芯片设计公司。</span></p>
+<p><span style="font-size: 16px;">据此前介绍，平头哥公司将做两类芯片，一是云端的神经网络芯片 Ali-NPU，类似于谷歌的 TPU（张量处理器），用于 AI 推理；二是嵌入式芯片，用于物联网终端。</span></p>
+<p><span style="font-size: 16px;">阿里做芯片，还有一个更大的优势在于可以将产品直接用在公司运营中，并且对这些场景足够了解。</span></p>
+<p><span style="font-size: 16px;">而在此之前，阿里广投芯片企业，注资了不少新兴的芯片企业，加码芯片竞争。2018 年 6 月，国内 AI 芯片企业寒武纪科技宣布完成数亿美元 B 轮融资，原股东阿里巴巴创新投跟投。寒武纪的发展思路也是云端一体，与平头哥的定位类似。此外，阿里巴巴创业者基金还投资了美国终端 AI 芯片商耐能（Kneron）。</span></p>
+<p><span style="font-size: 16px;">目前，阿里的嵌入式芯片已经发布，而云端的神经网络芯片 Ali-NPU 的进展同样值得关注，并且将为阿里云业务带来更为直接的推进和影响。据了解，该颗芯片或将于今年晚些时候公布进展。</span></p>
+<p><span style="font-size: 16px;"><strong><span>小结：</span></strong><strong><span>中国企业能否赢得AI国际竞赛？</span></strong></span><strong><span style="font-size: 16px;"></span></strong></p>
+<p><span style="font-size: 16px;">放眼全球，Facebook、谷歌、苹果、亚马逊等美国科技巨头均投入 AI 芯片的研发和不久。谷歌已将自主研发的 AI 芯片 TPU 应用于加速搜索、翻译、相册等功能。2018 年 2 月，亚马逊开始设计制造 AI 芯片，计划应用于云端摄像头、Echo 扬声器等以服务智能家居硬件市场。同年 4 月，苹果宣布正在开发 Mac 电脑定制芯片，将于 2020 弃用英特尔，导致英特尔股价暴跌 9.2%。国内百度曾公布面向云端的人工智能芯片项目「昆仑」。</span></p>
+<p><span style="font-size: 16px;">李开复认为尽管美国目前仍然占据上风，但权力平衡正发生转移。</span></p>
+<p><span style="font-size: 16px;">他说：“中国显然拥有数据优势，它的工程技术同样发达，它的企业家可能比其他任何国家都要强大。资本总额与美国相当，市场规模更大。双头垄断已经成为现实，只是如今美国依然占据着上风。但我认为，这种趋势将不可避免地改变。”</span></p>
+➜重磅！南韩最快在8月2日将遭日本从白色名单上除名
+http://www.sohu.com/a/329526842_159067	29495
+<p style="text-align: center;"><span style="font-size: 16px;">来源 ：日本经济新闻</span></p>
+<p><span style="font-size: 16px;">根据《日本经济新闻》7月26 日报导，日本政府在本月初向南韩实施了出口管制之后，最快将于 8 月 2 日的内阁会议上进行政令修正，将南韩从目前的货物出口白色名单上剔除。而在政令宣布之后，最快会在 8 月下旬正式将南韩除名。</span></p>
+<p><span style="font-size: 16px;">日本官房长官菅义伟在 7月26 日上午的记者会上表示「从进行实效出口管理的观点来看，这是适切的处置措施」。</span></p>
+<p><span style="font-size: 16px;">全世界共有 27 个国家，被日本政府列入货物出口的白色名单当中。而这回南韩若真的丧失相关资格，也将是史上头一遭的例子。</span></p>
+<p><span style="font-size: 16px;">在面对这样的处境，南韩方面以「没有具体根据」作出反击，并准备向 WTO 世界贸易组织提出诉讼。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190726/c9457725375c4de5b4eb3a7b62e8e78f.jpeg" /></p>
+<p><span style="font-size: 16px;">日本政府指出，南韩之所以会遭日本从白色名单除名，是因为在 2016 年 6 月之后，就没有召开出口管理的事务等级协议；还有南韩在一般武器的出口管理体制上，作法不够完善所致。</span></p>
+<p><span style="font-size: 16px;">日本政府于 7 月 4 日起，在出口到韩国的氟化聚酰亚胺、光阻剂、高纯度氟化氢等三种，在 OLED 面板及半导体生产不可或缺的先进原料，采取严格的出口管制措施。</span></p>
+<p><span style="font-size: 16px;">韩方虽多次要求日本撤回该项决定，但日本政府以过去南韩在可转用于军事用途的原物料方面，曾多次发生不当出口案例为由，坚决不肯退让。除了南韩的半导体产业深受影响，全球相关业界也都可能受到冲击。</span></p>
+➜重塑铰链Galaxy Fold卷土重来！三星双旗舰8月和9月先后上市
+http://www.sohu.com/a/329561820_159067	29495
+<p style="text-align: center;"><span style="font-size: 16px;">来源 ：cnBeta、MK</span></p>
+<p><span style="font-size: 16px;">Galaxy Note 10与Galaxy Fold上市被确定为8月和9月份，三星电子的两款旗舰机型将先后隔一个月同步出击。</span></p>
+<p><span style="font-size: 16px;">7月25日，三星电子通过新闻部表示将按序从9月起上市Galaxy Fold产品。三星电子说明：为了给消费者带来最优的产品体验，公司已经进行了设计完善和完整的分析，对于完善措施也进行了严格的测试以保证措施有效性。</span></p>
+<p><span style="font-size: 16px;">起初Galaxy Fold原定为4月26日美国首发上市，但进行产品评测媒体先后爆出产品缺陷问题后，三星电子暂缓了其上市。业界推测三星将于7月份重新推出产品，但对此三星一直三缄其口，并维持着“短期内即将进行公示，望等待”的立场。</span></p>
+<p><span style="font-size: 16px;"><strong><span>几经波折，Galaxy Fold上市时间定档9月</span></strong></span><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">最终过去3个月时间后，7月25日三星电子官方公告 Galaxy Fold将从9月起进行有序上市。而韩国国内推测，本土上市时间预计为9月份。</span></p>
+<p><span style="font-size: 16px;">三星电子发布Galaxy Fold上市时间后，市场所有焦点都聚焦点到了Galaxy Fold身上。</span></p>
+<p><span style="font-size: 16px;">三星新闻稿中描述了一些有关Galaxy Fold屏幕不耐用缺陷的修复细节：</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190726/30ec7df53a3745b98fcd06ac9da581f8.jpeg" /></p>
+<p><span style="font-size: 16px;">Infinity Flex Display的顶部保护层已经延伸到屏幕本体之外，被嵌入边框之中，看上去就像是显示器结构的一个组成部分，且难以移除。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190726/864ef1005e764085a4d2ff946e67cb7f.jpeg" /></p>
+<p><span style="font-size: 16px;">Galaxy Fold具有额外的增强功能，可以更好地保护设备免受外部颗粒的侵害，同时保持其标志性的可折叠体验：</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190726/c75aa60030b14ca2b6382c28002a342b.jpeg" /></p>
+<p><span style="font-size: 16px;">铰链区域的顶部和底部通过新增加的保护帽得到加强。</span></p>
+<p><span style="font-size: 16px;">Infinity Flex显示屏下方还有其他金属层，以加强对显示屏的保护。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190726/3e534588511f4265bbcccdc48931c7e9.jpeg" /></p>
+<p><span style="font-size: 16px;">Galaxy Fold的铰链和主体之间的空间已经缩小，以防止灰尘颗粒和其他碎屑通过铰链开口进入手机内部。</span></p>
+<p><span style="font-size: 16px;">以下是AllAboutSamsung发出的一系列对比图像，揭示了三星在铰链设计方面所做的其他改变。</span></p>
+<p><span style="font-size: 16px;"><strong><span>Galaxy Note10取消耳机端口，强化无边框</span></strong></span><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">但除了Galaxy Fold之外，三星即将先一步推出Galaxy Note10产品。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190726/fd5913f6c0ce4153a7782e6162349f83.jpeg" /></p>
+<p style="text-align: center;">Galaxy Note10预测图（来源：Phone arena）</p>
+<p><span style="font-size: 16px;">Galaxy Note10 产品将分为基础款和Plus款2种，价格预计在120万~140万韩币（约合6989~8154人民币） 。Galaxy Note10的最大特点为取消耳机端口，加强无边框功能。</span></p>
+<p style="text-align: center;"><img src="http://5b0988e595225.cdn.sohucs.com/images/20190726/bdf0803eb6e547b08890f73e1482178f.png" /></p>
+<p><span style="font-size: 16px;">为了美观或还将取消智能助手Bixby按钮。也有预测认为取消耳机端口后或将提供带有降噪功能的Type-C USB接口以连接耳机。此外，Galaxy Note10还将加强pen的功能。</span></p>
+<p><span style="font-size: 16px;">但两款产品上市集中在同一时间段，也有质疑是否会影响产品的热度。Galaxy Note10可以从下个月10号开始接受预约，23日即可正式上市。假设Galaxy Fold产品上市为9月初，两款产品相隔不到1个月时间。</span></p>
+<p><span style="font-size: 16px;">电子业界人士评论：两款产品皆为三星的超高端旗舰机型，或不能充分得到新产品热度和关注度。唯一的庆幸点是Galaxy Fold为崭新的产品形态，Galaxy Note10的产品线并无冲突。</span></p>
+<p><span style="font-size: 16px;">也有些业界人士认为：Galaxy Note10上市后短短1个月后又推出另一款旗舰机型，实属特例。对于消费者来说，选择的范围变得更大，但这的确会降低对于单一产品的热度。</span></p>
+➜华为双模Mate 20 X带着中国首张5G许可证来了！明年目标出货1亿部！
+http://www.sohu.com/a/329612552_159067	29495
+<p style="text-align: center;"><span style="font-size: 16px;">来源 ：OFweek电子工程网</span></p>
+<p><span style="font-size: 16px;">据华为介绍，华为Mate 20 X 5G是目前全球唯一能够支持5G独立网和非独立网，同时提供SA／NSA的5G双模手机，它也是全球唯一一款双卡版本的5G手机，也就是说能支持一张4G和5G手机卡进行待机，华为5G手机的正式发布，将是一个跨时代意义的时刻。</span></p>
+<p><span style="font-size: 16px;">华为创始人任正非日前指出，今年华为智能手机总出货预计将会达到2.7亿部，而这一目标原本是2.5亿部，且产业链消息指出，华为2020年的目标为3亿部，如果明年5G智能手机出货量能达到1亿部，将占据智能手机总出货量的三分之一</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190727/6edde29f272c41f3abffc6b8fda56947.jpeg" /></p>
+<p><span style="font-size: 16px;">7月26日，14点30分，华为在深圳华为坂田基地正式发布华为 Mate20 X，这是一款让全球瞩目的手机，是国内第一款正式发布的5G手机。据华为介绍，华为Mate20X 采用的是后置4000万＋2000万＋800万像素的徕卡三摄，7．2英寸的显示屏，比较亮点的是4200mAh高密度大容量电池，这对于手机电池不厉害的手机就是非常有诱惑力了。</span></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">一起来看看这款手机的亮点</span></strong></span><span style="font-size: 16px;"></span></p>
+<p><span><strong><span style="font-size: 16px;">一、华为 Mate20 X 同时支持SA和NSA两种组网模式</span></strong></span><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">5G发展的驱动力在于网络的升级和不断增长的数据需求，这是根本原因，人们需要更强大的移动网络。近日，经常听到人说NSA和SA，它们有什么区别，请往下看！</span></p>
+<p><span><strong><span style="font-size: 16px;">5G的组网方式：</span></strong></span><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">NSA是非独立组网，也就是说4G网络和5G网络并存的组网，当网络好，5G网络用，不好，切换4G网络，这种方式灵活，至少初期会很实用。SA是独立组网，独立组网意味着5G手机，将直接连接5G网络，不能随意切换到4G，这种成本很高的。5G高速率和低时延、高可靠特性等和传统4G在架构上有区别，很复杂，还有很长的时间去实现独立组网。</span></p>
+<p><span style="font-size: 16px;">如今，5G网络技术不断进步，智能终端也将继续发布，第一波的5G网肯定有很多问题，但未来是美好的。在上周，这款手机刚刚获得中国首张5G终端电信设备进网许可证，不愧是华为，5G技术实力遥遥领先其它厂商。</span></p>
+<p><span><strong><span style="font-size: 16px;">二、同时搭载两款7纳米处理器麒麟980和巴龙5000</span></strong></span><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">不同于国内其它手机厂商，华为的麒麟手机芯片是基于ARM公版架构自主研发的，这一直是华为手机抗衡其它品牌的一张“王牌”。</span></p>
+<p><span style="font-size: 16px;">华为麒麟980基于4＊A77＋4＊A55的八核心设计，7纳米工艺制造，最高主频高达2．8GHz。麒麟980搭载寒武纪1M的人工智能NPU，也就是该芯片将是华为第二代人工智能芯片，更加擅长处理视频、图像类的多媒体数据。</span></p>
+<p><span style="font-size: 16px;">麒麟980芯片发布后一个月，华为旗舰机Mate 20上市，搭载的正是这款芯片，今天，华为 Mate20 X 再次搭载麒麟980。</span></p>
+<p><span style="font-size: 16px;">基带芯片有多重要想必不用多说了，苹果刚刚还花了十亿美金收购英特尔的基带业务，就是为了这款芯片的核心技术。一款手机终端中最重要的核心是射频芯片和基带芯片，其中射频芯片负责射频收发、频率合成、功率放大，而基带芯片负责信号处理和协议处理，可以毫不夸张的说，基带芯片就是手机处理器的左臂右膀，作用太大了。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190727/8d8751d6c10547f09cac17cf2b5f4f02.jpeg" /></p>
+<p><span style="font-size: 16px;">一般情况下，设计基带芯片需要CPU处理器、信道编码器、数字信号处理器、调制解调器和接口模块，巴龙5000是华为研发的5G基带芯片，在2019年1月24日发布，华为 Mate20 X搭载了巴龙5000基带芯片。据华为介绍，巴龙5000采用单芯片多模的5G模组，能够在单芯片内实现2G、3G、4G和5G多种网络制式，有效降低多模间数据交换产生的时延和功耗，全球率先支持NSA和SA组网方式，这也是为啥华为 Mate20 X 的双组网技术如此牛掰。</span></p>
+<p><span style="font-size: 16px;"><strong><span>5G基础技术为华为手机“赋能”</span></strong></span><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">强大的5G技术是华为手机崛起的关键，据华为高层表示，截至6月底，华为在全球已经签订了50个5G的商用合同，累计发货数量15万个基站。华为重研发早就不是什么新闻，华为2018年整年的研发投入就高达1015亿元，位列全球第五。仅在5G的研发上就已投入超过20亿美元。在专利技术上，华为为3GPP 5G标准贡献的提案超过18000件，5G基本专利遥遥领先竞争对手。</span></p>
+<p><span style="font-size: 16px;">华为的5G技术上不断创新和突破，也在不断地取得新的成果。2016年，华为的Polar Code方案，被确定为5G控制信道eMBB场景编码最终方案，这也成为中国企业在通讯核心技术话语权上零的突破。</span></p>
+<p><span style="font-size: 16px;">华为在2018年初即推出的5GNR产品顺利通过欧盟专业认证机构的认证核查，获得全球第一张5G产品欧盟无线设备指令型式认证证书。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190727/f110fab794774b32bcfa0172fd3cb0e9.jpeg" /></p>
+<p><span style="font-size: 16px;">2018年6月，华为发布了中国5G技术研发试验第三阶段测试结果，华为成为首家完成基于3GPP R15国际标准的5G非独立组网测试和独立组网功能测试，并在测试中实现了各项性能最优。</span></p>
+<p><span style="font-size: 16px;">5G不是简单的网络升级换代，而是全方位的重新构建，5G网络将是一个开放的、软件可定义的架构，它的应用广阔，如车联网、物联网、通讯等，它们都需要稳定的5G技术。目前5G的商业试点已经在全球很多城市启动，5G对于华为而言是一次重大机遇和挑战。</span></p>
+<p><span style="font-size: 16px;"><strong><span>5G手机的发布将是华为新起点</span></strong></span><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">2018年第二季度，华为超越苹果，成为全球第二大智能手机制造商，今年上半年全球智能手机出货量超过9500万部。前不久，任正非对媒体表示，2019年华为智能手机出货量预计达到2．7亿部，这是一个力争全球第一手机销量的数字，可见华为的野心有多大。</span></p>
+<p><span style="font-size: 16px;">很多专家表示，2019年是5G商用的元年，对于国内的手机厂商而言，先入为主的策略肯定是非常有效的，华为抢先于友商发布5G手机，可见它的实力和机智，未来，将有更多5G手机出现，5G这块大蛋糕谁都不会放过，这是一个充满着硝烟味的主战场。</span></p>
+➜华硕 ROG2 | 天马独供120Hz AMOLED屏幕，打造游戏行业标杆
+http://www.sohu.com/a/329612646_159067	29495
+<p style="text-align: center;"><span style="font-size: 16px;">来源 ：天马</span></p>
+<p><span style="font-size: 16px;">7月23日下午，期待已久的华硕ROG 2旗舰手机正式发布，作为专业主打电竞市场的手机品牌，ROG 2此次的配置可谓是相当强悍，其不仅在外观打造更完美的旗舰，还通过更强化的设计来满足完美的使用体验。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190727/9d2acb43793e44daaf6d7631fee2da05.jpeg" /></p>
+<p><span style="font-size: 16px;">外观上，ROG 2采用上下对称的全面屏方案，额头下巴形似对称式的扬声器开孔，还配备了一个1300万像素的自拍摄像头和双后置摄像头系统，闪光灯也有所升级，独有的logo和RGB灯证明其游戏定位的与众不同。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190727/dc600b502be64c5c8327072c0589a2b0.jpeg" /></p>
+<p><span style="font-size: 16px;">配置上，ROG 2采用主频高达2.95GHz的骁龙855plus平台，有8/12+128/256/1T存储版本可供选择，另外，还内置了6000mAh电池和指纹传感器。ROG2还保留了双立体声扬声器，3.5毫米耳机孔和侧面的传感器、定制接口。</span></p>
+<p><span style="font-size: 16px;">ROG 2的游戏配件亮点十足，但最大的亮点还属此次搭载的AMOLED屏幕。据了解，本次ROG 2采用了6.59英寸1080p分辨率的AMOLED显示屏，拥有120Hz刷新率和240Hz触摸采样率，反应时间只要1ms。华硕还在发布会上强调，ROG 2的49ms的触摸延迟是所有手机中最低的。</span></p>
+<p><span style="font-size: 16px;">同PC一样，手机游戏画面也是由GPU输出面，再由手机屏幕呈现。玩家们非常看重的FPS，是指在游戏中通过GPU每秒输出的画面更新次数，这是衡量显示性能强弱的重要指标之一。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190727/7fdf00ca85f94e1190cec6cae4b41c04.jpeg" /></p>
+<p><span style="font-size: 16px;">众所周知，目前市面上大部分产品的屏幕刷新率一直以来都维持在60Hz，虽然已有少量机型屏幕刷新率已经达到90Hz，但显然相比ROG2游戏手机的120Hz的频率刷新率依旧有着一定的差距。此外，ROG2手机屏幕在色彩方面还可以提供10-bit HDR规格，华硕还表示，每一片面板在出场时都做过色彩校准。可以说ROG2是市面上首个搭载此AMOLED屏幕规格的手机，有望带来全球最快且色彩最准确的屏幕表现。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190727/310e800316ca4986957c35bc5948f15e.jpeg" /></p>
+<p><span style="font-size: 16px;">据悉，此规格AMOLED屏幕为武汉天马独供。天马与华硕一直保持着紧密合作关系，此前华硕的第一代游戏手机屏幕也由天马供应。此次，双方在之前的合作基础上继续深化，为打造电竞手机行业里的里程牌，双方合力研发了此款规格的AMOLED屏幕，而就此配置而言，ROG 2完全不逊色于任何游戏手机。</span></p>
+<p><span style="font-size: 16px;">面对未来，充满魄力的ROG已经首开行业先河，全力打造全新电竞生态链；不忘初心，以玩家的游戏体验为最高需求，同时推动游戏手机行业的全面繁荣！</span></p>
+➜友达 | Q2净损26.8亿新台币，中小尺寸面板出货 3301 千万片
+http://www.sohu.com/a/329612738_159067	29495
+<p style="text-align: center;"><span style="font-size: 16px;">来源 ：钜亨网</span></p>
+<p><span style="font-size: 16px;">面板大厂友达7月25日召开在线法说，<span style="font-size: 16px;">公布2019年第二季合并财务报表(1)。</span><span style="font-size: 16px;">总计2019年第二季合并营业额为新台币700.7亿元，较2019年第一季增加5.0%。</span><span style="font-size: 16px;">第二季归属母公司业主之净损为新台币26.8亿元，基本每股损失(2)则为新台币0.28元。</span></span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190727/c0244e75543248b2b0010165d0db7656.jpeg" /></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190727/1371bb10140547048923fc26fee91508.jpeg" /></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190727/98b5c36077b647158e92e2d1cfcdc98b.jpeg" /></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190727/8a88fedd55fd4a41b924bc6a69ea040d.jpeg" /></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190727/675c81fc638443f6b3e33895aaffaf9c.jpeg" /></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">2019年第二季大尺寸面板(3)出货量约2,717万片，较2019年第一季增加5.0%。2019年第二季中小尺寸面板出货量约3,301万片，与2019年第一季相比增加32.2%。</span></span></p>
+<p><span><strong><span style="font-size: 16px;">友达光电2019年第二季合并财务报表摘要：</span></strong></span><span style="font-size: 16px;"></span></p>
+<ul>
+<li>营业额为新台币700.7亿元</li>
+<li>营业净损为新台币34.2亿元</li>
+<li>归属母公司净损为新台币26.8亿元</li>
+<li>基本每股损失(2)为新台币0.28元</li>
+<li>毛利率为2.8%</li>
+<li>营业净损率为4.9%</li>
+<li>EBITDA(4)获利率为8.1%</li>
+<li>显示器事业单位营业净损率为4.8%</li>
+<li>显示器事业单位EBITDA(4)获利率为8.4%</li>
+</ul>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">回顾第二季，产业供需仍然失衡的情况下，公司获利表现不尽理想。但公司积极调整产品组合及提升生产效能，使单季营收较上季成长5.0%，亏损幅度也较上一季缩小。财务结构方面，库存天数36天，净负债比13.6%，仍维持在相对健康的水位。</span></span></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">展望第三季，受总经不确定性因素影响，客户的旺季备货需求并不明确。公司将密切关注市场变化，并随时做好满足客户需求准备。面对产业逆风，公司一方面提升高附加价值及非消费型产品比重，另一方面持续推动软硬整合及场域经济，以强化友达的企业竞争力，并追求稳健营运为目标。</span></span></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;"></span><span style="font-size: 16px;"></span>友达总经理蔡国新表示，第 2 季面板需求在非消费用面板需求强劲带动下，整体产品单价将提高，成为营收成长动能，预期本季在高阶手机、开学季、非消费型面板需求带动下，中小尺寸面板销量将有 5% 以上成长。</span></p>
+<p><span style="font-size: 16px;">中小尺寸面板方面，蔡国新预期，由于高阶手机进入换机潮、CPU 缺货问题逐渐缓解，加上 9 月开学季的销售热潮，将带动商用与电竞笔电需求提升，预估本季销售将有超过 5% 的成长。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190727/950266579991435483f7edc794bc81a2.jpeg" /></p>
+<p style="text-align: center;">图左为友达董事长彭双浪，右为总经理蔡国新 （图片来源：钜亨网）</p>
+<p><span style="font-size: 16px;">大尺寸面板方面，蔡国新表示，估本季销售成长幅度不大，但 75、85 吋等大尺寸销售，将较去年同期成长，也预告未来将会推出支援 8K 的 85 吋面板。</span></p>
+<p><span style="font-size: 16px;">友达第 2 季大尺寸面板出货 2717 万片，季增 5%，中小尺寸面板出货 3301 千万片，季增 32%。从各产品营收占比来看，电视产品因终端需求减少，占比达 36%、季减 3 个百分点，荧幕产品方面为 15%、季减 2 个百分点，笔电与手机则增加 2 个百分点至 26%，其他产品则为 23%，季增 3 个百分点。</span></p>
+<p><span style="font-size: 16px;">以地区来看，蔡国新指出，北美地区出货连续 5 季正成长，东欧受惠数位讯号转换增加需求，越南销售也持续成长；中国市场虽然为负成长，但 65 吋以上大面板销售额创新高。</span></p>
+<p><span style="font-size: 16px;">面对大环境变化，董事长彭双浪表示，虽然贸易战稍微缓解，但整体不确定性仍在，台厂短期可能受惠转单，但长期恐造成产业链重构；而由于中国面板产能持续开出，供过于求情况估会持续几年，将随市场需求与价格，调整产线稼动率，并拓展客户服务、客制化、医疗与循环经济领域等多样化经营。</span></p>
+<p><span style="font-size: 16px;">产品技术方面，彭双浪表示，去年推出应用于 14 吋 mini LED 的电竞笔电面板，将于年底出货。LCD 屏下指纹技术已研发完成，正与客户洽谈中；3.5 代印刷 OLED ，则仍处于研发阶段。</span></p>
+<p><span style="font-size: 16px;">彭双浪指出，虽然贸易战可能带来短期转单效应，但长期来看可能破坏全球产业分工，不仅效率降低，还有可能造成成本提高，而现阶段美中贸易战尚未结束，日韩、美欧之间又传出贸易争端，对于产业未来发展将是一大冲击， 就面板产业来看，彭双浪表示，今年受贸易战影响，整体需求比产业原先预估还要来的低，加上中国厂商的新产能持续开出，造成供过于求现象更加严重，预估产业供过于求将成为常态，状况还将持续好几年。</span></p>
+<p><span style="font-size: 16px;">彭双浪表示，现阶段供过于求现象，加上客户拉货状况不平均，对于先前开出新产能的厂商来说比较辛苦，不过友达已经提前做好准备，往多元化发展，而产业供过于求状态何时缓解，他表示，一切仍需观察供需市场，需求何时回升、中国厂商是不是放缓投资而定。</span></p>
+<p><span style="font-size: 16px;">展望未来，彭双浪表示，大环境不确定性仍大，目前仍审慎看待下半年表现，在客户端或制造端都积极准备，以因应客户急单需求，未来也将提升非消费型及高端产品比重，拓展多元服务。</span></p>
+➜苹果 | 10亿美元入局5G喜提17000项专利，Intel挥别9年基带业务
+http://www.sohu.com/a/329699044_159067	29495
+<p style="text-align: center;"><span style="font-size: 16px;">来源 ：EDN</span></p>
+<p><span style="font-size: 16px;">苹果正式宣布，已同意收购英特尔智能手机调制解调器部门的相关业务。根据声明，苹果收购了英特尔大概17000份无线和射频专利，共计2200名英特尔5G基带部门员工将加入苹果。苹果为英特尔的员工、知识产权和其他设备支付总计10亿美元，预计将在今年第四季度完成该重大交易。</span></p>
+<p><span style="font-size: 16px;">今年早些时候，苹果曾与高通达成和解，并签订六年友好协议。所以不出意外的话，明年以及随后几年的iPhone，高通仍然是苹果5G 基带芯片的主要供应商。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190727/0e2f325f555f4b3e84b223722d3be961.jpeg" /></p>
+<p><span style="font-size: 16px;">但根据上游产业链人士分析，到2021 年所有iPhone 均开始支持5G。同时，苹果将在2022 年至2023 年之间推出自研的5G 调制解调器，以减少对高通的依赖。</span></p>
+<p><span style="font-size: 16px;">事实上相比Android 阵营对于5G 的热情，苹果方面的态度却不慌不忙。早些时候已有消息称，苹果已经决定不在2019 年推出5G iPhone，而是推迟到至少2020年。</span></p>
+<p><span style="font-size: 16px;">相关行业人士表示，苹果将遵循它在采用3G和4G无线技术时的策略，等到早期用户使用这项技术一年之后再提供5G iPhone。但“5G 支持者”们认为，苹果的决定“风险很大”。</span></p>
+<p><span style="font-size: 16px;">然而从目前的情况来看，苹果并非毫无准备，在今日决定收购英特尔5G团队之前，就已经于二月份挖来了英特尔首席5G芯片工程师，负责搭建自己的手机射频团队。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190727/461860c41b724079bd030a974fb7a86b.jpeg" /></p>
+<p><span style="font-size: 16px;">另外据彭博社消息，苹果还从ARM挖来了芯片大牛Mike Filippo。有趣的是，他是高通骁龙855中A76大核的主导设计师，已在ARM工作十年，之前曾任职英特尔与AMD。</span></p>
+<p><span style="font-size: 16px;">所以可以发现，苹果在5G人才方面的布局其实早在暗度陈仓。这么来看，现在全盘收购英特尔5G芯片团队也是顺水推舟的事情。</span></p>
+<p><span style="font-size: 16px;">然后来给大家讲讲苹果基带简史，从中或许可以窥探出，为何在中国5G飞速发展之际，作为智能手机的开山鼻祖却在这方面放慢了脚步。</span></p>
+<p><span style="font-size: 16px;">什么是基带？就是你手机里负责走流量的那个通信模块，当然也用来打电话发短信啥的。手机信号好不好就看它了，另外跟天线设计也有关系。</span></p>
+<p><span style="font-size: 16px;">iPhone XS、XS Max、XR 这代产品全系搭载Intel 基带（XMM 7560），信号饱受诟病。这篇文章主要来聊聊iPhone 基带发展史。</span></p>
+<p><span style="font-size: 16px;">前三代iPhone 均采用英飞凌基带，这家公司的无线通信业务后来被Intel 收购了，可以看作是Intel 基带业务前身。</span></p>
+<p><span style="font-size: 16px;">在iPhone 4 上，高通加入基带供应商名单，但英飞凌还是占大头。然而就在Intel 收购之后，不知道出于什么原因，iPhone 4S 开始全部换用高通基带。</span></p>
+<p><span style="font-size: 16px;">比如iPhone 6 全网通，采用高通MDM 9625 基带芯片。直到iPhone 7，出于双供应商策略分为两个基带版本，高通MDM9645 和Intel XMM 7360。</span></p>
+<p><span style="font-size: 16px;">但相关测试数据显示，高通基带芯片优于Intel。随后的iPhone 8 同样采用双版本基带，这些信息是明确告知消费者的，网上也有一些区分基带版本的方法。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190727/504d2a5215cd49e080ceb861bde488d1.jpeg" /></p>
+<p><span style="font-size: 16px;">后来Apple 跟高通打官司，2018 年三款iPhone 均采用Intel 基带XMM 7560，基于14nm 制程工艺。可以看到，押宝Intel 并不完全是因为技术好，里面有制衡高通的战略成分。</span></p>
+<p><span style="font-size: 16px;">不出意外的话，2019 年即将到来的iPhone 新品仍然会采用Intel 基带（XMM 7660），不过也不排除后期生产加入高通基带版本。</span></p>
+<p><span style="font-size: 16px;">苹果一面跟高通友好协商解决短期内的5G基带问题，另一方面也在韬光养晦布局自主研发5G Modem。至于iPhone 5G能不能“后发制人”，可能要等到明年9月秋季发布会才能见分晓了。</span></p>
+<p><span style="font-size: 16px;">事实上，5G芯片不单单只是调制解调器硬件本身，可以说这代表着下一个万物互联时代的基础性战略知识产权。谁能抢先一步占领高地，或许将拥有下个十年的更多可能性优势。</span></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190727/ad145b95f2e94e61b0bee927524138d2.jpeg" /></p>
+<p><span style="font-size: 16px;">通过所获得的当前和未来的无线技术专利，加上Apple现有的专利组合，Apple将拥有超过17000项无线技术专利，涵盖从蜂窝标准协议到调制解调器架构和调制解调器操作等方面。英特尔将保留为非智能手机应用开发调制解调器的选择，例如针对个人电脑、物联网设备和自动驾驶汽车。</span></p>
+<p><span style="font-size: 16px;">英特尔首席执行官司睿博（Bob Swan）表示：“这项协议使我们能够专注于开发5G网络技术，同时保留我们团队创造的关键知识产权和调制解调器技术。我们期待着全力以赴投身于5G，使其最符合我们全球客户群的需求，包括网络运营商、电信设备制造商和云服务提供商。”</span></p>
+<p><span style="font-size: 16px;">Apple公司硬件技术高级副总裁约Johny Srouji则表示：“Apple很兴奋有这么多优秀的工程师加入我们日益壮大的蜂窝通信技术事业部。与我们对创新性知识产权的重要收购一道，他们的加入将有助于加快我们面向未来开发产品，推动Apple能够进一步脱颖而出。”</span></p>

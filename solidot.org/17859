@@ -1,0 +1,18 @@
+➜斯塔西忧心的监视玩游戏的青少年
+https://www.solidot.org/story?sid=58706	42984
+1988 年 1 月 6 日东柏林 Kloster Strasse 的一栋建筑物，几十名计算机俱乐部的年轻人聚集在一起，他们大多数年龄在 20 岁左右，最小的只有 16 岁。类似的计算机俱乐部在东德还有很多，仅仅柏林一地就有大约 20 家。大多数出席俱乐部的人都是对计算机充满热情和好奇，但还有一些人不是，他们肩负着使命，他们有理由担心，因为这里的计算机都是不是东德生产的，它们全部来自西方。<br>
+<br>
+虽然西方的计算机设备被禁止出口给东德等华约国家，但人们总是能想方设法买到西方流行的计算机，比如 80 年代畅销的计算机是 Commodore 的 C 系列。这家俱乐部的创办人是 Stefan Paubel，当时 34 岁，他试图在俱乐部里介绍图形编程，然而来这里的人多数是为了玩游戏，这些游戏也都来自西方。1 月 6 日的聚会中有一位访客不是来玩游戏而是来观察的，他将观察结果写成文件递交给了国家安全部或我们称之为斯塔西（Stasi）。三十年后的今天，我们可以通过这些文件了解到<a href="https://www.zeit.de/digital/games/2018-11/computer-games-gdr-stasi-surveillance-gamer-crowd/komplettansicht" target="_blank"><u>斯塔西对玩西方游戏的年轻一代的看法</u></a>，以及他们的担忧。<br>
+<br>
+斯塔西的官员编写了名叫 Operational Information 的备忘录，他们大约是在 1980 年代中期开始监视计算机俱乐部，备忘录的部分描述透露了斯塔西对即将来临的信息时代的深刻见解，官员指出虽然计算机俱乐部的成员只是交流硬件和软件，但来自“非社会主义经济区”也就是西方的软件可能会将病毒引入到东德的计算机网络进行破坏，病毒感染这种现象当时还鲜为人知。官员还指出，俱乐部的成员有很多对社会主义国家和社会次序持消极态度，因此可能导致整个计算机俱乐部走向消极。斯塔西的官员还对通过拨号系统不受控的传输信息发出了警告，认为未来软件的传播不再需要物理媒介，无法在入境处拦截。由于部分西方游戏是以东德等华约组织为攻击对象的，一些计算机俱乐部为了避免惹麻烦而禁止此类游戏。斯塔西的备忘录列出了他们监视的计算机俱乐部的名称，还有成员们玩的数百款游戏的名字。<br>
+<br>
+有意思的一点是俱乐部成员拷贝游戏并没有违反法律，因为东德的版权法不保护软件，法庭曾裁定软件既不是科学作品也不是创造性成就。当柏林墙在一年后倒塌，东德在不到两年时间里瓦解之后，这些曾经自由交换游戏软件的计算机俱乐部成员感受到第一次资本主义文化冲击就是拷贝游戏变成了违法。
+➜中国透露 Exascale 超算系统细节
+https://www.solidot.org/story?sid=58707	48760
+中国高性能计算重点研发专项总体组组长钱德沛在 SC18 会议上<a href="https://www.top500.org/news/china-spills-details-on-exascale-prototypes/"><u>透露了</u></a>正在部署的三个 Exascale 级超算系统的细节。三个新超算分别为曙光、天河和神威，计划中的峰值性能 1  exaflop，最小内存容量 10 PB，节点到节点带宽 500Gbps，每节点功耗 30 gigaflops/watt。其中曙光的原型采用了 AMD 授权的 Hygon x86 CPU 和加速器，每个节点包含 2 个 Hygon x86 CPU 和 2 个 Hygon DCU（加速器），原型包含 512 个节点，目前的配置只使用了一半的 DCU ，峰值性能 3.18 petaflops。天河原型安装在天津超算中心，目前所知不多，它依旧笼罩在神秘之中，其处理器可能是基于 ARM 架构，包含 512 个节点，峰值性能 3.14 petaflops。神威原型使用 260 核的申威 26010 处理器，该处理器目前被用于神威太湖之光，每个节点使用 2 个处理器，512 个节点的性能 3.13 petaflops，每节点功耗仅为 11 gigaflops/watt。
+➜Google 和 Mozilla 开发 Writable Files API 让 Web 应用能编辑文件
+https://www.solidot.org/story?sid=58708	55237
+Google 和 Mozilla 的开发者正领导开发名叫 Writable Files API，旨在让 Web 应用能编辑用户文件，无需每次编辑后需要下载新文件。但该 API 所赋予的能力可能很容易被滥用，因此引发了<a href="https://tech.slashdot.org/story/18/11/23/2118225/google-mozilla-working-on-letting-web-apps-edit-files-despite-warning-that-it-could-be-abused" target="_blank"><u>安全方面的担忧</u></a>。Writable Files API 由 W3C Web Incubator Community Group (WICG)开发，项目负责人是  Chrome  和 Firefox 浏览器的开发者，它允许运行在浏览器上的 Web 应用能打开一个文件，编辑，然后保存变化到原文件。该 API 面临的最大挑战不是技术方面的而是安全方面的，它需要防止恶意网站滥用访问用户系统上的文件的功能。
+➜新 Linux 挖矿程序会窃取 Root 密码
+https://www.solidot.org/story?sid=58709	59764
+俄罗斯杀毒软件公司  Dr.Web <a href="https://www.zdnet.com/article/new-linux-crypto-miner-steals-your-root-password-and-disables-your-antivirus/"><u>发现了</u></a>被称为  Linux.BtcMine.174 的木马，比传统的恶意程序更复杂，包含了大量恶意功能。它本身是一个巨大的 shell 脚本，有超过 1000 行代码，感染之后的第一件事是寻找具有写入权限的脚本，将自己拷贝进去，然后下载更多恶意模块。它会利用 CVE-2016-5195 (ak Dirty COW) 和  CVE-2013-2094 两个提权漏洞获取 root 权限，完全访问操作系统。这两个漏洞都是几年前的了，因此影响的是没有打补丁的 Linux 系统。Linux.BtcMine.174 的主要恶意功能是挖掘数字货币门罗币，它会扫描进程寻找竞争的挖矿脚本将其进程终止，它的另一个恶意功能是 DDoS 攻击，攻击模块叫 Bill.Gates trojan。它还会关闭 Linux 杀毒软件。

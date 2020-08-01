@@ -1,0 +1,78 @@
+➜BioWare创始人声称开发AAA级游戏是“低劣的目标”
+https://www.solidot.org/story?sid=18944	6600
+BioWare联合创始人Greg Zeschuk在英国举行的游戏开发者峰会上称，创作一款AAA级游戏（即高预算的作品）<a href="http://games.slashdot.org/story/10/07/15/0656248/BioWare-On-Why-Making-a-Blockbuster-Game-Is-a-Poor-Goal">对
+开发者来说是一个“低劣的目标”</a>。<i>
+今日的大多数游戏开发者都想参与开发一款游戏大作，但实际上这是错误的追逐目标。因为巨额投资令发行商和投资人越来越不愿意冒险，结果是创新和创造力的枯竭和停顿。市场会淘汰最低等的作品，接着是中庸的作品，除非你能在任何时间位于顶端，否则一款AAA级游戏并不能赚钱。《质量效应》和《龙腾世纪》的游戏工作室创始人鼓励开发者重新思考游戏企业的文化。</i>
+➜Mozilla Sniffer恶意扩展是如何发现的
+https://www.solidot.org/story?sid=18945	7680
+Mozilla官方博客<a href="http://blog.mozilla.com/addons/2010/07/13/add-on-security-announcement/">宣布</a>移除一款恶意的扩展程序和一款有严重安全漏洞的扩展。名叫“Mozilla Sniffer”的扩展于6月6日上传到addons.mozilla.org，它能拦截任意网站的登录信息，并将数据发送给攻击者。Mozilla Sniffer的下载次数大约1800次，Mozilla建议下载的用户尽快修改密码。<i>
+该恶意扩展是Johann-Peter Hartmann<a href="http://news.netcraft.com/archives/2010/07/15/firefox-security-test-add-on-was-backdoored.html">最早报告的</a>，他在登录进一个游戏时注意到一个不寻常的HTTP请求，将他的用户名、密码和登录的网址发送到了一个远程服务器。他怀疑与自己最近安装的扩展程序有关，他提取了扩展程序的源代码，惊讶的在一个流行的安全测试扩展<a href="https://addons.mozilla.org/en-US/firefox/addon/966/">Tamper Data</a>中发现了后门代码，但真正的黑手是Mozilla Sniffer，它与Tamper Data共享了UUID，覆盖了Tamper Data的部分文件。<a href="http://news.slashdot.org/story/10/07/15/1223234/How-the-Mozilla-Sniffer-Backdoor-Was-Discovered">换句话说</a>，恶意扩展并非是通过代码审议流程发现，而是无意间发现的。 Mozilla正在研究新的<a href="https://forums.addons.mozilla.org/viewtopic.php?f=19&amp;t=1134&amp;p=3158">安全模式</a>，以防止此类事情再次发生。</i>
+➜英国石油声称已堵住墨西哥湾漏油
+https://www.solidot.org/story?sid=18946	8400
+英国石油公司BP<a href="http://www.nytimes.com/2010/07/16/us/16spill.html?_r=4&amp;src=mv">宣布</a>，它已经暂时<a href="http://www.bbc.co.uk/zhongwen/simp/world/2010/07/100715_bp_cap.shtml">堵住了漏入墨西哥湾的原油</a>。
+<i>
+这是自从4月20日“深水地平线”钻井平台爆炸以来，首次堵住漏油。BP刚刚更换了罩在爆炸受损井口的巨型堵漏盖，新堵塞盖的安全测试可能长达48小时。BP官员称，当地时间下午14点25分漏油被完全堵住。但他也强调说，即使48小时内没有漏出任何原油，并不意味着这口油井可以永久性封住油气泄露。该公司还将测试这口油井内部的压力。如果堵塞盖里油井上部的压力低，那就意味着油井更深处仍在漏油。</i>
+➜Hulu视频广告观看次数为YouTube两倍
+https://www.solidot.org/story?sid=18947	9120
+<a href="http://www.hi2020.com/">书评客</a> 写道<i> "TechCrunch<a href="http://techcrunch.com/2010/07/15/comscore-hulu-video-ads-are-viewed-more-than-twice-as-much-as-youtube-ads/">报道</a>，美国市场调研机构comScore于当地时间周四公布6月份美国视频网站调查报告。报告显示6月份美国收看在线视频人数为1.77亿，比5月份1.83亿人数略有下降。其中84.6%美国网民在6月份曾收看在线视频。此外报告还显示Hulu视频广告观看次数排名第一，为YouTube两倍。
+谷歌旗下YouTube 6月份独立用户数为1.445亿，排名第一；雅虎网站以4490万视频用户排名第二；排名第三的Vevo则拥有4370万用户。此外，谷歌视频观看次数达到18亿，平均每一用户视频观看时长达到261分钟（约4.3小时），排名首位。Hulu视频网站平均每一用户观看时长也达到135分钟（约2.2小时）。"</i>
+➜唐骏“学历门”
+https://www.solidot.org/story?sid=18948	9300
+《华尔街日报》<a href="http://cn.wsj.com/gb/20100716/bch093632.asp">报道</a>，微软中国前高管唐骏被指文凭作假，在中国引起人们对专家所谓的学术背景欺诈泛滥现象的热议。<i>
+一家风险咨询公司的驻香港高级董事总经理称，在一定程度上伪造学历的原因是由于中国及亚洲其它地区的雇主过分关注候选员工毕业院校的声望，却较少注意评估他们的经历，再加上中国相对易于购得非法文凭的环境，造成简历欺诈的现象在中国比在其它地方更为普遍。揭露唐骏文凭作假的方舟子说，中国的简历欺诈率比其它地方更高，他说他以唐骏为目标是因为唐骏不是个普通的商人，他是年轻人的偶像。由于他的报料，中国社会缺乏诚信的问题受到广泛讨论，这难道不是社会在朝着更健康的方向发展吗？唐骏“母校”西太平洋大学和校友们也因为此事而<a href="http://magazine.caing.com/2010-07-11/100159756.html">被深度曝光</a>。</i>
+➜openSUSE 11.3发布
+https://www.solidot.org/story?sid=18949	11280
+openSUSE项目<a href="http://lwn.net/Articles/396189/">宣布</a>发布<a href="http://wiki.opensuse.org/Portal:11.3">openSUSE 11.3</a>。<i>
+新版包括了大量新特性，支持32位和64位系统，主要新特性包括：<a href="http://wiki.opensuse.org/SpiderOak">SpiderOak</a>支持通过互联网同步文件（免费使用空间2 GB）；支持Android、iPhone和黑莓手机等智能手机同步；支持上网本；支持 Btrfs文件系统；改进包管理工具zypper；改进Tracke索引功能；音频文件编辑工具Rosegarden；轻量级LXDE桌面环境。其它软件方面的更新包括：Linux 2.6.34；Alsa 1.0.23；X.org 7.5，xserver 1.8；GNOME 2.30；KDE SC 4.4.4；KMS默认支持ATI、Intel和Nvidia显卡；默认IM Empathy等等。openSUSE11.4将在2011年3月发布。</i>
+➜新西兰将立法规定软件不受专利保护
+https://www.solidot.org/story?sid=18950	15840
+<a href="http://www.goozo.net/">Rinick</a> 写道<i> "专利存在的目的应该是保护创新，但在软件行业，专利却更多起着相反的作用。现在，<a href="http://www.nzcs.org.nz/news/blog.php?/archives/97-.html">新西兰正准备立法使软件不被专利保护</a>，一旦这项法律被通过，任何关于软件的专利保护在新西兰将不起作用。新西兰的软件公司和软件开发者都相信，这将对他们的软件创新有极大的促进作用。"</i>
+➜黑帽安全会议中国网军主题演讲被取消
+https://www.solidot.org/story?sid=18951	18000
+台湾安全公司Armorize的CTO Wayne Huang原计划在本月末拉斯维加斯举行的黑帽安全会议上发表<a href="http://blackhat.com/html/bh-us-10/bh-us-10-briefings.html#Huang">关于中国网军的主题研究</a>，他试图通过回顾2001年到2009年之间中国网军的种种行动，根据取证和调查的数据还原网军的真实面貌，梳理出网军的成员结构，所在地点、攻击目标、资金、组织、流程、活跃时间、以及所用工具和技术。然而现在演讲<a href="http://yro.slashdot.org/story/10/07/15/1530225/Talk-On-Chinese-Cyber-Army-Pulled-From-Black-Hat">已经被迫取消</a>，Armorize联合创始人Caleb Sima在Twitter上<a href="https://twitter.com/csima/status/18556608980">声称</a>，台湾政府鉴于敏感性而禁止这次演讲。
+➜讲述Facebook诞生故事的电影《社交网络》
+https://www.solidot.org/story?sid=18952	19200
+<a href="http://dongxi.net/">东西网</a> 写道<i> "继《本杰明·巴顿奇事》之后，大卫·芬奇新执导的以Facebook诞生故事改编的电影近日放出<a href="http://dongxi.net/b01sS">预告片</a>。《<a href="http://www.imdb.com/title/tt1285016/">社交网络</a>》剧本改编自据本·梅兹里奇即将于7月14日出版的新书《意外的亿万富翁：Facebook诞生史，一个关于性、钱、天才和背叛的故事》。主演之一是凯文·斯贝西。斯贝西本人在为这本书写的序言中这样说道：“你可能以为你知道Facebook现象背后的故事，但你从不了解整个故事完整的始末。在这本书中，本·梅兹里奇再现了全世界最红社交网络的崛起，以及地球上最年轻的亿万富翁马克·扎克伯格的发家史。这是一个非常吸引人的故事，内容涉及背叛和大笔财富——讲两个好朋友如何革命性地改变了全人类的沟通模式，最终却反目成仇。大卫·芬奇的上一部作品《本杰明·巴顿奇事》，曾斩获13项奥斯卡提名。<a href="http://dongxi.net/b01sS">点击这里</a>抢鲜观看《社交网络》预告片。"</i>
+➜自由软件社区如何吸引女性
+https://www.solidot.org/story?sid=18953	21360
+自由软件运动通常被认为是“男孩子”俱乐部，自由软件基金会（FSF）也在思考<a href="http://lwn.net/Articles/396174/">如何吸引女性参与这项运动</a>。<i>
+去年FSF举行了一个小型峰会探讨解决之道和可行之策。现在它正式向自由软件社区推荐了几项鼓励女性参与的切实可行的政策，包括：鼓励非代码的捐赠者；强调合作而不要强调竞争；恰当的进行指导；为女性参与自由软件会议提供旅游费用；向年轻女性提供自由软件工具，吸引女性使用流行的GNU/Linux发行版...</i>
+➜创纪录X射线暴短暂致盲天文望远镜
+https://www.solidot.org/story?sid=18954	23520
+至今观察到的最明亮X射线暴<a href="http://www.space.com/scienceastronomy/brightest-x-rays-blind-telescopes-100714.html">短暂致盲了NASA的天文望远镜</a>。
+<i>
+被称为GRB 100621A的天文事件发生在5亿年前，它于6月21日影响到NASA的Swift天文望远镜，是Swift望远镜自2005年正式服役以来观察到的最明亮X射线暴。Swift的探测器在短时间内测量到了每秒143,000个质子的冲击，它比天空最明亮的X射线源还要明亮百倍——中子星每秒只能持续释放10,000个质子。</i>
+➜科学家创造出抗疟疾蚊子
+https://www.solidot.org/story?sid=18955	24960
+每年有大约100万人死于疟疾，其中大部分是孩子，而蚊子是疟疾的最主要传播者。现在亚利桑那大学的研究人员<a href="http://www.medicaldaily.com/news/20100715/275/first-malaria-proof-mosquito-created-by-scientists.htm">创造出了一种不会将疟疾传播给人类的蚊子</a>。<i>
+研究人员创造的基因改造蚊子能对引发疟疾的寄生虫——名叫疟原虫的单细胞生物——免疫。他们用含有疟原虫的血液喂食改造过的蚊子，没有一个蚊子被疟原虫感染。</i>
+➜苹果、RIM、Google和联想都曾问价Palm
+https://www.solidot.org/story?sid=18956	26280
+根据<a href="http://www.businessinsider.com/apple-rim-google-hp-palm-2010-7">BusinessInsider的报道</a>，惠普公司只是众多竞购Palm的公司之一，包括苹果、RIM、Google甚至联想在内的多家公司<a href="http://apple.slashdot.org/story/10/07/15/2239228/Apple-RIM-Google-All-Bid-On-Palm">都曾经报价Palm</a>。比较有意思的是，不同公司对Palm的心思也不同，如RIM感兴趣的是Palm所持有的专利；苹果报价6亿美元现金，但没有进一步提价；而Google感兴趣的是知识产权，并无意愿收购；至于联想，则提出股权交换收购方案，但所需时间太过于漫长。
+➜东京地铁广告牌扫描观看者的年龄和性别
+https://www.solidot.org/story?sid=18957	27900
+东京地铁站树立的数字广告牌装备了摄像头，<a href="http://www.nation.co.ke/business/news/Tokyo%20trials%20digital%20billboards%20that%20scan%20passers%20by/-/1006/958406/-/7u9hirz/-/">能扫描路过观看广告的人的年龄和性别</a>，广告商通过分析不同地点的数据，可以优化他们的商业广告信息。
+<i>
+这项技术令人想起Philip K.Dick《少数派报告》小说改编的电影，它是数字标志牌推广计划的一部分，目前还处于测试阶段。由11家地铁公司组成的财团从上个月开始了为期一年的测试，他们在东京地铁车站设立了27个高科技广告牌。摄像头能区分一个人的性别和大致年龄，即使行人只是匆匆路过广告显示屏，只需要他们抬头看广告牌一秒钟时间就能分辨。</i>
+➜摩托罗拉禁止Droid X用户改动固件
+https://www.solidot.org/story?sid=18958	31500
+摩托罗拉<a href="http://lwn.net/Articles/396222/">决定</a>在Droid X和Droid 2手机中加入防止修改的“锁定”功能，如果用户利用民间Mod更新固件，<a href="http://yro.slashdot.org/story/10/07/15/1317205/Droid-X-Self-Destructs-If-You-Try-To-Mod">那么你的手机将变成砖头</a>。一些喜欢改造手机的用户对摩托罗拉的决定表达了强烈不满，呼吁不要购买Droid X手机。<i>
+根据Mydroidworld.com论坛的<a href="http://www.mydroidworld.com/forums/droid-x-discussion/3330-how-droid-x-locked-down-let-me-tell-you-what-i-know.html">讨论</a>，Droid X手机内置了“eFuse”芯片，会在开机时验证Firmware、内核和Bootloader是否为原版，如果验证失败eFuse将会失效，手机就会锁定，只有摩托罗拉才能解锁。</i>
+➜中国表示互联网安全第一
+https://www.solidot.org/story?sid=18959	32700
+《华尔街日报》<a href="http://cn.wsj.com/gb/20100716/rth160505.asp">报道</a>，中国互联网协会副理事长高新民周四在上海中国数字媒体峰会上<a href="http://www.isc.org.cn/">发言</a>，表示互联网首先要考虑的应该是安全问题。另外一篇《华尔街日报》的<a href="http://cn.wsj.com/gb/20100716/chw152407.asp">报道</a>称，门户网站搜狐周四关闭了上百个知名博客。其中一位被关闭博客的博主称他没有收到任何通知。周五北京还举行了一个<a href="http://www.google.com/search?hl=zh-CN&amp;source=hp&amp;q=%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AC%E5%8F%B8%E5%AE%89%E5%85%A8%E8%A7%84%E8%8C%83%E5%B7%A5%E4%BD%9C%E4%BC%9A%E8%AE%AE&amp;btnG=Google+%E6%90%9C%E7%B4%A2&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai=">安全规范会议</a>。
+➜关于大脑的经典科幻电影
+https://www.solidot.org/story?sid=18960	35520
+克里斯托弗·诺兰执导、莱昂纳多·迪卡普里奥主演的《盗梦空间（<a href="http://en.wikipedia.org/wiki/Inception_(film)">Inception</a>）》大受好评，烂番茄好评度<a href="http://www.rottentomatoes.com/m/1217219-inception/">84%</a>，IMDb用户评分高达<a href="http://www.imdb.com/title/tt1375666/">9.6/10</a>(2,763名投票者)。这部科幻动作惊悚片是关于虚幻和现实，关于大脑和梦境。《连线》网站编辑了过去上映的<a href="http://www.wired.com/underwire/2010/07/gallery-cerebral-sci-fi-films/all/1">与大脑有关的经典科幻电影荟萃</a>，它们多数是反乌托邦电影，包括：<i>
+《人类之子》，《<a href="http://en.wikipedia.org/wiki/Brazil_(film)">妙想天开（Brazil）</a>》，乔治卢卡斯的早期电影《<a href="http://en.wikipedia.org/wiki/Electronic_Labyrinth:_THX_1138_4EB">500年后(THX 1138)</a>》，《珍爱泉源（The Fountain）》，《<a href="http://en.wikipedia.org/wiki/The_Man_in_the_White_Suit">白衣男子（The Man in the White Suit）</a>》，《<a href="http://en.wikipedia.org/wiki/Eternal_Sunshine_of_the_Spotless_Mind">美丽心灵的永恒阳光</a>》，《<a href="http://en.wikipedia.org/wiki/Seconds_(film)">第二生命（Seconds）</a>》(1966年)，苏联电影大师Andrei Tarkovksy的1974年电影《<a href="http://en.wikipedia.org/wiki/Solaris_(1972_film)">飞向太空（Solaris）</a>》，《<a href="http://en.wikipedia.org/wiki/Sunshine_(2007_film)">太阳浩劫（Sunshine）</a>》，《月球（Moon）》，6万美元拍摄的《<a href="http://en.wikipedia.org/wiki/Pi_(film)">圆周率Pi</a>》，动画片《<a href="http://www.wired.com/underwire/2009/08/a-decade-later-the-iron-giants-weaponized-soul-still-stirs">钢铁巨人（The Iron Giant）</a>》，《<a href="http://en.wikipedia.org/wiki/The_Matrix_(franchise)">黑客帝国三部曲</a>》，《<a href="http://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(film)">2001太空漫游</a>》。"</i>
+➜中国将允许引进电影游戏等娱乐产品
+https://www.solidot.org/story?sid=18961	37500
+stranger ( @wmrofficial ) 写道 <i>"中美双方昨日表示，中国同意遵循世界贸易组织WTO的裁决，于2011年3月19日以前对美进一步开放娱乐产品市场。美国曾诉讼中国对进口和分销书籍、音乐、电影和其他娱乐产品设置障碍。承诺履行WTO裁决意味着中国必须对美国电影、音像制品和图书产品的进口政策作出调整。在WTO的判决中，允许中国保留两家国有电影发行公司的进口权，并保护了中国政府对外国电影进行一定程度审查的权利，中方也无须提高每年引进20部外国电影的限额。但是，<a href="http://ent.southcn.com/8/2010-07/16/content_13847535.htm">中国将不得不允许美国及其它外国企业向中国引进电影、音乐、电游和图书</a>，并准许美中合资企业在互联网上分销音乐。 </i>我有一个问题，是不是这意味著当局将不能再审查进口音乐、电游和图书？"
+➜Twitter显示美国人早上最快乐
+https://www.solidot.org/story?sid=18962	39900
+在Twitter上你可以分享很多事情，比如学到了什么，去了哪里，吃了什么，心情如何。那么，是否能根据Twitter上的海量信息去判断一个国家国民在一天中的心情分布？<a href="http://www.ccs.neu.edu/home/amislove/twittermood/">哈佛大学和西北大学的研究人员</a>就分析了3亿tweet，并据此制作了美国居民在一天不同时间段里的心情视频。<i>
+结果显示，美国人在一天中心情又多次大波动，有高潮也有低谷。其中<a href="http://idle.slashdot.org/story/10/07/15/1331227/Twitter-Says-Americans-Are-Happier-In-the-Morning">早晨6点是美国人一天中最快乐的时分</a>，而下午2点到4点情绪最差。根据一周的统计，美国人周末的心情比工作日的心情要好得多，原因当然显而易见。</i>
+➜Chrome Frame提供MSI安装包下载
+https://www.solidot.org/story?sid=18963	48300
+avstar 写道<i> "<a href="http://www.google.com/chromeframe">Chrome Frame</a> 是 Google 为了让 IE 浏览器能够使用 Chrome 内核渲染而打造的一款 IE 浏览器插件，可以让 IE 浏览器完美支持 HTML5、沙箱、JavaScript 等技术。此前安装 Chrome Frame 的方法一直只能通过 IE 浏览器访问 Chrome Frame 官方网站在线安装，对于网速不好的用户是一个很大的考验。最近，<a href="http://www.chromi.org/archives/6027">Chrome Frame 终于开始提供 MSI 格式的安装包下载了</a>。大家可以直接点击这里下载 Chrome Frame 的 <a href="http://www.google.com/chromeframe/eula.html?msi=true">MSI 安装包</a> ，然后在本地安装。</i>
+不过需要注意的是，目前仅仅针对 Chrome Frame Dev 分支提供了 MSI 安装包，也就是说如果通过这个安装包安装了 Chrome Frame 的话，内置在 IE 浏览器中的 Chrome Frame 插件是 Dev 分支的。还有一点需要说明的是虽然可以从本地安装，但还是必须有网络连接才可以完成，因为在安装的过程中会在线下载一个很小的文件。"

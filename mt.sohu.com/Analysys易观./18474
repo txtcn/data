@@ -1,0 +1,139 @@
+➜用户在点击广告后会发生什么？
+http://www.sohu.com/a/410800447_115326	41799
+<p></p>
+<h1><strong><span style="font-size: 16px;">文章摘要</span></strong></h1>
+<span style="font-size: 16px;"></span>
+<p></p>
+<p><span style="font-size: 16px;">当用户在搜索引擎搜索相关词条，会收到一些返回结果，以及一些付费的展示广告。大量研究虽然在理解用户与搜索的互动方面投入了大量的工作，但令人惊讶的是，很少有人研究广告被点击后会发生什么，而这正是本文的研究目标。</span></p>
+<span style="font-size: 16px;"></span>
+<p><span style="font-size: 16px;">为此，我们定义并研究了上下文环境比变化的过程，即用户从 Web 搜索到结果在点击后的登录页面上下文的转换。我们得出的结论是，在绝大多数情况下，用户会看到三种类型的页面之一，即主页(广告商的主页)、类别浏览(与原始查询相关的可浏览的子目录)和搜索转移</span><span style="font-size: 16px;">(在目标站点上重新执行相同查询的搜索结果)。</span><span style="font-size: 16px;">我们使用自动文本分类器可以准确地区分这三种类型的登录页面。</span><span style="font-size: 16px;">最后，利用这种自动分类器，我们将登陆页面类型与广告主提供的转化率数据关联起来，并显示转化率(即转化率)。</span><span style="font-size: 16px;">(例如，用户对广告的回复率)根据广告类型的不同有很大差别。</span><span style="font-size: 16px;">我们相信，我们的研究结果将进一步了解用户对搜索广告的总体反应，特别是对登陆页面的反应，从而帮助广告商改进他们的网站，帮助搜索引擎选择最合适的广告。</span></p>
+<h1><strong><span style="font-size: 16px;">文章介绍</span></strong></h1>
+<p><span style="font-size: 16px;">本文将会研究付费搜索广告着陆页的转化率。在这种情况下用户通过某种关键词进行搜索，搜索引擎会展示与搜索内容相关的广告。一旦搜索结果被展示出来用户有会通过以下两种步骤成为购买者。</span></p>
+<p><strong><span style="font-size: 16px;">1、通过点击</span></strong><span style="font-size: 16px;">：一开始用户会通过点击广告而转到登陆页面，而搜索引擎将通过点击来收取广告公司的费用。一般情况下，广告客户为搜索引擎的每一次点击付费，这是每一次点击的成本或者 CPC 模式（见文后名词解释），这些广告通过查询被点击的频率被称作为点击率。</span></p>
+<span style="font-size: 16px;"></span>
+<blockquote>
+<p><span style="font-size: 16px;">名词解释：CPC (Cost Per Click;CostPer Thousand Click-Through) 每点击成本以每点击一次计费。这样的方法加上点击率限制可以加强作弊的难度，而且是宣传网站站点的最优方式。但是，此类方法就有不少经营广告的网站觉得不公平，比如，虽然浏览者没有点击，但是他已经看到了广告，对于这些看到广告却没有点击的流量来说，网站成了白忙活</span><span style="font-size: 16px;"><span style="font-size: 16px;">。</span></span></p>
+</blockquote>
+<strong><span style="font-size: 16px;">2、转化</span></strong>
+<span style="font-size: 16px;">：</span>
+<span style="font-size: 16px;">在这一个阶段，用户可能在广告商的网站上进行了一定的活动，转而成为了产品或者服务的买家。</span>
+<span style="font-size: 16px;">在某些情况下商家仅为转化率付费。</span>
+<span style="font-size: 16px;">为了强调“转换”可以是一般的行为，而不仅仅是传统的购买行为，这被称 CPA 模式。</span>
+<blockquote>
+<p><span style="font-size: 16px;">名词解释：CPA (Cost Per Action) 每次行动成本：CPA 计价方式是指按广告投放实际效果，即按回应的有效问卷或定单来计费，而不限广告投放量。CPA 的计价方式对于网站而言有一定的风险，但若广告投放成功，其收益也比 CPM 计价方式要大得多。广告主为规避广告费用风险，只有当网络用户点击旗帜广告，链接广告主网页后，才按点击次数付给广告站点费用。</span></p>
+</blockquote>
+<span style="font-size: 16px;">对搜索引擎和广告商来说，了解转化率是至关重要的。在 CPC 模式中，它决定广告商的投资回报，并告知搜索引擎他们产品的价值；在 CPA 模型中，它直接决定了多少钱易手。为此，我们定义并研究了上下文迁移的过程：即用户从先前活动的过渡(比如网络搜索)文本环境通过点击网站广告转移到着陆页的文本环境。</span>
+<span style="font-size: 16px;">在观察了几百个广告和相应的登陆页面的综合样本后，我们发现绝大多数观察到的上下文转移都属于以下四个类别之一。</span>
+<span style="font-size: 16px;"><strong><span style="font-size: 16px;">主页类型</span></strong><span style="font-size: 16px;">：</span></span>
+<span style="font-size: 16px;"><strong>这是广告商网站的顶层页面。当用户搜索品牌或者关键字时候，广告商显示他们的主页为落地页的广告</strong><strong>。</strong>这种方法通常由较小的、缺乏经验的人使用广告客户或知名品牌的广告主。当用户搜索品牌或者关键字时候，广告商显示他们的主页为落地页的广告。这方法也可能方便的广告主出价，以及对成百上千不希望投资为每个关键字创建一个特定的页面的广告主。除非用户搜索的是广告商的品牌名称，使用首页作为登录页不会强烈的使得文本上下文联系内容的改变。例如，考虑一个搜索为了单丰田。” 如果丰田是广告客户，将搜索者引导到丰田的主页可能会满足用户的信息需求。另一方面，任何其他没有专门为丰田建立网站的广告商汽车，例如，提供所有汽车报价的网站将丢失一些上下文搜索联系显示泛型首页，这不能立即满足用户搜索查询需求。</span>
+<span style="font-size: 16px;"><strong><span style="font-size: 16px;">搜索转移型</span></strong></span>
+<span style="font-size: 16px;">：</span>
+<span style="font-size: 16px;">在没有找到对应相关产品的情况下，网站会返回此类产品下的另一些产品。例如，给定一个查询例如：加利福尼亚馨芳葡萄酒（一种葡萄酒的类型），在没有找到对应商品（加利福尼亚 馨芳葡萄酒）的情况下，一个在线葡萄酒商店将返回有关于馨芳葡萄酒类的登陆页面结果。这种广告形式的好处是不需要为每个关键字或一组关键字创建一个特定的页面。</span>
+<span style="font-size: 16px;"><strong><span style="font-size: 16px;">类别浏览类型：</span></strong></span>
+<span style="font-size: 16px;">在没有找到对应相关产品的情况下，网站会返回与搜索产品相关的类的产品。例如，加利福尼亚 馨芳葡萄酒 做在线葡萄酒商店广告。在这里，在没有找到对应商品（加利福尼亚 馨芳葡萄酒）的情况下，网站一个类别浏览着陆页面可能描述了网站的仙粉黛酒部分。</span>
+<span style="font-size: 16px;"><strong><span style="font-size: 16px;">其他类型：</span></strong></span>
+<span style="font-size: 16px;">这些是独立的页面，似乎与网站的其他部分断开连接。这些页面通常没有很多外部链接，也没有办法从主页到达它们。此类的一个例子是独立表单，页面的唯一目的是从用户那里收集信息。另一个例子是促销页面，它提供关于产品或服务的促销信息。这些页面类似于报纸上的印刷广告，通常包括诸如“现在试试”、“时间有限”和“特价”这样的短语。</span>
+<span style="font-size: 16px;">我们观察到，这前三个类加起来占样本数据集中广告的88%以上。此外，这些类很容易区分，我们可以为它们建立一个高精度(&gt; 80%)分类器。利用这个分类器，我们对不同类型的登录页面和相应广告的转化率之间的相关性进行了研究。我们的最终结果是基于超过30,000个独特的登陆页面，自动分类。</span>
+<span style="font-size: 16px;">我们还研究了不同类别的登录页面对于不同类型查询(例如，不同长度的查询或关于不同主题的查询)的适用性。有趣的是，在我们的数据集中，广告客户之间似乎很少同意使用哪个特定着陆页面用于哪种类型的用户查询。因为对于许多类型的查询，我们观察到实际使用的各种各样的着陆页面。然而，我们发现在很多情况下，现有的着陆页面选择可能不是最优的，我们鼓励广告商尝试不同类型的着陆页面，然后根据统计证据做出明智的选择。</span>
+<span style="font-size: 16px;">这篇文章有三方面的贡献。首先，我们建议对广告登录页面进行分类。其次，我们使用标准的机器学习技术来构建一个能够自动将登录页面映射到该分类法的类的分类器。最后，我们将不同类别落地页的实际使用频率与其报告的转化率进行比较。基于我们的发现，我们鼓励广告商对不同类别的着陆页面对转化率的影响进行研究。</span>
+<span style="font-size: 16px;"></span>
+<h1><strong><span style="font-size: 16px;">转化率数数据来源</span></strong></h1>
+<span style="font-size: 16px;">我们从参与的广告商那里获得了转换信息。为了便于我们的分析，这个数据集被添加了额外的信息，删除了过程中缺少信息的条目。对于每一个登录页面 URL u 和查询导致访问 u ，数据有:</span>
+<ul>
+<li>登陆页面 U 的点击数量</li>
+<li>页面网站 U 的转化数量</li>
+<li>价格：平均每次点击网站 U 所需要付给搜索引擎的价格</li>
+<li>着落页种类：在爬取着着落页面信息的时候我们使用训练好的自动分类器进行分类。</li>
+<li>查询频率：取在网页搜索的查询次数 q 的对数。Log q</li>
+<li>查询类：我们还包括了自动查询分类器预测的查询的类标签，这些分类器涉及到超过6000个节点。</li>
+</ul>
+<span style="font-size: 16px;">这导致数据集超过31,000对独特的查询和登陆页面 URL 。对每个查询预测的查询类标签的统计表明，我们的数据集涵盖了广泛的主题。</span>
+<p><img src="http://p8.itc.cn/images01/20200731/f7edad06fb3a4d12a6997775af2400b6.png" max-width="600" /></p>
+<h1><strong><span style="font-size: 16px;">分析与讨论一</span></strong></h1>
+<span style="font-size: 16px;">上表总结了不同的总体分类转换数据集中的登录页的类型，以及与每种类型相关的相对平均转化率。正如我们所看到的，类别浏览和搜索转移类占主导地位的选择，虽然平均转化率</span>
+<span style="font-size: 16px;">低于整个数据集的平均值。</span>
+<span style="font-size: 16px;">这并不一定意味着广告商选择了错误的登陆页面类型。</span>
+<span style="font-size: 16px;">相反，这些结果指出，平均而言，选择其他类型和首页登陆页面的广告客户往往比选择类别浏览和搜索的广告客户拥有更高的相对转化率。</span>
+<span style="font-size: 16px;">其中一个原因可能与广告商对转化率的不同定义有关。</span>
+<span style="font-size: 16px;">另一种登录页面类型是其他类型通常包含独立表单，其中表单的转换可能是表单的提交。</span>
+<span style="font-size: 16px;">另一方面，一个搜索转移登陆页通常显示一个产品列表，在那里一个可能对应一个产品的销售。</span>
+<span style="font-size: 16px;">显然，在后一种情况下实现转换更为困难。</span>
+<span style="font-size: 16px;">因此，我们并不是说登录页面类型的选择是影响转化率的唯一因素。</span>
+<span style="font-size: 16px;">相反，我们提供对着陆页面和转化率的相关性的分析和洞察。</span>
+<span style="font-size: 16px;">记住这些注意事项，我们继续探索不同类型(分组)查询的登录页面类型和转化率之间的相关性。</span>
+<strong><span style="font-size: 16px;">下面我们来分析不同的查询展现出来的趋势：</span></strong>
+<span style="font-size: 16px;"></span>
+<span style="font-size: 16px;">我们首先检查不同查询频率下的登录页面类型使用情况和转换信息(a，b)，不同的查询长度 (c，d)，以及支付的不同价格(a 和不同的查询类(c， d))。一个一致的趋势是，另一类是最不常用的登陆页面类型，平均转化率最高或第二高。正如我们前面所讨论的，由于其他类包含注册页面之类的内容，所以转换的可比性可能比较小。因此，我们的分析主要集中在前三个占优势的类上。总的来说，我们在整个数据集上观察到类似的趋势:类别浏览和搜索转移类使用得更频繁，但通常实现的转化率更低。和转换大多是一致的，不管主题(即(图c和(a) (b) (d))。然而，更仔细的研究揭示了一些有趣的细节。</span>
+<p><img src="http://p1.itc.cn/images01/20200731/73af99a08df749a0be8d9cde5fd09564.png" max-width="600" /></p>
+<p><img src="http://p1.itc.cn/images01/20200731/ab805459358843cab73d5dfe65fbcd7e.png" max-width="600" /></p>
+<h1><strong><span style="font-size: 16px;">分析与讨论二</span></strong></h1>
+<span style="font-size: 16px;">首先，我们从下图 a 中观察到主页是最频繁的查询，及其随着查询频率的降低，使用频率也会逐渐下降。直观地说，最频繁的查询更有可能出现是关于流行品牌名称的导航查询或信息查询。实际上，我们检查了转换数据集中100个最频繁的查询，并找到了其中的43个它们必须是没有任何具体型号指标的品牌(如诺基亚)。相反，查询时不那么频繁包括品牌名称，他们往往也包括具体车型信息(例如，2009年雪佛兰 Malibu )。还请注意即类别浏览和搜索转移随着查询频率的降低，类会逐渐增加，随着类别浏览的使用略微倾斜为最不频繁的查询(减少与搜索的差距转移)。这表明，当查询变得越来越少时，它将把他们和一个已经存在的人结合起来会更困难网站上的页面以及更方便的求助于搜索转移落地页。</span>
+<span style="font-size: 16px;">随着查询越来越少，主页类的平均转化率有了一个有趣的稳定增长(图 b)尽管它不是那么受欢迎的选择。其他两类的转化率大致保持不变。</span>
+<p><img src="http://p7.itc.cn/images01/20200731/fc5d8c1c23574ec89326b94c67afe5c1.png" max-width="600" /></p>
+<p><img src="http://p4.itc.cn/images01/20200731/c472227a873f4613bb7ce559b9766ad7.png" max-width="600" /></p>
+<span style="font-size: 16px;">当查询特性的另一个特征是长度的查询。较长的查询可能更具体(例如，\100涤纶桌布“ vs. \桌布”)，尽管查询长度并不总是特异性的精确预测(例如，asd2625kew2 vs. 圣诞晚餐食谱")。请注意数据集中的查询没有覆盖广泛的范围长度，由于今天 Web 中使用的平均查询长度较短搜索。不过，尽管如此，我们观察到，对于单个词语查询，类别浏览和搜索转移类的用法差异最大(图 c)。我们也观察到因为查询变得更长也更加具体，主页类的转化率也有着相似的增长。</span>
+<span style="font-size: 16px;">图 a和图 b展示了基于为查询支付的价格，用作代理查询的商业价值，因为我们的转换数据集不包含拍卖信息。最不费钱的查询是搜索转化类和类被浏览类的着陆页。随着查询变得更加昂贵，主页着陆页的使用明显增加，同时搜索转移着陆页的使用急剧下降。有趣的是，随着价格的上涨，三类产品的平均转化率总体上呈上升趋势。这表明，花更多钱的广告商不一定更难取悦。事实上，这些广告客户的钱可能是物有所值的，因为他们获得了更高质量的登陆页面，或者对更昂贵的查询进行了更好的转换。虽然搜索转移页面在价格较低的情况下平均转化率最低，但它们的平均转化率要高于价格中等的类别浏览页面。一个可能的解释是，低价格范围是由低质量的搜索转移页面主导的，这些页面试图利用低商业价值的查询赚钱，使用不太相关的登录页面，甚至垃圾邮件或点击套利页面。另一种可能性是，较低的价格范围对应的是不太有价值的关键字，搜索转移为这些关键字提供了一种较低的解决方案。</span>
+<span style="font-size: 16px;">现在我们将进一步研究其有效性在更具有可比性的查询上的不同登陆页面类型：</span>
+<span style="font-size: 16px;">这里我们研究了针对相同问题的不同广告活动。如果广告商对相同的查询使用不同的登陆页面类型，哪一种会有更高的转化率?结果汇总在下图。结果表明，在这个数据集中，大多数查询只与一个着陆页面相关联，对于多个着陆页面的转换，报告的查询只有大约600个。为了获得更可靠的统计数据，我们放宽了比较的限制，将用于相关查询的不同登录页面类型包括进来，其中，如果两个查询至少有一个相同的单词并且共享相同的查询类(查询分类器的最上面的一个预测)，则认为它们是相关的。</span>
+<span style="font-size: 16px;"> </span>
+<p><img src="http://p8.itc.cn/images01/20200731/da341de9514e4e8e8d50697ea99429a7.png" max-width="600" /></p>
+<h1><strong><span style="font-size: 16px;">分析与讨论三</span></strong></h1>
+<span style="font-size: 16px;">例如，当来自类别浏览和搜索转移类的登录页面被用于相关查询时，2332次搜索转移页面获得更多点击，824次(263)次搜索转移页面获得更高(更低)的转化率。上图中的数字一致表明，与用于相同或相关查询的其他类的页面相比，搜索转移类更有可能获得更高的转化率。这表明，在公平的比较中，搜索转移着陆页面在实现转换方面是相当有效的。</span>
+<strong><span style="font-size: 16px;">浏览模式作为转化事件：</span></strong>
+<span style="font-size: 16px;">当广告商使用主页作为登陆页时，广告商大概是希望吸引用户通过浏览进一步探索网站。与其他两个占主导地位的类相比，首页类不太可能保留用户搜索的内容，特别是对于不太常见的查询。用户是否有足够的兴趣继续浏览，或者他们是否会失去兴趣，并立即离开网站在浏览作为登录页的主页?我们使用前面提到的浏览数据集来回答这个问题。对于此数据集中的每个登录页面，可以从工具栏日志中提取同一会话中额外站点内部单击的次数。如果我们将基于点击的转换定义为在同一个站点上的额外点击超过一个阈值的访问，那么我们可以计算使用之前的平均转化率。</span>
+<h1><strong><span style="font-size: 16px;">分析与讨论四</span></strong></h1>
+<span style="font-size: 16px;">如下图 b 所示，总体上我们观察到主页类的平均转化率最高。事实上，随着登录页面变得越来越具体(主页，分类浏览，搜索转移)，额外的点击不太可能发生。显然，一种可能的解释是，在登录到一个已经非常特定于查询的页面时，用户不需要那么多的点击就可以到达一个满足她的页面。尽管如此，我们的发现确实表明，即使是在很少的查询中，一个更通用的登录页面(例如主页)也不会推迟用户进一步的浏览。</span>
+<span style="font-size: 16px;">还要注意的是，虽然细节不同，但总体趋势不同占主导地位的三个登陆页面的相对顺序如何</span>
+<span style="font-size: 16px;">从使用(下图(a))和转换的角度来看，跨不同查询频率的更改与我们在转换数据集上的发现保持一致(上图(a)和(b))。</span>
+<span style="font-size: 16px;">这证明了我们的发现不局限于一个特定的广告样本。</span>
+<p><img src="http://p2.itc.cn/images01/20200731/124a083547c240c5af948d14cb8a75f4.png" max-width="600" /></p>
+<span style="font-size: 16px;"> </span>
+<span style="font-size: 16px;"></span>
+<h1><strong><span style="font-size: 16px;">文章结论</span></strong></h1>
+<span style="font-size: 16px;">本文对付费搜索广告中的上下文本环境迁移进行了研究。通过对几百个例子的分析，我们发现大部分的广告目标页面分为三个不同的类别:首页，类别浏览和搜索转移。然后我们继续构建一个机器学习分类器，能够自动地将登录页面映射到这些类上。使用这个标识符,我们研究的不同类型的着陆页面和相应的广告的转化率之间的关系。我们研究通过区分数据根据查询频率,长度,话题,和价格对不同类型的登陆页的影响。然后，我们研究了每个类数据中的着陆页面类型与广告转化率的相关性。我们分析了几种情况，其中选择一种类型的登录页面比其他类型更可取。我们还发现，广告客户喜欢的登录页面与用户查询所期待出现的登陆页面之间并不是最优的匹配。由于不同广告主转化率的差异，在本文中，我们分析了相关关系，而不是声称之间的因果关系的登陆页面类型和转化率。这个限制是由我们的转换率的数据得出的。尽管如此，这还是第一次尝试深入了解登录页面类型、查询类和转换之间的关系。对于未来的工作，我们打算研究着陆页面类型和转化率之间的因果关系，针对那些同样衡量转化率的广告主。此外，我们计划检查转换和其他显示数据(如查询词、业务类别)之间的相关性。</span>
+<strong><span style="font-size: 16px;">我们发现的几种着陆页与转化率之间的关系：</span></strong>
+<span style="font-size: 16px;"></span>
+<span style="font-size: 16px;">1.选择其他类型和首页登陆页面的广告客户往往比选择类别浏览和搜索的广告客户拥有更高的相对转化率。</span>
+<span style="font-size: 16px;">2.在搜索引擎中，搜索频率相对较低的词语更加的具体（具体指明会相对型号）。搜索频率相对较低的情况下类别浏览和搜索转移类的落地页面形式会相对增加。</span>
+<span style="font-size: 16px;">3.我们也观察到因为查询词语变得更长也更加具体，主页类的转化率也有着相似的增长。</span>
+<span style="font-size: 16px;">4.我们观察到随着查询付费变得更加昂贵，主页着陆页的使用明显增加，同时搜索转移着陆页的使用急剧下降。</span>
+<span style="font-size: 16px;">5.与用于相同或相关查询的其他类的页面相比，搜索转移类更有可能获得更高的转化率。这表明，在公平的比较中，搜索转移着陆页面在实现转换方面是相当有效的。</span>
+<span style="font-size: 16px;">6.随着登录页面变得越来越具体(主页，分类浏览，搜索转移)，额外的点击不太可能发生。一种可能的解释是，在登录到一个已经非常特定于查询的页面时，用户不需要那么多的点击就可以到达一个满足他的页面。</span>
+<span style="font-size: 16px;">基于我们的发现，我们鼓励广告商尝试不同类型的着陆页面，然后根据统计数据做出明智的选择。</span>
+<span style="font-size: 16px;"></span>
+<h1><strong><span style="font-size: 16px;">附录</span></strong></h1>
+<strong><span style="font-size: 16px;">数据来源以及搜集方式：</span></strong>
+<span style="font-size: 16px;"></span>
+<span style="font-size: 16px;">在实验中我们创建了三个数据集来代表不同的下划线分布的广告。所有描述的数据集是某搜索引擎得出收集到的数据。</span>
+<span style="font-size: 16px;">试验数据集:200个独特的赞助搜索着陆页面的小集合，我们使用它来定义着陆页面的分类并构建一个自动着陆页面分类器。这些登陆页属于广告，由200个搜索引擎上的不重复搜索查询组成。查询是从2005 KDD Cup 的800个标记查询中随机抽取的。采用分层抽样方法，根据 Web 搜索查询日志计算出的查询频率将 KDD Cup 查询集划分为十分位数，每十分位数平均抽样20个查询。因此，这个数据集被构造来表示针对流行和罕见查询的广告。</span>
+<span style="font-size: 16px;">转换数据集:参与的广告商提供了超过31,000对独特的查询和着陆页 url，与转化信息。转换数据是通过添加 http 重定向到广告商网站上表示转换事件的链接来收集的(例如，一个购买"按钮)。我们使用这个数据集来验证我们的分类定义，以及分析不同类型的登录页面和相应的转化率之间的相关性。</span>
+<span style="font-size: 16px;">浏览数据集:实际的转换数据并不总是有效的，因为许多广告商选择不报告给搜索引擎数据。我们为转化率定义了一个代理。使用从浏览器工具栏插件收集的活动日志，哪些与用户点击开始的搜索轨迹相对应有关赞助搜索结果。浏览数据集包含超过66,000个登录页面以及随后访问同一站点的其他页面。这个数据集代表了较少偏差的点击广告抽样，因为它不受广告商参与的限制。</span>
+<strong><span style="font-size: 16px;">着陆页的转化的计算：</span></strong>
+<span style="font-size: 16px;">转换是搜索引擎为所有赞助搜索参与者产生的增值的核心。这是广告商的最终目标:他们在赞助搜索上的投资回报直接取决于投放在赞助搜索系统上的广告带来的转换。</span>
+<span style="font-size: 16px;">对于用户来说，转换意味着用户已经满足了查询的意图。满意的广告客户和用户将通过增加出价和更多赚钱机会，使搜索引擎的商业模式更加可行。</span>
+<span style="font-size: 16px;">我们将转换定义为用户执行的访问所需的动作，可以采取许多不同的形式范围从进一步浏览，用户注册，产品销售。对于广告活动中给定的登陆页面URL (u)，转化率(cr(u))是访问者的百分比期望的行动，即与u关联的转换次数与单击次数之间的比率。</span>
+<span style="font-size: 16px;">在这项研究中，我们报告了一组 URL 的平均转化率。一种可能性是使用所有 URL 的未加权平均转化率来定义平均转化率，平等对待每个 URL ，而不考虑它收到的点击次数(点击(u))。由于点击次数多的网址的转化率比点击次数少的网址的转化率更可靠，所以我们将平均转化率U定义为 cr(U) 的加权平均值。</span>
+<span style="font-size: 16px;">Click(u):网站 URL 的点击次数</span>
+<span style="font-size: 16px;">Cr(u)：与 u 关联的转换次数与单击次数之间的比率</span>
+<span style="font-size: 16px;">avg.cr(U):网站平均转化率</span>
+<p><img src="http://p5.itc.cn/images01/20200731/6966feef0bc846cb9dbbc7ac76bf7d54.png" max-width="600" /></p>
+<span style="font-size: 16px;"></span>
+<span style="font-size: 16px;">相对平均转化率：</span>
+<p><img src="http://p7.itc.cn/images01/20200731/68255821fb3e4a8baedc335a1f5f7d82.png" max-width="600" /></p>
+<h1><strong><span style="font-size: 16px;">相关文章拓展</span></strong></h1>
+<span style="font-size: 16px;">【1】《搜索广告中的上下文转移》</span>
+<ol>
+<li><span style="font-size: 16px;"> Becker, A. Broder, E.Gabrilovich, V. Josifovski, and B. Pang. Context transfer in searchadvertising. In SIGIR’09. Poster.</span></li>
+</ol>
+<span style="font-size: 16px;">【2】《预测点击率使用关键字集群进行评级》</span>
+<ol>
+<li>M. Regelson and D. Fain. Predicting click-throughrate usingkeyword clusters. In Second Workshop onSponsored SearchAuctions, 2006</li>
+</ol>
+<span style="font-size: 16px;">【3】《搜索广告使用网络相关的反馈》</span>
+<ol>
+<li><span style="font-size: 16px;"> Broder, P. Ciccolo, M.Fontoura, E. Gabrilovich,V. Josifovski, and L. Riedel. Search advertising usingWeb relevance feedback. In CIKM’08, 2008.</span></li>
+</ol>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">注：本系列分享均译自 </span></span><span style="font-size: 16px;">Hila Becker，</span><span style="font-size: 16px;">Andrei Broder，</span><span style="font-size: 16px;">Evgeniy Gabrilovich，</span><span style="font-size: 16px;">Vanja Josifovski 和 </span><span style="font-size: 16px;">Bo Pang </span><span style="font-size: 16px;"><span style="font-size: 16px;"><span style="font-size: 16px;">的《</span></span><span style="font-size: 16px;">What happens after an ad click?: quantifying the impact of landing pages in web advertising</span><span style="font-size: 16px;">》，经译者邓立晨翻译、整理而成。</span></span></p>
+<span style="font-size: 16px;"> <p>—————— </p></span>
+<span style="font-size: 16px;">易观方舟通过<strong>全量实时采集</strong>用户属性与行为数据，连通内外部数据源，打通用户运营触点，为企业各个部门提供从<strong>数据采集、分析、应用到智能用户运营闭环</strong>的数据管理平台，目前已经覆盖银行、证券、品牌零售、电商、教育等多个行业。易观方舟可以帮助企业整合用户数据资产，建立用户数据分析体系，通过用户精准分群实现用户精细化运营，为企业决策层提供数据决策依据，提升决策效率，<strong>以数据驱动企业精益成长</strong>。</span>
+<p><img src="http://p5.itc.cn/images01/20200731/d331fe1387284f54b92fc93b6c47f496.png" max-width="600"> <span style="font-size: 16px;"></span> </img></p>

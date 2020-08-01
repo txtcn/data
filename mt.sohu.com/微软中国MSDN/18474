@@ -1,0 +1,43 @@
+➜微软发布 VS Code Python 插件 7 月更新
+http://www.sohu.com/a/410783971_791833	32917
+<p><strong><span style="font-size: 16px;">微软发布了 7 月的 Visual Studio Code Python 扩展更新，此版本总共修复了 51 个问题，其中包括：</span></strong></p>
+<p style="text-align: left;"><span style="font-size: 16px;">支持新的语言服务器：Pylance</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">Gather 扩展</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">将 Notebook 导出为 HTML 和 PDF</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">调试器的反向连接</span></p>
+<p><span>01</span></p>
+<p><span style="font-size: 16px;">支持新的语言服务器：Pylance</span></p>
+<p><span style="font-size: 16px;">Pylance 是微软基于 Microsoft Pyright 静态类型检查工具的新语言服务器。它是一种快速的语言服务器，提供了许多功能来帮助用户编写代码，包括自动导入、无效代码检测、参数和返回类型信息等等。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200731/87e0b731e963412da92590f76cd2e4c5.gif" /></p>
+<p><span style="font-size: 16px;">Pylance 最近添加的一项功能是上下文高亮显示：</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200731/9aaa2f8d275b4079bf610d03a959fd89.gif" /></p>
+<p><span>02</span></p>
+<p><span style="font-size: 16px;">Gather 扩展</span></p>
+<p><span style="font-size: 16px;">此版本增加了对新的实验性扩展 Gather 的支持。该工具用于分析并确定 Notebook 中必要的代码依存关系，并执行代码清除，自动执行此困难且耗时的任务。</span></p>
+<p><span style="font-size: 16px;">用户无需手动删除未使用的导入内容或不相关的代码即可清理 Notebook。Gather 的最终文件格式可以使用 VS Code 设置 “Data Science: Gather To ” 进行自定义。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200731/8e1f3520f670479fb49716f9c2205140.jpeg" /></p>
+<p><span>03</span></p>
+<p><span style="font-size: 16px;">将 Notebook 导出为 HTML 和 PDF</span></p>
+<p><span style="font-size: 16px;">导出为 PDF 需要安装 TeX。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200731/ae0b755169554fd59e0aca0e5520bb72.gif" /></p>
+<p><span>04</span></p>
+<p><span style="font-size: 16px;">调试器的反向连接</span></p>
+<p><span style="font-size: 16px;">现在可以使用反向连接更轻松地启动远程调试器会话。</span></p>
+<p><span style="font-size: 16px;">将 ptvsd（VS Code 中的 Python 调试器）附加到 Python 进程或远程计算机时，需要设置远程 Python 进程，以便它侦听附加请求，然后在 VS Code 中启动调试器会话以附加到该进程。</span></p>
+<p><span style="font-size: 16px;">但是该附加操作可能会很棘手，也许需要很长时间才能在远程计算机上启动，或者可能连接超时。</span></p>
+<p><span style="font-size: 16px;">此版本支持将调试器配置为反向连接。现在可以将远程 Python 进程设置为连接到特定地址（端口号或主机和端口元组），并在 VS Code 中运行附加配置以开始侦听同一地址，以将其附加到进程。</span></p>
+<p><span style="font-size: 16px;">现在，可以使用 VS Code 启动调试器，以便它开始侦听连接请求。当启动 Python 进程时，它将在定义的断点处停止。</span></p>
+<p><span>05</span></p>
+<p><span style="font-size: 16px;">其他改进</span></p>
+<ul>
+<li>支持连接到 Jupyter hub servers 使用服务器的基本 URL（即 https://111.11.11.11:8000）或用户文件夹（即 https://111.11.11.11:8000/user/theuser）。与密码认证一起使用。</li>
+<li>增加了配置是否扩展传递给调试器的参数的功能。</li>
+<li>更新至 jedi 17.1</li>
+<li>如果工作区根目录中存在 toml 文件，则自动激活扩展名。</li>
+</ul>
+<p><span style="font-size: 16px;">更新说明：</span></p>
+<p><span style="font-size: 16px;">https://devblogs.microsoft.com/python/python-in-visual-studio-code-july-2020-release/</span></p>
+<p><span style="font-size: 16px;">文章转载自 OSCHINA 社区 </span></p>
+<p><span style="font-size: 16px;">[http://www.oschina.net]</span></p>
+<p>▲</p>
+<p>▲</p>

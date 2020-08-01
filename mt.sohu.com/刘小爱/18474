@@ -1,0 +1,78 @@
+➜Java项目实战第7天：导航栏业务的实现
+http://www.sohu.com/a/410717581_455717	13707
+<p>今天是刘小爱自学Java的第106天。</p>
+<p>感谢你的观看，谢谢你。</p>
+<p>话不多说，开始今天的学习：</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200731/8f030457d1804f3db46f06d0c0e24574.png" max-width="600" /></p>
+<p>很多网站首页都会有一个导航栏，对应不同的模块，方便用户快速找到想要的内容。</p>
+<p>其有如下特点：</p>
+<ul>
+<li>网站一加载，需要读取导航栏中的内容。</li>
+<li>在多个页面中都会存在该导航栏 ，这种在购物网站上很常见。</li>
+<li>导航栏数据是固定的，很少会变化，这不比用户注册和登录的数据。</li>
+</ul>
+<p>其就造成了需要频繁地查询MySQL数据库的问题。</p>
+<p>为了提高查询效率，引入缓存技术，也就是前几天刚学的redis数据库。</p>
+<p>今天的一个核心点也就是对redis数据库的一个学习和回顾。</p>
+<h1>一、代码编写</h1>
+<p><strong>1前端发送请求</strong></p>
+<p>首先第一步，肯定要先有请求，服务器再根据请求做出对应的处理：</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200731/566a7c858921475faf2bc72a31762017.png" max-width="600" /></p>
+<p>使用jQuery的页面加载事件，网站页面一刷新，就向数据库查询导航栏数据。</p>
+<p>请求路径为：categoryServlet，其携带的methodName为queryAll。</p>
+<p>也就是说在服务器中要有一个CategoryServlet来接受该请求，同时在queryAll方法中处做出对应的处理。</p>
+<p><strong>2web层代码</strong></p>
+<p>创建一个CategoryServlet来接受该请求：</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200731/938d9d4740494fe794f7f7f6e89e1aa1.png" max-width="600" /></p>
+<p>因为请求中是没有数据的，所以只需要响应数据即可。</p>
+<p>需要响应的数据格式是json，前两天的代码编写都是在web层中转换成json。</p>
+<p>其实也可以将其放入service层中完成数据转换了返回给web层。</p>
+<p>这样的话web层代码也就显得非常简洁。</p>
+<p><strong>2service层代码</strong></p>
+<p>service处理具体的业务逻辑，其中就涉及到缓存的处理：</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200731/ee385b3500964f8ca4252e49d8020181.png" max-width="600" /></p>
+<p><strong>①redis数据库</strong></p>
+<p>直接使用jedisUtils这个工具类就可以完成对redis数据库的操作。</p>
+<p>使用起来非常方便，其封装过程就不再详细说明了。</p>
+<p>通过jedis的get方法创建一个key值为Category_List的数据。</p>
+<p><strong>②初始化数据</strong></p>
+<p>第一次查询数据的时候需要从MySQL中查询数据。</p>
+<p>查询的数据是一个List集合，也就是很多个Category对象，将其数据格式转换成json。</p>
+<p><strong>③将数据存储到redis中</strong></p>
+<p>通过set()方法将json数据存储到redis中。</p>
+<p>这样设置后就不用每次都去mysql中查询数据了，直接去redis中查询数据。</p>
+<p><strong>4Dao层代码</strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200731/5e9059aeae53424789119a8df3acaea2.png" max-width="600" /></p>
+<p>通过jdbcTemplate查询tab_category表中的所有数据。</p>
+<p>一行数据对应一个Category对象，那查询整张表也就是对应多个Category对象的集合。</p>
+<h1>二、前端渲染</h1>
+<p><strong>1数据格式</strong></p>
+<p>后台响应数据给前端后，通过console.log()输出其结果 ，在控制台上可以查看。</p>
+<p>在浏览器中按F12即可打开控制台：</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200731/7841df107a8a40dc96d3912ff0390034.png" max-width="600" /></p>
+<p>这三者之间是互相有联系的：</p>
+<ul>
+<li>在前端中对应的数据格式是json。</li>
+<li>在数据库中对应的数据是一张数据表。</li>
+<li>在Java中对应的数据是一个实体类，准确地说是一个装有多个实体类的集合。</li>
+</ul>
+<p><strong>2前端页面渲染</strong></p>
+<p>在获取后台响应的数据之后，前端需要将其动态渲染到页面中：</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200731/113d3744b39948069bbe06490527eb5b.png" max-width="600" /></p>
+<p><strong>①遍历数据</strong></p>
+<p>使用jQuery中的each方法可以遍历响应的数据，其中：</p>
+<ul>
+<li>index是数据的索引。</li>
+<li>element是当前索引位对应的元素。</li>
+<li>element.cname即当前元素中cname这个key对应的value。</li>
+</ul>
+<p><strong>②页面拼接</strong></p>
+<p>前端静态页面布局如下：</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200731/7969382ec9064a82904f49558e789022.png" max-width="600" /></p>
+<p>但是静态页面将数据给写死了，所以要将遍历后的数据动态拼接到前端页面中。</p>
+<p>其中首页和收藏排行榜这两个标签是固定的，所以只动态拼接中间8行。</p>
+<p><strong>③通过选择器将内容渲染到对应标签</strong></p>
+<p>使用jQuery中的html方法即可以完成，这里使用的选择器是类选择器。</p>
+<h1>最后</h1>
+<p>谢谢你的观看。</p>
+<p>如果可以的话，麻烦帮忙点个赞，谢谢你。</p>

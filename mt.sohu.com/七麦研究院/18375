@@ -1,0 +1,58 @@
+➜HealthKit准则更新，健康健美、医疗App重点关注！适配约束注意3方面就够了？
+http://www.sohu.com/a/390549633_100065715	40898
+<p>作者 - 孙冠男</p>
+<p>4 月 20 日，苹果在开发者网站上更新了 HealthKit 准则，表示应用程序可以与 Apple Health 一起为用户提供有价值的健康相关见解，并且更新的《HealthKit 人机界面指南》中包括了使用 Apple Health 图标的指南、使用与 Apple Health 相关的术语的编辑指南以及隐私和数据使用指南。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200423/0ce795a87f6848c3a17a11a79a6ff120.JPG" max-width="600" /></p>
+<p>也就是说，开发者可以根据自家 App 情况，结合 Apple Health 为用户提供健康数据，但使用时要符合苹果制定的相关条款。此外，如果开发者的 App 启用了 HealthKit，还可以使用特定的徽章来进行宣传。</p>
+<p><strong>相关 App 可以申请访问用户数据，健康健美、医疗类可考虑</strong></p>
+<p>HealthKit 是 iOS 和 watchOS 中健康和健身数据的中央存储库。在 App 中启用 HealthKit 时，开发者可以要求访问和更新用户的健康信息。苹果建议提供健康和健身功能的 App 可以请求访问用户的相关数据。</p>
+<p>比如，健康健美、医疗、饮食类 App 可能会请求获得人们体重和运动数据，从而计算卡路里消耗并提出饮食建议，还可以将数据发送到 HealthKit。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200423/cc59382084de401b80d54faf85794086.JPG" max-width="600" /></p>
+<p>目前 Apple Health App 中的数据维度包括呼吸、健身记录、经期跟踪、身体测量、睡眠状况、听觉、心脏、营养摄入、正念训练、主要体征、临床文档等。用户可以手动输入数据，也可以通过相关 App 导入数据，之后苹果健康会收集所有的数据形成数据库，并且根据数据的变化输出分析。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200423/8177592f4335418fb28091444ff74c10.JPG" max-width="600" /></p>
+<p>在此提醒开发者，如果自家 App 可以提供上述维度的数据，或者需要导入相关数据，可以考虑启用 HealthKit，这样不仅降低了开发成本，还积极响应了苹果的支持。</p>
+<p>其实 Apple Watch 的使用环境更适合相关 App，这也是苹果在 2019 秋季发布会上重点强调的项目，并且 App Store 也对相关的产品进行了推荐，建议开发者可以积极开发 App 的 watchOS 版本，并且可以向苹果小编自荐。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200423/7173aef9828542d895e96acbade6bb27.JPG" max-width="600" /></p>
+<p><strong>适配 HealthKit 需注意用户隐私、图标徽章、编辑文本</strong></p>
+<p><strong>用户隐私</strong></p>
+<p>对于用户来说，这部分信息可能涉及到个人隐私而不愿意授权给 App，所以苹果在用户隐私方面更新了其规定。用户必须明确地授予应用程序读取和写入 HealthKit 存储中的数据的权限，并且可以分别为每种数据类型授予或拒绝权限。</p>
+<p>在此提醒开发者，如果没有按照要求向用户提供相关的权限，很可能遭拒或下架。</p>
+<p><strong>1、提供一致的隐私政策</strong></p>
+<p>在应用提交过程中，开发者必须向用户提供指向明确的隐私权政策 URL，以便用户直接点击页面中的链接时可以查看该政策。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200423/30a858e844c440a397445e6d9d538f88.JPG" max-width="600" /></p>
+<p><strong>2、仅在需要时请求访问健康数据</strong></p>
+<p>比如当用户需要在 App 中记录体重时，请求访问体重信息是有意义的，但不是在应用启动后立即访问，而是当请求与用户的需求明确相关时，这样用户可以更加理解获取相关信息的原因，从而授权。同样，用户也可以随时更改授予的权限，因此开发者需要每次在访问时都发出请求。</p>
+<p><strong>3、通过向标准权限屏幕添加描述性消息来说明应用意图</strong></p>
+<p>用一些简短的句子，解释为什么需要这些信息以及用户授权后可以获得哪些好处，不要添加自定义屏幕。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200423/1717f3d7348d4f92be589ff9e5e377d2.JPG" max-width="600" /></p>
+<p><strong>Apple Health 图标</strong></p>
+<p>Apple Health 图标是一个 App 可与 HealthKit 和 Apple Health App 一起使用的标志。</p>
+<p>建议相关 App 可以考虑进行更改，不仅可以增加产品的背书，使产品更具有权威性，还增加了用户的信任感。</p>
+<p><strong>仅使用 Apple 提供的图标</strong></p>
+<p>不要创建自己的 Apple Health 图标设计或尝试模仿任何 Apple 提供的设计。从 Apple 设计资源下载 Apple Health 应用程序图标。</p>
+<p><strong>在 Apple Health 图标附近显示名称 Apple Health</strong></p>
+<p>同时显示这两个元素会提醒用户该图标代表“健康”应用程序。</p>
+<p><strong>与其他与健康相关的应用程序图标一致地显示 Apple Health 图标</strong></p>
+<p>在包含其他应用程序图标的视图中，使 Apple Health 图标不小于其他图标。</p>
+<p><strong>请勿将 Apple Health 图标用作按钮</strong></p>
+<p>仅使用图标表示与 Apple Health App 的兼容性。</p>
+<p><strong>请勿更改 Apple Health 图标的外观</strong></p>
+<p>不要遮盖图标以更改其拐角半径或以圆形显示它。请勿添加边框，颜色叠加，渐变，阴影或其他视觉效果之类的装饰。在 Apple Health 图标周围保持最小高度为其高度的 1/10。不要将图标合成到另一个图形元素上。</p>
+<p>请勿在文字内使用 Apple Health 图标，也不要使用 Health、Apple Health 或 HealthKit 代替术语。</p>
+<p><strong>不要显示 Apple Health App icon 或屏幕截图</strong></p>
+<p>与所有 Apple 图像一样，这些设计均受版权保护，不应出现在应用或营销材料中。</p>
+<p><strong>“与 Apple Health 一起使用”徽章</strong></p>
+<p>“与 Apple Health 一起使用”徽章可以在网站、电子邮件、指南以及与 App 相关的其他促销和通讯中使用。与 Apple Health 图标不同的是，该徽章可用于 App 的宣传、传播和营销材料中。</p>
+<p>如果产品没有按规定使用 Apple Health 图标和徽章，很有可能被苹果拒审或惨遭下架，苹果的相关设计均受版权保护，严重的可能还会涉及官司，所以提醒开发者，务必按苹果的要求使用相关的 icon 和徽章。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20200423/c562a4fee5564b27be2ebb841594f4e3.JPG" max-width="600" /></p>
+<p><strong>副本和 UI 文本</strong></p>
+<p>在与 App 有关（营销文字、App 描述等）的文字中描述 Apple Health 时，需要对 Apple Health 有固定的称呼并且书写正确。开发者一定要严谨对待苹果官方的应用和书写规范，避免被苹果警告。</p>
+<p><strong>将“健康”App 称为“ Apple Health”或“ Apple Health” App</strong></p>
+<p><strong>不要使用术语 HealthKit</strong></p>
+<p>HealthKit 是面向开发人员的术语，如果需要向用户解释如何处理他们的数据，请使用“ Apple Health App ”一词。例如，可以说我们的 App“与 Apple Health App 一起使用”或“使用 Apple Health App 中的数据”。</p>
+<p><strong>使用 Apple Health 时需书写正确</strong></p>
+<p>Apple Health 是两个单词，大写 A 和大写 H，后跟小写字母。仅需要遵循既定的印刷界面样式时（例如在将所有文本都大写的应用程序中），才可以完全以大写形式显示 Apple Health。</p>
+<p><strong>使用系统提供的翻译</strong></p>
+<p>最好使用人们在其设备上查看的翻译来引用 Apple Health App。</p>
+<p>写在最后</p>
+<p>从以往来看，苹果在对其功能、条款更新后，会对积极响应的 App 予以推荐，App 属性与 Apple Health App 匹配的产品不妨积极尝试，不仅可以降低产品相关的技术开发成本，或许还能增加被 App Store 推荐的几率。</p>

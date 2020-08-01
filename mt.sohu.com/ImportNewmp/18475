@@ -1,0 +1,266 @@
+➜震惊！ConcurrentHashMap里面也有死循环，作者留下的“彩蛋”了解一下？
+http://www.sohu.com/a/410902637_355142	12600
+<blockquote>
+<p style="text-align: left;"><span style="font-size: 16px;">转自：why技术</span></p>
+</blockquote>
+<p><span><strong><span style="font-size: 16px;">JDK BUG</span></strong></span></p>
+<p><span style="font-size: 16px;">这篇文章，聊一下我最近才知道的一个关于 JDK 8 的 BUG 吧。 </span></p>
+<p><span style="font-size: 16px;">首先说一下我是怎么发现这个 BUG 的呢？</span></p>
+<p><span style="font-size: 16px;">大家都知道我对 Dubbo 有一定的关注，前段时间 Dubbo 2.7.7 发布后我看了它的更新点，就是下面这个网址：</span></p>
+<blockquote>
+<p><span style="font-size: 16px;">https://github.com/apache/dubbo/releases/tag/dubbo-2.7.7</span></p>
+</blockquote>
+<p><span style="font-size: 16px;">其中有 Bugfixex 这一部分： </span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200801/c6ea1b462732430eaa39f903f4945177.png" /></p>
+<p><span style="font-size: 16px;">每一个我都去简单的看了一下，其他的 Bugfixes 或多或少都和 Dubbo 框架有一定的关联性。但是上面红框框起来的部分完全就是 JDK 的 Bug 了。</span></p>
+<p><span style="font-size: 16px;">所以可以单独拎出来说。</span></p>
+<p><span style="font-size: 16px;">这个 Bug 我也是看到了这个地方才知道的，但是研究的过程中我发现，这个怎么说呢：我怀疑这根本就不是 Bug ，这就是 Doug Lea 老爷子在钓鱼执法。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200801/fa775d26a012498293c56a23c972304a.jpeg" /></p>
+<p><span style="font-size: 16px;">为什么这样的说呢，大家看完本文就知道了。 </span></p>
+<p><span style="font-size: 16px;"><strong>Bug 稳定复现</strong></span></p>
+<p><span style="font-size: 16px;">点击 Dubbo 里面的链接，我们可以看到具体的描述就是一个链接： </span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200801/b9262abd0cd24355b5907cdad46b105c.png" /></p>
+<p><span style="font-size: 16px;">打开这个链接： </span></p>
+<blockquote>
+</blockquote>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200801/8da20a53f5094ddf984f0740bf82d3f8.png" /></p>
+<p><span style="font-size: 16px;">我们可以看到：这个 Bug 是位于大名鼎鼎的 concurrent 包里面的 computeIfAbsent 方法。</span></p>
+<p><span style="font-size: 16px;">这个 Bug 在 JDK 9 里面被修复了，修复人是 Doug Lea。</span></p>
+<p><span style="font-size: 16px;">而我们知道 ConcurrentHashMap 就是 Doug Lea 的大作，可以说是“谁污染谁治理”。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200801/0b447643d2dc4ddabd6969e941bff12e.png" /></p>
+<p><span style="font-size: 16px;">要了解这个 Bug 是怎么回事，就必须先了解下面这个方法是干啥的： </span></p>
+<blockquote>
+<p><span style="font-size: 16px;">java.util.concurrent.ConcurrentHashMap#computeIfAbsent</span></p>
+</blockquote>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200801/aaabe73863af40479cfdfbbacd268585.png" /></p>
+<p><span style="font-size: 16px;">从这个方法的第二个入参 mappingFunction 我们可以知道这是 JDK 8 之后提供的方法了。</span></p>
+<p><span style="font-size: 16px;">该方法的含义是： <strong>当前 Map 中 key 对应的值不存在时，会调用 mappingFunction 函数，并且将该函数的执行结果（不为 null）作为该 key 的 value 返回。</strong></span></p>
+<p><span style="font-size: 16px;">比如下面这样的： </span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200801/395a4d35247f44a297d52dc84a3bd978.png" /></p>
+<p><span style="font-size: 16px;">初始化一个 ConcurrentHashMap ，然后第一次去获取 key 为 why 的 value，没有获取到，直接返回 null。 </span></p>
+<p><span style="font-size: 16px;">接着调用 computeIfAbsent 方法，获取到 null 后调用 getValue 方法，将该方法的返回值和当前的 key 关联起来。</span></p>
+<p><span style="font-size: 16px;">所以，第二次获取的时候拿到了 “why技术”。 </span></p>
+<p><span style="font-size: 16px;">其实上面的代码的 17 行的返回值就是 “why技术”，只是我为了代码演示，再去调用了一次 map.get 方法。 </span></p>
+<p><span style="font-size: 16px;">知道这个方法干什么的，接下来就带大家看看 Bug 是什么。</span></p>
+<p><span style="font-size: 16px;">我们直接用这个问题里面给的测试用例，地址：</span></p>
+<blockquote>
+<p><span style="font-size: 16px;">https://bugs.openjdk.java.net/secure/attachment/23985/Main.java</span></p>
+</blockquote>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200801/18b118ad47814e49bfc846ae6d590204.png" /></p>
+<p style="text-align: left;"><span style="font-size: 16px;">我只是在第 11 行和第 21 行加入了输出语句： </span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200801/5cbf299f23234043a5a0d1fefa3aa9b3.png" /></p>
+<p><span style="font-size: 16px;">正常的情况下，我们希望方法正常结束，然后 map 里面是这样的：{AaAa=42，BBBB=42} </span></p>
+<p><span style="font-size: 16px;">但是你把这个代码拿到本地去跑（需要 JDK 8 环境），你会发现，这个方法永远不会结束。因为它在进行死循环。 </span></p>
+<p><span style="font-size: 16px;">这就是 Bug。 </span></p>
+<p><span><strong><span style="font-size: 16px;">提问的艺术</span></strong></span></p>
+<p><span style="font-size: 16px;">知道 Bug 了，按理来说就应该开始分析源码，了解为啥出现了会出现这个 Bug。</span></p>
+<p><span style="font-size: 16px;">但是我想先插播一小节提问的艺术。因为这个 Bug 就是一个活生生的示例呀。 </span></p>
+<p><span style="font-size: 16px;">这个链接，我建议你打开看看，这里面还有 Doug Lea 老爷子的亲自解答：</span></p>
+<blockquote>
+</blockquote>
+<p style="text-align: left;"><span style="font-size: 16px;">首先我们看提出问题的这个人对于问题的描述（可以先不用细看，反正看着也是懵逼的）： </span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200801/c54e25134428487081b94e0dbf4022a6.png" /></p>
+<p><span style="font-size: 16px;">通常情况下，被提问的人分为两类人：</span></p>
+<ol>
+<li>遇到过并知道这个问题的人，可以看的明白你在说什么。</li>
+<li>虽然没有碰见过这个问题，但感觉是自己熟悉的领域，可能知道答案，但是看了你的问题描述，也不知道你在说什么。</li>
+</ol>
+<p><span style="font-size: 16px;">这个描述很长，我第一次看的时候很懵逼，很难理解他在说什么。我就是属于第二类人。 </span></p>
+<p><span style="font-size: 16px;">而且在大多数的问题中，第二类人比第一类人多很多。</span></p>
+<p><span style="font-size: 16px;">但是当我了解到这个 Bug 的来龙去脉的时候，再看这个描述，其实写的很清楚了，也很好理解。我就变成第一类人了。 </span></p>
+<p><span style="font-size: 16px;">但是变成第一类人是有前提的，前提就是我已经了解到了这个地方 Bug 了。可惜，现在是提问，而被提问的人，还对这个 Bug 不是特别了解。</span></p>
+<p><span style="font-size: 16px;">即使，这个被提问的人是 Doug Lea。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200801/393075e7ff50482297a03955ee1b4b0b.png" /></p>
+<p><span style="font-size: 16px;">可以看到，2014 年 11 月 04 日 Martin 提出这个问题后， Doug Lea 在不到一个小时内就进行了回复，我给大家翻译一下，老爷子回复的啥：</span></p>
+<p><span style="font-size: 16px;">首先，你说你发现了 ConcurrentHashMap 的问题，但是我没有看到的测试用例。那么我就猜测一下是不是有其他线程在计算值的时候被卡住了，但是从你的描述中我也看不到相应的点。 </span></p>
+<p><span style="font-size: 16px;">简单来说就是：Talk is cheap. Show me the code.（屁话少说，放码过来。）</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200801/065a85975bc4433fa12bc892afe1e374.gif" /></p>
+<p><span style="font-size: 16px;">于是另一个哥们 Pardeep 在一个月后提交了一个测试案例，就是我们前面看到的测试案例：</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200801/102f907a35a043bda0afad665be9cf33.png" /></p>
+<p><span style="font-size: 16px;">Pardeep 给 Martin 回复到下面这段话： </span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200801/b24d696441e84a6aa1fb8d2daa544cb1.png" /></p>
+<p style="text-align: left;"><span style="font-size: 16px;">他开门见山的说：我注意这个 bug 很长时间了， <strong>然后我还有一个测试用例</strong>。 </span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">可以说这个测试案例的出现，才是真正的转折点。 </span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">然后他提出了自己的看法，这段描述简短有力的说出了问题的所在（后面我们会讲到 <span>）</span>，然后他还提出了自己的意见。 </span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">不到一个小时，这个回到得到了 Doug Lea 的回复： </span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200801/4d7b34db576a40e09d4781de47281f2d.png" /></p>
+<p><span style="font-size: 16px;">他说：小伙子的建议还是不错的，但是现在还不是我们解决这个问题的时候。我们也许会通过代码改进死锁检查机制，以帮助用户 debug 他们的程序。但是目前而言，这种机制就算做出来，工作效率也是非常低下的，比如在当前的这个案例下。但是现在我们至少清楚的知道，是否要实现这种机制是不能确定的。 </span></p>
+<p><span style="font-size: 16px;">总之一句话：问题我知道了，但是目前我还没想到好的解决方法。 </span></p>
+<p><span style="font-size: 16px;">但是，在 19 天以后，老爷子又回来处理这个问题了：</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200801/b8892a206c624f17ac22c7c1c27f4617.png" /></p>
+<p><span style="font-size: 16px;">这次的回答可谓是峰回路转，他说：请忽略我之前的话。我们发现了一些可行的改进方法，这些改进可以处理更多的用户错误，包括本报告中所提供的测试用例，即解决在 computeIfAbsent 中提供的函数中进行递归映射更新导致死锁这样的问题。我们会在 JDK 9 里面解决这个问题。 </span></p>
+<p><span style="font-size: 16px;">所以，回顾这个 Bug 被提出的过程。 </span></p>
+<p><span style="font-size: 16px;">首先是 Martin 提出了这个问题，并进行了详细的描述。可惜的是他的描述很专业，是站在你已经了解了这个 Bug 的立场上去描述的，让人看的很懵逼。</span></p>
+<p><span style="font-size: 16px;">所以 Doug Lea 看到后也表示这啥呀，没搞懂。</span></p>
+<p><span style="font-size: 16px;">然后是 Pardeep 跟进这个问题，转折点在于他抛出的这个测试案例。而我相信，既然 Martin 能把这个问题描述的很清楚，他一定是有一个自己的测试案例的，但是他没有展现出来。</span></p>
+<p><span style="font-size: 16px;">所以，朋友们，测试案例的重要性不言而喻了。 <strong>问问题的时候不要只是抛出异常，你至少给段对应的代码，或者日志，或者一次性描述清楚，写在文档里面发出来也行呀。</strong></span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200801/2dc5c6bd0d134be59abb47743f0253b1.jpeg" /></p>
+<p><span><strong><span style="font-size: 16px;">Bug 的原因</span></strong></span></p>
+<p><span style="font-size: 16px;">导致这个 Bug 的原因也是一句话就能说清楚，前面的 Pardeep 老哥也说了：</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200801/f3c7dd44fa474c9f83738531606d641a.png" /></p>
+<p><span style="font-size: 16px;"><strong>问题在于我们在进行 computeIfAbsent 的时候，里面还有一个 computeIfAbsent。而这两个 computeIfAbsent 它们的 key 对应的 hashCode 是一样的。</strong></span></p>
+<p><span style="font-size: 16px;">你说巧不巧。 </span></p>
+<p><span style="font-size: 16px;">当它们的 hashCode 是一样的时候，说明它们要往同一个槽放东西。 </span></p>
+<p><span style="font-size: 16px;">而当第二个元素进来的时候，发现坑位已经被前一个元素占领了，可能就是这样的画风：</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200801/55d9ce8c1c22497193a3ae793b45f87e.jpeg" /></p>
+<p><span style="font-size: 16px;">接下来我们就解析一下 computeIfAbsent 方法的工作流程： </span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200801/43f052e37f07468097d0d092a80143d0.png" /></p>
+<p><span style="font-size: 16px;">第一步是计算 key 对应的 hashCode 应该放到哪个槽里面。</span></p>
+<p><span style="font-size: 16px;">然后是进入1649 行的这个 for 循环，而 <strong>这个</strong><strong>for 循环是一个死循环，它在循环体内部判断各种情况，如果满足条件则 break 循环。</strong></span></p>
+<p><span style="font-size: 16px;">首先，我们看一下 “AaAa” 和 “BBBB” 经过 spread 计算（右移 16 位高效计算）后的 h 值是什么：</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200801/5f3c02eaa1e64096b04531a2ea234fbe.png" /></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200801/12a6757bdd2e4ae1b291d8bad76c7def.jpeg" /></p>
+<p><span style="font-size: 16px;">说明他们要在同一个槽里面搞事情。 </span></p>
+<p><span style="font-size: 16px;">先是 “AaAa” 进入 computeIfAbsent 方法： </span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200801/7a8dc1aa984f46708a023b6fa607332c.png" /></p>
+<p><span style="font-size: 16px;">在第一次循环的时候 initTable，没啥说的。 </span></p>
+<p><span style="font-size: 16px;">第二次循环先是在 1653 行计算出数组的下标，并取出该下标的 node。发现这个 node 是空的。于是进入分支判断：</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200801/2f11d6d1c4e84fa1b7a7b7994d85e6b0.png" /></p>
+<p><span style="font-size: 16px;">在标号为 ① 的地方进行 cas 操作，先用 r（即 ReservationNode）进行一个占位的操作。 </span></p>
+<p><span style="font-size: 16px;">在标号为 ② 的地方进行 mappingFunction.apply 的操作，计算 value 值。如果计算出来不为 null，则把 value 组装成最终的 node。</span></p>
+<p><span style="font-size: 16px;">在标号为 ③ 的东西把之前占位的 ReservationNode 替换成标号为 ② 的地方组装成的node 。</span></p>
+<p><span style="font-size: 16px;">问题就出现标号为 ② 的地方。可以看到这里去进行了 mappingFunction.apply 的操作，而这个操作在我们的案例下，会触发另一次 computeIfAbsent 操作。</span></p>
+<p><span style="font-size: 16px;">现在 “AaAa” 就等着这个 computeIfAbsent 操作的返回值，然后进行下一步操作，也就是进行标号为 ③ 的操作了。 </span></p>
+<p><span style="font-size: 16px;">接着 “BBBB” 就来了。 </span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200801/6301013dcc7a49e1b3fc052760035bd0.png" /></p>
+<p><span style="font-size: 16px;">通过前面我们知道了 “BBBB” 的 hashCode 经过计算后也是和 “AaAa” 一样。所以它也要想要去那个槽里面搞事情。</span></p>
+<p><span style="font-size: 16px;">可惜它来晚了一步。 </span></p>
+<p><span style="font-size: 16px;">带大家看一下对应的代码： </span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200801/961bef9f0766448cb3582cc2ac108eb7.png" /></p>
+<p><span style="font-size: 16px;">它也会进入 1649 行的这个死循环。然后进行各种判断。</span></p>
+<p><span style="font-size: 16px;"><strong>接下来我要论证的是：</strong></span></p>
+<p><span style="font-size: 16px;"><strong>在本文的示例代码中，当运行到 key 为 “BBBB” 的时候，进入 1649 行这个死循环后，就退不出来了。程序一直在里面循环运行。</strong></span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200801/786d2feb84fc452cb4ea0b0292ec06c2.jpeg" /></p>
+<p><span style="font-size: 16px;">在标号为 ① 的地方，由于这个时候 tab 已经不为 null 了，所以不会进入这个分支。</span></p>
+<p><span style="font-size: 16px;">在标号为 ② 的地方，由于之前 “AaAa” 已经扔了一个 ReservationNode 进去占位置了，所以不等于 null。所以，也就不会进入这个分支。 </span></p>
+<p><span style="font-size: 16px;">怕你懵逼，给你配个图，真是暖男作者石锤了：</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200801/398fb923274b4cf583269ae36a29148e.png" /></p>
+<p><span style="font-size: 16px;">接下来到标号为 ③ 的地方，里面有一个 MOVED，这个 MOVED 是干啥的呢？ </span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200801/b82d94d8a53e41e8af3cc2fd72aa6798.png" /></p>
+<p style="text-align: left;"><span style="font-size: 16px;">表示当前的 ConcurrentHashMap 是否是在进行扩容。 </span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">很明显，现在还没有到该扩容的时候： </span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200801/27e0694f9ff04156b1bac9ab58839eac.png" /></p>
+<p><span style="font-size: 16px;">第 1678 行的 f 就是之前 “AaAa” 扔进去的 ReservationNode ， <strong>这个 Node 的 hash 是 -3</strong>，不等于MOVED（-1）。 </span></p>
+<p><span style="font-size: 16px;">所以，不会进入这个分支判断。 </span></p>
+<p><span style="font-size: 16px;"><strong>接下来，能进的只有标号为 ④ 的地方了，所以我们只需要把这个地方攻破，就彻底了解这个 Bug 了。</strong></span></p>
+<p><span style="font-size: 16px;">走起：</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200801/0b0a92ae0c304bc2a5d9d7a26ba55328.png" /></p>
+<p><span style="font-size: 16px;">通过前面的分析我们知道了，当前案例情况下，只会进入 1672 行这个分支。 </span></p>
+<p><span style="font-size: 16px;">而这个分支里面，还有四个判断。我们一个个的攻破：</span></p>
+<p><span style="font-size: 16px;">标号为 ⑤ 的地方，tabAt 方法取出来的对象，就是之前 “AaAa” 放进去的占位的 ReservationNode ，也就是这个 f 。所以可以进入这个分支判断。</span></p>
+<p><span style="font-size: 16px;">标号为 ⑥ 的地方，fh &gt;=0 。而 fh 是当前 node 的 hash 值，大于 0 说明当前是按照链表存储的数据。之前我们分析过了，当前的 hash 值是 -3。所以，不会进入这个分支。 </span></p>
+<p><span style="font-size: 16px;">标号为 ⑦ 的地方，判断 f 节点是否是红黑树存储。当然不是的。所以，不会进入这个分支。</span></p>
+<p><span style="font-size: 16px;">标号为 ⑧ 的地方，binCount 代表的是该下标里面，有几个 node 节点。很明显，现在一个都没有。所以当前的 binCount 还是 0 。所以，不会进入这个分支。</span></p>
+<p><span style="font-size: 16px;">完了。分析完了。</span></p>
+<p><span style="font-size: 16px;"><strong>Bug 也就出来了，一次 for 循环结束后，没有 break。苦就苦在这个 for 循环还是个死循环。</strong></span></p>
+<p><span style="font-size: 16px;">再来一个上帝视角，看看当 key 为 “BBBB” 的时候发生了什么事情： </span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200801/b8eed3caa74a4c059faa2756cc60ee53.png" /></p>
+<p><span style="font-size: 16px;">进入无限循环内： </span></p>
+<p><span style="font-size: 16px;">①.经过 “AaAa” 之后，tab 就不为 null 了。 </span></p>
+<p><span style="font-size: 16px;">②.当前的槽中已经被 “AaAa” 先放了一个 ReservationNode 进行占位了，所以不为 null。</span></p>
+<p><span style="font-size: 16px;">③.当前的 map 并没有进行扩容操作。</span></p>
+<p><span style="font-size: 16px;">④.包含⑤、⑥、⑦、⑧。</span></p>
+<p><span style="font-size: 16px;">⑤.tabAt 方法取出来的对象，就是之前 “AaAa” 放进去的占位的 ReservationNode，所以满足条件进入分支。</span></p>
+<p><span style="font-size: 16px;">⑥.判断当前是否是链表存储，不满足条件，跳过。 </span></p>
+<p><span style="font-size: 16px;">⑦.判断当前是否是红黑树存储，不满足条件，跳过。</span></p>
+<p><span style="font-size: 16px;">⑧.判断当前下标里面是否放了 node，不满足条件（“AaAa” 只有个占位的Node ，并没有初始完成，所以还没有放到该下标里面），进入下一次循环。</span></p>
+<p><span style="font-size: 16px;"><strong>然后它就在死循环里面出不来了！</strong></span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200801/1d0d5a78bc4341c1bf50445af08bd89a.jpeg" /></p>
+<p><span style="font-size: 16px;">我相信现在大家对于这个 Bug 的来路了解清楚了。</span></p>
+<p><span style="font-size: 16px;">如果你是在 idea 里面跑这个测试用例，也可以这样直观的看一眼： </span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200801/7cba1402ff374ff4ba7a640d2bf222f3.png" /></p>
+<p><span style="font-size: 16px;">点击这个照相机图标：</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200801/3db5d93018d145f5b688f55ee3690a22.png" /></p>
+<p><span style="font-size: 16px;">从线程快照里面其实也是可以看到端倪的，大家可以去分析分析。</span></p>
+<p><span style="font-size: 16px;">有的观点说的是由于线程安全的导致的死循环，经过分析我觉得这个观点是不对的。</span></p>
+<p><span style="font-size: 16px;">它存在死循环，不是由于线程安全导致的，纯粹是自己进入了死循环。 </span></p>
+<p><span style="font-size: 16px;">或者说，这是一个“彩蛋”？</span></p>
+<p><span style="font-size: 16px;">或者......自信点，就说这事 Bug ，能稳定复现的那种。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200801/33f848f160fb41bbb296eb835f27f194.jpeg" /></p>
+<p><span style="font-size: 16px;">那么我们如果是使用 JDK 8 怎么避免踩到这个“彩蛋”呢？</span></p>
+<p><span style="font-size: 16px;">看看 Dubbo 里面是怎么解决的： </span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200801/c92bdd8f47314db08eee81677a060e2f.png" /></p>
+<p><span style="font-size: 16px;"><strong>先调用了 get 方法，如果返回为 null，则调用 putIfAbsent 方法，这样就能实现和之前一样的效果了。</strong></span></p>
+<p><span style="font-size: 16px;">如果你在项目中也有使用 computeIfAbsent 的地方，建议也这样去修改。</span></p>
+<p><span style="font-size: 16px;">说到 <span>ConcurrentHashMap</span>get 方法返回 null，我就想起了之前讨论的一个面试题了： </span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200801/f2ebad436ae6458a9c07579de7ad3e34.png" /></p>
+<p><span style="font-size: 16px;">答案都写在这个文章里面了，有兴趣的可以了解一下《</span>这道面试题我真不知道面试官想要的回答是什么 <span style="font-size: 16px;">》</span></p>
+<p><span style="font-size: 16px;"><strong>Bug 的解决</strong></span></p>
+<p><span style="font-size: 16px;">其实彻底理解了这个 Bug 之后，我们再来看一下 JDK 9 里面的解决方案，看一下官方源码对比： </span></p>
+<blockquote>
+<p><span style="font-size: 16px;">http://gee.cs.oswego.edu/cgi-bin/viewcvs.cgi/jsr166/src/main/java/util/concurrent/ConcurrentHashMap.java?r1=1.258&amp;r2=1.259&amp;sortby=date&amp;diff_format=f</span></p>
+</blockquote>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200801/deb1af5c2fed4ab1b1dded45a21df6f9.png" /></p>
+<p><span style="font-size: 16px;">就加了两行代码， <strong>判断完是否是红黑树节点后，再判断一下是否是 ReservationNode 节点，因为这个节点就是个占位节点。如果是，则抛出异常。</strong></span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200801/86a29907af784420bffd4bce0fdeea40.jpeg" /></p>
+<p><span style="font-size: 16px;">就这么简单。没有什么神秘的。</span></p>
+<p><span style="font-size: 16px;">所以，如果你在 JDK 9 里面执行文本的测试用例，就会抛出 IllegalStateException。</span></p>
+<p><span style="font-size: 16px;">这就是 Doug Lea 之前提到的解决方案： </span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200801/8f11289a273b4801adc3d274dec80baf.png" /></p>
+<p><span style="font-size: 16px;">了解了这个 Bug 的来龙去脉后，特别是看到解决方案后，我们就能轻描淡写的说一句： </span></p>
+<p><span style="font-size: 16px;">害，就这？没听说过！</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200801/f30597db76bc41eabbba80bc60036ccd.jpeg" /></p>
+<p><span style="font-size: 16px;">另外，我看 JDK 9 修复的时候还不止修复了一个问题： </span></p>
+<blockquote>
+<p><span style="font-size: 16px;">http://hg.openjdk.java.net/jdk9/jdk9/jdk/file/6dd59c01f011/src/java.base/share/classes/java/util/concurrent/ConcurrentHashMap.java</span></p>
+</blockquote>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200801/8f6cb3e7114a485aa161f751f37e8d69.png" /></p>
+<p><span style="font-size: 16px;">你去翻一翻。发现，啊，全是知识点啊，学不动了。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200801/3e1776fafe2344e78322545cb41b9a33.png" /></p>
+<p><span><strong><span style="font-size: 16px;">钓鱼执法</span></strong></span></p>
+<p><span style="font-size: 16px;">为什么我在文章的一开始就说了这是 Doug Lea 在钓鱼执法呢？</span></p>
+<p><span style="font-size: 16px;">因为在最开始提问的艺术那一部分，我相信，Doug Lea 跑完那个测试案例之后，心里也有点数了。</span></p>
+<p><span style="font-size: 16px;">大概知道问题在哪了，而且从他的回答和他写的文档中我也有理由相信，他写的这个方法的时候就知道可能会出问题。 </span></p>
+<p><span style="font-size: 16px;">而且，Pardeep 的回复中提到了文档，那我们就去看看官方文档对于该方法的描述是怎样的：</span></p>
+<blockquote>
+<p><span style="font-size: 16px;">https://docs.oracle.com/javase/8/docs/api/</span></p>
+</blockquote>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200801/55adb3d8bec54f4db18bd0e2c52ec3b3.png" /></p>
+<p><span style="font-size: 16px;">文档中说函数方法应该简短，简单。而且不能在更新的映射的时候更新映射。就是说不能套娃。</span></p>
+<p><span style="font-size: 16px;">套娃，用程序说就是recursive（递归），按照文档说如果存在递归，则会抛出 IllegalStateException 。 </span></p>
+<p><span style="font-size: 16px;">而提到递归，你想到了什么？</span></p>
+<p><span style="font-size: 16px;">我首先就想到了斐波拉契函数。我们用 computeIfAbsent 实现一个斐波拉契函数如下：</span></p>
+<p><span style="font-size: 16px;"><span>public</span><span>class</span><span>Test</span>{ </span></p>
+<p><span>static</span>Map&lt;Integer, Integer&gt; cache = <span>new</span>ConcurrentHashMap&lt;&gt;; </p>
+<p><span><span>public</span><span>static</span><span>void</span><span>main</span>( <span>String[] args</span>) </span>{ </p>
+<p>System. <span>out</span>.println( <span>"f("</span>+ <span>14</span>+ <span>") ="</span>+ fibonacci( <span>14</span>)); </p>
+<p>} </p>
+<p><span><span>static</span><span>int</span><span>fibonacci</span>( <span><span>int</span>i </span>) </span>{ </p>
+<p><span>if</span>(i == <span>0</span>) </p>
+<p><span>return</span>i; </p>
+<p><span>if</span>(i == <span>1</span>) </p>
+<p><span>return</span><span>1</span>; </p>
+<p><span>return</span>cache.computeIfAbsent(i, (key) -&gt; { </p>
+<p>System. <span>out</span>.println( <span>"Slow calculation of "</span>+ key); </p>
+<p><span>return</span>fibonacci(i - <span>2</span>) + fibonacci(i - <span>1</span>); </p>
+<p>}); </p>
+<p>} </p>
+<p>} </p>
+<p><span style="font-size: 16px;">这就是递归调用，我用 JDK 1.8 跑的时候并没有抛出 IllegalStateException，只是程序假死了，原因和我们前面分析的是一样一样的。我理解这个地方是和文档不符的。</span></p>
+<p><span style="font-size: 16px;">所以，我怀疑是 Doug Lea 在这个地方钓鱼执法。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200801/32da8f85ef9440859f2bf6ba136cafc0.jpeg" /></p>
+<p><span><strong><span style="font-size: 16px;">CHM一定线程安全吗？</span></strong></span></p>
+<p><span style="font-size: 16px;">既然都说到 currentHashMap（CHM）了，那我说一个相关的注意点吧。 </span></p>
+<p><span style="font-size: 16px;">首先 CHM 一定能保证线程安全吗？ </span></p>
+<p><span style="font-size: 16px;">是的，CHM 本身一定是线程安全的。但是，如果你使用不当还是有可能会出现线程不安全的情况。</span></p>
+<p><span style="font-size: 16px;">给大家看一点 Spring 中的源码吧： </span></p>
+<blockquote>
+<p><span style="font-size: 16px;">org.springframework.core.SimpleAliasRegistry</span></p>
+</blockquote>
+<p><span style="font-size: 16px;">在这个类中，aliasMap 是 ConcurrentHashMap 类型的： </span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200801/0e83569ae60b48cb88782c988dca5f6c.png" /></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200801/9c73821b265a4d83b96cf85849bee365.png" /></p>
+<p><span style="font-size: 16px;">在 registerAlias 和 getAliases 方法中，都有对 aliasMap 进行操作的代码，但是在操作之前都是用 synchronized 把 aliasMap 锁住了。</span></p>
+<p><span style="font-size: 16px;">为什么？为什么我们操作 ConcurrentHashMap 的时候还要加锁呢？</span></p>
+<p style="text-align: center;"><img src="//p3.itc.cn/q_70/images03/20200801/dee74c5debee43df8aab9e7cf1991017.jpeg" /></p>
+<p><span style="font-size: 16px;">这个是根据场景而定的，这个别名管理器，在这里加锁应该是为了避免多个线程操作 ConcurrentHashMap 。</span></p>
+<p><span style="font-size: 16px;">虽然 ConcurrentHashMap 是线程安全的，但是假设如果一个线程 put，一个线程 get，在这个代码的场景里面是不允许的。</span></p>
+<p><span style="font-size: 16px;">如果觉得不太好理解的话我举一个 redis 的例子。</span></p>
+<p><span style="font-size: 16px;">redis 的 get、set 方法都是线程安全的吧。但是你如果先 get 再 set，那么在多线程的情况下还是会有问题的。 </span></p>
+<p><span style="font-size: 16px;">因为这两个操作不是原子性的。所以 incr 就应运而生了。</span></p>
+<p><span style="font-size: 16px;">我举这个例子的是想说线程安全与否不是绝对的，要看场景。给你一个线程安全的容器，你使用不当还是会有线程安全的问题。 </span></p>
+<p><span style="font-size: 16px;">再比如，HashMap 一定是线程不安全的吗？</span></p>
+<p><span style="font-size: 16px;">说不能说的这么死吧。它是一个线程不安全的容器。但是如果我的使用场景是只读呢？</span></p>
+<p><span style="font-size: 16px;">在这个只读的场景下，它就是线程安全的。 </span></p>
+<p><span style="font-size: 16px;">总之，看场景。道理，就是这么一个道理。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200801/dbc5eee5843243b78db289e86de6fba1.jpeg" /></p>

@@ -1,0 +1,46 @@
+➜中国军方禁止军人使用可穿戴智能设备
+https://www.solidot.org/story?sid=44063	9448
+《解放军报》上周日<a target="_blank" href="http://www.81.cn/jfjbmap/content/2015-05/10/content_110417.htm"><u>发出警告</u></a>，要求士兵将智能手表和健身追踪器留在家里，称敌人可能利用这些设备查明部队位置，拍照、录音，并将其发送到网上。军报报道说，南京军区一名新兵收到女友寄来的生日礼物——一块新型“智能手表”后，引起班长警惕，因为该手表具有上网、定位和通话等功能，在军营使用违反安全保密规定。NBC证实中国军方已经下达了有关禁令。<a target="_blank" href="http://www.bbc.co.uk/zhongwen/simp/science/2015/05/150513_scitech_china_army"><u>一名安全专家说</u></a>，中国军方这一禁令并不意外，多数国家的军队都已经禁止在军营里使用智能手机。
+➜io.js与Node.js合并
+https://www.solidot.org/story?sid=44064	10622
+在5月13日召开的io.js技术委员会<a target="_blank" href="https://github.com/iojs/io.js/issues/1689"><u>会议</u></a>上，委员会成员对是否<a target="_blank" href="https://github.com/iojs/io.js/issues/1664#"><u>加入Node基金会</u></a>进行了投票表决，去年从Node.js分裂出来的io.js项目正式决定与Node.js<a target="_blank" href="https://github.com/iojs/io.js/issues/1664#issuecomment-101828384"><u>合并</u></a>，加入Node基金会。开源社区的分裂是家常事，但合并则比较稀罕。在从Node.js分裂出来期间，io.js的发展速度之快令人瞩目。根据合并计划，在合并期间io.js仍然会继续释出新版本。
+➜Canonical将维护Linux 3.19分支至2016年
+https://www.solidot.org/story?sid=44065	12941
+内核稳定版分支维护者Greg Kroah-Hartman <a target="_blank" href="http://mid.gmane.org/%3C20150511133115.GA24184%40kroah.com%3E"><u>发布了</u></a>Linux 3.19的最后一个版本3.19.8，他督促用户尽快升级到4.0.x（即3.19的下一个版本）。Canonical刚刚发布的Ubuntu 15.04使用的内核版本就是3.19，15.04不是长期支持版本（LTS），LTS版本的支持时间有5年，而15.04<a target="_blank" href="https://wiki.ubuntu.com/Releases"><u>只有9个月</u></a>，2016年1月结束。Ubuntu内核团队在邮件列表上<a target="_blank" href="http://article.gmane.org/gmane.linux.kernel.stable/135734"><u>表示</u></a>，他们将会维护3.19分支至2016年7月。Canonical建立的Linux 3.19分支是linux-3.19.y{-queue,-review}。
+➜Windows 10有6个版本
+https://www.solidot.org/story?sid=44066	15034
+微软官方博客宣布了<a target="_blank" href="http://blogs.windows.com/bloggingwindows/2015/05/13/introducing-windows-10-editions/"><u>Windows 10的各个版本</u></a>。Windows 10将于今年夏天在190个国家发布，支持111种语言，它将能运行在PC、平板、手机、Xbox One、Microsoft HoloLens和Surface Hub上，成为微软第一种真正的通用操作系统。为了适合不同的设备和不同类型的消费者，Windows 10提供了6个版本：面向消费者的Windows 10 Home；面向移动用户的Windows 10 Mobile；与Home基本相同但加入满足小型企业需求的额外功能的Windows 10 Pro；面向中型和大型企业的Windows 10 Enterprise；面向学校的Windows 10 Education；面向移动领域的企业消费者的Windows 10 Mobile Enterprise。
+➜研究人员公开VENOM漏洞
+https://www.solidot.org/story?sid=44067	15359
+<a href="http://citypw.blogspot.com">Shawn the R0ck</a> 写道<i> "在”禁运期“结束后，CrowdStrike的安全研究人员Jason Geffner<a target="_blank" href="http://venom.crowdstrike.com/">公开了名为VENOM"毒液“的QEMU漏洞</a>，这个编号为CVE-2015-3456可以造成虚机逃逸，<a href="https://en.wikipedia.org/wiki/QEMU">QEMU</a>是一个指令级模拟器的自由软件实现，被广泛用于各大GNU/Linux发行版（包括<a target="_blank" href="https://security-tracker.debian.org/tracker/CVE-2015-3456">Debian</a>, Gentoo, <a target="_blank" href="https://www.suse.com/support/kb/doc.php?id=7016497">SUSE</a>, <a target="_blank" href="https://access.redhat.com/articles/1444903">RedHat</a>, CentOS等），当hypervisor层(ring0的kvm以及ring0/1的Xen)无法实现某些硬件模拟时就会让QEMU去处理，而这次造成漏洞的是QEMU模拟软盘控制器(FDC)的模块，在guest中可以构造特定的FDC请求发给host然后造成QEMU在host上的进程的任意代码执行，<a target="_blank" href="https://en.opensuse.org/User:Msmeissn">SUSE安全组的项目经理Marcus Meissner</a>已经<a target="_blank" href="https://marc.info/?l=oss-security&amp;m=143155206320935&amp;w=2">公开了这个漏洞的PoC</a>，虽然目前并没有发现公开的稳定漏洞利用，但这个可以造成虚机逃逸的漏洞对于数字军火商而言价值极高，而且这个漏洞是自2004年开始就已经存在，建议企业安全运维人员应该尽早的打补丁。
+"</i>
+➜Facebook开始直接刊登新闻媒体的文章
+https://www.solidot.org/story?sid=44068	18461
+《纽约时报》、《国家地理》、BuzzFeed、NBC、《大西洋月刊》、《卫报》、德国《明镜周刊》等九家媒体开始在Facebook直接刊登文章。这项功能被称为<a target="_blank" href="http://media.fb.com/2015/05/12/instantarticles/"><u>Instant Articles</u></a>。Facebook称，对没什么耐心的智能手机用户而言，最重要的是这些所谓的“即时文章”，会让文章的加载速度比平常快10倍，因为读者可以待在Facebook上，而不必点击链接、登录另一个网站。这些新闻出版商可以将各自销售的广告嵌入文章所在页面，并保留全部收入；也可以让Facebook出售广告，Facebook将抽走30%的收入。新闻公司会在自营网站上追踪网站访客，Facebook还允许这些公司使用同样的工具来收集读者数据。Facebook在全世界有超过14亿活跃用户，它受到的手机用户的关注，以及向新闻网站带去的访问量，都超过了其他社交网络服务。但Facebook变身为强大的新闻发行商，<a target="_blank" href="http://cn.nytimes.com/technology/20150513/c13facebook/"><u>让许多新闻从业者感到不安</u></a>。他们担心，他们制作的内容会更多地以Facebook为目的地，而不是自身的网站，导致读者和广告业务的分流。
+➜C919首飞和交付将延期
+https://www.solidot.org/story?sid=44069	29663
+路透社援引知情人士的消息<a target="_blank" href="http://cn.reuters.com/article/2015/05/14/china-airplane-idCNKBS0NZ06G20150514?sp=true"><u>报道</u></a>，中国商飞研发的窄体客机C919首飞时间较计划推迟，交付时间也可能推迟最多两年，一个理由据称是确保客机飞行安全。C919首飞时间原计划2015年底，将推迟到2016年上半年。C919目标是与空客A320飞机和波音737飞机竞争。消息人士称，首架C919的交付时间可能也会推迟到最晚2020年，这意味着C919将比A320和波音737的改良型号更晚服役。消息人士称，C919最后组装所需时间比预期要长。中国商飞已接获450架C919订单，主要来自中国的航空公司、以及中资银行及金融机构支持下的租赁公司。
+➜美国众议院投票结束NSA大规模电话数据收集
+https://www.solidot.org/story?sid=44070	30966
+在Edward Snowden曝光美国大规模收集电话数据两年之后，众议院以<a target="_blank" href="http://clerk.house.gov/evs/2015/roll224.xml"><u>338票对88票</u></a>压倒性的通过了结束大规模电话数据收集的美国自由法案（USA Freedom Act）。47名共和党议员和41名民主党议员投了反对票，他们反对的主要理由是法案的提议不足以保护公民自由。美国自由法案只提议改革电话数据收集，而没有包含许多其他人希望进行的改变，比如要求政府在调查期间收集信息时尽可能的去除无关人士。这一法案还需要<a target="_blank" href="http://arstechnica.com/tech-policy/2015/05/house-votes-338-88-to-stop-bulk-phone-surveillance/"><u>通过参议院的投票</u></a>。
+➜系统调用如何应对2038年问题
+https://www.solidot.org/story?sid=44071	34431
+1996年6月4日对欧洲航天局来说是<a target="_blank" href="http://www.bbc.com/future/story/20150505-the-numbers-that-lead-to-disaster"><u>黑暗的一天</u></a>，阿丽亚娜5型运载火箭第一次发射，它携带了四枚昂贵的科学卫星，火箭仅仅升空37秒就变成了天空中的一团火焰。调查显示，故障与硬件无关而<a target="_blank" href="http://en.wikipedia.org/wiki/Ariane_5#Notable_launches"><u>与软件有关</u></a>。一个数据从64位浮点值转变成16位符号整数值后发生整数溢出。这起事故可能是整数溢出导致最昂贵事故，损失超过3亿美元。整数溢出是因为超过数据储存空间的最大容量而发生的错误。16位空间能储存最多32,767个值，32位空间能储存最多2,147,483,647个值。类Unix系统采用的是32位时间计数time_t，计数从1970年开始，到2038年1月将会超过2,147,483,647秒。这就是著名的2038年问题。今天我们距离2038年还有不到23年，Linux系统是否做好了准备？LWN发表了<a target="_blank" href="http://lwn.net/Articles/643234/"><u>一篇文章</u></a>，介绍了Linux系统调用应对2038年问题作出的改变。
+➜世界上最粗鲁的机器人设计激怒呼叫中心的客服
+https://www.solidot.org/story?sid=44072	35372
+新西兰公司Touchpoint Group<a target="_blank" href="http://www.cnet.com/news/dawn-of-the-worlds-angriest-robot/"><u>正在建造世界上最粗鲁的机器人</u></a>，它将会始终保持在愤怒状态。该公司的设想是模拟愤怒的客户，帮助企业或机构更好的理解客户为什么会生气，训练呼叫中心客服更好的应对此类客户。这一项目代号位 Radiant，澳大利亚的一家大型银行向该项目提供了与客户打交道的真实记录。
+➜互动地图告诉你哪里最多凶杀案
+https://www.solidot.org/story?sid=44073	36122
+<a href="http://kejixianfengdui.blogspot.com/">fredericktcw</a> 写道 <i>"巴西里约热内卢一所大学从联合国相关部门取得各国凶杀案的相关数据，进行适当的整理之后制作了一个非常实用的<a href="http://homicide.igarape.org.br/"><u>互动凶杀案地图</u></a>。透过这个<a href="http://homicide.igarape.org.br/" target="_blank">互动凶杀案地图</a>，我们可以知道219个国家的凶杀案数据。从这个地图可以得知在2012年，全球有43.7万人被杀，平均就是每10万人中就有6.2人被杀，其中被杀的男性占78%。在这219个国家里面，占全球人口8%的拉丁美洲和加勒比海是凶杀案发生作对的地方，占总数的三分之一。透过Country List可以看到全球219个国家人口、凶杀案比例等资料。在拉丁美洲和加纳碧海，<a href="http://homicide.igarape.org.br/" target="_blank">互动凶杀案地图</a>有详细的资料，包括遇害者的性别、年龄分布、凶器种类等等。但一些国家的资料比较简单，只有凶杀案数字和每10万人的遇害比例。以马来西亚为例（我住在马来西亚），2012年共有652件凶杀案发生，相当于每10万人就有2.3人死于凶杀案。其实比起人口相近的台湾每10万人有3人死于凶杀案、沙特每10万人就有0.8人死于凶杀案的比例来看，马来西亚比上不足比下有余。"</i>
+➜CCTV公布庆安火车站枪击事件剪辑视频
+https://www.solidot.org/story?sid=44074	39111
+官方媒体CCTV公布了<a target="_blank" href="http://news.cntv.cn/2015/05/14/VIDE1431573931534702.shtml"><u>庆安火车站枪击事件监控视频</u></a>，由多个探头的监控录像剪辑而成。官方坚称开枪的民警是正当履行职务行为。在2014年发生多起暴力事件后当局开始授权<a target="_blank" href="http://www.solidot.org/story?sid=39284"><u>普通警察佩枪巡逻</u></a>，允许他们在紧急情况下开枪。中国是对枪械管控最严格的国家之一。庆安火车站枪击事件引发了广泛争议，死者徐纯合的代表律师刘书庆<a target="_blank" href="http://www.bbc.co.uk/zhongwen/simp/china/2015/05/150514_china_heilongjiang_railway_shooting"><u>声称</u></a>，徐纯合封堵通道虽然是行为过激，“但是他不是无缘无故的”，是因为车站安检人员把他认出，以为他要上访，通知县政府官员到场拦截，才导致其情绪失控。
+➜暗网市场繁荣依旧
+https://www.solidot.org/story?sid=44075	40954
+暗网地下市场丝绸之路于2013年10月被关闭站长被捕，丝绸之路2.0的站长也在2014年11月遭到逮捕，而Evolution市场的管理员则在前不久<a target="_blank" href="http://www.solidot.org/story?sid=43367"><u>携款跑路了</u></a>。尽管发生了这一系列的事件，暗网市场的<a target="_blank" href="http://www.dailydot.com/crime/dark-net-census-growth-37-percent/"><u>繁荣依旧</u></a>。市场上销售的产品数量过去一年增长了超过37%。10大暗网黑市列出了超过68,738个商品，其中超过三分之二是毒品，其余是武器，被盗的信用卡和账号、恶意程序等等。虽然我们能知道商品数量，但交易额有多大则只有黑市管理员知道。目前最大的地下市场是Agora，建于2014年12月，占了所有产品列表的37%。
+➜朝鲜潜射导弹测试揭开全球核竞争的冰山一角
+https://www.solidot.org/story?sid=44076	43550
+朝鲜上周末试射了潜射导弹，试射恰逢不扩散核武器条约国在纽约召开会议评估禁核进展。朝鲜的举动显示进展不妙。根据1968年的不扩散核武器条约，五大国——美国、英国、俄罗斯、中国和法国只要核裁军就允许有核武器，其它国家则同意非核化。但今天的情况显示，有核国家的数量在增加并且在加快现代化，而两大核大国的核裁军步伐则在放慢。美国退役的战略核弹头从2004-2008年之间的3287枚降至之后的500枚，而俄罗斯则从2500枚降至1500枚。有核国家增加了4个——以色列、印度、巴基斯坦和朝鲜，<a target="_blank" href="http://www.newscientist.com/article/dn27519-north-korea-missile-test-is-the-tip-of-worlds-nuclear-iceberg.html"><u>他们都在大幅投资现代化核武器</u></a>。以美国为例，它计划在未来十年投资3500亿美元。反核智库Ploughshares基金会的Joe Cirincione说，弹头的现代化将是一个问题，武器变得更精确，而弹头变得更小，使它们更具有可用性，也更可能被使用。中国、印度和巴基斯坦都在加速核军备竞赛，印度和巴基斯坦没有签署不扩散核武器条约，不需要遵守条约。中国虽然签署了，但条约对它扩大核武库也没有束缚力。
+➜超清蓝光光盘规格完成
+https://www.solidot.org/story?sid=44077	45512
+蓝光光盘联盟完成了<a target="_blank" href="http://www.anandtech.com/show/9249/bluray-disc-association-completes-uhd-bluray-specification"><u>超清蓝光光盘规格</u></a>，100GB大小的光盘即将面世。新的超清蓝光支持3840×2160 4K分辨率，支持最高60 FPS，使用H.265/高效视频编码，支持Rec.2020色彩饱和度，10位每通道色深，可能的色彩数增加到10.7亿。规格定义了两种容量的蓝光光盘，分别为66GB和100GB——即每层33GB，光盘由两层和三层构成。新的蓝光播放器将会兼容旧的蓝光光盘，但旧的蓝光播放器将不能播放新的超清蓝光光盘。PS4和Xbox One使用的是旧的蓝光播放器。<br>

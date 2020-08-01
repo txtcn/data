@@ -1,0 +1,241 @@
+➜七麦数据：ASM 里的那些难懂的英文词，收藏这篇图文就能解决一切
+http://www.sohu.com/a/250568403_100065715	42793
+<p>虽然 ASM 会是将来大部分开发者都要争的流量渠道，但苹果的老毛病还是让大家头疼不已——<strong>竞价广告的后台全是英文界面</strong>，对于英文水平不是很高的投放人员或者刚接触广告投放工作的新人来说，这的确不是一个很好的体验，操作门槛太高了。</p>
+<p>为了解决这个翻译问题，<strong>我们把 ASM 常用的英文单词进行了分类，并翻译成中文</strong>，帮助大家在 ASM 投放时更容易理解相关投放操作和概念。</p>
+<p><strong>一、基本概念</strong></p>
+<p><strong>ASM</strong></p>
+<p>App Store Marketing，苹果应用商店营销，指开发者在 App Store 上的获客行为，狭义上 ASM 专指 App Store 的竞价广告业务。</p>
+<p><strong>Search Ads</strong></p>
+<p>苹果在 App Store 内的关键词竞价广告，投放人员可进行对关键词进行出价投放，竞争关键词搜索结果最上方的广告位。</p>
+<p><strong>二、账户结构</strong></p>
+<p>ASM 的账户可以分为 5 个级别——账户（Account）、广告项目组（Campaign Group）、广告项目（Campaign）、关键词组（Ad Group）与关键词（Keywords），如下图所示：</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/7a1be1f2c10147afbe59e892a00e8e5b.jpg" max-width="600" /></p>
+<p><strong>Keywords</strong>关键词，竞价广告中最低的投放单元。</p>
+<p><strong>Ad Group</strong>关键词组，多个关键词的集合。投放人员可以设置多个词组，比如可以将竞品词设置为一组，也可以为长尾词设置一组。</p>
+<p><strong>Campaign</strong>广告项目，对应的是一款 App 的广告投放，一个项目下可设置多个关键词组（Ad Group）。</p>
+<ul>
+<li>一个广告项目只能设置一款产品在一个地区的竞价投放，但一款产品可以设置多个广告项目。比如某电商产品有一个项目是常规投放，为了双十一可以再创建一个双十一的项目；如果这款产品想要投放某个海外国家，也要单独设置一个项目。</li>
+<li>项目一词不是 Campaign 的直译，Ad Group 是关键词的集合，Campaign 则是关键词组的集合，它们与关键词的关系相当于是文件（Keywords）、文件夹（Ad Group）和更大的文件夹（Campaign）。由于苹果没有给出正式的中文翻译 ，Ad Group 可以很轻易地翻译为词组，Campaign 则只能暂时译为广告项目更为合适。</li>
+</ul>
+<p><strong>Campaign Group</strong>项目组，广告项目（Campaign）的集合。投放人员通常用不到这一级别，项目组是苹果为代理商准备的级别。一个客户往往有多个产品或者多个地区的投放需求，因此用项目组进行广告投放与账户管理会更方便。</p>
+<p><strong>Account</strong>账户，任何一个 Apple ID 都可以进行搜索广告开户（是哒，即便不是开发者账号也可以开），因此投放的产品不一定是自家产品，App Store 在线的绝大部分产品都可以投放。</p>
+<p><strong>三、设置关键词投放</strong></p>
+<p>这部分主要包括投放人员进行 ASM 操作步骤中的各项操作</p>
+<p><strong>1.Campaign Settings 广告项目设置</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/4c00d6808638446b969ff28e87c764bb.jpg" max-width="600" /></p>
+<p><strong>App Name</strong>产品名称。</p>
+<p><strong>Storefront</strong>投放广告的地区，截止发文（2017/8/31），竞价广告支持的国家只有 4 个 - 美国、英国、澳大利亚、新西兰。</p>
+<p><strong>Campaign Name</strong>广告项目名称，类似于文件夹的名称。</p>
+<p><strong>Budget</strong>预算金额。由于使用信用卡绑定的账户，因此广告投放是先生效、后扣款，广告每满 500 美金或者每满 1 周扣一次款。</p>
+<p><strong>Daily Cap</strong>每日预算限制，就是一个防止一天内跑很多预算的功能。</p>
+<p><strong>Negative Keywords</strong>直译为「消极关键词」，投放人员把一些质量差的关键词（比如价格高、转化率低、留存差等）设置为各个级别的消极关键词，那么该关键词就不会在该级别被投放出价，从而避免预算浪费。因此 Negative Keywords 也可译为关键词黑名单。</p>
+<p><strong>Campaign Negative Keywords</strong>广告项目级别的关键词黑名单，如果在广告项目的黑名单中添加了某关键词，那么在这一项目中，该关键词就不会被投放出价。</p>
+<p><strong>2.Ad Group Settings 设置关键词组</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/c19e314801d446aba8578211c6e55642.jpg" max-width="600" /></p>
+<p><strong>Ad Group Name</strong>关键词组名称，类似于文件夹的名称。</p>
+<p><strong>Device</strong>选择广告展示的设备，有三个选项可选：</p>
+<p>iPad and iPhone - iPad 与 iPhone 双平台；</p>
+<p>iPad Only - 仅在 iPad 展示广告；</p>
+<p>iPhone Only - 仅在 iPhone 展示广告。</p>
+<p><strong>Ad Scheduling</strong>广告时间表，可以设置该广告项目的投放时间计划：</p>
+<ul>
+<li><strong>Start Date</strong> - 开始时间；</li>
+<li><strong>End Date（Optional）</strong> - 结束时间（选填）；</li>
+<li><strong>Default Max CPT Bid</strong> - 默认 CPT 竞价，该广告项目下的所有关键词，都按照此出价投放，投放人员之后也可以对单独某个词进行调整；</li>
+<li><strong>CPA Goal</strong> - CPA 预期，投放人员可以设置预期的 CPA 与广告开始投放后的实际 CPA 进行对比。</li>
+</ul>
+<p><strong>Search Match</strong></p>
+<p>搜索匹配。打开搜索匹配之后，竞价广告系统会根据产品自动匹配一些相关的关键词。</p>
+<p><strong>3.设置关键词</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/88c7668d4a0541f7b21e374c34df00dc.jpg" max-width="600" /></p>
+<p><strong>Recommended Keywords</strong>推荐关键词。投放人员设置要投放的关键词之前，竞价系统会推荐一些相关性较高的关键词供开发者选择。</p>
+<p><strong>Search Popularity</strong>搜索流行度，反映一个关键词近期搜索量大小的数据，但目前竞价系统没有给到具体的数值，仅用条形长短来表示搜索流行度的大小。</p>
+<p><strong>Exact Match/Broad Match</strong>精确匹配与模糊匹配。精确匹配是指，竞价广告只会投放设置好的关键词；模糊匹配是指，竞价广告对当前设置的关键词，匹配一些相关的关键词进行投放。</p>
+<p>（关于这两种匹配方式，我们之后会单独进行详细讲解）</p>
+<p><strong>Group Negative Keywords</strong>词组级别的关键词黑名单。如果在某一词组中的黑名单添加了某关键词，那么在这一词组中，该关键词就不会被投放出价，但不会影响改关键词在其他词组的投放。</p>
+<p><strong>Audience</strong>用户群，可以设置广告投放的定向，有 4 个项目可以选择：</p>
+<ol>
+<li><strong>Customer Types</strong> - 用户类型：</li>
+<li>Have not downloaded the app - 没有下载过此 App 的用户，即新用户；</li>
+<li>Have downloaded the app - 曾下载过此 App 的用户，即老用户；</li>
+<li>All uses - 所有用户。</li>
+<li><strong>Gender</strong> - 性别：</li>
+<li>All - 所有性别；</li>
+<li>Male - 男性；</li>
+<li>Famale - 女性。</li>
+<li><strong>Age Range</strong> - 年龄范围。</li>
+<li><strong>Locations</strong> - 地区。</li>
+</ol>
+<p><strong>四、统计项目与数据指标</strong></p>
+<p><strong>1.数据概况</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/524db684cef648c5b2b44634cb20553a.jpg" max-width="600" /></p>
+<p><strong>Status</strong>指某一广告项目、关键词组与关键词的投放状态，分为 3 种状态 - 正常（Running）、暂停（Paused）与异常停止（On Hold）。</p>
+<p><strong>CPT Bid</strong>点击竞价。竞价广告是按照点击收费的，CPT 即 Cost Per Tap，Bid 则是对每一次的广告点击出价，与其他广告竞争展示机会。竞价体系中，影响广告展示与价格的两个主要因素是出价与相关性（App 与竞价关键词的相关性）。</p>
+<p><strong>Spend</strong>消耗，指某一广告项目、关键词组与关键词，在一段时间内的预算消耗。</p>
+<p><strong>Avg CPT</strong>某一广告项目、关键词组与关键词，在一段时间内的平均点击价格。</p>
+<p><strong>Avg CPA</strong>某一广告项目、关键词组与关键词，在一段时间内的平均获客成本。</p>
+<p><strong>Impression</strong>某一广告项目、关键词组与关键词，在一段时间内的展示次数。</p>
+<p><strong>Taps</strong>某一广告项目、关键词组与关键词，在一段时间内的点击数。</p>
+<p><strong>Conversions</strong>某一广告项目、关键词组与关键词，在一段时间内的下载量。</p>
+<p><strong>TTR</strong>某一广告项目、关键词组与关键词，在一段时间内，从展示到点击的转化率，受标题、icon、描述、截图、视频、App 与词的相关性影响。</p>
+<p><strong>CR</strong>某一广告项目、关键词组与关键词，在一段时间内，从点击到下载的转化率，主要受上述素材与评论的影响。</p>
+<p><strong>2.Search Term - 搜索项目</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/dac6139ddde04ce4910f7353b4e41a9a.jpg" max-width="600" /></p>
+<p><strong>Search Term</strong>搜索项目，是指广告搜索量的详细来源，会统计到下载量来自哪个关键词——这里的关键词不是指投放设置的关键词，而是指用户看到并点击广告之前，搜索的关键词——因为有自动匹配（Search Match）与（Broad Match），所以投放人员设置的关键词与用户搜索的关键词并不完全一样。</p>
+<p><strong>Low volume terms</strong>只有大于 10 个展示量才会被统计为一个搜索项目中，小于 10 的搜索展示量都会被合并统计到这个 Low volume terms 里。</p>
+<p><strong>Match Source</strong>广告搜索量来源的分类，主要有两类：</p>
+<ul>
+<li><strong>Keyword</strong> - 用户搜索的是投放人员设置的关键词，以及竞价系统根据这些设置的词模糊匹配（Broad Match）出的关键词；</li>
+<li><strong>Search Match</strong> - 投放人员打开自动匹配（Search Match）后，用户搜的是竞价系统根据产品本身自动匹配出的关键词。</li>
+</ul>
+<p><strong>五、账户设置</strong></p>
+<p><strong>1.Overview - 概况</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/6f3a03c9f23a458b949e1bd7208b7b67.jpg" max-width="600" /></p>
+<p><strong>Account Name</strong>账户名称。</p>
+<p><strong>Address</strong>地址。</p>
+<p><strong>Time zone</strong>时区，创建账户时选择时区之后无法进行更改。</p>
+<p><strong>Currency</strong>币种，创建账户时选择币种之后无法进行更改。</p>
+<p><strong>Tax ID</strong>税号，选填。</p>
+<p><strong>Primary contact name</strong>主要联系人姓名。</p>
+<p><strong>Phone number</strong>联系电话。</p>
+<p><strong>Email adress</strong>邮箱地址。</p>
+<p><strong>2.User Management - 账户管理名单</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/4cd548c0354545d0b57caf03c1296f38.jpg" max-width="600" /></p>
+<p><strong>Invite Users</strong>邀请他人作为账户管理者。</p>
+<p><strong>First name、Last name、Apple ID</strong>被邀请人的姓名与 Apple ID。</p>
+<p><strong>Account admin</strong>角色一，账户管理者，对整个账户拥有管理（操作+查看）的权限。</p>
+<p><strong>Account Read Only</strong>角色二，账户访客，可对整个账户的数据进行查看，但无操作权限。</p>
+<p><strong>Campaign group access</strong>项目组管理名单，拥有 3 个角色：</p>
+<ul>
+<li><strong>Campaign Group Manager</strong></li>
+<li>角色三，项目组管理者，拥有对某个项目组的管理（操作+查看）权限。</li>
+<li><strong>Campaign Manager</strong></li>
+<li>角色四，项目管理者，拥有对某个项目的管理（操作+查看）权限。</li>
+<li><strong>Read Only</strong></li>
+<li>角色五，项目访客，可对某个项目的数据进行查看，但无操作权限。</li>
+</ul>
+<p><strong>3.API</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/d4eac92ba8724ce899401b1babf3cadf.jpg" max-width="600" /></p>
+<p><strong>Creat API Certificate</strong>创建 API 证书。</p>
+<p><strong>Api certificate name</strong>API 名称。</p>
+<p><strong>Account name &amp; role</strong>API 对应的账户与角色。</p>
+<p><strong>Expiration date</strong>到期时间。</p>
+<p><strong>4.Billing - 账单</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/a2a0a18aaab94ba48fe5d62f6c8006cb.jpg" max-width="600" /></p>
+<p><strong>Payment Method Details</strong>支付方式详情，主要是支付信用卡的卡号、持卡人、地址等信息。</p>
+<p><strong>Card Transactions</strong>交易记录，包括以下 5 项数据：</p>
+<ul>
+<li><strong>Date</strong> - 日期；</li>
+<li><strong>Billing Notification</strong> - 账单号；</li>
+<li><strong>Status</strong> - 交易状态，通常会是 Charged，即交易成功；</li>
+<li><strong>Payment Details</strong> - 支付细节，在这里会显示卡号的后四位（有时同一账号会使用多个信用卡进行交易）；</li>
+<li><strong>Amount</strong> - 金额。</li>
+</ul>
+<p><strong>六、其他操作与设置</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/30f61d9fa6714b1e829e8c64bb56f230.jpg" max-width="600" /></p>
+<p><strong>Actions</strong>在查看统计数据时，对项目、关键词组、关键词进行调整，可进行的操作有：</p>
+<ol>
+<li><strong>Active/Pause</strong> - 启动/暂停某一项目、关键词组、关键词； </li>
+<li><strong>Duplicate</strong> - 复制当前关键词组、关键词到其他项目、其他关键词组中。比如可以把一款产品在美国的一个项目中的某几个组，很快地复制到英国的项目中，不必重新设置。</li>
+<li><strong>Selected Keywords/All Keywords</strong> - 在复制关键词时，可选择复制选中的关键词还是当前关键词组中所有关键词。 </li>
+<li><strong>Download Keywords</strong> - 下载当前词组中的关键词与配置。 </li>
+<li><strong>Upload Keywords</strong> - 上传关键词与配置，除了在后台对关键词进行设置，也可以自己制作关键词的数据表，然后进行上传。 </li>
+<li><strong>Download Data</strong> - 下载当前数据。</li>
+</ol>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/34afdb7ba3194fc8a469a2f5cd025c9f.jpg" max-width="600" /></p>
+<p><strong>Creat Campaign/Creat Ad Group/Add Keywords</strong>添加新的项目、新的关键词组、新的关键词。</p>
+<p><strong>Edit campaign settings/Edit ad group settings</strong>调整当前项目、关键词组的设置。</p>
+<p><strong>Edit columns</strong>在查看统计数据时，自定义统计表的内容与数据。</p>
+<p>▼好，这些就是大家在 ASM 的投放中，经常遇到的英文单词以及对应的翻译和解释了。如果大家对其他的一些英文名词不了解、但在这篇没有提到的话，也可以给我们留言~</p>
+<p>更多ASM内容可联系七麦数据，七麦数据（原ASO100）- 专业移动推广数据分析平台 - ASO优化|ASM竞价广告|iOS|App Store|苹果应用商店|安卓市场|榜单</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/e794e9d83b0f49e78ab07963b1e1fded.jpeg" max-width="600" /></p>
+➜ASM后台更新：数据报表可直接设置/修改 CPA Goal
+http://www.sohu.com/a/250568567_100065715	42946
+<p>苹果 ASM 后台进行了一次微小的更新——<strong>在广告项目（Campaign）一级的数据报表里，增加了一列新的数据 CPA Goal（参考 CPA），</strong>投放人员可对每一个关键词组（Ad Group）的 CPA Goal 的实时调整。如图所示：</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/a73a075cf34440b2b10766177b4076ae.jpg" max-width="600" /></p>
+<p>之前这一数据表是没有 CPA Goal 的数据的，投放人员想要调整这一数据的话，只能先点击进入到每个关键词组（Ad Group）中，然后点击右上角的编辑关键词组设置才能修改。再考虑到竞价广告操作后台的延迟，这一操作的体验就会变得很差。之前至少需要三步：</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/911a24ddcd3e4760b451bcee1fa92bf2.gif" max-width="600" /></p>
+<p>第一步，从广告项目（Campaign）页面进入到关键词组（Ad Group）页面；</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/cd1af169b05a45698f89f88943f545d4.gif" max-width="600" /></p>
+<p>第二部，在关键词组（Ad Group）页面点击编辑关键词组设置（Edit Group Settings）；</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/3550e62febc64452835ab6b3bd65d1dd.gif" max-width="600" /></p>
+<p>第三步，在词组设置页面中，设置或修改 CPA Goal。</p>
+<p><strong>更新之后就只需要一步了：</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/7b964500e1cf455b9acc9623f5cbc3f9.gif" max-width="600" /></p>
+<p>的确方便了很多！</p>
+<p><strong>最后再谈一谈 CPA Goal。</strong>相比 ASM 中搜索匹配（Search Match）、模糊匹配（Broad Match）、关键词出价（Bid）等项目，CPA Goal 是最被大家忽视的一项设置了，原因也很简单——<strong>目前 CPA Goal 对竞价投放没什么影响，既不会影响展示量、点击价格，也不会影响某一关键词组的投放状态（正常运行 or 暂停）。</strong></p>
+<p>但苹果似乎对 CPA Goal 的重视程度很高，除了这次对操作方式进行了优化，还有专门的实际 CPA 与 CPA Goal 的对比数据图，甚至全年 WWDC 发布搜索广告时，还专门介绍了这一功能。</p>
+<p>▼ </p>
+<p>但这一功能真的是投放人员日常工作的高频功能么？目前看来还不是，大家并不经常用到 CPA Goal。</p>
+<p>一方面，苹果之后可能会继续加强 CPA Goal 的功能性，比如通过 CPA Goal 和实际 CPA 的对比，实现智能调整出价、暂停投放等效果；另一方面，大家对苹果的各种后台抱怨很多，苹果这次的优化也表示出一种态度——你们的提的意见我都知道啦，我们卓越的工程师正在修改呢。</p>
+<p>更多ASM内容可联系七麦数据，七麦数据（原ASO100）- 专业移动推广数据分析平台 - ASO优化|ASM竞价广告|iOS|App Store|苹果应用商店|安卓市场|榜单</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/e21ed70c8e094bad8837cefb6f0f4ca6.jpeg" max-width="600" /></p>
+➜ASM 晋级之路｜初识 ASM 与账号注册详解
+http://www.sohu.com/a/250572385_100065715	43069
+<p><strong>一、什么是 ASM？</strong></p>
+<p>ASM 指 <strong>App Store Marketing</strong>，即“<strong>应用商店营销</strong>”，简称 ASM。</p>
+<p>当用户在 App Store 搜索某些关键词时，可以将你的 App 展示在搜索结果顶部的广告位上。</p>
+<p><strong>搜索广告一共有三种展现形式：1、标题+icon+截图</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/f731b15586f4458f8573d496f202cd3e.jpg" max-width="600" /></p>
+<p><strong>2、标题+icon+描述</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/044a3f604797406dbce50bac27b092c2.jpg" max-width="600" /></p>
+<p><strong>3、标题+icon+视频预览</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/3ead3fb7804447639a4ba313b34173e0.jpg" max-width="600" /></p>
+<p>App 的 icon 右下角会有一个“<strong>Ad</strong>”，为<strong>广告标识</strong>。另外，该 App 的展示位是<strong>蓝色的背景</strong>，<strong>与其他搜索结果区分开来</strong>。</p>
+<p><strong>App 在搜索广告上的展示内容与其在自然搜索排名下的内容相同</strong>，开发者不必也不能单独为搜索广告设置素材，也无法选择或设置广告具体以某种方式展现。</p>
+<p><strong>二、账号注册</strong></p>
+<p><strong>1、使用 AppleID 就可以直接进入下面创建账号页面</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/fbf52f13c049431cbb985f96cf393552.jpg" max-width="600" /></p>
+<p>创建账号 </p>
+<p><strong>创建账号页面包括账号信息和主要账户</strong>。账号信息里需要填写<strong>账户名</strong>、<strong>地址</strong>（要具体到街道，更详细的地址为选填项）、<strong>时区</strong>、<strong>货币</strong>、<strong>税号</strong>。</p>
+<p><strong>2、填写主要账户</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/8321abe9609340ada6c02a95731ca30a.jpg" max-width="600" /></p>
+<p>主要账户 </p>
+<p>主要账户里需要填写<strong>账户名</strong>、<strong>联系电话</strong>、<strong>邮件</strong>，并默认勾选了<strong>「我愿意接受关于 Search Ads 的新闻、功能更新、升级的推送」</strong>，最后填写验证码即可。</p>
+<p><strong>3、同意条款</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/cf2b312efc6248358fdbf2d950d0ed4a.jpg" max-width="600" /></p>
+<p>条款 </p>
+<p>进行完前两个步骤之后会跳出一个服务条款，点击 “<strong>Agree</strong>”。</p>
+<p><strong>4、注册成功</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/3c078fe233b649f7a8c301a3c03e7c50.jpg" max-width="600" /></p>
+<p>欢迎页面 </p>
+<p>之后会出现一个欢迎页面，表示你已经注册成功。</p>
+<p><strong>2、账号设置</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/5b44333761134237afb41befbcde956f.jpg" max-width="600" /></p>
+<p>设置页面 </p>
+<p>之后会自动跳转的到该页面，点击右上角的账户名，出现下拉菜单，点击 “<strong>settings</strong>”，进入到账号设置。</p>
+<p><strong>3、支付方式</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/fd91d1f199264cd887765707cc7143d8.jpg" max-width="600" /></p>
+<p>支付设置 </p>
+<p>进入到账号设置之后再点击 “<strong>Billing</strong>”，即可以进入到支付方式页面。支付方式页面需要填写<strong>卡号</strong>、<strong>银行卡的有效期</strong>、<strong>密码</strong>、<strong>持卡人信息</strong>、<strong>邮箱</strong>，以及<strong>优惠码</strong>。</p>
+<p><strong>三、其他注意事项</strong></p>
+<p><strong>1、设备ASM 仅支持 iOS 10 及以上设备</strong>，<strong>低于 iOS 10 的系统是收不到搜索广告展示的</strong>。苹果在 10 月 28 日的发布会上公布了<strong> iOS 10 的装机率已经达到了 60%</strong>。</p>
+<p><strong>2、年龄限制Apple ID 的年龄信息在 13 岁以下</strong>，其设备也不会接收到搜索广告的展示。</p>
+<p><strong>3、时区和币种</strong>注册账户时，时区与币种只能选择一个，而且设置之后<strong>无法更改</strong>。</p>
+<p><strong>4、计费每 7 天或每消耗 500 美元进行一次扣费</strong>。</p>
+<p><strong>5、账号</strong>同账号可以在多个电脑同时登陆。一个账号可以设置多个 Apple ID（管理员）登陆，并拥有不同的权限。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/f873631eb3874c21ac9b6d413fe78cce.jpg" max-width="600" /></p>
+<p>更多ASM内容可联系七麦数据，七麦数据（原ASO100）- 专业移动推广数据分析平台 - ASO优化|ASM竞价广告|iOS|App Store|苹果应用商店|安卓市场|榜单</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/4fc20a8d27964680ae9723b9fa5d385e.jpeg" max-width="600" /></p>
+➜7 篇文章搞定 ASM｜关键词投放没你想的那么难
+http://www.sohu.com/a/250573338_100065715	43343
+<p><strong>1.创建广告（Campain ID）</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/24173fa9395248ae847b373836b15178.jpg" max-width="600" /></p>
+<p>选择<strong>投放广告的 App</strong>、<strong>投放地区</strong>，为这条<strong>广告项目</strong>命名、<strong>设置预算</strong>、设置<strong>每日消费限额</strong>，还可以添加黑命单关键词库。<strong>且每一条广告会有一个 Campaign ID</strong>。</p>
+<p><strong>黑名单</strong>：如果你设置“游戏”为黑名单关键词时，你的 App 就不会出现在那些包含“游戏”字符的关键字广告中。这些词通常是开发者自己判断的那些与自家 App 无关或者测试之后转化率较低的关键词。当然，这个前提是你开启了自动匹配关键词。如果没有开启，则只会投放你选择的关键词。 </p>
+<p><strong>2.建立广告组（Ad Group）</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/626978f7df0d4ff386d57bf8887a3adc.jpg" max-width="600" /></p>
+<p>每条广告可以建立多个广告组（Ad Group）来投放，这里可以设置<strong>组的名称</strong>、<strong>选择 App Store 区域</strong>、<strong>选择设备</strong>、<strong>添加投放计划</strong>、<strong>设置最高竞价</strong>（之后也可以改）与 CPA 参考。最后可以选择是否要自动匹配关键词。上图右侧是广告投放成功后的预览。</p>
+<p><strong>最高竞价</strong>：这是这个广告组的默认出价，本组的所有关键词都将会以此出价为准，之后也可对某个词的出价进行调整。 </p>
+<p>点击上图中的「Ad Scheduling」（添加投放计划）可以进入到投放计划的页面，在这里可添加<strong>开始与结束日期</strong>，还可以按一周七天来设置计划<strong>详细到小时的计划</strong>。</p>
+<p>计划表中的时间是用户当地时区的时间；这里操作体验不是很好，拖动时间轴选择投放时间，删除某个时间段需要点击已选中的时间块再点 delete 键。 </p>
+<p><strong>3.添加关键词</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/0c661dfacba54e1fa54229ed26c9ce5a.jpg" max-width="600" /></p>
+<p>在上方的区域可输入某个关键词，<strong>后台生成该关键词以及与该词相似的关键词，并展示搜索流行度「Search Popularity」</strong>，点击相应的词即可添加到下方的关键词广告列表中，添加后会在下方显示出来。在下方的关键词列表中可设置每个词的出价，也能添加黑名单关键词库。</p>
+<p><strong>4.投放定向</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/ad32036bf2a4478294ddb2eb5d17d73e.jpg" max-width="600" /></p>
+<p>首先选择<strong>用户类型</strong>，可以选择<strong>所有用户</strong>，或者是未下载过该 App 的用户（其中也包括曾经下载过该 App 的老用户）。然后选择<strong>性别</strong>，设置<strong>年龄范围</strong>，后台提供<strong> 18~65+</strong>的年龄范畴供选择，也可以选择所有年龄段。最后输入投放的<strong>具体地区</strong>，这一项可以多选。</p>
+<p>最后点击完成~跳转到下面的页面，即创建成功，后面就会自动开始投放了~</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/4830b72706564ee2b0f31efeb958137a.jpg" max-width="600" /></p>
+<p>更多ASM内容可联系七麦数据，七麦数据（原ASO100）- 专业移动推广数据分析平台 - ASO优化|ASM竞价广告|iOS|App Store|苹果应用商店|安卓市场|榜单</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180828/2c8406ef9ec94e4ba1e383e37b55ff1b.jpeg" max-width="600" /></p>

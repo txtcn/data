@@ -1,0 +1,82 @@
+➜详解 iMessage App 创建全攻略，让你少走弯路！丨干货集锦
+http://www.sohu.com/a/320105435_100065715	40015
+<p>今年 WWDC19 大会上，苹果对 iMessage 部分再做升级，原有的 Memoji 贴纸中新增化妆表情，用户可以通过新版动画表情详细定制自己的头像。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20190612/8775486097cd424eaad882ce924a81cb.jpeg" max-width="600" /></p>
+<p>自 iOS10 推出 “iMessage + App” 的功能以来，不少开发商尝试使用此功能，尤其是出海产品，打造 iMessage App 可增加用户对产品形象、周边的深度了解，因形象而喜爱某款产品也是导流的一种。所以，开发者还需多多关注。下面围绕 iMessage 的相关操作为大家一一讲解。</p>
+<p><strong>iMessage App </strong></p>
+<p>iMessage App 主要分以下 4 类。</p>
+<p><strong>贴纸包应用。</strong>这是一种由图片或动图组成的基本贴纸包，无需编写代码即可构建。开发者可以在 iMessage 版 App Store 上的“贴纸”类别和相关“贴纸”子类别中提供此类 App。</p>
+<p><strong>贴纸包拓展。</strong>开发者可将贴纸包与自己的 iOS App 绑定起来。贴纸包会在 iMessage 版 App Store 中提供，类别和描述与 iOS App 相同。 </p>
+<p><strong>iMessage App。</strong>App 中可以包含贴纸、文字、视频和音频。开发者可以编写代码来添加功能，比如 Apple Pay 和 App 内购买。类别可根据 iMessage 版 App Store 上的“贴纸”类别或其他相关类别中进行选取。</p>
+<p><strong>iMessage App 拓展。</strong>iMessage extension 可以包含与独立 iMessage App 相同的功能，让用户无需离开“信息”就能访问 iOS App 的功能。</p>
+<p>注意：开发者必须使用最新版本的 Xcode 和 iOS，才能创建 iMessage App。</p>
+<p><strong>创建 iMessage App</strong></p>
+<p>创建 iMessage App 前，开发者首先需了解苹果对 App 名称、描述、屏幕截图和关键词的设置要求。</p>
+<p><strong>应用图标</strong></p>
+<p>开发者需要上传两个图标：一个用于 iMessage，另一个用于 iPhone 和 iPad。 用于 iMessage 的图标为矩形版本，格式为 1024x768 像素。用于 iPhone 和 iPad 图标格式为 1024px×1024px。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20190612/9521f079f1884f2fbdc47efb87a7166d.png" max-width="600" /></p>
+<p>注意：系统会对用于 iMessage 的图标进行调整，为其添加上椭圆形蒙版。所以，开发者不需要上传椭圆形图标，另外需考虑到外边缘上的元素会被椭圆形蒙版遮挡的因素。如果图标设计为白色或浅色背景，系统则会添加细线笔划以在 App Store 中更清新的显示。</p>
+<p><strong>应用名称和描述</strong></p>
+<p>应用名称和描述中可以使用“iMessage” 和 “Stickers”，但是要尽量避免重复使用。</p>
+<p><strong>关键词</strong></p>
+<p>关键词总共限制为 100 个字符，单词用逗号隔开，不要有空格。关键词可以使用“iMessage” 和“贴纸”。但是最好避免使用特殊字符，例如：＃或@ - ，因为特殊字符不利于产品搜索。</p>
+<p><strong>截图</strong></p>
+<p>对于 iMessage App 和 iOS 扩展程序，开发者需为 iPhone 6 Plus 和 iPad Pro 提供单独的 iMessage 内容屏幕截图，每套屏幕截图最多可以上传 5 个。开发者可从 App Store Connect 的“我的 App”中，进行上传。</p>
+<p><strong>App 预览</strong></p>
+<p>App 预览是直接在 App Store 上吸引用户使用 iOS，macOS 或 tvOS App 的短视频，由于 App 预览在 iOS 11 和 macOS Mojave 上是自动播放，因此它们是帮助用户发现和了解 App 的关键。</p>
+<p>App 预览可以创建三个，有利于为用户展示更多 App 功能或特定内容。不过，只有 iOS 11 或更高版本的用户才能看到多个应用预览。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20190612/e586a238630f4b998ef616128b972040.jpeg" max-width="600" /></p>
+<p>App 预览适用于所有受众，因此它们必须适合 4 岁及以上的人群。避免令人反感的内容，暴力，成人主题和亵渎。应用预览内容上，不要拍摄与设备交互的人（例如肩上角度或手指轻敲屏幕），也不要使用应用预览来显示应用开发的幕后花絮。</p>
+<p><strong>类别</strong></p>
+<p>适用于 iMessage 的 App Store 有一个名为 Stickers 的新类别，它出现在 App Store for iMessage 的类别列表的顶部。贴纸类别还包含贴纸子类别。贴纸类别仅适用于独立的 Sticker Pack 应用和 iMessage 应用。开发者需要选择贴纸的主类别和子类别。</p>
+<p>如何选取适合的 App 类别，开发者可从以下几个方面考虑：</p>
+<ul>
+<li>App 的用途。App 的主类别应该是最能描述 App 的主要功能或主题的类别。</li>
+<li>用户的意愿。了解 App 受众群体，考虑用户会通过什么类别找到你的产品。</li>
+<li>参考同类产品。寻找自己的同类产品，观察这些 App 属于哪些分类，可以作为自家 App 的类别参考。</li>
+</ul>
+<p><strong>为 iMessage 制作贴纸</strong></p>
+<p>开发者只需使用 Mac、Apple ID、贴纸图像和 Xcode，就可以轻松地为 iOS 上的信息 App 制作贴纸包。任何拥有 Apple ID 的用户都能免费下载 Xcode。</p>
+<p><strong>图像</strong></p>
+<p>贴纸包支持 PNG、JPEG 或 GIF 格式的图片文件，也可以是 APNG 或 GIF 格式的动图。尺寸可参考下图：</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190612/9ca963dbb08842f3b502002bb12f6cfc.png" max-width="600" /></p>
+<p><strong>图标</strong></p>
+<p>开发者需要制作多种尺寸的贴纸包图标，以供 iMessage 版 App Store 和 iOS 使用。</p>
+<p>苹果给出比较全面的 Photoshop 模板以供开发者下载。开发者可据此创建所需尺寸的图标。（下载链接：https://developer.apple.com/design/resources/）</p>
+<p><strong>构建贴纸包</strong></p>
+<p>开发者还可将作品转变成适用于 iOS 上“信息”的贴纸包。苹果给出了“构建贴纸包”的详细流程，搜索该链接观看视频（https://developer.apple.com/videos/play/tutorials/building-sticker-packs/）</p>
+<p><strong>升级贴纸包</strong></p>
+<p>升级贴纸包即使用代码和 API 在贴纸包中增加 App 内购买项目等功能。从用户角度来说，iMessage 中贴纸丰富了用户的表达方式，有利于提升用户对 App 的好感。</p>
+<p>而开发者无需编写代码，就能构建贴纸。操作简单，同时也新增了盈利途径，何乐而不为？</p>
+<p><strong>提交审核</strong></p>
+<p>提交 App Store 的所有 iMessage App 和贴纸包都将根据一组技术，内容和设计标准进行审核。为避免产品被拒，开发者在提交 App 以供审核之前，务必确保它符合应用审核指南，并且测试过 iMessage 应用。</p>
+<p><strong>发布日期</strong></p>
+<p>开发者可将发布日期设置为“自动”，以便客户可以在批准后立即下载 App。当然也可以通过自行选择发布日期进行发布。</p>
+<p><strong>《干货集锦》第 32 期就到这里啦~ 欢迎留言说出最近困扰哦~</strong></p>
+<p class="ql-align-center">- end -</p>
+<p>本文由七麦研究院专栏作者【yoyo】原创，转载需联系七麦研究院获取授权，七麦研究院有权向非授权转载追究责任。</p>
+➜网信办三大政策齐出，视频、金融 App 要注意了！
+http://www.sohu.com/a/320105969_100065715	40191
+<p class="ql-align-center">近日，网信办持续发布相关规定、办法等，规范 App 用户隐私、收集信息、青少年保护等要求，提高 App 安全性。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20190612/c1e8c6f196f14c138d1af5bbc6593161.png" max-width="600" /></p>
+<p><strong>短视频等 20 类 App 被网信办重点关注</strong></p>
+<p>5 月 24 日，网信办公布了《百款常用App申请收集使用个人信息权限情况》，此次主要根据安卓（Android）操作系统 App 进行收集。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190612/97be75c5e00548108f206053ac4aaeba.jpeg" max-width="600" /></p>
+<p>除了发布情况外，还公示了《百款常用App申请收集使用个人信息权限列表》，其中有<strong>餐饮外卖、地图导航、网上购物、短视频、金融借贷等近 20 类共 100 个 App</strong>，基本都会收集用户 26 项个人信息中的某几项；超过九成 App 获取用户精准定位；<strong>金融借贷类、工具软件类 App 获取用户信息项目相对较多</strong>。其中，360手机卫士收集使用个人信息相关权限数最高，达到 23 项，用户不同意开启则 App 无法安装或运行的权限数达 11 项。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20190612/72e5410a99574f6e8691c6a83536cdc0.jpeg" max-width="600" /></p>
+<p class="ql-align-center">部分 App 申请手机使用个人信息权限</p>
+<p>针对这一情况，5 月 28 日，国家互联网信息办公室再次发布《数据安全管理办法(征求意见稿)》，针对遏制 App 强制授权、过度索权、超范围收集个人信息等现象作出了相应回复。</p>
+<p><strong>七麦温馨提示：</strong>这一举措也说明，近期政策对于 App 的信息收集这一问题再次提升监测力度，开发者对于用户信息收集方面需要格外重视，以免被此次政策所波及。</p>
+<p><strong>金融借贷 App 需注意，隐私保护再加强</strong></p>
+<p>近日，全国信息安全标准化技术委员会在官网发布了《网络安全实践指南——移动互联网应用基本业务功能必要信息规范》（下称《规范》）。依据个人信息收集最少够用原则，《规范》界定了金融借贷、网络约车、短视频等 16 类常用移动 App 收集用户必要信息的范围。</p>
+<p>此次《规范》的确立，对于金融借贷 App 的要求更加严格。针对金融借贷《规范》也给予了明确的定义：指为个人用户提供从金融机构进行个人消费贷款服务，包括授信、借款、还款与交易记录等功能；这里的金融机构通常指有放贷资质的银行、消费金融公司、小贷公司等在网络上提供借贷服务的机构。</p>
+<p>在《规范》中明确金融借贷基本业务功能收集的必要信息包括：“手机号码”、“账号信息”、“身份信息”、“银行账户信息”、“个人征信信息”、“紧急联系人信息”以及“借贷交易记录”等 7 项内容。</p>
+<p>其中，<strong>“紧急联系人信息”</strong>：应允许用户在金融借贷应用中手动输入紧急联系人信息，而<strong>不应强制读取用户的通讯录</strong>。<strong>“身份信息”、“账号信息”</strong>：仅用于对借贷用户进行身份识别认证以及仅用于标识金融借贷用户和保障其账号信息安全。</p>
+<p><strong>七麦温馨提示：</strong>金融贷款类 App 开发者需格外注意近期相关政策，及时调整产品构架及功能，以防由于未及时调整而出现下架或暂停运营的状态。</p>
+<p>另外对于收集“紧急联系人”、“身份信息”、“账号信息”时应注意《规范》要求，避免越界而导致影响产品状态。</p>
+<p><strong>网络视频 App 防沉迷系统覆盖持续增加</strong></p>
+<p>5 月 28 日，国家网信办再次统筹指导西瓜视频、好看视频、全民小视频、哔哩哔哩、秒拍、波波视频、看了吗、微视、A站、美拍、小影、梨视频、第一视频、微博等 14 家短视频平台，以及腾讯视频、爱奇艺、优酷、PP视频等 4 家网络视频平台，统一上线了“青少年防沉迷系统”。加上此前试点的抖音、快手、火山小视频平台，国内已有 21 家主要网络视频平台上线了“青少年防沉迷系统”。</p>
+<p>而国家网信办也表示将继续扩大“青少年防沉迷系统”覆盖范围，会把网络直播等行业纳入该系统。</p>
+<p><strong>七麦温馨提示：</strong>针对这一政策对于直播、视频平台需要重点关注，加紧对于防沉迷系统的构架，积极配合增加防沉迷系统。</p>
+<p class="ql-align-center">- end -</p>
+<p>本文由七麦研究院专栏作者【石叶】原创，转载需联系七麦研究院获取授权，七麦研究院有权向非授权转载追究责任。</p>

@@ -1,0 +1,347 @@
+➜如何写好交互说明？我总结了这9个技巧！
+https://www.uisdc.com/interactive-description	57741
+<p>交互说明，是交互设计师必不可少的「写作能力」，它能让研发同事更加了解你的方案说明、交互想法。但写得不好，容易出现流水账式、逻辑不清楚、文案臃肿等情况，给自己带来额外的工作量，还影响着与研发同事的对接效率。</p>
+<p>所以今天想总结个人对「交互说明」这块的知识，让你和研发同事更加愉快地玩耍~</p>
+<h4><span class="auto_menu">技术型交互说明</span></h4>
+<p>传统的交互说明，是根据自己的意识、主观想法进行描述，但由于每个人的文笔不同、思维方式不一样，容易出现特别杂乱的说明，相关同事看了表示压力山大想拔刀&#8230;</p>
+<p><span class="img-zoom"><img alt="如何写好交互说明？我总结了这9个技巧！" class="alignnone size-full wp-image-380850" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jh-20200720-12.jpg" width="1000" height="732" /></span></p>
+<p>其实我们可以利用开发熟悉的技术术语、代码逻辑来阐述交互说明，使开发对交互说明有更加直观的理解，比如if else逻辑、switch case逻辑、数据库标识字段。</p>
+<p><strong>1. if else ：</strong></p>
+<p>一种判断逻辑，根据判断条件正确与错误来执行对应的操作。它可以更直观地表达逻辑关系，更利于开发同事的理解。比如用户登录的多逻辑说明，可以这么写：</p>
+<p><span class="img-zoom"><img alt="如何写好交互说明？我总结了这9个技巧！" class="alignnone size-full wp-image-380844" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jh-20200720-6.jpg" width="1091" height="800" /></span></p>
+<p><strong>2. switch case：</strong></p>
+<p>一种选择逻辑，根据选择项执行对应的操作。比如根据用户投入钞票的面值，决定可选择的商品类型。</p>
+<p><span class="img-zoom"><img alt="如何写好交互说明？我总结了这9个技巧！" class="alignnone size-full wp-image-380846" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jh-20200720-8.jpg" width="1390" height="800" /></span></p>
+<p>「default」是容易疏忽的选项：匹配不存在时做的事情。比如上面的例子，若是用户投了1元，或者投了一张纸怎么办？这是就需要「default」的处理了。</p>
+<p><strong>3. 用数据库标识字段</strong></p>
+<p>另外，一些「动态参数」用数据库里的字段名称来标记也是一个不错的选择。比如：「用户」，在数据库里的储存字段是 #UserName#，用它来代替交互说明里的动态参数，可以提升开发的理解效率。</p>
+<p><span class="img-zoom"><img alt="如何写好交互说明？我总结了这9个技巧！" class="alignnone size-full wp-image-380851" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jh-20200720-13.jpg" width="1200" height="592" /></span></p>
+<p>怎么知道每个字段对应数据库的表达? 接口文档：前端和后台之间用来传输信息的文档，那里既有数据库的表达，也有对应的中文描述。</p>
+<p>注：以上例子来自-唐韧《产品经理必懂的技术那点事儿》</p>
+<h4><span class="auto_menu">只写最重要的</span></h4>
+<p>密密麻麻的文字说明，是早期交互设计师比较常见的「毛病」。</p>
+<p>一是列全所有说明，可以减少被diss「考虑不周到」的可能；二是间接证明自己的专业能力。</p>
+<p><span class="img-zoom"><img alt="如何写好交互说明？我总结了这9个技巧！" class="alignnone size-full wp-image-380848" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jh-20200720-10.jpg" width="1500" height="1063" /></span></p>
+<p>但是！交互说明毕竟是要给人看的，堆积的文字谁看得下去？？只会带来额外的阅读压力和极高的理解成本，交互设计师修改起来也麻烦。</p>
+<p>一俩个页面还好，多个页面都是这样的说明，开发没约你「一起去爬山」就不错了。</p>
+<p><span class="img-zoom"><img alt="如何写好交互说明？我总结了这9个技巧！" class="alignnone size-full wp-image-380847" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jh-20200720-9.jpg" width="1088" height="600" /></span></p>
+<p>所以个人觉得，只针对有异常状态、特殊交互、分支流程、关键节点等特殊地方进行说明即可。</p>
+<p>对于一些常识性、无异常点的地方就不用写了。无特别需交代的地方，写了只会让开发产生怀疑：这个地方是不是在特殊交互？</p>
+<h4><span class="auto_menu">它只是个「黑板报」</span></h4>
+<p>不要幻想单凭一份交互说明，就能让开发完全、正确明白你的想法，那几乎是不可能的事。</p>
+<p>在我看来，交互说明只是个和开发传达内容的黑板报，一个沟通工具。</p>
+<p><span class="img-zoom"><img alt="如何写好交互说明？我总结了这9个技巧！" class="alignnone size-full wp-image-380840" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jh-20200720-2.jpg" width="849" height="600" /></span></p>
+<p>想让开发真正理解你的交互说明、方案逻辑等，还是得基于黑板报上的内容，亲自与开发沟通对齐。这样才能确定方案的有效性、实现难度、是否有需要调整的内容等，让双方的想法保持对齐。</p>
+<p>前期与开发沟通清楚了，后面交互说明可以起到一个「回顾、确定」的作用。</p>
+<p>而对齐的方式可以是交互评审会、工位口述、电话沟通等。只要目的能让开发理解你的交互稿，对齐形式可自主调整。</p>
+<h4><span class="auto_menu">按模块来展示说明</span></h4>
+<p>这个「模块」有2层意思：</p>
+<p>一是类似于「内容组件」：对于重复性强、出现频率高的内容，设置一个模板内容及说明即可。</p>
+<p><span class="img-zoom"><img alt="如何写好交互说明？我总结了这9个技巧！" class="alignnone size-full wp-image-380842" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jh-20200720-4.jpg" width="1136" height="800" /></span></p>
+<p>对于重复出现的地方，直接代替过去就行，能够大幅度减少交互设计师的工作量，开发也方便理解。</p>
+<p>二是分页面/位置来展示：</p>
+<p>当整体交互原型较多时，没必要全都铺在同一个页面进行展示说明，会显得整体页面很臃肿、浏览起来比较费力（尤其是文件很大时）。</p>
+<p>可以尝试：单独展示某个模块、分支流程、场景等下的交互稿。小而聚集，内容更精简、理解更方便。</p>
+<p><span class="img-zoom"><img alt="如何写好交互说明？我总结了这9个技巧！" class="alignnone size-full wp-image-380849" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jh-20200720-11.jpg" width="1000" height="311" /></span></p>
+<p>若各模块/分支流程/场景中的交互稿存在一定的关联性，可以先弄成一张总体性的「概览图」，再去单独展示。</p>
+<p>让开发知道整体方案之间的关系、又能了解各个细分方案里的交互说明。</p>
+<h4><span class="auto_menu">建立交互说明库</span></h4>
+<p>像一些常见、使用频率较高的说明，完全可以建立起一个「交互说明库」。</p>
+<ul>
+<li>一是方便自己及时调取，节省时间与精力。</li>
+<li>二能统一你的交互说明风格，减少开发的理解成本，也能提现出你的专业素养。</li>
+</ul>
+<p><span class="img-zoom"><img alt="如何写好交互说明？我总结了这9个技巧！" class="alignnone size-full wp-image-380839" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jh-20200720-1.jpg" width="1474" height="800" /></span></p>
+<h4><span class="auto_menu">真实的数据展示</span></h4>
+<p>想必这个大家都知道，随便性地举例、描述数据，会让开发对内容的真实性、有效性、逻辑关系等产生怀疑。</p>
+<p>比如以下哪个「发文数」，更容易让人理解与「启用数、启用率」之间的逻辑关系？</p>
+<p><span class="img-zoom"><img alt="如何写好交互说明？我总结了这9个技巧！" class="alignnone size-full wp-image-380845" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jh-20200720-7.jpg" width="1500" height="458" /></span></p>
+<p>为了减少这种误解，还是用最新、真实合理、上线数据等进行描述。</p>
+<p>如果在会议上让leader、boss对这些数据/内容提出了疑问，就丢大发了，也会让同事质疑你的基础能力、责任心。</p>
+<h4><span class="auto_menu">复杂说明另外展示</span></h4>
+<p>交互稿里总有一些比较复杂、难以文字来说明的想法，像是一些动效、状态、流程演示等。对于这一些比较复杂的说明，完全可以用demo演示、视频、gif图等形式来演示你的想法，让你的说明更加可观性。</p>
+<p>像一些按钮或功能存在多种状态时，也可以「表格/列表」的方式进行展示。</p>
+<p><span class="img-zoom"><img alt="如何写好交互说明？我总结了这9个技巧！" class="alignnone size-full wp-image-380843" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jh-20200720-5.jpg" width="1105" height="600" /></span></p>
+<h4><span class="auto_menu">有更改及时告知</span></h4>
+<p>除了以上情况外，若交互原型有了调整（包括交互说明），一定要与团队成员告知！！并提示修改位置（在哪个页面）。否则产品、前端、后台、测试等同事的相关想法、工作会停留在上个交互稿里。</p>
+<p>别因为信息没对齐而造成了不良影响。就算改了一处小东西，也尽量和同步一下。</p>
+<h4><span class="auto_menu">好的心态</span></h4>
+<p>最后想说一句，没有人百分百、完完全全顾虑到所有细节和场景，即使你完全地走查了一遍甚至好几遍&#8230;<br />
+但由于不同角色的职业视角、预览目的、经验想法等都会提出新的疑问、挑战你的方案说明。</p>
+<p><span class="img-zoom"><img alt="如何写好交互说明？我总结了这9个技巧！" class="alignnone size-full wp-image-380841" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jh-20200720-3.jpg" width="1500" height="981" /></span></p>
+<p>这是很正常的事~</p>
+<p>更何况，在方案没对齐前，交互稿（包括交互说明）上都存在太多的未知性、待优化点。即使当前阶段确定了所有的细节与场景，随着方案时间的推进，后续总有新的想法、遗漏点、优化点涌现出来，那些我们觉得的「完全OK的方案说明」，也都变成了「过去式」&#8230;</p>
+<p>我们要做的，必须是多听听多方视角的声音，并尊重、虚心接受他人的意见，而不是抱怨自己为啥考虑不周全、停留在原地钻牛角尖。</p>
+<h4><span class="auto_menu">结语</span></h4>
+<p>好了，以上就是个人平时写交互说明的一些感悟，完全是处于个人习惯和主观经验得来的，可能不太对，请多指教~</p>
+<p>欢迎关注作者的微信公众号：「和出此严」</p>
+<p><span class="img-zoom"><img alt="如何写好交互说明？我总结了这9个技巧！" class="size-full wp-image-330370 alignnone" src="https://image.uisdc.com/wp-content/uploads/2019/08/uisdc-bc-20190813.jpg" alt="留不住用户？我总结了13个挽留弹窗技巧（附导图）" /></span></p>
+➜大厂出品！帮你快速学会组件化思维的设计流程
+https://www.uisdc.com/component-thinking	62179
+<p>编辑导读：组件化思维是设计师必备的技能之一，如何搭建组件库和设计规范更是设计师应该掌握的。本文作者从自身工作经验出发，对组件化思维的设计流程进行了分析总结，供大家一同参考和学习。</p>
+<p>当我们进入一个成熟的设计团队，团队文档中都会有组件库和对应的设计规范。</p>
+<p>组件库是当设计师遇到同一类组件设计场景时，可复用，避免造新的样式。这样既减少设计和开发的时间成本，同时增强产品的统一性，避免多样式给用户带来认知障碍。</p>
+<p>设计规范是指导团队组员组件使用的规则和项目设计的指导原则。</p>
+<h4><span class="auto_menu">无组件化的问题</span></h4>
+<p>设计团队在做项目的过程中，如果没有组件化时，那么会遇到维护成本高、效率低、统一性差、开发成本高、复用性差和难以协同等6大问题。</p>
+<p><span class="img-zoom"><img alt="大厂出品！帮你快速学会组件化思维的设计流程" class="alignnone size-full wp-image-380785" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200720-4.jpg" width="1080" height="583" /></span></p>
+<ul>
+<li>维护成本高：需要所有设计师一起维护更新，有时候存在同步不及时的情况，导致设计师之间对最新组件的更新不同步，从而产生更大的维护成本。</li>
+<li>效率低：设计师重复设计相同类型的组件，设计一系列组件状态，这一过程中会消耗设计师大量的时间。设计师工作效率低。</li>
+<li>统一性差：存在相同组件被重复造新样式的情况，导致统一性差，造成用户的认知成本。</li>
+<li>开发成本高：开发需要写重复的样式，没法全局调用，耗费时间，开发成本高，安装包的体积大，甚至是会影响产品的性能。</li>
+<li>复用性差：组件之间无法复用，需要不停地制作新样式。</li>
+<li>难以协同：同事之间协同困难，每个设计师都有自己设计习惯。</li>
+</ul>
+<h4><span class="auto_menu">组件化的好处</span></h4>
+<p>当团队在做项目时，有组件化的好处有：统一性、高效性和延续性。</p>
+<p><span class="img-zoom"><img alt="大厂出品！帮你快速学会组件化思维的设计流程" class="alignnone size-full wp-image-380789" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200720-8.jpg" width="939" height="250" /></span></p>
+<p>统一性：</p>
+<ul>
+<li>整个产品不同模块的业务按照统一规范使用，提升整个产品的视觉交互统一性，减少开发样式，提升开发效率。<br />
+避免设计师创造新的组件控件样式。</li>
+<li>统一交互设计规则，减少用户操作的迷惑感，提升产品的体验。</li>
+</ul>
+<p>高效性：</p>
+<ul>
+<li>一套设计规范衍生两套组件库，分别为sketch ui组件库和auxre元件库。sketch ui组件面向对象为视觉设计师，auxre元件库面向对象为交互设计师和产品经理。设计师和产品经理通过拖动组件搭建界面，节约时间，提升工作效率。</li>
+<li>减少制作组件控件的时间，不需要对组件重新下定义，提升设计效率，可将更多时间放在流程体验和设计推动上。</li>
+</ul>
+<p>延续性：</p>
+<ul>
+<li>通过设计规范，在以后更新中可以连续迭代，避免断层。</li>
+<li>团队即使有成员离开或者加入，通过设计规范和组件库可以快速的接手和进行正常工作</li>
+</ul>
+<h4><span class="auto_menu">组件化支撑的设计理论</span></h4>
+<p>组件化所支撑设计理念是原子设计。</p>
+<p>原子设计是一种方法论，由原子、分子、组织、模板和页面共同协作以创造出更有效的用户界面系统的一种设计方法。</p>
+<p>原子：设计系统的最小单位。原子包括调色板，分割线，字体，单个元素（即标题，段落，按钮等）这些元素有个特点就是最小元素不可再切割，如下图。</p>
+<p><span class="img-zoom"><img alt="大厂出品！帮你快速学会组件化思维的设计流程" class="alignnone size-full wp-image-380788" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200720-7.jpg" width="474" height="390" /></span></p>
+<p>分子：通过多个原子组合而成，作为一个单元组成UI元素的一个组件，如下图。</p>
+<p><span class="img-zoom"><img alt="大厂出品！帮你快速学会组件化思维的设计流程" class="alignnone size-full wp-image-380786" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200720-5.jpg" width="909" height="131" /></span></p>
+<p>组织：通过多个分子组合而成，我们可以构建更复杂但可重复的组织。组织是组成模板的主要组成部分，如下图。</p>
+<p><span class="img-zoom"><img alt="大厂出品！帮你快速学会组件化思维的设计流程" class="alignnone size-full wp-image-380787" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200720-6.jpg" width="506" height="544" /></span></p>
+<p>模板：通过多个组织组合而成。是页面的基础架构。将以上元素进行排版，将原子，分子，组织进行排版成最终的模板，如下图。</p>
+<p><span class="img-zoom"><img alt="大厂出品！帮你快速学会组件化思维的设计流程" class="alignnone size-full wp-image-380790" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200720-9.jpg" width="491" height="800" /></span></p>
+<p>页面：将实际内容（图片、文章等）套件在特定模板，每个页面由将实际内容（图片、文章等）模板修改而成，如下图。</p>
+<p><span class="img-zoom"><img alt="大厂出品！帮你快速学会组件化思维的设计流程" class="alignnone size-full wp-image-380783" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200720-2.jpg" width="590" height="800" /></span></p>
+<h4><span class="auto_menu">如何搭建组件化</span></h4>
+<p>组件化什么时候开始做?</p>
+<p>一种情况是产品立项前就开始组件化，在产品0到1之前，拥有一套组件和设计规范。设计师可以从以前项目的组件库和设计规范直接套用并修改，这样项目前期设计做起来更加方便且省时省力少挖坑。</p>
+<p>另一种情况是产品经历过0到1后，产品趋于成熟，这个时候开始做组件化。组件化搭建最多会有六个步骤，分别为：整理目录、制定规范模板、填充目录内容、生成组件库、sketch插件库和开发服务平台。</p>
+<p><span class="img-zoom"><img alt="大厂出品！帮你快速学会组件化思维的设计流程" class="alignnone size-full wp-image-380782" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200720-1.jpg" width="1080" height="551" /></span></p>
+<p>整理目录：将线上的产品的组件进行梳理并做分组，形成一个组件目录。制定规范模板：以一个典型的组件为例，制定组件内容规范模板。里面包含组件的定义、组件的几种类型、组件的标注、组件的交互规范和组件的极限情况等。</p>
+<p>填充目录内容：按照制定的规范模板，将每个组件的内容进行填充完成，形成一套完整的设计规范。</p>
+<p>生成组件库：将设计规范里面的组件样式单独抽离出来，生成完整的组件库。</p>
+<p>sketch插件库：如果有前端支持，可以将sketch组件库开发成对应的插件，这样设计师可以更方便的使用和实时更新。</p>
+<p>开放服务平台：有前端开发资源支持的话，可以将组件进行代码封装。移动端或PC端都可以做组件开发平台。</p>
+<h4><span class="auto_menu">如何使用组件化</span></h4>
+<p>当团队搭建完成组件化之后，接下来就是成员间的使用，这一过程有业务需求产生组件模板、组件模版形成页面、页面形成页面流程和页面流程形成用户体验。</p>
+<p><span class="img-zoom"><img alt="大厂出品！帮你快速学会组件化思维的设计流程" class="alignnone size-full wp-image-380784" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200720-3.jpg" width="1080" height="223" /></span></p>
+<ul>
+<li>业务需求产生组件模板：基于业务需求，产生符合业务属性的组件，当来新需求时，根据业务场景选择合适的组件组合成对应的模板。</li>
+<li>组件模版形成页面：组件模板根据实际产品需求，形成对应的产品页面。</li>
+<li>页面形成页面流程：设计师根据组件模板所搭建的页面，形成一个个页面操作流程。</li>
+<li>页面流程形成用户体验：根据最终完成的页面流程，则形成最终的用户体验。</li>
+</ul>
+<h4><span class="auto_menu">后记</span></h4>
+<p>以上就是关于组件化思维设计流程的基本内容，如果你想了解更多内容可以在留言区留言。</p>
+<p>欢迎关注作者的微信公众号：「Echo的设计笔记」</p>
+<p><span class="img-zoom"><img alt="大厂出品！帮你快速学会组件化思维的设计流程" class="alignnone size-full wp-image-268377" src="https://image.uisdc.com/wp-content/uploads/2018/04/uisdc-uxechoqr.jpg" alt="用一篇全面干货，帮你完整掌握组件化设计流程" /></span></p>
+➜UI、UE都应该掌握的、最具代表性和价值的6条专业知识点
+https://www.uisdc.com/6-professional-knowledge-points	62187
+<p>编辑导语：向专业的人学习，不但可以节约我们的时间，而且可以学到具有专业水准的知识。本文作者从实际工作出发，结合自身工作经验，对UI、UE需要掌握的专业知识进行了总结，希望对你有用。</p>
+<p>因为本篇文章是我总结梳理具有代表性和价值的6条专业知识点，耐心看完后一定会有所收获。</p>
+<h4><span class="auto_menu">顶部导航和左侧导航的用法</span></h4>
+<p>顶部导航：顾名思义导航在顶部，这也是目前网站最常见的主导航模式。顶部导航一般会含有个人中心和一些功能入口。</p>
+<p>顶部导航常作为一级导航。</p>
+<p>如下图猫眼PC网站，顶部导航包含首页、电影、影院、演出、榜单、热点和商城等导航功能模块。</p>
+<p><span class="img-zoom"><img alt="UI、UE都应该掌握的、最具代表性和价值的6条专业知识点" class="alignnone size-full wp-image-380797" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ui-20200720-5.jpg" width="1080" height="280" /></span></p>
+<p>如果导航里面存在二级导航则可以聚合在下拉菜单里面，鼠标hover出现下拉菜单，点击下拉菜单里面的选项，进入对应的功能界面。如下图所示的ant design导航组件，鼠标hover出现二级导航，导航里面还进行了分组。</p>
+<p><span class="img-zoom"><img alt="UI、UE都应该掌握的、最具代表性和价值的6条专业知识点" class="alignnone size-full wp-image-380796" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ui-20200720-4.jpg" width="853" height="435" /></span></p>
+<p>侧边栏导航：多用于二级导航（相对于顶部导航而言）。侧边栏导航里面的功能一般会进行分组，默认展示出来，方便用户可以全局知道所有的导航功能。</p>
+<p>当然只有极少的业务需求为了节省内容区域空间默认收起，有的侧边栏会提供点击收起左侧栏功能。</p>
+<p>如下图微信公众号后台，该网站只有侧边栏导航，没有顶部导航。</p>
+<p><span class="img-zoom"><img alt="UI、UE都应该掌握的、最具代表性和价值的6条专业知识点" class="alignnone size-full wp-image-380798" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ui-20200720-6.jpg" width="1080" height="459" /></span></p>
+<p>顶部导航和左侧导航的用法总结：</p>
+<ul>
+<li>顶部导航一般作为一级导航，左侧栏导航一般作为二级导航；</li>
+<li>当网站只有一层导航建议使用顶部导航；</li>
+<li>当网站导航存在父子层级，需要默认展开子层级的话，则用左侧栏导航；</li>
+<li>当网站既有一级导航，又有二级导航则两个导航一起使用。</li>
+</ul>
+<h4><span class="auto_menu">返回、取消和关闭的用法</span></h4>
+<p>我们在使用App的过程中，点击进入下一个界面的时候，有时候导航栏上是返回，有时候是取消，有时候是关闭。</p>
+<p>那么什么时候使用返回、取消或者关闭呢？他们有没有规则呢？</p>
+<p>如下图微信朋友圈，点击朋友圈，进入下一页，新页面从左往右出现，这时候导航栏上是返回。</p>
+<p><span class="img-zoom"><img alt="UI、UE都应该掌握的、最具代表性和价值的6条专业知识点" class="alignnone size-full wp-image-380795" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ui-20200720-3.gif" width="358" height="767" /></span></p>
+<p>如下图，发朋友圈，点击从手机相册选择，这时候新页面从屏幕底部出现，导航栏上为取消。</p>
+<p><span class="img-zoom"><img alt="UI、UE都应该掌握的、最具代表性和价值的6条专业知识点" class="alignnone size-full wp-image-380793" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ui-20200720-1.gif" width="358" height="767" /></span></p>
+<p>如下图，用户点击链接，通过微信内置的浏览器打开，这时候导航栏上变为了关闭操作。</p>
+<p><span class="img-zoom"><img alt="UI、UE都应该掌握的、最具代表性和价值的6条专业知识点" class="alignnone size-full wp-image-380794" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ui-20200720-2.gif" width="358" height="767" /></span></p>
+<p>返回，取消和关闭三个的用法总结：</p>
+<ul>
+<li>下一页从右到左转场用返回；</li>
+<li>新页面从底部出现覆盖当前界面，用取消或者关闭。当需要填写表单内容时，用取消。当非表单内容填写用关闭；</li>
+<li>进入微信浏览器用关闭，这个比较特殊。因为要遵循平台规则（如微信浏览器或小程序等）。</li>
+</ul>
+<h4><span class="auto_menu">如何判定功能强弱</span></h4>
+<p>在设计界面的过程中，会遇到哪些功能或元素该强化，哪些功能或元素该弱化，如何去衡量和判定呢？</p>
+<p>设计功能强弱依据有以下2点：</p>
+<ul>
+<li>功能价值大，如果这个功能对产品来说具有很强的变现能力或者战略意义，那么就算这个功能使用人数不多，数据不大，那么也要将它重点对待和设计。</li>
+<li>用户使用是否高频。当用户使用是高频时，需要强化该功能或元素，增加用户体验，为产品留存更多的用户。</li>
+</ul>
+<h4><span class="auto_menu">网页打开规则</span></h4>
+<p>设计师在设计PC端网页的时候，经常会遇到一个困扰，点击一个功能或者操作，下一个页面究竟是新窗口打开还是当前页面打开。其实这个有一个原则：</p>
+<p>看新页面是否有明显的返回上一层的入口，有的话，当前页面打开，没有的话，新窗口打开。</p>
+<h4><span class="auto_menu">UI转交互</span></h4>
+<p>目前很多UI都想转交互设计，但是在小公司没有交互设计师，UI设计师不知道交互设计师需要哪些技能和工作输出物，更加不知道如何转行。</p>
+<p>对于UI设计师来说，可以在现有工作中，尝试先画交互原型，多思考交互流程，尽量别过度关注单个界面元素，养成原型流程思维。</p>
+<p>多关注设计规范，这里的设计规范不仅包含视觉也包含交互。</p>
+<p>UI设计师尝试梳理有价值的项目，然后尝试去思考复盘。推导出整个项目，例如接到需求，如何做需求分析，如何确定产品目标，设计目标，如果通过数据去优化现有方法，如何通过其他设计策略提升产品设计的得到方案如何走查等等</p>
+<p>关于什么是产品目标，设计目标，数据分析和设计，设计方法论有哪些，这些都可以在我的历史文章找到。</p>
+<p>转行的具体做法如下：</p>
+<p>梳理一套符合你们项目的设计规范，里面包含交互和ui组件，可以参考ant和element。在做的过程中可以看看我的web端设计规范文章做为参考：设计规范 | Web端设计组件篇－文本与选择器</p>
+<ul>
+<li>梳理几套从接到产品需求，如何做设计推到最后设计方案的的方法。这个可以放在以后的项目中。不知道如何做设计推导可以看篇文章：体系化设计流程与思路</li>
+<li>多和产品和需求方对接，并让pm将画原型的活交给你。根据UI规范组件直接搭建，提高人效。</li>
+<li>内部多主动推动一些事情，例如可用性测试，设计体验优化等。</li>
+</ul>
+<h4><span class="auto_menu">作品集</span></h4>
+<p>作品集主要体现4点：</p>
+<p><strong>1. 项目价值</strong></p>
+<p>多思考项目的价值，做了哪些好点的项目，将这些项目拿出来，然后尝试去思考复盘。</p>
+<p><strong>2. 设计方案推导能力</strong></p>
+<p>推导出整个项目，例如接到需求，如何做需求分析，如何确定产品目标，设计目标，如果通过数据去优化现有方法，如何通过其他设计策略提升产品设计的得到方案如何走查等等</p>
+<p>如果是UI作品集的话，努力将视觉图做的好看点。然后做项目的时候，建立一套自己的设计推导法。例如如何定义产品风格，如何确定主色、辅色。图标如何制作（图标设计方法）、流程设计的思考等等。对项目多思考，阐述下自己的理解等。</p>
+<p><strong>3. 团队影响力</strong></p>
+<p>如何通过个人的一些推进，对团队产生影响，这些影响和促进团队发展，对团队成正反馈。</p>
+<p><strong>4. 项目驱动能力</strong></p>
+<p>如何驱动产品经理、开发和业务角色，做设计推动优化，把控设计进度和流程。</p>
+<p>[link https://www.uisdc.com/5-elements-of-user-experience]</p>
+<p>以上6条内容是我觉得UI或UE都可能需要的，具有一定的价值，所以我分享出来，希望对大家有所帮助。</p>
+<p>如果你有其他意见和建议，欢迎在评论区留言一起交流。</p>
+<p>欢迎关注作者的微信公众号：「Echo的设计笔记」</p>
+<p><span class="img-zoom"><img alt="UI、UE都应该掌握的、最具代表性和价值的6条专业知识点" class="alignnone size-full wp-image-268377" src="https://image.uisdc.com/wp-content/uploads/2018/04/uisdc-uxechoqr.jpg" alt="用一篇全面干货，帮你完整掌握组件化设计流程" /></span></p>
+➜如何做好用户界面中的版式设计？来看资深设计师的总结！
+https://www.uisdc.com/ui-layout-design	62784
+<h4><span class="auto_menu">前言</span></h4>
+<p>说到版式设计很多人更多联系的是平面设计中的海报版式设计，而在UI界面设计中，也需要遵循很多的版式设计方法论，今天我为大家整理一份UI设计中版式的实战运用以及设计思路。</p>
+<h4><span class="auto_menu">什么是用户体验界面版式设计</span></h4>
+<p>版式设计是现代设计艺术的重要组成部分，是视觉传达的重要手段。表面上看，它是一种关于编排的学问，实际上，它不仅是一种技能，更实现了技术与艺术的高度统一，版式设计是现代设计者所必备的基本功之一。</p>
+<p>通俗点解释，我们在做设计时需要有「条理性」的思维指导，因为人的眼睛或者大脑在短时间内无法处理大量「扑面而来」的信息，设计师需要把这些信息通过视觉化的手段，把这些信息处理成有条理的且具有引导性的「视觉走势」或者说叫视觉引导，让读者在短时间内可获得你想要表达的信息，最终形成预期收益。</p>
+<h4><span class="auto_menu">版式设计的核心方法论</span></h4>
+<p><strong>第一：了解字体字形</strong></p>
+<p>字体的版式设计中，需要了解字体基本结构和字体的空间结构在实际工作运用的时候，你会发现字体上下部分是有一个留白空间的，其实际的高度要比可视的高度要高</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380834" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-19.jpg" width="1422" height="800" /></span></p>
+<p><strong>第二：了解行高与行间距</strong></p>
+<p>设计师提供的设计稿与开发出来的文字高度有所不同比如，实际开发出来的会更高一些；iOS 设备与Android 设备也有所不同，比如可以看到同样是显示20号的字体，安卓的行高会偏高一些。在不同的 Android 设备上使用的字体不一样，可能还会出现更多的差别。如果不想办法抹平这差别，就不能真正意义上实现双端一致了。</p>
+<p>所以设计师在视觉走查时要特别注意，我的习惯是同时用2个不一样的手机，一个手机放效果图一个手机安装实际测试程序，2者进行对比，才能更好的看出区别来。</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380826" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-11.jpg" width="1422" height="800" /></span></p>
+<p><strong>第三：字体文字段排版</strong></p>
+<p><strong>行间距</strong></p>
+<p>我们不难发现，左侧的文章行间距过小，而右侧的行间距看起来更明确和更舒适；大段文字排版时，建议使用左对齐的方式，可读性更高；</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380832" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-17.jpg" width="1422" height="800" /></span></p>
+<p><strong>避免符号行首及右侧过多锯齿形</strong></p>
+<p>文字的编排时，如果行首与行尾有标点符号时，阅读起来很不友好，为了更加便于阅读我们需要进行避头尾的处理，甚至为了整齐我们需要对文字区块进行强制对齐；实际运用中可以发现不论是今日头条的新闻详情页还是网易新闻的新闻详情页都是比较整齐的文字排列形式</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380827" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-12.jpg" width="1422" height="800" /></span></p>
+<p><strong>第四：版心/虚拟边框</strong></p>
+<p>在版式设计中，不论是平面海报还是UI界面设计，我们都需要有一个版心的概念把所有需要展现的内容，都放置在此容器中，让内容更加有条理，具有更好的「透气性」；实际工作中这样的好处是多页面改版会节省很多的工作量，且效果更加统一美观</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380831" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-16.jpg" width="1422" height="800" /></span></p>
+<p><strong>第五：网格系统/栅格化</strong></p>
+<p>网格系统是提升页面条理性的有效设计方法，通过网格的设定，让排版更加有参考的标准，去设计时有迹可循；在不同设计师配合过程中，也能够避免不同设计师设定的间距不同等造成的效果不一致（关于实际工作中网格的实际运用运用，如果同学们想了解的可以评论区留言，我可以单独拿出一篇文章来讲解）</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380829" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-14.jpg" width="1422" height="800" /></span></p>
+<p><strong>第六：重量比/张弛度对比</strong></p>
+<p>调整画面中的文字或者线条粗细度以及内容明度来增加页面的张弛度，或者叫重量比画面中文字越粗重量感越重，反之越轻线条选择时越粗则越重，越能表现其重要性的分隔色块或者图片越深越鲜艳的则较重，反之越浅越淡的越轻</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380825" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-10.jpg" width="1422" height="800" /></span></p>
+<p><strong>第七：细节点缀与变化</strong></p>
+<p>在界面设计中，需要突出层次的同时，也需要注意辅助文字或者解释文字的排版，亦或者是元素的「打破常规」；合理的排列这些信息起到展示其功能入口的目的，同时也能够起到点缀和增加画面细节的作用，让画面更加的精致！不论是线条、还是留白还是细小的icon、文字等都可以很好的起到破解画面单调的作用</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380821" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-6.jpg" width="1422" height="800" /></span></p>
+<p><strong>第八：节奏/重复</strong></p>
+<p>重复性的元素可以是图案、文字、色彩、空间格式等，重复能增强条理性和界面的统一感，节奏和韵律也需要重复来实现。实际工作中经常能够看到很多类似的版式设计</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380824" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-9.jpg" width="1422" height="800" /></span></p>
+<p><strong>第九：亲密性/贴近度</strong></p>
+<p>亲密性的关系可以让画面形成独立的内容区域或者呈现空间，让产品能够很好的呈现相对独立的信息，减少用户的识别难度，提高效率；不论是常用的线条或者「水槽」分割的形式；还是Google引领的「去线式」设计，亦或者是卡片式设计的绝对亲密特制的形式都可以给人创造出亲密贴近的版式设计感受</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380833" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-18.jpg" width="1422" height="800" /></span></p>
+<h4><span class="auto_menu">实际界面设计中如何运用？需要避免的坑都有哪些？</span></h4>
+<p><strong>1. 文字间距的实际运用</strong></p>
+<p>当你在设计大段文字界面的时候，比如笔记的编辑页面，或者新闻类的详情页时，就需要了解行高应该在一个什么大小，一般常用的间距应该在1.2-2.0大小的文字高度倍数，移动端每行中文字建议20-25个字；在左图可以看到文字的行高/行间距过窄给人一种很压抑不易阅读的感受，而右侧的间距相对更加舒适</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380817" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-2.jpg" width="1422" height="800" /></span></p>
+<p><strong>2. UI界面中的版心</strong></p>
+<p>在海报设计或者书籍排版中常常用到版心的概念，把比较重要的信息都放在设定的中心区域内，让版式更加具有一定的透气性；在版心的面积比也可以叫「版心率」，版面率越高，可排版的内容越多，反之则越少</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380818" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-3.jpg" width="1422" height="800" /></span></p>
+<p><strong>3. 网格系统的运用</strong></p>
+<p>网格系统又叫栅格系统，早期的Web网页设计时开始运用这样的方法，</p>
+<p>运用网格系统的目的，前面我也提到了其实主要是2个，</p>
+<p>第一是提升页面条理性的有效设计方法，让排版更加有参考的标准；</p>
+<p>第二是避免不同设计师设定的间距不同等造成的设计的结果不一致，导致项目延期等风险的发生。</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380819" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-4.jpg" width="1422" height="800" /></span></p>
+<p>栅格实际界面中的运用形式中，可以看到App Store的栅格化采用了左边距40右边距40列12间距20，Medium采用了左边距36右边距36列10间距44，不同产品的栅格定义不同，需要根据自己的产品而定</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380830" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-15.jpg" width="1422" height="800" /></span></p>
+<p><strong>4. 重量级对比</strong></p>
+<p><strong>色块对比</strong></p>
+<p>对色块通过颜色和饱和度的调节对比，让画面中元素的层次以及重量级的引导，起到明显的作用；不理论是印象笔记的微信强引导的绿色button，还是小红书强引导的白色button都是与其他button采用不同的设计重量级进行区分，而知乎的「选择器」操作则选中button采用高饱和的颜色，未选中则选用低保和的颜色进行对比</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380816" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-1.jpg" width="1583" height="800" /></span></p>
+<p><strong>字重对比</strong></p>
+<p>通过对标题加粗运用重色、内容运用浅色低饱和的方式，产生视觉差，提高用户的浏览效率以及表达产品的视觉层次；可以看到以下3个案例中很明确的运用了字重对比的版式设计语言进行层次的区分</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380823" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-8.jpg" width="1583" height="800" /></span></p>
+<p><strong>5. 亲密性/贴近度</strong></p>
+<p>通过对相同属性元素模块化或者区域分隔造成的一种视觉上的相对独立性，使得界面的层次清晰有序，提高用户的识别效率；在以下案例中可以看到京东APP与优酷APP的设计语言都运用了卡片形式制造亲密性，而微信读书则采用了「水槽」分割来制造亲密性版式设计</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380822" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-7.jpg" width="1680" height="800" /></span></p>
+<p><strong>6. 点缀与变化</strong></p>
+<p>在界面设计中很多时候会出现单纯的图片或者文章类的重复性排版，容易造成视觉上的单调感，我们可以增加修饰性的元素来制造变化，也可以通过穿插不同形式的内容来打破乏味的版式；在优酷的适配标题中可以看到增加了心形或者火苗的点缀形式，而Twitter的的文字列中增加了icon图标；在Medium中对重复性信息中间增加横向滑动的内容来打破枯燥单调的版式设计</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380820" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-5.jpg" width="1583" height="800" /></span></p>
+<p><strong>7. 节奏/重复</strong></p>
+<p>节奏感，可以让画面元素或者组合呈现一致性的排列，从而达到阅读效率的提升；在App Store的样式采用了列表重复的版式设计，而在大众点评的版式设计中采用了瀑布流的设计语言</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380828" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jm-20200720-13.jpg" width="1583" height="800" /></span></p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>设计排版的核心要点是要帮助用户，影响用户的使用，提高产品的体验友好度</p>
+<p>可以帮助到用户更好的获得喜爱的产品、能够快速的记录心得和感悟、能够减少浏览上的干扰因素、提高识别的效率；设计服务生活、设计可以改善体验、提升体验</p>
+<p>以上是我实际工作中运用的有效的实战方法论，其实每一个模块都可以单独的拆分出来进行更加系统和全面的讲解和分析说明，后面的文章里有机会和大家在分享。</p>
+<p>希望对大家在UI设计界面版式设计中有所实际的帮助，让我们一起努力，每天进步一点点，成为更好的自己。</p>
+<p>欢迎关注作者微信公众号：「知研设」</p>
+<p><span class="img-zoom"><img alt="如何做好用户界面中的版式设计？来看资深设计师的总结！" class="alignnone size-full wp-image-380836" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-20200720-1.jpg" width="180" height="180" /></span></p>
+➜Tubik Studio 是怎么为华为定制整套 UI 图标的？
+https://www.uisdc.com/huawei-icon-design	64243
+<p>编者按：一套 UI 界面当中，核心的 APP 图标是用户每天都要接触、经常使用的视觉组件和交互对象。设计图标的时候，要用到大家最熟悉的元素才能贴合用户认知，要醒目、统一，也要足够「隐形」，避免喧宾夺主。今天这篇文章，来自著名的 Tubik Studio 团队，他们为华为旗下的 EMUI 10 系统设计了核心的图标系统，来看看他们的设计过程吧。</p>
+<p><span class="img-zoom"><img alt="Tubik Studio 是怎么为华为定制整套 UI 图标的？" src="https://image.uisdc.com/wp-content/uploads/2020/07/emui-icons-tubik-studio-huawei.png" width="1920" height="1008" class="alignnone size-full wp-image-380992" /></span></p>
+<p>我们总不会低估一个操作系统基础图标，对于产品的可用性和合意性的影响。基础图标虽然小巧，但是对于整个操作系统而言，总是极具影响力的，因为他们是用户界面的核心元素，帮助用户快速直观地在系统中定位、浏览、导航。但是，对于设计师而言，图标的设计始终是挑战，它看起来最为简单，但实则为最为艰难的工作。</p>
+<p>图标需要高效，让人一目了然，但是也要具备良好的可识别性，在传统和创新之间达到平衡。这一次，Tubik Studio 设计团队将要给华为的 EMUI 10 来设计图标，而这篇文章将会为你揭示背后的设计过程。</p>
+<p>这次的项目主要是由 Sergii Valiukh 、Arthur Avakyan 和 Polina Taran 来负责。这次的设计项目从最初的探索构思入手，逐渐开始绘制草图，探索样式，一直到最后打磨，完成设计。</p>
+<p><span class="img-zoom"><img alt="Tubik Studio 是怎么为华为定制整套 UI 图标的？" src="https://image.uisdc.com/wp-content/uploads/2020/07/HUAWEI_EMUI_icons_tubik-design-case-study.png" width="1400" height="790" class="alignnone size-full wp-image-381003" /></span></p>
+<h4><span class="auto_menu">项目内容</span></h4>
+<p>为华为 EMUI 10 系统的用户界面设计基础的图标</p>
+<h4><span class="auto_menu">客户介绍</span></h4>
+<p>我们在 2019 年夏季，收到了来自华为的邀约，这次的项目要重新设计 EMUI 这套基于 Android 系统的用户界面基础图标，这套图标会用来适配华为旗下的旗舰手机，这些图标将会随着新版的系统部署到这些手机产品当中。我们的任务，是创建总计 54 款符合当下潮流趋势的图标，这些图标要能够贴合品牌和已有用户的偏好，并且能够吸引新的用户。</p>
+<p>这个图标设计项目如今已经在当下的华为旗下手机产品中应用且部署好了，最早使用这套图标的智能手机型号为 Mate 30 ，紧接其后的是  P40。</p>
+<p><span class="img-zoom"><img alt="Tubik Studio 是怎么为华为定制整套 UI 图标的？" src="https://image.uisdc.com/wp-content/uploads/2020/07/HUAWEI_EMUI-10_icons_case-study-tubik.png" width="1920" height="1083" class="alignnone size-full wp-image-381002" /></span></p>
+<h4><span class="auto_menu">设计过程</span></h4>
+<p>在整个操作系统中，这些图标是始终位于用户视野以内、最基础的最核心的交互元素，通常用户每天都会同这些核心的基础 APP 进行交互，有时候一天多达几十次，因此它们应当具备良好的功能性，还应该足够美观，给用户带来满足感。同时，这套图标的设计，也应当足够统一，以协调的体验切入到整个 EMUI 的设计系统当中，贴合整体的样式特征。 </p>
+<p>所以，我们使用了一整套图标网格系统，应对不同需求，在设计的过程中，这套网格有助于确保所有图标外部尺寸的一致性，也保证了内部元素的统一性。</p>
+<p><span class="img-zoom"><img alt="Tubik Studio 是怎么为华为定制整套 UI 图标的？" src="https://image.uisdc.com/wp-content/uploads/2020/07/HUAWEI_EMUI_icons_tubik-design-structure.png" width="1920" height="1083" class="alignnone size-full wp-image-381001" /></span></p>
+<p>为了发掘全新的视角，我们决定从传统的手绘图标开始，寻找重新塑造图标设计的方法。这些图标所涉及到的元素，早已为全球数百万用户所熟知，要重新设计图标外观，并且还要成套且统一，这本身就是一个巨大的挑战。</p>
+<p><span class="img-zoom"><img alt="Tubik Studio 是怎么为华为定制整套 UI 图标的？" src="https://image.uisdc.com/wp-content/uploads/2020/07/HUAWEI_EMUI_icons_tubik-design-sketches.png" width="1920" height="1083" class="alignnone size-full wp-image-381000" /></span></p>
+<p>比如「电话」图标所对应的听筒元素、「信息」图标所对应的气泡对话框这样的元素，是不可能完全抛弃重新创造的，所以我们的真正的切入点是在形态和色彩上寻求解决方案。</p>
+<blockquote><p>越是简单的东西，重塑起来就越难。</p></blockquote>
+<p>在实际的设计过程中，我们尝试了数以百计的造型变体，从完全放飞、非常规的的外部造型，到极其常规，大家熟知的造型解决方案，我们都逐一试过。而在色彩上的尝试相对会显得更加具有实验性：我们尝试使用明亮的紫罗兰色、栗色和浅绿色来进行混搭。</p>
+<p>当然，我们很清楚，这样的实验性的工作是探索过程中的一小步，但是它是必须的，是创造新设计的种子，是寻求正确答案的必经之路。</p>
+<p><span class="img-zoom"><img alt="Tubik Studio 是怎么为华为定制整套 UI 图标的？" src="https://image.uisdc.com/wp-content/uploads/2020/07/HUAWEI_EMUI_icons_tubik-design-process.png" width="1920" height="1083" class="alignnone size-full wp-image-380999" /></span></p>
+<p>在设计过程在，有一件有趣的事情发生在设计「相机」图标的过程中。我们尝试过很多不同的图标造型，不同的元素，不同的样式，但是其中始终有一个细节是不变的，那就是右上角的小红点。这是为了暗示用户，华为的摄像头模组来自徕卡，这个红色的小点就是向其致敬的标识。</p>
+<p><span class="img-zoom"><img alt="Tubik Studio 是怎么为华为定制整套 UI 图标的？" src="https://image.uisdc.com/wp-content/uploads/2020/07/HUAWEI_EMUI_icons_camera-icon.png" width="2800" height="1580" class="alignnone size-full wp-image-380998" /></span></p>
+<p>而下面的概念设计，则是强化了图标之间的几何轮廓的差异，从而提升图标在智能手机屏幕上的对比度和识别度。</p>
+<p><span class="img-zoom"><img alt="Tubik Studio 是怎么为华为定制整套 UI 图标的？" src="https://image.uisdc.com/wp-content/uploads/2020/07/1_HUAWEI_EMUI_icons-case-study-tubik.png" width="1920" height="1083" class="alignnone size-full wp-image-380997" /></span></p>
+<p>下一步，我们基于几何图形外观差异性，设计了多种造型不同但同样优雅的图标。在基于这种风格概念进行延伸的过程中，我们会优先考虑圆形的元素。而「天气」图标明显既不适合圆形也不适合方形来呈现，所以我们使用的是云和太阳两种元素的组合。「钱包」图标使用的是矩形，然后搭配卡片的组合。尽管造型整体上是相对自由的，但是所有的图标都是遵循图标网格，并且在视觉权重上尽可能统一。</p>
+<p><span class="img-zoom"><img alt="Tubik Studio 是怎么为华为定制整套 UI 图标的？" src="https://image.uisdc.com/wp-content/uploads/2020/07/HUAWEI_EMUI_icons_tubik-phone-icon.png" width="1920" height="1083" class="alignnone size-full wp-image-380996" /></span></p>
+<p>在色彩和样式上，我们则更加倾向于渐变。没有色彩渐变，纯扁平的图标显得过于幼稚和「古早」，没有足够的品质感，所以，我们在新的图标设计上，开始加入渐变色彩，提升质感。</p>
+<p><span class="img-zoom"><img alt="Tubik Studio 是怎么为华为定制整套 UI 图标的？" src="https://image.uisdc.com/wp-content/uploads/2020/07/HUAWEI_EMUI_icons_tubik-graphic-design.png" width="1920" height="1083" class="alignnone size-full wp-image-380995" /></span></p>
+<p>不过，在最终版本当中，我们还是保留了图标外部的圆角矩形的外轮廓，然后将图标元素的内径进行了适当地缩减，渐变和核心的简约几何特征依然是整套设计的最高优先级。</p>
+<p><span class="img-zoom"><img alt="Tubik Studio 是怎么为华为定制整套 UI 图标的？" src="https://image.uisdc.com/wp-content/uploads/2020/07/HUAWEI_EMUI_icons_tubik-design-case.png" width="1920" height="1083" class="alignnone size-full wp-image-380994" /></span></p>
+<p>这套设计方案展现了在整套 UI 界面中，图标这个小元素的设计上所需要投入的精力和潜在的难度。想要图标足够协调、美观、易用还要贴合品牌特征、还要区别于以往，是一件相当不容易的事情。</p>
+<p><span class="img-zoom"><img alt="Tubik Studio 是怎么为华为定制整套 UI 图标的？" src="https://image.uisdc.com/wp-content/uploads/2020/07/HUAWEI_EMUI_icons_tubik-studio.png" width="1920" height="1083" class="alignnone size-full wp-image-380993" /></span></p>
+<p>细节里藏着魔鬼，任何细小的元素、线条轮廓、色彩的变化都可能会在屏幕上放大、被感知到。</p>
+<p>Tubik Studio 还有很多其他的设计好文：</p>
+<p>[link  https://www.uisdc.com/illustrations-in-ui-design]</p>
+<p>[link  https://www.uisdc.com/case-study-bitex-app-ux]</p>
+<p>[link  https://www.uisdc.com/15-animated-ui-design-concepts]</p>
+<p>[link  https://www.uisdc.com/visual-perception-icons-vs-copy]</p>

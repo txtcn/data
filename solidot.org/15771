@@ -1,0 +1,86 @@
+➜研究估计新浪微博审查大军的规模和审查策略
+https://www.solidot.org/story?sid=33724	12186
+<div align="center"><img src="http://img.solidot.com.cn/0/195/li907kejjcICA.jpg" align=""><br>
+</div>
+新浪微博是中国最大最流行的微博平台，注册用户据说达到了五亿，基本上每个中国网民都注册了一个帐号。不同于西方的Twitter，新浪微博必须承担起审查任务。休斯顿莱斯大学的研究人员收集了数百万帖子，<a href="http://www.technologyreview.com/view/512231/computer-scientists-measure-the-speed-of-censorship-on-chinas-twitter/"><u>分析和识别</u></a>新浪微博审查员（或者叫微博小秘书）的规模和删贴速度。<a href="http://arxiv.org/ftp/arxiv/papers/1303/1303.0597.pdf"><u>论文（PDF）</u></a>发表在预印本网站arxiv上。研究人员观察到，三成的删贴活动发生在发帖后5到10分钟内，九成的删贴发生在24小时内。假设新浪微博的一个审查员平均每分钟能阅读50个帖子，那么扫描每分钟涌入的7万新帖子新浪需要有1400人同时工作，假设他们每天工作8小时，那么需要有4200人才能满足审查需要。
+<br>
+<br>
+鉴于微博API的限制，研究人员主要跟踪了最可能会发敏感帖子的敏感用户组。从2012年7月20日到9月8日，研究人员利用API以每分钟一次的频率搜索3500位用户的时间线，以每四秒一次的频率搜索公共时间线。由于新浪微博不支持匿名查询，所以他们利用Tor隐藏IP后创建虚假用户帐号。他们共收集了238万用户时间线帖子，删贴率是12.75%。考虑到新浪需要处理的大数据集规模，发帖后5到10分钟的删贴峰值，尤其是考虑到删贴无法完全用自动方式处理，新浪是如何做到迅速发现和删除敏感帖子？研究人员提出了六个假说：
+<p></p>
+<!--more-->
+<p></p>
+<br>
+1.新浪微博有一个监视关键词列表，审查员将会浏览包含这些关键词的帖子决定是否删除。<br>
+2.微博有针对性的监视频繁发敏感帖子的用户。<br>
+3.在发现一个敏感帖子之后，审查员可以追溯所有相关的转贴，可以一次性的全部删除。<br>
+4.通过关键词搜索，微博删除了追溯的帖子导致了特定关键词在短时间内出现删除峰值。<br>
+5.审查员工作是分布式的，相对独立，其中部分人可能是兼职。<br>
+6.删贴速度与主题有关，根据主题的敏感度删除速度存在差异。研究人员利用自然语言处理技术进行删贴主题分析，发现某些热门主题帖子比另外一些主题更快被删除（如图所示），如群交、北京暴雨死亡人数和司法独立等都在极短时间内删除了。<br>
+<br>
+研究人员总结了微博的过滤机制，其中主动过滤机制包括：显式过滤，微博通知发贴人他们的帖子内容违反了内容政策（但有些时候用户并不清楚到底是因为什么敏感词受阻）；隐式过滤，微博需要在手动审查帖子后才会允许帖子上线；伪装发帖成功，其他用户实际上看不到这位用户的帖子。
+➜欧盟因微软违反浏览器和解协议对其罚款5.61亿欧元
+https://www.solidot.org/story?sid=33725	13058
+由于微软违反与欧盟达成的浏览器反垄断和解协议向欧洲的Windows用户提供IE之外的浏览器选择，微软被欧盟监管机构处以5.61亿欧元（约合45.5亿人民币）罚款。欧盟委员会<a href="http://cn.wsj.com/gb/20130307/tec073244.asp"><u>表示</u></a>，微软是第一家违反与监管机构达成的自愿协议的公司，因此决定对该公司处以上述前所未有的罚款。根据自愿协议，微软应为其1500万用户提供自有Internet Explorer浏览器之外的选择。但微软没有在Windows 7 SP1中提供浏览器选择屏，该公司表示原因是<a href="http://www.nytimes.com/2013/03/07/technology/eu-fines-microsoft-over-browser.html?pagewanted=all"><u>技术故障</u></a>。
+➜中国计划在年内4G牌照
+https://www.solidot.org/story?sid=33726	13428
+中国工业和信息化部部长苗圩表示，中国可能在今年<a href="http://cn.wsj.com/gb/20130307/tec072255.asp"><u>开始发放</u></a>第四代移动通讯技术(4G)业务牌照。分析师表示，中国移动、中国联通和中国电信三大电信服务提供商已在部分城市试运行4G服务，商用4G牌照的发放可能将加快4G网络建设。中国移动一直在积极建设4G基础设施，以期迅速摆脱所采用的本土3G技术标准的束缚。采用本土3G标准（TDSCDMA）使得客户无法使用市面流行的3G智能手机(多采用WCDMA和CDMA2000标准)来接入中国移动的网络，这令该公司在竞争中处于下风。由于本土3G标准与国外3G标准不兼容，中国移动一直不能提供苹果的iPhone手机。
+➜哈勃拍摄到“太空入侵者”
+https://www.solidot.org/story?sid=33727	15197
+<div align="center"><img src="http://img.solidot.com.cn/0/196/liBYguQWdAqXQ.jpg" align="" height="385" width="420"><br>
+<div align="left">NASA哈勃望远镜<a href="http://www.nasa.gov/mission_pages/hubble/science/abell68.html"><u>拍摄到了</u></a>一幅疑似游戏《<span class="bold">Space Invader</span>》中太空入侵者的图片，但它其实是一个背景星系团的光被前景引力透镜效应形成的扭曲<a href="http://news.sciencenet.cn/htmlnews/2013/3/275387.shtm"><u>所致</u></a>。距离地球20亿光年的巨型星系团Abell
+68周围的引力场充当了太空中的一个天然引力透镜，让来自遥远背景星系的光线变亮和放大，类似游乐园的哈哈镜。照片由哈勃望远镜的宽视场照相机3号在红外光条件下拍摄。最后呈现的画面结合了哈勃先进巡天照相机的近红外观测数据。前景星系团距离地球20亿光年，背景星系团距离地球更为遥远。在照片中，左上的一个螺旋星系被拉伸，整个画面好似上世纪70年代经典游戏《<span class="bold">Space Invader</span>》中的外星人。
+</div>
+</div>
+➜《异域镇魂曲》续集仅仅六个小时就达到筹款目标
+https://www.solidot.org/story?sid=33728	18258
+<center><iframe src="http://www.kickstarter.com/projects/inxile/torment-tides-of-numenera/widget/video.html" frameborder="0" height="360" width="480"> </iframe><br>
+<br>
+</center>
+1999年发布的游戏《异域镇魂曲》至今被认为是角色扮演游戏类型中难以逾越的高峰。现在，试图延续《异域镇魂曲》精神的续篇《<a href="http://www.kickstarter.com/projects/inxile/torment-tides-of-numenera">Torment: Tides of Numenera</a>》项目在大众集资平台Kickstarter发起了集资活动，目标是90万美元，但短短六个小时这个目标就已经完成，至今集资已超过149万美元。游戏由独立游戏开发商inXile Entertainment开发，游戏总监Brian Fargo 在1983年创办了Interplay Entertainment，该公司发行过《辐射》、《废地》、《博得之门》和《异域镇魂曲》等知名RPG游戏，《异域镇魂曲》主设计师Colin McComb担任游戏的创意总监，知名桌游设计师Monte Cook担任游戏世界Numenera的创作师。游戏设定在Numenera的Ninth World，不会延续或采用《异域镇魂曲》中的角色或故事，但其对话系统和方法将类似于《异域镇魂曲》。游戏采用 Unity引擎，支持PC (Windows)、Mac和Linux平台，将以DRM-free的形式发行。上市时间未定，发布目标是定在2014年12月。游戏探讨的主题是生命的意义。
+➜国家税务总局正在研究电子商务征税
+https://www.solidot.org/story?sid=33729	24402
+对于引发争论的电商征税/漏税言论，国家税务总局副局长宋兰接受采访时<a href="http://www.bjbusiness.com.cn/site1/bjsb/html/2013-03/07/content_206391.htm?div=-1"><u>称</u></a>，目前国家税务总局正在研究调研电子商务征税，将从制度对其进行完善，既要促进其发展，又要使其健康发展，同时还需要履行纳税义务。对于目前争论更多的高税负，宋兰<a href="http://finance.people.com.cn/n/2013/0307/c1004-20703670.html"><u>表示</u></a>，不能简单将国外的税负与国内比，称外国正在向中国学习。联想集团董事长杨元庆认为应该考虑降低企业增值税，与美国百分之七八的消费税相比，17%的增值税明显高了，认为需要将税负明码标在标签上。“不能拿国外的税负简单地跟国内比。美国以直接税为主，如所得税；中国以间接税为主，如增值税。以间接税为主体的，税率都不低”。宋兰回应说，现在有一些以直接税为主的国家开始借鉴间接税为主国家的做法。
+➜人类的男性祖先生活在34万年前
+https://www.solidot.org/story?sid=33730	26489
+Albert Perry的DNA藏着秘密，他的Y染色体非常特别，揭开了与人类起源相关的信息，<a href="http://www.newscientist.com/article/dn23240-the-father-of-all-men-is-340000-years-old.html"><u>显示人类最后一位共同的父系祖先生活的时间比以前认为的早得多</u></a>。Perry最近刚刚去世，他是一位非洲裔美国公民，他的一位亲戚几年前把他的DNA样本送到<a href="http://www.familytreedna.com">Family Tree DNA</a>进行遗传分析。DNA样本可以发现人与人之间在遗传上的亲密程度，目前已测试的DNA样本分析发现，所有男性的Y染色体来自生活在6万到14万前的一位男性祖先亚当。但Perry是一个例外，他的Y染色体不同于已分析的其他男性的Y染色体。遗传学家的进一步分析发现，Perry不是亚当的后裔，他的父系祖先是在大约33.8万年前与其他人分道扬镳，Y染色体树比以前认为的更为古老。
+➜盐与自体免疫疾病有关联
+https://www.solidot.org/story?sid=33731	28716
+最近几十年，发达国家中自体免疫疾病如多发性硬化症和1型糖尿病的发病率出现飚升。根据发表在《自然》期刊上的三篇论文，研究人员描述了导致自体免疫疾病的分子路径，<a href="http://www.nature.com/news/salt-linked-to-autoimmune-diseases-1.12555"><u>识别出一个可能的罪魁祸首</u></a>——盐。为了保持健康，人类必须依赖于微妙的平衡：活跃的免疫功能太少，我们会受感染；但太多后免疫功能会开始攻击健康组织，从而导致了自体免疫疾病。某些形式的自体免疫疾病已发现与T<sub>H</sub>17细胞产生过多有关，它是一类辅助性的T细胞，能产生炎性蛋白白细胞介素-17。然而，发现T<sub>H</sub>17细胞的分子开关则要困难得多。MIT生物学家利用哈佛物理学家发明的技术，在不影响细胞功能的情况下使用硅纳米线操纵免疫细胞中的基因。他们<a href="http://www.nature.com/nature/journal/vaop/ncurrent/full/nature11984.html"><u>发现</u></a>，盐的逐步增加促进了T<sub>H</sub>17细胞的产生。在<a href="http://www.nature.com/nature/journal/vaop/ncurrent/full/nature11868.html"><u>实验</u></a>中，他们观察到在盐高浓度条件下培育的老鼠细胞有更高的 SGK1表达，产生更多的 T<sub>H</sub>17细胞。
+➜应用开发商打入中国市场不容易
+https://www.solidot.org/story?sid=33732	30113
+应用行业的主要市场以往一直是美国，苹果和谷歌等公司几年前引发了这一行业的蓬勃发展。市场研究公司ABI Research的数据显示，2012年全球与应用程序有关的收入总计140亿美元，其中有34%是在北美市场实现的，这一比例低于2011年时的41%。应用开发商们正把越来越多的精力放在从世界其他国家智能手机用户的大幅增长中“淘金”上，<a href="http://cn.wsj.com/gb/20130307/tec131655.asp"><u>中国尤其成为他们关注的市场</u></a>，中国的智能手机发货量已经超过美国。在中国，外国应用程序开发商面临着来自腾讯控股和新浪等公司旗下应用程序开发业务的竞争，这些中国本土厂商能够迅速为自己开发的程序增添新功能。他们还更了解中国用户的口味，能给产品添加更具互动性的功能和更具表现力的动画图标。
+➜用智能手机控制LibreOffice演示
+https://www.solidot.org/story?sid=33733	31989
+<div align="center"><img src="http://img.solidot.com.cn/0/197/liDLqPrgZFPFw.jpg" align="" height="303" width="240"><br>
+<br>
+<div align="left">开源办公软件LibreOffice最近更新的版本包含了一个Android应用程序，可利用Android智能手机控制运行在Linux、OS X和Windows机器上的幻灯片演示。这款名叫<a href="https://play.google.com/store/apps/details?id=org.libreoffice.impressremote&amp;hl=en"><u>LibreOffice Impress Remote</u></a>的应用已经发布到Google Play应用商店，程序是利用蓝牙与台式机或笔记本建立通信，需要Android 2.3以上的系统。Document Foundation正在开发LibreOffice的Android完整移植版本，发布时间未定。
+</div>
+</div>
+➜俄罗斯开始销毁马狗猪牛的防毒面具
+https://www.solidot.org/story?sid=33734	33578
+<div align="center"><img src="http://img.solidot.com.cn/0/198/lixcSlJWCFs0I.jpg" align="" height="160" width="240"><br>
+<br>
+<div align="left">据俄罗斯媒体<a href="http://lenta.ru/news/2013/03/07/animal/"><u>报导</u></a>（<a href="http://translate.google.com/translate?hl=ru&amp;sl=ru&amp;tl=en&amp;prev=_dd&amp;u=http%3A%2F%2Flenta.ru%2Fnews%2F2013%2F03%2F07%2Fanimal%2F"><u>Google翻译</u></a>），俄罗斯国防部开始销毁库存的动物防毒面具。这些专门设计在化学战中保护动物的防毒面具已在军方战略物资部门的库房保存了半个多世纪，销毁这批动物防毒面具是为了腾出空间。在二次大战及之后的冷战时代，苏联为保护农场动物设计了多种不同类型的防毒面具，他们设计了马、狗、猪和牛的面具。随着大规模武装冲突威胁的减少，以及禁止化学武器国际公约的通过，此类面具的需求已经消失。此次销毁的是一种为马设计的防毒面具KSPF-1，它设计在化学战攻击中使马能存活四个小时。想象一下末日之后，看到戴着面具的马、狗和猪，这个场景可能会让你不寒而栗。
+</div>
+</div>
+➜中国将开放低空领域
+https://www.solidot.org/story?sid=33735	35610
+全国人大代表、北汽集团董事长徐和谊<a href="http://www.scmp.com/business/china-business/article/1184286/baic-move-aircraft-manufacturing-when-skies-open">透露</a>中国将在5月正式宣布低空领域开放。低空开放是指开放1000米以下的低空。徐和谊认为这是一大机遇，称北京市委已向北汽集团<a href="http://bjwb.bjd.com.cn/html/2013-03/07/content_54075.htm"><u>下达了</u></a>发展通用航空器制造业务的任务。目前，90%的空域保留用于军事目的，所有民用航空活动都需要获得批准。因此短距离通用航空在大陆尚未得到开发。徐和谊说，汽车已经是中国的支柱产业，他相信通用航空将能在短期内成长为新的支柱产业。
+➜波音787每次飞行产生500GB数据
+https://www.solidot.org/story?sid=33736	38986
+在拥抱物联网之后，Virgin Atlantic航空公司正在为数据量大幅增长做好准备。该公司准备用波音787替换掉旧的波音747。<a href="http://www.computerworlduk.com/news/infrastructure/3433595/boeing-787s-create-half-terabyte-of-data-per-flight-says-virgin-atlantic/"><u>波音787每次飞行都会产生约500GB的数据</u></a>。Virgin Atlantic IT主管David Bulman说，所谓物联网就是一切都联网，以波音787为例，从引擎和襟翼到起落架，飞机的每一部分都联网。如果一个引擎有了问题，在飞机落地前他们就能知道有没有零件可更换。他们将能了解飞机的各个部分是否都运转正常。Bulman称，该公司计划将敏感的数据储存到私有云，将不怎么敏感的数据储存到公有云。
+➜男子因枪击机器人面临罚款
+https://www.solidot.org/story?sid=33737	41629
+机器人被人类用于执行他们不愿意或高风险的任务，因为机器人不会感到痛苦也没有父母，遭到枪击后也不会有激烈反应，但枪手并不会因此不受到惩罚。俄亥俄州的一位居民因为枪击机器人，被控蓄意破坏政府财产，<a href="http://spectrum.ieee.org/automaton/robotics/military-robots/man-shoots-robot-gets-charged-with-vandalism"><u>面临最高2500美元的罚款</u></a>。事情发生在上个月，当地警方接到举报电话称62岁的Michael Blevins在家中开枪。警方到达后，他拒绝回答询问也拒绝开门。警方因此呼叫了特警，派出了机器人，确定Blevins在房内的位置。结果他用手枪射击了机器人。最终执法人员冲进了他的家中用电击设备制服了醉醺醺的嫌疑人。
+➜中国解封IMDb
+https://www.solidot.org/story?sid=33738	42984
+2010年1月，中国以众所周知的未知原因<a href="http://www.solidot.org/story?sid=15618"><u>屏蔽了</u></a>互联网电影数据库<a href="http://www.imdb.com/"><u>IMDb</u></a>。2013年3月6日，许多中国网民发现IMDb解封，部分网民对中国新领导层<a href="http://www.scmp.com/news/china/article/1185315/netizens-thrilled-after-china-unblocks-imdb-movie-database"><u>产生了</u></a>某种“敬意”，他们期盼接下来能解封Facebook或Twitter。中国屏蔽哪个网站都是黑箱操作，防火长城在2010年屏蔽IMDb时没有给出任何解释，但普遍认为是和纪录片《<a href="http://www.imdb.com/title/tt1379210/"><u>When the Dragon Swallowed the Sun</u></a>》有关。这次解封也没有任何说明，也不清楚是否是长期性的。
+➜好奇号因太阳喷射物再次进入安全模式
+https://www.solidot.org/story?sid=33739	44945
+<a href="http://www.nasa.gov/mission_pages/msl/news/msl20130304.html"><u>切换到</u></a>备份计算机的火星漫游车好奇号刚刚从安全模式激活，但现在<a href="http://hosted.ap.org/dynamic/stories/U/US_SCI_MARS_SPACE_WEATHER?SITE=AP&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT"><u>又进入安全模式</u></a>，原因是太阳耀斑。美国时间周二（北京时间周三），科学家注意到太阳爆发了一个巨大耀斑，向火星方向喷发喷射物，时速达到了200万英里。此次太阳风暴并不十分严重，但出于谨慎的考虑，NASA决定让漫游车再次进入“睡眠”。太阳喷射物会在地球上产生磁暴，严重时会破坏电网和卫星。由于火星缺乏行星级的磁场，因此不会产生磁暴，只会观察到辐射突然增加。
+➜STRaND-1卫星准备激活搭载的Nexus One
+https://www.solidot.org/story?sid=33740	46574
+去年有报导称，NASA的PhoneSat的项目<a href="http://www.solidot.org/story?sid=31114"><u>正尝试利用</u></a>Android智能手机设计和发射低成本的地球低轨道微型卫星。如今第一颗PhoneSat卫星STRaND-1 已在上月底搭乘印度的火箭飞抵轨道，<a href="http://www.thepowerbase.com/2013/03/strand-1-satellite-preparing-to-activate-onboard-nexus-one/"><u>它正准备激活搭载的Nexus One</u></a>。卫星配备了先进的推进系统和八个脉冲等离子体推进器，设计帮助卫星在寿命结束后在轨机动，将卫星推入大气层，减少日益严重的太空垃圾。卫星还使用了3D打印组件，可称得上第一颗依靠3D打印硬件的航天器。除了Nexus One外，卫星还有一台防辐射的Linux电脑，它主要是在Nexus One激活前维持卫星功能。STRaND-1将测试现成的手机在太空<span id="result_box" class="" lang="zh-CN"><span class="">严酷的环境下能生存多长时间，工程师利用</span></span><span id="result_box" class="" lang="zh-CN"><span class="">Nexus One现成的硬件和软件配置去解决太空中的独特挑战，如防止硬件冻结。</span></span>
+➜朝鲜威胁发动先发制人的核打击
+https://www.solidot.org/story?sid=33741	57805
+联合国安理会一致通过了对朝制裁决议，朝鲜则通过外务省发言人声明威胁称，朝鲜将向侵略者们的根据地<a href="http://chinese.yonhapnews.co.kr/allheadlines/2013/03/07/0200000000ACK20130307005800881.HTML"><u>行使先发制人的核打击权利</u></a>。声明谴责说，在联合国安理会捏造出可以使他们的侵略战争合理化的“决议”，然后戴着“联合国军”的帽子发动侵略战争，这是美国过去和现在都常用的战争手法，他们还为走出国内经济危机，正在通过挑唆第二次朝鲜战争寻找出路。声明威胁称，既然美国企图点燃核战争导火线，我们的革命武力只能为守护国家最高利益，向侵略者们的根据地行使先发制人的核打击权利。

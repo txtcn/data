@@ -1,0 +1,284 @@
+➜将整本《绿野仙踪》存入纳米级DNA中，高效准确，读取无压力
+http://www.sohu.com/a/410910846_610300	17407
+<p>萧箫 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">如何将一整本《绿野仙踪》，存进 <strong>纳米级的DNA</strong>里？ </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200801/1027696fac9240cd98a44c78cedccd98.png" /></p>
+<p style="text-align: left;">现在，德克萨斯大学奥斯汀分校的科学家们做到了。</p>
+<p style="text-align: left;">他们开创了一套新的DNA数据编码和解码方法，不仅非常高效，还可以长期保存数据。</p>
+<p style="text-align: left;">最关键的突破在于， <strong>准确率</strong>也非常高。 </p>
+<p style="text-align: left;">DNA技术近些年之所以受到关注，是因为它具有不可忽视的潜力：存储密度大。</p>
+<p style="text-align: left;">例如，一个鞋盒能装下的所有DNA，足以保存 <strong>100个大型数据中心</strong>的所有数据。 </p>
+<p style="text-align: left;">但这项技术除了昂贵，还有个最大的问题：错误率高。</p>
+<p style="text-align: left;">光是插入和删除两种错误，就占据DNA合成错误的50%以上。</p>
+<p style="text-align: left;">而这套新的DNA数据编解码方法，专门针对DNA合成错误进行修复，使得数据在被存储后，还能完好地被提取出来。 <span>（文末附论文链接）</span></p>
+<p style="text-align: left;">一起来看看这种方法的妙处。</p>
+<p>DNA合成：两大瓶颈 成本昂贵 </p>
+<p style="text-align: left;">事实上，微软在2016年就已经利用DNA存储技术完成了约200MB数据的保存，包括《战争与和平》等。</p>
+<p style="text-align: left;">作为一种优良的存储介质，DNA不仅能实现更高的 <strong>存储密度</strong>，而且还具有良好的耐久性， <strong>40万年前</strong>的古人类基因也能被重建。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200801/727516ff25174c999a82a64aecdbaf00.png" /></p>
+<p style="text-align: left;">如果反过来，想要将数据存储在DNA中，基本方法就是将0和1转换为4种核苷酸 <span>（碱基组成的序列）</span>。 </p>
+<p style="text-align: left;">不过，虽然微软没公布200MB数据合成的成本，那会儿每个碱基的价格通常在0.7元左右。</p>
+<p style="text-align: left;">而200MB数据的保存，用了大约 <strong>15亿</strong>个碱基…… </p>
+<p style="text-align: left;">如此昂贵的DNA合成价格，却只能保存200MB的数据，相比之下，几百元的硬盘它不香吗？</p>
+<p style="text-align: left;">不过，成本起码会随技术发展下降，最关键的问题，还是DNA合成的错误率高。</p>
+<p>错误率高 </p>
+<p style="text-align: left;">在DNA合成过程中，存在 <strong>替换、插入与删除</strong>三种常见的错误。 </p>
+<p style="text-align: left;">来看看这3种错误产生的方式。</p>
+<p style="text-align: left;">在DNA复制过程中，如果其中一条链「手滑」了，就会产生插入和删除错误。</p>
+<p style="text-align: left;">插入：下图左，由于子链在复制过程中「滑动」了一下，原本已经合进子链的腺嘌呤 <span>（A）</span>被拱了起来，导致原来的位置上多了一个腺嘌呤 <span>（A）</span>； </p>
+<p style="text-align: left;">删除：下图右，由于母链在复制过程中「滑动」了一下，导致一个胸腺嘧啶 <span>（T）</span>还没被复制就被跳过了，子链上少了个腺嘌呤 <span>（A）</span>。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200801/6225cbd25ef2474ba60ec1fe171a2779.png" /></p>
+<p style="text-align: left;">下图是一种替换错误，DNA中将胞嘧啶 <span>（C）</span>替换成了胸腺嘧啶 <span>（T）</span>。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200801/f3edd4ff2b8d4ec79379d8eabcfce3b6.png" /></p>
+<p style="text-align: left;">而根据统计，在DNA合成会出现的错误中，插入和删除的错误占据了57%。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200801/7aee79818c74449e80d08e6748126773.png" /></p>
+<p style="text-align: left;">以往虽然也有针对DNA合成的纠错方式，但效率不高。</p>
+<p style="text-align: left;">好消息是，现在科学家们研究出了一种新的编解码方式 <strong>HEDGES</strong>，全名Hash Encoded, Decoded by Greedy Exhaustive Search，可以更高效地将数据合入DNA，或取出来。 </p>
+<p>HEDGES高效纠错 </p>
+<p style="text-align: left;">下图是在解码时，传统纠错方式和HEDGES纠错方式的对比。</p>
+<p style="text-align: left;">其中，红色部分是发生替换、插入或删除错误的地方，蓝色部分是正确序列。</p>
+<p style="text-align: left;">从图中可见，传统DNA合成在解码纠错时，需要对一条链进行多次合成，然后进行比对，得出正确率高的正确碱基对，从而降低错误率。</p>
+<p style="text-align: left;">但HEDGES只需要进行 <strong>单次读取</strong>，就能将发生缺失、删除和替换错误的地方纠正过来，并得出正确的信息。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200801/fa44d23607454bfb9badd1b90c5ab22a.png" /></p>
+<p style="text-align: left;">这种高效纠错的能力，与HEDGES编解码的方式密不可分。</p>
+<p style="text-align: left;">HEDGES编解码依据的是一种 <strong>自动加密算法</strong>，这种算法在古代战事中很常见： </p>
+<p style="text-align: left;">假设一方要传递「黎明时进攻」的明文，现在双方已知关键词是「QUEENLY」，那么密钥就是「QUEENLY+明文」，加密时，用维吉尼亚密码把「明文+密钥」翻译成密文。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200801/a9a055119f124e4ba5e069fd2e88a0b1.png" /></p>
+<p style="text-align: left;">然后，对方只需要掌握“QUEENLY”和密文，就能将明文解密出来了。</p>
+<p style="text-align: left;">不过，这种算法用于DNA编码时，会出现 <strong>冗余</strong>的情况，例如，在半速率编码 <span>（每个核苷酸编码1比特数据）</span>时，如果输入1比特数据，则会输出2比特的数据量。 </p>
+<p style="text-align: left;">接下来，采用 <strong>哈希算法</strong>，结合数据本身、数据所在DNA链的ID和先前数据，做个「数字签名」，就能保障数据传递的安全性，如下图。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200801/f6055fe8e6374835bd18840f3a3f3322.png" /></p>
+<p style="text-align: left;">而DNA进行解码的过程，实际上类似于自动加密算法的破译过程，将所有合成过程中可能出现的「错误」列出来，一一进行排查。</p>
+<p style="text-align: left;">解码中会出现删除、插入的错误，下图就出现了插入错误。</p>
+<p style="text-align: left;">这时候，经过哈希算法加密的「数字签名」，可以排除掉不正确的解码假设。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200801/8f388ff3d2ab4f8992cfd46b433648f7.png" /></p>
+<p style="text-align: left;">例如，包含数据所在链的ID部分，在解码时，如果发现解码得出的链ID与「数字签名」包含的ID信息不一致，这一系列错误假设就会直接被「解决掉」。</p>
+<p style="text-align: left;">这样，就能纠正在解码过程中出现的插入和删除的错误。</p>
+<p style="text-align: left;">当然，这只是数据编解码的过程，除此之外，团队在外部存储方式上也设计了新方法。</p>
+<p style="text-align: left;">首先，输入的各种类型的数据信息会被转换成特定数据存储格式，然后通过一种名为RS <span>（Reed–Solomon）</span>的外部方式，进行基于DNA的存储。 </p>
+<p style="text-align: left;">这种类似于「对角线」一样的存储方式，使得合成过程中产生的错误能更均匀地分布，并被测量出来，提高了纠错性能。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200801/d29b1784efdb4420ad904acff2def62d.png" /></p>
+<p style="text-align: left;">正是通过这种编解码方法，团队成功完成了《绿野仙踪》的DNA数据存储、解读。</p>
+<p>结果耐温稳定 </p>
+<p style="text-align: left;">从结果来看，整体错误率基本只有1%，而且在温度诱变的情况下，经过2小时和8小时，错误率上升基本在0.1%左右，非常稳定。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200801/0c51674fac45438bb99a7a20728db652.png" /></p>
+<p style="text-align: left;">而从整体数据来看，采用HEDGES进行编码，在编码率小于0.2、每个核苷酸出错概率Perr小于0.01的时候，错误率理论上能逼近0。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200801/6000a9fbd01e478bafe433593ade2490.png" /></p>
+<p style="text-align: left;">看起来，DNA数据存储，未来说不定真能取代硬盘。</p>
+<p>作者介绍 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200801/db060f2045ef406db74a788ab3e02e65.png" /></p>
+<p style="text-align: left;">论文一作是William H. Press，美国国家科学院院士，1948年出生，毕业于哈佛大学，并于1972年在加州理工学院取得博士学位。 </p>
+<p style="text-align: left;">Press教授曾在哈佛大学任教天文物理学20余年，在广义相对论和天体物理学方面都有所建树。自2007年后，在德克萨斯大学奥斯汀分校任教，目前是计算机科学和合成生物学的教授。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>报名 |「隐私计算+AI」技术直播</strong></p>
+<p>不了解任何隐私AI技术的情况下，开发者怎样做到只改动两三行代码，就将现有AI代码转换为具备数据隐私保护功能的程序？</p>
+<p>8月6号， <strong><span>中科院软件研究所博士、矩阵元算法科学家--谢翔</span></strong>将直播解析，扫码加小助手，即可进入直播交流群： </p>
+<p></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜靠「老板语音」骗走182万！音频版Deepfake让员工真假难辨乖乖转账，专家：目前无解
+http://www.sohu.com/a/410933587_610300	17407
+<p>贾浩楠 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">Deepfake模仿生成人脸效果出众，真假难辨。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200801/8cff986b073a47d59eb8f68d34af3a4e.gif" /></p>
+<p style="text-align: left;">由此引发的争议和担忧，使得各大平台先后封杀了Deepfake。</p>
+<p style="text-align: left;">但最近，外媒又报道了不法之徒用 <strong>音频版Deepfake</strong>开始了新的诈骗活动，“一血”就拿下24.3万美元（约182万人民币）。 </p>
+<p style="text-align: left;">棘手的是，目前安全专家毫无破解之法。</p>
+<p>发生了什么？ </p>
+<p style="text-align: left;">今年6月，一家美国的科技公司员工收到了“自家”CEO发来的语音邮件，要求他“马上协助完成一笔紧急的生意”。</p>
+<p style="text-align: left;">但是，这次CEO的声音听起来却有一点怪：</p>
+<p><span style="font-size: 16px;">是boss的声音没错，但是感觉机械了点，尖锐了点，而且这种语音邮件的联系方式也很反常。</span></p>
+<p style="text-align: left;">这位员工还是比较机敏，把事情上报给了公司法务，终于证实这是一起合成人类语音的诈骗事件。</p>
+<p style="text-align: left;">随后，这家公司把相关资料提供给了美国安全咨询公司Nisos来调查，但结果却无法令人满意。</p>
+<p>专家挠头，表示无解 </p>
+<p style="text-align: left;">Nisos使用Spectrum3d音频频谱图工具分析了Deepfake语音邮件的音频记录。</p>
+<p style="text-align: left;">技术人员注意到了音频频谱图中的峰值反复出现。Nisos怀疑是Deepfake创作者用多个轨道的声音合成后播放，以此来伪造某一目标人物的音色。</p>
+<p><strong><img height="auto" width="351" src="http://p0.itc.cn/q_70/images03/20200801/1650df12ef47471b80d896e5c8d15985.png" /></strong></p>
+<p style="text-align: left;"><span>此外，音频频谱断断续续，与正常的人类录音不一</span><span>致。</span><span>以1.2倍速度播放时，这段音频听起来更像是文本转语音的软件合成结果。</span></p>
+<p style="text-align: left;">最重要的一点，研究人员没有在这段音频中检测到任何背景噪音。</p>
+<p><strong><img height="auto" width="351" src="http://p5.itc.cn/q_70/images03/20200801/6769f9f0c0aa40bfa812ff92033b14c4.png" /></strong></p>
+<p style="text-align: left;"><span>比较Deepfake音频和正常人类录音，可以发现真实情况下，频谱的音高和音调更加平滑，而且背景中总能检测到噪音。</span></p>
+<p style="text-align: left;">但是，Nisos的分析也只能到此为止了，因为缺乏更多的数据样本，研究人员无法知晓或推测生成音频的算法模型细节。</p>
+<p style="text-align: left;">Nisos找到了一个疑似诈骗犯使用的电话号码，但是没有任何注册身份信息，出于法律原因，Nisos没有回拨号码去联系。</p>
+<p><strong><img height="auto" width="318" src="http://p3.itc.cn/q_70/images03/20200801/1ba832079e5e4c428d7ada60a67307ef.jpeg" /></strong></p>
+<p style="text-align: left;">但研究人员总结了Deepfake音频的特点。Deepfake音频创作者为了创建更为逼真的音频，通常需要满足如下几个条件：</p>
+<p style="text-align: left;">1、截获目标人物几乎没有背景噪音的高质量音频；</p>
+<p style="text-align: left;">2、在对方不需要或无法回电、交谈的情况下发送音频；</p>
+<p style="text-align: left;">3、以留言的形式避免与音频接收者实时交谈。</p>
+<p>以前发生过吗？ </p>
+<p style="text-align: left;">2019年9月，英国出现了第一起Deepfake音频诈骗事件。</p>
+<p style="text-align: left;">犯罪分子使用音频版Deepfake对英国一家能源公司高管的声音进行模仿。</p>
+<p style="text-align: left;">该公司的执行董事在接听诈骗电话后将超过24.3万美元汇入了一个匈牙利账户。</p>
+<p style="text-align: left;">第一笔进账后，骗子接着打了第二个要求转账的电话，这才引起了怀疑。</p>
+<p style="text-align: left;">目前，该罪犯仍未被抓获，但据外媒报道，这起案件中的Deepfake音频效果及其逼真，不仅模仿了音色，对于标点、语调的把握也十分到位，甚至 <strong>还学会了公司boss的德国口音</strong>。 </p>
+<p><strong><img height="auto" width="1000" src="http://p8.itc.cn/q_70/images03/20200801/76269061d8e746c99b1d0aaf92d723cf.png" /></strong></p>
+<p style="text-align: left;"><span>今年2月，互联网安全公司Symantec报告了三起Deepfake音频诈骗案例，犯罪分子通过电话会议、YouTube、社交媒体以及TED演讲获得了公司高管的音频，然后用Deepfake算法复制高管的声音，致电财务部门的高级成员要求紧急汇款。</span></p>
+<p style="text-align: left;">骗子一般利用VoIP网络电话账号联系攻击对象，绕过通话，直接使用语音邮件功能发送合成音频。</p>
+<p style="text-align: left;">Nisos认为，现在的小规模发送Deepfake音频，可能只是犯罪分子在“试水”，随着Deepfakes的创建或购买变得越来越容易，音频、视频的合成处理质量不断提高，此类电子诈骗将更为普遍。</p>
+<p>普通人该怎么办 </p>
+<p style="text-align: left;">尽管Nisos的研究人员说，目前这种Deepfake算法还没有外包给单个个体或大规模生产的可能。</p>
+<p style="text-align: left;">但Nisos通过“特殊渠道”联系到了熟悉Deepfake项目的开发者，他们说不确定这种情况将来会不会成为可能。</p>
+<p style="text-align: left;">音频Deepfake的核心问题不仅要捕捉人的音色，还要捕捉具体的言谈举止习惯。</p>
+<p style="text-align: left;">然而，类似Yandex反向图像搜索工具的语音版，可以用来收集大量样本，然后建立和训练Deepfake模型，帮助将源语音转换为目标语音。</p>
+<p><strong><img height="auto" width="552" src="http://p7.itc.cn/q_70/images03/20200801/3a89e09b10ff4a25a2626ccb2ddddb22.png" /></strong></p>
+<p style="text-align: left;"><span>那么当下普通人如何预防类似的诈骗呢？</span></p>
+<p style="text-align: left;">Nisos认为，尽管Deepfake真假难辨，但能力毕竟有限。</p>
+<p style="text-align: left;">对于可疑的留言或语音邮件，可以使用已知号码回拨该发送者进行通话；</p>
+<p style="text-align: left;">公司员工也可以针对公司内部信息或某些机器无法轻易回答的问题在通话过程中进行挑战性提问，以查明通话对象的身份。</p>
+<p style="text-align: left;">你曾经遇到过AI生成的语音诈骗吗？</p>
+<p><span style="font-size: 16px;">参考链接 </span></p>
+<p><span style="font-size: 16px;">https://www.nisos.com/white-papers/rise_synthetic_audio_deepfakes </span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>报名 |「隐私计算+AI」技术直播</strong></p>
+<p>不了解任何隐私AI技术的情况下，开发者怎样做到只改动两三行代码，就将现有AI代码转换为具备数据隐私保护功能的程序？</p>
+<p>8月6号， <strong><span>中科院软件研究所博士、矩阵元算法科学家--谢翔</span></strong>将直播解析，扫码加小助手，即可进入直播交流群： </p>
+<p></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜特朗普要求字节跳动放弃TikTok所有权，微软考虑收购，网友：明抢？
+http://www.sohu.com/a/410933636_610300	17407
+<p>杨净 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">不只要求封禁，还直接要求出售？</p>
+<p style="text-align: left;">这是当前特朗普对待 <strong>海外版抖音TikTok</strong>的新戏码。 </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200801/2f1011a76a4e4a419277b02c1749b92f.jpeg" /></p>
+<p style="text-align: left;">据彭博社报道，特朗普下令要求 <strong>字节跳动</strong>放弃对海外版抖音TikTok的所有权。 </p>
+<p style="text-align: left;">也就是说，命令字节跳动在美国出售 <strong>海外版抖音TikTok</strong>。 </p>
+<p style="text-align: left;">而下一个接盘TikTok的企业也已经找到了。</p>
+<p style="text-align: left;">彭博社报道称， <strong>微软</strong>表示正在洽谈TikTok收购事宜。 </p>
+<p style="text-align: left;">截止目前，字节跳动方面回应，不会对未经证实的「传言」或「猜测」发表言论，但对TikTok的长期成功充满信心。</p>
+<p style="text-align: left;">而微软方面拒绝发表评论。</p>
+<p style="text-align: left;">华尔街日报援引知情人士透露，此番交易将在 <strong>周一</strong>进行，字节跳动、白宫和微软的代表都将出席，但谈判的情况是不确定的，可能并不会达成协议。 </p>
+<p style="text-align: left;">变数依然不少。</p>
+<p style="text-align: left;">最新消息， <strong>CNBC</strong>报道，特朗普称将于周六尽快通过行政命令禁止TikTok，不支持TikTok的分拆交易。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200801/95873eca55db472f89d8b020f67d6bc3.png" /></p>
+<p style="text-align: left;">对此，网友表示：明抢。</p>
+<p><img height="auto" width="336" src="http://p6.itc.cn/q_70/images03/20200801/16e3c22077d1409fa34d47c66d0c4717.png" /></p>
+<p><img height="auto" width="718" src="http://p4.itc.cn/q_70/images03/20200801/4293caa0625549f79b3e647e369a06b4.png" /></p>
+<p>将TikTok出售给微软？ </p>
+<p style="text-align: left;">两周前，特朗普就曾放话，正加紧研究是否要正式禁用海外版抖音TikTok，并预计将在未来几周内，正式采取行动。</p>
+<p style="text-align: left;">现在，结果出来了——预计是把TikTok卖给美方。</p>
+<p style="text-align: left;">在考虑封禁的同时，特朗普政府也一直在审查TikTok的所有权。就在周三特朗普在接受媒体采访时表示，</p>
+<blockquote>
+<p>我们正在研究TikTok，可能会封禁，但还在寻求其他的替代方案。</p>
+</blockquote>
+<p style="text-align: left;">TikTok在过去一段时间里一直在致力于与字节跳动保持距离，否认收集数据出售给中国政府，甚至还招募游说大军，但都未曾取得成效。</p>
+<p style="text-align: left;">Fox早些时候就曾报道过这项交易谈判的消息，但当时美国对「安全审查」在做最后的总结阶段，预计该审查建议字节跳动出售TikTok。</p>
+<p style="text-align: left;">关于具体的出售金额，华尔街日报也援引知情人士表示，字节跳动预计 <strong>数百亿美元</strong>将TikTok出售。此前该公司高管一直在担心特朗普政府会迫使TikTok从「应用商店」中下架。 </p>
+<p style="text-align: left;">目前，美国的一些投资者对TikTok的估值为 <strong>500亿美元</strong>。 </p>
+<p style="text-align: left;">而收购方正是 <strong>微软</strong>。 </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200801/fd37461375cb4817a29dc95c13be5840.jpeg" /></p>
+<p style="text-align: left;">目前，微软在社交网络方面的主要业务是Linkedln。除此之外，最近还关闭了视频游戏流服务Mixer，曾对标亚马逊的Twitch。</p>
+<p style="text-align: left;">收购TikTok可能会使主要的商业软件提供商Microsoft更加专注于消费者技术，而微软近年来已通过退出智能手机硬件，健身硬件和电子书市场而摆脱了这种趋势。</p>
+<p style="text-align: left;">不过，也不一定是微软。</p>
+<p style="text-align: left;">彭博社援引了解此番谈判的人士透露，除了微软，其他潜在的买家也可能出面，包括Facebook 、苹果、亚马逊、Alphabet……但这些公司目前正受到反垄断调查，所以交易起来会比较复杂。</p>
+<p style="text-align: left;">但是据CNBC援引知情人士报道，微软与字节方面的交易谈判已经进行了一段时间，并不是崭新的事情，</p>
+<p style="text-align: left;">截止目前，微软对此事拒绝回应。</p>
+<p style="text-align: left;">字节跳动方面表示，不会对未经证实的「传言」或「猜测」发表言论，但对TikTok的长期成功充满信心。并且将致力于保护用户的隐私和安全。</p>
+<p>最快周六封禁TikTok </p>
+<p style="text-align: left;">外媒称，「要求TikTok出售」这是特朗普政府所做的压力让步。此番收购似乎是一项一举两得的举措。</p>
+<p style="text-align: left;">一方面，可以通过从中国公司控制中删除TikTok来解决所谓的「数据收集」问题，另一方面，TikTok这项应用还在，民众喜闻乐见。</p>
+<p style="text-align: left;">就在特朗普威胁要禁止TikTok的几周前，就有不少外媒报道称，很多TikTok用户已经试图在干扰特朗普的精选集会，并协调了一下对特朗普政府的负面评价。</p>
+<p style="text-align: left;">但据CNBC援引知情人士报道，微软与字节方面的交易谈判已经进行了一段时间，并不是崭新的事情。</p>
+<p style="text-align: left;">而特朗普也告诉记者，他 <strong>不支持</strong>报道中所涉及微软收购TikTok的 <strong>分拆交易</strong>，最快将于本 <strong>周六</strong>进行。 </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200801/e1ed9a1fc0784a75823fadc8e7df01a9.jpeg" /></p>
+<p style="text-align: left;">本月初，国务卿蓬佩奥表示，美国正在考虑禁止包括TikTok在内的中国社交媒体应用程序，但未提供更多细节。</p>
+<p style="text-align: left;">半个月后，美国特朗普政府正在研究社交媒体应用程序（其中包括海外版抖音TikTok、微信）所带来的国家安全风险。</p>
+<p style="text-align: left;">这段时间，而字节跳动及TikTok方面也一直没有坐以待毙。</p>
+<p><img height="auto" width="1350" src="http://p4.itc.cn/q_70/images03/20200801/a1402aa8816047c0a144f519e6cffc59.png" /></p>
+<p style="text-align: left;">此前他们就将与中国业务分离，将服务器设在海外，还聘请了美国迪士尼高管Kevin Mayer担任首席执行官，此外，还招募一支35人以上的游说大军。</p>
+<p style="text-align: left;">但这些举措都收效甚微。</p>
+<p style="text-align: left;">接下来，海外版抖音TikTok将是什么样的结局？也只能走一步看一步了。</p>
+<p style="text-align: left;"><span>参考链接：</span></p>
+<p><span>https://www.bloomberg.com/news/articles/2020-07-31/trump-to-order-china-s-bytedance-to-sell-tiktok-u-s-operations</span></p>
+<p><span>https://www.cnbc.com/2020/07/31/trump-says-he-will-ban-tiktok-through-executive-action-as-soon-as-saturday.html</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>报名 |「隐私计算+AI」技术直播</strong></p>
+<p>不了解任何隐私AI技术的情况下，开发者怎样做到只改动两三行代码，就将现有AI代码转换为具备数据隐私保护功能的程序？</p>
+<p>8月6号， <strong><span>中科院软件研究所博士、矩阵元算法科学家--谢翔</span></strong>将直播解析，扫码加小助手，即可进入直播交流群： </p>
+<p></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜代码改动两三行，AI数据秒换隐身衣！隐私计算+AI？如何一键切换
+http://www.sohu.com/a/410918627_610300	23185
+<p><strong>脱了马甲我照样儿认识你！</strong></p>
+<p>这句在2000春晚赵本山的经典台词，放在<strong>隐私圈</strong>有了新的解释：在不看到数据“真面目”的情况下，照样能得到答案。</p>
+<p>数据的进击与人工智能的野望</p>
+<p>随着人工智能（AI）技术的不断发展和各种产品落地，<strong>数据</strong>作为各种人工智能算法的<strong>原材料</strong>，其价值已经普遍得到大家认可。各个公司能够采集到的数据毕竟有限，想得到更精准的训练模型，就需要将数据联合起来挖掘更大的价值。</p>
+<p>但真正让数据“流动”并不简单，对于拥有数据的各个企业来说，面临着很大的矛盾：<strong>通过数据分享和交互显然可以提升AI算法的效果，但同时又必须要保障自己的数据不泄露出去。</strong></p>
+<p>Rosetta让隐私计算与AI攻守结合</p>
+<p>而解决数据的动态使用、分享中的安全问题，正是<strong>“隐私计算+AI”</strong>技术的专长。其融合在数据的使用、处理过程之中，保障计算过程本身（广义的讲，还包括计算结果）不会泄露原始明文数据本身的信息。</p>
+<p>国内首个自主研发的基于主流TensorFlow框架的隐私AI框架可以解决以上种种问题：<strong>Rosetta</strong> 。</p>
+<p>“Rosetta”名称取自古埃及的罗塞塔石碑（Rosetta Stone）。其上记载着古埃及象形文字、埃及草书和古希腊文三种文字。</p>
+<p>这里寓意着Rosetta框架将承载和结合AI、隐私AI和区块链三种典型的技术。这使得Rosetta的发展方向聚焦在以下三个方面：</p>
+<ul>
+<li>面向AI需求，服务AI开发者</li>
+<li>完全开源，透明开放</li>
+<li>持续集成高效、可扩展的隐私保护技术后端</li>
+</ul>
+<p>目前开源的 Rosetta 0.2.0版本中，以TensorFlow这一流行AI框架为基础，深度改造其python前端和后端kernel，融合了最前沿的安全多方计算（MPC）算法协议。</p>
+<p>那么让我们揭开Rosetta的神秘面纱，先睹为快，举一个简单的“硬核”例子：</p>
+<p>假设现在有三个个体A，B和C各自都具有自己采集到的一批私有数据，并且已经各自经过标准的特征工程等方式将其表达为三个矩阵Ma，Mb和Mc，正如大部分的AI算法（比如推荐系统）那样，某一个步骤中需要执行矩阵乘法这样的算子操作。</p>
+<p>显然为了保护数据的隐私，三方之间是不能将各自的数据直接明文的传输给其他参与者的，而这样的计算又必须要进行数据的交互，这时，用户可以引入Rosetta框架后很快的解决这一问题。</p>
+<p>Rosetta框架实例分析</p>
+<p>比如，各方在本地有一样的如下脚本rosetta_demo.py (这里为了更加直观的体验，我们以各方通过console输入简单的数据来示例，真实场景下可以调用隐私数据文件读取接口来输入)：</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200801/03d79be853824fb685460bc3e974add7.jpeg" max-width="600" /></p>
+<p>A 、B和C方在完成配置好网络拓扑配置文件后，分别运行</p>
+<p>python rosetta_demo.py --party_id=0</p>
+<p>python rosetta_demo.py --party_id=1</p>
+<p>python rosetta_demo.py --party_id=2</p>
+<p>然后，各方分别按照提示在终端中输入各自的私有数据，比如A方可以按照如下提示输入其对应的矩阵元素值：</p>
+<p>[2020-07-29 20:10:49.070] [info] Rosetta: Protocol [SecureNN] backend initialization succeeded!</p>
+<p>please input the private data (float or integer, 6 items, separated by space): 2 3 1 7 6 2</p>
+<p>假设A方输入的私有矩阵为</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200801/212bdbc528d047419a07624b2bdf22cf.jpeg" max-width="600" /></p>
+<p>,B方输入的私有矩阵为</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200801/d3b795340ae642018a8600fe62f6cf6e.jpeg" max-width="600" /></p>
+<p>,C方输入的素有矩阵为</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200801/8008179ed490421e8697c8aeb79ef1c9.jpeg" max-width="600" /></p>
+<p>。</p>
+<p>我们先直接打印出算子计算的结果，此时各方本地输出的是各不相同的被编码后的密文信息,比如：</p>
+<p>local ciphertext result: [[b'D\xa9P\xfeul\x00\x00#' b'\xcbj\x1c\x1f*D\x00\x00#' b'\xef\xdb\xa2\xddS\x90\xff\xff#' b'\xaa:\xbcD\x96\x83\xff\xff#']</p>
+<p>[b'\x16\xb3\xf6\xa9@x\x00\x00#' b'4\xff/\x99\xc9\xbb\xff\xff#' b'8\x11\xfa\xa1Y&lt;\x00\x00#' b'_9\x92&gt;\xea6\x00\x00#']</p>
+<p>[b'\xeb)\xf3\xa0\xfa\xc6\xff\xff#' b"\x1c'\xec\x80\xa1%\x00\x00#" b'\xf4\xcd\xc4\xb6\xfb\x1a\x00\x00#' b'B\x10\xeeNd\xe6\xff\xff#']]</p>
+<p>在上述脚本的最后我们显式的调用了SecureReveal接口来将隐私AI的结果“解密”出来，且通过设定参数为5来要求只有A和C可以得到明文值，所以A方和C方将得到类似如下的正确明文结果：</p>
+<p>plaintext matmul result: [[b'8.000000' b'14.000000' b'18.000000' b'4.000000']</p>
+<p>[b'4.000000' b'7.000000' b'9.000000' b'2.000000']</p>
+<p>[b'24.000000' b'42.000000' b'54.000000' b'12.000000']]</p>
+<p>[2020-07-29 20:11:06.452] [info] Rosetta: Protocol [SecureNN] backend has been released.</p>
+<p>而B方则不会得到正确的明文计算结果，其输出是：</p>
+<p>plaintext matmul result: [[b'0.000000' b'0.000000' b'0.000000' b'0.000000']</p>
+<p>[b'0.000000' b'0.000000' b'0.000000' b'0.000000']</p>
+<p>[b'0.000000' b'0.000000' b'0.000000' b'0.000000']]</p>
+<p>[2020-07-29 20:11:06.558] [info] Rosetta: Protocol [SecureNN] backend has been released.</p>
+<p>可以看出除了必要的数据预处理接口外，我们完全的复用了TensorFlow中的算子，在更复杂的计算逻辑图中，你可以像这个trivial例子中的Matmul一样，直接使用native TensorFlow的算子即可，不需要感知任何后端复杂的隐私协议！</p>
+<p>AI开发者能在不需要对隐私AI技术有任何了解的情况下，<strong>只需要改动两三行代码即可将现有AI代码转换为具备数据隐私保护功能的程序</strong>，Rosetta可以说是AI开发者的“贴心小马甲”。</p>
+<p>为了更相近了解这种隐私保护技术，量子位邀请到矩阵元算法科学家谢翔博士进行直播分享，<strong>Rosetta如何将隐私计算能力赋予人工智能</strong>，让我们的隐私更安全。</p>
+<p>分享内容</p>
+<ul>
+<li>隐私计算背景介绍</li>
+<li>如何实现隐私保护</li>
+<li>什么是Rosetta</li>
+<li>Rosetta运行原理</li>
+<li>Rosetta的应用场景</li>
+<li>未来的规划</li>
+</ul>
+<p>嘉宾介绍：</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200801/9a85f0930a324ae09ac006a5b4765dac.jpeg" max-width="600" /></p>
+<p><strong>谢翔，中国科学院软件研究所博士</strong>，矩阵元算法科学家，负责公司整体隐私计算技术的预研和产品化，主导设计和开发Rosetta开源框架。</p>
+<p>格密码理论、同态加密、零知识证明、安全多方计算等密码学算法和协议设计的专家。发表论文10余篇，曾在密码学的顶尖学术会议Eurocrypt，CCS上发表论文。</p>
+<p>直播&amp;报名</p>
+<p>直播时间：</p>
+<p>2020年8月6日（周四），19:00-20:30</p>
+<p>其中分享时间为60分钟，问答交流环节30分钟</p>
+<p>报名方式：</p>
+<p>添加小助手，qbitbot9，将邀请您加入直播群。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200801/8f62a413378d4f70bde365c67dd68715.jpeg" max-width="600" /></p>

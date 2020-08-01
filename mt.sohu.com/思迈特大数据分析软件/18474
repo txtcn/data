@@ -1,0 +1,28 @@
+➜数据可视化工具：Tableau与Smartbi
+http://www.sohu.com/a/410755939_730790	40058
+<p>上一章节介绍了如何接入数据到系统里面，并且对数据进行处理。那本章节与大家分享smartbi及tableau是如何对数据进行仪表盘制作。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p2.itc.cn/images01/20200731/1a1853b807044ce6a777718ca032119e.png" max-width="600"> </img></p>
+<p>以上看到的是tableau的工作簿界面，是tableau可视化显示最基本的元素，在此界面可以看到左侧有一个维度和度量区域。</p>
+<p>下面与各位探讨下维度和度量分别代表的含义。</p>
+<p>维度：在初次连接数据源的时候Tableau自动将包含离散分类信息的信息字段分配给维度，比如字符串和日期，当然维度也是可以转换为度量的度量：Tableau会把包含定量数值的信息的字段分配给度量。</p>
+<p>中间的界面，工作区就是所见即所得的资源展示区，这里通常是展示一个数据分析维度的报表。</p>
+<p><strong>制作步骤：</strong>创建工作表，有三个入口：左上角的工作表，点击新建工作表；左下角的小图标，可以直接新建，类似于excel加sheet页；点击右上角的图表下面的图形中红色方框的图标。如下图所示：</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p8.itc.cn/images01/20200731/2cba5d2b11c3474db90bccebbd7d989c.png" max-width="600"> </img></p>
+<p>创建工作表之后，可以选择需要分析的字段到行、列区域，双击或拖拽到对应区域均可。系统默认会根据您选的数据展示一个报表，非地理维度类通常是柱图，地理维度类就是识别为地图。首先可视化，要选合适的图表呈现这些信息。在制作完工作表之后，可由多张工作表形成仪表板，继而连成一个故事线。</p>
+<p>接下来给大家分享smartbi与之对应的自助仪表盘如何制作，首先看到自助仪表盘-定义流程。流程定义如下图所示：</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p8.itc.cn/images01/20200731/be5ad8fbea14492e83cd9317082a1a48.png" max-width="600" /></p>
+<p><strong>新建自助仪表盘</strong></p>
+<p>入口1：在系统快捷下拉菜单中选择 自助仪表盘。</p>
+<p>入口2：在主界面选择“分析展现”快捷菜单下的 自助仪表盘。</p>
+<p>入口3：在"分析展现"界面主菜单中，展开资源目录区，在现有文件夹的更多操作，选择新建分析&gt; 自助仪表盘。</p>
+<p>入口4：在"分析展现"界面主菜单选择 自助仪表盘。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p8.itc.cn/images01/20200731/42c2b62b2f1b4639b0d03f4f4025e673.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p0.itc.cn/images01/20200731/9f0c42d2fa3d432dbfd9594229119907.png" max-width="600" /></p>
+<p>自助仪表盘支持的数据来源可以来自自助数据集，亦可以来自业务主题。</p>
+<p><strong>拖拽组件</strong></p>
+<p class="ql-align-center" style="text-align: center;">系统支持拖拽图表、图片、文本、空白、TAB页签、URL链接组件来定义自助仪表盘资源。</p>
+<p><strong>筛选联动</strong></p>
+<p>用于定义自助仪表盘筛选器，实现自助仪表盘图表间联动。</p>
+<p><strong>布局样式</strong></p>
+<p>用于对自助仪表盘的布局及组件样式进行设置。</p>
+<p>值得一提的是，smartbi的整个过程展示接近于所见即所得的仪表盘设计，与tableau不同的是，能在一个展示区同时编辑多个图形组件，另外新版本还新增了工具栏折叠的效果，以最大可能的达到编辑界面能实时调整仪表盘的布局等设置。</p>

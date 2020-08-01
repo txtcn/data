@@ -1,0 +1,14 @@
+➜Google到2018年杀死非ChromeOS的Chrome Apps
+https://www.solidot.org/story?sid=49388	50041
+Google官方博客宣布了<a target="_blank" href="http://blog.chromium.org/2016/08/from-chrome-apps-to-web.html"><u>又一个死亡时间表</u></a>，杀死Windows、Mac和 Linux平台上的Chrome Apps。
+Google称，到2016年底开发者的新Chrome Apps将不会在Windows、Mac和 Linux平台的Chrome Web Store显示，现有的Chrome Apps仍然提供给用户，开发者可以继续更新。到2017年下半年，Windows、Mac和 Linux平台的Chrome Web Store将不再显示Chrome Apps；到2018年初，Windows、Mac和 Linux版的Chrome将不再加载Chrome Apps。Chrome Apps将只在ChromeOS平台上显示，这一变动不影响
+Chrome Web Store中的扩展。Chrome Apps与扩展的一个主要区别在于应用拥有的<a target="_blank" href="https://developer.chrome.com/apps/api_index"><u>权限更多</u></a>。
+➜微软Windows 10一周年内更新影响数百万Webcam
+https://www.solidot.org/story?sid=49389	51804
+微软在8月2日释出了Windows 10一周年内更新，带来新功能的同时也导致数百万消费者的Webcam<a target="_blank" href="https://www.thurrott.com/windows/windows-10/76719/microsoft-broken-millions-webcams-windows-10-anniversary-update"><u>停止工作</u></a>。如果你的Webcam在受影响之列，好消息是修正补丁预计会在9月推送到你的电脑。导致许多Webcam停止工作的原因是微软不再允许 USB Webcam使用MJPEG 或H264编码串流，只允许使用YUY2编码。为什么微软要移除编码选择？因为微软发现允许Webcam使用MJPEG 或H264会导致性能问题，所以就干脆禁用了。结果当许多Webcam尝试使用MJPEG 或H264编码时，会导致设备失去响应。如果你不想等待补丁，可以尝试修改注册表：HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows Media Foundation\Platform，添加一个项DWORD “EnableFrameServerMode”，将值设为0。
+➜古巴的离线CDN
+https://www.solidot.org/story?sid=49390	55767
+在古巴上网是一种奢侈，它的网费是如此昂贵以至于该国基本上不存在家庭互联网，一小时2美元的网费或1美元/MB的移动网费普通人负担不起。但古巴年轻人离全球互联网<a target="_blank" href="http://www.solidot.org/story?sid=42838"><u>并不遥远</u></a>，他们创建了一个巨大的局域网Streetnet，而数字周刊<a target="_blank" href="http://www.solidot.org/story?sid=45653"><u>El Paquete Semana</u></a>l每周向用户更新新闻、美剧和电影，杀毒软件更新甚至Android应用，它的服务每周只需要2美元。云服务供应商CloudFlare的John Graham-Cumming获得了一份El Paquete Semanal拷贝，<a target="_blank" href="https://blog.cloudflare.com/the-cuban-cdn/"><u>对这个离线CDN进行了一番分析</u></a>：他获得的拷贝发布日期是3月21日，容量为815.25 GB，包含14,208个文件，其中包括各大杀毒软件的离线补丁，以迈克菲为例它的补丁是在周刊发布4天前释出的，扫描发现其中有3个应用文件感染了病毒，幸运的是杀毒软件都能检测出来。它提供了53份最新版英文杂志的PDF，其中包括《经济学人》，《彭博商业周刊》等；西班牙语杂志则多达296份；大多数古巴人不能直接访问 Google Play Store，El Paquete 以APK文件方式提供Android应用更新，其中包括Instagram、 WhatsApp和《植物大战僵尸》等。El Paquete还提供了古巴版Craigslist服务的网站完整存档。
+➜Windows 10一周年更新版插入Kindle会导致蓝屏死机
+https://www.solidot.org/story?sid=49391	56055
+Windows 10一周年内更新曝出了更多的QA测试方面的问题：Windows 用户在官方论坛抱怨更新后插入Kindle Paperwhite<a target="_blank" href="http://answers.microsoft.com/en-us/windows/forum/windows_10-performance/plugging-in-kindle-is-crashing-windows-10-after/5db0d867-0822-4512-919e-3d7786353f95?page=1"><u>会立即导致电脑蓝屏死机</u></a>，更新前使用没有任何问题。Kindle是最流行的电子书阅读器之一。无论是笔记本电脑还是台式机，安装了最新更新后，插入Kindle Paperwhite后会立即导致蓝屏死机。这一问题与电脑品牌无关，受影响的电脑包括惠普、戴尔和联想。亚马逊Kindle论坛同样有大量的<a target="_blank" href="https://www.amazon.com/forum/kindle/ref=cm_cd_tfp_ef_tft_tp?_encoding=UTF8&amp;cdForum=Fx1D7SY3BVSESG&amp;cdThread=TxS2R55X6VN1AC"><u>问题报告</u></a>，问题被认为与驱动有关。一种权宜之计是在电脑睡眠状态时候插入Kindle。

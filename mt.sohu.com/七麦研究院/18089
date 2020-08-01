@@ -1,0 +1,87 @@
+➜ASM后台更新，多地区广告投放者必看！
+http://www.sohu.com/a/326318223_100065715	8428
+<p>七麦研究院 分析师-S.F. </p>
+<p>7月10日，苹果搜索广告（ASM）后台更新了两项功能：复制 Campaign 与批量调整关键词出价。这两个功能对于多地区投放的产品非常友好，针对一个产品的多地区创建多个Campaign并且分别调价时，可以完成快速操作。</p>
+<p><strong>1. 复制Campaign</strong></p>
+<p>勾选想要复制的 Campaign 并点击 Actions 出现下拉框后，再点击 Duplicate 即可复制该 Campaign 。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190712/74e8a5703b2340168f3959947e1c49cc.JPG" max-width="600" /></p>
+<p>复制的 Campaign 可以修改名称、总预算和日预算，并且选择是否同时复制该广告中的关键词明细。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190712/1bfc1020feed4a4c8079afbadd3e5308.JPG" max-width="600" /></p>
+<p>每次只能复制一个 Campaign ，复制之后的广告是暂停状态，并且无法立刻开启，需要手动进入 Campaign 中链接 Budget Order，然后在 Campaign Group 选择广告开启时间。</p>
+<p><strong>2. 批量关键词出价</strong></p>
+<p>同理，勾选需要批量调价的关键词并点击 Actions 出现下拉框后，点击 Selected Keywords 即可批量修改关键词出价。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190712/aba3e763e8eb4241aafe2bfc37664265.JPG" max-width="600" /></p>
+<p>修改出价时可以选择修改金额、提高出价和降低出价三种方式。</p>
+<p>目前最多只能修改当前页面的 50 个关键词，还不适用整体关键词。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190712/11547e1e66af4db0b923df38b9b70fba.JPG" max-width="600" /></p>
+<p>这就是苹果ASM最新功能的介绍啦，智库君会持续关注苹果竞价广告，并在第一时间为大家分享最新消息哒~</p>
+<p class="ql-align-center">- end -</p>
+<p>本文由七麦研究院 ASM 分析师【S.F.】原创，转载需联系七麦研究院获取授权，七麦研究院有权向非授权转载追究责任。</p>
+➜一篇文章帮你理清ASM 的账户结构
+http://www.sohu.com/a/326320559_100065715	8896
+<p>七麦研究院 分析师-S.F. </p>
+<p>上周我们整理了创建账号的操作过程，这周我们就来介绍一下账户的层级结构以及每个层级的可设置内容。</p>
+<p>代理商账号与普通账号的功能界面略有不同，本文内容均按照普通账号讲述。</p>
+<p>ASM 账户中共分为 5 个层级：</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20190712/8689d97590f14f7dbc6c45ed9a5b4676.JPG" max-width="600" /></p>
+<p>我们一个一个来说：</p>
+<p><strong>Account（账号）</strong></p>
+<p>可以投放创建 ASM 账号（Account）的 Apple ID 有 3 种：经开发者授权过的账号、已绑定开发者账号和代理商账号，不同账号可投放广告的权限不同。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20190712/e0c325a3576547e1b4ffbd0e5cb6e425.JPG" max-width="600" /></p>
+<p>点击 Search Ads 的右上角账号中的 Settings 即可设置账号信息 。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20190712/b5a28bd195054b1695101e19d7396f98.JPG" max-width="600" /></p>
+<p>账号设置中共包括 4 部分：</p>
+<p><strong>Overview（基本信息）</strong></p>
+<p>在这里可以修改一些账号信息，比如账号名称、联系人姓名、联系方式等（其中时区和币种不可以修改），这些信息都是在创建账号时填写的。</p>
+<p><strong>User Management（用户管理）</strong></p>
+<p>用户管理中可以创建用户角色，下面我们整理了可以创建的用户角色及对应的权限：</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20190712/d9ba82ffa48e4abba944194cb458d1cd.JPG" max-width="600" /></p>
+<p><strong>API（Application Program Interface，即应用程序接口）</strong></p>
+<p>通过创建的 API 证书可以对接到开发者或代理商的程序，由程序来展示数据、操作调整。</p>
+<p>在 API 模块点击 Create API Certificate 即可创建证书。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190712/b6ec8b8419804f04938b2c2bebdabf55.JPG" max-width="600" /></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190712/5c87ec97c38d4eac99efa4a2290fcf88.JPG" max-width="600" /></p>
+<p>创建证书时可以设置权限，这些权限与用户管理中的类似，两者不同点在于用户管理中创建的角色只可以在官方后台查看数据或进行操作，而 API 可以对接到其他程序，如企业内部的渠道统计后台。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20190712/30dfcb0c224d42efac3e0c2cf97d8c00.JPG" max-width="600" /></p>
+<p>创建完毕要等待几分钟刷新后就可以下载 API 证书啦。</p>
+<p><strong>Billing（账单）</strong></p>
+<p>ASM 广告当支出达到 500 美元时或每隔 7 天时会扣费一次，在你设置信用卡时指定的电子邮件地址会收到一封邮件通知。</p>
+<p>在账单页面中还可以查看和下载发票。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20190712/8f38a4864a464b39810d1c2ec7f1a677.JPG" max-width="600" /></p>
+<p><strong>Campaign Group（竞价计划组）</strong></p>
+<p>竞价计划（Campaign）是ASM最核心的层级，投放人员可以把相近的竞价计划创建到一个竞价计划组（Campaign Group）中。</p>
+<p>比如一个公司的不同项目组，分别使用各自的竞价计划组，这样更方便区分统计；或者广告代理公司为不同客户创建不同的竞价计划组；对于大部分常规开发者来说，单个竞价计划组就已经够用了。</p>
+<p>竞价计划组的设置在页面的左上角，点击 CAMPAIGN GROUPS 后会出现下拉框，在框中点击你想要设置的竞价计划组 Settings 即可。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20190712/bc19ecd52c054692930d6b57ed816ac3.JPG" max-width="600" /></p>
+<p class="ql-align-center">竞价计划组设置界面</p>
+<p>竞价计划组中可设置内容只有两项：竞价计划组名称和链接 App Store 的帐户。</p>
+<p><strong>Campaign（竞价计划）</strong></p>
+<p>竞价计划（Campaign）是整个账户结构中最重要的一个层级，每个广告计划即对应一个投放广告的 App（一个 App 也可以创建多个计划）。</p>
+<p>单个竞价计划既支持投放单一国家与地区，也支持投放多地区。多地区的广告计划在数据展示上不是很友好，基础数据报表不能区分各个国家的数据，只能在 Chart 模块查看。</p>
+<p>所以对各地区有精细化投放需求的投放者，最好每个 App 的每个投放地区都单独创建 Campaign；</p>
+<p>如果没有特别强的精细化投放需求，就可以创建一个多地区的 Campaign。 </p>
+<p>广告计划的设置是在该计划页面中右上角的 Edit campaign settings。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20190712/8a4d5aabd4924385bc5a0d0a57ca5ceb.JPG" max-width="600" /></p>
+<p class="ql-align-center">广告计划设置界面</p>
+<p>Campaign 可以设置该广告所投放的 App 和投放地区，预算设置分为总预算设置和每天预算。</p>
+<p><strong>Ad Group（关键词组）</strong></p>
+<p>ASM投放的是关键词，为了方便我们统计与分类，可以对相同属性或数据的关键词进行分组，即关键词组（Ad Group）。</p>
+<p>比如我们可以按照关键词分类可分为：竞价词组、行业词组、拓展词组等；</p>
+<p>或者按照不同匹配模式可分为：精准关键词组、模糊关键词组、自动匹配关键词组等。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20190712/224f65abf0a547fa94ae31b68a92646c.JPG" max-width="600" /></p>
+<p>关键词组可设置的信息比较多，共分为 3 部分：</p>
+<p>· CPT 出价设置和目标安装成本设置</p>
+<p>· 是否开启自动搜索匹配</p>
+<p>· 设置目标用户的设备、类型、性别年龄、地区和广告开放的时间区间</p>
+<p><strong>Keywords（关键词）</strong></p>
+<p>广告中的关键词分为投放词、搜索词和屏蔽词。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20190712/2eddc61126ca430ca59799f146bffb20.JPG" max-width="600" /></p>
+<p>投放词（Keywords）就是我们自己所投放的关键词；</p>
+<p>搜索词（Search Terms）是指用户具体搜索的关键词；</p>
+<p>关于投放词和搜索词的区别我们可以举个例子解释一下：</p>
+<p>比如我们投放了关键词 “game”同时打开模糊匹配,当客户搜索“free game”时匹配到了“game”的竞价广告，那么这个广告数据则会计入 Keywords 的“game”和 Search Terms 的“free game”中，所以投放词不一定等于搜索词。</p>
+<p>屏蔽词（Negative Keywords）需要投放人员自主设置，被添加到屏蔽词中的关键词在用户搜索时不会展示广告。</p>
+<p>目前 Keywords 在官网中只可以调整 CPT 出价，想要调整匹配模式则需要上传文档进行修改，之后我们会在教大家创建广告的文章中具体说明。</p>
+<p>关于 ASM 账户的结构我们就讲完了，下周我们会介绍一下 Apple Search Ads 官网的各个界面以及功能，大家要持续关注呀！</p>
+<p class="ql-align-center">- end -</p>
+<p>本文由七麦研究院 ASM 分析师【S.F.】原创，转载需联系七麦研究院获取授权，七麦研究院有权向非授权转载追究责任。</p>

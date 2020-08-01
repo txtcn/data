@@ -1,0 +1,42 @@
+➜E3 正式宣布取消
+https://www.solidot.org/story?sid=63789	6980
+因新冠疫情，游戏行业最大的展会 E3（ Electronic Entertainment Expo）<a href="https://variety.com/2020/digital/news/e3-2020-canceled-coronavirus-1203529992/" target="_blank"><u>正式宣布取消</u></a>。E3 2020 原定于 6 月 9-11 日在洛杉矶举行，去年的展会吸引了 6.6 万人。主办方 Entertainment Software Assn（ESA） 称在在谨慎咨询之后它做出了一个困难的决定：取消 E3 2020。ESA 表示将联系参展商和与会者，提供全额退款。ESA 称它将探索在线展会的选项。因疫情，已经有许多行业会议纷纷取消或延期，游戏行业的开发者大会  GDC 也取消了线下会议转为线上活动，GDC 将在下周在 Twitch 直播演进和颁奖。
+➜WHO 宣布新冠肺炎成为全球性大流行疫情
+https://www.solidot.org/story?sid=63790	9507
+WHO 总干事谭德塞<a href="https://www.who.int/zh/dg/speeches/detail/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---11-march-2020"><u>宣布</u></a>新冠肺炎成为全球性大流行疫情。他在新闻发布会上表示：<i>“过去两周，中国境外的 COVID-19 病例增加了 12 倍，受影响国家的数量增加了两倍。 目前，114 个国家有 11.8 万多病例，4291 人丧生...在未来的几天和几周内，我们预计病例数、死亡人数和受影响国家数量将会进一步攀升...因此我们评估认为 COVID-19 已具有大流行特征。大流行不是一个可以随意或轻率使用的词语。这个词语若被误用，会造成不应有的恐慌，或令人误以为抗击已于事无补，只能听天由命，因而导致不必要的痛苦和死亡...我们以前从未见过冠状病毒引发的大流行。这是首次由冠状病毒引发的大流行。”</i>一名球员新冠肺炎测试阳性之后，NBA 宣布了停赛；著名演员汤姆·汉克斯及其妻子也确认测试阳性。
+➜Avast JS 引擎发现严重安全缺陷
+https://www.solidot.org/story?sid=63791	10830
+杀毒软件通常以最高的系统权限运行，因此杀毒软件中的漏洞很容易影响到整个系统。捷克杀毒软件 Avast 的主进程是 AvastSvc.exe，运行权限 SYSTEM，它通过加载底层杀毒引擎去分析不能信任的数据。它的 JS 引擎被发现未沙盒化，它的任何漏洞都是高危的，很容易被远程攻击者利用。Google 安全研究员 Tavis Ormandy 在 GitHub 上<a href="https://github.com/taviso/avscript"><u>公布了他的发现</u></a>。他已经报告给了 Avast，但该公司至今还没有释出补丁修复，Avast 目前的应对之策是在修复前<a href="https://www.zdnet.com/article/avast-disables-javascript-engine-in-its-antivirus-following-major-bug/"><u>禁用了</u></a> JS 扫描功能。
+➜中国企业试行“半复工”
+https://www.solidot.org/story?sid=63792	16752
+随着中国新冠肺炎新增病例不断下降，中国企业正在尝试让员工重返办公室办公，并制定出在不引发新一波感染的情况下复工的<a href="http://www.ftchinese.com/story/001086718"><u>创新性策略</u></a>。中国企业员工重返办公室的初步尝试可以为世界各国的同行提供一份指南，大多数公司每天只允许一半或更少的员工进入办公室。在滴滴出行，为防止员工彼此间站得太近，电梯地板被用胶带划分成贴着鞋子图案的方块。与此同时，办公室座位被安排成网格状，员工之间至少间隔 1 米距离。在美团，员工被分成 A、B、C 三班，每天只允许一个班次进入办公室。所有员工都被要求佩戴口罩。一位知情人士表示，餐厅会控制人流，程序员们每人单独一张桌子用餐。
+➜中国森林覆盖率接近 23%
+https://www.solidot.org/story?sid=63793	17269
+全国绿化委员会办公室发布《<a href="http://www.forestry.gov.cn/main/4812/20200312/101502774947681.html" target="_blank"><u>2019年中国国土绿化状况公报</u></a>》，报告称全国森林覆盖率达 22.96%，森林面积 2.2 亿公顷。这一数据尚未达到全球平均水平。<a href="https://en.wikipedia.org/wiki/List_of_countries_by_forest_area" target="_blank"><u>全球的森林覆盖率</u></a>超过 26%，美国 33.84%，印度 28.23%，日本 67.00%，法国 36.76%，澳大利亚 16.00%，俄罗斯 49.40%，森林面积最大。
+➜微软公布 Windows 一个尚无补丁的蠕虫级漏洞
+https://www.solidot.org/story?sid=63794	22091
+微软发布安全<a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/adv200005"><u>公告</u></a>，Server Message Block (SMB)v3.1.1 中的一个漏洞允许攻击者在服务器和终端用户计算机上<a href="https://arstechnica.com/information-technology/2020/03/windows-has-a-new-wormable-vulnerability-and-theres-no-patch-in-sight/"><u>执行代码</u></a>。SMB 服务被用于在局域网本地和互联网上共享文件、打印机和其它资源。漏洞编号 CVE-2020-0796，影响 Windows 10 v1903 和 1909，以及 Windows Server v 1903 和 1909。微软尚未提供补丁，也没有透露它将何时释出补丁。微软发言人表示暂时无新信息与外界分享。微软表示，该漏洞可通过禁用压缩防止其被用于攻击 SMBv3 服务器，用户可通过 PowerShell 输入指令“Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" DisableCompression -Type DWORD -Value 1 -Force”关闭压缩。这并不能保护连接恶意 SMB 服务的客户端或服务器，但这一攻击将不会像蠕虫一样扩散。微软还推荐屏蔽用于发送 SMB 流量的端口 445。
+➜印度使用面部识别技术识别参加骚乱的个人
+https://www.solidot.org/story?sid=63795	23017
+印度内政部长 Amit Shah 向议会<a href="https://techcrunch.com/2020/03/11/india-used-facial-recognition-tech-to-identify-1100-individuals-at-a-recent-riot/"><u>透露</u></a>，执法机构使用面部识别技术识别了上个月参加骚乱的 1100 多人。Shah 称执法机构部署了面部识别系统，使用来自身份证、驾照等数据库的图像，去识别参与 2 月 25-26 日德里东北部社区暴力的犯罪分子。德里政府使用的面部识别系统最初被用于寻找失踪儿童。2019 年系统的正确率只有 1%，甚至无法区分女孩和男孩。现在印度政府承认在缺乏监管的情况下快速部署面部识别技术。批评者督促政府先进行磋商和制定法律。
+➜开源桌面环境 GNOME 3.36 版发布
+https://www.solidot.org/story?sid=63797	27659
+<a href="http://blah<AT>openingsource.org">Blah Boom</a> 写道<i> "代号为「Gresik」的 GNOME 3.36 <a href="https://mail.gnome.org/archives/gnome-announce-list/2020-March/msg00016.html" target="_blank">发布</a>了。它带来了一个新的锁屏界面、一个用于管理扩展程序的新应用以及对 gnome-shell 的性能改进。GNOME 软件中心（Software）对计费网络（metered network）和家长控制有了更好的支持；初始配置（Initial Setup）助手有了新的外观；GNOME 时钟（Clocks）经过了重新设计。此外，该版本包含许多显著的新功能以及较小的改进和错误修复，总共包含约 780 个贡献者进行的 24434 个更改。下一版本 GNOME 3.38 计划于今年 10 月发布。另见<a href="https://help.gnome.org/misc/release-notes/3.36/">发布记录</a>（<a href="https://openingsource.org/8920/" target="_blank">中文</a>）。"</i>
+➜汉王科技称研制出口罩人脸识别
+https://www.solidot.org/story?sid=63798	29046
+路透社<a href="https://www.reuters.com/article/us-health-coronavirus-facial-recognition/even-mask-wearers-can-be-idd-china-facial-recognition-firm-says-idUSKBN20W0WL"><u>报道</u></a>，汉王科技表示率先研制出佩戴口罩也可识别人脸的技术。汉王副总经理<a href="http://www.hanwang.com.cn/gs/index.jhtml"><u>黄磊</u></a>称，如果连接温度传感器，它能在测量体温的同时识别人的名字，如果体温超过 38 摄氏度系统会对结果进行处理。汉王称一支有 20 人的团队运用过去十年开发的核心技术，一个约 600 万张无遮盖脸部样本数据库，一个较小规模的脸部遮盖数据库，开发了这项技术。开发从今年 1 月启动，仅仅历时一个月就开始推向市场。汉王出售了两种使用该技术的产品：其一为单通道识别，可用于建筑物的入口；其二是多通道识别系统，可用于多种监控相机。黄磊称它能在一秒内识别最多 30 个人，戴口罩的识别率能达到 95%，不戴口罩能达到 99.5%。它的一个大客户是公安部。黄磊表示，这项技术能让全世界受益。
+➜如何识别戴口罩的人脸？
+https://www.solidot.org/story?sid=63799	31321
+中国科学报<a href="http://news.sciencenet.cn/htmlnews/2020/3/436886.shtm"><u>报道了</u></a>如何识别戴口罩人脸的技术。报道称，为保障全国复工复产，以 BAT、商汤科技、云从科技等为代表企业开发出诸多戴口罩人脸识别产品，近日这些产品陆续投入使用。中国信通院云大所人工智能部工程师刘硕表示，以前的人脸识别主要是针对全脸进行扫描，疫情暴发后，研发人员考虑到居民戴口罩的情况，加强了对眼睛、眉毛等重点区域的识别。北京邮电大学模式识别实验室教授邓伟洪坦言，戴口罩、墨镜等遮挡条件下的人脸识别其实是一项“老”技术，此前研究人员在解决军事刑侦和视频监控问题时就曾长期研究过该技术，并发展出诸多成熟应用。因此，该技术的稳定性和准确率是有一定基础的。以往的技术基础并没有完全打消人们对戴口罩人脸识别“先天不足”的顾虑。相较于以往，口罩遮挡住面部，这使得人脸识别系统收集到的面部信息大量减少。邓伟洪表示，人脸识别的关键信息集中于眉毛和眼睛，只要模型训练得当，戴口罩人脸识别的准确率并不会大幅下降。
+➜欧盟议员提议手机和笔记本电脑的维修权
+https://www.solidot.org/story?sid=63800	35579
+欧盟委员会制定计划<a href="https://yro.slashdot.org/story/20/03/11/1558258/european-lawmakers-propose-a-right-to-repair-for-mobiles-and-laptops"><u>推动</u></a>电子产品如手机平板笔记本电脑的维修权，限制一次性使用的产品，解决过早淘汰的问题，禁止销毁未售出的耐用品，让产品的可持续使用成为标准。维修权提议是循环经济行动计划的一部分，旨在到 2050 年实现碳平衡的承诺。鼓励产品的可维修、可重复使用和可循环利用，将有助于延迟其寿命，减少产品制造过程中的资源使用，缩小对环境的冲击。今天许多产品太容易损坏，难以重复使用或维修或循环利用，或者只是为一次性使用制造的，欧盟将采取行动改变这种制造方式。
+➜科学家在琥珀中发现微型恐龙头部化石
+https://www.solidot.org/story?sid=63801	37297
+科学家在琥珀中<a href="https://www.nature.com/articles/s41586-020-2068-4"><u>发现</u></a>微型恐龙头部化石，其头部仅长 14 毫米，是至今发现的<a href="http://news.sciencenet.cn/htmlnews/2020/3/436847.shtm" target="_blank"><u>最小的恐龙</u></a>之一。<a href="https://www.nature.com/articles/s41586-020-2068-4"><u>研究报告</u></a>发表在《自然》期刊上。论文第一作者是中国地质大学的副教授邢立达，他的团队是在来自缅甸北部克钦邦胡冈谷地的琥珀化石中发现超小型恐龙的，琥珀形成于 1 亿年前，属于白垩纪中期。“这一新发现或表明我们发现了中生代已知最小的恐龙，其大小比蜂鸟还小，眼齿鸟的尺寸和形态向我们展现了一类新的身体结构以及它所代表的生态学，并命名了一新属新种。”鉴于该标本形态特征与其他所有鸟类都不同，学者建立了新属新种——宽娅眼齿鸟，向最初发现并征集此标本的缅甸琥珀收藏家宽娅女士致敬。
+➜自动化与幽灵工作的崛起
+https://www.solidot.org/story?sid=63802	42873
+对自动化取代人工的恐惧<a href="https://gravitysworm.com/post/612235333918212096" target="_blank"><u>掩盖了对自动化导致的其他社会危机的讨论</u></a>。与自动化失业并行的另一种孪生现象是由技术瓶颈、程序漏洞和算法缺陷等所带来的低薪隐形劳动，或者称为幽灵工作。全自动化看似近在眼前，实则遥不可及，每个新算法都会带来新的对人工的需求，使得全自动化的终点线不断往前推延。亚马逊 MTurk 是幽灵工作最早的代言人，创办初衷就是为了识别海量人工智能无法归类的图片。稳定时期，MTurk 平均能招募到 10 到 20 万活跃劳工，任何时间点都有二千到五千的工人同时在线工作。这些劳工不受美国联邦最低工资和工会保护，平均时薪不足两美元。但MTurk 只是隐形劳动力大军的冰山一角，大部分技术公司都偷偷雇佣着大量帮算法打工的劳力。以中国为例，居家隔离期间浏览各家兼职招聘网站不难发现，武汉等城市版的页面上充斥着各种线上零工任务的<a href="https://wuhan.jianzhimao.com/"><u>招募</u></a>，堪称中国版的 MTurk。
+➜甲骨文靠拷贝 IBM 的 SQL 发家致富
+https://www.solidot.org/story?sid=63803	49735
+美国最高法院本月晚些时候将就甲骨文诉 Google 的 Java API 侵权案举行听证会，结果被认为会对整个软件行业产生深远影响。Google 否认自己有错，版权法将“系统”和“操作方法”排除在版权保护之内。Google 称它的做法符合这些例外规定。软件行业密切观察着此案，微软和 IBM 都警告甲骨文的立场会给行业制造混乱。API 能被版权保护不仅会给让许多公司陷入法律上的麻烦，也不利于消费者。软件公司一直拷贝竞争对手产品的编程接口 API 去实现互操作性，允许客户将设计用于一个平台的软件重复用于另一个平台，减少切换开销。这也降低了创业公司进入的门槛，因为如果它们的软件能与客户熟悉的软件相兼容那么这将能更容易推销产品。<a href="https://arstechnica.com/tech-policy/2020/03/before-it-sued-google-for-copying-from-java-oracle-got-rich-copying-ibms-sql/" target="_blank"><u>甲骨文本身就是靠这种方法起家的</u></a>。它的数据库产品是基于 IBM 发明的 SQL 结构化查询语言，而它使用 SQL 并没有从 IBM 获得许可。甲骨文拷贝 SQL 的方式与 Google 拷贝 Java 的方式十分接近，当然甲骨文发言人对此有不同看法。

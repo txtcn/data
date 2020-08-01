@@ -1,0 +1,112 @@
+➜你对iTC后台的认识可能不足1%，了解它能帮你省下大笔推广预算！
+http://www.sohu.com/a/211256614_100065715	43873
+<p>本文由国内专业的移动应用数据分析平台 七麦数据 提供。</p>
+<p>现在 iOS 11 的更新率达到 59%，虽然不如之前的更新率，但也占到了市场的较大比例。我们都知道新版的 App Store 发生了较大的改变，那你知道新 App Store 会对你的 App 带来哪些流量影响么？ </p>
+<p><strong>这篇文章我们就来讲一下如何通过 iTC 后台来收集和分析你 App 的搜索流量（搜索流量分为展示量，点击率和转化率），以及针对不同情况该做什么改变。</strong></p>
+<p><strong>一、展示量</strong></p>
+<p>展示量是搜索流量的一个重要指标。<strong>它指的是在“搜索结果”页面里用户查看你 App 的次数。</strong></p>
+<p><strong>1.展示量会受到 iOS 11 App Store 的影响</strong></p>
+<p>在 iOS 11 里，用户搜索和发现 App 的实际过程并没有改变，发生改变的是 App 在 App Store 中的展示形式。</p>
+<p><img src="//5b0988e595225.cdn.sohucs.com/images/20171218/1c6ac63c3fa048b6b8e3c9586c64689c.jpg" max-width="600" /></p>
+<p>对比可以看到，在 iOS 11 里，搜索结果中 App 的展示框架缩小了很多，用户在搜索结果的第一页里可以看到两个 App 的截图/视频。</p>
+<p>新的搜索结果页面也更具视觉吸引力，最多可以显示三个纵向 App Preview 视频/屏幕截图。视频现在自动播放，使得用户体验更好。</p>
+<p>这些改变使得用户会更愿意往下滑动，查看更多的 App。也就是说<strong>如果你的 App 在“搜索结果”页面中排名第二或者更后面，被 iOS 11 用户查看到的可能性会更大。</strong></p>
+<p><strong>2.通过收集iTC 后台数据判断</strong></p>
+<p style="text-align: center;"><img src="//5b0988e595225.cdn.sohucs.com/images/20171218/a51490cd81e949f6b6c4e362a8e7a218.jpeg" max-width="600" /></p>
+<p>转到 iTunes Connect App Analytics；</p>
+<p>点击“指标”标签；</p>
+<p>选择“展示次数”标签；</p>
+<p>选择“查看方式”作为“平台版本”；</p>
+<p>选择“过滤器”作为“源类型”，并在下拉菜单中选择“App Store 搜索”；</p>
+<p>“日期”选择“过去 90 天”。</p>
+<p><strong>3.用 iTC 后台的数据分析</strong></p>
+<p style="text-align: center;"><img src="//5b0988e595225.cdn.sohucs.com/images/20171218/b907fe9eb7274062b91081b8870bdb50.jpeg" max-width="600" /></p>
+<p>分析 App Store 数据的第一步是查看总搜索流量的趋势（图表中的所有条）。然后<strong>确定你第一次接收 iOS 11 用户流量的时间段。与 iOS 11 之前的搜索流量作比较</strong>。就可以看到 iOS 10 版 App Store 和 iOS 11 版 App Store 的流量差异了。</p>
+<p>在上面提供的例子中，我们没有看到重大的变化。</p>
+<p style="text-align: center;"><img src="//5b0988e595225.cdn.sohucs.com/images/20171218/ace48381ba44447bac9d3ef9a37d8721.png" max-width="600" /></p>
+<p>下一步就是平台版本流量的细分。<strong>由于开发者只能拥有一个 iOS 版本的 App Store，因此持续跟踪哪个版本带来最多的流量非常重要</strong>，可以帮助你确定优化的版本。依据往常的定律，新 iOS 版本的覆盖率会更快。</p>
+<p><strong>——如果搜索展示量没有变化？</strong></p>
+<p>如果你的总搜索展示次数没有发生变化，则表示对于大多数相关的搜索查询，你的 App 出现在搜索结果的第一个。 </p>
+<p>当某个 App 在搜索结果页面排名第一时，它的视频会自动播放。<strong>建议充分利用 App Preview 视频的强大功能来提高转化率。</strong></p>
+<p><strong>——如果搜索展示量增加了？</strong></p>
+<p>如果你看到总搜索展示量增加，则表示对于大多数相关搜索查询，你的 App 可能排在搜索结果的第二个或更后面。</p>
+<p><strong>这种情况下，你可以投放苹果的竞价广告，获得更多的展示。</strong></p>
+<p style="text-align: center;"><img src="//5b0988e595225.cdn.sohucs.com/images/20171218/4b68ad16a9fd4b149c89a019645ec0fc.jpeg" max-width="600" /></p>
+<p><strong>——如果搜索展示量有所减少？</strong></p>
+<p>如果你的总搜索展示量减少了，可能是因为你的 App 在大多数搜索结果的靠后。</p>
+<p>苹果在 iOS 11 将 App 标题字符数从 50 个减少到 30 个，不再允许开发者将关键字压缩到标题中。但多了副标题（最多 30 个字符），也可以描述 App、引导用户下载、覆盖关键词。</p>
+<p>评分也在 iOS 11 中发生了变化。iOS 10 中，评级和评论在提交每个新的 App 版本后被重置。而现在，开发人员现在可以选择是否重置评分和评论，还能回复用户的评论，和用户有更直接的沟通。</p>
+<p><strong>因此，搜索展示量的减少可能是因为竞品对做了更适合 iOS 11 的优化。你可以重新优化关键词方案，密切关注评分和评论。</strong></p>
+<p><strong>二、点击率（CTR）</strong></p>
+<p>点击率（CTR）是指在搜索结果页面中，点击你 App 的数量与在该 App 展示次数的比例。</p>
+<p><strong>1.点击率受 iOS 11 App Store 的影响</strong></p>
+<p>一方面用户可以在搜索结果页面上看到更多的信息（更多的屏幕截图/视频，自动播放的预览视频，竞品 App），给用户提供了更多的选择。导致你 App 的点击率下降。</p>
+<p>另一方面，App 的截图/视频尺寸比以前小，用户不能在搜索结果页面看到详细具体的 App 内容，这会导致 App 的点击率上升。</p>
+<p style="text-align: center;"><img src="//5b0988e595225.cdn.sohucs.com/images/20171218/1e86a65113964fde9a4818e086334e3a.jpeg" max-width="600" /></p>
+<p><strong>2.通过收集 iTC 后台数据判断</strong></p>
+<p style="text-align: center;"><img src="//5b0988e595225.cdn.sohucs.com/images/20171218/d864fc6210da4f49b6476ae2dc1b5f7c.jpeg" max-width="600" /></p>
+<p>iTunes Connect 应用程序分析；</p>
+<p>“指标”标签；</p>
+<p>保留“展示次数”标签；</p>
+<p>在“比较”一节中，选择“产品页面视图”，然后从下拉菜单中选择“独特设备”</p>
+<p>保持“查看方式”为“平台版本”；</p>
+<p>将“过滤器”保持为“源类型”，并在下拉菜单中选择“App Store Search”；</p>
+<p>“日期”从下拉菜单中选择“自定义范围”，然后选择您开始接收一致量的 iOS 11 流量的开始日期。</p>
+<p><strong>3.用 iTC 后台的数据分析</strong></p>
+<p style="text-align: center;"><img src="//5b0988e595225.cdn.sohucs.com/images/20171218/8b87b8fd6a094e55ba30d9e954313ffd.png" max-width="600" /></p>
+<p>在显示 iOS 版本的点击率折线图的下方，有一张表格详细说明了展示次数，产品页面查看次数和比率。使用这些数字创建你自己的表，如下所示：</p>
+<p style="text-align: center;"><img src="//5b0988e595225.cdn.sohucs.com/images/20171218/40bd6c9102fa4e398266f10fd6240455.png" max-width="600" /></p>
+<p>在上面的例子中，我们可以看到 iOS 11 导致点击率下降。</p>
+<p><strong>——如果点击率没有变化？</strong></p>
+<p>如果点击率没有任何变化，这可能是因为你没有充分利用 iOS 11 提供的所有机会来提高点击率（例如针对 iOS 11 对截图/视频做优化）。</p>
+<p>我们建议：</p>
+<p><strong>选择适合你 App 的横向或者纵向截图/视频；</strong></p>
+<p><strong>选择最佳的 App Preview 视频/屏幕截图。</strong></p>
+<p><strong>——如果点击率有所提高？</strong></p>
+<p>如果你看到点击率有所增加，可能是因为用户在搜索结果页面看到的图片不够清晰明了。</p>
+<p><strong>我们建议你优化截图/视频，使用户看了之后就明白这款 App 的作用。</strong></p>
+<p><strong>——如果点击率有所下降？</strong></p>
+<p>如果点击率下降，我们猜测可能是因为搜索结果页面中能看到更多竞品。</p>
+<p><strong>你可以尝试多分析 App 在搜索结果页面的展示框架有什么问题，以及竞品存在哪些亮点。</strong></p>
+<p><strong>三、转化率（CVR）</strong></p>
+<p>转化率是指用户下载量和 App 的展示量的比率。其中下载量包括在搜索结果页面的下载次数和 App 详情页的下载次数。</p>
+<p><strong>1.CVR 会受到 iOS 11 App Store 的影响</strong></p>
+<p>搜索结果页面和产品页面都有可能影响 CVR 的变化。</p>
+<p><strong>搜索结果页面</strong></p>
+<p>App 展示框架缩小，竞品有更多的展示空间；</p>
+<p>增加了副标题可引导用户下载；</p>
+<p>开发者可以重置评分；</p>
+<p>可上传更多的截图/视频。</p>
+<p><strong>App 详情页</strong></p>
+<p>增加了副标题可引导用户下载；</p>
+<p>开发者可以选择重置评级；</p>
+<p>如果该 App 排名在其类别/子类别中的靠前的位置，会显示排名数；</p>
+<p>最多可包含三个 App Preview 视频，视频自动播放，视频可以本地化；</p>
+<p>开发商等信息位于评分和评论的下方；</p>
+<p>如果客户已安装你的 App，则“产品页面”顶部会显示“新功能”。</p>
+<p><strong>2.通过收集 iTC 后台数据判断</strong></p>
+<p style="text-align: center;"><img src="//5b0988e595225.cdn.sohucs.com/images/20171218/0c2677256c8c4c008a3a0f63a325500e.jpeg" max-width="600" /></p>
+<p>点击“指标”标签；</p>
+<p>保留“展示次数”标签；</p>
+<p>选择“销售类别”下的“ App 单位”标签；</p>
+<p>在“比较”部分下，选择“产品页面视图”并选择“独特设备”；</p>
+<p>保持“查看方式”为“平台版本”；</p>
+<p>将“过滤器”保持为“源类型”，并在下拉菜单中选择“App Store Search”；</p>
+<p>日期从下拉菜单中选择“自定义范围”，然后选择你开始接收一致量的 iOS 11 流量的开始日期。</p>
+<p><strong>3.用 iTC 后台的数据分析</strong></p>
+<p style="text-align: center;"><img src="//5b0988e595225.cdn.sohucs.com/images/20171218/d864fc6210da4f49b6476ae2dc1b5f7c.jpeg" max-width="600" /></p>
+<p>在显示每个 iOS 版本 CVR 的折线图下面，有一个表格，详细说明了 App 单元，产品页面视图和比率。使用这些数字创建你自己的表，如下所示：</p>
+<p style="text-align: center;"><img src="//5b0988e595225.cdn.sohucs.com/images/20171218/c3b1ebbf9dca4a52993a5b80b1f403ca.png" max-width="600" /></p>
+<p>在上面的例子中，iOS 11 导致了 CVR 的下降。</p>
+<p>*由于下载量计算的是搜索结果页面和 App 详情页的总和，所以 CVR 往往高于 100％。无法单独过滤掉 App 详情页上的下载。</p>
+<p>由于无法单独过滤产品页面上的下载<strong>，所以真正理解 iOS 11 对转换率的影响并相应调整你的 ASO 策略的唯一方法就是使用 A/B 测试平台。</strong></p>
+<p>他可以预测一般用户如何对你的 App 做出反应。</p>
+<p>比如说，如果你有一个排名很靠前的 App，这时你在搜索结果页面的展示中就没有必要再展示你的排名了，可以利用截图、视频等传达其他信息。让用户更了解你的 App。</p>
+<p>反之，如果你的 App 排名较低，那么你可以在 App 展示时反映出你有大量的用户，比如：“超过一百万用户信任“。</p>
+<p><strong>以下 3 个测试可以提升你的 CVR：</strong></p>
+<p><strong>视频性能测试</strong></p>
+<p><strong>截图方向测试</strong></p>
+<p><strong>再营销测试</strong></p>
+<p>通过以上方法，你可以通过 iTC 后台来收集和分析你 App 的搜索流量，做出最适合你的优化方案。</p>
+<p><strong>希望各位 ASOer 在 iOS 11 的路上越走越顺~~~</strong></p>
+<p>*本文由七麦研究院专栏作者【桃子怡】原创，转载需联系七麦研究院获取授权，七麦研究院有权向非授权转载追究责任。</p>

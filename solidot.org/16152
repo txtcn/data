@@ -1,0 +1,24 @@
+➜NSA入侵华为窃取源代码
+https://www.solidot.org/story?sid=38832	10841
+为什么美国视中国电信设备供应商华为是其国家安全的一大威胁？原因大概是NSA分析了华为的源代码。德国《明镜》周刊根据NSA前合同工Edward Snowden泄露的机密文件<a target="_blank" href="http://www.spiegel.de/international/world/nsa-spied-on-chinese-government-and-networking-firm-huawei-a-960199.html"><u>报道</u></a>，NSA的中国监控目标包括了胡锦涛、中国商务部、银行和电信公司如华为。华为是世界第二大电信设备供应商。NSA的一个特别部门渗透进了华为的内网，拷贝了客户名单和训练工程师的内部文件。NSA成功访问了华为的电子邮件存档和某些产品的源代码。由于华为将所有的邮件流量都经过NSA渗透的深圳办公室，NSA因此能阅读公司雇员发送的邮件，其中包括首席执行官任正非和主席孙亚芳的邮件。
+➜携程支付日志泄露
+https://www.solidot.org/story?sid=38833	19978
+黑客在乌云公布了两个携程网安全漏洞：<a target="_blank" href="http://www.wooyun.org/bugs/wooyun-2014-054302"><u>安全支付日志可遍历下载</u></a>和<a target="_blank" href="http://www.wooyun.org/bugs/wooyun-2014-054298"><u>源代码包可直接下载</u></a>。支付日志的信息包括了持卡人姓名、身份证、银行卡类别、银行卡号、CVV码和银行卡6位Bin等，这些信息可被用于盗刷卡。携程确认了漏洞，称已经在漏洞发布两小时内修复该问题，没有发生盗刷的情况。携程储存的信息被认为违反了中国银联风险管理委员会的《银联卡收单机构账户信息安全管理标准》，已有用户对相关信用卡进行了挂失处理，而专家也<a target="_blank" href="http://tech.163.com/14/0323/00/9NVSPU3B000915BF.html"><u>建议</u></a>用户拨打对应银行的客服电话申请停卡，或直接办理挂失。
+➜AMD探索新的Linux开源驱动开发模式
+https://www.solidot.org/story?sid=38834	30568
+AMD在游戏开发者大会上透露了它<a target="_blank" href="http://www.phoronix.com/scan.php?page=article&amp;item=amd_catalyst_kernel&amp;num=1"><u>正在开发的新Linux驱动模式</u></a>，以在Steam主机时代到来前改进Linux驱动支持：AMD的Linux驱动仍然会分为开源驱动（Gallium3D）和闭源驱动（催化剂），但Linux版的催化剂驱动将会很小，AMD开发者试图将闭源驱动和开源驱动分离开来，闭源的催化剂只是驱动的一部分，将会孤立在用户空间，而位于内核主支的开源驱动将会被催化剂使用。开发者希望这一模式将会减少重复代码，消除不同Linux内核的碎片化以及兼容性问题。最终， Mesa/Gallium3D和催化剂驱动将只有一个共用的Linux内核驱动。<br>
+➜土耳其Tor用户数量大增
+https://www.solidot.org/story?sid=38835	32296
+<div align="center"><img src="http://img.solidot.com.cn/0/113/liFlntjeCBOE.png" align="" height="263" width="420"><br>
+<br>
+</div>
+土耳其政府试图屏蔽社交媒体Twitter，但结果<a target="_blank" href="http://www.usatoday.com/story/tech/columnist/shinal/2014/03/22/turkey-twitter-shinal/6729721/"><u>是适得其反</u></a>。连总统Abdullah Gul也违反禁令，在Twitter上发<del>贴</del>推称此举不可接受。土耳其网民可以用Google DNS服务8.8.8.8和8.8.4.4 绕过政府对Twitter的DNS封锁，加拿大公司HootSuite跟踪了土耳其的Twitter流量，声称封锁第一天流量增加了三倍，而匿名服务Tor也<a target="_blank" href="https://metrics.torproject.org/users.html?graph=userstats-relay-country&amp;start=2013-12-23&amp;end=2014-03-23&amp;country=tr&amp;events=off"><u>记录</u></a>到连接Tor的用户数量大幅增加（如图所示）。土耳其只是采用简单的方法屏蔽Twitter，技术远没有中国先进，中国已经成功封杀了Tor及网桥，除了私下分享的<span class="comment"><font color="#000000">obfsproxy网桥外，Tor在中国基本无法使用，中国用户已很少用Tor，而是用VPN或其它反封锁工具。</font></span>
+➜Neovim：打造21世纪的Vim
+https://www.solidot.org/story?sid=38836	44673
+巴西程序员Thiago de Arruda Padilha（aka tarruda）向Vim开源编辑器项目递交了两大补丁，对Vim的架构进行了大幅调整，结果遭到了Vim作者<a target="_blank" href="http://en.wikipedia.org/wiki/Bram_Moolenaar"><u>Bram Moolenaar</u></a>的拒绝，因为对于Vim这样一个成熟的项目进行如此大的改变风险太高。于是tarruda<a target="_blank" href="http://news.slashdot.org/story/14/03/22/147222/neovim-rebuilding-vim-for-the-21st-century"><u>发起了</u></a>Vim fork项目<a target="_blank" href="https://www.bountysource.com/fundraisers/539-neovim-first-iteration"><u>Neovim</u></a>，集资1万美元打造出21世纪的编辑器，提供更好的脚本、插件支持，整合现代的图形界面。该项目超额完成集资，已筹集到3.25万美元。Moolenaar本人对该项目<a target="_blank" href="https://groups.google.com/forum/#!searchin/vim_dev/neovim/vim_dev/x0BF9Y0Uby8/Xse9Bvyza0AJ"><u>持有异议</u></a>，认为需要大量工作，会引入新的bug，而终端用户获益不多。
+➜国有四大银行回击互联网金融
+https://www.solidot.org/story?sid=38837	48091
+因为互联网金融的崛起，许多人都将银行中的活期存款转移到余额宝等互联网金融产品，活期存款年利息只有0.35%，而余额宝能达到5%左右，分析人士估计互联网金融产品已经吸引了上万亿人民币的存款，相当于中国国有银行所有存款的<a target="_blank" href="http://money.cnn.com/2014/02/27/news/economy/china-alibaba-bank/"><u>1%到3%</u></a>。央行已经发出了新法规的征求意见稿，要对互联网金融产品进行监管，限制互联网金融的吸金能力。四大银行工行、农行、中行和建行都<a target="_blank" href="http://finance.sina.com.cn/china/jrxw/20140323/005918585414.shtml"><u>相继调低了</u></a>对支付宝快捷支付额度。马云<a target="_blank" href="http://finance.ifeng.com/a/20140323/11958614_0.shtml"><u>回应称</u></a>，决定市场胜负的不应该是垄断和权力，而是用户。互联网金融产品的收益并不高，它能吸引用户的一个重要原因是中国国情：普通居民缺乏理财产品，海外投资受到严格限制。
+➜美国西南航空雇员通过数学方法寻找马航失联飞机
+https://www.solidot.org/story?sid=38838	54726
+<a href="/~lemuria">lemuria</a> 写道 <i>"<span style="font-size: 14px; line-height: 20.299999237060547px;">美国西南航空高级工程师<a href="http://www.linkedin.com/pub/alan-mi/30/122/a6a" target="_blank">Alan Mi</a>提出了通过数学计算找失联马航飞机的<a href="https://docs.google.com/document/d/1REGftPJP5Tv3DQDPq_p_fRuUrHYH8P3EhGhiA9wKYuk/edit" target="_blank">算法</a>， 据Alan称，即使用手工在一张一米见方的大地图上描绘，用尺子沿着轴心旋转寻找等距优化点，也能得到相当精确的结果。Alan在算法中使用了来自华盛顿邮报的图表、球面方程、Google Earth软件等。</span><span style="font-size: 14px; line-height: 20.299999237060547px;"></span>"</i>

@@ -1,0 +1,322 @@
+➜如何写一个玩具JVM
+http://www.sohu.com/a/410829558_355142	12600
+<blockquote>
+<p style="text-align: left;"><span style="font-size: 16px;">转自： <span style="font-size: 16px;">覃佑桦</span></span></p>
+</blockquote>
+<p style="text-align: left;"><span style="font-size: 16px;">毋庸置疑，Java 已经成为最受欢迎的编程语言之一。然而，并非每位 Java 开发者都会满怀好奇地探索 JVM 的底层工作机制。</span><span style="font-size: 16px;">这篇短文</span><span style="font-size: 16px;">编写了</span><span style="font-size: 16px;">一个玩具 JVM，</span><span style="font-size: 16px;">旨在抛砖引玉希望能借此激发大家的探索欲望。</span></p>
+<p><span><strong><span style="font-size: 16px;">0. 一个小目标</span></strong></span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">下面是一段极其简单的代码：</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<span><p><span><span>public</span><span>class</span><span>Add</span>{ </span><span><span><span>public</span><span>static</span><span>int</span><span>add</span>( <span><span>int</span>a, <span>int</span>b </span>) </span>{ </span><span><span>return</span>a + b; </span><span>}</span><span>}</span></p><p style="text-align: left;"><span style="font-size: 16px;">执行 javac Add.java，编译后会生成 Add.class。后者是一个二进制文件，交由 JVM 执行。剩下来只需要实现一个 JVM 运行 class 文件即可。</span><span style="font-size: 16px;">让</span><span style="font-size: 16px;">我们用 hexdump 对 Add.class 一探究竟。</span><span style="font-size: 16px;">打开文件，输出的内容也许让您感觉云里雾里：</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul><span><p><span><span>00000000</span><span>ca fe ba be 00 00 00 34 00 0f 0a 00 03 00 0c 07 |.......4........|</span></span><span><span>00000010</span><span>00 0d 07 00 0e 01 00 06 3c 69 6e 69 74 3e 01 00 |........&lt;init&gt;..|</span></span><span><span>00000020</span><span>03 28 29 56 01 00 04 43 6f 64 65 01 00 0f 4c 69 |.V...Code...Li|</span></span><span><span>00000030</span><span>6e 65 4e 75 6d 62 65 72 54 61 62 6c 65 01 00 03 |neNumberTable...|</span></span><span><span>00000040</span><span>61 64 64 01 00 05 28 49 49 29 49 01 00 0a 53 6f |add...(II)I...So|</span></span><span><span>00000050</span><span>75 72 63 65 46 69 6c 65 01 00 08 41 64 64 2e 6a |urceFile...Add.j|</span></span><span><span>00000060</span><span>61 76 61 0c 00 04 00 05 01 00 03 41 64 64 01 00 |ava........Add..|</span></span><span><span>00000070</span><span>10 6a 61 76 61 2f 6c 61 6e 67 2f 4f 62 6a 65 63 |.java/lang/Objec|</span></span><span><span>00000080</span><span>74 00 21 00 02 00 03 00 00 00 00 00 02 00 01 00 |t.!.............|</span></span><span><span>00000090</span><span>04 00 05 00 01 00 06 00 00 00 1d 00 01 00 01 00 |................|</span></span><span><span>000000a0</span><span>00 00 05 2a b7 00 01 b1 00 00 00 01 00 07 00 00 |...*............|</span></span><span><span>000000b0</span><span>00 06 00 01 00 00 00 01 00 09 00 08 00 09 00 01 |................|</span></span><span><span>000000c0</span><span>00 06 00 00 00 1c 00 02 00 02 00 00 00 04 1a 1b |................|</span></span><span><span>000000d0</span><span>60 ac 00 00 00 01 00 07 00 00 00 06 00 01 00 00 |`...............|</span></span><span><span>000000e0</span><span>00 03 00 01 00 0a 00 00 00 02 00 0b |............|</span></span></p><p style="text-align: left;"><span style="font-size: 16px;">虽然看起来结构不清晰，但仍然可以找到线索：例如，上面的内容中 V 和 (II)I 是什么？&lt;init&gt; 代表什么？为什么有的内容会以“cafe babe”为前缀？</span><span style="font-size: 16px;">还可以 dump class 文件，结果看起来似乎更好理解：</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul><span>$ javap -c Add</span><span>Compiled <span>from</span><span>"Add.java"</span></span><span><span>public</span><span>class</span><span>Add</span>{ </span><span><span><span>public</span><span>Add</span>( <span></span>) </span>; </span><span>Code:</span><span><span>0</span>: aload_0 </span><span><span>1</span>: invokespecial <span>#1 // Method java/lang/Object."&lt;init&gt;":V</span></span><span><span>4</span>: <span>return</span></span><span><p><span><span><span>public</span><span>static</span><span>int</span><span>add</span>( <span><span>int</span>, <span>int</span></span>) </span>; </span><span>Code:</span><span><span>0</span>: iload_0 </span><span><span>1</span>: iload_1 </span><span><span>2</span>: iadd </span><span><span>3</span>: ireturn </span><span>}</span></p><p style="text-align: left;"><span style="font-size: 16px;">上面可以看到 class、构造函数和 add 方法。方法中包含了一些指令。透过指令似乎可以猜到 add 方法的作用：加载两个参数（iload_0 和 iload_1），相加后存储结果。JVM 是一种堆栈机器（Stack Machine），没有寄存器。所有参数都存储在内部的堆栈上，所有结果也存储在堆栈上。</span></p><p><span><strong><span style="font-size: 16px;">1. 类加载器</span></strong></span></p><p style="text-align: left;"><span style="font-size: 16px;">接下来， <strong>如何像 javap 那样解析 class 文件？</strong></span></p><p style="text-align: left;"><span style="font-size: 16px;">class 文件结构可以在 JVM 规范文档中找到，听起来很简单。通常以4字节签名（CAFEBABE）开头，接着是2+2字节的版本信息。加载器的第一个实现看起来像下面这样，从二进制文件中读取 byte、short、int 和字节流：</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul><span><span>type</span>loader <span>struct</span>{ </span><span>r io.Reader</span><span>err error</span><span>}</span><span><p><span><span><span>func</span><span>(l *loader)</span><span>bytes</span><span>(n <span>int</span>) </span>[] <span>byte</span></span>{ </span><span>b := <span>make</span>([] <span>byte</span>, n, n) </span><span><span>// 每步执行中没有处理错误，</span></span><span><span>// 只存储解析过程中发现的第一个错误，</span></span><span><span>// 没有进行出错处理</span></span><span><span>if</span>l.err == <span>nil</span>{ </span><span>_, l.err = io.ReadFull(l.r, b)</span><span>}</span><span><span>return</span>b </span><span>}</span><span><span><span>func</span><span>(l *loader)</span><span>u1</span><span></span><span>uint8</span></span>{ <span>return</span>l.bytes( <span>1</span>)[ <span>0</span>] } </span><span><span><span>func</span><span>(l *loader)</span><span>u2</span><span></span><span>uint16</span></span>{ <span>return</span>binary.BigEndian.Uint16(l.bytes( <span>2</span>)) } </span><span><span><span>func</span><span>(l *loader)</span><span>u4</span><span></span><span>uint32</span></span>{ <span>return</span>binary.BigEndian.Uint32(l.bytes( <span>4</span>)) } </span><span><span><span>func</span><span>(l *loader)</span><span>u8</span><span></span><span>uint64</span></span>{ <span>return</span>binary.BigEndian.Uint64(l.bytes( <span>8</span>)) } </span><span></span></p><p><span><span>// 调用</span></span><span>f, _ := os.Open( <span>"Add.class"</span>) </span><span>loader := &amp;loader{r: f}</span><span>cafebabe := loader.u4</span><span>major := loader.u2</span><span>minor := loader.u2</span></p><p style="text-align: left;"><span style="font-size: 16px;">按照 JVM 规范，接下来要解析常量池（Constant Pool）：它是 class 文件中的一个特殊区域，所有字符串、数字常量和引用都存储在这里。每个存储都具有一个唯一的 uint16 类型的索引号（因此 class 文件最多有 64K个常量）。</span><span style="font-size: 16px;">常量池中支持下面几种类型，每种类型包含一组不同的值：</span></p>
+<ul>
+<li>UTF8：纯字符串；</li>
+<li>Class: 类名的字符串索引（间接引用）；</li>
+<li>名字和类型：字段和方法的类名和描述符索引；</li>
+<li>字段和方法引用：类名和类型名引用索引。</li>
+</ul><p style="text-align: left;"><span style="font-size: 16px;">可以看到，池中的常量经常互相引用。由于本文使用 Go 来实现 JVM，因此没有 union 类型。下面是一个 Const 类型，包含了许多字段：</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul><span><p><span><span>type</span>Const <span>struct</span>{ </span><span>Tag <span>byte</span></span><span>NameIndex <span>uint16</span></span><span>ClassIndex <span>uint16</span></span><span>NameAndTypeIndex <span>uint16</span></span><span>StringIndex <span>uint16</span></span><span>DescIndex <span>uint16</span></span><span>String <span>string</span></span><span>}</span><span><span>type</span>ConstPool []Const </span></p><p style="text-align: left;"><span style="font-size: 16px;">接下来按照 JVM 规范开始解析常量池数据：</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul><span><span><span>func</span><span>(l *loader)</span></span>cpinfo (constPool <span>ConstPool</span>) { </span><span>constPoolCount := l.u2</span><span><span>// 从1开始验证常量池索引</span></span><span><span>for</span>i := uint16( <span>1</span>); i &lt; constPoolCount; i++ { </span><span><span>c</span>:= <span>Const</span>{ <span>Tag</span>: l.u1} </span><span><span>switch</span><span>c</span>. <span>Tag</span>{ </span><span><span>case</span><span>0x01</span>: <span>// UTF8 字符串, 长度 2 个字节 + data</span></span><span><span>c</span>. <span>String</span>= string(l.bytes(int(l.u2))) </span><span><span>case</span><span>0x07</span>: <span>// Class 索引</span></span><span><span>c</span>. <span>NameIndex</span>= l.u2 </span><span><span>case</span><span>0x08</span>: <span>// String 引用索引</span></span><span><span>c</span>. <span>StringIndex</span>= l.u2 </span><span><span>case</span><span>0x09</span>, <span>0x0a</span>: <span>// 字段和方法：class 索引 + NaT 索引</span></span><span><span>c</span>. <span>ClassIndex</span>= l.u2 </span><span><span>c</span>. <span>NameAndTypeIndex</span>= l.u2 </span><span><span>case</span><span>0x0c</span>: <span>// 名字与类型</span></span><span><span>c</span>. <span>NameIndex</span>, <span>c</span>. <span>DescIndex</span>= l.u2, l.u2 </span><span><span>default</span>: </span><span>l.err = fmt. <span>Errorf</span>( <span>"unsupported tag: %d"</span>, <span>c</span>. <span>Tag</span>) </span><span>}</span><span>constPool = append(constPool, <span>c</span>) </span><span>}</span><span><span>return</span>constPool </span><span>}</span><p style="text-align: left;"><span style="font-size: 16px;">上面的例子很简单，实际 JVM 处理 long 和 double 常量时会插入未使用的常量以进行区别处理。按照 JVM 的规定，常量会按照32bit 处理。 </span><span style="font-size: 16px;">下面的 Resolve(index uint16) strin</span><span style="font-size: 16px;">g 方法让按索引号处理字符串变得更简单：</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul><span><span><span>func</span><span>(cp ConstPool)</span><span>Resolve</span><span>(index <span>uint16</span>) </span><span>string</span></span>{ </span><span><span>if</span>cp[index <span>-1</span>].Tag == <span>0x01</span>{ </span><span><span>return</span>cp[index <span>-1</span>].String </span><span>}</span><span><span>return</span><span>""</span></span><span>}</span><p style="text-align: left;"><span style="font-size: 16px;">现在开始解析类、接口、字段、方法和它们的属性，通过下面的 helper 方法实现：</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul><span><span><span>func</span><span>(l *loader)</span><span>interfaces</span><span>(cp ConstPool)</span><span>(interfaces [] <span>string</span>) </span></span>{ </span><span>interfaceCount := l.u2</span><span><span>for</span>i := <span>uint16</span>( <span>0</span>); i &lt; interfaceCount; i++ { </span><span>interfaces = <span>append</span>(interfaces, cp.Resolve(l.u2)) </span><span>}</span><span><span>return</span>interfaces </span><span>}</span><span><p><span><span>// Field 类型适用于字段和方法</span></span><span><span>type</span>Field <span>struct</span>{ </span><span>Flags <span>uint16</span></span><span>Name <span>string</span></span><span>Deor <span>string</span></span><span>Attributes []Attribute </span><span>}</span><span></span></p><p><span><span>// Attribute 提供了字段和类的额外信息</span></span><span><span>// 最有用 "Code" 属性，包含了实际的字节码信息</span></span><span><span>type</span>Attribute <span>struct</span>{ </span><span>Name <span>string</span></span><span>Data [] <span>byte</span></span><span>}</span><span></span></p><p><span><span><span>func</span><span>(l *loader)</span><span>fields</span><span>(cp ConstPool)</span><span>(fields []Field)</span></span>{ </span><span>fieldsCount := l.u2</span><span><span>for</span>i := <span>uint16</span>( <span>0</span>); i &lt; fieldsCount; i++ { </span><span>fields = <span>append</span>(fields, Field{ </span><span>Flags: l.u2,</span><span>Name: cp.Resolve(l.u2),</span><span>Deor: cp.Resolve(l.u2),</span><span>Attributes: l.attrs(cp),</span><span>})</span><span>}</span><span><span>return</span>fields </span><span>}</span><span></span></p><p><span><span><span>func</span><span>(l *loader)</span><span>attrs</span><span>(cp ConstPool)</span><span>(attrs []Attribute)</span></span>{ </span><span>attributesCount := l.u2</span><span><span>for</span>i := <span>uint16</span>( <span>0</span>); i &lt; attributesCount; i++ { </span><span>attrs = <span>append</span>(attrs, Attribute{ </span><span>Name: cp.Resolve(l.u2),</span><span>Data: l.bytes( <span>int</span>(l.u4)), </span><span>})</span><span>}</span><span><span>return</span>attrs </span><span>}</span></p><p style="text-align: left;"><span style="font-size: 16px;">用 Field 代表字段和方法，可以帮助我们节省很多时间。最后把上面的代码合起来解析一个完整的 class 文件。</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul><span>type <span>Class</span><span><span>struct</span></span>{ </span><span><span>ConstPool</span><span>ConstPool</span></span><span><span>Name</span>string </span><span><span>Super</span>string </span><span><span>Flags</span>uint16 </span><span><span>Interfaces</span>[]string </span><span><span>Fields</span>[] <span>Field</span></span><span><span>Methods</span>[] <span>Field</span></span><span><span>Attributes</span>[] <span>Attribute</span></span><span>}</span><span><p><span><span><span>func</span><span>Load</span><span>(r io.Reader)</span></span>( <span>Class</span>, error) { </span><span>loader := &amp;loader{r: r}</span><span><span>c</span>:= <span>Class</span>{} </span><span>loader.u8 <span>// magic (u32), minor (u16), major (u16)</span></span><span>cp := loader.cpinfo <span>// 常量池信息</span></span><span><span>c</span>. <span>ConstPool</span>= cp </span><span><span>c</span>. <span>Flags</span>= loader.u2 <span>// 访问标记</span></span><span><span>c</span>. <span>Name</span>= cp. <span>Resolve</span>(loader.u2) <span>// 当前类</span></span><span><span>c</span>. <span>Super</span>= cp. <span>Resolve</span>(loader.u2) <span>// 父类</span></span><span><span>c</span>. <span>Interfaces</span>= loader.interfaces(cp) </span><span><span>c</span>. <span>Fields</span>= loader.fields(cp) <span>// 字段</span></span><span><span>c</span>. <span>Methods</span>= loader.fields(cp) <span>// 方法</span></span><span><span>c</span>. <span>Attributes</span>= loader.attrs(cp) <span>// 方法</span></span><span><span>return</span><span>c</span>, loader.err </span><span>}</span></p><p style="text-align: left;"><span style="font-size: 16px;">进一步深入类信息可以看到其中包含了零个字段和两个方法：&lt;init&gt;:V 和 add:(II)I。这些看起来像罗马数字和括号的东西又是什么？它们是描述符。定义了方法接受什么类型的参数以及返回值类型。</span></p><p style="text-align: left;"><span style="font-size: 16px;">上面的例子中，&lt;init&gt; 不接受任何参数（构造对象时调用），也不返回任何东西 (V=void)；“add” 方法接受两个 int (I=int32) 并返回一个整数。</span></p><p><span><strong><span style="font-size: 16px;">2. 字节码</span></strong></span></p><p style="text-align: left;"><span style="font-size: 16px;">仔细观察，会发现解析后的类中每个方法都有一个名为 “Code” 的属性。该属性带有一个字节的信息，其二进制输出如下：</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul><span>&lt;init&gt;:</span><span>[ <span>0 1 0 1 0 0 0 5 42 183 0 1 177 0 0 0 1 0 7 0 0 0 6 0 1 0 0 0 1</span>] </span><span><span>add</span>: </span><span>[ <span>0 2 0 2 0 0 0 4 26 27 96 172 0 0 0 1 0 7 0 0 0 6 0 1 0 0 0 3</span>] </span><p style="text-align: left;"><span style="font-size: 16px;">如果仔细查看规范文档中的 <strong>bytecode </strong>章节，会发现 “Code” 属性从 maxstack（2个字节）开始，接着是 maxlocals（2个字节），然后是代码长度（4个字节），最后是实际代码。示例如下： </span></p>
+<ul>
+<li></li>
+<li></li>
+</ul><span>&lt; <span>init</span>&gt;: <span>maxstack</span>: 1, <span>maxlocals</span>: 1, <span>code</span>: <span>[42 183 0 1 177]</span></span><span><span>add</span>: <span>maxstack</span>: 2, <span>maxlocals</span>: 2, <span>code</span>: <span>[26 27 96 172]</span></span><p style="text-align: left;"><span style="font-size: 16px;">每个方法只包含4和5个字节代码。 <strong>这些字节代表什么含义？</strong></span></p><p style="text-align: left;"><span style="font-size: 16px;">正如之前提到的，JVM 是一个堆栈机器。每条指令都会被编码成单个字节，后面跟一些附加参数。如果仔细阅读规范会看到 “add” 方法包含了下面的指令：</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul><span><span>26</span>= <span>iload_0</span></span><span><span>27</span>= <span>iload_1</span></span><span><span>96</span>= <span>iadd</span></span><span><span>172</span>= <span>ireturn</span></span><p style="text-align: left;"><span style="font-size: 16px;">和文章开始的时候看到的 javap 输出的结果一样！接下来要如何执行？</span></p><p><span><strong><span style="font-size: 16px;">3. JVM 帧</span></strong></span></p><p style="text-align: left;"><span style="font-size: 16px;">JVM 内部执行方法时，每个方法有自己的堆栈用来存储临时操作数、本地变量和待执行的代码块。所有这些参数都存储在一个执行帧（Frame）中。此外，执行帧还包含当前指令指针和包含了该方法的类指针。后者用于访问类的常量池以及其他细节。</span></p><p style="text-align: left;"><span style="font-size: 16px;">下面的代码中，方法为需要调用的方法创建了一个帧。这里使用 interface{} 作为值类型，当然 union 类型是另一种更安全的选择。</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul><span><span>type</span>Frame <span>struct</span>{ </span><span>Class Class</span><span>IP <span>uint32</span></span><span>Code [] <span>byte</span></span><span>Locals [] <span>interface</span>{} </span><span>Stack [] <span>interface</span>{} </span><span>}</span><span><p><span><span><span>func</span><span>(c Class)</span><span>Frame</span><span>(method <span>string</span>, args ... <span>interface</span>{}) </span><span>Frame</span></span>{ </span><span><span>for</span>_, m := <span>range</span>c.Methods { </span><span><span>if</span>m.Name == method { </span><span><span>for</span>_, a := <span>range</span>m.Attributes { </span><span><span>if</span>a.Name == <span>"Code"</span>&amp;&amp; <span>len</span>(a.Data) &gt; <span>8</span>{ </span><span>maxLocals := binary.BigEndian.Uint16(a.Data[ <span>2</span>: <span>4</span>]) </span><span>frame := Frame{</span><span>Class: c,</span><span>Code: a.Data[ <span>8</span>:], </span><span>Locals: <span>make</span>([] <span>interface</span>{}, maxLocals, maxLocals), </span><span>}</span><span><span>for</span>i := <span>0</span>; i &lt; <span>len</span>(args); i++ { </span><span>frame.Locals[i] = args[i]</span><span>}</span><span><span>return</span>frame </span><span>}</span><span>}</span><span>}</span><span>}</span><span><span>panic</span>( <span>"method not found"</span>) </span><span>}</span></p><p style="text-align: left;"><span style="font-size: 16px;">有了帧、初始化的局部变量、空堆栈、预加载的字节码，现在开始执行：</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul><span><span><span>func</span><span>Exec</span><span>(f Frame)</span><span>interface</span></span>{} { </span><span><span>for</span>{ </span><span>op := f.Code[f.IP]</span><span>log.Printf( <span>"OP:%02x STACK:%v"</span>, op, f.Stack) </span><span>n := <span>len</span>(f.Stack) </span><span><span>switch</span>op { </span><span><span>case</span><span>26</span>: <span>// iload_0</span></span><span>f.Stack = <span>append</span>(f.Stack, f.Locals[ <span>0</span>]) </span><span><span>case</span><span>27</span>: <span>// iload_1</span></span><span>f.Stack = <span>append</span>(f.Stack, f.Locals[ <span>1</span>]) </span><span><span>case</span><span>96</span>: </span><span>a := f.Stack[n <span>-1</span>].( <span>int32</span>) </span><span>b := f.Stack[n <span>-2</span>].( <span>int32</span>) </span><span>f.Stack[n <span>-2</span>] = a + b </span><span>f.Stack = f.Stack[:n <span>-1</span>] </span><span><span>case</span><span>172</span>: <span>// ireturn</span></span><span>v := f.Stack[n <span>-1</span>] </span><span>f.Stack = f.Stack[:n <span>-1</span>] </span><span><span>return</span>v </span><span>}</span><span>f.IP++</span><span>}</span><span>}</span><p style="text-align: left;"><span style="font-size: 16px;">最后整合上面的工作，调用 add 方法：</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul><span>f, _ := os.Open( <span>"Add.class"</span>) </span><span>class, _ := Load(f)</span><span>frame := class.Frame( <span>"add"</span>, int32(2), int32(3)) </span><span>result := Exec(frame)</span><span>log.Println(result)</span><span><p><span>// 输出</span><span><span>OP:1a STACK:[]</span></span><span><span>OP:1b STACK:[2]</span></span><span><span>OP:60 STACK:[2 3]</span></span><span><span>OP:ac STACK:[5]</span></span><span>5</span></p><p style="text-align: left;"><span style="font-size: 16px;">最终，我们有了一个可以工作的 JVM。虽然它非常简陋，但仍然做了 JVM 该做的事情：加载字节码并进行解析（当然，真正的 JVM 完成的工作不止于此）。</span></p><p><span><strong><span style="font-size: 16px;">4. 还缺点什么</span></strong></span></p><p style="text-align: left;"><span style="font-size: 16px;">还要支持200条指令、运行时、面向对象类型系统以及其他一些东西。JVM 总共有11组指令，其中大多数都很简单：</span></p>
+<ul>
+<li>常量：将 null 值或常量池数值加载到堆栈上；</li>
+<li>Load：将局部变量加载到堆栈上。此外还有32条类似指令；</li>
+<li>Store：从堆栈弹出局部变量。此外还有32条类似指令；</li>
+<li>Stack：pop、dup、swap。每个堆栈机器都支持类似的指令；</li>
+<li>Math：add、sub、div、mul、rem、shift、logic。针对不同的值类型，总工有36条指令；</li>
+<li>转换：int 转 short，int 转 float 等；</li>
+<li>比较：eq、ne、le 等。用来生成像 if/else 这样的条件指令；</li>
+<li>控制：goto、return。对循环和子程序很有用；</li>
+<li>引用：最有趣的部分是字段、方法、异常和对象监视器；</li>
+<li>扩展：看起是一种丑陋的解决方案，可能不会随着时间改变；</li>
+<li>预留：断点指令 0xca 可归为这一类。</li>
+</ul><p style="text-align: left;"><span style="font-size: 16px;">大多数指令的实现都很简单：从堆栈中取出一个或者两个个参数，对它们执行一些操作，然后把结果推入堆栈。这里需要记住的是：long 和 double 每个值在堆栈上要占用两个槽（Slot），因此可能需要额外增加 push 和 pop。这样会提高指令分组难度。 </span></p><p style="text-align: left;"><span style="font-size: 16px;">实现应用需要考虑对象模型：如何存储对象和它们的类，如何表达继承，如何存储实例与类的字段。</span></p><p style="text-align: left;"><span style="font-size: 16px;">不仅如此，还要仔细设计方法分派：又很多不同的“invoke”指令，使用时要注意细微的区别：</span></p>
+<ul>
+<li>invokestatic ：调用类中的静态方法；</li>
+<li>invokespecial ：直接调用实例方法，主要用于合成方法（Synthetic Method）与私有方法。&lt;init&gt; 就是一个典型的合成方法；</li>
+<li>invokevirtual ：按照类的继承链调用实例方法；</li>
+<li>invokeinterface ：调用接口方法。与 invokevirtual 类似，但是检查与优化有所不同；</li>
+<li>invokedynamic ：动态计算调用站点（Call Site）进行调用。此功能在 Java 7 中引入，适用于动态方法和 MethodHandle。</li>
+</ul><p style="text-align: left;"><span style="font-size: 16px;">如果 JVM 的实现语言不支持，还需要考虑如何实现垃圾回收：引用计数、标记和清除等。此外还要处理异常：通过 athrow 指令实现异常处理。在不同的调用帧中传递异常并通过异常表进行处理。</span></p><p style="text-align: left;"><span style="font-size: 16px;">最后，如果没有运行时类 JVM 也没法使用。例如，没有 java/lang/Object ，就不可能使用 new 指令构造新对象。设计的运行时需要提供一些通用的 JRE 类，例如 java.lang、java.io 和 java.util 包提供的类。此外，还需要一些提供特定功能的类。这些类包含的方法，有一些不得不用非 Java 语言提供本地实现。这就为 JVM 引入了一些边界场景，需要考虑如何找到并且执行这些方法。</span></p><p style="text-align: left;"><span style="font-size: 16px;">换句话说，实现一个 JVM 并不是那么简单，但理解它的实现机制也没那么复杂。</span></p><p style="text-align: left;"><span style="font-size: 16px;">以上的工作只花了一个周末。虽然这个 JVM 看起来还有很长的路要走，但是结构看起来还是比较清晰的：https://github.com/zserge/tojvm（欢迎提交 PR）。</span></p><p style="text-align: left;"><span style="font-size: 16px;">最终完成的代码不多，可以作为实现参考要点。</span></p><p style="text-align: left;"><span style="font-size: 16px;">如果对 JVM 底层实现这个主题想要了解更多，推荐下面的 JVM 实现：</span></p>
+<ul>
+<li>Mika：https://github.com/kifferltd/open-mika</li>
+<li>Avian：https://github.com/ReadyTalk/avian</li>
+<li>NanoVM：https://github.com/harbaum/NanoVM</li>
+<li>Luje：https://github.com/davidgiven/luje（一个出色的 LuaJIT）</li>
+</ul><p style="text-align: left;"><span style="font-size: 16px;">希望这篇文章不会为你带来困扰。虚拟机是一个很有意思的主题，JVM 的地位名副其实。</span></p>

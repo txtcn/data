@@ -1,0 +1,157 @@
+➜苹果爸爸不会告诉你的4个投放技巧，刷新你对苹果竞价广告ASM的认识
+http://www.sohu.com/a/251597081_100065715	12102
+<p class="ql-align-justify">​​​苹果竞价广告上线 App Store 已经有一年多的时间了。 但是我们对它依旧不是很熟悉，因为他只开放了 7 个地区，而且语言都是英文，这对中国的开放者来说并不是十分便捷。但是 App Store 在 iOS 11 中发生了改变——榜单弱化、重视用户搜索，这两个变化凸显了 Search Ads 这个推广工具的重要性。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/eb14cc6d58334a97a8ace4d2662c6343.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">今天的这篇文就和大家分享一下 Search Ads 的几个使用技巧：</p>
+<p class="ql-align-justify"> <strong>1.屏蔽非美国区流量</strong></p>
+<p class="ql-align-justify">首先你要知道，当你在 Search Ads 的后台选择投放地区为“美国”时，并不是投放的地理意义上的美国，<strong>还包含了一些没有本地 App Store 的地区，苹果把这些地区的下载量也视为美国地区的。</strong></p>
+<p class="ql-align-justify">另外，<strong>苹果是根据用户在设备上设置的地区而判断位置</strong>，而不是 IP 地址。也就是说世界各地的用户都可以注册一个美国的苹果 ID。</p>
+<p class="ql-align-justify">据我们的数据显示，这类流量占了 <strong>20%~40%</strong>（当然也不排除部分 App 没有这个流量或者非常低）。我们可以通过一个小技巧来屏蔽这些流量——设置投放时间。</p>
+<p class="ql-align-justify">我们前面已经提到了，<strong>苹果是依据“设备时间”进行投放，而不是“用户所在时区”</strong>，所以根据本地时间来投放就行不通了。<strong>你可以手动开启/停止投放。比如说，在美国时间的上午时段开始投放，在晚上停止投放。这可以减少 80% 的非相关流量。</strong></p>
+<p class="ql-align-justify"><strong>2.不要投放自然搜索结果第一的关键词</strong></p>
+<p class="ql-align-justify"><strong>虽然说 Search Ads 是为了让更多用户发现你的广告，但是有些投放效果也不那么如意。</strong></p>
+<p class="ql-align-justify"><strong>举个例子，搜索关键词“movie”，某款 App 在搜索结果第一的位置上，同时你也投放了这个关键词，可能会带来两个影响：</strong></p>
+<p class="ql-align-justify"><strong>一是增加支出。“movie”本身就自带流量，如果再多此一举投放该关键词，也只是浪费了你的预算。二是可能会降低相关性，提升单价。如果有用户因为看到是广告不点击的话，还会导致你的 App 和该关键词之间的相关度降低，导致单价提升。</strong></p>
+<p class="ql-align-justify"><strong>3.不要一昧提高出价</strong></p>
+<p class="ql-align-justify"><strong>我们可以通过提高出价来提升下载量，但是同时也意味着费用会增多。除此之外，我们还可以选择投放其他关键词。</strong></p>
+<p class="ql-align-justify"><strong>TTR 和 CTR 对竞价广告的展示起着重要的作用，TTR 越高，每个点击的价格就越低。如果你的 TTR 在 3-5％ 之内（非游戏行业），很有可能会被苹果认为相关度过低，进而导致展示更少。面对这种情况，不要只是一昧的提高出价，可以尝试其他方式，比如说投放其他相关性较高的关键词。</strong></p>
+<p class="ql-align-justify"><strong>4.获取更精准的数据</strong></p>
+<p class="ql-align-justify"><strong>Search Ads 的后台提供数据报表的分析下载，但是这个数据报表对用户行为的分析并不是那么准确。</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/fe817f3c9c624660a9caf1bf1982812d.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">苹果的数据报表中会提供下载统计，但是这里“下载量”的计算方式是指用户点击“获取”按钮一次，就记为一次下载。<strong>但是会有用户只点击了“获取”，并没有激活。</strong>这种行为也被苹果的归为下载了。</p>
+<p class="ql-align-justify"><strong>要解决这一问题，开发者可以在 App 中添加竞价广告的 API：</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/bb6eb8bf0012451191d0a6f31de39ff2.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>​</strong></p>
+<p class="ql-align-justify">API 可以追踪用户到下载后的使用情况，了解到用户的更多具体信息，不仅仅局限于下载量。</p>
+<p class="ql-align-justify">除了使用 API 之外，一些第三方数据平台也能帮助我们获取更精准的数据。这些数据可以指导我们对广告投放做精细地优化，根据每种投放策略的 ROI，甚至每个关键词的 ROI 进行投放设置，从而使竞价广告的获客量级与成本控制在最理想的范围内。</p>
+<p class="ql-align-justify">使用前面 4 个方法，除了能帮助你提高投放效果之外，还能让你对获取的流量做到心中有数，助力你成为一名优秀的 ASMer 哦！</p>
+<p class="ql-align-justify">更多ASM内容可联系七麦数据，七麦数据（原ASO100）- 专业移动推广数据分析平台 - ASO优化|ASM竞价广告|iOS|App Store|苹果应用商店|安卓市场|榜单</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/5415495f371a40a183066d92a902b75c.jpeg" max-width="600" /></p>
+➜独家 ASM 选词秘笈，再也不用担心选不对苹果竞价广告里的关键词啦！
+http://www.sohu.com/a/251597280_100065715	12148
+<p class="ql-align-justify"><strong>一、关键词来源</strong></p>
+<p class="ql-align-justify"><strong>1.App 元数据</strong></p>
+<p class="ql-align-justify">可以从 App 的<strong>应用名称、图标、关键词、截图和描述</strong>等提取关键词。另外，你还可以通过七麦数据等第三方数据网站查看具体已覆盖的关键词，在已覆盖的词里选择关键词投放：</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/ebc2a669c0014b21ab347f8248af1ce3.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>2.App Store 搜索推荐</strong></p>
+<p class="ql-align-justify"><strong>在 App Store（美国区） 搜索某个词后，会在搜索框下方推荐相关的关键词，这些关键词可以作为参考。中国区暂时还没有这个功能。</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/b83c4941a8d0444c90eab64553bf3300.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>3.苹果竞价广告后台</strong></p>
+<p class="ql-align-justify">①在后台添加关键词时开启“<strong>Search Match</strong>”<strong>，</strong>苹果会根据你 App 的元数据，为你自动匹配出相关的关键词。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/da8c484e586e46f193fbaaf4bc43decd.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">②投放某个具体的关键词时，选择“<strong>Broad Match</strong>”，可以为你覆盖到该关键词的相关词或者近似变体词，如单数、复数、拼写错误、同义词、相关搜索和包含该字词的词组（完全或部分）等。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/30b1123460004c29874ccea1f2ddefc0.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>​</strong></p>
+<p class="ql-align-justify"><strong>这两个方法匹配到的关键词，你可以在 Search Terms 中查看：</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/f3655aa6ccd7498e8aea9d6c76fe32cb.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>4.通过七麦数据等数据网站查找热词</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/346042120e0f49d285bf882189e81342.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">进入七麦数据网站（https://www.qimai.cn/）</p>
+<p class="ql-align-justify">点击“ASM 流行度排行</p>
+<p class="ql-align-justify">选择某个 App（同类产品最佳）</p>
+<p class="ql-align-justify">查看“ASM 竞价词”</p>
+<p class="ql-align-justify"><strong>5.百度指数、微信指数等数据平台</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/4c32e352d40d41eaadcda843893fce2c.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">​</p>
+<p class="ql-align-justify">ASM 相较于 ASO 而言，有一个很大的优势：不需要更新版本就可以覆盖关键词。所以你可以通过投放竞价广告高效、快速覆盖当下的热词，短时间内提高 App 的下载量。</p>
+<p class="ql-align-justify">使用第三方数据分享平台，如<strong>百度指数、新浪的微指数、微信指数</strong>等，查看分析热词，选择合适的关键词进行投放（该方法只适用于中国区的关键词投放，如果是美国区，可参考 Facebook、Twitter 等）。</p>
+<p class="ql-align-justify"><strong>二、预算有限，优先选择哪些词？</strong></p>
+<p class="ql-align-justify">预算有限又不知道该投放哪些词的时候，有两个方法可以选择：<strong>一是用 Basic</strong>，简单粗暴，但是不能屏蔽品牌词，后期也不能查看详细的数据报表。对于品牌词竞争不大的 App 来说有点浪费。<strong>二是从 App 自身去选择关键词</strong>。下面用一款电台类 App 为例：</p>
+<p class="ql-align-justify"><strong>1.根据自身产品特性选择（建议从标题中选择）</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/9870610cbd0c46df997ecc290e6ab0b0.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">这款产品比较小众，用户多为爱好传统学\养生\读历史的人，结合标题，选词可以考虑：<strong>养生、中医、历史、红楼梦</strong>等，然后结合它们的搜索指数及竞争程度并不高，因此可以列为投放关键词。</p>
+<p class="ql-align-justify"><strong>2.根据 App 应用内部推荐选词</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/7fbd3f0d45964b01b6ddbab7e0729fe9.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/266e71f9338849a18794fdde3ddc0c9e.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/b9879139963f4cef8d2df74ab78be8e4.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">首页<strong> banner 图、分类、排行</strong>这些地方推荐的都是这款 App 的热门课程，因此这些课程的关键词也可以列为考虑，通过查看：<strong>红楼梦、黄帝内经、道德经、论语</strong>等词有一定的搜索指数，且竞争不大，因此也可以列为投放关键词。</p>
+<p class="ql-align-justify"><strong>3.根据价格选词</strong></p>
+<p class="ql-align-justify">当预算不足时，价格也是选词的一个重要因素。据以往积累的投放经验，我们对各分类 App 的竞价广告做了一个成本预估汇总，包括 CPA、CPT、下载量和预算：</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/172879ae0f15480eb2d8719d03e9c741.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>投放后可以观察一段时间，如果价格高于表格中的数据，或者超出了自己可接受的范围，这时可以考虑停止投放该词；如果价格在预期内，可以考虑增加出价以获取更多下载量。</strong></p>
+<p class="ql-align-justify">更多ASM内容可联系七麦数据，七麦数据（原ASO100）- 专业移动推广数据分析平台 - ASO优化|ASM竞价广告|iOS|App Store|苹果应用商店|安卓市场|榜单</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/8fb6d30d9d96409b90419b19942d5454.jpeg" max-width="600" /></p>
+➜苹果竞价广告官网更新，或将在近期开放这 6 个国家
+http://www.sohu.com/a/251597920_100065715	12211
+<p class="ql-align-justify">2018 年 3 月，苹果官网发生了一些变化：语言栏显示由之前的 <strong>国家（语言）</strong>变为现在的<strong>语言（国家）。</strong>并且新增了 6 种语言：<strong>德语、西班牙语、法语、意大利语、日语、韩语。点击可以将竞价广告官网切换到相应的语言版本：</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/a831e13bd11349b6a44521e782e2200b.jpeg" max-width="600">更新前</img></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/14062c1f05a74415aa5cff98c58f33d1.jpeg" max-width="600">更新后</img></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/2add540c104f4286982bbf124f055d6c.jpeg" max-width="600">日语版网站</img></p>
+<p class="ql-align-justify">乍一看会以为苹果竞价广告又开放了新地区，但是在创建竞价广告页面并没有新增投放地区，仍旧还是之前的 7 个地区：<strong>美国、墨西哥、英国、加拿大、瑞士、澳大利亚、新西兰</strong>。而且苹果也没有发布关于地区扩展的官方新闻。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/44051ec9e4ac4ef58cf2d7f0dad6d8ca.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">上一次苹果扩展地区的时候，开放了几个非英语地区，官网也随之增加了这几个地区的翻译版本。我们推测这次可能是先新增翻译版本，<strong>接下来会在这 6 个地区开放 ASM。</strong></p>
+<p class="ql-align-justify">支持新的语言是苹果 ASM 全球扩展的重要的一步，也预示着 ASM 开放中国区也不远了。此前苹果官方在和我们的交流中曾透露，<strong>ASM 迟迟不来中国的原因是因为中文难度比较大，但也表示会在 2018 年登陆中国。</strong></p>
+<p class="ql-align-justify"><strong>接下来，我们会密切跟进苹果竞价广告开发地区以及其他动态，关注七麦数据，我们会第一时间给你推送竞价广告的最新资讯！</strong></p>
+<p class="ql-align-justify">更多ASM内容可联系七麦数据，七麦数据（原ASO100）- 专业移动推广数据分析平台 - ASO优化|ASM竞价广告|iOS|App Store|苹果应用商店|安卓市场|榜单</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/9c63825f04e54736b9ca0bc426bfcc27.jpeg" max-width="600" /></p>
+➜苹果小动作丨投放竞价广告（ASM）可以提升 App 自然排名（实测）
+http://www.sohu.com/a/251597848_100065715	12263
+<p class="ql-align-justify">自苹果竞价广告推出以来，我们不断的在对它进行测试，摸索其中的规律。近来我们有一个发现：<strong>搜索某些关键词后，出现在广告位的 App，还会在本次搜索中，在自然搜索结果的 top10 中再次出现一次，但这款 App 的自然排名本不在 top10以内——可以理解为，竞价广告会给 App 额外赠送一个 top10 的自然排名。</strong>为了证实这不是偶然情况，我们进行了 180 次关键词搜索，这篇文章就和大家分享一下我们这次的测试结果~</p>
+<p class="ql-align-justify">举个例子，我们在美国区的 App Store 中搜索“chat”一词，出现在广告位的 App是「MS Buddy」</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/571dc14929ce47e28a595d122edc663a.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">向下滑动搜索结果，发现这款 App 还出现在 top9 的位置：</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/3b71c25037de4b7c86d870d649011bec.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">但在七麦数据网站上查询后，这款 App 在关键词“chat”下的排名是第 749。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/033ae30a4de1418bbcc3a38aee861738.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">用同样的方法，对关键词“chat”进行第二次搜索，出现了同样的情况：位于广告位的 App 是「ASKfm」，下滑搜索结果，发现第一次搜索结果 top9 的「MS Buddy」不见了，取而代之的是「ASKfm」。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/0f0cd821c2044779ba23db4971ef0862.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/442fadab54904888adeed165b64fba25.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">在七麦数据网站上查询，显示这款 App 在关键词“chat”下的排名是 430。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/0f1e0f2893a549c2afa75b3f5ee47cdd.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">为了验证上述情况是偶然，还是存在某种特定规律，我们进行了 180 次关键词搜索测试，发现这种情况在测试中多次出现——<strong>搜索某关键词后，位于广告位的 App 会在自然结果 top10 附近额外再出现一次。</strong></p>
+<p class="ql-align-justify">我们对 180 个样本数据进行了分析，依据<strong>是否覆盖搜索的关键词</strong>、<strong>自然排名是否在 top10</strong> 、<strong>App 当次搜索结果中的额外排名</strong>这 4 个维度统计。</p>
+<p class="ql-align-justify">在这 180 个样本数据中，有 95 个 App 覆盖了搜索关键词，其中 86 个 App 在当次搜索结果中位于 top10；没有覆盖搜索关键词的有 85 个 App，只有一个在当次搜索中出现在 top10。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/50cb65178f7c40648a6d31157e9713e2.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">在已覆盖搜索关键词的 95 个 App 中，有 39 个 App 的自然排名本身就在 top10，其中 36 个 App 在当次搜索界中也出现在 top10；另外有 56 个 App 的自然排名不在 top10，其中却有 49 个 App 在当次搜索结果中出现在 top10，而且超过半数都位于第 9 名的位置。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/2470006d6e964dfbbd71828a3261aabc.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">综合以上分析，我们可以得出结论：</p>
+<p class="ql-align-justify"><strong>1.苹果会给投放竞价广告的 App 额外赠送一个 top10 的搜索结果位，但前提是该 App 覆盖了这个关键词；如果没有覆盖，是不会有这个搜索结果位的。</strong></p>
+<p class="ql-align-justify"><strong>2.如果该竞价 App 本身的自然排名就在 top10 ，那么在当次搜索结果下排名不变。</strong></p>
+<p class="ql-align-justify"><strong>3.如果竞价 App 的自然排名不在 top10，但覆盖了该关键词，会在当次搜索中出现在 top10 的位置。在第 8、 9 名的可能性最大。</strong></p>
+<p class="ql-align-justify"><strong>4.需要强调一下，以上结论仅限在“当次搜索”。</strong></p>
+<p class="ql-align-justify"><strong>除美国区之外，我们还在其他已开放 ASM 的地区对该结论进行了验证，包括非英文地区，以墨西哥的 App Store 为例： </strong></p>
+<p class="ql-align-justify"><strong>​</strong></p>
+<p class="ql-align-justify"><strong>搜索关键词 Juegos（西班牙语：游戏），出现在广告位的 App 是 Gardenscapes。下滑搜索结果，该 App 还出现在搜索结果 top10 的位置。</strong></p>
+<p class="ql-align-justify"><strong>​</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/c9187e637d9d4f04b92cd7313143ab2a.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/5dcfa693f46b41578f50d8a44c5438cf.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">第二次搜索该关键词时，top10 位置显示已经不是 Gardenscapes 了，但依旧是广告位的 App。上述结论对于已开放 ASM 的地区都成立。</p>
+<p class="ql-align-justify">苹果竞价广告这样的安排可以增加竞价 App 的可信度：第一次出现是以广告形式，当用户忽略后，第二次出现在搜索结果中，会让用户误认为这是该 App 在“自然搜索结果”下的排名。</p>
+<p class="ql-align-justify">建议开发者在投放竞价广告时，可以优先选择投放自家 App 已覆盖的关键词。除了获得广告位外，还额外有一个 top10 的搜索结果位，能获得更多的下载量。</p>
+<p class="ql-align-justify">接下来，我们会投入到新的测试中，同时密切关注 ASM 的相关动态，关注七麦数据！不会错过任何独家消息！</p>
+<p class="ql-align-justify">更多ASM内容可联系七麦数据，七麦数据（原ASO100）- 专业移动推广数据分析平台 - ASO优化|ASM竞价广告|iOS|App Store|苹果应用商店|安卓市场|榜单</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180903/aef1b9b6fad24127b1ccf81153ee8df8.jpeg" max-width="600" /></p>
+➜拥有 80% 女性用户的拍照 App 市场备受关注，功能完善后盈利才是关
+http://www.sohu.com/a/250797048_100065715	42174
+<p>随着移动互联网发展，智能手机拍照功能的发展，拍照类 App 近年也迎来自己的春天，类似美颜相机、天天P图、轻颜相机等专业的拍照 App 随势而来。而不少拍照 App 凭借自身产品的独特功能收揽了不少用户。截止 7 月底，七麦数据通过统计 App Store 摄影与录像分类榜（免费）Top100、摄影与录像分类榜（付费）Top100 App 中查看了相关产品表现及用户表现。</p>
+<p><strong>功能日渐强大，包罗万象</strong></p>
+<p>从功能的角度上去考虑，拍照 App 对于女性来讲有着不可抵挡的诱惑力，这些产品以其强大的美颜美妆功能、丰富独特的滤镜等功能，满足不同用户通过手机就能“拍大片”、搞怪、可爱等刚性需求。</p>
+<p>综合这类产品可以看出其常见功能有 7 种：美颜、美妆、滤镜、贴纸、动效、音乐、修图，其中在拍照过程中最为被用户热衷使用的功能要数美颜和滤镜。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/d22303bd11f549268c531da8b19def23.jpg" max-width="600" /></p>
+<p><strong>用户心理把握精准，人群定位突出</strong></p>
+<p>从用户心理的角度去考虑，拍照 App 抓住了用户的爱美心理，再通过与社交平台的搭建，让用户能即时将美照上传分享至社交平台，实现用户展现美好自我的愿望，由此成为更多女性用户钟爱的 App。</p>
+<p><strong>拍照类 App 产品针对用户心理分析：</strong><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/5754a782b362444f9c68971cb8abaede.jpg" max-width="600" /></p>
+<p><strong>1.爱美心</strong>——爱美之心人皆有之，除了让别人赏心悦目，还要让自己看着舒服，所以拍照 App 大多数以滤镜、美白、既视感为突出，让人从照片中觉得自己也是美的。</p>
+<p><strong>2.虚荣心</strong>——不论谁都希望最美的一面展现在朋友面前，越高大上、越让人艳羡，用户虚荣心才能得到满足。而大部分拍照 App 也是为了这一点，开始上线更多“大片”效果、“国外”既视感、复古风格等，这样大大提升逼格的同时也让用户满足了虚荣心。</p>
+<p><strong>3.满足感</strong>——单反不是所有人都能玩转，后期不是每个人都能做到 PS 大师级别，但是拍照 App 可以给一个爱好拍照但又没有技能的普通用户带来满足感。背景虚化、滤镜效果、光影搭配、酷炫贴纸……这些无形当中解决了学习成本，让用户更简单的拍出自己想要的效果。</p>
+<p>而调查数据显示，拍照 App 用户中，女性用户占比近八成，男性用户仅占二成。拍照 App 正是利用用户对于美的追求，从而成为越来越多年轻用户装机必备的手机应用。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/b09c81a402814237aed1f275ccc146af.jpg" max-width="600" /></p>
+<p><strong>品类繁多，更新换代频繁，创意不断</strong></p>
+<p>在数据样本（App Store 摄影录像分类免费榜 Top100 和付费榜 Top100 相关数据）中，从 2009 年就有拍照 App 上线，近些年拍照 App 上线数量有明显提升，截止 2018 年 7 月底，17、18 年共有 29 款 App 进入 App Store 摄影录像分类免费榜 Top100 和付费榜 Top100，说明产品质量和用户满意度在近年来表现均有提升。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/e82ccf426b3e4586a1f28f213c9b181e.jpg" max-width="600" /></p>
+<p>在数据样本的 61 款 App 中，43 款 App 用户好评率达到 80%，拍照 App 的用户认可度还是比较高的。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/2ebeff31fb974019b0a53e8bac47e7ca.jpg" max-width="600" /></p>
+<p>当然除了用户对这类产品认可较高之外，苹果小编也对这类 App 格外关注、备受喜爱。在样品数据中，有 40% 的产品均被苹果官方推荐过，对于某一类产品来讲，这样的占比已经相当高了。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/b722153127414e9baafe8f4fb02c4153.jpg" max-width="600" /></p>
+<p>根据 2018 年 1 月 1 日— 7 月 31 日期间各拍照 App 下载量来看，B612咔叽的下载量达 2000 万 + 位列第一，1500 种贴纸每周更新的承诺给其带来不小的流量，加持网红、明星的带量今年有着如此不错的表现也是情理之中的。无他相机、Faceu激萌紧随其后分列第二、第三位，美颜相机、天天P图也有千万量级的下载量。整体看来，拍照 App 在下载量方面展现出 2018 年不再是老牌拍照 App 的天下，越来越多新 App 从功能上不断创新，让用户更愿意下载使用。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/54de7bbe3118431997a056c6375ba936.jpg" max-width="600" /></p>
+<p>作为付费榜中由开发商 ordinaryfactory Inc. 开发的各种“模拟××” App 备受用户关注，7 款 App 均在付费榜有不俗表现。其中“模拟巴黎”这款 App 在韩国地区 App Store 曾经连续几个月排名首位，且一直保持前三的稳定地位。可见韩国人对其钟爱程度何其高，连许多明星爱豆、比如朴信惠等都会用它来拍照。而在中国区，该款产品在近三个月的付费榜排行中也表现不错，历史最高排名位列 17 为。作为一款表现不俗的付费拍照 App 一定有它独特的过人之处，滤镜是其最大特点，大部分以粉色调为主，少女感十足，深受女性用户关注。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/1b50aa4a5cf145f895e9e7917315b03f.jpg" max-width="600" /></p>
+<p>韩国区付费榜排名情况</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/4152377b5ee848b2b358231669f1b965.jpg" max-width="600" /></p>
+<p>中国区付费榜排名情况</p>
+<p><strong>社区化迁移重点偏离，盈利难</strong></p>
+<p>拍照产品为了更好解决用户留存问题，越来越多的产品开始结合社交，提供用户交流平台，也为拍照 App 提供了更大的舞台。拍照 App 除了为用户社交生活增添色彩与趣味性之外，还满足了用户对于拍照个性化的需求，利用图片表达内心情感也已成为人们青睐的形式。</p>
+<p>不过，虽然不少拍照 App 在尝试完善自己的社交属性，但其实质上还是属于工具类应用，随着越来越多同类 App 的出现，用户忠诚度其实才是该类 App 的最大挑战。</p>
+<p>目前不少拍照 App 以另类、恶搞的属性吸引了足够的目光，但这种背离普遍审美认知的形式不免会面临热度终将尽失的风险。所以，用户忠诚度对于拍照 App 需要考虑的重中之重，回归本源、寻找用户需求、了解现阶段的用户群体结构……这些更易于产品优化。</p>
+<p>另外，对于一款易被用户接受的产品，其盈利方式也是很关键的，目前拍照 App 盈利方式及其单一，一般以付费贴纸、付费滤镜、付费功能三大模块构成，而美图公司开始通过以社区为基点→建立美妆商城→获取盈利，这种方式虽然比较曲折，但对于拍照产品来讲确实是一个突破性尝试，未来拍照类应用的市场痛点到底是什么，还有待更深入的挖掘。</p>

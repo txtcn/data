@@ -1,0 +1,180 @@
+➜苹果 ASM 后台再更新！七麦数据带你看功能
+http://www.sohu.com/a/250755779_100065715	31711
+<p>2017年10月上旬，苹果竞价广告后台连续进行了两次功能更新：</p>
+<ul>
+<li>支持<strong>删除广告项目</strong>（Campaign）</li>
+<li>支持查看操作历史（Change History）</li>
+</ul>
+<p>七麦数据给大家带来最及时的资讯与分析~</p>
+<p><strong>一、删除广告项目（Campaign）</strong></p>
+<p>苹果竞价广告的账户结构分为五个级别：账户（Account）、广告项目组（Campaign Group）、广告项目（Campaign）、关键词组（Ad Group）与关键词（Keyword）。<strong>①</strong> </p>
+<p>其中最核心的两个级别是 Campaign 与 Keyword，分别对应的是竞价广告中的某个 App 和某个投放词。但竞价广告后台一直被人诟病的是 Campaign 无法删除，很多开发者都有不止一款 App 在投放竞价广告（每款 App 都需要创建独立的 Campaign），而且还有些还是停用的测试 Campaign 。这导致<strong>列表中的 Campaign 越堆越多，而且正在使用的与已停用的 Campaign 混在一起，就很影响投放工作的效率和体验</strong>（这里还要吐槽一下 Campaign 列表的迷之排序，还无法调整）。</p>
+<p>所以对 Campaign 列表的调整越来越成为投放人员最需要的功能之一，尤其在竞价广告开启更多地区之后，同一 App 在不同地区的广告投放都需要创建一个单独 Campaign，苹果便更新了竞价广告后台，<strong>支持删除广告项目的操作</strong>（Remove Campaign）。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/faa7a13aef0649c8a30a17a4b98af652.gif" max-width="600">删除广告项目<img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/e13a75957322413ea0ce5e614b89574c.gif" max-width="600">查看已删除列表</img></img></p>
+<p>操作很简单，勾选某个 Campaign ，然后在 Action 按钮下拉选项中即可进行选择删除（Remove），投放人员也可以在删除列表中查看已删除的 Campaign。并且要注意的是，<strong>Campaign 一旦删除，所有正在跑的广告都会停止，而且无法从删除状态回复</strong>。</p>
+<p><strong>二、查看操作历史（Change History）</strong></p>
+<p>竞价广告后台最近的另一项更新是可以<strong>查看广告账户中的近期操作历史</strong>，投放人员点击那个操作历史的小钟表的按钮就可以了。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/a913a354e87d4771bde63eb6ab979ea5.gif" max-width="600">查看操作历史</img></p>
+<p>操作历史中的内容包括操作时间、操作者、行为与各项操作所对应广告项目和关键词组的名称，且不同的级别的使用者能看到的记录也不一样。</p>
+<p>▼向来无视开发者体验的苹果，竟然对竞价广告后台进行了频繁的优化<strong>②</strong>，而竞价广告团队也一改此前 iAd 项目的迟钝与傲慢。</p>
+<p>这样看来苹果对竞价广告的重视程度可见一斑，迫切地希望 App Store 能为其带来多元化的营收——而中国作为 App Store 营收能力最高的地区，竞价广告的到来也该不远了。</p>
+<p>更多ASM内容可联系七麦数据，七麦数据（原ASO100）- 专业移动推广数据分析平台 - ASO优化|ASM竞价广告|iOS|App Store|苹果应用商店|安卓市场|榜单</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/69c6f6e914bd4990a86d43139174aa14.jpeg" max-width="600" /></p>
+➜想要降低苹果竞价广告CPA？会用关键词黑名单就够了！
+http://www.sohu.com/a/250755141_100065715	31716
+<p>这一篇就和大家讲一下关键词匹配模式之间的差异。</p>
+<p>关键词匹配模式分为三种：<strong>搜索匹配（Search Match）、精准匹配（Exact Match）和广泛匹配 （Broad Match）</strong>。搜索匹配与精确/广泛匹配是 Search Ads 根据不同的内容匹配并关键词广告，作为投放人员的关键词补充——<strong>搜索匹配基于 App 的元数据自动匹配出与 App 相关的关键词，精确/广泛匹配则是根据投放人员在 Search Ads 后台设置投放的关键词匹配出与这些词相关的关键词</strong>。我们这篇文章主要讲解后两者：精准匹配（Exact Match）、广泛匹配（Broad Match）。</p>
+<p>首先简单说一下两者的区别，也就如同字面的意思，<strong>精确匹配对关键词的匹配度要求高一些，搜索准确度精准一些</strong>。而<strong>广泛匹配则对关键词的覆盖率更广</strong>。</p>
+<p>为了方便大家的理解，我们分三个板块去解释一下关键词匹配模式：<strong>关键词的精确匹配</strong>、<strong>关键词的广泛匹配</strong>、<strong>否定关键词的匹配</strong>。</p>
+<p><strong>一、关键词的精确匹配</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/67c206403d654912b8904f720f5a6865.jpg" max-width="600" /></p>
+<p>精确匹配会显示关键词被中括号括起来 </p>
+<p>投放关键词后，如果选择“精准匹配”，<strong>苹果能自动帮你匹配到关键词的近似词，但是语序必须要一致。</strong> </p>
+<p>举个例子，如果我要投放“photo edit free”这个词，选择精确匹配的话，首先输入这个词是肯定能覆盖到的；再者，如果输入“photo editor free”或者“photo edt free”，也还是能覆盖到，因为包含了近似词；但是如果输入“edit photo free”就不会覆盖了，因为语序错了。</p>
+<p><strong>二、关键词的广泛匹配</strong></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/0a6e346a263247c6aca2b9e1ae5a27ab.jpg" max-width="600" /></p>
+<p>广泛匹配的门槛就没有精确匹配的那么高了，在<strong>投放关键词的时候可以覆盖到相关词或者近似变体词，如单数、复数、拼写错误、同义词、相关搜索和包含该字词的词组（完全或部分）等</strong>。</p>
+<p>还是拿上面用到的“photo edit free”这个词举例，输入该词能搜到，<strong>打乱顺序，有拼写错误，缺少单词</strong>，如“edit photo free”、“photo edt free”、“picture edit”等都是能覆盖到的。</p>
+<p><strong>三、否定关键词的关键词精确匹配广泛匹配</strong></p>
+<p>否定关键词也分为精确匹配和广泛匹配，<strong>精确匹配能准确的屏蔽掉某一个关键词，广泛匹配能屏蔽掉包含该关键词的所有词</strong>。</p>
+<p>苹果官方给出的解释是这样的：</p>
+<p><strong>Exact match (negative keywords)</strong>This match type ensures that your ad doesn’t show for an exact word or phrase. It doesn’t block your ad from close variants like common misspellings and plurals. We recommend using exact match to avoid inadvertently excluding your ad from showing for relevant searches.</p>
+<p>作为搜索广告中否定关键词的默认设置，此匹配类型可确保您的广告不会展示给某个确切的字词或词组。它不会阻止您的广告展示给相似变体，如常见的拼写错误和复数形式。我们建议您使用精确匹配，以避免将广告不经意地排除掉了相关搜索。</p>
+<p><strong>Broad match (negative keywords)</strong>To ensure that your ad doesn’t appear for words or phrases you select, use broad match. All of the words in your broad match negative keywords need to be present in order for your ad to be blocked. If a synonym or close variant is used, your ad still appears.</p>
+<p>要确保您的广告不会针对您选择的字词或词组展示，请使用广泛匹配。广泛匹配否定关键词中的所有关键词都必须同时存在，才可以阻止您的广告。如果使用同义词或近似变体，您的广告仍会显示。</p>
+<p>给大家捋一下里面的逻辑：就是<strong>否定关键词的精确匹配只能排出跟你上的关键词一模一样的词</strong>，用上面的案例来说，就只能屏蔽“photo edit free”这个词。</p>
+<p><strong>否定关键词的广泛匹配能屏蔽包含全部词的，且全部词没有拼写错误，允许中间插入其他词，以及语序不一致。</strong>用同样的案例来解释，“photo edit free”是肯定能屏蔽的，像“edit photo free”、“photo edit college free”都是可以屏蔽的；但如果换做“ edit free”、“photo edt free”就不能屏蔽了。</p>
+<p>今天的案例可能看文字版有点吃力，我们用一张表的形式展示出来，包含了更多情况。希望能帮助大家理解。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/e31a81ca41aa493fa919b8eefcfd9108.jpg" max-width="600" /></p>
+<p>以投放关键词 photo edit free 为例总的来说，<strong>如果你需要精准的广告展示，保证一个较高的点击转化率，建议选择精确匹配</strong>，<strong>如果你追求的是一个更高的广告曝光，想要尽可能的获得广告展示，可以选择广泛匹配，但是这种模式的转化率会相对来说低一点</strong>。另外，广泛匹配还可以帮助选词。不过这些现在只是英文的匹配逻辑，<strong>中文区暂时还没有上线</strong>。</p>
+<p>更多ASM内容可联系七麦数据，七麦数据（原ASO100）- 专业移动推广数据分析平台 - ASO优化|ASM竞价广告|iOS|App Store|苹果应用商店|安卓市场|榜单</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/a37cc9909cbd4c8593b07ae3a4c486fd.jpeg" max-width="600" /></p>
+➜苹果 ASM 全球市场再下三城，新增多种语言！
+http://www.sohu.com/a/250754418_100065715	31721
+<p>17年10月13号，苹果开发者官网更新了一则关于竞价广告（ Search Ads）的消息，<strong>竞价广告新开放了三个国家的市场：加拿大、墨西哥与瑞士</strong>。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/8008143d9d30407d8666958c93ccae13.jpg" max-width="600">苹果开发者官网新闻</img></p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/d5e5e3ddde1b4af6857a37367a24a2b4.jpg" max-width="600">竞价广告官网通知</img></p>
+<p>从官网新闻可以看到，开发者现在就可以创建三个地区的广告了，广告会在 10 月 17 日正式启动，同时<strong>竞价广告后台也已经可以支持这些地区的广告设置</strong>了。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/71a7e97d4f5841e0b86e99a53cebf3d3.jpg" max-width="600" /></p>
+<p>而且，苹果竞价广告官网也支持了更多的语言，下图是瑞士的法语版本网站。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/64ab0dc8b1ea4dd6a3c83a771e9333c8.jpg" max-width="600" /></p>
+<p>苹果搜索广告自 2016 年 9 月底正式上线，至今已向 7 个国家的 App Store 开放竞价广告：</p>
+<ul>
+<li>2016 年 4 月，彭博社透露出苹果要在 App Store 推出关键词竞价广告；</li>
+<li>2016 年 6 月 16 日，苹果 WWDC 2016 广告专场宣布即将在 App Store 开展竞价广告业务；</li>
+<li>2016 年暑期，App Store 竞价广告在美国区测试；</li>
+<li>2016 年 9 月 29 日，ASM 正式开放美国区；</li>
+<li>2017 年 4 月 25 日，ASM 在英国、澳大利亚、新西兰正式上线；</li>
+<li>2017 年 10 月 10 日，ASM 在加拿大、墨西哥、瑞士正式上线。</li>
+</ul>
+<p>注：ASM 即 应用商店营销（App Store Marketing），行业默认指苹果 App Store 的竞价广告业务。苹果 ASM 这次扩展的三个国家的业务，其意义还要比 2017 年 4 月那次扩展更大。今年 4 月新增的 3 个国家（英国、澳大利亚、新西兰）都是英语国家，但这次更新的<strong> 3 个国家（墨西哥、加拿大、瑞士）则包含了更丰富的语言</strong>：</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/6cd6eb4dbc654a2e9aef79de361e701d.jpg" max-width="600" /></p>
+<p>并且我们发现，在测试投放一款墨西哥产品在墨西哥 App Store 的竞价广告时，后台已经有<strong>推荐一些西班牙语的关键词</strong>。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/df37b3a0a1ae4c4885c5693da441f437.jpg" max-width="600" /></p>
+<p><strong>支持新的语言是苹果 ASM 全球扩展的重要的一步</strong>，也预示着 ASM 开放中国区也不远了。此前苹果在中国北京、上海的两场线下沙龙提到过，竞价广告迟迟在中国区 App Store 开放，主要原因是<strong>中文语言的技术难题较难解决</strong>。</p>
+<p>一位合作伙伴曾想我们透露，他们曾专程去美国访问苹果，向苹果询问了中国区 ASM 的计划，得到的答复是<strong>竞价广告会在 2017 年末开放中国区</strong>。此前我们也与竞价广告团队的工作人员进行过访谈，竞价广告已经开始在为中国区的运营做准备了（参考文章：ASM入华、控制CPA成本…苹果官方私下向我们透露了这些内幕）。</p>
+<p>七麦数据在这里还是建议各位开发者，在 ASM 进入中国之前，<strong>最好先尝试创建账户、关键词投放等操作，并且熟悉其竞价规则</strong>，这样就尽快<strong>争取到 ASM 入华初期的第一波红利流量</strong>！</p>
+<p>更多ASM内容可联系七麦数据，七麦数据（原ASO100）- 专业移动推广数据分析平台 - ASO优化|ASM竞价广告|iOS|App Store|苹果应用商店|安卓市场|榜单</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20180829/95972b9f16ad4be5ae859a8e6fc1b830.jpeg" max-width="600" /></p>
+➜搞定苹果竞价广告｜优秀的ASMer不仅会投放，还得会看数据报表
+http://www.sohu.com/a/250979342_100065715	36792
+<p class="ql-align-justify"><strong>Campaign/Ad Group/Keywords 数据表格</strong>——在这一部分的几个数据表格里，我们可以看到每个项目/广告组/关键词的投放状态及数据。</p>
+<p class="ql-align-justify"><strong>Search Term 数据表格</strong>——这一块我们能看到每个搜索量的来源（用户具体是搜索哪个关键词，展示了该广告）。</p>
+<p class="ql-align-justify"><strong>Reports 数据分析</strong>——在这里，我们能依据日期、关键词（组）、设备、年龄、性别、地区对投放的广告进行交叉分析，更好的优化我们的广告。</p>
+<p class="ql-align-justify"><strong>一、Campaign/Ad Group/Keywords 数据表格</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/5f3c0542f3474cb7b5b93993670acdb4.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">把这三个地方的数据表格放在一起是因为这三个处的菜单栏差异不是很大，所以就统一列出来解释。这三处出现的菜单栏如下：</p>
+<p class="ql-align-justify"><strong>Status</strong></p>
+<p class="ql-align-justify">指某一广告项目、关键词组与关键词的投放状态，分为 3 种状态 - 正常（Running）、暂停（Paused）与异常停止（On Hold）。</p>
+<p class="ql-align-justify"><strong>Search match</strong></p>
+<p class="ql-align-justify">搜索匹配。打开搜索匹配之后，竞价广告系统会根据产品自动匹配一些相关的关键词。</p>
+<p class="ql-align-justify"><strong>Default CPT Bid</strong></p>
+<p class="ql-align-justify">默认 CPT 竞价，该广告项目下的所有关键词，都按照此出价投放，投放人员之后也可以对单独某个词进行调整。</p>
+<p class="ql-align-justify"><strong>Spend/Avg CPA/Avg CPT/Impressions/Taps/Conversion/TTR/CR</strong></p>
+<p class="ql-align-justify">指某一广告项目、关键词组与关键词，在一段时间内的预算消耗/平均获客成本/平均点击价格/展示次数/点击数/从展示到点击的转化率/从点击到下载的转化率。</p>
+<p class="ql-align-justify">另外，<strong>TTR</strong>会受到标题、icon、描述、截图、视频、App 与词的相关性影响。<strong>CR</strong>主要受上述素材与评论的影响。</p>
+<p class="ql-align-justify"><strong>CPT Bid</strong></p>
+<p class="ql-align-justify">点击竞价。竞价广告是按照点击收费的，CPT 即 Cost Per Tap，Bid 则是对每一次的广告点击出价，与其他广告竞争展示机会。竞价体系中，影响广告展示与价格的两个主要因素是出价与相关性（App 与竞价关键词的相关性）。</p>
+<p class="ql-align-justify"><strong>二、Search Term 数据表格</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/cd14e2b7ce6141ef92b4e31b78399f77.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">相较于上部分数据表格，这部分的菜单栏稍有变化：</p>
+<p class="ql-align-justify"><strong>Search Term</strong></p>
+<p class="ql-align-justify">搜索项目，是指广告搜索量的详细来源，会统计到下载量来自哪个关键词——这里的关键词不是指投放设置的关键词，而是指用户看到并点击广告之前，搜索的关键词——因为有自动匹配（Search Match）与（Broad Match），所以投放人员设置的关键词与用户搜索的关键词并不完全一样。</p>
+<p class="ql-align-justify"><strong>Match Source</strong></p>
+<p class="ql-align-justify">广告搜索量来源的分类，主要有两类：</p>
+<p class="ql-align-justify"><strong>Keyword</strong> - 用户搜索的是投放人员设置的关键词，以及竞价系统根据这些设置的词模糊匹配（Broad Match）出的关键词；</p>
+<p class="ql-align-justify"><strong>Search Match</strong> - 投放人员打开自动匹配（Search Match）后，用户搜的是竞价系统根据产品本身自动匹配出的关键词。</p>
+<p class="ql-align-justify"><strong>Keywords</strong></p>
+<p class="ql-align-justify">这里的 Keyword 指得是该搜索项目是通过哪个关键词匹配到的。</p>
+<p class="ql-align-justify">举个例子：</p>
+<p class="ql-align-justify">在我们实际投放的一则广告中，Search Term 里有一项是“flo”，其展示量为 362。这指的是在一段时间内，有 362 个用户搜索“flo”后，App Store 给他们展示了我们的广告。</p>
+<p class="ql-align-justify">这一项的后两列显示的分别是 Keyword 与 clue，是什么意思呢？</p>
+<p class="ql-align-justify">我们并没有在关键词投放中设置“flo”这个词，是因为我们设置了“clue”这一词，并且开启了模糊匹配（Broad Match），竞价系统根据两个词的相关性，为我们匹配到了“flo”。</p>
+<p class="ql-align-justify">再举个栗子：</p>
+<p class="ql-align-justify">在 Search Term 里有另一项是“low volume term”，其展示量是 11，这同样是指有 11 个用户在一段时间内看到了我们的广告。</p>
+<p class="ql-align-justify">但第二列 Search Source 对应的是 Search Match，这是我们在 Ad Group 中打开了 Search Match 后，竞价系统根据我们的元数据自动匹配的广告。</p>
+<p class="ql-align-justify"><strong>三、Reports 数据分析</strong></p>
+<p class="ql-align-justify">上面提到的都是 ASM 后台的数据表格，除此之外，ASM 后台还能对广告投放的数据做一些分析，帮助你更好的对投放做调整。虽然苹果后台一直被诟病难用，但是这一点还是要给好评的！</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/01f1a1b757ec4d9db79fa8d17b53208e.jpeg" max-width="600">Campaign-Reports</img></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/98969a2e5830435798398d3484e60af6.jpeg" max-width="600">Ad Group-Reports</img></p>
+<p class="ql-align-justify">进入到 Campaign/Ad Group 这两个级别后都可以看到 Reports，点击进入即可。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/0f690ba0888c4dc4bf592388460578dc.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"> 在 Reports 里可以依据日期、关键词（组）、设备、年龄、性别、地区来分析投放状况。</p>
+<p class="ql-align-justify"><strong>1、日期</strong></p>
+<p class="ql-align-justify">我们拿日期界面来说明一下有哪些数据可供我们查看分析：</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/5846cbd6603b44efba5bba201d22224b.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"> 图中的 <strong>① 处</strong>能选择要查看的数据，比如 CPA、CPT 等。</p>
+<p class="ql-align-justify"><strong>② 处</strong>能选择对比的数据，但这个是只有日期栏才有的。</p>
+<p class="ql-align-justify"><strong>③ 处</strong>能选择看每天的走势图还是每小时的走势图。</p>
+<p class="ql-align-justify"><strong>④ 处</strong>可以选择时间段，也能自定义时间段。</p>
+<p class="ql-align-justify"><strong>⑤</strong> 在图中被时间的下拉菜单遮住了，实际应该是 <strong>⑥ </strong>的样子，你可以选择看折线图、柱状图、面积图。</p>
+<p class="ql-align-justify">在这一块里我们可以看到哪个时间段的投放获得的效果最好，有助于我们设置投放时间。</p>
+<p class="ql-align-justify"><strong>2、关键词（组）</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/eeafa15c32ca4dc5979b60a9aa164497.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">如果是在Campaign 里进入到的 Reports ，<strong>那看到的会是一个关键词组的数据图</strong>，如果是在 ad group 里查看的 reports，<strong>对应的会是每个关键词的数据图</strong>。</p>
+<p class="ql-align-justify">通过这个图你能知道在这个时间段里，这个关键词（组）各项数据如何，CPA 是否过高，转化率怎么样，可以依据这些对后期的广告投放做相应调整。</p>
+<p class="ql-align-justify"><strong>3、设备</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/bbb581adff4747d8a36666e12306f169.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">设备这里有 iPad 和 iPhone 数值，如果都进行了投放，会在这里显示两者的投放数据。</p>
+<p class="ql-align-justify"><strong>4、年龄</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/97647c5b62e240c49b8ec2eb82c3f323.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">这里可以看到投放的各个年龄段的数据，由此可以看出这款 App 对哪个年龄群体更具有吸引力，当然，也可以根据数据更细化投放的人群的年龄。</p>
+<p class="ql-align-justify"><strong>5、性别</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/2558ff25a9324d9db0d5afe19bab0d7a.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">由于这款 App 只投放了女性，所以折线图上只有一个数据。这个图上可以看到这款 App 对女性/男性更有吸引力，以及男性用户行为和女性用户行为之间是否存有差异。</p>
+<p class="ql-align-justify"><strong>6、地区</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/25f283acdcac42f28c0c3cfa82a125d0.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">这里可以看到投放的所有地区的数据走势，进而优化我们的投放计划。</p>
+<p class="ql-align-justify">以上我们分别说了每个部分能看到的数据，以及透过数据背后我们能读出什么。当然，如果你需要更加具体的信息，根据你的需求，把几个数据结合起来看，比如【地区+性别】，会得到更细致的数据。</p>
+<p class="ql-align-justify">更多ASM内容可联系七麦数据，七麦数据（原ASO100）- 专业移动推广数据分析平台 。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/6412081c35a1495d9669a69cb475f246.jpeg" max-width="600" /></p>
+➜ASM 效果优异，苹果竞价广告位列全球广告平台测评第一！
+http://www.sohu.com/a/250979282_100065715	36857
+<p class="ql-align-justify">2017 年 11 月 15 日移动广告效果监测平台 AppsFlyer 发布的最新 2017 全球移动广告网络排行报告——<strong>苹果竞价广告在 iOS ROI 表现排名中位居第一</strong>。</p>
+<p class="ql-align-justify">ROI：投资回报率，即 App 在某一个广告渠道的投放中，成本和回报的比率。投资回报率（ROI）=年利润或年均利润/投资总额×100%。ROI通常可以反映出一个渠道的好坏。</p>
+<p class="ql-align-justify">该报告统计时间为 2017 年 1 月到 6 月，覆盖 250 家移动广告服务商，总计 5500 个 App，共 60 亿次安装，800 亿次用户会话；在 ROI 榜单部分，共计 800 家 App，4000 万安装量，收入规模 1.5 亿美元。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/0c1e93fbcc4b4283a89ab424136681c7.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">其中，<strong>苹果竞价广告将用户与搜索意图结合在一起的方式表现出了强大的实力</strong>，而它的排名也证明了这一点。</p>
+<p class="ql-align-justify"><strong>苹果竞价广告出师大捷</strong></p>
+<p class="ql-align-justify">报告数据显示 Search Ads 在非游戏类和游戏类的全球榜单中分别获得了第三和第四的好成绩。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/5de069d477b0435f9c5d8bd16a38d069.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/4af3e6cddd274d24ab69f33be6f0941b.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">不仅如此，苹果竞价广告的综合实力也很强<strong>，在 iOS 系统 ROI 榜单中排名第一，用了不到一年的时间里就成为了移动广告的重量级平台之一。</strong></p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/c4ad0a9095884584b132c7e4b7d4a8bd.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">那这个排名意味着什么呢，举个例子：可能 ASM 两天的带来的回报能超过了其他渠道三天带来的量。流量非常可观。再者 ASM 与排名中的其他广告相比，<strong>ARPU 同比高出 30%，但价格却低 40%</strong>。这个性价比也是相当高了。</p>
+<p class="ql-align-justify"><strong>苹果竞价广告优势何在</strong></p>
+<p class="ql-align-justify">一方面，苹果竞价广告才开放一年，目前还处于<strong>流量红利期</strong>。</p>
+<p class="ql-align-justify">另一方面，苹果是一个<strong>闭环的生态系统</strong>，用户付费必须通过苹果来进行，所以苹果能有非常明确的数据区分出付费用户和非付费用户，也能分析出每个付费用户的付费能力及付费场景。</p>
+<p class="ql-align-justify">这些数据会被苹果整合进入苹果竞价广告的投放能力，对提升广告的 ROI 有非常大的帮助。这是苹果竞价广告现阶段的两大优势。</p>
+<p class="ql-align-justify"><strong>苹果竞价广告未来趋势</strong></p>
+<p class="ql-align-justify"><strong>1、竞价广告的流量容量会持续的扩大</strong></p>
+<p class="ql-align-justify">前段时间，苹果官方公布了 iOS 11 的更新率：</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/f67a6e1a3b414897999b86b4ee71a5ae.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">截止 11 月 6 日，iOS 11 的覆盖率达到了 52%，加上现阶段 iOS 10 的用户，<strong>90%的用户已经支持从 App Store 中搜索到竞价广告</strong>。后期随着 iOS 11 的普及率的提升，<strong>“搜索”最终将会替代“榜单”成为用户在 App Store 获取应用的最主要方式，</strong>那时竞价广告的流量容量会进一步的扩大。</p>
+<p class="ql-align-justify"><strong>2、中国可能会是 ASM 最大市场</strong></p>
+<p class="ql-align-justify">在去年，中国就已经超过了美国成为应用商店收入最高的国家，中国的苹果手机持有量占比全球的 22%，排名第一。未来 ASM 在中国的市场是非常可观的，完全有可能成为 ASM 最大的国家。</p>
+<p class="ql-align-justify"><strong>3、Search Ads 中国区上线在即</strong></p>
+<p class="ql-align-justify">目前，Search Ads 仅对美国、英国、澳大利亚、新西兰、加拿大、墨西哥、瑞士 7 个地区开放了。中国区的开发者一直处于观望和期待的状态，苹果一再推迟竞价广告在中国区的上线时间，<strong>官方表示 Search Ads 中国的本土化工作已经开始了</strong>。</p>
+<p class="ql-align-justify">通过 AppsFlyer 今年发布的报告来看，Search Ads 带来的广告收益是十分可观的，开发者在 Search Ads 入华之前不能只是观望和等待，需要了解更多干货知识才能不错过第一波儿红利，抓住最好的时机。</p>
+<p class="ql-align-justify">更多ASM内容可联系七麦数据，七麦数据（原ASO100）- 专业移动推广数据分析平台 。</p>
+<p class="ql-align-center"><img src="http://5b0988e595225.cdn.sohucs.com/images/20180830/b9ba163c120c4b59abd345f63f20d358.jpeg" max-width="600" /></p>

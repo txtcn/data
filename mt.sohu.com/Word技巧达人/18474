@@ -1,0 +1,92 @@
+➜别说你会SUM函数，不服来辩
+http://www.sohu.com/a/410830596_825825	48575
+<p><span>曾经星光老师用一个sum公式 <span>教训了无数狂妄自诩为高手的家伙</span>： </span></p>
+<p><span>=SUM(1,{"2","S","B"},"1",TRUE,"2",{"货"})</span><span></span></p>
+<p><span>这个公式的本质是函数不同参数类型(常量/数组/引用)下对数字/逻辑值的统计差异，在理解这个公式后的深度挖掘,现在才有了用sum画画的新应用。 </span></p>
+<p><span>当然,这篇不介绍这种旁门左道,而是介绍下sum的基础性质，星光老师当年的公式,只用了常量和数组，那么只用引用的话问题又来了，假设所有单元格的值都是1且公式所在单元格避开循环引用的话， <span>这个公式的结果又是多少? </span></span></p>
+<p><span>=sum(a1:e5:d9b2:f4,((((a3),b2:b4)))) </span><span></span></p>
+<p><span>这又是一个可以让新手崩溃的公式,这个公式涉及到了sum的3种运算符和区域联合性质。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200731/66a7b5d521ab4d9bb25cec6fc4de149c.png" /></p>
+<p><span>如图所示,对sum的2个区域使用不同的运算符，结果有很大差异。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200731/081948d17a44409fa93b59617a9aa398.png" /></p>
+<p><span>对新手来说这是sum的第1个盲区，由于sum的求和能力,我们也可以用sum来进行获取一些规则序列,</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200731/b0a25f25b0b442a1a6e285f587c5f4c0.png" /></p>
+<p><span>上面这个只是基本应用下的不常规衍生用途,没有偏离对sum的认识,然而sum一旦进入数组阶段,那么对新手来说，完全就是另一个函数了。</span></p>
+<p><span>以下为几种sum的数组求和应用：</span></p>
+<p><span>1) 斜线求和</span></p>
+<p><span>2) 条件多列求和</span></p>
+<p><span>3) 剩余库存</span></p>
+<p><span>4) 条件排名</span></p>
+<p><span>5) 区间取值</span></p>
+<p><span>6) 合并单元格结构对应求和</span></p>
+<p><span>7) 筛选下的条件求和</span></p>
+<p><span>8) 阶梯计算/工时计算</span></p>
+<p><strong><span>1,斜线求和</span></strong></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200731/f30dd89ae67f44c6a93a4b100b17fd00.png" /></p>
+<p><span>掌握引用或数学思维,sum的求和方向不限于横纵方向的</span></p>
+<p><strong><span>2,多列条件求和</span></strong><span></span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200731/0b77468d37304a099795ee5455b847d3.png" /></p>
+<p><span>混过e圈的应该知道这题有个段子，菜鸟公式为多个sumif列相加和sum无关故不列举：</span></p>
+<p><strong><span>高手公式：</span></strong><span></span></p>
+<p><span>该公式可简化为：</span></p>
+<p><strong><span>高高手公式 </span></strong><span></span></p>
+<p><strong><span>高高高手公式</span></strong><span></span></p>
+<p><span>可是这题我一直奇怪难道不是一个sum就完事了么…… </span></p>
+<p><span>纯一维数组解法 </span></p>
+<p><span>只适合学习时使用,列多了和sumif相加一样属于低效解法。</span></p>
+<p><span>常规二维数组解法</span></p>
+<p><span>当然这题如果你sum熟悉了还有很多别的解法…… </span></p>
+<p><strong><span>3,剩余库存(入库-出库的总数)</span></strong><span></span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200731/02115c683f1f4e8fa22e1d8b059f5bdd.png" /></p>
+<p><span>=SUM(B83:I83*-1^COLUMN(B:I)) </span></p>
+<p><span>=SUM(COS(PI*COLUMN(B:I))*B83:I83)</span></p>
+<p><span>解法数就这么凑出来的,反正你打不到我 </span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200731/6815438acb654c49b0fb78cdfe14e0b5.png" /></p>
+<p><strong><span>4,条件排名</span><span></span></strong></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200731/6527998a0dcb4475bea64de591e96e15.png" /></p>
+<p><span>美式排名</span></p>
+<p><span>不重复排名</span></p>
+<p><span>中式排名</span></p>
+<p><span>(</span><span><span>注意这里是作为案例所以使用sum数组,常规情况下条件排名里美式与不重复排名直接用countifs的效率高些,且本案例的不重复排名公式为极端写法只使用了1个sum，这里sum的2个参数的数组大小是不一样的</span></span><span>)</span></p>
+<p><strong><span>5，区间取值</span><span></span></strong></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200731/036f868c58c14e34a6d8166d64eead02.png" /></p>
+<p><span>=INDEX({"优","良","中","及格","不及格"},SUM(N(E129&lt;{60,90,70,80}))+1)</span><span></span></p>
+<p><span>sum+常量数组的结构类似match,但match内需要排序，sum的常量数组没有这个限制</span></p>
+<p><span>而且使用sum的另一个好处是比lookup等更适合左开右闭区间</span></p>
+<p><span>(左开右闭时lookup等需要修正临界点的小数精度)</span></p>
+<p><strong><span>6,合并单元格结构下条件求和</span></strong><span></span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200731/ab95f923c41a43e681c554f2a206841e.png" /></p>
+<p><span>这题只是介绍几种合并单元格结构处理方式，如果不用合并单元格这题明明一个sumif完事。</span></p>
+<p><strong><span>7，筛选下的条件求和</span></strong><span></span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200731/44ec425680a743a3ac025ef456d74314.png" /></p>
+<p><span>筛选下的条件判断基本只能靠subtotal的多维来构造条件判断的内存数组。</span><span></span></p>
+<p><strong><span>8,阶梯求和</span></strong><span></span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200731/af18675c2cf84784b348681a679f7280.png" /></p>
+<p><span>这个案例是写sum必备的,</span><span>这个思路当你足够了解后，是可以用来解决相对复杂的时间问题的。</span></p>
+<p><strong><span>8-2)工时计算</span></strong><span></span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200731/a2366219258c46b8b5d722322c4ec01e.png" /></p>
+<p><span>这是考勤类的常见问题，对新手来说这题难度较高,且部分解法使用了如median等特殊函数且运用了大量数学思路,新手很难驾驭而且通常仅适合固定N段工时,无法快速应用于其他规则，</span><span>所以在时间的计算原理(小数)配合阶梯算法的思路下找出来一个可以借鉴的套路类解法：</span></p>
+<p><span>=SUM(TEXT(MOD(A2:B2,1)-TIME({0;8;12;13;18;18;20},{0;30;0;30;0;30;30},0),"[&lt;0]!0")*{0;1;-1;1;-1;1;-1}*{-1,1},INT(A2:B2)*{-1,1}*10/24)*24 </span><span></span></p>
+<p><span>或</span></p>
+<p><span>第2个公式针对不会用time+数字直接构造需要的常量数组的,时间与累加序列直接放单元格里引用。</span></p>
+<p><span>公式2引用区域如下：</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200731/1e545c79b61642e4bd1667279388d196.png" /></p>
+<p><span></span><span>这思路看起来复杂其实不难 ，</span><span>首先要理解sum+text的阶梯计算原理 ，</span><span>然后,mod提取起止的时间部分 ， </span><span>利用time函数构造的时间的内存数组来配合text进行相应阶梯计算。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200731/338348f6437e4bd2b9cbe1234956fe2a.png" /></p>
+<p><span>time构造的时间的数组(注意为垂直方向与提取时间构造成二维数组)</span></p>
+<p><span>利用相应时间的阶梯计算来获取起止日期的时间部分的工时时间，{-1,1}常规方式在数组内相减来获取工时差(1天以内的)</span></p>
+<p><span>而sum第2个参数部分比较好理解，</span><span>int取日期部分，{-1,1} 方式相减获取天数差,而每天的整个工时为10小时所以*10/24：</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200731/2e55ea70cdd34cf383c16d735f3ca1dc.png" /></p>
+<p><span>最后sum聚合2个部分的内存数组求和 。</span></p>
+<p><span>注意结果为小数(时间），要转为小时单位故最后*24 </span></p>
+<p><span>由于这个思路涉及时间，小数的精度要求很高，</span><span>所以text使用 "[&lt;0]!0" 简洁的写法来使正数时支持产生大量小数位数且负数时结果为0。</span></p>
+<p><span></span><span>注意每个数组使用的逗号与分号的差异,目的是构造需要的二维数组，</span><span>不熟悉常量数组的可以把时间如解法2直接列在单元格内。 </span></p>
+<p><span>而整个sum公式是按照时间计算的因此结果为时间单位,结果单位为小时所以*24。</span><span></span></p>
+<p><span>看懂该思路后这类计算工时问题只是个数学题而且只要对time部分(与int部分的每日全部工时)进行参数修改，</span><span>无论每天是几段上班时间均能快速统计。</span></p>
+<p><span>这就是阶梯思路配合时间的数学处理思路下的配合。</span></p>
+<p><span>整个sum公式有2个参数，是大小不一致的内存数组(第1个是二维的，第2个是一维的），</span><span>但是在sum里作为不同参数，所以可以被统一求和 ，</span><span>这也是这公式最后能变成只用1个sum的原因所在(注意该公式不能直接用sumproduct替代,如果用sumproduct避免使用三键,需要用2个sumproduct把时间与日期分开统计。 </span></p>
+<p><span>以上为sum在数组阶段一些常见不常见的求和应用，这个函数在熟悉数组的条件构造后能配合实现太多的求和问题。</span></p>
+<p><span>当然,重剑无锋，大巧不工，你就算坚持看完，这里有几个简单的sum公式你也还是不一定看得懂：</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200731/168213b3d4584f6d96e873f2a93855fe.png" /></p>
+<p style="text-align: center;">欢迎朋友们分享办公技巧</p>
+<p style="text-align: center;">投稿、提问邮箱： <span>wordjqdr@126.com</span></p>

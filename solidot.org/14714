@@ -1,0 +1,187 @@
+➜jQuery 表格工具集
+https://www.solidot.org/story?sid=17320	3600
+<a href="http://www.comsharp.com/">锐商企业CMS</a> 写道 "本文搜集了大量 jQuery 表格插件，帮助 Web 设计者更好地驾御 HTML 表格，你可以对表格进行横向和竖向排序，设置固定表头，对表格进行搜索，对大表格进行分页，对表格进行滚动，拖放操作等等。这些插件很多都包含详细的教程（<a href="http://www.comsharp.com/GetKnowledge/zh-CN/CMS_K945.aspx">完整图文版</a>。           jQuery 表格插件
+<br> <br> <a href="http://flexigrid.info/">Flexigrid – Web 2.0 Javscript Grid for  jQuery</a> - 可变列宽，自动适应表头宽度，可通过 Ajax 连接 XML 数据源，类似 Ext Grid，但基于 jQuery 因此更轻量小巧。
+<a href="http://flexigrid.info/"> </a>
+<br> <br> <a href="http://www.chromaloop.com/posts/chromatable-jquery-plugin">Chromatable  JQuery Plugin</a> - 固定表头，可滚动内容区，内容区滚动的时候表头位置保持不变。
+<a href="http://www.chromaloop.com/posts/chromatable-jquery-plugin"> </a>
+<br> <br> <a href="http://www.reconstrukt.com/ingrid/">Ingrid,  the jQuery Datagrid</a> - 在 HTML 表格上加入列宽调整，分页，排序，行列式样等功能（<a href="http://www.reconstrukt.com/ingrid/src/example1.html">演示</a>）。
+<a href="http://www.reconstrukt.com/ingrid/"> </a>
+<br> <br> <a href="http://www.hanpau.com/index.php?page=jqtreetable">JQTreeTable</a> - 在表格中加入树形结构
+<a href="http://www.hanpau.com/index.php?page=jqtreetable"> </a>
+<br> <br> <a href="http://www.webtoolkit.info/scrollable-html-table.html">Scrollable  HTML table</a> - 将普通 HTML 表格变为可滚动状态。将表头部分放入 THEAD 区，内容部分放入 TBODY 区，脚注部分放入 TFOOT 区域，引用 webtoolkit.scrollabletable.js 文件，然后在每个表格后面创建 ScrollableTable() 对象即可（<a href="http://www.webtoolkit.info/demo/scrollable-html-table">演示</a>）。
+<a href="http://www.webtoolkit.info/scrollable-html-table.html"> </a>
+<br> <br> <a href="http://www.sprymedia.co.uk/article/KeyTable">KeyTable</a> - 象 Excel 那样，在单元格之间巡游，可以现场编辑。
+<a href="http://www.sprymedia.co.uk/article/KeyTable"> </a>
+<br> <br> <a href="http://blog.rebeccamurphey.com/2007/12/17/graph-table-data-jquery-flot/">graphTable</a> - 借助 <a href="http://code.google.com/p/flot/">flot</a> 将 HTML 表格中的内容变成图形（<a href="http://www.rebeccamurphey.com/jquery/graphTable/table.html">演示</a>）。
+<a href="http://blog.rebeccamurphey.com/2007/12/17/graph-table-data-jquery-flot/"> </a>
+<br> <br> <a href="http://www.datatables.net/">DataTables</a> - 非常强大的 jQuery 表格插件，可变宽页码浏览，现场过滤。多列排序，自动探测数据类型，智能列宽，可从几乎任何数据源获取数据。
+<a href="http://www.datatables.net/"> </a>
+<br> <br> <a href="http://www.trirand.com/blog/">jqGrid  Plugin</a> - 基于 Ajax 的 jQuery 表格插件，可以 Ajax 方式从服务器端获取数据填充进来（<a href="http://trirand.com/blog/jqgrid/jqgrid.html">演示</a>）。
+<a href="http://www.trirand.com/blog/"> </a>
+<br> <br> <a href="http://www.filamentgroup.com/lab/jquery_visualize_plugin_accessible_charts_graphs_from_tables_html5_canvas/">Visualize:  Accessible Charts &amp; Graphs from Table Elements</a> - 从 HTML 表格收集数据，并借助 HTML5 Canvas 对象转换为图表。
+<br> <br> <a href="http://www.filamentgroup.com/lab/jquery_visualize_plugin_accessible_charts_graphs_from_tables_html5_canvas/"> </a>
+<a href="http://boriscy.github.com/grider/">Grider</a> - 一个简单的 jQuery 插件，可以对 HTML 表格进行计算，平均，累加，最大值，最小值等。
+<br> <br> <a href="http://boriscy.github.com/grider/"> </a>
+表格功能增强<br> <br>
+<a href="http://www.isocra.com/2008/02/table-drag-and-drop-jquery-plugin/">Table  Drag and Drop</a> - 通过拖放，对表格中的数据重新排列，可以设置禁止拖放的行。
+<a href="http://www.isocra.com/2008/02/table-drag-and-drop-jquery-plugin/"> </a>
+<br> <br> <a href="http://plugins.jquery.com/project/tablePagination">Table  Pagination</a> - 在表格下方自动生成分页导航。
+<a href="http://plugins.jquery.com/project/tablePagination"> </a>
+<br> <br> <a href="http://pure-essence.net/2008/02/26/jquery-plugin-tablerowcheckboxtoggle/">tableRowCheckboxToggle</a> - 可根据 class name 对表格的行自动 check on/off
+<a href="http://pure-essence.net/2008/02/26/jquery-plugin-tablerowcheckboxtoggle/"> </a>
+<br> <br> <a href="http://plugins.jquery.com/project/bstablecrosshair">BS Table  Crosshair Plugin</a> - 鼠标在表格上移动时，所经过的单元格自动交叉加亮
+<a href="http://plugins.jquery.com/project/bstablecrosshair"> </a>
+<br> <br> <a href="http://code.google.com/p/jqtable2csv/">jqtable2csv</a> - 将 HTML 表格转换为 SVG 字符串。
+<br> <br> <a href="http://franca.exofire.net/jq/colorize">Colorize</a> - 自动对表格间隔行使用不同背景颜色
+<a href="http://franca.exofire.net/jq/colorize"> </a>
+<br> <br> <a href="http://www.jankoatwarpspeed.com/post/2009/07/20/Expand-table-rows-with-jQuery-jExpand-plugin.aspx">jExpand</a> - 一个非常轻量的 jQuery 插件，可以展开/关闭表格单元格，使表格可以容纳更多内容。
+<a href="http://www.jankoatwarpspeed.com/post/2009/07/20/Expand-table-rows-with-jQuery-jExpand-plugin.aspx"> </a>
+<br> <br> <a href="http://p.sohei.org/jquery-plugins/columnhover/">columnHover</a> - 鼠标经过时，可以整列加亮，甚至支持 colspans 和 rowspans
+<a href="http://p.sohei.org/jquery-plugins/columnhover/"> </a>
+<br> <br> <a href="http://www.jnathanson.com/blog/client/jquery/heatcolor/index.cfm">HeatColor</a> - 根据规则，或自动对表格中的值进行分析，对不同范围的值按不同颜色区分。
+<a href="http://www.jnathanson.com/blog/client/jquery/heatcolor/index.cfm"> </a>
+<br> <br> <a href="http://fixedheadertable.mmalek.com/">Fixed  Header Table</a> - 固定表头可滚动表格
+<br> <br> <a href="http://fixedheadertable.mmalek.com/"> </a>
+表格搜索，筛选
+<br> <br> <a href="http://ideamill.synaptrixgroup.com/?page_id=16">tableFilter</a> - 给表格添加简单的筛选功能。
+<a href="http://ideamill.synaptrixgroup.com/?page_id=16"> </a>
+<br> <br> <a href="http://gregweber.info/projects/uitablefilter">uiTableFilter</a> - 根据条件筛选（隐藏）表格行
+<a href="http://gregweber.info/projects/uitablefilter"> </a>
+<br> <br> <a href="http://tablesorter.com/docs/">Tablesorter  2.0</a> - 将普通的，拥有 THEAD 和 TBODY 标签的表格转换为可排序表格，可以分析多种数据，支持多列排序。
+<a href="http://tablesorter.com/docs/"> </a>
+<br> <br> <a href="http://www.picnet.com.au/picnet_table_filter.html">PicNet Table  Filter</a> - 实时的，Google 式筛选功能
+<a href="http://www.picnet.com.au/picnet_table_filter.html"> </a>
+<br> <br> <a href="http://tinysort.sjeiti.com/">jQuery  tinysort</a> - 排序
+<a href="http://tinysort.sjeiti.com/"> </a>
+<br> <br> <a href="http://www.digitalinferno.net/blog/jquery-plugin-livefilter-1-1/">LiveFilter  1.1</a> - 非常轻量的表格筛选插件，部署非常简单。
+<a href="http://www.digitalinferno.net/blog/jquery-plugin-livefilter-1-1/"> </a>
+<br> <br> <a href="http://code.google.com/p/jqtablesearch/">jQtablesearch</a> - 快速搜索，非常快
+<a href="http://code.google.com/p/jqtablesearch/"> </a>
+<br> <br> <a href="http://github.com/riklomas/quicksearch">Quicksearch</a> - 简单的搜索功能
+jQuery 现场编辑
+<br> <br> <a href="http://dev.iceburg.net/jquery/tableEditor/demo.php">TableEditor –  Flexible in place editing of TableSorter</a> - 现场编辑表格内容，用户可以插入 Ajax 机制回存数据
+<a href="http://dev.iceburg.net/jquery/tableEditor/demo.php"> </a>
+<br> <br> <a href="http://sites.google.com/a/zoqui.com/www/jgrideditor">jGridEditor</a> - 现场编辑，可配置 Ajax 回存数据
+<a href="http://sites.google.com/a/zoqui.com/www/jgrideditor"> </a>
+<br> <br>本材料原始来源：Nope <a href="http://www.noupe.com/javascript/jquery-html-table-toolbox.html">jQuery HTML Table Toolbox</a> (原文作者:<i>Paul Andrew</i>)
+<br> <br>中文编译来源：<a href="http://www.comsharp.com/"> <b>锐商企业CMS</b> 网站内容管理系统</a> 官方网站"
+➜天文学家：银河系中或有千百种文明
+https://www.solidot.org/story?sid=17321	4200
+<a href="http://yi-it.com/blog/">take.IT.easy</a> 写道 "研究人员指出，一旦岩石行星曾围绕死亡的恒星运转，那么这些大气便可以提供一个容易被发现的信号。基于这些数据，研究小组推断，目前在银河系中，至少有 3.5%的类日恒星拥有岩石行星。
+Frank Drake或许是对的。大约在半个世纪之前，这位美国天文学家推测，基于纯粹的统计概率，银河系中应该充满了与地球类似的行星。如今，对曾经像太阳一样的恒星――白矮星进行的观测显示，它们中的大多数应该至少“收留”了一颗岩石样天体。同时由于与太阳类似的恒星可占银河系全部几千亿颗恒星的一半，因而这意味着在我们的星系中<a href="http://news.china.com.cn/rollnews/2010-04/14/content_1586775.htm">可能蕴含着几百种甚至上千种文明</a>。           一个研究小组在4月13日于英国格拉斯哥市召开的皇家天文学会会议上报告了一个用来估计到底有多少颗岩石行星的新方法。这项研究的重心在白矮星。
+<br> <br>研究小组推断，目前在银河系中，至少有3.5%的类日恒星拥有岩石行星。通过更进一步的粗略估算，这意味着银河系曾经蕴含着10 亿颗左右的岩石行星。而其中的一小部分可能与地球类似，这说明它们可能具有这样的标准，即有水，同时与母星保持着一个适宜生命生存的距离。
+<br> <br>美国加利福尼亚大学圣克鲁斯分校的<a href="http://news.sciencemag.org/sciencenow/2010/04/earth-like-planets-may-abound-in.html">行星科学家Jonathan Fortney表示</a>，该研究强化了这样一种假设，即在恒星周围形成行星“是一个普遍的结果”。Fortney说，正因如此，恒星拥有的岩石行星的数量很可能比作者估计的3.5%“要高很多”。"
+➜基因缺失可以消除种族偏见和社交恐惧
+https://www.solidot.org/story?sid=17322	5400
+<a href="mailto:happyjdk@gmail.com">jdk137</a> 写道<i> "由于比常人缺少约26个基因，威廉氏症（Williams Syndrome）患者通常有这些特征：稚气小巧的脸庞，更高的心脏病风险，没有社交恐惧。他们可能是世界上最友好的人，惊人地合群，能够像正常人对待老朋友一样对待陌生人。Andreia Santos的最新研究还表明，他们<a href="http://blogs.discovermagazine.com/notrocketscience/2010/04/12/williams-syndrome-children-show-no-racial-stereotypes-or-social-fear/">没有种族偏见</a>。通常世界上任何地方任何文化里的小孩3岁开始就形成了有利于自己种族的偏见。即使是有社交障碍的孤独症儿童也不例外。Santos选了20个正常儿童和20个威廉氏症儿童，进行<a href="http://epm.sagepub.com/cgi/content/abstract/35/1/3">PRAM-II</a>（Preschool Racial Attitude Measure）实验。正常儿童的所有回答中有83%偏袒白人，而威廉氏症儿童只有64%。但并非所有人都同意威廉氏症患者没有种族偏见的结论，因为样本太小就是实验一个重要缺陷。"</i>
+➜中国缺乏地震预警系统
+https://www.solidot.org/story?sid=17323	6000
+《MIT技术评论》中文版<a href="http://www.mittrchinese.com/article.jsp?id=379">翻译</a>了一篇<a href="http://www.technologyreview.com/computing/20772/?a=f">旧闻</a>，但今日看来仍有新意。目前已造成<a href="http://www.bbc.co.uk/zhongwen/simp/china/2010/04/100414_china_quakeupdate.shtml">近600人死亡</a>的青海地震再一次提醒我们预警技术的紧迫性。中国无疑缺乏地震早期预报系统，但这并非个例。
+<i>
+地震学家<a href="http://www.planetary.caltech.edu/faculty/kanamori/">金森博雄</a>（Haroo Kanamori）说，地震警报系统只能提供几秒钟的预警，但这足够人们采取适当的保护措施。更多的研究和投资可以改进这种系统警报的速度和效率。地震早期警报系统的原理非常简单。地震首先从被称为P波的震动开始，P波波长很短，一般不会引起损害，但人类感觉不到。几秒钟之后──精确的时间取决与震中的距离──被称为S波的长波震动到达，它导致大地和建筑物摇撼，引起灾害。地震预警系统由一系列监测P波并发出电子警报的地震仪组成，将这种监测传感器联网可提高系统的准确度....预警系统的一个问题是需要在广阔的地理区域设置很多传感器，传感器越多，地震震中和强度就计算得越准确。为了弥补传统的地震仪器的不足，研究者已提出利用笔记本电脑的加速计，使之成为<a href="__SLASHLINK__" sect="science" sid="10/04/14/104210" sn="article" tid="34">分布式P波传感器</a>。但即使在地震之前中国安装了预警系统，它的效果也会因建筑物低劣质量所抵消。金森博雄说，“那些地区根本没有地震预警系统，即使有，糟糕的建筑物里有那么多人，我真不知道在那样的环境下会有多大效果。”</i>
+➜Fedora 13(Goddard) Beta发布
+https://www.solidot.org/story?sid=17324	7500
+Fedora 13的beta版<a href="http://fedoraproject.org/wiki/F13_Beta_announcement">已经发布</a>，Fedora 13开发代号为Goddard，是为了纪念科学家、液体火箭的发明者<a href="http://zh.wikipedia.org/wiki/%E7%BD%97%E4%BC%AF%E7%89%B9%C2%B7%E6%88%88%E8%BE%BE%E5%BE%B7">罗伯特·戈达德</a>（Robert Hutchings Goddard）。<i>
+新版的主要特性包括：打印机驱动自动安装；桌面增强；改进了移动宽带、蓝牙的网络管理功能，增加了新的CLI功能；3D图形支持NVidia显卡的Nouveau开源驱动；颜色管理；改进了DisplayPort支持；重新设计了用户管理界面等等。软件方面的更新<a href="http://fedoraproject.org/wiki/Releases/13/FeatureList?wkanF13b">包括</a>：Gnome 2.30，KDE 4.4，NetBeans 6.8，包管理器更新到RPM 4.8； Python 3等等。</i>
+➜微软调查童工和恶劣工作环境丑闻
+https://www.solidot.org/story?sid=17325	10800
+崛起的小小代价 写道 "人权组织美国劳工委员会4月13日发布了<a href="http://www.nlcnet.org/reports?id=0034">一份报告</a>（包括大量图片证据），曝光了微软代工生产商昆盈（KEY）的“血汗工厂”，称这家公司雇佣童工，工作环境十分恶劣。昆盈为微软生产鼠标等硬件产品，其客户还包括惠普、百思买、三星、宏碁、富士康、罗技和华硕。微软<a href="http://arstechnica.com/microsoft/news/2010/04/microsoft-investigates-as-sweatshop-spotlight-shines-on-supplier.ars">表示</a>将对此<a href="http://news.cnet.com/8301-13860_3-20002500-56.html">展开调查</a>。<i>
+报告指出，位于东莞的KYE企业的工厂雇佣了大量童工(在2007年和2008年，有几十位童工据报只有14或15岁)，而且工人们每周工作可长达80.5小时，每小时收入仅略高于50美分。报告中说，一位工人对美国劳工委员会说，“我们就像囚犯，就好像我们的人生就是工作。”工人被要求每12小时生产2000只鼠标，除了10分钟不付薪的休息时间外，不准上厕所或者起来喝水。报告称，昆盈的工人们没有丝毫权利，该公司违反了所有的中国劳动法律。</i>
+去年劳工委员会还报道有中国工厂将工人“锁”在宿舍内，<a href="http://tech.163.com/09/0213/16/521V1GS0000915BD.html">周末出去散步要罚款</a>。"
+➜IBM计划利用Linux复活OS/2
+https://www.solidot.org/story?sid=17326	13200
+一位接近IBM的消息人士称，蓝色巨人计划在Linux核心之上<a href="http://linux.slashdot.org/story/10/04/14/1548238/Is-OS2-Coming-Back">重新复活OS/2</a>。<i>
+<a href="http://zh.wikipedia.org/zh/OS/2">OS/2</a>最初是由微软和IBM公司共同创造，后来由IBM单独开发的一套面向对象、兼容CORBA的多任务操作系统。10多年前，OS/2在与Windows的竞争中最终败下阵来。然而在金融和银行等行业中，仍然有部分系统在使用OS/2。因此IBM用Linux复活OS/2的最明显理由是在最少的干扰情况下用其取代老化的系统。</i>
+➜微软研究人员称:频繁更换密码得不偿失
+https://www.solidot.org/story?sid=17327	15840
+<a href="http://yi-it.com/blog/">TAKE.it.EASY</a> 写道 "微软研究院研究人员 <a href="http://research.microsoft.com/en-us/people/cormac/">Cormac Herley</a>说，<a href="http://it.southcn.com/9/2010-04/15/content_11065636.htm">频繁更换密码费时费力且未必安全</a>(<a href="http://research.microsoft.com/users/cormac/papers/2009/SoLongAndNoThanks.pdf">原文PDF</a>)。这一成果发布在颇受欢迎的“技术共和国”(TechRepublic)网站上，引起<a href="http://blogs.techrepublic.com.com/security/?p=3275">广泛讨论</a>。
+<i>雅虎网站13日援引研究主持者、微软研究院首席研究员科马克·赫尔利的话称，创建并保护密码的一整套标准并不可靠，用户根据建议定期修改密码绝不是对付黑客的好方法。黑客盗走密码后会立即启用，而不会等到人们改了新密码后才下手。
+</i>　赫尔利说，频繁更换密码不但没有用，而且浪费时间。他说，用户更改密码要经过多个步骤，随着网络威胁不断升级，步骤也不断增加。因此，这一过程往往耗费大量时间和精力。"
+➜卫星热红外变化或可预报地震
+https://www.solidot.org/story?sid=17328	16440
+地震能否预报一直是科学界争议已久的问题，很多人认为受制于当前的技术水平，<a href="http://www.sciencemag.org/cgi/content/full/sci;278/5337/487">地震是不可预测的</a>。《科学通报》上<a href="http://csb.scichina.com:8080/kxtb/CN/abstract/abstract416993.shtml">最新一篇文章</a>利用静止卫星红外遥感对汶川地震前后震区亮温变化进行了研究，发现在大地震发生之前亮温变化存在明显的特征周期和振幅以及热异常分布区域。
+<i>兰州地震所的研究小组认为地震引起热红外异常存在区域性，主要与区域应力积累快速增加、区域活动构造和地质环境有关。这使地表局部区域温度逐渐升高, 相对形成高温区, 使地表水汽蒸发加快, 形成高温低压区的气旋运动, 然后在高空大量水蒸气遇冷凝结成云雨, 使地表温度下降。这可以解释多数大地震发生后为什么在其震中附近地区存在下大雨或下大雪等自然现象。而汶川地震发生前存在明显热异常特征周期和特征幅值, 发震区域特征和发震时发震时间特征位于异常区边缘或异常区内的活动断层上, 发震时间位于最大特征幅值之后的35天内。</i>
+➜母鸡不怕三聚氰胺
+https://www.solidot.org/story?sid=17329	19740
+自发生<a href="http://zh.wikipedia.org/wiki/2008%E5%B9%B4%E4%B8%AD%E5%9C%8B%E6%AF%92%E5%A5%B6%E7%B2%89%E4%BA%8B%E4%BB%B6">2008年中国奶制品污染事件</a>后，又发生了<a href="http://news.qq.com/a/20081027/000194.htm">鸡蛋中三聚氰胺超标的事情</a>，曾怀疑与饲料中含有三聚氰胺有关。中中国农业大学的一个研究小组就此问题进行了研究，<a href="http://pubs.acs.org/doi/abs/10.1021/jf904205y">结果表明</a>食用含有极高浓度三聚氰胺饲料的鸡所产的蛋中，三聚氰胺浓度并没有超过美国食品与药品管理局(FDA)规定的<a href="http://www.cfsan.fda.gov/~dms/melamra3.html">上限</a>（2.5ppm）。
+<i>研究小组让下蛋的母鸡食用被三聚氰胺污染的饲料，<a href="http://chinese.eurekalert.org/zh/pub_releases/2010-04/acs-lma041410.php">结果发现</a>饲料中三聚氰胺的增加导致了鸡蛋中这种物质含量的增加。然而这些鸡蛋中的三聚氰胺浓度都没有超过FDA的最高可容忍水平。饲料中三聚氰胺的最高浓度大约是100ppm，这导致了鸡蛋的污染水平大约是1.45ppm。这组科学家提出，饲料中的三聚氰胺污染水平小于100ppm将不会导致食品安全的潜在风险。</i>
+➜Lightworks视频编辑器将开源
+https://www.solidot.org/story?sid=17330	21840
+EditShare会在今年夏天<a href="http://news.slashdot.org/story/10/04/14/2034255/Lightworks-Video-Editor-To-Go-Open-Source">将它的视频编辑器开源</a>。<i>
+Lightworks是一套非线性视频编辑系统，能处理高清媒体、DPX和RED文件，可以与Final Cut Pro和Avid共享和无缝的编辑相同的媒体文件。奥斯卡和艾美奖获奖者中有多位使用Lightworks去处理电影，如Chris Gill用之于Neil Marshall执导的《百夫长（Centurion）》，Thelma Schoonmaker用之于马丁斯科赛斯的惊悚片《禁闭岛（Shutter Island）》。Lightworks于1989年首次推出，当时是市场上第一个专业的视频编辑系统。EditShare于去年收购了Lightworks。<a href="http://www.editshare.com/index.php?option=com_content&amp;task=view&amp;id=164&amp;Itemid=146">公司总经理James Richings说</a>，这套系统软件开发时间已超过了100万小时，他希望Lightworks的开源推进计划不仅能改变技术，还能改变对于一个专业编辑工具能做什么的观点。</i>
+➜世界上最大的数据中心
+https://www.solidot.org/story?sid=17331	23760
+Data Center Knowledge列出他们所能找到的<a href="http://www.datacenterknowledge.com/special-report-the-worlds-largest-data-centers/">世界十大数据中心</a>，这些数据中心的面积都在40万到110万平方英尺之间。如果你认为十大名单中肯定有Google，那么你可能要失望了。事实上，正在与搜索巨人竞争的软件巨头微软到有<a href="http://www.datacenterknowledge.com/special-report-the-worlds-largest-data-centers/largest-data-centers-supernap-microsoft-dft/">好几个超大型的数据中心</a>。
+<i>
+9：微软于2007年在华盛顿的小镇Quincy耗资5.5亿美元建造了一座<a href="http://www.datacenterknowledge.com/archives/2008/10/28/a-look-inside-microsofts-quincy-data-center/">47万平方英尺的数据中心</a>；一年后又在圣安东尼奥建造了一座面积相似的数据中心；
+<br>
+6：微软<a href="http://www.datacenterknowledge.com/inside-microsofts-dublin-mega-data-center/">Dublin数据中心</a>是专门用于为云计算提供服务，它的面积有55万平方英尺；<br>
+5：<a href="http://www.datacenterknowledge.com/inside-microsofts-chicago-data-center/">微软芝加哥数据中心</a>主要是为微软的Live套件提供在线服务，面积有70万平方英尺；<br>
+世界上最大的数据中心是<a href="http://www.digitalrealtytrust.com/">Digital Realty Trust</a>拥有的Lakeside Technology Center，面积高达110万平方英尺。</i>
+➜RT-Thread实时操作系统发布0.3.0正式版
+https://www.solidot.org/story?sid=17332	24600
+<a href="http://www.rt-thread.org/">midnight</a> 写道 "RT-Thread 0.3.0正式版相较以前的RC版本，添加了RT-Thread/GUI图形用户界面组件，内核部分无大的修改(console调整为支持设备的模式)，建议所有使用0.2.x、0.3.0 beta/rc版的用户都开始使用0.3.0正式版。当前版本支持如下移植分支：<br>
+- ARM Cortex-M3系列：STM32（包含STM32F107），LM3S，LPC1766<br>
+- ARM7TDMI系列：LPC2148，LPC2478，AT91SAM7X256，AT91SAM7S<br>
+- ARM920T系列：S3C2440（mini2440）<br>
+- IA32：QEMU及真实的x86机器           RT-Thread/GUI 图形用户界面组件<br>
+RT-Thread/GUI是专为RT-Thread操作系统开发的，并在相应的地方采用了RT-Thread特有的功能，它是一款几乎从零代码开始编写的，拥有独立知识产权的图形界面（不包括JPEG、PNG等图形库部分）。在RT-Thread许可证的条款下，能够免费的在商业产品中使用。RT-Thread/GUI的特性包括：<br>
+<ul>
+<li>多线程图形用户界面；</li>
+<li>依赖于RT-Thread线程调度器的实时图形用户界面；</li>
+<li>创新式的在嵌入式系统中引入面板的概念，缩小了多线程，多窗口图形用户界面编程代价：
+<ul>
+<li>workbench，对应多线程；</li>
+<li>view，对应不同的用户界面视图；</li>
+<li>window，对应多窗口；</li>
+</ul>
+</li>
+<li>C语言方式的全面向对象设计：
+<ul>
+<li>对象具备运行时类型信息；</li>
+<li>对象自动销毁，使得内存的管理更为轻松；</li>
+</ul>
+</li>
+<li>丰富的控件支持：
+<ul>
+<li>button，checkbox，radiobox</li>
+<li>textbox</li>
+<li>progressbar，slider</li>
+<li>listview，filelist_view</li>
+<li>等等</li>
+</ul>
+</li>
+</ul>
+RT-Thread/GUI能够在20K内存，不带framebuffer的嵌入式ARM设备上非常流畅的运行。<br>
+<br> <br>下载链接
+<br> <br> <a href="http://www.rt-thread.org/download/RT-Thread-0.3.0.zip">RT-Thread-0.3.0.zip</a>
+<br> <br>和0.3.0正式版配套的《RT-Thread实时操作系统编程指南》
+<br> <br> <a href="http://www.rt-thread.org/download/RT-Thread.pdf">RT-Thread实时操作系 统编程指南.pdf</a>
+"
+➜美国国会图书馆将存档所有的公共推
+https://www.solidot.org/story?sid=17333	25500
+美国国会图书馆<a href="http://blogs.loc.gov/loc/2010/04/how-tweet-it-is-library-acquires-entire-twitter-archive/">宣布</a>，<a href="http://china.kyodo.co.jp/modules/fsStory/index.php?storyid=80187%26sel_lang=schinese">将存档微博服务网站Twitter上的所有公开的Tweet</a>。<i>
+存档起始年限将追溯到2006年3月Twitter诞生时。此举旨在让后世的人们能够以此为线索了解目前人们的想法。保存对象不仅限于美国总统奥巴马等著名人物，还包括普通人的发言记录。目前每天会有5千万条以上的信息上传到Twitter网上，此次收藏的文章总数累计将达数十亿条。据悉，美国国会图书馆已着手保存互联网上从2000年起的信息。而在宣布存档Twitter之前，美国国会图书馆还<a href="http://yro.slashdot.org/story/10/04/06/2114247/Groklaw-Will-Be-Archived-At-Library-of-Congress">选择</a>了一些知名网站如<a href="http://www.groklaw.net/article.php?story=20100406141939511">Groklaw</a>，作为互联网历史文献进行收藏，存档的内容不仅包括了文章，还包括了所有评论。
+</i>
+➜谷歌中国前高管跳槽到百度
+https://www.solidot.org/story?sid=17334	27360
+<a href="http://yi-it.com/blog/">not.very.easy</a> 写道 "<a href="http://www.baiduer.com.cn/2010-04/18286.html">谷歌中国工程研究院原副院长王劲正式加盟百度</a>，出任技术副总裁一职。自此，王劲成为第一位加盟百度的原谷歌中国高管，而这也是又一位从李开复所组建的谷歌中国团队中离职的高管。王劲早年毕业于中国科技大学计算机系，此后留学美国并在佛罗里达大学获得了第二个计算机科学硕士学位。过去十几年中，王劲先后在中国及美国硅谷的多家公司担任管理和技术职务，包甲骨文、阿里巴巴、Ebay、谷歌等。据悉，加盟百度之后，王劲将主要参与百度北京研发团队的管理和建设工作。不过，百度方面并未明确透露王劲具体负责的领域。            <b>谷歌研发体系面临人才流失</b>
+<br> <br>本周一，据新浪科技从上海谷歌确认，谷歌中国工程研究院副院长<a href="http://tech.sina.com.cn/i/2010-04-12/13334045669.shtml">王劲已经离职</a>。
+<br> <br>据了解，王劲2000年6月加入谷歌，负责谷歌在中国的广告系统，此前他曾出任eBay中国CTO。2007年谷歌正式在上海设立研究院，由王劲和杨文洛共同领导。
+<br> <br>一位已从谷歌中国离职的高管表示，自己对于王劲的离开并不意外，而“当年那批人大多已经离开了”。"
+➜为避免蓝屏，微软不给你打补丁
+https://www.solidot.org/story?sid=17335	28440
+今年2月份，微软释出的例行补丁导致了部分用户Windows用户<a href="__SLASHLINK__" sect="it" sid="10/02/12/1244245" sn="article" tid="33">出现蓝屏</a>。微软在调查后发现蓝屏是因为用户电脑感染的Alureon rootkit与一个更新Windows内核的补丁发生冲突所致。<i>
+本周二，微软按惯例发布了一系列更新，其中包含有<a href="http://blogs.technet.com/srd/archive/2010/04/12/assessing-the-risk-of-the-april-security-bulletins.aspx">更新内核的补丁</a>，看起来这些补丁又很有可能会与rootkit发生冲突。但这次微软学乖了，它在安全更新中加入了检测系统异常的功能，<a href="http://arstechnica.com/microsoft/news/2010/04/machines-left-unpatched-so-microsoft-can-avoid-bsod-deja-vu.ars">如果发现异常情况则会阻止更新</a>。系统的异常通常是病毒修改重要操作系统文件导致的，这将使得感染了病毒的电脑不兼容内核更新——可能的后果便是蓝屏。虽然目前还没有利用该内核漏洞的恶意程序出现，但没有打上补丁的电脑无疑存在安全隐患，而且更容易受到攻击。</i>
+➜Google将推出Twitter历史搜索，Bing加入Twitter实时搜索
+https://www.solidot.org/story?sid=17336	31320
+Google宣布将<a href="http://www.zdnet.com.tw/news/web/0,2000085679,20145078,00.htm">提供Twitter的历史搜索</a>，以话题分类，搜索者可查看与搜索关键字有关的推文流量何时暴增。这听起来有点像是Google数年前推出的timeline search功能，只是这回是为Twitter设计。这项服务尚未完成。Google表示，目前最远只能回溯至今年2月的推文，但未来计划一直回溯至2006年3月Twitter正式推出时的推文。Twitter用户删除的推文不会出现在搜索结果中。用户还可以借助搜索删除旧的推文。<i>
+微软Bing官方博客周二<a href="http://www.zdnet.com.tw/news/web/0,2000085679,20145076,00.htm">宣布</a>，Bing增加了社交搜索(Social Search)新功能，整合Twitter实时结果。Twitter正举行开发者会议，宣布了多项重要决定和声明，包括：<a href="http://techcrunch.com/2010/04/14/twitter-confirms-it-will-launch-its-own-link-shortener/">不再使用Bit.ly短域名服务</a>，改用自家的短域名链接；Twitter.com的注册用户达到1亿500万；Twitter将<a href="http://developers.slashdot.org/story/10/04/15/0312223/Twitter-To-Add-Places-And-User-Streams">加入地点和实时用户数据流</a>，Twitter将建立自己的地理位置数据库，并向开发者开放数据库，未来API开发者将可以在桌面应用程序中使用上几乎所有的Twitter数据。</i>
+➜Opera Mini统治苹果的App Store
+https://www.solidot.org/story?sid=17338	39600
+两天前，Opera Mini正式<a href="__SLASHLINK__" sect="apple" sid="10/04/13/0133239" sn="article" tid="12">被苹果App Store接受</a>。根据苹果的<a href="http://www.apple.com/euro/itunes/charts/apps/top10appstorefree.html">统计</a>，Opera Mini浏览器几乎在每一个国家的免费应用程序下载Top10中排在第一位。多数人可能是出于好奇才去下载，Opera Mini for iPhone的用户多数在尝鲜之后就<a href="http://apple.slashdot.org/story/10/04/14/128242/Opera-Mini-For-iPhone-Reviewed">回到了苹果的Safari</a>。相对于Safari，Opera Mini虽然启动速度更快，界面更漂亮，但在用户更关注的页面渲染和触摸体验上有很多先天的不足。
+➜微软在吉尔吉斯斯坦革命中站在了错误的一边
+https://www.solidot.org/story?sid=17339	42300
+2010年4月6日至7日吉尔吉斯斯坦反对派在一次<a href="http://zh.wikipedia.org/zh-cn/2010%E5%B9%B4%E5%90%89%E5%B0%94%E5%90%89%E6%96%AF%E6%96%AF%E5%9D%A6%E9%9D%A9%E5%91%BD">暴动</a>中推翻了库尔曼别克·巴基耶夫的统治。这件事好像和微软毫无关系，但福布斯报道称微软期间<a href="http://blogs.forbes.com/firewall/2010/04/12/how-microsoft-took-the-wrong-side-on-the-kyrgyzstan-revolution/">站在了错误的一边</a>，它帮助巴基耶夫镇压反对派。<i>
+文章称，在暴动之前，巴基耶夫政权封杀了所有反对派的媒体，而微软在吉尔吉斯斯坦的代表帮助巴基耶夫政权打击了异议媒体。4月1日，也就是暴动发生前5天，微软代表和警察来到一家叫<a href="http://www.stan.tv/">Stan TV</a>的互联网电视台，拿着总检察长办公室的命令要求查封所有的设备，微软代表指控这家公司可能使用了盗版的微软软件。这项指控尚未得到证实，而这家电视台在最终裁决还没下达前就关闭了。</i>

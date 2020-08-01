@@ -1,0 +1,69 @@
+➜【最全解读】苹果审核指南大篇幅更新，最详细翻译与专业分析都在这里！
+http://www.sohu.com/a/212119098_100065715	34201
+<p style="text-align: left;">本文由国内专业的移动应用数据分析平台七麦数据 提供。</p>
+<p>12 月 20 日，苹果又一次更新了 App Store 审核指南，相比前几次零碎地修改，这次更新的篇幅可以说是 2017 年最大的一次了。更新的内容主要包括<strong>预购、“开箱”概率、订阅、ICO、金融产品、模板 App 和 VPN App</strong>等几个方面。这篇文章，我们就给大家对这次更新的变动细节进行翻译和详细解读。</p>
+<p><strong>更新详情与翻译</strong></p>
+<p>（下文英文段落均为变动部分）</p>
+<p><strong>1. 在开头 Introduction 部分新增一句声明</strong></p>
+<blockquote>
+<p>We strongly support all points of view being represented on the App Store, as long as the apps are respectful to users with differing opinions and the quality of the app experience is great.</p>
+</blockquote>
+<p>只要 App 对用户们的不同的观点是尊重的，并且有良好的用户体验，我们支持所有在 App Store 上发表的观点。</p>
+<p><strong>2. 条款 2.3 Accurate Metadata（准确的元数据）中新增了一条关于预购细则 2.3.11</strong></p>
+<blockquote>
+<p>2.3.11 you submit for pre-order on the App Store must be complete and deliverable as submitted. Ensure that the app you ultimately release is not materially different from what you advertise while the app is in a pre-order state. If you make material changes to the app (e.g. change business models), you should restart your pre-order sales.</p>
+</blockquote>
+<p>2.3.11 你在 App Store 上提交的预购必须是完整且可交付的。确保你<strong>最终发布的 App 与预购时所宣传的 App 没有实质性差异</strong>。如果你更改了你的元数据（比如商业模式），那么你家就要重新启动预购。</p>
+<p>参考文章：苹果全面开放“预购”功能</p>
+<p><strong>3. 条款 3.1.1 In-App Purchase（内购）中新增了一条关于“告知开箱几率”的要求</strong></p>
+<blockquote>
+<p>Apps offering “loot boxes” or other mechanisms that provide randomized virtual items for purchase must disclose the odds of receiving each type of item to customers prior to purchase.</p>
+</blockquote>
+<p>App 提供“开箱”或其他有概率获得物品机制时，必须在用户购买之前<strong>告知每个项目的获取概率</strong>。</p>
+<p><strong>4. 条款 3.1.2 Subions（订阅）中有两项改动</strong></p>
+<p>（1）新增了「订阅内容可在用户所有设备使用」的说明</p>
+<blockquote>
+<p>Subions must work on all of the user’s devices where the app is available. Learn more aboutsharing a subion across your apps.</p>
+</blockquote>
+<p><strong>订阅的内容在用户的所有设备都可以使用</strong>，了解详情可参考《sharing a subion across your apps》。</p>
+<p>（2）认可了虚拟货币等内容的订阅 </p>
+<blockquote>
+<p>Subions may include consumable credits, gems, in-game currencies, etc., and you may offer subions that include access to discounted consumable goods (e.g. a platinum membership that exposes gem-packs for a reduced price).</p>
+</blockquote>
+<p>订阅内容可以包含可消费的信用分、宝石、游戏内货币等（译者：类似于游戏的月卡、年卡服务？），并且你可以在订阅内容中提供消费品的折扣（比如一个铂金级的会员再买包的时候可以享受折扣价）。</p>
+<p>此前 App Store 还<strong>不认可</strong>这些虚拟货币的订阅，但支持订阅提供折扣服务：</p>
+<blockquote>
+<p>Subions may<strong>not include </strong>consumable credits, gems, in-game currencies, etc., even when combined with other offerings, but you may offer subions that include access to discounted consumable goods (e.g. a platinum membership that exposes gem-packs for a reduced price).</p>
+</blockquote>
+<p><strong>5. 新增了关于加密货币与 ICO 的条款 3.1.5(b) Cryptocurrencies（加密货币）</strong></p>
+<blockquote>
+<p>3.1.5 (b) Cryptocurrencies: Apps may facilitate transmission of approved virtual currencies (e.g. Bitcoin, DogeCoin) provided that they do so in compliance with all state and federal laws for the territories in which the app functions. Apps facilitating Initial Coin Offerings (“ICOs”), cryptocurrency futures trading, and other crypto-securities or quasi-securities trading must come from established banks, securities firms, futures commission merchants (“FCM”), or other approved financial institutions and must comply with all applicable law.</p>
+</blockquote>
+<p>App 可以提供虚拟货币交易的功能（如比特币、DogeCoin），但这些<strong>需要有各地政府的许可</strong>。App 对 ICO（Initial Coin Offerings）的交易、期货交易、其他加密货币、准加密货币，都必须基于已建立的银行、证券公司或者期货佣金商（FCM），或者其他经过审批金融机构，并且必须<strong>遵守所有适用的法律</strong>。</p>
+<p><strong>6. 条款 3.2.1 Acceptable （允许的商业模式）增加了对金融类产品资质的规定</strong></p>
+<blockquote>
+<p>(viii) Apps used for financial trading, investing, or money management should come from the financial institution performing such services or must use a public API offered by the institution in compliance with its Terms &amp; Conditions.</p>
+</blockquote>
+<p>金融交易、投资或财务管理的 App 应来自于执行此类业务的<strong>金融机构</strong>，或者必须<strong>使用由这些机构的公开并有承诺条款的 API</strong>。</p>
+<p><strong>7. 缩减了条款 4.2.1 中关于 API 和 framworkds 的内容</strong></p>
+<blockquote>
+<p>4.2.1Apps should use APIs and frameworks for their intended purposes and indicate that integration in their app deion. For example, the HomeKit framework should provide home automation services; and HealthKit should be used for health and fitness purposes and integrate with the Health app.</p>
+<p>Apps usingARKit should provide rich and integrated augmented reality experiences; merely dropping a model into anAR view or replaying animation is not enough.</p>
+</blockquote>
+<p>新版本规范删除了前两句（红字部分）：「App 需要在描述中所指明的那样去使用API和库。例如，使用HomeKit提供家居自动化服务；使用HealthKit用于在健康类App中。」</p>
+<p><strong>8. 条款 4.2.6 详细了对模板应用的规定</strong></p>
+<blockquote>
+<p>4.2.6 Apps created from a commercialized template or app generation service will be rejected unless they are submitted directly by the provider of the app’s content. These services should not submit apps on behalf of their clients and should offer tools that let their clients create customized, innovative apps that provide unique customer experiences. Another acceptable option for template providers is to create a single binary to host all client content in an aggregated or “picker” model, for example as a restaurant finder app with separate customized entries or pages for each client restaurant, or as an event app with separate entries for each client event.</p>
+</blockquote>
+<p><strong>使用模板创建的 App 会被拒绝</strong>，除非它们是由 App 内容提供商直接提交的。这些服务不应该直接给他们的客户提交 App，而是给他们的客户提供工具来创造自己定制的、有创意的、能提供独特用户体验的 App。模板提供者可以做的是创建一个单一的二进制文件，在一个汇总或 picker 模型中来管理所有客户内容，比如：一个发现饭店的 App，就可以给每个饭店提供独立的入口或页面；再比如一个活动类 App 可以给不同的客户活动提供独立的入口。</p>
+<p><strong>9. 新增了条款 5.4 VPN Apps</strong></p>
+<blockquote>
+<p>5.4 VPN Apps</p>
+<p>Apps offering VPN services must utilize the NEVPNManager API and must make a clear declaration of what user data will be collected and how it will be used. VPN apps must not violate local laws, and if you choose to make your VPN app available in a territory that requires a VPN license, you must provide your license information in the App Review Notes field.</p>
+</blockquote>
+<p>提供 VPN 服务的 App 必须<strong>使用 NEVPNManager API</strong>，并且必须对「用户数据将被收集与会被如何使用」有明确的声明。VPN App<strong>不得违反当地法律</strong>，且如果你的 VPN App 要在某个需要 VPN 许可证的地区发布，你必须在 App Review Notes 区域提交你的<strong>资质证明</strong>。</p>
+<p><strong>解读</strong></p>
+<p>这些更新的条款中，关于金融类 App、VPN App 与虚拟币（ICO）App 的内容都提到了要<strong>「符合当地法律法规」</strong>或者<strong>「需要相关的资质和证明」</strong>。对于中国开发者来说，近几个月大量产品因为条款 5.2.1（主要是因为金融类资质）被拒和今年夏天要求游戏产品上传时填写的游戏版号，这部分更新的内容并不陌生，只是苹果在条款中明确地将其进行声明。</p>
+<p>明确「开箱概率」这项规定，实际上我国文化部在去年 12 月发布的《文化部关于规范网络游戏运营加强事中事后监管工作的通知》中就有类似的规定：随机抽取不得直接投入法定货币或虚拟货币，应公示抽取或合成概率。App Store 也在一年后将此纳入审核规范，无疑会<strong>提升苹果用户</strong>（尤其是游戏玩家）<strong>的体验</strong>——开宝箱时至少心里有底，<strong>对开发者也起到一定的规范作用</strong>。</p>
+<p>总体看来，这些新规对于 App Store 的生态都将会起着相对积极的作用，违规产品、无资质产品与骗氪游戏将会变少；但新规对模板 App 的限制，一方面<strong>的确可以减少 App Store 中很多同质化应用与游戏的比例</strong>，另一方面对于没有或缺乏开发能力的商户、机构来说，则将会<strong>增加他们在 iOS 一端的开发成本</strong>。</p>
+<p>本文由七麦研究院专栏作者【甄世安】原创，转载需联系七麦研究院获取授权，七麦研究院有权向非授权转载追究责任。</p>

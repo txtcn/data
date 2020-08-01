@@ -1,0 +1,62 @@
+➜转让 App 你了解多少？那些不能忽视的操作细节全在这篇了 | 干货集锦
+http://www.sohu.com/a/260202362_100065715	9090
+<p class="ql-align-justify">目前，存在一些开发商由于经验不足或没有足够精力等原因，对产品的运营不够完善，所以会有将产品外包给其他团队来运营的需求；此外有急需使用 App 的开发商，但还来不及开发的情况下，只能转接其他开发商的 App，这时，采用“App 转让”的方式进行操作是比较方便快捷的做法。</p>
+<p class="ql-align-justify">那么，“App 转让”的操作细节是怎样的呢？七麦数据为大家进行了一番整理，供开发者参考。</p>
+<p><strong>App 转让概述</strong></p>
+<p class="ql-align-justify">开发者将某个 App 出售给其他开发者，或想要将其移至其他 App Store Connect（原 iTC 后台）帐户或组织时，就需要转让该 App。 </p>
+<p class="ql-align-justify"><strong>优点：</strong>无需将 App 从 App Store 下架，即可将其所有权转让给另一名开发者。且 App 在转让期间和转让后均可保留其评论与评分，用户也可以继续访问以后的更新。</p>
+<p class="ql-align-justify">【注意事项】</p>
+<p class="ql-align-justify">App 转让完成后，该 App 会从原开发者的帐户中移除，因此，在转让之前应当备份所有该 App 的信息以作记录。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20181018/8d48576fddce4b8b9b69b0132c77c6f7.jpg" max-width="600" /></p>
+<p><strong>App 转让条件</strong></p>
+<p class="ql-align-justify">App 必须满足以下条件才可转让：</p>
+<p class="ql-align-justify">1、App 转让在发起前，需要接收者组织中具有“法务”职能用户的 Apple ID。</p>
+<p class="ql-align-justify">“法务”职能包含 App Store Connect（原 iTC 后台）的所有权限。注册“Apple 开发者计划”的人员，即“团队代理”，会自动分配到“法务”职能并且拥有一个 App Store Connect（原 iTC 后台）帐户。具有“法务”职能的用户仅限一名，但该职能可以被转让给另一个人。</p>
+<p class="ql-align-justify">2、转让者和接收者的帐户均不处于待处理或变更状态，且双方均已接受“协议、税务和银行业务”部分中最新版本的转让协议。</p>
+<p class="ql-align-justify">3、该 App 的任何版本都不能使用 iCloud 权限；该 App 的任何版本都不能使用 Passbook 权限；该 App 必须至少有一个已发布至 App Store 的版本。</p>
+<p class="ql-align-justify">4、App 应处于下列任何一种 App 状态之一：</p>
+<p class="ql-align-justify">可供销售、 准备提交、被开发者下架、二进制文件无效、被开发者拒绝、被拒绝。</p>
+<p class="ql-align-justify">5、App 内购买项目产品可处于下列状态之一：</p>
+<p class="ql-align-justify">已批准、准备提交、被开发者下架、被拒绝。</p>
+<p class="ql-align-justify">6、该 App 的 App 内购买项目产品 ID 不得与接收者帐户中任意 App 的产品 ID 相同。</p>
+<p class="ql-align-justify">7、TestFlight Beta 版测试应在 App 的所有 Beta 版中被关闭。</p>
+<p class="ql-align-justify">8、与其他 Mac App 共享 Application Group Container Directory（App 群组容器目录）的沙盒 Mac App 无法转让。</p>
+<p><strong>发起 App 转让</strong></p>
+<p class="ql-align-justify">满足以上条件后，开始进入转让环节。</p>
+<p class="ql-align-justify">1、进入 iTunes Connect 首页，点击“我的 App”，App Store 页面随即打开。选中左侧菜单栏的“App 信息”后，右侧页面最后一栏，选择“转让”。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20181018/336eda3c749846739b75c74f6e26fb56.jpg" max-width="600" /></p>
+<p class="ql-align-justify">2、点击转让后会弹出一个对话框，显示App是否符合转让条件。如果所有条件都符合，则点按“完成”。否则，请先解决问题。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20181018/2c3a505c29b9447f8c8338f584839588.jpg" max-width="600" /></p>
+<p class="ql-align-justify">3、完成上一步，进入接收者信息页面，此时需要登陆接收者的开发者账号，并点按“Continue（继续）”。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20181018/53e149ecce3c43e29a5f1ece18303ec2.jpg" max-width="600" /></p>
+<p class="ql-align-justify">4、弹出条款对话框，选择“I have read and agree to the agreement presented above.（本人已阅读并同意上文显示的协议。）”，然后点按“Request Transfer（请求转让）”。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20181018/b5d6bc7cf6db4aa0939ff786a736e4d4.jpg" max-width="600" /></p>
+<p class="ql-align-justify">【注意事项】</p>
+<p class="ql-align-justify">转让者发起转让后，该 App 保持其先前状态不变，并添加“等待 App 转让”状态，直至被接收者接受；</p>
+<p class="ql-align-justify">当 App 处于此状态时，转让者无法编辑 App 的元数据、权利、定价和 App 内购买项目；</p>
+<p class="ql-align-justify">转让者和接收者可以在协议、税务和银行业务中取消 App 转让；</p>
+<p class="ql-align-justify">若要取消转让，转让者必须点按“Transfer Agreements（转让协议）”部分“Contracts In Process（正在处理的合约）”小节中 App 旁边的“Revoke（撤销）”。</p>
+<p><strong>接受 App 转让</strong></p>
+<p class="ql-align-justify">【注意事项】接收方必须在转让发起的 60 天内接受转让。</p>
+<p class="ql-align-justify">操作步骤如下：</p>
+<p class="ql-align-justify">1、以具有“法务”职能用户的身份登录至 App Store Connect（原 iTC 后台）。系统会显示一条通知，指示 App 已准备转让。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20181018/727abed299644f108a48f97692cad0ed.jpg" max-width="600" /></p>
+<p class="ql-align-justify">2、点按“协议、税务和银行业务”。进入在“Transfer Agreements（转让协议）”下的“Contracts In Process（处理中的合约）”部分中，点按该 App 旁边的“Review（审核）”。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20181018/dc4b2efc69084947a70f238c83dd4884.jpg" max-width="600" /></p>
+<p>3、输入新的元数据。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20181018/eee33a9513fe4ff6b8197b6fd8dae894.jpg" max-width="600" /></p>
+<p class="ql-align-justify">内容包含：</p>
+<p class="ql-align-justify">技术支持网址 URL、Atom Feed 网址 URL（如果该 App 先前已有 Atom Feed 网址，则必须提供）；</p>
+<p class="ql-align-justify">营销网址 URL（如果该 App 先前已有营销网址，则必须提供）；</p>
+<p class="ql-align-justify">隐私政策网址 URL（如果该 App 先前已有隐私政策网址，则必须提供）；</p>
+<p class="ql-align-justify">CCATS（针对受出口合规性制约的 App，必须提供一个新的 CCATS 表格）；</p>
+<p class="ql-align-justify">“App 审核”联系信息；</p>
+<p class="ql-align-justify">App Store 联系信息。</p>
+<p class="ql-align-justify">4、阅读条款，选择“本人已阅读并同意上文显示的协议”，然后点按“Accept（接受）”，App 转让操作就完成了。</p>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20181018/acb5d76fb3c94111a11c7ae1aec694f4.jpg" max-width="600" /></p>
+<p class="ql-align-justify">【注意事项】</p>
+<p class="ql-align-justify">App 转让审核时长：一般不超过 2 个工作日。在此期间，App 状态显示为“正在处理 App 转让”；</p>
+<p class="ql-align-justify">当 App 处于此状态时，转让者不能编辑 App 元数据、权利、定价和 App 内购买项目。位于解决方案中心的所有开放式通讯均处于关闭状态。如果该 App 属于一个 Game Center 群组，则接收者无法对群组进行更改；</p>
+<p class="ql-align-justify">在转让完成后，该 App 便属于接收者。该 App 不再显示于转让者的 App Store Connect（原 iTC 后台）帐户中。</p>
+<p class="ql-align-center">- end -</p>
+<p>本文由七麦研究院专栏作者【yoyo】原创，转载需联系七麦研究院获取授权，七麦研究院有权向非授权转载追究责任。</p>

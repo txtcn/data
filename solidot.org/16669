@@ -1,0 +1,13 @@
+➜shadowsocks作者在警方压力下删除项目
+https://www.solidot.org/story?sid=45231	25024
+<a href="http://buta.moe/">反竹川</a> 写道<i> "祖国有希望了。距上次被警方约谈两天之后，任职于北京智者天下科技有限公司（知乎网）的&nbsp;<a href="https://github.com/shadowsocks/shadowsocks-iOS/issues/124#issuecomment-133630294">c</a><a href="https://github.com/shadowsocks/shadowsocks-iOS/issues/124#issuecomment-133630294" target="_blank">lowwindy 今日被要求彻底删除 shadowsocks 项目</a>于 Github 上发布的<a href="https://github.com/shadowsocks/shadowsocks" target="_blank">所有源码</a>。目前所有子项目页面均显示“Removed according to regulations”。clowwindy 本人的<a href="https://twitter.com/clowwindy" target="_blank">推特账户</a>也已被设为隐私模式，未经许可的关注者无法查看其过往言论。鉴于其所使用的&nbsp;Apache License，已有部分用户自发创建了项目备份（例如<a href="https://github.com/Long-live-shadowsocks" target="_blank">这里</a>和<a href="https://github.com/ShadowsocksBackup" target="_blank">这里</a>）。令人毫无意外的是，V2EX上的相关讨论（<a href="https://webcache.googleusercontent.com/search?q=cache:sJRbgBfbH2oJ:https://www.v2ex.com/t/215088+&amp;cd=6&amp;hl=en&amp;ct=clnk&amp;gl=au" target="_blank">镜像</a>）均被删除。"</i>
+➜GCC版本控制系统将以Git为主
+https://www.solidot.org/story?sid=45232	52147
+GCC的版本控制系统将以Git为主。Red Hat的Jason Merrill在GCC<a target="_blank" href="https://gcc.gnu.org/ml/gcc/2015-08/msg00140.html"><u>邮件列表上称</u></a>，git svn（
+git svn rebase and git svn dcommit with git push)取代目前的 git-svn工作流，将git镜像作为master库使用只需要重写几个子目录分支，使其能在git中正确展现。他表示用户普遍支持这一改动。Git是目前最受欢迎的分布式版本控制系统，有多个未使用Git作为版本控制的大型开源项目正考虑迁移到Git。
+➜Linux新文件系统Bcachefs
+https://www.solidot.org/story?sid=45233	52884
+Kent Overstreet<a target="_blank" href="http://www.phoronix.com/scan.php?page=article&amp;item=bcache-fs-linux&amp;num=1"><u>宣布了</u></a>新的Linux新文件系统<a target="_blank" href="https://lkml.org/lkml/2015/8/21/22"><u>Bcachefs</u></a>。Bcachefs源自于名叫<a target="_blank" href="http://bcache.evilpiepirate.org/"><u>bcache</u></a>的内核块层缓存，作者希望能提供类似XFS/EXT4的性能以及类似 Btrfs和ZFS的特性。Bcachefs的磁盘格式还没有最终敲定，代码还没有做好合并到内核的准备。早期性能结果还行，目前的特性包括了支持多驱动器，内置缓存/分层，CRC32C 校验，Zlib透明压缩等，快照功能还在开发之中。
+➜Firefox抛弃旧的扩展，兼容Chrome扩展
+https://www.solidot.org/story?sid=45234	57707
+Mozilla准备启用标签多线程技术，淘汰XPCOM和XUL，弃用现有的扩展开发技术，而采用兼容Chrome和Opera的扩展技术。Mozilla破坏API的决定再次<a target="_blank" href="http://news.slashdot.org/story/15/08/21/1744239/firefox-will-run-chrome-extensions"><u>引起了争议</u></a>。Mozilla官方博客<a target="_blank" href="https://blog.mozilla.org/addons/2015/08/21/the-future-of-developing-firefox-add-ons/"><u>宣布</u></a>：Firefox 42将引入新WebExtensions API扩展技术的预览版本，未来的扩展开发者将能开发出能跨浏览器运行的扩展；Firefox 42的开发者版本默认启用了多线程标签技术（Electrolysis），9月22日发布的Firefox 42 Beta将允许用户选择启用Electrolysis；Firefox 43 Beta将默认启用Electrolysis，即Firefox 43将正式启用多线程标签技术；多线程标签技术是Mozilla抛弃现有扩展技术的主要理由，在短期内，旧的扩展将在兼容环境下运行。许多人担心使用 XPCOM技术开发的NoScript扩展将消失，Mozilla声称它将为扩展 API加入类似现有扩展的功能。

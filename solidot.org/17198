@@ -1,0 +1,15 @@
+➜GitLab.com不小心删除了数据库，网站下线
+https://www.solidot.org/story?sid=51220	47599
+源码托管平台<a href="http://gitlab.com/" target="_blank"><u>GitLab.com</u></a>发生了用著名的删除命令删除产品数据导致网站全面下线的事故，目前GitLab正在YouTube上<a href="https://www.youtube.com/watch?v=nc0hPGerSd4" target="_blank"><u>直播恢复数据库</u></a>，最新<a href="https://twitter.com/gitlabstatus/status/826773197894905856" target="_blank"><u>报告</u></a>是恢复了73%。GitLab是在太平洋时间周二晚上发出<a href="https://it.slashdot.org/story/17/02/01/0640248/gitlabcom-melts-down-after-wrong-directory-deleted-backups-fail" target="_blank"><u>一系列紧急通知</u></a>，称一位身处荷兰的疲惫系统管理员在进行数据库复制过程中不小心在一台错误的服务器上删除了一个目录，他删除了一个包含300GB实时产品数据的文件夹，在取消rm -rf删除命令后该文件夹只剩下4.5GB 数据。而最近的数据还是在6小时前备份的。这起事故影响了问题和合并请求数据库，但没有影响git仓库数据库。GitLab通过<a href="https://docs.google.com/document/d/1GCK53YDcBWQveod9kfzW-VCxIABGiryG7_z_6jHdVik/pub" target="_blank"><u>Google Doc</u></a>和<a href="http://monitor.gitlab.net/dashboard/db/postgres-stats?panelId=10&amp;fullscreen&amp;from=1485871271986&amp;to=now" target="_blank"><u>monitor.gitlab.net</u></a>实时报告数据恢复进展。它表示自己部署的五重备份/复制技术都不可靠。
+➜Google将开源Google Earth Enterprise
+https://www.solidot.org/story?sid=51221	51939
+Google官方博客<a href="https://maps-apis.googleblog.com/2017/01/open-sourcing-google-earth-enterprise.html?m=1" target="_blank"><u>宣布</u></a>将于3月份在Apache 2许可证下开源 Google Earth Enterprise（Google地球企业版，简称GEE），源代码将托管在 GitHub上。GEE允许开发者构建和托管自己的私有地图和3D地球仪。开源的产品包括了 GEE Fusion、GEE Server和GEE Portable Server。Google是在2015年3月宣布弃用和终止企业版销售。为了给客户足够的时间过渡，Google提供了两年的维护期，这一维护期将于3月22日结束。Google称，开源GEE将给予客户社区继续改进和推进该项目。Google表示， Google Earth Enterprise客户端、Google Maps JavaScript® API V3 和Google Earth API并不开源。
+➜SpaceX完成了回收火箭的静态点火测试
+https://www.solidot.org/story?sid=51222	53013
+<div align="center"><img src="http://img.solidot.org/0/102/liYwQtQ9MECk.jpg" width="500" align="" height="333"><br>
+</div>
+<br>
+私人太空公司SpaceX朝着重复使用火箭迈出了重要一步：它<a href="https://arstechnica.com/science/2017/01/spacex-takes-a-key-step-toward-a-reusable-rocket-launch/" target="_blank"><u>成功完成了</u></a>去年4月回收的火箭第一级的关键静态点火测试。SpaceX在过去13个月回收了7枚 Falcon 9火箭的第一级，但尚未使用回收的火箭推进级重新进行发射，这与航天飞机的情况类似，航天飞机在完成飞行后需要数个月时间和数亿美元的维修才能再次做好飞行准备。SpaceX最早可能会在今年3月使用回收的火箭第一级发射卢森堡卫星运营商SES的地球同步卫星 SES-10，但具体发射日期未定。
+➜中国科学家使用基因编辑技术研发出抵抗肺结核的奶牛
+https://www.solidot.org/story?sid=51223	55327
+西北农科大学兽医学院的研究人员使用基因编辑技术CRISPR/Cas9n在奶牛的基因组中<a href="http://www.technothirst.com/tuberculosis-resistant-cows-developed-for-the-first-time-using-crispr-technology/" target="_blank"><u>植入了</u></a>肺结核抵抗基因 NRAMP。研究人员在实验室中使用体细胞核移植将修改后的细胞植入到卵细胞中，培育后植入到雌性奶牛体内通过正常的怀孕周期，产下了11只携带了抵抗肺结核的新生犊牛。当这些犊牛暴露在能导致牛结核病的细菌环境中，研究人员在其血液样本中检测出了对细菌的抵抗信号。研究人员称编辑基因后未发现可检测到的脱靶效应。<a href="http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1144-4" target="_blank"><u>研究报告</u></a>发表在《Genome Biology》在期刊上。
