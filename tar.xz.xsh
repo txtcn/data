@@ -10,7 +10,7 @@ import shutil
 from os.path import dirname,join,basename,abspath,getsize
 from pathlib import Path
 
-TODAY = int(time() / 86400) - 2
+TODAY = int(time() / 86400) - 7
 
 def main(version, filedir):
   tmpdir = tempfile.mkdtemp()

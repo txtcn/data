@@ -50,6 +50,9 @@ def main(outpath):
               out.write(ARROW + title + "\n")
               out.write(url + "\t" + str(time) + "\n")
               if txt:
+                txt = txt.replace("\r",
+                                  "\n").replace("\n\n", "\n"
+                                                ).replace("\n", " ")
                 txt = RE_N.sub("\n", txt)
                 txt = RE_TAG.sub("", txt)
                 txt = tuple(
