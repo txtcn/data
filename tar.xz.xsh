@@ -10,7 +10,7 @@ import shutil
 from os.path import dirname,join,basename,abspath,getsize
 from pathlib import Path
 
-SIZE_MIN = int(20*1024*1024*2.4)
+SIZE_MIN = int(20*1024*1024*2)
 TODAY = int(time() / 86400) - 7
 
 def main(version, filedir):
