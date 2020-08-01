@@ -15,7 +15,7 @@ TODAY = int(time() / 86400) - 2
 def main(version, filedir):
   tmpdir = tempfile.mkdtemp()
   if '.' not in version:
-    version = '0.0.1'
+    version = '0.1.1'
   else:
     version = version.rsplit(".",1)
     version[-1] = str(int(version[-1])+1)
