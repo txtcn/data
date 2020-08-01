@@ -1,0 +1,391 @@
+➜为什么淘宝、京东和拼多多的购物车设计完全不一样？
+https://www.uisdc.com/shopping-cart-design-comparison	58010
+<p>今天的选题依旧是电商领域，目标是标签栏雄霸一方的购物车。它在整个消费路径中起到关键作用，距离收银台仅一步之遥，也是推动GMV的强力助手。随着各大平台的运营玩法越来越丰富，场景越来越细分，为了满足需求的升级，平台也开始对购物车结构进行拓展和迭代，但这些调整真的能够促进GMV且提升体验吗，这也是这次我们探寻的目标。</p>
+<p><span class="img-zoom"><img alt="为什么淘宝、京东和拼多多的购物车设计完全不一样？" class="alignnone size-full wp-image-382300" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-gw-20200729-1.gif" width="639" height="360" /></span></p>
+<h4><span class="auto_menu">属性定义</span></h4>
+<p>为了更多地理解它的外在，我们先来了解它的内核。购物车的基本定义就是暂时性的将满意的商品进行整合存储，方便统一结算，属于效率管理类的工具。因为与生活消费场景中的购物车/购物篮存在映射关系，所以用户能够快速理解并上手。</p>
+<p>从用户角度看，购物车可以说是一个用户自我运营型的商品池，可以依据不同的场景对商品进行高效管理。</p>
+<p>从平台角度看，购物车达成了很多商业目标的实现。购物车其实就是一个潜在的用户消费池，而且在行为路径中与收银台环环相扣，所以说优化用户的决策体验，就是提升平台的GMV。</p>
+<p>从商业角度看，平台可以通过购物车对用户已添加的sku状态进行提醒展示，可以配合各种运营方案去组合刺激下单率，还能方便管理订单与配送成本，甚至可以记录用户BI数据等。</p>
+<p><span class="img-zoom"><img alt="为什么淘宝、京东和拼多多的购物车设计完全不一样？" class="alignnone size-full wp-image-382301" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-gw-20200729-2.gif" width="639" height="360" /></span></p>
+<h4><span class="auto_menu">发展迭代</span></h4>
+<p>随着时间的推移，电商行业已是相当成熟，成为了当代生活的组成部分。用户体量日趋庞大，平台类型百花齐放，在此同时，因发展周期、垂直特性等因素造成平台间的差异化也慢慢显现。加上领域细分、高频运营等现象交叉叠加，相似需求点也依托不同的特性场景而发生了变化。</p>
+<h4><span class="auto_menu">主流平台</span></h4>
+<p>整体上看，大部分电商平台的购物车趋于相似，有部分针对平台自身的差异化对购物车进行了调整。接下来我们就从主流平台中选几个较为火爆且又个性的代表作为深扒对象，常规代表的C2C淘宝，场景细分的B2C京东，快消高频的O2O美团，和非常规化的S2B2C拼多多。</p>
+<p>其中购物车的差异化其实都是来源平台自身，所以我将从平台的商业/用户/场景/特征几个方面展开探索，探究其中的差异性和普适性，看看遇到类似问题时我们该如何思考。</p>
+<h4><span class="auto_menu">细节观察</span></h4>
+<p>首先是综合类平台的选手淘宝，淘宝购物车基本上算是购物车常规样式的代表。</p>
+<p>淘宝购物车整体架构上呈倒叙时间轴feed结构，页面没有过多的属性切换，更多是聚焦在近期添加的商品上。从操作路径角度上看，更多的是单线路径，整体操作围绕在商品管理与编辑的环形路径当中。从信息展示上看，除商品信息外，视觉焦点更集中于价格和活动等内容，更像是一个降价提醒器，或者说是活动满减计算器，hahaha其实我更愿意称其为阿姆斯特朗螺旋喷气式终极至尊无敌收藏比价满减搭配结算器PlusMaxPro版（/猛男微笑）。</p>
+<p><span class="img-zoom"><img alt="为什么淘宝、京东和拼多多的购物车设计完全不一样？" class="alignnone size-full wp-image-382302" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-gw-20200729-3.gif" width="640" height="360" /></span></p>
+<p>京东在浏览架构上遵循主流浏览习惯，区别于其他平台的特点在于顶部新增了一套TAB组件，对购物车商品的状态进行了区分处理，4个TAB分别是「全部/降价/常买/分类」。因为TAB组件的加入，操作路径也相较多元化，在路径中将筛选维度拓展的更加清晰直观。信息的层级布局方面，焦点依然围绕着价格及优惠信息，毕竟最打用户的还是美丽诱人的价格。</p>
+<p><span class="img-zoom"><img alt="为什么淘宝、京东和拼多多的购物车设计完全不一样？" class="alignnone size-full wp-image-382303" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-gw-20200729-4.gif" width="640" height="360" /></span></p>
+<p>大家都说拼多多没有购物车，其实是有的。因为购物车与收藏在某种程度上存在一定的功能重叠性，拼多多依据平台的特性，直接打了一张融合卡，把收藏与购物车进行了融合，功能定义上偏向将它理解为「收藏」，入口放置在个人中心，相较之下多了一级跳转路径。功能/结构/信息层级上与主流模型基本相同，相较之最明显的特征，是给了购物车一个「拼多多」式的定义。</p>
+<p><span class="img-zoom"><img alt="为什么淘宝、京东和拼多多的购物车设计完全不一样？" class="alignnone size-full wp-image-382304" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-gw-20200729-5.gif" width="640" height="360" /></span></p>
+<p>轻量化购物车在类似O2O等平台有表现，如美团/饿了么等，因为业务特性等因素，购物车功能点呈现也相对纯粹。操作路径简单清晰，选中添加后直接跳转收银台，路径上与其他平台稍有不同，属于一个强路径点。因为外卖模式的特征，层级上对「满减」信息进行了突出，通过满减的价格吸引用户达到一个「合理性」的消费。其余结构/层级与主流模型均基本相同。</p>
+<p><span class="img-zoom"><img alt="为什么淘宝、京东和拼多多的购物车设计完全不一样？" class="alignnone size-full wp-image-382305" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-gw-20200729-6.gif" width="640" height="360" /></span></p>
+<h4><span class="auto_menu">剖析解疑</span></h4>
+<p>平台之间的差异化表现我们了解了，接下来继续从商业/场景/用户/特性等角度去挖掘这些差异化是怎么形成的。</p>
+<p>还有一点需要明确的是，购物车的终极目标一定是为了提升平台的GMV，围绕着用户的下单率服务，高效地帮助用户缩短决策时间，且不断地去刺激用户的购买欲望。</p>
+<p>淘宝的购物车是常规样式的代表，需求点侧重于商品的收藏类比、组合搭配，其实是在倾向于将购物车做成一个用户自我运营形态的商品池。淘宝用户画像中「笨笨型」用户居多，特质是拥有一定时间成本、主观需求相对模糊，而平台的特性是品类多而全，生活日常或者稀奇古怪啥都有。一个有时间，一个品类全，因此在场景上自然而然就容易形成「逛」这个特征，而购物车也是为了服务「逛」这个场景而设计。同时淘宝的运营活动非常高频，且为C2C模式，平台无仓储运输等压力，活动类型以凑单满减居多，这个时候购物车就会使一个特别合适的「计算器」，用户可以对多个商品进行任意组合以达到满减目标，同时能很直观的感受到活动价格的美丽，从而提升参与活动的意愿。</p>
+<p><span class="img-zoom"><img alt="为什么淘宝、京东和拼多多的购物车设计完全不一样？" class="alignnone size-full wp-image-382306" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-gw-20200729-7.gif" width="640" height="360" /></span></p>
+<p>京东在购物车顶部细分了TAB类目，侧重于使用效率与传达效率的提升，也恰恰反映了平台之间用户存在的差异化。用户画像中「大明型」用户居多，特质是主观明确/需求精准，更加讲究直观与效率；而平台的品类特征是品质/3C等，让利空间相对大，而且京东超市等日常消费品的复购性也高，这个时候购物车的TAB就对浏览效率起到了很大的提升，可以让用户很清晰直观的掌控自己的商品池。同时因为B2C的商业模式的原因，TAB中分类栏也能很好的进行分类统一结算，对平台的仓储/物流成本可以进行压缩，这都是实打实的成本。</p>
+<p><span class="img-zoom"><img alt="为什么淘宝、京东和拼多多的购物车设计完全不一样？" class="alignnone size-full wp-image-382307" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-gw-20200729-8.gif" width="640" height="360" /></span></p>
+<p>拼多多的收藏式购物车，则是为了鼓励拼团裂变与降低普通用户的学习成本。从用户角度看，整体「小闲」用户居多，时间成本充足，多于下沉市场，因为对价格的敏感性，拼团式营销可以很好的在群体中进行分裂传播，所以才弱化组合结算而鼓励分享拼团。同时商详直接下单对比购物车结算会更加的直观，操作路径会更加的简化，可以很好的降低新用户的学习成本，提升上手效率。</p>
+<p><span class="img-zoom"><img alt="为什么淘宝、京东和拼多多的购物车设计完全不一样？" class="alignnone size-full wp-image-382308" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-gw-20200729-9.gif" width="640" height="360" /></span></p>
+<p>O2O类购物车的则更多的在平衡平台与商家的利益天平。购物车除了商品的展示，还有一个显眼的满减提示，因为用户的主观需求很明确，消费场景常规情况下都是一店一单、一单一取，一取一送，人力/时间成本如何合理去分配，所以让用户达到一个消费利益点才能更好的保证平台与商品的盈利，才能更好的平衡配送及管理成本。</p>
+<p><span class="img-zoom"><img alt="为什么淘宝、京东和拼多多的购物车设计完全不一样？" class="alignnone size-full wp-image-382309" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-gw-20200729-10.gif" width="640" height="360" /></span></p>
+<p>购物车这个功能点，从商业角度看是GMV转化机，从用户角度看，是高效率的种草拔草机，而我们要做的，就是在确保基础体验的基础上，在商业与体验中找到一个趋于健康且平衡的点，而平台特性、用户特征、消费习惯等等因素都会是我们用来考究的佐证。很多东西，我们只看到它的表面，其背后的逻辑和表达的东西才是最有意思的。</p>
+<h4><span class="auto_menu">总结</span></h4>
+<ul>
+<li>购物车是一个用户自我运营的商品池，提升用户的自我运营效率，才能提升GMV</li>
+<li>结合平台的商业模式/发展阶段/用户特征等，找到适合平台的结构方式</li>
+<li>购物车的结构/路径需要围绕用户/消费场景去搭建，去满足自身平台特性</li>
+<li>映射关系的高效性，符合用户心智模型可以很快的将用户进行引导</li>
+<li>利用视觉层级的传达，可以引导用户达到某些预期以保证商业目的</li>
+<li>多买方便面，总比吃土强</li>
+</ul>
+<p>想了解这三个平台更深度的对比分析，强烈建议阅读这份京东重磅出品的调研报告：</p>
+<p>[link https://www.uisdc.com/competitive-analysis]</p>
+<p>欢迎关注作者微信公众号：「阿类杂碎面」</p>
+<p><span class="img-zoom"><img alt="为什么淘宝、京东和拼多多的购物车设计完全不一样？" class="alignnone size-full wp-image-382310" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-gw-20200729-11.jpg" width="180" height="180" /></span></p>
+<p><script src="https://www.google-analytics.com/analytics.js" async="" type="text/javascript"></script><script src="https://www.googletagmanager.com/gtag/js?id=UA-172659890-2&amp;l=dataLayer&amp;cx=c" async="" type="text/javascript"></script><script src="blob:https://www.uisdc.com/3deab9e5-03a3-4dd5-a369-9eb4f2591eee"></script><script>// < ![CDATA[
+<br />                    window.dataLayer = window.dataLayer || [];<br />                    function gtag(){dataLayer.push(arguments);}<br />                    gtag('js', new Date());</p>
+<p>                    gtag('config', 'UA-172659890-2');<br />
+// ]]&gt;</script></p>
+➜在线就能剪辑音频！这个免费网站太酷了！
+https://www.uisdc.com/audiomass	58614
+<p>本文要介绍的「AudioMass」是一个免费、开放源码的线上音频编辑器，在浏览器中就能编修音乐，可从本机电脑上传、以网址汇入音频或是直接录音，编辑器会呈现像是一般音频编辑软件的波形图，利用鼠标就能进行修剪、裁切、剪贴或是加入更多效果，例如分段压缩、均衡器（Equalizer）、效果器、延迟等等。</p>
+<p>AudioMass 支持二十几组快捷键组合搭配动态响应式界面，确保编辑器易用性和效率，神奇的是它以Javascript 程序码开发，仅有65kb 大小而且可以离线使用。</p>
+<h4>AudioMass</h4>
+<p>网站链接：<a href="https://audiomass.co/">https://audiomass.co/</a></p>
+<p><strong>使用教学</strong></p>
+<p>开启AudioMass 后将音频档案拖曳到浏览器就能透过线上编辑器进行编辑。</p>
+<p><span class="img-zoom"><img alt="在线就能剪辑音频！这个免费网站太酷了！" class="alignnone size-full wp-image-382320" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sq-20200729-8.jpg" width="1153" height="800" /></span></p>
+<p>点选上方选单，找到「File」会有几种汇入音频方式，包括从本机电脑上传、从网址汇入或是直接录音，编辑时可以把草稿储存在电脑上，下次再透过选单打开草稿即可继续编辑。</p>
+<p><span class="img-zoom"><img alt="在线就能剪辑音频！这个免费网站太酷了！" class="alignnone size-full wp-image-382313" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sq-20200729-1.jpg" width="1280" height="800" /></span></p>
+<p>和一般音频编辑软件一样AudioMass 会以波形图呈现音乐，分为左声道和右声道，左上角会有时间点，上方则是播放控制键，剪贴或插入静音（Insert silence）可在右上找到。</p>
+<p><span class="img-zoom"><img alt="在线就能剪辑音频！这个免费网站太酷了！" class="alignnone size-full wp-image-382314" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sq-20200729-2.jpg" width="1153" height="800" /></span></p>
+<p>以拖曳方式选取特定时间轴范围，按下空白键快速播放段落，让使用者在编辑时更有效率，前面有提到AudioMass 支持不少快速键，它会标示于按键说明上方，将游标移动过去就能看到快速键或热键组合。</p>
+<p><span class="img-zoom"><img alt="在线就能剪辑音频！这个免费网站太酷了！" class="alignnone size-full wp-image-382315" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sq-20200729-3.jpg" width="1163" height="800" /></span></p>
+<p>比较会用到的音频剪裁功能像是剪下、贴上或是插入一段空白则归类在同一区。</p>
+<p><span class="img-zoom"><img alt="在线就能剪辑音频！这个免费网站太酷了！" class="alignnone size-full wp-image-382316" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sq-20200729-4.jpg" width="1163" height="800" /></span></p>
+<p>从「Effects」选单会看到许多效果，像是淡入淡出、EQ、压缩器（Compressor）、延迟或是加速减速等等，点选后会再打开控制窗口，就能进行更多更细节的调整。</p>
+<p><span class="img-zoom"><img alt="在线就能剪辑音频！这个免费网站太酷了！" class="alignnone size-full wp-image-382317" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sq-20200729-5.jpg" width="1163" height="800" /></span></p>
+<p>最后再提一下AudioMass很有用的功能，就是可以将编辑器储存到浏览器使它可以在离线状态使用（Offline Version），从「Help」能找到这个选项，如果需要在没有网路的环境下使用这个编辑器可以试试看离线版。</p>
+<p><span class="img-zoom"><img alt="在线就能剪辑音频！这个免费网站太酷了！" class="alignnone size-full wp-image-382318" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sq-20200729-6.jpg" width="1163" height="800" /></span></p>
+<p><strong>值得一试的三个理由：</strong></p>
+<ul>
+<li>免费开放原码线上音频编辑器，透过浏览器就能编辑音频</li>
+<li>对音频格式快速修剪、裁切、剪下贴上或是加入更多效果</li>
+<li>支持二十几组快捷键组合，亦可储存为离线版本使用</li>
+</ul>
+<p>比起在线编辑音频，这个网站堪称神器：</p>
+<p>[link https://www.uisdc.com/lalai-ai]</p>
+<p><script src="https://www.google-analytics.com/analytics.js" async="" type="text/javascript"></script><script src="https://www.googletagmanager.com/gtag/js?id=UA-172659890-2&amp;l=dataLayer&amp;cx=c" async="" type="text/javascript"></script><script src="blob:https://www.uisdc.com/bfe8ba04-30a2-4299-8318-76a94e45f11b"></script><script>// < ![CDATA[
+<br />                    window.dataLayer = window.dataLayer || [];<br />                    function gtag(){dataLayer.push(arguments);}<br />                    gtag('js', new Date());</p>
+<p>                    gtag('config', 'UA-172659890-2');<br />
+// ]]&gt;</script></p>
+➜从理论到落地，用一篇文章帮你了解Feed流
+https://www.uisdc.com/feed-design	59812
+<h4><span class="auto_menu">前言</span></h4>
+<p>信息爆炸时代，信息的更迭速度越来越快，用户拥有无限的信息获取渠道。如何从多元信息中筛选出优质且符合胃口的内容，那就不得不提今天的主角 —— Feed流。Feed流是移动互联网的产物，个性化的内容推荐方式将在这个内容为王的时代发挥出它更大的价值。</p>
+<p>设计师也应当与时俱进，如何在信息超载时代下做「更好的用户体验」是设计师们不断追寻的。</p>
+<p>美柚作为国内超活跃的女性交流社区，Feed流是资讯和社区的核心场景之一，针对Feed流的优化也在不断进行。本文将从认识Feed流、国内Feed流的市场格局、可用性设计原则、设计方案，全方位带你了解Feed流。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382236" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-9.jpg" width="1080" height="500" /></span></p>
+<h4><span class="auto_menu">认识Feed流</span></h4>
+<h5>1. 什么是Feed流？</h5>
+<p>「Feed」在现代信息媒体世界中可以理解为「投喂」。最早web时代，用户主动从新闻网站或博客订阅，订阅器帮用户及时更新信息，然后按照时间顺序展示。</p>
+<p>从维基百科中关于「web feed」的定义中，我们可以看出：</p>
+<ul>
+<li>Feed是为用户持续提供内容的数据格式；</li>
+<li>内容提供方订阅服务，用户主动订阅获得内容更新；</li>
+</ul>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382257" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-30.jpg" width="1080" height="320" /></span></p>
+<p>2006年Facebook在社交行业重新定义为「News Feed」，即突出内容信息，注重「沉浸式」的体验，用户通过无限的下拉刷新获取信息。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382228" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-1.jpg" width="1080" height="405" /></span></p>
+<p>「流」是一种呈现形式，现今产品应用中，除了用户主动订阅，大多基于智能算法进行推荐。</p>
+<p>小结：Feed流是一个信息出口，为用户提供个性化定制的内容，只需要刷新一个动作就能与他人或者资讯建立连接。</p>
+<h5>2. Feed流的作用</h5>
+<p>现代Feed流的核心是个性化推荐，内容和用户为两大主体，通过用户与内容的匹配实现「信息找人」的展示方式。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382231" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-4.jpg" width="1080" height="405" /></span></p>
+<h5>3. Feed流的表现形式</h5>
+<p>Feed流的基础核心是内容，其次会有内容产生的时间、地点、发布者等等，社交领域中常见的还有点赞、转发、评论等更小的元信息，根据场景和业务不同，其表现方式也不尽相同。在移动互联网中最常见3种形式：文字流、图片流、视频流。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382229" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-2.jpg" width="1080" height="451" /></span></p>
+<p><strong>文字Feed流</strong></p>
+<p>主要以「标题文字+辅助图片」组成。常用在新闻资讯类应用中，如今日头条、腾讯新闻等。</p>
+<ul>
+<li>优点：信息明确，提炼内容信息转化成标题传递给用户；展示信息量多，信息互获取率高；学习成本低；</li>
+<li>缺点：视觉冲击力较弱；内容展示不够全面；需要二次点击进入详情页；</li>
+<li>常见布局：左右结构、上下结构；</li>
+</ul>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382230" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-3.jpg" width="1080" height="767" /></span></p>
+<p><strong>图片Feed流</strong></p>
+<p>以图片为主，文字性信息在图片底部辅助展示。如绿洲、ins、Facebook、微信、小红书等。</p>
+<ul>
+<li>优点：视觉冲击力强；适配简单，节省开发成本；画面视觉层级丰富；优质的图片可以提升整体产品品质；</li>
+<li>缺点：占用空间大，展示内容少；信息传达不如文字明确；图片质量差时容易降低品质；</li>
+<li>常见布局：大图、宫格、拼图、瀑布流；</li>
+</ul>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382232" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-5.jpg" width="1080" height="767" /></span></p>
+<p><strong>视频Feed流</strong></p>
+<p>以短视频为主，文字信息弱化处理。如抖音、快手等。</p>
+<ul>
+<li>优点：沉浸式体验好；感官冲击力最强，满足用户在视觉和听觉上的感受；</li>
+<li>缺点：占用空间大，需要缓存，对网络质量要求高；展示内容少，只能进行短视频播放，需要频繁刷屏；</li>
+<li>常见布局：全屏流；</li>
+</ul>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382234" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-7.jpg" width="1080" height="767" /></span></p>
+<h4><span class="auto_menu">国内Feed流的市场格局</span></h4>
+<p>在碎片化时代的今天，人们越来越追求高效准确的获取信息。社交和获取信息是用户在网络上的重要需求，资讯产品连接人与内容，专注信息获取；社交产品连接人与人，注重交流环境。在这一大背景下，Feed流的优化一直在进行。本文讲从美柚App中有运用到的新闻资讯类和社交互动类两个类型分析国内Feed流的市场格局。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382235" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-8.jpg" width="1080" height="776" /></span></p>
+<h5>1. 新闻资讯类</h5>
+<p>2016年新闻客户端在智能手机用户中的渗透率就高达66.2%，即3.77亿人。随着移动互联网的飞速发展，这个数据还在不断扩大。目前资讯类产品较多使用智能推荐算法排序，这就是信息的「同温层效应」，即心理学上说的，人们天然地就更喜欢接受与自己观点一致的信息。</p>
+<p>本次通过「易观千帆」筛选「信息流资讯」，选出新闻类产品Top4的Feed流样式进行对比统计。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382233" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-6.jpg" width="1080" height="388" /></span></p>
+<p><strong>今日头条</strong></p>
+<p>今日头条是一款综合资讯App，通过用户行为分析、推荐引擎技术实现更加个性化与精准化的推送。</p>
+<p>结构清晰，功能划分也较为明确。更多下发3图大图和视频样式。</p>
+<p>使用红色品牌色，基本情况下白底黑字，文字最多显示3行。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382237" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-10.jpg" width="1080" height="656" /></span></p>
+<p><strong>腾讯新闻</strong></p>
+<p>腾讯新闻在微信、QQ等社交平台的助力下，其用户活跃程度高。强调新闻秒传，快速实时推送重大新闻。</p>
+<p>整体结构非常清晰，操作简单，隐藏层次较少，易使用。</p>
+<p>使用腾讯系蓝色，没有复杂的配色，界面简洁明了，很干净。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382239" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-12.jpg" width="1080" height="656" /></span></p>
+<p><strong>趣头条</strong></p>
+<p>以娱乐和生活为主题内容，为新兴市场用户提供精准的内容，主打让阅读更有价值。</p>
+<p>结构上更多使用上文下图的格式，更多下发三图与视频样式。</p>
+<p>颜色上使用了安全稳妥的绿色，这色系在新闻资讯产品中较为少见。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382238" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-11.jpg" width="1080" height="656" /></span></p>
+<p><strong>搜狐新闻</strong></p>
+<p>全媒体资讯平台，开放的订阅模式，海量的独家内容，主打准确可靠。</p>
+<p>与其他新闻类应用不同的是搜狐新闻采用左图右文的布局方式，浏览动线稍显复杂，更多下发小图样式，故而相比其他客户端，搜狐新闻一个页面呈现的新闻数目更多。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382241" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-14.jpg" width="1080" height="656" /></span></p>
+<p><strong>动态字号的运用</strong></p>
+<p>新闻资讯类产品大多有动态字号的功能。一般情况下默认显示字号均为标准(中)字号，以今日头条为例，我们能发现小字体、大字体基于标准字体以2为单位向上递增或向下递减。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382240" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-13.jpg" width="1080" height="702" /></span></p>
+<p>在同一机型下进行动态字体调整，可以发现在Feed流中仅有标题字号随设置字体大小而调整，而在详情页中也仅有标题和段落的字号随设置字体而调整。辅助信息及配图大小在任何情况下均不更改。部分插入模块不随设置字体大小而更改。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382242" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-15.jpg" width="1080" height="625" /></span></p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382243" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-16.jpg" width="1080" height="567" /></span></p>
+<p><strong>视觉层面解析</strong></p>
+<p>在视觉层面上对所选主流应用Feed流中的标题文字、辅助信息、对齐方式、分割线进行拆解分析。文字（大小、颜色、字重）、颜色、标签、布局等等都可以作为分析的因素。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382244" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-17.jpg" width="1080" height="401" /></span></p>
+<ul>
+<li>标题文字：字号介于17至19之间，颜色仅在HSB模式中的B（亮度）存在区别，在字距与行高的选择上无统一格式。</li>
+<li>辅助信息：字号在11与12之间，颜色在HSB颜色模式下B&gt;60，多个辅助文字信息以宽度间距分割。</li>
+<li>对齐方式：小图的图文展示上超87%使用了左文右图的结构，文字信息均采用左对齐方式。</li>
+<li>分割线：同一信息模块分割更多采用两边留距的方式，插入不同信息模块，上下以模块间距分割。</li>
+</ul>
+<p>小结：资讯流信息流产品，亦即头条类产品，以内容为主，注重信息提取效率，更强调用标题文字信息吸引用户浏览视线。合理的在更小空间内展示更多内容给用户，在高效阅读的同时提高用户的视觉体验。</p>
+<h5>2. 社交互动类</h5>
+<p>互联网的本质是连接，价值也在连接中产生。社交是用户在网络上的另一大重要需求，应运而生多种圈子产品。基于不同的圈子人群，创造社交环境。圈子能够很好地平衡产品的内容与社交属性。</p>
+<p>本次主要对宫格式布局产品进行解析，如我们最熟悉的「微信」中的朋友圈便是经典的宫格式布局.</p>
+<p><strong>新浪微博</strong></p>
+<p>新浪微博作为国内领先的社区，Feed流是微博最重要的场景之一，首页与发现中最常见的便是宫格布局。与新闻资讯类有所不同的是会在每个内容上方增加发布者信息和关注按钮。关注的目的不是社交，而是社交的前提。关注关系可以更快速的获得内容，是社交产生的前提语境。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382245" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-18.jpg" width="1080" height="718" /></span></p>
+<p><strong>豆瓣</strong></p>
+<p>豆瓣首页主打发现和记录感兴趣的内容，在首页推荐频道可以自由浏览个性化内容，发现更多有趣的豆友并与之建立联系。首页推荐与动态的主要目的在于社交互动，其中占比最大的为2图与3图样式。较微博有所不同的是发布者后面没有关注按钮，而是与资讯类中一样的负反馈。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382246" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-19.jpg" width="1080" height="718" /></span></p>
+<p>小结：泛社交应用产品，社交关系主要建立在内容上，注重内容传播的速度和内容公开。Feed的呈现方式发布者与发布内容不做明显的设计区分。底部一般伴随点赞、评论和分享等操作交互。以间距分割方式区分不同模块。</p>
+<h4><span class="auto_menu">可用性设计原理</span></h4>
+<p>设计不止是艺术行为，同时也是商业行为，越来越数据化的今天，光凭感性的判断来定义设计的价值是不够客观的，设计师们应该掌握更多的设计原理为设计赋能。</p>
+<p><strong>1. 信噪比</strong></p>
+<p>信噪比是指相关信息与不相关信息的比例。合理的信噪比可改善与用户的交流。加大信号可以将有用的信息快速准确的传达给用户，减少噪音并使信号脱颖而出，平衡好内容的优先级有助于用户快速找到所需的信息。灵活运用「信噪比」，通过设计减轻用户负担，提升效率。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382247" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-20.jpg" width="1080" height="617" /></span></p>
+<p><strong>2. 文字易读性</strong></p>
+<p>文字的易读性很大程度上决定了用户是否能准确高效的阅读。在iOS和 Android的通用文字规范中，最小阅读文字为12号字。</p>
+<p>行间距也是影响文字易读性很重要的要素。行间距过大会增加视线跨越度，过小增加阅读负担且容易重复阅读。一般1.2～2倍行间距更适合人眼阅读。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382248" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-21.jpg" width="1080" height="617" /></span></p>
+<p><strong>3. 图版率</strong></p>
+<p>图版率指页面中图片面积的占比。当图版率为0%时，版面显得非常枯燥，读者会丧失阅读的兴趣。当图版率为40%时，版面充满生气，富有活力，读者的阅读兴趣会随之上升。当图版率为100%时，则会给读者带来强烈的视觉感受。</p>
+<p>除图片本身外，我们也可以通过填充底色、图形叠底、重复图片来提高界面中的图版率。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382249" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-22.jpg" width="1080" height="617" /></span></p>
+<p><strong>4. 格式塔原则-邻近</strong></p>
+<p>物体之间的相对距离会影响我们感知它们的关系。距离较近的对象比距离较远的对象更相关。</p>
+<p>当不同的元素的物理距离靠近时，自热而然被看作是一个组，而不是单个的元素。当其中距离较远时则是不同的组。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382250" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-23.jpg" width="1080" height="617" /></span></p>
+<h4><span class="auto_menu">设计方案</span></h4>
+<p>通过对基础知识的了解和主流应用Feed流对比，结合自身产品特色，以设计体验目标为导向，梳理现状问题提出相应的优化目标，进而产出优化方案。</p>
+<p>目前资讯和社区线上存在以下问题：</p>
+<ul>
+<li>Feed流字号不统一；</li>
+<li>配图间距不统一，配图圆角不统一；</li>
+<li>标签位置无统一逻辑；</li>
+</ul>
+<p>为解决现有问题，我们重新对Feed流的设计语言进行优化。基于对Feed流的了解及主流产品分析，本次优化将从有序统一、空间利用率、视觉体验三个要点展开。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382251" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-24.jpg" width="1080" height="710" /></span></p>
+<p>通过「信噪比」理论我们知道平衡信号与噪音的比例，可以有效保证核心信息的清晰度。弱化其他装饰性元素，让用户可以聚焦内容本身。</p>
+<p>格式塔中的邻近原则也告诉我们控制不同元素的间距可以更好的把握亲疏关系。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382252" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-25.jpg" width="1080" height="575" /></span></p>
+<p>为了更好的观察Feed流中的不同文字字号的影响，我们可以从标题字号、行高、字距等多个不同变量中组合多种方案进行对比。</p>
+<p>字号、字距、字重与配图比例都是可以影响Feed流最终数据的潜在因素，我们可以分开对不同元素进行实验验证。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382254" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-27.jpg" width="1080" height="526" /></span></p>
+<p>注意文字跳动率，即最大字号与最小字号之间的比例。除了黄金分割比例1.618，还可以运用到根号2的比例，即1.141。</p>
+<p>图片的比例尽量使用黄金比例做展示，例如4:3、3:2、1:1、16:9。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382255" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-28.jpg" width="1080" height="677" /></span></p>
+<p>图文样式可作为基础样式，在确定图文样式后，梳理所有Feed流样式进行新设计方案的所有输出。</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382253" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-26.jpg" width="1080" height="720" /></span></p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-382256" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200729-29.jpg" width="782" height="800" /></span></p>
+<p>总结：如今互联网内容时代，用户对于快速获取有效内容的需求日渐强烈，如何高效、准确获取自己感兴趣的内容成为一个日益凸显的需求。Feed流结构简洁，减轻用户的认知负担，每个资讯社交相关的产品都势必进行科学有效的优化迭代。</p>
+<h4><span class="auto_menu">写在最后</span></h4>
+<p>此次文章分享美柚Feed流redesign的全过程，优化过程中我们也发现了很多自身的不足，还有很多内容需要完善，我们也相信每一次改变都是前进的脚步。</p>
+<p>每一次的设计提案都应该基于理论知识和对市场格局的了解，设计不是最终目的，提升用户体验才是我们的追求。</p>
+<p>希望本篇文章对各位小伙伴们有所帮助，有任何意见建议也欢迎评论区留言讨论。</p>
+<p>更多Feed流设计方法：</p>
+<p>[link https://www.uisdc.com/feed-stream-products]</p>
+<p>欢迎关注作者微信公众号：「美柚UED」</p>
+<p><span class="img-zoom"><img alt="从理论到落地，用一篇文章帮你了解Feed流" class="alignnone size-full wp-image-372738" src="https://image.uisdc.com/wp-content/uploads/2020/05/uisdc-my-20200521-39.jpg" alt="实战案例复盘！美柚深色模式背后的设计故事" width="180" height="180" /></span></p>
+<p><script src="https://www.google-analytics.com/analytics.js" async="" type="text/javascript"></script><script src="https://www.googletagmanager.com/gtag/js?id=UA-172659890-2&amp;l=dataLayer&amp;cx=c" async="" type="text/javascript"></script><script src="blob:https://www.uisdc.com/4269fd4e-6f33-4c9c-931e-a10046854b53"></script><script>// < ![CDATA[
+<br />                    window.dataLayer = window.dataLayer || [];<br />                    function gtag(){dataLayer.push(arguments);}<br />                    gtag('js', new Date());</p>
+<p>                    gtag('config', 'UA-172659890-2');<br />
+// ]]&gt;</script></p>
+➜如何应对复杂B端表单设计？这次给你两个案例（下）
+https://www.uisdc.com/structured-approach-2	63408
+<p>上篇在优设网发表后，看到有读者评论说没看到B端案例，也没看到如何解决复杂性。害！都怪我想说的内容有千言万语，还没写到B端案例和解决复杂性呢，就已经几千字了…好了，关于这俩问题，今天的下篇全给说明白！</p>
+<p>上篇回顾：</p>
+<p>[link https://www.uisdc.com/structured-approach]</p>
+<p>前文已经提到：对于特别复杂的B端表单，「简化」只是提升其易用性的方法之一。遇到数据量大，层级深，数据之间有交叉或嵌套关系的表单时，还需要考虑该如何分析拆解、组织呈现这些数据。</p>
+<p>我们今天的重点就是从整体上思考如何组织和呈现复杂程度各异的表单。具体方法的关键字就八个字：逻辑架构、视图载体。最后是两个案例分析。</p>
+<h4><span class="auto_menu">逻辑架构</span></h4>
+<p>网上搜一下关键字「B端」、「表单设计」，会搜到很多相关设计经验出来。不过大多数经验试图解决单个表单的布局和样式问题（比如标签栏和输入框是上下布局还是左右布局、左对齐还是右对齐），而非多个表单之间的逻辑架构和衔接关系。然而一个页面不会无缘无故的出现，它承载了特定任务，特定任务是用户达成目标的其中一环，和其他任务（页面）环环相扣。需求不会脱离于场景单独存在。场景中的需求，需要场景化的解决方案。</p>
+<p>举个例子，某商家要进货，需要提供订货单（表单1），包含商品列表（表单2），收货信息（表单3），开票信息（表单4），付费渠道和账期方案等（表单5）。为了保障多方合法权益，还需要在验证签署人意愿后（表单6），在线签署订单合同（表单7）。还有卖家发货后买家的签收单等一系列表单（表单8）。如下图：</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382276" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-1.jpg" width="750" height="227" /></span></p>
+<p>上面的例子可以说明，即使某个表单的数据量很大，依旧是单点问题。解决单个表单的布局和样式问题很重要，但这类问题处于相对较为表层的位置，还得向深处继续挖掘——如何处理多个表单之间的逻辑架构和衔接方式。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382277" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-2.jpg" width="750" height="629" /></span></p>
+<p>△右图来自《The Elements of User Experience》（中文版本《用户体验要素》）</p>
+<p>那么对于环环相扣的复杂表单，解决方案会不会很复杂呢？其实一句话就能说清楚：</p>
+<p>表单之间的关系从架构上看分成两种——串行结构或者树状结构。（我暂时还没发现第三种）</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382278" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-3.jpg" width="750" height="206" /></span></p>
+<p>是不是有点像电路里的串联和并联？遇到复杂的，就理解成混联，也就是两种情况的互相嵌套，要拆解到最小颗粒度再分析。知道了这个，在调研其他产品的表单设计时，也可以把这两种架构套进去学习别人如何组织内容的。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382279" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-4.jpg" width="750" height="212" /></span></p>
+<p>△刚才提到的卖家进货案例。</p>
+<h4><span class="auto_menu">视图载体</span></h4>
+<p>了解了架构，还需要搭配载体，也就是采用何种视图——是页面？还是弹窗？页面可以是单页，也可以是多个分页；弹窗可以是模态的，也可以是非模态的。以下是一些常见视图：</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382280" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-5.jpg" width="800" height="600" /></span></p>
+<p>△非模态弹窗的表单和来源页面关系紧密，但不要太复杂。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382281" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-6.jpg" width="800" height="600" /></span></p>
+<p>△常见的模态弹窗。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382282" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-7.jpg" width="800" height="600" /></span></p>
+<p>△模态窗也可以承载稍复杂的表单。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382283" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-8.jpg" width="800" height="600" /></span></p>
+<p>△一些UI组件提供了侧滑抽屉的样式，要防止用户误触导致的数据丢失，对「关闭」操作进行二次确认。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382284" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-9.jpg" width="800" height="600" /></span></p>
+<p>△页面是最常见的视图形式。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382285" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-10.jpg" width="800" height="600" /></span></p>
+<p>△以表格形式聚合表单，形式高度结构化，整齐清晰。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382286" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-11.jpg" width="800" height="600" /></span></p>
+<p>△表单内输入框之间可能存在联动关系，联动和层级关系需要表现清楚。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382287" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-12.jpg" width="800" height="600" /></span></p>
+<p>△如果表单页面很长，尽量把内容分组，减少用户心理负担。可以利用折叠面板允许用户将内容折叠，提升在不同模块间的浏览效率。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382288" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-13.jpg" width="800" height="600" /></span></p>
+<p>△多步骤表单，将大任务拆解成小任务，配合成功反馈，可以提升用户完成每小步的成就感，以及完成目标的信心。</p>
+<p>以上是一些常见视图，设计时采用何种形式，要综合考虑以下几个方面因素：</p>
+<ul>
+<li>内容多少（内容太多就不适合放入弹窗内）</li>
+<li>复杂程度（层级多少、是否存在联动关系等）</li>
+<li>逻辑结构（串行更适合分页，树状结构适合在一个页面内聚合）</li>
+<li>设备限制（包括屏幕大小、设备使用方向）</li>
+<li>和来源页面关联度（弹窗和新开页面相比，弹窗和来源页面的关联度更强）</li>
+</ul>
+<p>但这些因素本身没有明显边界，所以也不存在绝对正确的选项。评估方案时，还需要把用户使用场景中的干扰因素考虑进去（例如是一口气完成还是分几次间断完成？是独立还是协作的形式？）。</p>
+<h4><span class="auto_menu">两个案例分析</span></h4>
+<p>结合上面的内容，大家看看这两个案例中的表单如何设计呢：</p>
+<p><strong>1. 某公司的调查报告</strong></p>
+<p>公司信息分成多个维度，例如担保信息、资产信息等。</p>
+<p>担保信息包含多个担保人或担保企业，信息分为基本信息和信用状况。</p>
+<p>资产信息包含房产、车辆。</p>
+<p>涉及到自然人的信息，可以归属在不同类目下。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382289" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-14.jpg" width="1024" height="438" /></span></p>
+<p><strong>2. 评分卡配置</strong></p>
+<p>评分卡将多个模块分数累加。</p>
+<p>模块由一个或多个评分项组成。</p>
+<p>评分项由一组评分规则，规则需要设定分值。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382290" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-15.jpg" width="1024" height="471" /></span></p>
+<h4><span class="auto_menu">谈谈我的设计思路</span></h4>
+<p><strong>1. 某公司的调查报告</strong></p>
+<p>调查报告的信息层级较深，最底层模块的字段数量也不少。为了快速纵览全局，我在表单旁放置了导航栏。导航栏有三个层级，可以直穿最底层，另外还添加了两个细节——完成百分比和类目下的添加按钮。这两个细节的目的都是为了提升用户的控制感。</p>
+<p>因为同一个自然人的信息，可以归属在不同类目下（一个自然人拥有多家企业，并在各企业中担任多个重要职责的情况很常见）。为了数据库的统一和规范，减少数据多处重复录入而造成对数据库的污染，我把自然人的基础信息由「编辑」转换为「调取」，即「输入」变成「选择」。此人的基础信息如果在数据库中不存在，则需要在模态窗内添加。这样不管公司信息维度如何划分，各类目下的自然人信息都会和基础信息建立映射关系。在建立用户画像时，此关联数据还可以发挥重要价值。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382291" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-16.jpg" width="1024" height="768" /></span></p>
+<p>△导航栏中添加了「完成百分比」和「添加按钮」，目的都是为了提升用户的控制感。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382292" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-17.jpg" width="1024" height="768" /></span></p>
+<p>△系统内涉及到自然人的基础信息，统一由「编辑」转换为「调取」。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382294" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-19.jpg" width="1024" height="768" /></span></p>
+<p>△ 自然人基础信息如果不存在，则需要在模态窗内添加。</p>
+<p><strong>2. 评分卡配置</strong></p>
+<p>调查报告内的字段类型丰富多样——信息维度不同，字段类型很难重合（例如房产价值取决于面积和地理位置，车辆价值则跟品牌和车型密切相关）。然而评分卡却呈现高度一致的规律性。不管评分项归属于哪个模块，都由一系列选项（条件）和对应的分值（数字）组成。</p>
+<p>还一个较大的差异点是，调查报告里面有相当多内容是非必填的（例如不一定有房产）。但出现在评分卡中，如果没有房产，在房产一栏也需要选择「无房产」，得到0分或者其他分数。所以调查报告相对「开放」，评分卡相对「封闭」。</p>
+<p>另外因为要保证各模块下的评分项总和刚好100分，填写过程中对整体进行预览的频率更高。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382295" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-20.jpg" width="1024" height="1276" /></span></p>
+<p>△ 导航栏对每个模块的总分进行了计算，并提供预览按钮。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382296" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-21.jpg" width="1024" height="768" /></span></p>
+<p>△ 评分项内的选项和来源页面关联非常紧密，所以在模态窗内添加和编辑。</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-382297" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ux-20200729-22.jpg" width="1024" height="1238" /></span></p>
+<p>△ 评分卡像试卷，内容很多，更适合在页面而非弹窗内呈现。</p>
+<p>提醒：上面两个设计不是标准答案，仅是抛砖引玉，大家可以思考一下有没有更好的解决方案，欢迎在留言区讨论~</p>
+<p>欢迎关注作者的微信公众号：「能呆书房一整天」</p>
+<p><span class="img-zoom"><img alt="如何应对复杂B端表单设计？这次给你两个案例（下）" class="alignnone size-full wp-image-336836" src="https://image.uisdc.com/wp-content/uploads/2019/09/uisdc-tb-20190923-10.jpg" alt="如何应对复杂的B端表单设计？来看这个结构化方法（上）" /></span></p>
+<p><script src="https://www.google-analytics.com/analytics.js" async="" type="text/javascript"></script><script src="https://www.googletagmanager.com/gtag/js?id=UA-172659890-2&amp;l=dataLayer&amp;cx=c" async="" type="text/javascript"></script><script src="blob:https://www.uisdc.com/dc47c14d-a563-42f5-91e6-fe78659e4e52"></script><script>// < ![CDATA[
+<br />                    window.dataLayer = window.dataLayer || [];<br />                    function gtag(){dataLayer.push(arguments);}<br />                    gtag('js', new Date());</p>
+<p>                    gtag('config', 'UA-172659890-2');<br />
+// ]]&gt;</script></p>
+➜如何用最经典的迪士尼动画设计原则赋予 UI 灵性？
+https://www.uisdc.com/disney-basic-principles-ui	66124
+<p><span class="img-zoom"><img alt="如何用最经典的迪士尼动画设计原则赋予 UI 灵性？" src="https://image.uisdc.com/wp-content/uploads/2020/07/image_processing20200309-9289-158wku5.gif" width="800" height="600" class="alignnone size-full wp-image-382525" /></span></p>
+<p>学习动画的同学应该都知道迪士尼的动画设计12原则吧？这可能是传统动画领域，最为重要、价值不可估量的原则之一。它是 Ollie Johnston 和 Frank Thomas 在他们的书《生命的幻觉》中所提出的。虽然这些原则最初是应用在动画设计当中，但是实际上在如今的 UI 界面当中，同样是适用，并且效果拔群的。</p>
+<p>这12条原则当中，绝大多数都可以应用到 UI 的动效和交互设计当中，从而让交互和体验更上一层楼。这篇文章基于这12条原则，梳理出了 9 条适用于 UI 设计的原则，一起来看看吧：</p>
+<h4><span class="auto_menu">1、挤压和拉伸</span></h4>
+<p>在动画当中，挤压和拉伸主要体现在对象在受到重力影响的情况下，物体的表现，这种动画效果能够体现出质量、重量和柔韧感。当弹球在撞击地面的时候，会呈现出这样的挤压和拉伸。在UI 界面当中，挤压和拉伸则多呈现在按钮类的元素上。</p>
+<p><span class="img-zoom"><img alt="如何用最经典的迪士尼动画设计原则赋予 UI 灵性？" src="https://image.uisdc.com/wp-content/uploads/2020/07/993d2e0866195392c5f34d65d69354f4.gif" width="1600" height="1200" class="alignnone size-full wp-image-382522" /></span></p>
+<p>比如当按钮被按下的时候，可以加入挤压拉伸的效果，通过这种动效能够很快让按钮呈现出接近真实的物理感。当然，除了按钮之外，它还可以体现在很多其他的交互元素上。</p>
+<p><span class="img-zoom"><img alt="如何用最经典的迪士尼动画设计原则赋予 UI 灵性？" src="https://image.uisdc.com/wp-content/uploads/2020/07/9e7b3ffac3323533dd8b4582eb3dd1e9.gif" width="1600" height="1200" class="alignnone size-full wp-image-382523" /></span></p>
+<h4><span class="auto_menu">2、预备动作</span></h4>
+<p>预备动作，通常指的是提前告知用户即将发生的事情，让设计和用户的预期贴合起来。一个角色要将箭射出去，他需要抬起手臂向后拉，你会清晰地看到射箭之前「引而不发」的状态，然后你会对于箭射出有所预期。在用户界面当中，当你悬停在按钮之上的时候，按钮会变化，进入「悬停」状态，它就昭示着它是可被点击的，这就是它的预备动作。</p>
+<p><span class="img-zoom"><img alt="如何用最经典的迪士尼动画设计原则赋予 UI 灵性？" src="https://image.uisdc.com/wp-content/uploads/2020/07/35441f9bad245a0f12a956e5f8f4ea2c.gif" width="1600" height="1200" class="alignnone size-full wp-image-382524" /></span></p>
+<p>悬停交互会告诉用户下一步可以做什么。</p>
+<p><span class="img-zoom"><img alt="如何用最经典的迪士尼动画设计原则赋予 UI 灵性？" src="https://image.uisdc.com/wp-content/uploads/2020/07/6091e4d5663f9feb11e7ac83117f9ba0.gif" width="1600" height="1200" class="alignnone size-full wp-image-382513" /></span></p>
+<p>水平滚动的控件通常会展示出某些元素的一部分，让用户意识到可以滑动交互。</p>
+<h4><span class="auto_menu">3、时间控制</span></h4>
+<p>在传统的动画当中，时间控制决定了帧数的绘制数量和内容。帧数越多，动画就越流畅，相应的内容变化也可能更慢。同时，一个动画所耗费的时间长短，也会影响到其中角色的表现力和用户的心情。</p>
+<p>时间控制是动画设计的基础。时间控制和缓动在动画编排中发挥着重要的作用，过于漫长的过渡会让用户等太久，如果太快，用户可能会觉得错过重要的信息。通常，绝大多数的动画时长会控制在 200ms 到 600ms 之间，诸如悬停和点击反馈通常会控制在 300ms，而过渡则多为 500ms，你可以参考 Material Design 中动画的时间处理。</p>
+<p><span class="img-zoom"><img alt="如何用最经典的迪士尼动画设计原则赋予 UI 灵性？" src="https://image.uisdc.com/wp-content/uploads/2020/07/5cc048e90de593f59e7fc25f1895f671.gif" width="1600" height="1200" class="alignnone size-full wp-image-382520" /></span></p>
+<p>右侧的过渡会让用户觉得等待太久。</p>
+<h4><span class="auto_menu">4、渐快和渐慢</span></h4>
+<p>现实世界当中，绝大多数的事物的运动规律都遵循缓动的规律。换句话说，没有东西是突然开始运动，又突然停止的，自由落体也是有加速过程的。</p>
+<p>所以，向 UI  元素当中添加缓动效果，能够让元素看起来更加自然，符合预期，结合缓动和时间控制，就能够定义整个界面的运动系统了。</p>
+<p><span class="img-zoom"><img alt="如何用最经典的迪士尼动画设计原则赋予 UI 灵性？" src="https://image.uisdc.com/wp-content/uploads/2020/07/22c6b004f00ae76d40aaf92e30c19996.gif" width="1600" height="1200" class="alignnone size-full wp-image-382519" /></span></p>
+<p>左侧的为匀速运动，没有缓动，而右侧加了缓动之后，看起来更加自然。</p>
+<h4><span class="auto_menu">5、表演与呈现方式</span></h4>
+<p>为角色设置舞台，让角色像登上舞台一样进入场景。换句话说，你需要借用动画效果来进行「叙事」，考虑如何让它进入场景，如何呈现，怎样表演，如何借用镜头语言来引导用户的注意力。</p>
+<p>在 UI 界面当中，表演和呈现方式对应的就是元素的放置位置，以及元素如何进入界面，怎么抓住用户注意力，进行合理的动画编排。</p>
+<p><span class="img-zoom"><img alt="如何用最经典的迪士尼动画设计原则赋予 UI 灵性？" src="https://image.uisdc.com/wp-content/uploads/2020/07/734afe86a4ce3761bba7ba3269337753.gif" width="1600" height="1200" class="alignnone size-full wp-image-382518" /></span></p>
+<p>当你在思考如何呈现一个音乐 APP 的界面的时候，你可能需要基于用户喜好来推荐类似歌曲，那么喜欢/收藏音乐将会是一个重要的交互，和这首歌相关的歌曲可能需要一个独立的界面来呈现，于是你要凸显喜欢/收藏按钮，要让歌曲从列表中跳出，并且在下方列举出相关的音乐。</p>
+<h4><span class="auto_menu">6、弧形运动轨迹</span></h4>
+<p>纯粹的直线运动的事物很少，从高出抛出的球的运动轨迹是弧形的。很多时候弧形轨迹更符合自然规律也符合我们的日常认知。</p>
+<p><span class="img-zoom"><img alt="如何用最经典的迪士尼动画设计原则赋予 UI 灵性？" src="https://image.uisdc.com/wp-content/uploads/2020/07/d09bebf538c25a1a649dddfa67a35c84.gif" width="1600" height="1200" class="alignnone size-full wp-image-382517" /></span></p>
+<p>在 UI 界面当中，重要的元素可以使用弧形运动轨迹来呈现，会显得更加自然舒适，尤其是那种沿着对角线运动的元素。</p>
+<h4><span class="auto_menu">7、附属动作</span></h4>
+<p>在传统动画中，附属动作主要是用来支撑和辅助主要动作的。比如一个正在行走的角色，他的头部的摆动和转动通常会被视作为附属动作，</p>
+<p>在 UI 界面当中，辅助动作可以让主要的动画效果更加突出。这些元素在需要用户反馈的地方，显得非常有用。所有的微交互几乎都是基于「附属动作」的原理来进行设计的。</p>
+<p><span class="img-zoom"><img alt="如何用最经典的迪士尼动画设计原则赋予 UI 灵性？" src="https://image.uisdc.com/wp-content/uploads/2020/07/150371fa62111715bde5d9e0090727af.gif" width="1600" height="1200" class="alignnone size-full wp-image-382516" /></span></p>
+<p>此处的粒子效果增强了按钮本身的功能。</p>
+<h4><span class="auto_menu">8、夸张</span></h4>
+<p>在很多场景当中，角色需要具备有足够的吸引人，那么可以使用某些夸张的动作来吸引更多的关注。</p>
+<p>在 UI 界面当中，最重要的交互可以使用夸张的动效来强化，引起用户的注意。Material Design 当中的 FAB 动效就是一个最典型的夸张式的动效，它最终的静态效果是很吸引人的，因为它将一个按钮的色彩扩展到整个界面，并且在所有元素的最上层，强调到了极致。</p>
+<p><span class="img-zoom"><img alt="如何用最经典的迪士尼动画设计原则赋予 UI 灵性？" src="https://image.uisdc.com/wp-content/uploads/2020/07/540c082a5981d16ee49689fae4393bd4.gif" width="1600" height="1200" class="alignnone size-full wp-image-382515" /></span></p>
+<p>使用 FAB 动效来进行夸张</p>
+<p><span class="img-zoom"><img alt="如何用最经典的迪士尼动画设计原则赋予 UI 灵性？" src="https://image.uisdc.com/wp-content/uploads/2020/07/adb12e30bc5e3e5fcac016e85f0b57a8-1.gif" width="1600" height="1200" class="alignnone size-full wp-image-382526" /></span></p>
+<p>在支付类APP中使用夸张的效果来强化</p>
+<h4><span class="auto_menu">9、跟随动作和重叠动作</span></h4>
+<p>没有任何一种物体会突然停滞，通常运动是一个接着一个的。还有一个更加简洁的表述为「动者恒动」。想象一下一只兔子从高出跳下，当兔子开始运动的时候，它的耳朵会随着运动而自然地偏移和摆动，当兔子落地的时候，身体基本静止之后，它的耳朵可能还在动。前一种情况是「跟随动作」，视差滚动就是典型的跟随动作。而后者则是「重叠动作」，前一个动作停止之后，某些部分仍然处于运动的状态。</p>
+<p>在 UI 界面当中，可以让元素在静止之前，调用一个其他的交互和动效，从而让整个动效和交互更加流畅连贯，且自然。</p>
+<p><span class="img-zoom"><img alt="如何用最经典的迪士尼动画设计原则赋予 UI 灵性？" src="https://image.uisdc.com/wp-content/uploads/2020/07/0a7c54041ac0e6304f9d061d41e489c1.gif" width="1600" height="1200" class="alignnone size-full wp-image-382514" /></span></p>
+<p>模态弹出框的跟随动作，在底层动效停止之后依然运动，然后才静止下来。</p>
+<p><span class="img-zoom"><img alt="如何用最经典的迪士尼动画设计原则赋予 UI 灵性？" src="https://image.uisdc.com/wp-content/uploads/2020/07/6091e4d5663f9feb11e7ac83117f9ba0.gif" width="1600" height="1200" class="alignnone size-full wp-image-382513" /></span></p>
+<p>在滚动的时候，卡片和底部的元素以不同的速率运动，类似视差。</p>
+<h4><span class="auto_menu">结语</span></h4>
+<p>在实际的设计过程中，UI动效和交互应当根据实际的情况来灵活调整，让整个 UI 界面在保持自然的情况下，在正确的位置加入不同的交互、动效以及微交互，这回让整个交互和 UI 界面本身的功能更深层地结合到一起。</p>
+<p>延伸阅读：</p>
+<p>[link https://www.uisdc.com/improve-ui-designs-fast-1]</p>
+<p>[link https://www.uisdc.com/improve-ui-designs-fast-2]</p>
+<p>[link https://www.uisdc.com/guide-to-dropdown-menu-design]</p>
+<p>[link https://www.uisdc.com/selection-controls-ui-component]</p>

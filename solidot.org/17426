@@ -1,0 +1,20 @@
+➜流言称中国将切断比特币网络访问
+https://www.solidot.org/story?sid=53864	31904
+中国社交网络<a href="http://s.weibo.com/weibo/%25E9%2598%25BB%25E6%2596%25AD%25E6%25AF%2594%25E7%2589%25B9%25E5%25B8%2581%25E6%25B5%25B7%25E5%25A4%2596%25E4%25BA%25A4%25E6%2598%2593%25E8%25A1%258C%25E4%25B8%25BA&amp;b=1&amp;nodup=1" target="_blank"><u>流传了</u></a>一份叫《“关于部署‘阻断比特币海外交易行为’技术预案的通知”》的文件截图，似乎是出自安管中心， 要求在 9 月 30 日前完成全面阻断比特币海外交易行为的技术方案部署，主要内容包括 1）在主要出口路由器上，阻断包括 coinbase、bitfines、localbitcoins 等海外比特币与中国境内的访问通信，包括 web 访问，app 访问及 API 访问接口等。2）在主要出口路由器上，阻断对比特币种子寻址节点的访问。3）在主干防火墙上，通过 DPI 识别，丢弃经特币账本 (区块) 同步数据。为防止利用 VPN 或 Tor 绕过屏蔽，文件还要求“加强对于使用 Tor、VPN 等桥接方式进行比特币网络通信的监控，发现高频、异常通信情况及时通报”。如果这一技术真的部署，那意味着中国将全面屏蔽主要比特币交易平台，切断比特币区块链网络同步，而中国是最大的比特币生产国，切断区块链同步意味着中国将从全球比特币网络中消失，挖出的比特币将不会视为有效，这可能将影响价值数亿的比特币矿场和矿机业务。目前比特币币值尚未受到多大影响，其币值已从 3000 美元的低点攀升到了 <a href="https://blockchain.info/markets/" target="_blank"><u>3500 美元</u></a>。
+➜海盗湾测试用 JS 挖矿替代广告
+https://www.solidot.org/story?sid=53865	36194
+昨天访问海盗湾网站的用户在短时间内体验到了 CPU 占用率过高风扇狂转的情况，原因是他们浏览的页面嵌入了挖矿程序，不是挖比特币，而是挖一种替代数字货币门罗币（Monero）。比特币用 CPU 或 GPU 挖已经完全不合算了，但门罗币仍然可以。海盗湾是在<a href="https://torrentfreak.com/the-pirate-bay-website-runs-a-cryptocurrency-miner-170916/" target="_blank"><u>测试</u></a>用 JS 挖矿程序来代替广告，它没有在整个网站启用，而只是选择了特定页面。一些人对此做法<a href="https://yro.slashdot.org/story/17/09/16/1623255/can-the-pirate-bay-replace-ads-with-a-bitcoin-miner" target="_blank"><u>表示赞同</u></a>，但另一些人认为这么做是不道德的。
+➜安全研究员提议 Security.txt 标准
+https://www.solidot.org/story?sid=53866	43014
+安全研究员 Ed Foudil 向互联网工程任务组（IETF）递交了一个 <a href="https://www.ietf.org/id/draft-foudil-securitytxt-00.txt" target="_blank"><u>Security.txt 草案</u></a>，寻找标准化网站的安全政策，这一文件类似定义 Web 和搜索引擎爬虫政策的 robots.txt 文件。举例来说，如果一名安全研究人员发现了一个网站的漏洞，他可以访问该网站的 security.txt 文件，获取如何联络公司和递交安全漏洞报告。security.txt 文件包含了如下信息：<i>
+#This is a comment<br>
+Contact: security@example.com<br>
+Contact: +1-201-555-0123<br>
+Contact: https://example.com/security<br>
+Encryption: https://example.com/pgp-key.txt<br>
+Acknowledgement: https://example.com/acknowledgements.html<br>
+Disclosure: Full</i>
+但就像一些爬虫会无视 robots.txt 去抓取网站内容，security.txt 看起来也容易<a href="https://it.slashdot.org/story/17/09/16/1541219/securitytxt-standard-proposed-similar-to-robotstxt" target="_blank"><u>被滥用</u></a>，比如被垃圾信息发送者滥用。<br>
+➜PyPI 官方库被发现混入了名字相似的恶意模块
+https://www.solidot.org/story?sid=53867	48195
+在 Node.js 项目的包管理器 NPM <a href="http://www.solidot.org/story?sid=53387" target="_blank"><u>发现</u></a>利用名字相似性传播的恶意程序后，Python 官方的第三方软件库 PyPI（Python Package Index）<a href="https://arstechnica.com/information-technology/2017/09/devs-unknowingly-use-malicious-modules-put-into-official-python-repository/" target="_blank"><u>也被发现遭到了类似的攻击</u></a>。攻击者上传了名字相似的恶意模块，这些恶意的软件包包含了正确的代码，但修改了安装脚本。假软件包上传的时间从 6 月一直持续的 9 月。安全研究人员有意上传了 20 多个恶意库，结果在两天时间内被下载了 7000 多次。研究人员建议 Python 和 PyPI 开发者寻找方法阻止此类的攻击。

@@ -1,0 +1,106 @@
+➜中国女推友因推特上的一句话被判劳教
+https://www.solidot.org/story?sid=21086	1200
+bonnae1982 写道 "据<a href="http://www.bbc.co.uk/zhongwen/simp/china/2010/11/101118_china_twitter.shtml">BBC</a>报道，中国“推友”程建萍因在国内无法访问的社交网站推特(Twitter)上发表一句有争议的<a href="http://twitter.com/wangyi09/status/27626106073">言论</a>，在江苏无锡市被拘留5天后，本周被河南司法当局判处劳动教养一年。程建萍（网名王译）的未婚夫华春珲介绍了介绍事情的起因：
+<i>他说，今年10月17日，程建萍和华春珲在无锡的网上看到四川绵阳反日游行的视频，对一些游行者抢砸路边行人的录像机、照相机表示不满。华春珲随后在推特上发了一条推文说：“反日游行和砸日货没有新意，你们可以坐飞机到上海去，砸上海世博园内的日本馆。”华春珲说，他写这条推文完全是讽刺那些砸日货的人，而程建萍在转发他的推文时则在后面加了一句：“愤青们，冲啊。”程建萍还否认其有写“快去砸”这三个字，并指有推文为证。程建萍为此在10月29日被无锡警方拘留5天，华春珲被拘留10天。但是在拘留期满后，程建萍立即被她的户籍所在地河南公安部门派人从无锡押回河南，并在11月15日收到一年劳教决定书，目前在河南女子劳教所。"</i>
+➜日本媒体称亚运会东道主不守规则
+https://www.solidot.org/story?sid=21087	1500
+小农爱国赛如车 写道<i> "根据<a href="http://xys4.dxiong.com/xys/ebooks/others/science/dajia11/yayunhui4.txt">新语丝</a>网站的一则消息，日本《东京新闻》对一些亚运会上东道主的弄虚作假行为不满。《东京新闻》说16日中国和马来西亚藤球比赛开始时不见裁判出场，原因是中方提出要把裁判都换成中国人。最后两名司线被换成中国人。13日体育舞蹈比赛的5个项目中，中国运动员均抽中最后出场（对得分有利），而此举的概率只有1:7676。游泳场地不能带锣鼓入场，实际上却是中国助威团除外。该媒体称最令人难以接受的是乒乓球比赛时中国志愿者带领观众为中国助威，而忘记了他们的身份是场地服务人员。"</i>
+➜瑞典将对Assange发出国际通缉令
+https://www.solidot.org/story?sid=21088	2100
+半圆准备 写道 <i>"周四，<a href="http://www.bbc.co.uk/news/world-europe-11785281">瑞典斯德哥尔摩地区法院</a>向Wikileaks创立者Julian Assange发出拘察令，以便对其涉嫌强奸进行询问。瑞典检查总长Marianne Ny说检方一直未能和Assange碰面以完成询问。她说为执行法庭命令，下一步将对Assange发出国际通缉令。Assange的律师说他的当事人坚持称自己完全无辜。"</i>
+➜200+行内核补丁的替代方案
+https://www.solidot.org/story?sid=21089	5280
+前几天有报道称，<a href="__SLASHLINK__" sect="linux" sid="10/11/17/0132254" sn="article" tid="7">200+行的Kernel补丁能显著改善桌面性能</a>，降低延迟。Red Hat的开发者Lennart Poettering在邮件列表上<a href="http://lkml.org/lkml/2010/11/16/392">回复Linus Torvalds时</a>称，<a href="http://linux.slashdot.org/story/10/11/18/2246213/Alternative-To-the-200-Line-Linux-Kernel-Patch">他有一个替代方案</a>，只需运行两次命令，在~/.bashrc文件中粘贴4行代码就可实现相同的效果。
+Ubuntu发行版的<a href="http://www.webupd8.org/2010/11/alternative-to-200-lines-kernel-patch.html">使用指南</a>：           1.用"/dev"替换"/sys/fs"；在 /etc/rc.local文件中的exit 0上面中加入以下命令：<br> <i>
+mkdir -p /dev/cgroup/cpu<br>
+mount -t cgroup cgroup /dev/cgroup/cpu -o cpu<br>
+mkdir -m 0777 /dev/cgroup/cpu/user<br>
+echo "1" &gt; /dev/cgroup/cpu/user/notify_on_release<br>
+echo "/usr/local/sbin/cgroup_clean" &gt; /dev/cgroup/cpu/release_agent</i> <br> <br>
+2.执行：<i>sudo chmod +x /etc/rc.local</i> <br> <br>
+3.在~/.bashrc文件中加入以下代码：<br> <i>
+if [ "$PS1" ] ; then<br>
+mkdir -m 0700 /dev/cgroup/cpu/user/$$<br>
+echo $$ &gt; /dev/cgroup/cpu/user/$$/tasks<br>
+fi</i> <br> <br>
+4.运行命令：<i>sudo gedit /usr/local/sbin/cgroup_clean</i> <br> <br>
+5.粘贴代码：<br> <i>
+#!/bin/sh<br>
+rmdir /dev/cgroup/cpu/$1</i> <br> <br>
+6.保存文件，执行命令：<i>sudo chmod +x /usr/local/sbin/cgroup_clean</i> <br> <br>
+7.重启电脑。
+➜Transmission 2.12 发布
+https://www.solidot.org/story?sid=21090	6600
+<a href="http://www.osmsg.com/">OSMSG.com</a> 写道 <i>"<a href="http://www.transmissionbt.com/">Transmission</a>是一个跨平台的BitTorrent客户端，拥有简洁清爽的用户界面。是大部分Linux发行版的默认BT下载工具。Transmission 2.12 特性：用户可设置blocklist URL；修复错误，改进CPU速度；减少DHT消息所占带宽；修正2.10版在uClibc系统上的问题；更新jQuery到1.4.3。"</i>
+➜Woz关于Android压倒IOS的言论被错误引用
+https://www.solidot.org/story?sid=21091	8100
+昨天，荷兰报纸《De Telegraaf》报导说，苹果联合创始人Woz<a href="__SLASHLINK__" sect="it" sid="10/11/18/1452214" sn="article" tid="26">相信Android而不是iOS</a>将在智能手机平台上笑到最后。<i>
+此番言论迅速被媒体广泛传播。Engadget的跟踪报导<a href="http://www.engadget.com/2010/11/18/exclusive-woz-misquoted-almost-every-app-that-i-have-is-bette/">发现</a>，Woz的话被报纸错误引用了。Woz声称他从未说过Android比iOS好，他说几乎每一个移动应用程序，在iPhone上的表现都要好于Android，这不是给Android泼冷水，但说Android好于iOS绝对是异想天开的事情，“虽然它很差劲，但抢到了更大的市场份额”。</i>
+➜Fcitx 3.6.4/4.0.0 发布
+https://www.solidot.org/story?sid=21092	9900
+<a href="http://www.osmsg.com/">OSMSG.com</a> 写道 "<a href="http://www.fcitx.org/">Fcitx</a>（小企鹅输入法Free Chinese Input Toy for X）是一个以 GPL方式发布的、基于XIM的简体中文输入法(即原来的G五笔)，包括拼音(全拼和双拼)、区位以及码表输入模块，支持 Linux、FreeBSD 操作系统。 <a href="http://www.fcitx.org/">Fcitx</a> 3.6.4/4.0.0 特性：相对于 3.6.X 系列，本次 4.0 系列带来如下全新功能：           &nbsp; &nbsp; &nbsp; &nbsp; * 皮肤支持，采用cairo做绘制，pango负责字体，界面支持真透明；<br>
+&nbsp; &nbsp; &nbsp; &nbsp; * 拼音支持多个词库：利用createPYMB创建的词库放在~/.config/fcitx/pinyin下面即可；<br>
+&nbsp; &nbsp; &nbsp; &nbsp; * 额外的输入法支持（目前只有fcitx-sunpinyin）；<br>
+&nbsp; &nbsp; &nbsp; &nbsp; * 基于gtk的图形配置工具fcitx-config（并不包含在fcitx源码包中）；<br>
+&nbsp; &nbsp; &nbsp; &nbsp; * 右键的菜单支持。<br>
+&nbsp; &nbsp; &nbsp; &nbsp; * 修复 Bug。<br>
+&nbsp; &nbsp; &nbsp; &nbsp; * 更换词库到 open phrase 以规避版权问题。<br> <br>一些其他的小功能以及bugfix：<br>
+&nbsp; &nbsp; &nbsp; &nbsp; * 拼音支持ng/gn的混用，例如输入ying/yign都可以辨认；<br>
+&nbsp; &nbsp; &nbsp; &nbsp; * 可以配置快速切换英文时将已有文字上屏；<br>
+&nbsp; &nbsp; &nbsp; &nbsp; * 快捷键支持禁用；<br>
+&nbsp; &nbsp; &nbsp; &nbsp; * 系统托盘和tint2，trayer等兼容性问题；<br>
+&nbsp; &nbsp; &nbsp; &nbsp; * 整体采用utf-8而不是gbk编码；<br>
+&nbsp; &nbsp; &nbsp; &nbsp; * 更多的调试信息；<br>
+&nbsp; &nbsp; &nbsp; &nbsp; * 更方便的码表配置。（分散的配置文件，而不是集中在tables.conf当中）；<br>
+&nbsp; &nbsp; &nbsp; &nbsp; * scel2org，将sogou细胞词库转为原始的fcitx词库文件；<br>
+&nbsp; &nbsp; &nbsp; &nbsp; * 避免僵尸进程。"
+➜中国科学家数量将在两年内成为世界第一
+https://www.solidot.org/story?sid=21093	11400
+《明报》<a href="http://hk.news.yahoo.com/article/101118/4/lbrs.html?utm_source=twitterfeed&amp;utm_medium=twitter">引用</a>上周发布的《<a href="http://www.unesco.org/new/zh/media-services/single-view/news/research_and_development_usa_europe_and_japan_increasingly_challenged_by_emerging_countries_says_a_unesco_report/">2010年教科文组织科学报告</a>》称，中国的科研人员和工程师的人数将在未来一两年内超越美国，成为世界第一。<i>
+报告称，从2000年至2008年，中国国内研发总支出从896亿元遽增至4616亿元，年均增幅达22.8%。其研发总支出占国内生产总值的比例也从2000年的0.9%升至2008年的1.54%。中国在全球科技领域的地位上升，还体现在科研人员数量上。截至2007年，中国的科学研究人员总数为142.34万，人数已接近美国和欧盟的水平。目前，中，美，欧研究人员人数各约占全球总数的20%，紧随其后的是日本（10%）和俄罗斯（7%）。
+中国在科技领域上升势头固然迅猛，然而，中国科研在很多方面与发达国家仍有明显差距。中国重要科学文献的引用率为4.61%，与美国的14.28%和日本9.04%，差距显著。此外，中国科研在原创性和影响力上也有不足。</i>
+➜Stuxnet是制造业最大威胁
+https://www.solidot.org/story?sid=21094	19500
+神秘的Stuxnet蠕虫是专门设计攻击西门子工业控制系统，赛门铁克研究人员推测它针对的是伊朗的核设施，<a href="__SLASHLINK__" sect="it" sid="10/11/16/0953240" sn="article" tid="100">悄悄去干扰铀浓缩</a>。<i>
+政府官员和专家周三发出警告，Stuxnet蠕虫可能会被修改去攻击更多的工业部门，<a href="http://arstechnica.com/tech-policy/news/2010/11/stuxnet-attacks-could-move-beyond-iranian-nuclear-plants.ars">它是目前已知的制造业最大威胁</a>。四通八达的企业内网，再加上使用<a href="http://en.wikipedia.org/wiki/SCADA">SCADA</a>系统，让企业的工业基础设施日益容易受到软件攻击。类似的工业控制系统广泛使用在制造业中，如食品生产、汽车组装和化学品制造。</i>
+➜诺贝尔奖评选委员会被指未做足功课
+https://www.solidot.org/story?sid=21095	21600
+《自然》<a href="http://www.nature.com/news/2010/101118/full/news.2010.620.html?s=news_rss">报道</a>，一位知名的石墨烯研究人员17日<a href="http://www.gatech.edu/graphene">致函</a>诺贝尔物理学奖评选委员会，他不是抱怨自己未获奖，而是指出关于石墨烯的“<a href="http://www.nature.com/nature/newspdf/NobelBackgrounder.17November2010.pdf">背景资料</a>（PDF）”存在一系列错误，指责评选委员会未做足功课。<i>
+2010年诺贝尔物理学奖授予了发现石墨烯的英国曼切斯特大学物理学奖Andre Geim和Konstantin Novoselov，在收到美国乔治亚理工学院科学家Walt de Heer的抱怨之后，诺贝尔官网修改了在线文档的一处错误。De Heer持有石墨烯的电子学应用专利，并在早期测量了部分石墨烯的电子效应。Geim认为de Heer是哗众取宠，抬高自己。De Heer确实不赞同授予Geim和Novoselov诺贝尔奖，认为得奖过早，但否认除了纠正错误外还有其它动机。</i>
+➜一颗不太可能存在的行星
+https://www.solidot.org/story?sid=21096	25500
+根据最新一期《科学》杂志的<a href="http://www.sciencemag.org/content/early/2010/11/17/science.1193342">报告</a>，天文学家在银河外围发现了<a href="http://arstechnica.com/science/news/2010/11/planet-discovered-orbiting-closely-to-old-post-red-giant-star.ars">一对不协调的天体</a>：一颗巨大的行星环绕着一颗死亡的恒星。它们的存在和位置可能只有两种解释：行星要么是在红巨星向外延伸期间幸存下来，要么它是从其它地方迁移过来。这是首次在一颗金属匮乏且非常古老的恒星周围发现行星。<i>
+编号为HIP 13044的恒星位于Helmi stream。它相当古老，已度过了红巨星阶段并开始收缩。进一步观察显示它缺乏金属。通常，金属匮乏的恒星系统不太可能有行星形成。然而研究人员却从望远镜里发现了一颗巨大行星。它的质量至少是木星的1.25倍，轨道半长轴0.116天文单位。由于HIP 13044属于银河的一个被肢解的卫星星系，研究人员推测，这颗本应被恒星吞噬的行星，可能源自于我们的银河之外。</i>
+➜新浪微博上线“关系中心”
+https://www.solidot.org/story?sid=21097	29100
+<a href="http://horflu.com/">horf</a> 写道 <i>"今天<a href="http://t.sina.com.cn/horf">新浪微博</a>的首页多了一个<a href="http://horflu.com/2010/11/sina-microblog-lauches-relation-center/">“关系中心”链接</a>，由于官方的微博小秘书没有做任何宣传，可以认为这个功能是低调上线的。点开这个页面查看一下，默认显示“我关注的人”，右侧边栏里从上到下依次显示“我关注的人”及分组情况，“我的粉丝”，“找到感兴趣的人”，“邀请朋友”等链接。在侧边栏最底下出现了一个之前没有的功能——“推荐”功能，点开“新建推荐”，可以发现这个功能可以把自己关注的人有选择地通过私信的方式发送给可以接收你的私信的人。新浪微博似乎走在了一个SNS（社会化网站）+微博的方向上。</i>
+此前新浪CEO曹国伟表示，<a href="http://cn.wsj.com/gb/20101117/rth121852.asp">微博盈利只是时间问题</a>。目前为止新浪微博用户数已达5000万，平均每天发布2500万条帖子。
+➜丰田推出电动版RAV4，引擎来自特斯拉
+https://www.solidot.org/story?sid=21098	30000
+丰田公司在洛杉矶车展上<a href="http://tech.slashdot.org/story/10/11/18/198228/Toyota-Introduces-Electric-RAV4-Powered-By-Tesla-Motor">展示全电动版的RAV4越野车</a>，其引擎源自特斯拉。日本最大的汽车制造商与硅谷电动汽车制造商Tesla Motors合作开发电动型号的“RAV4 EV”，Tesla提供锂离子电池组，双方计划在明年制造35辆测试版，2012年投入批量生产。RAV4 EV将在驾驶性能上与现有型号的RAV4不相上下。
+➜微软称Linux已到生命尽头
+https://www.solidot.org/story?sid=21099	31500
+这句话不是鲍尔默或任何微软总部的高层说的，而是微软俄罗斯分公司主席Nikolai Pryanishnikov说的。他发表言论的背景是俄罗斯计划开发基于GNU/Linux的国家操作系统。<a href="http://linux.slashdot.org/story/10/11/18/1635230/Is-Linux-At-the-End-of-Its-Life-Cycle">Pryanishnikov强烈反对这项计划</a>，他说：“我们必须牢记Linux不是一种俄罗斯的操作系统。此外，它正处于寿命周期的末尾。”
+➜在教授发怒后200多名学生承认作弊
+https://www.solidot.org/story?sid=21100	33480
+中佛罗里达大学教授Richard Quinn非常生气，因为有充足证据证明他的许多学生在期中考试中作弊了。<a href="http://www.telegraph.co.uk/news/newsvideo/weirdnewsvideo/8140456/200-students-admit-cheating-after-professors-online-rant.html">他发表了一个演讲</a>（视频），希望能令学生终身难忘。视频被贴到了YouTube上。<i>
+在演讲中，Quinn告诉全班学生，他利用统计分析和其它调查工具鉴定出了大部分作弊者。他没有将名单交给学校管理部门，而是提出一项交易，因为他不希望向学生父母解释为什么他们的孩子没能毕业，这项交易是：学生可以假装没被发现作弊，或者主动告诉实验室指导教师，完成剩下的课程，得到应得的成绩。这些主动站出来的作弊者将需要完成4小时的伦理课程，他们的回报是作弊记录将不会永久保存。到目前为止，<a href="http://idle.slashdot.org/story/10/11/18/152256/200-Students-Admit-Cheating-After-Professors-Online-Rant">已经有200多名学生承认作弊</a>。</i>
+➜中国政府决定强制控制食品价格，谴责美国
+https://www.solidot.org/story?sid=21101	36720
+<a href="http://www.globalfabric.com/?u=dick">面料网</a> 写道<i> "中国国务院总理温家宝召开国务院常务会议，表示要确保市场供应，促进价格稳定，必要时对重要的生活必需品和生产资料实行价格<a href="http://www.gov.cn/ldhd/2010-11/17/content_1747553.htm">临时干预措施</a>。</i>
+中国上个月的消费价格指数增长了4.4%，通货膨胀造成几百种商品物价飞涨，从大蒜到瓷器，从麦当劳的“巨无霸”汉堡包到燃油，价格都在上涨。中国政府将通货膨胀<a href="http://www.voanews.com/chinese/news/20101118--Chinese-Blame-US-Food-Inflation-Bites-109022009.html">归罪于美国的货币政策</a>。北京表示，美国给经济注入6千亿美元的行动将会导致大量现金流往中国等新兴经济体，刺激通货膨胀。但实际上中国本国的货币增发与物价上涨关系更密切，中国9月底的M2(广义货币发行量)余额是69万亿，美国是8万亿美元，中国的GDP只有美国的1/3，但是货币发行M2今年<a href="__SLASHLINK__" sect="mainpage" sid="10/11/06/085235" sn="article" tid="129">已经超过美国</a>。
+➜微软发布统一沟通产品Lync 2010
+https://www.solidot.org/story?sid=21102	38880
+<a href="http://horflu.com/">horf</a> 写道<i> "微软<a href="https://www.microsoft.com/china/communicationsserver/lyncserver2010/launch.aspx">发布</a>了新一代统一沟通方案产品Lync Server 2010，其简单界面将语音、IM、音频、视频和 Web会议功能结合起来，支持Office、SharePoint、Exchange，支持与Windows Live Messenger进行语音和视频通话。用户现在可注册下载<a href="http://technet.microsoft.com/zh-cn/evalcenter/ff808407.aspx">180 天试用版软件</a>（简体中文）。</i>
+➜IE9的编译优化问题
+https://www.solidot.org/story?sid=21103	41100
+Mozilla工程师Rob Sayre在SunSpider测试中，注意到IE9的表现有些诡异，在cordic测试中IE9的反应几乎即时，他略微修改源代码后它的速度就降了下来，他为此向IE开发团队<a href="https://connect.microsoft.com/IE/feedback/details/622386/optimizations-applied-to-sunspider-math-cordic-are-too-fragile">递交了Bug报告</a>。当然<a href="__SLASHLINK__" sect="software" sid="10/11/18/0114246" sn="article" tid="31">这并非之前所指责的作弊问题</a>，而是<a href="http://arstechnica.com/microsoft/news/2010/11/lies-damned-lies-and-benchmarks-is-ie9-cheating-at-sunspider.ars">编译优化问题</a>。<i>
+微软在编译IE9时进行了优化，但Sayre认为此种优化是十分脆弱的，仅仅稍微改动代码便使之无效。IE开发者采用的是“<a href="http://en.wikipedia.org/wiki/Dead_code_elimination">无用代码删除</a>”，一种十分常见的编译优化技巧，通过移除程序中无用的代码加快运行速度。以cordic为例，IE9是把该子项目当成“无用代码”整体略过。优化虽然合法，但就测试以及真实世界的应用而言完全无意义。Sayre认为这种优化有害无益。他认为微软的“无用代码删除”优化可能对C#或Java等语言是合理的，但对JavaScrip的某些不常用功能是不合理的。</i>
+➜没有X的未来
+https://www.solidot.org/story?sid=21104	43200
+Lwn.net的一篇文章讨论了<a href="http://lwn.net/Articles/413335/">X之后的未来</a>：<i>
+<a href="http://zh.wikipedia.org/zh/X_Window%E7%B3%BB%E7%B5%B1">X Window System</a>已有25年的历史，它至今仍然运转良好，但就像没人能永生，一个没有X的未来会怎样？...现在，依旧有大量重要事情需通过X server完成，如果放弃X，它们就需要借助其它。模式设置正交给内核，但仍然有许多设备没有内核模式设置支持；输入设备支持部分已交给evdev；图形内存管理也在交给内核——很多任务都进入了内核，但还有一些任务内核无法完成，例如Proper key mapping。</i>
+➜北京空气污染刷新纪录
+https://www.solidot.org/story?sid=21105	51900
+今天（19日）中午12点，美国驻北京大使馆<a href="__SLASHLINK__" sect="internet" sid="09/06/20/0449210" sn="article" tid="17">设立的观察站</a>记录到了“超过指标”的数据“<a href="http://twitter.com/#!/BeijingAir/status/5475636697104384">PM2.5; 540.0; 500; Beyond Index</a>”，之前11点的PM2.5指数更是<a href="http://twitter.com/#!/BeijingAir/status/5459789840654336">达到557</a>，创下今年入冬以来最严重污染记录。PM2.5是指直径小于等于2.5微米的颗粒，这种颗粒可以穿透人体防护直达肺部深处，危害人体健康，NASA卫星绘制的2001-2006年间<a href="__SLASHLINK__" sect="science" sid="10/09/24/036259" sn="article" tid="100">全球PM2.5浓度鸟瞰图显示</a>，中国沿海一带的污染十分严重。PM2.5指数通常的最高值是500，接近500即表示呆在户外相当危险。然而今天已经超过了这个值。<i>
+<a href="http://www.bbc.co.uk/zhongwen/simp/china/2010/11/101119_beijing_pollution.shtml">根据中国媒体报道</a>，受大雾影响，北京首都机场和南苑机场均出现不同程度的航班延误，部分高速公路的能见度较低，部分路段已经采取了交通管制措施。而中国环境监测总站发布的重点城市污染消息，北京污染指数（PM10，即直径小于等于10微米的颗粒）达313，首要污染物为“可吸入颗粒物”，空气状况的级别达V级，达到“重污染”状况。气象专家提醒，北京市民做好呼吸道防护措施，避免长时间户外活动。美联社报道，美国驻北京大使馆周五发布的空气污染信息“用光了所有惯用的形容词，一度用'糟得令人发疯'来描述”，后来这一用词被删除了，称其描述并不准确。</i>

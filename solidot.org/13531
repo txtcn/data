@@ -1,0 +1,59 @@
+➜能够杀死多数癌细胞的廉价、安全的药物
+https://www.solidot.org/story?sid=1724	2520
+<a href="http://www.livepine.cn/">livepine</a> 写道 <i>"<a href="http://www.newscientist.com/article.ns?id=dn10971&amp;feedId=online-news_rss20">《新科学家》杂志报道</a>，这种药物叫二氯代醋酸盐(DCA)，已经作为治疗少见的新陈代谢异常疾病的药物多年，所以相对安全。加拿大艾伯特大学的科学家在培养液的人细胞中测试DCA，发现它杀死了肺、乳腺和大脑的癌细胞，但没有影响健康细胞。老鼠喝了掺入DCA的水几个星期后，其体内感染的人肿瘤细胞也大大缩小了。DCA通融过唤醒癌细胞内的线粒体来启动细胞自我毁灭的过程(apoptosis)，从而杀死癌细胞。DCA可能造成一些病人疼痛、麻木和行动障碍，但如果它能杀死所有的癌细胞这种代价是值得的。下一步研究者将进行临床试验，但是制药公司不会赞助，因为DCA没有专利，他们无法获得利润。如果DCA成功的话，它将非常容易制造，而且非常便宜。"</i>
+➜在IE7下载量超过1亿次时，Firefox仍然取得进步
+https://www.solidot.org/story?sid=1725	4020
+<a href="mailto:wangpenghui@gmail.com">wangph</a> 写道 <i>"上周微软公司的Internet Explorer 7浏览器的下载次数达到<a href="http://blogs.msdn.com/ie/archive/2007/01/12/100-million-ie7-installations.aspx">1亿次</a>。但是在他发布三个月以来，Firefox的市场份额依然在增长。InformationWeek报道，<a href="http://www.informationweek.com/news/showArticle.jhtml?articleID=196901142">几乎所有的IE7的增长都来自于对于IE6的升级</a>。目前看来并没有大量的用户重新去使用IE.分析师
+称:微软终于碰到了真正的竞争？"</i>
+➜ASP无刷新技术简单实例[适合IE浏览器]
+https://www.solidot.org/story?sid=1726	10980
+<a href="http://www.shoppingday.cn/">任风晾干的泪</a> 写道 <i>"网上关于ASP无刷新技术的教程很多都以复杂繁琐的篇幅去实现如聊天室等程序，我认为对于初学者只要先明白其中原理，更多功能可自己扩展。所以这里通过几段代码说明此原理，希望能让初学者举一反三。正所谓“授人以鱼不如授人以渔”，有兴趣的朋友可加QQ号码64943917一起讨论，或加ASP技术讨论群QQ群：3316653。
+"</i>           这里总共分两个文件，一个为test.asp,功能为向服务器提前当前时间，读者可自行扩展，如通过连接查询数据库等操作，另一个文件为show.html，实时从test文件读取内容并显示出来。代码如下。
+<br> show.htm
+<br> <br>&lt;SCRIPT language=JAVASCRIPT&gt;
+<br> <br>function GetResult() //利用XMLHTTP读取服务器端内容<br>{<br>var oBao = new ActiveXObject('Microsoft.XMLHTTP');<br>oBao.open('PO ST','test.asp',false);<br>oBao.send();<br>var strResult = unescape(oBao.responseText);<br>td.innerText = strResult;<br>}
+<br> <br> <br>function MyShow() //每五秒从服务器读取一次数据<br>{<br>timer = window.setInterval('GetResult()',5000);<br>}<br>&lt;/SCRI PT&gt;<br>&lt;P id=TD&gt;&lt;/p&gt;
+<br>
+test.asp
+<br> <br>测试文字：<br>获取服务器时间，以验证无刷新读取是否成功 &lt;%=now()%&gt;<br>这里只是简单读取服务器时间，如需其他功能可自行任意扩展。
+<br>    将以上两个文件放置于你的站点目录下，运行show.html就可以预览了，解决中文乱码问题，我将test.asp用记事本保存为utf-8编码。根据此原理可制作无刷新聊天室，无刷新在线客服等程序。以上代码在IIS5，IE5.5环境下测试通过。
+<br> <br>  注意以上文件只在IE及IE内核的浏览器效果下生效，关于浏览器兼容性问题，我将在另一篇文章完整讨论。
+<br> <br>
+原创文章，转载请注明出处<br>
+作者：任风晾干的泪 shoppingday(a)shoppingday.cn<br>
+出处：<a href="http://www.shoppingday.cn/">百分百工作室</a> <br>
+<a href="http://www.shoppingday.cn/content/content-15.Html">http://www.shoppingday.cn/content/content-15.Html</a>
+➜Half-Life 2将分成Orange和Black版
+https://www.solidot.org/story?sid=1727	18720
+<a href="mailto:a.hf9912+solidot@gmail.com">matrix</a> 写道 <i>"去年透露出的一些情况让半条命的忠实玩家颇为期待今年年初将发布的《Half Life 2：第二章》及其附带的两款游戏。<a href="http://blog.wired.com/games/2007/01/halflife_2_pric.html">不过Valve又跳票了</a>，预计游戏最终会在今年夏天发布。同时游戏<a href="http://pc.ign.com/articles/755/755915p1.html">将分成两个版本</a>，分别用颜色作为代号。PC版代号为Half-Life 2: Orange，包括了《Half Life 2：第二章》，Portal及《团队要塞 2》，零售价$39.99。Half-Life 2: Black则是游戏机版本（Xbox360/PS3），将包括所有的Half Life 2系列游戏（Half-Life 2，第一章和第二章，Portal和团队要塞），零售价$59.99。等待是美德。"</i>
+➜高龄魔兽世界玩家的自白
+https://www.solidot.org/story?sid=1728	19740
+<a href="http://playbeyond.cn/">tar9918</a> 写道 <i>"时代周刊上刊出一篇<a href="http://www.time.com/time/arts/article/0,8599,1577502,00.html">《30岁玩家的自白》</a>很有意思。
+我曾问暴雪的首席运营官Paul Sams，人们为什么会迷恋WoW？他说，“这很简单，在你平凡的生活中，你多少次觉得你象个英雄？什么时候，你觉得你做了件大事，一件有意义的事？人们需要逃避，逃避平凡的生活。这就是人们所需要的。”
+<a href="http://www.playbeyond.cn/archives/157">全文链接</a>"</i>
+➜六种入侵检测工具保护您的电脑
+https://www.solidot.org/story?sid=1729	22560
+<a href="mailto:wangpenghui@gmail.com">wangph</a> 写道 <i>"InformationWeek有一篇关于<a href="http://www.informationweek.com/news/showArticle.jhtml?articleID=196901062">六种入侵检测工具的评论</a>。去年索尼公司发布的一些音乐光盘中，藏匿了一个偷偷植入用户电脑的后门程序。之后这篇文章就受到了很大的关注。这篇评论讲述了如何使用如下六种监测器禁止入侵后门程序进入从而保护自己的电脑。
+他们是
+<a href="http://www.f-secure.com/home_user/complete_protection.html">F-Secure Backlight</a>,<a href="http://www.blogcn.com/user17/pjf/index.html">IceSword</a>,<a href="http://www.rkdetector.com/"> RKDetector</a>, <a href="http://www.trendmicro.com/download/rbuster.asp">RootkitBuster</a>, <a href="http://www.microsoft.com/technet/sysinternals/utilities/RootkitRevealer.mspx">RootkitRevealer</a>,和<a href="http://www.rku.xell.ru/?l=e.mspx">Rookit Unhooker</a>。"</i>
+➜鳕鱼酶可杀死禽流感病毒
+https://www.solidot.org/story?sid=1730	22680
+<a href="mailto:a.hf9912+solidot@gmail.com">matrix</a> 写道 <i>"一种冰岛<a href="http://www.icelandreview.com/icelandreview/daily_news/?cat_id=16539&amp;ew_0_a_id=257558">鳕鱼酶可能可治愈禽流感</a>。冰岛Ensímtaekni公司参与的最新试验显示，仅仅在五分钟内，鳕鱼酶就杀死了99%的H5N1病毒。这种名为叫penzim的酶杀手提取自鳕鱼内脏，具有美好的前景，可生产出各类药品。针对H5N1病毒的试验是在伦敦进行的，Ensímtaekni公司CEO、生物化学家Jón Bragi Bjarnason表示对于治愈禽流感结果非常兴奋。“人们很担心禽流感病毒可能会使人类流感病毒发生变异，对于这种情况我们已有了治疗手段。”Bjarnason认为penzim酶还具有治疗普通流感，儿童湿疹和关节炎的功能。"</i>
+➜Sun将GPL第三版加入到OpenSolaris版权列表
+https://www.solidot.org/story?sid=1731	26100
+<a href="mailto:wangpenghui@gmail.com">wangph</a> 写道 <i>"来自<a href="http://www.sun.com/">SUN公司</a>内部的消息称：不久的将来<a href="http://www.eweek.com/article2/0,1895,2084284,00.asp">GPL第三版将有可能被加入到OpenSolaris版权列表</a>。文中指出：Sun公司并没有官方声明将在OpenSolaris中使用双版权，CDDL和GPL第三版，Tom Goguen，Solaris软件副总裁，对<a href="http://www.eweek.com/">eWEEK</a>说道，在Solaris以后的发展规划中，其他的开放源代码技术将会扮演很重要的角色。使用Sun一直密切关注的GNU相关技术，我们有可能会做一些类似的工作，互相包容。他还说，我们也希望在Solaris发展中，以全新的视角来关注开发者和系统管理员的的需求，同时，下一个版本中一些独立部分，也会逐渐以组件或者是面向市场的技术推出。"</i>
+➜IsoHunt暂时关闭
+https://www.solidot.org/story?sid=1732	26160
+<a href="mailto:a.hf9912+solidot@gmail.com">matrix</a> 写道 <i>"世界上最受欢迎的BT种子搜索网站之一：IsoHunt，在没有预先通知的情况下被ISP拔掉了网线，因此<a href="http://www.isohunt.com/">在本周二暂时下线</a>。这可能与MPAA的法律诉讼相关，MPAA正向各个BT搜索网站提起了诉讼。网站管理人员表示将把ISP从美国转移到加拿大，并表示瑞典和Sealand这样的地方不在选择重设服务器的范围内。“BitTorrent创造出来是被用于传递较大的多媒体文件。我们所持的立场仍然是作为一个搜索引擎和BT聚合器。”可惜这番表态不能解决任何问题。"</i>
+➜中国将不再是个自行车王国
+https://www.solidot.org/story?sid=1733	29520
+<a href="mailto:a.hf9912+solidot@gmail.com">matrix</a> 写道 <i>"无论如何，共产主义中国在热烈拥抱资本主义和消费至上主义。<a href="http://www.thestar.com/opinion/article/170671">世界上人口最多的国家正迅速建立以汽车为基础的经济</a>。如果你想到了全球变暖以及由此带来的对我们星球的潜在影响，这确实不是个好消息，我们当然不能阻止普通人去追求舒适的生活，中国人正走在美国的老路上。Henry Gold现在住在新疆库尔勒市，正计划在2007年夏天组织一些人用自行车沿着丝绸之路在108天内从伊斯坦布尔骑到北京，长度大约为1万公里。一个目的是证明在可忍受的限度内自行车也可进行远距离运输，更重要的是不会导致任何生态灾难。也许这是一次唐吉柯德式的行动。"</i>
+➜美海军测试8兆焦耳电磁轨道炮
+https://www.solidot.org/story?sid=1734	32340
+<a href="mailto:a.hf9912+solidot@gmail.com">matrix</a> 写道 <i>"Free Lance-Star报报道了位于维吉尼亚的美国海军水面武器中心成功示范了炮口动能达到<a href="http://fredericksburg.com/News/FLS/2007/012007/01172007/251373">8兆焦耳的电磁轨道炮</a>。32兆焦耳的电磁轨道炮将在今年6月测试，而64兆焦耳的电磁轨道炮预计将被用于延伸海军火炮的射程（当前5英寸的火炮射程在15海里左右），到2020年使火炮射程超过200海里。这种小型的，外形能够满足高速飞行的动力学要求的炮弹，将以极低的价格取代部分战斧式导弹。轨道炮的最终型号将可以把炮弹射到95英里高的太空，该系统属于里根提出的SDI计划（星球大战）中最先要求达到的部分。不过报道中提到一个有趣的消息是这种电磁轨道炮每天开火不能超过十次，推测是由于庞大的电力需求。"</i>
+➜出版业中人民的力量
+https://www.solidot.org/story?sid=1735	55260
+<a href="http://solidot.org/">faif</a> 写道 <i>"中国青年报最近的<a href="http://zqb.cyol.com/content/2007-01/10/content_1637181.htm">这篇文章</a> 介绍了近年来源自网络的作品被出版社看中、炒作、出版的这条产业链的形成。“这个链条2005年才形成，现在已经相当成熟。”图书策划人沈浩波说。有趣的是原来出版社看到长篇小说的作品都很犹豫，生怕卖不出去。而现在有些来自网路的作品却是越长越好。例如“《诛仙》至今连载7部，每部销量都突破20 万册。” 文章指出，网络时代从选书到出版，都体现了”人民的力量“。"</i>
+➜英国约克大学Linux应用访谈
+https://www.solidot.org/story?sid=1736	61860
+<a href="mailto:kingliyou@gmail.com">kingliyou</a> 写道 <i>"<a href="http://blog.chinaunix.net/u/2555/showart_221577.html" title="这篇旧文">这篇旧文</a>, 是我在就读<a href="http://www.cs.york.ac.uk/" title="约克大学">约克大学</a>研究生时候和计算机系的系统高级主管 James Carter 先生的一次对话，有关约克大学计算机系Linux应用和部署。有趣的是国外大学部署Linux，和选择Linux发行版的态度是很务实的。选择Linux很大的一个原因是很多老师习惯了Unix下的工作，所以Linux对于他们更加顺手，另外还有很多其他的因素......</i>

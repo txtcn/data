@@ -1,0 +1,59 @@
+➜OpenSSL 1.0.2a修复14个安全漏洞
+https://www.solidot.org/story?sid=43388	4716
+<a href="http://citypw.blogspot.com">Shawn the R0ck</a> 写道 <i>"几天前(2015年3月16日），SSL/TLS的著名自由软件实现<a target="_blank" href="https://mta.openssl.org/pipermail/openssl-announce/2015-March/000020.html">OpenSSL社区邮件列表中</a>公布了在新版本中将会有重大漏洞的修复，2015年3月19日，OpenSSL 1.0.2a正式发布，其中一共修复了14个安全漏洞，其中2个属于高风险级别，<a target="_blank" href="https://github.com/openssl/openssl/commit/34e3edbf3a10953cb407288101fd56a629af22f9">CVE-2015-0291</a>可以让客户端发起密钥重协商请求时使用一个无效的签名算法扩展去触发空指针引用(NULL DEREF)导致服务器crash掉，<a target="_blank" href="http://www.solidot.org/story?sid=43185">CVE-2015-0204就是FREAK漏洞</a>，一开始被认为是低危漏洞，但最近的讨论都把NSA的实际漏洞利用放在了威胁建模里，所以最终OpenSSL社区安全公告认定为高危，在<a target="_blank" href="http://www.solidot.org/story?sid=42577">后棱镜时代，SSL/TLS的自由软件实现比以前任何时候都重要</a>，建议企业开始计划打补丁，不然等到有公开的漏洞利用就只能被白帽子们日。btw：企业的运维们睡觉时斯拉夫兵工厂可是在冒烟的;-)"</i>
+➜微软澄清它不会为盗版Windows 10提供支持
+https://www.solidot.org/story?sid=43389	8119
+微软<a target="_blank" href="http://www.solidot.org/story?sid=43376"><u>证实</u></a>所有盗版Windows用户都可以免费升级到Windows 10，此举令所有人感到震惊。在媒体的追问下，软件巨人又透露了一些信息：盗版Windows系统升级到Windows 10后仍然会被认为是盗版，微软不会<a target="_blank" href="http://venturebeat.com/2015/03/19/microsoft-says-free-windows-10-upgrades-for-pirates-will-be-non-genuine-and-unsupported-stays-mum-on-security/"><u>提供支持</u></a>。但所谓的支持是什么意思，雷德蒙德巨人又没有细说。如果说不提供支持就是不会推送系统更新的话，那么微软和奇虎360以及腾讯的合作倒也讲的通了，因为中国的盗版用户本就是利用360等软件去升级系统，未来他们将必须依赖于360或腾讯的软件去确保系统安全。微软发言人说，盗版软件不是微软发行的，没有来自微软或信任合作伙伴的正确授权或支持，如果在升级前设备被认为是盗版或未授权，那么升级后它仍然被认为是盗版或未授权。微软发言人又说了一通它说了很多遍的废话，说盗版系统面临恶意软件感染、身份盗用、信用卡欺诈等各种安全风险。
+➜Greatfire遭到每小时26亿次请求的DDoS攻击
+https://www.solidot.org/story?sid=43390	10487
+被网信办称为反华网站的Greatfire透过其博客<a target="_blank" href="https://en.greatfire.org/blog/2015/mar/we-are-under-attack"><u>披露</u></a>，从3月17日起它遭到每小时26亿次请求的DDoS攻击，是平常水平的2500倍。Greatfire设立的所有镜像网站都受到了攻击影响。攻击导致了带宽费用增至每天3万美元。而为Greatfire提供托管服务的云计算服务商亚马逊还没有表示是否放弃这笔费用。如果亚马逊不打算放弃，那么Greatfire的运作将会受到严重挤压。它呼吁用户发邮件给亚马逊阐述你关于言论自由重要性的想法。审查与反审查的斗争实际上也是金钱的斗争，但如果一方是以国家为后盾，那么另一方获胜的可能性是很小的。
+➜中国公司推出基于IBM Power架构的定制芯片和服务器
+https://www.solidot.org/story?sid=43391	11679
+《华尔街日报》<a target="_blank" href="http://cn.wsj.com/gb/20150320/tec071949.asp"><u>报道</u></a>，IBM从2013年开始向其他公司提供Power处理器授权， 并建立了OpenPower联盟，现在中国科技公司也加入了这个项目。苏州中晟宏芯将使用IBM Power8架构提供定制化的芯片设计解决方案。该公司董事长朱亚东在接受采访时表示，它正在与中国潜在客户就使用Power8技术进行磋商，包括电信运营商和电力公司。他预计该芯片产品将于6月面世。
+IBM负责OpenPower联盟的总经理Ken King称，去年秋季该项目获得中国官员认可。
+➜特斯拉电动汽车将在夏天推出自动驾驶模式
+https://www.solidot.org/story?sid=43392	13354
+特斯拉CEO  Elon Musk<a target="_blank" href="http://www.nytimes.com/2015/03/20/business/elon-musk-says-self-driving-tesla-cars-will-be-in-the-us-by-summer.html?_r=0"><u>宣布</u></a>，该公司将在今年夏天向其电动汽车Model S推送软件更新，加入自动驾驶模式。目前汽车的自动驾驶仍然面临监管问题。特斯拉发言人Alexis Georgeson称，该公司的自动驾驶系统与当前的监管并不构成冲突，因为它并没有去掉司机，而只是将司机从繁琐的任务中解脱出来，使得他们可以集中注意力。行业分析师认为，特斯拉的计划有可能是革命性的一步。
+➜海盗党是冰岛支持率最高的党
+https://www.solidot.org/story?sid=43393	15252
+冰岛海盗党2013年在议会赢得了3个席位，如果现在举行选举的话，它有望成为<a target="_blank" href="http://www.visir.is/the-pirate-party-is-now-measured-as-the-biggest-party-in-iceland/article/2015150318848"><u>议会最大的党派</u></a>。根据最新的投票结果，海盗党的支持率达到了23.9%，超过其它所有党派。冰岛将在2017年举行大选，支持率是否能转变成实际的投票尚不清楚。如果海盗党真的成为冰岛最大党，它很有可能庇护目前在俄罗斯避难的Edward Snowden，甚至有可能给予他公民权。海盗党在2013年提出给相关法案，但没有进展。海盗党创始人、议员Birgitta Jónsdóttir表示她<a target="_blank" href="http://arstechnica.com/tech-policy/2015/03/icelandic-pirate-partys-rapid-rise-may-result-in-citizenship-for-snowden/"><u>很想帮助</u></a>这位NSA的泄密者。
+➜Gabe Newell称他理解半条命粉丝，但没有承诺任何续篇
+https://www.solidot.org/story?sid=43394	25212
+<div align="center"><img src="http://img.solidot.com.cn/0/101/lir3II0rvs5Y.jpg" align=""><br>
+<br>
+</div>
+Valve已从一家游戏开发商转变成了类似苹果和Google的发行商，它的Steam商店统治了PC数字游戏市场。在日进斗金之后，Valve看起来不再那么热衷于开发游戏，过去几年它发行的《传送门》系列和DOTA2都是在招募了外部人才后开发的，《求生之路》系列是它收购的Turtle Rock工作室开发的，而它赖以成名的《半条命》系列已有10年没有新作问世。类似曾经的《永远的毁灭公爵》，《半条命3》也被人年年唠叨了无数次无数遍。Valve联合创始人Gabe Newell<a target="_blank" href="https://soundcloud.com/gameslice/valve"><u>表示</u></a>他理解《半条命》粉丝，但表示他不想怀旧，而想学习和尝试新东西，不想在《半条命3》上重复旧游戏，他们想要游戏体验上的创新，如果没有创新他们不打算开发。然而，Valve的创新游戏《传送门》仰仗的<a target="_blank" href="http://games.slashdot.org/story/15/03/19/146238/gabe-newell-understands-half-life-fans-not-promising-any-sequels"><u>仍然是外部人才</u></a>。
+➜中国将在2020年前停止砍伐天然林
+https://www.solidot.org/story?sid=43396	30227
+国务院本周公布了<a target="_blank" href="http://www.gov.cn/xinwen/2015-03/17/content_2835513.htm"><u>一项计划</u></a>，将减少人工林的采伐量，并最终<a target="_blank" href="http://cn.nytimes.com/china/20150320/c20logging/"><u>停止天然林采伐</u></a>。
+根据该指导意见，中国将在2020年前将人工林的商业性采伐减少20%，停止国有天然林场的采伐。在采取人工造林和保护自然林的措施后，中国的森林覆盖面积过去几十年显著增加。但专家表示，人工造林也存在很多问题。大量同一品种的树木通常会被种在一起，容易患病出现树木大批死亡的情况。为了延缓荒漠化进程，中国北部采取了扩大森林覆盖面的措施，即人们所谓的“绿色长城”，但是种在那里的树木成活率很低。官方新华社报道，去年中国已禁止对黑龙江省的天然林进行商业性采伐。环境网站“中外对话”<a target="_blank" href="https://www.chinadialogue.net/article/show/single/ch/7404-China-tests-outright-logging-ban-in-state-forests">报道</a>，政府每年将安排23.5亿元人民币的财政预算，用于保障失业林业工作者的生活开支，并促进其他森林相关的行业的发展。
+➜2022年世界杯将在冬天举办
+https://www.solidot.org/story?sid=43397	30909
+FIFA<a target="_blank" href="http://www.fifa.com/worldcup/qatar2022/news/y=2015/m=3/news=fifa-executive-committee-confirms-november-december-event-period-for-q-2567789.html?intcmp=fifacom_hp_module_news_top"><u>证实</u></a>，2022年卡塔尔世界杯<a target="_blank" href="http://www.nytimes.com/2015/03/20/sports/soccer/fifa-confirms-winter-world-cup-for-2022.html"><u>将在冬天举行</u></a>，比赛时间是在11月和12月，决赛定在2022年12月18日卡塔尔的国庆节。在中东沙漠国家的灼热夏天举办足球比赛显然是不明智的和不切实际的，2010年卡塔尔赢得世界杯主办权后，就有人<a target="_blank" href="http://www.solidot.org/story?sid=23191"><u>建议</u></a>将比赛时间从夏天改为冬天，中东夏天的地面温度能达到50摄氏度。
+➜临床试验显示1毫克口服褪黑激素增加睡眠时间
+https://www.solidot.org/story?sid=43398	32368
+中国医学研究人员的临床试验显示，在一个有噪音和光照的睡眠环境下，睡觉前口服1毫克褪黑激素就能增加总的睡眠时间和快速眼动睡眠时间，降低睡眠延迟。<a target="_blank" href="http://ccforum.com/content/19/1/124"><u>研究论文</u></a>发表在《Critical Care》期刊上。褪黑激素是人体在黑暗环境中生成的激素，灯光会降低褪黑激素的生成，推迟进入睡眠的时间。20名男性20名女性健康被试完成了实验，他们的年龄在24岁到64年之间。实验中，被试被随机分成四组，一组口服褪黑激素，一组服用安慰剂，一组戴上耳塞和眼罩，一组什么不做。结果显示，口服褪黑激素的效果显著。
+➜当先进外星文明用黑洞制造宇宙加速器
+https://www.solidot.org/story?sid=43399	33967
+如果一个先进的外星文明在宇宙的某个角落里用黑洞制造了一个粒子加速器去研究普朗克尺度能量下的物理学，<a target="_blank" href="http://physicsworld.com/cws/article/news/2015/mar/19/have-alien-civilizations-built-cosmic-accelerators-from-black-holes"><u>我们在地球上的人能否探测到</u></a>？普林斯顿高等研究所的<a target="_blank" href="https://www.ias.edu/people/cos/users/10578"><u>Brian Lacki</u></a>进行了一番计算，认为如果这样一个加速器存在，它将能产生10<sup>24</sup>&nbsp;eV能量的中微子，能被在地球上的人发现。他因此呼吁参与搜索地外文明（SETI）的天文学家去寻找这些超高能粒子。他的呼吁获得了SETI专家 Paul Davies的支持。Lacki说，假设先进外星文明和人类一样对物理学感兴趣是合理的，他们会去建造地球粒子物理学家只能在梦中想象的粒子加速器。外星物理学家面临的一个重要问题是电磁能密度，研究这个问题需要普朗克尺度能量，但对加速器而言这可能会导致它会塌陷成黑洞。他认为黑洞本身就是最佳的候选，可被利用创造出一个普朗克尺度的加速器。
+➜启明星辰创始人成为亿万富豪
+https://www.solidot.org/story?sid=43400	35016
+福布斯<a target="_blank" href="http://www.forbeschina.com/review/201503/0041446.shtml"><u>报道</u></a>，北京启明星辰信息技术股份有限公司在深交所上市交易的股票大幅上涨，这推动该公司首席执行官严望佳和她丈夫严立加入了全球亿万富豪夫妇的行列。严氏夫妇拥有启明星辰39.8%的股份，截至周三收盘，这些股份市值12亿美元。启明星辰在国家防火墙项目中<a target="_blank" href="http://gfwrev.blogspot.com/2010/02/blog-post.html"><u>起着重要作用</u></a>，但具体并不清楚，是只负责运营维护，还是兼做研发工作，外人无从知晓。
+➜调查称Google操纵搜索结果
+https://www.solidot.org/story?sid=43401	36114
+《华尔街日报》<a target="_blank" href="http://cn.wsj.com/gb/20150320/tec165811.asp"><u>报道</u></a>，美国联邦贸易委员会的调查报告称Google操纵搜索结果，使其服务的搜索排名好于竞争对手，即使有时其自身服务对于用户而言并不是相关度最高的。联邦贸易委员会竞争局的工作人员发现，有证据表明Google通过调整排名标准和截断其他网站的内容来推广自身的购物、旅行和本地商务服务。Google还故意降低竞争对手的排名。上述报告印证了长期以来竞争对手关于Google不公平打压对手的抱怨。报告还发现，Google编制了一个与Google Shopping存在竞争关系的比较购物网站的名单，并将这些网站的排名降至前十项搜索结果之后。
+➜国行PS4上市，不锁区但锁PSN
+https://www.solidot.org/story?sid=43402	39020
+<div align="center"><img src="http://img.solidot.com.cn/0/102/lidPq1p6OAoBY.png" align="" height="245" width="480"><br>
+<br>
+</div>
+在延期两个多月后，索尼国行版<a target="_blank" href="http://www.sonystyle.com.cn/products/playstation/ps4.htm"><u>PS4</u></a>于3月20日<a target="_blank" href="http://www.sonystyle.com.cn/products/playstation/live/index.htm"><u>正式上市</u></a>。根据玩家的反馈，国行PS4不锁区但锁PSN。<a target="_blank" href="http://en.wikipedia.org/wiki/PlayStation_Network"><u>PSN</u></a>是索尼的网络服务，包括游戏商店、云储存、社交中心和付费会员服务（美国是9.99美元/月）等服务。锁PSN意味着国行PSN与国外PSN服务不联通，无法购买没有通过审批的游戏，但用户可以在跨区购买游戏后在国内正常玩，因为PS4没有区域限制。相比之下，微软的国行Xbox One锁区锁服务，而通过审批的游戏寥寥无几。
+➜亚马逊雨林的碳吸收能力在下降
+https://www.solidot.org/story?sid=43403	43491
+根据发表在《自然》上的<a target="_blank" href="http://www.nature.com/nature/journal/v519/n7543/full/nature14283.html"><u>报告</u></a>，至今最广泛的陆地调查发现，亚马逊雨林正在失去从大气中<a target="_blank" href="http://www.exeter.ac.uk/news/research/title_442151_en.html"><u>吸收碳的能力</u></a>。过去几十年，亚马逊雨林一直充当着碳沉积的作用，即从大气层中吸收的碳大于释放出的碳。但研究人员发现，由于树林死亡率自1980年代中期以来增加了超过三分之一，影响到了雨林储存碳的能力。
+➜中国安全团队在Pwn2Own 2015上攻陷IE和Flash
+https://www.solidot.org/story?sid=43404	46371
+中国两支安全团队参加了Pwn2Own 2015黑客挑战赛，先后<a target="_blank" href="http://www.prnewswire.com/news-releases/chinas-top-notch-security-research-team-the-keen-team-wins-the-3rd-year-in-a-row-at-global-hacking-competition-300053032.html"><u>攻陷了IE和Flash</u></a>。有意思的这两个团队与中国两大互联网巨头腾讯和奇虎360有关联。Keen Team攻破了运行在IE上的Flash Player和Adobe Reader插件，获得了他们第四和第五个Pwn2Own冠军头衔。Keen Team的Peter花了30秒的时间攻破了运行在64位Windows上的Flash Player和获取最高系统权限。攻破Flash使他赢得了6万美元奖金，利用Windows的字体处理bug提升权限使他又额外获得了2.5万美元。Keen Team的另一名成员Jihui Lu和腾讯PC管家的Jun Mao在不到60秒内绕过了PDF的安全保护，同时获得了系统的最高权限，他们赢得了5.5万美元奖金。Keen Team共赢的14万美元奖金。奇虎360的360Vulcan团队则在17秒内<a target="_blank" href="http://www.prnewswire.com/news-releases/360vulcan-team-brought-down-ie-browser-in-pwn2own-hacking-contest-300053533.html"><u>成功攻破了IE 11</u></a>，是第一支攻破IE的亚洲团队。IE11的攻破难度被认为是Pwn2Own上最高的。
+➜小岛秀夫离开科乐美
+https://www.solidot.org/story?sid=43405	57234
+《合金装备》系列的制作人<a target="_blank" href="http://zh.wikipedia.org/wiki/%E5%B0%8F%E5%B2%9B%E7%A7%80%E5%A4%AB"><u>小岛秀夫</u></a>将离开他服务了29年的游戏开发商科乐美公司，科乐美已经<a target="_blank" href="http://www.konami-digital-entertainment.co.jp/en/news/topics/2015/0320/"><u>确认</u></a>小岛秀夫将在完成《<a target="_blank" href="http://store.steampowered.com/app/287700"><u>合金装备5幻痛</u></a>》的开发后正式离职。定于今年9月发售的《幻痛》将是他制作的最后一部《合金装备》游戏，这一次小岛秀夫没食言，《合金装备》将仍然掌握在科乐美手中，这家日本开发商将继续开发系列的新作。小岛秀夫是在1986年加入科乐美，有消息来源<a target="_blank" href="http://www.gamespot.com/articles/kojima-expected-to-leave-konami-after-mgs5-inside-/1100-6426024/"><u>声称</u></a>他的离职是因为工作室和母公司之间的权力斗争的结果。

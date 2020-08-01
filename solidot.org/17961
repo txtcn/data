@@ -1,0 +1,45 @@
+➜让科技公司为数据向你付钱
+https://www.solidot.org/story?sid=59783	10105
+加州的新立法<a href="http://www.ftchinese.com/story/001081671?adchannelID=&amp;full=y" target="_blank"><u>将要求科技公司为数据向你付钱</u></a>。这项法律提议的基本构想是，像 Facebook 和 Google 这样的平台科技公司——可能还有亚马逊等其他许多公司，甚至还有收集和货币化个人数据的非平台公司——只要使用消费者的任何个人信息，就应该被迫向消费者支付“数据红利”。这其中的想法是，如果说数据是新的石油，那么拥有它的人（在这种情况下是互联网用户自己）应该分享从其获取的巨额利润。考虑到像美国某些州（如阿拉斯加）的公民或像挪威等国家的公民长期受益于石油等大宗商品，这并不是一个巨大的思维飞跃。无论数据最终被标记为资产还是某种工作，很明显公司将不得不分享收益——这将对他们的未来利润率产生重大影响。
+➜所有英特尔处理器面临新的 Spoiler 攻击
+https://www.solidot.org/story?sid=59784	12447
+美国和德国的计算机科学家在预印本网站  ArXiv 上发表<a href="https://arxiv.org/pdf/1903.00446.pdf"><u>论文</u></a>(PDF)，<a href="https://www.theregister.co.uk/2019/03/05/spoiler_intel_processor_flaw/"><u>披露了</u></a>针对英特尔处理器的新攻击 SPOILER。他们在英特尔内存子系统私有实现中发现了地址推测的一个弱点，能透露内存布局数据，让翻转比特的 Rowhammer 攻击更容易执行。研究人员检查了 ARM 和 AMD 处理器，但没有发现它们表现出类似的行为。新的漏洞很难在不重新设计处理器微架构的情况下修复或缓解。Spoiler 攻击不同于 Spectre 攻击，它无需提权就可以在用户空间利用。研究人员称，Spoiler 大幅加快了 Rowhammer 和缓存攻击。Rowhammer 翻转比特攻击影响所有处理器，但要利用 Rowhammer 你可能需要花费数周时间，而在 SPOILER 的帮助下，攻击将可以在数秒内完成，Rowhammer 攻击将变得切实可行。英特尔发言人表示他们预计软件加固能抵御此类攻击。
+➜印度的移动数据流量最便宜
+https://www.solidot.org/story?sid=59785	14370
+英国比价网站 Cable.co.uk 的<a href="https://www.cable.co.uk/mobiles/worldwide-data-pricing/" target="_blank"><u>一项研究</u></a>发现，印度的移动数据流量费率<a href="https://www.bbc.com/news/technology-47416250"><u>全球最便宜</u></a>。印度每 GB 数据平均费用仅为 0.26 美元，而英国是 6.66 美元，美国是 12.37 美元，中国是 9.89 美元（不同地区有差异）。这项研究对比了 230 个国家的移动数据费用，全球每 GB 数据的平均费用为 8.53 美元。最便宜的五个国家是印度、吉尔吉斯斯坦、哈萨克斯坦、乌克兰和卢旺达；最贵的五个国家是津巴布韦（75 美元/GB）、赤道几内亚、圣赫勒拿岛、福克兰群岛和吉布提。中国排在 165 位。
+➜NSA 公布逆向工程框架 Ghidra
+https://www.solidot.org/story?sid=59786	16528
+NSA <a href="https://www.nsa.gov/resources/everyone/ghidra/" target="_blank"><u>正式开源了</u></a>它开发的软件逆向工程框架 Ghidra，<a href="https://ghidra-sre.org/"><u>下载地址</u></a>屏蔽了中国 IP，但用代理很容易绕过。Ghidra 可用于分析恶意代码和病毒等恶意程序，帮助网络安全专业人士更好的理解其网络和系统的漏洞。Ghidra 能运行在 Windows、Mac OS 和 Linux 上，支持多种处理器指令集，包含了你预计会在高端商业工具看到的所有功能。<a href="https://github.com/NationalSecurityAgency/ghidra"><u>源代码</u></a>托管在 Github 上，采用 Apache License 2.0 许可证。
+➜普京想要自己的互联网
+https://www.solidot.org/story?sid=59787	17990
+当去年 10 月俄罗斯高加索地区爆发反政府抗议后，当局采取了此前从未采取过的措施：切断了整个地区的移动互联网服务。在大约两周时间里，当地主要是穆斯林的俄罗斯人无法通过手机访问社交网站和视频分享网站。不同于中国，俄罗斯还没有实现对负面新闻的集中式控制，所以它只能命令运营商一个接一个的切断当地服务。<a href="https://www.bloomberg.com/news/articles/2019-03-05/vladimir-putin-wants-his-own-internet" target="_blank"><u>在普京的支持下</u></a>，俄罗斯议会成员正在推动名为“主权互联网”的法案，创建一个单一的指挥机构去管理，如果需要的话，阻止信息在俄罗斯网络空间的流动。《The Red Web: The Kremlin’s Wars on the Internet》一书的作者 Andrei Soldatov 说，这项法律与外国威胁无关，也不是禁止 Facebook 和 Google，而是能够在动乱期间在某些地区切断某些类型的网络流量。
+➜攻击者利用 GitHub 推广后门版应用
+https://www.solidot.org/story?sid=59788	25628
+DFIR.it 的安全团队<a href="https://www.zdnet.com/article/researchers-uncover-ring-of-github-accounts-promoting-300-backdoored-apps/" target="_blank"><u>发现</u></a>恶意攻击者利用 GitHub 推广后门版应用。所有托管后门应用的账号目前全部移除。对样本的分析发现，恶意应用会下载名叫 Supreme NYC Blaze Bot (supremebot.exe)的 Java 恶意程序。攻击者建立了一批账号，有的账号托管了几十个恶意应用，还有的账号没有恶意应用但通过给恶意应用加星等方法来增加其流行度。黑客创建了许多合法应用的后门版本，其中包括 MinGW、GCC、Ffmpeg、EasyModbus 和一些 Java 游戏。
+➜五分之二的欧洲 AI 创业公司没有使用 AI
+https://www.solidot.org/story?sid=59789	26580
+风险投资公司 MMC 发表<a href="https://www.mmcventures.com/wp-content/uploads/2019/02/The-State-of-AI-2019-Divergence.pdf"><u>报告</u></a>（PDF），它分析了 2830 家被归类为 AI 的欧洲创业公司，只有 1580 家公司符合其描述，五分之二的公司在其产品中没有发现使用任何 AI 的证据。MMC 检查了每一家公司的材料、产品、网站和产品文档。研究负责人 David Kelnar 没有给出这些公司的名字，他认为许多创业公司其实知道被错误归类，但它们没有动机去修正，因为这潜在可能会导致投资减少。
+➜微软基于 Chromium 的 Edge 浏览器外形类似 Chrome
+https://www.solidot.org/story?sid=59790	27348
+微软正在 Chromium 基础上开发新版的 Edge 浏览器，去年底软件巨人宣布这一消息时震惊了很多人。Neowin 援引消息来源<a href="https://www.neowin.net/news/exclusive-this-is-what-the-new-chromium-based-edge-looks-like"><u>报道</u></a>，微软目前维护了两个版本的 Chromium 版  Edge，其一是每周更新，其二是每日更新。当前版本的截图显示，它的 UI 和布局基本类似于 Chrome 浏览器，主要的微软特色是整合了 Bing，新标签页背景可以设置为 Bing 的每日图像。向下滚动能展示微软新闻的定制个性化新闻源，类似老版本的 Edge。虽然是基于 Chromium，但微软计划维护自己的一个扩展商店，浏览器支持 Chrome 的扩展。
+➜为什么 ji32k7au4a83 是一个常用的密码
+https://www.solidot.org/story?sid=59791	30710
+<a href="https://haveibeenpwned.com/Passwords" target="_blank"><u>Have I Been Pwned</u></a> 聚合了各个网站和服务泄漏的密码，并记录了常见密码的使用频率，举例来说 123456 在其密码库里共使用了 23,174,662 次，12345 使用了 2,333,232 次，password 使用了 3,645,804 次。这些密码因为容易记忆而被大量使用我们都能理解，但还有一些高频密码可能让人摸不着头脑了，比如说 ji32k7au4a83，它看起来是一个随机密码，但它却被使用了 141 次。为什么它会是<a href="https://gizmodo.com/why-ji32k7au4a83-is-a-remarkably-common-password-1833045282"><u>一个常用密码</u></a>？过去几天这件事在多个网站被很热闹的<a href="https://it.slashdot.org/story/19/03/05/203253/why-ji32k7au4a83-is-a-remarkably-common-password"><u>讨论</u></a>，答案很快被人指出其实是“我的密码”的注音符号，在<a href="https://zh.wikipedia.org/wiki/%E6%B3%A8%E9%9F%B3%E7%AC%A6%E8%99%9F" target="_blank"><u>注音符号系统</u></a>中，ji3 -&gt; 我；2K7 -&gt; 的；au4 -&gt; 密；a83 -&gt; 码。
+➜Uber 躲过自主驾驶致命车祸的刑事指控
+https://www.solidot.org/story?sid=59792	33188
+亚利桑那州检方决定不就 2018 年 3 月发生在凤凰城坦佩市的自主驾驶致命车祸对 Uber <a href="https://arstechnica.com/cars/2019/03/arizona-prosecutor-wont-charge-uber-for-2018-self-driving-death/" target="_blank"><u>提起控诉</u></a>。这起车祸导致 49 岁的 Elaine Herzberg 被撞身亡，Uber 已经与其家人<a href="https://www.solidot.org/story?sid=55987"><u>达成了和解</u></a>。检方表示没有发现 Uber 需要承担刑事责任的根据，但自主驾驶汽车上的司机 Rafaela Vasquez 则面临进一步调查。警方发现，事故发生前司机分心在手机上看视频。警方从 Hulu 获得了 Vasquez 的观看记录，显示她在看 NBC 的演唱竞赛节目 The Voice。记录显示她从晚上 9:16pm 看节目， 该节目的直播在 9:59pm 结束，与车祸的时间大致吻合。
+➜和田是中国污染最严重的城市
+https://www.solidot.org/story?sid=59793	33686
+根据绿色和平及 AirVisual 发表的《<a href="https://www.airvisual.com/world-most-polluted-cities?continent=&amp;country=&amp;state=&amp;page=1&amp;perPage=50&amp;cities=" target="_blank"><u>2018 年世界空气质量</u></a>》报告，中国的空气质量<a href="https://www.abc.net.au/chinese/2019-03-05/china-air-pollution/10872980" target="_blank"><u>明显好转</u></a>，而污染最严重的城市大部分在印度。2017-2018 年间中国空气的平均污染物密度下降了 12%，北京也不再位居空气污染最严重的的 100 个城市之列。中国空气质量最好的城市是林芝，排在东亚空气最干净城市榜单的第 6 位，其余进入前十名的均为日本城市。空气污染最严重的前两座城市都来自新疆，一个是和田，一个则是喀什。阿克苏排在第 5 位。北京附近的河北省也是重灾区，邢台、保定、邯郸以及省会石家庄都在空气质量最差的十个城市的榜单上。
+➜隼鸟 2 号准备收集小行星内部岩石
+https://www.solidot.org/story?sid=59794	35194
+日本宇宙航空研究开发机构（JAXA）<a href="http://cn.nikkei.com/industry/manufacturing/34589-2019-03-06-09-13-02.html"><u>宣布</u></a>，隼鸟 2 号将在 4 月 1 日的一周向小行星龙宫发射金属器制造陨石坑，计划调查陨石坑和尘埃的漂浮状况等，争取 5 月以后采集沉睡于地下的岩石。小行星的地表受到宇宙射线和太阳光的影响，但内部可能残留着太阳系诞生的 46 亿年前的痕迹。JAXA计划进行 3 次着陆，但预计 2 次完成。金属弹为铜制，重 2 千克。通过从主机分离的特殊装置落下，通过炸药来发射，以每秒 2 公里的速度撞击龙宫 地表。据预测，撞击后岩石将飞散，形成直径数米的陨石坑，内部的岩石和土将暴露于地表。JAXA 还<a href="http://fanfun.jaxa.jp/topics/detail/14160.html"><u>公布了</u></a>探测器第一次着陆的视频。<br>
+➜法国改革科技人才签证计划
+https://www.solidot.org/story?sid=59795	38978
+法国政府宣布对“法国技术签证”<a href="https://techcrunch.cn/2019/03/06/france-overhauls-its-special-visa-for-tech-talent/" target="_blank"><u>进行全面改革</u></a>。这些签证适用于为科技公司工作的员工。法国将采取措施，让劳动者在法国工作变得更容易。法国技术签证的行政管理费用是 368 欧元。潜在员工并不需要满足任何文凭要求。此前版本的签证项目只限于大约 100 家公司。这些公司被选为 “法国科技行业直通” 项目的一部分。雇员需要具备硕士学位。因此这是巨大的变化。签证有效期是 4 年，随后还可以续签。你也不必一直待在同一家公司，在跳槽之后也可以保留自己的签证。你的家人也可以同步拿到签证，可以一同前往法国。
+➜FBI 局长认为加密应受限制
+https://www.solidot.org/story?sid=59796	45380
+在本周举行的 RSA 安全会议上，FBI 局长 Christopher Wray <a href="https://it.slashdot.org/story/19/03/05/2156211/fbi-director-christopher-wray-on-encryption-we-cant-have-an-entirely-unfettered-space-beyond-the-reach-of-law-enforcement"><u>表示</u></a>，加密应受到限制。加密技术尤其是端对端加密技术让消息只有接收者能阅读，然而 Wray 认为不能为犯罪分子提供一块执法部门无法接触到的游乐场。这不是美国执法机构官员第一次对加密表示担忧。反对者认为加密对保护关键数据免被黑客窃取至关重要，削弱加密或植入加密后门只能让黑客更容易入侵计算机系统获取关键数据。在会议上 Wray 还表示要调查和起诉其他国家的黑客，称他不在意其他国家政府对此有什么看法。
+➜报告称中国黑客攻击美国海军承包商
+https://www.solidot.org/story?sid=59797	46043
+华尔街日报援引  iDefense 的<a href="https://www.accenture.com/t20190305T200954Z__w__/us-en/_acnmedia/PDF-96/Accenture-Security-MUDCARP-Full-Report.pdf#zoom=50"><u>报告</u></a>（PDF）<a href="https://cn.wsj.com/articles/%E4%B8%AD%E5%9B%BD%E9%BB%91%E5%AE%A2%E4%B8%BA%E8%8E%B7%E6%B5%B7%E4%BA%8B%E6%8A%80%E6%9C%AF%E6%9C%BA%E5%AF%86%E8%80%8C%E6%94%BB%E5%87%BB%E5%A4%9A%E6%89%80%E5%A4%A7%E5%AD%A6-11551787211"><u>报道</u></a>（付费墙），中国黑客针对美国和全球二十多所大学发动了网络攻击，此举属于一场精心策划的行动，旨在窃取用于军事目的的海事技术研究成果。这是一场针对五角大楼供应链的攻击，黑客组织被称为 Mudcarp。报道称，遭到攻击的有美国、加拿大和东南亚的至少 27 所大学，包括夏威夷大学、华盛顿大学和麻省理工学院。这项研究将于本周发布，是中国为窃取美国军事和经济机密而不断发动网络攻击的最新迹象。iDefense 称，该行动至少始于 2017 年 4 月。

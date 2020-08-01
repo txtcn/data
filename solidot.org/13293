@@ -1,0 +1,104 @@
+➜读者的三个问题
+https://www.solidot.org/story?sid=20	17400
+刚才看到一位读者[update:隐去来信者的姓名]发来的邮件问了三个问题，在这里公开回答一下。
+<br> <br>
+1. 使用代理就不能注册。那么如果我必须使用代理才能访问网络，那不用代理我又如何访问Solidot进行注册?<br>
+2. "匿名懦夫"，这就是Solidot对匿名者的称呼(蔑称?)么？也罢，反正最近也发现Solidot的文章越来越鸡肋了，更不用说很多错别字了，大不了把solidot从RSS列表中删去就是了。<br>
+3. 刚刚发现作为使用代理的"匿名懦夫"，根本就无法发表评论。只好给站长发封信了。
+<br> <br>
+回答：<br>
+1&amp;3. Slash 不允许代理注册或代理发文主要是出于安全考虑，Slashdot 非常大，他们遇到的事情也少不了，在安全方面考虑的非常多，因此需要获得参与者的真实IP身份。国内的情况又有不同，有些校园网、内部网又必须使用代理才能访问，这个问题比较复杂，代码部分牵涉会很多，我们会看看。
+<br>
+2. "匿名懦夫"是直译自“Anonymous Coward”, Slashdot 一直用的是这个称呼，不是什么蔑视，大家知道这套代码有个很强的讨论系统（而且新的讨论系统正在测试，现在登录用户就会看到“我愿意帮助测试Solidot新讨论系统”这个提示，新系统仍在开发中），使用这个名称无非是鼓励用户以一定身份来参与。
+<br> <br>
+这一段我们很多人都投入到了新代码中，并且做得很辛苦，现在虽然还有遗留问题，但总算上线了。换上了新系统网站也会有一些新设想、新打算，稍后会发一个公告。
+➜文化部查处第四批违法游戏
+https://www.solidot.org/story?sid=19	18060
+matrix 写道 "<a href="http://www.ccnt.gov.cn/ggl/t20060523_26788.htm">文化部查处第四批违法游戏产品</a>包括1.《吸血莱恩II》 2.《惊悚空间》 3.《AV麻将（写真版）》（手机游戏） 4.《恐怖牢笼》（手机游戏）。天联世纪信息技术有限公司非法提供游戏《街头篮球》；杭州二元网络互动有限公司运营《帝国传奇》未备案。部分网站非法提供网络游戏“私服”、“外挂”予以查处。"
+➜“来自xxx部门”的用法
+https://www.solidot.org/story?sid=21	20160
+匿名读者 写道 "看了一下solidot用了汉化的slashcode以后的内容，感觉这个“来自xxx部门”的用法没能体现原版slashdot的幽默风格。在slashdot上，这一行文字不是一个可有可无的对内容的概括，而是一句幽默并通常带讽刺味道的对内容的“评语”，编辑也会通过这句话加入自己对新闻的主观感想。<br>举个例子，昨天的一则新闻“Hardware: Bacteria As Fuel Cells?”，附带的是“from the lazy-bacteria-just-needs-training dept.”<br>还有一个例子，新闻“Games: Sony May Try To Stop PS3 Game Resales”，“from the because-we-can't-hate-them-enough dept.”<br>和标题一起读，是非常幽默的。"
+➜专利，动力还是阻力？
+https://www.solidot.org/story?sid=22	28140
+<a href="http://www.buzzc.com/">matrix</a> 写道 "作为一个发展中国家，中国的许多产品都落入专利的陷阱中使得生产更多的像个苦力活。之前的DVD，现在的IPTV同样如此。<a href="http://tech.163.com/06/0525/07/2HUVEKTT000915B2.html">163的这篇文章</a>报道了中国数字电影可能将受到MPEG-4专利的影响。MPEG-4专利由<a href="http://www.mpegla.com/index1.cfm">MPEGLA</a>公司把握。与其他专利收费不同，MPEG－4不仅向设备制造商收费，还向运营商、内容商收费，且按时间和流量收费。"
+➜Solidot 现在用 Slash
+https://www.solidot.org/story?sid=23	31980
+做了一个多月了，现在这套代码和大家见面了。<a href="http://www.slashcode.com/">Slash</a> 太复杂，而且几乎没什么参考文档，代码的一些函数用法没有说明，管理员的操作没有说明，非英语翻译没有说明，模版修改没有说明，后台运行的任务没有说明，总之每修改一个设置，解决一个问题就要花很长时间来查找，修改一个模版文件或者汉化一个词要看看效果就得重起 <a href="http://www.apache.org/">Apache</a> 让它生效，要把 Slash 配制好，你的 Apache 每天的重起 10次8次甚至更多。<br> <br>
+现在汉化还没有完全做完，我们还在继续，因此还会重起 Apache 让修改过的生效。这一段也算是新代码试运行，如果你访问时遇到本地错误，中断10秒左右，不必着急，稍等刷新即可，那是我们在重起服务器。
+<br> <br>
+参与这套代码配制主要是 jedy, <a href="http://www.geelake.com/">jlake</a>, <a href="http://hmyblog.vmmatrix.net/">hmy</a> 和我我们四个人。前两位都是在国外工作的开发人员，Perl 工程师，hmy 是主机方面的网管，大家在 Linux 服务器方面都经验丰富。其中，jedy 主要做了代码的中文支持方面的修改，UTF8 编码的解决，jlake, hmy 主要做了服务器环境方面的配制。在这里感谢他们一个多月的辛勤劳动！当然还有团队的 faif, fermi 等做了翻译，也要谢谢前期参与汉化的几位热心读者<a href="http://www.livid.cn/">livid</a>, <a href="mailto:tigerf%5B/@/%5Dgmail.com">Tigerf</a>, <a href="mailto:linuxertony%5B/@/%5Dgmail.com">TonyGao</a> 等诸位。
+<br> <br>
+这一段我们用了两台主机在测试，Slash 从安装开始就很复杂，能把 Slash 安装好让它运行就是一个不小的挑战！如果你在现有的一台服务器上安装，我估计99%的可能运行不起来，肯定要出错！你以前的配制可能适应不了 Slash 的要求，需要在一台全新的主机上按照 Slash 的要求安装才行。我们前后安装了5/6次，比如用 Debian 包安装的 Apache 和 mod_perl 就不行，Slash 就出错，后来发现 apt-get 安装的 Apache 少一个模块，把模块装上，还是不行，非得自己编译 Apache 和 Mod_Perl 才可以。在这里也提醒那些想在本地或主机上测试的读者，安装 Slash 时这两个需要自己编译，debian包或 rpm 装起来很爽，也利于其他脚本环境的配制，但 Slash 跑不起来就不爽了。关于 Slash 的中文安装说明、中文方面做的修改以及汉化包等以后我们组织一下发布出来。           下面就有关问题、新系统的设置和一些打算等做一些介绍：
+<br> <br>
+<b>一. 关于原来的数据</b>
+<br> <br>
+原来的用户数据已经全部导入了，所有注册会员都可以用原来的密码登录，忘记密码可以用密码找回功能。
+<br> <br>
+由于数据库结构差异很大，原来的文章和评论数据要完美导入很困难。我们试了单纯把文章导入不难，但把文章ID、发表时间、文章图标、发表者、分类、评论这几个结合起来保持原样很困难，导入后也许就会出现对不上号，弄乱版面等情况，很难做到完美，因此我们准备放弃文章和评论导入。原来的数据将放在 http://home.solidot.org/old/ 这里供大家查阅。
+<br> <br>
+<b>二. 关于分类主题</b>
+<br> <br>
+现在我们设置了16个分类和110个主题，在“<a href="http://solidot.org/topics.pl">主题</a>”页面上大家可以看到这些设置，关于国内的主题比较少，我们还会补充，也欢迎大家<a href="__SLASHLINK__" sect="" sid="06/05/23/0630217" sn="article" tid="59">提建议</a>。
+<br> <br>
+大家可以看到我们新添加了许多新主题，包括“社会、娱乐、电影”等等，并且“社会”设置成了一个二级域名(<a href="http://society.solidot.org/">society.solidot.org</a>)，但这并不意味着 Solidot 的关重点面就有所改变，我们主要关注的仍是“科技”和“开源”两个方面。但一些社会事件影响比较大的，我想我们也应该报道，比如去年的“王垠退学”，今年的“馒头案件”和“铜须事件”等虽然和科技没什么关系，但他们影响巨大，对于像这类的我们也会关注，让大家来讨论。
+<br> <br>
+另一个，新代码包括了日志系统，但用户不能自己设置分类只能使用网站设置的，像“电影、音乐”这些用户选起来会比较方便，适合在日志发表。
+<br> <br>
+与科技和开源关系不大的分类不是我们的重点，比如“社会”每周也可能就1/2篇，你如果老是提交这方面可能会得不到发表。
+<br> <br>
+<b>三. 关于文章提交</b>
+<br> <br>
+所有注册会员和非注册用户都可以提交文章，用户注册和不注册不影响我们是否接受你的文章。用户提交的文章会自动加上“某某写道”这个格式，其中“某某”是提交的名字，将链接到提交者的网站或提交者的Email, 这个你在提交时就可以自己填写。
+<br> <br>
+注册会员可以在个人设置中查看提交文章的状态，是“接受”或“拒绝”，接受的将被发表在首页或分类页面。注意，这里是不显示拒绝理由的，也不显示接受的理由，但在我们 FAQ 页面会有比较详细的说明。
+<br> <br>
+<b>四. 关于文章和编辑</b>
+<br> <br>
+文章从数量上也许会增多，也许会减少，但都会基于一个前提，保证质量，尽量多发一些有趣的、好的文章，宁缺勿滥。日本(Slashdot.jp)的文章每天还没有我们多，但质量都不低，介绍很到位。
+<br> <br>
+为了保证质量，我们需要一些高水平的编辑加入，主要是审核文章，对提交的文章再加工。因为有的提交的话题不错，但写作可能过于简单或描述不到位，这就要编辑来修改一下发表。对于编辑有这么简单几点小要求，1. 有全局观念，熟悉科技资讯方面，看问题客观公正。2. 写作组稿能力好。3. 认同Solidot的风格。 如果你有兴趣、有时间，请<a href="mailto:admin@solidot.org">联系我们</a>。
+<br> <br>
+<b>五. 关于评论评判系统(Moderation-System)</b>
+<br> <br>
+Solidot 也就是 Slashdot 的评判系统总共分为两级，一级评分为会员获得打分点数后给你看到的评论打分。二级评判为对打过分的评论进行监督，做出“公平”“不公平”或“认同”的评判。这两级的评判资格所有注册会员都会具有，系统会随机轮流分配权限，一级评分系统会随机给你分配点数，比如5点，10点，你就可以给5条或10条评论打分。有了评分点数后在浏览评论时你会看到一个总共10级的评分下拉框，选择你认为的级别打分。两级评判如果权限出现后都会显示在页面的最上方，详见<a href="http://solidot.org/images/doc/mod.jpg">图片</a>（抱歉有些还没有翻译过来），<a href="http://solidot.org/images/doc/mod2.jpg">图片2</a>。<br> <br>
+<b>六. 关于新系统的个人设置</b> <br> <br>
+内容比较多，会员可以登录体会一下，这里有几个小图片也可以先看一下。<br>
+1. 首页文章只显示标题，<a href="http://solidot.org/images/doc/homestory.jpg">图1</a>.<br>
+2. 用户菜单，<a href="http://solidot.org/images/doc/usermenu.jpg">图2</a>,<a href="http://solidot.org/images/doc/usertab1.jpg">图3</a>, <a href="http://solidot.org/images/doc/usertab2.jpg">图4</a>, <a href="http://solidot.org/images/doc/relations.jpg">图5</a>.
+<br>
+FAQ 我们正在翻译，系统使用中文版出来后大家就会看到详细的介绍。
+<br> <br>
+<b>七. 已知问题</b> <br> <br>
+1. 中文搜索问题。<br>
+2. 用户可以重复投票（代理检测以及本地 squid 服务器有关）。<br>
+3. 校园网代理不能注册（代理检测以及本地 squid 服务器有关）。<br>
+<br>
+<b>八. 我们正在做的</b> <br> <br>
+1. 翻译剩余部分，修改翻译不准确的部分。<br>
+2. 中文化的日期显示格式。<br>
+3. 中文按钮文字。<br>
+4. tag(标签)系统仍在测试开发之中。<br>
+5. 修改增加日志模版。<br>
+6. 20页的 FAQ 文档。<br>
+<br>
+本来想再多介绍一些，但这一段太累了，先写这么多吧！未尽之处，随后补充，大家有什么问题尽管提问！
+<br> <br>
+Thanks！<br>
+Jesse "CdrPlum" Lee
+➜Google Pages 无法访问
+https://www.solidot.org/story?sid=24	39840
+匿名读者 写道 "现在是2006年5月25日晚18:42，Google Pages 已超过一个小时无法访问，包括 <a href="http://pages.google.com/">http://pages.google.com/</a>, <a href="http://.googlepages.com/">http://.googlepages.com/</a> 这两个地址都不行。 "
+➜squid-2.6即将发布
+https://www.solidot.org/story?sid=25	40080
+<a href="http://www.joecen.com/">joecen</a> 写道 "经过漫长的等待，<a href="http://www.squid-cache.org/">squid</a>终于要发布2.6的版本了。回看一下，squid-2.5从2002年到2006年，已经出到STABLE14，时间之长实在令人惊讶。
+<br> <br>现在，squid开发组终于达成了<a href="http://wiki.squid-cache.org/Squid-2.6">一致意见</a>，将2.x版本中改善或新增加的功能综合成为2.6版本。比较重要的有“Cygwin full support”、“epoll”、“WCCPv2”、“custom log formats”等。"
+➜Blake Ross 的新工程
+https://www.solidot.org/story?sid=26	59520
+nighttalker 写道 "Firefox 的开发者之一 Blake Ross 在 Mozillazine <a href="http://www.mozillazine.org/talkback.html?article=8583#4">提到过去一年他都在忙另外一项 project</a>，对于 Firefox 的项目贡献甚小。他说这个新的项目确实涉及到 Firefox，并且会在今夏有所宣布。这篇回帖是在 <a href="http://www.mozillazine.org/talkback.html?article=8583">Mozillazine 上关于他接受 OperaWatch 网站访问的文章</a>回帖中提到的。 <a href="http://operawatch.com/news/2006/05/ask-firefox-founder-and-creator-blake-ross.html">OperaWatch 邀请他们的读者以建设性的态度向 Blake 发问</a>，并将提交他们感觉最有意义的问题给 Blake 回复。"
+➜Ipunkt - 跟踪投影导航系统
+https://www.solidot.org/story?sid=27	65220
+<a href="http://www.wanghui.org/">cnhackTNT</a> 写道 "<a href="http://www.ubit.de/ipunkt/">Ipunkt</a> - 一个很酷的跟踪投影导向系统，目前它通过投影仪及改造过的带有红外感应功能的摄像头以及作为控制中心的电脑组成。它能够感知人的移动方位，并通过在这个人的脚下投影一圈导向圈来进行方位引导。看来我们的生活正越来越像科幻电影里描述的那样了。
+目前该系统还处于开发演示阶段，两台投影机所能投影导向的面积也比较有限，不过从<a href="http://ubit.de/ipunkt/wp-content/ipunkt512K_Stream001.mov">开发者给出的视频录像</a>来看，效果相当不错。"
+➜Google在巴西的遭遇
+https://www.solidot.org/story?sid=28	65820
+<a href="http://mydict.blogsome.com/">comedict</a> 写道 "来自<a href="http://news.yahoo.com/s/ap/20060524/ap_on_hi_te/brazil_google">Yahoo的消息</a>说：Google昨天已经同意关闭Orkut的一些社区，因为巴西政府说他们提倡暴力并侵犯人权。众所周知，Orkut在巴西相当火爆，有大约800万个用户。而在近年内，Orkut不断爆出负面新闻：某些Orkut社区牵涉毒品交易、球迷暴动。甚至还有人在Orkut社区提倡杀死总统、在国会安装炸弹。因此，Orkut更是受到<a href="http://www.chinaeclaw.com/News/2006-03-31/5911.html">司法调查</a>。<br> <br>据巴西有关官员称，Google现已同意从Orkut关闭6 个社区并且帮助司法机关鉴定嫌疑人。不过，还没确认是否将用户数据转交给巴西政府。<br> <br>Google一直强调：在地方法律的范围内保护用户的信息安全。今年1月份，美国司法部起诉Google，并发出传票要求Google交出数以亿计的链接资料及最高达2个月的所有Google用户的搜索查询资料，但被Google拒绝了。这被认为是个人隐私权与美国政府之间的斗争，最后<a href="http://www.kenwong.cn/post/google-defeat-us-Justice-Department.html">Google胜诉</a>了。"

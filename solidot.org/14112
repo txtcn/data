@@ -1,0 +1,110 @@
+➜Gmail启用SSL加密会话的充分理由
+https://www.solidot.org/story?sid=7503	900
+拉斯维加斯举行的Defcon黑客大会上展示了一种工具，能<a href="http://www.hungry-hackers.com/2008/08/gmail-account-hacking-tool.html">自动窃取Google Mail非加密会话ID</a>，并进而攻占邮箱。来自旧金山的逆向工程师Mike Perry开发了这一工具，并计划在两周内发布，他表示没有选择SSL的用户现在需要认真对待。<i>
+当用户登录Gmail 时，网站会向浏览器发送包含ID的cookie文件，它将保留两周时间，除非你选择退出。问题在于：每次你访问Gmail，即使是上面的一幅图像，浏览器都会向网站发送cookie文件，这就是使得攻击者能够嗅探通话，通过植入http://mail.google.com上的图像诱使浏览器发送cookie，从而获得你的ID。当这一切发生之后，攻击者无需密码就可登录邮箱。Google在上个礼拜介绍了Gmail的新特性，允许用户永久选择SSL，除验证之外，它将加密Gmail内的所有操作。但Perry抱怨Google不透明，“Google没有解释为什么这项功能是如此重要”。</i>
+➜德国警察没收了年轻人发明的机械化办公椅
+https://www.solidot.org/story?sid=7504	2100
+德国警察没收了<a href="http://hosted.ap.org/dynamic/stories/O/ODD_SPEEDING_CHAIR?SITE=AP">世界上最快的办公椅</a>，逮捕了两位17岁的发明家。<i>他们在椅子上安装了割草机引擎，自行车刹车装置，一个金属框架和4个轮子，使其能像微型汽车一样行走。警察发表声明称，发明家坚持他们仅仅在几米范围内进行测试，但目击者证实机械化办公椅已经在Gross-Zimmern市内跑了几条街。警察没有透露办公椅的操作和它能达到的最高速度。他们计划以多种罪名起诉发明家，包括违反安全规章制度，无证驾驶和违反必须的注册登记。</i>
+<a href="http://www.hr-online.de/website/rubriken/nachrichten/index.jsp?rubrik=36098&amp;key=standard_document_35004490&amp;lugal=1&amp;ibp=0">图片</a>，据说还有人计划在办公椅上安装两台<a href="http://www.megasaurus.com/recliner.htm">喷气发动机</a>。
+➜法官裁定不能强迫透露硬盘密钥
+https://www.solidot.org/story?sid=7505	4020
+美国佛蒙特州地方法官Jerome Niedermeier裁定，强迫被告透露密码以解密硬盘是<a href="http://news.cnet.com/8301-13578_3-9834495-38.html?hhTest=1">违法了第五修正案</a>（即被告无需自证其罪）。<i>
+在一涉及儿童色情的案件中，边境警卫证实他们在被告打开的笔记本上看到了儿童色情图片和动画，但他们犯下了错误关闭了电脑，随后就由于硬盘被PGP保护而无法再次访问。虽然检举人用了许多方法试图绕过第五修正案保护，但法官都不予同意，拒绝了大陪审团传票要求被告的PGP密码口令。被告定罪仍然是可能的，因为检举人拥有两位边境警卫的法庭证词，他们在电脑开着的时候瞧见了色情资料。</i>
+➜MIT学生封口令解除
+https://www.solidot.org/story?sid=7506	12480
+波士顿的一位法官<a href="http://news.cnet.com/8301-1009_3-10020252-83.html?hhTest=1">解除了封口令</a>——实际上是让有效期只有10天的禁令过期——该命令<a href="__SLASHLINK__" sect="it" sid="08/08/14/087243" sn="article" tid="100">禁止</a>发现MBTA(麻州交通局)地铁收费系统漏洞的三位MIT学生公开细节报告。<i>
+法官George O'Toole表示他不同意MBTA论据的基本前提——学生的报告可能违反了1986年的计算机欺诈与滥用法（CFAA），这一联邦法律是为了保护计算机免遭病毒和蠕虫之类的攻击。许多人预测周二的听证会将聚焦在关于自由言论的<a href="http://blog.youxu.info/2008/04/15/first-amendment-and-case-law/">第一修正案</a>及对其他计算机安全研究人员的潜在影响上。但法官的裁决却仅限于CFAA违反，他称MBTA的律师未能在两点上让他信服：其一学生的报告只是向其他人传达信息，而不是计算机到计算机的传播。其二 MBTA不能证明学生导致捷运系统遭受5000美元的损失。</i>
+➜EBay上购买的昆虫化石被发现是新物种
+https://www.solidot.org/story?sid=7507	15900
+一位科学家从在线拍卖网站EBay上以20欧元购买的昆虫化石被发现是属于一种<a href="http://news.bbc.co.uk/2/hi/science/nature/7572052.stm">先前未知的新种类蚜虫</a>。<i>伦敦皇家昆虫学会的副主席Richard Harrington博士从立陶宛人手中拍卖得这一化石，随后交给丹麦的蚜虫专家研究，后者证实这种昆虫属于一种现在已经灭绝的新种类。它以这位科学家名字命名为Mindarus harringtoni。</i>
+➜Ubuntu + Dell = 终极便携式？
+https://www.solidot.org/story?sid=7508	19200
+<a href="http://www.ownlinux.cn/">OwnLinux.cn</a> 写道 "对于开源桌面领域来说，这简直是令人难以置信的一年！DELL已经销售一些预装Ubuntu的个人电脑，这意味着即使非技术用户也能获得一种低成本，功能强大的开源系统，而不需要担心类似驱动的安装和处理这类麻烦的事。华硕Eee PC的到来开创了便携式的新纪元，操作系统是预装GNU/Linux而非Windows Vista，这使得以前没听过GNU/Linux这个短语的人对它倍加关注。<a href="http://www.ownlinux.cn/2008/08/20/ubuntu-dell-ultraportable/">Ubuntu在桌面的实力显得越来越强大</a>。<i>DELL将在近期销售的许多subnotebook产品中<a href="http://www.proliferationoflinux.org/2008/08/19/dells-sub-notebook-to-ship-with-ubuntu/">预装Ubuntu 8.04</a>.这种小型笔记本被称作Inspiron 910，同时它可以作为基于Linux的主流笔记本而取代老式的华硕Eee PC。主要配置包括一个1.6GHz的Intel Atom处理器，高达1GB的内存，和支持最高分辨率为1024×600的8.9寸屏幕，同时还拥有一个内置摄像头，大小在4G到16G间的硬盘，一个 VGA接口、读卡器、WiFi和3个USB接口。据谣言、该机型的最低价格可能低至299美元。"</i>
+➜Fedora 10 的主要功能特性已经冻结
+https://www.solidot.org/story?sid=7509	20400
+<a href="http://www.ownlinux.cn/">OwnLinux.cn</a> 写道<i> "<a href="https://fedoraproject.org/wiki/Main_Page">Fedora</a>的下一个发行版（ Fedora 10 ）的主要的功能特性已经冻结，在这之后的开发工作都将围绕着这些已经定下来的特性展开。可以说在2008年10月28日发布的<a href="http://www.ownlinux.cn/2008/08/21/fedora-10-feature-freeze/"> Fedora 10 正式版的主要功能特性几乎是尘埃落定了</a>。Fedora 10 将进一步改善对远程协助的支持，链接和控制远程主机也会变得更加容易和方便；对 adhoc 网络共享提供支持；RPM 升级至4.6版本；加入一个全新的安全审计和入侵检测系统；改善对打印机和摄像头的支持；升级 Eclipse 3.4 、 Gnome 2.24 以及让人期待的<a href="http://www.ownlinux.cn/2008/07/10/fedora-10-add-new-feature-like-ubuntu-wubi/">类似 Ubuntu Wubi 的新特性</a>等等。"</i>
+➜Opera：拉美成移动Web增长最快的地区
+https://www.solidot.org/story?sid=7510	22080
+<a href="http://www.comsharp.com/">35公里</a> 写道 "拉美地区是移动电话用户持续增长的地区之一，它的三个主要经济体，巴西，墨西哥，委内瑞拉同时是<a href="http://venturebeat.com/2008/08/20/opera-mobile-web-usage-continues-to-rise-worldwide-and-especially-in-latin-america/">移动 Web 增长最快的地区</a>，<a href="http://www.opera.com/mobile_report/2008/07/">近日，浏览器开发商 Opera 的一份报告称</a>。
+<i>Google 是该地区被访问最多的网站，紧随其后的是一些颇受欢迎的社会网络，如 Google Orkut (巴西)，hi5 以及一个被称作 metroFLOG 的区域版，Facebook 的访问量也在攀升。Opera 的移动 Web 浏览器Mini，在全球被广泛使用，因为他们每月的 “移动 Web 的现状报告”可以很好地反映总的趋势。Opera 上月的报告中提到拉美地区的快速增长，究其原因，可能与该地区80%的手机可以浏览 Web，同时该地区的移动数据费用低廉有关。同时，在全球范围，Mini 的用户数在7月份上升 9.4%，目前，每个月的用户数量已达到1580万，PV上升16%，达到37亿。每个用户每个月的 PV 数到 236 页。而 Opera 每月处理的数据上升 15.2% 达到 5380 万 MB。（Opera Mini 是一种基于代理的移动 Web 浏览器，这里的数据处理量指的是 Opera Mini 代理的数据量 - 译者）</i>该报告数据来源来自 Opera Mini 服务器处理的数据，报告从每个地区选取前100个站点，并在 10 个 Opera Mini 最流行的国家统计访问趋势，这10个国家包括，美国，俄罗斯，中国（中国能访问 Opera Mini 吗？），印度尼西亚，印度，英国，德国，波兰，南非以及乌克兰。
+➜Mozilla要为IE开发插件，帮助IE克服渲染问题
+https://www.solidot.org/story?sid=7511	23400
+Ars Technica透露，Mozilla正试图为IE开发和发布一个插件，将使经常遭人诟病的IE能<a href="http://arstechnica.com/news.ars/post/20080819-mozilla-drags-ie-into-the-future-with-canvas-element-plugin.html">利用一些专为Firefox开发的漂亮的渲染代码</a>。<i>现代的浏览器多数会很快采用新的互联网技术，但微软却不肯或者不愿将Internet Explorer变成现代浏览器，尽管在这方面已有所改善，然而IE仍缺乏一些重要的特性。目前Mozilla的项目主要集中在使用HTML5标准渲染，但他们的抱负不限于只为修正IE的缺陷。文章介绍了几项计划，可能的阻碍和好处，并泄漏了项目的代号：尖叫的猴子（<a href="https://wiki.mozilla.org/Tamarin:ScreamingMonkey">Screaming Monkey</a>）——目的是将下一代JavaScript引擎直接应用到IE上。
+</i>
+➜数据库的新方向
+https://www.solidot.org/story?sid=7512	24300
+leeews 写道 "MySql的架构设计总监Brian Aker在O'Reilly开放源码大会（OSCON）上<a href="http://www.infoq.com/cn/news/2008/08/drizzle">介绍</a>的<a href="http://drizzle.wikia.com/wiki/Drizzle_Wiki">新概念数据库</a>，在其<a href="http://krow.livejournal.com/602409.html">博客</a>中介绍了其原理：Drizzle的目标有：<i>
+1. Web应用。<br>
+2. 云计算组件。<br>
+3. 没有业务逻辑的数据库（又名存储过程）。<br>
+4. 多核架构。"</i>            原理上更大的不同<br>
+<br>
+采用外部库，采用开源软件的机制编写代码，保持开放式的沟通，消除了内部开发和外部开发之间的界限。本质上讲，做到了“朴实的开源”。主要针对C99、POSIX、基于自动化工具（Autotools）的系统。完全采用了微内核设计，将代码移出核心，通过接口将其推向边缘。在模块间采用了类似于Linux/Apache的紧耦合设计。<br>
+<br>
+其<a href="http://drizzle.wikia.com/wiki/Drizzle_Features">特征</a>有：<br>
+* 基于MySQL 6.0的源码树<br>
+* 无附加库<br>
+* 遵守POSIX<br>
+* 微内核设计<br>
+* 可插拔架构，适用于视图、存储过程、UDF、存储引擎等<br>
+* 跨多个节点的Sharding技术<br>
+* 智能代理<br>
+* 多CPU/多核CPU<br>
+* 优化的字段类型<br>
+* 高效的内存使用<br>
+* 没有内部ACL，使用LDAP/PAM<br>
+* 没有数据库数据格式化<br>
+* 整理有序的Make系统<br>
+* 缺省存储引擎为InnoDB<br>
+* 移除Windows兼容性
+➜42%的网民承认曾偷偷登录过其他人的帐号
+https://www.solidot.org/story?sid=7513	25500
+在一次在线调查中，有42%的互联网用户承认在他人不知情的情况下，<a href="http://www.internetevolution.com/author.asp?section_id=466&amp;doc_id=161919&amp;">登录过别人的邮箱和社交网站帐号</a>。调查并没有询问他们是如何获得密码的。
+➜研究发现一夫多妻的男人更长寿
+https://www.solidot.org/story?sid=7514	27900
+想要更长寿？再去找一个老婆。《新科学家》报道，<a href="http://www.newscientist.com/article/dn14564-polygamy-is-the-key-to-a-long-life.html?DCMP=ILC-hmts&amp;nsref=news6_head_dn14564">一项新研究发现一夫多妻制中的男性比一夫一妻制下男性活得更长</a>。<i>
+在对不同社会经济制度下居民寿命进行统计之后，谢菲尔德大学生态学家<a href="http://www.huli.group.shef.ac.uk/virpi-personal.html">Virpi Lummaa</a>称，140个实施多配偶制国家60岁以上男性的平均寿命，比49个实施单配偶制国家中的男性高12%。
+上周Lummaa在国际行为生态学协会的年度会议上报告了她的发现，研究并非是呼吁多配偶制，而是试图解决长久以来的谜团，为什么男人活那么久？
+</i>
+➜微软计划为 IE 增加隐私浏览模式
+https://www.solidot.org/story?sid=7515	29100
+<a href="http://www.comsharp.com/">35公里</a> 写道 "在本周的一次记者见面会上，微软搜索，门户，与广告平台的高级副总裁 <a href="/8301-1023_3-10020157-93.html">Satya Nadella</a> 说，他们将在 IE 中增加一项<a href="http://news.cnet.com/8301-17939_109-10021120-2.html?hhTest=1">隐私浏览模式</a>。而<a href="http://www.istartedsomething.com/20080820/microsoft-hints-private-browsing-feature-ie/">一个叫 Long Zheng 的博客中的一篇文章</a>提到微软最近提交了两个商标 Cleartracks 和 Inprivate 似乎与这个有关。
+<i>这两个商标均与 Web 浏览器有关，Cleartracks 与删除浏览历史有关，而 Inprivate 涉及的是禁用浏览历史与图片缓存。
+隐私浏览模式的最直接的用例是，比如浏览色情网站的避免留下痕迹。其它应用还有，比如，用户可以使用隐私浏览模式搜索医疗疾病相关的内容。微软没有就此功能做过多评论，只是说，我们在 IE8 中加入一些隐私功能。在<a href="http://blogs.msdn.com/ie/archive/2008/06/24/ie8-and-trustworthy-browsing.aspx">微软博客6月份的一篇文章</a>中，微软说，隐私是“可信赖浏览”（trustworthy browsing）的重要组成部分，一个比较大挑战是，明白地告诉用户他们所浏览的网站正在泄露什么信息，同时让他们对这些透露的信息进行控制。微软对隐私的定义是，用户可以控制浏览器所能提供给网站的信息。
+IE 目前仍然主导浏览器市场，IE8 现在正处于 Beta 测试阶段，并<a href="http://news.cnet.com/8301-13860_3-9998827-56.html">将与今年晚些时候发布</a>。</i>
+➜你忍不住想付费的独立游戏
+https://www.solidot.org/story?sid=7516	29400
+有许多商业游戏可能会使你产生上当的感觉，但同样有许多杰出的独立游戏可能使你产生掏钱的冲动，它们的创新、游戏方式和合理价格（甚至免费），都让你觉得物超所值。这篇文章挑选出<a href="http://www.skorks.com/2008/08/top-indie-games-you-wouldnt-mind-paying-for/">19款称得上经典的独立游戏</a>：以下是前10：
+<i>
+<a href="http://www.taleworlds.com/">《骑马与砍杀（Mount and Blade）》</a>：真正创新的游戏，让你变成梦中的骑士，指挥一支军队与土匪或领主作战。<br>
+<a href="http://www.newstarsoccer.com/nss3.htm">New Star Soccer 3</a>：足球经理模拟类游戏。<br>
+<a href="http://www.nielsbauergames.com/">Smugglers 4</a>：太空贸易游戏。<br>
+<a href="http://www.veloci.dk/gamebiz/gb2/">Gamebiz 2</a>：企业大亨类游戏。 <br>
+<a href="http://zsx3.skasoftware.com/">ZSX3: Ninjastarmageddon</a>：扮演忍者的太空冒险游戏<br>
+<a href="http://www.spiderwebsoftware.com/geneforge4/index.html">Geneforge 4</a>：科幻色彩的RPG游戏。 <br>
+<a href="http://www.spiderwebsoftware.com/geneforge4/index.html">Kudos</a>：类似模拟人生》 <br>
+<a href="http://www.positech.co.uk/rocklegend/index.html">Kudos Rock Legend</a>：部分RPG，部分模拟人生，还有部分企业大亨式的游戏。玩家将扮演一位摇滚歌手。<br>
+<a href="http://www.positech.co.uk/democracy2/index.html">Democracy 2</a>：模拟政治游戏。<br>
+<a href="http://www.soldak.com/Depths-of-Peril/Overview.html">Depths of Peril</a>：可能是目前最好的独立RPG游戏。</i>
+➜黑客揭露造假
+https://www.solidot.org/story?sid=7517	31320
+<a href="http://yro.slashdot.org/article.pl?sid=08/08/20/1259253">/.</a>报道，一位搜索引擎黑客stryde.hax发现了目前还保留在互联网的几位年龄有疑问的<a href="http://strydehax.blogspot.com/">奥运会参赛运动员的官方注册信息</a>，并留下屏幕截图。<i>相关的文档正从官方文件和Google cache中消失，但有意思的是百度——中国最大的中文搜索引擎却还保留着部分信息，<a href="http://cache.baidu.com/c?m=9f65cb4a8c8507ed4fece763105392230e54f7227e8a905368d4e41dce204c413037bfa673794e5392d8242140b20a17a2a17d247c1e68e6dd999f4aaaf1cc693bcd7a742613913161c468d8dc4755d650e44d98a40e91b8e74391b9d2a2dc5f58cc&amp;p=882a97128c805ffc57ecd3214f&amp;user=baidu">这里（一）</a>和<a href="http://cache.baidu.com/c?m=9d78d513d9d431dc4f9ce3690c66c0166d43f1682ba1d2020ed68448e267504a4172a4fb792d4a4295876b6672b25419afb52172404262eadb8e9f4aaaeecf6c388850652c01d21a4c8458b2930064dc60c70fe9ad1be3a7b863d5ffc5d3a81e0d8b&amp;p=8b2a941786cc43f113fecb3146&amp;user=baidu">这里（二）</a>。在本届奥运会上，中国年轻的女子体操运动员获得了团体金牌，其中可爱的何可欣小朋友还获得了女子高低杠冠军，正是她的年龄受到了质疑。</i>
+➜为什么企业仇恨Perl
+https://www.solidot.org/story?sid=7518	35760
+O'Reilly's ONLamp博客分析了一些公司<a href="http://www.oreillynet.com/onlamp/blog/2008/08/why_corporates_hate_perl.html">厌恶Perl的理由</a>。<i>
+Dave Cross参加了哥本哈根的<a href="http://www.yapceurope2008.org/">欧洲YAPC大会</a>（YAPC赞助的perl会议），确定明年的会议将在里斯本举行，主题将为“企业Perl”。但是在与一些人交谈之后，作者考虑在明年递交议题“<a href="http://developers.slashdot.org/article.pl?sid=08/08/19/2335246">为什么企业仇恨Perl</a>”。当然这不是真的，有许多大公司都热爱着Perl，但存在许多的理由促使一些公司离开Perl。某些公司管理者宣布不再选择Perl作为Web系统的语言，因为它过时了，他们宁愿用Java和PHP去重写系统。一提到Perl，他们的态度就变得恶劣。商业用户不想要肮脏的、陈旧的和破碎的Perl代码，他们只想要漂亮的新技术。不可否认，那些公司可能有大量编写的很糟糕的、很难维护的Perl代码，但这与Perl本身没有直接联系。这可能是由于代码是经历多年的零碎编写，或者在互联网的最初阶段，当时还不存在互相协作的团队开发，以至于最后代码很难维护。</i>
+➜貌似appspot.com的部分被封地址已经解封
+https://www.solidot.org/story?sid=7519	55080
+<a href="http://ioio.name/">始作俑者</a> 写道 "貌似appspot.com的部分被封子域已经解封，前几天我寝室所在的浙江网通线路还是<a href="http://angel.appspot.com/">不可访问的</a>，而今天已经可以访问了，并且之前使用手机WAP上网，中国移动浙江网关也是访问不到的，而今天也可以访问到了。而我们学校的教学区线路根本没有被封过，一直都可以访问。"
+➜回味两部关于 Linux 的纪录片
+https://www.solidot.org/story?sid=7520	55260
+<a href="http://www.ownlinux.cn/">OwnLinux.cn</a> 写道 "由于笔者在 80G 的麻雀硬盘上装了 Win XP、MAC OS X 以及 Ubuntu 8.10 三个操作系统，不定时要整理硬盘，删除一些不太重要的东西以让出磁盘上宝贵的空间。正巧看见了《The code - Linux》和《Revolution OS》 这两很有名的关于 <a href="http://www.ownlinux.cn/2008/08/17/the-two-documentaries-about-linux/">Linux 的纪录片</a>。<br>
+想必很多用 Linux 的朋友都已经看到过两部纪录片的吧，但我考虑到 Ubuntu 8.04 + Wubi 的组合带了很多的 Linux 新用户，他们或许对那段“历史”不太了解，就把老酒给大家打出来了。看过的朋友谈谈你的看法和观点（片中的部分观点我不是太认同）。片中讲了 GNU、Linux、Unix 和 Open Source 的含义和他们的之间的关系。这可是权威的解释，因为片中的人物是他们的创始人或是业内的重量级的人物。如果你还不太清楚 GNU、Linux 的读音的话，这两部片子你就非看不可了。"
+➜Mcafee 将发布 Linux MID 平台的安全软件
+https://www.solidot.org/story?sid=7521	55440
+<a href="http://www.ownlinux.cn/">OwnLinux.cn</a> 写道 "Mcafee （麦咖啡）是世界著名的防病毒软件和入侵防护解决方案提供商。近日，McAfee 承诺将针对移动互联网设备(简称MID)提供<a href="http://www.ownlinux.cn/2008/08/21/mcafee-will-release-anti-virus-software-on-linux-mid/">防病毒软件和防入侵防护解决方案</a>。由于 Linux 操作系统在节电、响应速度以及价格等方面都非常适合移动互联网设备(简称MID)，因此 Linux 得到了众多的国际和本地的软件厂商支持，在 MID 平台上扮演了一个重要的角色。"
+➜iPhone生产线上的mm
+https://www.solidot.org/story?sid=7522	55560
+<a href="http://tuxfans.com/">windrose</a> 写道 "7月底的时候，有人在新买的iPhone里面发现了<a href="http://gizmodo.com/5030045/worker-accidentally-takes-pictures-of-iphone-factory-on-iphone">一些照片</a>，好像是生产过程中被人无意拍摄到了周围的场景。<br> <br>
+现在，一位英国用户也在他的新iPhone里面发现了一些照片，不同的是这些照片明显是有意为之。照片上是一个<a href="http://forums.macrumors.com/showthread.php?t=547777">生产线mm</a>，表情俏皮，笑容灿烂。<br> <br>
+随着照片在网络上传开，也许很多人会关心这个mm接下来的命运。而从阴谋论的角度考虑，这会不会又是所谓网络推手一次新的出击？"

@@ -1,0 +1,69 @@
+➜多家网站被封锁，LinkedIn收到审查要求
+https://www.solidot.org/story?sid=39791	8289
+《华尔街日报》<a target="_blank" href="http://cn.wsj.com/gb/20140604/bch081318.asp"><u>报道</u></a>，包括《华尔街日报》在内的多家网站遭到封锁，而职业社交网站LinkedIn也收到了来自中国的审查要求。<br>
+<i>自上周以来Google服务的封锁力度升级，中国大陆用户难以访问Google的各项服务，Google发言人称问题与它无关。LinkedIn发言人Roger Pua称，最近该公司的中国业务也接到了本地审查要求,，表示该公司早就知晓在中国提供中文LinkedIn网站的服务可能需要遵守中国政府对互联网平台的审查要求。《华尔街日报》中文网自上周六以来一直处于屏蔽状态，《华尔街日报》英文网站周一开始也被屏蔽。云服务供应商CloudFlare称，从周一开始，拒绝服务攻击的数量增多，这些攻击都来自中国大陆。报道评论说，Google服务的被封体现了习近平2012年执政以来中国对互联网管控更加严格的状况。</i>
+➜Google发布Chrome加密扩展End-To-End
+https://www.solidot.org/story?sid=39792	10912
+Google安全博客<a target="_blank" href="http://googleonlinesecurity.blogspot.com/2014/06/making-end-to-end-encryption-easier-to.html"><u>宣布了</u></a>Chrome加密扩展<a target="_blank" href="https://code.google.com/p/end-to-end/"><u>End-To-End</u></a>，为用户提供了端对端的加密功能，用户的信息在离开浏览器时将会被加密，然后由预定的接收方解密。End-To-End利用了OpenPGP的一个Javascript实现，你的私钥储存在localStorage，不会发送给Google。如果你需要在多台电脑上使用这个扩展，那么在同步密钥前可以用密码加密。Google在Apache 2.0许可证下公开了End-To-End的代码，希望社区帮助测试和评估代码，确保扩展的安全性，目前扩展处于alpha阶段，还没有进入<a target="_blank" href="https://chrome.google.com/webstore"><u>Chrome Web Store</u></a>。Google同时发布了<a target="_blank" href="http://www.google.com/transparencyreport/saferemail/"><u>传输期间的电子邮件加密比例报告</u></a>，称发送到网易163和腾讯QQ的邮件都没有经过加密。
+➜微软发布Visual Studio 14预览版
+https://www.solidot.org/story?sid=39793	13805
+微软<a target="_blank" href="http://blogs.msdn.com/b/somasegar/archive/2014/06/03/first-preview-of-visual-studio-quot-14-quot-available-now.aspx"><u>发布</u></a>了<a target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkId=400850"><u>Visual Studio 14</u></a>社区技术预览版，主要目的是希望从社区获得反馈。Visual Studio 14正式版计划在2015年发布。14不是一个正式名字，只是一个内部版本号，上个版本VS 2013的内部版本号是12。VS 14的主要新特性包括： .NET编译器平台Roslyn、ASP.NET vNext，Apache Cordova，支持更多C++ 11标准特性。Cordova是一个使用HTML、CSS和JavaScript构建iOS、Android和Windows应用的工具链。Roslyn是一个开源编译器即服务平台，其中C#代码重构支持加入了内联临时变量和引入解释变量，Visual Basic首次加入了重构支持。
+➜美国科技工人组织抵制IBM
+https://www.solidot.org/story?sid=39794	16246
+由于IBM等公司热衷于招募海外工人，三大美国科技工人组织Bright Future Jobs、Programmers Guild和WashTech<a href="http://www.brightfuturejobs.com/professional_labor_boycott_against_manpower_ibm_and_infosys"><u>宣布</u></a>抵制IBM、Infosys和Manpower。他们希望这次抵制活动能引起公众对科技公司歧视性雇佣政策的关注，同时向科技公司施加压力，要求他们在招募在美国工作的岗位时<a target="_blank" href="http://it.slashdot.org/story/14/06/03/2043202/tech-worker-groups-boycott-ibm-infosys-manpower"><u>考虑美国的IT工人</u></a>。美国IT工人的薪水要比持签证的海外工人高得多。Infosys否认歧视美国IT工人的指控，但 IBM 和 Manpower没有回应抵制。
+➜游戏开发者回应AMD和NVIDIA的争论
+https://www.solidot.org/story?sid=39795	18531
+AMD上周<a target="_blank" href="http://www.solidot.org/story?sid=39733"><u>指责</u></a>竞争对手nVidia，称nVidia通过它的GameWorks中间件程序阻止AMD与游戏开发商合作优化AMD显卡的游戏性能，而nVidia则否认了AMD的指控。两位游戏行业的开发者： Epic Games创始人Tim Sweeney和Valve的资深OpenGL开发者Richard Geldreich<a target="_blank" href="http://www.extremetech.com/gaming/183411-gameworks-faq-amd-nvidia-and-game-developers-weigh-in-on-the-gameworks-controversy"><u>评价了双方的观点</u></a>。nVidia的图形业务大于AMD，它投入了大量资金开发3D库、渲染引擎和编程工具。AMD没有在这上面投入多少钱， Mantle API是个例外。在AMD进入到主机行业前，它的Radeon图形业务部门在2012年的收入是14亿美元，而Nvidia 的同期收入超过42亿美元。虽然收入远低于Nvidia，AMD在硬件方面仍然能与Nvidia一较高下，但Nvidia在驱动程序优化方面的投资要高得多。开发者都认为，nVidia的GameWorks并不是有意去摧毁AMD优化游戏的能力。AMD优化游戏的方式主要是帮助开发商优化引擎，它依赖于源代码优化，如果无法接触源代码AMD难以改进GameWorks游戏的性能。
+➜Google气球坠毁在Yakima县
+https://www.solidot.org/story?sid=39796	25224
+<div align="center"><img src="http://img.solidot.com.cn/0/498/liv8ZqJ8bRtek.jpg" align="" height="282" width="500"><br>
+</div>
+<br>
+上周三，一只Google Loon项目气球坠毁在华盛顿州Yakima县的电线杆上，切断了附近家庭的电力。Google本周<a target="_blank" href="http://blogs.seattletimes.com/brierdudley/2014/06/03/google-confirms-yakima-loon-balloon-crash/"><u>证实了这起事故</u></a>。气球是在内华达州释放的。该公司在一份声明中称，自去年在新西兰启动Google Loon项目以来，它一直在从事研究性的试飞，改进技术。Google表示与当地的空管机构协作，并且设有一支专门回收着陆气球的团队。Google Loon项目旨在向没有互联网接入的偏远地区提供无线联网服务，它还探索发射地球低轨道卫星提供卫星联网服务。
+➜新加坡警告在Twtter上批评司法不公的教会牧师
+https://www.solidot.org/story?sid=39797	26927
+<div align="center"><img src="http://img.solidot.com.cn/0/327/liqckgxLlnayw.jpg" align="" height="258" width="560"><br>
+</div>
+<br>
+新加坡城市丰收教会牧师陈金福因为在Twitter上发帖暗示新加坡司法不公和腐败而<a target="_blank" href="http://www.zdnet.com/singapore-court-chides-church-pastor-over-tweets-7000030195/"><u>受到警告</u></a>。总检察署要求<a target="_blank" href="http://www.zaobao.com.sg/realtime/singapore/story20140603-350522"><u>他撤下涉嫌藐视法庭的推文</u></a>，并在Twitter上道歉。总检察署称他所发表的推文中伤了新加坡法庭，要求陈金福撤下其中一则尚未删除的推文，并于七天内在推特上刊登道歉启事。在首则推文中，陈金福疑影射国家法院让亲政府的《海峡时报》提前知道城市丰收教会创办牧师康希等六人是否表面罪名成立的裁决。在另一则推文中，他则被指暗示法庭腐败。陈金福已经删除了帖子，并将帐号设为不对外公开。
+➜伟大的艺术家剽窃：那些受Android启发的iOS 8特性
+https://www.solidot.org/story?sid=39798	28491
+苹果昨天在开发者大会上宣布了下一代移动操作系统iOS 8，并放出了beta版下载。iOS 8加入了大量新特性，但熟悉Android的观察者都会注意到，这些特性似曾相识。许多新特性早在几年前就出现在Android上。Ars的一篇文章<a target="_blank" href="http://arstechnica.com/gadgets/2014/06/great-artists-steal-the-ios-8-features-inspired-by-android/"><u>用图像对比了iOS 8和Android的相似功能</u></a>。这些特性包括：在虚拟键盘上面加入一个单词建议栏，这个功能早在Android 1.5中就有了；允许第三方键盘应用替换系统默认键盘（ Android 1.5）；应用间通讯；发出Hey Siri命令启动监听（OK Google）；应用商店支持视频演示；Widgets；照片备份储存，等等。
+➜中国科技企业受益于中美网络攻击争端
+https://www.solidot.org/story?sid=39799	30966
+路透社<a target="_blank" href="http://cn.reuters.com/article/CNAnalysesNews/idCNKBS0EF0D720140604?sp=true"><u>报道</u></a>，在中美两国相互指责对方实施网络攻击之际，东软集团和中国软件等中国软件企业的销售收入和市场份额则正在扩大。东软集团是中国最大的软件解决方案提供商之一，该公司销售给政府和国有企业的网络产品和信息安全软件均出现增长。前NSA合同工斯诺登去年揭露美国网络监控计划以来，中国软件企业的销售和股价双双上扬，最近中美两国之间的争端使这些公司的前景更加光明。美国政府对五名军方黑客的指控激起中方的愤怒，也使得中国政府促进本国信息科技企业发展的紧迫性进一步上升。中国媒体指责美国政府是“装腔作势的高级流氓”，中国官员指责华府在网络攻击问题上实行“双重标准”。包括东软集团和中国软件在内的至少四家本土软件和硬件企业获得了工信部最高级别的认定，获准向处理绝密信息的政府机构提供服务。
+➜天文学家发现最古老的宜居带行星
+https://www.solidot.org/story?sid=39800	33480
+<div align="center"><img src="http://img.solidot.com.cn/0/328/liePgX6KkwYlE.jpg" align="" height="315" width="560"><br>
+<br>
+</div>
+天文学家在一颗太阳最古老的恒星邻居周围<a target="_blank" href="http://phl.upr.edu/press-releases/kapteyn"><u>发现了两颗行星</u></a>，其中一颗位于宜居带，它可能适宜生命生存，而它的年龄已超过100亿年，如果存在生命，它有足够的时间演化出智能。恒星卡普坦星（Kapteyn's Star）是荷兰天文学家Jacobus Kapteyn在19世纪末发现的，属于红矮星，距离地球只有13光年，是太阳第25近的恒星，位于银晕之中，质量为太阳的三分之一，是太阳最古老的邻居。新发现的宜居带行星Kapteyn b质量是地球的5倍多，公转周期48天，而它的年龄可能有115亿年，是地球的两倍多。
+➜成人网站称Safari和Chrome分别是移动和桌面端之王
+https://www.solidot.org/story?sid=39801	35406
+流行色情网站Pornhub的一篇<a target="_blank" href="http://www.pornhub.com/insights/pornhub-web-browser-comparison/"><u>研究报告</u></a>称，Safari是智能手机和平板用户<a target="_blank" href="http://arstechnica.com/tech-policy/2014/06/apples-safari-browser-wins-mobile-tablet-porn-watching-crowns/"><u>最流行的浏览器</u></a>，而Chrome则是桌面用户的最爱。Pornhub每天有3800万浏览者。研究称，在桌面端，44.4%的用户使用Google Chrome，IE第二位23.3%，Firefox第三20.1%。在移动端，苹果的浏览器占38.2%，Android浏览器占29.4%。其中值得一提的是，苹果的浏览器在平板上占绝对的统治地位：73%，相比下Chrome只有13.6%，Android浏览器7.8%，Amazon Silk浏览器4.8%。
+<br>
+<br>
+<div align="center"><img src="http://img.solidot.com.cn/0/329/liyO184lYpohA.png" align="" height="1297" width="480"><br>
+<br>
+</div>
+➜摇头丸之父Alexander Shulgin去世，享年88岁
+https://www.solidot.org/story?sid=39802	39292
+<div align="center"><img src="http://img.solidot.com.cn/0/330/limn7vQqbSLmw.png" align="" height="380" width="380"><br>
+<br>
+</div>
+摇头丸之父<a target="_blank" href="http://en.wikipedia.org/wiki/Alexander_Shulgin"><u>Alexander Shulgin</u></a>因肝癌去世，<a target="_blank" href="http://www.bbc.com/news/health-27676669"><u>享年88岁</u></a>。他的妻子Ann说，Shulgin是在家人和佛教冥想音乐的陪伴下离开人世的。Shulgin是一名化学家和药理学家，因为普及了流行毒品摇头丸（MDMA）而闻名于世。他在致力于研究的同时开始试验精神类化合物。他亲自测试和邀请朋友共同品尝他合成的化合物。在合成和测试了数百种化合物之后，他偶遇了今天被称为摇头丸的毒品。摇头丸早在1912年就被一家企业合成出来，但从未进行过人体试验。Shulgin决定进行人体试验，从自己开始。摇头丸在1980年代开始逐渐流行。
+➜GnuTLS发现缓冲溢出漏洞，补丁已释出
+https://www.solidot.org/story?sid=39803	39619
+OpenSSL替代加密库<a target="_blank" href="http://www.gnutls.org/"><u>GnuTLS</u></a>发现了一个<a target="_blank" href="http://arstechnica.com/security/2014/06/critical-new-bug-in-crypto-library-leaves-linux-apps-open-to-drive-by-attacks/"><u>缓冲溢出漏洞</u></a>，可被利用执行任意代码。<a target="_blank" href="https://bugzilla.redhat.com/show_bug.cgi?id=1101932"><u>漏洞</u></a>出在ServerHello信息中会话ID的长度检查不正确。一个恶意配置的服务器在与设备建立HTTPS加密连接时，可通过发送超过会话ID值长度的畸形数据触发缓冲溢出。如果设备使用的GnuTLS版本没有打上补丁，设备能被攻击者远程劫持。GnuTLS被许多流行Linux发行版和软件所使用，开发者已在上月底发布了新版3.1.25、3.2.15和3.3.4，修复漏洞，多数发行版应该已经打上了补丁。
+➜台北电脑展电脑非主角
+https://www.solidot.org/story?sid=39804	41114
+今年的台北电脑展<a target="_blank" href="http://cn.wsj.com/gb/20140604/tec160610.asp"><u>PC不是主角</u></a>。宏碁第一次没有推出任何新的电脑产品，而是展示了智能手表和Android手机。随着许多PC用户向平板电脑和智能手机迁移，PC厂商努力顺应这一趋势。英特尔总裁勒妮•詹姆斯(Renee James)在展会上发表的主题演讲证明了PC行业的低迷现状。她也没展示新的PC产品，而是重申英特尔将推动“二合一”产品，同时努力开发适用于安卓平板电脑的芯片。“二合一”产品具备分离式或翻盖式键盘，配合主体平板电脑使用。鉴于制造商希望通过新产品抵消个人电脑销量下滑的影响，它们已经将重心转向了移动和可穿戴设备。
+➜被DEF CON会议拒绝的安全研究员公开中国网络间谍活动报告
+https://www.solidot.org/story?sid=39805	42445
+<div align="center"><img src="http://img.solidot.com.cn/0/331/li0PEZAFe52S.png" align="" height="254" width="480"><br>
+<br>
+</div>
+DEF CON安全会议主办方拒绝了安全研究员Bill Blunden递交的与中国网络间谍活动相关的演讲报告。Blunden随后将<a target="_blank" href="http://www.belowgotham.com/ODE-TO-MIKE-ROGERS.pdf"><u>演讲稿</u></a>（PDF）和<a target="_blank" href="http://www.belowgotham.com/OTMR-TRANSCRIPT.pdf"><u>转录文本</u></a>（PDF）公布在网上。这篇演讲稿讨论了中国网络间谍活动是否会威胁到美国的经济安全，作者从毛泽东、邓小平、薄熙来一直到前NSA合同工Ed Snowden，引用了大量美国媒体和美国政界人士有关网络间谍的言论，只是没能给出令人信服的结论，但值得一看。
+➜开源种子计划许可证争议产生出人意料的结果
+https://www.solidot.org/story?sid=39806	46082
+开源种子计划（Open Source Seed Initiative，<span> OSSI</span>）创始人之一的Jack Kloppenburg在Opensource.com发表文章，<a target="_blank" href="http://opensource.com/law/14/5/legal-issues-open-source-seed-initiative"><u>谈论了开源种子计划许可证争议</u></a>。开源种子计划原本设想将开源许可证应用于植物种子，但最终他们放弃了这一尝试，转向了<a target="_blank" href="http://www.opensourceseedinitiative.org/ossi-pledge/"><u>宣誓</u></a>。OSSI创建于2012年5月，共享种子的支持者们希望能像开源和自由软件运动一样，制定出一个在法律上站得住脚的许可证。他们花了两年时间酝酿，发现制定出具有法律意义的许可证是可行的，但要求太复杂而在实际中不会起到效果，对许多组织而言法律许可证在哲学理念上也难以接受。2014年2月，OSSI作出了一个艰难但深思熟虑的决定：放弃制定有法律意义的许可证，改为誓言。从法律层面转到规范和道德。结果出乎意料。虽然誓言不具有法律约束性，但能像病毒一样容易传播，促进自由交换和使用，是一种非常有效的宣传教育工具。

@@ -1,0 +1,73 @@
+➜研究称“姐弟恋”只是个传说
+https://www.solidot.org/story?sid=19589	1800
+威尔士卡迪夫学院对网络恋情所作的<a href="http://www3.uwic.ac.uk/English/News/Pages/New-study-shows-that-women-follow-the-crowd-when-it-comes-to-taste-in-men.aspx">调查显示</a>，在寻找理想伴侣时，<a href="http://cn.reuters.com/article/oddlyEnoughNews/idCNCHINA-2858820100819">男性女性仍旧非常传统保守</a>。麦当娜和黛米・摩尔与小男友的恋情只是明星世界中的特例。<i>
+研究显示，女人通常会选择更年长、因此也更富有的男性，而男性则希望找到更年轻、有吸引力的女性，而且开始上年纪的男性通常会找比自己年龄小很多的女性。研究负责人、心理学家Michael Dunn称，他们利用交友网站调查了人们的择偶年龄偏好。共有来自14个国家、两种不同宗教信仰的2.2万名男女接受调查。“据说麦当娜和黛米・摩尔影响了新一代熟女，她们会把年轻得多的男孩作为择偶对象，”Dunn说，“但玩具男现象只存在于名人的世界，不反映真实的社会。”"</i>
+➜英特尔将以76.8亿美元收购McAfee
+https://www.solidot.org/story?sid=19590	2700
+<a href="http://cnnet.us/taobao/">WWW.TAOBAO</a> 写道<i> "英特尔公司<a href="http://www.latimes.com/business/la-fiw-intel-mcafee-20100819,0,4845019.story">宣布</a>，将以每股48美元现金<a href="http://cnnet.us/taobao/intel-768-billion-mcafee/">收购</a>安全软件公司McAfee，这一交易总值约76.8亿美元。英特尔表示，收购完成后McAfee将成为自己的全资子公司，并直接向英特尔旗下的软件及服务部门汇报。McAfee全球电信解决方案事业部副总裁PaulStich此前在接受通信世界网专访时指出，其18%-20%的营业收入来自于通信运营商，全球80%电信运营商都是其客户，其中包括英国电信、德国电信、AT&amp;T、Verizon和NTT DoCoMo等。"</i>
+➜Ubuntu放弃支持ia64和sparc架构
+https://www.solidot.org/story?sid=19591	3600
+Ubuntu的技术委员会在6月份宣布<a href="https://lists.ubuntu.com/archives/ubuntu-devel-announce/2010-June/000722.html">采纳一项新政策</a>：如果在Maverick的功能冻结日期（8月12日）前没人维护，他们将放弃ia64和sparc架构。现在，由于没有人对ia64和sparc架构感兴趣，Ubuntu技术委员会投票批准<a href="http://lwn.net/Articles/400985/">放弃这两种架构的支持</a>。<a href="http://en.wikipedia.org/wiki/Itanium#Architecture">IA-64</a>是英特尔与惠普共同开发的纯64位微处理器，使用这种架构的CPU有Itanium和Itanium 2。微软在今年4月份宣布Windows将不再支持Itanium。<a href="http://zh.wikipedia.org/zh-cn/SPARC">SPARC是Sun设计的RISC微处理器架构。</a>
+➜东芝宣布硬盘存储技术突破，东北大学宣布数据密度世界纪录
+https://www.solidot.org/story?sid=19592	6120
+东芝公司的研究人员宣布<a href="http://hardware.slashdot.org/story/10/08/18/184205/Toshiba-Claims-Bit-Patterned-Drive-Breakthrough">数据存储技术的新突破</a>，新的技术将能让硬盘存储密度达到每平方英寸2.5TB，首个产品预计将于2013年上市。与此同时，日本东北大学的研究人员宣布了<a href="http://www.physorg.com/news201250166.html">存储数据密度世界纪录</a>。<i>
+根据发布在《应用物理快报》上的报告，科学家在“铁电”材料上实现了<a href="http://chinese.eurekalert.org/zh/pub_releases/2010-08/aiop-wrd081210.php">每平方英寸4 trillion bits数据储存密度</a>。这个密度大约是当今最先进的磁性硬盘驱动器存储密度的八倍。Yasuo Cho博士说，“我们期望这种铁电数据存储系统是替代磁性硬盘或闪存的候选对象”。铁电存储具有无需磁或热实现破记录高密度的优势，但科学家也承认真正商品化还需要克服很多困难，包括提高速度和读取数据的准确率，以及开发低成本的铁电基板。现有的磁盘驱动器也能持续改进，比如希捷说它可以预期达到每平方英寸50 trillion bits密度。</i>
+➜Linux kernel高危安全漏洞悄悄修复
+https://www.solidot.org/story?sid=19593	8280
+6月17日，Invisible Things Lab通知X.org团队，他们发现了一个x86_32和x86_64平台的<a href="http://www.invisiblethingslab.com/resources/misc-2010/xorg-large-memory-attacks.pdf">高危安全漏洞</a>(PDF)。漏洞涉及访问X server的用户进程的权限提升，它允许一个普通的用户进程提升到root权限，这个bug与X server无关，而与内核有关，它自Linux 2.6 Kernel以来便已存在。它可能会导致一个恶意的PDF文件绕过Linux的安全机制，获得root权限，破坏整个系统。不过到目前为止没有利用该bug的攻击发生。8月13日，Linus Torvalds<a href="http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commitdiff;h=320b2b8de12698082609ebbc1a17165727f4c893">合并</a>了一个补丁初步修正了问题，在Linux 2.6.27.52、2.6.32.19、2.6.34.4和2.6.35.2中<a href="http://tech.slashdot.org/story/10/08/18/1534258/Linux-Xorg-Critical-Security-Flaw-Silently-Patched">bug已经修复</a>。
+➜一种“或然”处理器
+https://www.solidot.org/story?sid=19594	11520
+《MIT技术评论》<a href="http://www.technologyreview.com/computing/26055/?a=f">报道</a>，美国波士顿的半导体公司<a href="http://www.lyricsemiconductor.com/">Lyric Semiconductor</a>透露了它的第一种“<a href="http://hardware.slashdot.org/story/10/08/18/0326230/Chips-That-Flow-With-Probabilities-Not-Bits">概率处理器</a>”，它的运算是基于概率而不是二进制逻辑。它仍是用晶体管制成，但它输入输出的值是概率而不是0或1。<i>
+“概率处理器”的技术是基于该公司创始人兼CEO Ben Vigoda的博士论文，它能以一种高效简化的方式实现统计运算。它有大量潜在的应用，Vigoda举例说，亚马逊公司的推荐系统是基于概率，信用卡的支票欺诈以及垃圾邮件过滤器也都是基于概率。Vigoda认为一个基于概率的处理器能大大简化此类系统的数学运算需求。Lyric公司获得了美国国防部高级研究计划署（DARPA）的资助。</i>
+➜《挟尸要价》被指是假新闻
+https://www.solidot.org/story?sid=19595	17100
+中国新闻摄影“金镜头”年度新闻图片评选中，《挟尸要价》以全票赢得了本年度的<a href="http://media.people.com.cn/GB/40606/12482928.html">最佳新闻照片奖</a>，但该照片被认为<a href="http://news.ifeng.com/photo/news/detail_2010_08/19/1989896_0.shtml">只是“断章取义”</a>。<i>
+去年10月，长江大学的15名学生在长江宝塔湾河段救起两名少年，不幸的是有3名大学生被江水吞噬。有媒体拍摄的捞尸渔民“挟尸要价”的照片随后引发了大量争议，当事人几乎千夫所指，遭到了包括人身攻击在内的大肆抨击。但《南方周末》11月公布的<a href="http://www.infzm.com/content/36929">调查报告</a>指出，捞尸人并没有挟尸要价，照片被错误解读了。照片拍摄的是一艘船，实际上有两艘船参与了捞尸：打捞尸体都是两艘船合作，刚开始不会把尸体拉到船上，而是用绳子绑住尸体拖向岸边浅水处，另外两位大学生的尸体也是以此方式打捞上来....在媒体报道之后，参与捞尸老渔民“被人打了三个耳光”...最后，船被砸了，渔网也被烧了。</i>
+➜婚姻和罗曼蒂克能减少压力相关激素
+https://www.solidot.org/story?sid=19596	20520
+婚姻能改善双方的健康，但未婚者如果能保持浪漫的关系，<a href="http://www.physorg.com/news201265230.html">同样能减少与压力相关的激素产生</a>。<i>
+芝加哥大学和西北大学的研究人员调查了芝加哥大学商学院的500名研究生，其中40%的男性和53%的女性已经结婚或有伴侣，348位男性的平均年龄是29岁，153位女性的平均年龄27岁。学生们被告知因课程要求必须在计算机上参与一个测试经济行为的游戏，在测试前后研究人员提取了他们的唾液样本，以测量激素水平。研究人员发现，所有受试者与压力相关的皮质醇水平都有增加，但女性平均增幅更高。结果显示，未成双成对的男女的皮质醇水平高于已婚者，而形影相吊的男性比已婚和有伴侣的男性有更高的睾固酮水平。</i>
+➜基于Java的Flash播放器比Flash快30倍
+https://www.solidot.org/story?sid=19597	23040
+Joa Ebert正在<a href="http://blog.joa-ebert.com/2010/08/19/introducing-jitb/">开发一个基于Java的Flash播放器实现JITB</a>：JITB能在运行时将ActionScript代码子集翻译到Java字节码，运行的速度与原生Java一样快。在ActionScript标准性能测试中，一个Flash实例用JITB只需30ms，而Flash Player需要10000ms。他希望能在任何Java环境里，无论是桌面、服务器还是Android手机上，运行JITB。JITB目前还有很多事情要做，如实现Flash API，选择合适的OpenGL实现等。
+➜中国表示信息化水平已达到发达国家水平
+https://www.solidot.org/story?sid=19598	26160
+政府智囊机构中国社科院发表的《信息化蓝皮书》<a href="http://news.xinhuanet.com/politics/2010-08/20/c_12464862.htm">指出</a>，中国的信息化水平已超过了世界平均水平，<a href="http://news.yahoo.com/s/afp/20100820/tc_afp/lifestylechinainternet">基本上达到了世界中等发达国家的水平</a>。<i>
+中国4.2亿网民中的四分之一生活在农村，开通互联网的行政村比重提高到91.5%，农村网民的平均上网时长约16小时/周。半数的中国人口生活在农村，那里的生活水平远远低于快速发展的城市。从全国范围看，绝大多数高校、逾60%的中职学校、70%的普通高中、39%的初中和12%的小学已经建成不同程度的校园网。中国还建立了世界上最广泛的审查机制，屏蔽任何当局不喜欢的内容。</i>
+➜暴涨，宇宙之母
+https://www.solidot.org/story?sid=19599	27720
+忘记上帝的粒子，我们现在要讨论的是宇宙的粒子之母，也就是暴涨粒子。<i>
+《新科学家》<a href="http://www.newscientist.com/article/mg20727743.200-closing-in-on-the-inflaton-mother-of-the-universe.html">报道</a>，根据超对称理论（supersymmetry），宇宙的诞生和随后的暴涨要归因于一种至今尚未发现的暴涨粒子。<a href="http://zh.wikipedia.org/zh-cn/%E5%B8%8C%E6%A0%BC%E6%96%AF%E7%8E%BB%E8%89%B2%E5%AD%90">“上帝粒子”</a>是标准模型中具有质量的基本粒子，而“超对称粒子”则是所有已知粒子的伙伴，它将是“统一场理论”中的“统一粒子”。该理论有可能用欧洲的大强子对撞机进行检验。创世纪大爆炸之后的暴涨充满了神秘，宇宙如何在大爆炸之后的几纳秒时间内，从一个比质子还小的体积一下子膨胀至足球到足球场般大小？驱动超光速暴涨的能量据信仍然储存在于类似磁场或引力场的能量场中。</i>
+➜Sandisk推出世界上最小的64GB SSD
+https://www.solidot.org/story?sid=19600	28560
+Sandisk宣布了<a href="http://hardware.slashdot.org/story/10/08/19/1424231/Sandisk-Debuts-Worlds-Smallest-SSD-Yet">世界最小的集成SSD产品</a>，存储容量从4GB到64GB。<i>
+集成式SSD产品主要针对的是平板电脑和超薄笔记本等移动平台。它的重量比回形针还轻，大小比邮票还小，支持SATA标准，可以直接焊到主板上。它的持续读取速度为160MB/sec，持续写入速度为100MB/sec。</i>
+➜PS3改机芯片证实能工作
+https://www.solidot.org/story?sid=19601	30000
+PSX-SCENE对PS3的改机芯片（modchip）<a href="http://psx-scene.com/forums/showthread.php?t=64935">进行了测试</a>，<a href="http://games.slashdot.org/story/10/08/19/139235/PS3-Hacked-via-USB-Dongle">证实它能正常工作</a>。<i>
+PS3的越狱是通过USB加密狗实现的，因此它容易使用，并且不会影响游戏机的保修，它支持所有区域，禁用了索尼的强制升级功能，但不会让游戏机无法工作。它支持所有游戏，但不支持蓝光影碟和DVD的备份，以及玩家在破解前玩过的旧游戏。USB加密狗支持升级。</i>
+➜中国应借人口普查统计住房空置率
+https://www.solidot.org/story?sid=19602	31500
+<a href="http://3seconds.cn/2010/08/china-tongji/">中秋节放假安排2010</a> 写道<i> "<a href="http://www.cn.wsj.com/gb/20100819/CWS080202.asp">《华尔街日报》报道</a>：2005年左右，中国的住房空置率问题就曾引起热议，但至今仍是一桩谜案。中国国家统计局依然没有定义哪怕是具有中国特色的空置房和空置率概念，依然没有开展住房普查或抽样调查的打算。这种不作为也“激发”了民间的“科研精神”，民间自发调查的空置率数据层出不穷，而统计部门除了忙着辟谣，就是依然推诿由于概念不清楚“住房空置率很难统计”。统计部门的言论令人难以接受。首先，统计数据都是很难统计的，否则就不需要专业的统计部门了，如果知难而退，是不是GDP、CPI和房价都不需要统计了？这些数据的统计比住房空置率要复杂多了。而且，如果连并不复杂的住房空置率都说很难统计，那么他们“知难而上”统计出来的其他数据其可信度能有多少？"</i>
+➜Chrome Web Store开始测试
+https://www.solidot.org/story?sid=19603	32040
+<a href="https://chrome.google.com/webstore">Google Chrome Web Store</a>现在已经开放给开发者<a href="http://www.zdnet.com.tw/news/web/0,2000085679,20147168,00.htm">测试</a>。<i>
+Chromium<a href="http://blog.chromium.org/2010/08/get-your-apps-ready-for-chrome-web.html">官方博客</a>上说明了商店如何运作。开发者可以在商店正式上线前，将程序上传到该商店。Google已经确认他们会对开发者收取定价5%作为上架和处理费，另外每笔付费下载交易还会收取30美分，开发者另外需要付5美元注册成为Chrome开发者（除非已经注册为Chrome附件开发者）。开发者可以提供免费、付费，或免费试用程序，最低的定价是1.99美元。有三种类别的产品可送交到Chrome Web商店：应用程序、主题和附件。</i>
+➜字幕组YYeTs服务器被没收
+https://www.solidot.org/story?sid=19604	33300
+<a href="http://3seconds.cn/2010/08/yyets-server-close/">国庆节放假安排2010</a> 写道 <i>"知名字幕组YYeTs(即人人影视，微博)发布<a href="http://yyets.net/">公告</a>称，网站因一些原因被已被关停，预计3-5天后恢复正常。YYeTs此前主要为美剧提供下载及字幕，今年初开始转型只做字幕，着重翻译耶鲁等大学的公开课。“8月19日下午三点因为一些原因网站被某地方文化广电新闻出版局关停，服务器<a href="http://3seconds.cn/2010/08/yyets-server-close/">被没收</a>，我们正在积极配合进行处理”，YYeTs网站挂出公告对网站不能正常访问做出解释，同时公告中预计网站3-5天后将恢复正常。"</i>
+➜你在一个月内下载了多少数据？
+https://www.solidot.org/story?sid=19605	37080
+在光纤到户的时代，你在一个月内<a href="http://arstechnica.com/tech-policy/news/2010/08/isps-top-data-hog-gobbles-27tb-of-data-in-a-month.ars">下载了多少数据</a>？<i>
+比利时ISP Telenet罕见的在论坛上<a href="http://userbase.be/forum/viewtopic.php?t=26761">公布了25大下载者</a>，有一位比利时用户在一个月内下载了2,680GB，相当于2.7TB的数据，紧随其后的用户下载了1.9TB、1.5TB和1.3 TB。Telenet提供这些数据不是为了抓盗版或打击P2P分享行为，而是鼓励用户选择最贵的服务体验最快的下载速度。至于其它ISP，一家美国ISP透露去年有位用户在一个月内数据传输量大约有4TB，平均每位带宽用户的数据传输量是2-6GB。</i>
+➜五角大楼担心中国的网络战
+https://www.solidot.org/story?sid=19606	40320
+五角大楼本周<a href="http://www.defense.gov/News/NewsArticle.aspx?ID=60461%E5%AD%90">公布</a>了《<a href="http://www.defense.gov/pubs/pdfs/2010_CMPR_Final.pdf">年度中国军力评估报告</a>》（PDF），<a href="http://www.america.gov/st/peacesec-chinese/2010/August/20100818161255xdiy0.283012.html?CP.rss=true">指出</a>中国的军力扩张及其意图缺乏透明度，引起了一些可能导致误解和地区不稳定的疑问。除了一般军事发展外，五角大楼还用相当大的篇幅<a href="http://news.yahoo.com/s/ap/20100819/ap_on_go_ca_st_pe/us_us_china_cyber_threats">描述了中国军方的网络战实力和策略</a>。<i>
+报告指出，中共中央和中央军委于2003年批准了信息战三大战法：舆论战、心理战、法律战....PLA正在利用信息战部队开发攻击敌对方军用民用的计算机系统和网络的病毒...过去一年全世界的众多计算机系统，其中包括美国政府的计算机系统，成为来自中国黑客的攻击目标....此类攻击的重点是信息渗透....</i>
+➜中国下月全面推行手机实名制
+https://www.solidot.org/story?sid=19607	40800
+《北京晚报》<a href="http://bjwb.bjd.com.cn/html/2010-08/20/content_308657.htm">报道</a>，运营商透露中国工业和信息产业部要求从下个月开始实行手机实名登记。实行该政策的一个理由是遏制垃圾短信和短信诈骗。<i>
+工信部的要求，从9月1日起，凡购买预付费手机卡的用户，必须提供真实的身份证件，由运营商存入系统留档。对于报亭这样的社会渠道，工信部的要求是“卖哪家公司的卡，哪家公司要管到底”。“也就是说，还允许他们销售电话号卡，但要求他们详细登记用户的个人信息。每天晚上，运营商还要与报亭联系，收回这些信息存档，并且在这些号卡激活后，再回访客户核实信息。”对于那些早已购卡的老预付费客户，运营商将要完成浩大的补录信息和信息核实工作。这项工作主要通过两个渠道完成：借老客户来营业厅办理其他业务的机会，留下他们的身份证件信息;运营商通过发短信的方式，要求他们在一定时间段内回营业厅协助办理这项工作。考虑到工作量，新政的实施将有两年多的过渡期，到2012年将全部完成手机实名登记。中国手机用户已经超过7亿，其中七八成都是不需要实名登记的预付费用户。</i>
+➜牛津英语词典收录宅和呜呜祖拉等新词
+https://www.solidot.org/story?sid=19608	42000
+牛津大学出版社出版的《<a href="http://ukcatalogue.oup.com/product/academic/language/reference/dictionaries/9780199571123.do?zoneCode=HPZC001">牛津英语词典</a>》第三版于8月19日面市。新收录了约2000多个单词，<a href="http://china.kyodo.co.jp/modules/fsStory/index.php?sel_lang=schinese&amp;storyid=84502">包括了日语“hikikomori”（宅）以及在南非世界杯上当地加油助威的民族乐器“Vuvuzela”（呜呜祖拉）等新词</a>。“hikikomori”一词作为英语单词被收录，是由于在欧美地区，年轻人的“hikikomori”本身尚未像日本一样成为社会问题，因此英语中没有贴切表达此意的单词。词典对“hikikomori”的解释是：极端逃避和社会接触，通常以年轻男性居多。

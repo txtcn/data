@@ -1,0 +1,46 @@
+➜成功推广 OpenBSD 的六个计策
+https://www.solidot.org/story?sid=5753	3600
+dhg 写道 "最近 <a href="http://www.openbsd.org/">OpenBSD</a> 邮件列表上的<a href="http://undeadly.org/cgi?action=article&amp;sid=20080401170716">妙文</a>：
+<i>计策一：昂贵好过免费
+<br> <br>“首先，不要提免费！不要提协议！不要提任何与开源有关的事情！也许这会让那些为开源奋斗的人觉得奇怪甚至不人道，不过这样才可以成事。OpenBSD 可以从中得益，这就是我们要的结果。管理层不会相信任何免费的东西，免费意味着 "没有保证" 。一旦你说到免费，管理层的那些人就会联想到你和 <a href="http://www.stallman.org/">Richard Stallman</a> 在彩虹下握手，旁边有一只可爱的角马飞过...”
+<br> <br>“万一谈到价钱问题的时候，你可以说：大概的价格会是 [一个可以被双方接受，也能让 OpenBSD 受益的数字 ]。如果对方穿的西装的价钱看起来超过你一个月的薪水，就把上面那个数字乘以十。”
+</i>更多<a href="http://undeadly.org/cgi?action=article&amp;sid=20080401170716">原文</a>"
+➜新版《沙丘》电影确认
+https://www.solidot.org/story?sid=5754	7200
+Peter Berg将<a href="http://sffmedia.com/content/view/179/1/">导演派拉蒙的新版、大制作的《沙丘》电影</a>。SFFMedia r报道，虽然关于派拉蒙是否获得了弗兰克·赫伯特（Frank Herbert）的经典科幻名作《沙丘》的电影改编权还不得而知，但新版《沙丘》电影正蓄势待发。这将是这部伟大的科幻名著第二次登上大屏幕，第一次是由<a href="http://zh.wikipedia.org/wiki/%E6%B2%99%E4%B8%98_(%E7%94%B5%E5%BD%B1)">大卫·林奇导演</a>，但没有取得太大的成功，甚至成为林奇心中想要忘却的噩梦。派拉蒙正在寻找电影剧作家，将尽可能使电影忠实原著。
+➜Buffon 投针试验：当圆周率计算遇上机率论
+https://www.solidot.org/story?sid=5755	18000
+dhg 写道 "<a href="http://blog.linux.org.tw/~jserv/">jserv</a> 的<a href="http://blog.linux.org.tw/~jserv/archives/002004.html">博文</a>中写道：<br>
+法国数学家、科学家、《自然史》作者，也是风格家的 Comte de Buffon 在 1777 年某日，邀请宾客齐聚大厅，共襄盛举一次试验活动。古稀之年的 Buffon 铺好一张白纸，其上预先画好了一条条等距的平行线，接著取出一大把质量均等、长度为平行线间距一半的小针，待宾客就座后，Buffon 发言道：
+<i>「烦请各位将这些小针一根一根扔往白纸上，并且告知扔下的针是否与纸上平行线相交」</i>
+客随主意，虽摸不著头绪，但也一个个加入了试验的行列。一把小针扔完了，把它捡起来又扔，而 Buffon 则在一旁不停地记数著，忙碌了将近一个钟头。最后，Buffon 高声宣布：
+<i>「各位宾客，依据我的纪录，刚才的投针结果，共投针 2212 次，其中与平行线相交有 704 次。而总数 2212 与相交数 704 的比值为 3.142。」</i>
+说到这里，Buffon 故作停顿，神秘张望宾客，接著说：
+<i>「这就是圆周率π的近似值！」</i>
+Buffon 利用平凡不过的除法，计算出圆周率的近似值，并宣称投针的数目越多，圆周率的近似值将会越精准，这就是数学史上著名的 Buffon 投针问题，记载于其著作《机率算术试验》(1777 年)，此外，Buffon 也试著将机率应用于审判场合，比方说，若能对每个审判员规定某个足以理解真相或说出真相机会的数值，即可算出法庭作出正确判决的机会，换言之，就是「审判的概率」(Probabilit&eacute; des jugements)。"
+➜OpenSSH发布V5.0版
+https://www.solidot.org/story?sid=5756	19200
+<a href="http://www.openssh.com/txt/release-5.0">OpenSSH version 5.0</a>正式发布。
+<a href="http://zh.wikipedia.org/wiki/OpenSSH">OpenSSH</a>（OpenBSD Secure Shell）是使用SSH协议透过计算机网络加密通讯的实现。目前OpenSSH是OpenBSD的子项目，它的创造目的是为SSH Communications Security开发的私有Secure Shell 软件提供一个开源选择。OpenSSH几乎可在<a href="http://www.openssh.com/portable.html">任何平台</a>上使用。
+➜Photoshop CS4 64位版只支持Windows
+https://www.solidot.org/story?sid=5757	21000
+Adobe Systems公司透露了一些Photoshop下一个版本CS4的信息，<a href="http://blogs.adobe.com/jnack/2008/04/photoshop_lr_64.html">明确的表示</a>Photoshop CS4 64位版只支持Windows Vista不支持Mac OS X。<a href="http://arstechnica.com/staff/fatbits.ars/2008/04/02/rhapsody-and-blues">主要原因</a>是OS X版的Photoshop使用的是Carbon，但是苹果在64位版的新OS X上废弃了Carbon，只提供<a href="http://developer.apple.com/cocoa/overview.html">Cocoa</a>，而Adobe不可能为此重写CS4，导致的结果就是CS4不向OS X平台提供原生64位版。
+Adobe表示64位版并不代表比32位版快1倍，实际上只有8-12%。
+➜值得一试的 Granular Linux发行版
+https://www.solidot.org/story?sid=5758	26100
+<a href="http://www.linux.com/feature/130941">Linux.com</a>的文章介绍了<a href="http://www.granularlinux.com/">Granular Linux</a>，一款基于<a href="http://www.pclinuxos.com/">PCLinuxOS</a>的桌面导向的发行版，首要目标是易于使用和界面友好。作者在一台1.60GHz Pentium 4、512内存的电脑山进行了测试：<i>
+live CD安装很简单，根据它的提示一步步进行就可以。拷贝文件只用了不到5分钟，完全安装不到15分钟。Granular支持两种菜单样式：<a href="http://www.kbfx.org/">KBFX</a>是Granular自己的，Kickoff则是类似SUSE的。它的默认桌面是KDE，默认视频播放器是<a href="http://kaffeine.kde.org/">Kaffeine</a>，MPlayer可选，使用<a href="http://www.nongnu.org/synaptic/">Synaptic</a>软件包管理工具。
+</i>
+作者的总结是“依靠一张单碟上包容的程序，Granular Linux提供了能满足普通终端用户需要的大部分软件，没有安装的应用程序也可以通过Synaptic增加。但它在我电脑上测试中出现的显卡上的一些小问题和声卡上的严重问题显示Granular还有许多缺陷，尤其是绝大多数发行版都能在这台电脑上正常工作。但是作为Granular 1.0 的预览版，这或多或少可以原谅。对于哪些有兴趣尝试新发行版的用户来说，Granular Linux值得试用。”。
+➜IBM用复杂数学算法应急自然灾难
+https://www.solidot.org/story?sid=5759	32400
+可以把它叫做<a href="http://www.networkworld.com/community/node/26605">IBM的数学营救计划</a>，蓝色巨人在本周宣布它的研究人员创造了专门的算法去帮助建模和应付自然灾难，如野火、洪水和疾病。<i>
+IBM称它为<a href="http://www.research.ibm.com/stopro">Stochastic programming</a>，其想法是利用高级数学技巧，帮助加速和简化复杂任务，如决定传递包裹的最快路线，察觉健康保险索赔中的欺骗，为国际金融机构自动化处理有复杂风险的决定，安排供应链和产品制造计划以将效率最大化，或是寻找新的见解和突破的医学数据识别模式。在2007年全球有超过1.97亿人受到自然灾难的影响，面对这些危机，政府和应急处理部门仍然没有一个高效的系统去传达信息和进行人员安排、供应品和其它重要资源的分配。IBM称Stochastic programming提供了强大的建模和适应性能力，但需要较长的计算时间。但最近，这项计划得益于更快的处理器和更高效的算法，用于开发出一个可升级的灵活的模型处理复杂的计划，对灾难作出快速响应。
+</i>
+新的模型能够解决所有不可预料的挑战，时间在一个小时之内。
+➜通过按键模式识别和验证用户
+https://www.solidot.org/story?sid=5760	43200
+IBM开发者园地的一篇文章<a href="http://www.ibm.com/developerworks/opensource/library/os-identify/?ca=dgr-lnxw01GDMTyping&amp;S_TACT=105AGX59&amp;S_CMP=GR">介绍一种按键动态验证模式</a>，通过修改GNOME显示管理器（GNOME Display Manager，GDM），在登录窗口上只需输入几个字，电脑就会自动判断谁是谁，是否允许登录。因为在输入用户名时，根据每个人特定的按键模式，你就创造和储存了一种单向的加密hash。文章详细说明了如何在GDM中加入代码，阅读当前的按键模式，当按键特征匹配时允许用户进入。不过我们输入字母时按键并不会总是一致，它是否有效令人怀疑。
+➜Windows 7之门明年开放？
+https://www.solidot.org/story?sid=5761	46200
+微软现在正努力让企业用户和消费者采用Vista，但比尔盖茨则给予这番努力猛烈的一击，他在周五宣布“明年的某个时候或差不多这个时间我们会有一个新的版本”，<a href="http://www.news.com/8301-13860_3-9911470-56.html">他指的是Windows 7</a>，微软设想中的下一代旗舰桌面操作系统。这个时间比先前给出的开发时间表要早很多。但当有一个新版来临时，大多数企业的决定<a href="http://tech.slashdot.org/article.pl?sid=08/04/05/044213">可能就是等着瞧</a>，如果他们能够完全避免部署Vista带来的阵痛的话。

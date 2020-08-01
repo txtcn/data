@@ -1,0 +1,42 @@
+➜DuckDuckGo 切换到苹果地图
+https://www.solidot.org/story?sid=59325	14407
+匿名搜索引擎 DuckDuckGo <a href="https://spreadprivacy.com/duckduckgo-apple-mapkit-js/"><u>宣布</u></a>地图和地址相关的搜索将使用苹果地图。Google 被认为是一大隐私威胁，显然以隐私作为主要卖点的 DuckDuckGo 不能也不应该使用 Google 地图。它可以选择的全球地图只剩下苹果地图、OpenStreetMap 和必应地图等不多的几个选择。Google 地图在功能和细节上仍然是最出色的，苹果地图的美国地图足够精细，但在其它国家它的地图准确性就并不那么令人满意了。
+➜微软的字体曝光了另一起文件伪造
+https://www.solidot.org/story?sid=59326	16616
+在<a href="https://www.solidot.org/story?sid=53056"><u>曝光了</u></a>巴基斯坦前总理谢里夫家族的文件伪造之后，微软的字体<a href="https://arstechnica.com/gadgets/2019/01/microsofts-fonts-catch-out-another-fraudster-this-time-in-canada/"><u>又暴露了另一起文件伪造</u></a>，这次是在加拿大。Gerald McGoey 曾是 Look Communications 的 CEO，公司倒闭个人也破产。在清算期间，McGoey 被命令将价值 560 万美元的个人房产付给债权人。但 McGoey 声称这部分资产由其妻子和三个孩子保管，不在法庭的清算范围内。他甚至还提供了两个签名信托文件来证明这一点。不幸的是，和谢里夫的女儿一样，他使用了在文件签名日期还不存在的字体。第一份信托文件的签名日期是 1995 年，使用了  Cambria 字体；第二份信托文件的日期是 2004 年，使用了 Calibri 字体。Cambria 字体是在 2004 年设计的，而  Calibri 字体是在 2002 年到 2004 年之间。两种字体直到&nbsp; 2007 年才通过 Windows Vista 和 Office 2007 提供给用户，微软当时将字处理软件的默认字体从 Times New Roman 改为 Calibri。使用这些字体意味着文件是在 2007 年之后创建的。
+➜WebAssembly 开源图书
+https://www.solidot.org/story?sid=59327	18395
+匿名读者 写道 "<i><a href="https://webassembly.org/" target="_blank">WebAssembly</a>是 2018 年诞生的 Web 汇编语言标准，用来解决 JavaScript 性能低下的问题，它也是第一个被广泛认可的的虚拟机标准。根据<a href="https://zh.wikipedia.org/wiki/WebAssembly#Ending%E5%AE%9A%E5%BE%8B" target="_blank"> Ending 定律</a>：一切可编译为 WebAssembly 的，终将被编译为 WebAssembly。从标准发布以来国内外出现了诸多开源图书，其中来自 Rust 语言社区的《<a href="https://rustwasm.github.io/book/#who-is-this-book-for"><u>Rust and WebAssembly</u></a>》讲了编译  Rust 到 WebAssembly，用户需要了解 Rust 熟悉 JavaScript、HTML 和 CSS，但不需要精通。</i>
+➜WordPress 对运行过期 PHP 版本的网站发出警告
+https://www.solidot.org/story?sid=59328	19759
+如果网站仍然运行旧的 PHP 版本，开源内容管理系统 WordPress 将在管理面板<a href="https://www.zdnet.com/article/wordpress-to-show-warnings-on-servers-running-outdated-php-versions/" target="_blank"><u>显示警告</u></a>。WordPress 目前的计划是对版本号低于 5.6.x（5.6 或更低）的版本显示警告，警告会包含一条 WordPress&nbsp; 支持页的链接，向网站管理员提供如何更新 PHP 版本的信息。WordPress 是最流行的内容管理系统，大约四分之一的网站运行的是 WordPress。而 66.7% 的网站仍然运行已经终止支持的 PHP 版本。
+➜CERN 公布超级对撞机计划
+https://www.solidot.org/story?sid=59329	27592
+CERN <a href="https://www.nature.com/articles/d41586-019-00173-2"><u>公布了</u></a>雄心勃勃的<a href="http://fcc-cdr.web.cern.ch/webkit/press_material/FCC-poster-1.pdf"><u>下一代超级对撞机计划</u></a>(PDF)，其长度将四倍于大强子对撞机（LHC）。它发布了名为未来环形对撞机（Future Circular Collider，FCC）的初步设计文件。FCC 将是至今建造的最强大粒子对撞机，预计花费 90 亿欧元到 210 亿欧元。其环形隧道长 100 公里，是 LHC&nbsp; 27 公里隧道的 4 倍。FCC 的一个方案是建造正负电子对撞机，对撞能量最高 365 gigaelectronvolts，研究人员将能以更高的精度去研究希格斯玻色子等粒子。另一个选项是 100 公里长的质子质子对撞机，能量最高 100,000 GeV。但最有可能先建造正负电子对撞机，再建造质子对撞机。中国也提出了类似的超级对撞机计划。
+➜Secure Copy Protocol 曝出有 35 年历史的漏洞
+https://www.solidot.org/story?sid=59330	29704
+安全研究人员<a href="https://sintonen.fi/advisories/scp-client-multiple-vulnerabilities.txt"><u>公布了</u></a> Secure Copy Protocol（SCP）的五个漏洞，其根源可追溯到 1983 年，至今有 35 年历史。漏洞<a href="https://www.theregister.co.uk/2019/01/15/scp_vulnerability/"><u>影响</u></a> OpenSSH scp、PuTTY PSCP 和 WinSCP，其中 WinSCP 已经修复。漏洞允许恶意 SCP 服务器悄悄的纂改客户端机器上的任意文件。安全研究人员解释说，SCP 基于的 RCP 允许服务器控制发送的文件，如果没有仔细核查客户端最终下载的文件可能与用户想要的文件不同，攻击者可以覆写用户的 .bash_aliases 文件，在用户执行例行操作如罗列目录时攻击者可以执行任意命令。
+➜Pwn2Own 黑客挑战赛的一个目标是特斯拉汽车
+https://www.solidot.org/story?sid=59331	31231
+著名的黑客挑战赛 Pwn2Own <a href="https://www.zerodayinitiative.com/blog/2019/1/14/pwn2own-vancouver-2019-tesla-vmware-microsoft-and-more"><u>引入了一个新挑战目标</u></a>：特斯拉汽车  Tesla Model 3。如果参赛者能在汽车的网关、自动驾驶仪或 VCSEC（代表  Vehicle Controller Secondary）上执行代码，那么将能获得最高 25 万美元奖金。这三个是特斯拉汽车的最关键部分，要有资格获得最高奖，漏洞利用要迫使网关、自动驾驶仪或 VCSEC 与恶意基站或其它恶意实体持续通信。如果拒绝服务攻击能让自动驾驶仪下线，那么将能获得 9 万美元。如果能攻击汽车遥控钥匙或手机钥匙，参赛者将能获得 10 万美元奖金。这次黑客挑战赛将在今年 3 月举行。
+➜只有核能才能拯救地球
+https://www.solidot.org/story?sid=59332	34830
+为了避免气候暖化可能对地球带来的灾难性影响，气候学家告诉我们必须在未来 30 年内大幅减少对化石燃料的依赖。今天世界八成的能源来自化石燃料，随着发展中国家摆脱贫困增加能耗，化石燃料的需求还在快速增加。满足不断增长的需求完全靠可更新能源是不可行的。能源工程师 Joshua S. Goldstein 通过一番计算认为<a href="https://news.slashdot.org/story/19/01/15/176253/only-nuclear-energy-can-save-the-planet"><u>只有核能才能拯救地球</u></a>。今天全球每年使用的化石燃料大约相当于 100 万亿千瓦时，要在未来三十年取代化石燃料世界必须每年增加约 3.3 万亿千瓦时的清洁能源，仅靠太阳能和风能的增长速度是不够的。核能是能满足要求的干净能源，但核废料的处理则是另一个问题。
+➜研究称国家之间的贫富差距缩小
+https://www.solidot.org/story?sid=59333	35747
+两位瑞典学者对 1970-2018 年的数据进行了分析。研究的<a href="https://www.dw.com/zh/%E7%A0%94%E7%A9%B6%E5%85%A8%E7%90%83%E8%B4%AB%E5%AF%8C%E5%B7%AE%E8%B7%9D%E7%BC%A9%E5%B0%8F/a-47075087"><u>主要发现</u></a>是，1970-1990 年代，全球收入不平等的程度保持稳定，2000-2010 年代，不平等程度有所减少。报告称，2018 年，全球收入的基尼指数比 1970 年降低 15 点，降幅约四分之一。基尼指数 100 点意味着收入绝对不平等，0 点意味着绝对平等。全球收入更平等的主要原因是，发达国家与发展中国家之间的收入相互靠近。特别是，中国与印度的农业及低技能工人的收入上升。与此相对立的，欧美高收入职业的收入进一步增长，仅起到轻微的抵消作用。不过报告也写到，同期各个国家内部的不平等加剧：在各国之间的不平等下降 24 个基尼点的同时，各个国家内部的不平等则上升 9 个点。
+➜Mozilla 结束 Test Pilot 项目
+https://www.solidot.org/story?sid=59334	38725
+Mozilla <a href="https://techcrunch.com/2019/01/15/mozilla-shutters-firefoxs-test-pilot-program/"><u>宣布结束</u></a> “Test Pilot” 项目。过去 3 年 Mozilla 通过该项目，在一小部分用户中尝试了一些试验性的功能，其中包括后来发展成为 Facebook 容器扩展的 “容器” 功能、用于截屏的 Page Shot 功能，以及 iOS 的 Lockbox 应用。Mozilla 承诺将继续进行这方面的尝试，承诺不会卸载用户可能仍在使用的任何试验功能（如果你是测试探索项目的参与者）。实际上，大部分这些试验功能肯定会进入官方插件目录，或是演变成为独立产品。
+➜RedHat 移除 MongoDB，Debian 正在考虑
+https://www.solidot.org/story?sid=59335	43964
+去年十月，MongoDB <a href="https://www.solidot.org/story?sid=58242"><u>宣布</u></a>其开源许可证从 GNU AGPLv3 切换到 Server Side Public License (SSPL)，希望从软件即服务或云计算业务上获取收入。但更改许可证正导致主要 Linux 发行版远离 MongoDB，而这一影响正在体现。RedHat 从其 RHEL 8.0 Beta 中<a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8-beta/html/8.0_beta_release_notes/new-features#web_servers_databases_dynamic_languages_2" target="_blank"><u>移除了</u></a> MongoDB，原因就是 SSPL；而 Debian 开发者也在<a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=915537#15"><u>讨论</u></a>不将 MongoDB 包含在主库内；Fedora <a href="https://lists.fedoraproject.org/archives/list/devel@lists.fedoraproject.org/thread/IQIOBOGWJ247JGKX2WD6N27TZNZZNM6C/" target="_blank"><u>宣布</u></a> SSPL(目前是 V1 版本)不是自由软件许可证，它的 Bad License 将包含 SSPLv1，这也意味着它将不会包含 MongoDB。
+➜裙下偷拍在英国变为非法
+https://www.solidot.org/story?sid=59337	44742
+英国上议院批准了一项法案，<a href="https://www.bbc.com/news/uk-46884697" target="_blank"><u>将裙下偷拍的行为列为非法</u></a>，违反者将面临最高两年徒刑。26 岁的 Gina Martin 18 个月前在一个音乐节上被一名男子用手机从裙下偷拍，她抓住该男子之后通知警方，吃惊的发现裙下偷拍不是一种性犯罪行为。她随后针对裙下偷拍发起了一个宣传活动去试图改变立法。
+➜研究称中国 PM2.5 污染下降延长了平均寿命
+https://www.solidot.org/story?sid=59336	45995
+PM2.5 对人体的健康危害已经被逐步认识到。中国在 2014 年年初发起了污染防治战，2016 年 PM2.5 大气污染水平比 2013 年下降 12%。芝加哥大学能源政策研究所发布的 “空气质量寿命指数”（AQLI）显示，这一污染减少程度相当于中国居民<a href="http://news.sciencenet.cn/htmlnews/2019/1/422159.shtm"><u>平均预期寿命延长 6 个月</u></a>。2010 年在中国，室外空气污染导致 120 万人过早死亡以及超过 2500 万健康生命年的损失。“空气质量寿命指数” 是将空气中的 PM2.5 污染换算成对人们预期寿命的影响程度，将人们长期受大气污染影响与预期寿命之间的因果关系进行量化，以帮助公众和决策者了解大气污染防治政策的重要性。该研究发现，长期曝露在 PM2.5 超标的大气污染中，PM2.5 浓度每增加 10 微克 / 立方米，人的预期寿命将会缩减 0.98 年。
+➜中国氢弹之父于敏去世
+https://www.solidot.org/story?sid=59338	47698
+中国氢弹之父<a href="https://zh.wikipedia.org/wiki/%E4%BA%8E%E6%95%8F"><u>于敏</u></a>于 1 月 16 日在北京<a href="http://news.sciencenet.cn/htmlnews/2019/1/422170.shtm"><u>去世</u></a>，享年 93 岁。于敏 1926 年 8 月出生于天津宁河，1951 年起在中国科学院近代物理研究所任助理研究员、副研究员，并在中国理论物理学家彭桓武先生指导下开始了核理论研究工作。1960 年底，于敏开始从事核武器理论研究，在氢弹原理突破中解决了热核武器物理中一系列基础和关键性的理论问题。1961 年，于敏调任二机部参与氢弹原理研究。1964 年 10 月，中国第一颗原子弹在邓稼先领导的团队下爆炸成功，随后于敏率领的研制团队在 1967 年研发出中国首枚氢弹。于敏获得了 2014 年度国家最高科学技术奖，并在去年纪念改革开放四十周年大会上表彰为改革开放杰出贡献人员。

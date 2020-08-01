@@ -1,0 +1,46 @@
+➜北京知识产权法院推翻 iPhone 侵权判决
+https://www.solidot.org/story?sid=51828	10721
+北京知识产权法院<a href="http://cn.wsj.com/gb/20170327/tec084313.asp" target="_blank"><u>撤销了</u></a> iPhone 专利案中对苹果的不利判决。中国是苹果面对的最严峻的市场之一，这一判决意味着苹果在中国取得胜利。法院判定 iPhone 6 和 iPhone 6 Plus 未侵犯已倒闭的深圳佰利营销服务公司持有的智能手机外观设计专利权。法院认为，佰利公司关于其外观设计具有独有性的主张没有事实和法律根据，消费者容易观察到明显区别。苹果对判决结果表示感谢，而佰利公司代理律师则表示其当事人将对判决提出上诉。近来苹果在中国市场面临最为严峻的挑战，本土竞争对手以价位更低的高配置智能手机从其手中抢夺市场份额。
+➜Let's Encrypt 向 PayPal 钓鱼网站签发了超过 1.4 万个证书
+https://www.solidot.org/story?sid=51829	13337
+过去一年，Let's Encrypt CA <a href="https://it.slashdot.org/story/17/03/25/2222246/over-14k-lets-encrypt-ssl-certificates-issued-to-paypal-phishing-sites" target="_blank"><u>被发现</u></a>向含有 PayPal 一词的域名或证书标识签发了 15,270 个 SSL 证书，其中 14,766(96.7%)个证书是签发给了托管在钓鱼网站上的域名。Let's Encrypt CA 不是唯一一个向钓鱼网站签发 SSL 证书的 CA，其它 CA 也存在这一问题，但数量要比提供免费服务的 Let's Encrypt CA 低几个数量级（只有几百个）。钓鱼者较少其它 CA 的一个原因是这些 CA 提供的是商业服务，会拒绝含有热词如 PayPal 的证书申请，而 Let's Encrypt CA 的证书签发是自动化的并没有专人审查。Let's Encrypt CA 旨在推动更安全的 HTTPS 网站的普及，它认为自己没有责任去检查网站是钓鱼网站还是合法网站。
+➜FSF 宣布 2016年度的自由软件奖
+https://www.solidot.org/story?sid=51830	17194
+自由软件基金会（FSF）主席 RMS 在 MIT 举行的  LibrePlanet 2017 会议上<a href="http://www.fsf.org/news/securedrop-and-alexandre-oliva-are-2016-free-software-awards-winners" target="_blank"><u>宣布了</u></a> 2016 年度的自由软件奖得主。社会公益项目奖授予了匿名告密平台 <pangu> </pangu><a href="https://securedrop.org/">SecureDrop</a>， 它最早由 Aaron Swartz 开发，目前由出版自由基金会维护，被新闻机构如 Intercept、美联社、华盛顿邮报、纽约客和 ProPublica 等使用。自由软件进步奖授予了巴西的自由软件倡导者 <a href="https://www.fsfla.org/%7Elxoliva/">Alexandre Oliva</a>，他同时还是 linux-libre 的维护者。Oliva 是拉美自由软件社区的一名领导者，他参与自由软件社区最早是从逆向工程巴西居民的纳税私有软件开始。
+➜美国议员抱怨中国对云计算的限制
+https://www.solidot.org/story?sid=51831	18125
+50 多位美国议员上周就中国对云计算的限制<a href="http://cn.wsj.com/gb/20170324/tec082320.asp" target="_blank"><u>联合致函</u></a>中国驻美大使崔天凯。中国政府要求云计算服务提供商在事实上将全部所有权和业务移交给中方合作伙伴，此举有可能导致备受珍视的美国知识产权转移。信中说，根据过去两年通过的法规，中国已经对投资于在中国境内运营的外资云服务提供商施加限制。目前美国企业组织对在中国的经商环境怨言越来越大，包括中国强制要求与竞争对手合作以及技术转让。
+➜保护用户的查询隐私
+https://www.solidot.org/story?sid=51832	26978
+许多网站提供了在线数据库查询，但查询的信息可能会披露用户的重要私人信息，比如想要购买的股票，或者旅行的始发地和目的地。MIT 计算机科学和人工智能实验室和斯坦福大学的研究人员<a href="http://news.mit.edu/2017/protecting-web-users-privacy-0323" target="_blank"><u>提出了一种加密系统去伪装用户的数据库查询</u></a>，防止泄漏用户私人信息。名叫 <a href="https://frankwang.org/papers/wang-splinter.pdf" target="_blank"><u>Splinter</u></a>（PDF）的系统利用了名叫 function secret sharing 的技术将数据库查询转变成一组互补的数学函数，发送到不同的数据库服务器上，不同服务器上返回的值在组合起来前没有任何意义。该技术由三位以色列计算机科学家在 2015 年提出，类似的伪装数据库查询系统以前就有，但 function secret sharing 的速度是它们的十倍。在测试中，研究人员发现 Splinter 能在大约一秒内返回查询结果。论文第一作者是 MIT 博士生 <a href="https://www.frankwang.org/" target="_blank"><u>Frank Wang</u></a>。
+➜盖茨基金会宣布开放获取平台
+https://www.solidot.org/story?sid=51833	28857
+最富有的慈善机构比尔梅琳达盖茨基金<a href="http://www.nature.com/news/gates-foundation-announces-open-access-publishing-venture-1.21700" target="_blank"><u>宣布了</u></a>自己的开放获取出版平台 <pangu> </pangu><a href="https://gatesopenresearch.org/">Gates Open Research</a>，借鉴英国生物医学慈善组织 Wellcome Trust 去年底启动的开放获取平台模式，<a href="http://news.sciencenet.cn/htmlnews/2017/3/371838.shtm" target="_blank"><u>加快基金会所投资研究论文的出版速度</u></a>。盖茨基金会发言人称，基金会投资的研究项目每年会产生 2000 篇到 2500 篇论文，“这些论文和数据应该尽快出版共享，因为这些都是关乎生命健康的研究。” Wellcome 和盖茨基金会以前都是授权出版机构 F1000 在其开放获取平台（F1000reseach）快速出版相关论文，该平台能在投稿当天或第二天将论文发表到网站，并在发表后组织其专家委员会对论文进行同行评审。但这些服务并不是无偿的，Wellcome 康基金会仅 2015 年 10 月到 2016 年 9 月期间就为此花费 710 万美元，比上一年同期增长 32%，平均每篇论文花费高达 2200 美元。自开通自己的数字平台后，Wellcome 基金会发表的 53 篇论文中，每篇成本平均仅 851 美元。这些花费主要用于聘请专家委员会对发表在网站上的论文进行同行评审，基本标准是 1000 字以内 150 美元、1000 字到 2500 字 500 美元、2500 字以上 1000 美元。出版后没有通过同行评审的论文也不会从网站删除，只是不允许其他论文作为参考文献使用。
+➜2038 年问题应对之策
+https://www.solidot.org/story?sid=51834	30539
+距离 2038 年还有 21 年，听起来还很遥远，但对于寿命比较长的嵌入式系统来说，今天部署的系统到 2038 年可能还会继续提供服务。2038 年问题是指类 Unix 系统采用的是 32 位时间计数 time_t，计数从 1970 年开始，到 2038 年 1 月将会超过 2,147,483,647 秒。为了应对 2038 年问题，开源自由软件社区<a href="https://lwn.net/Articles/717076/" target="_blank"><u>正在三个方面展开了努力</u></a>：内核方面是将 32 位时间戳转变成 64 位值，即使系统是 32 位，但一些 32 位时间戳出现在用户空间 API 中，增加了问题的复杂性；第二方面是 C 代码库，glibc 社区正在着手<a href="http://www.solidot.org/story?sid=51468" target="_blank"><u>做这方面的工作</u></a>，目标是实现完全的向后兼容，让程序在旧的内核上能使用 64 位时间戳，最小化干扰；第三个方面是发行版构建，大多数发行版到 2038 年不太可能还需要考虑 32 位系统，但 Debian 可能是例外。到 2038 年，绝大多数今天的设备可能早已失效，但基础设施使用的嵌入式设备也许还在使用，部分系统届时可能会发生故障，因此必须尽可能快的解决 2038 年问题。
+➜地下市场手机账单信息最贵
+https://www.solidot.org/story?sid=51835	32669
+IT 时报<a href="http://epaper.it-times.com.cn:8080/shtml/itsb/20170324/36801.shtml" target="_blank"><u>报道</u></a>，腾讯安全团队发布了一份黑产公民信息报价单，涉及十三项公民信息种类，报价最低 1 元一条，最高达到 3000 元。报价最高的是手机话费账单（详单），每一份的报价高达 2000 元~ 3000 元。一位业内人士透露，由于话费账单中可能涉及各类商务往来的关键信息，因此经常流通于私家侦探业务市场以及非法讨债公司之间，甚至会有商业间谍依托查询竞争对手的手机通话信息来获取关键突破信息，牟取暴利。因此目前，这一类信息在地下黑市的报价最高。其次是公民银行流水单，每份的报价为 1000 元~ 3000 元，其中最大的买主同样是来自私家侦探业务以及非法讨债公司。这两大逐步形成成熟交易链条的行业是目前地下黑产最为稳定且主流的交易 “伙伴”，而随着国家对地下黑产市场的严打，敏感调查对象的价格正在水涨船高。身份证户籍信息、制作假文凭、假证书、开房记录、手机基站位置等信息在地下黑产的报价相对较低，平均在 10~500 元之间不等。报道声称，黑客主要是通过内部人士以及通过攻击网站获取公民信息。
+➜加拿大将合法化大麻使用
+https://www.solidot.org/story?sid=51836	34110
+加拿大联邦政府将在下个月<a href="http://www.cbc.ca/news/politics/liberal-legal-marijuana-pot-1.4041902" target="_blank"><u>宣布</u></a>从 2018 年 7 月 1 日起合法化大麻使用。也就是说无论是娱乐性还是非娱乐性的，购买和使用大麻不再是一种犯罪行为。但和吸烟和喝酒类似，购买和使用大麻必须年满 18 岁，否则仍然是非法的。加拿大政府将负责确保大麻供应是安全的，而各省则有权决定大麻如何销售和制定价格。联邦政府制定的最低大麻使用年龄是 18 岁，而各省可以设定更高的使用年龄。<br>
+➜俄罗斯银行对揭露其与特朗普集团通信的研究人员发出法律威胁
+https://www.solidot.org/story?sid=51837	39010
+去年10月底，印第安纳大学的计算机研究员 L. Jean Camp <a href="http://www.slate.com/articles/news_and_politics/cover_story/2016/10/was_a_server_registered_to_the_trump_organization_communicating_with_russia.html" target="_blank"><u>发现</u></a>特朗普集团所属的一个服务器与俄罗斯 Alfa Bank 之间有不同寻常的网络流量，这一消息经报道后引发了阴谋论的猜测。但<a href="http://blog.erratasec.com/2016/11/debunking-trumps-secret-server.html#.WNRRPDsrKUl" target="_blank"><u>后续研究</u></a>并没有发现特朗普与俄罗斯之间存在直接联络的可靠证据，服务器实际上是由一家营销公司控制的。
+然而如今 Alfa Bank 的律师却对研究员<a href="https://www.techdirt.com/articles/20170323/15433936995/russian-bank-sends-legal-threats-to-researcher-who-revealed-spike-traffic-supposedly-tied-to-trumps-server.shtml" target="_blank"><u>发出了法律威胁</u></a>，声称将会考虑所有可用的选项，要求她保留未来诉讼可能需要的记录，包括她与其他相关人士之间的通信。
+➜手机支付腾讯正在超越阿里巴巴
+https://www.solidot.org/story?sid=51838	40237
+无现金生活在中国逐渐成为现实，而主导这一趋势的<a href="http://cn.nikkei.com/china/ccompany/24357-2017-03-27-04-54-00.html" target="_blank"><u>是腾讯而不是支付巨头阿里巴巴</u></a>。腾讯的做法其实很简单，那就是为微信 APP 添加支付功能。同时用人海战术在所有店铺的收银台前贴上手机支付二维码。中国手机支付的引领者原本是阿里巴巴集团。腾讯利用将近 9 亿人的微信用户，从 2016 年开始向手机支付业务全面出击。以微信支付为主力，截至 2016 年 9 月底已获得 8.3 亿支付用户，轻松超过了只有 4 亿用户的支付宝。由于支付宝主要面向网上购物，有的网店经销高额商品，因此从支付金额来看，腾讯尚不及阿里巴巴。但阿里巴巴在 2014 年拥有的 79％的市场份额在 2015 年降到了 50％。相反，腾讯则获得了 38％的市场份额，正在迎头直追。
+➜中央杏仁核被发现也与奖赏相关
+https://www.solidot.org/story?sid=51839	41882
+根据发表在《自然》期刊上的<a href="http://www.nature.com/nature/journal/vaop/ncurrent/full/nature21726.html" target="_blank"><u>一项研究</u></a>，传统上被认为与恐惧与不愉快的事件相关的中央杏仁核，<a href="http://www.ebiotrade.com/newsf/2017-3/2017324114628424.htm" target="_blank"><u>也参与了奖赏回路</u></a>。这项发现颠覆了以前的观点。在小鼠实验中，用特定的刺激激活中央杏仁核内的一个回路后，小鼠反而会再次寻求刺激。这或许可以联想人类 “看恐怖电影会上瘾” 的行为。虽然，科学家们也在中央杏仁核内也找到了一条对可怕事件做出反应的回路，但是研究显示，中央杏仁核内大部分的神经元都参与了奖赏回路。研究人员说：“看来，中央杏仁核这个结构似乎主要在参与欲望行为，并非通常人们以为的主要负责焦虑和恐惧行为。”
+➜为什么其他人不理会你的好想法
+https://www.solidot.org/story?sid=51840	42995
+你提出了好的点子，但需要降低<a href="http://www.bbc.com/ukchina/simp/vert-cap-39405407" target="_blank"><u>你对其他人对这个点子的认同预期</u></a>，因为这可能意味着改变，而要进行改变首先需要说服别人。弗吉尼亚大学达登商学院组织行为学教授伊莎贝拉（Lynn Isabella）说，"真正抗拒变革的不是组织，而是组织里的人。这些人必须考虑变革给自己带来的利弊得失。"，这并不意味着你的新想法不会被人接受，但与想法本身相比，如何让别人接受你想法更加重要。换句话说，更重要的是如何构造自己的想法。马基雅弗利曾指出，"对于旧制度的既得利益者来说，创新者就是他们的敌人。唯一能够给予创新冷淡支持的就是那些可以从新制度中获益的人。他们的支持也只是不温不火…… 部分原因在于，人类通常心怀疑虑，除非有过亲身经历，否则永远不会真正相信新生事物。"
+➜明日城市，当你的鞋子透露你的信息
+https://www.solidot.org/story?sid=51841	43545
+根据 2015 年对英国零售业高管的一项调查，大部分线下商店都安装了面部识别软件。此举旨在赶上线上零售店对客户购物行为的掌握，但此类技术对客户的隐私太具有侵略性。所以线下商店开始采用另一种对购物者不那么具有侵略性的方法：拍他们的脚。摄像头安装在距离地面 50 厘米的高度。出人意料的是这种方法在判断性别、年龄和社会阶层上并不比面部识别技术差。城市正变得越来越拥挤，到 2050 年 70% 的人口将生活在城市里。城市的生活也有消极面，你会在不知不觉中失去一些东西，<a href="http://www.bbc.com/news/technology-38235584" target="_blank"><u>因为这些城市都在看着你</u></a>。智能探头和智能街道都在时刻收集居民的数据。Big Brother Watch 的 Renate Samson 说，很少有人对智能城市收集的数据有真正的理解。每天你一醒过来你就开始向外泄漏数据。
+➜微软因 Windows 10 升级遭到集体诉讼
+https://www.solidot.org/story?sid=51842	46893
+美国伊利诺斯州的三位居民向芝加哥地区法院<a href="https://www.theregister.co.uk/2017/03/24/microsoft_windows_10_update/" target="_blank"><u>投诉微软</u></a>，<a href="http://www.courthousenews.com/wp-content/uploads/2017/03/Windows10.pdf" target="_blank"><u>声称</u></a>（PDF）Windows 10 升级破坏了他们的数据和电脑，指控微软的 Windows&nbsp; 10 是一款有缺陷的产品，Windows 10 安装程序未能对潜在的风险提供足够的警告，尤其是系统稳定性和数据损失。代理律师寻求将此案归类为集体诉讼，将美国所有从 Windows 7 升级到 Windows 10 之后 30 天内遭遇数据损失和软硬件破坏的用户包含在内，寻求对每位受影响的用户赔偿数百或数千美元。<a href="https://yro.slashdot.org/story/17/03/27/0015212/class-action-lawsuit-launched-over-forced-windows-10-upgrades" target="_blank"><u>当然律师费另算</u></a>。微软回应称原告的主张是没有依据的。
