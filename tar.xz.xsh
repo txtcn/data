@@ -42,13 +42,13 @@ def main(version, filedir):
         continue
       i = str(i)
       filepath = join(root, i)
+      total_size += getsize(filepath)
+      if total_size > SIZE_MIN:
+        break
 
       to_rm.append(filepath)
       outpath = join(outdir, i)
       shutil.copyfile(filepath, outpath)
-      total_size += getsize(filepath)
-      if total_size > SIZE_MIN:
-        break
   if total_size < SIZE_MIN:
     print("还需",round((SIZE_MIN - total_size)/1024/1024,2),"MB")
     return
