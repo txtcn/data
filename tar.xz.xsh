@@ -10,18 +10,18 @@ import shutil
 from os.path import dirname,join,basename,abspath,getsize
 from pathlib import Path
 
+SIZE_MIN = int(20*1024*1024*2.4)
 TODAY = int(time() / 86400) - 7
 
 def main(version, filedir):
   tmpdir = tempfile.mkdtemp()
   if '.' not in version:
-    version = '0.1.1'
+    version = '0.2.1'
   else:
     version = version.rsplit(".",1)
     version[-1] = str(int(version[-1])+1)
     version = ".".join(version)
   $version=version
-  size_min = 22*1024*1024*3
   prefix_len = len(filedir)+1
   to_rm = []
   total_size = 0
@@ -47,10 +47,10 @@ def main(version, filedir):
       outpath = join(outdir, i)
       shutil.copyfile(filepath, outpath)
       total_size += getsize(filepath)
-      if total_size > size_min:
+      if total_size > SIZE_MIN:
         break
-  if total_size < size_min:
-    print("还需",round((size_min - total_size)/1024/1024,2),"MB")
+  if total_size < SIZE_MIN:
+    print("还需",round((SIZE_MIN - total_size)/1024/1024,2),"MB")
     return
   cd @(tmpdir)
   xzpath = f"/tmp/data.{TODAY}.tar.xz"
