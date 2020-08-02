@@ -15,3 +15,6 @@ https://www.solidot.org/story?sid=65119	29659
 ➜巴西最高法院命令 Facebook 屏蔽该国总统支持者的账号
 https://www.solidot.org/story?sid=65120	35637
 Facebook 遵守巴西最高法院的命令<a href="https://www.bbc.com/news/world-latin-america-53625728" target="_blank">屏蔽了</a> 12 个该国总统 Jair Bolsonaro 的支持者账号。这些账号被指传播法官的假消息。今年 5 月法官命令 Facebook 关闭 12 个账号，Twitter 关闭 18 个账号。周五巴西最高法院因 Facebook 拒绝在全世界屏蔽这些账号而罚了它 192 万巴西雷亚尔，社交巨人只同意在巴西禁止访问这些账号。如果 Facebook 仍然拒绝遵守命令，它将每天被罚 10 万雷亚尔。目前不清楚 Twitter 是否也被罚款了。Facebook 认为巴西最高法院此举违反了世界各地的法律和司法管辖权，表示将提起上诉。<p>
+➜IBM 发布全同态加密工具集的 Linux 版本
+https://www.solidot.org/story?sid=65121	53583
+IBM <a href="https://github.com/IBM/fhe-toolkit-linux" target="_blank">发布了</a>完全同态加密（fully homomorphic encryption，FHE）工具集的 Linux 版本，源代码发布在 GitHub 上，采用 MIT 许可证。FHE 工具集运行在一个 Linux docker 容器内，使用 IDE 作为工作开发环境，可以通过主机系统的浏览器访问。FHE 允许对密文进行特定的代数运算得到仍然是加密的结果，与对明文进行同样的运算再将结果加密一样。这项技术可以在加密的数据中进行检索、比较等操作，整个处理过程中无需对数据进行解密。同态加密技术从根本上解决将数据及其操作委托给第三方时的保密问题。今天的文件通常是在传输和存储时加密，使用时解密，存在安全漏洞，FHE 可解决该问题。<p>
