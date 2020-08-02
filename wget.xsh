@@ -3,8 +3,8 @@ $RAISE_SUBPROC_ERROR = True
 
 from os.path import join,dirname,abspath,exists,basename
 import tempfile
-import concurrent.futures
-
+from concurrent.futures import ThreadPoolExecutor
+from os import cpu_count
 
 _DIR=dirname(abspath(__file__))
 GIT = basename(_DIR)
@@ -38,6 +38,6 @@ def download(i):
     except:
       continue
 
-with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+with ThreadPoolExecutor(max_workers=cpu_count()*3) as executor:
   for i in range(1,version+1):
     executor.submit(download, i)
