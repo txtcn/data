@@ -1,7 +1,7 @@
 #!/usr/bin/env xonsh
 $RAISE_SUBPROC_ERROR = True
 
-from os.path import join,dirname,abspath,exists
+from os.path import join,dirname,abspath,exists,basename
 import tempfile
 
 _DIR=dirname(abspath(__file__))
