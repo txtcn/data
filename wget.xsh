@@ -3,6 +3,8 @@ $RAISE_SUBPROC_ERROR = True
 
 from os.path import join,dirname,abspath,exists,basename
 import tempfile
+import concurrent.futures
+
 
 _DIR=dirname(abspath(__file__))
 GIT = basename(_DIR)
@@ -19,7 +21,9 @@ host_li = [
   "https://github.com",
   "http://github.strcpy.cn",
 ]
-for i in range(1,version+1):
+
+
+def download(i):
   i = str(i)
   downfile = join(xzdir,i)
   txz = downfile+".txz"
@@ -34,3 +38,6 @@ for i in range(1,version+1):
     except:
       continue
 
+with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+  for i in range(1,version+1):
+    executor.submit(download, i)
