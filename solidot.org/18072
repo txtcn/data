@@ -1,0 +1,45 @@
+➜Verizon BGP 路由泄漏导致大量服务受影响
+https://www.solidot.org/story?sid=61105	9358
+在大约 3 个小时里，由于大型转运服务商 Verizon 错误转发了一则 BGP 路由广播，致使流量路由经过了一家小型 ISP，导致了包括亚马逊、Cloudflare 和 Facebook 等公司的服务无法访问。事故的起因是宾夕法尼亚州的一家小型 ISP <a href="https://bgp.he.net/AS33154" target="_blank">AS33154</a> - DQE Communications 使用 <a href="https://www.noction.com/" target="_blank">Noction</a> 的 BGP 优化器优化其内部网络的路由，它的内部路由优化本不应该通告世界其它网络服务器，然而由于错误配置，它向客户 <a href="https://bgp.he.net/AS396531" target="_blank">AS396531</a> - Allegheny Technologies 宣布了特定的路由信息，然后这些路由信息又发给了转运服务商 Verizon，而 Verizon 又不加甄选的接受了路由公告，于是互联网高速公路的巨大流量被路由经过了一条羊肠小道，导致的结果显而易见。Cloudflare <a href="https://blog.cloudflare.com/how-verizon-and-a-bgp-optimizer-knocked-large-parts-of-the-internet-offline-today/"><u>建议</u></a>网络运营商部署 RPKI，不接受这种优化路由的特定前缀公告。
+➜深圳大疆将在美国生产无人机
+https://www.solidot.org/story?sid=61106	11576
+深圳大疆正试图通过在美国生产无人机<a href="https://cn.nytimes.com/technology/20190625/dji-china-drones-security-us/" target="_blank"><u>来规避制裁风险</u></a>。大疆宣布在加州 Cerritos 组装新无人机 Mavic 2 Enterprise Dual，并采取限制数据收集。它收集到的数据存放在无人机上，只有在飞机降落后才能从机器上读取数据，它无法通过无线网络传输任何信息。该公司希望，新的生产设施和无人机的新数据功能足以让这款新产品满足在美国销售的条件。据估计美国大约 70% 的无人机由大疆提供。大疆为业余爱好者生产小型无人机，也生产用于查看偏远地区和森林火灾等用途的高端工业级无人机。大疆还没有被美国政府列入出口黑名单。但自 2017 年底以来，大疆已成为政府审查的重点，因为美国海关和移民官员担心，带有摄像头、地图绘图技术和红外扫描仪的无人机，可能被用来收集敏感数据，并将其发给中国政府。
+➜华为将其美国研究机构剥离出去
+https://www.solidot.org/story?sid=61107	12544
+因美国对华为实施出口禁令，华为已对美国研究团队 Futurewei Technologies 采取行动，<a href="https://cn.reuters.com/article/exclusive-huawei-us-unit-ft-0625-idCNKCS1TQ072"><u>将业务从母公司分离出去</u></a>。Futurewei 员工称，公司已禁止华为员工进入其办公室，并已把 Futurewei 的员工转移到一个新的 IT 系统，禁止他们在通讯时使用华为的名称或标识。这位员工称，华为将继续拥有 Futurewei 公司。Futurewei 是华为在美国的研发部门。从员工的 LinkedIn 网页上看，该公司在硅谷以及西雅图、芝加哥及达拉斯地区的办公室有员工数百人。美国专利商标局的数据显示，Futurewei 在电信、5G 移动网络及视频和照相技术等领域申请了 2,100 多项专利。
+➜Canonical 宣布 Ubuntu 将继续支持部分 32 位包
+https://www.solidot.org/story?sid=61108	13852
+Canonical 上周宣布即将在下半年发布的 Ubuntu 19.10 将停止支持 x86_32 架构，这一消息在玩家和 WINE 社区引发了广泛讨论，因为游戏以及 WINE 仍然需要 32 位包。在听取了社区的反馈之后，Canonical <a href="https://ubuntu.com/blog/statement-on-32-bit-i386-packages-for-ubuntu-19-10-and-20-04-lts" target="_blank"><u>改变了原定计划</u></a>，Ubuntu 19.10 和 20.04 LTS 将会继续包含精选的 32 位 i386 包。Canonical 将让社区决定旧的软件需要哪些 32 位软件包，如果错过的话它也会在发布之后加入进去。Canonical 将与 WINE、Ubuntu Studio 和游戏社区合作，利用容器技术去解决 32 位库的终止支持问题。
+➜荷兰紧急电话号码中断 3 小时
+https://www.solidot.org/story?sid=61109	15944
+荷兰皇家电信公司的一次严通信故障导致荷兰紧急电话号码周一<a href="https://www.bbc.com/news/world-europe-48753095"><u>停止工作超过三个小时</u></a>，迫使警方和其他紧急服务采用替代方案。故障发生在 下午 4 点左右（1400 GMT），到晚上 7 点 40 分（1740 GMT）左右恢复。荷兰紧急服务迅速在社交网络上公布了新的联系号码，并通过短信推送给手机。警方还派遣警员到街头巡逻，帮助需要应急服务的人民。当局建议寻求帮助的公民直接去医院或警察局或消防站。事故原因目前还不清楚，荷兰皇家电信表示看起来不是黑客攻击。
+➜中国三大银行面临美国制裁
+https://www.solidot.org/story?sid=61110	27010
+华盛顿邮报<a href="https://www.washingtonpost.com/local/legal-issues/chinese-bank-involved-in-probe-on-north-korean-sanctions-and-money-laundering-faces-financial-death-penalty/2019/06/22/0ccef3ba-81be-11e9-bce7-40b4105f7ca0_story.html"><u>报道称</u></a>，中国三家大型银行<a href="https://cn.reuters.com/article/china-three-banks-us-kp-probe-0625-idCNKCS1TQ0KC?il=0" target="_blank"><u>可能被拒绝</u></a>进入美国金融体系，因拒绝遵守有关违反朝鲜制裁调查的传票，一名美国法官裁定这几家银行蔑视法庭。 这位法官没有公开这三家银行的名字，但法庭裁决的细节与 2017 年对中国交通银行、中国招商银行 和上海浦东发展银行的民事没收行动一致。报道称，美国司法部当时指控这几家银行与一家香港公司合作，这家香港公司遭控替朝鲜外贸银行洗钱超过 1 亿美元，而朝鲜外贸银行为美国制裁的对象。
+➜SpaceX 利用两个回收推进器成功发射 Falcon Heavy
+https://www.solidot.org/story?sid=61112	27767
+SpaceX 的重型火箭 Falcon Heavy 于 6 月 24 日<a href="https://www.nasaspaceflight.com/2019/06/spacex-falcon-heavys-stp-2-mission/" target="_blank"><u>完成了其第三次发射</u></a>，发射负荷仅为  3,700 kg，对这枚重型火箭而言似乎有点大材小用。然而这次发射不同寻常之处是 Falcon Heavy 的三个推进器中除了核心推进器，另外两个是上一次发射回收的。Falcon Heavy 上一次发射是在 4 月 11 日，将沙特阿拉伯的通信卫星 Arabsat-6A 送到太空并回收了三个推进器，其中两个被用于这次任务。两次发射相隔&nbsp; 74 天，是回收推进器重复利用的第二短时间，最短的重复利用是相隔 71 天，由 Falcon 9 火箭保持。Falcon Heavy 运送了 24 个负荷，客户包括美国空军、五角大楼和 NASA，其中一个是众筹的太阳帆飞船 Lightsail 2，重 5 公斤，太阳帆展开之后大小为 5.6 x 5.6 m，厚度仅为 4.5 微米。Lightsail 2 花费了 700 万美元，如果成功的话它将运行大约一年。
+➜联邦快递起诉美国商务部
+https://www.solidot.org/story?sid=61113	29136
+联邦快递周一将美国政府<a href="https://cn.reuters.com/article/fedex-china-huawei-mail-mistake-0625-idCNKCS1TQ02T"><u>告上法院</u></a>，称若无意中承运了违反特朗普政府禁止向某些中国企业出口的产品，公司不应担责。联邦快递在提交给哥伦比亚特区法院的文书中称，不应指望由该公司来实施出口禁令，要公司为运输自己不了解的货物承担责任也不合理。出口限制规定 “基本上就是要求联邦快递监督其每日承运的数以百万计包裹中的物品，而不管这从物流和经济角度来说，几乎是不可能完成的任务，许多情况下也是不合法的，” 联邦快递在文书中说。美国商务部发言人回应称，“我们尚未研究这份诉讼，但无论如何我们都希望，商务部在保护美国国家安全方面的作用不受影响。”
+➜戴姆勒柴油车发现降低排放效率的软件
+https://www.solidot.org/story?sid=61114	31877
+德国汽车监管机构在戴姆勒的柴油汽车上<a href="https://arstechnica.com/cars/2019/06/german-regulator-says-it-discovered-new-illegal-software-on-daimler-diesels/" target="_blank"><u>发现了</u></a>降低排放控制系统效率的非法软件，要求该公司召回 4.2 万辆梅赛德斯奔驰柴油车。戴姆勒公司对监管机构判定该软件非法有异议，它计划提起上诉。存在问题的柴油汽车仅在欧盟销售，与汽车中保护引擎的冷却剂恒温器有关。相关软件存在于 2012 年到 2015 年制造的汽车上，被要求召回的柴油车使用了选择性催化还原。戴姆勒称它在去年就该软件的存在通知了监管机构，此前它已经因为另一起尾气排放相关的非法软件而被命令召回柴油车。
+➜Myspace 雇员曾用内部工具 Overlord 监视用户
+https://www.solidot.org/story?sid=61115	33893
+在 Myspace 最鼎盛的时期，该公司雇员<a href="https://www.vice.com/en_us/article/j5w4xx/myspace-employees-spied-on-users-with-internal-tool-overlord" target="_blank"><u>曾利用内部工具去监视用户</u></a>，某些情况下甚至包括前伴侣。Myspace 前雇员称，该工具被称为 Overlord，本质上是一个后门，允许雇员查看用户的密码和信息，最初是为遵守执法请求和管理平台而开发的。滥用工具监视用户的事情发生在十年前，当时还是 Myspace 最受欢迎的时候，Myspace 一度是美国第二大最受欢迎的网站，排名甚至高于 Google。
+➜人大常委会审议密码法草案
+https://www.solidot.org/story?sid=61116	37704
+人大常委会<a href="http://www.nbd.com.cn/articles/2019-06-25/1346855.html"><u>开始审议密码法草案</u></a>。这里的密码是指使用特定变换对信息等进行加密保护或者安全认证的产品、技术和服务。密码分为核心密码、普通密码和商用密码。国家对密码实行分类管理。核心密码、普通密码用于保护国家秘密信息，核心密码保护信息的最高密级为绝密级，普通密码保护信息的最高密级为机密级。核心密码、普通密码属于国家秘密。商用密码用于保护不属于国家秘密的信息。公民、法人和其他组织均可依法使用商用密码保护网络与信息安全。草案二十六条规定，涉及国家安全、国计民生、社会公共利益的商用密码产品列入网络关键设备和网络安全专用产品目录，由具备资格的机构安全认证合格或者安全检测符合要求后，方可销售或者提供。
+➜手游的收入将占游戏收入的六成
+https://www.solidot.org/story?sid=61117	38815
+分析机构 App Annie 发布了《<a href="https://www.appannie.com/cn/insights/mobile-gaming/the-state-of-mobile-games-in-2019-and-beyond/" target="_blank"><u>2019 年全球移动游戏市场报告</u></a>》（报告下载需要用户信息），对全球移动游戏市场的新趋势做出分析。报告<a href="http://www.bjnews.com.cn/finance/2019/06/25/595369.html" target="_blank"><u>显示</u></a>，全球游戏用户支出排名前五的母公司为腾讯、网易、动视暴雪、BANDAI NAMCO 和 Netmarble。报告预计，2019 年移动游戏在全球游戏用户支出中的占比将达到 60%。数据显示，游戏占 App 用户总使用时长的 10%。在游戏用户支出方面，目前中国市场是全球最大的市场，但由于游戏许可法规的不确定性，2018 年下半年中国的游戏发展一度受阻，中国市场的游戏用户支出锐减，与全球整体游戏用户支出相比差距较大。
+➜美国对伊朗发动网络攻击
+https://www.solidot.org/story?sid=61118	42817
+为了回击伊朗对美国的网络攻击和击落无人侦察机，美国对伊朗军方的 IT 系统发动了攻击。美联社援引知情人士和五角大楼官员的消息<a href="https://www.zdnet.com/article/us-launches-cyber-attack-aimed-at-iranian-rocket-and-missile-systems/"><u>报道</u></a>，总统特朗普直接批准了美国网络战司令部的攻击行动。网络攻击针对的是伊朗军方用于控制火箭和导弹发射器的计算机系统。这些系统由伊朗伊斯兰革命卫队管理，伊斯兰革命卫队去年被美国总统定为是恐怖组织。在击落无人机后，特朗普一度考虑军事打击伊朗的导弹和雷达系统，但之后取消了攻击计划。
+➜美国考虑要求 5G 设备必须是非中国制造
+https://www.solidot.org/story?sid=61119	44644
+特朗普政府正考虑要求美国的下一代 5G 设备必须在中国之外设计和制造。此举可能重塑全球制造业。华尔街日报援引知情人士的消息<a href="https://www.wsj.com/articles/u-s-considers-requiring-5g-equipment-for-domestic-use-be-made-outside-china-11561313072"><u>报道</u></a>，白宫上个月发布的行政命令以网络安全理由限制了部分国家（主要是中国）制造的设备和服务，对美国电信供应链进行为期 150 天的评估。作为评估的一部分，美国官员询问电信制造商他们是否能在中国之外在美国境内设计和制造电信设备如蜂窝塔、路由器和交换机，以及软件。对话处于早期阶段，行政命令要求在 150 天期限内提出提议，而任何提议可能需要数月甚至数年才能通过。为了服务于美国市场，这些提议可能迫使美国电信运营商、诺基亚和爱立信将主要业务迁移出中国。美国是最大的电信市场，但电信设备主要外包给中国等国生产。美国担心中国政府可能命令在中国制造的设备中植入后门，用于监听或远程控制。
+➜芯片代工厂开始提供 5 纳米和 3 纳米芯片
+https://www.solidot.org/story?sid=61120	48010
+芯片代工厂<a href="https://semiengineering.com/5nm-vs-3nm/" target="_blank"><u>准备提供 5 纳米和 3 纳米芯片</u></a>，客户则要需要斟酌下，开发新一代芯片是很昂贵的，而效益却并非很显而易见。市场上可选的代工厂也很少。目前只有三星和台积电能提供 7 纳米和 5 纳米工艺节点的芯片，英特尔等价于 7 纳米的 10 纳米芯片还在难产中。中芯国际的 7 纳米技术还在研发之中，何时提供还是未知数。三星和台积电的 7 纳米芯片都是使用的 FinFET 晶体管，下一代 5 纳米芯片同样使用&nbsp; FinFET，相比传统的平面晶体管，它的类 3D 结构能提供更好性能更低泄漏。到了 3 纳米技术，三星将从  FinFET 转移到被称为 <a href="https://semiengineering.com/knowledge_centers/ic-types/transistors/3d/nanosheet-fet/">纳米片 FET</a> 的晶体管结构，台积电还没有透露它的计划，它正在评估多个选项，包括纳米片、纳米线和增强版 FinFET。在朝着 3 纳米技术前进过程中，芯片行业可能需要某种技术上的突破。

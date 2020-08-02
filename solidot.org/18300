@@ -1,0 +1,33 @@
+➜苹果因降低旧手机软件性能被法国罚款 2500 万欧元
+https://www.solidot.org/story?sid=63460	23386
+苹果因降低旧 iPhone 软件性能被法国监管机构<a href="https://www.dw.com/en/france-fines-apple-25-million-for-slowing-iphone-software/a-52290154?maca=en-rss-en-eu-2092-rdf" target="_blank">罚款 2500 万欧元</a>，这是消费者保护机构能开征的最大罚款。这不是苹果不是第一次因这个原因被罚款。早在 2017 年，消费者和评测机构发现旧型号 iPhone 升级到新一代操作系统后性能出现明显下降，此后苹果<a href="https://www.solidot.org/story?sid=54940" target="_blank"><u>承认</u></a>这是有意为之，它辩解称这是为了防止意外关机。苹果称随着 iPhone 电池老化，或在严寒或低电等特定条件下，这些设备可能无法满足手机电力需求，可能引发设备意外关机，损害电子元件。但其他人认为这实际上是“计划性报废”。2018 年，意大利监管机构对苹果<a href="https://www.solidot.org/story?sid=58346"><u>开出了 1000 万欧元的罚款</u></a>。
+➜Windows 7 bug 阻止用户关机或重启
+https://www.solidot.org/story?sid=63461	25346
+Windows 7 用户<a href="https://www.zdnet.com/article/windows-7-bug-prevents-users-from-shutting-down-or-rebooting-computers/" target="_blank"><u>报告一个未知原因的 bug</u></a> 会导致在尝试关机或重启时弹出警告信息“你没有权限关闭这台计算机”。Windows 7 已在今年 1 月结束支持，意味着微软不再可能会向 Windows&nbsp; 7 系统释出补丁。不过微软表示它会修复 Windows 7 最后一批补丁引入的黑屏幕 bug。对于最新的阻止关机 bug，目前还不清楚微软是否会修复，不过用户已经找到了两种解决方法，其中一种是创建新的管理账号，登录之后重返旧的管理账号，然后手动关机或重启。第二种需要使用组策略编辑器。
+➜AMD 发布 64 核线程撕裂者 3990X
+https://www.solidot.org/story?sid=63462	26089
+几年前最高端的消费者 CPU 还只有 8 核，而现在你能拿到 64 核了。AMD 正式发布 64 核线程撕裂者 3990X，主要科技网站如 <a href="https://www.anandtech.com/show/15483/amd-threadripper-3990x-review"><u>Anandtech</u></a> 都发布了评测报告，结果显示除了 AVX-512，3990X 能轻松击败英特尔两万美元的双路 Xeon Platinum 8280。鉴于软件对多核的优化支持还不完善，3990X 并不是高性价比的高端处理器，价格只有其一半的 32 核线程撕裂者 3970X 可能更合算。Phoronix <a href="https://www.phoronix.com/scan.php?page=article&amp;item=3990x-threadripper-linux&amp;num=8" target="_blank"><u>测试了 3990X 在 Linux 下的性能</u></a>，显示它能在不到两分钟内完成  LLVM 的编译，22 秒完成 Linux 5.4 kernel 的编译，它对于软件编译或其它基于 CPU 的渲染器或建模具有极大的帮助。此外 Linux 硬件供应商 System76 发布了<a href="https://system76.com/threadripper"><u>线程撕裂者工作站</u></a>，可选 CPU 包括了 3990X。
+➜勒索软件安装合法 Gigabyte 驱动去关闭安全软件
+https://www.solidot.org/story?sid=63463	27948
+安全公司 Sophos <a href="https://news.sophos.com/en-us/2020/02/06/living-off-another-land-ransomware-borrows-vulnerable-driver-to-remove-security-software/"><u>报告</u></a>，勒索软件 RobbinHood 正采用一种新颖的方法防止其在被感染设备上加密文件的操作<a href="https://www.zdnet.com/article/ransomware-installs-gigabyte-driver-to-kill-antivirus-products/"><u>被杀毒软件阻止</u></a>。攻击者首先在受害者的网络内获得立足之地，然后安装合法的  Gigabyte 内核驱动 GDRV.SYS，这个驱动存在漏洞，攻击者能利用漏洞获得内核访问权限，利用内核访问权限攻击者临时禁用了 Windows OS 的驱动签名强制，之后安装恶意内核驱动 RBNL.SYS，使用这个驱动关闭杀毒软件或其它设备上运行的安全产品，执行 RobbinHood 加密文件。
+➜新冠肺炎成为临时名称
+https://www.solidot.org/story?sid=63464	30063
+国家卫生健康委<a href="http://www.nhc.gov.cn/xcs/zhengcwj/202002/18c1bb43965a4492907957875de02ae7.shtml"><u>宣布</u></a>目前主要源于武汉的“新型冠状病毒感染的肺炎”暂命名为“新型冠状病毒肺炎”，简称“新冠肺炎”；英文名称为“Novel Coronavirus Pneumonia”，简称“NCP”。新冠肺炎此前有新型冠状病毒肺炎、武汉肺炎或 2019-nCoV 等不同名称。科学家正在进行闭门会议讨论给<a href="https://www.solidot.org/story?sid=63426"><u>它起一个正式名字</u></a>，暂时不清楚 NCP 这个简称是否会被科学界接受并使用。
+➜MojoJS-Query开源JS选择器（CSS3 Selector）引擎
+https://www.solidot.org/story?sid=63465	42945
+<a href="http://https://github.com/scottcgi/MojoJS-Query">代码搬运工</a> 写道<i>"<a href="https://github.com/scottcgi/MojoJS-Query/blob/master/MojoJS.query.js" target="_blank">MojoJS-Query</a>（<a href="https://github.com/scottcgi/MojoJS-Query" target="_blank">GitHub</a>）是一个使用JS实现的CSS选择器引擎，其功能实现特点如下：</p>
+<p>
+</p>
+<ul>
+<li>支持所有CSS3选择器，以及更多非标准选择器（如has，not）。</li>
+<li>性能高效，只比native实现慢2~3倍。</li>
+<li>代码结构极其简洁、短小、易懂。</li>
+<li>非常容易扩展，自定义的非标准选择器实现。</li></ul>
+最后，<a href="https://scottcgi.github.io/MojoJS-Query/speed-test/index.html" target="_blank">在线速度测试</a>：提供了与native和sizzle（jQuery）的性能测试对比。"
+</i>
+➜南极记录到 18.3 摄氏度的创纪录温度
+https://www.solidot.org/story?sid=63466	47073
+南极<a href="https://www.bbc.com/news/world-51420681" target="_blank"><u>记录到 18.3 摄氏度的创纪录高温</u></a>，该记录是在位于南极半岛的阿根廷科考站 Esperanza 录下的，比之前 2015 年创下的最高纪录  17.5 摄氏度高 0.8 摄氏度。联合国世界气象组织确认了这一记录。南极大陆的温度过去五十年增加了大约 3 摄氏度，世界气象组织称因为全球暖化南极西海岸的冰川过去 12 年在加速消融。18.3 摄氏度是在南极大陆记录到的最高温度，整个南极地区——包括大陆、岛屿和海洋——的最高温度则是在 1982 年记录到的 19.8 摄氏度。
+➜科学家发现没有可识别基因的病毒
+https://www.solidot.org/story?sid=63467	49037
+病毒是地球上最神秘的生物体之一，也是最小的生命形式之一，由于它们没有宿主就无法生存和繁殖，因此究竟是否属于生物科学家有争议。现在，科学家<a href="https://www.sciencemag.org/news/2020/02/scientists-discover-virus-no-recognizable-genes" target="_blank"><u>报告</u></a>发现了一种没有可识别基因的病毒，显示我们对病毒的理解还是远远不足的。米纳斯吉拉斯联邦大学病毒学家 Jônatas Abrahão 是在寻找细菌大小的巨病毒时发现这种病毒的。在当地的一个人工湖中，他以及同事发现了新的巨病毒和被命名为 Yaravirus 的奇特病毒。研究团队对 Yaravirus 的基因组进行了测序，发现无法匹配任何已知的基因。他们的<a href="https://www.biorxiv.org/content/10.1101/2020.01.28.923185v1"><u>报告</u></a>发表在预印本网站 bioRxiv 上。

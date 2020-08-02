@@ -1,0 +1,119 @@
+➜技嘉AERO 17 HDR XB设计师笔记本Blender性能测试：让3D动画制作的光影飞舞
+http://www.expreview.com/75367.html	14400
+<!-- TDP,Windows 10,热管,CUDA,CUDA,CUDA,CUDA,CUDA,CUDA,热管,CUDA,CUDA,CUDA,CUDA,热管,CUDA,CUDA,CUDA,CUDA --><p>3D动画或者3D建模这些字眼放在过去，对于大多数人的第一印象，都是非常高端，遥不可及的存在，这类工作不仅对于硬件有着高不可攀的要求，而行业内的软件成本，也不是个人或者小团队能承受的，但近年Blender这个开源3D动画软件的兴起，其上手友好和免费使用的特性，很好地解决了软件方面的阻碍，让普通的学生和爱好者，也能开始接触和进入到这个领域，至于在硬件方面，NVIDIA选择与Blender深度合作，利用RTX GPU来帮助大家加速软件的渲染速度。可以说，现在你只需一台RTX Studio笔记本，就能开始自己的3D动画制作生涯了。</p><p style="text-align:center;"><img src="https://img.expreview.com/review/2020/07/gig_a17r_bld/gig_a17r_bldr_tit.jpg"/></p><h1>充分利用RTX技术的Blender</h1><p>与那些3D动画制作软件的巨头级软件，牵一发动全身的谨慎迭代更新不同，Blender凭借其开源的灵活优势，软件本身在几年时间内便获得了快速发展，特别是对用户非常有实用意义的硬件支持上，Blender很早就支持了NVIDIA的CUDA通用计算技术，相比传统的CPU渲染，可以极大提高3D模型的渲染速度，而到了基于Turing架构的RTX系列GPU上，NVIDIA更是选择与Blender深入合作，共同把充分利用到光线追踪技术的OptiX API，做进了Cycles渲染器的后端，使得在搭配RTX系列GPU工作时，渲染速度会有比CUDA还要更快的表现。</p><p>可能对于不少读者，看到这里已经有点不知所云了，所以有必要先简单介绍下3D动画制作的工作流。其实这类工作都可以归为两个主要阶段，首先是画3D模型，这个阶段大多是在立体空间内的线、面绘制，所以对电脑硬件需求相对是比较低的，主要用到的是CPU性能，目前主流的6核、8核CPU都已经可以很好应付，而完成3D建模后，会加上贴图、材质面和光照效果，然后通过渲染器（render）导出我们常见到的，那些栩栩如生的3D渲染图或者动画，在这个阶段就需要高性能的硬件，才能更好更快地完成渲染工作了。</p><p style="text-align:center;"><img src="https://img.expreview.com/review/2020/07/gig_a17r_bld/bldr_wokf.jpg" width="100%"/></p><p>而在渲染器方面，又分为CPU和GPU渲染引擎，过去CPU渲染曾是3D动画软件的最主流选择，这依赖超多核心数量的CPU来工作，但近年GPU渲染在3D动画软件中也是越来越重要了，比如Autodesk的Arnold，以及Redshift渲染器，都是完整支持使用GPU来做渲染的，特别是NVIDIA的RTX系列GPU本身支持硬件级的光线追踪能力，在处理与光照效果相关的渲染时会非常高效。</p><p>至于在最新版Blender里面，做渲染工作的主要有EEVEE和Cycles，这两个渲染器都可以支持GPU渲染，当中Cycles便是前文所述的那个渲染器，它有着NVIDIA的深度支持，能充分发挥RTX GPU的硬件性能，而在目前基于Optix API的最新版Cycles渲染器中，已经支持头发、体积着色器和动态模糊等在内原有的GPU渲染特性。</p><p style="text-align:center;"><img src="https://img.expreview.com/review/2020/07/gig_a17r_bld/bldr_ss_02.jpg" width="100%"/></p><h1>技嘉AERO 17 HDR XB笔记本能否驾驭Blender？</h1><p>由于有着原生级别的软硬件结合，所以NVIDIA的GPU在Blender就会有得天独厚的优势，而在目前笔记本市场上，有专门面向内容创作用户的RTX Studio笔记本，搭载了NVIDIA RTX系列GPU，所以我们这次就来看看这类笔记本在Blender里面，实际渲染性能表现是怎样的。</p><p>为此我们选择了一台来自技嘉的AERO 17 HDR XB设计师笔记本，它配备17.3英寸4K分辨率的超窄边框屏幕，在22mm厚度的机身里面，塞入了NVIDIA RTX 2070 SUPER with Max-Q GPU，以及Intel Core i7-10875H八核CPU在的高规格硬件，非常适合用于做内容创作，也通过了NVIDIA RTX Studio认证，有关它的更多详细介绍和评测，可以参阅我们另外一篇文章《<a href="https://www.expreview.com/75287.html" target="_blank">技嘉AERO 17 HDR XB设计师笔记本评测：虚拟主播的加力推进器</a>》。</p><p><strong>产品规格参数</strong></p><div class="debug"><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+align: 'left',
+width: '80%',
+padding: '8px 15px',
+header: ["AERO 17 HDR XB"],
+id: tableid,
+data: [
+["机身设计","铝合金材质，黑色"],
+["机身尺寸(厚*宽*长）","21.4*2700*396mm"],
+["裸机重量","2.63kg（测试机实测）"],
+["处理器","Intel Core i7-10875H（八核16线程，2.3GHz默频/5.1GHz最高睿频，16MB智能缓存，45W TDP）"],
+["GPU","NVIDIA GeForce RTX 2070 SUPER with Max-Q Design，8GB GDDR6显存，支持Optimus技术"],
+["内存","16GB DDR4-2933MHz，8GB*2双通道，SO-DIMM安装"],
+["屏幕","17.3英寸，IPS，4K (3840*2160)分辨率，100% Adobe RGB，DisplayHDR 400认证，X-Rite Pantone认证，出厂预校准，非触摸"],
+["主板","Intel HM470M芯片组"],
+["存储","512GB NVMe M.2 SSD，另预留一条M.2 2280"],
+["接口","USB 3.2 Gen1 Type-A*3，雷电3*1，HDMI 2.0*1，mini DP 1.4*1，3.5mm输入音频*1，3.5mm输出音频*1，UHS-II SD卡槽*1，RJ-45有线网口*1"],
+["网络","Wi-Fi 6，Killer AX1650（IEEE 802.11ax），蓝牙5.0+LE，Killer E2600有线网卡"],
+["电池","内置94.24Wh"],
+["电源适配器","230W"],
+["摄像头","HD 720p"],
+["键盘","带数字小键盘，AORUS Fuison RGB全区灯光"],
+["触摸板","支持Windows Precision，带指纹识别器"],
+["其它","2W扬声器*2，Nahimic 3音效，阵列式麦克风"],
+["操作系统","微软 Windows 10 Home 64-Bit"],
+["注: 制造商可能使用来自不同供应商的组件，包括规格相似的显示面板，硬盘或内存。"]
+]
+});</script></div><p>这次Blender性能测试部分主要分为两个，首先是Blender官方的跑分软件Open data Benchmark，带有多个不同模型、场景，能很好地反映Blender对硬件的支持和需求情况，其实大家也可以从网上下载该benchmark来测试自己现有平台，再对比我们这里的成绩，可以有更直接的体会。</p><p>当然跑分benchmark只是一部分考验，到真实创作使用上，还是有所不同的，所以为了更好地结合3D动画从业者们的实际情况，我们联系了国内专注于Blender学习与交流的网站：斑斓中国社区（Blendercn.org），为我们提供了两个他们实际制作的Blender项目，用作第二部分的性能测试。</p><p style="text-align:center;"><img src="http://img.expreview.com/review/2020/07/gig_a17r_bld/gig_a17hr_bldr_01.jpg" width="100%"/></p><h2>Open data Benchmark</h2><p>目前Open data Benchmark最新版已经带有与Blender正式版相同的2.83，在技嘉AERO 17 HDR XB笔记本上面，可选基于OptiX、CUDA运算的两种GPU渲染，以及传统的CPU运算，我们这次测试采用了命令行方式运行，以确保最好的运行兼容性和稳定性，而AERO 17 HDR XB笔记本设置为CPU和GPU到最大性能等级，散热系统设为游戏模式，并安装最新RTX Studio驱动。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "技嘉 AERO 17 HDR XB 笔记本创作性能测试 | Blender Open Data benchmark"; // 标题文字热管
+var subtitle_text = "www.expreview.com | 越小越好"; // 副标题文字
+var unit_text = "秒"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模糊效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#000'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = null; //指定X轴最大值，null时为自动
+var autocolor = 0; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor =  ['#87B637','#6f952e', '#2672BF'];//自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "bmw27","GPU+OptiX(RTX 2070 SUPER with Max-Q)": "32.2","GPU+CUDA(RTX 2070 SUPER with Max-Q)": "65.2","CPU (i7-10875H)": "253.0"},
+{"type": "classroom","GPU+OptiX(RTX 2070 SUPER with Max-Q)": "121.9","GPU+CUDA(RTX 2070 SUPER with Max-Q)": "213.5","CPU (i7-10875H)": "767.9"},
+{"type": "fishy_cat","GPU+OptiX(RTX 2070 SUPER with Max-Q)": "54.6","GPU+CUDA(RTX 2070 SUPER with Max-Q)": "128.3","CPU (i7-10875H)": "384.1"},
+{"type": "koro","GPU+OptiX(RTX 2070 SUPER with Max-Q)": "99.5","GPU+CUDA(RTX 2070 SUPER with Max-Q)": "211.1","CPU (i7-10875H)": "472.7"},
+{"type": "pavillon_barcelona","GPU+OptiX(RTX 2070 SUPER with Max-Q)": "158.2","GPU+CUDA(RTX 2070 SUPER with Max-Q)": "366.9","CPU (i7-10875H)": "802.6"},
+{"type": "victor","GPU+OptiX(RTX 2070 SUPER with Max-Q)": "218.1","GPU+CUDA(RTX 2070 SUPER with Max-Q)": "564.2","CPU (i7-10875H)": "1519.5"},
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>这个测试的结果并没有什么意外，GPU渲染的速度完全碾压了CPU渲染，这与Blender官方给出成绩情况是类似的，而且同样GPU渲染下，采用OptiX设置相比CUDA也有着数倍的差距，可见RTX 2070 SUPER with Max-Q这样支持光线追踪的GPU，会在Blender更有性能优势，只有在不带有RT Cores、不支持OptiX的GTX 16系列GPU上，才会采用CUDA的设置。</p><h2>实际项目渲染测试</h2><p>不同于benchmark只是无情地跑个渲染成绩给大家看，在Blender实际工作里面，渲染其实还主要分为了视口渲染（Viewport render）和最终渲染（F12 render）两种，前者用于可以实时预览建模的大致渲染效果，所以为追求速度，采用了动态BVH（层次包围盒），还有一些动态模糊、图块渲染在内的设置会被忽略，而最终渲染就是把当前帧导出成品图片了，它会把工程里面的所有效果和设置全部都渲染出来，所以耗时要更久，对硬件的要求也更高一些。</p><p>我们在这部分的渲染测试用到了两个工程文件：一个为由斑斓中国原创组制作的NVIDIA logo项目，项目添加了很多光照效果，而软件测试用了最新的Blender 2.83稳定版；另外一个由斑斓中国古生物组-FXZT制作的有多种恐龙摆pose的3D模型场景，这个因为用到了更新的OptiX功能，所以测试需要Blender 2.90每日更新版，这个项目的复杂程度其实也相较更高。</p><p style="text-align:center;"><img src="https://img.expreview.com/review/2020/07/gig_a17r_bld/bldr_ss_01.jpg" width="100%"/></p><h3>视口渲染</h3><p>一些对3D动画软件有所了解的读者，可能会知道在其它渲染器里面，虽然GPU渲染的速度很快，但会带来明显的噪点，需要提高samples参数，并加上降噪（denoise）处理，那么在最新版的Blender里面，它支持了名为OptiX AI-Accelerated的降噪功能，这利用到NVIDIA RTX GPU的Tensor Cores，通过机器学习锻炼的AI来提高渲染画质，而且在速度上比传统降噪方式也要更快。</p><p>现有Blender的视口渲染和最终渲染，都是可以开启OptiX AI-Accelerated降噪，所以我们可以来看看Blender在Cycles渲染器设置成GPU渲染后，视口渲染的响应反馈，以及对比分别在CPU和GPU渲染下，加入降噪后的最终渲染图画质。</p><p>Cycles渲染器在设置OptiX成GPU渲染后，把Shading工作区切换到视口渲染模式，可以看到灰模的材质、光照以及反光效果，基本都会在2-3秒就渲染出来大致形态，即使在场景的三维空间拖动模型，让观看的镜头视角改变，GPU渲染的响应也非常快速，只需等一阵子就完成初步渲染，几乎能做到实时的预览，但在CPU设置下，引擎的渲染速度就变得非常缓慢，需要耗费数分钟的时间才能看到大致的模型外貌。</p><p style="text-align:center;"><img data-gifffer="https://img.expreview.com/review/2020/07/gig_a17r_bld/bldr_nv_vptr.gif" width="100%"/></p><p style="text-align:center;"><img data-gifffer="https://img.expreview.com/review/2020/07/gig_a17r_bld/bldr_dino_vptr.gif" width="100%"/></p><p>通过采集不同设备设置下视口渲染的整个处理过程，在计算和对比各自耗费的时间后，可以看到基于OptiX的GPU渲染，完成整个视口渲染的耗时，要比用CPU来工作快很多，最高去到5倍的差距，验证了上述的在拖动模型进行变换操作时，GPU渲染响应更快速，能做到接近实时预览的表现，而在CPU渲染下，即使想预览建模的基本渲染画面，也要等待约26秒左右的时间（在恐龙项目内）。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "技嘉 AERO 17 HDR XB 笔记本创作性能测试 | Blender | Viewport render"; // 标题文字热管
+var subtitle_text = "www.expreview.com | 越小越好"; // 副标题文字
+var unit_text = "秒"; //单位
+var leftside = "12%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模糊效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#000'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = null; //指定X轴最大值，null时为自动
+var autocolor = 0; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor =  ['#87B637','#6f952e','#5b7828','#485e22','#2672BF','#2363a4'];//自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "NVIDIA logo（Sampling：64）","GPU(OptiX，RTX 2070 SUPER with Max-Q)": "8","GPU+AI Denoise(OptiX，RTX 2070 SUPER with Max-Q)": "9","GPU(CUDA，RTX 2070 with Max-Q)": "11","GPU+AI Denoise(CUDA，RTX 2070 with Max-Q)": "17","CPU (i7-10875H)": "37","CPU+AI Denoise(i7-10875H)": "43"},
+{"type": "Dinosaurs（Sampling：128）","GPU(OptiX，RTX 2070 SUPER with Max-Q)": "72","GPU+AI Denoise(OptiX，RTX 2070 SUPER with Max-Q)": "72","GPU(CUDA，RTX 2070 with Max-Q)": "115","GPU+AI Denoise(CUDA，RTX 2070 with Max-Q)": "116","CPU (i7-10875H)": "405","CPU+AI Denoise(i7-10875H)": "408"},
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><h3>最终渲染</h3><p>通过对比两个项目各自不同设置下的四张最终渲染图，可以看到GPU渲染的画质是非常不错的，而且有点意外的是，CPU渲染在Blender里面出来的最终渲染图，甚至是不如GPU渲染的来得好看，即便不加降噪，GPU渲染也有不错的画面纯净度，在加上降噪后就观感更好，但CPU渲染却不太满意，特别恐龙那个项目，直接CPU渲染出来的图片同样有较明显的噪点，也要加上降噪才能消除掉一些画面杂质。当然CPU渲染还是有一点优势在于，它给到的画面清晰度会稍微好一些。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var img1 = ["https://img.expreview.com/review/2020/07/gig_a17r_bld/nv_cpu.png", "CPU"]; //图片链接及说明
+var img2 = ["https://img.expreview.com/review/2020/07/gig_a17r_bld/nv_gpu.png", "GPU"];
+imgcompare(img1, img2);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var img1 = ["https://img.expreview.com/review/2020/07/gig_a17r_bld/nv_cpu_denos.png", "CPU+降噪"]; //图片链接及说明
+var img2 = ["https://img.expreview.com/review/2020/07/gig_a17r_bld/nv_gpu_denos.png", "GPU+降噪"];
+imgcompare(img1, img2);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var img1 = ["https://img.expreview.com/review/2020/07/gig_a17r_bld/dino_cpu.png", "CPU"]; //图片链接及说明
+var img2 = ["https://img.expreview.com/review/2020/07/gig_a17r_bld/dino_gpu.png", "GPU"];
+imgcompare(img1, img2);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var img1 = ["https://img.expreview.com/review/2020/07/gig_a17r_bld/dino_cpu_dens.png", "CPU+降噪"]; //图片链接及说明
+var img2 = ["https://img.expreview.com/review/2020/07/gig_a17r_bld/dino_gpu_dens.png", "GPU+降噪"];
+imgcompare(img1, img2);</script></div><p>在Blender的Cycles渲染器设备支持可谓全面和灵活了，它可以设置CPU、OptiX GPU、CUDA GPU和OpenCL GPU，甚至可以支持多卡互联的渲染，可玩性还是挺高的，但考虑到实际应用环境，这里最终渲染测试只选择了CPU、OptiX GPU、CUDA GPU，以及各自加入了AI降噪后的渲染耗时。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "技嘉 AERO 17 HDR XB 笔记本创作性能测试 | Blender | final render"; // 标题文字热管
+var subtitle_text = "www.expreview.com | 越小越好"; // 副标题文字
+var unit_text = "秒"; //单位
+var leftside = "12%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模糊效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#000'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = null; //指定X轴最大值，null时为自动
+var autocolor = 0; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor =  ['#87B637','#6f952e','#5b7828','#485e22','#2672BF','#2363a4'];//自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "NVIDIA logo（Sampling：512）","GPU(OptiX，RTX 2070 SUPER with Max-Q)": "64","GPU+AI Denoise(OptiX，RTX 2070 SUPER with Max-Q)": "68","GPU(CUDA，RTX 2070 with Max-Q)": "91","GPU+AI Denoise(CUDA，RTX 2070 with Max-Q)": "96","CPU (i7-10875H)": "359","CPU+AI Denoise(i7-10875H)": "359"},
+{"type": "Dinosaurs（Sampling：128）","GPU(OptiX，RTX 2070 SUPER with Max-Q)": "255","GPU+AI Denoise(OptiX，RTX 2070 SUPER with Max-Q)": "277","GPU(CUDA，RTX 2070 with Max-Q)": "392","GPU+AI Denoise(CUDA，RTX 2070 with Max-Q)": "407","CPU (i7-10875H)": "581","CPU+AI Denoise(i7-10875H)": "568"},
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>最终渲染速度的成绩与benchmark的情况基本一致，GPU渲染要大幅快于CPU渲染，而OptiX又会比CUDA还要更快，采用RTX系列GPU真的可以省下非常多的时间成本，另外还可以看到的是，即使加上AI降噪，也并不会带来更长的渲染耗时，这应该是因为这个AI功能，用到了RTX系列GPU核心内独立的Tensor Cores来做的，所以不影响GPU的渲染运算工作。</p><h3>测试总结</h3><p>可见无论在Open data Benchmark，还是实际的工程项目里面，得益于Blender Cycles渲染器对NVIDIA RTX系列GPU的极佳优化，让技嘉AERO 17 HDR XB这样高阶RTX Studio笔记本，可以完全有能力胜任3D动画软件渲染工作，它即可适用于那些准备在Blender做商业项目的专业用户，又对于希望学习和入门Blender的学生、新手，都一体式解决了他们在硬件方面的需求。</p><p style="text-align:center;"><img src="https://img.expreview.com/review/2020/07/gig_a17r_bld/gig_a17hr_bldr_02.jpg" width="100%"/></p><p>当然技嘉AERO 17 HDR XB主要面向的是高端专业设计用户，所以在国内的售价比较高，但如今市面上的RTX Studio笔记本还是比较多了，大家可以根据自身预算和使用强度作选择，只要认准RTX系列GPU就好，因为它们在Blender的表现实在太高效了，这也让我们期待NVIDIA与Blender还会有更多的深入合作，利用到GPU硬件特性，把这个3D动画软件做得更好。</p><h1>访谈斑斓中国</h1><p>最后，因为我们网站本身是做电脑硬件评测，在3D动画制作方面多少会显得班门弄斧，不敢轻言阔论，所以我们觉得让实际的从业人员也来分享一些故事，会更为贴切，因此我们与斑斓中国社区的裴哥作了些相关的交流，一同聊聊Blender目前在国内的发展状况，也帮助大家更好地了解NVIDIA RTX GPU对这个3D动画软件的支持程度。</p><h2>（1）Blender目前在国内的接受程度怎样？</h2><p><strong>问：Blender作为一个开源的3D动画制作软件，它目前在国内的接受程度怎样？ 斑斓中国社区是目前国内少有专注与Blender交流的网站，目前用户主要群体都有哪些，他们又主要在用怎样的硬件进行动画制作呢？</strong></p><p><strong>答：</strong> 从个人用户角度来说，在不考虑工具软件和数据资产知识产权保护的前提下，很多用户首先考虑的是一个工具软件和自己已经在使用的工具软件对比，看看哪个更加顺手，很遗憾的是在几年前Blender处于下风，没有积累到太多的用户。</p><p>不过在Blender2.8以后，同样的前提条件下，Blender在效率、集成度、易用性、所见即所得的实时性上超过了很多用户手里正在使用的软件，这一两年Blender的认知度在迅猛的提高，在认知度提高的先决条件下，学习和采用Blender的用户也在几何级的增长，就看B站那么多人开了那么多的基础班，依然还在供不应求，跟图形沾边的行业的用户都在他们的头部用户的带领下，开始接触到Blender，然后开始学习和采用Blender。</p><p>特别是最近半年多，很多人都困在了家中，他们在这段时间从听说Blender转变到接触Blender再到接受Blender。社区在B站的几位成员开的频道也从前两年的几百个关注达到现在的两三万的关注量，可能可以从这里窥斑见豹找到一些迹象说明国内用Blender的人多了起来。</p><p>很多文创企业因为自身不需要在3D动画这一块形成核心竞争力，因为他们的盈利模式并没有高度依赖于软硬件技术革新，也不需要软件去节省综合成本，现阶段我们还是以企业内的技术或者艺术总监级用户是否有能力掌握Blender并将其应用到工作流程中作为判断标准。因为这部分用户有很强的技术路径依赖，以及很多利益捆绑，所以，社区只能跟已经具备相当能力的部分关键用户进行连接。更多的面向企业进行推广的事情，社区不具备相应的资源去劝说和实施。</p><p>我们对Blender用户的侧写是：一切有可视化需求的用户群体。繁星点点，散落在各行各业。远看都是闪闪发光，近看大家的业务差距都隔着十万八千里。这也是社区需要非常多的知识储备去应对如此需求不一致的用户群体，耗费了不少的人力和资源，看着成效不够大的原因。</p><p style="text-align:center;"><img src="https://img.expreview.com/review/2020/07/gig_a17r_bld/bldr_cn_ss.jpg" width="100%"/></p><p>现在的社区活跃用户已经积累了大量Blender知识和技能，在他们各自行业里对Blender形成了依赖，他们的很多解决自身行业问题的方案都是基于Blender来做的。因为Blender涉足到各种可视化和跟图形想关的行当，最近一年的超快速功能更新，让Blender在国内扩展了不少的用户群体：比如游戏制作里面的概念和原画设计这个领域有非常多的Blender新用户：Blender的实时渲染引擎和可以在三维中绘制立体图像的蜡笔工具以及很多辅助插件可以相当迅速的帮助他们完成项目。</p><p>大众化的影视广告业有很多专业的Blender用户，MC的同人动画制作有很多年纪很小的用户，珠宝设计利用到Blender的快速出图功能有的用户只用了几个月就建立起了对行业里其他软件用户的绝对优势，电商的各自产品图样的快速渲染，考古学中的场景还原和生物复原，建筑行业的BIM可视化快速展现，室内外场景基于RTX的快速渲染等，大家都在积极探索Blender如何应对各自行业的可视化需求。</p><p>Blender从2.8版本开始，就把硬件的支持时限从八年减少到了五年（从软件发布向前推的年份数），因为很多新软件功能依附于较新的硬件配置。少部分已经更新到RTX显卡下，大部分的硬件还停留在四五年前的水平。不过因为Blender有一个靠图形API输出渲染图像的渲染引擎Blender EEVEE，生成动画这个功能大部分用户在没有硬件升级的情况下也还算过得去。</p><p>很多Blender EEVEE的用户在希望这个引擎支持vulkan这个新的图形API，这样的软件升级也会带来很多的硬件升级需求。根据已经将显卡升级到RTX的用户反馈，基于RTX的Blender cycles渲染预览速度已经跟实时的Blender &nbsp;EEVEE不相上下，而且有更好的光影视觉反馈。</p><h2>（2）RTX技术的GPU渲染在Blender做得怎样？</h2><p><strong>问：基于RTX技术的GPU渲染带来了光线追踪技术，这在现有版本Blender里面的利用和优化又做得怎样？现有Blender已经支持了利用RTX GPU去做AI denoise降噪，那在3D动画制作中，还有其它哪些方面可以利用上AI、机器学习的特性？</strong></p><p><strong>答：</strong> 2019年SIGGRAPH上，Blender的掌门人ton跟NVIDIA CEO JHH进行了一次亲密的双边会谈，这次会面是非常有建设性的，JHH宣布将optix的授权协议跟Blender这种开源软件的协议相适配，也就是将这些先进的技术输出和集成到Blender中，供广大的Blender用户使用。</p><p>在Blender开发团队还不能太好驾驭optix的情况下，JHH让NVIDIA的开发人员PATRICK MOURS对<a href="https://code.blender.org/2019/07/accelerating-cycles-using-nvidia-rtx/" target="_blank">Blender的cycles进行改造</a>，并开源了相关的实现。现在Blender中的RTX的实现和优化是原厂级的，就在最近的2.90的版本更新中，还将刚在optix SDK7.5中的出现的毛发曲线实现放进了Blender。相信一些未完成的RTX功能实现和技术转移将在后续的Blender版本中逐渐完成。</p><p>对使用Blender的用户，我们社区已经部署了RTX显卡的用户一致推荐去购买一张RTX显卡或搭载RTX GPU的设计师笔记本来体验这种原厂级的丝滑支持，以及设计师PC，设计师笔记本等多种类设备支持为Blender用户带来更灵活的选择性以适应不同工作场景。</p><p style="text-align:center;"><img src="https://img.expreview.com/review/2020/07/gig_a17r_bld/gig_a17hr_bldr_04.jpg" width="100%"/></p><p>3D动画是计算机图形学在应用方面的集大成者，有很多方面可能会用到AI，机器学习，数不胜数，因为我们获得的知识和信息不是很全面、可能造成眼界比较狭隘，不过我们能够看到的例子也可以举出一些，如下：以前用动作捕捉来进行动画制作，最近几年的论文都在通过深度学习和相关指令，让人形角色和其他动画角色自己跟虚拟场景进行交互，再录制成为动画，并作为数字资产供后续流程的动作控制使用。</p><p>直接通过识别照片中物体或者通过单摄像头识别各种物体再生成三维物体的AI 机器学习技术也在发展，现阶段这方面的技术可以参与到动画制作的前期策划中，作为各种简单的数字资产制作的补充技术。未来在硬件的不断发展完善下，这些技术会进一步应用到动画制作的流程当中。</p><p>通过AI计算，减少流体和烟雾在细节上的计算也是比较新的研究课题，最近一两年这片领域也开始有人在进行研究，也许不远的将来，在烟雾流体特效的模拟和渲染上，我们也能够看到成百上千倍的提速。</p><p>如果还要讲得深远一些，可能这幅图可以很直观的理解以后的AI和机器学习技术能怎么做。</p><p style="text-align: center;"><img src="https://img.expreview.com/review/2020/07/gig_a17r_bld/bldcn_qa_01.jpg" width="100%"/></p>

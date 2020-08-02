@@ -1,0 +1,15 @@
+➜为什么企业不对 GPL 侵权采取法律行动
+https://www.solidot.org/story?sid=51736	41859
+Linux 内核开发者有很多都是拿公司薪水的，大量的 GPL 代码都是在企业赞助下开发的， 但你很少看到有企业会对侵犯 GPL 许可证的行为采取行动。为什么没有多少企业对 GPL 侵权执法？LWN 的一篇文章<a href="https://lwn.net/Articles/716168/" target="_blank"><u>分析了这个问题</u></a>，认为从企业角度看，关键在于执法对它有什么好处。如果弊大于利或者胜负难料，执法成本过高，那么对 GPL 侵权采取法律行动是没有意义的。GPL 许可证包含了一个代码回馈机制，问题是 GPL 侵权者未必能提供多少令人感兴趣的代码，很可能侵权者的代码很烂，要求对方根据许可证要求披露代码反而是增加自己维护代码的负担。绝大多数 GPL 侵犯者通常也无法拿出多少钱来进行赔偿。它们多数是经营状况不佳的小公司，赚不了多少钱。在硬件领域，GPL 侵犯者多数来自中国，众所周知在中国进行起诉是很困难的。 GPL 执法面临的另一个显而易见的困难是诉讼成本，如果侵犯者是大公司，那么一起案件的诉讼费可以轻而易举的达到八位数。由于对方有着强大的经济实力作为后盾，一起诉讼拖的时间将会非常长，比如针对 VMware 的侵权诉讼已经进入到了第六年。种种的困难使得没有多少企业愿意对 GPL 侵权执法。
+➜Ubuntu 17.04 将不支持 32 位 PowerPC 架构
+https://www.solidot.org/story?sid=51737	43448
+Ubuntu 开发者在开发者邮件列表上<a href="https://lists.ubuntu.com/archives/ubuntu-devel-announce/2017-March/001206.html" target="_blank"><u>宣布</u></a>，即将在下个月释出的 Ubuntu 17.04（Zesty Zappus） 将不支持 32 位 PowerPC 架构。开发者称，这是一个迟来的声明，他们在上个月已经冻结了功能，PowerPC 架构的软件包没有移植的计划，他们已经停止为 Ubuntu 17.04 构建 PowerPC 架构 的 CD 镜像。32 位 <a href="https://en.wikipedia.org/wiki/PowerPC#32-bit_PowerPC" target="_blank"><u>PowerPC</u></a> 的一个主要使用者是苹果公司，苹果是在 2006 年从 PowerPC 切换到英特尔处理器。
+➜Linux 版 Firefox 52 默认使用 PulseAudio 会导致没有声音
+https://www.solidot.org/story?sid=51738	51684
+如果你是一名 Linux 用户，将 Firefox 浏览器升级到了最新的 v52，却发现浏览器不再能播放声音了，<a href="https://news.slashdot.org/story/17/03/17/1644211/firefox-goes-pulseaudio-only-leaves-alsa-users-with-no-sound" target="_blank"><u>你不是唯一遇到这个问题的人</u></a>。原因是 Linux 版 Firefox 52 默认使用 PulseAudio。在默认使用 PulseAudio 作为声音服务器的发行版如 Ubuntu上，这一改变不会带来问题。但如果 Linux 发行版（比如 Lubuntu 16.04 LTS）包括了 ALSA 和 PulseAudio 但默认使用 ALSA，那么你的浏览器会没有声音，但可以在设置里启用（--enable-alsa），如果发行版只有 ALSA 没有 PulseAudio，浏览器的声音播放也没有问题。Firefox 作出这一改变<a href="https://news.slashdot.org/comments.pl?sid=10376119&amp;cid=54060839" target="_blank"><u>被认为</u></a>与多进程架构和沙盒机制有关。
+➜GitHub 更新服务条款引发的思考
+https://www.solidot.org/story?sid=51739	56424
+GitHub 在 2 月 28 日更新了服务条款，其中一些条款<a href="http://www.solidot.org/story?sid=51551" target="_blank"><u>引发了争议</u></a>，被认为与众多开源和自由软件许可证相抵触。GitHub 随后澄清服务条款只是一种默认协议，并不是取代用户源代码原来采用的许可证。这件事引发的一个思考<a href="https://lwn.net/Articles/716372/" target="_blank"><u>是 GitHub 已经变得过于庞大了</u></a>，它在短短几年时间内成为了世界上最大的源代码托管平台，可能会以前所未有的方式成为自由软件世界的一个单点故障。GitHub 的下线和政策变更不只是对自由软件世界产生巨大的影响，而且还会影响到日常运作依赖于 GitHub 服务的更庞大群体。开发者们需要考虑下 GitHub 的替代，比如它的自由软件替代&nbsp; <a href="https://gitlab.com/">GitLab.com</a>。
+➜Raspberry Pi 成为第三大畅销的通用计算机
+https://www.solidot.org/story?sid=51740	57459
+单板电脑 Raspberry Pi 在五年内<a href="https://www.raspberrypi.org/magpi/raspberry-pi-sales/" target="_blank"><u>售出了 1250 万个</u></a>，超过 Commodore 64 成为第三大畅销的通用计算机，仅次于 PC 和 Mac。在众多 Raspberry Pi 产品中，Pi Model 3 销量最高，接近 Raspberry Pi 总销量的 三分之一，其次是 Raspberry Pi 2B+，两者占了五成以上销量。最早的产品 Model A 只占了 2%。

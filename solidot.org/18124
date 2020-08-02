@@ -1,0 +1,46 @@
+➜Tor 审查军备竞赛
+https://www.solidot.org/story?sid=61739	9745
+在上周举行的 Def Con 安全会议上，Tor 项目联合创始人 Roger Dingledine <a href="https://www.defcon.org/html/defcon-27/dc-27-speakers.html#Dingledine"><u>回顾了</u></a> Tor 与政府之间的屏蔽和反屏蔽军备竞赛，<a href="https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20presentations/DEFCON-27-Roger-Dingledine-TOR-Censorship-Arms-Race.pdf"><u>谈论了未来反屏蔽的计划</u></a>（幻灯片 PDF）。Dingledine 称，泰国在 2006 年屏蔽了 Tor 的域名、伊朗和沙特等国在 2007 年利用 websense/smartfilter 屏蔽了 Tor 的 HTTP 目录，Tor 随后采用 TLS 反击了屏蔽，但从 2009 年 6 月起伊朗利用 DPI（深度包检测）去识别 Tor。中国在 2009 年 9 月抓取和屏蔽了公开的中继节点，利用枚举屏蔽了三个私有中继网桥段之一，但漏掉了其它网桥段。2010 年 3 月第二个网桥段被屏蔽。期间中国的 Tor 网桥用户猛增到了 3 万以上。Tor 的应对方法是引入了可插拔传输（<a href="https://www.torproject.org/docs/pluggable-transports">Pluggable Transports</a>），其中 obfsproxy 加入了一层加密，而 meek 利用了云计算巨头们的域前置 (Domain fronting，已经失效) 。中国的回击则是利用 DPI 主动刺探 Tor 的TLS 握手，之后是 obfs2 和 obfs3。Tor 之后开始推 obfs4 网桥，旧的网桥都很容易被屏蔽。但到了 2018 年中期，obfs4 代理也出现了问题。现在 Tor 推出了一个新的可插拔传输 Snow✓ake 和改进的 obfs4，未来计划包括诱惑路由（decoy routing）和 FTE/Marionette。
+➜科学家在皮肤中发现新的感觉器官
+https://www.solidot.org/story?sid=61740	14339
+根据发表在《科学》期刊上的<a href="https://science.sciencemag.org/content/365/6454/695"><u>一项研究</u></a>，卡罗琳斯卡医学院的研究人员在皮肤中<a href="http://www.ebiotrade.com/newsf/2019-8/2019815163514428.htm" target="_blank"><u>发现了</u></a>一种对有害环境刺激敏感的新感觉器官。它是由多个长突起的神经胶质细胞组成，并且它们共同构成皮肤内的网状器官。这一器官对疼痛的机械损伤，如刺和压力敏感。构成这一器官的细胞对机械刺激非常敏感，这解释了它们参与检测疼痛的针刺和压力的机制。通过实验，研究人员还对器官进行了阻断，结果发现机械性疼痛感降低了。
+➜Cloudflare 递交 IPO 申请
+https://www.solidot.org/story?sid=61741	17399
+云计算公司 Cloudflare 正式递交了 IPO 申请。Cloudflare 成立于 2009 年，主要提供 CDN 和 DDoS 保护等服务。在 <a href="https://www.sec.gov/Archives/edgar/data/1477333/000119312519222176/d735023ds1.htm"><u>S1 文件</u></a>中，Cloudflare 称它的网络跨越了 90 多个国家的 193 个城市，与全球主要 ISP、公有云、SaaS 服务商和企业建立互联，在发达国家能在 100 毫秒内响应 98% 的网民，则全球则是 93%，它将继续扩展网络以更好的服务全球客户。Cloudflare 称过去两年它的收入增长都超过了 40% ，2016 年 8480 万美元，2017 年 1.349 亿美元，2018 年 1.927 亿美元，分别增长  59% 到 43%，今年上半年的收入为 1.292 亿美元，比去年同期增长 48%。但因为业务的持续投资它的净亏损也在不断增长，2018 年净亏损 8720 万美元，今年上半年则是 3680 万美元。它还在文件里提到了自己<a href="https://www.theverge.com/2019/8/15/20807358/cloudflare-ipo-s1-public-filing-risks-8chan-daily-stormer-moderation-ban"><u>面临的经营风险</u></a>：托管类似 8chan 和 Daily Stormer 这样的极端网站会惹恼部分客户。
+➜华为再次推迟可折叠智能手机的上市
+https://www.solidot.org/story?sid=61742	18229
+三星不是唯一一家在发布可折叠智能手机上挣扎的公司。华为的 The Mate X 已经两次推迟了发布时间。
+华为是在今年初公布了售价约 2600 美元的折叠手机 The Mate X，它最初的上市目标是在今年年中。4 月份中国媒体报道称华为考虑 6 月发布。 6 月过半后华为发言人表示发布日期定在今年 9 月，现在该公司<a href="https://arstechnica.com/gadgets/2019/08/huaweis-2600-foldable-smartphone-delayed-again/#p3"><u>宣布</u></a>手机在 11 月前不可能上市。 华为已经调整了它的可折叠手机的设计，表示这应该是最后一次延期。此前三星折叠手机的测试发现了屏幕破裂问题。
+➜美国将中广核列入出口控制的“实体名单”
+https://www.solidot.org/story?sid=61743	19401
+根据美国联邦公报(Federal Register)上的一份公告，中国广核集团及其三家子公司<a href="http://www.ftchinese.com/story/001084064" target="_blank"><u>被列入</u></a>美国商务部的“实体名单”。此举实际上禁止美国企业在未获得许可证的情况下向这家中国集团供货；这类许可证很少被授予。美国扩大出口限制的举动，可能使特朗普政府针对英国与一些被特朗普政府视为构成安全风险的中国企业（包括华为和中广核）的关系，加大对英国施压。中国外交部发言人华春莹<a href="https://cn.reuters.com/article/china-mofa-us-cgn-trade-curb-0816-idCNKCS1V604L?il=0"><u>表示</u></a>，美方此举泛化国家安全概念、滥用出口管制措施，不仅对中国企业造成伤害，也对包括美国在内的相关国家企业造成影响。
+➜化学家合成出首个环状碳分子
+https://www.solidot.org/story?sid=61744	26104
+化学家合成出<a href="https://www.nature.com/articles/d41586-019-02473-z"><u>首个环状碳分子</u></a>，由 18 个原子构成。他们使用碳和氧的金字塔形分子，利用电流操纵创造出碳-18 环。他们将这种分子取名为 cyclocarbon，初步分析其属性显示它可作为半导体使用。<a href="https://science.sciencemag.org/content/early/2019/08/14/science.aay1914"><u>研究报告</u></a>发表在最新一期的《科学》期刊上。纯碳有多种不同形式，包括钻石、石墨和纳米管，单层原子厚的石墨烯。化学家早就从理论上预言，碳原子可以与两个原子结合形成环状或链状，但此类的结构在化学上过于活跃而很难合成。大阪大学的化学家  Yoshito Tobe 认为最新的碳-18 环研究将开辟新的研究领域。
+➜广告商禁止在包含特定词的新闻上展示广告
+https://www.solidot.org/story?sid=61745	28479
+华尔街日报<a href="https://news.slashdot.org/story/19/08/15/2058257/advertisers-are-blacklisting-news-stories-that-contain-forbidden-words"><u>报道</u></a>，金融服务公司富达投资集团（Fidelity Investments）希望避免在有争议的内容上展示广告，它制定了一个黑名单，如果黑名单中的单词出现在标题中，富达的广告将不会出现在上面。黑名单包含了 400 多个单词，其中前 15 个单词是 Dead、Shooting、Murder、Gun、Rape、Bomb、Died、Attack、Killed、Suicide、Trump、Crash、Crime、Explosion、Accident。黑名单涵盖是如此之广泛，以至于许多新闻网站不知道如何展示富达的广告。卫报的商务总监 Nick Hewat 认为这种做法会迫使网络出版商放弃调查新闻和严肃新闻，转向时尚生活之类的内容。
+➜印度切断互联网瘫痪克什米尔
+https://www.solidot.org/story?sid=61746	30044
+印度人民党政府本月早些时候单方面取消了其控制的克什米尔邦的自治权，切断了互联网和电话服务，导致了<a href="https://www.nytimes.com/2019/08/14/technology/india-kashmir-internet.html"><u>该地区陷入了瘫痪</u></a>。药剂师建议当地居民不要生病，因为他们是从网上订购药品，而现在药物已经所剩无几了。银行也依靠网络，所以现在现金也非常匮乏。医生说他们也无法与患者进行沟通。目前只有少数政府场所向公众提供固定电话使用，但需要排队等待。断网让克什米尔人的生活陷入了停滞。印度是世界上<a href="https://internetshutdowns.in/"><u>断网最频繁的国家</u></a>，该国已经断网 134 次，而排在第二位的巴基斯坦断网 12 次。断网已经成为印度政府对付可能的骚扰的第一反应。
+➜特朗普私下讨论购买格陵兰岛
+https://www.solidot.org/story?sid=61747	31994
+美国媒体<a href="https://news.slashdot.org/story/19/08/16/0211220/president-trump-is-reportedly-considering-buying-greenland"><u>报道</u></a>，特朗普曾私下与幕僚和顾问讨论过<a href="https://cn.reuters.com/article/usa-trump-greenland-0816-idCNKCS1V60FZ?il=0"><u>购买</u></a>格陵兰岛的事宜，以扩大美国领土。消息人士透露，一些顾问认为这是在开玩笑，但其他人则更为认真地看待。格陵兰岛被冰雪覆盖，位于北大西洋和北冰洋之间，属于丹麦的自治属地。1946 年总统杜鲁门曾出价 1 亿美元购买格陵兰岛。特朗普目前在他的高尔夫俱乐部进行工作休假，9 月初他将首次出访丹麦。目前没有迹象显示他与丹麦官员的会谈日程中有购买格陵兰岛议题的安排。
+➜思科称它在中国已经不受欢迎
+https://www.solidot.org/story?sid=61748	35302
+思科 CEO Chuck Robbins 对下一财年的收入<a href="https://www.theregister.co.uk/2019/08/15/cisco_q4_2019/"><u>发出预警</u></a>，中美贸易战以及中国对本国企业的支持使得这家网络设备巨头在中国日益不受欢迎，该公司不再被邀请参与电信设备的招标。Robbins 称，多年前他们一直向中国的大型运营商出售基础设施设备，但多年来销售收入一直在下降，下降速度比预期的更快。他们不再被邀请投标，甚至也参与都变得不可能了。
+➜用户报告微软 Surface Pro 6 和 Surface Book 2 设备处理器频率被锁定到 400 MHz
+https://www.solidot.org/story?sid=61749	36514
+今天的笔记本电脑通常有过热保护，在过热的情况下降低处理器频率。即便是过热保护，你可能从没有遭遇过频率会被锁定在 400 MHz 这个 1990 年代奔腾 2 处理器的频率。微软 Surface Pro 6 和 Surface Book 2 用户报告它们的设备处理器频率被锁定到 400 MHz，部分情况下重启后问题照旧。微软发言人<a href="https://www.zdnet.com/article/microsoft-surface-pro-6-and-surface-book-2-devices-are-throttle-locking-to-400-mhz/" target="_blank"><u>表示</u></a>他们已经知道这一问题，将通过固件更新解决。用户早在一年前就反应频率会被锁定在 400 MHz，但在最新的固件更新之后，被称为 <a href="https://www.reddit.com/r/Surface/comments/cnrnv8/surface_pro_6_cpu_speed_drops_down_to_04_ghz_when/"><u>0.4 GHz </u></a>的 bug 出现频率增加了。
+➜日本发明仿生尾巴帮助老人保持平衡
+https://www.solidot.org/story?sid=61750	39317
+在人类祖先失去尾巴数百万年之后，日本庆应义塾大学的研究人员<a href="https://www.reuters.com/article/us-japan-robotic-tail/japanese-researchers-build-robotic-tail-to-keep-elderly-upright-idUSKCN1V411X"><u>发明了</u></a>机械仿生尾巴来帮助老人保持平衡。被称为 Arque 的一米长设备模仿了猎豹等动物利用尾巴在行走和攀爬过程中保持平衡。机械尾巴可绑在腰上，当人向身体一侧倾斜时尾巴就朝着相反方向移动。这项研究仍然处于发展阶段。日本已经步入了老龄化社会，该国正寻找方法来确保老年人口的流动性和生产力。
+➜Google 警告开发者所有新 Android Apps 需要三天时间审批
+https://www.solidot.org/story?sid=61751	42641
+在 Google Play Store 开发者支持日，Google <a href="https://www.choiceofgames.com/2019/08/google-warns-developers-that-all-new-apps-require-three-days-for-approval/"><u>警告</u></a>开发者所有新 Android Apps 将需要至少三天的时间审批。Google 给出的理由是为了更好的保护用户，需要更多时间仔细审核应用。它没有向开发者提供加速审核的方法。开发者抱怨 Google 的变动导致他们不知道能确定何时能发布 App，而已经在 Google Play 发布多个 App 的资深开发者都将从零开始。
+➜蔡崇信接近收购篮网全部股份
+https://www.solidot.org/story?sid=61752	46313
+阿里巴巴联合创始人蔡崇信<a href="http://www.ftchinese.com/story/001084069"><u>接近达成一项协议</u></a>，收购布鲁克林篮网队的控股权。他还计划未来把更多精力放在篮球队业务上，而不是阿里巴巴。蔡崇信的这笔交易使篮网队的估值达到创纪录的 23.5 亿美元，创美国体育运动队价值的新高。根据《福布斯》的数据，蔡崇信的净资产为 97 亿美元。蔡崇信出生于台湾。篮网队刚刚签下了两名超级明星杜兰特 (Kevin Durant，受伤休赛一年)和欧文 (Kyrie Irving) ，跻身冲击冠军的强队行列。
+➜日本动画工作室 Khara 切换到 Blender
+https://www.solidot.org/story?sid=61753	46610
+日本动画工作室 Khara <a href="https://www.blender.org/user-stories/japanese-anime-studio-khara-moving-to-blender/" target="_blank"><u>宣布</u></a>将把开源软件 Blender 作为主要的 3D CG 开发工具，Blender 将用于它正在制作的 EVANGELION:3.0+1.0 项目。Khara 至今使用的主力开发工具是 Autodesk的 “3ds Max”，EVANGELION:3.0+1.0 也是主要用 3ds Max 开发，但工作室开始切换到 Blender，主要原因是  3ds Max 对小型工作室太贵了。3ds Max 采用订阅模式，每位用户每年收费  254,880 日元。 Khara 一度准备迁移到 Maya，但 Blender 吸引了他们的注意。Blender 是开源软件，可免费使用，与商业软件有着几乎相同的功能。最新版本的 Blender 2.8 有意填补了与 3ds Max 的差异，对于想要使用 Blender 的用户来说学习曲线不会太陡。

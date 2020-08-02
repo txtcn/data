@@ -1,0 +1,734 @@
+➜自动驾驶无人化时代，大厂如何做好车外交互设计？
+https://www.uisdc.com/interaction-design-outside-the-car	57713
+<h4><span class="auto_menu">竞品桌面研究分析 </span></h4>
+<p><strong>1. 探索范畴</strong></p>
+<p>这次的探索范畴主要是针对L3及L4级别自动驾驶车辆的车外交互场景及设计路径探索，以及针对当前量产或即将量产项目或车型，进行车外交互设计方案探索。</p>
+<p>说明：本期探索时间为2019年。</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382162" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-6.jpg" width="1069" height="583" /></span></p>
+<p>△ 探索范畴</p>
+<p><strong>2. 竞品分析</strong></p>
+<p>目前市场上主要是通过前后屏幕、投影、车辆氛围灯（车身、车轮）以及车身屏幕（包含窗、车身）等方式进行车外交互。</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382163" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-7.jpg" width="1370" height="753" /></span></p>
+<p>△ 竞品分析</p>
+<p>量产车的车外交互主要是用来表示车辆状态、解决车辆和行人之间的交互。Apple Drive.ai 通过前后左右的LED屏幕显示简易的文字和动画提醒，以达到示意乘客上下车和避让行人的目的。这种交互方式显示意图明确，可适用场景广泛。</p>
+<p>而概念车的交互方式则比较多样，目前比较有代表性的、实用性最高的是Mercedes的投影系列，车前投影将斑马线投射至地面，引导行人通过；定位区域投影表示驶入、停车位置等。流动的阵列灯表示车辆状态的切换，候车等单方向闪烁表示乘客下车方向；动态标识移动表示行人通行。</p>
+<h4><span class="auto_menu">交互设计指导原则 </span></h4>
+<h4>1. 交互原则</h4>
+<p><strong>车外交互对象</strong></p>
+<p>车外交互设计的交互对象主要分为人、车辆和环境内其他对象。</p>
+<ul>
+<li>当对象为人时又可细分为行人、车主、运营车辆的用户、地勤人员等；</li>
+<li>车辆分为人驾车辆、自动驾驶车辆；</li>
+<li>环境内其他对象包含单车、电动车、特殊车辆、基础设施等。</li>
+</ul>
+<p><strong>信息载体</strong></p>
+<p>当前信息载体类型主要有主车自身、路面车辆V2V以及路面行人V2P，效率则依次递减。</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382164" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-8.jpg" width="1370" height="753" /></span></p>
+<p>△信息载体</p>
+<p><strong>表达原则</strong></p>
+<p>车外交互的表达原则，可总结为展示信息增益、简单和聚焦，也就是说展示信息增益而不重复，呈现效果趋向简单，信息内容聚焦主车。</p>
+<p>增益（各种媒介的信息展现应相辅相成，避免同质信息的叠加）</p>
+<ul>
+<li>屏幕不是重复车灯的信息，而是增强与补充</li>
+<li>扬声器应辅助前两种媒介进行信息传达</li>
+</ul>
+<p>简单（信息呈现方式遵循简单可理解，避免展示需要时间处理的信息）</p>
+<ul>
+<li>避免过于复杂的视觉呈现效果，影响正常交通</li>
+<li>越紧急、接触时间越短的场景，呈现方式越趋于短平快</li>
+<li>简短文字、通用图形更易于理解</li>
+</ul>
+<p>聚焦（信息类型应聚焦车辆动作本身，避免其他环境信息混杂）</p>
+<ul>
+<li>聚焦车辆自身动作的提示、原因解释等</li>
+<li>避免展现道路环境等驾驶辅助信息，如限速等</li>
+</ul>
+<h4>2. 载体边界</h4>
+<p>乘用车的载体边界包含屏幕、投影、灯带等，依据现有车辆状态，可放置在如下图所示的位置。</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382165" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-9.jpg" width="1370" height="1300" /></span></p>
+<p>△ 乘用车</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382166" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-10.jpg" width="1370" height="1300" /></span></p>
+<p>△ 小巴</p>
+<h4>3. 体验地图</h4>
+<p>根据车辆从开始启动到停车入库的整个流程，梳理出详细场景下的屏幕、灯带、投影以及扬声器的交互方式（标记星星为主交互方式）。</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382167" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-11.jpg" width="1362" height="2776" /></span></p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382168" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-12.jpg" width="1362" height="2776" /></span></p>
+<p>△ 体验地图</p>
+<h4>3. 设计原则</h4>
+<p><strong>色彩选择</strong></p>
+<p>显示色彩可依据提示信息内容的紧急程度予以区分，从正向到负向之间的不同色阶也可代表若干个紧急程度。本期仅考虑正负两个维度的信息区分，后期将继续探索色阶的区分意义。</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382169" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-13.jpg" width="1370" height="475" /></span></p>
+<p>△ 色彩选择</p>
+<p><strong>屏幕布局</strong></p>
+<p>传统布局为图形和文字配合，在这方面我们可以简化信息。</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382170" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-14.jpg" width="1370" height="475" /></span></p>
+<p>△ 车前屏幕显示布局</p>
+<p><strong>灯带辅助原则</strong></p>
+<ul>
+<li>原则一：远距离弱提示</li>
+<li>原则二：辅助屏幕表达意图</li>
+<li>原则三：闪烁动效增强效果，起到警示作用</li>
+</ul>
+<p><strong>状态提取</strong></p>
+<p>根据车外场景变化，提取出前屏、后屏和灯带的不同状态如下：</p>
+<p>前屏</p>
+<ul>
+<li>默认状态-自动驾驶中</li>
+<li>驶入取车区、等人</li>
+<li>请先行</li>
+<li>障碍物/故障</li>
+<li>注意安全/禁行</li>
+</ul>
+<p>后屏</p>
+<ul>
+<li>障碍物</li>
+<li>故障</li>
+<li>缓行</li>
+</ul>
+<p>灯带</p>
+<ul>
+<li>自动驾驶开启/关闭仪式感</li>
+<li>自动驾驶中</li>
+<li>障碍物</li>
+<li>泊车中</li>
+<li>侧方距离警示</li>
+<li>过闸机表示感谢</li>
+</ul>
+<h4><span class="auto_menu">车外交互设计表达 </span></h4>
+<h4>1. 场景呈现</h4>
+<p>车外交互的设计表达的目标主要有三点：安全性、科技感以及信息传达易于理解。通过前期的状态提取、屏幕布局和色彩选择的分析，探索相关场景下的视觉应用。</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382157" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-1.gif" width="720" height="405" /></span></p>
+<p>△ 自动驾驶中</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382158" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-2.gif" width="720" height="405" /></span></p>
+<p>△ 人过马路</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382159" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-3.gif" width="720" height="405" /></span></p>
+<p>△ 车后屏转向提示</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382160" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-4.gif" width="720" height="405" /></span></p>
+<p>△ 遇见障碍物</p>
+<p>灯带的设计原则主要是远距离弱提示，辅助屏幕表达意图，闪烁动效增强效果，起到警示作用。</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382171" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-15.jpg" width="800" height="449" /></span></p>
+<p>△ 正常状态</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382172" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-16.jpg" width="1920" height="1080" /></span></p>
+<p>△ 异常状态</p>
+<p>下面来看看「乘用车」具体的场景演绎图：</p>
+<p><strong>自动驾驶中：</strong></p>
+<p>自动驾驶中，屏幕配合灯带展示自动驾驶开启的仪式感；当自动驾驶车辆正常行驶时，前方、后方屏幕展示自动驾驶中的状态，通过3D透视的效果，以及横条滚动动效展示车辆行驶状态，并通过环境风速的变化表示行驶速度。</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382173" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-17.jpg" width="1920" height="1080" /></span></p>
+<p>△ 自动驾驶中</p>
+<p><strong>行人让人：</strong></p>
+<p>识别到斑马线后，前方屏幕周边红色闪烁，前方光带红色亮起；车辆静止并让行时，屏幕切换至让行动效，光标表示识别到行人的相应位置方向。</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382174" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-18.jpg" width="1920" height="1080" /></span></p>
+<p>△ 行人让人</p>
+<p><strong>过闸机：</strong></p>
+<p>识别到闸机后，前方屏幕显示障碍物，侧方灯带红色亮起；当可以顺利通过闸机时，侧方灯带展示自动驾驶开启状态，前方地面投影即将行驶路径，表示即将顺利通过闸机。</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382175" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-19.jpg" width="1920" height="1080" /></span></p>
+<p>△ 过闸机</p>
+<p><strong>上下客：</strong></p>
+<p>前后方屏幕展示等客中，安抚周围行人；灯带颜色与行人手机端匹配，侧方投影引导用户上车。</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382176" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-20.jpg" width="1920" height="1080" /></span></p>
+<p>△ 上下客</p>
+<p>下面来看看「小巴」具体的场景演绎图：</p>
+<p><strong>自动驾驶中：</strong></p>
+<p>自动驾驶开启时，屏幕配合灯带展示自动驾驶开启的仪式感；当自动驾驶车辆正常行驶时，前方、后方屏幕展示自动驾驶中状态。</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382177" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-21.jpg" width="1920" height="1080" /></span></p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382178" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-22.jpg" width="1920" height="1080" /></span></p>
+<p>△ 自动驾驶中</p>
+<p><strong>让行：</strong></p>
+<p>遇到行人或车辆时，前后屏幕提示请通行，后方屏幕提示请勿通行，避免后方车辆因不清楚前方状况，而超车造成事故。</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382179" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-23.jpg" width="1920" height="1080" /></span></p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382180" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-24.jpg" width="1770" height="996" /></span></p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382181" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-25.jpg" width="1770" height="996" /></span></p>
+<p>△ 让行</p>
+<p><strong>异常/障碍物：</strong></p>
+<p>当车辆故障或遇到障碍物时，前后屏幕显示异常/故障提示。</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382182" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-26.jpg" width="1770" height="996" /></span></p>
+<p>△ 异常/障碍物</p>
+<p>最后也想和大家分享一下，探索车外交互的过程中产生的一些思考。当马路上越来越多的自动驾驶车辆出现时，过多的车外交互会造成信息爆炸，车辆如何第一时间使用户抓到想传递的信息？不同品牌的车呈现不同车外交互时，如何能让用户读得懂大部分车辆想表达的信息内容？未来的车外交互会是什么形态，是类似车灯的标准化表达，或是类似红绿灯的规范化示意，或是其他？</p>
+<p>我们希望在实践过程中，这些体验点能够得以提升，以便设计价值更大化。我们也会继续硬件方案探索和投影及B柱屏交互原则探索，希望与其他为无人驾驶设计的设计师们一起，提出更优秀的设计构想和创意。</p>
+<p>更多汽车交互案例：</p>
+<p>[link https://www.uisdc.com/tesla-design-details]</p>
+<p>欢迎关注作者微信公众号：「百度智能驾驶体验设计中心」</p>
+<p><span class="img-zoom"><img alt="自动驾驶无人化时代，大厂如何做好车外交互设计？" class="alignnone size-full wp-image-382183" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-qc-20200728-27.jpg" width="180" height="180" /></span></p>
+➜腾讯出品！超实用的响应式设计技巧
+https://www.uisdc.com/responsive-design-techniques	58183
+<p>响应式网页设计 (Responsive web design) 虽然早已被提出，不过因为国内开发习惯和APP设计优先，日常工作使用这种布局方式的机会不多。</p>
+<p>国外网站使用这种布局方式较多，经过调研，结合尝试后，本文梳理了响应式设计的方法流程，记录问题与思考，帮助以后类似的项目开展更快。</p>
+<h4><span class="auto_menu">什么是响应式布局</span></h4>
+<p>响应式布局常常和自适应布局搞混。其实通过下面的动图我们很容易能理解两者的区别。</p>
+<p><span class="img-zoom"><img alt="腾讯出品！超实用的响应式设计技巧" class="alignnone size-full wp-image-382060" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ui-20200728-1.gif" width="424" height="214" /></span></p>
+<p>△ 响应式和自适应的区别，来源网上资料</p>
+<ul>
+<li>响应式布局：容器大小随窗口大小而变化。</li>
+<li>自适应布局：容器大小不随窗口大小而变化，边距随窗口大小而变化。</li>
+</ul>
+<h4><span class="auto_menu">响应式布局优势</span></h4>
+<p>调研中我们发现，国外几个内容网站，YouTube、Spotify、Netflix 和Behance，都使用了「内容墙」的设计方式，以突出内容的丰富度。</p>
+<p>由于这种设计通常会保持容器之间的间距不变，这就需要容器大小变化以适应窗口大小变化了。响应式的布局思路，很好地帮助完成内容墙的设计。</p>
+<p><span class="img-zoom"><img alt="腾讯出品！超实用的响应式设计技巧" class="alignnone size-full wp-image-382066" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ui-20200728-7.jpg" width="1080" height="690" /></span></p>
+<p>△ 满屏的内容突出了内容丰富度</p>
+<h4><span class="auto_menu">响应式布局的设计要点</span></h4>
+<p>在以往的开发合作中，设计提供切图和尺寸标注给开发就行了。</p>
+<p>而响应式页面中的容器大小是动态的，我们可以提供一个表格，告诉开发在不同的页面宽度区间，对应的布局应该是怎么样的。这些区间的临界点，就是「断点」。</p>
+<p>我们以容器多，情况比较复杂的视频首页模拟一次确定断点的流程。</p>
+<p><span class="img-zoom"><img alt="腾讯出品！超实用的响应式设计技巧" class="alignnone size-full wp-image-382061" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ui-20200728-2.jpg" width="1080" height="408" /></span></p>
+<p>△ 响应式布局的设计思路</p>
+<p>首先，断点是反映页面发生突变的情况的，如边距开始发生变化、容器数量开始发生变化等。本例中，我们固定了侧边栏a、边距b、间距d。据下图公式，容易得知容器数量和容器宽度有着明确的数量关系。因此，寻找断点，需要我们先确定容器宽度(c)。</p>
+<p><span class="img-zoom"><img alt="腾讯出品！超实用的响应式设计技巧" class="alignnone size-full wp-image-382063" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ui-20200728-4.jpg" width="1080" height="498" /></span></p>
+<p>△ 容器数量和容器宽度有着明确的数量关系</p>
+<p>容器宽度和容器内容相关。本例中，我们规定正常情况下容器宽度最小300px，以保证封面图和标题文字还能被看清。当容器宽度被压到300px时，容器数量减少一个。</p>
+<p>有了容器的最小尺寸，那么我们可以输出给开发的「页面宽度-容器数量对应表」。从下表可以读出，浏览器宽度在1284-1595px之间时，侧边栏展开为288px，放3个容器，浏览器会自动把容器宽度算出来。</p>
+<p><span class="img-zoom"><img alt="腾讯出品！超实用的响应式设计技巧" class="alignnone size-full wp-image-382064" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ui-20200728-5.jpg" width="1080" height="648" /></span></p>
+<p>△ 页面宽度与容器数量关系表</p>
+<h4><span class="auto_menu">断点选择的技巧</span></h4>
+<p>从上面的案例我们知道，确定断点和容器数量、容器大小有关。那么，断点的选择其实是体现了，设计师对页面信息呈现方式的理解。</p>
+<p><strong>1. YouTube的小心机</strong></p>
+<p>调研的过程中，我们发现YouTube 选择 1143-1966px 作为4个容器的前后断点。这个页面宽度区间很大，达到了824px（远超5个容器的跨度335px）。</p>
+<p><span class="img-zoom"><img alt="腾讯出品！超实用的响应式设计技巧" class="alignnone size-full wp-image-382065" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ui-20200728-6.jpg" width="1080" height="516" /></span></p>
+<p>△ YouTube的网页断点情况</p>
+<p>我们猜想：</p>
+<ul>
+<li>YouTube认为1行4个视频是用户浏览的最好数量；</li>
+<li>他们想把这种布局覆盖主流的(约66.25%)屏幕宽度 1280-1920px。</li>
+</ul>
+<p><strong>2. 关注高分屏的实际效果</strong></p>
+<p>需要特别注意的是，横向分辨率达到3840px 的PC高分屏中，主流浏览器会按照2倍图展示内容。此外，Windows系统下有系统缩放，推荐的是1.25倍，导致3840px的屏幕宽度，浏览器认为只有1536px (3840px÷2÷1.25)。所以有时候会出现在分辨率很高的屏幕下，响应式页面展示的内容反而更少了的情况。</p>
+<h4><span class="auto_menu">写在最后</span></h4>
+<p>响应式的布局方法能很好地支持越来越流行的「内容墙」的设计。找好断点，设定好不同屏幕分辨率的布局策略，是响应式设计的关键。</p>
+<p>更多响应式设计技巧：</p>
+<p>[link https://www.uisdc.com/responsive-design-2]</p>
+<p>欢迎关注作者微信公众号：「腾讯GLDesign」</p>
+<p><span class="img-zoom"><img alt="腾讯出品！超实用的响应式设计技巧" class="alignnone size-full wp-image-382353" src="https://image.uisdc.com/wp-content/uploads/2020/07/qrtengxunglc.jpg" width="180" height="179" /></span></p>
+➜5个产品细节剖析，让你看看大厂是如何做设计的！
+https://www.uisdc.com/5-app-design-details	58906
+<p>编者注：几乎每一个新手设计师，都会被要求多下载优秀的产品把玩一番。但如果你下载后不知道从哪里开始体验，也发现不了那些优秀的设计细节。那建议每天逛一次优设的「细节猎人」，每天都有新的产品细节上线 → <a href="https://www.uisdc.com/hunters">https://www.uisdc.com/hunters</a></p>
+<p>当然，你也可以不定期来看优设的产品案例分析长文。比如今天这篇：</p>
+<h4><span class="auto_menu">阿里巴巴菜鸟裹裹中的「不打扰式」提醒</span></h4>
+<p>菜鸟裹裹APP中的通知设计，我称它为「不打扰式」通知，现在一般的产品为了促进用户活跃度都会频繁push一些消息给用户，如果用户被通知里面的内容吸引，打开APP，就为该产品贡献了一个「日活」，虽然有些消息是比较有价值的，但是大部分还都是营销类消息，例如「XXX降价促销」、「iPhone 11立减600」、「大牌包包花呗付款24期免息」&#8230;</p>
+<p>由于所有产品几乎都采用这种方法来提高业务指标，用户们逐渐开始禁止了各种APP的通知权限，所以现在对于一些电商类型的产品来说，通知打开率已经成了一个很重要的考核指标。作者也是习惯了只打开两三个APP的通知权限（微信、支付宝还有公司内部通讯APP），但是最近作者突然发现了菜鸟裹裹中的通知居然可以让用户自行设置，如下图：</p>
+<p><span class="img-zoom"><img alt="5个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-382053" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-cp-20200728-9.jpg" width="900" height="500" /></span></p>
+<p>用户可以自行设置提醒消息的类型，包含揽收、派送、代取件、签收、已发货等电脑等都可以分别设置是否允许通知，除此之外还可以设置免打扰的时间段，例如如果你不想在工作时间被这些消息打扰则可以在上图右侧的页面中设置9-21点免打扰。</p>
+<p>以上功能虽然新鲜，体验也很好，但是如果仅仅如此的话，还算不上是非常亮眼的设计，最让作者感觉长见识的是下面这张图的内容：</p>
+<p><span class="img-zoom"><img alt="5个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-382051" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-cp-20200728-7.jpg" width="900" height="500" /></span></p>
+<p>同样一条通知消息，如果用户同时安装了淘宝、支付宝、菜鸟裹裹几个产品的话，很有可能收到多条推送，或同时收到短信提醒和APP的推送通知，这对用户来说无疑是更大的干扰，所以在这个页面中，用户可以选择只开启一个APP的通知，或只接收短信通知，这样一来用户对「通知在哪里」「去哪查物流」等等问题都有了更明确的预期。</p>
+<p>案例中的这种做法虽然可能会损失一部分被通知内容吸引而来的用户，但是却通过更好的不打扰体验培养了用户习惯，一旦用户习惯了使用菜鸟裹裹查看物流信息，那接下来可能就会使用这个产品里面更多的功能，例如寄快递、买东西等等，这样能够带来的收益可能会更大。</p>
+<h4><span class="auto_menu">我在京东内部通讯软件发现了一个设计亮点</span></h4>
+<p>这个案例是我在公司内部的通讯软件里面看到的，最近入职了京东，像这样规模比较大的公司一般都会有内部使用的通讯软件，像一些申请报销打卡，或是内部沟通网盘这些功能都不能使用外部的软件，必须用自己的，前几天我就在这里面看到了一个不错的设计细节。</p>
+<p>是这样的，那天晚上我加班到晚上十点多，当时就发现公司有一个福利，如果你加班时间超过三个小时，并且时间是10点以后的话，就可以打车回家，公司会报销费用。这本来是非常简单的逻辑，计算一下加班时长、判断下班时间就可以了，但是之后的某天我却发现了一个亮点：某个周五晚上11点的时候我收到了一条提示，如下图：</p>
+<p><span class="img-zoom"><img alt="5个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-382050" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-cp-20200728-6.jpg" width="900" height="500" /></span></p>
+<p>我看到之后就感觉比较惊讶，因为我们基本上天天加班到10点多，但是这个提示还是第一次看到，回想了一下在加班时间还没到的时候，我曾经点击了用车的操作，我对这个提示的出现规则有了一个猜测：</p>
+<p>场景1：当用户满足用车条件时，不会主动对用户进行提醒</p>
+<p>场景2：当用户在未满足条件时曾经点击过用车，则在满足条件后会发送这条提醒</p>
+<p>这个规则还是比较有意思的，</p>
+<p>在场景1中，并不是所有用户都会在满足条件后马上下班，不是需要马上用车，此时如果给用户发送提醒的话对用户来说是一种打扰，从公司的角度来说应该也不会鼓励用户到点就下班，这种做法也无可厚非。</p>
+<p>在场景2中，由于用户已经产生了用车的操作，此时已经有了非常明确的目的性了，用户之后的行为是可以预测的，所以此时进行推送通知对用户来说不仅不是打扰反而是非常友好的提醒。</p>
+<h4><span class="auto_menu">解读拉勾APP中面试功能的设计目的</span></h4>
+<p>这个案例是我在拉勾招聘里面看到的一个设计细节的解读，主要是想说一下我对这个功能的理解，这是一个特别常见的功能但是昨天再次看到的时候想到了一些更深一层的东西。在这里分享给大家。</p>
+<p>场景是这样的，在拉勾的投递记录页面。下面有五个标签，分别是投递成功、被查看、待沟通、面试和不合适。这些标签的分类其实很容易理解，就是我们在找工作时投完简历之后的不同阶段，会把我们投递进度进行区分显示。但是我突然想到了一个问题，就是为什么这种招聘产品普遍都会做这种功能？</p>
+<p><span class="img-zoom"><img alt="5个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-382055" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-cp-20200728-11.jpg" width="900" height="500" /></span></p>
+<p>当企业用户，也就是招聘公司看到简历后可以在这个软件上直接发送面试邀请，而不是建议用户去使用的传统邮箱方式。</p>
+<p>第一点：在一个产品中进行简历的筛选和面试邀请，对于hr来说效率是更高的，这个也是我之前的理解。但是我昨天又想到了一些不一样的东西。就是关于这个面试阶段的区分和后续操作的存在意义。（面试者到达公司之后还需要在产品里进行签到，面试后还可以对公司进行一些评价）</p>
+<p>我认为除了是要增强hr的工作效率之外，还有一层目的让用户在面试之后的阶段能够再次打开这个产品，对于招聘类型的产品来说，如果只使用招聘功能，使用频率是特别低的，因为我们一两年或者三四年才会换一次工作，所以现在这类的产品大部分都靠做内容来提高它的用户活跃程度。</p>
+<p>在增加了这些面试相关功能之后，用户会在面试之后的阶段再次打开app。当用户再次打开app，标记已经参加的面试之后，产品就可以对用户继续进行提醒，例如引导用户写出自己的面试评价。</p>
+<p><span class="img-zoom"><img alt="5个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-382046" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-cp-20200728-2.jpg" width="900" height="500" /></span></p>
+<p>这个时候，无论用户是希望得到公司的Offer还是对面试过程不满意要去给个差评，两种情况下写评价的动力都是比较强的。当评价被写出来之后，就完善了产品的内容生态。也丰富了用户的使用场景，之前我只是投简历的时候才会用，现在我想查询一家公司的情况我也会来用。</p>
+<p>对于招聘产品来说，产品方希望在各种场景下增强用户打开行为和用户使用的频率，现在比较常见的做法是像脉脉的核心功能那样做一些职场交流社区，让大家在上面交流一些职场经验、八卦。</p>
+<p>但是除了这个场景之外，还有一个场景是我们在找工作的时候，如果对于一家公司比较有意向，那我们是希望进一步去了解这家公司的信息。例如查查薪资范围、查查是否加班等等。当我们有这种了解公司信息的需求之后，这个评价内容的使用场景就产生了。</p>
+<p>当一家公司的评价数量比较多的时候，能够为其他面试者当做参考。邀请面试之前，在企业端那边也可以看到面试者的信誉情况，例如面试者有多次爽约的行为，也可以为招聘者提供参考。</p>
+<p>新的使用场景产生之后，产品的用户数量和用户活跃程度数据也就会跟着提升，也就达到了一个产品的核心目的。</p>
+<h4><span class="auto_menu">用滴滴打完车居然不让我提交评价？为什么？？？</span></h4>
+<p>这是滴滴打车中的一个案例，当我们在滴滴中完成一段行程后，需要支付车费并且给司机进行评价，如果我们选择的是五星好评，那么我们可以不选择任何好评的原因，就可以直接提交。但是当我们的评价不是五星时，我们就必须选择一个原因，否则下面的按钮就会保持禁用状态，无法提交。</p>
+<p><span class="img-zoom"><img alt="5个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-382054" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-cp-20200728-10.jpg" width="900" height="500" /></span></p>
+<p><span class="img-zoom"><img alt="5个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-382049" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-cp-20200728-5.jpg" width="900" height="500" /></span></p>
+<p>这种规则仔细想一下还是比较有意思的，当用户给出五星好评时，已经对这位司机十分满意了，此时产品方得到这个数据之后并不需要告诉司机为什么他得到了一个好评。反之当用户给出的评价是四星或四星以下，就需要告知司机，为什么他得到了差评。</p>
+<p>除此之外，产品方收集到的数据也可以作为司机用户改善服务品质的方向，并且还可以通过大数据分析得到一些更有价值的信息。例如给差评数量少的司机的增加派单数量，以此来激励司机的服务质量。以上我们说的都是产品方在收集差评原因这项数据的具体使用价值，继续向下思考这个规则除了数据的使用价值还有另外一层意义，也就是评价数据的准确性问题。</p>
+<p>虽然绝大多数用户并不会无缘无故地给出司机差评，但是在一些极端情况下，司机和乘客也可能会产生一些纠纷，这个时候如果可以随意提交评价，就有可能影响司机的整体评分，会影响大数据分析的结果。所以提高差评的评价门槛也有利于提高评价数据整体的准确性，也能减少错误评价给司机用户带来的影响。</p>
+<p>在极少数情况下，用户还存在误触的行为，可能本来想给的是好评。但是由于点击不准确的原因选择成了差评，这个时候就可以通过提交按钮不可用这种状态，来避免用户错误提交评价的情况发生，同样起到了减少错误评价的作用。</p>
+<p>为了验证我的这些想法呢，我又找了一些需要用户评价的产品，在美团外卖中也存在类似的设计。</p>
+<p>当一份外卖订单完成时，用户提交好评可以不选择任何好评原因，也不需要输入文字就可以直接提交好评。但是当用户的评价是比较低星级的情况，那么就需要选择差评原因，并且还需要手动输入差评原因才可以提交。</p>
+<p><span class="img-zoom"><img alt="5个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-382048" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-cp-20200728-4.jpg" width="900" height="500" /></span></p>
+<p>在美团外卖中提交差评的门槛比滴滴还要更强一些，可能是因为美团外卖骑手收到差评后影响更严重吧。所以即使是相同的设计，在不同的情况下根据对用户的影响大小也需要设置不同的差评提交门槛。</p>
+<h4><span class="auto_menu">解读豆瓣APP中让用户兴奋的功能</span></h4>
+<p>当用户在豆瓣查看某部电影的影评详情时，页面中有一个「可播放全篇」的入口，用户点击后就可以看到能播放本影片的APP了，例如爱奇艺、优酷。</p>
+<p><span class="img-zoom"><img alt="5个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-382052" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-cp-20200728-8.jpg" width="1242" height="675" /></span></p>
+<p>点击下面的按钮后就可以直接跳转到对应APP中，并直接进入本电影的播放页面。</p>
+<p><span class="img-zoom"><img alt="5个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-382045" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-cp-20200728-1.jpg" width="800" height="442" /></span></p>
+<p>下面我们解读一下这个案例的亮点在哪里：</p>
+<ul>
+<li>符合豆瓣用户的使用场景，用户在豆瓣查找高评分电影时，如果找到了心仪的电影那么此时是抱有「看全篇」这个目的的，这个功能恰好满足了用户的目的。</li>
+<li>缩短了用户的行为路径、减少了操作成本，在这里用户只要点击3次就可以进入播放全篇片的页面，如果没有这个功能的话，则需要返回手机主页-寻找某视频APP-输入影评名-搜索-点击搜索结果，共5步才能完成目的。并且还有可能因为这个视频APP内没有这个电影而找不到播放渠道。</li>
+<li>可播放全片的右侧直接显示了可播放此电影的APP，用户无需点击展开就可以知道播放渠道。就可以知道自己手机中是否有其中一个APP，如果没有的话用户直接返回寻找其他电影，减少了无效操作。降低了用户的失望情绪。</li>
+<li>展开后（上面第二张图），用户可以知道在对应产品中播放本电影的条件，是VIP可免费观看？还是VIP需要付费观看？或者是无需VIP就能看？这里的好处与上面第3点是类似的，如果用户进入了某APP才发现自己没有VIP看不了这个电影，也是做了很多无效操作，会产生负面情绪。并且在播放渠道下方还显示了用户是否已经安装该APP，避免用户还要去下载。</li>
+<li>如果这部电影不能在其他APP中看全片的话，豆瓣同样做了很有意义的设计，如下图，当这部电影不能在其他APP中看全片的时候，会引导用户订阅提醒，当本影片可播放时再给用户推送通知，这样就提高了用户活跃度，也减少了用户的失望情绪。</li>
+</ul>
+<p><span class="img-zoom"><img alt="5个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-382047" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-cp-20200728-3.jpg" width="800" height="433" /></span></p>
+<p>这个功能如果按照卡诺模型进行分类的话，是属于「兴奋型需求」，也就是说当产品中没有这个功能时，用户不会产生不满意的情绪，但是当产品中有这个功能的时候，用户的满意度就会有极大的提升，是由惊喜和超出预期产生的极好的用户体验。</p>
+<p>但是要注意的是，需求的类型是会随着时间变化的，今天的兴奋型需求在几年之后可能就会变成基本需求。例如「饭店里有WIFI」在五年前可能是一个兴奋型需求，用户遇到了会十分惊喜，但是在今天几乎每一家饭店都有WIFI了，用户已经习以为常，不再会有惊喜和超预期的感受，所以「饭店里有WIFI」就变成了一个基本需求。即这个功能存在用户会认为理所当然，这个功能不存在用户的满意度会有所下降，甚至认为产品的功能不完整。</p>
+<p>更多大厂细节：</p>
+<p>[link https://www.uisdc.com/3-design-details]</p>
+<p>欢迎关注作者的微信公众号：「设计的威严」</p>
+<p><span class="img-zoom"><img alt="5个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-322674" src="https://image.uisdc.com/wp-content/uploads/2019/06/dz-qr-20190623.png" alt="微信发布新版，有3个设计细节值得关注！" /></span></p>
+➜从陌陌到字节跳动，为什么大厂都喜欢这类插画风格？
+https://www.uisdc.com/uisdc-sifangke-stylized-illustration	61920
+<p>2020年已过大半，来研究下今年流行的设计趋势有什么共同点？</p>
+<p>无论是年初爆火的新拟态还是苹果刚刚发布的Big Sur，细心的人肯定发现了，界面和图标的光影细节都丰富不少。</p>
+<p><span class="img-zoom"><img alt="从陌陌到字节跳动，为什么大厂都喜欢这类插画风格？" class="alignnone size-full wp-image-382014" src="https://image.uisdc.com/wp-content/uploads/2020/07/2uisdc-jj20200728-3.jpg" width="800" height="398" /></span><br />
+↑ 新拟态风格界面</p>
+<p><span class="img-zoom"><img alt="从陌陌到字节跳动，为什么大厂都喜欢这类插画风格？" class="alignnone size-full wp-image-382013" src="https://image.uisdc.com/wp-content/uploads/2020/07/1uisdc-jj20200728-2.jpg" width="800" height="492" /></span><br />
+↑ 苹果 Big Sur 风格图标</p>
+<p>设计风格的演变，除了大家对扁平化设计审美疲劳外，还因为视觉吸睛点越来越多，扁平风已经很难吸引用户了，这也是今年3D设计更加流行的原因。</p>
+<p>在 UI 领域转变风格的时候，插画领域也悄悄开始了一轮新的潮流 —— 风格化插画。</p>
+<h4><strong><span class="auto_menu">为什么风格化插画是下一个插画趋势？</span></strong></h4>
+<p>风格化插画介于扁平插画和写实插画之间，相比扁平插画：它的质感更加细腻，画风更加多变，既可以夸张化，也可以偏写实。相比写实插画，它的上手难度更低，<strong>即使是零基础的人，也可以在短时间内掌握这个风格的绘制方法。</strong></p>
+<p>重点是：<strong>有一门知识点全面系统，案例超多的课程带你！</strong></p>
+<p><span class="img-zoom"><img alt="从陌陌到字节跳动，为什么大厂都喜欢这类插画风格？" class="alignnone size-full wp-image-381997" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jiajia-202007288.png" width="1000" height="5459" /></span></p>
+<h4><strong><span class="auto_menu">为什么这门课闭着眼都值得买？</span></strong></h4>
+<p>这门风格化人物插画，教给你可不止一个插画趋势，课程还藏着诸多干货：</p>
+<ol>
+<li>一组富有中国气质的人物五官<strong>「通用绘制组合」</strong>：不会画人物的直接套用组合，上手极快</li>
+<li>一个花了7年时间验证的<strong>「万能配色法则」</strong>：适用于任何插画，保证配色不出错</li>
+<li>一套完整系统的<strong>「风格化绘制方法」</strong>：从零开始提前掌握潮流插画趋势</li>
+<li>两组保姆级的<strong>「风格化案例演示」</strong>：由浅入深，由易到难的实战案例手把手教学</li>
+<li>大厂插画师私藏的<strong>「商业插画绘制技巧」</strong>：在工作和商稿中如何运用插画</li>
+</ol>
+<p>课程案例：</p>
+<p><span class="img-zoom"><img alt="从陌陌到字节跳动，为什么大厂都喜欢这类插画风格？" class="alignnone size-full wp-image-382005" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jj20200728.jpg" width="800" height="2134" /></span></p>
+<p>还有干货满满的课程大纲：</p>
+<p><span class="img-zoom"><img alt="从陌陌到字节跳动，为什么大厂都喜欢这类插画风格？" class="alignnone size-full wp-image-381990" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jiajia-202007281.png" width="1000" height="1838" /></span></p>
+<h4><strong><span class="auto_menu">7年大厂经验的资深插画师出品</span></strong></h4>
+<p>2013年毕业后进入陌陌，之后历经美团、字节跳动，并于顺丰同城急送团队担任视觉设计总监。长达7年的大厂工作经历和丰富的私单实战，让葭葭葭老师不仅熟悉专业插画的绘制流程，对商稿插画的运用技巧也不在话下。</p>
+<p>而多年来对风格化人物的研究，也使她的作品特别吸睛。配色繁而不乱，质感细腻，肌理效果的运用让插画更加出彩。</p>
+<p><span class="img-zoom"><img alt="从陌陌到字节跳动，为什么大厂都喜欢这类插画风格？" class="alignnone size-full wp-image-381994" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jiajia-202007285.jpg" width="1000" height="1575" /></span></p>
+<p>老师作品：</p>
+<p><span class="img-zoom"><img alt="从陌陌到字节跳动，为什么大厂都喜欢这类插画风格？" class="alignnone size-full wp-image-381998" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jiajia-202007289.jpg" width="1000" height="677" /></span></p>
+<p><span class="img-zoom"><img alt="从陌陌到字节跳动，为什么大厂都喜欢这类插画风格？" class="alignnone size-full wp-image-382000" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jiajia-2020072811.jpg" width="1000" height="677" /></span></p>
+<p><span class="img-zoom"><img alt="从陌陌到字节跳动，为什么大厂都喜欢这类插画风格？" class="alignnone size-full wp-image-382004" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jiajia-2020072815.jpg" width="1000" height="659" /></span></p>
+<p><span class="img-zoom"><img alt="从陌陌到字节跳动，为什么大厂都喜欢这类插画风格？" class="alignnone size-full wp-image-381992" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jiajia-202007283.png" width="1000" height="592" /></span></p>
+<p><span class="img-zoom"><img alt="从陌陌到字节跳动，为什么大厂都喜欢这类插画风格？" class="alignnone size-full wp-image-381991" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jiajia-202007282.png" width="1000" height="513" /></span></p>
+<p><span class="img-zoom"><img alt="从陌陌到字节跳动，为什么大厂都喜欢这类插画风格？" class="alignnone size-full wp-image-382003" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jiajia-2020072814.png" width="1000" height="577" /></span></p>
+<p><span class="img-zoom"><img alt="从陌陌到字节跳动，为什么大厂都喜欢这类插画风格？" class="alignnone size-full wp-image-381995" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jiajia-202007286.png" width="1000" height="560" /></span></p>
+<p><span class="img-zoom"><img alt="从陌陌到字节跳动，为什么大厂都喜欢这类插画风格？" class="alignnone size-full wp-image-381999" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jiajia-2020072810.png" width="1000" height="997" /></span></p>
+<p><span class="img-zoom"><img alt="从陌陌到字节跳动，为什么大厂都喜欢这类插画风格？" class="alignnone size-full wp-image-382002" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-jiajia-2020072813.png" width="1000" height="570" /></span></p>
+<h4><strong>下面是重点！</strong></h4>
+<p style="text-align: center;">这套风格化人物插画课总计12节课，6小时的无水分干货，给你一套完整系统、即学即用的插画潮流课。</p>
+<p style="text-align: center;"><strong>课程原价<del>99</del>元，<span style="color: #ff0000;">限时7天特价69元</span>（7.29-8.04），之后立刻恢复原价！</strong><br />
+来用3杯奶茶的价钱，点亮一个全新的潮流插画风格！</p>
+<p style="text-align: center;">移动端打开微信扫描下方二维码即可购买，网页端右戳链接购买 → <a href="https://pro.uisdc.com/detail/p_5f1dc16ee4b0df48afbde542/6">https://pro.uisdc.com/detail/p_5f1dc16ee4b0df48afbde542/6</a></p>
+<p style="text-align: center;"><span class="img-zoom"><img alt="从陌陌到字节跳动，为什么大厂都喜欢这类插画风格？" class="alignnone size-full wp-image-382505" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-banner-69-20200731.jpg" width="1068" height="884" /></span></p>
+<p><script src="https://www.google-analytics.com/analytics.js" async="" type="text/javascript"></script><script src="https://www.googletagmanager.com/gtag/js?id=UA-172659890-2&amp;l=dataLayer&amp;cx=c" async="" type="text/javascript"></script><script src="blob:https://www.uisdc.com/69f09095-5022-4040-a868-492e78ad19c4"></script><script>// < ![CDATA[
+<br />                    window.dataLayer = window.dataLayer || [];<br />                    function gtag(){dataLayer.push(arguments);}<br />                    gtag('js', new Date());</p>
+<p>                    gtag('config', 'UA-172659890-2');<br />
+// ]]&gt;</p>
+</p>
+<p></script></p>
+➜大厂高手出品！超炸裂的字体设计指南（下）
+https://www.uisdc.com/font-design-guidelines-2	64297
+<hr />
+<p>上期我们主要阐述了字体的气质分类以及联想方法，这期我们进入纯操作范畴，给大家介绍六大秘法助力你的字体设计。</p>
+<p>上期回顾：</p>
+<p>[link https://www.uisdc.com/font-design-guidelines]</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381820" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-86.jpg" width="1024" height="768" /></span></p>
+<p>有了思路我们如何落地成型呢？那就是接下来要说的操作部分了。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381862" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-128.jpg" width="1024" height="768" /></span></p>
+<p>操作：把想法落地的过程。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381865" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-131.jpg" width="1024" height="768" /></span></p>
+<p>主要总结出六个方法。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381778" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-44.jpg" width="1024" height="768" /></span></p>
+<p>这几个概念都是我自己的认知，如有不对请及时指出，多多包涵。了解的可以直接跳过。</p>
+<ul>
+<li>字面：字的面积，简单说是字的宽乘以高。</li>
+<li>骨骼：字体形态的骨架。</li>
+<li>外饰：字体笔画的构成方式。</li>
+<li>中宫：字体的负形。</li>
+<li>重心：字体的重力所在的中点。</li>
+</ul>
+<p>这几个点的比例直接影响了字体的气质、风格、感觉。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381772" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-38.jpg" width="1024" height="768" /></span></p>
+<p>骨骼造字法，先定了字体的构架，再去修饰字形的外饰。优势在于在早期可以预见字体的大概风格，避免后期的修改。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381802" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-68.jpg" width="1024" height="768" /></span></p>
+<p>年货节开机视频的利益点文字：产品调性决定了必须用仿古中国风去做，行书的飘逸、隶书的端庄，尝试两者结合做一款适合运营活动页面的字面。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381791" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-57.jpg" width="1024" height="768" /></span></p>
+<p>定制骨骼，字面比例、重心、中宫、笔画走势，添加笔锋细节，构造字体特征。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381741" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-7.jpg" width="1024" height="768" /></span></p>
+<p>骨骼定下来后，打印出来，在骨骼基础上反复尝试外饰。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381815" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-81.jpg" width="1024" height="768" /></span></p>
+<p>确定外饰后在AI进行勾勒调整。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381860" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-126.jpg" width="1024" height="768" /></span></p>
+<p>填充颜色，打磨细节。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381792" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-58.jpg" width="1024" height="768" /></span></p>
+<p>完善字库。做描边以及填色的对比，可以发现字体很多正负空间的缺陷，方便调整。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381783" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-49.jpg" width="1024" height="768" /></span></p>
+<p>最终放到落地页中的效果如图。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381874" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-18.jpeg" width="1024" height="768" /></span></p>
+<p>这是在公司品牌应用中经常出现的场景——联名logo。</p>
+<p>VMIC部门下有若干分组，为了让各组在品牌上统一，我们做了统一的英文字体。在新品牌出现时候复用这套字体即可，不用反复重新设计，节约设计成本。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381875" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-11.jpeg" width="1024" height="768" /></span></p>
+<p>根据已有的vivo、VMIC字体提炼他们的共性，字面偏扁，字形端庄稳定，将这些提点融入到字体框架中。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381876" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-10.jpeg" width="1024" height="768" /></span></p>
+<p>调整笔划粗细，反复对比，寻找最合适字体的粗度。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381877" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-13.jpeg" width="1024" height="768" /></span></p>
+<p>调节好正负空间，按着英文的感觉，延伸出数字字形。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381878" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-19.jpeg" width="1024" height="768" /></span></p>
+<p>可以组合成单词，斟酌下不同组合情况下字重的变化在进行微调。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381769" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-35.jpg" width="1024" height="768" /></span></p>
+<p>人生几何：用几何体（如圆、方、角）通过相交相切组成字体，方法比较简单。如果想要字体出彩，应花更多时间在思考结构上面。一笔一划，如何让其不普通，如何让其看起来不像已经做过的，就需要反复的斟酌推敲了。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381867" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-133.jpg" width="1024" height="768" /></span></p>
+<p>香港街道纪实拍摄，结合港式街拍的氛围意境，采用复古美术字体。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381824" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-90.jpg" width="1024" height="768" /></span></p>
+<ul>
+<li>几何组成基本形态，像撇、捺这种弯曲的笔画可以先用曲线勾勒，然后再加粗描边。</li>
+<li>调整笔画粗细，让其在感官上平衡。扩展并调节位置，反复斟酌。</li>
+<li>大型出来了还是觉得过于普通，添加了两个细节进去。一笔断意连，灵感来自于街头涂鸦喷绘字，镂空的感觉增加了轻松感。二是添加衬角，会让字的复古意味更加浓重。最后面适当小角度旋转笔画以及添加磨损效果，让整体更具手工的笨拙感。</li>
+</ul>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381804" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-70.jpg" width="1024" height="768" /></span></p>
+<p>总感觉少点什么，用高饱和的颜色写了一句手写英文，打破了这篇沉闷，加上同样粗狂的系统字体，稳住下盘。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381758" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-24.jpg" width="1024" height="768" /></span></p>
+<p>人类的本质是复读机，重复是最好的老师。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381818" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-84.jpg" width="1024" height="768" /></span></p>
+<p>印章杨不过（选自33天33只杨不过）。整体字形为正方形，少一个字在最后的空格加入了序号以及日期。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381880" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-22.jpeg" width="1024" height="768" /></span></p>
+<p>截取四分之一圆来做，刚好三个笔画。一弧、一横、一竖。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381760" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-26.jpg" width="1024" height="358" /></span></p>
+<ul>
+<li>三个笔划通过放大缩小，构成字基础型。</li>
+<li>添加描边调节粗细。空间大的地方粗，填满空间，空间小的地方细，避免拥挤。</li>
+<li>扩展拼合，注意笔画之间的衔接，避免不齐整；删除多余结点，使笔画更平滑。</li>
+</ul>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="size-full wp-image-381821 alignnone" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-87.jpg" width="1024" height="768" /></span></p>
+<p>控制正负形空间，事成。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381761" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-27.jpg" width="1024" height="768" /></span></p>
+<p>胖胖杨不过（选自33天33只杨不过）。笔画丰满圆润，有前后叠加的关系。草图阶段把前后结构做清晰，执行阶段事半功倍。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381868" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-134.jpg" width="1024" height="768" /></span></p>
+<ul>
+<li>可以先用矩形替代把笔画铺出来。</li>
+<li>调整位置角度，感觉合适直接拉满圆角，这个方法是不是还算便捷？</li>
+</ul>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381736" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-2.jpg" width="1024" height="768" /></span></p>
+<p>填满底色，理出穿插关系，让字体更耐看，但是前提只有一个，辨识度。这个方法很简单，所以多花点心思在他的穿插关系，让他变得跟别人有点点不一样。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381756" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-22.jpg" width="1024" height="768" /></span></p>
+<p>方块杨不过（选自33天33只杨不过）。通过矩形组成的字体，调整矩形锚点做撇捺笔画。超简单！</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381787" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-53.jpg" width="1024" height="768" /></span></p>
+<ul>
+<li>除了带倾斜的笔画，如撇、捺、点，其他直接矩形组成。组合好后边角处再加点细节，赋予速度感。</li>
+<li>拼合填色，调节负空间。透气性很重要，孰能走马密不透风。</li>
+<li>偏移路径，再添加一些速度线细节，让字体更加有层次感同时整个型会更收拢一些没那么破碎。</li>
+</ul>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381740" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-6.jpg" width="1024" height="768" /></span></p>
+<p>加倾斜弥补速度感确实，再点缀点小细节即可。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381797" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-63.jpg" width="1024" height="768" /></span></p>
+<p>腾蛟起凤（选自滕王阁序字体设计）。先钢笔勾勒成型，接着再用几何相交相切把笔画规整。这种方法比较耗时，字体设计到某个阶段时候可以尝试，进一步了解几何相切的意义。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381819" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-85.jpg" width="1024" height="768" /></span></p>
+<p>成品效果似乎没有想象中的好。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381743" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-9.jpg" width="1024" height="768" /></span></p>
+<p>提案时保留过程展示可以让字体更规整、更专业。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381847" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-113.jpg" width="1024" height="768" /></span></p>
+<p>关于这种方法我目前也没有很好的整理归纳，希望下次能够有幸让大家看到新的分享。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381789" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-55.jpg" width="1024" height="768" /></span></p>
+<p>迷人曲线：曲线大家都很熟悉，特点笔画平滑，我把他分成两类。</p>
+<ul>
+<li>单线描摹，直接用曲线本身的线粗细调整去做。</li>
+<li>勾勒图形，用曲线勾勒闭合的图形，思考大于操作。</li>
+</ul>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381737" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-3.jpg" width="1024" height="592" /></span></p>
+<p>单线描边：一笔画杨不过（选自33天33只杨不过）。小时候画过一笔画，力争一笔完成一个物体。</p>
+<ul>
+<li>拟定草图，统一大角度，让字体节奏感一致；弯曲的地方可以用圆角代替。</li>
+<li>添加描边，调整粗细。因为是一笔画，注意笔画前后关系。</li>
+<li>扩展图形，再次添加描边。这个阶段可以会乱一些，再用钢笔理清前后关系。</li>
+</ul>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381788" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-54.jpg" width="1024" height="237" /></span></p>
+<p>最后扩展，在转折处添加阴影；倾斜，加上日期。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381790" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-56.jpg" width="1024" height="768" /></span></p>
+<p>勾勒图形：流体杨不过（选自33天33只杨不过）。像雾像云又像水，起承转合表现层层前后穿插关系。试图表现一种若中带刚，飘逸硬朗的感觉。把字形练到一块，草图阶段反复考究，目的是为了降低执行阶段的修改成本。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381805" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-71.jpg" width="1024" height="768" /></span></p>
+<p>这一步我用的速度比较快，并没有在乎曲边点直接的考究，因为这个字体就是想要放松一些，不比太多规矩。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381771" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-37.jpg" width="1024" height="768" /></span></p>
+<p>成型后偏移路径描一个外轮廓，事成。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381808" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-74.jpg" width="1024" height="768" /></span></p>
+<p>断章取义：用已用的元素进行二次创作。平时比较喜欢看到一些作品时候想能否占为己有，所以此方法应运而生。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381855" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-121.jpg" width="1024" height="768" /></span></p>
+<p>这是Kris Wu的某首歌的开头，火焰字体给人感觉新锐超酷，极具个性，想着能否占为己有。平时大家看到的东西，可以及时收录下来，积累的过程对于创作很重要，毕竟读书破万卷下笔如有神。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381763" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-29.jpg" width="1024" height="768" /></span></p>
+<p>原字体的势呈S状，两头尖中间饱满。带着这种石头我把字体描绘出来。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381809" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-75.jpg" width="1024" height="768" /></span></p>
+<p>火焰杨不过（选自33天33只杨不过）。钢笔勾勒完毕进行角度的调整，最后在边缘处加了点虚化点缀更加点题。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381864" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-130.jpg" width="1024" height="768" /></span></p>
+<p>Behance偶然看到这个字体，肥瘦相间，极具趣味。断章取义提炼几个特点：</p>
+<ul>
+<li>凹槽：因为笔画饱满，所以在锐角夹角的地方开了凹槽，目的是字体缩小时候视觉上不会拥挤，正负空间更加平和，不止于笔画黏连。</li>
+<li>笔断意连：只要笔势是贯穿的，笔画之间断掉可以添加趣味性，让作品更耐看。</li>
+<li>粗细变化：笔画粗细变化极大，转折处细，笔划末粗。</li>
+</ul>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381828" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-94.jpg" width="1024" height="394" /></span></p>
+<p>YEAR、夜同音，隐喻在夜晚的欢快。让这俩共用一体，结合上述的规律得出草图。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381839" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-105.jpg" width="1024" height="768" /></span></p>
+<p>加以英文点缀，平衡构图。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381807" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-73.jpg" width="1024" height="768" /></span></p>
+<p>放到应用中调整。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381779" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-45.jpg" width="1024" height="768" /></span></p>
+<p>跟照片风格搭配。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381845" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-111.jpg" width="1024" height="352" /></span></p>
+<p>当时看到这个作品觉得挺有意思的，想要占为己有。花体的表现手法再把他做成立体。首先看他的字形特征，圆形的点缀，弯曲的弧度。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381822" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-88.jpg" width="1024" height="768" /></span></p>
+<ul>
+<li>特征融入到杨不过，再用曲边勾勒出来平面稿。</li>
+<li>调整角度，复制一层，立体形态的雏形基本完成。</li>
+<li>链接前后图层，添加厚度，把多余的线条去掉。</li>
+</ul>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381846" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-112.jpg" width="1024" height="339" /></span></p>
+<p>添加阴影，先拉一个黑白渐变，接着AI效果—像素画—彩色半调，即可做出带渐变的网格效果。最后勾勒一些小阴影，加上磨损元素，完事。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381848" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-114.jpg" width="1024" height="768" /></span></p>
+<p>手里藏书：直接用手写，通过不同材质，笔或者纸达到不同效果。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381813" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-79.jpg" width="1024" height="768" /></span></p>
+<p>新秀丽笔，便宜好用，随处可以写，粗细变化灵活。不管你是否系统接受过书法训练，都可随机产生很多变化，令人惊喜。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381861" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-127.jpg" width="1024" height="768" /></span></p>
+<p>拍照，PS曲线、色阶处理。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381863" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-129.jpg" width="1024" height="768" /></span></p>
+<p>前期书写肯定存在问题，后台在电脑中可以衔接笔刷，点缀抹点，让作品更加完成。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381810" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-76.jpg" width="1024" height="768" /></span></p>
+<p>不同的纸、不同的笔，会呈现不一样的效果，重在尝试，挖掘未知，结果肯定会令人惊喜。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381844" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-110.jpg" width="1024" height="768" /></span></p>
+<p>平时也可以尝试不同书体的联系。传统书法、现代POP都可以玩，陷入某种框架过久也会造成负面影响，什么都接触反而融汇贯通，灵感会出其不意地出现。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381887" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-60.jpeg" width="1024" height="768" /></span></p>
+<p>移形换影：字体与形态进行置换。现实中有很多有趣的形态，比如建筑、工具、模型等，可以尝试把形态跟字体结合，产生有趣的设计。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381786" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-52.jpg" width="1024" height="287" /></span></p>
+<p>看了一副插图，作者喜欢把动物、人物画成带有果冻感的方块。我把这个形态借助过来，做成了方块杨不过。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381773" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-39.jpg" width="1024" height="437" /></span></p>
+<p>灵感来自一个狂风中摇曳的可爱雪人。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381829" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-95.jpg" width="1024" height="768" /></span></p>
+<p>架子鼓、练武木桩，他们的穿插结构挺有趣的。把他们置换成字体应该有出其不意的效果。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381796" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-62.jpg" width="1024" height="768" /></span></p>
+<p>不要把字体做得过平，部分结构进行了中心旋转，看起来错落有致却又不影响整体识别性，也会让观者觉得你下了功夫。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381770" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zr-20200727-36.jpg" width="1024" height="768" /></span></p>
+<p>之前玩了段时间C4D，想着把三维的思路带到字体设计里面。一个正方体，可视面三个面，杨不过三个字分别分散于三个面。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381888" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-66.jpeg" width="1024" height="768" /></span></p>
+<p>执行阶段挺乱的，也没有C4D直观，所以理结构的时候在识别性以及穿插丰富度中反复寻找平衡。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381889" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-67.jpeg" width="1024" height="768" /></span></p>
+<p>描边效果不明显，反白填色，结构明了。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381890" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-68.jpeg" width="1024" height="768" /></span></p>
+<p>想法、方法，都几乎说完了，这份分享确实拖了很久，写到这才发现自己有很多不足，脑子里确实有些内容想说，但是不知道如何梳理，暂且以目前的形式呈现给大家，希望大家能接纳。</p>
+<p>总结，字体大感觉可分为特征、节奏、细节三大要素。</p>
+<ul>
+<li>特征：通过不同细节增加其识别性，如衬线的位置、弧度的大小、角度的对比、以及基本框架的构造。</li>
+<li>节奏：像乐曲一样，不同节奏对比给人不同的感受。字体笔划间的疏密、前后的联系、正负空间的大小、字形大小的对比。</li>
+<li>细节：画龙点睛，临门一脚。可以通过不同的质感、转角的形式、笔刷的效果添加细节，完成最后的点缀。</li>
+</ul>
+<p>当然，所有方法都不是被固定的，都是我一己之见，初衷只是想让不知道的朋友少走弯路。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381891" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-69.jpeg" width="1024" height="768" /></span></p>
+<p>单凭着项目中的实践，对字体设计的提升是远远不够的。常言道：决定上限是下班后的2小时。所以业余的不断的积累才能让自己在项目中更高效地去解决设计问题。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381892" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-70.jpeg" width="1024" height="768" /></span></p>
+<p>积累分两种。主动积累是积极发挥主观能动性，去积极产生一些自己喜欢做的事情。这种情况下，大家激情比较膨胀，做的事自己也很喜欢。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381893" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-71.jpeg" width="1024" height="768" /></span></p>
+<p>每个人都有自己爱好，我现在终于愿意承认，小学那句兴趣是最好的老师。以我个人为例，去年开始涉足摄影，每组片子开拍前，我总给自己设定计划：目的、效果、字体、内容。相当于做多方面的综合练习，把他做成一个主题作品，有字体、有排版、有摄影、有搭配，而不单单是一张快门的产物。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381894" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-72.jpeg" width="1024" height="768" /></span></p>
+<p>这是我第一次拍女生。开拍前：日系、海边、纯净、轻松，这是我给自己的目的。所以选定了地点，服装搭配以及符合气质的女生。拍摄完成后，女生挑了片子发我，命名是一串日文，缘由是女生十分热爱日本文化也去过日本留学，用的日文系统，哈哈哈。所以觉得有点意思，就用「未命名」来定义了这次拍摄的主题。字体采用了偏日系的手写体，使得整个意境更轻松一些。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381895" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-73.jpeg" width="1024" height="768" /></span></p>
+<p>这是第一次人像。想要是效果是：酷、黑暗、金属、厚重、水泥。选定了废旧工厂还有符合气质的模特，上身衣服黑暗机能风，整体色调压暗。拍摄完成，因为没有酬劳，只能请模特吃饭了，算是花了重金打赏，所以起名重金赏。字体的风格也是横平竖直，带有破损的质感，跟整个画面相符合，结合排版，也算是较完整的一张海报作品了。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381896" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-74.jpeg" width="1024" height="768" /></span></p>
+<p>这次目的是：夜景、长曝光。扛着脚架在香港奔波了一天。YEAR跟夜在念法是一致的，加上有夜夜夜夜这首歌，所以取名yeah夜。香港是中西文化融合的一个地方，所以中英结合，把英文的表现放到了中文里面。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381898" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-76.jpeg" width="1024" height="768" /></span></p>
+<p>那会很喜欢王勃的《滕王阁序》，年纪轻轻就有满身能量，希望自己也是那种年少有为的人，其中不少片段广为流传。给自己的设想是整个通篇下来用美术字去表现，但每一副字体尽量做到表现形式的不一致。所以最终根据诗句意境以及字面意思，对每个断句做了诠释，感觉还蛮有意思的。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381897" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-75.jpeg" width="1024" height="768" /></span></p>
+<p>接下来是被动积累。这是一个痛苦的过程，因为不是每个人都有很强的自律性，就算自律性再强也有松动的时候，所以这就是被动的意义所在。为此，我个人组织了33天这个活动。目前已经举办到第三季了，我个人包括参加的小伙伴们都有不同级别的收获感悟。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381899" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rs-20200727-77.jpeg" width="1024" height="768" /></span></p>
+<p>至此，字如其人的所有干货都输出完毕，衷心希望能给大家带来收获~</p>
+<p>欢迎关注作者微信公众号：「VMIC UED」</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！超炸裂的字体设计指南（下）" class="alignnone size-full wp-image-381269" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-ew-20200723-1.jpg" alt="用实战案例，帮你掌握设计师常用的设计模型（一）" width="180" height="182" /></span></p>
+➜10年经验的资深设计师，总结了这份 UI 配色终极奥义
+https://www.uisdc.com/ui-color-matching-skills	67911
+<p>配色，设计师的世纪难题。从平面到屏幕，CMYK 到 RGB，墨点到像素，色彩越来越丰富，形式越来越复杂。UI 的发展从拟物的繁琐细节中挣脱出来，却在色彩的展现中放飞了自我。</p>
+<p>零售业有个有趣的研究成果 —— 「七秒钟定律」：人们在挑选商品和服务时 ，只需要 7 秒钟就可以确定是否感兴趣，而在这短暂的 7 秒钟内，色彩的作用占到了 67%。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382076" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-8.jpg" width="1080" height="670" /></span></p>
+<p>要在小小的手机屏幕中加入这么多颜色，并保持其中的联系和逻辑，着实不易。如果你还对配色一无所知，完全不知道配色应该怎么入手，那么你需要了解一下，我几年经验总结的配色思路。</p>
+<h4><span class="auto_menu">拾色器中的黄金三分法</span></h4>
+<p>无论我们用 PS、AI，还是 Sketch、XD、Figma，和色彩打交道最多的地方就是拾色器窗口，我们来看看这些案例：</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382102" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-34.jpg" width="726" height="800" /></span></p>
+<p>虽然是不同的应用，但是这个拾色器的用法大同小异，但是，很多新人并没有搞懂拾色器的正确应用逻辑。</p>
+<p>很多人知道，UI 的色彩使用 RGB 模式，但是拾色器主要的选色原理遵循的是 HSB 模式的逻辑，也就是色相（H）、饱和度（S）、明度（B）。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382071" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-3.jpg" width="1080" height="599" /></span></p>
+<p>HSB 是色彩科学中对所有颜色属性的理论划分，是种概念上的定义，可以用来解释任何色彩，也就是说可以和 RGB 和 CMYK 相互转化，且 HSB 的选色逻辑更清晰、简洁、干练。</p>
+<p>因为一个正确的选色过程，是先确定出色相，然后再在这个色相维度下选出明度和饱和度，所以我们首先要关注色相选择条。</p>
+<p>细心的同学应该已经发现了，它们的首尾都是红色，那是因为色相的序列是一个首尾相接的环形模式，所以它实际上就是色环的柱状展示图，应用起来和色环没有实际区别。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382069" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-1.jpg" width="1080" height="777" /></span></p>
+<p>接下来就要说到重点，饱和度和明度选择区，我自己使用的习惯，是将这个选择区通过黄金三分法的方式切割成等比的 9 个区域，然后明确它们在 UI 中的对应情绪和应用场景。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382070" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-2.jpg" width="1080" height="771" /></span></p>
+<p>在过去的大量分析中，互联网产品的主色和重要辅助色都会往右上角聚集，一些次要、不可点的色彩聚集在中上方，而文字背景色则聚集在左侧，无人区则是我们重点避开的对象。</p>
+<p>下面我们分析几个案例，看看它们在这个选择区中的色彩分布情况：</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382072" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-4.jpg" width="886" height="800" /></span></p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382074" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-6.jpg" width="886" height="800" /></span></p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382077" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-9.jpg" width="886" height="800" /></span></p>
+<p>大家也可以自己拿一些主流的应用做截图，然后把它们的 UI 元素色彩排列到拾色面板中，就会得到基本一致的结果。牢记这9个区域的场景划分，可以帮助我们非常高效、安全地完成 UI 配色。</p>
+<h4><span class="auto_menu">UI配色中的色彩选择</span></h4>
+<p>在众多的 UI 设计规范中，色彩部分的介绍，都必然包含三种类型，分别是：</p>
+<ul>
+<li>主色：应用的核心色彩，品牌色</li>
+<li>辅色：丰富页面视觉和传达效果的次要颜色</li>
+<li>中性：没有色相的文字、背景用色</li>
+</ul>
+<p><strong>1. 主色的选择</strong></p>
+<p>主色是一个应用的最核心的色彩，品牌的象征色，比如想到饿了么的蓝色、微信的绿色、京东的红色、淘宝的橙色。</p>
+<p>确定主色，并没有大家想象的那么复杂，它的要点在于——你想让用户感受到哪种情绪，然后通过情绪关联一个大致的色彩范围，再进行微调。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382073" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-5.jpg" width="1080" height="468" /></span></p>
+<p>在今天的互联网产品中，主色的应用选择范围在拾色器区域的右上角，前面已经有解释了。这和平面设计中的用色有非常大的不同。</p>
+<p>移动端产品要在一个方寸大的空间中争夺用户的注意力，引起用户的兴趣，那么低饱和清淡的色调是无法实现这个目标的，所以今天主色饱和度越来越极致，比如我们之前整理的一篇总结：</p>
+<p>为什么支付宝要换 Logo 颜色？分析下目前 Logo 的主色趋势</p>
+<p>再加上屏幕的 RGB 显示特性，高对比度，高动态范围的特质能给用户提供更好的观感。所以选择主色最安全的做法，就是在确定色相类型后，在右上方区域选出合适的色值。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382075" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-7.jpg" width="832" height="600" /></span></p>
+<p><strong>2. 辅助色的选择</strong></p>
+<p>辅助色是丰富应用中的次要色彩，它会包含一到若干个和主色不同的色彩，除了品牌传达外，具有更强的实用性。</p>
+<p>前面我们提到过色环，这里就要派上用场了。我们知道色环是个色彩序列首尾相连的环形模型，它蕴含一个最朴素的原则，即两个颜色在这个环形中角度越大，那么视觉差异性越大，对比越强，比如下图的展示：</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382078" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-10.jpg" width="599" height="800" /></span></p>
+<p>这些配色的模式是不能闭着眼随便挑的，它们仅仅作为一个色彩对比度的判断标准。而真正辅助色的选择，是根据实际场景的功能决定的。</p>
+<p>比如通知、提醒、取消用大红色，确认、同意用绿色或者蓝色，收藏、打分、评价用橙黄色。都是已经在用户心智中建立了标准的用色类型，跟着常规方法来做，是没有其它思路的情况下最简单、最安全的辅助色选择方式。</p>
+<p>没有标准元素用色的情况下，再考虑应用色环的 「角度原则」，越需要被突出的颜色，可以在色环中离主色越远，越不需要被突出的则越近。</p>
+<p>比如下方携程的案例，主色在蓝色的情况下，支付、保险金标签这些需要被重点突出的色彩，使用了主色的互补色， 让我们一眼就能看见并产生强烈的操作欲望。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382082" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-14.jpg" width="356" height="800" /></span></p>
+<p><strong>3. 中性色的选择</strong></p>
+<p>中性色，是页面中文字、背景用到的颜色，它们承担起最基本的层次表现、便于阅读的重任。多数新手觉得中性色无关紧要，实际情况恰恰相反。</p>
+<p>主色辅助色决定了界面视觉是否出彩，而中性色的应用直接决定了页面能不能正常使用。如果看过比较多的原型案例，就应该明白，即使只有黑白灰的状态下，我们理解这些页面和进行使用也不会有丝毫的障碍。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382085" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-17.jpg" width="1080" height="599" /></span></p>
+<p>中性色的配置，就是制定一个由深到浅的灰度阶梯，应用在对应权重的元素上，色彩轻重的主要判断依据是 HSB 中的 B（明度） 值。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382080" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-12.jpg" width="1080" height="232" /></span></p>
+<p>中性色虽然指的是无个性，但并不是只能用纯灰色，常见的一种做法，就是为中性色添加适量的蓝色饱和度，提升观看体验（满足RGB的某种特性）。</p>
+<p>这种做法，颜色越浅的时候饱和度应用色值就越低，将这个规律在拾色器中进行表现，那么我们就可以得到一个 L 型曲线，我称它为 「中性曲线」。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382079" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-11.jpg" width="733" height="600" /></span></p>
+<p>掌握对于主色、辅助色、中性色的选择方法，那么对于UI配色的奥义来说，你已经掌握了一半，接下来就要了解更具体的实践思路了。</p>
+<h4><span class="auto_menu">配色方式的四象限</span></h4>
+<p>配色并不是只有色彩的色值本身，大家一直在研究各种色彩心理学和理论，却很少关心它们如何应用，如何配置。</p>
+<p>所以，我根据主色和辅助色应用总结了一个配色的四象限表格，再分别看看它们对应的案例：</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382086" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-18.jpg" width="1080" height="337" /></span></p>
+<p><strong>1. 主色占比大，色彩丰富度高</strong></p>
+<p>主色会作为顶部标题栏或其它重要模块中的背景色，进行大面积应用，加深用户对品牌的认知和辨识度。而产品中又包含了大量功能和服务，需要用丰富的色彩来进行暗示，吸引用户关注。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382081" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-13.jpg" width="724" height="800" /></span></p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382084" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-16.jpg" width="724" height="800" /></span></p>
+<p><strong>2. 主色占比大，色彩丰富度低</strong></p>
+<p>这类配色中，主色的应用占比也大，出现频率高，鲜有其它颜色出现。比较适用于图片内容丰富的题材中，或者是相对正式、品牌感强的应用。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382083" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-15.jpg" width="724" height="800" /></span></p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382087" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-19.jpg" width="724" height="800" /></span></p>
+<p><strong>3. 主色占比小，色彩丰富度高</strong></p>
+<p>这是多数主流应用的趋势，降低主色占比，留出更多的空间给内容模块的展示上，突出自身带有的服务和功能。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382088" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-20.jpg" width="724" height="800" /></span></p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382090" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-22.jpg" width="724" height="800" /></span></p>
+<p><strong>4. 主色占比小，色彩丰富度低</strong></p>
+<p>通常，会应用这种方式是因为产品的服务是相对单一，但也需要用户投入注意力的应用，设计师就会尽力避免给予用户过多的干扰。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382089" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-21.jpg" width="724" height="800" /></span></p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382091" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-23.jpg" width="724" height="800" /></span></p>
+<p>每次在进行配色的时候，我们都需要对自己要应用哪种配色应用方式做出规划，然后再动手执行。有了这个目标，后面在整个项目的设计中的配色步骤就是水到渠成的事情了。</p>
+<h4><span class="auto_menu">配色流程演示</span></h4>
+<p>在实践前，我们要简单讲讲一个应用或者界面的标准配色的流程了，流程顺序如下：</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382092" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-24.jpg" width="1080" height="168" /></span></p>
+<p>具体应该怎么使用这套流程，我们用一个图虫APP改版的案例来做演示，首先从四象限中的第一个主色占比高、色彩丰富度高的类型做起。</p>
+<p><strong>1. 配色流程演示</strong></p>
+<p>原型是 UI 设计的基本艺能了，在开始具体设计、配色前，搭建页面的框架原型是一个必备的条件，下面，是我们已经准备好的原型案例。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382094" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-26.jpg" width="794" height="800" /></span></p>
+<p>然后，我们确定以橙色作为应用主色，并在拾色器中进行确认。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382093" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-25.jpg" width="239" height="367" /></span></p>
+<p>有了主色，就可以对页面进行色彩填充和图片填充了。既然我们主色是占比大的，那么首先可以用到的就是顶部标题栏的背景色了，以及底部 Tabbar 中的选中色，大按钮色等。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382095" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-27.jpg" width="794" height="800" /></span></p>
+<p>接着，我们开始整理中性色的使用，选择新的颜色来填充文字和背景，清晰的表现模块层级，文字信息的权重。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382096" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-28.jpg" width="1080" height="572" /></span></p>
+<p>最后，就是添加辅助色和其它色彩的元素了，这个步骤建议都是放在最后一步操作。因为色彩越丰富，越难控制，容易让整个画面显得杂乱无序，所以先完成基础搭建，可以更好的帮助我们判断彩色的使用是否合理。</p>
+<p>下面，我们使用彩色的金刚区图标，然后将用户关注、认证用户、标签等元素使用其它色彩，来丰富页面的色彩内容。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382097" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-29.jpg" width="794" height="800" /></span></p>
+<p><strong>2. 其他配色类型应用</strong></p>
+<p>根据第一个方案，我们可以再用这个原型来实现其余的三个方案的配色。</p>
+<p>比如下面的主色占比大，但是色彩丰富度低的。因为已经不太适用其它辅助色，所以主色填充上我们不再填充顶部导航栏的背景，而是将更多元素应用主色，减少辅助色数量。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382098" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-30.jpg" width="794" height="800" /></span></p>
+<p>然后是主色占比小，色彩丰富度高的方案，进一步降低主色应用的比例，然后在金刚区、标签等处使用较为丰富的配色。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382099" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-31.jpg" width="794" height="800" /></span></p>
+<p>最后，就是主色占比小，色彩丰富性也低的方案，那么使用中性色的元素就开始增多，只保留最核心的一些元素使用主色，和极少的辅助色。</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="alignnone size-full wp-image-382100" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ll-20200728-32.jpg" width="794" height="800" /></span></p>
+<p>根据四种不同的配色方案，我们就可以得到四种不同的配色结果和风格，在每次设计开始实施前，我们都可以根据这种做法来做尝试，并选出自己满意的方案。</p>
+<p>要再次强调，UI 配色是极其强调形式的应用科学，最后做的往往会和一开始想的效果有极大出入，所以需要我们有几个备选方案，可以随时进行调整，并选出合理的那个。</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>以上是我们关于配色有关知识点的分享，希望可以帮助大家提升对 UI 配色的认识。</p>
+<p>更多配色方法：</p>
+<p>[link https://www.uisdc.com/ui-color-matching-method-2]</p>
+<p>欢迎关注作者的微信公众号：「超人的电话亭」</p>
+<p><span class="img-zoom"><img alt="10年经验的资深设计师，总结了这份 UI 配色终极奥义" class="size-full wp-image-278484 alignnone" src="https://image.uisdc.com/wp-content/uploads/2018/07/Supermancallqr.jpg" alt="用一个实战案例，帮你完全掌握 HTML 和 CSS 的实际应用" /></span></p>
+➜是他将现代设计的火种带回了中国：余秉楠
+https://www.uisdc.com/yu-bing-nan	67991
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382118" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-8.gif" width="440" height="598" /></span></p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382119" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-9.jpeg" width="1080" height="571" /></span></p>
+<p>如果提起中国的初代设计师，大家一般都会想到石汉瑞、靳埭强或者是陈幼坚等香港设计大师，今天要给大家介绍的这一位，咖位完全不输前面提到的几位设计师。他就是余秉楠，余秉楠是首位进入AGI（1992年）的华人设计师，没错，比靳埭强还要早上几年。而且他在书籍设计与字体设计都有非凡的成就，将网格系统与西文设计带到了中国。接着我们就来了解一下这位设计大师吧。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382152" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-42.jpeg" width="692" height="800" /></span></p>
+<p>这里只是这位大佬的一部分奖项而已 ┓( ´∀` )┏</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382121" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-11.jpeg" width="861" height="600" /></span></p>
+<p>△ 1989 年谷腾堡奖颁奖仪式上，莱比锡市长 Seidel 为余秉楠颁发证书。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382124" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-14.jpeg" width="800" height="162" /></span></p>
+<p>余秉楠1933年出生于上海，1956年毕业于鲁迅美术学院，然后经过中国文化部的考核，余秉楠被选派到民主德国学习。余秉楠是新中国第一代选派的留学生，他们肩上承担着学成归来，报效祖国的重大责任。现在很多人调侃自己是全村人的希望，而余秉楠这些指派出国的留学生在当时的中国人看来，确确实实是中国崛起的希望。幸好，余秉楠也没有辜负各位「乡村父老」的期望，学成归国之后，创作了许多优秀的作品，出版了多本设计书籍，也成为清华大学、中央美术学院等多所高校的客座教授，影响了一代又一代的设计人。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382122" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-12.jpeg" width="800" height="162" /></span></p>
+<p>在欣赏余秉楠的设计作品之前，我们先来了解一下这位大师是怎么学习字体的。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382123" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-13.jpeg" width="500" height="500" /></span></p>
+<p>对于当时的书籍设计来说，最重要的基本功是字体设计，所以余秉楠刚到德国莱比锡学习书籍设计的时候，老师便让他直接开始写字，不能参照临摹。当时余秉楠感觉有些无处下手，但是还是硬着头皮看德国的同学怎么写，自己便跟着写。这样经过了几周，余秉楠基本掌握了西文的字体结构之后，他才被允许临摹。</p>
+<p>临摹也并不是对着画，而是要用笔直接写出来，用圆头笔写出笔画粗细一致的无衬线体，用扁头笔写出横细竖粗的衬线体。再往后，就是根据字体的发展历史，分阶段进行临摹，从最早的字体，到文艺复兴时期的字体，再到现在的字体。通过这样的方式，余秉楠不仅掌握了西文的字形与结构，也熟悉了不同历史时期的字体风格、时代背景，相当于又了解一遍艺术史。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382120" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-10.jpeg" width="500" height="800" /></span></p>
+<p>接着我们来了解一套余秉楠的成名之作，也是对中国十分有历史意义的一套字体——友谊体。在临摹了一年字体之后，余秉楠终于接到老师给的第一个创作任务——一副适合用于多种排版、在中国使用的字体。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382125" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-15.jpeg" width="640" height="640" /></span></p>
+<p>最开始挑选工具，余秉楠认为钢笔太硬，写的字会缺少变化，而鹅毛笔虽然柔软，但是写不了大的字，试了多种工具之后，都认为不太合适，最后余秉楠选用了竹笔。竹笔是什么笔相信大家比较少听说吧？余秉楠用的竹笔其实是他自己制作的笔，他将从中国带过去的毛笔上的毛去掉，笔杆削成钢笔尖的形状。因为竹笔的弹性比较硬，但是又比钢笔柔然一些，写起来书写感比较强烈，用力轻重不同，笔画粗细都不一样。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382127" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-17.jpeg" width="886" height="600" /></span></p>
+<p>当然这套字体也并非凭空创造的，友谊体的大写字母参考了罗马大写体，而小写字母参考的是法国卡洛琳王朝的卡洛琳小写体。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382126" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-16.jpeg" width="763" height="800" /></span></p>
+<p>创作完成后，余秉楠的导师拿着这幅字体给别的字体专家看，这些德国的专家们看完之后赞叹不已的同时得出了一致的结论：这肯定是中国人的设计，因为从设计中看出了毛笔书写的痕迹。可是明明是用竹笔写出来的字，怎么会有毛笔的痕迹呢？原来是余秉楠为了加强字体的阅读效果，会在没有衬线的圆弧拐弯的地方稍微加重，因此在德国人看来，这个地方就像是一个顿笔，书法字中的顿笔也是这么写出来的。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382128" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-18.jpeg" width="1080" height="538" /></span></p>
+<p>余秉楠回忆到，实际上自己并没有刻意地去融入中国书法，单纯是根据视觉效果加粗了某个笔画而已。可是为什么会做出具有中国味的字体呢？余秉楠后来想明白了，他是在中国长大的，中国书法以及中国文化已经悄无声息地刻在了他骨子里，所以在创作的时候，中国味就自然的流露出来了。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382129" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-19.jpeg" width="785" height="600" /></span></p>
+<p>关于友谊体的故事还没结束，在余秉楠设计完这套字体后的一天，余秉楠被东德总理的秘书叫去单独谈话了，在谈话中他才知道，原来他设计的这套字体是周恩来总理的嘱托，周恩来总理委托德国为中国培养一位能设计拉丁字母印刷字体的设计师，而这个设计师便是余秉楠了(余秉楠这时候才知道，原来他早就是那个被选中的孩子了）。后来这套字体作为中国建国十周年的国礼赠送给了中国文化部。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382130" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-20.jpeg" width="845" height="600" /></span></p>
+<p>余秉楠的这套友谊体当然也没有辜负国家的期许，作为中国人设计的第一套正文拉丁字母，友谊体在历年内获得了谷滕堡终生成就奖（首位亚洲获奖者）、「当代最佳印刷字体」奖、德国文化部长奖、东京艺术指导俱乐部（TDC）奖等多个奖项。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382131" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-21.jpeg" width="800" height="2551" /></span></p>
+<p>△ 宋一体、黑一体、宋二体、黑二体</p>
+<p>1962年，余秉楠以优异的成绩从莱比锡毕业，谢绝了导师的挽留后便回国了。回国之后，余秉楠加入了上海印刷技术研究所，参与了为《辞海》设计的「宋一」、「黑一」和为《毛选》设计的「宋二」、「黑二」。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382134" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-24.jpeg" width="896" height="600" /></span></p>
+<p>△ 辞海细体</p>
+<p>除此之外，余秉楠还被特别委托了设计一套与辞海「宋一」配套的拉丁文字体——「辞海细体」。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382132" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-22.jpeg" width="800" height="177" /></span></p>
+<p>△ 宋一 与 辞海细体</p>
+<p>由于「宋一」体非常的细，机械感比较强，毛笔书写痕迹比较少。所以余秉楠选用了钢笔写了一套非常细的衬线体，笔画没有强烈的粗细变化，当时国内外都没有出现过这么细的字体。这一套字体也是新中国生产的第一套拉丁字母印刷活字。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382133" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-23.jpeg" width="800" height="140" /></span></p>
+<p>余秉楠在清华教学生字体设计的时候，提出了字体设计的三个创新方法：一是传统精粹与时代精神的巧妙结合，用传统的东西来参考，然后改造它；第二个是书写工具的多样化——用不同的笔、用剪刀、电子屏幕等等；第三个是与文字相关的意境的联想与拓展。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382135" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-25.jpeg" width="446" height="800" /></span></p>
+<p>而圆宋体则正能体现余秉楠对字体创新的理解。余秉楠在创作圆宋体的时候，认为当时字体设计师创新的宋体改动并不够大，没办法跳脱出原来宋体的框框，特别是三角形的装饰角，看着很机械。于是他便想到用圆头的马克笔来写宋体，这样装饰角就不会是三角形而是圆形的了，而且圆头马克笔写的宋体保留了传统宋体的骨架，但是却显得更加的简练。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382137" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-27.jpeg" width="932" height="600" /></span></p>
+<p>我们刚刚介绍的三款字体，余秉楠都已经与方正字库合作进行优化并且数字化了。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382136" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-26.jpeg" width="800" height="162" /></span></p>
+<p>可以说余秉楠改变了中国现代的书籍设计，在1950年代，当时国内对书籍设计的意识是极度缺乏的，当时的「书籍设计者」普遍认为画一个封面就是书籍设计，一般的书籍封面都是有一副插画加书名文字组成的，对于护封、书脊、纸张、装订、排版、字体等都几乎没有涉及。而余秉楠在书籍城莱比锡所学到的书籍设计知识对于当时的中国来说，就像是一株生命力旺盛的野草，掉到了中国这片荒芜却肥沃的土地上，迅速地蔓延开来了。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382138" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-28.jpeg" width="633" height="800" /></span></p>
+<p>△ 《网格构成》</p>
+<p>我们现在无论做什么设计，可能都会不管三七二十一，先画一个网格，而这个良好习惯就是余秉楠带回中国的，早在1986年，余秉楠就翻译出版了西方的美术学院教材《网格构成》，发表了《现代网格设计的科学性艺术性》、《版面设计的形式法则》等多篇论文，为国内提供系统的网格理论知识。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382139" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-29.jpeg" width="873" height="600" /></span></p>
+<p>△ 《出土文物三百品》</p>
+<p>我们来看看余秉楠是如何使用网格系统的，我们用《出土文物三百品》这本书作为例子。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382140" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-30.jpeg" width="571" height="800" /></span></p>
+<p>《出土文物三百品》这本书将整个版面划分为了3.5栏，也就是三个大栏和一个小栏。书的天头上有一条明线，线的上下标注着文物的名称、时代和所属类别，相当于现在的页眉。这条明线下方40毫米处存在着一条暗线，这条暗线才是版心的位置所在。虽然说整本书是在网格的基础上设计的，但并不意味着设计就是呆板的。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382115" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-3.gif" width="540" height="608" /></span></p>
+<p>先说这书分的3.5栏，他们并没有固定的位置，那一个小栏可以根据实际的需求插在版面中的任意一个位置，让整本书排版更加灵活。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382116" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-5.gif" width="379" height="270" /></span></p>
+<p>追求对比。如果对于刚接触网格系统，不太懂变通的设计师，在建立了3.5栏的网格之后，可能就会按照一种模式编排完一整本书，例如两栏放图片、一栏放正文、还有一个小栏放注释文字。而余秉楠在这本书的编排里则抛弃了这种固化的模式，在内页的许多地方都设置了对比。例如图片上的大小对比，形状对比等等。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382141" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-31.jpeg" width="800" height="1667" /></span></p>
+<p>图片的拆分解读。在这本书中，余秉楠多次将一张图片截取某个细节，然后放大处理。这样是为了形成具有变化的重复，也形成了整体与细节的对比，加强了表现力，让读者加深对图片的印象。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382142" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-32.jpeg" width="873" height="600" /></span></p>
+<p>根据文物的形态进行版面构图。例如这本书《青铜器篇》中的《十五连盏灯》，由于这件文物的细节比较多，如果将细节放大处理的话会显得比较繁琐，所以余秉楠是模拟这件文物的对称结构，将整体图摆放在对页的中间，而细节部分则对称的排布在两侧。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382153" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-43.jpg" width="800" height="1679" /></span></p>
+<p>这本书最后设置了图录页。余秉楠对图录页的设置是模仿了电影结尾的回顾镜头，将文字排列成竖条状放于页面中间，而两侧留白则偶尔出现一两张回顾的图片。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382143" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-33.jpeg" width="616" height="800" /></span></p>
+<p>《我们与艺术》这本书出版于1962年，并且获得了当年莱比锡的最美的书奖。这本书设计的主要概念是横纵对比。护封上，横向代表了艺术的种类，两幅图片同时代表了戏剧、美术和建筑，纵向代表了历史，书脊上自上而下的画面代表了艺术的发展史。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382144" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-34.jpeg" width="635" height="800" /></span></p>
+<p>在护封里的布面封面同样也有横纵向的对比。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382145" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-35.jpeg" width="848" height="600" /></span></p>
+<p>前面我们介绍了「友谊体」，而这一本《毛泽东诗词》则是第一本使用了这个字体的书籍，并且后来这本书与「友谊体」的铜模一同作为国礼送给了中国。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382146" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-36.jpeg" width="600" height="1378" /></span></p>
+<p>书的封面上方的英文标题使用了友谊体，这是非常具有历史意义的。而标题下方，余秉楠选用了一篇毛泽东手写的书法，因为对于外国人来说，他们看不懂中文，更不用说毛泽东豪放的书法字了，所以他们看这一副书法更多的是认为他是一个具有东方美感的图形。俗话说字如其人，所以通过书法线条的走势，也可以感受到毛泽东的为人与个性。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382147" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-37.jpeg" width="531" height="800" /></span></p>
+<p>封面上余秉楠选用了一只眼睛作为画面主体，因为这本小说的题材是以主人公的独白进行的，而眼睛作为心灵的窗户，主人公所经历的都从眼睛进入他的人生，所以眼睛能在一定程度上体现小说的内容。另外，眼睛要比人物的其他部分更有视觉强度，一双注视着社会的犀利而深沉的眼睛，难道不是很吸引人吗？在眼睛的上方还画了一个蓝色的三角形，就像是眼睛戴着一个小丑的帽子，与《小丑汉斯》的书名给呼应上了。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382148" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-38.jpeg" width="439" height="800" /></span></p>
+<p>海报中的主体是最古老的篆书中的「家」字的写法，这个家字由两个部分组成，白色部分的外轮廓象征着祖国大陆，而家字中的一点则用彩色的台湾地图代替，从而表达了台湾是中国这个大家庭的一部分这个概念。另外海报的背景上有许多个不同写法的「家」字，意味着无论时代如何变换，中国人经过多少代的繁衍更替，生生不息的海峡两岸永远是一家人。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382149" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-39.jpeg" width="494" height="800" /></span></p>
+<p>明天这个海报创作于1999年。1999年是一个很特别的年份，他是20世纪的最后一年，马上就要进入21世纪了，似乎所有人都对这个新的21世界充满着美好的憧憬。余秉楠的《明天》也代表了他对新时代的想象，他认为新的时代是一个信息爆炸的时代，互联网会彻底改变这个世界，所以海报上出现了各种与信息技术相关的文字符号，用毫无规律的方法排布在画面中，象征着信息的爆炸。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382150" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-40.jpeg" width="498" height="800" /></span></p>
+<p>这张海报是余秉楠在2001年的AGI巴黎大会上创作的。画面主体是一只中国的石狮子蹲在埃菲尔铁塔的底座上，环顾四周。余秉楠希望通过石狮子与巴黎铁塔的结合，表达东西方艺术的交流与融合。</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-382151" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-xd-20200729-41.jpeg" width="800" height="513" /></span></p>
+<p>余秉楠先生今年已经是87岁的高龄了，我们现在所看到的作品，至少也是20年前创作的了。余秉楠的作品可以一定程度上代表了中国初代设计的样貌，也许与现在的设计相比显得有些粗糙，但是我们却能从中看到极强的生命力，那是西方现代设计在中国土壤里扎根发芽的生命力。感谢余秉楠先生，将现代设计的火种带回了中国，让我们这一辈年轻设计师能够享受现代设计成熟的果实。但是，现在中国设计与西方或者日本依然有着较大的差距，所以加油吧同学们，中国设计的崛起任重而道远呢！</p>
+<p>再来了解下第一代的字体设计师：</p>
+<p>[link https://www.uisdc.com/xuxuecheng]</p>
+<p>欢迎关注研习设的微信公众号：「Yanxishe2017」</p>
+<p><span class="img-zoom"><img alt="是他将现代设计的火种带回了中国：余秉楠" class="alignnone size-full wp-image-271254" src="https://image.uisdc.com/wp-content/uploads/2018/05/yxskxsqr.jpg" alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" /></span></p>

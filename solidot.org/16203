@@ -1,0 +1,66 @@
+➜NSA秘密改造美国出口的路由器
+https://www.solidot.org/story?sid=39506	8326
+美国政府多年来一直高声警告中国生产的路由器和其它互联网设备构成安全威胁，因为它们被植入了后门。而根据记者Glenn Greenwald的新书《<a target="_blank" href="http://us.macmillan.com/noplacetohide/GlennGreenwald"><u>No Place to Hide</u></a>》，美国情报机构也在美国制造的互联网设备上植入了后门。书中的部分内容被Greenwald摘录<a target="_blank" href="http://www.theguardian.com/books/2014/may/12/glenn-greenwald-nsa-tampers-us-internet-routers-snowden"><u>发表</u></a>在《卫报》上。报道披露，根据NSA Access and Target Development部门在2010年6月的一份报告，NSA固定的接受或拦截美国出口的路由器、服务器或其它网络设备，植入后门监视程序，重新打包密封，然后再发送出去。后门让NSA获得了使用这些设备的整个网络的访问权限。
+➜Linux内核修正5年历史的严重bug
+https://www.solidot.org/story?sid=39507	11137
+Linux内核维护者<a target="_blank" href="http://arstechnica.com/security/2014/05/linux-gets-fix-for-code-execution-flaw-that-went-unpatched-since-2009/"><u>修复了一个有5年历史的严重bug</u></a>，此bug是一个本地权限提升漏洞，管理员和用户都需要尽可能快的将系统更新到包含修正的最新版本。该内存溢出bug是在2009年发布的2.6.31-rc3中被引入到内核的，它存在于控制<a target="_blank" href="http://linux.die.net/man/7/pty"><u>Linux伪tty设备</u></a>的n_tty_write函数中，允许无特权的用户执行恶意代码。安全研究员Dan Rosenberg说它是过去一年发现的第一个权限提升漏洞，表示此类严重的漏洞每隔几年才会出现一个。bug的编号是 <a target="_blank" href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0196"><u>CVE-2014-0196</u></a>，概念攻击代码已经<a target="_blank" href="http://bugfuzz.com/stuff/cve-2014-0196-md.c"><u>公布</u></a>。
+➜网民因编造假新闻被捕
+https://www.solidot.org/story?sid=39508	12779
+《京华时报》<a target="_blank" href="http://news.jinghua.cn/353/c/201405/13/n3904479.shtml"><u>报道</u></a>，警方以寻衅滋事罪的罪名拘捕了62岁的北京居民向南夫。官方称，向南夫在博讯网发表了一系列假新闻，包括“政府活摘人体器官、活埋人，大批群众到联合国驻华机构外抗议”；“千余警察暴力征地，五月孕妇被当场打死”等。博讯网发表声明<a target="_blank" href="http://boxun.com/news/gb/china/2014/05/201405131037.shtml"><u>称官方的指控不实</u></a>。《京华时报》的报道称，北京公安局网安总队去年发现博讯网登载了大量歪曲、捏造事实的文章，成立专案组立案调查，发现一网名叫“飞翔”的网民非常活跃，发布了大量歪曲、捏造事实的涉访文章，严重损害了国家形象，造成极为恶劣的影响。调查迅速锁定了网名“飞翔”的向南夫。今年5月2日，警方在北京将其抓获。5月3日，向南夫因涉嫌寻衅滋事罪被刑拘。警方称，向南夫通过发表文章每个月至少收入近千美金的稿酬，称他拿到稿酬曾多次去嫖娼。博讯网否认刊登了活摘人体器官的报道，称向南夫所使用的发稿帐号与多位访民和记者共享。
+➜Facebook准备在中国设立销售办事处
+https://www.solidot.org/story?sid=39509	15417
+彭博社援引消息来源<a target="_blank" href="http://www.bloomberg.com/news/2014-05-12/facebook-said-to-take-steps-to-open-a-china-sales-office.html"><u>报道</u></a>，Facebook正计划在中国<a target="_blank" href="http://www.bbc.co.uk/zhongwen/simp/world/2014/05/140513_facebook_china_ads.shtml"><u>设立销售办事处</u></a>。Facebook自2009年就被中国封锁，但没有阻碍它发展广告业务，Facebook利用在香港的办事处建立起销售广告团队，向那些希望吸引国际客户的中国企业提供广告服务。Facebook副总裁Vaughan Smith 5月初在北京举行的全球移动互联网大会上说，该公司已在中国拥有数千名应用开发者。Smith说，香港销售团队目前正在支持对华业务。由于越来越多的中国企业正在使用Facebook的广告服务，Facebook正在探索如何向这些中国企业提供更多本地化支持，并考虑将来在中国大陆开设销售办事处。中国市场研究组织的Shaun Rein说，政府非常担心社会的稳定，短时间内不会看到Facebook的解禁。
+➜石墨烯展现出无限制的热传导性质
+https://www.solidot.org/story?sid=39510	17401
+根据法国物理学家傅立叶提出的热传导<a target="_blank" href="http://en.wikipedia.org/wiki/Heat_conduction#Fourier.27s_law"><u>定律</u></a>，热传导率是一种固有的材料属性，独立于大小或形状。但德国<span style="line-height: 1.538em;">Max Planck聚合物研究院和新加坡国立大学的研究人员<a target="_blank" href="http://www.rdmag.com/news/2014/05/physicists-show-unlimited-heat-conduction-graphene"><u>发现</u></a>，</span>石墨烯的热传导率违反了傅立叶定律，它的热传导与大小有关。<a target="_blank" href="http://www.nature.com/ncomms/2014/140416/ncomms4689/full/ncomms4689.html"><u>报告</u></a>发表在《Nature Communications》期刊上。研究人员根据实验和计算机模拟发现，石墨烯的热传导率随着样品大小呈对数递增。石墨烯越长，每长度单位传递的热越多。这是二维碳原子层材料发现的另一个独一无二的属性。
+➜为何计算机至今无法称雄围棋
+https://www.solidot.org/story?sid=39511	25008
+<div align="center"><img src="http://img.solidot.com.cn/0/272/litYK7ZdPYjM.jpg" align="" height="484" width="360"><br>
+<br>
+</div>
+1997年，IBM的深蓝在国际象棋人机大赛中战胜了世界冠军卡斯帕罗夫（Garry Kasparov）。但对于另一种棋类游戏，人类仍然遥遥领先于机器。诞生于2500年前的围棋（<a target="_blank" href="http://www.loc.gov/pictures/item/2009615541/"><u>画像</u></a>作者鸟居清长）备受帝王将军知识分子和神童的喜爱，爱因斯坦、约翰纳什和图灵等都是围棋的爱好者。《连线》报道了围棋程序Crazy Stone参加日本围棋程序挑战赛的经过（结果是输给了另一个程序Zen），以此介绍围棋程序的发展演化，以及为什么计算机<a target="_blank" href="http://www.wired.com/2014/05/the-world-of-computer-go/"><u>至今无法称雄围棋</u></a>。围棋程序的棋力还赶不上职业棋手，它与人类比赛的最好成绩是在让多子的情况下<a target="_blank" href="http://www.solidot.org/story?sid=28775"><u>战胜九段高手</u></a>。何时程序能在不让子的情况下战胜职业高手？Crazy Stone的作者Remi Coulom猜测至少十年，十年可能还是一个乐观估计。悉尼大学认知科学和复杂系统专家Michael Harré说，职业围棋选手的走法非常难预测，他认为原因或许是棋盘上的信息会以一种独特的方式影响棋手的决策。而计算机程序基于可预测的走法，目前它很难从业余选手的棋力提升到职业选手的棋力。围棋程序的表现几乎完全是基于代码的质量，而硬件的速度帮助不大。
+➜NASA专家称南极冰川消融已不可逆转
+https://www.solidot.org/story?sid=39512	26908
+来自NASA和加州大学的专家称，人类制造的温室气体导致了全球变暖，而这个现象使得南极冰盖<a target="_blank" href="http://www.pbs.org/newshour/bb/ice-sheet-antarctica-melted-past-point-return-nasa-says/"><u>变得很不稳定</u></a>。主管NASA南北极冰层项目的Thomas Wagner表示：“这真的是正在发生。没有办法可以将这个趋势扭转。”南极的6个冰川目前正在迅速消融，一旦完全融化，可导致海平面上升1.22米。冰川的消融将影响西南极冰盖的稳定性，而该地区的冰层如果完全融化，足以使全球海平面上升3米左右。研究人员表示，冰川迅速消融是总体气候变化造成的，其中包括地区温度上升、洋流以及风向改变等因素。根据研究人员的计算，整个冰盖坍塌可能要<a target="_blank" href="http://www.nanzao.com/sc/international/27109/ke-xue-jia-nan-ji-bing-chuan-xiao-rong-yi-bu-ke-ni-zhuan"><u>花200年到900年</u></a>的时间。
+➜Nvidia、AMD和英特尔OpenGL驱动的质量
+https://www.solidot.org/story?sid=39513	28251
+图形程序员Rich Geldreich在个人博客上<a target="_blank" href="http://richg42.blogspot.com/2014/05/the-truth-on-opengl-driver-quality.html"><u>评论了</u></a>三大显卡供应商的OpenGL驱动程序的<a target="_blank" href="http://tech.slashdot.org/story/14/05/13/0030258/the-truth-about-opengl-driver-quality"><u>质量</u></a>，他用匿名的供应商A、B和C分别指代Nvidia、AMD和英特尔。Geldreich称，Nvidia有着最好最快的驱动，它的“图形黑手党”极度专注于性能，但不共享规格，尽可能的阻止任何开源驱动实现；AMD的图形驱动不怎么可靠，他们有着足够的OpenGL技术能力，但由于预算和人手短缺而开发出了劣质的驱动程序；英特尔财力雄厚，但它直到几年前才开始重视图形，英特尔全力支持开源规格和驱动，但还需要几年时间它的驱动才能赶上市场标准。Geldreich指出，由于这些供应商各自的缺陷，使用OpenGL开发大型游戏极其困难。
+➜欧洲法庭称人们有权被互联网遗忘
+https://www.solidot.org/story?sid=39514	31808
+欧洲最高法院周二<a target="_blank" href="http://www.reuters.com/article/2014/05/13/eu-google-dataprotection-idUSL6N0NZ23Q20140513"><u>作出裁决</u></a>，人们有权要求Google从搜索结果中删除敏感信息。此案与Google有关，一位西班牙男子指控Google搜索结果中包含他的私人信息侵犯了他的隐私。它是西班牙约180起要求Google从网上删除私人信息的案件之一。Google声称要求它删除信息等同于审查。此案凸显了言论自由支持者和隐私权支持者之间的争论。法官认为，搜索引擎对于在结果中呈现在第三方网站页面上显示的个人数据负有责任。
+➜明天0点53分20秒是UNIX纪元1400000000
+https://www.solidot.org/story?sid=39515	33285
+<div align="center"><img src="http://img.solidot.com.cn/0/274/liLbK2WoP2wts.png" align="" height="153" width="560"><br>
+<br>
+</div>
+2014年5月14日凌晨12:53:20分，代表着<a target="_blank" href="http://www.epochconverter.com/"><u>UNIX纪元</u></a>1400000000秒，这是一个具有历史意义的时间。<a target="_blank" href="http://en.wikipedia.org/wiki/Unix_time"><u>UNIX时间</u></a>是UNIX或类UNIX系统使用的时间表示方式，从协调世界时1970年1月1日0时0分0秒起至现在的总秒数，不包括闰秒。下一次<a target="_blank" href="http://www.epochconverter.com/epoch/timezones.php?epoch=1500000000"><u>1500000000秒</u></a>是在2017年7月14日。
+➜微软Visual Studio支持Apache Cordova
+https://www.solidot.org/story?sid=39516	33606
+微软在TechEd会议上宣布了“移动优先云端优先”战略的下一步：<a target="_blank" href="http://arstechnica.com/information-technology/2014/05/visual-studio-goes-cross-platform-with-cordova-integration-from-microsoft/"><u>发布了支持Apache Cordova的Visual Studio预览版本</u></a>。Cordova是一个使用HTML、CSS和JavaScript构建iOS、Android和Windows应用的工具链。通过整合Cordova，Visual Studio将支持为非微软平台iOS和Android构建应用。Visual Studio以前是通过第三方产品支持第三方平台，而这一次的支持是来自微软自己。预览版被包括了JavaScript模板和在Apache Ripple模拟器、设备和Android模拟器上的调试。支持Cordova代表着微软开始将自己的服务推到全平台，不再局限于自家平台。
+➜Dropbox和BitTorrent Sync的开源替代
+https://www.solidot.org/story?sid=39517	36043
+瑞典开发者Jakob Borg发布了一个云储存和同步服务Dropbox和BitTorrent Sync的开源替代<a target="_blank" href="http://syncthing.net/"><u>Syncthing</u></a>，称用户的数据将由自己完全控制，所有的通信全都加密，每个访问节点都用加密证书验证。Syncthing的代码和协议都发布在<a target="_blank" href="https://github.com/calmh/syncthing/"><u>GitHub</u></a>上，代码使用MIT许可证，协议使用创作共用许可证，程序安装之后了使用Web GUI配置和监视Syncthing。Syncthing支持 Mac OS X、Windows、Linux、FreeBSD和Solaris，最新版本是v0.8.5。如果你想使用中文的开源云储存同步替代，可以选择北京<a target="_blank" href="http://seafile.com/home/"><u>海文互知</u></a>的<a target="_blank" href="https://github.com/haiwen/seafile"><u>seafile</u></a>。
+➜U-2的飞行计划对美国空管系统就像恶意程序
+https://www.solidot.org/story?sid=39518	38168
+上周，一架U-2高空间谍飞机导致加州空管系统<a target="_blank" href="http://www.solidot.org/story?sid=39400"><u>内存溢出</u></a>，错误判断两架飞机将会相撞。评估过美国空管系统的安全专家称，攻击者可利用该漏洞切断美国航空管理局的空管系统，<a target="_blank" href="http://arstechnica.com/information-technology/2014/05/u-2s-flight-plan-was-like-malware-to-faa-computer-system/"><u>关闭全国的空中交通</u></a>。美国航空管理局的空管系统 <a target="_blank" href="http://www.lockheedmartin.com/us/products/eram.html">En Route Automation Modernization(ERAM)</a> 由洛克希德马丁公司开发，具有前向搜索（ look-ahead）功能，能根据飞机的路线、速度和高度预判潜在的相撞。由于系统要求处理管制空域内所有飞机的前向搜索，洛马限制了空管员能对每架飞机输入的数据量。由于大多数飞机被要求在限制高度和地理范围内飞行，空管系统在测试中没有发现会引发内存溢出的错误。间谍飞机的飞行路线比普通航班复杂得多，它的飞行计划设定数据接近了系统设计的阈值，由于缺乏高度数据，一位空管员手动输入了6万英尺。但系统忽略了手动输入的高度数据，它开始评估U-2计划中的飞行路线的所有可能高度，分析是否可能与其它飞机相撞，结果超出了被分配处理飞行数据的内存大小，导致系统出错和重启，最终崩溃了前向搜索系统。
+➜男子因在百度贴吧骂交警被拘五天
+https://www.solidot.org/story?sid=39519	39946
+<div align="center"><img src="http://img.solidot.com.cn/0/275/liUWuQ5JUNufg.png" align="" height="456" width="480"><br>
+<br>
+</div>
+一名21岁的男子在<a target="_blank" href="http://tieba.baidu.com/f?ie=utf-8&amp;kw=%E5%85%96%E5%B7%9E&amp;fr=search"><u>百度兖州贴吧</u></a>发帖骂当地交警，结果被行政拘留5日。兖州公安在其已经删除的官方微博上说，“不要认为在网上匿名随便说说没什么大不了，请相信'要想人不知，除非己莫为'”。以此推测，兖州公安应该是根据发帖者的IP地址锁定发帖人。警方的处罚依据是：警察法第三十五条，拒绝或者阻碍人民警察依法执行职务，有公然侮辱正在执行职务的人民警察的，给予治安管理处罚。此事引发了网上的热烈讨论，警方被批评处罚随意且过重。现在，有更多网民到百度兖州贴吧骂警察。
+➜北京限制购买散装汽油
+https://www.solidot.org/story?sid=39520	41740
+北京政府网站发布了《<a target="_blank" href="http://zhengwu.beijing.gov.cn/gzdt/gggs/t1353150.htm"><u>关于限制购买销售散装汽油的通告</u></a>》，限制个人购买散装汽油，规定了多项严格的购买要求。去年厦门在发生公交车爆炸案也<a target="_blank" href="http://www.solidot.org/story?sid=35162"><u>颁发了</u></a>类似的政策。《通告》称，为了严防不法分子利用汽油制造事端，将严格限制散装汽油购买和销售行为。《通告》要求，单位购买散装汽油的，经办人需要提供单位介绍信（注明用途、数量）、营业执照复印件和本人身份证件，到单位所在地派出所开具购油证明后，到指定的加油站购买；个人购买散装汽油的，购买人需要提供居住地居委会出具的统一制式购买申请（注明用途、数量），持本人身份证件，到居住地派出所开具购油证明，后到指定的加油站购买。《通知》同时要求加油站加强审核。《通知》显示在发生一系列安全事件后，政府加强了安全措施。
+➜YouTube关闭了用户订阅的视频RSS源
+https://www.solidot.org/story?sid=39521	44459
+Google在<a target="_blank" href="http://arstechnica.com/gadgets/2014/05/youtube-shuts-down-public-rss-feeds-of-user-subscriptions/"><u>继续消灭RSS</u></a>：YouTube关闭了用户订阅新视频的RSS源。订阅RSS源显示403 Forbidden错误信息。RSS源是 YouTube Data API v2的一部分，API v2在今年3月被废弃，被API v3所取代，Data API v3没有提供类似的数据流功能，用户早在2013年1月就递交了<a target="_blank" href="https://code.google.com/p/gdata-issues/issues/detail?id=3946"><u>bug报告</u></a>，但直到2014年1月30日Google开发者才表示正在开发补丁，但没有承诺推出时间。四个月后，补丁仍然没有部署。
+➜异形设计者H.R.Giger去世
+https://www.solidot.org/story?sid=39522	45351
+《异形》设计者、瑞士超现实主义画家<a target="_blank" href="http://en.wikipedia.org/wiki/H._R._Giger"><u>H.R.Giger</u></a>去世，<a target="_blank" href="http://www.swissinfo.ch/eng/culture/Alien_creator_H.R._Giger_is_dead.html?cid=38569780"><u>享年74岁</u></a>。Giger因设计Ridley Scott执导影片《异形》中的异形而获得奥斯卡最佳视觉效果奖。他参与设计的电影包括《沙丘》（Alejandro Jodorowsky改编版，未正式开拍）、《异形》、《异形3》等，他还参与设计了1995年的冒险游戏《黑暗之盅（Dark Seed）》。他在2013年入选了科幻名人堂。
+➜塑料模拟血液凝结自我修复
+https://www.solidot.org/story?sid=39523	46251
+<div align="center"><img src="http://img.solidot.com.cn/0/276/licOVtp8n44gI.jpg" align=""><br>
+</div>
+科学家<a target="_blank" href="http://www.bbc.com/news/science-environment-27296365"><u>研制出</u></a>一种模拟血液凝结能<a target="_blank" href="http://www.cas.cn/xw/kjsm/gjdt/201405/t20140513_4118764.shtml"><u>修复3厘米宽空洞的塑料</u></a>。<a target="_blank" href="http://www.sciencemag.org/lookup/doi/10.1126/science.1251135"><u>报告</u></a>发表在上周的《科学》上。以前的自我修复材料只能修复几毫米宽的洞。<br>
+<i>研究人员研制了两种当分开存放时不起化学反应的液体。然而将这两种液体混合后会引发两个反应——第一个反应能够把混合物变成凝胶，第二个反应则逐渐将其凝固成硬塑料。研究人员面临的挑战是需要找到一种方法来合并这两种液体，使两个反应在一个单一的系统里发生，并且是在不同的时间。为了实现这一目标，研究人员从身体的静脉和动脉网络中获得了灵感。他们首先使用了包含有微小通道的普通塑料。这种材料是在塑料呈液态时加入纤维，之后在其凝固后除去纤维所制成的。研究人员随后在每一个“微通道”中注满了其中一种液体。接下来，研究人员对塑料进行了受控冲撞，旨在形成一个孔洞和无数的裂缝，从而测试其自我修复能力。这一过程导致微通道破裂，进而使液体流出、混合并最终固化。注满一个直径约为1公分的孔洞需要20分钟，凝胶大约需要3个小时便可以凝固为坚硬的塑料。研究人员现在正致力于使这套系统能够以更快的速度自我修复。</i>

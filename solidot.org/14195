@@ -1,0 +1,259 @@
+➜律师指责Corel微软等国外软件公司恐吓式销售
+https://www.solidot.org/story?sid=8626	720
+cuthead 写道 "10月，<a href="http://www.corel.com.cn/">Corel</a>公司要求北京一家服装设计公司使用正版Corel软件代替盗版软件，否则将提起诉讼。该公司设计人员在未经单位允许的情况下，从网站上下载了免费的CorelDRAW软件。对此，律师董正伟指责Corel公司要求用户买正版是恐吓式销售。并且认为网上部分盗版软件是试用版，试用版没有明确使用期限，并在一段时间后会<a href="http://www.china.com.cn/tech/txt/2008-11/11/content_16743241.htm">自动转换为盗版软件</a>。董正伟同时<a href="http://tech.sina.com.cn/it/2008-10-23/15472530464.shtml">指出</a>微软的WGA程序侵犯了盗版XP个人用户信息安全和国家信息安全，是一种犯罪。同时认为使用不兼容程序将造成正版WGA验证失败。并指出用户购买一个windows授权安装在多台计算机上是合理的，微软禁止一个授权安装在多台计算机是一霸王条款。针对微软WGA程序，他建议所有盗版XP个人用户针对这种不合理的附加的交易条件起诉微软。"
+➜AVG杀毒软件升级删除重要系统文件
+https://www.solidot.org/story?sid=8627	1200
+cuthead 写道<i> "美国流行杀毒软件AVG昨天释放了一个新的更新，这个更新会把user32.dll<a href="http://securityandthe.net/2008/11/10/avg-virus-scanner-removes-critical-windows-file/">错认为一个病毒文件</a>。AVG<a href="http://freeforum.avg.com/read.php?7,155461#msg-155501">建议用户</a>使用Windows故障控制台恢复误删的文件，并针对这个问题特意增加了一个<a href="http://www.avg.com/support">FAQ item 1574</a>。<a href="http://tech.slashdot.org/comments.pl?sid=1024587&amp;cid=25714741">/.</a>上有网友笑着说：AVG删除了系统中的一个最大的瑕疵user。也有网友认为，杀毒软件越来越不值得信赖。"</i>
+➜Google用搜索追踪流感趋势
+https://www.solidot.org/story?sid=8628	1800
+<a href="http://www.comsharp.com/">35公里</a> 写道 "Google 周二发布了一个新网站 <a href="http://www.google.org/flutrends">http://www.google.org/flutrends</a> 用来<a href="http://news.cnet.com/8301-17939_109-10094133-2.html?tag=mncol;title">追踪流感趋势</a>。该服务使用了与 <a href="http://www.google.com/trends">Google Trends</a>一样的关键词追踪技术，对人们输入的“flu”一类的词汇进行追踪，并记下搜索的时间和地理位置。<i>
+该技术之所以引人注意是因为它的数据追溯到2003年，并参考了过去几年中疾病控制预防中心（CDC）的调查数据。Google 表示因为他们的系统基于稳定的搜索数据流所以他们可以早于 CDC 两个星期获得结果。该技术还可以结合更多组织用来追踪传染性疾病，如AIDS、禽流感、非洲杀人蜂(Africanized honey bees)。这个系统也有一些局限性，比如还不能追踪全球的趋势。不过，根据历年来的数据表，我们已经可以看出明显的趋势，根据这些数据，还有三周，美国人将迎来流感的高峰期并持续到明年一月初。Google提供的<a href="http://i.i.com.com/cnwk.1d/i/bto/20081111/Google-Flu-inaction.png">美国流感趋势图</a>。"</i>
+➜太空堡垒卡拉狄加道具出售
+https://www.solidot.org/story?sid=8629	2400
+美国科幻频道的《太空堡垒卡拉狄加》（<a href="http://www.scifi.com/battlestar/">Battlestar Galactica</a>）将举行<a href="http://www.battlestarprops.com/">多次拍卖</a>出售道具和服饰。<i>
+首次拍卖将在明年1月16-18日开始，拍卖物品的印刷版和在线版目录将在12月推出，第二次拍卖将在4月份。拍卖网站也将进行在线出价，采用实时广播形式，但运送到全世界则需要追加费用。拍卖道具包括了剧中的关键物品，如指挥官Adama上将的打火机，雅典娜之箭，甚至还有一架蝮蛇战斗机。如果你是这部经典科幻剧的粉丝，想了解最新情况，可通过订阅RSS或邮件收取通知。目前拍卖网站已经公布了一些物品的照片，在剧中的截图， 历史及如何制作的过程。</i>
+➜Android的超级大bug
+https://www.solidot.org/story?sid=8630	3600
+<a href="http://tuxfans.com/">windrose</a> 写道 "几天前，有人发现了利用Android系统的安全漏洞<a href="http://arstechnica.com/news.ars/post/20081105-android-liberation-t-mobile-g1-jailbroken.html">破解G1手机</a>的方法：只要在手机上启动telnetd服务，任何知道手机IP地址的人都可以登录进去并获得root权限，无需任何密码。<i>
+Ed Burnette对此进行了一番研究之后，发现手机启动时会同时启动一个command shell，这个shell具有root权限，用户的所有按键信息都会被提交到这个shell处理。这就意味着用户在键盘上输入的任何内容都会被当作具有root权限的shell命令执行，有用户报告在发短信时输入reboot一词就会导致手机重启。Ed将此bug称为“<a href="http://blogs.zdnet.com/Burnette/?p=680">史上最强</a>”。</i>
+Google表示已经在<a href="http://www.macworld.com/article/136596/2008/11/jailbreak.html">着手修补</a>这个漏洞。"
+➜微软许诺Windows 7将比Vista启动将更快
+https://www.solidot.org/story?sid=8631	6600
+cuthead 写道<i>"消费者们抱怨Vista又慢又费电，他们的声音微软听到了。<a href="http://blogs.zdnet.com/microsoft/?p=1699">微软在WinHEC上许诺</a>：Windows 7将比Vista启动将更快，并且更省电。Windows 7检测硬件将比Vista迅速，在上网本上运行得比Vista更流畅。Windows 7载入硬件驱动将不同于Vista的one by one，而是同时载入，减少启动时检测的设备个数，改进内核使系统需求更少内存，让CPU在更低的频率运行并增加idle时间。微软计划在明年推出一个具有完整功能的windows 7 beta版。它还在会上演示了<a href="http://www.techworld.com/news/index.cfm?RSS&amp;NewsID=106612">在1G内存的Asus Eee上运行Windows 7</a>。"</i>
+➜精神错乱的新奇理论——父母基因之间的竞争
+https://www.solidot.org/story?sid=8632	8400
+《纽约时报》报道，两位科学家基于他们的观察，提出了新的解释精神类疾病如孤独症、精神分裂症的方法。他们将<a href="http://zh.wikipedia.org/wiki/%E8%A5%BF%E6%A0%BC%E8%92%99%E5%BE%B7%C2%B7%E5%BC%97%E6%B4%9B%E4%BC%8A%E5%BE%B7">弗洛伊德</a>的理论延伸到了基因层面，虽然他们的理论很可能多数是错误的，但确实提供了一种<a href="http://www.nytimes.com/2008/11/11/health/research/11brain.html?_r=1&amp;oref=slogin">与众不同的洞察精神疾病的途径</a>。<i>
+两位行为遗传学的门外汉，加拿大生物学家<a href="http://www.sfu.ca/biology/faculty/crespi/">Bernard Crespi</a>博士和伦敦经济学院社会学家<a href="http://www.lse.ac.uk/people/c.badcock@lse.ac.uk/">Christopher Badcock</a>认为，来自父亲精子和母亲卵子基因之间的激烈竞争能以两种方式中的一种影响大脑发育。偏向父亲会推动大脑沿着孤独症方向发展，对事物好奇，模仿，机械，但以损害社交发展为代价。倾向母亲会推动大脑向精神病方向发展， 对自己或他人的情绪反应过敏。根据他们的理论，这会增加儿童未来患上精神分裂症的风险，及沮丧和<a href="http://zh.wikipedia.org/wiki/%E8%BA%81%E9%AC%B1%E7%97%87">躁郁症</a>之类的情绪问题。总之，孤独症和精神分裂症代表着两个极端。</i>
+➜测试显示Windows 7比Vista改进很小
+https://www.solidot.org/story?sid=8633	18720
+微软前不久发布了Windows 7的pre-beta版，许多测试者都称赞它启动比Vista快。是千真万确或者仅仅是一种错觉？<a href="http://www.pcpro.co.uk/blogs/2008/11/10/windows-7-faster-or-just-smarter/">Windows 7到底有多快</a>，到底比Vista有多大的进步。
+Pcpro的一位博客和InfoWorld分别进行了一次详细的评测。前者发现Windows 7和Vista实际性能几乎毫无差别。Office benchmarks和视频编码显示，不管安装的是哪个系统，两者所用时间完全一致。
+<a href="http://www.infoworld.com/article/08/11/10/46TC-windows-7_1.html">InfoWorld的测试更详尽</a>：作者从Windows 7内脏—内核和其它底层结构—开始检查，一直到子系统和应用程序运行。作者本来期待Windows 7或许真能达到微软所宣传的那样：更快，更灵敏，比臃肿的Vista更少的资源需求，但实际结果令人失望，Windows 7仅在Vista上改进了很小。
+<i>
+从系统进程所占用的执行线程，到内核的内存占用看，新操作系统十分像Vista，两者的内存消耗也很接近。作者认为从性能上看，Windows 7 M3与Vista根本就是双胞胎。7的改进主要体现在界面上，而且是直接搬用Mac OS X。换句话说，微软仍然在延续其自Windows Me以来最不受欢迎的操作系统。</i>
+➜Linux Mint 6(Felicia) RC1 发布
+https://www.solidot.org/story?sid=8634	21360
+<a href="http://www.ownlinux.cn/">OwnLinux.cn</a> 写道<i> "<a href="http://linuxmint.com/">Linux Mint</a>团队发布了代号为“Felicia”的<a href="http://www.linuxmint.com/blog/?p=430">Linux Mint 6 RC1</a>版，<a href="http://www.ownlinux.cn/2008/11/11/linux-mint-6-felicia-rc-1-released/">Linux Mint 6 Felicia是一个基于Ubuntu 8.10的发行版</a>，继承了Ubuntu 8.10的众多优点，同时也在Ubuntu 8.10的基础上加入很多自己优秀的特性。其目标是提供一种开箱即刻可用的用户体验，免去用户要安装系统后还要自己安装一系列满足基本使用需求的软件。它包括提供浏览器插件、多媒体编解码器、对DVD播放的支持、Java和其他组件，它与Ubuntu软件仓库完全兼容。可以毫不夸张地说Linux Mint 6 Felicia在某些方面的用户体验比 Ubuntu 8.10还要优秀。新版的特性包括Linux 2.6.27，Gnome 2.24和Xorg 7.4，全新的软件管理器，mintUpload支持FTP，代理和历史更新，Nautilus增加标签浏览，此外还有<a href="http://www.linuxmint.com/rel_felicia_whatsnew.php">大量改进</a>。"</i>
+➜Shuttleworth谈Dell，Greg KH等
+https://www.solidot.org/story?sid=8635	22320
+在Ubuntu的OpenWeek上，Mark Shuttleworth参加了2小时的<a href="https://wiki.ubuntu.com/MeetingLogs/openweekintrepid/AskMark">你问我答对话</a>，回答了<a href="http://osnews.com/story/20515/Shuttleworth_on_Dell_Greg_KH_More">诸多尖锐的问题</a>，如Phoroni测试显示Ubuntu发行版的性能越来越慢，Greg Kroah-Hartman对<a href="__SLASHLINK__" sect="linux" sid="08/09/22/0912221" sn="article" tid="111">Canonical公司对Linux生态系统贡献的评论</a>等。<i>
+对于性能，Shuttleworth称Ubuntu的下一个版本将改进启动时间，开发团队乐意接受挑战，但他也不清楚什么导致了系统变慢。对于Greg KH的批评，他说Greg KH可能更关注贡献，但这对大多数人并无意义。生态系统范围是广阔而深入的，在Ubuntu上面，他们投入了大量的金钱，时间，爱，关注和声望，去促进自由软件。他相信Ubuntu和Canonical在自由软件领域有很大的作为。</i>
+➜Windows诞生25年
+https://www.solidot.org/story?sid=8636	24480
+25年的1983年，这是一个与今日完全不同的世界，家用电脑还是新事物，它的市场在逐渐扩大，苹果正计划用麦金塔电脑发起冲击。<i>
+1983年11月10日，Bill Gates首次<a href="http://osnews.com/story/20520/Windows_Turns_25">向世界介绍了Windows 1.0</a>。作为MS-DOS的延伸，<a href="http://zh.wikipedia.org/wiki/Microsoft_Windows">Windows</a> 1.0拥有图形用户界面，菜单，图标，平铺窗口，多任务处理。Bill Gates预测它将在1984底占据90%的PC市场。很不幸现实总有几分细小差异，Windows 1.0直到1985年才正式销售，当时可能仅仅售出了3份拷贝。但是，这对微软而言是常有的事，它坚持认为几年之后它将是操作系统市场的中流砥柱——今天仍然是。</i>
+➜用气味鉴定人与指纹识别一样高效
+https://www.solidot.org/story?sid=8637	25800
+一项研究发现每个人都有独一无二的气味，如同指纹，<a href="http://www.dailymail.co.uk/sciencetech/article-1084423/How-unique-body-odour-identify-effectively-fingerprint.html">气味也可作为唯一的标识符使用</a>。<i>
+研究发现即使食用了有很强气味的食物，如大蒜和调味品，人体的气味也不会发生变化。化学家Jae Kwak说，“发现暗示，基于生物学的气味识别，像指纹识别一样，可以成为可靠的鉴定个人的方法。”几千年来，狗狗不就是采用此种方法去跟踪人的么？</i>
+➜科学家发现鲨鱼为何游得如此快
+https://www.solidot.org/story?sid=8638	28800
+<a href="http://zh.wikipedia.org/w/index.php?title=%E5%B0%96%E5%90%BB%E9%B2%AD%E9%B2%A8&amp;variant=zh-hans">尖吻鲭鲨</a>的最高速度能达到每小时50英里（约每小时80公里）。<a href="http://abcnews.go.com/Technology/story?id=6209299&amp;page=1">现在科学家发现是什么方法帮助鲨鱼游得如此之快</a>。<i>
+鲨鱼游泳时皮肤表面会竖起鳞片，创造无数细小的井，就像表面微微凹下的高尔夫球，减少水的拖曳作用。最小的鳞片仅有200微米长，由坚硬的珐琅质组成，这种物质能在牙齿中找到，它让鲨鱼的皮肤像砂纸一样粗糙。科学家先制造出人工鲨鱼皮肤，放置在每秒20厘米的流水中，发现鱼鳞之间的腔能形成微小的漩涡，漩涡具有缓冲层的作用，可以使游动更迅速。</i>
+➜《神秘科学剧场》诞生20年
+https://www.solidot.org/story?sid=8639	30900
+让胡戈一举成名的《<a href="http://zh.wikipedia.org/wiki/%E4%B8%80%E4%B8%AA%E9%A6%92%E5%A4%B4%E5%BC%95%E5%8F%91%E7%9A%84%E8%A1%80%E6%A1%88">馒头</a>》从艺术形式上有几分类似于美国1999年下档的喜剧节目《<a href="__SLASHLINK__" sect="opensource" sid="08/08/26/0653248" sn="article" tid="116">神秘科学剧场3000年</a>（<a href="http://en.wikipedia.org/wiki/Mst3k">Mystery Science Theater 3000</a>，简写MST3K）》，不过胡戈所引用的电影《无极》片段，确实会引发版权方面的争议。<i>与之不同的是MST3K并不去恶搞电影场景，它只是对电影中的漏洞进行无情的嘲讽，它评论的对象多是有数十年历史的好莱坞烂片。从1988年诞生起，它至今已有20年历史了，《纽约时报》采访了MST3K的创始人Joel Hodgson，<a href="http://www.nytimes.com/2008/11/09/arts/television/09dave.html?_r=2&amp;ref=television&amp;oref=slogin&amp;oref=slogin">简述了它的历史和意义</a>。MST3K首次在电视上展示了评论本身的重要性远高于评论对象这一独特的元素。</i>
+➜哲学与计算机科学的关系
+https://www.solidot.org/story?sid=8640	33000
+CUTHEAD 写道<i> "哲学是如此的重要，以至于<a href="http://news.ifeng.com/history/1/renwu/200811/1107_2665_867448.shtml">毛泽东</a>和<a href="http://theory.people.com.cn/GB/40557/54098/index.html">李瑞环</a>都将其作为研究对象。如此重要的哲学在计算机科学中扮演了什么角色？<a href="http://news.slashdot.org/article.pl?sid=08/11/10/1742226">/.</a>的网友Johannes Climacus<a href="http://ask.slashdot.org/article.pl?sid=06/05/27/0256248">提到</a>：古希腊大哲学家<a href="http://zh.wikipedia.org/w/index.php?title=%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7&amp;variant=zh-cn">亚里士多德</a>，微积分的创始人<a href="http://zh.wikipedia.org/w/index.php?title=%E8%8E%B1%E5%B8%83%E5%B0%BC%E8%8C%A8&amp;variant=zh-cn">莱布尼茨</a>，哲学家中的哲学家<a href="http://zh.wikipedia.org/w/index.php?title=%E5%BC%97%E9%9B%B7%E6%A0%BC&amp;variant=zh-cn">弗雷格</a>，英国哲学数学家<a href="http://zh.wikipedia.org/w/index.php?title=%E4%BC%AF%E7%89%B9%E5%85%B0%C2%B7%E7%BD%97%E7%B4%A0&amp;variant=zh-cn">罗素</a>，波兰逻辑学家<a href="http://zh.wikipedia.org/w/index.php?title=%E5%A1%94%E5%B0%94%E6%96%AF%E5%9F%BA&amp;variant=zh-cn">塔尔斯基</a>对计算机科学产生了不可估量的影响。他们奠定了现代数学和现代计算机学的基础。伦理学家柏拉图、康格、米尔、黑格尔、海德格尔也一样。但是他参加的所有计算机课程都没有谈及哲学，他怀疑哲学和逻辑在计算机科学中的重要性。/.的网友回应说，哲学很重要，我们每个人都学哲学。"</i>
+➜WordPress 开发者工具箱
+https://www.solidot.org/story?sid=8641	34500
+<a href="http://www.comsharp.com/">35公里</a> 写道 "这是来自 <a href="http://www.smashingmagazine.com/">Smashing Magazine</a> 的一份 <a href="http://www.smashingmagazine.com/2008/09/15/wordpress-developers-toolbox/">WordPress开发资源清单</a> ，涵盖了WordPress教程，WoredPress主题开发，定制，WordPress目录与导航菜单，以及将WordPress的CMS应用等各种开发资源。
+"           本文将分为两个部分发表。这是第一部分。
+<br> <br>
+1. 实用资源
+<br> <br> <a href="http://wpcandy.com/articles/tutorials/the-wordpress-help-sheet.html"> <strong>The WordPress Help Sheet</strong> </a>
+<br> <br>这是一个单页的 PHP 代码片段集，用于 WordPress 主题开发。
+<br> <br> <a href="http://wpcandy.com/articles/tutorials/the-wordpress-help-sheet.html"> </a>
+<br> <br> <a href="http://wpcandy.com/articles/tutorials/the-advanced-wordpress-help-sheet.html"> <strong>The Advanced WordPress Help Sheet</strong> </a>
+<br> <br>上面的 WordPress 的帮助表单的略高级版
+<br> <br> <a href="http://wpcandy.com/articles/tutorials/the-advanced-wordpress-help-sheet.html"> </a>
+<br> <br> <a href="http://hackwordpress.com/huge-compilation-of-wordpress-code/"> <strong>Huge Compilation of WordPress Code</strong> </a>
+<br> <br>代码片段，用于各种功能
+<br> <br> <a href="http://hackwordpress.com/huge-compilation-of-wordpress-code/"> </a>
+<br> <br> <a href="http://www.dbswebsite.com/design/wordpress-reference/"> <strong>WordPress Template Tag Reference Guide</strong> </a>
+<br> <br>主题开发时会用到的 WordPress 模板标签参考
+<br> <br> <a href="http://www.dbswebsite.com/design/wordpress-reference/"> </a>
+<br> <br> <a href="http://nettuts.com/news/unraveling-the-secrets-of-wordpress-commentsphp-file/"> <strong>Unraveling the Secrets of WordPress’ comments.php File</strong> </a>
+<br> <br>WordPress comments.php 探秘
+<br> <br> <a href="http://nettuts.com/news/unraveling-the-secrets-of-wordpress-commentsphp-file/"> </a>
+<br> <br> <a href="http://performancing.com/blogging-tools/48-unique-ways-use-wordpress"> <strong>48 Unique Ways to Use WordPress</strong> </a>
+<br> <br>WordPress 的48种独特应用
+<br> <br> <a href="http://wordpress.org/extend/plugins/theme-switcher-reloaded/"> <strong>Theme Switcher Reloaded</strong> </a>
+<br> <br>显示多种 WordPress 主题演示
+<br> <br> <a href="http://wordpress.org/extend/plugins/theme-switcher-reloaded/"> </a>
+<br> <br>
+2. WordPress 教程
+2.1 WordPress 主题创建 ABC
+<br> <br> <a href="http://css-tricks.com/designing-for-wordpress-complete-series-downloads/"> <strong>Designing for WordPress</strong> </a>
+<br> <br>Chris Coyier 撰写的 CSS 技巧
+<br> <br> <a href="http://css-tricks.com/designing-for-wordpress-complete-series-downloads/"> </a>
+<br> <br> <a href="http://www.dezinerfolio.com/2007/11/27/developing-a-wordpress-theme/"> <strong>Developing a WordPress Theme</strong> </a>
+<br> <br>开发 WordPress 主题教程
+<br> <br> <a href="http://www.dezinerfolio.com/2007/11/27/developing-a-wordpress-theme/"> </a>
+<br> <br> <a href="http://nettuts.com/site-builds/how-to-create-a-wordpress-theme-from-scratch/"> <strong>How to Create a WordPress Theme from Scratch</strong> </a>
+<br> <br>从零开始开发 WordPress 教程
+<br> <br> <a href="http://nettuts.com/site-builds/how-to-create-a-wordpress-theme-from-scratch/"> </a>
+<br> <br> <a href="http://themetation.com/how-to-create-wordpress-themes-from-scratch-part-1/"> <strong>How to Create WordPress Themes from Scratch - Part 1</strong> </a>
+<br> <br>从零开始开发 WordPress 主题教程 - 第1部分
+<br> <br> <a href="http://themetation.com/how-to-create-wordpress-themes-from-scratch-part-1/"> </a>
+<br> <br> <a href="http://themetation.com/how-to-create-wordpress-themes-from-scratch-part-2/"> <strong>How to Create WordPress Themes from Scratch - Part 2</strong> </a>
+<br> <br>从零开始开发 WordPress 主题教程 - 第2部分
+<br> <br> <a href="http://themetation.com/how-to-create-wordpress-themes-from-scratch-part-2/"> </a>
+<br> <br> <a href="http://urbangiraffe.com/2005/04/12/themeguide1/"> <strong>Dissection of a WordPress Theme - Part 1</strong> </a> <strong>, </strong> <a href="http://urbangiraffe.com/2005/04/22/themeguide2/"> <strong>Part 2</strong> </a> <strong>, </strong> <a href="http://urbangiraffe.com/2005/04/30/themeguide3/"> <strong>Part 3</strong> </a> <strong>, </strong> <a href="http://urbangiraffe.com/2005/05/20/themeguide4/"> <strong>Part 4</strong> </a>
+<br> <br>详细介绍了 WordPress 主题的构成，以及如何创建 WordPress 主题
+<br> <br> <a href="http://urbangiraffe.com/2005/04/12/themeguide1/"> </a>
+<br> <br> <a href="http://www.wpdesigner.com/2007/02/19/so-you-want-to-create-wordpress-themes-huh/"> <strong>So You Want to Create WordPress Themes Huh?</strong> </a>
+<br> <br>非常出色的 WordPress 主题创建系列教程
+<br> <br> <a href="http://www.wpdesigner.com/2007/02/19/so-you-want-to-create-wordpress-themes-huh/"> </a>
+<br> <br> <a href="http://theundersigned.net/2006/05/from-xhtmlcss-to-wordpress/"> <strong>From XHTML/CSS to WordPress</strong> </a>
+<br> <br>将已有站点的XHTML/CSS 转换成 WordPress 主题
+<br> <br> <a href="http://theundersigned.net/2006/05/from-xhtmlcss-to-wordpress/"> </a>
+<br> <br>
+2.2. WordPress 技巧
+<br> <br> <a href="http://www.webdesignerwall.com/tutorials/wordpress-theme-hacks/"> <strong>WordPress Theme Hacks</strong> </a>
+<br> <br>WordPress 主题开发中用到的一些代码和技巧
+<br> <br> <a href="http://www.webdesignerwall.com/tutorials/wordpress-theme-hacks/"> </a>
+<br> <br> <a href="http://www.noupe.com/wordpress/mastering-your-wordpress-theme-hacks-and-techniques.html"> <strong>Mastering Your WordPress Theme Hacks and Techniques</strong> </a>
+<br> <br>另一个 WordPress 主题开发技巧系列
+<br> <br> <a href="http://www.noupe.com/wordpress/mastering-your-wordpress-theme-hacks-and-techniques.html"> </a>
+<br> <br> <a href="http://www.noupe.com/wordpress/most-desired-wordpress-hacks-11-common-requests-and-fixes.html"> <strong>The Most Desired WordPress Hacks: 11 Common Requests and Fixes</strong> </a>
+<br> <br>WordPress 自定义数据，菜单，目录，作者等内容的一些深度剖析与技巧
+<br> <br> <a href="http://www.noupe.com/wordpress/most-desired-wordpress-hacks-11-common-requests-and-fixes.html"> </a>
+2.3. WordPress 目录
+<br> <br> <a href="http://bloggercamp.com/blogging-tips/blogging-tips-wordpress-tips/remove-several-categories-from-the-loop-in-wordpress/"> <strong>Removing Several Categories from the Loop in WordPress</strong> </a>
+<br> <br>有时候，你想将一些帖子从特定目录中转出来，该教程会教你如何做
+<br> <br> <a href="http://bloggercamp.com/blogging-tips/blogging-tips-wordpress-tips/remove-several-categories-from-the-loop-in-wordpress/"> </a>
+<br> <br> <a href="http://anthologyoi.com/wordpress/displaying-wordpress-categories-in-a-horizontal-dropdown-menu.html"> <strong>Displaying WordPress Categories in a Horizontal Dropdown Menu</strong> </a>
+<br> <br>使用 CSS 和 JavaScript 创建 WordPress 目录导航系统
+<br> <br> <a href="http://anthologyoi.com/wordpress/displaying-wordpress-categories-in-a-horizontal-dropdown-menu.html"> </a>
+3.4. WordPress 导航菜单
+<br> <br> <a href="http://www.darrenhoyt.com/2008/02/12/creating-two-tiered-conditional-navigation-in-wordpress/"> <strong>Creating Two-Tiered Conditional Navigation in WordPress</strong> </a>
+<br> <br>创建 WordPress 高级导航菜单
+<br> <br> <a href="http://www.darrenhoyt.com/2008/02/12/creating-two-tiered-conditional-navigation-in-wordpress/"> </a>
+<br> <br> <a href="http://hackwordpress.com/sliding-doors-wordpress-navigation-css-technique/"> <strong>Using Sliding Doors with WordPress Navigation</strong> </a>
+<br> <br>在 WordPress 主题中使用这种流行的导航菜单系统
+<br> <br> <a href="http://hackwordpress.com/sliding-doors-wordpress-navigation-css-technique/"> </a>
+2.4. 将 WordPress 用作 CMS
+<br> <br> <a href="http://www.wpdesigner.com/2008/03/01/how-to-use-wordpress-as-a-membership-directory/"> <strong>How to Use WordPress as a Membership Directory</strong> </a>
+<br> <br>如何使用 WordPress 创建会员目录系统
+<br> <br> <a href="http://www.wpdesigner.com/2008/03/01/how-to-use-wordpress-as-a-membership-directory/"> </a>
+<br> <br> <a href="http://bloggingexperiment.com/archives/wordpress-page-as-home-page.php"> <strong>Using a WordPress Page as Your Homepage</strong> </a>
+<br> <br>在某些项目中，你可能希望使用一个静态网页，而不是最新博客文章列表作为你的博客站的首页，这篇文章教你如何实现
+<br> <br> <a href="http://bloggingexperiment.com/archives/wordpress-page-as-home-page.php"> </a>
+<br> <br> <a href="http://www.darrenhoyt.com/2007/08/24/build-a-dynamic-design-portfolio-with-wordpress/"> <strong>Build a Dynamic Design Portfolio with WordPress</strong> </a>
+<br> <br>创建基于 WordPress 的产品展示网站
+<br> <br> <a href="http://www.darrenhoyt.com/2007/08/24/build-a-dynamic-design-portfolio-with-wordpress/"> </a>
+2.5. WordPress 评论功能
+<br> <br> <a href="http://nettuts.com/working-with-cmss/hack-together-a-user-contributed-link-feed-with-wordpress-comments/">Hack Together a User Contributed Feed with WordPress Comments</a>
+<br> <br>如何将 WordPress 的评论与用户 Feed 结合起来
+<br> <br> <a href="http://nettuts.com/working-with-cmss/hack-together-a-user-contributed-link-feed-with-wordpress-comments/"> </a>
+<br> <br> <a href="http://nettuts.com/javascript-ajax/adding-form-validation-to-wordpress-comments-using-jquery/"> <strong>Adding Form Validation to WordPress Comments Using jQuery</strong> </a>
+<br> <br>使用 jQuery 对 WordPress 的评论表单进行验证
+<br> <br> <a href="http://nettuts.com/javascript-ajax/adding-form-validation-to-wordpress-comments-using-jquery/"> </a>
+<br> <br> <a href="http://www.mattcutts.com/blog/highlight-author-comments-wordpress/"> <strong>How to Highlight Author Comments in WordPress</strong> </a>
+<br> <br>对楼主的评论加亮
+<br> <br> <a href="http://www.mattcutts.com/blog/highlight-author-comments-wordpress/"> </a>
+<br> <br> <a href="http://hackwordpress.com/how-to-separate-wordpress-comments-and-trackbacks/"> <strong>How to Separate WordPress Comments and Trackbacks</strong> </a>
+<br> <br>将 Pingback 和 Trackback 部分从评论区分离开，以获得更整洁的结构。
+<br> <br> <a href="http://hackwordpress.com/how-to-separate-wordpress-comments-and-trackbacks/"> </a>
+<br> <br> <a href="http://www.quickonlinetips.com/archives/2008/07/how-to-add-gravatars-to-wordpress-themes/"> <strong>How to Add Gravatars to WordPress Themes</strong> </a>
+<br> <br>为评论者显示一个级别图标
+<br> <br> <a href="http://www.quickonlinetips.com/archives/2008/07/how-to-add-gravatars-to-wordpress-themes/"> </a>
+2.6. WordPress Headers, Footers, 与 Sidebars 部分
+<br> <br> <a href="http://www.devlounge.net/code/client-friendly-wordpress-themes-headerphp"> <strong>Client Friendly WordPress Themes: Header.php</strong> </a>
+<br> <br>如果你为客户设计主题，可以对 Header 部分进行定制
+<br> <br> <a href="http://www.devlounge.net/code/client-friendly-wordpress-themes-headerphp"> </a>
+<br> <br> <a href="http://www.pearsonified.com/2006/10/simple_random_header_images_for_your_blog.php"> <strong>Simple Random Header Image for Your Blog</strong> </a>
+<br> <br>对 Header 部分的图片进行动态更换
+<br> <br> <a href="http://www.pearsonified.com/2006/10/simple_random_header_images_for_your_blog.php"> </a>
+<br> <br> <a href="http://help-developer.com/index.php/2008/07/creating-a-widget-ready-footer-in-wordpress/"> <strong>Creating a Widget-Ready Footer in WordPress</strong> </a>
+<br> <br>在 WordPress 的 Footer 部分预留 Widget 空间
+<br> <br> <a href="http://help-developer.com/index.php/2008/07/creating-a-widget-ready-footer-in-wordpress/"> </a>
+<br> <br> <a href="http://www.devlounge.net/articles/script/mashing-up-feeds-using-yahoo-pipes"> <strong>Mashing Up Feeds Using Yahoo Pipes</strong> </a>
+<br> <br>借助 Yahoo Pipes 将多个博客的帖子显示在同一个侧条上
+<br> <br> <a href="http://www.devlounge.net/articles/script/mashing-up-feeds-using-yahoo-pipes"> </a>
+<br> <br> <a href="http://www.problogdesign.com/general-tips/how-to-install-domtabs-on-wordpress/"> <strong>How to Install DomTABs on WordPress</strong> </a>
+<br> <br>在 WordPress 侧条上显示 DomTAB 标签分组
+<br> <br> <a href="http://www.problogdesign.com/general-tips/how-to-install-domtabs-on-wordpress/"> </a>
+<br> <br> <a href="http://nettuts.com/javascript-ajax/wordpress-sidebar-turned-apple-flashy-using-jquery-ui/"> <strong>WordPress Sidebar Turned Apple-Flashy Using jQuery UI</strong> </a>
+<br> <br>使用 jQuery 实现苹果风格的侧条
+<br> <br> <a href="http://nettuts.com/javascript-ajax/wordpress-sidebar-turned-apple-flashy-using-jquery-ui/"> </a>
+2.7. Web 2.0 集成
+<br> <br> <a href="http://spyrestudios.com/how-to-create-a-life-stream-and-social-media-hub/"> <strong>Creating a Life-Stream and Social Media Hub</strong> </a>
+<br> <br>用 WordPress 创建个人网站并结合你的社会媒体网络帐户，如 Twitter, Digg, StumbleUpon 以及Flickr
+<br> <br> <a href="http://spyrestudios.com/how-to-create-a-life-stream-and-social-media-hub/"> </a>
+<br> <br> <a href="http://nettuts.com/working-with-cmss/create-a-youtube-section-with-wordpress/"> <strong>Create a YouTube Section with WordPress</strong> </a>
+<br> <br>在 WordPress 博客中创建 YouTube 视频
+<br> <br> <a href="http://nettuts.com/working-with-cmss/create-a-youtube-section-with-wordpress/"> </a>
+2.8. WordPress 风格
+<br> <br> <a href="http://www.wpdesigner.com/2007/06/12/styling-individual-posts-using-the_id/"> <strong>Styling Individual Posts Using the_ID</strong> </a>
+<br> <br>每一个 WordPress 帖子都可以实现独立的风格式样
+<br> <br> <a href="http://www.wpdesigner.com/2007/06/12/styling-individual-posts-using-the_id/"> </a>
+<br> <br> <a href="http://www.darrenhoyt.com/2007/12/26/multiple-wordpress-page-layouts-in-one-single-template/"> <strong>Multiple WordPress Page Layouts in One Single Template</strong> </a>
+<br> <br>使用单一的模板实现不同的页面布局
+<br> <br> <a href="http://www.darrenhoyt.com/2007/12/26/multiple-wordpress-page-layouts-in-one-single-template/"> </a>
+2.9. WordPress SEO
+<br> <br> <a href="http://yoast.com/articles/wordpress-seo/"> <strong>WordPress SEO</strong> </a>
+<br> <br>WordPress SEO 相关资源
+<br> <br> <a href="http://yoast.com/articles/wordpress-seo/"> </a>
+<br> <br> <a href="http://hackwordpress.com/how-to-blocking-your-wordpress-categories-and-archives-from-google/"> <strong>Blocking Your WordPress Categories and Archives from Google</strong> </a>
+<br> <br>为了防止一些重复内容伤害 SEO 表现，可以不让 Google 索引 WordPress 中某些目录下的内容
+<br> <br> <a href="http://hackwordpress.com/how-to-blocking-your-wordpress-categories-and-archives-from-google/"> </a>
+<br> <br> <a href="http://theundersigned.net/2006/06/wordpress-and-seo/"> <strong>WordPress and SEO</strong> </a>
+<br> <br>如何创建搜索引擎友好站点
+<br> <br> <a href="http://theundersigned.net/2006/06/wordpress-and-seo/"> </a>
+<br> <br> <a href="http://www.geek-notes.com/wordpress/25/optimize-wordpress-for-search-engines/"> <strong>SEO for WordPress Tips</strong> </a>
+<br> <br>WordPress SEO 技巧
+<br> <br> <a href="http://www.geek-notes.com/wordpress/25/optimize-wordpress-for-search-engines/"> </a>
+2.10. WordPress Feeds 功能
+<br> <br> <a href="http://courtneytuttle.com/2007/12/06/creating-posts-that-appear-only-in-rss/"> <strong>Creating Posts that Only Appear in RSS</strong> </a>
+<br> <br>在 WordPress 中创建只出现在 Feeds 订阅中的内容，而不在网站中显示
+<br> <br> <a href="http://courtneytuttle.com/2007/12/06/creating-posts-that-appear-only-in-rss/"> </a>
+<br> <br> <a href="http://www.darrenhoyt.com/2008/01/29/publishing-external-rss-headlines-to-your-wordpress-site/"> <strong>Publishing External RSS Headlines to Your WordPress Site</strong> </a>
+<br> <br>一个简单的教程，介绍如何将外部站点的 RSS 标题加到 WordPress 站点
+<br> <br> <a href="http://www.darrenhoyt.com/2008/01/29/publishing-external-rss-headlines-to-your-wordpress-site/"> </a>
+2.11. Working with Featured Posts
+<br> <br> <a href="http://nettuts.com/working-with-cmss/how-to-make-a-featured-post-carousel-for-wordpress/"> <strong>How to Create a Featured Post Carousel for WordPress</strong> </a>
+<br> <br>在站点首页显示重点推荐帖子
+<br> <br> <a href="http://nettuts.com/working-with-cmss/how-to-make-a-featured-post-carousel-for-wordpress/"> </a>
+<br> <br> <a href="http://help-developer.com/index.php/2008/07/create-a-tabbed-featured-posts-area-in-wordpress/"> <strong>Create a Tabbed Featured Post Area in WordPress</strong> </a>
+<br> <br>Give your theme an attractive look and feature the appropriate content.
+<br> <br> <a href="http://help-developer.com/index.php/2008/07/create-a-tabbed-featured-posts-area-in-wordpress/"> </a>
+2.12. 使用自定义内容区
+<br> <br> <a href="http://justintadlock.com/archives/2007/10/24/using-wordpress-custom-fields-introduction"> <strong>Using WordPress Custom Fields: Introduction</strong> </a>
+<br> <br>WordPress 自定义内容区介绍
+<br> <br> <a href="http://justintadlock.com/archives/2007/10/24/using-wordpress-custom-fields-introduction"> </a>
+<br> <br> <a href="http://5thirtyone.com/archives/875"> <strong>WordPress Custom Fields: Laying Text Over Your Lead Graphic</strong> </a>
+<br> <br>WordPress 自定义内容区的应用
+<br> <br> <a href="http://5thirtyone.com/archives/875"> </a>
+2.13. 其它教程
+<br> <br> <a href="http://www.problogdesign.com/general-tips/13-tags-to-delete-from-your-theme/"> <strong>13 Tags to Delete from Your Theme</strong> </a>
+<br> <br>13个可以去除的 WordPress 主题标签
+<br> <br> <a href="http://www.problogdesign.com/general-tips/13-tags-to-delete-from-your-theme/"> </a>
+<br> <br> <a href="http://wpguy.com/tutorials/how-to-make-a-random-post-button/"> <strong>How to Make a Random Post Button</strong> </a>
+<br> <br>如何创建随机发帖按纽
+<br> <br> <a href="http://wpguy.com/tutorials/how-to-make-a-random-post-button/"> </a>
+<br> <br> <a href="http://www.themeplayground.com/advice-for-your-wordpress-blog-customize-your-404-page"> <strong>Customize Your 404 Page</strong> </a>
+<br> <br>定制你的 404 页
+<br> <br> <a href="http://www.themeplayground.com/advice-for-your-wordpress-blog-customize-your-404-page"> </a>
+<br> <br> <a href="http://hackwordpress.com/how-to-adding-an-author-page-to-your-wordpress-blog/"> <strong>Adding an Author Page to Your WordPress Blog</strong> </a>
+<br> <br>在你的 WordPress 博客中添加一个作者资料页
+<br> <br> <a href="http://hackwordpress.com/how-to-adding-an-author-page-to-your-wordpress-blog/"> </a>
+<br> <br> <a href="http://www.aniquito.com/2008/08/06/how-to-install-wordpress-manually/"> <strong>How to Install WordPress Manually</strong> </a>
+<br> <br>手工安装 WordPress
+<br> <br> <a href="http://www.aniquito.com/2008/08/06/how-to-install-wordpress-manually/"> </a>
+<br> <br> <a href="http://help-developer.com/index.php/2008/06/adding-thumbnails-to-your-posts-in-wordpress/"> <strong>Adding Thumbnails to Your Posts in WordPress</strong> </a>
+<br> <br>在 WordPress 中显示你的文章的缩略图
+<br> <br> <a href="http://help-developer.com/index.php/2008/06/adding-thumbnails-to-your-posts-in-wordpress/"> </a>
+<br> <br> <a href="http://www.puttingblogsfirst.com/how-to-easily-make-wordpress-archives-that-rock"> <strong>How to Easily Make WordPress Archives that Rock</strong> </a>
+<br> <br>WordPress 的有效存档案方法
+<br> <br> <a href="http://www.puttingblogsfirst.com/how-to-easily-make-wordpress-archives-that-rock"> </a>
+➜假如Matrix使用Windows XP会发生什么？
+https://www.solidot.org/story?sid=8642	36000
+cuthead 写道<i>"Matrix，代表了线性代数的矩阵，代表了计算机世界，更给M这个字母另一个含义。Matrix一直运行于Unix-like操作系统，如果它运行在Windows XP下将会发生什么？<a href="http://www.collegehumor.com/video:1886349">CHTV</a>给了我们答案。死机，停止响应，Loading，没有意义的提示，驱动级别的错误造成蓝屏等。视频最终是大团圆结尾，Neo回归到Ubuntu。<a href="http://digg.com/comedy/If_The_Matrix_Ran_on_Windows">digg</a>和<a href="http://jandan.net/2008/11/12/if_the_matrix_ran_on_windows.html">煎蛋</a>对此视频也做了转载。"</i>
+➜失明的NASA工程师解决俄罗斯飞船问题
+https://www.solidot.org/story?sid=8643	37080
+俄罗斯请求提供帮助仅几天之后，由一位失明工程师领导的NASA团队就<a href="http://www.upi.com/Science_News/2008/11/11/Blind_NASA_engineer_solves_Russian_problem/UPI-93131226440046/">建造了一套能接收联盟号飞船数据的系统</a>。<i>
+俄联邦太空署请NASA帮助设计一种方法，在<a href="http://zh.wikipedia.org/wiki/%E8%81%94%E7%9B%9F%E5%8F%B7%E5%AE%87%E5%AE%99%E9%A3%9E%E8%88%B9">联盟号飞船</a>脱离轨道和重返大气层期间继续接收飞船上的遥感数据。Marco Midon，一位NASA的失明电子工程师，提出了可部署在地面站上的移动系统，但地面站需要位于联盟号脱离国际站进入大气层路径的下方。他和工程师们随后飞往雅典，在美国大使馆的楼顶上设置好设备，在十月底的一天早上6点后，系统在联盟号进入大气层时开始接收数据。Marco Midon谦虚的表示，他们的特别之处只是必须在2到3天内提出解决方案。</i>
+记得媒体在报道神舟飞船时提到过类似问题，中国似乎并没有解决。

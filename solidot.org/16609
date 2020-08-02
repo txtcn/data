@@ -1,0 +1,49 @@
+➜Linux 4.1发布，EXT4支持加密
+https://www.solidot.org/story?sid=44524	10796
+Linus Torvalds在内核邮件列表上<a target="_blank" href="https://lkml.org/lkml/2015/6/22/8"><u>宣布</u></a>了Linux 4.1的正式版。kernelnewbies.org<a target="_blank" href="http://kernelnewbies.org/Linux_4.1"><u>尚未更新</u></a>，主要新特性包括：EXT4文件系统<a target="_blank" href="http://lwn.net/Articles/639427/"><u>支持文件和目录加密</u></a>，Nouveau驱动支持GeForce GTX 750硬件加速，改进英特尔低功率处理器的功耗，改进英特尔Cherry Trail / Bay Trail处理器的性能，支持 Radeon DisplayPort MST，改进RAID 5/6支持，等等。Linux 4.1是长期支持版本，将提供两年的更新。
+➜NSA和GCHQ逆向工程卡巴斯基
+https://www.solidot.org/story?sid=44525	12646
+The Intercept根据 Edward Snowden提供的机密文件<a target="_blank" href="https://firstlook.org/theintercept/2015/06/22/nsa-gchq-targeted-kaspersky/"><u>报道</u></a>，NSA及其英国合作伙伴GCHQ为跟踪目标和渗透进计算机网络而去逆向工程杀毒软件，其中俄罗斯的卡巴斯基是他们的重点目标。安装在系统上的杀毒软件为了防御恶意程序通常拥有最高级别的权限，如果能发现杀毒软件的漏洞，那么情报机构将能获得目标系统的最高访问权限。通过逆向工程，情报机构可以了解软件的工作原理，发现潜在的漏洞，然后用漏洞入侵敌意目标的网络。机密文件显示，NSA很早就开始研究卡巴斯基的软件寻找漏洞。2008年，NSA发现卡巴斯基将敏感的用户信息传输到它的服务器上，传输过程很容易拦截和被利用去跟踪目标用户——因为卡巴斯基的User-Agent字符串包含了唯一的识别码。
+➜美国签证系统再次发生故障
+https://www.solidot.org/story?sid=44526	13973
+美国国务院官员周一<a target="_blank" href="http://cn.nytimes.com/usa/20150623/c23visas/"><u>表示</u></a>，由于计算机硬件故障仍然未排除，美国已有两周无法向全球各地的旅行者发放签证。美国平均每天会收到5万份来自全球各地的签证申请。目前绝大多数申请都堆积在案，因为国务院正在修复一个和生物识别数据相关的硬件问题。该故障导致官员无法处理和传输安检所需的指纹和照片。签证系统估计要到下周才能重新投入使用。这起电脑故障和<a target="_blank" href="http://www.solidot.org/story?sid=40573"><u>去年签证系统的软件故障</u></a>不是同一个问题。美国领事事务局称，他们有一个备份系统，但也失灵了，该机构发言人说，
+“我们切换到备份系统时，发现数据已经损坏，无法使用。”
+➜亚马逊、Google和Docker等联合宣布Open Container项目
+https://www.solidot.org/story?sid=44527	15957
+亚马逊、思科、EMC、Google、Docker、惠普、华为、IBM、英特尔、Linux基金会、CoreOS、微软、Red Hat和VMware等联合宣布了<a target="_blank" href="https://www.opencontainers.org/pressrelease/"><u>Open Container项目</u></a>，联合开发开放容器标准。Open Container项目由Linux基金会托管，其使命是继续容器创新和开发基于容器的方案，避免碎片化。Docker将捐赠它的软件容器格式和运行时代码，以及相关规格。CoreOS等发起的 Application Container spec (appc)项目也将带来它们的技术和支持</span>Open Container项目。
+➜报告称气候变化影响人类健康
+https://www.solidot.org/story?sid=44528	17801
+《柳叶刀》刊登了一期<a href="http://www.thelancet.com/commissions/climate-change" target="_blank"><u>健康和气候变化</u></a>的特别报告，其中一份报告称，<a target="_blank" href="http://www.ftchinese.com/story/001062642"><u>气候变化对人类健康的影响</u></a>如此巨大，可能会毁掉过去50年全球发展方面的全部进展。报告表示，需要马上采取行动，以避免热浪、其他极端天气事件和传染性疾病的蔓延对人类健康的直接冲击，以及被迫迁徙和作物歉收等因素对人类健康的间接影响。报告作者在伦敦举行的报告介绍会上表示，他们想避免发出又一个“末日来临”的气候变化警告。据预测，气候变化的最大直接影响将是热浪。
+➜澳大利亚参议院通过受争议的反盗版法律
+https://www.solidot.org/story?sid=44529	24629
+澳大利亚参议院周一晚上通过了受争议的<a target="_blank" href="http://www.smh.com.au/digital-life/digital-life-news/australian-senate-passes-controversial-antipiracy-websiteblocking-laws-20150622-ghuorh.html"><u>反在线盗版法律</u></a>，批评人士认为这是澳大利亚互联网黑暗的一天，但对娱乐业而言，他们现在可以要求法庭下令屏蔽侵犯版权的网站。如果版权持有者的网站屏蔽请求通过了法庭的核查，那么澳大利亚ISP将需要遵守法庭命令屏蔽网站。BT网站海盗湾The Pirate Bay和KickAssTorrents有望进入首批屏蔽名单。文件共享网站 mega.co.nz和 dropbox.com也有可能会因为托管了侵犯版权的材料而遭到屏蔽。
+➜中国公司网上卖毒品
+https://www.solidot.org/story?sid=44530	25653
+在中国网站上，你可以买到各种毒品或合成化合物，即使这些化合物在中国也是禁药。<a target="_blank" href="http://www.njlongxinchem.net/index.asp"><u>南京隆信化工</u></a>出售浴盐的原料甲氧麻黄酮，公司的一名销售说，“我可以走合法途径，也可以走非法的。”在一个网络审查技巧炉火纯青的国家，这种公开的网络药品市场无非是以最公开而大胆的方式验证了国际执法官员的观点：正在成为全球合成毒品供应链主要参与者的中国不愿意采取行动。几个国家的官员都表示，中国官员并没有表现出真正出手打击的兴趣，他们称那是其他国家的毒品问题。前墨西哥驻华大使Jorge Guajardo说，“他们看不出，调查他们自己的这些化学品出口行业，对他们来说有何意义。”几名美国官员称，<a target="_blank" href="http://cn.nytimes.com/china/20150622/c22chinadrugs/"><u>中国是新型合成毒品的主要来源</u></a>。
+➜固态硬盘（SSD）价格快速下跌
+https://www.solidot.org/story?sid=44531	27043
+固态硬盘（SSD）仍然比机械硬盘贵，但它的价格<a target="_blank" href="http://www.networkcomputing.com/storage/ssd-prices-in-a-freefall/a/d-id/1320958"><u>正沿着一条下坡路快速下跌</u></a>。1TB的SSD价格有望逼近300美元，到2016年底SSD和机械硬盘的价格有可能相差无几。除了价格，SSD在容量上正快速赶超，到2018年30TB的SSD都有可能面世。SSD在性能上远胜于机械硬盘，当机械硬盘不再具有性价比的时候，SSD的过渡将会变得像海啸一样不可抵挡。<br>
+➜NASA公布冥王星系统彩色视频
+https://www.solidot.org/story?sid=44532	28992
+<div align="center"><img src="http://img.solidot.com.cn/0/815/li2YzK1uFiRc.gif" align="" width="525" height="525"><br>
+<br>
+</div>
+NASA探测器新地平线号（New Horizons）即将抵达它的主要目标冥王星。它预计将在7月14日飞到距离冥王星表面12500公里的最近点。NASA公布了冥王星及其最大卫星卡戎（Charon）的<a target="_blank" href="http://www.nasa.gov/feature/pluto-and-its-moon-charon-now-in-color"><u>第一个彩色视频</u></a>，展示了两颗行星的轨道和运动。冥王星自传一周6天9小时17.6分钟（地球时间），与卡戎的自传时间相同。冥王星和卡戎的运动类似双星系统，冥王星的质量更大，所以转动中心更靠近冥王星。
+➜美国海军作战系统向微软支付千万美元继续用Windows XP
+https://www.solidot.org/story?sid=44533	30391
+美国海军<a target="_blank" href="http://www.itworld.com/article/2939255/windows/the-us-navys-warfare-systems-command-just-paid-millions-to-stay-on-windows-xp.html?nsdr=true"><u>向微软支付千万美元</u></a>，让它的10万台运行Windows XP的电脑获得安全更新。Windows XP于去年4月终止支持，企业或机构如果想要继续获得安全更新必须与微软签署延长支持的协议。本月早些时候，美国海军的空间与海上作战司令部与微软签署了910万美元的合同为Windows XP、Office 2003Exchange 2003和Windows Server 2003提供安全更新。合同金额最高将达到3080万美元，将延长到2017年。美国海军从2013年开始从XP升级到新系统，但到今年5月仍然有多达10万台工作站运行XP。
+➜广电总局下令减少股市报道
+https://www.solidot.org/story?sid=44534	31423
+BBC<a target="_blank" href="http://www.bbc.com/zhongwen/simp/china/2015/06/150623_china_share_market"><u>报道</u></a>，广电总局最近下发提示，要求广播电视台要大幅减少关于股市的报道，防止因报道不当引起股市大涨大跌。相关宣传提示已陆续下达至各广播电视台，一些广播电视机构早在上周五已收到通知，而有些在本周二收到。广电总局要求“在必要的报道中要做到全面平衡、客观理性，不集中唱多，不合力唱空，合理引导市场预期，防止因报道不当引起股市大涨大跌。”宣传提示共有4点，其中包括对股市波动情况“一律不再组织评论言论、专家访谈、现场连线，不做深度解读，不猜测、评价股市走向，不渲染恐慌、悲情气氛，不使用‘暴跌’‘暴涨’‘崩盘’等煽情用语”。上周中国股市“暴跌”了超过13%，但本周二又上涨了2.2%。
+➜测试发现25%的免费代理修改你的内容
+https://www.solidot.org/story?sid=44535	32578
+免费的东西是有代价的。免费的代理服务器当然也是如此，你根本不知道代理服务器的管理员除了插入广告是否还做了其它事情。Christian Haschek<a target="_blank" href="https://blog.haschek.at/2015-analyzing-443-free-proxies"><u>测试了443个免费代理</u></a>，发现只有199个上线，其中157个没有使用HTTPS，17个修改了JS内容，33 个修改了HTML静态网页，大部分是插入广告，其中可能有 cookie窃取。作者认为，如果你真的要使用免费代理服务器，应该尽可能使用支持HTTPS的。
+➜微软澄清Windows 10免费赠送条件
+https://www.solidot.org/story?sid=44536	34464
+微软官方博客上周<a target="_blank" href="http://www.solidot.org/story?sid=44513"><u>透露了</u></a>任何人都可以免费获得正版Windows 10的条件：只需要参与Windows 10 Insider预览版测试。盗版用户也可以获得正版Windows 10？微软随后多次更新了<a target="_blank" href="http://blogs.windows.com/bloggingwindows/2015/06/19/upcoming-changes-to-windows-10-insider-preview-builds/"><u>博客内容</u></a>进行澄清：不是任何人都能获得正版Windows 10的， 参与Insider预览版测试的用户必须有有效的Windows 7或Windows 8授权才能在正式发布后获得Windows 10的正版授权。如果没有Windows 7或Windows 8的正版授权？<a target="_blank" href="http://arstechnica.com/information-technology/2015/06/microsoft-clarification-kinda-clears-up-free-windows-10-license-confusion"><u>永远参与</u></a>Windows 10的预览版测试。
+➜波兰航空公司计算机遭黑客攻击，多个航班取消
+https://www.solidot.org/story?sid=44537	35798
+在黑客攻击了用于发布飞行计划的计算机系统之后，有大约1400名乘客滞留在波兰华沙肖邦机场。攻击来源目前还不清楚。攻击发生在上周日下午，五个小时后问题才最终解决。攻击目标是波兰国有的航空公司LOT。有10个LOT航班取消，十多个航班推迟，已经起飞的航班和机场本身没有影响。LOT没有披露细节，只是表示当局正对此展开调查。
+➜美国面临回收业的国家危机
+https://www.solidot.org/story?sid=44538	38017
+美国的回收行业曾经是有利可图的，但过去几年它开始亏损了。事实上，几乎每一家美国回收企业都是亏损的，行业领袖警告<a target="_blank" href="http://www.washingtonpost.com/local/dc-politics/american-recycling-is-stalling-and-the-big-blue-bin-is-one-reason-why/2015/06/20/914735e4-1610-11e5-9ddc-e3353542100c_story.html?hpid=z3"><u>情况会变得愈加恶化</u></a>。美国最大的回收公司Waste Management今年第一季度亏损了1600万美元。美国回收行业的问题与全世界和本国都有关系。油价下跌，强势美元，中国经济增速放缓，诸多因素导致回收成本上升。其中一个大问题是中国人不再想要美国的电子垃圾了，中国的集装箱货船向美国运送了大量消费商品，回程时这些船几乎都是空的。中国海关总署在2013年<a target="_blank" href="http://www.solidot.org/story?sid=36130"><u>发起了绿篱专项行动</u></a>，打击进口洋垃圾。

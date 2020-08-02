@@ -1,0 +1,571 @@
+➜切换开关后，是否还需要通过文案说明状态？
+https://www.uisdc.com/switch-status	58634
+<h4><span class="auto_menu">背景</span></h4>
+<p>问题来自一次旁听：开关状态切换前后，除了开关控件的UI状态，开关说明是否应该也有反馈差异？我觉得还挺有意思的。</p>
+<p>小L：开关打开和关闭可以通过开关控件的UI反馈,所以开启前后说明文案没有差别也不会让用户不理解.</p>
+<p>小W：开关打开前后说明文案没有差异，只通过UI状态反馈真的已经让用户清楚的知道开启的状态吗？</p>
+<p><span class="img-zoom"><img alt="切换开关后，是否还需要通过文案说明状态？" class="alignnone size-full wp-image-381671" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-pt-20200727-1.jpg" width="1650" height="220" /></span></p>
+<p>△ 开关状态切换开关说明的无差别反馈</p>
+<p>那么为了更好的帮助用户理解开关操作生效与否，开关状态切换还需不需要额外的反馈，如我们讨论中的开关说明是否还需要差异反馈？</p>
+<h4><span class="auto_menu">思考</span></h4>
+<p>我们查阅了material design规范，并根据收集到的开关控件使用的关键2个关键点寻找解决方案。</p>
+<p><strong>1. 开关控件的交互需立即生效。实际状态有所延迟时应显示处理状态</strong></p>
+<p>基于这个关键点，我们走查了一些APP发现有这样的共性：直观感受到操作后立即生效的效果，一般不会再设计额外反馈。</p>
+<p><span class="img-zoom"><img alt="切换开关后，是否还需要通过文案说明状态？" class="alignnone size-full wp-image-381660" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-kg-20200727-3.jpg" width="990" height="535" /></span></p>
+<p>△ vivo手机深色模式和WiFi设置页</p>
+<p><strong>2. 开关控件的文本需帮助用户理解「开关控制的选项含义」及其「所处的状态」。这里的文本包含开关名称和开关说明</strong></p>
+<p>基于这个关键点，我们也走查了一些APP发现：当开关名称足够简单清晰且无歧义的描述了开关控制代表的含义及所处状态，一般也不再设计额外的反馈。</p>
+<p><span class="img-zoom"><img alt="切换开关后，是否还需要通过文案说明状态？" class="alignnone size-full wp-image-381664" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-kg-20200727-7.jpg" width="560" height="437" /></span></p>
+<p>△ 微信读书截图</p>
+<p>基于以上分析，我们发现开关控件是否需要额外反馈的问题本质其实是需要先思考是否能让用户感受到立即生效。如果不能，则设计应该提供反馈以帮助用户理解开关控制代表的含义及其所处的状态说明。</p>
+<h4><span class="auto_menu">延伸</span></h4>
+<p>那么开关状态切换的反馈方式如何设计？</p>
+<h5>1. 利用开关说明做切换反馈</h5>
+<p>上文所述，material design描述中，文本的作用是帮助用户理解「开关控制的选项含义」及其「所处的状态」。官方定义中文本不区分开关名称和开关说明，统一叫做文本。那么为了更好的使用户理解语义，也就不难明白为什么一些产品只有开关名称没有说明，有些则是二者都有。可能实际应用中，设计师可以根据开关选项所代表的含义复杂程度，有时仅显示开关名称，有时需要显示开关说明。</p>
+<p>以此为标准，我们的设计案例中，开关说明缺失了所处状态的含义说明。（开启前后说明无变化）</p>
+<p><span class="img-zoom"><img alt="切换开关后，是否还需要通过文案说明状态？" class="alignnone size-full wp-image-381672" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-pt-20200727-2.jpg" width="1650" height="220" /></span></p>
+<p>△ 旧版方案</p>
+<p><strong>YY方案A：</strong></p>
+<p>按照规范定义，描述状态。关闭时：未开启，无法享受当下最新、最热的手游推荐；开启时：已开启，将为你不定期推荐当下最新、最热手游。</p>
+<p><span class="img-zoom"><img alt="切换开关后，是否还需要通过文案说明状态？" class="alignnone size-full wp-image-381673" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-pt-20200727-3.jpg" width="1650" height="220" /></span></p>
+<p>△ YY方案A</p>
+<p><strong>#But..</strong></p>
+<p>通过文本说明做反馈在实际的应用中更灵活：增加业务诉求的考虑。未开启时，不描述负面信息而是展示利益点，吸引用户开启。以美团外卖为例：</p>
+<p><span class="img-zoom"><img alt="切换开关后，是否还需要通过文案说明状态？" class="alignnone size-full wp-image-381663" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-kg-20200727-6.jpg" width="1017" height="200" /></span></p>
+<p>△ 美团外卖截图</p>
+<p><strong>YY方案B：</strong></p>
+<p>增加业务侧考虑，描述开启后的正向结果。关闭时：开启后，可享受当下最新、最热手游推荐；开启时：已开启，将为你推荐当下最新、最热手游。</p>
+<p><span class="img-zoom"><img alt="切换开关后，是否还需要通过文案说明状态？" class="alignnone size-full wp-image-381674" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-pt-20200727-4.jpg" width="1650" height="220" /></span></p>
+<p>△ YY方案B</p>
+<h5>2. 其他切换反馈方式</h5>
+<p>日常使用其他产品时除了上述通过文本说明反馈还可以使用toast和dialog的方式进行反馈。但这两种方式都相比文本说明有不同强度的提升。</p>
+<p><strong>toast。立即生效后的效果需要强化说明。</strong></p>
+<p><span class="img-zoom"><img alt="切换开关后，是否还需要通过文案说明状态？" class="alignnone size-full wp-image-381669" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-kg-20200727-12.jpg" width="990" height="687" /></span></p>
+<p>△ QQ音乐截图</p>
+<p><strong>dialog。立即生效前有必要操作（授权等），或是，立即生效前有必要告知（风险等）。</strong></p>
+<p><span class="img-zoom"><img alt="切换开关后，是否还需要通过文案说明状态？" class="alignnone size-full wp-image-381670" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-kg-20200727-13.jpg" width="990" height="687" /></span></p>
+<p>△ 微信&amp;QQ音乐截图</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>开关设计的两个思考：</p>
+<p><strong>1. 开关状态切换是否需要额外的反馈设计？</strong></p>
+<p>判断用户是否可以感受到操作后立即生效的效果；判断开关文本是否足够简单清晰且无歧义的描述开关控制的含义及状态。</p>
+<p><strong>2. 开关状态切换的反馈方式如何设计？</strong></p>
+<p>利用开关说明做切换反馈。也可以依据期望提醒强度的选择是否使用toast或者dialog的方式进行反馈。</p>
+<p>更多关于开关的深度教学：</p>
+<p>[link https://www.uisdc.com/interaceton-checkbox-radio-switch]</p>
+<p>欢迎关注作者微信公众号：「VMIC UED」</p>
+<p><span class="img-zoom"><img alt="切换开关后，是否还需要通过文案说明状态？" class="alignnone size-full wp-image-381269" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-ew-20200723-1.jpg" alt="用实战案例，帮你掌握设计师常用的设计模型（一）" width="180" height="182" /></span></p>
+➜用一篇超全面的文章，帮你了解Y2K的美学文化
+https://www.uisdc.com/y2k-visual-culture	58640
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381630" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-3.jpg" width="1023" height="800" /></span></p>
+<h4><span class="auto_menu">亚文化</span></h4>
+<p>Y2K跟其他的这些文化也是一样的，是千千万万种文化中的一种。</p>
+<p>亚文化又称次文化、非主流文化，并非嘲讽，指的是从母文化（主流文化）中衍生出来的新兴文化，小众文化。在主文化背景下，属于某一区域或集体所特有的观念和生活方式，包含了主流文化相通的价值观也有属于自己独特的价值观。</p>
+<p>亚文化更加主动积极，而主流文化更趋向于被动；亚文化是有成为主流文化的可能的，如说唱文化，街舞文化等。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381655" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-28.jpg" width="1080" height="369" /></span></p>
+<h4><span class="auto_menu">Y2K=Year 2000 Kilo=千禧年</span></h4>
+<p>还记得千年虫bug吗？当时家长都以为是生物病毒，作为孩子拥有了第一次以训导处的口吻教育了家长：那是电脑病毒，不会人传人！由于当年的电脑大砖头只能用两位十进制数标识，很容易出现错误，也导致整个话题成为千禧年茶余饭后的谈资。所以Y2K就是千禧年文化之意，此篇更着重探讨Y2K标志性的美学文化。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381634" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-7.jpg" width="1080" height="293" /></span></p>
+<p>百年难得跨世纪，所以Y2K美学的诞生基于人们对未来的憧憬与向往，源自于对高科技的想象以及刻画，核心思想是乐观主义和技术乌托邦文化。</p>
+<p>彼时互联网刚兴起，科技电子产业蓬勃发展，大家对科技感兴趣十足。以电子产品、电脑UI为主，形成了鲜明独特的风格，也延续影响到了时尚、设计等众多领域。</p>
+<p>并非所有审美都可以定义Y2K美学，核心是科技感，当时人类在当下环境对未来科技的猜想有关。「紧身裤、银色眼影、闪耀服装、Oakley墨镜、渐变和电子产品。」研究专家Evan Collins如此评价道。</p>
+<p>到底有多独特？让我们现在去让他洗礼一番。</p>
+<h4><span class="auto_menu">当时的Y2K</span></h4>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381637" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-10.jpg" width="1080" height="734" /></span></p>
+<p><strong>1. 数码电子</strong></p>
+<p>冷战结束、经济复苏、社会和平繁荣，及时行乐的态度产生无限循环的美妙幻想，未来世界仿佛触手可及。「乐观」与「科技」两个元素代表的正是Y2K给当时人们的精神寄托。</p>
+<p>造型：当时的工业造型曲线构成居多，视觉效果柔和温润，触感圆润不冰冷，现在看来甚至有些笨拙，但却充满人文关怀与趣味性，值得反复回味。</p>
+<p>质感：外观哑光质感，间接穿插透明塑料感能让人直接看到内部器械；按键声音如巨石掷地，使得人们常在操控中对声响回馈流连忘返，那是个属于机械的年代，通过按键声音的频率还能判断人的情绪起伏。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381631" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-4.jpg" width="1080" height="678" /></span></p>
+<p><strong>2. UI界面</strong></p>
+<p>分辨率：因为技术尚未成熟，没有过高分辨率的显示设备，画面大都以低保真状态呈现。这种低分辨率lofi（Low-Fidelity低保真）的状态也成为了主流。</p>
+<p>拟物化：现实场景初来乍到，在屏幕上自然带上现实中的高光阴影以及渐变。按钮质感强烈，字体恨不得堆积上所有的图层样式。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381633" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-6.jpg" width="1080" height="474" /></span></p>
+<p><strong>3. 鞋饰</strong></p>
+<p>材质透明、摇晃的果冻质感，以及极具未来感造型，代表人们对未来的憧憬，而设计师又把这份情感嫁接到鞋饰上。Y2K似乎是具有一种由技术缺陷、叙事落差而产生的独特未来感，毕竟以当时的技术，审美意识必须根植于当前的技术基础上。所以研究专家Evan Collins说：「曲线在Y2K占有至高无上的地位，因为在此之前无法轻易完成曲线设计。」如果你还不太明白，推荐《快乐星球》。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381632" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-5.jpg" width="955" height="800" /></span></p>
+<p><strong>4. 华语音乐</strong></p>
+<p>除了视觉，听觉也迸发一波爆炸产出。</p>
+<p>2000年前后也是华语乐坛的百年盛世，出现了众多划时代的歌手组合以及歌曲。曲风各异编曲高级词谱深刻，二十年后的今年听起依然高级不过时。创作能力、编曲功底、甚至包括mv精良度及创意秒杀如今小鲜肉体无完肤。</p>
+<p>黑归黑，捧归捧，若干世纪后我相信千禧年的华语盛世就会像几千年的文艺复兴，而周王林陶就是那个井喷时代的达芬奇、拉斐尔、米开朗琪罗。</p>
+<h4><span class="auto_menu">现在的Y2K</span></h4>
+<h5>1. 音乐</h5>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381635" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-8.jpg" width="1080" height="610" /></span></p>
+<p>抛开音乐风格不说，包装形式上，作为先锋人物的Lady Gaga以及七哥都选择用Y2K的风格去呈现。也代表了Y2K在音乐界受到的认可。</p>
+<p>音乐上，个人感觉Lofi质感的音乐跟当年Low Fidelity视觉低保真的状态相呼应，一听一视，形成感官闭环，建议做设计可以带上耳机感受那受损的、不完美不自然的音乐状态。</p>
+<h5>2. 服饰</h5>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381636" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-9.jpg" width="1080" height="595" /></span></p>
+<p><strong>大牌引领</strong></p>
+<p>服饰行业是引领Y2K浪潮的先锋者、带头人，也是把Y2K由小众引领到大众的主要载体。</p>
+<p>Dior2019年大秀极具未来感，与空山基联觉呈现，轰动时尚界，给当下人们带来缤纷五彩、极具未来感科技感的盛宴。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381638" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-11.jpg" width="1080" height="509" /></span></p>
+<p><strong>PVC/渐变</strong></p>
+<p>Y2K引领下服饰特征明显，PVC透明胶质材质&amp;渐变霓虹感的折射材质。继承Y2K特征的透视设计更加简洁干脆。当年露出机械，如今我们露出肉体。这种简单直白，不加遮掩的装饰，居然如此引人入胜，虽然真的很容易捂出痱子。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381639" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-12.jpg" width="1080" height="513" /></span></p>
+<p><strong>饰品</strong></p>
+<p>当初的Y2K时期的墨镜，大胆、浮夸具有未来感，流线型为主，佩戴方式怪异，上公交都有可能有人让座。而当下流行的造型更加简洁直白，金属感、透明感仍是不变的基因。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381640" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-13.jpg" width="1080" height="424" /></span></p>
+<h5>3. 鞋子</h5>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381641" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-14.jpg" width="1080" height="475" /></span></p>
+<p>巴黎世家老爹鞋，多少大家都见过盗版的。掀起了前几年的复古鞋饰风潮，穿上一米七变一米六，鞋大真的很显矮。但也代表边缘审美逐渐向时尚核心靠拢。</p>
+<p>还记得当年的Y2K工业造型的主流形象吧，曲线大砖头电脑，造型圆润，工业的棱角毫无保留，如今的鞋子也延续了这种外造型「曲线美」。饱含对未来的寄托，宇宙成了人们的想象场景。所以宇宙飞行服曲线造型、银色反光，也被运用到了鞋饰上面。</p>
+<p>当年软件也刚好勉强能完成制作曲线、水滴、高光、分层透明度等元素，而这些元素也被应用在当下的各种产品中。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381642" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-15.jpg" width="1080" height="260" /></span></p>
+<p>透明：得益于技术的发展，透明在各领域中运用比例渐增尤其球鞋设计中，透明、弧线的气垫设计也成为了复古卖点。</p>
+<p>金属：大面积金属镀银层技术不多见，工艺难度大，后期脱离龟裂易显廉价，此外还要考虑与其他材质的和谐度；反光率、折射率也需要不断尝试寻找最佳值。</p>
+<p>科技：此外，笨拙科技感的造型也融入在了鞋型中。</p>
+<h5>4. 艺术品</h5>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381644" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-17.jpg" width="1080" height="487" /></span></p>
+<p>1947 年出生在日本的空山基被誉为「日本最有代表性的情色插图大师」。此处我只列举几张保守的作品。他靠着毛笔，铅笔和丙烯酸涂料创作，笔下的形象从 1970 年开始演变成 21 世纪的未来气息机器人，概念数字艺术作品一直领先于时间，线上线下都取得了巨大成功。</p>
+<p>曲线是女性完美的象征，而金属却给人欲望障碍感的冲突。以及当下人们对未来幻想美好，现实却是虚无空洞，强烈的矛盾感和未来主义的冲突。这两个冲突的相似点，让空山基的作品也充满了Y2K的审美意味。</p>
+<h4><span class="auto_menu">Y2K视觉特征</span></h4>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381643" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-16.jpg" width="1080" height="610" /></span></p>
+<p>看了众多Y2K在其他领域的表现，回归到视觉传达中，Y2K是以什么形式得以展现呢？基于不才对Y2K的浅显见解，总结了6大Y2K的特征供大家探讨。</p>
+<h5>5. 金属</h5>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381646" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-19.jpg" width="1080" height="746" /></span></p>
+<p><strong>质地</strong></p>
+<p>金属质感对人当时的人们有着如痴如醉的吸引力，是科技感的主要表达形式 ，代表着人们对未来的期望，对未来科技状态的一种描绘。不管是原始的PS图层样式或者是C4D渲染都能营造同样的结果，虽然精细有差，但是感觉依旧到位。</p>
+<h5>6. 曲线</h5>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381645" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-18.jpg" width="1080" height="572" /></span></p>
+<p><strong>形态</strong></p>
+<p>受工业流线型造型的影响，在视觉表现中，形态都爱以不规则的曲线去构造，给人以一种未确定的感受。</p>
+<h5>7. 透明</h5>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381647" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-20.jpg" width="1080" height="546" /></span></p>
+<p><strong>质感</strong></p>
+<p>鞋饰中看到了大量的pvc材料，在视觉中因为能表现透明的手段有限一般平面都采用光晕等办法营造风格。如今，随着科技技术发展成熟，渲染技术已经能对未来世界进行真实刻画，这种半透明带反光的质感也能带来强烈Y2K感受。</p>
+<h5>8. 渐变</h5>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381648" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-21.jpg" width="1080" height="695" /></span></p>
+<p><strong>色彩形式</strong></p>
+<p>带着对未来的美好幻想，多色相、高度饱和的色彩成为了特有标志，渐变的处理方式仿佛一块流动的瀑布，极具律动感与方向感，人的思绪仿佛受到画面的牵扯，进入了异次元的空间状态。</p>
+<h5>9. 高光</h5>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381649" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-22.jpg" width="1080" height="541" /></span></p>
+<p><strong>细节上</strong></p>
+<p>当年的Y2K由于技术条件有限，计算机及软件恰好能满足设计师第一次制作各种效果，金属质感的高光所以被渲染得比较拙劣，也就是这种粗狂的高光方式能让视觉表现得到点睛之笔。后来，高光还被演变成了 扁平的符号，在很多视觉表中应用。</p>
+<h5>10. 连续</h5>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381650" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-23.jpg" width="1080" height="633" /></span></p>
+<p><strong>环绕式</strong></p>
+<p>在画面四周围绕着画面主体,文字在这种状态下意义从释义倾向了装饰，形成一种独有的版式风格。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381651" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-24.jpg" width="1080" height="443" /></span></p>
+<p><strong>瀑布式</strong></p>
+<p>字体或者图形由上而下、从左到右紧密排布。字体反复出现加深用户对内容的印象，其实对于识别性来说他的装饰意义更大。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381652" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-25.jpg" width="1080" height="548" /></span></p>
+<p><strong>递进式</strong></p>
+<p>除了等距的罗列，还有递减递增的处理方式，甚至加点浮动的感觉能锦上添花，营造一种强烈的视觉感受，犹如声波一样传递。</p>
+<h4><span class="auto_menu">Y2K的个人尝试</span></h4>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381653" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-26.jpg" width="1080" height="206" /></span></p>
+<p>因个人能力有限，对于Y2K的分析只能到此，整个知识冰山太过于庞大，本人只是敲了一丝雪屑出来，算是抛砖引玉。</p>
+<p>接下来，斗胆用不才总结的几大特征尝试做一组Y2K练习，若有跑偏还请海涵。</p>
+<p>首先套公式，每部分元素按部就班逐一罗列。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381654" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-27.jpg" width="720" height="800" /></span></p>
+<p>把他们合并后。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381629" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-2.jpeg" width="1080" height="4519" /></span></p>
+<p>时代的发展使得人们已经快忘却纸本的魅力了，把自己作品打印出来，才能真切地感受到温度与思维。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381628" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-dx-20200727-1.jpeg" width="605" height="800" /></span></p>
+<p>更多设计美学：</p>
+<p>[link https://www.uisdc.com/mac-visual-histroy-vol03]</p>
+<p><strong>参考文献</strong></p>
+<ul>
+<li>[1] 杜绍斐《潮流已死，接下来什么风格会榨干你的钱包？》</li>
+<li>[2] NOWRE现客《一种不容发现的潮流趋势…》</li>
+<li>[3] 夏目and撕撕《空山基与他的情欲机器人…》</li>
+<li>[4] Size尺码《被Balenciaga和Nike复活的Y2K美学，到底是什么？》</li>
+<li>[5] Design360 《这座网页设计博物馆，让我回到拨号才能上网冲浪的千禧年》</li>
+<li>[6] 维基百科、百度百科</li>
+</ul>
+<p>欢迎关注作者微信公众号：「VMIC UED」</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你了解Y2K的美学文化" class="alignnone size-full wp-image-381269" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-ew-20200723-1.jpg" alt="用实战案例，帮你掌握设计师常用的设计模型（一）" width="180" height="182" /></span></p>
+➜如何做好Banner设计？先掌握这个高手都会的空间陈列法！
+https://www.uisdc.com/space-display	59352
+<p>「空间陈列法」是说先构建一个空间，然后将主体元素用合适的形式陈列出来。</p>
+<p>这是随着手机兴起而真正流行起来的一招，因为PC时代都是宽大的横屏设计，适合展现视野开阔的大场面，像大漠、海边等等，而「空间陈列」作为小场景，在PC端就显得不大气，因此使用较少；而手机端却刚好相反，瘦长竖屏就适合表现长焦特写的小场景，像微距下的花鸟鱼虫等等，这时「空间陈列」就用的恰到好处。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381519" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-4.jpg" width="800" height="382" /></span></p>
+<p>如图所示，同样的产品展示图，在PC端就显得单薄，版面空缺，整体不饱满；而在手机端则用的刚刚好，确实这种长焦特写、微距放大的陈列小场景就是手机屏的最爱，所以在手机时代，空间陈列图才会呈现井喷式增长。</p>
+<p>其实合成、三维和摄影都可以实现「空间陈列」，但本书还是以合成为主，而合成的难点就在于如何将产品和空间进行自然融合，不能有违和感。</p>
+<p>若想合的天衣无缝，第一步就是要做到「透视准确」，而透视作为构图中的重要知识点，可以说是无处不在，在前面的章节里也多次提及。我们只有掌握透视的变化规律，才能准确表现出元素的空间关系，如果透视不对，那空间将会失真，下面就来详细讲讲这个理性知识点——透视。</p>
+<h4><span class="auto_menu">焦点透视</span></h4>
+<p>日常生活中，当我们看周围事物时，会有远近、高低、长短、宽窄等不同，这是由于距离、方位等差异在视觉中呈现的不同反映，这种现象就是透视。透视学的出现可以帮我们非常科学的表现各种空间感和立体感，它广泛用于绘画、建筑、环艺、设计等诸多领域，而常见的透视共3类：空气透视、散点透视和焦点透视，这3类的侧重点各有不同。</p>
+<p>空气透视又称「色彩透视」，由于空气介质的存在（雨、雪、雾、烟等），使人们看到近处景物比远处的轮廓更清晰、色彩更饱满的视觉现象，例如下方海报中的「烟雨蒙蒙」，这种近实远虚感就是典型的空气透视，随着镜头拉远，山川也变得越来越模糊。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381561" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-46.jpg" width="800" height="515" /></span></p>
+<p>散点透视则是中国画特有的一种透视类型，例如下方的《清明上河图》就是这类透视的代表作，在这五米长的画卷中，很难找出画家的具体观察位置，好似在移动中作画，每到一处画一部分，最后拼接起来，这种视点不断移动的画法就是散点透视，散点透视适合表现景色的波澜壮阔，重在写意，体现一种气势和意境。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381556" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-41.jpg" width="800" height="269" /></span></p>
+<p>而焦点透视才是本文重点，它是透视学中的核心理论，也是西方绘画所遵循的透视原则，最早研究透视就是从这里开始，如果散点透视是「写意」，那焦点透视则「写实」，一切都以客观还原为准。</p>
+<p>例如名画《最后的晚餐》，所有视线都汇聚一点（称为灭点），营造出一种立体空间感，这些就像自己身处画面中央所看到的逼真景象。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381529" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-14.jpg" width="800" height="401" /></span></p>
+<p>而我们在设计中常说的透视也都指「焦点透视」，这是我们需要掌握的重中之重。记得高中学习素描时，老师就说画静物要「近大远小」，其实就是对焦点透视最为形象的描述，例如草地上的奶牛，离我们越近就越大，越远则越小，正是这种近大远小的透视变化才使场景有了空间和层次。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381562" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-47.jpg" width="800" height="457" /></span></p>
+<h4><span class="auto_menu">观察视角</span></h4>
+<p>在介绍焦点透视前，我们先说说透视中一个很重要的影响因素——观察视角。视角即指人眼（称为视点）在观察事物时视线之间所形成的角度。</p>
+<p>如下图所示，其实就是人眼观看角度的变化，常见有3种：当我们平视前方时就是「平视视角」；仰头看时则是「仰视视角」；低头看时便是「俯视视角」。</p>
+<p>其中平视时人眼和物体形成的假想连线称为「水平视线」，这是判断视角高低的参考线。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381528" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-13.jpg" width="534" height="305" /></span></p>
+<p>当我们将产品放入空间时，就要根据陈列形式选择合适视角，从下方的示意图中能看到，三种视角给人的感受都不相同：</p>
+<ul>
+<li>平视有种方方正正感，给人一种非常自然的观察感受，虽然中规中矩但视觉舒服；</li>
+<li>仰视则能体现产品的高大和气势，用来烘托价值感；</li>
+<li>而俯视最接近我们日常看桌面小物品的视角，很真实也很亲切，同时还凸显了产品的立体感。</li>
+</ul>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381564" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-49.jpg" width="800" height="194" /></span></p>
+<p>而上图的仰视和俯视都属于小视角，即产品视线和水平视线的夹角较小，这是设计中的常见视角，大概就是把头微微抬起或低下时看到的场景，这时画面最自然也最舒服。反之若视角过大，即头抬的很高或压的很低时，这时产品的形变就很夸张，显得刻意、不舒服。</p>
+<p>说完3种视角，现在正式讲解焦点透视，一般根据物体灭点的数量不同，焦点透视又分3种：平行透视（一点透视）、成角透视（两点透视）和斜角透视（三点透视），它们都有各自的透视效果和适用范围，但若铺开讲会很复杂，因此下面就结合「空间陈列」进行介绍。</p>
+<h5>1. 平行透视</h5>
+<p>用立方体简单说明，就是有一面与画面平行，这时物体的厚度边线若向内延伸，最后都会汇聚到1个点上，因此又称「一点透视」。这是最简单也最易掌握的一种透视形式，其中汇聚点称为「灭点」，而灭点所在的那条线则是「视平线」，即与人眼等高的一条水平线。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381521" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-6.jpg" width="552" height="373" /></span></p>
+<p>再来看看平行透视在生活中的场景呈现，如图所示，将各种景物进行前后连线并延伸，最后都是汇到一点才消失。平行透视适合表现场景纵深，给人一种正式感和平和感。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381541" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-26.jpg" width="800" height="407" /></span></p>
+<p>电商中的产品展示也一样，例如下方示意图中，不管哪种视角，产品和立方体都是正对观众，让人觉得摆放角度正正好。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381538" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-23.jpg" width="800" height="337" /></span></p>
+<p>总体来说平行透视只有1个灭点，变化并不多，视觉表现单一，没有太多的空间变化，基本就是从正面来表现整个场景，因此上手简单，只要确保前后连线都汇聚一点即可，这样画面各元素也会显得整齐。但有时这种正视会让画面缺少层次感，显得很平，此时可尝试俯视视角或者强化背景的空间纵深。</p>
+<p>下面展示平行透视在3种视角下的应用案例，注意观察不同视角下的产品呈现和透视变化，虽然微妙，但每种视角确实给人不一样的视觉感受。</p>
+<p><strong>平行平视</strong></p>
+<p>当画面为平行透视和平视视角时，这时的观察位置很正。如下图所示，空间和产品都显得有些平整，虽然场景的立体感较弱，但视觉舒服协调，表现起来也相对简单。注意平视的「视平线」基本位于主体元素的中心处，即是说人眼此时正对前方物体的中心，这样才会有平视效果。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381517" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-2.jpg" width="800" height="892" /></span></p>
+<p><strong>平行仰视</strong></p>
+<p>当画面为仰视时，一般视角都不会太大，微微仰视即可，这样视觉才舒服。如下图所示，其实和平视比起来，小角度仰视的透视变化并不明显，没有夸张形变，但依然能体现空间和产品的高大。此时「视平线」位于主体中心靠下的位置，这时人眼明显是从下往上看。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381557" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-42.jpg" width="800" height="287" /></span></p>
+<p><strong>平行俯视</strong></p>
+<p>如果觉得画面的层次感和立体感不够，那就尝试下俯视视角，如下图所示，由于俯视时我们能同时看到物体的顶面和正面，这样就能表现物体的厚度，立体感也明显增强。而画面的「视平线」则位于主体中心靠上的位置，这时人眼就是从上往下看，但同样属于小角度俯视。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381536" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-21.jpg" width="800" height="865" /></span></p>
+<h5>2. 正俯视</h5>
+<p>平行透视的俯视还有一种特殊情形——正俯视，即视角为90°的俯视，这时我们是从物体的正上方低头往下看，如下图所示，当产品平放桌面时，正俯视能清晰看到产品的全貌。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381527" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-12.jpg" width="534" height="320" /></span></p>
+<p>在空间陈列中这是一种常见视角，上手简单，展现清晰。例如下方案例中，俯视下的产品摆放非常灵活，根据构图需求可以工整 ① 也可以随意 ② ，并且产品多以正面展现为主，整体直观、舒服。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381524" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-9.jpg" width="800" height="459" /></span></p>
+<p>以上都是产品的陈列案例，其实正俯视有时也会用于场景呈现中，如下图所示，视点位于场景的正上方，有点类似无人机的俯瞰拍摄，这种看似「刁钻」的视角能给画面带来独特的戏剧效果，令人印象深刻。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381560" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-45.jpg" width="800" height="486" /></span></p>
+<p><strong>空间平行透视</strong></p>
+<p>除了3种视角，这里还要介绍一种平行透视的常见形式——空间平行透视，这种形式即画面的正前方有个类似方盒的纵深空间，而人物或产品就放置在空间里。</p>
+<p>如图所示，该形式也有视角的3种变化，但为了确保视觉的自然舒服，仰视和俯视也都是小角度的上下摆动，所以产品的透视变化并不明显，场景呈现也没有很夸张。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381549" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-34.jpg" width="800" height="283" /></span></p>
+<p>为何要将该形式单独列出？因为它非常适合手机端的竖屏构图。</p>
+<p>手机不像PC，无法通过宽屏来表现视野开阔的大场面，手机屏更适合长焦特写的小场景，但这样有时就会显得左右拥挤不透气，这时「空间平行透视」就刚好取长补短，通过「深度」刻画将狭窄空间的纵深感体现出来，最终使观者视线在前后维度上有了延伸和舒展。</p>
+<p>该形式正是利用平行透视的纵深性，才最大程度缓解了手机屏的拥挤感。下面分视角列举案例，要注意不管平视、仰视还是俯视，空间里的所有元素最后都要汇聚一点，这样透视才合理，纵深效果也最好。</p>
+<h5>3. 空间平视</h5>
+<p>3种视角中，空间平视最常见，因为这种方方正正的空间展示最适合手机的竖屏构图，看着最舒服，上手也简单，易于搭建。在平视下，由于没有视角的高低变化，空间基本位于人眼的正前方，无任何偏移，摆放角度非常正，构图给人一种稳定感，元素也没有夸张形变，组合方便，真实自然。</p>
+<p>对于「空间平行透视」，「深度」刻画很关键，我们要根据版面构图选择合适的深浅。例如下方案例中：① ② 的深度浅，空间相对封闭，适合展现小空间，给人温馨感和趣味性；而 ③ 的深度深，空间开阔，适合展现大空间，这样能让视线更舒展，画面更透气。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381565" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-50.jpg" width="800" height="1238" /></span></p>
+<h5>4. 空间仰视</h5>
+<p>在仰视下，我们是抬头向上看，这时空间显得高大，给人强烈的气势感。如下图所示，视平线贴近地面，像是我们蹲着向上看，这种仰望视角，建筑和人物都很高大，再加上强烈的纵深感，虽然空间左右依然狭窄，但上下和前后维度却变的非常开阔，画面通透。</p>
+<p>空间仰视能渲染氛围，提升场景的戏剧效果，突出视觉冲击力，但要注意仰视视角不能太大，否则夸张的仰视效果反而给人一种压抑感。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381558" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-43.jpg" width="800" height="468" /></span></p>
+<h5>5. 空间俯视</h5>
+<p>在俯视下，视平线处于空间中心的上方，类似我们站在高处往下看，如下图所示，这时空间显得立体，远近的各类元素也能得到清晰展现，层次分明。</p>
+<p>俯视适合展现空间的全局观，也让各物体有着丰富的体积感。除非有特殊的构图需求，不然和仰视一样，俯视视角不能过大，否则俯视就变成俯瞰，会产生遥远的距离感，空间也压缩的厉害，进而导致形变和失真。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381547" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-32.jpg" width="800" height="948" /></span></p>
+<h4><span class="auto_menu">成角透视</span></h4>
+<p>还是拿立方体举例，就是物体与画面形成一定夹角，这时物体的所有边线分别向各自方向进行延伸，最后会在视平线上形成一左一右2个灭点，因此又称「两点透视」。这类透视最接近我们日常的观察角度，即是说大部分时候，我们看到的物体都属于成角透视。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381548" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-33.jpg" width="800" height="375" /></span></p>
+<p>虽然成角透视只比平行透视多了1个灭点，但2个灭点的位置却很灵活，这样空间的透视变化也更加丰富。</p>
+<p>例如下方是我们经常看到的景象，虽然都是典型的成角透视，但 ① 是2个灭点都在画面外，这时建筑给人的感觉结构平稳，立体感强，侧重写实；而 ② 则是1个灭点在画面内，另1个在画面外，这时空间右侧的透视形变较大，产生纵深感，整个场景更有张力和冲击。</p>
+<p>其实还有第3种情形是2个灭点都在画面内，但由于空间会产生夸张形变和失真，因此总体少见，不再举例说明。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381530" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-15.jpg" width="800" height="601" /></span></p>
+<p>再看看成角透视下的产品展示效果，如下图所示，不同于单面展示为主的平行透视，成角透视则以展示物体的两面为主，这样立体感更强，构图也更稳定。注意在成角透视中，画面所有的竖向边线都是平行，不会产生灭点。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381539" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-24.jpg" width="800" height="327" /></span></p>
+<p>相比平行透视，成角透视在表现上更复杂一些，一般都以2灭点在画面外的情形为主，这时透视最舒服。注意要想画面只产生2个灭点，那当中的所有元素都需排列整齐，这也是成角透视的常用做法，此时画面会显得整齐统一。下面列举3种视角下的电商案例，其中以仰视和俯视最为常见。</p>
+<h5>1. 成角平视</h5>
+<p>平视下的成角透视相对少见，因为使用成角透视就是为了凸显物体的立体感，但平视由于视角很正，恰恰就会显得立体感较弱，这时2种效果会有矛盾，影响场景的协调性。例如下方的2个案例中，产品看着就有些平整，和方形盒子以及立方体稍显冲突，但整体视觉真实平和，没有形变。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381535" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-20.jpg" width="800" height="879" /></span></p>
+<h5>2. 成角仰视</h5>
+<p>仰视下的成角透视就显得刚刚好，如下图所示，所有元素均用2个立面展示，加上透视形变，这时空间的立体感强，产品和立方体也都有明显的体积感，视觉平稳、饱满，而且还能体现产品形象的高大，凸显价值感。</p>
+<p>注意2个案例中，视平线上都只有2个灭点，这是因为产品和立方体的排列都很整齐，反之若无序排列，就会产生多个灭点，这样画面会显凌乱，视觉不舒服，所以在表现成角透视时，尽量确保所有元素都能整齐排列。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381531" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-16.jpg" width="800" height="841" /></span></p>
+<h5>3. 成角俯视</h5>
+<p>在成角透视中，俯视视角最常见。因为该视角下的物体可以展现3个面，能进一步强化元素的立体感和方位感，如图所示，物体的空间关系明显，层次分明，构图也平稳。</p>
+<p>一般成角俯视适合小场景陈列（若是大场景则垂直方向会发生严重形变，这就是后面要讲的「斜角透视」），刚好这是手机屏的擅长，小空间配上小角度俯视会给人一种亲切感，类似长焦镜头的特写画面，很好的拉近了观者的心理距离，因此属于手机端的常用构图。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381566" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-51.jpg" width="800" height="853" /></span></p>
+<p><strong>空间成角透视</strong></p>
+<p>成角透视的优势在于画面立体、稳定和写实，这些优势刚好适合空间的立体呈现，如下图所示，成角透视即可用于室内塑造 ① 也可用于外形搭建 ② ，类似我们站在空间侧面看整体，此时空间立体、饱满，结构有张力。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381569" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-54.jpg" width="800" height="873" /></span></p>
+<p>但由于成角透视都是在画面两端形成灭点，所以该透视下的空间更适合横构图，但手机屏却是竖构图，对于横向拥挤的竖长屏，成角透视就会有些施展不开，左右狭窄，无法像横版那样开阔的展现空间，也没有平行透视那样看着规整，因此使用较少。</p>
+<h4><span class="auto_menu">斜角透视</span></h4>
+<p>物体与画面存在一定夹角，并且在2点透视的基础上，再加入了高度变化，这样垂直方向的连线会向上或者向下汇聚，最终画面形成3个灭点，又称「三点透视」。相比成角透视，斜角透视其实就是让本没有交集的竖线有了交集，这样垂直方向就有了强烈的汇聚感。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381525" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-10.jpg" width="800" height="412" /></span></p>
+<p>斜角透视的形变夸张，常用于大型物体的仰视或高处俯瞰，类似广角拍摄。</p>
+<p>如下图所示，该透视能表现出建筑或空间的宏大感，并且越宏大透视就越强烈。这时画面的夸张构图会显得观者渺小，给人一种压迫感，也让场景有着极强冲击力，同时带来了更加刺激的视觉感受。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381563" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-48.jpg" width="800" height="999" /></span></p>
+<p>其实只要观者在场景中显得很小，这时看到的画面就会产生斜角透视，例如当我们仰望高楼时，相对高楼而言，渺小的我们就会看到斜角透视。</p>
+<p>但如果产品展示采用斜角透视时，就会有一种强烈的不真实感，因为相对产品来说，我们并不渺小，所以日常是不会看到这样的场景，这种场景更像是「昆虫视角」，如图所示，斜角透视下，虽然画面不真实，但会有种特别的戏剧效果。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381554" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-39.jpg" width="800" height="368" /></span></p>
+<p>另外斜角透视没有平视视角，因为平视物体的竖向边线依然平行，不会在垂直方向产生第3个灭点，因此仍属于成角透视。总之只有在大角度仰视或俯视大型物体时，才会看到斜角透视。</p>
+<p>这种形变强烈的夸张透视虽然生活中相对少见，但电商中用的还真不少。还记得我们在第2章讲创意方法时提过的「独特视角」吗？其中一个方向就是使用斜角透视。</p>
+<p>这种透视可以体现物体的巨大（仰视）或者场景的宏大（俯视），正是这样一种不真实也不自然的视觉感受，反倒给人一种强烈的气势和冲击，画面极具张力的构图往往能脱颖而出，并在第一时间抓人眼球，吸引注意，所以成角透视特别适合大促主题的场景搭建和氛围营造，下面分视角举例。</p>
+<p><strong>斜角仰视</strong></p>
+<p>视能让物体显得高大，而斜角仰视则让物体显得「巨大」。如图所示，2个案例中的产品都十分「巨大」，通过这样一种「刁钻」视角和夸张手法渲染出了产品气势，使产品显得分量十足，同时也提升了视觉冲击力，整个场景都变的大气。其中 ① 由于版面有限，有个灭点没有标示出来。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381553" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-38.jpg" width="800" height="940" /></span></p>
+<p><strong>斜角俯视</strong></p>
+<p>当我们站在一个很高的地方俯瞰周围，或者用无人机在高空航拍，这时看到的景象就是斜角俯视。如图所示，尽管竖构图并不适合展现辽阔的大场面，但在斜角俯视的帮助下，2个案例依然体现了场景的宏大，视觉冲击强，这种居高临下感使人视野开阔。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381526" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-11.jpg" width="800" height="931" /></span></p>
+<p><strong>平行斜角透视</strong></p>
+<p>斜角透视中还有一种特殊情形——平行斜角透视，就是当空间或产品的一面与画面平行时，此时不管透视多强烈，画面也只有2个灭点。</p>
+<p>如图所示，当立方体的一面正对视点时，侧面便从2个主立面减为了1个，这时除了垂直方向的1个灭点外，原本视平线上的2个也就成了1个，虽然只剩2灭点，但本质仍属于透视强烈的斜角透视。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381540" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-25.jpg" width="800" height="511" /></span></p>
+<p>既然是与画面平行，那和平行透视有何区别？</p>
+<p>下面看张空间对比图，能看到2者的形变差异还是相当大：左图为平行透视，像是我们在看一个小方盒，亲切、自然、真实；而右图则是平行斜角透视，更像是我们在仰望一个巨大空间的入口，充满戏剧性，并有压迫感。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381550" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-35.jpg" width="800" height="344" /></span></p>
+<p>其实对于手机端，「平行斜角透视」才是斜角透视中的常用形式，因为它的摆放角度很正，这种正面观察很适合手机端的竖屏构图，而且前后的纵深刻画也能缓解版面的左右拥挤，另外画面纵向的汇聚感还能迅速吸引注意，给人一种巨大冲击力和强烈氛围感，其中仰视比俯视更加常见。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381546" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-31.jpg" width="800" height="292" /></span></p>
+<p><strong>平行斜角仰视</strong></p>
+<p>近几年这类透视越来越多见，因为它既适合竖构图，也能提升画面的形式感和表现力，非常利于促销主题的氛围打造。</p>
+<p>如图所示，整个画面就像是我们站在宏大场景的正中央仰望时看到的景象，各元素摆放很正，虽有压迫感，但空间和产品都显得非常高大，张力十足，能让用户牢牢聚焦，同时也产生了强烈冲击力，更易在用户脑海中形成记忆。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381542" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-27.jpg" width="800" height="1540" /></span></p>
+<p><strong>平行斜角俯视</strong></p>
+<p>在这类透视下我们会感觉自己拥有高高在上的「上帝视角」，元素摆放同样很正，视野辽阔，场景宏大。但过大的俯视视角会对场景进行一定压缩，再加上俯瞰产生的遥远距离感，这样就显得元素有些「小气」，无法体现仰视下的高大，因此画面的刺激感没那么强烈，总体相对少见。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381559" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-44.jpg" width="800" height="340" /></span></p>
+<h5>3. 小结</h5>
+<p>以上便是焦点透视的3种类型，我们再来回顾下各自的使用情形，如下图所示，这是一张3种透视的转换示意图，都是仰视视角，旁边小人则是观察者的大小示意：</p>
+<ul>
+<li>当立方体的一面正对观察者时，就是「平行透视」，这时除了物体厚度的边线会汇聚1点，其余边线均无交集；</li>
+<li>而当立方体旋转一个角度，任何一面都不正对观察者时，就是「成角透视」，这时横向边线会向各自方向汇聚成2点，竖向边线则无交集；</li>
+<li>此时若将立方体变的巨大，大到需要仰望，就是「斜角透视」，这时在2点基础上，本无交集的竖向边线将汇成1个新点。</li>
+</ul>
+<p>希望通过这张示意图能帮大家更好理解什么时候该用哪种透视，总之小场景搭建一般以「平行透视」和「成角透视」为主，而恢弘的大场景则以「斜角透视」为主。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381520" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-5.jpg" width="800" height="193" /></span></p>
+<p>当然现实里的透视远不会这么单一，根据物体不同的摆放位置以及不同的观测距离，很多时候同一画面也会存在多种透视，例如平行透视和成角透视就经常组合出现。</p>
+<p>电商设计也一样，例如下方案例中，整个空间是平行透视，而里面的盒子则是成角透视，这时视平线上会有3个灭点，其实若产品的摆放再凌乱些，还会出现更多灭点，但这种无序组合会让空间塑造变的复杂，看着也不规整，因此并不推荐。</p>
+<p>但要注意不管画面的透视多复杂，当中的视平线却只能有1条，并且无论水平方向有多少个灭点，最后也都会落在视平线上。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381551" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-36.jpg" width="800" height="419" /></span></p>
+<p>除了以上3种透视外，其实还有4点透视（超广角透视）、5点透视（鱼眼透视）等等，但都过于复杂，用的也很少，这里就不做展开。对于电商里的「空间陈列」，3种透视已够用，它是我们塑造空间的基础，如果一开始的透视错了，即便配色、光影做的再出彩那也无用。</p>
+<p>总有人说透视难掌握，其实只要我们在生活中多观察、多留意身边物体的透视变化和规律，及时总结，那这种理性还原就不难做到。当然设计终归还是理性与感性的双重表达，所以透视虽要遵循，但切忌生搬硬套，视觉协调即可。</p>
+<p>讲完了焦点透视，我们知道了空间塑造的基本原则，下面就来说说都有哪些陈列场景。</p>
+<h4><span class="auto_menu">陈列场景</span></h4>
+<p>相对PC来说，手机端受屏幕所限，陈列场景其实没那么复杂，核心是要先构建一个空间，然后让产品以合适的视角及透视在空间里呈现出来，而这个空间场景则要和主题氛围、产品气质都高度匹配。</p>
+<p>一般来说，手机端常用的陈列场景有4类：盒子陈列、台面陈列、自然陈列以及舞台陈列，选择哪类则要看哪个场景对产品的烘托效果最好。</p>
+<h5>1. 产品组合</h5>
+<p>在介绍每个场景前，我先说说关于产品组合的2原则，因为很多时候在空间摆放的产品数量较多，这时它们的组合形式就变的尤其重要，稍不注意就会显得画面杂乱无章，不够协调，而且凌乱的摆放也会降低产品的品质感，缺少吸引力。关于组合原则，核心有2点：大小合理以及三角构图。</p>
+<p><strong>大小合理</strong></p>
+<p>如果将多个产品摆一起，则要确保它们之间的相对大小符合现实中的真实差异，现实中尺寸大的产品就要相对大些，而尺寸小的产品就要相对小一点，这样才会真实并经得起推敲。</p>
+<p>而有些设计师在组合产品时，也不管大小的真实差异，放进版面后就很随意的放大或缩小，最后出来的组合要不就大小一样，要不就比例失真，这些都会给用户一种强烈的不协调感和不真实感。</p>
+<p>下面再看一组对比图，明显大小一样的左图会有不适感，也缺少层次；而大小合理的右图则更有美感也更舒服。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381544" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-29.jpg" width="800" height="225" /></span></p>
+<p>其实大小合理的最终目的是希望整体结构错落有致，就像右图一样，这种有高有低的组合才能体现韵律感和结构美。所以如果可以选择，那我们就选择一些尺寸差异较大的产品，尽量避免出现大小差不多的情况。</p>
+<p>当然如果必须陈列大小一样的产品，那也可以通过透视或者辅助元素来改善，例如空间里的近大远小、立方体加高都能改变高度一样的情形。</p>
+<p><strong>三角构图</strong></p>
+<p>当我们选好不同大小的产品后，就要注意它们的组合形式，千万不能乱堆一气，不同的摆放会形成不同结构，而每种结构又会给人不同感受。我们在「图形分割」中讲过「正三角」具有很强的稳定性，因此当产品采用正三角构图时，会让人觉得版面平稳、视觉舒服。</p>
+<p>如图所示，所谓三角构图，其实就是将尺寸大的产品放中间，而尺寸小的产品放两边，这样不但构图稳定，而且画面也有节奏和变化。可以说「三角构图」就是空间陈列里最常用的构图方式，而本节展示的所有案例中，大部分也都是三角构图。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381555" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-40.jpg" width="800" height="401" /></span></p>
+<p>明确了产品的组合原则，知道了如何陈列才舒服，下面就正式讲讲空间陈列的4类场景。</p>
+<h5>2. 场景</h5>
+<p><strong>盒子陈列</strong></p>
+<p>「盒子陈列」就是在盒子里面放产品，而盒子多以礼盒为主，使用场景和主题相对单一，基本用于送礼之意的专题页。创意虽然普通，但却不易出错，是种相对安全的表现方式。当然若能在盒里加些小心思，画面也会很出彩，像我之前看过一个新年Banner，就是礼盒里装着一个大家庭在吃年夜饭的温馨场景，这样的新组合便让人眼前一亮。</p>
+<p>另外若能提升礼盒刻画的精致度，那画面也会有不错的设计感。而盒子外形也不只有方形，常用的还有圆形和异形。观察视角则以小角度俯视居多，因为这个视角最接近我们日常看礼盒的真实情形，盒内产品在俯视下能看的一清二楚，展现也立体。</p>
+<p>盒子陈列的难点在于当盒内要摆放很多产品时，如何能让产品真实、自然的呈现，这需要我们既注意摆放的合理性，也能准确表现透视，还要刻画出产品的明暗变化，总之只有把握好产品的空间感、立体感以及光影感，画面才会舒服协调。</p>
+<p>方形盒是最常用的盒子类型，毕竟也是生活中最常用的礼盒外形，结构感强而且易表现。如下图所示，礼盒都是成角透视，且左右灭点都在画面之外，这样结构最稳定，立体感也强。注意盒里的产品呈现，特别是俯视视角下，产品越多越要注意它们是否协调统一，透视、光影等细节一个都不能少，把控不到位就会显得凌乱，画面别扭。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381518" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-3.jpg" width="800" height="970" /></span></p>
+<p>圆形盒比较少见，因为和立方体比起来，圆柱体的透视没那么强烈，结构感偏弱，但圆润的外形能使画面变的柔和，给人一种亲和力和温馨感，如图所示，由于圆形盒没有明显块面，所以不管透视还是光影，刻画起来都相对简单。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381533" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-18.jpg" width="800" height="484" /></span></p>
+<p>异形盒是指外形为不规则形状的盒子，总体也很少见，但易出彩。形状用的好便能打破「盒子陈列」的常规感，使画面变的新颖有创意。</p>
+<p>例如下方案例中，不管是心形、猫头轮廓还是圣诞树，都能成为画面焦点并引人注意。另外盒子呈现均用了「正俯视」视角，其实除了小角度俯视外，这种视角也很常见，因为该视角下的产品陈列清晰完整，盒子外形也能直观显示，最大程度的展现了其外形的特别之处。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381567" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-52.jpg" width="800" height="488" /></span></p>
+<p><strong>台面陈列</strong></p>
+<p>在空间陈列的4类场景中，「台面陈列」用的最多，适用范围也最广，可以说电商中的大部分主题和产品都能使用，算是一种真正白搭的表现方式。</p>
+<p>「台面陈列」就是在空间里搭建一个「台面」，然后在上面放置相关产品。由于该手法还是以放大特写的小场景为主，元素形变不能太大，因此画面常用平行透视和成角透视，视角则很灵活，跟着构图走，3种（平视、俯视、仰视）都有。「台面陈列」上手简单，场景多变，其中的关键元素——台面需要根据主题、场景进行灵活变化，常见有2类：桌面和几何体。</p>
+<p>桌面很好理解，就是桌子顶部的陈列面，所有产品都放置其上。由于桌子是家里常见家具之一，因此桌面陈列往往能传递一种「家」的温暖和温馨。</p>
+<p>可能有人觉得「桌面」形式有些单一，其实远没那么简单，我们不要固化思维，要能灵活变化桌子的样式和装饰，例如方桌还是圆桌？木桌还是大理石桌？光面还是铺桌布？这些都是可变量，再加上视角和周围环境的变化，总之形式可以很丰富。</p>
+<p>如图所示，桌面陈列尤其适合各类美食的组合呈现，这时整个场景贴近生活，颇有带入感。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381537" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-22.jpg" width="800" height="960" /></span></p>
+<p>就是将各种几何形体作为陈列产品的台面，几何体相对抽象，表现场景更多元，因此比具象「桌面」更加常用。</p>
+<p>如图所示，几何体一般都是组合出现，特别适合多产品陈列，简约大方，能烘托出产品的品质感。同时通过高高低低的大小排列也能表现出画面的结构美以及层次感，总之是一种 「上手简单、易出效果」的表现方式。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381568" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-53.jpg" width="800" height="418" /></span></p>
+<p>常用几何体有「立方体」和「圆柱体」，它们适合陈列，高度调节方便，使用灵活。</p>
+<p>如下图所示，整体表现并不复杂，就是将各种产品放在几何体上。但作为画面的核心元素，这时几何体的形态、排列、视角和透视就变的非常重要，我们要根据创意需求和产品气质选择最合适的展现方式，而这些展现本身就有不错的形式感。</p>
+<p>几何体陈列既能营造空间关系和简约气质，也能让用户聚焦产品本身，因为它的外形简单，不抢产品，不像一些复杂元素或场景，虽然视觉丰富但最后却让产品淹没其中，这样就本末倒置。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381522" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-7.jpg" width="800" height="1067" /></span></p>
+<p><strong>自然陈列</strong></p>
+<p>「自然陈列」需要先创建一个合适的自然环境，然后再将产品以合适方式融入其中。相对其他场景，自然环境显然复杂一些，呈现手法常以「合成」和「插画」为主。因为产品都是实物拍摄，为了风格统一，自然环境会偏向写实风格，这样2者结合才协调。</p>
+<p>从下方案例能看到，「自然陈列」常用于季节感受或者产地溯源等主题，画面通过「自然场景」营造出天然健康的绿色氛围。而场景中的元素繁多，呈现复杂，这就需要我们具备优秀的整合能力。</p>
+<p>对于「自然」塑造，视角以平视和小角度俯视居多，但画面由于没有太多的几何型物体，所以透视没那么严谨，核心是注意近、中、远景的层次区分，还有光影的合理添加。如果这些把控不到位，就很可能出现场景杂乱、缺少层次、没有带入感的粗糙画面，最终沦为各种素材的乱堆一气。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381523" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-8.jpg" width="800" height="884" /></span></p>
+<p>以上列举的都是以花草树木为主的自然环境，确实绿色场景在「自然陈列」中用的也是最多，但除了绿色场景外，有时也会用到其他环境。如下图所示，像海底 ① 、沙滩 ② 、海面 ③ 、冰山 ④ 也是适合陈列的自然场景，特别是夏季主题会经常用到。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381532" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-17.jpg" width="800" height="1150" /></span></p>
+<p><strong>舞台陈列</strong></p>
+<p>最后一类「舞台陈列」常用于大促主题的气氛营造，这类场景不挑类目，任何产品放在「舞台」上，灯光一打，色彩再斑斓些，都能营造出热闹的促销氛围。</p>
+<p>如图所示，舞台外形以圆形居多，因为圆形的透视感较弱，构图灵活，而且也符合大家对舞台的第一印象。舞台视角则很灵活，3种均很常见，核心是和产品视角保持一致。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381552" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-37.jpg" width="800" height="1001" /></span></p>
+<p>关于「舞台」塑造，还有2处需要注意的地方：</p>
+<p>舞台外形除了最常用的「圆形」外，还有半圆形、方形和六边形等等；舞台造型也可以很丰富，并不局限于常规的表演舞台，各种造型都可尝试，例如上方左四图就是现代感十足的三维舞台，总之我们要根据创意和风格塑造相匹配的陈列舞台。</p>
+<p>另外就是灯光运用，可以说这是「舞台陈列」和其他场景的最大区别，但灯光也不是越多越好，太多反而显得眼花缭乱，其实能渲染出绚烂气氛即可。而有光就有影，在灯光照射下，产品一定要有准确的光影呼应，这样才不会显得突兀。例如上方案例中，仔细观察灯光下的产品呈现，能看到产品表面都产生了被灯光照射后的色彩、明暗等变化，这些细节刻画才让画面更真实，融合更自然。</p>
+<h5>3. 实战案例</h5>
+<p>本次案例会用胶原蛋白口服液作主体元素，然后用这4类场景（盒子、台面、自然、舞台）来设计4张不同视角、不同风格的Banner，让大家看看在不同场景下，如何将产品融入其中。先展示案例会用到的3种产品视角， 下方案例会根据不同的场景视角选择对应素材。</p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381543" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-28.jpg" width="800" height="2376" /></span></p>
+<p><span class="img-zoom"><img alt="如何做好Banner设计？先掌握这个高手都会的空间陈列法！" class="alignnone size-full wp-image-381534" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ds-20200726-19.jpg" width="800" height="2101" /></span></p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>「空间陈列法」的内容量挺大，主要分成了「焦点透视」和「陈列场景」2大部分来介绍，其中焦点透视是立体「空间」的塑造基础；而陈列场景则是产品「陈列」的具体环境。</p>
+<p>常用场景有4类：盒子陈列、台面陈列、自然陈列和舞台陈列，每种陈列都有各自适用的主题和氛围：「盒子」常用于温馨的送礼主题；「台面」则能根据不同主题灵活应变，属于百搭场景；而「自然」则适合季节或者溯源主题，体现天然清新感；最后的「舞台」则用于氛围浓烈的大促主题。不管哪种场景，都要确保产品和空间的视角、透视相一致，这样场景才会真实协调。另外多产品陈列时，还要注意它们之间的大小比例以及摆放结构，其中三角结构最常用。总之在手机时代，「空间陈列」是一种真正适合小屏竖构图的表现方式。</p>
+<p>更多电商类好文：</p>
+<p>[link https://www.uisdc.com/5-banner-design-skills]</p>
+➜如何用好设计双钻模型？来看 vivo 浏览器的实战案例！
+https://www.uisdc.com/double-drill-model	61913
+<h4><span class="auto_menu">前言</span></h4>
+<p>刚入职时，有本书叫《方寸指尖》对我影响比较大，主要讲述如何做好用户体验设计。机缘巧合，在互联网领域也待了四年有余，对于指尖的思考也在不断升华，不仅要保证用户的的核心诉求，也要满足业务的目标。在这样的方寸之间，做了一些有趣的事儿，今天拿出来和大家一起分享。</p>
+<p>今天的分享不纯粹是设计方法的探讨，更多是一种产品设计思路的总结，总结笔者参与的产品改版心得，提炼了一些可以通用的设计思路，借着这个机会和大家一起探讨。</p>
+<h4><span class="auto_menu">空间价值模型</span></h4>
+<p>今天要引入的一个模型叫空间价值模型，在介绍此模型前，我需要引入一个基础模型作为其牵引，再抽象出空间价值模型。（对于模型理解，在《产品经理数据修炼30问》书中介绍过，它就是一套公式或者方法，是一种逻辑关系，我们统称为模型。）模型最大的特点在于在实际应用中不断的去修正，使他具备普适性。今天我要给大家介绍的基础模型，其实大家都很熟悉，就是设计上常用的「双钻模型」，它由The British Design Council提出，是一种设计师所使用的思考模式。</p>
+<h4><strong>1. 双钻模型</strong></h4>
+<p>双钻模型主要分为4个阶段，主要是发现期、定义期、发展期及交付期。前两个阶段我们可以把它定义成做正确的事情，也就是在找准做设计的方向，第二个阶段就是把事情做正确，就是要把设计落实到点子上，避免偏差。接下来我给大家详细介绍下每个阶段要做的事情。</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381097" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-29.jpg" width="1080" height="644" /></span></p>
+<p>△ 双钻模型</p>
+<p><strong>发现期</strong></p>
+<p>首先第一阶段——发现期。此步是发散型的思考，探索和研究问题的本质原因，相当于寻根问底，也就是我们常说的：为什么要做这个需求。</p>
+<p>在我们接到一个需求时，要抱有一颗质疑的态度，对需求质疑，对商业模式质疑，对用户质疑，质疑一切不合理的事情。然后去列举用户可能遇到的真实场景元素：比如地点、时间、人物、故事，梳理整个设计流程和节点。针对问题再去进行研究，例如前期的用户访谈，问卷调查，竞品分析，行业分析、现状数据摸底等等，最终得到一系列的研究结果。此时的手段有竞品研究、数据分析、用户调研等等，这也是我们做设计的第一步，需求拆解和设计分析。</p>
+<p><strong>定义期</strong></p>
+<p>第二个阶段是——定义期。此步是将第1步发散的问题进行思考和总结，把问题集中起来解决。毕竟太过于发散的问题不利于事情的推进。</p>
+<p>基于前面的分析，我们需要将第一阶段发散的观点进行收缩，合并一些设计问题和发现，关注最核心的问题，形成相应的结论。再把之前的行业分析、竞品分析以及存在的问题一起比较，发现可能存在的机会突破点，并不断去探索我们还可以做的事，寻找设计价值机会点。</p>
+<p><strong>发展期</strong></p>
+<p>第三阶段则是发展期，也就是所谓的方案构思期，此步是真正开展设计创意了。在我们日常的设计过程中也称之为设计预研。</p>
+<p>这个阶段我们要把问题具体化，我们可以参考流行的设计趋势、好的设计网站或者好的设计效果，构思自己的设计应该如何做。如果构思的过程产生了很多的想法方案，那么我们应该先评估一下可行性。经过评估之后，最终选择了2~3种ideas。</p>
+<p>这是一个发散、迭代的过程，细节和方案仍然会不断推翻和重构，但是要找出正确方案的方向，这一步是最核心的。</p>
+<p><strong>交付期</strong></p>
+<p>最后一个阶段就是交付期了，此步就是我们将预研的多套方案进行了具体化，找到了一个可以深化的方案。</p>
+<p>这一阶段将之前的方案进行开发制作，测试，迭代（build，test，iterate），重复3次以上。即可以简单理解为设计方案的评审（主要是自己把关、需求方把关、其他相关方把关），反复迭代设计方案。</p>
+<p>淘汰中间不合理的想法和设计，最终保留精华设计。</p>
+<p>到这一步为止，设计的分析、预研、方案制作、测试已基本结束了，接下来就是把我们确认的方案推向用户，回收后续反馈即可。</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381070" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-2.jpg" width="1080" height="623" /></span></p>
+<p>△ 结构化双钻模型</p>
+<p>双钻石模型是一种结构化的设计方法，我们抽象来看的话，主要解决设计过程里四个时期的挑战：</p>
+<ul>
+<li>发现期/研究阶段——主要是对问题的洞察，需要更多的讨论和发散；</li>
+<li>定义期/总结阶段——主要是聚焦问题点；</li>
+<li>发展期/概念设计阶段——主要是发散一些可能的解决方案；</li>
+<li>交付期/实现阶段——确定可行的解决方案。</li>
+</ul>
+<p>到目前位置设计双钻模型也就全部理清了，概括来讲就是从前期的问题洞察，再到问题的聚焦，紧接着到概念设计，再到最后的设计实现。这四个阶段不是孤立存在的，而是彼此间都是有联系的，前面的阶段为后续的研究做铺垫，后续的研究结论也能更好的验证前面的发现，关系链如图上图（结构化双钻模型）所示。</p>
+<h4>2. 双钻模型的价值</h4>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381071" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-3.jpg" width="1080" height="238" /></span></p>
+<p>△ 双钻模型的价值</p>
+<p>双钻模型的价值主要有3点，</p>
+<p><strong>对思考过程做拆解，让思考更具有逻辑性：</strong></p>
+<p>双钻模型将不可见的思考过程分为2个核心部分：确定正确的问题，发现最合适的解决方案。</p>
+<p>在日常工作中，大家可能会经常遇到在没有剥离出「问题是什么」时，就立马对解决方案进行构思或激烈讨论，耗费团队精力和时间，双钻模型很好规避了这一点。</p>
+<p><strong>重新重视问题是什么：</strong></p>
+<p>第一个钻石模型，我们着重解决的是找到正确的问题是什么。通过第一个钻石的提出，原本易被忽略的问题环节会重新受到团队成员重视，避免设计方案发生方向性偏离。</p>
+<p><strong>设计思考过程可见：</strong></p>
+<p>通过双钻模型设定的思考框架，原本「黑盒」的思考过程被逐渐呈现出来，增加团队成员对设计方案演绎过程的理解度，提高合作认可度和协作效率。</p>
+<p>通过以上三方面的分析，我们也就能理解为啥双钻模型在设计行业内被如此推崇。</p>
+<h4>3. 双钻模型运用中问题及优化路径探索</h4>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381072" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-4.jpg" width="1080" height="505" /></span></p>
+<p>△ 双钻模型实际运用中的问题（点击查看大图）</p>
+<p>但在双钻模型实际运用中，发现了一些问题，大家可以观察到在最后交付环节，需要经过至少3次的迭代、测试和开发，而且最终的定案也无法证明结果就是好的；在整个的迭代过程中，我们可能不知道要去优化什么，可能觉得方案已经是最完美的了，也有可能觉得方案一直是不行的，会在这一环节陷入死循环，最终导致整个项目周期拉的很长。</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381077" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-9.jpg" width="1080" height="659" /></span></p>
+<p>△ 双钻模型实际运用中的问题解决探索</p>
+<p>在开发和实现阶段是最不愿意出现问题的，这可能会使我们前面做的工作功亏一篑。那我们是不是可以把这些不确定的因素置前考虑呢？在前期的分析中，就去解决这个阶段出现的一些风险问题。</p>
+<p>因此，我们尝试性的探索，是不是应该在前面的方案发散环节中新增预测和推演的环节，用以降低后续交付环节的风险。预测和推演主要是针对已输出的几套概念方案进行推测，通过一些可以量化的数据来推演这些概念方案是可以落地的，这样可以预知概念方案的结果，减少方案变更和修改的次数，提升整体的设计效率。同时整个概念方案的预测和推演也来依赖于前期的设计分析，找准具体的推演方向是这个模型最大的难点。</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381073" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-5.jpg" width="1080" height="782" /></span></p>
+<p>△ 双钻模型优化方案</p>
+<p>具体的预测和推演过程，我们可以拆解到具体的行为角度，主要分为方案构思到用户行为预测再到数据推演。其中方案构思和用户行为预测与之前分析的双钻模型中的行为是一致的，只是在做预测和推演时又拿出来应用。</p>
+<p>刚才也说过，找准预测和推演的方向才是这个模型最大难点。那么推测的依据是什么，推演的来源都是什么呢？</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381069" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-1.jpeg" width="905" height="359" /></span></p>
+<p>△ 奥卡姆剃刀法则</p>
+<p>回到我们本次分享的主题是研究空间价值对设计有什么启示和帮助，根据百度百科对于空间的定义：空间是与实践相对的一种物质客观存在形式，两者密不可分。我们再具体点来描述空间，它就是一种具备长度、宽度、高度、大小的存在形式，物与物的位置差异度量称之为「空间」，大家还可以假想空间由不同的线组成，线组成不同形状，线内便是空间，这个空间可以是平面的，也可以是立体的。空间有一个典型的特质就是具备相对性，正因为有了相对性，空间才可被衡量。长度和宽度构成了屏幕空间，而有效的空间才能产生相应的价值。对于有效空间的定义，我们可以借用奥卡姆剃刀法则，「如无必要，勿增实体」，也就是如果没有作用，则不需要继续增加和保留。</p>
+<h4><strong>4. 空间价值模型</strong></h4>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381074" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-6.jpg" width="1080" height="875" /></span></p>
+<p>△ 空间价值模型</p>
+<p>根据空间价值的推导过程，我们为设计方案的预测和推演找到了一个方向，就是在以空间价值为导向的产品设计中，我们在预测和推演时，主要依据就是要利用有效空间，释放无效空间，将有价值的模块置于用户感知范围内，而隐藏或去掉不重要的功能，在一定空间内发挥最大的价值。朝着这个方向我们去设计和预测我们的落地方案，如果预测结果OK则可继续进行，如果预测结果不理想，那就得重新思考设计方案，直到合格为止。可能听到这，有很多同学又会有疑惑，这个数据推演怎么做。这个会在后续的案例中给大家去讲，因为每个产品关注的核心指标不一样，所以这块只能提一个概念，具体的推演过程还需要在各自的项目中去制定。</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381076" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-8.jpg" width="1080" height="461" /></span></p>
+<p>△ 空间价值模型应用场景</p>
+<p>以空间价值为导向的双钻模型有其一定的应用场景，首先是能识别到在这屏幕空间内是有价值的，在此产品阶段是需要通过追求屏效来达成一定的业务目标（此点尤其重要），另外就是在利用空间方面，有高价值的内容可以填充。总结的这三个方面我觉得是不够精确和通用的，只是在我负责的产品，在它的生命周期内是这样的，所以大家在思考各自的产品设计时，可以基于不同要求、阶段去思考对应的场景。</p>
+<h4><span class="auto_menu">空间价值模型实例剖析</span></h4>
+<h4>1. vivo浏览器首页改版</h4>
+<p><strong>首页分析</strong></p>
+<p>vivo浏览器是一款如今有8500万+日活的产品（数据截止到2019年8月），当时改版时日活也已达到7000万。在讲这个案例时，还是给大家先介绍一下浏览器首页的基本情况，便于大家有全面的了解。</p>
+<p>浏览器的首页主要分为4个模块，头部模块主要是天气及搜索模块，主要是满足用户的一些基础需求，如查看天气情况、搜索关键词及网址等；第二模块是五大栏目，它主要是一些特色站点，如网址、视频、小说、美图等用户个性化诉求；第三个模块是名站区域，主要呈现一些热门的站点，如新浪、百度、携程等，便于用户快速触达，同时这些站点具备商业化售卖价值。第四部分则是信息流区域，主要包含了视频、热点、图文、广告等类型的内容，满足用户对于内容消费的需求，对于广告收入、时长、留存等都有很大的贡献。</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381075" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-7.jpg" width="1080" height="673" /></span></p>
+<p>△ vivo浏览器首页各模块分析</p>
+<p>在这一量级的产品上进行首页改版，风险性是极其大的，那接下来我们还是按照空间价值模型的基本方法进行一步步的拆解和分析。</p>
+<p><strong>发现问题</strong></p>
+<p>首页站点卖不动，点击数据下降，商业化价值不如之前</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381078" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-10.jpg" width="1080" height="434" /></span></p>
+<p>△ vivo浏览器首页站点模块点击数据（数据截止到2018年1月）</p>
+<p>这么一量级的产品，为什么要去改版呢，我们还是首先回归到问题背景。首先我们通过后台数据发现，五大栏目模块的平均点击量⼤约为30万-80万/天，名站点击量前两名的百度、新浪的点击数据大约为180万/天、120万/天左右，第三名的车之家最⾼点击量只有前两名一半左右的数据，只有约70万/天，而点击量最低的站点只有约15万/天的点击，站点点击呈递减规律，无效站点较多，商业化售卖产生了问题。</p>
+<p>浏览器信息流流失用户占比30%左右，且有上升趋势</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381079" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-11.jpg" width="1080" height="536" /></span></p>
+<p>△ vivo浏览器信息流流失去向（点击查看大图）</p>
+<p>其次是我们在长时间的用研及数据监测中发现，vivo浏览器信息流用户流失占比在30%左右，且有上升趋势，被一些头部应用吸取较多用户，信息流渗透率增长乏力。</p>
+<p>首页框架多年未动，信息层级不清晰</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381080" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-12.jpg" width="1080" height="567" /></span></p>
+<p>△ 主流浏览器首页对比</p>
+<p>第三则是我们的首页框架和主流竞品存在差异，传统的五大栏目+名站的形式在逐渐被打破，信息流模块的设计越来越重度，用户也亟需新的产品形态以唤起对产品的兴趣。</p>
+<p><strong>聚焦问题</strong></p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381081" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-13.jpg" width="1080" height="628" /></span></p>
+<p>△ vivo浏览器首页问题聚焦</p>
+<p>我们将浏览器首页的问题聚焦出来就是，名站模块点击数据低，商业化价值低，信息流模块点击低，用户不买单，首页产品形态缺乏竞争力。</p>
+<p><strong>剖析问题</strong></p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381082" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-14.jpg" width="1080" height="318" /></span></p>
+<p>我们再进一步剖析目前所遇到的问题。名站处于整个页面核心位置，却没有达到应有的价值，用户点击少，且运营成本较高，效果弱。</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381083" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-15.jpg" width="1080" height="323" /></span></p>
+<p>信息流作为提升用户留存和时长的重大法宝，但在首页得不到足够的曝光，潜在价值得不到发挥。具体体现在首屏信息及商业化广告的触达路径较长。</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381086" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-18.jpg" width="1080" height="324" /></span></p>
+<p>而样式作为产品形态的面子工程，影响用户的使用体验，但在首页这样一个超流量页面却没有精细化设计，部分模块的产品定位与用户定位有推介，产品结构不清晰。</p>
+<p><strong>首页价值</strong></p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381084" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-16.jpg" width="1080" height="612" /></span></p>
+<p>△ vivo浏览器首页价值排序</p>
+<p>按照商业利益及用户体验，我们可以将各个模块进行价值划分，其中名站及信息流模块作为浏览器的特色功能，且承担相应商业化收入，其价值较高，而五大栏目模块，作为浏览器基础功能，其商业价值较低，由于搜索模块模块作为浏览器核心功能，其价值要比五大栏目稍高，且有搜索的商业化变现方式。其相应的价值排序如图所示。</p>
+<p><strong>设计机会点</strong></p>
+<p>按照空间价值模型的相关理论：「若无必要，勿增实体」，释放无效空间，增加有价值内容的曝光。按照目前价值优先级，名站目前综合价值较低，而信息流作为后起之秀，有较大的商业及用户价值。我们挖掘出来的设计机会点，则是释放名站，提升信息流曝光，而什么样的产品形态作为设计机会点的承载，也是设计可以重点研究的方向。</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381085" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-17.jpg" width="759" height="600" /></span></p>
+<p>△ vivo浏览器首页设计机会点</p>
+<p><strong>设计研究</strong></p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381087" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-19.jpg" width="1080" height="531" /></span></p>
+<p>△ 竞品分析截图</p>
+<p>紧接着，在产品形态及信息流研究上，我们重点分析了高价值的信息流模块的设计，摘取了各家资讯APP及浏览器，研究各家在信息流产品形态、布局、空间、设计上的异同点。为vivo浏览器首页信息流的设计提供更多有力参考。</p>
+<p>我们从信息流的标题、字号、间距、配图、视频、辅助信息等角度入手，发现了本品与竞品的较多差距</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381088" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-20.jpg" width="1080" height="455" /></span></p>
+<p>最后得出相应的结论——各家在处理信息流模块时，整体的设计注重内容聚焦，主要体现在页面排版及各个元素的布局，使得单屏曝光信息流条数更多。其次是注重外显内容，优化标签及标识设计，传递给用户信息流的类型，强化感知。最后是各家都在强调平台与用户的互动，如负反馈、评论、点赞等，极大满足用户对于内容产品的情感发泄。</p>
+<p>对于首页站点的设计，我们缩减目前三行站点的设计，将5大栏目和站点进行合并打乱。主要原因也是5大栏目和站点对于用户的使用心智来讲，也是一样的功效，没有必要进行业务属性的划分。</p>
+<p>因此在设计上，我们尝试将目前的三行方案改为单行及双行方案，除保留几个高点击的站点外，其余站点按照浏览器后台用户标签，给用户进行个性化推荐。</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381089" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-21.jpg" width="1080" height="459" /></span></p>
+<p>△ 首页站点探索方案</p>
+<p><strong>设计预研</strong></p>
+<p>单行站点方案</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381094" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-26.jpg" width="1080" height="528" /></span></p>
+<p>双行站点方案</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381090" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-22.jpg" width="1080" height="525" /></span></p>
+<p>这么多的变量，我们无法直接评判那种方案的改版效果更好，甚至我们也无法直接推断出改版后的两套方案会比线上方案好。因此我们接下来进行了本项目最重要的一个环节，就是效果评估，通过不同的预研方案来预测改版效果，从而为最终的设计方案做决策。</p>
+<p><strong>数据预测</strong></p>
+<p>信息流改版预测</p>
+<p>首先我们是在目前算法条件下，针对不同位置出现不同样式的信息流进行了数据摸底，具体方式就是看信息流前三位置出现不同资讯的概率（因为改版前首页最多漏出3资讯）。并且统计出目前信息流用户的占比。在对比改版方案与线上方案时，计算8种组合条件下，多漏出的文章的出现概率，从而计算改文章的点击率，最终求和计算出整体首页的转化率变化。最终在数据同学的帮助下，改版后首页的转化率提升可达到9.5%。</p>
+<p>信息流曝光规则：单条信息流item曝光超过2/3即为曝光。</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="size-full wp-image-381091 alignnone" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-23.jpg" width="1080" height="560" /></span></p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381092" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-24.jpg" width="1080" height="238" /></span></p>
+<p>根据数据同学的预测，在目前改版方案的情况下，月提升收益约490w</p>
+<p>由于双行与单行改版方案目前信息流增加展示空间相差无几，故本次预估数据提升经过数据挖掘基本一致。</p>
+<p>基于改版后首页各资讯内容类型展示组合下，增加资讯条数曝光得到的首页外露综合点击率提升，由此进行收益提升估算。</p>
+<p>由于该数值仅代表首页点击增加后的收入提升，未包含后续信息流模块中的延伸使用情况带来的收益，故实际提升大于490w。</p>
+<p>站点改版预测，改版后站点位位置的损失：</p>
+<p>当全量执行单行方案时，预计站点收入每月将下降1000w左右；当全量执行双行方案时，预计站点收入每月将下降200w~250w；</p>
+<p>改版后信息流广告曝光用户占比的提升：</p>
+<p>线上方案目前信息流广告曝光用户占比为25.5%，经过数据预估后——单行方案：比例需要提升至30.28%则可以保证浏览器整体收益的提升；双行方案：比例需要提升至26.97%则可以保证浏览器整体收益的提升。</p>
+<p>用户侧数据摸底：</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381093" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-25.jpg" width="658" height="736" /></span></p>
+<p>2018年1月月活中，主动启动用户为1.3亿；其中，有37.21%的用户在一月有过名站及五大栏目区域的使用；首页改版主要会影响这部分用户。</p>
+<p>名站五大栏目用户里，有51%的用户对站点类目丰富度需求较强，除TOP6站点外，对其他类目产品存在一定的使用需求；一行站点方案对这批用户（总用户的18%）可能存在较大影响；</p>
+<p>1月有过信息流模块划入，点击的用户数量为1亿，占总用户比例76.96%，用户比例远高于导航部分。</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381095" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-27.jpg" width="1080" height="510" /></span></p>
+<p>基于以上的数据可以得出：</p>
+<ul>
+<li>对于首页改版后，保守预估，信息流模块价值提升将超过493w，完全可以控制住双行方案的站点损失，同时带来明显提升。</li>
+<li>有超过6成的活跃用户是非名站&amp;五大栏目用户，接近25%的用户是集中于头部站点使用以及这部分用户对于首页导航模块是无价值的群体，首页站点位的缩减对于他们是无影响的。</li>
+<li>在月活跃用户中，有约18%的用户对于站点的使用相对重度，对于站点丰富行要求较高，首页站点位的大幅度缩减对于这部分用户的影响较大，同时会造成较大的站点商业化损失。</li>
+<li>可见大部分活跃用户对于首页站点位是无需求的，同时信息流用户占到总用户比例76.96%，用户对于信息流模块使用意愿明显高于导航模块。</li>
+</ul>
+<p>故基于以上结论，可以得出，以首页双行站点形式进行本次改版调整，相对合适，原因：</p>
+<ul>
+<li>站点收入相比单行方案风险小，不会造成整体收入大幅下降的风险；</li>
+<li>双行站点方案的信息流收益提升预估，远高于带来的损失，可以保证整体收益的全面提升，而单行方案基于目前的数据整体提升效果不如双行方案。</li>
+</ul>
+<p>2.2.0 最终方案及上线效果</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381096" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-fc-20200722-28.jpg" width="423" height="800" /></span></p>
+<p>信息流用户新闻阅读时长上涨10.66%，信息流用户占比上涨2.29%，人均新闻点击次数上涨4.24%，人均信息流使用时长上涨5.81%。关于商业化营收数据，由于相关保密性，不便透露，但从广告平台那边得知，活跃用户的广告点击次数上涨16.14%，名站人均点击下降9.68%，基本和预期结果相符，整体浏览器的营收是上涨的，整体改版符合预期。</p>
+<h4><span class="auto_menu">空间价值模型使用注意事项</span></h4>
+<p><strong>1. 屏效比</strong></p>
+<p>一味的追求屏效比不是空间价值模型所倡导的。空间价值模型核心在于用高价值的内容填充低价值的模块，使得产品整体商业价值和用户价值得以提升。</p>
+<p><strong>2. 注重用户体验</strong></p>
+<p>虽然空间价值模型只是用来指导设计师或产品经理做方案的产出，缺乏用户侧的体验监测，这要在后续的产品迭代过程中补齐，而不是放任不管。</p>
+<p><strong>3. 非个性化</strong></p>
+<p>产品同质化越来越严重的今天，我们追求的不再是产品的表象，而是产品真真切切的内在，比如资讯类产品，它要给用户产出更精准的内容；金融类产品，它要给用户提供更安全和高收益的金融方案等。空间价值导向的产品设计不是解决个性化的问题，而是为用户挑选更有价值的模块，并优先展现。</p>
+<p><strong>4. 关注生命周期</strong></p>
+<p>在不同的生命周期内，我们关注的重点也不一样，空间价值模型更适合在成长期或成熟期的产品使用，在此阶段有足够的精力和数据去佐证方案的可行性。</p>
+<h4><span class="auto_menu">写在最后的话</span></h4>
+<p>空间价值导向的产品设计，最核心的地方是找到了支撑设计方案的落地点——做预测和推演。空间使事物具有了变化性，即因为空间的存在，所以事物才可以发生变化。拥抱变化才能赢得变化。方法不一定是通用的，也不是绝对的，条条大路通罗马，找到最合适的那条就行。</p>
+<p>更多设计模型：</p>
+<p>[link https://www.uisdc.com/fogg-and-mentalaccounting]</p>
+<p>欢迎关注作者微信公众号：「VMIC UED」</p>
+<p><span class="img-zoom"><img alt="如何用好设计双钻模型？来看 vivo 浏览器的实战案例！" class="alignnone size-full wp-image-381053" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ss-20200722-5.jpeg" width="180" height="180" /></span></p>

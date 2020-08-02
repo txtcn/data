@@ -1,0 +1,29 @@
+➜局域网文本\文件传输工具 Feem 有没有开源的替代品？  Snapdrop 挺不错
+https://www.appinn.com/snapdrop/	21737
+<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202007/snapdrop.jpg!o" alt=""/></figure>
+<p>来自<a href="https://meta.appinn.net/t/feem/17588" class="rank-math-link">问题求助频道</a> @<a href="https://meta.appinn.net/u/pessoa">pessoa</a> 的问题：</p>
+<p>就功能上来说，<a href="https://www.appinn.com/lizhi-202004/#feem" class="rank-math-link">Feem</a> 最符合我的需求。</p>
+<p>其他同类工具大多只能传输文件，无法传输文本。粘贴板同步工具能传输文本，又不是我想要的。曾想自建个 IRC 服务器，但是似乎没有 Feem 传送文本时的点击即复制功能。</p>
+<p>但是 Feem 很久没有更新了。“丑”暂且不提，没有新功能非常糟心。例如，我想要自动折叠常文本的功能，想要点击即发送粘贴板内容的按钮，还希望支持通过命令行操作……</p>
+<p>Feem 还需要付费来解锁功能，并且 iOS 应用还是分开付费的 。而且 Windows 客户端还不提供便携版的。最后还是要提一下，至少是 Feem 的 Windows 和 Android 应用都挺丑的。</p>
+<p>试着找了一下，没有发现具备 Feem 大部分功能的开源程序，绝大部分此类开源工具都局限于传输文件，并不能传输文本，更没有 Feem 聊天气泡式的外观。</p>
+<p>大家知道什么 Feem 的开源替代品吗？就是好看点的功能完善的非开源替代品也行。</p>
+<hr class="wp-block-separator"/>
+<p>虽说看起来 Feem 有一堆缺点，但青小蛙用起来还是非常方便的。不过既然需求来了，那么大家的选择怎么样呢？</p>
+<p>@<a href="https://meta.appinn.net/u/hgoldfish">hgoldfish</a> 同学<a href="https://meta.appinn.net/t/feem/17588/7" class="rank-math-link">推荐了</a>自己开发的剪贴板同步工具，而 @<a href="https://meta.appinn.net/u/520c">520c</a> 同学推荐了一款 PWA 应用 <strong>Snapdrop</strong>，似乎正好符合需求。</p>
+<h2>Snapdrop</h2>
+<p><a href="https://www.appinn.com/snapdrop/" class="rank-math-link">Snapdrop</a> 是一款开源的跨设备传输文件与文本工具，只需要浏览器即可使用，基于 WebRTC 在局域网内传输内容，属于 PWA 应用（渐进式网页应用），可以非常方便的在不同设备的浏览器间进行文件与文本的传输。开源，并可自部署。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202007/screenshot_2020-07-19_at_13_46_45.jpg!o" alt=""/></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202007/photo_2020-07-19_13-48-07.jpg!o" alt="" width="298" height="580"/></figure></div>
+<p>界面简单，页面下方是你的名字（随机），比如上图手机上的名字是 Yellow Emu，那么在电脑的浏览器上点击这个名字就可以传输文件了。</p>
+<p>要传输文本，只需要右键对应的名字即可（手机上是长按），而接收端会提示关闭（Close）或者复制（COPY），非常方便。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202007/screenshot_2020-07-19_at_13_52_29.jpg!o" alt=""/></figure></div>
+<p>Snapdrop 本身提供了一个服务地址：<a href="https://snapdrop.net/?ref=appinn" class="rank-math-link">https://snapdrop.net/</a> 即开即用，在 <a href="https://github.com/RobinLinus/snapdrop" class="rank-math-link">GitHub</a> 开源，并且提供了完整的 Docker 部署方式，你可以在 NAS 上部署，也能用几秒钟的时间开一台 VPS（推荐 <a href="https://www.vultr.com/?ref=7112193" class="rank-math-link">Vultr</a>，可选自带 Docker 环境，支持支付宝付款）：</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202007/screenshot_2020-07-19_at_13_58_00.jpg!o" alt=""/></figure></div>
+<p>然后，依次运行：</p>
+<pre class="brush: bash; title: ; notranslate">
+git clone https://github.com/RobinLinus/snapdrop.git
+cd snapdrop
+docker-compose up -d
+</pre>
+<p>再访问：ip:8080 就可以正常使用了。当然你也可以使用青小蛙部署的那个，地址自己找。</p>

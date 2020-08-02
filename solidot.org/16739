@@ -1,0 +1,13 @@
+➜Xen项目修复了一个有7年历史的高危提权漏洞
+https://www.solidot.org/story?sid=46000	42608
+Xen项目<a target="_blank" href="http://xenbits.xen.org/xsa/advisory-148.html"><u>修复了</u></a>一个有7年历史的高危提权漏洞。该漏洞允许恶意的半虚拟化客户机管理员提升权限，完全控制宿主机系统。使用 Xen保护敏感资源的安全桌面系统Qubes OS的研究人员<a target="_blank" href="http://arstechnica.com/security/2015/10/xen-patches-7-year-old-bug-that-shattered-hypervisor-security/"><u>认为</u></a>，它可能是至今发现的影响Xen虚拟化管理系统的最严重bug。在披露漏洞前，Xen项目提前通知了多家使用Xen的云计算服务商，其中包括 Linode和亚马逊AWS，Linode建议用户重启实例，但亚马逊表示不需要重启。今天的云计算服务很少使用Xen的半虚拟化模式，它被认为<a target="_blank" href="http://it.slashdot.org/story/15/10/30/0311226/xen-patches-7-year-old-bug-that-shattered-hypervisor-security"><u>已经死亡</u></a>。
+➜英国想要无搜查证搜查英国人的互联网历史
+https://www.solidot.org/story?sid=46001	46255
+英国政府<a target="_blank" href="http://www.telegraph.co.uk/news/uknews/crime/11964655/Police-to-be-granted-powers-to-view-your-internet-history.html"><u>计划要求</u></a>ISP和电信公司保存英国居民的浏览历史和电子邮件历史最长12个月，根据警方的要求提供数据，即使警方没有搜查证。警方可以利用这一权力了解他们想要调查的人访问了哪些网站联络了哪些人搜索了什么关键词。英国内政大臣Theresa May称不可能在安全和隐私之间取得平衡。英国的计划可能没有考虑到网站和搜索引擎启用加密的情况，在加密的情况下，ISP也只能知道你访问了哪个网站但不知道你搜索了什么或查看了哪个页面。使用VPN或Tor也能隐藏浏览历史。<br>
+<br>
+➜阴茎可能只演化了一次
+https://www.solidot.org/story?sid=46002	52207
+成年斑点楔齿蜥没有阴茎。但在爬行类、飞行类、和哺乳类等有羊膜的动物中间，这还算不上最奇怪的。很多蛇有双阴茎，鸭子的阴茎是螺旋形的。羊膜类动物生殖器的多样性令试图绘制演化树的科学家大惑不解。蜥蜴没有阴茎对于研究是有用的，因为科学家可以追溯它的祖先有没有阴茎，何时阴茎消失。根据发表在《Biology Letters》期刊上的蜥蜴胚胎<a target="_blank" href="http://rsbl.royalsocietypublishing.org/lookup/doi/10.1098/rsbl.2015.0694"><u>研究</u></a>，科学家发现羊膜类动物的最后一个共同祖先有直立阴茎。现代的多样性是随时间调整的结果。科学家发现，大蜥蜴在胚胎发育过程中阴茎长出来过，后来又收缩了回去，所以它们出生后没有了阴茎。胚胎发育暗示，羊膜类动物阴茎<a target="_blank" href="http://news.sciencemag.org/biology/2015/10/penis-only-evolved-once-suggests-study-lizard-embryos"><u>只演化了一次</u></a>，某些动物后来失去了阴茎。
+➜古巴的网络路由十分混乱
+https://www.solidot.org/story?sid=46003	56624
+去年底美国和古巴宣布重新建立外交关系，美国的网络公司如Netflix和Airbnb立即宣布要将其服务扩大到古巴。但古巴的网络对此做好准备了吗？ 美国西北大学的计算机科学教授 Fabián E. Bustamante和他的学生对古巴的网络连接情况进行了一番研究，发现该国的<a target="_blank" href="http://www.mccormick.northwestern.edu/news/articles/2015/10/research-shows-cubas-internet-issues.html"><u>网络路由非常糟糕</u></a>。他们使用一台位于哈瓦那的服务器去分析进出古巴的网络流量，测量来自古巴的请求发送到目标服务器，然后再从目标服务器返回的时间。研究中，他们发现当哈瓦那的一个人在Google上搜索一个主题，发出的请求会通过海底光缆路由到委内瑞拉，然后再通过另一条海底光缆传输到美国，最终抵达Google位于达拉斯的服务器。当Googe服务器发回搜索结果，它会传输到佛罗里达的迈阿密，然后上传到卫星，通过卫星发回到古巴。古巴发出去的信息花了60-70毫秒，但信息传送回去却花了 270毫秒。Bustamante说，在加载网页时，你可以抽空去取咖啡，取回来后也许结果才会到来。他们推测这可能是路由配置或路由策略的问题。

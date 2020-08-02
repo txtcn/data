@@ -1,0 +1,52 @@
+➜微软同意收购 GitHub，用户涌向 GitLab
+https://www.solidot.org/story?sid=56713	6604
+彭博社援引知情人士的消息<a href="https://www.bloomberg.com/news/articles/2018-06-03/microsoft-is-said-to-have-agreed-to-acquire-coding-site-github?" target="_blank"><u>报道</u></a>，微软同意收购最大的源代码托管平台 GitHub。一名匿名知情人士称，GitHub 宁愿选择出售而不是上市，它选择微软是因为被该公司 CEO Satya Nadella 打动了。目前还不清楚收购的条款，GitHub 在 2015 年估值 20 亿美元。这笔交易对双方都有利，GitHub 还没有盈利，而微软则越来越多的依赖开源软件。这一消息传出之后，大量用户<a href="https://monitor.gitlab.net/dashboard/db/github-importer?orgId=1" target="_blank"><u>涌向</u></a>了 GitHub 的竞争对手 GitLab，他们将托管在 GitHub 上的项目<a href="https://docs.gitlab.com/ee/user/project/import/github.html" target="_blank"><u>导入</u></a> GitLab。
+➜Linux 4.17 发布
+https://www.solidot.org/story?sid=56714	11592
+Linus Torvalds 在内核邮件列表上<a href="https://lkml.org/lkml/2018/6/3/142" target="_blank"><u>宣布</u></a>释出 4.17 kernel。这个版本仍然叫 4.17 而不是 5.0，Linus 称 5.0 会在不久的未来到来，不过暂时还没有理由更新大版本号。他估计可能会在 4.20 左右当手指脚趾加起来都不能数完小版本号之后切换到新的大版本号。Linux 4.17 的<a href="https://kernelnewbies.org/Linux_4.17" target="_blank"><u>主要新特性</u></a>包括：改进 CPU 调度器的<a href="https://lwn.net/Articles/741171/" target="_blank"><u>负载估算</u></a>，raw BPF 跟踪点，XF 文件系统支持 lazytime ，内核 TLS 协议完全支持，<a href="https://lwn.net/Articles/635522/" target="_blank"><u>histograms 触发器</u></a>，修补最新 Spectre 漏洞变种，以及移除八种基本没人再使用的过时处理器架构，支持 AMDGPU WattMan；支持 Intel HDCP；Vega 12 GPU 和 NVIDIA Xavier SoC 支持；默认启用  AMDGPU DC；改进电源管理，等等。
+➜全球烟民数量下降，电子烟使用者在增加
+https://www.solidot.org/story?sid=56715	12524
+世界卫生组织最新的数字显示，2018 年全球约有 11 亿人有抽烟的习惯，比 2000 年约有 11.4 亿人少，而与此同时电子烟的使用人口<a href="http://www.bbc.com/zhongwen/simp/uk-44340480" target="_blank"><u>在慢慢增多</u></a>。总部在伦敦的全球零售市场分析研究公司 Euromonitor 的调查显示，2011 年全球有约 700 万人有抽电子烟的习惯，到了 2016 年，这个数字升至 3500 万。Euromonitor 同时估计，抽电子烟的人口到 2021 年会进一步升至 5500 万人。全球在电子烟的花费也水涨船高：电子烟和相关产品在全球的销售额五年前只有 42 亿美元，至今已涨至 226 亿美元。这家公司的另一项调查显示，美国、日本和英国是全球最大的电子烟市场，这三个国家的消费者在 2016 年合共买了价值 163 亿美元的电子烟和相关产品。
+➜微软拒绝更改受争议的 GVFS 项目名字
+https://www.solidot.org/story?sid=56716	14524
+微软去年透露了 Git Virtual File System（GVFS）项目，GVFS 是 Git 版本控制系统的一个开源插件，允许 Git 处理 TB 规模的代码库，比如 270 GB 的 Windows 代码库。该项目公布之初<a href="https://tech.slashdot.org/story/18/06/03/0626246/microsoft-sticks-with-controversial-gvfs-name-despite-backlash" target="_blank"><u>就引发了争议</u></a>，原因是 GVFS 这个名字已经有开源项目<a href="https://medium.com/@DuroSoft/despite-backlash-microsoft-sticks-with-controversial-gvfs-name-57d6e175af9c" target="_blank"><u>使用了</u></a>。GNOME 项目的虚拟文件系统组件就叫 GVfs，两个项目都与虚拟文件系统有关，因此相同的缩写显然会引发混淆，而微软的知名度也很容易将 GVfs 淹没在搜索结果深处。GVFS 是一个开源项目，因此开发者在 GitHub 上提出了改名的请求，并递交了 <a href="https://github.com/Microsoft/GVFS/pull/51" target="_blank"><u>pull request </u></a>允许微软在代码库里替换 GVFS  到任意一个微软想要的名字。然而微软关闭了所有改名的问题，关闭了相关的  pull request。软件巨人显然无意修改名字。
+➜网信办约谈美拍
+https://www.solidot.org/story?sid=56717	17490
+中国最高互联网审查机构<a href="http://www.cac.gov.cn/2018-06/03/c_1122929776.htm" target="_blank"><u>约谈了</u></a>“美拍”网络直播短视频平台，勒令其全面整改。网信办称，美拍“疏于视频内容管理，置社会公序良俗和社会舆论于不顾，出于博取眼球、获取流量的目的，继续传播未成年人衣着暴露、性暗示等低俗不良信息，突破社会道德底线、违背社会主流价值观，严重危害青少年身心健康，社会反映强烈。”美拍相关负责人表示完全接受处罚，进行全面彻底整改，切实履行企业主体责任，承诺暂停有关算法推荐功能，下线 “校园” 频道，停止更新 “热门” 频道 30 天、“直播”频道 15 天。整改期间，将进一步完善内容审核发布、安全策略管理等各项机制，建立健全未成年人保护体系，用正确的价值观指导算法，积极传播正能量。网信办表示将加大短视频和直播平台的监管。另外，腾讯旗下的两大服务 QQ 和微信以系统维护为由禁止用户更改头像和昵称。另一个流行的短视频服务抖音也出现用户资料无法修改等<a href="https://tieba.baidu.com/p/5730743117" target="_blank"><u>限制</u></a>。
+➜智能手机全球出货量去年首次下降
+https://www.solidot.org/story?sid=56718	24160
+2017 年是智能手机全球出货量首次下降的一年。根据 <a href="http://www.kpcb.com/internet-trends" target="_blank"><u>Internet Trends</u></a> 的报告，2017 年全球智能手机出货量<a href="https://hardware.slashdot.org/story/18/06/03/199211/smartphone-shipments-declined-for-the-first-time-in-2017" target="_blank"><u>下降了 0.5%</u></a>，而 2016 年是略微增长 2%。在智能手机市场，Android 和 iOS 的统治地位无人能动摇，其它移动操作系统基本上没有立足之地了。虽然旗舰手机的价格大幅上涨，比如 Google 和苹果的旗舰手机价格超过 800 美元甚至超过一千美元，但智能手机的平均售价仍然逐年稳定下降。随着越来越多人拥有了智能手机，增长基本停止。这一情况类似网民人数的增长，2016 年互联网用户数量增长 12%，2017 年只增长 7%。更多的人访问互联网，平均每天上网时间 5.9 小时。他们越来越多的在移动设备上上网，意味着他们手中拿的是旧型号的手机而不是新型号。
+➜Google 将不再与五角大楼续签军用无人机软件合同
+https://www.solidot.org/story?sid=56719	27228
+围绕军用无人机项目 Project Maven 的争议看起来即将结束。Gizmodo <a href="https://gizmodo.com/google-plans-not-to-renew-its-contract-for-project-mave-1826488620" target="_blank"><u>报道称</u></a>，在目前的合同结束之后 Google 将不再与五角大楼续签合同。Project Maven 旨在利用 AI 和机器学习技术改进无人机的目标识别能力，是 Google 首个军用合同，这一消息立即在 Google 内部引发了抵制，超过四千名雇员请愿呼吁 Google 退出该项目。Google 云端业务的 CEO Diane Greene 在周会上告诉雇员，Project Maven 的合同在 2019 年过期之后将不会更新。
+➜神探夏洛克在贝克街旁边见义勇为
+https://www.solidot.org/story?sid=56720	28826
+<a href="http://mingrui.wang">wmr</a> 写道<i> "一名外卖快递员在贝克街旁边的一条街上骑自行车的时候，有四个歹徒想要抢他的自行车。此时，夏洛克的扮演者 Benedict Cumberbatch 和司机看到后下了出租车，<a href="https://www.telegraph.co.uk/news/2018/06/01/benedict-cumberbatch-fights-muggers-attacked-deliveroo-cyclist/" target="_blank">拉走了他们，让他们离开，于是赶跑了袭击者</a>。袭击的地点与福尔摩斯的住所 221B 距离不远。没有人受伤，嫌疑人仍然在逃（警方记录只是称<a href="https://cn.nytimes.com/world/20180604/benedict-cumberbatch-mugging-attack/" target="_blank"><u>没有人被捕</u></a>）。"</i>
+➜冥王星上的沙丘可能是由甲烷冰颗粒构成
+https://www.solidot.org/story?sid=56721	29477
+NASA “新视野” 号探测器拍摄的冥王星照片显示了一批呈带状分布的丘状物，绵延约 75 公里。根据发表在《科学》期刊上的<a href="http://science.sciencemag.org/content/360/6392/992" target="_blank"><u>论文</u></a>， 这种与地球上的沙丘颇为相似的丘状物<a href="http://news.sciencenet.cn/htmlnews/2018/6/413773.shtm" target="_blank"><u>可能是甲烷冰微粒堆积成的</u></a>。冥王星沙丘之间的距离从 400 米到 1000 米不等，排列颇有规律，互相之间的角度与附近山坡角度有关，这都显示它们是山间吹来的风造就的。“沙丘”之间还有一些深色条纹，也符合风吹散深色物质产生的特征。研究人员说，冥王星大气稀薄、风力微弱，山风本身可能不足以卷起冰粒。不过在阳光照射下，冰川的氮冰表面气化，氮气散逸的过程中带起冰粒，与风力作用一起使冰粒移动、堆积。 <br>
+➜亚马逊停止向澳大利亚用户提供国际购物服务
+https://www.solidot.org/story?sid=56722	32968
+为应对即将生效的澳大利亚网络购物消费税（GST），亚马逊决定从 7 月 1 日起停止向澳大利亚用户提供国际购物服务，用户可以选择在本地亚马逊网站购物，然而本地电商网站比美亚或英亚昂贵得多，举例来说，同一款键盘 Unicomp Ultra Classic Keyboard 美亚售价 139 美元，而澳亚售价 360 美元，Marc Jacobs Jane West End Suede 手包美亚售价 894 美元，而奥亚售价 2172 美元。GST 要求海外企业对价格低于一千美元的产品收税。澳大利亚新闻网站教用户<a href="https://www.news.com.au/finance/business/retail/turnbulls-online-shopping-tax-punishes-aussie-consumers-how-to-avoid-the-amazon-ripoff/news-story/a9fc27c89f4f9c8ad933c34551e463df" target="_blank"><u>如何绕过地理封锁</u></a>：使用 VPN 和国际转运公司。eBay 和阿里巴巴则表示它们不会地理屏蔽澳大利亚网购者。亚马逊称，澳大利亚网购者仍然可以在美亚或英亚购物，无需 VPN ，但它只会送到美国地址——国际转运公司仍然是有用的。
+➜隼鸟 2 号即将抵达目标小行星
+https://www.solidot.org/story?sid=56723	34527
+<div align="center"><img src="http://img.solidot.org/0/819/liMRO6o5BAk.jpg" width="360" height="240" align=""><br>
+</div>
+<br>
+日本宇宙航空研究开发机构（JAXA）6 月 4 日<a href="http://cn.nikkei.com/industry/scienceatechnology/30787-2018-06-04-15-58-59.html" target="_blank"><u>宣布</u></a>，用于探索生命起源的 “隼鸟 2 号” 探测器即将抵达目的地 “龙宫” 小行星。隼鸟 2 号于&nbsp; 2014 年 12 月发射，其目标是小行星 <a href="https://en.wikipedia.org/wiki/162173_Ryugu" target="_blank"><u>162173 号</u></a>，aka 龙宫，这颗小行星被认为存在接近生命起源的有机物和水。JAXA 预计隼鸟 2 号将于 6 月 21～7 月 5 日抵达龙宫附近。在采集岩石和沙子之后隼鸟 2 号计划于 2019 年底离开，2020 年底返回地球。
+➜中国科学家在迪拜沙漠成功种植水稻
+https://www.solidot.org/story?sid=56724	40327
+袁隆平领导的一组中国科学家在迪拜沙漠<a href="http://www.scmp.com/news/china/society/article/2148684/coming-plate-near-you-soon-rice-grown-chinese-scientists-using" target="_blank"><u>成功种植和收获水稻</u></a>。在中东地区，淡水太珍贵而不能被用来灌溉需要大量水的作物。中国的科学家研制出能利用海水灌溉的水稻品种并将其带到中东。上周收获的水稻是在今年 1 月种下的，其产量超出了科学家的预期。官方新华社报道称，最高产量达到了每公顷 7500 公斤，而全球水稻的平均产量是每公顷 3000 公斤。科学家计划今年晚些时候将试验田扩大到 100 公顷，最终的目标是种植到十分之一的阿联酋土地上。
+➜科技巨人让创业公司度日如年
+https://www.solidot.org/story?sid=56725	42972
+经济学人发表了一篇文章<a href="https://www.economist.com/business/2018/06/02/american-tech-giants-are-making-life-tough-for-startups" target="_blank"><u>谈论了</u></a>美国科技巨头让创业公司的生活越来越艰难，尤其是这些巨头不惜放下身段拷贝小公司的产品然后展开竞争。对于这种情况，政府是否应该进行干预？<br>
+<i>Twitter 早期投资者 Albert Wenger 等风投家开始谈论巨头周围的杀戮区。一旦年轻的企业进入到这个区域，它们将很难生存下去。科技巨头试图通过拷贝来挤压创业公司，或者通过收购在早期将威胁消除。这种杀戮区可能令人想起微软在 1990 年的统治，当时它采用了拥抱、扩展再消灭的策略来恐吓创业公司进入其领域。今天，在线搜索、社交媒体、移动和电子商务领域的创业公司获得首轮融资的难度在加大。进入杀戮区的创业公司会发生什么情况，Snap 是其中最为突出的例子。Snap 在 2013 年拒绝了 Facebook 的 30 亿美元的收购报价，之后 Facebook 克隆了 Snap 的许多成功功能，阻碍了其继续增长。Life on Air 在 2015 年推出了直播应用 Meerkat，在 Twitter 收购并推出竞争应用 Periscope 后，Meerkat 消失了。Life on Air 又推出了一个新的应用 Houseparty，提供了群组视频聊天功能，但 Facebook 复制了该功能后抢走了它的用户。除了容易被杀死外，创业公司面临的一大难题是现有的平台地位过于牢固，没有新平台出现打破僵局。</i>
+➜长寿可能与肠道微生物相关
+https://www.solidot.org/story?sid=56726	46115
+俗话说，人如其食。根据发表在《Scientific Reports》期刊上的一项研究，科学家<a href="https://www.sciencedaily.com/releases/2018/05/180531114611.htm" target="_blank"><u>发现</u></a>生活在肠道的微生物吃的东西可能会影响到我们的寿命。研究人员给果蝇喂食益生菌和名叫三果宝（Triphala）的草药补充剂组合，结果果蝇的寿命延长了五分之三，并免于受到衰老相关慢性疾病的影响。该研究为肠道细菌影响健康增添了新证据。喂食补充剂的果蝇寿命达到了 66 天，比没有喂食补充剂的同类多活 26 天。它们还表现出了减少衰老特征如胰岛素抵抗增加、炎症和氧化应激的迹象。研究人员称，益生菌显著改变了肠道微生物群的结构，不仅包括其组成而且还影响食物的代谢，产生了广泛的的有益生理影响。这一现象在人类身上可能不会那么显著。
+➜加州政府机构鼓励采用开源
+https://www.solidot.org/story?sid=56727	47107
+加州科技部<a href="https://statescoop.com/california-agencies-must-now-go-open-source-on-all-software-projects" target="_blank"><u>公布了</u></a>一项新政策《<a href="https://www.documents.dgs.ca.gov/sam/SamPrint/new/sam_master/sam_master_File/chap4900/4984.pdf" target="_blank"><u>Open Source and Code Reuse Policy</u></a>》，鼓励政府机构和实体使用开源软件和重复使用代码，以降低重复开发费用，促进政府机构之间的合作，减少纳税人税款的浪费。非自由软件仍然是允许的，政府仍然对商业软件的供应商敞开大门，但将优先考虑开源。新的政策还要求创建一个开源的代码库，托管在 <a href="https://code.ca.gov/" target="_blank"><u>code.ca.gov</u></a> 网站上，公开政府部门开发的软件源代码。
+➜微软正式宣布收购 GitHub
+https://www.solidot.org/story?sid=56728	47428
+微软<a href="https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/" target="_blank"><u>宣布</u></a>以 75 亿美元收购最流行的代码托管平台 GitHub。此前相关收购流言在社区引发了激烈讨论，甚至有人发起<a href="https://www.change.org/p/microsoft-stop-microsoft-from-buying-github" target="_blank"><u>请愿</u></a>不要让微软收购，但这些行动已经无济于事，更多的人则选择行动起来迁移到竞争对手 Gitlab。在微软的新闻稿中，公司 CEO Satya Nadella 表示，微软是将开发者放在第一位的公司，收购 GitHub 加强了它对开发者的承诺。微软是用价格 75 亿美元的股票收购 GitHub，收购之后 GitHub 将会独立运营，微软副总裁、Xamarin 创始人 Nat Friedman 将会担任 CEO 一职，现任 CEO Chris Wanstrath 则将担任微软的技术院士。
