@@ -5,8 +5,9 @@ from os.path import join,dirname,abspath,exists
 import tempfile
 
 _DIR=dirname(abspath(__file__))
+GIT = basename(_DIR)
 
-version = $(curl --retry 5 -s https://api.github.com/repos/txtcn/data/releases/latest|awk -F '"' '/tag_name/{print $4}')
+version = $(curl --retry 5 -s https://api.github.com/repos/txtcn/@(GIT)/releases/latest|awk -F '"' '/tag_name/{print $4}')
 print(version)
 prefix,version = version.rsplit(".",1)
 version = int(version)
