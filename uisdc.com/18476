@@ -1,3 +1,151 @@
+➜如何做好阅读体验设计？来看vivo浏览器的改版实战案例
+https://www.uisdc.com/vivo-browser-revision-design	57680
+<p>新闻阅读是我们生活中息息相关的事儿~我们每天清晨醒来，是不是会打开惯用的app，看看又发生了什么，又有什么瓜可以吃？一不留神，十几二十分钟就过去了。</p>
+<p>对于vivo的用户来说，在浏览器这类产品中，新闻阅读功能的重要度仅次于搜索模块。根据之前委托用研同学做的流失用户研究报告，新闻阅读的体验问题也是导致用户流失的重要原因之一。</p>
+<h4><span class="auto_menu">新闻阅读的现状</span></h4>
+<p>vivo浏览器产品中，基于阅读模块的相关设计在关注度和方法论上都有所欠缺。线上的新闻阅读版式处理较陈旧，视觉体验较差，用户在使用过程中障碍较多。归根究底，由于整体的设计思路缺失，表面的调整一直是修修补补状态，没有根本解决阅读体验的问题。</p>
+<h4><span class="auto_menu">目的和价值</span></h4>
+<p>了解了这样的背景情况后，我们提炼了此次新闻阅读优化的目的和设计价值：</p>
+<ul>
+<li>业务侧：提升浏览器阅读时长。提升新闻阅读效率。</li>
+<li>用户侧：带来沉浸且高效的阅读体验。</li>
+<li>设计价值体现在：优化新闻模块有助于提升用户浏览效率，固定时间用户可以阅读更多内容，资讯，整体提高浏览时长。对于商业侧，能够曝光更多的资讯和广告。</li>
+</ul>
+<h4><span class="auto_menu">研究思路</span></h4>
+<p>如何去根据我们的现状，完成我们的设计提案，去协助我们解决问题实现我们的预期价值？首先我们根据之前定好的优化目的提炼了整体设计目标。</p>
+<p><strong>1. 设计目标：</strong></p>
+<p>通过加强逻辑与秩序，在易认性和可读性上优化信息传达和记忆质量，最终给用户打造0干扰的阅读体验。</p>
+<p>这里解释下几个概念~</p>
+<ul>
+<li>易认性：（Legibility）针对文字，能准确无误的让读者阅读，不因为过于接近带来困惑。</li>
+<li>可读性：（Readability）针对版式，阅读的容易程度，文字的组合呈现。</li>
+<li>0干扰：能将自己的设计不动声色的隐藏起来，不以设计本身分散人的注意力，达到阅读的沉浸状态。</li>
+</ul>
+<p>好的，设计目标确立后，我们来聊下设计研究框架，也就是我们优化方案的整体思路。</p>
+<p><strong>2. 指导性设计框架</strong></p>
+<p>整体设计框架思路是以人为本。从用户体验为开始，提炼影响沉浸阅读的因素，结合成熟的版式研究理论，对细节进行探索和新理论沉淀。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381261" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-20.jpeg" width="1029" height="320" /></span></p>
+<p>△ 研究步骤</p>
+<p>步骤解说：</p>
+<p>聚焦用户（用户阅读习惯探索，主要从人群和竞品方面研究）——明确目标（什么叫沉浸阅读，如何做到阅读0干扰）——理论指导（成熟的版式理论推出屏幕理论，指导优化）——细节修正（落地操作，沉淀）</p>
+<h4><span class="auto_menu">用户侧研究</span></h4>
+<p>上一节内容里，我们研究并确认了设计框架，圈定了设计的范围和方向，那么不多说，让我们进入第一部分的研究：用户研究环节，来看看我们的用户画像是什么样子？他们对新闻模块阅读不满意的在哪些方面呢？</p>
+<h5>1. 用户属性和流失原因分析</h5>
+<p>首先我们来看几张图：</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381242" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-1.jpeg" width="1080" height="582" /></span></p>
+<p>△ 浏览器用户人口属性</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381243" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-2.jpeg" width="940" height="485" /></span></p>
+<p>△ 选择不同浏览器时考虑的因素排名</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381244" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-3.jpeg" width="1004" height="730" /></span></p>
+<p>△ 使用vivo浏览器的目的</p>
+<p>相关结论：</p>
+<ul>
+<li>浏览器用户27～36岁占比较高，36岁以下占比高达78%，整体数据显示用户年龄偏向年轻化。</li>
+<li>浏览器用户最重要使用行为主要是搜索，其次是新闻。</li>
+<li>新闻资讯是用户选择浏览器的前三考虑因素之一。</li>
+</ul>
+<p>以上说明了新闻模块对于vivo浏览器来说非常重要，我们服务的用户很大一部分是中青年，对我们之后设计有指导性帮助，例如在默认字号的选择确定上。那接下来让我们来看一下流失用户研究中都是哪些因素？</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381267" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-26.jpg" width="1080" height="599" /></span></p>
+<p>△ 对新闻模块不满意原因（点击查看大图）</p>
+<p>在流失用户研究中，新闻模块不满意因素中，体验问题有一定的占比。除去内容本身的吐槽，其他体验问题主要集中为：观感差，操作复杂，功能不好用。这几项问题都侧面反映出用户在阅读时候受到功能与视觉的打扰，导致了满意度较不好的情况。</p>
+<p>了解了用户的基本情况以及流失用户原因，我们来看下在如今时代里，基于用户的阅读习惯，怎么做才能减少不必要的打扰，达到沉浸的阅读体验？</p>
+<h5>2. 用户阅读习惯（思考与研究如何做到0干扰）</h5>
+<p><strong>提升阅读浏览体验</strong></p>
+<p>首先，我们提一下沉浸阅读这个概念。</p>
+<p>用户体验专家Alan Cooper在《About Face3》中描述，当人们能够在一个活动上聚精会神时，他们会忘记外面的世界，忽略掉各种干扰。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381245" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-4.jpeg" width="1080" height="186" /></span></p>
+<p>△ 用户体验层次</p>
+<p>用户体验层次是一层一层递进的，从有用到可用再到易用，最后一步是友好，我们优化追求的是达到最后的体验。从阅读角度上来看，沉浸是读者在阅读时的一个最重要的状态。</p>
+<p><strong>干扰因素细分</strong></p>
+<p>干扰我们沉浸阅读的因素很多，我们的注意力总是被各种各样的事物干扰，频繁的打断阅读体验确实让人恼怒。让我们来看下影响我们沉浸阅读的因素有哪些？</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381262" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-21.jpg" width="1080" height="480" /></span></p>
+<p>△ 干扰阅读的因素</p>
+<p>上图中我们对干扰阅读的因素进行了细分，一共三个大模块：外界，自我，和文章本身。我们设计师能加以优化的点都和文章本身相关。（文字字号，字体，字间距，真实感，行距，段落间距，页面材质等）</p>
+<p><strong>拟物体验需求升级</strong></p>
+<p>书籍产生的年代比电子产品早得多，如今书籍的版式规范，易用性已经优化的很完善。模拟书本阅读的产品也在这几年非常流行，目前阅读产品在界面设计上也在不断贴合物理阅读 相关体验，比如模拟纸张颜色，墨水屏等。几乎所有阅读器产品都有改换背景的功能，这与读者们追求与书本一致真实感的阅读体验密切相关。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381246" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-5.jpeg" width="1080" height="320" /></span></p>
+<p>△ 市面各类阅读app界面</p>
+<p>以上的研究对我们接下来做的优化设计起到指引性作用，那让我们来看下具体的设计是如何展开的。</p>
+<h4><span class="auto_menu">五项理论指导</span></h4>
+<p>聚焦用户的习惯之后，我对阅读要素：字号，字体，对齐，用色，留白规律分别进行研究，结合各个相关理论沉淀出适合新闻阅读的规范。那就具体来看下每一个模块：</p>
+<h5>1. 字号研究</h5>
+<p>一般来说，年龄较大的人群对大字体需求高于年轻人，阅读器相关产品默认字号基于年轻人喜好设定为中偏小的字号，同时也给功能进行调整。因为阅读字号是个非常私人化的配置，所以加调整字号的功能是必备的。</p>
+<p>提到字号使用方式，通常设计师会基于前人给的规范或者系统相关的基础规范去做设计。但对于精细化研究，到底用什么字号我们需要有强有力的理论依据，版式设计早已自成体系，书本上文字的使用方法总结非常精细和科学，我们基于版式设计的成果对屏幕文字进行研究。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381248" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-7.jpeg" width="1080" height="425" /></span></p>
+<p>△ 人眼距离书本和手机物理距离</p>
+<p>对于正常印刷品来说我们人眼距离书本30~35cm，字号大小也应该按照这个距离计算，太大太小都会影响阅读。版式规范里8～12点是最适合书籍，正文的字号。（1点=0.376毫米）（也就是3～4.5mm）。人眼离手机距离也差不多30cm，手持手机比书本放桌上要离眼睛会近5cm左右，并且更多人由于习惯问题，会拿近一些。</p>
+<p><strong>计算公式（标题和正文）</strong></p>
+<p>以正文字号探索，物理尺寸转化到手机上（实际尺寸(英寸)=像素/分辨率; 1英寸=2.54厘米; 如一张图片宽为600像素，分辨率为300，那么实际打印宽度为：600/300=2英寸，约为5厘米）。基于我们设计文件尺寸规范和分辨率，我们得到字号的范围如下图（字号为3的倍数）</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381247" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-6.jpeg" width="1080" height="369" /></span></p>
+<ul>
+<li>最适合标题的字号（72px～93px）</li>
+<li>最适合的正文字号（48px～72px）</li>
+</ul>
+<p>得到了最贴近阅读习惯的字号范围（其实还是挺宽泛的）如何去缩小这个数值，最终确定一个合适的字号呢？接下来我们增加了对 竞品研究 的模块，也就是目标用户目前习惯的研究。</p>
+<p><strong>正文和标题的竞品字号情况：</strong></p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381249" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-8.jpeg" width="1100" height="1567" /></span></p>
+<p>正文：大部分阅读器app字号比新闻资讯类app大一些，资讯类字号选在51最为合适，54也可以考虑。</p>
+<p>标题：大部分新闻类主标题文字选用69，72px，但69号字在版式中稍微偏离规范。就标题大小来说，大部分阅读器app字号比新闻资讯类app大一些。</p>
+<p>结合产品本身功能，需要敲定的字号有主标题，二级标题，正文三个。为了明显让用户感知到字号差异带来的文字功能差异，加快识别反应速度，三个功能各字号不能过于接近。最终定义为大标题72px，二级标题60px，正文51px，且标题加粗显示（如下图）。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381250" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-9.jpeg" width="1080" height="796" /></span></p>
+<h5>2. 字体研究</h5>
+<p>说完字号我们来说下字体，字体是组成文章的基础元素，也是我们模块的DNA，字体的优化是我们提案关键的一部分。字体选择上，我们对比了几十种字体，从识别度为出发点去考虑，最终选定 华康金刚黑 作为我们新的字体代替原来的系统字体汉仪旗黑。让我们来看下新字体的优势：</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381251" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-10.jpeg" width="800" height="255" /></span></p>
+<p>△ 新旧字体比对</p>
+<ul>
+<li>汉仪旗黑（旧字体）：字形扁正，转折处复杂。存在问题：扁正的字体缺少精神气,转折处复杂会影响单个字体的理解速度，降低整篇文章的阅读速度。</li>
+<li>华康金刚黑（新字体）：偏瘦，结构简单的华康金刚黑。结构简单，方正挺拔，粗细均匀。更适合阅读和提升阅读效率。</li>
+</ul>
+<p><strong>细节上：</strong></p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381252" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-11.jpeg" width="800" height="554" /></span></p>
+<p>华康金刚黑：顿，提，略微有弧度，符合汉字最基础的笔画样式显得字体生动，不死板。每一笔画都有该文字的特征，例如「寒」字里的井，「峰」字里的丰，每一横长度都不一致，而汉仪旗黑过于统一，让每个字形一眼看上去非常接近，过于平均，单个字体的识别度受到影响。华康金刚黑字体在单个文字识别度上优于汉仪旗黑。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381264" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-23.jpg" width="1080" height="326" /></span></p>
+<p>△ 灰度数据分析</p>
+<p>报告里看出在较短时间的灰度测试中仅仅字体变化，其他都不改变，关键业务指标都有正向提升：人均启动次数，人均新闻点击，人均时长，广告点击等都有正向数据提升。所以我们选择了用华康金刚黑作为我们新闻阅读的默认字体。</p>
+<h5>3. 对齐方式研究</h5>
+<p>研究完字体，段落里文字对齐的研究也很重要。</p>
+<p>文字对齐方式有：左对齐，右对齐，左右对齐，居中对齐这几种，大段落文字阅读右对齐或者居中对齐几乎没有，所以这里我们对比左对齐和左右对齐的优劣。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381254" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-13.jpeg" width="1080" height="683" /></span></p>
+<p>△ 两种对齐方式</p>
+<p>来看下优劣对比：</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381265" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-24.jpg" width="1080" height="434" /></span></p>
+<p>左右对齐的优势较多，主要体现在视觉感受舒服（规规整整的版式），更主要是眼睛在固定位置换行，在易读性上做得比较好。缺点也是有的，文章存在2种字间距，而左对齐优势在于只有一个固定字间距。好在新闻阅读文章长度并没有特别长，篇幅受限，影响也就不会扩大，且2个间距尺寸也是在可接受范围里。综上对比，我们认为 左右对齐 的版式在新闻类阅读里，是明显优于左对齐版式。</p>
+<h5>4. 色彩研究</h5>
+<p>越来越多阅读器模拟真实阅读环境，屏幕的亮度对眼睛的伤害受到越来越多的重视，寻求一种沉浸的体验在各行各业都受到关注，比如之前火起来的暗黑模式。本次探索主要从黑白灰的关系角度出发，意在打造一个沉浸的色感体验。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381253" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-12.jpeg" width="1080" height="241" /></span></p>
+<p>△ 现状到思路</p>
+<p>通过研究思路，我们沉淀3方面的调整：</p>
+<ul>
+<li>页面底色：模拟纸质，用弱灰色。不做颜色倾向主要考虑用户对大面偏色喜好度不同，新闻类阅读尽可能避开这类情感化问题。</li>
+<li>文字沉浸：用色方式上再做考究，降低颜色饱和，解决文字黑色块的视觉干扰。文字做透明度来模拟沉浸效果。</li>
+<li>减少其他色块面积：预防阅读过程被特殊色彩干扰，删除页面多余色彩。</li>
+</ul>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381263" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-22.jpg" width="1080" height="503" /></span></p>
+<p>△ 优化后样式沉浸感提升</p>
+<h5>5. 页面版式留白探索（行间距，段落间距等）</h5>
+<p>看完色彩研究，我们来看一下版式。行间距是决定版面中的栏宽是否具有阅读性的重要因素。许多平面大师都非常注重行距，段落间距的设置。</p>
+<p>过窄与过宽的行距会有意识或无意识的让读者困惑，造成某种心理障碍。行距过大会打破文本连续性，每一行会被孤立，缺乏紧凑感，会降慢阅读速度。行距太小会让页面灰度过重，读者眼睛承受过多的负担，无法集中阅读单独一行，时间久了会增加疲劳感。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381255" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-14.jpeg" width="1080" height="746" /></span></p>
+<p><strong>引入概念—「垂直韵律」</strong></p>
+<p>「垂直韵律」是阅读节奏感的重中之重，打造一切视觉阅读节奏。行距，是垂直韵律的基础属性。（同版式中的网格概念接近）</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381256" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-15.jpeg" width="1100" height="992" /></span></p>
+<p>△ 行距概念</p>
+<p>版式规范中，中文汉字1.5～2倍的行距是最为适合的。整体来说，字号越小，行间距应该相对越大，反之亦然。51号正文在之前探讨的（48～72）字号里偏小，这里适当增加行间距和段落间距可以优化阅读体验。多次比对后，我们决定正文部分采用1.65倍行距来设计。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381257" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-16.jpeg" width="1080" height="747" /></span></p>
+<p>△ 在多次比对后，确定1.65倍行距最符合各项指标</p>
+<p>行距确定完后，基础间距就有了数值a，之后页面相关的元素纵向之间间距都依赖这个数值（a的n倍）</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381258" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-17.jpeg" width="1080" height="614" /></span></p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381266" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-25.jpg" width="1080" height="717" /></span></p>
+<p>△ 操作规范</p>
+<p>倍数间距的引用，整体页面来看，所有的留白都有规律可循，形成自己的韵律感。这么做的好处就是用户对规律间隔的理解度更高，有节奏的留白除了满足了它本身需要的功能属性，用户阅读过程中不容易受到来自间隔过多的干扰，这样易读性就提升了。</p>
+<p>来看下我们版式页面样子，自带韵律感~</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381259" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-18.jpeg" width="1000" height="3432" /></span></p>
+<p>最后来看下细节指导，也就是操作规范：</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381260" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-19.jpeg" width="1080" height="2305" /></span></p>
+<p>同样提升阅读体验，腾讯的高手是这么做的：</p>
+<p>[link https://www.uisdc.com/chinese-typesetting-3-principle]</p>
+<p>欢迎关注作者微信公众号：「VMIC UED」</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381269" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-ew-20200723-1.jpg" width="180" height="182" /></span></p>
 ➜壹周速读：哪些思维和方法可以有效提升设计效果？
 https://www.uisdc.com/quick-reading-weekly-vol66	58362
 <p><span class="img-zoom"><img alt="壹周速读：哪些思维和方法可以有效提升设计效果？" src="https://image.uisdc.com/wp-content/uploads/2020/08/quick-reading-weekly-vol66-1.jpg" width="750" height="168" class="alignnone size-full wp-image-382728" /></span></p>
@@ -169,154 +317,111 @@ https://www.uisdc.com/wutiaoren-design	58721
 <br />                    window.dataLayer = window.dataLayer || [];<br />                    function gtag(){dataLayer.push(arguments);}<br />                    gtag('js', new Date());</p>
 <p>                    gtag('config', 'UA-172659890-2');<br />
 // ]]&gt;</script></p>
-➜如何做好阅读体验设计？来看vivo浏览器的改版实战案例
-https://www.uisdc.com/vivo-browser-revision-design	59300
-<p>新闻阅读是我们生活中息息相关的事儿~我们每天清晨醒来，是不是会打开惯用的app，看看又发生了什么，又有什么瓜可以吃？一不留神，十几二十分钟就过去了。</p>
-<p>对于vivo的用户来说，在浏览器这类产品中，新闻阅读功能的重要度仅次于搜索模块。根据之前委托用研同学做的流失用户研究报告，新闻阅读的体验问题也是导致用户流失的重要原因之一。</p>
-<h4><span class="auto_menu">新闻阅读的现状</span></h4>
-<p>vivo浏览器产品中，基于阅读模块的相关设计在关注度和方法论上都有所欠缺。线上的新闻阅读版式处理较陈旧，视觉体验较差，用户在使用过程中障碍较多。归根究底，由于整体的设计思路缺失，表面的调整一直是修修补补状态，没有根本解决阅读体验的问题。</p>
-<h4><span class="auto_menu">目的和价值</span></h4>
-<p>了解了这样的背景情况后，我们提炼了此次新闻阅读优化的目的和设计价值：</p>
-<ul>
-<li>业务侧：提升浏览器阅读时长。提升新闻阅读效率。</li>
-<li>用户侧：带来沉浸且高效的阅读体验。</li>
-<li>设计价值体现在：优化新闻模块有助于提升用户浏览效率，固定时间用户可以阅读更多内容，资讯，整体提高浏览时长。对于商业侧，能够曝光更多的资讯和广告。</li>
-</ul>
-<h4><span class="auto_menu">研究思路</span></h4>
-<p>如何去根据我们的现状，完成我们的设计提案，去协助我们解决问题实现我们的预期价值？首先我们根据之前定好的优化目的提炼了整体设计目标。</p>
-<p><strong>1. 设计目标：</strong></p>
-<p>通过加强逻辑与秩序，在易认性和可读性上优化信息传达和记忆质量，最终给用户打造0干扰的阅读体验。</p>
-<p>这里解释下几个概念~</p>
-<ul>
-<li>易认性：（Legibility）针对文字，能准确无误的让读者阅读，不因为过于接近带来困惑。</li>
-<li>可读性：（Readability）针对版式，阅读的容易程度，文字的组合呈现。</li>
-<li>0干扰：能将自己的设计不动声色的隐藏起来，不以设计本身分散人的注意力，达到阅读的沉浸状态。</li>
-</ul>
-<p>好的，设计目标确立后，我们来聊下设计研究框架，也就是我们优化方案的整体思路。</p>
-<p><strong>2. 指导性设计框架</strong></p>
-<p>整体设计框架思路是以人为本。从用户体验为开始，提炼影响沉浸阅读的因素，结合成熟的版式研究理论，对细节进行探索和新理论沉淀。</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381261" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-20.jpeg" width="1029" height="320" /></span></p>
-<p>△ 研究步骤</p>
-<p>步骤解说：</p>
-<p>聚焦用户（用户阅读习惯探索，主要从人群和竞品方面研究）——明确目标（什么叫沉浸阅读，如何做到阅读0干扰）——理论指导（成熟的版式理论推出屏幕理论，指导优化）——细节修正（落地操作，沉淀）</p>
-<h4><span class="auto_menu">用户侧研究</span></h4>
-<p>上一节内容里，我们研究并确认了设计框架，圈定了设计的范围和方向，那么不多说，让我们进入第一部分的研究：用户研究环节，来看看我们的用户画像是什么样子？他们对新闻模块阅读不满意的在哪些方面呢？</p>
-<h5>1. 用户属性和流失原因分析</h5>
-<p>首先我们来看几张图：</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381242" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-1.jpeg" width="1080" height="582" /></span></p>
-<p>△ 浏览器用户人口属性</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381243" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-2.jpeg" width="940" height="485" /></span></p>
-<p>△ 选择不同浏览器时考虑的因素排名</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381244" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-3.jpeg" width="1004" height="730" /></span></p>
-<p>△ 使用vivo浏览器的目的</p>
-<p>相关结论：</p>
-<ul>
-<li>浏览器用户27～36岁占比较高，36岁以下占比高达78%，整体数据显示用户年龄偏向年轻化。</li>
-<li>浏览器用户最重要使用行为主要是搜索，其次是新闻。</li>
-<li>新闻资讯是用户选择浏览器的前三考虑因素之一。</li>
-</ul>
-<p>以上说明了新闻模块对于vivo浏览器来说非常重要，我们服务的用户很大一部分是中青年，对我们之后设计有指导性帮助，例如在默认字号的选择确定上。那接下来让我们来看一下流失用户研究中都是哪些因素？</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381267" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-26.jpg" width="1080" height="599" /></span></p>
-<p>△ 对新闻模块不满意原因（点击查看大图）</p>
-<p>在流失用户研究中，新闻模块不满意因素中，体验问题有一定的占比。除去内容本身的吐槽，其他体验问题主要集中为：观感差，操作复杂，功能不好用。这几项问题都侧面反映出用户在阅读时候受到功能与视觉的打扰，导致了满意度较不好的情况。</p>
-<p>了解了用户的基本情况以及流失用户原因，我们来看下在如今时代里，基于用户的阅读习惯，怎么做才能减少不必要的打扰，达到沉浸的阅读体验？</p>
-<h5>2. 用户阅读习惯（思考与研究如何做到0干扰）</h5>
-<p><strong>提升阅读浏览体验</strong></p>
-<p>首先，我们提一下沉浸阅读这个概念。</p>
-<p>用户体验专家Alan Cooper在《About Face3》中描述，当人们能够在一个活动上聚精会神时，他们会忘记外面的世界，忽略掉各种干扰。</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381245" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-4.jpeg" width="1080" height="186" /></span></p>
-<p>△ 用户体验层次</p>
-<p>用户体验层次是一层一层递进的，从有用到可用再到易用，最后一步是友好，我们优化追求的是达到最后的体验。从阅读角度上来看，沉浸是读者在阅读时的一个最重要的状态。</p>
-<p><strong>干扰因素细分</strong></p>
-<p>干扰我们沉浸阅读的因素很多，我们的注意力总是被各种各样的事物干扰，频繁的打断阅读体验确实让人恼怒。让我们来看下影响我们沉浸阅读的因素有哪些？</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381262" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-21.jpg" width="1080" height="480" /></span></p>
-<p>△ 干扰阅读的因素</p>
-<p>上图中我们对干扰阅读的因素进行了细分，一共三个大模块：外界，自我，和文章本身。我们设计师能加以优化的点都和文章本身相关。（文字字号，字体，字间距，真实感，行距，段落间距，页面材质等）</p>
-<p><strong>拟物体验需求升级</strong></p>
-<p>书籍产生的年代比电子产品早得多，如今书籍的版式规范，易用性已经优化的很完善。模拟书本阅读的产品也在这几年非常流行，目前阅读产品在界面设计上也在不断贴合物理阅读 相关体验，比如模拟纸张颜色，墨水屏等。几乎所有阅读器产品都有改换背景的功能，这与读者们追求与书本一致真实感的阅读体验密切相关。</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381246" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-5.jpeg" width="1080" height="320" /></span></p>
-<p>△ 市面各类阅读app界面</p>
-<p>以上的研究对我们接下来做的优化设计起到指引性作用，那让我们来看下具体的设计是如何展开的。</p>
-<h4><span class="auto_menu">五项理论指导</span></h4>
-<p>聚焦用户的习惯之后，我对阅读要素：字号，字体，对齐，用色，留白规律分别进行研究，结合各个相关理论沉淀出适合新闻阅读的规范。那就具体来看下每一个模块：</p>
-<h5>1. 字号研究</h5>
-<p>一般来说，年龄较大的人群对大字体需求高于年轻人，阅读器相关产品默认字号基于年轻人喜好设定为中偏小的字号，同时也给功能进行调整。因为阅读字号是个非常私人化的配置，所以加调整字号的功能是必备的。</p>
-<p>提到字号使用方式，通常设计师会基于前人给的规范或者系统相关的基础规范去做设计。但对于精细化研究，到底用什么字号我们需要有强有力的理论依据，版式设计早已自成体系，书本上文字的使用方法总结非常精细和科学，我们基于版式设计的成果对屏幕文字进行研究。</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381248" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-7.jpeg" width="1080" height="425" /></span></p>
-<p>△ 人眼距离书本和手机物理距离</p>
-<p>对于正常印刷品来说我们人眼距离书本30~35cm，字号大小也应该按照这个距离计算，太大太小都会影响阅读。版式规范里8～12点是最适合书籍，正文的字号。（1点=0.376毫米）（也就是3～4.5mm）。人眼离手机距离也差不多30cm，手持手机比书本放桌上要离眼睛会近5cm左右，并且更多人由于习惯问题，会拿近一些。</p>
-<p><strong>计算公式（标题和正文）</strong></p>
-<p>以正文字号探索，物理尺寸转化到手机上（实际尺寸(英寸)=像素/分辨率; 1英寸=2.54厘米; 如一张图片宽为600像素，分辨率为300，那么实际打印宽度为：600/300=2英寸，约为5厘米）。基于我们设计文件尺寸规范和分辨率，我们得到字号的范围如下图（字号为3的倍数）</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381247" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-6.jpeg" width="1080" height="369" /></span></p>
-<ul>
-<li>最适合标题的字号（72px～93px）</li>
-<li>最适合的正文字号（48px～72px）</li>
-</ul>
-<p>得到了最贴近阅读习惯的字号范围（其实还是挺宽泛的）如何去缩小这个数值，最终确定一个合适的字号呢？接下来我们增加了对 竞品研究 的模块，也就是目标用户目前习惯的研究。</p>
-<p><strong>正文和标题的竞品字号情况：</strong></p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381249" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-8.jpeg" width="1100" height="1567" /></span></p>
-<p>正文：大部分阅读器app字号比新闻资讯类app大一些，资讯类字号选在51最为合适，54也可以考虑。</p>
-<p>标题：大部分新闻类主标题文字选用69，72px，但69号字在版式中稍微偏离规范。就标题大小来说，大部分阅读器app字号比新闻资讯类app大一些。</p>
-<p>结合产品本身功能，需要敲定的字号有主标题，二级标题，正文三个。为了明显让用户感知到字号差异带来的文字功能差异，加快识别反应速度，三个功能各字号不能过于接近。最终定义为大标题72px，二级标题60px，正文51px，且标题加粗显示（如下图）。</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381250" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-9.jpeg" width="1080" height="796" /></span></p>
-<h5>2. 字体研究</h5>
-<p>说完字号我们来说下字体，字体是组成文章的基础元素，也是我们模块的DNA，字体的优化是我们提案关键的一部分。字体选择上，我们对比了几十种字体，从识别度为出发点去考虑，最终选定 华康金刚黑 作为我们新的字体代替原来的系统字体汉仪旗黑。让我们来看下新字体的优势：</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381251" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-10.jpeg" width="800" height="255" /></span></p>
-<p>△ 新旧字体比对</p>
-<ul>
-<li>汉仪旗黑（旧字体）：字形扁正，转折处复杂。存在问题：扁正的字体缺少精神气,转折处复杂会影响单个字体的理解速度，降低整篇文章的阅读速度。</li>
-<li>华康金刚黑（新字体）：偏瘦，结构简单的华康金刚黑。结构简单，方正挺拔，粗细均匀。更适合阅读和提升阅读效率。</li>
-</ul>
-<p><strong>细节上：</strong></p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381252" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-11.jpeg" width="800" height="554" /></span></p>
-<p>华康金刚黑：顿，提，略微有弧度，符合汉字最基础的笔画样式显得字体生动，不死板。每一笔画都有该文字的特征，例如「寒」字里的井，「峰」字里的丰，每一横长度都不一致，而汉仪旗黑过于统一，让每个字形一眼看上去非常接近，过于平均，单个字体的识别度受到影响。华康金刚黑字体在单个文字识别度上优于汉仪旗黑。</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381264" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-23.jpg" width="1080" height="326" /></span></p>
-<p>△ 灰度数据分析</p>
-<p>报告里看出在较短时间的灰度测试中仅仅字体变化，其他都不改变，关键业务指标都有正向提升：人均启动次数，人均新闻点击，人均时长，广告点击等都有正向数据提升。所以我们选择了用华康金刚黑作为我们新闻阅读的默认字体。</p>
-<h5>3. 对齐方式研究</h5>
-<p>研究完字体，段落里文字对齐的研究也很重要。</p>
-<p>文字对齐方式有：左对齐，右对齐，左右对齐，居中对齐这几种，大段落文字阅读右对齐或者居中对齐几乎没有，所以这里我们对比左对齐和左右对齐的优劣。</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381254" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-13.jpeg" width="1080" height="683" /></span></p>
-<p>△ 两种对齐方式</p>
-<p>来看下优劣对比：</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381265" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-24.jpg" width="1080" height="434" /></span></p>
-<p>左右对齐的优势较多，主要体现在视觉感受舒服（规规整整的版式），更主要是眼睛在固定位置换行，在易读性上做得比较好。缺点也是有的，文章存在2种字间距，而左对齐优势在于只有一个固定字间距。好在新闻阅读文章长度并没有特别长，篇幅受限，影响也就不会扩大，且2个间距尺寸也是在可接受范围里。综上对比，我们认为 左右对齐 的版式在新闻类阅读里，是明显优于左对齐版式。</p>
-<h5>4. 色彩研究</h5>
-<p>越来越多阅读器模拟真实阅读环境，屏幕的亮度对眼睛的伤害受到越来越多的重视，寻求一种沉浸的体验在各行各业都受到关注，比如之前火起来的暗黑模式。本次探索主要从黑白灰的关系角度出发，意在打造一个沉浸的色感体验。</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381253" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-12.jpeg" width="1080" height="241" /></span></p>
-<p>△ 现状到思路</p>
-<p>通过研究思路，我们沉淀3方面的调整：</p>
-<ul>
-<li>页面底色：模拟纸质，用弱灰色。不做颜色倾向主要考虑用户对大面偏色喜好度不同，新闻类阅读尽可能避开这类情感化问题。</li>
-<li>文字沉浸：用色方式上再做考究，降低颜色饱和，解决文字黑色块的视觉干扰。文字做透明度来模拟沉浸效果。</li>
-<li>减少其他色块面积：预防阅读过程被特殊色彩干扰，删除页面多余色彩。</li>
-</ul>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381263" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-22.jpg" width="1080" height="503" /></span></p>
-<p>△ 优化后样式沉浸感提升</p>
-<h5>5. 页面版式留白探索（行间距，段落间距等）</h5>
-<p>看完色彩研究，我们来看一下版式。行间距是决定版面中的栏宽是否具有阅读性的重要因素。许多平面大师都非常注重行距，段落间距的设置。</p>
-<p>过窄与过宽的行距会有意识或无意识的让读者困惑，造成某种心理障碍。行距过大会打破文本连续性，每一行会被孤立，缺乏紧凑感，会降慢阅读速度。行距太小会让页面灰度过重，读者眼睛承受过多的负担，无法集中阅读单独一行，时间久了会增加疲劳感。</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381255" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-14.jpeg" width="1080" height="746" /></span></p>
-<p><strong>引入概念—「垂直韵律」</strong></p>
-<p>「垂直韵律」是阅读节奏感的重中之重，打造一切视觉阅读节奏。行距，是垂直韵律的基础属性。（同版式中的网格概念接近）</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381256" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-15.jpeg" width="1100" height="992" /></span></p>
-<p>△ 行距概念</p>
-<p>版式规范中，中文汉字1.5～2倍的行距是最为适合的。整体来说，字号越小，行间距应该相对越大，反之亦然。51号正文在之前探讨的（48～72）字号里偏小，这里适当增加行间距和段落间距可以优化阅读体验。多次比对后，我们决定正文部分采用1.65倍行距来设计。</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381257" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-16.jpeg" width="1080" height="747" /></span></p>
-<p>△ 在多次比对后，确定1.65倍行距最符合各项指标</p>
-<p>行距确定完后，基础间距就有了数值a，之后页面相关的元素纵向之间间距都依赖这个数值（a的n倍）</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381258" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-17.jpeg" width="1080" height="614" /></span></p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381266" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-25.jpg" width="1080" height="717" /></span></p>
-<p>△ 操作规范</p>
-<p>倍数间距的引用，整体页面来看，所有的留白都有规律可循，形成自己的韵律感。这么做的好处就是用户对规律间隔的理解度更高，有节奏的留白除了满足了它本身需要的功能属性，用户阅读过程中不容易受到来自间隔过多的干扰，这样易读性就提升了。</p>
-<p>来看下我们版式页面样子，自带韵律感~</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381259" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-18.jpeg" width="1000" height="3432" /></span></p>
-<p>最后来看下细节指导，也就是操作规范：</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381260" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-19.jpeg" width="1080" height="2305" /></span></p>
-<p>同样提升阅读体验，腾讯的高手是这么做的：</p>
-<p>[link https://www.uisdc.com/chinese-typesetting-3-principle]</p>
-<p>欢迎关注作者微信公众号：「VMIC UED」</p>
-<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381269" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-ew-20200723-1.jpg" width="180" height="182" /></span></p>
+➜这13个常用的大厂App里，藏着诸多设计师的匠心和巧思
+https://www.uisdc.com/13-product-design-details	61240
+<p>作为设计师，在拿到产品需求的时候，所要做的不仅仅是完成产品的设计工作，更重要的是要思考如何通过设计的的手段去推动产品背后的商业价值达到最大化，提升视觉体验、增强用户的粘性以达到用户转化的目的。不需要我们设计的有多么复杂，可能是一个步骤的简化、一句打动人心的文案、贴心的提示、趣味的动效&#8230;</p>
+<h4><span class="auto_menu">「美团外卖」喊你回家吃最便宜的午餐</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>打开美团外卖APP，在每个店铺下方都有突出的满减提示，进入店铺详情页，在顶部和底部同样都有，选好商品后，商品的总价达到满减条件，就可以减掉对应的金额。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>满20减18，后面还有6元无门槛红包？这已经是免费的午餐了，而且还赚了4块钱。于是进入商品列表上下齐开「一顿操作猛如虎，定睛一看原地杵」，这里的商品要么就是低于20的，要么就是40左右，免费不存在的，要不就在这家随便吃点吧。</p>
+<p>其实类似于这种满减提示在外面平台一点都不稀奇，用户也都不傻，也许进入店铺发现不对后转身就走，可平台还是会把这种满减提示作为最耀眼的存在，屡试不爽。</p>
+<p>在用户完成转化的三要素中，动机、能力、触发，缺一不可。店铺下方的满减提示则是利用用户的贪小便宜的心理，优惠的数值越高，越能引起注意力和购买欲望，足以让用户产生下单的动机；进入店铺后，看完所有商品，即使没有符合用户心理预期的价格，因满减产生的动机逐渐降低，但新的购买动机产生了，通过红包、好评、折扣、美图&#8230;等能力依然在提升用户的购买欲望，触发用户下单，并最终完成转化。这种选择「让利」的方式去吸引用户，也是短期内也最有效方式。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382265" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-5.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「淘宝」激发用户情绪的弹窗设计</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在体验淘宝签到功能时，签到成功会出现弹窗提示「签到成功」，并告知此时下单红包即可翻倍，点击关闭，弹出二层弹窗「红包未翻倍」及「限频道内使用」的文字提醒。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>淘宝通过二层弹窗提醒用户退出当前页面可能带来的影响、后果，让用户判断当前的退出决策是否正确，毕竟相对于‘收获’来说，‘损失’更让人在乎某事物。 同时告知退出会让下次行动付出更多的金钱成本，这种更多成本的投入会让用户产生顾虑，从而激发用户的情绪并转化为行动。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382269" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-9.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「支付宝」蚂蚁庄园-转化用户稍纵即逝的消费动机</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在支付宝的蚂蚁庄园喂养小鸡，通过养鸡攒爱心，集满 5 颗爱心，即可捐赠给公益项目，另外可以完成多种任务来获得饲料来喂养小鸡；</p>
+<p>点击蚂蚁庄园左侧的果树去种树免费领取水果，同样可以完成各种任务获得肥料，施肥促使果树成长，最终果实成熟就可免费领取真实的水果。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>支付宝通过公益的方式已经让用户对蚂蚁庄园产生了很强的粘性。项目的受益对象都是弱势群体，比如留守儿童、残疾幼儿、贫困女性等等，并根据捐赠的爱心进行好友排名。虽然有一部分人做好事不留名，但不排除大部分用户都喜追求面子心理，总是希望自己最有面子，因为它可以带来一种荣耀和心理上的满足感，如果做好事能让他人知晓，会激励更多的人行善，因而用户排名起到了极大的用户激励作用。</p>
+<p>最近，蚂蚁庄园增加了种果树功能，选择自己喜欢的水果种果树，通过施肥最终让果树成熟就可以免费领取真实的水果，在开始出现「免费领水果」的时候就已经激起了用户的贪婪心理。种植果树后，需要通过施肥促使果树成长，在成长的不同阶段需要的肥料也会根据基数递增式的增加，需要用户完成不同的任务获得肥料，可以完成的任务虽然很多，但大部分都是九牛一毛。</p>
+<p>用户每天可以通过逛精选商品获得大量的肥料，进入商品页面，系统会推荐用户最近在淘宝浏览过相似类型的商品，停留15秒即可领取肥料，同时如果下单更可领取近乎10倍的肥料，促使水果成熟的更快。根据 希克定律：用户决策所需要花费的时间随着选择的数量和复杂性增加而增加。系统通过减少可供用户选择的选项以及为了「免费领水果」获得肥料而可能下单的潜在动机，推荐最近浏览过的类似商品，促使用户快速做出决策，以到达成交的目的。（PS：本人为了领取大量的肥料，已经买了好几次之前想买而没有买的商品）</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382267" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-7.jpg" width="800" height="1556" /></span></p>
+<h4><span class="auto_menu">「CCtalk」友好的弹窗提示</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>进入「cctalk」APP首页，底部会自动出现最近一次学习记录的弹窗小提示，点击即可进入继续学习，也可手动点击关闭，在没有任何操作的情况，时间达到5s也会自动关闭。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>cctall是一个重量级的产品，进入此应用的用户通常带有目的性，都是以学习为主，不至于是用户在漫无目的情况下进来娱乐休闲一番吧。进入首页的学习记录弹窗是介于toast与snackbar之间，延长了toast的显示时间，并加入了一个跳转链接，同时也可以关闭或自动消失，起到提醒用户作用的同时，又不影响其他的操作。</p>
+<p>如果你不知道什么是toast和snackbar，下面这两篇文章能帮你快速知晓：</p>
+<p>[link https://www.uisdc.com/ui-element-toast]<br />
+[link https://www.uisdc.com/snackbar-design]</p>
+<p>一个好的产品会在恰当的时间给予恰当的反馈，不反馈、反馈不及时、反馈不对都会让用户反感你的产品，从而失去用户。cctalk的弹窗提示正是在用户恰好可能需要的时间出现，让用户快速的达到自己的目的，非常的友好，同时也提升了产品的易用性。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382261" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-1.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「饿了么」便捷的购物车入口</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>进入饿了么首页，点击右下角的购物车入口，即可看到从所有店铺添加的商品一览，可进行一一结算。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>相比以前，用过饿了么的用户都知道，每个店铺都是有单独的购物车，从对应的购物车进去才能完成结算。大部分用户在买商品之前，都会查看多个店铺相同商品的价格、评论、综合评分&#8230;等，根据性价比「货比三家」，但回过头来，需要来回切换去找到之前添加过商品的店铺，甚至查询不到，耗费大量的时间，非常的不便。</p>
+<p>饿了么首页右下角新增的购物车入口很好的解决了这一问题，进入购物车，能看到之前添加过商品到购物车的所有店铺，可从列表中选择进行结算，节省了用户大量的时间成本，入口很巧妙的解决了用户在下单流程中可能会遇到的痛点，提升了产品的易用性。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382264" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-4.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「夸克浏览器」洞察人心的地址栏细节</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>夸克浏览器输入网址时，点击下方控制条图标，会放大左右控制区域，左右移动即可修改光标位置；</p>
+<p>地址栏显示在键盘上方（屏幕中间位置），输入网址时的自动匹配结果由下往上的方式排列。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>我们在使用移动端浏览器输入网址时，如果需要修改文本框的地址，需要用手指直接在输入框定位光标，相对很小的地址文本，要想将光标精准的定位在理想的位置，确实非常难。通过夸克浏览器的控制条左右移动定位光标，精准度提升了很多，避免了用户因光标定位错误造成的重复操作，提高了操作效率。</p>
+<p>另外所接触的移动端浏览器，大部分的地址栏都设在屏幕的顶部。目前大屏幕尺寸已经是趋势，单手操作手机的用户比例占据最大，顶部和最底部的单手最难操作的区域，而夸克浏览器打破常规，将地址栏放在键盘上方，即屏幕的中间位置，是用户单手最容易操作和控制的区域，非常的便捷。网址匹配结果根据精准度由下往上排列也是非常合理。费茨定律告诉我们：需要连续操作的控件尽可能接近， 任意一点移动到目标中心位置所需要的时间，与目标距离正相关， 与目标大小负相关。</p>
+<p>什么是费茨定律：</p>
+<p>[link https://www.uisdc.com/product-details-wiedemann-franz-law]</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382262" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-2.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「微信」朋友圈消息重新编辑</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>使用朋友圈发布消息，发现有错别字，把信息删除后，点击重新编辑即可在回到消息未发布时的界面修改完成。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>微信在最近一段时间真是大招连连，从之前一年一次的昵称修改到后面的拍一拍，接着又上线了朋友圈消息删除后重新编辑的功能，让很多网友直呼真香。</p>
+<p>我们在发布朋友圈消息之后，发现有错别字或者需要增减内容，可以直接删除，在规定的时间内重新编辑再次发布即可。尤其是对于发布长篇幅消息的用户，没有复制消息内容就匆忙删除，再次从0编辑，心里的阴影面积不弱于「一万匹烈马奔腾」，此时看到重新编辑的入口，可谓是雪中送炭，不仅简化的交互流程，也省去了用户重新编辑消息的一系列麻烦操作，深得人心。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382266" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-6.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「58同城」举一反三的弹窗Tab栏</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在体验58同城APP发布房源信息时，需要录入多种房屋选项，可以在一个弹窗的多个Tab栏中完成不同的选项。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>在我们使用的众多APP应用中，不少接触关于信息选择的页面，如：填写地址选择地区、购物选择商品类型、退货选择原因&#8230;等，最为常见的操作方式就是选择完当前选项后，需要点击下一个选项入口，再次进入弹窗选择，有很多个分级。而58同城发布房源的选项，在进行设计的时候将多个分级放在同一选项，多个选项放在同一弹窗，有效的避免了选项太多造成的信息混乱，同时也解决了因多次弹窗给用户带来操作上的不便。节省时间操作成本的同时，也让路径变得更加合理简单。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382273" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-13.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「美团」首页金刚区图标</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>进入美团首页，金刚区面性类型的抽象图标给人眼前一亮的感觉；</p>
+<p>金刚区多种分类入口可通过左右滑动切换，能快速找到自己想要的功能。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>一个产品最具核心功能的就是首页了， 它承担了产品最核心的功能，决定了产品的属性和基调，而首页的金刚区最能体现产品的「骨骼」（产品架构），以方便用户快速进入对应的需求模块。通常我们见得最多的金刚区图标样式80%都是「底色块+图形元素」组合而成，而美团APP金刚区使用的面性图标，通过对现实生活中物体缩影的抽象图形进行色彩填充的图标样式， 清晰、简洁且统一，具有表意能力强、辨识度高的特点，提升易用性。跟其他产品大众化的图标样式相比，做到了差异化。另外通过单色叠加，更改透明度或叠加图层样式设计，视觉上非常通透，有空间感，细节丰富，品质感强，具有很强的吸引力，称得上是首页的颜值担当。</p>
+<p>针对首页众多的功能入口，无法全部展示，大部分移动应用都会在金刚区的最后位置设计一个「更多」的入口。而美团则通过左右滑动的交互方式将功能分类全部展示，在视觉上更加聚焦。因为很多的图标具备相似性，使用列表展示容易混淆用户的视觉，降低图标的辨识度以及信息的传递速度，所以全部展示并左右滑动选择、分块浏览很好的解决的这一问题，不仅操作快捷，而且视觉传达的效率也得到了提升。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382268" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-8.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「iPhone」App Store引人注目的动效引导</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>使用iPhone移动端设备进入App store首次下载该应用，页面底部提示「通过侧边按钮确认」，屏幕右侧按钮位置备注「按两下以安装」，同时右侧的模拟按钮色块以动效的方式弹动两次提醒。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>对于Apple产品，不管是移动端还是桌面设备，在视觉和体验上都可称之为魔鬼级别。下载应用时，右侧的按钮形状则是利用视觉线索进行示能，让用户通过图形，预期下一步的行为或感知图形的作用。通过动效提示方式更能吸引用户的眼球，也更能引导用户进行操作，真正做到的有温度、有情感的交流。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382272" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-12.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「腾讯QQ」隐藏在暗处的多窗口消息浏览</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>点击QQ消息列表进入聊天框，长按聊天窗口空白处，可以切换多窗口，左右滑动可切换好友/群聊窗口，上下滑动可查看当前窗口的更多聊天记录。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>虽然现在大部分的用户都转战微信，但QQ作为社交应用的翘楚，光辉一直都没有退却，只不过QQ服务的用户群体较年轻，而且社交群体多样化，也更符合年轻化的气质。QQ的信息多窗口切换，看起来也是相当炫酷，切换时只需要在消息列表中，长按消息的空白处就能快速进入切换选项，丝滑般的快感，我们再也不需要使用返回信息列表再重新进入到窗口的多步骤操作了。</p>
+<p>为此，你也可能会听到：「我赵日天表示不服哇」，已经不用QQ好多年，微信这么方便，难道它不香吗？其实对于真正需要的用户来说，这一功能还是非常的方便。不管是处于学习、工作还是闲聊吹水，QQ的群聊功能比较多样化，我们在浏览群聊天记录、爬楼、查找部分有用信息通过多窗口切换时是非常实用。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382270" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-10.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「中国工商银行」趣味的动效视觉引导</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>进入中国工商银行APP首页，搜索栏里的语音录入通过动效的形式在麦克风图形与音波图形之间过渡来回切换，提醒用户可以使用语音录入搜索。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>目前很多移动端应用的搜索都增加了语音录入功能，为的是让用户更高效、便捷的完成搜索，不过大部分只是增加了一个麦克风图标作为提示。工商银行APP使用动效的形式在麦克风图形与音波图形之间过渡来回切换，首先动态的视觉引导，增添了趣味性的微交互更能吸引用户的眼球，也能够更好的引导用户操作。其次使用两个图标在识别性上是具有选择性的，扩大了用户在识别层范围的认知程度，也间接提升辨识度，两个图标过渡性质的切换，也显得非常柔和，情感化的设计细节为产品增添了温度，提高点击率。</p>
+<p>图标是一个对象或动作的视觉体现，最重要的意象属性就是传达含义功能，另外也是加深用户形象的最主要影响要素。麦克风图标是一个设备的抽象图形，音波图标则是使用设备时的交互过程，两个图标以动效的形式完美过渡结合，给我们的第一印象就是感觉这个功能再在向我们招手，在和我们对话，真正做到了有温度的交流。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382263" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-3.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「京东」适时的隐藏营造沉浸体验</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在京东APP商品列表上滑浏览商品时，导航栏和全局筛选栏自动隐藏，存在下滑操作后再次展示。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>一般情况下，当一些导航或者操作入口可能会成为打扰用户沉浸体验障碍时，我们就会把它隐藏，因为部分元素的存在，就会分散用户的注意力。基于用户的需求，京东APP的商品列表顶部有导航栏、全局操作栏、垂直内容筛选栏，加上状态栏，在移动设备中的纵向占比是相当的大，为了解决这一问题，京东通过改变交互的方式，当页面上滑，会隐藏导航栏和全局筛选栏，下滑后则再次显示。</p>
+<p>在交互方面，做了这样的思考，当出现上滑的操作后，可以理解为用户已经开始在挑选商品，这时候搜索与排序的重要级下降了，搜索结果垂直内容筛选的重要级上升了，将等级较低的操作/信息适时的隐藏，可以让用户专注于当前信息，避免其他多余的内容产生干扰，同时也让内容区域高度增加，一屏展示的商品信息更多，增大商品触达用户的可能性以及屏幕的利用率。合理的运用了交互设计四策略-隐藏：尽可能隐藏需要隐藏的功能，其次在合适的时机、位置上显示相应的功能。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382271" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-11.jpg" width="800" height="803" /></span></p>
+<p>深度了解交互设计四策略：</p>
+<p>[link https://www.uisdc.com/simple-and-usable-notes]</p>
+<p>欢迎关注作者微信公众号：「能量眼球」</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-381046" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200722-10.jpg" alt="如何为你的UI制定一套色彩系统？来看这个实战案例！" width="180" height="180" /></span></p>
 ➜我删除了所有配色网站，只留下这一个
 https://www.uisdc.com/adobe-color	62924
 <p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382442" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-40.gif" width="640" height="360" /></span></p>
