@@ -32,7 +32,7 @@ def main(outpath):
     Path(dirname(outfile)).mkdir(parents=True, exist_ok=True)
 
     print(outfile)
-    with zd.open(outfile, "w", level=22) as out:
+    with zd.open(outfile, "w", level=19) as out:
       for fname in tqdm(file_li):
         fpath = join(root, str(fname))
         day = fname * 86400
