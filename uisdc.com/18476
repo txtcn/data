@@ -886,6 +886,154 @@ https://www.uisdc.com/vivo-browser-revision-design	57680
 <p>[link https://www.uisdc.com/chinese-typesetting-3-principle]</p>
 <p>欢迎关注作者微信公众号：「VMIC UED」</p>
 <p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381269" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-ew-20200723-1.jpg" width="180" height="182" /></span></p>
+➜如何做好阅读体验设计？来看vivo浏览器的改版实战案例
+https://www.uisdc.com/vivo-browser-revision-design	57680
+<p>新闻阅读是我们生活中息息相关的事儿~我们每天清晨醒来，是不是会打开惯用的app，看看又发生了什么，又有什么瓜可以吃？一不留神，十几二十分钟就过去了。</p>
+<p>对于vivo的用户来说，在浏览器这类产品中，新闻阅读功能的重要度仅次于搜索模块。根据之前委托用研同学做的流失用户研究报告，新闻阅读的体验问题也是导致用户流失的重要原因之一。</p>
+<h4><span class="auto_menu">新闻阅读的现状</span></h4>
+<p>vivo浏览器产品中，基于阅读模块的相关设计在关注度和方法论上都有所欠缺。线上的新闻阅读版式处理较陈旧，视觉体验较差，用户在使用过程中障碍较多。归根究底，由于整体的设计思路缺失，表面的调整一直是修修补补状态，没有根本解决阅读体验的问题。</p>
+<h4><span class="auto_menu">目的和价值</span></h4>
+<p>了解了这样的背景情况后，我们提炼了此次新闻阅读优化的目的和设计价值：</p>
+<ul>
+<li>业务侧：提升浏览器阅读时长。提升新闻阅读效率。</li>
+<li>用户侧：带来沉浸且高效的阅读体验。</li>
+<li>设计价值体现在：优化新闻模块有助于提升用户浏览效率，固定时间用户可以阅读更多内容，资讯，整体提高浏览时长。对于商业侧，能够曝光更多的资讯和广告。</li>
+</ul>
+<h4><span class="auto_menu">研究思路</span></h4>
+<p>如何去根据我们的现状，完成我们的设计提案，去协助我们解决问题实现我们的预期价值？首先我们根据之前定好的优化目的提炼了整体设计目标。</p>
+<p><strong>1. 设计目标：</strong></p>
+<p>通过加强逻辑与秩序，在易认性和可读性上优化信息传达和记忆质量，最终给用户打造0干扰的阅读体验。</p>
+<p>这里解释下几个概念~</p>
+<ul>
+<li>易认性：（Legibility）针对文字，能准确无误的让读者阅读，不因为过于接近带来困惑。</li>
+<li>可读性：（Readability）针对版式，阅读的容易程度，文字的组合呈现。</li>
+<li>0干扰：能将自己的设计不动声色的隐藏起来，不以设计本身分散人的注意力，达到阅读的沉浸状态。</li>
+</ul>
+<p>好的，设计目标确立后，我们来聊下设计研究框架，也就是我们优化方案的整体思路。</p>
+<p><strong>2. 指导性设计框架</strong></p>
+<p>整体设计框架思路是以人为本。从用户体验为开始，提炼影响沉浸阅读的因素，结合成熟的版式研究理论，对细节进行探索和新理论沉淀。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381261" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-20.jpeg" width="1029" height="320" /></span></p>
+<p>△ 研究步骤</p>
+<p>步骤解说：</p>
+<p>聚焦用户（用户阅读习惯探索，主要从人群和竞品方面研究）——明确目标（什么叫沉浸阅读，如何做到阅读0干扰）——理论指导（成熟的版式理论推出屏幕理论，指导优化）——细节修正（落地操作，沉淀）</p>
+<h4><span class="auto_menu">用户侧研究</span></h4>
+<p>上一节内容里，我们研究并确认了设计框架，圈定了设计的范围和方向，那么不多说，让我们进入第一部分的研究：用户研究环节，来看看我们的用户画像是什么样子？他们对新闻模块阅读不满意的在哪些方面呢？</p>
+<h5>1. 用户属性和流失原因分析</h5>
+<p>首先我们来看几张图：</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381242" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-1.jpeg" width="1080" height="582" /></span></p>
+<p>△ 浏览器用户人口属性</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381243" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-2.jpeg" width="940" height="485" /></span></p>
+<p>△ 选择不同浏览器时考虑的因素排名</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381244" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-3.jpeg" width="1004" height="730" /></span></p>
+<p>△ 使用vivo浏览器的目的</p>
+<p>相关结论：</p>
+<ul>
+<li>浏览器用户27～36岁占比较高，36岁以下占比高达78%，整体数据显示用户年龄偏向年轻化。</li>
+<li>浏览器用户最重要使用行为主要是搜索，其次是新闻。</li>
+<li>新闻资讯是用户选择浏览器的前三考虑因素之一。</li>
+</ul>
+<p>以上说明了新闻模块对于vivo浏览器来说非常重要，我们服务的用户很大一部分是中青年，对我们之后设计有指导性帮助，例如在默认字号的选择确定上。那接下来让我们来看一下流失用户研究中都是哪些因素？</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381267" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-26.jpg" width="1080" height="599" /></span></p>
+<p>△ 对新闻模块不满意原因（点击查看大图）</p>
+<p>在流失用户研究中，新闻模块不满意因素中，体验问题有一定的占比。除去内容本身的吐槽，其他体验问题主要集中为：观感差，操作复杂，功能不好用。这几项问题都侧面反映出用户在阅读时候受到功能与视觉的打扰，导致了满意度较不好的情况。</p>
+<p>了解了用户的基本情况以及流失用户原因，我们来看下在如今时代里，基于用户的阅读习惯，怎么做才能减少不必要的打扰，达到沉浸的阅读体验？</p>
+<h5>2. 用户阅读习惯（思考与研究如何做到0干扰）</h5>
+<p><strong>提升阅读浏览体验</strong></p>
+<p>首先，我们提一下沉浸阅读这个概念。</p>
+<p>用户体验专家Alan Cooper在《About Face3》中描述，当人们能够在一个活动上聚精会神时，他们会忘记外面的世界，忽略掉各种干扰。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381245" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-4.jpeg" width="1080" height="186" /></span></p>
+<p>△ 用户体验层次</p>
+<p>用户体验层次是一层一层递进的，从有用到可用再到易用，最后一步是友好，我们优化追求的是达到最后的体验。从阅读角度上来看，沉浸是读者在阅读时的一个最重要的状态。</p>
+<p><strong>干扰因素细分</strong></p>
+<p>干扰我们沉浸阅读的因素很多，我们的注意力总是被各种各样的事物干扰，频繁的打断阅读体验确实让人恼怒。让我们来看下影响我们沉浸阅读的因素有哪些？</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381262" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-21.jpg" width="1080" height="480" /></span></p>
+<p>△ 干扰阅读的因素</p>
+<p>上图中我们对干扰阅读的因素进行了细分，一共三个大模块：外界，自我，和文章本身。我们设计师能加以优化的点都和文章本身相关。（文字字号，字体，字间距，真实感，行距，段落间距，页面材质等）</p>
+<p><strong>拟物体验需求升级</strong></p>
+<p>书籍产生的年代比电子产品早得多，如今书籍的版式规范，易用性已经优化的很完善。模拟书本阅读的产品也在这几年非常流行，目前阅读产品在界面设计上也在不断贴合物理阅读 相关体验，比如模拟纸张颜色，墨水屏等。几乎所有阅读器产品都有改换背景的功能，这与读者们追求与书本一致真实感的阅读体验密切相关。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381246" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-5.jpeg" width="1080" height="320" /></span></p>
+<p>△ 市面各类阅读app界面</p>
+<p>以上的研究对我们接下来做的优化设计起到指引性作用，那让我们来看下具体的设计是如何展开的。</p>
+<h4><span class="auto_menu">五项理论指导</span></h4>
+<p>聚焦用户的习惯之后，我对阅读要素：字号，字体，对齐，用色，留白规律分别进行研究，结合各个相关理论沉淀出适合新闻阅读的规范。那就具体来看下每一个模块：</p>
+<h5>1. 字号研究</h5>
+<p>一般来说，年龄较大的人群对大字体需求高于年轻人，阅读器相关产品默认字号基于年轻人喜好设定为中偏小的字号，同时也给功能进行调整。因为阅读字号是个非常私人化的配置，所以加调整字号的功能是必备的。</p>
+<p>提到字号使用方式，通常设计师会基于前人给的规范或者系统相关的基础规范去做设计。但对于精细化研究，到底用什么字号我们需要有强有力的理论依据，版式设计早已自成体系，书本上文字的使用方法总结非常精细和科学，我们基于版式设计的成果对屏幕文字进行研究。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381248" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-7.jpeg" width="1080" height="425" /></span></p>
+<p>△ 人眼距离书本和手机物理距离</p>
+<p>对于正常印刷品来说我们人眼距离书本30~35cm，字号大小也应该按照这个距离计算，太大太小都会影响阅读。版式规范里8～12点是最适合书籍，正文的字号。（1点=0.376毫米）（也就是3～4.5mm）。人眼离手机距离也差不多30cm，手持手机比书本放桌上要离眼睛会近5cm左右，并且更多人由于习惯问题，会拿近一些。</p>
+<p><strong>计算公式（标题和正文）</strong></p>
+<p>以正文字号探索，物理尺寸转化到手机上（实际尺寸(英寸)=像素/分辨率; 1英寸=2.54厘米; 如一张图片宽为600像素，分辨率为300，那么实际打印宽度为：600/300=2英寸，约为5厘米）。基于我们设计文件尺寸规范和分辨率，我们得到字号的范围如下图（字号为3的倍数）</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381247" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-6.jpeg" width="1080" height="369" /></span></p>
+<ul>
+<li>最适合标题的字号（72px～93px）</li>
+<li>最适合的正文字号（48px～72px）</li>
+</ul>
+<p>得到了最贴近阅读习惯的字号范围（其实还是挺宽泛的）如何去缩小这个数值，最终确定一个合适的字号呢？接下来我们增加了对 竞品研究 的模块，也就是目标用户目前习惯的研究。</p>
+<p><strong>正文和标题的竞品字号情况：</strong></p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381249" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-8.jpeg" width="1100" height="1567" /></span></p>
+<p>正文：大部分阅读器app字号比新闻资讯类app大一些，资讯类字号选在51最为合适，54也可以考虑。</p>
+<p>标题：大部分新闻类主标题文字选用69，72px，但69号字在版式中稍微偏离规范。就标题大小来说，大部分阅读器app字号比新闻资讯类app大一些。</p>
+<p>结合产品本身功能，需要敲定的字号有主标题，二级标题，正文三个。为了明显让用户感知到字号差异带来的文字功能差异，加快识别反应速度，三个功能各字号不能过于接近。最终定义为大标题72px，二级标题60px，正文51px，且标题加粗显示（如下图）。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381250" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-9.jpeg" width="1080" height="796" /></span></p>
+<h5>2. 字体研究</h5>
+<p>说完字号我们来说下字体，字体是组成文章的基础元素，也是我们模块的DNA，字体的优化是我们提案关键的一部分。字体选择上，我们对比了几十种字体，从识别度为出发点去考虑，最终选定 华康金刚黑 作为我们新的字体代替原来的系统字体汉仪旗黑。让我们来看下新字体的优势：</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381251" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-10.jpeg" width="800" height="255" /></span></p>
+<p>△ 新旧字体比对</p>
+<ul>
+<li>汉仪旗黑（旧字体）：字形扁正，转折处复杂。存在问题：扁正的字体缺少精神气,转折处复杂会影响单个字体的理解速度，降低整篇文章的阅读速度。</li>
+<li>华康金刚黑（新字体）：偏瘦，结构简单的华康金刚黑。结构简单，方正挺拔，粗细均匀。更适合阅读和提升阅读效率。</li>
+</ul>
+<p><strong>细节上：</strong></p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381252" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-11.jpeg" width="800" height="554" /></span></p>
+<p>华康金刚黑：顿，提，略微有弧度，符合汉字最基础的笔画样式显得字体生动，不死板。每一笔画都有该文字的特征，例如「寒」字里的井，「峰」字里的丰，每一横长度都不一致，而汉仪旗黑过于统一，让每个字形一眼看上去非常接近，过于平均，单个字体的识别度受到影响。华康金刚黑字体在单个文字识别度上优于汉仪旗黑。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381264" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-23.jpg" width="1080" height="326" /></span></p>
+<p>△ 灰度数据分析</p>
+<p>报告里看出在较短时间的灰度测试中仅仅字体变化，其他都不改变，关键业务指标都有正向提升：人均启动次数，人均新闻点击，人均时长，广告点击等都有正向数据提升。所以我们选择了用华康金刚黑作为我们新闻阅读的默认字体。</p>
+<h5>3. 对齐方式研究</h5>
+<p>研究完字体，段落里文字对齐的研究也很重要。</p>
+<p>文字对齐方式有：左对齐，右对齐，左右对齐，居中对齐这几种，大段落文字阅读右对齐或者居中对齐几乎没有，所以这里我们对比左对齐和左右对齐的优劣。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381254" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-13.jpeg" width="1080" height="683" /></span></p>
+<p>△ 两种对齐方式</p>
+<p>来看下优劣对比：</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381265" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-24.jpg" width="1080" height="434" /></span></p>
+<p>左右对齐的优势较多，主要体现在视觉感受舒服（规规整整的版式），更主要是眼睛在固定位置换行，在易读性上做得比较好。缺点也是有的，文章存在2种字间距，而左对齐优势在于只有一个固定字间距。好在新闻阅读文章长度并没有特别长，篇幅受限，影响也就不会扩大，且2个间距尺寸也是在可接受范围里。综上对比，我们认为 左右对齐 的版式在新闻类阅读里，是明显优于左对齐版式。</p>
+<h5>4. 色彩研究</h5>
+<p>越来越多阅读器模拟真实阅读环境，屏幕的亮度对眼睛的伤害受到越来越多的重视，寻求一种沉浸的体验在各行各业都受到关注，比如之前火起来的暗黑模式。本次探索主要从黑白灰的关系角度出发，意在打造一个沉浸的色感体验。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381253" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-12.jpeg" width="1080" height="241" /></span></p>
+<p>△ 现状到思路</p>
+<p>通过研究思路，我们沉淀3方面的调整：</p>
+<ul>
+<li>页面底色：模拟纸质，用弱灰色。不做颜色倾向主要考虑用户对大面偏色喜好度不同，新闻类阅读尽可能避开这类情感化问题。</li>
+<li>文字沉浸：用色方式上再做考究，降低颜色饱和，解决文字黑色块的视觉干扰。文字做透明度来模拟沉浸效果。</li>
+<li>减少其他色块面积：预防阅读过程被特殊色彩干扰，删除页面多余色彩。</li>
+</ul>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381263" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-22.jpg" width="1080" height="503" /></span></p>
+<p>△ 优化后样式沉浸感提升</p>
+<h5>5. 页面版式留白探索（行间距，段落间距等）</h5>
+<p>看完色彩研究，我们来看一下版式。行间距是决定版面中的栏宽是否具有阅读性的重要因素。许多平面大师都非常注重行距，段落间距的设置。</p>
+<p>过窄与过宽的行距会有意识或无意识的让读者困惑，造成某种心理障碍。行距过大会打破文本连续性，每一行会被孤立，缺乏紧凑感，会降慢阅读速度。行距太小会让页面灰度过重，读者眼睛承受过多的负担，无法集中阅读单独一行，时间久了会增加疲劳感。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381255" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-14.jpeg" width="1080" height="746" /></span></p>
+<p><strong>引入概念—「垂直韵律」</strong></p>
+<p>「垂直韵律」是阅读节奏感的重中之重，打造一切视觉阅读节奏。行距，是垂直韵律的基础属性。（同版式中的网格概念接近）</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381256" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-15.jpeg" width="1100" height="992" /></span></p>
+<p>△ 行距概念</p>
+<p>版式规范中，中文汉字1.5～2倍的行距是最为适合的。整体来说，字号越小，行间距应该相对越大，反之亦然。51号正文在之前探讨的（48～72）字号里偏小，这里适当增加行间距和段落间距可以优化阅读体验。多次比对后，我们决定正文部分采用1.65倍行距来设计。</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381257" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-16.jpeg" width="1080" height="747" /></span></p>
+<p>△ 在多次比对后，确定1.65倍行距最符合各项指标</p>
+<p>行距确定完后，基础间距就有了数值a，之后页面相关的元素纵向之间间距都依赖这个数值（a的n倍）</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381258" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-17.jpeg" width="1080" height="614" /></span></p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381266" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-25.jpg" width="1080" height="717" /></span></p>
+<p>△ 操作规范</p>
+<p>倍数间距的引用，整体页面来看，所有的留白都有规律可循，形成自己的韵律感。这么做的好处就是用户对规律间隔的理解度更高，有节奏的留白除了满足了它本身需要的功能属性，用户阅读过程中不容易受到来自间隔过多的干扰，这样易读性就提升了。</p>
+<p>来看下我们版式页面样子，自带韵律感~</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381259" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-18.jpeg" width="1000" height="3432" /></span></p>
+<p>最后来看下细节指导，也就是操作规范：</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381260" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-vv-20200723-19.jpeg" width="1080" height="2305" /></span></p>
+<p>同样提升阅读体验，腾讯的高手是这么做的：</p>
+<p>[link https://www.uisdc.com/chinese-typesetting-3-principle]</p>
+<p>欢迎关注作者微信公众号：「VMIC UED」</p>
+<p><span class="img-zoom"><img alt="如何做好阅读体验设计？来看vivo浏览器的改版实战案例" class="alignnone size-full wp-image-381269" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-ew-20200723-1.jpg" width="180" height="182" /></span></p>
 ➜宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事
 https://www.uisdc.com/wutiaoren-design	58721
 <p>音乐综艺《乐队的夏天》第二季热播以来，来自广东海丰县的五条人乐队受到了众多瞩目。尽管穿着拖鞋出现的他们在第一期中就被淘汰，但散漫率性、幽默有梗的两位音乐人「阿茂」和「仁科」，依然收获了大量网友的关注和好感，甚至在知乎亲自回答「如何看待《乐队的夏天 第二季》第一期中五条人被淘汰？」这样的问题。</p>
@@ -1594,6 +1742,229 @@ https://www.uisdc.com/wutiaoren-design	58721
 <p>[link https://www.uisdc.com/nieyongzhen-album-graphic-designer]</p>
 <p>欢迎关注作者公众号：Design360</p>
 <p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-376610" src="https://image.uisdc.com/wp-content/uploads/2020/06/uisdc-bc-2020068-.jpg" alt="为100部现代经典电影设计复古平装书封面，你能认出几部？" width="180" height="180" /></span></p>
+➜宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事
+https://www.uisdc.com/wutiaoren-design	58721
+<p>音乐综艺《乐队的夏天》第二季热播以来，来自广东海丰县的五条人乐队受到了众多瞩目。尽管穿着拖鞋出现的他们在第一期中就被淘汰，但散漫率性、幽默有梗的两位音乐人「阿茂」和「仁科」，依然收获了大量网友的关注和好感，甚至在知乎亲自回答「如何看待《乐队的夏天 第二季》第一期中五条人被淘汰？」这样的问题。</p>
+<p>乐夏将更多的注意力引到了这个小众乐队身上，但其实五条人一早就有着属于自己的独特故事。曾有人这样形容，不少乐队都能在国外找到参照物或原版，但五条人这样的很难找到。因为沉浸在他们的音乐与歌词里的，是属于海丰这个广东海边城市独有的调性与情绪。</p>
+<p>五条人的歌声里，住着海丰县升斗小民吹着海风、潮湿而粗粝的日常生活。在五条人的巡演海报和专辑封面图中，最常见的元素也是人字拖、塑料袋、霓虹灯、财神爷这样的生活物件。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382663" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-13.jpeg" width="1500" height="440" /></span></p>
+<p>胡镇超，别名胡子，为五条人乐队提供视觉设计多年。设计师与乐队的视觉设计合作很多时候更像是伙伴关系。视觉既承载着声音的诠释，同时设计师也要共同面对乐队的经费与制作等许许多多的现实问题，在这些视觉设计的背后，是设计师与乐队共同浮沉的岁月印记。</p>
+<p>在本篇文章中，Design360°将跟大家分享胡子与五条人合作多年的故事，将那些设计和视觉不同寻常的幕后一一展现。</p>
+<h4><span class="auto_menu">2009年故事的开始：火车历险记</span></h4>
+<p>与五条人一样，胡子也是海丰人。他毕业于四川美术学院视觉传达系，一直从事平面设计工作。</p>
+<p>谈到最初认识的经历，胡子说是在高中美术考前班的画室和他们偶然认识的，当时由区区500元先生（设计了《县城记》《一些风景》专辑的设计师）策划的第一届「五条人回到海丰音乐会」的举办场地就在那里，从此他就入了五条人音乐的坑。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382664" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-14.jpeg" width="600" height="406" /></span></p>
+<p>2009年，五条人带着他们第一张专辑《县城记》首次全国巡演，那时胡子还在重庆上大学，但在五条人巡演到重庆的时候，跟着他们一起坐火车去了成都。当时阿茂和仁科只有两张火车票，但是又想带上胡子一起去玩，就用两张票带着胡子逃票坐火车。胡子说他当时很害怕，但仁科告诉他：「你不用怕，这张票给你。」然后让没有票的阿茂躲到了厕所。每每谈起这段经历，胡子都会很开心。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382665" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-15.jpeg" width="465" height="600" /></span></p>
+<p>△ 胡子与五条人在2009年相识的车票（上），以及2019年五条人巡演时保留的十年纪念车票（下）</p>
+<p>胡子正式参与和五条人合作的项目，大概要从2012年开始算起。在这些年里，五条人陆续发表了多张专辑，而胡子也以独立设计师的身份，为他们设计了许多不同风格的巡演海报、部分专辑、周边、VJ视觉等，获得了「五条人视觉系系主任」的称号。</p>
+<p>随着五条人在音乐中表达内容的变化，胡子的设计也在表达语言、设计手法等各方面一起改变，与乐队同步生长着，经历了不同的阶段。</p>
+<h4><span class="auto_menu">2008-2017年跟着五条人不断回到海丰</span></h4>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382694" src="https://image.uisdc.com/wp-content/uploads/2020/08/640-1.jpg" width="1100" height="1356" /></span></p>
+<p>△ 五条人2011年回到海丰民谣会（图片：单读）</p>
+<p>五条人的第一张专辑《县城记》推出时，还在以方言创作。那时他们每一年都会回去海丰举办一场演出，表达的都是同一个主题「回到海丰音乐会」，大概在年初二、初三的时候置办。</p>
+<p>2012年的时候，五条人的第二张专辑《一些风景》发布了，过年期间再次回到海丰，并举办了一场「歌友会」和「音乐会」。「听起来可能觉得很奇怪，毕竟在县城这样的地方，怎么会有歌友会？这个事情听着就很不靠谱。」胡子说道，「通常来说只有大牌明星才会有一个歌友会，比如说周杰伦歌友会之类的，但来个五条人歌友会，就很荒诞，我想从平面上把这种荒诞感表达出来。」</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382666" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-16.jpeg" width="600" height="400" /></span></p>
+<p>于是就产生了这样一张演出海报。胡子结合了县城里的人们对「会」的理解——开会，然后想到用政府的红头文件去表现这个「开会」。但是胡子又觉得，这个开会并不是严肃的开会，而是唠嗑、聊天、吹水，所以他又联想到平时聊天喝啤酒时会吃的花生和瓜子，决定把这两种另外的元素放在画面中去表现这种感觉。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382667" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-17.jpeg" width="377" height="800" /></span></p>
+<p>△ 摄影：快美林</p>
+<p>在胡子看来，每一个物品本身都有自己的语境，比如红头文件放在办公室就很合理，花生瓜子放在大排档也很合理，但如果把花生和瓜子还有红头文件放在一起的时候，它们就从原来的语境剥离了出来，重新组合产生了另外一层意思，并且把他们早期音乐中的味道也表达出来了。</p>
+<p>2012年的另外一场「回到海丰音乐会」，胡子使用了同样的拍摄手法制作海报，将儿时常在街边卖的小吃作为视觉元素展现在海报里。但胡子强调，这张海报中扮演关键角色的其实是两只苍蝇。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382669" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-19.jpeg" width="565" height="800" /></span></p>
+<p>「如果没有这两只苍蝇的话，它看起来就太文艺太乡土了，但如果你了解五条人乐队，就知道他们的着力点其实不在这一块。所以两只苍蝇反而是很生活的，更有他们音乐的味道，就像乐队的两个人一样，所以我就坚持加上了。」</p>
+<p>谈起制作海报的经历，胡子这样说道：「最早的时候我也没有想那么多，我是到后面越做越多，慢慢地对他们的作品有了更深的认识。他们的音乐是很有叙述性、故事性的，是他们的音乐教会了我用这样的一种语言去把它做出来，我就相当于他们的音乐的可视化翻译师。」</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382668" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-18.jpeg" width="1126" height="800" /></span></p>
+<p>接下来的几年，胡子一直在为五条人制做基于同一个巡演主题和内容的海报，他不停在发现与五条人的音乐和县城息息相关的事物，同时从自身的生活环境去寻找灵感，比如夏天乘凉用的扇子，或是海丰县街头的三轮车，然后想办法尝试了不同的表现手法，如摄影、木刻、拼贴等，在海报中突出拖鞋或是编织袋这类从侧面代表县城青年的元素，以一种质朴粗矿的方式讲述着五条人的背景故事。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382670" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-20.jpeg" width="600" height="1323" /></span></p>
+<p>听过五条人的歌就知道，他们在歌词中会以对话的方式直白地唱出县民交谈的情景：「嘿，阿弟！你要去县城，那就得悠着点，注意，小心，车多啊！」听着这样淳朴的歌词，胡子也选用了一些在他看来具备直白象征意义的形象，比如三轮车。胡子觉得三轮车代表着县城的生命状态，它们的存在把路堵得水泄不通，人们不断地按喇叭，制造出的噪音刻画着县城热闹聒噪的一面。</p>
+<p>任何人都可以通过这些海报和封面，感受到海丰县的地方特点和城市气息，溯源他们音乐中独特的方言味道、草莽架势和对城市的写照。无论是初次听到五条人音乐的观众还是老乐迷，这些设计和音乐都丰富着他们对南方县城的印象和想象。</p>
+<h4><span class="auto_menu">2014年用动画为现场做出仪式感</span></h4>
+<p>2014年，胡子开设了自己的独立工作室「胡子设计有限公司」。同时，他开始在设计巡演海报之外， 为五条人的演出增加了视觉投影的部分。「就算只是在很小的酒吧，我们也想做出仪式感。」胡子这样说道。</p>
+<p>最初他制作的是静态的背景，比如在由编织袋三原色红蓝白的背景中，胡子使用PS技术，为乐队P多了三个长着阿茂或是仁科面貌的乐队成员，展示出五个古惑仔的形象，以幽默地方式回应五条人被媒体问得最多的问题「五条人为什么只有两个人？」。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382678" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-28.jpeg" width="602" height="800" /></span></p>
+<p>胡子解释说这不单纯是在搞笑，因为在县城这样的地方，他们当年接收到的文化熏陶更多来自港台，从小是看古惑仔的片子长大的，天天都想着当老大。他说当时台下的观众看到这样的演出背景都笑翻了，虽然很搞笑，但它确实是对这样一种港台文化、街头文化和古惑仔文化的致敬。像是胡子在老家海丰拍的这张照片，就有一位在看守鱼塘的大哥，直接把对江湖文化的喜爱展现在身体上面。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382671" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-21.jpeg" width="450" height="600" /></span></p>
+<p>后来，胡子开始为五条人的巡演制作部分歌曲的视觉，为他们提供可以使用一台电脑就能简单播放的GIF动画，方便巡演的时候可以随时找人播放投影。胡子觉得，客观条件的存在所导致的这种风格和视觉，反而会更加的奇特，比那种酷炫的动画更让人感兴趣。</p>
+<p>于是五条人歌曲故事中喝醉酒的老伯、城市找猪的经历、渔夫出海的传统歌曲，或是红灯黄灯照样走的县城三轮车，都一一出现了「简单粗暴」的动画版本。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382662" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-12.gif" width="639" height="480" /></span></p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382651" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-1.gif" width="640" height="549" /></span></p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382652" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-2.gif" width="588" height="503" /></span></p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382653" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-3.gif" width="639" height="480" /></span></p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382672" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-22.jpeg" width="800" height="539" /></span></p>
+<p>胡子分享到，五条人常常提到的「海丰」，第一次听到的人会以为是海风，觉得他们的歌会很抒情。「你听了他们的歌会发现掉坑里了。他们挖了一个浪漫主义的坑，结果里面是狗屎，这样的事情会经常出现。所以我想把他所理解的那种诗意给表达出来。」</p>
+<p>2018年，仁科在一席的五条人讲座分享中也讲过：「有时候你觉得诗意的东西，我觉得有点恶心；我觉得有诗意的东西，你说这是什么鬼。」 带着传递这样感觉的想法，胡子也试着在动画视觉上把浪漫的东西给瓦解掉，比如想到以一个风扇的形象表现海风（谐音：海丰），「这也是海风嘛，但我是用风扇吹的。」</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382655" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-5.gif" width="639" height="480" /></span></p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382654" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-4.gif" width="640" height="480" /></span></p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382656" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-6.gif" width="639" height="480" /></span></p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382657" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-7.gif" width="640" height="480" /></span></p>
+<h4><span class="auto_menu">2015-2017年晚上好，霓虹小姐</span></h4>
+<p>2015年，五条人在摩登天空旗下，推出了他们的第三张专辑《广东姑娘》，在这张专辑里国语音乐和方言音乐平分秋色。胡子说当时出版方要求采用经典的CD塑料壳做包装，控制好样碟和印刷等制作的费用。</p>
+<p>胡子说，其实做设计师的一般不太喜欢直接用音乐人的照片做封面，但是阿茂和仁科不同，他们对以乐队的形象出现在封面是有个人情结的，这与他们在早期的走鬼生涯中，大量接触国外经典的乐队封面有关。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382673" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-23.jpeg" width="523" height="426" /></span></p>
+<p>此外，胡子还为这张专辑加入了一些顽皮的元素，比如侧封的发廊旋转廊图案（花掉了1元钱的预算），在有限的资源里为整张专辑增添了亮点，让听众先能闻到浓浓的粤式古早味，再去品尝主食。</p>
+<p>谈到歌词本内页的粉红桌布背景图案，其实是胡子埋下的一个小趣味。它是那些大排档、厨房或是餐桌上用来挡油的桌布，很廉价但又很漂亮。胡子觉得这就和五条人专辑中的歌曲所传递的感觉一样，很甜蜜，但是也很便宜。这张在胡子老家拍摄的照片，就是他妈妈把它用来包在抽油烟机上面的样子。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382689" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-39.jpg" width="789" height="594" /></span></p>
+<p>胡子形容此时五条人乐队的风格和前面已经不太一样了，他们在歌词中描写的事物已经离开了县城，大量地刻画了城中村的和城市的灯红酒绿，因此作为设计师他也会在视觉上跟着一起变化。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382658" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-8.gif" width="500" height="737" /></span></p>
+<p>而在五条人于2016年发布了专辑《梦幻丽莎发廊》后，胡子为这张专辑的巡演设计的一系列霓虹灯风格的海报和VJ视觉，及其梦幻复古。谈起这些VJ，胡子说他认为五条人演出的时候环境都很昏暗，而霓虹灯会很适合表现他们的风格，同时也能为现场表演加分。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382659" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-9.gif" width="500" height="737" /></span></p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382674" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-24.jpeg" width="710" height="600" /></span></p>
+<p>后来，五条人开始在剧场演出，讲求演出的完整性，突出舞台的戏剧效果。为了更好地接下这种比较大型的演出，在仁科、阿茂的策划下，他们开始自制宣传片，胡子开始和仁科、阿茂合力为乐队制作宣传片，往往一天就能拍好，默契十足。</p>
+<p>宣传片链接：<a href="https://v.qq.com/x/page/h0157ojwoqs.html">https://v.qq.com/x/page/h0157ojwoqs.html</a></p>
+<h4><span class="auto_menu">2015-2017年民间文化视听大乱炖</span></h4>
+<p>五条人的音乐中也有许多源出戏曲的历史故事，或是近代海丰县城里的人物。在单曲「曹操你别怕」（英文名：Don‘t Worry，Man！）中，他们结合了戏曲、摇滚、说唱等元素，基于和朋友一起聊天起哄的经历，编写了一个关于潮剧演员的故事，将一碗「民谣乱炖」端给观众。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382675" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-25.jpeg" width="710" height="466" /></span></p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382661" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-11.gif" width="639" height="362" /></span></p>
+<p>与之相对应的，胡子也喜欢从当地文化中汲取视觉元素，像是民间当地祭祀神祗时所用的物品，其中的艺术表现形式、版式和装饰图案等，都潜移默化地影响了他的创作，比如在VJ视觉中结合甲马的图案，或是根据2015年「回到海丰音乐会」现场演出的戏剧背景，做了一张很受乐迷喜欢的老虎海报。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382660" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-10.gif" width="500" height="730" /></span></p>
+<p>在2017年的巡演中，胡子想为五条人做一个旌旗，就像老家当地的那些旌旗一样。因为五条人每年初都会回来演出，在海丰县也形成了一个当地年轻人的节日，年轻人年初二就可以去看五条人演出，趁此聚会。因此，旌旗作为一个很有仪式感的符号化事物，在胡子看来也能代表五条人每年回去海丰带来音乐会于当地人的意义。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382676" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-26.jpeg" width="710" height="532" /></span></p>
+<p>不过，事情进展的并不似想象的那般顺利，胡子在当地到处寻找制作旌旗的店家，想把自己的排版、字体和设计应用在旌旗的制作中，但最后处处碰壁，没能找到可以制作的店家。最后，他另辟别径，选择以像素风格制作2017年的巡演旌旗海报， 主角是一条龙。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382677" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-27.jpeg" width="1175" height="800" /></span></p>
+<p>虽然五条人在海丰的演出最后因为某些原因被取消了，但依然约有170位硬核粉丝没有退票，于是他们就想这场演出录制下来，再制成专辑后送给他们。次年新年的时候，他为这张专辑制作了一套现场的DVD加双CD专辑，除了音乐唱片外，还在红包里装有门票和座位卡以及演出海报等。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382679" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-29.jpeg" width="579" height="800" /></span></p>
+<h4><span class="auto_menu">2017年明天，塑料袋依然为你升起</span></h4>
+<p>仁科在乐夏第二季中提到了一个红色的塑料袋：「你看我们的乐队的标志，就是一个塑料袋，我们喜欢自己的歌里面有一种塑料感，因为塑料对我们来说，是另外一种赤裸裸的真实。」他说的塑料袋最早的雏形源自2017年胡子为他们设计的巡演海报。</p>
+<p>那年，五条人的全国巡演主题是「明天的太阳依然为你升起。」 胡子照例需要为他们制作海报，他使用了艺术家曾翰拍的照片，画面中是广州花城大道的隧道，下大雨过后看起来很像河，然后有五个民工在那里洗澡。胡子在照片上P了一个塑料袋，而不是放一个高照的太阳。他说：「这便是我所理解的五条人式的诗意。」</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382681" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-31.jpeg" width="535" height="800" /></span></p>
+<p>△ 海报摄影：曾翰</p>
+<p>作家张晓舟曾为2017年的「五条人海报展」给出这样的题词：「每个五条人的设计师——不管是专业的还是业余的，都深陷其中不愿醒来，都想成为梦中的另一条新人，都想以五条人的名义，怪力乱神。」此言如是。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382680" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-30.jpeg" width="533" height="800" /></span></p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382682" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-32.jpeg" width="960" height="1280" /></span></p>
+<p>△ 「五条人海报展」现场</p>
+<h4><span class="auto_menu">2019年《故事会》重出江湖</span></h4>
+<p>2019年，五条人发布了他们的第六张正式专辑《故事会》， 这张专辑的风格也开始变得繁杂多元，胡子感觉很难用一个具体的东西去承载它，但唯一没有变的是他们的叙述性，以及对故事的刻画，于是他想不如把这张专辑包装成一部电影。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382683" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-33.jpeg" width="543" height="800" /></span></p>
+<p>△ 绘画：吴启明、胡子</p>
+<p>而在专辑内部，胡子做了一本跟《故事会》杂志一模一样的歌词本。他甄选了许多老版《故事会》中的小广告、名人名言和框架，扫描了放在这个歌词本中，然后重新排版。</p>
+<p>比如在歌词的排列上，胡子说他第一次尝试了不分行将五条人的歌词排成一篇文章，通过排版制造一个视觉的误导，让人觉得这里有故事在发生，而不是在看歌词的感觉。而当歌词在讲漂亮女孩子的故事时候，他就对应地在页面中并置一个健美或是服装广告。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382684" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-34.jpeg" width="600" height="1411" /></span></p>
+<p>此外，胡子还在这本《故事会》里设置了像是脑筋急转弯这样的常见栏目，邀请读者阅读并在歌词本的某一页找到答案。可能有人觉得专辑的歌词本跟封面有所脱节， 但胡子分享到，这个封面中有个隐藏的小彩蛋，就是封面中的人物其实拿着一本故事会，这个故事会就是专辑里面的歌词本。这个很酷的想法是仁科向胡子提议的，于是胡子把这个信息隐藏在封面里，邀请观众像警察探案一样，挖掘这层信息。</p>
+<h4><span class="auto_menu">2020年跟着五条人穿拖鞋去流浪</span></h4>
+<p>2019年8月，五条人前往葡萄牙进行了六场巡演，并在一周前正式推出了他们的第七张正式专辑《昨夜我又梦见自己去流浪》。而2017年巡演海报中的那个红色塑料袋，也通过这张新专辑重新回到人们的视野。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382685" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-35.jpeg" width="600" height="428" /></span></p>
+<p>这张专辑的封面还有一个故事，胡子透露最初的版本其实是他早期绘制过的一匹「疯马」手稿。那时他在为2015年五条人前往台湾地区巡演制作海报，选用了仁科的早期音乐《疯马村永恒的一天》中出现过的「疯马」作为视觉元素。</p>
+<p>虽然最后五条人并未使用那张海报（乐队选了那张着名的老虎海报），但因为「疯马」一直是仁科早期的歌曲、小说和美术创作中的一个重要意象，因此他们的好友张晓舟希望能将这个形象带回到五条人的最新专辑中。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382686" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-36.jpeg" width="600" height="600" /></span></p>
+<p>据张晓舟描述，仁科一如他在乐夏里所表现的随性，在这张专辑打样出来后，突然提出想换封面，觉得这匹小马过于可爱了，承载不了此时此地他们想表达的，并且和专辑打开后的乐队LOGO——红色塑料袋不契合了。</p>
+<p>于是他们将原来的生勐小马替换成了现在的封面照片，并由胡子为这张专辑设计了布面硬壳的精装，他在中英葡三语的歌词本上随意涂鸦，试图为五条人营造「似梦非梦的‘流浪’场景。 」现在的专辑封面照片，是一张由吴冠雄拍摄的海丰县某停车场照片，画面中有一盆看起来像是塑料制品的假桃花，以及由胡子P到闭路电视上的五条人在葡萄牙海滩的照片。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382687" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-37.jpeg" width="600" height="430" /></span></p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382688" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-38.jpeg" width="1013" height="800" /></span></p>
+<p>对于五条人的第七张正式专辑，张晓舟为他们写道，「塑料是现代文明最流行也最本质的现实，从五条人卖过的打口塑料唱片，到他们脚下的拖鞋，再到精心包装的流行文化产业。塑料感，廉价的塑料感，一直贯穿在五条人的音乐和视觉当中。」</p>
+<p>值得注意的是，五条人官方公众号还在卖新专辑的推文尾部悄悄带上了「由五条人王牌设计师胡子操刀设计」的新单品预告。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382690" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-40.jpg" width="574" height="563" /></span></p>
+<p>提及五条人，那种县城的烟火气息以及市井式的浪漫已经立刻浮现在大家眼前。他们就如大家在吃夜宵的时候隔壁桌坐着的少年，普通，却让人有着鲜活的记忆。一路下来，胡子为五条人创作的设计都承载着这样散漫而率性的视觉印记，如今，还开始与五条人涉足日用品设计产业。他们的这条合作之路的下一个10年令人无比期待。</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-382691" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tw-20200802-41.jpg" width="595" height="491" /></span></p>
+<p>以上部分图片由胡子提供部分内容来自Design360° 讲座「设计音乐 白冈冈 × 胡子」</p>
+<p>更多歌手海报设计师：</p>
+<p>[link https://www.uisdc.com/nieyongzhen-album-graphic-designer]</p>
+<p>欢迎关注作者公众号：Design360</p>
+<p><span class="img-zoom"><img alt="宁愿土到掉渣，也不俗不可耐！为五条人乐队做设计的8年创作故事" class="alignnone size-full wp-image-376610" src="https://image.uisdc.com/wp-content/uploads/2020/06/uisdc-bc-2020068-.jpg" alt="为100部现代经典电影设计复古平装书封面，你能认出几部？" width="180" height="180" /></span></p>
+➜这13个常用的大厂App里，藏着诸多设计师的匠心和巧思
+https://www.uisdc.com/13-product-design-details	61240
+<p>作为设计师，在拿到产品需求的时候，所要做的不仅仅是完成产品的设计工作，更重要的是要思考如何通过设计的的手段去推动产品背后的商业价值达到最大化，提升视觉体验、增强用户的粘性以达到用户转化的目的。不需要我们设计的有多么复杂，可能是一个步骤的简化、一句打动人心的文案、贴心的提示、趣味的动效&#8230;</p>
+<h4><span class="auto_menu">「美团外卖」喊你回家吃最便宜的午餐</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>打开美团外卖APP，在每个店铺下方都有突出的满减提示，进入店铺详情页，在顶部和底部同样都有，选好商品后，商品的总价达到满减条件，就可以减掉对应的金额。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>满20减18，后面还有6元无门槛红包？这已经是免费的午餐了，而且还赚了4块钱。于是进入商品列表上下齐开「一顿操作勐如虎，定睛一看原地杵」，这里的商品要么就是低于20的，要么就是40左右，免费不存在的，要不就在这家随便吃点吧。</p>
+<p>其实类似于这种满减提示在外面平台一点都不稀奇，用户也都不傻，也许进入店铺发现不对后转身就走，可平台还是会把这种满减提示作为最耀眼的存在，屡试不爽。</p>
+<p>在用户完成转化的三要素中，动机、能力、触发，缺一不可。店铺下方的满减提示则是利用用户的贪小便宜的心理，优惠的数值越高，越能引起注意力和购买欲望，足以让用户产生下单的动机；进入店铺后，看完所有商品，即使没有符合用户心理预期的价格，因满减产生的动机逐渐降低，但新的购买动机产生了，通过红包、好评、折扣、美图&#8230;等能力依然在提升用户的购买欲望，触发用户下单，并最终完成转化。这种选择「让利」的方式去吸引用户，也是短期内也最有效方式。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382265" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-5.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「淘宝」激发用户情绪的弹窗设计</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在体验淘宝签到功能时，签到成功会出现弹窗提示「签到成功」，并告知此时下单红包即可翻倍，点击关闭，弹出二层弹窗「红包未翻倍」及「限频道内使用」的文字提醒。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>淘宝通过二层弹窗提醒用户退出当前页面可能带来的影响、后果，让用户判断当前的退出决策是否正确，毕竟相对于‘收获’来说，‘损失’更让人在乎某事物。 同时告知退出会让下次行动付出更多的金钱成本，这种更多成本的投入会让用户产生顾虑，从而激发用户的情绪并转化为行动。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382269" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-9.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「支付宝」蚂蚁庄园-转化用户稍纵即逝的消费动机</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在支付宝的蚂蚁庄园喂养小鸡，通过养鸡攒爱心，集满 5 颗爱心，即可捐赠给公益项目，另外可以完成多种任务来获得饲料来喂养小鸡；</p>
+<p>点击蚂蚁庄园左侧的果树去种树免费领取水果，同样可以完成各种任务获得肥料，施肥促使果树成长，最终果实成熟就可免费领取真实的水果。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>支付宝通过公益的方式已经让用户对蚂蚁庄园产生了很强的粘性。项目的受益对象都是弱势群体，比如留守儿童、残疾幼儿、贫困女性等等，并根据捐赠的爱心进行好友排名。虽然有一部分人做好事不留名，但不排除大部分用户都喜追求面子心理，总是希望自己最有面子，因为它可以带来一种荣耀和心理上的满足感，如果做好事能让他人知晓，会激励更多的人行善，因而用户排名起到了极大的用户激励作用。</p>
+<p>最近，蚂蚁庄园增加了种果树功能，选择自己喜欢的水果种果树，通过施肥最终让果树成熟就可以免费领取真实的水果，在开始出现「免费领水果」的时候就已经激起了用户的贪婪心理。种植果树后，需要通过施肥促使果树成长，在成长的不同阶段需要的肥料也会根据基数递增式的增加，需要用户完成不同的任务获得肥料，可以完成的任务虽然很多，但大部分都是九牛一毛。</p>
+<p>用户每天可以通过逛精选商品获得大量的肥料，进入商品页面，系统会推荐用户最近在淘宝浏览过相似类型的商品，停留15秒即可领取肥料，同时如果下单更可领取近乎10倍的肥料，促使水果成熟的更快。根据 希克定律：用户决策所需要花费的时间随着选择的数量和复杂性增加而增加。系统通过减少可供用户选择的选项以及为了「免费领水果」获得肥料而可能下单的潜在动机，推荐最近浏览过的类似商品，促使用户快速做出决策，以到达成交的目的。（PS：本人为了领取大量的肥料，已经买了好几次之前想买而没有买的商品）</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382267" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-7.jpg" width="800" height="1556" /></span></p>
+<h4><span class="auto_menu">「CCtalk」友好的弹窗提示</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>进入「cctalk」APP首页，底部会自动出现最近一次学习记录的弹窗小提示，点击即可进入继续学习，也可手动点击关闭，在没有任何操作的情况，时间达到5s也会自动关闭。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>cctall是一个重量级的产品，进入此应用的用户通常带有目的性，都是以学习为主，不至于是用户在漫无目的情况下进来娱乐休闲一番吧。进入首页的学习记录弹窗是介于toast与snackbar之间，延长了toast的显示时间，并加入了一个跳转链接，同时也可以关闭或自动消失，起到提醒用户作用的同时，又不影响其他的操作。</p>
+<p>如果你不知道什么是toast和snackbar，下面这两篇文章能帮你快速知晓：</p>
+<p>[link https://www.uisdc.com/ui-element-toast]<br />
+[link https://www.uisdc.com/snackbar-design]</p>
+<p>一个好的产品会在恰当的时间给予恰当的反馈，不反馈、反馈不及时、反馈不对都会让用户反感你的产品，从而失去用户。cctalk的弹窗提示正是在用户恰好可能需要的时间出现，让用户快速的达到自己的目的，非常的友好，同时也提升了产品的易用性。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382261" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-1.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「饿了么」便捷的购物车入口</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>进入饿了么首页，点击右下角的购物车入口，即可看到从所有店铺添加的商品一览，可进行一一结算。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>相比以前，用过饿了么的用户都知道，每个店铺都是有单独的购物车，从对应的购物车进去才能完成结算。大部分用户在买商品之前，都会查看多个店铺相同商品的价格、评论、综合评分&#8230;等，根据性价比「货比三家」，但回过头来，需要来回切换去找到之前添加过商品的店铺，甚至查询不到，耗费大量的时间，非常的不便。</p>
+<p>饿了么首页右下角新增的购物车入口很好的解决了这一问题，进入购物车，能看到之前添加过商品到购物车的所有店铺，可从列表中选择进行结算，节省了用户大量的时间成本，入口很巧妙的解决了用户在下单流程中可能会遇到的痛点，提升了产品的易用性。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382264" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-4.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「夸克浏览器」洞察人心的地址栏细节</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>夸克浏览器输入网址时，点击下方控制条图标，会放大左右控制区域，左右移动即可修改光标位置；</p>
+<p>地址栏显示在键盘上方（屏幕中间位置），输入网址时的自动匹配结果由下往上的方式排列。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>我们在使用移动端浏览器输入网址时，如果需要修改文本框的地址，需要用手指直接在输入框定位光标，相对很小的地址文本，要想将光标精准的定位在理想的位置，确实非常难。通过夸克浏览器的控制条左右移动定位光标，精准度提升了很多，避免了用户因光标定位错误造成的重复操作，提高了操作效率。</p>
+<p>另外所接触的移动端浏览器，大部分的地址栏都设在屏幕的顶部。目前大屏幕尺寸已经是趋势，单手操作手机的用户比例占据最大，顶部和最底部的单手最难操作的区域，而夸克浏览器打破常规，将地址栏放在键盘上方，即屏幕的中间位置，是用户单手最容易操作和控制的区域，非常的便捷。网址匹配结果根据精准度由下往上排列也是非常合理。费茨定律告诉我们：需要连续操作的控件尽可能接近， 任意一点移动到目标中心位置所需要的时间，与目标距离正相关， 与目标大小负相关。</p>
+<p>什么是费茨定律：</p>
+<p>[link https://www.uisdc.com/product-details-wiedemann-franz-law]</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382262" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-2.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「微信」朋友圈消息重新编辑</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>使用朋友圈发布消息，发现有错别字，把信息删除后，点击重新编辑即可在回到消息未发布时的界面修改完成。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>微信在最近一段时间真是大招连连，从之前一年一次的昵称修改到后面的拍一拍，接着又上线了朋友圈消息删除后重新编辑的功能，让很多网友直呼真香。</p>
+<p>我们在发布朋友圈消息之后，发现有错别字或者需要增减内容，可以直接删除，在规定的时间内重新编辑再次发布即可。尤其是对于发布长篇幅消息的用户，没有复制消息内容就匆忙删除，再次从0编辑，心里的阴影面积不弱于「一万匹烈马奔腾」，此时看到重新编辑的入口，可谓是雪中送炭，不仅简化的交互流程，也省去了用户重新编辑消息的一系列麻烦操作，深得人心。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382266" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-6.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「58同城」举一反三的弹窗Tab栏</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在体验58同城APP发布房源信息时，需要录入多种房屋选项，可以在一个弹窗的多个Tab栏中完成不同的选项。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>在我们使用的众多APP应用中，不少接触关于信息选择的页面，如：填写地址选择地区、购物选择商品类型、退货选择原因&#8230;等，最为常见的操作方式就是选择完当前选项后，需要点击下一个选项入口，再次进入弹窗选择，有很多个分级。而58同城发布房源的选项，在进行设计的时候将多个分级放在同一选项，多个选项放在同一弹窗，有效的避免了选项太多造成的信息混乱，同时也解决了因多次弹窗给用户带来操作上的不便。节省时间操作成本的同时，也让路径变得更加合理简单。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382273" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-13.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「美团」首页金刚区图标</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>进入美团首页，金刚区面性类型的抽象图标给人眼前一亮的感觉；</p>
+<p>金刚区多种分类入口可通过左右滑动切换，能快速找到自己想要的功能。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>一个产品最具核心功能的就是首页了， 它承担了产品最核心的功能，决定了产品的属性和基调，而首页的金刚区最能体现产品的「骨骼」（产品架构），以方便用户快速进入对应的需求模块。通常我们见得最多的金刚区图标样式80%都是「底色块+图形元素」组合而成，而美团APP金刚区使用的面性图标，通过对现实生活中物体缩影的抽象图形进行色彩填充的图标样式， 清晰、简洁且统一，具有表意能力强、辨识度高的特点，提升易用性。跟其他产品大众化的图标样式相比，做到了差异化。另外通过单色叠加，更改透明度或叠加图层样式设计，视觉上非常通透，有空间感，细节丰富，品质感强，具有很强的吸引力，称得上是首页的颜值担当。</p>
+<p>针对首页众多的功能入口，无法全部展示，大部分移动应用都会在金刚区的最后位置设计一个「更多」的入口。而美团则通过左右滑动的交互方式将功能分类全部展示，在视觉上更加聚焦。因为很多的图标具备相似性，使用列表展示容易混淆用户的视觉，降低图标的辨识度以及信息的传递速度，所以全部展示并左右滑动选择、分块浏览很好的解决的这一问题，不仅操作快捷，而且视觉传达的效率也得到了提升。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382268" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-8.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「iPhone」App Store引人注目的动效引导</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>使用iPhone移动端设备进入App store首次下载该应用，页面底部提示「通过侧边按钮确认」，屏幕右侧按钮位置备注「按两下以安装」，同时右侧的模拟按钮色块以动效的方式弹动两次提醒。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>对于Apple产品，不管是移动端还是桌面设备，在视觉和体验上都可称之为魔鬼级别。下载应用时，右侧的按钮形状则是利用视觉线索进行示能，让用户通过图形，预期下一步的行为或感知图形的作用。通过动效提示方式更能吸引用户的眼球，也更能引导用户进行操作，真正做到的有温度、有情感的交流。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382272" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-12.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「腾讯QQ」隐藏在暗处的多窗口消息浏览</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>点击QQ消息列表进入聊天框，长按聊天窗口空白处，可以切换多窗口，左右滑动可切换好友/群聊窗口，上下滑动可查看当前窗口的更多聊天记录。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>虽然现在大部分的用户都转战微信，但QQ作为社交应用的翘楚，光辉一直都没有退却，只不过QQ服务的用户群体较年轻，而且社交群体多样化，也更符合年轻化的气质。QQ的信息多窗口切换，看起来也是相当炫酷，切换时只需要在消息列表中，长按消息的空白处就能快速进入切换选项，丝滑般的快感，我们再也不需要使用返回信息列表再重新进入到窗口的多步骤操作了。</p>
+<p>为此，你也可能会听到：「我赵日天表示不服哇」，已经不用QQ好多年，微信这么方便，难道它不香吗？其实对于真正需要的用户来说，这一功能还是非常的方便。不管是处于学习、工作还是闲聊吹水，QQ的群聊功能比较多样化，我们在浏览群聊天记录、爬楼、查找部分有用信息通过多窗口切换时是非常实用。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382270" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-10.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「中国工商银行」趣味的动效视觉引导</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>进入中国工商银行APP首页，搜索栏里的语音录入通过动效的形式在麦克风图形与音波图形之间过渡来回切换，提醒用户可以使用语音录入搜索。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>目前很多移动端应用的搜索都增加了语音录入功能，为的是让用户更高效、便捷的完成搜索，不过大部分只是增加了一个麦克风图标作为提示。工商银行APP使用动效的形式在麦克风图形与音波图形之间过渡来回切换，首先动态的视觉引导，增添了趣味性的微交互更能吸引用户的眼球，也能够更好的引导用户操作。其次使用两个图标在识别性上是具有选择性的，扩大了用户在识别层范围的认知程度，也间接提升辨识度，两个图标过渡性质的切换，也显得非常柔和，情感化的设计细节为产品增添了温度，提高点击率。</p>
+<p>图标是一个对象或动作的视觉体现，最重要的意象属性就是传达含义功能，另外也是加深用户形象的最主要影响要素。麦克风图标是一个设备的抽象图形，音波图标则是使用设备时的交互过程，两个图标以动效的形式完美过渡结合，给我们的第一印象就是感觉这个功能再在向我们招手，在和我们对话，真正做到了有温度的交流。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382263" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-3.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「京东」适时的隐藏营造沉浸体验</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在京东APP商品列表上滑浏览商品时，导航栏和全局筛选栏自动隐藏，存在下滑操作后再次展示。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>一般情况下，当一些导航或者操作入口可能会成为打扰用户沉浸体验障碍时，我们就会把它隐藏，因为部分元素的存在，就会分散用户的注意力。基于用户的需求，京东APP的商品列表顶部有导航栏、全局操作栏、垂直内容筛选栏，加上状态栏，在移动设备中的纵向占比是相当的大，为了解决这一问题，京东通过改变交互的方式，当页面上滑，会隐藏导航栏和全局筛选栏，下滑后则再次显示。</p>
+<p>在交互方面，做了这样的思考，当出现上滑的操作后，可以理解为用户已经开始在挑选商品，这时候搜索与排序的重要级下降了，搜索结果垂直内容筛选的重要级上升了，将等级较低的操作/信息适时的隐藏，可以让用户专注于当前信息，避免其他多余的内容产生干扰，同时也让内容区域高度增加，一屏展示的商品信息更多，增大商品触达用户的可能性以及屏幕的利用率。合理的运用了交互设计四策略-隐藏：尽可能隐藏需要隐藏的功能，其次在合适的时机、位置上显示相应的功能。</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-382271" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-rj-20200729-11.jpg" width="800" height="803" /></span></p>
+<p>深度了解交互设计四策略：</p>
+<p>[link https://www.uisdc.com/simple-and-usable-notes]</p>
+<p>欢迎关注作者微信公众号：「能量眼球」</p>
+<p><span class="img-zoom"><img alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" class="alignnone size-full wp-image-381046" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200722-10.jpg" alt="如何为你的UI制定一套色彩系统？来看这个实战案例！" width="180" height="180" /></span></p>
 ➜这13个常用的大厂App里，藏着诸多设计师的匠心和巧思
 https://www.uisdc.com/13-product-design-details	61240
 <p>作为设计师，在拿到产品需求的时候，所要做的不仅仅是完成产品的设计工作，更重要的是要思考如何通过设计的的手段去推动产品背后的商业价值达到最大化，提升视觉体验、增强用户的粘性以达到用户转化的目的。不需要我们设计的有多么复杂，可能是一个步骤的简化、一句打动人心的文案、贴心的提示、趣味的动效&#8230;</p>
@@ -3400,6 +3771,251 @@ https://www.uisdc.com/adobe-color	62924
 <p>[link https://www.uisdc.com/ui-color-matching-skills]</p>
 <p>欢迎关注研习设的微信公众号：「Yanxishe2017」</p>
 <p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-271254" src="https://image.uisdc.com/wp-content/uploads/2018/05/yxskxsqr.jpg" /></span></p>
+➜我删除了所有配色网站，只留下这一个
+https://www.uisdc.com/adobe-color	62924
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382442" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-40.gif" width="640" height="360" /></span></p>
+<p>对于设计配色而言，系统的理论学习固然重要，但是对于初学者或者对色彩理论提不起兴趣学习的人来说，难道就没有可以快速完成配色的方法么？当然有，那就是本期教程我要推荐给大家的这款配色工具：Adobe Color。当然这个工具大家都不陌生，因为它出自 Adobe 之手，而之所以要将它做成一期教程，一方面是因为虽然很多人知道这个配色网站，但是往往都是收藏起来作为摆设；另一方面即使有的人会用到它，但使用的方法不对，没有将这个配色网站的价值发挥到最大。所以这期教程就让大家彻底了解它的用法，以便在你的配色能力还没有达到游刃有余之前，能够帮助你快速创作出优秀的配色。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382496" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-94.jpeg" width="1080" height="793" /></span></p>
+<p>这是 Adobe 官网对于 Adobe Color 的概括介绍，它是一个基于网络的应用程序和创意社区，提供免费的色彩主题，全世界的设计师都可以在这里创建和共享颜色与灵感，并且在 Adobe 相应的软件中也提供了扩展程序，比如我们常用的 Photoshop 和 Illustrator。但是，想要了解这个工具光看这些文字说明是不够的，还是需要通过实际操作去了解。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382443" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-41.jpeg" width="1065" height="600" /></span></p>
+<p>进入 Adobe Color 网站，显示的就是这个页面，当然这个页面中提供的颜色是随机的，所以大家进入这个网站的时候首页显示的未必是这组颜色。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382446" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-44.jpeg" width="827" height="600" /></span></p>
+<p>我们先来看右上角这部分，因为我们并不是单纯的去介绍这个网站，所以我会挑重点去讲，一些不重要的功能一带而过。第一个按钮我们之后会讲，我们先来看第二个按钮是干什么的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382445" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-43.jpeg" width="827" height="600" /></span></p>
+<p>当我们鼠标停留在相应位置上时会弹出文字提示，这个按钮的功能是「切换主题」，我操作一下大家就明白是什么意思了。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382403" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-1.gif" width="640" height="360" /></span></p>
+<p>也就是很多软件都会有的一个功能：日间模式和夜间模式，简单的讲就是在白色背景和黑色背景之间切换，至于选择哪个完全看个人喜好。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382444" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-42.jpeg" width="827" height="600" /></span></p>
+<p>然后我们再来看它右侧的这个问号图标，它是「说明」。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382449" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-47.jpeg" width="971" height="893" /></span></p>
+<p>点击后会进入官方提供的说明页面，感兴趣的同学可以自己看一下，不过这里都是简明扼要的文字，如果你看完了这期教程的话，不去看它也是可以的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382447" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-45.jpeg" width="1020" height="600" /></span></p>
+<p>返回首页，我们看右上方的文字，这里说明了两件事：第一件事是告诉我们如果想要储存这些颜色，首先需要有一个账号；第二件事是说，在 Photoshop 或 Illustrator 等软件中也是可以使用 Adobe Color 的，而本期教程我们主要是以网页版来进行讲解，因为使用的方法都是一样的，而网页版的功能更多。所以想充分利用好这个网站，首先需要创建一个账号，点击「登入」或「储存」都会跳转到建立账户的页面。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382448" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-46.jpeg" width="1065" height="600" /></span></p>
+<p>建立账户有一个细节很关键，但是不方便在这里讲，我会放在课后的练习文件中，大家下载练习文件的时候可以留意一下。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382450" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-48.jpeg" width="1080" height="635" /></span></p>
+<p>创建完账户之后就可以登陆上去了，这时右上方的界面已经发生了变化。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382451" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-49.jpeg" width="1080" height="634" /></span></p>
+<p>首先是储存的位置问题，画面中的这些是我的账号创建过的名称，可以通过最下方「建立新资料库」来命名，这个是很自由的没有什么标准，可以按照自己的方式来分类和命名。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382404" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-2.gif" width="639" height="376" /></span></p>
+<p>然后是为你想储存的这组色卡命名，这里我就随便填了一个「演示」。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382405" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-3.gif" width="639" height="376" /></span></p>
+<p>还可以为你的色卡添加「标签」，添加标签是为了方便通过关键词查找，可以直接选择系统提供的，也可以自己填写，这里我就选择了一个系统提供的「Green」和自己添加的「蓝绿」，标签用英文和汉字都是可以的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382454" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-52.jpeg" width="1080" height="558" /></span></p>
+<p>然后我们看下方有一个「发布至 Color」，现在是点亮的状态，选择点亮状态发布你的这组颜色就进入到了全局色彩库中，也就是共享的状态，别人是可以看得到的，如果只想自己能看到，那就把它关掉。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382452" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-50.jpeg" width="1080" height="692" /></span></p>
+<p>然后点击储存，储存好了之后右下方会弹出一个提示窗口，如果想查看你储存的这个颜色可以点击「检视」，就会进入到这组颜色的界面。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382453" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-51.jpeg" width="776" height="600" /></span></p>
+<p>如果想查看你储存的所有颜色，可以点击顶部的「我的资料库」，这时就可以查看你储存的所有颜色了。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382406" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-4.gif" width="639" height="360" /></span></p>
+<p>大家可以看到，这些都是我之前储存的一些颜色分组，这里可以选择资料库的排序方式，现在是默认的按照「上次修改时间」来排序的，你也可以选择按「名称」来排序。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382455" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-53.jpeg" width="1080" height="608" /></span></p>
+<p>刚才那组颜色我们储存在了同类色这里，我们打开同类色，大家可以看到，第一个就是我刚刚储存的那组颜色，后面的是我之前储存的一些。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382407" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-5.gif" width="640" height="360" /></span></p>
+<p>我们点击刚刚储存的这个色卡，就会跳转到这个色卡的页面，当我们鼠标移动到相应的颜色上时，就会出现复制的字样，单击一下就已经复制这个颜色了。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382408" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-6.gif" width="640" height="446" /></span></p>
+<p>这时我们回到设计软件中，打开色板，「Ctrl+V」就粘贴进来了，就是刚刚我复制的那个绿色。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382456" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-54.jpeg" width="1080" height="571" /></span></p>
+<p>如果想同时复制这五个颜色的话，我们看右侧这里，提供了很多下载或复制的选项，其中对于设计师前两个是比较常用的，后面一些涉及到代码和计算机语言，如果你的工作会用到也可以使用，如果是平时作为设计取色的话，用前两个就可以了。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="size-full wp-image-382458 alignnone" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-56.jpeg" width="1080" height="571" /></span></p>
+<p>我们先来看第一个，「ASE」是一种色彩文件格式，主要针对于 Photoshop 或 Illustrator 这类设计软件。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382409" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-7.gif" width="608" height="380" /></span></p>
+<p>我们打开 Photoshop，点击色板右上角，会弹出一个下拉菜单，点击「载入色板」，选择刚刚下载的这个文件，这时我们会发现这五个颜色就进入到色板当中了。虽然这是一个比较好的方式，但是我个人平时不太用，只是给大家提供一个选择。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382461" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-59.jpeg" width="1080" height="571" /></span></p>
+<p>而我个人平时还是比较喜欢直接一点的，「下载为 JPEG」，然后拖到软件中直接用吸管吸取。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382457" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-55.jpeg" width="1080" height="453" /></span></p>
+<p>下载下来之后是一个图片，打开后是这个样子的，因为图片质量还是很高的，所以直接吸的话也不用担心会出现色差。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382410" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-8.gif" width="639" height="391" /></span></p>
+<p>吸取之后就可以应用了，比如这里我们就用这组颜色来填充这个插画图形。当然了，针对这个插画图形这组配色还是可以的，比如树木用绿色，房子用蓝色，但是大家平时在工作的时候还要考虑设计的内容，尽量在前期就挑选符合的色彩组合，而不是盲目的填充。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382459" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-57.jpeg" width="1080" height="571" /></span></p>
+<p>刚才我在储存这组色卡的时候没有选择发布，进入到色卡界面中也是可以随时选择发布、编辑、删除的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382460" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-58.jpeg" width="1080" height="590" /></span></p>
+<p>同样，「名称」和「标签」也可以随时更改。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382462" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-60.jpeg" width="1080" height="647" /></span></p>
+<p>然后我们会看到下方还有两个可以点击的地方，我们先来看「潘通配色」。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382463" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-61.jpeg" width="1080" height="608" /></span></p>
+<p>点击后会出现和这组颜色最接近的潘通色，同样也提供下载。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382464" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-62.jpeg" width="1080" height="608" /></span></p>
+<p>最后是「色彩模式和代码」，点击之后会出现这组颜色的色值，总共有四组，也就是我们平时常用的四种色彩模式。以上就是我们在 Adobe Color 上储存颜色的一个流程，操作上很简单没什么难度，但是大家要知道重点不是为了教大家这个方法，而是大家学会了这个方法之后，建立属于自己的色彩库。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382465" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-63.jpeg" width="1080" height="608" /></span></p>
+<p>下面我们回到主界面，这部分可以算是这个工具的一个应用核心了，大家可以看到最上方有一个色轮，色轮下方有五个颜色。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382466" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-64.jpeg" width="1080" height="608" /></span></p>
+<p>其中中间的这个颜色上有一个三角形符号，这就代表了这个颜色是作为主色和基色的，当你调整的时候，其他颜色是围绕它来变化的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382467" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-65.jpeg" width="1080" height="610" /></span></p>
+<p>色块下方是色彩模式，也是四个：RGB、CMYK、HSV、 LAB。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382468" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-66.jpeg" width="1080" height="650" /></span></p>
+<p>现在是「RGB」模式，右侧对应的就是可以调节的滑杆，只不过跟我们软件中不同的是，这里多了一个亮度的选项，方便调节。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382468" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-66.jpeg" width="1080" height="650" /></span></p>
+<p>我个人平时喜欢使用的是「HSV」模式，也就是 「HSB」，如果看过我之前教程的同学就应该知道，我是极力推荐使用「HSB」模式的，因为它最符合人眼的视觉感受，色相、纯度、明度一目了然，所见即所得。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382469" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-67.jpeg" width="1080" height="562" /></span></p>
+<p>大家可以看到这里现在选择的是「自订」，相当于自定义模式，在这个模式下，你是可以随意更改调整颜色的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382411" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-9.gif" width="640" height="360" /></span></p>
+<p>调整颜色可以直接在色轮上拖动调整，也可以拖动下方的滑杆，或者是手动输入色值都可以。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382412" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-10.gif" width="638" height="310" /></span></p>
+<p>除了自订这里还提供了很多色彩搭配组合，官方的说明是根据设定的基色来得到确保色彩和谐平衡的搭配，换句话说，也就是这里提供的颜色原则上搭配起来是不会有太大问题的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382413" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-11.gif" width="640" height="360" /></span></p>
+<p>我们先来看「类比」，也就是我们平时讲的「同类色」，这里提供的都是五个颜色， 当你选择了相应的色彩搭配模式之后，无论是改变哪个颜色，它都是在这个规则下变动的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382414" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-12.gif" width="400" height="644" /></span></p>
+<p>得到了颜色之后我们就可以应用了，这里我们就用这个海报来进行配色演示，这是类比色的效果。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382415" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-13.gif" width="640" height="360" /></span></p>
+<p>然后是「单色」，当我们选择单色模式的时候，大家会发现无论如果改变色相，得到的都是这个色相的单色模式，也就是在基色的基础上进行纯度和明度的变化。和类比不同的是，单色没有色相上的变化，类比是色相左右的微弱变化。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382416" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-14.gif" width="400" height="644" /></span></p>
+<p>同样我们提取这组色卡对这个海报进行填充，效果是这样的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382417" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-15.gif" width="639" height="360" /></span></p>
+<p>然后是「三元群」，也就是三个对比色，因为色相环是 360 度，所以平分成三份每一份 120 度。大家会看到这里不仅可以改变色相，也可以改变纯度明度，最外圈是纯色，往内收就会降低纯度和明度。我们在看色相关系的时候是不需要考虑纯度和明度的，只看它们的色相位置，比如这个三元群，无论你收缩到多么靠内，它的色彩关系仍然是三元群的关系。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382418" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-16.gif" width="400" height="644" /></span></p>
+<p>我们填充这组颜色看看，三元群因为对比色的关系，所以通常配色效果在色相的对比上都是很强的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382417" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-15.gif" width="639" height="360" /></span></p>
+<p>然后是「补色」，这个就很好理解了，也就是「互补色」，虽然这里提供的都是五个颜色，但是整体色相上就是互补色两色，其他三个颜色是这两个补色在纯度和明度上的变化。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382418" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-16.gif" width="400" height="644" /></span></p>
+<p>同样用这组颜色填充试试，可以看到补色的对比效果是最强烈的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382420" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-18.gif" width="639" height="360" /></span></p>
+<p>然后是「分割补色」，我们平时也叫做「分裂补色」，也就是一个颜色和它的互补色两侧的颜色的搭配，大家看色相环就明白了。虽然这里可以调整角度幅度，但是调整过大的话，其实原则上已经不能算做是分割补色了，所以如果大家想用分割补色的话，建议还是使用它提供的默认角度比较好。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382422" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-20.gif" width="400" height="644" /></span></p>
+<p>将这组分割补色提取出来进行填充，得到的就是这样一个效果。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382423" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-21.gif" width="639" height="360" /></span></p>
+<p>除了分割补色还有「双分割补色」，也就是在分割补色的基础上再增加基色两侧的两个颜色，其实配色效果和分割补色差不多，只不过更适合你需要色相较多的情况，比如说如果你需要三个颜色，那就直接使用分割补色就行，如果三个颜色不够，而你又不想改变配色的效果，那就使用双分割补色，因为新增加的两个颜色距离基色很近，所以色相相差并不大，不会对整体的配色效果造成太大的改变。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382424" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-22.gif" width="400" height="644" /></span></p>
+<p>我们试一下这个双分割补色，五个纯色的搭配，视觉效果还是很强烈、很刺激的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382425" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-23.gif" width="639" height="360" /></span></p>
+<p>接着是「正方形」配色，这个也很好理解了，从字面含义上就能够明白是什么意思，也就是在色相环上选择正方形四个端点的颜色，也可以理解为是十字形配色。这种配色形式的好处是对比适中，颜色丰富的同时又不会太乱，因为彼此距离相等，所以会让配色效果显得很平衡。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382426" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-24.gif" width="400" height="644" /></span></p>
+<p>我们填充试试，效果也是可以的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382428" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-26.gif" width="640" height="360" /></span></p>
+<p>然后是「复合」型配色，也就是在色相环上先选择一对补色，然后在补色附近选择其他颜色，而之后的颜色要在同一半球，这种配色形式大体效果接近补色，但是因为同半球类比色的加入，多了一些变化，丰富了色彩层次，但是又不会产生强烈的冲突。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382427" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-25.gif" width="400" height="644" /></span></p>
+<p>我们填充一下看看，就是这样一个效果。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382429" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-27.gif" width="639" height="360" /></span></p>
+<p>最后是「浓度」，也就是同一色相的不同纯度变化，这里它规定好了明度，我们改变的只是色相和纯度的变化。跟单色模式不同的是，单色是纯度明度都在变化，而浓度模式下明度是不发生变化的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382430" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-28.gif" width="400" height="644" /></span></p>
+<p>刚刚我们尝试的这些配色效果并不是所有的方案都是好的，因为这些都是直接使用 Adobe Color 提供的颜色进行填充的，并没有进行任何的手动调整和配色的理论考量，目的就是为了给大家展示用这个工具配色的效果，因为工具的最大用途就是提供多种方案，所以大家在使用的时候不需要考虑太多，大胆地多去尝试一些配色，最后根据视觉效果来选择最符合设计内容并且最美观的方案就可以了。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382471" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-69.jpeg" width="1080" height="704" /></span></p>
+<p>整个关于色轮的部分就给大家介绍完了 ，下面我们来看看「撷取主题」。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382472" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-70.jpeg" width="1080" height="679" /></span></p>
+<p>进入「撷取主题」页面，上面写的是从影像中抽取颜色，并将其另存为调色盘，也就是可以上传图片，然后它会自动提取图片中的主要颜色形成一个色卡，这个色卡我们可以直接使用也可以储存下来。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382473" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-71.jpeg" width="500" height="708" /></span></p>
+<p>这里我们就用这个海报为例，点击上传就可以。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382474" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-72.jpeg" width="1080" height="608" /></span></p>
+<p>如果觉得操作麻烦也可以直接拖进来，拖进来之后我们会看到这里已经提取出色卡了。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382431" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-29.gif" width="639" height="359" /></span></p>
+<p>左上方是可以选择模式的，这些模式是根据黑色的量以及色彩强度来区分的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382432" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-30.gif" width="640" height="360" /></span></p>
+<p>分别有彩色模式、亮色模式、柔和模式、深色模式、暗色模式、无，提取出的效果是和图片本身的色彩有关系的，具体想提取哪种模式可以根据自己的需求来定。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382433" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-31.gif" width="639" height="360" /></span></p>
+<p>当然如果有想吸取的颜色，也可以手动调整，想吸哪里吸哪里。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382475" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-73.jpeg" width="1080" height="608" /></span></p>
+<p>提取完图片颜色之后，我们可以返回到色轮里，这时色轮界面显示的就是刚刚我们提取的这组色卡，同样也可以保存到资料库中。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382476" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-74.jpeg" width="1080" height="681" /></span></p>
+<p>「撷取主题」的右侧是「撷取渐层」，同样也是上传图片提取颜色，只不过是渐变的形式，默认是三个颜色，下方会有相应的色值信息。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382434" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-32.gif" width="640" height="360" /></span></p>
+<p>左上角这里可以改变渐变的数量，也可以手动去调整每一个颜色的位置。其实看到这里大家会发现，这款工具是非常人性化的，它虽然为我们提供了很多搭配方案，但同时又留给了我们可调整的空间。同样渐变色也是可以储存到我们的资料库中的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382477" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-75.jpeg" width="1080" height="734" /></span></p>
+<p>「撷取渐层」右侧是「协助工具」，这是 Adobe Color 新增的一个功能，它是用来检测颜色的，主要是针对于色盲人群。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382435" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-33.gif" width="640" height="360" /></span></p>
+<p>比如现在这组颜色。我们看它这里出现了红色感叹号，提示我们 A、C、D 发生了冲突。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382436" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-34.gif" width="640" height="360" /></span></p>
+<p>我们正常情况下看这组颜色是能区分出微妙差异的，但是我们看下方这里它模拟了在不同色盲眼中看到这组颜色的样子，在色盲人群眼里 A、C、D 之间有的颜色是一样的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382437" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-35.gif" width="640" height="360" /></span></p>
+<p>所以为了对于色盲人群表示友好，我们就需要调整这组颜色，直到出现绿色的对号，这时我们看即使在色盲眼中，这些颜色也是能够区分出来的，这个协助工具就是这么用的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382478" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-76.jpeg" width="1080" height="608" /></span></p>
+<p>「协助工具」右侧是「色彩游戏」，也是整个「建立」部分中最后一个，这里提供了一个色彩游戏。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382438" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-36.gif" width="640" height="360" /></span></p>
+<p>开始之后会有色彩闪烁，结束之后按出现的顺序点击你刚才看到的颜色，第一关一个，第二关两个，以此类推，这里我简单的玩了一下，大家看一下就明白了。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382439" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-37.gif" width="639" height="363" /></span></p>
+<p>下面我们来看看「搜索」，进入到搜索页面我们会看到这里为我们提供了很多提取好的颜色和图片，这里的图片很丰富，有的是摄影作品，有的是设计作品，上方的轮播图提供的一些格外的内容，比如潘通流行色、Adobe 社区、Adobe 手机端的 APP 等等。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382479" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-77.jpeg" width="432" height="800" /></span></p>
+<p>可以看到这里提供了非常多的色彩搭配，而且这里我给大家展示的只是其中一页。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382480" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-78.jpeg" width="796" height="600" /></span></p>
+<p>左上角这里提供了关键词搜索功能，可以通过具体颜色进行搜索，也可以输入具象或抽象的词汇来搜索，最关键的是可以直接输入汉字。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382481" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-79.jpeg" width="1080" height="715" /></span></p>
+<p>比如这里我搜索「粉色」，就会出现大量和粉色相关的图片和色卡。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382482" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-80.jpeg" width="1080" height="715" /></span></p>
+<p>这个是搜索「水」得到的一些结果。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382483" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-81.jpeg" width="1080" height="715" /></span></p>
+<p>也可以是抽象或感性的词汇，比如「喜庆」，它就出现了一些以红色和黄色为主的相关图片。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382484" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-82.jpeg" width="1080" height="598" /></span></p>
+<p>当然这里也是可以筛选的，不过通常情况下选择「所有来源」就可以。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382485" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-83.jpeg" width="1080" height="642" /></span></p>
+<p>如果你看中了某一个图片或色卡，当我们鼠标移动到它上方的时候，就会弹出一些选项，我们可以储存到资料库，也可以直接进行下载。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382486" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-84.jpeg" width="1080" height="608" /></span></p>
+<p>单击就会进入到色板界面，如果你想进行其他操作，就和我们最开始讲的是一样的，只不过这里多了一个图片，而这个图片也是可以点击的，点击之后就会进入到它的原始地址。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382487" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-85.jpeg" width="1080" height="691" /></span></p>
+<p>通过搜索功能得到的图片都是可以进入到它的原地址的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382440" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-38.gif" width="640" height="423" /></span></p>
+<p>我们回到之前的界面，这里有一个非常不起眼的地方，就是这个「相机」图标，虽然不起眼，但是它的功能也是非常重要的，也就是我们可以通过上传图片来搜寻类似的色彩主题。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382488" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-86.jpeg" width="1000" height="538" /></span></p>
+<p>这里我们就以这个图片为例。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382489" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-87.jpeg" width="1080" height="608" /></span></p>
+<p>上传之后就会出现和这个图片内容相近的图片，它这里就自动识别了电动车，所以出现的基本上都是自行车或电动车、摩托车，有的和色彩有关，有的和色彩无关，这个功能如果使用好也是非常方便工作的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382490" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-88.jpeg" width="1080" height="811" /></span></p>
+<p>最后就是「趋势」，这个和「搜索」其实本质上差不多，也是为我们提供了很多图片和色彩，不同的是它这里为我们提供了一些分类。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382491" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-89.jpeg" width="1080" height="2226" /></span></p>
+<p>比如时尚、图形设计、插图、交互、建筑、游戏设计、荒野、风味、旅行等等，而这里的图库主要来源于 Behance 和 Adobe Stock。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382492" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-90.jpeg" width="1080" height="608" /></span></p>
+<p>同样，每一组都是可以保存和下载的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382493" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-91.jpeg" width="1080" height="608" /></span></p>
+<p>点进去之后也会进入到具体的页面，同样图片也是可以点进去的。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382494" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-92.jpeg" width="1080" height="5474" /></span></p>
+<p>比如这个点进去之后，就进入到了它的 Behance 界面，其实通过 Adobe Color 这个一个网站，就可以延伸到很多地方。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382441" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-39.gif" width="400" height="566" /></span></p>
+<p>最后我又为大家尝试了几个配色方案，同样也是从 Adobe Color 上得到的颜色进行填充的，大家可以看一下。</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-382495" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-93.jpeg" width="1031" height="586" /></span></p>
+<p>△ 下载链接：<a href="https://pan.baidu.com/s/1UsHPekAEDk6NFljW33EMGw">https://pan.baidu.com/s/1UsHPekAEDk6NFljW33EMGw</a>  提取码：roni</p>
+<p>本期教程中的案例，我会为大家提供下载链接，大家下载下来之后可以当作一个配色练习，同时这里还有我之前提到过的关于注册账户的一个注意事项，请大家多多留意。</p>
+<p>本期教程到这里就结束了，我们为大家介绍了一款非常好用的配色工具 Adobe Color，很简单并没有什么难度，相信大家一定都学得会。当然，工具只是为我们提供方便的，而不是主导我们的，所以在使用配色工具的时候最好是要有一定的理论基础，有一定的理论作为支撑会让你在配色的过程中更加游刃有余并且有理可依。如果是作为新手使用的话，我的建议还是多去尝试，根据效果的好坏来选择最终的方案。今天的内容就先到这里，希望对大家有所帮助，我是无我，我们下期再见。</p>
+<p>更多配色方法：</p>
+<p>[link https://www.uisdc.com/ui-color-matching-skills]</p>
+<p>欢迎关注研习设的微信公众号：「Yanxishe2017」</p>
+<p><span class="img-zoom"><img alt="我删除了所有配色网站，只留下这一个" class="alignnone size-full wp-image-271254" src="https://image.uisdc.com/wp-content/uploads/2018/05/yxskxsqr.jpg" /></span></p>
+➜壹周速读：哪些思维和方法可以有效提升设计效果？
+https://www.uisdc.com/quick-reading-weekly-vol66	65562
+<p><span class="img-zoom"><img alt="壹周速读：哪些思维和方法可以有效提升设计效果？" src="https://image.uisdc.com/wp-content/uploads/2020/08/quick-reading-weekly-vol66-1.jpg" width="750" height="168" class="alignnone size-full wp-image-382728" /></span></p>
+<p>很多设计高手的秘诀很少是某种「技巧」，更多是对的「思维」和合理的「方法」，那么有哪些设计思维能够让UI、产品、视觉设计师事半功倍？来看这期壹周速读吧，它可能是近期最干的一期合集了。</p>
+<h4><span class="auto_menu">思维·方法</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：哪些思维和方法可以有效提升设计效果？" src="https://image.uisdc.com/wp-content/uploads/2020/08/sz1.png" class="aligncenter size-full wp-image-382713" /></span></p>
+<p>做好产品，有很多非常有价值的逻辑模型。设计模型最大的特点在于在实际应用中不断的去修正，使他具备普适性。「VMIC UED.张宏波」在这篇文章当中要给大家介绍的基础模型，其实大家都很熟悉，就是设计上常用的「双钻模型」。这篇文章不止是一种方法的探讨，更是结合案例的一次设计思路的总结：</p>
+<p>[link  https://www.uisdc.com/double-drill-model]</p>
+<p><span class="img-zoom"><img alt="壹周速读：哪些思维和方法可以有效提升设计效果？" src="https://image.uisdc.com/wp-content/uploads/2020/08/sz2.png" class="aligncenter size-full wp-image-382713" /></span></p>
+<p>「空间陈列法」是随着手机兴起而真正流行起来的一招，因为PC时代都是宽大的横屏设计，适合展现视野开阔的大场面，像大漠、海边等等，而「空间陈列」作为小场景，在PC端就显得不大气，因此使用较少；而手机端却刚好相反，瘦长竖屏就适合表现长焦特写的小场景，像微距下的花鸟鱼虫等等，这时「空间陈列」就用的恰到好处：</p>
+<p>[link  https://www.uisdc.com/space-display]</p>
+<p><span class="img-zoom"><img alt="壹周速读：哪些思维和方法可以有效提升设计效果？" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-pg-20200727-8.gif" width="639" height="356" class="aligncenter size-full" /></span></p>
+<p>排版有没有特别方便、又能让版式美感特别突出的方法？有！「PPT进化论」的这篇文章所介绍的「卡片式排版法」就是为此而生的：</p>
+<p>[link  https://www.uisdc.com/card-layout]</p>
+<p><span class="img-zoom"><img alt="壹周速读：哪些思维和方法可以有效提升设计效果？" src="https://image.uisdc.com/wp-content/uploads/2020/08/sz3.png" class="aligncenter size-full wp-image-382713" /></span></p>
+<p>相信很多设计师经常听到一个熟悉的名词「视觉锤」，视觉锤是一个非常好的名字，一听就能懂，也正是因为一听就懂，大家就很少深入去理解它其中的内涵了。而能真正了解视觉锤的设计人、创意人可以说是屈指可数，深入研究视觉锤的就更少了。关于这个概念的应用，这篇文章为你彻底讲透：</p>
+<p>[link https://www.uisdc.com/visual-hammer]</p>
+<p><span class="img-zoom"><img alt="壹周速读：哪些思维和方法可以有效提升设计效果？" src="https://image.uisdc.com/wp-content/uploads/2020/08/sz4.png" class="aligncenter size-full wp-image-382713" /></span></p>
+<p>这是一份比较实用的web产品设计「葵花宝典」，作者「Nana 的设计锦囊」借着项目踩过的一些坑给大家总结了出来，可以帮助大家 0-1 快速起手web的设计。无论是现在用的还是将来可能用的，先收藏着绝对有备无患：</p>
+<p>[link https://www.uisdc.com/web-product-design]</p>
+<p><span class="img-zoom"><img alt="壹周速读：哪些思维和方法可以有效提升设计效果？" src="https://image.uisdc.com/wp-content/uploads/2020/08/sz5.png" class="aligncenter size-full wp-image-382713" /></span></p>
+<p>设计思维并不是一个完全抽象的东西，它能够让设计方案更加有理有据，让整体更加体系化，让设计能够说服客户，吸引用户。这篇来自 VMIC UED 的文章，用几个实际案例来展示如何使用设计模型辅助设计，希望帮助大家可以成长为一个有思考深度能解决问题的设计大师：</p>
+<p>[link https://www.uisdc.com/fogg-and-mentalaccounting]</p>
+<h4><span class="auto_menu">B端设计</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：哪些思维和方法可以有效提升设计效果？" src="https://image.uisdc.com/wp-content/uploads/2020/08/sz6.png" class="aligncenter size-full wp-image-382713" /></span></p>
+<p>对于特别复杂的B端表单，「简化」只是提升其易用性的方法之一。遇到数据量大，层级深，数据之间有交叉或嵌套关系的表单时，还需要考虑该如何分析拆解、组织呈现这些数据。这篇文章结合8字核心原则和2个案例，带你了解如何应对复杂的 B 端表单：</p>
+<p>[link  https://www.uisdc.com/structured-approach-2]</p>
+<p><span class="img-zoom"><img alt="壹周速读：哪些思维和方法可以有效提升设计效果？" src="https://image.uisdc.com/wp-content/uploads/2020/08/sz7.png" class="aligncenter size-full wp-image-382713" /></span></p>
+<p>由于B端产品的复杂多样，而其中弹窗设计是一个特别常见且情况复杂的问题。这篇文章所要讨论的不单单局限于弹窗这一种控件的设计，而是一个「泛弹窗」的话题，透过弹窗去分析理解其他类型信息展示的业务逻辑：</p>
+<p>[link  https://www.uisdc.com/b-pop-up-design]</p>
+<h4><span class="auto_menu">UI·交互</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：哪些思维和方法可以有效提升设计效果？" src="https://image.uisdc.com/wp-content/uploads/2020/07/734afe86a4ce3761bba7ba3269337753.gif" width="1600" height="1200" class="aligncenter size-full" /></span></p>
+<p>学习动画的同学应该都知道迪士尼的动画设计12原则吧？这可能是传统动画领域，最为重要、价值不可估量的原则之一。虽然这些原则最初是应用在动画设计当中，但是实际上在如今的 UI 界面当中，同样是适用，并且效果拔群的。这篇文章基于这12条原则，梳理出了 9 条适用于 UI 设计的原则，一起来看看吧：</p>
+<p>[link  https://www.uisdc.com/disney-basic-principles-ui]</p>
+<p><span class="img-zoom"><img alt="壹周速读：哪些思维和方法可以有效提升设计效果？" src="https://image.uisdc.com/wp-content/uploads/2020/08/sz8.png" class="aligncenter size-full wp-image-382713" /></span></p>
+<p>响应式网页设计虽然早已被提出，不过因为国内开发习惯和APP设计优先，日常工作使用这种布局方式的机会不多。国外网站使用这种布局方式较多，这篇来自腾讯的文章经过调研，结合尝试后，梳理了响应式设计的方法流程，记录问题与思考，帮助以后类似的项目开展更快：</p>
+<p>[link  https://www.uisdc.com/responsive-design-techniques]</p>
+<p><span class="img-zoom"><img alt="壹周速读：哪些思维和方法可以有效提升设计效果？" src="https://image.uisdc.com/wp-content/uploads/2020/08/sz9.png" class="aligncenter size-full wp-image-382713" /></span></p>
+<p>在进行 UI 设计的时候，很多小技巧能够恰到好处地提升界面的设计视觉效果、用户体验。这篇来自Mark Andrew 的文章梳理了 14 个实用性很强的 UI 效果提升小技巧，这篇文章由两篇文章组合而成，原文最早发布于 marcandrew.me，快来看看吧：</p>
+<p>[link  https://www.uisdc.com/improve-ui-designs-fast-2]</p>
+<h4><span class="auto_menu">视觉·色彩</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：哪些思维和方法可以有效提升设计效果？" src="https://image.uisdc.com/wp-content/uploads/2020/08/sz10.png" class="aligncenter size-full wp-image-382713" /></span></p>
+<p>零售业有个有趣的研究成果 —— 「七秒钟定律」：人们在挑选商品和服务时 ，只需要 7 秒钟就可以确定是否感兴趣，而在这短暂的 7 秒钟内，色彩的作用占到了 67%。</p>
+<p>配色，设计师的世纪难题。从平面到屏幕，CMYK 到 RGB，墨点到像素，色彩越来越丰富，形式越来越复杂。UI 的发展从拟物的繁琐细节中挣脱出来，却在色彩的展现中放飞了自我。如果你也重视配色，那么不要错过这篇 UI 配色终极奥义：</p>
+<p>[link  https://www.uisdc.com/ui-color-matching-skills]</p>
+<p><span class="img-zoom"><img alt="壹周速读：哪些思维和方法可以有效提升设计效果？" src="https://image.uisdc.com/wp-content/uploads/2020/08/sz11.png" class="aligncenter size-full wp-image-382713" /></span></p>
+<p>表达字体跟人一样，由气质（虚），骨架（实），穿着打扮（装饰）所构成。如果将设计字体当打造一个人设一样去处理，会变得有趣味得多。这是来自「VMIC UED.杨不过」 的系列文章，带你梳理了字体设计的思路、操作、六种常用方法以及日常积累的方式方法：</p>
+<p>[link  https://www.uisdc.com/font-design-guidelines]<br />
+[link  https://www.uisdc.com/font-design-guidelines-2]</p>
 ➜壹周速读：哪些思维和方法可以有效提升设计效果？
 https://www.uisdc.com/quick-reading-weekly-vol66	65562
 <p><span class="img-zoom"><img alt="壹周速读：哪些思维和方法可以有效提升设计效果？" src="https://image.uisdc.com/wp-content/uploads/2020/08/quick-reading-weekly-vol66-1.jpg" width="750" height="168" class="alignnone size-full wp-image-382728" /></span></p>
