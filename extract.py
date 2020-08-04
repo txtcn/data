@@ -22,11 +22,11 @@ class Exist:
     self.exist = set()
 
   def add(self, key):
-    d = blake2b(key.encode('utf8')).digest()
+    d = blake2b(key.strip().lower().encode('utf8')).digest()
     self.exist.add(d)
 
   def __contains__(self, key):
-    d = blake2b(key.encode('utf8')).digest()
+    d = blake2b(key.strip().lower().encode('utf8')).digest()
     return d in self.exist
 
 
