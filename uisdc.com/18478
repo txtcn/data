@@ -1,0 +1,63 @@
+➜苹果官方指南太长？这10条规范总结帮你抓设计要点！
+https://www.uisdc.com/10-insights-from-hig	65924
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383245" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_ndgZzXY7tNSA5nWcHZf0qw.png" width="1978" height="1122" /></span></p>
+<p>如果你是 UI 设计师，多少都接触过苹果的人机界面设计指南吧？这份在被奉为圭臬的设计指南当中，融入了几十年来最为经典、实用的设计规范和技巧，它非常易读且易于理解。</p>
+<p>这份人机界面指南当中所包含的知识，毫无疑问是价值非凡的。很多设计师同学，平时大都只是泛泛得扫读其中的内容，但是如果你正身处某个设计项目当中，结合某些需求和问题再来阅读的时候，会发现其中很多设计规则背后所隐藏深意和远见。</p>
+<p>最近几个月，我一直在开发 iOS APP，这个过程中，我对于这个设计规范有了更为深入的理解，同时也注意到很多关键的设计要点。今天这篇文章，我就结合我近期的实际经验，分享 10 筛选自苹果的 iOS 人机设计指南的关键要点，对于正在设计 APP 的同学而言，应该颇有帮助。</p>
+<h4><span class="auto_menu">1、在各种光照条件下测试配色方案</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383244" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_TKU2RF0UX8mZl-PBjtXowA.png" width="1978" height="1122" /></span></p>
+<p>「在不同的氛围、一天中不同时间和天气之下，室内和室外的光照状况是截然不同的。当你想将你的 APP 应用在现实世界当中的时候，你在屏幕上看到的色彩并不总是是相同的。所以，你始终要在多种不同的光照情况下（包括不同天气的户外）来预览你的 APP，查看颜色的显示是否合适。如有必要，在此基础上调整色彩，让配色在绝大多数情况下都可以提供最佳的体验。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/">苹果色彩设计准则</a></p>
+<p>其实 <a href="https://www.sleepcycle.com/">Sleep Cycle</a> 这个 APP 就是一个典型的例子，这个 APP 就使用了令人非常舒适的深色配色，让你的眼睛在深色和浅色模式下都可以非常轻松地浏览信息，尤其适合睡前设置闹钟这种使用场景。</p>
+<p>除了配色之外，我还要补充一点，就是很多上下文环境和交互都会影响用户的行为。所以用户需要考虑到用户在使用应用所处的位置、时间阶段以及情绪状态。</p>
+<p>其实，你仔细审视，会看到很多或好或不好的案例。导航类应用应该是需要阅读和触摸操作最少的，Kindle 确保了用户在户外阅读的时候不会显得屏幕刺眼，笔记类应用基本都可以离线使用，等等。</p>
+<p>如果你打算设计一款用于慢跑的 APP，那么你同样要考虑环境和条件约束。</p>
+<p>Shopify 上有一篇很棒的文章，教你如何<a href="https://www.shopify.com/partners/blog/97802374-designing-with-the-users-context-in-mind">充分利用环境因素来进行设计</a>。</p>
+<h4><span class="auto_menu">2、尽可能延迟用户登录</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383243" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_SIC4sF-UibKJr3SGRd4mrw.png" width="1978" height="1122" /></span></p>
+<p>「用户经常在执行有效的操作之前，就被迫要求登录帐号，这种情况使得很多用户放弃使用 APP。你得在作出承诺之前，让用户有机会爱上你的 APP。在购物类 APP 当中，你应该让用户可以随便浏览各种商品，并且在需要购买的时候再提醒他们需要登录。在流媒体应用当中，让用户可以随意浏览绝大多数内容，并且让一部分内容在登录后才能看到就行了。」——苹果授权登录设计准则</p>
+<p>苹果在设计规范当中，敦促设计师尽可能重新审视登录的机制，如果可能，甚至完全删除登录和注册这样的环节。</p>
+<p>不幸的是，我们绝大多数的应用是不太可能删除登录机制的。不过，我在设计 APP 的时候，已经尽量将注册环节往后挪了，确保用户在体验过产品，基于实际产品调整预期之后，再主动注册。</p>
+<p>引入外部帐号机制来注册登录也是一个颇为不错的选择。我现在正在使用<a href="https://developer.apple.com/documentation/security/password_autofill/">密码自动填充</a>、Facebook 帐号登录、Google 帐号登录、Apple 帐号登录以及电子邮件注册登录这几种方式。</p>
+<h4><span class="auto_menu">3、让 APP 的色彩模式跟随系统的色彩模式</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383242" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_J8n70pra71oXRyjwpQ5TSA.png" width="1978" height="1122" /></span></p>
+<p>深色模式已经在各个系统中大规模应用了，在 iOS 中更是如此。</p>
+<p>「如果给某个 APP 提供特定的色彩模式，那么可能会加大用户的工作量，他们可能需要调整更多设置来确保系统的统一性和舒适性。更糟糕的是，APP 如果不跟随系统色彩模式，用户可能会认为 APP 已经损坏，无法跟随他们在系统内所设置的外观选项。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/dark-mode/">苹果深色模式指南</a></p>
+<h4><span class="auto_menu">4、尽快展示内容</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383241" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_EfUQ6N2iusox8x0O6n6bow.png" width="1978" height="1122" /></span></p>
+<p>不要让展示内容和启动页/闪屏混淆。启动页通常用来介绍页面的元素、功能。</p>
+<p>「如果你的应用程序在启动页预览的效果，和实际的页面看起来不一样，用户可能会因为这这种不一致和不对应感到不适。另外，请让你的启动页和设备当下的色彩模式保持一致，具体请参阅<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/dark-mode/">深色模式</a>的说明。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/launch-screen/">苹果的启动屏设计准则</a></p>
+<p>「不要让屏幕上所有内容都加载好了之后再显示，并且让用户一直等着。当用户点击之后，APP 最好立即显示，可以使用占位符文本、占位符图片或者其他的内容来标识内容正在加载，当前不可用。当内容加载好了之后，再替换这些内容。只要有可能，尽量在后台预加载好，比如转场动画，系统的导航菜单，等等。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/loading/">苹果的加载设计准则</a></p>
+<h4><span class="auto_menu">5、充分利用系统提供的色彩</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383240" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_nLaF27hpoPrVzDQwwrdl1A.png" width="1978" height="1122" /></span></p>
+<p>在进行设计的时候，对于文本、符号、图标等视觉元素，尽量调用系统预制的配色，这能够帮你省去超多工作量。</p>
+<p>「iOS提供了一系列的系统配色，这些配色能够自动匹配符合需求的色调和饱和度，并且能够和系统的可访问性的设置相联动，比如自动增加对比度、降低透明度等等。在系统的深色模式和浅色模式下，这些预制的色彩不论是自单独使用还是组合使用，效果都会颇为突出。」</p>
+<p>「不要在你的应用当中使用色彩编码将这些色彩给定死，系统提供的这些色彩仅供你在设计过程中参考，实际应用场景中，这些实际的色彩的数值在后台会随着环境变化而在一定幅度内波动，开发的时候，始终使用 API 来定义色彩，有关开发人员的文档请参考 <a href="https://developer.apple.com/documentation/uikit/uicolor/">UIColor</a> 这一文档。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/#dynamic-system-colors">苹果色彩设计准则</a></p>
+<p>「SF Symbols 提供了一套超过 1500 款风格一致、高度可配置的字符，你可以在 APP 中轻松使用它们。苹果设计的 SF Symbols 和 San Francisco 系统字体可以无缝地集成，两者可以在粗细、大小上自动保持光学垂直对齐。你可以在 iOS 13 及更高版本、watchOS6 及更高版本、以及 tvOS 13 及更高版本上使用 SF Symbols 。」——<a href="https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/">苹果 SF Symbols 使用指南</a></p>
+<h4><span class="auto_menu">6、使用熟悉且易于理解的词汇</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383239" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_5m-jjsipQpZDtAg4bUdL3w.png" width="1978" height="1122" /></span></p>
+<p>「技术可能会令人生畏，尽量避免使用用户可能不理解的缩写和技术术语。使用用户容易理解和接受的短语。通常，吸引所有人的应用程序，应该避免使用技术含量过高的词汇，而专业术语适合特定技术人员所用的 APP。」</p>
+<p>「采用相对非正式、友好的语气来进行表述。非正式的、平易近人的语言风格，能让语言表达像您午餐时与人聊天那样自然，这样可以让你于用户之间的距离更近。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/terminology/">苹果术语使用指南</a></p>
+<p>这里最重要的一点，是要了解你所面对的用户。如果你面对的是一个非常普通的用户，那么你可能要避免使用术语。如果的 APP 的用户是一个高度专业化的建筑师团队，那么你可能要采取截然不同的呈现方式。</p>
+<h4><span class="auto_menu">7、预测并为用户提供帮助</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383238" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_rW_S5FAU4_0wpIH1HQtXjQ.png" width="1978" height="1122" /></span></p>
+<p>「主动预测用户可能会在哪个环节被困住，比如在用户暂停游戏的时候，提供相关的引导和帮助。如果用户第一次错过某些内容，那么应该提供一个入口让用户可以重复观看教程。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/onboarding/">苹果 APP 体系结构设计准则</a></p>
+<p>添加快速提示、常见问题、帮助中心或是聊天机器人，都可以有效地帮助用户解决困惑。</p>
+<p>在我创建 APP的过程中，我会在一些界面中添加帮助图标，教育用户有关的操作，这样可以使得我的界面保持整洁。如果需要，我还会提供一个帮助用户了解更多的额外按钮。</p>
+<h4><span class="auto_menu">8、必要时帮助用户避免信息丢失</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383237" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_zpGVwZ7UcTKJ5SfxTGwDcQ.png" width="1978" height="1122" /></span></p>
+<p>「无论是使用滑动关闭手势、还是使用关闭按钮，如果这一操作可能会导致用户的内容丢失，那么请提供相关的情况说明，并且提供解决信息丢失的解决方案。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/modality/">苹果设计模式指南</a></p>
+<p>「除非取消或者删除，用户始终可以保留现有的信息和内容，这才会让用户感到放心。通常，不需要让用户手动来保存，而是要在用户打开或者关闭文件、或者切换到其他的 APP 的时候，定期自动保存更改。不过，在一些特定的情况下，比如编辑现有的文件，或者需要确认当前的内容的时候，保存和取消的操作同样有意义，这个时候的自动保存可能并不符合用户的需求。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/file-handling/">苹果文件处理准则</a></p>
+<h4><span class="auto_menu">9、请尽量使用标准手势</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383236" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_KNfWOvvvxU4r4BV3XsxHDw.png" width="1978" height="1122" /></span></p>
+<p>「用户习惯标准化的手势，不喜欢被迫学习不同的操作方式来实现已有的、或是相同的操作。在游戏或者是虚拟现实一类的 APP 当中，自定义手势可能是体验中有趣的一部分，在其他的应用当中，最好使用<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/gestures/#standard-gestures">标准的手势</a>，让用户无需费力去发现、学习和记忆。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/gestures/">苹果手势设计指南</a></p>
+<h4><span class="auto_menu">10、不要在通知中包含敏感、个人或者机密信息</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383235" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_kuqsKPeUTE2kPmo1pekIpw.png" width="1978" height="1122" /></span></p>
+<p>「你无法预测用户在收到通知的时候正在做什么，因此需要避免推送到屏幕上的信息可能是敏感的个人信息。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/notifications/">苹果通知设计准则</a></p>
+<p>&nbsp;</p>
+<p>延伸阅读：</p>
+<p>&nbsp;</p>
+<p>[link https://www.uisdc.com/improve-ui-designs-fast-1]</p>
+<p>[link https://www.uisdc.com/improve-ui-designs-fast-2]</p>
+<p>[link https://www.uisdc.com/macos-14-design]</p>
+<p>[link https://www.uisdc.com/ios14-widgets-design]</p>
+<div id="gtx-trans" style="position: absolute; left: 394px; top: 7353.19px;"></div>
