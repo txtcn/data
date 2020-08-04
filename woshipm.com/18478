@@ -1495,3 +1495,87 @@ http://www.woshipm.com/copy/4117414.html	13247
 <p>&nbsp;</p>
 <p>本文由 @文案猎手April 原创发布于人人都是产品经理，未经许可，禁止转载。</p>
 <p>题图来自 Unsplash，基于CC0协议</p>
+➜Axure入门案例系列——手机端滚动选择器
+http://www.woshipm.com/rp/4117669.html	13744
+<blockquote><p>编辑导读：滑动选择器在手机端是一个比较常见的组件，主要用于多数据情况下的选择。本文作者从工作实践出发，分享了手机版滚动选择器的相关设计思路，避免大家走一些不必要的弯路。</p></blockquote>
+<p><img data-action="zoom" class="size-full wp-image-4117917 aligncenter" src="http://image.woshipm.com/wp-files/2020/08/KvlFZR76dL2HO3ThT4rf.jpg" alt="" width="900" height="420" /></p>
+<p>效果展示：</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/whK6DFgAnP1EeFUXicMQ.gif" /></p>
+<p>准备：Axure 8（或Axure 9）软件已安装，掌握基本的软件使用，掌握基础的动态面板知识。</p>
+<p><strong>本教程知识点：</strong></p>
+<ol>
+<li>进阶的动态面板使用。</li>
+<li>基础函数应用。</li>
+<li>基础中继器应用。</li>
+</ol>
+<p>本文以基础的单一选择为例（多选择可以将滑动区域、数据集模块进行复制，调整滑动区域、数据集宽度即可）。</p>
+<h2>一、功能</h2>
+<p>鼠标拖动滑轮进行数据选择，滑动结束后，选中数据居中。</p>
+<h2>二、制作方式</h2>
+<h3>1. 制作基础的静态模块</h3>
+<p>（注意元件命名，本案例涉及局部变量关联元件，元件命名有利于查找对应元件）。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/JZXMt87tX0n29SgAcups.png" /></p>
+<h3>2. 制作上遮盖、选中、下遮盖</h3>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/h9kGZbZijfGqwFrCOs6U.png" /></p>
+<p>上遮盖、下遮盖制作了一个模糊的效果，实际制作为对应的矩形，填充渐变色（#FFFFFF（50%）&#8211;#FFFFFF（100%）），注意设置对应的角度，下遮盖为-90°，上遮盖为90°。（图以上遮盖为例，选中渐变左侧。）</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/pjTZgkNyp25YfriEEMWH.png" /></p>
+<p>选中效果：设置选中为对应的纯色矩形即可。（设置颜色主要是与背景有所区分，颜色可选APP主色或其它与背景有对比度的颜色）。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/VSuj387cXA7h8eBgLj8k.png" /></p>
+<h3>3. 制作数据集数据（中继器基础）</h3>
+<p><strong>（1）绘图区域拖入中继器组件</strong></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/lB3WOFLguGp0CCVzsJNA.png" /></p>
+<p><strong>（2）完成上下模糊区域</strong></p>
+<p>修改中继器组件内部为文本标签元件，调整字体元件的宽（375px）、高（35px），文本标签元件字体设置对齐为左右居中，上下居中。</p>
+<ul>
+<li>默认中继器中是一个矩形可以手动删除后拖入文本标签元件。</li>
+<li>技巧：矩形快速变为文本标签元件：移除矩形背景色、移除矩形描边即可。</li>
+</ul>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/tSZ5eGDjEoCbTuirPyZQ.png" /></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/v1obTPMYY1BqWTnfeckb.png" /></p>
+<p><strong>（3）配置中继器数据关联</strong></p>
+<ul>
+<li>设置每项加载时，文字为中继器对应list列表数据。</li>
+<li>list：中继器表头，自行修改（注：中继器表头目前不支持中文）。</li>
+<li>list数据：自行填写（此处数据为滚动选择器中的数据，可自行进行填写，目前需大于等于7。）</li>
+</ul>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/HXMFNCnZusrWPxKjOtOH.png" /></p>
+<p><strong>（4）交互整体原理</strong></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/4GTCWC26fevUr1m4LXWE.png" /></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/OVQgDNDgi04waesOJ126.png" /></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/U8mVnXOFjXXH01ROMnE9.png" /></p>
+<p><strong>（5）配置滑动交互</strong></p>
+<p>实现原理：整个滑动交互分为两层。</p>
+<ul>
+<li>第一层：用户鼠标拖动滑动区域动态面板移动后，数据集动态面板跟随移动。</li>
+<li>第二层：当滑动区域移动结束后，计算出滑动的数据距离，给数据集动态面板进行计算并进行上下对应调整（保证文案居中）。</li>
+</ul>
+<p>滑动区域高度计算：滑动区域比数据集区域高6个数据高度（取决于显示滑动区域多少）。</p>
+<p>所有可以在载入是计算滑块区域的高度：滑块区域高度=中继器数据个数35+额外高出的高度（635）。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/X3rQLy9IwJtlkaPZFQzM.png" /></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/hQplRsBlwQpKJCIEJW7L.png" /></p>
+<p><strong>（6）配置滑动区域交互</strong></p>
+<ul>
+<li>配置滑动区域可拖动的范围</li>
+<li>按照滑块区域顶部为依据，设置顶部可移动区域为:[-滑块高度+245（7个滑动展示区域），0]。计算依据参考整体交互原理。</li>
+</ul>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/OUEuCNaMFa1VJuCBtgYt.png" /></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/P9K8UJ8xV4zmm9Kfem43.png" /></p>
+<p><strong>（7）配置数据移动区域与展示</strong></p>
+<ul>
+<li>设置数据集跟随滑动区域移动</li>
+<li>计算出滑动区域移动后，数据集需要移动多少进行最后结果的调整。</li>
+</ul>
+<p>计算方式：</p>
+<p>滑动区域移动的距离取除35（单个数据高度）余数的整。然后进行乘35。然后将数据区域约束在对应的滚动区域中。计算依据参考整体交互原理。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/PlBzvFIQkLXrBZ54OF1N.png" /></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/sZjdaCOInUP9pnDGdgva.png" /></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/SZfjidxDDql6il2kpM3R.png" /></p>
+<h2>总结</h2>
+<p>过程相对较为复杂，如果只是日常使用，下载对应源文件更改数据即可，如果自行学习注意以下几个交互：</p>
+<ol>
+<li>注意滑动区域计算与数据集跟随计算；</li>
+<li>可以使用文本赋值展示交互的实际值进行修改对应的逻辑。</li>
+</ol>
+<p>&nbsp;</p>
+<p>本文由 @Brose 原创发布于人人都是产品经理，未经许可，禁止转载</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
