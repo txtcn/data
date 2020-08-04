@@ -2,7 +2,6 @@
 
 import zd
 from os.path import dirname, abspath, join
-from os import walk
 from os import walk, cpu_count
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from fire import Fire
@@ -10,11 +9,28 @@ from html import unescape
 from pathlib import Path
 import re
 from tqdm import tqdm
+from hashlib import blake2b
 
 RE_N = re.compile("</(p|br|li)>", re.DOTALL)
 RE_TAG = re.compile(r'<[^>]+>', re.DOTALL)
 
 ARROW = "➜"
+
+
+class Exist:
+  def __init__(self):
+    self.exist = set()
+
+  def add(self, key):
+    d = blake2b(key.encode('utf8')).digest()
+    self.exist.add(d)
+
+  def __contains__(self, key):
+    d = blake2b(key.encode('utf8')).digest()
+    return d in self.exist
+
+
+EXIST = Exist()
 
 
 def export(root, outfile, file_li):
@@ -33,6 +49,9 @@ def export(root, outfile, file_li):
           url, time = url_time.split("\t")
           time = int(time) + day
           if txt:
+            if title in EXIST:
+              continue
+            EXIST.add(title)
             out.write(ARROW + title + "\n")
             out.write(url + "\t" + str(time) + "\n")
             if txt:
