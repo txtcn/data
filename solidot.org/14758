@@ -1,0 +1,75 @@
+➜Google Wave一周年
+https://www.solidot.org/story?sid=18104	12000
+<a href="http://yi-it.com/blog/">wave.it</a> 写道 "Google官方博客<a href="http://googleblog.blogspot.com/2010/05/happy-1st-birthday-google-wave.html">庆祝Google Wave一周年</a>，并在上周对所有Google App域名开放其服务。
+<i>文中提到Google Wave是一个不同于email或浏览器的全新产品。还提到作者的妈妈和妹妹可以使用Google Wave来干很多事情，并提到现在的Google Wave比6个月前要稳定和迅速（速度快）很多，并且有帮助和指南可以参考。
+<br> <br>你可以通过wave.stories@googlewave.com分享和阅读你和别人的Google Wave故事"</i>
+➜关于跨浏览器测试那点事
+https://www.solidot.org/story?sid=18105	17640
+<a href="http://www.comsharp.com/">锐商企业CMS</a> 写道 "Web 设计与开发师的一个重要工作环节是跨浏览器测试，谁让我们生活在这个既幸福又痛苦的时代，有那么多浏览器摆在我们面前，还有那个噩梦般总也摆脱不掉的 IE6。本文讲述了与跨浏览器测试有关的各种问题与知识，包括渲染，平台，设备以及 JavaScript 引擎（<a href="http://www.comsharp.com/GetKnowledge/zh-CN/It_News_K973.aspx">完整图文版</a>）。           梦幻五组合
+<br> <br>IE 独霸天下的那些日子，Web 设计师不时陷入 IE 同它竞争者的口水战，然而，当一些新的，注重 Web 标准的浏览器出现时，事情发生了改变，IE 的统治地位受到了挑战。时过境迁，移动浏览器与新渲染引擎的出现，使 Web 设计者开始考虑跨浏览器测试的问题。如今，Web 设计者逐渐将目标固定在5或6个主要浏览器，然而事情并没有了结，一劳永逸是一个永远的梦。
+<br> <br> <a href="http://en.wikipedia.org/wiki/Usage_share_of_web_browsers"> </a>
+<i>尽管浏览器市场被5大浏览器主导，但是，也不能忽视那个占 0.87% 的其它。</i>
+<br> <br>一般来说，跨浏览器测试是针对不同的渲染引擎，假如你已经针对 Trident，Gecko，Webkit，Presto 等主流渲染引擎做过了测试，似乎可以说已经是比较安全了。然而，针对更广泛的设备与平台的测试仍然必要，可以帮你发现很多潜在的问题。
+<br> <br>
+<i>Trident (Internet Explorer), Gecko (Firefox), Webkit (Chrome and  Safari) and Presto (Opera).</i> <br> <br>
+基础测试
+<br> <br>目前，一个严重的问题是设备相关性。Apple 一意孤行拒绝在 iPhone 和 iPad 中支持 Flash，Apple 与 Adobe 相互攻击的声音不绝于耳。尽管 Flash 自己负责内容的渲染，但，仅仅在主流浏览器进行测试仍不足发现潜在的问题，拓展你的测试范围势在必行。
+<br> <br> <a href="http://www.2advanced.com/"> </a>
+<i>Flash 自己渲染内容，但并不是所有浏览器都支持 Flash。</i>
+<br> <br>另一个问题是渲染引擎的版本，支持最新版本固然重要，然而很多设备仍在使用旧版本的渲染引擎，这要求我们同时针对渲染引擎的新旧版本进行测试。
+<br> <br> <a href="http://www.microsoft.com/windows/ie/ie6/downloads/default.mspx"> </a>
+<i>Internet Explorer 6.0 使用的是 BUG 重重的旧 Trident 渲染引擎</i>
+<br> <br>渲染引擎的问题不仅存在于版本之间，还有不同的平台和设备，毫无疑问，针对各种平台，各种设备的测试会让你疯掉。为小屏幕进行设计着实不易，尤其当不同设备间还没有达成一致的时候。这在桌面系统中叶存在，同一个渲染引擎，在不同平台，仍有细微差别。
+<br> <br> <a href="http://m.alistapart.com/"> </a>
+<i>A List Apart 对渲染差异十分重视，他们干脆为移动设备设计了单独的版本</i>
+<br> <br>除了渲染差异，跨浏览器兼容还有一个更重要的问题，javaScript 引擎。早期，人们对 JavaScript 唯一问题是，是否启用它，然而现在，那些拥有相同渲染引擎的不同浏览器往往拥有差别巨大的 JavaScript 引擎。你需要针对不同浏览器测试 JavaScript 的性能，尤其当你使用了大量 jQuery 绚丽效果的时候。
+<a href="http://www.chromeexperiments.com/"> </a>
+<br> <br> <i>这是 Chrome 试验站点，用来展示 Chrome 的 JavaScript 的性能。</i>
+<br> <br>最后，是可访问性问题。你必须明白，当一些有某些方面的障碍的人访问你的站点的时候，可访问性问题会迫使他们只使用某种浏览器，在这种情形，你要记住，不能忽视这些常常被遗忘的人。
+<a href="http://www.opera.com/"> </a>
+<br> <br> <i>Opera 尽管只占很小的市场份额，但它的语音功能对那些有特殊需求的人士来说，意味着全部</i> <br> <br>
+长远视角
+<br> <br>可访问性问题，不同的 JavaScript 引擎，跨平台问题，渲染的差异，技术依赖等等问题会让你自叹命苦，然而这还不够，你还要研究你的目标用户。花一些时间和你的访问者进行沟通，了结他们的需求，比如，使用投票统计你的访问者所使用的浏览器分布，最终你会发现，你可能还要针对移动浏览进行设计，或者为 iPhone 设计。
+<a href="http://piwik.org/demo/"> </a>
+<br> <br> <i>类似的统计可以让你了解你的站点访问者的浏览器分布</i> <br> <br>
+不同平台的渲染引擎
+<br> <br>以下是移动和桌面平台的浏览器渲染引擎清单，我们会看到越来越多的浏览器面世，因此，要为未来考虑。
+<br> <br> <i>桌面和移动平台下，都有相当数量的渲染引擎</i>
+<br> <br> <b>以下浏览器使用 Trident 引擎</b>
+<br> <br> <b>以下浏览器使用 Gecko 引擎</b>
+<br> <br> <b>以下浏览器使用 Webkit 引擎</b>
+<br> <br> <b>而使用 Presto 引擎的浏览器则主要限于 Opera</b>
+总结
+<br> <br>或许你的网站没有任何错误，或许在每一个场合都看上去很棒，然而，对于真正的跨平台兼容，5大浏览器测试仍然不够。如果本文只教会你一件事，那就是，花时间同你的访问者沟通，分析他们的需求。另外，花时间测试各种平台，各种设备的每个渲染引擎，针对不同的 JavaScript 引擎进行性能测试。在一个 Web 主导的世界，花时间让你的站点延伸到尽可能多的人，是值得的。
+<br> <br>本文国际来源：<a href="http://www.webdesignerdepot.com/">webdesignerdepot.com</a> <a href="http://www.webdesignerdepot.com/2010/05/browser-testing-a-family-tree/">Browser Testing: A Family Tree</a> （作者：<i> <a href="http://www.hitechy.com/">Alexander  Dawson</a> </i>）
+<br> <br>中文编译来源：<a href="http://www.comsharp.com/"> <b>锐商企业CMS</b> 网站内容管理系统</a> 官方网站"
+➜KOffice 2.2发布
+https://www.solidot.org/story?sid=18106	19500
+KOffice团队宣布发布<a href="http://www.koffice.org/news/koffice-2-2-released/">KOffice 2.2</a>，距离发布KOffice 2.1相隔半年。新的版本增加了大量新特性，修正了大量bug，布局引擎、库和过滤器等都得到了加强，其它的变化包括数据管理应用程序Kexi回归，更好的兼容MS Office，KWord改进拼写检查，Karbon能更好的支持可缩放矢量图形格式等等。
+➜谁拥有华为？
+https://www.solidot.org/story?sid=18107	22560
+上个月，印度怀疑中国电信设备供应商的产品中可能包含有后门，因此考虑<a href="__SLASHLINK__" sect="it" sid="10/04/30/1038210" sn="article" tid="100">禁止进口中国产电信设备</a>。现在澳大利亚Itnews的一篇报告分析了<a href="http://www.itnews.com.au/News/175946,analysis-who-really-owns-huawei.aspx">中国最大电信设备公司华为的所有权背景</a>。究竟<a href="http://tech.slashdot.org/story/10/05/28/1228224/Chinese-Networking-Vendor-Huaweis-Murky-Ownership">谁拥有华为</a>？阴谋论者相信这家电信设备巨头是被中国政府或是军工复合体控制，但并无直接证据，虽然华为CEO任正非确实有军方和共产党背景。从西方观察者角度看，华为的股权结构奇特而难以捉摸，让他们根本无法理解。<i>
+任正非是中国最富有的人之一，他的净资产估计有4.5亿美元，而他的股份只占到了华为的1.42%，其余大约98.56%归员工所有。这是华为公司的说法。但实际上所有权安排远没有听起来这么简单。员工持股计划是通过深圳市华为投资控股有限公司实施。让问题变得更复杂的是，华为技术有限公司本身是华为投资控股有限公司的全资子公司，公司发言人声称华为为所有雇员所有，没有任何第三方持有股份。换句话说，华为的员工拥有他们所为之工作的华为技术公司，以及华为技术的母公司华为投资控股。而整个公司的控制权则掌握在管理层手中。华为雇员不能买股票，他们只能在每年根据工作表现、职位的责任和能力以及未来发展潜力分配到股份。华为没有披露一位雇员能获得多少股份。只有中国国籍员工能分到股份。华为目前大约有95,000名员工，其中61,457人持有股份。</i>
+➜人也能感染上计算机病毒
+https://www.solidot.org/story?sid=18108	22680
+<a href="http://tuxfans.info/">windrose</a> 写道 "一名英国科学家成为世界上<a href="http://cn.wsj.com/gb/20100527/VID115925.asp">第一个感染计算机病毒的人</a>。马克·加森(Mark Gasson)博士在手上植入了一枚电子芯片，以储存信息并与一些电子设备进行交互，例如挥挥手就可以通过门禁系统、只有植入芯片的手才能使用他的手机。但最近他发现植入的芯片染上了计算机病毒。这一事件令人担心随着植入芯片的使用日益广泛，它们可能成为病毒的下一个目标。如果病毒感染的是用于医疗的植入芯片，或许真的会威胁到人的生命。"
+➜中国声称精神病患者过亿
+https://www.solidot.org/story?sid=18109	24120
+在发生了一连串的<a href="__SLASHLINK__" sect="society" sid="10/05/12/1419228" sn="article" tid="100">针对儿童血案</a>，富士康<a href="__SLASHLINK__" sect="it" sid="10/05/24/029200" sn="article" tid="54">员工坠楼事件</a>之后，中国官方媒体《瞭望新闻周刊》周六刊登<a href="http://news.sohu.com/20100529/n272419325.shtml">报告</a>，将矛头直至精神疾病，但问题是<a href="http://en.wikipedia.org/wiki/Causes_of_mental_disorders">精神疾病</a>并非只是由自身生理遗传等因素造成的。
+<i>
+根据中国疾病预防控制中心2009年公布的数据显示，中国各类精神疾病患者人数在一亿以上，其中重症者人数超过1600万。报道说，精神疾病已成为中国严重的公共卫生和社会问题，一旦救治不及时和看管不严，很可能给其家庭和社会带来不可预知的危险。中国精神疾病数量约占全部疾病数量的五分之一，而且预计这一比率到2020年将升至四分之一。专家分析，中国精神疾患状况达到如此严重程度的主要原因是中国精神卫生法规不健全，使精神疾患人员合法权益的保护受到严重影响，精神疾患人员在治疗、求医、就业、救济等方面遭受歧视。</i>
+➜KDE 4.5 beta新特性
+https://www.solidot.org/story?sid=18110	25920
+KDE桌面环境发布了4.5版的<a href="http://www.kde.org/announcements/announce-4.5-beta1.php">首个beta</a>，虽然开发者主要是关注稳定性，但新的版本仍然带来了一些新特性，并改进了用户界面。<i>
+<a href="http://arstechnica.com/open-source/news/2010/05/kde-45-beta-brings-window-tiling-new-notifications.ars">其中包括</a>：KWin窗口管理起支持窗口平铺，让用户能以类似管理图标的方式管理窗口；新的基于D-Bus协议的通知程序，KDE开发社区已经将D-Bus协议递交到FreeDesktop.org以实现标准化，虽然上游GNOME社区拒绝了该协议，但Canonical却接受了并应用到Ubuntu 10.04中，新的应用程序指示功能便是基于该协议。其它的特性包括，Konqueror浏览器可选择WebKit引擎，替代现有的KHTML渲染引擎，虽然WebKit最初是基于KHTML，但在苹果、Google等公司的推动下已经发生了重大变化。KDE 4.5 SC正式版预计将在8月发布。</i>
+➜Google WebM引发“开源”质疑
+https://www.solidot.org/story?sid=18111	29520
+当开源成为主流，在市场的压力下开发商也常常以“开源”的名义推销他们的产品。但这一趋势可能会贬低“开源”这一名字所包含的意义。<i>
+WebM是Google发布的H.264开源替代，但开源社区的一些人发现Google没有采用开源促进会（OSI）批准的许可证，因而<a href="http://news.slashdot.org/story/10/05/28/2014200/Google-WebM-Calls-Open-Source-Into-Question">质疑WebM是否能归类为开源软件</a>。此外，Google还要求在OSI在审议其许可证前<a href="http://www.crynwr.com/cgi-bin/ezmlm-cgi?17:mss:1019:dphgapeaeaahenjiboco">改变做法</a>。不过也有人指出，WebM所用的许可证虽然不兼容GPLv2，但却兼容于GPLv3，而且此前自由软件基金会（FSF）曾在其支持声明中称<a href="http://www.fsf.org/news/free-software-foundation-statement-on-webm-and-vp8">WebM为自由软件</a>，而不仅仅是开源软件。</i>
+➜亚马逊将于8月推出下一代Kindle
+https://www.solidot.org/story?sid=18112	42900
+<a href="http://www.hi2020.com/">书评影评</a> 写道 <i>"据<a href="http://www.engadget.com/2010/05/28/amazon-kindle-slimming-down-in-august/">engadget报道</a>，亚马逊将于今年8月份推出下一代版本的Kindle电子阅读器，厚度更薄，显示屏灵敏度更高，画面更清晰。不过，不愿意透露姓名的消息人士称，这款新Kindle并非触屏和彩色显示。Kindle是亚马逊于2007年推出的电子书阅读器产品，自那以来该公司来自竞争对手的竞争不断增多。目前，该公司面临着苹果iPad平板电脑的强有力竞争，iPad向用户提供了上网、观看视频和阅读电子书等多种功能。此外，亚马逊还遭遇索尼公司的挑战，后者去年推出了一款触屏功能的电子阅读器产品。索尼新增的服务能够让用户无线下载书籍，这堪于Kindle功能匹敌。"</i>
+➜Thunderbird 3.1 rc1 发布
+https://www.solidot.org/story?sid=18113	45900
+youmazha 写道 <i>"Mozilla<a href="http://www.mozillamessaging.com/en-US/about/press/archive/2010-05-27-01">发布了</a>Thunderbird 3.1 rc1.
+Thunderbird 3.1 rc1是我们最新的开发里程碑。虽然我们认为该版本很稳定，但该版本主要还是供我们的开发和测试小组人员使用，以提供早期的试用和改进回馈。用户使用该版本不要期望所有的add-ons都可以在该版本下运行正常。"</i>

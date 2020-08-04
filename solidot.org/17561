@@ -1,0 +1,67 @@
+➜《Mastering Bitcoin》中的错误代码可能会导致你的比特币丢失
+https://www.solidot.org/story?sid=55390	10975
+匿名读者 写道<i> "著名的<a href="http://shop.oreilly.com/product/0636920049524.do" target="_blank">《Mastering Bitcoin》</a>（《精通比特币》）一书中有段Python代码有误（key-to-address-ecc-example.py），这段代码被广为流传。这个错误有极高的概率会根据一个正确的私钥生成一个错误的压缩公钥，从而产生一个错误的比特币收款地址，如果使用这个地址会导致比特币资金丢失。这段有BUG的代码从此书中的第一版中就已存在，最新的第二版本依旧存在这个BUG代码，当然，广为流传的中译版本中也自然存在。
+下面是那段错误的代码及其修正：<a href="https://github.com/bitcoinbook/bitcoinbook/pull/483/files" target="_blank">https://github.com/bitcoinbook/bitcoinbook/pull/483/files</a>&nbsp;
+</i><i>
+</i>
+<p>
+</p>
+<i>
+</i>
+<p><i>BUG的产生是encode函数没有保留前导字符零所致，下面是BUG演示，可见丢失了一个前导零的公钥产生了一个错误的比特币地址：
+</i></p>
+<i>
+</i>
+<p>
+</p>
+<i>
+</i>
+<p><i>这其实并不是encode函数的错，一个正常的未添加前缀字符（"02"或"03"）的压缩公钥长度应该是32字节(64个字符)，encode函数会将10进制公钥转换成16进制字符串的形式，一旦当转换后的字符串长度不足64个字符的时候（极有可能出现的情况），encode函数并不会自动添加前导字符零以确保压缩公钥的长度为64个字符。zfill(64)的作用就是确保公钥为64个字符，不足的话进行补零。
+以上演示数据可通过著名的比特币在线地址生成器进行查验：<a href="https://www.bitaddress.org" target="_blank">https://www.bitaddress.org</a></i>
+</p>
+<i>
+</i>
+<p><i>现已推送了一个合并请求(Pull Request)并提供了一段重现此BUG的代码，详细信息：
+<a href="https://github.com/bitcoinbook/bitcoinbook/pull/483" target="_blank">https://github.com/bitcoinbook/bitcoinbook/pull/483</a>"</i></p>
+➜中国否认窃取非盟数据
+https://www.solidot.org/story?sid=55391	12736
+非洲联盟部分官员指责中国在五年期间每晚侵入其总部的计算机系统并下载机密数据。北京方面出资建造了非盟在亚的斯亚贝巴造价 2 亿美元的总部大楼，承建商也是一家中国国有企业。分析人士表示，这一黑客行为暴露后被保密了一年，而且非盟至今一语不发，突显中国在与非洲的关系中处于主导地位。中国<a href="http://www.ftchinese.com/story/001076137" target="_blank"><u>否认了这一指控</u></a>。这一黑客行为突显非洲国家让中国科技公司在发展其电信主干网方面发挥重要作用的风险。相比之下，美国对华为和中兴的投资实施限制。报道称，从 2012 年 1 月非盟大楼启用到 2017 年 1 月，数据传输活动在每晚午夜至凌晨 2 时达到高峰。报道称，非盟技术人员发现，该组织的机密被复制到位于上海的服务器。
+➜外交部拒绝回答 VPN 相关询问
+https://www.solidot.org/story?sid=55392	13139
+在昨天举行的例行记者会上，外交部发言人华春莹<a href="http://www.fmprc.gov.cn/web/fyrbt_673021/t1529866.shtml" target="_blank"><u>拒绝</u></a>回答 VPN 相关的询问。记者询问，“中国政府对 VPN 的管控对在华企业的经营造成了干扰，引发对竞争力和商业机密泄漏的担忧。你能否谈一谈未来将如何实施这方面的管控？中国监管者是否会遵守 WTO 规则及其允许外企与中国企业公平竞争的承诺？”华春莹回答：“你提到的问题非常具体，而且提问的前提带着跟中国对立的情绪，我不想做具体回应。”上周，一大批 VPN 相关服务的 IP 地址遭到大规模定点封杀。此外，这个月内 Tor 中国用户的数量出现了意外的<a href="https://metrics.torproject.org/userstats-relay-country.html?start=2017-10-01&amp;end=2018-01-30&amp;country=cn&amp;events=on" target="_blank"><u>大幅增长</u></a>。
+➜中国计划建造世界最大的可动射电望远镜
+https://www.solidot.org/story?sid=55393	16205
+中国<a href="https://www.space.com/39508-china-worlds-largest-steerable-radio-telescope.html" target="_blank"><u>计划</u></a>在新疆奇台县建造世界最大的 110 米口径全可动射电望远镜（<a href="http://qtt.xao.ac.cn/qttzyxw/201706/t20170628_376831.html" target="_blank"><u>QTT</u></a>）。目前世界上最大的全可动射电望远镜是坐落在美国 Green Bank 的 Robert C. Byrd Green Bank Telescope，其蝶形天线为椭圆形，110 米 x 100 米，其次是德国的 Effelsberg，口径 100 米。中国计划中的 110 米口径望远镜似乎只比 Green Bank 略大一点，但其灵敏度相比后者有显著提升。QTT 能增强对脉冲星的搜索，也能探测引力波，也能加强对地外生命的搜寻。中国已经建成了世界上口径最大的射电望远镜 FAST。
+➜百度外卖系统让用户能反向充值
+https://www.solidot.org/story?sid=55394	17954
+官媒<a href="http://news.ynet.com/2018/01/29/904143t70.html" target="_blank"><u>报道了</u></a>一则与百度外卖系统相关的案件：2017 年 10 月，北京小度科技有限公司报案，称其旗下的 “百度外卖” 平台被他人以非法手段篡改系统，将提现金额改为负数，从而实现反向充值自己账户余额，并使用账户余额在 “百度外卖” 平台上进行消费，总共被篡改 4900 余万元，下单单数覆盖全国多个地区，人数达百余人，直接消费损失 30 余万元...海淀检方呼吁广大互联网企业要注意防范网络安全漏洞。
+➜中国科学家计划建造能撕开虚空的激光器
+https://www.solidot.org/story?sid=55395	28321
+中国科学家计划建造有史以来最强大的激光器。2016 年上海超强超短激光实验装置（SULF）实现了 5.3PW 的激光放大输出（1 PW 等于 1 千万亿瓦），去年底<a href="http://www.siom.cas.cn/xwzx/xjlw/201712/t20171227_4923668.html" target="_blank"><u>实现了</u></a> 10PW 的激光放大输出。SULF 装置计划于 2018 年底全面建成并对用户开放。这并不没有结束。研究人员还在计划建造 100PW 的激光器超强激光站（Station of Extreme Light，SEL），<a href="http://www.sciencemag.org/news/2018/01/physicists-are-planning-build-lasers-so-powerful-they-could-rip-apart-empty-space" target="_blank"><u>它的功率强大到足以“撕开虚空”</u></a> 。上海光机所的中科院院士<a href="http://www.siom.cas.cn/jggk/lyys/" target="_blank"><u>李儒新</u></a>称，SEL 让你能无中生有。在建造 100PW 的激光器竞赛上中国处于领先地位，欧洲的超强激光装置最近放弃了它的 100PW 目标，而俄罗斯设计了 180PW 的激光器 Exawatt Center for Extreme Light Studies (XCELS)，而日本则在推进 30PW 装置，美国则落在了后面。<br>
+➜研究发现宅在家中节能
+https://www.solidot.org/story?sid=55396	28824
+根据发表在《焦耳》杂志上的<a href="http://www.cell.com/joule/pdf/S2542-4351(18)30003-5.pdf" target="_blank"><u>研究</u></a>，为期 10 年的美国时间使用调查<a href="http://news.sciencenet.cn/htmlnews/2018/1/401659.shtm" target="_blank"><u>显示</u></a>，相比 2003 年，2012 年美国人在家里平均多花了 8 天、旅行少了 1 天、花在非居住建筑的时间少了 1 周。年龄在 18~24 岁之间的人的变化最大，他们在家里的时间比一般人多 70%。与 2003 年相比，65 岁以上的人群是 2012 年唯一一个在户外活动时间更长的群体。当这些行为变化被映射到能源使用时，总的来说，它使家用能源增加了 480 万亿 bTU，而非居住和交通空间使用的能源则减少了 1000 万亿 bTU 和 1200 万亿 bTU。
+➜联想的指纹扫描器能通过硬编码密码绕过
+https://www.solidot.org/story?sid=55397	30296
+联想<a href="https://www.bleepingcomputer.com/news/security/lenovos-fingerprint-scanner-can-be-bypassed-via-a-hardcoded-password/" target="_blank"><u>更新了</u></a> ThinkPad、ThinkCentre 和 ThinkStation 等型号上的指纹扫描器管理软件 Fingerprint Manager Pro，原因是该软件包含了能通过硬编码密码绕过的安全漏洞。Fingerprint Manager Pro 允许用户通过在指纹扫描器上扫描指纹登录机器和在线网站，但软件储存的敏感数据如登录凭证和指纹数据使用了弱算法加密，包含了硬编码密码，允许任何能本地访问但没有管理权限的用户访问系统。这意味着硬编码密码能绕过指纹扫描和解密登录凭证及指纹数据。
+➜戴尔考虑与 VMware 反向合并
+https://www.solidot.org/story?sid=55398	31099
+2013 年私有化的戴尔考虑通过反向合并或叫借壳上市的方法重新成为上市公司。戴尔考虑与它拥有八成股权的 VMware <a href="https://www.cnbc.com/2018/01/29/vmware-could-buy-dell-in-what-could-be-techs-biggest-deal-ever--a-reverse-merger-that-would-bring-dell-back-to-public-markets.html" target="_blank"><u>反向合并</u></a>，也就是由 VMware 收购戴尔。VMware 是上市公司，而戴尔已经私有化，被 VMware 收购意味着戴尔能重新在股票市场上销售而无需再通过传统的上市途径。中国安全巨头奇虎 360 过去几个月就一直在尝试通过类似的方法借壳上市。戴尔也在考虑传统的 IPO。VMware 是在 2015 年戴尔斥资 670 亿美元收购 DMC 的交易中被其控股。
+➜美国的全国性 5G 网络计划遭到批评
+https://www.solidot.org/story?sid=55399	32265
+一份外泄的内部国家安全备忘录提议让美国联邦政府铺建全国性 5G 无线网络，一些监管者和民选官员周一对该提议<a href="http://cn.wsj.com/gb/20180130/bgh080001.asp" target="_blank"><u>表示反对</u></a>，认为此举代价过高且不切实际。不过，从该提议不难看出，政府官员越发担心美国可能在打造 5G 网络的全球竞争中落后，尤其是考虑到中国为发展 5G 网络所作出的积极努力。这种局面或使美国在电信设备市场上面临更多竞争，而中国在这一领域的地位正在上升。据上述备忘录显示，鉴于中国对美国网络安全构成的威胁，建立 5G 网络也将成为一个国家安全问题。该备忘录将中国称为“信息领域的主要恶意参与者”。5G 服务将大大提高用户速度和网络容量，可适应自动驾驶汽车和物联网等新兴技术。该服务一定程度上有赖使用一些尚未被用于无线服务的波段。
+➜如何能逃脱猎豹的追捕
+https://www.solidot.org/story?sid=55400	38194
+逃脱高速追逐的秘密也许是<a href="https://www.nytimes.com/2018/01/24/science/cheetahs-lions-zebras-impalas.html" target="_blank"><u>急转弯</u></a>。根据发表在《自然》期刊上的一项<a href="http://nature.com/articles/doi:10.1038/nature25479" target="_blank"><u>研究</u></a>，英国皇家兽医学院的研究人员给五只猎豹、七只黑斑羚、九只狮子和七只斑马系上了定制的颈圈，每秒多次记录每只动物的位置、速度、加速度和转弯表现，并测量了它们的肌肉。相比起猎物，猎豹和狮子都具有类似的优势：速度快 38%，加速好 37%，减速好 72%，肌肉强约 20%。这些优势也在情理之中，因为猎手总是从后面追赶猎物，必须跑得更快才能赶上猎物，但它们也需要擅于减速以防止猎物突然放慢速度和转向。数据显示，黑斑羚和斑马在逃跑的时候并没有以最高速度前进，而是最高速度的一半。研究人员建立了模型模拟捕猎的最后时刻。模型显示，黑斑羚和斑马生存的最高机会是以中等速度逃跑，留下更多的机动选择。研究人员说，如果你跑得精疲力竭，在最后时刻逃脱的机会不多。以较低的速度逃跑，动物可以选择加速、减速或转向或选择更曲折的路线。
+➜细菌帮助宇航员将人排泄物转变成食物
+https://www.solidot.org/story?sid=55401	41430
+人类排泄物有朝一日也能成为执行深空任务的宇航员的<a href="http://news.psu.edu/story/502406/2018/01/25/microbes-may-help-astronauts-transform-human-waste-food"><u>宝贵资源</u></a>。宾州州立大学的研究人员发现，使用一系列微生物反应器快速分解固体和液体排泄物培育出食物是可能的。这项研究解决了深空任务如火星所面临的多项挑战，此类任务通常持续数个月甚至数年，从地球携带足够的食物将会占据空间增加质量和燃料成本，而一路上利用溶液或其它方法培育出食物则是一种能量密集的过程，需要耗费大量水，这同样需要占据宝贵的空间。研究人员发现他们的方法能培育出荚膜甲基球菌（Methylococcus capsulatus），52% 是蛋白质 36% 是脂肪，潜在能成为营养食物的一种来源。
+➜超过两千 WordPress 网站感染了按键记录器
+https://www.solidot.org/story?sid=55402	43235
+安全研究人员<a href="https://arstechnica.com/information-technology/2018/01/more-than-2000-wordpress-websites-are-infected-with-a-keylogger/" target="_blank"><u>警告</u></a>，超过两千 WordPress 网站<a href="https://blog.sucuri.net/2018/01/cloudflare-solutions-keylogger-returns-on-new-domains.html" target="_blank"><u>感染了</u></a>按键记录器。恶意程序会记录密码，以及管理员或访客输入的任何内容。恶意程序除了安装按键记录器还，还安装了挖矿脚本，利用访客的计算机挖掘数字货币。研究人员称，相同的恶意代码在去年 12 月感染了 5500 个 WordPress 网站，之后在代码被托管商 cloudflare[.]solutions 删除后感染被清除。新的恶意代码被三个网站托管：msdns[.]online、cdns[.]ws 和 cdjs[.]online。
+➜Planet Labs 想要成为地球的搜索引擎
+https://www.solidot.org/story?sid=55403	45412
+创业公司 Planet Labs 目前正运营着有史以来最大规模的卫星星座：超过 200 颗地球观测卫星。该公司的第一个目标是每天成像一遍整个地球。这个目标在去年下半年就已经实现。现在它计划实现第二个目标：<a href="https://www.nasaspaceflight.com/2018/01/planet-labs-targets-search-engine-world/" target="_blank"><u>成为地球的搜索引擎</u></a>。Planet Labs 成立于 2010 年，由三位前 NASA 工程师 Will Marshall、Robbie Schingler 和 Chris Boshuizen 创办，2013 年发射了第一批两颗卫星 Dove 1 和 Dove 2，2014 年 Orbital ATK Antares 的火箭在起飞后爆炸导致 Planet Labs 损失了 26 颗 Dove 卫星，之后 SpaceX Falcon 9 火箭的一次发射失败导致它损失了 8 颗  Dove 卫星，不到一年时间它就损失了 34 颗卫星，也称得上是一种记录了。Planet 的星座由约 180 颗重 4-5 公斤的 Doves 纳米卫星，13 颗重 100 公斤的 SkySat 卫星和 5 颗重 150 公斤的  RapidEye 卫星构成。
+➜调查发现人们优先考虑密码的安全性而不是方便
+https://www.solidot.org/story?sid=55404	46539
+IBM Security 调查了约 4000 名美国、亚太和欧洲的成年人，<a href="https://www.helpnetsecurity.com/2018/01/29/authentication-today/" target="_blank"><u>发现</u></a>人们对密码的态度有所改变，对安全性的重视高于了方便性，尤其是当涉及到与金钱相关的应用时。调查还发现，生物特征身份认证日益成为主流；四分之三的千禧年一代接受生物识别，但不到一半使用复杂密码，41% 重复使用密码；亚太地区的人对生物识别的了解最深接受度最高；生物识别被认为比密码更安全；55 岁以上的人使用 12 个密码，而 Z 世代平均只有 5 个；千禧年一代更常用密码管理器，也更可能启用二步认证。
