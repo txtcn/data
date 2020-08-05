@@ -73,6 +73,143 @@ https://www.uisdc.com/long-form-design-3	57670
 <p>[link https://www.uisdc.com/structured-approach-2]</p>
 <p>欢迎关注作者的微信公众号：「星野随记」</p>
 <p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-352921" src="https://image.uisdc.com/wp-content/uploads/2019/12/uisdc-xt-20191223-26.jpg" alt="如何针对特殊群体做设计？来看这份简易指南！" width="180" height="180" /></span></p>
+➜如何设计一个超长长长长长的复杂表单？
+https://www.uisdc.com/long-form-design-3	57670
+<h4><span class="auto_menu">导语</span></h4>
+<p>你平时填写过的最复杂的表单是什么？调查问卷还是文档信息录入？如果一个表单字段内容巨多，结构多变，填写耗时耗力，那你将如何设计你的表单，使之体验更佳？</p>
+<h4><span class="auto_menu">面临的问题</span></h4>
+<p><strong>1. 业务复杂，功能较多；</strong></p>
+<p>不知道大家是否看过法律合同之类的文件，多则好几箩筐，少也有厚厚一叠，类似的文档如果进行线上结构化，势必要同样要花费巨大的人力去填写表单，完成基础信息的录入工作，同时，由于录入的时间不确定，流程不明确等问题，也制约着表单的填写。</p>
+<p><strong>2. 流程较长，操作繁琐；</strong></p>
+<p>多个不同表单之间的互有关联又相互区别，填写的时候需要来回查看以确认信息，查阅和填写相互并行，操作繁琐。</p>
+<p><strong>3. 字段较多，关联项较多；</strong></p>
+<p>几乎每一个字段都有对应的关联项，每个单选字段的不同项决定不同的内容，同时，由于字段数量，层级划分不明确，会使填写的人失去定位，产生迷惑。</p>
+<h4><span class="auto_menu">解决的方案</span></h4>
+<p><strong>1. 内容分组，分步填写；</strong></p>
+<p>根据业务内容分级，合理运用颜色、间距、字体大小、卡片层级等进行信息分级</p>
+<p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-382883" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bd-20200803-1.jpg" width="1080" height="605" /></span></p>
+<p><strong>2. 实时保存，避免数据丢失，提供草稿功能，避免任务中断；</strong></p>
+<p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-382884" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bd-20200803-2.jpg" width="1080" height="156" /></span></p>
+<p><strong>3. 字段分组，示意结构，联动项隐喻；</strong></p>
+<p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-382885" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bd-20200803-3.jpg" width="477" height="800" /></span></p>
+<p><strong>4. 信息自动带入，节省时间；</strong></p>
+<p>一般表单是与某项功能挂钩的，信息会在多个入口录入，因此在填写长表单的时候，如果能从系统中自动获取到数据，就可以自动为其填充，可根据业务场景，判断是否让其修改和更新。</p>
+<p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-382886" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bd-20200803-4.jpg" width="1080" height="346" /></span></p>
+<p><strong>5. 提供二次编辑功能，防止信息输入有误；</strong></p>
+<p>一般的长表单在涉及非审批流的时候，可以让其无限二次编辑，如果是处于审批流，则需要根据业务场景限制其编辑次数或者限定其编辑规则（草稿可编辑，一旦提交则不可编辑）。</p>
+<p><strong>6. 提供多人协作编辑功能；</strong></p>
+<p>如果一个长表单，需要多个不同的业务域的人来填写，那么需要协同编辑，并实时显示编辑的人员信息，同时，为了避免信息丢失和编辑错乱，在同一个表单下，同一时间应该限制只允许一个人进行编辑，等其提交完后，可允许其他人进行编辑。</p>
+<p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-382887" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bd-20200803-5.jpg" width="1004" height="800" /></span></p>
+<p><strong>7. 实时检验；</strong></p>
+<p>前端实时校验字段输入规则，后端统一校验信息交换规则。</p>
+<p>比如对于数字输入框的校验、电话号码的校验、身份证号的校验，应该在前端实时完成，在鼠标离开焦点区域或定位到下一个字段的时候，提示其填写有误，这样做的目的是减少后续修改的次数，在长表单下，统一提示其填写错误会是一场灾难。</p>
+<p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-382888" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bd-20200803-6.jpg" width="1080" height="346" /></span></p>
+<p>在点击保存并填写下一步或点击提交信息的时候，就需要跟后端交换数据，验证录入的信息，如果不匹配，则提示错误，并从上至下定位至相应的错误字段。</p>
+<p><strong>8. 做好填写引导功能；</strong></p>
+<p>要通过多种方式，引导表单的填写，</p>
+<p>在开始填写之前，简要说明该表单的业务目标，大概需要花费的时间等；</p>
+<p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-382889" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bd-20200803-7.jpg" width="1080" height="576" /></span></p>
+<p>开始填写后，关于每个字段的特殊说明，都需要标注出来，重要的要显示在页面上，不重要的就收起在注释符号中；</p>
+<p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-382890" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bd-20200803-8.jpg" width="1080" height="346" /></span></p>
+<p>填写的过程中，切记不要到最后才告诉用户哪里出错了，重要的信息一定要提示到位，否则一旦出错，前功尽弃；</p>
+<p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-382891" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bd-20200803-9.jpg" width="1080" height="346" /></span></p>
+<p>填写完成后，引导其下一步的操作，或者返回至列表。</p>
+<p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-382892" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bd-20200803-10.jpg" width="1080" height="493" /></span></p>
+<p><strong>9. 详情页也需要注意信息分级</strong></p>
+<p>表单填写完毕后的产出物就是详情页，详情页是需要浏览的，因此在设计详情页的时候，应该本着让用户浏览方便的原则去设计，需要注意以下几个点：</p>
+<p>结构清晰。是指不要将内容一股脑的全堆在页面上，要做好信息的分类，同时，注意规划页面的层级。</p>
+<p>设置快捷导航。如果一个表单是长且复杂的，那么其对应的详情页也会变得复杂和冗长，因此在页面的右侧或者顶部设置合理的快捷导航是很有必要的。</p>
+<p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-382893" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bd-20200803-11.jpg" width="1080" height="860" /></span></p>
+<h4><span class="auto_menu">最后：小细节，大体验</span></h4>
+<p><strong>1. 提供快速返回顶部的按钮；</strong></p>
+<p>快速返回顶部按钮的使用要注意场景，如果你的页面比较长，且没有分组浏览的导航，那就需要设置快速返回顶部的按钮，但是在存在分组浏览导航和顶部悬浮标签的情况下，不建议使用快速返回顶部的按钮，因为在填写表单的时候，使用快速置顶的场景比较少。</p>
+<p><strong>2. 提供分组模块收起展开功能；</strong></p>
+<p>当一个模块混杂着各种信息的时候，单纯的模块分组已经无法处理它的复杂度了，因此需要收起高频且信息量大的模块，可以合理的减少页面的复杂度。</p>
+<p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-382894" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bd-20200803-12.jpg" width="1080" height="841" /></span></p>
+<p><strong>3. 步骤提供信息填写完成度提示；</strong></p>
+<p>步骤条可以单纯的作为步骤指示器使用，也可以作为一个表单完成度的提示区域。</p>
+<p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-382895" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bd-20200803-13.jpg" width="1080" height="261" /></span></p>
+<p><strong>4. 重要说明性文字尽量显示而非收起；</strong></p>
+<p>在填写大量字段的表单时，阅读表单内容和填写表单同样耗时耗力，如果我们将所有的提示信息隐藏在提示符中，一般情况下，用户不会去查看，但是如果去挨个查看提示信息，则会多花费一个步骤去点击或者悬停来查看提示信息，浪费了大量的时间，因此如果涉及到重要的提示信息，请直接展示在字段的后面，不要隐藏起来。</p>
+<p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-382896" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bd-20200803-14.jpg" width="1080" height="346" /></span></p>
+<p><strong>5. 产品内组件应该规范统一；</strong></p>
+<p>在后台产品上，关于组件的规范统一，想必是人尽皆知的设计原则，无论是各类平台型设计组件，还是各个公司自造的设计组件，保持统一和规范对产品设计有着重要的作用，在这里不赘述组件应该怎样规范统一，因为无论是Ant Design还是其他设计语言，都有详尽的关于组件的定义方法，我在这里讲述一个产品设计更高层面或者更深层面的原因：</p>
+<p>组件的规范统一并不仅仅是为了省时省力，而是为了使用户在使用的过程中达到认知上的统一和行为上的统一，在进行高频次的操作后，界面的流程或者组件样式已大致在用户脑海中形成固定印象，因此在操作相同类的流程时，用户会有更多的掌控感，试想一下，如果你在操作人事相关的流程后，去填写绩效部分的内容时，发现一个迥异的界面或者弹窗，你肯定觉得这是不是哪里出错了，甚至会怀疑这是否是同一个系统，目前大多数公司的管理系统经过多次缝缝补补，内部的跳转逻辑已经异常感人，界面风格也大放异彩，但是使用起来却无从下手，深感迷茫。</p>
+<p>因此大到界面样式，小到间距大小，产品设计的规范和统一应该是最基础又不可缺少的原则。</p>
+<p><strong>6. 庞大的信息录入，表单内部要分步填写，外部可拆分成不同的表单分别填写；</strong></p>
+<p>对付复杂的表单，你需要解决的主要问题并不是填写方式或者页面设计，而是信息分级和结构拆分，解决了这个问题，基本上就解决了业务问题，其余部分就跟我们常用的表单一致。</p>
+<p>将复杂度降低并不意味着减少页面的信息，而是通过设计师合理的信息划分，降低视觉上的复杂度和流程上的复杂度，这样才会达到当前场景下的「最佳解决方案」。</p>
+<p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-382897" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bd-20200803-15.jpg" width="1080" height="617" /></span></p>
+<p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-382898" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bd-20200803-16.jpg" width="1080" height="354" /></span></p>
+<h4><span class="auto_menu">结语</span></h4>
+<p>随着互联网信息化的深入发展，复杂是避免不了的，我知道大家都推崇简洁的设计，但那只是对视觉和样式的定义，而非对信息的定义，我们所处的世界是复杂的，行业更是复杂的，信息的复杂度与日俱增，想要处理复杂的信息，就需要从复杂中寻求规律，这规律与业务息息相关，B端360行，行行深如海，小伙伴们，我们一起慢慢修炼吧~</p>
+<p>更多表单设计方法：</p>
+<p>[link https://www.uisdc.com/structured-approach]</p>
+<p>[link https://www.uisdc.com/structured-approach-2]</p>
+<p>欢迎关注作者的微信公众号：「星野随记」</p>
+<p><span class="img-zoom"><img alt="如何设计一个超长长长长长的复杂表单？" class="alignnone size-full wp-image-352921" src="https://image.uisdc.com/wp-content/uploads/2019/12/uisdc-xt-20191223-26.jpg" alt="如何针对特殊群体做设计？来看这份简易指南！" width="180" height="180" /></span></p>
+➜Sketch 68 Beta版本探秘，看看都有什么新功能
+https://www.uisdc.com/sketch-68-beta	59417
+<p>又到毕业季，设计行业的求职大战一触即发。但是我们会发现很多设计师只关注作品集的炫酷，却忽略了源文件的重要性。</p>
+<p>同时越来越多的设计师反馈，面试官会看你的设计源文件，比如Sketch。严谨的命名、合理的分组、整齐的Symbol组件……这些细节能从侧面反映出你对工作的细致程度，妥妥的加分项。就好比高考作文，不管内容怎么样，字一定要写的像衡水体一样漂亮。否则这个小细节会让你和心仪的offer失之交臂。</p>
+<p>不过，那些平时工作对源文件马马虎虎，图层混乱不分组，命名只用默认的设计师也不用担心，因为即将发布的Sketch68版本会教你如何让源文件更整洁漂亮。</p>
+<p><span class="img-zoom"><img alt="Sketch 68 Beta版本探秘，看看都有什么新功能" class="alignnone size-full wp-image-383206" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-1.jpg" width="800" height="350" /></span></p>
+<h4><span class="auto_menu">Sketch最新Beta版本下载</span></h4>
+<p>如果想体验Sketch最新Beta版本，请进入Sketch测试版主页下载 <a href="https://www.sketch.com/beta/">https://www.sketch.com/beta/</a>。但是要记住，一定不要用在自己的正式文件中，防止修改后，低版本打不开。</p>
+<p>Sketch 68要求Mac系统版本是macOS 10.14.4及以上，下面是Sketch各大版本对应的Mac系统版本，如果遇到新版的Sketch打不开就需要检查下自己的系统版本。</p>
+<p><span class="img-zoom"><img alt="Sketch 68 Beta版本探秘，看看都有什么新功能" class="alignnone size-full wp-image-383207" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-2.jpg" width="750" height="330" /></span></p>
+<h4><span class="auto_menu">智能助理介绍</span></h4>
+<p>什么是智能助理？简单说就是它可以对Sketch文件整体进行智能分析，并列出建议修改点。</p>
+<p><a href="https://www.sketch.com/docs/assistants/">https://www.sketch.com/docs/assistants/</a></p>
+<p>更新68版本后，顶部工具栏会多出一个智能助理的图标，点开后是一个弹窗。</p>
+<p><span class="img-zoom"><img alt="Sketch 68 Beta版本探秘，看看都有什么新功能" class="alignnone size-full wp-image-383208" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-3.jpg" width="1080" height="658" /></span></p>
+<p><strong>助理安装</strong></p>
+<p>默认情况下什么都没有，我们需要安装具体的助理。有点像一个应用小商店，后期我们可以通过官方平台来获取对应的助理功能。如果你有开发能力，也可以自己开发助理。但是目前还处于测试版，官方提供了默认的三个助理，我们可以打开链接，通过浏览器唤起Sketch来安装。</p>
+<p><span class="img-zoom"><img alt="Sketch 68 Beta版本探秘，看看都有什么新功能" class="alignnone size-full wp-image-383209" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-4.jpg" width="1080" height="658" /></span></p>
+<p>把这三个助理都安装后，智能助理面板上就可以显示了。第一个图标代表所有的问题，看来这个Sketch文件问题还挺多的。</p>
+<p><span class="img-zoom"><img alt="Sketch 68 Beta版本探秘，看看都有什么新功能" class="alignnone size-full wp-image-383210" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-5.jpg" width="900" height="686" /></span></p>
+<p>其中每个折叠项展开后会显示需要修改的图层，点击图层会自动跳转到相应位置，非常方便。点击右键还可以对相应问题进行忽略操作。</p>
+<p><span class="img-zoom"><img alt="Sketch 68 Beta版本探秘，看看都有什么新功能" class="alignnone size-full wp-image-383211" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-6.jpg" width="900" height="686" /></span></p>
+<p>右上角可以对助理进行启用、删除、添加等设置。</p>
+<p><span class="img-zoom"><img alt="Sketch 68 Beta版本探秘，看看都有什么新功能" class="alignnone size-full wp-image-383212" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-7.jpg" width="900" height="770" /></span></p>
+<h4><span class="auto_menu">三个助理功能介绍</span></h4>
+<p>官方默认提供了三个助理，后续会推出更多功能。下面这三个助理分别从命名、图层、样式三方面对你的设计源文件进行分析，并给出合理的修改意见。</p>
+<p>关于助理更多的功能可以看这份官方在Github上的开发文档。</p>
+<p><a href="https://github.com/sketch-hq/sketch-assistants">https://github.com/sketch-hq/sketch-assistants</a></p>
+<p><strong>1. Sketch Naming Conventions 命名规则</strong></p>
+<p>对图层、组、页面的名字进行分析，并给出合理的命名建议。比如对于这个反面例子，智能助理就给出了如下几条建议：</p>
+<p><span class="img-zoom"><img alt="Sketch 68 Beta版本探秘，看看都有什么新功能" class="alignnone size-full wp-image-383213" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-8.jpg" width="900" height="686" /></span></p>
+<ul>
+<li>画板需要以数字作为开头。命名以数字开头有利于排序，结构清晰易读，而且方便团队其他同学查找，是一个非常值得推荐的习惯。</li>
+<li>组名不能用默认值。很多时候我们编组后不会改名，因而会出现诸如Group 234、Group 235、Group 236这样的命名，非常不利于后期修改和维护。</li>
+<li>页面命名应该以一个Emoji来开头。这点国外很多设计师的源文件这么做，因为一个项目中页面分类不会太多，为了增强纯文本的可读性和趣味性，我们可以在文本输入中按control+command+space快速调用Mac系统的Emoji图标面板。</li>
+<li>Symbol组件应该用斜杠分组命名。这是组件库的基本命名法，用「/」来划分组件为不同的分类，是一个非常重要的命名点。</li>
+</ul>
+<p>严谨且高效的命名虽然是件非常小的事情，但是却关系着一个源文件的易用性，以及与团队协作的重要性。如果你本身就有非常好的命名习惯，面试时展示给面试官也是一个很好的加分项。</p>
+<p><strong>2. Reuse Suggestions 样式建议</strong></p>
+<p>这个助理告诉我们，文件中有多个图层和文字没有引用样式，并且有一些相同的组没有做成Symbol组件。</p>
+<p><span class="img-zoom"><img alt="Sketch 68 Beta版本探秘，看看都有什么新功能" class="alignnone size-full wp-image-383214" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-9.jpg" width="900" height="686" /></span></p>
+<p>对于Sketch来说，Symbol组件、文字和图层样式是做组件库中最最基本的三种功能。我们应该尽可能地把文字、图层引用样式，这样就可以从整体上控制整个文档，减少后期的修改成本。</p>
+<p><strong>3. Tidy 图层清理</strong></p>
+<p>图层实际上是设计中最容易出现问题的地方，如何保持图层的干净整洁，非常考验一位设计师的细节梳理能力。</p>
+<p>助理给出了文件中诸多的图层问题，经常见的有以下几点：</p>
+<p><span class="img-zoom"><img alt="Sketch 68 Beta版本探秘，看看都有什么新功能" class="alignnone size-full wp-image-383215" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-10.jpg" width="900" height="686" /></span></p>
+<ul>
+<li>一个画板中的图层应该尽可能地包含在分组中，过多的单图层容易增加图层结构复杂性，降低工作效率。</li>
+<li>图层不应该隐藏，过多的隐藏无用图层会增加整个文件的体积，对正常图层造成干扰。</li>
+<li>描边、填充、阴影等图层样式不应该禁止使用，如果有必要的话，禁止后应该删除该样式属性。</li>
+<li>图层的大小和位置不应该出现次像素，过多的小数点会给标注带来影响，应该勾选设置中的像素对齐功能。</li>
+<li>如果组内没有内容，应该删除该组。</li>
+<li>……</li>
+</ul>
+<h4><span class="auto_menu">总结</span></h4>
+<p>虽然官方目前只提供了三个助理功能，但是却给了我们一面照妖镜，把平时做图时忽略的细节一一展现出来。此外，一份整洁的、清晰的、可读性强的Sketch文件也会让你在求职面试时额外加分，近期找工作的同学需要关注下。</p>
+<p>因此作为一名成熟的设计师，最重要的不是靠这个助理功能来优化设计稿，而是要把自己当成设计助理，平时就应该养成良好的命名、分组、整理习惯。</p>
+<p>整理方法见这篇：</p>
+<p>[link https://www.uisdc.com/file-naming-specification-1]</p>
+<p>[link https://www.uisdc.com/file-naming-specification-2]</p>
+<p>欢迎关注作者的微信公众号：「UI黑客」</p>
+<p><span class="img-zoom"><img alt="Sketch 68 Beta版本探秘，看看都有什么新功能" class="alignnone size-full wp-image-298945" src="https://image.uisdc.com/wp-content/uploads/2018/12/uihackerqr.jpg" alt="Sketch 63 Beta版本探秘，看看都有什么新功能" /></span></p>
 ➜Sketch 68 Beta版本探秘，看看都有什么新功能
 https://www.uisdc.com/sketch-68-beta	59417
 <p>又到毕业季，设计行业的求职大战一触即发。但是我们会发现很多设计师只关注作品集的炫酷，却忽略了源文件的重要性。</p>
@@ -331,6 +468,461 @@ https://www.uisdc.com/interview-collection	63074
 </ul>
 <p>欢迎关注作者微信公众号：「野设记」</p>
 <p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383102" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bc-20200804-2.jpg" width="180" height="178" /></span></p>
+➜当200人竞争同一个UI岗位，试试这份面试突围必杀技！
+https://www.uisdc.com/interview-collection	63074
+<p>你或许听过118名UI设计师竞争一个岗位，它出自拉勾《2019互联网行业招聘白皮书》。但你可能不知道2020年实际情况是：每天有60到200名UI设计师和你竞争1个岗位（视职级而不同），今年称之为互联网极寒之境毫不为过。竞争烈况不多赘述，本次我将通过小鹅通面试复盘分享出来，包含行业知识分析、面试题及测试题思路等，全文8717字干货，阅读时长约35分钟，建议就水服用。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383100" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-26.jpg" width="1422" height="800" /></span></p>
+<h4><span class="auto_menu">必杀技介绍</span></h4>
+<p><strong>1. 何为突围必杀技</strong></p>
+<p>一开始进入行业，我也是一个一面试就宕机的萌新，结合面试经验及多年自我成长经历，总结出了一套面试方法。算不上什么绝世神功，但很大程度上助力我淡定从容地应对各类面试难题。突围必杀技就是其中一部分，针对真实面试场景的方法论，将各类面试问题逐个击破。</p>
+<p>其实面试就是一个阶段性测试，验证你的专业技能、知识沉淀、经验方法是否有了新的突破长进，你需要有一套自己的复习本和错题本。复习本可以以我这套宝典作为基础，结合你的自身情况做优化；错题本即每次面试做一次复盘，总结你最容易失误的问题点都有哪些，你的知识盲区又有哪些，如何改进。</p>
+<p><strong>2. 突围必杀技都有哪些</strong></p>
+<p>要想在面试乱军中杀出重围，关键有两点：⑴ 面试题谈资与话术；⑵ 测试题心法。我将从小鹅通出发，浅析在线教育行业，从面试题看职位匹配度，分享面试在线教育必须要掌握的知识；从测试题看专业度，分享做测试题的核心关键点。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383075" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-1.jpg" width="1422" height="800" /></span></p>
+<h4><span class="auto_menu">面试题谈资</span></h4>
+<p><strong>1. 面试官都问了什么</strong></p>
+<p>这里列举我在面试小鹅通时遇到的问题，并不是说你面试绝对会遇到的问题，仅作为解题思路参考。以及大家在看到他人面试题分享时，也请止步于解题思路，切勿死记硬背、照本宣科。当你投入大量时间精力背押题答案，最后考试时却没有出一模一样的题，于是你就大脑宕机了。面试题千千万，解题思路才是唯一复习要点。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383076" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-2.jpg" width="1422" height="800" /></span></p>
+<p>小鹅通分3轮面试对候选人进行评估筛选，一面设计总监：主要考察你的专业度与团队匹配度；二面HR：主要考察你的稳定性与公司匹配度；三面COO：主要考察你的逻辑思维能力。无论什么问题，主要考察的也是这几点：公司匹配、团队匹配、职位匹配、个人能力与思维。</p>
+<p>所以当你接到面试邀约时，请问清楚面试流程及面试官职位，有针对性的做调整侧重。面对设计总监，侧重展示你通过什么帮助团队达成了什么目标；面对HR，侧重展示你解决了什么业务问题；面对高层，侧重展示你为公司创造了什么商业价值。</p>
+<p>面试题答案稍后会写明解题思路，不过我们先来了解一下在线教育行业，你要对所要面试的公司及其所属行业充分了解，你才有足够的谈资与面试官侃侃而谈，从而体现你与该职位的匹配程度。</p>
+<p><strong>2. 行业现状与逻辑</strong></p>
+<p>教育行业按用户群体不同，可分为ToB（Business企业）、ToC（Customer消费者）和ToG （Government政府）三大类。其发展现状与逻辑的不同点如下：</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383077" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-3.jpg" width="1422" height="800" /></span></p>
+<p>To B 不同企业不同发展阶段，需求又存在很多差异点，所以B端产品需要有强劲的纵深能力，在普适的基础之上加以有针对性的个性化设计，并伴随企业的成长做出相应的调整、迭代。目前多以管理系统等单品切入，提供整套解决方案的供应商因较高的集成能力、完备的售后运营支持，逐渐展露优势。</p>
+<p>To C 互联网化程度最高、用户主动性更强，已基本覆盖全教学活动场景。主要用户群体为成人，及K12学生群体。成人自控力强、目标明确、空闲时间有限，在提升学历、职业技能培训、职业资格考试等场景中教育需求最为强烈；K12教育从一开始的谨慎态度，历经疫情的推动，步入快速增长阶段，其中作业类（学习搜题、批写作业）、单词类（查背单词、翻译等）产品流量势头最为强劲。</p>
+<p>*注：K12 即 Kindergarten to 12，指美国教育体系中的幼儿园到12年级</p>
+<p>To G 市场办公管理互联网化程度高，教学活动的互联网聚焦于评测环节，核心教学环节待发展，且自上而下的政策驱动赛道，处于萌芽期的To G市场存在着巨大发展空间。To G市场属于财政经费型市场，优秀教师聚集、行为规范度高，对办公、教学活动线上化及集中化管理有更高需求。</p>
+<p><strong>3. 小鹅通与其他竞品差异</strong></p>
+<p>小鹅通与其他竞品区别在于：①小鹅通是SAAS型服务平台；②小鹅通专注于新教育技术服务。</p>
+<p>何为SAAS型服务呢？SAAS提供商为企业搭建信息化所需要的所有基础设施（网络、存储、服务器、虚拟服务）、平台（操作系统、中间件、Runtime）、软件（应用、数据），企业无需购买硬件、建设机房、招聘IT人员即可通过互联网使用信息系统。说大白话就是为企业提供搭建好的应用程序，企业可以直接使用。</p>
+<p>*注：B端行业除了SAAS型服务，还有PAAS型服务、LAAS型服务，想进一步了解的读者朋友可以自行搜索查阅。</p>
+<p>小鹅通作为教育SaaS头部，不同于其他在线教育产品，企业可以通过小鹅通在微信一键搭建属于自己的知识店铺，低成本、快速部署、灵活适配不同企业基本需求，也是最佳的试错方案或MVP（最小可行性产品）验证。基于微信生态，有着巨大的、稳定的流量入口，且利用微信支付增加资金的安全性与流动性。</p>
+<p>小鹅通每周以1-2次的迭代速度铸造自身的竞争壁垒，其服务结构随着业务发展发生了相应的调整，不断地进行服务升级。其业务形态可划分为3种：SAAS服务、流量服务、生态服务。不同于其他SAAS产品以管理系统等单品切入，小鹅通以整套解决方案融合教育、新教育、知识付费，构建一个完整高效的内容联结生态闭环。小鹅通联合创始人兼COO樊晓星表示：一个单点价值的切入，用户迁移成本很低，随时可以另寻「新欢」；多点价值，即提供技术服务、流量连接服务、人才输送服务等，不断地去覆盖整条生态链的上下游，是小鹅通发展到今天的关键之一。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383078" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-4.jpg" width="1422" height="800" /></span></p>
+<p>2019年小鹅通从专注于知识付费的技术服务商转型为新教育技术服务商，工具也随业务形态发生变迁。从一开始简单的课堂、营销，到后来的社群、分销、付费问答、作业本、活动管理、裂变推广等丰富多样的玩法。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383079" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-5.jpg" width="1422" height="800" /></span></p>
+<p>不同于其他教育类B端产品，小鹅通专注于新教育一站式解决方案，市场精细化、各自发展。例如爱乐奇专注于少儿英语教材供给；拓课云专注于在线直播授课系统；腾跃校长专注于校长管理培训；爱学习、未来魔法校专注于K12教育综合供给；CCTALK专注于实时互动教育；腾讯课堂专注于职业教育等等。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383080" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-6.jpg" width="1422" height="800" /></span></p>
+<p>何为新教育？即线上线下一体化，随着新技术、新场景变化，教育机构出现了线上线下场景融合的新需求：线上商家有往线下拓展用户的需求，线下机构有往线上转型的需求。小鹅通将二者结合，将课程体系化、缩短机构与学员距离、提升用户粘性。教育行业出现了新风口，小鹅通凭借灵敏的嗅觉，快速推出了新教育全场景解决方案，覆盖了招生引流、教务管理、学院管理、线上课堂、线下课堂 、助学互动、经营分析、口碑传播等核心教育场景，形成线上线下一体化的完整闭环。</p>
+<p><strong>4. 面试题解题思路</strong></p>
+<p>我想由以上内容，你心中大概对面试题已有了自己的答案了。正如我开头所说，你要对所要面试的公司及其所属行业充分了解，你才有足够的谈资与面试官侃侃而谈，从而体现你与该职位的匹配程度。介于所面公司不同，每个人情况不同，以下思路仅供参考。</p>
+<p>当你面对设计总监，请以设计思考、设计解决方案为核心，尽可能的展示你的专业度。小鹅通既是B端产品，辅助企业变现，提升市场竞争力，为企业解决增收、提效、降本等问题。那么在设计上，我们如何做到降本增效呢？组件库是我的经验当中，最贴合「降本增效」的工作方式。它最核心的价值是在设计人力资源有限的情况下去满足运营方的批量化需求，解决人力成本、时间成本等问题。互联网下半场，人口红利消退、营收增长逐渐放缓，加之今年的疫情打击，很多企业不得不通过各种方式缩减成本。作为设计人员，应该寻求一些方法、思路保证设计质量的基础上提升效率，组件库便是其中一种有效的设计解决方案。当然，你也可以展示从什么项目复盘中，提炼出了什么方法规律，它提高了你的工作效率、帮助团队成长。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383083" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-9.jpg" width="1422" height="800" /></span></p>
+<p>当你面对HR,请尽可能展示你的稳定性、发展潜力，从你的只字片语透露出你对公司、业务的了解以及你与公司的匹配程度。当被问到加班或者996，如果你真的很喜欢那家公司的话，可以表示这是互联网常态，你可以接受，并且这样一个高强度高压力对于设计师而言也是一个高速成长的机会。如果你不能接受，直接表明立场就好了，无需去要求加班费，因为有加班补贴的公司自然会跟你明说。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383082" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-8.jpg" width="1422" height="800" /></span></p>
+<p>当你面对COO，请尽可能冷静保持平常心态，不必过度紧张，换个角度来说TA也只是你未来的同事。三面主要考察你的沟通能力、逻辑思维能力，在这方面较弱的同学，推荐你学习一下芭芭拉·明托的《金字塔原理》，它可以帮助你高效地思考、表达和解决问题。大致来说，你可以提出一个中心思想，拆分为几个核心关键点，并用事例或其他支撑这些关键点。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383081" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-7.jpg" width="1422" height="800" /></span></p>
+<p>比如当你被问到开发在沟通中遇到困难，你是如何解决的。你可以表示开发与设计的工作目标不同、思路不同，所以会产生一些不同意见的情况。开发主要站在成本节流角度考虑，设计师主要站在用户利益角度去考虑，双方没有对错，但是不同的产品阶段，侧重点或优先级会有所不同。所以大家还是要多多沟通，明白理解对方的立场。</p>
+<h4><span class="auto_menu">测试题心法</span></h4>
+<p><strong>1. 何为测试题</strong></p>
+<p>测试题是招聘方对应聘方专业能力的一种考核方式，一般会在以下情况下出现：</p>
+<ul>
+<li>面试官觉得你面试表现不错，但展示的设计实力不足以立即打动招聘方（所以有的同学经常会遇到面试官问「你还有没有其他作品」）；</li>
+<li>有跟你同等能力的候选人，面试官想要进一步考察、对比你们的能力；</li>
+<li>测试题是一些大厂招聘流程中必备的一环；</li>
+<li>你的设计风格与产品定位不同，招聘方无法确认你是否能完美匹配这份职位</li>
+<li>单纯就是为了骗稿骗方案。</li>
+</ul>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383084" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-10.jpg" width="1422" height="800" /></span></p>
+<p>正经测试题会写明具体的制作周期、提交方式、需求背景或设计目标。制作周期一般3-5天，具体时间可以视自身情况与面试官及时商议，还在职或有其他面试的同学，建议为自己争取至少5天的时间；提交方式建议以PDF的形式发送邮件给对方，再次强调千万千万不要给设计源文件；有不清楚的地方，甚至需求不明、目标不明，请直接和面试官沟通，不要闷头无脑做，容易偏离方向，导致费时费力最后还没能拿到offer。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383085" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-11.jpg" width="1422" height="800" /></span></p>
+<p><strong>2. 该不该做测试题</strong></p>
+<p>测试题到底要不要做取决于你对这家公司的倾向程度以及招聘方态度。如果你很喜欢这家公司，或者你接下来一段时间没有其他重要面试、没有其他offer，建议你做测试题为自己争取一把。就算最后测试题没过，你也能积攒一次实战经验不是吗？如果你还有其他重要面试，用心准备面试也是需要耗费大量时间和精力的，以及你有了其他offer的话，建议自己视利弊进行权衡。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383086" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-12.jpg" width="1422" height="800" /></span></p>
+<p>如果出现以下情况，千万千万不要做测试题！！！</p>
+<p>招聘方要求你现场做测试题，那么可以认为对方根本不尊重你，这家公司平时对设计师就不怎么尊重、理解，请直接当场拒绝吧。哪怕是腾讯阿里头条这样的大厂，测试题周期都为3-5天。</p>
+<p>测试题没有具体需求，让你自己看着办。这让人不得不怀疑，这家公司是不是在骗稿。正经的测试题会写明背景、需求、范围，甚至给你一份意向参考图。也有可能出现中小型公司测试题需求不明的情况，那么很有可能这家公司体系不够成熟，在你日后的工作中也会出现这种没头没尾的需求。面对这种情况，你又需要这份工作的话，建议多和面试官沟通，拿到尽可能多的信息，如果在沟通过程中对方足够真诚友好、思路清晰，那么也不妨一试。</p>
+<p>测试题是一套体量大、完整度高的需求（比如要求你出一整套产品页面、一整套多场景运营图），或者要求你提供设计源文件，绝对是骗稿，请直接拒绝。</p>
+<p>还没有面试就要求你做测试题，视测试题结果再决定是否面试。遇到这种情况，建议直接先让对方给你打一个月工资、包一个月下午茶，视对方提供的薪资福利诚恳度，你再决定是否去这家公司面试。</p>
+<p><strong>3. 我的小鹅通「测试题」</strong></p>
+<p>其实小鹅通应该是没有测试题的，在和HR小姐姐了解整个面试流程时，我发现并没有测试题环节。由于我对在线教育较为了解，小鹅通作为教育saas头部，我很重视这次面试，为自己争取了一个3天的时间准备，主动做一份产品体验后的修改建议，我称它为「主动型测试题」。通常我们接到的都是招聘方的测试要求，属于被动型。我也建议同学们如果遇到满意的公司，可以主动出击，做一份产品体验报告或修改建议，体现你对这份职位的用心与诚意。无论是被动型测试题还是主动型测试题，都是展示你解决实际问题的能力，解题思路大同小异。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383087" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-13.jpg" width="1422" height="800" /></span></p>
+<p>在做主动型测试题的时候需要注意，你要事先了解这家公司有多少设计师，你即将展示这份测试题的面试官是谁？如果这家公司只有一个设计师，并且由TA来面试你，那么你的主动型测试题会被认为是挑TA毛病、故意找茬；如果这家公司有设计团队，由设计总监、HR或高层来面试你，那么你的测试题就是一个真实、专业的用户反馈，在帮助他们产品发现问题、解决问题。</p>
+<p><strong>4. 测试题通用心法</strong></p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383088" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-14.jpg" width="1422" height="800" /></span></p>
+<p>像素眼：优秀的设计师讲究极致完美，哪怕一像素的细节点都值得优化打磨。市场竞争愈发激烈的今天，产品需要快速地面对市场变化做出响应，很多情况下是没有那么多时间给设计师慢慢打磨的，有一些项目仓促上线，或多或少你是可以找到那个被忽略的细节点。没有像素眼没关系，你可以截图上线产品实际测量。这虽不是制胜关键点，但却是你细心品质的一个展现。</p>
+<p>视觉表现：设计师需要有较强的视觉表现能力，这个无须多言，多去看大量的优秀作品提升眼界，多去大量临摹提升专业技能。至于去哪里找灵感和思路，除了常见的追波、Behance、Pinterest、虎嗅、少数派、爱范儿、36kr，我整理了一份UI设计师进阶必备的信息源，在进阶秘籍Vol.06，感兴趣的同学可以去看看。</p>
+<p>多方案解决问题：万事没有唯一答案，你该有多方案解决问题的能力，从不同角度、不同维度为产品创造更多的可能性。你要让面试官觉得你是个拥有无限潜力的人，能给用户带来惊喜、能为产品赋能。</p>
+<p>洞察力：一个优秀的设计师，能洞察需求背后的深层原因，洞察用户行为背后的逻辑、规律、特性、甚至关键影响因素，洞察本质需求、潜在需求及细分场景下的差异化痛点需求。洞察力是你设计方案的灵感来源、指导策略、支撑依据，帮助你基于实际情况有效地解决问题。这是你的核心价值，也是企业最需要的人才能力。</p>
+<p>全局思维：你需要对行业有足够的了解，对产品全局有清晰的认知，对项目全链路有高度的理解、耦合。单点思维会局限你的设计，无法长远发展，更无法对产品形成影响力、产生价值。当你以全局思维审视局部，你能更清楚的、全面的、正确的为你的设计提供依据，从而解决更大的问题。一旦你能解决的问题越大，那么你对于公司就越有价值。</p>
+<p><strong>5. 像素眼-细心体现</strong></p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383089" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-15.jpg" width="1422" height="800" /></span></p>
+<p>小鹅通每周迭代1-2次，以快速调整优化满足商家的功能需求、效率需求，从而铸造自身的竞争壁垒，各业务线各项目设计需求量较大，总会有一些顾及不到的地方。我将视线瞄准了约面前一天刚刚上线的商家端直播功能，发现直播前后调试功能位置不同、唤起方式与心智模型不一致、模块弹窗交互形式不一致，有一定的学习成本。很有可能就是功能急于上线，没有足够的时间测试打磨。于是我做了相应的修改优化，并做了动态demo展示。很多同学会好奇，这是交互的工作你一个UI怎么改这个呢？因为小鹅通是去中心化平台，非真实用户及付费商家，所能接触到的页面有限；这是一个细心程度的表现，仅占我优化报告的一小部分，管理层很乐意看到职员超出本职工作的能力价值。</p>
+<p>那什么又是去中心化呢？即商家与用户之间不再隔着一层平台的运营方，可以对自家用户进行圈层化管理，可以直接给用户推送消息、直接获取用户数据及反馈，商家自主掌握工具玩法及变现形式。总而言之，就是商家能更高效统一的对用户进行集中式运营管理。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383090" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-16.jpg" width="1422" height="800" /></span></p>
+<p>平台去中心化拦截了其他商家对自家用户的分流，很好地保护了商家利益，但同时也拦截了想要学习研究产品设计的我当你没有商家提供的课程购买链接，你作为C端用户甚至无法在产品内搜到任何课程；当你没有购买商家服务套餐，你就没有权限体验更多的商家端功能。好在小鹅通给每个商家账号提供7天免费试用，让我还有机会可寻你说我就看个设计容易吗</p>
+<p><strong>6. 视觉表现-专业能力体现</strong></p>
+<p>小鹅通为商家提供的营销推广工具，是其产品核心功能之一，为无数商家解决流量推广、获客难题。我利用7天免费试用，体验了一下优惠券功能。发现其视觉表现有较大优化空间，品质感不足。于是我根据小鹅通品牌系统定位视觉风格，进行了优化改版，以卡券包的形式强化「券」的理念，让用户直观感受到优惠券的「折扣优惠」感；再通过高光、阴影、纹理提升品质感。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383091" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-17.jpg" width="1422" height="800" /></span></p>
+<p>谈资话术里面我们说了B端产品服务对象是企业，不同行业不同体量不同发展阶段，需求存在很多差异点，所以B端产品需要在普适的基础之上加以有针对性的个性化设计。小鹅通提供3种版本的服务套餐，去匹配不同需求的商家，视自身情况进行购买。</p>
+<p>在设计上，我根据服务市场的不同版本套餐做出符合其视觉特征的差异化设计，强化身份的同时，凸显付费用户的尊贵感知。比如我之前只是5个人的小团队，想要初步尝试知识付费或在线教学，我购买了标准版；随着业务的发展、人员扩增，团队越来越专业、完整，标准版功能以已经无法满足我的业务需求了，我需要套餐升级至专业版；在此过程中，我发现不仅解锁了更多的课程模式、营销工具、授课功能等等，其视觉上也发生了升级迭代，去凸显付费用户的尊贵感知。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383092" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-18.jpg" width="1422" height="800" /></span></p>
+<p>在价值层面上，通过券面升级提升身份感知；通过视觉伴随服务升级打造情感化温度、制造惊喜彩蛋；通过视觉一致建立品牌视觉记忆点。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383093" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-19.jpg" width="1422" height="800" /></span></p>
+<p>这里还有个小技巧：将元素进行拆分，向面试官展示你的细节打磨度及工作量，从而增加对你的好感度。</p>
+<p><strong>7. 洞察力-核心价值力体现</strong></p>
+<p>作为设计师应该都知道图片对于产品视觉品质感的重要程度，这里以营销中心为例：课程封面出现主体人物大小不统一、图片质量层次不齐、字体使用较为混乱等问题。不仅直接降低产品的品质感，甚至影响到产品的专业度、可信度。在商学院也有同样的问题，甚至出现封面图被压缩变形。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383094" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-20.jpg" width="1422" height="800" /></span></p>
+<p>我对课程封面质量的主要影响因素进行了探究分析，希望能挖掘背后的痛点、设计机会点。究其原因有4点：</p>
+<p>各行业不同商家风格不同：小鹅通只作为技术服务商，提供各种系统、功能、工具等，并不直接负责课程产品的包装。教学视频及封面由内容制造商制作及上传，不同行业属性不同，不同商家又存在风格不同等问题，以至于「百花齐放」。</p>
+<p>各商家所掌握的资源不同：有专业知识付费领域KOL、MCN，他们有成熟、完整的制作团队；也有低门槛入局的普通教培机构、个人网师，他们没有专业的制作团队，一人身兼多职，甚至出于成本考虑，课程研发、方案设置、拍摄录制、剪辑、设计、宣推、运营都有可能是老师本人。资源不同，输出质量不同。</p>
+<p>设计师水平不同：各商家的设计师水平不同，哪怕同样的课程、素材经过不同设计师设计输出，在视觉表现及信息传达上也会存在较大差异。</p>
+<p>课程形式不同：不同的课程有着不同的上课形式，有的是图文课件、有的是真人讲解、有的是真人示范、有的是软件代练、有的是影像资料等等，以至于封面内容随课程形式而不同。</p>
+<p>通过竞品对比分析，可以看出因视频封面质量层次不齐导致产品视觉体验不佳，几乎是行业通病。你如果能解决这个问题，那么你对于公司的价值不言而喻。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383095" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-21.jpg" width="1422" height="800" /></span></p>
+<p><strong>8. 多方案解决问题、全局思维-潜力价值体现</strong></p>
+<p>既然咱们发现了问题就要解决问题，并多方案解决。在商家侧，我们为商家制定规范、提供模板；在产品侧，可以在主推产品模块进行重设优化。仅提出方案是不够的，你还应该从全局去思考，去考虑方案的可行性、可能遇到的难题、如何推进，甚至推进的意义与必要性。尽你所能让面试官感受到你是一个全面的、有潜力的、有价值的人。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383096" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-22.jpg" width="1422" height="800" /></span></p>
+<p>在商家侧，主要有两种商家群体：专业商家，如MVN机构、知识付费KOL等，他们有成熟的制作团队；非专业商家，如普通教培机构、个人网师等，他们资源有限、制作水平有限。可以针对他们的特点制定两套方案：</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383097" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-23.jpg" width="1422" height="800" /></span></p>
+<p>对于专业商家：只需制定平台规范，其中包括主体图片、字体使用、背景板、信息极值，不过多限制但要求符合平台规范，并且提供免费商用字体包、背景图。</p>
+<p>对于非专业商家：制定平台规范的同时，对封面也具体规范，并为该类商家提供标准模板、模板使用教程、背景图、装饰素材及免费商用字体，尽可能的降低其制作难度，同时保证视觉品质。</p>
+<p>风险提示：可能出现平台规范与商家原有规范不符，或商家不了解甚至不愿了解平台规范，依旧随意发挥。我们应在落地与推进过程中需更多的与商家沟通、引导、培训。</p>
+<p>在产品侧，同样制定封面规范，由内部设计团队针对营销中心、商学院的主推产品封面，进行重新的设计优化、替换。例如营销中心的限时高佣金模块、热销榜单、精选推荐等；商学院的官方使用教程、营销课程、运营课程等。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383098" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-24.jpg" width="1422" height="800" /></span></p>
+<p>风险提示：需要消耗大量的时间成本、人力成本。但从长远价值来看，能很好地解决产品表现层的问题、与行业竞品痛点，个人觉得是非常有意义的。也很符合B端产品伴随企业发展，渐次演进的特性。</p>
+<p><strong>9. 测试题盲点</strong></p>
+<p>据大量观察，很多人在做测试题时常常会犯一些基础错误，就像盲人摸象般埋头做题，我称之为「测试盲点」。主要表现为：浮于表面，不解决实际问题；分析研究与设计产出分离，毫无干系；大刀阔斧，冷血无情。</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383099" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ms-20200804-25.jpg" width="1422" height="800" /></span></p>
+<p>建议：多去了解行业，亲身体验一把产品的用户旅程，你会从中发现设计机会点；多做竞品分析，根据不同产品定位推测他人解决思路，结合自身产品需求，找到最优解，实实在在解决产品问题。</p>
+<p>无论是从0-1还是从1-2的测试题，你所做的所有分析都应是后续设计方案的依据，从什么分析得出什么结论，如何解决了什么样的产品问题、达到什么目标。</p>
+<p>*注：0-1即新产品开发，从无到有；1-2即已有产品，迭代优化；</p>
+<p>1-2的测试题请在原有基础上进行改版优化，我常见到有些候选人直接把别人产品整个架构、逻辑推翻重来，这意味着你对本职工作没有基础认知，并且你并不认可他们的工作成果。更有甚者评论现有产品「层级混乱、设计规范底下、交互体验差」，当你的面试官是用人部门，甚至是原作者，对方会作何感想？</p>
+<p>测试题有无一般视公司规模、制度流程而定，只有一面的公司通常会出现面试官在现场掏自家出产品，向你提问改进优化建议，如果你在此之前就认真体验过该产品，思考其优化方案，那么你会得心应手很多。</p>
+<p>本文结束前，再送你两份求职面试干货：</p>
+<p>[link https://www.uisdc.com/15-interview-questions-and-answers]</p>
+<p>[link https://www.uisdc.com/interview-skills]</p>
+<p><strong>参考连接：</strong></p>
+<ul>
+<li><a href="https://chuzhong.eol.cn/zui_xin_tui_jian/201906/t20190628_1666727.shtml">https://chuzhong.eol.cn/zui_xin_tui_jian/201906/t20190628_1666727.shtml</a> 小鹅通品牌战略升级</li>
+<li><a href="https://www.iresearch.com.cn/Detail/report?id=3599&amp;isfree=0">https://www.iresearch.com.cn/Detail/report?id=3599&amp;isfree=0</a> 2020Q1 &amp; 2020Q2e 在线教育市场报告</li>
+<li><a href="https://www.iresearch.com.cn/Detail/report?id=3561&amp;isfree=0">https://www.iresearch.com.cn/Detail/report?id=3561&amp;isfree=0</a> 2019Q4 在线教育市场报告</li>
+<li><a href="https://www.sohu.com/a/322105347_413933">https://www.sohu.com/a/322105347_413933</a> 专访│小鹅通COO樊晓星</li>
+</ul>
+<p>欢迎关注作者微信公众号：「野设记」</p>
+<p><span class="img-zoom"><img alt="当200人竞争同一个UI岗位，试试这份面试突围必杀技！" class="alignnone size-full wp-image-383102" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bc-20200804-2.jpg" width="180" height="178" /></span></p>
+➜腾讯万字干货！2020-2021 设计趋势报告：潮玩篇
+https://www.uisdc.com/art-toys-trend	64879
+<h4><span class="auto_menu">玩具概述</span></h4>
+<p>玩具——「可玩之物」，泛指可用来玩的物品。广义上来讲，它不是只限于市面上售卖的供人玩的东西，凡是可以通过感官（视听触）进行游戏或把玩的东西，都可称之为玩具。也可以是不限材质的自然物体，如沙石泥树枝等非人工东西。本篇将主要围绕通常市面上所能流通的玩具商品做阐述。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383108" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-1.jpeg" width="1200" height="572" /></span></p>
+<p>玩具起源：「工具用于工作，玩具用于游戏。」玩具的历史几乎和人类工具历史同样古老，或者说，它是一种有特殊意义的工具。而玩具起源时期是具备社会基础属性的，比如：</p>
+<ul>
+<li>作为生产工具的「模拟物」，来帮助年幼儿童练习生产和生活技能；</li>
+<li>作为祭祀物品的「象征物」，功能是祭神和娱神；</li>
+<li>作为民间习俗的载体，寄托人们的祈福辟邪的愿望，以及永不衰竭的想象与幻想。</li>
+</ul>
+<p>正是由于这种即是「模拟物」又是「象征物」的特性，使玩具具备着超越一般物品的特殊意义，而有别于「日常生活物品」。</p>
+<h4><span class="auto_menu">潮玩兴起</span></h4>
+<h5>1. 潮玩定位</h5>
+<p><strong>潮玩定义及玩具行业的定位</strong></p>
+<p>潮流玩具，又名艺术玩具或设计师玩具。我们将潮玩定义为拥有独立IP并具有潮流属性的玩具。它多为摆件或雕塑，缺乏交互性及实用性，但具有轻奢属性。</p>
+<p>如果我们将玩具行业按照潮流属性及独立IP两个维度进行分类，我们将会得到下图。其中右上角用虚线标出的便是我们所定义的潮玩。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383109" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-2.jpeg" width="1200" height="675" /></span></p>
+<p>服装有潮牌，玩具也有潮牌。我们把这一批由知名艺术家打造出的符合市场需求的（即卖得好）玩具公仔称之为潮流玩具（简称「潮玩」）。潮流玩具重视的不光是玩具本身「玩」起来的感觉，更多的是从设计、制造工艺、文化等层面的附加属性。</p>
+<p><strong>潮玩玩的是什么？</strong></p>
+<p>而对于潮玩本身来说，从玩具早期的低龄化且强调功能性，已经逐渐演变成了如今的成年人化，更具有艺术性和收藏性。</p>
+<p>艺术性：「萌」既正义？治愈、可爱、长得好看才是王道！「颜值即正义。」这条定义也适用于潮玩圈。</p>
+<p>稀有性：虽说物总以稀为贵，但在潮玩圈里这个「稀有」主要体现在了「限量」上。</p>
+<p>收藏性：对于大多数有一定经济消费力的成年人来说，买潮玩有两个非常明确的目标，一是收藏，二是转手卖钱。用资深玩家的话说：「潮玩是给有钱、有闲，又有童心的人玩的。」</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383110" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-3.jpeg" width="1422" height="800" /></span></p>
+<h5>2. 潮玩的发展历史</h5>
+<p>在1990年左右潮流玩具最早发源于中国香港与日本，主要以小工作室与个体独立设计师的形式出现。</p>
+<p>21世纪初期，潮流玩具的概念逐渐传入美国并与当地文化融合，一些玩具公司也顺应推出了自己的潮玩品牌。而随着互联网的普及，潮玩文化得到港台明星的青睐并受到了国内粉丝的追捧，因此这股潮玩之风开始在中国内陆传播。</p>
+<p>2005-2009年间，一些商业品牌如NIKE、Adidas等开始与潮玩设计师推出联名产品。同时，中国内陆也出现一批潮玩工作室与独立设计师，潮流玩具形成规模化的发展。</p>
+<p>2010-2015年间，潮玩的发展已逐渐走向成熟，各大IP的产品打造能力不断提升并建立了完整的销售链条。同时期中国本土品牌泡泡玛特和19八3等大型玩具零售商开始创立并发展，而电商的兴起降低了玩具的销售成本，潮玩文化得到迅速扩大。</p>
+<p>在市场供需的推动下，大量资本开始入局潮玩市场并出现了盲盒、扭蛋机等创新玩法，极大限度的刺激消费者的购买欲望，引爆市场。</p>
+<p>潮玩文化发展至今，在大娱乐化的社会背景下其影响力越来越广，开启了全民潮玩的新时代。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383171" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-64.jpg" width="1200" height="2165" /></span></p>
+<h4><span class="auto_menu">热门潮玩分析与趋势</span></h4>
+<h5>1. 艺术家玩具</h5>
+<p>艺术家玩具（Art Toys）包括潮流玩具、设计师玩具等，它是由一些设计师、艺术家设计制作，尺寸由几厘米到几十厘米不等，材料主要是容易塑形的搪胶，偶尔也会出现木制材质、金属材质及像素类材料，融合多元的文化和不同的设计的手法来包装。</p>
+<p><strong>Ron English</strong></p>
+<p>Ron English是美国当今最知名、最多产的艺术家之一，他在街头、博物馆、电影、书刊、电视中，以令人难忘的艺术作品轰动全球。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383111" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-4.jpeg" width="1029" height="642" /></span></p>
+<p>他最初创作的「画布」是来自街上的大型广告牌和海报，用他极其擅长的「破坏」涂鸦来表现。经典的形象也是Ron English的创作素材，例如麦当劳叔叔、HELLO KITTY、海绵宝宝、米奇老师等，通过「恶搞破坏」的手法颠覆经典卡通形象，可以说是一位「毁童年」的艺术家了。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383112" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-5.jpeg" width="1029" height="648" /></span></p>
+<p>露出牙龈和牙齿的经典大笑是Ron English作品中标志性视觉元素。他的作品涉猎范围也非常广阔，例如唱片艺术，涂鸦艺术，潮流玩具等。其中其创作的潮流玩具也名声大噪，一度奇货可居。除了专注自身设计以外，也和许多着名潮流单位联名合作，创造更多品牌的可能性。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383113" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-6.jpeg" width="1029" height="647" /></span></p>
+<p>除此之外，Ron English的部分作品也被放大做成巨型装置，让观众享受DOUBLE份的视觉盛宴。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383114" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-7.jpeg" width="1029" height="645" /></span></p>
+<p><strong>KAWS</strong></p>
+<p>KAWS是来自美国新泽西州的街头艺术家，从小对涂鸦产生浓厚的兴趣，大学毕业之后在迪士尼公司MTV电视台工作过。后面开始在纽约市巴士站和电话亭涂鸦，这位「涂鸦怪盗」被品牌注意到并收到品牌「恶搞」的主动邀请，比如DIESEL、Calvin Klein等时尚品牌。KAWS从此一举成名。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383115" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-8.jpeg" width="1029" height="644" /></span></p>
+<p>KAWS标志性的「XX」眼球结球根合骷髅头骨的形象通过恶搞的方式反复出现在其艺术作品中，近年来KAWS把人物延展了尺寸各异的玩具形象，甚至是巨型的装置艺术。把平面的艺术作品转化成可触摸，可互动的实体形象，让观众可以更深层次的感受艺术氛围。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383116" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-9.jpeg" width="800" height="1035" /></span></p>
+<p>2019年，KAWS的艺术展览《KAWS:HOLIDAY》进行世界巡展，总长28米的COMPANION巨型充气雕塑，是KAWS至今最大型的艺术雕塑创作，也是其第一个漂浮于水上的艺术项目。KAWS想通过巨大的作品，传达希望观众能突破日常框架，抬头即可一眼看到巨型装置，邀请观众一起抱着轻松心情度过惬意时光这一信念。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383117" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-10.jpeg" width="1029" height="658" /></span></p>
+<p><strong>BE@RBRICK</strong></p>
+<p>赤司龙彦是MediCom的创始人，他有着不同的身份：室内设计师、插画师、时装摄影师等，从事过电脑制造厂行业（这也为后面制造玩具奠定基础）。平淡如水的生活让他觉得索然无味，后面为朋友的玩具店铺ZAAP！打工，从而启发他改变了人生的方向。</p>
+<p>1996年日本目前最具规模和代表性的玩具制造商MediCom Toy由赤司龙彦于日本涩谷所成立。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383118" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-11.jpeg" width="1029" height="642" /></span></p>
+<p>MediCom Toy成立初期和许多日本玩具尝试一样主打动画动漫手办。直到千禧年，LEGO积木人的专利到期，MediCom Toy推出了类似乐高的积木人玩具Kubrick，并且100% 400% 1000% 三种尺寸，题材仍然围绕动漫、电影、游戏等。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383119" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-12.jpeg" width="1029" height="640" /></span></p>
+<p>Kubrick积木人在市场获得非常大的成功，2001年赤司龙彦以泰迪熊轮廓为灵感，创造了BE@RBRICK。相对比Kubrick，BE@RBRICK增加了更加迷你的50%，还有200%和2000%等稀有尺寸，公仔的价格和尺寸成正比关系。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383120" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-13.jpeg" width="1029" height="627" /></span></p>
+<p>BE@RBRICK 一直将潮流元素、街头文化、电影进行跨界结合，并且与全球各地的艺术家、设计师、流行品牌合作，推出独一无二的限量版、特别版潮流玩具，深受全球潮流玩具收藏家喜爱。</p>
+<p>这只熊像一块承载经典艺术画作的现代画布，可以模煳艺术的边界进行让人耳目一新的一场又一场的华丽大变身。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383121" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-14.jpeg" width="1029" height="655" /></span></p>
+<p><strong>Farmer BOB</strong></p>
+<p>韩国设计师JO YOUNG WOON在大学时主攻设计，并曾留学日本两年，2016年和2017年在Tokyo Design Festa崭露头角。家乡在韩国光州，巧合下与同为设计师的女朋友一起加入ARTTOY的制作行列。WHAT THE FARMER设定中主角BOB是一名农民，不过造型和配件方面均没有传统农民的感觉。BOB之名，取自设计师喜欢的画家BOB ROSS 和雷鬼音乐人BOB MARLEY。</p>
+<p>设计简约的BOB，以最原始的树脂复模方式，每款BOB的诞生均由设计师JO YOUNG WOON亲手制作上色。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383172" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-65.jpg" width="1200" height="616" /></span></p>
+<p>Farmer表示，其他系列的设计思考也是从未中断的，并且不单是以现在形态，而是更多元化的设计，融入其他的设计元素。作为潮流先锋，全球粉丝量超过260万！曾与innisfree/ McDonald / LANCOME等17个全球品牌跨界联名，为其注入更多潮流元素与新鲜创造力。最初因为没有大量生产，所以每一款公仔都是纯手工制作和上色，每次数量都只有20-30个十分稀少，直到与新晋单位FINDINGUNICRON公司合作，将产量和质量迅速提升之下，引爆新一轮热潮。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383122" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-15.jpeg" width="1067" height="678" /></span></p>
+<p><strong>MORE</strong></p>
+<p>除了以上介绍的设计师以外，还有很多出色的设计师也有跻身潮玩设计之中。例如Burger Elfie、GRAFFLEX、PUCKY、Chino Lam、Superfiction、CBB等。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383123" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-16.jpeg" width="1029" height="647" /></span></p>
+<p>QQ STUDIOS也联动了不同的设计师创造了很多潮流玩具，迸发更多的可能。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383124" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-17.jpeg" width="1029" height="649" /></span></p>
+<p><strong>艺术家玩具的发展趋势</strong></p>
+<p>从以前设计师一人坊，潮流玩具缺乏购买渠道，量少且价格昂贵之的「闭塞困境」，到现在从设计到销售形成一条成熟的产业链，不知不觉中国潮流玩具市场已经十年了，潮玩也不再是闭塞的小众产品。</p>
+<p>潮玩在当下已经越来越被大众和市场所接受，泡泡玛特等企业的推动下，潮玩市场的巨大购买力将会逐渐显露，会迎来意想不到的美好发展前景。让越来越多的独立设计师得到曝光，潮玩将会越来越多元化和精彩纷呈。</p>
+<h5>2. 胶类玩具</h5>
+<p><strong>胶类玩具分类及工艺</strong></p>
+<p>潮玩中的胶类玩具可以分为搪胶玩具和软胶玩具（sofubi），两者的造型风格和质感是可以直观区分开的。搪胶和软胶的生产制作步骤基本相同，只是在工艺上有些许不同，包括加热炉（搪胶炉/油炉）和温度的区别。</p>
+<p>制作步骤和工艺：首先从角色设计开始，然后进行3D建模或者泥塑原型制作 → 蜡样 → 制作金属模具 ，为了方便大家更直观的了解工艺，接下来的步骤由图解的方式向大家讲解</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383125" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-18.jpeg" width="1200" height="1843" /></span></p>
+<p><strong>搪胶玩具趋势</strong></p>
+<p>搪胶玩具，也称搪胶公仔（Urban vinyl）,即是最早起源于上世纪90年代香港，造型夸张有张力且几何化的一种设计师玩具，风格简约个性融入街头和城市文化，被玩家称为「Urban派」，其代表人物有Michael Lau、Eric So、James Jarvis等。</p>
+<p>嘻哈、街头文化的表达。无论是早期还是现在的搪胶玩具（Urban vinyl），其内核都是一种对Urban Culture的表达。其中，街头嘻哈作为年轻人所喜欢并追随的一种都市亚文化，一直是大部分艺术家设计师创作的主要题材，创作人把涂鸦、滑板、说唱、潮鞋、朋克摇滚等街头元素融入到玩具设计中，彰显Urban vinyl独具的潮酷及个性。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383126" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-19.jpeg" width="800" height="1824" /></span></p>
+<p>名人明星IP题材。一些体育巨星、演员歌手、艺术家等名人明星本身拥有大量粉丝群体且在时尚界具有较高影响力，所以也是潮玩领域比较火热的题材。香港知名搪胶公仔艺术家Eric So苏勋就为众多名人巨星打造过形象Figure，例如Michael Jordan、陈冠希、李灿森等等。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383127" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-20.jpeg" width="1029" height="649" /></span></p>
+<p>最近由艺术家Danil Yad设计，Mighty Jaxx厂牌出品的「主理人」系列搪胶公仔受到广泛欢迎。「品牌主理人手捧自己创造的IP形象」这一理念新潮又不乏艺术观赏性。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383128" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-21.jpeg" width="1029" height="696" /></span></p>
+<p>经典影视动漫IP的解构再创作。成立于 2008 年的香港潮流玩具厂牌Fools paradise（愚者乐园）就很好的诠释了这一理念。其作品的主要表现手法就是将经典影视动漫IP角色进行解构，提取代表性的元素与自己原创形象进行融合或是将几种不同IP进行解构重组同时加上潮流元素，每个作品都有其独特的趣味性和潮流属性同时也能够吸引玩家为情怀买单。这一创意理念的应用结合自己的风格使其在潮玩圈积累了大量的粉丝群体。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383129" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-22.jpeg" width="800" height="1278" /></span></p>
+<p>品牌间的跨界合作。潮玩IP与大牌间的跨界合作固然是一个趋势，这种联名不仅可以让那些品牌获得新的粉丝群还可以使潮玩艺术家获得更高的知名度，达到互利共赢。以日本武士加上街头潮流元素闻名的菲律宾知名涂鸦艺术家、插画家、玩具设计师Quiccs Maiquez在今年春季与adidas 进行了联名合作，并在adidas superstar 五十周年发布。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383130" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-23.jpeg" width="800" height="1028" /></span></p>
+<p><strong>软胶玩具趋势</strong></p>
+<p>近几年愈发火热的软胶玩具（soft vinyl）,日语简化后读为Sofubi(ソフトビニール)。比较正统的Sofubi玩具其工艺都是油炉纯手工上色。Sofubi玩具起源于1966年的日本，丸三公司生产发售了世界上第一只哥斯拉软胶玩具，这是日本软胶怪兽玩具的鼻祖。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383131" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-24.jpeg" width="735" height="675" /></span></p>
+<p>Sofubi玩具可以分为两类，一种来源于日本特摄片和一小部分动画片中的角色，也可以理解成是传统的软胶玩具，其原型都是取材于特摄片中的怪兽（kaiju）、奥特曼等等。传统特摄sofubi的代表厂牌包括日本老牌厂商丸三、Bullmark（公牛社）、M1号等等，这些老牌玩具公司对后续sofubi领域的发展起到了至关重要的作用，影响至今。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383132" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-25.jpeg" width="862" height="678" /></span></p>
+<p>另一种可以归为艺术家或设计师原创的sofubi,此类sofubi在创作上不受限制，题材包罗万象天马行空。接下来我们就从几种热门题材风格了解一下设计师原创sofubi的一个大致趋势。</p>
+<p>Kaiju热。Kaiju一词来源于日本，是「怪兽」之意，是日本特摄影视作品的生物，它们通常拥有巨大的体型和狰狞面目一样的外貌，具体来说，Kaiju是用来指日本特摄的一种最流行的题材，比如哥斯拉系列怪兽、奥特曼系列怪兽等等。在众多经典怪兽角色中，怪兽之王「哥斯拉」和「金刚」可谓最受欢迎，是诸多设计师的创作题材和灵感来源之一。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383133" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-26.jpeg" width="800" height="1584" /></span></p>
+<p>Kaijin怪人题材。Kaijin一词同样源于日本，是「怪人」的意思，可以理解成有着奇特外表的人形角色，但并不算是怪兽。日本sofubi品牌RealxHead（真头玩具）和Punkdrunkers（PDS）的角色最具代表性。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383134" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-27.jpeg" width="800" height="925" /></span></p>
+<p>重口玩具「邪胶」。顾名思义就是常人所难接受的限制级玩具，创作灵感来源于邪典恐怖电影，创作者将头骨、剥皮、鲜血、腐肉，脓瘤等元素融入到玩具设计中，风格恐怖血腥，怪诞猎奇，挑战观者的视觉感官。此类sofubi玩具虽然重口味，却是很多玩家收藏的对象，这也是sofubi的魅力所在，无论什么风格都会契合特定小众人群的精神追求。代表设计师品牌包括NagNagNag、Kaijutan、擦主席、Mutant Vinyl Hardcore（MVH）等等。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383135" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-28.jpeg" width="917" height="675" /></span></p>
+<p>可爱系「萌胶」。取材于动植物或者身边生活小物品，造型Q萌，配色清新，风格可爱兼具趣味性，是与「邪胶」相反的一类sofubi。比如日本插画师小夏创造的猫妖怪兽NEGORA眼神犀利又不失可爱，在潮玩圈知名度颇高。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383136" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-29.jpeg" width="1029" height="657" /></span></p>
+<p>日本插画家、设计师兼艺术家Shoko Nakazawa（中泽翔子）所创造的「山椒鱼」，造型憨萌可爱，也是sofubi圈子赤手可热的收藏品之一。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383137" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-30.jpeg" width="1029" height="753" /></span></p>
+<h5>3. 盲盒</h5>
+<p><strong>什么是盲盒？</strong></p>
+<p>盲盒是指装有不同类型玩偶的盒子。盲盒通常会按系列出售，一个系列中会有6-12个普通款式以及1-2个隐藏款式。 你必须要购买并打开包装之后才能知道拥有的是什么款式，此前你只能通过掂量去猜测，当然有些盲盒达人会在各平台发布拆盒攻略，你可以根据攻略去试着抽到自己心爱到款式。</p>
+<p>盲盒的单价一般在39-69元之间，一系列价格在400-1000元之间。</p>
+<p>通常，每个系列都会推出普通款和隐藏款，有时还会推出节日，城市和主题特定的限量款。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383138" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-31.jpeg" width="1200" height="595" /></span></p>
+<p>盲盒的销售地点分为线上和线下。线下包括了商店和自助抽盒机柜；线上包括了线上旗舰店、小程序、以及二手市场交易平台。</p>
+<p><strong>盲盒的发展历程</strong></p>
+<p>盲盒发源于日本，最初以福袋的形式奠定了基础的商业模式，「福袋文化」依旧延续至今；日本模型市场的大发展催生了新的产品种类—扭蛋，内含商品集中在二次元和ACG领域；SonnyAngel系列产品的爆红使得各类潮流玩具纷纷涌现，推动了盲盒产业的兴盛。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383139" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-32.jpeg" width="1422" height="800" /></span></p>
+<p><strong>影响盲盒玩家消费的因素</strong></p>
+<p>影响盲盒玩家消费的主要因素有三个：</p>
+<ul>
+<li>收集。很多玩家会购买主要原因是因为盒子里的玩偶。外表可爱，做工优良的玩偶会吸引玩家购买，更多玩家只是单纯沉迷于收集各式各样的玩偶。</li>
+<li>惊喜。所有的盲盒，都很好地利用了人的猎奇心态和赌徒心理。有部分玩家表示，抽盲盒的快感就像是抽奖。这种不确定性使得购买的整个过程充满神秘感，令人兴奋和期待。玩家为了享受抽到隐藏款时的惊喜和满足感而大量购买盲盒。</li>
+<li>社交。也有喜好给玩偶改装的玩家。或者在多次购买后会将手中不喜欢和重复的款式与其他玩家交换，形成一条新型社交链条，也成为玩家难以「出坑」的原因之一。</li>
+</ul>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383140" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-33.jpeg" width="1422" height="800" /></span></p>
+<p><strong>盲盒发展趋势</strong></p>
+<p>更好的品质与设计。随着盲盒行业蓬勃发展，商家也意识到娃娃的品质与消费体验的重要性，开始以品牌店的形式出现，同时在娃娃的质量和设计上，也十分重视，有些品牌也与知名IP合作，设计消费者喜欢的娃娃，提升消费者的复购率。</p>
+<p>创新的消费体验。消费者购买盲盒产品可通过线上和线下两种渠道，线上渠道包括天猫旗舰店、葩趣或其他主流电商平台。线下渠道包括品牌店以及抽盒机。此外，有些商家还开发出抽盒小程序，模拟线下抽盒机。抽盒过程中有三次摇一摇的机会知道里面「不是某一款娃娃」，完善购物体验的同时也提升了用户抽取心仪款式的概率。未来可能会开发出更多线上的购买形式，让玩家随时随地享受抽娃乐趣。</p>
+<p>更多的IP合作与授权。个性化需求+消费心理变化，年轻群体成为IP衍生行业消费主力军。随着各潮玩企业的布局，盲盒IP丰富度将逐渐提升，能够满足不同人群的个性化审美需求。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383141" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-34.jpeg" width="1422" height="800" /></span></p>
+<h5>4. 兵人</h5>
+<p><strong>兵人分类</strong></p>
+<p>兵人分两种，一种是狭义上的兵人，就是「兵的人形模型」（Army Men），一般比例为最古典的1/32，最常见的即是我们很多人儿时共同的回忆-绿色塑料小兵，这类兵人起源于各种战争沙盘推演或者贵族们的案头摆设中，这里不做过多的讲解。</p>
+<p>我们重点讲下12寸兵人，12寸兵人也称1/6可动人偶，高度大约30cm。兵人是模块化的产物，可以简单分为素体+头雕+衣服+装备四部分组合，不同的素体对应不同的身材比例，可与头雕随意组合。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383142" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-35.jpeg" width="800" height="1092" /></span></p>
+<p>提到兵人，就不得不提一个鼎鼎大名的孩之宝（Hasbro）公司。1/6可动人偶起源于1962年的孩之宝，创始的设计师以美国历史人物和美国大兵为题材进行生产。于1964年在纽约玩具博览会正式亮相，发售获得了空前的成功，得到意想不到的效果。孩之宝12寸兵人的成功也影响到了后面的许多玩具设计师。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383143" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-36.jpeg" width="823" height="600" /></span></p>
+<p><strong>MICHAEL LAU</strong></p>
+<p>有「Figure教父」之称的香港艺术家Michael Lau便是受到孩之宝的G.I. Joe动作人偶影响很深的艺术家。1999年Michael Lau把九十年代后期滑板文化与12寸可动人偶相结合，创作出99款12寸人偶，并命名为花园人（Gardener）系列。花园人系列不仅成为 90 年代延续至今重要的文化象征之一，也开启了玩具也能建构艺术的先例，甚至掀起后来玩具设计风潮。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383144" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-37.jpeg" width="800" height="1152" /></span></p>
+<p>Michael Lau与「五月天」乐团合作推出其经典的『Gardener』花园人系列的角色人物作品，每位成员都有十分浓厚的Gardener设计风格。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383173" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-66.jpg" width="1029" height="687" /></span></p>
+<p>Michael Lau与经典工服时装Carhartt WIP合作，选取了GARDENER人偶系列来演绎Carhartt WIP经典街头以及工装造型。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383174" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-67.jpg" width="1029" height="686" /></span></p>
+<p><strong>HOT TOYS</strong></p>
+<p>Hot toys，创立于2000年的着名香港玩具品牌。早期主要制作1：6的美军特种部队可动人偶为主。后来开始涉足影视题材，产品制作方向转向电影角色珍藏玩偶。2003年开始，Hot Toys获得多个国际知名的电影版权，包括《钢铁侠》、《蝙蝠侠》系列、《星球6大战》系列、《机械战警》、《美国队长》、《雷神索尔》、《终结者》、《异形》及《铁血战士》等系列，Hot Toys电影角色珍藏人偶以其高度还原，高品质和精确处理细节而闻名。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383145" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-38.jpeg" width="1029" height="571" /></span></p>
+<p>Hot Toys人偶产品给人的第一印象就是超高的逼真度，轮廓比例、皱纹、肤色、皮肤斑纹、发型等特徵都似足真人，高度还原角色特征，整体造型逼真，涂装细腻，给人带来极高的艺术感，可以说人偶的头雕就是Hot Toys的灵魂。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383146" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-39.jpeg" width="800" height="1785" /></span></p>
+<p><strong>ENTERBAY</strong></p>
+<p>Enterbay，创立于2005年的兵人品牌。因为创办人bill十分痴迷于李小龙，无法买到心目中认为最理想的李小龙1：6 Figure，于是决心创办Enterbay，并且立志做出扬威国际的1：6李小龙人偶。2006年Enterbay推出第一款兵人作品-李小龙死亡游戏，作品惊艳四座，大受欢迎。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383147" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-40.jpeg" width="1029" height="691" /></span></p>
+<p>早期主要出品的是影视兵人，包括黄飞鸿、宁采臣、T800等，到现在都是难以超越的好产品。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383176" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-69.jpg" width="1029" height="734" /></span></p>
+<p>后期开始出品NBA兵人，也是截至目前市面上唯一一家拥有NBA版权的兵人公司。经过几年的耕耘，Enterbay也得到了世界各地玩具收藏家的认可和关注。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383148" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-41.jpeg" width="800" height="1530" /></span></p>
+<p><strong>兵人趋势-潮流人偶题材</strong></p>
+<p>现在HT、EN「像真」类兵人依然很流行，但是设计师原创兵人也在崛起。例如来自台湾的潮玩品牌JT STUDIO，JT STUDIO是由Ji Tseng于2014年创立的个人设计工作室，JT创造的兵人并非写实类风格，可以感觉到受到Michael lau的影响，但融入了传统文化和街头文化，充满现代流行元素，角色头雕更是多面几何风格。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383178" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-71.jpg" width="1029" height="730" /></span></p>
+<p>除了JT STUDIO，还有许多优秀的设计师类兵人，例如：RUINSWORK、ZEROWORKS、DAMTOYS、2CWORKS、HIDDEN-FOO、BLACK 13 PARK、COOLRAIN等。这些作品充满了设计师的想象力，富有艺术性的同时也具备潮流属性，深受潮流玩家喜爱。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383149" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-42.jpeg" width="800" height="783" /></span></p>
+<p>而现在潮流类兵人也不断跨界合作，玩具品牌RUINSWORK便和The North Face、KIDULTY、ULSUM、Nike等品牌跨界合作，让兵人不单只是独立摆件，不断拓展潮流人偶的可能性。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383150" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-43.jpeg" width="800" height="1366" /></span></p>
+<h5>5. 手办</h5>
+<p><strong>模玩</strong></p>
+<p>模玩——原指「模型&amp;玩具」的统称，后将其作为一完整体系概念提出，特指与动漫、影视、游戏等IP相关联的，主要以满足爱好者需求为目的而推出的模型、玩具、道具、场景布置等的统称，并逐步得到业界的普遍认可与采纳，如今的模玩已逐渐形成了集欣赏、寄托感情、收藏、考究等为一体的特有流行文化。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383179" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-72.jpg" width="1029" height="591" /></span></p>
+<p>这边简单分析一下「玩具」和「模型」的基本区别：</p>
+<ul>
+<li>玩具是玩物，更突出「可玩性」和「耐玩」，价格实惠；模型是玩具中的精品、设计品，是设计师的心血，价格更高；</li>
+<li>玩具为吸引孩子通常偏可爱或不需太写实；模型更追求等比例、还原外观&amp;性能与真实感。</li>
+</ul>
+<p><strong>手办简介</strong></p>
+<p>手办近年来在国内逐渐盛行起来，并受广大御宅喜爱。真正意义上的手办都是表现原型师个性的GARAGE KIT（简称GK），是指没有大量生产的模型套件，在国内泛指根据动漫角色为原型按照一定比例制作的立体模型玩具。国内很多动漫模型爱好者所说的「手办」更多指的是PVC涂装完成品，比例不超过1/6的模玩。手办做工精细，产量少，具备收藏品属性。</p>
+<p><strong>热门手办</strong></p>
+<p>手办在国内主要指以ACGN（Animation动画、Comic漫画、Game游戏、Novel小说）角色为原型而制作的人物模型类动漫周边，近代比较受欢迎的经典动漫IP手办有《火影忍者》、《海贼王》、《龙珠》、《新世纪福音战士》等。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383151" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-44.jpeg" width="800" height="2468" /></span></p>
+<p><strong>手办趋势</strong></p>
+<p>想让手办更引起消费者的关注，需要有更高的精致度和更强的创意玩法。下面给大家分享几类我们觉得更受消费者追捧的手办。</p>
+<p>结合潮牌。IZ-Studio制作的兄弟系列手办可算是潮味十足！路飞系着Burberry的腰包，脚穿着Nike Air Jordan 球鞋！手中还拿着印有Supreme的钞票枪，表情够炸！火拳艾斯头带Beats耳机，手部是可以更换的，可换成为手握耳机，又或者是比心心的动作。滑板是配件，可以自由摆放。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383152" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-45.jpeg" width="1029" height="767" /></span></p>
+<p>极致还原。BISHOUJO ReMIX 初音未来以山下俊也绘制的插画为基础，将初音未来在舞台上弹吉他的造型立体化呈现。双马尾带有粉红涂装，配以珠光透明效果，相当华丽，服饰的皱褶与舞动感也十分逼真。暗黑亚瑟王Saber Alter精致而凄美的脸庞，搭配那双半睁的金瞳，冷血女王的气场展露无疑，对于那些黑王控的杀伤力简直是突破天际，头发也是做出了原画那种在风中飘舞的感觉。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383153" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-46.jpeg" width="910" height="678" /></span></p>
+<p>可动性。《一拳超人》中，杰诺斯的可动手办系列带来了新鲜的玩味。可动性的手办能给人带来更多的乐趣，精致的手办已经不仅仅是收藏摆设，它更是等待你宠幸的高级玩具。</p>
+<h5>6. 雕像</h5>
+<p><strong>雕像的发展趋势</strong></p>
+<p>随着模玩行业急速发展，近几年，手办雕像等在以往属于小圈子的模玩，在人们观念中已经逐渐脱离了低龄玩具等范畴，涌现出很多介于玩具与艺术品之间等高质量模玩作品。而雕像一般采用限量发售，价格高质量优。这也促使其被当成收藏品收藏甚至被作为理财产品进行投资。越发凸显出高质量雕像作品极高的商业价值，而这也吸引着大量的资本进入模玩特别是雕像市场。</p>
+<p><strong>雕像和手办的区别</strong></p>
+<p>其实一开始对于手办和雕像并没有一个很明显的界限，一般会把根据IP角色为原型按照一定比例制作的立体模型玩具统称为手办。但是随着近几年高比例甚至1:1比例的雕像越来越火，逐渐有了雕像这一细分领域。</p>
+<p>想弄清楚雕像，需要与手办进行对比才能有比较好的了解，因为市面上并没有权威的界限去限定手办和雕像的区别，所以我们说的是对大部分玩家调查下对比出来的结果。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383154" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-47.jpeg" width="4288" height="6525" /></span></p>
+<p><strong>雕像原型师介绍</strong></p>
+<p>大山竜。大山竜是日本一位实力派原型师，雕像制作和涂装风格在雕像界自成一格，用简单的工具，创造出了来自另一个异世界的生物，特别是雕像皮肤质感、层次感以及雕像细节的塑造，具有异于超乎寻常的想象力和创造力，看他的作品仿佛进入了异形的博物馆。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383155" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-48.jpeg" width="800" height="1939" /></span></p>
+<p>竹谷隆之。竹谷隆之（baiたけや たかゆき Takeya Takayuki）日本传奇模型原型师，其作品类型多变，个性鲜明。而黑暗总是他亘古不变的主题，体现在血腥暴力和阴暗的造型上。其作品一般具备以下元素。</p>
+<ul>
+<li>血肉骨骼，展现解刨美学</li>
+<li>赛博风格的科幻元素</li>
+<li>世界各地民族文化元素</li>
+<li>写实</li>
+<li>黑暗</li>
+</ul>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383156" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-49.jpeg" width="800" height="1550" /></span></p>
+<p><strong>雕像品牌</strong></p>
+<p>Prime 1 Studio。成立于2012年的Prime 1 Studio 的slogan是日本一家以充满魄力的尺寸和精致细节闻名的高品质雕像厂牌，他的品牌使命是「世界最高のスタチューを目指して」（争取做世界上最好的雕像），成立以来，一直从事角色雕像的开发，其产品线有《变形金刚》、《蝙蝠侠》、《侏罗纪公园》等世界一流内容系列，压倒性的品质受到了世界各地收藏家的支持。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383157" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-50.jpeg" width="800" height="2085" /></span></p>
+<p>以往的很多品牌推出IP雕像，都对其进行高度还原。随着雕像圈子的逐渐增大，很多雕像已不仅局限于还原IP本身，而是对其进行二次的创作，譬如prime 1 最新推出的忍者蝙蝠侠系列之战国小丑雕像，就以小丑为原型，结合日本战国形象。其风格独具一格，令人耳目一新，收到了很多玩家的推崇。这也是雕像未来发展的一个大的趋势。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383160" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-53.jpeg" width="800" height="1198" /></span></p>
+<p>Sideshow。成立于1993年的美国公司。其雕像作品涵盖人们熟知的电影、电视、动漫和大众文化世界中人们喜欢的角色。创造了很多出色的原创角色，也出过《星球大战》、《漫威》、DC漫画、《外星捕食者》、终结者、指环王等等雕像。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383158" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-51.jpeg" width="800" height="1214" /></span></p>
+<h5>7. 机甲模型</h5>
+<p><strong>机甲模型简介</strong></p>
+<p>「机甲」一词本身是一个舶来词，日文原文为繁体中文「机甲」（科学兵器や机械力で装备すること。）。随着日本ACG作品的影响，现今有大多数人对机甲的印象都是由人类操作的大型机器人，一般定义为战争兵器。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383180" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-73.jpg" width="600" height="813" /></span></p>
+<p>在ACG领域有着一句名言：「机甲是男人的浪漫！」 不论是《高达》《变形金钢》《EVA》等等的，满屏的机械感、超和爆炸式破坏力，简直能让每位男人血脉喷张、荷尔蒙爆棚！那为什么这类不现实、不科学、没有实战价值的艺术形象这么多人会觉得很帅很带感呢？是因为机甲这种艺术形象让人觉得好看、看着爽，象征着着热血男儿血气方刚的「战斗情怀」。换句话说，机甲这种艺术形象表达了一种「钢铁式」浪漫。</p>
+<p>但凡只要一提到机甲类模型，这里不得不提到的一定是《GUNDAM 机动战士高达（钢弹/敢达）》或叫《GUNPLA 钢普拉》（Gundam Plastic Model &#8211; 高达系列塑胶模型）。至于高达模型的种类样式这边就不做细述了，毕竟「高达」这词一出，就等于是另一门大学问……而「拼装模型」则是高达系列在市面上最普遍流通的模型形式。</p>
+<p>拼装模型——指的是厂家将玩具的零件安置在板件上，玩家到手后需要自行将零件见下拼装的一种销售方式。这种方式一方面降低了厂家的人工成本从而达到物美价廉，另一方面是玩家拥有了更多的动手空间，除了能够一步步了解到整体的机甲构成和，更多是让玩家充分体验「机甲组合」的过程，另外也能满足玩家对「开高达」的带入感和场景幻想。这种拼装过程所完成的模型作品，会显得尤其珍贵和有情怀。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383181" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-74.jpg" width="800" height="575" /></span></p>
+<p><strong>产品发展趋势</strong></p>
+<p>黑科技「匠」者——BANDAI。「钱不是万能的，钱是万代的。」目前市面上做的最好的同时也是最知名的厂商当属的「财团B」——BANDAI · 万代（Since 1950s）。种类繁多、价格公道、做工精良、「匠」心出品。企业始终以「技术的进化与发展」、「地球环境的共生」、「创造感动」三个主题为核心，去打造这个所谓的「高达粉丝朝圣地」——Bandai Hobby Center。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383182" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-75.jpg" width="1029" height="654" /></span></p>
+<p>对于如何把「黑科技」融入到高达模型的开发上，是万代一贯传承的理念精神。无论是从玩具的材料软硬选择、可动性、分色成型、模具精度等，都表现得日渐出色。万代从1969年收购了「今井科学」，得到模具和静冈工厂之后到如今，这个「黑科技工厂」的技术依然是在世界上名列前茅、稳居首位，即便如今大部分玩具厂的拼装玩具都达不到万代在90年代后期的做工。下面为大家列ji举万代在高达模型研发上的关键里程碑：</p>
+<ul>
+<li>1981年:第一玩具黑科技——「球形可动关节」&amp;「PE软胶滑套关节」（如今依在使用）</li>
+<li>1982年:第二玩具黑科技——「免胶卡榫定位技术」（时至今日依然世界最好）</li>
+<li>1983年:第三玩具黑科技——「多色一体成型技术」（直至1990年技术才达到成熟）</li>
+</ul>
+<p>以上三点「黑科技」发展至今一直都被持续研发和创新，技术至今都无人超越，万代的无限专研和追求极致完美的精神被体现的淋漓尽致。除此之外万代还做过很多其他技术革新，如首次在胶玩上应用电镀技术呈现金属光泽、隐藏式水口（汤口）设计、五指可动一体手指、材料研发&amp;合金关节骨架研发等。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383183" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-76.jpg" width="1029" height="745" /></span></p>
+<p><strong>更多产品种类方向的研发</strong></p>
+<p>万代对于高达的研发狂热程度可以从以下产品类别来体现：</p>
+<ul>
+<li>FG (First Grade) 1/144: 初者级——最初等级、价格特平、制作超易，非常入门级；</li>
+<li>HG (High Grade) 1/144: 高阶级——在模型中属基础系列、价格低、巨大改造潜力；</li>
+<li>MG (Master Grade) 1/100: 大师级——较精致内构、高可动性、制作难度较高；</li>
+<li>&#8211; RG (Real Grade) 1/144: 真实级——较精致内构、高度还原价、格较高，制作难度高；</li>
+<li>PG (Perfect Grade) 1/60: 完美级——梦幻完美产品、完美分色、超贵、噩梦级制作难度；</li>
+<li>MEGA size 1/48: 超大型——零件少、着重涂装效果、非常适合装饰的模型。</li>
+</ul>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383184" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-77.jpg" width="688" height="600" /></span></p>
+<p>当然还有其他的产品方向，比如：</p>
+<ul>
+<li>SD系列——也叫BB战士/Q版高达，大头小身设定、价格便宜、制作简单、适合练手；</li>
+<li>MB合金成品系列 (Metal Build) ——完成品模型、精致分色与材质呈现、包含大量金属零件；</li>
+<li>解体匠机系列(Metal Structure) 1/60: 巅峰完成品，直达工艺品领域，将虚构的机体从外型、设计、性能、装备、内部机械联动、光效等通过彻底重解重新设定，把想象转换为现实。</li>
+</ul>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383161" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-54.jpeg" width="917" height="678" /></span></p>
+<p>这样种类繁多的产品线已将整个高达模型界全面铺满，覆盖到所有的消费群里，简直无法抗拒！</p>
+<p>旗下潮牌&amp;潮牌联名合作款。其实高达也有发展出属于自己的「潮牌」。Premium BANDAI（BANDAI 官方商品平台）特地设立了一支以高达世界为设计的服装线——「STRICT-G」。无论是在服装产品或是衍生品上都极其充满艺术范与潮流感，揽获众多高达粉。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383162" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-55.jpeg" width="766" height="678" /></span></p>
+<p>为了把高达打造成一种收藏文化，由「STRICT-G」与顶级暗黑系潮牌「mastermind JAPAN (MMJ)」联名最令潮流爱好者们和高达粉期待与兴奋，由PREMIUM BANDAI独家贩售为数不多的「1/12 RX-78-2 GUNDAM MMJ Color ver. 元祖高达」和「1/12 MS-06S Zaku II ver. 「漆黑彗星」 扎古」。同时也推出1/60比例模型和其他潮牌周边。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383185" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-78.jpg" width="800" height="1995" /></span></p>
+<p>另外知名的潮流服饰品牌「A BATHING APE」与「BANDAI HOBBY」合作，推出「AAPE × GUNDAM」联名主题系列潮品，沿用经典猿人迷彩款式的「MG 1/100 AAPE RX-78-2 GUNDAM GRN-CAMO」以及可爱猿人IP「BABY MILO」结合的「SD GUNDAM EX-STANDARD &#8211; BABY MILO &amp; RX-78-2 GUNDAM」。两大厂牌的联名绝对是高达迷和潮流爱好者不容错过的梦幻珍藏。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383163" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-56.jpeg" width="781" height="800" /></span></p>
+<p>除了与「MMJ」和「AAPE」的联名外，高达也与其他品牌进行联名，火热度持续上升：</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383164" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-57.jpeg" width="667" height="800" /></span></p>
+<p><strong>玩家全民&amp;全龄化</strong></p>
+<p>为什么会全民全龄化。其实早在上世纪60年代，「阿童木」开始出现在电视银幕上。他是日本历史第一部机器人动画，换个角度来说，其实阿童木就是开启日本机甲文化的关键钥匙。随着「铁人28号」到「魔神Z」陆续上映后，人们对于机甲的幻想和需求越来越大，于是对应就出现了最早一批的机甲玩具和机甲狂热者。至今虽已过去了大半个世纪，当年的热血青年也已老去，但这种迷恋机甲的文化和热情却依然如初，甚至根据产品多样化和难易程度，让几岁的小朋友、喜欢萌物的妹子、已婚男士居家主妇、老机甲迷宅家胶佬等，都沉迷于拼装、改造、私藏的过程中。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383165" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-58.jpeg" width="841" height="678" /></span></p>
+<p>DIY改造&amp;涂装的门槛渐低。当然，高达的玩法除了自行组装与摆造型收藏外，有更资深的玩家或者造型师会将它们进行再次创造，从而制作出属于自己的作品。常见手法通常有：涂装成品、细节追加刻画、军事类战损旧化、箱式场景设计、甚至科技化、2D动漫配色创新涂装等。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383166" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-59.jpeg" width="800" height="1043" /></span></p>
+<p>亚洲模玩代表国日本也在每年举办着盛大的高达主题模型大赛，从中也出现了不少低调但匠人的民间大神，另一方面也煽动着大部分模玩爱好者积极参与的气氛，引起一股「全民改造」的潮流。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383167" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-60.jpeg" width="1029" height="501" /></span></p>
+<p>也有许多up主或youtuber会在自己的频道专门讲解涂装技法以及改装用料流程等，更让「涂装改造」这门原被认为很神秘深奥的手艺传播和传承了下去，且随着产品精致程度、GK树脂件&amp;改件蚀刻片多样化、气泵喷枪设备改进、涂料多样化和日渐便宜、氪金玩家越来越多等因素，近些年的「进阶/高阶」高达玩家越来越多被挖掘出来，精湛的技术和极致的作品让他们在模玩界都有着一席之地。</p>
+<p>除了高达外，对于机甲改造爱好者来说还有另一个备受青睐，就是来自日本着名科幻机甲设计师横山宏所设计的产品——Ma.k. 系列。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383186" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-79.jpg" width="1200" height="612" /></span></p>
+<p>另外还特别受人欢迎的还有来自日本的MACHATRO WEGO。在模玩收藏界中它们的地位也是举足轻重的。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383187" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-80.jpg" width="1200" height="573" /></span></p>
+<p>目前拼装模玩的涂装技巧在界内的发展趋势可谓是百家争鸣，且对于涂装师和其改造能力也越来越高要求，再加上目前玩家和消费者的消费能力呈快速逐渐上升的趋势，以至于涌现出一大批高级收藏家和顶级涂装造大神。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383188" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-81.jpg" width="1200" height="1514" /></span></p>
+<p>「涂装改造」其实只是手艺表达的其中一种方式，今后机甲模型的发展也会在这条道路继续发扬光大，未来是否会有更多「技术宅」或者「艺术家」等通过跨界的方式加入到机甲改造行列中也说不定呢，或许真再过几年就可以「开高达飞」了！</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383168" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-61.jpeg" width="899" height="600" /></span></p>
+<h4><span class="auto_menu">潮玩用户画像与商业模式</span></h4>
+<h5>1. 用户画像</h5>
+<p>综合部分研究资料与网络公布的研究结果显示，潮流玩具的用户年龄大多分布在18-35岁之间，主要以一二线城市的00后学生群体与90后白领为主，男女占比约为6：4。男性用户大多偏爱模型类的玩具，女性用户则更偏爱盲盒类的玩具。他们有一定的经济能力与购买意愿，往往出于喜爱、好奇、社交展示、收藏保值等心理来消费购买潮流玩具。（部分数据资料摘自艺恩数据）</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383189" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-82.jpg" width="1200" height="523" /></span></p>
+<h5>2. 商业模式</h5>
+<p><strong>迪士尼轮次收入模式</strong></p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383190" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-83.jpg" width="1000" height="562" /></span></p>
+<p>迪士尼的商业模式构建于全产业链的布局，构建了它独特的轮次收入盈利模式。迪士尼目前拥有一条十分完整而庞大的IP角色产品线，通过IP制作与授权的模式，实现重复变现，创造数倍的价值。迪士尼目前旗下拥有五大业务板块：影视娱乐，媒体网络，主题公园，衍生消费品，互动娱乐。这五大模块给迪士尼的IP构建了可流转，增值的一套生态系统。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383191" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-84.jpg" width="1422" height="800" /></span></p>
+<p>影视娱乐。迪士尼的原创内容IP与授权，是重要的流量入口，通过创造优秀的电影与动画给迪士尼带来观众与粉丝，并通过电影院，电视台来实现利润分成，同时还有音乐，演唱会的收入等。动画电影同时也是迪士尼早期的核心利润来源，属于商业模式的第一阶段。</p>
+<p>媒体网络。通过媒体网络来收取消费者的内容服务费，目前迪士尼拥有两大频道：以儿童娱乐内容为核心的迪士尼频道以及以体育内容为核心的ESPN，再加上ABC电视台（迪士尼也是ABC的最大股东）的一些垂直频道。迪士尼频道全球有接近2亿用户，ESPN有1.15亿 ，另外迪士尼频道其实是一个超大型平台，旗下有超过100个子频道，在全球超过160个国家和地区播放，这些全部都是付费的有线电视。</p>
+<p>主题公园。迪士尼在全球的主题公园，还有在总部奥兰多的各类酒店与休闲场所。主题公园也是迪士尼最大的衍生产品。每当推出一部新的动画电影，主题公园就会相应增加一个新的角色和玩法，保证消费者能够在第一时间同时感受到电影和公园的氛围。</p>
+<p>衍生品。在看完电影动画和主题公园后，会有大量的消费者想要购买迪士尼的形象产品，这就是迪士尼商业模式的另一大板块 &#8211; 衍生产品。衍生产品分为几大块，迪士尼IP的肖像权，衍生产品销售，儿童读物收入，还有迪士尼英语中心。但迪士尼的衍生品销售与其它一般销售不一样，迪士尼除了主题公园外，自己不做渠道，只提供授权，如果零售商想要获得迪士尼的零售权，就需要购买迪士尼的授权，或者从授权厂商那里进货，零售商负责搭建渠道，授权厂商负责产品研发，迪士尼只负责品牌本身。</p>
+<p>互动娱乐。互动娱乐主要是基于IP进行的游戏开发及授权。</p>
+<p>总体来说，迪士尼的这套商业模式将自身的IP与内容实现最大化的价值，从开始制作动画电影，通过放映与拷贝，实现第一波的商业变现，最核心的是获取了大量粉丝与流量，接着进行后续的产品开发，主题公园和衍生产品，通过线下的体验和消费来赚进第二轮，另外迪士尼还不断的收购电视频道，通过布局线上渠道，培养用户习惯来推广自身内容与变现。</p>
+<p><strong>泡泡玛特全产业链闭环模式</strong></p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383192" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-85.jpg" width="1056" height="520" /></span></p>
+<p>泡泡玛特成立10年，从一个最初的潮流杂货店铺，逐步成为了一家潮流文化娱乐公司，搭建了一个艺术家挖掘，IP开发与运营，线上线下渠道销售和潮玩文化推广的全产业链闭环的平台。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383169" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-62.jpeg" width="1422" height="800" /></span></p>
+<p>IP孵化平台。在潮玩领域，艺术家就是一个非常重要的资产，泡泡玛特致力于挖掘全球范围里极具潜力的艺术家和设计师，然后通过完善的产业链条，打造一系列的顶级ip潮玩。泡泡玛特旗下艺术家有Kenny，龙家升，毕奇，Ayan等艺术家，同时也和大久保博人，Helena Stamulak，Seulgi lee等国外艺术家展开合作。泡泡玛特目前运营着85个ip，包括12个自有IP，22个独家IP以及51个非独家IP。比如Molly及Dimoo，它们属于公司通过收购得来的自有IP，自有IP还包括了公司内部孵化的IP；而独家IP则是公司通过授权从艺术家或设计师那获得特定地区的独家开发及销售，毕奇和Labubu是目前泡泡玛特人气最旺的独家IP；米老鼠与Hello Kitty这类则属于非独家IP。</p>
+<p>全渠道销售。泡泡玛特在零售上搭建了线上+线下+二手交易的全渠道链条。</p>
+<p>线下直营实体店，机器人商店，线上渠道（淘宝天猫与微信小程序），展会以及经销商批发是泡泡玛特的五大主要销售渠道，二手交易则包括了自建的葩趣社区平台和咸鱼等二手交易平台；泡泡玛特现在全国拥有114家直营零售店，占收入比43.9%；其次为线上渠道，占比32%；另外机器人商店的数量也在近几年快速增长，在2019年的收益也达到了2.49亿。</p>
+<p>潮玩文化推广。潮玩文化这几年在中国大陆得到了快速发展，作为最大的一个新兴市场，并没有一个完全属于自己的潮流玩具活动，为了填补这一块的空白，2017年泡泡玛特举办了第一届潮流玩具展BTS北京国际玩具展，也是整个亚洲地区规模最大的玩具展会，展会得到了空前的反响，自此后每年泡泡玛特都会举办两次潮流玩具展（BTS北京潮流玩具展与STS上海潮流玩具展），能够吸引世界各地的艺术家和潮玩品牌参展，对于整个国内的文化推广都起到了积极的推动作用。另外，泡泡玛特也会扶持和培养年轻艺术家和设计师，与众多艺术院校开展玩具设计课程，邀请旗下艺术家给学生分享创作过程和经验心得。</p>
+<p><strong>MightyJaxx 潮玩圈的一站式服务</strong></p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383193" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-86.jpg" width="854" height="600" /></span></p>
+<p>总部位于新加坡的Mighty Jaxx成立于2012年，专门从事潮玩收藏品的生产开发，和世界各地的街头艺术家、插画家、涂鸦艺术家等不同领域的艺术家合作，将他们的设计和插画作品制造成潮玩收藏品。Mighty Jaxx是一家D2C（直接面向消费者）模式的公司，主要覆盖四个方向的业务。</p>
+<p>原创潮玩。由签约的艺术家和设计师提供优质创意和设计图，Mighty Jaxx负责限量生产，潮玩单品的价格一般在1000元以上。其中最有影响力的一次合作是与纽约艺术家JasonFreeny共同开发了一种标志性风格—XXRAY系列，XXRAY的半解剖风格也贯穿了Mighty Jaxx的很多品牌开发产品，趣味性十足，包括DC，芝麻街，海贼王等。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383194" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-87.jpg" width="1055" height="600" /></span></p>
+<p>Poprock。通过影视和动漫公司获得品牌授权，生产与知名IP联名的潮玩产品，主要的合作方有华纳兄弟，迪士尼，漫威，DC，海绵宝宝等，这类的潮玩单品价格比较亲民，控制在100元左右。</p>
+<p>Labs。Mighty Jaxx利用自身的资源和销售渠道，帮助没有资源的优秀设计师们对接影视与动漫公司，从而获得品牌授权及拓展市场。</p>
+<p>Engine。培育和投资部分有潜质的艺术家和设计师，给他们提供设计，生产，推广，销售的一站式服务。</p>
+<p>目前Mighty Jaxx已经成为一家价值数百万美金的玩具创业公司，拥有50+的设计师及150万粉丝，已向超过60个国家和地区的消费者们提供了数百万件的收藏品，成为全球前十的潮玩公司。Might Jaxx除了和艺术家合作外，也一直保持和舞蹈，音乐相关的公司保持紧密合作，持续扩大多元化的影响力。</p>
+<h4><span class="auto_menu">后记</span></h4>
+<p>潮玩设计是艺术家设计师对外界传达自己个人美学观念、社会态度乃至价值观的一个载体，我们无法去断定在未来几年每个艺术家设计师想要创作的题材内容及想要表达的观念是怎样的，但我们可以通过对当下几类热门玩具的分析，让观者更直观了解到潮玩大致的一个流行趋势，让更多人了解潮玩并关注潮玩领域。</p>
+<p>近年来以sofubi为主的潮流玩具再次兴起，潮玩行业的包容性也不断增大，我们相信有更多的艺术家和设计师会投身潮玩行业打造属于自己的角色IP，同时更多潮玩爱好者涌入进来探索未知的玩具世界！</p>
+<p>往期趋势回顾：</p>
+<p>[link https://www.uisdc.com/operational-trends]</p>
+<p>[link https://www.uisdc.com/ux-design-trend]</p>
+<h4><span class="auto_menu">QQ潮玩展</span></h4>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383170" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-63.jpeg" width="502" height="800" /></span></p>
+<p>QQ潮玩展（QQ Toys Expo 简称：QTX）由腾讯ISUX用户体验设计部联合腾讯原创馆举办，是一个展示各款潮流玩具的大型线下展会，旨在让更多的人了解和喜爱潮玩文化，同时玩有所乐，玩有所得。</p>
+<p>2020 QQ潮玩展将在2020年8月28日-8月30日在深圳侨城坊举办。QTX 2020汇聚全国乃至全球最有影响力、最潮流、最有价值的潮玩品牌、艺术家，并集合腾讯各大自研重磅IP。现场设有潮流玩具限量首发、QQ白膜艺术品展、艺术家现场签售、涂鸦、线上直播等多元化、高品质的活动，为粉丝们带来了精彩纷呈的潮玩盛宴。</p>
+<p>让我们聚集无限创意，引爆潮玩世界！</p>
+<p>如何前往QTX现场？</p>
+<p>扫描以下二维码即可购票↓↓↓ 8月28日-8月30日我们在QTX等你来「顽」！</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：潮玩篇" class="alignnone size-full wp-image-383195" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-tx-20200805-88.jpg" width="180" height="180" /></span></p>
 ➜腾讯万字干货！2020-2021 设计趋势报告：潮玩篇
 https://www.uisdc.com/art-toys-trend	64879
 <h4><span class="auto_menu">玩具概述</span></h4>
