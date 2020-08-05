@@ -1238,6 +1238,234 @@ https://www.uisdc.com/vivo-overseas-browser-revision	57906
 <p>[link https://www.uisdc.com/google-chrome-redesign-method]</p>
 <p>欢迎关注作者微信公众号：「VMIC UED」</p>
 <p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-381269" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-ew-20200723-1.jpg" alt="大厂高手出品！超炸裂的字体设计指南（下）" width="180" height="182" /></span></p>
+➜大厂如何做设计？来看vivo海外浏览器的实战案例
+https://www.uisdc.com/vivo-overseas-browser-revision	57906
+<h4><span class="auto_menu">概述</span></h4>
+<p>今天给大家分享海外浏览器视觉风格升级的案例。希望可以把整个产品改版过程中的沉淀以及总结经验分享给大家。整个项目从19年6月开始，从设计提案到完整方案落地上线持续了5个月，前3个月从「方案探索」到「方案定稿」进行了多维度的尝试，后续2个月从「开发落地」到「数据验证」，针对不同变量的数据结论，进行设计微调整，以达成「正式上线」标准</p>
+<p>接下来，先从背景部分给大家介绍下整个项目背景：</p>
+<h4><span class="auto_menu">背景部分</span></h4>
+<p>外销浏览器整体视觉样式过于陈旧、以及体验方面存在很多问题、品牌属性较弱、缺乏一定的品牌认知、用户在使用体验上存在痛点等。因此需要进行全面的体验优化升级，改善当前存在问题，以及提升品牌属性，增强品牌一致性。给用户提供良好的使用体验，能更好的使用我们的产品。具体从以下四个方面阐述：</p>
+<p><strong>1. 主视觉样式同海外主流产品对比</strong></p>
+<p>以下是海外浏览器线上效果，以及对比海外市场的Google系、Chrome产品视觉效果，海外主流产品的视觉风格更轻量化，简洁，把视觉聚焦点放在产品内容上，因此我们的产品在视觉上有很大的优化空间（关于海外用户对app风格倾向的用研结论显示，海外用户更倾向于Chrome及谷歌系产品风格）</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382643" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-29.jpg" width="1080" height="520" /></span></p>
+<p><strong>2. 可用性问题梳理</strong></p>
+<p>本次体验优化，在重新定义视觉风格的基础上，可同步解决目前存在的体验问题。因此和产品运营同学同步优化建议，以及提取可用性测试问题。经过讨论并达成一致，整理待解决问题图下：</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382618" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-4.jpeg" width="909" height="874" /></span></p>
+<p><strong>3. 交互及UI整理待改进问题</strong></p>
+<p>在梳理完成可用性问题后，设计侧进行了体验问题走查工作，梳理体验上存在的待改进问题点，对问题进行筛选及整理，梳理出目前待解决的体验问题如下，后续视觉风格定义过程中，会同步解决对应问题</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382619" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-5.jpg" width="1080" height="1424" /></span></p>
+<h4><span class="auto_menu">竞品风格梳理</span></h4>
+<p><strong>1. Google</strong></p>
+<ul>
+<li>整体视觉风格清爽，干净，没有过多的装饰，善于运用轻量化卡片，整合信息，少量使用微渐变区分不同信息</li>
+<li>整体品牌色使用较谨慎，避免过度使用品牌色，保持整体性及简约印象</li>
+<li>icon风格保留棱角，有质感，整体感更强</li>
+</ul>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382620" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-6.jpg" width="1080" height="497" /></span></p>
+<p><strong>2. Chrome</strong></p>
+<p>内容版式布局上较舒适，没有拥挤感，层级清晰，阅读体验好</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382621" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-7.jpg" width="1080" height="746" /></span></p>
+<p><strong>3. YouTube</strong></p>
+<p>YouTube采用沉浸式，内容呈现清晰，视频封面/icon元素/模块间空间，整体比例较大，区别于国内app，单屏可展示内容相对会减少，但足够清晰，保留了呼吸感</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382622" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-8.jpg" width="1080" height="502" /></span></p>
+<p>综上，目前海外主流竞品均采用简洁留白，保持视觉清晰，慎重使用品牌色，避免主色过度使用，将视觉重心聚焦在内容上，icon风格为棱角切面。整体视觉风格和产品提议及用户期望的风格方向一致，也便于我们后续确定视觉风格方向。</p>
+<h4><span class="auto_menu">风格提炼</span></h4>
+<p>基于调研用户期望的风格方向，以及产品提议的视觉风格定位均倾向于谷歌系等海外产品风格。因此视觉设计前期进行了相关的竞品风格梳理整理，提炼主流竞品风格如下：保持简洁清爽，轻量化，品牌化，层级清晰，保留呼吸空间。icon风格棱角切面处理</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382625" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-11.jpg" width="808" height="188" /></span></p>
+<h4><span class="auto_menu">品牌主色&amp;辅色定义</span></h4>
+<p><strong>1. 线上品牌色使用效果</strong></p>
+<p>整体视觉感受，主色饱和度过高，在白色区域及模块，视觉对比过高亮，会有刺眼的感受，阅读使用体验效果不佳</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382626" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-12.jpg" width="1080" height="632" /></span></p>
+<p><strong>2. 海外厂商竞品品牌色</strong></p>
+<p>小米，oppo，三星整体品牌色彩倾向蓝色及同色系。三星，oppo品牌色使用整体性更好。在产品设计中品牌主色使用相对克制</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382623" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-9.jpg" width="1080" height="649" /></span></p>
+<p><strong>3. 产品设计中品牌主色使用定位</strong></p>
+<ul>
+<li>传递信息：界面清晰，明确的层级关系，高效舒适的阅读体验</li>
+<li>引导操作：清晰合理的操作引导</li>
+<li>品牌价值：品牌一致性，品牌归属</li>
+</ul>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382624" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-10.jpg" width="1080" height="197" /></span></p>
+<p><strong>4. 主色定义</strong></p>
+<p>基于项目组决策产品定位延续不变的背景下，本次主色定义过程中延续使用旧版本中产品定位，即提供稳定，安全，快速的信息获取服务。从这三种主要情感要素进行色彩探索及提炼。</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382627" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-13.jpg" width="1080" height="623" /></span></p>
+<p>色彩不只是一种视觉语言，它更是传播情感的途径。根据对产品定位的细分拆解，结合产品的感知路径，从品牌及体验纬度提炼产品可传递的情感基因</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382628" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-14.jpg" width="1080" height="655" /></span></p>
+<p>结合产品定位相关的核心关键词，联想接近定位的品牌主色，同时可覆盖到产品定位的颜色为蓝色。能够表达稳定，安全，快速，同时有科技色彩</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382629" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-15.jpg" width="1080" height="569" /></span></p>
+<p>品牌色优化方向往简洁，干练，富有科技感的方向贴近，因此选择方案3为主色方向。同时定义中性色色彩层级，便于指导后续产品设计</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382630" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-16.jpg" width="1080" height="917" /></span></p>
+<p><strong>5. 品牌延展覆盖场景</strong></p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382632" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-18.jpg" width="1080" height="302" /></span></p>
+<p><strong>6. 同色系辅色延展定义</strong></p>
+<p>同色系是指在色环上相距不超过45度的两种颜色，在主色的同色系范围内，我们可以选择主色的同色系范围内的颜色来丰富产品配色。可以选出同色系颜色作为延展色使用</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382631" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-17.jpg" width="1080" height="1038" /></span></p>
+<h4><span class="auto_menu">设计单元</span></h4>
+<p><strong>1. 设计语言概述</strong></p>
+<p>结合产品风格定位，视觉语言使用柔和圆角为基础。圆角风格更接近目前主流视觉风格，圆角的包容性更强，复用场景丰富，更容易达成统一性。同时延续外销「地球」的视觉符号，综上，整体搜索、名站、卡片、以及btn、均采用圆角为基础进行统一设计</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382634" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-20.jpg" width="1080" height="802" /></span></p>
+<p><strong>2. 信息认知简化</strong></p>
+<p>我们希望用户更专注于内容，因此对承载内容的容器、卡片信息的构成及样式进行了简化设计。采用卡片的形式，卡片可以较好的聚合信息，使信息流内信息展示更清晰。卡片结构上，本次采用更清晰的大图样式，阅读清晰可见，文字信息部分，允许展示更多文案，以解决用户看不全标题文案的痛点</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382633" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-19.jpg" width="720" height="253" /></span></p>
+<p><strong>3. 整体视觉感知全面优化（卡片信息与背景的关系）</strong></p>
+<p>当一部分元素处在明确的边界区域内，则用户感知这些元素是一个整体，聚合在一起。为使整体视觉风格轻量化，背景底色不宜过重，达到卡片聚合的目的，对卡片进行统一的0.5px的浅描边，达到明确边界的同时，不过度表现，与背景产生过强的分割感，使整个卡片与背景有即清晰又相对统一的视觉效果</p>
+<p><strong>4. 天气模块全新icon</strong></p>
+<p>天气模块延续简化处理的方式。和旧版本中，面性的，多色的icon相比，更清晰，安静。不过度抢掉头部模块视觉吸引，可以满足用户对天气信息使用的功能</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382644" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bc-20200802-1.jpg" width="967" height="800" /></span></p>
+<p><strong>5. 强化搜索核心功能</strong></p>
+<p>搜索框采用大圆角的风格，和旧版相比提高了搜索框的高度，样式更饱满。当用户进入主页时，能够提升对核心的搜索功能的聚焦。为了更好的和整体视觉风格相融合，以及凸显搜索区域，采用弱阴影进行辅助，使整体视觉风格趋于统一</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382635" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-21.jpg" width="579" height="100" /></span></p>
+<p><strong>6. 搜索落地页</strong></p>
+<p>搜索落地页采用和主页一致的背景。icon风格延续采用6px描边，棱角切面的风格样式。信息排布方面，保留足够的间距，提升品质以及清晰的阅读体验。</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382636" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-22.jpg" width="870" height="800" /></span></p>
+<p><strong>7. 信息流置顶</strong></p>
+<p>信息流置顶，聚焦搜索模块，弱化色块以及装饰，加载刷新提示信息样式进行风格优化，与整体视觉语言达成一致</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382637" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-23.jpg" width="1001" height="800" /></span></p>
+<p><strong>8. icon风格重新定义</strong></p>
+<p>icon风格进行了降噪处理，依据我们前面明确的icon风格定位，延续棱角切面，线条明朗，概括，结合整体视觉风格，更具有质感</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382638" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-24.jpg" width="720" height="204" /></span></p>
+<p><strong>9. 名站icon优化</strong></p>
+<p>名站icon采用25px小圆角，达成与两边垂直相切的状态，当阵列排布时，整体性更强</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382639" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-25.jpg" width="980" height="800" /></span></p>
+<p><strong>10. 品牌一致性（菜单页）</strong></p>
+<p>菜单内第一层级icon使用品牌辅助色，避免像市场上竞品使用与品牌色无相关的五彩色。使用辅色可以增强品牌的一致性以及特有的品牌认知，区别与竞品的彩色化。使整个产品的用色更有依据，逐渐给用户记忆点</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382640" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-26.jpg" width="1029" height="800" /></span></p>
+<p><strong>11. 情感化设计（信息流loading）</strong></p>
+<p>在loading区域，可以在保持风格一致的前提下，进行个性化设计。结合印度网络环境不稳定的背景，将tab下频道符号化处理，联系起来进行连播式设计。传达产品的内容及特性。在情感化方面，当网络情况不好的场景下，可能给用户小惊喜</p>
+<p>下拉刷新最先展示品牌符号（地球元素），在连播过程中，依次展示视频，资讯，图片，游戏娱乐等类目符号。采用路径追踪的形式有效的衔接起来五个符号</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382615" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-1.jpeg" width="1065" height="713" /></span></p>
+<p><strong>12. 跟进行业主流趋势（ Dark Mode, 2019年11月已上线）</strong></p>
+<p>用户使用暗黑模式的场景很多，第一种是在暗光环境下可减少视觉疲劳，另外在白天很多用户也会长期打开深色模式。这意味着在暗黑模式下首先要考虑产品的可读性，需要满足WCAG 2.0 (Web内容可访问性指南) 中规定的AA级标准，即最低4.5:1的对比度</p>
+<p>Material Design 中推荐暗黑模式默认最底层颜色为#121212，而在这之上的层级则使用不同透明度的白色透明层遮罩获得层级区分。层级越高，对应的不透明度越大，本次Dark Mode设计，概括定义7个层级，便于后续场景拓展设计</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382616" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-2.jpeg" width="741" height="431" /></span></p>
+<p>以下是核心页面视觉效果：</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382641" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-27.jpg" width="1080" height="1367" /></span></p>
+<p><strong>13. 更高效的及时反馈（ 无痕模式）</strong></p>
+<p>对无痕模式展示位置进行优化，当用户启动无痕模式时，底tab内icon为清晰的高亮色展示，给用户一个明确的状态（解决旧版本中无痕模式状态开启后，用户对状态的感知弱的问题）。可在多窗口落地页内进行开启以及关闭操作</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382642" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-28.jpg" width="1038" height="800" /></span></p>
+<p><strong>14. 桌面挂件（ 无痕模式）</strong></p>
+<p>添加桌面挂件功能，为本次改版新增功能。添加桌面挂件，用户能快捷启动浏览器并迅速定位到搜索，提升活跃度，以及搜索渗透率。视觉风格上，延续主页内搜索组件的样式，视觉上会有通透感。从功能角度看，差异化竞品的样式</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-382617" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-cb-20200802-3.jpeg" width="908" height="749" /></span></p>
+<h4><span class="auto_menu">数据验证</span></h4>
+<p>在数据验证阶段，进行了多个不同变量的测试版本，针对启动页，名站，搜索区域位置，以及信息流卡片高度，文字字号大小，以及部分交互方式，进行微调整设计。在整个数据验证的过程中，需要根据实际问题，进行微调整设计，逐个变量进行排除原因，寻找合理的方案。具体的数据表格就不贴出来啦，以下是罗列的对应数据结论：</p>
+<ul>
+<li>印度的日活提升了2.6%，印尼日活、日活率均有明显提升</li>
+<li>因信息流/首页交互方式及视觉风格优化，更多用户进入浏览器后浏览了信息流内容，印度和印尼的信息流渗透率比上个版本分别上升了18.5%和9.36%，且整体来看信息流的人均使用时长分别上升了2.12%和6.69%，两地的数据上升明显</li>
+<li>因信息流回到首页的交互方式改变，名站的人均曝光次数（名站曝光人数/日活）提升21.5%</li>
+<li>上线后一周内，设置页添加挂件按钮和浮层add now 按钮占比分别为15.75%、0.9%，<br />
+其余部分推测为来自桌面挂件直接添加</li>
+<li>大盘中搜索组件的点击次数和点击人数分别上升7.39%和8.36%，搜索量中来源为挂件的数值提升了8.58%，该功能对搜索量有正向提升</li>
+</ul>
+<h4><span class="auto_menu">复盘总结</span></h4>
+<p>在本次改版设计到落地过程中相对顺利，但也存在一些问题。由于涉及整体的改版落地，分期进行开发，在项目前期缺少对齐整个项目的落地范围，在开发过程中，有场景缺失，以及Dark Mode 适配范围不明确的问题等，这些都需要在过程中进行补充设计。因此在涉及大改版的项目，主视觉风格确定后，需要和项目组各角色同学明确对齐开发范围及落地场景，是否分期落地？核心页面的改版，一定涉及很多深层级的页面逻辑，是否需要适配新风格，适配到哪个度？这些在前期都要对齐，才能在方案推进过程中会更顺利，也降低项目各成员的沟通成本，团队配合更默契。</p>
+<p>曾经的谷歌浏览器设计思路复盘：</p>
+<p>[link https://www.uisdc.com/google-chrome-redesign-method]</p>
+<p>欢迎关注作者微信公众号：「VMIC UED」</p>
+<p><span class="img-zoom"><img alt="大厂如何做设计？来看vivo海外浏览器的实战案例" class="alignnone size-full wp-image-381269" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-ew-20200723-1.jpg" alt="大厂高手出品！超炸裂的字体设计指南（下）" width="180" height="182" /></span></p>
+➜超级干货！高桥善丸的六个字体设计思路！
+https://www.uisdc.com/takahashi-zenmaru-font-design	61308
+<p>高桥善丸（Takahashi Yoshiharu）1952年出生于日本富山县，1974年毕业于大坂艺术大学，1984年成立了广告丸（Koko Kumaru）工作室。关于高桥善丸的生平经历就这么多，接着我们直接进入正文部分。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382970" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-1.jpg" width="590" height="800" /></span></p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382971" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-2.jpg" width="811" height="800" /></span></p>
+<p>汉字，在亚洲范围内广泛被使用，与英文或者韩文等表音文字不同，汉字是现在世界上唯一仍然被广泛使用的表意文字，所以阅读汉字可以更快地理解文字的意思。那么汉字这样一种具有先天优势的优美文字，是否还有设计的必要呢？我们来看看高桥善丸的看法。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382972" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-3.jpg" width="545" height="800" /></span></p>
+<p>为了解释这个说法。高桥善丸画了一个图注。好看的字体应该包含了三个维度，分别是创新性、情感属性和功能性，创新性和情感属性越强，文字的个性就越强，而功能性越强，可读性就越强。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382973" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-4.jpg" width="800" height="533" /></span></p>
+<p>当我们在看书的时候，我们阅读大量的文字也不会感觉到吃力，因为这些文字是满足功能性的字体，这样的字体毫无疑问是优美的，笔画与笔画之间的负空间均衡分布，并且文字之间非常的统一，整齐排列会让人阅读起来十分的舒适。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382974" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-5.jpg" width="1000" height="800" /></span></p>
+<p>可是这种毫无变化的美感也会让人感到无聊甚至感到距离感。如果我们在书籍的封面上使用这样的文字，这本书很可能压根就不会吸引到我们的注意，更别说翻开这本书去阅读书内的优美文字了。例如高桥善丸的这本书，左边用的是可读性非常强的字体，而右边则是个性化的字体，你会选择哪一本？</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382975" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-6.jpg" width="600" height="266" /></span></p>
+<p>所以高桥善丸认为，为了让文字更有个性和更吸引人的注意，有时候我们需要刻意地去打破文字的平衡结构，追求一些新鲜的表现方式。</p>
+<p>但是，打破秩序这件事情也必须是在秩序存在的前提下才能够成立，如果为了追求个性把文字的秩序完全破坏，那么这个文字还能算是文字吗？也就是说我们在做字体设计的时候必须保证一定的可读性，不然文字再具有个性也是意义不大的。</p>
+<p>那么我们具体应该怎么进行字体设计呢？我们来看看高桥善丸的六个设计方法（针对logo、标题字等几个字的文字组合，而非正文字体）。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382976" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-7.jpg" width="800" height="331" /></span></p>
+<p>在汉字形成的过程中，从隶书开始，汉字逐渐形成以横画和竖画为主体的文字，因此大多数的汉字都能很容易地在网格的基础上进行设计。在西文中，大写字母的结构也比较接近网格横竖的构成，而小写字母或者日文中的平假名就相对比较难受了，他们包含了许多的曲线和圆，更偏向于手写一些。如果要用网格来设计他们难度会比较大。不过难度大就避开吗？当然不，高桥善丸认为正是因为如此有难度，所以一旦克服了这个难关，设计出来的文字将会变得非常的具有创造性。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382977" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-8.jpg" width="800" height="698" /></span></p>
+<p>法善寺位于大坂道顿崛里的旧胡同街，是着名小说《夫妇善哉》的故事发生地点。2003年法善寺遭遇大火，大部分的地方都被大火毁去。许多人对此感到十分痛惜，并且呼吁对法善寺进行重建，而这张海报则是高桥善丸为呼吁重建而设计的运动海报。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382978" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-9.jpg" width="1080" height="557" /></span></p>
+<p>海报中法善寺这三个字是通过网格搭建出来的，所有的笔画都被处理成横画和竖画。处理完之后，高桥善丸发现这三个字中横线特别的多，所以将法善寺这三个字进行横向的延伸，这样文字的视觉张力就强多了。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382979" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-10.jpg" width="600" height="128" /></span></p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382980" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-11.jpg" width="1200" height="559" /></span></p>
+<p>这是在造纸工厂的生产线上制作的海报，使用的原始的特种纸。这张海报的主题是土墙，所以海报的主体也就是「土壁」这两个字，高桥善丸对这两个字的处理手法和法善寺是一样的，通过网格搭建好文字之后，将横画进行水平延伸。不过比较特别的是，他对于「壁」字最下方的一条横线进行了重复的处理，多条重复的水平线是为了模拟用砖头堆叠起来的，一层一层的土墙。另外我们可以看到横线的左侧是纯黑色，代表了土墙的面漆，而右侧则是在牛皮纸上混合了药屑的双面胶，代表了土墙的底漆。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382981" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-12.jpg" width="461" height="800" /></span></p>
+<p>泪腺之蚁是一本超现实主义现代诗歌集，他的标题来源于眼科医生用放大镜对患者的眼睛进行检查时会发现患者眼睛中的泪腺一个接一个的涌现出来，就像是一群蚂蚁。高桥善丸对这几个字的处理是整体采用网格的造型，并将文字的重心上提了一些，这样字体看起来会更秀丽一些。接着将这四个字中的封闭空间都进行实心处理，而且他们都是相同大小的正方形，让书封产生节奏感。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382982" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-13.jpg" width="1465" height="800" /></span></p>
+<p>高桥善丸还为了这本诗歌集做了两张海报，他将小小的文字用比较宽松的间距排成一条曲线，模拟成一群蚂蚁爬过的样子。还有其中的一张海报将泪腺之蚁的「之」字进行了放大，令人联想到房间的门。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382983" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-14.jpg" width="800" height="1702" /></span></p>
+<p>Hiroba在日文中是广场的意思，它是一本建筑设计的行业杂志，创办者认为这本杂志就像是建筑设计师们交流意见和想法的广场，所以给他起名为Hiroba。而广场的英文「square」也有方形的意思，所以高桥善丸将这几个英文字母都使用了网格的构成，看起来也是四四方方的。而且他还将中间的字母O单独提了出来，做成一个大大的正方形，为的就是让他看起来像广场。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382984" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-15.jpg" width="800" height="331" /></span></p>
+<p>前面说到，利用网格来设计汉字是比较简单的，但是单纯使用网格制作的文字比较难展示个性，而且会给人一种生硬的印象。高桥善丸认为即便是将文字笔画的尖角处理成圆角来增加文字的柔和感，也难以将文字骨骼中的生硬抹去。所以他总结出了第二个设计方法，在通过网格搭建稳定的骨骼之后，加入一些有机的曲线，去中和网格带来的生硬感，同时也能形成直线和曲线的对比，增加文字的表现力。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382985" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-16.jpg" width="455" height="800" /></span></p>
+<p>这是为了给一本建筑杂志所设计的封面，封面上是不同的汉字，文字表面叠加了建筑材料或者墙面材料的纹理，迎合建筑杂志的主题。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382986" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-17.jpg" width="1080" height="610" /></span></p>
+<p>文字的骨骼是在网格化之后，将部分笔画曲线化，让文字显得更加柔和，降低建筑杂志僵硬死板的刻板印象。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382987" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-18.jpg" width="657" height="600" /></span></p>
+<p>另外，高桥善丸还将文字的封闭空间填实了，一方面可以让文字产生重点，另一方面也可以省略掉部分笔画，让文字看上去更简单。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382988" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-19.jpg" width="456" height="800" /></span></p>
+<p>这个同样是高桥善丸为杂志设计的logo，wings是大坂艺术大学交友会的杂志。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382989" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-20.jpg" width="540" height="800" /></span></p>
+<p>这个logo高桥善丸依旧是采用网格制作，然后他将字母「g」的下部用比较缓和的曲线代替。另外由于wings是翅膀的意思，所以高桥善丸在「w」的一侧加入象征羽毛的曲线色块，同样，「i」上方的点也是用这样的曲线色块代替，与「w」上的羽毛进行呼应。通过坚硬的网格骨架与柔和的曲线羽毛进行对比，能让朴素的机关杂志也能产生时尚的气息。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382990" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-21.jpg" width="455" height="800" /></span></p>
+<p>婚胜是一个为了保护传统产业的促销企划。由于现在的人普遍使用调味料，越来越少通过海带和鱼干来烹饪汤汁了，导致了海鲜与海带的销量大大降低。为了促进销售，启动了「婚胜」的企划。由于昆布鲣鱼汤是日本的一个灵魂料理，可以说是绝妙的搭配。所以聪明的鱼商将昆布和鲣鱼与情侣进行类比，将它们包装在一起，盒子设计为神社祈求良缘用的纸币。这样「婚胜」就成了一种祈祷美好婚姻的礼品了。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382991" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-22.jpg" width="1370" height="800" /></span></p>
+<p>说了这么多，我们还是来分析一下「婚胜」的这个logo。最初通过网格设计的字体会显得十分僵硬，特别是「日」、「月」的部分，难以和美好的爱情联系在一起，所以高桥善丸将「月」字旁、「女」字旁都加入了柔和、流动的曲线，这样更符合细水长流的爱情的气质。并且将「婚」字中的「日」字用心形代替，这样更能呼应主题。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382992" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-23.jpg" width="500" height="300" /></span></p>
+<p>第二点指的是在网格的基础上，加入部分线条。而高桥善丸总结的第三点可以算作是第二点的升级版，完全使用有机的曲线来构成文字，连文字的骨架也都是用的曲线，这样能让读者强烈的感受到曲线带来的温度。但是，当文字完全使用曲线构成时，文字的造型会变得非常的不稳定且难以控制，所以在设计的时候，很有必要设置一些隐藏的规则去规范文字的造型。当我们设计多个文字时，这种规则的设置最好能够是连续且统一的，这样能让多个文字存在共性与秩序，从而产生稳定的感觉。是不是觉得有些难懂？看看下面的例子就明白啦！</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382993" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-24.jpg" width="455" height="800" /></span></p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382994" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-25.jpg" width="293" height="800" /></span></p>
+<p>这个彩虹手巾为了纪念在大坂·中崎町开店而特地设计的一款手巾，它采用了「注染」的传统技术。高桥善丸为了营造欢快轻松的氛围，特地设计了雨滴一般流畅的彩虹曲线。而字体上也与雨滴曲线进行了统一，采用了纵向自由延展的曲线骨骼。可是光采用曲线骨骼很容易造成文字的不稳定，所以高桥善丸将中、口和田字替换成了雨滴状，增加文字之间的统一感，并且也与雨滴曲线呼应上了。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382995" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-26.jpg" width="800" height="1869" /></span></p>
+<p>mimesis是一本插画集，我们看封面，是一个小女孩撩起了半透明的蕾丝裙子。而高桥善丸设计这个字体就是为了模拟蕾丝的裙子，文字的下半部分变成了曲线，就像是蕾丝裙子的裙摆在随风摆动。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382996" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-27.jpg" width="800" height="982" /></span></p>
+<p>这是一个以水都大坂为主题的展览。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382997" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-28.jpg" width="520" height="800" /></span></p>
+<p>「水」字的笔画原本是往外伸展的，而这里高桥善丸将「水」的笔画往内收了，处理成水瓶的样子，呼应水都的主题。而「都」字中的「日」被处理成水的漩涡，也是为了点题。然后「水都」两个字整体都是圆形的造型，让两个字有统一感。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382998" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-29.jpg" width="800" height="331" /></span></p>
+<p>一般我们在做字体设计的时候，都会先设置好一个字面框，然后再在这个框框里进行字体设计。可是高桥善丸却不是这么想，虽然说在框框内也可以做一些个性化的设计，可是如果能打破这个框框的限制，那么不就可以更开放地强调文字的个性化了吗？于是高桥善丸总结的第四点字体设计方法是去除字面框。但是去除字面框也意味着存在不平衡的风险，所以在使用这个方法必须要有整体的意识，我们应该更多地去观察整体文字组合的造型平衡，而不只是单独一个文字的平衡。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-382999" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-30.jpg" width="404" height="800" /></span></p>
+<p>野放途是一个艺术相关的网站，「野放途」这个名字是带有奔放、松散的意味，高桥善丸为了展现这种气质，随意地对字体的笔画进行延长，超出了字面框也没关系。而且为了充分展示自由的状态，笔画的倾斜角度也没有进行统一。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-383000" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-31.jpg" width="705" height="800" /></span></p>
+<p>春之夜是一本诗集的书籍封面。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-383001" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-32.jpg" width="1157" height="600" /></span></p>
+<p>这本书的书籍封面采用了跟野放途同样的处理手法，将文字的部分笔画进行了延伸，不过不同的是，春之夜并没有要展示自由奔放的气质，所以延伸的笔画的角度都是统一为45°。另外由于「の」字没有合适的笔画进行延伸，可是要让文字造型上更统一，所以将这三个字的封闭空间都涂黑了。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-383002" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-33.jpg" width="773" height="800" /></span></p>
+<p>这是一本收集了19-20世纪，日本销售的家庭配药的包装和广告书。标题的字体采用了极长的字面，不过这种长字面并不是整体平均的拉长，而是将文字的某个部位进行拉伸延展，甚至「気」字有一笔往外延伸，超出了字面框。目的是为了让字体更具个性，也更具吸引力。而且为了让文字更统一，和更有节奏感，许多字都加入了小圆圈的图形。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-383003" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-34.jpg" width="1302" height="800" /></span></p>
+<p>高桥善丸还给这本书内页的各章节标题设计了字体。乍一看，会觉得这些字体带有传统中药的古典气质，可是实际上这些字与复杂的篆体相反，他采用了许多简化的有机曲线，这样设计的字体既有可读性，又能让人感觉亲切。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-383004" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-35.jpg" width="800" height="458" /></span></p>
+<p>汉字的笔画数量差异是非常大的，从「一」字最少的1画到最多的57画，所以当汉字排列在一起时，经常会产生强烈的灰度对比。笔画少的字看起来是比较舒服而且容易辨认的，而对于笔画多的字，识别的时间则要长一些。所以高桥善丸在进行字体设计的时候，经常会对文字的笔画进行删减，但是在删减过后需要保持甚至是提升文字的识别性。可是要怎么样才能做到删减笔画却不会降低识别性呢?我们需要对文字进行认真观察，找出文字中的识别点，然后尽可能地保留识别点，去删减别的笔画。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-383005" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-36.jpg" width="495" height="800" /></span></p>
+<p>白南风指的是梅子成熟前后刮的风，青雨指的是新绿时期的雨。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-383007" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-37.jpg" width="667" height="600" /></span></p>
+<p>高桥善丸抓住了这五个字都有包围或者半包围结构的特点，将包围的框框处理成正方形，其他的笔画就缩得非常小，但是并不会过多地影响他们的识别性。然后高桥善丸还在这五个字的中间加入了一个黑色的正方形，因在日本文化中，经常用黑色来象征梅雨时节的天气。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-383008" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-38.jpg" width="483" height="800" /></span></p>
+<p>这是高桥善丸自己出版的书，上面收集了20世纪前半期奇特的印刷品，记载了当时的文化和设计。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-383009" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-39.jpg" width="518" height="600" /></span></p>
+<p>高桥善丸设计书封字体的时候，省略了许多字的笔画，使文字的透气感更强一些。另外，文字倾斜的笔画角度都是一致的，让整个标题组具有统一的流动感。书籍装帧上使用了传统的边框和插画，再加上彩虹箔，营造复古的氛围。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-383010" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-40.jpg" width="1254" height="600" /></span></p>
+<p>这本书的内页的篇章标题也是经过设计的，高桥善丸用不同的家族成员来代表不同的篇章，例如：「爷」、「父」、「母」、「嬢」等等，并且这些字都是由非常缓慢的曲线构成，给人一种家庭的温暖感。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-383011" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-41.jpg" width="890" height="600" /></span></p>
+<p>可是繁体字中，「爷」「嬢」等字的笔画非常多，而「父」、「母」等字的笔画则非常少，为了让他们之间产生统一感，高桥善丸对笔画多的字进行删减笔画，展现出更轻松可爱的氛围。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-383012" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-42.jpg" width="800" height="331" /></span></p>
+<p>汉字虽然起源于象形文字，但是随着长时间的演变，已经几乎看不出汉字原来图形的模样了，我们也很难从汉字的样子中去推测汉字的意思。可是图形化的汉字是能够帮助读者去理解和感受汉字的含义的，所以高桥善丸尝试将字体重新的象形化。但是这种象形化并非是像甲骨文那样追求文字的具象化，而是根据文字词组的含义，做出符合内涵和气质的图形设计，让文字与图形能够有机的融合在一起。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-383013" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-43.jpg" width="858" height="800" /></span></p>
+<p>这个是高桥善丸为德国杜塞尔多夫应用科学举办的日本周设计的主视觉。为什么会使用流字作为主视觉呢？因为在日本，对文字的审美意识是纵向的书写，从上而下的流畅笔迹，就像是从高处往下流的水一样，所以用「流」字来象征日本的文化。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-383014" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-44.jpg" width="968" height="600" /></span></p>
+<p>我们来看看这两个字的设计，流字下面是一个「川」字，为了让人联想到水流，高桥善丸让这个「川」字的笔画沿着字的外轮廓延伸，拉长，就像是瀑布一样。然后「流字」这两个字的笔画都是采用统一的圆弧线条，也能体现流动的感觉。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-383015" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-45.jpg" width="490" height="800" /></span></p>
+<p>高円宫妃久子殿下是一位专门拍摄野鸟的业余摄影师。这是高桥善丸为她的作品展览设计的文字。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-383016" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-46.jpg" width="516" height="800" /></span></p>
+<p>「鸟」字原本就是一个象形字，它是一只站立的鸟，而高桥善丸将这个鸟字放平了，在不损害识别性的前提下，更加写实地模拟出鸟飞行的状态。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-383017" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-47.jpg" width="812" height="800" /></span></p>
+<p>2014年，日本发生了大地震，而德国杜塞尔多夫的艺术家们为了支持日本的灾后重建，举办了一场国际海报展，高桥善丸为了这个展览做了这张海报。Japan这五个英文字母散乱地掉落在水里，代表着受到了地震和海啸灾害的日本。而高桥善丸别出心裁地将字母J与一棵挺立的松树结合在了一起，表达了希望日本能像这棵松树一样，经历了灾难后仍然能顽强地站起来。</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="size-full wp-image-383018 aligncenter" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200804-48.jpg" width="400" height="181" /></span></p>
+<p>我们要介绍的高桥善丸的六种字体设计思路就讲完了。不过我们介绍的这些思路可不是让大家生搬硬套的。</p>
+<p>高桥善丸说到，在字体设计时需要注意两件事情，第一件是我们需要先理解词组的含义，然后再为这个词组选择合适的视觉表现方式，而非简单地修改文字来赋予他个性；第二件事是需要找到文字之间的视觉关联性，然后强调其中的特征，而非生搬硬套。其实用更简单的方式来说，就是像学会了PS并不等同于学会了设计一样，我们总结了这六种字体设计思路，也并不代表我们就能达到高桥善丸的做字水平了，相较于做字思路，更重要的是做字前的思考，希望同学们在做字的时候能够沉下心来，想明白了再动手。那么这篇文章就到这里结束了，我们下周再见！</p>
+<p>更多字体设计方法：</p>
+<p>[link https://www.uisdc.com/36-font-design-methods]<br />
+[link https://www.uisdc.com/36-font-design-methods-2]</p>
+<p>欢迎关注研习设的微信公众号：「Yanxishe2017」</p>
+<p><span class="img-zoom"><img alt="超级干货！高桥善丸的六个字体设计思路！" class="alignnone size-full wp-image-271254" src="https://image.uisdc.com/wp-content/uploads/2018/05/yxskxsqr.jpg" alt="我删除了所有配色网站，只留下这一个" /></span></p>
 ➜超级干货！高桥善丸的六个字体设计思路！
 https://www.uisdc.com/takahashi-zenmaru-font-design	61308
 <p>高桥善丸（Takahashi Yoshiharu）1952年出生于日本富山县，1974年毕业于大坂艺术大学，1984年成立了广告丸（Koko Kumaru）工作室。关于高桥善丸的生平经历就这么多，接着我们直接进入正文部分。</p>
@@ -4232,6 +4460,191 @@ https://www.uisdc.com/complete-100-day-3d-design	61504
 <p>[link https://www.uisdc.com/complete-the-100-day-illustration-design-challenge]</p>
 <p>欢迎关注译者的微信公众号：「彩云译设计」</p>
 <p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-263083" src="https://image.uisdc.com/wp-content/uploads/2018/03/uisdc-dh-20180313-9.jpg" alt="如何把按钮设计做到最好？看这一篇就够了！" /></span></p>
+➜Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）
+https://www.uisdc.com/complete-100-day-3d-design	61504
+<p>大家好，我是彩云。今天要分享的这篇内容是我一直在关注的一位大佬的经验贴，一直非常佩服她的坚持（虽然我也比较能坚持）。这是她的第6个100天设计挑战项目了，这次是保持每天练习3D能力，连续坚持100天，最终她再一次做到了。</p>
+<p>这么厉害的人，她到底有怎样的经历呢？简单介绍下作者：许田恬，清华大学毕业，密歇根大学人机交互硕士，现任Facebook Oculus 产品设计师，曾任职于Uber，亚马逊。工作之余做过的100天项目有《100天涂鸦》、《100天字体练习》、《100天水彩画》、《100天矢量插图》、《100天动效设计》和《100天3D设计》。</p>
+<p>对于之前的挑战项目，她也进行了总结：</p>
+<p>[link https://www.uisdc.com/complete-100-day-animation-design-challenge]</p>
+<p>[link https://www.uisdc.com/complete-the-100-day-illustration-design-challenge]</p>
+<p>其实在挑战过程中一直非常想知道她到底是怎样完成的，每天的流程是怎样，现在她的总结文章终于来了，一起看看吧。</p>
+<h4><span class="auto_menu">100天3D设计项目</span></h4>
+<p>在一个西雅图的周末，外面下着雨，我喝了些茶，在YouTube上看了一个教程，然后下载了Blender 2.79。一年以后，我完成了我的第6个100天挑战项目——100天3D练习。</p>
+<p>从2015年开始，我一直在做100天项目。我过去的项目包括：100天涂鸦，100天字体练习，100天水彩画，100天矢量插画，和100天动效设计。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382901" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-1.gif" width="639" height="426" /></span></p>
+<p>△ 我过去做过的100天项目</p>
+<p>我以前做的这些项目都是2D的，我一直都对网上那些非常漂亮的3D设计非常有兴趣。我希望我能成为其中的一员，也能分享出自己做出来的3D作品。</p>
+<p>作为一个产品设计师，我相信3D技能可以拓宽我的视野，并在VR/AR ，独立游戏和3D打印等领域发掘新的机会。</p>
+<p>在100天的3D项目中，我自学了3D并创作了令人愉快的3D作品。我用了一款免费的3D设计软件叫Blender，它有着丰富的功能和资料较全的在线社区。</p>
+<p>接下来，我会讲讲我每天的工作流程，100天中的练习技巧和关于这个项目的思考。</p>
+<h4><span class="auto_menu">我的工作流程</span></h4>
+<p>3D是一个技术活。在这个项目里，我自己制定了一套3D设计流程旨在帮助我能在2-3天完成一个作品。</p>
+<p><strong>第一步：搜集灵感</strong></p>
+<p>我会通过浏览YouTube和我的Pinterest来找灵感。一旦我有了一个想法，我就会把它在纸上画下来并且会搜集一些相关的参考照片。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382903" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-3.jpg" width="800" height="600" /></span></p>
+<p>△ 想法收集和参考照片</p>
+<p><strong>第二步：建模</strong></p>
+<p>我会用Blender中的多边形建模技术来做3D模型。这个方法是以一个基础3D模型为起点，然后不断细分编辑，做成自己想要的造型。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382929" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bc-20200803-22.gif" width="640" height="480" /></span></p>
+<p>△ 饺子的建模就是用了多边形建模</p>
+<p><strong>第三步：材质</strong></p>
+<p>我给这个3D模型添加了卡通风格的材质。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382904" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-4.jpg" width="800" height="600" /></span></p>
+<p>△ 在Bledner里用节点编辑器给饺子做材质</p>
+<p><strong>第四步：灯光</strong></p>
+<p>我会用「三点布光法」来为这个场景打光。方法是用三盏不同角度和设置的灯光配合的照亮这个场景。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382905" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-5.jpg" width="800" height="600" /></span></p>
+<p>△ 运用主光源，辅助光和补光来渲染这个场景</p>
+<p><strong>第五步：渲染</strong></p>
+<p>我会用Blender自带的引擎来渲染这个最终场景，有时，我还会把渲染后的图片导入到PS中做调整，以获得更好的效果。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382906" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-6.jpg" width="800" height="600" /></span></p>
+<p>△ 饺子的最终渲染</p>
+<h4><span class="auto_menu">我的100天</span></h4>
+<h5>1. 第1-5天：熟悉Blender</h5>
+<p>在最初的几天时间里，我会去熟悉Blender的基本操作。然后，利用Blender设计出了我的第一个3D模型，通过关注了一个由totor4u（<a href="https://www.youtube.com/watch?v=3lX0tg7CEJw&amp;feature=youtu.be">https://www.youtube.com/watch?v=3lX0tg7CEJw&amp;feature=youtu.be</a>）上传的10分钟教程。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382907" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-7.jpg" width="800" height="600" /></span></p>
+<p>△ 100天3D项目，一个咖啡杯</p>
+<p>我按照BlenderGuru的入门教程系列（<a href="https://www.youtube.com/watch?v=TPrnSACiTJ4&amp;feature=youtu.be">https://www.youtube.com/watch?v=TPrnSACiTJ4&amp;feature=youtu.be</a>）做了甜甜圈模型。这个系列对我的帮助很大，我经常会回去再翻翻它。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382908" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-8.jpg" width="800" height="600" /></span></p>
+<p>△ 100天项目，甜甜圈</p>
+<p>小建议：Blender是一个依赖快捷键很重的软件。我会把这些快捷键打印出来，帮助记一些经常使用的热键能很大程度的提高我的工作效率。</p>
+<h5>2. 第6-70天：攀爬学习曲线</h5>
+<p>当我对基本操作越来越熟悉后，我开始尝试不同的方法来不断学习尝试。</p>
+<p><strong>方法1：1-开 1-关</strong></p>
+<p>我用了BlenderGuru的创立的方法叫做「1-开 1-关」。</p>
+<ul>
+<li>看一遍教程跟着做</li>
+<li>不看教程完全独立练习</li>
+<li>不断重复</li>
+</ul>
+<p>我跟着Mr. Sorbias的蛋糕教程（<a href="https://www.youtube.com/watch?v=s1xxckEa_FA&amp;feature=youtu.be">https://www.youtube.com/watch?v=s1xxckEa_FA&amp;feature=youtu.be</a>）做了一个粉色的蛋糕。然后在第二天，我自己又在不看教程的情况下，做了一个蓝色的蛋糕。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382909" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-9.jpg" width="800" height="600" /></span></p>
+<p>△ 100天项目，蛋糕</p>
+<p>我跟着Blender Guru的教程（<a href="https://www.youtube.com/watch?v=Xbc3KMIOuKM&amp;feature=youtu.be">https://www.youtube.com/watch?v=Xbc3KMIOuKM&amp;feature=youtu.be</a>）做了一个玻璃的啤酒杯。之后，我用同样的技术又做了一个高脚啤酒杯。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382910" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-10.jpg" width="800" height="600" /></span></p>
+<p>△ 100天项目，啤酒杯</p>
+<p>我跟着Oliver Villar的巧克力教程学习如何使用模拟碰撞技术（<a href="https://youtu.be/zVigpYh7-FE">https://youtu.be/zVigpYh7-FE</a>），然后在第二天我就用这个技术做了一盒爆米花。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382911" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-11.jpg" width="800" height="600" /></span></p>
+<p>△ 100天项目，巧克力和爆米花</p>
+<p>1开1关，这个方法可以帮助我重复练习学到的技术，能掌握的更熟练。它同样也鼓舞了我，让我创造出了很多新的物件。</p>
+<p>小建议：保持耐心。第一次渲染可能不尽人意，需要花费时间不断的去调整材质和灯光，才能不断接近你想要的效果。</p>
+<p><strong>方法2：1-难 1-易</strong></p>
+<p>学习3D可能会让人觉得心累。为了防止倦怠，我会交替着学习难的和简单的。我会花费3天时间学习一个比较难一点的雪地教程（<a href="https://www.youtube.com/watch?v=BgMYPGWFzG4&amp;feature=youtu.be">https://www.youtube.com/watch?v=BgMYPGWFzG4&amp;feature=youtu.be</a>），然后再做一个简单的冰棍。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382912" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-12.jpg" width="800" height="600" /></span></p>
+<p>△ 100天项目，冰雪世界和一根冰棍</p>
+<p>我花3天时间跟着教程做了一个小黄人（<a href="https://youtu.be/-2uY7rjhhMs">https://youtu.be/-2uY7rjhhMs</a>），第二天我又再做了一只简单的小猪。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382913" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-13.jpg" width="800" height="600" /></span></p>
+<p>△ 100天项目，小黄人和小猪</p>
+<p>小建议：我在建模的过程中发现，删除一个出问题的模型并重新开始做会比你继续去调整一个错误的模型要容易，重新开始可以帮助解决很多疑难问题。</p>
+<p><strong>方法3：创作不同的主题</strong></p>
+<p>持续的做一个类型的东西很容易让人觉得乏味，为了让事情变得更有意思，我会选择做各种不同的主题。</p>
+<p>我会跟着Ducky的3D教程（<a href="https://www.youtube.com/channel/UCuNhGhbemBkdflZ1FGJ0lUQ">https://www.youtube.com/channel/UCuNhGhbemBkdflZ1FGJ0lUQ</a>）做一批抽象系列的作品。他们教会了我一些新的技术，如果还是用之前的方法，我做不出来这些。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382914" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-14.jpg" width="800" height="600" /></span></p>
+<p>△ 100天项目，抽象系列</p>
+<p>我创作了植物系列，准备把我的房间布置的满满的。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382915" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-15.jpg" width="800" height="600" /></span></p>
+<p>△ 100天项目，植物系列</p>
+<p>我还跟着 Polygon Runway（<a href="https://youtu.be/ss21zLpg39Y">https://youtu.be/ss21zLpg39Y</a>) 和 Tiedie(<a href="https://youtu.be/wmydohoexnk">https://youtu.be/wmydohoexnk</a>)的教程，学会了low poly风格</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382916" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-16.jpg" width="800" height="600" /></span></p>
+<p>△ 100天3D项目，素食和地球</p>
+<p>小建议：创作3D抽象物件很适合新手，因为它不需要建模和贴图。</p>
+<p><strong>方法4：上课和看书</strong></p>
+<p>在100天项目的中途，我参加了 Blender的建模课程（<a href="https://cgcookie.com/course/mesh-modeling-bootcamp">https://cgcookie.com/course/mesh-modeling-bootcamp</a>）。它帮助我把我学到的这些零碎的知识串联起来。</p>
+<p>我花了一个周末把《建模拓扑手册》（<a href="https://www.amazon.com/Pushing-Points-Topology-Workbook-01/dp/1987728610">https://www.amazon.com/Pushing-Points-Topology-Workbook-01/dp/1987728610</a>）看完了，这边与软件无关的书帮助我理解了布线的原理，能让我做出最佳的布线结构。</p>
+<p>我还发现了一个在中国Blender社区发布的Blender杂志（<a href="https://www.blendercn.org/blendercn">https://www.blendercn.org/blendercn</a>电子杂志），我非常喜欢看里面的一些3D案例，学到很多。</p>
+<p>小建议：把学习过程中，学到的知识点和解决过的问题记录下来，能够更快的帮你回顾。</p>
+<h5>3. 第71-100天：自由创作我喜欢的东西</h5>
+<p>当我用Blender开始变得得心应手的时候，我会更多的去创作我自己脑子中的想法。其实有很多作品灵感是来自于我喜欢的游戏和电影。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382917" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-17.jpg" width="800" height="600" /></span></p>
+<p>△ 100天3D项目，乌鸦人（灵感来自于游戏纪念碑谷）</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382918" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-18.jpg" width="800" height="600" /></span></p>
+<p>△ 100天3D项目，玫瑰花（灵感来自于电影《美女与野兽》）</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382919" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-19.jpg" width="800" height="600" /></span></p>
+<p>△ 100天3D项目，气球屋（灵感来自于电影《飞屋》）</p>
+<p>我创作了卡通人物系列。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382920" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-20.jpg" width="800" height="600" /></span></p>
+<p>△ 100天3D项目，甘特（灵感来自于《探险时光》）</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382921" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-21.jpg" width="800" height="600" /></span></p>
+<p>△ 100天3D项目，猫（灵感来自于电影《罗小黑战记》）</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382922" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-22.jpg" width="800" height="600" /></span></p>
+<p>△ 100天3D项目，幽灵</p>
+<p>我把我之前水彩画中画的山鲸在3D项目重新做了一遍。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382923" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-23.jpg" width="800" height="600" /></span></p>
+<p>△ 100 Days of 3D — Mountain Whale</p>
+<p>因为喜欢low poly风格，我创作了漂浮的小岛系列。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382924" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-24.jpg" width="800" height="600" /></span></p>
+<p>△ 100天3D项目，麋鹿岛 ，（来自low poly 教程<a href="https://youtu.be/BFkPoQ57w1s">https://youtu.be/BFkPoQ57w1s</a>)</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382925" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-25.jpg" width="800" height="600" /></span></p>
+<p>△ 100天3D项目，灯塔岛(灵感来自于 Jeremy作品<a href="https://www.behance.net/gallery/30180783/Water-Doodles">https://www.behance.net/gallery/30180783/Water-Doodles</a>)</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382926" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-26.jpg" width="800" height="600" /></span></p>
+<p>△ 100天3D项目，瞭望塔岛 (灵感来自于游戏「Firewatch」<a href="https://www.firewatchgame.com/">https://www.firewatchgame.com/</a>)</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382927" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-27.jpg" width="800" height="600" /></span></p>
+<p>△ 100天3D项目，风车岛</p>
+<p>在100天项目的最后，我把我的第一个3D模型重新做了一遍，加入了更多的环境细节。</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-382928" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-fc-20200803-28.jpg" width="800" height="600" /></span></p>
+<p>△ 100 Days of 3D — Daydream in a Cup</p>
+<p>小建议：在面对一个复杂场景时，我总是告诉自己先做一些简单模型。一旦你开始做了，你就会来了兴趣并最终能做好它。</p>
+<h4><span class="auto_menu">感想</span></h4>
+<p><strong>1. 创作自己想做的东西</strong></p>
+<p>在开始的时候，我非常依赖教程。随着对Blender掌握的越来越熟悉，我会逼着自己去做一些自己的东西。</p>
+<p>做自己想做的东西会比跟着教程做要难很多。我会花好几个小时去找资料，然后用上各种技术去实现。我也经常会感到沮丧，因为总是做不出我想要的样子。</p>
+<p>但是，尽管这个过程非常具有挑战性，我却从中学会了很多技术。</p>
+<p>真正学到东西是发生在我自己主动解决问题的过程中。被动学习掌握知识，主动练习掌握技能。</p>
+<p><strong>2. 够用就好</strong></p>
+<p>作为一个初学者，我被3D领域的知识所淹没，越学就越意识到还有非常多的知识要学习。</p>
+<p>为了更好地进入学习状态，我接受了「够用就好」的心态。</p>
+<p>够用就好意思是说不用觉得哪个技能好就去学习一切知识。相反，应该是只学习够用的知识实现自己想要做的目标就行。</p>
+<p>因为我的目标只是想做出简单的3D卡通风格的模型，我跳过了高级的纹理教程并把焦点关注在基础的建模技术上。最终，我能保持专注并完成这个项目。</p>
+<p><strong>3. 完成胜于完美</strong></p>
+<p>项目快结束的时候，我的期望值提高了。我开始犹豫要不要完成一件大的作品，又担心它不够完美。我在开始新作品时也有困难，担心新作品不如前一天做的好。</p>
+<p>当我与这种不完美的恐惧作斗争时，我无意中发现了Elizabeth Gilbert的话：「现在用暴力写出一部足够好的小说，总比一丝不苟地写完一部完美的小说要好。」</p>
+<p>对于她的话，我的理解是：</p>
+<p>一个足够好的作品会比一个完美的作品要好，何况完美的作品根本也不存在。</p>
+<p>考虑到这一点，我承认了作品中的不完美，只是认真的去完成，并继续去做下一个。</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>回头看看，100天的3D项目是我做过的3D项目中最具有挑战性的一个。对比我的其他项目，3D作品所需要的刻意练习远远超出了我的预期。</p>
+<p>它还让我明白，学习3D的真正挑战，对我来说，不是动力，不是时间，而是不断的去面对自己的技能差距，并保持专注。</p>
+<p>特别要感谢Blender这款免费的开源软件，它降低了3D创作的成本，使像我做这样的项目成为可能。</p>
+<p><strong>以下是我在项目中收藏的有用资源：</strong></p>
+<p>Blender 教程</p>
+<ul>
+<li>[Blender Guru](<a href="https://www.youtube.com/user/AndrewPPrice">https://www.youtube.com/user/AndrewPPrice</a>)</li>
+<li>[MrSorbias](<a href="https://www.youtube.com/user/MrSorbias">https://www.youtube.com/user/MrSorbias</a>)</li>
+<li> [Tutor4u](<a href="https://www.youtube.com/user/tutor4u">https://www.youtube.com/user/tutor4u</a>)</li>
+<li> [Ducky 3D](<a href="https://www.youtube.com/channel/UCuNhGhbemBkdflZ1FGJ0lUQ">https://www.youtube.com/channel/UCuNhGhbemBkdflZ1FGJ0lUQ</a>)</li>
+<li>[CG Cookie](<a href="https://cgcookie.com/">https://cgcookie.com/</a>)</li>
+<li>[Polygon Runway](<a href="https://www.youtube.com/channel/UCGSJevmBuDyxjLLOBNaYMGA">https://www.youtube.com/channel/UCGSJevmBuDyxjLLOBNaYMGA</a>)</li>
+<li>[Grant Abbitt](<a href="https://www.youtube.com/user/mediagabbitt">https://www.youtube.com/user/mediagabbitt</a>)</li>
+</ul>
+<p>这些3D艺术家使我获得了灵感</p>
+<ul>
+<li>[Mohamed Chahin](<a href="https://www.instagram.com/mohamed_chahin/">https://www.instagram.com/mohamed_chahin/</a>)</li>
+<li>[Fyn Ng](<a href="https://www.instagram.com/fyn.ng/">https://www.instagram.com/fyn.ng/</a>)</li>
+<li> [Jasmin Habezai-Fekri](<a href="https://twitter.com/lowpolycurls">https://twitter.com/lowpolycurls</a>)</li>
+<li>[Agatha Yu](<a href="https://www.instagram.com/eggbadger/">https://www.instagram.com/eggbadger/</a>)</li>
+<li>[Jeremy Edelblut](<a href="https://www.instagram.com/jedelblut">https://www.instagram.com/jedelblut</a>)</li>
+<li>[Nocky Dinh](<a href="https://www.instagram.com/nocky.dinh/">https://www.instagram.com/nocky.dinh/</a>)</li>
+<li>[Gleb Kuznetsov](<a href="https://dribbble.com/glebich">https://dribbble.com/glebich</a>)</li>
+<li>[Mikael Gustafsson](<a href="https://dribbble.com/MikaelGustafsson">https://dribbble.com/MikaelGustafsson</a>)</li>
+<li>[Devon Ko](<a href="https://twitter.com/3dfordesigners">https://twitter.com/3dfordesigners</a>)</li>
+<li>[Mike Winkelmann](<a href="https://www.instagram.com/beeple_crap/">https://www.instagram.com/beeple_crap/</a>)</li>
+</ul>
+<p>一些推荐阅读的文章</p>
+<ul>
+<li> [How I learned Blender — and 5 Tips for You](<a href="https://www.blenderguru.com/articles/how-i-learned-blender-and-5-tips-for-you">https://www.blenderguru.com/articles/how-i-learned-blender-and-5-tips-for-you</a>) by Blender Guru</li>
+<li>[Getting started with 3D](<a href="https://loremipsum.ueno.co/getting-started-with-3d-489cb4ddfb50">https://loremipsum.ueno.co/getting-started-with-3d-489cb4ddfb50</a>) by Romain Briaux</li>
+<li> [From web dev to 3d: Learning 3d modeling in a month](<a href="https://levels.io/from-web-dev-to-3d/">https://levels.io/from-web-dev-to-3d/</a>) by Pieter Levels</li>
+<li>[The Pushing Points Topology Workbook](<a href="https://www.amazon.com/Pushing-Points-Topology-Workbook-01/dp/1987728610">https://www.amazon.com/Pushing-Points-Topology-Workbook-01/dp/1987728610</a>) by William C Vaughan</li>
+<li> [斑斓视界](<a href="https://www.blendercn.org/blendercn">https://www.blendercn.org/blendercn</a>电子杂志) (Blender magazine) by BlenderCN</li>
+</ul>
+<p>彩云说：当年彩云也参与了这个挑战活动，在朋友圈坚持了100多天，每天坚持发一张作品。这个活动让我收获颇丰，也是在那段时间，自己的技法和耐心得到了很大的提升，还间接的让我收获了入职360和腾讯的机会。如果还没有做过这项挑战的朋友们，强烈推荐大家参与这个活动。</p>
+<p>如果觉得100天太难，也可以尝试先从连续30天开始做。我觉得这个项目中最会让人放弃的的地方可能不在于做的过程，而在于具体要做什么内容上。所以针对这个问题，我觉得在开始前，最好是给自己列一个方向清单，并且让自己的生活尽可能的规律化，你就很大可能会完成这项挑战了！</p>
+<p>优秀的人都这么努力了，你还有什么理由偷懒！！！</p>
+<p>还没看前两篇的同学记得来看：</p>
+<p>[link https://www.uisdc.com/complete-100-day-animation-design-challenge]</p>
+<p>[link https://www.uisdc.com/complete-the-100-day-illustration-design-challenge]</p>
+<p>欢迎关注译者的微信公众号：「彩云译设计」</p>
+<p><span class="img-zoom"><img alt="Facebook产品设计师：如何完成100天3D设计挑战？（附超多教程）" class="alignnone size-full wp-image-263083" src="https://image.uisdc.com/wp-content/uploads/2018/03/uisdc-dh-20180313-9.jpg" alt="如何把按钮设计做到最好？看这一篇就够了！" /></span></p>
 ➜如何让你的「按钮设计」上档次？送你这份万能公式！
 https://www.uisdc.com/button-design-4	65108
 <p>按钮在界面设计中，属于最基础的元素部分组成，按钮设计的精致，整个页面的品质也会上升不少的档次。今天给大家分享这篇文章，主要讲解在设计按钮时我们应该考虑哪些因素，包括视觉上，有哪些万能的方法及公式，能够正确的制定按钮的设计标准，来提升整个设计的系统性。</p>
@@ -5112,6 +5525,156 @@ https://www.uisdc.com/button-design-4	65108
 <p>[link https://www.uisdc.com/neumorphism-landing]</p>
 <p>欢迎关注作者的微信公众号：「UX小学」</p>
 <p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-348582" src="https://image.uisdc.com/wp-content/uploads/2019/11/uxxxqr.jpg" alt="这10个面试技巧，能更容易帮你拿到 Offer" width="180" height="180" /></span></p>
+➜如何让你的「按钮设计」上档次？送你这份万能公式！
+https://www.uisdc.com/button-design-4	65108
+<p>按钮在界面设计中，属于最基础的元素部分组成，按钮设计的精致，整个页面的品质也会上升不少的档次。今天给大家分享这篇文章，主要讲解在设计按钮时我们应该考虑哪些因素，包括视觉上，有哪些万能的方法及公式，能够正确的制定按钮的设计标准，来提升整个设计的系统性。</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382792" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-2.jpg" width="1066" height="800" /></span></p>
+<h4><span class="auto_menu">按钮有哪些作用？</span></h4>
+<p>在设计按钮之前，需要先理解按钮起到的代表含义。什么地方该加按钮，什么地方不加按钮，在系统化设计思路中需要非常有讲究。通常按钮在页面，主要起到以下三点作用：</p>
+<p><strong>1. 某一类型的功能操作</strong></p>
+<p>这种比较常见，如一些控件形态的按钮，比如加减、折叠、展开，下拉等。这类按钮会起到一些功能形态的作用，常用于交互场景。所以在这类按钮设计中，应当弱化按钮形式，重点强调功能，突出主体信息。</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382793" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-3.jpg" width="800" height="393" /></span></p>
+<p><strong>2. 下一步的明确指引</strong></p>
+<p>当页面内容信息过多后，用户容易失去信息焦点，从而忘记下一步操作。信息种类越多，用户权衡的时间就会越久，用户选择罢手及跳出的几率也会越大。所以这个时候，在合适的地方增添按钮，能够很好的引导用户进行下一步操作，提升整体操作的成功率。其次从体验层面，也一定程度能起到页面动线的引导作用，比如下方的一组卡片，在增添了按钮后行动点很明确，非常有点击欲望~</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382794" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-4.jpg" width="1080" height="468" /></span></p>
+<p><strong>3. 固定习惯，明确心理预期</strong></p>
+<p>当用户知悉某个按钮能指向某个操作，或者获取某类信息后，长期以往用户就会形成使用这个按钮的习惯，这样对提升复访及固定心智是非常有效果。</p>
+<p>所以如果你认为你负责的产品或者是内容，能持续为用户带来价值，那么在页面的关键节点，不如将按钮设计的更醒目。这样用户下次再看到这个按钮时，固定习惯会引导他持续的点击。</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382795" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-5.jpg" width="800" height="293" /></span></p>
+<h4><span class="auto_menu">按钮有哪些类型？</span></h4>
+<p>这里我不以按钮的长相来区分按钮的类型，如汉堡按钮或者别的什么的，意义不大。我主要还是想通过以按钮的功能区分，来划分类型，这样大家理解起来更为清晰。</p>
+<p><strong>1. 功能性质按钮</strong></p>
+<p>这类按钮见到的最多，我们常用的APP里，大量都充斥了这类按钮，这类按钮会起到重点的功能交互，帮助用户得到TA想要的信息。其次样式上面，其实圆形的点击欲，会更强一些，看起来也更利于点击。而方型的按钮，则显得更为正式、严谨。</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382796" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-6.jpg" width="800" height="293" /></span></p>
+<p>公式：如果是圆形按钮，圆角的半径=高度的50%比较合适，而如果是方按钮，边角的小圆角半径控制在15%以下比较合适，我个人喜好用10%。</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382797" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-7.jpg" width="1080" height="396" /></span></p>
+<p><strong>2. 聚焦大按钮</strong></p>
+<p>这类按钮通常见于一些核心页面的强指引，比如登录、注册、提交表单、或者是保存，等对页面全局进行操作的一些按钮。需要注意的是，这类按钮只适合对页面全局进行操作，而且页面中大按钮的数量不宜超过2个，信息尽量需要保持聚焦。</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382798" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-8.jpg" width="800" height="361" /></span></p>
+<p>公式：基于@2x，这类大按钮的高度≥72px是比较合适的，通常的尺寸有 80px、88px、96px，大家可以根据产品面向的人群来定高度，如果页面面向的人群较为广泛，我建议采用 88px 或者是 96px 的这种大号版本，毕竟操作起来更为方便。</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382799" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-9.jpg" width="1014" height="600" /></span></p>
+<p><strong>3. 吸底按钮</strong></p>
+<p>这类按钮的优先级，在整个页面属于最高，页面的所有信息，都将聚焦在这个按钮中。由于按钮是吸底的，所以会一直浮在页面上，不受页面篇幅影响控制。</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382800" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-10.jpg" width="600" height="271" /></span></p>
+<p>需要注意的是，吸底按钮一定是页面最重要的功能，或者是整个页面的下一步指引，比如淘宝的立即购买，或者是饿了么、美团的立即下单，又或者是常见的充值界面。</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382801" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-11.jpg" width="800" height="361" /></span></p>
+<p>公式：基于@2x，吸底的高度≥80px是比较合适，常见的尺寸有88px、100px、112px ，按钮的大小可以根据内容来定，建议高度保持在72px以上比较合适。这里需要注意的是，吸底的按钮，需要产出两套设计稿，一套为常规稿，一套为iPhoneX的适配稿。iPhoneX底部控件的区域高度为68px，所以iPhoneX设计稿的吸底高度=常规设计稿吸底高度+68px</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382802" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-12.jpg" width="1080" height="639" /></span></p>
+<h4><span class="auto_menu">按钮有哪些状态？</span></h4>
+<p>另外在设计按钮的时候，也别忘了补充按钮的多个状态的设计稿。常见的状态，有以下四种：</p>
+<p><strong>1. Normal-正常态</strong></p>
+<p>这个为按钮的正常显示态，就是正常页面中的显示效果。</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382803" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-13.jpg" width="600" height="88" /></span></p>
+<p><strong>2. Hover-悬浮态</strong></p>
+<p>这个为按钮的悬浮态，一般只会出现在使用鼠标的时候。当鼠标指针停留在按钮时，按钮发出的特殊反馈，则为悬浮态。这类形式在移动端交互中无作用，所以移动界面设计中不需要考虑这个状态。</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382804" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-14.jpg" width="800" height="140" /></span></p>
+<p>公式：正常情况 Hover 态增加 10% 黑色就可以，原理如下</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382805" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-15.jpg" width="1028" height="382" /></span></p>
+<p><strong>3. Pressed-点击态</strong></p>
+<p>这个为按钮的按压态，就是按钮在被点击或者是按压后的效果。</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382806" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-16.jpg" width="600" height="88" /></span></p>
+<p>公式：在APP设计中，点击后的效果我们设一个标准值让开发实现就好了。常用的值有按钮减少20%的透明度，或者增添20%的暗度，这两个都可以。通常我建议在亮色上的按钮，使用暗度叠加（增添20%的黑色），在暗色上的按钮，则使用透明度减少（透明度改为80%），实现效果原理参考 Hover 态那张配图</p>
+<p><strong>4. Disable-禁用态</strong></p>
+<p>当信息未填充完整，或者是某类条件未到，按钮会出现不可点击的状态，处于禁用形式，这个时候，按钮就会呈现禁用态。这个禁用态无论是web还是app，很多场景都会用到，所以建议设定一套标准的设计规范，避免重复定义这个效果。</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382807" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-17.jpg" width="600" height="88" /></span></p>
+<p>公式：禁用态尺寸及大小不变，仅使用色值做区分。建议使用灰色或者是不透明色，常用的禁用色有#CCC或者#999，需要尽可能把样式做弱，避免用户做无效的点击。</p>
+<h4><span class="auto_menu">按钮的风格及尺寸</span></h4>
+<p>在目前移动互联网设计中，虽然按钮的种类很多，但风格变的逐渐统一，更多都是色值及细节上的差异。从大的风格来看，按钮还是分为这这几种类型：扁平化、轻拟物、重拟物及游戏按钮。</p>
+<p><strong>1. 扁平化按钮</strong></p>
+<p>这类按钮我们设计用的最多，信息简洁，操作方便，形式追随功能。这里也给大家分享一下我在设计扁平化按钮的一些经验，比如高度宽度，以及阴影的色值。</p>
+<p>公式：按钮高度，这个通常是文字字号的2.4倍然后取4的倍数整数，比如字号是24，那么按钮的高度=57.6，离4倍数最近的是56，所以高度=56，圆角=10%的高度，取整后是6px。</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382808" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-18.jpg" width="920" height="134" /></span></p>
+<p>另外如果觉得不合适，也可以单位往8递增或者是递减即可，例如 56、64、72、80、88 px</p>
+<p>按钮宽度：如果不是那种全局按钮，通常按钮的宽度=最多容纳字数的宽度+按钮高度，就好啦。还是以上面那个例子为例，按钮高度=56，文字宽度=96，那么按钮的宽度=56+96=152</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382809" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-19.jpg" width="854" height="204" /></span></p>
+<p><strong>2. 轻拟物按钮</strong></p>
+<p>这类按钮近几年变的非常流行，甚至QQ、淘宝，都开始大面积使用，因为这类按钮在保持信息简洁的同时，仍然有较强的点击欲，视觉上面也能够增添页面的品质感。</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382810" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-20.jpg" width="600" height="150" /></span></p>
+<p>公式：渐变方向，建议采用水平渐变，重色在右侧，轻色在左侧更为合适。阴影色值我之前就写过，不知道大家还记得么，阴影颜色=按钮颜色的 Alpha50%，x=0，y=按钮高度的20%，模煳值=按钮高度的50%，扩展=按钮高度的 -15%，高级又简单，完美！</p>
+<p>如果觉得这个弥散阴影太大的同学，也可以自己手动简单调整下，不碍事。（这个公式仅适用于Sketch，用PS的同学，也可以按照这个逻辑自行研究一下）</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382811" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-21.jpg" width="1080" height="180" /></span></p>
+<p>另外说一句，实际上这个阴影公式并没有什么很多的依据，大多数都是我个人原创总结出来的，简单好用。比如下面的这些按钮的样式，用了公式后的效果大家可以自行感受~</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382812" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-22.jpg" width="800" height="437" /></span></p>
+<p>&nbsp;</p>
+<p><strong>3. 重拟物及游戏按钮</strong></p>
+<p>在一些营销页面中，按钮的样式通常需要做的比较游戏化。游戏化的按钮，大部分会采取游戏场景中的元素，再采用拟物的手法，来进行打造。</p>
+<p>通常游戏化的按钮，需要重点几个部分组成，学过素描的同学应该会知道，立体的物体，通常会有几大特征，分别为高光，亮部，暗部，投影及反光。那么如果我们需要绘制一个在营销或者游戏场景中使用的按钮，只需要保证这个按钮有高光，亮部，暗部，投影及反光的这些特征，然后饱满一点就，立马就可以出效果啦。</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382813" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-23.jpg" width="800" height="428" /></span></p>
+<p>当然，我举的这几个例子都是最基础版本，如果你想做的更丰富一些，那也是没问题的，这个可以case by case 来定。</p>
+<p>这个没有太多的公式可以总结，更多的是看设计师的基础美术水平啦~~</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382814" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-24.jpg" width="800" height="532" /></span></p>
+<h4><span class="auto_menu">新拟态按钮</span></h4>
+<p>在写这篇文章的时候，突然刷到了一套新拟态的控件设计风格，有种眼前一亮的感觉。虽然这套设计视觉上很有层次很好看，不过感觉短时间之内，比较难大面积推广，因为开发实现起来还是会比较耗费成本。</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-382815" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-an-20200803-25.jpg" width="1065" height="800" /></span></p>
+<p>我把源文件保存下来了，对这个感兴趣或者好奇这种效果如何实现的同学，可以下载源文件研究~~ sketch、psd、Figma 格式都有。</p>
+<p>下载链接：<a href="https://pan.baidu.com/s/1RVxvnBJVX9KzvGp7QBITEg">https://pan.baidu.com/s/1RVxvnBJVX9KzvGp7QBITEg</a> 提取码:ikzs</p>
+<p>备用下载链接：<a href="https://share.weiyun.com/mcxYXNDQ">https://share.weiyun.com/mcxYXNDQ</a></p>
+<p>更多新拟物的设计思路：</p>
+<p>[link https://www.uisdc.com/neumorphism-landing]</p>
+<p>欢迎关注作者的微信公众号：「UX小学」</p>
+<p><span class="img-zoom"><img alt="如何让你的「按钮设计」上档次？送你这份万能公式！" class="alignnone size-full wp-image-348582" src="https://image.uisdc.com/wp-content/uploads/2019/11/uxxxqr.jpg" alt="这10个面试技巧，能更容易帮你拿到 Offer" width="180" height="180" /></span></p>
+➜苹果官方指南太长？这10条规范总结帮你抓设计要点！
+https://www.uisdc.com/10-insights-from-hig	65924
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383245" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_ndgZzXY7tNSA5nWcHZf0qw.png" width="1978" height="1122" /></span></p>
+<p>如果你是 UI 设计师，多少都接触过苹果的人机界面设计指南吧？这份在被奉为圭臬的设计指南当中，融入了几十年来最为经典、实用的设计规范和技巧，它非常易读且易于理解。</p>
+<p>这份人机界面指南当中所包含的知识，毫无疑问是价值非凡的。很多设计师同学，平时大都只是泛泛得扫读其中的内容，但是如果你正身处某个设计项目当中，结合某些需求和问题再来阅读的时候，会发现其中很多设计规则背后所隐藏深意和远见。</p>
+<p>最近几个月，我一直在开发 iOS APP，这个过程中，我对于这个设计规范有了更为深入的理解，同时也注意到很多关键的设计要点。今天这篇文章，我就结合我近期的实际经验，分享 10 筛选自苹果的 iOS 人机设计指南的关键要点，对于正在设计 APP 的同学而言，应该颇有帮助。</p>
+<h4><span class="auto_menu">1、在各种光照条件下测试配色方案</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383244" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_TKU2RF0UX8mZl-PBjtXowA.png" width="1978" height="1122" /></span></p>
+<p>「在不同的氛围、一天中不同时间和天气之下，室内和室外的光照状况是截然不同的。当你想将你的 APP 应用在现实世界当中的时候，你在屏幕上看到的色彩并不总是是相同的。所以，你始终要在多种不同的光照情况下（包括不同天气的户外）来预览你的 APP，查看颜色的显示是否合适。如有必要，在此基础上调整色彩，让配色在绝大多数情况下都可以提供最佳的体验。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/">苹果色彩设计准则</a></p>
+<p>其实 <a href="https://www.sleepcycle.com/">Sleep Cycle</a> 这个 APP 就是一个典型的例子，这个 APP 就使用了令人非常舒适的深色配色，让你的眼睛在深色和浅色模式下都可以非常轻松地浏览信息，尤其适合睡前设置闹钟这种使用场景。</p>
+<p>除了配色之外，我还要补充一点，就是很多上下文环境和交互都会影响用户的行为。所以用户需要考虑到用户在使用应用所处的位置、时间阶段以及情绪状态。</p>
+<p>其实，你仔细审视，会看到很多或好或不好的案例。导航类应用应该是需要阅读和触摸操作最少的，Kindle 确保了用户在户外阅读的时候不会显得屏幕刺眼，笔记类应用基本都可以离线使用，等等。</p>
+<p>如果你打算设计一款用于慢跑的 APP，那么你同样要考虑环境和条件约束。</p>
+<p>Shopify 上有一篇很棒的文章，教你如何<a href="https://www.shopify.com/partners/blog/97802374-designing-with-the-users-context-in-mind">充分利用环境因素来进行设计</a>。</p>
+<h4><span class="auto_menu">2、尽可能延迟用户登录</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383243" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_SIC4sF-UibKJr3SGRd4mrw.png" width="1978" height="1122" /></span></p>
+<p>「用户经常在执行有效的操作之前，就被迫要求登录帐号，这种情况使得很多用户放弃使用 APP。你得在作出承诺之前，让用户有机会爱上你的 APP。在购物类 APP 当中，你应该让用户可以随便浏览各种商品，并且在需要购买的时候再提醒他们需要登录。在流媒体应用当中，让用户可以随意浏览绝大多数内容，并且让一部分内容在登录后才能看到就行了。」——苹果授权登录设计准则</p>
+<p>苹果在设计规范当中，敦促设计师尽可能重新审视登录的机制，如果可能，甚至完全删除登录和注册这样的环节。</p>
+<p>不幸的是，我们绝大多数的应用是不太可能删除登录机制的。不过，我在设计 APP 的时候，已经尽量将注册环节往后挪了，确保用户在体验过产品，基于实际产品调整预期之后，再主动注册。</p>
+<p>引入外部帐号机制来注册登录也是一个颇为不错的选择。我现在正在使用<a href="https://developer.apple.com/documentation/security/password_autofill/">密码自动填充</a>、Facebook 帐号登录、Google 帐号登录、Apple 帐号登录以及电子邮件注册登录这几种方式。</p>
+<h4><span class="auto_menu">3、让 APP 的色彩模式跟随系统的色彩模式</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383242" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_J8n70pra71oXRyjwpQ5TSA.png" width="1978" height="1122" /></span></p>
+<p>深色模式已经在各个系统中大规模应用了，在 iOS 中更是如此。</p>
+<p>「如果给某个 APP 提供特定的色彩模式，那么可能会加大用户的工作量，他们可能需要调整更多设置来确保系统的统一性和舒适性。更糟糕的是，APP 如果不跟随系统色彩模式，用户可能会认为 APP 已经损坏，无法跟随他们在系统内所设置的外观选项。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/dark-mode/">苹果深色模式指南</a></p>
+<h4><span class="auto_menu">4、尽快展示内容</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383241" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_EfUQ6N2iusox8x0O6n6bow.png" width="1978" height="1122" /></span></p>
+<p>不要让展示内容和启动页/闪屏混淆。启动页通常用来介绍页面的元素、功能。</p>
+<p>「如果你的应用程序在启动页预览的效果，和实际的页面看起来不一样，用户可能会因为这这种不一致和不对应感到不适。另外，请让你的启动页和设备当下的色彩模式保持一致，具体请参阅<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/dark-mode/">深色模式</a>的说明。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/launch-screen/">苹果的启动屏设计准则</a></p>
+<p>「不要让屏幕上所有内容都加载好了之后再显示，并且让用户一直等着。当用户点击之后，APP 最好立即显示，可以使用占位符文本、占位符图片或者其他的内容来标识内容正在加载，当前不可用。当内容加载好了之后，再替换这些内容。只要有可能，尽量在后台预加载好，比如转场动画，系统的导航菜单，等等。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/loading/">苹果的加载设计准则</a></p>
+<h4><span class="auto_menu">5、充分利用系统提供的色彩</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383240" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_nLaF27hpoPrVzDQwwrdl1A.png" width="1978" height="1122" /></span></p>
+<p>在进行设计的时候，对于文本、符号、图标等视觉元素，尽量调用系统预制的配色，这能够帮你省去超多工作量。</p>
+<p>「iOS提供了一系列的系统配色，这些配色能够自动匹配符合需求的色调和饱和度，并且能够和系统的可访问性的设置相联动，比如自动增加对比度、降低透明度等等。在系统的深色模式和浅色模式下，这些预制的色彩不论是自单独使用还是组合使用，效果都会颇为突出。」</p>
+<p>「不要在你的应用当中使用色彩编码将这些色彩给定死，系统提供的这些色彩仅供你在设计过程中参考，实际应用场景中，这些实际的色彩的数值在后台会随着环境变化而在一定幅度内波动，开发的时候，始终使用 API 来定义色彩，有关开发人员的文档请参考 <a href="https://developer.apple.com/documentation/uikit/uicolor/">UIColor</a> 这一文档。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/#dynamic-system-colors">苹果色彩设计准则</a></p>
+<p>「SF Symbols 提供了一套超过 1500 款风格一致、高度可配置的字符，你可以在 APP 中轻松使用它们。苹果设计的 SF Symbols 和 San Francisco 系统字体可以无缝地集成，两者可以在粗细、大小上自动保持光学垂直对齐。你可以在 iOS 13 及更高版本、watchOS6 及更高版本、以及 tvOS 13 及更高版本上使用 SF Symbols 。」——<a href="https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/">苹果 SF Symbols 使用指南</a></p>
+<h4><span class="auto_menu">6、使用熟悉且易于理解的词汇</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383239" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_5m-jjsipQpZDtAg4bUdL3w.png" width="1978" height="1122" /></span></p>
+<p>「技术可能会令人生畏，尽量避免使用用户可能不理解的缩写和技术术语。使用用户容易理解和接受的短语。通常，吸引所有人的应用程序，应该避免使用技术含量过高的词汇，而专业术语适合特定技术人员所用的 APP。」</p>
+<p>「采用相对非正式、友好的语气来进行表述。非正式的、平易近人的语言风格，能让语言表达像您午餐时与人聊天那样自然，这样可以让你于用户之间的距离更近。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/terminology/">苹果术语使用指南</a></p>
+<p>这里最重要的一点，是要了解你所面对的用户。如果你面对的是一个非常普通的用户，那么你可能要避免使用术语。如果的 APP 的用户是一个高度专业化的建筑师团队，那么你可能要采取截然不同的呈现方式。</p>
+<h4><span class="auto_menu">7、预测并为用户提供帮助</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383238" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_rW_S5FAU4_0wpIH1HQtXjQ.png" width="1978" height="1122" /></span></p>
+<p>「主动预测用户可能会在哪个环节被困住，比如在用户暂停游戏的时候，提供相关的引导和帮助。如果用户第一次错过某些内容，那么应该提供一个入口让用户可以重复观看教程。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/onboarding/">苹果 APP 体系结构设计准则</a></p>
+<p>添加快速提示、常见问题、帮助中心或是聊天机器人，都可以有效地帮助用户解决困惑。</p>
+<p>在我创建 APP的过程中，我会在一些界面中添加帮助图标，教育用户有关的操作，这样可以使得我的界面保持整洁。如果需要，我还会提供一个帮助用户了解更多的额外按钮。</p>
+<h4><span class="auto_menu">8、必要时帮助用户避免信息丢失</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383237" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_zpGVwZ7UcTKJ5SfxTGwDcQ.png" width="1978" height="1122" /></span></p>
+<p>「无论是使用滑动关闭手势、还是使用关闭按钮，如果这一操作可能会导致用户的内容丢失，那么请提供相关的情况说明，并且提供解决信息丢失的解决方案。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/modality/">苹果设计模式指南</a></p>
+<p>「除非取消或者删除，用户始终可以保留现有的信息和内容，这才会让用户感到放心。通常，不需要让用户手动来保存，而是要在用户打开或者关闭文件、或者切换到其他的 APP 的时候，定期自动保存更改。不过，在一些特定的情况下，比如编辑现有的文件，或者需要确认当前的内容的时候，保存和取消的操作同样有意义，这个时候的自动保存可能并不符合用户的需求。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/file-handling/">苹果文件处理准则</a></p>
+<h4><span class="auto_menu">9、请尽量使用标准手势</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383236" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_KNfWOvvvxU4r4BV3XsxHDw.png" width="1978" height="1122" /></span></p>
+<p>「用户习惯标准化的手势，不喜欢被迫学习不同的操作方式来实现已有的、或是相同的操作。在游戏或者是虚拟现实一类的 APP 当中，自定义手势可能是体验中有趣的一部分，在其他的应用当中，最好使用<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/gestures/#standard-gestures">标准的手势</a>，让用户无需费力去发现、学习和记忆。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/gestures/">苹果手势设计指南</a></p>
+<h4><span class="auto_menu">10、不要在通知中包含敏感、个人或者机密信息</span></h4>
+<p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383235" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_kuqsKPeUTE2kPmo1pekIpw.png" width="1978" height="1122" /></span></p>
+<p>「你无法预测用户在收到通知的时候正在做什么，因此需要避免推送到屏幕上的信息可能是敏感的个人信息。」——<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/notifications/">苹果通知设计准则</a></p>
+<p>&nbsp;</p>
+<p>延伸阅读：</p>
+<p>&nbsp;</p>
+<p>[link https://www.uisdc.com/improve-ui-designs-fast-1]</p>
+<p>[link https://www.uisdc.com/improve-ui-designs-fast-2]</p>
+<p>[link https://www.uisdc.com/macos-14-design]</p>
+<p>[link https://www.uisdc.com/ios14-widgets-design]</p>
 ➜苹果官方指南太长？这10条规范总结帮你抓设计要点！
 https://www.uisdc.com/10-insights-from-hig	65924
 <p><span class="img-zoom"><img alt="苹果官方指南太长？这10条规范总结帮你抓设计要点！" class="alignnone size-full wp-image-383245" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_ndgZzXY7tNSA5nWcHZf0qw.png" width="1978" height="1122" /></span></p>
