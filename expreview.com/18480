@@ -37,3 +37,42 @@ http://www.expreview.com/75545.html	14487
 EXTREME内存简约纯粹，将美学、结构与工艺融合得恰到好处。陶瓷白镜面，还原陶瓷温润质感；克制的色彩运用，诠释影驰名人堂独有个性，外加CNC切割与高光亮边处理，造就如艺术品般的曼妙设计。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/08/06/HOF_EXTREME_02.jpg" border="0"/></p><p>内存采用厚达2mm的铝材散热器，紧密贴合DRAM 颗粒，配合顶部大面积的多锯齿状散热鳍片，提供高效的被动散热性能。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/08/06/HOF_EXTREME_03.jpg" border="0"/></p><p>HOF EXTREME内存采用优秀的三星B-Die颗粒，搭配10层A2版加强型PCB，并预留了广阔的超频空间，供玩家自行探索。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/08/06/HOF_EXTREME_04.jpg" border="0"/></p><p>HOF
 EXTREME内存支持XMP2.0，拥有3600/4000/4266/4400MHz四种频率，延迟也不高，3600MHz的是CL16，4000MHz的是CL18，4266MHz与4400MHz的是CL19，单根容量8GB。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/08/06/HOF_EXTREME_05.jpg" border="0"/></p><p>HOF EXTREME内存均以套装售卖，其中3600MHz 8G*2售价999元，4000MHz 8G*2售价1099元，4266MHz
 8G*2售价1399元，4400MHz 8G*2售价1799元，将于近期上线电商平台。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/08/06/HOF_EXTREME_06.jpg" border="0"/></p>
+➜Intel的Alder Lake处理器阵容泄漏，种类多到看花眼
+http://www.expreview.com/75546.html	16074
+<!-- 核显 --><p>Intel的Alder Lake处理器应该是作为接替Rocket Lake和Tiger Lake系列的产品线，同时面向桌面和移动等平台，之前通过<a href="https://www.expreview.com/75206.html" target="_blank">泄漏</a>我们已经知道Intel规划了面向于桌面端的Alder Lake-S、面向于移动端的Alder Lake-P和面向于超低压端的Alder Lake-M，而近日<a href="https://review.coreboot.org/c/coreboot/+/44163/1/src/soc/intel/alderlake/bootblock/report_platform.c#1" target="_blank">coreboot项目代码</a>中出现了更为详尽的Alder Lake的处理器阵容。</p><p>Alder Lake处理器已经确认是采用大小核设计的，现在人们一般用“大核数量+小核数量+核显规格”来描述它的规格配置，这次在coreboot的代码里一共出现了16种Alder Lake，我们将其整理成了表格。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+title: "Alder Lake SKU表",
+header: ["代号","大核数量","小核数量","核显规格"],
+width: '50%',
+padding: '8px 15px',
+columnWidth: 'MAX', //表格单元宽度，"MAX"最大内容显示，""AVG"平均，"AUTO"自动，指定[15,16,20]
+align: 'left',
+id: tableid,
+data: [
+["Alder Lake-S","8","8","GT1"],
+["Alder Lake-S","8","6","GT1"],
+["Alder Lake-S","8","4","GT1"],
+["Alder Lake-S","8","2","GT1"],
+["Alder Lake-S","8","0","GT1"],
+["Alder Lake-S","6","8","GT1"],
+["Alder Lake-S","6","6","GT1"],
+["Alder Lake-S","6","4","GT1"],
+["Alder Lake-S","6","2","GT1"],
+["Alder Lake-S","6","0","GT1"],
+["Alder Lake-S","4","0","GT1"],
+["Alder Lake-S","2","0","GT1"],
+["Alder Lake-S","8","6","GT1"],
+["Alder Lake-S","8","6","GT1"],
+["Alder Lake-S","8","8","GT1"],
+["Alder Lake-P","2","8","GT2"],
+["Alder Lake-P","2","4","GT2"],
+["Alder Lake-P","6","8","GT2"],
+["Alder Lake-P","6","4","GT2"],
+["Alder Lake-P","4","8","GT2"],
+["Alder Lake-P","2","4","GT2"],
+["Alder Lake-P","2","8","GT2"],
+["Alder Lake-P","2","0","GT2"],
+["Alder Lake-P","2","0","GT2"]
+]
+});</script></div><p>从表格中可以看到，Alder Lake的型号相当繁杂，桌面端既有8+8这样16核心的产品，也有8+0这样全大核的产品。另外它也没有放弃中低端市场，仍然保留了双核和四核型号，在中高端则是以6大核型号为主力，辅以不同数量的小核。而在移动端，Intel并没有计划做8大核的产品，最高也就只有6大核的型号，小核则是以0个、4个和8个这样来划分。另外核显规格方面，桌面端全部都是GT1，移动端全部都是GT2级别。</p><p>另外代码还透露了与Alder Lake相搭配的PCH种类，也是有Base、Mainstream、Super和Premium四种之分，从名字上就可以看出应该是对应目前不同级别的PCH芯片。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/08/06/image-20200806122017591.png" alt=""/></p><p>如果不出意外的话，Alder Lake应该会在2021年先登陆移动市场，再登陆桌面市场，对于桌面市场来说，它应该是首款采用10nm制程的处理器。至于小核究竟能够起到什么样的作用，能够提供多少性能增幅，这些问题还有待测试成绩的流出。</p>
