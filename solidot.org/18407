@@ -1,0 +1,33 @@
+➜英国首相计划减少华为参与 5G 建设
+https://www.solidot.org/story?sid=64455	17770
+路透社援引知情人士的消息<a href="https://cn.reuters.com/article/us-huawei-sanction-uk-0525-idCNKBS23102B?il=0"><u>报道</u></a>，英国正在审慎检视美国对华为的新制裁可能给英国网络造成的任何影响。“美方宣布扩大针对华为的制裁行动后，英国国家网路安全中心正仔细检视它们可能给英国网络造成的任何影响，”一位英国政府发言人说。而据每日电讯报报导，在新冠病毒危机爆发之后，首相约翰逊计划减少华为在英国 5G 网络建设中的参与。约翰逊已要求官员制定计划，到 2023 年将中国参与英国基础建设的程度削减至零。约翰逊料将以降低对中国的依赖作为手段，增加英国在退欧后与美国进行贸易谈判时的筹码。
+➜Linus Torvalds 桌面计算机从英特尔切换到 AMD
+https://www.solidot.org/story?sid=64456	19215
+Linus Torvalds 在内核邮件列表上<a href="http://lkml.iu.edu/hypermail/linux/kernel/2005.3/00406.html"><u>宣布</u></a>释出 Linux 5.7 rc7，同时透露他刚刚升级了主桌面计算机。Linux 之父称，15 年来他的主计算机第一次不是基于英特尔的 CPU，他切换到了 AMD 的线程撕裂者 3970x，现在测试构建所需时间只需要以前的三分之一。他相信下一次合并窗口期间将会体验到升级所带来的显着好处。线程撕裂者 3970x 是 32 核 64 线处理器，主频 3.7GHz 可加速至 4.5GHz，它是 AMD 次高端桌面处理器，次于线程撕裂者 3990x(64 核 128 线) ，远胜过英特尔目前最高端的 18 核桌面处理器。
+➜Chromium 项目七成安全漏洞属于内存安全问题
+https://www.solidot.org/story?sid=64457	28675
+Chromium 项目<a href="https://www.chromium.org/Home/chromium-security/memory-safety"><u>报告</u></a>，它七成的严重安全 bug 属于内存安全问题，因此它的下一个项目将是在源头阻止此类 bug。对 2015 年之后发现的 912 个高危级安全 bug 的分析发现，七成为内存不安全问题，如 C/C++ 指针错误，其中一半是使用后释放 bug。这些 bug 遍及整个代码库，非安全性的 bug 很大一部分其根源也是内存安全问题。Chromium 项目称它的沙盒机制在设计时就考虑了此类 Bug 的存在，但现在沙盒和网站隔离机制已经达到其能力的极限。他们现在考虑的一个方案是使用现有的更安全的语言如 Rust 和 Swift 等。
+➜Google Chrome 83 更新默认表单样式
+https://www.solidot.org/story?sid=64458	31414
+匿名读者 写道 <i>"Google Chrome 83 更新默认<a href="https://developers.google.com/web/updates/2020/05/nic83#forms" target="_blank" title="https://developers.google.com/web/updates/2020/05/nic83#forms">表单样式</a>（https://developers.google.com/web/updates/2020/05/nic83#forms），使设备之间样式更加统一。在微软的合作下，带来更好的触控、无障碍、键盘定位支持。"</i><a href="https://www.google.com/chrome/" target="_blank">Chrome 83</a> 在上周释出，主要新特性包括重新设计安全和隐私设置，隐身模式屏蔽第三方 cookies，等等。
+➜GitHub 恢复 Popcorn Time 代码库
+https://www.solidot.org/story?sid=64459	34265
+本月初，代表美国主要电影公司和流媒体公司的美国电影协会向 GitHub 递交了 DMCA 删除通知，称开源项目 <a href="https://github.com/popcorn-official"><u>Popcorn Time</u></a> 广泛侵犯了电影和电视节目的版权。GitHub 之后根据要求<a href="https://www.solidot.org/story?sid=64268" target="_blank"><u>关闭了 </u></a>Popcorn Time 的代码库。现在，Popcorn Time 开发团队递交了反诉，称代码库本身不包含任何版权材料，也不包含任何版权材料的链接。DMCA 通知并不是处理这一情况合适的工具。GitHub 如今<a href="https://torrentfreak.com/github-reinstates-popcorn-time-code-despite-mpa-threat-200520/" target="_blank"><u>恢复了</u></a> Popcorn Time 开源项目的完整访问。
+➜泰国移动运营商泄露 83 亿互联网记录
+https://www.solidot.org/story?sid=64460	44413
+研究人员发现了泰国移动运营商 Advanced Info Service (AIS)子公司控制的一个 ElasticSearch 数据库<a href="https://rainbowtabl.es/2020/05/25/thai-database-leaks-internet-records/?=may-23-2020"><u>可公开访问</u></a>，数据库包含大约 83 亿记录，容量约为 4.7 TB，每 24 小时增加 2 亿记录。AIS 是泰国最大的 GSM 移动运营商，用户约有 4000 万。可公开访问的数据库由其子公司 Advanced Wireless Network (AWN)控制，包括了 DNS 查询日志和 NetFlow 日志，这些数据可用于绘制一个用户的网络活动图。研究人员尝试联系 AIS 但毫无结果，直到最后联络泰国国家计算机紧急响应小组之后数据库才无法公开访问。
+➜Notion 被屏蔽
+https://www.solidot.org/story?sid=64461	45899
+笔记应用 Notion 通过<a href="https://status.notion.so/"><u>官方状态页</u></a>和 <a href="https://twitter.com/NotionStatus/status/1264713745105707009"><u>Twitter 账号</u></a>宣布它遭到屏蔽，表示正在监视这一情况，会继续发布更新。Notion 是将笔记、任务、维基和数据库集成在一起的协作平台，成立于 2016 年，最初有免费、个人、团队和企业四种订阅方案，本月 Notion 宣布将免费和个人订阅方案合二为一，个人订阅方案增加一个专业版，个人订阅免费方案的存储不再有容量限制，主要限制为只能与五名外部用户协作，文件上传容量最大为 5MB。
+➜荷兰法庭裁决外祖母必须从其社交账号上移除孙辈的照片
+https://www.solidot.org/story?sid=64462	47657
+在女儿投诉之后，一家荷兰法庭裁决外祖母<a href="https://www.theregister.co.uk/2020/05/22/gdpr_grandmother_facebook/" target="_blank"><u>必须从其社交账号上移除孙辈的照片</u></a>。由于家庭矛盾，这名外祖母与女儿已经一年多没说过话了。其女儿的三个年幼孩子出现在她发布在 Facebook 和 Pinterest 上的家庭照片里。根据欧洲的数据保护法 GDPR，发表未成年人的照片需要征得法定监护人的同意。女儿在今年 2 月通知母亲，称已通过警方发出请求，要求在 3 月 5 日前移除三个孩子的照片，否则就要诉诸法庭。在其母亲未遵守要求之后，女儿将她告上法庭。在法庭裁决之后，这位外祖母移除了照片，但在 Facebook 上保留了一位外孙的照片，这位外孙她一直照顾了 7 年之久。法官给了外祖母 10 天时间移除照片，之后照片每保留一天将征收 50 欧元的罚款。
+➜阿里巴巴营收因疫情飙升
+https://www.solidot.org/story?sid=64463	49832
+阿里巴巴公布的<a href="https://cn.reuters.com/article/alibaba-sales-lockdown-shopping-0522-fri-idCNKBS231068"><u>第四季营收和获利超出预期</u></a>，因新冠疫情期间的封锁促使更多的人在网上购买必需品。阿里巴巴当季核心电商业务增长近 19% 至 938.7 亿元人民币。云计算业务营收增加约 58%。鉴于中国经济比欧美等主要经济体提早重启，阿里巴巴表示，预计 2021 财年营收将超过 6,500 亿元人民币。阿里巴巴首席财务官武卫表示，公司正密切关注美国参议院通过的《外国公司问责法案》。她表示，阿里巴巴的财务报表均依照美国公认会计原则(GAAP)准备，自 2014 年上市以来，一直向美国证券交易委员会(SEC)备案，以高标准的透明度要求自己。
+➜Windows 纸牌每月仍然有 3500 万玩家
+https://www.solidot.org/story?sid=64464	49907
+诞生于 1990 年的 Windows 纸牌游戏（Microsoft Solitaire）上周五<a href="https://www.theverge.com/2020/5/22/21266718/microsoft-solitaire-30-years-old-history-birthday-record-attempt" target="_blank"><u>迎来了 30 周年</u></a>，这款 Windows 操作系统自带的游戏至今每个月仍然有 3500 万玩家。纸牌游戏是随 1990 年发布的 Windows&nbsp; 3.0 提供给用户的，最初是设计教用户如何使用鼠标，操作鼠标抓住虚拟纸牌拖放到一个地方，教用户基本的拖曳操作。它是史上最常用的 Windows 程序之一，被预装到数以亿计的设备上.它的开发者 Wes Cherry 是微软的实习生，他没有从游戏上获得任何版税。Cherry 最初还给游戏加入了老板模式，伪装成电子表格去愚弄老板和同事，但在正式发布前被要求移除了。如果不移除的话，也许能拯救某些因上班玩纸牌被解雇的员工。
+➜网易和京东将在香港二次上市
+https://www.solidot.org/story?sid=64465	51348
+网易计划 6 月 11 日在香港进行<a href="https://cn.reuters.com/article/chinese-secondary-listing-hongkong-0522-idCNKBS23100L"><u>二次上市</u></a>，一周后京东也将有同样行动。这两宗交易共计可筹资 50 亿美元，将成为今年以来香港股权资本市场规模最大的交易。京东的规模较大，通过出售 5% 的股权可能筹资高达 30 亿美元；网易的筹资目标最高为 20 亿美元。这两家在纳斯达克挂牌的企业已向港交所秘密递件，并正在进行第二上市的准备工作。美国参议院上周三通过了一项议案，可能会阻止一些中国公司在美国交易所上市，除非它们遵守美国的审计和监管标准。

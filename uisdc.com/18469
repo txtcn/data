@@ -1,0 +1,627 @@
+➜如何利用Figma构建组件库？我们团队总结了这篇经验
+https://www.uisdc.com/build-component-library-with-figma	57963
+<p>最近团队尝试使用Figma构建一套适用团队的组件库与规范，发现Figma比Sketch的构建方式要更简单和更灵活，尤其是自动布局（Auto Layout）和联级嵌套能极大提升组件库的设计灵活度；另外Figma插件库日新月异，能够有效提升组件库在构建过程中的效率。本文主要分享了我们团队在创建组件库中的一些经验方法。</p>
+<p>首先我们确定组件库框架包含哪些内容，这里主要针对ToB端的业务场景来进行演示。</p>
+<h4><span class="auto_menu">组件库框架</span></h4>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381131" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-1.jpg" width="1024" height="576" /></span></p>
+<p>B端业务组件库框架内容相比C端产品的要复杂且难以上手，除了对产品业务的理解和掌握之外，组件库到底有哪些内容？针对我们团队所接触的B端业务场景进行需求整体、分析、调研并抽象出具体的组件库框架：</p>
+<ul>
+<li>主题样式</li>
+<li>基础组件</li>
+<li>框架模式</li>
+<li>拓展控件</li>
+<li>通用模板</li>
+<li>规范映射表</li>
+</ul>
+<p>可根据项目业务或产品场景需求去对框架内容进行调整。</p>
+<p>以下内容会按照构建顺序进行拆解</p>
+<h4><span class="auto_menu">主题样式</span></h4>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381132" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-2.jpg" width="1024" height="576" /></span></p>
+<p><strong>1. 颜色</strong></p>
+<p>首先是颜色样式的创建，颜色通常会包含主题（品牌）色，中性色或者辅助色，在Figma中我们唯一需要做的是对这些颜色进行命名管理；创建第一个颜色样式后通过在文件标题的下拉菜单中进行首次样式发布，发布成功即可在其他Figma文件中引用。</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381133" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-3.jpg" width="1024" height="576" /></span></p>
+<p>△ 颜色的创建阶度可以借助 Material Design Color tool 工具来辅助生成</p>
+<p><strong>2. 字体</strong></p>
+<p>Figma的字体样式与Sketch的创建方式不同，Figma中只需要关注字号与字重即可，而过去在Sketch中除了对字号、字重创建以外还需对字体的对齐方式进行创建，这样会增加样式库的管理维护成本，同时也增加了使用难度。</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381134" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-4.jpg" width="1024" height="576" /></span></p>
+<p>在Figma中我们只需关注组件库需要用到的字号以及少量的字重，这里建议样式创建要克制，尽可能保证样式库精简适用。字号我们采用 12px-64px，使用了Regular和Bold两种字重。</p>
+<p>选择一款字体（推荐思源黑体），字体需要考虑团队协作中存在不同终端的适配问题，如果使用苹方则Win系统中会出现字体丢失的情况，中文字体的使用插件 Chinese Font Picker 。</p>
+<p><strong>3. 图标</strong></p>
+<p>图标在之前的组件库搭建中存在两种嵌套方式，第一种是目前推荐的直接使用Svg的方式，通过导入Svg图标进行并创建成组件进行管理使用，输出则选择性输出即可。第二种是将图标库编译成一个字体包，通过字体的方式去引用和管理，字体图标的应用方式依然在许多B端系统上可见，过去存在浏览器版本和兼容性问题，字体图标是当时最好的选择；缺点是维护成本较高，图标字体包无法选择性引用，字体包的大小会影响页面加载性能。</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381135" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-5.jpg" width="1024" height="576" /></span></p>
+<p><strong>4. 图标的批量创建与管理</strong></p>
+<p>在Figma中我们可以很轻松的去创建一个图标库，得益于Figma支持批量创建Component，批量创建完以后我们再通过插件来实现图标组件的批量重命名。Rename It（重命名插件）Find &amp; Focus（批量查找插件）</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381136" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-6.jpg" width="1024" height="576" /></span></p>
+<p><strong>5. 阴影</strong></p>
+<p>阴影样式的创建相对简单，设置好阴影参数与对应命名并逐个创建即可。</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381137" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-7.jpg" width="1024" height="576" /></span></p>
+<p><strong>6. 圆角</strong></p>
+<p>组件库中常用到圆角，圆角属于组件库中的一种样式变量，圆角有很强的风格属性，因此过去我们会对圆角进行单独管理以方便后期对组件库中的圆角进行全局管理，在Figma中圆角没有单独的样式管理属性，只需要对圆角进行规范定义即可。圆角在组件库中存在多种属性状态，例如按钮组中就存在左右结构的半圆角属性，应该在组件库的创建过程中就提前考虑并约束。</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381138" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-8.jpg" width="1024" height="576" /></span></p>
+<p><strong>7. 间距</strong></p>
+<p>在Figma中间距需要组件化（Component），自动布局（Auto Layout）可以算Figma组件化中的杀手锏，通过简单的属性设置就可以实现自动布局效果；在间距创建中需要对横向（X轴）以及竖向（Y轴）分别进行创建并以不同的样式来区分，当然所有的间距都是通过母版（Master Component）进行复制创建的，这样可以通过母版来对全局的间距进行样式管控。</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381159" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-20200722-1.gif" width="800" height="601" /></span></p>
+<p>间距的数值设定可根据设计规范进行调整，我们采用了4px-256px的倍数区间，可以适应大部分业务场景。</p>
+<h4><span class="auto_menu">规范映射表</span></h4>
+<p><strong>1. 规范映射表</strong></p>
+<p>为什么需要规范映射表？当组件库的样式、组件、组件状态到一定的数量就难以维护，设计与开发对接成本会显着增高；如果我们通过一个映射表来对应组件库中的样式和组件，提取组件库中的变量并设定映射名称，减少对样式或组件本身的依赖性，而是通过修改映射参数来实现组件库变更。</p>
+<p>映射表中常需要对样式中的颜色、字体、圆角、阴影、间距等样式进行映射关联，这些常用变量在开发过程中可以通过代码进行关联与 Figma中的组件库关联是一致的。</p>
+<h4><span class="auto_menu">基础组件</span></h4>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381142" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-12.jpg" width="1024" height="576" /></span></p>
+<p><strong>1. 按钮</strong></p>
+<p>我们通过对按钮组件的构建进行剖析基本能够掌握组件构建的基本原理，其他组件的构建方式基本无异，只存在嵌套层级的多少差异。</p>
+<p>在构建组件之前我们可以学习 Atomic Design （原子设计）能帮助你深入了解构建原理。</p>
+<p>组件库的构建方式完全可以采用原子设计理论构建：</p>
+<p>Brad Forst（原子设计作者） 将此理论运用在界面设计中，形成一套设计系统，包含5个层面：原子、分子、组织、模板、页面。</p>
+<p>在组件库搭建中，原子属于最小颗粒度单位，例如：任一形状、文字、颜色、图标等。</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381143" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-13.jpg" width="1024" height="287" /></span></p>
+<p>[link https://www.uisdc.com/atomic-design-theory]</p>
+<p>组件搭建除了需要掌握其构成原理之外还需要了解每一个组件的类型、状态、规格等信息，这些将是组件库的核心内容。</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381144" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-14.jpg" width="1024" height="576" /></span></p>
+<p>以按钮为例，在ToB侧Web端业务系统中常用到三种尺寸规格（24px、32px、40px），常用状态包含：Normal、Hover、Focused、Pressed、Disabled；按钮还拥有多个不同类型例如：Primary、Outline、Dashed、Danger，当一个组件存在多种形态时意味着组件的复杂程度提升，维护成本增加。</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381145" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-15.jpg" width="1024" height="576" /></span></p>
+<p>通过之前的组件库构建经验来看，不同形态的相同组件的结构一致，只存在样式差异，而Figma刚好满足这一需求，在相同的母版（Master Component）下的副件可以单独设置样式并不会影响与母版之前的关联（Sketch无法让副件与母版存在样式差异）。</p>
+<p>我们创建一个涵盖所有按钮形态的母版，通过拷贝副件并对副件进行样式变更形成新的按钮状态，选中已经变更样式的副件创建为新的组件（Component），这样就实现了组件分级嵌套效果。</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381163" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-20200722-5.gif" width="1200" height="668" /></span></p>
+<p>△ 组件分级嵌套效果演示</p>
+<p>组件分级嵌套可以帮助我们更加灵活的管理组件库，上图Master A为组件母版，而A1、A2、A3从母版拷贝而来（副件），对副件进行样式修改后创建为新的组件并拷贝至A1_1、A1_2、A1_3，这样就实现A 管控 所有A的副件，而A1可以单独对A1_1进行管控而不影响其他副件。</p>
+<h4><span class="auto_menu">拓展控件</span></h4>
+<p><strong>1. 卡片</strong></p>
+<p>卡片属于拓展控件可以对应 Atomic Design 中（原子、分子、组织、模板、页面）里的「组织」，「组织」是通过原子或分子组合构成。</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381147" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-17.jpg" width="1024" height="576" /></span></p>
+<p>相比按钮，卡片在搭建过程中使用了间距；布局单一的按钮只需要通过自动布局（Auto Layout）就可以满足，而灵活多变的卡片则需要通过间距来配合自动布局实现最终效果。</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381160" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-20200722-2.gif" width="1200" height="622" /></span></p>
+<p>在复合组件中需要满足模块替换的灵活性，我们通过给组件划分为不同模块，而模块中的内容可以自由定制。</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381148" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-18.jpg" width="1024" height="576" /></span></p>
+<p>△ 卡片组件的分解图</p>
+<p>通过分解图我们可以了解需要替换的模块必须为组件态（Component）且尺寸一致，满足条件后只需选中该模块右侧属性面板进行替换即可。</p>
+<h4><span class="auto_menu">框架模式</span></h4>
+<p><strong>1. 页面布局/栅格</strong></p>
+<p>Figma中的布局网格（Layout Grid）只针对画布有效，因此在创建栅格布局前需要选中一个有效画布，在右侧属性面板可以选择列（Columns）行（Rows）或格（Grid）新建，设置好布局网格画布里面的元素在靠近网格边线时会有吸附效果可以辅助设计的准确性。</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381150" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-20.jpg" width="1024" height="576" /></span></p>
+<p><strong>2. 页面结构</strong></p>
+<p>左右结构在ToB业务场景比较常见，类似的页面结构我们只需要把左侧的菜单和头部创建单独的组件模块即可。</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381151" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-21.jpg" width="1024" height="576" /></span></p>
+<p>通过组件嵌套我们可以轻松管理一套组件库两套颜色模式（浅色版与深色版）</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381161" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-20200722-3.gif" width="1200" height="673" /></span></p>
+<h4><span class="auto_menu">通用模板</span></h4>
+<p><strong>1. 概览&amp;Dashboard</strong></p>
+<p>通过原子、分子、组织构建模板，而模板的组合就能形成各种场景页面。</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381153" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-23.jpg" width="1024" height="576" /></span></p>
+<p>通过自动布局（Auto Layout）我们可以对较为复杂的表格组件进行合理管控，例如新增删除都能按照既定间距进行自动拓展。</p>
+<p>同时通过组件嵌套实现表头带动表内容进行联动，极大的提高了在复杂场景下的设计效率。</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381162" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-20200722-4.gif" width="1200" height="692" /></span></p>
+<h4><span class="auto_menu">最后</span></h4>
+<p>组件库的意义在于能够建立设计约束，保证设计一致性；更重要的是能够为产品/团队规范设计输出，提升设计效率。</p>
+<p>组件库的搭建需要因地制宜，根据产品或团队需求去构建，保持组件库轻量高效是我们的目标；一切能够提升设计效率的可能性都应该值得尝试。</p>
+<p>欢迎关注作者微信公众号：「AsiaInfo Design」</p>
+<p><span class="img-zoom"><img alt="如何利用Figma构建组件库？我们团队总结了这篇经验" class="alignnone size-full wp-image-381155" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zj-20200722-25.jpg" width="180" height="180" /></span></p>
+➜用实战案例，帮你掌握设计师常用的设计模型（一）
+https://www.uisdc.com/fogg-and-mentalaccounting	60961
+<h4><span class="auto_menu">前言</span></h4>
+<p>设计师经常会遇到这样的囧境：思考太肤浅、思考不够体系化、设计无法说服别人，针对这种境况希望从设计模型的角度去帮助大家扩展设计思维，让设计方案有理有据，本文用几个实际案例来展示如何使用设计模型辅助设计，希望帮助大家可以成长为一个有思考深度能解决问题的设计大师。</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381297" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-26.jpg" width="600" height="225" /></span></p>
+<p>△ 优秀设计师必备素养：能解决问题，还有思考深度</p>
+<h4><span class="auto_menu">常用设计模型</span></h4>
+<p>在实际做项目的过程中，既有指导整个设计流程的体系化的设计方法论，又有针对具体设计方案的指导性设计模型，所以设计模型按照使用场景可以分为2大类：流程框架型和设计策略型。流程框架型设计方法论为设计师整个设计过程提供明确的步骤与框架，让设计过程更加体系化；而设计策略型方法论让设计师的设计方案有理有据，富有说服力，设计师常常在进行提案输出时用设计策略型方法论帮助自己的方案更加有说服力。</p>
+<p>常用的流程框架型的设计模型主要包含：</p>
+<ul>
+<li>Design Thinking 设计方法</li>
+<li>Google Design Sprint 设计方法</li>
+<li>双钻模型和GUCDR模型</li>
+</ul>
+<p>设计策略型的设计模型主要包含下面几种：</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381293" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-22.jpeg" width="1080" height="348" /></span></p>
+<p>这些设计方法论存在的意义便是「辅助」设计师做设计。由于设计细分领域很多，每个领域都有很多大师提出的设计方法论，所以大家要根据具体情况去使用这些方法论，这里只是汇总了部分较为常用的设计方法论与大家分享。</p>
+<p>在设计的每个阶段都有对应的设计模型，很多设计模型需要大家在用的时候慢慢探索，本文结合项目实例重点讲一下如何运用FOGG行为模型和心理账户模型来辅助设计。</p>
+<h4><span class="auto_menu">FOGG行为模型</span></h4>
+<p>FOGG模型阐述了如何让行为发生，表明一次转化行为的完成需要具备三个要素：</p>
+<ul>
+<li>动机（motivation）</li>
+<li>成本／能力（ability）</li>
+<li>触发点（trigger）</li>
+</ul>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381295" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-24.jpg" width="639" height="600" /></span></p>
+<p>△ FOGG行为模型</p>
+<p>下面我们结合直播项目看一下如何使用FOGG行为模型。</p>
+<p>例：直播间如何引导用户进行礼物打赏？</p>
+<ul>
+<li>背景：2019年移动直播行业付费用户规模约1240万，行业付费率仅为3.58%，当前直播行业用户付费比率整体偏低。</li>
+<li>分析：新用户自身没有打赏习惯、不舍得花钱、打赏主播操作成本高。</li>
+<li>设计目标：提升用户礼物打赏率。</li>
+</ul>
+<p>从模型中可以看到我们需要做的是：</p>
+<ul>
+<li>提升打赏的动机</li>
+<li>提升用户能力，降低使用难度</li>
+<li>恰到好处地提供触发点</li>
+</ul>
+<h5>1. 如何提升打赏动机？</h5>
+<p>fogg行为模型中提到用户主要的3个动机：</p>
+<ul>
+<li>愉悦的感受（Pleasure)</li>
+<li>期待（Hope）</li>
+<li>归属感（Acceptance)</li>
+</ul>
+<p>那么如何在直播中提升用户打赏的动机呢？</p>
+<p><strong>降低成本感知，鼓励用户打赏。</strong></p>
+<p>打赏行为的去货币化</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381275" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-4.jpeg" width="1080" height="310" /></span></p>
+<p>△ 使用V钻代替货币，1元=10v钻，降低用户的打赏成本感知，从而提升打赏欲望。</p>
+<p><strong>给与奖励，制造意外收获的惊喜（愉悦）。</strong></p>
+<p>首充超值体验</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381276" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-5.jpeg" width="594" height="600" /></span></p>
+<p>△ 给用户超出付费价值的激励，增加用户「捡到便宜」的愉悦感受。</p>
+<p><strong>增加打赏感官刺激，满足用户打赏后的互动期待（期待、归属）。</strong></p>
+<p>接地气的取名方式vs炫酷的名字</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381294" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-23.jpg" width="563" height="325" /></span></p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381273" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-2.jpeg" width="575" height="320" /></span></p>
+<p>△ 便宜礼物名字采用网络用语，使用户产生亲切感；昂贵礼物采用酷炫的名字，符合土豪身份，通过这样的设计吸引不同阶层用户点击。</p>
+<p>有好寓意的打赏数量</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381277" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-6.jpeg" width="381" height="600" /></span></p>
+<p>△ 通过有好寓意的打赏数量吸引土豪来选择，使打赏更有气势，并且不同数量级的礼物触发不同的动效，给用户积极的回应。</p>
+<p>打赏后的动效</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381272" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-1.gif" width="250" height="541" /></span></p>
+<p>△ 设置不同礼物特效，越贵的礼物特效越复杂，同时刷礼物也会引起主播对用户的感谢，这种方式符合用户的期待，同时给予用户极大的满足感，也是促进用户打赏的最大动力。</p>
+<h4><span class="auto_menu">如何提升用户能力，降低打赏难度？</span></h4>
+<p>有了动机不代表会行动，要让用户完成打赏，他们必须有做这件事的能力；由于动机的不稳定性，所以需要降低做这件事情的成本，用户能力才会越强。</p>
+<p>有2种方法可以提升用户能力，降低使用难度：</p>
+<ul>
+<li>训练用户，帮助他们不断提升自我直到可以完成目标行为；</li>
+<li>降低行为难度，简化用户路径，降低操作成本。</li>
+</ul>
+<p>结合直播我们看一下如何提升用户能力，降低打赏难度。</p>
+<p>培养用户打赏习惯，逐步升级引导，完成打赏目标。</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381274" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-3.jpeg" width="1080" height="184" /></span></p>
+<p>简化用户打赏路径，降低操作、决策成本。</p>
+<p>礼物快捷打赏</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381278" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-7.jpeg" width="942" height="142" /></span></p>
+<p>△ 增加礼物打赏快捷入口，只要点击就可发送成功，简化了普通用户的打赏路径，减少用户从面板选择礼物的决策成本。</p>
+<h5>3. 如何恰到好处地提供触发点？</h5>
+<p>增加了动机和能力只能是增加了用户产生该行为的可能性，至于用户的行为最终会不会真正发生，还取决于是否提供了合适的触发点。</p>
+<p>针对不同的人群，触发点的设计也不相同，结合直播我们看一下如何恰到好处地提供触发点。</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381296" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-25.jpg" width="841" height="600" /></span></p>
+<p>△ 针对不同人群的设计策略</p>
+<ul>
+<li>对于高动机、低能力的人，他们需要一个引导来帮助他们完成打赏；</li>
+<li>对于高动机、高能力的人，他们只需要一个触发的入口和满足更多高级需求；</li>
+<li>对于低动机、低能力的人，需要更多的激励引导用户发生打赏行为；</li>
+<li>对于低动机、高能力的人，需要更多的激励来激发他们做某件事的动机。</li>
+</ul>
+<p><strong>针对低动机、低能力的人，提供低门槛的打赏和有效的激励来激发用户消费。</strong></p>
+<p>快捷0元打赏</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381279" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-8.jpeg" width="847" height="210" /></span></p>
+<p>△ 为没有充值记录的新用户提供快捷0元打赏，让用户体验到打赏的乐趣和快感，培养用户打赏习惯。</p>
+<p>多通道提供首充送礼入口</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381280" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-9.jpeg" width="847" height="142" /></span></p>
+<p>△ 直播间首充入口</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381281" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-10.jpeg" width="649" height="600" /></span></p>
+<p>△ 打赏礼物面板首充入口</p>
+<p><strong>多通道提供首充入口，引导用户完成首次充值。</strong></p>
+<p>对于低动机、高能力的人，提供更多的奖励来激励用户。</p>
+<p>送福袋赢大奖</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381285" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-14.jpeg" width="560" height="600" /></span></p>
+<p>△ 主要抓住用户冒险、贪的心理，吸引用户来抽奖或者打赏福袋来获得一定收入，激励用户进行更多的打赏。</p>
+<p><strong>针对高动机、低能力的人，简化用户路径，降低操作成本。</strong></p>
+<p>快捷VR礼物（普通用户）</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381282" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-11.jpeg" width="429" height="600" /></span></p>
+<p>△ 结合场景提供快捷VR礼物，简化用户打赏主播的行为路径。</p>
+<p>低操作成本的连击效果（土豪用户）</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381283" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-12.jpeg" width="840" height="600" /></span></p>
+<p>△ 连击效果降低用户对钱的感知，增加打赏趣味，减少用户打赏的操作步骤，刺激用户贡献更多的打赏价值。</p>
+<p><strong>对于高动机、高能力的人，需要满足个性化需求。</strong></p>
+<p>DIY个性礼物</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381284" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-13.jpeg" width="589" height="600" /></span></p>
+<p>△ 利用用户追求与众不同、标新立异的心理，在普通礼物没有满足用户的情况下用个性化的方式刺激用户付费，同时也弥补了标准化礼物无法满足大众用户不同口味的需求。</p>
+<h4><span class="auto_menu">心理账户模型</span></h4>
+<p>心理账户（mentalaccounting），是芝加哥大学行为科学教授查德·塞勒（Richard Thaler）在1980年提出的概念。心理帐户是行为经济学中的一个重要概念，由于消费者心理帐户的存在，个体在做决策时往往会违背一些简单的经济运算法则，从而做出许多非理性的消费行为。</p>
+<p>心理学有一个经典的实验：</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381286" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-15.jpeg" width="1080" height="519" /></span></p>
+<p>丢50块钱和丢50块的电影票是对等的，可是统计结果有如此大的差距都是因为有心理账户的存在。</p>
+<p>心理账户有三大特征：</p>
+<ul>
+<li>不同的收入来源之间，有不可替代性（就是自己努力赚的钱更值钱）；</li>
+<li>不同的消费项目之间，有不可替代性（情感账户让产品更值钱且不可替代，例如钻石）；</li>
+<li>用不同的态度来对待不同数量的收入。</li>
+</ul>
+<p>在产品中要想刺激用户消费把握2个方向：</p>
+<ul>
+<li>正向激励：让用户的心理账户觉得这笔消费很划算；</li>
+<li>反向激励：让用户的心理账户觉得某种行为会让自己的账户产生损失。</li>
+</ul>
+<p>下面我们结合直播项目看一下如何使用用户心理账户模型。</p>
+<p>例：直播间如何引导用户进行礼物打赏？</p>
+<p>合理利用免费的心理账户，培养用户打赏习惯。</p>
+<p>对新用户适当提供免费礼物，对于免费账户里面的钱用户会不大珍惜，会更快的打赏掉，从而培养用户打赏习惯。</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381287" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-16.jpeg" width="962" height="353" /></span></p>
+<p>△ 免费礼物</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381288" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-17.jpeg" width="404" height="408" /></span></p>
+<p>△ 首充送礼</p>
+<p>为用户创造心理账户，降低用户对成本的感知。</p>
+<p>打赏体系去货币化，1元=10v钻，让打赏账户不和钱直接挂钩，降低用户对打赏成本的感知，从而提升付费率。</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381289" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-18.jpeg" width="700" height="600" /></span></p>
+<p>△ 充值面板</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381290" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-19.jpeg" width="824" height="476" /></span></p>
+<p>△ 打赏礼物价格</p>
+<p>提供限时折扣/活动，反向激励用户。</p>
+<p>结合活动不定期做限时折扣或者活动礼物，让用户感觉错过就有损失，刺激其消费。</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381291" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-20.jpeg" width="800" height="149" /></span></p>
+<p>△ 限时折扣</p>
+<p>从低价值心理账户转移到高价值心理账户让用户掏更多钱。</p>
+<p>建立粉丝体系，让用户心理账户向情感账户转移，赋予打赏更高的价值。</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381292" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-sz-20200723-21.jpeg" width="454" height="600" /></span></p>
+<p>△ 粉丝团</p>
+<p>以上便是结合实际项目阐述了如何利用设计模型来辅助我们做设计分析，希望对大家有帮助。</p>
+<h4><span class="auto_menu">结语</span></h4>
+<p>凡事都有两面性，在设计思考遇到瓶颈时，这些设计模型对于我们思考深度的增加和思维扩展有很大帮助；但是设计模型会对设计中的感性和创意部分有限制，作为设计师要随时警惕。</p>
+<p>更多设计模型：</p>
+<p>[link https://www.uisdc.com/design-model-commonly-used-by-designers]</p>
+<p>欢迎关注作者微信公众号：「VMIC UED」</p>
+<p><span class="img-zoom"><img alt="用实战案例，帮你掌握设计师常用的设计模型（一）" class="alignnone size-full wp-image-381269" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-ew-20200723-1.jpg" width="180" height="182" /></span></p>
+➜从零开始！Web产品设计全新操作指南
+https://www.uisdc.com/web-product-design	61233
+<p>最近在做工具类Web端的改版项目，查阅了网上各种关于web设计的文章感觉年代都比较久远了，因此这边借着项目踩过的一些坑给大家总结一份比较实用的web产品设计「葵花宝典」，可以帮助大家 0-1 快速起手web的设计。无论是现在用的还是将来可能用的，先收藏着绝对有备无患。</p>
+<h4><span class="auto_menu">如何定义Web产品的框架</span></h4>
+<p>说到web很多铁汁就会马上联想到可怕的企业级B端，毕竟C端的内容现在已经大量移动端化了。那么web系统设计一旦是大家想的大量类似后台系统的东西，对于设计师而言岂不是没啥用武之地？其实在庞大的web类别中，设计的类别分为很多种：从工具到后台，UX设计师起到很重要的一点作用就是判断web产品适配的框架并进行定义。</p>
+<p>之前看很多文章通过web服务的用户（即这个web是B端还是C端）来定义视觉与框架，比如淘宝电商的PC版就是个C端的web，对应一种布局框架；而SaaS后台系统是个B端的web，又对应一种框架什么的。我对着我们的项目纠结了很久还是觉得这样的分法无法兼容所有web产品。举个栗子：我们在做的是一个AI视频面试系统（PC），用户包括HR以及专业面试官，按服务用户来说这无疑是个企业级的B端产品了，但我们如若按照B端纯效率的框架进行设计是无法满足产品AI智能化目标的需求，也无法很好的与竞对形成差异。参看以下示例图：</p>
+<p><span class="img-zoom"><img alt="从零开始！Web产品设计全新操作指南" class="alignnone size-full wp-image-381224" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zn-20200723-2.jpg" width="1200" height="1677" /></span></p>
+<p>因此推荐大家依据产品目标与用户的使用场景来定义web系统的框架，也就是说同一个web产品的也可以依据场景使用的不同出现不同目标属性的框架。这里我们回忆一下常见的2种产品目标属性对应的web框架：</p>
+<p><strong>1. 效率工具属性——左右布局/T型布局等</strong></p>
+<p>常用于工具型、后台等有较高效率目标的产品功能。依据信息内容、层级的复杂程度应用T型与C型布局、甚至更复杂的口型布局和综合布局等。</p>
+<p><span class="img-zoom"><img alt="从零开始！Web产品设计全新操作指南" class="alignnone size-full wp-image-381225" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zn-20200723-3.jpg" width="1000" height="1239" /></span></p>
+<p><strong>2. 陈列表现属性——上下布局</strong></p>
+<p>常用于官网、产品展示（电商卖货）等有用户停留目标的产品功能。</p>
+<p><span class="img-zoom"><img alt="从零开始！Web产品设计全新操作指南" class="alignnone size-full wp-image-381226" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zn-20200723-4.jpg" width="1200" height="741" /></span></p>
+<p>大家切记web系统的框架是灵活可配置的，切莫陷入「一种框架定终身」的误区中。这里再举一个设计师应该都常用的web栗子：蓝湖的首页使用了左右布局的效率属性布局（满足用户快速建项目找项目等效率操作），进入二级页后却变为了陈列属性的上下布局（满足多种用户角色的查阅体验），是一个灵活依据用户使用场景搭配框架的web系统。</p>
+<p><span class="img-zoom"><img alt="从零开始！Web产品设计全新操作指南" class="alignnone size-full wp-image-381228" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zn-20200723-6.jpg" width="1200" height="1487" /></span></p>
+<p>至于web的视觉部分因为定义上和移动端类似这里就不花篇幅来说了，大家可以直接挪用在移动端定义视觉风格的那一套来说。</p>
+<h4><span class="auto_menu">响应式布局与栅格应用</span></h4>
+<p>首先我们先理清网页的响应是指系统对媒介（web运行的设备）以及视窗（显示web的窗口——浏览器）的适应变化。严格来说，响应式布局需要设计师做2件事儿：</p>
+<ul>
+<li>需要设计师适配手机（小屏）、平板（中屏）、笔记本（大屏）、台式（超大屏）做至少3个临界点的不同设计方案，保障在不同屏幕分辨率加载对应的样式。</li>
+<li>同时确定触发响应的视窗宽度最小值（俗称断点Breakpoint)的对应内容区域响应策略（收起or折叠等）。</li>
+</ul>
+<p>但实际上完全按这样操作的研发成本有点大，实用性也因产品而异。比方说，如果你们的web产品用户的大部分使用场景仅限于办公笔记本，同时你们还有对应的移动端产品支持跨端使用，那么做全局响应就显得没有那么必要了，实现大屏分辨率和视窗的响应其实就已经满足99%的需求了。所以现在市面上实现全局响应的web产品还是比较少的，但也仍然有很经典的全局响应式例子：Ant Design，大家可以体验感受一下它是如何实现媒介与视窗的完美响应的。</p>
+<p><span class="img-zoom"><img alt="从零开始！Web产品设计全新操作指南" class="alignnone size-full wp-image-381229" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zn-20200723-7.jpg" width="1200" height="1406" /></span></p>
+<p>不过呢无论响应式做到什么程度，我们都建议在设计web系统初期建立一个web栅格系统，它会影响到响应式布局的开发效果，下文我们会说到它是如何影响的。在此之前还是先科普下栅格概念，虽然关于栅格的文章实在太多了，但相信肯定还是有铁汁依旧迷茫，这里我们简化一下，只说web最常用的2种：12栅格系统和24栅格系统。</p>
+<p><span class="img-zoom"><img alt="从零开始！Web产品设计全新操作指南" class="alignnone size-full wp-image-381230" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zn-20200723-8.jpg" width="1200" height="1773" /></span></p>
+<p>所有栅格系统都遵循一个规则就是：「格子」（内容）+「水槽」（留白）=「列」。而12/24这2种栅格系统的差异主要在于「列」的数量，24栅格相对承载的信息内容会更多一些，适合复杂的后台功能设计，比如很多企业级后台开发经常调用的Ant Design就属于24栅格系统的。</p>
+<p>那么具体栅格是如何影响响应式布局的呢？我们通过栅格可以使每个「列」的内容由固定数值转化为百分比的概念，在web的开发中就可以定义每个「列」占全屏的百分比，在屏幕分辨率缩放的时候也进行对应的百分比缩放。</p>
+<p><span class="img-zoom"><img alt="从零开始！Web产品设计全新操作指南" class="alignnone size-full wp-image-381231" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zn-20200723-9.jpg" width="1200" height="643" /></span></p>
+<p>了解完这些，在开始设计栅格系统前我们还需要确认一个事情：就是我们需要做自适应的区域，也就是栅格的区域范围。另外值得注意的是，在上下布局框架中还会牵扯到安全区/版心的概念（即内容展示集中区域），在这种布局中安全区内才需要进行栅格部署。我比较常用的设计画板大小1440，对应安全区960，大家可以根据实际开发与设计情况调整具体数值。</p>
+<p><span class="img-zoom"><img alt="从零开始！Web产品设计全新操作指南" class="alignnone size-full wp-image-381232" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zn-20200723-10.jpg" width="1200" height="1216" /></span></p>
+<h4><span class="auto_menu">PC vs 移动端设计规范与组件</span></h4>
+<p>我们先来聊个面试题hiahia：PC和移动端在设计思维上有何不同？</p>
+<p>总结来说PC和移动端最大的3个不同点就是：屏幕承载信息量（物理尺寸）、互动交互方式（交互手势）和系统操作体验（操作系统）。这3点灰常直白，无需过多解析大家都明白，具体是这3个不同点会直接导致PC和移动端在设计思维上的2点核心差异：</p>
+<p><strong>1. 布局思路</strong></p>
+<p>移动端屏幕因为操作系统和屏幕限制更关注单视窗的内容展现，整体阅读顺序基本单一是由上至下的，排布上基本使用上下布局或者左右布局的简单布局，基本不会拓展复杂的布局。</p>
+<p>同时基于不同的人机交互，移动端为了适应人们的单手操作，通常会把控件放置在视窗的中间或底部。但pc端的操作视窗更倾向多任务同时处理以及各区域的可触达性，整体阅读顺序则可能是从左到右的，排布上需要根据实际情况进行框架定义与拓展。</p>
+<p><strong>2. 应用组件</strong></p>
+<p>基于2个端口3个不同的feature，PC与移动端各有自己特有的组件形式，在同一场景的组件使用中2端的组件大可能不同。2者之间从交互手势到组件都是需要转译的，比如：移动端的主要交互手势都是基于触摸设计的，所以使用单手下滑的下拉加载控件是最方便的；而PC碍于不同的手势交互，则使用固定按钮加载刷新内容。</p>
+<p>这里给大家对比几组典型的PC与移动端组件的转译：</p>
+<p><span class="img-zoom"><img alt="从零开始！Web产品设计全新操作指南" class="alignnone size-full wp-image-381233" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zn-20200723-11.jpg" width="1200" height="692" /></span></p>
+<p>△ 面包屑Breadcrumb</p>
+<p><span class="img-zoom"><img alt="从零开始！Web产品设计全新操作指南" class="alignnone size-full wp-image-381234" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zn-20200723-12.jpg" width="1200" height="692" /></span></p>
+<p>△ 选择框Picker</p>
+<p><span class="img-zoom"><img alt="从零开始！Web产品设计全新操作指南" class="alignnone size-full wp-image-381235" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zn-20200723-13.jpg" width="1200" height="692" /></span></p>
+<p>△ 分页Pagination</p>
+<p>最后分享一波之前在滴滴时候参与的PC组件规范的大纲（偏综合型：对于web组件类型涵盖比较全），如果是做企业级后台web大家也可以参考AntDesign来定制自己产品的组件及规范（虽然现在大多数后台产品一般都会直接选择调用AD的组件）。</p>
+<p><span class="img-zoom"><img alt="从零开始！Web产品设计全新操作指南" class="alignnone size-full wp-image-381236" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zn-20200723-14.jpg" width="1200" height="1003" /></span></p>
+<p>总结下web整体的组件规范和移动端的最大区别还是在于：对于框架布局与栅格系统的定义，以及个别控件形式和状态上的差异。</p>
+<h4><span class="auto_menu">web设计实用问答系列</span></h4>
+<p>问：弱弱问一个贼基础的问题，web的设计字号和移动端一样么？有什么限制么？</p>
+<p>答：浏览器的最小显示字体是12。所以你就算在web设计稿里放了10字号的字体，最后开发出来显示的也是12（除非开发进行特殊处理，一般是没有必要的）。最后剩下的字号和移动端类似，正文14-16，大标题18-20。</p>
+<p>问：如果想参考下别人家的网页设计的元素大小什么的，怎么快捷获得数值呢？</p>
+<p>答：鼠标选中网页元素右键点击→检查，点击代码栏上方图标，再悬浮到想查看的元素上就可以看到具体数值啦，超便捷。</p>
+<p><span class="img-zoom"><img alt="从零开始！Web产品设计全新操作指南" class="alignnone size-full wp-image-381223" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zn-20200723-1.jpeg" width="1000" height="687" /></span></p>
+<p>问：web里想做毛玻璃效果，开发老哥说做不了，请问是真的？</p>
+<p>答：具体得放在业务场景里看，只是单独的毛玻璃背景开发，是可以做的且成本不大</p>
+<p>问：除了那些大众设计平台，还有哪些与web有关好网站可以参考和使用呢？</p>
+<p>答：Csswinner（国外css样式得奖大赏，里面基本都是全栈设计师独立完成从设计到开发，定期更新获奖作品，有很多创意的网页布局和交互动效可以参考）<a href="https://www.csswinner.com/">https://www.csswinner.com/</a>；JQuery 插件库（众多现成的动效代码可以直接使用）<a href="http://www.jq22.com/"> http://www.jq22.com/</a>；</p>
+<p><span class="img-zoom"><img alt="从零开始！Web产品设计全新操作指南" class="alignnone size-full wp-image-381237" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-zn-20200723-15.jpg" width="1000" height="529" /></span></p>
+<p>更多列表模式：</p>
+<p>[link https://www.uisdc.com/b-side-product-web-list-design-pattern]</p>
+<p>欢迎关注作者的微信公众号：「Nana的设计锦囊」</p>
+<p><span class="img-zoom"><img alt="从零开始！Web产品设计全新操作指南" class="alignnone size-full wp-image-269451" src="https://image.uisdc.com/wp-content/uploads/2018/05/uisdc-nanaqr.jpg" alt="从QQ音乐10.0的产品体验背后，聊聊聚焦Z世代的内容战役" /></span></p>
+➜壹周速读：超实用的配色方法小合集
+https://www.uisdc.com/quick-reading-weekly-vol65	63151
+<p><span class="img-zoom"><img alt="壹周速读：超实用的配色方法小合集" src="https://image.uisdc.com/wp-content/uploads/2020/07/quick-reading-weekly-vol65-1.jpg" width="750" height="168" class="alignnone size-full wp-image-381610" /></span></p>
+<p>配色是设计师的基础技能，看起来并不复杂，实际却是花样繁多。善于运用色彩的同学能够借助色彩撬动整套设计方案，改变体验，甚至扭转局面。如若你也想提升「配色力」，不妨来看看本期的配色技巧小专题：</p>
+<h4><span class="auto_menu">色彩技巧小合集</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：超实用的配色方法小合集" src="https://image.uisdc.com/wp-content/uploads/2020/07/ps1.png"  class="aligncenter size-full wp-image-381587" /></span></p>
+<p>配色方案当中，不同的色彩占据的比例、承载的功能各不相同。而这一套围绕焦点来进行配色的实战方法，梳理出了一套富有规律、易于掌握的焦点配色技巧：</p>
+<p>[link   https://www.uisdc.com/focus-color]</p>
+<p><span class="img-zoom"><img alt="壹周速读：超实用的配色方法小合集" src="https://image.uisdc.com/wp-content/uploads/2020/07/ps2.png"  class="aligncenter size-full wp-image-381587" /></span></p>
+<p>好的配色往往依靠设计师审美、感觉搭配出来，但合理的颜色搭配必定存在合理的配色规律和配色方法论的支撑。也许你不是新手，但是这篇写给新手的配色攻略合集，完整梳理了配色的流程、工具以及值得借鉴的设计作品：</p>
+<p>[link   https://www.uisdc.com/color-matching-strategy-1]<br />
+[link   https://www.uisdc.com/color-matching-strategy-2]</p>
+<p><span class="img-zoom"><img alt="壹周速读：超实用的配色方法小合集" src="https://image.uisdc.com/wp-content/uploads/2020/07/ps3.png"  class="aligncenter size-full wp-image-381587" /></span></p>
+<p>不管是做 UI 设计还是画插画，有很多同学觉得自己是因为天赋不够所以对色彩的敏感度不够，其实不然。一个可能是大家总结的太少，从来都是凭感觉和运气去配色，但配色都是有讲究的。这篇文章要给大家分享的是人们是如何认识色彩，并且在产品设计中使用的：</p>
+<p>[link  https://www.uisdc.com/ui-color-matching ]</p>
+<p><span class="img-zoom"><img alt="壹周速读：超实用的配色方法小合集" src="https://image.uisdc.com/wp-content/uploads/2020/07/ps4.png"  class="aligncenter size-full wp-image-381587" /></span></p>
+<p>用户界面是一个设计师用理性思维解决用户感性需求的窗口。如果对色彩的运用不加以克制，界面可能会显得花哨而没有主次；但过于拘谨又容易使界面保守，难以激发用户情绪，下面以Bee express项目的实例来理性推导制定一套色彩系统：</p>
+<p>[link  https://www.uisdc.com/develop-ui-color-system]</p>
+<p><span class="img-zoom"><img alt="壹周速读：超实用的配色方法小合集" src="https://image.uisdc.com/wp-content/uploads/2020/07/ps5.png"  class="aligncenter size-full wp-image-381587" /></span></p>
+<p>最后，上周的这篇文章还推荐了两款实用性超强的新工具，其中就包含一款颇为实用的配色工具。「Color Palette Generator」是一个很简单的调色盘工具，也是很直觉、简单易用的色彩生成器，每次按下空格键会给出五个颜色，实时预览色块；另外一个是「图片快拖助手」插件，它可以可一键提取任意网页上可看见的、不可看见的、各种格式的图片，还可记录所提取的网址来源、收藏、移除等进行素材管理：</p>
+<p>[link https://www.uisdc.com/color-palette-generator ]</p>
+<h4><span class="auto_menu">UI·排版</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：超实用的配色方法小合集" src="https://image.uisdc.com/wp-content/uploads/2020/07/ps6.png"  class="aligncenter size-full wp-image-381587" /></span></p>
+<p>在进行 UI 设计的时候，很多小技巧能够恰到好处地提升界面的设计视觉效果、用户体验。这篇来自Mark Andrew 的文章，梳理了 9 个实用性很强的 UI 效果提升小技巧：</p>
+<p>[link   https://www.uisdc.com/improve-ui-designs-fast-1]</p>
+<p><span class="img-zoom"><img alt="壹周速读：超实用的配色方法小合集" src="https://image.uisdc.com/wp-content/uploads/2020/07/ps7.png"  class="aligncenter size-full wp-image-381587" /></span></p>
+<p>很多时候，做设计并不是线性单方向的，而经常性的反思和审视能够更好地提升设计效果，突破自身限制，寻找更好的设计途径。那么通过自我审查来提升版式设计，有哪些常见的方法呢？看这篇文章：</p>
+<p>[link https://www.uisdc.com/review-layout-works]</p>
+<p><span class="img-zoom"><img alt="壹周速读：超实用的配色方法小合集" src="https://image.uisdc.com/wp-content/uploads/2020/07/ps8.png"  class="aligncenter size-full wp-image-381587" /></span></p>
+<p>说到版式设计很多人更多联系的是平面设计中的海报版式设计，而在UI界面设计中，也需要遵循很多的版式设计方法论，这篇来自Zeal-庄治柱的文章为大家整理一份UI设计中版式的实战运用以及设计思路：</p>
+<p>[link  https://www.uisdc.com/ui-layout-design]</p>
+<h4><span class="auto_menu">交互·产品</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：超实用的配色方法小合集" src="https://image.uisdc.com/wp-content/uploads/2020/07/ps9.png"  class="aligncenter size-full wp-image-381587" /></span></p>
+<p>这篇文章可能是上周最具争议的文章之一，它来自着名的 Tubik Studio 团队，在文章中，Tubik Studio 分享了为华为旗下的 EMUI 10 系统设计了核心的图标系统的过程。像这样用户群体庞大的UI界面核心 APP 图标设计，在很多时候是一个巨大的坑，限制多，要求多，看似自由实则很难出彩，下面具体看看吧：</p>
+<p><a href="https://www.uisdc.com/huawei-icon-design" rel="noopener" target="_blank">[Tubik Studio 是怎么为华为定制整套 UI 图标的？]</a></p>
+<p><span class="img-zoom"><img alt="壹周速读：超实用的配色方法小合集" src="https://image.uisdc.com/wp-content/uploads/2020/07/ps10.png"  class="aligncenter size-full wp-image-381587" /></span></p>
+<p>随着 58 APP整体体验升级，又赶上7月份超职季活动的契机，58 UED 团队展开了招聘详情页的改版升级，期望打造一个更年轻，更有温度的招聘详情页，给用户焕然一新的视觉感知，同时也为求职者提供更好的使用体验。来自 58UED 的这篇文章从设计流程，设计思路，和总结思考三个方面分享了这次设计的过程：</p>
+<p>[link  https://www.uisdc.com/detail-page-revision]</p>
+<p><span class="img-zoom"><img alt="壹周速读：超实用的配色方法小合集" src="https://image.uisdc.com/wp-content/uploads/2020/07/ps11.png"  class="aligncenter size-full wp-image-381587" /></span></p>
+<p>在做多语言 UI 设计会遇到不少在进行单语言设计时，不会去考虑的问题。这篇来自「流利说」团队的文章，分享了一些解决方案，这些解决方案应用到了他们的产品设计中。如果你也正准备进行多语言设计，那么这份避坑指南也许能够帮助你避免一些基本的设计问题，从而有更多的精力去思考具体的视觉呈现：</p>
+<p>[link https://www.uisdc.com/multilingual-ui-design-guide ]</p>
+<p><span class="img-zoom"><img alt="壹周速读：超实用的配色方法小合集" src="https://image.uisdc.com/wp-content/uploads/2020/07/ps12.png"  class="aligncenter size-full wp-image-381587" /></span></p>
+<p>身为设计师，我们日常工作中经常会遇到各式各样的挑战：业务方的、老板的……我们也会经常地有疑问啊，有没有什么套路可以让别人更快地明白自己设计方案的要点，并且满足他的预期呢？那今天就想分享一下，一些设计的套路儿，目的是设计师如何让别人快速明白你的设计心思：</p>
+<p>[link https://www.uisdc.com/design-plan-communication ]</p>
+<h4><span class="auto_menu">求职·面试</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：超实用的配色方法小合集" src="https://image.uisdc.com/wp-content/uploads/2020/07/ps13.png"  class="aligncenter size-full wp-image-381587" /></span></p>
+<p>在搞定简历之后，各位设计师同学还需要为面试做好充分的准备！企业会通过面试进一步了解你，而了解你的信息也是很广泛的，无论是工作能力、表达能力、为人相处、生活状况等等，都会从多角度来了解你，并且作为是否录取你的条件。所以，在面试前我们还需要准备一些可能会问到的问题，整理好思绪，不要在面试的时候说不上话。这篇文章整理了设计师面试时的常见问题，以及参考答案：</p>
+<p>[link https://www.uisdc.com/15-interview-questions-and-answers ]</p>
+<p><span class="img-zoom"><img alt="壹周速读：超实用的配色方法小合集" src="https://image.uisdc.com/wp-content/uploads/2020/07/ps14.png"  class="aligncenter size-full wp-image-381587" /></span></p>
+<p>因为疫情的影响，很多公司倒闭，导致设计师不得不走向找工作的路途。相应的职位招聘减少，但是参与相关职位竞争的人员却还在增加。这种境况对于设计师来说可以说压力非常大了！那么今天我们就来一起探讨一下，我们在面试的时候应该怎么做，在面试前、面试中、面试后、我们有哪些工作要做的：</p>
+<p>[link  https://www.uisdc.com/newcomer-resume-error]</p>
+<h4><span class="auto_menu">插画技巧</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：超实用的配色方法小合集" src="https://image.uisdc.com/wp-content/uploads/2020/07/ps15.png"  class="aligncenter size-full wp-image-381587" /></span></p>
+<p>你是不是经常画不出想要的线条？是不是每画一笔都要经历无数次的撤回？别灰心啦！试试线条易修改的AI插画吧！只用鼠标就能画出精彩线条，简单粗暴易上手~今天就带来了AI中的n个画笔小秘密，用完了你会觉得AI插画太香啦！</p>
+<p>[link https://www.uisdc.com/ai-brush-technique ]</p>
+➜学会「视觉锤」这个高级思维，让你的设计更值钱！
+https://www.uisdc.com/visual-hammer	63358
+<p>相信很多设计师经常听到一个熟悉的名词，「视觉锤」，视觉锤是一个非常好的名字，一听就能懂，也正是因为一听就懂，大家就很少深入去理解它其中的内涵了。而能真正了解视觉锤的设计人、创意人可以说是屈指可数，深入研究视觉锤的就更少了。那么为什么需要了解视觉锤这个概念呢，原因具体有以下两点。</p>
+<h4><span class="auto_menu">视觉的力量正在崛起</span></h4>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381397" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-93.jpg" width="1080" height="300" /></span></p>
+<p>这几年，《见字如面》、《诗词大会》这样安安静静没有噱头的综艺也开始越来越受到观众的青睐。越来越多的中国年轻人，主动开始注意自己的外表和谈吐。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381325" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-21.gif" width="639" height="534" /></span></p>
+<p>在《2019中国女性自信报告》里面有提到，90%以上的中国女性受访者被问到时，都表示「美商」，简称BQ能提升自己的自信。这里的美商全称美丽商数，并不是指一个人的漂亮程度，而是一个人对自身形象的关注程度。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381305" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-1.gif" width="639" height="360" /></span></p>
+<p>她们提升「美商」的首选就是衣着和化妆打扮，其次才是读书。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381349" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-45.jpg" width="917" height="600" /></span></p>
+<p>而《2017年度幸福报告》里的数据显示，90%的人普遍感觉有压力。在倍感压力的时代，45%左右的人选择了简约现代的装修风格，简约风格强调的功能性美学，反映人们对审美需求。</p>
+<h4><span class="auto_menu">行业间的合作越来越深入</span></h4>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381348" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-44.jpg" width="968" height="600" /></span></p>
+<p>埃森哲accenture同意收购位于德国的设计公司designaffairs，这不是首例咨询公司入股设计公司了。</p>
+<p>麦肯锡近年也连续收购了Lunar和Veryday两家顶尖设计公司，定位咨询行业和创意设计行业已经从「合作」走向「合并」。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381350" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-46.jpg" width="500" height="329" /></span></p>
+<p>而劳拉提出「视觉锤」的概念，使中国企业开始注意到视觉的战略意义。</p>
+<p>由于「视觉锤」的概念和「语言钉」息息相关，也和定位思想密不可分，如果不了解「定位」，就给大家直接说「视觉锤」，是很难明白它真正含义的。</p>
+<p>但不了解品牌，又单独提炼这两个概念出来讲，也会让部分人摸不着头脑。所以我先给大家简短的解释一下「品牌」和「定位」，好帮助大家更深入的了解「视觉锤」。</p>
+<h4><span class="auto_menu">品牌是什么</span></h4>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381351" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-47.jpg" width="562" height="246" /></span></p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381352" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-48.jpg" width="565" height="249" /></span></p>
+<p>对于品牌是什么？很多大咖对品牌的解读都不一样，他们都有自己不同的看法。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381347" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-43.jpeg" width="500" height="1564" /></span></p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381326" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-22.jpeg" width="600" height="499" /></span></p>
+<p>那么，要回答品牌是什么？我们首先就要来看一看「品牌Brand」这个词的来源。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381353" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-49.jpg" width="600" height="412" /></span></p>
+<p>品牌这个词来源于西方，英文单词是「Brand」。最早是演变于古斯堪的维亚语「Brand」，意思是「燃烧」、「烙印」，指生产者燃烧印章烙印到产品上。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381306" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-2.gif" width="639" height="360" /></span></p>
+<p>好几个世纪以前的游牧时期，西方的古斯堪有很多养羊养牛的人。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381354" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-50.jpg" width="600" height="336" /></span></p>
+<p>总是避免不了他们要在同一片草原上放养，由于牛羊太多太相似了，所以导致牛羊混在一起分不清，为了分清楚各自的牛羊，于是他们就想了一个办法。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381307" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-3.gif" width="639" height="360" /></span></p>
+<p>用烧红的烙铁在自家的牛羊身上烙一个印记，方便把自己和别人的牛羊区别开来。慢慢的，牧民们根本就不用看牲口了，只要看标记就能认出自家的牛羊。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381308" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-4.gif" width="639" height="360" /></span></p>
+<p>如果某个牧民的牛羊在市场上卖的最好，这户牧民的标记就会越来越出名，最后买家为了省事，就看标记来识别牧民的牛羊，时间久了，就形成了一个独特的、有识别作用的标记。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381355" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-51.jpg" width="878" height="502" /></span></p>
+<p>此时我们可以发现，这个标记也不单单是用于牧民自己的区分，而且还给买家带来了方便，买家看标记就可直接交易。</p>
+<p>所以这个标记里面就多了很多含义，代表了牲口自身，代表了牲口的主人，代表了牲口的品质，方便了买家，尤其是大大降低了买家的选择成本。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381309" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-5.gif" width="639" height="360" /></span></p>
+<p>所以总结一下，什么是品牌？</p>
+<p>品牌是由消费者在使用中所体验的感受积累而成，这些内在的感受就是那个品牌本身，换句话说，品牌的本质并不是品牌的名字，名字只是用来将无形的感受表示出来。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381310" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-6.gif" width="639" height="360" /></span></p>
+<p>如果去掉了品牌中的感受，那么，就只剩下一个名字了，就只是一个logo而已，哪个消费者仅仅是因为喜欢名字而购买产品呢？所以，品牌的本质是消费者内心对产品和服务的一种内在的感受。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381356" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-52.jpg" width="600" height="336" /></span></p>
+<p>所以，品牌的本质是消费者内心对产品和服务的一种内在的感受。</p>
+<h4><span class="auto_menu">品牌策略</span></h4>
+<p>现在互联网信息爆炸的时代，走到哪里都充斥着大量广告，消费者面临的选择已经到了不可复加的地步，跟大家分享几个数据:</p>
+<p>中国的品牌已经有170万个，我们常用的就那么几千，在美国呢，有220万个品牌，日本和美国差不多，欧盟300万个，而且现在每年都有60万个新品牌在递增。</p>
+<p>企业为了把自己的品牌做到消费者心坎里去，这就需要品牌策略的维护和传达，品牌策略的方法在历史上经历了三次演变。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381327" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-23.jpeg" width="400" height="567" /></span></p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381328" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-24.jpeg" width="400" height="567" /></span></p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381329" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-25.jpeg" width="400" height="567" /></span></p>
+<p><strong>1. 产品时代</strong></p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381330" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-26.jpeg" width="1080" height="607" /></span></p>
+<p>美国在亨利·福特之前，其实并不需要品牌战略的，因为在当时人们对产品已经有大量的需求，而且厂家之间竞争并不激烈。</p>
+<p>这种稀缺时代的黄金日子，我们在改革开放之初的20世纪80年代也出现过，电商的早期也是这个情形。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381357" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-53.jpg" width="746" height="600" /></span></p>
+<p>稀缺时代的竞赛是在工厂展开的，大家比拼的是生产线、生产速度与成本，于是诞生了福特模式，就是现在的流水线生产系统。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381311" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-7.gif" width="639" height="360" /></span></p>
+<p>那时的消费者对产品需求高涨，对产品也可以忍受将就，因为没有更多的选择余地。</p>
+<p>福特有名的宣传口号是：「你可以要任何颜色的车，只要那是黑色的。」因为福特只生产黑色的汽车，你要不要自己看着办吧。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381359" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-55.jpg" width="800" height="449" /></span></p>
+<p>当第二次世界大战后，大量的军工企业转为民用，战后人们要重建家园、享受生活，释放出巨大的需求。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381358" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-54.jpg" width="800" height="447" /></span></p>
+<p>这使得整个制造行业竞争开始加剧，供应越来越多，库存也跟着增多。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381312" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-8.gif" width="639" height="360" /></span></p>
+<p>为了解决商品卖不出去的困境，这时候一个重要的人物登上了历史舞台。这个人物叫罗瑟·瑞夫斯，他发明了非常有名的USP理论。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381400" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-27-1.jpeg" width="500" height="357" /></span></p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381361" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-57.jpg" width="820" height="431" /></span></p>
+<p>在我国也有不少这个理论的运用，例如舒肤佳，舒肤佳比力士晚进入中国市场，当时「力士」已经牢牢占住了香皂市场。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381360" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-56.jpg" width="368" height="400" /></span></p>
+<p>后来的「舒肤佳」却在短短几年时间里，硬生生把力士从宝座上拖了下来，舒肤佳的成功自然有很多因素，但关键的一点在于它找到了一个新颖而准确的「除菌」概念。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381362" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-58.jpg" width="840" height="446" /></span></p>
+<p>在中国人刚开始用香皂洗手的时候，舒肤佳就开始了它长达十几年的「教育工作」，要中国人把手真正洗干净——看得见的污洗掉了，看不见的细菌你洗掉了吗？</p>
+<p>在舒肤佳的销售传播中,以「除菌」为轴心概念，诉求「有效除良护全家」。那么「有效除良护全家」自然成为了舒肤佳的usp。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381363" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-59.jpg" width="932" height="600" /></span></p>
+<p>再例如我们非常熟悉的一个品牌雪碧，他的usp是那句朗朗上口的，透心凉心飞扬。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381364" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-60.jpg" width="1080" height="562" /></span></p>
+<p>还有周董代言的动感地带，它的usp是，我的地盘听我的。</p>
+<p><strong>2. 形象时代</strong></p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381313" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-9.gif" width="480" height="270" /></span></p>
+<p>在形象时代，有个人叫大卫·奥格威，有意思的是，他和USP理论发明者瑞夫斯娶的是两姐妹，奥格威发现，当产品的独特主张趋向于同质化时，也就是商品的卖点趋于雷同时，消费者开始不注重产品的差异，而是追求感性价值，什么叫感性的价值，那就是企业为品牌打造一个独特的形象。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381365" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-61.jpg" width="400" height="283" /></span></p>
+<p>有一个香烟品牌，叫万宝路。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381332" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-28.jpeg" width="566" height="600" /></span></p>
+<p>可能大家不知道，万宝路创业的早期，它的定位是女士香烟，消费者绝大多数是女性。可是，尽管当时美国吸烟人数年年都在上升，但万宝路香烟的销路却始终平平。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381333" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-29.jpeg" width="400" height="434" /></span></p>
+<p>在一筹莫展中，1954年莫里斯公司找到了当时非常着名的营销策划人李奥·贝纳，交给了他这个课题：怎么才能让更多的女士购买消费万宝路香烟？</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381334" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-30.jpeg" width="380" height="800" /></span></p>
+<p>在对香烟市场进行深入的分析和深思熟虑之后，李奥·贝纳对万宝路进行了全新的「变性手术」</p>
+<p>广告中一再强调万宝路香烟的男子汉气概，以浑身散发粗犷、豪迈、英雄气概的美国西部牛仔为品牌形象，吸引所有喜爱、欣赏和追求这种气概的消费者。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381401" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-62-1.jpg" width="907" height="184" /></span></p>
+<p>假如我们身处产品时代，来给香皂做广告，应该怎么做呢，给大家5秒钟时间想想。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381367" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-63.jpg" width="800" height="471" /></span></p>
+<p>相信很多小伙伴都能想得到，就是给香皂一个独特的销售主张，香皂可以通过「含四分之一润肤乳」这个独特的主张而大获成功。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381368" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-64.jpg" width="930" height="180" /></span></p>
+<p>但是到了品牌时代，如果还用产品时代的品牌战略来推销香皂，香皂是很难卖出去的。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381335" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-31.jpeg" width="960" height="600" /></span></p>
+<p>在形象时代，卖香皂成功的是力士香皂，而它的品牌策略，就是为香皂塑造一个「当红女星容光焕发」的品牌形象。</p>
+<p><strong>3. 定位时代</strong></p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381314" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-10.gif" width="640" height="360" /></span></p>
+<p>进入20世纪70年代，品牌形象也跟着USP行不通了，由于众多企业都在塑造品牌形象，形象和形象之间很难加以区分。</p>
+<p>再加上信息时代的到来，对于商品人们既无力区分，也懒得去区分，因为人的头脑容纳信息是有限的，而消费者的选择实在是太多。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381315" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-11.gif" width="640" height="360" /></span></p>
+<p>定位理论的开创者是杰克·特劳特，他发现，通常你在购买某类产品的时候，你不会记住七个以上的品牌，但随着市场的成熟和稳定，人们往往只记住两个品牌，在其中一个做选择。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381336" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-32.jpeg" width="600" height="348" /></span></p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381369" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-65.jpg" width="800" height="419" /></span></p>
+<p>△ 可乐业是可口可乐与百事可乐。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381370" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-66.jpg" width="800" height="260" /></span></p>
+<p>△ 电子支付业是微信跟支付宝。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381371" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-67.jpg" width="800" height="341" /></span></p>
+<p>△ 购物平台是天猫和京东。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381316" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-12.gif" width="483" height="298" /></span></p>
+<p>所以定位的本质是就是占据消费者心智，在顾客心智占据一个独特的位置。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381372" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-68.jpg" width="600" height="479" /></span></p>
+<p>比如说，丁香医生占了「有理有据说健康」。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381373" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-69.jpg" width="600" height="519" /></span></p>
+<p>滴露占了「英国皇家御用专业除菌」。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381317" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-13.gif" width="480" height="270" /></span></p>
+<p>平时大家刷抖音、小红书的时候，一定少不了看到达人推荐的产品。</p>
+<p>大家面对这些产品，如果没有定位，没有基于竞争的独特性，相信大家是不会随便购买。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381374" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-70.jpg" width="600" height="263" /></span></p>
+<p>比如说你看到某平台给你推荐两款奶糖，一款叫大白兔，一款你听都没听过的，叫大黑兔，你会购买哪款呢？</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381318" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-14.gif" width="639" height="360" /></span></p>
+<p>既然明白了定位的概念，那么我来说一下什么是视觉锤。</p>
+<p>如果硬要给一个定义的话，那么最接近的一个定义是：「定位是一个语言概念，是钉子，用视觉形象这把锤子，把语言钉子植入消费者心智中。」</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381375" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-71.jpg" width="800" height="448" /></span></p>
+<p>假如把这个定义来解释视觉锤的话，会存在一个问题，就是和劳拉提出的某些内容产生冲突，为什么这么说呢。</p>
+<p>我们如果把「视觉锤，是把语言钉子，钉入消费者心智」当作定义的话，那么没有砸到语言钉子的就不能称它为视觉锤了。但事实上，也存在一些「没有语言钉子却拥有视觉锤」的品牌。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381376" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-72.jpg" width="443" height="600" /></span></p>
+<p>比如绝对伏特加，它的瓶身不但没有被设计成一个酒瓶子，相反，它的设计看起来更像一个药店里的药瓶子。</p>
+<p>可以看出，绝对伏特加的瓶身是锤子，但它的语言钉子是什么？它是没有语言钉子的。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381377" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-73.jpg" width="600" height="336" /></span></p>
+<p>又比如百慕大粉色沙滩，百慕大粉色沙滩，是世界上最有名的沙滩之一。沙滩粉红，海水澄蓝，风景如画。</p>
+<p>可以看出粉色是百慕大沙滩的锤子，但它并没拥有一个语言钉子。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381319" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-15.gif" width="639" height="360" /></span></p>
+<p>这样看来，是把语言钉子植入消费者心智中的这个概念，并不适合用来定义视觉锤。</p>
+<p>既然劳拉没有给出明确定义，那么可以尝试给「视觉锤」一个简明的定义：视觉锤是指，一个可用于品牌识别的视觉非语言信息。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381378" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-74.jpg" width="600" height="128" /></span></p>
+<p>这个定义里面有三个点：品牌识别；视觉；非语言信息。</p>
+<p><strong>1. 视觉</strong></p>
+<p>视觉很好理解，就是通过眼睛看，如果不通过视觉来传递信息的话，就不叫视觉锤了。</p>
+<p>因为 也有通过听觉产生品牌识别品牌也是有的，比如京东的谐音「叮咚」音效，每次听到都能联想到京东。</p>
+<p><strong>2. 品牌识别/非语言信息</strong></p>
+<p>这是视觉锤的两个基石，少了一个都搭建不起视觉锤</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381320" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-16.gif" width="639" height="360" /></span></p>
+<p>视觉锤的第一块基石是品牌识别，简单来讲，识别就是认识和辨别。先认识，后辨别。</p>
+<p>要先认识这个东西，储存在大脑中，下一次见到的时候，就可以和大脑中的记忆关联起来，从而辨别它。</p>
+<h4><span class="auto_menu">品牌识别</span></h4>
+<p>那什么是品牌识别呢？它跟我们常说的视觉识别，简称VI又有什么关系呢？其实视觉识别是一种手段，而品牌识别是一种目的。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381337" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-33.jpeg" width="759" height="286" /></span></p>
+<p>百事可乐的经典配色是红白蓝，这个配色已经刻在我们大脑里。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381338" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-34.jpeg" width="751" height="400" /></span></p>
+<p>当我们看到一款饮料，它大致棕黑色液体，瓶身为红白蓝配色。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381340" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-36.jpeg" width="751" height="400" /></span></p>
+<p>经过思考，你的大脑最终会判断出，这是百事可乐。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381339" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-35.jpeg" width="600" height="292" /></span></p>
+<p>还有不是所有的视觉信息都可以当视觉锤，如果消费者最终不能通过这个视觉信息辨别出是哪个品牌，视觉锤就是不成立的。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381341" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-37.jpeg" width="747" height="600" /></span></p>
+<p>有一部分业内的人士对「品牌识别」有着狭隘的认知，他们认为品牌识别指的只是logo。</p>
+<p>介绍品牌的时候我也提到，品牌是消费者对产品类目的内在感受，所以Logo确实是品牌识别的载体之一，但并不是唯一。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381379" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-75.jpg" width="800" height="208" /></span></p>
+<p>其实，任何可以被消费者直接关联到关于该品牌的信息，都可以被看作为品牌识别。</p>
+<p>例如mini和甲壳虫，就算你在远处还没看到汽车的logo，也能从外形识别出他们。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381342" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-38.jpeg" width="700" height="400" /></span></p>
+<p>还有多数奢侈品的品牌，都会为该品牌开发出独特的纹案。例如Burberry的方格子条纹、LV的棋盘格。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381343" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-39.jpeg" width="700" height="371" /></span></p>
+<p>Dior的cannage藤格纹、Chanel的菱格等等，他们都不是logo，却能让你一眼就能识别到这个包包是哪个品牌。</p>
+<h4><span class="auto_menu">非语言信息</span></h4>
+<p>可能有小伙伴会问了，品牌名是一个品牌识别，但为什么品牌名不是视觉锤呢？</p>
+<p>因为品牌名属于语言信息。所谓「视觉锤」，是一个非语言信息。大脑在处理语言信息和非语言信息上，有着本质的差异。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381380" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-76.jpg" width="560" height="500" /></span></p>
+<p>视觉锤的第二块基石是非语言信息，为了减少大家对这个名词的误解，首先我明确区分一下，什么是语言信息，什么是非语言信息。</p>
+<p>我们都知道五感，指的是视觉、听觉、味觉、嗅觉、触觉，日常中，我们是依靠这五感来接收外界信息的。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381381" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-77.jpg" width="800" height="447" /></span></p>
+<p>而我们通过听觉接收到的都可以称为声音。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381382" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-78.jpg" width="800" height="448" /></span></p>
+<p>通过视觉接收到的都可以称为图像。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381383" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-79.jpg" width="800" height="432" /></span></p>
+<p>我们把「信息」分为两种，一种是语言信息，一种是非语言信息。</p>
+<p>我这里所讲的「语言」是狭义上的，是指人类独有的语言，不包含「动物语言」。我们常说的「肢体语言」、「表情语言」虽然也算是语言信息，但属于广义的语言，不在本课题的讲述的范围内。</p>
+<p>因此，我把日常从外界接收的信息区分为4类</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381344" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-40.jpeg" width="700" height="350" /></span></p>
+<p>为了让大家更容易理解，我举个例子</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381321" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-17.gif" width="639" height="360" /></span></p>
+<p>当你在办公室认真工作时，你亲爱的领导忽然走过来，用低沉并且缓慢无力的语气跟你说：「你进来会议室一下，我有事跟你说。」这句话里面，包含了听觉的语言信息和非语言信息。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381345" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-41.jpeg" width="1080" height="545" /></span></p>
+<p>「我有事找你」是你能理解的语言信息，意思是领导需要你的帮忙。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381346" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-42.jpeg" width="1080" height="533" /></span></p>
+<p>那么其中的非语言信息是什么呢？是你通过音色能读取到是个男性的声音；音调低沉、语速缓慢能读取到自己可能摊上了大事情，让领导不太高兴。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381322" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-18.gif" width="618" height="608" /></span></p>
+<p>当你怀着忐忑的心情走进会议室，抬头第一眼看到投影仪屏幕上，显示着客户的留言，大概的内容是你做的方案非常好，点名表扬了你。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381323" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-19.gif" width="639" height="479" /></span></p>
+<p>而领导也笑着用手拍了拍你的肩膀说：「这次你做得非常棒，希望你以后能继续努力。」</p>
+<p>这一次，你在投影仪屏幕上看到客户的留言，获得并理解了视觉的语言信息，也看到了视觉非语言信息，也就是领导的微笑，这时候你忐忑不安的心就放松了下来，并且额骨上升乐开了花。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381384" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-80.jpg" width="600" height="333" /></span></p>
+<p>我们都知道，人脑分为左脑跟右脑，左脑负责的是语言，右脑负责的是视觉。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381324" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-20.gif" width="639" height="360" /></span></p>
+<p>并且，当我们看到视觉信息后，首先会引起右脑的注意，右脑会向左脑传递一个信息，令左脑去读或听与这个视觉相关的语言文字。</p>
+<p>这再次证明劳拉所表述的「视觉锤」是视觉中的非语言信息，而不包括语言信息。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381385" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-81.jpg" width="600" height="336" /></span></p>
+<p>所以要理解什么是「非语言信息」，才能帮助你真正的去理解「视觉锤」。</p>
+<p>其中有两个视觉非语言信息的理解难点，第一点就是对「文字」的理解。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381386" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-82.jpg" width="800" height="447" /></span></p>
+<p>图像里可以只包含非语言信息，比如这个麦当劳的广告画面，你会说，照片加文字，当然是非语言信息加语言信息啊！</p>
+<p>但你可能没有意识到的是「文字」被写下来，设计出来的那一刻，就已经包含非语言信息了。</p>
+<p>下面4个麦当劳英文字是一样的，它们包含了同样的语言信息，但非语言信息是不同的。因为颜色，传递的是一种非语言信息。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381387" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-83.jpg" width="800" height="448" /></span></p>
+<p>[link https://www.uisdc.com/color-marketing]</p>
+<p>红色，蓝色，绿色，粉色，带来的情绪感受是不一样的，深红和粉红也是不一样的。深红成熟，粉红可爱，这些都是色彩带给你的特有感受。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381388" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-84.jpg" width="800" height="448" /></span></p>
+<p>如果麦当劳用的是右边这个字体，你大概会以为是个德国品牌。因为在认知中，德国文字就是这样的感觉。</p>
+<p>字体传递的是一种非语言信息，不同的字体带来不同的感受和联想，当然，也可能是调动你大脑中品牌认知的一把钥匙。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381389" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-85.jpg" width="800" height="447" /></span></p>
+<p>还有可口可乐的手写字体。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381390" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-86.jpg" width="800" height="446" /></span></p>
+<p>手写字体往往能传达出历史感。为什么它是非语言信息？因为换成另一种语言，这种相同的气质是一样可以保留的。</p>
+<p>香港着名设计师陈幼坚先生当年为可口可乐设计中文logo的时候，沿用的正是这种字体的特有气质。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381391" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-87.jpg" width="800" height="447" /></span></p>
+<p>假如用黑体，宋体，楷体应用到包装上，你可以直观的看到语言信息，但用于品牌识别的非语言信息没有让大脑辨别出来，你知道这是可口可乐，但肯定不是正宗的可口可乐。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381392" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-88.jpg" width="800" height="448" /></span></p>
+<p>第二个理解的难点在于，「视觉锤」有时候不是一个单独的元素，而是一种元素的特定组合。让我们通过一个例子来了解，什么是「元素的特定组合」？</p>
+<p>例如维他命水的瓶子，它也许是最醒目的饮料包装瓶子了，因为它可以让我想起药店货架上一排排的处方药，而这正是「维他命」饮料的概念。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381393" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-89.jpg" width="800" height="299" /></span></p>
+<p>维他命水的视觉锤是什么呢？是包装吗？不是，包装是它的视觉锤的载体。那真正的非语言信息是什么呢？是包装上面的几种元素的组合。</p>
+<p>这几种元素的组合最终在你大脑里形成一种，这像是维他命的意识，这种意识是怎样形成的呢？</p>
+<p>第一，拥有药品包装上一样的拼贴格式，它是两个矩形色块，上下组合。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381394" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-90.jpg" width="1080" height="604" /></span></p>
+<p>第二，是密密麻麻的文字排列。你可能会说，消费者是不会去看这么复杂的文字，我们要传递简单容易让人识别的信息。</p>
+<p>不过我可以告诉大家，这些文字真的不是让你去阅读的，它只是形成「药瓶」的格式感的一个要素。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381395" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-91.jpg" width="800" height="446" /></span></p>
+<p>第三，是维他命药丸的丰富色彩。大家细心留意一下就会发现，维他命A、B、C、E都有不同的颜色。</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-381396" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-yx-20200723-92.jpg" width="800" height="448" /></span></p>
+<p>所以消费者对「维他命」的认知、对「药瓶」的认知，维他命水由此创作出这种特定「格式」，能让你下意识地联想到「维他命」。</p>
+<p>就算把包装上面的所有文字都换成日文，韩文，也一点不影响你对维他命水的认知。这就是一种有特定意义的非语言信息。</p>
+<p>好了，我总结一下今天的主要内容，首先我简单的阐述了什么是品牌，接着讲述了品牌策略的方法在历史上经历了三次演变。</p>
+<p>分别是产品时代，形象时代还有定位时代，从中发现每个品牌策略都是争夺消费者的注意力展开的。</p>
+<p>最后详细地讲述了什么是视觉锤，其实视觉锤就是一个可用于品牌识别的视觉非语言信息。好了，今天的内容就到这里了，我们下期再见。</p>
+<p><strong>参考文献</strong></p>
+<ul>
+<li>记豪：《为什么视觉锤一听就懂，一用就错?》</li>
+<li>劳拉·里斯：《视觉锤：视觉时代的定位之道》</li>
+</ul>
+<p>欢迎关注研习设的微信公众号：「Yanxishe2017」</p>
+<p><span class="img-zoom"><img alt="学会「视觉锤」这个高级思维，让你的设计更值钱！" class="alignnone size-full wp-image-271254" src="https://image.uisdc.com/wp-content/uploads/2018/05/yxskxsqr.jpg" alt="大胆颠覆！日本炙手可热的新锐设计师吉田ユニ" /></span></p>

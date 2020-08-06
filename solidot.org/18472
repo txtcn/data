@@ -1,0 +1,36 @@
+➜Google 以垃圾信息为由屏蔽了具有历史意义的编程语言用户组
+https://www.solidot.org/story?sid=65081	22454
+多个具有历史意义的编程语言用户组（Usenet）<a href="https://groups.google.com/forum/#!forum/comp.lang.forth" target="_blank">comp.lang.forth</a> 、<a href="https://groups.google.com/forum/#!topic/comp.lang.lisp/hkNdllfom0E">comp.lang.lisp</a> 和 <span><a href="https://groups.google.com/forum/#!forum/comp.sys.sinclair" target="_blank">comp.sys.sinclair</a> </span>等遭到 Google 的屏蔽。Google 给出的理由是“您尝试看的群组（xxx）中已发现含有垃圾内容、恶意软件或其他恶意内容。此群组中的内容现在设为仅供查看模式，只有具备相应权限的用户才能查看内容。群组所有者可以在清理论坛中可能令人反感的内容后提出申诉”。Google 此举在社交网络引发了<a href="https://news.ycombinator.com/item?id=23977375">争议</a>，批评者<a href="https://lwn.net/Articles/827233/">认为</a>这造成了巨大的破坏，认为需要更稳定更可靠的存档服务。<p>
+➜Firefox 79.0 发布
+https://www.solidot.org/story?sid=65082	22574
+Mozilla 释出了 Firefox 79.0。新版本的变化不多，<a href="https://www.mozilla.org/en-US/firefox/79.0/releasenotes/">主要包括</a>：对更多 Windows 平台的英特尔和 AMD GPU 用户启用 WebRender，改进图形性能（WebRender 是用 Rust 语言开发的基于 GPU 的实验性 Web 内容渲染器）；多个安全修正，修复了使用屏幕阅读器导致的崩溃问题，改进了屏幕阅读器用户的可访问性；在控制台和调试器中显示 JavaScript 错误；等等。<p>
+➜国际热核聚变实验堆开始组装
+https://www.solidot.org/story?sid=65083	23407
+世界最大的聚变反应堆项目<a href="https://www.bbc.com/news/science-environment-53573294" target="_blank">进入了五年组装阶段</a>。在此阶段完成之后，它将能开始产生聚变所需要的超高温等离子体。投资 200 亿欧元的国际热核聚变实验堆项目正在法国南部的 Saint-Paul-lez-Durance 建设之中，它是中国、欧盟、印度、日本、韩国、俄罗斯和美国合作的项目。所有成员国分摊建设费用。今天的核能依赖于裂变，基于重元素分裂成较轻的元素。而聚变则是将两个较轻的元素融合成重元素，这个过程会释放出巨大的能量，但放射能很少。国际热核聚变实验堆使用名为托卡马克的装置去控制聚变，旨在演示核聚变是否具有商业上的可行性。<p>
+➜中国火星探测器传回地月照片
+https://www.solidot.org/story?sid=65084	25235
+中国国家航天局<a href="http://www.cnsa.gov.cn/n6758823/n6758838/c6809936/content.html">公布了</a>火星探测任务天问一号拍摄的地月照片，拍摄时间是在 7 月 27 日。天问一号目前进入行星际转移轨道，距离地球超过 150 万公里。国家航天局称，“7 月 27 日，北京航天飞行控制中心飞控团队与中国航天科技集团试验队密切配合，控制天问一号探测器在飞离地球约 120 万公里处回望地球，利用光学导航敏感器对地球、月球成像，获取了地月合影。在这幅黑白合影图像中，地球与月球一大一小，均呈新月状，在茫茫宇宙中相互守望。“<p>
+➜埃及女子因 TikTok 视频被判刑
+https://www.solidot.org/story?sid=65085	25820
+埃及的道德卫士盯上了 TikTok 和 Instagram 等社交平台上的年轻女性。埃及一家法庭本周一以“违反家庭价值”的罪名<a href="https://www.nytimes.com/2020/07/28/world/middleeast/egypt-women-tiktok-prison.html">判处两名社交网红两年徒刑</a>，判定三名帮助她们发布视频的男子有罪，判处了他们相同的刑期。还有更多女性等待接受类似的审判。自今年 4 月，有至少九人遭到逮捕，第三名女性预计将在周三等待宣判。社交媒体在埃及是一种高度竞争且危险的地方，政府严密控制了传统媒体，利用法庭对其难以控制的数字平台实施限制。有多名埃及人因为在 Twitter 和 Facebook 上发表被认为批评政府或总统 Abdel Fattah el-Sisi 的帖子而遭到关押，至少 500 个新闻网站遭到屏蔽。<p>
+➜数十家公司的源代码泄露
+https://www.solidot.org/story?sid=65086	28954
+因配置错误，数十家企业的源代码<a href="https://www.bleepingcomputer.com/news/security/source-code-from-dozens-of-companies-leaked-online/" target="_blank">遭到泄露</a>，其中包括了微软、Adobe、联想、AMD、高通、摩托罗拉、华为海思、联发科、GE Appliances、任天堂、Roblox、迪士尼和江森自控等等。<a href="https://pastebin.com/aAnaLgS8">完整名单</a>发布在 Pastebin 上。逆向工程师 Tillie Kottmann 收集了这些泄露的代码库，并努力确保公开代码不会对相关公司造成直接伤害，比如在发现金融公司的代码库里有<a href="https://twitter.com/Bank_Security/status/1287386043872837632" target="_blank">硬编码的凭证</a>之后就会迅速移除。到目前为止，只有少数公司发出了 DMCA 删除通知，还有许多公司可能不知情，或者不在意，比如一家公司的开发者只想知道 Kottmann 是如何获得代码的，他们没有要求移除，而是说“玩得开心”。其中任天堂的游戏代码库引发了<a href="https://www.solidot.org/story?sid=65080">最多的关注</a>。<p>
+➜恶意程序使用 Dogecoin API 寻找 C&C 服务器地址
+https://www.solidot.org/story?sid=65087	32186
+安全公司  Intezer Labs <a href="https://www.intezer.com/container-security/watch-your-containers-doki-infecting-docker-servers-in-the-cloud/">报告</a>，一种新的恶意程序  Doki 会使用 Dogecoin API <a href="https://www.zdnet.com/article/new-linux-malware-uses-dogecoin-api-to-find-c-c-server-addresses/" target="_blank">寻找 C&amp;C 服务器地址</a>。研究人员说，Doki 由黑客组织 Ngrok 控制，它使用硬编码的钱包地址去查询 Dogecoin 区块资源管理器 dogechain.info API，对返回的值执行 SHA256，提取前 12 个字符作为子域名使用，将子域名结合 ddns.net 获得完整地址。Doki 是在今年 1 月左右出现的，半年之后大部分安全软件仍然未能将其检测出来。<p>
+➜澳大利亚警告针对中国留学生的绑架骗局
+https://www.solidot.org/story?sid=65088	35465
+澳大利亚当局<a href="https://cn.nytimes.com/asia-pacific/20200729/chinese-students-virtual-kidnapping/">警告说</a>，“虚拟绑架”可能正在增加，不知姓名的罪犯在设法榨取澳大利亚的中国学生及其在中国家人的财产，因为新冠病毒大流行，他们当中许多人处于紧张不安和孤独的状态。新南威尔士州警方周二说，今年已发生了至少八起得到证实的这类案件，受害者为这些从未发生的绑架支付了逾 200 万美元的赎金。在上个月发生在悉尼的一起案件中，一个家庭向不明身份的罪犯支付了 约 1000 万元人民币。虚拟绑架结合了数字技能与老式的骗子胁迫手段。至少从 1990 年代开始，从台湾和中国大陆到墨西哥和古巴的犯罪团伙就一直在用模拟绑架来说服家庭支付赎金，通常利用的是受害者有意或无意提供的个人信息。<p>
+➜投资者以 500 亿美元估值报价收购 TikTok
+https://www.solidot.org/story?sid=65089	45354
+路透社援引知情人士的消息<a href="https://www.reuters.com/article/us-bytedance-tiktok-exclusive/exclusive-bytedance-investors-value-tiktok-at-50-billion-in-takeover-bid-sources-idUSKCN24U1M9">报道</a>，字节跳动的投资者以 500 亿美元估值报价收购 TikTok。此前的<a href="https://www.solidot.org/story?sid=65038">报道称</a>，在特朗普政府威胁在美国禁用 TikTok 之后，母公司字节跳动正在考虑出售其多数股权。字节跳动正与其主要投资者协商交易，这一交易本质上是剥离 TikTok。根据计划，字节跳动的现有投资者红杉资本和泛大西洋投资等将向 TikTok 注入大笔新的投资，字节跳动将保留少数股权。500 亿美元的估值是 TikTok 的 2020 年预期收入 10 亿美元的 50 倍。相比之下，Snap 的市值为 330 亿美元，是 2020 年预期收入的 15 倍。目前不清楚字节跳动 CEO 张一鸣是否满意这一报价，该公司对 TikTok 的估值超过了 500 亿美元。TikTok 在快速增长，管理团队估计到 2021 年收入能达到 60 亿美元。<p>
+➜AMD 公布 Q2 财报和最新产品路线图
+https://www.solidot.org/story?sid=65090	45516
+AMD <a href="https://www.anandtech.com/show/15935/amd-reports-q2-2020-earnings-notebook-and-server-sales-drive-a-record-quarter">公布了</a> 2020 年第二季度（Q2）的财报：收入 19.3 亿美元，同比增长 26%；净利润 1.73 亿美元，同比增长 349%。笔记本电脑和服务器 CPU 销量快速增长，而 GPU 销售则再次拖后腿。作为财报的一部分，AMD <a href="https://www.anandtech.com/show/15936/amd-reiterates-2020-roadmap-zen-3-client-server-rdna-2-cdna-late-this-year">公布了</a>未来的产品路线图：基于 Zen 3 架构的 CPU 和 RDNA 2 架构的 GPU 都预计在今年晚些时候发布，而采用 RDNA 2 GPU 的游戏机 Playstation 5 和 Xbox Series X 也都将在年底上市。针对数据中心市场的首款 CDNA 架构 GPU 的发布时间也是今年晚些时候。Zen 3 仍然采用 7 纳米工艺，而 Zen 4 将升级为 5 纳米工艺。<p>
+➜Delicious 将恢复上线
+https://www.solidot.org/story?sid=65091	46986
+书签服务 Pinboard 创始人 Maciej Ceglowski <a href="http://del.icio.us/">宣布</a>，有 17 年历史的老牌书签服务 del.icio.us 将恢复上线。Delicious 于 2003 年上线，2005 年被雅虎收购，2011 年被雅虎出售给 Avos Systems；2014 年被 Avos Systems 出售给 Science, Inc；2017 年 Pinboard 宣布收购 Delicious，但服务被关闭，并停止活动至今。Ceglowski 在声明中表示，如果用户在 2011 年之后储存有数据在 Delicious，那么届时将可以把数据导出；但 2010 年之前的数据则要基于用户在 2011 年所有权转移时完成了“选择加入”流程。<p>
+➜空客将建造第一艘“星际飞船”
+https://www.solidot.org/story?sid=65092	49309
+空客法国<a href="https://www.bbc.com/news/science-environment-53575353">将建造第一艘“星际飞船”</a>，将火星岩石样本运回地球。火星样本将由 NASA 即将发射的漫游车毅力号（Perseverance）挖掘，然后用火箭发射到火星轨道。空客飞船的任务就是抓住包裹运回地球。这次美欧合作项目将耗资数十亿美元，耗时十年完成。科学家表示，火星样本将是证明火星是否曾经有过生命最好方法。飞船被称为 Earth Return Orbiter (ERO)，重 6.5 吨，2026 年发射。NASA 将把火箭送到火星地面，将毅力号收集的样本发射到轨道，最后由 ERO 送回地球。<p>

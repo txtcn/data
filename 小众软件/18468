@@ -1,0 +1,17 @@
+➜Bar chart race generator – 0 门槛，在线生成条形竞赛图动画
+https://www.appinn.com/bar-chart-race-generator/	12998
+<p><a href="https://www.appinn.com/bar-chart-race-generator/" class="rank-math-link">Bar chart race generator</a> 是一个只需要数据（.csv）就能生成目前非常流行的条形竞赛图动画的开源项目，一键、自动、生成，堪称 0 门槛。@Appinn</p>
+<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202007/bar-chart-race-generator.jpg!o" alt=""/></figure>
+<p>可能，这篇文章主要介绍怎么创建一个 .csv 数据文件，而不是如何使用 Bar chart race generator 😂</p>
+<p>Bar chart race generator 在 <a href="https://github.com/FabDevGit/barchartrace" class="rank-math-link">GitHub</a> 开源，你可以自己部署，或者直接使用在线版本：<a href="https://fabdevgit.github.io/barchartrace/">https://fabdevgit.github.io/barchartrace/</a></p>
+<p>使用方式简单，先上传 数据 .csv 文件，再选择标题、行数、间隔，就能开始动画了。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202007/screenshot-2020-07-25-at-11-13-55.jpg!o" alt=""/></figure></div>
+<p>可以先选取右侧的示例数据来尝试，研究数据格式也可以直接下载示例数据，比如这里以 StackOverflow questions per language 为例，下载后的数据格式是这样的：</p>
+<figure class="wp-block-table is-style-stripes"><table><tbody><tr><td><strong>Date</strong></td><td><strong>python</strong></td><td><strong>c#</strong></td><td><strong>javascript</strong></td><td><strong>java</strong></td><td><strong>php</strong></td></tr><tr><td><strong>2008-12-1</strong></td><td>3.598865979837</td><td>13.255000550093600</td><td>4.7503359540756</td><td>7.3213074395536</td><td>4.0078324108682000</td></tr><tr><td><strong>2009-1-1</strong></td><td>3.7438229213154</td><td>13.569751703493000</td><td>4.898567392357</td><td>7.606639317315600</td><td>3.96306658387</td></tr><tr><td><strong>2009-2-1</strong></td><td>3.6876969828444000</td><td>14.182035523608800</td><td>5.0679653763862</td><td>7.358513289351000</td><td>4.1527288488246</td></tr><tr><td><strong>2009-3-1</strong></td><td>3.7361314551566000</td><td>14.546982830800000</td><td>5.056435621974400</td><td>7.183866533418800</td><td>4.1887353500128</td></tr><tr><td><strong>2009-4-1</strong></td><td>3.7430396826692000</td><td>14.933382912580000</td><td>5.1279177961244000</td><td>7.109824381643000</td><td>4.3020487136032</td></tr><tr><td><strong>2009-5-1</strong></td><td>3.7885167995886</td><td>15.050880439172600</td><td>5.202145266104800</td><td>7.142716862131800</td><td>4.4238621791792</td></tr><tr><td><strong>2009-6-1</strong></td><td>3.7323013117104</td><td>14.801047475774000</td><td>5.306003888145600</td><td>7.1904964952744</td><td>4.7431474931994</td></tr><tr><td><strong>2009-7-1</strong></td><td>3.7326003851286</td><td>14.564039793773800</td><td>5.307366937040400</td><td>7.213424981032800</td><td>5.1273660276464</td></tr></tbody></table></figure>
+<p>结构非常简单，<strong>行</strong>为不同编程语言，<strong>列</strong>为时间，只需要把上面的数据格式改为你自己的数据，就能生成条形竞赛图了。</p>
+<p>效果是这样的：</p>
+<div class="aspect-ratio">
+<iframe src="//player.bilibili.com/player.html?aid=796462322&#038;bvid=BV1aC4y1b7Ja&#038;cid=216344529&#038;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+<p>目前的 Bar chart race generator 还不支持导出 GIF 动画或者视频，开发者说建议<a href="https://www.appinn.com/tag/%E5%BD%95%E5%B1%8F/" class="rank-math-link">自行录屏</a>，或者参与开源项目贡献这部分代码。</p>
+<p>至此，一个简单的<a href="https://www.appinn.com/tag/条形竞赛图/" class="rank-math-link">条形竞赛图</a>动画就制作完成了，除了准备数据，真的是 0 门槛，很赞。</p>

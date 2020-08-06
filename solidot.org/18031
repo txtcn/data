@@ -1,0 +1,50 @@
+➜英特尔处理器新漏洞 ZombieLoad
+https://www.solidot.org/story?sid=60611	12448
+在 Meltdown、Spectre 和 Foreshadow 之后，计算机科学家<a href="https://www.cyberus-technology.de/posts/2019-05-14-zombieload.html" target="_blank"><u>公开了</u></a>英特尔处理器的新边信道攻击 ZombieLoad，攻击影响 2011 年之后发布的几乎所有英特尔处理器（包括 Core 和 Xeon），AMD 不受影响。这是一个硬件问题，因此漏洞利用代码可以工作在 Windows 和 Linux 等不同操作系统上。ZombieLoad 的漏洞利用同样是基于预测执行过程，通过利用 CPU 负荷返回值的旁路逻辑，去实现跨线程、权限边界和超线程的数据泄露。英特尔据报道曾<a href="https://www.nrc.nl/nieuws/2019/05/14/hackers-mikken-op-het-intel-hart-a3960208" target="_blank"><u>试图推迟</u></a>漏洞披露。
+➜Eric Schmidt 称审查版搜索引擎能帮助中国更开放
+https://www.solidot.org/story?sid=60612	15414
+前 Google CEO Eric Schmidt 为该公司此前计划在中国推出审查版搜索引擎的决定进行了辩护。他在接受采访时<a href="https://www.bbc.com/news/technology-48262148"><u>表示</u></a>，他本人没有参与代号为 Dragonfly 的审查搜索平台的决策，但 Schmidt 坚称与中国合作有诸多好处，他倡导在中国运营，认为这能帮助它变得更开放。他也不同意 Google 在 2010 年退出中国搜索市场的决定。
+➜微软向 Windows XP、 7 和 Windows 2003 释出安全补丁修复一个高危漏洞
+https://www.solidot.org/story?sid=60613	16549
+微软又一次不同寻常的向已经终止支持的 Windows XP 和 Windows 2003 <a href="https://krebsonsecurity.com/2019/05/microsoft-patches-wormable-flaw-in-windows-xp-7-and-windows-2003/" target="_blank"><u>释出了安全更新</u></a>，修复一个据称能像 WannaCry 蠕虫那样快速传播恶意程序的漏洞。漏洞编号 <a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0708"><u>CVE-2019-0708</u></a>，位于远程桌面服务中，该漏洞也影响仍然支持的操作系统如 Windows 7、Windows Server 2008 R2 和 Windows Server 2008。微软表示它没有观察到该漏洞正被利用的证据，但认为攻击者很快会开发出漏洞利用代码并将其整合到恶意程序中。漏洞不影响到较新的操作系统如 Windows 10、Windows 8.1、Windows 8、Windows Server 2019、 Windows Server 2016、Windows Server 2012 R2 或 Windows Server 2012。
+➜中外科学家首次观测到三维量子霍尔效应
+https://www.solidot.org/story?sid=60614	17103
+量子霍尔效应是否只存在于二维体系？这个基础问题从二维量子霍尔效应发现后不久即引起领域的关注。早在 1987 年，Bertrand Halperin 从理论上就预言了三维量子霍尔效应的存在和它的测量特征。但要验证这个新奇效应，对材料体系与测量手段的要求都非常高；尽管已有诸多尝试，实验上仍缺乏可信的观测证据。现在，中外科学家团队<a href="http://news.sciencenet.cn/htmlnews/2019/5/426255.shtm"><u>首次观测到</u></a>三维量子霍尔效应的明确证据，并指出该效应可能是由于磁场下相互作用产生的电荷密度波诱导的。<a href="https://www.nature.com/articles/s41586-019-1180-9"><u>研究报告</u></a>发表在《自然》期刊上。
+➜迪士尼将完全控制 Hulu
+https://www.solidot.org/story?sid=60615	19662
+迪士尼和 Comcast 达成协议，迪士尼<a href="https://edition.cnn.com/2019/05/14/media/disney-buys-comcast-hulu-ownership/index.html"><u>将完全控制流媒体服务 Hulu 的运营</u></a>。Comcast 还同意它可以选择在 2024 年将其持有的三分之一股份出售给迪士尼。Hulu 社迪士尼、华纳和 Comcas 的合资企业，三大巨头都没有控股权。但在收购福克斯电影和电视剧业务之后，迪士尼已经拥有了 Hulu 的控股权。AT&amp;T 旗下的华纳媒体上个月同意出售它持有的 9.5% 股份，加上 Comcast 的 33% 股份，迪士尼将 100% 控制 Hulu。然而这家娱乐巨头已经宣布将在今年 11 月推出自己的流媒体服务 Disney+，为什么它要拥有两个流媒体平台？一种可能的解释是细分市场，Disney+ 可能更多针对家庭用户，而 Hulu 可以偏向成人用户。
+➜沙特石油设施遭无人机攻击
+https://www.solidot.org/story?sid=60616	25276
+沙特阿拉伯称，数架武装无人机周二<a href="https://cn.reuters.com/article/saudi-oil-facilities-0514-tues-idCNKCS1SL02B" target="_blank"><u>袭击了该国两座石油泵站</u></a>，并称其为 “懦夫般的” 恐怖主义行动。胡塞武装的 Masirah 电视台稍早称，该组织使用无人机对“极其重要的”沙特设施发动攻击，回应对“也门的持续入侵和封锁行动”。四年来以沙特为首的联军一直在也门与胡塞武装作战，试图恢复国际承认的政权，这场冲突被普遍认为是一场沙特-伊朗间的代理人战争。胡塞武装频繁使用无人机和导弹攻击沙特城市，但沙特阿美的设施遭到无人机攻击尚属首次。沙特阿美表示，该公司已暂时关闭东部-西部输油管道以评估状况。这条管道主要是将原油从沙特东部油田输送至位于曼德海峡的延布港。
+➜华为表示愿意与各国政府签署无监控协议
+https://www.solidot.org/story?sid=60617	25474
+华为董事长梁华周二<a href="https://cn.reuters.com/article/huawei-chairman-lianghua-5g-0515-idCNKCS1SL037"><u>表示</u></a>，该公司愿意与包括英国在内的各国政府签署无监控协议。美国以间谍活动担忧为由，不断向欧洲国家施压，要求他们排斥华为。华盛顿劝告盟友不要使用华为的技术来建设 5G 网络，担心华为设备可能成为中国政府进行间谍活动的工具。华为否认这一指控。“我们愿意与包括英国政府在内的各国政府签署无监控协议，致力于让我们的设备符合没有监控、没有后门的标准，” 华为董事长梁华在伦敦的一次会议上通过翻译表示。华为是全球最大的电信设备供应商。英国将就允许华为在其 5G 网络建设中的参与程度做出决定。
+➜月球一直在收缩
+https://www.solidot.org/story?sid=60618	26630
+根据发表在《Nature Geoscience》期刊上的<a href="https://www.nature.com/articles/s41561-019-0362-2"><u>一项研究</u></a>，科学家<a href="http://time.com/5588711/nasa-shrinking-moon-moonquakes/" target="_blank"><u>发现</u></a>由于内部的冷却月球在过去的几亿年里一直在收缩，并引发了一系列的月震导致其坚硬的表面裂开形成断层线。过去数亿年里，月球长度缩小了 150 英尺。在过去的一系列登月任务中，宇航员在月球上放置了地震仪。科学家对数据的分析确认，月球的断层仍然在活跃，随着月球内部逐步冷却和收缩，月震仍然有可能发生。
+➜不文明乘车行为将被记录为个人信用不良信息
+https://www.solidot.org/story?sid=60619	29260
+北京已经宣布要在 2020 年底前建成覆盖全部常住人口的北京 “个人诚信分” 工程。作为这个工程的一部分，北京交通委<a href="http://jtw.beijing.gov.cn/zmhd/myzj/201904/t20190425_201288.html"><u>公布</u></a>了《<a href="http://jtw.beijing.gov.cn/zmhd/myzj/201904/W020190425427607111986.docx" target="_blank"><u>关于对轨道交通不文明乘车行为记录个人信用不良信息的实施意见</u></a>》（征求意见稿），将四种不文明乘车行为记录为个人信用不良信息。这四种行为是：<i>
+（一）采用违规进出闸机、伪造变造票卡等方式逃交票款；
+（二）在列车车厢内一人占用多个座位；
+（三）除婴儿、病人外，在列车车厢内进食；
+（四）推销产品或从事营销活动。</i>
+中国计划全面推行的社会信用体系正日益渗透到日常生活里。
+➜小鼠实验揭示流感冬季传播原因
+https://www.solidot.org/story?sid=60620	31244
+根据发表在 PNAS 期刊上的<a href="https://www.pnas.org/content/early/2019/05/07/1902840116"><u>一项研究</u></a>，流感最好的朋友是<a href="http://www.ebiotrade.com/newsf/2019-5/2019514154944902.htm"><u>低湿度</u></a>。低温和低<span class="tip_s" title="">湿度</span>被认为会促进<span class="tip_s" title="">流感</span>病毒的传播，但背后的原因并不清楚。耶鲁大学的研究人员将小鼠安置在相同温度但湿度不同的房间里，然后暴露在甲型流感病毒下。研究人员发现，低湿度在三个方面阻碍了动物的免疫反应。首先，它能阻止纤毛清除病毒颗粒和粘液，其次它还降低了气管细胞修复肺部病毒造成的损伤的能力，第三个机制涉及干扰素（病毒感染细胞释放的信号蛋白，以提醒邻近细胞对病毒的威胁），在低湿度环境下，这种先天免疫防御系统失效。这项研究揭示了为什么流感在空气干燥时更为普遍。
+➜美国劳资关系委员会称 Uber 司机是合同工不是雇员
+https://www.solidot.org/story?sid=60621	34851
+美国全国劳资关系委员会得出结论，打车软件公司 Uber 的司机<a href="https://www.nytimes.com/2019/05/14/business/economy/nlrb-uber-drivers-contractors.html"><u>是合同工而不是雇员</u></a>。根据美国联邦法律，相比雇员，合同工难以组建工会以及举行抗议雇主政策等集体活动，缺乏最低工资和加班等的保护。如果劳资关系委员会认为司机不是合同工而是雇员，那么 Uber 等打车软件公司的人工成本有可能将增加 20% 到 30%。批评者称，道路可能漫长而艰难，但 Uber 将不得不对其工人负责。<br>
+➜旧金山禁止政府使用面部识别技术
+https://www.solidot.org/story?sid=60622	39281
+科技革命的心脏旧金山成为美国第一个禁止政府和警察使用面部识别监控技术的城市。市议会以 9 比 1 <a href="https://www.nytimes.com/2019/05/14/us/facial-recognition-ban-san-francisco.html"><u>通过了相关提案</u></a>。提出这项法案的议员 Aaron Peskin 称旧金山有责任去监管技术的过度使用，因为开发这些技术的公司总部就在这里。但批评者认为，旧金山不应该过于专注于禁止，而应该制定法规承认面部识别技术的可用性。乔治华盛顿大学宪法学专家 Jonathan Turley 称，否定面部识别在确保机场和边境设施安全方面的价值是荒诞的，很难否认这项技术在公共安全上的价值。美国公民自由联盟（ACLU）的律师 Matt Cagle 则指出，面部识别技术为政府提供了前所未有的权力去跟踪公民的日常生活，这与健康的民主制度是不相容的。
+➜特朗普准备签署行政令禁止美企购买华为设备
+https://www.solidot.org/story?sid=60623	41216
+多家媒体援引匿名知情人士的消息<a href="https://cn.reuters.com/article/exclusive-trump-order-huawei-0514-tues-idCNKCS1SL01T"><u>报道</u></a>，美国总统特朗普计划在本周签署行政令，禁止美国企业使用对国家安全构成风险的企业所生产的电信设备，为禁止美企与中国华为的业务往来做准备。消息人士称，行政令不会点出具体的国家或企业，此前已经考虑了一年有余，但一再被推迟签发。由于相关准备仍属机密，消息人士要求匿名。他们说，这一次仍有可能会推迟。这项行政令将援用国际紧急状态经济权力法。该法案赋予总统在国家面临紧急状态威胁时进行商业管制的权力。
+➜思科曝出硬件设计漏洞
+https://www.solidot.org/story?sid=60624	44846
+安全公司 Red Balloon <a href="https://www.wired.com/story/cisco-router-bug-secure-boot-trust-anchor/"><u>披露了</u></a>被命名为 <a href="https://thrangrycat.com/"><u>Thrangycat</u></a>（甚至还有专门的绘文字）的漏洞。Thrangycat 是思科安全模块 Trust Anchor 一系列设计缺陷导致的，该安全模块被广泛用于思科的企业级路由器、交换机和防火墙产品，它被用于验证引导程序的完整性，防止设备运行修改过的引导程序。该漏洞允许有 root 权限的攻击者通过修改 FPGA 字节流关闭 Trust Anchor 模块的关键功能，从而完全绕过 Trust Anchor。如果把该漏洞和另一个远程命令注入漏洞组合起来，攻击者能远程和持久性的绕过思科设备的安全引导机制，并能阻止 Trust Anchor 未来的更新。思科有<a href="https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20190513-secureboot"><u>数十款产品</u></a>受到该漏洞的影响，但严重性可能没有我们想象的大，因为攻击者首先需要有设备的 root 权限。
+➜Let’s Encrypt 发布自己的 Certificate Transparency 日志
+https://www.solidot.org/story?sid=60625	47785
+旨在让每个网站都能使用 HTTPS 加密的非赢利组织 Let’s Encrypt <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html"><u>发布了</u></a>自己的 Certificate Transparency 日志 <a href="https://letsencrypt.org/docs/ct-logs"><u>Oak</u></a>，它欢迎其他 CA 递交证书日志。该项目得到了 Sectigo 的赞助。Certificate Transparency (CT) 是一个记录和监视证书签发的系统，有助于改进 CA 生态系统和 Web 安全，因此迅速成为关键的互联网基础设施。Let’s Encrypt 决定创建和运作自己的 CT 是出于多个理由：首先是 CT 与该组织让互联网变得更安全和尊重隐私的使命相一致，它相信透明能增强安全，能让人做出深思熟虑的决定；其次是运作一个日志有助于控制其命运，Google Chrome 要求所有的新签发证书递交到两个不同的日志系统，因此 Let’s Encrypt 的运营必须要有多个日志选项；第三是它每天签发超过 100 万个证书，它想要设计一个能优化处理大量证书日志的系统。

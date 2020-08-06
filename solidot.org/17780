@@ -1,0 +1,53 @@
+➜Firefox 62 发布
+https://www.solidot.org/story?sid=57838	11363
+Mozilla <a href="https://www.mozilla.org/en-US/firefox/62.0/releasenotes/" target="_blank"><u>释出了</u></a> Firefox 62。主要新变化包括：Firefox 63 将停止信任赛门铁克签发的证书，Firefox 62 加入了配置选项允许用户提前不信任赛门铁克证书（ecurity.pki.distrust_ca_policy，值设为 2）；支持 CSS Shapes，支持 CSS Variable Fonts 可变字体；改进 Windows 下无硬件加速的图形渲染；更新企业环境，macOS 10.14 全黑模式自动启用全黑主题；等等。另外，最后一个支持 XUL 扩展的支持版本 Firefox ESR 52 已经终止支持，以后的 ESR 版本都不再支持旧扩展。
+➜GNOME 3.30 发布
+https://www.solidot.org/story?sid=57839	12128
+GNOME 桌面环境项目<a href="https://help.gnome.org/misc/release-notes/3.30/" target="_blank"><u>释出了</u></a>最新版本 GNOME 3.30“Almería”。新版显着改进了桌面性能，使用更少的系统资源，用户可以同时运行更多的应用；改进桌面分享和远程桌面会话；软件管理器现在能自动更新 Flatpaks 应用，Flatpaks 是 Red Hat 主导开发的打包格式；虚拟机应用 Boxes 能使用 Remote Desktop Protocol 连接远程 Windows 服务器；加入了更多游戏；新的播客应用  Podcasts；等等。
+➜MEGA 官方 Chrome 扩展被加入窃取密码和数字货币私钥的恶意代码
+https://www.solidot.org/story?sid=57840	15390
+9 月 4 日 14:30 UTC，未知攻击者向 Google 官方扩展商店  Google Chrome webstore <a href="https://mega.nz/blog_47" target="_blank"><u>上传了文件共享服务 MEGA.nz 的一个木马版本 version 3.39.4</u></a>，其中包含的恶意代码能窃取&nbsp; amazon.com、live.com、github.com 和 google.com、以及 myetherwallet.com、mymonero.com、idex.marke 等网站的登录凭证和钱包私钥。MEGA 在 4 个小时后释出了一个干净的扩展版本 version 3.39.5。如果你在此期间安装了 MEGA Chrome 扩展，启用了自动更新并接受了木马版本的额外权限要求，那么你最好假设在此期间所访问网站的登录凭证被窃取了，最好重置相关网站的密码。MEGA 官方对给用户造成的不便表示歉意，批评了 Google 的扩展自动签名流程，认为如果扩展在上传到扩展商店前要求开发者签名，那么这将能提供额外的一层保护，而 Google Chrome webstore 的做法是上传新版本后自动给予签名。MEGA 的 Firefox 扩展没有受到影响。MEGA 表示它正在调查其 Chrome webstore 账号是如何被入侵的。
+➜Facebook 和 Twitter 执行官表示目前无意去中国发展
+https://www.solidot.org/story?sid=57841	16702
+FB 的首席运营官桑德伯格（Sheryl Sandberg）和推特的 CEO 多西（Jack Dorsey）出席了参议院情报委员会举行的听证会。听证会也邀请了 Google 执行官，但 Google 的高管最终没有露面。在听证会上，两家社交巨头的执行官<a href="https://www.voachinese.com/a/us-congress-social-media-china-market-20180905/4559869.html" target="_blank"><u>告诉美国国会议员</u></a>，他们现在没有立即要进入中国市场的计划。Facebook 和推特等美国社交媒体巨头目前都在中国被屏蔽。桑德伯格表示，尽管中国广大的人口和市场对于脸书希望完成“连结世界”的使命很重要，不过，“进军中国的前提是，我们要能继续遵守我们的价值观，因此目前是不可能的。” 多西也在听证会上回答议员质询时说，推特目前也没有计划要到中国发展。“当我们被屏蔽时，我们决定不要去打这场现在不值得去打的仗，我们有其他更优先的任务，”多西说。
+➜日本证实第一例与福岛核辐射相关的死亡
+https://www.solidot.org/story?sid=57842	18626
+日本首次<a href="http://cn.nikkei.com/politicsaeconomy/politicsasociety/32112-2018-09-05-11-40-22.html" target="_blank"><u>公开证实</u></a>，2011 年福岛核电站泄漏事故当中的一名工人，在事后因为核辐射而死亡。该名 50 多岁的男子在 2016 年被诊断患有肺癌，<a href="https://www.bbc.com/zhongwen/simp/world-45429853" target="_blank"><u>他最终也是死于这种疾病</u></a>。
+日本政府此前曾经承认，福岛核辐射导致四名工人患病，但这是日本第一次承认有人因此而死亡。这名死亡的工人从 1980 年代开始就在核电站工作，在福岛核设施崩塌后，他负责测量福岛一号站的辐射状况。
+负责管理医疗和劳动福利的日本厚生劳动省表示，日本核设施受到破坏后，这名工人至少两次在那里执行工作，当时他有佩戴防护面具并身穿防护衣。
+在听取放射科专家及其他专业人士的意见之后，厚生劳动省认为该名工人的家属应当获得赔偿。
+➜Tor Browser 8.0 发布
+https://www.solidot.org/story?sid=57843	19264
+<div align="center"><img src="//img.solidot.org/0/638/libkx1gtAazu6.gif" align=""><br>
+</div>
+<br>
+Tor 匿名网络<a href="https://blog.torproject.org/new-release-tor-browser-80" target="_blank"><u>发布了</u></a>最新的稳定版浏览器 <a href="https://www.torproject.org/download/download-easy.html" target="_blank"><u>Tor Browser 8.0</u></a> 。Tor Browser 8.0&nbsp; 是基于 Firefox 60 ESR 的首个稳定版本，主要是改进了一系列用户体验，其中包括用户可以随时要求生成新的 Tor 链路；可以直接在浏览器上请求新的网桥地址，而以前用户在网桥失效之后要获取新网桥只能通过网站或电子邮件；改进对繁体中文等语言的支持，等等。其它版本相关的变化包括 Firefox&nbsp; 60.2.0esr，Tor 0.3.3.9、OpenSSL 1.0.2p、Libevent 2.1.8，Torbutton&nbsp; 2.0.6 等等。
+➜脉冲星发现者获得 300 万美元奖金
+https://www.solidot.org/story?sid=57844	25481
+Jocelyn Bell Burnell 在 1960 年代发现了脉冲星，1974 年的诺贝尔物理学奖授予了脉冲星发现者，但她这位发现者却被排除在外。现在，已经 75 岁的 Bell Burnell 赢得了突破奖基金会的基础物理学特别突破奖，<a href="https://arstechnica.com/science/2018/09/jocelyn-bell-burnell-wins-3-million-prize-for-discovering-pulsars/" target="_blank"><u>获得了 300 万美元奖金</u></a>。
+突破奖基金会由多位亿万富翁资助建立，其中包括 Google 联合创始人 Sergey Brin、马云及其妻子张瑛、俄罗斯互联网风投家 Yuri 和 Julia Milner夫妇、Facebook创始人 Mark
+Zuckerberg 和 Priscilla Chan 夫妇。突破奖的每位获奖者能获得 300 万美元。天体物理学家 Chiara Mingarelli 认为没有科学家比她更值得获得这个奖项了。Bell Burnell 是在研究生时发现了脉冲星，对于自己没有获得诺贝尔奖，她认为除非特例，诺贝尔奖很少会颁发给研究生。她计划将奖金用于创建一个博士奖学金。Bell Burnell 已经获得了无数荣誉，被授予爵士爵位。
+➜比特币暴跌一千美元
+https://www.solidot.org/story?sid=57845	27737
+在传出高盛集团对数字货币交易平台计划失去兴趣之后，<a href="https://finance.yahoo.com/chart/BTC-USD?p=BTC-USD" target="_blank"><u>比特币币值</u></a>出现<a href="https://www.forbes.com/sites/billybambrough/2018/09/05/bitcoin-is-in-freefall-dragging-ether-and-ripple-with-it-heres-why/#27e380af5e39" target="_blank"><u>大跳水</u></a>，从 7400 美元跌到了 6400 美元。比特币的剧烈波动也带动其它主要数字货币大跌，以太坊从 280 美元跌至了 220 美元；Bitcoin Cash 从 630 美元跌到了 500 美元。一则消息就能让市场出现如此大的波动，这也是很多人对数字货币市场过度投机而不满的地方。高盛集团已经发表声明，表示它还没有做出决定。
+➜美国司法部考虑就抑制言论自由向科技公司追责
+https://www.solidot.org/story?sid=57846	28615
+美国司法部长塞申斯(Jeff Sessions)<a href="http://www.ftchinese.com/story/001079299" target="_blank"><u>表示</u></a>，他将与各州总检察长举行会议，讨论各界对社交媒体平台“是否可能正在损害竞争，并有意抑制思想自由交流”的“日益增长的担忧”。上周，特朗普抨击谷歌、Facebook 和 Twitter 等大型科技公司压制右翼观点。这三家公司都否认存在任何反对保守派的偏见。Facebook 和 Twitter 执行官桑德伯格和多尔西周三在参议院情报委员会的听证会上表示，他们的公司依赖于《通讯规范法案》第 230 条提供的“避风港”。多尔西辩称，如果没有第 230 条，Twitter 将不得不进一步限制言论自由。多尔西表示：“我们之所以能够推测我们可以增进一个公共空间的健康，唯一原因就在于《通讯规范法案》第230条，因此我们需要仔细权衡修订的新法规是什么，以及这意味着什么。”
+➜贝宁成为最新一个对使用互联网征税的非洲国家
+https://www.solidot.org/story?sid=57847	30048
+贝宁成为最新一个对使用互联网征税的非洲国家。贝宁政府在八月底通过法令<a href="https://qz.com/africa/1377582/benin-is-taxing-use-of-social-media-apps-like-facebook-whatsapp/" target="_blank"><u>对使用互联网和社交媒体应用的公民收税</u></a>。访问 Facebook、WhatsApp 和 Twitter 等服务消耗的流量每 MB 需支付 5 非洲法郎(CFA francs，约 0.008 美元）的税，它还对短信和电话额外收取 5% 的费用。这项法令遭到了公民的抗议。 Internet Sans Frontières 的执行董事 Julie Owono 认为这不仅增加了贫困消费者的负担并扩大数字鸿沟，而且对国家新兴的数字经济也将是灾难性的。乌干达今年 7 月推出了法律对访问流行社交媒体和网站征税。
+➜手游《王者荣耀》接入公安数据平台
+https://www.solidot.org/story?sid=57848	34319
+官媒<a href="http://www.bjnews.com.cn/edu/2018/09/06/503502.html"><u>报道称</u></a>，腾讯旗下的热门手游《王者荣耀》将接入公安数据平台，加强实名制检查。《王者荣耀》曾在去年遭到党媒的批评，称其忽视了社会责任，让儿童沉迷于游戏，这一批评促使腾讯推出了防沉迷系统。在《王者荣耀》的最新更新中，腾讯通过接入公安权威数据平台进行校验，判断相关帐号的实名信息是否为未成年人，进而决定是否将此帐号纳入到健康系统的防沉迷体系中。腾讯的防沉迷系统规定，12 周岁以下（含 12 周岁）未成年人每天在《王者荣耀》中限玩 1 小时（同时每日 21:00 -次日 8:00 之间禁玩），12 周岁以上未成年人每天限玩 2 小时，超出时间后将被强制下线，当天不能再玩。所谓公安权威数据平台推测是公安系统身份查询接口。
+➜Bernie Sanders 提出 Stop BEZOS 法案对亚马逊征税
+https://www.solidot.org/story?sid=57849	39777
+美国佛蒙特州参议员 Bernie Sanders <a href="https://yro.slashdot.org/story/18/09/05/1753254/bernie-sanders-introduces-stop-bezos-bill-to-tax-amazon-for-underpaying-workers" target="_blank"><u>提出了法案</u></a>“Stop Bad Employers by Zeroing Out Subsidies Act（Stop BEZOS）”，针对某些大型企业，这些企业的雇员无法靠薪水养家煳口仍然需要依赖于联邦福利，比如亚马逊的底层工人就存在这种情况。Stop BEZOS 被形容为是一种公司福利税，针对有 500 名以上雇员的企业，如果这些企业的雇员仍然需要食品券、全国学校午餐或其它福利，那么将对雇主征收这些福利总价值 100% 的税。该法案适用于全职和兼职雇员，以及独立合同工。
+➜Google 成立二十年
+https://www.solidot.org/story?sid=57850	46296
+很少有科技公司像 Google 那样在塑造现代互联网和现代生活方面产生如此重大的影响。9 月 4 日是 <a href="https://www.theverge.com/2018/9/5/17823490/google-20th-birthday-anniversary-history-milestones" target="_blank"><u>Google 成立二十周年</u></a>。Google 于 1998 年 9 月 4 日诞生于加州门洛帕克的一个车库内，它最初叫 BackRub，后改为 Google，它从只提供搜索引擎，到提供多种产品和服务，拥有 8 个用户数超过 10 亿的服务，其中包括 Google（搜索）、Android、Gmail、Chrome、Google Maps.YouTube、Google Drive 等，无数人每天用 Google 搜索或通信或娱乐或办公。虽然它的商业模式今天开始日益受到质疑。
+➜青藏高原冰川面积过去五十年退缩 15%
+https://www.solidot.org/story?sid=57851	46960
+中国<a href="http://news.sciencenet.cn/htmlnews/2018/9/417291.shtm" target="_blank"><u>公布了</u></a>第二次青藏高原综合科考察研究结果。项目首席科学家、中科院院士姚檀栋说，过去 50 年来，青藏高原及其相邻地区冰川面积退缩了 15%，高原多年冻土面积减少了 16%；青藏高原大于 1 平方公里的湖泊数量从 1081 个增加到 1236 个，湖泊面积从 4 万平方公里增加到 4.74 万平方公里；雅鲁藏布江、印度河上游年径流量呈增加趋势，中亚阿姆河、锡尔河和塔里木河数十条支流径流量增长更为显着。青藏高原逐渐变绿的同时也含有隐忧。高山树线上升增加了森林生物量，但压缩了高寒灌丛—草甸的生存空间，可能提高高海拔特有物种消失的风险；气候变暖对农业生态系统也造成潜在风险。
+➜文本分析白宫的匿名“抵抗者”
+https://www.solidot.org/story?sid=57852	48113
+一名匿名白宫高级官员在《纽约时报》发表<a href="https://cn.nytimes.com/opinion/20180906/trump-white-house-anonymous-resistance/" target="_blank"><u>评论</u></a>（<a href="https://www.nytimes.com/2018/09/05/opinion/trump-white-house-anonymous-resistance.html" target="_blank"><u>英文</u></a>），称特朗普(Donald Trump)政府的“许多高级官员都从内部不懈努力，以挫败他的部分议程和最糟糕的倾向，而他还没有完全理解自己所处的这个困境。我非常清楚这一点。因为我就是其中的一位。明确地说，我们的抵抗并非那种盛行的来自左派的‘抵抗’。我们希望这届政府能够成功，并且认为它的许多政策已经让美国变得更加安全、更加繁荣。但我们认为，我们的第一责任是对这个国家负责，而总统却持续以一种危及合众国健康的方式行事。”作者声称有内阁成员考虑援引第 25 条修正案启动罢免总统的程序。这篇文章遭到白宫及特朗普本人的勐烈抨击，白宫新闻秘书 Sarah Sanders 称这位作者是<a href="https://yro.slashdot.org/story/18/09/06/0037204/white-house-says-anonymous-coward-behind-new-york-times-op-ed-should-resign" target="_blank"><u>匿名“懦夫”</u></a>，应该辞职。这位匿名官员究竟是谁？有很多人开始根据这篇文章的文本风格和白宫官员的公开言论进行文本分析，如 <a href="https://github.com/mkearney/resist_oped/blob/master/README.md" target="_blank"><u>Michael W. Kearney</u></a> 和 <a href="http://varianceexplained.org/r/op-ed-text-analysis/" target="_blank"><u>David Robinson</u></a>，相比大海捞针那样搜寻中本聪，白宫官员的数量要少得多而且明确得多。有许多人猜测是副总统或副总统的幕僚。

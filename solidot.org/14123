@@ -1,0 +1,43 @@
+➜我们应该在哪个层次编写代码?
+https://www.solidot.org/story?sid=7645	1200
+匿名读者 写道 "这个周末闲来无事，于是在VMware Workstation 5.5.1 Linux版本上安装了一个Mac OS X 10.4.3，也就是Drawin 8.3.1。整个安装过程碰到些小的问题.....不过我在这里要谈的一个重点是我之后安装了DVD盘自带的X11, 以及XCode中的GCC和DevSDK. 非常有趣的是我将一个在Linux上基于XLIB开发的程序在Drawin上重新编译，一切出奇地顺利，然后就能运行了。<i>我从来不知道C和XLIB写出来的程序具有如此高的可移植性。这让我回想到前几周我运行一个JAVA程序所碰到经历，这个JAVA程序对运行环境的版本出奇地敏感，这导致了超过半数的机器无法运行。这不得不让我重新思考一下中低级语言和高级语言之间在可移植性上的问题。<br>高级语言因为面临其功能的扩充与频繁的升级, 反而导致了开发上的复杂度(最极端的或许就是HTML, JS这样的表层语言)。那些所谓的低成本维护和高移植性的神话正在被其自身的剧烈变化所击破。而相比较人们不再去触碰像C这样构筑的中低层结构，这让程序开发环境变得非常稳定，而这种稳定也带来了出乎意料的高可移植性与性能。<a href="http://arc.net.cn/lib/blog/MacOSX_s.png">右图</a>就是我测试的一个程序，我拿我所有在Linux用C开发的程序在FreeBSD，NetBSD，Cygwin 以及 Drawin 上均编译运行通过，并且性能良好。这或许应该让我们重新思考一下，<a href="http://arc.net.cn/blog/?p=9">我们应该在哪个层次编写代码</a>？我的观点是：“一个稳定的层次”, 而从物理角度来看待这个问题同样显而易见：这个最甜的层次通常就是结构的中下层。"</i>
+➜“首字母Z”比“首字母A”收到的垃圾邮件要少
+https://www.solidot.org/story?sid=7646	3600
+剑桥大学安全专家Richard Clayton的最新<a href="http://www.cl.cam.ac.uk/~rnc1/aardvark.pdf">研究</a>（PDF）发现，用户电子邮件地址的首字母直接影响到他们<a href="http://www.hothardware.com/News/Do-Zebras-Get-Less-Spam-Than-Aardvarks/">收到的垃圾邮件数量的多寡</a>。邮件地址首字母顺序越靠后，收到的垃圾邮件越少。<i>研究分析了英国一家ISP Demon Internet公司8周的电子邮件通讯，总共超过5亿的邮件，其中56%都是垃圾邮件。Clayton将首字母为A的称为“Aardvarks组”，首字母为Z的称为“Zebras组”，他发现Zebras组收到的20%是垃圾邮件，Aardvarks组收到的35%是垃圾邮件。</i>
+➜微软获'Page Up'和'Page Down'专利
+https://www.solidot.org/story?sid=7647	9900
+Zdnet报道，微软已经获得了<a href="http://news.zdnet.com/2424-9595_22-218626.html">“Page Up”和“Page Down”按键专利</a>。软件巨头在2005年提出了申请，2008年8月19日正式批准。<i> <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1%3Cbr%20%3E%3C/a%3E%20&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=7,415,666.PN.&amp;OS=PN/7,415%3Cbr%20/%3E%20,666&amp;RS=PN/7,415,666">美国专利号7,415,666</a>描述为“一种让文档浏览者精确滚动文档定位的方法和系统，如滚动一页，而不管文档是否被放大，浏览者是否浏览了一页的全部或部分，都可以直接切换到下一页。”专利列出的“发明者”包括了Timothy Sellers，Heather Grantham和Joshua Dersch。但是，显而易见的是，“Page Up”和“Page Down”按键已经存在了几十年，1981年IBM PC的键盘上就有了<a href="http://www.vintage-computer.com/images/83key.jpg">这两个键</a>（图片）。微软长期以来一直在申请早已存在的技术和发明，一个典型例子是微软获得的关于鼠标滑轮放大和缩小功能的专利，以及双击鼠标的专利。它在2006年3月从美国专利和商标局获得了第5000项专利，目前已经接近了10000项。</i>
+➜VIA发布FOSS图形显示驱动
+https://www.solidot.org/story?sid=7648	19200
+VIA发布了113,800行的<a href="http://laforge.gnumonks.org/weblog/2008/08/29/">集成显卡Xorg驱动源代码</a>，支持CRT、LCD，和DVI设备的模式设定（mode setting），支持2D，X-Video，光标加速。<i>VIA的开源官员Harald Welte称下一步将加入3D支持（<a href="http://www.youtube.com/watch?v=iu8Q5ClbSEI">视频预览</a>），TV-out，和硬件多媒体解码器支持，将与现有的开源项目进行整合。VIA在4月份宣布<a href="__SLASHLINK__" sect="opensource" sid="08/04/10/0133233" sn="article" tid="7">拥护开源</a>，发布了<a href="__SLASHLINK__" sect="opensource" sid="08/05/12/0842232" sn="article" tid="75">帧缓存器源代码</a>，为最新的产品提供Linux驱动，推出多款预装Linux的笔记本，并帮助将开源的<a href="http://www.coreboot.org/Welcome_to_coreboot">coreboot</a>（之前称为LinuxBIOS）移植到它的主板上。</i>
+➜透视印度的人工CAPTCHA解答服务
+https://www.solidot.org/story?sid=7649	21300
+<a href="http://zh.wikipedia.org/w/index.php?title=CAPTCHA&amp;variant=zh-hans">CAPTCHA</a>正式名称叫自动区分计算机和人类的图灵测试，然而即便是机器，这套验证程序也已经力不从心，Yahoo、Google和微软的电子邮件CAPTCHA验证都已被黑客攻破。但显然任何CAPTCHA都无法在人类面前存活，如果有合适的经济刺激的话。<i>在IT大国印度就有着规模巨大的<a href="http://blogs.zdnet.com/security/?p=1835">人工CAPTCHA解答服务公司</a>，每天完成1000次验证，工人可以拿到2美元的收入。这项服务的优点处：员工无需培训，工作容易，无需投资，可在家工作，工作时间有弹性，每周支付薪水....CAPTCHA服务公司之间也是竞争激烈，他们广泛的招募数据处理新手，创造基于Web的工具和API keys，和数以千计的代理网站，使得工人工作更轻松，处理更高效。</i>
+➜Nvidia 55nm显卡也存在缺陷
+https://www.solidot.org/story?sid=7650	23400
+The Inquirer报道，<a href="http://www.theinquirer.net/gb/inquirer/news/2008/08/28/nvidia-55nm-parts-bad">Nvidia显卡质量存在严重问题</a>，它的新G92和G94系列显卡也存在与笔记本上的G84和G86系列显卡<a href="__SLASHLINK__" sect="hardware" sid="08/08/01/1351211" sn="article" tid="53">相同的过热缺陷问题</a>。文章称：<i>
+“很难去夸大问题是如何糟糕，基本上每一块65nm和55nm Nvidia显卡都有缺陷。我们已经听到8800GT显卡的出错机率达到了百分之十几，而9600GTs更高。更糟的是Nvidia继续出售这些有缺陷的产品，买家根本无法知道自己是否正好购买到问题产品。除非Nvidia列出所有有缺陷的产品，并从市场上回收，买家的最后做法就是用脚投票。这么做有可能让它破产，但我们不能一声不吭。”</i>
+➜SharePoint 在企业门户市场腹背受敌
+https://www.solidot.org/story?sid=7651	25200
+<a href="http://www.comsharp.com/">35公里</a> 写道 "据着名内容管理系统(CMS) 分析商 <a href="http://www.cmswatch.com/">CMS Watch</a> 报导，微软在企业门户系统  <a href="http://www.microsoft.com/sharepoint/default.mspx">SharePoint</a> 上的成功，引发 IBM, SAP, Oracle 一类的高端厂商纷纷加力，在企业集成与 Web 2.0 功能上加大工夫以夺回他们的市场。
+<i>CMS Watch 的《企业门户报告2009版》发现，IBM, SAP, Oracle，以及其它厂商正努力在他们产品中发力，<a href="http://www.itnews.com.au/News/83756,sharepoint-eating-up-the-portal-space.aspx">以期压制 SharePoint</a>。“企业门户系统已经有十几年的历史，这个市场始终存在着企业集成与轻量级协同之间的矛盾”，CMS Watch 创始人 Tony Byrne 说，“在过去的两年，微软已经主导轻量级协同系统市场。”而大型企业门户厂商正利用 SharePoint 缺乏同 .NET 之外企业技术集成的能力（如 ERP 及 CRM 系统）而力图有所作为。报告同时指出，SharePoint 同时受到多种同类开源系统的攻击，如 Apache, eXo 以及 Liferay。
+"</i>
+➜俄罗斯警察射死反政府网站管理员
+https://www.solidot.org/story?sid=7652	25920
+俄罗斯警察在俄罗斯联邦南部不稳定的行政区Ingushetiya，<a href="http://afp.google.com/article/ALeqM5ib7B2-KwVd8nayBpjr8ZuF8vLoOQ">杀死了反政府网站的创始人</a>，消息来源称是枪走火。
+<i>
+Magomed Yevloyev是<a href="http://ingushetiya.ru/">ingushetiya.ru</a>网站的创始人，该网站是这一地区的主要信息源，也是亲克拉姆宁宫的Ingushetiya总统Murat Zyazikov的着名反对者。警察在机场逮捕了刚走下飞机的Yevloyev，将其带入警车，随后他头上遭到枪击，不久就在医院中去世。 Yevloyev是在Ingushetiya首府Narzan被逮捕的，这是一个主要由穆斯林组成的地区，接近车臣。检察官公布了初步调查结果，据警察局的消息来源称，是一位警员的枪无意走火击中了Yevloyev的头部。</i>
+➜微软公布完整搜索战略
+https://www.solidot.org/story?sid=7653	30000
+<a href="http://www.comsharp.com/">35公里</a> 写道 "微软计划以4亿8600万美圆收购欧洲的价格对比与购物网站 <a href="http://www.ciao.co.uk/">Ciao</a>，以增强其 <a href="http://www.live.com/">Live Search</a> 表现。微软欧洲在线消费业务副总裁 John Mangelaars 称，将 Ciao 集成到 Live Search 是其欧洲商业搜索模式的开端。Mangelaars 解释，<a href="http://www.itnews.com.au/News/83754,microsoft-unveils-search-strategy.aspx">微软的搜索战略有三</a>，其一，提供最佳结果，其二，简化操作，其三创建一个创新的业务模式。
+<i>微软搜索战略的第一部分，将由其位于爱尔兰的价值5亿美金的数据中心实现，第二部分靠收购 <a href="http://www.ciao.co.uk/">Ciao</a> 以及此前收购的 <a href="http://www.multimap.com/">Multimap</a> 实现。Mangelaars 称，收购的目的是为了向用户提供更智能的搜索信息。
+"</i>           目前的搜索是一种机械性搜索，而我们希望向用户提供诸如最便宜的航班之类的信息，或者，用户输入酒店的名字，会得到一张去该酒店的地图。
+<br> <br>收购 Ciao 可以在 Live Search 的搜索结果旁边提供价格信息，而此前收购的 Multimap 会为搜索的内容提供详细地图信息。Mangelaars 补充。<br> <br>他承认，向用户提供更多信息涉及非常复杂的工作，因为，一些搜索可能包含歧义，比如，搜索“东方快车”，可能指的是一本书，一个中餐馆，火车，或是一部电影。
+<br> <br>“在这种情形，我们会查看用户的搜索历史，比如该用户是否曾搜索过中餐馆，根据这些信息，我们会知道用户真正想搜索的内容。”
+<br> <br>Mangelaars 说，这是微软第一次公布其完整的搜索战略。微软计划实现其搜索战略的最后一个步骤，通过与商家合作，提供折扣，创建一个创新的业务模式。Mangelaars 解释，该模式是，微软通过将搜索流量转移到商家而获利。
+➜企业补助开源开发者是否有意义？
+https://www.solidot.org/story?sid=7654	30720
+许多开源软件的开发者都有全职工作，对企业而言鼓励他们的开发者<a href="http://ostatic.com/172146-blog/should-more-employers-subsidize-open-source-development">向开源社区作贡献是否有意义</a>？以Linux kernel开发为例，排行榜上出现Red Hat和Novell可能不会出人意料，但目睹IBM，Intel和SGI作出如此多的贡献可能会令一些人感到惊讶。<i>“如IBM，Intel，SGI，MIPS，Freescale，HP等公司，都需要确保Linux 能在它们的硬件上工作良好。反过来，这也使得他们的产品对Linux用户更有吸引力，从而促进销售。”无论是否是出于自私的目的，大公司有一小部分生意是与Linux有关，促使它们帮助Linux。Linux并不是这种现象的一个特殊例子。众所周知Google有80/20的规定，允许雇员花20%的时间在与工作不相干的项目上。这也是为何Google员工推出了大量开源工具和开源代码。虽然我们不可能看到到处有公司补贴雇员帮助开发开源工具，技术和非技术公司同样能从资助员工将他们的才能用在开源开发中获得好处。如果有更多公司认识到这一设想，我们应该能看到更多的目的驱动、执行重要任务的开源软件。</i>
+➜1913年6月以来第一个太阳表面没有出现黑子的月份
+https://www.solidot.org/story?sid=7655	33300
+2008年8月创造了太阳的历史：截止世界标准时间9月1日0点（太平洋标准时间31日下午5点），我们目击了自<a href="http://wattsupwiththat.wordpress.com/2008/08/31/sun-has-first-spotless-calendar-month-since-1913/">1913年6月以来第一个太阳表面没有出现斑点的月份</a>。<i>这是根据美国国家海洋和大气局（NOAA）的<a href="ftp://ftp.ngdc.noaa.gov/STP/SOLAR_DATA/SUNSPOT_NUMBERS/MONTHLY">国家地球物理数据中心的统计</a>得出的，它记录了1749以来每月出现的<a href="http://zh.wikipedia.org/w/index.php?title=%E5%A4%AA%E9%98%B3%E9%BB%91%E5%AD%90&amp;variant=zh-cn">太阳黑子</a>数目。从1913之后的95年里，我们的太阳曾经很活跃，但最近几年却变得非常平静，本年度过去的几个月里黑子平均数大多都低于4。至今天为止，太阳已经连续42天没有出现黑子。太阳物理学家在今年一月预报<a href="__SLASHLINK__" sect="science" sid="08/01/08/044230" sn="article" tid="102">第24个太阳周期正式开始</a>，因此预测<a href="http://www.ips.gov.au/Solar/1/6">未来6个月黑子数目会大量增加</a>。</i>

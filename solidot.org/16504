@@ -1,0 +1,106 @@
+➜苹果发布新MacBook和Apple Watch
+https://www.solidot.org/story?sid=43250	8393
+<div align="center"><img src="http://img.solidot.com.cn/0/74/lid7cru0pIDc.png" align=""><br>
+<br>
+</div>
+苹果在周一的发布会上宣布了<a target="_blank" href="http://www.apple.com/cn/macbook/"><u>新款MacBook</u></a>，以及售价最高超过1万美元但使用时间只有18个小时的智能手表<a target="_blank" href="http://www.apple.com/cn/watch/"><u>Apple Watch</u></a>。苹果宣布，Apple TV将推出HBO的流视频服务HBO Now，月费14.99美元，Apple TV的售价同时从99美元降至69美元。新款12英寸MacBook笔记本电脑重2磅13.1毫米厚显示屏分辨率 2304x1440，无风扇设计，采用英特尔Core M处理器，起售价1299美元。Apple Watch有多个系列，最低349美元，18K黄金表壳的版本起售价1万美元，手表内置扬声器和麦克风，可接听电话，支持Apple Pay和Siri，能接收 iPhone 通知和播放音乐，电池使用时间18小时。Apple Watch于4月10日开放预购，4月24日在包括中国在内的9个国家同步上市。
+➜Google宣布Android 5.1
+https://www.solidot.org/story?sid=43251	11790
+<div align="center"><img src="http://img.solidot.com.cn/0/75/liuDdkldRWg.png" align="" height="452" width="560"><br>
+<br>
+</div>
+Google官方博客<a target="_blank" href="http://officialandroid.blogspot.com/2015/03/android-51-unwrapping-new-lollipop.html"><u>宣布了</u></a>Android Lollipop 5.1。5.1是一次小更新，主要重点是稳定性和性能。新的特性包括支持多张SIM卡；高清语音呼叫（需要硬件支持）；设备保护功能将锁定你丢失或被盗的设备直至你登录进Google账号——即使有人重置设备到出厂设置也没用；通过快速设置加入Wifi网络和控制蓝牙配对。
+➜微软想要在美国封杀京瓷的Android手机
+https://www.solidot.org/story?sid=43252	13943
+持有数百项Android相关专利的微软公司向西雅图的华盛顿西区地区法庭<a target="_blank" href="http://www.computerworld.com.au/article/569860/microsoft-asks-us-court-ban-kyocera-android-phones/"><u>提起诉讼</u></a>，要求在美国封杀日本京瓷公司的DuraForce、Hydro 和Brigadier系列Android手机，理由是它们侵犯了微软的7项专利。微软早前曾声称Android侵犯了它的专利，已与Android厂商如三星、HTC、中兴、LG和鸿海/富士康等签署了专利授权协议。而根据一起微软起诉三星拖欠款项的案件法庭文件，三星一年要向软件巨人支付<a target="_blank" href="http://www.solidot.org/story?sid=41338"><u>10亿美元</u></a>的专利费。
+➜在四所大学兼职但仍然无法达到收支平衡的大学教师
+https://www.solidot.org/story?sid=43253	16606
+2月25日，美国大学的兼职教师发起了<a target="_blank" href="http://nationaladjunct.tumblr.com/"><u>全国大罢工</u></a>，旨在唤醒公众对于美国高等教育中的兼职教师工作环境的关注，寻求公平薪水和改善工作条件。一位前兼职教师在《华盛顿邮报》上<a target="_blank" href="http://www.washingtonpost.com/posteverything/wp/2015/03/06/i-was-a-professor-at-four-universities-i-still-couldnt-make-ends-meet/"><u>发表文章</u></a>称，她曾在四所大学担任五门课的兼职教师，但仍然无法达到收支平衡。她拥有所在专业的最高学位，每门课的薪水在 $2,700到$4,196之间，但大学对兼职教师有限制，他们每学期不能教两门以上课程，她主要在秋季和春季教学，2012年秋季她的税前收入是$13,600，次年的春季是 $14,100，她从一个雇主获取的薪水是按每学期两次支付，她一年只获得$27,700 到$35,000。她通过自由写作和远程工作补贴薪水。调查显示，半数兼职教师的收入主要来自他们的兼职收入。而大学里唯一有增长空间的职位是<a target="_blank" href="http://www.solidot.org/story?sid=42634"><u>中层管理</u></a>。
+➜rowhammer漏洞利用获得内核权限
+https://www.solidot.org/story?sid=43254	17869
+<a href="http://citypw.blogspot.com">Shawn the R0ck</a> 写道 "<i>Google的<a target="_blank" href="http://googleprojectzero.blogspot.com">Project Zero</a>继"<a target="_blank" href="http://googleprojectzero.blogspot.com/2014/08/the-poisoned-nul-byte-2014-edition.html">The poisoned NUL byte, 2014 edition</a>”后再次向公众展示一个<a target="_blank" href="http://googleprojectzero.blogspot.com/2015/03/exploiting-dram-rowhammer-bug-to-gain.html">看起来极度难以利用但实际又能利用成功的漏洞</a>，rowhammer漏洞在<a target="_blank" href="http://users.ece.cmu.edu/~yoonguk/papers/kim-isca14.pdf">Yoongu Kim et al的论文</a>中谈到今天的DRAM单元为了让内存容量更大，所以在物理密度上更紧凑，但这样很难阻止临近的内存单元之间的电子上的互相影响，在足够多的访问次数后可以让某个单元的值从1变成0，或者相反。目前Google Project Zero的研究人员 Mark Seaborn和Thomas Dullien已经成功的在x86-64的GNU/Linux平台上利用这个漏洞通过CLFLUSH指令和PTEs(page table entries)的某一位的变化(比如0到1)直接获得内核权限，研究人员认为在其他的硬件架构和操作系统上也有类似的方法可以达到这一目的，解决这个漏洞的修复可能需要BIOS更新针对内存控制器部分的操作。
+<p>
+</p>
+<p>
+</p>
+在Yoongu Kim et al的论文中谈到了关键的原理：
+<p>
+</p>
+<p>code1a:</p>
+<p>
+</p>
+<p>&nbsp; mov (X), %eax&nbsp; // Read from address X</p>
+<p>
+</p>
+<p>&nbsp; mov (Y), %ebx&nbsp; // Read from address Y</p>
+<p>
+</p>
+<p>&nbsp; clflush (X)&nbsp; // Flush cache for address X</p>
+<p>
+</p>
+<p>&nbsp; clflush (Y)&nbsp; // Flush cache for address Y</p>
+<p>
+</p>
+<p>&nbsp; jmp code1a</p>
+<p>
+</p>
+<p>两个因素导致位的变化：</p>
+<p>
+</p>
+<p>
+</p>
+1，地址选择：地址X和地址Y必须印射到内存的不同row但是又是在同一bank上。
+<p>
+</p>
+<p>每个DRAM芯片包含了很多行(row)的单元。访问一个byte在内存中涉及到将数据从row传输到芯片的"row buffer"中（放电操作），当读取或者写入row buffer的内容后，再把row buffer内容传输到原来的row单元里（充电操作）。这种”激活“一个row的操作(放电和充电）可以干扰到临近的row。如果这样做足够多的次数，临近row的自动刷新操作(一般是每64ms)可能会让临近row的位产生变化。row buffer作为缓存，如果地址X和Y指向相同的row，那code1a将会从row buffer中读取信息而不用任何”激活“操作。</p>
+<p>
+</p>
+<p>
+</p>
+每个DRAM的bank都有自己的"当前已激活的row"，所以如果地址X和地址Y指向不同的bank，code1a将会从那些bank的row buffer中读取信息而不用反复的激活row。所以，如果地址X和地址Y指向同一bank上不同的row，code1a会导致X和Y不断的被激活，这被称为ROWHAMMERING。
+<p>
+</p>
+<p>2，绕过缓存：没有了code1a中的CLFLUSH指令的话，内存读操作(mov)只会操作CPU的缓存。CLFLUSH刷新缓存的操作强制让内存的访问直接指向DRAM，而这会导致不断有row被重复的激活。
+"</i>
+➜刘慈欣：中国的亚瑟•克拉克
+https://www.solidot.org/story?sid=43255	24319
+《纽约客》的<a target="_blank" href="http://www.newyorker.com/books/page-turner/chinas-arthur-c-clarke"><u>一篇文章</u></a>谈论了中国最受欢迎的科幻作家<a target="_blank" href="http://zh.wikipedia.org/wiki/%E5%88%98%E6%85%88%E6%AC%A3"><u>刘慈欣</u></a>，他的科幻小说《三体》已被刘宇昆翻译成英文在美国发行。美国的科幻小说有着美国文化的深深烙印，如独立战争、狂野西部、黑色电影、吸食迷幻药的60年代——人类想象中的未来却仿佛是美国的过去。刘慈欣的小说则有着浓厚的中国文化特色：《三体》的背景设在文革期间；《赡养人类》的外太空访客要求重新分配财富，称失控的资本主义差点摧毁地球文明；《赡养上帝》中高度发达的外星人在数十亿年前设计了地球生命，他们如今拄着手杖有着长长的白胡子，告诉地球人要对人类的缔造者尽孝——西方的科幻作家应该不会如此彻底的探索孝道主题；在《吞食者》中，一个角色问文明是什么？文明是吞食，不断的进食，无止境的扩张。但你不可能永远扩张下去，另一个角色认为建立一个自给自足内省的文明会更好。作者认为，刘慈欣感性的核心是限制问题，我们如何应对生命中固有的局限性？
+➜希格斯衰减和暗物质
+https://www.solidot.org/story?sid=43256	28409
+大强子对撞机Atlas和CMS团队<a target="_blank" href="http://www.forbes.com/sites/paulrodgers/2015/03/05/does-the-god-particle-decay-into-dark-matter/"><u>正在调查一种假说</u></a>：希格斯玻色子是否可能衰减成暗物质。暗物质占到了宇宙物质的八成，但其构成至今无人知道。瑞典 Chalmers理工大学的Christoffer Petersson博士和两位同事根据超对称性提出了<a target="_blank" href="http://link.springer.com/article/10.1007/JHEP10%282012%29016"><u>一个新模型</u></a>，预言希格斯玻色子的一小部分将会衰减成一个光子和一对引力子——一种假想的暗物质粒子。Petersson认为，如果模型与发现吻合，有可能会完全改变我们对于自然基本构成的理解。他声称，大强子对撞机是唯一能测试这一理论的地方。 CMS研究人员表示他们将用更多数据测试这一模型。
+➜英国议会认为屏蔽Tor技术上不可能
+https://www.solidot.org/story?sid=43257	30058
+在英国首相卡梅伦（David Cameron）<a target="_blank" href="http://www.solidot.org/story?sid=42645"><u>试图屏蔽</u></a>加密和匿名通信工具两个月后，英国国会科技办公室的最新简报认为，至少就Tor而言，<a target="_blank" href="http://www.dailydot.com/politics/uk-briefing-tor-child-abuse-minor-role/"><u>屏蔽在技术上是不可能的</u></a>。英国Tor用户同时在线人数多达10万。简报称，屏蔽在线匿名工具目前不被视为可接受的政策选择，即使想屏蔽也面临技术挑战。简报引用了Tor和中国之间的持续战斗，指出被称为网桥的秘密Tor网络入口节点很难屏蔽。
+➜Twitter在香港设立办事处
+https://www.solidot.org/story?sid=43258	31119
+与中国做生意并不一定需要进入中国。Google如此，Facebook<a target="_blank" href="http://www.solidot.org/story?sid=22419"><u>如此</u></a>，现在Twitter也这么做了，毕竟中国仍然是一个出口型经济体，而在具有全球影响力的平台上发布广告对出口型企业和试图开辟国际市场的企业而言是必不可少的。Twitter已经在香港<a target="_blank" href="http://techcrunch.com/2015/03/09/twitter-hongkong/"><u>设立了办事处</u></a>，尽管它从2009年起就被中国大陆屏蔽。Twitter亚太副总裁Shailesh Rao说他们正在招聘销售团队从事大中国区的广告销售工作。
+➜伦敦警察总长说正确安装探头能帮助打败罪犯
+https://www.solidot.org/story?sid=43259	32802
+伦敦警察总长 Bernard Hogan Howe爵士在伦敦广播电台上被询问企业和普通家庭是否需要更好的利用监控探头，<a target="_blank" href="http://news.slashdot.org/story/15/03/09/1910202/scotland-yard-chief-put-cctv-in-every-home-to-help-solve-crimes"><u>他的回答是</u></a>，同时指出此类设备需要正确安装，从头顶拍下入室行窃小偷的照片是无济于事的，“我们有一个策略鼓励人们移动他们的探头到齐眼高度。”他说，过去的一年面部识别软件有很大的进步，现在能使用软件匹配探头拍摄的照片，但探头必须拍摄脸部近照而不是头顶照片。
+➜中情局的秘密渗透苹果加密系统行动
+https://www.solidot.org/story?sid=43260	35116
+The Intercept根据前NSA合同工Edward Snowden提供的机密文件<a target="_blank" href="https://firstlook.org/theintercept/2015/03/10/ispy-cia-campaign-steal-apples-secrets/"><u>报道</u></a>，洛克希德马丁管理的桑迪亚国家实验室安全研究人员在中情局赞助的秘密会议Trusted Computing Base Jamboree上演示了渗透苹果加密系统的最新策略和成就。研究人员的目标是苹果加密数据的密钥，寻找方法解密并最终渗透进苹果的加密固件，让间谍能在苹果设备中植入恶意代码。安全研究人员还声称他们创造了一个修改版的苹果开发工具Xcode，利用该版本开发的任何软件都有内置监听后门，能从被感染的设备上窃取密码和抓取数据，迫使所有的 iOS应用向一个监听站发送数据。但目前并不清楚是否有应用开发者使用了这个修改版的Xcode开发应用。研究人员还宣称他们修改了苹果的更新程序去安装按键记录器。在这个会议上，还有研究人员演示了对苹果竞争对手微软公司BitLocker加密系统的攻击。
+➜微信限制微信群规模
+https://www.solidot.org/story?sid=43261	37418
+<a href="http://https://d2yqt7czk9pifv.cloudfront.net/article/385">paopao</a> 写道 <i>"微信做为新生热门社交应用在群聊管控方面明显<a target="_blank" href="http://https//d2yqt7czk9pifv.cloudfront.net/article/385"><u>预设了自我审查</u></a>。近日，有微信用户透露，微信群聊如达到100人上限继续加入者必须绑定银行卡以完成身份验证，否则无法加入。经本网测试属实：邀请一位完全没经过任何实名验证的账号加入一个已有一百八十余人的群聊，对方收到邀请提示后会跳出对话框：“你需要实名验证后才可以接受邀请”。随即再将同一账号拉入一个只有二十多人的群聊中，很顺利完成，且不需要通过“邀请”手续。在早前，开通百人群只需要群主一人做身份验证，对群员没有验证要求。微信6.1.1版本“帮助与反馈”中显示：微信群最多为500人，100人以上的微信群主要针对已通过实名验证的微信用户：超过40人，你的邀请需要对方同意；超过100人，对方需要通过实名验证才能接受邀请，可通过绑定银行卡进行验证。据一位推特网友透露，有朋友邀请他加入一个已经有百人以上的群聊，微信通知要求其必须先绑定手机号才可以加入。该网友表示，他的手机语言、地区、时间都是设置成台湾的。看来和设置地区有关，总之都是实名，对大陆用户来说就必须绑定银行卡了。"</i>
+➜量子临界性和生命起源
+https://www.solidot.org/story?sid=43262	38810
+生物学的一大谜团是生命的分子机器能如此精密的协调起来。即使最简单的细胞也是一座极其复杂的生物化学工厂，相比简单电路易损的电传输，难以想象如此复杂的电传输过程是如何出现的。根据发表在预印本网站上的<a target="_blank" href="http://arxiv.org/abs/1502.06880"><u>研究报告</u></a>，研究人员发现，生物分子的电属性与普通导体的完全不同。大部分生物分子<a target="_blank" href="https://medium.com/p/the-origin-of-life-and-the-hidden-role-of-quantum-criticality-ca4707924552"><u>存在于名为量子临界性（quantum criticality）的奇异状态下</u></a>，它们介于导体和绝缘体之间。换句话说，生物分子属于一种全新类型的导体，不受普通电传输规则的制约。有机分子可以是普通导体或绝缘体，部分生物分子也属于这两个类别，但演化似乎偏好选择具有量子临界性的生物分子，这意味着量子临界性可能赋予了一些演化优势，可能在生命起源中发挥了重要作用。
+➜Google风投和不朽的搜寻
+https://www.solidot.org/story?sid=43263	42359
+“如果今天你问我是否可能活到500岁，我的答案是能。"Google风投负责人Bill Maris接受彭博社采访时说。在他的书架上，你能看到《Molecular Biotechnology: Principles and Applications of Recombinant DNA》、《Biotechnology: Applying the Genetic Revolution》以及未来学家Ray Kurzweil的《奇点逼近》之类的书。Maris大学在Middlebury学院读神经学专业，在杜克大学的一个生物医学实验室工作过。7年前，Google的两位创始人邀请他创办一个风投基金。Google风投管理着约20亿美元资产，资助了280多家创业公司，每年Google会增加3亿美元。它在投资规模上与硅谷最大的风投公司相差无几。Google已将Kurzweil招募在旗下，帮助Google风投理解一个机器超越人类的世界。对一些人来说这是一个可怕的反乌托邦未来。但对Maris来说，这就是生意。他希望能发现和资助下一代改变世界的公司，他<a target="_blank" href="http://www.bloomberg.com/news/articles/2015-03-09/google-ventures-bill-maris-investing-in-idea-of-living-to-500"><u>也希望能活足够长的时间</u></a>。
+➜索尼宣布国行PS4将于3月20日发售
+https://www.solidot.org/story?sid=43264	43292
+索尼官网发表<a target="_blank" href="http://www.sonystyle.com.cn/products/playstation/index.htm?ssid=sstp01624"><u>图片声明</u></a>，宣布国行PS4和PSV将于3月20日上市。PS4原计划在今年1月上市，但由于政府的要求而延期。索尼电脑娱乐部门主席Andrew House称，PS4中国市场延期上市是因为<a target="_blank" href="http://www.solidot.org/story?sid=42629"><u>有关部门要求</u></a>该公司对商业计划做出调整，这个挫折涉及PS4上市策略，称他有信心这个障碍将很快得到解决。索尼延期上市普遍被认为与锁区锁服有关，目前不清楚其它地区的游戏是否可以在国行主机上游戏。中国区的游戏由于审批问题而数量极端的稀少。微软的Xbox ONE存在相同问题。
+➜维基基金会等联合起诉NSA
+https://www.solidot.org/story?sid=43265	45193
+<div align="center"><img src="http://img.solidot.com.cn/0/76/lid64WQHp936.jpg" align="" height="318" width="450"><br>
+<br>
+</div>
+维基媒体基金会、美国刑辩律师协会、人权观察、大赦国际美国分部、美国笔会、全球妇女基金会、国家杂志、 Rutherford研究所、华盛顿拉丁美洲问题办公室<a target="_blank" href="https://blog.wikimedia.org/2015/03/10/wikimedia-v-nsa/"><u>联合宣布起诉</u></a>美国国家安全局（NSA）和美国司法部，以及NSA现任局长Michael S.Rogers、国家情报局局长James Clapper和司法部长Eric Holder。这起诉讼是为了挑战NSA的大规模监控项目，尤其是它的大规模搜寻和捕获互联网通信。维基媒体基金会在声明中称，隐私是个人自由的基石，是维护言论自由和结社自由的普遍权利，是维基媒体让每个人能共享人类所有知识这一愿景的核心，当它们受到了威胁，维基媒体的使命也受到了威胁。<br>
+➜因含有暴力元素土耳其政府想要封禁《Minecraft》
+https://www.solidot.org/story?sid=43266	55184
+<div align="center"><img src="http://img.solidot.com.cn/0/78/liPyOhs6pPqs.jpg" align="" height="192" width="450"></a><br>
+<br>
+</div>
+<a target="_blank" href="siri@utexas.edu">Saku</a> 写道<i> "来自<a href="http://www.3dmgame.com/news/201503/3461360.html" target="_blank" title="3DM">3DM</a>的消息称，上个月经人举报，土耳其决定对热门沙盒游戏Minecraft涉暴力内容进行调查。经过一个月的调查之后，土耳其政府认定，《我的世界》包含暴力元素理应被封。据土耳其新闻网站Hürriyet Daily News<a target="_blank" href="http://www.gamespresso.com/2015/03/10/minecraft-banned-in-turkey/31854"><u>报道</u></a>，该国家庭与社会政策部目前已将封禁《我的世界》的提案移交了法务部门，将通过法律程序实施对该游戏的封禁。"除了暴力外，《我的世界》还被认为会导致社会孤立以及其它社会风险如恃强欺弱。</i>
