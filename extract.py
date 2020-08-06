@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import zd
+from tqdm import tqdm
 from os.path import dirname, abspath, join
 from os import walk, cpu_count
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -85,10 +86,12 @@ def main(outpath):
       Path(dirname(outfile)).mkdir(parents=True, exist_ok=True)
       todo[executor.submit(export, root, outfile, file_li)] = outfile
 
-    for future in as_completed(todo):
-      filepath = todo[future]
-      print(filepath)
-      try:
-        future.result()
-      except Exception as exc:
-        print(exc)
+    with tqdm(total=len(todo)) as pbar:
+      for future in as_completed(todo):
+        filepath = todo[future]
+        print(filepath)
+        pbar.update(1)
+        try:
+          future.result()
+        except Exception as exc:
+          print(exc)
