@@ -31,7 +31,7 @@ https://www.solidot.org/story?sid=40244	23796
 <br>
 <p>但PaX Team是一群old school security hackers，他们认为LSM打破了
 "security as a whole"的哲学，所以宁愿单独维护一个patch，一直到今天。其实当人们谈到Gnu/Linux安全性比windows/OSX更好时，其实未必，至少linux内核社区并没有把安全性放在首位，Linus Torvalds从来都不是太care安全问题，不是吗？</p><br>
-<p>当我们谈到PaX时都会写Grsecurity/PaX，这是怎么回事呢？PaX从一开始就主要关注如何防御和检测memory corruption，后来Grsecurity社区发现PaX和他们所关注的非常类似，所以就合并了，在很长的一段时间里PaX主要关注memory corruption，而Grsecurity则实现其他的功能包括RBAC，但到最近2个社区的工作开始模糊了:包括USERCOPY, STACKLEAK, RANDSTRUCT, etc..都是整个Grsecurity/PaX共同实现的特性。”"</p>
+<p>当我们谈到PaX时都会写Grsecurity/PaX，这是怎么回事呢？PaX从一开始就主要关注如何防御和检测memory corruption，后来Grsecurity社区发现PaX和他们所关注的非常类似，所以就合并了，在很长的一段时间里PaX主要关注memory corruption，而Grsecurity则实现其他的功能包括RBAC，但到最近2个社区的工作开始模煳了:包括USERCOPY, STACKLEAK, RANDSTRUCT, etc..都是整个Grsecurity/PaX共同实现的特性。”"</p>
 ➜IBM协助北京预报和控制大气污染
 https://www.solidot.org/story?sid=40245	24610
 利用超级计算机预报和研究污染模式并不新鲜，中国政府机构和美国驻京使馆已经能实时向居民报告污染水平。IBM希望利用先进的天气预报和云计算技术提前三天预报空气污染水平，协助北京控制污染。IBM<a target="_blank" href="http://www-03.ibm.com/press/us/en/pressrelease/44202.wss"><u>发起了</u></a>绿色地平线（Green Horizon）计划，北京将是计划合作伙伴。IBM中国研究院院长沈晓卫<a target="_blank" href="http://cn.reuters.com/article/CNEnvNews/idCNKBS0FC08H20140707"><u>称</u></a>，该计划旨在应用大数据协助城市改善管理，精准地预报污染，以便政府可以采取积极主动的行动。
@@ -40,7 +40,7 @@ https://www.solidot.org/story?sid=40246	27128
 <center>
 <iframe width="480" height="270" src="https://www.youtube.com/embed/Wdnp_7atZ0M?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
 </center>
-维持相同的生活标准但只做半份工作，听起来只是一个梦想。但Google联合创始人Larry Page认为<a target="_blank" href="http://abcnews.go.com/Technology/google-founder-people-work/story?id=24450043"><u>人人都应该如此生活</u></a>。Page说，住房，安全保障，以及为孩子创造机会等需求得到满足并不难，而认为人们需要疯狂工作才能满足生活需要则并非是真的。他认为有时候做一份兼职工作就已经足够了，他相信如果有更多的时间与家人在一起，人们将会更快乐。当机器人和机器能帮助人类更容易的满足生活基本需求，世界将会进入到一个富足的时代。许多人<a target="_blank" href="http://www.reddit.com/r/news/comments/2a2a2o/google_cofounder_says_people_shouldnt_have_to/"><u>认为</u></a>Google亿万富翁创始人的话有点虚伪，因为Google工程师以工作时间长著称。
+维持相同的生活标准但只做半份工作，听起来只是一个梦想。但Google联合创始人Larry Page认为<a target="_blank" href="http://abcnews.go.com/Technology/google-founder-people-work/story?id=24450043"><u>人人都应该如此生活</u></a>。Page说，住房，安全保障，以及为孩子创造机会等需求得到满足并不难，而认为人们需要疯狂工作才能满足生活需要则并非是真的。他认为有时候做一份兼职工作就已经足够了，他相信如果有更多的时间与家人在一起，人们将会更快乐。当机器人和机器能帮助人类更容易的满足生活基本需求，世界将会进入到一个富足的时代。许多人<a target="_blank" href="http://www.reddit.com/r/news/comments/2a2a2o/google_cofounder_says_people_shouldnt_have_to/"><u>认为</u></a>Google亿万富翁创始人的话有点虚伪，因为Google工程师以工作时间长着称。
 ➜科学家发现翼展最长的鸟类
 https://www.solidot.org/story?sid=40247	29731
 根据发表在PNAS上的<a target="_blank" href="http://www.pnas.org/cgi/doi/10.1073/pnas.1320297111"><u>一项研究</u></a>，研究人员发现了<a target="_blank" href="http://news.sciencemag.org/paleontology/2014/07/ancient-bird-had-wingspan-longer-stretch-limousine"><u>至今翼展最长的鸟类</u></a>：其翼展约为6.4米，是目前的记录保持者漂泊信天翁（Diomedea exulans）的近两倍，信天翁的翼展为3.5米。这只鸟的化石是1983年美国南卡罗来纳州 Charleston国际机场的一个航站基建项目中发掘出的，距今有2500万到2800万年。这种鸟被命名为桑氏伪齿鸟(Pelagornis sandersi)，重约22到40公斤。研究人员在结合体重和翼展比例后推测，桑氏伪齿鸟具有出色的滑翔飞行能力，超过了军舰鸟和秃鹰，平均而言，在滑翔中每下降一米，能向前滑行22米。桑氏伪齿鸟及其近亲在大约300万年前灭绝，灭绝原因仍然充满着谜团，可能的原因是气候变化影响风速，或喜爱的食物更难觅得，或兼而有之。

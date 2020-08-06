@@ -40,7 +40,7 @@ https://www.solidot.org/story?sid=27107	24300
 脚步将第三方库与漏洞公告CVE关联起来，判断Linux平台上的库是否有漏洞或者没有打上补丁。类似的漏洞经常由于库没有和源保持更新而逃脱开发者的眼睛，再加上交叉分布使得问题进一步复杂化。例如Firefox中的libpng库在漏洞发现3个月后才修复。Cesare的工具根据文件名和内容识别类似的源文件，用<a href="http://ssdeep.sourceforge.net/">ssdeep </a>产生哈希数判断相似包，识别源码包之间的关系，用图论执行分析。</i>
 ➜Windows 8简化安装
 https://www.solidot.org/story?sid=27108	26400
-微软Win8官方博客<a href="http://blogs.msdn.com/b/b8/archive/2011/11/21/improving-the-setup-experience.aspx">表示</a>，Windows 8的安装和设置流程将<a href="http://arstechnica.com/business/news/2011/11/windows-8-to-have-faster-installation-11-click-upgrade-for-casual-users.ars">大大简化</a>，用户需要点击的数量从60次降至11次。它将显著减少有大量文件和应用程序的系统升级时间。除此之外，微软还向想要多启动系统的用户提供了一个单独的安装流程，可以配置分区或其它更复杂的任务。<i>
+微软Win8官方博客<a href="http://blogs.msdn.com/b/b8/archive/2011/11/21/improving-the-setup-experience.aspx">表示</a>，Windows 8的安装和设置流程将<a href="http://arstechnica.com/business/news/2011/11/windows-8-to-have-faster-installation-11-click-upgrade-for-casual-users.ars">大大简化</a>，用户需要点击的数量从60次降至11次。它将显着减少有大量文件和应用程序的系统升级时间。除此之外，微软还向想要多启动系统的用户提供了一个单独的安装流程，可以配置分区或其它更复杂的任务。<i>
 微软称，Windows7的X86镜像大小为2.32GB，包括200个文件夹和874个文件，Win8将通过消除重复文件和改进压缩算法将容量降至1.51GB。微软的测试显示，Windows7的全新安装时间为32分钟，但升级时间相当长：一个包含213,000个文件和77个应用程序的中等系统升级耗时131分钟；包含 430,000个文件和90个应用程序的系统升级耗时188分钟；包含140万个文件和120个应用程序的系统升级耗时高达513分钟。Win8降低了安装时间，全新安装21分钟，升级安装时间在42分钟到52分钟之间。微软解释说，Win7的升级之所以这么长是因为升级进程先将所有文件和应用程序转移到一个位置，删除源文件，然后系统安装完毕后再转移过来。Win8不再采用这种方式，改为移动文件夹，不需要物理移动文件，而是用硬连接与实际数据建立关系。</i>
 ➜HTML5 杀不死移动应用
 https://www.solidot.org/story?sid=27109	27600

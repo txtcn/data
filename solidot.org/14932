@@ -10,7 +10,7 @@ https://www.solidot.org/story?sid=21088	2100
 半圆准备 写道 <i>"周四，<a href="http://www.bbc.co.uk/news/world-europe-11785281">瑞典斯德哥尔摩地区法院</a>向Wikileaks创立者Julian Assange发出拘察令，以便对其涉嫌强奸进行询问。瑞典检查总长Marianne Ny说检方一直未能和Assange碰面以完成询问。她说为执行法庭命令，下一步将对Assange发出国际通缉令。Assange的律师说他的当事人坚持称自己完全无辜。"</i>
 ➜200+行内核补丁的替代方案
 https://www.solidot.org/story?sid=21089	5280
-前几天有报道称，<a href="__SLASHLINK__" sect="linux" sid="10/11/17/0132254" sn="article" tid="7">200+行的Kernel补丁能显著改善桌面性能</a>，降低延迟。Red Hat的开发者Lennart Poettering在邮件列表上<a href="http://lkml.org/lkml/2010/11/16/392">回复Linus Torvalds时</a>称，<a href="http://linux.slashdot.org/story/10/11/18/2246213/Alternative-To-the-200-Line-Linux-Kernel-Patch">他有一个替代方案</a>，只需运行两次命令，在~/.bashrc文件中粘贴4行代码就可实现相同的效果。
+前几天有报道称，<a href="__SLASHLINK__" sect="linux" sid="10/11/17/0132254" sn="article" tid="7">200+行的Kernel补丁能显着改善桌面性能</a>，降低延迟。Red Hat的开发者Lennart Poettering在邮件列表上<a href="http://lkml.org/lkml/2010/11/16/392">回复Linus Torvalds时</a>称，<a href="http://linux.slashdot.org/story/10/11/18/2246213/Alternative-To-the-200-Line-Linux-Kernel-Patch">他有一个替代方案</a>，只需运行两次命令，在~/.bashrc文件中粘贴4行代码就可实现相同的效果。
 Ubuntu发行版的<a href="http://www.webupd8.org/2010/11/alternative-to-200-lines-kernel-patch.html">使用指南</a>：           1.用"/dev"替换"/sys/fs"；在 /etc/rc.local文件中的exit 0上面中加入以下命令：<br> <i>
 mkdir -p /dev/cgroup/cpu<br>
 mount -t cgroup cgroup /dev/cgroup/cpu -o cpu<br>
@@ -58,7 +58,7 @@ https://www.solidot.org/story?sid=21092	9900
 https://www.solidot.org/story?sid=21093	11400
 《明报》<a href="http://hk.news.yahoo.com/article/101118/4/lbrs.html?utm_source=twitterfeed&amp;utm_medium=twitter">引用</a>上周发布的《<a href="http://www.unesco.org/new/zh/media-services/single-view/news/research_and_development_usa_europe_and_japan_increasingly_challenged_by_emerging_countries_says_a_unesco_report/">2010年教科文组织科学报告</a>》称，中国的科研人员和工程师的人数将在未来一两年内超越美国，成为世界第一。<i>
 报告称，从2000年至2008年，中国国内研发总支出从896亿元遽增至4616亿元，年均增幅达22.8%。其研发总支出占国内生产总值的比例也从2000年的0.9%升至2008年的1.54%。中国在全球科技领域的地位上升，还体现在科研人员数量上。截至2007年，中国的科学研究人员总数为142.34万，人数已接近美国和欧盟的水平。目前，中，美，欧研究人员人数各约占全球总数的20%，紧随其后的是日本（10%）和俄罗斯（7%）。
-中国在科技领域上升势头固然迅猛，然而，中国科研在很多方面与发达国家仍有明显差距。中国重要科学文献的引用率为4.61%，与美国的14.28%和日本9.04%，差距显著。此外，中国科研在原创性和影响力上也有不足。</i>
+中国在科技领域上升势头固然迅勐，然而，中国科研在很多方面与发达国家仍有明显差距。中国重要科学文献的引用率为4.61%，与美国的14.28%和日本9.04%，差距显着。此外，中国科研在原创性和影响力上也有不足。</i>
 ➜Stuxnet是制造业最大威胁
 https://www.solidot.org/story?sid=21094	19500
 神秘的Stuxnet蠕虫是专门设计攻击西门子工业控制系统，赛门铁克研究人员推测它针对的是伊朗的核设施，<a href="__SLASHLINK__" sect="it" sid="10/11/16/0953240" sn="article" tid="100">悄悄去干扰铀浓缩</a>。<i>

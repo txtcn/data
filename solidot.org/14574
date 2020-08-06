@@ -82,7 +82,7 @@ https://www.solidot.org/story?sid=14878	33600
 <a href="http://www.comsharp.com/">COMSHARP CMS</a> 写道 "日前，Mozilla 的 Arun Ranganathan 向 W3C 提交了一个草案，旨在推出一个 JavaScript API，让 JavaScript 脚本直接操作本地文件，Firefox 的最新浏览器版本中已经对该 API 提供了大量的支持，不过出于安全考虑，该API 将只对本地文件提供有限的访问(<a href="http://www.comsharp.com/GetKnowledge/zh-CN/It_News_K869.aspx">完整图文版</a>)。该 API 引入了一个 FileReader 对象，可以异步加载本地文件系统中的文件，并允许开发者为诸如加载失败，进度，加载完成等事分配回调函数，它提供的方法可以从本地文件中读取文本或二进制数据，并通过一个abort 方法随时打断操作。           FileReader 对象使客户端的文件访问成为现实，用户不必再象以前那样首先将文件上传到服务器才能处理，事实上，IE 和 Firefox 已经拥有一些非标准的方法访问本地文件，但这些方法并非标准 JavaScript 行为。
 <br> <br> FileReader 对象并不需要特别的权限，但出于显然的安全考虑，直接使用文件路径进行访问是不允许的，必须结合常规的 HTML file 对象，用户点击浏览之后，选择本地文件，JavaScript 再通过 DOM 引用该文件并进行操作，这个机制使得该 API 相对安全一些，因为任何本地文件的获取都需要用户的人工参与。
 <br> <br>以下例子使用该 API 打开一个本地文件并将文件内容显示在一个 div 容器中，我们甚至可以在 div 上加上 <tt>contentEditable 属性，用户可以直接编辑文件的内容，不过，该 API 并没有提供将文件内容写回本地文件的方法，因此你编辑的内容无法保存。
-<br> <br>随着 JavaScript 引擎的效率在各大浏览器的显著提高，JavaScript 可以做越来越多的事，本地文件 API 的引入将让很多有趣的功能成为现实。尽管该 API 并非多么重大的技术革命，但它将拓展 Web 应用的视野，让 Web 平台实现越来越多的功能。
+<br> <br>随着 JavaScript 引擎的效率在各大浏览器的显着提高，JavaScript 可以做越来越多的事，本地文件 API 的引入将让很多有趣的功能成为现实。尽管该 API 并非多么重大的技术革命，但它将拓展 Web 应用的视野，让 Web 平台实现越来越多的功能。
 <br> <br>本文来源：<a href="http://arstechnica.com/open-source/news/2009/11/w3c-publishes-draft-of-new-file-api-spec.ars">http://arstechnica.com/open-source/news/2009/11/w3c-publishes-draft-of-new-file-api-spec.ars</a> <br>中文翻译来源：<a href="http://www.comsharp.com/">COMSHARP CMS 企业网站内容管理系统</a>官方站"</tt>
 ➜蚂蚁能计数
 https://www.solidot.org/story?sid=14879	37800

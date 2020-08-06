@@ -1,6 +1,6 @@
 ➜《Mastering Bitcoin》中的错误代码可能会导致你的比特币丢失
 https://www.solidot.org/story?sid=55390	10975
-匿名读者 写道<i> "著名的<a href="http://shop.oreilly.com/product/0636920049524.do" target="_blank">《Mastering Bitcoin》</a>（《精通比特币》）一书中有段Python代码有误（key-to-address-ecc-example.py），这段代码被广为流传。这个错误有极高的概率会根据一个正确的私钥生成一个错误的压缩公钥，从而产生一个错误的比特币收款地址，如果使用这个地址会导致比特币资金丢失。这段有BUG的代码从此书中的第一版中就已存在，最新的第二版本依旧存在这个BUG代码，当然，广为流传的中译版本中也自然存在。
+匿名读者 写道<i> "着名的<a href="http://shop.oreilly.com/product/0636920049524.do" target="_blank">《Mastering Bitcoin》</a>（《精通比特币》）一书中有段Python代码有误（key-to-address-ecc-example.py），这段代码被广为流传。这个错误有极高的概率会根据一个正确的私钥生成一个错误的压缩公钥，从而产生一个错误的比特币收款地址，如果使用这个地址会导致比特币资金丢失。这段有BUG的代码从此书中的第一版中就已存在，最新的第二版本依旧存在这个BUG代码，当然，广为流传的中译版本中也自然存在。
 下面是那段错误的代码及其修正：<a href="https://github.com/bitcoinbook/bitcoinbook/pull/483/files" target="_blank">https://github.com/bitcoinbook/bitcoinbook/pull/483/files</a>&nbsp;
 </i><i>
 </i>
@@ -17,7 +17,7 @@ https://www.solidot.org/story?sid=55390	10975
 <i>
 </i>
 <p><i>这其实并不是encode函数的错，一个正常的未添加前缀字符（"02"或"03"）的压缩公钥长度应该是32字节(64个字符)，encode函数会将10进制公钥转换成16进制字符串的形式，一旦当转换后的字符串长度不足64个字符的时候（极有可能出现的情况），encode函数并不会自动添加前导字符零以确保压缩公钥的长度为64个字符。zfill(64)的作用就是确保公钥为64个字符，不足的话进行补零。
-以上演示数据可通过著名的比特币在线地址生成器进行查验：<a href="https://www.bitaddress.org" target="_blank">https://www.bitaddress.org</a></i>
+以上演示数据可通过着名的比特币在线地址生成器进行查验：<a href="https://www.bitaddress.org" target="_blank">https://www.bitaddress.org</a></i>
 </p>
 <i>
 </i>
@@ -31,7 +31,7 @@ https://www.solidot.org/story?sid=55392	13139
 在昨天举行的例行记者会上，外交部发言人华春莹<a href="http://www.fmprc.gov.cn/web/fyrbt_673021/t1529866.shtml" target="_blank"><u>拒绝</u></a>回答 VPN 相关的询问。记者询问，“中国政府对 VPN 的管控对在华企业的经营造成了干扰，引发对竞争力和商业机密泄漏的担忧。你能否谈一谈未来将如何实施这方面的管控？中国监管者是否会遵守 WTO 规则及其允许外企与中国企业公平竞争的承诺？”华春莹回答：“你提到的问题非常具体，而且提问的前提带着跟中国对立的情绪，我不想做具体回应。”上周，一大批 VPN 相关服务的 IP 地址遭到大规模定点封杀。此外，这个月内 Tor 中国用户的数量出现了意外的<a href="https://metrics.torproject.org/userstats-relay-country.html?start=2017-10-01&amp;end=2018-01-30&amp;country=cn&amp;events=on" target="_blank"><u>大幅增长</u></a>。
 ➜中国计划建造世界最大的可动射电望远镜
 https://www.solidot.org/story?sid=55393	16205
-中国<a href="https://www.space.com/39508-china-worlds-largest-steerable-radio-telescope.html" target="_blank"><u>计划</u></a>在新疆奇台县建造世界最大的 110 米口径全可动射电望远镜（<a href="http://qtt.xao.ac.cn/qttzyxw/201706/t20170628_376831.html" target="_blank"><u>QTT</u></a>）。目前世界上最大的全可动射电望远镜是坐落在美国 Green Bank 的 Robert C. Byrd Green Bank Telescope，其蝶形天线为椭圆形，110 米 x 100 米，其次是德国的 Effelsberg，口径 100 米。中国计划中的 110 米口径望远镜似乎只比 Green Bank 略大一点，但其灵敏度相比后者有显著提升。QTT 能增强对脉冲星的搜索，也能探测引力波，也能加强对地外生命的搜寻。中国已经建成了世界上口径最大的射电望远镜 FAST。
+中国<a href="https://www.space.com/39508-china-worlds-largest-steerable-radio-telescope.html" target="_blank"><u>计划</u></a>在新疆奇台县建造世界最大的 110 米口径全可动射电望远镜（<a href="http://qtt.xao.ac.cn/qttzyxw/201706/t20170628_376831.html" target="_blank"><u>QTT</u></a>）。目前世界上最大的全可动射电望远镜是坐落在美国 Green Bank 的 Robert C. Byrd Green Bank Telescope，其蝶形天线为椭圆形，110 米 x 100 米，其次是德国的 Effelsberg，口径 100 米。中国计划中的 110 米口径望远镜似乎只比 Green Bank 略大一点，但其灵敏度相比后者有显着提升。QTT 能增强对脉冲星的搜索，也能探测引力波，也能加强对地外生命的搜寻。中国已经建成了世界上口径最大的射电望远镜 FAST。
 ➜百度外卖系统让用户能反向充值
 https://www.solidot.org/story?sid=55394	17954
 官媒<a href="http://news.ynet.com/2018/01/29/904143t70.html" target="_blank"><u>报道了</u></a>一则与百度外卖系统相关的案件：2017 年 10 月，北京小度科技有限公司报案，称其旗下的 “百度外卖” 平台被他人以非法手段篡改系统，将提现金额改为负数，从而实现反向充值自己账户余额，并使用账户余额在 “百度外卖” 平台上进行消费，总共被篡改 4900 余万元，下单单数覆盖全国多个地区，人数达百余人，直接消费损失 30 余万元...海淀检方呼吁广大互联网企业要注意防范网络安全漏洞。

@@ -12,7 +12,7 @@ https://www.solidot.org/story?sid=47126	31835
 CoreOS项目<a target="_blank" href="https://coreos.com/blog/rkt-hits-1.0.html"><u>宣布</u></a>发布rkt容器管理器 1.0版，作为发布的一部分，rkt的命令行接口和磁盘格式宣告已经稳定。rkt容器管理器的主要安全特性包括：基于KVM的容器隔离、SELinux支持、TPM整合、镜像签名验证、权限分离等等。CoreOS和Docker等在去年宣布了Open Container，以避免开源容器项目的碎片化。rkt将运行Docker镜像。
 ➜黑客控制Dridex的服务器，用杀毒软件替代恶意程序
 https://www.solidot.org/story?sid=47127	49414
-这是一个有趣的故事：用于传播臭名昭著的银行木马Dridex的服务器，被人悄悄替换成免费杀毒软件 Avira。Avira的研究人员不知道发生了什么，他们怀疑是某位白帽子黑客干的：黑客渗透到传播Dridex的恶意服务器，用签名的Avira安装程序替换了恶意可执行程序。结果是如果某位受害者打开了Dridex服务器发送的邮件附件，他们不会感染木马而是安装杀毒软件，保护他们免受那些恶意程序的感染。Avira安全研究人员在官方博客上<a target="_blank" href="http://blog.avira.com/dridex_serves_avira/"><u>声明</u></a>，不是他们干的。
+这是一个有趣的故事：用于传播臭名昭着的银行木马Dridex的服务器，被人悄悄替换成免费杀毒软件 Avira。Avira的研究人员不知道发生了什么，他们怀疑是某位白帽子黑客干的：黑客渗透到传播Dridex的恶意服务器，用签名的Avira安装程序替换了恶意可执行程序。结果是如果某位受害者打开了Dridex服务器发送的邮件附件，他们不会感染木马而是安装杀毒软件，保护他们免受那些恶意程序的感染。Avira安全研究人员在官方博客上<a target="_blank" href="http://blog.avira.com/dridex_serves_avira/"><u>声明</u></a>，不是他们干的。
 ➜气候变化已是定论，澳大利亚告诉研究人员：你们可以走了
 https://www.solidot.org/story?sid=47128	50720
 数百名澳大利亚联邦科学与工业研究组织（CSIRO）的气候研究人员<a target="_blank" href="http://arstechnica.com/science/2016/02/australia-guts-government-climate-research/"><u>被解雇</u></a>，原因是气候变化已是定论，他们的工作结束了。CSIRO的海洋与大气部门135人有110人被解雇，土地和水资源部门的情况类似，海洋与大气部门的剩余人员的研究工作将从气候科学转变到如何适应气候变化。气候科学研究员Stefan Rahmstorf批评政府此举不仅仅是短视，而且是十足疯狂。另一名气候研究员认为CSIRO CEO Larry Marshall在解雇通知中的声明是他见过的来自高管的最无知声明。

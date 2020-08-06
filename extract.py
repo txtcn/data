@@ -3,7 +3,7 @@
 import zd
 from os.path import dirname, abspath, join
 from os import walk, cpu_count
-from concurrent.futures import ProcessPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from fire import Fire
 from html import unescape
 from pathlib import Path
@@ -71,7 +71,8 @@ def main(outpath):
 
   dirpath = abspath(dirname(__file__))
 
-  with ProcessPoolExecutor(max_workers=cpu_count()) as executor:
+  exist = Exist()
+  with ThreadPoolExecutor(max_workers=cpu_count()) as executor:
     todo = {}
     for root, dir_li, file_li in walk(dirpath):
       now = root[len(dirpath) + 1:]
@@ -83,7 +84,8 @@ def main(outpath):
         continue
       outfile = join(outpath, now) + ".zd"
       Path(dirname(outfile)).mkdir(parents=True, exist_ok=True)
-      todo[executor.submit(export, root, outfile, file_li)] = outfile
+      todo[executor.submit(export, exist, root, outfile,
+                           file_li)] = outfile
 
     for future in as_completed(todo):
       filepath = todo[future]
