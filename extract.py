@@ -71,7 +71,6 @@ def main(outpath):
 
   dirpath = abspath(dirname(__file__))
 
-  exist = Exist()
   with ThreadPoolExecutor(max_workers=cpu_count()) as executor:
     todo = {}
     for root, dir_li, file_li in walk(dirpath):
@@ -84,8 +83,7 @@ def main(outpath):
         continue
       outfile = join(outpath, now) + ".zd"
       Path(dirname(outfile)).mkdir(parents=True, exist_ok=True)
-      todo[executor.submit(export, exist, root, outfile,
-                           file_li)] = outfile
+      todo[executor.submit(export, root, outfile, file_li)] = outfile
 
     for future in as_completed(todo):
       filepath = todo[future]
