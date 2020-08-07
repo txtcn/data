@@ -16,3 +16,6 @@ UNICEF 和 Pure Earth 发表的一份<a href="https://www.pureearth.org/unicef-a
 ➜英特尔 20GB 内部文件泄露
 https://www.solidot.org/story?sid=65176	16711
 英特尔<a href="https://www.zdnet.com/article/intel-investigating-breach-after-20gb-of-internal-documents-leak-online/">正在调查</a> 20GB 内部文件被<a href="https://mega.nz/folder/CV91XLBZ#CPSDW-8EWetV7hGhgGd8GQ">上传到 MEGA</a> （仅供参考）的安全事故。泄露的部分文件被标记为“机密级”或“限制级”。瑞士软件工程师 Till Kottmann <a href="https://twitter.com/deletescape/status/1291405688204402689" target="_blank">声称</a>这些文件是一位匿名黑客今年早些时候入侵英特尔获得到的。泄露的文件包括了 Git 代码库、开发工具等，部分密码加密的压缩文档使用了非常弱的密码，其中包括 Intel123 或 intel123。<p>
+➜科学家重命名多个人类基因以避免被 Excel 自动纠正
+https://www.solidot.org/story?sid=65177	28201
+人类基因组有数万个基因，每一个都有名字以及字母数字构成的符号。过去一年有 27 个基因被重新命名，原因都是 Microsoft Excel 会不断将这些基因的符号<a href="https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates">自动纠正为日期</a>。作为最流行的电子表格程序，科学家使用 Excel 跟踪他们的工作，记录临床试验数据。但 Excel 的默认设置考虑的是普通用户而不是科学家，因此当用户输入基因的字母数字符号如 MARCH1（代表 <a href="https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:26077">Membrane Associated Ring-CH-Type Finger 1</a>）Excel 会自动将其转换为日期 1-Mar。而 Excel 并没有提供选项关闭自动格式化。这既令人沮丧也是非常危险的，科学家必须手动去修正被破坏的数据。2016 年的一项研究检查了 3,597 篇论文的基因数据，发现有五分之一受到了 Excel 错误的影响。为了避开 MS Excel 自动纠正，科学家制定了新的基因命名<a href="https://www.nature.com/articles/s41588-020-0669-3">指南</a>，将 MARCH1 改为 MARCHF1，SEPT1 改为  SEPTIN1，等等。<p>
