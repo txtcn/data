@@ -1,0 +1,28 @@
+➜Linux 5.7 释出
+https://www.solidot.org/story?sid=64528	19974
+Linus Torvalds 在内核邮件上<a href="https://lore.kernel.org/lkml/CAHk-=wiZGrCkiBB1V7bxp8NZH6yWi9mPM4ptMW16OzOiNprBFA@mail.gmail.com/T/#u"><u>宣布</u></a>释出了 Linux 5.7。Linux 5.7 主要新特性包括：任务调度器<a href="https://lwn.net/Articles/788380/" target="_blank"><u>支持热压</u></a>，当 CPU 过热时热量调节器会限制 CPU 的最高频率降低其最大可用计算能力，如果任务调度器不感知这一频率变化，它的调度决策将会假定可用计算能力大于实际计算能力；移除微软实现的 exFAT 文件系统加入三星的 exFAT；<a href="https://lwn.net/Articles/806466/">Split Lock 检测</a>；<a href="https://lwn.net/Articles/816388/" target="_blank"><u>频率一致性调度器</u></a>；ARM 内核指针验证支持，防止指针遭修改减少安全漏洞；userfaultfd() 写保护支持；基于 BPF 的安全模块 bpf-lsm；等等，更多可浏览 <a href="https://kernelnewbies.org/Linux_5.7"><u>KernelNewbies 5.7</u></a>。
+➜联合国称全球有超过 5 亿儿童因封锁失学
+https://www.solidot.org/story?sid=64529	22725
+联合国估计，由于新冠疫情封锁，有 5.12 亿儿童<a href="http://www.ftchinese.com/story/001087914"><u>丧失受教育机会</u></a>，主要原因是他们接触不到互联网，无法远程上学。研究显示受教育机会减少对小学生的影响尤其严重；小学学龄儿童占失学儿童总数的近 70%。联合国表示近 60% 的小学适龄儿童失去了受教育的机会。就今年整体而言，随着封锁逐渐解除，小学适龄儿童的实际失学率预计将回落至 19.9%，但这仍是 2019 年 8.2% 失学率的两倍多，这是 1980 年代以来从未见过的水平。联合国称此次教育中断是“前所未有的”，并警告称这对“学龄儿童是一个惊人事态，会对他们的潜能造成长期影响”。
+➜美国众议员将提议案禁止投资中国军方关联企业
+https://www.solidot.org/story?sid=64530	25665
+美国众议员 Mike Gallagher、Jim Banks 及 Doug LaMalfa <a href="https://cn.reuters.com/article/us-senators-china-military-business-0601-idCNKBS2381A7?il=0" target="_blank"><u>计划提出法案</u></a>，要求美国财政部长向国会提交报告，列出与中国军方之间有重大合约、关连或获得支持的外国国防企业。根据这项法案，在上述报告提出后的六个月，美国企业及公民将必须缩减与这些企业的关系，并且将被禁止对这些企业进行新投资。“一方面，国会要求纳税人帮助提升我们的军力，以与中国抗衡；而另一方面，美国大型投资基金却把大量美元投入中国的军事工业基础，”Banks 在声明中称。“我们需要消除认知上的分歧，停止资助我们在全球的主要对手崛起。”美国与中国之间的争夺已从贸易和科技领域延伸至资本市场，两国关系因有关新冠疫情源头的争论而进一步恶化。
+➜AppGet 开发者不满微软在宣布 winget 时根本没提 AppGet
+https://www.solidot.org/story?sid=64531	30330
+微软最近出人意料的宣布了包管理器 <a href="https://devblogs.microsoft.com/commandline/windows-package-manager-preview/" target="_blank"><u>Windows Package Manager (winget)</u></a> ，另一个 Windows 开源包管理器项目 AppGet 开发者 Keivan Beigi 随即宣布项目进入维护状态，将于 8 月 31 日永久关闭。他写了<a href="https://medium.com/@keivan/the-day-appget-died-e9a5c96c8b22"><u>一篇博客</u></a>，详述了他与微软产品经理 Andrew Clinick 一年前交流的经历。Andrew 与 Keivan 有过多次交流，讨论了某种类似人才收购的流程，将 AppGet 整合进 Windows 系统。Andrew 还去微软进行了面试，但最终无疾而终，直到上个月微软宣布了 winget。winget 显然受到了 AppGet 启发，很多结构和理念都相似。AppGet 是开源项目，因此微软拷贝他的创意他对此并不感到愤怒，他所不满的是微软根本没有提到 AppGet。他的博客发表之后，Andrew Clinick 在微软官方博客上<a href="https://devblogs.microsoft.com/commandline/winget-install-learning/" target="_blank"><u>提到了双方的交流事宜以及 winget 从 AppGet 汲取的灵感</u></a>。
+➜X 和 Y 染色体如何走到一起
+https://www.solidot.org/story?sid=64532	36915
+染色体 X 和 Y 由于体型相差悬殊，原本不太可能配对。X 包含了数千个对生命至关重要的基因。相比之下，Y 像个小黑点，其主要目的是为启动雄性发育和精子制造提供指导。然而，如果这两条截然不同的染色体要在减数分裂过程中相遇并正确配对，它们就必须协同工作。几十年来，这个问题一直困扰着科学家。根据发表在《自然》期刊上的<a href="https://www.nature.com/articles/s41586-020-2327-4"><u>研究</u></a>，Sloan Kettering 研究所的科学家<a href="http://www.ebiotrade.com/newsf/2020-5/2020529101612414.htm">现在找到了答案</a>。对小鼠的研究发现，X 和 Y 正确配对的关键是在 PAR（pseudoautosomal region）中重复的 DNA 序列，它吸引了几个双链断裂相关蛋白到这个区域。这些蛋白质簇改变了这个区域中染色体的结构，从而使 PAR 成为“雄性小鼠基因组中双链断裂形成最热的区域”。
+➜英国保守党议员热衷使用加密消息应用 Signal
+https://www.solidot.org/story?sid=64533	38732
+加密消息应用 Signal <a href="https://www.private-eye.co.uk/issue-1522/news" target="_blank"><u>备受英国保守党议员的欢迎</u></a>。Signal 的一个受欢迎的功能是它可用设定在消息阅读五秒钟或一周之后自动在接受者设备上删除。端对端加密的性质意味着自动删除的消息将会永久消失，即使有法官的命令也无法恢复。这就引发了有关《信息自由法案（FOIA）》的争议。在递交信息披露申请之后手动删除信息是违法的，但如果记录已经删除，或者在信息披露申请之后自动删除，那么这并没有违反法律。未来的历史学家如何想调查英国政府如何应对疫情，他们可能会看到一个标记为 Signal 的空盒子。
+➜百度发布量子机器学习工具
+https://www.solidot.org/story?sid=64534	46443
+中国最大的中文搜索引擎在 GitHub 上发布了量子机器学习工具集 <a href="https://github.com/PaddlePaddle/Quantum" target="_blank"><u>Paddle Quantum（量桨）</u></a>，源代码采用了 Apache V2.0 许可证。量桨是基于飞桨（PaddlePaddle）深度学习框架，百度称飞桨是中国目前唯一一个支持量子机器学习的深度学习框架，“量桨建立起了人工智能与量子计算的桥梁，不但可以快速实现量子神经网络的搭建与训练，还提供易用的量子机器学习开发套件与量子优化、量子化学等前沿量子应用工具集，并提供多项自研量子机器学习应用。”百度<a href="https://www.zdnet.com/article/baidu-releases-quantum-machine-learning-toolkit-on-github/"><u>表示</u></a>，飞桨已被超过 190 万开发者使用。
+➜在 Linus Torvalds 建议之后内核淘汰 80 个字符长度限制
+https://www.solidot.org/story?sid=64535	50248
+Linux 内核<a href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Linux-Kernel-Deprecates-80-Col" target="_blank"><u>不再严格要求每行代码不超过 80 字符宽的编码风格</u></a>。Linux 内核和很多历史比较长的开源项目一样，都有编码风格指南，要求每行代码不超过 80 字符（或 80 列）。Linux 作者 Linus Torvalds 上周<a href="https://lkml.org/lkml/2020/5/29/1038" target="_blank"><u>在内核邮件列表上发表评论</u></a>，反对一行代码在超过 80 字符后强行换行，认为这太丑陋了。而现在大多数人也不再使用 80x25（85 列 25 行）的终端了。淘汰这一要求将需要更新内核编码风格指南文档，更新脚本 checkpatch.pl，不再将每行代码最大长度默认设为 80 而是 100。Torvalds 认为更长的代码是有用的，比如 grep 这样的单行工具。当然开发者仍然可坚持每行最长 80 个字符，checkpatch.pl 不再将其设为硬限制，100 个字符长其实也不是什么硬限制。
+➜来自尼安德特人的基因提高了生育能力
+https://www.solidot.org/story?sid=64536	50847
+根据发表在《Molecular Biology and Evolution》期刊上的<a href="https://academic.oup.com/mbe/advance-article/doi/10.1093/molbev/msaa119/5841671"><u>一项研究</u></a>，欧洲三分之一的女性从尼安德特人<a href="http://news.sciencenet.cn/htmlnews/2020/6/440774.shtm" target="_blank"><u>继承了</u></a>孕酮（黄体酮）受体，这是一种与生育能力提高、妊娠早期出血减少和流产减少相关的基因变异。
+黄体酮是一种激素，在月经周期和怀孕过程中起着重要的作用。29% 的欧洲女性携带一个尼安德特人受体的拷贝，3% 的人携带两个拷贝。研究表明，携带这种受体的尼安德特人基因变异的女性在怀孕早期出血、流产和生育更多孩子的可能性更小。分子分析显示，这些女性的细胞中会产生更多的孕激素受体，这有助于提高对孕激素的敏感性，防止早期流产和出血。

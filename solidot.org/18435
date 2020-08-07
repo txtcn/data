@@ -1,0 +1,36 @@
+➜新冠新增病例创下单日最高纪录
+https://www.solidot.org/story?sid=64732	13135
+世界卫生组织(WHO)周日<a href="https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200621-covid-19-sitrep-153.pdf?sfvrsn=c896464d_2" target="_blank"><u>报告</u></a>，全球新冠新增确诊病例创下<a href="https://www.forbes.com/sites/nicholasreimann/2020/06/21/world-sets-daily-record-for-new-coronavirus-cases-who-says/#3853f1ec53d4" target="_blank">单日最高纪录</a>，24 小时内新增 183,020 例，近半数来自美国和巴西，其中巴西确诊病例已经突破了 100 万。巴西过去 24 小时新增 54,771 例，美国新增 36,617 例，印度新增 15,400 例。根据约翰霍普金斯大学的<a href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target="_blank"><u>统计</u></a>，全球确诊病例数超过 892 万，死亡 46.7 万，美国确诊数 227 万，巴西 108 万。
+➜WireGuard 合并到 OpenBSD
+https://www.solidot.org/story?sid=64733	13375
+WireGuard <a href="https://marc.info/?l=openbsd-cvs&amp;m=159274150512676&amp;w=2" target="_blank"><u>合并进入到了 OpenBSD</u></a>，这意味着未来 OpenBSD 将能原生支持 WireGuard VPN。WireGuard 由 Jason Donenfeld 开发，前身是是一个数据渗漏工具，相比 OpenVPN 和 IPSec，WireGuard 代码更简单，它只有 4000 行代码，而 OpenVPN 超过 10 万行。除此之外，它支持最新的加密算法和协议。WireGuard 今年初合并到了 Linux 内核主线，随 Linux kernel 5.6 的发布正式提供给用户，它被认为将对 VPN 服务产生深远影响。
+➜西伯利亚北极小镇气温达到 38 摄氏度
+https://www.solidot.org/story?sid=64734	17504
+反常的热浪正在炙烤北极大部分地区，上周六西伯利亚的一个北极小镇 Verkhoyansk 气温达到 38 摄氏度，可能创造了北极圈北部的<a href="https://abcnews.go.com/International/wireStory/temperature-hits-100-degrees-arctic-russian-town-71370623" target="_blank"><u>最高温度记录</u></a>。这一记录还需要等待确认。上个月西伯利亚的气温就远高于常年，甚至还发生了森林火灾。 Verkhoyansk 人口约 1300 人，有着最极端的温度变化范围，最低零下 68 摄氏度，最高也就是刚刚创造的 38 摄氏度。
+➜Uber 开源自动清理过时代码的工具
+https://www.solidot.org/story?sid=64735	21248
+Uber <a href="https://eng.uber.com/piranha/"><u>开源了</u></a>自动清理停用功能标志的过时代码的工具 <a href="https://github.com/uber/piranha" target="_blank"><u>Piranha</u></a>，源代码采用 Apache 2.0 发布在 GitHub 上。Piranha 目前支持 Java、Swift 和 Objective-C，它<a href="https://www.infoq.com/news/2020/06/uber-piranha/" target="_blank"><u>使用</u></a>静态分析执行三项关键任务：删除停用功能标志 API 周围的代码，删除上一步导致的不可达的代码，删除停用功能相关的测试代码。Uber 团队还将在软件工程国际会议上发表 Piranha 的<a href="https://github.com/uber/piranha/blob/master/report.pdf" target="_blank"><u>研究论文</u></a>。
+➜越南如何做到无人死于新冠
+https://www.solidot.org/story?sid=64736	25128
+越南有 9700 万人口，与中国接壤，<a href="https://yro.slashdot.org/story/20/06/21/1734240/how-did-vietnam-become-the-largest-nation-without-coronavirus-deaths" target="_blank"><u>但至今没有报告一例新冠死亡病例</u></a>，总确诊病例数也只有 349 例。越南官方的数据外人难以核查，卫生专家称越南在疫情初期就采取了迅速而激烈的行动，从而避免了全面的灾难。在 1 月治疗第一个新冠病人时，越南就将其视为威胁，立即行动起来跟踪接触者并限制行动。鉴于病毒的传播能力，早期的时机非常重要。除了全国性的协调和针对性的测试，以及隔离，越南政府还不顾公众的争议在物理和虚拟的空间展开全面的监视。越南采取了极其严格的措施，比如入境的人需要接受测试并在指定地点隔离 14 天，如果发现测试阳性那么政府将在其居住地周围建立隔离区，进入公共场所需要消毒，需要佩戴口罩，进入公交车需要保持距离，等等。
+➜Sergey Brin 秘密建立了一支紧急救援队
+https://www.solidot.org/story?sid=64737	25289
+飓风 Dorian 去年九月袭击了巴哈马群岛，其中 Abaco 岛受创最重。飓风刚停息，巴哈马政府的援助尚未到来前，一支美国救援队乘着高速游轮抵达了当地，他们清理了道路，随行医生救治了十分之一的人口，海洋专家利用声纳勘察海床识别障碍物，航空专家修理机场重建空管系统，使得上千架救援飞机得以降落疏散受灾人群。对这一快速干预行动，Abaco 岛感谢的对象不是来自红十字会或无国界医生，而是 Global Support and Development (GSD)。GSD 是 Google 联合创始人 Sergey Brin<a href="https://www.thedailybeast.com/google-co-founder-sergey-brin-has-a-secret-disaster-relief-squad" target="_blank"><u> 秘密建立的紧急救援队</u></a>，由 Brin 的前保镖管理。过去五年，GSD 静悄悄的使用高科技系统在备受瞩目的灾难中快速提供人道主义援助。成立 GSD 的想法源自 2015 年，当时飓风 Pam 袭击了 Vanuatu&nbsp; 岛，导致当地许多人无家可归，缺乏食物和饮用水。Brin 的一艘游轮  Dragonfly 正好航行到附近，他本人并不在船上。船长 Mike Gregory 认为他们应该伸出援手。他联络了 Brin，接电话的是他的保镖、前美国海军中尉 Grant Dawson。Dawson 现在担任 GSD 的 CEO。这次救援行动 Dawson 负责，他找了自己认识的人，采购了大量药品，在收到通知 18 个小时后发起了救援。
+➜Ron Gilbert 开源了 Delores
+https://www.solidot.org/story?sid=64738	27659
+着名游戏设计师和程序员 Ron Gilbert <a href="https://grumpygamer.com/delores_dev"><u>开源了</u></a>他的一部作品《<a href="https://store.steampowered.com/app/1305720/Delores_A_Thimbleweed_Park_MiniAdventure/"><u>Delores</u></a>》。他说在疫情隔离期间，相信很多人可能厌倦了一直玩动森，“所以”他放出源代码让玩家们玩玩其它东西。他没有公开《Delores》的游戏引擎，原因之一是他使用了第三方库，无权自己决定将其开源。《Delores》是他开源的第一个项目，他接受其他用户递交的 bug 补丁和翻译（英文文本已经提取出来）。Ron Gilbert 以互动类的冒险游戏着称，早期作品为《猴岛小英雄》系列，近期的作品为 《<a href="https://store.steampowered.com/app/569860/Thimbleweed_Park/" target="_blank"><u>银莲公园（Thimbleweed Park）</u></a>》。
+➜意大利用白色防水布减缓冰川融化
+https://www.solidot.org/story?sid=64739	30232
+炎炎夏季到来前，<a href="https://phys.org/news/2020-06-italian-glacier.html" target="_blank"><u>意大利人用白色防水布覆盖住冰川</u></a>，试图减缓冰川的融化。在意大利北部，自 1993 以来 Presena 冰川体积减少了三分之一以上。为阻止其融化，一到滑雪季结束，保护者就会用白色防水布遮住雪地。Carosello-Tonale 公司从事这项功能，2008 年项目启动之初他们覆盖的面积约 3 万平方米，现在扩大到了 10 万平方米。白色防水布可以反射阳光，使得雪地保持在较低的温度。项目负责人 Davide Panizza 称，奥地利的部分冰川也使用了类似的覆盖系统。这些覆盖物会在 9 月份移除。
+➜Facebook 发布工具从单张照片实现高清人像 3D 数字化
+https://www.solidot.org/story?sid=64740	36313
+深度神经网络推动了基于图像的三维人体形状估计技术的进步，但现有的技术还无法产生细节丰富的高清人体三维结构。主要限制是创建精确的 3D 模型需要更多的上下文背景和更高的图像分辨率，以及更多的内存。南加州大学和 Facebook  的研究人员提出了 <a href="https://arxiv.org/pdf/2004.00452.pdf"><u>PIFuHD（PDF）</u></a> 去解决这个问题，<a href="https://github.com/facebookresearch/pifuhd"><u>代码</u></a>发布在 GitHub 上。从简单图像重组高清三维人像的<a href="https://camo.githubusercontent.com/1b965e5bc1a80b6af71c4ec667837a700e37984e/68747470733a2f2f7368756e73756b65736169746f2e6769746875622e696f2f5049467548442f7265736f75726365732f696d616765732f7069667568642e676966"><u>演示动画</u></a>。
+➜Ruby on Rails 作者谈如何写出优秀的代码
+https://www.solidot.org/story?sid=64741	39041
+Ruby on Rails 作者 David Heinemeier Hansson 接受采访<a href="https://developers.slashdot.org/story/20/06/20/0358229/david-heinemeier-hansson-explains-what-it-takes-to-write-great-code"><u>谈论了如何写出出色的代码</u></a>。他被问道作为一个见识了大量代码的人，好的差的代码是否能一目了然。Hansson 回答：如果代码很糟糕，在检查逻辑前你就察觉到。没有缩进，代码风格混乱，一点也不细心。学习写出出色的代码是一生的追求。正如我在 RailsConf 2014 上所说的，我们不是软件工程师，而是软件作者。相比工程，写作是更适合我们所从事工作的比喻。写作事关清晰，以一种清晰易懂的方式展示信息，因此人人都能理解。成为优秀的作者靠背字典是不行的。知道可用的单词知道开发模式不能让你成为出色的开发者。你必须发展出自己的见解，你需要决定你的系统最重要的是清晰。优秀程序员的定义是能写出清晰软件的人，而要成为优秀的程序员，唯一的方法是你必须阅读大量的软件和写大量的软件。
+➜野生动物贸易增加冠状病毒传播
+https://www.solidot.org/story?sid=64742	50897
+一项对越南南部三省野生动物贸易的研究发现，随着动物被捕到进入市场，再到供应链的下一步餐馆，其体内冠状病毒呈阳性反应的比例<a href="https://www.nytimes.com/2020/06/19/science/coronavirus-rats-vietnam.html"><u>显着上升</u></a>。田鼠是越南及其邻国很流行的动物，测试发现捕获者出售的野生田鼠冠状病毒呈阳性的比例约为 20%，而市场里销售的田鼠冠状病毒呈阳性的比例约 30%，而餐馆的阳性比例达到了 55%。这意味着有很高的比例餐桌盘子里的田鼠感染了某种冠状病毒。流行病学家 Sarah H. Olson 解释说，交易的野生动物生活在拥挤的环境中，压力很大，因此更容易感染病毒。这是经典“疾病生态学”。<a href="https://www.biorxiv.org/content/10.1101/2020.06.05.098590v3">研究报告</a>发表在预印本网站 bioRxiv 上。
+➜FBI 如何识别一位蒙面纵火犯
+https://www.solidot.org/story?sid=64743	54016
+每个网民在某种程度上都会留下数字痕迹。在费城最近发生的一次抗议活动中，一位没有露面的女子纵火烧毁了一辆警车。而 FBI 识别出这位纵火犯就是<a href="https://arstechnica.com/tech-policy/2020/06/masked-arsonist-mightve-gotten-away-with-it-if-she-hadnt-left-etsy-review/" target="_blank"><u>利用了她在网上留下的各种蛛丝马迹</u></a>。她所穿的 T 恤是非常独特的，在 Etsy 上出售，因此 FBI 的调查人员查看了 Etsy 上的留言，寻找是否有费城的人发帖，他们发现一位化名为 alleycatlore 的费城居民给了五星好评，称发货很快。FBI 探员在网上搜索了 alleycatlore，结果在时尚网站 Poshmark 上找到了一位名叫 lore-elisabeth 的用户。在费城搜索 Lore Elisabeth，找到了她在 LinkedIn 的资料。她手臂上的纹身出现在了 Lore Elisabeth 做按摩的一个旧视频中。美国司法部的<a href="https://www.justice.gov/usao-edpa/pr/us-attorney-mcswain-announces-charges-against-philadelphia-woman-arson-two-philadelphia"><u>新闻稿</u></a>称她面临最高 80 年的监禁，当地新闻网站则<a href="https://6abc.com/lore-elisabeth-blumenthal-arson-philadelphia-police-car/6258867/"><u>表示</u></a>她面临的最高刑期为 10 年和最高 50 万美元罚款。她目前已被关押并且无法得到保释。

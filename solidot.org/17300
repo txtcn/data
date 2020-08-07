@@ -1,0 +1,15 @@
+➜新版 WannaCry 不再含有关闭开关
+https://www.solidot.org/story?sid=52394	28254
+<div align="center"><img src="http://img.solidot.org/0/327/lifGxKShduOCU.png" width="500" align="" height="243"><br>
+<br>
+</div>
+勒索软件 WannaCry 从周五开始在全球扩散，大量使用 Windows XP 的中国是重灾区。WannaCry 借用了NSA 的 SMB 漏洞利用代码进行传播。Malwaretech 的安全研究人员在分析恶意程序代码时发现它包含了一个当时没有注册的<a href="https://gist.github.com/slider23/bd617d0d376047c05d18980fde306840" target="_blank"><u>硬编码域名</u></a>（www.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com），推测是恶意程序作者想要阻止代码被分析，当恶意程序成功查询该域名后，它会认为自己在沙盒环境内，因此会退出防止被进一步分析。该域名可以充当阻止传播的<a href="https://www.malwaretech.com/2017/05/how-to-accidentally-stop-a-global-cyber-attacks.html" target="_blank"><u>关闭开关</u></a>，研究人员通过抢注和上线该域名设法阻止了勒索软件的进一步扩散。但安全研究人员很快发现了 WannaCry <a href="https://motherboard.vice.com/en_us/article/round-two-wannacry-ransomware-that-struck-the-globe-is-back" target="_blank"><u>有了新变种</u></a>，不再包含硬编码域名。
+➜微软开始停止支持 SHA-1 证书
+https://www.solidot.org/story?sid=52395	30435
+在本周释出的例行安全更新中，微软向 Edge 和 Internet Explorer 浏览器推送了新的安全策略，<a href="http://www.zdnet.com/article/windows-10-edge-ie-were-now-blocking-sites-signed-with-sha-1-certs-says-microsoft/" target="_blank"><u>停止支持 SHA-1 证书</u></a>，不再加载使用 SHA-1 证书的网站。微软是第四家停止支持 SHA-1 签名证书的浏览器开发商，在这之前，Chrome 于今年一月、 Firefox 于今年二月，苹果于今年三月都停止了对 SHA-1 证书的支持。今年早些时候，Google&nbsp; 和 CWI Amsterdam <a href="http://www.solidot.org/story?sid=51474" target="_blank"><u>合作演示了</u></a>对 SHA-1 的碰撞攻击，公布了两个 SHA-1 哈希值相同但内容不同的 PDF 文件。在微软操作系统安装最新的更新之后，浏览器加载  SHA-1 证书网站时将会显示出错信息。
+➜当假技术支持碰到真技术支持
+https://www.solidot.org/story?sid=52396	53383
+一位从事 PC 维修的专业人士有天接到了一个奇怪的电话，对方自称是微软技术支持，声称从他的电脑上检测到了病毒，问题是这位专家用的不是 Windows 而是 Linux。他觉得很有趣，<a href="http://www.theregister.co.uk/2017/05/12/on_call/" target="_blank"><u>便决定和这位假技术支持玩下去</u></a>。假技术支持提供了在电脑上设置远程桌面的指令，但配置的是 Windows 下的远程桌面，对 Linux 完全没用。真技术支持配合假技术支持在计算机上用 apt-get 安装了远程桌面，但设置为查看模式。当骗子通过远程桌面访问他的 Blackbox Linux 电脑后感到很困惑，因为自己无法控制任何事情，而且 IP 地址还显示在了电脑上。他通过 whois 查询了 IP 地址所属的 ISP，随即向 ISP 递交滥用报告。骗子很快挂断电话，认识到自己骗错人了。
+➜缺少尘埃加重中国的空气污染
+https://www.solidot.org/story?sid=52397	55270
+空气中漂浮的尘埃通常被视为一种环境问题，<a href="http://www.bbc.com/news/science-environment-39895558" target="_blank"><u>但缺少</u><u>尘埃却能恶化中国的空气污染</u></a>。原因是尘埃会反射阳光，缺少尘埃会导致更多的太阳光抵达地面，使得陆地和海洋之间的温差变小，降低了风速，从而恶化了人口密集城市的空气污染。中国有两大尘土来源，其一是戈壁沙漠，其二是西北高原，其中戈壁沙漠的影响更大。研究人员称，尘埃排放减少导致的风速降低幅度大约为相当于每小时十分之一英里，但将这一风速下降放置一个更广阔的区域内，它将会导致中国东部冬季污染增加 13%。

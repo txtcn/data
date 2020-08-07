@@ -1,0 +1,66 @@
+➜基于 HTML5的Windows画图程序
+https://www.solidot.org/story?sid=17131	10200
+<a href="http://www.comsharp.com/">锐商企业CMS</a> 写道 "Windows 画图程序一直伴随着 Windows 各个版本，这个很简单，几乎没有什么用处的程序拥有最基本的绘图功能，很适合用来涂鸦。HTML5 的 Canvas 对象使在线绘图成为可能，虽然 HTML5 还远未成熟，但很多人已经迫不及待地用它设计一些让人惊叹的应用（<a href="http://www.comsharp.com/GetKnowledge/zh-CN/TeamBlogTimothyPage_K938.aspx">完整图文版</a>）。           <a href="http://canvaspaint.org/">CanvasPaint</a> 是一个基于 HTML5 的标准 Windows 画图程序，它拥有和 Windows 画图程序一模一样的界面和操作，功能也几乎完全一样，在特定浏览器的支持下，你甚至可以将最后的作品保存到本机。这并不是最近的项目，2006年就有了，因此，目前绝大多数支持标准的浏览器（Firefox，Safari，Chrome，Opera）都可以正常使用这个程序。以下是作者对这个项目的一些解释。<br> <br>
+为什么要开发这个程序？
+<br> <br>目的不是为了开发一个 Windows 画图程序，而是体验 HTML5 的 Canvas 功能。
+如何使用
+<br> <br>和标准 Windows 绘图程序一样。<br> <br>
+能保存吗？
+<br> <br>是的，但只支持 Firefox 2 和 Opera 9 （译者注：这是作者2006年就实现的一个程序）。在本机保存，选择 File 菜单中的 Download，在线保存，选择 Save online，会自动生成一个 URL 在线显示你的作品。<br> <br>
+浏览器本身的右键菜单影响使用
+<br> <br>可以在浏览器的设置中禁用右键菜单。
+为什么有些功能不能用？
+<br> <br>一些功能支持特定版本的浏览器（译者注：这是就2006年而言）:
+<dl> <dt>Color picker</dt> <dd>Firefox 2.0</dd> <dd>Opera 9</dd> <dt>Flood fill</dt> <dd>Opera 9</dd> <dt>Save image</dt> <dd>Firefox 2.0</dd> <dd>Opera 9</dd> <dt>Open URL</dt> <dd>Firefox 1.5</dd> <dd>Opera 9</dd> <dd>Latest WebKit</dd> </dl>
+Canvas 对象好用吗?
+<br> <br>对那些不需要跨浏览器支持的应用很好用。但在绘画中，最大的问题是，受限于 mousemove 事件的刷新率，你不太容易发现光标的位置，使用喷笔的时候尤其明显。另外，当尺寸变得很大时，速度变得很慢，没有 getPixel() 功能。<br> <br>
+技术细节
+<br> <br>程序中使用了 5 个 Canvas 对象。
+<br> <br>一个主画板，一个是透明画板层浮动在上方显示预览绘画内容，一个隐藏的 Canvas 用来缓存选择的内容，另一个用来缓存反悔状态，一个用在程序标题栏，用来显示渐变色。<br> <br>
+其他人的 HTML5 Canvas 实验
+<br> <br> <a href="http://www.abrahamjoffe.com.au/ben/canvascape/">Canvascape 3D</a> （用 HTML5 实现简单的第一人称射击游戏）<br> <a href="http://www.wirelesshamster.com/cosas/canvas_mandelbrot_julia_set.html"> </a> <a href="http://www.liquidx.net/canvasgraphjs/#examples">CanvasGraph</a> （一个 HTML5 Canvas 绘图 JavaScript  类库 ）<br> <a href="http://cow.neondragon.net/index.php/383-Reflectionjs-Demo">Image reflections</a> （用 HTML5 Canvas 实现图像倒影）<br> <a href="http://caimansys.com/painter/">Canvas Paint<b>er</b> </a> （一个更为简单的 Canvas 画图程序）<br> <br>
+真正令人赞叹的 HTML 画图程序
+<br> <br>如果上面的程序已经让你对 HTML5 的 Canvas 功能感到鼓舞，<a href="http://mugtug.com/sketchpad/">下面这个画图程序会让你赞叹</a>。拥有不输桌面的界面体验和流畅感，在多屏幕电脑上，我甚至有将那些浮动工具面板拖到第二个屏幕的冲动。
+<br> <br>演示地址：<a href="http://mugtug.com/sketchpad/">http://mugtug.com/sketchpad/</a>
+<br> <br>本文素材来源：<a href="http://canvaspaint.org/">http://canvaspaint.org/#</a> <br> <a href="http://mugtug.com/sketchpad/">http://mugtug.com/sketchpad/</a>
+<br> <br>中文编译来源：<a href="http://www.comsharp.com/"> <b>锐商企业CMS</b> 网站内容管理系统</a> 官方网站"
+➜谷歌去港后各搜索引擎流量变化
+https://www.solidot.org/story?sid=17132	11100
+<a href="http://yi-it.com/blog/">takeITeasy</a> 写道 "谷歌去了香港，对国内的搜索市场带来什么影响？ <i>
+在谷歌转到google.com.hk后，<a href="http://game.hsw.cn/xwzx/bbbyhs/20100325/30525.html">国内各大搜索引擎都发出了自己的声音</a>，似乎谷歌的某个竞争对手的流量应该有比较大的增长，但实际上，<a href="http://yi-it.com/blog/pivot/entry.php?id=164#body">国内市场的各大搜索引擎的流量并没有实质的变化</a>，而google.com.hk的流量和之前的google.cn几乎持平。"</i>
+根据Net Applications的统计，Google中国的全球流量<a href="__SLASHLINK__" sect="it" sid="10/04/03/0458236" sn="article" tid="26">还有所增加</a>，以前不到2%，而现在达到了3%。
+➜科学家试图解释天堂
+https://www.solidot.org/story?sid=17133	16800
+<a href="mailto:happyjdk@gmail.com">jdk137</a> 写道<i> "Lisa Miller在Newsweek上撰文阐述这个观点：天堂不是一个真实的地方，不是某种过程，也不是超自然事件，而是<a href="http://www.newsweek.com/id/235462">人死前在大脑里发生的某些东西</a>。这个观点部分基于在活体中进行的濒死体验（near-death experience，NDE）研究。2000年Bruce Greyson在《柳叶刀》上发表的一篇论文认为，有9%-18%的濒死的人有NDE。<a href="http://photo.newsweek.com/2008/10/photos-patients-draw-life-after-death-experiences.slide1.html">他们体验的细节有极大的相似之处</a>,比如看到通道、亮光、门，意识离开的身体，遇到曾经认识或听说过的人，感受到了上帝的存在，意识又回归身体，有了某种变化等等。科学家们把NDE解释为一种生理自我防卫机制。为了抵御精神创伤带来的危害，大脑分泌了有防御功能的化学物质，而这些物质恰好能激发强烈的幻觉。氯胺酮实验使这一理论得到了进一步的支持。氯胺酮（用作毒品时称为K粉）是一种起效快、作用时间短、可致幻的分离性麻醉剂，科学家发现<a href="http://www.mindspring.com/~scottr/nde/jansen1.html">强剂量的氯胺酮能使人产生和NDE极其相似的幻觉体验</a>。“我进入了一道金光，在金光中徐徐上升，和光进行着无需语言的交流，我知道那道光就是上帝。”氯胺酮的一位使用者如此描述他的经历。“但丁描绘得更好。”Miller写道，“但所有的描绘总是惊人的相似。”"</i>
+➜王江民因心脏病突发抢救无效逝世
+https://www.solidot.org/story?sid=17134	21600
+<a href="http://www.rrgame.net/">人人游戏问答网</a> 写道<i> "4日上午10点左右，网名“好玩”的北京江民科技有限公司，江民杀毒软件老板<a href="http://www.jiangmin.com/">王江民先生</a>，在京西信翔鱼池钓鱼时心脏病突发，抢救无效逝世。王江民是北京江民新科技术有限公司总裁，着名的反病毒专家。"<a href="http://zh.wikipedia.org/zh-cn/%E6%B1%9F%E6%B0%91">江民软件</a>最早于1994年推出，但在1997年江民公司在其反病毒软件KV300的L++版中设置逻辑炸弹，导致大量盗版用户的电脑数据遭到破坏且不可恢复。</i>
+➜北冰洋海冰面积恢复到正常水平
+https://www.solidot.org/story?sid=17135	27120
+北冰洋海冰面积在多年之后首次<a href="http://www.thedailygreen.com/environmental-news/latest/arctic-sea-ice-0330">恢复到正常水平</a>。美国国家冰雪资料中心（NSIDC)<a href="http://nsidc.org/arcticseaicenews/">公布的数据</a>显示，3月份北极的海冰面积大幅增加，十年来首次接近长期平均值。科学家认为这是白令海上空异常寒冷的冬季天气所致。专家认为，这不能视为全球暖化<a href="http://tw.news.yahoo.com/article/url/d/a/100404/78/239x0.html">接近尾声</a>的证据。
+➜iPad热卖，但未售罄
+https://www.solidot.org/story?sid=17136	27720
+《华尔街日报》<a href="http://cn.wsj.com/gb/20100405/tec121731.asp">报道</a>，<a href="http://www.apple.com/ipad/">iPad</a>于上周末正式上市，虽然有大量用户在商店外排队购买，但未出现一“iPad”难求的盛况。<i>
+研究公司iSuppli Corp上周五预计，今年全球将售出710万部iPad，而到2012年以前的销售量将比这高出近两倍，达到2,010万部。但也有一些分析师较为悲观，比如Forrester Research就预计，iPad上市第一年的销量将只有300万部。首批推出的iPad价格在499至699美元之间，只有Wi-Fi功能，具备3G移动互联网接入功能的iPad预计将于本月晚些时候面市。iPad已拥有3,100多个应用程序。</i>
+➜DIY图灵机
+https://www.solidot.org/story?sid=17137	28320
+<a href="http://citypw.blogspot.com/">Shawn the R0ck</a> 写道 "每个读到关于Alan Turing所构想的可计算性的理论的计算设备都觉得很神奇对吧？我们今天把这个设备称为图灵机。而一位来自威斯康星(DND龙与地下城的故乡、id software也曾经在这里待过)的家伙Mike Davey不满足于把这一计算设备停留在概念上，所以<a href="http://spectrum.ieee.org/automaton/robotics/artificial-intelligence/032610-diy-turing-machine">他真的造了一台图灵机</a>。<br>
+之前已经有一些其他的图灵机的现实版比如<a href="http://legoofdoom.blogspot.com/">基于Lego的设计</a>，但Davey的计划是造一台更接近图灵原创思想的图灵机。结果--holy算法?简洁而美丽的东东.读写头?检测.移动磁带(无限的内存)一个bit?再检测....或许以后当我们谈到图灵机我们会想起Mike Davey。可以到<a href="http://aturingmachine.com/hardware.php">他的网站</a>看看..."
+➜调查发现金发女郎赚钱多
+https://www.solidot.org/story?sid=17138	29760
+金发女郎通常被认为可爱迷人但没什么大脑，然而澳大利亚的一项调查<a href="http://www.bcc.com.tw/news/newsview.asp?cde=1099842">发现</a>，<a href="http://www.couriermail.com.au/money/money-matters/blondes-have-more-fun-and-money/story-fn3hskur-1225849883893?from=public_rss">金发女郎挣的钱比普通女性高7%</a>。而且她们嫁的男人也比较有钱，她们丈夫挣的钱比普通女性的丈夫高6%。<i>
+研究人员追踪了一万三千名各种头发颜色、教育程度、家世背景的女性。结果发现，即使去除了教育等因素，这种因为头发颜色而导致的薪水差异仍然存在。负责这项研究的David Johnston博士说，男性容易被金发美女的美色所惑，所以，她们不但薪水高，老公也比较有钱。一位金发明星表示金发不会带来更多钱，但金发确实更性感和迷人。</i>
+➜发现灵长类动物全新物种
+https://www.solidot.org/story?sid=17139	30480
+DNA24 写道 <i>"《每日电讯报》<a href="http://www.telegraph.co.uk/science/evolution/7550058/Fossil-could-rewrite-human-evolution.html">报道</a>(<a href="http://news.163.com/10/0405/08/63GAL4KO000146BC.html">中文</a>),南非金山大学教授李·贝格尔1日在南非<a href="http://www.hudong.com/wiki/%E6%96%AF%E6%B3%B0%E5%85%8B%E6%96%B9%E4%B8%B9">斯泰克方丹</a>化石遗址地区考察洞穴系统时发现这一套幼年高级灵长类动物骨架化石。初步研究发现,这套化石属于先前尚未发现的全新物种,这一物种生活在距今大约200万年前。这套化石埋藏在石灰质洞穴“马拉帕洞”中,出土时趋近完整。科学家认为,包裹这套骨架化石的沉积角砾岩对化石起到良好的保护作用。"</i>
+➜黑客破解iPad
+https://www.solidot.org/story?sid=17140	31320
+nioce在日志中<a href="http://solidot.org/~nioce/journal/1426">提到</a>：<i>
+iPhone破解团队Dev Team成员MuscleNerd通过其Twitter<a href="http://twitter.com/MuscleNerd/status/11596054111">宣布</a>，<a href="http://apple.slashdot.org/story/10/04/04/2223237/iPad-Jailbroken">破解了iPad</a>，并发布了iPad <a href="http://www.youtube.com/watch?v=dgHNayVtHkQ">越狱</a>视频(<a href="http://v.youku.com/v_show/id_XMTYyNzkzOTU2.html">Youku视频</a>)。MuscleNerd称，他获得了iPad的root访问权限。</i>
+➜NASA卫星拍下喜马拉雅山冰川滑落
+https://www.solidot.org/story?sid=17141	41280
+世界最高山脉喜马拉雅山有数以千计的冰川。2009年12月25日，NASA地球观测1号（<a href="http://eo1.gsfc.nasa.gov/">EO-1</a>）卫星的先进陆地成像器<a href="http://earthobservatory.nasa.gov/IOTD/view.php?id=43391">拍摄到一个冰川从西南向东北滑落</a>，淹没了一座峡谷，到达一个冰湖后停止了移动。
+➜为什么iPad和iPhone不支持多任务
+https://www.solidot.org/story?sid=17142	50700
+最新潮的电子产品不支持多任务，听起来似是不可思议的事情，但是苹果的iPhone和iPad却只支持单任务，虽然有流言称下一代iPhone将支持多任务。<a href="http://www.osnews.com/story/23105/Why_the_iPad_iPhone_Don_t_Support_Multitasking">为什么iPad和iPhone不支持多任务</a>？<i>
+从技术上讲，iPhone和iPad显然支持多任务，苹果提供的应用程序，比如音乐播放器就明显支持多任务。<a href="http://blog.rlove.org/2010/04/why-ipad-and-iphone-dont-support.html">但苹果为什么不允许第三方支持多任务呢</a>？这背后的原因主要与iPhone和iPad内存有限（目前版本只有256MB内存）和没有硬盘有关。没有硬盘意味着没有交换文件。有限内存和没有交换文件限制了应用程序的大小。内存消耗是一个极为重要的系统限制。苹果使用名叫OOM killer的机制杀死消耗了太多内存的应用程序。和多数应用程序不同，iPad和iPhone上的程序都知道它们能消耗多少内存，它设计如何在这些约束条件下运行。 </i>

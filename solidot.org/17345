@@ -1,0 +1,42 @@
+➜攻击者劫持软件更新机制传播勒索软件
+https://www.solidot.org/story?sid=52893	10229
+<div align="center"><img src="http://img.solidot.org/0/365/liUk8JWhKapE2.png" height="223" width="400" align=""><br>
+</div>
+<br>
+在 WannaCry 之后，全世界的众多企业又遭遇了另一波勒索软件攻击，但这一次攻击者采用的方法不是利用未修复的漏洞，而是软件更新机制。未知攻击者入侵了乌克兰会计软件供应商 M.E.Doc 的软件更新服务器，向该软件的客户推送恶意更新，传播勒索软件 <a href="https://www.welivesecurity.com/2017/06/27/new-ransomware-attack-hits-ukraine/"><u>Petya</u></a>（又名 Petrwrap、GoldenEye 或 <a href="http://blog.talosintelligence.com/2017/06/worldwide-ransomware-variant.html" target="_blank"><u>Nyetya</u></a>）。M.E.Doc 的会计软件在乌克兰地区非常受欢迎，因此第一批遭到攻击的是乌克兰公司，随后扩散到了世界其它地区的企业。当一台机器感染&nbsp; Petya 之后，它会通过三种机制扩散到其它机器，包括 WannaCry 使用的 EternalBlue，Windows 管理工具 Psexec 和 Windows Management Instrumentation。攻击者在加密被感染机器的文件之后向受害者勒索价值 300 美元的比特币。这不是第一次 M.E.Doc 的软件更新机制被用于传播勒索软件，上个月该公司的软件更新机制就被用于传播了勒索软件 XData。
+➜甲骨文等支持欧盟重罚 Google
+https://www.solidot.org/story?sid=52894	13569
+欧盟以 Google 滥用搜索市场的支配地位为由重罚搜索巨人 24 亿欧元，对此 Google 的美国竞争对手<a href="http://www.ftchinese.com/story/001073177" target="_blank"><u>表达了欢迎</u></a>。新闻集团、甲骨文和 Yelp 等 7 家美国公司致函欧洲最高反垄断官员，对重罚 Google 表示支持。它们在信中写道：“作为美国企业，我们希望公开声明，对 Google 采取的执法行动是必要和适当的，不是地方保护主义。”在签名的企业中，甲骨文与 Google 仍然在打官司，新闻集团则长期抨击 Google 对传媒产业日益增强的影响力。Yelp 已推动欧盟接受它自己提出的针对 Google 的反垄断申诉，但迄今未获成功。
+➜MIT 的汽油引擎无人机能在空中停留五天
+https://www.solidot.org/story?sid=52895	14843
+消费者级无人机在空中停留的时间都很短，在紧急情况下比如发生自然灾难需要无人机停留更长时间，以便于提供救援所需的通信功能，绝大多数现有的无人机对此无能为力。美国空军提出了一项能在空中长时间停留的太阳能无人机设计挑战。MIT 的一组工程师发现，太阳能无人机容易受到风等天气因素的影响，无法有效的在空中长时间停留，他们放弃了太阳能，<a href="https://techcrunch.com/2017/06/27/mits-gas-powered-drone-is-able-to-stay-in-the-air-for-five-days-at-a-time/" target="_blank"><u>改为设计出</u></a>一种汽油引擎无人机。被称为 <a href="http://news.mit.edu/2017/drones-stay-aloft-five-days-0607" target="_blank"><u>Jungle Hawk Owl</u></a> 的无人机能在空中最长停留五天，翼展 24 英尺，重量低于 150 磅，能携带 10-20 磅重的通信设备。
+➜英国最新航母仍然运行 Windows XP
+https://www.solidot.org/story?sid=52896	17660
+英国最大航母伊丽莎白女王号本周一开始试航，但它仍然运行 Windows XP 的消息<a href="https://news.slashdot.org/story/17/06/27/2017204/britains-newest-warship-runs-windows-xp-raising-cyber-attack-fears" target="_blank"><u>引发了网络攻击的担忧</u></a>。计算机专家警告，Windows XP 让航母易于遭受网络攻击。国防部的消息来源称，航母使用的硬件和软件在 2004 年设计的时候称得上是不错，但如今已经过时。一位高级官员声称，航母上驻扎了网络安全专家来抵御网络攻击。这艘航母重 6.5 万吨，能搭载 40 架舰载机，是英国皇家海军迄今为止最大的战舰。
+➜Facebook 月活跃用户突破 20 亿
+https://www.solidot.org/story?sid=52897	18933
+Facebook 宣布其月活跃用户<a href="https://www.theverge.com/2017/6/27/15880494/facebook-2-billion-monthly-users-announced" target="_blank"><u>突破了 20 亿</u></a>。公司创始人 Mark Zuckerberg 通过其账号<a href="https://www.facebook.com/zuck/posts/10103831654565331" target="_blank"><u>发布了</u></a>这一消息，称“很荣幸与你们一起进行这一旅程”。Facebook 旗下有多个十亿级别用户数量的应用，其中 Messenger 有超过 12 亿用户， WhatsApp 的数字类似，Instagram 有超过 7 亿用户。相比之下，微博客服务 Twitter 的月活跃用户为 3.28 亿。
+➜NVIDIA 将发布专为挖掘数字货币设计的显卡
+https://www.solidot.org/story?sid=52898	27859
+用 GPU 挖数字货币的热潮导致了众多显卡品牌脱销和价格螺旋上升。为了利用这一趋势，NVIDIA <a href="https://hardware.slashdot.org/story/17/06/27/2038249/nvidia-to-launch-graphics-cards-specifically-designed-for-digital-currency-mining" target="_blank"><u>计划</u></a>发布一款专门为挖矿设计的显卡。在 ASIC 专用矿机的冲击下，用显卡挖掘比特币和莱特币早已不合算，但其他设计不依赖 ASIC 的数字货币使用显卡挖矿效率最高。NVIDIA 计划发布的专用显卡是 <a href="https://www.asus.com/Graphics-Cards/MINING-P106-6G/specifications/" target="_blank"><u>NVIDIA P106-100</u></a>，6GB GDDR5 显存，1280 个 CUDA Core，显存位宽 192 位，相比没有为挖矿优化的同型号显卡，它的哈希率提升了 36%，而且能长时间运行，可以 24/7 小时连续挖矿。
+➜沃尔沃的自主驾驶汽车对袋鼠困惑不已
+https://www.solidot.org/story?sid=52899	29435
+沃尔沃的自主驾驶汽车<a href="http://www.bbc.com/news/technology-40416606" target="_blank"><u>在识别马路上的袋鼠时非常挣扎</u></a>。这家瑞典汽车制造商的 2017 S90 和 XC90 型号汽车配备了大型动物探测系统去监视路上的鹿、驼鹿和驯鹿。但袋鼠的运动方式令它非常困惑。沃尔沃的澳大利亚技术经理称，袋鼠跳跃到空中时它看起来在比较远的地方，但它着陆时却看起来更近了。这一问题不会推迟沃尔沃的自主驾驶汽车在澳大利亚亮相。根据澳大利亚全国公路和机动车协会的数据，袋鼠卷入了该国八成的动物车祸。看起来人类在应付穿越公路的袋鼠时也很挣扎。
+➜三星将在 7 月 7 日发布翻修过的 Galaxy Note 7
+https://www.solidot.org/story?sid=52900	30238
+去年，旗舰手机 Galaxy Note 7 在发售两个月后因为电池过热问题迫使三星在全世界全面召回，该型号还被禁止带上飞机。现在，召回的手机将在翻新后重新上架<a href="http://english.yonhapnews.co.kr/news/2017/06/27/0200000000AEN20170627006100320.html" target="_blank"><u>提供给消费者</u></a>，但名字不再叫 Note 7，而是叫 Note FE，其中 FE 的意思据称是 Fandom Edition，也就是粉丝版。知情人士称，手机将于 7 月 7 日在韩国上市，其他地区的上市时间未知，售价不会高于 70 万韩元（约 616 美元）。翻新后的手机电池容量小于原版，安装了最新的软件更新。
+➜黑猩猩的肌肉并没有人类想象的那么强有力
+https://www.solidot.org/story?sid=52901	30848
+黑猩猩的肌肉比人类强壮，但它们并不像人们想的那样有力量，<a href="https://www.newscientist.com/article/2138714-chimps-are-not-as-superhumanly-strong-as-we-thought-they-were/" target="_blank"><u>它们并非是超人</u></a>。亚利桑那大学的实验和计算机模型显示，黑猩猩的肌肉只比同样大小的人类肌肉更强壮 1/3。该结果与已经完成的几项实验结果相吻合，这表明当黑猩猩在拉拔和跳跃时，黑猩猩的力量大约是同比人类的 1.5 倍。研究人员称，由于它们的平均体重比人类轻，按照绝对值计算人们完全可能战胜它们。该发现还表明，其他猿类的肌肉强度也与黑猩猩类似。人类<a href="http://news.sciencenet.cn/htmlnews/2017/6/380704.shtm" target="_blank"><u>才是个异数</u></a>。<a href="http://www.pnas.org/content/early/2017/06/20/1619071114" target="_blank"><u>研究报告</u></a>发表在 PNAS 上。<br>
+➜研究证实存在互相环绕的超大质量黑洞
+https://www.solidot.org/story?sid=52902	33416
+新墨西哥大学的天文学家<a href="https://phys.org/news/2017-06-groundbreaking-discovery-orbiting-supermassive-black.html" target="_blank"><u>观测和测量了</u></a>两个互相环绕的超大质量黑洞的轨道运动。<a href="http://iopscience.iop.org/article/10.3847/1538-4357/aa74e1/meta;jsessionid=C607D5799BDBA0F23FAA6864E400553C.c3.iopscience.cld.iop.org" target="_blank"><u>研究报告</u></a>发表在《The Astrophysical Journal》期刊上。新墨西哥大学教授 Greg Taylor 称，他们长期以来一直在寻找星系合并所产生的两个互相环绕的超大质量黑洞。天文学家利用甚大基线射电望远镜阵列，在距离地球 7.5 亿光年的编号为 0402+379 的星系内发现了一对超大质量黑洞，其组合质量是太阳的 150 亿倍，其轨道周期大约为 2.4 万年，天文学家已经对它们观察了十年以上，仍然没有发现最轻微的轨道曲率变化。
+➜中国的最大科技优势不是成本而是速度
+https://www.solidot.org/story?sid=52903	35575
+硬件加速器 <a href="https://hax.co/">HAX</a> 的合伙人 Ben Joffe 称中国不再是一个模仿经济，而是一个高速的创新者，利用速度而不是成本<a href="http://spectrum.ieee.org/view-from-the-valley/at-work/start-ups/chinas-big-tech-advantage-is-speed-not-cost" target="_blank"><u>打败竞争对手</u></a>。比如小米高速商品化的 13 美元手环将 Fitbit 赶出中国市场。他说，供应商会在周日晚上发消息给你说他们能在周一早晨给你发货。Joffe 指出，中国创业公司的资金有些溢出，相比美国的同类公司通常会筹集到更多资金，因为中国相信抢占市场速度要快。他表示，今天的中国就像是 1980 年代的日本。
+➜研究称中国资本伪装成旅游支出外流
+https://www.solidot.org/story?sid=52904	39097
+美联储发表的一篇<a href="https://www.federalreserve.gov/econres/ifdp/files/ifdp1208.pdf" target="_blank"><u>论文</u></a>（PDF）称，伪装成海外旅游支出的资本外流，人为地降低了中国对外公布的贸易顺差，同时<a href="http://www.ftchinese.com/story/001073194" target="_blank"><u>掩盖了投资资本外流的规模</u></a>。在 2014 年前，中国的旅游支出与收入水平相似的其他国家持平。但之后三年这项支出变得 “异常的高”。在 2014 年，中国人均旅游支出相对于人均 GDP 的比例，与人均 GDP 为中国 7 倍的英国持平。到 2015 年，中国的这一支出比例几乎与人均收入为中国 10 倍的丹麦持平。旅游支出的增长速度也远远超过旅游者人数的增长速度。论文认为，在截至 2016 年 9 月的一年中，经过伪装的资本外流可能达到 1900 亿美元，相当于中国 GDP 的 1.7%。论文结论为去年底中国一系列遏制资本外流的举措（包括加强对个人购汇的监管）提供了新的背景信息。
+➜研究认为假新闻的泛滥与有限的注意广度和信息过载相关
+https://www.solidot.org/story?sid=52906	46440
+互联网上的假新闻或低质量的新闻如何流行起来的？上海应用技术大学的 Xiaoyan Qiu 和同事在《Nature Human Behavior》期刊上发表一项<a href="http://nature.com/articles/doi:10.1038/s41562-017-0132" target="_blank"><u>研究</u></a>， <a href="https://motherboard.vice.com/en_us/article/mbj8gq/study-pins-fake-news-plague-on-limited-attention-spans-information-overload" target="_blank"><u>认为</u></a>假新闻的泛滥与有限的注意广度和信息过载相关。在一个理想化的自由市场，高质量的产品被认为将会脱颖而出。以新闻行业为例，也就是高质量的新闻将会排斥低质量的新闻。但自由市场的支持者并没有预见到今天的互联网和社交媒体对新闻传播的影响。研究人员利用简单的模型衡量了 meme 的质量和流行度，以及注意力和信息过载之间的关系。他们发现，注意广度和信息过载推动了市场辨别力的退化，导致了信息质量和流行度之间呈现了一个弱的相关性。低质量的新闻更可能在社交媒体上得到病毒式传播。

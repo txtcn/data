@@ -1,0 +1,52 @@
+➜小巧高效的C#开源JSON解析器
+https://www.solidot.org/story?sid=56097	6605
+匿名读者 写道 <i>"
+<a href="https://github.com/scottcgi/MojoUnityJson" target="_blank">MojoUnityJson</a> 是使用 C# 实现的 JSON 解析器 ，算法思路来自于游戏引擎 Mojoc 的 C 语言实现<span style="box-sizing: border-box; cursor: pointer;"><a href="https://github.com/scottcgi/Mojoc/blob/master/Engine/Toolkit/Utils/Json.h" target="_blank">Json.h</a></span>。借助 C# 的类库，可以比 C 的实现更加的简洁和全面，尤其是处理 Unicode 转义字符(\u开头)的解析，C# 的 StringBuilder 本身就支持了 Unicode 码点(code point)。
+<p></p>
+MojoUnityJson 使用递归下降的解析模式，核心解析代码只有 450 行（去掉空行可能只有300多行），支持标准的 JSON 格式。算法实现力求简洁明了，用最直接最快速的方法达到目的，没有复杂的概念和模式。除了解析 JSON，还提供了一组方便直观的 API 来访问 JSON 数据，整体实现只有一个文件，仅依赖 System.Collections.Generic，System.Text，System&nbsp;三个命名空间，MojoUnityJson 可以很容易的嵌入到其它项目里使用。
+"</i>
+➜Fallout: New California beta 版释出
+https://www.solidot.org/story?sid=56098	13320
+在长达 9 年的开发之后，《Fallout: Project Brazil》 <a href="http://www.moddb.com/mods/falloutprojectbrazil/news/fallout-new-california-state-of-the-mod-for-march-2018" target="_blank"><u>正式释出了 Beta 版本</u></a>。Project Brazil 是游戏粉丝为《辐射:新维加斯》制作的非官方前传故事 Mod，其开发始于游戏在 2010 年发售之后，去年正式命名为《Fallout: New California》。故事始于加州圣贝纳迪诺的 18 号避难所，玩家将扮演一位监工的养子。该 Mod 规模相当庞大，相当于《辐射3》和《新维加斯》的四分之一，《辐射3》有 4 万行对白，而《新维加斯》有 6.5 万行对白，《New California》则有 1.4 万行语音对白，对于一个完全由志愿者开发的项目而言已经是非常惊人了。游戏采用分支叙事，玩家一开始就需要做出决定，然后就进入到两个不同的分支。
+➜诺斯洛普 · 格鲁门被认为导致了 Zuma 卫星发射失败
+https://www.solidot.org/story?sid=56099	13709
+SpaceX 在今年 1 月初发射了神秘的间谍卫星 Zuma，该卫星由诺斯洛普·格鲁门公司制造，造价据信高达 35 亿美元。火箭运行正常，SpaceX 甚至成功回收了第一级，但卫星被认为没有进入轨道，坠落回了地面。SpaceX 否认发射失败错在它。WSJ <a href="https://www.wsj.com/articles/probes-point-to-northrop-grumman-errors-in-january-spy-satellite-failure-1523220500" target="_blank"><u>报道称（付费墙）</u></a>，两项内部调查都认为造成发射失败的原因在于诺斯洛普的卫星支架。卫星支架将卫星和火箭上升级连接起来，是将卫星部署到轨道的关键部分。组成调查小组的行业官员称，相比其它国家安全卫星，Zuma 受到国会的监管较少。
+➜The Erotic Review 网站因 SESTA 法屏蔽美国网民
+https://www.solidot.org/story?sid=56100	17590
+美国国会上个月通过了 Stop Enabling Sex Traffickers Act bill(SESTA)，特朗普预计会很快签署该法规使其正式成为法律。SESTA 将使得起诉有色情内容的网站变得更为容易，即使性工作者并非是性剥削的受害者。在国会通过 SESTA 之后，分类广告网站 Craigslist 移除了 Personals 栏目，Reddit 移除了多个色情相关的子频道，Backpage 网站则遭到执法部门的扣押，公司高管遭到逮捕。现在允许用户对性工作者进行评价的 The Erotic Review (TER)决定完全<a href="https://arstechnica.com/tech-policy/2018/04/erotic-review-blocks-us-internet-users-to-prepare-for-government-crackdown/#p3" target="_blank"><u>屏蔽了</u></a>美国 IP 地址的访问。网站在<a href="https://www.theeroticreview.com/FOSTAfaq.asp" target="_blank"><u>声明</u></a>中称它需要在 SESTA 生效时遵守法规。美国用户仍然可以通过 VPN 等方法访问 TER。
+➜净网卫士被发现明文传输收集的数据
+https://www.solidot.org/story?sid=56101	19058
+<div align="center"><img src="//img.solidot.org/0/585/li8imscaDAyR.png" width="400" height="406" align=""><br>
+</div>
+<br>
+新疆去年要求居民在手机上安装净网卫士 APP。官方称，该 APP 能自动检测暴恐和非法宗教视频、图像、电子书和文档。用户需要删除被发现的内容否则将面临拘留 10 天的惩罚。Open Technology Fund <a href="https://www.opentech.fund/article/app-targeting-uyghur-population-censors-content-lacks-basic-security" target="_blank"><u>资助了</u></a>第三方研究人员<a href="https://motherboard.vice.com/en_us/article/ne94dg/jingwang-app-no-encryption-china-force-install-urumqi-xinjiang" target="_blank"><u>去分析净网卫士</u></a>，结果发现它包含了  47,000 个文件的哈希，能对发现的图像文件列表截图，会发送手机号码、设备型号、MAC 地址、IMEI 号码，以及外部存储设备上发现的任何文件元数据。研究人员发现，净网卫士对收集的数据没有任何加密就明文传输出去。应用的更新也没有任何数字签名，意味着它可以在设备不知情下替换内容。该应用被认为不安全，似乎没有兴趣保护公民的信息。
+➜沃兹关闭了他的 Facebook 账号
+https://www.solidot.org/story?sid=56102	25963
+苹果联合创始人沃兹（Steve Wozniak）<a href="https://arstechnica.com/tech-policy/2018/04/steve-wozniak-leaves-facebook-the-profits-are-all-based-on-the-users-info/" target="_blank"><u>关闭了</u></a>他的 Facebook 账号。在 Facebook CEO 扎克伯格（Mark Zuckerberg）周一到国会作证前，沃兹对他在社交网络上的粉丝宣布了关闭账号的消息，称 Facebook 的利润来自用户信息，而用户则得不到一分一毫，苹果通过提供出色产品赚钱，而对 Facebook 来说，你就是产品。沃兹称 Facebook 给他带来的消极面超过了积极面。在剑桥分析的丑闻曝光之后，Facebook 面临着强大的公众压力。
+➜最辣的辣椒能扰乱你的大脑，引发霹雳性头痛
+https://www.solidot.org/story?sid=56103	27918
+根据吉尼斯纪录，世界最辣的辣椒是卡罗莱纳死神辣椒（Carolina Reaper），2017 年的记录显示其辣度为 1,641,183 SHU(史高维尔指标)。史高维尔指标（Scoville Scale）是 1912 年美国化学家韦伯·史高维尔所制订的度量辣椒素含量的一项指标。相比之下，墨西哥胡椒辣度在 2,500 到 8,000 SHU 之间，而断魂椒则超过 800,000 SHU。据《BMJ Case Reports》期刊报告的<a href="http://casereports.bmj.com/content/2018/bcr-2017-224085" target="_blank"><u>一个病例</u></a>，吃最辣的辣椒并不只是让你的嘴发麻和起泡，它还会<a href="https://arstechnica.com/science/2018/04/eating-worlds-hottest-pepper-sparks-brain-disorder-thunderclap-headaches/" target="_blank"><u>引发大脑紊乱和霹雳性头痛</u></a>。一名 34 岁的男子参加了吃辣椒比赛，设法吞下了卡罗莱纳死神辣椒。在吞下之下，他就开始出现干呕，颈部和头部出现疼痛。接下来几天，他至少两次遭遇了霹雳性头痛。疼痛是如此剧烈以至于他被送去急救。但医生一开始没有发现任何问题。对大脑血管仔细扫描后，医生诊断他的症状属于可逆性脑血管收缩综合征，一种罕见的由于脑部血管收缩导致的脑血管疾病。
+➜ZFS on Linux 发现数据损失问题
+https://www.solidot.org/story?sid=56104	29244
+上个月发布的文件系统 ZFS on Linux 0.7.7 <a href="https://github.com/zfsonlinux/zfs/issues/7401" target="_blank"><u>发现了数据损失 bug</u></a>。当用户尝试拷贝一个包含大量文件（比如一万个文件）的文件夹时产生了文件系统已满没有空间的错误信息，而目标目录中的文件数量被发现少了数千个。一些人建议回滚到旧版本 0.7.6，但在 bug 报告仅仅三天之后，开发者就释出了修改该问题的 0.7.8 版，<a href="https://www.theregister.co.uk/2018/04/10/zfs_on_linux_data_loss_fixed/" target="_blank"><u>反应非常迅速</u></a>。
+➜中国学校有必要建立反性骚扰制度
+https://www.solidot.org/story?sid=56105	30619
+自 4 月 5 日开始，北大 95 级校友李悠悠的<a href="http://www.bbc.com/zhongwen/simp/chinese-news-43708415" target="_blank"><u>指控</u></a>让一桩 20 年前的旧事暴露在聚光灯下，并在中国互联网上引发一波对于校园两性伦理与法律问题的讨论热潮。李悠悠<a href="https://cn.nytimes.com/china/20180410/china-metoo-gao-yan/" target="_blank"><u>举报</u></a>曾在北大中文系任教、目前的 “长江学者” 沈阳教授曾性侵其同学高岩，导致高岩自杀。尽管在各方介入的情况下事实碎片正在不断浮现，但 20 年前的旧事，要重新还原所有真相已经不可能，同时嫌疑人责任的认定还需走严格的正式程序。然而无论如何，此事以及近年来不断出现的类似事件，的确给中国校园的性骚扰问题敲响了警钟。如何应对校园性骚扰与性侵问题？一个直觉的反应是展开<a href="http://www.ftchinese.com/story/001077072?full=y" target="_blank"><u>相应的机制建设</u></a>。据报道，北京大学近期也开会讨论反性骚扰制度建设。这个直觉的反应也是正确的做法。所谓机制建设可以从两方面着手；一方面是设立一定的机构来听取学生对于教师性骚扰与性侵指控的举报，并对所反映的情况进行调查和处理；另一方面是对教师与学生之间的情感与恋爱关系进行一定的干预和管理，禁止或者限制所谓的 “师生恋”。
+➜LSD 对先天失明者引发了类似联觉的体验
+https://www.solidot.org/story?sid=56106	32370
+根据发表在《Consciousness and Cognition》期刊上的<a href="https://www.sciencedirect.com/science/article/pii/S1053810017305743" target="_blank"><u>案例研究</u></a>，LSD 对先天失明者<a href="http://www.psypost.org/2018/04/lsd-causes-congenitally-blind-man-experience-synesthesia-like-hallucinations-50999" target="_blank"><u>激发了</u></a>类似联觉的体验。联觉是一个人体验到感觉重叠的现象，比如品尝颜色或看到了声音。这篇论文是对先天失明者使用 LSD 的首次定性评估。研究对象是一名早产儿，因为出生时氧气超饱和而先天失明。他喜爱音乐，因此成为了一名专业的键盘手和歌手，他定期服用 LSD 等致幻药物。LSD 从未在他身上引发幻视，但他声称致幻药物放大了他的声觉、触觉和嗅觉体验。他最终停止服用致幻药物是因为他觉得自己变得太内向和偏执了。
+➜8.5 万年前的手指骨使人类走出非洲时间复杂化
+https://www.solidot.org/story?sid=56107	40683
+现代人类何时走出非洲仍然颇受争议，广泛接受的时间是六万年前。然而在沙特发现 8.5 万年前的现代人类手指骨让走出非洲时间<a href="http://www.bbc.co.uk/news/science-environment-43700703" target="_blank"><u>再次变得复杂起来</u></a>。<a href="http://nature.com/articles/doi:10.1038/s41559-018-0518-2" target="_blank"><u>研究报告</u></a>发表在《Nature Ecology and Evolution》期刊上。研究人员在沙特的 Al Wusta 发掘出一个中间指骨，他们使用 CT 扫描构建了骨头的 3D 模型，与同时期的人类和尼安德特人骨头进行对比，发现它最接近现代人类。他们使用了两种年代测定技术测定该地其它材料的时间。在 8.5 万年前，沙特的气候与今天差异巨大。季风雨在当地创造出了很多湖泊，居住在这里的动物有河马，以及野牛和羚羊。
+➜葡萄牙可再生能源发电量超过全国需求
+https://www.solidot.org/story?sid=56108	42046
+葡萄牙电网运营商 REN <a href="https://reneweconomy.com.au/portugal-reaches-100-renewables-ends-fossil-fuel-subsidies-32820/" target="_blank"><u>透露</u></a>，上个月可再生能源的发电量超过全国电网需求：可更新能量输出达到了 4,812GWh，超过了全国的总电力需求 4,647GWh。其中水电占 55%，风电占 42%。而水电发电量大增要归功于四倍于月平均的降雨量。葡萄牙政府同时宣布了暂停对火电站保障电力供应的年度补贴。葡萄牙可再生能源协会在一份报告中预测，到 2040 年可再生能源将能确保全国全年的电力供应。
+➜区块链驱动的网站吸引 YouTube 和 Facebook 的内容创造者
+https://www.solidot.org/story?sid=56109	43267
+Peter “Furious Pete” Czerwinski 在 YouTube 上有近 500 万订阅者，但粉丝们无法再看到他的新视频。他在两个月前转移到了 <a href="https://d.tube/#!/s/furious pete" itemprop="StoryLink" itemscope="itemscope" target="_blank" rel="nofollow noopener">DTube</a>。DTube 类似 YouTube，但视频创造者依靠的是捐款而不是广告收入，而版主也很少审查潜在冒犯人的材料。当 YouTube 不得不在审查广告商不喜欢的冒犯视频上开始采取更强硬的立场，越来越多的内容创造者<a href="https://www.bloomberg.com/news/articles/2018-04-10/youtube-and-facebook-are-losing-creators-to-blockchain-powered-rivals" target="_blank"><u>转移到 DTube 之类的网站</u></a>以避免受到约束。 DTube 运行在区块链网络 Steem 上，用户可以以数字令牌的形式向作者付费和评论。 YouTube 以及 Facebook 和 Twitter 这三大广告驱动的网站最近都宣布禁止数字货币相关的广告，以远离潜在欺骗带来的法律责任。而不那么中心化的平台将更多的权利和隐私掌握在内容创造者和用户手中。两年历史的 Steem 社交网络 <a href="https://steemit.com/" itemprop="StoryLink" itemscope="itemscope" target="_blank" rel="nofollow noopener">Steemit</a> 有约一百万注册用户，而过去一个月就增加了 12 万。另一个竞争对手  <a href="https://lbry.io/" itemprop="StoryLink" itemscope="itemscope" target="_blank" rel="nofollow noopener">LBRY </a>则有 60 万注册用户。这些数据当然与 Facebook 的 20 亿月活跃用户相去甚远。但内容创造者称他们在这些网站的收入（数字令牌）上并不比 YouTube 或&nbsp; Facebook 差，甚至更多。
+➜中国科学家通过化学方法制备干细胞
+https://www.solidot.org/story?sid=56110	44888
+中科院广州生物医药与健康研究院研究院裴端卿及其团队，经过 5 年时间，研究通过化学方式，<a href="http://www.bjnews.com.cn/news/2018/04/10/482535.html" target="_blank"><u>诱导</u></a>细胞回到年轻状态的方法。2012 年诺贝尔生理医学奖得主，日本生物学家山中伸弥，曾于 2006 年带领研究团队，发现诱导小鼠细胞 “变身” 为胚胎干细胞的方法。山中伸弥的方法，是通过病毒载体将 4 个基因导入小鼠的成体细胞，进而使之转变为胚胎干细胞。此方法得到的干细胞，可以避免免疫排斥问题，用以制备自体来源的各种组织和器官，被业界称为 “山中伸弥方法”，导入的 4 个基因，则被称为 “山中伸弥因子”。不过“山中伸弥方法” 利用病毒载体进行基因运送，具有潜在致癌隐患，临床应用或有风险。此后，学界利用化学小分子替代 “山中伸弥因子”，但依然存在步骤多、时间长、效率低、机理不清楚等缺点。中科院研究人员发现，关键小分子 Brdu，可以直接作用于 DNA 结构本身，进而调节染色质密码状态。
+➜APP 找货平台逐渐改变货车司机的生活
+https://www.solidot.org/story?sid=56111	46036
+贝恩资本的研究显示，2017 年中国公路货运整体周转量已达到 610 百亿吨公里，市场规模超过 5 万亿人民币，已成为世界第一大公路运输市场。尽管运量巨大，传统的货源信息往往通过各个物流园的信息部发布，不仅十分零散，集中度也低，大大制约了公路物流效率的提高。近年来出现的互联网组货平台<a href="http://www.ftchinese.com/story/001077050?full=y" target="_blank"><u>有效提高了车货匹配的效率</u></a>，降低了货车司机的空载率。来自货车帮的报告显示，2017 年货车司机的信息化接受比例提升了 56.5%，但总体仍不到 50%，网络组货的汽车空载率大约在 13.65%，远低于行内的平均水平。目前，在中国大型车队占比仍十分低，货车司机 90% 都是个体户，而在美国，个体司机的数量仅占 40%。
