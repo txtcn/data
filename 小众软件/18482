@@ -1,0 +1,16 @@
+➜ODeus ASIO Link Pro – 原作者去世，后继者发布破解补丁，感伤的 50 澳元软件的故事
+https://www.appinn.com/odeus-asio-link-pro/	8700
+<p><strong><a href="https://www.appinn.com/odeus-asio-link-pro/" class="rank-math-link">ASIO Link</a></strong> 原本是价值 50 澳元的收费软件，2016-2017 的某个时间点，原作者去世，软件由于缺乏维护而无法购买和激活。原作者的侄子/外甥继承了软件的代码，但没有能力继续维护，于是在 <a href="https://give.academy/posts/2018/03/02/AsioLinkPro/" class="rank-math-link">这位作者</a> 的帮助下发布了一个破解补丁，以供找不到替代品的用户继续使用。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202008/odeus-asio-link-pro.jpg!o" alt=""/></figure></div>
+<p>来自<a href="https://meta.appinn.net/t/odeus-asio-link-pro/18147" class="rank-math-link">发现频道</a>，@<strong><a href="https://meta.appinn.net/u/feeshy">feeshy</a></strong> 的推荐。</p>
+<p>ODeus ASIO Link Pro 是一款 64 进 64 出的 ASIO 虚拟调音台，青小蛙并没有研究这个软件，而是被这个故事感动。以下为 @feeshy 原文：</p>
+<hr class="wp-block-separator"/>
+<p>ASIO Link Pro 是一个打破 ASIO 驱动的“独占性”的音频路由工具。</p>
+<p>可以让使用 WDM 驱动的软件与使用 ASIO 驱动的软件同时发声。配合音频宿主软件和插件，便能跨软件实时处理音频信号，实现直播音频的实时增强、录屏音频的同步处理、实时演奏录音等有低延迟需求的用途。</p>
+<p>还可以用来让多个使用 ASIO 驱动的软件共享同一块 ASIO 声卡，甚至可以同时使用多个 ASIO 声卡！</p>
+<ul><li>以零延迟路由音频信号</li><li>32 进 32 出 WDM 音频通道（输入、输出各 4 个 7.1 声道的虚拟声卡）</li><li>64 进 64 出 ASIO 音频通道</li><li>16 进 16 出网络音频通道</li><li>需要一个支持 ASIO 驱动的声卡（如果声卡不支持，大概也可以用 <a href="http://www.asio4all.org/" class="rank-math-link">ASIO4All</a> 来虚拟一个）</li></ul>
+<hr class="wp-block-separator"/>
+<p>之后，@<strong>feeshy</strong> 还讲了另外一个故事（青小蛙也记得这个故事），去年也见过国内有类似的故事，结局要更美满一些。</p>
+<p>一个脑瘫女孩十多年一直在用一款鼠标输入法与世界交流，换电脑之后发现软件无法激活了，原来是作者已经去世很多年了。后来有热心黑客看到，就逆向帮助女孩破解了软件。再后来作者的哥哥说要把破解版开放下载。最后搜狗过来接力，把这个功能重构到<a href="https://pinyin.sogou.com/diandian/" class="rank-math-link">搜狗输入法</a>里面了，以后应该就一直由搜狗维护了</p>
+<p>&#8230;</p>
+<p>青小蛙还想到了前段时间，Github 将很多用户的代码放到了北极，并授予这些开发者 <strong>Arctic Code Vault Contributor</strong> 的称号的故事，很多美好的故事。</p>
