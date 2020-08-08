@@ -197,3 +197,168 @@ https://www.yystv.cn/p/6898	15600
 <p class="picbox">
 <img src="https://alioss.yystv.cn/doc/6898/cf6d4ffc6efa9d212ccc811d0b6d1201.jpeg_mw680water" width="727" height="718" title="一张紧贴皮肤拍摄的“奈子近照”" align="" alt="一张紧贴皮肤拍摄的“奈子近照”" /> <span style="font-size:13px;color:#B2B2B2;">一张紧贴皮肤拍摄的“奈子近照”</span>
 </p>
+➜有人在《过山车大亨2》里做了个6.6*10^19758年才能走完的迷宫
+https://www.yystv.cn/p/6899	59400
+<blockquote class="doc-blockquote">
+<p class="picbox" style="text-align:left;">
+<span><strong>大道至简。</strong></span>
+</p>
+</blockquote>
+<div class="rich_media_content" id="js_content">
+<p>
+进入正文之前，让我们先明确标题里的两个概念。
+</p>
+<p>
+首先，6.6*10^19758年是多长一段时间呢？
+</p>
+<p>
+如果你把它的0拆开，码进WORD，这个数字可以堆满6页纸。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/4d7f245e3911488aa50831352a3e05fd.png_mw680water" width="521" height="552" />
+</p>
+<p>
+以宇宙大爆炸理论为根据，NASA估算的宇宙年龄为 (1.373 ± 0.012) * 10^10年，把0拆开来约等于13,730,000,000——连6.6*10^19758的零头都抵不上。
+</p>
+<p>
+然后是第二个问题——《过山车大亨2》（RollerCoaster Tycoon 2，RCT2）是怎样一款游戏呢？
+</p>
+<p>
+该作正式发行于2002年，玩法以高自由度的游乐园建设为主。后来有老玩家在其源代码的基础上进行开源，为其添加了诸多更适应现代玩家的新功能（比如最最基本的支持任意分辨率）。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/140e1111d5deb8bb40319fcc16a2ba40.png_mw680water" width="689" height="689" title="基于RCT2源代码进行开源的OpenRCT2" align="" alt="基于RCT2源代码进行开源的OpenRCT2" /> <span style="font-size:12px;color:#999999;">基于RCT2源代码进行开源的OpenRCT2</span>
+</p>
+<p>
+正因如此，《过山车大亨2》不仅没有被时代所抛弃，反而一直拥有一小撮“极尽钻研之事”的拥趸。
+</p>
+<p>
+2017年，曾有人在游戏中设计出一个极复杂的迷宫，第一个走出该迷宫的游客花了263游戏年。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/bf649d80de6638d7dce7e46e5af06d73.jpeg_mw680water" width="702" height="702" title="迷宫俯视图，建议放大欣赏" align="" alt="迷宫俯视图，建议放大欣赏" /> <span style="font-size:12px;color:#999999;">迷宫俯视图，建议放大欣赏</span>
+</p>
+<p>
+去年，一位名为马塞尔·沃斯（Marcel Vos）的玩家<a href="https://www.yystv.cn/p/5438" target="_blank">设计出一条过山车轨道</a>，游客坐完全程需要440456个游戏年，转换成现实时间有45年之久。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/51cb4d056edbecf9d1aa175eff5be73a.png_mw680water" width="1080" height="476" />
+</p>
+<p>
+而我们今天的主角，这个需要游客花费6.6*10^19758现实年才能走出的迷宫，正出自马赛尔之手——与这个庞大到已经令人丧失具体概念的数字相比，他制作该迷宫所耗费的时间，满打满算，不过6个小时。
+</p>
+<p>
+不用疑惑，只要看到这个迷宫的总体样式，你就能明白为什么“只需6小时”。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/eabaa4c46296f57d90ea55732c852c4a.png_mw680water" width="775" height="437" title="考虑到全景图难以看清，下面还有局部图" align="" alt="考虑到全景图难以看清，下面还有局部图" /> <span style="font-size:12px;color:#999999;">考虑到全景图难以看清，下面还有局部图</span>
+</p>
+<p>
+因为实际上，这个迷宫不仅完全不复杂，反而简单到了几乎称不上“迷宫”的地步，它纯粹就是无数个“王”字结构的叠加。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/677cb886f854b661a8a700c1b7a436b8.png_mw680water" width="560" height="315" />
+</p>
+<p>
+而游戏中的游客之所以会被这样一个迷宫困住，主要是因为《过山车大亨2》的角色寻路机制。
+</p>
+<p>
+让我们把迷宫的一小节取出来为例。在这款游戏中，角色每移动到一个交叉点，就会随机选取前后左右中的某个方向进行移动。下面这张图里，假设角色随机选取到的方向是“右”，因为撞墙无法通行，于是开始第二次判定。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/db659bbb9ed11bbc8ce53a87f48b5678.png_mw680water" width="560" height="315" />
+</p>
+<p>
+第二次判定的方向是第一次的顺时针90度，也就是向后，但这是角色刚来的方向，所以也不行（判定过一圈没有其他路才能回头）。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/2ea81a539c3d79e46a74398d005ac5de.png_mw680water" width="560" height="315" />
+</p>
+<p>
+顺时针再转90度，这次即没有撞墙又不是“回头路”，所以成功，角色向左移动。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/849e7ab8e01c246726c8022003982405.png_mw680water" width="560" height="315" />
+</p>
+<p>
+根据这个“顺时针90度再判定”的算法设计，不难发现，除了第一次就选对“前”的方向外，一旦选中“左”、“右”、“后”这三个方向，都将导致角色最终向左移动。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/cf2d1a6354ab3e8861edfb5a0794d083.png_mw680water" width="560" height="315" />
+</p>
+<p>
+而一旦走进左边的死路，再回到交叉点，角色又会重新面临一半一半的选择——随机到前和右，则返回最初原点，随机到后和左，则正常前进。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/9bee6432b93d5fdb993e0661a4465f4d.png_mw680water" width="560" height="315" />
+</p>
+<p>
+这样一来，角色路过每个交叉点开始往回走的概率则是37.5%。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/f2d7008b56250b7590dccfbcb758a4d2.png_mw680water" width="1080" height="608" />
+</p>
+<p>
+接下来倒个方向。如果角色在前进一段距离后中了37.5%的概率开始往回走，依旧用顺时针进行判定，那么他只有在第一次随机到“右”的方向时才会进入死路，否则就会继续往回走。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/41ef9de78418f72c7e8e8063c6cfd4e1.png_mw680water" width="1080" height="552" />
+</p>
+<p>
+而在进入死路之后，角色依旧只有50%的概率回到前进方向。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/c2b93159b9ded14ea5af24f775c073cb.png_mw680water" width="1080" height="550" />
+</p>
+<p>
+也就是说，一旦走了回头路，在接下来的每个交叉口，角色只有12.5%的概率能够重回正轨。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/0c5d1cf6994a945968815299f894830a.png_mw680water" width="972" height="509" />
+</p>
+<p>
+总结下来，《过山车大亨2》中的游客在这个毫无设计含量的迷宫中闯关时，每过一个交叉口就有37.5%的概率回头，一旦回头，每个路口又只有12.5%的概率纠正错误。
+</p>
+<p>
+马赛尔分别用5、6、7、8、9、10块游戏方格做了6个迷你迷宫，并在此基础上进行对照实验。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/c5d3bc0d96dc89dfbeae323c7495b136.gif_mw680" width="489" height="263" />
+</p>
+<p>
+结果显示，现实世界的2000小时内，共有14178位游客攻略了5格迷宫，只有13位游客攻略了10格迷宫。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/68a20d564ce567a9353927a2e5a2931d.png_mw680water" width="560" height="315" />
+</p>
+<p>
+这13位游客平均花费了游戏中的1540年，现实世界中的1382.99小时，大约57天。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/8fd504feb261bcbe1747b72b374421f3.png_mw680water" width="560" height="315" />
+</p>
+<p>
+好了，接下来已知《过山车大亨2》的最大面积为256x256方格，结合素质教育学过的“指数爆炸”理论，再复习一次下面这张全景图，你大概就能理解6.6*10^19758这个夸张的数字到底是怎么来的了。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/8f0a7407fd614f2d79cd738e2224ab4b.jpeg_mw680water" width="487" height="274" />
+</p>
+<p>
+另外还值得一提的是，马赛尔的迷宫发布不到两天，OpenRCT2的开发人员就注意到了这个不算问题的问题。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/203047ac2497f857fad0a7084d8b058f.png_mw680water" width="857" height="97" />
+</p>
+<p>
+如今游戏角色的行动机制已经更改，他们不再遵循顺时针依序判定，而是以相等的概率选择前进方向。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/11c2fb1dc982291cc009e25106237062.png_mw680water" width="560" height="315" />
+</p>
+<p>
+也就是说，根据新的角色移动算法，一位游客走出该迷宫所需的时间一下锐减到了8.1*10^2833年。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/6899/4f2b67e99981a01ac6145f8e11b34324.png_mw680water" width="562" height="317" title="太好了，有希望了呢（不）" align="" alt="太好了，有希望了呢（不）" /> <span style="color:#999999;font-size:12px;">太好了，有希望了呢（不）</span>
+</p>
+</div>
