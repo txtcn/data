@@ -1,0 +1,13 @@
+➜防火墙开始屏蔽 ESNI
+https://www.solidot.org/story?sid=65185	20588
+防火墙<a href="https://gfw.report/blog/gfw_esni_blocking/zh/" target="_blank">被发现开始屏蔽</a> ESNI（加密服务器名称指示）。TLS1.3 引入了 ESNI（尚未成为正式规格），用加密的 SNI 阻止中间人查看客户端要访问的特定网站。因为不知道用户使用 ESNI 访问的网站，审查者要么不封锁任何 ESNI 连接，要么封锁所有的 ESNI 连接。防火墙选择了后者。测试发现，防火墙通过丢弃从客户端到服务器的数据包来阻止 ESNI 连接。此外，ESNI 封锁不仅会发生在 443 端口，也会发生在 1 到 65535 的所有端口。在阻断 ESNI 握手后，防火墙会继续阻断与（源IP，目标IP，目标端口) 3 元组相关的任何连接一段时间。<p>
+➜Intel泄漏材料对于自由固件社区无益
+https://www.solidot.org/story?sid=65184	20919
+<a href="http://https://github.com/hardenedlinux">HardenedLinux</a> 写道<i> "这次<a href="https://www.solidot.org/story?sid=65176">Intel泄漏内容</a>除了少量来自牙膏厂的变态NDA客户条款的篇幅和一些未向OEM和其他合作厂商分享的内容，大部分内容包括源代码和二进制blobs都可以在和牙膏厂签署NDA下分享给下游厂商，全球拥有这些材料的厂商不在少数，即使天朝有这些材料的厂商不下于20家，所以大家不必高潮，至于后门基本是自媒体的自high，即使bfm和其他模块的调试接口达到DCI的利用效果也有严格限制，在高防御节点上无法利用，另外，bootguard/BiosGuard等可信链条构建的开箱和调试工具是不错，但这些工具已经存在于某些团队在绕开牙膏厂NDA版本之外的自己实现的内部开源版本所以也并不算猎奇，对于<a href="https://github.com/hardenedlinux/firmware-anatomy/blob/master/hack_ME/me_info.md" target="_blank">Intel CSME</a>通过泄露材料也看到了在CSMEv12之后的部分信息，这份材料理论上可以帮助那些没有和牙膏厂签署NDA的组织（比如自由固件项目）补全加固方案，至于是否有必要（注：技术当然可行，KBL是流行机型）自由固件使用泄漏的ACM（也需要二进制审计）进行基于<a href="https://github.com/hardenedlinux/firmware-anatomy/blob/master/hack_ME/txt.md" target="_blank">TXT DRTM的可信计算方案</a>的加固，1) 存在法律风险 2) 通用方案的威胁模型中没有必要性 3) 高防需求有更好的替代方案。虽然泄漏材料并不能直接推动自由固件社区的发展，但这么多材料对于没有和牙膏厂NDA的个人来说还是一个大宝藏，也在一定程度上打破了NDA造成的信息不对称：
+"Cross the cyber
+Burn the NDA
+Only transparency is bliss
+Bend a twisted rule
+Break the asymmetry
+Put all progress between chaos and order"
+One man's trash is another man's treasure. Happy hunting!"</i><p>
