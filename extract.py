@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 
-import zd
-from tqdm import tqdm
-from os.path import dirname, abspath, join
-from os import walk, cpu_count
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from fire import Fire
-from html import unescape
-from pathlib import Path
-import re
-from tqdm import tqdm
 from hashlib import blake2b
+from os import makedirs
+from html import unescape
+from os import walk, cpu_count
+from os.path import dirname, abspath, join, exists
+from pathlib import Path
+from tqdm import tqdm
+import re
+import zd
 
 RE_N = re.compile("</(p|br|li)>", re.DOTALL)
 RE_TAG = re.compile(r'<[^>]+>', re.DOTALL)
@@ -34,13 +34,26 @@ class Exist:
 EXIST = Exist()
 
 
-def export(root, outfile, file_li):
-  with zd.open(outfile, "w", level=19) as out:
-    for fname in file_li:
-      fpath = join(root, str(fname))
-      day = fname * 86400
-      with open(fpath) as f:
-        for post in f.read()[1:].split(ARROW):
+def export(pbar, root, outdir, file_li):
+  for fname in file_li:
+    pbar.update(1)
+    day = fname * 86400
+    fname = str(fname)
+    fpath = join(root, fname)
+    outpath = join(outdir, fname) + "."
+    with open(fpath, "rb") as f:
+      txt = f.read()
+
+      b2bpath = outpath + "bzb"
+      b2b = blake2b(txt).digest()
+      if exists(b2bpath):
+        with open(b2bpath, "rb") as b:
+          if b.read() == b2b:
+            continue
+
+      txt = txt.decode('utf8', 'ignore')[1:]
+      with zd.open(outpath + "zstd", "w", level=19) as out:
+        for post in txt.split(ARROW):
           r = post.split("\n", 2)
           title, url_time = r[:2]
           if len(r) == 3:
@@ -66,31 +79,40 @@ def export(root, outfile, file_li):
               )
               out.write(unescape("\n".join(txt)) + "\n")
 
+      with open(b2bpath, "wb") as out:
+        out.write(b2b)
+
 
 @Fire
-def main(outpath):
+def main(outpath="/share/txt/cn"):
 
   dirpath = abspath(dirname(__file__))
 
-  with ThreadPoolExecutor(max_workers=cpu_count()) as executor:
-    todo = {}
-    for root, dir_li, file_li in walk(dirpath):
-      now = root[len(dirpath) + 1:]
-      if not now or now[0] in "._":
-        continue
+  total = 0
+  with tqdm(total=total) as pbar:
+    with ThreadPoolExecutor(max_workers=cpu_count()) as executor:
+      todo = {}
+      for root, dir_li, file_li in walk(dirpath):
+        now = root[len(dirpath) + 1:]
+        if not now or now[0] in "._":
+          continue
 
-      file_li = sorted(map(int, (i for i in file_li if i.isdigit())))
-      if not file_li:
-        continue
-      outfile = join(outpath, now) + ".zd"
-      Path(dirname(outfile)).mkdir(parents=True, exist_ok=True)
-      todo[executor.submit(export, root, outfile, file_li)] = outfile
+        file_li = sorted(
+          map(int, (i for i in file_li if i.isdigit()))
+        )
+        if not file_li:
+          continue
+        outdir = join(outpath, now)
+        makedirs(outdir, exist_ok=True)
+        total += len(file_li)
+        # Path(outdir).mkdir(parents=True, exist_ok=True)
+        todo[executor.submit(export, pbar, root, outdir,
+                             file_li)] = outdir
+      pbar.total = total
 
-    with tqdm(total=len(todo)) as pbar:
       for future in as_completed(todo):
         filepath = todo[future]
         print(filepath)
-        pbar.update(1)
         try:
           future.result()
         except Exception as exc:
