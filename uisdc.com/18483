@@ -1,53 +1,470 @@
+➜用一个落地项目，帮你掌握Sketch组件的制作思路
+https://www.uisdc.com/sketch-component-production	58108
+<p>相信大家对于sketch组件并不陌生，作为sketch官方推出的功能，相对比较久了，不知大家是否还停留在只会建立单个组件，不会组合使用的情况。我最近在项目中也在做这个组件的事情，接下来会以落地项目、实际案例和大家分享组件的逻辑以及制作思路。</p>
+<h4><span class="auto_menu">了解组件的逻辑</span></h4>
+<p>我们先来简单了解一下原子设计理论（链接在文末）： 分为原子、分子、组织、模板、页面。</p>
+<p>我们重点讲一下原子、分子、组织、样式（拆分出来的）这四个。</p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383317" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-1-1.jpg" width="800" height="413" /></span></p>
+<p>△ 配图出于原子设计理论文章</p>
+<p>不熟悉原子理论设计的同学，看这篇：</p>
+<p>[link https://www.uisdc.com/atomic-design-theory]</p>
+<p><strong>1. 原子</strong></p>
+<p>原子可以作为构成用户界面的基础组成部分（无法进一步分解）称为元素。例如表文本、图形、图标、分割线等。</p>
+<p><strong>2. 分子</strong></p>
+<p>由原子按照一定的顺序和空间排列组合构成，称为小组件。例如导航栏、标签、列表等</p>
+<p><strong>3. 组织</strong></p>
+<p>由原子（元素）、分子（小组件）按照一定的顺序和空间排列组合构成，称为大组件。例如：列表流、入口模块、瀑布流等。</p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383318" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-2-1.jpg" width="1476" height="800" /></span></p>
+<p><strong>4. 样式</strong></p>
+<p>样式分为文本样式和图形样式，作用在原子上和原子配合使用。常用于文本更改属性（字重、颜色、大小、间距等）和图形更改属性（颜色、描边、投影等），在其他文章中，样式作为原子出现，我这里单独拆分出来，因为样式在稍后的组件讲解中挺重要的。</p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383319" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-3-1.jpg" width="1763" height="800" /></span></p>
+<p>小结：组织（大组件）可以同时包含分子(小组件)、原子（元素）、样式。也可以只包含分子，看大家怎么去设置组件模块。案例实操会说明。</p>
+<h4><span class="auto_menu">组件命名</span></h4>
+<p>sketch组件的命名逻辑为: 分类 / 模块 / 组织 / 分子 / 原子，命名依次是从大到小</p>
+<p>举个栗子：（太爷/爷爷/爸爸/儿子）虽然有点滑稽，不过相对比较形象。</p>
+<p>界面完整的组件命名：XX分类 / xx模块 / xx组件 / 组件状态</p>
+<p>例：掘金（分类）/专家列表（模块）/按钮（组件）/已关注（状态）这里边斜杠 &#8220;/&#8221; 根据思维导图逻辑关系用来区分父子级关系也包含嵌套关系。</p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383320" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-4-1.jpg" width="1479" height="800" /></span></p>
+<h4><span class="auto_menu">实操讲解</span></h4>
+<p>在讲解之前我们先来了解一下sketch响应布局的一些设置</p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383321" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-5-1.jpg" width="1843" height="800" /></span></p>
+<p>这里的设置分别为靠边固定(靠左固定、靠右固定、靠上固定、靠下固定)、固定尺寸(固定高度、固定宽度)，最后一个预览是我们在设置了前面两个属性之后会有个小动画演示所设置的效果。</p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383322" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-6-1.jpg" width="1500" height="452" /></span></p>
+<p>我们在创建组件的时候可以选择性赋予不同方向的属性，赋予属性之后组件内容增加或减少会根据设置的方向改变组件的宽高。只能存在一种属性或者无属性。</p>
+<p><strong>案例1</strong></p>
+<p>知识点：靠边固定、固定尺寸、赋予方向属性</p>
+<p>难点：靠边固定设置错误，拉伸会跟着改变；没设置固定高度宽度，拉伸变形</p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383323" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-7-副本.gif" width="640" height="400" /></span></p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383324" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-8-1.jpg" width="1097" height="800" /></span></p>
+<p><strong>案例2</strong></p>
+<p>知识点：标签替换、间距固定、文案换行、设置控件、无控件设置</p>
+<p>难点：组件命名不一致、不能替换；组件方向属性未设置，内容不会推移内容</p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383325" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-9-副本.gif" width="640" height="480" /></span></p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383326" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-10-副本.gif" width="640" height="480" /></span></p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383327" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-11.jpg" width="1940" height="1491" /></span></p>
+<p><strong>案例3</strong></p>
+<p>知识点：小组件逻辑、编组赋予方向属性</p>
+<p>难点：组件逻辑、方向属性设置</p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383328" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-12-副本.gif" width="640" height="400" /></span></p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383330" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-14.jpg" width="1149" height="800" /></span></p>
+<h4><span class="auto_menu">组件化的好处</span></h4>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383331" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-15.jpg" width="1200" height="556" /></span></p>
+<p><strong>1. 统一</strong></p>
+<p>在对于业务线庞大的软件，经常是多个设计师一起完成整个产品设计，不同业务线设计师需严格按照统一规范、组件去使用。提升整个产品的视觉统一与交互规则统一。</p>
+<p><strong>2. 高效</strong></p>
+<p>在前期创建组件考虑好组件逻辑，做好每一种状态。快速利用组件搭建完整页面，替换原子、分子元素。提升设计团队效率</p>
+<p><strong>3. 灵活</strong></p>
+<p>在sketch组件中设置智能布局。可灵活手动更改组件控件的高度宽度，或根据内容多少自动调整。</p>
+<p><strong>4. 复用</strong></p>
+<p>组件必定是高频复用的，通过建立完整的组件库，在以后更新迭代可以直接修改复用组件。</p>
+<p>设计团队难免出现进出，即使有成员离开或者加入，通过设计规范和组件库可以快速对接工作。复用组件避免出现新的设计师对于设计不同的认知，增加沟通成本。在做马甲包或者相同业务的产品时。可以通过页面结构、视觉规范统一和交互逻辑的复用让用户能够感知到是同一系列产品（如阿里系、腾讯系等）提升强化产品品牌感。</p>
+<p><strong>5. 组件化对于开发来说也是有很大的好处</strong></p>
+<p>组件化开发是根据功能、业务线进行代码划分，开发可以把任何的一个html 代码封装成一个组件,前提是高度复用的场景以及梳理清楚逻辑关系。（这和设计在做组件的时候是一样的）</p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383332" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-16.jpg" width="1266" height="800" /></span></p>
+<p><strong>降低软件体积包大小</strong></p>
+<p>制作常用公共功能组件和各业务复用多的组件方便调用更改，避免出现 一个同样框架的导航栏、不同业务的开发用代码重新写了一遍浪费app资源（这里对应前面讲到的分子部分,常用公共功能组件如输入框、日历、表单等)）</p>
+<p><strong>提升工作效率、减少开发成本</strong></p>
+<p>可以在保持接口不变的情况下，替换不同的组件快速完成任务需求。</p>
+<p><strong>便于后期维护</strong></p>
+<p>由于整个页面都是通过组件组合起来的，在测试出现问题的时候，可以定位问题，快速找到对应组件修改或者移除。</p>
+<p>在团队开发中，组件化带来的优势是便于协同开发（如设计多人协作完成一个项目时保证项目的统一性）。团队中每个人发挥所长维护各自业务模块的组件，对于APP来说也是一个不断打磨的过程。</p>
+<h4><span class="auto_menu">组件的扩展使用</span></h4>
+<h5>1. 组件工具及团队协作</h5>
+<p><strong>蓝湖规范云</strong></p>
+<p>目前使用较多是蓝湖规范云来进行团队协作</p>
+<p>优点是：上传便捷、拖拽使用、规范组件整理方便、自动同步更新</p>
+<p>缺点是：当不同的人上传组件后同步更新比较慢、一些样式拖到新的文件中会丢失、超过10人收费</p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383333" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-17.jpg" width="1920" height="1683" /></span></p>
+<p><strong>sketch cloud</strong></p>
+<p>个人觉得在团队协作中比蓝湖强大一些</p>
+<p>优点是：可多人协作一份文档、可查看文件历史版本，可追溯、及时更新组件（sketch右上角有提示）</p>
+<p>缺点是：个人收费比较贵，对于设计师多团队有点不友好（当然啦，土豪公司例外）</p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383334" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-18.jpg" width="1920" height="902" /></span></p>
+<h5>2. 插画组件</h5>
+<p>和页面组件一样，可以替换组件元素更改人物造型、背景等。可以快速通过组件组合成不同的插画场景。</p>
+<p><strong>Humaaans插画组件库</strong></p>
+<p>下载地址：</p>
+<p>[link https://www.uisdc.com/humaaans-diy-vector-resource]</p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383335" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-19.jpg" width="1200" height="1994" /></span></p>
+<p><strong>阿里海兔插画组件库</strong></p>
+<p>下载地址：</p>
+<p>[link https://www.uisdc.com/hitu]</p>
+<p><span class="img-zoom"><img alt="用一个落地项目，帮你掌握Sketch组件的制作思路" class="alignnone size-full wp-image-383336" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sk-20200805-20.jpg" width="863" height="2915" /></span></p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>组件化思维、组件能力是渐渐成为设计师必不可少的一项能力，对于团队来说提升效率，减少设计师的沟通成本以及项目统一性的提升。设计团队能够花更多的时间去打磨产品细节，对于开发来说，减少工作量，保证实现还原的一致性。对于公司来说节省时间人力成本。组件库要学会举一反三运用在更多的地方，期待你们发掘不说了我得去做组件了。记得点赞哟~</p>
+➜日本这个免费插画素材库，太有特色了！
+https://www.uisdc.com/chojugiga	61280
+<p>相传日本最古老的漫画「鸟兽人物戏画」（日语：鸟獣人物戏画，简称为鸟兽戏画），距今已有八百年时间，是京都高山寺代代相传的绘卷，共有甲乙丙丁四卷。内容主要反映当时社会，将动物、人物以讽刺画的形式描绘，以甲卷的青蛙、兔子和猴子最为有名，也就是你在下图看到的样貌。</p>
+<p><span class="img-zoom"><img alt="日本这个免费插画素材库，太有特色了！" class="alignnone size-full wp-image-383219" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-zy-20200804-1.jpg" width="1182" height="800" /></span></p>
+<p>本文要介绍的「ダ鸟獣戏画」是一个日本免费素材图库，主要是将「鸟兽戏画」转为向量图、再进行着色处理的专案，目前从最受欢迎的甲卷开始，如果未来还有余力会继续制作乙卷和丙卷。「ダ鸟獣戏画」将不同动物及动作行为分门别类，例如青蛙、兔子、猴子、其他动物、喜怒哀乐、工作、趣味、运动、战斗、教育、艺术、活动、背景或是物品，以毛笔绘制出来的风格相当写实也有些历史感。</p>
+<p>在「ダ鸟獣戏画」图库里收录的素材都具有各种配色组合，也有仅绘制轮廓而没有填充颜色的素材，这些图片都有适合设计师使用的 Ai、EPS、SVG向量图格式，或是一般人可以用的JPG、PNG格式。依据授权许可，在这个网站的所有素材皆可自由使用于个人或商业用途，无需标示出处，亦可进行改作或是后制处理，无论用在网页设计、线上影片、电视影片、书籍、杂志都没问题，若同时使用超过20个素材就需要联络站方取得授权。</p>
+<h4>ダ鸟獣ギ画</h4>
+<p>网站链接：<a href="https://chojugiga.com/">https://chojugiga.com/</a></p>
+<p><strong>使用教学</strong></p>
+<p>开启「ダ鸟獣戏画」网站会看到最近更新的素材图案，每个图案都有分类和名称，上方一整排图案是图片分类，如果看不懂日文没关系，从网址后面接上的英文分类名称可以知道是什么主题。</p>
+<p><span class="img-zoom"><img alt="日本这个免费插画素材库，太有特色了！" class="alignnone size-full wp-image-383220" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-zy-20200804-2.jpg" width="1213" height="800" /></span></p>
+<p>虽然很多素材看起来是黑白、只有轮廓没有上色，点击进入详细资讯页面就能找到彩色版，从下方可以切换不同的配色，跟一般免费图库一样都会标示分类和标签链接，以便找到更多相关图片。</p>
+<p>从素材页面下方「DOWNLOAD」找到不同图片格式的下载链结，包括illustrator Ai、EPS、SVG或是一般常用的PNG和JPG格式。</p>
+<p><span class="img-zoom"><img alt="日本这个免费插画素材库，太有特色了！" class="alignnone size-full wp-image-383221" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-zy-20200804-3.jpg" width="1120" height="800" /></span></p>
+<p>如果把图片素材点开放大，也会看到许多不同的配色组合，在这里可以从上方选择不同的图片尺寸，也有JPG、PNG或SVG格式可以下载，选好后点选下方「表示中の画像をダウンロード」绿色按钮就会直接下载图片档案。</p>
+<p><span class="img-zoom"><img alt="日本这个免费插画素材库，太有特色了！" class="alignnone size-full wp-image-383222" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-zy-20200804-4.jpg" width="1153" height="800" /></span></p>
+<p><strong>值得一试的三个理由：</strong></p>
+<ul>
+<li>将日本「鸟兽戏画」绘卷转为向量图、进行着色处理</li>
+<li>提供 Ai、EPS、SVG 向量图格式和JPG、PNG 图片下载</li>
+<li>可自由使用于个人或商业用途，超过20 个素材需联络站方取得授权</li>
+</ul>
+<p>更多日本免费图库：</p>
+<p>[link https://www.uisdc.com/model-foto-and-ezgif]</p>
+<p>[link https://www.uisdc.com/tokyo-date-standart-io]</p>
+<p>[link https://www.uisdc.com/photoac-and-flattyshadow]</p>
+➜高手出品！2020~2021年UI界面设计趋势
+https://www.uisdc.com/2020-2021-ui-design-trend	63128
+<p>2020年已经过去一大半，这些时间以来，我一直在关注数字设计领域未来的设计趋势。从年初就开始收集，到今8月份了，我想是时候将发现的一些趋势风格分享出来，这些风格很有可能继续延续到2021的产品设计上。</p>
+<p>对于UI界面视觉趋势，同样需要我们高度重视。毕竟每年改版方向，视觉风格研究是必不可少的一个环节，下面正式开始。</p>
+<h4><span class="auto_menu">少量的渐变</span></h4>
+<p>今年在各网站上看到大面积的渐变色设计，相对前两年来说越来越少，设计上有所克制。大面积的渐变色虽然视觉冲击力强，但大部分停留在概念中。</p>
+<p>从今年设计中我们可以看到设计更加理性与克制，将渐变色彩运用到关键功能上，突出强调重要信息。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383645" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-1.jpg" width="1066" height="800" /></span></p>
+<p>机票选购界面，将渐变色运用到头部位置去强调功能。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383646" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-2.jpg" width="1066" height="800" /></span></p>
+<p>运用在功能卡片上，突出重点信息。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383647" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-3.jpg" width="800" height="1200" /></span></p>
+<p>如上图，设计上同样只将渐变色运用在背景上，其他卡片上基本没有渐变色。</p>
+<h4><span class="auto_menu">包豪斯风格图形</span></h4>
+<p>几何图形设计是目前运用最多一个设计手法，今年发现一些比较抽象艺术化包豪斯风格几何图形，在UI设计中大量运用，且效果还不错。</p>
+<p>这种图形带来好处就是记忆性强，应用广，它不仅可以拓展在品牌包装，品牌图形延展，还可以运用在UI设计中。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383648" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-4.jpg" width="800" height="1200" /></span></p>
+<p>卡片设计采用一些具有意向符号的图形，来表达功能的设计，形成记忆点。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383649" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-5.jpg" width="800" height="1200" /></span></p>
+<p>品牌设计上，也是重复这种极简包豪斯风格几何图形。将logo元素提取，进行包豪斯风格化，重复运用在设计中。</p>
+<p>[link https://www.uisdc.com/learn-about-bauhaus]</p>
+<h4><span class="auto_menu">有深度的界面</span></h4>
+<p>今年这样的设计屡见不鲜，大量3D运用在界面设计中，二维的界面已经不再满足当前设计需要。设计师去探索更多维度学科与UI界面融合，形成一种全新的视觉感官。</p>
+<p>uber的概念官网就通过3D来呈现，表达功能亮点。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383650" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-6.jpg" width="1057" height="800" /></span></p>
+<p>将二维世界三维化，将是2021年重要的趋势。目前国内外线上有一些产品，开始在部分功能模块使用这样设计手法，如Naver，支付宝等。</p>
+<h4><span class="auto_menu">毛玻璃效果</span></h4>
+<p>可以说是趋势轮回，毛玻璃的效果又回来了。这也是今年在各网站设计上出现频次多一些的设计。</p>
+<p>新的毛玻璃效果更加去注重功能说明，用在视觉强调的地方。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383651" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-7.jpg" width="1066" height="800" /></span></p>
+<p>如上图设计，毛玻璃运用在顶部关键信息上。这样设计即可减少其他色彩运用，还可以对功能信息进行强调。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383652" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-8.jpg" width="1066" height="800" /></span></p>
+<p>毛玻璃效果运用在个人中心，人物头像位置，进行设计强调。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383653" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-9.jpg" width="533" height="800" /></span></p>
+<p>运用毛玻璃去包装UI界面，可以提升品质感与神秘感。</p>
+<h4><span class="auto_menu">沉浸式界面</span></h4>
+<p>将功能与场景融合设计，用户在使用产品过程中，能产生更多情景体验感触。这也是最近今年喊的比较火的一种设计思路。在各网站上，这样设计出现次数越来越多，设计效果冲击力强，得到很多设计师的认可。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383654" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-10.jpg" width="890" height="600" /></span></p>
+<p>场景中关键人物元素与设计进行巧妙集合。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383655" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-11.jpg" width="800" height="600" /></span></p>
+<p>运用超现实设计手法，将人物与酒店场景进行排版布局。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383656" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-12.jpg" width="800" height="600" /></span></p>
+<p>将制作材料与产品集合。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383657" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-13.jpg" width="800" height="600" /></span></p>
+<p>拟真植物元素与土地进行巧妙集合，在视觉上传达逼真效果。</p>
+<h4><span class="auto_menu">界面排版杂志化</span></h4>
+<p>杂志化设计风格鲜明，可以有助产品去打造强化记忆点。杂志化设计的优势可以不受到网格约束，排版使用大字体，同时设计排版上更加个性。我们在做产品概念探索前期，可以多去尝试这样的风格。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383658" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-14.jpg" width="1172" height="800" /></span></p>
+<h4><span class="auto_menu">拟物化图标</span></h4>
+<p>拟物图标又回来了，Apple新版本的Big Sur系统，就采用拟态图标，这也是一个新的尝试，当然也是一个开始。我们很有必要时刻关注这个趋势，未来将会在更多设计中看到拟物化图标的出现。</p>
+<p>[link https://www.uisdc.com/macos-11]</p>
+<p>不过这种风格也不能大面积运用在界面中，我们可以运用在一些关键功能入口设计上。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383659" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-15.jpg" width="1066" height="800" /></span></p>
+<p>在天气上的运用，相对之前扁平化设计，目前具有空间的拟物化设计，增加了真实感。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383660" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-16.jpg" width="800" height="1796" /></span></p>
+<h4><span class="auto_menu">圆形的运用</span></h4>
+<p>圆形趋势，我想大家也许会忽略的点，最近几年设计中，圆形的设计无处不在。它的好处不言而喻，亲和力强、场景覆盖广，几乎任何设计都能去用圆形。因此我们有必要去注意圆形运用技巧。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383661" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-17.jpg" width="800" height="1657" /></span></p>
+<p>星巴克的web UI概念设计，采用圆形与产品进行集合设计排版。</p>
+<h4><span class="auto_menu">2021新拟态界面</span></h4>
+<p>新拟态趋势是2020年受到广泛关注的趋势之一，这种趋势大量使用了柔和的阴影和微弱渐变，使设计既具有未来感又具有现实感，并且为熟悉的界面带来了新的感觉。相对之前大面积浓厚阴影而言，目前新的简化拟态界面，会克制使用这些元素。</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383662" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sf-20200809-18.jpg" width="800" height="1796" /></span></p>
+<p>2021年拟态界面，更注重功能与体验。拟态效果会使用在关键功能上，如仪表、按钮，又或者需要重点强调的地方，避免了大面积使用这种设计手法。</p>
+<p>[link https://www.uisdc.com/quick-reading-weekly-vol54]</p>
+<h4><span class="auto_menu">写在最后</span></h4>
+<p>2021年的趋势相对来说，有继续延续2020年一些设计风格，这些风格将会在继续加强，同时我们也有发现，目前越来越多3D元素与二维界面进行集合设计，能更生动传达功能与将故事，2021年大家务必要注意这种趋势的延续。</p>
+<p>作为设计师，我们对设计的思考不能只停留在表象层面，而更多的需要围绕信息传达这一设计的本质功能，以充满自省的精神深化和反思自己的设计意识，同时要时刻保持对趋势的敏感度。将新趋势合理的运用在产品设计中，以产生最大化收益。</p>
+<p>欢迎关注作者微信公众号：「功夫UX」</p>
+<p><span class="img-zoom"><img alt="高手出品！2020~2021年UI界面设计趋势" class="alignnone size-full wp-image-383642" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bc-20200809-1.jpg" width="180" height="180" /></span></p>
 ➜壹周速读：捋清思路，用对方法，设计不是青春饭
-https://www.uisdc.com/quick-reading-weekly-vol67	62270
-<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" src="https://image.uisdc.com/wp-content/uploads/2020/08/quick-reading-weekly-vol67-1.jpg" width="750" height="168" class="alignnone size-full wp-image-383701" /></span></p>
+https://www.uisdc.com/quick-reading-weekly-vol67	64070
+<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" class="alignnone size-full wp-image-383701" src="https://image.uisdc.com/wp-content/uploads/2020/08/quick-reading-weekly-vol67-1.jpg" width="750" height="168" /></span></p>
 <p>做设计真的是青春饭嘛？不一定，如果你挑对了正确的方法和思路。其实我们每天来搜集资料、学习技巧、积攒经验，都是为了打破自己周遭的困境，向着更高的层级进发。这一周的好文当中，有3款帮你提速的设计神器，有最新的潮玩设计趋势，有设计大触的作品展示技巧，有资深交互设计师的人生阶段性总结。如果你也想走出此刻的困境，也许某篇文章里面，就有你要的答案：</p>
 <h4><span class="auto_menu">设计师职场</span></h4>
-<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy1.jpg" class="aligncenter size-full wp-image-383693" /></span></p>
+<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" class="aligncenter size-full wp-image-383693" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy1.jpg" /></span></p>
 <p>互联网设计是不是青春饭？这可能是很多同学一直在问的问题。你真正需要的答案并不是一个「是」或者「否」，而是「为什么」和「怎么办」。这篇来自华为交互设计师薛志荣的文章，用自己的经历见闻，以及思考和感知，给你一个「为什么」和「怎么办」：</p>
-<p>[link  https://www.uisdc.com/internet-workplace]</p>
-<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy2.jpg" class="aligncenter size-full wp-image-383693" /></span></p>
-<p>这篇文章来许田恬，现任Facebook Oculus 产品设计师，曾任职于Uber，亚马逊。她是清华大学毕业，密歇根大学人机交互硕士，工作之余做过很多100天设计项目，包括《100天涂鸦》、《100天字体练习》、《100天水彩画》、《100天矢量插图》、《100天动效设计》等，这篇《100天3D设计》是她最近的学习成果，看看她是怎么学习的吧：</p>
-<p>[link  https://www.uisdc.com/complete-100-day-3d-design]</p>
-<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy3.jpg" class="aligncenter size-full wp-image-383693" /></span></p>
+<p>[link https://www.uisdc.com/internet-workplace]</p>
+<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" class="aligncenter size-full wp-image-383693" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy2.jpg" /></span></p>
+<p>这篇文章来自许田恬，现任Facebook Oculus 产品设计师，曾任职于Uber，亚马逊。她是清华大学毕业，密歇根大学人机交互硕士，工作之余做过很多100天设计项目，包括《100天涂鸦》、《100天字体练习》、《100天水彩画》、《100天矢量插图》、《100天动效设计》等，这篇《100天3D设计》是她最近的学习成果，看看她是怎么学习的吧：</p>
+<p>[link https://www.uisdc.com/complete-100-day-3d-design]</p>
+<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" class="aligncenter size-full wp-image-383693" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy3.jpg" /></span></p>
 <p>你或许听过118名UI设计师竞争一个岗位，它出自拉勾《2019互联网行业招聘白皮书》。但你可能不知道2020年实际情况是：每天有60到200名UI设计师和你竞争1个岗位（视职级而不同），今年称之为互联网极寒之境毫不为过。这篇文章通过小鹅通面试复盘分享出来，包含行业知识分析、面试题及测试题思路等，全文8717字干货，阅读时长约35分钟，建议就水服用：</p>
 <p>[link https://www.uisdc.com/interview-collection ]</p>
 <h4><span class="auto_menu">视觉·平面</span></h4>
-<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy4.jpg" class="aligncenter size-full wp-image-383693" /></span></p>
+<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" class="aligncenter size-full wp-image-383693" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy4.jpg" /></span></p>
 <p>很多时候，设计师需要在公开场合借用幻灯片演示设计作品或者设计方案，你希望整个展示更具吸引力，那么可能需要针对这些视觉素材进行处理，让内容更具吸引力，那么这 20 个设计技巧总结能够给你更明确的指引：</p>
-<p>[link  https://www.uisdc.com/20-tips-for-better-presentation ]</p>
-<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy5.jpg" class="aligncenter size-full wp-image-383693" /></span></p>
+<p>[link https://www.uisdc.com/20-tips-for-better-presentation ]</p>
+<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" class="aligncenter size-full wp-image-383693" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy5.jpg" /></span></p>
 <p>电影圈流传一句话「一张好的电影海报价值2000万票房」。在这篇文章当中，Canva精选了国内外的20张电影海报，带你从构图、色彩和文字排版上深度感受电影海报的魅力，看看设计如何让人一秒被圈粉：</p>
-<p>[link  https://www.uisdc.com/20-film-poster]</p>
-<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy6.jpg" class="aligncenter size-full wp-image-383693" /></span></p>
+<p>[link https://www.uisdc.com/20-film-poster]</p>
+<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" class="aligncenter size-full wp-image-383693" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy6.jpg" /></span></p>
 <p>在很多优秀的海报设计上，设计师会把光运用到极限了，通过逆光和环境塑造出了酷+神秘的视觉感受。光是一切视觉表现的基础，是构图和传递调性的关键，也是视觉表现重要的组成部分。所以这篇文章就和大家聊聊啥样的光是一个牛X的光，以及如何塑造一个合格的光影：</p>
-<p>[link  https://www.uisdc.com/light-and-shadow]</p>
-<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy7.jpg" class="aligncenter size-full wp-image-383693" /></span></p>
+<p>[link https://www.uisdc.com/light-and-shadow]</p>
+<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" class="aligncenter size-full wp-image-383693" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy7.jpg" /></span></p>
 <p>潮玩，也就是潮流玩具，又名艺术玩具或设计师玩具。我们将潮玩定义为拥有独立IP并具有潮流属性的玩具。它多为摆件或雕塑，缺乏交互性及实用性，但具有轻奢属性。这个独特的领域在最近几年迅速窜红，疯狂流行，这篇来自腾讯的潮玩设计趋势报告，应该是很多同学一直在找的东西：</p>
 <p>[link https://www.uisdc.com/art-toys-trend ]</p>
-<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy8.jpg" class="aligncenter size-full wp-image-383693" /></span></p>
+<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" class="aligncenter size-full wp-image-383693" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy8.jpg" /></span></p>
 <p>按钮在界面设计中，属于最基础的元素部分组成，按钮设计的精致，整个页面的品质也会上升不少的档次。给大家分享这篇文章，主要讲解在设计按钮时我们应该考虑哪些因素，包括视觉上，有哪些万能的方法及公式，能够正确的制定按钮的设计标准，来提升整个设计的系统性。具体看这里：</p>
 <p>[link https://www.uisdc.com/button-design-4 ]</p>
 <h4><span class="auto_menu">产品·交互</span></h4>
-<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy9.jpg" class="aligncenter size-full wp-image-383693" /></span></p>
+<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" class="aligncenter size-full wp-image-383693" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy9.jpg" /></span></p>
 <p>为什么在微信吞噬一切的同时，还有一个另一个同类产品做到如此巨大的体量？有了微信为什么还要QQ呢？到底是哪些人在用QQ？QQ到底解决了神马痛点？为什么我和我身边的人都不用了但QQ依然如此强大？为什么强者恒强的马太效应没有出现在这两个同类应用之间呢？看这里：</p>
-<p>[link  https://www.uisdc.com/why-qq-second]</p>
-<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy10.jpg" class="aligncenter size-full wp-image-383693" /></span></p>
+<p>[link https://www.uisdc.com/why-qq-second]</p>
+<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" class="aligncenter size-full wp-image-383693" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy10.jpg" /></span></p>
 <p>你平时填写过的最复杂的表单是什么？调查问卷还是文档信息录入？如果一个表单字段内容巨多，结构多变，填写耗时耗力，那你将如何设计你的表单，使之体验更佳？这篇关于表单设计的文章当中，有你想要的解决方案：</p>
-<p>[link  https://www.uisdc.com/long-form-design-3]</p>
-<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy11.png" class="aligncenter size-full wp-image-383693" /></span></p>
+<p>[link https://www.uisdc.com/long-form-design-3]</p>
+<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" class="aligncenter size-full wp-image-383693" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy11.png" /></span></p>
 <p>如果你是 UI 设计师，多少都接触过苹果的人机界面设计指南吧？这份在被奉为圭臬的设计指南当中，融入了几十年来最为经典、实用的设计规范和技巧，它非常易读且易于理解。不过它着实是太长了，如果你正身处某个设计项目当中，那么这份精简梳理的设计要点，大概是你亟需的：</p>
 <p>[link https://www.uisdc.com/10-insights-from-hig ]</p>
 <h4><span class="auto_menu">神器·干货</span></h4>
-<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy12.png" class="aligncenter size-full wp-image-383693" /></span></p>
+<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" class="aligncenter size-full wp-image-383693" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy12.png" /></span></p>
 <p>这篇文章要介绍的「Ouch（Icons8 Illustrations）」来自知名的设计公司Icons8，提供大量插图让使用者免费下载，这个网站可以协助不进行绘图的创作者克服缺乏高品质图片的问题，许多的设计图案出自Dribbble艺术家，从网站能免费下载PNG和SVG插图，适用于个人或商业用途：</p>
-<p>[link  https://www.uisdc.com/icons8-illustrations]</p>
-<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" src=" https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-40.gif" width="640" height="360" class="aligncenter size-full" /></span></p>
+<p>[link https://www.uisdc.com/icons8-illustrations]</p>
+<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" class="aligncenter size-full" src=" https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200730-40.gif" width="640" height="360" /></span></p>
 <p>对于设计配色而言，系统的理论学习固然重要，但是对于初学者或者对色彩理论提不起兴趣学习的人来说，难道就没有可以快速完成配色的方法么？当然有，那就是本期教程我要推荐给大家的这款配色工具 Adobe Color。为什么只需要这一个软件就够了？看这里：</p>
-<p>[link  https://www.uisdc.com/adobe-color]</p>
-<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy13.jpg" class="aligncenter size-full wp-image-383693" /></span></p>
+<p>[link https://www.uisdc.com/adobe-color]</p>
+<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" class="aligncenter size-full wp-image-383693" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy13.jpg" /></span></p>
 <p>这篇文章要介绍的「Slazzer」，是一个最近看到的免费线上去背景工具，号称只要五秒钟就能自动化去除图片背景，而且无需额外下载或任何软件，Slazzer网站提供一些去背景前后的图片范例，利用拖曳方式可以比较出差异，对于主体较为明确的相片来说去除效果很好，但在细节（例如头发发丝）部分就无法很完整保留，如果无法自行处理图片或手边没有软件，它是个相当好的解决方案：</p>
-<p>[link  https://www.uisdc.com/slazzer]</p>
-<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy14.jpg" class="aligncenter size-full wp-image-383693" /></span></p>
+<p>[link https://www.uisdc.com/slazzer]</p>
+<p><span class="img-zoom"><img alt="壹周速读：捋清思路，用对方法，设计不是青春饭" class="aligncenter size-full wp-image-383693" src="https://image.uisdc.com/wp-content/uploads/2020/08/xy14.jpg" /></span></p>
 <p>作为设计师，在拿到产品需求的时候，所要做的不仅仅是完成产品的设计工作，更重要的是要思考如何通过设计的的手段去推动产品背后的商业价值达到最大化，提升视觉体验、增强用户的粘性以达到用户转化的目的。在这件事情上，很多大厂 APP 的设计师们花费了很多心思去挖掘和打磨，这13个常用的大厂App里，藏着诸多设计师的匠心和巧思：</p>
-<p>[link  https://www.uisdc.com/13-product-design-details]</p>
+<p>[link https://www.uisdc.com/13-product-design-details]</p>
+➜这次我教你，优秀的Banner是怎样用对模特图的！
+https://www.uisdc.com/banner-model	65313
+<h4><span class="auto_menu">Banner包含什么元素？</span></h4>
+<p>在电商设计中，最重要的就是店铺的banner设计，banner中所包含的元素也多种多样，每一种都有不同的功能。大致可以分为：文字，照片，背景，装饰元素和标志。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383496" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-28.jpg" width="1080" height="305" /></span></p>
+<p>其中能够给人最直观感受的就是照片，所以这节课我们从照片开始入手。给大家讲一讲照片在banner设计中的应用。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383497" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-29.jpg" width="995" height="800" /></span></p>
+<p>△ 举例图片来自品牌「FEW精品咖啡」「有耳」</p>
+<p>电商banner，也可以分为两种，一种是有照片的设计，一种是没有照片的设计，也就是图形设计。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383498" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-30.jpg" width="985" height="800" /></span></p>
+<p>△ 举例图片来自咖啡品牌「三顿半」「闪垫」「不够商店」</p>
+<p>在没有照片的情况下，我们使用图形，插画，文字编排等手法，也可以表现出很好很丰富的画面感觉。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383499" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-31.jpg" width="596" height="800" /></span></p>
+<p>△ 举例图片来自品牌「LEONSENSE」「超级植物公司」「玩药局」「SENCE LA」「viishow」</p>
+<p>以实际照片为主的banner设计，会给人真实的感受，这个是图形设计所达不到的。并且大多数的电商banner，都是用照片来作为主元素使用的。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383469" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-1.gif" width="599" height="439" /></span></p>
+<p>在电商设计中，照片可以分为两种，分别是商品照片和模特照片。模特照片，又可以分为，儿童，年轻人，中老年人和宠物。人物类的模特照片主要应用在服装领域，服装类电商品牌会大量的使用模特照片来展示产品，宠物的照片则主要应用于宠物用品门类。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383500" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-32.jpg" width="1080" height="694" /></span></p>
+<p>除了以上说的这些，模特的照片，在电商设计中的应用那是相当广泛的，你打开淘宝，几乎所有的分类里都可以见到使用模特照片设计的banner图。</p>
+<p>为什么我们要使用模特照片呢？因为模特照片是最有代入感的，无论是产品也好，服装也好，我们看到模特使用的同时，也会想到自己用上，穿上是不是也有同样的效果。所以人物照片在电商中是最直观的一种表现形式。模特照片如何选择也是有讲究的，如果选错了照片往往会起到相反的效果，选择与品牌气质相对应的模特是很关键的。</p>
+<h4><span class="auto_menu">Banner模特图的选择</span></h4>
+<blockquote><p>「启迪聪明智慧 构筑美好童年」</p></blockquote>
+<p>如果以这段文案来设计banner我们该如何选择对应气质的照片呢？</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383470" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-2.gif" width="600" height="344" /></span></p>
+<p>首先，这个文案是一个儿童产品的文案，简单的分析一下，聪明智慧和美好童年，这两个词是很直观很具象的。那我们要选择的模特照片，首先从外观上，一定是一个看上去很聪明的小孩形象。第二个关键词是美好童年，拥有幸福童年的小孩，他最直观的表现，就是脸上洋溢的笑容。那分析完这两点，我们就可以按照这两种特征去筛选模特照片了。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383501" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-33.jpg" width="1080" height="409" /></span></p>
+<p>△ 图片源自「摄图网」</p>
+<p>我们用这三张照片来举例，左侧的小孩，他的动作和表情看上去非常调皮，非常可爱，右侧的小孩看起来比较活泼好动，那这两种都不太符合我们文案的感觉。我们再来看中间的小孩，他手里在玩着积木，脸上也笑的很自然，第一眼看上去就有比较聪明的感觉。所以他就很符合我们刚才所分析的文案内容，那在这里我们就要选择中间的这张照片。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383502" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-34.jpg" width="597" height="600" /></span></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383471" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-3.gif" width="600" height="328" /></span></p>
+<p>△ 图片源自「摄图网」</p>
+<p>我们再来看第二个文案。这是一个女性服饰主题的文案，同样，我们来分析一下这个文案，「异想少女研究所」其实我们只是读一下也能感觉的到，这个文案就是那种比较有个性比较年轻的气质，那模特图我们也是要选择一个年轻，有个性的女孩形象。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383503" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-35.jpg" width="1080" height="406" /></span></p>
+<p>△ 图片源自「摄图网」</p>
+<p>第一张照片上的女孩穿着校服，看上去是比较清纯的气质。第二张照片上的女孩，她的动作和表情，看上去给人一种很可爱的感觉。所以前两个都不太符合我们文案的感觉。那我们再来看第三张照片，第三张照片中的女孩，妆容精致，脸上也涂着油彩，眼神也很有个性。所以很显然，第三张更符合我们的文案内容。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383504" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-36.jpg" width="603" height="600" /></span></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383472" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-4.gif" width="600" height="346" /></span></p>
+<p>△ 图片源自「摄图网」</p>
+<p>我们再来看最后一个文案，「保持身体健康，绽放幸福笑容」，这是一个老年人产品的广告文案，这句话的两个关键词分别为，健康和笑容。那我们选择照片时也要留意这两点。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383505" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-37.jpg" width="1080" height="407" /></span></p>
+<p>△ 图片源自「摄图网」</p>
+<p>左侧的模特在皱着眉头思考，感觉不是很开心，而且表情也有些严肃。右侧的模特，看上去像是一个老中医的形象。那这两个也都不太符合我们文案的感觉，只有中间的模特，我们可以看出他的气色特别好，而且笑的很灿烂，所以在这三张模特照片中，我们肯定会选择第二张。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383506" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-38.jpg" width="600" height="600" /></span></p>
+<p>△ 图片源自「摄图网」</p>
+<h4><span class="auto_menu">Banner 模特图的表现形式</span></h4>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383507" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-39.jpg" width="800" height="492" /></span></p>
+<p>我们先来说一下表情放大。那么在什么时候，我们需要将模特的表情放大呢？</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383508" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-40.jpg" width="1080" height="325" /></span></p>
+<p>符合这几个特点的模特图，我们都适合将她的表情放大，但是放大的前提是图片清晰度要足够，如果清晰度不够的话，就会给人很廉价的感觉。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383509" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-41.jpg" width="560" height="800" /></span></p>
+<p>首先来说妆容夸张，我们可以看到，这个模特的脸部有很多的油彩，那这种妆容在我们日常生活中是很少见到的。所以她在脸部就自然的形成了一种聚焦的焦点，并且这个人气质也给人一种高冷、有个性的感觉。那这个时候我们就适合把她的表情放大。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383510" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-42.jpg" width="606" height="800" /></span></p>
+<p>当我们把表情放大之后，也会加强传递模特自身的气质。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383511" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-43.jpg" width="500" height="800" /></span></p>
+<p>我们再来看这个模特，她头上戴的假发，已经遮住了她的大部分面部，那这种妆容就会给人一种很神秘的感觉。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383512" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-44.jpg" width="606" height="800" /></span></p>
+<p>如果把它的表情放大，你会觉得人物的主体是非常有视觉冲击力的，而且非常吸引眼球。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383513" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-45.jpg" width="569" height="800" /></span></p>
+<p>然后我们再来看一下妆容精致。如果模特本身的照片质感不是很好，那就需要我们有很强的图片后期技术，经过修图，来给人物面部加强质感，当质感达标之后，我们就可以将她的表情放大。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383514" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-46.jpg" width="606" height="800" /></span></p>
+<p>这个时候我们可以很清楚的看到她面部的皮肤细节，这种方式也非常适合我们表现护肤品、美妆类产品。当然了，这对大家的修图技术也有一定的要求。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383515" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-47.jpg" width="721" height="800" /></span></p>
+<p>表情夸张。当一个人做出大笑，流泪，瞪眼等夸张表情的时候，我们都适合把他放大。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383516" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-48.jpg" width="606" height="800" /></span></p>
+<p>因为情绪是可以传染的，当你看到模特情绪的同时，自己也会直接被她的情绪所感染到。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383517" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-49.jpg" width="774" height="600" /></span></p>
+<p>气质清纯，在日本的广告设计中，他们经常使用这种年轻的，妆容非常干净的女性，当模特图呈现这种气质的时候，我们可以将她的面部放大，将她清纯美好的气质表现出来。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383518" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-50.jpg" width="606" height="800" /></span></p>
+<p><strong>1. 使用产品</strong></p>
+<p>它是一种「正在进行时」的表现形式，比如我们在骑摩托、滑冰、跑步、游泳，这些都属于「正在进行时」。同样，模特正在使用产品的时候拍摄的照片，就会给观者很强的代入感。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383473" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-5.gif" width="600" height="337" /></span></p>
+<p>日本本土的啤酒品牌麒麟啤酒的广告，每个广告片的最后，演员喝酒的表情和动作都是不一样的。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383519" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-51.jpg" width="546" height="800" /></span></p>
+<p>通过演员喝啤酒的状态和表情来向观众传达和强调麒麟啤酒，口味醇厚、口感丰富和品质高的产品卖点。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383520" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-52.jpg" width="1080" height="785" /></span></p>
+<p>这也是一组麒麟品牌的广告，但是产品换成了鸡尾酒，因为这种鸡尾酒的主要受众是白领，所以这组广告也选用了相对比较有气质的模特，他的场景妆容和灯光布置，塑造了一种上班族工作了一天，下班之后美美的小酌一杯的感觉，那当观众看到了这组广告，也会被广告中模特的状态所感染。也会想要去尝试一下这款鸡尾酒的味道。</p>
+<p><strong>2. 使用环境</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383521" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-53.jpg" width="899" height="600" /></span></p>
+<p>这是一个尿不湿的广告，在这个房间环境的衬托下，更加凸显了婴儿在使用这款尿不湿之后，睡觉特别安稳、舒适的感觉。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383474" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-6.gif" width="470" height="788" /></span></p>
+<p>这是一个空调广告，首先广告构建了一个干净整洁的房间，然后出现了我们的主角——空调。然后画面中又出现了一个正在练瑜伽的女孩。这组广告也是通过这个女孩练瑜伽时放松舒适的环境，来表现这款空调的舒适度。安静舒心的场景，也更加凸显了空调「清新自然无异味」和「身心舒畅」的产品卖点。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383475" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-7.gif" width="640" height="440" /></span></p>
+<p>这是一个大发汽车的广告，在画面中我们可以看到这辆汽车是在一个环境优美的山上，这就代表这款汽车的底盘是很高的，它可以越野。然后画面中又出现一群人，这群人看上去像是主角的家人或者是朋友，那这里就体现了车辆内部空间大，舒适，适合与家人朋友一起旅游的产品定位。</p>
+<p><strong>3. 使用效果</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383522" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-54.jpg" width="1080" height="508" /></span></p>
+<p>△ 图片来自花瓣网</p>
+<p>这种方法表现了人物使用产品之后所能达到的一个效果。比如画面中模特佩戴的手镯和手表，通过展示模特佩戴产品的效果，可以让消费者更加直观的感受到，自己佩戴之后是一个什么样的感觉。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383523" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-55.jpg" width="1080" height="358" /></span></p>
+<p>△ 图片来自花瓣网</p>
+<p>平时，我偶尔会有头痛，所以就经常会去买头痛药，在选购头痛药的时候，我就注意到商家使用了很多这样的图，这样的图首先他对头痛的症状表现比较模煳，这样的动作它也有可能是焦虑或者情绪低落的表现。另外，大多数的头痛药品牌都在使用这种图，看得多了就会感觉千篇一律，审美乏味。怎么突破以往的形式，来设计一个头痛药的广告画面呢？</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383476" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-8.gif" width="500" height="640" /></span></p>
+<p>△ 大正制药，头痛药广告</p>
+<p>这是大正制药在2017年制作的头痛药广告，这里人物的模特，选择了和之前我们看到差异性很大的一个微笑的少女，画面中的模特用手指向上方的产品形成聚焦点，轻松快乐的表情，也展示了「使用头痛药，头痛轻松走」的产品定位。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383524" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-56.jpg" width="566" height="800" /></span></p>
+<p>这是香港的一款饮料广告，这款饮料主打健康养生的定位，适合正在健身或者正在减肥的人喝，广告中也选择了一位身材特别好的模特，看到这个广告之后也会给你一种你喝了也能这么瘦的感觉。</p>
+<p><strong>4. 明星效应</strong></p>
+<p>现在有很多当红的流量明星，他们的流量是很夸张的，明星的粉丝会购买他们代言的产品，粉丝会认为，自己idol所代言的产品也是idol的一部分，我们之前也有一位学员，他就非常喜欢某位明星，他把他所有代言的产品全都买回家了。所以可见明星效应所带来的的产品销量是立竿见影的。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383477" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-9.gif" width="500" height="553" /></span></p>
+<p>△ rio「微醺鸡尾酒」系列广告</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383478" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-10.gif" width="500" height="553" /></span></p>
+<p>△ rio「微醺鸡尾酒」系列广告</p>
+<p>rio的产品微醺鸡尾酒，就选择了近两年国民喜爱度爆表的演员周冬雨来代言产品，这个产品它主打「一个人的小酒」的概念，广告片中的周冬雨颇有活泼精致的少女感，通过她精湛的演技，把小女生独自饮酒后的状态表现的淋漓尽致。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383525" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-57.jpg" width="600" height="337" /></span></p>
+<p>△ 护肤品牌Dual Face新广告</p>
+<p>另外，请明星也是要注意明星的气质和人设是否符合品牌或产品的定位，日本的一款护肤品，就选用了「天然氧气美少女」夏帆来为品牌做代言，夏帆的人设和产品使用自然有机原料的特点完美融合，不仅促进了销量，也加强了消费者的信任度，是一个很成功的明星代言。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383526" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-58.jpg" width="800" height="480" /></span></p>
+<p>△ 可尔必思广告</p>
+<p>可尔必思可以说是日本的国民饮料了，我们去任何一家日料店，肯定都可以喝到可尔必思，它的卖点是天然乳酸菌，酸酸甜甜，在青少年中尤其受欢迎。可尔必思的代言人选择了日本颇具人气的年轻美少女永野芽郁，她活泼年轻可爱的形象，也非常符合可尔必思的产品受众。</p>
+<h4><span class="auto_menu">Banner模特圈的视角</span></h4>
+<p>虽然我们设计师不一定都要懂摄影，但是我们也要对模特照片的基本的拍摄视角和景别有所了解，这样我们才能更好的利用模特照片来做出合适的设计。</p>
+<p><strong>1. 全身照片</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383527" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-59.jpg" width="715" height="800" /></span></p>
+<p>△ 图片来自服装品牌「玩药局」</p>
+<p>全身照片是对模特整个面貌的一个宏观表现，在这里，模特的穿着和动势我们都一清二楚。而且全身照片的可操作性强，你可以对照片随意进行裁剪处理。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383528" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-60.jpg" width="1077" height="800" /></span></p>
+<p>△ 图片来自服装品牌「鹿与飞鸟」「ONE MORE」</p>
+<p><strong>2. 半身照片</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383529" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-61.jpg" width="715" height="800" /></span></p>
+<p>△ 图片来自服装品牌「REDCHARCOAL 」</p>
+<p>半身，就是集中在模特的上半身，或者下半身的某一部分，这种方式比较适合集中突出产品，一般也会把视角集中在产品上。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383530" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-62.jpg" width="857" height="600" /></span></p>
+<p>△ 图片来自服装品牌「REDCHARCOAL 」「鹿与飞鸟 」</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383531" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-63.jpg" width="782" height="600" /></span></p>
+<p>△ 图片来自品牌「步履不停 」「jessiejane 」「鹿与飞鸟 」</p>
+<p>同样是半身照片，我们可以看到这几张照片的脸部，都没有完全露出来。这是因为什么呢？这个在视觉心理学中来讲叫做信噪比，画面中除了必要的信息之外，也会存在所谓的「噪音」。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383532" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-64.jpg" width="760" height="600" /></span></p>
+<p>因为人物脸部的存在，观者的视线会不自觉地聚焦在人物脸部，当我们把脸部进行裁切或遮挡的时候，会减少模特表情对于产品的干扰，会让你直接把视线聚焦在产品上。</p>
+<p><strong>3. 胸部以上</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383533" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-65.jpg" width="715" height="800" /></span></p>
+<p>胸部以上的照片，主要是用于展现模特的妆容和佩饰，或者是人物的面部表情和情绪，这种视角可以拉近画中人与观众的距离，增强交互性，但是对于皮肤的质感要求较高，所以也需要一定的后期修图技术。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383534" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-66.jpg" width="824" height="600" /></span></p>
+<p><strong>4. 特写照片</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383535" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-67.jpg" width="850" height="600" /></span></p>
+<p>特写大家就比较熟悉了，尤其是各位女性朋友，你们在买口红的时候，口红的品牌几乎都是使用嘴唇的特写来表现口红的颜色。所以特写，也是非常适合表现化妆品、护肤品、美瞳等产品。另外特写也是局部的展现，它可以使表现对象从周围的环境中凸显出来，造成清晰的视觉印象，从而得到强调的效果。</p>
+<p><strong>5. 远景照片</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383536" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-68.jpg" width="644" height="800" /></span></p>
+<p>△ 图片来自品牌「步履不停 」</p>
+<p>远景在电商设计中的应用比较少，因为人物在里面已经很小了，你看不清他的服饰，也看不清他的妆容。它所传播出来的其实就是它独特的气质和画面的意境，比如这家店《步履不停》，他们的产品主打就是日式森系的风格。所以他们很多的照片都使用了这种大留白的远景来传达品牌的气质，这个，也是他们家区别于其他品牌的地方。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383537" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-69.jpg" width="723" height="800" /></span></p>
+<p>讲到品牌不得不提的是，现在的大多数电商品牌拍摄的模特照片基本都大同小异，比如说当我们在淘宝搜索连衣裙的时候，我们可以看到搜索出来的图片基本都差不多，角度单一，审美乏味，所以说电商品牌怎样和其他品牌形成差异化呢？</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383538" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-70.jpg" width="602" height="800" /></span></p>
+<p>△ 图片来自品牌「ZE by sankuanz 」 摄影师：袁小鹏</p>
+<p>摄影师袁晓鹏给上官喆拍的一系列照片，就很好的解决了这个问题，既保持了品牌的个性又找到了十分有趣的角度，每张照片里都有一个正在进行的「故事」，给观者以遐想空间。这样的店，就会在你的心里留下一个很深的印象，也就和其他店形成了差异化。</p>
+<h4><span class="auto_menu">Banner模特圈的人数</span></h4>
+<p><strong>1. 1人</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383539" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-71.jpg" width="1080" height="737" /></span></p>
+<p>△ 图片来自服装品牌「only 」「viishow」</p>
+<p>画面中的模特人数，分为：一人，两人和多人。一个人就很常见了，店铺里主打的单品通常就会用单人模特来展示。</p>
+<p><strong>2. 2人</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383540" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-72.jpg" width="991" height="800" /></span></p>
+<p>△ 图片来自服装品牌「vovavi」「it`s toasted」</p>
+<p>双人模特，通常用于表现对立和并列的关系。</p>
+<p><strong>3. 多人</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383541" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-73.jpg" width="816" height="600" /></span></p>
+<p>△ 图片来自服装品牌「GUUKA」「药九玖柒」</p>
+<p>使用多人模特，会给人带来一种热闹，而且有信赖的感觉。</p>
+<h4><span class="auto_menu">Banner模特圈的编排方式</span></h4>
+<p><strong>1. 去底</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383479" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-11.gif" width="512" height="344" /></span></p>
+<p>有时候人物拍照的背景是比较杂乱的。我们文字放在上面编排的时候识别性很差。这个时候为了保证文字的识别性，我们就会给它加上投影或者描边，但是这样又会显得画面很脏，更好的办法是什么呢？就是把图片给它抠出来，放在一个合适的背景上。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383542" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-74.jpg" width="575" height="800" /></span></p>
+<p><strong>2. 与文字穿插</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383480" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-12.gif" width="250" height="340" /></span></p>
+<p>为了让画面更有层次感，我们就可以使用图叠字，或者字叠图的形式，但是使用时也要注意文字的识别性。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383543" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-75.jpg" width="575" height="800" /></span></p>
+<p><strong>3. 整体+局部</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383481" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-13.gif" width="252" height="342" /></span></p>
+<p>当我们想展现宏观场景又想展现产品细节时，该怎么办呢？这个时候我们就可以使用整体加局部的这种形式。如果是横版的banner，我们也可以左右来排。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383544" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-76.jpg" width="575" height="800" /></span></p>
+<p><strong>4. 放大铺满背景</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383482" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-14.gif" width="258" height="343" /></span></p>
+<p>就像我们之前提到的，当人物的表情很有特点的时候，我们就可以将人物放大做背景。但还是那句话，放大的前提是图片清晰度要足够，如果不够的话，往往会显得很廉价。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383545" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-77.jpg" width="575" height="800" /></span></p>
+<p><strong>5. 去底+手绘</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383483" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-15.gif" width="236" height="325" /></span></p>
+<p>这种形式，比较适合活泼可爱有活力有个性的电商品牌，那大家也不要看到手绘两个字就望而却步，实际上它对你的手绘能力要求也不是很高，因为只是去画一些简单的装饰元素，大家也可以自己尝试一下，还是比较简单的。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383546" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-78.jpg" width="565" height="800" /></span></p>
+<p><strong>6. 重复</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383484" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-16.gif" width="244" height="329" /></span></p>
+<p>通常我们见到最多的，就是这种单元形的重复，他们可以是同一人物，不同穿着，也可以是不同人物，不同穿着。当我们想让这些人物在画面中同时展现的时候，我们就可以给这些模特图抠出来有序的摆放，但是也要注意，抠出来之后模特的大小也一定要保持一致。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383547" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-79.jpg" width="575" height="800" /></span></p>
+<p><strong>7. 去色+单色</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383485" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-17.gif" width="252" height="342" /></span></p>
+<p>对于场景化的模特照片来说，我们可以使用这种方式。将人物或者人物周围的环境去色，这样也会更加的突出产品。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383548" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-80.jpg" width="575" height="800" /></span></p>
+<p><strong>8. 合成场景</strong></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383549" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-81.jpg" width="1080" height="435" /></span></p>
+<p>△ 图片作者「汤臣杰逊」</p>
+<p>合成这里我们不做重点来讲，因为这个是一种比较耗时耗力的形式。大家可以自己去了解一下。</p>
+<h4><span class="auto_menu">Banner 案例演示</span></h4>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383550" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-82.jpg" width="1080" height="542" /></span></p>
+<p>接下来，我们就根据文案和图片，来设计一张手机banner。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383551" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-83.jpg" width="490" height="600" /></span></p>
+<p>首先我们把模特照片放置在画面中，然后我们来分析一下，这张照片毫无疑问它拍的非常好，模特的妆容和长相都比较干净，眼神也自然聚焦，看上去就十分舒心，像这种模特图，我们就可以放心的给他放大。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383486" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-18.gif" width="489" height="600" /></span></p>
+<p>放大之后人物的气质，也更突出了，周围的负空间也得到了填充。接下来我们来编排标题。我们可以注意到，人物的眼睛现在是在画面上方的，所以整个画面的重心也在上方，这个时候我们就可以把标题编排在画面下方，来平衡版面，也是与上方的重心做一个呼应，因为这个品牌的气质是比较清新，比较自然的，所以在标题上，我就选择了一个细体的西文字体，并且加大了字间距，这样文字之间就有了一个呼吸感。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383487" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-19.gif" width="490" height="599" /></span></p>
+<p>下一步我们把最关键的文案竖排放在模特眼睛和标题之间。那为什么放在这个位置呢？因为上方模特的眼睛是视觉重心，虽然下方的标题做了平衡和呼应，但是由于距离较远，两者缺少联系，观者把视线聚焦在眼睛之后，视线就没有了第二个聚焦点，就不知道该看什么了。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383488" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-20.gif" width="486" height="600" /></span></p>
+<p>这段文字放在这里，也可以看作是一个线条，用它来连接视觉中心，引导阅读视线，让观众很自然的从视觉重心一直往下阅读。最后我们把其他文字按照层级关系，编排在版面内，这个案例就完成了。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383552" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-84.jpg" width="489" height="600" /></span></p>
+<p>第二个案例，我们做一个比较高端大牌的服装品牌banner。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383553" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-85.jpg" width="800" height="600" /></span></p>
+<p>像这种比较大牌或者奢侈品品牌的banner，一般来说文案都比较少，而且高端大牌的模特一般都是比较高冷，比较有质感的。因为大牌，它就是要的这个自信。而且它们不需要太多的文案描述，有时候画面中只有一个LOGO和几段文字就可以了，甚至有的品牌连LOGO都不放。那大家也不要觉得，文字少了就好排，实际上文字越少，越考验你的版式的基本功，如何把少量的文字排出你想要展现的气质，也是需要一定技巧的。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383554" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-86.jpg" width="597" height="800" /></span></p>
+<p>首先我们把照片放入画面，那这张照片现在的人物的大小和位置，还是比较尴尬的，上方下方都没有一个完整的空间供我们编排文字，这个时候我们就需要把图片稍微调整一下。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383489" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-21.gif" width="443" height="600" /></span></p>
+<p>这样，我们的画面上方，就有了一个比较完整的空间了。然后我们选择一个气质相符的手写英文编排在版面的上方，这里要注意人物外轮廓和文字之间的关系。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383490" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-22.gif" width="451" height="599" /></span></p>
+<p>然后将剩余文字编排在画面下方，版面的结构就完成了，但是这里还有一个问题，下方的文字颜色如果选择白色的话，有点过于显眼突出了，和整个画面的气质不太相符。怎么办呢？我们可以把这段文字的颜色改成画面中人物皮肤亮部的黄色，再提高一些明度，这样画面看起来就协调多了。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383491" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-23.gif" width="448" height="599" /></span></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383555" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-87.jpg" width="600" height="800" /></span></p>
+<p>第三个案例，我们做一个轻松可爱的促销类banner</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383556" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-88.jpg" width="1080" height="643" /></span></p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383492" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-24.gif" width="411" height="600" /></span></p>
+<p>我们先把模特素材抠出来放置在版面中，这个时候模特的外轮廓是十分不规则的，那这种不规则，就导致了版面中也存在了很多不规则的负空间，这种负空间只靠文案是很难以填充的，编排的难度很高。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383493" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-25.gif" width="412" height="600" /></span></p>
+<p>我们可以将模特放大裁剪为半身，裁剪之后，负空间就少了很多。也方便我们之后的编排。另外我们来看模特的手，是一个很好的视觉指引，模特的手指指向的区域，我们要安排最重要的文案信息。但是现在手部的区域已经接近边缘了，空间不够，那怎么办呢？我们把人物移到右侧。这样这个位置的空间就很完整了。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383494" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-26.gif" width="414" height="600" /></span></p>
+<p>之后，我们把折扣信息编排在人物手部的位置组成一个文字组合，然后在下方把时间信息排好。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383495" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-27.gif" width="411" height="600" /></span></p>
+<p>上下两端可以用色块来填充版面，再把剩余的文案编排好。然后再用装饰元素点缀一下负空间，这个案例就完成了。</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-383557" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200807-89.jpg" width="549" height="800" /></span></p>
+<p>本次教程到这里就结束了，我们来回顾总结一下今天的内容。首先模特图的气质我们一定要拿捏好，因为模特的气质是品牌定位的基石。如果模特图选错的话，往往会产生相反的效果。第二，在我们使用模特图来做设计的时候，要根据模特图的不同表现形式来合理的规划版面。第三，我们作为设计师，要对模特照片的基本的拍摄视角和景别有所了解，我们要根据不同的拍摄视角来选择合适的编排方式。那这节课的内容就到这里，我们下期再见。</p>
+<p>更多高手才懂的电商设计方法：</p>
+<p>[link https://www.uisdc.com/layout-skills]</p>
+<p>欢迎关注研习设的微信公众号：「Yanxishe2017」</p>
+<p><span class="img-zoom"><img alt="这次我教你，优秀的Banner是怎样用对模特图的！" class="alignnone size-full wp-image-271254" src="https://image.uisdc.com/wp-content/uploads/2018/05/yxskxsqr.jpg" alt="超级干货！高桥善丸的六个字体设计思路！" /></span></p>
