@@ -1,7 +1,25 @@
 ➜新工具用域隐藏代替域前置
 https://www.solidot.org/story?sid=65193	12771
 在上周举行的  DEF CON 28 安全会议上，安全公司 SixGen 的 CTO Erik Hunstad <a href="https://www.zdnet.com/article/def-con-new-tool-brings-back-domain-fronting-as-domain-hiding/">发布了</a>开源工具 Noctilucent，帮助应用开发者逃避审查和绕过防火墙。<a href="https://github.com/SixGenInc/Noctilucent">源代码</a>的不同组件采用 BSD 和 GPL 许可证发布在 GitHub 上。Noctilucent 设计从某种程度上复活被众多云服务商<a href="https://www.solidot.org/story?sid=56347">禁止</a>的域前置 (Domain fronting) 功能。域前置是一种隐藏连接真实端点来规避审查的技术，其原理为在不同通信层使用不同的域名，在明文的 DNS 请求和 TLS 服务器名称指示中使用无害的域名来初始化连接，而实际要连接的被封锁域名仅在创建加密的 HTTPS 连接后发出，使其不以明文暴露给网络审查者。新的技术被称为域隐藏，能实现域前置的隐藏真实域名的目的。它比域前置更灵活，只需要把域名 DNS 记录托管在 Cloudflare，而主机服务器可以托管在任何地方。<p>
+➜白俄罗斯在选举日断网
+https://www.solidot.org/story?sid=65194	13815
+白俄罗斯于周日 8 月 9 日举行<a href="https://en.wikipedia.org/wiki/2020_Belarusian_presidential_election">大选</a>，计票结果显示现任总统亚历山大卢卡申科获得了他的第六个任期。但在大选前一天，抗议者涌上街头对反对派表达支持。互联网流量监测显示，当地时间凌晨三点开始网络遭到了短暂的干扰，首都明斯克影响最严重。<a href="https://netblocks.org/reports/internet-disruption-hits-belarus-on-election-day-YAE2jKB3" target="_blank">断网的情况从早晨再次出现</a>，一直持续到下午，在整个投票期间许多社交网络和新闻网站都无法访问。白俄罗斯国家网络安全响应中心发表声明声称当局对网络进行限制是为了阻挡网络攻击。<p>
+➜美国新冠确诊病例超过 500 万
+https://www.solidot.org/story?sid=65195	19490
+根据约翰霍普金斯大学的<a href="https://coronavirus.jhu.edu/map.html">数据</a>，美国新冠确诊病例突破了 500 万达到 504 万，这意味着美国 1.5% 的人口感染了新冠，如果加上未检测出的感染病例，实际比例会更高。美国的新冠死亡病例达到了 16.2 万，之后是巴西的 10 万，墨西哥的 5.2 万，英国的 4.6 万，印度的 4.4 万。全世界的新冠确诊病例达到了 1986 万，死亡病例 73 万。美国的人口相当于欧洲的 44%，死亡病例 16 万，相比下整个欧洲大陆的死亡病例 20.7 万，作为世界最发达的两个地区，美国的死亡病例比例比欧洲更高，美国的疫情应对措施受到了<a href="https://news.slashdot.org/story/20/08/09/167238/15-of-all-americans-have-been-infected-with-coronavirus---5-million-cases">广泛批评</a>。<p>
+➜中国大陆黑客入侵台湾半导体行业
+https://www.solidot.org/story?sid=65196	21740
+在上周举行的 Black Hat 安全会议上，台湾安全公司 CyCraft <a href="https://arstechnica.com/information-technology/2020/08/chinese-hackers-have-pillaged-taiwans-semiconductor-industry/">披露</a>过去两年至少有 7 家芯片公司遭到入侵。这一攻击被称为 <a href="https://cycraft.com/download/%5BTLP-White%5D20200415%20Chimera_V4.1.pdf">Operation Skeleton Key</a>（PDF），原因是黑客使用了一种万能钥匙注入器技术，其目的旨在尽可能多的窃取知识产权，包括源代码、软件开发工具包和芯片设计。CyCraft 拒绝披露受害者的名字。它发现，在部分案例中，黑客通过入侵 VPN 在受害者网络获得初步的立足点。黑客使用一个定制版的渗透测试工具 Cobalt Strike，用  Google Chrome 更新文件的名字伪装植入的恶意程序。黑客还使用 Google 和微软的云服务托管其指令控制服务器。在获得内网的初步访问之后，黑客会寻找密码保护的数据库，尝试对其进行破解。CyCraft 称，黑客通常在北京时区内工作，遵循 996 工作计划表——上午九点到晚上九点，一周六天，中国假期期间也不工作。<p>
 ➜研究称新冠无症感染者携带的病毒与有症状者一样多
 https://www.solidot.org/story?sid=65197	22692
 韩国一项研究<a href="https://www.bbc.com/zhongwen/simp/science-53697692">显示</a>，无症新冠病毒感染者身上携带的病毒数量与有症状者一样多。韩国研究人员通过咽拭子和鼻腔拭子检测了近 2000 人，发现那些在测试时没有任何症状，包括后来也从未出现病状者身上携带的病毒与有症状者同样多。而且，研究人员通过对无症状者定期检测中还发现，新冠病毒会在他们体内持续很长一段时间。但同有症状者相比，无症状者体内病毒彻底消失的时间也略快些。例如，无症状者从被确诊阳性到最后检查转阴性平均为 17 天，但有症状人这一过程则需要 19.5 天。韩国研究人员的这一测试和研究是在社区隔离中心进行的，参与测试者中没有严重病例，而且，他们都相对年轻和健康。
 。<p>
+➜高通 DSP 芯片漏洞影响大量 Android 设备
+https://www.solidot.org/story?sid=65198	23916
+安全公司 Check Point 报告在高通公司骁龙芯片的数字信号处理器（DSP）中<a href="https://arstechnica.com/information-technology/2020/08/snapdragon-chip-flaws-put-1-billion-android-phones-at-risk-of-data-theft/">发现</a>了 400 多个漏洞，它将这些漏洞统称为 <a href="https://blog.checkpoint.com/2020/08/06/achilles-small-chip-big-peril/">Achilles</a>。高通的芯片占据了移动手机市场份额的四成以上，这意味着会有数以亿计的 Android 手机受到影响。Check Point 称，利用漏洞攻击者可以将手机转变成完美的间谍工具，无需用户的任何互动；攻击者可以对手机发动拒绝访问攻击，使其无法使用；恶意程序可以彻底隐藏其活动，无法移除。高通已经释出了补丁，但至今为止补丁还没有整合进 Android 操作系统或使用骁龙芯片的 Android 设备中。高通在一份声明中表示，它还没有看到有证据显示这些漏洞正被利用，它建议用户在补丁可用后尽快更新设备。<p>
+➜Google Home 设备“不小心”记录了你的所有声音
+https://www.solidot.org/story?sid=65199	26542
+Google <a href="https://www.protocol.com/google-smart-speaker-alarm-adt">承认</a>，其 Google Home 语音助手“不小心”启用了一项功能，允许其激活记录了周围的所有声音。在正常情况下，Google Home 设备只在听到特定命令之后激活，如“Ok, Google”或“Hey, Google”。在唤醒之前，它会持续的监听是否有命令下达，但不会记录它听到的声音。Google 称在最近的一次更新之后部分用户意外启用了这项功能，它已经回滚了。<p>
+➜微软称断供中国的说法是谣言
+https://www.solidot.org/story?sid=65200	26839
+昨天中国社交媒体上一则广泛流传的消息声称，微软近日更新了其官网的 Microsoft 服务协议，声明如果因为不可抗力导致微软无法履行或延迟履行其义务，微软对此不承担任何责任或义务，该协议 10 月 1 日正式生效。微软的这一举动被解读成在暗示如果软件因美国政府下令而断供中国，概不负责，且不提供任何补偿。但对比<a href="https://www.microsoft.com/zh-cn/servicesagreement/upcoming.aspx">新</a> <a href="https://www.microsoft.com/zh-cn/servicesagreement">旧</a> 服务协议的责任限制条款，会发现两者完全相同，是标准的免责声明。微软<a href="https://www.thepaper.cn/newsDetail_forward_8660034">在一份声明中称</a>，“近日某些个别社交媒体对微软服务条款全球性更新的谣言，不符合事实。我们为中国用户提供服务的承诺坚定不移。”<p>
