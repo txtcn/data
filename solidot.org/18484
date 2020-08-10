@@ -1,3 +1,7 @@
 ➜新工具用域隐藏代替域前置
 https://www.solidot.org/story?sid=65193	12771
 在上周举行的  DEF CON 28 安全会议上，安全公司 SixGen 的 CTO Erik Hunstad <a href="https://www.zdnet.com/article/def-con-new-tool-brings-back-domain-fronting-as-domain-hiding/">发布了</a>开源工具 Noctilucent，帮助应用开发者逃避审查和绕过防火墙。<a href="https://github.com/SixGenInc/Noctilucent">源代码</a>的不同组件采用 BSD 和 GPL 许可证发布在 GitHub 上。Noctilucent 设计从某种程度上复活被众多云服务商<a href="https://www.solidot.org/story?sid=56347">禁止</a>的域前置 (Domain fronting) 功能。域前置是一种隐藏连接真实端点来规避审查的技术，其原理为在不同通信层使用不同的域名，在明文的 DNS 请求和 TLS 服务器名称指示中使用无害的域名来初始化连接，而实际要连接的被封锁域名仅在创建加密的 HTTPS 连接后发出，使其不以明文暴露给网络审查者。新的技术被称为域隐藏，能实现域前置的隐藏真实域名的目的。它比域前置更灵活，只需要把域名 DNS 记录托管在 Cloudflare，而主机服务器可以托管在任何地方。<p>
+➜研究称新冠无症感染者携带的病毒与有症状者一样多
+https://www.solidot.org/story?sid=65197	22692
+韩国一项研究<a href="https://www.bbc.com/zhongwen/simp/science-53697692">显示</a>，无症新冠病毒感染者身上携带的病毒数量与有症状者一样多。韩国研究人员通过咽拭子和鼻腔拭子检测了近 2000 人，发现那些在测试时没有任何症状，包括后来也从未出现病状者身上携带的病毒与有症状者同样多。而且，研究人员通过对无症状者定期检测中还发现，新冠病毒会在他们体内持续很长一段时间。但同有症状者相比，无症状者体内病毒彻底消失的时间也略快些。例如，无症状者从被确诊阳性到最后检查转阴性平均为 17 天，但有症状人这一过程则需要 19.5 天。韩国研究人员的这一测试和研究是在社区隔离中心进行的，参与测试者中没有严重病例，而且，他们都相对年轻和健康。
+。<p>
