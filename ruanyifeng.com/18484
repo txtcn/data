@@ -111,7 +111,7 @@ grid-template-rows: auto 1fr auto;
 </code></pre></blockquote>
 <p>CSS 代码如下（<a href="https://codepen.io/una/pen/mdVbdBy">CodePen 示例</a>）。</p>
 <blockquote><pre><code class="language-css">
-.contariner {
+.container {
 display: grid;
 grid-template: auto 1fr auto / auto 1fr auto;
 }
