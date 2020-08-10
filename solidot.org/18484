@@ -29,3 +29,9 @@ https://www.solidot.org/story?sid=65201	33939
 ➜中国论文数跃居世界第一
 https://www.solidot.org/story?sid=65202	37176
 在自然科学领域的论文篇数上，中国已超过美国<a href="http://cn.nikkei.com/industry/scienceatechnology/41596-2020-08-10-09-20-27.html">跃居第 1 位</a>。中国在研发费方面也勐追美国。在研究者人数方面，中国最多，通过赴美国留学等方式推进培育。科学论文篇数是衡量一个国家的研发活跃程度的最基本指标。由于各年波动明显，以 3 年平均进行计算。中国 2017 年（2016～2018年平均）的论文篇数为 30 万 5927 篇。超过美国的 28 万 1487 篇，跃居第 1 位。第 3 位是德国，为 6 万 7041 篇。日本为 6 万 4874 篇，排在第 4 位。从论文的全球份额看，中国为 19.9％，美国为 18.3％，德国仅为 4.4％。<p>
+➜恶意 Tor 出口节点如何利用用户
+https://www.solidot.org/story?sid=65203	46844
+Tor 出口节点是构成 Tor 回路的三个中继的最后一跳，连接了 Tor 匿名网络与开放互联网。根据目标网站使用的是 HTTPS 还是 HTTP 协议，决定了出口节点是否能看到和操纵用户访问的内容。研究人员报告，<a href="https://medium.com/@nusenu/how-malicious-tor-relays-are-exploiting-users-in-2020-part-i-1097575c0cac" target="_blank">恶意 Tor 出口节点的情况过去几个月恶化了</a>，恶意出口节点的比例占到了所有出口节点的 24%。这意味着 Tor 浏览器用户有很高的可能性会通过恶意出口节点访问目标网站。恶意出口节点背后的运营者会对 Tor 用户发动中间人攻击，选择性的移除 HTTP-to-HTTPS 重定向，利用被称为 ssl stripping 的方法让目标网站通过 HTTP 而不是 HTTPS 加密连接访问，攻击者将能看到 Tor 用户访问的明文内容，并根据需要修改传输的内容。攻击者主要针对的是数字货币相关的网站，会修改 HTTP 明文流量中的钱包地址，用自己控制的钱包地址替换用户传输的地址，窃取比特币。此类的攻击并非罕见，但攻击规模如此巨大则是前所未有。<p>
+➜为什么说美国难以屏蔽微信
+https://www.solidot.org/story?sid=65204	49856
+上周美国总统特朗普<a href="https://www.solidot.org/story?sid=65174">签署行政令</a>，宣布 45 天后禁止与腾讯微信和字节跳动 TikTok 进行任何交易。行政令的措辞<a href="https://cn.nytimes.com/business/20200810/trump-executive-order-tiktok-wechat/">相对模煳</a>，不清楚其适用范围有多广。字节跳动很可能会出售 TikTok，但腾讯显然不会出售微信，在 45 天之后真正可能会面临禁令的是腾讯。微信实际上本身是一个操作系统，聊天功能只是其众多功能很小的一部分，它包含了通讯、娱乐和商务功能于一身，从某种程度上它是 Facebook、LinkedIn、PayPal、Venmo、Skype、Uber、Gmail 和 eBay 等的合体。它是中国最流行的消息应用平台，也是中国海外华人和在中国有业务的商人最常使用的应用之一，除非与中国彻底脱钩，他们不可能会放弃使用微信，因为防火长城其它消息应用在中国基本上无法使用。<a href="https://tech.slashdot.org/story/20/08/09/1712228/cringely-predicts-the-us-cant-stop-wechat">美国会如何禁止微信</a>？即使建立了美版的防火长城，海外微信用户也能通过 VPN 等工具绕过封锁，毕竟 VPN 已是中国海外用户必备的工具了。<p>

@@ -41,3 +41,22 @@ http://www.expreview.com/75596.html	34127
 ➜2020年《财富》世界500强排行榜公布
 http://www.expreview.com/75599.html	38298
 <p>《财富》在2020年8月10日与全球同步发布了最新的《财富》世界500强排行榜，同时，统计出今年《财富》世界500强排行榜企业的营业收入达到33万亿美元，创下历史新高，接近中美两国GDP的总和。进入排行榜的门槛（最低销售收入）也从248亿美元提高到254亿美元。</p><p>根据《财富》公布的榜单，沃尔玛连续第七年成为全球最大公司，中国石化仍位列第二，国家电网上升至第三位，中国石油位列第四，而壳牌石油下降至第五位。在盈利方面，沙特阿美仍以882亿美元的利润位居榜首，伯克希尔-哈撒韦排第二，苹果退居第三，工、农、建三大中国银行继续位列利润榜前10位。微软凭借它的云业务，利润同比暴增近137%，进入利润榜10强，位居第五。</p><p>今年上榜的互联网相关公司共有7家，分别是亚马逊、Alphabet公司、Facebook公司、京东集团、阿里巴巴集团、腾讯控股有限公司和小米集团。其中排名提升幅度最大的是阿里巴巴，上升50位。</p><p>具体到行业方面，在今年的上榜公司总数名单中，排名前十的行业分别是银行（50）、车辆与零部件（34）、炼油（29）、人寿与健康保险（26）、采矿/原油生产（23）、食品店和杂货店（19）、贸易（19）、金属产品（18）、财产与意外保险（17）以及电信（16）。</p><p>完整榜单大家可以<a href="http://www.fortunechina.com/fortune500/c/2020-08/10/content_372148.htm" target="_blank">点击这里</a>了解，行业榜单<a href="http://www.fortunechina.com/fortune500/c/2020-08/10/content_372141.htm" target="_blank">点击这里</a>了解，中国上榜公司<a href="http://www.fortunechina.com/fortune500/c/2020-08/10/content_372146.htm" target="_blank">点击这里</a>了解。</p>
+➜NVIDIA官方挂出“终极倒计时”，Ampere游戏卡可能在8月31日发布
+http://www.expreview.com/75601.html	53760
+<!-- CUDA --><p>今晚，NVIDIA的GeForce品牌官方Twitter帐号挂出了一段神秘的视频，描述只有三个点。同时其帐号的Banner更换成了一副带有倒计时的图像，上面的21天暗示着NVIDIA将会在本月末，也就是8月31日，要搞事情了。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/08/10/image-20200810224213520.png" alt=""/></p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/08/10/ultimatecountdown.jpg" width="100%" alt=""/></p><p>需要指出的是，一代经典，同时也是奠定GPU概念基础的GeForce 256显卡就发布于1999年8月31日，今年正好是它发布的第21周年。NVIDIA很有可能会在21周年当天发布自家的最新游戏显卡产品，也就是基于Ampere架构的游戏卡。两年之前，也差不多是这个时间点（稍早那么十来天），NVIDIA发布了Turing游戏卡。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+title: "首批RTX 30系显卡规格推测表",
+header: ["型号","核心","制程","SM组数","CUDA核心数","显存类型","显存位宽","显存频率","显存容量","TGP"],
+width: '96%',
+padding: '8px 15px',
+columnWidth: 'MAX', //表格单元宽度，"MAX"最大内容显示，""AVG"平均，"AUTO"自动，指定[15,16,20]
+align: 'left',
+id: tableid,
+data: [
+["RTX 3090","GA102-300","Samsung 8nm","82","5248","GDDR6X","384-bit","19~19.5Gbps","24GB","~350W"],
+["RTX 3080","GA102-200","Samsung 8nm","68","4352","GDDR6X","320-bit","19Gbps","10GB","~320W"],
+["RTX 3070 Ti","GA104-400","Samsung 8nm","48","3072","GDDR6","256-bit","Unknown","16GB","~250W"],
+["RTX 3070","GA104-300","Samsung 8nm","46","2944","GDDR6","256-bit","Unknown","8GB","~220W"],
+]
+});</script></div><p>据我们目前所得到的消息，首批发布的Ampere游戏卡包括GeForce RTX 3090、RTX 3080、RTX 3070 Ti和RTX 3070，当然，可能也会有RTX 3080 Ti这样的产品。另外，这次的公版显卡应该会采用新型的电源接口以满足增加了不少的TGP需求。</p><p>Ampere游戏卡预计将会在核心规模上有一定的扩大，同时核心频率和显存频率将会去到更高，其核心架构的变化可能主要集中于Tensor Cores和RT Cores上面，继续推进NVIDIA目前主打的光追和AI的理念。</p>
