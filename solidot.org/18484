@@ -1,0 +1,3 @@
+➜新工具用域隐藏代替域前置
+https://www.solidot.org/story?sid=65193	12771
+在上周举行的  DEF CON 28 安全会议上，安全公司 SixGen 的 CTO Erik Hunstad <a href="https://www.zdnet.com/article/def-con-new-tool-brings-back-domain-fronting-as-domain-hiding/">发布了</a>开源工具 Noctilucent，帮助应用开发者逃避审查和绕过防火墙。<a href="https://github.com/SixGenInc/Noctilucent">源代码</a>的不同组件采用 BSD 和 GPL 许可证发布在 GitHub 上。Noctilucent 设计从某种程度上复活被众多云服务商<a href="https://www.solidot.org/story?sid=56347">禁止</a>的域前置 (Domain fronting) 功能。域前置是一种隐藏连接真实端点来规避审查的技术，其原理为在不同通信层使用不同的域名，在明文的 DNS 请求和 TLS 服务器名称指示中使用无害的域名来初始化连接，而实际要连接的被封锁域名仅在创建加密的 HTTPS 连接后发出，使其不以明文暴露给网络审查者。新的技术被称为域隐藏，能实现域前置的隐藏真实域名的目的。它比域前置更灵活，只需要把域名 DNS 记录托管在 Cloudflare，而主机服务器可以托管在任何地方。<p>
