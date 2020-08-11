@@ -1,0 +1,71 @@
+➜提升UI界面设计效果的快速检查清单
+https://www.uisdc.com/improve-your-product-ui	70287
+<p>这并不是一篇关于设计趋势的文章，而是一篇关于基础的设计准则的文章。如果你是一名 UI 设计师，无论你经验是否丰富，有些设计的基准是需要保证的，有些容易遗忘的细节，需要借助速查清单来进行走查优化。</p>
+<p>这份优化 UI 界面的速查清单，就是帮你搞定这件事情的。</p>
+<h4><span class="auto_menu">1、字体版式</span></h4>
+<p>首先声明，一个项目中最好不要使用超过2种主要字体。不过这种原则已经广为流传，就不多说了，下面说说更细节的事情：</p>
+<h4><span class="auto_menu">1.1、注意大写</span></h4>
+<p>纯大写的字母文本，要额外拉开字母之间的字间距，提升可读性。</p>
+<p><span class="img-zoom"><img alt="提升UI界面设计效果的快速检查清单" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_jjnz7oY9Y-AOOmPWhl6Cbg.png" width="860" height="760" class="alignnone size-full wp-image-384137" /></span></p>
+<h4><span class="auto_menu">1.2、注意超细体的字体</span></h4>
+<p>字重超细的字体要谨慎使用。可以使用浅色，但是要根据字体情况进行选择。如果你设计的文本是装饰性也就算的，如果是需要用户能清晰阅读的，就要特别慎重，能不用就不用，否则在部分手机屏幕上看起来会非常糟糕。</p>
+<p><span class="img-zoom"><img alt="提升UI界面设计效果的快速检查清单" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_NMTRJJMbDZ0J-Kuc8vLuhg.png" width="860" height="874" class="alignnone size-full wp-image-384136" /></span></p>
+<h4><span class="auto_menu">1.3、标题和正文字体尺寸</span></h4>
+<p>先说说网页排版。标题通常分 H1 到 H6 总计6个不同层级，但是通常不会全部用到，你需要确保层级最多不超过 4 个，并且控制它们整体的逻辑和一致性。网页的首屏和登录页面上的大标题，可以用最大的那一级，毕竟，富有表现力的视觉排版是当下趋势。</p>
+<p>但是其他的文本不要和这个标题文本差距太大。英文文本以Chrome 浏览器为例，正文使用 16px 和 17px 这种大小，并且保留 12px 文本作为最小文本。</p>
+<p>另外，同一个段落中，不要同时使用 16px 和 17px 这样相近又不同的文本尺寸，会让用户感到迷惑。</p>
+<h4><span class="auto_menu">1.4、行高</span></h4>
+<p>尽量不要在行高上采用自动行高。通常，现在比较流行的做法，是将行高拉高一些，确保整体版面的透气性和可读性，尤其是涉及到大量文本的时候。</p>
+<p><span class="img-zoom"><img alt="提升UI界面设计效果的快速检查清单" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_LUgz-sd0OxRmBC6SIxQLLQ.png" width="860" height="743" class="alignnone size-full wp-image-384135" /></span></p>
+<h4><span class="auto_menu">1.5、文本和标题的层次结构</span></h4>
+<p>在需要突出显示的部分使用粗体。标题、链接、按钮都在这个范畴内。如果将粗体样式应用到全部文本，这样重点就不突出了。</p>
+<p><span class="img-zoom"><img alt="提升UI界面设计效果的快速检查清单" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_LcEFTy740ApkWy74R8E0lQ.png" width="860" height="808" class="alignnone size-full wp-image-384134" /></span></p>
+<h4><span class="auto_menu">1.6、文字对比</span></h4>
+<p>请特别注意文本的色彩。控制好对比度，确保任何类型的显示器上都可以清晰阅读。在设计占位符文本的时候，这个问题特别突出。</p>
+<p><span class="img-zoom"><img alt="提升UI界面设计效果的快速检查清单" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_9iMCKrEn1PgNbLhHc5MVFw.png" width="860" height="808" class="alignnone size-full wp-image-384133" /></span></p>
+<h4><span class="auto_menu">2、间距和边距</span></h4>
+<p>留白对于整体设计的重要性是毋庸置疑的。留白的变化有助于设计师理清元素之间的关系，提供节奏感，增加平衡感。</p>
+<h4><span class="auto_menu">2.1、去掉多余的框架和线条</span></h4>
+<p>将一个语义块和另外一个语义块分开，最简单的方法就是在两者之间增加一条 1px 的线。但是这并不是最好的方法。</p>
+<p>我见过不少设计作品中，界面中一个又一个线条绘制的盒子相互嵌套，复杂无比，每个盒子都是用 1px 粗细的线绘制的。但是，如今的UI界面上基本不用这种手法了，大量的卡片替代了以往的各种「盒子」，通过投影和间距来控制卡片之间的关系。</p>
+<p><span class="img-zoom"><img alt="提升UI界面设计效果的快速检查清单" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_-kLBXKpubm79xJZYOWZvuQ.png" width="930" height="1433" class="alignnone size-full wp-image-384132" /></span></p>
+<h4><span class="auto_menu">2.2、梳理从属关系</span></h4>
+<p>边距有助于从视觉上来判断元素之间的亲疏关系。当我们考虑一个新闻资讯卡片的布局的时候，它包含有一张图片、一个标题，还有3~4行预览文本和发布日期，那么应该如何分组和间隔？标题和文本应该是一组，这一组和图片、日期的距离更远一些。听起来很令人困惑？看下面的图片你就理解了：</p>
+<p><span class="img-zoom"><img alt="提升UI界面设计效果的快速检查清单" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_aXTyLmhGludOUV_KHDbHrw.png" width="860" height="808" class="alignnone size-full wp-image-384131" /></span></p>
+<h4><span class="auto_menu">2.3、少即是多</span></h4>
+<p>总会有客户或者产品会想把所有的功能和元素都怼到同一个页面或者 APP 当中。这个时候，要你让标题、菜单、文本、特价优惠、社交帐号和电话号码都齐齐整整地塞到一起，同时还要给每个组件搭配上图标。</p>
+<p>说真的，这种问题总不能避免。这个时候可以使用这个理由来试图进行沟通：用户一次接收的信息越少，进行有效操作的可能性就越大。循序渐进地呈现信息，能够让人更加愉悦，用户对于信息的接受性也更强。</p>
+<p>用户永远都不会费力巴拉地去拆解和分析你的页面布局，紧密局促的布局也早已不符合主流审美和日常需求了。</p>
+<h4><span class="auto_menu">2.4、屏幕边缘留白不均匀</span></h4>
+<p>如果你设计的是海报、Banner 或者是 卡片 等我们所熟知的视觉元素，那么请注意边缘留白的设计。如果按照经典的方式来布置（从左上到右下），那么尽量让上方的留白更大，这看起来会让视觉更加稳当，并且更加具有视觉吸引力。</p>
+<p><span class="img-zoom"><img alt="提升UI界面设计效果的快速检查清单" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_hnEmYJZFGBrRqnKvUNrGtQ.png" width="860" height="808" class="alignnone size-full wp-image-384130" /></span></p>
+<h4><span class="auto_menu">3、配色和图像</span></h4>
+<p>Logo、图像、图标、背景这些元素决定了整个设计给人的情绪。所以在设计的时候，需要有针对性地挑选和优化。</p>
+<h4><span class="auto_menu">3.1、关于 LOGO</span></h4>
+<p>我并不经常做 LOGO，但是在我的职业生涯中也起码做过 20 个LOGO。我的经验是：好 LOGO 很难制作。但是设计师只要遵循基本的原则，就能创建出像样的 LOGO。</p>
+<p>比如仔细选择配色。我有一次看到一家名为 「VIP catch」 的钓鱼用品店，他们使用了紫色的 LOGO，从名字、配色到色彩的选择都和钓鱼这个场景没有一点关系。如果选对配色，有针对性地加入一些和钓鱼相关的元素，其实也就好了。</p>
+<p>另外就是，如果你时间有限，就不要试图给品牌 LOGO 设计一个特定的符号或者图形了，因为真的很难做好。最好制作成文本 LOGO，通过微调字体来制作。</p>
+<h4><span class="auto_menu">3.2、阴影</span></h4>
+<p>元素下方的阴影一定不要用黑色。始终基于表层的、前景的元素来选取阴影的颜色和明暗。通常，一个看起来舒适的阴影是通过多个阴影叠加造就的，一个小且明确的阴影，位于正下方，另外一个阴影模煳且弥散，透明度更高。</p>
+<p><span class="img-zoom"><img alt="提升UI界面设计效果的快速检查清单" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_RJX0Q04ZS2dM8c7FoTnaYQ.png" width="860" height="784" class="alignnone size-full wp-image-384129" /></span></p>
+<h4><span class="auto_menu">3.3、图标和图像</span></h4>
+<p>任何可以矢量化的元素，都尽量制作成为矢量的。从符号、箭头到 LOGO ，现在都最好制作成为矢量 SVG 格式，方便开发人员嵌入到设计系统当中。PNG 图标的边缘模煳，在清晰度越来越高的视网膜屏幕上，矢量图形元素不仅更加锐利，而且消耗更少的系统资源。</p>
+<p>如果你正在为网站处理一组图标，请尽量确保这些图标在视觉风格和细节处理上是统一的，看起来是同属一个「家族」的。这意味着图标的笔触宽度、边框半径、视觉重量都应该是一样的。</p>
+<h4><span class="auto_menu">4、其他设计常识</span></h4>
+<p>除了上面的几个常见的要点之外，我还要额外补充几点，它们很难直接归结为一类，但是同样重要。</p>
+<p><span class="img-zoom"><img alt="提升UI界面设计效果的快速检查清单" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_JXmfZJPq1GoK74SCyJDR1Q.png" width="860" height="786" class="alignnone size-full wp-image-384128" /></span></p>
+<h4><span class="auto_menu">4.1、避免使用怪异的布局</span></h4>
+<p>很多 UI 界面元素在过去多年的发展过程中，已经形成了认知广泛的「最佳实践」。如果在设计这些 UI 组件的时候，采用打破甚至彻底违背「最佳实践」的做法，比如将图片+标题+ 文本 的顺序打乱，可能会让人感到迷惑。</p>
+<p>熟悉的设计并不意味着无聊，你总能够在 UI 界面的一些地方找到发挥创造力的地方，而不是在这些有着清晰规则的地方搞创新。设计师和艺术家是截然不同的职业，在设计过程中，创意冲动应该在不干扰用户体验的前提下，进行发挥。</p>
+<p><span class="img-zoom"><img alt="提升UI界面设计效果的快速检查清单" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_Fu9dkLBmYDqTtj3Jqtcpbw.png" width="860" height="784" class="alignnone size-full wp-image-384127" /></span></p>
+<h4><span class="auto_menu">4.2、布局尺寸和参数</span></h4>
+<p>在设计移动端 UI 界面之前，应该和开发人员进行充分的沟通，这一点很重要。iOS 和 Android 端的 APP 的尺寸还相对固定，但是如果你设计的是移动端的网页，那么可能涉及到的页面尺寸就非常多了，这个时候就要用到断点非常多的网格系统来进行响应式的设计了。</p>
+<h4><span class="auto_menu">4.3、乱数假文</span></h4>
+<p>Lorem Ipsum 在中文中叫乱数假文，它是自动生成的一种占位符。在如今的设计领域当中，直接使用乱数假文看起来非常不专业，因为无论是 Sketch 还是 Figma 当中都有太多的插件，可以帮你生成符合语境的占位符内容。在此基础上还有另外一个要点，就是展示性的组件内容也不要简单地复制，尽量使用不同的图片和配色，让它们看起来更加真实。</p>
+<h4><span class="auto_menu">结语</span></h4>
+<p>这份UI快速检查清单目前是比较符合当下 UI 设计行业的需求的，但是它并非是教条，在特定的情况下，你可能不用遵循它。当然，在多数时候，这份清单能够帮你让设计更加优秀。</p>
+<p>延伸阅读：</p>
+<p>[link  https://www.uisdc.com/selection-controls-ui-component]</p>
+<p>[link  https://www.uisdc.com/button-design-user-interface]</p>
+<p>[link  https://www.uisdc.com/text-fields-forms-design]</p>
+<p>[link  https://www.uisdc.com/10-tips-financial-ux-design]</p>
