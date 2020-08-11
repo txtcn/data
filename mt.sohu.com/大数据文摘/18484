@@ -1,0 +1,214 @@
+➜英特尔20GB数据被黑客泄漏！包含未发芯片文件，内部密码多为intel123
+http://www.sohu.com/a/412352328_308467	16514
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200810/daf80075b8224dacbb8751924d4e0a04.png" max-width="600" /></p>
+<p><strong>大数据文摘出品</strong></p>
+<p><strong>来源：Arstechnica</strong></p>
+<p>近日，英特尔发生了一起重大的数据泄漏事故，超过20GB的专有数据和源代码被放在了网上。</p>
+<p>这20GB的泄漏数据不仅量大，而且包含的内容非常重要，文摘菌稍微细数几件：</p>
+<p>被泄漏内容包含<strong>英特尔未发布芯片示意图</strong>；英特尔一直被怀疑的<strong>“后门”</strong>情况也在被泄漏代码中出现；此外，英特尔<strong>为重要客户SpaceX设计的相机驱动程序的文件</strong>也赫然其中。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200810/eaf05b6d6d3f44c69dc5311117123a8d.png" max-width="600" /></p>
+<p>目前英特尔正在调查这一事件，据安全研究人员称，该泄漏来自今年早些时候的一次数据泄露。</p>
+<p>该公司的一位女发言人说，英特尔官员不相信这些数据来自网络入侵，公司仍在努力确定这些材料的最新情况，到目前为止，没有迹象表明这些数据包括任何客户或个人信息。</p>
+<p>英特尔的一位高管表示：“我们正在调查这次的泄漏事件。”“该信息似乎来自英特尔资源与设计中心，该中心托管着供我们的客户、合作伙伴和其他已注册访问权限的外部方使用的信息，我们认为，具有访问权限的个人可以下载并共享这些数据。”</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>泄露的20G包含了哪些内容？</strong></p>
+<p>这些泄露数据由瑞士软件工程师Tillie Kottmann发布，他在推特上补充了更多的细节。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200810/1816aefc49ee44df9041187d8c0999bc.png" max-width="600" /></p>
+<p>Kottmann将这次的数据泄漏称为Exconfidential Lake，Lake是英特尔10纳米芯片平台的内部名称。他们表示，他们从今年早些时候黑入英特尔系统的黑客手中获得了这些数据，这次的黑客攻击在未来会被其他机构模仿。</p>
+<p>Kottmann写道：<strong>“根据NDA或Intel Restricted Secret，大多数数据内容在以前从来没有发布过，并且被归类为机密。”</strong></p>
+<p>包括以下数据内容：</p>
+<ul>
+<li>英特尔ME Bringup指南+（闪存）工具+各种平台的示例</li>
+<li>Kabylake（Purley平台）BIOS参考代码和示例代码+初始化代码（其中一些作为具有完整历史记录的导出git存储库）</li>
+<li>英特尔CEDFK（消费电子固件开发套件）SOURCES</li>
+<li>适用于各种平台的芯片/ FSP源代码包</li>
+<li>各种英特尔开发和调试工具</li>
+<li>针对Rocket Lake S和其他潜在平台的Simics Simulation</li>
+<li>各种路线图和其他文件</li>
+<li>英特尔为SpaceX制造的相机驱动程序的二进制文件</li>
+<li>未发布的Tiger Lake平台的原理图、文档、工具+固件</li>
+<li>Kabylake FDK培训视频</li>
+<li>适用于各种Intel ME版本的Intel Trace Hub +解码器文件</li>
+<li>Elkhart Lake Silicon参考和平台示例代码</li>
+<li>适用于各Xeon平台的Verilog内容，不确定到底是什么</li>
+<li>用于各种平台的调试BIOS / TXE构建</li>
+<li>Bootguard SDK（加密的zip）</li>
+<li>英特尔Snowridge / Snowfish过程模拟器ADK</li>
+<li>各种原理图</li>
+<li>英特尔营销材料模板（InDesign格式）</li>
+<li>其他</li>
+</ul>
+<p><strong>被泄露内容可更新到五月，包括未发布芯片</strong></p>
+<p>根据泄露的材料显示，<strong>其中包括了英特尔客户所需的设计主板、BIOS或其他与CPU和其他芯片兼容的机密材料。</strong></p>
+<p>同时根据多家外媒报道，在对内容进行分析时，发现了一些设计和测试文档、源代码和演示文稿等，<strong>时间横跨从2018年第四季度到今年几个月前的整段时间。</strong></p>
+<p>这些文件和源代码包中的大多数都适用于Intel CPU平台，比如Kaby Lake或即将推出的Tiger Lake，还有其他一些与其他产品有关的文件，例如为SpaceX开发的传感器包。</p>
+<p>泄露的文件中还包括一个专用于英特尔管理引擎的文件夹，而英特尔集成商也知道其中的内容，包括了在设计带有英特尔CPU和英特尔ME的系统时，何时以及如何运行这些自动化测试时的测试代码和建议。</p>
+<p>转储的更新版本之一甚至包括在今年5月5日发布的“Whitley / Cedar Island Platform of the Week”。</p>
+<p>Whitley是Cooper Lake（14nm）和Ice Lake（10nm）Xeons的双槽架构，Cedar Island仅适用于Cooper Lake。</p>
+<p>Cedar Island是位于Cooper Lake和Ice Lake Xeon CPU下的主板架构，这些芯片中的一些已于今年早些时候发布，另一些尚未上市。</p>
+<p>内容包括许多图表和图形，如下所示：</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200810/e1f19e2a75f544f0bbf63fe4e8884958.png" max-width="600" /></p>
+<p>一些内容为某些Ice Lake样品中的电压故障提供了参考。不过，尚不清楚在交付给客户的实际硬件中，这些故障是否还存在，或者存在于英特尔提供给OEM、让他们用于设计自己主板的参考板上。</p>
+<p><strong>黑客是怎么做到的？</strong></p>
+<p>虽然英特尔表示，他们不相信这些文件是通过网络入侵获得的，但 Kottmann 与消息人士的对话截图提供了另一种解释。</p>
+<p>该消息人士称，<strong>这些文件托管在Akamai内容分发网络上的一个不安全的服务器上，</strong>还称已经<strong>使用nmap端口扫描工具识别了该服务器，并从那里使用python脚本猜测默认密码。</strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200810/5ab19a0394524bf09fc814f277a74dfc.jpeg" max-width="600" /></p>
+<p>以下是他们的对话：</p>
+<p>消息人士：他们有一个由Akami CDN托管的在线服务器，不太安全。在一次互联网范围内的nmap扫描之后，我发现我的目标端口是打开的，并根据nmap提供的NSE脚本详细查看了370个可能的服务器列表。 </p>
+<p>我使用一个python脚本来探测服务器的不同方面，包括用户名默认值和不安全的文件/文件夹访问。 </p>
+<p>如果你能猜出其中一个的名字，这些文件夹刚刚打开。然后，当你在文件夹时，你可以回到根目录，点击其他你不知道名字的文件夹。</p>
+<p>Kottmann：该死，真是太好笑了 </p>
+<p>消息人士：最好笑的是，由于另一个错误配置，我可以伪装成他们的任何员工或自己的用户。 </p>
+<p>Kottmann：哈哈 </p>
+<p>消息人士：另一件有趣的事情是，在zip文件中，你可以找到密码保护。它们大多使用Intel123或小写的intel123密码</p>
+<p>Kottmann说，他们并不十分了解该消息来源，但基于该材料的明显真实性，没有理由怀疑该消息来源对如何获得该材料的描述。</p>
+<p>英特尔发言人没有立即对这一说法做出回应。</p>
+<p>许多吃瓜群众都怀疑英特尔的源代码中有<strong>“后门（backdoor）”</strong>。Kottmann告诉Arstechnica，<strong>这个词两次出现在与英特尔处理器芯片组相关的源代码中。</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200810/a072e89e0b1343a5941ad7e939978ec2.png" max-width="600" /></p>
+<p>到目前为止，还没有对源代码的已知分析发现任何绕过身份验证、加密或其他安全保护的秘密方法。此外，在编码中，“backdoor”一词有时指的是调试功能，或有其他善意的含义。</p>
+<p>人们还嘲笑密码intel123和Intel123的使用。这些无疑是弱密码，但它们不太可能是防止未经授权的人员保护存档文件的内容。</p>
+<p>相关报道：</p>
+<p>https://arstechnica.com/information-technology/2020/08/intel-is-investigating-the-leak-of-20gb-of-its-source-code-and-private-data/</p>
+➜疫情宅家别做肥宅，手把手教你在自家体验环法自行车赛！
+http://www.sohu.com/a/412353191_308467	16847
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200810/a8311a9859c94492a4bbc64e0afd7065.png" max-width="600" /></p>
+<p><strong>大数据文摘出品</strong></p>
+<p><strong>来源：WSJ</strong></p>
+<p><strong>编译：张秋玥、夏雅薇</strong></p>
+<p>环法自行车赛是知名的年度多阶段公路自行车运动赛事，每年夏天主要在法国举办。</p>
+<p>而今年，受到疫情影响，它改在一个名为<strong>Zwift的在线平台</strong>上举行。全世界的业余爱好者第一次在家中体验了巡回赛的第四阶段比赛（即Casse-Pattes），没有护照就可以参赛。</p>
+<p>Zwift是一款应用程序，通常通过手机和平板在线播放，室内骑自行车的人可以在超级马里奥卡丁车风格的视频游戏世界中实时骑行。Zwifters无需通过遥控器上的按钮来控制，而是<strong>通过踩踏配备传感器的骑行台来移动游戏里的人物</strong>。</p>
+<p>那，不如尝试自己在室内来个虚拟环法自行车赛~你可以在家里建立自己的<strong>固定式联网自行车</strong>，或许你会意识到室内骑车其实也挺有意思的。还不用担心水喝完了、轮胎漏气了、停放车辆或受伤等问题，还能够保持社交距离呢。</p>
+<p>最重要的是，你不需要先在Peloton投资一大笔钱，就可以开始了。如果你已经有自行车，则可以将其与一些支持蓝牙的小工具配合使用。</p>
+<p>以下是本文作者设置家庭自行车装备的方法。</p>
+<p><strong>基本版</strong></p>
+<p>在为你的自行车选择合适的骑行台时，有几个因素要考虑——尤其是在<strong>后轮大小以及其安装方式方面</strong>，所以请确保你购买的物品都可以退换的。</p>
+<p>最常见的骑行台会<strong>向后轮施加阻力</strong>。沃尔玛上有很实惠的选择，价格在75美元至150美元之间。如果你不是很在意钱，建议购买250美元的Saris牌。它不仅可以提供更平稳且更安静的骑行体验，还可以与Zwift等虚拟室内自行车应用兼容 （稍后会详细介绍）。一般来说，光滑的公路轮胎产生的噪音要比山地越野车的轮胎少。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200810/b0f7ca0ee4cf45fd8b64c9f81632e498.png" max-width="600" /></p>
+<p>除了骑行台之外，你还需要：</p>
+<ul>
+<li>一个支撑前轮的<strong>立式起步器</strong>（9美元），这样你就不会感到是在骑下坡了；</li>
+<li>一个<strong>可吸收声音和汗水的垫子</strong>（25美元）；</li>
+<li><strong>风扇和毛巾</strong>，因为汗水会损坏自行车零件；</li>
+<li><strong>手机或平板电脑支架</strong>（19美元）；升级选择：125美元的<strong>工作台</strong>（可以放在自行车面前放点视频什么的）</li>
+</ul>
+<p><strong>检测你的骑行速度</strong></p>
+<p><strong>脚踏圈速传感器</strong>可检测到你每分钟的脚踏速度有多快，而<strong>速度传感器</strong>可显示你骑过的等效距离。Wahoo推出售价60美元的Blue SC这两种传感器都有匹配。Wahoo app则显示收集的数据并记录锻炼情况。</p>
+<p>了解节奏对间隔训练特别有用。在间隔训练中，高强度的爆发性训练与恢复会交替进行。Global Cycling Network和Studio Sweat的YouTube频道均提供基于RPM的免费锻炼。</p>
+<p>虽然这些传感器可以与任何自行车和骑行台组合使用，但Zwift和其他虚拟自行车平台需要高端阻力骑行台（例如Saris模型）或内置传感器的智能骑行台。</p>
+<p>如果你不想涉及任何传感器，请尝试<strong>在YouTube上免费进行“节奏骑行”</strong>，目的是使你的骑行节奏与音乐的节奏相匹配。</p>
+<p><strong>高级版</strong></p>
+<p>Peloton Digitalis这一app每月收费13美元，无需昂贵的硬件即可提供一些音乐驱动的Peloton体验。</p>
+<p>如果你使用的是iOS设备，则可以连接脚踏圈速传感器以便在教练要求你达到一定RPM时实时查看指标 （暂时不支持Android用户）。你也可以在其他时间加入Peloton的直播课程或录制的瑜伽类课程。</p>
+<p>我自己喜欢室内自行车课的激情。这个Peloton应用程序无法完全弥补这一缺憾。除非你购买Peloton价值$2,245的自行车和每月$40的会员资格，否则你将无法与其他Peloton朋友获得排行榜或应用内视频聊天功能。</p>
+<p>Zwiftis是一个每月15美元的虚拟自行车平台，专为聚会和竞争而设计。也有专门用于室内骑行训练的应用程序-Rouvy，Fulgazand Su ﬀ erfestall使用真实路线的视频镜头代替虚拟环境，但都没有像Zwift那样专注于社交方面。</p>
+<p>你可以在<strong>任何设备上流式传输Zwift</strong>。与电脑相比，我更喜欢iPad，因为它处理图形表现更好。你可以使用Zwift的Apple TV应用在大屏幕上获得更好的体验。你还可以通过Google Chromecast从Android设备流式传输到电视。</p>
+<p>你可以使用完全可自定义的头像在私人聚会或几乎每小时就会举办一次的公共活动中比赛，也可以单纯参加训练路线。</p>
+<p>Zwift在许多方面模拟了真实世界。当你移动到其他骑手后面时，真的会感觉空气阻力有减少，能够以相同的速度在游戏中到更远的地方。不过在有些方面，它与现实世界还是有些差距。比如你<strong>不能滑行</strong>。如果你停止踩踏板，除非你位于比较陡峭的地方并拥有下降状态，否则你画面中的人物将停止移动。</p>
+<p>你还可以<strong>收集提速功能</strong>，这样你在爬坡时更容易。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200810/a2f80ab3aadc45afb7ae1949f7141b25.png" max-width="600" /></p>
+<p>Zwift 允许室内骑自行车的人使用配备传感器的自行车教练员在虚拟环境中同时骑行。</p>
+<p>Zwift使用相对于你的体重的性能的瓦特每公斤（也就是你的输出值，或瓦特数） 进行跟踪。如果你想省钱，可以将类似于Saris这种250美元的阻力骑行台与60美元的速度及脚踏圈速蓝牙传感器配对。但如果你预算充足，建议你选择直接买一台<strong>集合了所有传感器的智能骑行台</strong>。</p>
+<p><strong>更智能的装备</strong></p>
+<p>智能骑行台不仅包含内置传感器并与这些应用程序配对，它们还可以根据虚拟路线的倾斜度自动调整阻力，因此当你的头像在游戏中爬升时，你真的可以“感觉”你在向山丘上骑行。</p>
+<p>我测试了两种不同价格的型号：370美元的Tacx Flow Smart和1200美元的Wahoo Kickr。Flow Smart是一款轮式教练机，安装简单。只需卸下后叉即可开始骑行。Flow Smart旋转起来像巨大的大风扇在呼啸，而价格较高的Kickr则有更安静的嗡嗡声。我更喜欢后者（我确定楼下的邻居也这么想）。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200810/8a6261a008514bb4bfdbefe63a80d808.png" max-width="600" /></p>
+<p>具有蓝牙功能的智能骑行台配有功率、速度和踏频传感器。Tacx Flow Smart（370美元）是一款入门级别、带有车轮并易于安装的型号。Wahoo Kickr（$ 1,200）是一款更加安静的高端轮式骑行台，骑行时会产生更自然的道路感觉。</p>
+<p>我也喜欢Kickr<strong>更流畅、更自然</strong>的感觉。但是，由于它是无轮的（也称为“直接驱动”），因此我们需要对其进行一些改装。拿掉后轮并将链条固定在骑行台的卡带上并不容易；此外我们还可能需要进行其他调整使其适合你的自行车。（在购买之前，请仔细阅读一下卖二手机器的Craigslist，至少他们在我这个地区经常有很多优惠）</p>
+<p>在业余女子环法赛事中， 我在Kickr上在518名骑手中排名第377位。这并不是一场真正的比赛，但我感觉身临其境！第二天在职业女子赛事结束后，我们知道了第四阶段的冠军的结果——来自英格兰的April Tacey比我快了整整30分钟。</p>
+<p>尽管我的自尊有点受挫，但我现在对立式自行车更有兴趣了。我在户外骑行过很远很远，但是我从前并没有对室内骑行产生过什么兴趣。这一活动超级热闹的聊天群组最终把一项听起来很可怜的单人运动变成了一项有趣的社交运动。面对着亟待翻越的重重山丘，有一位Zwift用户表示“至少我们骑行攀爬的过程中有彼此相伴”。</p>
+<p>相关报道：</p>
+<p>https://www.wsj.com/articles/peloton-schmelotonheres-how-to-turn-your-bike-into-a-connected-workout-station-11595163600?mod=tech_lead_pos3</p>
+➜任天堂被黑了！早期游戏源码及设计图大批曝光，原来塞尔达传说还有个血腥版本
+http://www.sohu.com/a/412371183_308467	23614
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200810/aed4e83462ce44e6a25fc098ac050790.jpeg" max-width="600" /></p>
+<p><strong>大数据文摘出品</strong></p>
+<p><strong>作者：刘俊寰、杨威</strong></p>
+<p>玩了这么多年的任天堂，你的打开方式真的正确吗？</p>
+<p>比如，你见过《超级马里奥64》中永远只活在传说中的路易吗？</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200810/9124210f58bf40e483df41eec9990913.jpeg" max-width="600" /></p>
+<p>或者，老年版本的耀西？</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200810/ee99129284b04d90b5150ae51e1021d2.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>再或者，你见过《塞尔达传说》主角林克的早期3D模型吗？</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200810/6d324a86a2f34a3f92c35ec7f05e170f.jpeg" max-width="600" /></p>
+<p>其实，任天堂也没想到这些数据会被广大玩家看到，不过，即使坐拥“东半球最强法务部”，但仍然抵不住黑客的攻击。</p>
+<p>今年4月起，匿名论坛4chan的用户就开始不定期地曝光任天堂的内部存档数据，曝光的内容涉及任天堂的主机操作系统、艺术设计与游戏源代码等方面。</p>
+<p>7月末，曝光也迎来了大爆发，曝光的内容包括<strong>《超级马里奥》《塞尔达传说》《宝可梦》《星际火狐》等游戏系列的开发资料</strong>，涉及<strong>SFC、N64等多个主机平台</strong>，范围之广、体量之大，可以算是史无前例。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200810/4dc1c1e318724b129001c8fe744e516b.jpeg" max-width="600" /></p>
+<p>这次的大曝光也被玩家们戏称为“Gigaleak”（大泄露）。</p>
+<p>和之前数据泄露事件一样，玩家们纷纷开始研究起这些繁杂的数据，试图找出数十年前任天堂开发者的思路与脑洞。</p>
+<p>也有一些开发者注意到了相关信息，比如《星际火狐》开发者Dylan就发推特表示了疑惑：什么情况？这些资料我自己都30年没看过了，我当时就是随便拿用这些数据用早期C++来学习编程语言的，黑客到底从哪找到这些数据的？？？！！</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200810/6e115b8ed4714285a5e5d637eee2a691.jpeg" max-width="600" /></p>
+<p>他还同时发布了泄漏数据的照片，这些照片是30年前他为Star Fox 2制作的工具，他在推特上十分震惊地评论道“黑客到底从哪里得到这些数据的？”</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200810/5efdf039f3af467dbf1a2040d2423ce8.jpeg" max-width="600" /></p>
+<blockquote>
+StarFox的源代码似乎已经大量泄露，人们更感兴趣的是在评论中找到“fuck”这个词，而不是因为我们拥有了游戏中使用过的第一种“多线程”标记脚本语言。
+</blockquote>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200810/7b27928e09704552bd7bdb0805178360.jpeg" max-width="600" /></p>
+<p><strong>爷青回！马里奥“隐藏角色”终登场</strong></p>
+<p>不少《超级马里奥》的玩家可能都记得马里奥那个<strong>身上带点绿的弟弟、2P角色路易</strong>。</p>
+<p>1996年，马里奥系列第一部3D作品《超级马里奥64》在日本上市，但是任天堂的游戏设计师、马里奥之父宫本茂表示，由于<strong>存储空间不足</strong>，不得已下移除了双人分屏游戏的功能，路易也就这么下线了。</p>
+<p>不少玩家一度认为，路易会作为《超级马里奥64》的隐藏角色登场，结果在无数次失败的猜想与尝试后无功而返。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200810/f2c6024412394d78b3c5b0682b9505d9.jpeg" max-width="600" /></p>
+<p>有玩家将游戏中出现的雕像的底座文字解读为“L is Real 2401”，并认为这是路易在游戏中存在的证明。</p>
+<p>在这次曝光的数据中，有玩家发现，<strong>《超级马里奥64》源代码中的确存在路易的角色数据与模型</strong>，这也证实了宫本茂的说法：任天堂在开发《超级马里奥64》时，确实尝试过添加双人游戏功能，也尝试过让路易加入游戏。</p>
+<p>于是，为了秉承着不能让任天堂的数据白白泄露出来就完事的想法，不少MOD开发者对曝光的模型进行了处理，制作了更完善的路易模型，同时也成功地把路易的模型替换进了游戏中。</p>
+<p>也就是说，靠着泄露的数据，<strong>玩家终于在《超级马里奥64》里见到了传说中的“隐藏角色”路易</strong>。</p>
+<p>除了游戏数据外，还有玩家扒出了一些<strong>开发者的个人日志与邮件备份</strong>，其中记录了大量的生活琐事。</p>
+<p>我们都知道，在游戏开发过程中，任天堂是出了名的啥都不会说，就算是死忠粉们也很难拿到游戏开发内部和先行爆料。</p>
+<p>也正是这种不透明的制度，这次的数据泄露<strong>在粉丝群体内部引起了狂欢</strong>。</p>
+<p>这些数据的泄露让一些可能永远都不为人知的游戏彩蛋与开发秘闻终于得以重见天日，对于老游戏的MOD制作者与模拟器开发者来说，源代码<strong>也能为他们的工作提供便利</strong>。</p>
+<p>不少用户也尝试从数据中找到一些任天堂的彩蛋。</p>
+<p>比如一位推特用户找到了最初《塞尔达传说》的血腥版本👇</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200810/62bb1f9d10254b8291d6127993310de6.png" max-width="600" /></p>
+<p>《塞尔达传说 时之笛》的早期神庙长这样👇</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200810/9fbd2d49e26647f2b6ab9032b069c3fe.png" max-width="600" /></p>
+<p>还有PokemonGo中未发布的精灵样图👇</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200810/d6ea5ca4051b4051b5628e598533eec7.png" max-width="600" /></p>
+<p><strong>泄露的真的是任天堂的源代码吗？你确定？</strong></p>
+<p>尽管任天堂没有回应这次数据泄露事件，但据两位知名的任天堂数据挖掘者称，从发布的数据量上看，代码应该是<strong>合法</strong>的。</p>
+<p>“人们相信这些文件是真实的，因为其数量之大，像不可能破解的秘密ID之类的东西。”Orcastraw说。从泄露事件发生起，他就一直在分享他在数据中发现的一些重要秘密。</p>
+<p>任天堂知名黑客MrCheeze也表示：“要<strong>伪造这些数据相对比较困难</strong>，因为你需要‘从头开始创造这些游戏’，也就是说，你必须提交数千个文件，这几乎是不可能的。”</p>
+<p>外界的揣测再怎么令人信服也只能是揣测，不过，最近，一位任天堂前员工证实了这次泄漏事件。</p>
+<p>至于黑客到底是怎么获取到的这些文件，目前还没有确切的说法。</p>
+<p>今年任天堂的泄露事件尤其多，但由于这些数据都是<strong>匿名上传</strong>的，很难推断中间到底发生了什么。Cheeze说，这一切都源于相同的特定信息泄露，但不能确定，“我们只能推测”。</p>
+<p><strong>为什么这次的泄露还存在道德争议？</strong></p>
+<p>尽管这次的泄露对于粉丝群体来说是一次“过年”般的狂欢，但仍需要为一些人敲一敲警钟，因为可能一不小心你就违法了，要知道，归根结底，<strong>这还都是任天堂公司的私有资产啊！</strong></p>
+<p>站在道德层面，这些东西其实并不应该被更多人看到。</p>
+<p>试想一下，如果你是一款爆红游戏的开发者，或者说，你是一个小有名气的作家，你愿意你早期的创意草稿和想法就这么一丝不挂地在互联网上公布吗，这意味着，<strong>你已经失去了对自己作品的控制权</strong>。</p>
+<p>而且，就这次的泄露事件而言，很难不把其推到道德层面上，因为其中<strong>包括了太多的私人信息</strong>，甚至一个档案中还叙述了“土豆头”的童年经历。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200810/a26404df34164025be6982a055f60962.png" max-width="600" /></p>
+<p>同时，从历史和保护主义者的角度来看，这次的泄漏也是令人难以置信。</p>
+<p>这是对电子游戏界最具影响力和最隐秘的公司之一的游戏过程和废弃想法的一次罕见的观察，对于挖掘数据的保护主义者来说，这种兴奋会受到道德的困扰。从这件事中我们可以提炼出一个问题：<strong>泄密的源头是否抹黑了历史学家可以从中学到的一切？</strong></p>
+<p>“从更实际的角度来说，<strong>数据泄露可以给我们提供重要的历史和时间背景</strong>，这是就最终发布的产品上所缺乏的，”档案管理员Talida解释到。每一个注释的代码块、每一个精灵表的早期草稿、每一个带有不完美控件的构建，以及被抛弃的游戏机制，这些都为开发者们如何构建游戏提供了线索和思路，“在某些情况下，我们甚至可以了解到谁参与了游戏的各个方面，而这些知识往往会因为时间的流逝而丢失”。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200810/d04cefc7326c401fb2d98eb5d84db4a9.png" max-width="600" /></p>
+<p>数据泄露也不是第一次发生了。过去，下架游戏的源代码或截图经常被公布出来，有些是来自不能保护自己的知识产权的游戏工作室和发行商。但任天堂的这次泄露却不一样，像《超级马里奥》这样具有开创性经典游戏的未经过滤的完整源代码，或者《塞尔达传说》早期精灵作品的历史链接，泄露的规模是前所未有的，<strong>这可能只对游戏历史爱好者来说是“有利的”</strong>。</p>
+<p>考虑到这次数据泄露中的数据类型和出处，一些游戏开发人员和评论员担心，<strong>视频游戏行业将变得比现在更加机密</strong>，以避免将来发生此类泄漏。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200810/e744992c7224498a807fb9a9f07aaa3f.png" max-width="600" /></p>
+<p>这样的担心也不无道理，这次的数据泄露早已火遍了整个互联网，随着粉丝的推波助澜，可以合理猜想这会愈演愈烈。</p>
+<p>相关报道：</p>
+<p>https://www.polygon.com/2020/7/26/21339018/nintendo-gigaleak-super-mario-64-zelda-pokemon-what-is-it-snes</p>
+<p>https://www.theverge.com/2020/7/30/21347074/nintendo-gigaleak-controversy-history-preservation-archives</p>

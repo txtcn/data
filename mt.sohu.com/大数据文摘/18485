@@ -1,0 +1,122 @@
+➜乘风破浪的马里奥！这个AI带你一口气通29关，你猜连AI都过不去的是哪3关？
+http://www.sohu.com/a/412565004_308467	25099
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200811/ae41cb74c75a4905bcdd3d4e2b563aa4.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>大数据文摘出品</strong></p>
+<p class="ql-align-justify"><strong>作者：牛婉杨</strong></p>
+<p class="ql-align-justify">马里奥的系列游戏自打诞生以来就风靡全球，同时也陪伴了无数人的童年。</p>
+<p class="ql-align-justify">人工智能出现后，不少技术咖都开始尝试，能不能利用AI完成马里奥的一次通关梦？</p>
+<p class="ql-align-justify">比如，这里有一位马里奥游戏疯狂爱好者uvipen就在GitHub上贡献了两种不同的方法，都能让马里奥轻松游走在障碍之间！去年6月，uvipen从2016年的论文《Asynchronous Methods for Deep Reinforcement Learning》中得到了启发，用异步优势Actor-Critic算法(A3C)让马里奥顺利通过了32关中的9关。</p>
+<p class="ql-align-justify">显然，他对之前的方法不够满意，于是经过一年多的钻研，他带着新方法来了！这次，他用 OpenAI 公布的近端策略优化 (Proximal Policy Optimization，简称PPO) 算法，<strong>成功助力马里奥通过32关中的29关</strong>，近乎通关！</p>
+<p class="ql-align-justify">效果大概是这样👇</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200811/8d5b49129f0042368b64636870b3f951.gif" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">强迫症表示这也太舒适了吧，快来和文摘菌一起看看uvipen是如何做到的吧~</p>
+<p><strong>用PPO算法顺利通过29关！如果不行，那就换一个学习率</strong></p>
+<p class="ql-align-justify">这个PPO是何来头？文摘菌也去了解了一下。</p>
+<p class="ql-align-justify">PPO全称是近端策略优化，听这个名字你可能觉得陌生，但是在人工智能圈，这个算法可是早就用于各种游戏对抗中了。</p>
+<p class="ql-align-justify">早在2017年，OpenAI 2017年提出的用于训练OpenAI Five的算法就是PPO，也正是在它的帮助下，<strong>人工智能OpenAI Five首次在电子竞技游戏 DOTA 2 国际邀请赛中打败世界冠军Dendi。</strong></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200811/6f8e6260b8bd46939b1865ea32b5ecbc.gif" max-width="600" /></p>
+<p>Dendi 在第一局比赛中以 2:0 告负，而第二局仅开始十分钟 Dendi 就选择了直接认输。</p>
+<p class="ql-align-justify">由此看来，PPO的强大之处可想而知，<strong>它不仅具备超强的性能，且实现和调优要简单得多。</strong>这也正是uvipen选择使用PPO训练马里奥通关策略的原因。接下来文摘菌就为你介绍一下PPO~</p>
+<p class="ql-align-justify">近端策略优化(PPO)，是对策略梯度(Policy Graident)的一种改进算法。Policy Gradient是一种基于策略迭代的强化学习算法，PPO的一个核心改进是将Policy Gradient中On-policy的训练过程转化为Off-policy，即从在线学习转化为离线学习。</p>
+<p class="ql-align-justify">举一个比较通俗的例子，<strong>On-policy就好比你在下棋；而Off-policy就相当于你在看别人下棋。</strong></p>
+<p class="ql-align-justify">而这个从在线到离线的转化过程被称为Importance Sampling，是一种数学手段。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200811/1325829e867f4bf0b81ed403da145821.jpeg" max-width="600" /></p>
+<p>https://openai.com/blog/openai-baselines-ppo/</p>
+<p class="ql-align-justify">uvipen把代码都放在了Github上，如果你也想成为马里奥的开挂式玩家，可以运行python train.py来训练你的模型。例如：python train.py --world 5 --stage 2 --lr 1e-4 。</p>
+<p class="ql-align-justify">然后通过运行python test.py来测试训练后的模型。例如：python test.py --world 5 --stage 2。</p>
+<p class="ql-align-justify">如果在训练过程中遇到问题，可以尝试换一个学习率。uvipen通常把学习率设为1e-3，1e-4或1e-5，但是也有一些比较难的关卡，比如第1-3关，就连uvipen都失败了70次，不过当他最后将学习率调整为7e-5后，终于过了这关~</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200811/cfbe84f1e14a477f9266e85e1aecec2d.gif" max-width="600" /></p>
+<p class="ql-align-justify">那既然一共完成了29关，剩下的3关分别是哪些呢？作者表示，只有4-4、7-4和8-4这三关没过去，因为这些关都比较难，要求按一定规律才能过去，玩家必须选择正确的道路前进，<strong>如果你选错了路就会陷入“死循环”，从而无法过关。</strong></p>
+<p class="ql-align-justify">比如7-4这一关就要先从下面走一次再从上面走才能过，否则就会一直重复，因此在行进过程中一旦发现重复就一定是错了，需要赶紧换路线。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200811/9f4c2ce121b343119e9fcd4eeaafad03.gif" max-width="600" /></p>
+<p class="ql-align-justify">这一关也被不少玩家称为，马里奥世界中最难迷宫。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200811/29f8efdb80074c2a9e659f910e95ae34.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">不得不说，这对于AI确实十分有挑战性，只通过PPO算法是无法完成的，还需要进一步研究。在这里文摘菌就坐等uvipen更新啦，相信未来他一定能够利用AI完美通关马里奥~</p>
+<p class="ql-align-justify">Github指路：</p>
+<p class="ql-align-justify">https://github.com/uvipen/Super-mario-bros-PPO-pytorch</p>
+<p><strong>去年尝试用A3C通关失败，但是科普很成功</strong></p>
+<p class="ql-align-justify">其实uvipen想要用人工智能通关马里奥也没有那么容易。在去年他就开始了尝试，当时，uvipen使用的是<strong>异步优势Actor-Critic算法(A3C)，虽然只过了9关</strong>，但还是在当时引起了一番讨论。</p>
+<p class="ql-align-justify">uvipen自称是受到2016年这篇论文《Asynchronous Methods for Deep Reinforcement Learning》的启发，于是就想用其中提到的异步优势Actor-Critic算法(A3C)来尝试一番。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200811/96912c62b2c246c8af5ebcb3fde26688.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">论文链接：</p>
+<p class="ql-align-justify">https://arxiv.org/pdf/1602.01783.pdf</p>
+<p class="ql-align-justify">uvipen发现，在他去年实现这个项目之前，已经有几个存储库在不同的常见深度学习框架(如Tensorflow、Keras和Pytorch)中可以很好地重现论文的结果。他认为这些框架都很好，<strong>只不过在图像预处理、环境设置和权重初始化等很多方面都过于复杂</strong>，会分散用户的注意力。</p>
+<p class="ql-align-justify">因此，他决定写一个更干净的代码，简化那些不重要的部分，同时仍然严格遵循论文中的方法。</p>
+<p class="ql-align-justify">来看看在A3C的加持下马里奥是怎么过关的：</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200811/0d684360c2164a17b2f1ee95f5eeae3b.gif" max-width="600" /></p>
+<p class="ql-align-justify">这简直就是“乘风破浪的马里奥”啊~ 不过也有网友打趣道，马里奥里的各种隐藏彩蛋这下就都不能被发现啦，“不吃掉所有蘑菇的马里奥没的灵魂”~“应该研究一下如何顺利通关的同时拿到所有分”~</p>
+<p class="ql-align-justify">虽然通关没成功，但是uvipen还是特意为了照顾那些不熟悉强化学习的朋友，在他的Github上将A3C分解为更小的部分，并用通俗的语言解释了什么是A3C算法，以及是如何通过这一算法实现的。</p>
+<p class="ql-align-justify">文摘菌也借此机会帮大家复习下什么是<strong>Actor-Critic算法</strong>。</p>
+<p class="ql-align-justify">我们不如这样想，你的agent有两个部分，Actor(演员)和Critic(评论家)，Actor就好比一个淘气的小男孩正在大胆探索着他周围奇妙的世界，而Critic就像是他的爸爸一样需要监督着他，只要孩子做了好事，爸爸就会表扬和鼓励他以后再做同样的事。当然，当孩子做错事时，爸爸也会警告他。孩子与世界的互动越多，采取的行动也越多，他从父亲那里得到的正面和负面的反馈也越多。</p>
+<p class="ql-align-justify">孩子的目标是，从父亲那里收集尽可能多的积极反馈，而父亲的目标是更好地评价儿子的行为。换句话说，<strong>在Actor和Critic之间，有一种双赢的关系。</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200811/49de725fbd6040d39ae0bd69f95f1214.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">那么<strong>优势Actor-Critic算法</strong>就相当于为了让孩子学得更快、更稳定，父亲不会告诉儿子他的行为有多好，而是会举例告诉他，与其他行为相比，他这样做好在哪里。有时候一个例子往往胜过千言万语。</p>
+<p class="ql-align-justify">接下来要说的就是让马里奥通关的关键所在了！对于<strong>异步Actor-Critic优势算法而言，就像是为孩子提供了一所“学校”，有了“老师”和“同学”孩子可以学的更快、更全面</strong>。而且，在学校里孩子们还可以<strong>合作</strong>完成一个项目，他们<strong>每个人都可以做着不同的任务，目标却是相同的</strong>，这样岂不是效率更高。</p>
+<p class="ql-align-justify">同样，uvipen把他用到的相关代码都放在了Github上，感兴趣的小伙伴可以前去了解：</p>
+<p class="ql-align-justify">https://github.com/uvipen/Super-mario-bros-A3C-pytorch</p>
+<p class="ql-align-justify">读到这里，同学们是不是也和文摘菌一样好奇这位同学是何许人也，文摘菌还真查到了~</p>
+<p><strong>Viet Nguyen，一位热爱NLP和CV游戏小能手</strong></p>
+<p class="ql-align-justify">这位Github用户uvipen正是Viet Nguyen。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200811/86c4cef3c49d48eaa401d4ba99ba8f6b.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">https://www.gitmemory.com/uvipen</p>
+<p class="ql-align-justify">原来这位同学拥有计算机科学硕士学位，主修人工智能和机器人技术。主要的研究方向是自然语言处理和计算机视觉。目前身处德国柏林。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200811/1245ccff873c4e0b941d6f054725affa.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">在他的个人项目中，一个叫“QuickDraw”的项目获得了684颗星，是他众多项目中最受欢迎的一个。</p>
+<p class="ql-align-justify">这是他用Python开发的一款在线小游戏，你可以直接在摄像头前画一些简笔画，比如门、衣服、裤子等容易识别的物体，系统首先能够识别出你在画画，其次能够根据你隔空画的轮廓识别出你画的是什么。</p>
+<p class="ql-align-justify">比如，小哥随手就画了个衣服：</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200811/9cbf60a98d6f44bab2f2bb09589656c8.gif" max-width="600" /></p>
+<p class="ql-align-justify">最后，文摘菌给出项目地址，感兴趣的小伙伴可以前去了解：</p>
+<p class="ql-align-justify">https://github.com/uvipen/QuickDraw</p>
+➜全球首款“蚕丝硬盘”！耐高温可重写，能存DNA，还能植入人体
+http://www.sohu.com/a/412565775_308467	25401
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200811/2189c78f4fa04fdb8501d8cb749a6938.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>大数据文摘出品</strong></p>
+<p class="ql-align-justify">想到蚕丝你会联想到什么？蚕丝被？面膜？</p>
+<p class="ql-align-justify">最近，来自中科院、美国纽约州立大学石溪分校和德州大学奥斯汀分校的联合课题组，首次实现了基于蚕丝蛋白的高容量、可重写的生物存储技术。</p>
+<p class="ql-align-justify">也就是说，<strong>未来，你的数据可能不需要再存储在半导体上，而是一个蚕茧中。</strong></p>
+<p class="ql-align-justify">项目的主要参与者、中国科学院上海微系统与信息技术研究所研究员、博士生导师、上海微系统所2020前沿实验室主任陶虎今天在接受《澎湃新闻》采访中表示，这款“蚕丝硬盘”除了能存信息，还能装东西，<strong>比如血液样本、DNA、疫苗，甚至可以植入生物体。</strong></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200811/0cc44ee012844ef79b5736f2e2173032.jpeg" max-width="600" /></p>
+<p>图源：《澎湃新闻》受访者供图</p>
+<p class="ql-align-justify">突然就有了科幻的感觉，天然生物蛋白也可以作为存储信息的介质了！</p>
+<p class="ql-align-justify">8月10日，陶虎团队的相关论文《A rewritable optical storage medium of silk proteins using near-field nano-optics》发表在了《自然纳米技术》（Nature Nanotechnology）上。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">论文链接：</p>
+<p class="ql-align-justify">https://www.nature.com/articles/s41565-020-0755-9?utm_source=other&amp;utm_medium=other&amp;utm_content=null&amp;utm_campaign=JRCN_2_DD01_CN_NatureRJ_article_paid_XMOL</p>
+<p class="ql-align-justify">这篇论文的摘要中提到，生物相容性材料中的纳米级光刻和信息存储，为诸如生物电子学和可降解电子学等无法使用传统半导体制造技术的应用提供了可能性。</p>
+<p class="ql-align-justify">陶虎在澎湃新闻记者的采访中提到，“蚕丝硬盘能同时存储数字信息和生命信息；其生物兼容性良好，<strong>可以植入活的生物体</strong>，比如人体，长期保存甚至永久保存，像电影中士兵佩戴的铭牌一样，制成永不丢失的生命铭牌；又能根据设定，制成寿命可控的时间胶囊，可控地降解，可控消失。它有望在外太空等极端条件下保存信息。”</p>
+<p class="ql-align-justify">蚕丝蛋白是一种以其强度和生物相容性闻名的天然蛋白质，已在此背景下得到了广泛的研究。</p>
+<p class="ql-align-justify">在论文中，陶虎团队介绍了使用蚕丝作为纳米光刻和数据存储的生物功能介质。</p>
+<p class="ql-align-justify">作为一种光存储介质，<strong>目前蚕丝硬盘的存储容量已可达64GB每平方英寸。</strong>而且，研究表明，<strong>蚕丝在各种恶劣条件下均具有长期稳定性。</strong></p>
+<p class="ql-align-justify">其实，在过去的二十年中，人类一直在探索信息存储的光刻策略，包括使用深紫外或极紫外光源，双光束系统和三维存储架构的光刻策略，<strong>已经将光学存储密度提高到每平方英寸数百GB。</strong></p>
+<p class="ql-align-justify">然而，为了获得高空间分辨率，这些方法都不可避免地需要复杂的制造过程，这些过程在时间和成本上均效率低下。此外，常规的光学光刻法受到衍射极限的限制，这阻止了存储密度的进一步增加超过当前的工业标准。</p>
+<p class="ql-align-justify">陶虎团队在论文摘要中提到，世纪之交，IBM描述了一种基于原子力显微镜（AFM）的数据存储方案“Millipede”，该方案具有以30的高数据写入和读取速率实现每平方英寸多TB级的容量、40 nm空间分辨率的能力。</p>
+<p class="ql-align-justify">尽管这项工作代表了技术上的飞跃，并导致了对基于探针的存储方案的进一步研究，但商业应用仍然遥遥无期。</p>
+<p class="ql-align-justify">散射型扫描近场光学显微镜（s-SNOM）为高分辨率纳米技术提供了一个有希望的制造可能，特别是在软质材料上，可以实现超出衍射极限的超分辨率成像。</p>
+<p class="ql-align-justify">s-SNOM产生的近场倏逝波是诱导局部受限高场光学异常有效的工具，这使得在纳米级上制造光敏结构，操作和特性化成为可能，尤其是，倏逝波已被用于处理材料表面的纳米级特征，以及用于制造光学纳米器件和聚合物材料的纳米蚀刻。</p>
+<p class="ql-align-justify">由于中红外s-SNOM的微创性，不需要真空且对蛋白质构象的敏感性，这些生物材料可以固定化并与细菌、病毒、酶和生物标记物等生物实体相互作用，通过开发中红外s-SNOM的光刻功能，同时保留成像功能，纳米尺度操作和功能生物材料的特征可以因此集成到一个单一的平台。</p>
+<p class="ql-align-justify">这个闭环光刻平台可以简化仿生制造，并提供基于探针的存储方案来存储和操纵生物信息。</p>
+<p class="ql-align-justify">为了提高光刻效率以及随后在生物材料中的信息存储、介质材料、入射光和光子之间的协同作用，必须优化介质材料、入射光和扫描头的性能之间的协同作用。在这种情况下，<strong>由桑蚕衍生而来的天然存在的环蛋白的丝素蛋白就非常适合。</strong></p>
+<p class="ql-align-justify">作为一种生物相容的“绿色”介质，蚕丝在暴露于电子、离子束或光后会经历纳米级的多晶型转变。陶虎团队在论文中发现，尖端增强型近场红外纳米光刻（TNINL）可以诱导丝蛋白层的受控形貌和/或相变，其半峰全宽（FWHM）的空间分辨率约为35nm。</p>
+<p class="ql-align-justify"><strong>这些图案具有100nm的间距，相当于64GB平方英寸的存储容量，并且可以重复写入和擦除。</strong></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200811/4fc13c01cb784d42a5dcc5aeca49471c.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">如何在蚕丝硬盘上“写入”和“擦去”数据</p>
+<p class="ql-align-justify">图源：《澎湃新闻》受访者供图</p>
+<p class="ql-align-justify">更值得一提的是，蚕丝因其机械强度，生物相容性，生物降解性，易于功能化和可调节的水溶性而久负盛名。这些有利的特性使我们研究了丝绸蛋白作为可重写的光学存储介质，<strong>信息可以在严酷的环境下保留。</strong></p>
+<p class="ql-align-justify">也就是说，好莱坞大片中常常出现的，<strong>通过微波炉高温销毁、或者砸坏硬盘破坏存储能力的方式在蚕丝硬盘身上怕是不能奏效了</strong>。并且，这些特性也让蚕丝存储可以用于太空勘测等高温高压的使用环境。</p>
+<p class="ql-align-justify">相关报道：</p>
+<p class="ql-align-justify">https://mp.weixin.qq.com/s/IxIbLELZyzO4XQ7adkxVxA</p>
