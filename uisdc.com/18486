@@ -1,0 +1,459 @@
+➜新人来收！4个底部浮层的科普知识点
+https://www.uisdc.com/bottom-floating-layer	58769
+<p>关于底部浮层的定义相信大家都很熟悉，底部浮层通常称为「浮层」或「浮窗」，可用于给予信息提示，也用于展示更多的拓展信息。</p>
+<p>学习知识点之前先来看这篇基础规范：</p>
+<p>[link https://www.uisdc.com/ios-android-persistent-modal-sheet]</p>
+<h4><span class="auto_menu">「角落一」—— 与对话框的「亲属关系」</span></h4>
+<p>单从定义上看，底部浮层与对话框的作用是高度相似的，都是信息提示或是对当前页面信息的延展，但在具体使用场景的交互操作中，二者却大有不同：</p>
+<p><strong>1. 触发方式</strong></p>
+<p>对话框可以自动触发，而底部浮层是必须通过用户操作才可以触发显示，于用户而言底部浮层的显示会符合心理预期。</p>
+<p><strong>2. 关闭方式</strong></p>
+<p>对话框通常会要求用户进行选项操作后才可关闭，关闭方式较单一；底部浮层的关闭方式更多元，对于用户而言有更丰富的选择权。</p>
+<p><span class="img-zoom"><img alt="新人来收！4个底部浮层的科普知识点" class="alignnone size-full wp-image-384080" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sj-20200811-6.jpg" width="1080" height="683" /></span></p>
+<p>底部浮层对比对话框的优势在于，它的显示更符合用户的预期且干扰程度也较低。</p>
+<h4><span class="auto_menu">「角落二」—— 多姿多彩的关闭方式</span></h4>
+<p>底部浮层灵活性很强，提供多种关闭方式：</p>
+<h5>1. 触发浮层上的下一步操作</h5>
+<p>这是最常见的关闭方式，底部浮层通常作为信息的延展，浮层内可进行交互操作。</p>
+<h5>2. 点击浮层外的区域</h5>
+<p>底部浮层不是一个完整的页面，作为主页面的二层出现，因此出现时通常会有黑色蒙层作为遮罩，点击黑色蒙层的区域可将浮层关闭回到主页面。</p>
+<p><span class="img-zoom"><img alt="新人来收！4个底部浮层的科普知识点" class="alignnone size-full wp-image-384075" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sj-20200811-1.gif" width="350" height="758" /></span></p>
+<p>△ 点击黑色蒙层的任意区域即可关闭</p>
+<h5>3. 下拉浮层达到收起的阈值</h5>
+<p>底部浮层的灵活性大，若浮层的高度较小（如未达到屏幕高度的一半），长按浮层顶部可配置是否能够进行拖拽，若浮层是能够进行上下拖拽的，那么长按此处下滑也可将浮层进行关闭。</p>
+<p><span class="img-zoom"><img alt="新人来收！4个底部浮层的科普知识点" class="alignnone size-full wp-image-384076" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sj-20200811-2.gif" width="350" height="758" /></span></p>
+<p>△ 长按浮层顶部往下拖拽即可关闭</p>
+<p>关于收起的阈值有两点可作为拓展说明：</p>
+<p><strong>阈值的设置</strong></p>
+<p>通常是以浮层高度的一半作为临界值。</p>
+<p><strong>浮层首屏下滑</strong></p>
+<p>若浮层高度较大，上下滑动查看内容时，在浮层首屏继续下滑，可将浮层关闭。此设置常见于重浏览的内容浮层</p>
+<p><span class="img-zoom"><img alt="新人来收！4个底部浮层的科普知识点" class="alignnone size-full wp-image-384077" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sj-20200811-3.gif" width="350" height="758" /></span></p>
+<p>△ 上下滑动浏览，滑至首屏再往下滑即触发关闭</p>
+<h5>4. 点击「关闭」按钮</h5>
+<p>底部浮层可根据业务场景需要来配置关闭方式，也可直接放置明确的关闭按钮，点击即可将浮层进行关闭。</p>
+<p>面对多姿多彩的关闭方式，我们在设计的过程里要仔细考虑合适的关闭操作，可以多加思考：若有明确的关闭按钮，是否还需要点击黑色蒙层就进行关闭？若浮层内的内容很重要且交互比较复杂，是否还需要可拖拽的操作？</p>
+<h4><span class="auto_menu">「角落三」—— 随时能「长高」</span></h4>
+<p>前面我们已经说到，底部浮层是可以进行长按拖拽操作的，长按除了可以下拉关闭，也可以进行高度的延伸。关于高度延伸的定义，在此也需要设置一个阈值，到达此临界值松手即可将此浮层的高度延伸至最大高度，若未达到临界值松手即恢复原高度。</p>
+<p><span class="img-zoom"><img alt="新人来收！4个底部浮层的科普知识点" class="alignnone size-full wp-image-384078" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sj-20200811-4.gif" width="350" height="758" /></span></p>
+<p>△ 长按浮层顶部往上拖拽使得高度延伸</p>
+<h4><span class="auto_menu">「角落四」—— 二级浮层也不在话下</span></h4>
+<p>若浮层内容过多，需要对某一点进行特殊说明或者某一块内容的延展时，可配置二级浮层。</p>
+<p><span class="img-zoom"><img alt="新人来收！4个底部浮层的科普知识点" class="alignnone size-full wp-image-384079" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sj-20200811-5.gif" width="350" height="758" /></span></p>
+<p>△ 二级浮层可作为一级某块内容的具体说明或选择的补充</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>底部浮层作为灵活度很高的一个交互组件，适用于丰富的业务场景，我们在做设计时可多思考一点，关于关闭、关于操作是否处于需求和体验的绝佳平衡点，共勉之。</p>
+<p>欢迎关注作者微信公众号：「设计牛奶盒」</p>
+<p><span class="img-zoom"><img alt="新人来收！4个底部浮层的科普知识点" class="alignnone size-full wp-image-384081" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-sj-20200811-7.jpg" width="180" height="180" /></span></p>
+➜日期排版没灵感？我总结了10套排版案例
+https://www.uisdc.com/date-typesetting	61163
+<h4><span class="auto_menu">写在前面</span></h4>
+<p>版式设计在我们的设计中是非常重要的技能，无论是UI设计还是平面设计，都会运用到版式设计相关的知识，在版式设计中最常见的就是图文排版、文文排版。一张图片一段文案在不同的需求情况下我们都可以排版出很多种样式，每一种样式展现出来给人的感觉也是不一样的，美的排版总是会使人眼前一亮，也会使整体的设计更耐看。</p>
+<p>排版也是会根据重要程度划分层级，我们都知道主题文案都需要醒目，让人一眼就能看到，这样才能达到宣传的作用，当然仅仅只是展示主题文案也是远远不够的，达到主题排版，主图排版，小到副标题排版，我们都需要精心的排版，还可以更精细到小到辅助文案以及图形的排版，而今天我们就来看一下日期这样的文案我们可以怎么排版呢？</p>
+<p>日期在一些重要的活动中也是比较重要的信息，比如展会时间，我们需要突出时间，不能用极小的文字排版在角落，用户不注意的地方，这样会给人一种焦虑的情绪，既然是展会活动，那么用户关心的是展会的主题是什么？活动时间是什么时候？活动地址在什么地方？所以这些重要的信息就需要重要突出。而在一些做纪念性的日期我们就可以小化（例如我自己记录自己的学习打卡练习）</p>
+<p>美食作为一个常用分类，也有人总结了常用的排版方法：</p>
+<p>[link https://www.uisdc.com/50-ways-design-food-typesetting]</p>
+<h4><span class="auto_menu">案例分享</span></h4>
+<p>我们常见的日期有年、月、日、时、分、秒，接下来我们就通过对日期的展现做一些不同的排版方式，通过与日期的普通排版方式做对比，我们就可以看出微小的日期排版对整体的设计展现也是有很大影响的。</p>
+<p>简单的日期排版我们通常就只是将年月日对齐排版就算完成了，但是这样的排版方式会影响整体画面的美观，我们对于小文案也需要花一定心思去整理以及排版出更精细的样式，这样给用户的感觉就会觉得你的每一步设计都是用心设计的，并且为了整体的美观，我们 也不得不从细微之处出发。</p>
+<p><strong>日期排版01</strong></p>
+<p>例如下面对于日期的排版，TIME这个文案有时候我们也可以去掉，因为用户看到时间就会明白这是什么，在一定的情况下也是可以去掉的，当然有时候为了整体页面的展示效果，我们也可以加上，便于排版，左边只是将年、月、日并排，时间节点作为一个点排列，下面的文案我们可以根据实际情况选择一些特殊的提示文案做装饰</p>
+<p>而通过对左边简单的日期排版进行改版后，我们会发现右边的日期排版会显得更美观，排版更精妙，也有更多的细节之处，例如2020后紧接着年（YEAR)的提示，08后面标识是周六(SAT.），年月日和时间节点也同时做了层次区分，这样更有利于阅读。</p>
+<p><span class="img-zoom"><img alt="日期排版没灵感？我总结了10套排版案例" class="alignnone size-full wp-image-384019" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-rq-20200811-1.jpg" width="1079" height="560" /></span></p>
+<p><strong>日期排版02</strong></p>
+<p>对于上面同样的日期文案，我们还可以排出右边不同的样式，整体采用横排的方式，将年、月、日同排，时间段缩小处理，使时间之间也能有层次感</p>
+<p><span class="img-zoom"><img alt="日期排版没灵感？我总结了10套排版案例" class="alignnone size-full wp-image-384020" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-rq-20200811-2.jpg" width="1079" height="560" /></span></p>
+<p><strong>日期排版03</strong></p>
+<p>下面的日期是年、日期段、时间段的组合，左边的排版显然是比较常规的分层排版，却主要突出了2020，而一般时间我们在这一年将要发生的事，我们更关心的是哪一天那个时间点，而右边的排版主要突出时间段/点，更能让用户看到自己关心的事件。</p>
+<p><span class="img-zoom"><img alt="日期排版没灵感？我总结了10套排版案例" class="alignnone size-full wp-image-384021" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-rq-20200811-3.jpg" width="1079" height="560" /></span></p>
+<p><strong>日期排版04</strong></p>
+<p>下面这一组日期是有不同年份的，所以我们在排版的时候可以突出显示年份，这样在排版的时候就可以注意层级关系，排除层次感</p>
+<p><span class="img-zoom"><img alt="日期排版没灵感？我总结了10套排版案例" class="alignnone size-full wp-image-384022" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-rq-20200811-4.jpg" width="1079" height="560" /></span></p>
+<p><strong>日期排版05</strong></p>
+<p>这一组日期是比较简单的，只有一个时间点，没有时间段，如果直接按照左边这样的日期排版方式，显然整体看着就很单薄，把这样的日期排版方式融入到版式整体画面中，也一定会显得毫无设计感，而我们只需要将简单的日期经过简单的排版，从年、月、日、时，从上至下依次排列，这样就可以显得信息有层次感，并且阅读也不会有困惑，加上精致的icon做装饰，这样的日期排版就显得更耐看。</p>
+<p><span class="img-zoom"><img alt="日期排版没灵感？我总结了10套排版案例" class="alignnone size-full wp-image-384023" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-rq-20200811-5.jpg" width="1079" height="560" /></span></p>
+<p><strong>日期排版06</strong></p>
+<p>这一组日期也很简单，只有月、日、时，都是属于时间段的信息，通过分析这个时间，月都是10月，是相同的，所以我们可以将月份单独拿出来，作为共用信息，这样就可以精简画面重复的信息，依然采用月、日、时这样从上至下的顺序排列，时间小化，但是利用色块突出，也不会柔化时间点的阅读，再通过一条线的连接，将斜线和时间icon相连，形成一个有趣味性的时间装饰，这样的排版更容易吸引用户的眼球</p>
+<p><span class="img-zoom"><img alt="日期排版没灵感？我总结了10套排版案例" class="alignnone size-full wp-image-384024" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-rq-20200811-6.jpg" width="1079" height="560" /></span></p>
+<p><strong>日期排版07</strong></p>
+<p>下面的日期也是年、日期段、时间段的组合，和第三个日期排版的案例类似，所以存在同样的问题，左边的排版显然是比较常规的分层排版，却主要突出了2020，右边改版后，我们同样弱化年份（2020），提取相同的月份（8月），突出显示日期</p>
+<p><span class="img-zoom"><img alt="日期排版没灵感？我总结了10套排版案例" class="alignnone size-full wp-image-384025" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-rq-20200811-7.jpg" width="1079" height="560" /></span></p>
+<p><strong>日期排版08</strong></p>
+<p>这一个和第五个也是一样的，左边都是年、月、日、时的时间点，没有时间段，第五个我们是采用竖排的方式，而这里我们改版后采用的是横排的方式，突出显示月、日，让整体的层次更加清晰</p>
+<p><span class="img-zoom"><img alt="日期排版没灵感？我总结了10套排版案例" class="alignnone size-full wp-image-384026" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-rq-20200811-8.jpg" width="1079" height="560" /></span></p>
+<p><strong>日期排版09</strong></p>
+<p>下面这一组时间改版，我们主要采用错位竖排的方式，像这样的排版方式，我们可以多用于一些比较有设计感或者比较唯美的画面中，显得每一个小的点，都有用心设计，并且也符合这样的气质</p>
+<p><span class="img-zoom"><img alt="日期排版没灵感？我总结了10套排版案例" class="alignnone size-full wp-image-384027" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-rq-20200811-9.jpg" width="1079" height="560" /></span></p>
+<p><strong>日期排版10</strong></p>
+<p>这一组日期只有年、月、日。左右两边的排版看起来很相似，但是通过对细节的调整，例如2020的弱化，间距的把控，星期几的友好提示，这样就会使整个日期排版看起来更精细、耐看。</p>
+<p><span class="img-zoom"><img alt="日期排版没灵感？我总结了10套排版案例" class="alignnone size-full wp-image-384028" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-rq-20200811-10.jpg" width="1079" height="560" /></span></p>
+<h4><span class="auto_menu">案例实操</span></h4>
+<p>我们通过对上面日期的排版分析和总结，会发现小小的日期排版也是很关键也很追重要的，所以下面我们将通过一张海报案例，来真正体现日期排版对整体画面的重要性。</p>
+<p>海报主题是选择的立秋，虽然立秋以及过去两天了，但是我又学会了这个立秋新的排版技巧，所以我想将这一技巧分享出来，但是这里就不详细讲解海报的设计过程了，主要还是分享日期排版对整体画面的影响作用</p>
+<p>这里就简单的说一下海报设计的思路，海报主题是立秋，所以我现在一片黄色的枫叶作为画面的主视觉，画面整体体现秋天的感觉，一片黄灿灿的画面，给人感觉就像是秋天到了，画面元素简约，只选择了一片枫叶加上它的投影，体现空间感，主题文案排版在枫叶上，与枫叶融为一体，这样用户得分第一视觉就会被主图吸引，同时看到主题相关文案，下面的其它文案通过从|秋|字垂落的竖线，分别右对齐以及左对齐，显得画面规整</p>
+<p><span class="img-zoom"><img alt="日期排版没灵感？我总结了10套排版案例" class="alignnone size-full wp-image-384029" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-rq-20200811-11.jpg" width="559" height="800" /></span></p>
+<p>第一张海报的日期排版就是采用普通常规的排版方式，我们会发现这样的日期排版方式，在整个画面中会显得有点僵硬，并且左右两边不对称的关系，会显得右边偏轻，使画面的平衡感缺失，也正是日期的排版太粗糙的原因，导致整张海报的精细度大减。</p>
+<p><span class="img-zoom"><img alt="日期排版没灵感？我总结了10套排版案例" class="alignnone size-full wp-image-384030" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-rq-20200811-12.jpg" width="559" height="800" /></span></p>
+<p>样机效果</p>
+<p><span class="img-zoom"><img alt="日期排版没灵感？我总结了10套排版案例" class="alignnone size-full wp-image-384031" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-rq-20200811-13.jpg" width="572" height="800" /></span></p>
+<p>我们保持其它元素以及排版都一致，只改变日期的排版方式，我们就会发现右边的海报整体给人的感觉更精美，平衡感更强烈，所以我们在做设计的时候不要忽略每一个点。将每一个点都细心的设计，这样的作品才会更耐看。</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>版式设计是我们设计中最基本的知识，我们在做设计的时候，通常会注意主题主图的排版，而经常会忽略哪些不是很重要的信息，但是我们在分析文案信息的时候，也需要考虑整体设计的目的，有时候日期信息也是非常重要的信息，所以我们在做排版的时候，也需要认真考虑日期与整体需求的关系，并且日期排版风格也会影响整体的气质。</p>
+<p>欢迎关注作者的微信公众号：「设计小余」</p>
+<p><span class="img-zoom"><img alt="日期排版没灵感？我总结了10套排版案例" class="alignnone size-full wp-image-352651" src="https://image.uisdc.com/wp-content/uploads/2019/12/uisdc-hj-20191220-1.jpg" alt="面试紧张？送你15个设计师面试常见问题+参考答案！" width="180" height="180" /></span></p>
+➜为什么你的设计总是同质化？
+https://www.uisdc.com/design-homogenization	63218
+<p>解决设计同质化问题，是我们每个设计师必须要具备的能力，但是又不能为了不一样而不一样，所以以自身品牌出发来做差异化，才是正确的方式。</p>
+<p>菜心最近看了很多别人家的App，总结了一些视觉触点，可以融入我们的品牌基因，大概分为以下几类：</p>
+<h4><span class="auto_menu">控件类</span></h4>
+<p>不用解释太多，这一类就是指一些常用控件，比如按钮、搜索框、弹窗等等，我们可以依次来看下案例</p>
+<p><strong>1. 按钮</strong></p>
+<p>按钮虽然不适合做全局差异化，但是对于一些特殊化的按钮，是可以有一些特殊化处理的，比如一零零一的弹窗上、登录页上的按钮，都有融入一些特殊化的品牌基因：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384220" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ks-20200812-1.jpg" width="1010" height="800" /></span></p>
+<p><strong>2. 弹窗</strong></p>
+<p>弹窗是很好融入品牌基因的触点，例如叭哒的弹窗：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384221" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ks-20200812-2.jpg" width="723" height="800" /></span></p>
+<p><strong>3. 下划线</strong></p>
+<p>大部分app产品中都会有下划线，这是一个非常利于视觉发挥的触点，比如一零零一中，他的下划线，是一个椭圆：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384222" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ks-20200812-3.jpg" width="1080" height="507" /></span></p>
+<p>这个椭圆来自他们家猫猫出来的洞口形状：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384223" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ks-20200812-4.jpg" width="1080" height="482" /></span></p>
+<p><strong>4. 搜索框</strong></p>
+<p>搜索框很容易被我们忽略，但其实它也可以融入一些品牌基因，比如波洞的机械基因，融入在搜索框的样式：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384224" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ks-20200812-5.jpg" width="1080" height="402" /></span></p>
+<p>就是对搜索框的差异化设计。</p>
+<p><strong>5. 滑杆</strong></p>
+<p>如果你的产品有播放器体系，那播放器的滑杆，也是可以融合品牌形象的，比如b站和波洞的滑杆：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384225" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ks-20200812-6.jpg" width="1080" height="621" /></span></p>
+<p>但切记形象不要搞得太复杂，不然就有点本末倒置了。</p>
+<p><strong>6. 占位图</strong></p>
+<p>在图片未加载出来的时候，会有一个默认占位图，这个占位图可以使用品牌符号或者吉祥物，例如波洞的这个占位图：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384226" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ks-20200812-7.jpg" width="1080" height="850" /></span></p>
+<h4><span class="auto_menu">页面类</span></h4>
+<p>这一类一般都是整个页面，比如闪屏啊、活动页面啊、空页面等等。</p>
+<p>我们看看实例：</p>
+<p><strong>1. 闪屏</strong></p>
+<p>每次打开app都会看到一张闪屏，他的目的是缓解用户等待时间，也是很好的植入品牌的触点，比如哔哩哔哩漫画就用了品牌吉祥物：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384227" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ks-20200812-8.jpg" width="750" height="800" /></span></p>
+<p><strong>2. 个人中心</strong></p>
+<p>还是叭哒，个人中心头图也融入了品牌形象：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384228" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ks-20200812-9.jpg" width="750" height="800" /></span></p>
+<p>当然他这个形象不是为了加而加，它配合了养宠物的功能来进行设计的。</p>
+<p><strong>3. 活动入口及活动页面</strong></p>
+<p>我们经常会做一些活动放在产品里，有些活动除了页面头图以外，还会有一个活动入口，这个入口漂浮在页面之上。</p>
+<p>不论是活动入口还是页面头图，都可以与品牌吉祥物结合来进行设计，比如咚漫的：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384229" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ks-20200812-10.jpg" width="1080" height="647" /></span></p>
+<p><strong>4. 登录页</strong></p>
+<p>登录页是每个产品都会有的，也是很好的植入品牌基因的触点，或是logo、或是品牌形象。</p>
+<p>比如一零零一的登录页面，就结合了品牌形象：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384230" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ks-20200812-11.jpg" width="802" height="800" /></span></p>
+<p><strong>5. 空页面</strong></p>
+<p>空页面就是在页面没有内容时候的一种空状态，很好的一个触点，比如躺平的空页面结合了自家形象，再配合差异化构图：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384231" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ks-20200812-12.jpg" width="750" height="800" /></span></p>
+<p>整挺好！</p>
+<h4><span class="auto_menu">标识类</span></h4>
+<p>图标是标识类的一种，除此之外还有一些标签、图形之类的都属于标识类。</p>
+<p>看下案例：</p>
+<p><strong>1. 图标</strong></p>
+<p>图标这个触点，以前在品牌基因法里经常提到，就不多说了，看下咚漫的这组分类图标，结合吉祥物的表情来设计的：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384232" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ks-20200812-13.jpg" width="1080" height="493" /></span></p>
+<p>还是挺生动有趣的。</p>
+<p><strong>2. 排行榜序号图形</strong></p>
+<p>排行榜都会有前三名，这前三名不整点特殊化处理，怎么显得人家高贵呢，比如颜色方面经常使用的手法就是金银铜，而图形其实就可以从品牌图形来切入，比如闪现一下的前三名就用品牌图形：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384233" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ks-20200812-14.jpg" width="948" height="800" /></span></p>
+<p><strong>3. 等级标识</strong></p>
+<p>很多产品都会区分用户的等级，一旦区分就会涉及到很多等级相关的内容，比如等级标识、等级卡片等等。</p>
+<p>这些内容都可以基于自身的品牌形象来进行设计，比如我们看下闪现一下app，他的等级卡片、等级标识，都有用到他们的品牌形象：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384234" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ks-20200812-15.jpg" width="684" height="800" /></span></p>
+<h4><span class="auto_menu">动效类</span></h4>
+<p><strong>1. 加载动画</strong></p>
+<p>这个触点就不多说了，太多产品都在用了，比如b站的这个小电视：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384235" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ks-20200812-16.gif" width="600" height="700" /></span></p>
+<p><strong>1. 点击动效</strong></p>
+<p>这除此之外，其实一些点击动效也可以做一些品牌基因的融入，比如波洞进入首页时有一个波纹的品牌动效：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384237" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bc-20200812-1.gif" width="350" height="758" /></span></p>
+<p>这个动效不仅使用在这里，在icon的点击动效也进行了植入：</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-384236" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ks-20200812-17.gif" width="637" height="143" /></span></p>
+<p>从而形成了一个非常强烈的记忆点。</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>其实除了这些上面的这些例子外，还有很多都应该都可以于品牌基因相互结合，我这里只当抛砖引玉。</p>
+<p>大家仔细思考，你会发现他们并不是出自同一个app，因为并不是所有的触点都适合我们的产品，切记不能为了差异而差异，产生过度设计的现象。</p>
+<p>更多创意方法：</p>
+<p>[link https://www.uisdc.com/summary-of-creative-methods]</p>
+<p>欢迎关注作者的微信公众号：「菜心设计铺」</p>
+<p><span class="img-zoom"><img alt="为什么你的设计总是同质化？" class="alignnone size-full wp-image-229091" src="https://image.uisdc.com/wp-content/uploads/2017/04/cxsjpqr2-1-1-1.jpg" alt="腾讯设计师：进击大厂需要的 9 个能力" width="180" height="180" /></span></p>
+➜如何做好UI界面的表单设计？收下这篇科普干货！（下）
+https://www.uisdc.com/ui-form-design-2	64783
+<p>通过项目实战，带你全面了解在UI设计中设计表单时碰到的问题，避免因表单设计的问题而造成用户的流失。</p>
+<h4><span class="auto_menu">前言</span></h4>
+<p>表单是提升用户体验的一个核心点，但在视觉呈现的时候，大部分都忽视了它的体验。对于一个设计师来说，就需要根据实际情况在设计中进行灵活调整，设计出符合用户预期的表单，不仅能带给用户操作效率上的提升，节约时间成本，还能避免错误出现，在体验过程中心情更加的愉悦。</p>
+<p>上期我们分享了在实际的项目中如何选择合适的表单以及表单的结构介绍，本期将分享在表单设计过程需要注意的细节以及容易碰到问题点。</p>
+<p>[link https://www.uisdc.com/ui-form-design]</p>
+<h4><span class="auto_menu">信息的录入方式</span></h4>
+<h5>1. 文本输入类型</h5>
+<p>用户在完成表单进行文本输入时，当然希望填写的信息越少越好，所以我们尽可能提供合适的输入格式、适当的自动输入、合理的输入顺序以及避免重复输入来提升用户完成表单的效率。</p>
+<p>输入格式： 通过合理的格式约束，能够方便用户更快的完成填写，而减少错误出现。自动对焦第一个输入字段可以引导用户开始进行输入。</p>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-384084" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-be-20200811-1.jpg" width="800" height="440" /></span></p>
+<p>自动输入：根据已知信息，帮助用户预判内容并自动录入。如：用户在输入电话号码前，需要先输入国家的代码，我们可以根据产品的运营市场所在的国家自动录入。</p>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-384085" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-be-20200811-2.jpg" width="800" height="440" /></span></p>
+<p>输入顺序：先易后难；先必填后选填；先公开信息后隐私信息；有关联性的合成一组，特殊问题后置，用户输入时、不会觉得突兀、门槛太高 。</p>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-384086" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-be-20200811-3.jpg" width="800" height="440" /></span></p>
+<p>避免多次询问相同信息，重复输入的内容尽量减少。比如：用户可以显示和隐藏所设置的密码，不是让用户输入2次来进行验证，这对于生成有效的密码更重要。</p>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-384087" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-be-20200811-4.jpg" width="800" height="440" /></span></p>
+<h5>2. 信息选择类型</h5>
+<p>在用户完成表单的过程中，为了应对不同的信息，除了文本输入之外，还会有选择的方式。通常会包含有至少2个或以上的选项，用户可以选择其中的一个或多个。选择的类型最常见的有单选、复选（多选）；选择样式有弹窗、下拉菜单、跳转新页面。它们看起来不复杂，但是在实际使用的时候讲究非常之多，不仅关乎用户体验，而且涉及到一些界面逻辑问题，每种选择方式也都有各自不同的状态显示。</p>
+<p><strong>单选</strong></p>
+<p>单选项是界面中非常常见的表单元素。它通常被用来从一组互斥的相关选项中选择一个单独的选项。当点击一个未选中的单选项时，它会被选中，其他按钮则会变成未选中状态。</p>
+<p>单选可根据用户最可能会选中或者数据统计选择最多的一个标签作为默认选项，如果此字段属于非必填，需要有一个「无」的标签选项，以方便用户在选择之后又不想做出选择时能够更改。单选的样式有单选框、按钮、波动开关，请根据不同需求选择不同的样式：</p>
+<p>单选框：存在两个以上的选项且标签是一句/多句话组成，需要选择一个正确的选项。使用单选框时，靠左对齐的选框+标签的样式是效果最好的，单选框有选中、未选中、不可选状态。</p>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-384088" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-be-20200811-5.jpg" width="800" height="456" /></span></p>
+<p>按钮：存在2~6个选项时且选项信息是一个词语，文本一般不超过4个字，需要选择一个正确的选项，使用按钮样式。有选中、未选中、不可选状态；</p>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-384089" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-be-20200811-6.jpg" width="800" height="508" /></span></p>
+<p>波动开关：只存在两个选项且选项具有判断性质，需要选择一个正确的信息，触发之后能够立即生效，使用波动开关，有开启、关闭两种样式。</p>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-384090" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-be-20200811-7.jpg" width="800" height="363" /></span></p>
+<p><strong>复选：</strong></p>
+<p>复选也是界面中很常见的表单元素，通常会有一个或多选项供用户选择，同时选项的内容是不互斥的，可以选择一个或多个正确的选项。</p>
+<p>复选无需提供默认选项，也不需要提供「无」的标签，用户可在同一选项上重复点击进行选中/未选中操作。复选最常见的样式就只有复选框、按钮两种：</p>
+<p>复选框：一个具有判断性质（用户协议）的选项或者有两个正确答案以上的多个选项组成。复选框有选中、未选中两种常用状态，另外当选项存在子父级关系时，还有一种未定状态，常用于Web端管理后台。</p>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-384091" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-be-20200811-8.jpg" width="800" height="500" /></span></p>
+<p>按钮：存在2~6个选项时且选项信息是一个词语，文本最好不超过4个字，有两个以上的正确选项，使用按钮样式。有选中、未选中、不可选状态；</p>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-384092" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-be-20200811-9.jpg" width="800" height="508" /></span></p>
+<p><strong>选择方式</strong></p>
+<p>不管是单选还是复选、按钮还是框选的形式，都需要结合表单当前选项的实际需求，以对应不同选择方式。最为常见的选择方式有弹窗、下拉、新页面跳转&#8230;等，不同的选择方式有各自的优势和劣势，选择不当可能会造成用户体验差而导致转化率低或用户流失。</p>
+<ul>
+<li>弹窗：在完成表单需要选择的字段内容时，当选项超过6条或特定（低于6条但文本过长、调用系统功能&#8230;）情况，可使用动作栏弹窗的方式；</li>
+<li>下拉（展示与隐藏）：有多种样式，正确使用下拉可以有效帮助用户缩小选择范围；</li>
+<li>新页面：当选项信息较多且复杂时，使用新页面跳转更便于操作。如：选择用户地址则跳转至地址列表。</li>
+</ul>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-384093" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-be-20200811-10.jpg" width="800" height="556" /></span></p>
+<ul>
+<li>对于如何选择适合表单当前字段的方式，还需要注意一下几点：</li>
+<li>需要使用简洁明了的标签，不要让用户思考，使用简短而明确的词汇，让用户明确行为的意图和功能；</li>
+<li>清晰告知用户完成整个表单的步骤 ，给用户一个预期，避免用户在完成过程中产生不耐烦的情绪；</li>
+<li>尽可能减少不必要的表单项目， 每多一个项目需要填写，就有可能流失一部分用户；</li>
+<li>填写顺序应先易后难、先必填后选填、涉及隐私的内容靠后，反之用户容易被吓到，从而放弃整个任务；</li>
+<li>识别代替输入，善于利用技术的力量，技术上能解决的就不要让用户输入；</li>
+<li>能不填写就不填写，能选择就不要输入，能选择一下就不要选两下；</li>
+<li>当输入可能更快时，就别让用户在菜单选择；</li>
+<li>选项过少，避免使用下拉菜单，以免给视觉浏览动线造成了不必要的阻碍；</li>
+<li>选项被禁用或不可用时，将其显示为灰色。</li>
+</ul>
+<h4><span class="auto_menu">信息保存方式</span></h4>
+<p><strong>1. 手动保存</strong></p>
+<p>手动保存即依赖用户做额外操作才可以达成的保存行为。此类保存，我们往往依赖保存按钮。这种保存方式大多用于网页，如：个人信息、简历&#8230;等，大多用于表单内容较多的页面，根据表单信息将内容属性相近或有关联性的放在一组，组的下方提供一个保存按钮。</p>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-384094" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-be-20200811-11.jpg" width="800" height="666" /></span></p>
+<p><strong>2. 自动保存</strong></p>
+<p>自动保存的目的是记住用户已经填写的内容，从而避免用户需要再次输入而放弃。可以设定间隔时间或者用户未操作后的一段时间进行自动保存，比如：每隔30秒或者用户在10秒内未操作，系统进行自动保存一次，比较适合需要大量编辑功能的表单。（这种保存方式属后台发送请求，视觉无任何变化）</p>
+<p><strong>3. 兜底保存</strong></p>
+<p>其实前面两种保存方式在移动端都有局限性，手动保存不利于用户体验，自动保存比较占资源和影响用户操作，那么我们就需要有一个更好的方案。类似信息较多的表单，系统检测到用户填写了部分内容但没有完成表单就要离开时，以弹窗的形式给用户一个温馨提示，让用户自行选择保存还是直接离开。另外在用户使用网络问题或应用意外退出，都应自动保存用户已完成的信息，以便用户再次使用时不会因为重新填写嫌麻烦而放弃。</p>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-384095" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-be-20200811-12.jpg" width="800" height="872" /></span></p>
+<h4><span class="auto_menu">视觉反馈</span></h4>
+<p>设计表单时，对于一些专业词汇或较难理解的概念，要给予明确的解释，有较高要求的表单信息也要给予明确的示例供用户参考。复杂的流程，还可以提供在线咨询帮助，协助用户完成整个表单的填写。当用户填写内容出错的时候，应当指明发生错误的条目，以及错误的原因，最好将反馈定位到具体位置。反馈的前提是不打扰用户，但在用户需要的时候及时出现。</p>
+<p><strong>1. 提示反馈（输入前）</strong></p>
+<ul>
+<li>聚焦状态：光标插入输入框，当前输入框应予以不同的样式，便于用户清楚当前处于什么位置；</li>
+<li>标签提示：针对用户容易出错的格式问题，可在标签中提示，如：字数限制、格式要求&#8230;等；</li>
+<li>引导提示：部分完成难度较大的表单，以图表或按钮引导用户点击，用弹窗或跳转新的页面详细解答。如：需要用户填写相对隐私的信息时，请给予解释这么做的原因及目的。</li>
+</ul>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-384096" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-be-20200811-13.jpg" width="800" height="871" /></span></p>
+<p><strong>2. 验证反馈（输入后）</strong></p>
+<p>行内提示：行内提示不需要服务器上传验证的数据，就可以判断，例如手机格式，当光标离开时理解为用户输入完成，通过前端对格式进行验证；</p>
+<p>toast提示：属于后台验证，需要服务器上传验证数据，或者其他类型的突发事件。如果是表单问题，需要有清晰的定位提示位置，就近原则，方便用户发现并修改操作。请注意错误的字段，请勿在键入后直接清除，请给用户在此基础上修改的机会，记住用户才是决定者。</p>
+<p>弹窗提示：弹窗提示是直接打断当前的操作，同时会引导用户进行新的操作。比如成功提示，是对用户完成信息输入的提示和感谢；失败提示则会通过弹窗引导用户返回或者重新提交。</p>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-384097" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-be-20200811-14.jpg" width="800" height="592" /></span></p>
+<h4><span class="auto_menu">操作按钮</span></h4>
+<p>操作按钮是在表单的结尾，有个确认提交的动作控件，是专门为触控而设计，不仅可点击，更需要容易点击，还需要根据表单的不同条件反馈不同的按钮状态，清晰可预测，应该准确地描述用户点击按钮后会发生什么，比如提交。复位、下一步&#8230;等。按钮是关系到页面的最终转化的重要元素，在按钮的设计上要更加费心。</p>
+<p>颜色是影响按钮隔离效果的首要因素，多个按钮基本都是通过颜色来区分主次。其次才是样式，设计师利用同理心来理解用户「心理模型」，利用设计手段，将「实现模型」改变成用户可以接受和理解的「心理模型」，给用户提供最常用样式，如果设计和常规样式差异过大的按钮，容易带来额外的认知负担。</p>
+<p><strong>1. 按钮位置</strong></p>
+<ul>
+<li>右上角：以纯文字的形式固定在导航栏的右侧（屏幕右上角）；</li>
+<li>表单底部：置于表单的最下方，根据表单内容纵向空间的大小而上下移动。表单内容较多时，容易下沉过多而导致按钮不可见；</li>
+<li>设备底部悬浮：悬浮在设备底部，随时可见，会占用一定的纵向空间。</li>
+<li>跟随键盘：固定在键盘的某个位置，跟随键盘展示或隐藏，常用于单个字段内容的表单。如：登录页面，填写完手机号码，点击键盘上的确定，会跳转至验证码页面，输入验证码后确定，直接登录成功。</li>
+</ul>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-384098" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-be-20200811-15.jpg" width="800" height="1422" /></span></p>
+<p>△ 综合实例，Bee Express项目为了适配中文/英文/泰文状态，综合了每个位置的利弊得出：当表单内容+按钮少于一屏内容时，操作按钮置于表单底部；超过一屏则在设备底部悬浮。</p>
+<p><strong>2. 交互状态</strong></p>
+<ul>
+<li>待激活状态：需要完成表单中的部分条件方可激活，变成正常可交互状态；</li>
+<li>正常状态：已完成表单必填的内容，按钮是可交互的，并且可用的状态；</li>
+<li>激活状态：用户已点击按钮后的状态（且还未结束按按钮的动作）；</li>
+<li>加载状态：送出表单后，正在加载中，但操作还未完成，没有立即实现的状态；</li>
+<li>禁用状态：非交互状态，目前不可交互，但以后可以使用。</li>
+</ul>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-384099" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-be-20200811-16.jpg" width="800" height="565" /></span></p>
+<p><strong>3. 多按钮样式</strong></p>
+<ul>
+<li>主操作按钮：一个表单页面只能存在一个主操作，也是最醒目、最突出、最重要的按钮；</li>
+<li>次操作按钮：存在多个等级，可以通过弱化主操作按钮、图标或突出文字来表现次操作按钮，次级按钮可以多个同时存在。</li>
+</ul>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-384100" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-be-20200811-17.jpg" width="800" height="871" /></span></p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>以上只是对表单设计的一些总结，视觉体验只占了整体体验一部分 。一个表单是否真的好用，还需要深入研究表单设计，从结构化的思维分析表单的设计问题，从而能够全面的认识一个事物并进行了解掌握。通过优化视觉表现提升表单体验只是表象，更多是要考虑到表单最终要帮用户解决什么问题，先想好为什么，再想怎么做。</p>
+<p>更多表单设计方法：</p>
+<p>[link https://www.uisdc.com/quick-reading-weekly-vol57]</p>
+<p>[link https://www.uisdc.com/long-form-design-3]</p>
+<p>欢迎关注作者微信公众号：「能量眼球」</p>
+<p><span class="img-zoom"><img alt="如何做好UI界面的表单设计？收下这篇科普干货！（下）" class="alignnone size-full wp-image-381046" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200722-10.jpg" alt="这13个常用的大厂App里，藏着诸多设计师的匠心和巧思" width="180" height="180" /></span></p>
+➜鬼马的祖父江慎，设计界的一股泥石流
+https://www.uisdc.com/%e3%81%9d%e3%81%b6%e3%81%88-%e3%81%97%e3%82%93	65581
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384439" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yxs-2020813.jpg" width="720" height="161" /></span></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384240" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-1.gif" width="450" height="600" /></span></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384241" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-2.jpg" width="798" height="600" /></span></p>
+<p>我们今天要认识的这位设计师，他的名字叫祖父江慎，光从这个霸气的名字来说，这位老前辈貌似就很占人便宜嘛，在他面前，我们大家都是孙子。那经过后来的逐渐了解，我才知道，原来他的姓氏就叫祖父江。人如其名，祖父江慎本人也相当的搞怪，就像一位顽童一般，非常有趣，给人的印象总是那么的深刻。那接下来我上几张照片，大伙一起来感受一下吧。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384242" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-3.jpg" width="873" height="499" /></span></p>
+<p>只要有祖父江慎出现的画面，我们就能从中感受到他那种，浑身上下都是戏的搞怪特质。我也完全看不出他已经有57岁的样子，而标配的花衬衫又很有夏威夷的风格，让人看起来轻松和休闲，这让我觉得他的形象与日本人的所崇尚的那种简约美学完全不搭边。稀疏的空气刘海加上活泼有趣的表情，都打破了我们对设计师形象上的认知界限。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384243" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-4.jpg" width="800" height="262" /></span></p>
+<p>而在这有趣的皮囊之下，却封印着强大的设计力量，在设计界，他被称为「日本书籍设计的代表」。在设计水准几乎变态的日本，能够得到这样的称号，这也足以说明，这位看起来完全不靠谱的设计师，他的设计实力究竟有多么可怕了吧。凭借着对书籍设计的「掌控力」，他始终走在书籍设计的最前沿。当你不断去试着了解他的设计作品时，你会发现，这哪是祖父，他简直就是祖宗级别的boos！</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384244" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-5.gif" width="157" height="157" /></span></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384245" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-6.gif" width="159" height="159" /></span></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384246" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-7.gif" width="104" height="104" /></span></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384247" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-8.gif" width="104" height="104" /></span></p>
+<p>这种令人仰望的设计创意，简直天马行空，毫无规律可言，如果让我用一句话去总结它的设计，那我也只能用「新奇」这个词来形容它了。祖父江慎的创意切入点极其刁钻，他的想法就和他本人一样，夹杂着稀奇古怪的要素在里面。</p>
+<p><strong>获奖与成就</strong></p>
+<ul>
+<li>1983年入选第四届日本图形展</li>
+<li>1995年装订党比赛日本书籍出版协会会长奖</li>
+<li>1997 年讲谈社出版文化奖 /书籍设计类</li>
+<li>2004年教育，文化，体育和科学技术部奖</li>
+<li>2016年1～3月「祖父江慎+コズフィッシュ：书籍设计」在东京千代田区日比谷图书文化馆开幕；</li>
+<li>2016年4月编撰十年的作品集「祖父江慎+コズフィッシュ」出版，即刻成为业界的设计宝典；</li>
+<li>2016年在ggg画廊举办个展，标志着日本顶级设计师地位的确立。</li>
+</ul>
+<p>近年来，在史努比展、米菲兔展、ggg展、新世纪福音战士展等展览担任视觉、空间等多种职能的艺术指导，并开发出独特的衍生商品</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384248" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-9.jpg" width="800" height="262" /></span></p>
+<p>什么是书籍设计？这个问题对我们一般人来说，可能就是对作者提供的资料的整理这么简单吧。可在祖父江慎眼中，这种简单的整理其实是远远不够的，他认为书籍设计并不是把书的内容直接呈现出来就可以了，深受杉浦康平影响的他，深深坚信一本书，必需要传达出文字所无法传达的内容才行。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384249" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-10.jpg" width="600" height="600" /></span></p>
+<p>书籍所传达的内容，还是让读者自己去发现的好，并不需要把这本书讲了什么事情全都丢在封面。例如说，悬疑小说的书籍设计，就不能让人们知道犯人是谁，因为如果那样的话，就太无趣了。</p>
+<p><strong>1. 祖父江慎关于书籍设计的理念</strong></p>
+<p>书籍的设计只要能够和内容建立起联系就可以了，这种联系会让读者更有兴趣去阅读这本书。这些用文字无法传达的内容，往往要通过图像、数据、计算甚至是借助「五感」去传达。而每当读者发现了这些巧妙细节时，往往都发出「原来书籍还能这样做」的感叹。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384250" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-11.jpg" width="800" height="450" /></span></p>
+<p>在祖父江慎看来，书籍设计不是把脑中储备的知识具象化那么简单，而是要把自己没有的，那些对外部的感动与反馈，通过转化形成最终的设计造形。秉承这样理念的他，反对做事循规蹈矩，如果一本书完全是按照自己想的那样设计出来未免就太过平淡了，所以在设计中他会更注重那些意外的惊喜，不断挑战自己，拓宽书籍设计的疆域。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384251" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-12.jpg" width="600" height="600" /></span></p>
+<p>如果你在日本的书店看到了一本看起来很奇怪的书，那么十有八九就是祖父江慎的作品。对他而言，好的设计不是高技术，也不是表现力。比起这些，祖父江慎更关注每一个设计师如何诠释自己与这个世界的关系。审美和视觉传达这些基本的知识和技术还是必要的。但是，绝对不是重要的事情，学习技术何时开始都可以。</p>
+<p><strong>2. 祖父江慎对于设计的理解</strong></p>
+<p>提到对设计的理解，祖父江慎语重心长的说道：「在设计的过程中，我们需要寻找意想不到的惊喜，感知意外的趣味；我们需要这种力量。应该尝试享受这种「意外」。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384252" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-13.jpg" width="920" height="2832" /></span></p>
+<p>1959年，在日本的爱知县，祖父江慎诞生了，从小就对绘画产生了浓厚兴趣的他，很自然的就读了爱知县旭冈中学的美术系。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384253" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-14.jpg" width="574" height="800" /></span></p>
+<p>随后从爱知县立旭丘高中美术科毕业后，他看到了日本设计师味冈伸太郎的作品，他的字体设计汲取了传统精华的同时又融合了日本现代的设计思想，可以说是影响了一代人。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384254" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-15.jpg" width="601" height="800" /></span></p>
+<p>△ 味冈伸太郎作品</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384255" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-16.jpg" width="400" height="400" /></span></p>
+<p>△ 味冈伸太郎</p>
+<p>由于当时的祖父江慎也受到了味冈伸太郎的影响，所以这让他励志想要成为一名设计师。并在1979年考进了多摩美术大学。没错，就是那个我们耳熟能详的多摩美术大学，包括深泽直人、三宅一生、佐野研二郎等都是这个学校毕业的优秀设计师，可以说是日本顶级的美术学府之一了。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384256" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-17.jpg" width="800" height="411" /></span></p>
+<p>△ 与寿一同工作的场景</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384257" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-18.jpg" width="400" height="395" /></span></p>
+<p>△ しりあがり寿</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384258" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-19.jpg" width="800" height="502" /></span></p>
+<p>而最终让祖父江慎进入书籍设计领域的契机，是他在大学期间认识了（しりあがり寿） 寿前辈，寿邀请了祖父江慎为他的漫画做装帧设计。寿作为漫画研究部的部长，当然也把祖父江拉进了漫画研究组。</p>
+<p>随着两人的密切合作，名为《电气之春》的书出版了，这可是祖父江的第一次，也因此开启了他对书籍设计的迷恋。对新人漫画家寿来说，祖父江慎的设计让他的新书获得了意外的热销。随着自己作品的走红，祖父江慎的书籍设计委托，也开始接连不断。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384259" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-20.jpg" width="490" height="336" /></span></p>
+<p>△ 杉浦康平与《游》杂志</p>
+<p>从1981年开始在大学就读期间，祖父江慎迷恋上了杉浦康平的设计（特别是《游》杂志），并开始在名为「工作社」的日本出版社打工，在也导致了他中途退学。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384260" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-21.jpg" width="615" height="346" /></span></p>
+<p>时间一转就是五年，由于之前公司的老一辈设计师全部辞职，祖父江慎就这样成为了公司的临时艺术指导。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384261" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-22.jpg" width="350" height="263" /></span></p>
+<p>由于这份工作实在太过繁忙，两年后祖父江慎决定离职。随后又在秋元康(日本着名编剧作词家）设立的Kosakusha出版社做了一年左右的艺术指导。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384262" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-23.gif" width="175" height="175" /></span></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384263" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-24.jpg" width="800" height="357" /></span></p>
+<p>△ 工作室外景</p>
+<p>1988年成为了一名自由的独立设计师，并在两年后成立コズフィッシュ（Cozfish）设计事务所。设计项目涉及小说、漫画、绘本、写真等多种类型。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384264" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-25.jpg" width="600" height="600" /></span></p>
+<p>回过神来发现已经亲手设计了2000本以上的封面设计。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384265" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-26.jpg" width="665" height="600" /></span></p>
+<p>当我们走进祖父江慎的工作室，你一定会惊讶，这与我们想象中大师的工作室完全不同，与其说它是工作室，倒不如说它更像是一个堆满书籍的仓库。当然这些都是资料书，比如各国版本的《木偶奇遇记》、各年代的日本小学课本等，观察字体与装帧随年代而变的历程，这被祖父江慎自称为是「时代的眼睛」。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384266" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-27.gif" width="133" height="110" /></span></p>
+<p>当然祖父江慎自己的作品，也被摆放到了屋子里，满满的堆放了三四排书架。狭窄的走廊也只能允许一个人通过。就在这样的创作环境中，祖父江慎带给了我们众多的优秀设计作品。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384267" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-28.jpg" width="658" height="552" /></span></p>
+<p>△ 浴室专用的《少爷》</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384268" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-29.jpg" width="839" height="600" /></span></p>
+<p>△ 最小版本的《少爷》</p>
+<p>祖父江慎极其喜欢夏目漱石（日本文豪）的经典小说《少爷》，更是从初版开始收集它的书。据说少爷从执笔开始已经有一百多年的历史了，这很适合研究日文的组合，这也成为了他充满个性的设计原点。少爷的装帧版本非常丰富，有的字体非常大，有的体积小到像火柴盒一般，还有的为了在泡澡时观看，还特意被做过防水处理。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384269" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-30.jpg" width="899" height="600" /></span></p>
+<p>祖父江慎把《少爷》全文缩小成只有明信片大小的版本。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384270" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-31.jpg" width="900" height="673" /></span></p>
+<p>△ 道后温泉艺术季期间，祖父江慎将《少爷》转化成装置「部屋本坊っちやん」，亦是该艺术季最大的艺术装置。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384271" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-32.jpg" width="800" height="262" /></span></p>
+<p><strong>1. 《 心 》</strong></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384273" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-34.jpg" width="765" height="500" /></span></p>
+<p>在常年研究与收集《少爷》的过程中，自己也萌生了「希望有一天能够设计夏目濑石的书籍」这种想法。他笑说，「我对它的喜爱，强烈到愿意为它尝试各种版本的设计！」在2004年，这个梦想终于实现了。那就是夏目濑石的经典小说《心》。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384274" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-35.jpg" width="627" height="800" /></span></p>
+<p>考虑到亚洲人普遍喜欢用手拿着读书，特别是在日本，人们喜欢在电车或地铁上阅读。所以在设计时，祖父江慎想到，尽量让这本书能够实现单手阅读的场景，并在钉口处特别预留了大量的空白，这样在单手翻书时，就不会让文字被遮挡到，这样简单的处理，就让阅读变的相当的方便了。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384275" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-36.jpg" width="1200" height="307" /></span></p>
+<p>作为百年纪念版本，在书籍的外观设计上忠实的复刻了夏目濑石的原书封面，甚至也重现了夏目濑石的雕刻图章、序言以及夏目濑石当年用红笔亲手书写的文字校对记录。选用了夏目濑石自创的，有点像甲骨文的心字落款，不过我倒是觉得这个有点像蜡笔小新的「大象」。在复刻的力度上非常激进，我们甚至能看到出版时的错字。祖父江慎认为，未经校对过的初版，更贴近夏目濑石的写作状态，写下的文字大小，与作者的呼吸韵律有关；是在烦恼、兴奋还是真的写错，都能从原稿中感受得到。</p>
+<p><strong>2. 《 樱桃小丸子 》随笔三部曲</strong></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384276" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-37.jpg" width="386" height="600" /></span></p>
+<p>在设计《樱桃小丸子》的封面时，由于最开始就被得知要出系列三部曲，由于只是漫画家的随笔，所以他觉得不让书看起来那么有「漫画感」会更好。漫画都是有画框的，那么在这个封面上，祖父江慎就决定选择不使用「外框」的图。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384277" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-38.jpg" width="600" height="452" /></span></p>
+<p>可能你还不知道，这个画面中的龟裂纹理，其实并不是什么特效。它是祖父江慎煮了「一座小山」那么多的鸡蛋，然后把鸡蛋壳敲碎，在图上颜色一片片的贴上去，简直不要太有趣。（负责煮鸡蛋的樱桑说，再也不想见到煮鸡蛋了，因为她把鸡蛋都吃了）</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384278" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-39.jpg" width="1029" height="523" /></span></p>
+<p>那么来到第二卷的时候，就选择了轻松一些的毛毡来制作，突然氛围就变的很轻松了。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384279" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-40.jpg" width="1018" height="530" /></span></p>
+<p>而到第三卷的时候，祖父江慎觉得能不能在有些细节在里面呢？于是与作者商讨之后，决定选择用沙画的形式来体现它。</p>
+<p><strong>2. 《 恐怖 》漫画</strong></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384280" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-41.jpg" width="810" height="600" /></span></p>
+<p>接下来这个案例，是一本恐怖漫画的设计，作者是日本漫画家楳图一雄。我们从封面就能感受到这个作品的恐怖气息，那么祖父江慎为它都设计了哪些东西呢？</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384281" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-42.jpg" width="1200" height="602" /></span></p>
+<p>在书籍的背面的印刷中，被加入了一个面积很大的反光图层。就像一面镜子一样，当我们把书拿在手里翻转书籍的时候，就可以通过这里的镜面反射出自己的面孔，而这时候，如果你稍微倾斜一下书籍，就会看到另一幅鬼怪面孔，不经意间，还真的是很恐怖的惊喜。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384282" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-43.gif" width="258" height="180" /></span></p>
+<p>你以为这样就结束了嘛？在阅读的过程中其实还隐藏着一个吓到你的陷阱，那就是随着翻页的进度，你会发现在钉口会慢慢浮现出一个鬼脸，而且它只有在稍微倾斜的角度上才能被发现。</p>
+<p><strong>3. 《 相扑的感叹声 》</strong></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384283" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-44.jpg" width="417" height="600" /></span></p>
+<p>秉承着杉浦老爷子的设计理念，祖父江慎非常在意书籍所带来的触觉体验。在它的书中，曾经提到，虽然读完一本书的时间因人而异，但普遍的都不是短时间内就可以读完。而在这个过程中，手和书一直在进行着交流，所以书的触感是很重要的。这本《相扑的感叹声》就是运用这个理念设计出的经典例子。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384284" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-45.jpg" width="856" height="800" /></span></p>
+<p>由于是讲述相扑力士的故事，所以在封面上被设计了一排排汗珠。为了体现这种大汗淋漓的炎热感觉，祖父江慎在封面上采用大面积的橘色和红色，用树脂制成在汗珠上形成立体又粘手的触感，非常有意思。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384285" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-46.jpg" width="1080" height="331" /></span></p>
+<p>在内衬页里运用皱巴巴的，摸起来黏煳煳的蜡纸，从触觉上给人一种类似汗湿皮肤的「油腻」感。极度贴合了书中的内容以及相扑给大众的一般印象。</p>
+<p><strong>4. 《 口误 》</strong></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384286" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-47.jpg" width="530" height="800" /></span></p>
+<p>纟井重里的《口误》系列书籍是一本搜集了当年日本所有口误的集锦。基于这样的内容，也给了祖父江慎非常自由的发挥空间。于是决定配合主体，让书籍本身也变的错误百出，与印刷厂一起做出一个一般情况都不会出现的书。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384287" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-48.jpg" width="790" height="800" /></span></p>
+<p>这是一本无论怎样都没办法摆放整齐的书，如果把它放到书架上，我想很多强迫症患者都会抓狂了，因为这套书的书嵴根本就不是直角。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384288" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-49.jpg" width="733" height="600" /></span></p>
+<p>在《银之口误》中的书嵴部分，就错误的把用来固定装订线的胶布黏贴在来书封的外面，这也是一个很明显的错误。最开始是打算全部都帖胶带的，后来觉得至少要让人们看到口误的标题，所以最终决定贴一半。（为了实现这个要求，印刷厂把机器给拆了，变成只可以贴一半胶带的机器。然后，就修不回去了&#8230;.祖父江慎毁掉了人家的机器）</p>
+<p><strong>5. 《 新耳袋 》</strong></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384289" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-50.jpg" width="398" height="600" /></span></p>
+<p>封面是书籍给人的第一印象，所以通常封面都是设计师的设计重点，如果书籍的封面设计的巧妙，也会提高读者阅读内容的欲望。而祖父江慎的做法是，把一整本的正文，全部都放到封面上，让读者即便不打开书，也能把这本书的内容看完。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384290" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-51.jpg" width="1001" height="800" /></span></p>
+<p>祖父江慎使用了压凹技术、折射光技术、紫外线荧光技术将《新耳袋》的正文分为三层全部印在了封面上。通常书籍都会尽量避免，人们在购买之前，就看到所有的内容，而这种毫不避讳的设计反而增加了书籍的销售量。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384291" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-52.jpg" width="800" height="494" /></span></p>
+<p>不仅如此，在书籍内部的封面处，人们通常不会注意到的地方，祖父江慎也用心的加入了一个「护符」，这也是因为它是鬼怪类的书籍。他说：「即便是一本鬼故事，我也不会让它发生可怕的事情」。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384302" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-63.jpg" width="595" height="800" /></span></p>
+<p>在祖父江慎的作品集中，他写到：「书本的话，有如果不读出来就看不到的地方，不知道为什么最近应该作为书籍面目的封面变成了这样。从出版社把预算都花在封皮开始，摘掉封皮后，本来书的封面变的很空挡，变成了读者不会去看的地方。但是被抛弃掉的封面虽然不花费预算，读者查看封面的要求不高，就很有自由度。一本书里注意不到的地方也有很多，即使设计了也没有什么意义的地方，就像在秘密基地里工作一样，聚集着「请千万不要发现啊」的雀跃感。「</p>
+<p><strong>6. 《 山田章鱼丸君 》</strong></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384292" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-53.jpg" width="423" height="600" /></span></p>
+<p>看起来好像只是一本普通的四格漫画，但是祖父江慎在这里又隐藏了什么玄机呢？</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384293" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-54.jpg" width="800" height="348" /></span></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384294" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-55.jpg" width="651" height="800" /></span></p>
+<p>咱们普通的书通常都是在有光的情况下阅读的，而我们现在看到的这本书则需要在没有光的地方，才能体现出它的趣味。实现它的方法，是运用了一种叫做蓄光墨水的颜料。借助这种技术，我们在黑暗的环境里，可以看到不一样的结局。</p>
+<p>但在这本书中，其实并没有特别标注「使用了蓄光墨水」。甚至有的读者反馈说自己最喜欢这本书了，当祖父江慎问道，「你让蓄光墨水发光了？」的时候，得到的回复都是完全不知道还有彩蛋。但即使这样，祖父江慎也认为，如果偶尔打开书，想着差不多该去睡觉去关灯的时候，啪的一下出现了内容的话，不会很开心吗！祖父江慎的设计高度，就是这样的有人情味，这和那些看起来不明觉厉，又很晦涩难懂的设计完全不同。</p>
+<p><strong>7. 《 Eugenia 》</strong></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384295" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-56.jpg" width="414" height="600" /></span></p>
+<p>恩田陆的《Eugenia》是一本悬疑小说，一般的悬疑小说，会随着阅读的深入，谜题也逐渐变得复杂起来。读者会越来越紧张，当一气呵成读完并揭晓谜题的时候，又会让人感到豁然开朗。为了增强这种阅读上的感官体验，祖父江慎的做法是从字体出发，让读者有一种不舒服的眩晕感。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384296" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-57.jpg" width="599" height="800" /></span></p>
+<p>为了制造这种违和感，全书的标点都使用了老式标点，汉字与假名也做了符合字体，就像混合咖啡一样。这种微小的违和感，让读者置身于书中情节，制造了一种让读者阅读不顺畅的感觉。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384297" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-58.jpg" width="600" height="400" /></span></p>
+<p>祖父江慎观看文字的方式是从画面构造切入，认为不同内文就要使用不同字体，才符合设计的一环，并徒手写下秀英明朝体、黑体间的差异。</p>
+<p><strong>8. 《随着时间劣化的海报》</strong></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384298" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-59.jpg" width="1115" height="527" /></span></p>
+<p>这是祖父江慎的实验作品，起初是因为对随着时间推移，慢慢腐坏的海报产生了浓厚兴趣，随后想去尝试能够引起化学反应并慢慢劣化的海报作品。经过反复的尝试，最终觉得在墨水中加入醋跟酱油的话，应该可以产生劣化效果了吧。带着这样的想法就去印刷了。</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384299" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-60.jpg" width="1080" height="468" /></span></p>
+<p>最终的效果还是很不错的，左侧是五年前的样子，右侧是近期的样子。直到现在，这个海报还在不断的劣化着。</p>
+<p><strong>9. 《用天然色彩印刷海报》</strong></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384300" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-61.jpg" width="359" height="509" /></span></p>
+<p>请不要怕出问题、不要怕搞不好、不要怕障碍频生。如果怕的话，就不可能成为好的书籍设计师了。诀窍就是不要怕，怕就做不好。请大家睁开眼睛，放开双手，勇敢面对所有意想不到的事情！」</p>
+<p><strong>10. 《有着作者DNA的墨水去印封面》</strong></p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384301" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-62.jpg" width="600" height="460" /></span></p>
+<p>除了使用各种调味料做设计，祖父江慎甚至还想要使用含有作者DNA的事物去印刷封面。没错，它使用了作者的胡子，你也想到了吧。当然这个会遇到一个问题，就是作者的胡子完全不够用。但至少技术上是可行的啦。（印刷厂说，至少要有一大箱胡渣才可以）</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384302" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-63.jpg" width="595" height="800" /></span></p>
+<p>在祖父江慎的作品集中，他写到：「在做书籍印刷的设计时，不知不觉中就有了，事先去考虑书籍寿命的这个习惯，希望一本书能够尽量长久的被阅读下去。虽然设计长寿的书并非不可能，但也会去想，真的只要这样就行了吗？比如无论读多少次都不会损坏的书，我还是更喜欢随着阅读次数而变得残旧的书吧。」</p>
+<p><span class="img-zoom"><img alt="鬼马的祖父江慎，设计界的一股泥石流" class="alignnone size-full wp-image-384303" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gm-20200812-64.jpg" width="600" height="800" /></span></p>
+<p>与我们熟知的设计大师不同的是，祖父江慎并没有属于它自己的设计风格，对它来说，完全不在意人们看到一本书时没会不会想到是他设计的作品。而是较劲脑子不让自己的设计重复（2000册以上），不让自己染上「偷懒」的习惯。这一点不得不让人佩服，大师级的设计师，总会让年轻一辈望而生畏，而祖父江慎就是其中的异类，花甲之年的他，拥有各种搞怪的行为，就连走路也带有独特的节奏。坐着的时候，也会不自觉的晃来晃去，仿佛思潮涌动，不得不用这种晃动来释放。这样的一位设计师，在被我们年轻一代所敬重的同时，也深受着我们的喜爱。那么以上就是本期的全部内容啦，咱们下期见！</p>
+<p>更多日本顶尖设计师：</p>
+<p>[link https://www.uisdc.com/yoshida-uni]</p>
+<p>[link https://www.uisdc.com/yuji-kobiwa]</p>
+<p>[link https://www.uisdc.com/xincunzeren]</p>
+<p>[link https://www.uisdc.com/tokuda-uji]</p>
+<p>&nbsp;</p>
