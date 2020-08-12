@@ -1,0 +1,83 @@
+➜比特币期权未平仓金额7月底创历史新高，OKEx期权合约数据使用教程
+http://www.sohu.com/a/198432639_134581	12911
+<p class="ql-align-justify">按照Skew此前公布的数据显示，7月底比特币期权市场未平仓金额创下18.53亿美元历史新高，同时有大约6.8万份比特币期权合约到期，价值约为7.45亿美元。</p>
+<p class="ql-align-justify">实际上，比特币期权合约的需求量在不断地增加。据数据显示，7月29日，比特币合约交易量破400亿。在进行期权合约交易的过程中，投资者需要了解期权合约隐含波动率倾斜差、平值期权合约隐含波动率、看跌/看涨期权合约，主动买入/卖出量等。</p>
+<p class="ql-align-justify">OKEx作为全球领先的数字资产交易平台之一，始终致力于给予用户最好的体验。根据官方消息，OKEx于6月12日上线的期权合约大数据，为投资者提供了期权合约隐含波动率倾斜差、平值期权合约隐含波动率、看跌/看涨期权合约，主动买入/卖出量等十个指标。</p>
+<p class="ql-align-justify">下面OKEx分析师将对期权的五个指标加以分析,旨在帮助用户对加密货币期权合约交易进行分析、研判市场整体情绪与行情走势，帮助投资者更好地进行期权合约交易策略的制定。</p>
+<p class="ql-align-justify">1、平值期权合约隐含波动率</p>
+<p class="ql-align-justify">该指标表示某一时刻，不同到期日，标记价格对应的具体隐含波动率。图中，横坐标为时间序列，纵坐标为隐含波动率，蓝色曲线为一个月的隐含波动率，红色则为三个月的隐含波动率。通过该指标可以直观地了解不同时间的标记价格的隐含波动率变化。</p>
+<p class="ql-align-justify">下图中标记价格的隐含波动率整体变化都不太大，但在个别时间点上出现了向上或向下的陡变，这表示标记价格在这一时刻出现了较大的变化，这时候说明市场对期权价格的预期发生了突变，因为隐含波动率存在均值回归的特点，此时就可以运用波动率交易获取收益</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200805/30f7a7ea65e84c2fa39f4eb6a19ad390.png" max-width="600" /></p>
+<p class="ql-align-justify">2、期权合约隐含波动率倾斜差</p>
+<p class="ql-align-justify">该指标表示某一时刻，不同到期日，距离标记价格等距的实/虚值期权，随着时间变化而变化的隐含波动率差值。图中横坐标为时间序列，纵坐标为隐含波动率倾斜差，蓝色曲线为一个月的倾斜差，红色的则为三个月的倾斜差。</p>
+<p class="ql-align-justify">下图是是距离标记价格2%的实/虚值隐含波动率的差值变化，差值越大说明投资者对未来市场预期差异也越大。下图是6月22日，隐含波动率倾斜差未发生明显变化，表示投资者对市场的预期并没有发生显着变化。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200805/f64c10b2a62d408caa5c41ddac9f1d71.png" max-width="600" /></p>
+<p class="ql-align-justify">3、期权合约隐含波动率 vs 指数历史波动率</p>
+<p class="ql-align-justify">该指标表示随着时间变化，实值期权反映的隐含波动率变化与标的资产价格的历史波动率变化的对比。图中横坐标为时间，纵坐标为波动率数据，橙色曲线为隐含波动率，蓝色曲线为历史波动率。</p>
+<p class="ql-align-justify">在期权交易中，我们要区分三个波动率：隐含波动率，历史波动率和已实现波动率，隐含波动率，往往代表着人们对未来波动率的预期，这里的隐含波动率高于历史波动率，意味着投资者预期未来BTC市场的波动较大。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200805/1954af19504f417a95ea88bbcf83e984.png" max-width="600" /></p>
+<p class="ql-align-justify">4、看跌/看涨期权合约 主动买入/卖出量</p>
+<p class="ql-align-justify">该指标表示某一时刻看跌/看涨期权的主动买入/卖出量所占总体的比例，即资金流入量和流出量的比例。</p>
+<p class="ql-align-justify">下图中看涨买入期权占比37.27%，看涨卖出占比8.4%；看跌买入占比23.96%，看跌卖出占比30.37%，这说明期权合约交易中，看涨期权的交易量和大额订单数量远超于看跌期权，市场普遍看涨情绪较高。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200805/ee10facd61c44e259e06cbc27772c08d.png" max-width="600" /></p>
+<p class="ql-align-justify">5、成交热力图</p>
+<p class="ql-align-justify">该指标表示某一时刻，集合内订单的平均数量以及其随时间的分布。圆的大小和该集合内订单笔数的大小成正比。</p>
+<p class="ql-align-justify">如图所示期权合约的圆圈均在底部位置，这说明目前BTC期权合约的交易还主要集中在小额交易。从圆的时间分布情况可以看出，大部分交易集中在7:00-14:00，以及20:30-次日00:00。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200805/f35b697b13e84a48afe51c77694ff8dc.png" max-width="600" /></p>
+<p class="ql-align-justify">通过使用OKEx期权合约的数据,用户可以高效地对加密货币期权合约交易进行分析、研判市场整体情绪与行情走势，投资者可以更好地进行期权合约交易策略的制定。</p>
+<p class="ql-align-justify">OKEx首席执行官Jay Hao指出：“OKEx在提供更好交易体验上永无止境。”</p>
+➜欧科云链OKLink：用户体验差、准入门槛高 DeFi如何破局？
+http://www.sohu.com/a/151055134_134581	18237
+<p>2019年公链格局出现动荡，“公链之王”以太坊一度因频繁出现网络拥堵被指跌落神坛。谁也没有想到，沉寂了一年的以太坊，乘 DeFi 再度崛起，在公链的激烈拼杀中脱颖而出，以王者之势重返大众视野。</p>
+<p class="ql-align-justify">而其背后的推手 -- DeFi，也成为整个区块链行业关注的焦点。</p>
+<p class="ql-align-justify">DeFi 是去中心化金融（Decentralized Finance）的简称，又可称为“分布式金融”或“开放金融”。简单来说，人们设想利用开源软件和分布式网络，将传统金融产品转变为无信任且透明的协议，这些协议在去掉冗余的中介的情况下运行。</p>
+<p class="ql-align-justify">目前，市面上已有数千个 DeFi 项目，整个 DeFi 生态系统正在蓬勃发展。</p>
+<p class="ql-align-justify">“本质上，DeFi 与平台无关，但是我们可以看到，目前的 DeFi 应用几乎全部在以太坊上开发和使用。从以太坊本身来看，它的公链生态相对成熟，不仅可以编写智能合约，而且开发者基数大；除此之外，目前大部分资产都在以太坊上，除了 ETH，还有其他 ERC-20 的资产，同时锚定 BTC 的资产也在往以太坊公链上转移。”欧科云链OKLink相关负责人解释道。</p>
+<p class="ql-align-justify">从OKLink以太坊区块链浏览器上新增的 DeFi 版块，我们可以看到，截至8月3日，在以太坊上的 DeFi 产品和服务在贷余额达到14.4亿美元，较7月初翻了一番，总锁仓量屡破新高，达到45亿美元。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200805/47d3fe4f522f40ebaf8d50b769f7122c.png" max-width="600" /></p>
+<p class="ql-align-justify">事实上，自诞生以来，DeFi 的市值就一直在不断攀升中。2018年1月，DeFi 总锁仓量突破1亿美元；今年2月，DeFi 总锁仓量突破10亿美元；虽然今年3月暴跌至5亿美元，但到了7月初，DeFi 总锁仓量又涨到了18.5亿美元。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200805/50469dce635e41db9389a1edaa27fb18.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><strong>“流动性挖矿”引爆市场 是毒药还是解药？</strong></p>
+<p class="ql-align-justify">DeFi 总锁仓量一直呈稳步上升的趋势，而全面引爆 DeFi 市场情绪的，是 Compound 推出的“流动性挖矿”。</p>
+<p class="ql-align-justify">据OKLink DeFi 数据显示，在6月15日 Compound 推出“借贷即挖矿”后，其借贷量在15天内增加了5倍，锁仓市值一度超过榜首 MakerDAO，成为本年度最受瞩目的项目。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200805/e685230e246b443aae6aafdfcdd9ab0e.png" max-width="600" /></p>
+<p class="ql-align-justify">同时，DeFi 的锁仓量达到20亿美元，再次突破历史新高。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200805/15e3987c3bb34c44b3790c01ece7bdbc.png" max-width="600" /></p>
+<p class="ql-align-justify">OKLink相关负责人表示：“从短期来看，‘流动性挖矿’确实为项目提供了良好的冷启动方式。此外，从宏观背景上看，以太坊一直在对外界释放2.0临近的消息，这也为 DeFi 生态增添了新的发展动能。“</p>
+<p class="ql-align-justify"><strong>但值得注意的是，这种趋势是否具有可持续性，还有待观察。</strong></p>
+<p class="ql-align-justify">“目前，大部分的‘挖矿’都不是真实需求，羊毛党、套利者主要还是冲着获得治理代币奖励入场的。”上述负责人补充道。</p>
+<p class="ql-align-justify">据OKLink DeFi 数据显示，前五大 DeFi 项目（Maker、Compound、Aave、Synthetix 和 Curve ）控制了 DeFi 市场74%的总价值锁定。在6月15日（COMP分配开始）之后，Maker、InstaDapp、DDEX、Nuo Network和 bZx 等协议的锁仓总价值有明显下降。虽然 Maker 和 InstaDapp 在几天后快速恢复，但其他协议仍然未从下跌中恢复过来。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200805/6a6afc6c8c644e43a46bd484808d5971.png" max-width="600" /></p>
+<p class="ql-align-justify">继 Compound 热炒“流动性挖矿”概念后，Curve、Aave 等去中心化借贷平台也都相继宣布推出自己的治理代币。</p>
+<p class="ql-align-justify">“诸如 Compound 和 Balancer 的流动性挖矿趋势在未来一段时间还将继续，且项目之间会相互效仿，但这种趋势不会持续很久，市场将对此作出反应。” 上述负责人提到。</p>
+<p class="ql-align-center"><strong>Gas费用居高不下 DEX暂时“妥协”</strong></p>
+<p class="ql-align-justify">伴随着 DeFi 在借贷方面的用例骤增，以太坊的拥堵问题也再次凸显。<strong>据OKLink统计显示，近期以太坊区块链Gas用量曾一度超过 90 Gwei。</strong></p>
+<p class="ql-align-justify">也就是说，在一般情况下，DeFi 用户在部署一张抵押借贷合约单时，可能只需要花费大概几Gwei 左右（例如 2 Gwei，约合0.000022美元），但在网络拥堵的情况下，这笔费用会翻好几倍（例如 18 Gwei，约合0.000198美元）。</p>
+<p class="ql-align-justify">“基于AMM（自动化做市商）模式的DEX（去中心化交易所）的出现就是对目前高昂Gas费的一种妥协，” OKLink相关负责人表示，“AMM通过算法，将交易直接简化到清算那一步。在非托管AMM模式下，资金都放在一份智能合约中，任何交易者都可以与其进行通证交易。因此，用户实际上是在与这份智能合约进行交易，而不是像订单簿模式的交易所那样与对手方直接交易。”</p>
+<p class="ql-align-justify">目前，比较知名的去中心化交易所有 Uniswap、Curve。Uniswap 主要针对撮合和清算环节，将这两个环节都放在链上进行，它不维护订单簿，而是使用流动性池和自动做市商来确定资产的交易价格。而 Keyper 则采用的是半中心化的模式，将清算环节上链，通过服务器或者中继层进行链下撮合。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200805/1a977b0e84aa4b3f982edadde29f7fc0.png" max-width="600" /></p>
+<p class="ql-align-justify">尽管 DeFi 的在贷锁仓值呈持续增长的状态，但它依然处于萌芽阶段，从多个维度来看，它对于大多数用例仍是次优选择。DeFi 还没有达到规模化，也没有广泛分布的接入点。骨感的现实是，相比于传统中心化交易所，DEX 的体量仍然非常小；“流动性挖矿”热潮退去后，是否能留住真实的用户是整个市场都需要思考的问题。</p>
+<p class="ql-align-justify">“Compound的高日活是被羊毛党带起来的。现在 DeFi 项目日活都不多，讨论谁是谁的几倍没有意义。”一位接近区块链领域的相关人士表示。Compound 和 MakerDAO 最高不过几千日活，和传统互联网过千万和过亿的日活相比，他们的用户数连个零头都没有。</p>
+<p class="ql-align-justify">用户体验差、准入门槛高是阻碍 DeFi 进一步发展的的瓶颈。现阶段的 DeFi 产品，仍是以牺牲用户的效率为代价，包括换取隐私、资产安全和资产管理自由等。</p>
+<p class="ql-align-justify">DeFi 希望创造一个极低成本、透明、去信任化的流动性和借贷市场，这种优势在普通用户的准入门槛和成本面前，显得毫无说服力，还在靠羊毛党支撑数据的DeFi，将如何破局？</p>
+➜数字经济促转型 加快创新转型步伐
+http://www.sohu.com/a/411554215_134581	18545
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200805/cfb3b12664264629999a2a2f607adc9a.jpeg" max-width="600" /></p>
+<p>在疫情防控常态化背景下，北京市抓住数字经济的发展机遇，加快创新和转型步伐。今年上半年，软件和信息服务业实现营业收入同比增长12.4%。</p>
+<p>图为参观者日前在丰台丽泽商务区5G实验室体验一款基于5G的工业AR巡检头盔。通过5G网络，一线检修人员看到的实况画面可以高清晰、低延迟地传输给调度中心和远程专家，并获得专家指导。</p>
