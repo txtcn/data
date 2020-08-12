@@ -1,0 +1,27 @@
+➜勒索软件产业化的感想
+http://www.ruanyifeng.com/blog/2020/08/ransomware.html	50553
+<p>1、</p>
+<p>最近，我看到一条新闻。</p>
+<p>美国最大旅行社之一的 CWT 公司，内网多达30000台电脑<a href="https://www.reuters.com/article/us-cyber-cwt-ransom-idUSKCN24W25W">感染</a>了 Ragnar Locker 病毒， 许多文件被加密，无法打开。攻击者要求支付赎金1000万美元。</p>
+<p>双方在一个<a href="https://threadreaderapp.com/thread/1289199296328298497.html">公开的聊天室</a>里面讨价还价，被人看到了，这件事情才暴露。CWT 最终答应支付450万美元（下图）。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202008/bg2020081201.jpg" alt="" title="" /></p>
+<p>2、</p>
+<p>我的印象中，美国最近发生了很多这类事件，勒索软件已经成了一个产业。</p>
+<p>根据<a href="https://www.bleepingcomputer.com/news/security/netwalker-ransomware-earned-25-million-in-just-five-months/">报道</a>，单单是一个叫做 Netwalker 的勒索软件就在过去五个月里面，收入超过2500万美元。它甚至在俄罗斯的论坛里面招募"业务人员"（下图），帮它散布病毒，好处是可以提成60%～70%的赎金。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202008/bg2020081205.jpg" alt="" title="" /></p>
+<p>为了证明自己的"实力"，他们还贴出了比特币账单，都是受害者支付的赎金。最小一笔进账，也有近70万美元。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202008/bg2020081206.jpg" alt="" title="" /></p>
+<p>这个组织还不是最厉害的，另一个勒索软件 GandCrab 声称，赎金收入超过<a href="https://www.bleepingcomputer.com/news/security/gandcrab-ransomware-operator-arrested-in-belarus/">20亿美元</a>。</p>
+<p>3、</p>
+<p>为什么这种事件现在变多了？</p>
+<p>我认为原因就是比特币。这么大金额的支付，通过传统的银行转账，一定会发现谁是收款人。但是，通过比特币，根本查不出来。</p>
+<p>由于可以安全地收到赎金，在丰厚利润的刺激下，这类勒索事件以后可能会层出不穷。大公司和大组织将成为攻击的首选目标，因为它们付得起高额赎金。</p>
+<p>4、</p>
+<p>如果勒索软件成为一个产业，这就意味着，计算机安全会成为一个热门领域，企业将大幅增加软件安全方面的支出，网络安全工程师会变得很抢手。</p>
+<p>所以，安全技术现在值得投资，年轻程序员可以选择主攻这个方向。</p>
+<p>老实说，作为一个黑客是一个不错的职业，既可以通过"黑帽子"赚钱（攻击其他系统），也能摇身一变，通过"白帽子"赚钱（提供安全咨询服务）。</p>
+<p>5、</p>
+<p>最后谈谈，普通企业或者个人使用者，应该怎么防范勒索软件？</p>
+<p>（1）我觉得，最简单的措施就是，尽量少用 Windows 系统。Windows 下面真是防不胜防，改用苹果或者 Linux 系统，安全性会提高很多。</p>
+<p>（2）数据多备份，关键数据尽量保存在云端。</p>
+<p>（3）如果有条件的话，建议使用虚拟化技术。在沙箱环境打开应用软件，这样的话，即使遇到病毒，也不会感染底层系统，因此虚拟化技术也非常看好。</p>
