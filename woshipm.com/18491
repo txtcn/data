@@ -1,0 +1,114 @@
+➜Axure教程：制作一个APP原型，第一步是什么？
+http://www.woshipm.com/rp/4138391.html	4646
+<blockquote><p>刚开始制作一个APP的原型时，页面布局很简单，状态切换也不难，预览时也得到了想要的效果，但是后来却发现根本没有把框架搭建好，导致一切都做在了一个页面里，嵌套了太多的动态面板。本文记录下我自己制作APP原型的第一步，希望对于刚接触Axure的产品小白们有所帮助。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/Mtk9168LX2Bp28oXfTCJ.jpg" /></p>
+<h2>01 框架搭建</h2>
+<p>这里笔者使用自己正在制作的APP原型进行讲解。</p>
+<p>版本：Axure RP9 企业版</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/8r7d7cttC4VFJM4LjNRM.png" alt="" width="266" height="473" /></p>
+<h3>1. 新建页面</h3>
+<p>底部导航分为5个部分，所以也对应着五个页面。在制作时先不考虑登录等其他页面，只做主界面。</p>
+<p><strong>1. 在页面部分</strong>（注意不是概要部分）添加文件夹命名为主界面，放置主界面的页面。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/zxgInyBUeG2rlO93OCC9.png" alt="" width="336" height="77" /></p>
+<p><strong>2. 在文件夹下面添加页面</strong>，底部导航点击每个图标跳转后对应的页面。由于该原型底部导航分为5个部分，所以在主界面下是五个子页面。每个子页面可以继续添加子页面，类似下图中我——个人主页，代表页面内跳转的页面。这里不再赘述。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/0bsy6hIDCkj8MqSjYTNz.png" alt="" width="322" height="287" /></p>
+<h3>2. 页面布局</h3>
+<p>一个简易的页面基本都会包括状态栏、导航栏与标签栏（即底部导航）。</p>
+<p>一般来说移动端的页面制作时尺寸设置为375*667</p>
+<p>状态栏高20（状态栏可以下载AXURE元件库进行导入，也可以自己制作。）</p>
+<p>导航栏高44</p>
+<p>底部导航高49</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/h0U24q6XPkZBoFGa2CGm.png" alt="" width="717" height="99" /></p>
+<p>除了这些以外的位置，便是可以放置主要内容的地方。</p>
+<p>建议初学者可以直接使用矩形工具包括中间部分，再设置为动态面板。（下图中蓝色框线部分即是放置主要内容的地方，右键设置为动态面板后即可双击此动态面板进入编辑）</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/iqwFLVYt9Co2ZzFSyzoi.png" alt="" width="305" height="542" /></p>
+<p>注意，在右边样式部分，需要对动态面板进行选择“按需滚动”，这样才可以在预览时看到所有编辑的部分。<img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/72KJQ4IC7RNt4Au5vn4a.png" alt="" width="220" height="319" /></p>
+<h2>02 底部导航+页面跳转</h2>
+<p>了解完大致的框架搭建与页面的布局，那么就开始制作底部导航吧。网上许多教程都是状态的转换，虽然预览效果一样，但是对于制作一个APP而言还是不对的。</p>
+<p><strong>1. 首先先添加一个母版，命名为底部导航。</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/58w8zfdWoSgg4GSDXHjd.png" alt="" width="281" height="205" /></p>
+<p><strong>2. 接着选择好图片和文字，</strong>熟练运用组合，居中等将导航排布整齐。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/MAmacvdHumA7Iyb24Gjn.png" alt="" width="430" height="106" /></p>
+<p style="text-align: center;">一个图标与其对应文字为一个组合，方便后面的交互情形添加。</p>
+<p><strong>3. 五个页面，</strong>对应该底部导航的五个状态。所以既要挑好选中前的图标，也要挑好选中后的图标。在这里我只对图标进行了改变表示选中。一般情况下文字颜色也会相应改变。</p>
+<p><strong>4. 在状态1对其他图标组合进行交互设置。</strong>选中店铺组合，在右侧进行设置。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/IhZVVemAtKc6zqdRpLPm.png" alt="" width="428" height="119" /><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/k1HjeXbVOH4pJRcSBMg0.png" alt="" width="293" height="285" /></p>
+<p><strong>5. 以此类推，将后面四个图标组合与页面进行相应的设置</strong>。然后复制多四个状态，再改变一下选中时的图标样式。注意每个状态中都要保证其他四个图标组合具备交互情形，才能让页面跳转成功。</p>
+<p><strong>6. 右键母版——添加到页面</strong>，将该底部导航的母版设置到每个页面中，注意位置的摆放。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/pHnzkCEStNXxlvXuJwkh.png" alt="" width="315" height="334" /></p>
+<p><strong>7. 在工作区打开每个页面</strong>，并对页面进行交互设置。例如打开店铺页，设置如下。<img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/wsycedPdfo3NLqNrBl4s.png" alt="" width="267" height="222" /></p>
+<p><strong>8. 给页面设置不同的内容</strong>，进行预览，就可以看到切换的效果啦。</p>
+<p>&nbsp;</p>
+<p>本文由 @风风 原创发布于人人都是产品经理。未经许可，禁止转载</p>
+<p>题图来自Unsplash，基于CC0协议</p>
+➜Axure入门案例系列：APP首次引导页
+http://www.woshipm.com/rp/4137063.html	5297
+<blockquote><p>编辑导读：用户在初次安装或者更新APP的时候，第一印象就来自于APP首次引导页。那么，如何做好APP首次引导页呢？本文作者将基于自身工作经验，梳理了整套APP首次引导页的Axure教程。</p></blockquote>
+<p><img data-action="zoom" class="size-full wp-image-4139706 aligncenter" src="http://image.woshipm.com/wp-files/2020/08/pFtBZHm6RR0P0xZ62P5S.jpg" alt="" width="900" height="420" /></p>
+<p>APP更新或用户首次安装APP引导页是必不可少的一部分。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" src="http://image.woshipm.com/wp-files/2020/08/A4EtCXguEpWIZUfwOs3G.gif" width="685" height="338" /></p>
+<h3>准备</h3>
+<ul>
+<li>Axure 8（或Axure 9）软件已安装。</li>
+<li>掌握基本的软件使用。</li>
+<li>熟悉动态面板。</li>
+</ul>
+<h3>本教程知识点</h3>
+<ul>
+<li>基础动态面板应用。</li>
+<li>移动边界值的判断。</li>
+</ul>
+<h3>详细教程</h3>
+<p>本文以三页引导页为例，实现引导页的基本功能。</p>
+<h3>功能</h3>
+<p>打开APP可以通过拖动切换引导页的展示信息。同时支持跳过，最后一个页面跳转登录页面。</p>
+<h3>制作方式</h3>
+<p><strong>1）搭建基础框架</strong></p>
+<ul>
+<li>引导页、首页</li>
+<li>引导页主要由跳过按钮、引导页内容动态面板、滑动条、立即体验按钮组成</li>
+<li>注意：在制作内容时，如果使用局部图片（如案例）注意排版时尽可能的保证图片在每个界面的位置统一</li>
+</ul>
+<p><img data-action="zoom" class="content_image aligncenter" src="http://image.woshipm.com/wp-files/2020/08/G6pu5B4Wk7CJdPeBA79K.png" width="339" height="471" /></p>
+<p><strong>2）制作左滑动效果和右滑动效果</strong></p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" src="http://image.woshipm.com/wp-files/2020/08/biUv5424rvPQA3etcEd7.png" width="395" height="130" /></p>
+<ul>
+<li>由于在Axure中只有动态面板存在拖动的交互触发时间，所以此处需要采用动态面板的这一属性进行实现。</li>
+<li>以左滑为例（动态面板的向左拖动结束交互事件）。</li>
+<li>设置滑动结束后的切换面板状态为下一个即可。</li>
+<li>设置动画为向左滑动，且为500毫秒。这样可以有一个半秒钟的滑动效果。</li>
+</ul>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" src="http://image.woshipm.com/wp-files/2020/08/cvMlNUS8hF4tMqI4gj50.jpeg" width="394" height="212" /></p>
+<p><strong>3）制作底部滑动条的效果（以左滑为例）</strong></p>
+<ul>
+<li>原理：每切换一个引导页，滑动条跟随移动固定距离。且左滑动至最后一张再滑动不在向左移动，向右滑动至第一张不在向右移动</li>
+<li>根据原理，可设置每次左滑动移动滑轴50px。同时设置左侧边界可移动区域小于188px</li>
+</ul>
+<p>移动50px原理：由于滑轴的长度为为100px、滑杆的长度为200px。整个滑轴可移动的范围为100px，三个页面移动两次，每次移动50px。</p>
+<p>左侧小于188px原理：滑轴初始状态（未滑动前）的X左侧坐标为88px，移动两次后为188px。为了防止移动超过，设置限制为188px。</p>
+<p>右滑也是基于同样的原理。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" src="http://image.woshipm.com/wp-files/2020/08/QkTEHgm5UK7wjbD6tsn4.png" width="403" height="218" /></p>
+<p><strong>4）制作立即体验按钮和滑轴进度的切换展示</strong></p>
+<p>在第三个引导页后两个中，存在隐藏（显示）滑动条显示（隐藏）立即体验按钮的交互。这里可以采用动态面板的状态改变时的交互事件。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" src="http://image.woshipm.com/wp-files/2020/08/eTlksOOutq5zMkwbNHUP.png" width="397" height="172" /></p>
+<p>当添加特定触发条件。切换对应的事件。</p>
+<p>状态改变时，动态面板状态为引导页三，隐藏滑动条，等待200毫秒，显示立即体验。</p>
+<p>等待100毫秒，是为了有一个视觉上的展示显示效果。</p>
+<p>状态改变时，动态面板状态为引导页二，隐藏立即体验，显示滑动条。</p>
+<p>注：一定要处理好显示隐藏的顺序，Axure本质上是按照顺序事件的先后顺序进行处理，不同的顺序处理的顺序不同，展示的效果也不同。</p>
+<p><strong>5）其他细节处理</strong></p>
+<ul>
+<li>跳过</li>
+<li>点击事件：直接打开首页即可</li>
+<li>鼠标按下事件：设置点击跳过事件为主色，鼠标按下点击时触发器点击效果</li>
+<li>立即体验的点击事件：直接打开首页即可</li>
+</ul>
+<h3>总结</h3>
+<ul>
+<li>灵活的应用不同元件的交互事件</li>
+<li>注意交互的先后顺序</li>
+<li>注意元件的命名</li>
+</ul>
+<p>&nbsp;</p>
+<p>本文由 @Brose 原创发布于人人都是产品经理，未经许可，禁止转载</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
