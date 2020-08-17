@@ -1,3 +1,600 @@
+➜写给新人的App动效设计方案基础科普
+https://www.uisdc.com/app-dynamic-design-science	58968
+<h4><span class="auto_menu">什么是动效</span></h4>
+<p>移动APP交互动效：包括哪些能够为产品赋予生机的动态的界面元素及视觉效果，这些交互效果通常与特定的响应行为相关，甚至包括那些与交互行为没有直接关联的临时状态。</p>
+<p>苹果官方文档的解读是这样的&#8221;精细而恰当的动画效果可以传达状态、增强用户对于直接操纵的感知、通过视觉化的方式向用户呈现操作结果&#8221;。</p>
+<h4><span class="auto_menu">动效的分类</span></h4>
+<p>动效设计，既能在产品的功能层面提供支持，又可以在表现层面发挥影响。</p>
+<p>动画依据功能层和表现层可分为非交互类动画和交互类动画。</p>
+<p><strong>1. 非交互类动画（表现层）</strong></p>
+<p>非交互类动画，是独立于页面任何结构的动画元素，不需要编码；可移植到任何地方进行播放，常见的如gif动画，svg动画等。</p>
+<p><strong>2. 交互类动画（功能层）</strong></p>
+<p>交互类动画，是指依赖于页面结构，动画的过程与结束会改变页面的结构，需要编码；常见的如轮播动画、首屏动画等。</p>
+<h4><span class="auto_menu">为什么要为 app 产品进行动效设计？</span></h4>
+<p><strong>1. 「1+6+2」原则</strong></p>
+<p>Raizlabs 的产品工程师 Ben Johnson 提出了「1 个欢迎动画+6 个告知性动画+2 个动人的小细节」的动效设计原则。它为我们在产品动效的宏观层面提供了指导性意见。</p>
+<p><strong>2. 承载品牌、传递情感、酷炫（表现层）</strong></p>
+<p>「1 个欢迎动画」的作用显而易见，品牌色 logo 字体神马的都弱爆了，来一段 damn cool 的动画抓住用户的眼球吧！请在 boss 允许的范围内尽情的骚气和酷炫！</p>
+<p><strong>3. 转场、承接上下文、状态提醒、反馈（功能层）</strong></p>
+<p>「6 个告知性动画」的目的是为了让用户更高效的使用产品，一定要高效高效再高效！最低成本的告诉用户是从哪里来的，哪里产生了改变、符合用户的心理预期等。<br />
+这些场合请尽量低调不要酷炫。可以精心雕琢运动规律使动作富有情感，但切忌一不能喧宾夺主打断操作，二不能节奏拖沓降低效率。</p>
+<p><strong>基本动效：最基本动效可以让用户看后很舒服。</strong></p>
+<p><span class="img-zoom"><img alt="写给新人的App动效设计方案基础科普" class="alignnone size-full wp-image-384556" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dx-20200813-2.jpg" width="400" height="300" /></span></p>
+<ul>
+<li>指向性动效（滑动，弹出等）</li>
+<li>提示性动效（滑动删除，下拉刷新等）</li>
+<li>空间扩展（翻动，放大等）</li>
+</ul>
+<p><strong>招牌动效设计：主要目的是加深用户对APP的印象</strong></p>
+<p>巧妙的设计在满足产品功能需求的基础上更能让用户惊艳。这类动效是APP的专属符号，APP的品牌和逼格展现通过此类动效有较大的发挥空间。</p>
+<p>这就像迈克杰克逊的亮相经典pose，他本人or模仿者只要一摆出这个POSE我们就立马想到MJ。同样这类动效的设计更具尝试性和前瞻性，它是动效趋势的实践和探索，甚至能引发跟风潮流。</p>
+<p><strong>高难度动效设计</strong></p>
+<p>在这个大家都很拼的移动APP设计世界里，不来点让人经验的高难度动作很难让别人对你刮目相看。这类动效很酷，很炫，可让用户作长时间的视线停留享受，让用户尖叫的同时，不得不为设计动效的同学点赞，大大提升了对APP所属品牌及开发团队实力的认可。</p>
+<p>当然不要忘了APP的主要功用，高难度动作只是锦上添花抑或画龙点睛。</p>
+<p><strong>4. 小趣味一让用户放松、愉悦（表现层或者功能层）</strong></p>
+<p>「2 个动人的小细节」，比如正在与用户进行任务交流时，偶尔开一个暖人的小玩笑，会让用户感到愉悦，也是情感化设计的体现。比较有代表性的地方是 loading、彩蛋等。</p>
+<p><strong>5. 注意事项</strong></p>
+<p>除了欢迎动画以外，其它动效必须帮助用户更加高效的完成当前任务，给予明确的指引和提示，避免大范围「炫技」造成的拖沓、眩晕、不知所云。切记效率效率还是效率！另外，动效尤其需要保证交互逻辑上的一致性。</p>
+<h4><span class="auto_menu">移动APP的交互动效设计5点规范</span></h4>
+<p><strong>1. 保持过渡切换的流畅性</strong></p>
+<p>如果说界面布局可以组织UI元素的静态位置，那么动效可以组织UI元素在时间维度上的演进。</p>
+<p><strong>2. 必须具备高效的反馈机制</strong></p>
+<p>作为与用户之间发生联系的一个很重要的交互元素，良好的反馈设计可以让用户更好地了解到操作的结果与程序当前的状态，减轻用户在等待过程中的焦虑。</p>
+<p><strong>3. 增强APP的操纵感和体验感</strong></p>
+<p>「直接操纵」是移动产品用户体验中很重要的一个概念，简单来说，它要求我们的产品与用户交互的方式尽量接近真实世界的互动方式。</p>
+<p><strong>4. 有效的帮助引导</strong></p>
+<p>由于移动界面的空间非常有限，我们经常要藏起一部分功能，同时手势操作也是移动应用中很常见的交互元素。</p>
+<p><strong>5. 提升体验创新戏码</strong></p>
+<p>如果你的产品已经拥有了良好的可用性，却缺乏亮点，也许你可以考虑为其增加动效。将动效融入产品之中，往往带来更愉悦地使用体验，也更细腻地表达应用的情绪和气质。</p>
+<h4><span class="auto_menu">移动APP的交互动效分类</span></h4>
+<p>可以按照时机和用途，分类如下：</p>
+<p><span class="img-zoom"><img alt="写给新人的App动效设计方案基础科普" class="alignnone size-full wp-image-384561" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dx-20200813-7.jpg" width="1914" height="1038" /></span></p>
+<h4><span class="auto_menu">App 动效设计方案</span></h4>
+<p><strong>1. 确定动效类型</strong></p>
+<ul>
+<li>通用动效（偏框架）</li>
+<li>「1+6+2」动效（偏业务）</li>
+<li>组件动效（基础）</li>
+</ul>
+<p>三种类型只是考虑的大类型不同，动效点会有交叉。</p>
+<p><strong>2. 确定动效点</strong></p>
+<p><strong>分析App的功能结构架构</strong></p>
+<ul>
+<li>记住谁是您的目标用户，并且设计您的原型方案去解决他们的问题；</li>
+<li>请确保您的动效的每个元素都具有其背后的基本原因（为什么是这样？为什么会是如此？为什么这个时间点？）；</li>
+<li>为了使您的产品有特色，努力模仿自然界的运动模式来创造自然的动效；</li>
+<li>在项目的任何阶段，都要随时与开发人员保持沟通；</li>
+</ul>
+<p>App的功能结构架构，以及业务的重点等，确定动效点。</p>
+<p><strong>确定动效点</strong></p>
+<ul>
+<li>通用动效</li>
+<li>「1+6+2」动效</li>
+<li>组件动效</li>
+<li>图标动效</li>
+</ul>
+<p>示例：</p>
+<p><span class="img-zoom"><img alt="写给新人的App动效设计方案基础科普" class="alignnone size-full wp-image-384562" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dx-20200813-8.jpg" width="1440" height="976" /></span></p>
+<h5>3. 动效设计与实现</h5>
+<p><strong>非交互类动画（表现层）</strong></p>
+<p>非交互类动画，使用AE等实现。使用AE + lottie-web实现json动画，可以快速建立并多平台实现非交互类动画。</p>
+<p><strong>json动画</strong></p>
+<p>Lottie 是Airbnb开源的一个面向Android、 iOS、React Native 、Web的动画库，能分析 Adobe After Effects 导出的json文件并生成动画，使静态素材一样使用这些动画，完美实现动画效果。</p>
+<p><span class="img-zoom"><img alt="写给新人的App动效设计方案基础科普" class="alignnone size-full wp-image-384563" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dx-20200813-9.jpg" width="1027" height="329" /></span></p>
+<p><strong>导出动画的json</strong></p>
+<p>参考这篇：</p>
+<p>[link https://www.uisdc.com/lottie-dynamic-design-guide-2]</p>
+<p><strong>兼容性</strong></p>
+<p><span class="img-zoom"><img alt="写给新人的App动效设计方案基础科普" class="alignnone size-full wp-image-384564" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dx-20200813-10.jpg" width="921" height="182" /></span></p>
+<p><strong>非交互类动画设计交付</strong></p>
+<p>非交互类动画设计交付需要交付技术，直接能使用的产物，比如lottie的json，gif动画等。</p>
+<p><strong>非交互类动画设计原则</strong></p>
+<p>非交互类动画设计原则要遵循流行动画的设计原则，下面是迪士尼动画的十二个原则：</p>
+<ul>
+<li>Squash and Stretch压缩与伸展</li>
+<li>Anticipation 预备动作</li>
+<li>Staging演出布局</li>
+<li>Straight Ahead Action and Pose to Pose连续运动与姿态对应</li>
+<li>Follow Through and Overlapping Action跟随与重叠动作</li>
+<li>Slow In and Slow Out 慢进慢出</li>
+<li>Arcs 弧形运动</li>
+<li>Secondary Action 第二动作</li>
+<li>Timing and Weight 时间节奏与量感</li>
+<li>Exaggeration 夸张性</li>
+<li>Solid Drawing 扎实的描绘</li>
+<li>Appeale 吸引力</li>
+</ul>
+<p><strong>交互类动画（功能层）</strong></p>
+<p>交互类动画一般需要技术使用当前技术，实现交互动画。需要有一套动画开发的基础框架，和动画设计的参数配置交付。</p>
+<p><strong>交互类动画的本质</strong></p>
+<p>物体对象属性的更改，比如Web中Dom的属性更改。<br />
+动效常更改的属性：位移，缩放，旋转，透明度等。</p>
+<p><strong>设计方案</strong></p>
+<p>一般使用Origami Studio设计动效。也可以依据某个组件库，进行动效的设计。如：IOS的动效库：Core Animation、iOS Facebook-Pop、awesome-ios-animation、awesome-animation等 ，Andriod动画库：Material-Animations、animate、ENViews等。</p>
+<p><strong>交互类动画的设计交付</strong></p>
+<p>分类描述：适合较为复杂的动画设计</p>
+<p><span class="img-zoom"><img alt="写给新人的App动效设计方案基础科普" class="alignnone size-full wp-image-384557" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dx-20200813-3.gif" width="1000" height="387" /></span></p>
+<p>过程的描述：适合较为简单的动画设计</p>
+<p><span class="img-zoom"><img alt="写给新人的App动效设计方案基础科普" class="alignnone size-full wp-image-384558" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dx-20200813-4.jpg" width="1240" height="528" /></span></p>
+<p><strong>示例</strong></p>
+<p>设计：</p>
+<p><span class="img-zoom"><img alt="写给新人的App动效设计方案基础科普" class="alignnone size-full wp-image-384559" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dx-20200813-5.gif" width="1000" height="563" /></span></p>
+<p>标注：</p>
+<p><span class="img-zoom"><img alt="写给新人的App动效设计方案基础科普" class="alignnone size-full wp-image-384560" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dx-20200813-6.jpg" width="1050" height="593" /></span></p>
+<p>欢迎关注作者微信公众号：「Jingwhale Design」</p>
+<p><span class="img-zoom"><img alt="写给新人的App动效设计方案基础科普" class="alignnone size-full wp-image-384555" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dx-20200813-1.jpg" width="180" height="180" /></span></p>
+➜如何让用户愿意逛愿意买？来看618站内攻略项目总结
+https://www.uisdc.com/jd-618-in-site-strategy	59587
+<h4><span class="auto_menu">项目背景</span></h4>
+<p>站内攻略作为每年大促玩法的预告者，承担了向用户输出平台节奏、吸引用户预约回流的重要任务。 不同于着眼于转化的卖货会场，或是着眼于分享的互动H5，如何能让用户更好地了解京东的大促平台玩法，便捷用户的购物旅程，就成为了它的主要任务。</p>
+<h4><span class="auto_menu">设计思路&amp;设计执行</span></h4>
+<h4>1. 产品化思路与定位</h4>
+<p>在开始设计之前，我们对比了2017年至今的所有攻略页面，发现往年页面存在缺乏延续性、定位不清晰的问题。作为大促信息传达的先行军，往期的攻略反而更多承担了转化型的会场类任务，对于优惠信息的预告往往是轻描淡写地用文案带过。而每一次的攻略样式都是「船新版本」，也产生了较大的人力消耗。</p>
+<p>然而尽管攻略的任务是信息传递，但作为整体大促链路中的一环，它终究还是需要为大盘GMV服务。那么应该如何平衡二者，以达成更好的数据效果呢？</p>
+<p><span class="img-zoom"><img alt="如何让用户愿意逛愿意买？来看618站内攻略项目总结" class="alignnone size-full wp-image-384514" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200813-1.jpg" width="1200" height="709" /></span></p>
+<p>首先，从攻略存在的核心意义——助力集团大盘GMV的提升出发，它需要达成以下几个目标：</p>
+<ul>
+<li>让用户愿意逛：让用户明白京东大促的节奏和玩法、并且在了解后有意愿参与；</li>
+<li>让用户愿意买：提供能提升用户购物欲望的决策信息；</li>
+<li>让用户养成习惯：当攻略持续为用户产生了用户价值后，就可以养成用户「来京东购物前先看攻略」的心智，从而更好地引导用户进行操作。</li>
+</ul>
+<p>然而纵观大促会场全局，许多卖货会场也可以达成这些目标，那么站内攻略和它们相比有具有哪些差异性呢？我们可以从对内和对外两个角度进行分析：</p>
+<p>对内差异化：从站内来看，「我的」和「AI助手」也都承担了向用户进行活动会场推荐的功能，但「我的」是围绕用户已有的操作展开管理和推荐，是绝对精准的量身打造，「AI助手」是理性层级下的高效导购，需要用户先产生「想法」，再指导操作；站内攻略则是引导用户未来行为的指导和说明，先组织、筛选促销信息，再使用户产生「想法」，从而产生操作，有一定「逛」的性质。</p>
+<p><span class="img-zoom"><img alt="如何让用户愿意逛愿意买？来看618站内攻略项目总结" class="alignnone size-full wp-image-384515" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200813-2.jpg" width="1200" height="709" /></span></p>
+<p>对外差异化：从站外来看，站内攻略的定位与「什么值得买」有些近似。相比之下，站内攻略的优势则在于它能更紧密地围绕京东用户的消费习惯进行定制化推荐，和近年来以长图为主的阿里系攻略相比，则提供了更为丰富的操作（如预约），一定程度上能减少用户的记忆成本。</p>
+<p>基于以上基础，我们对往年攻略的用户画像进行分析，并对攻略进行了横向与纵向的对比，总结出了攻略作为一个长线产品视角下的迭代思路，并根据攻略的特性制定了分时期的北极星指标：提升预热、专场期的预约加购率、提升全时期的活动分流以及提升高潮期的商品转化。那么我们又是如何根据这三个指标来拆解细分策略的呢？</p>
+<p><span class="img-zoom"><img alt="如何让用户愿意逛愿意买？来看618站内攻略项目总结" class="alignnone size-full wp-image-384516" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200813-3.jpg" width="1200" height="709" /></span></p>
+<h4>2. 提升预约加购——日历优化</h4>
+<p><strong>交互层面：动效辅助内容聚焦</strong></p>
+<p>作为站内优惠信息的聚集地，如何清晰简洁传达内容，一直是交互侧需要重点思考解决的难题。于是在本次攻略中，我们对比了往期攻略中的预告样式，在数据表现较好的日历样式基础上，对页面的层级进行了进一步的简化，配合动效的引导操作，以便用户能够更聚焦地浏览日历部分的核心内容：</p>
+<p><span class="img-zoom"><img alt="如何让用户愿意逛愿意买？来看618站内攻略项目总结" class="alignnone size-full wp-image-384517" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200813-4.gif" width="420" height="747" /></span></p>
+<p><strong>视觉层面：视觉层级清晰</strong></p>
+<p>经过对交互稿的分析理解，以下3个痛点，对此次页面的信息层级和画面舒适度是一个考验：</p>
+<ul>
+<li>内容信息较多：为了提升预约吸引力，这次在单日预告内露出了更多的BI单品，同时增加了预约瓜分京豆的玩法，所以这次首屏的内容信息和双11相较而言，是有所增的。</li>
+<li>日历展示状态增加：日历尝试了新的交互样式，有展开和收起两种状态。</li>
+<li>卡片颜色多：为了让用户感知到每日主题的差异，日历卡片的颜色会根据每日主会场的主题颜色相呼应。</li>
+</ul>
+<p>那么如何通过视觉的手段，让视觉层级清晰展示且画面颜色和谐呢？下面从最基础的视觉构成里的构图和色彩两方面进行分析并落地：</p>
+<p><strong>「构 图」整体用方形进行构图和内容分割</strong></p>
+<p>方形是最简洁的几何形态，对于信息量较大的页面，方形会让设计空间利用最大化，并且可以排除形态上的干扰，结构清晰的展示信息内容，让用户通顺的浏览页面。</p>
+<p><strong>简化视觉层级</strong></p>
+<p>在交互稿上，瓜分京豆模块和日历选择器两部分内容划分较为明显，但所留出的空间，会增加视觉层级的复杂度。为了尽量简化视觉层级，找交互同学商量是否可以在保持内容划分清晰的情况下，把瓜分京豆模块背景和日历选择器拉通，同时，也咨询了前端同学，视觉这样处理在实现上是否会有问题。最终，三方达成一致后，采用了视觉最终呈现的方案。</p>
+<p><span class="img-zoom"><img alt="如何让用户愿意逛愿意买？来看618站内攻略项目总结" class="alignnone size-full wp-image-384518" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200813-5.jpg" width="1200" height="675" /></span></p>
+<p><strong>「颜 色」</strong></p>
+<p>为了更好的覆盖618全时期，挑选了色环上三种距离基本相等的色彩进行从暖色到冷色的色相渐变。</p>
+<p><span class="img-zoom"><img alt="如何让用户愿意逛愿意买？来看618站内攻略项目总结" class="alignnone size-full wp-image-384519" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200813-6.jpg" width="1200" height="675" /></span></p>
+<ul>
+<li>头图运用了较为清透的黄色至红色的暖色渐变，适用于618全时期，体现了大促的热闹氛围；</li>
+<li>头图过渡到日历选择器，则是运用了从头图的红色渐变至紫蓝色，这样既能让选择器的文字信息清晰识别，也能将头图和日历选择器两部分内容进行自然的分割，减少了线面分割所带来的复杂层级关系；</li>
+<li>瓜分京豆模块的颜色则选用了偏中性的黄色，这样一来和每日不同颜色的卡片搭配和谐，二来和头图有所呼应，整体画面色彩保持平衡。</li>
+</ul>
+<p><span class="img-zoom"><img alt="如何让用户愿意逛愿意买？来看618站内攻略项目总结" class="alignnone size-full wp-image-384520" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200813-7.jpg" width="1200" height="675" /></span></p>
+<p><strong>前端层面：复杂交互动画与跨平台功能适配</strong></p>
+<p>关于选中移动动画</p>
+<p><span class="img-zoom"><img alt="如何让用户愿意逛愿意买？来看618站内攻略项目总结" class="alignnone size-full wp-image-384521" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200813-8.jpg" width="1200" height="709" /></span></p>
+<p>日历选中动画部分我们需要实现的一种跟随移动的效果，那么我们需要考虑的是在当前日期是有可能去到任何一个可点击日期的位置。</p>
+<p>实现方式：</p>
+<p>用纯css方式控制，方块使用背景图的方式实现，通过控制类名移动位置，比如.move-[start]-[end]，缺点：需要写好每个日期对应到其它日期的位置，不够灵活</p>
+<p>用js控制。把日期看成一个棋盘格子，每个格子都占相同的坑位大小。我们把当前日期看作a，移动至日期看作b。假设把a移动至b的横向占格子数设为n，把a移动至b的纵向占格子数设为m。那么n=当前下标 % 行个数，m=当前下标 / 行个数取整。那么a移动到b的x = w * n，y = h * m (w为格子宽度，h为格子高度)。</p>
+<p>注：宽度获取使用block.getBoundingClientRect().width；clientWidth会忽略小数位</p>
+<ul>
+<li>关于展开收起动画，半圆实现：</li>
+<li>可以使用clip-path</li>
+<li>我的实现方法为使用border-radius+height实现，半圆的弧度使用两倍大圆取其部分圆弧显示，展开收起实现使用高度修改：在低端机会略卡，因为每次使用会引起页面重绘（有待探讨优化）</li>
+<li>使用svg，canvas等</li>
+<li>关于app预约，小程序预约</li>
+<li>app预约采用的是京东app日历预约，用户开启手机日历（写入）权限后，预约就会写入用户的手机日历，在活动开始前会以日历提醒的方式提醒用户。</li>
+<li>小程序预约走的是微信大账号提醒流程，预约需要分三步进行：预约-&gt; 授权 -&gt; 上报授权状态。进行完上述步骤后，用户会在活动开始前10分钟左右通过大账号（已关注用户）或服务通知（未关注用户）收到消息</li>
+</ul>
+<h4>2. 提升活动分流——福利秘籍</h4>
+<p><strong>提升筛选效率</strong></p>
+<p><span class="img-zoom"><img alt="如何让用户愿意逛愿意买？来看618站内攻略项目总结" class="alignnone size-full wp-image-384522" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200813-9.jpg" width="1200" height="709" /></span></p>
+<p>福利秘籍专区作为大促期间福利互动活动的集中地，承担了为互动分流，为用户提供快速查找筛选可参与活动的任务。而互动往往存在较为复杂的规则，对用户而言存在较高的理解成本。此次除了集团主推的互动，又增加了对于事业部互动的展示，对于保证页面展示效率也带来了一定的挑战。通过对往期迭代内容进行数据对比，同时参考其余会场对于多信息展示的策略，最终我们采用了BI展示，同时对用户弱相关的互动卡片进行折叠的方式提升页面的效率；而在卡片的信息展示上，选择重点突出活动可得的利益点，让用户一眼即可筛选出对自己最有价值的互动进行参与。</p>
+<p><strong>视觉创新优化</strong></p>
+<p>虽然运营同学对双11的秘籍视觉比较认可，但是仍然提出了希望有秘籍形式感的同时，能进行视觉创新的诉求。经思考后，我认为运营的诉求无法满足：</p>
+<ul>
+<li>视觉风格和618大促整体风格保持统一；</li>
+<li>能体现秘籍感的视觉表现手法有限；</li>
+<li>视觉创新的前提是要保证信息清晰的展示给用户；</li>
+</ul>
+<p>于是带着以上3点找运营同学再次沟通清楚对方的真正诉求到底是什么，经沟通，对方最重要的诉求是希望有视觉创新，秘籍形式感诉求较弱。接下来针对重要诉求集中发力，并结合此次618视觉概念（光点、光线），找到了视觉创新优化的解决方案，并和运营达成了一致。</p>
+<p><strong>「构图」</strong></p>
+<p>上面提到了方形可以排除形态上的干扰，考虑到活动入口图数量较多，且氛围图不可把控，左侧以方形构成，右侧结合了618主图形——光线，把文字和氛围图分开，让各部分信息更加聚焦。</p>
+<p><span class="img-zoom"><img alt="如何让用户愿意逛愿意买？来看618站内攻略项目总结" class="alignnone size-full wp-image-384523" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200813-10.jpg" width="1200" height="675" /></span></p>
+<p><strong>「颜色」</strong></p>
+<p>结合双11用研结论——活动入口主题不够鲜明，除了活动文案类似的因素，我认为颜色也是影响因素之一。所以这次在上部分平台级活动入口，采用了2种暖色的近似色交替构成，下部分事业部活动入口，统一采用了1种和上部分近似色的冷色构成；单个活动入口，文字和氛围图的背景进行统一色相的明暗深浅变化。从整体楼层来看，从上至下，由暖至冷，不仅活动主题有了明显差异化，而且较好的过渡到下一楼层；从单个活动入口来看，左右深浅颜色的划分，不仅对不可把控的氛围图适应性更强，且主题文案更加明显。</p>
+<p><span class="img-zoom"><img alt="如何让用户愿意逛愿意买？来看618站内攻略项目总结" class="alignnone size-full wp-image-384524" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200813-11.jpg" width="1422" height="800" /></span></p>
+<p><strong>「表现形式」</strong></p>
+<p>整体页面在按钮的部分采用新拟态风格，在保证吸引力的同时，也减少了颜色过多的问题，减少了信息层级。新拟态风格更适合工具功能类产品，本次只尝试使用在了页面的按钮部分，风格上也会有眼前一亮的感觉。</p>
+<p><span class="img-zoom"><img alt="如何让用户愿意逛愿意买？来看618站内攻略项目总结" class="alignnone size-full wp-image-384525" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200813-12.jpg" width="1200" height="675" /></span></p>
+<h4>3. 提升商品转化——今日导购</h4>
+<p><strong>分时期变化的楼层策略</strong></p>
+<p>针对高潮期的转化指标，我们参考了往期的迭代经验，发现随着大促节奏的渐进，临近高潮期时，页面的转化模块表现往往有较大的提升。于是在本次设计中，我们针对这个数据表现，对楼层顺序进行了动态调整，高潮期将转化楼层前置，以更好地匹配不同时期的用户需求。</p>
+<p><span class="img-zoom"><img alt="如何让用户愿意逛愿意买？来看618站内攻略项目总结" class="alignnone size-full wp-image-384526" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200813-13.jpg" width="1200" height="709" /></span></p>
+<p>同时根据往期的楼层数据表现，本次我们也延续保留了数据表现较好的模块类型，例如增加了榜单的露出，以辅助页面目标的达成（以下数据来自于lan.jd.com)。</p>
+<p><strong>楼层整体化、内容吸引力包装</strong></p>
+<p>基于之前今日楼层视觉整体感较弱的问题，这次楼层背景色和页面背景色有所区分，楼层内模块颜色和楼层背景色同色，较往期此楼层来看更加整体化，又能让页面层级更加清晰。</p>
+<p><span class="img-zoom"><img alt="如何让用户愿意逛愿意买？来看618站内攻略项目总结" class="alignnone size-full wp-image-384527" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200813-14.jpg" width="1200" height="675" /></span></p>
+<p>其中，针对这次品牌入口和上海美影厂IP形象结合的策略，为了提升用户吸引力，且不干扰信息内容的前提下，视觉上采用了和用户共情，且和IP形象契合的元素——老电视机，同时按钮文案也进行场景契合的包装，增加趣味性。</p>
+<p><span class="img-zoom"><img alt="如何让用户愿意逛愿意买？来看618站内攻略项目总结" class="alignnone size-full wp-image-384528" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200813-15.jpg" width="1200" height="675" /></span></p>
+<h4><span class="auto_menu">项目成果</span></h4>
+<p>与往期站内攻略对比，本次618站内攻略主要在以下方面有较为明显的提升：</p>
+<p><strong>品牌视觉契合及创新</strong></p>
+<p>在延续主视觉元素的同时，视觉风格有所创新，在页面的按钮部分采用新拟态风格，减少颜色过多而导致的复杂信息层级问题，同时也保证了视觉吸引力</p>
+<p><strong>视觉精致程度</strong></p>
+<p>整体页面颜色较有节奏，且更加清透舒适</p>
+<p>元素细节（打光、投影等）的刻画更加精致</p>
+<p><strong>信息层级清晰度</strong></p>
+<p>通过对颜色的合理规划，有主次的文字信息，让单个楼层更整体化，各楼层模块划分清晰</p>
+<p><span class="img-zoom"><img alt="如何让用户愿意逛愿意买？来看618站内攻略项目总结" class="alignnone size-full wp-image-384529" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200813-16.jpg" width="1025" height="800" /></span></p>
+<p><strong>数据表现</strong></p>
+<p>根据上线后的表现，本次福利互动模块的点击数据获得了显着的提升，今日模块的点击转化率相比往年也获得了成倍的增长，页面目标基本达成。</p>
+<h4><span class="auto_menu">项目沉淀</span></h4>
+<p><strong>1. 好的经验</strong></p>
+<p>针对攻略这类规律性存在的活动会场，我们可以针对其主要的功能组成模块进行数据导向的设计与迭代，来更好地指导后续的优化方向；同时也可以辅助业务侧更加清晰地规划会场定位，提升页面对用户以及大促的整体价值。</p>
+<p><strong>2. 如何沟通</strong></p>
+<p>Q：需求方一味的追求热闹复杂的视觉样式创新，该怎么办？</p>
+<p>A：热闹的氛围对于大促活动来说固然非常重要，但也要根据页面类型去判断（重氛围or重信息)。设计师要倾听诉求并搞清诉求的根本原因，并用专业的角度判断诉求的合理性，以及价值大与否。热闹氛围塑造的前提是不能影响信息的识别，否则就会本末倒置，并且热闹氛围的视觉样式要和该场景逻辑匹配 。</p>
+<p><strong>3. 待优化项</strong></p>
+<p>虽然本次页面大部分模块基于产品化的思路迭代均获得了一定的正向反馈，但产品的发展往往是个曲折上升的过程，活动会场也不例外。结合上线后反馈，站内攻略依然有以下可优化点：</p>
+<p><strong>日历操作体验</strong></p>
+<p>根据用研结果显示，日历操作体验问题反馈较多，日历模块为滑动改变日期，而非点击跳转日期的操作方式，与用户的认知不符，且首屏动效较复杂，在安卓机型上体验较为卡顿。后续如有同样的交互方式，需优化操作体验。</p>
+<p><strong>福利互动入口主题文案</strong></p>
+<p>根据用研反馈，主题文案描述不直观，不易理解，导致用户容易滑过整个模块。建议后续活动主题能简单清晰的描述优惠和玩法。</p>
+<p>综上，未来站内攻略需要进一步探索主要功能模块对用户的价值，探索其在大促链路中独特的差异性；同时保留高用户价值模块并持续优化，以求达到更好的用户体验，用设计策略为用户与业务带来更多的价值。</p>
+<p>更多618设计总结：</p>
+<p>[link https://www.uisdc.com/jd-618-design]</p>
+<p>欢迎关注「JellyDesign」的小程序：</p>
+<p><span class="img-zoom"><span class="img-zoom"><img alt="如何让用户愿意逛愿意买？来看618站内攻略项目总结" class="alignnone size-full wp-image-340226" src="https://image.uisdc.com/wp-content/uploads/2019/10/uisdc-cx-20191021-1.jpeg" sizes="(max-width: 180px) 100vw, 180px" srcset="https://image.uisdc.com/wp-content/uploads/2019/10/uisdc-cx-20191021-1.jpeg 180w, https://image.uisdc.com/wp-content/uploads/2019/10/uisdc-cx-20191021-1-150x150.jpeg 150w" alt="大厂实战案例！京东618会场设计总结" /></span></span></p>
+➜12个产品细节剖析，让你看看大厂是如何做设计的
+https://www.uisdc.com/12-product-design-details	60238
+<p>在进行 UI 设计的时候，很多小技巧能够恰到好处地提升界面的设计视觉效果、用户体验。</p>
+<p>那些让我们看了一眼就能过目不忘的产品，并非一定就是行业中靠前的翘楚，吸引我们的只是一个小小的细节，如何将这些优秀细节亮点融入自己的产品并符合调性，需要长期日积月累。好的产品从来都不缺少美，只要我们多留意，这些美好的瞬间就会找到我们，为留下忠实的用户打下基础。</p>
+<p>上期回顾：</p>
+<p>[link https://www.uisdc.com/13-product-design-details]</p>
+<h4><span class="auto_menu">「腾讯动漫」帮你记忆上次登录方式</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在腾讯动漫我的页面点击登录，跳转登录页面后，会提示上一次登录方式，供快速选择直接登录。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>随着互联网大潮的到来，每个用户的智能手机里应该都装有至少几十个APP应用，为了使用户更方便快速的登录体验产品，大部分应用都提供了第三方账号登录，比如QQ、微信、支付宝、微博、Apple&#8230;账号等。由于不同的登录方式用户数据往往并不互通，会给用户带来不便，在登录时也无法确定「我以前是用什么登录的」这样的困惑。腾讯动漫在登录界面，增加了上次登录方式的提醒，以供选择，让用户快速记忆，并且使用跟上次相同的登录方式无需再次授权，直接登录成功，简化二次登录的操作流程。这一提示不仅减少在登录页面思考的时间，更提升了用户登录的成功几率，减少使用障碍，增加留存率。</p>
+<p><span class="img-zoom"><img alt="12个产品细节剖析，让你看看大厂是如何做设计的" class="alignnone size-full wp-image-384191" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ui-20200812-1.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「网易云音乐」不一样的歌词分享</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在网易云音乐的歌词页面，长按自己喜欢的歌词，即可选中，当前页面所有歌词都变为可选择状态，选中自己喜欢的歌词，可复制对应的歌词、查看歌词图片/视频操作。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>在听到一首好听的歌曲，特别是喜欢的部分歌词，我们就会情不自禁的想要分享给其他人或者发个朋友圈记录生活，这时就需要狂敲键盘，或许因为歌词过长会浪费我们大量的时间，产生的放弃的念头。在网易云音乐的歌词页面，长按歌词，选中自己喜欢的部分，就可以通过复制操作，免去了我们敲键盘打字的痛苦，直接粘贴转发给朋友或者发布朋友圈。歌词的选择性复制，轻松的一键生成，非常便捷，解决了因文字输入带给的用户惰性，一定程度上减少了用户的操作时间，细节的处理也巧妙的提升了用户对产品的好感，增强信任度。</p>
+<p><span class="img-zoom"><img alt="12个产品细节剖析，让你看看大厂是如何做设计的" class="alignnone size-full wp-image-384192" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ui-20200812-2.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「搜狗输入法」洞察人心的AI朋友圈助手</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<ul>
+<li>使用搜狗输入法在微信发布朋友圈进行文本编辑时，可以使用「灵感语录」推荐的语句直接发布；</li>
+<li>选择「AI帮你写」，在文本框输入关键词，AI助手会根据关键词匹配对应的语句，可直接发布朋友圈。</li>
+</ul>
+<p><strong>2. 设计思考：</strong></p>
+<p>微信朋友圈不仅是在记录我们的美好生活，同时也是在维持亲朋间的存在感与亲近感，比如：每天早上的心灵鸡汤、买来新衣服或好吃的晒图炫耀、心情的即时变化&#8230;等，不管是处于何种原因，不能否认的是，朋友圈与我们的生活已经息息相关。同时也出现了一个问题，不是每一个人的文案能力都特别强、语言语言组织能力都很好，对于比较文艺、又希望得到他人认可而频繁发布朋友圈的人，总有词穷的时候。</p>
+<p>搜狗输入法非常人性化的解决了这一问题，推出朋友圈专属功能「AI朋友圈助手」板块，在编朋友圈文本信息时，展示在键盘的上方。可以在「灵感语录」中选择自己喜欢的语句，直接发布。如果没有找到合适的，选择「AI」帮你写，输入关键词，AI助手会根据关键词匹配对应的语句，通过换一句操作，去寻找更多合适的语句编辑发布。</p>
+<p>有了「AI朋友圈助手」功能，再也不用担心自己词穷而想文案了。里面土味情话、搞笑段子等多种风格语录和季节性限定语录，让你无论什么节日、什么环境都有适合的文案可以发。大多数人发朋友圈的目的是为了让更多的人看到，不仅能炫耀自己的文采，也有可能让她/她看到更加优秀的你。让喜欢追求面子心理的人，因它带来一种荣耀和心理上的满足感。</p>
+<p><span class="img-zoom"><img alt="12个产品细节剖析，让你看看大厂是如何做设计的" class="alignnone size-full wp-image-384193" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ui-20200812-3.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「每日优鲜」若隐若现的会员诱惑</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在每日优鲜「我的」页面会员版块，只能看到大标题和开通会员按钮，点击任一区域下拉，即可出现隐藏的 5大会员权益，松开后内容自动上移覆盖还原。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>在众多的应用中，类似「我的」这样的一级页面，对于页面空间资源的占用率都会尽量达到最优，重要的信息全面展示，次级信息提供入口。每日优鲜的会员功能，通过点击任一区域下拉，即可展示5大会员权益，松手后内容自动上移覆盖还原。看似很小的交互细节，但抓住了用户的心里，直接展示出来可能会被忽略，通过滑动的动效交互可以引起用户的注意。</p>
+<p>在正常情况下，关于看到收费开通会员类似的信息，大部分用户都不会去主动点击。当用户优先看到会员权益，强调了开通会员后的各种福利和特权，激起好奇心与贪便宜心理，吸引用户参与，勾起开通会员的欲望，从而达到引导的目的，做到了既不占用页面空间，又额外给用户提前展示了应该在入口里面的内容。能轻松看到的不一定感兴趣，正所谓「若隐若现才是诱惑」。另外也减少了不必要的页面跳转，降低操作成本，提升用户体验。</p>
+<p><span class="img-zoom"><img alt="12个产品细节剖析，让你看看大厂是如何做设计的" class="alignnone size-full wp-image-384194" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ui-20200812-4.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「京东」随心所欲的商品列表样式</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>进入京东APP的商品列表，可根据自己的浏览喜好，随时调整切换纵向列表或宫格（两列）列表样式。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>对于会网购的用户来说，几乎没有网购应用小白，根据长期的视觉浏览习惯积累，目前所见过的APP商品列表的主流样式为纵向/宫格列表，大部分用户基本都可以接受。因人而异，这两种样式各有利弊，就专家级主流用户来说，还是比较注重细节的，都有自己比较喜欢、满意的视觉风格，如果当前APP应用没有达到这类用户的心理预期，极有可能会导致用户流失。虽然这类主流用户较少，但是二八原则告诉我们：一个应用的80%收入来源都是来自这20%的主流用户。</p>
+<p>京东APP在这一块就很好规避掉了这个问题，进入商品列表，可根据自己的浏览喜好，随时调整纵向列表或宫格（两列）列表样式，不管用户倾向于哪种浏览方式，都可以随时切换，方便灵活。另外专家级主流用户一旦心仪某个APP应用，基本不会随意卸载更换，忠诚度极高。京东商品列表切换样式的这一小细节，不仅避免了用户流失，还提升了产品的易用性，在一定上也增加了用户的忠诚度。</p>
+<p><span class="img-zoom"><img alt="12个产品细节剖析，让你看看大厂是如何做设计的" class="alignnone size-full wp-image-384195" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ui-20200812-5.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「支付宝」便捷的小程序切换</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在支付宝小程序里，长按右上角的关闭按钮，会弹出最近使用过的8个小程序，单击可快速切换至其他小程序。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>随着消费互联网时代的格局逐渐清晰，大型互联网平台为了进一步提升自身的资源整合能力和服务能力，需要向各个领域进行垂直发展，小程序则是一个重要的方式和手段。目前大部分用户也都集中这些一线的互联网平台中，小程序的免下载、轻量化备受用户的青睐，因而支持小程序开发的公司也一直在为用户提供更方便快捷的服务而不停的探索。</p>
+<p>在支付宝小程序里长按右上角关闭按钮，就会弹出最近使用过的小程序，根据使用时间先后依次排列，点击可快速切换，免去了用户关闭当前小程序后再重新进入其他小程序的常规麻烦操作。退出切换对用户来说，属于一次使用中断，即「开始~结束、再次开始~结束&#8230;」，但通过长按关闭按钮切换，具有连贯性「开始~~~结束」，更有利于用户沉浸式的使用，避免用于因使用中断而离开，一定程度上能十分讨巧地挽留用户继续使用。有时候换一种思考方式做产品，也许能得到不一样的结果。</p>
+<p><span class="img-zoom"><img alt="12个产品细节剖析，让你看看大厂是如何做设计的" class="alignnone size-full wp-image-384196" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ui-20200812-6.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「酷狗音乐」直播导航自定义排序功能</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>酷狗音乐直播模块顶部导航栏，点击下拉展开分类，长按类型名称拖动可进行自定义排序。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>较为主流的音乐和直播平台，通常会有较大的信息密度，因此对内容的分区就显得十分重要。不同用户对内容的喜好不尽相同，所以页面标准化的分区列表排序在真实的使用场景里并不能为所有用户提供最佳体验。酷狗音乐将直播模块顶部导分类设计成用户可自定义的模式，点击下拉箭头会出现分类列表，长按类别名称直接拖动到想要调整的位置就可以自己排列类别的先后顺序了。简单的拖拽动作直接且易操作，提示信息也给用户的操作提供了清晰的引导，灵活的自定义机制，给用户带来便捷性的同时也感受到更具情感价值的定制体验。用户每次进入都能快速的找到自己想要的内容，提高效率、用户粘性及活跃度，强化了产品在用户心中的认知度。</p>
+<p><span class="img-zoom"><img alt="12个产品细节剖析，让你看看大厂是如何做设计的" class="alignnone size-full wp-image-384197" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ui-20200812-7.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「悦跑圈」首页右上角的动态签到提醒</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<ul>
+<li>进入悦跑圈首页，右上角会有日历/列表图标，以动效的形式来回切换吸引我们触发签到；</li>
+<li>完成签到后，回到首页，右上角只显示一个列表图标，并且在图标里增加了对勾的标记。</li>
+</ul>
+<p><strong>2. 设计思考：</strong></p>
+<p>签到功能如今在众多的应用中基本是最常见的功能了，主要通过连续签到来奖励用户，给予一定签到礼物作为回报来增加用户的粘性及使用频率。不过在视觉交互上大同小异，基本通过签到入口进入，签到完成收到奖励就算结束了，没有深挖细节之道，转化率也随之降低。</p>
+<p>悦跑圈通过双图标+动效的视觉引导方式吸引用户去签到，相比静态签到入口，动态比静态更加吸引眼球，增加视觉关注度，具有更强的视觉冲击力，也体现了趣味化的表达，更好的引导用户操作，另外动效也能增添产品的温度，提高用户的签到完成度。在签到完成后，右上角只显示一个列表图标并且增加了对勾的标记，有区别于未签到图标，是为了更好的提示用户已签到完成，避免因忘记是否签到而再次点击进入的无效操作，为用户节省时间使其体验更多其他功能。</p>
+<p><span class="img-zoom"><img alt="12个产品细节剖析，让你看看大厂是如何做设计的" class="alignnone size-full wp-image-384198" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ui-20200812-8.jpg" width="800" height="1560" /></span></p>
+<h4><span class="auto_menu">「腾讯QQ、微信」底部聊天框不一样的工具栏</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<ul>
+<li>QQ底部栏：语音/图片/拍照/红包/表情/延展，5个置顶常用功能+23个延展隐藏功能；</li>
+<li>微信底部栏：语音/表情/延展，2个置顶常用功能+11个延展隐藏功能。</li>
+</ul>
+<p><strong>2. 设计思考：</strong></p>
+<p>在社交产品中，微信和QQ一直占领着第一和第二的位置，独领风骚，虽然同样是即时通讯产品，微信与QQ的底部输入栏为什么会有如此大的差别呢？</p>
+<p>在QQ宣传语「每一天乐·在·沟·通」中，强调沟通的同时还突出了乐的重要性。QQ 用户群体较年轻，而且社交群体多样化，因此发表情图片，语音功能变声，相机滤镜表情，红包有不同功能增加沟通时的互动性，在满足基础的沟通交流上还要满足年轻人对于新鲜事物的探索。根据使用人群的不同，功能的表达方式上也有明显的不同，QQ 功能更是「放」，直接展示功能吸引用户使用，这样的底部功能在变化上更符合年轻化的气质。</p>
+<p>微信主要作为熟人社交，在沟通的过程中比较注重沟通的效率和专注度，目标和主题都是较为明确的。微信所面对的，特别是中老年人用户，学习成本不能过高，所以不适合有太多的内容，避免给用户到来困扰或误操作，需要调性更稳，懂得克制。在表达方式上更懂得「收」，弱化次级功能，强化主要功能。</p>
+<p>其实在设计中，并没有绝对的标准，我们在设计同类产品时，参考或者借鉴需要适度，并非优秀的视觉表现就一定适合自己的产品。重要的是，我们有没有主动去了解其背后的逻辑、面对的用户人群以及公司的产品战略，思考是否适合当前产品的调性，而非仅仅视觉上的表现。</p>
+<p><span class="img-zoom"><img alt="12个产品细节剖析，让你看看大厂是如何做设计的" class="alignnone size-full wp-image-384199" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ui-20200812-9.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「优酷」高效的浮窗设计</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在优酷的视频播放页面，可以将当前正在播放的视频调整为浮窗播放，使用其他功能时，视频播放不受影响；</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>在这个信息大爆炸的时代，很多正在发生或者即将发生的重要信息都会通过各种渠道给广大用户呈现出来，视频也不例外。我们在看视频的同时，也在看该视频其他方面信息的延展，比如吃瓜群众不同见解的评论，或者为了节省时间提前找好下一个视频。这时候就面临一个很大的问题，在看其他信息时需要暂停当前视频来避免错过精彩时刻，在找其他视频的时候需要退出当前视频，尤其是对于没有开通VIP的用户，近乎100秒的广告就足以让导致放弃再次观看，这时候，如果某个产品能节省用户的时间，无疑就占得了先机。</p>
+<p>使用优酷App观看视频时，可以点击对应图标，将当前正在播放的视频调整为浮窗播放，这样浏览其他内容时丝毫不影响当前视频的播放。浮窗位置任意拖动，会自动吸附在屏幕的两侧，可随时关闭。点击浮窗可再次回到该视频的播放详情页面，减少了用户的很多操作步骤，节省时间成本，同时还避免了用户因需要重新播放而放弃的可能性，延长用户的使用时长而增加用户的粘性，让产品进一步得到用户的认可。</p>
+<p><span class="img-zoom"><img alt="12个产品细节剖析，让你看看大厂是如何做设计的" class="alignnone size-full wp-image-384200" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ui-20200812-10.jpg" width="800" height="803" /></span></p>
+<h4><span class="auto_menu">「高德地图」组队开车 | 边开边聊</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<ul>
+<li>自驾使用高德地图，设置好起止位置后，选择组队出行，可随时查看自己与队友之间的距离；</li>
+<li>在组队驾驶过程中，可随时与队友语音对话，方便交流，单条语音消息不超能过30秒。</li>
+</ul>
+<p><strong>2. 设计思考：</strong></p>
+<p>提到高德地图，相信咱们每一个人都不会陌生，日常用来导航，也可以用来打车，一次呼叫多种车型，非常方便。高德背靠阿里，服务功能十分强大，更新路况信息很快，是属于市区/外导航最好的选择。纵然如此，也从未停滞，一直在致力于给用户提供更好的服务而不懈的努力。</p>
+<p>高德地图推出「组队」模式，可以在设置好导航路线之后，选择「组队」选项创建新队伍或直接输入他人分享的口令加入队伍，这样可以让春节组队回家或者自驾出游时，在多人组队的情况下为用户提供实质性的便捷，在地图上可以看到导航图中其他同行队友的行车状况。在10.55.1版本更新后，更是上线了语音消息对话功能，方便交流，当有同伴走错路时，可及时提醒和沟通，避免自驾过程中有人掉队的情况发生。</p>
+<p><span class="img-zoom"><img alt="12个产品细节剖析，让你看看大厂是如何做设计的" class="alignnone size-full wp-image-384201" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ui-20200812-11.jpg" width="800" height="1556" /></span></p>
+<h4><span class="auto_menu">「淘宝」让人欲罢不能的购物车满减、领券提醒</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在淘宝将自己喜欢的商品添加到购物车，去购物车结算，可以通过增加商品达到满减条件即可减掉对应的金额，同时还能领取店铺优惠券，与跨店满减同时享受双重优惠。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>淘宝作为当前最为主流的电商平台，在用户心理方面的研究可谓是下足了功夫，每当我们可能要放弃购买时，就会来一剂勐药，防不胜防，即使我们离开了，它也有本事把我们给弄回来。</p>
+<p>购物车是决定用户转化的关键位置，淘宝首先根据大部分用户的占小便宜心理，通过满减让利的方式去吸引消费者，减掉的数额越高，就越能引起用户的注意力和购买欲望，然后通过店内优惠券再次引爆用户感性消费的欲望。当双重优惠聚集在一起，这种占小便宜心理就会升级为贪婪，不仅能提升转化，还有可能促使用户挑选更多商品以达到满减优惠的条件，不管商品是否为己所需。待成功下单后，还会让用户有种占了便宜的感觉，增强了粘性，也给用户带来了心理上的满足感。</p>
+<p><span class="img-zoom"><img alt="12个产品细节剖析，让你看看大厂是如何做设计的" class="alignnone size-full wp-image-384202" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-ui-20200812-12.jpg" width="800" height="803" /></span></p>
+<p>本期产品细节分享结束，我们下期再见。</p>
+<p>欢迎关注作者微信公众号：「能量眼球」</p>
+<p><span class="img-zoom"><img alt="12个产品细节剖析，让你看看大厂是如何做设计的" class="alignnone size-full wp-image-381046" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-ps-20200722-10.jpg" alt="如何做好UI界面的表单设计？收下这篇科普干货！" width="180" height="180" /></span></p>
+➜高手的版式三部曲系列：文字篇
+https://www.uisdc.com/layout-design-text	62352
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384439" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yxs-2020813.jpg" width="720" height="161" /></span></p>
+<p>继版式三部曲之构图篇结束之后，时隔几个月终于迎来了这个系列的第二篇内容，就是「文字篇」。</p>
+<p>上期回顾：</p>
+<p>[link https://www.uisdc.com/layout-composition ]</p>
+<p>对上一篇内容还有印象的同学，应该记得我在结尾处预留的一个预告，当时我说的编排细节就是「文字」，为什么是文字呢？因为我们在排版时除了处理图片之外，剩下的就是要编排文字。今天的这篇文章也将围绕着「文字」展开，相信大家看完后会对「文字」有一个全新的了解，也将明白文字对于版面的意义是巨大的，处理好它，基本上你的版面也就编排的差不多了。好了，下面我们开始今天的内容吧。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384568" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-1.jpg" width="1200" height="560" /></span></p>
+<p>首先来看几张不同类型的海报，第一张文字占比较高，第二张图片占比较高，第三张文字与图片占比是五五开。</p>
+<p>然而不管是属于哪种类型的，它们的核心目的都是在传达信息。因为对于一张海报来说，我们不光会看还会去阅读它们。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384569" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-2.jpg" width="800" height="214" /></span></p>
+<p>平面设计就是通过文字来「说话」的。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384570" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-3.jpg" width="1200" height="546" /></span></p>
+<p>而在广告设计中，图片的占比会非常高，因为广告多以图片为主，通过图片我们能大致的猜测出设计师想要表达的东西是什么。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384571" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-4.jpg" width="800" height="480" /></span></p>
+<p>总结一下：广告设计多以图片为主，意在通过图片传达概念；而平面设计则多以文字或图片为主，意在通过文字传达信息。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384572" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-5.jpg" width="800" height="220" /></span></p>
+<p>那么作为信息传达的载体，字体就显得格外重要了。下面我会从字体的分类、字体的搭配、字体的气质与设置细节着手，慢慢带领大家去认识字体，首先我们来看看字体的分类都有哪些。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384573" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-6.jpg" width="800" height="604" /></span></p>
+<p>中文字体大致可分为：黑体、宋体、圆体、书法体与卡通体等。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384574" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-7.jpg" width="800" height="330" /></span></p>
+<p>其中书法体又细分为：楷书、行书、草书与隶书等。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384575" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-8.jpg" width="800" height="600" /></span></p>
+<p>在列举的这些字体中，最常用就是：黑体、宋体和圆体，而在书法体中，最常用的是楷书与行书。为什么说这些字体常用呢？因为在许多优秀的设计作品中，这些字体的出现概率都非常高，尤其是黑体与宋体。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384576" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-9.jpg" width="800" height="868" /></span></p>
+<p>下面说一下英文字体，大致可以分为：衬线体、无衬线体、手写体与展示字型等。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384577" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-10.jpg" width="800" height="485" /></span></p>
+<p>其中最常用的就是：衬线体与无衬线体。理由与中文一样，它们也是使用率很高的字体，其次还有一个原因就是在以中文为主的设计中，它们与中文字体搭配起来比较契合。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384578" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-11.jpg" width="800" height="421" /></span></p>
+<p>拿黑体来说，与之搭配的英文字体就是无衬线体，因为它们的笔画特征相似度很高。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384579" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-12.jpg" width="800" height="401" /></span></p>
+<p>宋体搭配的就是衬线体，因为宋体的笔画特征是有粗细变化且有装饰线，而英文的衬线体也刚好有与之相似的地方。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384580" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-13.jpg" width="800" height="378" /></span></p>
+<p>而圆体则是搭配拥有相似特征的无衬线体。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384581" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-14.jpg" width="800" height="411" /></span></p>
+<p>因为常用的书法体通常使用毛笔书写，所以在笔画特征上没有与之相匹配的英文字体，大多数时候我们会选择用衬线体来搭配，具体原因我会在后面的字体气质环节为大家讲解。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384582" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-15.jpg" width="800" height="1334" /></span></p>
+<p>虽然也有别的搭配方式存在，但我给大家提供的这些都是最常用和最安全的。说完字体搭配问题后，下面我们来看看这些字体，所包含的气质又有哪些。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384583" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-16.jpg" width="800" height="734" /></span></p>
+<p>首先是黑体，它具有科技感与现代感，这是由它简洁干练的笔画特征决定的。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384584" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-17.jpg" width="800" height="733" /></span></p>
+<p>其次黑体也能表现出运动与时尚的感觉，因为运动与时尚本就是偏现代的词汇。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384585" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-18.jpg" width="800" height="729" /></span></p>
+<p>接着是宋体，它具有文化与历史的气质，这个比较好理解。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384586" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-19.jpg" width="800" height="733" /></span></p>
+<p>而除了能表现出历史与文化感之外，宋体还能表现出清新与雅致的感觉，这是由宋体的笔画特征决定的，横细竖粗且末端带有装饰，与优雅精致的感觉十分契合。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384587" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-20.jpg" width="800" height="733" /></span></p>
+<p>圆体的特点也是非常明显的，在看到它时脑海中的第一印象就是可爱与卡通。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384588" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-21.jpg" width="800" height="733" /></span></p>
+<p>除了刻板印象外，圆体那种圆滚滚的笔画给我们的感觉还有安全和易亲近，所以圆体也能用来表现儿童与温暖感觉的题材。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384589" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-22.jpg" width="800" height="735" /></span></p>
+<p>一说到书法体，能直接联想到的关键词就是传统与历史，因为书法的演变就是我们汉字发展的轨迹。然后我们回过头来讲一下，为什么书法体可以和西文中的衬线体搭配。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384590" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-23.jpg" width="1200" height="638" /></span></p>
+<p>原因就在于衬线体也具备书法体的某些气质，比如传统、文化、历史等。与书法体在早期的东方一样，衬线体在早期的西方也是主要的字体之一。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384591" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-24.jpg" width="800" height="733" /></span></p>
+<p>温暖、人情味儿，说到书法体可能很难联想到这两个词，但是书法体确实具备这种气质。跟黑体这种棱角分明的字体相比，书法体是手写出来的，它的笔画特征给我们的感觉就是有「温度」的。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384592" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-25.jpg" width="1098" height="1971" /></span></p>
+<p>在字符面板中，除了选择字体与改变字号以外，这两个区域相信大家用的还是比较多的，它们分别是：行距设置与字距设置。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384593" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-26.jpg" width="800" height="102" /></span></p>
+<p>拿行距来说，在使用时有几个比较常用的设置方法，比如用当前文字的字号乘以1.2、1.732或是2。不过，通过这个方法所算出来的数值只是一个参考，也就是说你可以在这个基础上做些调整。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384594" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-27.jpg" width="800" height="137" /></span></p>
+<p>比如：在计算出的数值的基础上进行递增或是递减，这时你要做的就是用眼睛去观察，觉得大了就减少一些，觉得小了就增大一些。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384595" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-28.jpg" width="800" height="122" /></span></p>
+<p>其中，用字号乘以1.2适用于标题。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384596" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-29.jpg" width="800" height="950" /></span></p>
+<p>比如上方那个标题的字号是40pt，那么行距的数值就是用40乘以1.2等于48。下方这个是在此基础上做的一个调整，稍微增大了一些行距。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384597" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-30.jpg" width="800" height="102" /></span></p>
+<p>字号乘以1.2适用于标题，而用字号乘以1.732或2则更适用于小字号的文字，比如内文。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384598" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-31.jpg" width="800" height="734" /></span></p>
+<p>上方是用字号乘以1.732的例子，字号是9pt，用它乘以1.732得出来的数值是15.588，四舍五入取个整数得到的行距就是16，下方这个是用字号乘以2得到的效果。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384599" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-32.jpg" width="458" height="600" /></span></p>
+<p>大多数情况下我建议大家用字号乘以1.732的行距，大小比较适中。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384600" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-33.jpg" width="800" height="493" /></span></p>
+<p>跟行距不同的是，基本上来说字距是无需调整的。当然还是那句话，要靠自己的眼睛来衡量，如果你觉得字与字之间离的很近的话，那么可以增大一些字距，反之，则可以减小一些。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384601" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-34.jpg" width="800" height="277" /></span></p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384683" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bc-20200813-88.jpg" width="1038" height="800" /></span></p>
+<p>其次就是，当你遇到一些偏轻松慢节奏的设计，比如典雅清新类的文学小说时，就可以适当的增加一些字距来营造这个感觉。</p>
+<p>比如这两张海报，左边的是经典的居中结构，右边的是包围结构，构图都是可以的没有任何问题，但为什么看起来还是怪怪的呢？因为文字组没有刻画好。</p>
+<p>为了让大家能更深刻地体会到文字组对于版面的意义，修改了这两张海报，其中构图不变只改文字组。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384602" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-35.jpg" width="488" height="800" /></span></p>
+<p>这个修改前后的对比还是非常直观的，可见文字组对版面的影响有多大。如果说构图是版面的骨架的话，那么文字组就是版面的五官，骨架再好五官不行结果也是可想而之的。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384603" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-36.jpg" width="800" height="476" /></span></p>
+<p>文字组分为：左对齐、居中对齐、顶对齐以及两端对齐。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384604" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-37.jpg" width="800" height="573" /></span></p>
+<p>其中与左对齐与顶对齐对应的有：右对齐与底对齐。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384605" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-38.jpg" width="1080" height="604" /></span></p>
+<p>给大家找了一些各种对齐方式的案例。这是左对齐的形式。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384606" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-39.jpg" width="1080" height="603" /></span></p>
+<p>这是右对齐的形式，与左对齐相比右对齐属于不常用的对齐方式，主要是出于易读性的考虑，但并不是说不能用。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384607" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-40.jpg" width="1080" height="604" /></span></p>
+<p>这是居中对齐的形式，最经典的对齐方式之一。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384608" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-41.jpg" width="1080" height="604" /></span></p>
+<p>这是顶对齐的形式，是文字竖排时最常用的对齐方式。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384609" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-42.jpg" width="1080" height="602" /></span></p>
+<p>这是底对齐的形式，跟顶对齐相比也是属于不常用的对齐方式。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384610" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-43.jpg" width="1080" height="603" /></span></p>
+<p>最后是两端对齐的形式，横排与竖排都可以使用这种对齐方式。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384611" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-44.jpg" width="800" height="563" /></span></p>
+<p>如果作品看得足够多，应该见过这种形式的组合，它同时包含了多种不同对齐方式，我们称其为「对齐组合」。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384612" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-45.jpg" width="800" height="1027" /></span></p>
+<p>比如我们可以借鉴结构，以这个文字组为例，它的结构是这样的：两端对齐、中间的文字字号大，上下的文字字号小，按照这个套路我们来试着做一个组合。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384613" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-46.jpg" width="800" height="422" /></span></p>
+<p>在编排前，我们先阅读一下文案，通过文字可以得知，这是一个与篮球明星有关的内容，气质上来说会偏现代一些。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384614" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-47.jpg" width="800" height="301" /></span></p>
+<p>所以字体可以选择一款黑体，英文部分则搭配一款无衬线体。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384615" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-48.jpg" width="800" height="269" /></span></p>
+<p>根据之前总结到的这些特征，下面就可以开始编排文字了。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384616" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-49.jpg" width="600" height="297" /></span></p>
+<p>按照那个组合的套路，我们先将两端对齐中较大字号的文字给编排出来，而标题信息无疑是非常适合用来放大的。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384617" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-50.gif" width="600" height="296" /></span></p>
+<p>接着再将上方和下方的小字号文字给编排出来。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384618" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-51.jpg" width="1080" height="135" /></span></p>
+<p>其中要注意的就是这段文字的行距，我参考了logo的高度来进行设置。而整个组合中，字距是基本没有进行调整的。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384619" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-52.jpg" width="1080" height="422" /></span></p>
+<p>值得一提的是，在两端对齐的文字组中，这种小大小的形式非常好用。因为它的节奏变化丰富，所以大家在做两端对齐的文字组时不妨试试。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384620" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-53.jpg" width="1080" height="690" /></span></p>
+<p>这就是借鉴结构的效果了，精髓在于要多去分析别人的形式与套路，并从中获取做组合的灵感。除了能借鉴结构之外，我们还可以借鉴标题字数+结构，是什么意思呢？</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384621" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-54.jpg" width="763" height="800" /></span></p>
+<p>以这个组合为例，它的标题有7个字，整个组合是由顶对齐与两端对齐构成的一个对齐组合。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384622" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-55.jpg" width="1080" height="550" /></span></p>
+<p>它的组合结构为小中大，按照这些特点我们来尝试借鉴。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384623" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-56.jpg" width="1080" height="610" /></span></p>
+<p>这是要用到的文案信息，通过阅读文案可以得知，这是一个关于炸鸡套餐的内容。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384624" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-57.jpg" width="402" height="800" /></span></p>
+<p>通过去看kfc的各种物料，发现运用黑体的场景还是比较多的。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384625" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-58.jpg" width="600" height="227" /></span></p>
+<p>所以，在字体搭配上选择用黑体与无衬线体。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384626" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-59.jpg" width="800" height="269" /></span></p>
+<p>根据之前总结到的这些特征，下面就可以开始编排文字了。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384627" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-60.gif" width="599" height="270" /></span></p>
+<p>按照小中大的特点，依次将信息给编排出来。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384628" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-61.jpg" width="800" height="360" /></span></p>
+<p>完成后可以在组与组之间，添加一根小线段用于连接，以起到过度的作用，如果大家现在回过头去看原图的话，也能发现这一特征。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384629" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-62.jpg" width="800" height="460" /></span></p>
+<p>其中，标题的行距就是用标题的字号乘以1.2算出来的。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384630" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-63.jpg" width="800" height="490" /></span></p>
+<p>字距我也做了调整，因为默认0的字距看上去有些拥挤。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384631" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-64.jpg" width="800" height="525" /></span></p>
+<p>可以看出跟原图相比，在不破坏组合结构的情况下，针对文字信息的编排是做了些调整的，比如：原稿最左侧是两行顶对齐的小文字，在借鉴时将它换成了logo，因为我们是要借鉴它的结构，而不是为了跟原稿做的一模一样，具体还是要根据我们的内容来合理编排。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384632" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-65.jpg" width="800" height="1142" /></span></p>
+<p>首先我们来看这张图，一个标准的两端对齐、组合结构与之前那个是一样的，中间的字号大，上下的字号小。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384633" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-66.jpg" width="485" height="800" /></span></p>
+<p>除去这些外还有一个小特征就是，在大字号中间还有一层小字号的文字。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384634" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-67.jpg" width="522" height="600" /></span></p>
+<p>接着我们再来看这张图，它的特点就是图片叠压在了文字的上方。至于它的结构我们可以不用考虑，因为结构已经找好借鉴了。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384635" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-68.jpg" width="1080" height="480" /></span></p>
+<p>这是要用到的文案与图片。通过文字可以得知，这是一个关于介绍昆虫的图书，且配有一张插图。这个插图的风格是手绘形的，偏写实一些没有那么的卡通。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384636" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-69.jpg" width="800" height="300" /></span></p>
+<p>结合这些特点我选择的字体搭配方式是，宋体配衬线体。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384637" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-70.jpg" width="1341" height="629" /></span></p>
+<p>因为字体搭配这部分我又借鉴了一些相关风格的书，发现它们的字体搭配方式用宋体比较多。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384638" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-71.jpg" width="800" height="289" /></span></p>
+<p>分析完文案找到字体搭配方式后，在结合之前总结的一些组合特征，我们就可以开始编排了。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384639" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-72.gif" width="469" height="599" /></span></p>
+<p>先将中间比较大的那层文字给编排出来，然后在它中间处置入一个小字号的文字。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384640" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-73.gif" width="470" height="599" /></span></p>
+<p>中间层编排完成后再来编排上下层的文字，字号不用太大，整体注意好两端对齐。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384641" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-74.jpg" width="623" height="800" /></span></p>
+<p>调整字距的地方有两处，首先是标题，调整的原因在于默认值我觉得有些小了，其次是标题中间的那行文字，调整它的原因在于不想字号放太大。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384642" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-75.gif" width="470" height="600" /></span></p>
+<p>因为是两端对齐的结构，不调整字距的话。标题中间那行文字只能通过放大字号来达到目，然而这个效果并不是我想要的。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384643" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-76.gif" width="516" height="599" /></span></p>
+<p>综合考虑，选择了这个，最后，把图片置入进去叠压在文字的上方。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384644" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-77.jpg" width="686" height="800" /></span></p>
+<p>图叠压在文字上有一个无法避免的问题就是，被压住的文字会出现无法识别的情况，英文还好但是中文却不行，因为在这个组合中，中文是用来阅读的文字，英文仅充当装饰用。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384645" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-78.jpg" width="688" height="800" /></span></p>
+<p>既然中文是重要的信息，那为什么还要去遮挡它呢？因为有提示，通过这两个字你也能猜出来被压住的文字是什么。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384646" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-79.jpg" width="902" height="600" /></span></p>
+<p>这就是借鉴结构+表现手法的例子，多一张图片的加入，混合借鉴后的效果与原稿的相似度就会降低。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384647" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-80.jpg" width="785" height="600" /></span></p>
+<p>下面我们来看这张图，它既有顶对齐又有两端对齐的感觉，像这种组合我将它称为顶部两端对齐。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384648" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-81.jpg" width="614" height="600" /></span></p>
+<p>它的组合结构也是一个小大小的形式。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384649" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-82.jpg" width="777" height="600" /></span></p>
+<p>分析完上一个组合后，再来看看这个组合，值得借鉴的地方有两处，首先就是整体的结构，其次就是字体搭配。由于已经借鉴了上一个组合的结构，所以这个组合要借鉴的就是字体搭配。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384650" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-83.jpg" width="880" height="600" /></span></p>
+<p>在原图的这个字体搭配中，英文是最好判断的，这个字体是衬线体，中文则比较陌生了，既不像黑体也不像宋体。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384651" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-84.jpg" width="898" height="500" /></span></p>
+<p>感觉是被设计过的，不像是字库里的字体，我通过观察发现，它既有宋体横细竖粗的笔画感觉，又有黑体干净利落的特征。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384652" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-85.jpg" width="849" height="600" /></span></p>
+<p>所以，我在字库字体中找到了一款具有类似感觉的字体：姚体。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384653" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-86.jpg" width="800" height="303" /></span></p>
+<p>在字体搭配上选择用姚体搭配衬线体。这里需要强调的一点是，在挑选字体借鉴的过程中已经考虑到了与文案的气质相匹配的问题，下面我们就来看看文案。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384654" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-87.jpg" width="1080" height="296" /></span></p>
+<p>标题叫「遇见你之前」，给人的感觉比较文艺，而姚体我们前面也分析过了，它是具有宋体特征的，而且笔画细长，整体给人的感觉就是比较文艺的。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384655" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-88.jpg" width="800" height="282" /></span></p>
+<p>分析完成后，结合之前总结的组合特点就可以开始编排了。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384656" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-89.gif" width="600" height="360" /></span></p>
+<p>第一步，还是按照小大小的感觉将组合给编排出来，注意好顶部两端对齐。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384657" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-90.jpg" width="800" height="482" /></span></p>
+<p>接着在组与组的缝隙处加入线条就完成了。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384658" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-91.jpg" width="800" height="674" /></span></p>
+<p>在这个组合中标题的行距与字距，默认状态下是左边这样的，字距还好，行距却非常大，这个时候你就不能套用之前讲到的倍数去算行距了。那样行距只会越来越大，所以这里我们要根据视觉效果来调整。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384659" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-92.jpg" width="800" height="534" /></span></p>
+<p>这样，一个借鉴结构+字体搭配的例子就完成了。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384660" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-93.jpg" width="800" height="818" /></span></p>
+<p>这是要用到的文案与图片素材，首先，老规矩分析一下文案，选择与之契合字体。书名叫《流星之绊》，还是比较文艺的。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384661" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-94.jpg" width="935" height="456" /></span></p>
+<p>根据这个书名，搜索了一下原书的样子，在这三个不同的版本中，所感受到的气质有：温情和雅致，在字体的选择上与之较为契合的有：书法体与宋体，这两个字体的选择在这三个不同的原版本中也都有体现。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384662" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-95.jpg" width="600" height="225" /></span></p>
+<p>打算用宋体，与其搭配的英文首选就是衬线体了。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384663" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-96.jpg" width="790" height="800" /></span></p>
+<p>这是第一个要借鉴的对象，可能有人会说这不像文字组，这确实不是文字组，但并不代表它不能被联想成文字组。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384664" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-97.jpg" width="854" height="600" /></span></p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384665" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-98.jpg" width="845" height="600" /></span></p>
+<p>比如它的结构是由一个顶对齐与一个左对齐构成的对齐组合，而且下方的那个左对齐文字是放在了顶对齐的负空间处的。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384666" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-99.jpg" width="861" height="600" /></span></p>
+<p>其次，顶对齐的文字字号较大，下方左对齐的文字字号较小。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384667" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-100.jpg" width="800" height="308" /></span></p>
+<p>这就是根据那张图所总结出的一些组合特征，下面我们就根据这些特征来编排文字。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384668" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-101.gif" width="582" height="600" /></span></p>
+<p>先排出顶对齐的文字，然后在其负空间处置入左对齐的文字信息。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384669" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-102.gif" width="584" height="600" /></span></p>
+<p>排到这发现右下角还有块小缺口，既然是要做一个对齐组合的话，那么就要把它填满。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384670" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-103.jpg" width="586" height="600" /></span></p>
+<p>关于顶对齐的中间部分为什么要这么做，是因为标题的字数不足以作出顶对齐的感觉，为了解决这个问题，选择重复了一次标题并且将它的笔画打散了，而打散的灵感来源于「流星」，它们就像流星一样散布在天空中，不知道什么时候就会掉落下来。到这为止是书封的上半部分，下面我们来编排下半部分。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384671" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-104.jpg" width="1100" height="787" /></span></p>
+<p>这是要用到的借鉴图，它也是一个由顶对齐与左对齐构成的对齐组合。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384672" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-105.jpg" width="1080" height="383" /></span></p>
+<p>除了这个外它顶对齐部分的文字跟左对齐的比，也是属于较大的。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384673" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-106.jpg" width="800" height="305" /></span></p>
+<p>这是从那个组合中，总结出的组合特征，与上一个几乎一样。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384674" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-107.gif" width="600" height="234" /></span></p>
+<p>按照总结出的组合特征，将文字给编排出来。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384675" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-108.jpg" width="1080" height="420" /></span></p>
+<p>其中顶对齐与这段左对齐的文字，它们的行距是用字号乘以1.732算出来的，字距则是做了些微调整，因为当文字缩小后，它的字距在视觉上看着也会变小，所以我在默认0的基础上将字距增加到了50。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384676" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-109.jpg" width="1080" height="486" /></span></p>
+<p>这就是根据那两张图片所借鉴出来的文字组了，下面把它们置入进版面中。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384677" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-110.gif" width="484" height="599" /></span></p>
+<p>整体是一个上下结构的，这种类型在构图中属于上下构图。这也是为什么会找那两张图来当参考的原因，因为提前已经考虑好了构图。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384678" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-111.gif" width="484" height="600" /></span></p>
+<p>接下来做烘托氛围的工作，先把底色换成夜空的黑色，然后配上图片。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384679" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-112.jpg" width="644" height="800" /></span></p>
+<p>接着更换字体的色彩恢复识别性，其中黄色的部分是为了与白色部分做区分。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384680" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-113.jpg" width="646" height="800" /></span></p>
+<p>然后给腰封换上色彩以恢复下方的文字的识别性，再挑选一些信息，在它们的下方配上黄色，目的是为了与上方的色彩做呼应。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384681" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-114.gif" width="484" height="600" /></span></p>
+<p>最后，将书嵴编排出来，这个案例就编排完成了。</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-384682" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-bs-20200813-115.jpg" width="600" height="445" /></span></p>
+<p>以上就是版式三部曲之文字篇的所有内容了，回顾一下，由两个部分组成。第一部分是：字体的分类、字体的搭配、字体的气质与设置细节。具体包括：字体有哪些不同的类型、在选中字体的类型后，要如何选择与之搭配的英文字体。字体气质主要讲的是，不同类型的字体都有哪些味道，它的意义在于当你确定好项目的风格后，可以根据不同字体的气质，快速的找到与项目定位契合的字体。</p>
+<p>第二部分主要讲的是：文字组的刻画与借鉴，其实对于新手而言，刻画文字组的过程就是借鉴的过程，因为我们都需要在借鉴的过程中逐步积累编排的经验，所以学会如何借鉴对于我们的成长是至关重要的。这一期要说的就是这些，我们下期再见，拜拜。</p>
+<p>欢迎关注研习设的微信公众号：「Yanxishe2017」</p>
+<p><span class="img-zoom"><img alt="高手的版式三部曲系列：文字篇" class="alignnone size-full wp-image-271254" src="https://image.uisdc.com/wp-content/uploads/2018/05/yxskxsqr.jpg" alt="这次我教你，优秀的Banner是怎样用对模特图的！" /></span></p>
 ➜壹周速读：这些UI、平面、视觉的文章没有一篇是吃素的！
 https://www.uisdc.com/quick-reading-weekly-vol68	67751
 <p><span class="img-zoom"><img alt="壹周速读：这些UI、平面、视觉的文章没有一篇是吃素的！" src="https://image.uisdc.com/wp-content/uploads/2020/08/quick-reading-weekly-vol68-1.jpg" width="750" height="168" class="alignnone size-full wp-image-384900" /></span></p>
