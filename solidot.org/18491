@@ -25,3 +25,12 @@ https://www.solidot.org/story?sid=65267	35898
 ➜深圳大疆大规模裁员
 https://www.solidot.org/story?sid=65268	39720
 路透援引知情人士的消息<a href="https://cn.reuters.com/article/dji-job-cut-reform-0817-idCNKCS25D0YJ?il=0">报道</a>，中国无人机行业巨擘深圳大疆大举裁减全球销售及营销团队员工，除了因为面临新冠疫情阻力之外，同时也在多个主要市场遭遇越来越大的政治压力。近几个月内，这家全球最大无人机制造商已经将深圳总部原有 180 人的企业销售及营销团队缩减为60人，消费市场的团队也有类似的裁员幅度。消息人士称，公司考虑给全体约 14,000 名员工来个“瘦身”。大疆控制着全球超过 70% 的消费性及工业用无人机市场，市场研究机构 Frost &amp; Sullivan 估计，这个市场的规模今年将达到 84 亿美元。但大疆在美国面临着越来越大的政治压力。<p>
+➜IBM 宣布 POWER10 处理器
+https://www.solidot.org/story?sid=65269	44847
+IBM <a href="https://newsroom.ibm.com/2020-08-17-IBM-Reveals-Next-Generation-IBM-POWER10-Processor">宣布</a>了它的下一代处理器 POWER10。IBM 早已不再自己生产芯片，POWER10 将由三星制造，采用 7 纳米工艺，是 IBM 第一款使用 7 纳米制程技术的商业处理器。IBM 在新闻稿中称，POWER10 的能效三倍于上一代的 POWER9，采用 POWER10 的系统将在明年上半年上市。POWER10 有单芯片模块和双芯片模块<a href="https://regmedia.co.uk/2020/08/17/ibm_power10_summary.pdf" target="_blank">两种配置</a>，单芯片模块有 15 个 SMT8 核心，每个核心 2MB L2 缓存，L3 缓存 120 MB，运行频率 4+GHz，每个核心的性能比 POWER9 提升 30%。双芯片模块有 30 个 SMT8 核心，运行频率 3+GHz，FP64 性能 5.7TF。<p>
+➜HarfBuzz 维护者在伊朗探亲期间遭到拘留
+https://www.solidot.org/story?sid=65270	46507
+文字塑形库 HarfBuzz 开发者 Behdad Esfahbod 在 Medium 博客上<a href="https://medium.com/@behdadesfahbod/if-you-read-one-thing-from-me-please-be-this-2262ec7b8af2" target="_blank">讲述了他今年初回伊朗探亲的遭遇</a>。1 月 3 日美国暗杀了伊朗将军 Qasem Soleimani，1 月 7 日他进入伊朗访问家人度两周的假期。当晚，伊朗革命卫队攻击了美军的基地，期间错误击落了乌克兰航班 752，杀死了机上的 176 人。1 月 15 日他和父亲一起见朋友时遭到便衣的逮捕，指控他从事了违反国家安全的活动。在意识到抵抗是徒劳之后，他配合了对方。他被单独关押了 7 天，每天询问了 6 小时以上，因为比较配合革命卫队的审讯者也表现的“比较友好”。革命卫队下载了他的所有私人数据，包括 300 GB+ 的 Google，Facebook、Twitter、Telegram 和 LinkedIn。他曾是一名活动人士，与反对派领导人的合照是导致他遭到逮捕的原因。伊朗革命卫队释放他的条件是要求他以后配合情报收集工作。他知道要活着离开伊朗他只能答应对方的条件。但这一经历给他的精神造成了巨大的冲击，他一度需要服用精神类药物。他现在决定将自己的遭遇讲出来。<p>
+➜微软上周修复的一个漏洞已被利用了两年
+https://www.solidot.org/story?sid=65271	49151
+微软上周二释出的例行安全更新修复了一个编号为 <a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1464" target="_blank" rel="noopener noreferrer">CVE-2020-1464</a> 的漏洞，微软称该漏洞允许攻击者绕过安全功能加载没有正确签名的文件。微软没有提到哪位安全研究人员向它报告了该漏洞，只是表示该漏洞正被利用。微软这么做可能是因为它最早被利用的时间是在 2018 年 8 月，过去 18 个月有多名安全研究人员向微软报告了该漏洞，它的安全团队验证了漏洞但一直没有给出修复时间。也就是说，软件巨人用了两年时间<a href="https://krebsonsecurity.com/2020/08/microsoft-put-off-fixing-zero-day-for-2-years/" target="_blank">去修复一个 0day 漏洞</a>。利用该漏洞很简单，只要给一个已被信任软件开发商签名的 MSI 文件添加一个恶意 JAR 文件，用 .jar 扩展名重命名文件，那么 Microsoft Windows 就会将其识别为是一个有效签名的文件。微软没有回答它为什么花了这么长时间修复签名漏洞。<p>
