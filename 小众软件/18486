@@ -1,14 +1,14 @@
 ➜如何利用手机热点使用 Resilio Sync 同步数据？
 https://www.appinn.com/resilio-sync-hotspot/	53504
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202008/resilio-sync.jpg!o" alt=""/></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202008/resilio-sync.jpg!o" alt="如何利用手机热点使用 Resilio Sync 同步数据？ 17" title="如何利用手机热点使用 Resilio Sync 同步数据？ 22"></figure></div>
 <p class="has-text-align-center">原标题：<strong>将建热点的手机加入 Resilio Sync 局域网同步</strong></p>
-<p class="has-text-align-center">来自<a href="https://meta.appinn.net/t/resilio-sync/18249/" class="rank-math-link">发现频道</a>，作者 @<strong><a href="https://meta.appinn.net/u/feeshy">feeshy</a></strong>，适用于 Android 客户端</p>
-<p>目前我用 <a href="https://meta.appinn.net/t/topic/15821" class="rank-math-link">Resilio Sync</a> 在设备之间同步文件。有时在没有 Wi-Fi 的地方产生传文件的需求，只能用<strong>另一台手机建热点</strong>，然后电脑和手机连这个热点来同步。<a href="https://forum.resilio.com/topic/44015-local-sync-not-working-using-android-wifi-tethering/" class="rank-math-link">建热点的手机自身是无法被 Sync 的网络被发现的</a>，如果想让 3 台以上的设备互相同步的话，就要分别建两次热点……</p>
+<p class="has-text-align-center">来自<a href="https://meta.appinn.net/t/resilio-sync/18249/" class="rank-math-link" target="_blank" rel="noopener">发现频道</a>，作者 @<strong><a href="https://meta.appinn.net/u/feeshy" target="_blank" rel="noopener">feeshy</a></strong>，适用于 Android 客户端</p>
+<p>目前我用 <a href="https://meta.appinn.net/t/topic/15821" class="rank-math-link" target="_blank" rel="noopener">Resilio Sync</a> 在设备之间同步文件。有时在没有 Wi-Fi 的地方产生传文件的需求，只能用<strong>另一台手机建热点</strong>，然后电脑和手机连这个热点来同步。<a href="https://forum.resilio.com/topic/44015-local-sync-not-working-using-android-wifi-tethering/" class="rank-math-link" target="_blank" rel="noopener">建热点的手机自身是无法被 Sync 的网络被发现的</a>，如果想让 3 台以上的设备互相同步的话，就要分别建两次热点……</p>
 <p>有没有办法能采用类似各种“手机快传”的技术，让建热点的手机可以直接加入到同步网络中呢？</p>
 <hr class="wp-block-separator"/>
 <p><strong>热点机</strong>其实接入了两个网络，一个是基站提供的<strong>移动数据</strong>广域网络，另一个是热点提供的 WLAN。看来似乎 Resilio Sync 移动端在处理这种同时接入两个网络的情况时，会认为自己只处在广域网中，而不会在局域网广播自己的端口。</p>
 <p>那么我们只要手动把 Sync 客户端没做的事情替他做好就可以了：</p>
-<ol start="0"><li>在每一个 Resilio Sync 客户端中关掉该文件夹的中继服务器和 Tracker 功能，防止数据流经广域网。</li><li>打开热点机 Resilio Sync 移动端的<code>设置</code>&gt;<code>网络</code>，允许使用移动数据同步（并不会真的走移动数据），记录 Sync 在这台手机上所占用的端口。<br /><img width="387" height="235" src="https://img3.appinn.net/meta/uploads/default/original/2X/e/e458e8ce5a5e240d9d93ebc5de6bafd9cc3ba596.jpeg" alt="image"/></li><li>其他的设备连接到热点，在同步文件夹中添加预定义的主机。其中IP是当前局域网的网关地址，端口是上一步找到的。<br /><img width="387" height="235" src="https://img3.appinn.net/meta/uploads/default/original/2X/d/d782a8720b4756532b34d061d13f25bd700bd12f.png" alt="image"/></li></ol>
+<ol start="0"><li>在每一个 Resilio Sync 客户端中关掉该文件夹的中继服务器和 Tracker 功能，防止数据流经广域网。</li><li>打开热点机 Resilio Sync 移动端的<code>设置</code>&gt;<code>网络</code>，允许使用移动数据同步（并不会真的走移动数据），记录 Sync 在这台手机上所占用的端口。<br /><img width="387" height="235" src="https://img3.appinn.net/meta/uploads/default/original/2X/e/e458e8ce5a5e240d9d93ebc5de6bafd9cc3ba596.jpeg" alt="image" title="如何利用手机热点使用 Resilio Sync 同步数据？ 23"></li><li>其他的设备连接到热点，在同步文件夹中添加预定义的主机。其中IP是当前局域网的网关地址，端口是上一步找到的。<br /><img width="387" height="235" src="https://img3.appinn.net/meta/uploads/default/original/2X/d/d782a8720b4756532b34d061d13f25bd700bd12f.png" alt="image" title="如何利用手机热点使用 Resilio Sync 同步数据？ 24"></li></ol>
 <hr class="wp-block-separator"/>
 <p>之后，就能解决这个比较尴尬的问题了。</p>
-<p>另外，@feeshy 还折腾了一个：<a href="https://meta.appinn.net/t/aria2-resiliosync/15821" class="rank-math-link">Aria2 + Resilio Sync 自建离线下载服务的过程记录</a>，原理是是通过在大宽带 VPS 上利用 Aria2 秒下宽带运营商连不上的文件，然后通过 Resilio Sync 将文件同步回来。感兴趣的同学可以前往了解。</p>
+<p>另外，@feeshy 还折腾了一个：<a href="https://meta.appinn.net/t/aria2-resiliosync/15821" class="rank-math-link" target="_blank" rel="noopener">Aria2 + Resilio Sync 自建离线下载服务的过程记录</a>，原理是是通过在大宽带 VPS 上利用 Aria2 秒下宽带运营商连不上的文件，然后通过 Resilio Sync 将文件同步回来。感兴趣的同学可以前往了解。</p>

@@ -1,31 +1,31 @@
 ➜DAVx⁵- 在 iPhone 与 Android  间双向同步通讯录和日历
 https://www.appinn.com/davx5/	8160
 <p><a href="https://www.appinn.com/davx5/" class="rank-math-link">DAVx</a>⁵ 是一款通过标准 CardDAV 和 CalDAV 协议同步通讯录、日历的 Android 应用，支持 iCloud 等云服务，只需要在 Android 端安装，即可实现在 iPhone 与 Android 间<strong></strong><strong>双向同步</strong>通讯录、日历、提醒事项等数据。@Appinn</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202008/davx5.jpg!o" alt=""/></figure></div>
-<p>来自<a href="https://meta.appinn.net/t/davx-carddav-caldav/18211" class="rank-math-link">发现频道</a> @<a href="https://meta.appinn.net/u/xiozf">xiozf</a> 的推荐。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202008/davx5.jpg!o" alt="DAVx⁵- 在 iPhone 与 Android  间双向同步通讯录和日历 18" title="DAVx⁵- 在 iPhone 与 Android  间双向同步通讯录和日历 25"></figure></div>
+<p>来自<a href="https://meta.appinn.net/t/davx-carddav-caldav/18211" class="rank-math-link" target="_blank" rel="noopener">发现频道</a> @<a href="https://meta.appinn.net/u/xiozf" target="_blank" rel="noopener">xiozf</a> 的推荐。</p>
 <p>CardDAV 和 CalDAV 是同步通讯录和日历的开放标准，安卓原生不支持，DAVx⁵ 可以很好的在安卓上实现基于这两个协议的同步。</p>
 <h2>DAVx⁵ 应用简介</h2>
-<ul><li>可与 Android 的日历、通讯录软件无缝结合</li><li>可与超过 50 个国外服务提供商进行同步，包括苹果 iCloud、ownCloud、Yandex、Zoho 等，<a href="https://www.davx5.com/tested-with" class="rank-math-link">具体点此</a></li><li>国内服务提供商均面向 iOS 平台提供教程，如安卓要使用还需使用其他软件抓取网址（CardDAV 地址）</li><li>不需要 GMS</li><li>可以设置自动同步或者手动同步</li><li>在 Play 商店中付费下载，在 F-Droid 市场免费下载</li></ul>
+<ul><li>可与 Android 的日历、通讯录软件无缝结合</li><li>可与超过 50 个国外服务提供商进行同步，包括苹果 iCloud、ownCloud、Yandex、Zoho 等，<a href="https://www.davx5.com/tested-with" class="rank-math-link" target="_blank" rel="noopener">具体点此</a></li><li>国内服务提供商均面向 iOS 平台提供教程，如安卓要使用还需使用其他软件抓取网址（CardDAV 地址）</li><li>不需要 GMS</li><li>可以设置自动同步或者手动同步</li><li>在 Play 商店中付费下载，在 F-Droid 市场免费下载</li></ul>
 <h2>DAVx⁵ 应用测试</h2>
 <p>原本我只是想找一个不需要 GMS 就能将谷歌通讯录同步回来的 APP，找到 DAVx⁵ 后非常高兴，赶紧测试了下，结果一直返回401错误。去搜了下发现谷歌文档提到：</p>
 <blockquote class="wp-block-quote"><p>Any attempt to connect over HTTP with Basic authentication or with an email/password that doesn’t match a Google account results in an HTTP&nbsp;<code>401 Unauthorized</code>&nbsp;response code.</p></blockquote>
 <p>而 DAVx⁵ 的作者明确表示：现阶段不会支持 OAuth 2.0，工作量大，也没有其他服务需要。我也想起来好像在哪看过文章说，新生成的应用密码无法再使用这种验证方式，以前生成的则可以继续使用。这成了压垮骆驼的最后一根稻草，我开始寻找新的服务提供商。</p>
-<p>因国内各互联网公司以往的黑历史，我排除了 QQ、小米和 163，测试了 139 邮箱发现几个字段均不支持，最后测试 iCloud 成功。<a href="https://www.xiaomi.cn/post/5116728" class="rank-math-link">小米论坛有一个详细的教程。</a><br />有趣的是，当我关闭 iPhone 内置的 iCloud 通讯录同步，想通过添加 CardDAV 账号的方式去同步时失败了。</p>
+<p>因国内各互联网公司以往的黑历史，我排除了 QQ、小米和 163，测试了 139 邮箱发现几个字段均不支持，最后测试 iCloud 成功。<a href="https://www.xiaomi.cn/post/5116728" class="rank-math-link" target="_blank" rel="noopener">小米论坛有一个详细的教程。</a><br />有趣的是，当我关闭 iPhone 内置的 iCloud 通讯录同步，想通过添加 CardDAV 账号的方式去同步时失败了。</p>
 <hr class="wp-block-separator"/>
 <p>DAVx⁵ 让 iPhone 与 Android 双机用户有了一个简单的同步方案，需要以下步骤：</p>
-<ol><li>数据位于 iCloud（包括通讯录、日历、提醒事项）</li><li>Android 端安装 DAVx⁵</li><li>获取 <a href="https://appleid.apple.com" class="rank-math-link">iCloud 安全</a>里的 App 专用密码</li></ol>
-<p>注：如想同步提醒事项，需要 Android 安装 <a href="https://opentasks.app/" class="rank-math-link">OpenTasks</a> 同步，这是一款开源的任务管理应用。</p>
+<ol><li>数据位于 iCloud（包括通讯录、日历、提醒事项）</li><li>Android 端安装 DAVx⁵</li><li>获取 <a href="https://appleid.apple.com" class="rank-math-link" target="_blank" rel="noopener">iCloud 安全</a>里的 App 专用密码</li></ol>
+<p>注：如想同步提醒事项，需要 Android 安装 <a href="https://opentasks.app/" class="rank-math-link" target="_blank" rel="noopener">OpenTasks</a> 同步，这是一款开源的任务管理应用。</p>
 <div class="wp-block-columns">
 <div class="wp-block-column">
-<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202008/photo_2020-08-11_00-34-38.jpg!o" alt=""/></figure>
+<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202008/photo_2020-08-11_00-34-38.jpg!o" alt="DAVx⁵- 在 iPhone 与 Android  间双向同步通讯录和日历 19" title="DAVx⁵- 在 iPhone 与 Android  间双向同步通讯录和日历 26"></figure>
 </div>
 <div class="wp-block-column">
-<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202008/photo_2020-08-11_00-36-22.jpg!o" alt=""/></figure>
+<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202008/photo_2020-08-11_00-36-22.jpg!o" alt="DAVx⁵- 在 iPhone 与 Android  间双向同步通讯录和日历 20" title="DAVx⁵- 在 iPhone 与 Android  间双向同步通讯录和日历 27"></figure>
 </div>
 </div>
 <p>之后，只需要在 DAVx⁵ 上登录 iCloud 账号即可。即右侧图片里选择“使用 URL和用户名登录”，在 根地址中输入 <strong>https://icloud.com</strong>，再输入 iCloud 用户名和 <strong>App 专用密码</strong>即可。</p>
 <p>至此，在 iPhone 与 Android 两端的 通讯录、日历、提醒事项 即可自动同步，数据保存在 iCloud 中。</p>
-<p>DAVx⁵ 官网<a href="https://www.davx5.com/" class="rank-math-link">在这里</a>，Android 用户前往 <a href="https://play.google.com/store/apps/details?id=at.bitfire.davdroid" class="rank-math-link">Play 商店</a>付费支持开发者，或下载 <a href="https://f-droid.org/packages/at.bitfire.davdroid/" class="rank-math-link">F-droid</a> 版本。</p>
+<p>DAVx⁵ 官网<a href="https://www.davx5.com/" class="rank-math-link" target="_blank" rel="noopener">在这里</a>，Android 用户前往 <a href="https://play.google.com/store/apps/details?id=at.bitfire.davdroid" class="rank-math-link" target="_blank" rel="noopener">Play 商店</a>付费支持开发者，或下载 <a href="https://f-droid.org/packages/at.bitfire.davdroid/" class="rank-math-link" target="_blank" rel="noopener">F-droid</a> 版本。</p>
 <hr />
-<a href="http://www.appinn.com/copyright/?utm_source=feeds&utm_medium=copyright&utm_campaign=feeds" title="版权声明">&#169;</a>2019 青小蛙 for <a href="http://www.appinn.com/?utm_source=feeds&utm_medium=appinn&utm_campaign=feeds" title="本文来自小众软件" >小众软件</a> | <a href="http://www.appinn.com/join-us/?utm_source=feeds&utm_medium=joinus&utm_campaign=feeds" title="加入小众软件">加入我们</a> | <a href="https://meta.appinn.com/c/faxian/?utm_source=feeds&utm_medium=contribute&utm_campaign=feeds" title="给小众软件投稿" target="_blank">投稿</a> | <a href="http://www.appinn.com/feeds-subscribe/?utm_source=feeds&utm_medium=feedsubscribe&utm_campaign=feeds" title="可以分类订阅小众，Windows/MAC/游戏" target="_blank"><font color="red">订阅指南</font></a><br /> 3659b075e72a5b7b1b87ea74aa7932ff <br />
+<a href="http://www.appinn.com/copyright/?utm_source=feeds&amp;utm_medium=copyright&amp;utm_campaign=feeds" title="版权声明">&#169;</a>2019 青小蛙 for <a href="http://www.appinn.com/?utm_source=feeds&amp;utm_medium=appinn&amp;utm_campaign=feeds" title="本文来自小众软件">小众软件</a> | <a href="http://www.appinn.com/join-us/?utm_source=feeds&amp;utm_medium=joinus&amp;utm_campaign=feeds" title="加入小众软件">加入我们</a> | <a href="https://meta.appinn.com/c/faxian/?utm_source=feeds&amp;utm_medium=contribute&amp;utm_campaign=feeds" title="给小众软件投稿" target="_blank" rel="noopener">投稿</a> | <a href="http://www.appinn.com/feeds-subscribe/?utm_source=feeds&amp;utm_medium=feedsubscribe&amp;utm_campaign=feeds" title="可以分类订阅小众，Windows/MAC/游戏" target="_blank"><font color="red">订阅指南</font></a><br /> 3659b075e72a5b7b1b87ea74aa7932ff <br />
 <a href="https://www.appinn.com/davx5/#comments" title="to the comments">点击这里留言、和原作者一起评论</a><button class="simplefavorite-button has-count preset" data-postid="36605" data-siteid="1" data-groupid="1" data-favoritecount="0" style=""><i class="sf-icon-bookmark" style=""></i>收藏<span class="simplefavorite-button-count" style="">0</span></button>
