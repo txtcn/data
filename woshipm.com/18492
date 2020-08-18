@@ -2226,8 +2226,8 @@ http://www.woshipm.com/pmd/4142069.html	30808
 <p>惯性范围分类的问题在于，将判断一个问题的逻辑基础建立在常规分类下的普遍认知，而非通过现实条件利用逻辑思考去解决问题。</p>
 <p>按范围分类，绝不是逻辑性的说明。因为即使做出再精准的分类判断，依然没有直接回答“为什么会导致这种现象”。</p>
 <h3>#专栏作家#</h3>
-<p>穆宁，公众号：穆宁说，人人都是产品经理专栏作家。北邮硕士，前京东平台、百度商业化产品经理。擅长想要转行产品经理、产品校招面试的教学与辅导，曾指导数十人产品经理岗求职成功，欢迎交流。</p>
-<p>本文由 @穆宁 独家首发于人人都是产品经理。未经许可，禁止转载。</p>
+<p>穆宁，公众号：穆宁说，人人都是产品经理专栏作家。北邮硕士，前京东平台、百度商业化产品经理。</p>
+<p>本文原创发布于人人都是产品经理。未经许可，禁止转载。</p>
 <p>题图来自Unsplash，基于CC0协议。</p>
 ➜花费14天，我设计了一个玩具购物网站
 http://www.woshipm.com/pd/4140342.html	32156
@@ -2859,5 +2859,488 @@ http://www.woshipm.com/marketing/4141214.html	35817
 <p>而这也在影响短视频部分的内容生态，如果把更多的流量给到这些为了导流的短视频，毫无疑问就会减少那些优质视频的曝光量，平台为了 GMV 有自己选择的权利，但是从长远来看，这样的选择其实是对自己的“双杀”。</p>
 <h3>#专栏作家#</h3>
 <p>司马特小队，公众号：司马特小分队，人人都是产品经理专栏作家。8年+互联网资深产品经验，多年B端产品管理经验。具有多个从0到1的大型B端产品的孵化、重构、迭代经验；主要教授产业互联网产品相关的硬核知识点。</p>
+<p>本文原创发布于人人都是产品经理，未经许可，禁止转载</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
+➜医疗行业信息化相关知识
+http://www.woshipm.com/it/4140739.html	38601
+<blockquote><p>编辑导读：本文围绕医疗行业信息化的相关知识进行展开，作者主要对医院科室分布、医院人才结构和医生职业发展进行了梳理，进而帮助大家形成对医疗行业的认识和了解，希望对你有用。</p></blockquote>
+<p><img data-action="zoom" class="size-full wp-image-4142961 aligncenter" src="http://image.woshipm.com/wp-files/2020/08/PY7iRiWNAod15VGTko6j.jpg" width="900" height="420" /></p>
+<p>一直从事医疗领域的设计工作，这是很早之前进行的一次分享，整理文件看到了，拿出来分享一下，如有问题，欢迎指正。</p>
+<h2>01 医院等级分类</h2>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/fids54uCfI8iG3Yww0Yt.png" width="900" height="1080" /></p>
+<p>医院根据《医院分级管理标准》，将医院分为三级十等，一级医院、二级医院与三级医院；这里的等级跟我们平时的认知可能不太一样，比如成绩排名第一名，第二名，第三名；第一名是最好的；但是在医院这边，三级甲等则是最好的，至于这里提到的三级特等，我没有搜到相关的资料，如果大家有关于这个的相关资料可以分享一下。</p>
+<p>这里的这个一个文件是卫生部1989年发布的《医院分级管理标准》，在2013年，整合组建国家卫生和计划生育委员会。下面具体看一下各等级的具体划分：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/V1N3dPR5Ws13yHFdfD2M.png" width="900" height="1080" /></p>
+<p>一级医院基本就是我们平时说的基层医院，二级医院就是稍微等级高一点的医院，用一个最直接的指标划分，床位数是最直观的，一级医院：20-100张；二级医院：101-500；三级医院：501以上；</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/eb4zaEIcSELIO1RV6lcm.png" width="900" height="1080" /></p>
+<p>三级医院的服务范围就会大很多，是面向全国的，并且对于一级、二级医院有指导的义务；对于三级医院会有考核，比方说三级公立医院绩效考核等。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/DL1KK0XeY5tMDUpqZ3q4.png" width="900" height="1080" /></p>
+<p>等级越高的医院需要审批的级别越高，从地方到国家卫生部。</p>
+<h2>02 医疗信息化相关</h2>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/d4crMKgBcEdLqbOLSe9O.png" width="900" height="1080" /></p>
+<p>什么是医疗信息化，其实就是数字化、网络化、信息化，根据国家统一的医疗系统信息化水平划分，主要是这三类，所以医院在搞信息化的时候，必须有软件作为载体。</p>
+<p>这里以去医院看病流程为例，引出信息化系统；</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/GqlqvIzSDABJXEl4XzPn.png" width="900" height="1080" /></p>
+<p>首先从挂号-分诊-就诊；如需检查则安排CT、抽血等，住院需求的则需要安排住院，开药取药，当然这只是最基本的一套流程，这其中涵盖了很多信息系统；</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/SlYvKJnWlCUoKW5GUumT.png" width="900" height="1080" /></p>
+<p>医院的系统其实有很多，大大小小可能几十种，其实也看医院的大小，图上这些只是一部分，这些系统在医院的使用中很多都是相互有关系的，需要互相配合使用，把它们合在一起，就形成了一个大型的信息管理系统His系统；</p>
+<h3>1. HIS系统</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/sxYJYAVOukM6IC7RH8mY.png" width="900" height="1080" /></p>
+<p>英文全称 （Hospital Information System），利用计算机软硬件技术，网络通讯技术等现代化手段，覆盖医院所有业务和业务全过程的信息管理系统。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/7pK05KmBPwGRCO31HJcb.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/61XPiM79CCjwWfOZuQG2.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/kcrqwrpm8YpsnizAHrVZ.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/KynaGraAlGcFhepd6WPZ.png" width="900" height="1080" /></p>
+<h3 id="PPscM">2. HMIS系统</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/IsJgcTq5HSo2IXQNwjvZ.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/2dEPYfRfSm3kKn8syHaR.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/8PUJ8qytUXKo2hx1VvtT.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/6vxYGV4orFWlZpNG0cSt.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/Q5bVNwnbAcKzJNzkUhJF.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/zOLpu1Sai9mndiCn06Ni.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/Mp9X0fCNc5eJWOEShPjn.png" width="900" height="1080" /></p>
+<p><strong>总结一下，HMIS系统：</strong></p>
+<p>以文字、简单图形信息为主；通常数据流量不大，个别子系统短时间数据突发量较大（如门诊业务系统）；对病人病历、检查和检验结果，药房划价系统数据访问频繁；涉及到财务信息及患者个人信息等。因此对安全性要求同样比较高。</p>
+<h3>3. CIS系统</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/OEyYwbkCIjSzJxnjM4pu.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/7LPak2MjhQS7XeunAcnw.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/EXjK4rrEy142m4kWgSQG.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/qqWoLOgN8r8Xv4IzsXSR.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/UnUbfCEAXRtCzc3Td4Wj.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/kBqJ63Gl9PnY7oTtLqWE.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/sudhgxpflg7zwKrFRSPv.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/q2gqjNwpD99m5Am8HMlV.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/Z4iUPIf34d7KEBYoDir8.png" width="900" height="1080" /></p>
+<p><strong>总结</strong>：以上应用主要以图形、图像为主，数据量大，对网络的稳定性和带宽要求高。</p>
+<h2>03 科室分类</h2>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/fQwGg3f4ktoJrRprm7ZE.png" width="900" height="1080" /></p>
+<h3>1. 临床科室</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/i6vfTwtbrp4Rg5X5XcXm.png" width="900" height="1080" /></p>
+<p>直接担负着对病人的收治、诊断、治疗等任务；临床人员包括直接参与治疗、护理病人的医生、护士；</p>
+<h3>2. 医技科室</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/AeJZVnqgxyxulliU34kI.png" width="900" height="1080" /></p>
+<ul>
+<li>药剂科：向临床提供安全有效、质优价廉的各类药品。</li>
+<li>检验科：每天承担包括病房、门急诊病人、各类体检以及科研的各种人体和动物标本的检测工作。检验科分组　一般检验科按检查分组</li>
+<li>放射科：是医院重要的辅助检查科室，CT、核磁共振；</li>
+<li>病理科：承担病理诊断工作，包括通过活体组织检查、脱落和细针穿刺细胞学检查以及尸体剖检，为临床提供明确的病理诊断，确定疾病的性质，查明死亡原因。</li>
+<li>核医学科：是利用核科学技术和手段对疾病进行诊断和治疗，对甲状腺疾病、肿瘤、冠心病等治疗有一定的研究</li>
+<li>理疗科：理疗科中的治疗一般是和中医结合，包括：针炙，拔罐，牵引，按磨，电疗（低频和热透等），相对医院设施条件好的，还有磁疗法、光疗法等等。</li>
+<li>营养部：食物疗养</li>
+</ul>
+<h3>3. 行政后勤办公室</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/VxrCQCXLYgR0KoSGFgZK.png" width="900" height="1080" /></p>
+<h2>04 医院领导</h2>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/sYpQa8sVpqfLzA4Soez5.png" width="900" height="1080" /></p>
+<p>一般情况医院会有很多分管副院长，管理医院不用的业务模块；</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/DK1k3d2DXd8fL20vSUso.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/YoVC7sEDOKmOILqWe96B.png" width="900" height="1080" /></p>
+<h2>05 医生职称</h2>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/ero2oamJydTPJsE4tKdE.png" width="900" height="1080" /></p>
+<p><strong>医学规培生：</strong>简称规培，一般有2种就业的方式，先签医院，然后医院送你到有资格的医院进行规培。自己毕业之后找一家招收规培生的医院进行规培，结束后再找工作。</p>
+<p><strong>住院医师 助教：</strong>医生职称的一种，居主治医师之下，属于初级职称。业内简称为“住院医”。其职责主要是完成基本医疗工作，包括收治病人、记录病程、在上级医师指导下开医嘱、进行某些临床操作等，是对病人进行全程诊治的一线医生，但是需接受上级医生（主治医师及以上）的指导与监督。</p>
+<p><strong>主治医师 讲师：</strong>主治医师是医院的职称之名，医生职称的一种，比住院医师高一级，比副主任医师低一级，属于中级职称。 不同于主治医生或“主治大夫”。</p>
+<p>医院的住院部各科室，将床位分配给各医生，每一床位的主要负责的医生，就被患者和同行称为主治医生或主治大夫，他们可由住院医师、主治医师和副主任医师担任。是一种责任人称呼。</p>
+<p><strong>副主任医师 副教授：</strong>副主任医师，医生职称的一种，居主任医师之下，主治医师之上，为副高级职称。一般，也简称为“主任”，患者均以此为尊称。</p>
+<p><strong>主任医师 教授：</strong>主任医师是医生职称的一种，当前是医生职称中的最高级别，属于正高级别。简称为“主任”。一般冠以姓氏，例如：李主任。医院中，需与“科主任”相区分。科主任，是指医院某科室的行政主任，并非指职称；而主任医师是职称名，其级别相当于医学院校的教授。部分主任医师，同时也被评为“教授”职称，承担一定的科研与教学任务。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/fuCYMzmtPwHDZAQLsvMm.png" width="900" height="1080" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/TTRdLPff1ih8lBYPaU49.png" width="900" height="1080" /></p>
+<h2>后记</h2>
+<p>成为一名优秀的医生非常不易，希望大家去医院看病的时候对他们多一些理解与尊重。</p>
+<p>感谢阅读，如果你还有什么好的想法和建议，可以在评论里留言讨论。</p>
+<p>&nbsp;</p>
+<p>本文由 @Jesse 原创发布于人人都是产品经理，未经作者许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
+➜B2B内容营销如何避免自嗨，实现“疯传”？
+http://www.woshipm.com/operate/1231460.html	38712
+<blockquote><p>编辑导语：内容营销是一种性价很高的获客方式，对TOB企业来说，内容营销更像是一种投资，企业越早布局越有优势。B2B内容营销“自嗨”并不稀奇，那么应该如何避免这种现象，实现真正的疯传？接下来，我们来看看本文作者的详细分析。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4143358" src="http://image.woshipm.com/wp-files/2020/08/bDuopIlITTMUFEw8ppZ8.jpg" alt="" width="900" height="420" /></p>
+<p>注：本文内容是我近期在几个Martech营销实战训练营社群分享的内容。</p>
+<h2> 一、一个媒体人&amp;市场人眼中的内容营销</h2>
+<p>内容营销这个词这些年被炒得特别热，大家估计都听到耳朵起茧子的程度。为何内容营销这些年被越来越多的人提及并日渐“重视”呢？</p>
+<p>——这其实与企业现实的焦虑有关。</p>
+<p>在移动互联网环境下，受众的时间被不同的应用、细分媒体、兴趣部落所覆盖，内容和媒介日益碎片化。</p>
+<p>想要同一个声音，同一个表达覆盖全部媒体渠道变成了不可能完成的任务；再加上算法推荐所造成的信息茧房，导致用户的注意力更加分散，不论是TOB还是TOC 企业，获取流量和吸引用户注意力的成本都越来越高。</p>
+<p>在这种情况下，内容营销作为“种草“成本相对较低、形式更加灵活、易于受众接受、富有创意等特点，越来越受到企业青睐。</p>
+<p>那么，当我们在聊内容营销时，到底在聊什么呢？</p>
+<p>按美国内容营销研究院的概念：内容营销是一种战略性的营销方式，它主要通过创造和分发有价值、相关性强和持续连贯的内容来吸引并留住明确的目标受众，并最终驱动有利可图的用户行为。</p>
+<p>美国内容营销研究院的概念，在我看来更多的是站在受众的角度给出的概念。</p>
+<p>事实上，内容要想实现营销的效果，无法脱离“媒介”这个传播介质。我个人觉得内容营销可以简单拆分成2个词，一个是“内容”，一个是“营销”。</p>
+<p>内容的本质是什么？</p>
+<p>对市场部来说，一切策略、活动、方案等等都是内容，其本质是将自己的产品和品牌理念传递给用户，向用户“兜售”你的“思想”，思想的传播必然需要 “介质”。</p>
+<p>而营销的本质是什么？</p>
+<p>就是通过发现和满足消费者需求，来实现我们的目的。</p>
+<p>所以，站在媒介和受众的角度来理解内容营销，我觉得内容营销是基于对目标受众的洞察，在特定的媒介中持续创造和传播有价值的内容，从而解决和满足受众需求的行为。</p>
+<p>虽然越来越多的TOB企业都在谈内容营销，也越来越重视内容营销，但实际执行时还是做得不太好。</p>
+<p>比如内容互动性差、自传播力差、造成内容阅读量低，更别说依靠内容来获客了。</p>
+<p>很多TOB企业确实在做内容，但生产的内容大多在“自嗨”，为何会出现这种情况？我们又该生产哪些内容才能既有流量又有销量？</p>
+<p>在下面的第二部分为大家分享。</p>
+<h2>二、TO B领域，内容营销如何避免自嗨？</h2>
+<h3> 1. 像做产品一样做内容</h3>
+<p>对TOB企业来说，最大的挑战在于持续创造有吸引力、能够有效传播的内容。</p>
+<p>如何建立可持续的内容创造机制？如何把你的优质内容传播出去并放大传播效果？</p>
+<p>这些问题，在我做了一段时间产品和运营后，突然发现做产品与做内容有很多相似的方法论，我们来看看“百度贴吧之父”俞军总结的产品生产流程图。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/MyqTQmsEQuisPsJbHhuZ.png" alt="" width="803" height="257" /></p>
+<p>俞军认为，从古到今，所有产品都可以分为需求、生产、销售三个环节。在做内容之前，我们也有必要像产品经理那样去拆解“需求”、“生产”、“销售”的问题。</p>
+<p>一切产品的起点，都源自用户需求，如果产品经理忽略了用户需求，闭门造车，那产品接下去的任何环节都不会有太大意义。</p>
+<p>这些知识应用到内容营销上，也是一样的道理。</p>
+<p>把内容当作产品来做，意味着内容营销也需要经历用户需求调研——内容生产——内容传播——数据分析——内容迭代等过程，这些都与产品的底层思维一致。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/al3Vi9qc9iSVjJ4mmdUk.png" alt="" width="701" height="394" /></p>
+<h3>2. 内容要突显用户价值</h3>
+<p>刚刚我们提到了，内容和产品，其实是一对好CP。要做好内容营销，第一步自然是先摸清和理解你的用户需求。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/eBM50BWAaZuImODvLXuk.png" alt="" width="704" height="398" /></p>
+<p>可能是职业使然，我在做TOB内容营销时，关注了很多TOB行业的公众号、微博、抖音、知乎等账号。我发现不少企业几乎把自己的公众号当成了自家自留地，今天发老板讲话，明天发公司获奖，后天发公司活动……</p>
+<p>想想看，这些内容是你的用户想要看到的么？这些公司内部的事情，与你的用户有半毛钱关系么？用户关注你，是你能给他带来什么独特的价值，比如：你公司主营云产品或服务。</p>
+<p>那你先要搞清楚，你的用户会是谁？会购买你的公司产品的决策者、使用者、参与者、影响者分别是谁？这些人的年龄、性别、受教育程度、兴趣爱好、购买能力、触网程度、日常活跃地点等多维护的用户画像是否已经建立？你与这些用户触达的方式和场景有哪些？不同类别的用户会需要什么内容？</p>
+<p>一旦内容的生产者开始前置性思考这些问题，一位内容产品经理就诞生了，同时也理清了内容的定位。</p>
+<p>这里推荐一个我曾经负责的某垂直领域TOB SaaS企业内容策略时的思考工具，即用户思维画布，这个思维模型其实也类似市场营销做STP的过程。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/MvlHUZ8JBFmq0TrGv729.png" alt="" width="702" height="392" /></p>
+<p>借助这个用户思维画布，就能清楚的让你知道应该要做哪些内容以及能传递给用户哪些差异化价值。</p>
+<p>下面给大家看一组数据，这是我某年4月初入职一家TOB SaaS企业后，基于用户思维画布模型，调整了微信公众号内容定位后的一组阅读和分享数据。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/0WQ60W0lCUoTfLg3DfTB.png" alt="" width="707" height="349" /></p>
+<p>需要说明的是，当时这家TOB企业公众号粉丝不足9000，历史文章单篇平均阅读数不超过500。</p>
+<p>经过调整后，当年的4月~6月，日均阅读率均超过8%，月均阅读率超过5.41%，每月的总阅读量与历史同期相比，增长比例为308%。</p>
+<h3>3. 从用户价值角度搭建TOB内容框架</h3>
+<p>明确了内容营销策略后，其实最难的地方在于执行，也就是战术层。记得可口可乐的某位首席数字官曾说：我们的不同之处，在于战略的执行，而不是战略本身。</p>
+<p>TOB行业到底要做什么内容，才能体现用户价值呢？</p>
+<p>一般可将内容分为以下4个类别，大家也可以理解为这是其中一种内容框架搭建思路。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/Xa6rakguNcKoBQUKeCZY.png" alt="" width="997" height="561" /></p>
+<p>对绝大多数TOB企业市场部来说，除非是大型的集团公司或外企会配备很多人员来做内容营销，一般中小创业公司能有一个人专门做内容就不错了。</p>
+<p>所以，在以上内容框架搭建完毕后，大家也需要在内容安排和时间上有所侧重。</p>
+<p>这里可以参考可口可乐公司总结的一套70-20-10法则，比如我们可以用50%的时间来创作对用户有价值的持续性内容，这部分内容占比70%。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/YFfxu5ZX3xLbZ88KrMcw.jpg" alt="" width="1000" height="562" /></p>
+<p>以上说的都是基于用户价值提供哪些选题的内容，至于各种内容该如何撰写，比如标题如何写才能提高打开率？内容如何设置“钩子”才能吸引更多用户留资等细节，属于写作技巧方面的内容，在此就不展开赘述了。</p>
+<h2>三、TOB内容营销如何放大传播效果？</h2>
+<p>内容既然是产品，也是需要推广和“销售”的，即便是看起来很有传播力的内容，更需要推广。</p>
+<p>根据美国内容营销协会的研究，一般来说，花费在内容传播上的资金是花费在内容创造上的资金的3.5倍，这一比例会随着公司规模的扩大而增加。</p>
+<p>那么，你辛辛苦苦创造的“内容”该如何“营销出去呢？</p>
+<h3>1. 媒介选择：多渠道并举</h3>
+<p>要想你的内容传播范围更广，无非就是选择尽可能多的媒介。</p>
+<p>有钱又任性的土豪级公司不在咱们的讨论范围，对绝大多数创业类型的TOB公司，咱们还是得精打细算，一分钱掰成两半花，所以一定要考虑媒介投放渠道。</p>
+<p>一般来讲，媒介渠道可分为下图中的4个类别：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/3NDfHTp8bdGfF5FUmvn8.png" alt="" width="712" height="363" /></p>
+<p>以上四种媒介渠道如何选择才能放大内容营销的效果呢？</p>
+<p>这里我们可以遵循传播学理论中的“5W”拉斯维尔程式：谁(Who)→说什么(Says What)→通过什么渠道(In Which Channel)→对谁(To whom)→取得什么效果(With what effects)来进行思考和选择，即根据你想达到的目的，来倒推你的内容推广渠道。</p>
+<p>比如：公司重量级的产品迭代信息或融资信息等，此时你想要向外界传递的无非是你公司的商业价值、产品价值、品牌价值，这时候你肯定希望你的潜在用户、已合作客户、投资方、媒体等越多越好的受众知道这些信息。</p>
+<p>此时就不能仅仅用0wend media，还需要借助Paid media、Earned media、Shared media联动来造出声势。</p>
+<p>当然，如果从品效合一的角度来考量，你还需要考虑你选择的所有媒介渠道中是否有你的目标用户？哪些媒介平台有可能有更多的用户？哪些媒介平台上这些用户比较活跃？</p>
+<p>最后综合这些信息，排列媒介组合后进行规模化、批量化和有节奏的传播。</p>
+<p>说到这里，有一个小提醒和建议可与大家分享：</p>
+<p><strong>1）第一：你的产品也是一种媒介</strong></p>
+<p>很多TOB企业遗漏了一个关键的媒介——即你的产品，很多人可能会觉得奇怪，产品怎么可能成为媒介？可是，你想想支付宝的开屏页、完成任务分享页、美团的红包页等等，这些产品本身是不是就是一种传播介质？</p>
+<p>所以，大家也可以结合自己公司产品来想想哪些功能或场景具有可传播属性。用好这一点，会有小惊喜哦！</p>
+<p><strong>2）第二：主动出击搞定Earned media</strong></p>
+<p>一是梳理与你的行业、用户密切相关的媒体清单以及这些媒体关键岗位和角色，比如主编、副主编、记者、编辑的研究和报道方向，对她们感兴趣且擅长的内容心中有数。</p>
+<p>比如我的前东家有一个关键技术是RPA，我会找写这个领域最专业且持续研究的记者朋友来聊这些内容，引起对方的报道兴趣，从而主动来报道我司的产品和技术。</p>
+<p>二是在每年年底前，与你想合作的媒体主动联系，了解对方新一年的选题方向，然后结合自己公司在新一年的产品、技术、品牌方向思考可在哪些选题上与对方合作，让自己提前进入对方的选题范围。</p>
+<p><strong>3）第三：传播的内容可一定程度上复用，但别想着将同样的内容在不同媒介上完全复用</strong></p>
+<p>麦克卢汉曾在《理解媒介》这本书里提出了“媒介即信息“的观点，他认为：媒介不同，传递的讯息就大异其趣。</p>
+<p>比如，同样一个小故事，被拍成了电影或写成了小说，小说和电影这两种媒介传递和侧重的信息就不一样。所以，要想你的内容被不同渠道传播，尽量将内容能根据不同的媒介调性做一些微调。</p>
+<h3>2. 受众角度：基于人性的弱点实现“疯传”效果</h3>
+<p>社交货币、诱因、情绪、公共性、实用价值、故事6要素是《疯传》这本书总结的让一切事物疯传的六个原则——STEPPS。</p>
+<p>他认为，正是这些因素的作用，使得包括故事、新闻、信息、以及产品、思想、短信和视频等在内的传播内容具备了感染力，形成了它们被广泛传播的深层次原因。</p>
+<p>对TOB内容营销来说，因为用户群体的多样性，导致需求有差异性，因而《疯传》中介绍的6个原则，有几个可能不太适用。</p>
+<p>在我看来，TOB 内容营销内容如果真实“触动”到了用户的某种情绪，解决或打消了用户的某些顾虑；实现了产品、品牌价值的传递，或者对用户具有价值，此时即便达不到“疯传”的效果，也是成功的内容营销。</p>
+<p>目前，大家看到的更多案例还是TOC内容在朋友圈疯传的案例，TOB内容能突破用户圈层，实现疯传的案例很少见到。但是，现在没有不意味着将来也没有。</p>
+<p>根据我此前做的内容数据分析发现，对TOB内容营销来说，要想你的内容能被更多用户自发宣传，可以结合2个基本的人性弱点来实现，即：贪婪和虚荣。</p>
+<p>针对人性的贪婪，在内容营销中不妨“诱之以利”。比如，针对目标用户的兴趣爱好，鼓励用户参与转发赠送礼品、课程等物质或精神奖励。</p>
+<p>针对人性的虚荣心理，则可以发布一些有价值的信息或者塑造自家产品的高大上形象，让用户会觉得这种转发能让自己看起来更加睿智、有审美、有档次、有格调，有面子等。</p>
+<p>这里还推荐一个我工作中经常用到的小技巧，相信不少TOB行业会时常召开一些线下会议，邀请一些嘉宾分享。</p>
+<p>此时我们可以在图片、H5邀请函上引入个人印记，加上嘉宾的姓名、头衔以及照片，再辅以“诚邀、力邀、大咖、大佬、巅峰对决、高端对话”等词汇，就会让被邀请者感到很有面子，从而自动转发。</p>
+<h3>3. 关于TOB内容营销效果的几点思考</h3>
+<p><strong>1）内容营销效果到底考核什么？</strong></p>
+<p>在TOB实践工作中，发现行业内有些公司对内容营销岗位的考核就是MQL、SQL的线索数，有些公司考核的是文章阅读数、转发数、曝光量等。</p>
+<p>说实话，对这两种考核方式，我个人都不赞同。</p>
+<p>在我看来，内容营销不可能完全用MQL、SQL这种刚性指标来考核，也不能用阅读数、阅读量等过于柔性的虚荣性指标来考核，而应该采用刚柔并济、定性和定量相结合的方式。</p>
+<p>毕竟讲故事是内容营销的本质，讲好故事是需要技术和艺术兼顾的。</p>
+<p>一个好故事所带来的成效于受众而言，既是感性的也是理性的，既打动了目标受众，也能够产生说服力，引发用户的购买欲望或参与行为。</p>
+<p>所以，通过内容营销能带来销量或线索的，有效；能为品牌带来曝光和展示的，也是有效。</p>
+<p><strong>2）内容营销的核心到底是内容还是传播？</strong></p>
+<p>在很多TOB市场部中，很多人纠结自家内容阅读数太少，除了强制要求单位内部员工转发外，其余的用户都不愿意转发。</p>
+<p>造成这种现象的原因是多方面的，最根本的一条是你创造的内容对目标用户没有价值，不能让内容自传播，只能靠领导的“命令“来强制大家转发。</p>
+<p>另外，TOB领域内容过分纠结传播效果阅读数也没有太多意义。对TOC端产品和企业来说，阅读数越高，流量也越多，背后能产生的购买量也越多。</p>
+<p>但TOB的阅读数高则不会带来同样的效果，因为这个阅读数的背后，可能永远都不是你的目标客户。所以，对TOB内容的传播效果来说，关键在于给目标用户提供了有价值的内容，且受众越精准越好。</p>
+<p>当然，我这里表达的意思，并不意味着TOB内容完全不需要传播和考虑阅读数，希望大家能理解这一点。</p>
+<p>以上我基于自己的亲身实践，从媒介和受众两个角度，谈了TOB内容从STP到4P（内容规划Plan、内容生产Produce、内容推广Promote和内容完善Perfect）的过程，以及在此过程中要如何避免内容自嗨才能给企业带来“流量”与“销量”，希望对大家能有一点启发。</p>
+<p>最后，给大家分享一张今年2月-3月，我所在的TOB SaaS 企业做的内容营销效果截图。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/2LtBuMa0xgai5c4pEENe.png" alt="" width="1005" height="564" /></p>
+<p>在这张截图中可以看到，在今年3月前生产的内容，一直到今年6月依然不断有新用户来留资。如果按照TOB行业SEM平均获客成本最低300元/人计算，依靠内容营销获得278个客户，相当于帮企业省下了83400元。</p>
+<p>当然，这只是我们内容营销中某个渠道的统计数据，可能对很多企业来说不值一提，但我想表达的是，内容营销的确是一种性价比不错的获客方式。</p>
+<p>总之，对做TOB内容营销的人来说，这注定是一条漫长艰辛的道路，因为它需要一个人长年累月地笔耕不辍，依靠眼力、脑力、体力，笔力，在有限的时间内进行高效的产出。</p>
+<p>对TOB企业来说，内容营销更像是一种投资，企业越早布局越有优势。时间会让这些内容产生复利价值，带给企业持续不断的回报。</p>
+<p>&nbsp;</p>
+<p>作者：Grace，10年央媒记者主编，做过B2B、B2C产品汪和运营喵。擅长通过内容营销，串联起产品、运营、市场，提升用户流量&amp;产品销量；曾依靠内容营销和其他市场运营，半年内零预算帮助某垂直领域TOB SaaS企业获得MQL超过5万条。</p>
+<p>本文由 @Grace 原创发布于人人都是产品经理，未经许可，禁止转载</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
+➜拼多多特斯拉终有一战，背后是渠道博弈之难
+http://www.woshipm.com/marketing/4141392.html	39155
+<blockquote><p>编辑导读：特斯拉补贴事件让拼多多站上了风口浪尖，围绕和拼多多和特斯拉的讨论此起彼伏。双方究竟谁对谁错？应该如何看待两者之间的矛盾问题？本文作者从营销4P理论出发，对这个问题展开了讨论，一起来看看~</p></blockquote>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/klm5f6LhIG7sAWbaQXJp.jpg" alt="" width="900" height="420" /></p>
+<p>最近拼多多与特斯拉撕起来了，事件时间线较长，双方回应你来我往互不相让。各媒体分析事件来龙去脉已经很详尽了在这里就不展开说，问题的核心简单来说就是：<strong>拼多多作为中间商，补贴给用户一部分差价，从而扰乱了特斯拉的价格体系，损坏了它的直营模式，冲突遂起。</strong></p>
+<p>拼多多觉得自己拿钱补贴用户，货真价实为啥不能卖？特斯拉的逻辑是，我的产品直营模式要统一定价，你这平台卖便宜了扰乱我的价格体系，乱价动摇了我的市场主导权，对我造成品牌损害，构成转卖，深层次损害的是消费者利益。</p>
+<p>拼多多与特斯拉都觉得自己是受害者，声明中极力坦诚自己在为消费者着想，像极了你爸和你妈的两种<strong>“为了你好”</strong>。</p>
+<p>双方各不相让，在舆论场上展开了激烈对决。相信各位多多少少已经看过许多站队洗地的文章了，让我们抛开对这场事件的成见，剖析一下矛盾本身。</p>
+<h2>一、4P里的两个P，渠道与价格之战</h2>
+<p>营销人对营销的理解，依然逃不出经典的“4P”框架，纵然后浪们又推出了各种各样的新式说法，但本质内容依然围绕着“4P”展开。</p>
+<p>让我们回顾一下，4P分别是：<strong>产品（product）、价格（price）、渠道（place）、促销（promotion）。</strong></p>
+<p>拼多多与特斯拉的争执点，就在于“价格”与“渠道”。遥想当年我们在学习的时候，价格方面有定价方法、定价策略、竞争中价格调整等知识点。渠道方面了解掌握了许多渠道模式结构，包括渠道管理内容，知识体系上二者似乎没有太大的关联。</p>
+<p>然而现实中，不同渠道之间经常起纷争，有时候品牌商夹在中间左右为难，有时候品牌商气得直咬牙根愤怒维权。渠道之间纷争何在？归根结底就是因为<strong>价格</strong>！</p>
+<p>我们知道产品从品牌商生产出来之后，并不是直接就能交付到终端消费者手中，其间经过的流通过程我们称之为渠道。根据流通过程中环节的数量，渠道可以分为零阶渠道、一阶渠道、二阶渠道等。</p>
+<p>如下图所示：</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/w6YTKXTO6pCIgEWAhfh1.jpeg" /></p>
+<p>正如大家耳熟能详的瓜子二手车slogan：<strong>没有中间商赚差价</strong>。其实这句slogan有污名化中间商之嫌，中间商的存在只是赚差价而已么？在互联网时代来临之前，<strong>中间商的存在大大提高了产品在市场的流通效率，无论是批发商，还是专业经销商，本质都是为效率而生，之于市场是不可或缺的存在。</strong></p>
+<p>品牌商的使命是什么？<strong>就是要保证无论经过多少阶渠道，最终到达消费者手中的商品指导价长期范围内必须是一致的。</strong></p>
+<p>但随着互联网的兴起，用户与品牌商之间的沟通链路急剧缩短，品牌商大规模直达消费者成为可能。进一步缩短物流与信息流的耗散，直接触达消费者，这似乎是很多品牌的终极梦想。</p>
+<p>直至电商平台涌现，品牌商多了一条重要的零阶渠道。天猫、京东、苏宁易购等电商平台颠覆了原有的渠道体系，电商体系经过蓬勃发展独霸一方。但无论如何，品牌商的价格底线没有变：原则上线上与线下要统一价格。</p>
+<p>试想，如果一个渠道终端的价格长期低于其他的，那么势必会打破消费平衡。如若电商平台总搞活动，做低价，消费者被吸引到低价平台，渠道格局失衡，那被损伤利益的线下渠道很可能与品牌商产生矛盾。</p>
+<p>双11或618的电商平台节点大促，电商部门最忙碌的就是控价监测。价格之争不仅体现在线上与线下之间，还体现在不同的电商平台之间。天猫价格比京东低，京东的小二就会马上找过来要求调价。电商大促节点开始玩满减优惠券、折上折、指定品类优惠券的套路，除了有利用数学绕晕消费者的嫌疑，更是<strong>为了使自家平台在隐形层面能更占价格优势</strong>。</p>
+<p>线上与线下的价格已经打得水深火热了，这时又出来一个让品牌方更伤脑筋的佼佼者：</p>
+<p><strong>微商！</strong></p>
+<p>没有任何瞧不起微商的意思，微商可是私域流量的鼻祖。大多做微商起家的品牌也都是直营模式，成功者不在少数。这里说的微商是“野生微商”，也就是可能从经销商或者批发商手上拿到产品，走低价卖，依靠价格护城河图个薄利多销这样的类型。多见于快销品领域，主要战场是微信或者咸鱼。品牌商对付游击队的方式只能是微信或者咸鱼的举报功能，野火烧不尽，春风吹又生。</p>
+<p>品牌方一边调和着不同渠道间的价格矛盾，另一边极力打击微商。因为野战着卖你也不知道它卖得是真是假，是否损害品牌形象。价格与渠道这两个“P”，让品牌很伤脑筋。对已经做成“通货”的品牌稍好，对一些刚站稳脚跟的新锐品牌来说，价格混乱简直是一场品牌噩梦。</p>
+<p><strong>在渠道端，价格之战就是品牌之战。</strong></p>
+<h2>二、渠道关系是个永恒命题</h2>
+<p>特斯拉作为新锐电动汽车品牌，采取的是零阶渠道的直营模式，在如今大多数汽车都有4S店的情况下的确显得另类。他们颠覆了传统的销售模式，采用互联网思维进行汽车销售。特斯拉放弃了扩张的速度，利用自己的直营服务丰富了消费者的购买体验，同时也将经销商部分的利润让渡给消费者。</p>
+<p>再看游戏公司出身的新晋电商之秀拼多多，它的生长更加野蛮，因为它太懂消费者的痛点和爽点了。影响消费者下单的决定性因素是什么？没错，就是价格！<strong>同等品质的情况下，只有低价能换来消费者的“用脚投票”。</strong>因此它接收了许多被淘宝抛弃的个体小网店，以低价的思路从下沉市场崛起。</p>
+<p><strong>那消费升级的五环内怎么打？答案依然是低价！</strong>拼多多推出了n次“百亿补贴”，自己掏钱让消费者开心。这次的拼购特斯拉就是标杆性质的一次尝试。拼多多也从不玩儿满减集券等花里胡哨的活动，就体现在价格上的低。</p>
+<p>这高调的低价与大篇的宣传让特斯拉感觉被打脸，于是出现了近日的纷争。<strong>不同的价值观框架下，看见的对错也不一样。</strong>也许这个争端会有一个一锤定音的结果，但<strong>拼多多与品牌商的关系却是个长久的命题</strong>。</p>
+<p>这已经不是拼多多第一次与品牌方发生纠葛，2018年拼多多上市之际创维电视发布声明控诉拼多多平台上有自身品牌的假冒产品，同样的2018一家名叫“爸爸的选择”的纸尿裤公司也因拼多多平台商户乱价将拼多多告上法庭后败诉。而后百亿补贴时代，拼多多靠着与品牌经销商合作，做了很多力度大的补贴，个中更是与品牌商产生了不小的摩擦。</p>
+<p>平台方与品牌方理应是互利共存的合作状态，但拼多多过于激进的价格的确让不少品牌方为难。渠道博弈，是个哲学命题，渠道矛盾让天猫与京东打起官司，拼多多与品牌商打起官司，这感觉有些不妙啊。</p>
+<p>拼多多也在以更柔性的方式化解与品牌方之间的芥蒂，但从中消费者得到的实惠是真的。什么时候可以一同收获消费者、品牌商、渠道商、友商的一众支持呢？这的确是场深奥的哲学博弈。</p>
+<h2>三、直播，也许最有效率的价格脱敏渠道</h2>
+<p>对电商直播业态的走红，领域内众说纷纭。但以渠道与价格的框架分析，直播反倒是完美的调和了低价与渠道的矛盾关系。</p>
+<p>直播一方面拉近了受众与品牌的社交关系，另一方面决定性原因是：<strong>直播间里东西便宜啊！</strong>如果直播间里的商品没有了价格优势，那么谁愿意苦苦守着两三个小时的直播呢？<strong>正是因为直播限时限量并集中流量的渠道策略，商品的流通效率才大大提升。</strong></p>
+<p>因为限时，所以其他渠道商本质上的利益没有被损害，通过直播的介绍反倒是提升了品牌的声量。适时适度的情况下不失为一种共赢的营销方式。</p>
+<p>当然，直播间里的价格也是有限度的。大家可能还记得，浪姐张雨绮在快手王牌带货主播辛巴直播间的价格翻车事件，在讲解iPhone 11时，原价5999元，直播间价格4299元，结果张雨绮本人直接报价3899元，并表示3899是一个非常吉利的数字，自己会补差价。辛巴为难了，<strong>这样苹果是不会发货的。自己补钱也不行么？不太行，因为这就触及到了苹果作为品牌方的价格底线。</strong></p>
+<p>像么？简直和拼多多与特斯拉的争端如出一辙。纵使直播低价的口子开得再小，依然有自己的价格底线。<strong>价格的冲突看似不可调节，却可以通过一些特殊的方式化解，但一定不是硬刚。</strong></p>
+<p>价格体系是品牌商稳定渠道的“定海神针”，这个基本面不会动摇。选择淘宝是因为品类丰富，选择京东是因为快速优质，拼多多的一路突围恰恰是抓住了价格的基本点，所以与品牌商的矛盾冲突不可避免。</p>
+<p>如何能做到皆大欢喜的“低价”？拼多多还有许多问题要思考。</p>
+<p>&nbsp;</p>
+<p>本文由 @于盛梅 原创发布于人人都是产品经理，未经许可，禁止转载</p>
+<p>题图来自 Unsplash，基于 CC0 协议</p>
+➜标签栏是新的汉堡菜单吗？
+http://www.woshipm.com/pd/4139822.html	39853
+<blockquote><p>编辑导读：浏览网页的时候，我们常常都能看到右上角有“汉堡菜单”，它们通常是三行堆积在一起，形状类似于一个汉堡。而标签栏则是直接把具体的导航分类列出来，让用户根据目的做出选择。本质上来说，这两种导航方式截然不同，但是有些时候标签栏只是一种新的汉堡菜单。本文作者对此展开了说明，与大家分享。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/6pwQO9wQO6lv9IfNFcim.jpg" width="900" height="420" /></p>
+<p>在本文中，我们来讨论一种失策的导航模式。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/eKgiKeloU1ZhVR5LUOcS.png" width="900" height="1125" /></p>
+<p>通常，我不想只抱怨糟糕的UX设计，也不想只指出问题。相反，我总是尝试提出解决方案。这次是另一回事了：解决方案很明显-它的标签栏-但该解决方案的初衷在最近几年迷失了，导致了同样的老问题。在我们开始讨论解决方案之前，是时候再次讨论问题了。</p>
+<h2>01 回顾</h2>
+<p>2014年，苹果在移动导航应如何工作方面引发了根本性的转变。在此之前，“汉堡菜单”或“导航抽屉”（官方的Material Design命名）是最常见的移动导航解决方案。在2014年WWDC演讲“ 设计直观的用户体验 ”中，Apple基本上否定了此设计元素，并建议使用不同类型的导航（例如标签栏）。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/WhsCWqqhQTrs1vKfnrs6.png" width="900" height="1250" /></p>
+<p style="text-align: center;">WWDC演讲“设计直观的用户体验”</p>
+<p>WWDC的讨论广为流传，全世界的UX和UI设计师开始谈论汉堡菜单的弊端：</p>
+<p>从那时起，汉堡菜单开始消失，标签栏将其替换为解决方案。2015年，甚至是导航抽屉之父的Google也开始在自己的Android应用程序和《材料设计指南》中引入“底部导航”（即iOS“标签栏”）。它似乎是满足直观移动导航目标的最佳解决方案，设计师开始考虑他们想要再次实现的目标。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/xctHFWxkYAEs5HKZVDl3.png" width="900" height="476" /></p>
+<p style="text-align: center;">底部导航，Material Design设计指南导航目标</p>
+<p>快速回顾：「导航」必须告诉用户的三件事：</p>
+<ol>
+<li>我在哪里？</li>
+<li>我还能去哪里？</li>
+<li>我到那里会发现什么？</li>
+</ol>
+<p>标签栏满足所有3个要求。它在每个屏幕上都是可见的，因此始终为你提供视觉定向。它显示了你在信息体系结构中的位置（活动标签突出显示），可以去的地方（其他标签）以及在那里可以找到的内容（图标和描述性标签）。你可以访问更深的内容（从父屏幕导航到子屏幕），而不会丢失上下文和您在应用中的位置。</p>
+<p>换句话说：标签栏是一个完美的移动导航解决方案。至少是这样-直到设计师开始使用它们而没有考虑“为什么？”。在考虑实际问题之前先考虑解决方案时，他们忘记了标签栏最初试图实现的目标。如今，标签栏的使用方式与2014年之前使用汉堡包菜单的方式相同。</p>
+<h2>02 标签栏的问题</h2>
+<p>查看以下UI，你最喜欢的Medium iOS应用，并尝试找出问题所在：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/YY6AChmVev4HnYgil48S.png" width="900" height="720" /></p>
+<p style="text-align: center;">屏幕截图：Medium 应用</p>
+<p>一旦用户从顶层视图导航到子视图（例如，文章），该子视图就会覆盖整个屏幕，包括标签栏。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/M32JezcLxV5NtmqSML50.png" width="900" height="720" /></p>
+<p style="text-align: center;">屏幕截图：Medium（个人设置）</p>
+<p>现在，让我们再次看一下三个导航目标：</p>
+<ol>
+<li><strong>我在哪里？</strong>通过将导航隐藏在子视图中，用户将不再知道他/她所在的应用程序的哪个顶级页面。用户在你的整体信息架构中迷失了位置。</li>
+<li><strong>我还能去哪里？</strong>通过隐藏其他顶级页面，用户将无法直接导航到应用程序的其他区域。相反，他们首先必须导航回到信息体系结构的顶层。</li>
+<li><strong>我到那里会发现什么？</strong>子屏幕中唯一的导航元素是一个小的左箭头，没有标签或描述。它不会通过单击来告诉用户他/她要去哪里。</li>
+</ol>
+<p>Medium包含选项卡导航时可能有最好的意图。数以千计的其他iOS和Android应用程序也是如此。它可以完美地在顶级视图上运行，但是它们的执行无法满足子视图中导航的每个目标。</p>
+<p>子视图通过覆盖整个导航（选项卡栏）而表现为模态视图（弹窗），但它的动画效果类似于子视图（从右到左），并显示反向链接（箭头），类似于子视图。模态根本不是一件坏事。“模态通过阻止人们在完成任务或关闭消息或视图之前执行其他操作”（Apple）。</p>
+<p>但是模态还需要使用模态动画（iOS：从底部到屏幕动画），并包括完成和取消按钮以退出模态视图。模态视图仅用于独立任务的短期任务并且可以完成或取消，例如写邮件，在日历中添加事件，取消通知等……它们不打算用作详细视图或替换子视图。这些子视图不是一个自包含的过程，不能被取消或保存。</p>
+<p>有人可能会争辩说，这种限制性使用模态是有例外的，例如对于全屏细节视图（如单张照片）。隐藏应用程序的整体用户界面（如标签栏）可创建焦点并最大程度地减少干扰。在这种情况下，通常使用自定义过渡来解释模态的不常见用法。</p>
+<p>虽然“Medium”文章可以被视为缺少自定义过渡和关闭功能的全屏详细视图，但应用程序的设置视图绝对不能。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/ChfHF04ag2cAKWXlZQmc.png" width="900" height="442" /></p>
+<p style="text-align: center;">沉浸式内容的过渡</p>
+<h2>03 谷歌和苹果的策略</h2>
+<p>苹果和谷歌只有在极少数情况下才同意某个观点。这是那些罕见的情况之一。Apple和Google的准则均鼓励设计人员在应用程序的每个屏幕上一致使用标签栏（底部导航）：</p>
+<blockquote><p>“使用时，底部导航栏出现在每个屏幕的底部” – Google Material Design</p>
+<p>“显示键盘时，[仅]隐藏标签栏[…]” — Apple人机界面指南</p></blockquote>
+<p>Apple通过将标签栏添加到其应用程序的每个子屏幕（例如Apple Music，Photos，Podcast，Health或Files）中，非常严格地遵循其自身规范。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/tsfGbb4KqbfZL8xA60Cn.png" width="900" height="720" /></p>
+<p style="text-align: center;">Google相册和Apple相册的标签栏</p>
+<p>另一方面，Google经常通过隐藏子视图的底部导航来打破自己的规则。尽管Google提供的Youtube始终保持底部导航的可见性，但Google相册和Google+会将其隐藏在子视图（如相册和群组）中。《Material Design 设计规范》从不明确要求设计者将底部导航添加到子视图，但他们要求他们将其添加到“每个屏幕”而不指定信息体系结构中的级别。</p>
+<p>Apple始终按应用程序使用标签栏，而Google似乎经常按屏幕使用底部导航*。这样，Google创建的子屏幕既不是真实的子视图（因为没有可见的主导航），也不是模态视图（因为这不是具有取消和保存按钮的独立过程）–在两者之间。</p>
+<p>这些中间的屏幕是一个日益严重的问题。从理论上讲，Google确实引入了等同于标签栏的标签，但实际上，他们可能只是引入了下一个汉堡菜单。后来，许多iOS开发人员改编了使用标签栏的“ Google之路”。这样一来，他们就忘记了标签栏最初取代汉堡包菜单的原因。</p>
+<h2>04 结论</h2>
+<p>Google为什么以这种方式使用底部导航？他们希望设计师如何使用这些中间的，模态的子视图？我不知道。这些是我的建议：</p>
+<ul>
+<li>在模态视图和子视图之间划清界限，并知道何时使用哪个</li>
+<li>只用 自包含过程的模态视图 （以及极少数情况下的全屏详细视图）</li>
+<li>将子视图用于其他所有内容</li>
+<li>在每个视图（包括子视图）上显示标签栏/底部导航</li>
+<li>如果要创建焦点并最大化屏幕空间（例如，用于文章等），则在向下滚动时隐藏导航栏（位于屏幕顶部）和标签栏（位于屏幕底部）。</li>
+</ul>
+<p>标签栏是新的汉堡菜单吗？从某种意义上讲，它们是。如果使用正确，它们都是强大的导航元素。但是一旦为了使用标签栏而开始使用标签栏（因为每个人都这样做），你将失去对每次导航的最重要目标的关注，同样的事情发生在4年前的汉堡菜单上。因此，不要停止思考“为什么？”。</p>
+<p>&nbsp;</p>
+<p>原作者：<a href="https://uxplanet.org/@fabiansebastian?source=post_page-----9138891e98f4----------------------" target="_blank" rel="noopener">Fabian Sebastian</a></p>
+<p>本文由 @Fyin印迹 翻译发布于人人都是产品经理，未经作者许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
+➜B端产品，如何通过活动获客？
+http://www.woshipm.com/operate/4138389.html	40165
+<blockquote><p>编辑导读：对于B端产品来说，通过举办活动进行获客是一个很好的方式，它能够有效触达潜在用户，并达到不错的触达率。那么具体怎么做呢？如何通过营销活动快速提升整体获客效果？本文作者结合案例，对这个问题进行了解答，供大家一同参考和学习。</p></blockquote>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/08/YCnlCHALHQg1D79bpeq4.jpg" alt="" width="900" height="420" /></p>
+<p>ToB 业务是通过为客户提供服务、创造价值，最终获得属于自己的价值。</p>
+<p>让产品好用，建立用户黏性，实现价值最大化。从目前ToB企业的业务职能部门设置来看，最适合承担这份责任的角色是产品运营和市场，而活动是提升品牌势能，获取线索，转化线索，实现价值的有效手段之一。</p>
+<h2>01</h2>
+<p>B端和C端的活动背后的逻辑是不一样的，B端业务不能用套用C端的打法。</p>
+<p>C端产品用户一般是个人，基准较大，一场爆款活动动辄能带来百万甚至千万量级的曝光，用户主要是感性决策，活动只需要满足用户个人的需求；</p>
+<p>B端产品客户数量的规模较小，往往使用人不是决策人，甚至会涉及好几位决策对象，更多是理性决策，需采取针对性的营销活动满足多方的需求。</p>
+<p><strong>C端用户对价格比较敏感</strong>，所以限时秒杀、即时涨价这类活动能够明显地促进销量的短期增长；而B端客户对价格的敏感度低，对关系、价值的敏感度高，更倾向于和信赖的品牌长期合作，因此活动要有利于与客户建立关系、促进交流沟通。</p>
+<p><strong>B端业务对价值敏感</strong>，存在决策周期长、决策过程复杂的特点，很难通过一次短期活动就可以直接得到效果，需要有体系、有计划的开展活动，切忌疲于执行一场接一场毫无关联的活动。<br />
+活动想要发挥作用，是需要长短期相结合的，长期就是品牌势能的打造，短期则是有效线索的获取和培育、转化。但目前绝大多数的ToB企业都不够重视品牌势能的打造，只是在做一些小规模、小范围的短期活动，这样分散、无规划的活动是无法形成品牌势能的。</p>
+<p>做B端活动一定要有较强的成本意识，重视每项公司的投入产出比，<strong>要具备「如何使市场活动形式更有效」、「如何提升活动投入产出比」的思考能力。</strong></p>
+<h2>02</h2>
+<p>B端的活动类型有很多，ToB活动需要根据目标的不同，将不同形式的活动进行组合和混搭，打出伴随业务周期的营销节奏。按照场景，可以分为线上和线下两类。</p>
+<p>线上常见的活动形式包括直播、社群、微课活动等，做法和ToC没有太大的区别，主要难点在于如何能够获取尽量多且优质的线索。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/upEDD1qqoBFGadMB7k2b.png" alt="" width="901" height="570" /></p>
+<p style="text-align: center;">钉钉举行微课活动</p>
+<p>线下活动的主要形式包括行业会议、展会、沙龙、会销、企业参访等。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/wj2ThDSaVpOznZN8Nbdg.png" alt="" width="903" height="544" /></p>
+<p style="text-align: center;">钉钉新制造沙龙</p>
+<p>线下活动还可以再细分为主办类、参与类、联办类、赞助类等活动。</p>
+<p>主办类活动是指自主发起活动，刚刚提到的行业会议、展会、沙龙等都可以自办。如果按照规模来划分，主办类活动中规模最大的是一些有品牌属性的活动，规模甚至可以到上千上万人，一年一次即可。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/PJNKHG4XFo6gIcr85IGE.png" alt="" width="903" height="390" /></p>
+<p style="text-align: center;">完美工事周年品牌活动</p>
+<p>还有中级的活动，百人规模的，目的通常是为了转化，并且会有比较明确的主题。除此之外，还有小型的沙龙和研讨会，人数不用太多，但一定要高规格，邀约一些级别较高的人，这样的小型活动对促单也会很有效。</p>
+<p>参与活动是成本较低的一种方式，比如参加行业展会，不仅可以有效提升公司形象，提高产品的知名度和市场竞争力，也可以节省时间接触到更多意向客户，还可以在展会现场了解竞争对手的动态。参与活动则是看主办方的时间安排，条件允许的情况下尽量多参加。</p>
+<p>联办类活动是联合多方共同举办活动，拓展影响力，一般都是找同客异业的场商共同举办。</p>
+<p>赞助类活动主要以提升行业影响力为目的，赞助行业大会等知名活动，比如提供自家的周边礼品或者体验服务，可以在合作方的活动现场放置易拉宝、单页等物料，以及logo联合展示等。</p>
+<h2>03</h2>
+<p>传统线上活动的价值重点在于品牌和流量的吸引，而线下活动的重点则在于线索获取、需求挖掘和销售促进。现在很多大型活动线上线下同时开展，2020年疫情带来的改变就是线上活动占比越来越多，线上活动也承担了大量线索收集和转化的作用。</p>
+<p><strong>活动的长期目的是品牌，短期目的是转化，当品牌势能足够，转化活动的成本就会降低，产品的品牌溢价也会体现。</strong></p>
+<p>当企业只是刚刚起步，产品还处在验证阶段，与其费时费力费钱做一场大的品牌活动，不如服务好现有客户，打磨好自身产品，同时做一些放大品牌影响力的轻度的活动。如果企业已经发展到了一定规模，并且产品已经达到PMF，并且客户已经完成了一个生命周期的服务，可以为你们企业站台，此时就可以去思考做一场有品牌属性的大型品牌活动，品牌活动尽量安排在客户业务的淡季。</p>
+<p>短期活动营销最终为了方便的、批量的、精准的接触关键人，展示产品或服务的价值最终实现转化成单。不同类型的活动的目的是不一样的，大致分为三步：</p>
+<ol>
+<li>获取销售线索，快速抓住客户的兴趣和眼球，展示效果和势能；</li>
+<li>推进客户阶段，通过市场活动帮助企业意识到困境和需求，提升对解决方案的理解和认识，推动客户的销售阶段；</li>
+<li>转化阶段，报促销方案，优惠刺激，临门一脚。</li>
+</ol>
+<p><strong>B端业务存在决策周期长、决策过程复杂的特点，很难通过一次短期活动就可以直接得到效果</strong>。在策划一场活动之前，首先需要明确你的目标人群是谁。对B端企业来说，客户购买行为涉及决策者、采购者和使用者，不同群体关注的需求不同，因此活动要根据不同的目标客户策划不同的活动主题。推荐按照上面三步有计划的开展组合活动。 比如可以通过展会收集意向线索，在通过一些沙龙等活动培育线索，最终可以配合销售开展促销活动转化线索。</p>
+<h2>04</h2>
+<p>当把线索移交给销售团队时，不能只看数量，忽视质量，做法很容易造成摩擦。运营/市场团队觉得已经通过活动收到了大量线索，而销售团队觉得能直接转化的线索不够。</p>
+<p>解决此问题的办法就是制定有效线索的标准，制定线索标准一般参考BANT原则</p>
+<ol>
+<li>Budget(预算) : 客户是否有足够的预算来购买你的产品或服务</li>
+<li>Authority(权限) ：该线索联系人的职位是否是采购决策人或影响人</li>
+<li>Need(需求)： 是否有采购需求，需求的意愿是否强烈，产品能否满足需求</li>
+<li>Time(时间)： 近期是否考虑采购，是否同意近期与销售见面</li>
+</ol>
+<p>比如「完美工事」HRM管理软件制定的有效线索标准。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/hdeiFFSbObBbsP8wTeJx.png" alt="" width="703" height="292" /></p>
+<p>通过职位和职责保证了联系人有相应的权限，限制企业规模在100人以上可以排除一些付费能力比较弱的小企业，主要目的保证客户有足够的预算，有时候联系人不愿意透露预算，或者针对该产品或服务没有固定的预算。</p>
+<p>利用上述原则，我们可以识别出较为成熟的线索，那么对于那些不够成熟、但数量可观的线索，我们还可以利用活动来进行培育，促成转化。比如在赞助活动中获得了潜在客户的联系电话或邮箱，但还没有很明确的采购需求，这时邀请他们来参与一场品牌活动的成功率还是比较高的，在品牌活动中传递信任感和影响力，不仅彰显自身实力，还能趁机直接接触到潜在客户的公司高层。</p>
+<h2>05</h2>
+<p>做活动不能闭门造车，要多看一下其他厂商的活动形式、活动复盘。自己做的活动更要做好复盘，重点计算下ROI 。</p>
+<p><strong>不能否认钱是活动的放大器，</strong>当预算少的时候，尽量用时间和精力实现小目标，避免使用大公司的套路；中等预算的时候要聚焦资源，分工协作，多借鉴下经典套路；大预算的策略则是海陆空全方位，多用行业内领先的资源，持续积累影响。</p>
+<p>一点小经验分享给大家，欢迎交流分享。</p>
+<p>&nbsp;</p>
+<p>作者：老于；公众号：老于的笔记</p>
+<p>本文由 @老于 原创发布于人人都是产品经理。未经许可，禁止转载</p>
+<p>题图来自 Unsplash，基于CC0协议</p>
+➜一个“四两拨千斤”的品牌IP化案例，简单到大多数企业都想不到
+http://www.woshipm.com/marketing/4140843.html	41385
+<blockquote><p>编辑导读：每一个品牌都想把自己打造成一个IP，但是开发IP并不是容易的事，往往耗费了很多精力和时间还不能达到预期效果。本文将以美团的“袋鼠耳朵”作为切入点，分享一个“四两拨千斤”的办法，希望对你有帮助。</p></blockquote>
+<p><img data-action="zoom" class="size-full wp-image-4143400 aligncenter" src="http://image.woshipm.com/wp-files/2020/08/6Z1NowYivdWbizbjRHVi.jpg" alt="" width="900" height="420" /></p>
+<p>IP渐成品牌营销的主流，但是，很多企业开发的IP却并不成功，耗费了大量的资金、时间和精力，却总是吃力不讨好。</p>
+<p>比如某一线日用品品牌，曾经风风火火在微博和抖音相继推出了形象、做了内容，但一直和自身的营销没啥关系，人们看了后，也没有产生多少对品牌和产品的加分，所以企业做了不到一年，就将其束之高阁，连微博和抖音的帐号名字都改了。</p>
+<p>原因何在？老小格考察了大量企业IP化的案例，发现不成功的情况都非常相似——</p>
+<ol>
+<li>IP和企业自身的营销系统关联太弱，只在外面做功夫；</li>
+<li>持久性不足，企业往往打了一两炮就偃旗息鼓，这还是有实力的企业，如果是小企业更是浅尝即止。</li>
+</ol>
+<p>以上两点紧密相关，而且第一点决定了第二点。</p>
+<p>所以我在做「企业IP化培训」时，不断强调的是——企业做IP，一定要和企业的核心营销场景紧密相关，才能事半功倍。</p>
+<p>什么是企业的核心营销场景？</p>
+<p>产品体验研发、产品包装设计、销售渠道（包括线上和线下）、长期持续的营销活动、品牌塑造的文化系统等等。</p>
+<p>只有当企业开发的IP，能够和上述关键场景紧密结合时，才能既省力省钱、又出好效果，综观所有成功的企业IP化案例，皆是如此。</p>
+<p>如果企业一开始没想清楚，只是把做IP当成外部媒体的内容，没有结合企业内功、没有和企业的营销体系真正联系，即使花费很多钱，IP也很难为品牌和产品真正加分，也就很难让企业持续做下去。</p>
+<p>最近新出现一个有趣的IP化案例很值得介绍，非常简单、容易操作，也很省钱，甚至还能赚钱。</p>
+<p>这个案例，就是“美团的耳朵”。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/J5F9TpgB0HWifGkeArSO.png" width="386" height="157" /></p>
+<p>一贯低调、不打广告的美团，一不小心，正借助一对明黄色的长耳朵，累积出文化价值和情感力量，向IP化品牌发展。</p>
+<p>具体过程是这样的：早在2016年，美团就开发了一个“袋鼠耳朵”，作为自家外卖员的头盔。</p>
+<p>最早的“袋鼠耳朵”长这样（下图），耳朵还不长，看起来也有些累赘，尤其是那个袋鼠头增加了认知的复杂度，估计这是造成一直不温不火的原因。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/5A2YdvAk5x8iYKQAjmoU.jpeg" width="403" height="288" /></p>
+<p>四年来，美团一直对其进行设计的改良，到了今年，“袋鼠耳朵”明显更醒目、更Q版可爱了，尤其是去掉袋鼠脑袋后，人与耳朵更加合体。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/BywSaK1tDAxUQtgKhIlH.jpeg" width="408" height="190" /></p>
+<p>还让很多人以为是兔子的耳朵，以至于要专门辟谣，说这是袋鼠耳朵不是兔子耳朵。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/CHKQ7wrC12fS3WelSLNy.jpeg" width="405" height="418" /></p>
+<p>然后，火了。</p>
+<p>真正的火爆，是从2020年2月，一条被抓拍的视频开始的，这条视频被称为“麦当劳调戏美团”。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/ur3OMkRFq0tnjy5kjKpL.gif" width="398" height="498" /></p>
+<p>一位正在等红绿灯的麦当劳小哥显然是被美团小哥脑袋上的长耳朵吸引，他无耻地靠近，趁其不备捏了两下，立马熘走，让美团小哥很生气。</p>
+<p>这条视频在网络上迅速传开，爆光量窜至千万，一举登上热搜榜，网民友们纷纷表示想捏、想RUA、想揪、想薅，总之就是想调戏这对耳朵。</p>
+<p>还有好事者画成了漫画形象，因红黄两色搭配，被戏称为“番茄炒蛋CP”。</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/08/ny4CZqyhEdS5jl1cQmht.jpeg" width="397" height="369" /></p>
+<p>还有人拍到饿了吗小哥也在调戏美团。</p>
+<p>美团显然意识到这当中的话题价值，开始主动在微博上“记仇”和撩拨麦记。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/jTnA0Kx9dKTRLTqNcGzR.jpeg" width="403" height="552" /></p>
+<p>起初对方没有反应，到了4月，麦当劳在新品5G炸鸡炸鸡上市时，主动邀请美团和饿了么一起去B站直播，美团的“长耳朵”在三大外卖天团中，显得非常醒目出挑，进一步将热点推高。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/2efgEfhY3FDI1pprqmD6.jpeg" width="404" height="228" /></p>
+<p>到5月，麦当劳正式和美团官宣CP，这对好基友正式在一起。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/OgvuYzKNUgU8RKnaL3tG.jpeg" width="405" height="654" /></p>
+<p>而美团也开始公然鼓励大家都来调戏和捏耳朵。</p>
+<p>到7月17日骑手节，袋鼠耳朵出现了加强版，如鲜花盛开，美团自嘲这是“人间向日葵”。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/hIvU1GHJk05TMEvn1M6I.jpeg" width="402" height="402" /></p>
+<p>其他外卖也加入了头盔战争，双方在头盔上展开了丰富的想象力，从齐天大圣翎子、皇帝帽到脏辫，这使得微博话题#外卖小哥皮肤大战#累积出2.9亿的声量。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/zNY3goQIjbP2sZb9iwFi.jpeg" width="409" height="329" /></p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/J06WuVh0JiBqB1Dc2Fk1.jpeg" width="403" height="293" /></p>
+<p>美团甚至开始销售耳朵的周边产品。</p>
+<p>7月底，美团APP上线美团礼品店，开始出售袋鼠耳朵的系列周边，从头盔到发箍都有，海报设计风格很简约高端上档次，俨然如同潮牌符号，“重新定义了耳朵”。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/ifkEt9YgyXAexxfOemBH.jpeg" width="394" height="591" /></p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/oiZ5lUrd0MLDuIVZRInG.jpeg" width="408" height="612" /></p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/RerI7Sn5nrcdUzqyGb35.jpeg" width="401" height="602" /></p>
+<p>还获得了网民们的热烈抢购，毕竟价格很便宜，只需要6.9元。</p>
+<p>小漫画也开始推出。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/UTluFkoTSSuIRGkdbr0j.jpeg" width="405" height="2795" /></p>
+<p>二次元动漫年轻人也加入了。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/PX6iQlYPusljyEHiyG3u.jpeg" width="407" height="272" /></p>
+<p>公益主题也不可少。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/N4Uq3PmeBuwM77CE9bzn.jpeg" width="406" height="188" /></p>
+<p>美团也自嘲地称自己为“袋鼠耳朵加工厂”，使美团第一次有了和鹅厂差不多的代称，不断推进人情化、IP化品牌的塑造。</p>
+<p>一系列行动和事件，使得大众对美团耳朵的热情日益高涨，不断进入微博热搜、抖音快手刷屏，单话题阅读量高达3.3亿，逐步向全民乐趣演绎。</p>
+<p>这是一个用户自发参与感极强、极接地气、极通人性、极富娱乐化的案例，也具备了IP化粉丝化的一切特征：形象符号、用户创造内容、周边衍生，等等，极具未来的IP亚文化可发展性。</p>
+<p>而非常值得注意的是，这个案例成本极低，可以说是“四两拨千斤”。</p>
+<p>美团只是改良了一下自家外卖员的头盔，就能借助外卖小哥巨大的生活流量，加上一两条偶发的有趣视频，自然而然实现了巨大的成效，整个过程如同行云流水，一点都不费钱费力。</p>
+<p>这其中的最重要原因，就是美团的IP化，是发力在自身的核心营销渠道上的。美团外卖小哥是大家最容易看到、接触到的品牌触点，是美团外卖营销体系中最直观的部分，当然最容易取得“四两拨千斤”的效力。</p>
+<p>而美团要做的，就是将外卖小哥的头盔，变成了IP化道具，创造出不一样的IP化情境。</p>
+<p>同时，在整个过程中，美团始终保持着自嘲、自黑和谦卑的态度，让人们更增好感和亲近，这成为了整个事件发展的动力引擎。</p>
+<p>老小格总结一下这个案例背后的IP化思维：</p>
+<p><strong>第一点：最省钱又出高效的方法，是在企业的核心营销过程中注入IP。</strong></p>
+<p>产品、销售、售后、活动、品牌，处处皆场景。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/GZfnBGfPMDkuFcgap9DV.jpeg" width="403" height="227" /></p>
+<p><strong>第二点：凡是和消费者直面接触的场景，都值得IP化。</strong></p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/vGXpcBGxmoydJz5q7zPh.jpeg" width="403" height="227" /></p>
+<p><strong>第三点：IP在场景应用的3个原则：</strong></p>
+<ol>
+<li>有用：IP能用在营销的关键环节</li>
+<li>有效：通过IP化直接提升产品和品牌的用户体验</li>
+<li>有改变：能将老场景变成新情境</li>
+</ol>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" src="http://image.woshipm.com/wp-files/2020/08/Z71X55uZO0YajVftedvj.jpeg" width="409" height="230" /></p>
+<p>在“美团的耳朵”这个案例中：</p>
+<ol>
+<li>是将IP化用在和消费者接触最频密的美团小哥装备上；</li>
+<li>通过将美团头盔设计成IP化的长耳朵，这种动漫二次元化、符号化的创新，让头盔成为了IP化道具，提升了用户体验，可以互动、调戏、创作；</li>
+<li>这样一来，本来平淡无奇的送外卖场景，一下子变得充满情趣，直接提升了美团的情感属性和文化气质，成为了IP化情境。</li>
+</ol>
+<p>我还找到了美团平台市场营销部负责人对开发“袋鼠耳朵”的思考：</p>
+<blockquote><p>“美团发现，过往用户和骑手接触中没有精神交流，用户只关注了送餐本身，骑手也只关心到用户接到餐没有，需要一个创意去触发互动，需要一个亮点能推动二度传播和内容共创，改变外卖的场景。</p>
+<p>而选择袋鼠耳朵作为创意点的原因很简单：一是从美团外卖的袋鼠LOGO延展而来，二是有可传播扩散的亮点，让用户充分参与共创和传播。</p>
+<p>所以，经过了4年多的优化，迭代到现在的袋鼠耳朵造型，成为一个既满足品牌调性、又能获得用户认同的trigger，结果在推出后，一如期待，创造出让用户充分参与的共创式营销。”</p></blockquote>
+<p>正如我在“企业IP化培训”中所说，企业的IP化其实就是要加深共情、创造情境，从而实现品牌与消费者的更深层次情感连接。</p>
+<p>最后，还要借鉴的一点是：美团的耳朵，是经过四年的迭代和优化，才突然火爆起来的，如果中途放弃了，就没有了。所以，企业开发IP，不要指望第一版就非常完美和能够成功，一定要有耐心和互联网产品的不断迭代精神，才能真正把IP化做好。</p>
+<h3>#专栏作家#</h3>
+<p>陈格雷，《超级IP孵化原理》作者，IP孵化人，微信公众号：IP蛋炒饭（ID:IPCOOK）</p>
 <p>本文原创发布于人人都是产品经理，未经许可，禁止转载</p>
 <p>题图来自Unsplash，基于CC0协议。</p>
