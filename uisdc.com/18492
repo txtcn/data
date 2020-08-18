@@ -1,0 +1,93 @@
+➜从零开始设计产品的 10 个 UI/UX 启示
+https://www.uisdc.com/10-ui-ux-design-lessons	66646
+<p><span class="img-zoom"><img alt="从零开始设计产品的 10 个 UI/UX 启示" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_MjRjcVGhnqiSImXDfwxE8Q.gif" width="1978" height="1009" class="alignnone size-full wp-image-385271" /></span></p>
+<p>2016 年的时候，我意识到一个很重要的问题：我一直都没有实现自己的目标：学习新技能、结识新朋友、保持身心健康，等等等等。这并不是因为我没有意愿和动力，而是因为我没有坚持下去。</p>
+<p>Peter Drucker 说过：「量化才能管理。」这个格言后来成为了我的信条。我决定将我的目标量化，将它分解成为最基础的习惯来执行，并且以每天一定量的执行，来实现最终的目标。</p>
+<p><span class="img-zoom"><img alt="从零开始设计产品的 10 个 UI/UX 启示" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_QEeAd29veUsl5wvB-qlCkw.png" width="2000" height="964" class="alignnone size-full wp-image-385281" /></span></p>
+<p>最开始，我会使用一张网格纸来跟踪我每天的学习进度，健身以及心理健康状况。然后这个习惯持续了好几年，生活逐渐有所改观，并且养成了将每个不同的目标进行分解、逐步完成的习惯。</p>
+<p>这种行为模式和方法在我自己身上得到了验证。不过我在纸上坚持追踪行为习惯多年后，我决定和 Wilson 一起创建一个程序，来升级这种「习惯追踪」的工具，我们先构建了一个免费的 Chrome 插件 <a href="https://tryconfetti.io/" rel="noopener" target="_blank">Confetti</a> ，这是一个能够帮你追踪日常习惯的工具，每次完成一个任务，都会有五彩缤纷的纸屑效果出现，祝贺你守住了习惯，达成目标。</p>
+<p><span class="img-zoom"><img alt="从零开始设计产品的 10 个 UI/UX 启示" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_w13PxWG_8tn5XzQv683lig.png" width="2000" height="1203" class="alignnone size-full wp-image-385280" /></span></p>
+<p>在四年多的产品设计生涯当中，这是我从头到尾全是自己完成的产品，这个过程中，我有了很多启发。在这篇文章当中，我将会分享我的见解，希望对你也有所帮助。</p>
+<h4><span class="auto_menu">1、一开始就要界定好产品特性</span></h4>
+<p><span class="img-zoom"><img alt="从零开始设计产品的 10 个 UI/UX 启示" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_dRbD7yKxNkhkq-AvCFIZdQ.png" width="1978" height="901" class="alignnone size-full wp-image-385279" /></span></p>
+<p>一开始，我和 Wilson 就决定使用3屏的主要功能，并构建了一个粗糙的原型。但是，我们没有足够的远见，无法设想我们的产品最终的方向，也没有对全部的想法进行深入的打磨。</p>
+<p>最终，我们向后退了一步。我们回过头来，确定了最小可执行原型的发布日期，以及真正的核心功能。我们在 Notion 上创建了一个文档，并且开始梳理和管理哪些功能是「必需品」，哪些功能「如果有了会更好」。比如，登录、注册、新用户引导是必不可少的功能。但是，我们认为「重新排列习惯」是一个提升体验但是并不亟需的功能。</p>
+<p>我们基于这一点，我们开始抓住核心功能，尽可能让它们足够易用，强化核心特性。通过确定核心功能的优先级，并且确定发布日期，借此缓解我们的精神压力，确定我们不会被成堆的功能所淹没。这也似地我们有足够的动力解决核心功能。</p>
+<h4><span class="auto_menu">2、有很多流程和状态需要搞定</span></h4>
+<p><span class="img-zoom"><img alt="从零开始设计产品的 10 个 UI/UX 启示" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_L7Y8-mEAXHUBcOLD5vGTBg.png" width="2000" height="911" class="alignnone size-full wp-image-385278" /></span></p>
+<p>在设计产品的时候，我经常被提醒要处理好每一个边缘情况，填好每一个坑，确保体验的顺畅。从零开始构建产品是一把双刃剑：基于自己的构想来创造产品是令人兴奋的，但是相应的，我需要经常在舒适区以外处理问题。</p>
+<p>我一直在 Skookum 从事产品设计的工作，而这些工作通常都是在一定的约束条件下进行的，但是现在所要处理的产品则不同。之前的产品都可以借助现成的设计系统，有早已搭建好的设计语言，有完整的组件，有明确的 UI 状态，有非常明确的基础架构，但是这次是我自己的产品，所有的这些都没有。而且，这个产品还可能会存在几种极端的情况、流程和状态。</p>
+<p>比如，在注册流程中，按钮会有默认、禁用、激活、填充、错误、悬停等几种状态，但是除了这些之外，我还需要考虑诸如密码重置的流程和体验，这可能会涉及到 6 个高度相似的 UI 界面状态：</p>
+<ol>
+<li>输入 Email</li>
+<li>重新发送  Email</li>
+<li>Email 通知设计</li>
+<li>输入新的密码</li>
+<li>错误界面</li>
+<li>成功界面</li>
+</ol>
+<p>这个过程中，有很多东西都令我一度感到迷惑，这也引发出我下一个要说的要点……</p>
+<h4><span class="auto_menu">3、创建用户流程</span></h4>
+<p><span class="img-zoom"><img alt="从零开始设计产品的 10 个 UI/UX 启示" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_iAUC5_L1GKLYxOedZyXXxg.png" width="2000" height="823" class="alignnone size-full wp-image-385277" /></span></p>
+<p>项目开始之后，我很快就遭遇了组织架构问题。因为我是在工作之余来创建这个产品，这导致我犯了一个非常严重的错误：我没有按照传统的产品流程来创建产品，这随后导致了一系列的问题。</p>
+<p>按照标准的产品设计流程，我需要从用户流程开始创建，定义用户可能会执行的流程，并且针对主要的流程界面进行必要的总结说明。因为这个项目和之前的工作不一样，我一开始就忘记了遵循流程这件事情，我错误地将它视作为一个包含几个简单界面的简单项目（是不是听着特别耳熟？很多所谓的小项目翻车都是从这里开始的）。这样一来，当我开始处理诸多按钮的不同状态和界面变化的时候，整个用户流程变得混乱不堪，并且我很难确定其中的体验漏洞有哪些。</p>
+<p>最终我停止了这种随性的设计方式，并且在 Whimsical 当中创建了完整的用户流程。于是我很快清楚了那些环节有所缺失，以及整个界面流程的走向。</p>
+<p>按照用户流程来梳理界面的时候，可以对于整个产品的屏幕状态有所了解，并且随着产品的发展膨胀，用户流程的重要性会随之增长，成为至关重要的部分。</p>
+<h4><span class="auto_menu">4、交互应该反馈到UI中</span></h4>
+<p><span class="img-zoom"><img alt="从零开始设计产品的 10 个 UI/UX 启示" src="https://image.uisdc.com/wp-content/uploads/2020/08/11_y-UoOozmQJKx1Toe1XhiJA.gif" width="800" height="409" class="alignnone size-full wp-image-385269" /></span></p>
+<p>的确，在完成整个  UI 之前，不应该开始向着项目当中添加动画。但是，不添加并不意味着你无需考虑。实际上，不同的微交互和动画对于实际的体验影响是巨大的。你在思考 UI 设计的时候，就应该考虑到微交互和动画的使用，避免在后续动效和交互落地的时候，进行不必要的修改。</p>
+<p>比如，当我在设计「达成成就」这一体验的时候，我就考虑到了需要用到的微交互的效果，所以在我设计 UI 的时候可以顺着我自己的喜好来进行设计，并且将可能会用到的动效拖到某个角落暂时记下来，避免在设计 UI 的阶段，影响了整体的流程和效果。而后续加入动效的时候，就会方便很多。</p>
+<p>我认为，将 UI 和交互结合起来考虑是非常重要的，因为两者共通塑造了体验。如果在设计 UI 的环节直接加动效，会让整个设计过程变得复杂臃肿。</p>
+<h4><span class="auto_menu">5、尽早获得反馈</span></h4>
+<p><span class="img-zoom"><img alt="从零开始设计产品的 10 个 UI/UX 启示" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_fD7FRyrnhDqi9ptYabw4QQ.png" width="2000" height="586" class="alignnone size-full wp-image-385276" /></span></p>
+<p>其实这也是我在这个项目中犯的一个大错：等了太长时间才获得反馈。</p>
+<p>我通常是在晚上回家和周末才有空推进这个项目，在很长的一段时间内，我没有真正告诉任何人。</p>
+<p>当我终于同我的家人、朋友、用户以及网上乐于尝鲜的用户公布了这一产品之后，他们在使用过程中，开始注意到了很多细节上显而易见、但是我并没有发现的问题。我意识到我作为产品的设计者，是很容易陷入并沉迷用户体验当中比较孤立的一部分，反而会忽略很多显着的问题。</p>
+<p>回想一下，如果我能尽早向用户和朋友展示设计和原型，那么我会在更早的时候发现问题，并且在获得反馈之后才进入开发阶段，弥补大量的损失。</p>
+<h4><span class="auto_menu">6、在别处获得启发很重要</span></h4>
+<p><span class="img-zoom"><img alt="从零开始设计产品的 10 个 UI/UX 启示" src="https://image.uisdc.com/wp-content/uploads/2020/08/11_5MlOA5_okJlNWUYyaOuCiA.gif" width="800" height="409" class="alignnone size-full wp-image-385270" /></span></p>
+<p>很多设计师会认为，所有的想法都必须是原创的才行，否则就是欺诈。但是稍微想想，其实彻底的原创其实很少的。当你看到一个优秀的产品，它优秀的配色和恰到好处的交互可能会让你觉得：「已经有人做出来了，我的想法在它面前完全没法比拟。」</p>
+<p>这种思维方式其实有着极大的缺陷，并且抑制了你的创造力。</p>
+<p>当我发现我的设计有缺陷的时候，我会竭尽全力去搜索和了解更多网上已有的设计。我会观察和思考别的公司和产品是如何设计新用户引导流程的，如何管理用户个人信息的。我从来都没有复制被人的体验，但是会隔三差五去钻研别人所创造出来的优秀细节，然后将这些细节借鉴到我的设计当中。</p>
+<p>我最喜欢的一个范例，是从模态状态下，旋转退出的效果。这是我偶然在一个网站上看到的效果，因此我决定将它添加到 Confetti 当中，我还在着陆页的按钮中加入了类似的特效。</p>
+<p>事实上，一切设计都是混搭创造出来的。你借鉴细节并不意味着抄袭，不要害怕去发掘和学习别人的优势和亮点，你要学会有机地拆解和借鉴，灵活地运用到自己的设计当中，它就像调制鸡尾酒一样有趣。</p>
+<h4><span class="auto_menu">7、勇敢面对身份的变换</span></h4>
+<p><span class="img-zoom"><img alt="从零开始设计产品的 10 个 UI/UX 启示" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_rnTNWATrtGWlMR7D3kd3MA.png" width="1978" height="642" class="alignnone size-full wp-image-385275" /></span></p>
+<p>当我们开始设计的产品的时候，我和 Wilson 头顶上的身份就一直在变。我们是 UI设计师，要负责UX，要做交互，也制作动效，要进行平面设计，还要考虑市场营销，要管理产品，我们也要扮演其他的角色。</p>
+<p>职责如此之多，以至于我们不可避免地遇到我们能力范围之外各种新问题。我们必须承认自己陷入了困境，寻求外部帮助成了必要的选择。</p>
+<p>专注于自己专业的领域，其他不专业的方面来寻求外部帮助是非常合理的。比如在一个项目当中，一位艺术家负责了绝大多数的风景插画，另一位艺术家则完成了肖像画的部分，这很正常。</p>
+<p>我希望产品的外观和功能能够保持高度的一致性，并且我确实做到了。但是不要误会我的意思，我并非是不敢走出舒适区去学习代码开发，而是在这样的项目当中，我并不适合从UI和UX领域延伸出去，毕竟完成项目的开发优先级比学习代码更高。</p>
+<h4><span class="auto_menu">8、保持简单更重要</span></h4>
+<p><span class="img-zoom"><img alt="从零开始设计产品的 10 个 UI/UX 启示" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_pveEbuhsLXKhu_TmML7anA.png" width="1978" height="1013" class="alignnone size-full wp-image-385274" /></span></p>
+<p>尽管给 MVP 安排好了发布时间，可以防止这个项目被无限膨胀的功能特性和工作量所淹没，但是这样依然无法防止我们基于已有的功能进行改进。</p>
+<p>很多人都喜欢 Reid Hoffman 的一句话：「如果你对于产品的第一版感觉不尴尬，那你一定是发布晚了。」不过，我们正式发布的第一版的产品，并不会显得太尴尬，但是目前来看，当时那种简单直观的状态，比起再花费好几个月时间反复打磨之后再发布，来得更好。</p>
+<p>在发布新产品之前，我们必须考虑2个问题：</p>
+<ol>
+<li>我们是否相信我们所构建的产品，能够为用户带来价值？</li>
+<li>我们是否竭尽全力了？</li>
+</ol>
+<p>这些问题让我们最终能够达成目标，且按时发布，避免分心。专注交付最核心的功能，而不是被一堆冗余的次要特性所压倒。</p>
+<h4><span class="auto_menu">9、良好的交接更加省事省时</span></h4>
+<p><span class="img-zoom"><img alt="从零开始设计产品的 10 个 UI/UX 启示" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_3EROpcHUZAyH9EXl309uig.png" width="1978" height="787" class="alignnone size-full wp-image-385273" /></span></p>
+<p>从项目一开始我就一直在做项目的管理和组织设计素材，以便后面进行开发。不过，由于我一开始就使用了 Zeplin 这样的协同工具，确保了我可以轻松地将所有的素材都顺畅地交给负责开发的 Wilson。作为一款设计系统工具，Zeplin 让我无需浪费时间对素材进行分类，非常便捷。</p>
+<p>在交接的过程中，我还做了一些优化：</p>
+<ol>
+<li>将所有的界面都组织到了 Zeplin 当中，并且进行了处理</li>
+<li>我给所有的画板进行了针对性的命名，方便检索</li>
+<li>我在 XD 中标注了需要导出的素材</li>
+<li>我保留了旧有的界面存档，并且确保交付的新版界面是最新的</li>
+</ol>
+<h4><span class="auto_menu">10、一次写明所有的UX文案</span></h4>
+<p><span class="img-zoom"><img alt="从零开始设计产品的 10 个 UI/UX 启示" src="https://image.uisdc.com/wp-content/uploads/2020/08/1_ihJL2dhyPx_Rn5MfSzwAeQ.png" width="2000" height="911" class="alignnone size-full wp-image-385272" /></span></p>
+<p>在设计 UI 的时候，界面中的文案部分是临时编写的，这促使了一次设计完成之后，整体的文案是不一致、不协调的。</p>
+<p>我很希望一开始就创建了一个单独的文档，一次性将文案部分全部重写，包括提醒、注释、标签、弹出框提醒等等。而实际上，我的文案都是在设计 UI 的时候附带着写下来的，导致整体的一致性严重缺乏。</p>
+<p>这种文案本身在调性上的缺乏，导致了整个产品在语气和用词上是混搭式的，一致性很差。</p>
+<p>所以，在产品上线发布之后，一直在对文案进行修修补补。</p>
+<h4><span class="auto_menu">结语</span></h4>
+<p>我相信，如果很多错误不能一开始就解决或者尽早修改，最终产品的潜力是无法完全发挥出来的。正如同 Giacomo Casanova 说过的那样：「一个不会犯错的人同样也无法成事」。</p>
+<p>所以我们要在错误中总结经验，希望你不要在设计项目中，陷入与我相同的困境。</p>
+<p>延伸阅读：</p>
+<p>[link https://www.uisdc.com/improve-your-product-ui]</p>
+<p>[link https://www.uisdc.com/disney-basic-principles-ui]</p>
+<p>[link https://www.uisdc.com/improve-ui-designs-fast-1]</p>
+<p>[link https://www.uisdc.com/improve-ui-designs-fast-2]</p>
