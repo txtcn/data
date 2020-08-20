@@ -1,0 +1,67 @@
+➜Node.js 如何处理 ES6 模块
+http://www.ruanyifeng.com/blog/2020/08/how-nodejs-use-es6-module.html	30318
+<p>学习 JavaScript 语言，你会发现它有两种格式的模块。</p>
+<p>一种是 ES6 模块，简称 ESM；另一种是 Node.js 专用的 CommonJS 模块，简称 CJS。这两种模块不兼容。</p>
+<p>很多人使用 Node.js，只会用<code>require()</code>加载模块，遇到 ES6 模块就不知道该怎么办。本文就来谈谈，ES6 模块在 Node.js 里面怎么使用。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202008/bg2020082004.jpg" alt="" title="" /></p>
+<h2>一、两种模块的差异</h2>
+<p>ES6 模块和 CommonJS 模块有很大的差异。</p>
+<p>语法上面，CommonJS 模块使用<code>require()</code>加载和<code>module.exports</code>输出，ES6 模块使用<code>import</code>和<code>export</code>。</p>
+<p>用法上面，<code>require()</code>是同步加载，后面的代码必须等待这个命令执行完，才会执行。<code>import</code>命令则是异步加载，或者更准确地说，ES6 模块有一个独立的静态解析阶段，依赖关系的分析是在那个阶段完成的，最底层的模块第一个执行。</p>
+<h2>二、Node.js 的区分</h2>
+<p>Node.js 要求 ES6 模块采用<code>.mjs</code>后缀文件名。也就是说，只要脚本文件里面使用<code>import</code>或者<code>export</code>命令，那么就必须采用<code>.mjs</code>后缀名。Node.js 遇到<code>.mjs</code>文件，就认为它是 ES6 模块，默认启用严格模式，不必在每个模块文件顶部指定<code>"use strict"</code>。</p>
+<p>如果不希望将后缀名改成<code>.mjs</code>，可以在项目的<code>package.json</code>文件中，指定<code>type</code>字段为<code>module</code>。</p>
+<blockquote><pre><code class="language-javascript">
+{
+"type": "module"
+}
+</code></pre></blockquote>
+<p>一旦设置了以后，该目录里面的 JS 脚本，就被解释用 ES6 模块。</p>
+<blockquote><pre><code class="language-bash">
+# 解释成 ES6 模块
+$ node my-app.js
+</code></pre></blockquote>
+<p>如果这时还要使用 CommonJS 模块，那么需要将 CommonJS 脚本的后缀名都改成<code>.cjs</code>。如果没有<code>type</code>字段，或者<code>type</code>字段为<code>commonjs</code>，则<code>.js</code>脚本会被解释成 CommonJS 模块。</p>
+<p>总结为一句话：<code>.mjs</code>文件总是以 ES6 模块加载，<code>.cjs</code>文件总是以 CommonJS 模块加载，<code>.js</code>文件的加载取决于<code>package.json</code>里面<code>type</code>字段的设置。</p>
+<p>注意，ES6 模块与 CommonJS 模块尽量不要混用。<code>require</code>命令不能加载<code>.mjs</code>文件，会报错，只有<code>import</code>命令才可以加载<code>.mjs</code>文件。反过来，<code>.mjs</code>文件里面也不能使用<code>require</code>命令，必须使用<code>import</code>。</p>
+<h2>三、CommonJS 模块加载 ES6 模块</h2>
+<p>CommonJS 的<code>require()</code>命令不能加载 ES6 模块，会报错，只能使用<code>import()</code>这个方法加载。</p>
+<blockquote><pre><code class="language-javascript">
+(async () => {
+await import('./my-app.mjs');
+})();
+</code></pre></blockquote>
+<p>上面代码可以在 CommonJS 模块中运行。</p>
+<p><code>require()</code>不支持 ES6 模块的一个原因是，它是同步加载，而 ES6 模块内部可以使用顶层<code>await</code>命令，导致无法被同步加载。</p>
+<h2>四、ES6 模块加载 CommonJS 模块</h2>
+<p>ES6 模块的<code>import</code>命令可以加载 CommonJS 模块，但是只能整体加载，不能只加载单一的输出项。</p>
+<blockquote><pre><code class="language-javascript">
+// 正确
+import packageMain from 'commonjs-package';
+// 报错
+import { method } from 'commonjs-package';
+</code></pre></blockquote>
+<p>这是因为 ES6 模块需要支持静态代码分析，而 CommonJS 模块的输出接口是<code>module.exports</code>，是一个对象，无法被静态分析，所以只能整体加载。</p>
+<p>加载单一的输出项，可以写成下面这样。</p>
+<blockquote><pre><code class="language-javascript">
+import packageMain from 'commonjs-package';
+const { method } = packageMain;:w
+</code></pre></blockquote>
+<h2>五、同时支持两种格式的模块</h2>
+<p>一个模块同时要支持 CommonJS 和 ES6 两种格式，也很容易。</p>
+<p>如果原始模块是 ES6 格式，那么需要给出一个整体输出接口，比如<code>export default obj</code>，使得 CommonJS 可以用<code>import()</code>进行加载。</p>
+<p>如果原始模块是 CommonJS 格式，那么可以加一个包装层。</p>
+<blockquote><pre><code class="language-javascript">
+import cjsModule from '../index.js';
+export const foo = cjsModule.foo;
+</code></pre></blockquote>
+<p>上面代码先整体输入 CommonJS 模块，然后再根据需要输出具名接口。</p>
+<p>你可以把这个文件的后缀名改为<code>.mjs</code>，或者将它放在一个子目录，再在这个子目录里面放一个单独的<code>package.json</code>文件，指明<code>{ module: "type" }</code>。</p>
+<p>另一种做法是在<code>package.json</code>文件的<code>exports</code>字段，指明两种格式模块各自的加载入口。</p>
+<blockquote><pre><code class="language-javascript">
+"exports"：{
+"require": "./index.js"，
+"import": "./esm/wrapper.js"
+}
+</code></pre></blockquote>
+<p>上面代码指定<code>require()</code>和<code>import</code>，加载该模块会自动切换到不一样的入口文件。</p>
