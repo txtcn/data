@@ -1782,3 +1782,53 @@ http://www.woshipm.com/marketing/4146423.html	19837
 <p>作者：七邵；公众号：七邵</p>
 <p>本文由 @七邵 原创发布于人人都是产品经理。未经许可，禁止转载</p>
 <p>题图来自 Pexels，基于 CC0 协议</p>
+➜Web后台产品的详情页规范
+http://www.woshipm.com/pd/2404788.html	23235
+<blockquote><p>编辑导语：Web后台产品的详情页通常是表单页的查看效果，PM经常遇到，那么画它的时候遵循哪些常见规范呢？本篇文章作者详细介绍了Web后台产品的详情页规范，我们一起来看一下。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4146721" src="http://image.woshipm.com/wp-files/2020/08/6z3k89HrA8DPMzlJPs6j.jpg" alt="" width="900" height="420" /></p>
+<p>Web后台详情页主要由字段名和字段值组成，根据需求也会包含图片，链接，附件等元素；大家可以看看作者使用规范画出来的详情页<a title="https://eda513.axshare.com" href="https://eda513.axshare.com/#g=1" target="_blank" rel="noopener">https://eda513.axshare.com</a>是否比较简洁整齐。</p>
+<h2>一、实现规范</h2>
+<p>对于完全由字段名和字段值组成的详情页，建议采用Axure的表格元件来画原型，简单快速；效果如下图。</p>
+<p>操作步骤：从默认元件库中拖动“表格”到工作区合适位置，然后第一列填充相应的字段名，第二列填写相应的字段值，最后删除多余的第三列即可。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/d8dJeCKoJrdkp3Izwtz5.png" alt="" width="3014" height="1366" /></p>
+<p>如果详情页还有图片、链接、附件等元素。建议采用Axure的文本元件来画原型，适应性比较强；效果如下图。</p>
+<p>操作步骤：先画字段名，从默认元件库中拖动“文本标签”到工作区合适位置然后双击输入名称；再画字段名，从默认元件库中拖动“文本标签”到工作区合适位置然后双击输入名称。</p>
+<p>注意：字段值有时候需要选择图片/文字链接等其他Axure元件。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/Af6TJIJrQhcHMd7ecSC4.png" alt="" width="3014" height="762" /></p>
+<h2>二、间距规范</h2>
+<p>字段间距需要保持一致(或者保证相邻字段的纵坐标差值)，这样整体的显示效果会比较好。</p>
+<p>如果字段采用默认的文本元件，建议字段间距采用10px。详细步骤详见作者旧文<a title="Axure如何调整线框图的对齐细节？" href="http://www.woshipm.com/rp/821213.html" target="_blank" rel="noopener"> Axure如何调整线框图的对齐细节</a><a title="Axure如何调整线框图的对齐细节？" href="http://www.woshipm.com/rp/821213.html">。</a></p>
+<p>操作步骤：根据需求拖动相应的字段值，Axure自动显示相邻间距，然后慢慢调整到合适的间距；或者自己根据第1个字段值的Y坐标+间距，从而得出第二个字段值的Y坐标。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/ewJqke3MuGtrm1fiZ45z.png" alt="" width="3014" height="1744" /></p>
+<h2>三、对齐规范</h2>
+<h3>1. 字段名对齐规范</h3>
+<p>字段名有长有短，建议控制在3~6字以内，这样的展示效果会比较好。</p>
+<p>由于有多个字段，所以需要遵循相应的对齐规范，通常是左侧对齐，有时候也会选择右侧对齐，但是居中对齐是不合适的。</p>
+<p><strong>字段名左对齐效果：</strong></p>
+<p>操作步骤：按住Ctrl同时选择所有的字段值然后点击常用工具栏的“左侧对齐”按钮，然后再修改X坐标到合适位置。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/fmvsuAgHfLdYuzI4AZRi.png" alt="" width="3014" height="1744" /></p>
+<p><strong>字段名右对齐效果：</strong></p>
+<p>操作步骤：按住Ctrl同时选择所有的字段值然后点击常用工具栏的“右侧对齐”按钮，然后再修改X坐标到合适位置。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/VGvb95rbqVkr5u1WKTWl.png" alt="" width="3014" height="1744" /></p>
+<h3>2. 字段值对齐规范</h3>
+<p>字段值有长有短，另外字数无法控制在一定范围内，所以不适合采用右侧对齐规范，只能采用左侧对齐规范；展示效果详见上面2张图。</p>
+<p>给大家看一下右侧对齐的反面案例效果，相信有一定审美的PM都不会如此设计。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/lKq6uK1U05IKOzJveWBo.png" alt="" width="3014" height="1466" /></p>
+<h2>三、链接规范</h2>
+<p>Web详情页的通常有文字链接、图片链接、附件链接、视频链接；他们需要遵循不同的交互规范。</p>
+<h3>1. 文字链接</h3>
+<p>文字链接建议使用蓝色字体，悬停显示下划线。</p>
+<p>操作步骤：点击该文本链接，设置鼠标单击时事件，添加动作“打开链接”，然后选择打开在“通过新标签页打开”(有时候也采用原标签页打开)，然后链接到相应的页面。</p>
+<p>另外需要在交互样式——鼠标悬停的样式，点击勾选“下划线”。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/vMTVYTcfIzHkAdSKHQvN.png" alt="" width="2748" height="1466" /></p>
+<h3>2. 附件链接</h3>
+<p>附件链接建议使用图标+蓝色文字表示，点击附件链接自动下载到本地。</p>
+<p>操作步骤：点击该文本链接，设置鼠标单击时事件，添加动作“打开链接”，链接到“链接到URL或文件路径”；然后输入相对的本地路径，最后选择在当前窗口打开，文章开头的原型地址中可以体验相应的交互过程。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/7XI7S6EgDE9kbwGYifSn.png" alt="" width="2748" height="1466" /></p>
+<p>相关文章：</p>
+<p><a title="Web后台产品的表单页规范" href="http://www.woshipm.com/pd/989427.html" target="_blank" rel="noopener">Web后台产品的表单页规范</a></p>
+<p><a title="Axure如何调整线框图的对齐细节？" href="http://www.woshipm.com/rp/821213.html" target="_blank" rel="noopener">Axure如何调整线框图的对齐细节</a></p>
+<h3>#专栏作家#</h3>
+<p>浪子，个人微信langzipm，公众号：浪子画原型(langzisay)。专注于APP原型设计和产品规范。</p>
+<p>本文由 @浪子 原创发布于人人都是产品经理。未经许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
