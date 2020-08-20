@@ -45,7 +45,7 @@ import { method } from 'commonjs-package';
 <p>加载单一的输出项，可以写成下面这样。</p>
 <blockquote><pre><code class="language-javascript">
 import packageMain from 'commonjs-package';
-const { method } = packageMain;:w
+const { method } = packageMain;
 </code></pre></blockquote>
 <h2>五、同时支持两种格式的模块</h2>
 <p>一个模块同时要支持 CommonJS 和 ES6 两种格式，也很容易。</p>
