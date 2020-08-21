@@ -39,3 +39,44 @@ https://pansci.asia/archives/189806	1850
 <p style="text-align: center;"><strong>全新计画《科学生线上学习平台》</strong><strong><a href="https://crowdfundiing.typeform.com/to/CC8XFvbi" target="_blank" rel="noopener">问卷</a>募集中！<a href="https://crowdfundiing.typeform.com/to/CC8XFvbi" target="_blank" rel="noopener">填答</a>就有机会获得精美好礼！</strong></p>
 </div>
 <p>The post <a rel="nofollow" href="https://pansci.asia/archives/189806">破解史前巨石阵谜团！科学家分析核心样本找到石材来源</a> appeared first on <a rel="nofollow" href="https://pansci.asia">PanSci 泛科学</a>.</p>
+➜筛检结果「弱阳性」是什麼意思？核酸检测中的 Ct 值又是什麼？——《科学月刊》
+https://pansci.asia/archives/190189	25209
+<ul><li><span style="font-weight: 400;">林翰佐／铭传大学生物科技学系副教授，科学月刊总编辑。</span></li>
+</ul><blockquote><p>一名日籍留学生被检测出新冠病毒弱阳性，核酸检测结果的循环阈值（threshold cycle, Ct）仅 37.38。经过推算约略等于 0.04 个拷贝数，透过 PCR 反应扩增 1800 亿倍始可被测得。利用 PCR 原理的核酸检测法具有超高放大的特性，使得该检测具有相当的灵敏度，但也因此容易受採样位置、是否污染等状况影响结果，因此需要多次检测综合判断。</p></blockquote>
+<p>新型冠状病毒疫情全球肆虐。不过在臺湾，随着本土「零确诊」的日子持续累进，大家似乎逐渐淡忘了疫情困扰，成为全球少数可以维持正常生活的幸运分子。不过最近的一则新闻又挑动了大家的敏感神经，一位滞留臺湾的日籍留学生在返回日本之后被筛检为阳性。</p>
+<p>大家不禁要问，臺湾的零确诊，究竟是真实，抑或是虚幻一场？</p>
+<div>GIPHY</a></p></div>
+<p>在这个案件当中，该名学生检体在<strong>循环阈值</strong>（threshold cycle, Ct）仅 37.38，这是什麼意思？为什麼有人说其实这样的数值，充其量只能算是「弱阳性」，甚至于是「伪阳性」呢？我想可以藉由这样一个新闻事件，来科普一下聚合酶连锁反应法用于检测病毒感染的相关知识。</p><div class="pansc-content"></ins>
+<script async type="text/javascript" src="//cdn.holmesmind.com/js/init.js"></script></div>
+<h2>核酸聚宝盆！PCR 反应快速扩增 DNA 片段</h2>
+<p>聚合酶连锁反应法（polymerase chain reaction, PCR）是一种利用酵素将特定 DNA 迅速合成、扩增的一种生物技术。</p>
+<p>这个由生化学家穆利斯（Kary Mullis）发明的技术，透过三段温度控制的方式完成双股 DNA 的分解（denature），引子黏合（annealing）在解开的单股 DNA 上，开启延伸合成一股新的互补 DNA 链（elongation）的步骤，使 DNA 能在体外（in vitro）複製。不断重複这样的过程，就能在数小时之内将特定的 DNA 片段扩增到数百亿倍。</p>
+<div>WIKI</a></p></div>
+<p>PCR 技术有如核酸的「聚宝盆」，只要拥有少许的 DNA 样品，便可以产出足量的片段作为后续检验的基础。此技术目前应用甚广，除了生物医学研究之外，也运用在法医等鑑识科学之中，像是亲子血缘鑑定便是运用少量检体（头髮的毛囊、口腔黏膜细胞等）进行 PCR 反应，进而比对亲子之间样本的异同。技术发明者穆利斯也因此于 1993 年成为诺贝尔化学奖得主。</p>
+<p>由于 DNA 的半保留複製（semiconservative replication），理想的 PCR 反应会以 2 的 N 次方的方式扩增 DNA 片段。传统 PCR 技术多半设定进行 30 次反应，理想的状况可以将原本的 DNA 放大超过 10 亿倍。当然 PCR 反应中 DNA 产物无法一直依照完美的指数图形延续下去，材料一旦产生短缺，产物量便会趋于平缓，达到所谓的「停滞期 （plateau period）」。</p>
+<h2>qPCR 萤光技术，让 PCR 产物侦测更灵敏</h2>
+<p>即时定量聚合酶连锁反应（quantitative real-time PCR , qPCR）是一种透过萤光侦测技术，检测 PCR 反应中 DNA 产物含量的一种技术。相对于传统的 PCR 技术，qPCR 可以解决 PCR 技术当中定量的问题，同时也可以更灵敏的侦测到 DNA 产物，并缩短检验时间。</p>
+<p>所以目前我们针对新冠病毒检体的核酸检测皆以 qPCR 为主，只要设计好新冠病毒专属的引子，与 DNA 萤光染剂，就能透过 qPCR 去检测检体中是否有病毒的核酸，甚至推算出病毒的数量。</p>
+<p>文章开头提到的「循环阈值」的意思，逻辑上可视为「可侦测到预设萤光强度的最少循环数」。所以说，以日本留学生的案例来说，就是指当 qPCR 反应达到 37.38 次循环后仪器可以侦测得到讯号。循环次数 37.38 意味着 DNA 片段被倍增了 2 的 37.38 次方，也就是扩增了 1788.55 亿倍。</p>
+<p>qPCR 技术的灵敏度又是如何呢？这涉及到 qPCR 仪器的灵敏度以及使用萤光染剂的灵敏度。就实务来说，笔者认为染剂的灵敏度才是 qPCR 技术上的门槛。SYBR green 是 qPCR 技术中最常使用的 DNA 萤光染剂之一，根据厂商提供的资料， SYBR green 的灵敏度大约在 60 pg（皮克，10-12 g）DNA 左右。</p>
+<div>WIKI</a></p></div>
+<p>所以，Ct 值 37.38 的意义，就是说原始样本经过 1788.55 亿倍扩增，达到 60 pg DNA 的水准。就此回推，原本检体中新冠病毒特定基因片段的量，大约是 60 pg／1788.55 亿，经过单位的互换大约在 3.35 x 10<sup>-22</sup> g。</p>
+<h2>循环阈值 37.38 <strong>代表</strong>甚麼？样本病毒量是多是少<strong>？</strong></h2>
+<p>对于大多数的人来说，我们真正想知道的是，在样本中有多少病毒？也就是我们常说的<strong>拷贝数</strong>（copy number）。而前述的  3.35 x 10<sup>-22</sup> g 的 DNA 中有多少个扩增片段的拷贝数呢？片段分子量 50925 除以亚佛加厥常数（6.02 x 10<sup>24</sup>）可以得到一份扩增片段的重量，3.35 x 10<sup>-22</sup>g 除以上述的一份扩增片段的重量，就可以推估原始样本当中有多少扩增片段。含量其实相当低，只有约 0.04 个拷贝数，意味着样本当中可能只有 0.04 隻病毒。</p>
+<p>当然这样的估算还有些其他变因存在。PCR 反应存在着许多的变数，不太可能每次反应结果都会出现完美的 2 的 N 次方。新冠病毒的 RNA 基因体（genome）需要先经过一段称为反转录反应（reverse transcription）的过程，反应效率也会左右最终推算的结果。不过，透过这样的推算，我们还是可以理解，原始样本当中病毒的含量仍然是位于相当低的范围。</p>
+<p>基本上，qPCR 核酸检验是目前新冠病毒最灵敏的检验方式。然高达近 1800 亿倍的放大反应中，只要有一些状况（如样本的污染），便有截然不同的检验结果。也由于新冠病毒好发于下呼吸道，有时也会因採样位置的不同而有不同的结果，故利用这些高灵敏的检验方式，合併多次检验结果来研判结果，是较具公信力的方式。</p>
+<p>近日疫情指挥中心亦陆续公告该留学生相关接触者的核酸检验与血液抗体的检测结果，多数为阴性结果，应无社区感染疑虑，大家可以放心。</p>
+<h3>延伸阅读</h3>
+<p>Gawande, A., The mistrust of science, <em>The New Yorker</em>, 2016/6/10.</p>
+<p><img class="size-full wp-image-190211 alignleft" src="https://pansci.asia/wp-content/uploads/2020/08/156ff570d9b2fa54fd56e865ca841268.jpg" alt="" width="240" height="320" srcset="https://pansci.asia/wp-content/uploads/2020/08/156ff570d9b2fa54fd56e865ca841268.jpg 240w, https://pansci.asia/wp-content/uploads/2020/08/156ff570d9b2fa54fd56e865ca841268-23x30.jpg 23w" sizes="(max-width: 240px) 100vw, 240px"></p>
+<p> </p>
+<p> </p>
+<p style="text-align: left;">〈本文选自《<a href="https://www.scimonth.com.tw/">科学月刊</a>》2020年8月号〉</p>
+<p>科学月刊／在一个资讯不值钱的时代中，试图紧握那知识馀温外，也不忘科学事实和自由价值至上的科普杂志。</p>
+<div class="wpbcap wpbcap-188167 wpbcap-_819">
+<hr><p style="text-align: center;"><a href="https://bit.ly/34bmE11" target="_blank" rel="noopener">【七夕科礼】Kala仿古日晷 <img src="https://s.w.org/images/core/emoji/11/72x72/2665.png" alt="♥" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎ 期间限定88折 <img src="https://s.w.org/images/core/emoji/11/72x72/2665.png" alt="♥" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎ </a></p>
+<p style="text-align: center;"><a href="https://panmarket.asia/product/%E5%A5%A7%E5%9C%B0%E5%88%A9kala%E9%80%9A%E7%94%A8%E7%92%B0%E5%BC%8F%E6%97%A5%E6%99%B7/?utm_source=819cap" target="_blank" rel="noopener"><img class="alignnone wp-image-190251" src="https://pansci.asia/wp-content/uploads/2020/07/03a46779cf1ed515b29e1c471efd4c0f-1.gif" alt="" width="560" height="315"></a></p>
+<hr><p><a href="https://crowdfundiing.typeform.com/to/CC8XFvbi"><img class="aligncenter wp-image-188315 size-large" src="https://pansci.asia/wp-content/uploads/2020/07/ac5b2f1f116a7335e0affab85492f429-560x293.jpg" alt="" width="560" height="293" srcset="https://pansci.asia/wp-content/uploads/2020/07/ac5b2f1f116a7335e0affab85492f429-560x293.jpg 560w, https://pansci.asia/wp-content/uploads/2020/07/ac5b2f1f116a7335e0affab85492f429-350x183.jpg 350w, https://pansci.asia/wp-content/uploads/2020/07/ac5b2f1f116a7335e0affab85492f429-768x402.jpg 768w, https://pansci.asia/wp-content/uploads/2020/07/ac5b2f1f116a7335e0affab85492f429-30x16.jpg 30w, https://pansci.asia/wp-content/uploads/2020/07/ac5b2f1f116a7335e0affab85492f429.jpg 1201w" sizes="(max-width: 560px) 100vw, 560px"></a></p>
+<p style="text-align: center;"><strong>全新计画《科学生线上学习平台》</strong><strong><a href="https://crowdfundiing.typeform.com/to/CC8XFvbi" target="_blank" rel="noopener">问卷</a>募集中！<a href="https://crowdfundiing.typeform.com/to/CC8XFvbi" target="_blank" rel="noopener">填答</a>就有机会获得精美好礼！</strong></p>
+</div>
+<p>The post <a rel="nofollow" href="https://pansci.asia/archives/190189">筛检结果「弱阳性」是什麼意思？核酸检测中的 Ct 值又是什麼？——《科学月刊》</a> appeared first on <a rel="nofollow" href="https://pansci.asia">PanSci 泛科学</a>.</p>
