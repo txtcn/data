@@ -56,7 +56,7 @@ import cjsModule from '../index.js';
 export const foo = cjsModule.foo;
 </code></pre></blockquote>
 <p>上面代码先整体输入 CommonJS 模块，然后再根据需要输出具名接口。</p>
-<p>你可以把这个文件的后缀名改为<code>.mjs</code>，或者将它放在一个子目录，再在这个子目录里面放一个单独的<code>package.json</code>文件，指明<code>{ module: "type" }</code>。</p>
+<p>你可以把这个文件的后缀名改为<code>.mjs</code>，或者将它放在一个子目录，再在这个子目录里面放一个单独的<code>package.json</code>文件，指明<code>{ type: "module" }</code>。</p>
 <p>另一种做法是在<code>package.json</code>文件的<code>exports</code>字段，指明两种格式模块各自的加载入口。</p>
 <blockquote><pre><code class="language-javascript">
 "exports"：{
