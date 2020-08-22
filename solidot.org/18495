@@ -13,3 +13,12 @@ https://www.solidot.org/story?sid=65312	25493
 ➜Google 在漏洞披露 7 小时后修复了 Gmail Bug
 https://www.solidot.org/story?sid=65313	28720
 Google 曾制定了一条着名的规定：修一个漏洞给 90 天时间足够了，超过这个时间期限可以公开漏洞。现在我们知道，这个规定只适用于其他公司，不适用于 Google。安全研究员 Allison Husain 在 4 月份向 Google 报告了一个漏洞，该漏洞允许攻击者模仿任何 Gmail 或 G Suite 客户发送欺骗性邮件。但 Goolge 没有在 90 天时间内修复漏洞，它计划的修复时间是在 9 月份，也就是在漏洞报告 5 个月之后。8 月 19 日，Husain 在其个人博客上<a href="https://ezh.es/blog/2020/08/the-confused-mailman-sending-spf-and-dmarc-passing-mail-as-any-gmail-or-g-suite-customer/">披露了</a>漏洞细节，包括 POC 漏洞利用代码。Google 开发者在漏洞公开 7 个小时后给 Gmail&nbsp; 打了补丁<a href="https://www.zdnet.com/article/google-fixes-major-gmail-bug-seven-hours-after-exploit-details-go-public/" target="_blank">阻止漏洞被利用</a>，但完整补丁将在 9 月份部署。<p>
+➜针对企业 VPN 的电话钓鱼攻击
+https://www.solidot.org/story?sid=65314	31827
+上个月黑客对 Twitter 的攻击首先是利用电话对公司员工发动社交工程攻击窃取到登陆凭证，而类似的攻击方法正越来越常见。因新冠疫情，科技公司推广了远程在家办公政策，而为了安全访问公司内网，企业通常会向员工提供 VPN。有攻击者组合了电话社交工程和钓鱼网站试图窃取企业的 VPN 登陆凭证。<a href="https://krebsonsecurity.com/2020/08/voice-phishers-targeting-corporate-vpns/">这种方法的成功率相当高</a>。类似 Twitter 攻击，钓鱼者首先打电话给目标机构的远程办公员工，自称来自 IT 部门，试图帮助解决 VPN 问题。钓鱼者会诱骗受害者访问冒充企业 VPN 登陆入口的钓鱼网站，输入登陆凭证。<p>
+➜Adobe 的 Lightroom App 更新清空了用户的照片和预设
+https://www.solidot.org/story?sid=65315	50686
+Adobe 的 iPhone 和 iPad  Lightroom App 在最新更新之后<a href="https://petapixel.com/2020/08/20/lightroom-app-update-wipes-users-photos-and-presets-adobe-says-they-are-not-recoverable/" target="_blank">抹掉了</a>尚未同步到云端的用户照片和预设。Adobe 证实它没有办法恢复。用户在论坛上报告，在更新了  Lightroom v5.4 之后，照片、预设和水印数据都丢失了。有用户称丢失了 2 年的照片编辑数据，表示与 Adobe 的客服打了 4 个小时电话，客服表达了歉意称数据无法恢复。Adobe 已经公开证实了该问题，它对受到影响的用户“<a href="https://feedback.photoshop.com/photoshop_family/topics/lost-my-pictures-and-presets-after-update-today-18th-august-2020">深表歉意</a>”。它已经释出了 v5.4.1，修复了问题，但丢失的数据无法恢复了。Adobe 称，Android 和桌面版本，以及 Lightroom Classic 没有受到影响，它建议用户使用 iPhone 或 iPad 备份恢复数据。<p>
+➜美国警方通过面部识别匹配逮捕暴力抗议者
+https://www.solidot.org/story?sid=65316	51939
+美国纽约和迈阿密等城市的执法部门使用面部识别软件<a href="https://arstechnica.com/tech-policy/2020/08/cops-in-miami-nyc-arrest-protesters-from-facial-recognition-matches/#p3" target="_blank">逮捕了</a>多名过去几个月在 Black Lives Matter 抗议中参与犯罪活动的抗议者。迈阿密警方使用 Clearview AI 识别和逮捕了一名被控在抗议中向一名警官扔石头的女子。副警察局长 Armando Aguilar 称，如果是和平抗议，没有犯罪，警方不会对他们使用面部识别软件，“我们使用这项技术识别攻击警官，破坏警方财产和放火的暴力抗议者，我们已经逮捕了一些人，未来还会有更多人被捕。”纽约警方据报道利用 AI 软件识别了一名曾在抗议中用扩音器对着一名警官耳朵大喊的活动人士，数十名警察在警犬、无人机和直升飞机的配合下突袭了其公寓。<p>
