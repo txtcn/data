@@ -1,0 +1,526 @@
+➜如何定义栅格？来看京东的实战案例！
+https://www.uisdc.com/how-to-define-the-grid	59879
+<h4><span class="auto_menu">栅格是什么？为什么要定义栅格？</span></h4>
+<p>栅格其实就是我们常规理解的网格，从基础的作文本，再到围棋棋盘，都有栅格的身影。</p>
+<p>为什么设计师需要关注栅格呢？通过栅格中的网格系统，可以有效的将内容组织起来，形成内容布局的规律性，更易识别。</p>
+<p>栅格于设计师的价值主要体现在以下2方面：</p>
+<p><strong>1. To用户：提高内容布局规律性，减少认知成本</strong></p>
+<p>熟练运用网格系统能够让你的设计更有秩序和节奏感，页面信息的展现更加清晰，提高用户的阅读和浏览效率，减少认知成本，提供更好的用户体验。</p>
+<p><strong>2. To设计师：提高布局统一性，提高效率</strong></p>
+<p>当多位视觉设计师共同参与一个项目时，需要统一的标准来对项目进行规范。通过栅格体系，多位视觉设计师可以一起协作，提高整体布局的统一性。同时，因为栅格的复用性，也避免了设计与开发在细节上反复沟通确认，提升整个效率。</p>
+<h4><span class="auto_menu">大促活动栅格碰到的问题</span></h4>
+<p>在之前的活动中，我们并没有完整&amp;严密的栅格体系，只对常见的模块边距、1行2/1行3/1行4坑位的间距进行了定义。在实际的应用中，就会出现如下问题：</p>
+<p><strong>问题1：间距定义全凭设计师感觉，不统一</strong></p>
+<p>在同一个页面设计中，不同的模块间距定义比较随性，全凭设计师的感觉，在750*1334px的画布下，有的模块间距是2px，有的是3px，有的是6px，没有规律；这样不利于整体平台的设计统一性，也会影响设计的品质感。</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385477" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-1.jpg" width="1080" height="685" /></span></p>
+<p><strong>问题2：间距标注效率较低</strong></p>
+<p>为了保证设计稿的还原度，视觉同学需要进行标注，同时开发同学也需要依据标注实现每个模块的尺寸和间距，效率较低；基于以上的2个问题，我们进行一次活动栅格的深入研究，希望能够构建更严密的活动栅格体系，保证统一性和效率；</p>
+<h4><span class="auto_menu">大促活动栅格深入研究</span></h4>
+<p>在栅格的深入研究中，我们的主要思路如下，总共涵盖了4个步骤。</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385478" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-2.jpg" width="1080" height="423" /></span></p>
+<h4>Step 1：大促活动栅格画布尺寸定义</h4>
+<p>如果要确定栅格，首先得定义设计和开发实现的画布尺寸基准，只有确定了这一点，才能进行后续的栅格计算。针对画布尺寸，我们主要进行了2方面的探索：了解相关概念 + 确定画布尺寸</p>
+<p><strong>了解栅格画布尺寸中涉及的常见概念</strong></p>
+<p>手机分辨率：手机屏幕的像素点数目，即屏幕像素宽高，比如iPhone 6s的手机分辨率是750px*1334px。</p>
+<p>屏幕尺寸：用户最直接感受到的手机屏幕物理宽高，比如iphone6s的屏幕尺寸是4.7寸。</p>
+<p>密度（DPI）：手机屏幕上每英寸对应的像素点，其计算方式为：屏幕对角线像素/屏幕尺寸。以iPhone 6s为例，通过计算对角线为1530px，所以iPhone 6s的dpi为326。</p>
+<p>安卓机型下，生产厂家众多，有各种尺寸的屏幕以及分辨率。对于移动端刚入门的朋友，可能有个常见误区：各个安卓手机的兼容，和手机的屏幕大小、手机分辨率相关。如果按照这个思路，设计和开发同学方案的工作量需要成N倍增加。但实际上，在前端进行兼容时，需要关注的值主要是密度（DPI）。同时为了便于适配，屏幕的DPI以初始的固定密度为准。目前常见值有：120、160、240、320、480。以百度统计可查的数据来看，以480占比居多。具体安卓下排名在前12的分辨率以及其对应的密度如下图所示：</p>
+<p>（取百度统计的数据是为了让大家查找，实际上是以各自APP中数据为参考）</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385479" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-3.jpg" width="1080" height="668" /></span></p>
+<p>iOS官方有明确的设计规范，分辨率宽主要是750和1125，指定了2倍图、3倍图的使用范围。目前iOS分辨率以及其对开发倍数如下图所示：</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385480" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-4.jpg" width="1036" height="556" /></span></p>
+<p><strong>确定画布尺寸</strong></p>
+<p>在运营活动中，我们一般采用iPhone通用的750px宽作为设计稿基准。原因如下：</p>
+<ul>
+<li>在iOS中，750的尺寸，往下可以兼容单倍的325，往上可以适配三倍图的1125；</li>
+<li>安卓占比大的分辨率，比如：1080*1920，720*1280，尺寸比例和750*1334几乎相同。</li>
+</ul>
+<p>因此采用750*1334是行业中一般做法，避免多个尺寸设计稿的资源浪费。</p>
+<p>结论：最终我们确定了采用750*1334的画布尺寸作为交互、视觉、前端确定的画布尺寸。</p>
+<h4>Step2：明确栅格好坏判断标准</h4>
+<p>确定了画布尺寸之后，下一步就是明确栅格的判断标准。这样后续通过栅格公式进行计算之后，能够直接选择和判断。经过沟通，我们对栅格主要有以下2个要求：适应性+ 灵活性。</p>
+<p><strong>较好的适应性：能够满足活动多样的业务场景</strong></p>
+<p>活动页面基数庞大，大型活动涉及到的活动页非常多，例如主会场、预售会场、榜单会场、爆品会场、站内攻略等等。因此，为了满足多样的诉求，我们的栅格体系需要具有较好的灵活性，能够满足多样业务场景。比如，有些活动页面较少，对内容和画布的间距有一定的要求，为了满足透气感，不能间距太小；有的活动页面内容较多，如果内容和画布的间距过大，则会中间内容布局太挤，影响内容的展示。</p>
+<p><strong>较强的灵活性：能够启发视觉同学进行创新</strong></p>
+<p>栅格系统定义的是底层规则，但是对上层的视觉表现而言，除了限制之外，更多的是启发，我们需要保证栅格体系能够给视觉同学充分的创造空间，而不是扼杀大家的创意。</p>
+<h4>Step 3：利用栅格公式计算栅格体系</h4>
+<p>明确了判断标准之后，我们开始了细致的栅格计算。栅格计算公式如下：页面宽 = 栅格宽 X 栅格数（m） + （栅格数-1）X 槽宽（a）+ 2 X 留白宽（b）</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385481" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-5.jpg" width="750" height="165" /></span></p>
+<p>基于前文「页面宽」为750px的前提，我们进行了栅格的计算。在「栅格数」m的数值选择上，为了满足视觉的灵活性要求，我们选择了行业内常见的12、24两个数值进行基础计算，并且列出了所有的可能性，具体如下。</p>
+<p><strong>12栅格体系下所有的可能性</strong></p>
+<p>在12栅格体系下，将具体的值带入公式，则有如下结果：750 = 栅格宽 X 12 + 11 X 槽宽（a）+ 2 X 留白宽（b）</p>
+<p>我们针对所有的可能性进行了计算，计算结果如下:</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385482" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-6.jpg" width="1054" height="1224" /></span></p>
+<p>其中12栅格体系下，栅格宽=54、槽宽=6、留白宽=18时，能够满足当前活动的场景。</p>
+<p><strong>24栅格体系下所有的可能性</strong></p>
+<p>通过对栅格公式的计算，在24栅格体系下，将具体的值带入公式，则有如下结果：750 = 栅格宽 X 24 + 23 X 槽宽（a）+ 2 X 留白宽（b）</p>
+<p>我们针对所有的可能性进行了计算，计算结果如下:</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385483" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-7.jpg" width="1021" height="906" /></span></p>
+<p>其中24栅格体系下，栅格宽=24、槽宽=6、留白宽=18时，能够满足当前活动的场景。</p>
+<p><strong>确定最终栅格</strong></p>
+<p>在上一步计算中，我们发现12栅格、24栅格均有合适的栅格布局，将两个栅格对比后，我们发现有很多数值都是类似的：</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385484" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-8.jpg" width="1035" height="732" /></span></p>
+<p>上图2个方案的槽宽、留白宽都是一样的；主要的差别在于是分成12栏、还是24栏。和设计师一起商量后，为了保证灵活性，我们最终确定选用24栅格体系。</p>
+<p>结论：最终确定为24栅格体系，当页面分别为750px、1125px时，具体栅格尺寸如下：</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385485" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-9.jpg" width="1080" height="873" /></span></p>
+<h4><strong>Step4：确定「前端实现方式」</strong></h4>
+<p>设计确定栅格体系后，前端针对实现方式也进行了梳理。在前端还原设计时，随着移动端技术的发展、系统的更新，我们从Rem适配，转换成采用vw（1% of viewport&#8217;s width）弹性布局方案，这样可以让适配更纯粹的放在CSS处理上。代码设置层面，只需要设置对应设计稿尺寸即可：</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385486" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-10.jpg" width="1080" height="331" /></span></p>
+<h4><span class="auto_menu">栅格运用&amp;延展</span></h4>
+<p><strong>1. 使用场景延展</strong></p>
+<p>在实际运用的过程中，上述栅格体系能够满足绝大部分的使用场景。下图列举了模块作为例子；</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385487" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-11.jpg" width="1080" height="685" /></span></p>
+<p>但是存在一类特殊的情况，有时为了体现更紧密的卡片关系，如果使用6px就会出现间距过大的情况。例如下图中的单品紧凑布局。由于6px间距过大，导致内容关系并不紧密，略显疏离。基于此种的紧密关系，我们也试验了槽宽为2px的视觉效果。如下图所示。</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385488" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-12.jpg" width="1080" height="685" /></span></p>
+<p>对比后发现，2px的间距更能传达信息间的关系。</p>
+<p>基于这种场景，我们对栅格体系进行了场景延伸，扩展了紧密关系、宽松关系2套间距。其中宽松布局适用于绝大多数场景，紧凑布局适用于卡片设计中紧密内容布局的场景。</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385489" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-13.jpg" width="1080" height="734" /></span></p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385490" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-14.jpg" width="1080" height="437" /></span></p>
+<p><strong>2. 前端布局沉淀</strong></p>
+<p>结合确定的栅格体系，前端将不同的布局沉淀到代码中，在固定左右留白间距的前提下，除了适配两套体系，还增加了其他布局拓展。</p>
+<p>基础布局：24栅格布局，可任意设置每列栅格数。前端展示效果如下。</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385491" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-15.jpg" width="1080" height="416" /></span></p>
+<p>每列的宽度符合24栅格标准，前端可以方便的设置每列布局栏数（1-24），边界落在栅格基线上。同时每列内部可以控制右侧间隙以及分割线，来实现分隔。一般来说，视觉都会有间距，不会多有的内容无间距排列，基于此，我们从基础布局演变出以下几种常用布局：</p>
+<p>宽松布局。在基础布局上，每列增加内部间隔。如下图所示：</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385492" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-16.jpg" width="1080" height="407" /></span></p>
+<p>以一行2的布局（col12）为例，可以看到，加上右侧6px的间隔，和基础布局中的一行2宽度是完全吻合的。</p>
+<p>紧密布局。将a版本中的间距换成border（分割线），如下图所示：</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385493" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-17.jpg" width="1080" height="412" /></span></p>
+<p>混合布局。一行中每列栏数不相同，每列分隔以分割线实现。如下图所示：</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385494" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-18.jpg" width="1080" height="273" /></span></p>
+<p><strong>3. 栅格体系是启发，而不是限制</strong></p>
+<p>有些设计师会觉得，如果栅格定义的非常死了，是不是就没有创新的空间了。其实并非如此。栅格系统只是一种布局辅助工具，可灵活根据实际项目需要在整体或局部合理应用。例如活动会场中，出现了IP类的重氛围会场，这时其实没有必要非要延续2等分/4等分的做法，可以回到24栅格框架，进行更不均等的布局划分，也是在栅格的框架之内，进行创意的表达。</p>
+<h4><span class="auto_menu">优化效果</span></h4>
+<p>通过确定栅格，让布局变得有规律可循，对统一性确实有非常大的提升。下面两个图为栅格定义前和定义后的效果，大家可以感受下。</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-385495" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dc-20200820-19.jpg" width="1080" height="685" /></span></p>
+<p>以上就是我们关于栅格的思考，希望能够给到大家启发，也欢迎互相交流学习。</p>
+<p>更多栅格系统文章：</p>
+<p>[link https://www.uisdc.com/layout-design-of-grid-system]</p>
+<p>[link https://www.uisdc.com/responsive-design-2]</p>
+<p>欢迎关注「京东设计中心JDC」的微信公众号：</p>
+<p><span class="img-zoom"><img alt="如何定义栅格？来看京东的实战案例！" class="alignnone size-full wp-image-260728" src="https://image.uisdc.com/wp-content/uploads/2018/02/uisdc-jd-20180219-1.jpg" alt="需求太多怎么评审？来看京东内部的实战案例！" /></span></p>
+➜用一篇超全面的文章，帮你完整梳理哥特风格发展史
+https://www.uisdc.com/gothic	60292
+<p>哥特风格盛行于12世纪到15世纪之间，论江湖地位，仅次于老大哥古罗马风格，在谈罗马风格那一期内容时候我们说过，罗马风格本身应该划分为比较纯粹的「古罗马」（公元1世纪—公元9世纪）及变种后的「罗曼式」（公元9世纪—公元13世纪）风格。</p>
+<p>上期回顾：</p>
+<p>[link https://www.uisdc.com/ancient-roman-design-style]</p>
+<p>罗曼式风格是一种摄取地方特色及结合宗教需求而演变出的过渡风格，所谓过渡风格就是其风格特征不够集中、不够突出、很多时候不好归纳，因而紧接其后出现的哥特并不是什么全新事物，某程度而言被视为针对罗曼式建筑某些问题提出的一种解决方案，在完善罗曼式建筑过程中形成自己独树一帜的风格。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386014" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-1-1.jpg" width="900" height="585" /></span></p>
+<p>△ 过渡性的「罗曼式」建筑风格</p>
+<p>比方哥特建筑采用轻薄镂空的墙壁取代了罗曼式建筑那种带有少量窗口的厚重墙壁，教堂一类的建筑更是习惯营造出独特的鼓舞人心的采光效果取代罗曼式教堂那种半明半暗的氛围，所以不要误以为哥特建筑都是阴暗的，其实这是一个误区，哥特风格具体还有哪些特点我们会在后面谈到。</p>
+<p>在了解艺术风格时候大家务必注意两个名词，分别是共时性及历时性，意思是风格演进过程中不存在切断式更替，比方哥特风格出现后不表示罗曼式建筑就不再产生，而是先一起共存，然后慢慢被其中一者占据主流，但也不表示另一者将完全消失，所以当前大家看到所谓的风格特点与风格存在的时段都是后世研究者方便大家理解而总结出来的。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386015" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-2-1.jpg" width="900" height="585" /></span></p>
+<p>△ 哥特建筑内部</p>
+<p>我们首先谈一下哥特风格的起源。</p>
+<h4><span class="auto_menu">起源</span></h4>
+<p>话说公元一世纪前后罗马帝国诞生了基督教，发展过程可谓颠沛流离，直到公元4世纪罗马贵族也信奉基督，随后西罗马覆灭了， 以君士坦丁堡（如今为土耳其伊斯坦布尔）为首都的东罗马将基督教定为国教，发展出完整的基督教祭拜仪式，由此产生出影响此后长达一千年整个中世纪的基督教艺术，史称「拜占庭艺术」。</p>
+<p>由于东罗马疆域更多集中于亚非两洲，所以拜占庭艺术基于古罗马风格，结合了叙利亚、埃及及小亚细亚等地方艺术，具有浓厚东方色彩，比方装饰性与抽象性图纹，同时发展出一种以马赛克镶嵌的教堂装饰形式，他们最大的取向首先基于功能，就是如何更好的用艺术服务宗教，艺术不是他们的终极目的，而是一个结果。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386016" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-3-1.jpg" width="900" height="585" /></span></p>
+<p>△ 拜占庭艺术</p>
+<p>所以漫长的中世纪里大量出现的新建筑就是教堂，这些教堂吸收了罗马帝国时期的拱结构，然后发展出祭坛及朝向祭坛的引道，发展出修道院，发展出配合空间的浮雕，而且以往罗马那种巨大完整的穹顶被分为不同结构向上的小穹顶。</p>
+<p>并且这些教堂喜欢将拱的概念一层一层往上堆叠，他们的目的很单纯，就是希望叠得越高就越接近上帝，所以更进一步发展出了矗立的尖顶与塔楼，此时，哥特风格便基于拜占庭艺术开始隆重登场，而高耸与尖顶首先成为哥特最典型的形式特征。</p>
+<p>根据历史记录，12世纪初法国巴黎地区的圣德尼修道院（Abbey Church of Saint-Denis）的重建被视为哥特式建筑系统的起源。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386017" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-4-1.jpg" width="900" height="585" /></span></p>
+<p>△ 圣德尼修道院</p>
+<p>这个修道院创造出一种新的建筑空间，有意识的通过采光运用制造室内膨胀感及垂直张力，将教堂内部链接进行最大程度的减少，空间变得通透明亮，那到底是通过什么方式实现呢？我们来了解一下哥特风格的几大特点。</p>
+<h4><span class="auto_menu">特点</span></h4>
+<p>哥特风格基于拜占庭艺术的基础而形成，盛行时期被历史称为「黑暗中世纪」，因为长达近一千年的时间里发生太多不愉快，比方历时近200年的十字军东征，可怕的黑死病瘟疫等。所以哥特风格在后世印象中包含更加复杂的意象，比方恐怖、黑暗、绝望、孤独等，但其实最初的哥特更多象征了庄严、华丽、神圣及崇高。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386018" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-5-1.jpg" width="900" height="585" /></span></p>
+<p>△ 中世纪黑死病惨状记录</p>
+<p>而且哥特风格虽然基于建筑产生，但同时在文学、绘画、雕塑、音乐、服装等领域都有所表现，大部分时候我们谈论某种风格时候都像一种文化形态存在，古典风格中尤其明显，当某个时期盛行某种艺术形式时，该时期的大部分事物风格都会以此风格命名。</p>
+<p>除了前面谈及的高耸、尖顶，哥特建筑还发展出几种特有建筑结构，这些结构成为大家鉴别哥特风格的主要参考，分别是「尖拱」、「交叉肋拱」、「飞扶拱」，合称「哥特三件套」。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386019" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-6-1.jpg" width="900" height="585" /></span></p>
+<p>尖拱无疑是基于罗马圆拱变化出来的，目的是为了向上发展垂直结构，所以为了巩固尖拱的向上稳定性，再发展出交叉肋拱，就是尖拱直接交叉彼此支持，以实现高度增加，这些结构一般都安排在教堂内部，看起来就像一把伞子里的支架，有时候多到让人眼花缭乱，但内部空间因此可以支撑得非常高。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386020" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-7-1.jpg" width="900" height="585" /></span></p>
+<p>△ 哥特建筑内部的尖拱</p>
+<p>前面说过，当时的宗教负责人想法单纯，就是认为建筑越高越能接近神明，所以尖拱与交叉肋拱还不够，再发展出飞扶拱，就是在建筑外部再搭支架取代墙壁的承重，让建筑「再上一层楼」，通过这些方式最高的哥特教堂建设高度达161米，相当如今的53层楼，比方始建于1377年的德国「乌尔姆敏斯特大教堂」（Ulmer Münster）。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386021" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-8-1.jpg" width="900" height="585" /></span></p>
+<p>△ 乌尔姆敏斯特大教堂的飞扶拱</p>
+<p>飞扶拱的诞生还产生另一大好处，就是墙壁承力更少，可以更加轻薄，所以就可以嵌入采光良好的玻璃窗或者花窗，花窗普遍彩绘了基督教的故事或者圣人画像。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386022" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-9-1.jpg" width="900" height="585" /></span></p>
+<p>△ 哥特式花窗</p>
+<p>哥特的发展其实细分起来经历三个时期，首先是12-13世纪的「早期英式哥特」，这个时期基本以罗曼式建筑为蓝本，比方保留厚墙，喜欢水平拓展，「哥特三件套」也基本形成，代表作品有英国的林肯大教堂（Lincoln Cathedral）。</p>
+<p>随后是13-14世纪的「装饰性哥特」，这个时期的哥特仍旧保留厚墙，而且很少使用飞扶壁，其特点是喜欢在处理拱顶表面时添加装饰形式，并且窗洞的设计当中开始出现几何元素，这些元素开始出现曲线风格，并且产生更多花式的拱，比方葱形拱与剪刀拱，代表作品有韦尔斯大教堂（Wells Cathedral）。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386023" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-10-1.jpg" width="900" height="585" /></span></p>
+<p>△ 韦尔斯大教堂的「剪刀拱」</p>
+<p>最后就是14-16世纪的晚期哥特，史称「垂直式哥特」，垂直主要指喜欢高大的墙面结构，而其它装饰性元素，比方柱体、尖拱、花窗、浮雕则密集的丰富墙面效果，让其整体显得更加雄伟稳重，代表作有剑桥的国王学院礼拜堂（King&#8217;s College Chapel）。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386024" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-11-1.jpg" width="900" height="585" /></span></p>
+<p>△ 剑桥的国王学院礼拜堂</p>
+<p>坦白而言，这些划分已经偏向学术研究，对设计师而言简单了解即可，接下来我们来了解一些典型的哥特风格作品。</p>
+<h4><span class="auto_menu">科隆大教堂</span></h4>
+<p>对于哥特建筑大家耳熟能详的首推巴黎圣母院，因为有「艺术之都」巴黎与法国大文豪雨果的文学作品《巴黎圣母院》相互加持，但其实综合而言，最完美的哥特建筑其实是德国科隆大教堂。（而且巴黎圣母院史太浓之前已经聊过）</p>
+<p>科隆大教堂（Hohe Domkirche St. Peter und Maria）是一所天主教堂，位于德国科隆市而得名，高度世界第三，建筑虽高，整体受力却都在外部，这里自然少不了飞扶拱结构的功劳，大教堂从13世纪起建，一直到18世纪完工，历时足足600年，令人感动，后来还经常修修补补，所以完整贯穿哥特建筑的全部发展过程，因而集成前面谈及的全部哥特主要特征，是几代建筑匠人的努力成果，被公认为哥特建筑艺术与宗教文化的巅峰之作。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386025" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-12-1.jpg" width="900" height="585" /></span></p>
+<p>△ 德国科隆大教堂</p>
+<p>远着科隆大教堂的时候，极其复杂的外部结构让人眼花缭乱，感觉很密集，但走近又发现其实能清楚看到那些结构非常有规律而且精细，如果将科隆大教堂表面装饰的那些复杂浮雕图案解构开来，发现这些局部细节竟然都是对称的，每一个复杂浮雕都由简单形体反复堆叠而成，这也哥特建筑的手法之一。</p>
+<p>设计师行头里有个名词叫「雕米」，形容花很多时间去执着一些细节，直到满意为止，所以科隆大教堂就活像上帝借了人间工匠之手进行雕米，不然怎么要花6个世纪那么长的时间。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386026" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-13-1.jpg" width="900" height="585" /></span></p>
+<p>△ 科隆大教堂局部</p>
+<p>我们在当代已经拥有民用无人机与谷歌卫星地图，所以能轻松鸟瞰一些伟大建筑，假设从上空俯视科隆大教堂就会发现一个有意思的事情，其实这也是中世纪大部分哥特教堂的共同特征，就是看到一个十字架形态，这也是当时人们理解的「上帝视角」。这忽然让我想到《未来简史》里的一句话：「人类越来越接近神。」大家可以结合科技发展细细品味。</p>
+<p>教堂内部自然少不了宏大透光的空间，净高有40多米，这里我们要谈一个典型哥特式的柱子结构，就是由尖拱与交叉肋拱组合而形成的「束柱」，大家可以理解为一扎花的模样，我们如果在哥特教堂内去看顶部，发现柱子像是一支支花茎束扎而成，彼此交融，组成一斜向线条图案，整个空间有丰富的线条表现艺术。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386027" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-14-1.jpg" width="900" height="585" /></span></p>
+<p>△ 哥特的束柱结构</p>
+<p>室内也陈列了不少雕塑与绘画，基本都以宗教故事为主题，另外最值得一看的是花窗，科隆大教堂的花窗正是「装饰性哥特」时期的那种带有曲线几何装饰的形态，而且玻璃彩绘技术炉火纯青，基本上每一个主题都是一张优秀装饰画，非常有观赏性。</p>
+<p>假设你有足够时间到这里呆着，科隆大教堂就是一座完整而细腻的哥特艺术展览馆，从外到内，从空间到平面，从雕塑到绘画，是十分全面的「哥特艺术立体教科书」。</p>
+<h4><span class="auto_menu">服饰</span></h4>
+<p>哥特时期的服饰值得一谈，他们同属一种时代，在形式表现特征上是相互贯通的，有一些宗教元素与建筑特征都会出现在服饰上，映衬得特别和谐。哥特时期一般被归纳为12-15世纪之间。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386028" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-15-1.jpg" width="900" height="585" /></span></p>
+<p>△ 哥特时期的服饰</p>
+<p>哥特时期的服装首先基于罗马服饰的演变，无论男女都喜欢斗篷、筒形外套还有长袍一类装束，因为宗教发展的关系，颜色选择上倾向了深色系，显得更庄重严肃，穷苦人家一般纯色为主，结构简单，而贵族则相对复杂，图形纹理的装饰更多。</p>
+<p>这个时期比较有意思是帽子与鞋子，比方一种叫「夏普伦」的帽子，其帽子尖细长不一，普通的到脖子、后背，夸张的可以垂到接近地面，其设计的动机不明，特别像蝌蚪的尾巴，因而史太浓喜欢叫它「蝌蚪帽」，坦白说，这种帽子带起来绝对的阴阳怪气。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386029" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-16-1.jpg" width="900" height="585" /></span></p>
+<p>还有一种帽子叫「汉宁」，明显也是一种音译，这种帽子圆锥形，跟哥特建筑的形态可以呼应，史太浓喜欢叫它「生日帽」，一般女性佩戴为主，所以顶部还会添加纱布装饰。</p>
+<p>其实哥特时期女性的头饰可谓特别丰富，我们在一些历史资料中可以看到蛮多让人大开眼界的设计，比方在两个分开的发结上罩上网，然后网再用金属丝固定，固定后在其上面再进行修饰，比方增加披纱或者金属饰品，用如今的词汇形容就是浮夸。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386030" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-17-1.jpg" width="900" height="585" /></span></p>
+<p>接下来我们看看中世纪着名的尖头鞋，鞋子很窄，一般采用皮革制作，尖部会有填充物，或者采用铁丝来加固定型，这种鞋子偶尔我们也会在影视剧中看到，其实属于一种典型形式大于功能的设计，据闻从中世纪的法国开始流行，然后慢慢全欧洲流行，也是设计动机不明，是典型的形式主义。</p>
+<p>这种鞋子虽然不实用，但其实是一种划分阶层的标识物，比方平民一般穿半尺长的，中等阶层可以穿一尺，王室就更离谱，可以去到两尺，所以为了方便行走，他们会将鞋尖绑到膝盖上，形态可谓十分滑稽。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386031" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-18-1.jpg" width="900" height="585" /></span></p>
+<h4><span class="auto_menu">启示</span></h4>
+<p>哥特风格其实在近现代设计发展中戏份占比都很重，比方18世纪时期英国「新古典主义」中就出现「新哥特主义复兴」，代表作品有英国议会大厦（Houses of Parliament），还有19世纪「工艺美术运动」中威廉莫里斯主张的「学习哥特」，都一定程度还原了哥特风格中的特质与精神。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386032" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-19-1.jpg" width="900" height="585" /></span></p>
+<p>△ 英国议会大厦</p>
+<p>而在当代，哥特跟古罗马风格都已经符号化，哥特象征了一种「暗黑系文化」，像前文提及的，其呈现的意象多数为诡异、恐怖、孤寂、黑夜、颓废等，但正因为如此，反而让其获得很好的应用，比方21世纪初年轻人在QQ空间装潢中流行的一种称之为「非主流」的亚文化正是哥特艺术的一种表现。</p>
+<p>又比方哥特电影，其源于哥特文学与哥特音乐，主题一般与宗教、吸血鬼、古堡等元素相关，其布光、服饰、场景、妆容都大部分还原自中世纪，所以这些意象很多时候源自几种同时代存在的标签的相互融合，彼此之间产生共振式的情感关联。</p>
+<p>代表作品有《僵尸新娘》、《剪刀手爱德华》与《夜访吸血鬼》等，优秀的电影工作者在创作中还赋予了哥特艺术一些时代特质，比方爱德华的奇幻情节，以上几个电影强烈推荐大家看看。</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-386033" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-20-1.jpg" width="900" height="585" /></span></p>
+<p>△ 动画电影《僵尸新娘》海报</p>
+<p>同样的应用还有首饰设计、空间装潢及平面艺术等，不管在什么载体，其特征万变不离其宗，属于特别容易鉴别的风格，所以哥特艺术并没有离我们远去，反而与时俱进，成为当代设计艺术中的重要养分。</p>
+<p>谢谢各位，我们下期再会！</p>
+<p>欢迎关注作者的微信公众号「设计史太浓」：</p>
+<p><span class="img-zoom"><img alt="用一篇超全面的文章，帮你完整梳理哥特风格发展史" class="alignnone size-full wp-image-366265" src="https://image.uisdc.com/wp-content/uploads/2020/03/qrdesignhistory.jpg" alt="辉煌的古罗马设计背后，有哪些值得一提的顶级作品？" width="180" height="180" /></span></p>
+➜让他来告诉你，什么样的书籍设计才值得收藏！
+https://www.uisdc.com/liao-wei	63913
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-384439" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yxs-2020813.jpg" width="720" height="161" /></span></p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385059" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-1.jpg" width="700" height="800" /></span></p>
+<p>或许很多人对「韡」这个字感到陌生，甚至会以为它是一个繁体字，其实它是简体字，读第三声「wěi」。</p>
+<p>廖韡，1983年生，平面设计师，工作范畴包括字体、编排、印刷等平面设计事务。作品曾获选Tokyo TDC、Red dot、Brno、Golden bee、Lahti、Output、ADAA、GDC等国际竞赛，于2011年成立独立设计工作室L/g/s，专注各项视觉设计物制作。</p>
+<h4><span class="auto_menu">获得荣誉</span></h4>
+<ul>
+<li>2009台湾海报新星奖金奖</li>
+<li>2011台湾国际平面竞赛新人奖</li>
+<li>2016金蝶奖银奖</li>
+<li>2016年获Shopping Design杂志选为TOP 100年度最佳设计师</li>
+<li>入选上海设计师俱乐部 50/100 新锐──全球80后100 位华人设计师。</li>
+</ul>
+<h4><span class="auto_menu">设计师观点</span></h4>
+<p>有一次编辑问廖韡说，你认为在一个信息可以快速获取的时代里，什么样的书会令人想要收藏呢？</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385060" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-2.jpg" width="600" height="235" /></span></p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385061" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-3.jpg" width="793" height="600" /></span></p>
+<p>△ 《寄生虫图鉴》</p>
+<p>现在做装帧设计，也要以「销售」的观点去想：当书在网络上售卖时，要如何为一本实体书附带额外的价值呢？比如《寄生虫图鉴》这本书，在设计时专门为它配有一个书盒与海报，通过这些方式让书带有特殊文化感，不再和过去一样，只是文字的载体。除了书盒与海报外，还能在书的结构上做改变，例如分册等，这都是提升书籍额外价值的方法。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385062" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-4.jpg" width="889" height="598" /></span></p>
+<p>值得一提的是，像现在，我们去很多咖啡厅或是别的休闲场所，都能看到纸本书籍被摆出来当成一种美学的陈设；这就是装帧设计能赋予书的新可能性。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385063" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-5.jpg" width="1080" height="610" /></span></p>
+<p>对喜欢纸本书的人来说，会有一个乐观的想法，只要社会一直推广设计美学，书就不会消失。而且，近年许多设计展览、媒体的出现，都让大众有更多美学能力，去解读设计师提供的视觉语言，出版社见到大众审美的成长，也会愿意把话语权交给设计师，去尝试各种各样的设计。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385064" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-6.jpg" width="900" height="600" /></span></p>
+<p>△ 书盒与复刻出来的信件</p>
+<p>比如《私密信件博物馆》这本书，廖韡说：在书之外，我特别设计了一个书盒，像寄来的包裹一样，里面装着从书里复刻出来的历史信件，和一封真的可以寄出去的空白信。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385065" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-7.jpg" width="600" height="135" /></span></p>
+<h4><span class="auto_menu">作品解析</span></h4>
+<p><strong>1. 冰能</strong></p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385066" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-8.jpg" width="962" height="800" /></span></p>
+<p>《冰能》这本书主要描述的是作者求学的经历，廖韡说：经过与编辑实际的讨论过程中发现，很多人有着类似的求学背景，也都经历过论文写作的惨烈时光，而学术圈的论文文化，与本书中的许多描述有异曲同工的微妙之处，所以我们很快的就将主视觉定调为「类论文」，书封也是以论文的形象出现的。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385067" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-9.jpg" width="647" height="580" /></span></p>
+<p>而「冰能」二字以台语发音会有「槟榔」的意思，在净白的冰能与通俗的槟榔之间，廖韡决定利用封面与封底的互相依存关系传递时间因果，在书籍的内封处摆上一颗几何构成的抽象槟榔。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385068" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-10.jpg" width="719" height="627" /></span></p>
+<p>封底则是咀嚼文字后剩下的残渣，以冰能（槟榔）的汁液喷洒而成，无需添加文字。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385069" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-11.jpg" width="900" height="600" /></span></p>
+<p>书名以素面打凸在啤酒纸上，隐晦的露出一角，传达冰能另一个处于想像中的洁净层次。层次在冰能与槟榔之间，在写实与荒诞两侧，在论文与诗里面。</p>
+<h4><span class="auto_menu">不同版本的我们</span></h4>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385070" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-12.jpg" width="831" height="800" /></span></p>
+<p>其实我们在生活中都常想着：「早知道就……」，每个路口的决定会影响接下来的方向，只是人生是单线道，无法得知不同选择后的结果，而《不同版本的我们》这部小说就是完成这份妄想，将不同的人生版本浓缩在单一的纸本里。讨论之初，编辑提出了完成这份想像，也就是双版本的概念，同样的文本内容被不同的视觉包裹，很切合书中的主题。而这两个版本，分别命名为「初始」与「转捩」。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385071" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-13.jpg" width="1064" height="800" /></span></p>
+<p>△ 「双面翻折的书封」</p>
+<p>但在双版本中廖韡希望维持系列性，有共同的元素才得以构筑并形成不同版本这件事情，因此决定以一张大海报，两面翻折的概念作为装帧上的主要结构，读者可以在同样的阅读过程中获得不同版本的感官变化，视觉一体两面，让读者实际感受到不同版本的体验。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385072" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-14.jpg" width="1078" height="800" /></span></p>
+<p>结构确认后，编辑提出了一些故事情节与场景提案，相同的人物可能在不同的场域发生不同事件，带点时光平移的概念，因此在「初始」版本中廖韡将故事的三个不同起端合并在一个空间内，并以带有手感描绘的插图带来些异国风格，刻意保留些许草图笔触与擦痕，是设计师对于版本追求留下的痕迹。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385073" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-15.jpg" width="1080" height="800" /></span></p>
+<p>相同的插画风格也延续进了「转捩」的版本中。</p>
+<h4><span class="auto_menu">创意从无到有</span></h4>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385074" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-16.jpg" width="395" height="600" /></span></p>
+<p>整体装帧上舍弃一般书衣的配置，改为采用高书腰的类书衣作法，另外考虑到本书功能性上的特点，选择灰卡作为内封，在多次翻阅后依然可以耐看且兼顾实用性。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385075" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-17.jpg" width="839" height="800" /></span></p>
+<p>廖韡说：在开始设计时就与编辑达成共识，打算将它营造成开本轻薄短小但内容精彩的创意小书，在内页的版面配置即构思了许多细节，包括留白较多的版型规画（留给读者思考空间），双语对照的编排方式（更接近原语意）以及全新的创意插画项目（从视觉思考方向帮助读者吸收）。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385076" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-18.jpg" width="422" height="600" /></span></p>
+<p>△ 「用英文书名做的标准字」</p>
+<p>因为是讲创意的经典书籍，所以我们希望将设计回归到个比较纯粹的层次，来凸显创意的本质。因此在封面直接使用英文书名的字母做标准字的设计，降低颜色与线条的干扰来做所谓本质性的设计，让设计与书的内涵更为贴近。</p>
+<h4><span class="auto_menu">F</span></h4>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385077" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-19.jpg" width="302" height="421" /></span></p>
+<p>△ 「用立方体游戏来隐喻人生」</p>
+<p>《F》全书故事分成六小篇，每篇各有一位主角，主角之一的大哥马丁最爱玩的魔方也有六个面。于是廖韡决定用立方体游戏来隐喻人生，在寻找正确组合方式的过程中，若是一个不小心转错了一次，极可能找不回方向，仿若人生中因一个念头，走错了一步路，进而导向令人意外的失控局面。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385078" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-20.jpg" width="800" height="533" /></span></p>
+<p>魔方主色选择了萤光绿，一种张扬又神秘的色彩，并且跳跃式的仅做部分区域的填色，避免太过细腻的描写而将故事给说白。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385079" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-21.jpg" width="800" height="533" /></span></p>
+<p>△ 「刻意增大字距」</p>
+<p>编排时刻意将推荐人与文案的字体间距放得很松，让每个文字在保持阅读连贯性的状态下，有如颗粒状地散落在书腰上。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385080" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-22.jpg" width="402" height="478" /></span></p>
+<p>△ 「倾斜的F与魔方的透视方向一致」</p>
+<p>方块的视觉构成方式也呈现在书名F的字体造型设计上，倾斜倒放的F与魔方互相落在封面上，具有类似的透视方向，相互制衡却也融为一体，让相仿的视觉元素构成相异的功能性物件，在现实与几何间摆荡游移。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385081" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-23.jpg" width="800" height="533" /></span></p>
+<p>相仿的概念也同时延伸进内封，以单色营造出不同深浅的层次，与立体的F内外交叠，在虚与实的空间中变换交错，如人生一般。</p>
+<h4><span class="auto_menu">大岛小岛</span></h4>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385082" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-24.jpg" width="311" height="452" /></span></p>
+<p>廖韡说：记得初收到《大岛小岛》稿件时，对作者廖鸿基特殊的描写方式留有深刻的印象，我希望将这样的写作风格带入进封面当中。书名有「岛」但图像不见「岛」，仅取书名与抽象元素搭配构成，呼应文体的准确与迂迴。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385083" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-25.jpg" width="657" height="467" /></span></p>
+<p>书衣上的标准字常在复古广告中出现，以夸张口吻宣传的粗圆体字型进行复刻，重新描绘一个属于这座岛的文字记忆。在描绘上刻意加粗笔划，并在收尾处添加略为不规则的转折，让整体字型呈现出「人为」的状态，并透过各种不同粗细的对比，找出适合在书衣上呈现的灰度与组合。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385084" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-26.jpg" width="800" height="533" /></span></p>
+<p>△ 「萤光圆点象征海洋幻灭的泡沫」</p>
+<p>图像视觉选择以象征海洋幻灭泡沫的萤光圆点，使其散落在书名四周，彷若一个个寓言故事，切合书中的篇篇章节，也增加了书封张力与故事性。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385085" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-27.jpg" width="717" height="533" /></span></p>
+<p>内封的设计则是将作者廖鸿基所拍摄的一张海岛照片旋转90度，营造一种在海洋、岛屿与白云的日常下，仍有迥异的一面。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385086" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-28.jpg" width="689" height="800" /></span></p>
+<p>内封以黑白色调处理，相较于书衣的轻盈，更能在内封处呈现出《大岛小岛》文字中所传达的孤寂。</p>
+<h4><span class="auto_menu">点与线</span></h4>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385087" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-29.jpg" width="713" height="600" /></span></p>
+<p>为了展现出作者缜密又厚重的作品质感，廖韡一开始就决定在标准字上营造出浓厚粗重的氛围，因此刻意放大了标题的字号。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385088" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-30.jpg" width="1080" height="623" /></span></p>
+<p>△ 「以线段构成人形」</p>
+<p>《点与线》的故事是从一对在日本九州殉情的恋人开始的，所以廖韡在主视觉里融入「线」的元素，且以线段的接续，逐步构成了人形，以描绘出事件的起始点「殉情尸体」的视觉意象。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385089" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-31.jpg" width="622" height="600" /></span></p>
+<p>里封更精确的截出人形，分别放于里面的封面与封底处，彷彿呼应着作者从点到线、从线到面，层层将人性剥离开来。</p>
+<h4><span class="auto_menu">寄生虫图鉴</span></h4>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385090" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-32.jpg" width="194" height="323" /></span></p>
+<p>△ 「刺眼的黄色表示在看到寄生虫时产生的不适感」</p>
+<p>廖韡说：该书虽名为图鉴，但在看到书中那些富有趣味性的插图、用词及文句描述后，觉得书设计出来后不应该是方正严肃又权威的，所以在开本的选择上放弃了图鉴常用的规格，改用了略为修长瘦高的比例，略为刺眼的黄色则是在观看寄生虫图像时，所产生的那一丝不适感的心里表现。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385091" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-33.jpg" width="338" height="306" /></span></p>
+<p>△ 「以躯干重组使寄生虫彻底成为未知的未知」</p>
+<p>考虑到寄生虫是一种特殊次元的存在，可能以原始形态存在也可能变异，因此以躯干重组作为主要操作手法，透过方框切割寄生虫的不同部位，微观放大后再进行状态组合，彻底成为未知世界中的未知，这样的形象也成为了本书的主视觉。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385092" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-34.jpg" width="600" height="169" /></span></p>
+<p>标准字因版型的问题，所以设计成了稍窄的比例，宽度略缩、重心拉高，整体字型呈现瘦高的视觉感受。</p>
+<h4><span class="auto_menu">口译人生</span></h4>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385093" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-35.jpg" width="426" height="600" /></span></p>
+<p>口译是一门专业的工作，不仅只是单纯语言间的转换，更是人与人之间的桥梁。因此，廖韡觉得视觉元素并不需要刻意强调口语转译或艰涩的技巧，而是以「人」当成主要的视觉元素，借此表达口译不仅是沟通的行为，也延伸人类行为的表达。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385094" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-36.jpg" width="800" height="533" /></span></p>
+<p>△ 「以「人」当成主要的视觉元素」</p>
+<p>在图像绘制方面尝试各种不同笔触风格，决定以简约如同彩带般的笔触线条与人的五官交错在画面中，不同几何形的聚散离合，为视觉的张力来源。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385095" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-37.jpg" width="746" height="600" /></span></p>
+<p>版面在布局上以图像为主轴，文字放在线框里，尽可能减少画面的复杂程度与降低视觉干扰，仅保留书名与作者名等最低限度的信息。整体而言，书封呈现「简约纯粹」的风格，借此反映本书作者长井鞠子强调的理想中口译员应有的「真切平实」。</p>
+<h4><span class="auto_menu">老杂时代</span></h4>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385096" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-38.jpg" width="654" height="436" /></span></p>
+<p>△ 「减少多余的装饰，仅透过「功能性」的需求去设计。」</p>
+<p>所谓的「曾经」，已逐渐被遗忘在便利快速的生活中，而《老杂时代》的作者走遍台湾，记录这些杂货店的样貌，无论是摄影或文字，均详细地写下这仅存的风景，因此希望减少多余的装饰，仅透过「功能性」的需求去设计。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385097" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-39.jpg" width="618" height="800" /></span></p>
+<p>△ 「坐在店前的老板，仿佛带着读者静静的站在店家门口。」</p>
+<p>封面以影像为主，主图刻意放大成为主体，图上配置仿旧扁长、斑驳，粗细对比分明的美术字，搭配复古装饰线，与封面图片映衬出时代的质地。图片是杂货店的门口以及坐在店前的老板，仿若日常风景一般带着读者静静的站在店家门口。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385098" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-40.jpg" width="635" height="800" /></span></p>
+<p>内文版型透过单色人物头像、绕图排文、花式分隔线等具有时代色彩的元素，呼应营造整体风格，将全书的重心交给得来不易的文字与影像。</p>
+<h4><span class="auto_menu">令人怀念的小学图鉴</span></h4>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385099" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-41.jpg" width="840" height="600" /></span></p>
+<p>△ 「复古的美术字与细腻的插画形成视觉区隔。」</p>
+<p>《令人怀念的小学图鉴》，浏览书中朴实而带着趣味性的插图时，仿佛掉落进了时光机器中，因此，设计师很快便决定将封面大部分的画面留给插图，并绘制了一组复古的美术字体搭配。文字笔画粗厚蜿蜒，错落在视觉中央，与细腻的插画形成视觉区隔。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385100" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-42.jpg" width="807" height="600" /></span></p>
+<p>△ 「书衣展开，画面的安排仿佛时光轴一般」</p>
+<p>书衣展开，设计以仿旧校刊般的版面切割来整合文字与插图，作译者名与日文名称都成为了旧刊物的一部分。画面安排穿越书嵴，从封面延伸到封底，从桌面小物到学校场景，一种微观至放大的过程，也是顺应时光轴线的另一种延伸安排。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385101" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-43.jpg" width="800" height="533" /></span></p>
+<p>书腰包裹在单色书衣上，以对比强烈的红色为底，刻意放大数字压在白色方块上，仿若运动会上的号码布，让书腰除了发挥功能性外，也是抢眼的焦点之一。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385102" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-44.jpg" width="408" height="600" /></span></p>
+<p>△ 「内封使用牛皮纸，温厚而质朴」</p>
+<p>内封挑选了牛皮纸，温厚而质朴，以单色黑墨复刻出你我都曾经书写过的通信簿，拿在手上也能营造出趣味性，不知情的家人朋友路过可能会疑惑：你怎么津津有味地看着谁家的家庭联络簿呢？</p>
+<h4><span class="auto_menu">美术馆，原来如此</span></h4>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385103" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-45.jpg" width="733" height="555" /></span></p>
+<p>廖韡说：《美术馆，原来如此》一书的书封概念源自于我在师大美术研究所期间修习过的，美术馆相关选修课程。当时教授提到美术馆其实就是一个容器，必须因应不同的美术类型，宽广地包容与展现。因此「白色墙面」与「视觉反射的包罗万象」很快就成为这本书的设计出发点。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385104" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-46.jpg" width="421" height="609" /></span></p>
+<p>△ 「以雷射锡箔烫压制作，让这块区域仿若一面镜子」</p>
+<p>以「作品之镜」为主轴，本书以简约的方式呈现，透过浅色版面形塑美术馆低调的展示墙面，书封中央方块作为美术馆的作品，以雷射锡箔烫压制作，让这块区域仿若一面镜子，反射出周遭环境的千变万化，进而投射为各类美术作品的形形色色与策展概念。当读者拿起这本书时，就如同站在作品前，由此进入美术馆的世界！</p>
+<h4><span class="auto_menu">森林秘境</span></h4>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385105" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-47.jpg" width="252" height="377" /></span></p>
+<p>△ 「以「科学感＋文学性」作为设计的主轴。」</p>
+<p>《森林祕境：生物学家的自然观察年志》，此书趣味之处在于，作者在一平方尺的土地上持续性的观察，是一种对于视角的微观放大，也是逻辑的重新组成。廖韡与编辑沟通后，打算以「科学感＋文学性」作为设计主轴。这也是我们想为读者赋予的想像，不要冰冷的科技感但要保持理性，再透过文学演绎包裹视觉。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385106" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-48.jpg" width="500" height="333" /></span></p>
+<p>△ 「以复古的西式写实绘图为主体」</p>
+<p>为了避免《森林祕境》成为「动物百科全集」或是「100种可爱植物插画教学」，图像舍弃使用真实照片或过于简化的插图，而以复古的西式写实绘图为主体，是优雅又具有识别度的视觉记号，并以直线细细划分出大小不一的观察区域，是书中描述的方寸之地，也形成一种独特的设计规律。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385107" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-49.jpg" width="665" height="600" /></span></p>
+<p>△ 「内封以日期顺序编列，以方便读者记录阅读日程」</p>
+<p>内封为呼应书中的章节，以日期顺序编列的特质，将一年份的日历作为符号，反印在粗面的灰铜纸上，方便读者书写纪录阅读日程。</p>
+<h4><span class="auto_menu">太阳点名</span></h4>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385108" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-50.jpg" width="431" height="467" /></span></p>
+<p>廖韡说：初读余光中老师的书稿时，对于文字的载体思考了很久，尤其书中丰富的描绘，有景有物，文体多样。在思考的过程中，我希望可以找到一个广泛的符号，不刻意对于某些特征元素直接指涉，进而局限了读者想像，而是以一个概念性的说法，单纯却包罗万象。于是想到了太阳。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385109" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-51.jpg" width="800" height="533" /></span></p>
+<p>△ 「以放射状线条和圆圈构成太阳符号。」</p>
+<p>呼应书名的意念，选择了放射状线条与圆圈所构成的太阳符号作为视觉主体，抽象却也具像，返朴归真几乎是每个人年少时都曾描绘过的太阳模样，不会太过写实，却也在经验中约定俗成。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385110" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-52.jpg" width="800" height="533" /></span></p>
+<p>几何线条一黑一金的设定是天地之间的规律，透过两道不同的烫箔工序，让亮黑与金交错相叠，仿若日出与日落，在不同时间场域阅读时，这两道加工会形成相异的光线与反射，演绎太阳色泽的万千光谱，因人而异，因地制宜。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385111" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-53.jpg" width="752" height="600" /></span></p>
+<p>△ 「将书名文字的简约大气延伸至装帧本体」</p>
+<p>在视觉元素的安排上，希望将书名文字的简约大气延伸至装帧本体，以减法作为主要设计执行方向。太阳元素的放射状线条就是视觉集中的落点，挑选了雅致的游明体作为主要字体，只留下书名与作者名自然落入，干净而显眼。</p>
+<h4><span class="auto_menu">佣兵队长</span></h4>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385112" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-54.jpg" width="500" height="333" /></span></p>
+<p>一阶踩你、一阶踩要、一阶踩去……这一段文稿的断句方式特殊又充满吸引力，极有画面感，就在一阶一阶、一步一步的节奏中，那个尖锐的断头台刀锋与地下室阶梯，一体两面的画面缓缓浮现。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385113" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-55.jpg" width="390" height="563" /></span></p>
+<p>△ 「白森森的刀锋在上，阴暗深沉的阶梯在下。」</p>
+<p>刀锋与阶梯透过图像的反转手法互相结合，若以垂直的视角观察，白森森的刀锋在上，而阴暗深沉的阶梯则在下。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385114" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-56.jpg" width="858" height="600" /></span></p>
+<p>△ 「标题字体刻意收细」</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385115" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-57.jpg" width="865" height="600" /></span></p>
+<p>△ 「封底的文字以阶梯的形式编排」</p>
+<p>文字编排部分尽量收敛而简约，标题字体刻意收细，借由网版反印的特性让黑字更显精瘦异常，反面文案也刻意循着线索，一阶一阶顺势而下，使其成为封底的独特风景。</p>
+<h4><span class="auto_menu">私密信件博物馆</span></h4>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385116" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-58.jpg" width="586" height="800" /></span></p>
+<p>廖韡说：从古至今，书写信件一直是人类传递讯息的重要途径，写信，留下的不仅只是讯息，还有纸张的触觉、笔墨的气味与收折胶贴的痕迹，透过书名讯息将设计拆解成两个主轴：私密信件是隐密的、非量产的、手工感的，而博物馆则带有保存与收藏的经典意涵，希望将两者的特征揉合至《私密信件博物馆》整体装帧之中。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385117" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-59.jpg" width="600" height="408" /></span></p>
+<p>△ 「以盒装的方式包裹投寄」</p>
+<p>历史信件走入现代读者的书柜中，编辑一开始便提出要以盒装的方式包裹投寄，选择以带有怀旧记忆的牛皮纸表贴成型。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385119" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-61.jpg" width="800" height="622" /></span></p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385118" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-60.jpg" width="800" height="533" /></span></p>
+<p>△ 「档案栏印上白墨后，再以金属烫箔」</p>
+<p>「书盒上共有八个不规则的邮戳」</p>
+<p>档案栏先印上层层白墨后，再以金属烫箔，书盒手工贴上特殊刀膜贴纸，相当拟真。书盒上共有八个不规则的邮戳，让此书（包裹）彷彿真的能被寄往某处一般。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385120" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-62.jpg" width="800" height="583" /></span></p>
+<p>为了将各个写信的作者置入装帧当中，内封选择以全书中的签名笔迹罗列编排出来。</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-385121" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yx-20200817-63.jpg" width="725" height="800" /></span></p>
+<p>△ 「配的信件以供读者阅读完后，提笔写下自己的私密信件」</p>
+<p>最后廖韡与编辑共同选出了几封历史信件作为配件，内含搜罗自这个世界的复刻历史信件与神秘空白信纸套组（附信封），期待读者阅读完毕后也提笔写下属于自己的私密信件，与这一百二十五封私密信件一同描述属于我们的美好年代。</p>
+<p>「透过 「内容」 延伸出有趣的设计」，廖韡的每个作品都可见他的用心，从内容出发慢慢摸索设计的方向，「不在于有多复杂的加工，多好的纸张，多复杂的印刷技术，而是有没有选择适合这本书的开本大小，与摸起来适合的纸张与恰当的加工方式。」，平面上的表现固然重要，但对于书籍来说，印刷这一环节也要把控好，因为设计师的想法不光体现在画面上，还会体现在印刷上。选对了纸张与印刷的方式，是可以给作品加分的，所谓技多不压身，对印刷这块感兴趣的可以去了解一下。</p>
+<p>更多书籍装帧设计师介绍：</p>
+<p>[link https://www.uisdc.com/xu-jinwei]</p>
+<p>[link https://www.uisdc.com/lv-jing-ren]</p>
+<p>欢迎关注研习设的微信公众号：「Yanxishe2017」</p>
+<p><span class="img-zoom"><img alt="让他来告诉你，什么样的书籍设计才值得收藏！" class="alignnone size-full wp-image-271254" src="https://image.uisdc.com/wp-content/uploads/2018/05/yxskxsqr.jpg" alt="高手的版式三部曲系列：文字篇" /></span></p>
+➜用超多案例，帮你掌握「左右构图」的排版技巧
+https://www.uisdc.com/left-and-right-composition	64831
+<p>在设计之前，对于设计元素的摆放位置需要有一个大致的构想，这个构想就是构图，它相当于是版式的雏形，有了这个雏形之后，才能开始下一步的细化，只有充分理解构图的意义与作用，排版时才能做到心中有数。</p>
+<p>本期要分享的是左右构图的使用方法，与上一期的上下构图使用方法类似，都是版式设计中比较通用和非常实用的构图形式，适用于各种设计项目。</p>
+<p>[link https://www.uisdc.com/top-and-bottom-composition]</p>
+<p>接下来看看实际应用案例：</p>
+<h4><span class="auto_menu">什么是左右构图</span></h4>
+<p>「左右构图」是将版面分割为左右两部分，或通过设计元素的布局让画面整体呈现出左右的分布趋势，具有平衡、稳定、互相呼应的特点。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-385983" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-1.jpg" width="799" height="692" /></span></p>
+<p>最典型的左右构图由「左图右字」或者「左字右图」两部分构成，图片及文字各占据一部分，形成左右两部分独立的空间，产生良好的阅读体验。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-385984" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-2.jpg" width="800" height="1770" /></span></p>
+<p>当画面缺少图片时，也可以使用文字图形化的方法，占据版面主空间形成画面的主体。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-385985" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-3.jpg" width="792" height="2308" /></span></p>
+<p>左右构图看似比较简单，但是通过精心的编排，也可以使画面具有丰富的视觉效果和良好的设计感。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-385986" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-4.jpg" width="791" height="2336" /></span></p>
+<h4><span class="auto_menu">构图比例</span></h4>
+<p>进行左右构图设计时，可以根据版面内容的信息体量划分画面的空间，常用的版面分割比例有：1:1、1:1.618、1:1.414、1:2、1:3等。在设计时也可以反复进行调整，直到找到最为合适的构图比例。</p>
+<p><strong>1. 1:1分割</strong></p>
+<p>将画面把版面一分为二，形成均等的两份，呈现出对称均衡的版面效果，多用于版面中两部分内容处于并列或对立的关系。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-385987" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-5.jpg" width="1294" height="820" /></span></p>
+<p><strong>2. 黄金分割</strong></p>
+<p>「黄金分割比例（1:1.618）」被认为是最具美感的分割比例，在设计中有意识地运用黄金分割比例进行设计，可以营造出富有美感的版式效果。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-385988" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-6.jpg" width="803" height="2367" /></span></p>
+<p><strong>3. 白银分割</strong></p>
+<p>「白银分割比例（1:1.414）」也是具有独特美感的分割比例，与黄金分割相比，次空间占据的比例更大一些，能够承载的信息量也更多，适用于文字信息量较大的版面。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-385989" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-7.jpg" width="806" height="2406" /></span></p>
+<p><strong>4. 2:1分割</strong></p>
+<p>采用2:1的比例，图片主体在画面中占据主导地位，视觉焦点集中在主空间，阅读信息则放置在次空间。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-385990" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-8.jpg" width="801" height="2473" /></span></p>
+<p><strong>5. 3:1分割</strong></p>
+<p>3:1分割的比例与2:1比例相似，但图片在画面中占据主导地位更强，主要适用于图片比较重要而文字信息较少的版面。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-385991" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-9.jpg" width="802" height="2321" /></span></p>
+<p>通过比例，可以让版面分割更严谨。但没有那个比例关系绝对正确，需要根据画面的项目调性、信息体量、信息功能与图文主体而定。如使用其它比例分割的优秀案例：</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-385992" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-10.jpg" width="1701" height="820" /></span></p>
+<h4><span class="auto_menu">空间调整</span></h4>
+<p>把图文按比例分别编排在版面上下方，是比较严谨规范的构图方式，但是为了避免版面的呆板，可以通过调整版面空间变换出多种编排形式。如以下几个案例：</p>
+<p>缩小图片和文字空间，使留白处形成外空间，增加层次感。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-385993" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-11.jpg" width="606" height="800" /></span></p>
+<p>在主空间上划分出新的空间，这样的手法可以很好让空间具有多变性，也可以让我们的设计更加灵动。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-385994" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-12.jpg" width="802" height="2275" /></span></p>
+<p>使用图片占满整个版面，再运用色块承载文字信息，可以强化与聚集内容，既能保证信息清晰有效的传达，同时也可以增加画面的层次感、提升画面的丰富度。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-385995" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-13.jpg" width="822" height="1955" /></span></p>
+<h4><span class="auto_menu">灵活运用</span></h4>
+<p>上下构图的框架看似比较固定，但是也能通过设计手法，变换出多种编排形式，巧妙破除上下分割的单一性与呆板感。</p>
+<p><strong>1. 曲线分割</strong></p>
+<p>把生硬的直线改为呈现出动态的曲线或斜线进行画面的分割，版面显得更生动活泼。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-385996" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-14.jpg" width="808" height="1666" /></span></p>
+<p><strong>2. 图片裁切</strong></p>
+<p>把方形图片裁切为其他形状，或使用其他形状的图形作为主体，使左右构图没有明显的分割线，也可以呈现出良好的视觉效果。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-385997" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-15.jpg" width="799" height="2003" /></span></p>
+<p><strong>3. 元素串联</strong></p>
+<p>利用图形、色块等元素串联空间，让主次空间建立起联系，具有丰富的视觉效果和良好的设计感。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-385998" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-16.jpg" width="809" height="2269" /></span></p>
+<p><strong>4. 文字破图</strong></p>
+<p>使用文字串联起左右两个空间，破除左右构图版面的单一性。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-385999" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-17.jpg" width="800" height="2456" /></span></p>
+<p><strong>5. 空间留白</strong></p>
+<p>使用留白破除两个空间的间隙，拉开画面的空间感，具有良好的视觉效果。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-386000" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-18.jpg" width="1100" height="800" /></span></p>
+<p><strong>6. 满版构图</strong></p>
+<p>在满版图片的背景上重新进行左右分割构图，可以突破空间束缚，画面更饱满 。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-386001" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-19.jpg" width="840" height="1779" /></span></p>
+<p><strong>7. 图片退底</strong></p>
+<p>把图片主体进行退底处理，重新营造场景，弱化空间的分区。</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-386002" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-20.jpg" width="554" height="800" /></span></p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-386003" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gt-20200824-21.jpg" width="800" height="2416" /></span></p>
+<h4><span class="auto_menu">总结</span></h4>
+<ul>
+<li>「左右构图」是将版面分割为左右两部分，或通过设计元素的布局让画面整体呈现出左右的分布趋势，具有平衡、稳定、互相呼应的特点;</li>
+<li>进行左右构图设计时，可以根据版面内容的信息体量划分画面的空间，常用的版面分割比例有：1:1、1:1.618、1:1.414、1:2、1:3等;</li>
+<li>为了避免版面的呆板，可以通过调整版面空间变换出多种编排形式;还可以通过曲线分割、图片裁切、文字破图等设计手法，变换出多种编排形式，巧妙破除空间分割的单一性与呆板感。</li>
+</ul>
+<p>欢迎关注作者的微信公众号：「艺海拾贝Design」</p>
+<p><span class="img-zoom"><img alt="用超多案例，帮你掌握「左右构图」的排版技巧" class="alignnone size-full wp-image-267186" src="https://image.uisdc.com/wp-content/uploads/2018/04/uisdc-bhsyqr.jpg" alt="用超多案例，帮你掌握「上下构图」的排版技巧" /></span></p>
+➜动效不知如何落地？看完腾讯高手的经验就明白了
+https://www.uisdc.com/dynamic-landing	65428
+<p>一直有很多朋友会问一些关于移动端实现动效的方法，平时也会给大家做一些解答，但是可能没有那么系统性，这次抽点时间总结归纳下这方面的内容，跟大家分享下我日常设计中是如何完成动画实现的。</p>
+<h4><span class="auto_menu">实现动画的方式</span></h4>
+<p>设计输出的方式大概可以分为位图和矢量两种，与常规的图片输出并无太大的差异。位图方式：PNG序列帧、APNG、GIF；矢量方式：Lottie、SVG动画。</p>
+<p><span class="img-zoom"><img alt="动效不知如何落地？看完腾讯高手的经验就明白了" class="alignnone size-full wp-image-385900" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dt-20200823-1.jpg" width="1200" height="500" /></span></p>
+<p>当然除了以设计提供的方式之外，还可以设计完成好demo，开发通过代码进行实现例如：javascript直接实现、SVG（可伸缩矢量图形）、CSS3 transition、CSS3 animation、Canvas动画、requestAnimationFrame由于超出个人能力范畴就不展开讲了。</p>
+<h4><span class="auto_menu">实现动画常用的工具</span></h4>
+<p>实现动画，首先还是得了解有哪些工具可以制作及合成相关的动效，我日常主要使用的工具有Principle、AE、bodymovin插件、iSparta等软件。另外最近准备学习一个新的专门制作svg动画的软件-KeyShape。</p>
+<ul>
+<li>Principle：可以输出GIF、视频等格式；</li>
+<li>AE：可以输出PNG序列，结合插件可以输出GIF等等；</li>
+<li>bodymovin：输出json文件（也就是所谓的Lottie动画）；</li>
+<li>iSparta：使用PNG序列合成APNG、GIF图片格式除此之外；</li>
+<li>Keyshape：主要是可以制作比较强大的路径变换动画，然后输出svg动画格式。</li>
+</ul>
+<p><span class="img-zoom"><img alt="动效不知如何落地？看完腾讯高手的经验就明白了" class="alignnone size-full wp-image-385901" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dt-20200823-2.jpg" width="1200" height="800" /></span></p>
+<h4><span class="auto_menu">格式说明</span></h4>
+<ul>
+<li>PNG序列：以单帧图像呈现，输出后会生成一个序列组的文件夹；</li>
+<li>APNG：实际上是把PNG序列合成一张可动画化的PNG，类似GIF，但相比GIF质量要高，图片后缀依旧是「.png」。</li>
+<li>GIF：可动的位图，但质量较差，压缩到临界值时会出现锯齿边和白边，个人比较不喜欢用。</li>
+<li>Json（Lottie动画）：实际上是一个用代码描述的文档，通过代码描述路径、节点的方式来完成动画效果，与开发实际通过代码实现动画类似，通过bodymovin输出后减少开发实现的时间，提高了开发实现的效率。</li>
+<li>SVG动画：与Lottie的方式比较类似，可以减少开发的动画工作量，可以通过keyshape设计并导出，后缀为「.SVG」。</li>
+</ul>
+<h4><span class="auto_menu">如何输出文件？</span></h4>
+<p>接下来讲解下各个软件输出对应格式的方法，实际上操作并不会太难，动效本身更重要的还是在于创意本身，因此当你把握了这些方式之后可以考虑进行创意设计。</p>
+<p>由于GIF文件多种工具都可以输出，这里就不再作详细说明</p>
+<p><strong>1. PNG序列</strong></p>
+<ul>
+<li>在AE中制作好动画</li>
+<li>通过AE预渲染，然后选择PNG序列，直接渲染出序列帧到本地文件夹</li>
+<li>导出序列帧后需要进行压缩，常用的是tinypng，压缩后较小的文件再进行交付</li>
+</ul>
+<p>具体如下视频</p>
+<p><iframe height=500 width="100%" src="//player.youku.com/embed/XNDgxMjk2NDE1Mg==" frameborder=0 allowfullscreen></iframe></p>
+<p><strong>2. APNG</strong></p>
+<p>如上导出到PNG序列帧，拖拽到iSparta软件中，合成即可。合成时可以选择帧率、循环次数（0为无限循环）、导出质量等。如下视频</p>
+<p><iframe height=500 width="100%" src="//player.youku.com/embed/XNDgxMjk2NDM1Mg==" frameborder=0 allowfullscreen></iframe></p>
+<p><strong>3. Lottie</strong></p>
+<ul>
+<li>AE中需要安装bodymovin的插件</li>
+<li>制作好动画后，在窗口打开插件-bodymovin、</li>
+<li>选择导出的位置，直接渲染一下，即可在本地生成json文件</li>
+<li>插件带有预览能力，但较差。可以在<a href="https://lottiefiles.com/preview">https://lottiefiles.com/preview</a>中进行预览查看</li>
+</ul>
+<p><iframe height=500 width="100%" src="//player.youku.com/embed/XNDgxMjk2NDU5Mg==" frameborder=0 allowfullscreen></iframe></p>
+<p>更多Lottie相关可以前往https://lottiefiles.com/学习，里面有丰富等Lottie动画效果和一些插件下载，去研究下吧</p>
+<p><strong>4. SVG动画</strong></p>
+<ul>
+<li>下载keyshape软件，属于付费软件，可以下载14天试用版</li>
+<li>可以通过图形制作动效，可以设置自动补间</li>
+<li>导出svg文件，导出时可以设置运动是循环或是一次</li>
+</ul>
+<p>建议大家自己下载软件后尝试</p>
+<p><iframe height=500 width="100%" src="//player.youku.com/embed/XNDgxMjk2NDgyOA==" frameborder=0 allowfullscreen></iframe></p>
+<p><strong>5. 格式大小比</strong></p>
+<p>通过试验几种格式的大小大概是排序依次为：PNG序列&gt;APNG&gt;GIF(质量较差)&gt;Lottie / SVG，json文件和SVG动画文件比较接近，因此可以根据实际考虑决定即可，GIF虽然可以压缩到比较小，但是本身图片质量也较差，因此建议慎重考虑。</p>
+<p><span class="img-zoom"><img alt="动效不知如何落地？看完腾讯高手的经验就明白了" class="alignnone size-full wp-image-385902" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dt-20200823-3.jpg" width="1200" height="500" /></span></p>
+<h4><span class="auto_menu">应用案例</span></h4>
+<p>动效在UI设计中的应用场景很多，这里梳理了一下，之前我在项目中尝试过的动效，给大家分享下一些案例，希望可以对大家有所启发。</p>
+<p><span class="img-zoom"><img alt="动效不知如何落地？看完腾讯高手的经验就明白了" class="alignnone size-full wp-image-385905" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dt-20200823-6.gif" width="900" height="600" /></span></p>
+<p><span class="img-zoom"><img alt="动效不知如何落地？看完腾讯高手的经验就明白了" class="alignnone size-full wp-image-385903" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dt-20200823-4.gif" width="900" height="600" /></span></p>
+<p><span class="img-zoom"><img alt="动效不知如何落地？看完腾讯高手的经验就明白了" class="alignnone size-full wp-image-385908" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dt-20200823-9.gif" width="900" height="600" /></span></p>
+<p><span class="img-zoom"><img alt="动效不知如何落地？看完腾讯高手的经验就明白了" class="alignnone size-full wp-image-385904" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dt-20200823-5.gif" width="800" height="533" /></span></p>
+<p><span class="img-zoom"><img alt="动效不知如何落地？看完腾讯高手的经验就明白了" class="alignnone size-full wp-image-385906" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dt-20200823-7.gif" width="900" height="675" /></span></p>
+<p><span class="img-zoom"><img alt="动效不知如何落地？看完腾讯高手的经验就明白了" class="alignnone size-full wp-image-385907" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-dt-20200823-8.gif" width="800" height="600" /></span></p>
+<h4><span class="auto_menu">最后总结</span></h4>
+<p>学习用什么工具导出什么格式的文件只是第一步，更重要的还是如何制造出一个有创意的动效，因此不要过于强调工具，更多应该培养自己思考设计的习惯。</p>
+<p>设计师往期动效案例回顾：</p>
+<p>[link https://www.uisdc.com/tencent-loading-design]</p>
+<p>[link https://www.uisdc.com/3d-icon-design]</p>
+<p>欢迎关注作者微信公众号：「ID设计站」</p>
+<p><span class="img-zoom"><img alt="动效不知如何落地？看完腾讯高手的经验就明白了" class="alignnone size-full wp-image-378287" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-nq-20200702-14.jpg" alt="如何掌握多方案思维设计？用腾讯的Loading案例告诉你" width="180" height="180" /></span></p>
