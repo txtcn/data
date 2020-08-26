@@ -2255,6 +2255,9 @@ http://www.woshipm.com/pd/4147136.html	24440
 <p>而作为产品经理，你们是可以移除这些障碍的一群人，所以请你们去动起来，去让你的产品做无障碍优化，去移除这些障碍；让每一个人都可以在社会里面去实现自我的价值。</p>
 <p>我们研究会的愿景也其实是我个人做这份事业的一个愿景——每个人可以通过科技平等的去享受现代文明。</p>
 <p>我相信这一天终会到来，当然这个中间需要我们非常多的努力，但是有大家在一起参与，我相信这个路程不会太遥远。</p>
+<h3>特别福利</h3>
+<p>结合产品无障碍优化的课程分享，很多产品经理对信息无障碍都有了全面的认识，、作为本次课程的福利，信息无障碍研究会将为大家的产品现状，提供一次免费无障碍程度评测，由服务于微信、QQ、支付宝、淘宝、京东、抖音等产品的视障工程师团队，进行评测，最终将会以评测结果、问题代码、解决方案等形式输出结果给大家。</p>
+<p>评测申请传送门：https://www.wjx.cn/jq/77990108.aspx</p>
 <p>&nbsp;</p>
 <p>作者：杨骅</p>
 <p>本文为【信息无障碍研究会专场公开课】分享整理内容；未经许可，禁止转载</p>
@@ -3360,3 +3363,270 @@ http://www.woshipm.com/marketing/4155449.html	30617
 <p>作者：苗庆显 公众号：老苗撕营销 ，《营销按钮》作者</p>
 <p>本文由 @老苗撕营销 原创发布于人人都是产品经理。未经许可，禁止转载。</p>
 <p>题图来自 Unsplash，基于CC0协议。</p>
+➜如何用Axure画出Web后台产品的面包屑组件
+http://www.woshipm.com/pd/4155562.html	32531
+<blockquote><p>编辑导语：Web后台的面包屑组件用来告诉用户当前页面所处的层级结构，PM一定要了解并学会它的原型画法；本篇文章作者详细介绍了如何用Axure画出Web后台产品的面包屑组件。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4155657" src="http://image.woshipm.com/wp-files/2020/08/8St5Lme03vMLrWSNY9LM.jpg" alt="" width="900" height="420" /></p>
+<p>面包屑的画法不是很复杂，但是有一些技巧可以减少大量的原型工作量；根据作者的经验提供3种面包屑的原型画法，强烈推荐第三种最省时间且便于修改。</p>
+<h2>一、面包屑第1种画法</h2>
+<p>实现原理：每个页面都显示面包屑，那就每个页面画一遍。</p>
+<p>原型地址：<a title="https://e10t7y.axshare.com" href="https://e10t7y.axshare.com/#g=1" target="_blank" rel="noopener">https://e10t7y.axshare.com</a></p>
+<p>1）从默认元件库拖动“文本标签”到工作区合适位置，双击输入页面名称。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/gzl9wO2lurfSym0pzLF4.png" alt="" width="3266" height="1420" /></figure>
+<p>2）从默认元件库拖动“水平线”到工作区合适位置，修改宽度为1000px。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/C7PydqCAXLBzRbqr8BYr.png" alt="" width="3266" height="1420" /></figure>
+<p>3）重复以上步骤，为每个页面设置面包屑。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/0KSJcQX5AtoBQ9eiMThz.png" alt="" width="3270" height="1470" /></figure>
+<p>4）点击“预览”按钮，然后在浏览器中查看原型效果。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/Vv7zRRBy9n3Vxg12stXU.gif" alt="" width="1920" height="1080" /></figure>
+<h2>二、面包屑第2种画法</h2>
+<p>实现原理：每个页面都显示面包屑，那就使用母版然后添加到每个页面，然后根据具体页面进行修改页面名称。</p>
+<p>原型地址：<a title="https://kjqvgg.axshare.com" href="https://kjqvgg.axshare.com/#g=1">https://kjqvgg.axshare.com</a></p>
+<p>1）从默认元件库拖动“文本标签”到工作区合适位置，双击输入文字“页面名称”。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/RomzfJETVOcmHhwaFi0E.png" alt="" width="3268" height="1488" /></figure>
+<p>2）从默认元件库拖动“水平线”到工作区合适位置，修改宽度为1000px。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/uz1i5D0pqYuYeiHJk62I.png" alt="" width="3268" height="1488" /></figure>
+<p>3）同时选择页面名称和水平线，右键点击“切换为母版”，然后设置名称为“面包屑”，点击“继续”按钮。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/92onAA5hLXpX0VL7MIQ7.png" alt="" width="3268" height="1488" /></figure>
+<p>4）在左侧母版区域，右键母版“面包屑”，点击“添加到页面中…”然后点击“全选”，选中“指定新的位置”并设置为(180,105)，最后点击“确定”按钮。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/pcgOqYifnIf5Ko8875dN.png" alt="" width="3264" height="1686" /></figure>
+<p>5）进入到首页，右键母版“面包屑”，点击“脱离母版”。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/1KbxgcJfrS7S3VPRQqQK.png" alt="" width="3264" height="1402" /></figure>
+<p>双击元件“页面名称”，修改成首页。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/gyRdACzYETtDBmQCJFCw.png" alt="" width="3264" height="1402" /></figure>
+<p>6）进入到页面名称1，右键母版“面包屑”，点击“脱离母版”。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/mW1PcLskrVwm7fOFOK4V.png" alt="" width="3264" height="1402" /></figure>
+<p>双击元件“页面名称”，修改成“分类名称1 &gt; 页面名称1”。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/OWwRJXD3r5MBg8XV0puV.png" alt="" width="3264" height="1402" /></figure>
+<p>7）重复以上步骤，为每个页面设置面包屑。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/0eEqoPGp8GVqolTQJ9fk.png" alt="" width="3264" height="1402" /></figure>
+<p>8）点击“预览”按钮，然后在浏览器中查看原型效果。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/m5dKaxpKb3zKdl28GGf8.gif" alt="" width="1920" height="1080" /></figure>
+<h2>三、面包屑第3种画法</h2>
+<p>实现原理：每个页面都显示面包屑，那就使用母版然后添加到每个页面，并且根据函数自动显示相应的页面名称。</p>
+<p>原型地址：<a title="https://geaas2.axshare.com" href="https://geaas2.axshare.com/#g=1" target="_blank" rel="noopener">https://geaas2.axshare.com</a></p>
+<p>1）从默认元件库拖动“文本标签”到工作区合适位置，双击输入文字“页面名称”。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/RIA5VdD2rg6WSjP2RBXT.png" alt="" width="3268" height="1488" /></figure>
+<p>2）从默认元件库拖动“水平线”到工作区合适位置，修改宽度为1000px。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/kWMaxfedPE1IoGIOD7nq.png" alt="" width="3268" height="1488" /></figure>
+<p>3）点击页面名称，右侧边栏切换到“交互”，点击“新建交互”按钮，选择触发事件“载入时”，添加动作“设置文本”，目标选择“当前元件”，点击fx进入编辑文本弹窗，点击插入变量或函数，搜索page然后找到PageName并点击它，最后点击确定按钮。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/ZPTD1ESb77HSy9huJAFI.png" alt="" width="3268" height="1488" /></figure>
+<p>4）同时选择页面名称和水平线，右键点击“切换为母版”，然后设置名称为“面包屑”，点击“继续”按钮。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/t2saVuv2cR8MhSNhmQWP.png" alt="" width="3268" height="1488" /></figure>
+<p>5）在左侧母版区域，右键母版“面包屑”，点击“添加到页面中…”然后点击“全选”，选中“指定新的位置”并设置为(180,105)，最后点击“确定”按钮。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/B4RgvISfpheTF8kvzOqH.png" alt="" width="3264" height="1686" /></figure>
+<p>6）点击“预览”按钮，然后在浏览器中查看原型效果。</p>
+<figure><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/22GTrAw4VVn8OaKw2Lpz.gif" alt="" width="1920" height="1080" /></figure>
+<h3>#相关阅读#</h3>
+<p><a title="如何用Axure画出Web后台产品的菜单栏组件" href="http://www.woshipm.com/rp/4150962.html" target="_blank" rel="noopener">如何用Axure画出Web后台产品的菜单栏组件</a></p>
+<p><a title="如何用Axure画出Web后台产品的编辑详情页" href="http://www.woshipm.com/rp/4143509.html" target="_blank" rel="noopener">如何用Axure画出Web后台产品的编辑详情页</a></p>
+<h3>#专栏作家#</h3>
+<p>浪子，个人微信langzipm，公众号：浪子画原型(langzisay)。专注于Axure原型设计和产品规范。</p>
+<p>本文由 @浪子 原创发布于人人都是产品经理。未经许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
+➜真实案例引发的思考：用户访谈和问卷调查是什么关系？
+http://www.woshipm.com/operate/4155476.html	33878
+<blockquote><p>编辑导语：用户访谈和问卷调查是用户研究最常用的手段，我们再进行问卷调查时，需要进行多方面的准备；特别是在问卷设计这一项，一个好的问卷能带给用户更好的体验感；本文作者对问卷调查做出了详细解释，我们以起来看一下。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4155686" src="http://image.woshipm.com/wp-files/2020/08/8fOtcJ7lYPdQfVI4ZUCB.jpg" alt="" width="900" height="420" /></p>
+<p>大家都知道用户访谈和问卷调查是用户研究最常用的手段，上次做了用户访谈后，我们团队又紧跟着做了一次调查问卷。</p>
+<p>过程中大家对用户访谈和问卷调查关系的讨论非常有代表性，于是想和大家分享一下这次实操经验以及我们的思考。</p>
+<h2>一、讨论&amp;流程</h2>
+<p>问卷调查的流程一般分为四步：问卷准备、问题设计、问卷投放和问卷分析。</p>
+<p>关于问卷准备阶段，我们团队发生了一个讨论：</p>
+<p>做一次用户调研，是只做访谈？只做问卷？还是访谈问卷一起做？</p>
+<p>根据之前的经验，我对不同的情况进行了分析：</p>
+<ul>
+<li>在对用户群体还没有深入了解时，冒然做问卷调查的话，其问卷结果只能说是问卷设计者自己问题的答卷；</li>
+<li>有了用户访谈之后，我们对用户属性、需求就有了大致的了解，再针对性的问卷调查，才能形成一个丰满的真实的用户画像。</li>
+</ul>
+<p>两者从不同维度了解用户：用户访谈是深度，问卷调查是广度；用户访谈是定性，问卷调查是定量。</p>
+<p>所以我们得出结论：用户访谈和问卷调查通常是绑定的，而且其先后顺序也是有很多考究的！</p>
+<p>是先访谈还是先问卷？不同的人有不同的答案！</p>
+<p>我通常的做法是：先用户访谈了解到了几种典型用户，然后在问卷中去验证这些用户的需求和用户规模；然后我们还会发现有一些新的需求和用户属性，问卷结束后我们已经有了总体的量化分析；再对这些漏网之鱼访谈，我们对用户的整体了解就非常充足了。</p>
+<p>这种先用户访谈，再问卷，再访谈的方式，在对用户群体没有太多了解的时候非常有效果，也推荐给大家。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/yoqUCUaioYDx0qpFQE65.jpg" alt="" width="1347" height="591" /></p>
+<h2>二、问卷准备</h2>
+<p>准备阶段我们要明确调查目的、目标用户、时间安排和调查渠道，然后用户访谈，对我们的思路验证，形成提纲。</p>
+<p>我们之前的用户访谈其实就约等于问卷准备环节了，详情可以查看我上一篇<a href="http://www.woshipm.com/operate/4111748.html" target="_blank" rel="noopener">用户访谈</a>的文章。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/oQeWSxeIOB27MvKrJ41l.jpg" alt="" width="1358" height="596" /></p>
+<h2>三、问卷设计</h2>
+<p>很多文章会教大家设置问题的小技巧，我就不再赘述了。</p>
+<p>这篇主要讲一下问卷调查的框架，充分的问卷准备和问题框架是成功的保证。</p>
+<p>问题一般有几个类型：用户、行为、产品、态度等。</p>
+<ul>
+<li>用户类：描述用户属性，方便我们了解用户群体。比如：职业、性别等。</li>
+<li>行为类：了解用户具体的行为、操作或者场景。比如：了解渠道、使用产品的目的等。</li>
+<li>产品类：了解自己产品或者竞品在用户的使用情况。比如：使用过什么类似产品、使用反馈。</li>
+<li>态度类：用户对产品的个人看法。比如:评价、好感、想要的功能；尽量避免提一些无法判断、没头没尾的问题，一方面对产品优化没有帮助，另一方面会降低用户的的期望。</li>
+</ul>
+<p>需要注意的问卷调查有一定的机械性，不管是选择还是填空，很多用户的回答都有误导性；比如我曾经遇到某用户表格中填他使用了某产品，我再针对性访谈的时候，发现他使用的是另外一款产品。</p>
+<p>所以一定要有用户访谈的支撑，在问卷前的访谈可以帮助我们了解用户群体的情况，而问卷后的访谈可以避免我们被误导。</p>
+<p>确定好问题，就需要使用表单产品了。</p>
+<p>市面上的问卷表单产品很多，我们使用的还是之前的SeaTable，表单表格一体，制作好表格，然后转化为表单，用户填的表单会反馈到表格里，简单方便。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/TJ9qmT6eDJDmXfFlX08P.jpg" alt="" width="1303" height="571" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/TNv8ajPeW8ZOWsNFvk2z.jpg" alt="" width="1331" height="584" /></p>
+<h2>四、问卷投放</h2>
+<p>问卷做好了后，我们就要投放给用户，那么需要考虑的就是投放到哪里去了？</p>
+<p>如果投放的用户和问卷不匹配，我们得到的是没有意义的信息。</p>
+<p>如果问卷是调查售后的，总不能让新用户填吧！所以我们要找到合适的用户群体投放问卷。</p>
+<p>找到用户后，我们会发现并不是每个用户都愿意填的，那么怎么才能让用户更多地填问卷呢？</p>
+<p>人天生有惰性，做事情都是需要驱动力的，而驱动力分为正面驱动和负面驱动；正面驱动就是做了这个事情可以得到什么，而负面驱动就是不做这个会有什么不好的结果！</p>
+<p>显然我们没办法给用户负面驱动，所以我们只能给他们正面驱动，而正面驱动可以分成两种：精神和物质。</p>
+<p>精神方面就是鼓励、尊敬、信仰和赞扬等正面的；物质方面的就是现金、奖品等。</p>
+<p>我们要结合自己产品和用户的特点，设计激励机制，吸引用户填问卷。</p>
+<h2>五、问卷分析</h2>
+<p>用户调研的目的是对目前的用户情况有一个数据统计，并希望通过这些数据了解用户行为逻辑，解决目前的一些问题；并对之后的产品运营有指导作用，所以分析报告一般有两部分组成：数据统计分析，以及数据背后的逻辑和总结。</p>
+<p>数据分析可以通过几个手段处理:统计、对比、整合，然后再用一些图表功能展现出来。</p>
+<p>图表产品国内比较好的是BDP，但因为不喜欢做一件事用好几个产品就没用，使用的是SeaTable自己带的统计图表，比较方便！</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/08/GjzK7kUUPqAHn6Ktu9pj.jpg" alt="" width="1377" height="497" /></p>
+<p>分析总结有点三点需要注意：避免误导偏差、客观性、尊重逻辑。</p>
+<p>如果发现某些意料之外的数据，我们可以再次访谈，确定是否有误导。</p>
+<p>用户反馈的数据可能并不真实，也并不一定是问题的直接答案，我们要尽量客观。</p>
+<p>数据背后的逻辑性，不要无端猜测，很多数据可能并没有直接关系。</p>
+<p>在这些原则下，我们围绕此次问卷的主题，以数据和逻辑为支撑，展开分析得出结论，并制定相应的运营策略。</p>
+<p>以上就是此次问卷调查实操中的一些思考和总结，如有不足之处欢迎指正，欢迎留言讨论交流~</p>
+<p>&nbsp;</p>
+<p>本文由 @运营小魔王 原创发布于人人都是产品经理，未经许可，禁止转载。</p>
+<p>题图来自 Unsplash，基于CC0协议</p>
+➜一只七夕蛤蟆，一天赚了10万
+http://www.woshipm.com/it/4155642.html	33901
+<blockquote><p>编辑导读：今年的七夕，你被送蛤蟆了吗？一只蛤蟆突然加你微信，对着你叫“孤寡”，不少人收到这个七夕礼物表示哭笑不得。本文作者从运营的角度，分析七夕蛤蟆背后的商业逻辑，希望对你有帮助。</p></blockquote>
+<p><img data-action="zoom" class="size-full wp-image-4155693 aligncenter" src="http://image.woshipm.com/wp-files/2020/08/6Pkspxc6voPkXjLm8imn.jpg" alt="" width="900" height="420" /></p>
+<p>今天各位的朋友圈，应该都被一只蛤蟆给霸占了吧。</p>
+<p>一只蛤蟆，自己也没有想到，会以这样的方式出圈，代表蛙界再次光宗耀祖。</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/08/dXxetz2AJQaDMfep1CvZ.jpeg" width="403" height="331" /></p>
+<p>当普通人在惊叹怎么这么好玩，搞笑的时候，从运营人的角度来说，应该思考：</p>
+<ol>
+<li>七夕蛤蟆怎么火了？</li>
+<li>七夕蛤蟆是怎么赚钱的？</li>
+<li>七夕蛤蟆带给我们那些启示?</li>
+<li>还有下一只七夕蛤蟆出现吗？</li>
+</ol>
+<p>那么，今天村长就和各位来聊聊以上几个问题，希望对各位有更多的启发。</p>
+<h2>一、七夕蛤蟆怎么火了？</h2>
+<h3>1. 什么是七夕蛤蟆？</h3>
+<p>首先还是再简单和大家复盘介绍一下，什么是七夕蛤蟆。</p>
+<p>七夕蛤蟆指的是在七夕期间，A方向B方购买七夕蛤蟆祝福服务，A方向B方提供祝福对象C的微信。</p>
+<p>B方添加C的微信后，向C发送提前准备好的一段祝福。</p>
+<p>而祝福的形式，则是以一直蛤蟆的形象，向C方重复发送一段“孤寡”文字。</p>
+<h3>2. 七夕蛤蟆为什么火了？</h3>
+<p>看起来，挺无聊的一个活动，为什么就这么火了呢？</p>
+<p>我觉得主要是这个原因：应景+惊喜+冲突+简单+快感</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/08/WbVAFSF7Nk8YXlCjdQ4h.jpeg" width="506" height="379" /></p>
+<p><strong>应景：</strong>今天刚好是七夕佳节，男女相会的日子，但有很多人却单身。</p>
+<p><strong>惊喜：</strong>以为过节会收到朋友群发的祝福语，但这次却找了一只蛤蟆来代送祝福。</p>
+<p><strong>冲突：</strong>作为被祝福的C方，并不知道是被谁送的祝福，而且是被调侃的方式祝福。</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/08/j18e1CGsDiKnDPI9PxV3.jpeg" width="499" height="374" /></p>
+<p><strong>简单：</strong>被祝福的一方，可以通过内容快速get有趣点，而且可以立马定制该服务，送给其他人。</p>
+<p>关键是参与门槛极低，既不需要提供个人信息，又不需要思考其他内容。</p>
+<p>只需要付几块钱、提供对方的微信号即可。</p>
+<p><strong>快感：</strong>无论是A方，还是C方都能在短时间内立马得到回馈。</p>
+<p>A方会收到B方服务的截图，会对C方的反应充满好奇。</p>
+<p>而C方也会觉得很有意思和好奇，于是选择发朋友圈，关键还会付费调侃其他朋友。</p>
+<p>其实，我们也可以用参与感来解释。</p>
+<h2>二、一只七夕蛤蟆如何一天挣10万</h2>
+<p>要记住，有需求就有市场。</p>
+<p>或者说，任何一次成功的事件，都可能是他人有意而为之。</p>
+<p>七夕蛤蟆代祝福，赚钱的方式很简单，而且依旧能赚一波块钱。</p>
+<p>千万不要小瞧这个趣味的服务，它有着完善且专业的价格体系。</p>
+<ul>
+<li>基础费用：有个普通的服务版本，文字版本是2.8元。带表情包的是7.7元。</li>
+<li>附加付费：如果觉得还不够，可以附加赠送一幅画、一首歌，但选择附加服务，价格就立马多了十几块钱。</li>
+<li>定制付费：如果你自己有其他的想法，也可以在常规版的基础上，选择定制化的服务。</li>
+</ul>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/08/dGbMPvnnBsp6Ogx023jL.jpeg" width="500" height="375" /></p>
+<p>比如按照你的要求发一段话、文字、图片等等，收费也自然更贵了。</p>
+<p>当然了，我们刚才看到的只是收费的一个标准而已。</p>
+<p>在淘宝上，七夕蛤蟆的服务收费高达100元，但竟然有1100多人付款，这就是10万收入。</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/08/dkqWTTd7DN4iOKYgVBkC.jpeg" width="503" height="377" /></p>
+<p>而在闲鱼上的七夕蛤蟆服务价格主要从0.5-9.9元不等，几乎每个服务，都超过100以上的人想要。</p>
+<h2>三、七夕蛤蟆给我们带来了哪些启示</h2>
+<h3>1. 精心设计每个环节</h3>
+<p>看似很简单的一个活动，其实涉及到了许多个环节。</p>
+<p>头像设计：头像不能用一般的人物／风景，而是和提供的服务相匹配。</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/08/iibjOx1hb9Ct5VEntAJK.jpeg" width="401" height="229" /></p>
+<p>添加话术：虽然收了费用，对最终需要添加用户成功才能执行。</p>
+<p>所以用什么话术加人，确保通过率。</p>
+<p>介绍话术：添加成功之后，第一句发什么，后面发什么，什么话术结尾？</p>
+<p>要不要对被祝福者做转化，这些都是需要注意的地方。</p>
+<p>比如为什么发送孤寡的时候，不发一个词，而是重复几十遍？</p>
+<p>目的就是为了强调，吸引被祝福者的注意，以及激发被祝福者想要购买和了解的欲望，这些都是要设计的环节。</p>
+<h3>2. 找准渠道截流</h3>
+<p>我了解七夕蛤蟆的时候，是在微信群看到的。</p>
+<p>按照我的逻辑，我是会先去微信搜索。但有些就会去淘宝，知乎，闲鱼，贴吧，抖音进行搜索。</p>
+<p>可能每个人的目的都不同，但本质上都是精准的流量。</p>
+<p>所以无论是闲鱼＼淘宝还是公众号，都有七夕蛤蟆的服务。</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/08/ypb2iIgK7RtKMrOGJk60.jpeg" width="499" height="374" /></p>
+<p>尤其是公众号，明显是为了截流，而重新注册或者改名的。</p>
+<p>我看到一个朋友分享的案例，利用公众号截流，一天涨粉近千。</p>
+<p>这不仅能够开通广告权限，而且也可以卖号赚钱。</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/08/sfpOMqcVkK4xhF9mC20F.jpeg" width="508" height="381" /></p>
+<p>再给大家看看微信指数，关于七夕、蛤蟆的搜索热度，瞬间暴增，这就是流量。</p>
+<h3>3. 信息差永远存在</h3>
+<p>刚才大家也看到了，有的人收费2.8元，有的收费9.9，还有的收费100元都卖了1000份。</p>
+<p>而我们在看看闲鱼里面，那么多提供七夕蛤蟆服务的项目，每个都有人关注。</p>
+<p>所以，希望大家能再次深刻的认识到。</p>
+<p>中国太大了，人太多了，信息差是永远存在。</p>
+<p>不会因为有了手机工具就会消磨信息差，每个人的资源、理解、需求以及判断能力都是不同的。</p>
+<p>所以再众人皆知的事情，只要你有曝光，有产品，就有赚钱的机会。</p>
+<p>不然那么多教闲鱼赚钱、直播卖货、社群运营的讲师，怎么有饭吃呢？</p>
+<h3>４. 一箭双雕</h3>
+<p>在这个活动中，简单看起来，是商家提供服务，买家购买服务，然后就结束。</p>
+<p>但是大家仔细想想，在这个过程中，Ａ方加了Ｂ方微信，Ｂ方又加了Ｃ方微信，Ｃ方还很有可能会推荐Ｄ、Ｅ、Ｆ的微信。</p>
+<p>除了收了钱，最重要的一点是，这些人微信只是不会立马被删除。</p>
+<p>这不就是引流嘛？</p>
+<p>我看几个案例，微信瞬间加了几百的粉丝。</p>
+<p>各位再想想，闲鱼上＼公众号提供的七夕蛤蟆服务，最后不都是添加微信了嘛？</p>
+<p>所以，关于闲鱼引流这就是一个很好的案例。</p>
+<p>哪怕最终交易不成功，也加了一个微信好友呀！</p>
+<h3>５. 别惊叹，去执行</h3>
+<p>绝大部分人都只是这个活动中的看客，但如果你想赚钱的话，你在发出惊叹之余，就应该立马去行动。</p>
+<p>直接花几十块钱买个服务，然后你就有了一整套的话术和内容。</p>
+<p>最快速的方法，就是直接发群或者朋友圈，提供这样的服务。</p>
+<p>只要有一个人付费，你就回本了。</p>
+<p>就算没有人付费，你也知道并体验了完整的营销套路了，多划算啊！</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/08/EYZYqL9RqFgzcikn8FKx.jpeg" width="505" height="379" /></p>
+<p style="text-align: center;">图：七夕布谷</p>
+<p>而且大家想想，为什么有了七夕蛤蟆，七夕布谷还能火？</p>
+<p>就是执行力+复制+改进，只不过把文字换了一下而已，在送首歌，套路都是一样的。</p>
+<p>所以，少惊叹多执行！</p>
+<h2>四、还有下一只“七夕蛤蟆”出现吗？</h2>
+<p>关于这一点，毋庸置疑，一定还会有类似的玩法出现的。</p>
+<h3>1. 许多玩法不会立马过时</h3>
+<p>各位还记得＠微信官方，给我戴顶圣诞帽的活动吗？</p>
+<p>这个活动就是2017年的12月份，我当时的一个团队发起的，小程序的用户瞬间突破800万。</p>
+<p>但这个活动到了2018年、2019年的圣诞节，还有人在玩。</p>
+<p>关键是还有人收费玩，换个有圣诞帽的头像，需要支付１块钱费用，依然有很多人付钱。</p>
+<p>所以，七夕蛤蟆这个活动，我觉得到了今年的双11期间，还会有人玩。</p>
+<p>哪怕出现不了你我的朋友圈，但我相信在许多四五线的地方公众号、朋友圈里面仍然会流传。</p>
+<h3>２. 爆款活动公示</h3>
+<p>那么类似这样的活动，可以归纳为一个爆款公式：简单＋便宜＋惊喜＋参与感。</p>
+<p>前文中，我们已经做了概述了，这里就不再赘述了。</p>
+<p>想告诉大家的是，一个活动一定是用户参与门槛很低，用户广，而不是只针对一小部分人的活动。</p>
+<p>还有就是要让参与双方都能从中有参与感、收获感，这份收货可能是惊喜、冲突、美好等等。</p>
+<h3>３. 如何再次抓住机会</h3>
+<p>除了我们刚才提到的爆款公式外，各位可以把一年中的重大节日做个罗列。</p>
+<p>比如情人节、七夕、中秋、圣诞等有代表性，又可以有创意性的节日，大家就可以提前筹备起来。</p>
+<p>大家想想，这次是添加好友发短信。</p>
+<p>难道不能变通一下，变成打电话说祝福呢？能不能变成上门呢？能不能变成寄快递呢？</p>
+<p>还有大家想想这几年特别火爆的非洲小孩说祝福的话，那可不可把非洲换成其他州、其他民族或者改成唱歌、跳舞呢？</p>
+<p>而且还是刚才提到的案例，当大家都在关注七夕蛤蟆的时候，有的人就做了七夕布谷鸟（不孤独、不哭），也依然有许多人下单购买。</p>
+<p>所以很多时候，只要稍微变通一下就行。</p>
+<h3>4. 有需求就有市场</h3>
+<p>除了七夕蛤蟆祝福的服务，各位完全可以把思路开阔一下。</p>
+<p>一种是赚懒人的服务，一种是赚技能服务，还有一种是赚猎奇的服务，也包括赚面子的服务。</p>
+<p>淘宝上有一个叫醒服务，已经存在好多年了。</p>
+<p>我看到其中一个商家提供的叫醒服务，当月销售1879份，店铺评分全部４.９飘红。</p>
+<p>不仅提供一个月的，还可以包年、包季度的。</p>
+<p>那么提供叫醒服务可以做，能不能提供提醒服务呢？</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/08/dTMEi3SVwzUEv8Nnt9bz.jpeg" width="507" height="380" /></p>
+<p>再如不久前的老照片修复、生成卡通照这些赚钱小项目，本质就是利用信息差和技能，赚取用户的钱。</p>
+<p>用户以为修复老照片很难，但其实市面上就有免费的软件。</p>
+<p>关键这样的服务，到现在依然月销千件。</p>
+<p>所以，大家仔细去思考一下！</p>
+<p>不要一整天老想着发大财，又懒、又看不起、又不执行。</p>
+<p>这怎么可能赚到钱？</p>
+<h3>#专栏作家#</h3>
+<p>十里村，微信公众号：十里村（ID：shilipxl），人人都是产品经理专栏作家。偶尔分享生活，关注电商、科技，新事物。</p>
+<p>本文原创发布于人人都是产品经理。未经许可，禁止转载</p>
+<p>题图来自Unsplash，基于CC0协议</p>
