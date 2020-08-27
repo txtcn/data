@@ -1,0 +1,40 @@
+➜用 Resilio Sync 在 Windows 和 Android 之间同步剪贴板文本
+https://www.appinn.com/resilio-sync-windows-android-by-feeshy/	32706
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202008/resilio-sync-3.jpg!o" alt="用 Resilio Sync 在 Windows 和 Android 之间同步剪贴板文本 1" title="用 Resilio Sync 在 Windows 和 Android 之间同步剪贴板文本 2"></figure></div>
+<p class="has-text-align-center">原标题：<strong>用文件同步软件在Windows和Android之间同步剪贴板文本</strong></p>
+<p class="has-text-align-center">来自<a aria-label=" (opens in a new tab)" rel="noreferrer noopener" href="https://meta.appinn.net/t/windows-android/18527" target="_blank" class="rank-math-link">发现频道</a>，作者 @<strong><a rel="noreferrer noopener" href="https://meta.appinn.net/u/feeshy" target="_blank" class="rank-math-link">feeshy</a></strong></p>
+<p>这是我的Resilio Sync系列第三篇，前两篇：</p>
+<ul><li><a href="https://meta.appinn.net/t/aria2-resiliosync/15821" class="rank-math-link" target="_blank" rel="noopener">Aria2 + Resilio Sync 自建离线下载服务的过程记录</a></li><li><a href="https://meta.appinn.net/t/resilio-sync/18249" class="rank-math-link" target="_blank" rel="noopener">将建热点的手机加入 Resilio Sync 的同步网络</a></li></ul>
+<p>说是 Sync 系列，其实跟 Resilio Sync 并没有什么关系啦，用 Syncthing、OneDrive 之类的任意文件同步软件一样可以实现。</p>
+<hr class="wp-block-separator"/>
+<h2>同步剪贴板历史记录</h2>
+<p>思路是 监测剪贴板变化 &gt; 写入文本文件，借助同步软件同步到各个设备</p>
+<h3>Windows</h3>
+<p>借助AutoHotkey来实现</p>
+<pre class="brush: cpp; title: ; notranslate">
+#Persistent
+OnClipboardChange(&quot;ClipChanged&quot;)
+return
+ClipChanged(Type) {
+FileAppend , %clipboard%`n, Sync\Mobile\ClipHistWin.txt, UTF-8
+}
+</pre>
+<p>目录要按你的实际情况改一下，下同。</p>
+<h3>Android</h3>
+<p>借助Tasker实现。伪代码：</p>
+<pre class="brush: cpp; title: ; notranslate">
+Profile: ClipSync
+Event: Variable Set [ Variable:%CLIP Value:* User Variables Only:Off ]
+Enter: ClipSync
+A1: Write File [ File:Sync/Desktop/ClipHistAndr.txt Text:%CLIP Append:On Add Newline:On Continue Task After Error:On ]
+</pre>
+<h3>iOS</h3>
+<p>借助…借助……快捷指令你倒是争争气啊&nbsp;<img src="https://img3.appinn.net/meta/images/emoji/apple/see_no_evil.png?v=9" alt=":see_no_evil:" title="用 Resilio Sync 在 Windows 和 Android 之间同步剪贴板文本 3"></p>
+<p>目前 iOS 的快捷指令无法无法与 Sync 交互，即便是能交互，快捷指令也没有监控剪贴板变化的自动化触发器。所以只能使用分享菜单手动把文本作为 txt 传递到 Sync</p>
+<hr class="wp-block-separator"/>
+<h2>延伸功能</h2>
+<p>上面的同步剪贴板历史记录比较初级，不过以同步的文本文件为基础，就可以进一步延伸出许多功能了，下面列出一些我想到的很容易实现的功能来抛砖引玉：</p>
+<ul><li>Tasker：<ul><li>自动把同步的 Windows 剪贴板复制到 Android 剪贴板</li><li>下拉通知栏，点一下快捷控制磁贴，就可以把 Windows 复制到 Android 剪贴板</li><li>如果识别到 Windows 剪贴板的正则满足网址格式，则弹一条通知询问是否打开</li></ul></li><li>AutoHotkey：<ul><li>绑定一个快捷键来粘贴 Android 的剪贴板。例如，CTRL+V 是粘贴Windows 剪贴板，CTRL+ALT+V 则绑定粘贴 Android 剪贴板</li><li>如果识别到 Android 剪贴板的正则满足网址格式，则直接用浏览器打开</li></ul></li></ul>
+<h2>后记</h2>
+<p>真的是条条大路通罗马，每个人都有适合自己的方式，比如青小蛙就已经完全习惯了通过 IM 来跨平台传输文本、文件、图片、视频，但这就需要所有设备都随时在线，对网络提出了高要求。而很多同学使用专用的跨平台软件/应用来同步剪贴板，比如 <a href="https://www.appinn.com/lizhi-202004/#feem" class="rank-math-link">Feem</a>，也有同学自己<a href="https://www.appinn.com/snapdrop/" class="rank-math-link">部署工具来解决问题</a>。</p>
+<p>总之就是，你有更好的方法那么赶紧来留言。</p>
