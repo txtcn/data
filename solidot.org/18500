@@ -25,3 +25,12 @@ https://www.solidot.org/story?sid=65358	42542
 ➜TikTok 与微软的谈判如何演变为肥皂剧
 https://www.solidot.org/story?sid=65359	44412
 今年夏天，当微软开始与 TikTok 及其母公司字节跳动谈判时，谁也没想过要进行一笔大交易。由于美中之间局势紧张，以及运营一家社交媒体公司的复杂性，任何大型收购似乎都太过危险，难以驾驭。因此据知情人士透露，微软讨论了在 TikTok 中持有少量股份，成为该应用的少数股东之一。知情人士表示，对微软来说，少数股权投资有机会让 TikTok 使用微软 Azure 云计算服务，这将让该应用成为微软最大的云计算客户之一。这也将为 TikTok 提供一家蓝筹美国公司的支持，以此安抚将 TikTok 与中国的关系称为国家安全威胁的特朗普政府。然而，最初关于一项小投资的讨论却演变成了<a href="https://cn.nytimes.com/technology/20200826/tiktoks-microsoft-deal-soap-opera-trump/">一场庞大混乱的政治肥皂剧</a>。特朗普总统下令要 TikTok 将在美业务出售或停止运营，受此推动，字节跳动正在讨论将 TikTok 的部分全球业务出售给几个潜在竞购者。于是有大量团体参与谈判，想在任何交易中分得一杯羹，所有团体都在努力推动自己的利益和议程。<p>
+➜沙特逐步开放互联网
+https://www.solidot.org/story?sid=65360	46641
+沙特被广泛视为是世界上最保守的国家之一，政府使用一个过滤系统管理互联网访问，限制访问被认为不可接受或不合适的内容，以保护基于伊斯兰教的社会价值观。但过去几年沙特经历深刻的社会政治变化，网络日益开放。沙特 Taibah 大学和 UC 河滨分校的研究人员<a href="https://www.usenix.org/system/files/foci20-paper-alharbi_0.pdf">报告（PDF）</a>，从 2018 年 3 月到 2020 年 4 月，沙特对网站和应用的屏蔽都放松了，该国主要屏蔽的网站为成人网站和电商网站，屏蔽电商网站的原因可能是它们销售沙特认为非法的商品如酒精和武器。沙特在 2013-2017 之间屏蔽了众多 VoIP 应用如 FaceTime、Skype、Line、Tango、Facebook Messenger、WhatsApp 和 Snapchat，但到了 2020 年这些应用绝大部分都能正常访问，唯一的例外是微信，原因未知。沙特主要使用了四种过滤方法：DNS 过滤、IP 地址过滤、HTTP 过滤和 TLS 过滤。<p>
+➜调查伊朗最近部署的协议过滤器
+https://www.solidot.org/story?sid=65361	51895
+2020 年初，伊朗部署了协议过滤器，只允许 DNS、HTTP 和 HTTPS 协议，审查任何使用其它协议的连接。马里兰大学的 Kevin Bock 等人<a href="https://www.usenix.org/system/files/foci20-paper-bock.pdf">对此展开了调查（PDF）</a>，并测试了他们最近开源的遗传算法 <a href="https://geneva.cs.umd.edu/">Geneva</a> 对抗协议过滤器的能力。研究人员发现，伊朗对禁止协议的审查是丢弃来自客户端的所有数据包，来自服务器的数据包不受影响，客户端仍然会收到来自服务器的数据包。但由于客户端无法确认或回应，连接事实上被审查了。它与防火长城不同是单向审查而不是双向，此外协议过滤器只审查 TCP 流量，仅限于端口 53、80 和 443，其它端口发送的流量没有过滤。研究人员称 Geneva 在两小时内就发现了三种能挫败协议过滤器的方法。Geneva 的<a href="https://github.com/kkevsterrr/geneva">代码</a>托管在 GitHub 上，目前只支持 Linux 系统，不支持 OS X 或 Windows。<p>
+➜给风力涡轮机叶片涂色能大幅减少鸟的死亡数量
+https://www.solidot.org/story?sid=65362	56336
+根据发表在《Ecology and Evolution》期刊上的<a href="https://doi.org/10.1002/ece3.6592">一项研究</a>，简单给风力涡轮机叶片涂上颜色就能<a href="https://arstechnica.com/science/2020/08/black-paint-on-wind-turbines-helps-prevent-bird-massacres/" target="_blank">大幅减少</a>风力涡轮机每年杀死的鸟类数量。据挪威 Smola 的一个风力发电场开展的一项研究，将涡轮机的一个叶片从白色涂成黑色，鸟类死亡数量减少 70%。早先的实验室研究显示，鸟类在飞行时不善于发现障碍物，引入视觉线索能增加鸟类发现风力涡轮机的几率。不过这项研究的样本数量太小，其结论可能无法作为可靠证据使用。研究调查了 4 台风力涡轮机，2006 到 2013 年期间这些涡轮机杀死了 18 只鸟。2013 年，研究人员给每台涡轮机的一个叶片涂上黑色，在之后的三年里杀死的鸟类数量只有 6 只，而对照组的  4 台风力涡轮机杀死了 18 只，年死亡率下降了 71.9%。<p>
