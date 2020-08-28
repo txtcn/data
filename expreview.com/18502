@@ -46,3 +46,17 @@ http://www.expreview.com/75880.html	33233
 ➜微软正式推出DirectX 12 Feature Level 12_2：“一次巨大的飞跃”
 http://www.expreview.com/75881.html	37920
 <p>今年3月份的时候微软推出了DirectX 12 Ultimate这个DX12的升级版API，它主要包含有DirectX Raytracing 1.1、可变速率着色、Mesh着色器和采样器反馈这四个大的特性。今天微软宣布为DirectX 12引入Feature Level 12_2，在加入了以上四项特性的同时，还加入了一些别的小特性，对D3D12进行了一次较大的更新。</p><p>在DirectX中，Feature Level定义了硬件对图形特性的支持程度，它在DirectX 10的时候被引入，在DirectX 11和现在的DirectX 12时代逐渐为人所知，在一个大的D3D API版本下存有多种Feature Level，比如说D3D12就有11_0、11_1、12_0和12_1这几个Feature Level，越高的Feature Level代表着越多的图形特性。现在新的12_2中就加入了很多新的特性，完整列表见下图：</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/08/28/image-20200828181307994.png" alt=""/></p><p>可以看到D3D12 Feature Level 12_2除开文章开头提到的四个大的特性以外还加入了对Shader Model、资源绑定和保守光栅化等特性的需求，官方将该特性集形容为“huge jump”。所以并不是说支持DirectX 12 Ultimate的显卡就必定支持它，DirectX 12 Ultimate只能算是Feature Level 12_2的一个子集。</p><p>现在已经有一些GPU支持到Feature Level 12_2了，主要是基于Turing架构的产品，包括RTX 20系和Quadro RTX系列，未来支持Feature Level 12_2的GPU有AMD的RDNA 2和Intel的独立显卡产品，NVIDIA的Ampere自然会继承Turing对它的支持，另外微软还表示他们在和高通合作，让骁龙平台支持12_2。要让硬件支持12_2，还需要显卡驱动方面的配合。Windows 10本身则是要到Build 20170之后才支持它，也就是至少要等到明年才能用到它。</p>
+➜新iPad Air用户手册谍照泄露，将采用侧边指纹方案、全面屏设计和USB-C接口
+http://www.expreview.com/75882.html	41383
+<p>近日欧亚经济委员会（EEC）注册列表上出现了多款新的iPad型号，它们均运行iPadOS 14系统，随着新的iPad发布日期离我们越来越近，更多的相关信息也都被爆料出来。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/03/09/ipad_air_3.jpg" width="100%"/></p><p>小红书上出现了据传是下一代iPad Air的用户指南手册，据泄露的手册信息显示，下一代iPad Air将采用与iPad Pro同样的全面屏设计，取消了传统的正面下方的主页按钮。不过，新iPad Air并不是采用的iPad Pro的Face ID解锁模式，而仍然是Touch ID，而这个Touch ID传感器则是集成到了顶部侧边的电源按键上了，这种侧边指纹方案与其竞争对手三星Galaxy Tab S7一样。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 12; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+// var istart=['1','2','3','4','5','6'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 14; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/news/2020/08/28/"; //图片目录
+var col = 3; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpeg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><p>另外，还可以在背面看到智能接点，也就是说，它将可以连接Magic Keyboard使用。此外，说明手册提到，这款iPad Air将使用USB-C接口，而非传统的闪电接口，背部摄像头方面只有一颗。</p><p>总的来说，下一代iPad Air将得到现在iPad Pro上的设计和功能，而之所以没有采用Face ID解锁模式，而是侧边指纹方案估计是由于Face ID传感器模块的成本原因。同样的，背部摄像头没有增加也应该是基于成本的原因，毕竟iPad Air系列确实属于那种既能获得大面积屏幕和新一代处理器，又价格并不太贵的选择，新的iPad Air仍然需要有同样的价格定位。</p><p>随着iPad Pro上的一些功能下放到新iPad Air，那么新的iPad Pro将有哪些新功能就很让人期待了，难道mini LED真的要来了？</p>
