@@ -116,3 +116,73 @@ http://www.sohu.com/a/412914557_308467	18273
 <p>https://www.nature.com/articles/s41539-020-0070-0</p>
 <p>相关报道：</p>
 <p>https://www.inverse.com/innovation/neural-stimulation-language-device</p>
+➜一周AI最火论文 | 使用图形界面就能搭建的强化学习模型
+http://www.sohu.com/a/412916625_308467	18999
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200813/8ceb48febdbd4723a346194ea60c2a20.png" max-width="600" /></p>
+<p class="ql-align-justify"><strong>大数据文摘出品</strong></p>
+<p class="ql-align-justify"><strong>作者：Christopher Dossman</strong></p>
+<p class="ql-align-justify"><strong>编译：李雷、Luna、云舟</strong></p>
+<p class="ql-align-justify">呜啦啦啦啦啦啦啦大家好，本周的AI Scholar Weekly栏目又和大家见面啦！</p>
+<p class="ql-align-justify">AI ScholarWeekly是AI领域的学术专栏，致力于为你带来最新潮、最全面、最深度的AI学术概览，一网打尽每周AI学术的前沿资讯。</p>
+<p class="ql-align-justify">每周更新，做AI科研，每周从这一篇开始就够啦！</p>
+<p class="ql-align-justify">本周关键词：自动驾驶、强化学习、GANs</p>
+<p><strong>本周最佳学术研究</strong></p>
+<p><strong>Waymo开放数据集挑战赛</strong></p>
+<p>今年3月，Alphabet旗下的自动驾驶公司Waymo发起公开挑战赛，参赛者可以使用其自动驾驶数据集（包括2D和3D检测、2D和3D跟踪以及域适应数据）来建立和测试机器学习模型。挑战赛收到来自世界各地的上百份代码提交，最终入围决赛的选手来自中国、英国、新加坡、美国等多个国家。</p>
+<p>最近公开的Waymo开放数据集（Waymo Open Dataset，WOD）是用于自动驾驶研究的大型数据集，提供了1000个用于训练和验证以及150个用于测试的驾驶片段。每个片段包含拍摄自不同摄像机的镜头，平均每部摄像机约200帧图像，这其中还包括5台分辨率为1280×1920或886×1920的高分辨率摄像机。总而言之，该数据集包含约115万张关于车辆、行人和骑自行车的人的图像，以及990万张2D边界框。</p>
+<p>本论文给出了Waymo开放数据集（WOD）2020挑战赛的最佳解决方案。作者采用FPN（Feature pyramid networks）作为基本框架，而级联RCNN、堆叠PAFPN（Path aggregation FPN）和多头RCNN则用于提高性能。为了处理WOD中的小目标检测问题，训练和测试都使用了超大尺寸的图像，本文的方案在2D对象检测跟踪中排名第一。作者们计划持续增加数据集，希望这将有助于国际研究界在机器感知和自动驾驶技术方面取得进步。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>原文：</p>
+<p>https://arxiv.org/abs/2008.01365v1</p>
+<p><strong>MusPy - 用于生成符号音乐的工具包</strong></p>
+<p>本文介绍了MusPy，一个用于生成符号音乐的开源Python库。MusPy为音乐生成系统中的基本组件提供了易于使用的工具，包括数据集管理，数据I / O，数据预处理和模型评估等。</p>
+<p>为了展示模型能力，作者对MusPy当前支持的11个数据集进行了统计分析。此外，他们还进行了跨数据集的泛化实验，通过在每个数据集上训练自回归模型，测量其他数据集上的留存可能性（MusPy的数据集管理系统使此过程变得更加容易）。</p>
+<p>源码及文档：</p>
+<p>https://github.com/salu133445/muspy</p>
+<p>原文：</p>
+<p>https://arxiv.org/abs/2008.01951v1</p>
+<p><strong>深度轻量级Transformer模型</strong></p>
+<p>在本论文中，Facebook人工智能实验室和艾伦人工智能研究所的研究人员提出了一种名为DeLighT的极深度轻量级Transformer模型。他们认为，与其他基于Transformer的模型相比，DeLighT可以提供类似或更好的性能，并且参数要少得多。</p>
+<p>DeLighT可以高效地分配参数，它使用DExTra（一种深度轻量级转换）在每个Transformer编码器层中分配参数，而在各层之间使用逐层缩放的方法，这种方法允许在输入附近使用较浅较窄的DeLighT层，在输出附近使用较宽较深的DeLighT层。</p>
+<p>总体而言，DeLighT网络的深度可以是标准Transformer模型的2.5至4倍，但参数和操作却少得多。在机器翻译和语言建模任务上进行的实验表明，DeLighT可以用更少的参数达到Transformer基线模型的性能。</p>
+<p>源码：</p>
+<p>https://github.com/sacmehta/delight</p>
+<p>原文：</p>
+<p>https://arxiv.org/abs/2008.00623v1</p>
+<p><strong>一个新型、简单并且可扩展性高的强化学习框架</strong></p>
+<p>强化学习（RL）已成为当下主流之一的研究领域，前沿的人工智能公司都会将其作为重要工具来对待。因此，许多研究人员建立了RL框架，例如openAI Gym和KerasRL，以简化其他人的使用。</p>
+<p>为了降低RL新手的入门障碍，本文提出了一个新框架——EasyRL。EasyRL是一个通过交互式GUI来构建、训练和评估RL代理的框架。</p>
+<p>由于EasyRL完全以GUI呈现，因此不需要有关于训练或测试其内置RL代理的编程知识。该框架还支持自定义RL代理和环境，这对于RL研究人员评估和比较其RL模型非常有帮助。</p>
+<p>原文：</p>
+<p>https://arxiv.org/abs/2008.01700v1</p>
+<p><strong>用于图像和视频合成的GANs：算法与应用</strong></p>
+<p>GANs现在是执行各种图像和视频合成任务的强大工具。它们能生成高分辨率的逼真图像和视频，而在此之前这是一项艰巨甚至不可能的任务。GANs还能在内容创作中生成一些新内容。</p>
+<p>在这项工作中，研究人员提供了GANs的概述，着重于视觉合成的算法和应用。它们涵盖了稳定GANs训练的几种重要技术，尤其是一些臭名昭着的技术难点。他们还讨论了其在图像翻译，图像处理，视频合成和神经渲染中的应用。</p>
+<p>原文：</p>
+<p>https://arxiv.org/abs/2008.02793v1</p>
+<p><strong>其他爆款论文</strong></p>
+<p>简单的Modulo可以大大胜过基于深度学习的代码：</p>
+<p>https://arxiv.org/abs/2008.01686v1</p>
+<p>一种用于有效标记的主动图像合成方法，可提高使用小数据进行学习任务时的性能：</p>
+<p>https://arxiv.org/abs/1902.01522v4</p>
+<p>引入Cylinder3D进行驾驶场景LiDAR语义分割:</p>
+<p>https://arxiv.org/abs/2008.01550v1</p>
+<p>单个示例生成连贯的层级样式:</p>
+<p>https://arxiv.org/abs/2008.01531v1</p>
+<p><strong>学习资源</strong></p>
+<p>机器学习简单的自学资源：</p>
+<p>https://developers.google.com/machine-learning/crash-course</p>
+<p>吴恩达讲授斯坦福机器学习课程：</p>
+<p>http://www.holehouse.org/mlclass/?fbclid=IwAR1XmS0CtIXUDg0s2bxeTUpiv2Dh08L_DaDQqA2HCXqafUFfcWays6S07UI</p>
+<p><strong>AI大事件</strong></p>
+<p>AI可能会创造的20种严重犯罪：</p>
+<p>https://www.zdnet.com/article/evil-ai-these-are-the-20-most-dangerous-crimes-that-artificial-intelligence-will-create/</p>
+<p>Julia 1.5发布：</p>
+<p>https://www.zdnet.com/article/programming-language-julia-version-1-5-is-out-lots-of-new-features-better-performance/</p>

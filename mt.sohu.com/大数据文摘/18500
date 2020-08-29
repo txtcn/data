@@ -1,0 +1,146 @@
+➜用AI让课本里的古人动起来！兵马俑活了，黛玉却被美了颜？
+http://www.sohu.com/a/414981628_308467	25905
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200826/2061ecaf4a124942b580c0d41d7c5f8e.png" max-width="600" /></p>
+<p><strong>大数据文摘出品</strong></p>
+<p><strong>作者：刘俊寰</strong></p>
+<p>看到下图这位中年男士，你会不会觉得有种“在哪见过”的似曾相识感？</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200826/020a5bfa6a24465b971ef6b9da2ccc7e.png" max-width="600" /></p>
+<p>没错，你肯定见过他。</p>
+<p>要是文摘菌告诉你，这是<strong>兵马俑的“现代版面貌”</strong>，你信吗？</p>
+<p>可还别不信，在<strong>微博博主“大谷Spitzer”</strong>的最新作品中，他复现了各种老雕塑、人物画像的“现代版”，<strong>从上边的兵马俑跪俑、到大禹治水图和林黛玉画像</strong>，还让他们都活了过来。</p>
+<p>是的，这次大谷没有修复老视频，跑去修复“古人脸”去了。</p>
+<p>那么我们还是先来看看兵马俑小哥到底是怎么被还原的：</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200826/c98cda1191b54364993393e399bc190e.gif" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>除此之外，还有“现代版“林黛玉，这一颦一笑，真是太真实动人了：</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200826/9a96bde10cd44c27af5d282121068294.gif" max-width="600" /></p>
+<p>甚至徐悲鸿，眉宇间还有一丝少年的青涩：</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200826/29d9ce4e42834e1fa45c70b78ff5ad9b.gif" max-width="600" /></p>
+<p>网友们纷纷表示，<strong>“大谷玩得越来越有意思了”</strong>，也有人说，想看圣人、神仙和四大美女。</p>
+<p>不过，眼尖的网友也发现，AI还原的人物存在较大的偏差，<strong>“感觉美颜了，没内味儿了”</strong>。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200826/6df76f87bd3645fdb4a2a4999e0da212.png" max-width="600" /></p>
+<p>甚至还有人表示，以后抓通缉犯就可以公布AI动图了。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200826/327d992c8fdb4cd7af3989cfd0d2df2a.png" max-width="600" /></p>
+<p>文摘菌在第一时间再次联系到了这位正在“用技术为社会做一些有意义的事情”的作者，来看看大谷这次又为大家带来了哪些更新的内容吧。</p>
+<p><strong>不断试错：黛玉被美颜，大禹被换了发型？</strong></p>
+<p>以兵马俑为例，我们也先跟随大谷，简单了解一下整个项目的制作流程。</p>
+<p>根据大谷介绍，这次他使用的AI项目包括Artbreeder、Stylegan-Art、Realistic-Neural-Talking-Head-Models以及First-Order-Model，当然用于补帧和提高分辨率的DAIN和Topaz Lab的AI也是不能少的。</p>
+<p>第一步，需要<strong>从兵马俑中截取出头部的方形照片</strong>。</p>
+<p>为了更好地让系统识别，大谷用PS简单给“金属质感”的兵马俑先<strong>上了皮肤的颜色</strong>，然后<strong>利用Artbreeder进行人脸识别</strong>，输出一张写实风格的人脸，再在Artbreeder内调整一些细节，用PS做最后的微调，最后再<strong>导入First-Order-Model</strong>，就生成了我们所看到的动态图。</p>
+<p>看似很简单就完成了，但真正实施起来，因为是第一次做这种项目，每一步都要进行多次试错。</p>
+<p>首先，第一步<strong>照片的选择</strong>上就有很大的问题。</p>
+<p>可能大家也能猜到，<strong>正脸</strong>的人脸识别效果当然是最好的。除此之外，<strong>人脸是否在整个画面中</strong>也会影响最后的效果，比如大家可以对比一下梦露和黛玉，梦露的头发有部分在画面外，这就会导致生成的动图看上去像是头发黏在了背景上，甚至有时候分成了两层。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200826/9aa23d2b582e4ea8a8dc17d4b25a4214.gif" max-width="600" /></p>
+<p>眼尖的同学可能也发现了，在大禹治水的图中，<strong>背景是全黑的</strong>，这其实也是大谷做的一个小调整。因为本身人物戴了个帽子，但是Artbreeder把帽子识别成了头发，如果在这个基础上直接进行后续操作的话，看上去就像是脑袋被削掉了一块，大谷就干脆把背景换成了纯黑，只保留了脸部。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200826/ec8a75ee386c49c3b3bfb26a1abd771b.gif" max-width="600" /></p>
+<p>这样做出来的动图肯定也还有一些瑕疵。</p>
+<p>就像上文提到，有人在微博下方评论到，“没内味儿了”，黛玉的效果图看上去像是被美颜了一样。</p>
+<p>大谷表示，这其实是由于First-Order-Model<strong>输出图像大小只有256×256</strong>，像素太低，输出后他用Topaz Lab提升了一下分辨率。</p>
+<p>如果<strong>只生成静态图的话，可以看到很多细节，甚至毛孔都清晰可见</strong>，但是用First-Order-Model转动态后，像素就太低了，后期不得不用其他的AI进行补帧和分辨率提升。</p>
+<p>除此之外，因为这次的项目取材范围很广，涉及到了不同年龄层和不同的年代，除了黛玉，<strong>老年人的“美颜效果”就还蛮明显的</strong>。</p>
+<p>这也正是需要不断去试的原因所在。不过大谷表示，一些失败的案例还挺有趣的，<strong>下次会整理一个失败合集</strong>，附在视频最后。</p>
+<p>这里我们也可以先剧透一下，一睹失败的案例到底能失败成什么样子👇</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200826/211e696ce90f478db6069e9e840cdc5f.gif" max-width="600" /></p>
+<p>大谷表示，这也是因为这次使用的是一个<strong>pre-trained模型</strong>，如果要彻底解决低像素输出问题，需要额外训练一个2048的模型。</p>
+<p>据了解，这次的项目<strong>“断断续续做了两个月”</strong>，不过，有了第一次的经验，大谷表示，下次<strong>准备自己录点表情去做</strong>，这样能省去找合适的图片的问题，同时他最近也看了很多这类技术的视频和帖子，可能在修改代码后，能够让这些技术更好地贴合目前的流程，下次视频或许就有更好的结果了。</p>
+<p><strong>修复神器First-Order-Model，动动手指就能让人“活”起来</strong></p>
+<p>这次的项目，大谷仍然主要参考了海外技术博主Denis Shiryaev，不过在实际操作中还是有一些差别，比如Shiryaev主要处理的是西方油画角色，大谷主要针对<strong>东方历史人物</strong>进行了修复处理。</p>
+<p>不过，他们的大体流程是类似的，用到的工具也都主要是First-Order-Model。</p>
+<p>说到First-Order-Model，可不要以为这个系统只能做脸部动态转换，大谷介绍道，First-Order-Model可以<strong>生成打太极的动作</strong>，还<strong>支持五官局部的替换</strong>，比如你可以把钢铁侠的胡子换到特朗普脸上。</p>
+<p>其实这项技术已经在国外很火了，但大家更多利用到的是GoogleColabNotebook上的<strong>简化版模板</strong>，不需要写代码，只需要按按钮就可以运行。</p>
+<p>而且国外的网友往往都是把一些明星唱歌的片段替换到各种历史人物、电影角色、游戏角色上去。</p>
+<p>除此之外，大谷说到，First-Order-Model还可以支持服装模特的转化，不过这个功能更<strong>像是处于婴儿阶段</strong>，没有特别成熟，大家可以看下图自行体会一下：</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200826/710a8fe5ff29406cb7bcb5f65a586917.gif" max-width="600" /></p>
+<p><strong>“现在的人工智能技术激发了人们的创造力。”</strong>大谷感叹道。</p>
+<p>“不会拘泥于某一方面，也不会说突然就不做了，（各个方面）都会去做一做，主要是想把中国文化用现代技术结合起来，分享给大家，给大家带来独特的感受。”</p>
+<p><strong>大谷的AI修复系列视频</strong></p>
+<p>说到大谷利用AI修复老视频，相信大家一定都不会陌生了。</p>
+<p>5月，系列修复视频第一弹上线，迅速在互联网上引起热议。</p>
+<p>当时，大谷主要针对画面进行了修复，整个过程分为<strong>补帧、扩分辨率、上色</strong>三个环节，虽然效果十分经验，但还是存在不足，比如<strong>画面中的颜色会出现跳来跳去</strong>的情况，<strong>红绿服装等方面的真实性</strong>也有待商榷。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200826/f9de6221c1834d398f41c72a0edacdcc.png" max-width="600" /></p>
+<p>随后，7月，大谷带来了老北京修复视频的第二弹，这次他把目光聚焦于修复<strong>老视频中的声音</strong>，还原了近百年前最真实的京片子。</p>
+<p>有了上次的经验，这次画面上的效果更好了，大谷表示，这次主要使用到的是Topaz和DeepRemaster，前者在边缘的处理上更加平滑，后者在静帧和平移的画面修复上的效果会更好。</p>
+<p>针对第二次的修复效果，大谷本人也十分表示满意，不过可以看出，其实在画面<strong>颜色上还存在部分闪烁</strong>，<strong>分辨率也还有提升的空间</strong>。</p>
+<p>在声音的修复上，视频本身的录音效果就已经足够好，他主要利用到的是<strong>AE和PR里的去噪功能</strong>，但去噪主要针对以低频为主的声音，处理后整体的声音效果听上去就会比较“干”，所以在去噪后，大谷还加入了一些<strong>混响</strong>，让声音听上去更自然。</p>
+<p>而在盲人演奏的音乐部分，大谷主要加了一些混响，没有再做过多处理，他表示，音乐本身的混声就比较严重了，如果再去噪的话，低音乐器的声音就会被掩盖住。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200826/eb29e427042e415ea49fac01f04c0cb3.gif" max-width="600" /></p>
+<p>然后就是在8月初，大谷从老北京“转战”到了老上海，为我们带来了百年前老上海的时装秀表演，视频中，三位1929年的上海小姐姐现场为你讲解当时上海的流行时尚趋势。</p>
+<p>在这次的技术实现上，大谷表示，他主要利用的也是DAIN、DeOldify、Topaz和DeepRemaster，对原片进行了上色、补帧、扩大分辨率等操作。</p>
+<p>正如在最新一期视频下方有网友留言表示，“大谷玩得越来越有意思了”，AI技术本身存在无限可能，再加上大谷勇于探索的精神，相信他还会为我们带来更多有趣的作品。</p>
+➜只需四步，把你的某宝客服变成数字人，还能眼神交流......
+http://www.sohu.com/a/414983699_308467	26626
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200826/8717a944878244b091a68e00d1f3d6b7.png" max-width="600" /></p>
+<p><strong>大数据文摘出品</strong></p>
+<p><strong>作者：刘俊寰</strong></p>
+<p>818的退货都收到了吗？</p>
+<p>是不是都收到了某宝卖家的统一回复，<strong>“亲亲，这边建议您多使用一段时间呢”</strong>。</p>
+<p>不知道你是不是和文摘菌一样，每次看到这句话，都有一种<strong>被嘲讽的感觉</strong>。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200826/2e4d02b525ab4b49b81258bce1be37d2.png" max-width="600" /></p>
+<p>试想，要是这些服务号能够用“真身”和你进行对话，就像视频通话那样，是不是就少了很多尴尬呢（并不，感觉更尴尬了）。</p>
+<p>现在，美国一家初创公司UneeQ就做了这么一件事，他们把用于公司对外服务的服务号<strong>用AI技术以数字人的形式进行了构建</strong>，也就是说，现在不仅能听到“亲亲”，还能和这个数字人进行眼神交流（尴尬溢出了屏幕）。</p>
+<p>可不要以为这个数字人只能在这方面派上用场，在国外，这些数字人也广泛用于防疫工作中。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>目前，UneeQ推出了<strong>免费的健康顾问</strong>，主要用于<strong>教育人们</strong>，和<strong>防止错误信息的传播</strong>。在收到人们的相关询问后，他们会迅速扫描世界卫生组织和疾病控制与预防中心的数据库，找到能够匹配的答案信息，随后以对话的形式反馈呈现给用户。 </p>
+<p><strong>4步创建一个数字人物，就像穿搭小游戏一样</strong></p>
+<p>UneeQ这家公司相当年轻，2010年才成立，初身还是一个视频会议技术平台。</p>
+<p>业务转折发生在2016年，当时UneeQ参与了一个项目，这个项目旨在<strong>通过语音，而不是键盘和鼠标，为残疾人士提供更好的获取信息的方式</strong>。</p>
+<p>同时，随着近年来人机交互相关技术的发展，他们决定进行业务转向，希望能够通过这种新型交互方式为人们提供一种可访问的优质服务。</p>
+<p>说了这么多，创建一个数字人需要几步？</p>
+<p>UneeQ给出的答案是：<strong>4步，不仅免费，而且非常简单</strong>。</p>
+<p>首先需要进行简单的<strong>注册</strong>。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200826/10471b4b31514047882cd0d6f6f760c5.png" max-width="600" /></p>
+<p>进入正式的创建步骤，需要先为你的数字人<strong>选择一张脸</strong>。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200826/b304f762bd034ae49c54b8b2658a506a.png" max-width="600" /></p>
+<p>然后，再<strong>选择一个背景</strong>。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200826/fd262744515a41c3980e9dff2b5e3a78.png" max-width="600" /></p>
+<p>再给他<strong>取一个名字</strong>。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200826/d57fa4e8a17642889b50f71939816fc4.png" max-width="600" /></p>
+<p>最后，<strong>决定他的语言和腔调</strong>。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200826/2e6c951a515846d2a1f7e432d4469b9c.png" max-width="600" /></p>
+<p>你的数字人物就创建完成了，是不是感觉<strong>很像那些穿搭小游戏</strong>（不是）。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200826/50a01201df134aa38a55864af746d417.png" max-width="600" /></p>
+<p>数字人创建成功后，你可以点击页面右方的按钮，和他进行对话，<strong>听数字人回答关于自身的问题</strong>，怎么突然变得哲学起来了。</p>
+<p>官网链接：</p>
+<p>https://digitalhumans.com/</p>
+<p>根据文摘菌创建的这个数字人介绍，他们是一群<strong>由AI驱动、能够和人类一样进行简单的交流和沟通、并且保持24小时在线</strong>的虚拟人物。他们经常出现在那些缺乏人性化体验的用户服务场景中，比如客户服务、零售、医疗保险、银行金融等领域，<strong>宝马、瑞银</strong>等都是他们的客户。</p>
+<p>这个数字人还说到，他们拥有简单的人类情感，能说<strong>英语、法语、西班牙语、葡萄牙语和荷兰语</strong>等多种语言，还可以每周7天每天二十四小时全时“上班”不喊累。</p>
+<p><strong>消除准入障碍，建立全球首个对话式AI数字人平台</strong></p>
+<p>今年7月，数字人的创建平台<strong>UneeQ Creator</strong>首次面世，这也是<strong>全球首个对话式AI数字人创建平台</strong>。</p>
+<p>根据官网介绍，UneeQ Creator<strong>配备了谷歌、微软、亚马逊和IBM等公司的本机集成</strong>，提供了突破性的机器学习功能，由此能够轻松创建和部署独特的数字人能力，这些数字人能够在不同行业与人类进行自然地互动。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200826/1f10e1392d0f4a52bc4005beca32c035.png" max-width="600" /></p>
+<p>UneeQ创始人兼首席执行官Danny Tomsett说：“<strong>数字人的潜力是不可估量的</strong>。”</p>
+<p>“想象一下，你下次点外卖的时候，不是使用触摸屏，只是面对着数字人的脸部就能得到一些推荐，完成下单；或者，在医院，作为健康助手的数字人能够为手术前后的患者提供全天候的服务和支持。在新冠疫情后，每天都有许多新需求在增长，而随着技术的发展，这些设想在未来都能变成现实。”</p>
+<p>借助UneeQ Creator，UneeQ揭开了对话式AI的既复杂又神秘的面纱，这些数字人能够在企业中以高度可定制的员工形象与目标受众建立更深层的情感联系。</p>
+<p>“这是<strong>对话式AI的巨大飞跃</strong>，”Tomsett说，“<strong>UneeQ Creator消除了复杂的准入障碍，这也是迄今为止很多公司失败的地方</strong>”。</p>
+<p>企业如何在线下模式失效的现在准确捕捉消费者心理，数字人会成为一个可能的答案。</p>
+<p>多项研究表明，有效的沟通和情感联系会受到语气和肢体语言的影响，<strong>数字人的出现可以弥补话语场景缺失的情况</strong>，他们可以解读用户所说的话背后的含义，适应他们的非语言回应，从而创造出更有意义和逼真的人类对话。这是目前市场上其他数字平台所无法提供的。</p>
+<p>不仅如此，UneeQ Creator还能让拥有已有的聊天机器人集成其自然语言处理软件，使他们进化为交互式数字人。如果你是对话式AI新手，你也可以在UneeQ Creator上进行探索和试验，利用本地Google Dialogflow集成创建一系列对话，就像文摘菌做的那样。</p>
+<p>说了这么多，想要体验功能升级版的交互式数字人肯定也不是免费的，每月需要支付<strong>最低899美元</strong>，这些功能包括：</p>
+<ul>
+<li class="ql-align-justify">多种数字化人类变体</li>
+<li class="ql-align-justify">虚拟背景设计</li>
+<li class="ql-align-justify">角色创建</li>
+<li class="ql-align-justify">自主和有监督的行为</li>
+<li class="ql-align-justify">语音和语言自定义</li>
+<li class="ql-align-justify">集成NLP</li>
+<li class="ql-align-justify">与数字人聊天或聊天的功能</li>
+<li class="ql-align-justify">能够在网站、社交媒体平台或任何其他数字环境中进行部署</li>
+</ul>
+<p>根据数字营销研究公司Outgrow发布的报告预测，到2020年底，将有<strong>80％的公司使用对话式AI</strong>。根据Adroit Market Research的数据，全球对话式AI平台市场规模预计将从2019年的40亿美元增长到<strong>2025年的170亿美元</strong>。</p>
+<p>如今，数字人已经被广泛用于全球品牌形象大使、数字影响者、客户支持代表和顾问等。UneeQ Creator的实现使任何企业都能拥有自己的数字人，从而提高客户效率，不过还有一个问题，如果你是客户或消费者，你会愿意使用数字人吗？</p>
+<p>相关报道：</p>
+<p class="ql-align-justify">https://www.businesswire.com/news/home/20200728005336/en/UneeQ-Drives-New-Human-Machine-Interface-Unveiling</p>

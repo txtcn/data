@@ -1,0 +1,124 @@
+➜最浪漫数据分析：二战期间，祖父给祖母的300多封信里都写了什么
+http://www.sohu.com/a/414808564_308467	25961
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200825/a542b18ab6554f65868f6cffe2da0484.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>大数据文摘出品</strong></p>
+<p class="ql-align-justify"><strong>来源：medium</strong></p>
+<p class="ql-align-justify"><strong>编译：朱科锦</strong></p>
+<p class="ql-align-justify"><strong>时值七夕，本文作者Darien Mitchell-Tontar想用一个特殊的方式度过，他用自然语言处理(NLP)分析了二战期间他的祖父母之间的往来信件</strong>，给了自己一次重新认识祖父母的机会。文摘菌在感叹还能有这种操作的同时，也被撒了满满一口狗粮~</p>
+<p class="ql-align-justify">不信你就继续看下去~</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200825/3c1d29fb15dc4ffdb0160e7ebdf1fb10.gif" max-width="600" /></p>
+<p class="ql-align-justify">祖父在我五岁时就去世了，我对他的印象很模煳，除了封面图这张模煳的照片，这是他在美国陆军担任医疗官时的留影。</p>
+<p class="ql-align-justify">直到几年前，我的姑姑打出了300多封我的祖父Silvio Tontar在第二次世界大战期间写给祖母Annette的信。我也因此获得了一次<strong>重新认识我祖父的机会</strong>。刚好我正在学习自然语言处理，我想看看我是否可以使用文本数据来感受他的情况。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">比如他什么时候开心（如果他有开心的时刻的话）？他什么时候不高兴？随着时间的流逝，他的语言习惯如何变化？我的目标是使用数据科学更轻松地回答这些问题，而不需要一遍又一遍地重复阅读这些信。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200825/796b95ec066b4b87ad495b4814c5f5d7.jpeg" max-width="600" /></p>
+<p>我的祖父母，这张照片是在我祖父被派往国外之前拍摄的。</p>
+<p><strong>数据</strong></p>
+<p class="ql-align-justify">所有数据内容是我的祖父在1942年5月13日至1945年11月10日担任美国陆军医疗官期间写的310封信。我的祖父母于1942年2月结婚。祖父在西南太平洋地区，主要是澳大利亚，新几内亚，菲律宾，度过了三年半的军旅时光。在他们投降后，祖父离开他海外生活的最后一站，日本，返回了家乡。</p>
+<p class="ql-align-justify">在这段时间里，我的祖父从未忘记过对他最重要的事情：我的祖母。我很佩服他给她写信的坚持，以及他一直以来积极的生活态度（更多内容见下文）。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200825/6ecacca494be408baa239053fde93821.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">绝大多数信件的书写时间间隔很短，最长只有20天。</p>
+<p class="ql-align-justify">如你可见，他在整个战争期间都设法以固定周期写信。可以想象，写信对他来说是很治愈的，更何况信是他与妻子和家里其他人联系的唯一方式。</p>
+<p><strong>情绪分析</strong></p>
+<p class="ql-align-justify">在清除文本数据之前，我想从原始文本中获取尽可能多的信息。情绪分析法就可以实现这个目标。我想看看我是否可以用他的话来理解他在战争中的感受。为此，我使用了VADER情绪分析法，该方法给每一小段文字打出四个得分指标。正极性，中性和负极性分别代表文本中积极，中性和负面情绪的比例。而总分是用于衡量文本情感的归一化加权单个度量：</p>
+<p class="ql-align-justify"><strong>１．积极情绪：总分 &gt; = 0.05</strong></p>
+<p class="ql-align-justify"><strong>２．中性情绪：（总分 &gt; -0.05）和（总分 &lt;0.05）</strong></p>
+<p class="ql-align-justify"><strong>３．负面情绪：总分 &lt;= -0.05</strong></p>
+<p class="ql-align-justify">首先，我制作了一张积极情绪和负面情绪随着时间变化的图。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200825/afb146dd790145c0bb7f990ac6b37b50.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">每封信中使用的正面词汇和负面词汇的百分比</p>
+<p class="ql-align-justify">我的祖父在战争期间情绪平静地令人惊讶。尽管情感分数之间的差距在战争末期开始逐渐减少，但他的语言始终更加积极。尽管他可能已经受够了，并且很想回家。</p>
+<p class="ql-align-justify">看完这张图后，我对峰值的数据很感兴趣。我按正极性等级对信件进行排序，发现最积极的信是类似下文这样的短明信片：</p>
+<p>1944年5月5日，新几内亚</p>
+<p>亲爱的，</p>
+<p>一切都很好。我感觉很棒。我游了泳还晒了日光浴。</p>
+<p>爱你的，</p>
+<p>Silvio</p>
+<p class="ql-align-justify">这封短信让我觉得很温暖，正极性得分高也就不足为奇了。</p>
+<p class="ql-align-justify">我决定按总分排序来看看是否可以找到更长的信。这是他得分最高的信的节选。写于1942年9月6日，澳大利亚：</p>
+<p>…我感觉事情要发生改变了。让我告诉你一件事，我没有刚离开家时那样悲观了。亲爱的，你好吗？当你收到这封信时，热天气将会过去，你会享受秋天的。我正在朝着春天和炎热的天气前进。亲爱的，不用担心我。我感觉很好，胃口好，吃得很好。如果我有你在这里陪我，我会很高兴的…</p>
+<p class="ql-align-justify">这封信相当乐观，而且写于他出国初期。从情感分析入手，我可以阅读更多信件并从中看到共同的主题，从而提高自己的专业知识。</p>
+<p class="ql-align-justify">即使我的祖父情绪低落，他仍然保持乐观。这是他负面得分最高的一封信，写于1944年7月7日（在比雅克战役期间），南太平洋：</p>
+<p>…我毫不夸张地说，在距我十码的半径范围内，有十二枚以上的炮弹爆炸，其中一些炮弹离我很近，以至于我身上沾满了灰尘。机关枪和步枪子弹在离我只有几英尺远的地方继续发出可怕的啸叫声，有时他们离我只有几英寸远。有一天，一群子弹就在我头皮边擦过。我一整天都在被袭击，两个小时内就有两次袭击，他们不断地将弹丸降落到我附近，我能毫发无伤的活下来真的是个奇迹。我真的很幸运…</p>
+<p class="ql-align-justify">那段摘录甚至不是最糟糕的部分。在其他时候，他谈论自己是如何失去希望，对战争失去信心并质疑战争的目的。但是，在信的结尾却恢复了乐观。和上文来自同一封信：</p>
+<p>…我现在吃的很好。我有水喝。我每天可以洗个澡。我之前可是好几个星期没有洗脸和刮胡子！闻起来就像只臭鼬！这是一个悲伤的故事。但这就是生活。我现在感觉很好，非常非常爱你。我现在甚至有时间做梦，做长长的白日梦，梦到以后我回家见你的场景。哦对了，我爱你。</p>
+<p>我是你的，</p>
+<p>Silvio</p>
+<p class="ql-align-justify">在了解了这么多信件的信息以后，我可以进行更深入的分析了。</p>
+<p><strong>探索性数据分析</strong></p>
+<p class="ql-align-justify">自然语言处理的一个常见起点是从语料库中删除最常见的单词。这是因为它们没有为你提供有关每个文档的最有价值的信息。我想知道是什么使每封信或信集合与众不同，以便最终从中提取含义。</p>
+<p class="ql-align-justify">除去最常见的单词和其他一些通用的单词之后，我制作了单词序列，追踪他在信中使用的语言并将其与正极性相匹配：</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200825/96720b413b1942318d8a10174b2cd588.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200825/2ed7ca8170d74be48cc6db9b9ce59840.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">按季度（每三个月）收集的信函中最常见的单词</p>
+<p class="ql-align-justify">我喜欢这种视觉效果，它本身就是一个故事。它显示了他整个服役过程中的共同主题。你可以看到他的季节性问候，也可以看到他在战争开始时也许更放松一些，可以在他的感觉和他所使用的词之间建立联系。还有，后期的信件好像反映出祖父预感到了战争将要结束。</p>
+<p class="ql-align-justify">一个有趣的历史事实是，上面提到的比雅克战役发生在1944年5月27日至1944年6月22日之间，而我祖父的部队在这场战斗中受到了沉重打击。你可以看到他的正极性从1944年6月开始下降。</p>
+<p class="ql-align-justify">这是一个非常酷的视觉效果，它向我们介绍了很多有关信件的内容，接下来，我想更深入地研究并尝试提取出他的作品中出现的一些主要的重复出现的主题。</p>
+<p><strong>主题建模</strong></p>
+<p class="ql-align-justify">主题建模是一种无监督的机器学习算法，可使我们将特征从数千个（在本例中为数千个单词）减少到少于十个。然后，我们可以查看每个“主题”中最突出的词并进行解释，因此这种方法被命名为主题建模。这是一种无监督的算法，因为文本文档在开始时就没有被分配到主题标签。这与我上一个项目相反，在上一个项目中，每个美国县都被标记为“有风险”或“没有风险”，我训练了带有这些标签的模型。在这里，我们基本上是根据我们的分析推断出自己的标签。</p>
+<p class="ql-align-justify">几乎关于所有文本数据都正确的一件事是，文本非常混乱。我采取的一些清理数据的步骤是：</p>
+<p class="ql-align-justify"><strong>1、预处理：</strong>删除标点符号，将所有单词都变为小写，删除不重要的单词（在我的情况下，删除位置名称和祖父母的姓名，因为几乎每封信都提到了这些名称）。</p>
+<p class="ql-align-justify"><strong>2、合理化：</strong>将词的变形形式组合在一起，以便可以将它们作为单个项目进行分析（例如，“行走”和“走路”对于我们而言基本上是相同的）。</p>
+<p class="ql-align-justify"><strong>3、过滤字母，使它们仅由名词和形容词组成</strong>。在运行初始模型后，这使我能够提取更多含义。</p>
+<p class="ql-align-justify">清除文本后，我几乎已经准备好去拟合模型了，但是这里的主要问题是计算机倾向于使用数字。</p>
+<p class="ql-align-justify">使用术语，频率-逆文档频率或TF-IDF，我们可以将文本语料库转换为数据框，其中每一行是一个文档（在这种情况下为信件），每一列是一个单词。这些条目是TF-IDF值，我们可以将它们视为一个单词在一封信中的重要性的权重。TF-IDF的优点在于，它还考虑了单词在所有字母中出现的次数，这样做可以降低这些单词的重要性，因为它们对于确定独特，抽象的主题并贡献没有多大价值。</p>
+<p class="ql-align-justify">最后进入令人兴奋的部分。我使用非负矩阵分解（NMF）对字母进行聚类，结果如下：</p>
+<p class="ql-align-justify"><strong>主题1：</strong></p>
+<p class="ql-align-justify"><strong>战争，医院，期待，医疗，海外，结束，新闻，任务，军官，变化</strong></p>
+<p class="ql-align-justify"><strong>主题2：</strong></p>
+<p class="ql-align-justify"><strong>圣诞节，图片，早上，去，晚餐，冷，高尔夫，玩，人，温暖</strong></p>
+<p class="ql-align-justify"><strong>主题3:</strong></p>
+<p class="ql-align-justify"><strong>联合电报，西联电报，西联电报，联合，通塔，电报，旧金山</strong></p>
+<p class="ql-align-justify"><strong>主题4:</strong></p>
+<p class="ql-align-justify"><strong>日本，岛屿，本土，菲律宾，雨，菲律宾岛，敌人，战役，湿，登陆</strong></p>
+<p class="ql-align-justify"><strong>主题5：</strong></p>
+<p class="ql-align-justify"><strong>船，海，陆，台风，平静，今晚，库尔，早晨，海湾，岛屿</strong></p>
+<p class="ql-align-justify"><strong>主题6:</strong></p>
+<p class="ql-align-justify"><strong>生日，妻子，心爱的人，快乐，心爱的妻子，记得，感觉，能够</strong></p>
+<p class="ql-align-justify">我鼓励你自己考虑这些主题，看看是否同意我对以下主题的解释：</p>
+<p class="ql-align-justify"><strong>主题1：职责</strong></p>
+<p class="ql-align-justify"><strong>主题2：舒适度/规范化</strong></p>
+<p class="ql-align-justify"><strong>主题3：金钱（他经常寄钱回家）</strong></p>
+<p class="ql-align-justify"><strong>主题4：内在冲突/斗争</strong></p>
+<p class="ql-align-justify"><strong>主题5：海上旅行</strong></p>
+<p class="ql-align-justify"><strong>主题6：浪漫</strong></p>
+<p class="ql-align-justify">进一步研究这些主题的一种好方法是查看它们在信件中的出现频率如何随着时间变化。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200825/a6bf670e2531431d8a6c532dd552c0bf.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">信件主题根据时间的变化。信按照季度分组。</p>
+<p class="ql-align-justify">如你所见，旅行的主题在服役开始和结束时都比较普遍。在他服役开始之初，诸如“值班”和“浪漫”之类的话题更为常见，而“内在冲突/斗争”和“职责”之类的话题在尾声更常见。</p>
+<p class="ql-align-justify">让我们再看一些信的摘录，这些都是最能体现每个主题的片段（我省去了“金钱”和“海上旅行”）。</p>
+<p>主题1：值班，来自1945年7月31日</p>
+<p>…我已经在海外呆了很长时间了，我得到了军功。我想带着荣誉回家，带着清醒的头脑回家。另一种方式是等待和期盼。我很健康，自从参军以来就没有浪费一天，我可以扮演“精神病”或“疯子”的角色来逃脱军役。我不屑这种做法……</p>
+<p>主题2：舒适度/规范化， 1942年10月19日</p>
+<p>…我打了高尔夫球，但我打得很糟糕。你能想象我和一个曾经的冠军一起玩吗？我在高尔夫球场遇见了他。他邀请我加入他的小组。保罗不能来，他很忙。我不仅和他打高尔夫球，他还邀请我去他家吃饭，然后睡觉……</p>
+<p>主题4：内在斗争/冲突，1945年4月9日</p>
+<p>…我乘着一艘颠簸的小船航行，我一直不停的呕吐直到肝脏排出的黄色胆汁也从我的嘴中吐出来。我好惨…</p>
+<p>…我听到一些子弹在空中飞来，但没有一个落在我附近…</p>
+<p>…地形是另一个麻烦。这是个崎岖不平的山脉。我不得不在陡峭的山上上下爬。我不得不在河流和小溪深处涉水。我被雨淋湿了，还不止一个晚上下半身湿着在雨中睡觉…</p>
+<p>…我见过许多菲律宾人，听到他们在日本统治下的可怕经历，人民衣衫褴褛…</p>
+<p class="ql-align-justify">这封信很有趣，因为它涉及到他所面对的几种不同类型的困难。疾病，危险，以及他来信中常提到的原住民所遭受的待遇。</p>
+<p>主题6：浪漫， 1943年4月18日</p>
+<p>…你还记得我从行驶中的汽车向你招手吗？你站在窗户旁边，我可以看到你的眼泪。整整一年过去了，看看我现在的位置，我在离你很远的丛林中。我问自己“他们会让我远离我心爱的妻子多长时间啊”，一年时间太长了…</p>
+<p class="ql-align-justify">我知道我在挑选我的文章，但是这些主题使我更容易挑选信件，而且我认为他们在按“主题”解析信件方面做得很好。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200825/fbd557ae80b74ed2a31f046f4a7e580d.jpeg" max-width="600" /></p>
+<p class="ql-align-center">我和祖父</p>
+<p><strong>结语</strong></p>
+<p class="ql-align-justify">在开始这个项目之前，我知道祖父是个伟大的人，但是现在我终于明白了为什么。我的祖父冒着生命危险，忍受了三年半的苦难，以保护数百万他不认识的人安全。这就是我撰写此博客时我们的医护人员为我们所有人所做的事情。这些人的特殊之处超出了我的表达能力范围，为此，我认为以祖父的话而不是我的话作为结论是合适的，因为他是英雄，但却不自知。我们可以从他和他这样的人那里学到很多东西。</p>
+<p>1943年4月18日（与上文来自同一封信）</p>
+<p>…很高兴知道当我从死亡中救出一个人时，我会让一个我从未见过且永远不会见的人变得非常高兴。这种感觉没有钱可以买到。它可以部分弥补医生所经历的苦难和不适。我很高兴并愿意尽我所能。我希望他们可以考虑一下让我休息一下，让我尽快回家，与世界上最好的女士，我心爱的妻子在一起…</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200825/3c1d29fb15dc4ffdb0160e7ebdf1fb10.gif" max-width="600" /></p>
+<p class="ql-align-justify">吃完了这篇来自上个世纪的“狗粮”，是不是也想赶紧找到自己的“灵魂伴侣”？那么，什么样的特质会影响你的恋爱能力？</p>
+<p class="ql-align-justify">这里有一份评估指数帮你<strong>测一测</strong>。</p>
+<p class="ql-align-justify">数据来自哥伦比亚大学的一份研究，整个实验的数据收集于一个线下快速相亲的实验，参与者被要求参加多轮与异性进行的快速相亲，每轮相亲持续4分钟，在4分钟结束后，参与者双方会被询问是否愿意与他们的对象再见面。只有当双方都回答了“是”的时候，这次相亲才算是配对成功。</p>
+<p class="ql-align-justify">在8000多次试验后，研究组总结了一份指标，通过几个简单的特征来评估你的“一见钟情指数”。</p>
+<p class="ql-align-justify">正式开始实验之前，我们需要寻找一个简单好用方便上手的工具，这里推荐一波阿里云的PAI-DSW探索者版，它对于个人开发者是<strong>免费</strong>的，登陆即可使用，还有神秘奖品赠送哦。</p>
+<p class="ql-align-justify">接下来，我们就通过这个工具来一起探索人性的奥秘，<strong>戳</strong>海报二维码，走进两性关系的神秘空间👇</p>
+<p>相关报道：</p>
+<p>https://medium.com/@darien.pmt/metis-weeks-6-8-569f9aa752e2</p>
