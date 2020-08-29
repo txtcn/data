@@ -43,14 +43,14 @@ https://www.appinn.com/wancai-donghua-202008/	26534
 <p>升级好后，打开万彩动画大师软件，登录已升级好的账号，就可以获得特别版的使用权限。</p>
 ➜如何指定 Windows 10 文件夹布局与排序方式？
 https://www.appinn.com/shellbagsview-nirsoft/	33633
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202008/shellbagsview.jpg!o" alt="如何指定 Windows 10 文件夹布局与排序方式？ 3" title="如何指定 Windows 10 文件夹布局与排序方式？ 5"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202008/shellbagsview.jpg!o" alt="如何指定 Windows 10 文件夹布局与排序方式？ 5" title="如何指定 Windows 10 文件夹布局与排序方式？ 7"></figure></div>
 <p>来自<a href="https://meta.appinn.net/t/win10/18572" class="rank-math-link" target="_blank" rel="noopener">问题频道</a>的求助：<strong>Win10文件资源管理器下有办法为文件夹指定布局与排序方式吗？</strong></p>
 <p>Windows 的文件资源管理器在这方面一直很谜，我一直就没搞懂下次打开一个文件夹的时候它会以什么样的视图来显示，或者会不会把我原来指定的排序给重置了。</p>
 <p>言归正传，需求如题。打个比方，我希望指定 C 盘根目录始终以“详细信息”视图、按名称降序排列，同时指定“我的文档”目录始终以“大图标”视图、按最后修改时间升序排序，如此等等，无论我在其他文件夹下如何修改视图、排序等设置，在我再次打开这些设置过的文件夹时都不会受到影响。不知道有没有能够满足这个需求的解决方案？</p>
 <hr class="wp-block-separator"/>
 <p>从问题频道的讨论结果来看，这个问题本身并没有被解决，但<a href="https://meta.appinn.net/t/win10/18572/6?u=qingwa" class="rank-math-link" target="_blank" rel="noopener">小恐龙</a>推荐的 ShellBagsView 倒是一个不错的解决方案。</p>
 <p><strong>ShellBagsView</strong> 来自小工具开发商之王 <a href="https://www.appinn.com/tag/nirsoft/" class="rank-math-link">Nirsoft</a>，是一款专门用来显示并批量设置 Windows 10 文件夹显示方式的小工具。</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202008/screenshot-2020-08-26-at-17-07-03-1.jpg!o" alt="如何指定 Windows 10 文件夹布局与排序方式？ 4" title="如何指定 Windows 10 文件夹布局与排序方式？ 6"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202008/screenshot-2020-08-26-at-17-07-03-1.jpg!o" alt="如何指定 Windows 10 文件夹布局与排序方式？ 6" title="如何指定 Windows 10 文件夹布局与排序方式？ 8"></figure></div>
 <p>根据 <strong>ShellBagsView</strong> 的描述，每次在资源管理器中打开文件夹时，Windows 便会自动将此文件夹的设置保存到注册表中，包括显示样式、打开时间、最后位置、大小等信息。</p>
 <p>而 <strong>ShellBagsView</strong> 就是读取的这些信息，并提供一个批量设置模式的选项，你只需要选中想要调整的文件夹，然后右键选择“<strong>设置模式</strong>”即可在：</p>
 <ul><li>平铺</li><li>详细信息</li><li>目录</li><li>列表</li><li>小图标</li><li>中图标</li><li>大图标</li></ul>
