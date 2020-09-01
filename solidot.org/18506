@@ -4,3 +4,6 @@ https://www.solidot.org/story?sid=65406	10162
 ➜英特尔更新 MKL，旧的方法失效
 https://www.solidot.org/story?sid=65407	12376
 英特尔的 Math Kernel Library (MKL)是科学计算领域广泛使用的数学库，但它对竞争对手 AMD 的 CPU 非常不友好，即使 AMD CPU 支持 AVX2 或 <span id="intelliTXT" name="intellitxt">SSE3-SSE4</span>，MKL 也只用 SSE1。如果要让 MKL 更好的支持 AMD CPU，用户<a href="https://www.solidot.org/story?sid=62760" target="_blank">需要修改</a>系统环境变量，设置 MKL_DEBUG_CPU_TYPE=5，强行在 AMD CPU 上使用 AVX2。但英特尔<a href="https://danieldk.eu/Posts/2020-08-31-MKL-Zen.html">最近释出了</a> MKL 2020 Update 1+，移除了这一变量，旧的方法失效了。好消息是英特尔在 MKL 中加入了 Zen 内核，坏消息是 Zen 内核功能并不完备，所以更大的坏消息是科学计算软件在 AMD CPU 上性能又变差了，英特尔 CPU <a href="https://news.ycombinator.com/item?id=24332825" target="_blank">似乎又赢了</a>。<p>
+➜Level 3 网络故障导致全球流量下跌 3.5%
+https://www.solidot.org/story?sid=65408	18015
+8 月 30 日标准时间上午十点，美国网络服务商 CenturyLink/Level(3)  发现一个存在问题的  Flowspec 规则防止了 BGP 广播，导致其整个网络出现问题，而下游 ISP 和 CDN 服务商跟着出现访问问题。Flowspec 是 BGP 的一个扩展，允许防火墙规则在整个网络之间快速发布，它可以在极短时间内推送新防火墙规则，如果正确使用的话，它是一个强大的工具，但如果出现错误的话，它可能会造成巨大的影响。Level 3 网络故障的起源很可能是它试图发出新的 Flowspec 规则去屏蔽网络中的攻击或其他问题。Level 3 宕机期间<a href="https://blog.cloudflare.com/analysis-of-todays-centurylink-level-3-outage/">导致全球流量下跌了 3.5%</a>。<p>
