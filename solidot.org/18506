@@ -1,0 +1,6 @@
+➜Facebook 准备不允许澳大利亚出版商和用户分享新闻
+https://www.solidot.org/story?sid=65406	10162
+澳大利亚正在起草新的规章制度，<a href="https://www.solidot.org/story?sid=65113">试图强迫</a>美国科技巨头 Facebook 和 Google 为新闻内容向当地新闻机构付费。Google 已经公开对此表达了不满，而 Facebook 则采取行动<a href="https://about.fb.com/news/2020/08/changes-to-facebooks-services-in-australia/">宣布</a>一旦新的规定成为法律它将不再允许澳大利亚的新闻出版商和用户在 Facebook 和 Instagram 上分享当地和国际新闻。Facebook 称，澳大利亚忽略了重要的事实，最重要的是新闻媒体和社交媒体之间的关系，以及哪一方从另一方获益最大。社交巨人表示，停止分享新闻不是它的第一选择，而是最后的选择，称这是防止出现不合逻辑结果的唯一方法，而这个结果将损害而不是帮助澳大利亚新闻媒体。<p>
+➜英特尔更新 MKL，旧的方法失效
+https://www.solidot.org/story?sid=65407	12376
+英特尔的 Math Kernel Library (MKL)是科学计算领域广泛使用的数学库，但它对竞争对手 AMD 的 CPU 非常不友好，即使 AMD CPU 支持 AVX2 或 <span id="intelliTXT" name="intellitxt">SSE3-SSE4</span>，MKL 也只用 SSE1。如果要让 MKL 更好的支持 AMD CPU，用户<a href="https://www.solidot.org/story?sid=62760" target="_blank">需要修改</a>系统环境变量，设置 MKL_DEBUG_CPU_TYPE=5，强行在 AMD CPU 上使用 AVX2。但英特尔<a href="https://danieldk.eu/Posts/2020-08-31-MKL-Zen.html">最近释出了</a> MKL 2020 Update 1+，移除了这一变量，旧的方法失效了。好消息是英特尔在 MKL 中加入了 Zen 内核，坏消息是 Zen 内核功能并不完备，所以更大的坏消息是科学计算软件在 AMD CPU 上性能又变差了，英特尔 CPU <a href="https://news.ycombinator.com/item?id=24332825" target="_blank">似乎又赢了</a>。<p>
