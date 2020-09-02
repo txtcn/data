@@ -1679,3 +1679,64 @@ http://www.woshipm.com/it/4164913.html	13473
 <p>&nbsp;</p>
 <p>本文由 @王掌柜 原创发布于人人都是产品经理。未经许可，禁止转载</p>
 <p>题图来自 Pexels，基于 CC0 协议</p>
+➜关于B端产品列表的一些思路
+http://www.woshipm.com/pd/4165037.html	14231
+<blockquote><p>编辑导语：B端产品列表的设计和排列有很多种方法，本文作者基于自己的工作经历，对B端产品列表进行了初步的分析与总结，为我们分享了一些她的看法。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4165793" src="http://image.woshipm.com/wp-files/2020/09/Z6jsXkJz94ErC2PhKw31.jpg" alt="" width="900" height="420" /></p>
+<p>B端产品列表的内容量较大，所承载操作也就会多一些。</p>
+<p>在设计列表时，需要考虑用户操作的便捷和高效，由于是B端工具类产品，有些功能对于用户来说，是为了完成工作必须去做的操作。</p>
+<p>可能是每天1次或多次所以也要考虑操作的简单，能够在用户复杂和大量的工作中，为他们降低一点点的理解成本和学习成本，我想也是很好的吧！</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于B端产品列表的一些思路" src="http://image.woshipm.com/wp-files/2020/09/UUdh89B7nZK3mU4IzHQw.png" alt="关于B端产品列表的一些思路" width="805" height="149" /></p>
+<p>以下的内容是从近期的一次列表设计，总结的一些思路，不确定设计稿是不是可以发出来（虽然已经上线了，但是由于是B端的项目）所有有些地方做了一些脱敏处理。</p>
+<h2>一、列表1.0</h2>
+<p>列表基础操作像修改和删除，像是很多场景下都需要的，但这两个操作是不能满足业务需求的，根据业务的需要和实际场景来定义外漏与收起的数量，根据操作的优先级，来定义哪些操作是外漏的。</p>
+<p>以下是几个自己认为是注意事项的注意事项：</p>
+<h3>1. 在做工具类产品时，尽量使用文字来表示操作</h3>
+<p>icon固然好看，但文字在易读和理解上更简单一些（当然这里多指的是和业务相关的操作）。</p>
+<h3>2. 外漏与收起的数量，需要有一个通用的规范</h3>
+<p>这也是我在这次设计没有注意到的一个问题，有的页面的操作是7个，有的页面是4个，我在第一次做设计是，将操作做成了3+更多，就是外漏3个，其余都收起。</p>
+<p>但是遇到只有4个操作的时候，这种3+更多就很尴尬，那我就直接处理成了2+2。</p>
+<p>和技术同学沟通之后，在技术角度上扩展性和通用性就低了，那之后就统一处理成了2+更多，当操作小于等于3个时，全都外漏，大于3时，则留两个操作在外面，其余都收起。</p>
+<p>如图：</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于B端产品列表的一些思路" src="http://image.woshipm.com/wp-files/2020/09/uonvpzMjmTWDQGcKd8Yr.png" alt="关于B端产品列表的一些思路" /></p>
+<h2>二、列表2.0</h2>
+<p>列表的基础结构搭建好之后，再来看提升操作效率的功能，像是筛选、批量操作，都是帮助用户提升效率的方式，如图：</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于B端产品列表的一些思路" src="http://image.woshipm.com/wp-files/2020/09/61Fhi3JP55fViwDOHl8l.png" alt="关于B端产品列表的一些思路" width="1007" height="776" /></p>
+<h3>1. 筛选</h3>
+<p>在最初的列表筛选方案是，筛选后筛选的标题即变成选择的内容，如图：</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于B端产品列表的一些思路" src="http://image.woshipm.com/wp-files/2020/09/xMRTdYW8NtH6snfHbCSm.png" alt="关于B端产品列表的一些思路" width="1002" height="220" /></p>
+<p>这种情况多数适合单选的情况，但如果是多选，在展示时可能就有点纠结，给出了如下方案，好像也不是很便捷了；如果需要取消已选内容，还是需要点击开再删除，如图：</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于B端产品列表的一些思路" src="http://image.woshipm.com/wp-files/2020/09/RoVwlojKxOQZ0EaLY37V.png" alt="关于B端产品列表的一些思路" width="1002" height="255" /></p>
+<p>综上，给出了新的方案，似乎是可以满足这些需求了，如图：</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于B端产品列表的一些思路" src="http://image.woshipm.com/wp-files/2020/09/N0KAZYmbLfULy6xjQrSQ.png" alt="关于B端产品列表的一些思路" width="1000" height="352" /></p>
+<p>当选择的筛选内容时，给出小标签，可以直接看到自己选择的内容，也可以直接删除某某某。</p>
+<h3>2. 批量</h3>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于B端产品列表的一些思路" src="http://image.woshipm.com/wp-files/2020/09/5ntStIoW4C3dpmZSlUVN.png" alt="关于B端产品列表的一些思路" width="1002" height="794" /></p>
+<p>点击右上角的按钮（操作）将列表激活为批量勾选的状态，在未对内容进行选择前，底部的按钮为置灰状态。</p>
+<p>当对内容勾选后，则激活按钮，可进行操作；批量操作时，右上角“XX”操作这里思考了很久，到底是“完成”合适，还是“取消”合适——这应该是取决于对列表的操作与使用场景。</p>
+<p><strong>1）场景1</strong></p>
+<p>批量操作时只有一个操作，当勾选勾选勾选之后，去点击操作按钮，完成需要操作的动作，则完成了一次动作，列表恢复在默认状态。</p>
+<p>那这种时候，右上角的操作可为“取消”，那取消的含义就是在勾勾的时候，反悔了，不想继续去操作了，将编辑态变默认态。</p>
+<p><strong>2）场景2</strong></p>
+<p>当有多个批量操作时，那操作一个动作之后，则依旧停留在编辑态，可继续勾勾勾勾，那就需要手动去结束这个编辑态，则“完成”可能更加合适。</p>
+<p>注意的事儿：</p>
+<ol>
+<li>当底部按钮大于1时，可区分主次操作；</li>
+<li>若底部有很多很多很多操作，需要进行部分折叠。</li>
+</ol>
+<p>如图：</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于B端产品列表的一些思路" src="http://image.woshipm.com/wp-files/2020/09/PJBSk2jMv53haiW4TKJI.png" alt="关于B端产品列表的一些思路" width="1018" height="131" /></p>
+<h2>三、列表3.0</h2>
+<p>前面有提到，B端操作类的一个列表，想要给用户传达的就是简单、便捷、高效。虽然很多用户在使用微信时已经习惯的左滑删除这个操作，但从研发同学那里了解到，这仅仅是ios才有的操作。</p>
+<p>所以，这样的操作也是存在一些成本的，不论谁研发成本，还是用户的理解成本。</p>
+<p>如果场景需要可以注意，设计这样的方式，首次使用时，增加一个可爱的新手引导；当然这样的操作方式能够包含的操作也是很有限的，这种情况下，就不建议对操作再次隐藏了。</p>
+<p>所以俩个就好了，且对操作进行区分，如图：</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于B端产品列表的一些思路" src="http://image.woshipm.com/wp-files/2020/09/nA4YUAEpUSa2YAUZ5838.png" alt="关于B端产品列表的一些思路" width="1013" height="640" /></p>
+<p style="text-align: center;">（参考微信和ios的短信）</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于B端产品列表的一些思路" src="http://image.woshipm.com/wp-files/2020/09/TChUiqBx6m5PWqG98y8r.png" alt="关于B端产品列表的一些思路" width="1000" height="912" /></p>
+<p>最后：</p>
+<p>以上是在最近工作中提炼的一些内容，好一段时间自己都对列表这些基础页面（交互）有些误解，后来发现自己连列表都考虑不清楚。</p>
+<p>实际应用中可根据具体的使用场景、业务需求等适当调整，也不是全部覆盖，像排序、图文（资讯类）并不合适。如果以上内容有不合适的地方，也希望可以一起讨论，谢谢！</p>
+<p>&nbsp;</p>
+<p>本文由 @麻栗栗 原创发布于人人都是产品经理，未经许可，禁止转载</p>
+<p>题图来自 Pexels，基于 CC0 协议</p>
