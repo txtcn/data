@@ -1,0 +1,52 @@
+➜App Clip来了！iTC后台现已可提交苹果小程序！（附创建流程）
+http://www.sohu.com/a/414247400_100065715	27739
+<p>今天（8 月 21 日）七麦研究院观察到，<strong>iTC 后台现已可提交 App Clip</strong>。</p>
+<p>在进入 iTC 后台“我的 App”页面后，出现了一则关于轻 App 新功能的消息提示：<strong>新功能！轻 App 体验——轻 App 可提供简洁流畅的即时体验，帮助用户在现实场景中完成日常任务</strong>。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200821/5d151850931b4c188ff0fb74a77291c5.jpeg" max-width="600" /></p>
+<p>消息提示中所说的<strong>“轻 App”，也就是苹果在 WWDC20 中公布的 App Clip，即苹果小程序</strong>。</p>
+<p><strong>iTC帮助文档更新“设置轻App体验”</strong></p>
+<p>经七麦研究院实际测试发现，目前开发者已可以在 iTC 后台创建自己的“轻 App”。同时，App Store Connect 帮助文档也进行了相应更新，目前已增加“设置轻 App 体验”的单独条目。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200821/15722479d288412ab1f18f17504781fa.jpeg" max-width="600" /></p>
+<p><strong>轻App体验分默认和高级两种形式</strong></p>
+<p>目前，苹果为开发者提供了“默认轻 App 体验”和“高级轻 App 体验”两种方式，<strong>“默认轻 App 体验”只能通过 Safari 浏览器和“信息”调用，“高级轻 App 体验”则可以通过轻 App 码（内嵌网址和 NFC 标签）、二维码以及“地图”中的地点卡片调用</strong>。但“默认轻 App 体验”和“高级轻 App 体验”在创建时，首先都需要将关联的完整版 App 上传至 iTC 后台后，才可以编辑“轻 App”部分。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>以下为“默认轻 App 体验”和“高级轻 App 体验”两种方式的具体设置流程：</p>
+<p><strong>1、“默认轻 App 体验”设置流程</strong></p>
+<p>1、在 iTC 后台选择“我的 App”，选择想要设置的 App。</p>
+<p>2、在侧边栏中，选择需要添加轻 App 体验的 iOS App 版本。</p>
+<p>3、选择“轻 App”部分，输入必填的元数据。</p>
+<ul>
+<li>标题图像：必须为 JPG 或 PNG 格式、采用 RGB 色彩空间，且为 1800*1200像素。</li>
+<li>副标题：有助于表达轻 App 用途的简介短语。长度上限为 56 个字符。</li>
+<li>操作：轻 App 卡片上显示的按钮标签。需要选择最合适的动词。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200821/02eb964eff264ccdb148ffd0607945a2.jpeg" max-width="600" /></p>
+<p>当 Safari 浏览器或“信息”调用轻 App 体验时，这些元数据将显示在轻 App 卡片上。</p>
+<p>4、在页面的右上角，点按“存储”即可。</p>
+<p><strong>2、“高级轻 App 体验”设置流程</strong></p>
+<p>1、在 iTC 后台选择“我的 App”，选择想要设置的 App。</p>
+<p>2、在侧边栏中，选择需要添加轻 App 体验的 iOS App 版本。</p>
+<p>3、在“高级轻 App 体验”下方，点按“编辑高级体验”，开始设置高级轻 App 体验。新页面随即出现，并显示设置体验需要提供的信息，填好所需信息后，选择“下一步”。</p>
+<p>4、在轻 App 体验网址（URL）字段中，输入轻 App 体验的调用网址（URL）。轻 App 网址（URL）的套装 ID 已自动填入。点击“下一步”。</p>
+<p>5、填写轻 App 卡片所需要的信息。指明轻 App 是否与地点相关联。（可以查看每个字段旁边的提示，进一步了解该字段。）如果不关联地点，填完信息选择操作动词即可；如果关联地点，则需要选择适合轻体验的“地图”操作，并选择一个与此轻 App 体验关联的地点，回答完整 App 与此轻 App 体验关联地点的关系。</p>
+<p>6、回答有关此轻 App 体验所推广内容的问题。</p>
+<ul>
+<li>如果高级轻 App 体验中推广的企业或品牌与 App 所属的企业或品牌一致，请选择“My experience represents my app and brand”（我的轻 App 体验代表我的 App 和品牌）。</li>
+<li>如果轻 App 体验代表其他企业或品牌进行推广，请选择“My experience is promoting a different business or service” （我的轻 App 体验推广其他企业或服务）。 </li>
+</ul>
+<p>7、如果选择其他企业或服务，此处需要选择一个类别。</p>
+<p>8、最后，点击“发送给 Apple”即可。</p>
+<p>轻 App 体验设置完毕后，开发者即可在“轻 App 体验”页面上看到所有已配置的轻 App 体验及其状态。</p>
+<p><strong>轻App即苹果小程序</strong></p>
+<p>苹果在今年 6 月举办的 WWDC20 中，带来了一项 App Clip 的新功能，相当于苹果的小程序。App Clip 必须关联一个主产品，承载着主产品的一部分功能，用户无需下载完整的 App，即可通过 App Clip 快速访问并体验完整 App 的部分功能。</p>
+<p>⽆需下载和安装即可使⽤，⽤完即⾛的特点，对于⽤户⾼频使⽤的产品是尤其利好的，⽽在⼈们频繁接触以及⼀些必经场所的使⽤场景中，也会有助于提⾼该功能的被使⽤机率，⽐如⼩区、 办公楼、公交⻋的刷卡区域等。</p>
+<p>目前来看，App Clip 和微信小程序是有很多相似之处的，当然也有很多不同。如果App Clip 正式上线的话，它是否能取代微信小程序呢？对推广人来说又有哪些红利待挖掘呢？七麦研究院曾在 WWDC20 当天对新功能进行过详细分析（戳此可了解详情），并针对新系统 iOS14 进行过实测分析（戳此查看原文）。</p>
+<p><strong>写在最后</strong></p>
+<p>目前，经测试发现 <strong>App Clip 现已可以在 iTC 后台进行创建和编辑，但并不能运行</strong>。据苹果工程师消息称：<strong>App Clip 运行的功能需要等到正式版发布当天才可解锁</strong>。按照以往的时间，苹果的新系统一般会在 9 月正式发布，今年 iOS14 新系统上线后，App Clip 以及其他新功能是否能给大家带来更多好的体验或流量红利呢？让我们拭目以待~</p>
