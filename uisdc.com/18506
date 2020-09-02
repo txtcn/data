@@ -1,3 +1,371 @@
+➜一篇文章帮你了解AE动画插件Lottie的前世今生（附避坑案例）
+https://www.uisdc.com/lottie-past-and-present	59579
+<p>大家好，我是彩云。在动画落地的过程中，配合Lottie插件输出JSON动画文件是大家常用的方法。今天这篇分享，将会讲到Lottie这个插件怎么来的，为什么会叫Lottie？使用过程中有哪些需要注意的？具体又该如何正确使用？如果你对这里面的知识不大熟悉，那这篇文章或许能帮到你。</p>
+<p>我最近接手了一个新项目，团队想要做一些动态图标和logo。</p>
+<p>除了做用户体验和UI设计之外，我还是一名动效设计师，所以我接受了用AE和Lottie做动画的挑战。</p>
+<h4><span class="auto_menu">网页动画历史</span></h4>
+<p>在21世纪初，当flash还是网页动画之王时，每个设计师都在释放他们的创意。那时候网上炫酷炸裂的网站随处可见，只要你装了flash播放器，就可以正常浏览。其中有些看起来更像游戏，当时还没有像现在这么多规范约束，做的都比较随意。如果我们现在来分析它们，其中很多可能都没有符合用户体验设计原则。</p>
+<p>随着flash的消失，HTML成为使用标准以及用户体验的规范化，那些网站消失了。现在我们浏览的大多数网站都很容易使用，阅读体验也很好……但它们看起来也很普通和相似。</p>
+<p>在网页上落地一个动画所付出的努力和工作实在是太高了，设计师做出的动画给到开发，能实现的效果非常有限。除了成本高和繁琐外，从头开始用代码创建动画也会导致与设计稿相差甚远。直到Lottie出现，才迎来了转机。</p>
+<p><span class="img-zoom"><img alt="一篇文章帮你了解AE动画插件Lottie的前世今生（附避坑案例）" class="alignnone size-full wp-image-386916" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200901-1.jpg" width="800" height="383" /></span></p>
+<p>△ Lottie名字的由来</p>
+<h4><span class="auto_menu">Lottie是怎么来的？</span></h4>
+<p>Hernan Torrisi在2015年提出了在AE中导出动画的想法，使用他创建的一个叫Bodymovin的插件，能够导出JSON描述的动画。</p>
+<p>他还发布了史上第一个支持该格式的渲染器，并为浏览器提供了一个基于JS的播放器。</p>
+<p>在2017年，Airbnb的工程师看到了基于JSON的动画潜力，编写了可以渲染JSON文件的iOS和Android库，他们称之为「Lottie」。</p>
+<p>Airbnb的开发者将其作为一个开源平台，不仅是为了免费发布，也是为了打造一个社区。他们创建了一个github地址（https://github.com/lottiefiles）来与设计师和开发进行交流。这是一个与时俱进的好主意，使得Lottie得到快速发展。</p>
+<h4><span class="auto_menu">LottieFiles是什么？</span></h4>
+<p>LottieFiles（<a href="https://lottiefiles.com/">https://lottiefiles.com/</a>）是一个独立于Airbnb的平台，设计师可以在上面「上传，测试，购买和下载动画」，而这些只需要你有一个免费的账号。</p>
+<p>LottieFiles同时也是一个AE的插件跟Bodymoving类似，只是功能更加丰富，允许我们「预览」动画，「上传到」LottieFiles平台，保存到我们的电脑上，等等。</p>
+<p>作为插件的时候其实是比Bodymoving功能更为丰富一些，但彩云实际测试的时候发现，可能会由于网络问题导致刷新预览不及时的问题，这个大家可以在用的时候留意下。彩云给大家找了一个演示视频，一起看看吧。</p>
+<p>&nbsp;</p>
+<h4><span class="auto_menu">如何入门？</span></h4>
+<p>首先，你需要安装好插件，可以装Bodymovin或者LottieFile（<a href="https://lottiefiles.com/plugins/after-effects">https://lottiefiles.com/plugins/after-effects</a>）</p>
+<p>在项目的中间阶段，我没有太多时间去研究它，但我又希望能立马就用上。所以，我觉得先按自己的想法快速试一遍，而不是去官网一条条的看说明。我设计了一个简单的logo动画，这是一个拥有螺旋桨的无人机，我从Ai导入AE，并用3D图层做了一个旋转动画。</p>
+<p><span class="img-zoom"><img alt="一篇文章帮你了解AE动画插件Lottie的前世今生（附避坑案例）" class="alignnone size-full wp-image-386917" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200901-2.gif" width="640" height="360" /></span></p>
+<p>△ Logo动画</p>
+<p>当我准备导出它时，AE给我弹了一堆错误信息。我发现并非所有效果都能被支持。直到今天，3D图层依然不被支持。所以，在做之前，最好根据规范确认下，哪些动画可以被支持，哪些不支持。有时候，一些动画在web端支持，但在iOS和Android上却不被支持。</p>
+<p><span class="img-zoom"><img alt="一篇文章帮你了解AE动画插件Lottie的前世今生（附避坑案例）" class="alignnone size-full wp-image-386918" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200901-3.jpg" width="1080" height="376" /></span></p>
+<p>△ Lottie支持表</p>
+<h4><span class="auto_menu">使用技巧及建议</span></h4>
+<p>为web创建动画并不像传统视频动画那样，我们需要考虑几个我们从未考虑过的设置和格式选项。</p>
+<p>下面是Lottie的作者给出的一些建议</p>
+<ul>
+<li>保持简单：JSON文件应该尽可能的简洁和保持小的体积</li>
+<li>利用好AE的能力尽可能的减少额外的关键帧，例如多使用子父级方式而不是在每一个层上都添加一遍关键帧</li>
+<li>避免使用路径关键帧，因为它们会创建一个非常大的文档，会从路径上转换所有的顶点</li>
+<li>避免使用Wiggle表达式和自动追踪等技术，这些技术会产生大量的关键帧，做出这么大的文件可能会使用JSON文件变得非常大，从而对性能产生大的负面影响。</li>
+<li>在AE中需要将任何Ai，EPS，SVG或PDF图层转换为形状图层，否则会产生错误。</li>
+<li>导出文件时，以1倍图导出，图形上的每个像素都将转换成iOS和Android的点单位。这是Google汇总的DPS中的设备指标的「集合」 （https://material.io/resources/devices/），担心大家打不开网页，彩云贴心的为大家制作好了这份对照表，文末有获取方式。</li>
+<li>Lottie还不支持任何表达式或效果。</li>
+<li>蒙版或者alpha蒙版应该尽可能的小，它们的大小将影响Lottie的性能，所以最好避免出现它们或保持它们最小。</li>
+<li>混合模式，如叠加，屏幕，相加还不支持。</li>
+<li>图层样式，如投影，描边都还不被支持</li>
+<li>空图层可以使用，但为了让它正常工作，我们需要将可见打开，并将透明度设置为0。</li>
+</ul>
+<h4><span class="auto_menu">案例演示</span></h4>
+<p>接下来我将通过一个实际案例，一步一步教大家如何使用Lottie.</p>
+<p>导入图层，打开合成，选择所有图层，右键单击，选择从矢量图层创建形状。这将会创建出新的矢量图层，不至于在我们导出Lottie时给我们制造麻烦。</p>
+<p><span class="img-zoom"><img alt="一篇文章帮你了解AE动画插件Lottie的前世今生（附避坑案例）" class="alignnone size-full wp-image-386919" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200901-4.jpg" width="1080" height="675" /></span></p>
+<p>△ 转换图层</p>
+<p>我们需要删除所有AI文件，只保留新创建出的矢量图层。</p>
+<p><span class="img-zoom"><img alt="一篇文章帮你了解AE动画插件Lottie的前世今生（附避坑案例）" class="alignnone size-full wp-image-386920" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200901-5.jpg" width="1080" height="382" /></span></p>
+<p>△ 矢量图层</p>
+<p>我想为Logo做出3D的旋转动画，但因为它不支持，所以我不得不用传统的方式来模拟，我通过在x轴上改变宽度来模拟3D旋转产生的变化。</p>
+<p><span class="img-zoom"><img alt="一篇文章帮你了解AE动画插件Lottie的前世今生（附避坑案例）" class="alignnone size-full wp-image-386921" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200901-6.jpg" width="1080" height="173" /></span></p>
+<p>△ X轴方向上的缩放动画</p>
+<p>在我得到了想要的旋转动画以后，我创建了一个空对象来移动整个Logo，并使其「起飞」和「降落」。我在移动过程中使用了曲线，使得移动更加平滑。</p>
+<p><span class="img-zoom"><img alt="一篇文章帮你了解AE动画插件Lottie的前世今生（附避坑案例）" class="alignnone size-full wp-image-386922" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200901-7.jpg" width="672" height="510" /></span></p>
+<p>△ 空对象的位移路径</p>
+<p>正如我们之前写到的：空对象需要被转换为「可见」和「0%透明度」才能正常工作。</p>
+<p>当我把动画调整到我想要的效果后，接下来就用到了Lottie插件了。</p>
+<p><span class="img-zoom"><img alt="一篇文章帮你了解AE动画插件Lottie的前世今生（附避坑案例）" class="alignnone size-full wp-image-386923" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200901-8.jpg" width="1080" height="675" /></span></p>
+<p>△ 打开Lottie插件</p>
+<p>打开界面后，可以查看动画，上传lottie文件和将它保存到电脑上。为了做到这一点，需要有一个Lottiefiles账号。（彩云注：这一点来说，LottieFile插件会比Bodymovin功能要更全，LottieFile里面还提供了大量的免费模板哦）。</p>
+<p><span class="img-zoom"><img alt="一篇文章帮你了解AE动画插件Lottie的前世今生（附避坑案例）" class="alignnone size-full wp-image-386924" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200901-9.jpg" width="498" height="600" /></span></p>
+<p>△ Lottie 插件</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>通过这种方式来创建动画的方法是非常令人兴奋的，因为它保持了很高的质量，易于实现，并给我们创造亮点的产品提供了条件。</p>
+<p>因为我们是为页面打造的动画形式，而不是做一个动画视频，这里面需要适应和理解新媒体，我们需要清楚能做什么以及限制是什么。</p>
+<p>我相信在未来，我们将能够添加更多的特性到动画里，但就目前而言，最好保持简单。要记住一个设计原则，在很多情况下，少即是多。</p>
+<p><strong>彩云补充</strong></p>
+<p>提到lottie插件，就不得不提安装的问题。这里彩云给大家安利一个很方便实用的小工具，叫ExtensionManager，有mac和win版本，对于Adobe系列的软件插件，安装管理起来非常方便，直接拖进去就OK了。</p>
+<p><span class="img-zoom"><img alt="一篇文章帮你了解AE动画插件Lottie的前世今生（附避坑案例）" class="alignnone size-full wp-image-386925" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200901-10.gif" width="639" height="343" /></span></p>
+<p>插件安装神器+尺寸对照表+Lottie安装包的文件，链接: <a href="https://pan.baidu.com/s/1YWGsIoPQFGp86_Y3tV9ctw">https://pan.baidu.com/s/1YWGsIoPQFGp86_Y3tV9ctw</a> 提取码: ruig</p>
+<p>备用下载链接：<a href="https://share.weiyun.com/rFevqmFM">https://share.weiyun.com/rFevqmFM</a></p>
+<p>更多Lottie 教程：</p>
+<p>[link https://www.uisdc.com/lottie-dynamic-design-guide]</p>
+<p>[link https://www.uisdc.com/lottie-dynamic-design-guide-2]</p>
+<p>[link https://www.uisdc.com/lottie-dynamic-design-guide-3]</p>
+<p>欢迎关注译者的微信公众号：「彩云译设计」</p>
+<p><span class="img-zoom"><img alt="一篇文章帮你了解AE动画插件Lottie的前世今生（附避坑案例）" class="alignnone size-full wp-image-263083" src="https://image.uisdc.com/wp-content/uploads/2018/03/uisdc-dh-20180313-9.jpg" alt="如何做好下拉菜单细节设计？来看这篇超全面分析！" /></span></p>
+➜大厂都在用的轻拟物设计风格，本文教你四步完成！
+https://www.uisdc.com/light-imitation-style-2	62588
+<p>上期我们聊到了最近比较流行的轻拟物风格，科普了基础概念，如果你还没读过，可以前往阅读：</p>
+<p>[link https://www.uisdc.com/light-imitation-style]</p>
+<p>本期展开轻拟物的具体技法讲解和演示。</p>
+<h4><span class="auto_menu">轻拟物的核心知识</span></h4>
+<p>轻拟物本身也是拟物，所以它的核心基础和拟物设计师一致的，只是省略了更多复杂的细节。而对于整个拟物的体系来讲，最重要的东西实际上只有2个，形体、光影。</p>
+<p><strong>1. 形体表现</strong></p>
+<p>形体的表现，就是对图形外轮廓的样式的呈现。在过去我们写的图标分享中，有写过面性图标进阶的设计中，可以包含更多的细节、内部元素，而不是仅仅只有外轮廓。</p>
+<p><span class="img-zoom"><img alt="大厂都在用的轻拟物设计风格，本文教你四步完成！" class="alignnone size-full wp-image-387054" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sb-20200901-1.jpg" width="1080" height="470" /></span></p>
+<p>轻拟物的形体设计就要处于进阶面性图标或者更难的水平之上，即你要把这个图形的内容有明确的示意并画出来，而不是用抽象的图形做填充而已。</p>
+<p>比如大众点评的快速入口图标，虽然看起来很复杂，但是那是配色上的复杂，而不是形体轮廓上的具象化。</p>
+<p><span class="img-zoom"><img alt="大厂都在用的轻拟物设计风格，本文教你四步完成！" class="alignnone size-full wp-image-387055" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sb-20200901-2.jpg" width="910" height="800" /></span></p>
+<p>换句话说，拟物插画的图形基底，类似扁平插画风格图标，不能表现得太抽象，也不能增加过多的细节，需要一种恰到好处的平衡（玄学），这就非常考验设计师的判断和经验了。</p>
+<p>并且，在描绘轮廓的时候，新手尽可能的采取正视图来进行绘制，而不要通过俯视图、侧视图、斜视图等方法来呈现图形的多个面，这样难度会大幅度上升，比如下面这种情况。</p>
+<p><span class="img-zoom"><img alt="大厂都在用的轻拟物设计风格，本文教你四步完成！" class="alignnone size-full wp-image-387056" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sb-20200901-3.jpg" width="1080" height="405" /></span></p>
+<p><strong>2. 光影表现</strong></p>
+<p>除了形体外，光影就是整个拟物的灵魂了。</p>
+<p>当一个完整的图形完成填充色时，它是扁平图案，如果完成光影呈现的时候，它就是三维空间的立体图形，比如下面这个圆的案例：</p>
+<p><span class="img-zoom"><img alt="大厂都在用的轻拟物设计风格，本文教你四步完成！" class="alignnone size-full wp-image-387057" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sb-20200901-4.jpg" width="1000" height="500" /></span></p>
+<p>在拟物的设计中，我们对光影的定义是至关重要的，所以首先就是针对该图形确定光源的方向，是上方、前方、左上还右上，这对后续的设计有一连串的影响。</p>
+<p><span class="img-zoom"><img alt="大厂都在用的轻拟物设计风格，本文教你四步完成！" class="alignnone size-full wp-image-387058" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sb-20200901-5.jpg" width="1080" height="420" /></span></p>
+<p>如果对光影没有正确的解释，那么在制作细节的渐变角度、投影的使用上，就会产生错误的设计，造成光影视觉冲突和矛盾。</p>
+<p>在创建了光源以后，物体受到光线的影响就会产生明暗面和投影，可以简单划分成4个部分，高光、亮部、暗部、投影。</p>
+<p><span class="img-zoom"><img alt="大厂都在用的轻拟物设计风格，本文教你四步完成！" class="alignnone size-full wp-image-387059" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sb-20200901-6.jpg" width="1000" height="500" /></span></p>
+<p>这和我们学习的素描有一定的差异，美术中对光影的表现还会包含明暗交界、反光面，这对于轻拟物的来说负担太重，所以我们要去掉它们，接下来重点讲讲高光和暗部。</p>
+<p>高光是物体作为受光物对光源的直接反映，比如人像摄影中人眼眸中的高光就是对闪光灯的镜像表现，再或者一拳超人中男主光头上长期存在的高光配饰（多数动画的光头角色都有）……</p>
+<p><span class="img-zoom"><img alt="大厂都在用的轻拟物设计风格，本文教你四步完成！" class="alignnone size-full wp-image-387060" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sb-20200901-7.jpg" width="1080" height="675" /></span></p>
+<p>高光可以非常有效的增加画面的层次和对比性，让物体看上去更有冲击力和观赏性。</p>
+<p>而暗部，则完全是为了正常表现物体结构和弧度增加的示意，因为不在受光面，所以颜色会变暗。在实际操作过程中，我们可以通过渐变的方式开控制明暗的表达，但尽量不要直接手动设置一个渐变色出来，而是为它叠加暗部或亮部的黑白透明度渐变。</p>
+<p><span class="img-zoom"><img alt="大厂都在用的轻拟物设计风格，本文教你四步完成！" class="alignnone size-full wp-image-387061" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sb-20200901-8.jpg" width="1080" height="355" /></span></p>
+<p>了解这几个特性以后，下面，我们就通过一个实例来讲解一下轻拟物设计的过程吧。</p>
+<h4><span class="auto_menu">轻拟物实例演练</span></h4>
+<p>作为轻拟物的演示，直接画个图标讲一遍怎么操作是没什么用的，我们要从实际场景出发，用它来解决一些真实的问题。比如看看下面的 KFC 官方 APP 首页：</p>
+<p><span class="img-zoom"><img alt="大厂都在用的轻拟物设计风格，本文教你四步完成！" class="alignnone size-full wp-image-387062" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sb-20200901-9.jpg" width="751" height="800" /></span></p>
+<p>总结它的问题，不难发现首页顶部业务功能太多了，顶部图标就包含30个（加滑动的），虽然每个模块图标单看都没有硬伤，但堆积到一起，就使得顶部缺乏足够的信息层级和对比性。</p>
+<p>我们要做的，就是通过轻拟物的方式，调整快速入口最大的三个图标，凸显它们的重要性以及和其它图标的视觉差异性。先从第一个图标开始，讲解一下如何完成轻拟物化设计的升级。</p>
+<p><strong>第一步：确认轮廓造型</strong></p>
+<p>第一个操作，即确定图标本身的轮廓。根据原有图标的样式我做了一些改动，包括加粗车头，减少高度，增加车灯等。并对每一个模块进行纯色的填充，定义它们的色彩和做出区分。</p>
+<p>形体的重要性在于要对图形本身有比较合理的呈现，不要让比例失调和图不达意。</p>
+<p><span class="img-zoom"><img alt="大厂都在用的轻拟物设计风格，本文教你四步完成！" class="alignnone size-full wp-image-387063" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sb-20200901-10.jpg" width="667" height="499" /></span></p>
+<p><strong>第二步：完善图形细节</strong></p>
+<p>这一步，就要在原有基础上，进行下一步的深入。包括对一些细节交代得更清楚一点，增加一些有趣的小元素等等，完善它的具体样式。</p>
+<p><span class="img-zoom"><img alt="大厂都在用的轻拟物设计风格，本文教你四步完成！" class="alignnone size-full wp-image-387064" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sb-20200901-11.jpg" width="667" height="502" /></span></p>
+<p><strong>第三步：增加基础的暗部表现</strong></p>
+<p>在这里，我们就要开始为图标增加高光了，高光从右上角打下来，那么有叠加关系的元素就会产生一个向下的投影。并且反向暗部的表现，让整体的立体感稍强。</p>
+<p>这一步在软件中主要使用蒙版功能，通过蒙版在背景上方创建一个图层，然后添加深色的透明度渐变，就可以表现出对暗部和投影的效果。</p>
+<p><span class="img-zoom"><img alt="大厂都在用的轻拟物设计风格，本文教你四步完成！" class="alignnone size-full wp-image-387065" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sb-20200901-12.jpg" width="1000" height="509" /></span></p>
+<p><strong>第四步：增加高光效果</strong></p>
+<p>接着，就是最后一步，将高光添加到画面中来，将整个图标的质感进行拉升。</p>
+<p><span class="img-zoom"><img alt="大厂都在用的轻拟物设计风格，本文教你四步完成！" class="alignnone size-full wp-image-387066" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sb-20200901-13.jpg" width="667" height="510" /></span></p>
+<p>通过上面的演示，我们可以将整个拟物设计流程精简成：</p>
+<ul>
+<li>确定图形基本轮廓、外形比例、模块色彩</li>
+<li>丰富细节样式增加趣味性和适当的拟真感</li>
+<li>通过蒙版添加暗部来完善表现的明暗和层级关系</li>
+<li>添加高光元素作为图形的亮点，拉升层次感</li>
+</ul>
+<p>然后，通过这样的步骤，再来完成后续的两个图形，拆解完的效果如下。</p>
+<p><span class="img-zoom"><img alt="大厂都在用的轻拟物设计风格，本文教你四步完成！" class="alignnone size-full wp-image-387067" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sb-20200901-14.jpg" width="1000" height="325" /></span></p>
+<p><span class="img-zoom"><img alt="大厂都在用的轻拟物设计风格，本文教你四步完成！" class="alignnone size-full wp-image-387068" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sb-20200901-15.jpg" width="1000" height="332" /></span></p>
+<p>然后，再用这三个修改后图标套用进原来的页面，并做出对应的修改，再来看看前后对比：</p>
+<p><span class="img-zoom"><img alt="大厂都在用的轻拟物设计风格，本文教你四步完成！" class="alignnone size-full wp-image-387069" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sb-20200901-16.jpg" width="751" height="800" /></span></p>
+<p>通过这个对比，我们就可以看出在这个复杂的首页头部中，轻拟物风格可以从一众平面中被凸显出来，且不会显得太突兀和复杂。</p>
+<p>而这就是轻拟物在项目设计中的实际作用，当画面元素已经开始超负荷，且容易导致同质化的审美疲劳和主次不清时，就是轻拟物登场的时候了。</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>最后的总结，学习轻拟物就是增加我们完成界面视觉输出的可能性，为视觉创意增加一些储备弹药，以应对越来越复杂的互联网产品和职业要求。</p>
+<p>我们只在这篇罗列了制作的顺序和思路，并没有把软件的操作完全放出来，一方面是因为时间上来不及，另一方面是希望大家不会被软件的使用框住。只要概念清楚了，那么使用 PS、AI、Skecth、Figma 还是 Affinity 等软件都可以做出来。</p>
+<p>本次对于轻拟物的讲解也就写到这里，下次有机会再做个更 Hardcore 更 Old School 的拟物设计教学，带视频的那种！</p>
+<p>欢迎关注作者的微信公众号：「超人的电话亭」</p>
+<p><span class="img-zoom"><img alt="大厂都在用的轻拟物设计风格，本文教你四步完成！" class="size-full wp-image-278484 alignnone" src="https://image.uisdc.com/wp-content/uploads/2018/07/Supermancallqr.jpg" alt="前小红书设计总监：小公司设计师进入大厂的通关路径" /></span></p>
+➜近万字干货！带你全面了解格式塔原则
+https://www.uisdc.com/gestalt-principle-2	63172
+<p>好的设计师理解心理学在视觉感知中的强大作用。当别人的目光与你的设计创作相遇时，会发生什么？他们对你分享的信息有什么反应？</p>
+<p>目录：</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386552" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-1.jpg" width="1200" height="2771" /></span></p>
+<h4><span class="auto_menu">格式塔原理概述</span></h4>
+<p><strong>1. 前言</strong></p>
+<p>举一个场景化的栗子，大家平时逛街的时候能记住哪些广告呢？ 我们虽然每天看到那么多的信息，但是真正记住的却不多。还有当我们看到复杂的事物的时候，心里会涌现不舒服的奇怪感受，有时候这种感受没有办法用语言来描述。那么为什么会有这些感受呢？</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386553" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-2.jpg" width="1200" height="675" /></span></p>
+<p>其实道理很简单，我们做的东西是给人用的。人是动物不是一台机器，人的认知和记忆能力是有限的。视觉设计和心理是相互联系的，并且可以相互影响。格式塔原则可以帮助我们理解和控制这些联系。</p>
+<p>今天就给大家科普下格式塔原则到底是什么？在设计中如何运用？是如何影响到我们的生活学习的？本文会结合大量案例分析讲解，无论你是平面设计师，UI设计师，插画师，设计小白还是路人，一篇文章让格式塔帮你做出更好的设计！</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386554" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-3.jpg" width="1200" height="562" /></span></p>
+<p><strong>2. 什么是格式塔原理</strong></p>
+<p>格式塔学习理论可谓是现代认知主义学习理论的先驱，自1912年由韦特海墨（Ｍ，Wetheimer）提出后，在德国得到迅速发展。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386555" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-4.jpg" width="1200" height="675" /></span></p>
+<p>1910，这位心理学家乘坐火车度假旅行。当火车经过一个铁路道口的时候，他发现道口闪烁的灯竟然像马戏团表演时剧院帐篷上环绕的灯光，令他产生了光在运动的错觉。（而我们坐火车永远就只会遇到熊孩子和熊孩子）然后他赶紧下火车买了一个西洋镜，来测试自己的想法。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386598" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-47.gif" width="1000" height="469" /></span></p>
+<p>他将一张图片放在西洋镜内部并通过狭缝观看时，一系列静止图像看起来像是动图。接着他用简单的抽象线条制作不同的画条，通过改变这些元素来研究导致错觉的原因。似动(Apparent Movement)实验成为格式塔心理学的起点。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386557" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-6.jpg" width="1200" height="562" /></span></p>
+<p><strong>3. 解决什么问题</strong></p>
+<p>他们认为思维是整体的、有意义的知觉，而不是联结起来的表象的简单集合；主张学习是在于构成一种完形，是改变一个完形为另一完形。我们的视觉系统自动对视觉输入构建结构，并在神经系统层面上感知形状、图形和物体，而不是只看到互不相连的边、线和区域。所谓格式塔，是德语Gestalt的译音，意即「完形」或「形状」；他们认为学习的过程不是试尝错误的过程，而是顿悟的过程，即结合当前整个情境对问题的突然解决。再通俗一点就是人是怎样认知和记忆所看到的事物。</p>
+<h4><span class="auto_menu">格式塔实验研究</span></h4>
+<p>主要包括以下三方面的实验研究:</p>
+<p><strong>1. 似动现象</strong></p>
+<p>似动现象是形成格式塔心理学的基础。是指两个相距不远、相继出现的视觉刺激物，呈现的时间间隔如果在1/10秒到1/30秒之间，那么我们看到的不是两个物体，而是一个物体在移动。</p>
+<p>例如，我们看到灯光从一处向另一处移动，事实上是这只灯熄了，那只灯同时亮了。这种现象正是不能把整体分解成部分的证据。这种现象的组成部分是一些独立的灯在一开一关，但组成一个整体后，给人造成这些灯在动的假象。</p>
+<p>后来，格式塔心理学把重点放在整体系统上，在这个系统中，各个部分是以一种能动的方式相互联系在一起的，也就是说，仅根据各分离的部分，无法推断出这个整体。所以人们把它称为「格式塔或完形心理学」。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386558" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-7.jpg" width="1200" height="562" /></span></p>
+<p>A：这张螺旋图是静态还是动态的？盯着漩涡看一会，你就会感觉到它在转动。</p>
+<p>B：你数数看有几个黑点？当你的眼睛离开那个白点时，就出现白的负象，即黑。当你重新把视点 集中在原来的白点上时，它又变成白色的了。因此，当你的眼睛不断地 在移动的时候，那些黑白点 (正负像) 也就在不断地变化。</p>
+<p>C：你看是水平线还是不规则的斜线？事实上所有的横线都是水平的，不信你拿尺子比一下。</p>
+<p><strong>2. 整体与部分</strong></p>
+<p>看起来格式塔心理学是把重点放在整体上，但这并不意味着他们不承认分离性。事实上，格式塔也可以是指一个分离的整体。</p>
+<p>研究认为，一个人的知觉场始终被分成图形与背景两部分。「图形」是一个格式塔，是突出的实体，是我们知觉到的事物；「背景」则是尚未分化的、衬托图形的东西。知觉帮助我们把图形从背景中分离出来。图形与背景的对比越大，图形的轮廓越明显，则图形越容易被发觉。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386559" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-8.jpg" width="1200" height="648" /></span></p>
+<p>上图A：这幅美食节广告中，酒瓶是被战略性地放置，以创造一个叉子的错觉。黑色酒瓶是图形，白色叉子是背景；在另一种情况下，黑色酒瓶是背景，白色叉子是图形。</p>
+<p>B：一黑一白两只天鹅，白天鹅和黑天鹅可以互充图形与背景的关系。</p>
+<p>C：这幅海报中，小女孩和气球是被战略性的放置，以创造一个字母「R」的错觉。这两个角色同样可以在图形和背景中互换。</p>
+<p><strong>3. 顿悟实验</strong></p>
+<p>W·科勒在一次实验中用绳子把一只香蕉悬挂在笼子的顶棚上。笼子里只有惟一的一只木箱可以使用。6只黑猩猩看到香蕉时跳跃起来竭力想抓住香蕉，但是徒劳。有一只名叫苏尔坦的黑猩猩马上停止了这些白费力气的努力，开始从各个方向打量箱子。忽然它停在箱子前面，抓起它并径直朝目标走去。它把木箱迅速放到地上，爬上箱子，从木箱上面使劲跳起，终于抓住了香蕉。</p>
+<p>W·科勒还对这组黑猩猩使用其他工具进行了观察，如利用木棍去获取放在笼子外面的水果。这些黑猩猩甚至能够将两根短棍连接起来做成一根长棍。同样，它们还能把两三个箱子叠放在一起，再爬到放在最上面的箱子顶上，借助一根木棍去获取香蕉。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386560" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-9.jpg" width="1200" height="507" /></span></p>
+<p>苛勒通过对黑猩猩进行的许多实验，提出了顿悟理论。他认为问题的解决不是由于尝试错误，而是由于顿悟。所谓顿悟，就是内在地把握情境的关系性，并依此改变整个情境。</p>
+<p>或许正如一些批评家所指出的那样，顿悟不是一种独立的学习过程或学习形式，而是学习达到一定程度的表现或者结果。一定的经验积累，是产生顿悟的前提。</p>
+<h4><span class="auto_menu">影响记忆的三个因素</span></h4>
+<p>沃尔夫实验时要求实验体观看样本图形并记住它们，然后在不同的时间里根据记忆把它们画出来。结果发现实验体在不同的间隔时间画出来的图像都有不同。有时再现的图画比原来的图画更简单更有规则，有时原来图画中显着的细节在再现时被更加突出了。还有的比原来的图像更像某些别的我们都很熟悉的图案了。沃尔夫把这三种记忆规律称之为格式塔三大记忆律：「水平化」、「尖锐化」、「常态化」。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386561" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-10.jpg" width="1200" height="648" /></span></p>
+<p>△上面这两个品牌logo哪个才是正确的？</p>
+<p><strong>1. 水平化leveling</strong></p>
+<p>水平化是指在记忆中我们趋向于减少知觉图形小的不规则部分使其对称；或趋向于减少知觉图形中的具体细节。</p>
+<p><strong>2. 尖锐化sharpening</strong></p>
+<p>尖锐化是在记忆中与水平化过程伴随而行的。尖锐化是指在记忆中，人们往往强调知觉图形的某些特征而忽视其它具体细节的过程。在有些心理学家看来，人类记忆的特征之一，就是客体中最明显的特征在再现过程中往往被夸大了。</p>
+<p><strong>3. 常态化normalizing</strong></p>
+<p>常态化是指人们在记忆中，往往根据自己已有的记忆痕迹对知觉图形加以修改，即一般会趋向于按照自己认为它似乎应该是什么样子来加以修改的。</p>
+<h4><span class="auto_menu">格式塔原理在设计中的应用</span></h4>
+<p>格式塔的七个基本原则：</p>
+<ul>
+<li>接近性原则</li>
+<li>相似性原则</li>
+<li>连续性原则</li>
+<li>闭合性原则</li>
+<li>主体/背景原则</li>
+<li>简单对称性原则</li>
+<li>共同命运原则</li>
+</ul>
+<p>开始之前要先知道格式塔原理的核心是什么</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386562" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-11.jpg" width="1200" height="562" /></span></p>
+<p><strong>1. 接近性原则 law of proximity</strong></p>
+<p>人们对知觉场中客体的知觉，是根据它们各部分彼此接近或邻近的程度而组合在一起的。两个元素越是接近，组合在一起的可能性就越大。说明它们之间关系更强。但是接近也是有对比的，在复杂的设计中，我们要一边考虑它们之间内部的逻辑关系一边来排版。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386563" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-12.jpg" width="1200" height="675" /></span></p>
+<p>△同样都是12个圆形，你会把左图的12个圆形当成一个整体；右边那幅图，上面4个圆和下面8个圆距离较远，所以你会把上面4个圆当成一个整体，下面8个圆当成另外一个整体。</p>
+<p>需要注意的是，接近性比重较大，把上图的圆形改变形状，甚至添加颜色，人们也会把相近的一组当成一个整体：</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386564" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-13.jpg" width="1200" height="675" /></span></p>
+<p>举个例子接近性原则在实际产品中的应用：</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386565" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-14.jpg" width="959" height="800" /></span></p>
+<p>△App Store：板块之间的大间距把页面信息分割成各种不同栏目，距离更近的信息暗示了他们有内在的逻辑关系</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386566" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-15.jpg" width="959" height="800" /></span></p>
+<p>△站酷：设计师模块，每个设计师信息组之间有足够大的留白，即使去掉分割线，用户也会清晰分清每一组的边界</p>
+<p>tips：在界面设计中常用的设计方法就是划分固定的位置区域，比如导航栏，内容区，操作栏。还有就是通过距离远近来进行信息归类，同类信息接近，不同信息远离。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386567" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-16.jpg" width="1200" height="562" /></span></p>
+<p><strong>2. 相似性原则 law of similarity</strong></p>
+<p>人们在感知时，会对那些相似的项目，只要不被接近因素干扰，会倾向于把它们联合在一起。换言之，相似的部分在知觉中会形成若干组。</p>
+<p>例如，我们在小组辩论中，往往几个人争着发言，但我们仍然能从嘈杂的声音中听出某个人的讲话，这是因为这个人讲话的音质始终有相似性的缘故。如果他讲话的音质经常在变化，那就很难从噪音声中分辨出他的话来。</p>
+<p>人们会把那些明显具有共同特性（如形状、大小、共同运动、方向、颜色等）的事物当成一个整体。与不具有相似视觉特征的元素相比，具有相似视觉特征的元素被认为更加相关。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386568" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-17.jpg" width="1200" height="675" /></span></p>
+<p>举个例子相似性原则在实际产品中的应用：</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386569" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-18.jpg" width="959" height="800" /></span></p>
+<p>△bilibili：上图全部频道页面，我们在浏览时，会从心理上默认，把频道头像、介绍和订阅按钮自动归为一类。类似外形的单元会被我们人脑默认为同一属类</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386570" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-19.jpg" width="1200" height="562" /></span></p>
+<p><strong>3. 连续性原则 law of continuity</strong></p>
+<p>在知觉过程中人们往往倾向于使知觉对象的直线继续成为直线，使曲线继续成为曲线，也就是视觉的惯性。利用连续律我们可以让用户操作界面时不经过思考就点击一个固定的位置。</p>
+<p>我们倾向于完整地连接一个图形，而不是观察残缺的线条或形状。这种知觉上的结束，称之为闭合。如果局部形象过于陌生或者简略，则不会产生整体闭合联想。</p>
+<p>人的视觉有追随一个方向的延续，以便把元素联接在一起，使它们看来是连续向着特定的方向。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386571" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-20.jpg" width="1200" height="675" /></span></p>
+<p>△左图我们不会认为是两个残缺的圆，而是两个相交的圆；中间的IBM商标我们之所以能看出来是 IBM，就是因为我们在视觉上看到的不是离散的线条，而是连续的图形；右图我们会看到是向两个方向连续的曲线。</p>
+<p>举个例子连续性原则在实际产品中的应用：</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386572" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-21.jpg" width="960" height="800" /></span></p>
+<p>△股市：每天的股市数据构成走势图，视觉上会跟随曲线方向知道由左向右去看走势</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386573" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-22.jpg" width="1200" height="562" /></span></p>
+<p><strong>4. 闭合性原则 law of closure</strong></p>
+<p>人们在观察熟悉的视觉形象时，会把不完整的局部形象当作一个整体的形象来感知，这种知觉上的结束，称之为闭合。如果局部形象过于陌生或者简略，则不会产生整体闭合联想。</p>
+<p>闭合是一种完成某种图形(完形)的行动。就算没有外形的约束，我们也会自动把图形脑补完全。比如半个形状或者有缺口的形状我们不会认为是一条线或各种零碎的图形，而是一个完整的形状。闭合是指一种完形的认知规律。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386574" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-23.jpg" width="1200" height="675" /></span></p>
+<p>举个例子 闭合性原则在实际产品中的应用：</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386575" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-24.jpg" width="960" height="800" /></span></p>
+<p>△Apple Music：我们常见的页面横滑组件就运用了闭合律原则，通常在界面右侧露出一半（或少部分）内容，来提示用户右边还隐藏着更多内容</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386576" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-25.jpg" width="1200" height="562" /></span></p>
+<p><strong>5. 主体/背景原则</strong></p>
+<p>主体指的是在界面当中占据我们主要注意力的所有元素，其余的元素在此时均成为背景。当主体与背景重叠时，人的视觉更加倾向于将小的物体视为主体，大的物体视为背景，所以我们可以通过大小与图的关系，将我们希望传递的不同层次的内容进行展示。</p>
+<p>当小图形重叠大图形之上，我们的视觉会倾向于将小图形归为主体，大色块为背景，这就是格式塔中的主体与背景原则。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386577" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-26.jpg" width="1200" height="675" /></span></p>
+<p>举个例子主体/背景原则在实际产品中的应用：</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386578" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-27.jpg" width="960" height="800" /></span></p>
+<p>△豆瓣FM：在白色背景上有非常突出的主体：歌曲封面、歌名、进度条、播放/暂停、收藏等，歌曲播放时，进度条有非常明显的进度变化，切换歌曲时，封面的前后错层，这些都与背景有非常鲜明的对比</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386579" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-28.jpg" width="1200" height="562" /></span></p>
+<p><strong>6. 简单对称性原则 Simple principle</strong></p>
+<p>在观察事物过程中，我们第一印象更倾向于简单而且对称的图形，这就是格式塔的简化对称性原则。</p>
+<p>具有对称、规则、平滑的简单图形特征的各部分趋于组成整体。对称的元素往往被认为是归属在一起的，而不管它们之间的距离，都给我们一种牢固和有序的感觉。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386580" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-29.jpg" width="1200" height="675" /></span></p>
+<p>人的眼睛喜欢在复杂的形状中找到简单而有序的对象，当我们在一个设计中看到复杂的物体时，眼睛更愿意将它们转换为单一统一形状，并尝试从这些形状中移除无关的细节来简化这些物体。</p>
+<p>对称的构图是令人满意的，但它们也会变得有点沉闷。在对称的设计中加入不对称的元素可以在给人留下印象的同时吸引注意力。</p>
+<p>举个例子简单对称原则在实际产品中的应用：</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386581" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-30.jpg" width="960" height="800" /></span></p>
+<p>△Pinterest：左右布局的瀑布流就是格式塔的简化对称性的体现，用户在浏览的的过程中有效减轻了阅读压力。特别适合这种以图片流为主的产品，能大大提高浏览效率。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386582" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-31.jpg" width="1200" height="562" /></span></p>
+<p><strong>7. 共同命运原则 Common destiny</strong></p>
+<p>无论元素之间的距离有多远，或者它们看起来有多不同，如果它们一起运动或变化，它们都被认为是相关的。这里的共同命运针对的是运动的物体。与接近性原理和相似性原理相像，都与我们的视觉系统会有着给对象进行分组来感知事物的倾向相关，但是一起运动的物体会被感知为属于同一组或是彼此相关这样的一种视觉现象，这就是格式塔中的共同命运原则。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386583" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-32.jpg" width="1200" height="675" /></span></p>
+<p>△向同一方向移动的元素，我们在处理的过程当中，会默认把它们归为一类。</p>
+<p>举个例子 共同命运原则在实际产品中的应用：</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386584" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-33.jpg" width="960" height="800" /></span></p>
+<p>△ios桌面：iPhone删除应用时候，所有图标都一起晃动起来（意思瑟瑟发抖，不要删我不要删我！），左上角都有一个删除的按钮，要么删除，要么保留，这就是共同命运原则。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386585" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-34.jpg" width="1200" height="562" /></span></p>
+<p>事实上，以上7条原则只是格式塔心理学中的一小部分而已，比如还有：</p>
+<p><strong>成员特性律</strong></p>
+<p>一个整体中的个别部分并不具有固定的特性，个别部分的特性是从它与其他部分的关系中显现出来的。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386586" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-35.jpg" width="1200" height="675" /></span></p>
+<p>如果我们有很多同样的按钮，如何让某个更重要的按钮突出但是仍然让用户感知还是按钮呢？那就要用到成员特性律了。成员特性律赋予了集体中某一个元素特殊的一些刺激元素从而突出它。</p>
+<p>△ 独特的外形暗示了它与别的元素有不同的功能</p>
+<p>举个例子 成员特性原则在实际产品中的应用：</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386587" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-36.jpg" width="960" height="800" /></span></p>
+<p>△淘宝：商品详情页有两个重要的操作按钮：加入购物车、立即购买。为了促使用户尽快购买，给「立即购买」更重的红色以突出它的独特性</p>
+<h4><span class="auto_menu">格式塔学习理论的基本观点</span></h4>
+<p><strong>1. 认知重组</strong></p>
+<p>格式塔心理学认为，通过学习，会在头脑中留下记忆痕迹，这些痕迹不是孤立的要素，而是一个有组织的整体，即完形。因此，学习主要不是加进新痕迹或减去旧痕迹的问题，而是要使一种完形改变成另一种完形。一个人学习的过程，通常是从一种混沌的模煳状态，转变成一种有意义的、有结构的状态，这就是知觉重组的过程。</p>
+<p><strong>2. 顿悟学习</strong></p>
+<p>顿悟学习可以避免多余的试误，同时又有助于迁移。格式塔心理学家认为，通过对问题情境的内在性质有所顿悟的方式来解决问题，就可以避免与这一问题情境不相干的大量随机的、盲目的行动，而且有利于把学习所得迁移到新的问题情境中去。顿悟学习的核心是要把握事物的本质，而不是无关紧要的细节。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386588" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-37.jpg" width="1200" height="648" /></span></p>
+<p><strong>3. 遗忘曲线</strong></p>
+<p>真正的学习是不会遗忘的。通过顿悟习得的内容，一旦掌握后，永远也不会遗忘。顿悟将成为我们知识技能中永久的部分。用现代认知信息加工心理学的术语来说，顿悟的内容是进入了长时记忆将永远保留在学习者的头脑中。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386589" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-38.jpg" width="1200" height="648" /></span></p>
+<p>△有人在一项实验中，把149162536496481写在一张卡片上，要一组被试看15秒钟，然后试图回忆它。这是一项相当困难的任务。在一般情况下，除了记住其中少数几个数字外，没有人能全部记住。但在给另一组被试看这张卡片之前，告诉他们在试图记住它以前，先想一下这些数字为什么这样排列，是否有规律可循。结果不少被试都觉察到，这些数原是用1到9的平方排列起来的。这样一来，回忆这些数字就毫无困难，哪怕是在几周或几个月之后也能轻易做到。</p>
+<p><strong>4. 学习奖励</strong></p>
+<p>格式塔心理学家认为，真正的学习常常会伴随着一种兴奋感。例如，一些人对智力拼图、字迷填空玩得津津有味。也因此有人抨击滥用各种外部奖励，诸如使用糖果、好分数、五角星或金钱之类的东西来驱动学习。对于教育工作者来说，不加区分地使用奖励物，可能会使学生分心，不把心思用在学习上，而只关心能得到什么奖励上，从而不可能达到对问题情境有顿悟的理解。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386590" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-39.jpg" width="1200" height="648" /></span></p>
+<p><strong>5. 顿悟说对错误说的批判</strong></p>
+<p>还记得第二部分对猩猩的实验吗，实验表明猩猩在行动之前，已经领会到了自己的动作为什么进行，怎样去进行以及最终的结果为何，在苛勒看来，猩猩对问题的解决并非是一种盲目尝试错误的过程，而是处于对问题产生了顿悟。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386591" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-40.jpg" width="1200" height="648" /></span></p>
+<p>在格式塔心理学家看来，学习是一种智慧行为，是一种顿悟过程，需要有理解、领会与思维等认识活动的参与，并且它是一种突现、速变、飞跃的过程。顿悟学习特点可归纳如下：问题解决前尚有一个困惑或沉静的时期，表现得迟疑不决，有长时间停顿；从问题解决前到问题解决之间的过渡不是一种渐变的过程，而是一种突发性的质变过程；在问题解决阶段，行为操作是一个顺利的不间断的过程，形成一个连续的完整体，很少有错误的行为；由顿悟获得的问题解决方法能在记忆中保持较长的时间；由顿悟而掌握的学习原则有利于适应新的情境，解决新的问题。</p>
+<p><strong>6. 创造性思维</strong></p>
+<p>韦特默认为要想创造性地解决问题必须让整体支配部分。即使在必要的关注问题的细节时，也决不能忽视问题的整体。必须把细节放在问题的整体中，把它们与整体结构联系起来加以考虑。这是一种自上而下、由整体到部分的思维。他认为要使人们顺利地解决问题，必须把问题的整个情境呈现出来，使之能对问题有个完全概观，决不能像桑代克那样，有意地把解决问题的方法和途径藏起来，迫使被试不得不去盲目试误。学习贵在打破旧有知识和模式的束缚，争取在对问题领域的基础上产生顿悟，掌据解决问题的原则，做到触类旁通、举一反三，促进智力水平的提高。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386592" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-41.jpg" width="1200" height="648" /></span></p>
+<h4><span class="auto_menu">格式塔学习理论的分支</span></h4>
+<p><strong>1. 勒温的基本观点</strong></p>
+<p>传统的格式塔心理学在探讨学习的问题时，认为学习者「渴望达到某些目的」是理所当然的，因而他们关注的是通过知觉重组达到目的的途径；而勒温则把注意力集中在「渴望」和「目的」本身上，并把它们与个性联系起来研究。勒温由此而形成的理论体系，主要不是一种学习理论，而是一种描述系统。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386593" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-42.jpg" width="1200" height="500" /></span></p>
+<p><strong>2. 勒温论学习</strong></p>
+<p>勒温的基本观点是社会心理学方面的，尤其是关于个体的动机。从某种角度来看，这弥补了格式塔学习理论的不足。勒温认为，用场论来研究学习的问题，需要注意以下几个方面：</p>
+<p>要使用构成法(Constructive method)，而不是用分类法或分析法。这就是说，要用心理学中最基本的几个构成来探讨学习的问题。这些基本构成就是生活空间，心理环境、诱发力和约束力等。</p>
+<p>要对行为作动态分析，要了解作为行为之基础的各种力(forces)。他把行为变化看作是各种心理力量的结果。</p>
+<p>要从心理的角度来分析学习者当时的生活空间和心理世界，而不能像行为主义者那样用客观的物理主义者的术语来界定刺激。</p>
+<p>要从整体情境分析入手，而不能只是从刺激情境中抽取一两个孤立的要素。因为不从整体上考虑问题，是不可能作出正确判断的。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386594" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-43.jpg" width="1200" height="675" /></span></p>
+<p>行为是行为发生时场的函数。勒温认为行为取决于有机体以往的经验和强化史，这是形而上学的。因为过去的事情现在并不存在，所以不可能直接影响现在的行为。虽说过去的心理场是现在的心理场的来源，但影响现在行为的，毕竟是现在的心理场。</p>
+<p>在研究学习时，至少必须区别这样四种变化：第一，作为认知结构(即知识)变化的学习；第二，作为动机变化的学习；第三，作为群体属性和意识形态变化的学习；第四，作为身体肌肉随意控制发生变化的学习。在勒温看来，学习理论要探讨的，主要是学习者认知结构和动机的变化。</p>
+<p><strong>3. 评论</strong></p>
+<p>勒温在格式塔心理学的框架结构内引进「场」、「生活空间」、「拓扑学」和「向量」等概念，另辟蹊径，从而丰富和发展了传统的格塔理论。尽管他研究的重心放在社会心理学方面，但他对行为、问题和动机等方面探讨，在当时是很有新意的。</p>
+<h4><span class="auto_menu">格式塔原理的贡献与局限性</span></h4>
+<h5>1. 贡献</h5>
+<p><strong>对元素主义的反击具有进步意义</strong></p>
+<p>格式塔学派用大量的事实证明了冯特元素主义理论的漏洞百出，并大胆地冲破了元素主义的束缚，积极而有成效地进行了大量的探索，并取得了一系列引人注目的成果，这对促进心理学事业的繁荣和发展是大有脾益的。</p>
+<p><strong>格式塔学派引发了知觉心理学的革新</strong></p>
+<p>由于格式塔学派在知觉领域做了大量有目共睹的研究，使得经验论、联想论、官能主义的传统方法逐渐让位于先验论、整体论和突创论。知觉心理学也由感觉心理学的附庸变成一个独立的分支，并在短时期内就取得了一系列突破。</p>
+<p><strong>格式塔学派的学习理论独具特色</strong></p>
+<p>格式塔学派的顿悟说及对迁移、创造性思维的研究，冲击了联结主义和行为主义的框框，不论在理论创建还是在教育实践中都具有独到的价值和意义。顿悟说也成为西方学习理论中最重要的理论之一。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386595" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-44.jpg" width="1200" height="600" /></span></p>
+<p><strong>对人本主义心理学影响较大</strong></p>
+<p>人本主义心理学的创建人马斯洛（就是提出人生7个层次的需求理论的那位）曾在他老师的惠特海默指导下，研究整体论，从而积累下了研究人的经验；同时期的对人的心理事件或整体研究。主张存在分析的心理学，这些都表明了格式塔学派的潜在影响。</p>
+<p><strong>对现代认知心理学的产生起了推动作用</strong></p>
+<p>格式塔学派研究的那些认知过程及心理过程成了现代认知心理学的基本观点，正如罗伯特逊指出，认知心理学实际上是一种新格式塔现象。</p>
+<h5>2. 局限性</h5>
+<p>过分强调顿悟，而全面否定尝试错误，犯了以偏概全的偏激性错误。</p>
+<p>顿悟似乎是一个神秘的概念，它的心理活动机制没有揭示清楚。还不能说是一个完善的理论解释。</p>
+<p>顿悟说还缺乏对其他与学习有关问题的研究。而且研究的主要是动物的经验学习，还不能很好地解释人类的所有直接经验学习，如技能的习得等。</p>
+<p>其理论观点和术语含煳不清。格式塔学派不加分析地采用了一些物理学的概念和数理术语，观点模棱两可，概念不确切，给人的感觉是理论主张过于晦涩深奥，神秘莫测。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386596" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-45.jpg" width="1200" height="675" /></span></p>
+<p>对其他学派的批评过于苛刻，他们只批评其他学派的缺陷，却没有提出更好的改进措施，且自身的理论建设和主张又并不明确和高明多少。原来每个行业都有一条鄙视链的存在啊。</p>
+<p>格式塔学派的实验不够严谨，过分依赖现象学的方法，缺乏信度和效度，就水平而言，并不比他们所批评的其他学派好多少。</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>我们把原理归类、总结的目的有两个：一个是自我检查，我们在构思设计的过程中往往会多于专注视觉效果的创作而忽略最基本的原理，比如在设计之前进行完整的设计构思；设计过程中检查自己的设计作品，避免低级错误导致反复改稿，比如信息不对齐，布局杂乱等；再就是设计完成之后对需求方有理有据的陈述。第二个是在深入理解的前提下做设计时能够举一反三。</p>
+<p>用户界面设计并不全是关于漂亮的像素和完美的图形。它主要是关于沟通、性能和便利性。格式塔原则总是帮助我们实现这些目标，为用户创造愉快的体验，为企业创造巨大的成功。</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386597" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-46.jpg" width="1200" height="675" /></span></p>
+<p>通过例子可以发现，这7项法则并不是独立存在的，它们之间具有高度的关联性，是相辅相成的关系，我们需要跟进不同的需求类型和用户场景，运用这些基本法则打出组合拳，使你的设计方案更有依据。在做产品或者设计的时候一定要考虑人的认知与记忆的因素，这是与生俱来的天性，人们的审美对简单与和谐具有基本的要求。我们只有更好的利用视觉空间设计作品，减少设计的复杂性，尽量保持格式塔原则的完整，用户才能更好更容易地理解使用我们的产品。</p>
+<p>更多设计原则：</p>
+<p>[link https://www.uisdc.com/8-design-rules-to-kid]</p>
+<p>参考文献：</p>
+<ul>
+<li>《格式塔心理学理论》MBA智库</li>
+<li>《格式塔心理学原理》库尔特.考夫卡</li>
+<li>《视觉设计中的格式塔艺术心理学》</li>
+<li>《格式塔心理学5项法则的学习与思考》Tencent CDC</li>
+<li>《设计中的格式塔原则》Souche Blog</li>
+<li>维基百科及其他</li>
+</ul>
+<p>欢迎关注作者微信公众号：「印迹时光」</p>
+<p><span class="img-zoom"><img alt="近万字干货！带你全面了解格式塔原则" class="alignnone size-full wp-image-386599" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-gh-20200829-49.jpg" width="180" height="176" /></span></p>
 ➜UI设计师最常犯的10个错误，看看你有没有中招
 https://www.uisdc.com/10-common-ui-mistakes	64879
 <p><span class="img-zoom"><img alt="UI设计师最常犯的10个错误，看看你有没有中招" src="https://image.uisdc.com/wp-content/uploads/2020/09/1_qtIpvXgU_NEnIiSS6z4g2A.png" width="1460" height="733" class="alignnone size-full wp-image-387091" /></span></p>
