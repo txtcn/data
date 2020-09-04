@@ -1,0 +1,142 @@
+➜为什么经典的「用户画像」可能已经失效了？
+https://www.uisdc.com/save-personas	63022
+<p>用户画像并不是一个新鲜的概念，是一个谁都能说上两句，但是在实际设计和产品当中，经常作用有限的「设计工具」。是 「用户画像」本身失效了么？如果没有，那么导致它失效的因素有哪些？是否有解决方案或者替代方案？这篇文章，给你答案。</p>
+<h4><span class="auto_menu">用户画像是如何诞生的？</span></h4>
+<p>用户画像诞生的时间并不算晚。它几乎是随着现代软件设计开发、用户体验设计这一领域的成型，所一同发展起来的。</p>
+<p>用户画像（Persona）的概念来自于着名的软件开发者 Alan Cooper ，而他也被大家誉为交互设计之父。</p>
+<p>早在 1983 年就开始使用非正式的用户访谈来搜集特征，构建一个虚拟的「用户画像」，而这种将特定用户的共性、特点整合到一起的方式，让它更好地为进行软件的设计和开发。</p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac1.png" /></span></p>
+<p>到了 1995 年，他开始研究特定的用户（并非一般用户）与软件进行交互的方式，并最终在他的1999年出版的《软件创新之路》中，将构建用户画像的完整方法分享了出来。书中他提出了「以用户为中心的设计」这个重要的设计思想，并详细地描述用户画像方法的一般特征、最佳的用法，并且他在书中建议针对单个类型的用户（原型用户）来设计软件产品。毫无疑问用户画像是服务于这个「以人为本」思想的。</p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac2.png" /></span></p>
+<p>有意思的是，在用户画像的概念被设计和开发者们广泛认可和执行之前，它已经借由奥美之手，在广告、品牌营销等领域投入使用。在奥美的知识管理系统当中，对于用户画像的描述是这样的：</p>
+<blockquote><p>「每一个独特的品牌，都有着与品牌价值相匹配和认同的用户群体。这个世界有很多不同的社群，而相似的社群当中有着相似的消费行为，而我们可以通过他们所共有的价值观、态度、观点来理解他们的个性和品牌特征。」</p></blockquote>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac3.png" /></span></p>
+<p>但是值得一提的是，奥美的这种解读是在 1997 年这个时间节点所提出的，苹果还没回到乔布斯手上， Windows XP 还没诞生，网上冲浪要靠拨号。Alan Cooper的完整方法论是1999年提出的，能够装 APP 的手机大概还要等2年才会出现，电视购物还是前瞻性的概念，而硅谷的精英们还沉迷于不带硬盘和主板的「网络电脑」这一构想（差不多1年之后就没人想这个事儿了），而被 Steve Krug 在《Dpn&#8217;t Make Me Think》 一书中视作为用户体验设计典范的 Amazon，此刻还没有资格作为用户体验设计的范例。</p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac4.png" /></span></p>
+<p>可是各位，时代变了。无论是网络本身、用户群体和消费习惯、对于用户的研究、社会的需求、产品的设计和研发，在这20多年的时间里发生了巨大的改变。毕竟曾经的《New Boy》如今已经重新填词成为了《Forever Young》。</p>
+<p>如今，确实在很多项目当中，用户画像似乎并并没有那么有用。那么在2020年，用户画像到底有用没用？它是不是淘汰了？今天的你我还能否重复昨天的故事，这张20年前的旧船票还能否登上今天产品设计的渡船？这恐怕很难用一个是或者否来回答。</p>
+<p>先简单说一个结论，用户画像这种方法，当然是有用有效的。问题是在于它的有效程度，以及谁来用，怎么用。</p>
+<h4><span class="auto_menu">用户画像到底是用来干什么的？</span></h4>
+<p>用户画像是一套完整的、系统的、可以用的用户研究以及用于用户体验设计的方法。你可以在很多地方找到系统完整的方法，这篇文章我真就不赘述了。比如宛苏的这篇《新手入门指南！从零开始建立用户画像》就比较完整地介绍了这个方法：</p>
+<p>[link https://www.uisdc.com/user-portrait]</p>
+<p>但是在现实的产品设计过程中，大家会意识到这个东西似乎并不总是有效，甚至多数时候都玩崩了。这是肯定的，毕竟有人的地方……就有漏洞和偏差，问题总是避免不了。</p>
+<p>对统计的概念有所了解的同学应该知道，统计数据的准确性和采样数量以及采样方法有着直接的关联，首先很多抽样调查的数据受限于这些客观条件，本身就不够准确。当然，对于用户画像这个方法的研究，学界和一线用研领域的专家都没有停过。来自陈梦蝶的这篇文章《被奉为经典设计工具的用户画像，有哪些问题与局限？》当中，汇总了很多用户画像方法本身存在的问题：</p>
+<p>[link https://www.uisdc.com/persona-reflection]</p>
+<p>从中稍加提炼一下，这个方法本身的缺陷如下：</p>
+<ul>
+<li>产品背后的用户画像本身是抽象出来的虚拟角色，即使它本身源自于部分真实的数据</li>
+<li>用户画像所描述的特征很多时候过于理想化，缺少人情味</li>
+<li>用户画像中包括年龄、职业、居住地等属性可能会误导产品</li>
+<li>用户画像所描述的属性之下接近的真实用户可能很少，而添加的属性越多，筛选出的用户越少</li>
+<li>用户画像的投入产出比较低（所呈现出来的实际结果有这个倾向）</li>
+<li>用户画像本身是用研人员的主观代入居多</li>
+<li>用户画像无法取代真实用户</li>
+</ul>
+<p>那么，既然用户画像存在这些问题，那我们为什么还要用它呢？其实原因也很清晰：</p>
+<ul>
+<li>设计的目标，是要借助产品让用户需求和业务目标结合到一起，而连接的过程中，你需要不断地了解用户，完善信息，最终让两者打通，让业务逻辑形成闭环。而用户画像，就是连通的信道，或者是承载信息中间载体，它并非是目标，而是手段。</li>
+<li>用户画像在底层上是符合基本的社会学、统计学的原理，它在一定程度上是有效的。</li>
+<li>用户画像本身是一份灵活的用户研究指南，而非固化死硬的模板，它是否有效很大程度取决于设计师和用户研究者能不能基于产品的状况，灵活处理。</li>
+<li>用户画像本质上是帮助设计和产品团队来洞悉某些用户的需求和动机，间接推测用户所处的环境，可能的决策机制，并协助探索出更优秀的解决方案。</li>
+<li>用户画像能在一定程度上改善和优化产品，但是产品的成功和市场、时机、运气各方面都有关系，并不是说你的用户画像、设计、开发都做好了，产品一定成功。</li>
+</ul>
+<p>其实这样一来，我们也就可以相对轻松地梳理出，实际的产品设计过程中，用户画像失效的一些原因了。</p>
+<h4><span class="auto_menu">用户画像失效的团队内部因素</span></h4>
+<p>对于绝大多数的普通的设计和产品团队而言，用户画像始终还是一个有用的工具。排除市场、运气、产品其他流程的问题，依然有很多团队在用户画像这里翻车，原因无非就是下面的几种。</p>
+<p><strong>1、压根就没用用户画像</strong></p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac5.png" /></span></p>
+<p>创建用户画像有成熟的方法，但是在实际的调研、分析、构建的过程中，可能并没有很好的执行，甚至有人可能会抵触它。另一方面，如果用户群体过于分散，整个用户画像的制作也很琐碎，用户画像的处理不到位，也可能会导致后续的设计和开发当中对于很多用户画像的信息不予使用。无论是哪种原因，最终用户画像压根没做完或者没用上……是可能翻车的原因之一。</p>
+<p><strong>2、缺乏团队上层的支持</strong></p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac6.png" /></span></p>
+<p>这其实也是一个常见的状况。</p>
+<blockquote><p>「我很清楚我们的用户是谁呀~」<br />
+「我们的用户属性不是显而易见的嘛~」<br />
+「用户画像没啥用啊~」</p></blockquote>
+<p>想必有不少同学都听上头的 Leader 说过这样的话，无论是因为「用户属性显而易见」还是「没啥用」，或者「时间和经费不足」，都会最终导致用户画像无法有效推进和执行。</p>
+<p><strong>3、用户画像不是全员参与制作的</strong></p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac7.png" /></span></p>
+<p>在相对有效的用户画像制作过程中，最好是需要不同环节的产品、设计、开发乃至于利益相关方的人员参与进来的，它不应该只由设计师或者用研人员独立完成。这个产品所使用的用户画像应该是「共同完成」的产物，是每个人对它都有足够的认知乃至于认可，才会在后续的产品设计、研发、运营中发挥作用。</p>
+<p>而研究对象，参与测试的用户应该就是产品对应的目标用户和真实用户，这样尽可能确保获取的信息哪怕只包含部分，它也是足够有效的。</p>
+<p><strong>4、不知道用户画像如何使用</strong></p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac8.png" /></span></p>
+<p>虽然参与创建了用户画像，但是并不是所有人都知道怎么使用它。在传统的用户画像的创建流程当中，是需要产品设计、研发和利益相关方能够和这些虚拟角色进行「互动」并了解他们的，并通过讲解和演练来了解它们是如何映射到产品的交互、用户流程当中来的。不知道如何使用他们，自然也是用户画像失去作用的重要原因之一。</p>
+<p><strong>5、所创建的用户画像有根本缺陷</strong></p>
+<p>这种问题也是让用户画像失效的重要原因之一。你所创建的用户画像和你想要做的产品是完全对不上号的，这样的情况不是不存在的。你所创建的目标用户的钢需，和你的产品可以解决的问题没有对应上，或者你的产品对应的用户群体是另外一拨人，都可能会导致你所创建的这个用户画像没用。</p>
+<p>其实看了上面所提到的种种问题，解决这些团队内部影响因素的方法也显而易见了：尽量让整个团队恰如其分地参与到用户画像的创建当中来，让利益相关者尤其是领导和合作方了解它的价值，并且尽量贯彻到整个产品当中。</p>
+<p>当然，用户画像本身的实施方法上的提升空间也不小。</p>
+<h4><span class="auto_menu">提升用户画像有效度的方法</span></h4>
+<p>排除了这些团队内部因素之后，还需要提升用户画像方法本身的有效度。</p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac9.png" /></span></p>
+<p>很多时候，你创建出来的一个用户画像可能是上面这个样子，有着丰富的视觉效果，完善的人物设定等等等等，但是在实际进行设计和开发的时候……经常觉得使不上劲。</p>
+<p>这就对了。因为这样创建出来的用户画像确实挺全面但是真的没有足够的指导性作用。你搜集的信息足够，你需要逐步通过优化，才能让用户画像的价值和功能体现出来。</p>
+<p><strong>1、移除视觉效果和模板</strong></p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac10.png" /></span></p>
+<p>过度装饰化的视觉信息会让你错过关键词、数据和属性。先把视觉效果先去掉。</p>
+<p><strong>2、删除次要和无关的信息</strong></p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac11.png" /></span></p>
+<p>照片其实用处不大。而诸如收入状况、婚姻状况、兴趣范围的有效度可能也很低，对于创建产品到底有多大的作用？将这些同你的产品和服务没有直接关联的信息去掉，才能让你逐渐关注到关键的信息：用户目标和用户需求。</p>
+<p><strong>3、淡化处理可能带来刻板印象的属性</strong></p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac12.png" /></span></p>
+<p>很多统计信息可能会告诉你，学生怎样，IT工作者有啥特点，等等。这些统计信息并非没有用，但是在做用户画像的时候，这些相对片面的信息可能会让你对于这个虚拟的角色产生认知偏差，也会将你对于真实的需求、实际的行为的洞察给扭曲。将这些属性进行淡化处理。</p>
+<p><strong>4、强化故事内容</strong></p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac13.png" /></span></p>
+<p>故事可能是最容易被忽略的一个内容。故事承载着用户行为、用户场景以及决策逻辑，而故事本身不仅赋予了用户画像以真实感，而且将一系列的关键因素给串联进来，随时随地帮助设计和开发洞察到有效的、实际的情况。</p>
+<p><strong>5、深挖需求，增加期望和恐惧的因素</strong></p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac14.png" /></span></p>
+<p>你在实际做用户访谈的时候，到底会挖掘到用户的几个目标和需求？他所谈及的三四个需求是否足够你们进行产品的设计和研发？不要忘了问用户他们期望的事情，期待的结果，害怕的情况，以及担忧的问题，所有的这一切可以帮你更好地洞察他们，从而从不同的角度帮你切中问题。</p>
+<p><strong>6、增加用户的经验和探索</strong></p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac15.png" /></span></p>
+<p>如果用户面对过困境，那么他们可能采用过某些方法，尝试将用户试过的的解决方案给列举出来，并且关注用户采用这些方法的时候的情绪和感受，体验优劣，愉悦与否。在这个环节，重点了解用户的习惯、思维模式、解决的方案和思路等等。</p>
+<p><strong>7、划分优先级并高亮显示</strong></p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac16.png" /></span></p>
+<p>等确定好了所有的这些内容之后，一个更加有效的、有指引性的用户画像就出来了，整个画像几乎每一个环节都是高度有效的，不过，你依然需要将其中信息的优先级给划分出来，帮你关注其中最有用有效的部分。</p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac17.png" /></span></p>
+<p>这样的一个用户画像优化方案，可以用户画像对于产品的设计和研发带来更加明确的指引性，而如果具备一系列的不同用户的这样的画像，可以帮助团队更好地筛选出产品的设计和研发的方向。</p>
+<p>只不过，我们聊到这里，就不得不再往前再探索一步：是否具备比用户画像更好的解决方案。</p>
+<h4><span class="auto_menu">可能存在的更好的方案</span></h4>
+<p>其实你看看上面的优化方案的时候，应该就已经意识到一件事情：更深入地关注用户的行为、决策比关注「画像」更重要。而这一点恰恰也是很多用户画像替代方案的切入点。</p>
+<p><strong>1、行为原型</strong></p>
+<p>用户体验设计师 Radina Doneva 提出过一个方案，这个方案直接将「用户画像」中的角色属性直接剔除掉了，而基于心理学和行为学原理，关注更为核心的行为、需求和目标决策，这很明显比上面更进一步——她将这系列的东西打包到一起，称为「行为原型」。</p>
+<p>在她的文章当中，她是这么说的：</p>
+<blockquote><p>一个行为原型代表着一群人所特有的用户行为或者动机所构成的典型案例。</p></blockquote>
+<p>这也就意味着角色在这个体系中已经不重要了——采取相似相通决策和行为的人被打包在了一起，而他们的背景因素被剔除掉了。因为这系列的行为和决策，可以更加纯粹地同产品和服务本身接驳起来。这意味着，在构建行为原型的时候，只需要关注三件事情：</p>
+<ul>
+<li>他们做了什么</li>
+<li>他们怎么做这件事情</li>
+<li>他们为什么这么做</li>
+</ul>
+<p>行为原型和用户画像最大的不同在于，它关注行为动机，而不是用户身份。按照唐纳德诺曼在《设计心理学：情感化设计》当中的描述，行为的处理机制通常包含两个部分，也就是本能和反应机制，而这两者反馈到行为原型当中，就是用户在行动之前看法和感受，以及用户在行动过程中的体验和反馈。这样一来，就可以构建出两个关键的行为原型的两个组成部分：</p>
+<p>思维倾向：在行动之前，对于产品和品牌的认知和感受。<br />
+状态变化：在行动过程中，状态的逐步变化和发展。</p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac18.png" /></span></p>
+<p>以购买咖啡这件事情为例，使用行为原型可以快速归结出四类：</p>
+<ul>
+<li>热情的倾向：我是品牌的粉丝，我喜欢他们的一切，我不会在别的地方购买咖啡，我对于他们非常忠诚。</li>
+<li>价格敏感的倾向：我喜欢在路上走的时候喝咖啡，不过通常会花很多钱。这家咖啡馆的咖啡是最实惠的，所以我来这里买。</li>
+<li>注重品质的倾向：我只关注优质的咖啡，我会在 Instagram 上关注着名的咖啡师，我只想体验最好的咖啡。</li>
+<li>注重氛围的倾向：我需要远程工作，我喜欢咖啡馆的工作氛围，咖啡的口味对我其实并不重要，我买咖啡是为了可以在这里工作。</li>
+</ul>
+<p>可以看到，这些行为原型直接可以和用户历程结合到一起，而产品要如何输出，品牌要如何维系，其实也是可以立足于这些行为原型来制作。</p>
+<p><strong>2、角色频谱</strong></p>
+<p>用户画像的一个重要问题来源于它的片面性。你做了三个用户画像，但是这三个用户画像对应的群体可能仅仅只包含实际用户群体的10%都不到。那么有没有可能再全面一点呢？</p>
+<p>当然可以。这个来自于微软设计团队的用户研究方案比前者更强大一些，它不仅关注动机，而且从某种意义上兼顾到了角色，当然这么说可能也不对，因为它用「角色频谱」来替代单一的「平均角色」，或者说所谓的「普通用户」。</p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac19.png" /></span></p>
+<p>当我们谈及一个「有视力障碍的用户」，那么他可能是一个先天失明的人，可能是一个刚刚结束眼部手术的健全用户，也可能是在街上遭遇眩光眼睛被晃到暂时失去视力的游客，他们所处的环境、情况可能千差万别。</p>
+<p>所以，微软的设计团队借助他们强大的团队和技术力量，尽可能地找来真实的用户，并且采用一系列涵盖身体状态、社会、经济、文化背景等诸多因素的完善调研，来构建一个丰富的角色频谱，并且这个频谱并非静态的，而是会随着时间的推移，项目的推进而逐步迭代优化。</p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac20.png" /></span></p>
+<p>通俗点说就是「近乎暴力的穷举法」。</p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="aligncenter size-full wp-image-387551" src="https://image.uisdc.com/wp-content/uploads/2020/09/ac21.png" /></span></p>
+<p>这样的方法在如今很多资源丰富的企业当中，是可以相对独立地完成的，而很多中小团队也可以同调研公司一起协作，共同来实现这样的效果。</p>
+<h4><span class="auto_menu">结语</span></h4>
+<p>实际上，用户画像这个东西是有用的，用户画像是一个帮助我们探索可能性的手段，它不是终点，不是结果，甚至不一定能够解决很多问题。</p>
+<blockquote><p>答案并不总是显而易见的。</p></blockquote>
+<p>最后我安利一部电影，卷福主演的《脱欧》，其中涵盖了用户研究和用户画像、大数据分析、精准推荐以及一系列无法回避的人性和道德问题，看似儿戏的事件背后，对于用户研究者、设计师、产品经理们而言，也是颇为生动的一堂课。总之非常值得一看。</p>
+<p><span class="img-zoom"><img alt="为什么经典的「用户画像」可能已经失效了？" class="alignnone size-full wp-image-387576" src="https://image.uisdc.com/wp-content/uploads/2020/09/p2557785896.png" width="1920" height="1080" /></span></p>
+<blockquote><p>参考资料：</p>
+<p><a href="https://medium.com/microsoft-design/kill-your-personas-1c332d4908cc" target="_blank" rel="noopener noreferrer">https://medium.com/microsoft-design/kill-your-personas-1c332d4908cc</a><br />
+<a href="https://medium.com/beakerandflint/personas-74c4e1c12ee2" target="_blank" rel="noopener noreferrer">https://medium.com/beakerandflint/personas-74c4e1c12ee2</a><br />
+<a href="https://medium.com/beakerandflint/intro-to-ux-research-f55cc09a3431" target="_blank" rel="noopener noreferrer">https://medium.com/beakerandflint/intro-to-ux-research-f55cc09a3431</a><br />
+<a href="https://uxdesign.cc/personas-e60c1c06ead1" target="_blank" rel="noopener noreferrer">https://uxdesign.cc/personas-e60c1c06ead1</a><br />
+<a href="https://uxdesign.cc/personas-arent-the-problem-your-methodology-is-5c020f88561b" target="_blank" rel="noopener noreferrer">https://uxdesign.cc/personas-arent-the-problem-your-methodology-is-5c020f88561b</a><br />
+<a href="https://medium.com/@RadinaDoneva/behavioural-archetypes-instead-of-personas-c7ccc5b8b998" target="_blank" rel="noopener noreferrer">https://medium.com/@RadinaDoneva/behavioural-archetypes-instead-of-personas-c7ccc5b8b998</a><br />
+<a href="https://www.nngroup.com/articles/why-personas-fail/" target="_blank" rel="noopener noreferrer">https://www.nngroup.com/articles/why-personas-fail/</a></p></blockquote>
