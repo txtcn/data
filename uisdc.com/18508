@@ -1,3 +1,194 @@
+➜超实用！微信小程序设计精简版指南
+https://www.uisdc.com/wechat-mini-program-design	60245
+<p>微信小程序是一种全新的连接用户与服务的方式，它可以在微信内被便捷地获取和传播，同时具有出色的使用体验。</p>
+<p>小程序提供了一个简单、高效的应用开发框架和丰富的组件及API，帮助开发者在微信中开发具有原生 APP 体验的服务。</p>
+<p>基于微信小程序轻快的特点，小程序拟定了小程序界面设计指南和建议。 设计指南建立在充分尊重用户知情权与操作权的基础之上。旨在微信生态体系内，建立友好、高效、一致的用户体验，同时最大程度适应和支持不同需求，实现用户与小程序服务方的共赢。</p>
+<h4><span class="auto_menu">小程序概述</span></h4>
+<p>一个小程序页面组成，如下：</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387167" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-51.jpg" width="1486" height="598" /></span></p>
+<p>为了方便开发者减少配置项，描述页面的四个文件必须具有相同的路径与文件名。</p>
+<h5>1. 小程序的工作原理</h5>
+<p>首先，我们来简单了解下小程序的运行环境。小程序的运行环境分成渲染层和逻辑层，其中 WXML 模板和 WXSS 样式工作在渲染层，JS 脚本工作在逻辑层。</p>
+<p>小程序的渲染层和逻辑层分别由2个线程管理：渲染层的界面使用了WebView 进行渲染；逻辑层采用JsCore线程运行JS脚本。一个小程序存在多个界面，所以渲染层存在多个WebView线程，这两个线程的通信会经由微信客户端（下文中也会采用Native来代指微信客户端）做中转，逻辑层发送网络请求也经由Native转发，小程序的通信模型下图所示。</p>
+<h5>2. 小程序的本质</h5>
+<p>所以，小程序的编码方式实际上是使用前端的语言进行编写的。从理解的角度，小程序可以认为是运行在微信的浏览器容器中，遵从了一套从设计到组件的WeUI规范的Web程序。</p>
+<p>我们称微信客户端给小程序所提供的环境为宿主环境。小程序借助宿主环境提供的能力，可以完成许多普通网页无法完成的功能。为了让开发者可以很方便的调起微信提供的能力，例如获取用户信息、微信支付等等，小程序提供了很多 API 给开发者去使用。需要注意的是：多数 API 的回调都是异步，你需要处理好代码逻辑的异步问题。</p>
+<h5>3. WeUI页面元素所属层级、层级顺序及组合规范</h5>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387168" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-52.jpg" width="671" height="600" /></span></p>
+<p>WeUI页面元素所属层级、层级顺序及组合规范（低到高）：Content、Navigation、Mask、Popout四层。</p>
+<p><strong>Content</strong></p>
+<p>内容层，承载页面主要内容。</p>
+<p><strong>Navigation</strong></p>
+<p>导航层，位于内容层之上，在用户滑动内容层时可保持位置不动，通常用于承载导航栏等需要固定在页面的元素。</p>
+<p><strong>Mask</strong></p>
+<p>蒙层，配合Popout层使用，用于锁定内容层和导航层操作，不单独使用。</p>
+<p><strong>Popout</strong></p>
+<p>弹出层，作为内容层和导航层的补充，用于承载弹窗通知、操作菜单、菜单、成功或加载中等状态的Toast，表单报错提示等弹出内容。</p>
+<h5>4. 小程序运行机制</h5>
+<p><strong>小程序启动</strong></p>
+<p>小程序启动会有两种情况，一种是「冷启动」，一种是「热启动」。</p>
+<p>热启动：假如用户已经打开过某小程序，然后在一定时间内再次打开该小程序，此时无需重新启动，只需将后台态的小程序切换到前台，这个过程就是热启动；</p>
+<p>冷启动：用户首次打开或小程序被微信主动销毁后再次打开的情况，此时小程序需要重新加载启动，即冷启动。<br />
+小程序没有重启的概念。</p>
+<p><strong>前台/后台状态</strong></p>
+<p>当用户点击右上角胶囊按钮关闭小程序，或者按了设备 Home 键离开微信时，小程序并没有直接销毁，而是进入了后台状态；</p>
+<p>当用户再次进入微信或再次打开小程序，小程序又会从后台进入前台。</p>
+<p><strong>小程序销毁</strong></p>
+<p>需要注意的是：只有当小程序进入后台一定时间，或者系统资源占用过高，才会被真正的销毁。</p>
+<ul>
+<li>当小程序进入后台，客户端会维持一段时间的运行状态，超过一定时间后（目前是5分钟）小程序会被微信主动销毁。</li>
+<li>当小程序占用系统资源过高，可能会被系统销毁或被微信客户端主动回收。</li>
+</ul>
+<p>在 iOS 上，当微信客户端在一定时间间隔内（目前是 5 秒）连续收到两次及以上系统内存告警时，会主动进行小程序的销毁，并提示用户 「该小程序可能导致微信响应变慢被终止」。建议小程序在必要时使用 wx.onMemoryWarning 监听内存告警事件，进行必要的内存清理。</p>
+<h5>5. 小程序更新机制</h5>
+<p><strong>未启动时更新</strong></p>
+<p>开发者在管理后台发布新版本的小程序之后，如果某个用户本地有小程序的历史版本，此时打开的可能还是旧版本。微信客户端会有若干个时机去检查本地缓存的小程序有没有更新版本，如果有则会静默更新到新版本。总的来说，开发者在后台发布新版本之后，无法立刻影响到所有现网用户，但最差情况下，也在发布之后 24 小时之内下发新版本信息到用户。用户下次打开时会先更新最新版本再打开。</p>
+<p><strong>启动时更新</strong></p>
+<p>小程序每次冷启动时，都会检查是否有更新版本，如果发现有新版本，将会异步下载新版本的代码包，并同时用客户端本地的包进行启动，即新版本的小程序需要等下一次冷启动才会应用上。</p>
+<p>如果需要马上应用最新版本，可以使用 wx.getUpdateManager API 进行处理。</p>
+<h5>6. 插件</h5>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387122" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-2.jpg" width="856" height="871" /></span></p>
+<h5>7. 小程序成员管理</h5>
+<p>不同项目成员拥有不同的权限，从而保证小程序开发安全有序。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387123" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-3.jpg" width="1074" height="1006" /></span></p>
+<h4><span class="auto_menu">开放接口与设备</span></h4>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387124" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-4.jpg" width="1278" height="1408" /></span></p>
+<p>开放接口：<a href="https://developers.weixin.qq.com/miniprogram/dev/api/open-api/login/wx.login.html">https://developers.weixin.qq.com/miniprogram/dev/api/open-api/login/wx.login.html</a></p>
+<p>设备：<a href="https://developers.weixin.qq.com/miniprogram/dev/api/device/ibeacon/wx.stopBeaconDiscovery.html">https://developers.weixin.qq.com/miniprogram/dev/api/device/ibeacon/wx.stopBeaconDiscovery.html</a></p>
+<h4><span class="auto_menu">小程序设计规范</span></h4>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387125" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-5.jpg" width="1492" height="1565" /></span></p>
+<p>小程序设计规范：<a href="https://developers.weixin.qq.com/miniprogram/design/">https://developers.weixin.qq.com/miniprogram/design/</a></p>
+<p>设计文件下载：<a href="https://developers.weixin.qq.com/miniprogram/design/#%E5%9B%BE%E6%A0%87">https://developers.weixin.qq.com/miniprogram/design/#%E5%9B%BE%E6%A0%87</a></p>
+<h4><span class="auto_menu">小程序基础设计</span></h4>
+<p><strong>1. 小程序菜单深浅配色方案（iOS和Android）</strong></p>
+<p>开发者可在满足可用性的前提下，从微信提供的深浅两套配色的小程序菜单中选择合适的方案，以适应小程序页面设计风格。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387126" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-6.jpg" width="1020" height="268" /></span></p>
+<p><strong>2. 小程序菜单</strong></p>
+<p>小程序的所有页面，包括小程序内嵌网页和插件，微信都会在其右上角放置官方小程序菜单，样式如图。开发者不可对其内容自定义，但可选择深浅两种基本配色以适应页面设计风格。 官方小程序菜单将放置在界面固定位置，开发者在设计界面时请预留出该区域空间，若需要在此区域附近放置可交互元素，要特别注意交互事件是否会冲突，操作是否容易被使用。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387127" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-7.jpg" width="1024" height="533" /></span></p>
+<p><strong>3. 品牌标志（Logo）设计</strong></p>
+<p>小程序启动页是小程序在微信内一定程度上展现品牌特征的页面之一。本页面将突出展示小程序品牌特征和加载状态。启动页除品牌标志（Logo）展示外，页面上的其他所有元素如加载进度指示，均由微信统一提供且不能更改，无需开发者开发。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387128" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-8.jpg" width="1034" height="475" /></span></p>
+<h4><span class="auto_menu">小程序导航与布局设计</span></h4>
+<h5>1. 导航区域与标题区域</h5>
+<p>开发者可根据自身功能设计需要在页面内添加自有导航。并保持不同页面间导航一致，指向清晰，有路可退。受限于手机屏幕尺寸的限制，小程序页面的导航应尽量简单。建议开发者设计的自有导航样式与微信官方小程序菜单样式保持一定差异，以便区分。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387129" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-9.jpg" width="1014" height="311" /></span></p>
+<h5>2. 标签分页（Tab）导航</h5>
+<p>开发者可为小程序页面添加标签分页（Tab）导航。标签分页栏可固定在页面顶部或者底部，便于用户在不同的分页间做切换。标签数量不得少于2个，最多不得超过5个，为确保点击区域，建议标签数量不超过4项。一个页面也不应出现一组以上的标签分页栏。</p>
+<p><strong>首页原生底部标签</strong></p>
+<p>其中小程序首页可选择微信提供的原生底部标签分页样式，该样式仅供小程序首页使用。开发时可自定义图标样式、标签文案以及文案颜色等，具体设置项如图标尺寸等可参考开发文档和WeUI基础控件库。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387130" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-10.jpg" width="966" height="444" /></span></p>
+<p><strong>顶部标签</strong></p>
+<p>顶部标签分页栏颜色可自定义。在自定义颜色选择中，务必注意保持分页栏标签的可用性、可视性和可操作性。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387131" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-11.jpg" width="956" height="439" /></span></p>
+<h5>3. 页脚（Footer组件）</h5>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387132" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-12.jpg" width="654" height="510" /></span></p>
+<h4><span class="auto_menu">小程序页面加载设计</span></h4>
+<h5>1. 加载反馈注意事项</h5>
+<ul>
+<li>若载入时间较长,应提供取消操作,并使用进度条显示载入的进度。</li>
+<li>载入过程中,应保持动画效果 ; 无动画效果的加载很容易让人产生该界面已经卡死的错觉。</li>
+<li>不要在同一个页面同时使用超过1个加载动画。</li>
+</ul>
+<h5>2. 结果反馈</h5>
+<p>除了在用户等待的过程中需予以及时反馈外，对操作的结果也需要予以明确反馈。根据实际情况，可选择不同的结果反馈样式。对于页面局部的操作，可在操作区域予以直接反馈，对于页面级操作结果，可使用弹出式提示、模态对话框或结果页面展示。对于常用控件，微信设计中心将提供控件库，其中的控件都已提供完整操作反馈。</p>
+<h5>3. 启动页加载</h5>
+<p>小程序启动页是小程序在微信内一定程度上展现品牌特征的页面之一。本页面将突出展示小程序品牌特征和加载状态。页面上的其他所有元素如加载进度指示，均由微信统一提供。</p>
+<p>&nbsp;</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387133" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-13.jpg" width="952" height="437" /></span></p>
+<h5>4. 页面下拉刷新加载</h5>
+<p>在微信小程序内，微信提供标准的页面下拉刷新加载能力和样式，开发者无需自行开发。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387134" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-14.jpg" width="958" height="390" /></span></p>
+<h5>3. 全局加载反馈</h5>
+<p><strong>使用标题栏提示加载小程序页面内容的过程</strong></p>
+<p>开发者可以参考图中样式，使用标题栏提示加载小程序页面内容的过程。例如：</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387135" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-15.jpg" width="952" height="247" /></span></p>
+<p><strong>模态加载</strong></p>
+<p>模态的加载样式将覆盖整个页面的，由于无法明确告知具体加载的位置或内容将可能引起用户的焦虑感，因此应谨慎使用。除了在某些全局性操作下不要使用模态的加载。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387136" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-16.jpg" width="950" height="436" /></span></p>
+<p><strong>自定义页面内容的加载样式</strong></p>
+<p>开发者可在小程序里自定义页面内容的加载样式。建议不管是使用在局部还是全局加载，自定义加载样式都应该尽可能简洁，并使用简单动画告知用户加载过程。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387137" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-17.jpg" width="946" height="435" /></span></p>
+<p><strong>Loadmore组件</strong></p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387138" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-18.jpg" width="926" height="188" /></span></p>
+<h5>4. 局部加载</h5>
+<p>局部加载反馈即只在触发加载的页面局部进行反馈，这样的反馈机制更加有针对性，页面跳动小，是微信推荐的反馈方式。例如：</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387139" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-19.jpg" width="950" height="436" /></span></p>
+<h4><span class="auto_menu">小程序页面Content设计</span></h4>
+<p>小程序页面Content设计，实际上就是依据我们的业务设计，将小程序组件和我们自己设计的组件，按照小程序设计规范与视觉规范有序的组合和排版的过程。</p>
+<h5>1. 小程序组件库</h5>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387140" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-20.jpg" width="1200" height="578" /></span></p>
+<p>设计组件库：<a href="https://weui.io/">https://weui.io/</a></p>
+<p>开发组件库：<a href="https://developers.weixin.qq.com/miniprogram/dev/component/">https://developers.weixin.qq.com/miniprogram/dev/component/</a></p>
+<h5>2. 小程序视觉规范</h5>
+<p><strong>字体</strong></p>
+<p>微信内字体的使用与所运行的系统字体保持一致，常用字号为20, 18, 17, 16,14 13, 11(pt)，使用场景具体如下：</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387141" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-21.jpg" width="1150" height="528" /></span></p>
+<p><strong>字体颜色</strong></p>
+<p>主要颜色：</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387142" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-22.jpg" width="600" height="276" /></span></p>
+<blockquote><p>#09BB07 #353535 #888888 #576b95 #e64340<br />
+RGB(9,187,7) RGB(53,53,53) RGB(136,136,136) RGB(87,107,149) RGB(230,67,64)</p></blockquote>
+<p>主内容 Black 黑色，次要内容 Grey 灰色；时间戳与表单缺省值 Light 灰色；大段的说明内容而且属于主要内容用 Semi 黑。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387143" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-23.jpg" width="952" height="437" /></span></p>
+<blockquote><p>Light Gray Semi Black<br />
+#b2b2b2 #888888 #353535 #000000</p></blockquote>
+<p>蓝色为链接用色，绿色为完成字样色，红色为出错用色 Press 与 Disable 状态分别降低透明度为20%与10%。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387144" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-24.jpg" width="906" height="416" /></span></p>
+<blockquote><p>Naormal Press（20%） Disabled（10%）<br />
+#576b95<br />
+#09BB07<br />
+#e64340</p></blockquote>
+<p>列表</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387145" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-25.jpg" width="1062" height="488" /></span></p>
+<p>表单</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387146" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-26.jpg" width="1016" height="467" /></span></p>
+<p>按钮</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387147" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-27.jpg" width="1280" height="1029" /></span><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387148" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-28.jpg" width="1276" height="919" /></span><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387149" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-29.jpg" width="1276" height="919" /></span><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387150" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-30.jpg" width="1270" height="583" /></span></p>
+<p>图标</p>
+<p>尺寸：100*100 pX</p>
+<p>般用于结果页面状态提示，根据结果的情况选择对应的 icon。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387151" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-31.jpg" width="626" height="232" /></span></p>
+<p>视觉设计规范：<a href="https://developers.weixin.qq.com/miniprogram/design/#%E5%AD%97%E4%BD%93">https://developers.weixin.qq.com/miniprogram/design/#%E5%AD%97%E4%BD%93</a></p>
+<h4><span class="auto_menu">反馈设计-Popout</span></h4>
+<h5>1. 操作反馈</h5>
+<p><strong>图标型弹出提示</strong></p>
+<p>图标型弹出提示适用于轻量级的成功提示，1.5秒后自动消失，并不打断流程，对用户影响较小，适用于不需要强调的操作提醒，例如成功提示。特别注意该形式不适用于错误提示，因为错误提示需明确告知用户，因而不适合使用一闪而过的弹出式提示。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387152" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-32.jpg" width="1020" height="469" /></span></p>
+<p><strong>文字型弹出提示</strong></p>
+<p>文字型弹出提示适用于需要轻量化地用文字解释当前状态或提醒不严重的错误。1.5秒后自动消失，不打断流程，对用户影响较小。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387153" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-33.jpg" width="1016" height="467" /></span></p>
+<p><strong>模态对话框</strong></p>
+<p>对于需要用户明确知晓的操作结果状态可通过模态对话框来提示，并可附带下一步操作指引。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387154" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-34.jpg" width="1012" height="465" /></span></p>
+<p><strong>结果页（非Popout）</strong></p>
+<p>对于操作结果已经是当前流程的终结的情况，可使用操作结果页来反馈。这种方式最为强烈和明确的告知用户操作已经完成，并可根据实际情况给出下一步操作的指引。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387155" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-35.jpg" width="994" height="457" /></span></p>
+<p><strong>异常状态——表单出错（非Popout）</strong></p>
+<p>表单报错，在表单顶部告知错误原因，并标识出错误字段提示用户修改。</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387156" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-36.jpg" width="986" height="453" /></span></p>
+<h5>2. 足不出户</h5>
+<p><strong>模态对话框</strong></p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387174" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-bc-20200902-1.jpg" width="1417" height="820" /></span></p>
+<p><strong>ActionSheet</strong><br />
+<span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387175" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-bc-20200902-2.jpg" width="952" height="820" /></span></p>
+<p>△ IOS-ActionSheet Android-ActionSheet</p>
+<p><strong>Half-screen Dialog</strong></p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387162" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-42.jpg" width="461" height="800" /></span></p>
+<p><strong>Picker</strong></p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387176" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-bc-20200902-3.jpg" width="951" height="820" /></span></p>
+<p><strong>Toast</strong></p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387177" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-bc-20200902-4.jpg" width="944" height="820" /></span></p>
+<h4><span class="auto_menu">云开发</span></h4>
+<p>开发者可以使用云开发开发微信小程序、小游戏，无需搭建服务器，即可使用云端能力。</p>
+<p>云开发为开发者提供完整的原生云端支持和微信服务支持，弱化后端和运维概念，无需搭建服务器，使用平台提供的 API 进行核心业务开发，即可实现快速上线和迭代，同时这一能力，同开发者已经使用的云服务相互兼容，并不互斥。</p>
+<p>云开发提供了几大基础能力支持：</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387178" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-bc-20200902-999.jpg" width="927" height="304" /></span></p>
+<h4><span class="auto_menu">拓展</span></h4>
+<p>小程序开源了，weui-wxss、weui.js和react-weui等，可以使用他们进行Web页面的设计与开发，它可以运行在任何浏览器中。</p>
+<p>weui：<a href="https://github.com/Tencent/weui">https://github.com/Tencent/weui</a></p>
+<p>欢迎关注作者微信公众号：「Jingwhale Design」</p>
+<p><span class="img-zoom"><img alt="超实用！微信小程序设计精简版指南" class="alignnone size-full wp-image-387121" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-1.jpg" width="180" height="180" /></span></p>
 ➜为什么直播间送礼面板的设计不一样？来看高手的交互分析！
 https://www.uisdc.com/design-differences-in-live-broadcast-room	63840
 <p>读者提问：</p>
@@ -46,3 +237,271 @@ https://www.uisdc.com/design-differences-in-live-broadcast-room	63840
 <p>[link https://www.uisdc.com/wechat-hide-like-function]</p>
 <p>欢迎关注作者的微信公众号：「呆呆U理」</p>
 <p><span class="img-zoom"><img alt="为什么直播间送礼面板的设计不一样？来看高手的交互分析！" class="alignnone size-full wp-image-228698" src="https://image.uisdc.com/wp-content/uploads/2017/08/ddqr20171-1-1-1-1.jpg" alt="微信为什么隐藏点赞和评论功能？来看高手的分析！" width="180" height="179" /></span></p>
+➜面试常问题！什么是设计系统、设计语言和设计语言系统？
+https://www.uisdc.com/design-system-2	63841
+<p>不管是晋升答辩还是跳槽面试，甚至是过稿评审，大家一定都会被问到大致这么几个问题：</p>
+<p><span class="img-zoom"><img alt="面试常问题！什么是设计系统、设计语言和设计语言系统？" class="alignnone size-full wp-image-387193" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gd-20200902-1.jpg" width="986" height="269" /></span></p>
+<p>大多数铁汁对设计语言或者设计系统已经有了自己的理解，但因为问题太宏观所以并不明确这两个概念的具体含义以及区别，导致阐述的时候模棱两可，拉低面试评价（都是痛，我懂得）。所以本文会重点科普下设计语言与设计系统的概念。</p>
+<h4><span class="auto_menu">设计语言是什么？</span></h4>
+<p><strong>1. 为什么会有设计语言？</strong></p>
+<p>拆分来看，先聚焦「语言」。</p>
+<p>维基百科对语言的解释：就广义而言，是用于沟通的一套方式，有其符号与处理规则，一般称为文法。符号通常称为文字，会以视觉、声音或者触觉方式来进行传递。语言用来传递已知或未知事物的含义。</p>
+<p>「语言」一词可以更广义的理解为已知或未知世界的基础构成系统。严格来说，语言是指人类沟通所使用的语言——自然语言。在一个先进的社会中一般人都必须通过学习才能获得语言能力。语言的目的是交流观念、意见、思想等。</p>
+<p>我们试着用设计师的视角去理解一下这段文字：设计中的语言作为一种「沟通的方式」，做适当的表达，进行特定的信息传递。这一切显得基础且必要，在上篇文章中有介么一个图大家还记得吧：</p>
+<p><span class="img-zoom"><img alt="面试常问题！什么是设计系统、设计语言和设计语言系统？" class="alignnone size-full wp-image-387194" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gd-20200902-2.jpg" width="931" height="800" /></span></p>
+<p>普适性强且缺乏记忆点的这种设计更像「普通话」，你在接收起来毫无压力，但缺乏个性和故事，当你一直处于这种环境时间久了，一切就变得索然无味。所以这就使得产品的需要在表现层透出来设计语言，这种语言要带有品牌或自己鲜明的个性，才能帮助产品传递品牌价值。</p>
+<p><strong>2. 设计语言承载了什么，ta的载体又是什么？</strong></p>
+<p>最近查阅了各大网站对设计语言的描述，基本上是「字体、颜色、图形、网格系统」这几个因子，坦诚的讲，这应该是浅层的语言表现形式。但如果我们拔高维度来思考，设计语言就应该是承上启下的中枢，呈上的是企业（或者产品）的文化价值输出，启下的才是形式载体，用一个图来解释下：</p>
+<p><span class="img-zoom"><img alt="面试常问题！什么是设计系统、设计语言和设计语言系统？" class="alignnone size-full wp-image-387195" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gd-20200902-3.jpg" width="804" height="354" /></span></p>
+<p>再举个列子来帮助理解：</p>
+<p>谷歌的MD赖以成名的设计语言是对「纸」的隐喻，ta承载了谷歌庞大生态的各类终端的链接关系，手机/电脑/pad/手表/车载等等，需要这套语言不直接针对某一个渠道的同时又需要有个性化的存在，并且可以容得下复杂的层级关系，在这种纵横交错的期盼中，设计团队从现实中来抽取「纸」的概念赋予这套语言，完美的权衡了生态产品的关系。</p>
+<p>而构成语言的因子，比如「floating action button」就是这套语言衍生出来的组件。而规则对应的就是谷歌的设计规范，ta会帮助你在不同场景/模式下正确的使用这些组件。</p>
+<p><span class="img-zoom"><img alt="面试常问题！什么是设计系统、设计语言和设计语言系统？" class="alignnone size-full wp-image-387196" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gd-20200902-4.jpg" width="1341" height="800" /></span></p>
+<h4><span class="auto_menu">设计系统又是什么？</span></h4>
+<p><strong>1. 设计系统是什么及其构成</strong></p>
+<p>引用《design system》里面的解释，一套成熟的DS包括设计语言中的principle（原则）、guideline（规范）、components（组件）、pattrens（模式）和library（库）等等，</p>
+<p><span class="img-zoom"><img alt="面试常问题！什么是设计系统、设计语言和设计语言系统？" class="alignnone size-full wp-image-387197" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gd-20200902-5.jpg" width="1200" height="553" /></span></p>
+<p>同时还有tools（设计工具）/motion（动态设计）等，所以你会发现，设计系统除了包括精神指导，更包含了执行落地方案中的行为指导。</p>
+<p><span class="img-zoom"><img alt="面试常问题！什么是设计系统、设计语言和设计语言系统？" class="alignnone size-full wp-image-387198" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gd-20200902-6.jpg" width="1266" height="800" /></span></p>
+<p>△ 图为滴滴的设计系统，更加侧重于落地的指南性质</p>
+<p>所以设计系统更侧重宏观的设计品质把控，是在明确的标准指导下，通过组件的重组/组装在一起以构建任意的产品，通俗地说，区别于标准和文档，是有关如何使用子品类的「教程」。</p>
+<p><strong>2. 设计系统的应用场景</strong></p>
+<p>设计系统的应用场景几乎覆盖了整个公司的设计产出，线上产品/线上运营/品牌传播/线下物料等等等等。</p>
+<p><span class="img-zoom"><img alt="面试常问题！什么是设计系统、设计语言和设计语言系统？" class="alignnone size-full wp-image-387199" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gd-20200902-7.jpg" width="970" height="510" /></span></p>
+<p>△ 上图为某司的营销视觉设计品类</p>
+<p>铁汁们在塑造设计系统的时候可以模煳产品和运营之间的鸿沟，所有的设计都需要在一个体系里被容纳，甚至你可以这么理解「品牌即产品」（branding is product），产品设计变成了品牌的最大输出口。</p>
+<h4><span class="auto_menu">区别设计语言/系统的公式</span></h4>
+<p>设计系统和设计语言系统之间有关联，但本质上还是不同，语言相对务虚，系统相对务实。用一个公式来概括下ta们：</p>
+<ul>
+<li>设计语言=模式/组件库+规则+语义</li>
+<li>设计系统=模式/组件库+规则+语义+ 落地执行标准+实施方案</li>
+</ul>
+<p>所以设计系统是包含设计语言的。</p>
+<p><strong>小结一下：</strong></p>
+<p>每个产品都会有不同的用途，都会有不同的价值输出，所以每套语言也不尽相同。理解这2者的概念之后，大家可以再去看看自家产品，试着去完善自己的设计系统，可以让自己的作品在之后的职业生涯中更体系化更加分。</p>
+<p>欢迎关注作者的微信公众号：「Nana的设计锦囊」</p>
+<p><span class="img-zoom"><img alt="面试常问题！什么是设计系统、设计语言和设计语言系统？" class="alignnone size-full wp-image-269451" src="https://image.uisdc.com/wp-content/uploads/2018/05/uisdc-nanaqr.jpg" alt="为什么你会做好看且无用的UX设计？" /></span></p>
+➜上万字干货！设计师必读的原子设计完整指南
+https://www.uisdc.com/atomic-design-guidelines	67472
+<p>「我们不设计页面，我们设计构成元素的系统。」——Stephen Hay</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387206" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-1.jpg" width="483" height="800" /></span></p>
+<h4><span class="auto_menu">原子设计前言介绍</span></h4>
+<p>原子设计理论并不是什么高大上的规则。</p>
+<p>随着网页设计的持续发展，我们认识到开发设计系统（design system）的重要性，它最早就是为了让网页设计师更容易理解网页的构成，后来才延伸到UI设计当中。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387207" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-2.jpg" width="1280" height="777" /></span></p>
+<p>简单来说，当公司的业务产品逐渐扩大时，我们需要制定一套完整的设计系统，提升设计和开发的协作效率，统一所有设计师的输出物。 开始设计系统的制定时，大部分设计师可能都会先去网上找到大厂现成的设计系统，当拿到他们的成品的时候，会把自己的产品进行拆解和借鉴，这的确能快速解决问题，但是如果不理解其中的组织规则和逻辑，只是借鉴他们现成的设计系统，只能了解个大概，知其然而不知其所以然。因此，原子设计理论的出现就是为了帮助我们去搭建设计系统，这套理论已经逐渐被国外一些大厂应用于创建统一和富有层次的设计系统。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387208" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-3.jpg" width="1280" height="533" /></span></p>
+<p>原子是所有事物的基本构成物质。每一个化学元素都具有不同的性质，并且它们一旦被分解就会失去其意义。</p>
+<p>分子是由两个或两个以上的原子通过化学键结合在一起的。这些原子的组合具有自己独特的性质，并且相较于原子来说，更具实际意义和可操作性。</p>
+<p>有机体是由分子有机地组合在一起的。这些相对复杂的结构可以从单细胞生物一直到像人类这样难以置信的复杂生物体。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387209" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-4.jpg" width="1280" height="774" /></span></p>
+<p>宇宙中的物质都可以被分解成为原子元素。</p>
+<p>碰巧的是，我们的界面就是由一些基本的元素组成的。Josh Duck的「HTML元素周期表」完美阐述了我们所有的网站、APP、企业内部网、hoobadyboops等等是如何由相同的HTML元素组成的。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387210" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-5.jpg" width="1024" height="768" /></span></p>
+<p>△Josh Duck的「HTML元素周期表」</p>
+<p>接下来和大家细聊一下什么是原子设计；原子设计到底好在哪里；为什么要有设计系统；以及该如何利用原子理论创建自己的项目组件库。</p>
+<h4><span class="auto_menu">什么是原子设计</span></h4>
+<p>原子设计（Atomic Design）理念最早是由国外网页设计师Brad Frost提出的，他从化学元素周期表中得到启发，发现原子结合在一起，可以形成分子，进一步形成组织，从科学的角度来讲，在宇宙中的所有事物都是由一组有序的原子组成。</p>
+<p>Brad将这个概念应用到界面设计中，仔细观察后我们不难发现，界面其实就是由一些基本的元素组成，文字，颜色和图标等都是一个个原子。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387211" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-6.jpg" width="1280" height="640" /></span></p>
+<p>通过原子设计，我们可以把界面看作是一个连贯的整体，同时也是一些元素的集合，每个元素都不尽相同，互相结合产生更多层次和结构，模块之间相互统一。说到底，原子设计其实是一种设计方法论，它由原子、分子、组织、模块和页面共同协作，由此创作出统一和富有层次的设计系统。</p>
+<p><strong>小总结：</strong></p>
+<p>简单来说：原子结合在一起，形成分子，进一步结合形成的生物体。原子理论意味着在已知宇宙中的所有事物都可以分解为一组有限的原子元素。</p>
+<h4><span class="auto_menu">原子设计的5个层面</span></h4>
+<p>原子设计是一种方法，由五个不同的阶段一起工作，以更慎重和更具层次的方式创建界面设计系统。从而创造出更有效的用户界面系统的一种设计方法。</p>
+<p>它的五个不同阶段是：</p>
+<ul>
+<li>原子(Atoms)：为页面构成的基本元素，例如标签、输入框、文字、颜色等；</li>
+<li>分子(Molecules)：由原子构成的简单UI元素，例如按钮；</li>
+<li>组织(Organisms)：相对分子而言，较为复杂的构成物，由原子及分子所组成；</li>
+<li>模板(Templates)：以页面为基础的架构，将以上元素进行排版；</li>
+<li>页面(Pages)：将实际内容（图片、文章等）放置在特定模板内；</li>
+</ul>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387212" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-7.jpg" width="1280" height="720" /></span></p>
+<p>原子设计不是一个线性的过程， 它更像是一个心理模型，来帮助我们把用户界面看作是一个连贯的整体，同时也是一些元素的集合。这五个阶段的每一个阶段都会在我们的界面设计系统层级中扮演重要角色。下面，让我们更深入的了解每一个阶段哦～</p>
+<p><strong>1. 原子</strong></p>
+<p>如果原子是物质的基础组成部分，那么我们用户界面的「原子」就是那些构成我们用户界面的基本构件了 。在界面中以「元素」的形式存在，例如：颜色、文字、图标、分割线等。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387213" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-8.jpg" width="1280" height="720" /></span></p>
+<p>在团队开始新项目时，为了保证各个页面具有统一的设计风格，我们会制定一套简易的视觉规范，在关键的设计元素上，各个设计师达成一致，这样就能很大程度保证不同页面的风格统一，并在这个基础上去探索更有创新意义的设计方案。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387214" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-9.jpg" width="1280" height="876" /></span></p>
+<p>在模式库中，原子一目了然地展示了所有的基本样式，当你回来继续开发和维护你的设计系统时，这是一份很有用的设计参考指南。</p>
+<p><strong>2. 分子</strong></p>
+<p>分子是原子组合建立的元素，两个原子即可组成一个分子。</p>
+<p>在界面中，分子就像是一个由UI元素组成的相对简单的组织。例如，搜索框里的文字和图标共同打造一了个搜索表单分子。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387215" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-10.jpg" width="1280" height="533" /></span></p>
+<p>以按钮为例，它的组成元素包含了文字、色块、图标和栅格。合并后，这些抽象的原子从毫无关联到又一个共同的目的，图标和文字互相配合传达意义，颜色定义了按钮的特性，栅格为按钮定义了一个尺寸和规范。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387216" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-11.jpg" width="1280" height="640" /></span></p>
+<p>将单个元素组装为简单的功能组是我们一直以来构建用户界面的方式，可帮助UI设计人员和开发人员坚持单一职责原则，这种方式简单且复用性高，可以保证界面具有良好的可用性。</p>
+<p>以界面设计中的表单为例，表单是一个非常常见的设计元素，一个表单分子是由文字、图标和线条原子组成。这些原子合并后，得到的是一个可以应用在任何信息展示或者功能入口的组合。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387217" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-12.jpg" width="1280" height="816" /></span></p>
+<p><strong>3. 组织</strong></p>
+<p>组织是由分子或原子或其它有机体组成的相对复杂的UI部分 。这些组织组成了界面的不同部分。</p>
+<p>通过结合分子和原子，我们可以构建更复杂和可扩展性的模块，这个称之为组织，其实也可以称之为组件，这些组件组成了界面的不同部分。同样以表单为例，一个表单我们可以通过数量的组合，以及间距的调整，元素的增减，在界面中表达不同的场景和含义。从建立分子到建立更精细的组件，这为设计师和开发人员提供了重要的内容构建思路。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387218" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-13.jpg" width="1280" height="756" /></span></p>
+<p>组件在解放设计师生产力方面有着重要的作用，我们可以把界面中常见的组件进行分类整理，如搜索、表单、图片和卡片等，这些常用组件基本能满足日常的设计需求。以Aribnb为例，他们主要分为3类：卡片、表单和内容。每个标签内容的设计形式尽量都保持统一，因此负责不同内容模块的设计师只要选择同一个组件就能完成页面的设计。在短时间内就可以完成页面超多的复杂项目，极大的提升了团队的设计效率。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387219" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-14.jpg" width="1113" height="800" /></span></p>
+<p>在网页端最典型的例子就是网站导航，搜索表单，我们几乎访问的每个网站都会看到这些类型的组件。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387220" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-15.jpg" width="945" height="800" /></span></p>
+<p><strong>4. 模板</strong></p>
+<p>原子，分子和组织的这种语言有助于我们有意识地构造设计系统的组件。但是，最终我们必须采用一个更适合描述我们最终产出的语言，这样才好汇报给老板、客户和同事，简单来说就是说人话。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387221" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-16.jpg" width="1280" height="775" /></span></p>
+<p>模版的本质就是线框图，在这一步我们基本可以看到一个产品的形态。我们可以不断调整组件和分子组合在一起的效果来尝试不同的方案，找到一个相对合适的方案。模版的意义就在于可以专注于页面的内容结构布局，而不是页面的最终内容，此时模版内容是随时可以调整的，尝试不同的方案，在多个模版中进行对比，在这个阶段改动和沟通保证了最低成本。因此，模版在设计系统承载的作用就是保证设计方案在原型阶段的多样性。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387222" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-17.jpg" width="1280" height="772" /></span></p>
+<p>模板是页面级别的对象，它将组件放置在布局中，并显示设计的底层内容结构。在设计一个有效的设计系统时，必须在布局的环境中展示组件的外观和功能，以证明这些部件组成了一个功能良好的整体。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387223" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-18.jpg" width="1085" height="800" /></span></p>
+<p>模板的另一个重要特征是它们专注于页面的底层内容结构，而不是页面的最终内容。设计系统必须考虑内容的动态性质，因此，把例如标题和文字段落的图像大小和字符长度此类组件的重要属性说清楚是很有帮助的。</p>
+<p><strong>5. 页面</strong></p>
+<p>页面是模板的具体实例，填充了真实的内容（图片、文字等）后形成页面，也就是常说的「视觉稿」，将占位符替换为有代表性的真实内容，使设计系统有了生命。在模版的基础上进行优化和完善就形成了页面最终的视觉方案。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387224" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-19.jpg" width="1280" height="810" /></span></p>
+<p>页面阶段是原子设计中最具体的阶段，由于一些众所周知的原因这个阶段非常重要。别忘了，这可是用户在访问你的界面时会实际看到和交互的内容。</p>
+<p>除了演示用户所看到的最终界面之外， 页面对于测试底层设计系统的有效性是必不可少的 。在页面阶段，我们可以看到当将真实内容应用于设计系统时，所有这些模式如何运作。所有的一切看起来都很棒吗？如果答案是否定的，那么我们可以回过头去修改我们的分子、生物体和模板，以更好地满足我们内容的需求。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387225" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-20.jpg" width="1085" height="800" /></span></p>
+<p>页面还提供了一个表达模板变量的地方，这对建立强大而可靠的设计系统至关重要。以下是模板变量的几个例子：</p>
+<p>用户在其购物车中有一个商品，另一个用户在其购物车中有十个商品。</p>
+<p>网页APP的仪表板通常显示最近的活动，但是该部分对于首次使用的用户是禁用的。</p>
+<p>一篇文章标题可能是40个字符长，而另一篇文章标题可能是100个字符长。</p>
+<p>在所有这些例子中，底层的模板是相同的，但用户界面将会随着内容的动态性质而改变。这些变化直接影响了底层分子，有机体和模板的构建方式。因此，创建解释这些变量的页面有助于我们建立更具弹性的设计系统。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387226" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-21.jpg" width="1422" height="800" /></span></p>
+<p>这就是原子设计！这五个不同的阶段同时协同工作，以产生有效的用户界面设计系统。</p>
+<p><strong>小总结：</strong></p>
+<ul>
+<li>原子是最基础的UI元素，并且是可以用作界面的元素构建块；</li>
+<li>分子是用于形成相对简单的UI组件的原子集合；</li>
+<li>组织是形成界面各个部分的相对复杂的部件；</li>
+<li>模板将组件放置在布局中，并演示设计的底层内容结构；</li>
+<li>页面将真实内容应用于模板，设计出视觉稿，并最终成为开发落地的依据；</li>
+</ul>
+<h4><span class="auto_menu">为何要用原子设计作为理论指导</span></h4>
+<p>原子设计为制作设计系统提供了清晰的方法。客户和团队成员通过实际的设计流程与步骤，能更好的去理解设计系统的概念。原子设计使我们能够从抽象的设计中过渡到具体的设计中来，因此我们可以对一个设计系统进行一致性和可伸缩性等类似特性的控制。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387227" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-22.jpg" width="1280" height="810" /></span></p>
+<p>通过模块化的设计系统调动组件，可以使我们开发新的产品时，从开始就可以对产品进行严格的把控与一定程度上的控制，进而规避了事后风险。开发之前不确定好系统模块化，毫无逻辑的去开发，开发到一半发现功能与需求对不上等问题逐渐产生，会导致产品的延期、人员成本的浪费、资金成本的增加，产品的迭代率的下降、进而影响市场先机与市场占有率。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387228" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-23.jpg" width="1200" height="675" /></span></p>
+<p>原子化设计与原来的样式库设计思路不一样，原子化设计从抽象到具象，从元素到组件，让设计师从底层开始思考，对整个设计会有更清晰的理解。同时也能让设计更加统一，在新增组件的时候更谨慎。</p>
+<p>原子设计的原理可以最大程度保证任何一个设计组件的构成与开发构建组件一一对应。同时应用原子设计的设计软件（e.g., Sketch, Figma)可以给新设计师足够的自由满足需求变通，并且可以保证同一个设计组件的更新会覆盖到任何一个使用这个组件的设计中。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387229" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-24.jpg" width="1280" height="718" /></span></p>
+<p>原子设计为我们提供了一些关键的见解，帮助我们创建更有效、更深思熟虑的UI设计系统。</p>
+<p>那么</p>
+<h4><span class="auto_menu">如何创建设计系统</span></h4>
+<p>如果产品规模小只需要1、2个设计师，大概率是前期不需要大费周章搞一个需要开发配合的设计系统。可以只利用Sketch或者Figma做一个像贴纸一样的设计组件库。但是功能多了怎么办，公司来新人了，当新设计师产出后就会发现与原设计师设计的风格不一样，慢慢发现整体设计风格不统一了，只靠一个简单的组件库很难能满足新功能需求，新功能贴纸上没有设计或者设计需要变通，又或者是新设计师忙着交工忘记检查自己新组件和已有组件的异同。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387230" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-25.jpg" width="1087" height="800" /></span></p>
+<p>这时候就会需要一个设计师领头去重新整理设计系统，走查发现同一个正文所用的十几个不同字号，又或者是十几个透明度不同的灰黑色字体，所有组件跟现有上线产品对比整理好后一并交给开发，开发再一一整理代码库。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387231" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-26.jpg" width="1064" height="532" /></span></p>
+<p>设计系统（Design Systems）对于很多年轻设计师可能十个新名词，但是设计规范和组件等我们应该还是有一定认知的。在设计的过程中，我们会被其影响。在我们日常所使用的App产品中，如Apple、Google、Airbnb、Uber、滴滴等，他们的产品体验非常流畅，用户使用产品时能够高效地满足需求，在其良好的体验背后都有着一套强大的设计系统做支撑。</p>
+<p>为什么需要设计系统</p>
+<p>团队协作，体验一致。以滴滴为例，虽然只是一个简单的打车应用，但是其旗下的业务却很多，快出、出租车、顺风车等，每个业务都由不同的团队和设计师负责。可以想象如果没有设计系统，任由各模块设计师自由发挥，风格各异，出来的结果可想而知。而有了设计系统的帮助，就会感觉界面风格非常统一，感觉是出自同一个设计师之手，可见其设计系统的功劳不小。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387232" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-27.jpg" width="1280" height="720" /></span></p>
+<p>系统的管理多样性。在设计过程中，我们会发现过程中，我们会发现每个业务的形态都是基于不同的场景，因为场景的多样性，在表现上就会催生出不同的样式。如果每个业务都用一种样式表达，久而久之当业务增长过快时，我们现有的设计模式就会难以满足。Airbnb的设计方式就是非常值得参考的一个案例，从最开始是提供民宿，到后来新增的餐馆服务，你会发现房源和餐馆都用了同一套图文信息结构，只是在内容的细节上有一些不同。这样可以降低设计的难度。设计师不用为每个场景思考一个设计模式而烦恼。同时，用户在浏览不同场景的内同时，在相互切换中也不会产生为违和感，一切都是很自然的操作。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387233" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-28.jpg" width="1280" height="720" /></span></p>
+<p>帮助产品成长，避免一次性设计。互联网产品的成长模式是一种渐进式迭代，在产品初期的主要诉求是快速上线，等到产品上线获取一定的用户，证明它可以活下去时再逐步完善，增加更多的功能。每一次的迭代都是站在我们之前的思考之上，每一次的优化都会让我们的设计更进一步，这是我们期望达到的结果。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387234" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-29.jpg" width="1280" height="720" /></span></p>
+<p>以Uber为例，新版本继承了黑色按钮的设计，并和地图进行了结合，地图的配色和旧版本相比也变得生动了，这种改变并不是一蹴而就，而是建立在原有版本之上。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387235" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-30.jpg" width="1280" height="533" /></span></p>
+<ul>
+<li>一致性（Consistency）：由于分解界面成单一元素，不论在哪一个页面，UI元素的互动性是相同的，例如颜色变化、字体的排序、以及反馈。不但让使用者体验相同，在视觉上更为和谐。</li>
+<li>效率（Efficiency）：由于建立了组件库，一旦要更改某一个元素，可以马上施行、应用。</li>
+<li>跨部门的共通语言（Collaboration）：不仅方便设计师思考页面的和谐性，也可以让工程师、测试检验清楚页面的逻辑架构及变化，减少不必要的来回沟通</li>
+</ul>
+<p>在此，顺便浅谈下设计系统。</p>
+<p>通常，设计系统包含的内容由设计原则、设计语言和组件库，这是一个整体的概念。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387236" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-31.jpg" width="1280" height="775" /></span></p>
+<p><strong>1. 设计原则</strong></p>
+<p>设计原则是一个产品的核心设计理念，设计的本质就是解决问题，在制定设计原则时要建立在这个中心思想之上。这些问题也许是一个业务形态，例如打车的场景，也许是一个设计形式，如表单。设计形式又很多，我们应该如何选择呢？相对合理的方法就是建立一个规则，所有的问题和形式都想这个规则靠拢，减少不确定性，这就是设计原则的出发点。因此我们可以理解为，设计原则就是一系列的规则，是我们设计过程中要遵循的中心思想。</p>
+<p>例如：苹果把审美作为第一要素存在于设计原则中，它的产品往往也是品味的代名词，看看它的设计原则就知道了：</p>
+<ul>
+<li>审美的完整性</li>
+<li>一致性</li>
+<li>直接操作</li>
+<li>即使的反馈</li>
+<li>隐喻</li>
+<li>用户可控</li>
+</ul>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387237" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-32.jpg" width="1280" height="762" /></span></p>
+<p>△ 官网：<a href="https://developer.apple.com/design/">https://developer.apple.com/design/</a></p>
+<p>再来看看Material Design，Google对其定义是一个完整统一的系统，结合了理论、资源和工具的数字体验产品，相比而言它的设计原则就是更加独特，这是它的设计原则：</p>
+<ul>
+<li>材料是一种隐喻</li>
+<li>大胆/图形/强调/</li>
+<li>运动赋予意义</li>
+<li>灵活的基础</li>
+<li>跨平台</li>
+</ul>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387238" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-33.jpg" width="1280" height="714" /></span></p>
+<p>△ 官网：<a href="https://material.io/design">https://material.io/design</a></p>
+<p>由此可以看出，和iOS相比，Material Design的设计原则更加的抽象，因为他拥有一个独特的设计世界观，用还原的方法和物理方法呈现出它的本质，通过抽象的视觉卡片传递出设计的目的和原则。</p>
+<p><strong>2. 设计语言</strong></p>
+<p>在建立设计原则后，下一步就是制定一套设计语言规范，设计规范是设计系统的表现层，面向的对象是团队设计师和开发者，他能帮助设计师的设计输出保持风格统一。同样也能帮助开发者高度还原设计。非常有利于设计师和开发者的协作。这套规范包含的有：字体、颜色、图标和栅格。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387239" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-34.jpg" width="984" height="800" /></span></p>
+<p><strong>3. 组件化设计</strong></p>
+<p>组件化设计主要作用有两点，一是保证多人协作效率，组件化设计可以快速完成一个简单页面的设计，提升设计效率；二是保持产品体验的统一性。同时，组件化设计环节在设计系统中是一个相对重要的工作，需要有一个全局观，要有较强的设计水平和沟通协作能力，这样，组件化的落地才会得到很好的推进。</p>
+<h4><span class="auto_menu">那些以原子理论构建的设计系统</span></h4>
+<p>在多屏时代，我们时时刻刻都在设计产品界面，需适配多系统，其中很重要的一点是如何在多系统之间保持体验一致性，很多人想到的就是规范，要想做一套严谨逻辑好，灵活的设计规范，那么原子设计可以帮助我们来很好的实现它，它在构建设计系统中算是比较科学的一种方法，国外很多设计团队都在使用这样的设计方法。比如以下这几个团队：</p>
+<p><strong>1. Airbnb</strong></p>
+<p>Airbnb设计副总裁Alex Schleifer在IXDC2017国际体验设计大会上分享了这一创新React Sketch app 管理设计系统， 这是为Airbnb的设计系统而设计的，其实就是个实时更新的代码数据库，可以实时查询sketch数据、代码，也可以下载图标、设计模块，所有工程师、设计师都可以免费下载。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387240" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-35.jpg" width="1000" height="476" /></span></p>
+<p>△ 官网：<a href="https://airbnb.design/events/when-we-use-systems/">https://airbnb.design/events/when-we-use-systems/</a></p>
+<p><strong>2. Frames</strong></p>
+<p>Frames 使用了精致的组件和先进技术，并结合 Sketch 构建了强大的 Web 设计系统，同样能满足修改原子，全局同步更新的功能，支持响应式布局。提供了近百个网页模板，可以非常迅速地完成效果图制作。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387241" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-36.jpg" width="1280" height="592" /></span></p>
+<p>△ 官网：<a href="http://framesforsketch.com">http://framesforsketch.com</a></p>
+<p><strong>3. Nested Symbols</strong></p>
+<p>这是一套免费的设计系统，它将按钮、输入框、下拉菜单、通知等控件，都制作成了嵌套符号，方便自定义和编辑。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387242" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-37.jpg" width="1280" height="693" /></span></p>
+<p>△ 官网：<a href="https://www.janlosert.com/">https://www.janlosert.com/</a></p>
+<h4><span class="auto_menu">如何利用原子理论创建自己的组件库</span></h4>
+<p>原子设计理论最大的价值，就是为设计体系/组件库的构建提供思路和方法，如果你不满足于市场上现有的设计系统，我们还可以自己创建。因此我们首先要为产品设计出一个独特的视觉语言作为起点。这个视觉语言一定要有力度、易于扩展，必须能在所有地方奏效！</p>
+<p>接下来就以 Sketch Library 功能来实现组件库的创建。</p>
+<p><strong>第一步：定义颜色（color）</strong></p>
+<p>将颜色添加 Main、Text、Status 等一级分类，例如：Color/Status；再添加二级分类，例如：Color/Status/Success 等，命名需使用「 / 」 符号区分层级结构。定义好颜色和命名后，将每个颜色转换成 Symbol，便可统一调用。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387243" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-38.jpg" width="1280" height="823" /></span></p>
+<p><strong>第二步：定义字体（font）</strong></p>
+<p>根据设计规范，将不同字号的文字样式罗列出来，例如：Title 1、Body、Body2 等，按照「样式名称/颜色/对齐方式」的层级结构，将文字赋予 Text Style，整理出所有的字体样式。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387244" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-39.jpg" width="1280" height="823" /></span></p>
+<p><strong>第三步：定义图标（icon）</strong></p>
+<p>将图标放置在 24*24px 大小画板内，从定义好的颜色系统中选择合适的 Symbol，这样替换图标颜色时直接选定义好的颜色就可以了。在属性面板中锁定尺寸（size）大小，并把调整尺寸（Resizing） 设为上下左右同时吸附，以确保图标在使用时可以等比缩放。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387245" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-40.jpg" width="1280" height="823" /></span></p>
+<p><strong>第四步：加入其他元素（Elements）</strong></p>
+<p>根据以上对原子的定义和命名方式，依次完成对其他原子、分子和组织的定义，例如：按钮、表单、空状态等，整个过程都是通过 Symbol 的不断嵌套，最终实现组件库的创建。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387246" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-41.jpg" width="1280" height="823" /></span></p>
+<p><strong>第五步：加入组件库</strong></p>
+<p>使用快捷键「cmd+, 」打开 Preferences 面板，选择「Libraries」（组件库）标签，点击「Add Library」（添加组件库）按钮添加刚才的 Sketch 文件，完成后就可以从其他的 Sketch 文件中，对此库里的元素进行调用了。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387247" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-42.jpg" width="1280" height="823" /></span></p>
+<h4><span class="auto_menu">原子理论总结</span></h4>
+<p>写在最后，原子设计是一套具有科学严谨的创建设计系统的方法论，是一个构建UI系统的心理模型。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387248" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-43.jpg" width="900" height="600" /></span></p>
+<p>原子设计使我们可以将我们的界面UI细分为原子元素，并通过这些元素组合在一起形成最终的界面。</p>
+<p>原子作为整个理论最基础的元素，当我们改变其中的原子时，整个体系都会发生变化。原子的设计概念和sketch中的「符号」有异曲同工之妙，当我们改变其中一个元素时，其他所有包含这个元素的页面都会发生变化，可以保证整个系统的一致性和层次感。原子设计为界面元素提供了应用规则和组织原理，这套方法论对于设计系统建立、团队协作、产品迭代都具有非常重要的指导意义。</p>
+<h4><span class="auto_menu">扩展阅读</span></h4>
+<p>经常有同学问ios设计规范，安卓设计规范在哪看这类问题，最后，来推荐一些大平台的设计网站，上文出现过的下面就不重复了。我们耳熟能详的优秀设计都是来自于这些世界顶级互联网公司，说真的，审美这东西还真是人家说了算～</p>
+<p>反正看看又不要钱，都去康康呗～</p>
+<p><strong>1. Google Design</strong></p>
+<p>谷歌设计中心，它非常全面的展示了谷歌的设计工作和概念。包括Material Design在内的所有关于设计、体验、产品等互联网领域的探索。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387249" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-44.jpg" width="1150" height="800" /></span></p>
+<p>△ 网址：<a href="https://design.google/">https://design.google/</a></p>
+<p><strong>2. Fluent Design</strong></p>
+<p>微软基于Windows10的设计语言，包括人机界面布局、控件、样式及资源下载。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387250" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-45.jpg" width="1211" height="800" /></span></p>
+<p>△ 网址：<a href="https://www.microsoft.com/design/fluent/#/">https://www.microsoft.com/design/fluent/#/</a></p>
+<p><strong>3. IBM Design Language</strong></p>
+<p>IBM设计语言是伟大设计的代名词，他将人们的需求转化成精心打造的产品。在这里可以学习IBM设计团队一用户为中心设计的新思维方式。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387251" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-46.jpg" width="1280" height="608" /></span></p>
+<p>△ 网址：<a href="https://www.ibm.com/design/">https://www.ibm.com/design/</a></p>
+<p><strong>4. Facebook Design</strong></p>
+<p>脸书设计官网，在国内，我们常常看到脸书的设计文章被翻成中文为中国设计师所学习</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387252" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-47.jpg" width="1113" height="800" /></span></p>
+<p>△ 网址：<a href="https://facebook.design/">https://facebook.design/</a></p>
+<p><strong>5. Uber Design</strong></p>
+<p>作为全球第一家即使打车应用，优步其超前的设计理念和优秀的用户体验成为同类产品竞相模仿的对象。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387253" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-48.jpg" width="1115" height="800" /></span></p>
+<p>△ 网址：<a href="https://www.uber.deign.com/">https://www.uber.deign.com/</a></p>
+<p><strong>6. Ant Design</strong></p>
+<p>蚂蚁金服设计平台是阿里旗下子公司，基于蚂蚁金服生态系统的跨设计与开发的体验解决方案。</p>
+<p><span class="img-zoom"><img alt="上万字干货！设计师必读的原子设计完整指南" class="alignnone size-full wp-image-387254" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yz-20200903-49.jpg" width="1280" height="768" /></span></p>
+<p>△ 网址：<a href="https://design.alipay.com/">https://design.alipay.com/</a></p>
+<p><strong>参考资料</strong></p>
+<ul>
+<li>《原子设计》官网</li>
+<li>Airbnb 设计规范</li>
+<li>Apple 设计规范</li>
+<li>Material Design设计规范</li>
+<li>Google及其他</li>
+</ul>
