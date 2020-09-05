@@ -1,3 +1,67 @@
 ➜从容应对视频会议的意外尴尬，PowerToys 再添实用新功能
 https://sspai.com/post/62504	15337
 <p>疫情之下，WFH（远程居家办公）逐渐成为了一种热门办公模式，视频会议软件也自然而然地成为最为重要的沟通工具之一。</p><p>虽然目前市面上主流的视频会议软件都提供了基础的麦克风/摄像头开关，但如果应用原生没有提供快捷键，在一堆任务和窗口当中找到视频会议应用、然后点击麦克风/摄像头开关还是有些麻烦，更无法应对一些随时可能会出现的尴尬情景。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/09/05/e5c30ab3107d83744410bbcab0118fe5.gif"><figcaption>今年比较着名的 WFH「翻车」事件</figcaption></figure><p>于是微软与时俱进地在 <a href="https://sspai.com/post/56719" target="_blank">PowerToys</a> 新版本中加入了 Video Conference Mute（视频会议静音）工具。</p><p>更新 PowerToys 至 0.22 版本后并启用 Video Conference Mute 后，PowerToys 默认会在 Windows 10 界面右上角显示一个小工具栏，其中会显示当前的摄像头与麦克风开关状态，单击便可以进行快速开启或关闭麦克风。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/09/05/f5f9f51db57ab58a93b9d8631d141254.png"><figcaption>和系统界面依然很搭调</figcaption></figure><p>当然，更加快速、便捷的方式还是使用对应的快捷键来操作：</p><ul><li><code>Win+N</code>：同时开启或关闭麦克风与摄像头</li><li><code>Win+Shift+O</code>：开启或关闭摄像头</li><li><code>Win+Shift+A</code>：开启或关闭麦克风</li></ul><p>为了在视频会议中实现快捷开关摄像头这一操作，我们需要在相应的视频会议工具的设置中，在摄像头硬件选择的菜单中选择「PowerToys Video Conference」。这样当我们开线上视频会时，便可以通过快捷键来一键开关摄像头。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/09/05/08ca20c617eb7213ebe3750260b644c2.png"></figure><p>默认情况下，在视频会议中关闭摄像头后画面会变为全黑背景，PowerToys 支持我们将全黑背景更换为显示我们自己设定的图片。如果你足够调皮，你还可以提前拍摄好自己开会时的工作大头自拍照或是将动物的照片设定为关闭摄像头后的背景，<s>后果自负。</s></p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/09/05/301180095bea67c6313323ded0c8859d.png"></figure><p>在 PowerToys 设置界面中，除了定制关闭摄像头后显示的画面，我们还可以更改开关操作的快捷键、选择 PowerToys 控制的摄像头或是调整工具栏在界面中所处的位置。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/09/05/e60cc505cd88f14c1b2630b9c37fa6fe.png"></figure><p>实际使用体验下来不难发现，PowerToys 的 Video Conference Mute 功能无论是对音频还是对视频的处理都非常方便且灵敏。这是因为对于音频控制，PowerToys 调用了 Windows 系统内置的通用麦克风 API，开启、关闭都能得到快速响应；而对于视频控制，PowerToys 则配备了一个虚拟驱动程序，针对视频应用模拟出了一个新的「摄像头视频信号来源」，当我们通过快捷键「关闭」摄像头并将背景变为黑色时，视频应用仍以为摄像头是开启的，同时调用 PowerToys 广播的画面。实现方式还是挺巧妙的。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/09/05/09fe83c971c67c2d006768475db7a9c3.png"><figcaption>从安装时的系统对话框也可以对这一实现方式略窥一二</figcaption></figure><p>PowerToys 从初版发布至今，<strong>其包含的小工具数量已经从 2 个增加到了 9 个</strong>，从它的更新的频率可以看出，微软对于这款工具集合目前还是比较重视的。根据开发计划，在后续的小版本中，微软将集中精力提升 PowerToys 的整体稳定性、进行更多的本地化工作，感兴趣的朋友可以持续关注。</p><p>你可以在 GitHub 页面下载到&nbsp;<a href="https://github.com/microsoft/PowerToys/releases/" target="_blank">PowerToys</a>，Video Conference Mute 功能目前仅在 <a href="https://github.com/microsoft/PowerToys/releases/tag/v0.22.0-Experimental" target="_blank">预览版</a> 中提供支持，使用前需确保 Windows 10 系统版本为 1903 (build 18362) 及以上。</p><p><strong>关联阅读：</strong></p><ul><li><a href="https://sspai.com/post/61847" target="_blank">Windows 10 也有「官方」取色工具了：PowerToys 0.20 更新详解</a></li><li><a href="https://sspai.com/post/59884" target="_blank">Windows 10 官方「外挂」更新，这 3 个实用小功能你或许用得上</a></li><li><a href="https://sspai.com/post/56719" target="_blank">微软出品的窗口管理工具，还能让你不再苦记快捷键：PowerToys</a></li></ul><p style="margin-left:0px;">&gt; 下载少数派&nbsp;<a href="https://sspai.com/page/client">客户端&nbsp;</a>、关注&nbsp;<a href="https://sspai.com/s/J71e">少数派公众号&nbsp;</a>，发现更多实用 App 📱</p><p style="margin-left:0px;">&gt; 实用、好用的&nbsp;<a href="https://sspai.com/mall/class/28" target="_blank">正版软件</a>，少数派为你呈现&nbsp;🚀</p><p>© 本文着作权归作者所有，并授权少数派独家使用，未经少数派许可，不得转载使用。</p>
+➜新赛季的英超哪里看？这些正版渠道值得你参考
+https://sspai.com/post/62495	22595
+<p>对于广大足球迷朋友来说，「英超联盟终止与 PPTV 合作」的消息无疑是个大新闻。新赛季的英超眼看着还有一周就要开赛，中国观众却突然失去了在国内通过正版渠道观看赛事直播的渠道，无疑令人着急又遗憾。</p>
+<p>在这篇文章中，我想向你推荐一些获得授权的英超观赛渠道，其中既包含赛事转播，也包含其它形式的赛事报道，希望能帮你跟上新赛季的脚步。</p>
+<h2 id="toc_0">赛事直播类</h2>
+<p>观看英超最直观的方式当然就是收看赛事直播，我会在这个部分向你介绍几个最有代表性且在中国大陆可以看得到的英超转播渠道。有一点需要留意：由于体育比赛的转播涉及复杂的电视转播权问题，各国家和地区政策皆有不同而且整体要求都很严格（很多地区即使你有非常科学的上网方式也不行），所以能在线收看转播的服务其实不多。此外，和订阅 Netflix、Spotify 等流媒体服务一样，购买这些足球转播服务需要双币信用卡，下文将不再赘述。</p>
+<h3 id="toc_1">便宜好用的首选：ELEVEN SPORTS</h3>
+<ul>
+<li>价格：99 新台币 / 月，899 新台币 / 年</li>
+<li>传送门：<a href="https://elevensports.tw/">点击这里</a></li>
+</ul>
+<p>ELEVEN SPORTS 是台湾地区的英超授权转播商，旗下除了拥有英超转播权外，还有 NBA 转播权。ELEVEN SPORTS 只有一档订阅服务，价格为 99 新台币每月或 899 新台币每年，订阅后就能观看其旗下的所有体育节目。</p>
+<p>ELEVEN SPORTS 每周会转播不少于 6 场英超比赛，并且直接用了英超的第一方英文解说，对于老球迷来说会更为亲切。不过由于月费价格不高，ELEVEN SPORTS 版英超转播的清晰度最高只有 720p，更适合在手机或电脑上观看，对大屏幕则不够友好。</p>
+<figure tabindex="0" class="ss-img-wrapper"><img src="https://cdn.sspai.com/editor/u_nicholaszhang/15992133580993.jpg" alt="写文章的时候刚好赶上欧国联"><figcaption class="ss-image-caption">写文章的时候刚好赶上欧国联</figcaption></figure>
+<p>除了英超和 NBA，ELEVEN SPORTS 还会放送棒球、格斗、自行车、欧洲杯预选赛（European Qualifiers）等赛事，可谓花样繁多。我身边就有不仅喜欢足球，而且其它体育项目也都有所涉猎的朋友，ELEVEN SPORTS 对于这样的体育迷而言可谓福利。</p>
+<figure tabindex="0" class="ss-img-wrapper"><img src="https://cdn.sspai.com/editor/u_nicholaszhang/15992133581044.jpg" alt="ELEVEN SPORTS 的节目单，啥玩儿都有"><figcaption class="ss-image-caption">ELEVEN SPORTS 的节目单，啥玩儿都有</figcaption></figure>
+<p>需要注意的是，ELEVEN SPORTS 对访问者的 IP 有一定要求，台湾、美国、新加坡、比利时、法国等国家和地区的 IP 地址可以正常观看内容，购买时需要留意。不过，经过我的实测，使用香港 IP 亦可正常观赏内容。而且 ELEVEN SPORTS 的支付过程相当顺利，填好信用卡就直接扣款了，中途没有任何幺蛾子，省事省心。</p><p><span app-id="15691" contenteditable="false" class="ss-loading"></span><br></p>
+<h3 id="toc_2">看片送足球的「非正宗」之选：NBC Peacock Premium</h3>
+<ul>
+<li>价格：4.99 美元 / 月</li>
+<li>传送门：<a href="https://www.peacocktv.com/premierleague?cid=20200620premierleaguesymed009#ib-section-section-11">点击这里</a></li>
+</ul>
+<p>NBC 是美国的知名电视广播公司，其拥有英超在美国的转播权。NBC 的在线英超转播服务包含在其 NBC Peacock Premium 订阅服务内，涵盖了 175 场比赛直播及全部 380 场比赛的回放。</p>
+<figure tabindex="0" class="ss-img-wrapper"><img src="https://cdn.sspai.com/editor/u_nicholaszhang/15992133581056.jpg" alt=""></figure>
+<p>我一直觉得美国人解说英超「味道不对」，但就我看过的「美版英超」而言，解说员水平其实很高。美国一直是体育强国，其体育行业和赛事转播从业者的整体素质都很优秀，美式解说也有着独特的激情。</p>
+<p>值得一提的是，NBC Peacock Premium 的内容并非只有英超转播一项。相反，某种程度上来说英超更像是这项服务的添头，NBC Peacock Premium 的重点内容是和 Netflix 类似的电影及剧集在线流播，以及 NBC 旗下自制剧的独家放送。换言之，如果你购买了 NBC Peacock Premium，不仅可以看英超，还能顺带看许多电影和剧集，5 美元每月的投入非常划算。</p>
+<figure tabindex="0" class="ss-img-wrapper"><img src="https://cdn.sspai.com/editor/u_nicholaszhang/15992133581064.jpg" alt="英超只是一部分"><figcaption class="ss-image-caption">英超只是一部分</figcaption></figure>
+<p>不过，NBC Peacock Premium 对 IP 地址有一定的要求，必须是美国地址。此外，就我测试而言，NBC Peacock Premium 的支付也很挑卡，如果你的双币信用卡搞不定，可以考虑找身在美国的朋友或者购买虚拟信用卡来解决。</p><p><span app-id="15695" contenteditable="false" class="ss-loading"></span><br></p>
+<h2 id="toc_3">广播类</h2>
+<p>除了收看视频转播，其实你还可以收听英超比赛的实况广播。听广播「看」足球是连我这一代人都没有的记忆，但其实用耳朵听比赛的精彩程度不逊于观看转播，值得一试。</p>
+<p>英超目前有两家授权的赛事广播商，它们分别是：</p>
+<h3 id="toc_4">talkSPORT</h3>
+<p>🎧 收听地址：<a href="https://talksport.com/listen/">点击这里</a></p>
+<p>talkSPORT 于 2007 年起开始以广播形式转播英超赛事，每个赛季都会转播或点评英超的全部 380 场比赛。这家体育电台主要专注于足球领域的报道和内容制作，兼顾一些其它体育项目。talkSPORT 旗下的 <a href="https://talksport.com/podcasts/">几档播客节目</a> 一直是英语地区体育类节目的热门，质量都很不错。</p>
+<figure tabindex="0" class="ss-img-wrapper custom-width"><img src="https://cdn.sspai.com/editor/u_nicholaszhang/15992133581072.jpg" alt="" width="320"></figure>
+<p>talkSPORT 会在英超比赛日直播比赛，平时也会直播其它足球赛事。此外，talkSPORT 全天都有足球节目，即使没有比赛的时候，随手打开听听也挺有意思。</p><p><span app-id="15694" contenteditable="false" class="ss-loading"></span><br></p>
+<h3 id="toc_5">BBC Radio 5 Live</h3>
+<p>🎧 收听地址：<a href="https://www.bbc.co.uk/sounds/play/live:bbc_radio_five_live">点击这里</a></p>
+<p>大名鼎鼎的 BBC 已经无需多介绍，作为英国历史最悠久的广播电台，BBC 也一直和英超紧密合作。其中，BBC 旗下的广播节目 Radio 5 Live 也会在比赛日转播英超比赛，全赛季转播数量可以达到 140 场。</p>
+<figure tabindex="0" class="ss-img-wrapper"><img src="https://cdn.sspai.com/editor/u_nicholaszhang/15992133581079.jpg" alt=""></figure>
+<p>不过，Radio 5 Live 并非只播报足球或者英超的频道，平时会有大量其它主题节目播报，只有在有英超比赛的时候才会进行赛事转播。英超第一方网站已经贴出了 Radio 5 Live 的转播时间（英国当地时间）——</p>
+<blockquote>
+<p>The kick-off slots for these Premier League fixtures are as follows: </p>
+<ul>
+<li>Saturday 15:00 </li>
+<li>Sunday 14:00 </li>
+<li>Sunday 16:30 </li>
+<li>Fri / Sat / Mon 19:30-20:00</li>
+</ul>
+</blockquote>
+<h2 id="toc_6">赛事报道类</h2>
+<p>除了赛事转播，你还可以从传统的图文媒体追踪英超的比赛进度。在你无暇观看或收听比赛的时候，下面的这些方式能帮你第一时间了解英超动态：</p>
+<h3 id="toc_7">英超第一方网站</h3>
+<p>🚪 传送门：<a href="https://www.premierleague.com/">点击这里</a></p>
+<p>国内球迷大多有通过各类 app 获取足球资讯的习惯，但其实作为足球产业先进的象征之一，五大联赛的第一方足球资讯服务都已经相当完善，身为「世界第一联赛」的英超更是如此。</p>
+<figure tabindex="0" class="ss-img-wrapper"><img src="https://cdn.sspai.com/editor/u_nicholaszhang/15992133581086.jpg" alt=""></figure>
+<p>英超网站上的资讯非常丰富，从最新赛程到转会动态一应俱全，而且还有极其详尽的历史数据统计。我时不时就会到英超网站的数据区随便逛逛翻翻，常常能看到自己觉得新奇或意想不到的内容（譬如你猜猜 <a href="https://www.premierleague.com/stats/top/players/interception">现役球员里的抢断王</a> 是谁？）</p>
+<figure tabindex="0" class="ss-img-wrapper"><img src="https://cdn.sspai.com/editor/u_nicholaszhang/15992133581094.jpg" alt=""></figure>
+<p>即使你不习惯在 web 端看内容，英超联盟也已经为你准备好了一个 <a href="https://www.premierleague.com/pl-app">质量很不错的手机客户端</a>。在 app 内，你同样可以查看球员数据，追踪赛事进程。</p><p><span app-id="15692" contenteditable="false" class="ss-loading"></span><br></p>
+<h3 id="toc_8">OneFootball</h3><div>《OneFootball》是我每天打开次数最多的应用之一。这是一款足球比赛追踪工具，除了传统的新闻版块外，《OneFootball》最重要的功能就是可以实时推送比赛进程，当比赛中出现进球、红牌等影响比赛的重要节点时，会推送消息提醒。在比赛结束后，你可以在《OneFootball》内复盘比赛，查看这些关键节点。</div>
+<figure tabindex="0" class="ss-img-wrapper"><img src="https://cdn.sspai.com/editor/u_nicholaszhang/15992133581102.jpg" alt=""></figure>
+<p>刚刚结束的英超最后一轮，我就是通过《OneFootball》「看到」了 <a href="https://youtu.be/pReRHI7jmuY">Lingard 的最终一球</a>。平时需要上班不能看比赛转播的时候，《OneFootball》也是我最重要的赛果消息源。</p><p><span app-id="15693" contenteditable="false" class="ss-loading"></span><br></p>
+<p></p><hr><p></p><p>新赛季的英超比赛即将到来，除了上文提到的渠道，你还有哪些看球方式推荐呢？欢迎你在评论区留言，分享你的经验。<br></p>
+<p>&gt; 下载少数派&nbsp;<a href="https://sspai.com/page/client"><u>客户端</u></a>、关注&nbsp;<a href="http://sspai.com/s/KEPQ"><u>少数派公众号</u></a>&nbsp;，找到数字时代更好的生活方式 🥳</p><p>&gt; 特惠、好用的硬件产品，尽在&nbsp;<a href="https://shop549593764.taobao.com/?spm=a230r.7195193.1997079397.2.2ddc7e0bPqKQHc"><u>少数派sspai官方店铺</u></a>&nbsp;🛒</p><p><br></p><p>© 本文着作权归作者所有，并授权少数派独家使用，未经少数派许可，不得转载使用。</p>
