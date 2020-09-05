@@ -1,0 +1,652 @@
+➜腾讯AI Lab高级研究员宋林峰：图到文本生成任务中的通用型图结构信息保存法
+http://www.sohu.com/a/416628779_115978	35738
+<p><img src="http://p6.itc.cn/q_70/images03/20200905/f2639500c8d742919a9a37ef2cb642ae.jpeg" /></p>
+<p>图到文本生成是文本生成任务中的一项重要技术，其目的是通过机器理解图中信息，然后生成相应的解释文本。现有的图到文本生成模型，主要是通过更强大的模型来表示图信息，但模型依然是通过拟合到目标文本的基于语言模型（language modeling loss）的损失函数进行训练的，作为结果，模型会产生流畅的输出，但会丢失许多输入的重要信息。</p>
+<p>为了保存输入图中更多的信息，一个潜在的解决方案是改进训练信号来增强结构信息的保存，通过用额外的自编码损失来丰富训练信号，从而保存输入图的结构信息。但这种方法面临着一个问题，那就是不同类型图的标准自编码需要不同的重构算法。</p>
+<p>而在今年的ACL 2020中，腾讯AI Lab高级研究员宋林峰博士作为一作发表了一篇名为《Structural Information Preserving for Graph-to-Text Generation》的论文。在本文中，宋博士提出了一种通用的基于“多视角重建”的损失函数来辅助模型训练的方法。通过多种方法把输入的图投射到目标句子端，让解码器不仅学习输出目标句子，还要输出投射的图结构，这样能够迫使模型在做生成的时候更好的记住输入内容。</p>
+<p><strong>9月9日上午10点</strong>，智东西公开课邀请到腾讯AI Lab 高级研究员宋林峰博士参与[腾讯AI Lab专场]第2讲，宋博士将围绕《图到文本生成任务中的通用型图结构信息保存法》这一主题进行直播讲解。宋博将从图到文本生成技术的发展与研究出发，详解基于重构图模型的通用型图结构信息保存法，并深入讲解该方法在多类型图到文本生成技术中的应用。</p>
+<p>宋林峰博士于2019年5月从罗彻斯特大学获得博士学位，师从Daniel Gildea教授，于2014年从中科院计算所硕士毕业，师从刘群博士。2013年11月到2014年2月，宋博士简短的以研究助理的身份访问在新加坡SUTD的张岳博士，曾于2015、2017和2018年暑假在IBM沃森研究院Salim Roukos的团队实习，Mentor是王志国博士。</p>
+<p><strong>课程内容</strong></p>
+<p><strong>课程主题</strong></p>
+<p>《图到文本生成任务中的通用型图结构信息保存法》</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>课程提纲</strong></p>
+<p>1、图到文本生成技术的发展与研究</p>
+<p>2、基于重构图模型的通用型图结构信息保存法</p>
+<p>3、在多类型图到文本生成技术中的应用</p>
+<p><strong>讲师介绍</strong></p>
+<p>宋林峰，腾讯AI Lab高级研究员，于2019年5月从罗彻斯特大学获得博士学位，师从Daniel Gildea教授，于2014年从中科院计算所硕士毕业，师从刘群博士；2013年11月到2014年2月，宋博简短的以研究助理的身份访问在新加坡SUTD的张岳博士，曾于2015、2017和2018年暑假在IBM沃森研究院Salim Roukos的团队实习，mentor是王志国博士。</p>
+<p><strong>直播信息</strong></p>
+<p>直播时间：9月9日上午10:00</p>
+<p>直播地点：智东西公开课小程序</p>
+<p>答疑地址：[腾讯AI Lab专场]讨论群</p>
+<p><strong>加入讨论群</strong></p>
+<p>本次课程的讲解分为主讲和答疑两部分，主讲以视频直播形式，答疑将在[腾讯AI Lab专场]讨论群进行。</p>
+<p>加入讨论群，除了可以免费收看直播之外，还能认识讲师，与更多同行和同学一起学习，并进行深度讨论。</p>
+<p>添加小助手小语（ID：hilele20）即可申请，备注“姓名-公司/学校/单位-职位/专业”的朋友将会优先审核通过哦~</p>
+➜中国手机是怎样征服世界的？百页报告看我国手机产业有多强 | 智东西内参
+http://www.sohu.com/a/416636459_115978	40458
+<p><img src="http://p7.itc.cn/q_70/images03/20200905/3b25a48179254875808504190300eabe.png" /></p>
+<p><span>过去十年，中国智能手机品牌拿下中国市场 </span><span>85%</span><span>的份额。未来五年，凭借中国的制造、</span><span>5G</span><span>的普及和积累的经验，中国智能手机品牌将豪取海外市场 </span><span>10%</span><span>的份额，在 </span><span>2024 </span><span>年夺走 </span><span>42%</span><span>的份额。中国品牌力量会是未来智能手机行业的最强音。</span></p>
+<p>本期的智能内参，我们推荐<span>浦银国际</span>的研究报告， 分享<span>对于中国智能手机品牌未来方向的思考和判断</span>。</p>
+<p>本期内参来源：<span>浦银国际</span></p>
+<p>原标题：</p>
+<p>《 中国智能手机品牌征战全球》</p>
+<p>作者： <span>沈岱</span><span>杨子超</span>等</p>
+<p>一、 <span>征战全球之路</span></p>
+<p><span>回顾 </span><span>2010 </span><span>年至 </span><span>2020 </span><span>年的这 </span><span>10 </span><span>年，科技行业给大家带来最深刻的变革之一就是智能手机的普及。这是在发达国家引领下的全球性的变革。这一过程伴随着 </span><span>4G </span><span>通信网络的全球建设、从个人电脑到移动互联网的转型、以及智能手机品牌巨头的变迁。这持续十年的变革也给中国带来了机遇，推动中国制造能力的提升、智能手机供应链的崛起，同时也给中国的智能手机品牌走向世界的机会。</span></p>
+<p><span>这十年的时间铸就了中国四大智能手机华为、</span><span>OPPO</span><span>、</span><span>vivo </span><span>和小米的成长，也帮助传音在非洲市场大获成功。在 </span><span>2014 </span><span>年和 </span><span>2015 </span><span>年，初出茅庐的中国智能手机品牌小米登顶中国智能手机出货量第一的宝座。次年，即 </span><span>2016 </span><span>年，中国智能手机出货量的桂冠被 </span><span>OPPO </span><span>夺得。在 </span><span>2017 </span><span>年之后，直至 </span><span>2019 </span><span>年，并预计在 </span><span>2020 </span><span>年，华为都成功拿下中国智能手机第一的位置。根据 </span><span>IDC </span><span>的数据，华为在 </span><span>2020 </span><span>年二季度第一次成为全球智能手机出货量第一名。而这也仅仅是中国智能手机品牌在过去十年成长的缩影。</span></p>
+<p><span>根据 </span><span>IDC </span><span>的数据显示，在 </span><span>2019 </span><span>年中国这五大智能手机品牌合计斩获全球 </span><span>46%</span><span>的份额，甚至超过了两大国际巨头苹果和三星合计份额的 </span><span>35%</span><span>。那中国品牌未来的路在何方，中国的品牌能否在全球竞争格局中再创辉煌，中国的巨头能否成长为国际的巨头？站在此时此刻历史的节点，尽管全球疫情、中美冲突带来很多挑战，但是依然机遇大于挑战。</span></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><img src="http://p5.itc.cn/q_70/images03/20200905/2117c8fab2424013ba730440965684f3.jpeg" width="800" height="326" /></p>
+<p><span>▲</span><span>中国五大智能手机品牌的全球份额：</span><span>2014-2024E</span></p>
+<p><span>2016 </span><span>年，全球智能手机出货量达到历史最高峰，年出货量达到 </span><span>14.7 </span><span>亿部。此后三年，全球智能手机出货量连续下降至 </span><span>2019 </span><span>年的 </span><span>13.7 </span><span>亿部。而全球智能手机的销售额规模则是在 </span><span>2018 </span><span>年达到峰值的 </span><span>4,833 </span><span>亿美元，然后才在</span><span>2019 </span><span>年回落为 </span><span>4,582 </span><span>亿美元。全球智能手机的平均单价在 </span><span>2016-2018 </span><span>年也保持了上升势头。在这个过程中，中国智能手机的出货、销售额规模、平均单价表现趋势几乎与全球智能手机出货表现保持一致，毕竟中国在过去几年中贡献了全球 </span><span>27%-32%</span><span>份额的智能手机需求。</span></p>
+<p><span>回到今年，</span><span>2020 </span><span>年，预测全球智能手机出货量同比下降 </span><span>12.1%</span><span>，在 </span><span>2019</span><span>相对低的基数上进一步下降。主要原因来自于 </span><span>2020 </span><span>年年初新冠疫情带来的中国供应端的停摆，然后蔓延至全球带来的需求减弱。因此，我们判断 </span><span>2020</span><span>年的 </span><span>12.1 </span><span>亿部的出货量将会是未来 </span><span>5 </span><span>年的最低点。</span></p>
+<p><span>2021 </span><span>年、</span><span>2022 </span><span>年，预测全球智能手机出货量将会分别同比增长 </span><span>9%</span><span>、</span><span>3%</span><span>。我们也可以理解为全球用两年的时间把需求恢复到 </span><span>13.6 </span><span>亿部，接近 </span><span>2019</span><span>年的需求水平。我们认为未来两年的复苏需求来自于：</span><span>1</span><span>）中国以及发达国家在 </span><span>5G </span><span>初期的换机需求，</span><span>2</span><span>）发展中国家，比如印度、非洲国家的功能机向智能手机的切换需求。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200905/49b8549fd5bc454dad808b4deff49214.jpeg" width="800" height="382" /></p>
+<p><span>▲</span><span>全球智能手机出货以及预测</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200905/729d20a33ced4d03a9e32329377d66ba.jpeg" width="800" height="369" /></p>
+<p><span>▲</span><span>全球智能手机销售额规模以及预测</span></p>
+<p><span>在 </span><span>2021 </span><span>年至 </span><span>2022 </span><span>年，预测全球智能手机营收规模也会跟随出货量增长恢复，只是恢复速度将弱于出货量增速。这其中主要原因来自于经济周期恢复过程中，中低端手机的需求恢复速度相对高端需求更快，因而带来智能手机行业平均单价下行。</span></p>
+<p><span>按照全球 </span><span>4G </span><span>智能手机这个 </span><span>10 </span><span>年的大周期的历史经验判断。</span><span>5G </span><span>初期，即</span><span>2020 </span><span>年至 </span><span>2022 </span><span>年，全球智能手机出货量首先会被中国 </span><span>5G </span><span>需求带动，然后海外发达地区逐步接棒中国，持续带动需求。但是之后，判断全球智能手机会在 </span><span>13.2 </span><span>亿的中值需求位上下波动。</span><span>5G </span><span>中期，随着渗透率的提升以及潜在的 </span><span>5G </span><span>新应用的诞生，有望推动智能手机中高端需求比例提高。到了 </span><span>5G </span><span>后期，全球智能手机会回落到 </span><span>13.2 </span><span>亿中值需求的下方。同时，慢慢接入 </span><span>6G</span><span>，再次步入需求复苏通道。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200905/a2d4dcbdea3a4e37a5e2e27dfb0bceed.jpeg" width="800" height="531" /></p>
+<p><span>▲</span><span>全球智能手机平均单价及预测：</span><span>2014-2024E</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200905/5501a181655c46f18ee180248281b880.jpeg" width="800" height="496" /></p>
+<p><span>▲</span><span>全球智能手机出货及预测：围绕 </span><span>13.2 </span><span>亿部的中值需求波动：</span><span>2018-2024E</span></p>
+<p><strong><span>中国引领海外，带动智能手机需求复苏</span></strong>。<span>在 </span><span>2016 </span><span>年之前，中国对于全球智能手机出货量都有显着的拉动作用。在 </span><span>2016</span><span>年，中国达到智能手机年出货量历史峰值的 </span><span>4.67 </span><span>亿部，占据全球 </span><span>32%</span><span>的份额。在 </span><span>2017 </span><span>年至 </span><span>2019 </span><span>年之间，中国地区智能手机需求的下滑也拖累全球智能手机连续三年下降。在 </span><span>2019 </span><span>年，中国智能手机出货量为 </span><span>3.67 </span><span>亿部，同比下降 </span><span>8%</span><span>，与 </span><span>2016 </span><span>年峰值相比更是下降了 </span><span>21%</span><span>。</span></p>
+<p><span>为过去三年中国智能手机出货下降主要原因为：</span><span>1</span><span>）中国智能手机渗透率已经较高，新增手机用户手机需求显着下降，</span><span>2</span><span>）中国智能手机用户换机周期拉长导致换机需求下降。</span></p>
+<p><span>预测 </span><span>2020 </span><span>年中国智能手机出货量会进一步下降 </span><span>9%</span><span>，这是由于一季度新冠疫情带来供应链停摆以及二、三季度国家经济恢复过程的需求减弱导致。但是，我们判断今年整体会呈现持续的环比复苏态势，并且在四季度出货量有望同比翻正。根据近期供应链的渠道调研中了解到手机品牌对于今年全年出货量预测有下调，因此我们判断今年三季度会呈现旺季不旺的趋势，而四季度会相对于三季度改善。</span></p>
+<p><strong><span>预计中国智能手机 </span><span>2021 </span><span>年和 </span><span>2022 </span></strong><span><strong>年会持续复苏</strong>。这主要受惠于 </span><span>5G </span><span>初期中国智能手机换机周期缩短带来的换机需求。同时，我们也预计中低端的需求复苏速度是会快于中高端的复苏需求。因此，中国智能手机平均单价也会在 </span><span>2020-2022 </span><span>年有所下降。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200905/7c2947cc67bb45e09f47b07158952fd5.jpeg" width="800" height="517" /></p>
+<p><span>▲</span><span>中国智能手机出货以及预测 </span><span>2014-2024E</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200905/776f0d274d1d46b2b9bbdb7b33e1b2e6.jpeg" width="800" height="527" /></p>
+<p><span>▲</span><span>中国智能手机营收规模以及预测 </span><span>2014-2024E</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200905/4cca1cf2e2864fe3a96951eb209c0588.jpeg" width="800" height="382" /></p>
+<p><span>▲</span><span>中国智能手机用户换机周期分析以及预测</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200905/1d4b2a98c1df422e816251aaa28e3e23.jpeg" width="800" height="333" /></p>
+<p><span>▲</span><span>中国智能手机季度出货及预测：</span><span>2019-2020E</span><span>：</span><span>2020 </span><span>年下半年持续恢复</span></p>
+<p><span>在过去三年中，海外整体智能手机出货量保持相对稳定，处于略高于 </span><span>10 </span><span>亿部的出货水位。我们预测海外需求今年会有 </span><span>13%</span><span>的下滑，下降至大约 </span><span>8.7 </span><span>亿部的水位，然后在 </span><span>2021 </span><span>和 </span><span>2022 </span><span>年重回增长。但是，预计海外智能手机出货量可能需要更长的时间才能重回 </span><span>10 </span><span>亿部中值水位的需求。因为海外经济受到新冠疫情影响的持续时间，相对于中国会更久，因此复苏的速度会更加缓和。</span></p>
+<p><span>不可否认的是，在过去三年中，印度地区独树一帜扛起了全球智能手机出货增长的半壁江山。在 </span><span>2017</span><span>、</span><span>2018 </span><span>和 </span><span>2019 </span><span>年中，印度的智能手机出货量保持了同比 </span><span>14%</span><span>，</span><span>13%</span><span>，</span><span>8%</span><span>的高增长，远高于全球和中国手机增速。但是，在今年二季度，随着新冠疫情在印度的暴发，直接导致该地区智能手机出货暴跌。根据 </span><span>Canalys </span><span>的最新统计，</span><span>2020 </span><span>年二季度印度智能手机同比下降 </span><span>48%</span><span>，远远高于中国一季度的智能手机下滑幅度。因此，预测印度今年智能手机出货量会有 </span><span>20%</span><span>的下降。</span></p>
+<p><span>目前，从供应链了解到，欧洲的智能手机需求在稳步恢复到接近疫情之前的水平，而印度等地的需求还没有恢复到疫情之前的水平。并且由于发达国家经济恢复的韧性更加强，我们也判断今年下半年至明年上半年，海外发达地区的手机需求恢复速度是快于海外发展中地区的发展速度</span></p>
+<p><span>在 </span><span>2019 </span><span>年，印度地区、非洲地区的智能手机占全部手机（功能机</span><span>+</span><span>智能机）出货比例还相对较低，分别只有 </span><span>54%</span><span>和 </span><span>41%</span><span>，明显小于全球和中国智能手机渗透率的 </span><span>76%</span><span>和 </span><span>95%</span><span>。根据 </span><span>IDC </span><span>的预测，撒哈拉以南的智能手机渗透率将从</span><span>2018 </span><span>年的 </span><span>39%</span><span>上升到 </span><span>2025 </span><span>年的 </span><span>67%</span><span>。我们按照非洲地区大约 </span><span>12 </span><span>亿人口计算，在 </span><span>2018 </span><span>年至 </span><span>2025 </span><span>年有大约 </span><span>3 </span><span>亿部的新的智能手机用户增量。这也是全球智能手机需求推动力之一。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200905/ddc325797ef54ab988ea6cac0aea797e.jpeg" width="800" height="523" /></p>
+<p><span>▲</span><span>全球智能手机出货以及预测按照地区拆分：</span><span>2014-2024E</span><span>（中国、印度、其他）</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200905/4b175fdf251e45caa7d886bbc153b4c3.jpeg" width="800" height="543" /></p>
+<p><span>▲</span><span>全球智能手机出货量份额按照地区拆分：</span><span>2014-2024E</span><span>：（中国、发达地区、发展中地区）</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200905/b556220c7db04f5ead56e79efb1e11ef.jpeg" width="800" height="518" /></p>
+<p><span>▲</span><span>印度智能手机出货：</span><span>2014-2024E</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200905/ef3b25dfb25b43308c719e3ead59d5df.jpeg" width="800" height="506" /></p>
+<p><span>▲</span><span>印度智能手机季度出货：</span><span>2019-4Q20E</span></p>
+<p><span>2014 </span><span>年小米出货量第一次问鼎中国智能手机。这也是进入智能手机时代后，中国品牌第一次夺得中国第一。也就意味中国品牌第一次有实力超越诺基亚时代之后的巨头之一——三星。也正是在这段时期，四大中国手机品牌——华为、</span><span>OPPO</span><span>、</span><span>vivo</span><span>、小米，在国内的智能手机市场脱颖而出。这期间伴随的是三星在国内市场的迅速衰落以及其他无数的中国中小手机品牌的诞生和消亡。</span></p>
+<p><span>2018 </span><span>年，小米在印度市场超越三星登顶了印度智能手机第一。同一年，华为异军突起，作为中国手机品牌第一次迈入 </span><span>2 </span><span>亿部的关卡，仅仅华为一家的智能手机的体量就达到了三星的 </span><span>2/3</span><span>。而另辟蹊径出海非洲的中国品牌传音也在非洲市场成功超越诺基亚和三星的功能机和智能机的份额，成为非洲之王。</span></p>
+<p><span>截止 </span><span>2019 </span><span>年，中国的这五大手机品牌，于手机（功能机</span><span>+</span><span>智能机）市场份额中，在中国取得 </span><span>84.5%</span><span>的份额，在印度夺得 </span><span>59.5%</span><span>的份额，在中东非地区获取 </span><span>46.1%</span><span>份额。也就意味着，在这占据全球智能手机 </span><span>49%</span><span>的三个市场中，中国手机品牌已经拥有 </span><span>70%</span><span>的份额。这是目前中国品牌已经取得的成就，这同时也是需要中国品牌依然继续去守护的成绩。</span></p>
+<p><span>展望未来</span>： <strong>1、<span>中国市场红利已经被瓜分，各大中国品牌保持目前的平衡局面</span>；2、中国品牌在印度和非洲市场份额增加已经相对有限，但仍可以享受这两块市场智能手机自然增长的需求；3、<span>亚太地区（除印度、中国）仍然有份额增长空间</span>；4、 <span>发达地区，尤其是西欧，是近两年中国品牌进入的重点区域，也是中国品牌未来会投入大量资源的地区。</span></strong></p>
+<p><span>中国品牌下一个战场是欧洲，是华为已经成功打入但是却因为中美冲突不得不拱手相让的市场。历史的责任这次从华为的肩上转移到了小米、</span><span>OPPO</span><span>、</span><span>vivo </span><span>的肩上。我们预计，在 </span><span>2024 </span><span>年，中国五大品牌会在全球市场中拿下 </span><span>54%</span><span>的份额。而这个过程会带来海外小品牌的消亡以及三星部分份额的丢失。</span></p>
+<p><span>中国品牌有能力在欧洲夺取份额的优势在于：</span></p>
+<p><span>1、中国市场有足够体量为中国品牌奠定自己的基本盘和规模</span>；</p>
+<p>2、 <span>中国手机品牌可以将自身在中国的成功经验复制到海外市场</span>；</p>
+<p>3、 <span>中国市场配套的供应链中的企业为中国手机品牌提供最领先的技术和制造能力</span>。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200905/d908d88ea0b74ca0a061e56cccf2d516.jpeg" width="800" height="569" /></p>
+<p><span>▲</span><span>全球智能手机出货量份额按照品牌拆分：</span><span>2014-2024E</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200905/8e4f37501a954fb488679121afeedee8.jpeg" width="800" height="533" /></p>
+<p><span>▲</span><span>全球智能手机出货量及预测：</span><span>2014-2024E</span><span>：中国五大 </span><span>vs </span><span>三星</span><span>+</span><span>苹果</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200905/569858a1da804157b06fd43e9ea2f9ba.jpeg" width="800" height="550" /></p>
+<p><span>▲</span><span>中国五大智能手机品牌份额在全球各份额比较</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200905/ea0d7af4aba947d297cc9e9be7ecc9c9.jpeg" width="800" height="617" /></p>
+<p><span>▲</span><span>2022 </span><span>年全球智能手机份额预测按照品牌拆分</span></p>
+<p><span>在 </span><span>2019 </span><span>年，华为、</span><span>OPPO</span><span>、</span><span>vivo</span><span>、小米的全球出货量分别为 </span><span>2.41 </span><span>亿、</span><span>1.14 </span><span>亿、</span><span>1.10 </span><span>亿、</span><span>1.26 </span><span>亿，而这四个品牌在中国的出货量分别约为 </span><span>1.41 </span><span>亿、</span><span>6300 </span><span>万、</span><span>6700 </span><span>万、</span><span>4000 </span><span>万。仅仅以这四个品牌中国的出货量就排在 </span><span>2019 </span><span>年全球智能手机品牌出货量的第三、七、八、九的位置。也就是说，这四个中国品牌即使不统计海外出货量，仅仅中国地区的智能手机出货量也超过了几乎所有除了三星和苹果以外的竞争对手了。</span></p>
+<p><span>所以，<strong>国内市场是中国四大手机品牌的基本盘，也是中国手机品牌的大后方</strong>。</span><span>2019 </span><span>年，这四大手机品牌背靠中国市场已接近或超过 </span><span>100 </span><span>亿人民币的净利润，足够支撑海外扩张。只要这四大品牌在国内市场保持稳定，即使在出海过程中遇到一些困难也不会动摇公司基本的盈利能力。例如，小米在</span><span>2015 </span><span>年第一次进入巴西市场并不成功，但是这并没有阻止小米重整旗鼓在</span><span>2019 </span><span>年做好准备再次打入巴西市场。简单理解，中国市场给予了中国拓展海外市场时一定的犯错的空间。</span></p>
+<p><span>在 </span><span>2016 </span><span>年，三星的 </span><span>Note7 </span><span>的电池发生重大事故，导致其在中国市占率一路下滑。因为三星缺少韩国本土的巨大市场作为保障，因此一旦在海外市场犯了错误就比较难以挽回。三星在中国智能手机出货量的份额也从 </span><span>2016 </span><span>年的</span><span>5.5%</span><span>下降到 </span><span>2019 </span><span>年的 </span><span>0.8%</span><span>。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200905/b3ec9241e15c46eca1846bb999b3c70d.jpeg" width="800" height="348" /></p>
+<p><span>▲</span><span>中国智能手机品牌 </span><span>2019 </span><span>年净利润估算：中国品牌有足够资金支撑他们的海外业务扩张</span></p>
+<p><span>同样的道理也适用传音。因为对于传音来说，</span><span>2019 </span><span>年非洲 </span><span>52.5%</span><span>的手机份额就是传音的基本盘和大后方。这可以为传音去渗透其他发展中地区提供支撑。最典型的例子就是传音早在 </span><span>2016 </span><span>年就进入印度市场。甚至在 </span><span>2017 </span><span>年还做得非常不错，分别拿下功能机和智能机 </span><span>13.7%</span><span>和 </span><span>2.9%</span><span>的份额。但是 </span><span>2018</span><span>年印度政府提高进口关税，以及运营商 </span><span>Reliance Jio </span><span>推出免费</span><span>/</span><span>超低价智能手机，这两件事情同时打击了传音的印度发展，导致 </span><span>2018 </span><span>年出货量下降。但是传音却依托非洲市场的盈利能力，在 </span><span>2019 </span><span>年重获增长。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200905/f1df71eb65244291957487ae740bec6d.jpeg" width="800" height="583" /></p>
+<p><span>▲</span><span>中国智能手机出货份额按品牌拆分：</span><span>2016-2022E</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200905/a8d5095dd6d04fb29af1dbcd79bcb42a.jpeg" width="800" height="567" /></p>
+<p><span>▲</span><span>非洲手机（含智能机和功能机）出货份额按照品牌拆分：</span><span>2014-2019</span></p>
+<p><span>中国的四大品牌都在中国有着自身的独特优势。</span><span>2014-2015 </span><span>年是属于小米的时代，受惠于线上销售的崛起以及小米自身性价比策略对山寨手机的精准打击。</span><span>2016-2017 </span><span>年是 </span><span>OPPO </span><span>和 </span><span>vivo</span><span>（</span><span>OV</span><span>）的时代，受惠于 </span><span>3-5 </span><span>线城市智能手机换机需求以及两个品牌对于线下渠道的把控能力。</span><span>2018-2019 </span><span>年是华为的时代，贴身学习靠近小米的线上能力与 </span><span>OV </span><span>对于渠道和品牌的构建能力，华为更是通过自身核心手机芯片的研发能力构建起不同于 </span><span>OVM</span><span>（</span><span>OPPO</span><span>、</span><span>vivo</span><span>、小米）的护城河。这些都是经过中国这个非常残酷的市场检验过的能力，而这些品牌各自的能力都是帮助他们在海外抢夺地盘的第二大保障。</span></p>
+<p><span>与此同时，这些品牌也都在互相学习、取长补短。在这过程中，华为是相对的集大成者，通过荣耀品牌贴身打击小米线上市场，通过 </span><span>Nova </span><span>系列打造线下品牌，最后通过自身芯片能力来取得技术和成本上的领先。但是，这个过程中，小米、</span><span>OPPO</span><span>、</span><span>vivo </span><span>也同样在进步。小米通过线下小米之家、独立 </span><span>RedMi</span><span>（原红米品牌）品牌、提升旗舰数字系列，打入线下和高价位段。而 </span><span>OV </span><span>通过成立 </span><span>Realme </span><span>和 </span><span>iQOO </span><span>进入线上渠道。因此，中国的市场正在为这几大品牌提供各种各样有效的成功经验和人才储备，为品牌出海披荆斩棘提供各路良方。</span></p>
+<p><span>总结来看，在欧洲市场，</span><span>OVM </span><span>可以通过如下方式切入市场：</span><span>小米可以凭借过硬的产品、线上品牌打造、小米之家以及 </span><span>IoT </span><span>产品切入欧洲市场</span>； <span>OV </span><span>则擅长定义产品、通过市场营销打造品牌力等方式打入欧洲市场</span>。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200905/5d7958f79ff240d3ba12cc4a9f41f6ab.jpeg" width="800" height="189" /></p>
+<p><span>▲</span><span>华为、</span><span>OPPO</span><span>、</span><span>vivo</span><span>、小米各自优势比较</span></p>
+<p><span>根据 </span><span>IDC </span><span>的数据，我们可以看到，近两年，小米在中国的线上份额虽然有下降，但是线下份额显着增加。而 </span><span>OV </span><span>整体在 </span><span>1000-2000 </span><span>元档位虽然丢失一些份额，但是在 </span><span>1000 </span><span>元以下份额有增加。最后，</span><span>HOVM</span><span>（华为、</span><span>OPPO</span><span>、</span><span>vivo</span><span>、小米）都在 </span><span>3000 </span><span>元以上档位有所斩获。</span></p>
+<p><span>三星作为中国品牌的竞争对手没有能够紧跟中国品牌在中国的成功经验，没有及时布局线上渠道、没有深入中国中低线城市、没有足够性价比的机型、没有针对中国用户习惯进行系统优化等，因而在中国的业务每况愈下。相比较而言，苹果则是在占据高端市场之后，通过和天猫、京东的合作增加线上布局，通过更多的机型发布来布局中端市场。因此，苹果这个开启了智能手机黄金十年的品牌也依然是中国品牌无论是国内还是海外最不可忽视的对手。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200905/d4e8b5ab44f046919b30bf012f6b63b0.jpeg" width="800" height="565" /></p>
+<p><span>▲</span><span>中国智能手机线上出货份额按品牌拆分：</span><span>2014-2019</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200905/4cd64f3ed32c4a2eae7228141f319242.jpeg" width="800" height="590" /></p>
+<p><span>▲</span><span>中国智能手机线下出货份额按照品牌拆分：</span><span>2014-2019</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200905/cb983c4f0fc74814b034ce73982091ad.jpeg" width="800" height="579" /></p>
+<p><span>▲</span><span>中国 </span><span>1000 </span><span>元以下智能手机出货份额按品牌拆分：</span><span>1Q18-1Q20</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200905/5eaa72e3762641a9bdf85c497350d8de.jpeg" width="800" height="563" /></p>
+<p><span>▲</span><span>中国 </span><span>3000 </span><span>元以上智能手机出货份额按照品牌拆分：</span><span>1Q18-1Q20</span></p>
+<p><span>中国强大的供应链能力为中国品牌提供最具竞争力的前沿技术和制造能力</span>。 <span>据联合国的统计，中国制造业产业占全球的比重从 </span><span>2004 </span><span>年的 </span><span>8.7%</span><span>上升到</span><span>2018 </span><span>年的 </span><span>28.4%</span><span>。中国不断强化的制造能力为中国手机品牌提供着每一项黑科技的量产能力。潜望式摄像头（舜宇、丘钛、欧菲）、立体声扬声器（瑞声、歌尔）、无线充电（信维、立讯）都是我们中国的优秀的企业为中国手机品牌带来的竞争力。</span></p>
+<p><span>在 </span><span>2019 </span><span>年年中被美商务制裁之后，华为在一年的时间中将其 </span><span>Mate </span><span>系列手机物料成本中中国贡献的比例迅速从 </span><span>2018 </span><span>年的 </span><span>25%</span><span>提升到 </span><span>2019 </span><span>年的 </span><span>42%</span><span>。这充分体现中国智能手机供应链的潜在能力。</span></p>
+<p><span>一方面供应链配合中国手机品牌研发最新技术打造中国品牌的品牌价值，另一方面协助中国品牌实现快速量产保障新机型的及时上市。而供应链中的组装代工企业，例如富士康、比亚迪电子、闻泰、华勤等，也起到非常重要的作用。</span></p>
+<p><span>最后，我们国家也正在努力攻克处于制造业顶点的半导体制造。虽然，目前处于全球领先地位的中国的半导体相对比较少，但是，已经有不少企业开始崭露头角，例如指纹识别芯片（汇顶科技）、摄像头模组传感器（韦尔股份、格科微）、射频器件（卓胜微）、晶圆制造（中芯国际）等等。随着国产替代逐步深入，我们相信未来 </span><span>10 </span><span>年也将出现一批顶级的中国半导体企业将中国的手机品牌带向更辉煌的位置。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200905/bcac699be5754b269c0a9034d5aa1fed.jpeg" width="800" height="542" /></p>
+<p><span>▲</span><span>华为智能手机物料成本按照国家拆分：中国供应链有能力在短期将比例从 </span><span>25%</span><span>提升到</span><span>40%</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200905/23e4d6ec2ee9489ca6a21f243e6f9ae4.jpeg" width="800" height="555" /></p>
+<p><span>▲</span><span>中国制造业在全球占比</span></p>
+<p>二、 <span>5G </span><span>带动智能手机需求从底部回暖</span></p>
+<p><span>智能手机目前已经无可争议的成为了个人的计算中心。并且，智能手机也越来越多的成为消费者的日常工作的一部分，甚至在某些场合取代电脑成为生产力的工具。每一位消费者跟智能手机相处时间越来越长。这就促进了更快速更可靠的通讯网络的发展，来支撑消费者对智能手机的使用。</span></p>
+<p><span>5G </span><span>的提升的体验感在于：</span><span>更加流畅的高清电影、高帧率游戏体验</span>； <span>商务人士工作效率提升</span>； <span>普通消费者会认为 </span><span>5G </span><span>是智能手机必须的标准配置</span>。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200905/1e5eff361f574f81821e25437cd591ed.jpeg" width="800" height="346" /></p>
+<p><span>▲</span><span>中国用户移动互联网每周使用时间</span></p>
+<p><span>长期来看，</span><span>5G </span><span>给用户体验带来提升。</span><span>5G </span><span>相对于 </span><span>4G </span><span>来说，最重要的的三大提升是超高速率（</span><span>eMBB</span><span>，</span><span>Enhance Mobile Broadband</span><span>）、超低时延（</span><span>uRLLC</span><span>，</span><span>Ultra Reliable &amp; Low Latency Communication</span><span>）、超大连接（</span><span>mMTC</span><span>，</span><span>MassiveMachine Type Communication</span><span>）。通俗的说，就是 </span><span>5G </span><span>可以给消费者带来更快的速度，更低的延迟，以及更多的链接终端。这给消费者带来的直观感受就是可以享受更高清的电影、更流畅的游戏体验等。</span></p>
+<p><span>对于需要用智能手机来进行日常工作的人来说，或者说智能手机的商务用户来说，</span><span>5G </span><span>可以带来更高效率的实时沟通和工作处理。并且，</span><span>5G </span><span>数据流量套餐中的单位流量的价格是低于 </span><span>4G </span><span>套餐的。例如，中国移动广东 </span><span>4G </span><span>全球通 </span><span>288 </span><span>元套餐包含 </span><span>40GB </span><span>流量</span><span>+1200 </span><span>分钟通话时长，而 </span><span>5G </span><span>畅享套餐 </span><span>289 </span><span>元</span><span>80G </span><span>流量</span><span>+1200 </span><span>分钟通话时长。因此，我们判断高端智能手机用户或商务用户会优先使用 </span><span>5G </span><span>手机，带来换机需求。</span></p>
+<p><span>最后，对于消费者来说，</span><span>5G </span><span>不管是否使用 </span><span>5G </span><span>流量套餐，都是一个优先选择的手机必选配置。根据极光的数据，</span><span>2020 </span><span>年一季度针对 </span><span>6 </span><span>款同时具有 </span><span>4G</span><span>和 </span><span>5G </span><span>版本的手机销量，超过 </span><span>6 </span><span>成的用户仍然会选择 </span><span>5G </span><span>版本。这也是 </span><span>5G </span><span>带来的直接需求。</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200905/8abafb56e9b746308fefc616a24569bd.jpeg" width="800" height="505" /></p>
+<p><span>▲</span><span>5G </span><span>通讯三大应用场景</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200905/2eec3995b7ac41479b19b7d059dbd4a3.jpeg" width="800" height="322" /></p>
+<p><span>▲</span><span>部分同时具有 </span><span>4G </span><span>和 </span><span>5G </span><span>版本的手机销量对比（</span><span>1Q20</span><span>）：用户更加青睐</span><span>5G </span><span>版本的智能手机</span></p>
+<p><span>手机品牌有意愿推动 </span><span>5G </span><span>智能手机加速渗透</span>。 <span>从供应的角度来说，我们认为中国手机品牌在竞争的压力下会比较积极的推动 </span><span>5G </span><span>从高端的旗舰机型向中低端的千元机机型渗透。根据中国信通院，中国上半年 </span><span>5G </span><span>手机出货量占据智能手机出货量的 </span><span>43%</span><span>。这高于我们在半年展望中的预测。我们认为 </span><span>5G </span><span>的渗透率会在下半年持续提升，我们也期待下半年联发科、高通等即将发布的中低端 </span><span>5G </span><span>芯片会推动手机品牌加速向低端的机型渗透。</span></p>
+<p><span>根据小米最近的数据显示，</span><span>23%</span><span>用户的手机已经使用了三年。这些都是 </span><span>5G</span><span>时代的潜在换机用户。根据腾讯的调查报告，</span><span>2019 </span><span>年用户换机最主要的三个原因是：</span><span>1</span><span>）手机操作系统卡顿，</span><span>2</span><span>）手机使用达到一定年限，</span><span>3</span><span>）手机续航能力变差。因此，我们判断手机品牌会有意识的针对这 </span><span>23%</span><span>三年以上未换机的用户发布 </span><span>5G </span><span>手机。这些用户的手机已经接近手机自然寿命，因此会有了再次更换新设备的需求。</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200905/5822e5d7572e4d7c93338920cabce52e.jpeg" width="800" height="322" /></p>
+<p><span>▲</span><span>中国四大品牌不同价位段 </span><span>5G </span><span>手机布局（</span><span>2020 </span><span>年上半年）</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200905/f7385878241e432b92f44fb83ee29b94.jpeg" width="800" height="299" /></p>
+<p><span>▲</span><span>2019 </span><span>年用户换机原因</span></p>
+<p><span>在 </span><span>2019 </span><span>年，根据我们的估算，中国智能手机用户换机平均周期已经从 </span><span>2017</span><span>年的 </span><span>47 </span><span>个月上升到了 </span><span>2019 </span><span>年的 </span><span>62 </span><span>个月。我们判断中国的换机周期在 </span><span>2020</span><span>年受到疫情的影响会拉长，但是从 </span><span>2021 </span><span>年开始换机周期时长开始缩短。我们预测中国手机换机周期会从 </span><span>2020 </span><span>年的 </span><span>65 </span><span>个月下降为 </span><span>2021 </span><span>年的 </span><span>60 </span><span>个月。这与中国 </span><span>5G </span><span>手机的出货量需求提升保持一致。</span></p>
+<p><span>预计中国换机需求带来的手机出货量将在 </span><span>2021 </span><span>年和 </span><span>2022 </span><span>同比增长</span><span>7.6%</span><span>和 </span><span>2.3%</span><span>。因而，推动中国地区智能手机出货量在未来两年保持复苏和增长。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200905/50591b61a0ff41c0a4770838c474068f.jpeg" width="800" height="292" /></p>
+<p><span>▲</span><span>中国智能手机用户换机周期分析以及预测</span></p>
+<p><span>虽然，</span><span>5G </span><span>智能手机在中国渗透的速度是慢于 </span><span>4G </span><span>智能手机时代的渗透速度，但是，我们认为这将为中国品牌的持续增长提供有力土壤。</span><span>4G </span><span>时代，海外发达国家驱动中国进行 </span><span>4G </span><span>手机的换机需求，但是，</span><span>5G </span><span>时代，中国将引领</span><span>5G </span><span>的换机需求，并且中国品牌将推动海外地区的 </span><span>5G </span><span>换机需求。</span></p>
+<p><span>根据信通院公布的中国月度手机出货数据，</span><span>2020 </span><span>年 </span><span>6 </span><span>月中国 </span><span>5G </span><span>智能手机渗透率为 </span><span>63%</span><span>。我们预测中国 </span><span>5G </span><span>智能手机渗透率在今年下半年会继续提升，主要驱动因素为：</span><span>1</span><span>）今年下半年新 </span><span>iPhone </span><span>机型将首次搭载 </span><span>5G </span><span>功能，</span><span>2</span><span>）安卓阵营会继续将 </span><span>5G </span><span>手机向 </span><span>1000 </span><span>元价位渗透。我们预计在 </span><span>5G </span><span>手机出货量渗透率在年底达到 </span><span>80%</span><span>，</span><span>2020 </span><span>年全年渗透率为 </span><span>60%</span><span>。</span></p>
+<p><span>在 </span><span>2021 </span><span>年和 </span><span>2022 </span><span>年，</span><span>5G </span><span>智能手机在中国的出货量将分别达到 </span><span>3.2 </span><span>亿部和</span><span>3.6 </span><span>亿部，同比增长 </span><span>59%</span><span>和 </span><span>13%</span><span>。这也会推动中国品牌在 </span><span>5G </span><span>初期阶段的增长。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200905/038d8919300f401791ea4cb06ac7e789.jpeg" width="800" height="547" /></p>
+<p><span>▲</span><span>4G </span><span>智能手机出货量：中国 </span><span>vs </span><span>海外 </span><span>2010-2019</span><span>：世界引领中国</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200905/08b2eb9bb57f4b529e97a7eb504fd065.jpeg" width="800" height="550" /></p>
+<p><span>▲</span><span>5G </span><span>智能手机出货量：中国 </span><span>vs </span><span>海外：</span><span>2019-2024E</span><span>：中国引领世界</span></p>
+<p><span>在今年下半年，苹果发布新一代 </span><span>iPhone </span><span>之后，全球前六大智能手机品牌都将完成 </span><span>5G </span><span>手机的部署。我们认为在苹果的带动下，海外欧洲和北美区域也会在 </span><span>2021 </span><span>年开始进入 </span><span>5G </span><span>初期的换机周期。这同时也会带动中国品牌 </span><span>5G </span><span>智能手机海外出货量的增长。</span></p>
+<p><span>从全球出货量看，我们预测中国品牌在 </span><span>2020 </span><span>年将出货 </span><span>1.59 </span><span>亿部 </span><span>5G </span><span>智能手机，并在 </span><span>2021 </span><span>年和 </span><span>2022 </span><span>年出货 </span><span>3.46 </span><span>亿部和 </span><span>5.09 </span><span>亿部，同比增长 </span><span>118%</span><span>和</span><span>47%</span><span>。我们预计今年苹果新机有可能会延迟发售，因而今年苹果 </span><span>5G </span><span>手机出货量为大概 </span><span>5000 </span><span>万部，但是苹果会在 </span><span>2021 </span><span>年和 </span><span>2022 </span><span>成长 </span><span>1.4 </span><span>亿部和 </span><span>1.8</span><span>亿部，为全球 </span><span>5G </span><span>智能手机贡献 </span><span>22%</span><span>和 </span><span>20%</span><span>的出货量。我们预测三星的 </span><span>5G</span><span>智能手机渗透率将小于中国品牌，但是也同样不可忽视。我们预计在 </span><span>2020</span><span>年、</span><span>2021 </span><span>年和 </span><span>2022 </span><span>年，三星 </span><span>5G </span><span>智能手机渗透率将达到 </span><span>25%</span><span>、</span><span>50%</span><span>和 </span><span>70%</span><span>。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200905/c57632ffbe084908adea33277b2db7a8.jpeg" width="800" height="467" /></p>
+<p><span>▲</span><span>全球智能手机出货量按照 </span><span>4G/5G </span><span>拆分：</span><span>2014-2024E</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200905/b866a190a19a4af3a8fdce72850ab5c9.jpeg" width="800" height="473" /></p>
+<p><span>▲</span><span>全球 </span><span>5G </span><span>智能手机出货量按品牌拆分：</span><span>2019-2024E</span></p>
+<p><span>▲</span><span>全球前六大智能手机品牌 </span><span>5G </span><span>智能手机全球出货量及渗透率预测</span></p>
+<p>三、 <span>ODM </span><span>与 </span><span>EMS </span><span>厂商助力中国智能手机品牌征战全球</span></p>
+<p><span>中国品牌有能力在全球斩获份额。这其中一个优势就是在于中国强大的供应链能力。智能手机的组装代工则是供应链环节中收关的一个步骤。</span></p>
+<p><span>中国的组装代工厂给中国手机品牌带来的是：</span></p>
+<p><span>1、可控的物料成本和质量保障</span>；2、 <span>强大的量产能力，以及快速响应短期激增需求的能力</span>；3、 <span>中低智能手机的设计和迭代能力。</span></p>
+<p><span>中国大陆优秀的基础建设条件聚集了越来越多的制造企业落户中国，同时这也促进了中国的代工厂商可以提供更好的产品和更好的服务。中国本土的代工厂商也和中国手机品牌公司相辅相成，共同崛起。</span></p>
+<p><span>目前，全球主要手机品牌采用 </span><span>OEM</span><span>（</span><span>Original Equipment Manufacturing</span><span>，即原始设备制造商）模式进行生产和销售，即手机品牌厂商更多负责产品的设计和销售，而代工厂负责生产制造。我们通常会把苹果、华为等采用 </span><span>OEM</span><span>模式的手机品牌称为手机 </span><span>OEM </span><span>厂商。</span></p>
+<p><span>EMS </span><span>厂商主要根据手机品牌厂商的设计和要求完成代工任务，并提供相应的物流等配套服务。</span><span>ODM </span><span>厂商不仅仅需要完成制造和组装的任务，还需要独立的完成手机的研发和设计。通常 </span><span>ODM </span><span>厂商更多负责手机品牌的中低端机型的研发和生产。这个过程中只负责帮助手机品牌的手机产品设计，由于自身产能有限将组装委派其他 </span><span>EMS </span><span>厂商的则是 </span><span>IDH</span><span>（</span><span>Independent DesignHouse</span><span>，即独立设计公司）厂商。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200905/f9de2e294d57466bb05868ce6407f483.jpeg" width="800" height="292" /></p>
+<p><span>▲</span><span>智能手机代工行业关系图</span></p>
+<p><span>智能手机在中国崛起的初期就伴随有大量的山寨机，或者说是白牌手机。当年，这些白牌手机不属于任何一个已有的大品牌，但是却凭借中国铺天盖地的手机代工厂而蓬勃发展。这些工厂有自己手机研发和设计能力，可以快速的完成智能手机的设计和制造。这是中国 </span><span>IDH </span><span>厂商、</span><span>ODM </span><span>厂商发展的最初期，也为之后中国代工厂商的发展奠定了基础。</span></p>
+<p><span>根据 </span><span>IHS </span><span>和 </span><span>Omdia </span><span>的数据显示，在 </span><span>2018 </span><span>年和 </span><span>2019 </span><span>年，中国 </span><span>ODM </span><span>手机厂商智能手机出货量增长为</span><span>-9%</span><span>和</span><span>+2%</span><span>，高于中国地区智能手机增速的</span><span>-11%</span><span>和</span><span>-8%</span><span>。其中，最主要的原因是中国手机品牌自身出货量的增加以及他们委外的</span><span>ODM </span><span>手机比例的增加。</span></p>
+<p><span>目前，华为、</span><span>OPPO </span><span>和小米，这三家品牌都已经有不同比例的机型采用 </span><span>ODM</span><span>的形式进行出货，</span><span>vivo </span><span>暂时没有 </span><span>ODM </span><span>机型出货。在 </span><span>2018 </span><span>年，三星开始将一些低端机型，例如三星 </span><span>A </span><span>系列，开始委托给中国 </span><span>ODM </span><span>厂商（目前主要是闻泰）以增加自身的竞争优势。</span></p>
+<p><span>预测 </span><span>2020-2022 </span><span>年 </span><span>ODM </span><span>手机出货量分别为 </span><span>3.2 </span><span>亿部、</span><span>3.5 </span><span>亿部和 </span><span>3.8 </span><span>亿部。总体增长速度依然高于中国智能手机市场整体的表现。增长动力主要来自于：</span><span>1</span><span>）中国品牌智能手机出货的自然增长，</span><span>2</span><span>）三星、</span><span>OPPO </span><span>以及部分国际二线手机品牌的 </span><span>ODM </span><span>比例增加。今年下半年，</span><span>ODM </span><span>厂商会开始出货 </span><span>5G</span><span>智能手机，帮助 </span><span>OEM </span><span>厂商加快 </span><span>5G </span><span>机型的布局。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200905/83964d4d42614703896b2eb8c801d448.jpeg" width="800" height="550" /></p>
+<p><span>▲</span><span>全球智能手机出货量按照 </span><span>ODM </span><span>与其他拆分：</span><span>2017-2024E</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200905/15b7307fca6b4f9ebcce863f195c490d.jpeg" width="800" height="559" /></p>
+<p><span>▲</span><span>手机 </span><span>OEM </span><span>厂商的 </span><span>ODM </span><span>机型出货量及预测：</span><span>2018-2020E</span></p>
+<p><span>与 </span><span>OEM </span><span>厂商越来越集中于头部六家品牌的市场格局类似，</span><span>ODM </span><span>厂商的头部集中效应也非常明显。中国排名前三的 </span><span>ODM </span><span>厂商为闻泰（</span><span>600745.CH</span><span>）、华勤（未上市）和龙旗（未上市）。在 </span><span>2017 </span><span>年、</span><span>2018 </span><span>年和 </span><span>2019 </span><span>年，这三家</span><span>ODM </span><span>厂商占据了中国 </span><span>ODM </span><span>手机出货份额的 </span><span>78%</span><span>、</span><span>87%</span><span>和 </span><span>93%</span><span>。头部 </span><span>OEM</span><span>厂商，包括华为、</span><span>OPPO</span><span>、小米和三星，他们的 </span><span>ODM </span><span>机型基本集中在这三家头部 </span><span>ODM </span><span>厂商中。因此，同 </span><span>OEM </span><span>厂商竞争格局类似，我们认为二线 </span><span>ODM</span><span>厂商的生存空间会越来越小，头部三家 </span><span>ODM </span><span>的份额会在 </span><span>2020-2022 </span><span>年之间进一步增加。</span></p>
+<p><span>预测在 </span><span>2020</span><span>、</span><span>2021 </span><span>年和 </span><span>2022 </span><span>年，这三家 </span><span>ODM </span><span>公司的份额会进一步增加到 </span><span>94.2%</span><span>、</span><span>94.7%</span><span>和 </span><span>95.1%</span><span>。增量来自于 </span><span>OPPO </span><span>和三星 </span><span>ODM </span><span>比例增加以及其他中国四大品牌的自然增长。</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200905/2c508d615cf64f6aaabc40f6e3c00f5f.jpeg" width="800" height="529" /></p>
+<p><span>▲</span><span>中国 </span><span>ODM </span><span>智能手机出货量及预测：</span><span>2017-2024E</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200905/9570bd30ff924aaa9b9993b7c4c7f87b.jpeg" width="800" height="563" /></p>
+<p><span>▲</span><span>闻泰、华勤和龙旗在 </span><span>ODM </span><span>出货量份额及预测：</span><span>2017-2022E</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200905/9e1828a62fc04d8f96c1a65a097fc25e.jpeg" width="800" height="264" /></p>
+<p><span>▲</span><span>主要 </span><span>OEM </span><span>厂商的 </span><span>ODM </span><span>手机出货比例以及主要的 </span><span>ODM </span><span>合作伙伴</span></p>
+<p><span>对手机品牌厂商来说，公司内部自己研发和设计的手机需要委外生产环节，这个组装代工部分需要依赖 </span><span>EMS </span><span>厂商。因此，虽然我们看到 </span><span>ODM </span><span>手机出货量有所增加，但是 </span><span>EMS </span><span>依然占据有不可动摇的地位。此外，例如龙旗等自身的组装产能有限，因而有较高比例的机型采用 </span><span>IDH </span><span>模式合作，因此 </span><span>ODM</span><span>厂商也有部分 </span><span>IDH </span><span>机型的组装出货量会委外给 </span><span>EMS </span><span>厂商。</span></p>
+<p><span>在 </span><span>2018 </span><span>年和 </span><span>2019</span><span>，中国四大品牌中的华为和小米的智能手机出货量增长非常亮眼，同比达到了 </span><span>32%</span><span>和 </span><span>12%</span><span>，远高于全球智能手机增长。这两年中，华为和小米两家品牌与更多的大陆的 </span><span>EMS </span><span>厂商，例如比亚迪电子和惠州长城等，开始建立合作关系。目前，根据 </span><span>MMI </span><span>的排名，这两个品牌的四家主力</span><span>EMS </span><span>厂商——富士康、比亚迪电子、伟创力以及惠州长城，分别位列 </span><span>2019</span><span>年全球 </span><span>EMS </span><span>行业综合排名（销售额、增长、员工人数、工厂数量、客户数据等）的第一、第四、第八和第十四。</span></p>
+<p><span>类似于富士康和苹果的关系，我们认为比亚迪电子等大陆 </span><span>EMS </span><span>厂商也会和中国品牌建立比较密切的合作共赢关系，共同推动中国品牌手机出货量的增长。因而，中国大陆 </span><span>EMS </span><span>厂商会继续抢夺其他地区 </span><span>EMS </span><span>厂商，例如伟创力的份额。</span></p>
+<p>四、 <span>中国手机品牌是中国科技行业未来方向</span></p>
+<p><span>iPhone </span><span>的横空出世宣告了智能手机的时代来临。经过这十年的发展，我们看到中国的手机品牌正在不断的缩小和科技巨头苹果的差距。因为这十年的时间是中国品牌和中国制造互相促进的十年。未来十年，中国手机品牌无疑会是科技行业最黄金的赛道之一。</span></p>
+<p><span>首先，中国手机品牌是推动 </span><span>5G </span><span>普及最重要的一股力量。</span><span>5G </span><span>给大家构建的万物互联的使用场景需要借助智能手机的算力来实现。因此，中国手机品牌会有强大的动力推动 </span><span>5G </span><span>的发展，也同时会受惠于 </span><span>5G </span><span>带来的红利。</span></p>
+<p><span>其次，中国手机品牌可能是目前从中国走向世界，即国际化最成功的一批公司。</span><span>2019 </span><span>年，中国这五大手机品牌，华为、</span><span>OPPO</span><span>、</span><span>vivo</span><span>、小米、传音，整体海外出货量占比都超过了 </span><span>50%</span><span>。可以说，他们是中国科技企业国际化的急先锋。在互联网收入国际化的进程中，这些手机品牌很可能是最为水到渠成的公司。</span></p>
+<p><span>最后，中国手机品牌也不断以智能手机中心往拓展周边产品。因此手机品牌也是最有希望培育下一个科技创新平台的土壤。</span></p>
+<p><span>结合以上三点，我们坚定的看好中国手机品牌的发展。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200905/19434a6e4fc24dbc8dd996718c6987b1.jpeg" width="800" height="308" /></p>
+<p><span>▲</span><span>2020 </span><span>年中国企业国际化程度排行</span></p>
+<p>1、 <span>小米</span></p>
+<p><span>过去两年的小米是补功课的小米，是在面临国内智能手机激烈竞争的情况下，依然在建设线下渠道、冲击高端的小米。通过过去两年的努力和铺垫，我们认为小米已经做好准备。不论是国内的高端市场，还是海外的发达地区，小米都已经获得入门券。我们预计小米未来两年的净利润将同比增长 </span><span>52%</span><span>和 </span><span>24%</span><span>。清晰的成长路径也会促使小米的估值从行业底部向行业顶部提升。</span></p>
+<p><span>小米这家公司成立至今正好 </span><span>10 </span><span>周年。看着时间并不是很短，但是跟全球前几大智能手机品牌公司相比，小米真的只能算是一位新人。小米是一家充分受惠于 </span><span>4G </span><span>移动互联网浪潮的公司。中国 </span><span>4G </span><span>智能手机的切换需求推动小米的快速崛起，而小米的快速成长又反哺中国移动互联网的发展。</span></p>
+<p><span>过去十年小米做到过顶点，也经历过挫折。小米曾连续在 </span><span>2014 </span><span>年和 </span><span>2015 </span><span>年拿下中国智能手机出货量冠军，也在 </span><span>2016 </span><span>年经历过中国市场的大幅下跌，随后在 </span><span>2017 </span><span>又奇迹般地恢复增长。曾经的小米带着主角光环走入资本市场，如今的小米砥砺前行。</span></p>
+<p><span>在海外布局方面，目前小米是仅次于华为的中国品牌手机厂商。由于华为受到美国的出口限制，小米将在今年成为中国手机品牌海外出货量最大的公司。这不仅仅是小米的机会，更是小米的责任。我们相信小米是夜空中最亮的星。</span></p>
+<p><span>2019 </span><span>年小米智能手机出货量达到 </span><span>1.26 </span><span>亿部，</span><span>5 </span><span>年复合增长率 </span><span>17%</span><span>。而未来</span><span>5 </span><span>年，小米手机的复合增长率将保持 </span><span>6%</span><span>，也有希望向着华为达到过的高度前行。作为在可预见的未来都将是不可替代的个人计算的中心，智能手机出货量和份额的保障自然而然会带来 </span><span>IoT </span><span>产品和互联网增值服务的增加。</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200905/0fcbde48c3624e1a8fdccaecf3871925.jpeg" width="800" height="423" /></p>
+<p><span>▲</span><span>小米智能手机出货量及预测：</span><span>2014-2024E</span></p>
+<p><span>在 </span><span>2019 </span><span>年 </span><span>5 </span><span>月，华为被加入美国实体清单之后，就将大量资源向中国国内市场倾斜。这给小米、</span><span>OPPO</span><span>、</span><span>vivo </span><span>等在国内市场的销售很大的压力。我们也留意到小米在国内智能手机的份额也从 </span><span>2019 </span><span>年上半的 </span><span>12%</span><span>下滑到 </span><span>2019</span><span>年下半年的 </span><span>9%-10%</span><span>之间。但是，即使在这样的情况下，小米依然保持住了线上的份额，并且努力向高端拓展。我们认为未来小米在中国智能手机的基本份额在 </span><span>9%</span><span>左右的位置，也就是大约每年 </span><span>3500 </span><span>万部的量。这是小米在中国可以坚守住的战场。</span></p>
+<p><span>其次，小米的海外扩张也是仅次于华为，明显快于 </span><span>OPPO </span><span>和 </span><span>vivo</span><span>。在 </span><span>2019</span><span>年，小米智能手机海外出货量达到 </span><span>8563 </span><span>万部，比 </span><span>OPPO </span><span>和 </span><span>vivo </span><span>的海外出货量高了 </span><span>3000-4000 </span><span>万部。</span><span>2021 </span><span>年</span><span>-2022 </span><span>年，小米的海外智能手机预计可以分别成长 </span><span>16%</span><span>和 </span><span>8%</span><span>，即小米在 </span><span>2021 </span><span>年的海外出货量就能突破 </span><span>1 </span><span>亿部。这将推动小米整体智能手机的成长，也进一步催化小米国际化的进程。假如华为在海外未来依然面临限制的话，我们认为小米是最有可能最先收复华为留下的海外市场空间的中国品牌，而且小米会成为中国品牌中海外出货量最大的公司。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200905/90080a87abbd4e339846b7f85331d5fe.jpeg" width="800" height="474" /></p>
+<p><span>▲</span><span>中国智能手机出货份额按照品牌拆分</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200905/9352e6d36b9e4e8593b28109b8233f43.jpeg" width="800" height="413" /></p>
+<p><span>▲</span><span>小米智能手机中国出货量及份额预测</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200905/178dfa56e3904d088a5e5fd2919b30ae.jpeg" width="800" height="424" /></p>
+<p><span>▲</span><span>中国品牌智能手机海外出货量比较</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200905/3c526928942647519df0c7cea349ae7a.jpeg" width="800" height="409" /></p>
+<p><span>▲</span><span>小米智能手机海外出货量及预测</span></p>
+<p><span>小米借助了互联网销售模式开启了属于自己的时代。在 </span><span>2015 </span><span>年，在小米的推动下，中国智能手机线上销售的比例一度达到了 </span><span>32%</span><span>。在 </span><span>2016-2017 </span><span>年，中国低线城市智能手机需求的快速增长才将线上销售的比例拉回至 </span><span>27%-28%</span><span>的水平。总体来说，</span><span>2018 </span><span>年和 </span><span>2019 </span><span>年，中国线上销售的智能手机的是缓步增长的，在 </span><span>2019 </span><span>年，大约有 </span><span>30%</span><span>的智能手机是线上销售的。</span></p>
+<p><span>2020 </span><span>年上半年，受到疫情的影响，中国线上销售比例显着提升。根据 </span><span>IDC</span><span>，中国智能手机线上销售比例显着提升，从 </span><span>2019 </span><span>年的 </span><span>30%</span><span>提升到今年上半年的 </span><span>34%</span><span>。展望未来，虽然一季度是疫情下的特别情况，但是，我们判断未来中国线上的比例依然会有攀升。这与中国整体实物商品消费线上化的比例提升是保持一致的。我们互联网分析师预计中国实物商品线上渗透率有望从 </span><span>2019 </span><span>年的 </span><span>20.7%</span><span>提升到 </span><span>2021 </span><span>年的 </span><span>27.5%</span><span>。相对来说，中国智能手机线上销售比例比线上中国实物商品整体销售比例要高 </span><span>10 </span><span>个百分点。</span></p>
+<p><span>线上渠道是小米在中国的强势盘，是小米最擅长布局的渠道。过去三年，小米的线上份额都比较巩固和稳定，保持在 </span><span>20%</span><span>以上。虽然这两年的线上份额低于华为，但是依然显着高于 </span><span>OPPO</span><span>（</span><span>&lt;10%</span><span>）和 </span><span>vivo</span><span>（</span><span>10%+</span><span>）。而在今年一季度的疫情的特殊背景下，小米受惠于线上优势，因而在一季度给出了超预期的业务。因此，我们认为未来小米的线上份额会继续保持稳定，并且受惠于中国线上销售占比的提升。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200905/82a9628783724e1885b9a99a12c3ff7d.jpeg" width="800" height="544" /></p>
+<p><span>▲</span><span>中国智能手机出货份额按照线上和线下拆分：</span><span>2014-1H20</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200905/dcd233681f944750aac7fa2dca6b71de.jpeg" width="800" height="571" /></p>
+<p><span>▲</span><span>中国智能手机智线上出货份额按照品牌拆分：</span><span>2014-1H20</span></p>
+<p><span>过去几年，小米在高端智能手机，或者说是高于人民币 </span><span>3000 </span><span>元价位段的手机布局并不顺利。在 </span><span>2019 </span><span>年，小米智能手机总出货量中高于人民币 </span><span>3000 </span><span>元以上占比只有 </span><span>2%</span><span>。但，也是在 </span><span>2019 </span><span>年，小米公司进军高端的策略布局。未来两年，我们将见证小米在高端智能手机的表现，同时也进一步改善小米智能手机的产品组合，拉动小米智能手机平均单价的提高。</span></p>
+<p><span>首先，在 </span><span>2019 </span><span>年年初的时候，小米宣布 </span><span>RedMi</span><span>（原红米）品牌独立。我们认为未来 </span><span>RedMi </span><span>品牌会扛起原来小米品牌的性价比的战略，通过极致的性能和价格打动消费者。一来有利于让 </span><span>RedMi </span><span>品牌打造自己子品牌的旗舰，扩大受众群体。二来，这也会进一步帮助小米主品牌摆脱价格段的束缚，进军更高价位区间的智能手机。小米也连续三年提高其数字旗舰系列的售价。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200905/d89a953b978b49d7bdd3085a40348ac4.jpeg" width="800" height="253" /></p>
+<p><span>▲</span><span>小米 </span><span>2018-2020 </span><span>旗舰机型比较：不断向高价格段挺近，提升品牌力</span></p>
+<p><span>其次，在 </span><span>2020 </span><span>年年初，小米发布小米 </span><span>10 </span><span>并成功打入 </span><span>3000 </span><span>元以上价位段。小米也因此在今年一季度在中国 </span><span>3000 </span><span>元以上智能手机价格区间斩获 </span><span>7%</span><span>的份额。另外，根据 </span><span>ITBD </span><span>的数据显示，在 </span><span>2020 </span><span>年 </span><span>6 </span><span>月，在中国地区，小米 </span><span>10</span><span>和 </span><span>10Pro </span><span>系列销量为 </span><span>73.5 </span><span>万部。作为小米初次亮相 </span><span>3000 </span><span>元以上价位段的旗舰来说表现已经相当不错，略低于当月华为 </span><span>P40 </span><span>系列的 </span><span>82.7 </span><span>万部和 </span><span>OPPOReno3 </span><span>系列的 </span><span>81.1 </span><span>万部，但是已经高于 </span><span>vivo </span><span>的 </span><span>X50 </span><span>系列的 </span><span>72.1 </span><span>万部。在</span><span>618 </span><span>期间，小米 </span><span>10 </span><span>系列成功夺得京东平台 </span><span>3500-4500 </span><span>元价位段销量冠军。</span></p>
+<p><span>最后，今年 </span><span>8 </span><span>月 </span><span>11 </span><span>号，小米发布今年旗舰机型的“超大杯”，小米 </span><span>10 </span><span>至尊纪念版，进一步上探小米手机的价格上行价格区间至 </span><span>5299 </span><span>元。小米这款机型即使在这个价位段，同华为、</span><span>OPPO</span><span>、</span><span>vivo </span><span>的旗舰相比，也有非常强的竞争力。截止 </span><span>8 </span><span>月 </span><span>31 </span><span>号，天猫小米旗舰店小米 </span><span>10 </span><span>至尊纪念版下单数量已经超过 </span><span>2 </span><span>万。因此，我们预计小米在中国 </span><span>3000 </span><span>元以上价格区间的市占率会在今年二季度 </span><span>8%</span><span>的基础上继续提升</span><span>。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200905/6d0c9b4a821d4b57b377ec123fff3938.jpeg" width="800" height="391" /></p>
+<p><span>▲</span><span>小米、华为、</span><span>OPPO</span><span>、</span><span>vivo </span><span>旗舰最高端机型对比</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200905/85d250c3a534425ca8c44ac10e60651a.jpeg" width="800" height="591" /></p>
+<p><span>▲</span><span>小米智能手机出货份额按价格区间拆分：</span><span>2014-1H20</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200905/7340a95b75374bbe88691f9fbdebd8c1.jpeg" width="800" height="576" /></p>
+<p><span>▲</span><span>中国 </span><span>3000 </span><span>元以上智能手机出货份额按照品牌拆分：</span><span>1Q18-2Q20</span></p>
+<p><span>在 </span><span>2018 </span><span>年，小米智能手机的海外出货量就已经超过中国的出货量。海外地区不可或缺的成为小米智能手机业务增长最大的动力。我们认为小米目前在海外取得较好成绩主要的原因在于：</span><span>1</span><span>）小米智能手机性价比相对比较高，</span><span>2</span><span>）线上渠道的销售有利于小米品牌的快速传播，</span><span>3</span><span>）</span><span>IoT</span><span>（</span><span>Internet of Things</span><span>，物联网）爆款产品带动小米手机的出货。我们认为这几大优势会持续推动小米海外的扩张。</span></p>
+<p><span>在 </span><span>2019 </span><span>年，小米在印度地区的智能手机出货量超越自己在中国地区的出货，达到 </span><span>4400 </span><span>万部，同比增长 </span><span>8.5%</span><span>，贡献了小米手机出货量的 </span><span>35%</span><span>。并且连续两年夺得印度智能手机出货量第一。我们认为小米未来两年在印度继续增加份额带来的空间相对比较小，更多成长将来自于印度手机用户从功能机向智能手机转换带来的智能手机的成长。在 </span><span>2021 </span><span>年和 </span><span>2022 </span><span>年，小米在印度的智能手机出货量预计将成长 </span><span>13%</span><span>和 </span><span>8%</span><span>，与印度整体智能手机出货量的成长类似。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200905/345dc82617e7491490beaa3b2a587a87.jpeg" width="800" height="581" /></p>
+<p><span>▲</span><span>小米智能手机在海外不同地区份额及预测：</span><span>2018-2022E</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200905/745d148de89b431c84b87fb0fa5a6aea.jpeg" width="800" height="564" /></p>
+<p><span>▲</span><span>小米智能手机印度出货量及预测：</span><span>2014-2024E</span></p>
+<p><span>小米着力拓展的第二块海外市场是欧洲。在 </span><span>2019 </span><span>年，小米 </span><span>EMEA</span><span>（</span><span>Europe,Middle East and Africa</span><span>，即欧洲、中东、非洲）已经取得非常亮眼的成绩，一共了出了 </span><span>1250 </span><span>万部智能手机，或 </span><span>15%</span><span>的市占率，排名第三，仅次于三星和华为。在非运营商主导的市场中，小米的拓展速度是非常惊人的。小米会利用爆款的智能手机建立品牌，然后利用小米体系中受欢迎程度比较高的 </span><span>IoT</span><span>产品配合手机继续做推广。因而，小米海外扩张比起 </span><span>OPPO </span><span>和 </span><span>vivo </span><span>要高效很多。</span></p>
+<p><span>西欧智能手机市场：</span></p>
+<p><span>西欧运营商渠道占据 </span><span>40%-50%</span><span>的份额，因此手机品牌需要配合运营商针对做一些客制化的改动</span>；</p>
+<p><span>在西欧苹果和三星总共占据 </span><span>70%</span><span>以上的份额，因此西欧运营商也有意愿降低对这两大品牌的依赖度</span>。</p>
+<p><span>目前正是小米重点突破西欧的好机会，尤其是西欧的运营商渠道。而且我们认为小米在今明两年就能看到显着的成果。小米需要配合运营对智能手机做一些客制化的变动。这对效率优先的小米来说并不是一件难事。另外，在华为逐步退出西欧市场时，西欧的运营商也会加快引入除苹果和三星之外的手机品牌来平衡苹果和三星。因此，目前小米正处于进入西欧运营商渠道非常有利的时机。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200905/3dc0908d2c6a47c39bedf081d9a04021.jpeg" width="800" height="530" /></p>
+<p><span>▲</span><span>小米、苹果、三星旗舰手机对比：小米的旗舰机型具有竞争力</span></p>
+<p><span>预计 </span><span>EMEA </span><span>这个大区将会是小米未来三年增长最快的区域，预计在这个区域小米 </span><span>2019-2022E </span><span>的复合增长率将到达 </span><span>16%</span><span>，市场份额也有望从 </span><span>2019 </span><span>年的 </span><span>6.5%</span><span>成长为 </span><span>2022 </span><span>年的 </span><span>10%</span><span>。到 </span><span>2022 </span><span>年，小米 </span><span>EMEA </span><span>区域的智能手机出货量也将超过中国地区，仅次于印度。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200905/c3d62e15a4e047648c46f0ef9655496a.jpeg" width="800" height="572" /></p>
+<p><span>▲</span><span>西欧智能手机出货量份额按照渠道划分：</span><span>2015-1H20</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200905/f05bbb22cfa3410fa36bb4e08adcf779.jpeg" width="800" height="546" /></p>
+<p><span>▲</span><span>西欧智能手机市场份额按照品牌拆分：</span><span>2015-1H20</span></p>
+<p><strong><span>用 </span><span>IoT </span><span>产品和小米生态链构建护城河</span></strong>。<span>小米的 </span><span>IoT</span><span>（</span><span>Internet of Things</span><span>，物联网）业务是小米过去三年增长最快的业务板块，</span><span>2016-2019 </span><span>的复合增速达到了 </span><span>71%</span><span>。我们预计未来三年这个板块的业务将依然保持小米三大业务板块中最高的增速，</span><span>2019-2022E </span><span>的复合增速将达到 </span><span>24%</span><span>。</span></p>
+<p><span>米 </span><span>IoT </span><span>产品取得如此成绩的主要原因在于：</span>1、 <span>小米手机用户为小米 </span><span>IoT </span><span>产品积累了最初的忠实用户</span>；2、 <span>通过复制小米智能手机打造爆款的能力打造智能产品</span>；3、 <span>产品基本可以实现和小米智能手机的实时互联</span>；4、 <span>借助各生态链企业，小米可以在多个产品种类实现快速兑现</span>。</p>
+<p><span>这些优势综合起来让小米在过去三年取得傲人的成绩，也可以确保小米在未来三年持续发展。在这块业务中，收入贡献最大的产品是小米电视和笔记本业务。在其他 </span><span>IoT </span><span>产品中，收入贡献比较大的还有小米手环、移动电源、电动滑板车、净水器等。在小米不断扩充品类的过程中，智能门锁、电饭煲等都有着很高的增长率。</span></p>
+<p><span>小米打造 </span><span>IoT </span><span>产品的能力和速度就和小米登顶印度智能手机市场的速度一样强，一样快。我们可以看到小米在 </span><span>2019 </span><span>年把小米电视市场份额做到了中国第一，并也让电视业务成功出海进入印度。而小米手环、平衡车等都占据了全球第一的份额。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200905/bbd657da6a4a48158cbafaa295eb10dc.jpeg" width="800" height="552" /></p>
+<p><span>▲</span><span>小米 </span><span>IoT </span><span>收入按照产品拆分</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200905/ac8d6e27c17b42f99967e28a4714b5c6.jpeg" width="800" height="542" /></p>
+<p><span>▲</span><span>小米 </span><span>IoT </span><span>产品收入 </span><span>vs </span><span>智能手机收入</span></p>
+<p><span>在 </span><span>2019 </span><span>年，小米的 </span><span>IoT </span><span>业务收入已经达到了智能手机收入的 </span><span>51%</span><span>。这个比例与苹果的比例差不多。今明两年，小米会重点发力白色家电。由于白电的单价相对其他手机周边要高，我们也预期白电业务的展开也会持续推动小米 </span><span>IoT </span><span>业务的快速增长。</span></p>
+<p><span>最后，我们认为 </span><span>IoT </span><span>产品同时给小米的智能手机业务构建了护城河。根据小米年报，</span><span>2019 </span><span>年拥有 </span><span>5 </span><span>件以上连接小米 </span><span>IoT </span><span>平台的设备的用户数达到了 </span><span>410</span><span>万，在 </span><span>2018 </span><span>年 </span><span>230 </span><span>万的基础上快速增长。这些 </span><span>IoT </span><span>会增强小米手机用户的粘性。这些用户也会成为小米手机最忠实的用户。这同样是我们认为小米智能手机在国内基本盘的份额保持在 </span><span>9%</span><span>的原因之一。</span></p>
+<p><span>小米的生态链各家企业主要负责小米的 </span><span>IoT </span><span>产品。生态链的企业也可以借助小米打造爆款的能力让公司得到快速的发展。我们认为这是小米和生态链的双赢策略。小米在 </span><span>2019 </span><span>年年报中披露，小米投资或者参股的生态链的公司已经有 </span><span>290 </span><span>家。其中，华米（小米手环）、九号智能（平衡车）、石头科技（扫地机器人）、云米（小米家电）四家公司已经或即将在美股纳斯达克或者 </span><span>A </span><span>股科创板上市。这些生态链也是小米的多张底牌，未来生态链可能的上市动作也能为小米带来丰厚的投资回报。</span></p>
+<p><span>因为小米 </span><span>IoT </span><span>产品品类的不断丰富，小米也顺势推出了小米有品 </span><span>APP</span><span>（</span><span>Application</span><span>，应用）。有品电商平台的 </span><span>GMV</span><span>（</span><span>Gross Merchandise Volume</span><span>，商品交易总额）也快速增长。在 </span><span>2019 </span><span>年，有品电商平台的 </span><span>GMV </span><span>突破 </span><span>100 </span><span>亿人民币。根据极光统计，</span><span>2020 </span><span>年 </span><span>6 </span><span>月，除了几家头部电商平台外，小米有品几乎是唯一呈现渗透率和日活人数同比增长，且增长比较明显的电商平台。</span></p>
+<p><span>小米电商平台在不断的提供更加丰富的商品组合，精选消费者喜爱的产品，同时积极获取新课。同时，有品电商平台也将受惠于中国电商渗透率的提升。因此，随着小米 </span><span>IoT </span><span>业务不断发展和壮大，小米有品电商平台业务也会不断提升。</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200905/7c158192d93c4a2395db279e0dc05b14.jpeg" width="800" height="521" /></p>
+<p><span>▲</span><span>2020 </span><span>年 </span><span>6 </span><span>月电商 </span><span>APP </span><span>渗透率排行及同比变化</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200905/45eff33c6e354536bbe5e99947d5eb94.jpeg" width="800" height="530" /></p>
+<p><span>▲</span><span>2020 </span><span>年 </span><span>6 </span><span>月电商 </span><span>APP DAU </span><span>均值及同比变化</span></p>
+<p><span>智能手机是移动互联网时代最为关键的载体。因而，互联网基因是深深烙印在手机品牌公司里的。对于安卓定制化操作系统 </span><span>MIUI</span><span>（</span><span>MI User Interface</span><span>，小米用户界面）起家的小米来说，互联网业务的布局更是从一早就开始的。</span></p>
+<p><span>对于互联网业务来说，流量是最为关键的指标。小米获取流量的方式最为直观就是有多少人使用小米手机，那就是为小米贡献了多少流量。</span></p>
+<p><span>截止 </span><span>2020 </span><span>年一季度末，小米的 </span><span>MIUI</span><span>，也就是小米手机操作系统的用户数为</span><span>3.3 </span><span>亿，其中中国用户数为 </span><span>1.1 </span><span>亿，海外用户数为 </span><span>2.2 </span><span>亿。目前，小米的互联网收入的 </span><span>90%</span><span>以上来自于国内。因此国内用户数将是小米互联网业务最重要的根基。基于我们对小米国内智能手机 </span><span>9%</span><span>份额的基本盘的信心，我们认为 </span><span>MIUI </span><span>国内的用户在未来也可以基本维持在 </span><span>1.1 </span><span>亿上下。</span></p>
+<p><span>根据中国互联网信息中心的报告，</span><span>1</span><span>）中国网民人均每周上网时长同比都是不断增加的，</span><span>2</span><span>）手机网络游戏用户规模和使用率都是不断提升的。下图中极光的报告数据也符合这一结论。这都有利于小米的国内广告和游戏业务的增长。而且，随着小米 </span><span>3000 </span><span>元以上价位智能手机销售占比的提升，这可以推动小米这两块业务的 </span><span>ARPU</span><span>（</span><span>Average Revenue Per User</span><span>，平均用户收入）增长。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200905/ebb6dd5bd9dd48a9a2dc1f2bc08592bf.jpeg" width="800" height="556" /></p>
+<p><span>▲</span><span>中国移动网民人均 </span><span>APP </span><span>每日使用时长</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200905/9ad8c7b2f3054e7bb650cb6206b5e1b6.jpeg" width="800" height="545" /></p>
+<p><span>▲</span><span>中国移动网民人均 </span><span>APP </span><span>每日使用时长中游戏时间占比增加</span></p>
+<p><span>小米的互联网业务主要可以拆分为三大块——广告收入、游戏收入和其他互联网增值业务。其他互联网增值业务主要包括电视广告和会员、金融业务、以及上文提及的有品电商平台业务等。在 </span><span>2019 </span><span>年，小米的广告收入和游戏收入分别占小米互联网业务的 </span><span>54%</span><span>和 </span><span>16%</span><span>，是小米互联网业务最重要的部分。</span></p>
+<p><span>另外，随着印度等海外地区 </span><span>MIUI </span><span>用户数的提升，小米的海外广告收入增速有望进一步加速。我们相信，在抖音的国际业务受到美国政府阻碍的时候，手机品牌可能是仅有的可以取得国际化互联网收入最好的代表。</span></p>
+<p><span>综上，预计小米的互联网业务在 </span><span>2019 </span><span>年</span><span>-2022 </span><span>年将保持 </span><span>25%</span><span>的复合增速</span>。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200905/47cae8258161408a85c87bd6e02a1b5c.jpeg" width="800" height="529" /></p>
+<p><span>▲</span><span>小米互联网收入按照业务拆分</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200905/9f381edad72a44708d045d4332c2f905.jpeg" width="800" height="561" /></p>
+<p><span>▲</span><span>小米互联网收入广告部分按国内和海外拆分</span></p>
+<p>2、 传音： <span>想象不到的非洲王者</span></p>
+<p><span>过去十年，凭借智能手机换机和中国需求的双重崛起，铸就了让消费者熟知的中国四大智能手机品牌（华为、</span><span>OPPO</span><span>、</span><span>vivo </span><span>和小米）。然而，在这十年中，有这么一家公司悄然出海来到非洲市场，在三星和诺基亚的主导的市场下撕开一个缺口，并且逐步超越他们做到了非洲市场份额第一。这家公司就是传音，在业内被称为“非洲之王”。</span></p>
+<p><span>传音在非洲市场从零开始拓展，从品牌到渠道到技术到服务。传音针对非洲消费者进行技术改进，比如智能手机自拍的美黑功能。因此，传音在这十年间牢牢的站稳了非洲市场。</span></p>
+<p><span>虽然从营收规模上来说，传音的体量比起智能手机前六大品牌还相对比较小，但是从手机包括智能手机和功能手机的出货量来说，传音在 </span><span>2017 </span><span>年就做到了全球第四，仅次于三星、苹果和华为。在 </span><span>2019 </span><span>年的时候，传音的全球市占率为 </span><span>8.1%</span><span>，排名第四；非洲市场占有率为 </span><span>52.5%</span><span>，排名第一，远高于排名第二的三星的 </span><span>10.3%</span><span>的份额。</span></p>
+<p><span>未来传音的快速成长来自于非洲市场功能机向智能机转换带来的平均单价的提升以及走出非洲过程带来的量的提升。</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200905/ce15966e893b49c9aa4e56a6d1ad25c5.jpeg" width="800" height="442" /></p>
+<p><span>▲</span><span>传音手机出货量按照功能手机与智能手机拆分</span></p>
+<p><span>根据 </span><span>IDC</span><span>，</span><span>2019 </span><span>年，全球手机（包括智能手机和功能手机）出货量是 </span><span>17.9 </span><span>亿部。虽然智能手机对功能手机的取代，全球功能手机出货量也依然达到了 </span><span>4.2</span><span>亿部，占全球手机总出货的 </span><span>24%</span><span>。</span></p>
+<p><span>2019 </span><span>年非洲的手机总出货量为 </span><span>2.2 </span><span>亿部，微幅同比上升 </span><span>2%</span><span>。其中，智能手机出货量约为 </span><span>9000 </span><span>万部，同比增长 </span><span>3%</span><span>。非洲地区功能机出货量依然有 </span><span>1.3</span><span>亿部，也是同比增长 </span><span>2%</span><span>，占非洲手机出货的 </span><span>59%</span><span>，占全球功能手机出货量的 </span><span>31%</span><span>。这正因为背靠非洲功能机的市场，传音才跻身全球手机出货量前四的位置。</span></p>
+<p><span>值得注意的是，非洲智能手机出货量占总手机出货的比例从 </span><span>2014 </span><span>年的 </span><span>34%</span><span>逐步攀升到了 </span><span>2019 </span><span>年的 </span><span>41%</span><span>，但是仍然显着低于全球平均水平。根据 </span><span>IDC</span><span>的预测，撒哈拉以南的非洲地区的智能手机渗透率将从 </span><span>2018 </span><span>年的 </span><span>39%</span><span>增长到 </span><span>2025 </span><span>年的 </span><span>67%</span><span>。</span></p>
+<p><span>因此，在 </span><span>2018 </span><span>年和 </span><span>2019 </span><span>年，非洲智能手机出货量的增长速度不仅仅远高于全球、中国和发达地区增速。而且，过去两年，非洲智能手机增速在发展中地区排名第二，仅次于印度，高于亚洲其他地区和拉丁美洲。预计未来功能机向智能机的切换需求会持续推动非洲智能手机出货量的增长。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200905/c3374c3252f34bd888e22a6b209b910a.jpeg" width="800" height="371" /></p>
+<p><span>▲</span><span>全球智能手机渗透率按照地区拆分</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200905/43a01063cf344d05822be57abe7eff5d.jpeg" width="800" height="483" /></p>
+<p><span>▲</span><span>全球发展中地区智能手机出货同比增速比较：非洲的成长仅次于印度地区</span></p>
+<p><span>由于新冠疫情拖累 </span><span>2020 </span><span>年全球经济走弱，我们预计 </span><span>2020 </span><span>年 </span><span>MEA</span><span>（</span><span>MiddleEast and Africa</span><span>，中东和非洲地区）地区智能手机出货量也将随之下滑 </span><span>11%</span><span>到</span><span>1.39 </span><span>亿部。随着非洲地区带来的功能机向智能手机转换的需求，我们预计到</span><span>2024 </span><span>年，</span><span>MEA </span><span>地区的智能手机出货量为 </span><span>1.7 </span><span>亿部，</span><span>2020-2024 </span><span>年的复合增长率为 </span><span>5.0%</span><span>，高于同期全球智能手机的复合增长率的 </span><span>2.8%</span><span>。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200905/6a526dbae2d14b1cbeee82a6d804d1c0.jpeg" width="800" height="547" /></p>
+<p><span>▲</span><span>全球手机出货量及预测按照智能手机和功能手机拆分</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200905/2b246864ca264247a1ca2252f8dd06fb.jpeg" width="800" height="519" /></p>
+<p><span>▲</span><span>MEA </span><span>地区智能手机出货量及预测</span></p>
+<p><span>将传音在 </span><span>2019 </span><span>年非洲 </span><span>52.5%</span><span>市场份额的手机出货量拆一拆可以发现传音在功能机的市场份额是 </span><span>63.3%</span><span>，在智能手机的市场份额是 </span><span>36.9%</span><span>。</span></p>
+<p><span>就非洲的功能机市场来说，传音在 </span><span>2019 </span><span>年功能机 </span><span>63.3%</span><span>的市占率是从 </span><span>2017</span><span>年 </span><span>56.3%</span><span>的高基础上增长来的，从而帮助传音逆势成长，在 </span><span>2019 </span><span>年把功能机出货量做到 </span><span>1.3 </span><span>亿部，同比成长 </span><span>2%</span><span>，即使是在非洲总体功能机出货量不断下降的不利局面中。我们也认可由于功能机市场规模的不断萎缩，未来传音的这块业务也会随之下降。但是鉴于手机品牌不断退出功能机市场，可以留给传音更多的份额提升空间，因而传音在功能机业务的下降是明显慢于行业降幅。</span></p>
+<p><span>在非洲的智能手机市场，传音在 </span><span>2017 </span><span>年就超越三星成为当年智能手机出货量第一，取得 </span><span>27.9%</span><span>的份额，并且在 </span><span>2018 </span><span>年和 </span><span>2019 </span><span>年持续扩大与三星的差距，份额也分别增长到 </span><span>34.3%</span><span>和 </span><span>36.9%</span><span>。得益于传音针对非洲用户的优化，我们认为传音有望在未来继续拉开与三星出货量上的差距。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200905/f87cc563f68c4f0b90e59ce4aea72205.jpeg" width="800" height="571" /></p>
+<p><span>▲</span><span>非洲功能机市场份额按照品牌拆分</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200905/9e0035b280d041f482564fe13f1899ee.jpeg" width="800" height="548" /></p>
+<p><span>▲</span><span>非洲智能手机市场份额按照品牌拆分</span></p>
+<p><span>传音目前一共创立了三个品牌来抓住非洲不同的用户群体：</span></p>
+<p><span>TECNO </span><span>品牌是传音旗下的中高端品牌，定位于新兴市场正在兴起的中产阶级消费群体；</span></p>
+<p><span>itel </span><span>品牌是传音旗下的大众品牌，定位于新兴市场的广大基层消费者以及价值导向型用户；</span></p>
+<p><span>Infinix </span><span>品牌是传音旗下的时尚科技品牌，定位于新兴市场喜爱酷炫前沿的年轻人群体。</span></p>
+<p><span>这三大品牌的分层有助于传音对非洲市场的不同群体的全覆盖。传音在品牌的构建能力甚至优于目前小米在中国的品牌构建。根据 </span><span>African Business</span><span>，</span><span>2019 </span><span>年，</span><span>TECNO</span><span>、</span><span>itel</span><span>、</span><span>Infinix </span><span>在“最受非洲消费者喜爱的品牌”百强榜中分别位列第 </span><span>5</span><span>、</span><span>17</span><span>、</span><span>26 </span><span>名。</span><span>TECNO </span><span>和 </span><span>itel </span><span>也在入选的中国品牌中排名第一和第二。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200905/0096a73a40074b1689591d5805458229.jpeg" width="800" height="526" /></p>
+<p><span>▲</span><span>传音三大品牌畅销机型对比</span></p>
+<p><span>通过 </span><span>itel </span><span>品牌，传音做到的事情是让更多的非洲普通用户可以使用上智能手机。也可以认为是传音在做大非洲智能手机这块蛋糕中扮演了非常重要的作用。根据 </span><span>IDC </span><span>的数据，</span><span>2014 </span><span>年</span><span>-2019 </span><span>年，非洲地区 </span><span>1000 </span><span>元人民币以上的智能手机出货量是保持稳定的，每年在 </span><span>2500 </span><span>万部上下浮动。但是，</span><span>1000 </span><span>元人民币以下的中低端价格段的智能手机出货量从 </span><span>2014 </span><span>年的约 </span><span>2839 </span><span>万部成长到 </span><span>2019 </span><span>年 </span><span>6780 </span><span>万部，复合增长率为 </span><span>19%</span><span>。传音在做大蛋糕的同时也享受了极高的成长。</span></p>
+<p><span>同时，</span><span>TECNO </span><span>品牌依然有向上，即更高价位段智能手机，成长的空间。在传音 </span><span>2019 </span><span>年非洲销售的智能手机中，只有 </span><span>8%</span><span>来自人民币 </span><span>1000 </span><span>元以上的价格段。作为对比，三星的这一比例是 </span><span>41%</span><span>。也就是说，在非洲约</span><span>1000 </span><span>元人民币价格段以上的智能手机中，三星仍然占据相对较高的份额为</span><span>38%</span><span>，而传音的比例是 </span><span>12%</span><span>。尽管非洲 </span><span>1000 </span><span>元以上价格段的智能手机只占总智能手机销量的 </span><span>25%</span><span>，但是传音正策略性地向更高端的价格段渗透。</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200905/21b4d615ae0d49a4878d4869079f002a.jpeg" width="800" height="414" /></p>
+<p><span>▲</span><span>非洲智能手机出货按价格段拆分：</span><span>2014-2019</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200905/79b02e4aa9724096adc2c6a937f8a66f.jpeg" width="800" height="425" /></p>
+<p><span>▲</span><span>传音非洲智能手机出货量比例按价格段拆分：</span><span>2014-2019</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200905/60702c9174a646abba49a6946d6e96d2.jpeg" width="800" height="620" /></p>
+<p><span>▲</span><span>非洲尼日利亚</span><span>：</span><span>传音与三星畅销机型对比</span></p>
+<p><span>通过这些年的业务拓展，传音在非洲东部和中部区域已经做得非常强大了。在这两个区域中，传音的智能手机市占率预估都超过了 </span><span>50%</span><span>。未来传音会继续巩固自己的强势区域，并且可以充分享受每年 </span><span>10-15%</span><span>的来自于人口和功能机切换的智能手机增长。</span></p>
+<p><span>其次，传音也正在往非洲北部和南部区域渗透。借助传音在非洲建立的品牌、渠道关系和供应链体系，我们预计传音有的能力去抢夺较小手机品牌以及行业老大三星的份额。这也会进一步做强“非洲之王”的称号。</span></p>
+<p><span>非洲大陆并不是一个统一的市场，跟中国这样统一的市场有非常大的不同。非洲每个国家都有自己特殊的情况。传音在非洲的市场是一个国家一个国家的攻克下来的。传音每进入一个国家都需要投入资源去建立品牌、搭建渠道并完善供应链体系。例如，传音在埃塞俄比亚就有自己的组装工厂以满足埃塞俄比亚当地的需求。</span></p>
+<p><span>如此多非洲国家中积累的下来的成功经验让我们对传音在非洲南北部地区拓展保持信心。正是传音专注于打好每一个国家的阵地战，才为传音赢得非洲这片大陆的王者称号。</span></p>
+<p><span>下表中整理了非洲部分国家的基本情况以及传音在当地的地位。可以看到，传音在坦桑尼亚、乌干达等国家的手机份额已经达到 </span><span>80%</span><span>以上，相比而言在北部的埃及和南部的南非传音的手机市占率还有很大的提升空间</span></p>
+<p><span>。</span></p>
+<p><span>▲</span><span>2019 </span><span>年非洲部分国家手机市场及传音市占率概览</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200905/e94f2d12c86f4f5eb840948e5c84c42b.jpeg" width="800" height="777" /></p>
+<p><span>▲</span><span>非洲主要国家移动互联网概览</span></p>
+<p><span>非洲只是传音的基本盘，而传音的市场空间远不止非洲。在 </span><span>2019</span><span>年，传音出货的 </span><span>1.46 </span><span>亿部手机中，有 </span><span>21%</span><span>的出货量是来自于非洲以外的区域。非洲的王者也正在走出非洲，走向世界。</span></p>
+<p><span>传音的扩张策略十分清晰——选择新兴国家作为非洲以外的战略目标国家。这是目前传音最擅长的领域，也可以把在非洲各个国家的成功经验复制到这些新兴市场。</span></p>
+<p><span>传音走出非洲的第一站就是印度，在 </span><span>2016 </span><span>年进入印度市场，并在 </span><span>2017 </span><span>年成功出货 </span><span>2240 </span><span>万部功能手机，并以 </span><span>13.7%</span><span>的份额取得印度功能机销量的第二名。只是，</span><span>2017 </span><span>年开始印度运营商 </span><span>Reliance Jio </span><span>开始推出免费或超低价的</span><span>4G </span><span>功能机</span><span>/</span><span>智能机来吸引用户使用 </span><span>4G </span><span>流量套餐，因此在 </span><span>2018 </span><span>年，传音和三星在印度功能机的销量都显着下滑，而 </span><span>Reliance Jio </span><span>旗下的 </span><span>Lyf </span><span>的功能机份额则从 </span><span>2017 </span><span>年的 </span><span>8.3%</span><span>大涨至 </span><span>2018 </span><span>年的 </span><span>36.1%</span><span>。</span></p>
+<p><span>在 </span><span>2019 </span><span>年，传音在印度的运营企稳，手机总出货量达到 </span><span>1920 </span><span>万部，排名印度第五。由于中国品牌小米、</span><span>OPPO</span><span>、</span><span>vivo </span><span>在印度的强势表现，传音会保持自己印度市场的平稳运营，但是不会投入过多资源和中国的这些品牌竞争。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200905/19113bca8efa4486b7d4b7c5f4150086.jpeg" width="800" height="561" /></p>
+<p><span>▲</span><span>印度手机出货量份额按品牌拆分：</span><span>2014-2019</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200905/fa6fe207fbd94edf937f76dd69c336c6.jpeg" width="800" height="586" /></p>
+<p><span>▲</span><span>印度功能手机出货量份额按照品牌拆分：</span><span>2014-2019</span></p>
+<p><span>除了印度以外，传音也成功进入了孟加拉国、巴基斯坦和越南，目前也都取得不错的进展。</span><span>2019 </span><span>年，传音在以上三个国家的手机出货量分别为 </span><span>460 </span><span>万部、</span><span>160 </span><span>万部和 </span><span>140 </span><span>万部。而传音也在孟加拉国做到了出货量第二的位置。</span></p>
+<p><span>在这些非洲以外的国家，传音会将业务重点放在智能手机上。因此，在 </span><span>2020</span><span>年、</span><span>2021 </span><span>年和 </span><span>2022 </span><span>年，我们也预计传音在 </span><span>MEA </span><span>地区以外的智能手机出货量会保持 </span><span>60%</span><span>、</span><span>40%</span><span>和 </span><span>35%</span><span>的同比增长。</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200905/70d5ae1a77f0461dbb021abb6df3f7b5.jpeg" width="800" height="532" /></p>
+<p><span>▲</span><span>传音手机出货量比例按非洲和非洲以外拆分</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200905/df6902b8e0ff406eb92695f9230795a4.jpeg" width="800" height="537" /></p>
+<p><span>▲</span><span>传音手机出货量按照 </span><span>MEA </span><span>与其他地区拆分</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200905/c2604536c8fa49f5b111b79419461ead.jpeg" width="800" height="496" /></p>
+<p><span>▲</span><span>智能手机出货同比增速比较：在 </span><span>2018 </span><span>年和 </span><span>2019 </span><span>年，传音的增速仅次于华为</span></p>
+<p><span>正如我们在小米部分提到的。手机，尤其是智能手机，是当今世界消费者使用最前沿的科技产品，且智能手机也烙印着移动互联网的基因。而传音，也同小米类似，也将数码配件、家用电器、移动互联网服务，带入了非洲市场。</span></p>
+<p><span>为了更好的推广传音的周边产品，传音又创办了数码配件品牌 </span><span>Oraimo</span><span>，售后服务品牌 </span><span>Carlcare </span><span>和家用电器品牌 </span><span>Syinix</span><span>。希望借此打通以手机为中心，</span><span>IoT </span><span>业务与互联网业务的商业生态。从而在扩张传音帝国的同时进一步强化公司的竞争优势。</span></p>
+<p><span>就数码产品和家电来说，传音已经发布并进入非洲市场的产品包括电源线、移动电源、耳机（蓝牙耳机、</span><span>TWS </span><span>耳机等）、音响、电视等。有些配件和家电产品也已经进入印度等非洲以外的地区。</span></p>
+<p><span>互联网业务也与小米类似，目前主要依托传音手机的操作系统（</span><span>OS</span><span>，</span><span>Operating System</span><span>）来实现广告收入和预装软件收入等。目前互联网业务收入还处于相对初期的阶段。我们认为未来随着传音智能手机出货量占比的提升，互联网业务带来的收入还有很大的增值空间</span>。</p>
+<p><span>2019 </span><span>年传音的非手机业务收入为 </span><span>17 </span><span>亿人民币，同比增长 </span><span>41%</span><span>，占传音总营收的 </span><span>7%</span><span>。我们预测传音的非手机业务在未来三年都将保持 </span><span>25%</span><span>以上的同比增速，预计在 </span><span>2021 </span><span>年和 </span><span>2022 </span><span>年贡献 </span><span>7%</span><span>和 </span><span>8%</span><span>的收入。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200905/82a8c685648e45c89ffcb6904b8a1da6.jpeg" width="800" height="329" /></p>
+<p><span>▲</span><span>传音互联网商业模式</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200905/da92cca0f80a4ca3bf24375e3e81dce7.jpeg" width="800" height="480" /></p>
+<p><span>▲</span><span>传音非手机收入规模及预测</span></p>
+<p>3、 <span>比亚迪电子</span></p>
+<p><span>比亚迪电子是见证整个 </span><span>4G </span><span>时代的一家科技公司。从 </span><span>2010 </span><span>全球进入智能手机时代算起，到 </span><span>2019 </span><span>年，比亚迪电子的营收增加 </span><span>320%</span><span>，</span><span>10 </span><span>年的复合增速达到了 </span><span>12%</span><span>。不管中国各大手机品牌在这 </span><span>10 </span><span>年中如何浮沉，这家公司都能穿越时代，稳定增长。</span></p>
+<p><span>根据 </span><span>MMI </span><span>在 </span><span>2019 </span><span>年发布 </span><span>EMS </span><span>制造商 </span><span>50 </span><span>强榜单中，前十的位置主要被中国台湾的厂商和部分美国厂商占据。令人惊喜的是，在 </span><span>2020 </span><span>年 </span><span>5 </span><span>月，</span><span>MMI </span><span>最新发布的 </span><span>EMS </span><span>制造商前 </span><span>50 </span><span>强榜单中，第一次有一家中国大陆的企业进入了前十。这家公司就是比亚迪电子。因而，就中国大陆 </span><span>EMS </span><span>厂商而言，目前比亚迪电子就是无可争议的第一。</span></p>
+<p><span>这十年，比亚迪电子已经把自己做到智能手机安卓阵营金属结构件绝大的老大，目前占据了行业将近 </span><span>40%</span><span>的份额。而且，比亚迪电子并没有止步于此，跟着智能手机结构件从塑料到金属，从金属到玻璃，从玻璃到陶瓷，从普通塑料到高级塑料，从普通金属加工到高级金属加工，比亚迪电子从来都是这些变化浪潮中走在最前面的那个。</span></p>
+<p><span>比亚迪电子已经稳健的走过了 </span><span>4G </span><span>周期，展望未来我们也对比亚迪电子保持乐观。我们相信比亚迪电子可以充分受惠于：</span><span>1</span><span>）中国手机品牌出海过程中提升组装业务的出货规模增长和利润改善，</span><span>2</span><span>）</span><span>4G </span><span>智能手机向 </span><span>5G </span><span>智能手机切换过程中带来结构件价值量的提升，</span><span>3</span><span>）以智能手机为中心向周边拓展的机会，包括智能穿戴、智能家居以及汽车电子。</span></p>
+<p><span>比亚迪电子的稳健增长仍然会继续。预估，比亚迪电子有望在 </span><span>2024 </span><span>年达到 </span><span>1000 </span><span>亿人民币的规模，而未来 </span><span>5 </span><span>年的复合增速将达到 </span><span>14.4%</span><span>，甚至高于比亚迪电子之前 </span><span>10 </span><span>年的复合增速。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200905/a3f662e26758415baf95fabeb87ab8a8.jpeg" width="800" height="324" /></p>
+<p><span>▲</span><span>比亚迪电子营收持续稳定增长</span></p>
+<p><span>比亚迪电子的组装业务初期重点客户并不是如今的中国四大智能手机品牌。早期客户例如有联想，包括手机和电脑的组装。比亚迪电子的组装最初是巩固自身结构业务的策略之一。虽然此前组装业务的利润相对比较小，但是这个过程中，比亚迪电子锻炼了自身的制造能力。</span></p>
+<p><span>在过去两年中，比亚迪电子开始深耕中国的智能手机品牌。其中，</span><span>OPPO </span><span>和</span><span>vivo </span><span>都比较擅长在自家的工厂生产手机。因此，华为和小米成为了比亚迪电子重点攻克对象。如今，比亚迪电子的 </span><span>EMS </span><span>业务（手机代工）已经成功的在华为和小米这两个品牌中打开了局面。</span></p>
+<p><span>比亚迪电子智能手机出货量在 </span><span>2018 </span><span>年大约为 </span><span>3000 </span><span>万部，</span><span>2019 </span><span>成长到大约</span><span>5000 </span><span>万部，今年比亚迪电子的组装出货量预计在 </span><span>6000 </span><span>万部。我们认为未来两年比亚迪电子 </span><span>EMS </span><span>业务的成长动力来自于：</span><span>1</span><span>）通过印度建厂协助小米在印度当地的手机组装，</span><span>2</span><span>）继续增加华为份额，份额来自于由于美国 </span><span>EMS </span><span>厂商伟创力在中美冲突背景下退出华为代工业务的空间，</span><span>3</span><span>）</span><span>5G </span><span>智能手机售价提升带来的平均单价的提升。</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200905/abd92a7cf4614827b2d5e9a459915e65.jpeg" width="800" height="538" /></p>
+<p><span>▲</span><span>比亚迪电子智能手机出货量</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200905/20f18955e8934eca8d0a9528da044754.jpeg" width="800" height="575" /></p>
+<p><span>▲</span><span>比亚迪电子组装业务收入按照客户地区拆分</span></p>
+<p><span>比亚迪电子的 </span><span>EMS </span><span>业务直至 </span><span>2019 </span><span>年，毛利水平贡献都可以认为是忽略不计。这主要是由于比亚迪电子的规模还不够大，无法体现规模效应导致的。但是，随着比亚迪电子策略性地和华为、小米这两家客户的深度绑定，比亚迪电子在这两年迅速做大了自己的组装规模。因此，这块业务的毛利率也可以从之前稍高于盈亏线的毛利率水平提升到今年的 </span><span>2%-3%</span><span>之间。而组装业务也将在今年贡献超过 </span><span>8%</span><span>毛利润。</span></p>
+<p><span>未来两年，随着中国智能手机品牌规模的持续提升，比亚迪电子的安卓组装业务毛利率会持续改善，我们预计 </span><span>2024 </span><span>年毛利率达到 </span><span>3.5%</span><span>。另外，比亚迪电子在北美客户的组装业务也会在今年持续上量，而且北美客户的组装业务毛利率比安卓系客户要高一些。我们预计北美客户组装业务毛利率今年达到 </span><span>3%</span><span>，到 </span><span>2024 </span><span>年可以做到 </span><span>5%</span><span>。</span></p>
+<p><span>因此组装业务对毛利润的贡献，有望在今年超过 </span><span>8%</span><span>，并且对毛利润的贡献比例在未来持续上升。正因为盈利拐点的到来，我们也看好比亚迪电子在未来 </span><span>5 </span><span>年的发展。我们也认为明后两年毛利率进一步改善可以继续推动比亚迪电子估值的上升。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200905/65e9b89ad52f415a9ed894948c6a0ea8.jpeg" width="800" height="532" /></p>
+<p><span>▲</span><span>比亚迪电子组装业务收入增速和毛利润增速对比</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200905/044f2a77e8f7459e9e00ab69157dc139.jpeg" width="800" height="565" /></p>
+<p><span>▲</span><span>比亚迪电子组装对公司总毛利润贡献</span></p>
+<p><span>智能手机安卓阵营的金属结构件行业在 </span><span>2015 </span><span>年</span><span>-2016 </span><span>年是甜蜜时期，当时主要受惠于智能手机品牌跟随苹果的潮流，将智能手机背壳的材料从塑料向金属升级。当时金属结构件处于供不应求的阶段，因此行业利润也比较好。从 </span><span>2017 </span><span>年行业中金属 </span><span>CNC</span><span>（</span><span>Computer Numerical Control</span><span>，电脑数值控制）产能的释放，行业的竞争也迅速加剧，毛利率水平也开始回落。这个期间，比亚迪电子坚持做大自身规模，在主要客户，包括三星和中国品牌中，扩大份额。因此，也借助这个机会，把规模小的公司扫出了智能手机结构件行业。金属结构件也是比亚迪电子过去几年最重要的利润来源。</span></p>
+<p><span>目前，我们估算，比亚迪电子在中国安卓智能手机金属结构件（背盖</span><span>+</span><span>中框）的份额大约在 </span><span>40%</span><span>。比亚迪在其最大的金属客户三星的份额大约在 </span><span>40%</span><span>，而在华为和小米的份额大约在 </span><span>50%</span><span>。长期看，由于头部集中效应的加剧，比亚迪电子金属结构件的出货量和份额还会有一定的上升空间，尽管份额提升空间不大。但是，鉴于明年整体智能手机出货量会在今年低基数的基础有较高的成长，因此预计明年比亚迪电子金属机壳出货量会有双位数的成长。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200905/01a5afe322b54ebbab39c7b66e76dced.jpeg" width="800" height="551" /></p>
+<p><span>▲</span><span>比亚迪电子金属结构件出货量及预测</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200905/fc74f7524eb14053b42cdec78dfbff8b.jpeg" width="800" height="551" /></p>
+<p><span>▲</span><span>比亚迪电子金属结背盖及中框在安卓智能手机中的份额</span></p>
+<p><span>今明两年，智能手机的金属中框平均单价有望提升。这是由 </span><span>5G </span><span>智能手机对于手机内部空间结构要求更高带来的单价的提升。我们预测今年中国品牌</span><span>5G </span><span>智能手机渗透率将达到 </span><span>60%</span><span>，这会帮助比亚迪电子今年的金属结构件平均单价的提升。未来两年随着 </span><span>5G </span><span>手机数量和规模的上升，我们预计金属中框的单价会稳步逐年回落。</span></p>
+<p><span>最后，比亚迪电子也正在非常积极地向非手机的产品的金属结构件拓展。我们预计 </span><span>2020 </span><span>年笔记本电脑以及可穿戴设备等贡献的金属结构收入占整个金属收入的 </span><span>9%</span><span>，未来两年这一比例会超过 </span><span>10%</span><span>。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200905/2725bc39dd9f4d688901faee948624e2.jpeg" width="800" height="524" /></p>
+<p><span>▲</span><span>比亚迪电子金属结构件平均单价及预测</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200905/e0c9a356cd954311aa97434e5493973c.jpeg" width="800" height="547" /></p>
+<p><span>▲</span><span>比亚迪电子金属结构件收入按照手机和非手机拆分</span></p>
+<p><span>从 </span><span>2017 </span><span>年下半年开始，中国智能手机品牌开始采用玻璃作为他们部分旗舰机型的后盖外观件的材料，而金属则开始从后盖向以中框形式作为支撑作用结构件进行转变。这其中主要原因在于玻璃后盖可以给予消费者带来不同于金属的视觉体验。因此，在 </span><span>2018 </span><span>年和 </span><span>2019 </span><span>年，玻璃后盖的在中国智能手机品牌的渗透率快速提升。</span><span>2019 </span><span>年，玻璃已经渗透进中国 </span><span>1000 </span><span>元档位的智能手机。我们认为 </span><span>5G </span><span>时代玻璃后盖的渗透率会继续提升，主要原因是相比于金属，玻璃更加利于 </span><span>5G </span><span>信号的传播。</span></p>
+<p><span>目前，玻璃外观件行业中主要有三家公司。蓝思科技和伯恩光学是以智能手机的前盖板的龙头作为基础顺势进入玻璃后盖产品，而比亚迪电子则是从金属后盖做到了玻璃后盖。比亚迪电子作为玻璃材料的后进入者也在这两年迅速将玻璃产能扩充到了 </span><span>70-80 </span><span>万片</span><span>/</span><span>天，预计到今年年底有望将玻璃的产能扩充到 </span><span>80-90 </span><span>万片</span><span>/</span><span>天。</span></p>
+<p><span>过去两年，玻璃外观件行业的竞争已经将很多小厂商扫出行业。这和金属结构件的行业竞争类似。因此，玻璃外观件的平均单价在 </span><span>2019 </span><span>年下降比较多，但是我们预计玻璃外观件的平均单价在今年将有所提升。因为今年竞争情况缓和，而且一些新的工艺，比如亚光工艺等，带动玻璃外观件的价值量提升。玻璃收入的增长是今年比亚迪电子结构件收入成长的主要动力。</span></p>
+<p><span>2016 </span><span>年，小米发布全球第一款全面屏智能手机小米 </span><span>MIX</span><span>。在这款手机中小米采用陶瓷材料作为后盖。陶瓷材料因此成为市场上被热炒的话题。只是，受制于工艺、成本、规模量产等因素，陶瓷后盖在手机品牌旗舰高配版本外并没有大规模普及。</span></p>
+<p><span>但是，陶瓷作为一种亲肤材料，在可穿戴设备，如智能手表中备受欢迎和使用。苹果在 </span><span>2019 </span><span>年发布的手表产品 </span><span>Apple Watch </span><span>中就推出了陶瓷后盖的版本。受惠于此，比亚迪电子的陶瓷结构件也将步入快速增长通道。</span></p>
+<p><span>比亚迪电子玻璃和陶瓷的总收入在去年大概是人民币 </span><span>30 </span><span>亿，预计今年可以成长到 </span><span>40-50 </span><span>亿之间。在 </span><span>2021 </span><span>年和 </span><span>2022 </span><span>年，玻璃和陶瓷总收入也将继续保持高速成长。我们预计增速将分别达到 </span><span>38%</span><span>和 </span><span>13%</span><span>。</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200905/b76f7bcc64fb4ea3849c74eee7a5b8fe.jpeg" width="800" height="469" /></p>
+<p><span>▲</span><span>比亚迪电子玻璃和陶瓷营收以及预测按照玻璃和陶瓷拆分</span></p>
+<p><span>智能手机是目前用户基数最大的电子产品。智能手机作为个人的计算中心可以很好的与可穿戴设备、智能家居等手机周边产品有一个很好的互动。因此，手机品牌有更好的机会把自家的手机周边产品传递给手机品牌用户。而比亚迪电子正是在手机品牌拓展这些产品的强力助手。比如，比亚迪电子就为小米生态链中的商米科技提供制造服务。</span></p>
+<p><span>除了智能手机品牌以外，比亚迪电子已经将新型智能产品拓展到了其他品牌，包括 </span><span>iRobot</span><span>（扫地机器人）、 </span><span>SONOS</span><span>（诺思音箱）、大疆（无人机、运动相机）等。</span></p>
+<p><span>依托比亚迪集团的汽车整车业务，比亚迪电子也顺势进入汽车电子领域。比亚迪电子可以为汽车品牌厂商供应车用资讯娱乐系统（</span><span>infotainment</span><span>）、车用</span><span>5G </span><span>通讯模块等汽车电子产品。目前，母公司比亚迪股份贡献约 </span><span>60%</span><span>的汽车智能系统收入。比亚迪电子也正在积极拓展比亚迪以外的汽车领域客户，目前已经进入的客户包括大陆、哈曼等。</span></p>
+<p><span>相对来说，汽车电子产品认证周期更长，并且受到今年疫情影响，因而预计今年汽车电子增长速度将慢于新型智能产品的增长。未来随着比亚迪电子对于其他汽车品牌的拓展以及车载电子系统渗透率的增加，我们对比亚迪电子这块业务的长期增长保持信心。我们预计新型智能产品与汽车智能系统在 </span><span>2020 </span><span>年会为比亚迪电子贡献近人民币 </span><span>200 </span><span>亿收入。</span></p>
+<p><span>应对今年年初新冠疫情带来的口罩需求，比亚迪电子行动非常迅速。在 </span><span>2 </span><span>月份新冠疫情暴发初期，比亚迪电子凭借强大的制造能力，在短时间内完成口罩机的设计和制造。在 </span><span>3 </span><span>月海外疫情暴发后，也开始向海外出口口罩。因此，今年上半年比亚迪电子口罩收入约 </span><span>85 </span><span>亿人民币。</span></p>
+<p><span>比亚迪电子已经将医疗器械作为公司长期发展的方向，只是医疗相关产品客户认证周期比汽车电子更加长，因而我们预计医疗产品方向将在中长期为比亚迪电子提供增长动力。</span></p>
+<p><span>按照目前海外疫情所处的状态看，我们预计今年口罩收入会占到全年收入的 </span><span>20%</span><span>，并假设明后年，随着疫情在全球缓和，口罩收入会在今年的基础上逐季逐年下降。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200905/7fb464500fd1417aab49b53b5fcaaba4.jpeg" width="800" height="564" /></p>
+<p><span>▲</span><span>比亚迪电子新型智能产品与汽车智能系统收入按业务拆分</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200905/f79bae4d180a4617a00f4f84d4b8d686.jpeg" width="800" height="553" /></p>
+<p><span>▲</span><span>比亚迪电子新型智能产品与汽车智能系统收入在总收入中占比</span></p>
+<p>4、 <span>闻泰科技</span></p>
+<p><span>闻泰科技是在中国 </span><span>4G </span><span>智能手机时代厮杀中存活下来，并且做到了 </span><span>ODM </span><span>龙头的一家公司。而且这家公司是中国四大智能手机最好的合作伙伴之一。在中国品牌持续在海外扩大市占率的时候，这既有来自闻泰的助力，也是闻泰成长的动力。闻泰会同中国手机品牌相辅相成，在海外市场有更多的斩获。</span></p>
+<p><span>在 </span><span>2016 </span><span>年，闻泰科技借壳中茵股份上市成功。这也为闻泰科技带来了足够资金去拓展智能手机 </span><span>ODM </span><span>业务，从而更好的巩固自己的龙头地位。紧接着，在 </span><span>2018 </span><span>年</span><span>-2019 </span><span>年，闻泰大手笔收购安世半导体累计 </span><span>74.5%</span><span>的股权。并在</span><span>2020 </span><span>年上半年，闻泰收购安世半导体少数股权，将股权比例提升到 </span><span>98.2%</span><span>。</span></p>
+<p><span>闻泰在成功迈入千亿级市值的股票的同时，也为公司筹到足够的资金弹药，为后续的开疆拓土奠定基础。闻泰的迅速动作不仅仅是打开未来自己的成长大门，也为中国的半导体行业添砖加瓦。</span></p>
+<p><span>为了适应智能手机行业快速迭代和降低成本的需求，</span><span>ODM </span><span>的厂商越来越受到手机品牌的欢迎。手机品牌可以将相对低端的机型研发设计和组装整个外包给 </span><span>ODM </span><span>厂商，让自家品牌的低端型号也可以快速跟上智能手机品牌的变换潮流。在中国 </span><span>ODM </span><span>行业中，闻泰已经连续多年出货量排名第一。</span></p>
+<p><span>2018 </span><span>年，</span><span>OPPO </span><span>开始将部分机型，以及 </span><span>Realme </span><span>品牌的机型委外给 </span><span>ODM </span><span>厂商。</span><span>OPPO </span><span>的委外机型的出货量从 </span><span>2018 </span><span>年的约 </span><span>1000 </span><span>万部上升到 </span><span>2019 </span><span>年的约 </span><span>6000 </span><span>万部。三星也在 </span><span>2019 </span><span>年第一次将部分低端机型委外给中国的 </span><span>ODM</span><span>厂商。预计这两年，三星和 </span><span>OPPO </span><span>委外的比例将持续增加。而闻泰正是抓住</span><span>2019 </span><span>年 </span><span>OPPO </span><span>和三星这两个客户获得高速成长。根据 </span><span>Omdia</span><span>，未来三星委外的 </span><span>ODM </span><span>机型有望继续提升，从 </span><span>2019 </span><span>年的 </span><span>2600 </span><span>万上升到 </span><span>2020 </span><span>年的 </span><span>6800</span><span>万部。而闻泰是三星最主要的 </span><span>ODM </span><span>厂商。</span></p>
+<p><span>展望未来，我们认为 </span><span>OPPO </span><span>旗下的 </span><span>Realme </span><span>将继续保持较高的 </span><span>ODM </span><span>委外比例。而 </span><span>vivo </span><span>旗下的互联网子品牌 </span><span>iQOO </span><span>在出货量增加之后也有希望采用 </span><span>ODM</span><span>模式。如果未来中美冲突没有缓和的情况下，华为无法采用自家海思的芯片，而不得不采用联发科和高通的芯片，那么华为的 </span><span>ODM </span><span>委外项目有可能再次回涨。因此，我们判断随着中国品牌出海带来的出货量增长，</span><span>ODM </span><span>的比例会进一步增加。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200905/37fb20eca4f9415ea413740602b8b2c1.jpeg" width="800" height="343" /></p>
+<p><span>▲</span><span>主要手机品牌的 </span><span>ODM </span><span>机型出货量</span></p>
+<p><span>预计闻泰的智能手机出货量在 </span><span>2020-2022 </span><span>年都将保持双位数的成长，从</span><span>2019 </span><span>年的 </span><span>1.1 </span><span>亿部成长到 </span><span>2022 </span><span>年的 </span><span>1.65 </span><span>亿部。</span></p>
+<p><span>并且，如三星等客户在 </span><span>2019 </span><span>年的委外项目采用全部外包的方式，即闻泰除了研发生产，还需要负责物料采购，因此闻泰 </span><span>ODM </span><span>业务整体的采购比例也有上升，帮助闻泰的毛利率改善。这会带来闻泰科技单机利润的上涨，从而带动闻泰 </span><span>ODM </span><span>的利润增速高于营收增速。</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200905/09675c7b5128403f8c3a3cf6aea440bb.jpeg" width="800" height="534" /></p>
+<p><span>▲</span><span>闻泰科技智能手机出货量及预测</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200905/7e6237b5ac574a96856bc2437973fbb0.jpeg" width="800" height="561" /></p>
+<p><span>▲</span><span>闻泰科技 </span><span>ODM </span><span>的毛利率及预测</span></p>
+<p><span>2020 </span><span>年上半年，虽然中国 </span><span>5G </span><span>机型出货比例已经达到 </span><span>43%</span><span>，但是 </span><span>ODM </span><span>的机型主要还是以 </span><span>4G </span><span>机型为主。这是由于 </span><span>ODM </span><span>的出货更多集中在中低端机型导致的。但是，从 </span><span>2020 </span><span>年下半年开始，中国的 </span><span>5G </span><span>手机将从上半年的 </span><span>1500</span><span>元档位继续向 </span><span>1000 </span><span>元档位渗透。这将 </span><span>ODM </span><span>厂商带入 </span><span>5G </span><span>智能手机的切换周期。</span></p>
+<p><span>因此，我们预计闻泰科技的 </span><span>ODM </span><span>业务会在 </span><span>2020 </span><span>年和 </span><span>2021 </span><span>年步入量价齐升的上升通道。我们预计闻泰的智能手机平均单价将在 </span><span>2020 </span><span>年和 </span><span>2021 </span><span>年同比上升 </span><span>20%</span><span>和 </span><span>5%</span><span>，在 </span><span>2022 </span><span>年保持平稳。因而，在 </span><span>2020 </span><span>年、</span><span>2021 </span><span>年和 </span><span>2022</span><span>年，闻泰 </span><span>ODM </span><span>收入将同比增长 </span><span>34%</span><span>、</span><span>17%</span><span>和 </span><span>17%</span><span>。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200905/842dd56ebf0f4e2183ceb9ddb0885fc5.jpeg" width="800" height="609" /></p>
+<p><span>▲</span><span>闻泰科技手机平均单价同比及预测</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200905/33f5bf30965b4c28bdeb579d4f0134ef.jpeg" width="800" height="547" /></p>
+<p><span>▲</span><span>闻泰科技 </span><span>ODM </span><span>收入及预测</span></p>
+<p><span>战略收购安世半导体</span>。 <span>安世半导体是原荷兰公司恩智浦集团旗下的标准产品业务分部。目前，安世集团是全球领先的半导体标准器件供应商，主要产品包括分立器件、逻辑器件和 </span><span>MOSFET</span><span>（</span><span>Metal-Oxide-Semiconductor Field-Effect Transistor</span><span>，金属</span><span>–</span><span>氧化物半导体场效应晶体管）器件，下游应用为汽车、工业与能源、移动及可穿戴设备、消费及计算机等领域。根据 </span><span>IHS</span><span>，目前，安世半导体的分立器件、逻辑器件和 </span><span>MOSFET </span><span>器件的主要产品市场占有率均位于全球前三。</span></p>
+<p><span>安世半导体是国内少数可以与欧美、日本等半导体公司，如安森美、英飞凌、罗姆等，竞争的半导体公司。安世半导体的收购也为中国半导体行业的发展拓宽了疆域，加快了国产布局的脚步。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200905/80a510f5851b449891bc17fb8f9675fa.jpeg" width="800" height="144" /></p>
+<p><span>▲</span><span>功率半导体厂商排名情况（</span><span>2017 </span><span>年）</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200905/6bc64ea2176446d298d55d99c072fda0.jpeg" width="800" height="552" /></p>
+<p><span>▲</span><span>安世半导体主要下游应用及客户</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200905/fed026a9e4304a05bf989becdd8fd072.jpeg" width="800" height="321" /></p>
+<p><span>▲</span><span>新能源汽车功率半导体用量拆解</span></p>
+<p><span>安世半导体也开始投入第三代半导体功率半导体器件 </span><span>GaN</span><span>（氮化镓）、</span><span>SiC</span><span>（碳化硅）研发。这两种半导体材料在混合动力和电动汽车、电源和光伏逆变器都有较好的应用和需求。根据 </span><span>Omdia </span><span>的报告，全球 </span><span>SiC </span><span>和 </span><span>GaN </span><span>的功率半导体销售收入将从 </span><span>2018 </span><span>年的 </span><span>5.17 </span><span>亿美元成长到 </span><span>2020 </span><span>年的 </span><span>8.54 </span><span>亿美元。并且在未来十年保持年均两位数的增长。新能源汽车将是最大的应用场景，预计在 </span><span>2024 </span><span>年占据约 </span><span>50%</span><span>的份额。这为安世半导体的长期增长提供潜在动力。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200905/251b71937263404a818f45d38c3540b2.jpeg" width="800" height="304" /></p>
+<p><span>▲</span><span>全球 </span><span>SiC </span><span>和 </span><span>GaN </span><span>功率器件销售收入及预测按应用拆分</span></p>
+<p><span>闻泰在收购安世半导体之后，可以在两个领域帮助安世半导体拓展业务：</span><span>1</span><span>）中国国内市场，</span><span>2</span><span>）消费电子中的智能手机品牌。今年上半年，闻泰科技已经协助安世半导体拿下国内电力系统的订单，为拓展国内市场迈开了第一步。</span></p>
+<p><span>目前安世半导体在英国曼彻斯特和德国汉堡分别拥有一座前端晶圆加工厂。在中国东莞、马来西亚、菲律宾分别拥有一座后端封测工厂。安世半导体也正在国内寻找合适地点扩建 </span><span>12 </span><span>寸晶圆厂以适应未来市场的需求。</span></p>
+<p><span>今年受到新冠疫情的影响，我们预计今年安世半导体的收入会有 </span><span>2%</span><span>的下降。从明年开始，我们估算安世半导体的收入增长在 </span><span>15%</span><span>以上。而国内厂商也正在积极寻找国产替代，我们预计未来 </span><span>5 </span><span>年安世半导体收入的复合增速会保持在 </span><span>15%</span><span>。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200905/76d4eae6aa8740fdb5789456dcdd3e7a.jpeg" width="800" height="485" /></p>
+<p><span>▲</span><span>安世半导体收入及毛利率预测</span></p>
+<p><strong>智东西认为</strong>， 在国家产业政策的支持下，我国智能手机产业从研发设计到生产制造、品牌运营等全产业链环节均取得了快速发展：芯片等核心元器件自主比例不断提高，国产智能手机品牌全球市场占有率不断提升，并成为全球最大的智能手机制造基地。<span>凭借中国市场巨大的基本盘以及复制中国市场的成功经验，包括渠道的建设、品牌力的营造、</span><span>IoT </span><span>产品的联动等方式</span>，现在，中国智能手机品牌不仅可以在印度等发展中地区获得成功，更加可以在发达市场，如欧洲，斩获份额。 中国智能手机代工厂的成本优势、反应速度以及前沿科技将保证中国品牌的手机产品是最具有竞争力的，为中国手机品牌的出海之路保驾护航。</p>
+➜高通联手中国国家地理，用骁龙865助力拍摄中国野生生物高清视频
+http://www.sohu.com/a/416640962_115978	43605
+<p><img src="//p0.itc.cn/q_70/images03/20200905/cb4f0475583b40d98eb2e8bf1d630cd4.png" /></p>
+<p><strong>智东西（公众号：zhidxcom）</strong></p>
+<p><strong>编 | 心缘</strong></p>
+<p>智东西9月5日消息，今日，中国与中国国家地理于在<span>2020</span>年中国国际服务贸易交易会上，共同宣布达成战略合作。</p>
+<p>双方以<span>“</span>用科技的力量，传递生命的力量<span>” </span>为合作主题，利用搭载高通骁龙移动平台尖端影像技术所支持的智能手机，拍摄中国野生生物高清视频短片，向大众呈现生命之美的细腻灵动瞬间，唤醒大众关注自然、关爱生命的野生生物保护意识，践行科技赋能大众及社会公益的使命。</p>
+<p>作为大会<span>“</span>全球服务，互惠共享<span>”</span>主题的完美诠释，高通和中国国家地理的战略合作以创新的合作方式，通过对前沿移动科技的采用，聚合并放大社会公益效应。</p>
+<p><strong>高通骁龙865 5G移动平台是目前业界唯一能够支持8K视频拍摄的移动平台</strong>，凝聚了高通在移动计算领域数十年的研发投入。</p>
+<p>该移动平台集成了最新一代图像信号处理单元，开创性地提供每秒20亿像素的处理速度，可支持拍摄拥有10亿色的4K HDR视频，8K视频、最高达2亿像素的照片，以及960FPS不限时高清慢动作视频，能够展现极致清晰、生动丰富的图像细节，让尖端影像技术走进普通大众。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200905/aafeaf136ceb425894be5d8aaa8c1e9f.jpeg" width="800" height="450" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>双方合作从今年六月起己经启动，中国国家地理已派出四支专业队伍深入自然秘境，首次使用搭载了高通骁龙<span>865 5G</span>移动平台支持领先影像技术的<span>5G</span>智能手机，拍摄出一系列中国野生生物高清视频短片，记录下大熊猫、藏狐、金丝猴等珍稀野生动物各种令人心动的瞬间，其画质非常清晰细腻。</p>
+<p>本次发布会上播放了这次拍摄制作的作品之一<span>——</span>《雪山萌猴》，为观众带来了一场震撼心灵的视觉盛宴，诠释出科技与生命之美的完美融合。</p>
+<p>此外，由高通公司作为影像技术支持和独家赞助商的中国国家地理首届中国野生生物视频年赛也已于上月在Bilibili网正式上线（https://www.bilibili.com/blackboard/activity-lvcyjC_y4.html）。</p>
+<p>该年赛由国内外顶尖专业评委进行评选，并将于今年底揭晓最终获奖作品。年赛还专门设了高通骁龙手机特别奖，鼓励大众进行不同视角的野生生物视频拍摄和创作。</p>
+<p>未来，双方将基于此次战略合作，持续推动“优质内容+领先科技”的融合发展，唤醒更多人对自然生态的关注和行动，在万物互联的5G时代，开启生态环境和生物保护的新篇章。</p>
+<p>高通公司全球副总裁侯明娟女士表示：“移动影像技术的创新，一直是高通骁龙移动平台关注和投入的领域。在骁龙影像技术和5G的赋能下，更多人能使用随身携带的手机，便捷地拍摄高质量照片和8K视频，捕捉、记录并分享生活的美好瞬间。同时，广泛的大众创作也将为超高清视频产业贡献丰富内容。”</p>
+<p>《中国国家地理》杂志社社长兼总编辑李栓科先生认为：“与高通公司的这次合作，既是一次全新的技术尝试，也是一次意义深远的科学探索。”</p>
+<p>在他看来，5G时代来临，视频技术发展如火如荼，人人争当传播主角。搭载高通骁龙移动平台的5G手机，支持8K和HDR品质视频拍摄，能够带来超乎想象的精彩视频。这些高清质量视频影像，可以让我们得以身临其境地感受这个星球的壮丽和丰富，也让更多的普通人参与到野生生物影像的拍摄和分享中来。</p>
+➜苹果将推出首款自研GPU！明年下半年落地iMac
+http://www.sohu.com/a/416669326_115978	63226
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200906/44680691956a40148e74bafe0c7e1fd0.png" max-width="600" /></p>
+<p class="ql-align-justify"><strong>智东西（公众号：zhidxcom）</strong></p>
+<p class="ql-align-justify"><strong>编 | 温淑</strong></p>
+<p class="ql-align-justify">智东西9月3日消息，据台媒工商时报援引业界消息，苹果或将配合其首款自研Mac芯片Apple Silicon，推出自研的GPU。这款GPU代号为Lifuka，或将搭载于2021年下半年推出的iMac，与苹果自研的Mac处理器Apple Silicon一样，由台积电5nm制程工艺代工。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200906/fe7aeac0d2ab4184b9213b4e6da07872.png" max-width="600" /></p>
+<p class="ql-align-justify">▲苹果新一代iPhone及Mac核心芯片一览（图源：《工商时报》）</p>
+<p class="ql-align-justify">在今年6月份举办的WWDC大会上，苹果CEO库克宣布将在今年年底发布搭载其自研5nm处理器Apple Silicon的Mac产品。如果本次报道的Lifuka GPU确有其事，则意味着苹果自研芯片的“版图”被进一步补全。此前，苹果曾推出自研CPU，Lifuka或将是苹果首款自研GPU。</p>
+<p class="ql-align-justify">据报道，Lifuka GPU或将提供更好的每瓦性能和更高的运算效率，或支持基于tile的延迟渲染功能（tile-based deferred rendering），可让应用开发者开发功能更强大的专业应用软件和游戏软件。</p>
+<p class="ql-align-justify">据悉，台积电研发了两代5nm工艺，目前尚不清楚苹果的Lifuka GPU将采用哪一代工艺生产。台积电第一代5nm工艺代号N5，已于今年第一季度开始大规模投产；其第二代5nm工艺代号N5P，计划在明年实现量产。如果N5P工艺能够在明年上半年实现量产，则很有可能被用于生产苹果自研的Lifuka GPU。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200906/601dbf7379f5407ca4f569268b67ebb9.png" max-width="600" /></p>
+<p class="ql-align-justify">▲台积电制程工艺简介</p>
+<p class="ql-align-justify">来源：工商时报</p>
+➜小米路由和小爱同学开山功臣唐沐创业，探秘如影智能闭关一年成果
+http://www.sohu.com/a/416669422_115978	63244
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200906/567b75b2f5854cafb6beea5416af61e9.png" max-width="600" /></p>
+<p class="ql-align-justify"><strong>智东西（公众号：zhidxcom）</strong></p>
+<p class="ql-align-justify"><strong>文| 储信仪</strong></p>
+<p class="ql-align-justify">智东西9月5日报道，昨天，小米前生态链副总裁唐沐在他新创办的公司——如影智能的会议室里，介绍了他创业的心路历程和思考，并对10天后的如影品牌发布会的内容做了一些剧透。</p>
+<p class="ql-align-justify">去年10月，曾在腾讯CDC把控所有软件产品的用户体验设计师，开创了小米路由器、小爱音箱的唐沐突然在微博上“失踪”了。今年8月，他携手新创立的公司重新出现，带来了一系列智能家庭产品。</p>
+<p class="ql-align-justify">▲唐沐微博官宣创业</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200906/28cec3172d4f4e24beb76f74244174d2.png" max-width="600" /></p>
+<p class="ql-align-justify">如影智能于2019年10月23日成立，专注AIoT领域，研发前沿、高调性的全屋智能产品及服务。如影创立11个月，已从实地地产获千万天使轮融资，并将在不久后进行A轮融资。</p>
+<p class="ql-align-justify">智东西实地探访了如影智能公司的产品样板间以及研发工作室，亲眼见到了如影准备在9月15日品牌发布会上呈现的智能厨房设备，品尝了由如影咖啡机器人制作并拉花的拿铁咖啡。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">唐沐说：“我不想做我自己做过的、别人做过的东西，这次创业就是要在新领域找到一个新的突破口。”</p>
+<p class="ql-align-justify">一、机器臂能拉花能做饭，中控面板“上墙”联动全屋智能</p>
+<p class="ql-align-justify">在如影智能的办公区内，陈列着两个咖啡机器人。只需要扫描咖啡机上的二维码，用户就可以自己在手机上下单，选择咖啡品种和拉花样式，机械臂式的机器人就可以自主做出对应要求的咖啡。</p>
+<p class="ql-align-justify">▲如影办公室内陈列的两台咖啡机器人以及由机器人做出的咖啡拉花</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200906/df4d4e4ea6f94c1c856fe7d9355d89bd.png" max-width="600" /></p>
+<p class="ql-align-justify">如影的咖啡机器人在经过不断练习后，已经能做到使用拉花杯稳定做出郁金香、爱心、叶子、天鹅等不同种类、不同复杂程度的拉花了。以往的咖啡师要能稳定做出成熟的咖啡拉花，至少需要练习几个月，而唐沐说如影的咖啡机器人学一个拉花样式只需要6小时。</p>
+<p class="ql-align-justify">▲咖啡机器人拉花</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200906/2ca58a0fd6ed4defa379b6d60ccd2374.gif" max-width="600" /></p>
+<p class="ql-align-justify">目前如影机械臂的重复定位精度已经达到±0.1mm，这意味着，搭配机械臂视觉、运动控制算法、感知决策系统，机械臂已经可以精准、稳定的复刻顶级人类咖啡师的技艺。</p>
+<p class="ql-align-justify">如影的工作人员说，如果在咖啡机中装满料，咖啡机器人大约能做出17杯咖啡。如影咖啡机器人目前主要以地产为载体，已经在重庆等地的售楼处落地使用。</p>
+<p class="ql-align-justify">如影让咖啡机器人做拉花的目的是为了验证机械臂的操作精度，以筹备他们的重磅产品：智能厨房。当踏进如影的研发工作室时，能明显闻到烹饪的牛排味道。</p>
+<p class="ql-align-justify">如影的智能厨房项目产品目前还是个外观像橱柜和灶台一体机的庞然大物，但它已经具备了机器人烹饪和人机协作烹饪两种方式。进行机器人烹饪的机械臂在不用时会收到壁橱内，在需要烹饪的时候会伸展开进行工作。</p>
+<p class="ql-align-justify">如果选择机器人烹饪模式，用户设置好需要的菜品即可直接充当“甩手掌柜”，等待10分钟左右就可以享受美味的牛排。然而如影并不想直接剥离用户烹饪的乐趣，如果选择人机协作烹饪模式，用户可以在智能橱柜的左侧屏幕上了解烹饪所需的食材、菜品营养成分、烹饪时间以及菜品的最终形态。智能橱柜会“手把手”教导烹饪，直至用户做出美味菜肴。</p>
+<p class="ql-align-justify">如影的智能厨房预计会在明年5月落地量产，到时候橱柜的体积会缩小，其内部可利用空间也会更大。现在这个橱柜尚且还只会煎牛排、煎鸡蛋、做西蓝花，但是如影的工作人员说，在9月15日的发布会上，它会展现出10种菜肴的做饭技能，未来通过学习，它甚至可以“煎炒烹炸”样样精通。</p>
+<p class="ql-align-justify">如影的产品样板间与家庭非常类似，在门边墙上配有一个“上墙”的inSight面板，作为全屋智能的中控。</p>
+<p class="ql-align-justify">样板间中的智能门采取一体化设计，将人脸识别、指纹识别的智能门锁、传统的锁孔、猫眼等集成在门上，杜绝了补丁式智能的出现。</p>
+<p class="ql-align-justify">▲如影一体化智能门</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200906/a25201242edc48e8832f489e1b23fe9c.png" max-width="600" /></p>
+<p class="ql-align-justify">在样板间的客厅位置，如影摆放了一个沙盘，有点类似于AR的设计，可以通过屋顶上的投影呈现出3D的画面。</p>
+<p class="ql-align-justify">卧室的床头也配备了一个小版本的inSight，这个小版本的inSight同样也支持声音控制，同时也是一个网关，目前已经接通了小米的IoT平台，这也是小米第一次对外授权IoT设备。使用inSight操控进行“拉上窗帘”等操作使用本地连接，任务执行速度会非常快。</p>
+<p class="ql-align-justify">如影的产品样板间内还有一个健身房，内部陈列着一个纯白色非常有艺术风格的动感单车，动感单车的车把前方配有一块34寸的大屏，大屏播放的内容与蹬车场景匹配，屏幕两侧还有气孔可以吹出风，模拟真实的骑车场景。</p>
+<p class="ql-align-justify">唐沐调用了自己以前在小米做VR头显的想法，正在把动感单车与AR结合起来，让用户可以不用戴头显，就能在家体验到在真实场景骑车的感受。</p>
+<p class="ql-align-justify">尽管现在看起来，如影样板间内的产品似乎不可能出现在一家公司，但是唐沐认为这才是他脑海中真正全屋智能需要拥有的东西。</p>
+<p class="ql-align-justify">二、20年用户体验经验做全屋智能套装</p>
+<p class="ql-align-justify">唐沐说，以往全屋智能的概念普遍只是开关面板、遥控器，但是唐沐所想的全屋智能需要有更丰富的内涵和更智能的产品。</p>
+<p class="ql-align-justify">唐沐在创业之前的20年基本都在做用户体验，先是在腾讯，后是在小米的从业，都让唐沐受益颇多。唐沐说，他在马化腾和雷军身上都看到了他们想把用户体验做得更极致，因此他也想把智能家居做得更极致，不止要做产品，更要做好“产品+服务”的联动。</p>
+<p class="ql-align-justify">为了做好想要的创新产品，唐沐召集了以前在腾讯和小米的合作伙伴加入团队，并且吸引原苹果中国AI团队的高管到如影做CTO。此外，如影还有一个20人的中层团队，其中部分工作人员来自猎豹、旷视等AI独角兽企业。唐沐用一年的时间，让公司从1个人扩展到近200人，研发出了十几款全屋智能产品。</p>
+<p class="ql-align-justify">唐沐说，他之所以选择地产作为投资方，看中的不止是资金，更重要的是场景。他需要地产提供酒店等实验场景供如影测试产品效果，场景的价值比资金更大。</p>
+<p class="ql-align-justify">此外，唐沐还向智东西透露，他决心将机械臂带入全屋智能也是受到了投资人——实地地产董事长张量的启发。以唐沐以往做产品的思路，不会一开始就做这样一个全新的产品引入全屋智能，但是他后来认为这是一个新领域的突破口：把以往科研中能作为民用、家用的产品价格降下来，产品的前景将会很好。</p>
+<p class="ql-align-justify">与此同时，唐沐还说只要将机器臂的智能厨房做得足够小、成本足够低，就可以落地，如影正在计划近期在三亚落地100套左右这样的智能厨房。</p>
+<p class="ql-align-justify">唐沐说如影的团队是全链条的研发团队，这样的团队会在产品的交付、产品、成本上占有优势。</p>
+<p class="ql-align-justify">如影的研发团队在未来的18个月会集中做两个事情：一个是inSight面板，另外一个是inSight周边的全屋智能产品。</p>
+<p class="ql-align-justify">▲如影全屋智能产品版图</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200906/16db30fdc63a4d8ca94086842a0964ad.png" max-width="600" /></p>
+<p class="ql-align-justify">唐沐为了提升inSight的连接能力，集成了大量的网关，并且还搭载了NFC功能，即使是新买的产品，只要触碰一下inSight的右上角，就可以进行无缝配对了。</p>
+<p class="ql-align-justify">▲inSight分布式家庭控制中心</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200906/89001ca93c734970bf28a6115bb72e5b.png" max-width="600" /></p>
+<p class="ql-align-justify">此外，唐沐带领团队将消费类产品进行机器人方向的尝试，也就是包括商业和家用机械臂机器人和操作系统的inBot，机械臂0.1mm的操作误差已经能运用到医疗领域，那么完全可以胜任家庭中的很多工作。</p>
+<p class="ql-align-justify">唐沐还谈到，如影会连接小米、京东、苏宁、美的等IoT平台，这种连接是很多大厂做不到的，因此未来如影的产品上可能会出现双贴牌现象的出现。</p>
+<p class="ql-align-justify">唐沐还会在9月15日推出智能管家Edison，这次的智能管家与以往的云助手不同，他是个男生。唐沐认为男性助手可能更适合管家的形象。</p>
+<p class="ql-align-justify">此外，唐沐将会重点描述产品的光体验。他在小米任职的时候从数据中了解到，用户运用语音助手控制的设备没有那么多，用户大量使用的80%的IoT设备控制基本都依赖对光的控制，这也就是他侧重做好光体验的原因。</p>
+<p class="ql-align-justify">最后，他还会推出一个全屋智能套装Aio Box，目的是通过一个套装解决一个房间全部的需求。</p>
+<p class="ql-align-justify">▲屋智能套装Aio Box</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200906/3c8726f19261431b81fb41884930cccd.png" max-width="600" /></p>
+<p class="ql-align-justify">结语：由被动智能转向主动智能</p>
+<p class="ql-align-justify">唐沐认为全屋智能控制中心的未来发展有三方面：一是有屏幕，二是能7×24小时开机，三是用户是否觉得刚需。但在他的脑海中，未来的全屋智能不存在一个单独的中心，交互和网关都会是分布式的，以方便贴合用户时刻的需求。</p>
+<p class="ql-align-justify">除此之外，唐沐认为真正的全屋智能不是需要回家，唤醒云助手才可以执行智能任务，而是当用户开车回车库的时候，屋内的空调就能联动，知晓主人的归来自动开启。除了全屋智能，唐沐认为社区智能的维度也很重要，比如一家的火警警报响了，这家周围的邻居也需要同时收到警报，这是之前的智能家居产品做不到的。</p>
+<p class="ql-align-justify">我们期待如影在发布会上推出的其他全屋智能新品，也期待主动智能时代尽快到来。</p>
+➜高通XR生态伙伴大会：VR/AR半壁江山疫情后重聚，18个项目斩获应用创新奖
+http://www.sohu.com/a/416669148_115978	63255
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200906/f527c6e543df49b5ba295dbb18bade8b.png" max-width="600" /></p>
+<p class="ql-align-justify"><strong>智东西(公众号:zhidxcom)</strong></p>
+<p class="ql-align-justify"><strong>文｜漠影</strong></p>
+<p class="ql-align-justify">智东西9月5日报道，今天，由高通公司和中国电信联合举办的XR生态合作伙伴大会暨第二届XR创新应用挑战赛颁奖在江西南昌市举行。</p>
+<p class="ql-align-justify">这也是疫情之后，国内VR/AR等XR产业核心玩家的一次重聚，带来了诸多最新的产品和应用展示，同时在大会的几个专场论坛上，对产业应用、创投等方面进行了最新的分享。</p>
+<p class="ql-align-justify">大会以“开放共赢 拥抱5G”为主题，数十家XR设备厂商、运营商、平台供应商、内容提供商、当地政府等XR产业链上的核心玩家，共同探讨产业发展趋势、XR与5G等移动技术的融合，以及XR产业的未来发展机遇。</p>
+<p class="ql-align-justify">智东西也在现场体验了多家产品，并与高通相关负责人进行了深入沟通。以下是智东西参与此次XR生态合作伙伴大会上带来的干货信息。</p>
+<p class="ql-align-justify">一、高通：XR平台支持设备超30款 覆盖多个领域</p>
+<p class="ql-align-justify">作为大会的主办方，高通全球副总裁侯明娟在开场的讲话中提到，这是高通连续两年举办XR创新应用挑战赛，同时会整合硬件厂商、渠道商、开发者资源，创造出更多XR应用，推动XR产业发展。</p>
+<p class="ql-align-justify">▲高通全球副总裁侯明娟</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200906/7f68585cf87a4fa88c0befab9fb45446.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">今年的比赛共收到来自全球的XR公司和团队超过200个参赛作品，涵盖教育、5G应用等多个领域。由于受到疫情影响，高通全旗副总裁全球XR业务负责人司宏国，通过视频发来了他的分享，“司宏国非常关注大会，也很希望能现场参与”侯明娟说。</p>
+<p class="ql-align-justify">司宏国在视频分享中提到，高通基于骁龙平台打造的XR平台，已经支持超过30款设备，也在制造、教育等行业领域广泛使用。5G配合骁龙855、865构建的XR平台带来新的体验。同时高通推出了XR HDM适配计划等来扶持开发者，推动产业发展。</p>
+<p class="ql-align-justify">▲司宏国的视频分享</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200906/12e8baacaafe4e1d9106551142463eb1.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">司宏国还特别强调，高通希望在内容、技术、平台商，OEM、ODM厂商伙伴官方合作来构建XR产业生态。</p>
+<p class="ql-align-justify">二、业内大咖分享：VR/AR逆势发展势头超预期</p>
+<p class="ql-align-justify">随后，来自江西省南昌市政府和业界的多位核心企业负责人，分享了各自产业方面的洞见；在充满不确定性的2020年，还是能看到，VR/AR相关产业发展的脚步不仅没有停滞，反而有所加速。</p>
+<p class="ql-align-justify">南昌市委常委副市长王万征在讲话中提到，2016年江西省和南昌市拉开了VR产业发展的大旗，高通2017年提出XR概念，南昌市成为VR创新创业最活跃的地区之一。</p>
+<p class="ql-align-justify">他认为南昌的核心优势在三点：一是国家层面的高度重视，目前已经连续两年世界VR产业峰会在南昌举行，并且永久落户南昌。二是江西省政府的高度重视，将虚拟现实列入地区核心发展战略。省委书记，省长亲自参与VR产业大会举办、产业发展谋划。预计到2023年，南昌VR/AR产业规模将超过1000亿。三是高端产业生态的基础，比如华为VR南昌研究所的落地，和高通打造VR创新中心，还有和北航、北理工、西安交大等相关院校、研究机构的合作。</p>
+<p class="ql-align-justify">目前南昌已经吸引了多家VR/AR产业链相关世界500强、中国500强企业落地。</p>
+<p class="ql-align-justify">号百控股总经理陈之超则提到了5G对VR产业发展的助力，他说，中国电信与高通联合举办这次XR创新应用大赛，从将近200多个项目中选出60多个进入决赛，中国电信将提供版权采购和宣发的支持。</p>
+<p class="ql-align-justify">今年是5G发展的第二年，也是蓬勃发展的起点。中国电信在加大5G基建的同时，在推动5G应用。参赛作品包含了艺术与市场需求的结合，中国电信和高通等企业已经成立了VR内容联盟。</p>
+<p class="ql-align-justify">号百控股天翼云VR负责人王浩具体讲到了天翼云VR的情况，作为中国电信旗下专注VR内容运营的平台，核心聚焦三大领域：教育、娱乐、工业互联网。</p>
+<p class="ql-align-justify">▲天翼云VR联名终端</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200906/cab7b6c459964b99aa07cdcae0bd4fe8.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">天翼云VR云平台上的内容，涵盖多个To B、To C应用场景。现场王浩举了几个例子，比如在成都宽窄巷子落地的VR新零售案例，在疫情中上线直播雷神山、火神山修建的VR慢直播等等。</p>
+<p class="ql-align-justify">王浩称，中国电信会在多个方面赋能开发者，比如项目资源、资金、宣传、规模增长、收入提升、知名度提升等。核心基于中国电信的多方面优势，比如央媒资源、线下渠道、亿级规模的用户、DICT集成公司，包括31省市政企资源。</p>
+<p class="ql-align-justify">高通产品市场总监艾和志讲到了高通技术平台最近几年的发展，他认为5G发展时间点比4G整体将提升两年，据权威机构预计，2023年5G连接数将超过10亿。XR将是5G 时代NO.1的应用场景。作为全球首个5G XR平台，高通骁龙XR2平台性能走在业界前列，具备支持高达7路等并发摄像头，支持90Hz的刷新率等特点。同时还实现了AI技术上的巨大提升，比如3D重建、景深理解等。</p>
+<p class="ql-align-justify">▲高通骁龙XR2平台</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200906/5f02e0b3e4ff44ff9a49b7b0272f487f.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">作为业界终端产品代表，Pico公司副总裁祖昆仑从从业者角度看到了VR/AR产业最近表现活跃的地方。</p>
+<p class="ql-align-justify">她说，虽然今年遇到疫情的影响，但XR产业迎来突破性的发展。比如，Steam VR用户活跃率占总体1.93%，达到270万，7月更是创历史新高；6Dof和4K技术的应用大大提升了用户视觉和交互体验；此外，IDC预计，2020～2024 XR CAGR（年复合综合增长率）仍将达到76.9%，中国VR市场容量保持世界领先，还是IDC数据，2020中国VR市场占全球市场份额38.3%，为支出规模第一的国家，其次是美国、西欧和日本。</p>
+<p class="ql-align-justify">▲Pico公司副总裁祖昆仑</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200906/a1744dbb5f7640849a35e630955988ec.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">她认为，VR生态正正向促进硬件销量，比如，Steam VR平台大作拉动活跃用户大幅上涨；索尼旗下的PSVR平台正持续积累IP大作；FaceBook旗下的Quest一体机成为重要游戏分发渠道，营收超过一亿美元。</p>
+<p class="ql-align-justify">最后她提出，开发者真正的竞争开始了，从技术应用到内容创意上都是竞争的关键点。她还发现，本次大赛开发中对6Dof移动平台表现积极，约70%的开发者选择Pico Neo 2六自由度VR一体机作为开发样机。</p>
+<p class="ql-align-justify">影创公司董事长孙立在分享中提到，他们昨天在南昌揭牌了高通、影创创新中心。并仔细分析了5G能给XR带来的体验提升，可以具体到：高分辨率、无限连接、超长续航、空间级交互、MTP 8ms无明显晕动症，这些都比传统的XR技术平台和体验有了质的提升。</p>
+<p class="ql-align-justify">▲影创公司董事长孙立</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200906/90b216ca7333479eb3d2d6efc243ca41.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">另外他举了几个典型的应用场景，比如5G全息会议；5G+XR游戏；5G云渲染BIM系统，凭借5G、边缘云渲染，为XR设备提供精度更高的BIM系统；5G云化全息诊疗，实现从术前规划等全流程辅助。</p>
+<p class="ql-align-justify">孙立还预告称，在今年的世界VR产业大会上，将发布首个XR2平台混合现实设备。</p>
+<p class="ql-align-justify">三、现场体验：体积小了，体验更好了</p>
+<p class="ql-align-justify">在大会现场，国内头部的XR相关厂家基本都带来了自己的最新设备，我们也现场分别体验了一番。</p>
+<p class="ql-align-justify">▲智东西体验XR设备</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200906/70841e989fb24961b9355e37417b2998.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">其实智东西早在2016年，就曾通过举办首届全球VR/AR创新峰会，将还未规模销售的微软HoloLens、FaceBook旗下的Oculus等AR/VR设备带到国内供业内人士体验。</p>
+<p class="ql-align-justify">四年过去了，VR/AR产业虽没有那么风头紧，但取得的进展有目共睹。通过体验Pico、七星易维、3Glasses、影创科技等公司的VR和AR、XR产品，让我印象深刻的是，大家产品的体积普遍变小了，佩戴的负重感就没有那么强了。</p>
+<p class="ql-align-justify">同时在体验感受上，视频画质和交互方面都有不小提升，多个产品已经开始尝试通过双目视觉，实现“裸手”操作，虽然还算不上完美，但已经走出重要一步。</p>
+<p class="ql-align-justify">另外也发现一些仍需改进的地方，比如虽然个头小了不少，但有些还是偏重，还有一些发热比较明显。</p>
+<p class="ql-align-justify">整体上看，外观上可以看到多家的产品都在在朝一个大致相同而且是业界普遍达成共识的方向发展。</p>
+<p class="ql-align-justify">四、XR平台将有其特有的节奏</p>
+<p class="ql-align-justify">在采访交流中，智东西同高通中国区XR业务负责人 郭鹏进行了深入交流，比如我们发现，体验现场的设备所使用的运算芯片，从高通骁龙835、到845、855都有，不像同代的手机那么集中。</p>
+<p class="ql-align-justify">郭鹏认为，这并不是一个特殊的现象，XR产业的现状决定了，芯片不会像手机迭代那么快。同时，XR是一个发展的行业，芯片的数量也是和手机行业不可比的，VR发展相对靠前一些，AR晚一些，技术和应用决定了会采用不同的平台，包括CPU，XR的芯片方案会有其不同的节奏。</p>
+<p class="ql-align-justify">此外，沟通中还聊到，5G应用场景现在在个人用户中还不普遍，在应用对推动上有什么策略，郭鹏提到，他们正在推动一个XR 5G适配计划，更好地实现5G环境中的应用。</p>
+<p class="ql-align-justify">我前面提到的发热问题，郭鹏也给出了他的看法，他说，高通XR的功耗比本身是很不错的的，发热的原因有很多种，比如同一个算法跑在不同的平台发热量也不一样，所以高通也在推动相关的平台，将算法移植后，能耗等方面能保持更好的水平。</p>
+<p class="ql-align-justify">五、十八个项目获得大赛相关奖项</p>
+<p class="ql-align-justify">本届大赛分为VR游戏组、VR应用组、VR教育组、VR行业组、AR行业组和天翼5G XR组共六个赛道。</p>
+<p class="ql-align-justify">如前所述，大赛先后收到来自海内外XR领域公司和团队提交的200多个参赛作品，最终有18个优秀参赛作品分别获得本届大赛白金奖、金奖和银奖，活动现场为优秀获奖作品举进行了颁奖。</p>
+<p class="ql-align-justify">▲颁奖典礼</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200906/f948bf6b167c4c16947a55552dd203aa.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">获奖作品内容所覆盖的领域丰富，中国电信还会为此次参赛团队和作品提供更多支持，包括中国电信的版权采购和推广资源支持等。</p>
+<p class="ql-align-justify">结语：从爆炒的投资赛道到小火慢炖的XR产业</p>
+<p class="ql-align-justify">通过这次参加高通XR产业生态大会，走访江西南昌市相关企业，可以感受到，VR/AR产业正在进入一个稳扎稳打的发展新阶段。</p>
+<p class="ql-align-justify">从4～5年前过火的创业风口，变成小火慢炖的创新产业。</p>
