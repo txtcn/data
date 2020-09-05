@@ -1,0 +1,110 @@
+➜如何用Oculus Quest将自己公寓打造成MR科幻游乐场
+http://www.sohu.com/a/414568793_213766	3063
+<p class="ql-align-justify">（<strong>映维网 2020年08月24日</strong>）从《星际迷航》的全息甲板到《银翼杀手》的全息投影，人类对混合现实的浪漫幻想从未止息。随着科技的不断进步，我们在实现所述愿景方面已经取得了长足的进步。实际上，利用微软的HoloLens，Facebook的Oculus Quest，以及苹果的ARKit等工具，社区正在为靠近这个科幻未来而进行一系列的探索与拓荒。</p>
+<p class="ql-align-justify">日前，Fanbank（专注于为中小商家提供用于在线销售，个性化定价和自动化客户忠诚度管理的SaaS解决方案商）的首席技术官斯科特·盖耶（Scott Geye）就通过博文介绍了他是如何用Quest和Unity等工具制作了一个炫酷的混合现实公寓。他表示，希望自己的分享能够鼓励大家天马行空地进行创新和尝试。下面是映维网的具体整理：</p>
+<p class="ql-align-justify"><strong>我的混合现实公寓</strong></p>
+<p class="ql-align-justify"><strong>1. 如何用Oculus Quest和Unity创建一个混合现实游乐场</strong></p>
+<p class="ql-align-justify">在过去的数年里，我越来越迷恋下一个通用计算平台是什么。同时，我越来越对这个未来所需的时间感到沮丧。作为一名软件工程师，我只想开发出酷炫的产品，但我只能使用已有数十年历史的技术，或尚属于萌芽阶段、可能永远无法突破的新平台。我希望开发出惊人的增强现实/虚拟现实/混合现实应用程序，而我只需一副价格合适，视场宽广，双手/世界追踪能力强的轻型AR眼镜。我可是在看着你哦，苹果和Facebook。</p>
+<p class="ql-align-justify">但目前可用的只有位于沉浸式频谱一端的移动AR，以及位于另一端的VR头显（除非你愿意花一大笔钱购买少有人能承受的设备）。当谈到在所述平台构建软件时，你会发现很难实现酷炫的游戏和新奇的体验。当我的想象力被手机屏幕的方框，或头显与周围环境的断离所粉碎时，我放弃过不止一个原型。</p>
+<p class="ql-align-justify">所以，当我“耐心地”等待新一代设备上市时，我决定先使用现有的设备来实现我理想中的功能：Oculus Quest。我想看看将现实公寓映射成一个虚拟副本是否能给我一种真正的混合现实感，并允许我有效地“试用”当今硬件所无法支持的应用程序。</p>
+<p class="ql-align-justify">在这篇教程中，我将向你介绍我是如何一比一地映射真实公寓，并在Unity中制作虚拟版本所有步骤。我喜欢用Mac，所以一切都将以Mac为中心，但同样的步骤应该适用于Windows的Unity。如果你是一名Unity新手，甚至不是开发者，请不要担心，因为相关步骤不涉及编码，所以像这样的项目是一个非常棒的学习方式。</p>
+<p class="ql-align-justify">在后面的教程中，我将使用我们在这里构建的平台来探索将物理和虚拟相结合的新应用程序。特别感谢格雷格·麦迪逊（Greg Madison）和昆汀·瓦伦博伊斯（Quentin Valembois）给我的灵感，以及帮助我开始的诀窍。</p>
+<p class="ql-align-justify"><strong>2. 测量和绘制你的平面图</strong></p>
+<p class="ql-align-justify">下面开始吧。如果你拥有房间的详细平面图，你已经领先一步。否则，你只能像我一样自行测量每一堵墙壁。传统的卷尺并不能解决所有问题，而诸如iOS搭载的AR测量应用同样没有给我带来好运。最后我购买了一个激光测量设备，并尝试在更远的距离获得更高的精度。这个装置和广告描述一样，但我发现最大的问题是，墙壁并不像我预期的那样笔直。不仅墙壁之间不是完全垂直，甚至墙壁本身都是呈现一定的波浪状，而这影响了激光的读取扫描（专业提示：要获得更佳的视线，你可以在激光和墙壁之间放置书籍）。最后我选择了结合激光测量和传统卷尺，并降低了我对完美的期望。一旦获得了可用于Unity的基本模型，你就可以进行虚拟漫游，并在需要的地方进行调整。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">测量时，你可以使用任何二维绘图程序（我用的是Graphic），甚至是老式的绘图纸来绘制平面图。当我们将平面图输入到Unity时，我们需要确保比例正确。在现实世界中，一个单位等于1米，所以我建议用厘米进行测量，然后选择一个比例尺来绘制，这样得到的图像不会太大（如1个像素等于1厘米）。即使你的房间很长，你都要确保画布的尺寸是一个完美的正方形。因为将一个正方形映射到Unity对象会更加容易。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200824/6534e61b926244cfa08e632d397f7034.png" max-width="600" /></p>
+<p class="ql-align-center">我的公寓的2D平面图</p>
+<p class="ql-align-justify">当完全画好房间后，你还需要在平面图之外画一条100厘米的线。稍后我们会使用这条线来帮助我们正确缩放平面图。</p>
+<p class="ql-align-justify">现在将平面图导出为PNG，然后仔细检查文件，确保背景为白色且不透明。当我们进入三维建模步骤时，这会令一切变得更简单。</p>
+<p class="ql-align-justify"><strong>3. 设置Unity以进行VR开发</strong></p>
+<p class="ql-align-justify">如果这是你第一次建立虚拟现实项目，建议你遵循这个教程进行设置。完成教程后，你应该已经完成以下操作：</p>
+<p class="ql-align-justify">其中有一些繁琐而费时的步骤，但一旦完成，你的项目和你的Quest就算是为本教程的其余部分做好了准备。</p>
+<p class="ql-align-justify"><strong>4. 在Unity绘制平面图</strong></p>
+<p class="ql-align-justify">打开Project视图并将平面图文件拖放到“Assets”文件夹中，或通过右键单击“Assets”文件夹来执行导入。</p>
+<p class="ql-align-justify">接下来，创建一个新材质并将其命名为Floor Plan。然后单击材质Inspector的Albebo，并从文件选择器中选择平面图图像。</p>
+<p class="ql-align-justify">现在在场景中创建一个新平面，如有必要，调整平面，使顶部朝向Y方向。将新的平面图材质拖到平面上方以进行应用。现在你应该可以在场景中看到平面图。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200824/590fd3e72ed446f68e1cbca779a78a64.png" max-width="600" /></p>
+<p class="ql-align-justify">接下来创建一个新的立方体。默认情况下，立方体在每个维度上的比例都是1米，我们将它作为参考来正确缩放平面图。将立方体移到我们先前在平面图上绘制的1米线旁边，然后缩放平面图，令1米线与立方体的边缘相匹配。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200824/cfda8271a04e4cadbdbbe5ce5fd1efab.png" max-width="600" /></p>
+<p class="ql-align-justify">现在你的平面图已经正确缩放，我们需要将二维线图转换为三维对象。我建议使用Unity的ProBuilder来实现这一点。这是一个易于学习的简单工具，它提供了大量优秀的功能，当我们后面想要对房间中更复杂的部分建模时，我们就可以进行使用。下面我们设置ProBuilder。这里有一个介绍基础知识的入门视频。</p>
+<p class="ql-align-justify">从ProBuilder菜单选择New Poly Shape，并在每个角围绕房间的周长单击，从而为与平面图匹配的新形状创建顶点。连接完所有墙壁后，你可以单击“Edit Poly Shape”以拉直任何不适当的线。</p>
+<p class="ql-align-justify">我们现在可以将二维平面图转换为三维房间。选定新形状后，可以通过在“Extrusion”字段的Inspector中输入与房间高度（以米为单位）相匹配的新值，然后进行拉伸形状（我的房间是2.8）。现在你应该会看到一个从外观像是你房间的实体。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200824/f995f0c1181b4b3f8a14c38199ca00b0.png" max-width="600" /></p>
+<p class="ql-align-center">挤型后的平面图</p>
+<p class="ql-align-justify">默认情况下，Unity渲染从对象外部反弹的光，但我们希望像在内部一样查看对象。我们不必重建单独的对象来表示墙壁、地板和天花板，我们只需在Inspector中勾选Flip Normals即可。这将绘制对象的内部，而现在我们可以在房间对象中放置camera、照明和对象，并从内部看到它的样式。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200824/a098913141114f08bd72bc52e82c0c7a.png" max-width="600" /></p>
+<p class="ql-align-center">翻转法线的挤型平面图</p>
+<p class="ql-align-justify"><strong>5. 对齐头显在真实世界的位置和虚拟世界的位置</strong></p>
+<p class="ql-align-justify">这成为了最棘手的部分，因为你无法提前保证头显在物理空间中的位置与camera在虚拟空间中的位置相匹配。</p>
+<p class="ql-align-justify">这里涉及大量的猜测和检查，所以你要做的第一件事就是关闭Oculus Quest的防护系统，这样你就可以在房间里自由走动。只需戴上头显，导航到设置中的开发者菜单，然后关闭防护系统。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200824/26f48009e1e94bffa87b0fd5b417a605.png" max-width="600" /></p>
+<p class="ql-align-center">禁用这个选项将允许你在房间中漫游</p>
+<p class="ql-align-justify">回到Unity，进入你的Assets中的Oculus文件夹，在VR/Prefabs下找到OVRCameraRig并将其拖动到场景中。你需要把camera放在一个允许你在真实房间里放下的位置。我选择了把camera放在两堵墙相交的角落，这样我就可以把头显的正面靠近墙壁，并将头显的中心与墙角对齐。你可以使用游戏camera的视图来更好地查看头显的实际位置。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200824/ad08fac2ce6b451bba655274a3e34e74.jpeg" max-width="600" /></p>
+<p class="ql-align-center">选择一个可以安放头显的地方</p>
+<p class="ql-align-justify">这解决了两个维度，但对于高度，请尝试将camera设置为比地面稍低一点（我使用的Y值为-2.8）。不管怎样，在测试场景时我们都必须调整所有三个维度。</p>
+<p class="ql-align-justify">现在是关键的时刻。请插入头显，并开始你的项目。当你第一次戴上头显时，camera就在你放到地板的位置（即便那可能不是物理头显所在的位置）。摘下头显，将其放到与虚拟camera匹配的位置。然后拿起右手控制器，按住Oculus按钮。这将重置视图并对齐物理头显与虚拟camera。头显现在将从正确的位置开始追踪，当戴上它时，你应该该能被映射到房间的正确虚拟位置。顺利的话，一切都能很好地结合在一起，而且你会感觉自己仿佛正在通过头显浏览你的房间，只是没有家具。</p>
+<p class="ql-align-justify">接下来，你需要按照本教程将控制器模型和手部追踪添加到场景中。一旦完成所述设置，你就可以重新运行项目，重新调整头显，并用双手去感觉物理和虚拟映射之间的差异。你需要对camera的位置进行一定的调整，从而确保一切都尽可能地对齐。当你在房间里走来走去时，你可能会注意到有些墙壁的位置不正确，这时你可以使用ProBuilder进行调整和重新测试。</p>
+<p class="ql-align-justify"><strong>6. 装饰房间</strong></p>
+<p class="ql-align-justify">现在是有趣的地方：让你的虚拟房间看起来更像是你的物理房间。我建议你无需过分追求100%精确，因为你可能会在不必要的地方浪费太多时间，比如照明设备、门把手和垃圾箱。我同时认为，装饰一些不可能存在但更容易建模的物品会更容易和更有趣，并进一步说明虚拟世界的可能性。例如，我制作了一台120英寸的电视。</p>
+<p class="ql-align-justify">Unity Assets Store中有非常多可用于沙发，桌子和椅子等基本物品的优秀免费asset。它们可能与你房间里的物品不完全匹配，但一旦正确地缩放，它们应该足够接近，难以区分，不会影响我们以后要构建的任何一切。</p>
+<p class="ql-align-justify">我把最重要的家具和最重要的物品放在房间里：沙发。你会注意到，当向场景添加预构建资源时，它们的比例可能不正确。根据构建模型时的比例，有时它们会太大，有时则会太小。</p>
+<p class="ql-align-justify">为了帮助获得正确的比例，我们将使用虚拟空间中的立方体作为指导。首先，测量真实世界物体的最长尺寸。对于我的沙发，我测量从地板到沙发后背顶部的距离，从每个靠手外侧到沙发的距离，以及从后到前的距离。</p>
+<p class="ql-align-justify">一旦获得了所有的测量数据，我们就可以创建一个全新的立方体，并对它进行缩放以匹配我们的测量。现在，将一个家具包中的预制件拖到场景中，并将其放置在立方体内部。使用Rect Tool更改尺寸以匹配立方体的尺寸（你可能需要选择子对象并在单个方向进行调整）。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200824/1c8209216b524a0ebee6d23e1c4f0faf.png" max-width="600" /></p>
+<p class="ql-align-justify">当你的对象在所有维度对齐立体放后，你就可以删除虚拟场景中的立方体和对象位置。</p>
+<p class="ql-align-justify">现在，你需要测量两个不同墙壁之间的距离，从而评估将对象放置在虚拟空间中的位置。同样，一旦获得了正确的测量，你可以在这里使用一个立方体作为放置对象的指导。当开始设置更多的对象时，你就可以相对地进行定位，甚至可以用眼睛观察判断位置，以便快速完成任务。</p>
+<p class="ql-align-justify">最后，我用商店里的预制资产来制作家具，厨房里的橱柜，甚至是壁炉里的火。我用ProBuilder建立了我的吧台区域，只留下了我的水槽和烤箱，因为我还有更多有趣的物品可以放在场景中。在空墙位置，我用ProBuilder嵌入墙面，突出我的阳台、壁炉、窗户和几个壁龛。在房间中设置了点光源后，我同事可以删除默认的定向光源，从而使房间的照明更加真实。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200824/5b28cb1a79fd4e90a57897643c3d600c.png" max-width="600" /></p>
+<p class="ql-align-center">我完成的虚拟公寓的俯视图*</p>
+<p class="ql-align-justify"><strong>7. 捕获并排视频</strong></p>
+<p class="ql-align-justify">如果你已经来到这一步，恭喜你。下面这部分属于可选项，但以防你想展示自己的作品，我想快速过一遍我是如何制作上述视频。Quest内置视频捕获功能，所以真正困难的部分是把智能手机绑到头显，并点击两台设备的录制按钮。</p>
+<p class="ql-align-justify">我决定进行DIY，只使用几条橡皮筋。把每条橡皮筋穿过头显侧面的头带，然后绕着头显前端起拉，并使其穿过另一侧的尼龙头带。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200824/b442eb120f6c4e82be9a48c55830888e.jpeg" max-width="600" /></p>
+<p class="ql-align-center">没什么特别高大上的工具，但非常管用</p>
+<p class="ql-align-justify">将智能手机滑入橡皮筋和头显之间，确保头显垂直对齐（水平对齐可能会锁定手机并切断录制和格挡头显摄像头）。确保橡皮筋不会遮住你的Quest摄像头，然后在你的智能手机点击“录制”，戴上头显，在Quest中点击录制。我录制的视频时有点不稳定，但最终的视频效果很好。</p>
+<p class="ql-align-justify">我用这个工具把Quest视频放到我的笔记本电脑，然后用iMovie将这两个视频剪辑并拼接在一起。这两个视频的纵横比和透视图都有很大的不同，所以你必须仔细对比并选择最佳的结果。我非常期待着看你所创建的内容。</p>
+<p class="ql-align-justify"><strong>8. 下一步</strong></p>
+<p class="ql-align-justify">我们现在已经拥有了一个基本的混合现实平台。我很高兴能开始实现一些，我已经构思了一段时间但从未尝试过的想法。有些纯粹是UI概念。但我真的非常好奇自己是想如何与物理对象交互，以及什么样的控制和交互最为有效。对于这种对原型制作非常有趣环境，我对只能存在其中的应用同样有一些想法。</p>
+<p class="ql-align-justify">我会尽我最大的努力来记录我所做的一切。希望我所构建的内容能够鼓励你去实现你自己的想法，因为对于即将到来的未来，我们都只是摸着石头过河。</p>
+<p>原文链接：https://yivian.com/news/77277.html</p>
+➜力反馈控制器SaberGrip可让刀剑击打、钓鱼等更逼真
+http://www.sohu.com/a/414569318_213766	3174
+<p class="ql-align-justify">（<strong>映维网 2020年08月24日</strong>）VR/AR触觉反馈技术开发商Tactical Haptics日前发布了一款面向VR刀剑动作游戏，钓鱼和工具培训的触觉反馈控制器产品。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200824/af464d8a37f14c55b21cb8207cb3a91a.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">名为SaberGrip的腰鼓状控制器支持Oculus，SteamVR、Vicon和Optictrack等追踪系统。它不依赖于Oculus Touch等现有运动控制器所使用的简单振动触觉，而是使用与其他Tactical Haptics配件相同的触觉驱动系统。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200824/f26609ea4a6c45a89ae152c844ebeeb1.png" max-width="600" /></p>
+<p class="ql-align-justify">这个3D打印原型支持Oculus Touch控制器和Vive Tracker。为了更好地展示所述配件的触觉反馈性能，团队提供了一个VR剑战演示。其中，我们可以看到一名玩家正在使用SaberGrip与机器人搏斗。</p>
+<p class="ql-align-justify">刀剑的每一次刺击、格挡和偏转都会触发移动金属板，并传递出一种比简单振动触觉更强大的真实冲击感。在未来，团队希望在剑术演示中引入多人支持，而最终目标是建立一个官方的电竞锦标赛系统。</p>
+<p class="ql-align-justify">Tactical Haptics同时发布了一个VR钓鱼演示内容。其中，SaberGrip可用作传统的鱼竿，并给与玩家一种鱼类抵抗感。根据介绍，这种简化的腰鼓状设计是基于众多VR线下街机店的反馈。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">除了单手握持式的SaberGrip之外，Tactical Haptics根据喜欢网球和高尔夫球等运动的用户反馈开发了一个双手模型。当然，这种双手模型同样可以用于单手体验。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200824/3523e63349f642adb378c3fdcddebf7c.png" max-width="600" /></p>
+<p class="ql-align-justify">最后，团队宣布其Multi-Pose磁性设计将正式支持Oculus Touch。作为说明，所述的触觉解决方案可以嵌入支持的追踪设备，并允许用户组装成不同的游戏外设。</p>
+<p class="ql-align-justify">据Tactical Haptics介绍，SbaerGrip目前属于非常早期的原型阶段，他们没有公布具体的产品发售日期。</p>
+<p>原文链接：https://yivian.com/news/77284.html</p>
+➜传苹果已收购VR初创公司Spaces
+http://www.sohu.com/a/414735490_213766	86166
+<p class="ql-align-justify">（<strong>映维网 2020年08月25日</strong>）据Protocol报道，苹果已收购发家于一个梦工厂动画项目的VR初创公司Spaces。目前双方都没有予以置评。</p>
+<p class="ql-align-justify">Spaces上周宣布将关闭现有服务，并在官网表示公司“正在朝着全新的方向前进”，但没有透露更多细节。当时的声明总结道：“感谢使用我们VR视频会议产品的用户和合作伙伴，以及众多喜欢我们部署在主题公园和剧院等地的线下VR娱乐站的大家。”</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200825/ea4796223dda4c37b41046871bf1307c.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">Spaces于2016年创办，是梦工厂动画的衍生公司。团队开发了一系列VR线下体验，包括《Terminator Salvation: Fight for the Future》。但受疫情影响，这家公司不得不关闭旗下的虚拟现实中心，在这一过程中解雇了不少员工，以及通过一笔小额PPP贷款以保持经营。Spaces首席执行官希拉兹·阿克马尔（Shioraz Akmal）当时表示：“COVID-19新冠肺炎对我们而言就像是一场海啸。”</p>
+<p class="ql-align-justify">然后，Spaces开始以Zoom等传统视频会议解决方案作为基础，并为其构建一个允许用户使用动画化身参加会议的VR附加组件。阿克马尔指出：“我们喜欢折腾新玩意。我们可不能坐等一年并期望着一切恢复原状。”</p>
+<p class="ql-align-justify">苹果一直在研发自家的AR/VR头显，并收购了一系列的AR和VR初创公司。这家科技巨头最近的收购包括NextVR、Akonia Holographics和Vrvana等等。需要注意的是，苹果尚未正式承认发布相关产品的计划。</p>
+<p class="ql-align-justify">目前尚不清楚Spaces团队是否真的会在苹果开发虚拟现实技术。不管怎样，线下VR行业一直在努力度过因疫情而带来的巨大危机。就在上周，有消息称VR线下娱乐初创公司Sandbox VR已经申请破产。</p>
+<p>原文链接：https://yivian.com/news/77297.html</p>

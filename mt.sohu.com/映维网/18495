@@ -1,0 +1,35 @@
+➜微软详细分享HoloLens 2显示问题，承若下一代会优化颜色显示
+http://www.sohu.com/a/414168123_213766	1763
+<p class="ql-align-justify">（<strong>映维网 2020年08月21日</strong>）HoloLens 2的显示器是波导管和光投影仪的组合。在穿戴头显时，用户将透过波导看到遮阳板内的透镜。光投射器位于眉毛上方。HoloLens 2使用激光照亮显示器。</p>
+<p class="ql-align-justify">日前，微软发布了一份关于HoloLens 2显示器的用户文档，并介绍了相关的故障排除和常见问题回答。下面是映维网的具体整理：</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200821/51fc0638dfa54496a5c813dc9ace0b7d.png" max-width="600" /></p>
+<p class="ql-align-justify"><strong>1. 故障排除</strong></p>
+<p class="ql-align-justify">对于HoloLens 2，请通过以下步骤确保显示器所显示的全息图为最高视觉质量：</p>
+<p class="ql-align-justify"><strong>2. 常见问题回答</strong></p>
+<p class="ql-align-justify"><strong>偶尔在显示器下角闪烁的图案是什么？</strong></p>
+<p class="ql-align-justify">有时候，HoloLens 2会在显示器的左下角和右下角显示不同的图案，如下所示。这种图案是HoloLens2正常操作的一环，主要用于校准显示器以获得最佳体验。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200821/2d0b583695db457e9c43cc4a739193e3.gif" max-width="600" /></p>
+<p class="ql-align-justify"><strong>为什么用相机拍摄的照片与我通过HoloLens 2的显示器所看到的内容不是完全一致呢？</strong></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">HoloLens 2的显示器设计成向人眼显示内容。设备提供了一个适应用户眼睛的主动颜色校正系统。与人眼相比，相机看到的环境不同，下面是可能影响相机拍摄到的内容与用户看到的画面不一致的因素：</p>
+<p class="ql-align-justify">尽管如此，专业的工业相机依然有可能拍摄到具有代表性的显示器图像。遗憾的是，智能手机、消费者相机和专业相机都无法捕捉到与HoloLens 2用户看到的画面相匹配的图像。</p>
+<p class="ql-align-justify"><strong>眼睛校准对显示图像质量有什么作用？</strong></p>
+<p class="ql-align-justify">HoloLens 2的显示器根据用户眼睛位置主动校正图像。眼睛校准提供了两个重要的输入：用户的瞳孔间距离（IPD）；每只眼睛的注视方向。如果没有眼睛校准，系统默认一个没有眼睛移动的常规眼睛位置。主动颜色校正和不校正的区别取决于用户的生理学本身。例如，如果具有与系统默认值相同的IPD，用户将看到较少的颜色校正优化。如果用户的IPD比系统默认值窄或宽，则显示图像会发生更多变化。</p>
+<p class="ql-align-justify">注意，未来操作系统更新中的一项新功能将能自动检测眼睛位置。用户可以注册Insider Preview以试用所述功能。</p>
+<p class="ql-align-justify"><strong>HoloLens 1和HoloLens 2的显示器有何不同？</strong></p>
+<p class="ql-align-justify">在体验了HoloLens 1之后，客户给微软提出的最大要求是：1.增加视场；2.增加亮度。技术的发展允许微软生产出视场面积翻倍的波导管，并生产出亮度高达三倍的光投影仪。硬件为显示图像质量的三个权衡设置了基线：视场；亮度；颜色均匀性。持续的技术进步允许我们在不牺牲其他领域的前提下对所有领域进行改进。在这一期间，现有技术为设备设置了上述的三个权衡设置了限制。</p>
+<p class="ql-align-justify"><strong>有什么即将发布的功能可以改善HoloLens 2的图像质量吗？</strong></p>
+<p class="ql-align-justify">尽管微软正在进行一系列改善图像质量的调查，但预计下一版本将支持：</p>
+<p class="ql-align-justify">操作系统更新将自动推送。你同时可以通过Insider Preview项目测试新功能的早期版本。</p>
+<p class="ql-align-justify"><strong>对于开发者应用暗模式设计原则，有什么建议吗？</strong></p>
+<p class="ql-align-justify">微软正在准备暗模式设计原则的开发者指南，而所述指南将很快纳入开发者文档。建议的摘要包括：</p>
+<p class="ql-align-justify"><strong>如何清洁HoloLens 2的显示器？</strong></p>
+<p class="ql-align-justify">用超细纤维布轻轻擦拭遮阳板。要对遮阳板进行消毒，请使用70%的异丙醇轻轻弄湿抹布，然后擦拭遮阳板。完整的清洁指南请点击这个页面。</p>
+<p>原文链接：https://yivian.com/news/77210.html</p>

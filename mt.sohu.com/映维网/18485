@@ -1,0 +1,85 @@
+➜如何在XR中实现与GUI菜单，键盘输入和指向的基本交互
+http://www.sohu.com/a/412544034_213766	17189
+<p class="ql-align-justify">（<strong>映维网 2020年08月11日</strong>）像我们大多数人一样，你对人机交互（HMI）的首次接触可能始于PC的2D图形用户界面（GUI）。最近，HMI已经发展到包括移动设备的控屏传感器所能实现的动作和手势。随着扩展现实（XR）在企业中的普及，HMI正在进入一个全新的时代。</p>
+<p class="ql-align-justify">XR将用户沉浸在一个具有规模感和深度感的三维环境中，而这为用户界面带来了全新的可能性和设计考虑因素。与传统的2D GUI相比，它同时带来了其他优势：更大的屏幕空间，更少遮挡元素的干扰，以及更大的空间任务组织灵活性。另外，XR增加了一个更接近于现实世界感知的第三维度。</p>
+<p class="ql-align-justify">在这篇博文中，负责高通虚拟现实和增强现实项目扩展的产品经理希伦·宾德(Hiren Bhinde)将简要介绍如何在XR中实现与GUI菜单，键盘输入和指向的基本交互，并分享关键的设计考虑因素，及用于所述交互的基本人体运动。最后，宾德会展示基于高通骁龙XR2 5G平台的感知技术是如何帮助它成为现实。</p>
+<p class="ql-align-justify"><strong>1. UI元素</strong></p>
+<p class="ql-align-justify">考虑到XR固有的3D特性和用户控制其位置和方向的能力，诸如菜单这样的GUI元素可以显示为尊重用户视场的2D叠加层或交互式3D对象。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200811/4c9cdf196ef34802bcea6db1c42fa6a8.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">例如，菜单可以显示为三维对象，而用户可以移动它们，甚至可以将其锁定到环境中的某个位置。这可以在虚拟现实和增强现实中实现，其中用户可以移动、定向和/或操纵它们。对于虚拟现实，这样的菜单可以像任何其他对象一样实现追踪和渲染；对于增强现实，GPS、传感器融合和卡尔曼滤波等技术经常会用来锁定它们的位置和方向。类似地，诸如提供信息的弹出窗口同样需要这样处理。</p>
+<p class="ql-align-justify">与传统的2D菜单不同，XR的3D菜单设计呈现了一系列有趣的挑战。例如，当可能没有任何触觉反馈时，如何为按键提供反馈呢？一种解决方案是为功能设置动画，从而渲染相关的接触，比方说一个膨胀圆环，然后再用声音进一步予以增强。</p>
+<p class="ql-align-justify">另一个需要考虑的问题是：如果用户按压按钮时超过按钮平面，比方说过于用力地按下，这将会导致什么情况发生呢？如果没有正式的解决方案，用户的虚拟手指可能会穿透按钮。我们可以通过多种有趣的方法进行处理。比方说，如果按钮用力过大，按钮本身会向内平移。</p>
+<p class="ql-align-justify">对于模拟鼠标，一种粗糙的3D等效物是一个激光指针。基本上，这是从源位置（如手或控制器）将光线投射到视口中的某个目标的三维指针。光线的方向可以基于手指关节或控制器的方向。光线本身可以从源到目标进行整体渲染，或仅渲染最终目标指针（如十字光标）。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">最后，尽管沉浸式XR应用程序通常不太支持文本捕获，但依然存在需要某种键盘输入的用例。所以，我们可以将虚拟3D键盘渲染为悬浮在空间中的对象，并将其放置于离用户一定距离的地方。这对于AR和裸手控制的VR应用程序都非常有用。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200811/6baa17c3652f4e099c8b0625f40eada2.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">就如同Delta Cygni Labs的辅助现实产品POINTR一样，另一个选择是使用语音命令。利用语音命令，用户可以通过言语口头表达出希望系统执行的操作，如显示记事本，然后再说出额外的词句以进行内容载入。</p>
+<p class="ql-align-justify"><strong>2. 设计考量</strong></p>
+<p class="ql-align-justify">尽管实现菜单、指针和虚拟键盘看似微不足道，但它们依然存在大量的设计考量，并可能因AR和VR而异。</p>
+<p class="ql-align-justify">设计应该从大量的实体模型和线框开始。不同分辨率和距离的线框（如近、中、远）可用于设置AR和VR中对象的Z-Order。对于AR，用户将以不同位置和角度在3D中看到的2D实体模型能够有效地可视化最终结果，而Gray boxing为3D提供了类似的工具：</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200811/9e67cd829fda4a1b96cb4c5c81f9ef93.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">另外，应绘制图表以识别两种XR类型的区域，以及它们在3D中的映射方式。如果要使用眼动追踪，则可能需要为每个眼睛复制这类图表。</p>
+<p class="ql-align-justify">对于头部追踪，开发者需要考虑舒适与限制，以及内容与外围区域的关系。一般来说，人们可以舒服地将头向左或向右转动约30度，双向最多可转动55度。对于向上运动，舒适度大约为20度至最大60度，向下则是12度至最大40度。区域应该根据所述范围进行识别，同时考虑通过眼动追踪捕捉到的外围区域。例如，下面这个图例说明了内容的可视区域。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200811/abeaee2a170b4cdbbc5bb6752e2297a0.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">对于需要描述大量信息的GUI，根据用户信息的重要性来放置用户信息可能大有裨益。一个合适方法是按优先顺序排列，最重要的信息放在前面和中间，次要信息在侧面，第三次要在底部，第四次要在上方。这与人们阅读报纸头版信息的方式相似。</p>
+<p class="ql-align-justify">在AR中，真实世界是一个无限的三维环境，所以开发者无法控制照明等因素。由于数字元素是作为一种附加渲染过程有效地叠加在AR之中，所以当使用浅色呈现时，它用户最容易查看它们。同时请记住，AR可以通过沉浸式3D头显浏览，同时又能够通过利用2D摄像头捕捉世界的2D移动设备浏览，如平板电脑。开发者可能需要处理这两者的输入，因为有用户喜欢一种而不喜欢另一种，或者对一种设备设置了严格的要求。对于头显，开发者应该使用感知技术来追踪头、手和眼睛；对于移动设备，运动传感器和触控屏可以捕捉动作和手势。至于虚拟现实，开发者应该考虑渲染一个完全铰接的骨骼模型和/或控制器，从而准确地反映真实世界的运动。</p>
+<p class="ql-align-justify">由于XR本质为3D，开发者需要考虑如何渲染详细的项目。例如，当用户移动和旋转时，头显的角度分辨率将决定要使用的字体大小，而GUI元素的选择则取决于所使用的感知技术。</p>
+<p class="ql-align-justify"><strong>3. 令上述成为现实的感知技术</strong></p>
+<p class="ql-align-justify">需要在XR追踪的三个关键感知因素是头、手和眼睛。用于追踪它们的感知技术必须在很大程度上实现三个关键KPI：</p>
+<p class="ql-align-justify"><strong>3.1 头部追踪</strong></p>
+<p class="ql-align-justify">对于应用呈现用户界面，追踪用户头部的方向和平移是另一个重要的考虑因素。头部追踪算法追踪三个方向自由度：纵摇（Pitch）、横摇（Roll）和垂摇（Yaw），以及用户位置（X、Y和Z）的位置自由度。这种算法通常称为六自由度算法。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200811/a7a66165a58446fa885081840c0dfa14.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">头部追踪算法通常能够增加预测用户未来头部位置/方向的能力（通常为10到20毫秒），这有助于平滑渲染并确保虚拟对象在空间中保持固定。</p>
+<p class="ql-align-justify">头部追踪算法必须持续运行，提供低延迟，并保持低功耗。这种算法的精度要求是很少或没有出现平移和旋转误差。为了帮助实现这一点，骁龙XR2使用了一种名为SLAM的技术来创建一个环境映射。映射环境是为了用于鲁棒、快速和精确的追踪。为了保证算法的鲁棒性，它必须能够处理像摄像头模煳、光线不好等情况。所以，骁龙XR2采用了具有宽视场的特殊单色摄像头，并且搭配了一个硬件加速的头部追踪算法，从而在非常低功耗的情况下以高精度运行。</p>
+<p class="ql-align-justify"><strong>3.2 手部追踪</strong></p>
+<p class="ql-align-justify">捕捉手的运动十分重要，因为大多数人把手作为与自然世界交互的主要方式。这可以通过多种技术实现，包括基于摄像头的手部追踪、移动设备的传感器和触控屏等等。它们可以捕捉到各种各样的动作和手势，包括：</p>
+<p class="ql-align-justify">手部追踪的保真度测量最高可达28个自由度（包括手的所有关节和每个手指）。手部运动的一个重要KPI是允许较大的追踪量，因为用户希望能够张开手臂，抬起手臂和放下手臂。鲁棒性是通过处理边缘情况来实现，如手遮挡摄像头，交叉手指，一只手覆盖另一只手等。</p>
+<p class="ql-align-justify">为了允许虚拟手部/控制器的近实时UI交互呈现，手部追踪保持低延迟同样非常重要。对于涉及使用神经网络的手部追踪算法，骁龙XR2能够以高达每秒15万亿次的速度处理基于神经网络的算法。</p>
+<p class="ql-align-justify"><strong>3.3 眼动追踪</strong></p>
+<p class="ql-align-justify">最后，眼动追踪用于追踪用户的视线（或称为注视向量）。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200811/cef085264af54b7bb185d9561e07cd95.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">有效的眼动追踪通常需要眼球运动到屏幕变化低于10毫秒的管道。考虑到眼睛的移动速度，这是一个重大的挑战。所以，高通与Tobii进行了合作，将眼动追踪技术带到骁龙XR2的Hexagon DSP SDK，并提供对摄像头的低延迟访问。为了提高眼动追踪的鲁棒性，它应该能够处理世界各地的不同人群的眼睛特征，所以骁龙XR2算法中使用的底层神经网络是通过一个大型、多样化的数据集进行训练。</p>
+<p class="ql-align-justify">眼动追踪同时可以通过促进注视点渲染来提高能效。这涉及到以不同细节程序渲染屏幕不同的区域。</p>
+<p class="ql-align-justify"><strong>4. 总结</strong></p>
+<p class="ql-align-justify">随着沉浸式XR体验等新媒介越来越流行，UI设计领域将继续发展。但与传统的2D GUI不同，3D环境及新的交互方式不仅带来了新的可能性，其同时揭示了新的设计考虑。</p>
+<p class="ql-align-justify">驱动这一点的是尖端的感知技术，包括头部、眼睛和手部追踪设备。但为了有效地提供所述功能，相关技术必须是鲁棒的、精确的的和节能的。</p>
+<p>原文链接：https://yivian.com/news/76954.html</p>
+➜5G新终端韩国出道：Nreal 联合LG U+在韩发布首款消费级AR眼镜
+http://www.sohu.com/a/412543979_213766	17366
+<p>声明：新闻稿非映维官方稿件，任何法律问题均与映维无关</p>
+<blockquote class="ql-align-justify">
+Nreal Light 在享受相关合约补贴后，售价最低可达34.9万韩元（约2045元人民币）
+</blockquote>
+<p class="ql-align-justify">8月11日，混合现实企业 Nreal 在 与LG U+ 联合举办的发布会在的韩国首尔永山区 LG 总部举办。发布会上 Nreal 宣布将与 LG U+ 携手探索AR 眼镜消费级市场，并正式推出全球首款面向消费者的AR眼镜Nreal Light。据悉，Nreal Light 将首先通过 LG U+ 在韩国市场发售，并与三星 Note20、LG Velvet 等5G 手机及 LG U+ 5G 数据套餐绑定销售，8月11日起在 LG U+ 官网开启预购。此次 Nreal Light 在享受相关合约补贴后，售价最低可达34.9万韩元（约2045元人民币）。</p>
+<p class="ql-align-justify">Nreal 此次与韩国的LG U+ 的合作及 Nreal Light 的推出，是移动互联网消费型产品一次重要的全球性事件，移动计算领域的巨大变革即将到来。在发布会上Nreal 与 LG U+ 表示，用户可通过支持 5G 的三星 Note 20 系列智能手机与 Nreal Light 的绑定，在 LG U+ 网络上率先获得增强现实从根本上改变生活的全新体验。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200811/c7e32abd68f546d8b1c957b67135173a.png" max-width="600" /></p>
+<p class="ql-align-center">发布会现场照片</p>
+<p class="ql-align-justify">Nreal Light 提供宽广的显示视野（52°视场角）和鲜艳、明亮的色彩显示，拥有它用户就可以随时随地享受 IMAX 影院级别的观影体验。其外形就像一副普通太阳镜，小巧时尚，便于收纳和随身携带，混合现实让你看到虚拟界面的同时可以观察周围环境，Nreal Light 支持通过 Typec-C 接口直连手机，可以同步开启多个APP，视野所见一目了然。并且得益于对 5G 技术的深度融合，Nreal Light 在高带宽、低时延的5G环境下，可以让用户随时随地享受极致的影音体验与游戏乐趣，并刷新社交、会议、网购、网课等诸多日常生活的应用场景，Nreal Light 不仅为用户提供了更宽广的大屏视觉体验，同时其舒适性和便携性，也让产品自然而然地融入到消费者日常生活，5G+混合现实的结合正在突破现有手机类终端的体验边界，内容显示不再被屏幕的边框所限，带来全新的内容沉浸感受，同时其应用前景更是有无限想象的可能值得期待。</p>
+<p class="ql-align-justify">Nreal 自主研发的 3D 系统——“星云” ，开创性地将常规 2D 应用程序内容比例转换到 3D 界面，支持全部安卓原生应用。星云系统首次展出于2020 年的 CES，经过积极的版本迭代，目前用户界面贴合智能手机常规界面，并衔接了操作习惯，使得用户可以快速上手，同时其也融合了3D功能优势，带来更直观的人机互动。在星云系统的支持下，用户可以一边上网一边使用 AR 眼镜观看节目，甚至可以通过自定义操作，在视野内同时安排三个App屏幕 ，自定义独特的观影及上网空间，充满了创造力，这一切都要归功于 Nreal 星云的突破性技术与对5G应用场景的理解。除了Nreal 自有应用商店 Nebula 外，通过与 LG U+ 的合作，Nreal Light 目前已支持使用数百款全球热门应用。如谷歌浏览器 Chrome 、Facebook、Kakao Talk 、Instagram，而 LG U+ 也拟定今年将在 Nreal Light 上推出独家 AR 应用，包括 U+AR 和 U+VR ，充分满足用户的日常生活和娱乐、社交等需求。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200811/ad262128d59e4e6f8ba0a9d8da99d788.png" max-width="600" /></p>
+<p class="ql-align-center">Nreal Light 使用模拟画面</p>
+<p class="ql-align-justify">此次推出的 Nreal Light AR 眼镜真正做到了开箱即用，消费者版的 NrealLight 将配备一副 Nreal 眼镜和若干配件，其中包括一个体贴用户的磁吸近视镜片和四个不同尺寸的磁性鼻托，此外 Nreal Light 套装中还包括一个 VR 眼镜盖（VR Cover）配件，可以充当遮光罩用于贴合镜面遮住视野，使得 Nreal Light 可以直接切换 VR 模式，让用户享受到更具沉浸感的游戏与观影体验，陶醉奇妙的交互世界。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200811/07174b17b5dd453e9da0d3294d16c94b.png" max-width="600" /></p>
+<p class="ql-align-center">Nreal Light 套装</p>
+<p class="ql-align-justify">在发布会上 LG + 未来设备部门执行副总裁宋大元（Song Dae-won）表示：“我们希望以极具性价比的价格和轻巧的设计来降低 AR 眼镜市场的壁垒。 如果说 5G 将为影音娱乐行业带来巨大变革，那么这款 U+ Real 眼镜（即 Nreal Light）将以丰富的体验改变用户的日常生活。通过 Nreal Light，我们希望能让 AR 技术得到快速普及，并在 5G 发展浪潮中激活 AR 产业。”</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200811/411f63f6f5e140999d046362da407c45.png" max-width="600" /></p>
+<p class="ql-align-center">Song Dae-won 发布会演讲照片</p>
+<p class="ql-align-justify">“Nreal Light 的推出是一个历史性时刻，可以说撼动了移动互联网产业的基石。“ Nreal CEO 徐驰同时在发布会上表示：“ 与LG U+ 的合作使我们能够以一种更亲民的方式让用户接触到 Nreal Light 及 AR 技术，同时通过 Nreal Light 让用户真正体验移动互联网而不仅仅是 AR 的内容及乐趣，进而提升 5G 智能手机的价值。”</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200811/9da5e019d37e4ead8178512e199c898c.png" max-width="600" /></p>
+<p class="ql-align-center">徐驰发布会演讲照片</p>
+<p class="ql-align-justify">目前 Nreal 同 LGU+ 共推出了两个合约绑定方案。在享受相关合约补贴后，Nreal Light 对应不同 5G 合约的售价分别为69.9万韩元（约4099元人民币）及34.9万韩元（约2045元人民币）。8 月 11 日起用户即可在 LG U+ 网上商店订购，此外，从8月21日开始，Nreal Light 还将在韩国 LG U+ 的线下零售店中上市销售。</p>

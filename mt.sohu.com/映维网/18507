@@ -1,0 +1,66 @@
+➜提升AR/VR性能，Facebook申请『基于机器学习的着色器的GPU』专利
+http://www.sohu.com/a/416027290_213766	765
+<p class="ql-align-justify">（<strong>映维网 2020年09月02日</strong>）为了降低对传统芯片厂商的依赖，降低成本，实现产品需求专用性等原因，科技巨头一直在大力研发自己的芯片产品，如苹果，华为，亚马逊，谷歌和Facebook。</p>
+<p class="ql-align-justify">Facebook的入局最初见于2018年。当时彭博社报道称这家公司已经组建了相关的研发团队。另外，当时有消息称，Facebook希望将所述芯片首先用于自家的智能音箱Portal，然后再扩展至其他的产品应用。</p>
+<p class="ql-align-justify">自那之后，Facebook一直有提交与芯片相关的专利申请。日前，美国专利商标局又公布了一份名为“Graphics Processing Chip With Machine-Learning Based Shader（包含基于机器学习的着色器的GPU）”的专利申请。其中，Facebook提到这项技术的应用包括虚拟现实和增强现实。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200902/346651112e024ca1ad394f0efba07422.png" max-width="600" /></p>
+<p class="ql-align-justify">专利文件指出，尽管当下的GPU设计已经为绘制图形提供了巨大的处理能力，但它们的性能依然是图形应用的瓶颈。所以，Facebook希望通过机器学习方法来进一步提升GPU显卡的性能。</p>
+<p class="ql-align-justify">名为“Graphics Processing Chip With Machine-Learning Based Shader（包含基于机器学习的着色器的GPU）”的专利申请主要描述了用于渲染计算机图形的显卡。所述显卡可以包括控制器，所述控制器配置成根据图形渲染管道来管理显卡的操作。所述操作可以包括几何处理操作、光栅化操作和着色操作。</p>
+<p class="ql-align-justify">所述显卡同时可以包括可编程存储器部件，所述可编程存储器部件用于存储配置成执行至少一部分着色操作的机器学习模型。显卡同时可以包括多个处理单元，所述处理单元配置成根据机器学习模型选择性地用于执行着色操作。显卡同时可以包括至少一个输出存储器，所述输出存储器配置成存储使用所述着色操作生成的图像数据。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200902/785accf88fb946d88b44a9a6ccaccf84.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">Facebook详细描述了所述的机器学习模型。文件写道：机器学习模型可以配置成根据视图数据、照明数据、颜色数据和材质属性数据生成输出；并且存储在输出存储器中的图像数据可以使用机器学习模型的输出进行生成。</p>
+<p class="ql-align-justify">机器学习模型的输出可以包括强度数据；并且可以根据颜色数据和强度数据生成图像数据。其中，机器学习模型可配置为根据第二强度数据生成输出。可根据照明模型生成第二强度数据。第二机器学习模型的第二输出可以包括照明模型用于生成第二强度数据的镜面反射数据。</p>
+<p class="ql-align-justify">所述至少一个可编程存储器部件可配置成存储第二机器学习模型，所述第二机器学习模型配置成根据以下一个或多个数据产生第二输出：视图数据、照明数据、颜色数据和材质属性数据。所述第二强度数据可以使用所述第二输出，视图数据和照明数据生成。</p>
+<p class="ql-align-justify">机器学习模型和第二机器学习模型可以使用多个训练样本进行端到端的训练。机器学习模型可以使用多个训练样本进行训练。多个训练样本中的每一个可以与和表面相关联的材质属性数据和与目标颜色数据相关联。目标颜色数据可以与具有后处理效果的目标图像相关联。</p>
+<p class="ql-align-justify">另外，机器学习模型可以包括神经网络。</p>
+<blockquote class="ql-align-justify">
+<strong>相关专利</strong>：Facebook Patent | Graphics Processing Chip With Machine-Learning Based Shader
+</blockquote>
+<p class="ql-align-justify">概而言之，Facebook希望通过接受端到端训练的机器学习模型来进一步提升显卡的性能，从而减少功耗和渲染时间。</p>
+<p class="ql-align-justify">名为“Graphics Processing Chip With Machine-Learning Based Shader（包含基于机器学习的着色器的GPU）”的专利申请最初在2019年2月提交，并在日前由美国专利商标局公布。</p>
+<p>原文链接：https://yivian.com/news/77513.html</p>
+➜前微软MR首席项目经理加盟Facebook Reality Labs
+http://www.sohu.com/a/416028170_213766	1101
+<p class="ql-align-justify">（<strong>映维网 2020年09月02日</strong>）有着20年经验的微软资深员工威廉·斯蒂尔韦尔（William Stillwell）曾在8月初宣布离职，而现在他已经找到了一个新岗位：Facebook旗下的Facebook Reality Labs。</p>
+<p class="ql-align-justify">他通过Twitter宣布了这一职业转变，并表示自己将致力于研发增强现实和虚拟现实产品。实际上，斯蒂尔韦尔的工作领域没有发生变化，因为他原本就是负责微软混合现实业务的一名首席项目经理。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200902/dfc24c0bd66f4292bd6670baee3d6415.png" max-width="600" /></p>
+<p class="ql-align-justify">值得一提的是，Facebook Reality Labs现已成为涵盖Facebook所有虚拟现实/增强现实业务的事业群，而公司计划在9月16日举行年度开发者大会。</p>
+<p class="ql-align-justify">斯蒂尔韦尔是在2020年4月由Xbox团队转入混合现实团队，并专注于构建消费者AR/VR体验。根据当时的LinkedIn业界介绍，他负责了多项重要工作，包括：</p>
+<ol>
+<li class="ql-align-justify">为新兴的消费娱乐业务制定新战略，积极推动消费者内容登陆消费级硬件设备。</li>
+<li class="ql-align-justify">创建一个全新的可扩展开发生态，提升消费娱乐领域的混合现实市场份额，并确保AR/VR内容的广度。</li>
+<li class="ql-align-justify">与合作伙伴保持强技术联系，同时深入工程团队，将消费者的诉求带入微软的硬件和服务方案。</li>
+<li class="ql-align-justify">深入混合现实硬件与服务研发团队，包括针对新兴市场发布的产品等等。</li>
+</ol>
+<p>原文链接：https://yivian.com/news/77516.html</p>
+➜AR手游《Pokemon Go》开发商Niantic成立全球5G+AR联盟
+http://www.sohu.com/a/416028684_213766	1391
+<p class="ql-align-justify">（<strong>映维网 2020年09月02日</strong>）专注于打造全球性增强现实平台的Niantic日前宣布正式成立了一个旨在推动5G+AR发展的联盟组织：Niantic Planet Scale AR Alliance，而初始成员包括德国电信、EE、Globe Telecom、Orange、SK电讯、软银、TELUS和Verizon。</p>
+<p class="ql-align-justify">Niantic表示：“我们正在构建一个能够支持移动设备和可穿戴设备AR体验的全球性的增强现实平台，并为大家提供与世界和周围人员交互的全新方式。创建最佳的AR体验需要将内容与高性能设备和网络联接起来。我们不会独自完成这项工作，所以今天我们将宣布了这个Niantic Planet Scale AR Alliance。这个联盟汇集了移动生态系统的各个领导者，而他们正共同努力定义和推动5G AR体验的发展。”</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200902/5057b1b26b604826b3a6d0539a741202.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">据介绍，Niantic Planet Scale AR Alliance将致力于提供独家5G规格的AR内容，展示消费者AR体验，并为5G世界中的创新定义标准。</p>
+<p class="ql-align-justify">Niantic希望与移动生态系统中的合作伙伴进行密切合作，从而有机会将诸如Real-World Platform等创新与5G结合起来，从而创造令人惊叹的AR体验和展示5G的可能性。</p>
+<p class="ql-align-justify">团队进一步指出：“行业合作是当今和未来设备端与Web端的消费者AR的重要驱动力。我们相信，与广泛的合作伙伴进行合作是开发和促进消费者AR应用的最佳方式。我们非常高兴能与我们的首发成员合作，并共同推进未来的创新。”</p>
+<p class="ql-align-justify">Niantic Planet Scale AR Alliance正在邀请智能手机和AR可穿戴设备行业的无线运营商，设备制造商和其他移动生态系统公司加入。更多信息请访问官方网页。</p>
+<p>原文链接：https://yivian.com/news/77518.html</p>
+➜触觉模拟技术厂商Ultraleap计划三年内IPO上市
+http://www.sohu.com/a/416029266_213766	1605
+<p class="ql-align-justify">（<strong>映维网 2020年09月02日</strong>）主要研发超声波触觉模拟技术的Ultraleap正在考虑在三年内进行IPC。首席执行官史蒂夫·克利夫（Steve Cliffe）表示，团队正准备进行新一轮的融资。而且公司希望在三年内上市。</p>
+<p class="ql-align-justify">除了考虑于2023年进行IPO之外，这家位于英国布里斯托的公司同时获得了英国财政部Future Fund及其现有投资者提供的1000万英镑支持。</p>
+<p class="ql-align-justify">具体而言，英国政府的Future Fund提供了最高额度为500英镑的可转换贷款，而另外500万英镑则来自现有投资者Mayfair Equity Partners，以及董事长迈克·托宾（Mike Tobin）。</p>
+<p class="ql-align-justify">克利夫说道：“这将我们的跑道延长到明年下半年，亦即意味着我们可以暂时忘掉资金问题，并专注于开展业务。”</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200902/c91d7f9d6c684db5b955d667aaf17984.png" max-width="600" /></p>
+<p class="ql-align-justify">值得一提的是，Ultraleap早前与芯片厂商高通签署了一项重要协议，并将会为XR 2设备提供裸手交互解决方案。</p>
+<p class="ql-align-justify">消息人士指出，这起合作有望为公司带来1000万英镑的营收。</p>
+<blockquote class="ql-align-justify">
+<strong>延伸阅读</strong>：高通与Ultraleap合作，为XR2设备提供手部交互解决方案
+</blockquote>
+<p>原文链接：https://yivian.com/news/77521.html</p>
