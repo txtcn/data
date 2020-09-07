@@ -1,0 +1,51 @@
+➜电脑运算的基础——布林代数，是麼搞出来的？│《电脑简史》数位时代（三）
+https://pansci.asia/archives/190884	3652
+<p style="font-size: 22px; line-height: 31px; font-weight: bold; color: #3c4b89;">「纠正我们推理的唯一方法，是使它们像数学家的推算一样实在可靠，这样我们就能一目了然地发现错误。当人与人之间争论不休时，我们只要说：别再吵了，让我们算算看谁才是对的。」</p>
+<p style="text-align: right;">—— 莱布尼兹 1685 年致 Philipp Spener 信。</p>
+<blockquote><p>本文为系列文章，上一篇请见：<a href="https://pansci.asia/archives/190357">易经、巴别塔、通用文字——莱布尼兹研究二进位之路│《电脑简史》数位时代（二）</a></p></blockquote>
+<h3>亚里斯多德开创逻辑系统好棒棒，but……</h3>
+<p>莱布尼兹提出只用 0 与 1 的二进位算术，成为现代电脑的运算方式。不过，现代电脑可不是之前的计算器，藉由齿轮转动的圈数来做加减乘除，而是利用电子零件的开关状态。开关状态如何做二进位算术？这就需要藉助「逻辑运算」。</p><div class="pansc-content"></ins>
+<script async type="text/javascript" src="//cdn.holmesmind.com/js/init.js"></script></div>
+<p>逻辑运算这个词在现代听起来理所当然，但你若拿去问十八世纪以前的人，他一定觉得莫名其妙，逻辑用的都是文字语句，又不是数学，怎麼运算呢？</p>
+<p>是的，打从亚里斯多德开创有规则可循的逻辑系统，两千年来表达逻辑的方式都是用自然语言做为陈述句，例如下面这个最具代表性的三段论。</p>
+<blockquote><p><span style="font-weight: 400; line-height: 8px;">大前提：所有人都会死。</span></p>
+<p><span style="line-height: 8px;">小前提：苏格拉底是人。</span></p>
+<p><span style="line-height: 8px;">结论：苏格拉底会死。</span></p></blockquote>
+<div>WIKI</a></p></div>
+<p>然而自然语言不免会有多重涵义，或是容易有歧义的问题，不仅翻译成不同语言可能造成误解，就算是使用同一种语言的人，也可能会对其中的逻辑关係有不同认知。例如「有关係就没关係，没关係就有关係」这句俗谚裡面，「关係」这个词项显然有不同涵义，而「有」与「没」的用法也前后不一。</p>
+<p>况且除了简单的三段论，还有其它形式更複杂的逻辑陈述，用自然语言确实无法精确地表示各种逻辑形式和规律。</p>
+<h3>你以为数学式本来就长这样？</h3>
+<p>其实数学早期也都是用自然语言，如果翻开当时的数学书籍，只见尽是长长的文字叙述，即使看得懂，恐怕也难以联想到它就是代表一个简单的公式而已。这是因为直到十六世纪，数学才开始用符号来表达，像加、减、乘、除、等于都是约莫那个时候才改用 ＋、－、×、÷、= 代表。而我们现在熟悉的数学式记法，包括用字母代表未知数，更是十七世纪才盛行。</p>
+<div>Pexels</a></p></div>
+<p>数学符号化之后，表述方式更加简短精确，计算也变得方便许多。而且由于符号不受语文隔阂，不同国家的数学家都能一目了然，因此得以加速数学与科学的传播与交流，是促成科学革命的重要基石。</p>
+<p>莱布尼兹本身游历德国、法国、英国三地，又曾为微积分创造新的符号，更能感受符号化的重要性，因此在他梦想有数学般的通用文字之前，就已经试图把逻辑转换为数学那样的表示方式，也就是现代所称的「数理逻辑」。</p>
+<h3>莱布尼兹致力于逻辑数学化，可惜无人知</h3>
+<p>莱布尼兹先于 1679 年设想各种基本概念都用某个质数代表，例如「动物」用 “2” 代表，「理性」是 “3”，那麼「人是理性的动物」这个句子就相当于 “6=2×3”，也就是说代表「人」的数字是 “6”。从 6=2×3 可以推导出 6÷3=2，代表「人失去理性等于动物」，这样便能透过计算完成逻辑推论。</p>
+<p>1686 年，莱布尼兹改用 A、B、C……等字母符号代表普通命题，并引入「非」、「等于」、「不等于」、「属于」、「不属于」等符号，然后用这些符号列出交换律、传递关係……等处理集合关係的运算规则。</p>
+<p>到了 1690 年，他又将加法与减法纳入逻辑演算之中，让逻辑的符号化与数学化更加完整，可以说已经为数理逻辑打下坚固的地基。无奈这些手稿在莱布尼兹生前从未公开，直到二十世纪初世人才知道他这方面的研究，数理逻辑的发展因此延迟了一个半世纪，才由英国数学家布尔 (George Boole) 重新开创。</p>
+<div>WIKI</a></p></div>
+<h3>布尔公亲变事主，重新开创数学逻辑</h3>
+<p><span style="font-weight: 400;">布尔于 1815 年出生在一个乡下小镇，父亲是个鞋匠。</span><span style="font-weight: 400;">因为家境清寒，他自小学毕业后就没再受正式教育，而是靠自学习得语文与数学知识。</span></p>
+<p><span style="font-weight: 400;">布尔十六岁时被当地一所学校聘为教师，成为家中经济支柱；到了十九岁乾脆自己开办学校，同时更投入数学的研究。布尔二十三岁开始发表数学论文，逐渐获得伦敦学术圈的注意，其中一位数学家德摩根 (Augustus De Morgan) 与他结为好友，后来竟为他带来开创逻辑新局的契机。</span></p>
+<p><span style="font-weight: 400;">话说十九世纪的哲学家已经注意到亚里斯多德的三段论有许多问题，因此包括德摩根在内的一些学者开始思考如何将逻辑数学化（如之前所说，他们浑然不知莱布尼兹早已做了研究）。1846 年，德摩根发表了一篇关于三段论的论文，主要是针对命题中的「所有」、「有些」，或「大部分」提出量化的讨论。</span></p>
+<p><span style="font-weight: 400;">没想到论文发表后，另一位英国哲学家汉弥尔顿 (Sir William Hamilton) 立即跳出来指控德摩根剽窃自己的想法。布尔身为德摩根好友，自然要关切两人争执的内容，没想到他深入研究后，竟从原本的旁观者摇身一变为一代宗师。</span></p>
+<div>Pexels</a></p></div>
+<h3>命题真伪改用 1 与 0 代表，逻辑关係化为数学运算</h3>
+<p><span style="font-weight: 400;">1847 年，布尔出版了《逻辑的数学分析》(The Mathematical Analysis of Logic)，这本仅仅 82页的小册子立即撼动了哲学界与数学界。这裡面完全用代数的形式来表达传统逻辑，像「且」、「或」、「非」、「若……则……」等逻辑关係都化为乘法与加、减法；命题的真伪就用 1 与 0 两种数值代表；另外布尔再订出结合律、分配律、……等基本公理，成功地将逻辑数学化。</span></p>
+<p><span style="font-weight: 400;">从此逻辑推论可以改用简洁精确的数学式计算，不但避免语意模稜两可造成的谬误，也大幅增加处理命题的效能。在许多学者投入之下，数理逻辑这门全新的路线迅速发展，布尔自己也在 1854 年出版的《思维法则》(The Laws of Thought) 中，把整个系统补强得更完整。</span></p>
+<p><span style="font-weight: 400;">其实布尔的研究成果有许多都是莱布尼兹已经做过的，但历史就是这麼奇妙，莱布尼兹被视为二进位制的创立者，是因为一个世纪前的哈里厄特没有公开发表论文。如今换成莱布尼兹自己没有将逻辑代数的研究整理发表，而让逻辑代数在一个半世纪后冠上布尔之名（称为「布林代数」(Boolean algebra)，”Boolean”意指「布林的」）。</span></p>
+<div>WIKI</a></p></div>
+<p><span style="font-weight: 400;">还有一点令人惋惜的是，莱布尼兹如此看重二进位制，却没有像布尔那样，用 1 与 0 代表命题运算后的真伪。对于电脑运算而言，这是绝对必要的，因此从电脑发展的角度而言，即使莱布尼兹的文稿更早公开，布尔一定还是会在发明电脑的功劳簿上记上一笔。</span></p>
+<h3>二进位制与布林代数就绪，现代电脑只欠东风</h3>
+<p><span style="font-weight: 400;">事实上，布尔对计算机也不陌生。由于好友德摩根是爱达·勒芙蕾丝的数学家教，透过这层关係，布尔曾经跟巴贝奇书信往来。他在 1862 年写给巴贝奇的一封信中，还特地感谢他为自己解释差分机的细节。就像当年莱布尼兹曾设想过二进位的计算机，我们不禁要想像若是结合布尔的全新观点与巴贝奇的设计天分，是否会改变计算机的历史？</span></p>
+<p><span style="font-weight: 400;">但这已无从得知了，因为布尔在两年之后就死于非命。原来布尔冒着大雨到学校教课，因此感冒发烧，不料他那迷信顺势疗法的老婆，竟继续往布尔身上浇了好几桶水，反而导致他严重肺炎，才四十九岁就因病过世。</span></p>
+<p><span style="font-weight: 400;">无论如何，没有电力还是不会有现代电脑，因此儘管二进位制与布林代数早已就绪，仍需等待东风——也就是电力系统与硬体零件，计算机才能航向全新的世代。当然，东风起了，还得有个诸葛孔明运筹帷幄呢……。</span></p>
+<div class="wpbcap wpbcap-188167 wpbcap-_904">
+<hr><p><a href="https://panmarket.asia/product-category/%E8%AE%80%E5%86%8A%E6%A1%8C%E9%81%8A%E9%A4%A8/%E7%A7%91%E7%A7%91%E8%AE%80%E5%86%8A%E9%A4%A8/%E4%B8%AD%E5%B0%8F%E5%AD%B8%E7%94%9F%E5%BF%85%E8%AE%80/%E6%BC%AB%E7%95%AB%E5%A4%A7%E8%8B%B1%E7%99%BE%E7%A7%91/?utm_source=904CAP" target="_blank" rel="noopener"><img class="aligncenter wp-image-190987 size-large" src="https://pansci.asia/wp-content/uploads/2020/07/271559ec25268bb9bb2ad7fd8b4cf71a-560x297.jpg" alt="" width="560" height="297" srcset="https://pansci.asia/wp-content/uploads/2020/07/271559ec25268bb9bb2ad7fd8b4cf71a-560x297.jpg 560w, https://pansci.asia/wp-content/uploads/2020/07/271559ec25268bb9bb2ad7fd8b4cf71a-350x186.jpg 350w, https://pansci.asia/wp-content/uploads/2020/07/271559ec25268bb9bb2ad7fd8b4cf71a-768x407.jpg 768w, https://pansci.asia/wp-content/uploads/2020/07/271559ec25268bb9bb2ad7fd8b4cf71a-30x16.jpg 30w, https://pansci.asia/wp-content/uploads/2020/07/271559ec25268bb9bb2ad7fd8b4cf71a.jpg 1000w" sizes="(max-width: 560px) 100vw, 560px"></a></p>
+<hr><div></a>
+<p class="wp-caption-text"><a href="https://donate.pansci.asia/" target="_blank" rel="noopener"><strong>斗内泛科学，支持好科学</strong></a></p>
+</div>
+<p> </p>
+<p style="text-align: center;"><a href="https://student.panmedia.asia/#/index"><img class="alignnone wp-image-190549 size-large" src="https://pansci.asia/wp-content/uploads/2020/07/06613049735c47ebc8879745b2cd9344-560x207.jpg" alt="" width="560" height="207" srcset="https://pansci.asia/wp-content/uploads/2020/07/06613049735c47ebc8879745b2cd9344-560x207.jpg 560w, https://pansci.asia/wp-content/uploads/2020/07/06613049735c47ebc8879745b2cd9344-350x129.jpg 350w, https://pansci.asia/wp-content/uploads/2020/07/06613049735c47ebc8879745b2cd9344-768x284.jpg 768w, https://pansci.asia/wp-content/uploads/2020/07/06613049735c47ebc8879745b2cd9344-30x11.jpg 30w, https://pansci.asia/wp-content/uploads/2020/07/06613049735c47ebc8879745b2cd9344.jpg 852w" sizes="(max-width: 560px) 100vw, 560px"></a></p>
+</div>
+<p>The post <a rel="nofollow" href="https://pansci.asia/archives/190884">电脑运算的基础——布林代数，是麼搞出来的？│《电脑简史》数位时代（三）</a> appeared first on <a rel="nofollow" href="https://pansci.asia">PanSci 泛科学</a>.</p>
