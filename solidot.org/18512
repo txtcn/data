@@ -13,3 +13,9 @@ ISO/IEC 14882:2020 标准草案<a href="https://www.phoronix.com/scan.php?page=n
 ➜战士遗骸揭示青铜时代的欧洲人不能喝牛奶
 https://www.solidot.org/story?sid=65462	27716
 大约三千年前，数千名战士在今天德国北部的 Tollense 河畔展开一场大战。过去十年，考古学家挖掘出埋在沼泽里的数百人的遗骸。它是至今发现的最大规模的史前冲突之一。对残骸的基因测序发现，这些战士无法消化鲜奶。<a href="https://www.cell.com/current-biology/fulltext/S0960-9822(20)31187-8">研究报告</a>发表在《Cell Biology》期刊上。研究人员测序了 14 个遗骸的 DNA，发现他们都来自今天的德国、波兰和捷克。14 个遗骸有 2 个来自女性。研究人员发现，这些战士<a href="https://www.sciencemag.org/news/2020/09/warrior-skeletons-reveal-bronze-age-europeans-couldn-t-drink-milk#" target="_blank">都没有携带能消化牛奶的基因突变</a>。被称为乳糖酶耐受性的突变在今天的欧洲人中间很常见。此前的研究发现，乳糖酶耐受性在公元 500 年的德国部分地区就已经很常见了，在公元 1000 年扩散到了整个地区。这一时间与那次大战相距 2000 年。这意味着在大约一百代内，乳糖酶耐受性的基因突变渗透到了整个欧洲人口。研究人员称，这是至今人类基因组中发现的最强势的基因选择。<p>
+➜Linux 内核支持 Rust 开发所面临的挑战
+https://www.solidot.org/story?sid=65463	33388
+作为一种现代系统级语言，Rust 比 C 或 C++ 更安全也更容易使用，Linux 内核主要是用 C 开发的，Rust 被很多人认为是 C 和 C++ 的最佳替代，而 Linus Torvalds 等内核的核心维护者对在内核中使用 Rust <a href="https://www.solidot.org/story?sid=64946">持开放态度</a>。为了用于内核开发，Rust 只是能生成可链接到内核的代码是远远不够的，需要找到一种方法让 Rust 能访问内核使用的 API，而内核所有的 API 都定义在 C 头文件内。 Rust 支持与 C 代码的互操作，包括调用使用 C ABI 的函数。表面看，Rust 能很好的与现有的  C API 整合起来，但魔鬼在细节中。在最近举行的虚拟 <a href="https://linuxplumbersconf.org/">Linux Plumbers Conference</a> 会议上，开发者谈论了内核使用 Rust 开发<a href="https://lwn.net/SubscriberLink/829858/281103f9c6fd0dc2/">所面临的挑战</a>。<p>
+➜中芯国际因被禁传言导致股价暴跌
+https://www.solidot.org/story?sid=65464	36002
+中国最大芯片代工制造商中芯国际股价<a href="http://www.ftchinese.com/story/001089294">周一大幅下挫</a>。此前有报道称，美国计划将该公司列入黑名单，这可能导致中国半导体产业面临灭顶之灾。中芯国际港股价格暴跌近 20%，A股股价下挫近 10%，公司市值蒸发逾 50 亿美元。中芯国际上周六发布声明称，对于美国政府考虑禁止其与美国公司进行任何交易的消息，该公司感到“震惊和不解”。据三位知情人士透露，美国政府正考虑将中芯国际加入所谓的“实体清单”——美国人只有在获得特别许可证的情况下才能与清单上的公司做生意。在讨论将中芯国际列入黑名单的同时，华盛顿方面为对华为实施额外制裁设定的宽限期将于 9 月 15 日结束。这些制裁规定，世界任何地方的企业未经许可都不得销售供华为或华为产品使用的芯片——只要这些芯片是使用美国软件设计或使用美国设备制造的。<p>
