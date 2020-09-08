@@ -1,0 +1,125 @@
+➜美思迪赛65W氮化镓PD快充DEMO评测
+http://www.sohu.com/a/413258584_296845	25301
+<p>据充电头网此前报道，苏州美思迪赛半导体技术有限公司（MIX-DESIGN）推出了一款氮化镓快充主控+栅极驱动器SOC芯片MX6535，一举成为了国内首家掌握氮化镓控制及驱动技术的公司，并在全球范围内成为继美国TI和安森美之后的第三家推出氮化镓驱动 及控制器的公司，打破了国内没有氮化镓控制IC和驱动IC的局面，在业内引发热议。</p>
+<p>近日，搭载美思迪赛MX6535的65W氮化镓PD快充DEMO已经抵达充电头网评测室，下面就为大家带来这款全套国产器件且具备量产条件的氮化镓快充DEMO的详细评测。</p>
+<p><strong>一、美思迪赛65W氮化镓快充DEMO外观</strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200815/0ebf5fb5f5bc4e78b6212f5b188cbbf4.jpeg" max-width="600" /></p>
+<p>充电器整体外观呈现白色，边角处圆润的过渡处理，这与此前乐视24W充电器的外壳大小基本保持一致。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200815/bdaaec46dd5649a08fd23c1e7025d19d.jpeg" max-width="600" /></p>
+<p>将其和苹果61W充电器对比一下大小，可以看出整个充电器相较于苹果的61W充电器要小一半以上。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200815/1b63d94afe7a4df2ac8cc6699fb31127.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>充电器的两侧均带有圆形的凹槽，这样用户在使用时，比较方便拿捏在手里。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200815/f63fd9fb19874287a9cad0593c8b5dcb.jpeg" max-width="600" /></p>
+<p>使用卡尺测得充电器不算插脚的长度约为51.39mm。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200815/cc6d56fb8d8445d8969174a31fdb1c55.jpeg" max-width="600" /></p>
+<p>宽度约为33.81mm。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200815/18a3f590d59247018aa84ca7bffc7b1e.jpeg" max-width="600" /></p>
+<p>厚度约为33.82mm。根据充电器外壳的三维尺寸可计算出充电器的体积约为58.7621cm³，继而可以得出功率密度为1.1/cm³，这个功率密度，在目前全球氮化镓充电器的市场当中，已经是处于领先的位置。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200815/88ab4a0bfb624ee894aeeb02cf626608.png" max-width="600" /></p>
+<p>充电头网对市面上在售的45款氮化镓快充的功率密度进行了计算统计，并汇总成一份柱状图。从图中可以看到，美思迪赛65W氮化镓快充DEMO的功率密度位列第四，表现亮眼。 </p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200815/4379ab1231d94528a4660a6399d66ac7.jpeg" max-width="600" /></p>
+<p>充电器的净重约为72.2g。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200815/bfdbf39c4f5e42699978290270205489.png" max-width="600" /></p>
+<p>美思迪赛65W氮化镓快充DEMO的内部结构非常简单，仅需要一款PCB板就能完成所有元器件的布局。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200815/631b569a7f9a43b5af3f6a374e28c69a.jpeg" max-width="600" /></p>
+<p>PCB板背面元器件数量非常精简，这一方面得益于MX6535内置了氮化镓驱动，并消除了传统的二次反馈电路；另一方面也得益于搭配了自家的次级芯片MX5420，内置同步整流控制器和协议识别，并通过数字算法把传统初次级电压及电流RC环路补偿网络直接省去。值得一提的是，MX5420完成所有快充复杂功能的同时，竟然只有区区10个PIN脚。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200815/e5aac9bae97e48dc8fae705c89838061.png" max-width="600" /></p>
+<p>该方案搭载的GaN功率器件来自国产氮化镓供应商英诺赛科，型号INN650D02，耐压650V，导阻低至0.2Ω，符合JEDEC标准的工业应用要求。INN650D02 “InnoGaN”开关管高频特性好，且导通电阻小，适合高频高效的开关电源应用，采用DFN8*8封装，具备超低热阻，散热性能好，适合高功率密度的开关电源应用。</p>
+<p><strong>二、美思迪赛65W氮化镓快充DEMO快充测试</strong></p>
+<p>1、快充协议和PDO</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200815/335021d097c14a5d8ed74cc3d0631dfb.jpeg" max-width="600" /></p>
+<p>将美思迪赛65W氮化镓快充方案进行简单的上电测试，ChargerLAB POWER-Z KT002检测到该方案支持Apple2.4A、Samsung5V/2A、QC3.0、QC2.0、DCP、AFC、FCP等多动协议。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200815/65d80579f8af4f2da11ed7bf69e717f1.jpeg" max-width="600" /></p>
+<p>PDO报文显示，该方案支持USB PD3.0 PPS协议，其中固定电压输出档位为5V/3A、9V/3A、12V/3A、15V/3A、20V/3.25A；PPS电压档位为3.3-21V/3A。</p>
+<p>2、兼容性测试</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200815/ecb1b02cd66e4480bcc4ea125e4a2d0e.jpeg" max-width="600" /></p>
+<p>iPhone11 Pro Max 支持USB PD和Apple2.4A快速充电协议，使用美思迪赛65W氮化镓快充DEM对其充电，电压9.12V，电流2.49A，功率22.76W。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200815/2e3ad8432bba49f79f3b428c916ca99b.jpeg" max-width="600" /></p>
+<p>三星 S20 Ultra 5G手机支持PPS、AFC和USB PD快速充电协议，使用美思迪赛65W氮化镓快充DEMO对其充电，电压9.15V，电流1.60A，功率14.66 W。 </p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200815/5e5b98b6112b4fa493c1876ee3765d0b.jpeg" max-width="600" /></p>
+<p>努比亚红魔5G手机支持PPS、QC和USB PD快速充电协议，使用美思迪赛65W氮化镓快充DEMO对其充电，电压12.09V，电流2.35A，功率28.46 W。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200815/347a0bc73f864434aae05794c4d0e389.jpeg" max-width="600" /></p>
+<p>小米 10 Pro手机支持PPS、QC和USB PD快速充电协议，使用美思迪赛65W氮化镓快充DEMO对其充电，电压5.11V，电流2.8A，功率14.36W。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200815/252d4863ba254d3e875283049231e32a.jpeg" max-width="600" /></p>
+<p>iPad Pro 11支持Apple 2.4A和USB PD快速充电协议，使用美思迪赛65W氮化镓快充DEMO对其充电，电压15.11V，电流2.04A，功率30.96W。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200815/be7b3e9421ed428a84ffc683d1a04954.jpeg" max-width="600" /></p>
+<p>iPad Air 3支持Apple 2.4A和USB PD快速充电协议，使用美思迪赛65W氮化镓快充DEMO对其充电，电压15.09V，电流2.00A，功率30.24W。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200815/3f5480fbc03f4bb5a60d09568bcdf1ac.jpeg" max-width="600" /></p>
+<p>Macbook Pro 13支持USB PD快速充电协议，使用美思迪赛65W氮化镓快充DEMO对其充电，电压20.16V，电流2.84A，功率57.37W。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200815/5aaad31f28e04e46aed6709ab195b696.jpeg" max-width="600" /></p>
+<p>ANKER A1290移动电源支持USB PD快速充电协议 ，使用美思迪赛65W氮化镓快充DEMO对其充电，电压20.16V，电路2.84A，功率57.37W。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200815/fce51edd6b1748abb1d861859364dac4.jpeg" max-width="600" /></p>
+<p>倍思65W移动电源支持USB PD快速充电协议，使用美思迪赛65W氮化镓快充DEMO对其充电，电压20.16V，电路2.98A，功率60.07W。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200815/5d276617b9544bf781eac7a203edcfce.png" max-width="600" /></p>
+<p>为了方便大家查阅，我们将兼容性测试数据整理成表格。大部分设备都能开启快充。手机中iPhone 11 Pro最具有代表性，功率达到22W；iPad Pro 11的功率在平板中也是最高达到30W；三台笔记本的功率都接近60W，相差无几；此外，该款快充DEMO对移动电源的兼容性也不错，测试的几款大功率移动电源均可快充，最高功率可达60W。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200815/8eb826e8216e485d9a6054931dc75631.png" max-width="600" /></p>
+<p>美思迪赛65W氮化镓快充DEMO兼容性测试功率柱状图。</p>
+<p>3、持续输出稳定性</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200815/19c7dbb0f7bc48cf9b06389dc667d408.png" max-width="600" /></p>
+<p>按照额定功率20V/3.25A满载进行稳定性测试，测试时间为一小时，测试过程中电压值呈水平直线，无明显波动情况，长时间满载也十分稳定。</p>
+<p>4、温升测试</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200815/bc3fe9f8b5ff4abfacb29af4aefb2220.jpeg" max-width="600" /></p>
+<p>将美思迪赛65W氮化镓快充DEMO放置在温度约为25℃的恒温箱中，并以20V/3.25A，65W的功率持续输出一小时，然后使用FLIR E4红外热像仪分别从两个角度测试充电器外壳温度，其中一个角度测得最高温度约为76.8℃。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200815/72aa8109af284578968139e5f0dc471d.jpeg" max-width="600" /></p>
+<p>另一个角度最高温度约为81.4℃。</p>
+<p>考虑到这个65W氮化镓快充DEMO的只是采用非常简易的散热装置，没有采用更符合外壳结构的特殊开模的散热片来辅助散热，而且PCB仅是单板设计，相信后续进入量产阶段应该还有很多可以优化的空间。而从充电头网评测过的多个65W GaN充电器在同等条件的温升测试结果横向对比的来看，美思迪赛65W氮化镓快充DEMO比某些量产版的产品温升还低6-7°，可以说美思迪赛这个65W 氮化镓快充DEMO的在持续输出65W最大功率时的温升表现还是比较优异的。</p>
+<p><strong>充电头网总结</strong></p>
+<p>外型方面，美思迪赛65W氮化镓快充DEMO仅需要一块小PCB板就能实现65W输出，打破了传统氮化镓充电器内部复杂的结构设计；开发更简单、用料更精简、综合成本更低。同时，65W的PCB板可以直接装入常规的24W充电器的外壳，成品体积非常小巧，功率密度得到大大提升。根据实际测量，套上外壳后其功率密度可达到1.1W/cm³，领先业界大部分氮化镓快充产品。</p>
+<p>性能方面，测得该方案除了支持USB PD快充之外，还兼容Apple2.4A、Samsung5V/2A、QC3.0、QC2.0、DCP、AFC、FCP等多种协议，不仅可以满足笔记本电脑的充电需求，还可支持苹果、小米、三星、华为等多个主流品牌的手机快充。在实际的兼容性测试中对于大多数设备均可以握手相应的快充协议，在为三台笔记本充电时可以握手PD快充，功率接近60W，为努比亚红魔5G手机充电成功握手PPS快充，整体的快充兼容性不错。</p>
+<p>在一个小时满载测试中，美思迪赛65W氮化镓快充DEMO也有不错表现，在没有做更符合外壳结构的特殊开模散热片的情况下，满载一小时温升表现也比业界某些量产版同功率密度的氮化镓快充更优异，相信后续通过量产阶段的优化，其产品的性能会有更进一步提升。</p>
+➜Diodes推出高性价比的高端高功率密度有源钳位PD3.0快充方案
+http://www.sohu.com/a/413259748_296845	25877
+<p>2020年随着数码产品大功率应用趋势以及5G时代的到来，高端大功率USB PD3.0 快充方案的产品方案正式进入快车道， 而在消费类电源领域的市场容量增速迅勐。</p>
+<p>高端大功率USB PD快充方案市场的爆发, 带来的不仅是功率器件市场的变革（例如GaN 氮化镓），同时也促进了高效率电源控制技术发展（例如 Active Clamp Flyback，ACF有源钳位）。电源配件厂面临各方面设计和生产的挑战， 如何兼顾及平衡重要因素-充电器尺寸， 工作频率、效率、散热、生产安规及品质一致性， 及重要系统成本的挑战。</p>
+<p><strong>一、 Diodes 公司新型有源钳位USB PD应用方案：AP3306 + APR347 + AP43771</strong></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200815/f852896b1c644e7ead729022c965f12f.png" max-width="600" /></p>
+<p>针对45~65W的大功率USD PD应用，市场不断追求高效率，小体积和低成本的趋势。 Diodes公司推出的AP3306、APR347、AP43771的组合提供了一种高效率的新型有源钳位电源架构， 适用于高功率密度的USB PD3.0 and QC4/4+应用场景。</p>
+<p>AP3306是一款新型ACF控制器，它能同时驱动上钳位MOS开关及下主开关MOS管，实现Zero-Voltage-Switching（ZVS）零电压关断 及漏感能量回收达到高效率性能。内置高压启动和X放电功能实现30mw低待机，同时内置120V LDO 给辅助绕组VCC输入稳压从而节省外围器件。</p>
+<p>AP43771是一款高性价比的小封装USB PD3.0 PPS 解码器，DFN14 封装。兼容USB Type-C specification Rev1.2 和 USB power delivery (PD) specification Rev 3.0 V1.1 协议。TID 认证号 11090028。它同时也兼容QC4/4+ 协议（Report Number QC2019040851)。</p>
+<p>APR347 是一款SOT26封装的 高性价比的同步整流控制器，搭配原边AP3306一起实现整个系统的高效率目标。</p>
+<p><strong>二、 Diodes公司新型有源钳位 USB PD方案的特点和对比优势</strong></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200815/40dd13afd4e0430092f387a4194a564b.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>特点1：传统ACF线路采用上下开关对称型的GaN管或MOS管，而 Diodes ACF方案的不对称型结构采用较大电流容量的Low-Side下MOS管及较小电流容量的High-Side上MOS钳位管。 ACF 控制器内建上下MOS管驱动线路，调节开关时序， 简化了钳位管的驱动难度，并节省了传统ACF线路中昂贵的上下GaN 管 （使用GaN 开关架构时）， 或者节省了上MOS 钳位管high side驱动IC及high side MOS钳位管 （使用 MOS开关架构时）。</p>
+<p>特点2：传统ACF方案的上下管驱动为互补逻辑，上MOS 钳位管的开通时间很长，</p>
+<p>导致钳位上管的电流容量几乎和下管一样，增加了钳位上管的成本压力。而Diodes ACF方案中的AP3306 对上MOS 钳位管的控制策略做了进一步优化，上钳位管只开通一小段时间，从而有效地降低了上MOS 钳位管开关的电流容量，节省了系统成本。</p>
+<p>特点3：AP3306+APR347+AP43771的ACF架构搭配MOS可以达到甚至超过传统反激拓扑搭配GaN功率管的效率水平。目前整合驱动线路的GaN相关产品的价格区间依旧处在高水位，所以Diodes的ACF方案总体成本及性价比显着优于配置GaN功率管的系统。</p>
+<p>特点4：AP3306集成了高压启动，低待机及X放电线路。并且针对USB PD的全范围输出应用内置了120V 的LDO来稳定VCC电压。AP3306 的功能配置大大减少了IC外围器件，减少了系统的BOM数量。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200815/8eb919d3fa024a3990262ae3a06decd9.png" max-width="600" /></p>
+<p>Diodes新型有源钳位 USB PD方案对比优势 </p>
+<p><strong>充电头网总结</strong></p>
+<p>充电头网统计数据显示，目前华为、小米、OPPO、魅族、三星、努比亚、realme、thinkplus等多家知名手机/笔电品牌先后入局大功率充电器。与此同时，数十家大型电商品牌也出现扎堆发布的大功率65W快充的局面。</p>
+<p>相信到2021年底，市面上的65W充电器的数量将有数倍增长， 届时高性价比高功率密度的竞争回归到产品的性价比及可生产性。 有源钳位（ACF） MOS管架构线路在45W到65W 单口或双口 PD3.0 快充电源适配器应用必将大展宏图，在快速充电器的赛道上为各家参赛者插上飞翔的翅膀。同时， 中国各大 GaN生产厂家的大力推出更好性价比的GaN开关管， 配合 ACF架构，整合GaN的驱动线路控制器， 可在更大输出功率 (90W-200W) 更小尺寸单口或双口 PD3.0 快充电源适配器中得到应用。</p>
+➜高通颁布第一张QC5快充芯片认证证书，英集芯拔得头筹！
+http://www.sohu.com/a/413295142_296845	45498
+<p>近日，充电头网了解到，英集芯IP2726S取得首张高通QC5认证证书。</p>
+<p><strong>一、高通推出QC5快充技术</strong></p>
+<p>高通在2020年7月27日推出目前最快速的充电技术Quick Charge 5（QC5）。该技术的性能较前代平台显着提升，充电效率比QC4提升70%，并且输出功率是QC1的10倍，并支持2S电池和20V功率输出。将4500mAh的电池从0%电量充电至50%仅需要5分钟。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200815/fca8cdd617e547de834e73bc267785da.jpeg" max-width="600" /></p>
+<p>QC5的充电速度是前代平台的4倍，树立了充电性能新标杆。除了支持极速充电，QC5还支持极其出色的安全特性——支持12档位的电压、电流和温度保护，如25V的USB输入过压保护和30V以上的外部充电功率控制。其运行温度也比QC4低10摄氏度。</p>
+<p>QC5支持双充/三充技术、自适应输入电压、第四代最佳电压智能协商（INOV4）算法、Qualcomm Battery Saver电池健康管理以及全新的Qualcomm适配器功率智能识别技术，上述技术将共同实现充电效率的最大化、增强安全性并帮助延长用户终端的电池寿命。</p>
+<p><strong>二、英集芯获得首张QC5认证证书</strong></p>
+<p>英集芯IP2726S于2020年8月12日正式获的高通办法的QC5认证证书，证书编号：QC20200812181。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200815/8dcca11f78314fd696ce3e013741d010.png" max-width="600" /></p>
+<p>据了解，IP2726S为最新的快充技术而设计，最高支持到100W+，同时具极高的可靠性，可以在极为严苛的高温环境下稳定工作，为高功率密度电源设计提供助力。</p>
+<p>GRL 执行长陈嘉训表示：GRL与英集芯长期合作，包括前、中、后期产品验证，很荣幸能参与英集芯最新QuickCharge 5系列芯片的诞生。</p>
+<p>英集芯市场总监彭峰称：“与高通和GRL紧密的合作，使得我们再次走到了快充技术的最前列，我们将致力于给客户提供最新最优质的解决方案，推动QuickCharge技术的推广。”</p>
+<p>高通技术产品管理高级总监GeorgePaparrizos 表示：“借由Quick Charge 5的兼容性和充电速度的提升，使得更多的消费者可以感受到QC5最快并且最通用的充电解决方案。我们祝贺InjoinIC取得这一认证的里程碑，同时也带给消费者第一个100W+充电解决方案。”</p>
+<p><strong>充电头网总结</strong></p>
+<p>据了解，QC5快充技术预计将于2020年第三季度随商用终端面市。骁龙865、骁龙865 Plus和未来的顶级和高端骁龙移动平台均可支持Quick Charge 5。</p>
+<p>英集芯IP2726S芯片获得高通QC5认证证书，将有助于手机厂商早日在手机产品中实现100W快充，完成快充技术的全新升级。</p>

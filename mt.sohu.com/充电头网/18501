@@ -1,0 +1,625 @@
+➜东科发布国内首颗内置GaN电源管理芯片：减少40%外围
+http://www.sohu.com/a/415096375_296845	4906
+<p>2020年8月21日，充电头网主办的「2020（秋季）USB PD＆Type-C亚洲展」在深圳成功举办。在本次展会的研讨会上，东科半导体半导体董事、销售总监赵少峰先生带来了 《东科半导体匠心所在——高功率密度下合封芯片优势》主题演讲，重磅发布了国内首颗合封GaN的电源管理芯片DKG045Q系列，成为了氮化镓技术在快充电源领域的发展的里程碑。东科也由此成为了国内首家掌握氮化镓功率器件与电源管理芯片合封技术的厂商。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/fcb38a8e8a1c44d5bbea3b55dab90664.jpeg" max-width="600" /></p>
+<p>据赵少峰先生介绍，东科DKG045Q系列采用QFN 5mm*6mm封装， 内部整合了650V/200mΩ E-mode GaN HEMT、逻辑控制器、GaN驱动器、高压启动管等，采用变频QR控制方式，最大输出功率为45W，开关频率最高为200kHz。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/fe022fbbc887438e8fa26dfbd2915554.jpeg" max-width="600" /></p>
+<p>东科DKG045Q系列采用高集成的设计，有助提高快充产品的整体功率密度。除了将氮化镓器件内置，该芯片内部还集成了自供电线路，无需第三绕组，无需Vcc稳压电路、Brown in/Brown out保护、全电压恒功率补偿以及各种保护功能。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200827/3aaa277d39784d4eb262ada4067e3f60.jpeg" max-width="600" /></p>
+<p>得益于东科合封氮化镓电源管理芯片DKG045Q以及高集成同步整流芯片DK5V100R10M的采用，东科45W氮化镓快充DEMO整体布局十分精简。据悉，东科仅用了64个元器件就完成了这套参考设计的开发，产品精简程度颠覆传统。功率密度方面，该参考设计的整体尺寸约为43.1mm×36.1mm×19.6mm，配上外壳之后，其功率密度仍可以达到1.12W/cm³，领先目前市面上的大部分氮化镓快充产品。</p>
+<p><strong>总结</strong></p>
+<p>东科采用合封式控制器+驱动器+GaN HEMT方案，减小快充方案在高频下的寄生参数，从而降低了快充电源的调试难度，并达到了精简外围元器件、提高功率密度的目的。</p>
+<p>在成本方面，得益于高集成的芯片设计，基于东科电源芯片开发的氮化镓快充方案，外围器件数量减少了40%以上，生产成本大幅降低，对推动速氮化镓快充技术的普及起到了积极地作用。</p>
+➜拆解报告：MI小米1A1C 100W快充车充CC07ZM
+http://www.sohu.com/a/415104275_296845	6942
+<p>8月11日雷军举行了小米10周年公开演讲，发布了支持120W超大功率快充的小米10至尊纪念版，配套的各种配件也同步登场，其中一款产品就是小米车载充电器快充版1A1C 100W。这款产品制造商为小米旗下的生态链企业江苏紫米，支持12V-24V输入通吃小轿车与大卡车。</p>
+<p>此外车充配备时下热门的1A1C双输出接口，并且分别支持最大18W和100W快充。USB-C口除了可匹配小米10至尊纪念版使用外，还兼容市面上绝大部分手机、平板、笔记本等设备。为方便用户使用，产品内赠一根1米长的CC数据线，支持100W充电。下面充电头网就对这款产品进行拆解，一起来看看其内部设计做工如何。</p>
+<p><strong>一、小米100W车充外观</strong></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/0c6adabcb1e84932ad37d8964a64e363.jpeg" max-width="600" /></p>
+<p>包装盒正面印有产品外观图，右上角是小米logo，下端是产品名称以及功率和接口标识。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/39cbb3ddd6ea442099360bbdf1175a4e.jpeg" max-width="600" /></p>
+<p>包装盒背面印有产品的参数信息，此外还贴有条形码贴纸。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/1d78a68fcf824074940da85ec77d67d3.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>包装盒内部设有隔离板，分出两个凹槽分别放置车充和数据线。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/23597967bf92435ea187936f68bc80f3.jpeg" max-width="600" /></p>
+<p>包装内含车充、CC数据线和使用说明书。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200827/d486dc9e214646308b827ed027edc9a7.jpeg" max-width="600" /></p>
+<p>数据线线头塑料壳采用亮面设计，并且做了抗弯折处理。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/3508740080d04926a4f336067a34c8db.jpeg" max-width="600" /></p>
+<p>线身整体光滑无毛刺。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/8ee04e8bbaeb49bd9b310fa0277201e3.jpeg" max-width="600" /></p>
+<p>线缆总长度约为103cm。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200827/c0048df4b3b14560a168b1f9614fcaca.jpeg" max-width="600" /></p>
+<p>使用ChargerLAB POWER-Z KM001C检测，显示该线缆带有E-Marker芯片，电力传输能力为20V/5A，数据传输能力为USB 2.0。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200827/a4ca1806c88f4e8ba5520334f910a8cf.jpeg" max-width="600" /></p>
+<p>小米100W快充车充机身三段式设计，每段机身均为圆柱造型，机身壳仿阳极PC喷涂制作，表面哑光处理，触摸手感细腻质感十足。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/8d496d4f15e545f482307a78d9346eff.jpeg" max-width="600" /></p>
+<p>机身壳上标注车充的参数信息</p>
+<p>型号：CC07ZM</p>
+<p>输入：DC 12-24V/9.5A</p>
+<p>单口输出：（USB-A）5V3A、9V2A</p>
+<p>（USB-C）20V5A MAX</p>
+<p>双口输出：68W MAX</p>
+<p>产品尺寸：75.15*33.3*33.3mm</p>
+<p>委托方：小米通讯技术有限公司</p>
+<p>制造商：江苏紫米电子技术有限公司</p>
+<p>生产厂：深圳市首诺信电子有限公司</p>
+<p>生产日期：2020年8月</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/01f7f308fab5446488f4a8b58c8781c9.jpeg" max-width="600" /></p>
+<p>车充正极顶针特写，锰钢与黄铜材质制作，防滑耐磨避免行车过程中颠簸脱出。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/c19aabd402504390b219736bcb6174aa.jpeg" max-width="600" /></p>
+<p>输出顶面配有1A1C两个USB接口，边缘设有指示灯。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/90152303203348f8b95ca8c9990aaf93.jpeg" max-width="600" /></p>
+<p>两个接口旁分别印有USB-C和USB-A标识，C口下方还有100W功率字样。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/d2c8cea6e561413392b95a3d7b9c4070.jpeg" max-width="600" /></p>
+<p>接通电源后，平时待机状态下指示灯亮白光，方便夜间对准插入使用，</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/a62764c78e2b4549a416bc16ecbaf8ac.jpeg" max-width="600" /></p>
+<p>而为iPhone 11等低功率设备充电时显示绿色灯光，为小米10等中功率设备充电时显示蓝色灯光，为小米10至尊纪念版充电时显示金色灯光，不同功率状态一目了然。</p>
+<p>经实测，手机在充电的不同功率需求下，会显示不同的颜色，米10至尊版在低电量下充电会显示橙色，在电量比较高的时候充电会显示蓝色，在快接近满电的时候充电会显示绿色，更直观的体现了车充当前状态下的输出。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/4644f372db324dbcb451fe813c14ca5e.jpeg" max-width="600" /></p>
+<p>车充顶面比一元硬币稍大一些。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200827/b8f0fd37a3484f7a9332633b2bf4792d.jpeg" max-width="600" /></p>
+<p>车充拿在手上直观感受。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/d02521f4b69a4356ab0b5b2674343638.jpeg" max-width="600" /></p>
+<p>使用ChargerLAB POWER-Z KT002检测USB-A口的输出协议，显示支持Apple 2.4A、Samsung 5V/2A、DCP协议，以及QC2.0/3.0、AFC、FCP快充协议。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/8cf6f9b000aa4244b7caabea2e94c112.jpeg" max-width="600" /></p>
+<p>另外使用KT002检测USB-C口输出协议，显示支持Apple 2.4A、Samsung 5V/2A、DCP、QC2.0/3.0和FCP协议。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/a4469a96da754c4ba3c6985ac07f9444.jpeg" max-width="600" /></p>
+<p>除此之外，其PDO报文显示USB-C口还支持USB PD3.0快充标准，具备5V3A、9V3A、12V3A、15V3A、20V2.25A五组固定电压档位，以及5-11V/5A和5-21V/5A两组PPS电压档位。</p>
+<p><strong>二、小米100W车充拆解</strong></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/2e972934a1814834b0b1cfb1a47c9e3b.jpeg" max-width="600" /></p>
+<p>将输出端外壳拆下，外壳采用卡扣进行固定封装，下面是导光塑料壳。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/c2a36ff0e6d94267a792a7c9608a0de4.jpeg" max-width="600" /></p>
+<p>将机身壳切割开取出PCB板，电路板采用双层结构设计。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/4c037e919c5a4cb69db918be1179725c.jpeg" max-width="600" /></p>
+<p>两块板子通过塑料固定柱以及正负极金属弹片焊接固定。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/2827bb3132cb48c1b2c459c617dcddbc.jpeg" max-width="600" /></p>
+<p>USB-C口所在小板背面一览。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/72cbb10be6a7460192dd51ee58e2ef91.jpeg" max-width="600" /></p>
+<p>USB-A口所在小板背面一览。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/dc8212a118904145a67bd0f1603907cd.jpeg" max-width="600" /></p>
+<p>两块小板拆开，USB-A母座上贴有泡棉，电感打胶固定，两块电路板上正极输入附近都有独立的保险丝。</p>
+<p>经过对两块PCB板电路观察分析发现。小米1A1C 100W快充车充采用两路独立的DC-DC输出，其中A口为降压，C口升降压，由协议芯片控制输出合适电压的设计架构。下面我们输入端开始一一了解各元器件的信息。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/35089a06c93b4e16adfea7bfa9c17481.jpeg" max-width="600" /></p>
+<p>正极导电柱特写，采用镀金材质，分别焊接到两块电路板上。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/cc6b8ca706964c819fcb938872ca45db.jpeg" max-width="600" /></p>
+<p>输入端白色保险丝特写。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/89919db3973847558d03b562d4e4d2fc.jpeg" max-width="600" /></p>
+<p>输入滤波电解电容规格为35V 100μF，来自东佳电子。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/4bdeeae03387499b983c70011d4a6615.jpeg" max-width="600" /></p>
+<p>USB-C小板正面一览。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/6927ad36ae194f50997d05d7faeb1476.jpeg" max-width="600" /></p>
+<p>输入滤波固态电容，规格为35V 100μF。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/fe47e37a57b841a1b5e580fd09f9792d.jpeg" max-width="600" /></p>
+<p>MPS芯源半导体MP5061，4.5-28V，低阻抗负载开关，支持电流限制和电流检测，支持软启动，用于输入过流保护。其内置7mΩ 功率管，支持5-15A的电流限制，支持输出电流测量，快速响应的短路保护。在车充内部起到过流保护作用，防止车辆因颠簸造成接触不好，输入电压下降，电流过大损坏元件，在电流过大时切断车充供电。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200827/254ab440bd38454fb744aad0750ba91c.jpeg" max-width="600" /></p>
+<p>MPS MP5061 详细信息。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200827/566efd2f09d84ff79cf71dc7ad8a03dc.jpeg" max-width="600" /></p>
+<p>丝印2920P五脚芯片。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/737d096115814597837354fef67c1990.jpeg" max-width="600" /></p>
+<p>AOS万代AON7240，NMOS，耐压40V，升降压输入上管。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/c2f1f9d212f4455398fbcf39c8272e49.jpeg" max-width="600" /></p>
+<p>万代AON7240资料信息。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/e1ed5363bf214e21828183da3bc7c9db.jpeg" max-width="600" /></p>
+<p>MPS MP4247升降压转换器，内置两个下管，工作电压3.6-36V，最高5A输出电流，支持I2C配置，适用于USB-PD充电设备，上管外置，内部集成下管，减小面积的同时还能分散发热。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/65e2b2fa436e4eb89b52bc36b4de2bf1.jpeg" max-width="600" /></p>
+<p>MPS MP4247 详细资料。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/e92371498fe5424b98551210da05753d.jpeg" max-width="600" /></p>
+<p>升降压磁环电感特写，两线并绕。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/a7854fd0a1a04eb582d1a28e056cd542.jpeg" max-width="600" /></p>
+<p>万代AON7534，NMOS，耐压30V，输出VBUS开关管。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200827/5db856f2a8874184b5a62388bafab9f1.jpeg" max-width="600" /></p>
+<p>万代AON7534资料信息。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/207aaf9d1274450691a6bcbaab5eee2a.jpeg" max-width="600" /></p>
+<p>输出滤波固态电容，规格为25V 220μF。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/9937b6f2b03a42269362005bc99500a2.jpeg" max-width="600" /></p>
+<p>ABOV现代单片机MC96F6232AU，8位机，用于负载检测及整机控制。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/2e5723882a764ca19a9269b95126dca0.jpeg" max-width="600" /></p>
+<p>USB-C口协议芯片采用天德钰FP6606。这是一颗高性能的USB PD3.0协议芯片，目前有TQFN-24和TQFN-16两种封装方式，除了支持USB PD3.0快充之外，天德钰FP6606可以支持QC4+、QC3.0、QC2.0、AFC、FCP、SCP以及APPLE 2.4A等主流的充电协议，兼容性很强。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/f9d5ae3106034a57bd569c67ff1f50e9.png" max-width="600" /></p>
+<p>天德钰 FP6606 详细资料。</p>
+<p>据充电头网了解，天德钰的快充协议芯片此前已被小米50W 超级闪充移动电源、紫米10000mAh USB PD快充移动电源、努比亚红魔10000mAh电竞移动电源、小米45W USB PD移动电源3高配版、紫米首款MFi认证无线充移动电源、IDMIX 1A1C 18W PD快充充电器等数十款快充产品采用，性能获得客户广泛认可。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/259f52c5d90146779ca62a410653ce7d.jpeg" max-width="600" /></p>
+<p>AON7240，升降压输出上管。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/3b8404a77521415196e6e0cca0d3edb2.jpeg" max-width="600" /></p>
+<p>USB-C母座特写，过孔焊接。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/ed8bc25756d14d12bc39d7730ef3973e.jpeg" max-width="600" /></p>
+<p>USB-A小板正面一览。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/f80597a741cc40c08e32951e86cc2b0a.jpeg" max-width="600" /></p>
+<p>连接两块电路板的排针特写。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/3745d241d5a04de08d50b28c82ecdf7b.jpeg" max-width="600" /></p>
+<p>MPS MP2491C 32V输入，6A输出同步整流降压转换器，支持可编程的电流限制，内置低阻开关管，支持多重完善的保护功能，2.5X3mm QFN封装非常节省面积。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/0a8ddc9d1ae542c2805bcf1ba9957e2f.png" max-width="600" /></p>
+<p>MPS MP2491C 详细资料。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/36b2b0dd7fad43d2a55d974e27212f59.jpeg" max-width="600" /></p>
+<p>降压电感特写，外套热缩管，中心打胶加固。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/b67c189f30cb455086d6ba838ae65067.jpeg" max-width="600" /></p>
+<p>丝印2258Z芯片以及8205AMOS管，其中2258Z是一颗紫米专属定制芯片，用于小电流管理，专为手环、手表、耳机等充电设计。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200827/dc3667433b64428ea16bff0ebdc988e2.jpeg" max-width="600" /></p>
+<p>输出滤波固态电容，规格为16V 220μF。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/84a2d322c9a1420e9090dbc75242045e.jpeg" max-width="600" /></p>
+<p>丝印1206US1B，来自现代单片机。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/608225bf846f48a0ac1de58b45b08df6.jpeg" max-width="600" /></p>
+<p>USB-A口协议IC采用天德钰FP6601Q。这款芯片支持高通 QC3.0/2.0与华为FCP，通过监控USB D+/D-上的电压数据自动调整供电设备上的输出电压，互相握手识别后设备提升充电功率缩短充电时间。在本身就支持QC3.0，QC2.0和FCP的情况下，还能自动识别APPLE、三星、BC1.2协议。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/d303cc98d7cf4ae5a2d71ee197cf4a7c.png" max-width="600" /></p>
+<p>天德钰FP6601Q详细规格资料。</p>
+<p>据充电头网了解，天德钰FP6601Q快充协议芯片此前已被紫米18W QC3.0快充充电器、紫米65W USB PD三口快充充电器、DHL USB PD双口充电器等产品采用。此外，FP6601Q还可用于车充、移动电源领域，并被数十款电源配件采用。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/9361a388673940cd93ca5c6ef761b36e.jpeg" max-width="600" /></p>
+<p>LED RGB指示灯特写。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200827/80f75cc885874af09dd8ea9001ce30de.jpeg" max-width="600" /></p>
+<p>USB-A母座特写。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/75967934e273417ca5a4417fbfa0a5f6.jpeg" max-width="600" /></p>
+<p>全部拆解完毕，来张全家福。</p>
+<p><strong>充电头网拆解总结</strong></p>
+<p>MI小米100W快充车充机身光滑圆润，设有随功率段变色LED灯，十分炫酷且又能了解充电情况。车充配备时下热门的1A1C双输出接口，支持QC、AFC、FCP或PD快充协议，USB-C口具备5V3A、9V3A、12V3A、15V3A、20V2.25A、5-11V/5A和5-21V/5A电压档位。100W超大功率可让设备快速满血复活，下车便有电可用。附带的100W快充线同样可用于各种设备，十分方便。</p>
+<p>充电头网通过拆解了解到，车充内部设有两块PCB板，对应两路独立的DC-DC输出电路。输入采用MPS MP5061做输入过流保护，确保车充使用安全。其中USB-C口采用芯源半导体MP4247搭配万代MOS进行升降压，由天德钰FP6606进行协议识别输出合适电压；USB-A口采用芯源半导体MP2491C降压转换器以及天德钰协议IC FP6601Q，进行降压输出。此外主要发热芯片上贴有导热垫，USB母座过孔焊接。细节讲究，整体做工扎实。</p>
+➜双口双模，双倍快乐：ZMI双模充深度评测
+http://www.sohu.com/a/415194322_296845	35737
+<p>有人的地方就有江湖，江湖里流派纷呈。就消费而言，有人崇尚花花世界，大手大脚；也有人喜欢净、空、明、广，往断舍离上靠。就做产品而言，有的喜欢功能多，随之而来的就是臃肿；有的是在某一项做到极致，但受众单一做不大。所以笔者认为业界夸产品经理最好的话是：刀法准。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/6e9253efbeeb41b4b653aaae02a72adf.jpeg" max-width="600" /></p>
+<p>今天要说的这款ZMI双模充的刀法就很准，不是简单做个一加一，也不是胡乱去堆功能，而是恰到好处的满足刚需人群的需求。下面我们一起来看看这款产品。</p>
+<p>一、开箱展示</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/01a8b3271cd546d69888348cbdaa4398.jpeg" max-width="600" /></p>
+<p>纸质包装盒是一贯的简洁又不乏质感，正中印有产品的渲染图，四角各有品牌、卖点、配件等。上有挂钩方便店铺展示售卖。</p>
+<p>背面以参数为主，摘录如下：</p>
+<p>ZMI双模充电器+充电宝（50W）</p>
+<p>产品型号：APB03 接口类型：USB-C，USB-A</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>输入参数：100V-240V 50/60Hz 1.4A</p>
+<p>充电器输出：</p>
+<p>USB-C：5V 3A、9V 3A、12V 3A、15V 2.7A、20V 2.25A 45W Max</p>
+<p>USB-A（A口单独使用）：5V 3A、9V 3A、12V 2.25A、20V 1.35A 27W Max</p>
+<p>USB-A（双口同时输出）：5V 1A</p>
+<p>充电宝输出</p>
+<p>USB-C：5V 2.4A、9V 2A、12V 1.5A 18W Max</p>
+<p>USB-A：5V 2.4A、9V 2A、12V 1.5A 18W Max</p>
+<p>双口同时输出：5V 2.4A 12W Max</p>
+<p>电池种类：锂离子电池</p>
+<p>额定容量：3500mAh（5V 2.4A）</p>
+<p>电池能量：23.4Wh/24.12Wh（MIN/TYP）、6500mAh/6700mAh 3.6V</p>
+<p>包装内容：ZMI双模充电器+充电宝（50W）×、说明书×1，数据线×1</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/3575cb5d92e04048ae98be98148efce7.jpeg" max-width="600" /></p>
+<p>打开包装，产品及配件均有纸板保护，利于避免运输过程中产生损坏。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/be4dfad6dd534a4bb78752ee1f71da37.jpeg" max-width="600" /></p>
+<p>全部取出摆好，分别是数据线、ZMI双模充电器+充电宝（50W）、说明书。</p>
+<p>二、外观展示</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/e8589b715ba640f89bab462eaa4281a0.jpeg" max-width="600" /></p>
+<p>到了大家最期待的外观展示环节，ZMI双模充以黑色为主，产品方正中透着圆滑。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/14733f8238964db998397f0763ebcc7c.jpeg" max-width="600" /></p>
+<p>这款双模充表面为镜面和磨砂拼接而成，下方的磨砂部分印有“6700mAh”字样，应是表明电池容量。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200827/fc4174cb3af5415682ab0ffd8738843a.jpeg" max-width="600" /></p>
+<p>另一侧面的镜面部分是CD纹设计的电源按键，磨砂部分印有“50W”字样，应表示支持50W输出。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/ea9d7380fb974cd79ad807f12c149334.jpeg" max-width="600" /></p>
+<p>“CD纹的圆形”这一特色在ZMI紫米家的产品中多次出现，兼具装饰性和实用性。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/95a971058cfb4192ae3c7d60ba4fe80d.jpeg" max-width="600" /></p>
+<p>双模充采用了折叠插脚的设计，对于用户收纳整理还是出行携带都是非常方便。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/b85542daed124cd39127f08d2483ccf0.jpeg" max-width="600" /></p>
+<p>接口面板上带有防尘贴，防止接口进入灰尘。接口配置为1C1A双接口的设计，下方有顺序的排列着四颗白色电源指示灯。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/bafed30d32eb4cffb1292edab3ed6627.jpeg" max-width="600" /></p>
+<p>USB-A接口有“5V 2.4A、9V 2A、12V 1.5A 18W MAX（充电宝模式）”字样；USB-A有“5V 2.4A、9V 2A、12V 1.5A 18W MAX（充电宝模式）”字样。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/444b5fd36d454d2d888fe7ccf00d3291.jpeg" max-width="600" /></p>
+<p>底部为磨砂质感，印有产品参数及信息，与包装盒上信息基本一致，不再赘述。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/8ab318ab309241fdb7aed7821a38753d.jpeg" max-width="600" /></p>
+<p>值得一提的是随双模充附送了一根C to C的充电线，方便用户使用充电宝模式。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/05558f9d7a784b3faa843fb87205da5c.jpeg" max-width="600" /></p>
+<p>这根线长度为155cm。</p>
+<p>三、体积与重量</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/711a7db7d6344270815c54c84d5609e4.jpeg" max-width="600" /></p>
+<p>使用游标卡尺测量ZMI双模充，厚度为31.34mm。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/210749815da0410687f42d591476b6f3.jpeg" max-width="600" /></p>
+<p>宽度为73.40mm。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200827/9d0fc63c7d6d4b8c955bd1b64bbf6abe.jpeg" max-width="600" /></p>
+<p>长度为77.46mm。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/35d180db57f74d6e94db2c08765c481f.jpeg" max-width="600" /></p>
+<p>双模充的重量为251.3g。</p>
+<p>四、对比展示</p>
+<p>双模充这类产品既是充电器与移动电源的深度结合，某种意义上也是“夹缝中生存”，对没有使用场景的用户来说就是鸡肋。因此我们将ZMI这款双模充与我手头上日常使用的几款充电器、移动电源做个小小的对比。（去充电头网实验室找了一圈，琳琅满目各家产品都有，但拿来做对比有引战嫌疑，所以我们没有把范围展开。）</p>
+<p>1、硬币对比</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/82338dc8a8dd48aaae0944c990d82c3a.jpeg" max-width="600" /></p>
+<p>将一元硬币靠在ZMI双模充旁边，后者比前者略高一些。</p>
+<p>2、与苹果96W充电器对比</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/76dfe89df89d427c80d3d038328bf965.jpeg" max-width="600" /></p>
+<p>将双模充与苹果96W充电器放在一起对比，体积差别不大，颜色、棱角与功能性的差别才是真的大。</p>
+<p>3、与旧款ZMI双模充对比</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/97f8a9f2cf3948c784b8b26d8e76f73c.jpeg" max-width="600" /></p>
+<p>我们将ZMI旧款双模充找出，重量为202.3g，新款比旧款重了49g。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/090e8fbcad7b40cf9d724b8b17fe7452.jpeg" max-width="600" /></p>
+<p>将新旧两款ZMI双模充放在一起，左旧右新，整体风格一致，尤其是那颗CD纹的圆圆按钮。新款接口配置和容量有了升级。</p>
+<p>4、自用对比</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/e5cc0fb63f194e9dae06220e96b167d1.jpeg" max-width="600" /></p>
+<p>笔者日常使用紫米的2A1C 65W充电器搭配一个5000mAh的充电宝， 基本可以满足需求。将两者与新款ZMI紫米双模充做个对比。因为是笔者自用的设备，放出来也是为大家做个参考而已，不必对参数深究。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/5f95f60dca4b4cb3b551a0fd993952b3.jpeg" max-width="600" /></p>
+<p>重量上，“日常两件套”为263g，与紫米双模充相差不大。</p>
+<p>五、基础参数测试</p>
+<p>1、充电器模式</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/f502f964989941ee84b0ebafb2a1e328.jpeg" max-width="600" /></p>
+<p>读取USB-A接口的快充协议，支持Apple2.4A、QC2.0、QC3.0、AFC以及FCP等快充协议。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/a18dcaf45c2d4fc385b3100d1871153c.jpeg" max-width="600" /></p>
+<p>读取USB-C接口的快充协议，同样支持Apple2.4A、QC2.0、QC3.0、AFC、FCP以及PD3.0等快充协议。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200827/6715e92168ec4bf6b4b492b870b902f8.jpeg" max-width="600" /></p>
+<p>读取USB-C接口的PDO报文，支持5V 3A、9V 3A、12V 3A、15V 3A、20V 2.25A五个固定电压档位档位，支持最高45W的功率输出。</p>
+<p>2、移动电源模式</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/8ced6fec8a8c4d4a939fd42bd16c79c3.jpeg" max-width="600" /></p>
+<p>读取移动电源模式下USB-A接口的快充协议，支持Apple2.4A、QC2.0、QC3.0、AFC以及FCP等快充协议。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/b0380a6c19eb441c8b396b1b890e46ef.jpeg" max-width="600" /></p>
+<p>再来看一下移动电源模式下USB-C支持的快充协议，支持Apple2.4A、QC2.0、QC3.0、AFC、FCP以及PD3.0快充协议。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/3005e981561b4f70a6660f6f75d0cf4d.jpeg" max-width="600" /></p>
+<p>读取移动电源模式下USB-C接口的PDO报文，支持5V 2.4A、9V 2A、12V 1.5A三个固定电压档位。</p>
+<p>六、输入测试</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/6aa343f2647d47728a46c0d3afb20a43.jpeg" max-width="600" /></p>
+<p>使用ZMI双模充自带的AC插脚进行充电，从功率计上可以看出当前的充电功率为10.7W。</p>
+<p>七、输出兼容性测试</p>
+<p>1、充电器模式</p>
+<p>（1）USB-C</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/017a8297d1364fd6bfe1a470ca4a8be4.jpeg" max-width="600" /></p>
+<p>对产品在充电器模式下USB-C的输出进行测试，iPhone 11 Pro Max支持USB PD和Apple2.4A快充协议，使用USB-C为iPhone 11 Pro Max充电，功率为9.02V 2.51A 22.73W。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200827/a6307eb51fff48c2a5f64a65153c6d85.jpeg" max-width="600" /></p>
+<p>小米 10 Pro手机支持PPS、QC和USB PD快速充电协议，使用USB-C对小米 10 Pro手机充电，功率为5.04V 2.81A 14.18W。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/1d94cff9ed884bde82ebbad3710df3bb.jpeg" max-width="600" /></p>
+<p>Switch主机支持USB PD快速充电协议，使用USB-C对Switch主机充电，功率为15.11V 1.02A 15.45W。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/36b6290830ff4c67b44c5abcc0ffca66.jpeg" max-width="600" /></p>
+<p>iPad Air 3支持Apple 2.4A和USB PD快速充电协议，使用USB-C对iPad Air 3充电，功率为15.02V 2.30A 34.66W。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/b076349d85784f799791cea93befdada.jpeg" max-width="600" /></p>
+<p>Macbook Pro 16支持USB PD快速充电协议，使用USB-C对Macbook Pro 13充电，功率为20.06V 2.04A 41.05W。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/ea58a4fa6def4625bc45d450506d913d.png" max-width="600" /></p>
+<p>为了方便大家查阅，我们将将USB-C输出的测试数据放在表格当中。从数据上看，大多数设备都可以成功握手相应快充，如iPhone 11 Pro Max的功率为9.02V 2.51A 22.73W，握手PD快充。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/6f25692d3ffd49af8bc8b4b84d77a6a7.png" max-width="600" /></p>
+<p>将数据整理为柱状图，其中排名最高的是两款笔记本，功率都超过40W；最低的是魅族 16th Plus、vivo X50 Pro和Switch底座，功率都低于10W。</p>
+<p>（2）USB-A</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/b91150c18d6e4b58b4f6605790ed3f9f.jpeg" max-width="600" /></p>
+<p>对产品在充电器模式下的USB-A口进行测试，iPhone11 Pro 支持USB PD和Apple2.4A快速充电协议，使用USB-A为iPhone11 Pro充电，功率为5.06V 2.34A 11.86W。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/7a2213fd0c8a4fa8901b6779101cd40e.jpeg" max-width="600" /></p>
+<p>华为P30 Pro 支持SCP、FCP和 USB PD快速充电协议，使用USB-A为华为P30 Pro充电，功率为9.01V 1.28A 11.59W。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/3885f404ec2f4c89bd6a9863b8243681.jpeg" max-width="600" /></p>
+<p>iPad Air 2支持Apple 2.4A快速充电协议，使用USB-A对iPad Air 2充电，功率为5.06V 2.36A 11.95W。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/b09cf981b71c40629aef349e49ff90f9.png" max-width="600" /></p>
+<p>测试数据放在表格中，USB-A接口的兼容性也不错，大多数设备都可以握手快充。荣耀8的功率为8.96V 1.52A 13.67W，小米 10 Pro的功率为8.73V 2.72A 23.78W。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/682fa3ad8ef64490940b15ef09897ca7.png" max-width="600" /></p>
+<p>将数据放在柱状图中，排名靠前的是小米家的小米 10 Pro和Redmi K30 Pro，垫底的是一加 8 Pro。</p>
+<p>（3）双口同时输出</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/0b662b482e4c46fcb19483f9acd2a7c1.jpeg" max-width="600" /></p>
+<p>对充电器模式下的双口同时输出进行测试，使用USB-C为华为MateBook充电，功率为19.89V 2.06A 41.05W，同时使用USB-A为小米10 Pro充电，功率为4.90V 1.49A 7.33W，在充电器模式下双口同时输出时USB-C为单独一路输出设计不受影响，功率分配策略为45W+5W模式。</p>
+<p>2、移动电源模式</p>
+<p>（1）USB-C</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/23489284978e432aab9ed857ad4764c9.jpeg" max-width="600" /></p>
+<p>对移动电源模式下USB-C接口进行输出兼容性测试，iPhone11支持USB PD和Apple2.4A快速充电协议，使用USB-C为iPhone11充电，功率为8.99V 1.94A 17.51W。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/521978e536234b18970ea4de4b602f5e.jpeg" max-width="600" /></p>
+<p>黑鲨3S支持PPS、QC和USB PD快速充电协议，使用USB-C对黑鲨3 Pro充电，功率为8.99V 1.87A 16.84W。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/c7e440b121f34d1b9458bbe9cd843fdd.jpeg" max-width="600" /></p>
+<p>iPad Pro 11支持Apple 2.4A和USB PD快速充电协议，使用USB-C对iPad Pro 11充电，功率为12.03V 1.42A 17.15W。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/50aa65f2cf394dec86e0df27e43edae2.png" max-width="600" /></p>
+<p>将测试数据放入表格，大多数设备都能成功开启快充，尤其是苹果家产品的表现非常稳定。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/560350c753c2461c99e5365d26448eb9.png" max-width="600" /></p>
+<p>数据放入柱状图中，排在前面的是努比亚红魔5G手机功率逼近20W，最低的是魅族 16th Plus与vivo X50 Pro。</p>
+<p>（2）USB-A</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200827/78d2d9a35dde421884fede5766f72928.jpeg" max-width="600" /></p>
+<p>对移动电源模式下的USB-A输出进行测试，iPhoneSE2 支持USB PD和Apple2.4A快速充电协议，使用USB-A为iPhoneSE充电，功率为4.99V 2.30A 11.51W。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/0ff6526e877f4293a8384673c938be1f.jpeg" max-width="600" /></p>
+<p>三星 S20 Ultra 5G手机支持PPS、AFC和USB PD快速充电协议，使用USB-C对三星 S20 Ultra 5G手机充电，功率为5.02V 1.76A 8.88W。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/57e88f9364ce4333b94f4ff73bf2de58.png" max-width="600" /></p>
+<p>将数据放入表格，可见一加 8 Pro的功率为5.05V 1.37A 6.95W，未能开启快充，三星 S20 Ultra 5G手机功率为5.02V 1.76A 8.88，有些差强人意。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/abba48c21e0d4f8e8752e4e07f4e88c4.png" max-width="600" /></p>
+<p>将数据放在柱状图中，排名靠前的是魅族17 Pro、黑鲨3S以及Redmi K30 Pro，垫底的是三星 S20 Ultra 5G、一加 8 Pro。</p>
+<p>（3）双口同时输出</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/2f4861f9d3e1475188083c9ad2f249c3.jpeg" max-width="600" /></p>
+<p>对移动电源模式下的双口同时输出进行测试，使用两个接口分别为小米9和小米10 Pro充电，功率分别为6.29W和6.88W，双口同时输出时共享5V 2.4A输出。</p>
+<p>八、最大输出功率</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200827/8c32d52986224331a41ed6c1dcba09f3.jpeg" max-width="600" /></p>
+<p>使用EB程控电子负载测试ZMI双模充的最大输出功率，以0.1A为电流步进幅度，10秒为时间间隔，最终录得最大输出为2.40V 19.73A 47.4W。</p>
+<p>九、全程充电测试</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/2d3cb14c96e34faca9dbf7e2f2fbc08b.jpeg" max-width="600" /></p>
+<p>使用ZMI双模充的充电器模式为MacBook Pro 16充电，开始时便握手了20V 2A的输入档位，电压、电流以及功率三大数据平台均持稳定的输入状态。约2小时后，电流出现了短暂的波动，约2小时5分后趋于平稳输入，约2小时26分后功率和电流逐渐下降直至充电结束，全程耗时约1小时58分，输入最高功率为20.1V 2.15A 43.21W。</p>
+<p>十、温升</p>
+<p>充电器热量跟功率密度、效率值、内部方案设计、环境温度等等有关，功率密度低的产品因为体积大有足够的空间让元件布局隔开，表面温度会较低，但体积往往较大。而功率密度高的产品，内部往往采用了立式插板元件堆叠等设计，尽可能地将充电器做小方便用户携带，理论上温度会比功率密度低的产品热。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/16b510d6d69143c5aadd75298a631332.png" max-width="600" /></p>
+<p>对双模充在充电器模式下的温度进行测试，测试条件为在约25°的室温下以20V 2.25A 45W持续输出一小时进行测试，预备开始前的最高温度为26℃。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/08e032c7579c472fb205b078399eb6d1.png" max-width="600" /></p>
+<p>一小时后可以看到当前的最高温度为56.5℃，温度上升了30.5℃。</p>
+<p>一小时满载温升环节是用来测试充电器在极限使用的情况下的发热情况，用户日常使用中很少会遇到这种长时间满载的情况。手机、平板、充电宝等数码设备功率不大，温升会较为缓和，而笔记本充电则会随着电量逐渐饱和而降低功率，发热也会同步降低。</p>
+<p>目前国家标准中对充电器表面温度要求是，不高于95度，小米的这款二合一双模充的充电器模式最高温度为56.5°，远低于国家要求的温度，符合国家的标准 。</p>
+<p>十一、充电效率</p>
+<p>1、10W</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/0fdd6f5550254b7daf0d94bb0755ac2e.png" max-width="600" /></p>
+<p>对双模充作为移动电源使用时的输出效率进行测试，首先以5V 2A档位进行输出效率测试，测试全程电压、电流和功率均持稳定输出状态，全程耗时约2小时05分。放出的能量约为21.2169Wh，所以产品在以5V 2A档位输出时效率约为21.2169/24.12=87.96% 。</p>
+<p>2、18W</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/be1373230a4b46a895003de16bd253d2.png" max-width="600" /></p>
+<p>接下来对产品以9V 2A档位进行输出效率测试，测试全程电压、电流以及功率三大数据平台均持稳定输出状态，全程耗时约17.4832Wh，所以产品在以9V 2A档位输出时效率约为17.4832/24.12=72.48% 。</p>
+<p><strong>充电头网总结</strong></p>
+<p>官方名称为ZMI双模充电器+充电宝（50W）的这件二合一产品对于短途旅行或者出差游玩等使用场景是绝佳利器。外观沉稳有层次，圆形按钮辨识度不低，手感也不错，总的来说颜值不低。</p>
+<p>性能方面，产品自带电源插头不用单独去携带。充电器模式下支持5V 3A、9V 3A、12V 3A、15V 3A、20V 2.25A五个固定电压档位，支持最高45W的功率输出；移动电源模式下支持5V 2.4A、9V 2A、12V 1.5A三个固定电压档位，支持最高18W的功率输出，两种模式在实际的兼容性测试中和大多数设备均可以很好的握手相应的快充。快充协议方面两种模式均支持PD、Apple2.4A、QC2.0、QC3.0、AFC以及FCP等快充协议，可以满足大多数用户的快充需求。</p>
+<p>选择购买ZMI双模充等于购入一个最高45W的功率输出的充电器加上一个6700mHA的充电宝，作为充电器使用时性能表现突出，可以提供；而作为移动电源使用时电池容量还能保证够用，充电方面也可以提供18W的PD快充，这样即使在移动电源模式也能为用户带来不错的充电体验。你们会选择吗？</p>
+➜兄弟对决：小米紫米双模充对比评测
+http://www.sohu.com/a/415209109_296845	41721
+<p>2020年8月16日，雷军在微博宣布，小米战略将升级成为“手机×AIoT”。战略合适与否需要时间检验，但AIoT的成绩则取决于小米生态链的发展。ZMI紫米是小米生态链中数一数二的存在，那朋友们有没有想过小米和ZMI推出同样的产品这种情况？</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/c2149e04da3240878f854effdab23ed3.png" max-width="600" /></p>
+<p>今天对比的这款50W 1A1C双模充，就是我们说的那种大哥和小弟都在卖的多功能充电器，既能当充电器用，又能当充电宝用，可以说是一物两用。下面我们从以下几个方面分别对这两款兄弟产品进行对比，看看它们到底有什么区别。</p>
+<p>一、外观对比</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/f394678073a2443a82c302a2c1569191.jpeg" max-width="600" /></p>
+<p>左边黑色是紫米双模充，右边白色是小米双模充。除了本身外壳的颜色外，两款产品初看差别不大，尤其是都有CD纹设计的电源按键。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/35c1ebb6eae042b1a2f39b83ed2ae727.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>换个角度看，ZMI双模充表面为镜面磨砂拼接，小米双模充表面则较为统一。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/403b29a7b1b74b3ca3609e2430e4dfac.jpeg" max-width="600" /></p>
+<p>再换个角度，ZMI双模充的侧边能看到印有6700mAh的电池容量信息，而小米没有。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200827/79038ef775164fbc94a255e8965c6c2f.jpeg" max-width="600" /></p>
+<p>接口配置都是1C1A双接口的设计，下方有顺序的排列着四颗白色电源指示灯。两款产品的接口布局，以及接口旁边的标注信息，都是如出一辙。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200827/125c5526278949f7978b39da451aa03c.jpeg" max-width="600" /></p>
+<p>两个双模充采用了折叠插脚的设计，无论对于用户收纳整理还是出行携带都是非常方便的。</p>
+<p>外观对比总结：两款双模充在外观上采用了相似的设计语言，除了颜色和外壳材质的不同外，在很多细节方面都基本保持一致。</p>
+<p>二、体积与重量对比</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200827/22033eee0ba547aa83208f73edde0d07.jpeg" max-width="600" /></p>
+<p>使用卡尺测量小米双模充的尺寸，长度约为77.57mm，宽度约为73.63mm，厚度约为36.46mm。ZMI双模充过的尺寸也差不多，使用游标卡尺测量ZMI双模充，长度为77.46mm，宽度为73.40mm，厚度为31.34mm。经过对比，小米双模充略厚5mm左右。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/662981a822c84949abff7e02430374f5.jpeg" max-width="600" /></p>
+<p>小米双模充的重量为247.9g。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200827/37c879de30aa45938ac93945b580f865.jpeg" max-width="600" /></p>
+<p>ZMI双模充的重量为251.3g。经过对比，两者的重量差距约为4g，对于这样一款产品来说差距几乎可以忽略不计。</p>
+<p>体积与重量对比总结：两款兄弟产品的体积和重量相差不大，小米双模充略厚一些，但也仅仅是轻了一点点。</p>
+<p>三、参数对比</p>
+<p>1、纸面参数</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/b44d0e0057984bb782c220b22d8a5ac3.jpeg" max-width="600" /></p>
+<p>两款双模充器身都印有参数等信息，经过对比，除了型号不同外，其他基本没有差别，甚至连制造商和生产商都一样，可见两者来自同一家代工厂：迪比科。</p>
+<p>充电器输出：</p>
+<p>USB-C：5V 3A、9V 3A、12V 3A、15V 2.7A、20V 2.25A 45W Max</p>
+<p>USB-A（A口单独使用）：5V 3A、9V 3A、12V 2.25A、20V 1.35A 27W Max</p>
+<p>USB-A（双口同时输出）：5V 1A</p>
+<p>充电宝输出</p>
+<p>USB-C：5V 2.4A、9V 2A、12V 1.5A 18W Max</p>
+<p>USB-A：5V 2.4A、9V 2A、12V 1.5A 18W Max</p>
+<p>双口同时输出：5V 2.4A 12W Max</p>
+<p>电池种类：锂离子电池</p>
+<p>额定容量：3500mAh（5V 2.4A）</p>
+<p>电池能量：23.4Wh/24.12Wh（MIN/TYP）、6500mAh/6700mAh 3.6V</p>
+<p>2、测试参数</p>
+<p>（1）充电器模式</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200827/f813affde7994ae7be918cb02803eec3.jpeg" max-width="600" /></p>
+<p>读取ZMI双模充USB-A接口的快充协议，支持Apple2.4A、QC2.0、QC3.0、AFC以及FCP等快充协议。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/f15ad25a3f934d56a49cc01cc3b84f99.jpeg" max-width="600" /></p>
+<p>读取小米双模充USB-A接口的快充协议，支持Apple2.4A、QC2.0、QC3.0、AFC以及FCP等快充协议。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/3d9f754ff06a4211910c4fa532820628.jpeg" max-width="600" /></p>
+<p>读取ZMI双模充USB-C接口的快充协议，支持Apple2.4A、QC2.0、QC3.0、AFC、FCP以及PD3.0等快充协议。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/1261ed90a3bd4a2094c16f895b404c47.jpeg" max-width="600" /></p>
+<p>读取小米双模充USB-C接口的快充协议，同样支持Apple2.4A、PD3.0、QC2.0、QC3.0、AFC以及FCP等快充协议。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/e7aca6a794f545b39892d311a60b8e3d.jpeg" max-width="600" /></p>
+<p>读取ZMI双模充USB-C接口的PDO报文，支持5V 3A、9V 3A、12V 3A、15V 3A、20V 2.25A五个固定电压档位档位，支持最高45W的功率输出。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/45662ee5a98d44b0b03ac2d33c517186.jpeg" max-width="600" /></p>
+<p>读取小米双模充USB-C接口的PDO报文，支持5V 3A、9V 3A、12V 3A、15V 3A、20V 2.25A五个固定电压档位档位，支持最高45W的功率输出。</p>
+<p>（2）移动电源模式</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200827/736d6ddefd5148169726048968fec0ee.jpeg" max-width="600" /></p>
+<p>读取ZMI双模充移动电源模式下USB-A接口的快充协议，支持Apple2.4A、QC2.0、QC3.0、AFC以及FCP等快充协议。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/f3c1dada209747178e829af56331b25e.jpeg" max-width="600" /></p>
+<p>读取小米双模充移动电源模式下USB-A接口的快充协议，支持Apple2.4A、QC2.0、QC3.0、AFC以及FCP等快充协议。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/1530bc7e029549efb04837df02eb94c2.jpeg" max-width="600" /></p>
+<p>再来看一下ZMI双模充移动电源模式下USB-C支持的快充协议，支持Apple2.4A、QC2.0、QC3.0、AFC、FCP以及PD3.0快充协议。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/b24bc38aefa14803994283d10f84b1d5.jpeg" max-width="600" /></p>
+<p>再来看一下小米双模充移动电源模式下USB-C支持的快充协议，支持Apple2.4A、QC2.0、QC3.0、AFC、FCP以及PD3.0快充协议。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200827/e7b7712dce2d4be28c942209b3942833.jpeg" max-width="600" /></p>
+<p>读取ZMI双模充移动电源模式下USB-C接口的PDO报文，支持5V 2.4A、9V 2A、12V 1.5A三个固定电压档位。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/59018d0bd63f409985f9b35c2f87e897.jpeg" max-width="600" /></p>
+<p>读取小米双模充移动电源模式下USB-C接口的PDO报文，支持5V 2.4A、9V 2A、12V 1.5A三个固定电压档位。</p>
+<p>（3）输入测试对比</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/1bdcb58372f7465ea804df15c3141a10.jpeg" max-width="600" /></p>
+<p>使用ZMI双模充自带的AC插脚进行充电，从功率计上可以看出当前的充电功率为10.7W。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200827/bb271ea98b084deeb14b5766b4ad26d0.jpeg" max-width="600" /></p>
+<p>使用小米双模充自带的AC插脚进行充电，从功率计上可以看出当前的充电功率为11.72W。</p>
+<p>参数对比总结如下，不管是纸面参数还是实际测试参数，两款双模充的数据并没有太大差别。</p>
+<p>四、兼容性对比</p>
+<p>1、充电器模式</p>
+<p>（1）USB-C</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200827/5f5ada641ff24aeaba0baf6ef9217899.png" max-width="600" /></p>
+<p>为了方便大家查阅，我们将将USB-C输出的测试数据放在表格当中。从数据上看，大多数设备都可以成功握手相应快充，如iPhone 11 Pro Max的功率为9.02V 2.51A 22.73W，握手PD快充。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/615d6c5afc1b42ad8c9c4c3abae4290f.png" max-width="600" /></p>
+<p>将数据整理为柱状图，其中排名最高的是两款笔记本，功率都超过40W；最低的是魅族 16th Plus、vivo X50 Pro和Switch底座，功率都低于10W。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/325abbe7cdea4f678901017d726715a9.png" max-width="600" /></p>
+<p>再看小米双模充，将测试的数据放在表格中当中，从数据上看，两款笔记本的充电功率最高，随后是支持PD快充的苹果设备，支持PD快充的安卓设备紧随其后，同样均成功握手PD快充。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/d6819190f5354e8bb055a45b895965a6.png" max-width="600" /></p>
+<p>将测试的数据以柱状图的形式表现出来，两款笔记本的充电功率最高，分别为41.17W和41.97W，其他支持PD快充的苹果设备成功握手PD快充，充电功率在11W-36W之间；支持PD快充的安卓设备紧随其后，功率在14W-28W之间，此外，USB-C还支持FCP快充协议。</p>
+<p>（2）USB-A</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/852ce83336684e158aaf9cbf20e346cc.png" max-width="600" /></p>
+<p>测试数据放在表格中，USB-A接口的兼容性也不错，大多数设备都可以握手快充。荣耀8的功率为8.96V 1.52A 13.67W，小米 10 Pro的功率为8.73V 2.72A 23.78W。将数据放在柱状图中，排名靠前的是小米家的小米 10 Pro和Redmi K30 Pro，垫底的是一加 8 Pro。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200827/9d77ab5fa2ef4325a94bf739a812e7b9.png" max-width="600" /></p>
+<p>再看小米双模充，将USB-A输出的测试数据放在表格中，从数据上看，大多数支持QC快充的安卓设备成功握手QC快充，小米9成功握手ChargeTurbo快充协议，华为手机成功握手FCP快充，苹果设备均成功握手Apple2.4A快充协议。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/9a03ac15616e40a0bf8ffcdadc9445b6.png" max-width="600" /></p>
+<p>将测试的数据放在柱状图当中，从数据上看，小米9的充电功率最高，达到了26.13W，随后是其他支持QC快充的安卓设备，充电功率在14W-24W之间，苹果设备均成功握手Apple2.4A快充协议，充电功率在10W-13W之间。</p>
+<p>2、移动电源模式</p>
+<p>（1）USB-C</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/e54d06a5a2014a97ae6de83f7c650cf4.png" max-width="600" /></p>
+<p>将测试数据放入表格，大多数设备都能成功开启快充，尤其是苹果家产品的表现非常稳定。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/a55183af47e144f8838bb0a455f25851.png" max-width="600" /></p>
+<p>数据放入柱状图中，排在前面的是努比亚红魔5G手机功率逼近20W，最低的是魅族 16th Plus与vivo X50 Pro。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200827/dd0ece67f7e24c619cb4c31a5c86e9de.png" max-width="600" /></p>
+<p>再看小米双模充，将测试的数据放在表格当中， 从数据上看，努比亚红魔的充电功率最高，随后是支持PD快充的苹果设备，支持PD快充的安卓设备紧随其后，同样均成功握手PD快充。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/1a267c21d8bb4e28a538763f5450c2ff.png" max-width="600" /></p>
+<p>将测试的数据以柱状图的形式表现出来，可以看出努比亚红魔5G手机的充电最高，达到了20.11W，随后是支持PD快充的苹果设备，充电功率在14W-18W之间；其他支持PD快充的安卓设备的充电功率在11W-18W之间。</p>
+<p>（2）USB-A</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/5154459534e84b14b7497af8b8f616d0.png" max-width="600" /></p>
+<p>将数据放入表格，可见一加 8 Pro的功率为5.05V 1.37A 6.95W，未能开启快充，三星 S20 Ultra 5G手机功率为5.02V 1.76A 8.88，有些差强人意。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/1cb8c7c9553f4781b936f7f9d71a24ec.png" max-width="600" /></p>
+<p>将数据放在柱状图中，排名靠前的是魅族17 Pro、黑鲨3S以及Redmi K30 Pro，垫底的是三星 S20 Ultra 5G、一加 8 Pro。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/d27ec935135747aa828ebab252d310a1.png" max-width="600" /></p>
+<p>再看小米双模充，将测试的数据放在表格当中，从数据上看，支持QC快充的手机均成功握手QC快充协议，华为手机成功握手FCP快充协议，苹果设备成功握手Apple2.4A快充协议。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/a4fc66738b634ce4a9718dae7df392d2.png" max-width="600" /></p>
+<p>将测试的数据以柱状图的形式表现出来，魅族17 Pro的充电功率最高，达到了18.35W，随后是其他支持QC快充的安卓手机，功率在13W-17W之间；华为手机成功握手FCP快充协议，苹果设备成功握手Apple2.4A快充协议，充电功率在11W-12W之间。</p>
+<p>兼容性对比总结：空口无凭，两款双模充的数据差异并不大，兼容性都非常不错。</p>
+<p>五、双口同时输出对比</p>
+<p>1、充电器模式</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/f608bce411e342e4b6ce243ff6879ef7.jpeg" max-width="600" /></p>
+<p>对充电器模式下的双口同时输出进行测试，使用USB-C为华为MateBook充电，功率为19.89V 2.06A 41.05W，同时使用USB-A为小米10 Pro充电，功率为4.90V 1.49A 7.33W，在充电器模式下双口同时输出时USB-C为单独一路输出设计不受影响，功率分配策略为45W+5W模式。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/3d1c020fd11b45dea8f21e9b9427c8bf.jpeg" max-width="600" /></p>
+<p>再看小米双模充，对充电器模式下的双口同时输出进行测试，使用USB-C为MacBook Pro 13充电，功率为19.74V 2.20A 43.54W，同时使用USB-A为小米9充电，功率为4.70V 1.50A 7.05W，在充电器模式下双口同时输出时USB-C为单独一路输出设计不受影响，功率分配策略为45W+5W模式。</p>
+<p>2、移动电源模式</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/94e8c5c2f3eb4b3d99aa45f08140f758.jpeg" max-width="600" /></p>
+<p>对移动电源模式下的双口同时输出进行测试，使用两个接口分别为小米9和小米10 Pro充电，功率分别为6.29W和6.88W，双口同时输出时共享5V 2.4A输出。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/34e1cdc40c474bc7b86db61895afe709.jpeg" max-width="600" /></p>
+<p>再看小米双模充，对移动电源模式下的双口同时输出进行测试，使用两个接口分别为小米9和魅族17 Pro充电，功率分别为8.28W和5.29W，双口同时输出时共享5V 2.4A输出。</p>
+<p>双口同时输出对比：两款双模充在移动电源模式和充电器模式下的双口输出表现都差不多。</p>
+<p>六、最大输出功率对比</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200827/6698508b5d314236b014dbf00a2122a0.jpeg" max-width="600" /></p>
+<p>使用EB程控电子负载测试ZMI双模充的最大输出功率，以0.1A为电流步进幅度，10秒为时间间隔，最终录得最大输出为2.40V 19.73A 47.4W。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/cc1e7c320a3045a79c3f1a79218b3adb.png" max-width="600" /></p>
+<p>使用EB程控电子负载测试小米二合一双模充的最大输出功率，以0.1A为电流步进幅度，10秒为时间间隔，最终录得最大输出为19.72V 2.60A 51.3W。</p>
+<p>最大输出功率对比总结：ZMI双模充的最大输出功率为47.4W，略低于小米双模充的51.3W。</p>
+<p>七、温升对比</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200827/433bcbf3ff7148c8a7757c9a26f177aa.png" max-width="600" /></p>
+<p>对ZMI双模充在充电器模式下的温度进行测试，测试条件为在约25°的室温下以20V 2.25A 45W持续输出一小时进行测试，可以看到一小时后的最高温度为56.5℃，温度上升了30.5℃。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/e2319e2511a5400ea494feb452d2d05b.png" max-width="600" /></p>
+<p>对小米双模充在充电器模式下的温度进行测试，测试条件为在约25°的室温下以20V 2.25A 45W持续输出一小时进行测试，一小时后可以看到当前的最高温度为55.7°，温度上升了30.7°。</p>
+<p>温升对比总结：一小时满载温升环节是用来测试充电器在极限使用的情况下的发热情况，用户日常使用中很少会遇到这种长时间满载的情况。手机、平板、充电宝等数码设备功率不大，温升会较为缓和，而笔记本充电则会随着电量逐渐饱和而降低功率，发热也会同步降低。</p>
+<p>目前国家标准中对充电器表面温度要求是，不高于95度，ZMI和小米的二合一双模充温升几乎相同，都远低于国家要求的温度，符合国家的标准 。</p>
+<p><strong>充电头网总结</strong></p>
+<p>双模充的市场并不算大，但刚需人群也不少，因此颇有一些配件厂商入局。因此小米和ZMI紫米推出同样的产品并不奇怪。我们对比了外观、尺寸与体积、重量、兼容性、双口输出、最大输出、温升以及种种参数，总体来看，两者之间的差异主要是在外观方面。</p>
+<p>结合我们的测试对比、相同制造商和生产商以及小米和ZMI紫米的关系，我们认为双模充本质上是同一款产品，由小米及生态链企业紫米推出。我们也认为这款产品的性能和体积以及两种外观都属于“中上之姿”，推荐购买。</p>
+➜USB PD＆Type-C亚洲展：40余款氮化镓快充成最大亮点
+http://www.sohu.com/a/415215084_296845	45285
+<p>8月21日，2020（秋季） USB PD＆Type-C亚洲展在深圳南山区科兴科学园会议中心成功举办。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/dd957c663d7846acbae0c786372922c4.jpeg" max-width="600" /></p>
+<p>本次活动由充电头网主办，是2020年首场规模庞大的USB PD＆Type-C行业展会，汇聚近百家产业链优质供应商、服务商，以及上千家采购商。在与展会同期举办2020（秋季） USB PD＆Type-C亚洲大会上，17位行业大咖现场与大家探讨USB PD＆Type-C现在与未来，并为大家分享最新的技术和解决方案。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/044949a120d3431d8d660f08ed3b20b4.jpeg" max-width="600" /></p>
+<p>同时，数十家芯片原厂借此展会发布了USB PD＆Type-C年度新品，最新的快充芯片、方案、成品，以及快充配套的元器件更是让人目不暇接。其中，GaN氮化镓PD快充产品成为了本次展会的最大亮点。充电头网对本次展会展出的氮化镓PD快充产品进行了整理，主要可分为氮化镓快充成品和氮化镓快充方案两部分，涉及产品多达40余款。</p>
+<p class="ql-align-center"><strong>GaN氮化镓PD快充成品</strong></p>
+<p>1、坤兴65W氮化镓快充系列</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/709ea53c3edf43f2b84a3ce5e9724db8.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>坤兴展出的产品主要为65W氮化镓快充系列，包括65W单口氮化镓快充、65W 1A1C氮化镓快充、65W 2C1A氮化镓快充等多款机型，同时充电器也有固定式插脚和折叠式插脚可供客户选择。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/0f0f57ccfcf04264b36fe34c0658a995.jpeg" max-width="600" /></p>
+<p>坤兴65W 2C1A氮化镓快充，目前已经被多家知名电商品牌采用，销量十分可观。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/1e6d33b064f14ac8898f4feb54ef814d.jpeg" max-width="600" /></p>
+<p>由坤兴制造的努比亚65W单口氘锋氮化镓快充也出现了本次展会上。</p>
+<p>2、瑞嘉达65W 2C1A氮化镓快充</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/b86c966d3e274e22a44fe145da25b4a7.png" max-width="600" /></p>
+<p>瑞嘉达65W 2C1A氮化镓超小型快充，全新外观专利设计，PC阻燃材质，表面磨砂雾面效果，手感细腻，65W功率覆盖笔记本、平板、手机充电需求 ，可搭配全球可换插头。</p>
+<p>3、新斯宝100W 3C1A氮化镓快充</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/7d2473b45b4545bf9f328b2cd13ef5c4.jpeg" max-width="600" /></p>
+<p>新斯宝100W 3C1A氮化镓快充采用扁平的机身设计，配备可折叠的插脚，四个接口均支持快充功能，并支持多口输出功率智能分配。当单口输出时，USB-C1接口和USB-C2接口均支持100W的功率，USB-C3接口和USB-A接口均支持最大30W的输出功率。兼容PD、QC、AFC、FCP、SCP、Apple2.4A等多种充电协议，可以为市面上主流的笔记本电脑、手机、移动电源、游戏机等产品快速充电。</p>
+<p>4、新斯宝65W 2C1A氮化镓快充</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200827/a4f3d70aa37e4c1c97f7d2f9287721cb.jpeg" max-width="600" /></p>
+<p>新斯宝这款充电器配备2C1A三个输出接口，可同时为三台设备供电；协议方面支持PD、QC、FCP、SCP、AFC、PE+等多个主流快充协议，兼容市面上主流手机和移动设备；USB-C口单口最大65W输出，可满足大部分USB PD笔记本电脑的充电需求；多口输出时，其中一个USB-C口依然能保持45W的输出功率。产品体积小巧，性能强悍。</p>
+<p>5、新斯宝65W 3C1A氮化镓快充</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/859b00997f004077a4a02f67e2a0e0dc.jpeg" max-width="600" /></p>
+<p>新斯宝65W 3C1A氮化镓快充充电器外形尺寸为50*50*29mm，采用了折叠插脚设计。在小巧的体积内设置了四个输出接口，将充电器的体积利用到了极致，并通过独特的灌胶工艺保证散热性能。充电器接口众多，可以同时为多台设备供电。此外，这款充电支持的协议更加宽泛，USB-A接口可支持SCP低压快充协议，可适配华为手机实现22.5W快充。目前该款充电器具备ETL、FCC、CB、PSE、CCC安规认证。</p>
+<p>6、新斯宝65W单口氮化镓快充</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/dcb7f3f96b3749899e69577be6f1d567.png" max-width="600" /></p>
+<p>新斯宝65W氮化镓快充充电器采用PC材质外壳，机身尺寸：50x40x28mm，内置独特的灌胶工艺，保证散热性能。输入配备可以折叠收纳的插脚，支持100-240V全球电压范围，并通过了CE、ETL、FCC、PSE、CCC等安规认证，可以根据客户的需求选配不同的插接规格。同时还支持PPS、PD3.0、PD2.0、QC4+、QC4.0、QC3.0、QC2.0、AFC、FCP、APLLE 2.4A、BC1.2等协议，全方位满足手机、笔记本电脑、移动电源等设备的充电需求。</p>
+<p>7、新斯宝30W迷你氮化镓快充</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/eb8532ad40ce4d25a696cfd422d298d6.jpeg" max-width="600" /></p>
+<p>新斯宝30W氮化镓快充充电器采用PC材质外壳，折叠插脚的设计，让这款充电器的便携性更好。这款产品外观尺寸仅为40×40.5x28mm，非常小巧，同时采用独特的灌胶工艺，使得产品散热性能更佳。输出兼容PPS、PD3.0、PD2.0、QC4+、QC4.0、QC3.0、QC2.0、AFC、FCP、APLLE2.4、BC1.2等多种协议，在USB PD快充协议下，具备5V/3A、9V/3A、12V/2.5A、15V/2A、20V/1.5A五个固定电压档位，可以满足大部分手机、平板电脑、游戏机的充电需求。</p>
+<p>8、OPPO 50W饼干氮化镓快充</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/2f0d78057f0a4866bda8375f69b63206.jpeg" max-width="600" /></p>
+<p>由博兰得联合OPPO开发的50W饼干氮化镓快充是业界首款采用无电解电容设计的氮化镓快充适配器产品，消除了电解电容、硅桥、压敏电阻等硬伤，改善耐高温性能和使用寿命；同时通过纳微的GaNFast功率芯片将氮化镓的高效率和高密度特性发挥到到了极致。此外，这款充电器首创的脉冲充电使充电器工作更快更加稳定。</p>
+<p>性能方面，这款充电器输出端配备了USB-C接口，不仅支持SuperVOOC超级闪充，还兼容QC和PD3.0 PPS快充，使得充电器不再局限于给OPPO家族的手机充电，也能给其它品牌的手机进行快充，这是这款充电器的另一个亮点。</p>
+<p>9、thinkplus 65W氮化镓快充</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/255b3f43d41643cdbbb363d32b17f64d.jpeg" max-width="600" /></p>
+<p>由博兰得联合联想集团开发的65W氮化镓快充延续了“口红”系列的造型设计，在氮化镓的加持下，体积进一步压缩，而且配备可折叠插脚，小巧方便易于携带。USB-C口支持QC2.0、QC3.0和USB PD3.0快充，具备5V3A、9V3A、12V3A、15V3A、20V3.25A和5.00-11.0V/3A电压档位，轻松满足手机、平板、笔记本等多种类型设备的快充需求。</p>
+<p>10、雅晶源100W 2C1A氮化镓快充</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/7c8fb0e585fa4488b1ff4ee4422c7a34.jpeg" max-width="600" /></p>
+<p>雅晶源100W 2C1A氮化镓快充采用折叠插脚设计，配备两个USB-C接口和一个USB-A接口，单口输出，两个USB-C接口均支持5V/3A、9V/3A、12V/3A、15V/3A、20V/5A，最大功率100W；两个USB-C口同时输出：60+45W；1A1C输出：75W+30W；三口同时输出：60W+30W+18W。</p>
+<p>11、雅晶源65W 1A1C氮化镓快充</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200827/d7a44992117b48e9bc0b837311615ec8.jpeg" max-width="600" /></p>
+<p>雅晶源65W 1A1C氮化镓快充充电器采用折叠插脚设计，收纳方便，输出配备1个USB-C接口和1个USB-A接口，单口输出，两个接口分别支持65W快充和18W快充，双口同时输出智能降功率。</p>
+<p>12、桑达氮化镓快充系列</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/23799334341a4ed8a4033eae3ecf14ee.jpeg" max-width="600" /></p>
+<p>桑达展出的氮化镓快充产品包括100W 2A2C、65W 1A1C、65W单口等多种类型，可以满足不同客户的选型需求。</p>
+<p>13、瑞亨100W 2A2C氮化镓快充</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/fea4209534b14effa166a4fb50dea78d.jpeg" max-width="600" /></p>
+<p>瑞亨100W 2A2C氮化镓充电器机身方正扁平，外壳磨砂处理，插脚可折叠/组装，适应各个地区使用。配备的2A2C接口均支持QC2.0/3.0、AFC、FCP、SCP、MTK PE+2.0快充协议，两个C口还具备5V3A、9V3A、12V3A、15V3A、20V5A和5A PPS电压档位。USB接口支持盲插使用，兼容协议多，电压档位齐全，性能十分强悍。</p>
+<p>14、瑞亨65W氮化镓快充</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/729406f9c9414c42972d5afc1d32d6c4.jpeg" max-width="600" /></p>
+<p>瑞亨65W氮化镓充电器体积小巧并配折叠插脚，携带方便。支持QC2.0/3.0、AFC、FCP和PD3.0等多种快充协议，具备最大65W输出功率，可以满足笔记本、平板和各类手机的快充需求。</p>
+<p>15、瑞亨65W 2C1A氮化镓快充</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/98951eb9fdf442cd97dcf5950a22a5c9.jpeg" max-width="600" /></p>
+<p>瑞亨65W氮化镓充电器机身光滑洁白侧身过渡圆润，体积小巧携带方便。2C1A接口均支持QC2.0/3.0、AFC、FCP和SCP快充协议，兼容性很好。两个C口还具备5/9/12/15/20V多个固定电压档位和PPS电压档位，档位齐全。C1口最大65W输出功率可以满足大部分轻薄型笔记本电脑的的充电需求，即使在多口输出时仍能保持45W的输出功率，满足多设备同时充电。</p>
+<p class="ql-align-center"><strong>GaN氮化镓PD快充方案</strong></p>
+<p>1、东科45W氮化镓快充参考设计</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/1decdb065b99477ea62f20b9421ab3ef.jpeg" max-width="600" /></p>
+<p>东科45W氮化镓快充参考设计采用QR架构，初级侧搭载了国内首颗内置GaN的电源管理芯片DKG045Q，次级侧采用高集成同步整流芯片DK5V100R10M，两颗芯片均由东科自主研发。</p>
+<p>得益于高集成芯片的采用，这套45W氮化镓快充DEMO整体布局十分精简。据悉，东科仅用了64个元器件就完成了这套参考设计的开发，产品精简程度颠覆传统。功率密度方面，该参考设计的整体尺寸约为43.1mm×36.1mm×19.6mm，配上外壳之后，其功率密度仍可以达到1.12W/cm³，领先目前市面上的大部分氮化镓快充产品。</p>
+<p>2、美思迪赛65W氮化镓快充参考设计</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/487748189afd43649715e029035ed47b.jpeg" max-width="600" /></p>
+<p>基于自身在电解电容领域的技术积累，万京源展出了一套65W 2C1A氮化镓快充参考设计，为客户在开发氮化镓快充产品提供了丰富的参考。从外观上来看，这款参考设计布局十分紧凑，初级和次级均使用了万京源的电解电容，采用开关电源+二次降压的典型输出架构，并使用了多块PCB板的结构，充分利用空间。</p>
+<p>4、智融200W 3C2A氮化镓快充参考设计</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/11f5b3d321f44f869547a4c9e1e184c8.jpeg" max-width="600" /></p>
+<p>智融最新开发的氮化镓快充参考设计，最大输出功率为200W，配备了3个USB-C接口和两个USB-A接口，内置PFC功率因数校正电路，采用开关电源+二次降压的输出架构，可同时供5台设备进行快充，性能十分强悍。这也是目前业界首款200W快充电源参考设计。</p>
+<p>5、智融65W双USB-C口氮化镓快充参考设计</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/ca599dd85ffb43c4bf68adf75ed40934.jpeg" max-width="600" /></p>
+<p>智融65W双USB-C口氮化镓快充参考设计一共由6块PCB板组成，元器件布局十分紧凑，使充电器内部的空间得到充分利用。采用氮化镓功率器件、平板变压器，以及多块PCB板形成的紧凑设计，让AC-DC电源部分的体积得到有效的控制。次级侧采用两颗智融的高集成芯片SW3526实现两路输出的独立控制，进一步缩减空间，即使65W双口输出，整套方案的尺寸也十分小巧。</p>
+<p>6、智融65W双单口氮化镓快充参考设计</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/b401f32e93b64ee3afc4d31a3c1775bb.png" max-width="600" /></p>
+<p>智融65W单口氮化镓快充参考设计有着与小米65W氮化镓快充相近的体积，为了充分利用空间，该方案在初级采用了小PCB板安置电解电容，初级侧设置了5颗科尼盛的高压电解电容滤；输出端则是两颗云星的固态电容滤波，USB-C口使用协议小板焊接，方案整体布局简洁明了。据了解，该方案可支持 PD、QC、FCP、高低压SCP、AFC、SFCP 以及PE等主流快充协议。</p>
+<p>7、智融87.5W混动氮化镓超级充二合一移动电源参考设计</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200827/cc811a0c7ab24b8596635ee653270bb4.png" max-width="600" /></p>
+<p>智融87.5W混动氮化镓超级充二合一移动电源参考设计支持65W PD快充输出以及22.5W超级快充输出。配备1A1C两个接口，并借助氮化镓芯片的优势，让整套方案的体积得到有效的控制。智融通过创新的产品架构，将氮化镓快充充模块与移动电源模块有机的结合，在保证产品体积优势的前提下，实现了USB-C口最大65W输出和USB-A口最大30W输出。这不仅实现了对各类手机的快充，更进一步解决笔记本电脑、Pad、移动电源等电子产品对大功率快充的需求，是一款真正意义上的“混合动力超级充”方案。</p>
+<p>8、智融45W PD快充+10000mAh移动电源参考设计</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/3076b50bcedb4cc7a13baae42aa1abde.png" max-width="600" /></p>
+<p>智融这套套内置氮化镓技术的USB PD快充充电器+移动电源组合方案配备一个USB-A接口和一个USB-C接口，支持单口最大45W输出，同时备非常智能的输出策略，性能强大，功能实用。充电器部分采用PI的PowiGaN系列的高集成主控芯片，并搭配了智融SW3518S和SW3516H两颗DC-DC芯片，实现USB-C口和USB-A口的输出控制。移动电源部分则采用智融SW6206主控芯片，完成输入输出双向控制。</p>
+<p>9、英诺赛科120W氮化镓快充参考设计</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200827/7d92a88e71694aa6ab9feca29de83cf8.jpeg" max-width="600" /></p>
+<p>英诺赛科展出的120W 氮化镓快充参考设计采用PFC+ACF的架构，采用单口输出设计，方案整体布局十分紧凑，外形小巧。该套参考设计的初级侧和次级侧均采用了氮化镓功率器件，体积和效率均有大幅提升。</p>
+<p>10、英诺赛科100W 2C1A氮化镓快充参考设计</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/e6c307a7897a4c9ea7a648d61fe595b4.jpeg" max-width="600" /></p>
+<p>基于英诺赛科氮化镓功率器件开发的100W 2C1A快充参考设计，内置PFC功率因数校正电路，采用开关电源定压输出+二次降压输出架构。方案中的元器件布局紧凑、有序；多口输出，支持功率智能分配。</p>
+<p>11、英诺赛科65W氮化镓快充参考设计</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/9bc90b7e37544cfd9dd18cd10be0dfba.jpeg" max-width="600" /></p>
+<p>英诺赛科65W氮化镓快充参考设计输入端采用小块PCB板安置电解电容，使空间得到充电利用，输出端采用了协议小板设置USB-C接口，进一步让方案变得紧凑，提升功率密度。</p>
+<p>12、研吉65W 1A1C氮化镓快充参考设计</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/204a5d2ae90848029ba3c779279905bb.png" max-width="600" /></p>
+<p>研吉65W 1A1C氮化镓快充参考设计，基于GaNsystems氮化镓功率器件开发。该参考设计最大输出功率为65W，配备1A1C双口输出，单USB-C口输出65W（20V/3.25A），单USB-A口输出QC3.0 Max 18W (12V/1.5A)；双口同时输出时，USB-C口降为45W，USB-A口维持 18W。全系列采用双面板，最简化降功率设计理念。</p>
+<p>13、亚成微65W氮化镓快充参考设计</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200827/df26c7a59d27479785238388c99f226c.jpeg" max-width="600" /></p>
+<p>亚成微于近期推出了一款E-Mode GaN FET直驱控制ZVS反激芯片RM6801SN，这也是国内首个直驱氮化镓功率器件ZVS反激控制器，填补了国内空白。基于RM6801SN，亚成微推出了一套65W氮化镓快充参考设计，采用两块PCB板的结构，具有布局紧凑，高功率密度等特性。</p>
+<p>14、量微半导体65W 1A1C氮化镓快充参考设计</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200827/fee3d673fc294e69aeee261a8979bb3a.jpeg" max-width="600" /></p>
+<p>基于量微半导体氮化镓功率器件开发的65W 1A1C快充参考设计，采用多款PCB板组合而成，内部元器件布局十分紧凑，两个接口均支持快充输出，支持功率智能分配。</p>
+<p>15、量微半导体100W 2C1A氮化镓快充参考设计</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200827/48deb8ee55db45e5ae38a8e0affa4b71.jpeg" max-width="600" /></p>
+<p>基于量微半导体氮化镓功率器件开发的2C1A快充参考设计，内置PFC功率因数校正电路，采用开关电源定压输出+二次降压输出的架构，两个USB-C接口在单口输出时均支持100W快充，多口输出时，支持功率智能分配。</p>
+<p>16、杰华特65W氮化镓快充参考设计</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200827/2c0e3a8bb80948eb9d71a681a71351e1.jpeg" max-width="600" /></p>
+<p>杰华特展出的65W氮化镓快充参考设计，基于其最新有源钳位反激（ACF）控制器JW1550和高频同步整流控制器JW7726B开发。</p>
+<p>17、杰华特65W 2C1A氮化镓快充参考设计</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200827/5127a49b485042af92903d3f28496834.jpeg" max-width="600" /></p>
+<p>采用整套方案采用主控PCB板+多块小PCB板组成，次级侧采用二次降压架构实现多口输出。采用的是高频QR架构，同样是具备高密度、小型化的特点。</p>
+<p>18、南芯65W 氮化镓快充参设计（平面变压器）</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200827/3f0b4b763ee14be69a13b30fbb3dc0a3.jpeg" max-width="600" /></p>
+<p>基于南芯SC302xB+高频次级同步整流SC3503芯片开发的65W扁平氮化镓快充参考设计。采用平面变压器设计，全面提升产品性能，实现高效率、高功率密度。</p>
+<p>19、南芯65W氮化镓快充参考设计</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200827/545674368d0f40998d2b07aa1ad1ea15.jpeg" max-width="600" /></p>
+<p>采用南芯SC302xA+SC3503开发的65W氮化镓快充参考设计，两块PCB板组成，采用绕线变压器。元器件布局紧凑，体积小巧。</p>
+<p>20、PI 100W氮化镓快充参考设计</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200827/141374e6f72749c3a680fb7f3dc40875.jpeg" max-width="600" /></p>
+<p>PI在展会上展出了多款采用PowiGaN技术的快充电源参考设计。包括100W 3C1A氮化镓快充、114W 2C2A氮化镓快充、100W双USB-C氮化镓快充、90W双USB-C氮化镓快充等。</p>
+<p>21、氮硅科技65W氮化镓快充参考设计</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200827/801d425d31d54535bbc416a0a3bf6c79.jpeg" max-width="600" /></p>
+<p>氮硅科技基于自家氮化镓功率器件和驱动器开发了一款65W 1A1C氮化镓快充参考设计，初级侧采用安森美NCP1342控制器、氮硅DX1SE驱动以及DX6515B功率器件，次级侧采用MP6908同步整流控制器，二次降压架构，采用智融多口快充方案。</p>
+<p><strong>充电头网总结</strong></p>
+<p>在2020（秋季）USB PD＆Type-C亚洲展上，氮化镓快充成为了最受关注的一类产品，这一方面得益于目前各大知名手机、电商品牌等头部厂商陆续入局氮化镓快充，让氮化镓快充成为市场的主流；另一方面则是用户对氮化镓快充产品的认知逐步提升，市场需求旺盛。</p>
+<p>从氮化镓功率器件方面来看，目前已经开始实现国产化，本次展会上的英诺赛科、氮硅科技、芯冠科技、量微半导体等一批厂商相继推出了氮化镓功率器件，并且部分部分厂商已经在氮化镓快充领域量产出货，获得不错的市场反响。</p>
+<p>氮化镓控芯片方面也有明显的国产化趋势，东科、南芯、美思迪赛、亚成微、杰华特等一批优秀的电源芯片企业，陆续在氮化镓快充控制器领域发力。并且从产品参考设计来看，呈现出百花齐放的局势，相信在未来几年，氮化镓快充控制器的选择不再单一，而是有着丰富的国产方案供电源厂商的选择。</p>
+<p>从氮化镓快充成品来看，多口快充和大功率已成为市场发展趋势，展会上不乏65W、90W、100W等功率的多口快充产品，部分参考设计的功率甚至达到了200W。一个充电器解决所用数码产品的充电问题将在不久之后成为现实。</p>

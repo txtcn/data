@@ -1,0 +1,65 @@
+➜慧能泰发布Type-C和USB系列协议芯片，内置负载开关
+http://www.sohu.com/a/414003236_296845	6554
+<p>近日，慧能泰发布一系列内置低Rdson负载开关的Type-C协议芯片和USB协议芯片系列产品HUSB300、HUS304和HUSB305。</p>
+<p>HUSB305是一款内置负载开关的USB Type-C 5V3A DFP控制器，适用于替代传统的桶形连接器（Barrel Connector）或USB micro-B 连接器供电的电子设备，如手机、平板电脑、路由器、数字音箱、电动剃须刀、机顶盒和其他可充电设备。HUSB305的特性如下：</p>
+<ul>
+<li>集成超低Rdson NMOS负载开关</li>
+<li>可配置的电流限流</li>
+<li>4V-6.5V宽工作电压，最高耐压8V</li>
+<li>84uA超低工作电流</li>
+<li>设备移除指示，短路故障指示</li>
+<li>USB Type-C 1.5A/3A DFP控制功能</li>
+<li>输入欠压、过压保护</li>
+<li>短路保护、过流保护</li>
+<li>热关断</li>
+<li>±8KV HBM ESD</li>
+<li>TSOT23-8封装</li>
+</ul>
+<p>图1和图2分别是HUSB305典型应用电路和HUSB305 demo board照片。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200820/3ce598debbbd462aa3ef64384dba65a4.png" max-width="600" /></p>
+<p>图1. HUSB305典型应用电路</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200820/d0da1254382448dfb0c366bb21b400c2.png" max-width="600" /></p>
+<p>图2. HUSB305 demo board照片</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200820/54c9d152116b444689c97cee81ac2bce.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>图3. HUSB305的应用场合</p>
+<p>HUSB305非常适合用于带桶形连接器的适配器的USB-C连接器替换。HUSB305只需放置在USB-C的Paddle Card（桨片卡）上，不改变原来连接桶形连接器的电源内部结构及外壳、电源本体不用重新开模、保持原来的输出带两芯线（VBUS和GND）就可以实现，如图5.所示。HUSB305的高耐压和良好保护特性可以在插拔、大负载跳变、负载短路等各种恶劣环境保持良好性能。当然，HUSB305也可以放置在电源板本体上，通过三芯线（VBUS、GND和CC）连接到USB-C连接器上。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200820/bef7eb525b9a475a80bb087b4fc8b533.png" max-width="600" /></p>
+<p>图4. 桶形连接器端口升级成USB-C端口</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200820/ff00beee7c33493691e2911b39d30563.png" max-width="600" /></p>
+<p>图5. HUSB305用在USB-C Paddle Card（桨片卡）上，芯片的高耐压可以在插拔、大负载跳变、短路等各种恶劣环境保持良好性能</p>
+<p>HUSB300和HUSB304是集成负载开关的USB协议识别芯片。HUSB300和HUSB304的差异在于，HUSB304支持设备移除指示和短路故障指示，适用于多口PD快充的功率动态分配应用场合，而HUSB300不支持。HUSB300和HUSB304的特性如下：</p>
+<ul>
+<li>集成超低Rdson NMOS负载开关</li>
+<li>可配置的电流限流</li>
+<li>4V-6.5V宽工作电压，最高耐压8V</li>
+<li>65uA超低工作电流</li>
+<li>设备移除指示，短路故障指示(HUSB304)</li>
+<li>USB端口智能协议识别功能：</li>
+</ul>
+<ul>
+<li>输入欠压，过压保护</li>
+<li>短路保护，过流保护</li>
+<li>热关断</li>
+<li>±8KV HBM ESD</li>
+<li>TSOT23-6封装（HUSB300）或TSOT23-8封装（HUSB304）</li>
+</ul>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200820/3f620d282cc94de580d3bbf3eb54ca7a.png" max-width="600" /></p>
+<p>图6. HUSB300、HUSB304典型应用电路</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200820/a9607174af4847b189ee223f39dbd63d.png" max-width="600" /></p>
+<p>图7. HUSB304 demo board照片</p>
+<p>HUSB304可以和HUSB350搭配，实现1A1C双口PD快充的超简电路。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200820/2c4ea03b220a4b5fa713c61f88d7d1b5.png" max-width="600" /></p>
+<p>图8. HUSB304和HUSB350搭配的1A1C双口PD参考框图</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200820/e7b80a02f7e94c54af51e2fc3559f1bc.png" max-width="600" /></p>
+<p>图9. HUSB304和HUSB350搭配的1A1C双口PD参考设计实物图</p>
+<p>表1. 给出了HUSB300、HUSB304和HUSB305的参数对比。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200820/c2a60052decd4f5682eb0dba67cd44ed.png" max-width="600" /></p>
+<p>表1. HUSB300、HUSB304和HUSB305的参数对比</p>

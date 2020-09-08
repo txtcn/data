@@ -1,0 +1,633 @@
+➜安海半导体推出新型65W PD快充方案，性能媲美氮化镓
+http://www.sohu.com/a/412741778_296845	22163
+<p>充电头网从供应链获悉，安海半导体近日推出了一套65W超高功率密度的PD快充方案，其基于安海半导体高性能BlueFet 系列产品超级MOSFET打造，相比传统硅MOSFET而言，拥有更快的开关速度，并可通过系统优化，获得高达93.8%的转换效率，性能媲美氮化镓功率器件。而在成本方面，安海半导体BlueFet 系列产品超级MOSFET则要比氮化镓功率器件更具性价比优势。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/691043478b32479dac58abfb8a273255.jpeg" max-width="600" /></p>
+<p>在外观方面，采用安海半导体BlueFet 系列产品超级MOSFET的65W快充相比苹果30W PD快充，虽然功率翻倍，但其体积更小；同时相比小米65W迷你PD快充而言，安海方案的体型也要更显修长。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/b88b91367db54e5fa7420fdfa8fef892.jpeg" max-width="600" /></p>
+<p>安海65W PD快充方案对比一款输出功率为61W的氮化镓快充产品，安海半导体的方案更薄更窄、略长，功率更高但体积相差不大。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/b31c7efb298b4c6795980f4a76fb6e19.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>通过实际测量，基于安海半导体BlueFet 系列产品超级MOSFET打造的这套65W PD快充方案的外壳尺寸约为53.15mm×44.84mm×26.91mm，在配备折叠插脚的情况下，其功率密度高达1.01W/cm³，领先市面上在售的传统硅MOSFET充电器。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200812/8b45e7b7e59944da93a53484c4e2adcb.jpeg" max-width="600" /></p>
+<p>取出内部PCBA，可以看到安海半导体65W PD快充方案内部电路设计十分简洁。据安海半导体的工程师介绍，该套方案在设计之初就考虑到了实际量产的需要，在保证产品完整性能的前提下，简化了PCBA的布局，整套方案仅用了两块PCB板，结构并不复杂。同时，安海半导体也可协助电源厂商根据自身的产品需求，开发其他类型的PD快充方案。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/15b5ba039c1d457ca0be3c13aaa04b13.jpeg" max-width="600" /></p>
+<p>该套65W PD快充方案的核心器件为来自安海半导体BlueFet 系列产品超级MOSFET，型号ASA65R350E，耐压650V，导阻350mΩ。</p>
+<p>据介绍，该款MOSFET采用独特专利器件结构和精心设计的制造工艺，具有比常规超结更快的开关速度及更强的EMI性能；可在获得极低的动态损耗的同时最大限度抑制了开关震荡。此外，其EAS抗冲击能力优于同类产品。通过方案优化，产品性能可以媲美GaN方案，并且具有更高的性价比。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/860469d753f64c9a977e2057e68efcfd.png" max-width="600" /></p>
+<p>安海半导体ASA65R350E详细规格资料。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/0451998289b544a38c194836c324856c.jpeg" max-width="600" /></p>
+<p>结合PCB板的背面器件，可以看到这套65W PD快充方案为常见的开关电源宽范围输出，并通过协议芯片控制输出电压架构。初级侧搭配的是安森美NCP1342高频PWM控制器，用于控制安海半导体超级MOSFET实现高频开关动作。而在次级侧，还采用了一颗来自安海半导体的同步整流MOS管，型号ATN095N10，耐压100V。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/3a2324a04bcb42068aaff2b2f0d3d780.png" max-width="600" /></p>
+<p>安海半导体ATN095N10详细规格资料。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/a8ce24990f584585a3786e90836d3334.jpeg" max-width="600" /></p>
+<p>使用安海半导体65W PD快充方案给华为笔记本电脑充电，ChargerLAB POWER-Z KM001C测得电压20.21V，电流2.91A，充电功率约为59W，成功支持USB PD快充。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/916f089bc68845f4b87a7f6fa43fa2ca.jpeg" max-width="600" /></p>
+<p>给三星S20 Ultra充电，测得电压9.25V，电流2.86A，充电功率约为26.5W，成功支持USB PD3.0 PPS快充。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/1527ee701ce248e8946ce97ff4030b0b.jpeg" max-width="600" /></p>
+<p>给100W移动电源充电时，测得电压20.28V，电流3.24A，充电功率约为65.7W，成功支持USB PD快充。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200812/94087af907204d83842a93577cf17e82.jpeg" max-width="600" /></p>
+<p>在220VAC电压下，以最大功率65W输出，测得该快充方案的纹波约为60mV。</p>
+<p>充电头网进一步了解到，目前安海半导体BlueFet 系列产品超级MOSFET已经量产出货。值得一提的是，作为一家MOSFET原厂，安海半导体除了可以向客户提供元器件，还能为客户提供最精简的PD快充参考设计，帮助客户缩短产品开发周期，以最小的成本加速产品上市。如有产品需求可以与安海半导体销售工程师取得联系。</p>
+<p><strong>关于安海半导体</strong></p>
+<p>安海半导体集团（ANHI Semiconductor Group）是由具备模拟及功率半导体行业超过20年经验的资深团队组建而成，专注于高性能模拟及功率半导体技术、产品及系统方案的开发，富士康半导体集团为安海半导体主要投资机构。</p>
+<p>安海半导体致力于成为将工艺技术、器件设计、电路设计和系统应用相结合的模拟及功率半导体公司，为客户提供完整的模拟及功率半导体产品系列和应用方案。</p>
+<p>安海半导体主要目标应用领域为消费电子、汽车、工业、家电和能源领域，总部设在济南，在上海、成都、杭州、广州、深圳及台湾设立全资子公司和研发中心。</p>
+➜Transphorm公司推出氮化镓芯片TP65H300G4LSG
+http://www.sohu.com/a/412743560_296845	22651
+<p>2020年氮化镓快充市场迎来了爆发式增长，一方面表现在各大氮化镓芯片原厂陆续实现量产出货，另一方面则是市面上主流的手机品牌和电商品牌纷纷入局，加速了终端配件产品的上市。</p>
+<p>近日，充电头网再次从供应链获悉，美国Transphorm公司推出了一款氮化镓功率芯片TP65H300G4LSG，称之为SuperGaN，其基于Transphorm的第4代GaN平台，并采用先进的epi和专利设计技术，通过简化制造工艺降低成本，同时通过降低栅极电荷、输出电容、交叉损耗和反向恢复电荷提高硅的效率。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/ac850d9188d844eaaa4cf5ac630e052a.jpeg" max-width="600" /></p>
+<p>TP65H300G4LSG采用了Transphorm公司最先进的高压GaN-HEMT和低压硅MOSFET技术，提供了卓越的可靠性和性能。产品拥有耐压650V以及240mΩ的导阻，应用于快充充电器时，有赖于超低的开关损耗，在&gt;300kHz开关频率下依然可实现&gt;93%的高效率。不仅节能环保，而且使用更安全。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/0867558a2d9e403f88a410614dc96a91.jpeg" max-width="600" /></p>
+<p>从基于Transphorm公司SuperGaN开发的65W氮化镓快充PCBA来看，其体积非常小巧。据悉，该方案已经对客户量产出货，并被罗马仕65W氮化镓快充充电器采用，在配备折叠插脚的情况下，充电器成品功率密度可达到1.07W/cm³，处于业界领先水平。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/cb7e226a3d724d7b8b2f2822bea1713d.jpeg" max-width="600" /></p>
+<p>Transphorm公司TP65H300G4LSG详细规格资料。</p>
+<p><strong>关于Transphorm公司</strong></p>
+<p>Transphorm公司致力于设计、制造和销售用于高压电源转换应用的高性能、高可靠性的氮化镓（GaN）半导体功率器件。Transphorm持有数量极为庞大的知识产权组合，在全球已获准和等待审批的专利超过1000多项 ，是业界率先生产经JEDEC和AEC-Q101认证的GaN FET的IDM企业之一。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/6efb23210bba411abb14779f3adea569.jpeg" max-width="600" /></p>
+<p>得益于垂直整合的业务模式，Transphorm公司能够在产品和技术开发的每一个阶段进行创新——包括设计、制造、器件和应用支持。</p>
+<p>Transphorm：让电力电子应用超越硅极限。</p>
+➜青出于蓝：SHARGE闪极90W氮化镓快充深度评测
+http://www.sohu.com/a/412756552_296845	26808
+<p>深圳这座年轻的城市，孕育壮大了无数年轻企业。闪极就是一家非常年轻的创业公司，相信小伙伴们还记得充电头网此前发布的《能尖锐何必圆滑？SHARGE闪极 65W 2C1A氮化镓充电器开箱评测SG-065》。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/943e1e96ba4145b7b9dfdf7f4a057314.jpeg" max-width="600" /></p>
+<p>充电领域争的就是快，短短数月，闪极继续推出90W 和100W两款产品。今天小编和大家唠唠闪极90W氮化镓快充。</p>
+<p>一、开箱</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/5383998c786643b09a0520d08d26e984.jpeg" max-width="600" /></p>
+<p>闪极90W氮化镓快充的外包装风格与前款一脉相承，暗灰底色分为两段，一段印刷了黑色平行条纹，突出SHARGE闪极采用的斜纹增大散热面积的设计。不同于前款的天地盖，这款盒子整体为抽出式设计。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/cde8803df17049cba1692a1b42e7b5d5.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>包装背面同样是黑色主体配以绿色设计，远看中间的绿色条带最右端被分割成三个绿点，和“SHARGE”LOGO相呼应，可以看出闪极在细节处很花心思。</p>
+<p>下面是参数部分。</p>
+<p>产品型号：S90</p>
+<p>接口类型：USB-A x1，USB-C x2。</p>
+<p>输入参数：AC 100-240V ~ 50-60Hz，2A Max</p>
+<p>USB-C1输出：3.3V-11V 5A / 5V 3A / 9V 3A / 12V 3A / 15V 3A / 20V 4.5A （90W Max）</p>
+<p>USB-C2输出：3.3V-11V 5A / 5V 3A / 9V 3A / 12V 3A / 15V 3A / 20V 4.5A （90W Max）</p>
+<p>USB-A输出：4.5V 5A / 5V 4.5A / 9V 3A / 12V 3A / 20V 3A （60W Max）</p>
+<p>USB-C1 + USB-C2输出：60W + 30W （90W Max）</p>
+<p>USB-C1 + USB-A输出：60W + 30W （65W Max）</p>
+<p>USB-C2 + USB-A输出：5V 4.8A（24W Max）</p>
+<p>USB-C1 + USB-C2 + USB-A 总输出：60W + 24W（84W Max）</p>
+<p>委托方：Sharge，Inc（美国闪极公司）</p>
+<p>制造商：闪极科技（深圳）有限公司</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/2155ac73099f4ede826a9a0a88ddf475.jpeg" max-width="600" /></p>
+<p>想拿到产品第一步是从外包装中抽出一个盒子，第二步打开盒子（哈哈哈小编不是在说如何将大象装进冰箱）。侧面印有“开启未来 OPEN THE FUTURE”，让打开这个动作也有了仪式感。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/41b3a7822750456d894ad95fc0fa5a28.jpeg" max-width="600" /></p>
+<p>总算看见真容啦，一种熟悉感油然而生，为什么？因为此前闪极65W氮化镓快充外形同样采用类似的设计语言，这两款产品风格一致。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200812/c6e5f7d81dce46f3890f936535b46e65.jpeg" max-width="600" /></p>
+<p>充电器下面就放着说明书，也是一样的风格，暗灰色加条纹。那么就来个开箱“小家福”吧。</p>
+<p>二、产品</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/309d19a614ea45c9a5be6cb386d5f72e.jpeg" max-width="600" /></p>
+<p>正式上手，虽然方方正正，棱角分明，但还是可以轻松拿在手中。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/2000e9b4284c48879c52d35c02936ea4.jpeg" max-width="600" /></p>
+<p>换个角度，底部镶嵌着一条银灰铝合金金贴。这块铝合金标贴通过喷砂、阳极氧化、激光镭雕工艺非常提升质感，标贴上是SHARGE商标LOGO，是设计的点睛之笔。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/b84bdbde609e469eaddbb8312e2f1c57.jpeg" max-width="600" /></p>
+<p>看正面，独特的斜纹，相比起传统的平整表面壳体，通过斜纹槽设计有效增加了面积，理论上能改善散热效果。根据充电头网此前对闪极65W的测试，斜纹槽设计确实对散热有一定帮助。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/1fe8fdeaf0c0440ea3230989701445d6.jpeg" max-width="600" /></p>
+<p>插脚方面这款闪极充电器使用了可折叠插脚设计，差旅用户出门时将插脚收纳进壳体内可以避免与行李物品互相刮蹭。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/5364a6fd9eef45c682c69f48f24017d9.jpeg" max-width="600" /></p>
+<p>输出接口配置方面，闪极90W氮化镓充电器带有两个USB-C PD输出接口，一个USB-A快充输出接口，可以应对新老接口设备。</p>
+<p>四、体积重量</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/00c80893913a44a490eb98d830e39bd2.jpeg" max-width="600" /></p>
+<p>将一元硬币靠在旁边看一下充电器的厚度，整个看上去比硬币稍高。（硬币表示：我不服）</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/77dc6371adb044bfb5033a5aea2e3be1.jpeg" max-width="600" /></p>
+<p>闪极90W氮化镓充电器重量163.4g，常见的多口非氮化镓充电器重量一般在140g以上，SHARGE闪极 65W 2C1A氮化镓充电器重量110.1g。从65W升级到90W，这个重量也属于正常范畴。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/9353964a8ef54f289445a9a251ad0af6.jpeg" max-width="600" /></p>
+<p>与苹果30W充电器放在一起，SHARGE闪极90W氮化镓充电器和苹果30W充电器不相上下。闪极还提供更大的功率、更多的输出接口，满足更多场合更多设备使用（苹果表示：你也就比我多了6卢罢了）。</p>
+<p>五、产品特色</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200812/71c6d1061fd64a16a0a83771d41183f0.jpeg" max-width="600" /></p>
+<p>看到这里，其实各位小伙伴都能感觉到，闪极的最大特点就是棱角分明。首先是外观上的棱角，根据小编的使用经验，闪极的充电器就是精致小巧的黑色小砖块。个人感觉，这种更偏极客的硬朗设计风格，更能击中像小编一样的数码爱好者的心。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/c3d35f34e7b9447591e2246216637162.jpeg" max-width="600" /></p>
+<p>其次是性能上的极致追求，65W氮化镓快充有很多大小厂都在做，90W、100W却并不多。闪极却在65W刚一试水就敢推出更高功率的产品，性能没的说。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/7639d0f6c1724697b03b207cb6191591.jpeg" max-width="600" /></p>
+<p>最重要的是这家公司基因里那些极致追求。手机领域的烽火连天或许牵连到充电领域，这块市场真是百花齐放，闪极作为一家异常年轻的创业公司，一上来就推出65W的多口氮化镓后，没多久90W和100W就纷至沓来。这种面对市场竞争的不妥协，显然也是一种对极致追求的体现。</p>
+<p>六、USB基础性能测试</p>
+<p>1、USB-C1</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/c4c8294e793847d7bf706b76b4e900d9.jpeg" max-width="600" /></p>
+<p>使用POWER-Z KT001对USB-C1接口进行快充协议轮询，支持APPLE2.4A、QC2.0、QC3.0、AFC、FCP、SCP、PPD3.0 、PPS等快充协议。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/7089b57b02f44e3c8132327b9f7c1ad1.jpeg" max-width="600" /></p>
+<p>使用POWER-Z KT001 USB测试仪读取USB-C1 PDO报文，包含5V3A / 9V3A / 12V3A / 15V3A / 20V4.5A五个固定电压档，一组PPS：3.3-11V5A。</p>
+<p>2、USB-C2</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/7837bd8b40ad483bb9e391cee67deb08.jpeg" max-width="600" /></p>
+<p>使用POWER-Z KT001对USB-C2接口进行快充协议轮询，支持APPLE2.4A、QC2.0、QC3.0、AFC、FCP、SCP、PD3.0、PPS 等快充协议。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/d839b4a50b24467694cafe73a6049d9a.jpeg" max-width="600" /></p>
+<p>使用POWER-Z KT001 USB测试仪读取USB-C2 PDO报文，包含5V3A / 9V3A / 12V3A / 15V3A / 20V4.5A五个固定电压档，一组PPS：3.3-11V5A。</p>
+<p>经过测试可知，两个USB-C插口功率一致，支持盲插。</p>
+<p>3、USB-A</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/69a044ebf6bf4ab59c496465468ffc4f.jpeg" max-width="600" /></p>
+<p>使用POWER-Z KT001对USB-A接口进行快充协议轮询，仪表全绿，支持APPLE2.4A、QC2.0、QC3.0、AFC、FCP、SCP、VOOC、DASH等快充协议。</p>
+<p>八、兼容性测试</p>
+<p>1、USB-C</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/e4db9a3af91947559e042ba0e1e29479.jpeg" max-width="600" /></p>
+<p>iPhone11支持USB PD和Apple2.4A快速充电协议，使用USB-C为iPhone11充电，功率为9.02V 2.52A 22.72W。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/c580bc91fc564fb285acf50beb8d1514.jpeg" max-width="600" /></p>
+<p>黑鲨3 Pro支持USB PD / QC / 65W SQC快速充电协议，使用USB-C对黑鲨3 Pro充电，功率为8.80V 4.76A 41.95W。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/c453e3a0d45343a4a1f5aa022fcd55da.jpeg" max-width="600" /></p>
+<p>iPad Pro 11支持DCP/USB PD快速充电协议，使用USB-C对iPad Pro 11手机充电，功率为14.97V 2.06A 30.86W。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/1fc96191529e47c7bd860835b4911ae7.jpeg" max-width="600" /></p>
+<p>Macbook Pro 16支持USB PD快速充电协议，使用USB-C对Macbook Pro 16充电，功率为19.62V 4.43A 87.03W。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/2cb7ca0449854bd993f4d6db06beff25.jpeg" max-width="600" /></p>
+<p>华为Matebook支持USB PD快速充电协议，使用USB-C对华为Matebook充电，功率为19.75V 3.01A 59.58W。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200812/e70ec36c99fb4c719efa996a879cb70d.jpeg" max-width="600" /></p>
+<p>某充电宝支持USB PD100W快速充电协议，使用USB-C对其充电，功率为19.61V 4.44A 87.19W。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/178d24bec310402b81d8250956f132b3.png" max-width="600" /></p>
+<p>USB-C兼容性制作成表格，SHARGE闪极90W氮化镓充电器USB-C对PD、QC、FCP、PE都有良好的兼容性，另外对某些PPS设备也可以握手大功率充电，例如黑鲨3Pro、魅族17Pro都成功握手。iPAD、Macbook Pro兼容性也是完全没问题的。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/560d3914d8d94bd8a381cb45079ec370.png" max-width="600" /></p>
+<p>设备充电功率制作成柱状图，实验室里100W充电宝的功率最高达到87W，两台电脑紧跟其后，但Macbook比Matebook功率要高不少。其他大部分设备都能握手相应的协议。</p>
+<p>2、USB-A</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/e19d4bafe27f4e29be6be91b17447c1c.jpeg" max-width="600" /></p>
+<p>iPhone11支持USB PD和Apple2.4A快速充电协议，使用USB-A为iPhone11充电，功率为5.08V 1.93A 9.83W。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/08c9ae8581a34a9e89d25483418def35.jpeg" max-width="600" /></p>
+<p>华为P30 Pro 支持SCP、FCP和 USB PD快速充电协议，使用USB-A为华为P30 Pro充电，功率为4.98V 4.99A 24.91W。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/e1b67f89c3ae4d609272f30a1d0d1c06.jpeg" max-width="600" /></p>
+<p>小米 10 Pro手机支持PPS/QC/USB PD快速充电协议，使用USB-A对小米 10 Pro手机充电，功率为8.66V 2.7A 23.41W。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/90ba2e1f7d784bb192fed1cfe7eb1818.jpeg" max-width="600" /></p>
+<p>iPad Air 3支持Apple 2.4A/USB PD快速充电协议，使用USB-A对iPad Air 3充电，功率为5.09V 2.3A 11.74W。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/5ebc60a9cd6240ba9e3ed1743185ef37.png" max-width="600" /></p>
+<p>USB-A协议支持度也是同样的丰富，对APPLE2.4A、QC、PE、FCP设备都能握手开启对应快充，另外SCP也正常开启，为华为设备提供25W的低压快充。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/55b18bf76f014cba8b7db0259f9de163.png" max-width="600" /></p>
+<p>将USB-A测试数据制作成柱状图，华为P30Pro充电功率达到25W左右排名最高，小米10Pro以23W紧随其后。</p>
+<p>九、最大输出</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/9e07d9412ae440cf98c7b15e0f5fe92c.png" max-width="600" /></p>
+<p>使用EB程控电子负载测试USB-C1最大输出功率，以0.1A为电流步进单位10秒为步进间隔，SHARGE闪极 90W 2C1A氮化镓充电器最大输出功率为18.82V 5.90A 111W，比标称的90W多了23%余量。</p>
+<p>十、满载稳定性</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/5172c970d06044b6aa76e15b38cdbf90.png" max-width="600" /></p>
+<p>按照额定功率20V 4.5A满载进行稳定性测试，测试时间为一小时，测试过程中电压值呈水平直线，无明显波动情况，长时间满载也十分稳定。</p>
+<p>十一、多口输出</p>
+<p>1、USB-C1 + USB-C2输出</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/f25f6fe27b3447ac8f94795604021e52.jpeg" max-width="600" /></p>
+<p>经过前面测试可以得知，SHARGE闪极 90W氮化镓充电器两个USB-C输出口具备盲插功率的设定，单独插入任意USB-C接口都能获得90W最大输出。USB-C1、USB-C2同时输出时，采用大小功率分配策略，USB-C1最大输出为60W，USB-C2最大输出为30W，图中是同时为小米10Pro、三星S20Ultra充电，小米10Pro功率8.5V 2.42A 20.59W，三星S20Ultra功率8.44V 2.19A 18.54W，两台设备都能同时快速充电。</p>
+<p>2、USB-C1 + USB-A输出</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/35bc82b469b24c5997a57815a81fe93a.jpeg" max-width="600" /></p>
+<p>USB-C1、USB-A同时输出时，采用大小功率分配策略，USB-C1最大输出为60W，USB-A最大输出为30W，图中是同时为小米10Pro、Macbook Pro 13同时充电，小米10Pro功率8.59V 2.38A 20.48W，Macbook Pro 13功率19.52V 2.89A 56.56W，两台设备都能同时快速充电。</p>
+<p>3、USB-C1 + USB-C2 + USB-A 总输出</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/13aad493198b4fa480453bc18b84d36c.jpeg" max-width="600" /></p>
+<p>三台设备同时供电的情况，USB-C1独享60W大功率输出，USB-C2 / USB-A为锁定5V状态共享5V4.8A。图中USB-C1对iPad Pro充电功率为14.84V 2.1A 31.24W，USB-C2对三星S20Ultra充电功率4.86V 2.68A 10.13W，USB-A为华为P30 Pro充电功率4.84V 1.9A 9.23W。</p>
+<p>十二、发热</p>
+<p>很多读者非常关心氮化镓充电器发热量，所以我们加入了发热测试。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/3bead1526368437cad09c8b71b0929bd.jpeg" max-width="600" /></p>
+<p>在25℃的恒温箱中，实测20V4.5A 90W满载1小时，使用FLIR热成像仪拍摄充电器发热情况，充电器一面温度最高为80.3度。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/1da0709efa5c49029c18c4c8aa732cdd.jpeg" max-width="600" /></p>
+<p>另一面最高温度为81.9度。SHARGE闪极是多路大功率充电器，相比起单口输出的充电器，内部涉及多路转换，发热量相对单口产品来说通常都会稍微大点。</p>
+<p><strong>充电头网总结</strong></p>
+<p>SHARGE闪极 90W氮化镓充电器评测到此结束，家族式棱角分明的立方设计让它在沧海横流的市场中显示英雄本色，氮化镓功率器件的使用配以高技术的设计，让三口90W充电器可以达到超小体积，可以说十分难得。</p>
+<p>性能方面它支持最大输出90W，两个USB-C一个USB-A配置可以应对新旧各种设备，支持5V3A / 9V3A / 12V3A / 15V3A / 20V4.5A完整的PDO电压输出，还带有一组3.3V-11V5A PPS。USB-C接口支持功率盲插，任意一个USB-C插入都可以获得90W的输出。</p>
+<p>快充协议方面支持PD、PPS、QC、AFC、FCP、SCP、PE、APPLE2.4A等快充协议，让新老设备都能享受快速充电的乐趣。</p>
+<p>SHARGE闪极90W氮化镓充电器各方面兼顾到了，小体积、大功率、多设备支持、合格的温升。以及根据小编自己对上一代产品的使用，是“居家旅行必备”，值得推荐。</p>
+➜必易微KP321XB进入公牛65W PD快充插线板供应链
+http://www.sohu.com/a/412757847_296845	27237
+<p>充电头网从供应链获悉，必易微电源芯片获得公牛旗下首款65W PD快充插线板采用，产品性能获得插座行业标杆品牌的高度认可，同时这也从侧面反映了必易微团队扎实的研发实力。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/6a2043c772d7408fb1ba78028b2f7b88.jpeg" max-width="600" /></p>
+<p>作为国内插座行业的领军品牌，公牛是多个细分行业里的隐形冠军，其产品广泛应用于家庭、办公等用电场合。随着USB PD快充浪潮的来临，公牛开始在PD快充领域展开布局，并在近期推出了旗下首款带2A1C三个充电接口的65W PD快充插线板，进一步丰富了产品类目，满足当代消费者对产品的需求。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/5d70a3f29dba49b99a7d8ebc64f7e701.jpeg" max-width="600" /></p>
+<p>据充电头网拆解了解到，公牛65W PD快充插线板内置的电源模块可分为两路，一路为非隔离电源，用于控制继电器通断，从而实现对整个插线板的控制；另一路为常见的隔离开关电源+二次降压电路，主要实现了充电器功能。其中，非隔离电源部分采用的正是必易微PWM控制功率开关KP3210B。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/95bb91eaf9194c54b472f84ea971536f.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>必易微KP3210B在公牛65W PD快充插线板中的应用。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/4113e6a0a8464859a47638420248045e.jpeg" max-width="600" /></p>
+<p>据了解，必易微KP321XB系列是一款高性能低成本PWM控制功率开关，适用于离线式小功率降压型应用场合，外围电路简单、器件数量少；同时产品内置高耐压MOSFET可提高系统浪涌耐受能力。</p>
+<p>与传统的PWM控制器不同，KP321XB内部无固定时钟驱动MOSFET，系统开关频率随负载变化可实现自动调节。同时芯片采用了多模式PWM控制技术，有效简化了外围电路设计，提升线性调整率和负载调整率并消除系统工作中的可闻噪音。此外，芯片内部峰值电流检测阈值可跟随实际负载情况自动调节，可以有效降低空载情况下的待机功耗。</p>
+<p>必易微KP321XB集成有完备的带自恢复功能的保护功能：如VDD欠压保护、逐周期电流限制、输出过压保护过热保护、过载保护和VDD过压保护等。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/338d96eaddae49e3afb648bd101ad795.png" max-width="600" /></p>
+<p>必易微KP321XB系列芯片详细规格资料。</p>
+<p><strong>关于必易微</strong></p>
+<p>必易微电子成立于2014年，并在2020年7月份获得小米的投资。总部位于中国科技创新前沿城市深圳，并在在杭州、厦门、上海、中山等地设有子、分公司。必易微拥有半导体设计领域的资深专家和高效的管理团队，致力于计算机、消费电子和LED照明等领域的电源管理方案的开发、设计、测试、销售及系统集成，其产品可应用于LED照明、充电器、电源适配器和小家电电源等领域。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/6a81b0ea5b9b4fd08adf79de65b5dd8d.jpeg" max-width="600" /></p>
+<p>面对日益增长的消费类电子市场，必易微结合自身在 AC-DC电源领域耕耘多年的经验，在2020年3月26日发布了旗下首款AC-DC快充电源解决方案KP2201和KP4050。该方案最大可以支持65W输出，不仅可以满足满足PD3.0、QC4.0+对输出电压高精度调节的要求，而且还具备集成度高、外围精简的特点。</p>
+<p>此外，在18W PD快充功率段，必易微也推出了一套高度集成的内置MOS方案KP22306和KP41262，帮助快充电源厂商实现更精简的电路设计。更有在手机充电器和网通类适配器的12W以下功率段推出KP23132内置BJT和KP41240更优性价比各种单点失效保护，全方位为客户提供更优质的解决方案。在资本注入之后，期待必易微能够借助资本优势，为用户带来更多更惊艳的快充电源解决方案。</p>
+➜拆解报告：nubia努比亚1A1C 45W氘锋氮化镓快速充电器PA0204
+http://www.sohu.com/a/412769823_296845	29913
+<p>此前nubia努比亚推出了一款65W 2C1A氘锋氮化镓快速充电器，这是首款由手机厂商推出的多口氮化镓快充充电器，意义重大。近期努比亚又发布了45W、两个新款65W以及120W共计四款氘锋系列氮化镓快速充电器，而后续四款充电器的推出不仅完善了氘锋系列生态，而且功率方面完美覆盖了充电市场最热门功率段，接口也更加丰富，满足广大消费者选购需求。</p>
+<p>目前充电头网已经拿到了努比亚45W氘锋氮化镓快速充电器，这款产品机身采用方柱造型设计，配备1A1C两个接口，单口最大输出分别是45W和12W，支持30W+12W双口充电模式，可以满足两台设备同时充电需求。下面我们就来看看其内部用料做工如何。</p>
+<p><strong>一、努比亚45W氘锋氮化镓充电器外观</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/9c3750ce07744c2cac50a9267067fb18.jpeg" max-width="600" /></p>
+<p>包装盒正面印有产品外观图，上端是45W功率和产品名称，下端是Type-C+USB-A和氘字。整体设计简洁，特点凸出。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/6af5dd8ea68645f992b6e29323594765.jpeg" max-width="600" /></p>
+<p>盒子背面贴有产品型号标签，此外还有品牌商和制造商的基本信息。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/6173ab36d67049f4969b2bd5eec26475.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>内部使用塑料盒对充电器进行支撑固定和保护，盒子两侧设有小凹槽，便于取出充电器。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/ccb346a0c8ff40e293adc5ff3a284a55.jpeg" max-width="600" /></p>
+<p>包装内全部东西一览，包括充电器和使用说明书。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/4982cf80afe04c899f3172796225b6d6.jpeg" max-width="600" /></p>
+<p>充电器外套有防刮塑料膜。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/ce3489e36a0f4d268a5c2c8b686a69a2.jpeg" max-width="600" /></p>
+<p>努比亚这款氮化镓充电器采用方形柱子造型设计，表面灰色并喷砂处理，腰身弧面过渡不硌手，整体小巧易携带。充电器机身正面还印有“氘”品牌字样，上端设有LED指示灯。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/197638312266492f90fb51b7a7f4bf4a.jpeg" max-width="600" /></p>
+<p>LED灯通电后亮淡蓝色光。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/7e1c3f2380ce4d0d88ede3e99417bcdc.jpeg" max-width="600" /></p>
+<p>输入端外壳上标注产品的参数信息</p>
+<p>型号：PA0204</p>
+<p>SN：2020313F001493</p>
+<p>输入：100-240V~50/60HZ 1.5A Max</p>
+<p>单USB-C输出：5V3A、9V3A、12V3A、15V3A、20V2.25A</p>
+<p>单USB-A输出：5V2.4A</p>
+<p>USB-C+USB-A输出：30W+12W（43W）</p>
+<p>品牌商：努比亚技术有限公司</p>
+<p>制造商：深圳市坤兴科技有限公司</p>
+<p>产品已经通过了3C认证。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/ec00b45064354c9b90bb346eae62a5c1.jpeg" max-width="600" /></p>
+<p>此外配备的是可折叠国标插脚，携带更方便且不会刮伤包里其它设备。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/558cb3f87da54e35bae85340006ed4d1.jpeg" max-width="600" /></p>
+<p>输出顶面配有1A1C两个接口，接口均为黑色胶芯，旁边印有USB-C和USB-A标识。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/8eee19ca05c346f3b243e258fe5cee99.jpeg" max-width="600" /></p>
+<p>使用游标卡尺实测充电器长59.92mm。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/d82141ef3ebd47d2bcc1764fc50edefa.jpeg" max-width="600" /></p>
+<p>宽为34.84mm。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/32df8ec619f34f8fb3b503caa7e8a7b3.jpeg" max-width="600" /></p>
+<p>厚度为34.80mm。由充电器三维尺寸可以算出体积为72.65cm³，功率密度为0.62W/cm³。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/ff137a20246e4b54b472f4dc440cc5e7.jpeg" max-width="600" /></p>
+<p>和苹果30W充电器直观对比，功率更大，且体积优势很明显。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/b4d2523c6db94d17b14dc364d387e7cb.jpeg" max-width="600" /></p>
+<p>横截面大小和一元硬币对比，要稍大一些。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/5857d75bceb64187b2d6dc49b0b2932c.jpeg" max-width="600" /></p>
+<p>充电器净重约为90g。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/2f35d3577d124219ac14a0c814181073.jpeg" max-width="600" /></p>
+<p>拿在手上的直观感受，小巧轻便。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/5f725915a77240b889c1ce805d8e17ac.jpeg" max-width="600" /></p>
+<p>使用ChargerLAB POWER-Z KT002检测USB-A口的输出协议，显示支持Apple 2.4A、Samsung 5V/2A和DCP协议。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/948fa80df286417e8aa965d2346a8fe3.jpeg" max-width="600" /></p>
+<p>使用KT002检测USB-C口的输出协议，显示支持Apple 2.4A、Samsung 5V/2A和DCP协议，以及QC2.0/3.0、AFC、FCP、SCP、MTK PE+2.0等多个快充协议。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/96e301c4ffb54b8baebbc427c3a5edce.jpeg" max-width="600" /></p>
+<p>除此之外，其PDO报文显示USB-C口还支持USB PD3.0快充标准，具备5V3A、9V3A、12V3A、15V3A、20V2.25A五组固定电压档位以及3.3-11V/3A一组PPS电压档位。</p>
+<p><strong>二、努比亚45W氘锋氮化镓充电器拆解</strong></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/1e2d699b6b234959b29a9c300d15c35f.jpeg" max-width="600" /></p>
+<p>将输入端外壳拆开，插脚和PCB板通过金属弹片接触进行通电。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/f484d72f8eb345f18a1930a524ff9a36.jpeg" max-width="600" /></p>
+<p>将PCB板取出，主板侧面以及输出端还设有小PCB板，初次级之间有绝缘板进行隔离。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200812/d53ecd03329f44a594bd511c28325ae0.jpeg" max-width="600" /></p>
+<p>PCB板背面一览，初次级之间是光耦和Y电容，光耦右侧还有一颗整流桥。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/83ad9f911f9343f1b2a1af920a41fe50.jpeg" max-width="600" /></p>
+<p>PCB板侧面一览，侧面小板背面设有PWM主控芯片和氮化镓开关管。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/d9ffa52fc8f24edc870d5cd868496411.jpeg" max-width="600" /></p>
+<p>PCB板另一侧一览，高压电容变压器等设在侧面小板上，空隙处注胶填充加固和帮助导热。</p>
+<p>通过对电路板正背面电路分析发现，努比亚1A1C 45W氘锋氮化镓快速充电器采用了开关电源宽范围输出，USB-C通过协议芯片控制输出合适电压，USB-A口二次降压以5V恒压输出的设计架构。下面我们就从输入端开始一一了解各元器件的信息。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200812/9f86ca2f805248d1aeb9359f31c3601d.jpeg" max-width="600" /></p>
+<p>输入端一览，设有延时保险丝、两级共模电感等元器件。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/890c072a4f4645d2848af2bf08366ab7.jpeg" max-width="600" /></p>
+<p>延时保险丝规格为3.15A 250V。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/36c448f9406d42d3bd5a999632afbd79.jpeg" max-width="600" /></p>
+<p>安规X电容容量0.22μF，东莞市成希电子有限公司。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/fbab966f74d548879eca41703a98b94d.jpeg" max-width="600" /></p>
+<p>共模电感双线绕制，用于滤除EMI干扰。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/3dc86bfaa675400cb43d1f8c5e048f04.jpeg" max-width="600" /></p>
+<p>另一颗共模电感特写。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/74eef944c0264bc697dce1450dc266a7.jpeg" max-width="600" /></p>
+<p>滤波电感外套热缩管。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/cbf8550db4b947129f5db63afc7a32a2.jpeg" max-width="600" /></p>
+<p>另一个滤波电感线芯绕制在柱状磁芯上，外套绝缘管。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/4d2584a2ccb6417c94aed7d4a5e22ff6.jpeg" max-width="600" /></p>
+<p>来自深圳市沃尔德实业有限公司的输入端整流桥WRLSB80M，这颗软桥通过较软的恢复曲线，比较平滑的关断特性，可以降低二极管结电容达到非常少的谐波振荡产生的效果。选用的LSB封装，拥有良好的散热特性，帮助中大瓦数适配器提升可靠性，单颗可做60W+。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/930d221aea334938995496a47bfd4c72.jpeg" max-width="600" /></p>
+<p>沃尔德 WRLSB80M 资料信息。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/87d9ba27b91b4a1a9347d988b6181bab.jpeg" max-width="600" /></p>
+<p>高压滤波电解电容来自东莞市军康电子科技有限公司，规格为400V 47μF。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/26a8edc74ce24186b385085c65c2ee67.jpeg" max-width="600" /></p>
+<p>另一颗同样400V 27μF。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200812/206d14213f6e4511b32e635642adef30.jpeg" max-width="600" /></p>
+<p>PWM控制器供电电容同样是军康品牌，规格为160V 4.7μF。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/f252b8ceb59b4d7592669e26ca7e6dca.jpeg" max-width="600" /></p>
+<p>主控芯片为ON安森美NCP1342，这是一颗高频初级PWM控制器，内置主动X2电容放电和多重完善的保护功能。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200812/e4447aa0c99248dfb8c1cffef474969c.jpeg" max-width="600" /></p>
+<p>安森美NCP1342 详细资料。</p>
+<p>充电头网通过拆解了解到，初级侧采用安森美NCP1342搭配纳微NV6115方案的氮化镓充电器还有SlimQ 65W氮化镓USB PD快充充电器、品胜65W USB PD氮化镓充电器、爱否开物2C1A 65W PD氮化镓充电器和倍思65W 2C1A GaN氮化镓充电器等产品。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/287de8c4a2b84187a5382df25afc4cbd.jpeg" max-width="600" /></p>
+<p>初级侧氮化镓开关管来自英诺赛科，型号是INN650D02 ，耐压650V，导阻低至0.2Ω，符合JEDEC标准的工业应用要求，这是整个产品的核心元器件。INN650D02 “InnoGaN”开关管高频特性好，且导通电阻小，适合高频高效的开关电源应用，采用DFN8*8封装，具备超低热阻，散热性能好，适合高功率密度的开关电源应用。</p>
+<p>英诺赛科向充电头网透露，INN650D02 “InnoGaN”开关管基于业界领先的8英寸生产加工工艺，是目前市面上最先量产的先进制程氮化镓功率器件，这项技术的大规模商用将推动氮化镓快充的快速普及。</p>
+<p>该氮化镓开关管还被飞频65W USB PD氮化镓充电器、魅族65W氮化镓充电器、Lapo 65W USB PD氮化镓快充充电器、ROCK 65W氮化镓快充充电器采用。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/7864dcea54ef402b89d8428cb3422e88.jpeg" max-width="600" /></p>
+<p>英诺赛科 INN650D02 详细资料。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/2393db63f94b4bbb9e60266b1d1073ed.jpeg" max-width="600" /></p>
+<p>变压器周身使用绝缘胶带紧密包裹，侧面贴有信息标签。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/31b679497b1747d3876a27994de2c867.jpeg" max-width="600" /></p>
+<p>输出端一览，1A1C母座分别焊接在小板和主控PCB板上，此外还有三颗固态电容和一颗降压电感。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/3904a1caa78a4f04b8991c0c7adb302c.jpeg" max-width="600" /></p>
+<p>小板背面贴有导热垫，旁边是一颗Y电容。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/d0f4494c69be450f9b61af4b926999bd.jpeg" max-width="600" /></p>
+<p>来自四川特锐祥科技股份有限公司的贴片式Y电容，具有体积小，重量轻等特色，体积和重量仅为传统插件电容的十分之一左右。</p>
+<p>据了解，特锐祥贴片Y电容产品具备可靠性高、抗振能力强、焊点良率高、高频特性好、可减少了电磁和射频干扰等特性，同时还易于实现自动化生产，提高生产效率，节省材料、能源、设备、人力、时间成本。在满足空间集约和性能条件的前提下，整体成本比传统更有优势。可以广泛应用于消费类电子、计算机和通信、工业电器、汽车电子、新能源、航天军工等行业领域，目前已在全球范围内取得CQC认证、UL认证、VDE认证、ENEC认证，安规500V、ISO9001等相关认证。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/daf1df746aa246e8a71df304825b2305.jpeg" max-width="600" /></p>
+<p>特锐祥贴片式Y电容详细资料信息。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/798e7dab1fd24db380ed3cd8710a98b2.jpeg" max-width="600" /></p>
+<p>OR-1009光耦，横跨在初级和次级之间，用于初级次级通信，反馈调节输出电压。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/0b2f6c4600f94562a71adba0ed42575c.jpeg" max-width="600" /></p>
+<p>另一颗Y电容特写。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/caea3100a6974e3da9016eb57db1b74c.jpeg" max-width="600" /></p>
+<p>去掉导热垫，板子背面设有同步整流和二次降压电路。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/170117cfbfb2497cb0f9447729174a44.jpeg" max-width="600" /></p>
+<p>丝印IBHJM次级同步整流控制器，实际型号为MP6908A，来自MPS芯源半导体，最高工作频率600KHz。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/30841ac65cae4bfba81d104c04a2d85c.jpeg" max-width="600" /></p>
+<p>MPS MP6908A详细规格参数。</p>
+<p>充电头网拆解了解到，采用MPS MP6908A的还有倍思65W 2C1A GaN氮化镓充电器、爱否开物1A2C 65W PD氮化镓充电器和RAVPOWER 65W氮化镓充电器，此外MPS同步整流芯片还被小米9 Pro原装45W快充充电器、thinkplus 45W USB PD充电器、thinkplus 65W口红USB PD充电器、紫米65W 2C1A桌面PD快充充电器、谷歌Pixelbook原装45W USB PD快充充电器等数十款产品采用。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/1af25609426047e2a1a2870619935c64.jpeg" max-width="600" /></p>
+<p>威兆次级同步整流MOS，VSP004N10MS，耐压100V，导阻典型值3.8mΩ。旁边是一颗并联的肖特基二极管，用于提升轻载效率。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/858daef455bc4ba0b426beb719c76adf.jpeg" max-width="600" /></p>
+<p>威兆 VSP004N10MS 详细资料。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/910c49ce4f7d44c38b58f54b53fe296a.jpeg" max-width="600" /></p>
+<p>小板正面一览。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/c02e0edd40ae477e839a540ee90cc327.jpeg" max-width="600" /></p>
+<p>次级同步整流输出滤波固态电容，规格为25V 330μF。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/8ff4af4b98fc4d00a63a6dc663cb28a4.jpeg" max-width="600" /></p>
+<p>硅动力SP1289EF同步降压转换器，内置开关管，同步整流，最大输出电流3A，支持4.5-30V宽电压输入，低静态电流，支持直通输出，用于USB-A口降压5V输出。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/71fd9c7beb8042d18b1c28deb9cb6dd4.jpeg" max-width="600" /></p>
+<p>硅动力SP1289EF资料信息。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/48c691d76b1d4c86a50340906dedfcfc.jpeg" max-width="600" /></p>
+<p>降压电感特写，外套热缩管。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/fc44050c904b488387f2567b432ef8d4.jpeg" max-width="600" /></p>
+<p>USB-A口的输出滤波滤波固态电容，规格为6.3V 270μF。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/b51d212757214643822c7a1fbfbda65c.jpeg" max-width="600" /></p>
+<p>南芯SC7004负载开关，用于USB-A口供电自动识别和过流保护，南芯SC7004内置12mΩ超低导阻NMOS，保护电流可由外置电阻设定，支持设备移除指示和短路故障指示，支持输入过压，欠压，过流，过热，短路保护，提供完整的单口保护功能。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/44ed7b44c40841199cd3a9c3200d2bdf.jpeg" max-width="600" /></p>
+<p>南芯SC7004资料信息。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/380098070e1942d588efc2618ebe5257.jpeg" max-width="600" /></p>
+<p>USB-A母座特写。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/369a0596c75d4a668fc6ffa1f9cabee1.jpeg" max-width="600" /></p>
+<p>USB-C口的输出滤波固态电容，规格为25V 680μF，外套有绝缘管。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200812/6cacee818bca4f5ba37538c7b56bc56f.jpeg" max-width="600" /></p>
+<p>USB-C母座焊接在主控PCB板上，两侧分别是协议芯片和输出VBUS开关管以及输出放电电路。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/176b6f7ee6ef40b38a5d4ff3ff0e1b81.jpeg" max-width="600" /></p>
+<p>USB PD协议芯片采用英集芯IP2723T，该芯片已通过USB IF协会认证。IP2723T是一款集成多种协议、用于USB输出端口的快充协议IC。支持多种快充协议，包括USB TypeC DFP、PD2.0/3.0、PPS 、HVDCP QC4、QC4+、QC3.0/2.0、FCP、SCP、AFC、MTK PE+ 2.0/1.1、Apple 2.4A、BC1.2以及三星2.0A。为适配器、车充等单向输出应用提供完整的TYPE-C解决方案。</p>
+<p>此外IP2723T具备高集成度与丰富功能，在应用时仅需极少的外围器件，有效减小整体方案的尺寸，降低BOM成本。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/0d550e4e57254f3e9720894804bcce43.jpeg" max-width="600" /></p>
+<p>英集芯IP2723T资料信息。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/98942c3babdd4fe49418da4e5cb9d337.jpeg" max-width="600" /></p>
+<p>输出VBUS开关采用威兆VS3618AE，NMOS，耐压30V，导阻6mΩ。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200812/9dfb6c9872b84f5b9243846b34f6889a.jpeg" max-width="600" /></p>
+<p>威兆VS3618AE资料信息。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/b5cc1fb7bbd74ecbaaba6e0174eb78ca.jpeg" max-width="600" /></p>
+<p>USB-C母座特写，过孔焊接。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/2d20f0b6f07d443091e65db9bebe0323.jpeg" max-width="600" /></p>
+<p>全部拆解完毕，来张全家福。</p>
+<p><strong>充电头网拆解总结</strong></p>
+<p>努比亚这款1A1C 45W氘锋氮化镓快速充电器体积小重量轻，配备可折叠插脚携带方便。USB-C口支持QC2.0/3.0、AFC、FCP、SCP、MTK PE+2.0、PD3.0快充协议，具备5V3A、9V3A、12V3A、15V3A、20V2.25A和3.3-11V/3A电压档位，最大输出45W；USB-A口支持Apple 2.4A，最大12W输出。30W+12W双口输出模式可满足平板和iPhone SE等两台设备同时充电。</p>
+<p>充电头网通过拆解了解到，这款充电器开关电源部分，由安森美NCP1342搭配英诺赛科氮化镓功率器件，以及MPS同步整流控制器搭配威兆MOS组成，输出宽范围电压。然后USB-C口由英集芯IP2723T控制，通过协议识别输出合适电压；USB-A口则经硅动力SP1289EF二次降压后以5V恒压输出，南芯SC7004输出限流及协议识别。</p>
+<p>充电器内部采用三块PCB板组合，空间利用率高。初次级之间设有隔离板，整流降压小板上贴有导热垫，元器件之间的空隙里注胶填充，充电器内部稳定性和散热性能有保均证。</p>
+➜铂陆帝AC50户外电源评测：45W PD+无线输出，一款身手全面的蓝精灵
+http://www.sohu.com/a/412804793_296845	40959
+<p>相信关注充电头网的朋友们对于户外电源已经非常熟悉了，大电池能量、220V AC输出，还有很多额外带有USB充电接口等。而今天小编要为大家介绍的是一款铂陆帝户外储能电源，同样具有大电池能量，除了支持AC、DC、USB、车充四种基本输出方式外，还支持PD快充，甚至无线充电，一起来看看。</p>
+<p>一、产品介绍</p>
+<p>铂陆帝的这款AC50户外电源外形设计的较为方正，黑蓝色搭配外观，边角处使用食品级硅胶材质，这样可以起到防摔防震的作用。内置汽车动力级别的3C倍率电芯，具有500Wh的电池能量，135000mAh的超大电池容量。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/f204bc66eeb24196acd7eb6811e201b3.jpeg" max-width="600" /></p>
+<p>与它的小弟AC30不同的是，AC50采用的是蓝色食品级硅胶材质边框搭配黑色面板拼接而成，这样的外观设计在视觉上，可以更加突显机身的轮廓感。如果用“小蓝胖子”来形容它的小弟AC30的话，那么AC50更像是肌肉健硕的大哥。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/135cd9d9ff48453b87cd7ca2496b5637.jpeg" max-width="600" /></p>
+<p>两侧是户外电源的散热孔，散热孔是较密的圆形孔，可以帮助散热。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/75afe90a86774d9e9e8a93e1f28973f1.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>电源的底部的四个角落分别带有防滑胶垫，可以在户外电源放在地上的时候起到防滑以及支撑的作用。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/56853502944749eaa3d58bab79cb384a.jpeg" max-width="600" /></p>
+<p>底部中间位置是产品的具体参数详情：</p>
+<p>名称：多功能便携储能</p>
+<p>型号：AC50</p>
+<p>电池容量：500Wh 11.1V 45Ah</p>
+<p>DC输入：14-40Vdc/120W</p>
+<p>AC输出：220Vac 60Hz/50Hz（300W）</p>
+<p>USB-A输出：5V 3A</p>
+<p>USB-C输出：5V 3A、9V 3A、12V 3A、15V 3A、20V 2.25A</p>
+<p>DC输出：12V 3A</p>
+<p>车充输出：12V 10A</p>
+<p>无线输出：5W/7.5W/10W</p>
+<p>工作温度：0-40℃</p>
+<p>工作湿度：10%-90%</p>
+<p>产品尺寸：259.5*191*196mm</p>
+<p>净重：6.2KG</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/25f1702440e846728e748c86beba3edd.jpeg" max-width="600" /></p>
+<p>电源的顶部带有两个隐藏式的折叠提手，中间是铂陆帝的品牌Logo，同时也是无线充电的位置所在，支持最高10W的无线输出功率。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/ffaf82f7c3014a56933829ba35ed9420.jpeg" max-width="600" /></p>
+<p>将iPhone 11 Pro Max放在无线充电区域，成功为iPhone 11 Pro Max无线充电。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/b5dedadca4ed4dde9a8bc2377bb4fe96.jpeg" max-width="600" /></p>
+<p>户外电源的接口面板特写，每个功能区分别使用白色线条区分，方便用户可以清晰地了解到各个功能区的功能特性。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/e4ea5b7cc962456385a9e57b3a0a931a.jpeg" max-width="600" /></p>
+<p>左上角是功能区开关按键以及数显屏的所在区域，按键分别为总电源开关，DC开关以及AC开关，右侧的数显屏可以清晰的看到电源当前的剩余电量以及输入功率、DC输出功率和AC输出功率等。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/7ed3c724f0644e6d915afeb2df137e9a.jpeg" max-width="600" /></p>
+<p>紧挨着的右侧是DC输出功能区和车充输出口，DC输出支持最高12V 3A 36W的输出功率，车充接口支持最高120W的输出功率。而且还可以搭配带有USB-C接口的PD车充，这样车充接口也可以支持PD快充输出了。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/9704a540de9342d1870ac324c7a645a7.jpeg" max-width="600" /></p>
+<p>来到接口面板的下半部分，铂陆帝AC50带有四个USB-A接口与一个USB-C接口，其中USB-A支持5V 3A的输出功率，USB-C支持最高45W的PD快充。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/2e8bec2e31be4360936431ebd9c9dc48.jpeg" max-width="600" /></p>
+<p>右侧是两个纯正弦波的220V AC输出接口，AC输出接口支持最高300W的输出功率。基本可以满足一些小功率的热水壶、照明灯、旅行电热毯、无人机等数码产品供电。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/6832f1ed18654add8b244a1275eb4713.jpeg" max-width="600" /></p>
+<p>切换至电源的背面，上面是一个照明灯，左侧是照明灯的开关，右侧则是电源的输入接口，产品支持最高120W的输出功率。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/75f2653f4c1c4063849e0ff993ceb64e.jpeg" max-width="600" /></p>
+<p>单击左侧的电源按键即可开启LED柔光照明灯，此外，照明灯还拥有三种照明模式。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/6feec5b685f348609d48daefa6c03535.gif" max-width="600" /></p>
+<p>首先可以单击照明灯的开关按键，可以打开LED柔光照明灯。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/6046cc77b84244999d7e320f04030dc5.gif" max-width="600" /></p>
+<p>再次单击开关按键，可以切换到较暗一些的亮度。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/998fc925d835469890a532b160c96d22.gif" max-width="600" /></p>
+<p>第三种，再次单击开关按键，可以切换到SOS警告闪亮模式。</p>
+<p>二、体积重量</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200812/8b84b452d2194494b7b5bb6194417b6a.jpeg" max-width="600" /></p>
+<p>看一下铂陆帝AC50的三维尺寸，小编找来卷尺大致测量了一下尺寸，实测长度约为26cm。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/c331680f85b244758f1438e570b696a2.jpeg" max-width="600" /></p>
+<p>宽度约为20cm。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/6773cb4c5c444d329bb58f272ab43b2f.jpeg" max-width="600" /></p>
+<p>高度约为20cm。 </p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/7ed0daa2128b4a5ba6d95938ebe7ef23.jpeg" max-width="600" /></p>
+<p>重量约为6.2KG，也就是大约12.4斤左右。</p>
+<p>三、配件</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/0ad72a3fc9d046edbd94d68f0a67597a.jpeg" max-width="600" /></p>
+<p>配件部分，铂陆帝AC50户外电源附带了一个AC输入的电源适配器。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/c65502781377486cab08ed5b1f93d368.jpeg" max-width="600" /></p>
+<p>充电器的参数方面：</p>
+<p>型号：T90-275A325-00</p>
+<p>输入： 100~240Vax 50/60Hz 2.5A Max</p>
+<p>输出：27.5V 3.25A</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/0beb5ec5691a446e86e580f66c57dbee.jpeg" max-width="600" /></p>
+<p>除此之外，还搭配附带了一个车充充电器，对于用户来说多了一个充电方式的选择，使用上来说只会更加的方便。 </p>
+<p>四、三种输入方式</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/f8c01fd4c99848758b9ebd4f4e5ad3dd.png" max-width="600" /></p>
+<p>电源的自身充电方面，支持常规的市电为其充电，在室内使用充电器连接电源插座即可轻松为户外电源恢复电量。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/8fae7c5afeaa4794914edf540b0b9e73.png" max-width="600" /></p>
+<p>此外，铂陆帝AC50户外电源还支持车充输入，在驾车到户外的路途中就可以即时为户外电源充电，到达目的地之后刚好将户外电源充满，可以直接使用了。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/a234c92c88b14b45a809f35e22093973.jpeg" max-width="600" /></p>
+<p>如果没有电怎么办，铂陆帝AC50户外电源还提供了第三种充电方式，在户外没有电源的情况下可以使用太阳能电池板为户外电源充电，并且采用了MPPT充电方式，可以根据太阳光的强弱自动追踪最大的电流，从而提高充电的功率。</p>
+<p>五、快充协议检测</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200812/9f3b8699af6348fc9df79ae605eb8589.jpeg" max-width="600" /></p>
+<p>来看一下户外电源的输出表现，户外电源上面带有USB接口，手上有Power-Z KT002肯定要看一下是否支持快充了，读取USB-A接口的快充协议，实测支持Apple2.4A充电协议。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/428e468bcc044346ba4d1cad175776f8.jpeg" max-width="600" /></p>
+<p>读取USB-C接口的快充协议，USB-C接口走的是纯PD快充通道。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/23e1da5b77984b5ea86ff71f14adeabd.jpeg" max-width="600" /></p>
+<p>读取USB-C接口的PDO报文，支持5V 3A、9V 3A、12V 3A、15V 3A以及20V 2.25A五个固定电压档位，支持最高45W的功率输出。</p>
+<p>六、输出测试</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/5711465743d44fd9b38b65ce22f81dee.jpeg" max-width="600" /></p>
+<p>iPhone 11 Pro支持Apple2.4A/USB PD快充协议，使用USB-A为iPhone 11 Pro充电，功率为5.22V 2.33A 12.19W，成功握手Apple2.4A充电协议。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/e87782afe4ce403dabbf87566be0d8c2.jpeg" max-width="600" /></p>
+<p>iPad Pro支持USB PD快充协议，使用USB-C为iPad Pro充电，功率为14.81V 2.25A 33.46W，成功握手15V电压档位，开启PD快速充电模式。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/467f490d515647259ab0e3e04b9a004b.jpeg" max-width="600" /></p>
+<p>MacBook Pro 13支持USB PD快充协议，使用USB-C为MacBook Pro 13充电，功率为19.74V 2.19A 43.30W，成功握手PD快充。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/5c2302dc4deb4ccab451d760867c0da2.jpeg" max-width="600" /></p>
+<p>除此之外，如果在面对笔记本等大功率设备的用电需求时，还可以直接使用220V纯正弦波的AC输出接口为笔记本充电，自然可以轻松的喂饱笔记本了。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/62dec5a37de34a9ea115c23ee20dd3cb.jpeg" max-width="600" /></p>
+<p>丰富的输出接口使得其在面对多个设备需要充电时也可以轻松应对，300W的输出功率即使在面对笔记本等大功率用电设备的时候也丝毫不虚。此外，还可以直接使用支持45W PD快充的USB-C接口为笔记本充电，省去了充电头这个媒介。</p>
+<p>七、温升测试</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/b9a9210cbc004ffda9529472c1fd92ef.jpeg" max-width="600" /></p>
+<p>来看一下铂陆帝的这款AC50户外电源的温控表现，测试条件为通过AC接口连接多个用电设备，在室温约为25℃的环境下，以300W的输出功率持续输出半小时后测试温升。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/8185f053a8714a4ab7e5eafeaa482d38.jpeg" max-width="600" /></p>
+<p>半小时后，实测热成像仪看一下户外电源的温度情况，当前最高温度为29℃，温升4℃，且热量主要集中在了顶部。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/b4e0ab073ed9436bb6fb67511baff0c5.jpeg" max-width="600" /></p>
+<p>再来看一下另一面，最高温度为29.5℃，温升4.5℃。从两张热成像中可以看出户外电源的温控效果还是很不错的，300W的功率持续输出半小时之后温度最高上升了4.5℃，没有太大的变化。</p>
+<p>充电头网总结</p>
+<p>铂陆帝作为户外储能电源品牌，是Bluetti品牌在国内市场的延展。到目前为止，铂陆帝在国内知名的两大电商平台京东、天猫强势入驻，并相继推出AC50、AC30、EB150等户外电源系列新品。</p>
+<p>铂陆帝AC50户外电源采用方正的外形设计，边角处使用食品级硅胶材质包裹，可以防范户外电源在意外跌落的时候损坏，保证产品的安全。顶部带有隐藏式折叠提手设计，方便用户携带和整理归纳，同时在顶部品牌Logo的位置还带有无线充电模块，最高10W的无线输出功率可以满足绝大多数无线充电手机的功率需求，避免忘记带线的尴尬。</p>
+<p>输入方面，铂陆帝AC50户外电源支持常规市电、车载充电和太阳能电池板三种充电方式，支持最高120W的充电功率，覆盖多种使用场景，用户可以自主选择充电方式。输出方式支持AC、DC、USB、车充以及无线输出四种充电方式，220V AC纯正弦波采用新国标插口，自带安全门，保证用电安全；USB接口为四个USB-A接口，支持5V 3A输出、一个USB-C接口，支持最高45W的输出功率；DC接口支持最高36W的输出功率；车充接口支持最高120W的输出功率，以及10W的无线充电，多种不同的输出接口覆盖不同的用电设备。</p>
+<p>户外电源的使用场景主要是在户外，一家人周末假期驱车前往户外聚餐游玩，带上铂陆帝AC50户外电源。车载冰箱、相机、以及家里人的笔记本电脑、平板和手机的用电需求，一台户外电源就可以完美解决。而且最高300W的输出功率面对车载冰箱和露营灯等用电设备的时候也丝毫不虚，还可以在家里断电的时候应急使用。无论是在家里使用还是出门户外用电，身边有一台户外电源确实是个不错的选择。</p>
+➜墙上也能无线充电？ABB壁装式无线充电插座评测
+http://www.sohu.com/a/412812016_296845	44044
+<p>充电领域的发展正在突飞勐进，大厂们在无线充电这个方向也进行了许多尝试，比如高功率、多功能，以及摆放位置。这款ABB出品的壁装式无线充电插座就是在位置上下功夫。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/3bc5d3c563b44c4d900107e20e0dbbba.jpeg" max-width="600" /></p>
+<p>作为电力和自动化技术的全球领导厂商，ABB拥有雄厚的技术积累，这款壁装式无线充电插座就是ABB运用技术将奇思妙想变为现实的呈现，让我们一起来看看。</p>
+<p>一、开箱</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/757053d8fabc4c4bb6fd5bf7f17e32e8.jpeg" max-width="600" /></p>
+<p>首先，让我们一起来进行万众期待的开箱环节。ABB壁装式无线充电插座的包装盒上手感觉和手机包装盒一样，质感不错。包装盒采用天地盖设计，整体颜色以白色为主，正面和侧面印有无线充的渲染图，勾起不少兴趣。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/e9c954ac0112481abf05fb4a2f0b377f.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>翻过一面，仍是渲染图，除此之外，别无他物，非常简洁。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/96f97672ec104fa2812bf8b379d21ba1.jpeg" max-width="600" /></p>
+<p>再看顶部，是充电器俯视视角的渲染图，可见黑白两色。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200812/6e7257357b5a458aadff2cdca332311b.jpeg" max-width="600" /></p>
+<p>底部是黑色"ABB”logo，每个字母都有“十字线”分割，极具设计感。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200812/00b7ad5a3a1e4165980be8446c6d097d.jpeg" max-width="600" /></p>
+<p>背面也是大面的空白，只有左下角的一些常规企业介绍。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/5226041b949e482c8822b685d017509d.jpeg" max-width="600" /></p>
+<p>打开盒子，阻尼不小。入目可见所有物品都用塑料袋子装着，这样能够避免运输过程中的摩擦，保护充电器。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/692e2f916add4e0190117b959b49c20e.jpeg" max-width="600" /></p>
+<p>将所有产品取出摆放整齐，盒子里分别是无线充电器、说明书、两只螺丝钉。</p>
+<p>二、产品外观一览</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/7945b9d4b0cf4b4d9b6f194cb17216e3.jpeg" max-width="600" /></p>
+<p>ABB壁装式无线充电插座做工精良，极具质感，整体素白，简洁优雅。从正面看去，和我们日常看到的立式无线充差别不大。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/3ca8aff364f442ddb672e995cec9a843.jpeg" max-width="600" /></p>
+<p>玄机就在背面，与常规的无线充不同，它是直接通过交流电转化的，突出的模块作用相当于普通无线充的充电器模块，只是少了两个插脚。安装时使用嵌入墙内，只要连接电路，稳定后，就可以直接使用啦。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/481141890ad44e8189f82a59adadcef1.jpeg" max-width="600" /></p>
+<p>侧面一边还有一个USB-A充电器，旁边印有快充标志，并注明参数，支持5V 2A、9V 1.2A、12V 1A输出功率。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/36bf04e534e5479eb0aae17f8236a8d6.jpeg" max-width="600" /></p>
+<p>回到正面，充电背板有两个圆圈，形似“8”字，应是双线圈设计，横竖都能放，后面我们会进行测试。往下看，左边印有“Qi”，支持Qi无线充电协议之意，右边是“ABB”，与左边图案呼应，有对称之美。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/04b55ebd63844d928c2a74d1a14c6122.jpeg" max-width="600" /></p>
+<p>从上往下看，通体素白中只有硅胶垫是黑色，ABB这款墙壁式无线充电器整体只有黑白灰三种颜色，其中黑白最多，正是这种对立激发了产品的设计感，非常耐看。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/9e39ff004e6d40a1915fbed2ec84f93f.jpeg" max-width="600" /></p>
+<p>从侧面看，有两片硅胶垫，保护效果应该不错。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/af2e3cc1ab914dd5b9c49b97d15dd8bf.jpeg" max-width="600" /></p>
+<p>从底部仰视，只能看见一片素白中两个对称的标志。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/eb9b7e1941a645dc876dcd8b9c82d1c2.jpeg" max-width="600" /></p>
+<p>再从充电器顶部俯视，中间是充电板，上面是底座，下面是需要嵌入到墙壁的突出部分，几排镂空竖条应是散热所用，想来是不需要展露在外，不必在意美观与否。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/c732c8a2741d42fcbf5c777577669a96.jpeg" max-width="600" /></p>
+<p>不必在意美观的还包括整个背部，各种散热孔、螺丝孔等遍布整个后背。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/d3fa3768e90f4be0ac41a54ff0e11f8e.jpeg" max-width="600" /></p>
+<p>仔细看去，印有一些参数，为了方便大家细看，我们摘录如下：</p>
+<p>壁装式无线充电插座（带USB适配器）</p>
+<p>产品型号：AF209</p>
+<p>输入：100-240Vac 50/60Hz 700mA Max</p>
+<p>USB输出：Type A QC3.0 5V 2A/9V 1.2A/12V 1A</p>
+<p>无线输出：5V 1A/9V 1A</p>
+<p>注：USB输出优先级高于无线输出，即USB有输出时，无线没有输出。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/b3c074caaaae470f9009dbd332127b9e.jpeg" max-width="600" /></p>
+<p>这块突出部分还有螺丝孔，上面印有“N”、“L”，安装时就从此处接电线。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/e12bf89844504faebf51a40cb5128806.jpeg" max-width="600" /></p>
+<p>为了评测方便，我们将其通电，这是接电状态实拍。请大家不要轻易模仿，专业的是还是需要专业人员进行。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/c2cff9ad2b2441a7b3857e90f5908f25.jpeg" max-width="600" /></p>
+<p>最后再给螺丝钉个特写，用来固定外壳。</p>
+<p>三、快充协议检测</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/8d768b2f6e1f4846bd4e4cd59b648c86.jpeg" max-width="600" /></p>
+<p>读取ABB壁装式无线充电插座USB-A接口的快充协议，实测支持Apple2.4A、QC3.0、QC2.0以及FCP等快充协议。</p>
+<p>四、USB-A兼容性测试</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/a3a93587ff3c47e980856190d878c7f9.jpeg" max-width="600" /></p>
+<p>iPhone11 Pro Max 支持USB PD和Apple2.4A快速充电协议，使用USB-A为iPhone11 Pro Max充电，功率为5.11V 2.26A 11.58W。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/96e87f3d8136452ea5bc00c12878c97f.jpeg" max-width="600" /></p>
+<p>华为P30 Pro 支持SCP、FCP和 USB PD快速充电协议，使用USB-A为华为P30 Pro充电，功率为9.12V 1.24A 11.39W。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/42c085c26f25473ab1fa3eee5ba128a6.jpeg" max-width="600" /></p>
+<p>小米 10 Pro手机支持PPS、QC和USB PD快速充电协议，使用USB-A对小米 10 Pro手机充电，功率为8.08V 1.80A 14.60W。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/70c0f980ed9f44dc9019a0c52eb88296.jpeg" max-width="600" /></p>
+<p>iPad mini 5支持Apple 2.4A和USB PD快速充电协议，使用USB-A对iPad mini 5充电，功率为5.09V 2.30A 11.73W。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/14b8f6e0fa694ccba57efadeb54f5406.png" max-width="600" /></p>
+<p>为了方便大家查阅，我们将测试数据整理成表格。可见使用ABB壁装式无线充电插座侧面的USB-A口充电，大部分手机和平板都能开启快充。iPhone 11 Pro Max功率达到12W左右，小米 10 Pro 功率也超过14W，总的来说兼容性不错。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/976032305a3c4fe89949764846cccd1d.png" max-width="600" /></p>
+<p>为了更直观的分析数据，我们将数据制作成柱状图。排名在前的是魅族17 Pro和OPPO Reno4,功率都超过16W，最低的的三星S20 Ultra 5G手机，功率还不到10W。</p>
+<p>五、充电方式介绍</p>
+<p>虽然ABB壁装式无线充电插座最大的特色是无线充电，但由于产品经理别出心裁的加上一个USB-A口，那么它的充电场景就多了几种。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/584cc324566745089883dc51f313f5a4.jpeg" max-width="600" /></p>
+<p>先说最经典的立式摆放，将iPhone 11 Pro Max放在无线充电插座上，显示可以进行无线充电。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/00f8f27d211f49e9ab5487eabdbf8a56.jpeg" max-width="600" /></p>
+<p>然后是横向放置，同样显示可以充电。看来这款无线充确实是双线圈设计。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/8a1af79cb115423d8eca8d32d8dd4549.jpeg" max-width="600" /></p>
+<p>然后我们准备两台手机同时充电。iPhone11 Pro Max 进行无线充电，华为P30 Pro通过USB-A进行有线充电。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/568f52fd849d4bc08beef01e74c3b391.jpeg" max-width="600" /></p>
+<p>测试证明iPhone11 Pro Max未在进行充电，两套充电系统无法同时充电。华为P30 Pro功率达到11.39W，与产品介绍相符。</p>
+<p>六、无线充电速度</p>
+<p>1、iPhone 11 Pro</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/f63389ea28e94a8a9ab6d725a8ebcaff.jpeg" max-width="600" /></p>
+<p>将电量接近为0的iPhone 11 Pro放在无线充电插座上，显示已经开始充电。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200812/efc3bbce8dd1468fa44de474b4d30461.jpeg" max-width="600" /></p>
+<p>31分后，iPhone 11 Pro显示电量为10%。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/4b86dadba00d4f729260c3d8abc3f710.jpeg" max-width="600" /></p>
+<p>1小时2分后，iPhone 11 Pro显示电量为30%。</p>
+<p>2、小米10 Pro</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/ef1c894d02274ff28ebcd9f7819be799.jpeg" max-width="600" /></p>
+<p>将电量接近为0的小米10 Pro放在无线充电插座上进行充电。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/cd427b3061704fe9ae513e0ade24c9d1.jpeg" max-width="600" /></p>
+<p>33分后，小米10 Pro显示电量为12%。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/2dcc3a5545c04acc892511f6a47fd530.jpeg" max-width="600" /></p>
+<p>1小时后，电量显示为24%。</p>
+<p>总的来说，ABB壁装式无线充电插座的充电速度与普通无线充电器速度相当。</p>
+<p>七、温升</p>
+<p>很多小伙伴非常关心发热情况，所以我们加入了温升测试。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200812/9064d1771aae41298ffea9a10109a4cc.png" max-width="600" /></p>
+<p>在25℃的恒温箱中，ABB壁装式无线充电插座预备开始给iPhone11 Pro充电时使用FLIR热成像仪拍摄充电器发热情况，最热处在插座中部，温度为25.7℃。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200812/adaeaf21d2824aa39f37a44905eb1f68.jpeg" max-width="600" /></p>
+<p>对充电器的温升进行测试，测试条件为在约25℃的恒温箱的温升进行测试，使用FLIR热成像仪拍摄iPhone11 Pro使用无线插座发热情况，一小时后当前最高温在背面突出部为42.2℃，温度上升了约16.5℃左右。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/2cd745e8566b43ada6adf73a070bb302.jpeg" max-width="600" /></p>
+<p>在25℃的恒温箱中，ABB壁装式无线充电插座预备开始给小米10 Pro充电时使用FLIR热成像仪拍摄充电器发热情况，最热处在手机中部，温度为32.3℃。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/b54056e4291344b99dfdd2cd86c07549.jpeg" max-width="600" /></p>
+<p>对充电器的温升进行测试，测试条件为在约25℃的恒温箱的温升进行测试，使用FLIR热成像仪拍摄小米10 Pro使用无线插座发热情况，一小时后当前最高温在背面突出部为42.5℃，温度上升了约10.2℃左右。</p>
+<p><strong>充电头网总结</strong></p>
+<p>ABB壁装式无线充电插座是ABB公司独辟蹊径，将无线充电器与壁装插座巧妙结合的产物。除了双线圈的无线充电，在机身侧面还有一个USB-A插口，以备不时之需，可以说是很贴心的设计。</p>
+<p>这款产品器做工和质感都堪称优良，设计简洁优雅，多用黑白两色，不管是家里还是酒店等使用场景，都比较百搭。虽然安装起来并不复杂，但充电头网有必要提醒一下，如果各位对安全操作规范不太熟悉的话，还是不要贸然自己安装。</p>
+<p>这款插座的无线充性能与我们日常评测的产品的差别不大，考虑到使用场景，无线充电本身对快充的需求没有特别强烈。并且USB-A插口支持pple2.4A、QC3.0、QC2.0以及FCP等快充协议，可以作为无线充之外的另一种互补方案，是很贴心的设计。</p>

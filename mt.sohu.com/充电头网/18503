@@ -1,0 +1,20 @@
+➜智融推出200W氮化镓快充方案
+http://www.sohu.com/a/415516059_296845	32983
+<p>大功率、高密度、多接口已经成为快充电源市场的发展趋势，从刚刚结束的2020（秋季） USB PD＆Type-C亚洲展上可以看到，多家厂商纷纷基于氮化镓技术开发了数十款高密度的多口快充产品，并获得业界人士高度关注。</p>
+<p>在本次展会上，智融发布了一款功率高达200W的多口快充充电器参考设计，配备了4个USB-C接口和2个USB-A接口，成为了业界首款超大功率的氮化镓快充方案。由此也成为了展会的亮点，现场吸引众多工程师驻足交流。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200829/3f5ec0d5b34143ddac12c932bdd1c1e0.jpeg" max-width="600" /></p>
+<p>智融200W 4C2A氮化镓快充参考设计整体使用透明亚克力外壳封装，内部输入端集成了PFC功率因数校正电路，并采用开关电源+二次降压的输出架构。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200829/bad1a5da8c7947389db9cd33a4f9741c.jpeg" max-width="600" /></p>
+<p>透过亚克力外壳可以看到，整个参考设计的开关电源部分采用全套安森美控制器，并在初级侧采用了四颗纳微半导体的GaNFsast功率芯片；同时为了满足大功率输出的需求，次级侧设置了两路同步整流电流。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200829/15a222342b2a45169ed0997201f9ca0b.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>这款200W 4C2A参考设计的二次降压部分，充分发挥了智融在多口氮化镓快充产品开发上的技术积累，6个接口一共分成五路独立降压电路，其中四路降压均由一颗智融SW3516完成同步整流降压转换和协议识别功能，支持USB PD3.0 PPS、Apple 2.4A、Samsung 5V/2A、DCP、QC4+、AFC、FCP、SCP等主流快充协议；中间的USB-C接口采用智融最新的SW3526芯片，还可兼容华为40W超级快充协议，应用广泛。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200829/3c141ead9a5b40db8c6d3de2ef87fea2.jpeg" max-width="600" /></p>
+<p>据介绍，这套参考设计的6个输出接口均由一颗外挂的MCU协调控制，其中USB-C口最大输出功率为100W，USB-C接口最大输出功率为30W，并可以支持两路USB-C接口同时100W快充输出。值得一提的是，该套参考设计在产品的实际开发中，可以根据客户的需求自定义各个接口的输出策略，十分灵活。</p>
