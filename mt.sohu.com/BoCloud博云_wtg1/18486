@@ -1,0 +1,76 @@
+➜重磅升级 | 博云BeyondCMP发布5.0里程碑版本！
+http://www.sohu.com/a/412705099_100180383	8860
+<p>8月8日，BoCloud 博云 BeyondCMP 一体化云管理平台 <strong>5.0 </strong>版本正式发布。作为博云资源管理产品线的核心产品，BeyondCMP 致力提升企业客户 IT 资源利用率与 IT管理水平。</p>
+<p>在历时 5 个月的精心打磨后，<strong>BeyondCMP 正式发布里程碑版本——BeyondCMP v5.0。</strong>在涵盖之前版本功能的基础上，该版本实现了公有云云管模式，并经过了某大型运营商、某大型股份制商业银行、某地方性股份制银行等众多客户实际使用验证，在<strong>资源纳管、业务场景、运营分析、平台易用性、用户体验</strong>等方面进行了全面提升。</p>
+<p><strong>核心升级</strong></p>
+<p><strong>功能亮点</strong></p>
+<p><strong>01</strong></p>
+<p><strong>新增 SDN 管理能力</strong></p>
+<ul>
+<li>支持华为 SDN 的纳管，全生命周期管理，相关资源以服务目录形式发布；</li>
+<li>支持 NSX 纳管，可将 VPC 申请发布给自服务使用。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200812/97f8b5376073469194449e98ab700b7e.png" max-width="600" /></p>
+<p><strong>02</strong></p>
+<p><strong>存储兼容性增强</strong></p>
+<ul>
+<li>XSKY 分布式存储增强，在 BeyondCMP 4.3 块存储的基础上新增文件存储、对象存储；</li>
+<li>支持 EMC 存储，包括 VNX 和 CX4 两个系列存储的纳管，支持将存储设备添加到 BeyondCMP 平台，并支持磁盘、存储池、存储卷、存储主机等存储资源的管理。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200812/8e04f00344b447d6b84a0841ec21e94b.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>03</strong></p>
+<p><strong>云平台纳管兼容性增强</strong></p>
+<ul>
+<li>新增华为 FusionCloud6.5.1、ManageOne 6.5.1纳管；</li>
+<li>增强纳管 OpenStack 能力，增加关键服务、主机 IPMI 状态监控，新增宿主机、虚拟机的监控分析以及镜像的多站点分发，优化虚拟机创建时模板选择操作，完善平台基本信息，支持资源的计量计费；</li>
+<li>增强 VCenter 纳管功能，优化资源统计与展示，调整资源池配置；</li>
+<li>支持纳管 TCE 3.3.4版本并进行全生命周期的管理。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200812/11230bd3938c4c75b52083b9cf9eae2a.png" max-width="600" /></p>
+<p><strong>04</strong></p>
+<p><strong>实现容器对接</strong></p>
+<ul>
+<li>实现与 BeyondContainer 容器云的对接，实现权限统一，可作为产品发布到自服务端；</li>
+<li>支持 Kubernetes1.16，包括命名空间、NODE、持久卷、应用、服务、POD 相关操作，以及 Harbor 镜像仓库管理和自服务相关功能。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200812/e1e816ea0e684c99880f6d3804837f00.png" max-width="600" /></p>
+<p><strong>05</strong></p>
+<p><strong>新增运营分析模块</strong></p>
+<ul>
+<li>全面改造运营体系；</li>
+<li>强化容量分析，支持多维度资源容量分析，支持资源整体使用情况分析以及部门资源性能使用分析；</li>
+<li>新增账单分析，支持费用多维度分析以及固定/自定义账期。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200812/45bfa6e56e3c481e9a1d3b5d7e335b5a.png" max-width="600" /></p>
+<p><strong>06</strong></p>
+<p><strong>自服务门户升级改造</strong></p>
+<p>实现公有云、私有云租户体系升级改造，打造提供更多产品的服务目录，支持资源权限的限定，网络标签与租户挂钩。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200812/93675446eca547d6a32a9d0bf9518cc8.png" max-width="600" /></p>
+<p><strong>07</strong></p>
+<p><strong>运维场景优化</strong></p>
+<ul>
+<li>优化 IP 地址池管理及网络问题；</li>
+<li>解决手动添加的 IP 地址，同步后信息显示不全的问题；</li>
+<li>根据管理员使用场景优化操作流程。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200812/dafd8f21eeaa4b4d89e796f44c807249.png" max-width="600" /></p>
+<p><strong>08</strong></p>
+<p><strong>功能模块优化</strong></p>
+<ul>
+<li>增强审批流程的权限限定；</li>
+<li>优化虚拟机配置管理，包括虚拟机删除或到期后释放资源及规格变更，支持纳管、同步存量私有云虚拟机，并归属到部门或项目；</li>
+<li>强化资源监控能力，包括 VCenter 、 OpenStack 、字段筛选条件、监控概览、监控策略、 IPMI ；</li>
+<li>易用性优化，包括回收站及服务目录的批量操作；</li>
+<li>强化审计日志的功能，支持平台用户登录日志审计，支持平台用户操作资源审计，详细查看操作资源列表。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200812/692d71692b9c472ea72ecb5dc15387ed.png" max-width="600" /></p>
+<p><strong>关于BeyondCMP</strong></p>
+<p>BeyondCMP 一体化云管理平台为企业提供云和非云资源的统一纳管，帮助客户实现多云资源的调配和管理。通过对企业云架构系统中人员、事件、云计算中的基础设施资源、数据资源、业务资源的统一管理，从而提供对企业部门之间资源统一协调和整体运筹的一体化解决方案。对企业未来云架构系统的运维、管理和可持续性等方面实现一体化管理，帮助企业云架构系统持续优化。</p>

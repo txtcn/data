@@ -1,0 +1,51 @@
+➜边缘计算，如何啃下集群管理这块硬骨头?
+http://www.sohu.com/a/417017400_100180383	31933
+<p><strong>导读</strong></p>
+<p>边缘计算平台，旨在将边缘端靠近数据源的计算单元纳入到中心云，实现集中管理，将云服务部署其上，及时响应终端请求。</p>
+<p>然而，成千上万的边缘节点散布于各地，例如银行网点、车载节点等，节点数量甚至可能是几万到十几万，这就会对节点的承载能力造成巨大冲击。Kubernetes 官方数据是可以支持纳管 5000 节点，如果想要纳管更多的边缘节点，该如何设计边缘计算平台架构呢？</p>
+<p>本文针对以上问题，提供一些博云的解决思路。</p>
+<p><strong>多集群管理</strong></p>
+<p>多集群可以有效地扩展纳管节点的规模，而对 kubernetes 多集群的管理，各厂商的实现方式各有不同，不同的 API，不同的特性，因此市场上很难形成标准的解决方案。</p>
+<p>现有的官方 kubernetes 多集群管理解决方案是 kubefed（Federation V2），即 <strong>kubernetes 联邦</strong>。Federation V1早在 kubernetes 1.6 版本就开始提供服务，但由于V1架构的限制，无法灵活支持更新的 k8s API 接口，加上其他很多问题影响集群管理的效率，因此 Federation V1 在 kubernetes 1.11 版本正式被弃用，现在提供服务的是 Federation V2。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200908/0e28d8d3cacc458ebf1d9512eda3452b.png" max-width="600" /></p>
+<p>由架构图实现可以看出，Federation V2 在 k8s 之上定义了一些资源，用 cluster configuration 记录集群的 endpoint，secret 等认证信息，type configuration 来定义需要用 Federation 托管的资源类型，提供了调度器来平衡各个集群的负载，以及多集群的 DNS 功能。</p>
+<p>这种 controller 级别的集群管理，提供了丰富的集群间交互功能，更适用于<strong>异地多中心的集群灾备</strong>等场景。在边缘场景，一个边缘端可能就是一个小集群（存在多个计算单元可以组成集群），这样会使得集群数量不断增多，进而对 Federation 的执行效率、API 的响应时间都会有较为明显的影响。那么，该如何削弱集群数量的不确定性所带来的影响呢？</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>下面为大家展示，我们在 KubeEdge 架构下如何解决多节点的问题。</p>
+<p><strong>Cloudcore 横向扩展</strong></p>
+<p>KubeEdge 架构下的云边协同通信采用 websocket 方式，quic 作为备选。其中 websocket 性能最好，quic 在弱网络（频繁断开）情况下优势较大，通信的服务端都是由 cloudcore 来实现。</p>
+<p>这里我们引入一个逻辑集群的概念，即每个 cloudcore 可以看做是一个集群，横向扩展多个 cloudcore 对接下层数量较大的边缘节点，向上只依托在一个 kubernetes 集群即可，架构如下所示：</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200908/9a7e9a0359eb42bda3f742e1b34cc845.png" max-width="600" /></p>
+<p>这样设计有如下几点优势：</p>
+<ul>
+<li class="ql-align-center">解决单个 cloudcore 消息转发/接收等处理的性能瓶颈；</li>
+<li class="ql-align-center">应用/设备的发布请求在 api-server 会被 cloudcore 监听捕获到，转而由对应的 cloudcore 来处理请求到边端，这样缓解了 k8s 集群的压力；</li>
+<li class="ql-align-center">中心云只需要一套 k8s 集群，调用链简单清晰，易于管理。</li>
+</ul>
+<p><strong>测试实现</strong></p>
+<p>环境信息：</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200908/afb59eec9d274e09869b56edc58d0955.png" max-width="600" /></p>
+<p>测试集群单 master 节点，管理一个 node1 工作节点，cloudcore 运行在 maser 节点上，并已接入 edge1 边缘节点。</p>
+<p>现在测试 node1 上创建 cloudcore 服务，将新的边缘节点 edge2 接入，节点组图如下：</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200908/d158b2a7f73b42e180ef79f012565e74.png" max-width="600" /></p>
+<p>集群下已有 cloudcore 和 edgecore，node1 是 k8s 的 x86 普通节点，现在该节点上运行 cloudcore 提供服务。</p>
+<p>- 拷贝 cloudcore 二进制文件</p>
+<p>- 重新生成证书</p>
+<p>- 生成 cloudcore.yaml 配置文件</p>
+<p>- 拷贝 k8s 集群的 kubeconfig 并将路径配置到 cloudcore.yaml</p>
+<p>- 启动 cloudcore</p>
+<p>edge2 是作为待接入集群的边缘节点，在该节点上运行 edgecore, server 指向 node1，启动服务。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200908/a2de07943a814af5ac2d26774b808515.png" max-width="600" /></p>
+<p>可以看到 edge2 已经注册到 node1 上的 cloudcore 并同步节点信息到 k8s，测试发布服务到 edge1 上：</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200908/fca441c1bb224a2d82cc5f205c73d9f4.png" max-width="600" /></p>
+<p><strong>总结</strong></p>
+<p>本文通过讨论多集群的方式来扩展纳管边缘节点的规模，分析了以 kubefed 联邦进行多集群管理机制，对比不同场景下的特点，介绍了 KubeEdge 中利用横向扩展 cloudcore 的解决方案，并在测试环境部署实践。</p>
+<p>在实际生产环境中，<strong>博云 BeyondEdge 边缘计算平台依托于博云 BeyondContainer 容器云平台</strong>，提供云上服务的编排、治理、DevOps 等云原生能力，利用 KubeEdge 将这些能力延伸到边缘节点，并将边缘设备抽象到云端 BeyondContainer容器云中，作为孪生设备资源，统一访问入口。</p>
+<p>并且，<strong>运行在云端的边缘平台组件 cloudcore 作为应用服务部署在BeyondContainer容器云中</strong>，充分利用容器云的产品能力，将 cloudcore 以高可用方式部署在 kubernetes 中心云，通过 ingress 暴露服务接口提供给边缘节点的组件 edgecore 访问，可以根据边缘节点实际接入量动态扩展 cloudcore，作为逻辑上的集群扩展以提高中心云对边缘节点的承载能力。</p>
