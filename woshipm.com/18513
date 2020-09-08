@@ -3255,3 +3255,54 @@ http://www.woshipm.com/marketing/4173695.html	32408
 <p>来源：https://mp.weixin.qq.com/s/NiNZmx48yFWhadTLV2Elew</p>
 <p>本文由 @新消费内参 授权发布于人人都是产品经理，未经许可，禁止转载。</p>
 <p>题图来自 Unsplash，基于CC0协议。</p>
+➜如何用Axure快速、规范地设计Tab栏？
+http://www.woshipm.com/rp/2582888.html	38791
+<blockquote><p>导读：Axure入门很容易，甚至花不到1天时间就可以基本掌握常见的交互设计。但对于一项工具的使用，新手和高手的区别不在于是否能完成任务目标，而应该拓展到实现过程是否快速、规范。本文作者对这两点展开了分析讨论，与大家分享。</p></blockquote>
+<p><img data-action="zoom" class="size-full wp-image-4173809 aligncenter" src="http://image.woshipm.com/wp-files/2020/09/kYlFT0e4QsB4jnft0qke.jpg" width="900" height="420" /></p>
+<p>作者总结两点对于好的Axure原型的标准：<strong>维护成本低，复用性高</strong>。维护成本低，就是便于修改，这就要求能用最简单的方法实现某一效果，比如一个自带函数就可以实现的功能，就不用再写代码进行二次开发。复用性高，其实也是程序员评估代码质量的一个维度。<strong>把原型模块组件化、母版化</strong>，核心在于批量操作，避免重复造轮子。</p>
+<p>本文举原型设计中常见的Tab栏为例：</p>
+<h2>反面示例一</h2>
+<p>此方法的核心是使用交互事件，「选中」和「取消选中」事件。</p>
+<h3>1. 设置Tab选中状态的交互样式</h3>
+<p>点击元件属性中交互样式设置下的「选中」按钮来设置元件的选中状态的效果，分别用了字体颜色、线段颜色、线宽、边框可见性这四个属性。除了选中效果还可以设置其他如：鼠标悬停、鼠标按下和禁用的效果。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2019/07/LUHRvZh8pQW4xtNMEeu0.png" width="1200" height="830" /></p>
+<h3>2. 复制N个Tab按钮，并命名</h3>
+<p>为元件命名一般是为了区分多个相似对象，使交互事件更条例。为了下一步交互事件设置的方便，这一步为每一种状态的Tab进行命名。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2019/07/Qlt2Nm3FjaHbAFAC82WW.png" width="1200" height="808" /></p>
+<h3>3. 给N个Tab设置交互事件</h3>
+<p>单击时，当前元件的选中状态为“true”，其他所有均为“false”。每一个Tab的交互事件都不相同，需要注意的是，此方法Tab越多出错的可能性就越高。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2019/07/bHh9uqJlJvY6UjfVdSYl.png" width="1200" height="782" /></p>
+<h3>4. 完成效果</h3>
+<p>Tab效果就完成了。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2019/07/mAe8ZVrTUnWBkz4KezBi.png" width="1200" height="142" /></p>
+<h2>反面示例二</h2>
+<p>利用动态面板，这其实是一个枚举法，每一种Tab状态对应一个动态面板状态。虽然也可以实现Tab效果，但是这里使用动态面板是大材小用了，杀鸡不该用牛刀。</p>
+<h3>1. 设置每一种选中状态的样式</h3>
+<p>先把所有状态的Tab枚举出来，也就是通过复制的办法，画出所有状态的Tab。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2019/07/gGSnIdfAvzqe1s2QmsAM.png" width="1200" height="795" /></p>
+<h3>2. 为每一种状态设置动态面板</h3>
+<p>为每一个Tab状态设置一个动态面板状态，然后把Tab状态放入动态面板当中。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2019/07/JMUDz4N1NOVk4iPkFs8a.png" width="1200" height="449" /></p>
+<h3>3. 给N个Tab设置交互事件</h3>
+<p>这一步设置Tab的交互事件，点击Tab显示为对应的动态面板状态。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2019/07/X8SKfFy06CPEkTRh88DU.png" width="1200" height="753" /></p>
+<h2>正确示例</h2>
+<p>这个方法的核心是利用<strong>选项组。</strong>很多童鞋可能没有用过选项组这个方法，选项组其实就是为了实现类似于Tab功能而存在的，同一个选项组中的元件只能有一个选中状态。这个功能就好比Excel中内置的一个函数，虽然也可以通过基本的算术运算实现。通过内置函数可以减少用户大量的时间成本，而且出错的可能性更低，也会让你更专业。</p>
+<h3>1. 设置Tab的选中状态的交互样式&amp;交互事件</h3>
+<p>在这里，只需要设置一个状态的Tab便可以复用（复制）为其他Tab状态，这里的交互样式同反面示例1的第一步。</p>
+<p>同时设置交互事件，Tab点击时的选中状态为“true”。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2019/07/B7ihePY0WQoxRTmpwiDz.png" width="1200" height="757" /></p>
+<p>关于选中状态文字下面横线的效果，很多人会用水平线和矩形组合来实现，这其实是极其不专业的做法。最简单且正宗的方法是在交互样式设置中<strong>设置边框的可见性</strong>。可以任意设置矩形边框的显示和隐藏。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2019/07/ALIgJJR8xMfiTpCiOg4y.png" width="1200" height="825" /></p>
+<h3>2. 为Tab设置选项组名称</h3>
+<p><strong>敲重点，这一步十分重要，</strong>很少用到的功能<strong>，在同一个选项组当中只会有一个被选中状态</strong>。这一个小小的设置就替代了示例一中繁琐的交互事件。</p>
+<p>首先选中元件，然后在右侧属性栏中找到设置选项组名称。在输入框中填写任意名称即可，之后就会被保存下来，可供其他元件选择并加入该选项组。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2019/07/lnx4weuv4RI6dyteKvrK.png" width="1200" height="502" /></p>
+<h3>3. 复制为N个Tab</h3>
+<p>只需要暴力的复制就好，不需二次设置交互事件，用这个方法每个Tab的交互事件和选中效果完全相同，不需要做其他特定的修改。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2019/07/R5HbBheC2TNHRw00tQL8.png" width="1200" height="154" /></p>
+<p>这里表达一个思想是好的方法一定是最简单的。Axure有很多正统的使用方法一直被埋没，利用这些方法可以极大地提升你的原型效率。也许你还有其他方法来实现Tab效果，如有兴趣可以留言讨论。</p>
+<p>&nbsp;</p>
+<p>作者：产品范，微信公众号：产品范，O2O新零售电商产品经理</p>
+<p>本文由 @产品范 原创发布于人人都是产品经理。未经许可，禁止转载</p>
+<p>题图来自 Unsplash ，基于 CC0 协议</p>
