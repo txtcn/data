@@ -31,3 +31,165 @@ http://www.expreview.com/76011.html	12770
 ➜四款iPhone 12系列手机不会同时发售，iPhone 12 Max和iPhone 12 Pro先开卖
 http://www.expreview.com/76010.html	15446
 <p>苹果正在与时间赛跑，以确保能和以往差不多的时间推出iPhone 12系列新手机，据报道，iPhone 12的发布包括四种型号。但是，想要买到其中较小的5.4英寸iPhone 12或史上最大的6.7英寸iPhone 12 Pro Max的话，将不得不多等待一段时间，因为据<a href="https://www.digitimes.com/news/a20200907PD210.html" target="_blank">DigiTimes</a>的最新报告，6.1英寸iPhone 12 Max和iPhone 12 Pro将会先出货。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/08/19/iPhone-12.jpeg" width="100%"/></p><p>据消息人士称，6.1英寸型号的SLP主板的出货已于7月开始，这意味着6.1英寸的iPhone 12 Max和iPhone 12 Pro将会更早到达，而采用了新尺寸的其余两种型号的SLP主板在八月下半月才开始生产。不过，尽管如此，首先上市的iPhone 12 Max和iPhone 12 Pro仍将为用户提供在高端iPhone型号和低端iPhone型号之间进行选择的空间。</p><p>另一份报告提到，苹果此前预计在2020年出货约6800万部iPhone 12，但持续的新冠肺炎疫情使未来变得不容易确定。预计iPhone 12 Max将采用较便宜的材料，后置双摄像头组合和4GB RAM，使其对大众而言更加实惠。同时，据说iPhone 12 Pro带有LiDAR传感器和6GB RAM以及三个后置摄像头。</p>
+➜NVIDIA新测试工具LDAT、PCAT体验：延迟功耗的测试好帮手
+http://www.expreview.com/75973.html	46800
+<!-- Windows 10,热管,热管,热管,Furmark,热管 --><p>对于玩家来说，最容易影响游戏帧数表现的一个电脑部件，应该就是显卡了。CPU虽然也同样对于帧数有很大影响，但是对比起CPU，绝大多数显卡都不会要求玩家花钱换主板，而且安装更加简易（笑）。因此，显卡的游戏性能也是备受大家关注的东西。而同样受到大家关注的，应该就是显卡的功耗了，毕竟这直接关系到显卡的散热，是整机发热量的一个大户。大家需不需为机箱加装风扇、为CPU换用水冷、甚至换机箱来改善整机的散热很大程度上也与显卡的功耗有关。</p><p>但其实即便显卡再强，还有一个很影响玩家在游戏中表现的因素，那就是系统延迟。这个系统延迟，指的是从玩家点击鼠标、到CPU处理点击所带来讯号、到显卡渲染画面以及到最终显示器显示出一帧画面所需要的全部时间。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-1/latency-1.png"/></p><p>因此，即便显卡的性能再强，只要延迟高了，哪怕玩家反应再快，都会错失先机。特别是对于电竞游戏来说，哪怕十几毫秒的延迟可能就足够对方反败为胜了。
+而在以前，如果要弄一套可以测量系列延迟的工具的话，也是比较麻烦的: 买的话会比较贵; 用高速摄影机来拍的话，除了摄影机本身就贵之外结果也不太准确。这也是为什么我们之前没有测过系统延迟的原因（咳咳）。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-1/focus.jpg" width="100%"/></p><p>而NVIDIA这次推出的这两套LDAT以及PCAT测试工具就正好可以解决以上的问题。LDAT可以说是填补了测试延迟的空缺，而PCAT则是让整个功耗测试更加方便以及可视化。那么这两套工具是怎么样的呢？接下来我们一起来看看。</p><h1>测试平台</h1><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+align: 'left',
+width: '80%',
+padding: '8px 15px',
+header: ["测 试 平 台", ""],
+columnWidth: 'AUTO', //表格宽度，"AVG"平均，"AUTO"自动（默认），指定[15,16,20]
+id: tableid,
+data: [
+["<b>硬件平台</b>"],
+["CPU", "英特尔 Core i7-8700K"],
+["主板", "技嘉  Z370 AORUS GAMING 3"],
+["显卡","技嘉 RTX 2080 Ti<br>讯景 RX 5700 XT"],
+["内存", "十铨 Delta RGB DDR4 3200MHz*2", ],
+["硬盘", "浦科特 M8Se512GB", ],
+["散热器", "ID-Cooling DASHFLOW 240", ],
+["电源", "海盗船 HX 1000i", ],
+["机箱", "分形工艺 R6 TG", ],
+["显示器","技嘉 GIGABYTE M27Q"],
+["<b>软件配置</b>"],
+["操作系统", "Windows 10 1909 64bit", ],
+]
+});</script></div><h1>LDAT</h1><p>先来看看LDAT，它的全称是Latency Display Analysis Tool，中文就是延迟显示分析工具。顾名思义，LDAT是用来测量整套平台系统延迟的工具，这里包括了从点击鼠标直至显示器作出相应转变之间的所有延迟。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-1/a.jpg" width="100%"/></p><p>LDAT是由三个部分组成的：一个改装过的鼠标、一个光传感器以及一个专门的LDAT软件。透过把光传感器固定在显示器上，以及把改装过的鼠标连接在传感器以及电脑上，LDAT软件就可以读出从点击鼠标至画面出现变化的时间。至于测试的方法，虽然说可以用自带的延时软件来检测。不过最好还是用像《CS：GO》这样的游戏来作实际测试。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 1; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+// var istart=['1','2','3','4','5','6'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 3; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/review/2020/09/epx-1/"; //图片目录
+var col = 3; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><p>原理其实很简单，就是通过检测点击前后光亮度的变化来确定整套系统的延迟。例如在《CS：GO》中，可以把光传感器放在开镜后的黑色边缘，通过开枪就会退出狙击镜、从黑转亮这一特性来判断延迟是多少。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-1/f.jpg" width="100%"/></p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-1/h.jpg" width="100%"/></p><p>不过笔者更喜欢用大菠萝M249，把光传感器放到枪口焰最大的地方，让LDAT软件自动开100枪来测试（笑）。说实话自动开枪、开枪间隔以及点击多少下鼠标这几个功能都是比较实用的。笔者在这里用了RTX 2080 Ti以及RX 5700 XT来分别测试1440P、1080P以及720P下144Hz以及60Hz的系列延迟表现。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "RTX 2080 Ti 平均系统延迟"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "ms"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 50; //指定X轴最大值，null时为自动
+var autocolor = 0; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ['#953f61', '#72355f', '#d77169']; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "1440P 144 Hz 刷新率", "Low Latency Mode": "27", "不开启 Low Latency Mode": "30.4"},
+{"type": "1440P 60Hz 刷新率", "Low Latency Mode": "35.8", "不开启 Low Latency Mode": "37.9"},
+{"type": "1080P 144Hz 刷新率", "Low Latency Mode": "26", "不开启 Low Latency Mode": "29.7"},
+{"type": "1080P 60Hz 刷新率", "Low Latency Mode": "33.6", "不开启 Low Latency Mode": "34.1"},
+{"type": "720P 144Hz 刷新率", "Low Latency Mode": "27.1", "不开启 Low Latency Mode": "29.8"},
+{"type": "7200P 60Hz 刷新率", "Low Latency Mode": "33.6", "不开启 Low Latency Mode": "34.6"}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "RX 5700 XT 平均系统延迟"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "ms"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 50; //指定X轴最大值，null时为自动
+var autocolor = 0; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ['#953f61', '#72355f', '#d77169']; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "1440P 144 Hz 刷新率", "Anti-Lag Mode": "33.6", "不开启 Anti-Lag Mode": "31.1"},
+{"type": "1440P 60Hz 刷新率", "Anti-Lag Mode": "36.4", "不开启 Anti-Lag Mode": "36.3"},
+{"type": "1080P 144Hz 刷新率", "Anti-Lag Mode": "31.3", "不开启 Anti-Lag Mode": "32.2"},
+{"type": "1080P 60Hz 刷新率", "Anti-Lag Mode": "37.7", "不开启 Anti-Lag Mode": "39.5"},
+{"type": "720P 144Hz 刷新率", "Anti-Lag Mode": "29.8", "不开启 Anti-Lag Mode": "32.1"},
+{"type": "7200P 60Hz 刷新率", "Anti-Lag Mode": "36.8", "不开启 Anti-Lag Mode": "39.7"}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>可以看到，无论是在哪个分辨率之下，大部分时间144Hz的延迟都是要比60Hz要好的。另外，在大部分时候无论是开了NVIDIA的Low Latency模式还是AMD的Anti-Lag模式，系统延迟都有进一步的降低，从0.5ms至3.7ms不等。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "鼠标输入延迟"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "ms"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 2; //指定X轴最大值，null时为自动
+var autocolor = 0; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ['#953f61', '#72355f', '#d77169']; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "罗技G203", "输入延迟": "0.7"}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>另外LDAT也是可以测鼠标输入延迟的，因此笔者也是借机测试了一下。以NVIDIAI提供的这款改装过的罗技G203鼠标为例，测量出它的输入延迟是0.7ms左右。但是有一点要注意的是，这里的延迟是包括了部分USB软件以及采样的延迟，而这些延迟是与PC本身相关的，与鼠标本身无关。因此这里的延迟比起鼠标真正延迟是要高一点的。</p><h1>PCAT</h1><p>说完了延迟，接下来就是本次的另外一位主角，PCAT了。它全称是Power Capture Analysis Tool，是用来测量显卡的功耗的。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-1/j.jpg" width="100%"/></p><p>同样的，PCAT套装也是包括两个硬件以及一个软件。首先是一个PCI-E转接卡，这个转接卡特别之处在于上面有一个接口可以与下一个硬件连接起来，使PCI-E插槽的功耗可以被纪录下来；之后就是PCAT模块，这个模块上面有6个PCI-E 8P供电接口、1个OLED显示屏和一个用于接收PCI-E转接卡功耗讯息的4P接口。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 11; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+// var istart=['1','2','3','4','5','6'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 12; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/review/2020/09/epx-1/"; //图片目录
+var col = 2; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><p>在4P接口那边的3个8P接口是连接到显卡上的，而对面的3个则是连接到电源上的，而上面的OLED屏幕就会显示实时的功耗讯息以及电压。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-1/m.jpg" width="100%"/></p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-1/n.jpg" width="100%"/></p><p>有了改装过的PCI-E转接卡以及PCAT模块后就可以知道显卡的实时功耗了，但是如果是想更加全面的测试显卡功耗的话，那么还需要PCAT功耗分析软件。在这个软件中，可以看到从打开软件后探测到的显卡最高、最低、平均功耗，并且附有一张显卡功耗的实时图表，还可以选择在图表中显示哪一路的功耗。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-1/fv-main.jpg" width="100%"/></p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "Furmark 1080P Preset 显卡平均功耗"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "W"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 300; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ['#953f61', '#72355f', '#d77169']; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "功耗", "RTX 2080 Ti": "250.14", "RX 5700 XT": "265.33"}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>而PCAT软件在实际使用时也很简单，笔者仍然以RTX 2080 Ti和RX 5700 XT来测试一下。只要点一下Log Data，开始显卡benchmark，之后结束点一下Stop Logging就可以生成一个充满数据的Excel文件，很容易就可以还原出显卡当时的功耗趋势以及平均功耗。</p><p>测试下来两者的形均功耗分别是250W以及265W左右，与我们之前自己测试出来的结果也是很接近的，换言之PCAT测出来的功耗也是准确的。因为PCAT是每0.1秒检测一次功耗的，因此其结果比起我们的甚至还会更加准确一点点。</p><h1>同场加映：FrameView</h1><p>相信大家应该或多或少都用过像微星Afterburner这种显示帧数温度等的软件。其实NVIDIA自己也是有一个叫FrameView的软件可以做到同样的功能，只不过比较少人知道。而随着这次LDAT以及PCAT的推出，FrameView也有相应的更新，除了可以监察帧数外，也可以配合PCAT一起纪录显卡的功耗数据。笔者以《刺客信条：奥德赛》来测试一下FrameView，通过在1080p的分辨率之下以拉伸来分别模拟2K以及4K下的情况。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-1/frameview-main-1.jpg"/></p><p>FrameView的界面也是很简单明暸的，主要分别纪录数据部分以及Overlay位置部分。而在打开FrameView后，只要进入游戏就可以在指定的位置上看到包括帧数、99%帧数、功耗等的数据，这时候单击benchmark的快捷键就可以开始纪录了。纪录完的数据可以用FrameView自带的一个Excel模版来视图化。这个模版可以同时加载3次benchamrk纪录方便对比数据。当然了，这个模板是可以自己修改的，想要加载多次测试成绩的话也可以通过编辑来实现。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 13; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+// var istart=['1','2','3','4','5','6'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 15; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/review/2020/09/epx-1/"; //图片目录
+var col = 2; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><p>可以看到，FrameView纪录的数据也是很全面的，在overlay内显示的数据都有保存下来，并且可以马上生成图表来让数据可视化，这点对于想要快速对比数据来说是非常有用的，例如对比两组数据之间的趋势以及有没有哪里突然数据异常的地方等。</p><h1>总结</h1><p>总的来说，NVIDIA这次的几款测试工具都是很实用的。就笔者个人而言，LDAT的实用性可能会更高，因为它可以用来对比不同电脑硬件之间的延时，例如说换个显示器、显卡或者CPU对于整体延时有多少影响。</p><p>其实如果大家有留意NVIDIA最新的RTX 30系显卡发布的话，会发现NVIDIA同时发布了一个叫NVIDIA REFLEX的新东西，而这个NVIDIA REFLEX，则可以视作为LDAT植入了显示器内的进阶版本。两者同样可以测量系统延迟，并且也是差不多的方式来运作，唯一分别就是，NVIDIA REFLEX是让玩家把鼠标直接连到显示器上来测量延迟的。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-1/reflex.jpg" width="100%"/></p><p>而同时，NVIDIA也开放了REFLEX SDK，开发者把其置入到游戏后，可以让游戏的延迟降至更低，以及让玩家可以看到实时的游戏以及渲染延迟。这对于电竞玩家来说可以让他们更加了解自己系统的状况，以及从何入手改善系统延迟。</p><p>PCAT对于测试显卡的功耗有不少帮助，相比起只用墙插功耗仪会准确不少，因为PCAT只会测量显卡的功耗，而不会受到其他部分的功耗影响。另外透过PCAT也可以知道，不同显卡之间的能耗比是多少以及它们实际的功耗是有多少等等。这些项目有的我们本来已经有测试，但是PCAT可以提供更多精准的数据。而在有了这些数据之后，对于显卡的测试也可以变得更加全面。</p><p>更加重要的是，除了显卡真正的功耗外，PCAT可以测试显卡在不同应用或者游戏下的准确实时功耗表现。这样可以帮助分析整套系统的瓶颈是在哪里，以及显卡在特定应用中是否处于满载状态来作出相应的升级计划。</p><p>接下来我们也会利用这套工具对NVIDIA的30系新显卡做一次测试，敬请期待！</p>
