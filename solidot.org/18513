@@ -4,3 +4,15 @@ https://www.solidot.org/story?sid=65470	4900
 ➜中国发起全球数据安全倡议
 https://www.solidot.org/story?sid=65471	17379
 中国国务委员兼外长王毅周二在全球数字治理研讨会上<a href="https://cn.reuters.com/article/wangyi-global-digital-security-0908-idCNKBS25Z0AJ?il=0">表示</a>，为应对新问题新挑战，中国愿发起《全球数据安全倡议》，欢迎各方积极参与。并提出应对数据安全风险应遵循三项原则：秉持多边主义、兼顾安全发展和坚守公平正义。他指出，共商、共建、共享是解决全球数字治理的正确出路。应在各方普遍参与基础上，达成反映各国意愿、尊重各方利益的全球数据安全规则。特朗普政府以国家安全疑虑为理由，不断加强对中国企业的限制，包括对中国华为的制裁，及发布针对 TikTok 和微信的禁令。王毅表示，中国政府严格践行数据安全保护有关原则，没有也不会要求中方企业违反别国法律向中国政府提供境外数据。<p>
+➜国际奥运会称东京奥运会明年肯定举办
+https://www.solidot.org/story?sid=65472	25160
+国际奥委会副主席 John Coates <a href="https://www.bbc.com/zhongwen/simp/sports-54064591">表示</a>，推迟一年的东京奥运2021年一定会举办，不管“有没有新冠病毒疾病”。他说，东京奥运将会在明年 7 月 23 日开幕，将成为“征服新冠病毒的奥运”。东京奥运原订于今年 7 月举行，但新冠疫情而延迟一年。国际奥委会此前曾经表示，已经推迟至 2021 年的东京奥运不会再次推迟。在新冠疫情爆发之前，奥运会只有因为爆发战争而被取消，从来没有被推迟过。奥运带来的经济上的收益也是举办奥运的原因之一，但现在因为新冠病毒疫情，奥运的经济收益可能也会受到影响。<p>
+➜libtorrent-2.0 加入对 BitTorrent v2 的支持
+https://www.solidot.org/story?sid=65473	26232
+libtorrent 项目刚刚<a href="https://blog.libtorrent.org/2020/09/bittorrent-v2/">释出</a>了 <a href="https://github.com/arvidn/libtorrent/releases" target="_blank">libtorrent-2.0</a>，其中一个重要特性是支持 <a href="http://bittorrent.org/beps/bep_0052.html" target="_blank">BitTorrent v2</a> 协议。而 BitTorrent v2 相比之前版本的一个主要变化是其哈希函数用 SHA-256 取代了  SHA-1，原因是 SHA-1 不再安全。Google 在 2017 年宣布了对 SHA-1 哈希算法的首个成功碰撞攻击。所谓碰撞攻击是指两个不同的信息产生了相同的哈希值。在 Google 的研究中，攻击所需的计算量十分惊人，但今年初研究人员已经将攻击成本降至 <a href="https://www.solidot.org/story?sid=63252">4.5 万美元</a>，以后还会更低。SHA-256 的哈希长度从 20 字节增加到了 32 字节。为了确保兼容性，SHA-256 info-hash 仍然维持在 20 字节长度。BitTorrent 2.0 不兼容于旧的协议，但 libtorrent 2.0 能同时处理旧的协议和新的协议，不过旧的客户端无法访问新协议创造的种子。为了帮助 BT 客户端过渡到 BitTorrent 2.0，libtorrent 2.0 引入了名叫 hybrid torrents 的方案。<p>
+➜美国陆军曾在 1980 年代投资研发六足步行卡车
+https://www.solidot.org/story?sid=65474	28274
+1980 年代，美国陆军发现全世界一半的陆地无法使用传统的轮式车辆通过，因此它与俄亥俄州立大学以及多家外部承包商合作<a href="https://www.thedrive.com/news/36157/the-us-army-spent-millions-developing-giant-six-legged-walking-trucks-in-the-1980s" target="_blank">去研发 Adaptive Suspension Vehicle</a>：一种卡车大小、由一名人类操控的六足液动机器人。这比波士顿动力的着名四足机器人领先了 20 年。ASV&nbsp; 项目得到了美国国防部高级研究计划署（DARPA）的资助，始于 1981 年，由 Robert McGhee 和 Kenneth Waldron 领导。最终重&nbsp; 5,952 磅、负重 485 磅，长 17 英尺，宽 7.9 英尺，高 9.8 英尺的六足卡车诞生了。虽然它能跨越 6.9 英尺高的障碍，跨过 23 英尺宽的战壕，但由于可携带的负荷太轻，军方逐渐对其失去了兴趣，该项目在 1990 年被终止了。<p>
+➜西部数据试图重新定义 RPM
+https://www.solidot.org/story?sid=65475	31641
+今年初，西部数据因为在 NAS 存储产品中混入 SMR 盘而受到广泛批评<a href="https://www.solidot.org/story?sid=64522">甚至起诉</a>。现在，它再次被发现混淆其存储产品的名词。用户发现，西部数据将 7200RPM 的  WD Red NAS 产品<a href="https://arstechnica.com/gadgets/2020/09/western-digital-is-trying-to-redefine-the-word-rpm/" target="_blank">称为 5400 RPM Class</a>。乍一看，用户似乎占便宜了，7200RPM 相比 5400 RPM 有更快的转速和更低的寻道延迟，但这同时带来了更高的噪音、耗电量和发热量。对比 8TB 机械硬盘，7200RPM 的 WD Red 的活动功耗为 8.8W，而希捷 5400 RPM Barracuda 的功耗为 5.3W；待机模式下则分别为&nbsp; 800mW和 250mW。消费者选择 5400 RPM 硬盘是有其动机的，他们想要的更低的功耗和噪音，但西部数据的做法显然在误导消费者。<p>
