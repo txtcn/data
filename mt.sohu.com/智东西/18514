@@ -1,0 +1,181 @@
+➜美国总统竞选“假视频”满天飞！人脸技术攻防战大起底
+http://www.sohu.com/a/417221766_115978	15201
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200909/5a501fbd598446dd8af56190bf69e786.png" max-width="600" /></p>
+<p class="ql-align-justify"><strong>智东西（公众号：zhidxcom）</strong></p>
+<p class="ql-align-justify"><strong>编 | 信仪</strong></p>
+<p class="ql-align-justify">今天你刷了几次脸？随着互联网应用中刷脸识别越来越普遍，人脸绑定的信息越来越多，“换脸”技术越来越逼真，你是否意识到，<strong>互联网中，你的脸还是你的脸吗？或者说，你的脸只是你的脸吗？</strong></p>
+<p class="ql-align-justify">近日，美国民主党总统候选人拜登在接受记者采访时“睡着”的视频刷爆了网络，而后又有特朗普团队给拜登照片加滤镜使拜登显得更老的消息流出。</p>
+<p class="ql-align-justify">▲拜登接受采访“睡着”视频画面</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200909/d05b68731d22425690d9c4417cc6a636.png" max-width="600" /></p>
+<p class="ql-align-justify">很快，拜登“睡着”事件得到了澄清。视频里的人并不是当时的拜登，而是84岁的歌手哈里·贝拉方特的录像和拜登2016年与希拉里视频对话的画面剪辑合成的”假货“。<strong>这一信息也使舆论的爆点由“拜登体力不支无法胜任”转向了对人脸信息滥用的讨论。</strong></p>
+<p class="ql-align-justify">随着人脸识别等技术规模化应用，国内外也出现了不少关于人脸信息滥用的诉讼案例。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">继Facebook在人脸识别诉讼中妥协，决定赔付6.5亿美元和解后，这家大公司旗下的社交应用Instagram又面临了非法收集生物识别数据的新指控。</p>
+<p class="ql-align-justify">今年早些时候因为未经允许搜刮30多亿人脸数据，而被指控蓄意违法的人脸识别创企Clearview AI又“重振旗鼓”，请了新的律师“捍卫”其面部追踪技术。</p>
+<p class="ql-align-justify">此外，近日“新华视点”披露的一起网络黑产从业者利用电商平台非法倒卖人脸信息的案件中，5毛一张的人脸信息也让人们对自身人脸牵涉的隐私安全产生极大担忧。</p>
+<p class="ql-align-justify">▲生物特征识别技术</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200909/c401c06dd63c4ef7ae584dde68172525.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">疫情防控所需加之技术水平不断提升，人脸识别越来越多地运用于人脸解锁、位置追踪、乘车验证刷脸支付等不同场景，与此同时我们的<strong>人脸也成为了一张暴露在信息大环境下的个人通行证，相应人脸识别滥用的现象也开始泛滥。</strong></p>
+<p class="ql-align-justify">为了打击人脸识别的非法滥用，各国都在技术和政策方面做出了相应的努力。人脸识别技术的使用中出现了两个极端，一方面是对人脸识别技术合理的运用以及对滥用的技术性对抗，另一面是人脸识别技术使用中的各种歪门邪道，这既是硬币的两面，又是势不两立的正邪双方，在对峙中双方功力越来越深，成为一场持久的“人脸识别”攻防战。</p>
+<p class="ql-align-justify">▲AI对抗人脸识别软件Fawkes原型：盖伊▪福克斯</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200909/37e944bd375c457a90e3eda61adf608a.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>全球范围内围绕人脸识别、人脸使用问题已经形成了强势对峙的攻防双方。</strong>人脸使用存在哪些风险？人脸信息是如何泄露的？是谁在滥用公民人脸隐私，又是谁在为反人脸滥用技术努力？我们能如何保护自己的人脸隐私？</p>
+<p class="ql-align-justify">本文将通过对人脸识别攻防技术的探索，深挖人脸识别“黑白两面”的攻防对峙现状。</p>
+<p class="ql-align-justify">一、 人脸识别攻防博弈愈演愈烈</p>
+<p class="ql-align-justify">国内对于人脸信息进行采集和识别的应用早在2002年就有相关专利公开，2012年就已经开始投产和应用，2018年起，人脸识别技术迎来成长期，今年又因为疫情原因亟需高效、非接触的身份验证方式，也在一定程度上加速了人脸识别技术在不同场景的应用和普及。</p>
+<p class="ql-align-justify">▲2002-2019年中国人脸识别相关专利公开数量变化图 来源：Soopat前瞻产业研究院整理</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200909/4fb35e3c3b1a4c8da568c9b05e328b70.png" max-width="600" /></p>
+<p class="ql-align-justify">此外，室内外遍布的摄像头也逐渐在和人脸识别系统配套使用，帮助进行更高效和精准的信息获取。最明显的现象是，一些城市的路口红绿灯下的屏幕上，会实时曝光出闯红灯行人的身份信息。</p>
+<p class="ql-align-justify">▲闯红灯行人人脸识别系统</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200909/b14d9e36a548470dbe317e38aa2749ad.png" max-width="600" /></p>
+<p class="ql-align-justify">《中国新闻周刊》此前报道的文章《人脸识别十字路口：脸的恐慌》中的数据显示，国人每天要暴露在各种摄像头下超过500次。</p>
+<p class="ql-align-justify">人脸曝光次数多、应用场景多、可视性强、精准对应个人信息等特点，使人们不禁会对无处不在的人脸识别带来的隐私安全问题产生担忧。</p>
+<p class="ql-align-justify">尽管人脸识别这一概念在法规和行业规定内依旧比较模煳，但是近些年来出现的不规范使用人脸的现象也为执法部门敲响了警钟。</p>
+<p class="ql-align-justify"><strong>2020版《信息安全技术 个人信息安全规范》</strong>特别地将“个人信息控制者通过个人信息或其他信息加工处理后形成的信息，例如用户画像或特征标签，能够单独或者与其他信息结合识别特定自然人身份或者反映特定自然人活动情况的信息”划分为个人信息范畴。</p>
+<p class="ql-align-justify">法律正在逐渐对人脸识别规范使用作出举措，而实现真正的全面、严谨且有针对性的立法依旧需要时间的打磨。</p>
+<p class="ql-align-justify">除了法律规范，人脸识别在技术方面也呈现出了“黑白两面”的“立场”对峙。</p>
+<p class="ql-align-justify">人脸识别滥用“恶魔”无孔不入，很多科技大公司凭借着自己人脸挖掘技术的威力滥用人脸数据。数据收集、保管、使用环节都有可能成为他们牟利的切入点。</p>
+<p class="ql-align-justify">在人脸信息被大量搜刮的同时，一些反人脸识别技术也不断突破，陆续出现，与”恶魔“正面对峙。</p>
+<p class="ql-align-justify">这项“收益有限、风险巨大”的人脸识别技术，难道真的是便捷和安全两难全？人脸识别及其对抗技术是否将会像“病毒”与“杀毒软件”一样长久共存？</p>
+<p class="ql-align-justify">二、 攻：人脸识别背后的“虚假安全感”</p>
+<p class="ql-align-justify">我们每天走在路上看似安全，实则可能自己的人脸信息已经被采集，甚至用于我们不知道的用途。技术的“非法滥用”正在不断攻破我们的隐私城墙。</p>
+<p class="ql-align-justify">需要刷脸的场合越来越多，同时AI换脸、AI合成的音视频也不断出现，无论是引发的虚假新闻、诈骗案例，还是悄无声息的拿到人脸权限等隐患，都在不断用技术进攻人们的接受底线。</p>
+<p class="ql-align-justify">人脸识别说起来挺无辜的，就像“好心办坏事”，一个初心是为了提高效率以及维护用户数据安全的技术，却因为信息滥用而被处处提防。</p>
+<p class="ql-align-justify">甚至在网络交易平台上，还存在着专门出售人脸数据和“照片活化”（即人脸验证视频）工具的店铺。<strong>0.5元一份的人脸数据，让公民在不知情的状况下成为了实实在在的“透明人”。</strong></p>
+<p class="ql-align-justify">▲0.5元一张“人脸”</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200909/0322e5706a3942c78b3edd621271c573.png" max-width="600" /></p>
+<p class="ql-align-justify">人脸负载的不止是面部信息，还包含着公民的个人身份信息，这些信息的滥用使个人的隐私安全毫无保障可言。近两年就有不少人脸信息被轻易滥用的现象发生。</p>
+<p class="ql-align-justify"><strong>1、 杭州人脸识别第一案</strong></p>
+<p class="ql-align-justify">去年的“杭州人脸识别第一案”引起了一阵不小的波澜。因为动物园强制升级入园系统，将指纹识别更改为面部识别，作为大学副教授的游客因为不满这一强制获取人脸的规定，将动物园告上了法庭。</p>
+<p class="ql-align-justify">面部信息，这一几乎从未被大众注意到甚至想到要保护的隐私被放在了明面上，引发热议。</p>
+<p class="ql-align-justify">原告郭兵认为：人脸识别可能泄露隐私，动物园强行通过升级年卡收集游客个人生物识别信息，违反《消费者权益保护法》等相关规定，属于损害原告合法权益的行为。</p>
+<p class="ql-align-justify">但是由于我国尚未有明确针对人脸识别的法案，<strong>专家目前也在引用《消费者权益保护法》分析原被告之间的合同关系。</strong></p>
+<p class="ql-align-justify">直到今年的6月15日，杭州市富阳区人民法院开庭审理此案，并将择机宣判。我们可以一起等待针对人脸识别的不合理获取，将会获得怎样的处理。</p>
+<p class="ql-align-justify">▲庭审现场</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200909/71b0f2627db44b8eb1da4b0bfeea8d00.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>2、“ZAO”换脸应用</strong></p>
+<p class="ql-align-justify">还记得换脸App“ZAO”刚上架时你的朋友圈吗？</p>
+<p class="ql-align-justify">用户只需将一张面部照片上传到“ZAO”上，再选一个自己喜欢的影片片段和角色，就可以把这些角色的面孔换成自己的模样</p>
+<p class="ql-align-justify">朋友圈里的朋友一个个毫无违和地成为了网络热门表情包，甚至出演热门电视剧……但是还没热闹几天，这个风靡一时的“换脸”App就被约谈下架了。</p>
+<p class="ql-align-justify">▲“ZAO”AI换脸</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200909/cb6e3330d28c4bc69419d254af62e93a.gif" max-width="600" /></p>
+<p class="ql-align-justify">这款App的用户协议中要求使用者同意把肖像权永久、不可撤销、免费地提供给“ZAO”平台使用，换句话来说，<strong>用户等于将自己的肖像权双手奉上</strong>。</p>
+<p class="ql-align-justify">通过自己提交的面部照片进行人脸识别，则更无面部隐私可言。</p>
+<p class="ql-align-justify">类似地，2017年在美国社交新闻网站Reddit社区第一次亮相的换脸黑科技Deepfake，上线五天就遭到了全球唾弃。</p>
+<p class="ql-align-justify"><strong>3、 Facebook人脸识别诉讼</strong></p>
+<p class="ql-align-justify"><strong>美国社交网络公司Facebook此前被爆出其曾经推出的“标签建议”功能，对海量的用户照片进行人脸识别，从而分析出人物标签信息。</strong>也就是将照片中的人物圈出来，并建议用户标记出照片中的人是谁。</p>
+<p class="ql-align-justify">这一行为使Facebook遭到了消费者的集体诉讼，该公司被指控侵犯了消费者的隐私权。</p>
+<p class="ql-align-justify">对应相应的法案来看，伊利诺伊州有一项法律是：禁止企业未经事先征得同意就收集包括面部识别在内的生物特征数据。</p>
+<p class="ql-align-justify">伊利诺伊州法院认为，在默认情况下向百万伊利诺伊州用户启用新功能之前，Facebook没有得到同意，因此于2015年将Facebook起诉。</p>
+<p class="ql-align-justify">在今年的1月份，Facebook决定赔付5.5亿美元以和解该诉讼，但是这一申请遭到了法院的驳回，并要求Facebook的诉讼金额增加1亿美元。</p>
+<p class="ql-align-justify">继而在今年7月份，Facebook终于妥协，决定以6.5亿美元和解诉讼。8月，法院初步获批Facebook的6.5亿和解请求，每位人脸信息被侵犯的用户将会得到200~400美元的赔付。Facebook将于2021年开始支付罚款。</p>
+<p class="ql-align-justify">一波未平一波又起。</p>
+<p class="ql-align-justify">几天前，Facebook的社交应用Instagram又面临了新的指控。<strong>新指控表示，Instagram在用户不知情或未经过其同意的情况下非法收集了超过1亿用户的生物识别数据，并从中获利。</strong></p>
+<p class="ql-align-justify">▲Instagram</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200909/179e7e8656e046e49085a4286cf13223.png" max-width="600" /></p>
+<p class="ql-align-justify">诉讼称，这一行为违反了伊利诺伊州的一项禁止未经授权的生物识别数据行为的法律。</p>
+<p class="ql-align-justify">而针对这一诉讼，Facebook并未立即做出回应。</p>
+<p class="ql-align-justify"><strong>4、 拥有30亿人脸数据的美国AI公司Clearview AI “重振旗鼓”</strong></p>
+<p class="ql-align-justify">在今年的2月，一家名为Clearview AI的美国人脸识别创企称其整个客户名单被盗。</p>
+<p class="ql-align-justify"><strong>Clearview AI从网络社交媒体上抓取了超过30亿张照片，形成庞大的生物特征信息数据库，据传有600多家执法机构及一些私人安保公司都在使用它的人脸识别产品。</strong></p>
+<p class="ql-align-justify">而最关键的是，Clearview AI获取这些数据并未经过被抓取照片者的同意。</p>
+<p class="ql-align-justify">也正因为这一非法获取行为，Clearview AI的行为遭到美国民众及社交巨头们的集体诉讼，这一AI公司被指控蓄意违反了美国伊利诺伊州的生物识别法，要求赔偿500万美元。</p>
+<p class="ql-align-justify">▲Clearview AI创始人兼CEO Hoan Ton-That</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200909/af7c14261da3451b97210fab81036584.png" max-width="600" /></p>
+<p class="ql-align-justify">但是看来Clearview AI对于这一判决并不甘心，同样是在几天前，<strong>Clearview AI又重新雇佣律师，决定依靠美国宪法《第一修正案》捍卫其面部跟踪技术。</strong></p>
+<p class="ql-align-justify">但是这一诉讼请求显然并不被人们看好，有人说，美国宪法《第一修正案》的最终目标是为了保证公民能够自由地向政府提出意见，以维护自身权利，而这家公司显然只是为了维护他们的商业模式，而并不是为了维护公民权益。</p>
+<p class="ql-align-justify">▲Clearview AI新聘请的顶级律师Floyd Abrams</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200909/4d1f3f65152f4fb69d3d0b3cae0335ec.png" max-width="600" /></p>
+<p class="ql-align-justify">除了以上这些具体的获取面部隐私并加以滥用的信息，疫情期间甚至由于人脸识别还引发了种族冲突。为此，微软、亚马逊和IBM三大巨头同时暂停了对警局提供面部识别的服务。</p>
+<p class="ql-align-justify">除了以上被报道出来的案例，或许还有很多我们不知道的面部识别被滥用的情况。在这个人人调侃“没有隐私”的时代，真正被攥在自己手里的，或是可以被完全维护的隐私安全还有多少？</p>
+<p class="ql-align-justify">三、 防：政策和新技术是杜绝人脸识别滥用的墙</p>
+<p class="ql-align-justify">随着人脸识别技术攻占的步步紧逼，一些相应的技术和政策也纷纷落地，包括制造“照片面具”骗过人脸识别软件、使用算法识别“换过脸”的视频，甚至更明了的法律条文，都在防止人脸信息被滥用。</p>
+<p class="ql-align-justify"><strong>1、 照片面具——AI 对抗学习系统Fawkes</strong></p>
+<p class="ql-align-justify">芝加哥大学SAND实验室的学生近日发布了一款保护个人隐私的系统Fawkes。这一系统自开源1个月以来，已经在GitHub上获得了十多万的下载量。</p>
+<p class="ql-align-justify">▲Fawkes软件及在Windows系统中的软件面板呈现</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200909/4e20f29694a445c386d29a5935e5b4ec.png" max-width="600" /></p>
+<p class="ql-align-justify"><strong>这个系统是在本地计算机上运行的算法和软件工具，可以让用户伪装自己的照片，伪装后的照片可以限制面部识别软件对该照片的识别。</strong></p>
+<p class="ql-align-justify">这项研究是4位学生在芝加哥大学SAND实验室的赵燕斌和郑海涛两位华人老师的带领下完成的。</p>
+<p class="ql-align-justify">▲4位学生研究人员及指导老师的人脸原图及被Fawkes加工后的照片</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200909/3679980bcb9e4cee9f795a13b006c7da.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">在题为《福克斯：保护隐私免受未经授权的深度学习模 型的侵害》的论文中，他们阐述了进行这项研究的技术原理及研究目的。论文的一作有两位，一位是23岁的北京小伙单思雄，正准备在芝加哥大学直博，而另一位则是芝加哥大学的博士Emiy Wenger。</p>
+<p class="ql-align-justify">他们说，之所以将这一系统命名为Fawkes，是为了表示对盖伊·福克斯面具反抗精神的致敬。</p>
+<p class="ql-align-justify">Fawkes的工作原理，是对照片进行像素级别的微小修改，以蒙蔽AI的审视。而使用者大可不必担心这种修改会像“P图”一样影响照片本身的质量，Fawkes对照片像素的改动在人眼看来几乎与原片无差别，但是这种类似“噪点”的干扰，对机器模型的影响很大。</p>
+<p class="ql-align-justify">▲技术使用模型案例</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200909/a42cc998cb8b477ba59dae93b930ce22.png" max-width="600" /></p>
+<p class="ql-align-justify">简单来说，将自己的人像照片传到Fawkes上经过1分钟左右的加工，输出的图片与原片在肉眼上看到并无差别，但是将加工后的照片再上传到社交网站，就算是人脸识别软件想要通过照片信息来获取数据，其<strong>扫描出的照片信息也不是上传照片的本人信息。</strong></p>
+<p class="ql-align-justify">这款系统的优点在于，它几乎可以对所有的人脸识别系统都管用。论文上写道，在旷视 Face ++、微软 Azure Face、亚马逊 Rekognition 等面部识别服务上，<strong>Fawkes 取得了“100% 的成功”。</strong></p>
+<p class="ql-align-justify">▲Fawkes 完全“骗过”了旷视、微软、亚马逊的人脸识别</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200909/09faddeca90649a8bd2f4ae2d1b8a1ba.png" max-width="600" /></p>
+<p class="ql-align-justify">这一系统尽管存在无法对已经上传网络的图片进行修改的缺陷，但是研究小组认为对今后大量的照片隐私泄露的规避将会阻止更多隐私安全问题的发生。他们说，他们的目的是让Clearview AI这种从照片上非法收集用户人脸信息的案件不再发生。</p>
+<p class="ql-align-justify">但现状是，除了无法对已经上传的图片进行修改，有的用户还表明：加工后的图片被微信等App压缩后，再进行人脸识别测试，其结果与原图并无差异，因此这一应用的实际应用情况到底是否有效还需进一步探索。</p>
+<p class="ql-align-justify">去年，Facebook AI也有研究通过改变帧的方式对人的照片或视频进行修改，以使人的面部信息在人脸识别软件面前“隐身”。</p>
+<p class="ql-align-justify">▲经过修改的影视片段。左：原视频；右：用 Facebook 的方法修改后的视频</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200909/a3d14c261d244dbfbf31856edc43ae24.gif" max-width="600" /></p>
+<p class="ql-align-justify">Facebook AI人脸“隐身”的新架构是基于对抗式自动编码器，并与一个经过训练的人脸分类器进行耦合。通过将自动编码器的隐藏空间与人脸分类器的表征层连接到一起，能够得到一个丰富的隐藏空间，其中既嵌入了身份信息，也嵌入了表情信息。</p>
+<p class="ql-align-justify">▲编码器网络架构</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200909/b73c0c3b3e444f20b8e00430ba66858a.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>2、DeepFake检测新思路：用心跳做“信号”</strong></p>
+<p class="ql-align-justify">除了通过照片识别人脸信息，“换脸”技术背后的逻辑也同样让人细思极恐。放到网络上的人像视频只需要经过“ZAO”“DeepFake”之类的软件加工，视频的主角就可以换成别人，同样的，自己的人脸也有很大可能会被用于其他视频。只要处理够仔细，软件足够强大，“换过脸”的视频足可以以假乱真。</p>
+<p class="ql-align-justify">▲DeepFake进行视频“换脸”处理</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200909/f1068cd297ea4e01aa5e2771da04ff08.gif" max-width="600" /></p>
+<p class="ql-align-justify">最近的美国大选，就又一次把Deepfake推上了风口浪尖。针对这种“人脸和身体错乱组合”的现象，科学家们也一直在探索如何区分真假照片和视频。</p>
+<p class="ql-align-justify">以往的技术主要是根据分辨率、三维信息、眼动等来区分，因为翻拍照片的分辨率与真人采集照片有差别，并且经过DeepFake加工过的换脸视频，“假人”眨眼会非常不自然。然而这种技术在处理不同类型图片的情况下，性能不是非常稳定。</p>
+<p class="ql-align-justify">近日，宾汉姆顿大学和英特尔的研究人员开发了一种算法，号称能用视频中的生物信号检测这个视频是否是伪造的。</p>
+<p class="ql-align-justify">▲通过“DeepFake心跳”检测伪造视频</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200909/da05f8c865284a2bb7e985062ea718f2.png" max-width="600" /></p>
+<p class="ql-align-justify">研究人员在论文中说，<strong>DeepFake模型视频会留下独特的生物学和噪声信号，即所谓的“DeepFake心跳”</strong>。这种检测方法会从一个人脸上的32个不同点中寻找残留的生物信号，研究人员将这些生物信号称为PPG单元。</p>
+<p class="ql-align-justify">▲用心跳做“信号”监测假视频</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200909/72fd0e4607414336829e0e0ad2099f0b.png" max-width="600" /></p>
+<p class="ql-align-justify">为了证明这一方式可以扩展到新的模型，研究人员从深度人脸提取数据集CelebDF中随机选择了1000个假视频，结果显示这一方式在CelebDF上达到了93.69%的假视频检测准确率和92.17%的生成模型检测准确率，也就表明利用生物信息检测假视频的模型具有泛化性。</p>
+<p class="ql-align-justify">▲从CelebDF随机采样测试成果</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200909/c03c1361f88741beb41d277a4117fd90.png" max-width="600" /></p>
+<p class="ql-align-justify">此外，最近来自阿里巴巴、九州大学、南洋理工大学和天津大学的AI研究人员也推出了一种通过视觉PPG（光电容积描记技术）识别人心跳的Deepfhythm检测模型。</p>
+<p class="ql-align-justify">这个研究团队发现，真假视频中人的心跳是不同的，将心跳视觉化，也可以直接暴露出经过DeepFake加工的视频。</p>
+<p class="ql-align-justify">除了学术圈推出的反DeepFake模型，微软也推出了两个DeepFake监测工具，以避免美国大选遭受虚假信息威胁。</p>
+<p class="ql-align-justify">微软新推出的两项技术分别为：<strong>视频认证器（Video Authenticator）以及另一项从信息源头杜绝伪造的技术。</strong></p>
+<p class="ql-align-justify">视频认证器可以将视频播放中的每个帧与原图进行实时对比，并给出数据分析，监测出人眼几乎无法察觉的细微褪色、灰度元素等混合边界。</p>
+<p class="ql-align-justify">▲微软的视频认证器</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200909/06e56c37d56244e98439ce61b99c17f1.gif" max-width="600" /></p>
+<p class="ql-align-justify">目前这项技术已经与一家位于旧金山的AI基金会合作，通过这种合作形式，视频认证器可供参与民主进程的组织广泛使用。</p>
+<p class="ql-align-justify">微软推出的另一项技术支持从信息源头杜绝伪造，这项技术包括一个内置于Microsoft Azure中的工具以及一个阅读器，通过匹配具有唯一性的哈希值，以让人们准确知晓看到的内容是否真实。</p>
+<p class="ql-align-justify"><strong>3、 法律政策保护才是最后一道防线</strong></p>
+<p class="ql-align-justify">技术的加持毕竟无法覆盖全部的人脸识别场景，法律和政策保护才是防止人脸识别隐私泄露的最后一道防线。目前国内外已经有一些举措来应对人脸识别滥用的现象。</p>
+<p class="ql-align-justify">今年中国信通院发布了《2020年人脸识别技术在App应用中的隐私安全报告》，提出了以下4条人脸识别App的个人信息保护建议：</p>
+<p class="ql-align-justify">（1） 加快人脸识别相关法律法规研制进程</p>
+<p class="ql-align-justify">（2） 加快构建人脸识别技术应用监管体系</p>
+<p class="ql-align-justify">（3） 加快推进人脸识别技术的安全系列标准研制</p>
+<p class="ql-align-justify">（4） 鼓励行业协会或社会组织开展行业自律</p>
+<p class="ql-align-justify">2019年5月，美国旧金山对人脸识别技术发出了禁令，禁止该技术在政府机关和执法机关中使用，从而成为全球首个对人脸识别技术发出禁令的城市。</p>
+<p class="ql-align-justify">欧盟委员会的高级官员也曾透露，他们正计划一项关于人脸识别数据使用的立法。</p>
+<p class="ql-align-justify">那么我国法律和政策对人脸识别又是怎么规定的呢？</p>
+<p class="ql-align-justify">虽然我国尚且没有完全针对“人脸识别”的法条，但是我国《民法典》的第一千零三十四条则明确表示自然人的个人信息受法律保护，该法条内容包括：</p>
+<p class="ql-align-justify">“个人信息是以电子或者其他方式记录的能够单独或者与其他信息结合识别特定自然人的各种信息，包括自然人的姓名、出生日期、身份证件号码、<strong>生物识别信息</strong>、住址、电话号码、电子邮箱、健康信息、行踪信息等。个人信息中的私密信息，适用有关隐私权的规定；没有规定的，适用有关个人信息保护的规定。”</p>
+<p class="ql-align-justify">人脸识别属生物识别信息中的一种，因此也明确受到法律保护。</p>
+<p class="ql-align-justify">此外我国的《网络安全法》第四十四条也表示：“任何个人和组织不得窃取或者以其他非法方式获取个人信息，不得非法出售或非法向他人提供个人信息。”</p>
+<p class="ql-align-justify">面对疫情中人脸识别滥用，隐私安全问题泛滥的状况，加拿大、波兰、澳大利亚等也都在一定程度上实行了面部识别禁令。即使禁令的做法相对片面和极端，但是对隐私维护方面起到了一定作用。</p>
+<p class="ql-align-justify">人脸信息的特殊性使之被泄露后无法救济，因此也需要更加严格的保护。无论技术如何发展，建议如何提倡，政策和法规永远是防止人脸识别被滥用的最坚实的防线。</p>
+<p class="ql-align-justify">结语：防守眼光要比恶意攻破更长远</p>
+<p class="ql-align-justify">人脸识别技术为我们生活带来便捷的同时，也同样带来了隐私泄露的缺口。随着技术的不断进步，人脸信息获取的“攻防战役”也愈演愈烈。</p>
+<p class="ql-align-justify">“攻击”方通过人脸信息获取隐私、滥用人脸，“防御“方通过对人脸识别破坏软件的拆解和防范，维护人脸隐私。</p>
+<p class="ql-align-justify">人脸识别的“攻防”两面就像是“矛”与“盾”，二者势均力敌，想要在用好人脸的基础上防住人脸信息滥用，就需要“防范”方面的眼光更加超前且长远。</p>
+➜华为手机明年跌落至全球第四？SA最新预测，华为真正的考验到了
+http://www.sohu.com/a/417221600_115978	15251
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200909/766d645a078546449e25accb865c6dce.png" max-width="600" /></p>
+<p class="ql-align-justify"><strong>智东西（公众号：zhidxcom）</strong></p>
+<p class="ql-align-justify"><strong>编 | 云鹏</strong></p>
+<p class="ql-align-justify">智东西9月8日消息，据市场研究公司StrategyAnalytics(SA)预测，2020年三星将继续保持全球智能手机市场的领导地位，并且在明年可能还会强化这一优势，尤其是在美国政府对华为进行多轮限制的情况下。</p>
+<p class="ql-align-justify">SA发布的最新季度报告预测，今年全球智能手机市场出货量将同比下降11%，约为12.6亿部，此前SA曾一度预测降幅将达到15.6%。SA表示，由于美国、欧洲和印度市场的需求恢复速度高于预期、居家办公学习趋势日益明显，并且政府加大市场刺激力度，新的估算值得以有所缓和。</p>
+<p class="ql-align-justify">报告还提到，随着经济的逐渐复苏以及5G手机、可折叠手机需求的增长，明年全球智能手机市场的出货同比增长率将超过9%，预计2022年可以恢复到2019年的水平(14.1亿部)。</p>
+<p class="ql-align-justify">在逐渐向好的整体态势下，三星今年将继续保持市场领导地位，其智能手机出货量将达到2.65亿台，约占市场份额的21%。苹果将以1.9亿部的出货量和15.3%的市场份额位居第三，与华为十分接近。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200909/df44a521fc874ccfab90c1af382dfe69.png" max-width="600" /></p>
+<p class="ql-align-justify">在市场份额方面，三星和苹果将分别增长0.1个百分点和1.3个百分点，华为由于受到美国限制，芯片库存可能将会耗尽，因此明年的市场份额将会受到比较严重的影响。SA预计华为2021年在智能手机市场中的份额将降至4.3%。</p>
+<p class="ql-align-justify">SA的报告还提到，在中国市场中，三星和苹果的手机可以取代华为的旗舰机型，而vivo、OPPO和小米等中国本土品牌则可以填补中低端和高端机型的市场需求。SA称，华为的市场空缺将使所有海外智能手机品牌从中获利。</p>
+<p class="ql-align-justify">来源：Pulse</p>
