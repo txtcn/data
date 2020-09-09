@@ -44,20 +44,20 @@ https://www.appinn.com/dsm-7-preview/	49119
 <p>Synology C2 Hybrid Share 是一个全新的混合云，可以将本地 NAS 连接至公有云 Synology C2 上，建立一个高达 1TB 的混合云。</p>
 <h3>不再支持</h3>
 <p>升级 DSM7 后，将不再支持：</p>
-<ul><li>USB 加密狗/Wi-Fi 加密狗/蓝牙加密狗 等设备</li><li>不再支持在 LUN 上创建 SSD 缓存</li><li>不再支持 DDSM（Docker DSM）</li><li>DDNS 不再支持：CloudNS, DNO-O-Matic, DNSEXIT, Dynamic DO!.jp, Joker.com, RU-CENTER, TwoDNS.de, Variomedia, Zoneedit.com</li><li>Mariadb 5 不再支持，需要更新至 Mariadb 10</li><li><strong>暂不支持第三方群晖套件</strong></li><li>以下套件不再支持【Cloud Station Server (replaced by Synology Drive Server), Cloud Station ShareSync (replaced by Synology Drive Server), Discourse, DokuWiki, Drupal, Drupal8, GitLab, GLPI, Java7, Java8, LimeSurvey, Logitech<sup>®</sup> Media Server, LXQt, Magento, Magento2, MantisBT, Moments (replaced by Synology Photos), Mono, Moodle, Node.js 0.10, Node.js 0.12, Node.js v4, Node.js v6, Node.js v8, Odoo 8, OpenERP 6.1, OpenERP 7.0, OrangeHR, Orthanc, osCommerce, osTicket, PHP PEAR, Photo Station (replaced by Synology Photos), phpBB, Piwik, Podcast Generator, PrestaShop, PrestaShop1.7, Redmine, Ruby, Spree, SugarCRM, SVN, Synology File Manager, Tomcat6, Tomcat7, Webalizer】</li></ul>
+<ul><li>USB 加密狗/Wi-Fi 加密狗/蓝牙加密狗 等设备</li><li>不再支持在 LUN 上创建 SSD 缓存</li><li>不再支持 DDSM（Docker DSM）</li><li>DDNS 不再支持：CloudNS, DNO-O-Matic, DNSEXIT, Dynamic DO!.jp, Joker.com, RU-CENTER, TwoDNS.de, Variomedia, Zoneedit.com</li><li>Mariadb 5 不再支持，需要更新至 Mariadb 10</li><li><strong>暂不支持第三方群晖套件</strong></li><li>以下套件不再支持【Cloud Station Server (replaced by Synology Drive Server), Cloud Station ShareSync (replaced by Synology Drive Server), Discourse, DokuWiki, Drupal, Drupal8, GitLab, GLPI, Java7, Java8, LimeSurvey, Logitech<sup>®</sup>&nbsp;Media Server, LXQt, Magento, Magento2, MantisBT, Moments (replaced by Synology Photos), Mono, Moodle, Node.js 0.10, Node.js 0.12, Node.js v4, Node.js v6, Node.js v8, Odoo 8, OpenERP 6.1, OpenERP 7.0, OrangeHR, Orthanc, osCommerce, osTicket, PHP PEAR, Photo Station (replaced by Synology Photos), phpBB, Piwik, Podcast Generator, PrestaShop, PrestaShop1.7, Redmine, Ruby, Spree, SugarCRM, SVN, Synology File Manager, Tomcat6, Tomcat7, Webalizer】</li></ul>
 <p>考虑清楚后，再升级不迟。</p>
 <h2>如何升级 DSM7 预览版</h2>
 <p>先劝退黑群用户。白群用户注意，<strong>升级 DSM 是不可逆的</strong>，升级不会影响你存储在 NAS 上的数据，但仍然建议备份，尤其备份 DSM 系统设置，以及软件的设置。</p>
 <h3>第一步，请先升级 DSM至最新版。</h3>
 <p><strong>DSM 7 只能从 DSM 6.2 升级</strong>，请务必注意。更新过程需要 10～20 分钟，而软件包更新大约需要 1 个多小时。</p>
 <h3>第二步，使用 Synology 账号登录并注册预览版</h3>
-<p>这一步就简单了，注册后即可选择你的 NAS 型号进行下载，注意上面提到以下型号无法升级：</p>
+<p>这一步就简单了，<a href="https://prerelease.synology.com/en-global/download/dsm_preview/global" class="rank-math-link" target="_blank" rel="noopener">在这里登录 Synology 账号</a>，注册后即可选择你的 NAS 型号进行下载，注意上面提到以下型号无法升级：</p>
 <p>FS6400, FS3600, SA3600, SA3200D, RC18015xs+, DS1520+, DS920+, DS720+, DS420+, DS220+, DS220j</p>
 <div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/screenshot-2020-09-08-at-21-18-01.jpg!o" alt="DSM 7.0 预览版开放下载，现在就可以升级你的群晖 NAS 了 2" title="DSM 7.0 预览版开放下载，现在就可以升级你的群晖 NAS 了 2"></figure></div>
 <h3>第三步，下载</h3>
 <p>下载 DSM 的系统安装文件，青小蛙尝试 DS218+ 设备下载的文件名为：DSM_DS218+_40850.pat，大约 300MB 左右</p>
 <h3>第四步，安装</h3>
-<p>进入 DSM 管理界面，前往：<strong>控制面板 > 更新和还原 > DSM 更新</strong>，点击 <strong>手动更新 DSM</strong>，选中刚刚下载的  <strong>.pat</strong> 文件，开始更新。</p>
+<p>进入 DSM 管理界面，前往：<strong>控制面板 &gt; 更新和还原 &gt; DSM 更新</strong>，点击 <strong>手动更新 DSM</strong>，选中刚刚下载的  <strong>.pat</strong> 文件，开始更新。</p>
 <div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/screenshot-2020-09-08-at-21-30-28.jpg!o" alt="DSM 7.0 预览版开放下载，现在就可以升级你的群晖 NAS 了 3" title="DSM 7.0 预览版开放下载，现在就可以升级你的群晖 NAS 了 3"></figure></div>
 <p>请注意，预览版还处于非常早期的阶段，后面还会有多次的 Beta 测试版，多次的 RC 版，才到最终的正式版，根据从 PPT 发布至今的时间，可能还有相当长的一段时间。</p>
 <p>请普通用户，尤其只有一台设备的用户（比如青小蛙）谨慎尝试。青小蛙目前还无法升级，因为在 DSM 里安装了不少第三方套件，升级将直接导致无法使用，很尴尬。而 NAS 在承担着局域网内基础设施的位置，很是重要&#8230;</p>
