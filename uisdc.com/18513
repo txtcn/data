@@ -1,0 +1,594 @@
+➜移动端交互输出文档应该怎么写？来看高手的分析！
+https://www.uisdc.com/mobile-interactive-documents	57849
+<p>一套完整且比较优秀的移动端交互文档，我认为可以包含以下部分：</p>
+<ul>
+<li>业务背景、产品目标、用户人群和用户目标</li>
+<li>业务规则定义</li>
+<li>用户流程图</li>
+<li>设计原则</li>
+<li>交互流程标注</li>
+</ul>
+<p>当然也可以增加产品概况和更新日志等内容，产品概况即简单说明这个产品版本号和产品相关人员。</p>
+<p>更新日志主要是注明每次更新之后，更新了哪些内容、更新人和更新日期，如下图所示。</p>
+<p><span class="img-zoom"><img alt="移动端交互输出文档应该怎么写？来看高手的分析！" class="alignnone size-full wp-image-388059" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jh-20200908-1.jpg" width="1080" height="492" /></span></p>
+<h4><span class="auto_menu">业务背景、产品目标、用户人群和用户目标</span></h4>
+<p>作为一个交互设计师。在我们接到需求之后，首先需要弄清楚的是产生需求的业务背景是什么。其次是基于业务背景了解产品的目标是什么。最后弄清楚产品的用户人群有哪些，用户目标是哪些。</p>
+<p>交互设计师通过从产品经理或者其他需求发起方那里了解需求生产的业务背景，了解为什么要做这个需求。在了解清楚之后，追溯需求最原始本质。</p>
+<p>在我们实际工作的大部分情况下，产品经理是不会在需求文档中将业务背景写清晰，这时候我们交互设计师就可以将业务背景在交互文档中输出，并清晰的展示出来。</p>
+<p><strong>1. 业务背景是什么？</strong></p>
+<p>业务背景通常是我们为什么要做这个功能。通过做这个功能，对业务有什么帮助。通过业务背景，我们可以推演出业务诉求，并得到对应的产品目标。</p>
+<p><strong>2. 产品目标是什么？</strong></p>
+<p>产品目标是产品能得到什么样的结果，对产品来说可以获得什么样的好处。所以在交互文档的设计中要重点体现出产品目标。通过明确产品目标，可以清晰的指导我们做交互方案。</p>
+<p><strong>3. 用户人群是哪些？</strong></p>
+<p>用户人群主要是通过我们对现有产品的用户画像得到，并推算出使用这个需求的用户人群是哪一类人，通过明确的用户人群，这样我们在做设计过程中，可以很清晰知道这个需求为谁而做。</p>
+<p><strong>4. 用户目标是什么？</strong></p>
+<p>用户希望通过使用这个功能达到什么样的好处或目的。</p>
+<p>接下来我以一个虚构的案例来讲解如何输出移动端交互文档。</p>
+<p><strong>5. 案例：浏览器的竞猜拉新活动。</strong></p>
+<p>该活动的需求是通过浏览器的金币竞猜活动让用户与产品有一个拉新互动，提升新用户和老用户的日活量，提升活跃度。</p>
+<p>基于这个需求，我们交互设计师该如何进行设计并输出一份交互文档呢？根据以上所说：我们在设计之前，需要考虑业务背景、产品目标、用户人群和用户目标。</p>
+<p>经过分析，可以得到这个需求的业务背景、产品目标、用户人群和用户目的如下：</p>
+<ul>
+<li>业务背景：让用户通过使用某浏览器的一些指定任务赚取金币，并将金币用于消费（竞猜活动），从而形成一个完整的良性闭环。</li>
+<li>产品目标：通过活动分享，提升浏览器的下载量；通过用户赚取金币的方式，提升用户使用某浏览器时长；通过活动引导用户分享，从而得到产品活动的更多曝光。</li>
+<li>用户人群：已使用某浏览器并喜欢获利活动的用户；未使用过浏览器的但喜欢获利活动的用户。</li>
+<li>用户目标：简单方便的完成竞猜活动，并希望能够获奖。</li>
+</ul>
+<h4><span class="auto_menu">业务规则</span></h4>
+<p>关于产品的业务规则，可能需要同产品经理、业务方和运营一起沟通讨论。这个里面涉及到整个产品业务的规则。在实际工作中，我们交互会碰到两种情况：</p>
+<p>情况1.产品经理会和业务或运营沟通，然后输出一份业务规则，这时候我们交互可以认真阅读并梳理业务规则，如果觉得不合理的话，可以和产品经理讨论沟通，并修改业务规则使之变得更合理，并输出在交互文档中。</p>
+<p>情况2.产品经理只是简单的有个业务规则想法，这时候需要我们交互设计师帮忙一起沟通并细化其业务规则，并输出在交互文档中。</p>
+<p>浏览器竞猜拉新这个需求涉及到的业务规则有：活动时间规则、金币产生规则，金币消费规则、资金池消费规则、活动发布规则和提现规则。对于这些，如果产品经理没有明确的制定，或者制定的不好不够细致。那么我们交互可以来进行梳理制定。</p>
+<p>在制定规则的过程中，需要我们设计师将活动的开始前、过程中、到结束后所有的活动流程全部想明白，并将整个活动流程跑通。并给一个合理的规则定义，如果规则制定的不合理，上线之后，整个活动会因为规则漏洞导致崩掉。</p>
+<p>下图所示就是我定义的所有规则：</p>
+<p><span class="img-zoom"><img alt="移动端交互输出文档应该怎么写？来看高手的分析！" class="alignnone size-full wp-image-388060" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jh-20200908-2.jpg" width="727" height="1291" /></span></p>
+<h4><span class="auto_menu">用户流程图</span></h4>
+<p>用户流程即我们设计师要梳理用户在使用过程中的各种场景流程，通过用户流程图可避免遗漏场景，避免交互方案遗漏。</p>
+<p>任何一个功能或者活动，第一个问题就是入口设置在哪？所以我们需要设计活动入口的逻辑。</p>
+<p>活动的用户主流程就是用户正常进行活动时的流程。</p>
+<p>区别于主流程对应的就是金币不足时的异常流程。</p>
+<p>如果用户竞猜获奖了，那么对应的问题就是提现，由于浏览器目前还没有钱包，所以设计为通过绑定微信提现。</p>
+<p>活动为了曝光率，需要重点设计分享功能和入口。当用户已中奖时，则需要提示在使用产品的用户已中奖。当活动过期时，需要设计对应过期的活动界面。</p>
+<p>通过以上的简单分析和深入的用户流程图梳理总结后，可得到以下7种用户交互流程图：</p>
+<ul>
+<li>竞猜活动的入口设计在哪里</li>
+<li>金币充足-竞猜活动主流程</li>
+<li>金币不足时</li>
+<li>提现流程</li>
+<li>活动分享流程及所有入口</li>
+<li>已中奖时场景</li>
+<li>活动过期时场景</li>
+</ul>
+<p><span class="img-zoom"><img alt="移动端交互输出文档应该怎么写？来看高手的分析！" class="alignnone size-full wp-image-388061" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jh-20200908-3.jpg" width="1080" height="2019" /></span></p>
+<h4><span class="auto_menu">设计原则</span></h4>
+<p>这里的设计原则非常见的一些交互或者视觉设计原则，而是在设计这个活动交互方案中需要遵守的原则。这里的设计原则和业务强挂钩。</p>
+<p>在做这个活动设计之前，要明确这个活动在设计过程中的原则应该有那些，这样的话，我们在设计整个活动的各种场景时，可以清晰的让交互流程和页面布局按照既定的原则走，这样才更具有全局观。</p>
+<p>这个活动的产品目标是通过活动获得产品的曝光和下载，则需要满足的原则是引导用户快速找到活动入口，并提供活动简介说明，吸引用户参加并顺利参与。</p>
+<p>这个活动的用户目标是简单方便的完成竞猜活动，并希望能够获奖。则在设计过程中要简单易懂，用户没有认知和操作成本。为了让用户有获奖的机会，让用户感受到公平，需要及时的向用户反馈中奖用户。</p>
+<p>因为活动只是临时的，所以需要减少该活动对绝大部分非目标用户产生打扰或反感。</p>
+<p>基于以上的分析，总结之后制定以下设计原则：</p>
+<ul>
+<li>引导用户快速找到活动入口，并顺利参与</li>
+<li>提供活动简介说明，吸引用户参加</li>
+<li>竞猜活动页面，简单易懂，用户没有认知和操作成本</li>
+<li>尽量减少该活动对绝大部分用户产生打扰或反感</li>
+<li>保证公平公正，及时向用户反馈中奖人数</li>
+</ul>
+<p>以上的设计原则是为之后的交互流程确定思路和设计指导。</p>
+<h4><span class="auto_menu">交互流程标注</span></h4>
+<p>基于上面的用户流程图，可以得到7个用户操作流程，即7个交互流程标注。</p>
+<p>目前我觉得交互流程标注比较好的展示方式，是按照一个主流程在一个站点地图/画板的形式展示。当一个主流程中存在几个支线操作流程时，可以分别在一个站点地图/画板中，展示出来。同时用标题区分说明分支流程的操作名字。如下图所示：</p>
+<p><span class="img-zoom"><img alt="移动端交互输出文档应该怎么写？来看高手的分析！" class="alignnone size-full wp-image-388062" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jh-20200908-4.jpg" width="1080" height="1283" /></span></p>
+<p>在涉及到异常场景，且可以全局性复用的情况，则只需要全局性组件说明即可，不用每个流程都展示其异常场景组件或者页面。<br />
+全局组件指的是整个产品通用的组件，例如全局断网，操作成功、操作失败、加载、空数据界面，404等</p>
+<p>全局断网：一般是在首页使用tips提示。用户在其他界面点击操作时，也会出现toast反馈提示用户。也有一些app在用户进入出现对话框提示用户网络异常。相对于对话框，使用tips对用户的干扰更小。</p>
+<p>操作成功：一般操作成功都是根据具体的使用场景对出对应的提示。</p>
+<p>操作失败：异常情况导致操作失败，这时需要统一的提示，通常使用toast，也有一些使用对话框强提示用户。</p>
+<p><span class="img-zoom"><img alt="移动端交互输出文档应该怎么写？来看高手的分析！" class="alignnone size-full wp-image-388063" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jh-20200908-5.jpg" width="847" height="361" /></span></p>
+<p>加载：涉及到全局加载和局部加载，全局加载在设计中要统一说明，例如上一个界面点击进入下一个界面，使用的全局加载就需要说明。如果是一些小场景的加载，那么需要特殊说明。例如上拉加载，下拉加载，局部小区域加载等。<br />
+空数据类型一共有三类：</p>
+<ul>
+<li>初始状态的定义：初始化状态，没有任何内容，需要用户进行某种操作才能产生内容的界面。</li>
+<li>清空状态的定义：通过删除或其他用户操作，清空当前的页面内容，产生了空界面，这时候需要有明确的提示，且告知用户该如何处理。</li>
+<li>出错状态的定义：由于网络、服务器或者没有找他其他结果等原因导致无法加载内容，产生了空界面，这时候需要有明确的提示，且告知用户该如何处理。用户操作反馈的无结果界面也可以用这样的思路来设计。</li>
+</ul>
+<p>下图是H5竞猜拉新活动部分交互流程标注示意图：</p>
+<p><span class="img-zoom"><img alt="移动端交互输出文档应该怎么写？来看高手的分析！" class="alignnone size-full wp-image-388064" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jh-20200908-6.jpg" width="1080" height="670" /></span></p>
+<p>在罗列流程过程中，尽量一条线走到头，避免出现线与线之间的交叉，界面之间各种线穿插导致的后果就是阅读起来很乱，体验特别差，逻辑也容易出问题。同时每一个界面下面写上对应的标注说明。</p>
+<h4><span class="auto_menu">结语</span></h4>
+<p>以上就是如何输出移动端交互文档说明，仅供参考，大家可以按照自己公司的实际情况，进行合理的增加、删除或修改，使之文档更符合自身公司/项目组。</p>
+<p>[link https://www.uisdc.com/interaction-design-output-document]</p>
+<p>欢迎关注作者的微信公众号：「Echo的设计笔记」</p>
+<p><span class="img-zoom"><img alt="移动端交互输出文档应该怎么写？来看高手的分析！" class="alignnone size-full wp-image-268377" src="https://image.uisdc.com/wp-content/uploads/2018/04/uisdc-uxechoqr.jpg" alt="UI、UE都应该掌握的、最具代表性和价值的6条专业知识点" /></span></p>
+➜为什么我做的画面总是不平衡？今天算是知道了！
+https://www.uisdc.com/picture-balance	60779
+<p>设计为什么需要平衡，这里的平衡最早起源于艺术！</p>
+<p>大家都知道艺术品追求的最高境界就是永恒，如果一个艺术品，看起来不够平衡，就很像个半成品，而半成品就是还没完成的东西，很难达到永恒的境界。</p>
+<p>设计也是一样的，如果不够平衡，就让用户感觉没做完，不够精致。</p>
+<p>今天来介绍几个我自己常用的让画面平衡的小技巧，希望对大家能有所帮助！</p>
+<ul>
+<li>用来平衡的三个工具</li>
+<li>稳定的三角结构</li>
+<li>还是那个隐形的矩形框</li>
+</ul>
+<h4><span class="auto_menu">用来平衡的三个工具</span></h4>
+<p>对于平衡的首要原则非常简单：哪里轻加哪里。</p>
+<p>但是具体加什么呢？</p>
+<p>我常用的三种方式如下。</p>
+<p><strong>第一种，加元素平衡</strong></p>
+<p>比如下面这个画面，很明显哪里比较轻（或者说是比较空）：</p>
+<p><span class="img-zoom"><img alt="为什么我做的画面总是不平衡？今天算是知道了！" class="alignnone size-full wp-image-388035" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ph-20200908-1.jpg" width="898" height="800" /></span></p>
+<p>那我们就可以在轻（空）的地方加一些元素，这画面是上面空，那我们就把元素加在上面：</p>
+<p><span class="img-zoom"><img alt="为什么我做的画面总是不平衡？今天算是知道了！" class="alignnone size-full wp-image-388036" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ph-20200908-2.jpg" width="922" height="800" /></span></p>
+<p>这样就会平衡很多，很容易理解吧。</p>
+<p><strong>第二种，加底纹平衡</strong></p>
+<p>比如上几天做的一个性别选择界面，男性女性都会有一横条：</p>
+<p><span class="img-zoom"><img alt="为什么我做的画面总是不平衡？今天算是知道了！" class="alignnone size-full wp-image-388037" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ph-20200908-3.jpg" width="1080" height="522" /></span></p>
+<p>这时候我们会发现每个横条都有点不平衡，左重右轻，刚才也说了，哪里轻就加重哪里即可。</p>
+<p>比如在右侧加一个对号表示选择状态：</p>
+<p><span class="img-zoom"><img alt="为什么我做的画面总是不平衡？今天算是知道了！" class="alignnone size-full wp-image-388038" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ph-20200908-4.jpg" width="1080" height="522" /></span></p>
+<p>但是还是觉得轻，这时候就可以采用第二种方法，加底纹理：</p>
+<p><span class="img-zoom"><img alt="为什么我做的画面总是不平衡？今天算是知道了！" class="alignnone size-full wp-image-388039" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ph-20200908-5.jpg" width="1080" height="522" /></span></p>
+<p>这样看起来就会平衡很多，饱满很多了。</p>
+<p><strong>第三种，加排版</strong></p>
+<p>有时候如果画面单一，不够平衡，我们也可以借助排版的力量来保证画面的平衡。</p>
+<p>比如下面这个画面，右侧是是形象，那我们就可以在左侧加入排版信息，平衡画面：</p>
+<p><span class="img-zoom"><img alt="为什么我做的画面总是不平衡？今天算是知道了！" class="alignnone size-full wp-image-388040" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ph-20200908-6.jpg" width="735" height="800" /></span></p>
+<p>嗯，平衡多了！</p>
+<p>这三种方式，元素、底纹、排版，都是让画面更加平衡的常用工具。</p>
+<h4><span class="auto_menu">稳定的三角结构</span></h4>
+<p>当我们需要加多个元素的时候，我会采用三角构图，让元素之间互相平衡。</p>
+<p>比如现在我要给这个画面加三个元素，我就会利用元素之间的三角构图让画面更加平衡：</p>
+<p><span class="img-zoom"><img alt="为什么我做的画面总是不平衡？今天算是知道了！" class="alignnone size-full wp-image-388041" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ph-20200908-7.jpg" width="909" height="800" /></span></p>
+<p>这其中有两个细节，</p>
+<p><strong>细节一：</strong></p>
+<p>三个元素的大小一定是不同的，最大的元素要放在画面最轻最空的位置：</p>
+<p><span class="img-zoom"><img alt="为什么我做的画面总是不平衡？今天算是知道了！" class="alignnone size-full wp-image-388042" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ph-20200908-8.jpg" width="916" height="800" /></span></p>
+<p><strong>细节二：</strong></p>
+<p>离最大元素最近的那个应该是最小的元素：</p>
+<p><span class="img-zoom"><img alt="为什么我做的画面总是不平衡？今天算是知道了！" class="alignnone size-full wp-image-388043" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ph-20200908-9.jpg" width="913" height="800" /></span></p>
+<p>如果三个元素依次按从小到大的顺序排列，就会比较平均，没有节奏感：</p>
+<p><span class="img-zoom"><img alt="为什么我做的画面总是不平衡？今天算是知道了！" class="alignnone size-full wp-image-388044" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ph-20200908-10.jpg" width="916" height="800" /></span></p>
+<p>这就是我常用的「元素三角结构」，让画面稳定、平衡。</p>
+<h4><span class="auto_menu">还是那个隐形的矩形框</span></h4>
+<p>我经常把自己的东西画一个隐形的矩形，不仅仅只是在图标设计当中，排版的细节也一样可以用到。</p>
+<p>比如之前有一个角落信息排版是这样的：</p>
+<p><span class="img-zoom"><img alt="为什么我做的画面总是不平衡？今天算是知道了！" class="alignnone size-full wp-image-388045" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ph-20200908-11.jpg" width="720" height="522" /></span></p>
+<p>当我们加上矩形后，我们会发现这个矩形内部是不平衡的，左下角和右上角是空的，导致上面的元素很容易掉下来：</p>
+<p><span class="img-zoom"><img alt="为什么我做的画面总是不平衡？今天算是知道了！" class="alignnone size-full wp-image-388046" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ph-20200908-12.jpg" width="1080" height="406" /></span></p>
+<p>左面很明显是不合理不平衡的，优化后就好很多了。</p>
+<p>在做大画面的时候也是一样的，画一个隐形矩形：</p>
+<p><span class="img-zoom"><img alt="为什么我做的画面总是不平衡？今天算是知道了！" class="alignnone size-full wp-image-388047" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ph-20200908-13.jpg" width="1080" height="560" /></span></p>
+<p>尽量让这个矩形内的四个角落都顶起来，这样就会平衡饱满一些。</p>
+<p>这就是隐形矩形框的力量。</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>「平衡」是影响画面精致度的首要因素之一，是我们必须要重视的，以上就是我目前对于「处理平衡问题」的小技巧，希望能给大家带来一些启发。</p>
+<p>长点心，比啥都强</p>
+<p>更多平衡技巧：</p>
+<p>[link https://www.uisdc.com/do-color-balance-method]</p>
+<p>欢迎关注作者的微信公众号：「菜心设计铺」</p>
+<p><span class="img-zoom"><img alt="为什么我做的画面总是不平衡？今天算是知道了！" class="alignnone size-full wp-image-229091" src="https://image.uisdc.com/wp-content/uploads/2017/04/cxsjpqr2-1-1-1.jpg" alt="如何让产品设计更加年轻化？我总结了这5个要点" width="180" height="180" /></span></p>
+➜人工智能P图这回真的来了？看完PS 2021版设计师慌了~
+https://www.uisdc.com/ps-2021	63277
+<p>人工智能P图喊了一年又一年。这回，狼真来了</p>
+<p>大家好，我是美丫姐，这段时间，网络上疯传着一份，所谓「流出版」的PS2021安装包。</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388106" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-34.jpg" width="641" height="426" /></span></p>
+<p>好奇心作祟，我也弄来把玩了一阵，体验完新功能后，觉得既令人大呼过瘾，更令人深思</p>
+<p>究竟新版Ps加了哪些划时代的功能，就让美丫姐带大家尝尝鲜：</p>
+<h4><span class="auto_menu">两键换天</span></h4>
+<p>所谓好景年年在，好云不常有，对于摄影爱好者来说，蹲不到好云，就得自己P一个</p>
+<p>或许是考虑到摄影用户基数庞大Adobe干脆就将天空识别、替换功能进行了整合</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388074" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-2.jpg" width="549" height="369" /></span></p>
+<p>二者结合使用，就能轻松完成天空的识别与变换</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388105" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-33.gif" width="640" height="391" /></span></p>
+<p>山体与天空边界的识别巧夺天工不好好给文件命名怕第二天自己都忘了哪张是原图。</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388076" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-4.jpg" width="722" height="278" /></span></p>
+<p>内置的天空素材多达三类16种「蓝天」、「晚霞」「壮丽」基本涵盖摄影爱好者日常所需</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388078" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-6.jpg" width="574" height="469" /></span></p>
+<p>注意，被替换掉的不单只是天空画面中的其他元素色温、明暗也能随天空一同变换</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388079" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-7.jpg" width="1000" height="562" /></span></p>
+<p>自动处理的效果不满意也不要紧亮度、色温、蒙版早就分好了层哪里不对改哪里</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388080" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-8.jpg" width="286" height="212" /></span></p>
+<p>可不比同事发来的PSD更暖心！</p>
+<h4><span class="auto_menu">超级加倍</span></h4>
+<p>图片素材越是高清，价格就越贵低价买入低清版本放大后使用，又嫌清晰度又不够</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388081" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-9.jpg" width="1000" height="601" /></span></p>
+<p>但得益于Ps2021中新加入的「超级缩放」功能这种省钱的思路，以后就确实可行了！</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388082" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-10.jpg" width="291" height="42" /></span></p>
+<p>点击打开「超级缩放」功能下的「加强图像细节」与「移除JPEG伪影」按钮</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388073" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-1.gif" width="639" height="390" /></span></p>
+<p>以前放大的过程中总是莫名其妙出现的烦人噪点就统统消失不见了！</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388083" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-11.jpg" width="538" height="153" /></span></p>
+<p>人物放大两倍，皮肤依旧柔光水滑发丝根根分明！</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388075" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-3.gif" width="640" height="628" /></span></p>
+<p>四舍五入，光素材费能省下一个亿！</p>
+<h4><span class="auto_menu">强到没朋友的人工智能滤镜</span></h4>
+<p>以上两个功能，只不过是开胃菜这次升级换代中，最重磅的更无疑就是「神经网络AI滤镜」</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388084" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-12.jpg" width="435" height="406" /></span></p>
+<p>这还是Adobe头一回将人工智能独立打包成独立工具加入PS早已十足强大的工具库内</p>
+<p>强到多离谱，试试就知道以这张从Pexels下载的免费素材为例：拖入Ps2021加载「神经网络AI滤镜」工具</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388085" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-13.jpg" width="1080" height="720" /></span></p>
+<p>数秒过后，照片当中的四个人物就会被人工智能一个不漏地识别想要对谁的面部进行编辑点击右侧头像在下拉菜单当中切换就行</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388086" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-14.jpg" width="1080" height="577" /></span></p>
+<p>而可供编辑的面部细节选项多达三组9种：</p>
+<ul>
+<li>表情组：开心值、惊讶值、愤怒值</li>
+<li>主题组：年龄、发量、面部朝向</li>
+<li>实验组：个人特征、凝视方向、光线方向</li>
+</ul>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388087" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-15.jpg" width="700" height="231" /></span></p>
+<p>除「保留独特细节」值是从0到100外其他8种选项调节区间都是「从-50到50」</p>
+<p>这就意味着，你既可以让人物开心雀跃也可以将人物的开心值「清零」</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388088" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-16.jpg" width="1080" height="541" /></span></p>
+<p>既能让人变得惊喜满满也能让人变得波澜不惊，满脸嘲讽</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388089" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-17.jpg" width="1080" height="541" /></span></p>
+<p>上一秒温文儒雅，下一秒原地暴怒拉动「愤怒值」滑块，就能轻松搞定</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388090" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-18.jpg" width="1080" height="541" /></span></p>
+<p>只要将开心值、惊讶值、愤怒值细心调整，组合使用足以让照片人物的表情千变万化</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388077" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-5.gif" width="639" height="314" /></span></p>
+<p>这还不算完以前PS老师动不动说「修容」是「要学一辈子的事」在Ps2021当中，「修容」不过是「运算几秒钟的事」</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388091" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-19.jpg" width="1080" height="541" /></span></p>
+<p>独秃乐，不如众秃乐在Ps2021里，你不仅能给自己植发</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388092" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-20.jpg" width="1080" height="541" /></span></p>
+<p>还能给工友挨个「剃度」，排队出家</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388093" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-21.jpg" width="1080" height="720" /></span></p>
+<p>以后拍照脖子朝哪扭，眼睛往哪看大可不必听摄影师指挥反正到了设计师手上，角度随便改</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388094" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-22.jpg" width="1080" height="541" /></span></p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388095" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-23.jpg" width="1000" height="667" /></span></p>
+<p>运算中出现少量细节穿帮失误也完全可以接受</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388096" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-24.jpg" width="1080" height="604" /></span></p>
+<p>因为渲染出的「新面孔」将会以自动新建图层的形式输出拿柔边橡皮擦一擦就能处理得天衣无缝，不留痕迹</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388097" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-25.jpg" width="300" height="226" /></span></p>
+<p>说到这儿，Adobe人工智能的优势似乎还「只不过」是将原本按「天」计算的工作量压缩到了按「秒」计算而已，但如果你点开「实验室」滤镜库就会发现Adobe的野心远不止于此：还有更多、更加神奇的AI滤镜正排着队向你跑来</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388098" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-26.jpg" width="687" height="367" /></span></p>
+<p>比如已经进入测试阶段的，就有：妆容迁移、黑白照片上色</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388099" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-27.jpg" width="681" height="296" /></span></p>
+<p>老照片修复、图像高清化</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388100" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-28.jpg" width="685" height="297" /></span></p>
+<p>景深雾化与环境调色</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388101" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-29.jpg" width="1000" height="758" /></span></p>
+<p>尚待开发的，比如：人工智能帮你添加亿点点细节；人工智能变换人物材质、姿势等等等等&#8230;多到一篇文章中，根本写不完</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388102" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-30.jpg" width="735" height="329" /></span></p>
+<p>这些画面效果，设计师能P出来吗时间给够当然可以，但未来的PS，不仅自己就能P出来，而且还能P得飞快</p>
+<p>这哪还是几个滤镜的事，Adobe想做的事，分明是打算开启人工智能的P图元年</p>
+<p>照这个势头，恐怕再过几年，入行多年的老设计，比起行业新人来，光论P图技巧，不会剩下半点优势可言</p>
+<p>还真别不服气，你瞧上个不服气的，后来哭得有多伤心</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-388103" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ys-20200908-31.jpg" width="603" height="509" /></span></p>
+<p>人工智能取代繁重的基础操作在各行各业都已经成为了大势所趋，我们设计师倒是不妨，放平心态，乐观其变</p>
+<p>你以为甲方真离不开设计师吗？甲方只是享受虐你的快感而已</p>
+<p>哦对了，顺带再说一嘴，据说10月份，Ps2021就要发售了强到令人发指的「神经网络AI滤镜」必须要登录账号连接Adobe服务器后，在线使用</p>
+<p>所以不仅人力P图或将会成为历史搞不好盗版PS，也会成为历史名词毕竟连不上服务器就享受不到Ps性能质的飞跃</p>
+<p>我说得还不够清楚吗？趁着还剩一个月赶紧为正版努力存钱吧，各位！</p>
+<p>往期回顾：</p>
+<p>[link https://www.uisdc.com/ps-2020]</p>
+<p>欢迎同学们关注最充满智（dou）慧（bi）的设计账号：</p>
+<p><span class="img-zoom"><img alt="人工智能P图这回真的来了？看完PS 2021版设计师慌了~" class="alignnone size-full wp-image-380742" src="https://image.uisdc.com/wp-content/uploads/2020/07/meiyaqr.png" width="200" height="200" /></span></p>
+➜万字干货！帮你深度掌握设计中的「光影」知识点
+https://www.uisdc.com/light-and-shadow-2	65575
+<p>先声明本文的内容量很大，是对光影知识的一次系统梳理和总结，相信读完会有所收获，当然有些内容还不够深入，还要继续深究和学习</p>
+<p>构图、色彩和光影属于设计中非常重要的3块体系，但构图和色彩大多是偏感性的主观理解，而光影则是理性的客观判断。因为这是自然界中真实存在的物理现象，因此大部分时候画面的「添加光影」都是在还原真实，所以本文的很多知识都偏理论和科普，但理性认知无疑是打牢光影基础的第一步。</p>
+<p>如果说「构图」和「色彩」是视觉设计的基础，那光影便是「锦上添花」，当各种视觉元素组合完成后，只有「光影统一」，才能让所有元素真实的融在一起，最终形成真实立体、有层次的画面，而「光影统一」便是这篇文章的核心原则。</p>
+<h4><span class="auto_menu">光源类型</span></h4>
+<p>其实我们看到的万物色彩，都是物体表面的反射光，是「光」创造了色彩，同时也创造了「影」，只有经过光照才会出现明暗，才有所谓的「光影」，所以我们先来说说一切的源头——光。</p>
+<p>发光的地方就是「光源」，当我们对画面「添加光影」时，一定要先留意光源在哪，像我每次画设计草图时，就会先把主光源的位置确定并标示出来，只有清楚位置，「光影统一」才有了依据。</p>
+<p>那常用的光源类型都有哪些呢？其实就2大类：照射光和环境光。2类光源往往同时存在，相互影响，塑造场景时必须同时考虑。</p>
+<h5>1. 照射光</h5>
+<p>照射光就是画面中的主要照明光，这是影响整体光影的核心光源，根据光线照射路径的不同，又分成直射光、散射光和折射光。</p>
+<p><strong>直射光</strong></p>
+<p>直接照射的光源就是直射光，光线路径呈方向明确的两点一线，整体集中、聚焦。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387736" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-1.jpg" width="250" height="192" /></span></p>
+<p>直射光能在物体表面形成强烈的明暗对比，并且过渡偏硬，形成清晰的轮廓边缘，最常见的直射光就是晴天阳光，它属于自然光。如下图所示，阳光直射形成的明暗强对比能呈现人物及建筑的轮廓，突显立体感。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387737" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-2.jpg" width="800" height="305" /></span></p>
+<p>和自然光相对应的是人造光，在人造光中，例如摄影棚里常用的闪光灯和常亮灯（不带柔光罩）都算直射光，照射效果和晴天阳光类似，仔细观察投影，边缘都很生硬、清晰。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387738" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-3.jpg" width="800" height="418" /></span></p>
+<p><strong>散射光</strong></p>
+<p>当光束穿过某一介质（云层、柔光布等），被其表面分散传播的光便是散射光，散射光的光线路径呈多方向发散状，整体分散、无明确方向。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387739" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-4.jpg" width="238" height="183" /></span></p>
+<p>自然光中，阴天、雨天、雾天的光照都属于散射光，当阳光穿过大气时，大气层能让光线朝不同方向发散，发散后的光线柔和，在物体上形成的明暗对比较弱，过渡也柔和。如下图所示，不管人物还是景物，都无明显的阴影轮廓，整体层次丰富而细腻，影调柔和，特别是暗部的细节都能保留完好。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387740" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-5.jpg" width="800" height="408" /></span></p>
+<p>而人造光中，如果给闪光灯和常亮灯装上柔光罩，这时发出的光就会变成散射光。例如下图中，人物和产品都显的特别柔和、舒服。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387741" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-6.jpg" width="800" height="372" /></span></p>
+<p><strong>折射光</strong></p>
+<p>当光束从一个介质射入另一介质时，传播方向发生偏折的光就是折射光。常见介质有水、玻璃等，它们的折射角度也各不相同。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387742" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-7.jpg" width="205" height="183" /></span></p>
+<p>日常生活中，像泳池里的水波光影、玻璃杯投射的光线图案都是与折射相关的自然现象。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387743" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-8.jpg" width="800" height="288" /></span></p>
+<p>而我们在设计Banner时，若将这些折射效果表现出来，就会给画面增添很多细节，同时也会增加真实感，像水波光影在电商中用的就很多。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387744" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-9.jpg" width="800" height="499" /></span></p>
+<h5>2. 环境光</h5>
+<p>很多新手在做设计时，往往只注意照射光（主光源）对物体的影响，而忽略环境光，导致画面总是不够真实。简单来说，画面中除了主光源外的所有光线都算环境光，环境光的亮度一般很低，且没有明确方向性，常见的环境光有2种：散射光和反射光。</p>
+<p><strong>散射光</strong></p>
+<p>和照射光一样，环境光中也有散射光，但它们的不同在于：</p>
+<ul>
+<li>照射光中的散射光虽然光线柔和，但属强光，能让物体产生明暗反差；</li>
+<li>而环境光中的散射光属弱光，往往只在主光源照不到的地方（物体的暗面）才会看到影响。</li>
+</ul>
+<p>像自然界中的夕阳西下，当红色的太阳光（照射光）减弱时，建筑的暗部便会显现蓝色的天空光（环境光），这时红光和蓝光会形成鲜明对比，极具冲击和美感，这样的画面在摄影及设计中都非常常见，也是摄影界公认的「黄金一小时」，这时的天空光就属于环境光中的散射光。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387745" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-10.jpg" width="800" height="376" /></span></p>
+<p>生活中还有一个常见现象也能看到散射光影响，当你走在户外，观察自己的影子，特别当影子较长时（清晨或傍晚），这时离自己越远的区域颜色越浅，这是因为越远的影子所处区域就越开阔，受周围散射光的影响就越明显，因而颜色更浅。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387746" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-11.jpg" width="800" height="446" /></span></p>
+<p><strong>反射光</strong></p>
+<p>环境光中还有非常重要的一类是反射光，当光束射到介质表面时，有部分自介面射回的光就是反射光。可以毫不夸张的讲，世界万物之所以出现明暗就是因为反射光的存在。反射光一般有2种情形：镜面反射和漫反射。</p>
+<p><strong>镜面反射。</strong>当反射面非常光滑，这时平行射入的光线仍会向一个方向平行的反射出来，效果如同镜子一样，虽然这样物体本身的明暗就会非常微弱，但人们透过反射面能看到周围的环境信息，这就是镜面反射光。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387747" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-12.jpg" width="209" height="191" /></span></p>
+<p>日常生活中像平静水面、镜子、抛光金属等都会有镜面反射光，例如我们在刻画金属材质的元素时，常常会在表面加些近乎白色的高光，这就是由于镜面反射而进入眼中的刺目强光。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387748" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-13.jpg" width="800" height="735" /></span></p>
+<p>另外晴空万里时，海面也常出现「波光粼粼」的闪光，同样也是阳光射入水面的镜面反射光。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387749" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-14.jpg" width="800" height="350" /></span></p>
+<p><strong>漫反射光。</strong>当反射面凹凸不平时，这时平行射入的光线就会向各个方向反射出去，这便是漫反射光（以下简称「漫射光」）。需要说明这里的凹凸不平也包括微观结构，例如有些墙壁看着光滑，但仔细看表面也有粗糙颗粒，这时反射出来的光线也是各个方向的漫射光。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387750" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-15.jpg" width="208" height="186" /></span></p>
+<p>漫反射在这个世界里无处不在，它是我们对物体形态及色彩产生明确认知的基础。</p>
+<p>因为有漫反射的存在，物体才会有清晰的明暗关系，我们才能看清这个世界，它赋予了物体纵深感和体积感，不管是产品还是环境皆是如此。</p>
+<p>这里列举一个设计中常用的漫反射现象，我们将一个白色茶杯放入一个绿色盒中，打上一束光，这时茶杯整体都带有绿色调，这是因为盒子表面产生了大量绿色的漫射光，这些光束射在茶杯上，进而发生偏色现象，如下图所示。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387751" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-16.jpg" width="800" height="423" /></span></p>
+<p>可见环境色对物体的视觉影响还是相当明显。再如下图中，当模特处于一个红色空间时，受到环境中红色漫射光的影响，模特也明显偏向红色，这时我们就说环境光影响了这位模特的「色彩平衡」，关于「色彩平衡」在后面还会细讲。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387752" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-17.jpg" width="800" height="463" /></span></p>
+<p>当然现实是复杂的，其实还有大量物体会同时存在镜面反射光和漫射光，谁的强度大谁就更突出，例如起风时的水面，就不全是镜面反射，还有漫反射，这里就不再深究。</p>
+<p><strong>小结</strong></p>
+<p>以上提到的「照射光」和「环境光」便是设计中常用的2大光源类型，这2类往往是同时存在，一般照射光会直接影响物体的明暗结构，而环境光则影响物体的色彩平衡及反光。</p>
+<p>只有把这些光影都表现清楚，画面才更有代入感。其中对于照射光的理解，绝不仅仅是考虑直射或散射这么简单，还需分析照射方向、照射角度、照射形状、光源距离、光源强度、光源软硬、光源大小、光源颜色等因素，待会会针对这些因素展开讲解。</p>
+<h4><span class="auto_menu">物体明暗</span></h4>
+<p>前面介绍了光源类型，主要让大家对「光」有个整体认知，内容偏科普，属于「光影」的理论基础，现在开始讲「影」，这块内容更偏实战运用，教大家如何在设计中准确表达光影。本文的「影」涵盖两块内容：物体的明暗和投影，其中物体是泛指，包含电商常用的两大元素：人物和产品。</p>
+<p>先说物体明暗，当光源发出的光线射向物体时，由于光反射，物体会有对应的明暗变化，记得在高中学习素描时，老师就曾提过光影的「五大调」，这正是人们对物体明暗关系的理论化总结。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387753" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-18.jpg" width="800" height="280" /></span></p>
+<p>但现实世界却要复杂的多，因为物体光影还与材质密切相关，不同材质的明暗关系截然不同，所以决不能撇开材质谈明暗，而设计中常用材质有三大类：漫反射材质、镜面反射材质和透明/半透明材质。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387754" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-19.jpg" width="800" height="366" /></span></p>
+<p>不管现实世界还是电商视觉，漫反射材质都是最常见的材质，因为这类材质的光影最有规律也最有代表性，明暗关系也简单很多，刚刚说的「素描五大调」就是针对漫反射材质，那我们就从这类材质入手，详细讲讲漫反射的光影到底如何呈现。</p>
+<h5>1. 明暗原则</h5>
+<p>「漫反射材质」是指表面产生漫反射光的材质，日常生活中，漫反射材质（以下简称「漫射材质」）的物体占据大多数，像棉布、哑光纸、哑光塑料甚至人类肌肤等等都属于漫射材质。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387755" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-20.jpg" width="800" height="189" /></span></p>
+<p>而我们在刻画漫射材质的物体明暗时，需遵循3点原则：近亮远暗、先整体再局部以及细节刻画。</p>
+<p><strong>近亮远暗</strong></p>
+<p>对于漫射材质，首先一个大原则就是「近亮远暗」：</p>
+<p>以画面的主光源（照射光）为圆心，物体距离光源越近会越亮，越远则越暗。</p>
+<p>对单个物体来说，距离近的就是亮面（受光面），而距离远的是暗面（背光面），如下图所示。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387756" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-21.jpg" width="534" height="452" /></span></p>
+<p>在很多摄影或设计作品中，能看到不管人物还是产品，都会遵循这一原则：距离主光源越远则越暗。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387757" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-22.jpg" width="800" height="827" /></span></p>
+<p><strong>先整体再局部</strong></p>
+<p>在「近亮远暗」的大原则下，先确定物体的整体光影，表现三大面（亮面、灰面、暗面），其本质就是在固有色（物体在白色光下所呈现的色彩）的基础上进行深浅色调的变化。</p>
+<p>然后再添加物体的局部光影，这个局部主要针对有块面的物体（立方体），「局部光影」意味着亮面和灰面也要分别遵循「近亮远暗」原则（由于暗面是背光，不受主光源影响，所以不在遵循范围内），这样光影才会更有层次。而没有明显块面的曲面物体（球体）则把握好整体光影即可，或许听着有些复杂，下面通过图例强化理解。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387758" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-23.jpg" width="800" height="376" /></span></p>
+<p><strong>细节刻画</strong></p>
+<p>最后是刻画光影细节，这里列出2个常见细节，这些细节虽不影响整体明暗，但会让物体光影更加细腻和真实，属于「加分项」。</p>
+<p>物体表面最亮的地方就是高光，高光其实不是光，而是直接反射主光源的地方，如果要给漫射材质的球体添加高光，那在亮面添加一个羽化的圆斑即可。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387759" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-24.jpg" width="534" height="321" /></span></p>
+<p>往往越光滑的物体高光就越清晰。但对漫射材质而言，高光不会很清晰，不过模煳程度要看物体的固有色以及粗糙度，粗糙度越大的物体高光越模煳。另外高光的外形还和物体的本身结构有关。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387760" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-25.jpg" width="800" height="515" /></span></p>
+<p>在表现高光时，还有一块高光区也经常被刻画出来，那就是块面物体的「倒角高光」。</p>
+<p>「倒角」其实是个工业设计术语，三维设计也常提到，一般块面物体的棱角通常会做些圆滑过渡，这种过渡结构就是倒角，有了倒角，转折才不会「锋利」，这时若有光线照射到表面，倒角处便会形成高光线。</p>
+<p>一般亮面和灰面转折处的倒角高光最亮，而灰面和暗面的转折处最暗，核心还是遵循「近亮远暗」原则。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387761" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-26.jpg" width="800" height="268" /></span></p>
+<p>电商设计中，若给块面物体加上「倒角高光」，细节无疑更丰富，也更耐看。仔细看下图，在块面转折处都有明显的亮线勾勒，虽然不是很起眼，但这就是常说的「设计细节」。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387762" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-27.jpg" width="800" height="1099" /></span></p>
+<p>当2个物体相邻时，它们相邻的那面会有「重合阴影区」，并且物体离的越近，阴影会越深。这是因为相邻空间随着物体间距越小，接受的环境光也会越来越少。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387763" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-28.jpg" width="800" height="281" /></span></p>
+<p>「重合阴影」是一个非常容易被大家忽略的设计细节，但若表现得当，就能提升作品的精细度，如下图所示。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387764" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-29.jpg" width="800" height="482" /></span></p>
+<h5>2. 环境色影响</h5>
+<p>说完漫射物体的明暗刻画原则，接下来讲讲周围环境对物体的影响，还记得刚刚讲过的环境光吗？环境中除了主光源外的一切光线都是环境光。</p>
+<p>而「环境色」则是环境光中的一种情形：就是当周围环境有明确色彩时，这时产生的环境光会给物体带来怎样的影响？主要影响其实有2方面：物体的色彩平衡和反光，实际表现时也是从这两点入手。</p>
+<p><strong>色彩平衡</strong></p>
+<p>「色彩平衡」是PS中的一项调色工具，主要是调节画面的整体色彩。既可校正画面的偏色，使色彩舒适平衡；也可反其道而行之，根据场景和需求让画面有意偏向某种颜色。例如下图中的人物，受环境色影响就明显偏向黄色。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387765" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-30.jpg" width="800" height="309" /></span></p>
+<p>所以当物体处在一个有明确色彩的环境时，受环境四周的漫射光影响，整个物体都会偏向环境色，注意由于暗面受到的影响更大，因此暗面的偏色现象也会更加明显。总之物体偏色程度是和其固有色、材质及漫射光强度都息息相关。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387766" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-31.jpg" width="800" height="337" /></span></p>
+<p><strong>反光</strong></p>
+<p>一般物体都是放置在地面上，而地面作为环境的一部分也会出现漫射光，这部分光线射到物体上就会形成一层微弱的亮面，这就是「反光」。</p>
+<p>其中物体表面离地面越近的地方反光就越强，一般来说反光最强处就是物体暗面最靠近地面的地方。但不管如何反光都不宜过亮，更不能超过物体亮面。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387767" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-32.jpg" width="800" height="302" /></span></p>
+<p>上图是环境为白色的情形，而当环境有明确色彩时，这时反光面就应呈现环境色，如下图所示，物体的反光都是浅蓝色。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387768" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-33.jpg" width="800" height="328" /></span></p>
+<p>另外能产生「反光」的不单单是地面，其实只要离物体较近且能反射光线的面都能让物体产生「反光」。</p>
+<p>例如下图中，就能明显看到白色瓶子的右侧有一层绿色「反光」，这是因为旁边的绿色外盒反射出的绿色光线射在了瓶身表面。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387769" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-34.jpg" width="800" height="448" /></span></p>
+<p>再如户外拍摄人像时，有时为了不让暗部过暗，往往会在旁边添上一块「反光板」，这个反光板所起作用就是让脸部的背光面产生反光，以达到提亮暗部的目的。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387770" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-35.jpg" width="800" height="540" /></span></p>
+<p><strong>小结</strong></p>
+<p>综上所述，周围环境的漫射光影响着物体的色彩平衡；而地面（也可是离物体较近的面）的漫射光则为物体暗面添加了反光。</p>
+<p>为何要单独讲解环境色影响？因为现在很多Banner都是在一个有色背景中添加人物或产品，其实就可理解成是将物体放入一个环境色中，这时若想和背景自然融合，就需要它们的色彩平衡及反光都偏向背景色，不然整体就会失真。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387771" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-36.jpg" width="800" height="413" /></span></p>
+<p>总之调节「色彩平衡」能让物体融进有色背景中；而添加「反光」可使物体更加通透，体积感也更强，下面展示2个融合不错的案例。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387772" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-37.jpg" width="800" height="932" /></span></p>
+<p>在实战案例中，我们会给2款产品分别添加一个蓝色背景，然后用 「明暗原则」及「环境色影响」中提到的方法给产品加上光影，并将它们融进背景中（由于投影在后面才会提到，所以当前为保画面完整性，关于投影部分只先添加，但不展开细讲）。因为物体的明暗、投影和光源属性密切相关，因此这里先设定主光源来自画面左上方、强度中等、软硬适中、白光，下面看具体如何呈现。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387773" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-38.jpg" width="800" height="1241" /></span></p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387774" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-39.jpg" width="800" height="1160" /></span></p>
+<h5>3. 照射光影响</h5>
+<p>在上述案例中，我们事先给主光源做了一个设定，为何要这么做呢？因为主光源的很多因素都直接决定了物体会呈现怎样的光影，特别当画面有多个物体时，只有确定了光才能使它们「光影统一」。</p>
+<p>例如刚刚通过左上角的主光源能判断画面属于侧光，那产品也是对应的侧光影，如果位置改变那光影也将发生改变，那光源的众多因素究竟会让物体产生哪些不同？下面一一细说。</p>
+<p><strong>照射方向</strong></p>
+<p>先说光源的照射方向，主要会影响物体的「明暗配比」，随着方向不同，物体明暗也在发生微妙的变化，同时还会影响画面的情感表达，所以照射方向是我们首先就要确定的因素，一般方向有7种。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387775" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-40.jpg" width="800" height="860" /></span></p>
+<p>而在实际运用时，常用方向是4种：前侧光、侧光、侧逆光、逆光，这4种我们分成2组来讲。（其他方向由于使用较少，就不展开）</p>
+<p><strong>前侧光/侧光。</strong>当光源的照射方向和视线方向成30°-60°夹角时称为前侧光；而当夹角成90°时则为侧光。如图所示，前侧光一般明多暗少；侧光则是明暗对半。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387776" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-41.jpg" width="800" height="217" /></span></p>
+<p>下面再看产品在前侧光及侧光下的光影呈现，主要区别在于明暗比例的变化，但变化很微妙，区分没有那么明显。这里我是用PS对产品进行的光影调整，因为日常工作中，PS处理光影才是大家的常用方法。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387777" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-42.jpg" width="800" height="440" /></span></p>
+<p>前侧光及侧光是电商设计中最常用的布光方式，这样不管人物还是产品，明暗比例都比较适中，既能保证物体的亮度，也能很好的凸显物体形态和质感，所以大量Banner的主体展示都会采用这种布光方式，下面看案例。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387778" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-43.jpg" width="800" height="1280" /></span></p>
+<p><strong>侧逆光/逆光。</strong>当光源的照射方向和视线方向成120°-150°夹角时称为侧逆光；而当夹角成180°时则为逆光。如图所示，侧逆光和前侧光刚好相反，物体是明少暗多；而逆光时的物体则几乎全是暗面。总体来说，不管侧逆光还是逆光，物体都以暗调为主。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387779" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-44.jpg" width="800" height="328" /></span></p>
+<p>再看看产品在侧逆光及逆光下的光影该如何处理，虽然产品看着有些灰暗，但场景却颇有氛围和调性。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387780" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-45.jpg" width="800" height="447" /></span></p>
+<p>这也是一组常见的布光方式，和前测光/侧光主要凸显物体的立体感不同，侧逆光及逆光主要是营造独特的场景氛围。</p>
+<p>其中要特别注意物体背光面的暗调程度，根据需求提亮或压暗，但多数时候都不会调的太暗，还是会保留物体该有的一切细节，避免色调过深而丢失了暗部层次，如下图所示，元素的背光面依然都清晰可见。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387781" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-46.jpg" width="800" height="1014" /></span></p>
+<p>逆光其实很有趣，当光照强烈、光质偏硬时，物体边缘就会出现一圈非常明显的高光，高光颜色和光源颜色一致，这就是「轮廓光」。光照强度越大、光质越硬，轮廓光就越明显。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387782" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-47.jpg" width="534" height="217" /></span></p>
+<p>轮廓光一直都是摄影师的最爱之一，如图所示，它能勾出人物轮廓，进而分离人物和背景，让影调富有变化，提升画面层次和细节。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387783" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-48.jpg" width="800" height="297" /></span></p>
+<p>在电商设计中也同样常见，例如下图中，仔细观察人物和产品的边缘，有些地方会有一层非常高亮的「轮廓光」，这处光影细节使画面更具形式感和设计感。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387784" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-49.jpg" width="800" height="461" /></span></p>
+<p>还有一种情形也颇有艺术感，如果物体完全背光，这时背景偏亮而物体正面又无光时，就会形成「剪影」效果。在摄影中这是一种很有趣的拍摄方式，如图所示，图中的人物剪影会给观众留下丰富的想象空间。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387785" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-50.jpg" width="800" height="274" /></span></p>
+<p>在电商设计中，剪影同样以表现人物或产品轮廓为主，突出整体造型，「剪影构图」会更强调画面的形式感传达。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387786" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-51.jpg" width="800" height="433" /></span></p>
+<p><strong>光源强度/距离</strong></p>
+<p>光源强度和距离会影响物体明暗的反差大小，强度越弱或距离越远则物体明暗反差越小；而强度越强或距离越近则明暗反差越大。</p>
+<p>原因很好理解，先说光源强度，当光源增强时，周围环境和物体的受光面会更亮，因此亮面和暗面的反差也会更大。还有距离同样如此，所有人造光源的光照都有衰减性，而光源强度随着距离拉近而升高，因而距离越近的光源，照射强度同样增强。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387787" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-52.jpg" width="800" height="442" /></span></p>
+<p>需要注意，还有一类光源是自然光，自然光比较特殊，如果在室外环境下，任何时候的光照（晴天、阴天等）都不会有衰减现象，因为作为光源的太阳太强，距离太远，衰减可忽略不计。</p>
+<p>但若在室内，阴天从窗外射入的自然光则会有衰减性，因为这时的光线以散射光为主，而这类光照要弱的多，再加上窗外射到室内的辐射范围有限，所以衰减性便会显现出来，如下图所示。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387788" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-53.jpg" width="800" height="289" /></span></p>
+<p>光源强度和距离对产品的明暗影响也同样如此：左图设定的光源强度弱、距离远，因而产品的明暗反差小；而右图设定的光源强度强、距离近，因而明暗反差更大。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387789" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-54.jpg" width="800" height="444" /></span></p>
+<p>如果选择明暗弱反差，为避免画面灰暗，我们需要提升画面的曝光值，使整体明亮。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387790" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-55.jpg" width="800" height="353" /></span></p>
+<p>在实际运用时，明暗弱反差降低了明暗对比，人物或产品都没有很深的阴影，整体呈现清晰、柔和，同时也弱化了结构和立体感，如图所示。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387791" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-56.jpg" width="800" height="539" /></span></p>
+<p>而明暗强反差则让人物或产品的明暗对比强烈，阴影明显，质感凸显，更强调整体结构和立体感，如图所示。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387792" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-57.jpg" width="800" height="529" /></span></p>
+<p><strong>光源软硬</strong></p>
+<p>喜欢摄影的朋友对这个词应该再熟悉不过，是指光的性质（简称「光质」）变化，分成硬光和软光。</p>
+<p>一般直射光属于硬光，而散射光和漫射光则属软光。光源软硬会影响物体的明暗过渡，硬光的光照直接，会让物体的明暗过渡更为生硬，有明显的阴影轮廓，突出表面结构和质感；而软光的光照柔和，能让物体的明暗过渡更为自然，无明显的阴影轮廓，突出表面层次和细节。</p>
+<p>另外在同等的光照强度下，由于软光的光线呈分散状，所以相比硬光，明暗反差也相对较小，如下图所示。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387793" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-58.jpg" width="800" height="418" /></span></p>
+<p>下面再展示产品在硬光和软光下的光影刻画，明显左图的影调更为硬朗。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387794" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-59.jpg" width="800" height="441" /></span></p>
+<p>在设计时，硬光常用来表现人物的强劲、硬朗和力量，常用于男性、运动、健身等类目，另外也能凸显产品的结构和造型，提升质感和立体感。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387795" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-60.jpg" width="800" height="462" /></span></p>
+<p>软光则侧重表现人物的柔美、清新和娇嫩，常用于少女、儿童等类目；而用于产品则会让其表面的层次细腻而丰富，更接近生活里的真实呈现。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387796" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-61.jpg" width="800" height="518" /></span></p>
+<p><strong>光源颜色</strong></p>
+<p>最后是光的颜色（简称「光色」），光色变化会影响物体的表面颜色，由于人们对色彩的敏感度很高，所以众多因素中，光色带来的影响最为直观。</p>
+<p>一般来说，不管物体的固有色如何变化，表面呈现的都是光线颜色，只是明暗程度会有不同。如图所示，当红光照在球体上，亮面会呈现红色；而绿光照射则会是绿色。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387797" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-62.jpg" width="800" height="387" /></span></p>
+<p>若产品被有色光照射时，受光面同样会出现对应的光色，这时画面会更生动，同时也提升了用户的视觉印象。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387798" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-63.jpg" width="800" height="440" /></span></p>
+<p>在日常设计中，使用有色光算是「戏剧化用光」的一种手法，如图所示，当画面出现光色变化和鲜明对比时，画面会更有冲击和氛围，也让场景带有强烈的情绪感。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387799" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-64.jpg" width="800" height="477" /></span></p>
+<p><strong>小结</strong></p>
+<p>以上便是影响物体明暗的4个光源因素：照射方向、光源强度/距离、光源软硬以及光源颜色。</p>
+<p>通过相关案例，细心的小伙伴该会发现，当照射光的这些因素发生改变时，不单单是物体表面的明暗会有变化，其实投影也有明显不同，确实物体的明暗和投影都是紧密相关，正因为投影太过重要，所以接下来单独介绍。</p>
+<h4><span class="auto_menu">物体投影</span></h4>
+<p>前面提到本文的「影」会涵盖两块内容：物体的明暗和投影。现在就说说投影，我们还是从最具代表性的漫射材质入手。</p>
+<p>何为投影？简单说就是光线照射不到的地方。它是光影表现中非常重要的一环，有了投影，环境中的物体才有真实感，并和环境产生呼应关系，给人带来现实感。</p>
+<p>而投影呈现，就属于典型的看着简单其实复杂的细节刻画，新手往往觉得投影不就是添加黑色的模煳椭圆吗，偶尔虽然可行，但这并不适用所有场景。设计师真正要做的，是能根据各类场景准确表现出让人舒服的物体投影。而物体投影，又分为表面投影和地面投影，投在物体表面的是表面投影；而物体投在地面的就是地面投影。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387800" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-65.jpg" width="800" height="322" /></span></p>
+<p>刚刚讲「照射光影响」时提过，当光源强度、软硬等因素改变时，物体的投影也会有明显不同，那接下来我们就看看物体投影到底受哪些因素影响？又会有哪些不同？刻画时考虑的要素都有哪些？相信看完会刷新大家对投影的认知，原来看似简单的投影竟藏有这么多细节！</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387801" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-66.jpg" width="800" height="134" /></span></p>
+<h5>1. 投影方向</h5>
+<p>首先要考虑投影的方向，这是大前提，它和光源位置密切相关，核心原则是投影永远在光源相对的一面，属于光源光线的延伸。如图所示，当画面有多个物体时，要确保所有影子都和光源的光线方向保持一致，若不一致画面就有违和感。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387802" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-67.jpg" width="800" height="327" /></span></p>
+<p>下面看案例，注意有时画面的光源位置并不明显，会在画面外，例如右图，这时就要事先设定一个光源位置，然后确保所有物体的投影都处在光源光线的延伸线上，这样才合情合理。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387803" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-68.jpg" width="800" height="402" /></span></p>
+<h5>2. 投影轮廓</h5>
+<p>确认方向后就要开始绘制投影的轮廓，这是投影表现中最难的一步，很多画面的投影看着很假往往就是轮廓出了问题，一个优秀设计师要能准确呈现出物体投在地面的真实形状，而不是所有投影都是一个圆形或矩形。那怎样才能准确的勾出外形呢？我们需从以下3点来考虑：基本外形、发散程度和外形起伏。</p>
+<p><strong>基本外形</strong></p>
+<p>是指物体在光源照射下投在平面上的基础形状，关于形状绘制有章可循，但需用到我们在高中「立体几何」中所掌握的空间感。</p>
+<p>总体来说，是先把光源的「位置点」和物体的各个「顶点」连成直线，再把每条直线延长至所在平面，这样就能得到多个「交点」，最后把平面投影外围的所有「交点」连接起来便会得到准确轮廓，如下图所示。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387804" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-69.jpg" width="800" height="650" /></span></p>
+<p>上方是单个长方体的投影外形，可能这样的简单物体还比较好呈现，那复杂物体呢？其实用同样方法即可，如下图所示，我们先用上述方法将2个长方体的投影轮廓分别呈现，再合并就好。只是这时的空间更复杂，顶点也更多，我们要有足够的眼力和耐心。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387805" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-70.jpg" width="800" height="656" /></span></p>
+<p>需要说明，在单一光源下，当画面有多个物体组合出现时，所有物体的投影都是相加关系。即是说当多个投影有交集时，这些交集区域不会产生更深的叠加投影。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387806" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-71.jpg" width="800" height="363" /></span></p>
+<p>但以上只针对单一光源产生单一投影时的情况，若画面有多个光源并让物体产生了多个方向的投影时，此时投影便成叠加关系。</p>
+<p>如下图所示，示意图和案例中都有2个主光源，因此物体产生了2个相交投影，投影的交集区域最深，而非交集区域由于光源的相互影响则会变浅。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387807" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-72.jpg" width="800" height="471" /></span></p>
+<p>最后通过投影基本形的绘制方法我们还能得出一个结论：影子长短和光源光线的入射角有关。入射光线和垂直地面的法线夹角就是入射角，入射角越大投影越长，入射角越小则投影越短。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387808" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-73.jpg" width="800" height="438" /></span></p>
+<p>准确的投影轮廓能让产品呈现更真实，也更有美感，下面展示2个优秀案例，当然这些的前提是要光源为硬光，只有硬光才会有清晰的投影轮廓。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387809" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-74.jpg" width="800" height="530" /></span></p>
+<p><strong>发散程度</strong></p>
+<p>接着要考虑投影外形的发散程度，「发散」是说投影轮廓离物体越远则开口越大。所有物体的投影都有发散现象，只是程度不同，这和光源的面积大小及光源距离有关。</p>
+<p>先说光源大小，光源面积越大则发散程度越小；而面积越小则发散程度越大。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387810" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-75.jpg" width="800" height="485" /></span></p>
+<p>再说光源距离，距离物体越远则发散程度越小；而距离越近则发散程度越大。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387811" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-76.jpg" width="800" height="243" /></span></p>
+<p>例如太阳距离地球就非常遥远，因此室外物体的影子扩散程度会非常小，像下图中的树木，投影都接近于平行。</p>
+<p>其实距离远近是光源非常重要的一个分析维度，它影响的因素有很多，不光是投影发散，还会影响投影的深浅和虚实，后面再细说。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387812" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-77.jpg" width="800" height="415" /></span></p>
+<p>一般在电商设计中，扩散程度较小的投影用的更多，毕竟生活中这类投影更加常见，呈现出来的影子也会比较自然和真实。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387813" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-78.jpg" width="800" height="532" /></span></p>
+<p>扩散程度较大的投影虽然用的不多，但使用恰当则会让画面充满张力和氛围，使人眼前一亮，如下图所示。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387814" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-79.jpg" width="800" height="512" /></span></p>
+<p><strong>外形起伏</strong></p>
+<p>投影的轮廓绘制还需考虑外形起伏，「起伏」是说投影不光要有二维平面的形状变化，还要根据地面凹凸进行纵向的起伏调整。</p>
+<p>其中地面凸起主要指「墙面」；而地面凹陷则指「阶梯」；最后还有地面凹凸不平的「肌理」呈现。</p>
+<p>当地面凸起形成类似「墙面」结构时，如果物体的影子长度大于墙面间距时，就会出现「投影上墙」现象，这是因为墙面也会出现一块光线照射不到的区域，如下图所示。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387815" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-80.jpg" width="800" height="363" /></span></p>
+<p>在设计时，如果投影刚好出现在产品和墙面的中间区域时，最好都设计成「投影上墙」的布光效果，这样两个元素间（产品和墙面）就会产生呼应和联动，整体感更强。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387816" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-81.jpg" width="800" height="474" /></span></p>
+<p>当地面凹陷出现类似「阶梯」结构时，如果物体的影子长度大于阶梯转角的间距时，就会出现「投影下沉」，如图所示。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387817" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-82.jpg" width="800" height="502" /></span></p>
+<p>这里要注意一个关键点，上图中的主光源出现在物体背面，属于侧逆光，这时「阶梯结构」受光照影响也会出现暗面，和投影一样，都属于光线照不到的区域，因此在阶梯转角的背光面，不会出现物体投影，有时设计师会顺手将物体投影叠加在转角暗面，其实是错误呈现。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387818" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-83.jpg" width="800" height="321" /></span></p>
+<p>我们在观察下生活中的真实投影，下方是我随手拍的一张屋顶照片，上午9点，栏杆在屋顶投下了长长的影子，可以清晰看到，圈中挡板的背光面并没有栏杆投影，就像被断开了一样。这是因为该区域都是背光面，不可能出现投影叠加的反常现象。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387819" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-84.jpg" width="800" height="349" /></span></p>
+<p>因此我们在设计时要额外注意，千万不要犯这种「投影叠加」的常识性错误，仔细观察下方作品中方块转角的背光面，都不会出现产品投影的叠加现象。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387820" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-85.jpg" width="800" height="420" /></span></p>
+<p>有时地面还会以「肌理」方式呈现，像常见的草地、水面、沙滩等等，如图所示，它们的表面都是凹凸不平，因此投影外形也要根据肌理起伏进行形态变化，这样才不会显得投影「太假」。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387821" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-86.jpg" width="800" height="466" /></span></p>
+<p>虽然投影的轮廓绘制我是从3小点依次展开，但实际设计时应该一气呵成，根据画面的光源同时确定投影外形、发散程度以及起伏，最终是为营造出物体在环境里的真实存在感。</p>
+<h5>3. 投影颜色</h5>
+<p>有了投影的「形」，现在我们要确定投影的「色」。很多新手在添加投影时不管周围的环境色是什么，都会给影子直接填充黑色，最后导致影子在画面中格格不入，像是多余的存在。</p>
+<p>其实投影呈黑色的情况非常少见，由于受到周围漫射光的影响，大部分时候都是跟着地面颜色走，这是总体原则。具体是会先给投影填上地面色，并将混合模式设成「正片叠底」，再将透明度调至合适数值即可。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387822" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-87.jpg" width="800" height="318" /></span></p>
+<p>仔细观察下方案例，投影并非「黑色」，都是深色调的地面色，这样投影才不至于突兀。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387823" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-88.jpg" width="800" height="399" /></span></p>
+<h5>4. 投影深浅</h5>
+<p>既然投影都是深色调的地面色，那到底「多深」才合适呢？这就需要我们调整投影的深浅。关于投影深浅，需从2个维度来调整：整体深浅和相对深浅。</p>
+<p><strong>整体深浅</strong></p>
+<p>整体深浅是指投影的整体明暗，和上节讲的「物体明暗」一样，都是受光源强度和距离的影响。其中「深浅」是说环境明暗的反差大小，因此所谓的「投影深」其实是由于环境的明暗反差很大，反之亦然。</p>
+<p>如下图所示，光源强度越强则投影的明暗反差越大（投影深）；而光源强度越弱则投影的明暗反差越小（投影浅），因此投影的整体深浅是相对周围环境而言的。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387824" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-89.jpg" width="800" height="431" /></span></p>
+<p>另外整体深浅还受光源的距离影响，由于光线有衰减性，光源距离越近则投影的明暗反差越大，而距离越远则投影的明暗反差越小。例如下方案例中，明显左图的明暗对比更强，投影更深。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387825" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-90.jpg" width="800" height="449" /></span></p>
+<p><strong>相对深浅</strong></p>
+<p>相对深浅是指投影自身的明暗变化，即是说投影本身的明暗分布并不一致，哪怕整体很深的投影，但本身还是会有相对的深浅变化，具体则看投影所处区域的开阔程度：开阔程度越小投影越深；而开阔程度越大则投影越浅。</p>
+<p>一般情况下，靠近物体底部的区域开阔程度最小，接受的环境光（散射光/反射光）也最少，所以投影最深；而离物体最远的区域开阔程度最大，能接受的环境光也最多，所以投影最浅。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387826" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-91.jpg" width="800" height="406" /></span></p>
+<p>综上所述，整体是遵循着「近深远浅」的原则，投影靠近物体的区域更深；而远离物体的区域更浅。该理论看似复杂其实简单，下面我再用一张示意图进一步说明。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387827" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-92.jpg" width="800" height="607" /></span></p>
+<p>若要表现投影的「相对深浅」，我们要重点呈现3个区域：</p>
+<ul>
+<li>1区的开阔程度最小，几乎没有光照，因此色调也最深，这是投影中的最暗区域，称为「暗角区」；</li>
+<li>2区的开阔程度一般，接受的光照较少，因此色调偏深，为「本影区」；</li>
+<li>而3区的开阔程度最大，接受的光照也最多，因此色调最浅，为「半影区」。</li>
+</ul>
+<p>这3个区域会沿着投影轮廓呈直线分布，如下图所示，在实际设计时，投影的暗角区往往是单独的薄薄一层（作为点缀，面积不能太大），而本影区和半影区则会合并成另一层（色调由深到浅的渐变层），这样刻画产品投影时就是用这2个图层来呈现。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387828" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-93.jpg" width="800" height="377" /></span></p>
+<p>再看电商作品中，物体的投影刻画也是分2层呈现，注意物体底部的暗角区色调最深。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387829" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-94.jpg" width="800" height="499" /></span></p>
+<h5>5. 投影虚实</h5>
+<p>投影呈现的最后还要调整「虚实」：「虚」是说投影的边缘模煳；而「实」是说投影的边缘清晰。和深浅一样，虚实也分整体虚实和相对虚实。</p>
+<p><strong>整体虚实</strong></p>
+<p>投影的整体虚实是和光源软硬及距离有关，先说光源软硬，上节曾说过「光源的软硬会影响物体的明暗过渡」，那现在还可加一点，光源的软硬同时也影响着物体的投影虚实。</p>
+<p>当光源为硬光时，光照直接，这时投影整体偏实、边缘清晰、过渡生硬；而当光源为软光时，光照柔和，光线分散，这时投影整体偏虚、边缘模煳、过渡柔和。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387830" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-95.jpg" width="800" height="487" /></span></p>
+<p>除了光源软硬，还有光源距离，光源距离越近则投影越虚；而距离越远则投影越实。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387831" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-96.jpg" width="800" height="504" /></span></p>
+<p>这是因为光源的距离越近，相交的光线就越多，这时光线的相交区域也越大，如下图所示，这样投影便会形成更加柔和的边缘。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387832" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-97.jpg" width="800" height="246" /></span></p>
+<p>从上图能看到，光源的距离变化对物体的光影影响很大，不但影响了投影虚实，同时还决定了投影的扩散程度和整体深浅，这和我们之前讲的一致。</p>
+<p>一句话总结：光源的距离越近，投影的扩散程度越大、明暗反差也越大、边缘则越模煳；而光源的距离越远，投影的扩散程度越小、明暗反差也越小、边缘则越清晰。</p>
+<p>在实际运用时，「实影」会让产品的明暗过渡生硬，暗部细节缺失，对投影的轮廓要求也高，总体较难掌握，因此使用相对较少。但「实影」却有着更强的表现力和冲击力，形式更加鲜明，富有张力。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387833" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-98.jpg" width="800" height="506" /></span></p>
+<p>而「虚影」则用的更多，它让物体呈现的更加细腻和自然，由于投影的边缘模煳，所以对轮廓要求也低，无需非常精准，哪怕结构复杂的物体，也无需勾勒出具体形状，因此若对投影表现没有把握，可以优先「虚影」，易操作也易出效果。例如下方案例中，不管什么样的物体，在软光的照射下，投影都是「模煳一片」，就算轮廓异常也不易察觉。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387834" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-99.jpg" width="800" height="518" /></span></p>
+<p><strong>相对虚实</strong></p>
+<p>投影除了整体的虚实变化，自身也会有相应的虚实过渡，这和「相对深浅」类似，整体遵循着「近实远虚」原则：投影离物体越近，则边缘越清晰；若离物体越远，则边缘越模煳。</p>
+<p>注意虚实过渡其实是个非常柔和的变化过程。之所以出现「越远越虚」，是因为越远的区域受到的环境光（散射光/反射光）影响越大。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387835" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-100.jpg" width="800" height="404" /></span></p>
+<p>当然在软光照射下，有些画面也会忽视投影的「近实远虚」，将投影直接处理成整体模煳，其实也不太违和，因为「近实远虚」算是一个非常微妙的细节呈现，不影响全局，但若能做到，画面层次将更加细腻，如下图所示。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387836" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-101.jpg" width="800" height="527" /></span></p>
+<p><strong>小结</strong></p>
+<p>以上就是关于投影呈现的5大要素：投影方向、轮廓、颜色、深浅及虚实。但要注意设计不是物理学，设计师也不只是为了还原现实，因此很多时候不用太较真。例如有些画面的光源并没那么明确，这时投影有些地方刻画的差不多即可，出现一点失真也没关系，关键是不要让人觉得画面别扭和违和。</p>
+<p><strong>实战案例</strong></p>
+<p>还记得前面讲「明暗原则」时画的立方体和球体吗？下面我们用刚刚讲的知识给它们逐步加上投影，物体只有同时加上明暗和投影，才算真正融进了环境里。首先还是先明确光源情况：来自画面的左上方，强度中等，软硬适中，白光。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387837" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-102.jpg" width="800" height="663" /></span></p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387838" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-103.jpg" width="800" height="637" /></span></p>
+<p>在刚刚「物体明暗」的实战案例中，我们曾给2款产品添过「物体明暗」和「投影」，但投影并未细讲，现在再逐步剖析一下产品的投影刻画，其实和刚刚讲的立方体如出一辙，同样先设定好光源：来自画面左上方，强度较大，软硬适中，白光。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387839" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-104.jpg" width="800" height="641" /></span></p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387840" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-105.jpg" width="800" height="659" /></span></p>
+<p>前面展示的都是相对简单的示意案例，现在将以2款产品作为主视觉，分别用侧光和逆光来设计2张不同风格的Banner，通过完整案例让大家了解两种布光方式的不同以及物体对应的光影刻画。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387841" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-106.jpg" width="800" height="941" /></span></p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387842" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-107.jpg" width="800" height="1808" /></span></p>
+<p>通过2个综合案例，大家能看到不同光源所带来的感受也会不同：侧光使物体呈现的更加真实和立体；而逆光则营造出一种独特的场景氛围，因此我们要根据需求选择合适布光。</p>
+<p>另外刻画投影时需要考虑的因素也有很多，例如影子的轮廓、深浅及虚实等等，但不用生搬硬套，还是前面那句话：核心是不要让人觉得别扭与违和。</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>又又是一篇很长的文章，信息量很大，我们围绕「光影」依次讲了光源类型、物体明暗以及物体投影，当然都是从漫反射材质入手，相对简单也有代表性，其实常见材质中还有镜面反射材质和透明/半透明材质，而这2类则要复杂很多，也较难呈现，这里就不展开。但不管材质如何变化，正如本文开篇所说，「光影统一」都是核心原则，什么样的光就会得到什么样的影，虽然听着简单，但当中要做的细节其实很多。</p>
+<p>可能耐心读完，有些小伙伴会觉得很多内容过于理论和枯燥，好像不用这么麻烦也能做出差不多的「光影」，其实这种想法还是比较浅显的。「光影」和构图、色彩不同，它是现实中客观存在的一种现象，若表现过于感性就会导致画面违和、不真实，所以本文的大量内容都是在理性推导后得出的结论，总之「理性学习」是培养「正确设计感」的必经之路。最后为方便大家梳理逻辑和内容，下面附上本文的内容结构和知识框架。</p>
+<p><span class="img-zoom"><img alt="万字干货！帮你深度掌握设计中的「光影」知识点" class="alignnone size-full wp-image-387844" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gh-20200906-109.jpg" width="800" height="1116" /></span></p>
+<p>作者文章推荐：</p>
+<p>[link https://www.uisdc.com/space-display]</p>
