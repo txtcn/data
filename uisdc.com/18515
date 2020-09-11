@@ -1,4 +1,4 @@
-➜淘汰了5个方法，梳理出这份后台列表设计避坑指南（上）
+➜淘汰了5个方案，梳理出这份后台列表设计避坑指南（上）
 https://www.uisdc.com/list-design	57761
 <p>列表页是构成后台使用界面的重要组成之一，聚合了众多信息并提供操作入口。区别于小而美的C端产品列表，后台系统的用户希望列表的内容又多又全面（表格），但在操作时又能支持快速定位（搜索，包含筛选）、准确处理（操作）。这需求貌似有些矛盾，但在很多场景下，例如客服在接待客户时窗口时间极其短暂，既要全面获取相关信息，又要快速应对解决客户问题。因此这需求不仅合理而且是刚需。</p>
 <p>列表页由「搜索」、「表格」和「操作项」三大基本块组成。刚才提到的矛盾点也是由这三个模块之前的互相影响和制约（后面会详细阐述）。我们当初由于在设计时忽视了特定场景细节，以及生搬硬套了一些看起来很美很简约的交互样式，没有处理好这三个模块内部以及之间的关系，被用户抱怨说不好用。这篇文章就将「搜索」、「列表」、「操作」三块问题进行分析和定位，盘点一下那些被淘汰掉的解决方案，给大家提供一份避坑指南。</p>
@@ -6,7 +6,7 @@ https://www.uisdc.com/list-design	57761
 <h4><span class="auto_menu">搜索</span></h4>
 <h5>1. 问题定位</h5>
 <p>搜索功能的主要问题是，条件特别多。如果全部条件堆叠在屏幕上，会严重挤占列表的展示空间，使得首屏留给列表的空间所剩无几。用户在寻找具体搜索条件时，仿佛大海捞针，耗时费力。</p>
-<p><span class="img-zoom"><img alt="淘汰了5个方法，梳理出这份后台列表设计避坑指南（上）" class="alignnone size-full wp-image-388227" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gx-20200910-1.jpg" width="1080" height="648" /></span></p>
+<p><span class="img-zoom"><img alt="淘汰了5个方案，梳理出这份后台列表设计避坑指南（上）" class="alignnone size-full wp-image-388227" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gx-20200910-1.jpg" width="1080" height="648" /></span></p>
 <p>造成搜索条件多的原因，一方面是由于数据信息量大，维度多。在非精准搜索的场景下，少量的条件不足以筛选出特定内容。另外列表由多个职责权限的用户共用，展示的是各权限下条件合集。</p>
 <p>设计方案要能同时满足下面3个需求：</p>
 <ul>
@@ -15,30 +15,30 @@ https://www.uisdc.com/list-design	57761
 <li>将展示区域更多留给表格——避免搜索区域占用太多屏幕空间。</li>
 </ul>
 <p><strong>淘汰方案1：把搜索条件按照权限隐藏</strong></p>
-<p><span class="img-zoom"><img alt="淘汰了5个方法，梳理出这份后台列表设计避坑指南（上）" class="alignnone size-full wp-image-388228" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gx-20200910-2.jpg" width="1080" height="908" /></span></p>
+<p><span class="img-zoom"><img alt="淘汰了5个方案，梳理出这份后台列表设计避坑指南（上）" class="alignnone size-full wp-image-388228" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gx-20200910-2.jpg" width="1080" height="908" /></span></p>
 <p>例如职责A的用户展示搜索条件1、2、3、4，职责B的用户搜索条件1、2、5、6。此方案确实能同时满足①②③，但需要非常细致的配置工作。若组织架构发生变动，维护的工作量很难预估。</p>
 <p><strong>淘汰方案2：将搜索条件放置在列表左侧</strong></p>
-<p><span class="img-zoom"><img alt="淘汰了5个方法，梳理出这份后台列表设计避坑指南（上）" class="alignnone size-full wp-image-388229" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gx-20200910-3.jpg" width="1080" height="648" /></span></p>
+<p><span class="img-zoom"><img alt="淘汰了5个方案，梳理出这份后台列表设计避坑指南（上）" class="alignnone size-full wp-image-388229" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gx-20200910-3.jpg" width="1080" height="648" /></span></p>
 <p>这个方案试图满足需求③，希望保证首屏的展示主体是列表，但其实列表的横向展示空间被挤占了。如果列表很宽，那么浏览的时候就需要频繁的左右滑动。若是设备不支持左右滑动（不包含触摸板），用户只能频繁拖动滚动条，想一想这体验就很糟糕。</p>
 <p>另外搜索区域的展示布局由块面转变为条状，需要向下滚动（可能是多次）才能完整预览所有条目，降低了搜索效率。</p>
 <p><strong>淘汰方案3：默认显示少数搜索条件，全部条件转移至弹窗内呈现</strong></p>
-<p><span class="img-zoom"><img alt="淘汰了5个方法，梳理出这份后台列表设计避坑指南（上）" class="alignnone size-full wp-image-388230" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gx-20200910-4.jpg" width="1080" height="648" /></span></p>
+<p><span class="img-zoom"><img alt="淘汰了5个方案，梳理出这份后台列表设计避坑指南（上）" class="alignnone size-full wp-image-388230" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gx-20200910-4.jpg" width="1080" height="648" /></span></p>
 <p>这样设计后，看起来也能满足①②③——默认状态下的列表确实清爽了不少。</p>
 <p>但如果用户需要多次切换搜索条件的组合方式时，需多次打开+关闭弹窗，大大增加点击次数。这种方案还需要注意一点：搜索条件和结果展示之间的具有强关联性，需要在特定区域展示当前生效的搜索条件。</p>
 <p><strong>淘汰方案4：隐藏输入框标题，使用占位符提示搜索内容</strong></p>
-<p><span class="img-zoom"><img alt="淘汰了5个方法，梳理出这份后台列表设计避坑指南（上）" class="alignnone size-full wp-image-388231" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gx-20200910-5.jpg" width="1080" height="908" /></span></p>
+<p><span class="img-zoom"><img alt="淘汰了5个方案，梳理出这份后台列表设计避坑指南（上）" class="alignnone size-full wp-image-388231" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gx-20200910-5.jpg" width="1080" height="908" /></span></p>
 <p>某个同学提出这个方案，原因是标题在输入框上方，隐藏标题可以使搜索条件排布的更紧密，给列表腾地方。这种设计其实挺常见，但前提是输入框数量极少，且为用户所熟知。但后台系统有些输入框需要选择「是」或「否」，选择后用户只凭「是」或「否」，可能回想不出这个选项对应的是什么搜索条件。</p>
 <p><strong>淘汰方案5：缩短输入框列宽，从而增加每行的列数，减少行数</strong></p>
-<p><span class="img-zoom"><img alt="淘汰了5个方法，梳理出这份后台列表设计避坑指南（上）" class="alignnone size-full wp-image-388232" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gx-20200910-6.jpg" width="1080" height="908" /></span></p>
+<p><span class="img-zoom"><img alt="淘汰了5个方案，梳理出这份后台列表设计避坑指南（上）" class="alignnone size-full wp-image-388232" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gx-20200910-6.jpg" width="1080" height="908" /></span></p>
 <p>这样可以减少筛选项的行数，目的也是在首屏给列表腾地方。但填写至输入框的文本只能展示前面几个字，影响预览和理解。例如在地区的输入框中只能显示「浙江省杭州市…」无法看到「区」、「街道」等更详细的重要信息。</p>
 <p><strong>最终方案：用户可设置展示哪些选项，且通过账号记录设置结果</strong></p>
-<p><span class="img-zoom"><img alt="淘汰了5个方法，梳理出这份后台列表设计避坑指南（上）" class="alignnone size-full wp-image-388233" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gx-20200910-7.jpg" width="1080" height="648" /></span></p>
+<p><span class="img-zoom"><img alt="淘汰了5个方案，梳理出这份后台列表设计避坑指南（上）" class="alignnone size-full wp-image-388233" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-gx-20200910-7.jpg" width="1080" height="648" /></span></p>
 <p>这个方案较全面的解决了问题，每个用户都可以根据自己的需求和习惯决定展示哪些选项，甚至选项排序。这个方案满足了①②③的需求，但这个需要后端开发的支持。</p>
 <h4><span class="auto_menu">One More Thing</span></h4>
 <p>如果后台系统的数据加载时间比较久（不管是数据量大还是开发方式导致），尽量避免采用输入/选择后即执行搜索的交互样式。这可能导致每次输入/选择后用户都需要被迫等待。如果选择N个搜索条件，等待时间要乘以N。</p>
 <p>[link https://www.uisdc.com/list-design-basic-method]</p>
 <p>欢迎关注作者的微信公众号：「能呆书房一整天」</p>
-<p><span class="img-zoom"><img alt="淘汰了5个方法，梳理出这份后台列表设计避坑指南（上）" class="alignnone size-full wp-image-336836" src="https://image.uisdc.com/wp-content/uploads/2019/09/uisdc-tb-20190923-10.jpg" alt="如何应对复杂B端表单设计？这次给你两个案例（下）" /></span></p>
+<p><span class="img-zoom"><img alt="淘汰了5个方案，梳理出这份后台列表设计避坑指南（上）" class="alignnone size-full wp-image-336836" src="https://image.uisdc.com/wp-content/uploads/2019/09/uisdc-tb-20190923-10.jpg" alt="如何应对复杂B端表单设计？这次给你两个案例（下）" /></span></p>
 ➜设计师说的高级感是什么样子？来看阿里设计师的解读！
 https://www.uisdc.com/sense-of-luxury	60337
 <p>现在的年轻人，夸人的词汇越来越少，设计师们听到最多最玄的夸奖就是「高级」但什么才是高级，怎么做才能高级，为什么你高级而他不高级，今天就请设计师乐可柯为我们讲讲他眼里的高级。</p>
