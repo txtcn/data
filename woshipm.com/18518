@@ -291,3 +291,97 @@ http://www.woshipm.com/it/4177630.html	13303
 <p>来源：https://mp.weixin.qq.com/s/k6gRfaHzZBXBJkhFYQbp0Q</p>
 <p>本文由 @<span id="profileBt" class="rich_media_meta rich_media_meta_nickname">AlibabaDesign</span> 授权发布于人人都是产品经理，未经作者许可，禁止转载。</p>
 <p>题图来自 Pexels，基于 CC0 协议</p>
+➜B端UI界面交互基础组件——按钮
+http://www.woshipm.com/pd/4175418.html	23457
+<blockquote><p>编辑导语：在前面一篇文章中，带着大家一起学习了B端“文本”类组件UI设计规范，其中包括标题/标签、内容描述、备注、组合文本等组件；并从“文本”组件的需求场景、内容布局以及交互方式等方面对以上组件进行了详尽的规范描述<a href="http://www.woshipm.com/pd/4169342.html" target="_blank" rel="noopener">《B端UI界面交互基础组件-文本》</a>，今天我们介绍B端“按钮”组件的相关交互规范。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4178796" src="http://image.woshipm.com/wp-files/2020/09/x84SeHV0JOjawZHwaKi8.jpg" alt="" width="900" height="420" /></p>
+<h2>一、常规按钮</h2>
+<h3>1. 需求场景</h3>
+<p>提供用户通过鼠标点击触发事件操作。</p>
+<h3>2. 内容与布局</h3>
+<p>1）按钮根据设计需要，可分为纯图标按钮、纯文本按钮、图标+文本按钮。</p>
+<p>纯图标按钮，通过鼠标hover上按钮后展示提示信息。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/DXTTamezVQPLIRUpIO3w.png" alt="" width="227" height="87" /></p>
+<p>纯文本按钮：纯文本按钮文字居中对齐。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/anuPCPqSUrpbjyPF3DfI.png" alt="" width="109" height="38" /></p>
+<p>图标 + 文本按钮：一般按钮内容区域左侧展示图标，右侧展示按钮文本。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/5ezcXPZVqSS0AKKN1qvy.png" alt="" width="133" height="156" /></p>
+<p>2）当按钮区域宽度不够时允许按钮内省略部分文本内容使用&#8221;&#8230;&#8221;表示。</p>
+<p>3）根据需要利用Tips提供操作辅助信息，如：</p>
+<ul>
+<li>纯图标按钮如无特殊原因，必须提供Tips提示。</li>
+<li>【建议】因长度原因出现省略文本的按钮，提供Tips提示。</li>
+</ul>
+<p>4）按钮具体在界面中的使用无强制布局定义，建议同一界面、同一内容分区、同一应用逻辑尽量保持一致。</p>
+<p>5）同类按钮横向布局时，高度保持一致。</p>
+<p>无按钮文本，宽度保持一致。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/z2Td43GnV9aRMi2y0d9F.png" alt="" width="110" height="49" /></p>
+<p>按钮文本内容长度建议相差不超过8个字段，且横向布局空间充裕时，按钮宽度保持一致。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/9eoVU29ilx9BTPllbG4i.png" alt="" width="306" height="80" /></p>
+<h3>3. 交互行为</h3>
+<p>1）可用状态下鼠标移入按钮相应区域时，需要变更鼠标样式，同时按钮对应的文字、图形或边框出现明显的视觉变化，如颜色、粗细、大小。</p>
+<p>如下图所示：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/y63A672Dx19fFLGFNCQO.png" alt="" width="407" height="155" /></p>
+<p>2）在不可用状态下，需要通过视觉变现出不可用的状态，例如置灰，如下图所示：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/TjN4jl027Ps7ZoErvcim.png" alt="" width="203" height="130" /></p>
+<p>3）鼠标移入不可用状态的按钮时，需要用Tips简要提示不可用的原因：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/InBXmZWGAzBldtUuVgZb.png" alt="" width="308" height="92" /></p>
+<p>4）点击按钮后执行相应操作。</p>
+<p>5）在操作等待过程中，如操作执行未返回结果前，当前按钮不再下发新的操作指令。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/Jk95T1ag3Y9ZO2oJ2iWZ.png" alt="" width="507" height="169" /></p>
+<h2>二、开关按钮</h2>
+<h3>1. 需求场景</h3>
+<p>某功能特性需要进行操作控制，并进行状态示意。</p>
+<p>一般只有A、B两种状态。</p>
+<p>需要节约显示区域。</p>
+<h3>2. 内容与布局</h3>
+<p>开关按钮征途布局应该与“常规按钮”保持一致。</p>
+<p>按钮示意初始状态为当前按钮所控制行为的当前态——即如果当前按钮控制行为“开启”，则开关按钮的显示为“开启”；一般用于两种状态进行切换。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/mmWybxvxjuaIW829ow4Z.png" alt="" width="110" height="32" /></p>
+<h3>3. 交互行为</h3>
+<p>按钮基础交互遵循常规按钮的交互规则。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/VDvXZyrUt3QWUWdsOYlq.png" alt="" width="149" height="76" /></p>
+<p>点击按钮执行该按钮事件，同时切换按钮状态（状态切换根据配置序列进行循环切换），完成状态切换后，状态图标切换为当前状态对应图标。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/wnRlyJWdc7KMUifwh3Hq.png" alt="" width="218" height="81" /></p>
+<h2>三、多状态切换按钮</h2>
+<h3>1. 需求场景</h3>
+<ul>
+<li>某功能特性需要进行操作控制，并进行状态示意。</li>
+<li>有多种状态或类型切换。</li>
+<li>需要节约显示区域。</li>
+</ul>
+<h3>2. 内容与布局</h3>
+<ul>
+<li>按钮征途布局与常规按钮保持一致。</li>
+<li>按钮示意初始状态为当前按钮所控制行为的当前状态。</li>
+<li>两种状态以上时，需要提供辅助选择功能按钮。</li>
+</ul>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/sHIhIhj9CR6qmGsEQgXH.png" alt="" width="110" height="146" /></p>
+<h3>3. 交互行为</h3>
+<p>1）按钮基础交互规则遵循常规按钮交互规则。</p>
+<p>2）鼠标移入响应区域提示切换为下一状态说明。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/HgRZhv7WQH5kyrrUmeV0.png" alt="" width="308" height="94" /></p>
+<p>3）点击按钮执行该按钮事件，同时切换按钮状态（状态切换根据配置序列进行循环切换），切换完成后，状态图标更改为当前状态对应图标。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/ULMc4XLW0uf1hBVgHVzc.png" alt="" width="305" height="98" /></p>
+<p>4）多种状态支持按照按钮按序切换状态，支持右图标点击下拉选择对应状态，完成状态切换后，状态图标切换为当前状态对应图标。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/wGPmTvQCQIj6pCSut4Z5.png" alt="" width="650" height="145" /></p>
+<h2>四、组合按钮</h2>
+<h3>1. 需求场景</h3>
+<ul>
+<li>用于功能触发，按钮区域根据不同的操作区域响应不同的操作。</li>
+<li>在使用过程中需要对按钮主体进行关联操作。</li>
+</ul>
+<h3>2. 内容与布局</h3>
+<p>1）按钮根据设计需要，响应区域一般分为主响应区域与按钮操作区域，如图所示：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/ACNhlc22eRhfTDeT13Ag.png" alt="" width="185" height="132" /></p>
+<p>2）按钮区域的数量允许有多个。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/EWelfQm9YrTgWGzvshQz.png" alt="" width="182" height="129" /></p>
+<p>3）除了上述规定外，主响应区与操作区对应规范参考“常规按钮”内容。</p>
+<h3>3. 交互行为</h3>
+<p>1）当鼠标移入主响应区域或操作按钮区域，应分别进行行为反馈。</p>
+<p>不同响应区域基础交互规则以常规按钮为准。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/gd0xdjofF9IxvgUzYsN7.png" alt="" width="584" height="94" /></p>
+<p>关于B端基础交互组件“按钮”的相关分享就到此，后面我们介绍“下拉菜单”的相关交互规范。</p>
+<p>&nbsp;</p>
+<p>本文由 @云计算产品汪 原创发布于人人都是产品经理，未经许可，禁止转载</p>
+<p>题图来自 unsplash，基于 CC0 协议</p>
