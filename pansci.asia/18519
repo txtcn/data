@@ -1,0 +1,30 @@
+➜独自搞定电脑与通讯的理论基础，却罕为人知的天才——夏农│《电脑简史》数位时代（四）
+https://pansci.asia/archives/191130	7200
+<p><strong><span style="font-size: 22px;line-height: 31px;font-weight: bold;color: #3c4b89">在<a href="https://pansci.asia/archives/189227">【齿轮时代】的最后一章</a>提到，MIT 教授凡纳尔．布希除了发明微分分析仪之外，也直接或间接地对电脑发展做出重要贡献。其中一项间接贡献就是来自他所指导的学生夏农 (Claude E. Shannon)。这位不世出的天才虽然大众知名度不高，但事实上，现代电脑与通讯的发展，都始于他凭一己之力提出的理论基础。</span></strong></p>
+<blockquote class="wp-block-quote"><p>本文为系列文章，上一篇请见：<a href="https://pansci.asia/archives/190884">电脑运算的基础——布林代数，是麼搞出来的？│《电脑简史》数位时代（三）</a></p></blockquote>
+<h2>担任布希助理，操作微分分析仪，奠定电路基本功</h2>
+<p>夏农自小就喜欢搞电子实验，他还曾利用铁围篱和八百公尺外的邻居互传电报。1936 年，夏农以数学和电机双学位自密西根大学毕业后，进入 MIT 电机研究所就读，同时在布希的实验室当研究助理。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="284" height="400" src="https://pansci.asia/wp-content/uploads/2020/09/c78578e5639ed8b9123bfad47fd7f671.jpg" alt="" class="wp-image-191131" srcset="https://pansci.asia/wp-content/uploads/2020/09/c78578e5639ed8b9123bfad47fd7f671.jpg 284w, https://pansci.asia/wp-content/uploads/2020/09/c78578e5639ed8b9123bfad47fd7f671-21x30.jpg 21w" sizes="(max-width: 284px) 100vw, 284px"><figcaption>夏农(Claude Shannon, 1916-2001)。图：<a href="https://upload.wikimedia.org/wikipedia/commons/9/99/ClaudeShannon_MFO3807.jpg">WIKI</a></figcaption></figure></div>
+<p>当时微分分析仪是唯一能算高阶微分的计算机，所以实验室不时会接受教授或其它研究单位的委託，为他们计算微分方程式。夏农的工作便是针对他们的问题，调整微分分析仪的设定，包括大大小小的连桿、滑轮等机械零件，以及近百个控制电动马达的继电器。</p><div class="pansc-content"></ins>
+<script async type="text/javascript" src="//cdn.holmesmind.com/js/init.js"></script></div>
+<p>夏农相当乐在其中，看着微分分析仪按照自己的设定运转，最后自动画出答案，总令他心情愉悦。而最令他着迷的，就是在背后控制所有动作的继电器。继电器就像闸门，掌控电流的进出，虽然只有开与关两种状态，但串成迴路后，就能以特定的顺序开开关关，就能让微分分析仪解出各种微分方程式。</p>
+<h2>于贝尔实验室实习，悟出电子迴路与布林代数的关联性</h2>
+<p>第二年暑假，夏农到美国电话电报公司 (AT&amp;T) 的贝尔实验室实习。当时贝尔实验室正在开发纵横式自动交换机，也是利用继电器来控制电话线路的搭接。夏农操作了一学年的微分分析仪，对继电器的运作已了然于胸，儘管电话交换机是截然不同的机器，其中的迴路也更密集複杂，他却能看出两者在运作上有共通之处。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="330" height="495" src="https://pansci.asia/wp-content/uploads/2020/09/d3253ab5cdb6861c1761f6be6c710eea.jpg" alt="" class="wp-image-191132" srcset="https://pansci.asia/wp-content/uploads/2020/09/d3253ab5cdb6861c1761f6be6c710eea.jpg 330w, https://pansci.asia/wp-content/uploads/2020/09/d3253ab5cdb6861c1761f6be6c710eea-20x30.jpg 20w" sizes="(max-width: 330px) 100vw, 330px"><figcaption>1924年的电话交换机尚需人工操作。图：<a href="https://en.wikipedia.org/wiki/Telephone_exchange#/media/File:Switchboardof1924.jpg">WIKI</a></figcaption></figure></div>
+<p>无论迴路大小，都是由许多继电器与电路所组成，不同的连接方式决定电流如何流动，进而让机器做出不同动作。如果两个继电器在一条电路上前后串联，就必须两个继电器都打开，电流才能通过。如果电路一分为二，各自经过一个继电器再合而为一（这称为并联），就只要有一个是开的，电流就能继续往前了。</p>
+<p>这只是电路的基本常识，每个工程师都知道，但就是没有人像夏农那样，看出电子迴路与布林代数的关联。</p>
+<p>夏农是以数学和电机双学位毕业，对布林代数自然不陌生，但要从实体的电路联想到抽象的逻辑关係，真的要有超乎常人的洞见。在他眼中，继电器只有开、关两种状态，恰可用布林代数中的 1 与 0 两种数字表示。继电器串联相当于逻辑运算的「且」(AND)，并联则是相当于「或」(OR)，不管是什麼迴路，都可以用布尔代数描述。</p>
+<p>暑期实习结束后，夏农回到学校，立即向导师布希提及自己的想法。布希深感兴趣，鼓励他以此做为硕士论文的题目。</p>
+<h2>史上最重要的硕士论文，堪称资讯时代的大宪章</h2>
+<p>没几个月，夏农就在 1937 这一年完成划时代的论文，题为〈继电器与交换电路的符号分析〉(A Symbol Analysis of Relay and Switching Circuits)，开宗明义即宣告：「任何电路都可以用一组方程式表示，……。事实证明，其计算方式完全等同于符号逻辑所用的命题运算。」</p>
+<p>夏农先以简单的双开关电路为例，说明如何用布林代数标示串联与并联的接法，并列出基本公理与交换律、结合律、……等运算法则。接着他再进一步分析不同型式的複杂电路，证明也都可以用布林代数表示。最后夏农强调这套方法不只可以用于现有的机器，还可以解决各种问题。</p>
+<p>他写道：「事实上，任何运算只要是用『若』、『或』、『且』等字眼在有限的步骤内描述，都可以用继电器自动算出来。」</p>
+<p>为了佐证这项主张，他提出三种全新的应用，并附上自己设计的电路图。第一个是电路的简化；原本使用二十个元件的电路，经由逻辑演算找出等效的表达式后，可以将元件减少为十四个。第二个与第三个应用都是他的创新发明，分别是使用五个按键开关的电子密码锁，以及二进位的电子加法器（严格来说仍不算电子式，因为继电器的开关仍是利用电磁铁的机械动作）。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="560" height="114" src="https://pansci.asia/wp-content/uploads/2020/09/7e6df55d26720ae62ae738be6ea633b4-560x114.gif" alt="" class="wp-image-191133" srcset="https://pansci.asia/wp-content/uploads/2020/09/7e6df55d26720ae62ae738be6ea633b4-560x114.gif 560w, https://pansci.asia/wp-content/uploads/2020/09/7e6df55d26720ae62ae738be6ea633b4-350x71.gif 350w, https://pansci.asia/wp-content/uploads/2020/09/7e6df55d26720ae62ae738be6ea633b4-768x157.gif 768w, https://pansci.asia/wp-content/uploads/2020/09/7e6df55d26720ae62ae738be6ea633b4-30x6.gif 30w, https://pansci.asia/wp-content/uploads/2020/09/7e6df55d26720ae62ae738be6ea633b4-940x192.gif 940w" sizes="(max-width: 560px) 100vw, 560px"><figcaption>电路的逻辑闸。图：<a href="https://en.wikipedia.org/wiki/Boolean_algebra#/media/File:LogicGates.GIF">WIKI</a></figcaption></figure></div>
+<p>这篇论文于第二年公开发表后，立即引起巨大的迴响，甚至被誉为「应该是本世纪最重要、最值得注意的硕士论文」，后来《科学美国人》杂志也称它是「资讯时代的大宪章」。</p>
+<h2>电路设计化繁为简，电脑从此迈向数位时代</h2>
+<p>的确，夏农这篇论文影响深远。原本错综複杂的电路图改用布林代数表示后，就可以在实际建造机器之前，清楚计算出执行的结果，大幅减少尝试错误所耗费的时间与成本。除此之外，还能如夏农所示范的，找出更精简的电路方案。科技产品因为设计效率提升、製造成本下降，才得以更加迅速地推陈出新。</p>
+<p>计算机的发展也受惠于夏农的创见，才开启了数位时代（他革命性的通讯理论会在第三部另外介绍）。</p>
+<p>夏农所提出的逻辑电路虽然以继电器为范例，但其实这套抽象法则具有普遍性，任何有开关两种状态的元件皆可套用。因此即使后来继电器被真空管取代，然后真空管又被电晶体淘汰，无论电脑的硬体零件怎麼换、电路图多複杂，都还是基于夏农所提出的逻辑闸。</p>
+<p>夏农已经指出一条通往未来之路，很快地，这条路上就将出现打造现代电脑的各路好汉……。</p>
+<p>The post <a rel="nofollow" href="https://pansci.asia/archives/191130">独自搞定电脑与通讯的理论基础，却罕为人知的天才——夏农│《电脑简史》数位时代（四）</a> appeared first on <a rel="nofollow" href="https://pansci.asia">PanSci 泛科学</a>.</p>
