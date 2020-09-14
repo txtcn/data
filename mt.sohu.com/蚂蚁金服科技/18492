@@ -1,0 +1,207 @@
+➜蚂蚁集团「共享智能技术」战略全布局
+http://www.sohu.com/a/413795611_99940985	36603
+<blockquote>
+<p style="text-align: justify;"><span style="font-size: 16px;">究竟共享智能与联邦学习有何不同？在共享智能落地金融等多个重要领域的过程中，蚂蚁集团又遇到过哪些挑战，留下了怎样的宝贵经验？</span></p>
+</blockquote>
+<p style="text-align: justify;"><span style="font-size: 16px;">究竟共享智能与联邦学习有何不同？在共享智能落地金融等多个重要领域的过程中，蚂蚁集团又遇到过哪些挑战，留下了怎样的宝贵经验？</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">隐私性跟可用性难以兼顾，让人工智能落入了鱼与熊掌不可兼得的尴尬境地。 </span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">当前，业界解决隐私泄露和数据滥用的数据共享技术路线主要有两条：一条是基于硬件可信执行环境（TEE：Trusted Execution Environment）技术的可信计算，另一条是基于密码学的多方安全计算（MPC：Multi-party Computation）。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">针对数据共享场景，包括联邦学习、隐私保护机器学习（PPML）在内的多个技术解决方案纷纷出炉。蚂蚁集团提出了共享智能（又称：共享机器学习），结合TEE与MPC两条路线，同时结合蚂蚁自身业务场景特性，聚焦于金融行业的应用。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">究竟共享智能与联邦学习有何不同？在共享智能落地金融等多个重要领域的过程中，蚂蚁集团又遇到过哪些挑战，留下了怎样的宝贵经验？</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">为此，雷锋网《AI金融评论》邀请到了蚂蚁集团共享智能部总经理周俊做客线上讲堂，详解蚂蚁集团共享智能的技术进展和落地实践。</span></p>
+<p style="text-align: justify;"><span><strong><span style="font-size: 16px;">以下为周俊公开课全文，AI金融评论做了不改变原意的编辑：</span></strong></span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">在业界做隐私保护技术研发之前，是通过协同学习方法来实现多方信息融合，联邦学习就是其中一种。近年来，学术圈相应的证明发现此类方法的一些安全性问题，尤其是直接共享梯度，本质上存在一些安全性问题。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">我们先来看一下去年在一个学术顶会上比较火的Paper引发的讨论。Paper里面的方法也比较好理解，实际上就是近几年大家保护隐私的方法之一：就是不传原始的数据，只传共享的梯度，把梯度汇聚到一起，然后再汇集到模型。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">这种方法在前几年一直都比较火，无论是联邦学习还是其他的协同学习方式。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">工作里面证明了，如果有恶意者在模型训练过程中拿到真正的梯度之后，就可以反推出数据中的特征（x）和标签（y）。</span></p>
+<p style="text-align: justify;"><img src="http://p9.itc.cn/q_70/images03/20200819/86a0b351b2064e86855d3b65e700d69d.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: justify;"><span style="font-size: 16px;">这里举了两个例子，能够看到，尤其是在图像领域，通过梯度本身是可以反推出原始输入的这张图像和原始的Y。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">右边的例子，是在NIPS网站上抠的一些文字，刚开始是随机生成的，迭代到第30轮的时候，可以看到从梯度里恢复出来的一个样本，跟原始样本是非常接近的，只有个别词有一定差异。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">从学术上能够看到，在这种协同学习中，以前大家认为安全的共享梯度方式，本身并不是很安全，我们给它取了一个标题叫做非可证安全。</span></p>
+<p style="text-align: justify;"><img src="http://p8.itc.cn/q_70/images03/20200819/2ebb49e4580a4a8da7a26a793c0a35c3.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">在这之后，DLG方法有了改进。这个方法首先通过推导可以精确拿到Label本身，有了Label再去反推X就更简单了。从公式可以看到，它能更容易反推出原始数据的X。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">从它的三个数据集可以看到，改进版DLG相对于原始的DLG在攻击的准确率提升非常大。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">阿里巴巴在去年也做过一个更加贴合实际情况的例子：假定双方有两个数据拥有者，它们的特征空间一样，样本空间不一样，我们称之为水平切分。</span></p>
+<p style="text-align: justify;"><img src="http://p3.itc.cn/q_70/images03/20200819/77f641addead4337bcb8b898cdcf8f23.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">按照联邦学习的协作方式，计算本地的梯度，发到服务器，平均之后更新本地的模型，看起来比较安全——实际上，由于A和B精确知道每一轮梯度，它其实可以反馈出很多相关信息。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">满足一定条件的情况下，尤其是逻辑回归，可以构造出这样的一组方程组，当方程组的个数大于这个数据的特征维度，方程组是可以解出来的。因此也可以反推出原始的数据。</span></p>
+<p style="text-align: justify;"><img src="http://p3.itc.cn/q_70/images03/20200819/a64a5e5fe5ce42179c773f1027a14b50.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">从右下角的结果中，能够看到我们攻击出来的结果，跟原始特征非常接近。这说明，不论是从学术圈里面假定的setting，还是真实情况中，目前这种共享梯度的协作方式，也包括联邦学习，本身都有比较大的安全隐患。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">做保护隐私的机器学习方法，本身还是需要结合其他方法去弥补它的不足，才有可能让方法本身更安全，真正保护用户隐私。</span></p>
+<p><strong>如何“精修”机器学习处理方法各环节</strong></p>
+<p style="text-align: justify;"><span style="font-size: 16px;"><strong><span style="font-size: 16px;">数据预处理：</span></strong></span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">我们自己所做的机器学习处理方法，从数据预处理到模型训练再到模型推断，都是遵循这样切实保护用户隐私的思路，将MPC、TEE或其他技术，跟现在技术相应结合，确保中间每一步的隐私都能得到更好地保护。</span></p>
+<p style="text-align: justify;"><img src="http://p5.itc.cn/q_70/images03/20200819/af909063ffad457bb848518aefb0312d.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">以数据预处理中的降维为例，假定数据在水平切分的情况下，大家样本空间不一样，两方希望能够把数据能降低一个维度，降维之后的结果能够送到后面的机器学习模型进行相应训练，这种方法能较好提升效率。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">同时，模型的泛化能力会有进一步提升，结合MPC里同态加密和秘密分享的技术，加固PCA（Principal Components Analysis，主成分分析），使得它能真正保护数据安全性。</span></p>
+<p style="text-align: justify;"><img src="http://p0.itc.cn/q_70/images03/20200819/d3c4d62df6d24005a67df48583d9d105.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">此处有几步核心操作：</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">首先是计算均值。如果是在同态加密的情况下，需要密态空间要进行计算；如果是秘密分享的方法，则需要将原始数据拆成多个秘密分片，再配合起来算出均值。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">其次是计算协方差矩阵，最后再算出相应的特征值、特征向量，就得到了降维后的X′。同态加密和秘密分享的技术，跟PCA做相应结合，就能比较好的拿到相应结果。</span></p>
+<p style="text-align: justify;"><img src="http://p2.itc.cn/q_70/images03/20200819/51ebb9deabf6487eb9a6f4d8e2209104.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">从结果可以看出，相比于各方单独算一个PCA再拼凑结果，我们的方法精度提升比较大。同时，它跟原始PCA方法相比，在后面都接相同的机器学习模型的情况下，几乎没有精度损失的情况。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">除了降维以外，还有很多类似的工作可做，比如共线性检测，隐私求交（PSI）等。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">当然，安全的方法计算时间会更长一些，因为天下没有免费的午餐，要保护隐私，肯定有相应的计算和通信成本在里面。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;"><strong><span>模型训练：</span></strong></span><span style="font-size: 16px;"></span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">DNN模型是现在大家用的比较多的。这里分别列出来业界三种典型做法。</span></p>
+<p style="text-align: justify;"><img src="http://p6.itc.cn/q_70/images03/20200819/3efaf7a961ed43b6b37b893f2a0241ae.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">左边是传统的基于明文的神经网络训练方法。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">中间是完全基于MPC的方法，有很多非线性运算，可以做到可证安全，但速度会慢几个数量级，效率本身也不高。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">右边是MIT提出来的方法，比较快，但它的Label也放在服务器里计算，安全性有一定问题；而且它没有考虑特征之间的相关性，精度上有一定损失。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">发现这些问题之后，我们提出了一个创新的体系。</span></p>
+<p style="text-align: justify;"><img src="http://p2.itc.cn/q_70/images03/20200819/36cb618157d54e288408fd00d34e287f.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">首先，为了考虑特征之间的相关性，我们在底层利用MPC技术去做跟隐私数据相关的一部分模型计算。计算完之后，再把跟隐层相关的复杂计算，放到一个Semi-honest 服务器（半诚实服务器）去完成其他运算。 </span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">这服务器里可以利用现有的各种计算资源，比如TF、PyTorch，甚至可以利用一些比较灵活的处理框架。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">Label的部分还是放到数据持有者本身，全程能确保没有哪一部分隐私会被泄露。</span></p>
+<p style="text-align: justify;"><img src="http://p3.itc.cn/q_70/images03/20200819/4289d0537c6b4bc984b825f7db82c0f0.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">Semi-honest 服务器会拿到中间的隐层结果，我们可以通过一些对抗学习方式去防止服务器获取中间信息。这一方法尽可能做到隐私、准确率、效率三者之间的平衡。此外，我们还可以使用贝叶斯学习的方法（SGLD）去替换传统的SGD（随机梯度下降），从而更好保护训练过程中的隐私。</span></p>
+<p style="text-align: justify;"><img src="http://p0.itc.cn/q_70/images03/20200819/7fb2f075501f4c5f8b3b1432bf53ad34.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">SGLD是在贝叶斯神经网络中应用较广泛的方法，可以看作是加噪版本的SGD。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">以前很多方法都在探讨它的泛化能力，在这里我们发现了它另外的好处：因为训练过程中添加了噪声，所以可以更好的保护隐私，尤其是在对成员攻击（Membership attack）的情况。比如有时医疗领域想知道自己的数据有没有被这个模型所用。</span></p>
+<p style="text-align: justify;"><img src="http://p2.itc.cn/q_70/images03/20200819/a897812321e54a528973b1b493f0508c.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">我们在评估Membership攻击效果时，定了一个成员隐私的loss，这个loss就是为了看SGLD到底能不能保护成员隐私，我们通过大量的实验发现SGLD是能较好阻止Membership attack。</span></p>
+<p style="text-align: justify;"><img src="http://p9.itc.cn/q_70/images03/20200819/55559ff973a5454ba4a6925c16dcce87.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">具体来讲，我们在两个数据上面做了相应的测试，无论是在Table1还是在Table2里，尤其是在Attack Metric上，SGLD跟普通的方法相比，能够大大降低成员攻击的准确率。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">同时，我们也发现用它也能很好提升模型的鲁棒性， SGLD和变种，比前面单独的不加噪版本在Test上面的Metric会更好一些。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">因此，我们在训练时也把传统的SGD换成了SGLD，能进一步提升安全等级，在兼顾三方面要求后，具有比较高的安全性和高效性。</span></p>
+<p style="text-align: justify;"><img src="http://p6.itc.cn/q_70/images03/20200819/820c0cb78fba41cca22dd6d781c6ce55.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">刚才讲到，在服务器里，可以很好利用现有的TensorFlow或Pytorch，从右边这个代码可以看出来，该方法是非常用户友好的。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">其次，在服务器里面，对于网络结构这部分，设计可以非常灵活，也可以设置任意的网络结构，充分发挥中心服务器的计算力。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">通过训练过程中引入的SGLD，也就是加噪的SGD，再加上Adversary loss，使得哪怕是服务器试图做恶，也无法由此推断出更多相应信息，安全等级进一步提升。</span></p>
+<p style="text-align: justify;"><img src="http://p4.itc.cn/q_70/images03/20200819/cb9ebb8013804c52a205f5570f263288.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">我们跟业界的几个方法也对比过，比如2017年 MIT的 SplitNN和现在最好的SecureML。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">性能上，（我们的方法）比这俩更好一些。从这两个数据集来看，训练时间上，由于我们使用了中间服务器，训练时间相对于纯MPC的方法（SecureML）大大降低，但相比SplitNN训练时间还是要长，因为我们安全等级要高。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">总体而言，我们的方法能较好地实现效率、安全性和准确率的折中。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;"><strong><span style="font-size: 16px;">模型预测：</span></strong></span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">在模型训练上，涉及到前向、反向的计算，非常耗资源，它跟现有的一些隐私计算技术结合之后，对效率本身还是有比较大的影响。所以有很多工作都在考虑怎么做模型推理。在模型预测时，既要保护云上的模型，也要保护客户手里的数据。</span></p>
+<p style="text-align: justify;"><img src="http://p1.itc.cn/q_70/images03/20200819/07b31b143e26410180bb8c60c87c4d52.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">我们这个方法跟原来不一样，之前可能有很多工作局限于支持一部分的激活函数。比如有时都无法支持sigmoid或max pooling，有的干脆只保护客户端的Input data，但不保护服务器上的模型。 </span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">还有极端情况是完全用MPC做计算，单次模型预测用时会非常长。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">另外，现在MPC尚不能完全精确计算一些比较复杂的函数，只能做一些展开或近似计算，精度上也有所损失。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">我们希望能够提出一种方式，尽可能在效率、精度、安全性方面能达到比较好的折中，保护服务器和用户的隐私。</span></p>
+<p style="text-align: justify;"><img src="http://p9.itc.cn/q_70/images03/20200819/253b955b01b54bb9b0c3b9c712454d72.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">方法采用了两点，一是前面介绍的贝叶斯神经网络，因为它里面可以引入权重的不确定性，这能让服务器上的精确模型不被拿到。 </span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">第二，无论是在数据保护还是在客户端上，用同态加密的机制去保护。</span></p>
+<p style="text-align: justify;"><img src="http://p8.itc.cn/q_70/images03/20200819/a782147ba999404cb47dff79ca67d1e1.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">具体是把DNN的计算拆分成两级，一是首先通过采样的方法拿到W，有了W之后，客户端传过来的加密Input，通过线下的运算出Z，这也是密态的。密态下的Z在返回到客户端解密后，在客户端上就能拿到最后的a。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">这样的方式，既保护了服务器上的模型，也保护了客户端上面输入数据的效果，起到了比较好的trade-off。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">通过迭代式的同态加密计算，既保护了用户隐私，也保护了密态下的服务器隐私。</span></p>
+<p style="text-align: justify;"><img src="http://p0.itc.cn/q_70/images03/20200819/743a005f050f4554b8d1862d7e84a0e2.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">我们的方法，因为大量的复杂运算很多是返回到客户端上面，在非密态的情况下进行计算，所以Latency比较低。它还能支持任意的激活函数，可以比较好地扩展到RNN和CNN。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;"><strong><span style="font-size: 16px;">典型应用案例：POI上的推荐</span></strong></span></p>
+<p style="text-align: justify;"><img src="http://p8.itc.cn/q_70/images03/20200819/53281d91b7b042c195d34334fb8b4773.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">原来的做法，不论是非常详细的profile数据，还是一些用户跟POI的交互数据，用户的所有相关数据都要被推荐系统所收集。一些隐私模型，比如用户偏好也都是被推荐系统所保留。所以推荐系统有很大的机会窥探到用户相关隐私。</span></p>
+<p style="text-align: justify;"><img src="http://p2.itc.cn/q_70/images03/20200819/a530f742c7e549aeb6f94a295a263ae2.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">我们的思路是：首先，比较敏感的用户隐私数据和模型，能够在用户本地，而不能上传到服务器的推荐系统这里。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">第二，我们还是会收集用户和POI的交互数据，通过本地化差分隐私的方式注入噪音，这样传上去的是一个带噪音且能够保护隐私的版本。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">通过这样的方式产生动态的POI，再通过去中心化的梯度下降方法学习能保护隐私的FM模型。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">通过各式各样的安全聚合方式使隐私得到保护，这种方法我们称为PriRec。</span></p>
+<p style="text-align: justify;"><img src="http://p2.itc.cn/q_70/images03/20200819/964352067f3d4af885b259c35af64c96.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">我们在两个数据集上做了比较，在Foursquare数据上，因为用户特征只有两三个，我们的方法比FM稍弱；但切换到真实的场景数据，因为这里面有大量的用户和POI数据，能看到我们这个方法比FM起到更好的效果。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">之所以会更好，原因就是用户和POI的数据，往往具有聚焦性，而去中心化的学习方法恰恰可以很好的利用这一点。在PriRec中，服务器上也没有拿到隐私的数据和模型，所以能保护隐私。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">实际上，推荐搜索广告方面都有类似应用；金融科技领域的风控也有类似的方法，就是对现有的机器学习方法进行加固，产生一个更好的、更具有隐私保护的版本，达到AI助力业务效果的目的。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;"><strong><span style="font-size: 16px;">目前业界的四种技术</span></strong></span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">包括MPC，可信执行环境，差分隐私和联邦学习。</span></p>
+<p style="text-align: justify;"><img src="http://p2.itc.cn/q_70/images03/20200819/d19d7a35e27949478f041e4760207239.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">在多方安全计算时，理想情况是有一个大家都完全相信的可信服务器，所有人把所有东西都放上去计算，再把结果分发给大家。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">现实是找不到完全的可信服务器，还是需要很多协作方，协同完成函数f的计算。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">当然，大家希望在计算的过程当中既能够保护Input privacy，也能够保护计算的privacy，如果同时能保护Output privacy最好。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">MPC的提出，是希望能够保护Input privacy和Compute过程当中的privacy。</span></p>
+<p style="text-align: justify;"><img src="http://p6.itc.cn/q_70/images03/20200819/6c0df503166741fd966b8f1705893ede.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">这里面有几个典型技术，一是秘密分享（Secret Sharing），密码学里一个比较老的技术。早在七八十年代就已经有相应的论文发表。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">举个例子：有两个人想协同计算他们求和的结果，每个人会把自己的数拆成多个share，share加起来等于他们自己，但任何人拿到其中一个的share是没有什么物理含义的。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">通过share的交互，双方最后拿到7和6的结果（上图右侧），这其实已经完成加法的求和运算，既保护了Input的隐私，也保护了中间计算的隐私。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">这几年在工业界里，随着算力的丰盛，以欧美为代表的很多公司都在用这样的技术，比如着名的开源SPDZ等。</span></p>
+<p style="text-align: justify;"><img src="http://p7.itc.cn/q_70/images03/20200819/1aba3f2100814feb8a63a9d03834e840.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">二是姚期智院士在1989年提出来的混淆电路。它主要是通过两个大的building block构建，一个是混淆的真值表，一个是遗忘传输，通过这两种方式完成协同计算，解决了着名的百万富翁问题。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">秘密分享因为它需要通过大量交互迭代，通信代价一般较高。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">混淆电路中间是通过大量电路运算，电路的门个数较高时，效率相对来说没有那么高。</span></p>
+<p style="text-align: justify;"><img src="http://p1.itc.cn/q_70/images03/20200819/2db72ff7ac5d47309a58f3b200a95bee.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">其次还有同态加密方法，过程中是在密态下计算完的，之后才解密得到相应结果。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">同态加密和秘密分享在一些比较复杂的函数上，是没有办法进行相应计算的，要通过一些近似计算的方法才能拿到相应的结果。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">由于算力的逐步提升，和一些基础突破，这两年工业界对MPC也用得越来越多。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">三个技术有各自的优缺点，组合使用也能产生一个相对理想的结果。</span></p>
+<p style="text-align: justify;"><img src="http://p4.itc.cn/q_70/images03/20200819/fd45130bb9304d4791aaf672f158c713.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">可信执行环境，相当于是一个硬件级的密码箱。把加密数据放到密码箱里之后，OS操作系统都没有办法打开密码箱，只有持有相关密钥的人才能在里面进行运算，就是所说的可信区域。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">这个方法本身是非常安全，但很依赖于硬件，目前做得比较好的是英特尔的SGX。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">前面所介绍的 MPC、TEE，都是可以保护Input privacy和compute privacy ，但没能很好地保护output privacy。</span></p>
+<p style="text-align: justify;"><img src="http://p8.itc.cn/q_70/images03/20200819/b1379d897c684e199860f6edd3e3c608.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">在差分隐私（Differential Privacy）之前有很多别的方法去处理数据中的隐私，比如像各种匿名化方法，除了K匿名，还有一些L-diversity等方法保护隐私。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">但随着大数据时代的到来，通过链接一些别的数据，能够反推出来单人ID，匿名化基本上没有什么用。所以差分隐私之前的一些技术，现在来看是不安全的。对Output或Release的数据集，都在慢慢切换到差分隐私的技术上来。</span></p>
+<p style="text-align: justify;"><img src="http://p3.itc.cn/q_70/images03/20200819/4fe925bee3264899a24aca4d71a3372e.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">这个技术本身较好地考虑到实用性和隐私性的折中，隐私肯定有代价，要么牺牲一定的实用性，要么有计算代价。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">差分隐私是在数据中加噪声，对实用性有所影响，尤其是在数据本身也不大的情况下，对结果的影响较大。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">差分隐私提供了一种量化的方法，能测量到底加多少噪声，能够取得比较好的trade-off。</span></p>
+<p style="text-align: justify;"><img src="http://p0.itc.cn/q_70/images03/20200819/a8462052080546d78b3d60881d6cfa33.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">差分隐私从从概率学和信息论得到一个隐私保护的bound，实操不是很复杂，就是在数据中添加相应的噪声，并且通过参数控制噪音的大小。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">当然，它本身怎么使用、怎么设置privacy budget，有着非常复杂的考量机制，但原理本身不算特别复杂。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">这个技术在提出来之后，因为它有比较好的理论保障，所以在学术界、工业界很多人也都在用，能比较好地保护Output privacy，跟前面的技术也有比较好的结合。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">Local 差分隐私类似多方，就是自己本身加上噪声，再上传到一个地方。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">它在工业界遇到的一个较大问题是，因为要在里面加噪声，所以模型精度受影响。 </span></p>
+<p style="text-align: justify;"><img src="http://p0.itc.cn/q_70/images03/20200819/cfe9376c9da04624a1229a0815588bba.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">联邦学习，谷歌在2014年就已经在内部开始做这样的技术，它本身是解决to C的问题，所以想解决几十亿的设备间如何协同、安全地利用数据训练模型。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">当然设备之间可能不满足独立同分布的概念，硬件之间差异非常大，所以会导致可靠度的差异也很大，有时在训练的时候自己就下线了。</span></p>
+<p style="text-align: justify;"><img src="http://p0.itc.cn/q_70/images03/20200819/41138c3a40d84be0b47aaa415162438f.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">在2016-2017年，联邦学习有相应论文发表。目前用的算法也是从服务器上拉了一个模型,做完更新，delta发给服务器做average并更新模型。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">直接这么做肯定会有一些问题，所以paper里面做了大量的优化，能够让通信成本和训练的稳定性都有比较大的提升。</span></p>
+<p style="text-align: justify;"><img src="http://p5.itc.cn/q_70/images03/20200819/4dcbdabe00064ded8d6dea12c2bf674c.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">谷歌在2017年期间已经发现了，原来把梯度直接汇聚到服务器上的协同学习方法也不是很安全；如果要保护隐私，必须得结合MPC的技术。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;"><strong><span style="font-size: 16px;">几种技术的比较和解决方案</span></strong></span></p>
+<p style="text-align: justify;"><img src="http://p1.itc.cn/q_70/images03/20200819/52e9b25bd6224660b0516adf09735918.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">我们从自己的角度做了一张总结表格，像MPC能保护好Input privacy和计算过程中的 privacy；但对于Output privacy，它的保护能力比较弱。效率上，因为牵涉到大量密码学技术，代价不低。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">TEE跟MPC类似，把它们理解成密码学偏软件和偏硬件的实验版本。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">差分隐私就可以较好保护Output privacy，计算代价相对不高，实用性有一定损失，尤其是local 差分隐私加了某种噪声之后，只能用于某些统计学运算。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">联邦学习无法很好地保护Input privacy和Output privacy，好处在于效率相对高。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">站在从业者的角度来看，这些技术还是需要一个端到端的设计，结合各方技术优势提供相应的方案，达到最后总体的效果。</span></p>
+<p style="text-align: justify;"><img src="http://p3.itc.cn/q_70/images03/20200819/bee4f3a1f835452ea234743e2914f84d.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;"><strong><span style="font-size: 16px;">我们结合了这样三个方案：</span></strong></span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">首先，MPC底下分为这么几层，用前面所讲的秘密共享、OT或其他密码学的原语。为什么要实现这么多密码学的协议？就是希望能够利用每种协议的优缺点，有更加好的组合，在合适的地方选用合适的技术。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">第二层，我们希望把底下比较偏密码学的原语，再做一层封装，这上面提供一些机器学习经常要用的运算，比如比较、求交、矩阵加法、求max的运算。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">上面再抽象成一个DSL语言，开发算法时，不用直接面对底层密码学原语，速度相对会更快。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">另外，因为我们参考的是机器学习里面的DSL，整个语法也跟机器学习类似，机器学习的创业者就能用比较低的成本，切换到共享智能技术上，进行算法开发。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">同时，我们也提供编译器，它能够将用户对上层开发的算法，自动选择最优的安全算子，实现安全的程序，进而实现整个MPC里面的一些方法。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">TEE方面，因为TEE本身的SDK也不是那么友好，并且单机的SGX 的运算能力并不是特别强，为此我们做了一些改进：</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">组建安全可信集群，以扩展算力；做了很多防止各种攻击的方法，在安全性上有个更好的工业级框架出来，便于开发者能够基于这些核心能力开发出各种算法。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">上面是比较偏差分隐私或矩阵变换的方法。这种方法还是有比较好的适用场合，比如前面讲的Output privacy里面用到差分隐私，或者是MPC和TEE里面在Output 的地方加上差分隐私，本身有比较好的互补的作用。技术之间也可以两两去组合。 </span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">每个方案都有各自的优缺点，做隐私保护相关的工作，还是需要通过精心的工程设计，算法设计加上密码学原语，才能够端到端地保护数据输入、计算过程、数据输出等隐私，从而达到相应的目的。</span></p>
+<p><strong>蚂蚁共享智能的落地经验</strong></p>
+<p style="text-align: justify;"><img src="http://p7.itc.cn/q_70/images03/20200819/e546a0db4a5b4d4a9efa550011038815.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;"><strong><span style="font-size: 16px;">合作案例：江苏银行</span></strong></span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">去年上半年，江苏银行希望使用MPC实现联合风控，模型的产出完全放在江苏银行，自主可控。构建出联合模型之后，模型分数给到银行，由它去做独立的风控判断，之后再产生结果给到最后的申请判断。整个模型的效果在测试的时候发现提升了50%左右。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">同样，我们还在支付的联合风控、联合营销以及联合保险也进行了相应的落地。</span></p>
+<p><strong>AI研究前沿动态和未来展望</strong></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">目前看来，现在这几个技术之间彼此有互补，但端到端的系统怎么在各个环节去利用合适的技术，去产生合适的效果？怎么样把这样一个系统在超大规模的数据上做相应的实践？在不影响效率的情况下，将隐私保护的等级能够升级到更高的级别？ </span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">我觉得还需要有整个业界需要投入更多的资源，更长的研发投入，更长的耐心，才有可能在一些更关键的技术上面产生更好的结果。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">同时也需要整个AI圈子加上密码学的硬件再加上工程系统，一起努力才有可能在一些点上面取得真正的大的突破，才有可能使得整个隐私计算的效率能够再提升1~2个数量级。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">目前隐私计算效率本身，相比非隐私保护的AI，在速度甚至精度上都会有一定的损失。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">所以，怎么样去设计更好的方式，除了在技术本身的突破，也需要有更多的场景去打磨技术，才能发现的问题，逐步让技术往前走。</span></p>
+<p style="text-align: justify;"><img src="http://p5.itc.cn/q_70/images03/20200819/e230433cf7b6445096d67255daa32564.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">从三大维度来看：</span></p>
+<p style="text-align: justify;"><span><strong><span style="font-size: 16px;">第一</span></strong></span><span style="font-size: 16px;">，从算法维度看，无论是在学术界还是工业界，目前的这几个方法</span><strong><span style="font-size: 16px;">割裂程度比较明显</span></strong><span style="font-size: 16px;">。比如TEE跟差分隐私，虽然他们之间有交集但并不多。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">TEE里也有很多技术要去突破，比如目前TEE的内存只有128兆，相比普通系统还是比较小的。现在数据量比较大，尤其是在一个图像数据上，怎么在这么大的数据情况下完成隐私计算，是难度比较大的一个问题。</span></p>
+<p style="text-align: justify;"><span><strong><span style="font-size: 16px;">第二</span></strong></span><span style="font-size: 16px;">，由于内存比较小，为了保护安全和隐私，所以在</span><span style="font-size: 16px;"><strong>很多运算效率跟目前正常操作有一定差距。</strong></span></p>
+<p style="text-align: justify;"><span><strong><span style="font-size: 16px;">第三</span></strong></span><span style="font-size: 16px;">，SDK的友好性方面，因为比较偏硬件，还涉及到大量的密码学等机制，比如远程认证，</span><span style="font-size: 16px;"><strong>对于很多从业人员而言还是有相应的学习成本。 </strong></span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">当然，业界很多开源的、在原生的TEE上封装的一些SDK，各方面有一些提升，可扩展性本质上有些突破，但突破不是特别大，意味着很多东西不能拿来直接在工业界使用。所以TEE也还需要整个社区有更多的投入。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">TEE上面，现在很多都在做支持中小规模的算法训练和预测。怎么让更大的规模、更新的算法能够被集成进来，这也是需要业界有更多投入。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">差分隐私技术本身的理论性质比较优美，但在实用性上有一定损失。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">我们提到过，对于utility loss以及差分隐私输出来的结果，因为毕竟是在原始的数据上面加了一定的噪声，这个数据相对来讲会不会有一定的损失度？</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">如果完全是local 差分隐私的方式，在很多场景下面就没有办法用，怎么让差分隐私能够再更进一步，更贴合现在AI这个情况？</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">目前看到，差分隐私在很多数据分析应用非常广泛，比如，苹果系统上收集了emoji的数据；微软操作系统的浏览器里面也嵌入了差分隐私的数据；Uber也用了这样一个技术，但目前大部分用在数据统计方面。</span></p>
+<p style="text-align: justify;"><span><strong><span style="font-size: 16px;">怎么样把差分隐私这样的技术能够跟AI有更好的结合，是未来一个比较大的突破点。</span></strong></span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">MPC技术本身，从经典论文发表来看，虽然不算特别新，但在很多很复杂的运算上，尤其是在AI的一些新方法，MPC效率本身还是有一定的代价。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">怎样取得算力的增长，有新模式突破，像完全同态的方法什么时候真的变成实用，怎么能够使这个技术在工业界更进一步，这也是需要考量的一个点。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">联邦学习目前也存在一定的安全隐患，四个技术之间怎么去做相应的结合，取长补短，能够形成比较好的下一代的解决方案，真真正正保护隐私，让AI落地变得更简单？</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">尤其是在一些数据比较敏感的地方，像医疗的某些领域，病例的数据采集特别困难，真的能够让AI进到这些地方，辅助决策，才能更加好实现社会意义和价值。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">我觉得，在算法层面会需要深度结合，无论是基于某些算力，还是说在技术领域的突破，能让这里面的一些问题有更进一步的解法。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">在平台层，无论是差分隐私、TEE还是别的技术，越靠近数学和越靠近密码学硬件，为了保护隐私，里面大量的设置都比较难以理解。怎样让大家更高效产出不一样的算法，降低使用门槛，这些方法才能够跟更多地方结合，产生更多的新突破。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">在DSL和在编译器方面，甚至在整个系统的运维、部署，以及系统稳定性、安全生产等各方面，有没有进一步的突破，变得易用？</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">在一些对时效性要求没有那么强的情况，如果能够持续稳定计算，对于很多产品也是比较适用的。对于整个隐私计算领域而言，这也是一个巨大的挑战。</span></p>
+<p><span style="font-size: 16px;">所以怎样有更高效的平台一体化设计，让使用门槛变低，才有可能会真正带来一些繁荣的社区，让技术能够走进更多场景、更多机构，真正产生一些化学反应。</span></p>

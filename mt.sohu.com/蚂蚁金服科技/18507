@@ -1,0 +1,87 @@
+➜蚂蚁架构师郭援非：分布式数据库是金融机构数字化转型的最佳路径
+http://www.sohu.com/a/416094724_99940985	22860
+<p class="ql-align-justify">2020年8月26-28日，在中科软科技举办的中国财险科技应用高峰论坛上，蚂蚁集团高级解决方案架构师郭援非发表了《OceanBase分布式关系数据库助力保险业务创新》的主题演讲，为大家分享了蚂蚁集团企业级分布式关系数据库OceanBase的发展历程、产品价值，以及在保险行业的最佳实践应用。以下为演讲整理。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200902/3f08a1d6a0fe4f64a285602f297c6e0f.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">各位朋友，下午好！</p>
+<p class="ql-align-justify">支付宝在全球有十几亿用户，他们可以同时进行可靠、稳定、高效的支付交易，这背后离不开一个重要的秘密武器——OceanBase。今天我很荣幸向大家介绍OceanBase的发展过程、产品特点，以及在保险行业的最佳实践。</p>
+<h1><strong>分布式数据库OceanBase的迭代</strong></h1>
+<p class="ql-align-justify">OceanBase数据库立项于2010年，第一个客户是淘宝收藏夹。2013年，OceanBase开始了对SQL的支持。2014年，OceanBase开始支持网商银行的所有业务，成为了全球首个应用在金融核心业务系统的分布式关系数据库。从2014年到2016年，支付宝全部的交易系统和核心账务系统都跑在OceanBase之上。<strong>多年来全世界十几亿用户在支付宝上发生的所有交易都是由OceanBase来承载，始终稳若磐石。</strong></p>
+<p class="ql-align-justify">2017年，我们开始向更多的外部客户输出我们的技术，我们帮助南京银行打造了“鑫云+”互联网金融业务核心。OceanBase服务过的这些场景里既包括新兴的互联网金融核心业务、传统的金融核心业务，也包括对传统数据库的替换，对MySQL的替换，都非常成功。</p>
+<p class="ql-align-justify">2019年， OceanBase参加了世界数据库范围内最权威的TPC-C认证测试，我们取得了6088万tpmC的成绩，是第二名传统数据库公司甲骨文的两倍。TPC-C绝对不是一个简单的跑分测试，实际上，它是要求被测试的对象必须满足数据库的ACID四个事务特征才能够进行的测试。</p>
+<p class="ql-align-justify">2020年，我们又一次参加了TPC-C测试， 达到了7.07亿tpmC，跑出了接近去年12倍的成绩，再次问鼎TPC-C榜首。今年6月份OceanBase正式独立成公司，我们立志于成为世界领先的企业级数据技术解决方案提供商。</p>
+<h1><strong>数据库形态演进</strong></h1>
+<p class="ql-align-justify">金融业的核心业务系统，包括保险行业的核心业务系统仍旧大规模使用传统集中式数据库。这种方案带来了两个问题，一是<strong>集中式数据库造价非常高</strong>，来自于两方面，一方面是软件License很贵；另一方面是硬件很贵，因为它必须使用高端硬件，比如IBM的大机、EMC的高端存储，这些都是非常昂贵的，时间长了再大的企业也很难承受；二是扩展性非常不好，传统集中式数据库都是基于共享存储（shared-storage）的方式做横向扩展，当面临关键业务系统发展需要不断扩容的时候，这种方案有心无力，难以做有效的支撑。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">对于上面这种方案业界提了一种补丁方案，十几年前曾有人提出既然传统集中式数据库很贵，那么在单机开源的基础上加一个语法兼容，这样就解决了它昂贵的问题。但是发展到今天，我们在金融领域的核心系统还没有看到广泛使用这种方案。原因很简单，金融业核心系统使用传统集中式数据库主要不是因为它们在语法上的完善和优秀，根本原因在于它们的稳定可靠，而这个补丁方案做不到这些，同时这个方案也没有解决扩展性的问题。</p>
+<p class="ql-align-justify">说到扩展性同样是在十几年以前，最早在互联网企业中提出了这么一种方案，叫做分库分表，一个典型的例子就是在多台单机的MySQL上，用Proxy把MySQL单机集成为MySQL集群，提供很好的算力。这种方案同样具有很大的问题，当计算发生在单个MySQL机器内部的时候一切很好，但是一旦用户的负载跨越MySQL单机边界的时候，你可能会发现分库分表系统的表现并不尽如人意。具体来说，在全局事务、数据强一致性、负载均衡以及复杂SQL方面都不能很好的支持，所以这种方案的使用场景非常受限。截止到今天，在银行、保险、券商行业的核心业务系统中依然没有广泛使用过这种方案。</p>
+<p class="ql-align-justify">那么到底是否存在这样一种数据库系统？它既可以提供传统集中式数据库的高可靠性，又成本可控，同时扩展性良好。在这个基础之上还能够满足事务的ACID、具备强一致性、复杂SQL的处理能力。答案是有，而且可以更好，那就是OceanBase。</p>
+<h1><strong>OceanBase的三大独特价值</strong></h1>
+<p class="ql-align-justify"><strong>首先，OceanBase是一款完全自主研发的分布式关系数据库</strong>，代码是百分之百自研的，包括SQL引擎、存储引擎都是我们的工程师自己一行一行代码写出来的。这一点很重要，它意味着当你的数据库出现问题的时候，我们的工程师不需要求助开源社区，我们自己就可以兜底，这对于要求稳定，要求可靠，要求有可预期性的金融领域的核心业务系统是一个刚需，这一点OceanBase可以充分提供。</p>
+<p class="ql-align-justify"><strong>第二， OceanBase是全世界唯一一款经过长时间复杂金融场景验证的原生分布式数据库。</strong>数据库其实是一个非常复杂的系统，它的复杂度甚至不亚于操作系统，对它的各种复杂应用场景的测试不是一个简单的测试程序可以穷尽的。目前，可能唯一有效的方法就是在实践中找到足够复杂、足够多的场景对数据库进行反复的使用，使用到最后没有问题为止大家才会信任它。我们非常高兴的告诉大家，OceanBase做到了。</p>
+<p class="ql-align-justify"><strong>第三，OceanBase数据库是全世界范围内唯一一款基于普通的X86云服务器，在TPC-C领域获得第一名的原生分布式数据库。</strong>登顶TPC-C榜单意味着OceanBase不但可以提供世界级的性能，而且可以提供单机数据库一样的完整体验，这一点意味着用户可以像使用单机数据库一样使用OceanBase。</p>
+<h1><strong>OceanBase核心特性</strong></h1>
+<p class="ql-align-justify">在OceanBase数据库中，我们通过“五高一多”的特点定义了分布式数据库的领先标准。</p>
+<p class="ql-align-justify"><strong>1、高可用</strong></p>
+<p class="ql-align-justify">我们通过Paxos协议和多副本技术，可以提供很好的高可用性，当出现灾难的时候我们可以做到RPO=0，RTO&lt;30秒，这完全可以满足企业的容灾需求。同时由于我们使用的是Paxos协议， Paxos协议是支持日志空洞的，这就带来一个好处，当在网络出现波动的时候，我们可以给到更好的性能保证。</p>
+<p class="ql-align-justify">OceanBase的高可用性，是完全在通用X86服务器和普通硬件上提供出来的，没有使用任何高端硬件，所以我们的成本会更低一些。</p>
+<p class="ql-align-justify"><strong>2、高扩展</strong></p>
+<p class="ql-align-justify">在实际生产系统中单个OceanBase集群内的服务器可以达到100台以上。而且OceanBase具有很好的线性扩展比。高扩展性还体现在扩容时的自动负载均衡，这意味着当DBA需要扩容的时候，所做的只是增加一台机器到集群里，接下来，我们的OceanBase管理系统会自动的根据系统的负载情况，把数据迁移到新加的机器上。整个扩容缩容过程中，业务没有感知。</p>
+<p class="ql-align-justify"><strong>3、高性能</strong></p>
+<p class="ql-align-justify">我们采用了很多先进的技术来提高数据库的性能。比如LSM Tree、无锁结构、消除磁盘的随机写等等，这些技术帮助我们充分使用硬件的能力，再辅以高扩展性，我们就可以提供一个世界级性能的OceanBase集群。</p>
+<p class="ql-align-justify">在实际的生产系统里，我们可以在峰值的时候提供6100万次每秒，单表最大容量可以到3200亿行。和高性能伴随的是低成本，因为我们采用了LSM Tree结构，所以当数据落盘的时候是更有组织的，可以做到1：3的压缩比。</p>
+<p class="ql-align-justify"><strong>4、高透明</strong></p>
+<p class="ql-align-justify">我们实现了不少关键技术，比如全局一致性快照、全局索引、自动事务两阶段提交。使用OceanBase数据库，应用就像使用一台单机数据库一样，不需要做针对分布式数据库的特别感知和修改。</p>
+<p class="ql-align-justify"><strong>5、高兼容</strong></p>
+<p class="ql-align-justify">我们在一套OceanBase集群上同时为您提供两套生态，一套是Oracle生态，一套是MySQL生态，有效地降低业务迁移改造的成本。同时我们和国内主流的操作系统、芯片也都做了互认的支持，可以有效满足技术供应链安全的需求。</p>
+<p class="ql-align-justify"><strong>6、多租户</strong></p>
+<p class="ql-align-justify">多租户就是在一个OceanBase集群上，可以建立很多个租户，每个租户对应一个Oracle实例或者是MySQL实例。可以用这个特性实现业务大集中，把以前全国一省一套的传统集中式数据库都集中在一个OceanBase数据库集群那里。也可以做不同种类的小业务的集中，之前几十个小的业务现在都集中在一个OceanBase集群里统一管理，这个特性不但可以有效利用集群资源，更可以有效降低 DBA的运维成本。</p>
+<h1><strong>OceanBase产品定位与形态</strong></h1>
+<p class="ql-align-justify">OceanBase可以提供拥有世界级性能的OLTP引擎，同时也提供一个非常优秀的OLAP引擎，这意味着辅以刚才提到的多租户功能，您可以在一个OceanBase的集群里创建不同的实例，有的专门用于交易，有的专门用于分析，当然也可以创建一个大的实例，既做交易又做分析。OceanBase目前真正做到了一套HTAP引擎，它能够同时支持交易和分析型业务。</p>
+<p class="ql-align-justify">OceanBase的容灾架构，既支持经典的主备容灾方式，同时也支持基于Paxos协议的容灾方式，我们支持同机房三副本，也支持同城三机房，甚至是两地三中心，三地五中心，这些不同的容灾级别可以完全满足您的容灾诉求。</p>
+<p class="ql-align-justify">关于部署模式，如果您希望和阿里云其他的优秀产品，比如和金融级分布式中间件SOFA或者对象云存储OSS一起使用，那么OceanBase可以在阿里云的专有云上为您输出。如果您只想使用OceanBase，我们也可以以一个纯License的方式提供给您，就在您的服务器上安装我们的软件，一样可以获得一个高可用、高扩展、高性能的集群。如果您希望只是购买一个公有云的服务，您可以在阿里云的公有云上购买一个OceanBase的RDS。这些不同选项可以无缝适配您各种不同的需求。</p>
+<h1><strong>OceanBase在保险业的实践</strong></h1>
+<p class="ql-align-justify">OceanBase在保险业的最佳实践。一个很好的案例就是人保健康险。如果不熟悉的朋友可以打开您的手机支付宝，在上面搜好医保就可以看到人保健康险的产品。人保健康利用了金融级分布式数据库OceanBase和金融级分布式中间件SOFAStack解决了高并发保单处理能力速度慢的问题，目前每日平均出单量在15w左右。</p>
+<p class="ql-align-justify">自2018年4月11日人保健康险好医保产品成功上线后，截止到目前，好医保已成为支付宝网红保险产品。OceanBase上线中国人保健康以后，取得了显着的收益：</p>
+<ul>
+<li class="ql-align-justify">处理能力提升了上千倍，并可根据业务情况动态扩容</li>
+<li class="ql-align-justify">2018款好医保住院医疗保险，每天1万单的日结文件，处理速度从以前的4小时缩短至6分钟</li>
+<li class="ql-align-justify">新产品上线时间缩短80%以上，从原来的数周缩短至数天</li>
+<li class="ql-align-justify">采用多种协议转换和标准化对接流程，使外部渠道接入效率提升6倍，支持第三方业务快速拓展</li>
+</ul>
+<p class="ql-align-justify">谢谢大家听完我的汇报，期待着未来我们可以用OceanBase数据库更好的服务于保险行业，和各位好朋友一起打造面向未来的保险业的核心业务系统。</p>
+➜全球高级别金融科技大会“外滩大会”9月24日开幕，亮点都在这里
+http://www.sohu.com/a/416117938_99940985	30215
+<p class="ql-align-justify">“外滩大会”组委会今日正式公布，顶级金融科技大会——“外滩大会”将于9月24日-9月26日在上海黄浦世博园区举行，主题为“科技让未来更普惠”。</p>
+<p class="ql-align-justify">“外滩大会”由上海市政府指导、支付宝和蚂蚁集团主办，永久落户上海，是上海加快推进国际金融科技中心建设的重要举措。上海金融与法律研究院院长傅蔚冈认为，全球金融中心竞争日趋白热化，<strong>科技成了上海的核心竞争力</strong>。外滩大会将成为上海建设金融科技品牌新名片。</p>
+<p class="ql-align-justify">在全球范围内，中国金融科技的发展水平已经得到全球认可，上海更成为全球金融科技发展的标杆。今年3月，第27期全球金融中心指数（GFCI）公布，上海首次晋级全球第四。其中，金融科技评分贡献颇多。以支付宝为代表的上海金融科技企业，更是成为全球金融科技发展的风向标。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200902/ef89228e802f403cb50b0b17e09e5bc2.jpeg" max-width="600" /></p>
+<h1 class="ql-align-justify">采用“1+40+X”模式 诺奖得主、院士云集</h1>
+<p>首届外滩大会采用“1+40+X”办会模式，即1场主论坛、40场分论坛和X场配套文娱活动。大会涵盖数字普惠开放、金融科技创新、全球生态共建、商业价值变革、绿色和可持续发展5大前沿话题。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200902/3f2831c18f6b437faae832bcca54d42a.png" max-width="600" /></p>
+<p class="ql-align-justify">24-26日期间，将举办40多场分论坛，如开放银行金融生态、科技驱动未来保险、智能计算峰会、共享智能、区块链峰会、绿色金融新时代等。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>作为“在线经济”发展高地，上海外滩大会采用“线上线下一体化”办会，在线链接全球超过500多位最具影响力的金融科技大咖、顶尖学者、行业领军者，如联合国副秘书长、联合国开发计划署署长阿奇姆·施泰纳（Achim Steiner ）、英国伦敦金融城市长William Russell、诺贝尔经济学奖得主Michael Spencer、知名学者《失控》作者、《连线》杂志首任主编Kevin Kelly、中国工程院院士王坚、清华大学国家金融研究院院长朱民等，聚焦未来科技展望、权威思想观点，进而推动全球商业、经济与社会生态的合作发展。</p>
+<h1 class="ql-align-justify">“后浪”有专属优惠票 打造全民盛宴</h1>
+<p class="ql-align-justify">作为一场“普通人也能看懂”的科技大会，现场将设置13000平米展厅，观众可近距离了解科技在金融、商业、数字生活等领域的应用，打造线上云展览+线下数字生活节+外滩音乐节“一站式参会体验。无法来现场的市民，也可在线免费观看。</p>
+<p class="ql-align-justify">同时，大会专设低价版“青年票”（18-22周岁）， “后浪”们也能近距离感受科技的趣味。9月2日起，市民可登陆“外滩大会”官网，或上支付宝搜“外滩”即可购票。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200902/e596fc07dc2d4206b04af7acab9090b0.jpeg" max-width="600" /></p>
+<h1 class="ql-align-justify">面向未来 设置百万奖金极客挑战赛</h1>
+<p class="ql-align-justify">少年强则国强。大会组委会当天还正式面向社会发布“A-TECH科技精英赛征集令”——一项涵盖系统安全、AI算法、数据安全的“极客圈铁人三项”。凡计算机视觉方向的AI工程师或擅长渗透测试的系统攻防工程师都可以报名，大会还将定向邀请全国CTF/AI领域的顶级排名选手参赛，最终获胜团队将获得百万奖金。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200902/a05e09172d9f45c0a0e1b862a96d026e.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">除了赛事，大会还将积极联动产学研，吸引更多金融科技顶级科学家、企业家、研究机构等向上海汇聚，成为未来新技术、新产品、新成果的发布平台。</p>
+<p>蚂蚁集团CEO胡晓明表示，上海是中国的金融中心，外滩是东方华尔街。在外滩做一个全球金融科技的盛会，是支付宝一直以来的一个心愿。“未来的金融中心一定是科技中心。”他表示，数字经济时代，中国最有可能成为全球金融中心的城市一定有上海。支付宝注册地在上海，希望能为上海建立全球金融科技中心承担更大的责任，帮助上海提升与金融中心相匹配的技术能力。</p>
+<p class="ql-align-center"><iframe width="500" height="300" scrolling="no" frameborder="0" border="0" allowfullscreen="true" src="//tv.sohu.com/s/sohuplayer/iplay.html?bid=212885690&amp;vars=%5B%5B%22showRecommend%22%2C0%5D%5D&amp;disablePlaylist=true&amp;mute=1&amp;autoplay=false"></iframe></p>

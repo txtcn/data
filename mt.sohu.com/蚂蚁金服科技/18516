@@ -1,0 +1,45 @@
+➜外滩大会“硬核科技”解密：支付宝金融级业务的“定海神针”
+http://www.sohu.com/a/417637114_99940985	0
+<p><span style="font-size: 16px;">有一种崩溃叫：</span><span style="font-size: 16px;">你刷的网页崩了、你看的直播卡了、你零点抢到的衣服付款失败了......身处网络时代，可能每个人都会遇见这些问题。</span><span style="font-size: 16px;">往轻了说，不过是小小的遗憾一下，顶多损失一丢丢时间。</span><span style="font-size: 16px;">只是，一旦这些技术风险不可</span><span style="font-size: 16px;">控，它造成的经济损失是无法估量的。</span></p>
+<p><span style="font-size: 16px;">这时，一个新兴工种应运而生。它就是——SRE（Site Reliability Engineer）网站可靠性工程师。</span></p>
+<p><span><strong><span style="font-size: 16px;">SRE：技术风险的急救员</span></strong></span></p>
+<p><span style="font-size: 16px;">SRE这个概念最早是由国外互联网公司提出的，是软件工程师和系统管理员的结合。他们直接掌管着互联网公司的机器和服务，保证网站不宕机是他们的使命。</span></p>
+<p><span style="font-size: 16px;">而他们做的，其实就是技术风险工作。简单说来，SRE需要围绕线上风险问题，使用技术手段，研究技术架构和解决方案，把业务受损的风险降到最低。这种风险可能是软硬件引入的，也可能是人为引入的。</span></p>
+<p><span style="font-size: 16px;">通常来讲，一个SRE的日常工作包括变更风险防御、快速应急、红蓝攻防、资金安全等。换句话说，这是一个要求非常高的职业，SRE既要防御、发现潜在的风险，也要解决这个风险。</span></p>
+<p><span style="font-size: 16px;">相应地，这要求SRE工程师掌握更多技术：算法、数据结构、编程能力、网络编程、分布式系统、可扩展架构、故障排除等。目前，全球只有少数几家业内领先的互联网公司，才会出现真正的SRE。而蚂蚁集团，就是其中之一。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200911/2598568de4134cfaabbff3446c9cb274.jpeg" /></p>
+<p><span><strong><span style="font-size: 16px;">蚂蚁SRE：独有的技术风险中台能力</span></strong></span></p>
+<p><span style="font-size: 16px;">对于蚂蚁支付宝这种每秒能够处理百亿、千亿级资金的平台来说，技术风险的管控是生死攸关的大事。</span><span style="font-size: 16px;">特</span><span style="font-size: 16px;">别是，蚂蚁的业务是金融级的，且是基于互联网开展的，这对技</span><span style="font-size: 16px;">术风险提出了兼具稳定和快速的更高要求，它的难度远超其他纯粹的互联网或者金融公司。</span></p>
+<p><span style="font-size: 16px;">比如，现在电子支付成为日常，很少有人出门带钱包了。所以，每一次系统问题都可能对用户生活造成严重的影响，类似购物时无法成功付款、购物资金损失、投资收益损失等等。</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200911/c19c60aca9de4688a4f4d4a996db9f61.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">那么，作为稳定业务、保障用户背后的一项核心支撑，蚂蚁的SRE团队是怎样护航的呢？</span></p>
+<p><span style="font-size: 16px;">先看SRE的定位。在蚂蚁内部，SRE不仅仅是一个工种、一个岗位，更是一种能力。这种能力是蚂蚁在十多年的金融业务演进过程中，逐步沉淀的一套技术风险中台能力。</span></p>
+<p><span style="font-size: 16px;">再看蚂蚁SRE的发展。这么多年，伴随着蚂蚁业务的高速发展，他们的技术风险中台能力也不断成长起来了。每年双11的峰值，都对SRE发起“性能容量高并发”极致挑战；为满足蚂蚁金融级业务的高稳定性诉求，他们做到了“三地五中心异地无损容灾”；每天海量的资金处理的正确性又需要蚂蚁SRE团队做到“海量实时的资金核对”；为了防患未然，蚂蚁SRE团队还建立起“红蓝军机制”，实现自我学习和提升.....</span></p>
+<p><span style="font-size: 16px;">再看蚂蚁SRE的应用场景，比如双十一。相信不少用户都有过0点抢购的经历，这个时候，最担心的大概就是页面崩溃了，而最最担心的大概是在支付环节页面崩溃。SRE团队需要出场了！不过，在蚂蚁，这些问题通常在风险未发生前被搞定。</span></p>
+<p><span style="font-size: 16px;">在去年双十一前，蚂蚁就进行了长达三个月甚至更长时间的准备工作：超百次的全链路压测、高达2637条的预案验证、线上巡检验证，等等。这些高频率的故障场景演习，使得蚂蚁在双十一流量高峰时期，具有极强的防御能力。</span></p>
+<p><span style="font-size: 16px;">当然，在整个金融业运行中，网页崩溃不过是技术风险的冰山一角。面对更多的技术应用，技术风险也会越来越多，金融行业需要提高自己的风险防控能力。而蚂蚁的技术风险防控平台TRaaS （Technological Risk-defense as aService）就是业内非常可靠的免疫系统。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200911/84d5664b15884bbbac7d491da0e3de14.png" /></p>
+<p><span style="font-size: 16px;">之所以称TRaaS架构是免疫系统，正是因为它很像人类的免疫系统。TRaaS具有三大特性：高达99.999%的高可用性；千亿级资金秒级实时核对；5分钟发现，5分钟自愈的免疫能力。一方面，TRaaS拥有能够主动发现故障的能力。另一方面，它也可以实现自愈。</span></p>
+<p><span style="font-size: 16px;">这样一来，TRaaS让更多不确定的风险转变为切实可解决的问题。这种能力，正是蚂蚁集团在金融科技领域的杀手锏。</span></p>
+<p><span><strong><span style="font-size: 16px;">外滩大会：解密技术风险防控</span></strong></span></p>
+<p><span style="font-size: 16px;">在企业科技化数字化转型的大趋势下，越来越多的新技术被广泛应用，随之出现的技术风险也越来越多。</span><span style="font-size: 16px;">所以，控制技术风险显得日趋重要，它已经成为企业数字化的保障。</span></p>
+<p><span style="font-size: 16px;">那么，企业究竟应该如何建构起像蚂蚁一样的技术风险体系？蚂蚁的TRaaS架构是否适用于更多的企业？未来的技术风险领域又将会遇到哪些挑战？即将开幕的全球金融科技峰会——“INCLUSION•外滩大会”将会给你答案。</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200911/ee44050ed48e477d8666233379632f63.jpeg" /></p>
+<p><span style="font-size: 16px;">今年，这场盛会专门设立了“技术风险，稳妥创新”论坛，邀请了一线科技公司的专家和业内有影响力的学者，如国寿集团数据中心副总经理宋洪厂，滴滴首席工程师华明，复旦大学计算机科学技术学院副院长、教授、博士生导师彭鑫，他们将分享技术风险领域的最佳实践，共同探讨未来的发展趋势和方向。</span></p>
+<p><span style="font-size: 16px;">蚂蚁技术风险负责人陈亮，将分享蚂蚁自己的技术风险体系，就“蚂蚁是如何做到99.999%的可用率、万亿资金秒级核对”等问题为大家解惑。同样来自蚂蚁的资深技术专家李铮，则聚焦云原生技术。他将会和大家分享“蚂蚁如何从技术风险角度利用云原生”等内容。而蚂蚁资深测试开发专家张晓霞将分享互联网银行如何搭建技术风险体系。</span></p>
+<p><strong>外滩福利时间到！</strong></p>
+<p style="text-align: center;"><span>在评论区留言，谈谈你对</span><span><strong>外滩大会</strong></span><span>的畅想</span></p>
+<p style="text-align: center;"><span>我们将会为 <strong>点赞数最高的2位</strong>小伙伴 </span></p>
+<p style="text-align: center;"><span>各送出1张 <strong><span>外滩大会单日门票（9月25日）</span></strong></span></p>
+<p style="text-align: center;"><span style="font-size: 16px;">（注：门票详情可查看外滩大会官网哦）</span><span></span></p>
+<p style="text-align: center;"><span style="font-size: 16px;">截止时间：9月14日晚18:00</span></p>
+<p><span style="font-size: 16px;"><strong>点击“阅读原文”，一起预见未来！</strong></span></p>
+<p><span style="font-size: 16px;">↓↓↓</span></p>
