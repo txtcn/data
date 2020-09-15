@@ -1,0 +1,71 @@
+➜轻教程 | 2分钟教你如何突破App分享界限，利用口令闭环玩转裂变
+http://www.sohu.com/a/413926602_99975453	39403
+<p>我们的用户在进行分享时，链接是最常用到的形式。但随着部分社交平台对链接分享的限制越来越严格，致使一些链接进行跳转时，<strong>环节繁琐，限制条件多，严重影响用户的体验</strong>。</p>
+<p>这不仅仅会直接<strong>影响App引流</strong>，甚至会遭到<strong>用户差评</strong>，更可怕的是惨遭<strong>用户弃用</strong>。因此我们需要进行分享功能的优化，规避限制风险，提升用户体验。</p>
+<p>以电商行业淘口令为例，面对微信平台的严格管理，淘宝为用户开发了淘口令，巧妙规避了平台限制。复杂多变的文字信息，从常规汉字到火星文夹杂，不仅不影响用户识别，又能避开微信后台屏蔽。</p>
+<p>今天，小编就将结合MobTech开发者所研发<strong>【ShareSDK】</strong>的<strong>口令闭环功能，</strong>来演示<strong>如何突破短链分享的弊端</strong>。</p>
+<p><strong>【ShareSDK】</strong>通过将场景信息进行存储，生成文字口令。用户复制口令后，即可还原场景信息。例如电商平台中，我们将<strong>商品的价格，折扣信息、商品的图片地址、商品的描述信息 </strong>等场景信息存储起来，生成一段带着<strong>宣传标语的文字口令</strong>。<strong>如下图：</strong></p>
+<p><strong></strong><img src="//p4.itc.cn/q_70/images03/20200819/e2bcc02c9bb9450eba37b0fc1f7d1fee.png" max-width="600" /></p>
+<p>以这种方式生成的文字口令，既不容易被平台屏蔽，又可以凸显出商品重点的宣传文案。</p>
+<p>但这就是最优解吗？</p>
+<p>在实际尝试过程中，我们发现用户复制淘口令后，并不是直接跳转商品详情页，而是必须退出正在使用的微信，打开App才会识别淘口令，进行场景还原。从功能实现角度来讲，用户退出微信场景才能还原，是一种“有感的”、“打断”用户的方式，会引起部分用户的反感。</p>
+<p>因此在升级<strong>【ShareSDK】</strong>时，MobTech开发者做出了一些改进，我们在App的后台启动了一项服务，可监听剪贴板是否发生改变，这样当用户将带有 <strong>产品信息、宣传标语、App标识的口令信息 </strong>分享到微信、QQ等平台给好友，待好友复制口令后，剪贴板发生改变的事件就会触发我们的代码，尝试还原口令场景。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200819/428d86dacebb4b96b009429f8682bcfe.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200819/bcee08a59958432aabee88b7f5d6bde4.png" max-width="600" /></p>
+<p>如果检测到口令，我们在微信聊天界面就直接还原场景参数，用户在微信内就能点击实现跳转，整个过程更流畅，更无感。<strong>如下图：</strong></p>
+<p class="ql-align-center"><strong></strong><img src="//p3.itc.cn/q_70/images03/20200819/843919c19d8f4c4cb5c910dfb1d66cf4.png" max-width="600" /></p>
+<p>但这就完成整个过程了吗？</p>
+<p>文字口令最致命的地方在于，如果用户没有安装口令指示的App，是无法调起接口提示用户进行安装的。为弥补这一短板，MobTech开发者将闭环分享的链接与文本相结合。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200819/7afc0e3a2d8d4370aae27bc21b6dd024.png" max-width="600" /></p>
+<p>如果用户没有安装App，用户点击链接后，就会提示用户<strong>“长按网址复制后使用浏览器访问”</strong>，用户打开浏览器复制链接，就会显示商品信息，并提示用户下载安装App。用户首次打开App，也可返回原场景，妥善解决了文本口令无法提示下载App的问题。<strong>如下图：</strong></p>
+<p class="ql-align-center"><strong></strong><img src="//p7.itc.cn/q_70/images03/20200819/6e0a400d57c243809ca4dc803f15136e.png" max-width="600" /></p>
+<p>虽然，链接分享可能解决了用户在使用中80%的分享需求，但总有一部分用户会超越现有产品提供的功能，提出新的需求，也会有一部分App开发者超越现有产品，提出新的功能点。</p>
+<p>那么，开发者及产品经理在打磨一件产品时，在满足了用户的基础需求后，不妨可以尝试去做超越用户需求，超越同类产品的创新及突破，更有利于你的产品领先行业，占据核心市场。</p>
+➜上海产品运营大会 | 八个小时七大资深大咖解析短视频、数据分析核心方法论
+http://www.sohu.com/a/413926926_99975453	39503
+<p>互联网公司现在始终都缺的三个岗位：<strong>产品、运营和设计</strong>。</p>
+<p>小型互联网公司可以暂时没有开发，产品经理可以暂时先用市面上已有的成熟模板来进行设计上面的优化，优化好的产品用运营方法技巧在符合时宜的节点推给用户。</p>
+<p>8月22日，MobTech袤博携手PMTalk共同举办上海产品运营大会。届时，MobTech袤博、PMTalk、新媒体管家、活动行、前平安、前科大讯飞、微盟和问卷网等公司相关产品、运营、数据、设计岗位负责人/总裁，<strong>八个小时、七大嘉宾</strong>现场分享干货，为上海互联网从业者呈现一次难逢的头脑风暴，一套全新的产品运营思路。</p>
+<p><strong>上海产品运营大会</strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200819/b1395010e9664238bdfe0a3eb2403e06.jpeg" max-width="600" /></p>
+<p>这个不仅仅是一个普通的学习大会，而是一个可支持现场嘉宾互动面对面交流，结交互联网人脉的大会。</p>
+<p><strong>嘉宾阵容</strong></p>
+<p class="ql-align-justify">在上海场，7大嘉宾，聚焦短视频领域、产品经理用户增长方式、数据分析助力App生命周期管理、教育领域设计体验。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200819/61a4094123ca4e15b7fd14a58c4f9c95.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>活动流程</strong></p>
+<p><strong>上午场：⬇⬇⬇</strong></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200819/6233ab2f896746f5be0b4faf1116e2b4.jpeg" max-width="600" /></p>
+<p><strong>下午场：⬇⬇⬇</strong></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200819/260fd4dc99a34a58b7205967849d050b.jpeg" max-width="600" /></p>
+<p><strong>特别福利</strong></p>
+<p class="ql-align-justify">活动现场除了干货满满的分享内容，更为大家精心准备的礼品！</p>
+<p class="ql-align-justify"><strong>1、签到有礼</strong></p>
+<p class="ql-align-justify">凡是现场签到的同学，即可获得一份精美的伴手礼，让你在精神和物质上，都绝不空手而归！</p>
+<p class="ql-align-justify"><strong>2、互动有奖</strong></p>
+<p class="ql-align-justify">我们期待智识的碰撞，更期待你在现场积极与我们互动的身影。现场参与互动，即有机会获得MobTech袤博&amp;栀枝微课&amp;三分设提供的精美礼品哦！</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200819/f4cbbd2c98bc4e26b1890fb192dde944.jpeg" max-width="600" /></p>
+<p class="ql-align-center">▲部分奖品展示</p>
+<p><strong>合作伙伴</strong></p>
+<p class="ql-align-justify">本次大会独家报名和线上直播渠道：</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200819/33c3f75330b342508a1d1ac33af1ab4a.png" max-width="600" /></p>
+<p class="ql-align-justify">本次大会合作伙伴：</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200819/7c7444bad8c64da7a676169ab654647f.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">独家品牌场地支持方：</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200819/d5f8cf4d95ee49cd80b92dab5bca3444.jpeg" max-width="600" /></p>
+<p class="ql-align-center">报名可进入【活动行】自行搜索报名。</p>
