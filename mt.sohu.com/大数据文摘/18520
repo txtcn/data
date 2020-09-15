@@ -1,0 +1,273 @@
+➜深度解读！阿里腾讯字节首选，新一代大数据引擎Flink厉害在哪？附学习礼包
+http://www.sohu.com/a/418555564_308467	30617
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200915/47a58505c088427f83216e409f60afe1.jpeg" max-width="600" /></p>
+<p><strong>大数据文摘出品</strong></p>
+<p>千呼万唤，Apache Flink 1.11.0终于上新了！</p>
+<p>作为备受瞩目的新一代开源大数据计算引擎，Flink项目无疑已成为 Apache 基金会和 GitHub 最为活跃的项目之一。自2014年正式开源发展非常迅速，截止到2020年7月，社区的star数达到13600+，contributor 数达到718，有22989次commits，<strong>目前在GitHub上的访问量在Apache项目中位居前三。</strong></p>
+<p>作为快速发展的新一代大数据引擎，Flink本身的架构优势也吸引着越来越多的开源爱好者投入到社区的建设来。目前，<strong>Flink已经成为阿里巴巴、腾讯、字节跳动、滴滴、美团点评等知名公司建设流处理平台的首选。</strong></p>
+<p>不过你可能要问，流计算引擎这么多，为什么Flink这么受欢迎?</p>
+<p>面对全量数据和增量数据，业界亟需用一套统一的大数据引擎技术来处理所有数据。</p>
+<p><strong>Apache Flink 被业界公认为最好的流计算引擎</strong>，其计算能力不仅仅局限于做流处理，而是一套兼具流、批、机器学习等多种计算功能的大数据引擎，用户只需根据业务逻辑开发一套代码，无论是全量数据还是增量数据，亦或者实时处理，一套方案即可全部支持。</p>
+<p>Apache Flink 的系统架构</p>
+<p>在近期发布的Apache Flink 1.11.0版本中，超过 200 名贡献者参与了 Flink 1.11.0 的开发，提交了超过 1300 个修复或优化。这些修改极大的提高了 Flink 的可用性，并且增强了各个 API 栈的功能。</p>
+<p><strong>▼先附上 GitHub 下载地址 ▼ </strong></p>
+<p>https://flink.apache.org/downloads.html#apache-flink-1110</p>
+<p>为了让大家更全面地了解 Apache Flink 背后的技术以及应用实践，大数据文摘联合Flink社区，为大家献上超值学习福利！马上下载，越早学习，越能抓住时代先机！</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>重磅福利1：Flink 年度学习资料大礼包！</strong></p>
+<p>这份大礼包里不仅有大数据实时计算及 Apache Flink 年度Flink 年度学习资料大礼包，还有300+页实战应用精华总结！</p>
+<ul>
+<li>零基础入门，30 天成长为 Flink 大神的经典教程。</li>
+<li>Apache Flink 核心贡献者及阿里巴巴技术专家的一线实战经验总结。</li>
+<li>收录来自 bilibili、美团点评、小米、OPPO、快手、Lyft、Netflix 等国内外一线大厂实时计算平台及实时数仓最佳实践案例。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200915/c75ebc67d25a47cf940c647b328d0ef2.jpeg" max-width="600" /></p>
+<p><strong>重磅福利2：阿里云《实时计算Flink极客训练营》免费开启！</strong></p>
+<p>不过，一个人看学习资料容易半途而废，配合这份“大礼包”，文摘菌在这里也安利一波阿里云下周开营的<strong>《实时计算Flink极客训练营》</strong>。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200915/b477491e93f745feb7b7b1c40a814369.png" max-width="600" /></p>
+<p>在5天的课程中你将获得：</p>
+<ul>
+<li>实现从0到1了解 Flink和流计算概念，为大数据引擎学习打下基础。</li>
+<li>通过实际案例，了解Flink SQL/Table的基础概念，以及其是如何统一流处理和批处理的；</li>
+<li>PyFlink简介及上手，如何通过Flink于外部系统进行对接；</li>
+<li>课程内容侧重于原理解析与基础应用，从最实际的应用场景出发引导你深入了解Flink。</li>
+</ul>
+<p>点击<strong>下方链接</strong>，报名《实时计算Flink极客训练营》，并加入配套钉钉群，即可<strong>免费获取Flink年度学习大礼包！</strong></p>
+<p>https://developer.aliyun.com/learning/trainingcamp/sc/2?utm_content=g_1000181368</p>
+<p>还有直播课程教你Flink正确打开方式，帮助你从 Flink 小白成长为 Flink 技术专家！</p>
+<p>更重要的是，课程现在报名免费，名额有限，先到先得哦！</p>
+<p><strong>深度解读 Flink 1.11：流批一体 Hive 数仓</strong></p>
+<p>最新版的Flink1.11流计算结合 Hive 批处理数仓自上线以来就广受好评，我们最后也为大家带来了阿里云两位技术专家李劲松（之信）和李锐（天离）Flink 1.11流批一体 Hive 数仓的深度解读。</p>
+<p>最新版的Flink 1.11 中流计算结合 Hive 批处理数仓，给离线数仓带来 Flink 流处理实时且 Exactly-once 的能力。另外，Flink 1.11 完善了 Flink 自身的 Filesystem connector，大大提高了 Flink 的易用性。</p>
+<p>数仓架构</p>
+<p><strong>离线数仓</strong></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200915/1e80d7da49024795ae3669cea88b07db.png" max-width="600" /></p>
+<p>传统的离线数仓是由 Hive 加上 HDFS 的方案，Hive 数仓有着成熟和稳定的大数据分析能力，结合调度和上下游工具，构建一个完整的数据处理分析平台，流程如下：</p>
+<ul>
+<li>Flume 把数据导入 Hive 数仓</li>
+<li>调度工具，调度 ETL 作业进行数据处理</li>
+<li>在 Hive 数仓的表上，可以进行灵活的 Ad-hoc 查询</li>
+<li>调度工具，调度聚合作业输出到BI层的数据库中</li>
+</ul>
+<p>这个流程下的问题是：</p>
+<ul>
+<li>导入过程不够灵活，这应该是一个灵活 SQL 流计算的过程</li>
+<li>基于调度作业的级联计算，实时性太差</li>
+<li>ETL 不能有流式的增量计算</li>
+</ul>
+<p><strong>实时数仓</strong></p>
+<p>针对离线数仓的特点，随着实时计算的流行，越来越多的公司引入实时数仓，实时数仓基于 Kafka + Flink streaming，定义全流程的流计算作业，有着秒级甚至毫秒的实时性。</p>
+<p>但是，实时数仓的一个问题是历史数据只有 3-15 天，无法在其上做 Ad-hoc 的查询。如果搭建 Lambda 的离线+实时的架构，维护成本、计算存储成本、一致性保证、重复的开发会带来很大的负担。</p>
+<p>Hive 实时化</p>
+<p>Flink 1.11 为解决离线数仓的问题，给 Hive 数仓带来了实时化的能力，加强各环节的实时性的同时，又不会给架构造成太大的负担。</p>
+<p><strong>Hive streaming sink</strong></p>
+<p>实时数据导入 Hive 数仓，你是怎么做的？Flume、Spark Streaming 还是 Flink Datastream？千呼万唤，Table / SQL 层的 streaming file sink 来啦，Flink 1.11 支持 Filesystem connector 和 Hive connector 的 streaming sink。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200915/80b1fd16991f4296bd81fdec45168af5.png" max-width="600" /></p>
+<p>(注：图中 StreamingFileSink 的 Bucket 概念就是 Table/SQL 中的 Partition)</p>
+<p>Table/SQL 层的 streaming sink 不仅：</p>
+<ul>
+<li>带来 Flink streaming 的实时/准实时的能力</li>
+<li>支持 Filesystem connector 的全部 formats(csv,json,avro,parquet,orc)</li>
+<li>支持 Hive table 的所有 formats</li>
+<li>继承 Datastream StreamingFileSink 的所有特性：Exactly-once、支持HDFS, S3</li>
+</ul>
+<p>而且引入了新的机制：Partition commit。</p>
+<p>一个合理的数仓的数据导入，它不止包含数据文件的写入，也包含了 Partition 的可见性提交。当某个 Partition 完成写入时，需要通知 Hive metastore 或者在文件夹内添加 SUCCESS 文件。Flink 1.11 的 Partition commit 机制可以让你：</p>
+<ul>
+<li><strong>Trigger：</strong>控制Partition提交的时机，可以根据Watermark加上从Partition中提取的时间来判断，也可以通过Processing time来判断。你可以控制：是想先尽快看到没写完的Partition；还是保证写完Partition之后，再让下游看到它。</li>
+<li><strong>Policy</strong>：提交策略，内置支持SUCCESS文件和Metastore的提交，你也可以扩展提交的实现，比如在提交阶段触发Hive的analysis来生成统计信息，或者进行小文件的合并等等。</li>
+</ul>
+<p>一个例子：</p>
+<p>-- 结合Hive dialect使用Hive DDL语法</p>
+<p>SET table.sql-dialect=hive;</p>
+<p>CREATE TABLE hive_table (</p>
+<p>user_id STRING,</p>
+<p>order_amount DOUBLE</p>
+<p>) PARTITIONED BY (</p>
+<p>dt STRING,</p>
+<p>hour STRING</p>
+<p>) STORED AS PARQUET TBLPROPERTIES (</p>
+<p>-- 使用partition中抽取时间，加上watermark决定partiton commit的时机</p>
+<p>'sink.partition-commit.trigger'='partition-time',</p>
+<p>-- 配置hour级别的partition时间抽取策略，这个例子中dt字段是yyyy-MM-dd格式的天，hour是0-23的小时，timestamp-pattern定义了如何从这两个partition字段推出完整的timestamp</p>
+<p>'partition.time-extractor.timestamp-pattern'=’$dt $hour:00:00’,</p>
+<p>-- 配置dalay为小时级，当 watermark &gt; partition时间 + 1小时，会commit这个partition</p>
+<p>'sink.partition-commit.delay'='1 h',</p>
+<p>-- partitiion commit的策略是：先更新metastore(addPartition)，再写SUCCESS文件</p>
+<p>'sink.partition-commit.policy.kind’='metastore,success-file'</p>
+<p>SET table.sql-dialect=default;</p>
+<p>CREATE TABLE kafka_table (</p>
+<p>user_id STRING,</p>
+<p>order_amount DOUBLE,</p>
+<p>log_ts TIMESTAMP(3),</p>
+<p>WATERMARK FOR log_ts AS log_ts - INTERVAL '5' SECOND</p>
+<p>-- 可以结合Table Hints动态指定table properties [3]</p>
+<p>INSERT INTO TABLE hive_table SELECT user_id, order_amount, DATE_FORMAT(log_ts, 'yyyy-MM-dd'), DATE_FORMAT(log_ts, 'HH') FROM kafka_table;</p>
+<p><strong>Hive streaming source</strong></p>
+<p>Hive 数仓中存在大量的 ETL 任务，这些任务往往是通过调度工具来周期性的运行，这样做主要有两个问题：</p>
+<p>针对这些离线的 ETL 作业，Flink 1.11 为此开发了实时化的 Hive 流读，支持：</p>
+<ul>
+<li>Partition 表，监控 Partition 的生成，增量读取新的 Partition。</li>
+<li>非 Partition 表，监控文件夹内新文件的生成，增量读取新的文件。</li>
+</ul>
+<p>你甚至可以使用10分钟级别的分区策略，使用 Flink 的 Hive streaming source 和Hive streaming sink 可以大大提高 Hive 数仓的实时性到准实时分钟级，在实时化的同时，也支持针对 Table 全量的 Ad-hoc 查询，提高灵活性。</p>
+<p>SELECT * FROM hive_table</p>
+<p>/*+ OPTIONS('streaming-source.enable'=’true’,</p>
+<p>'streaming-source.consume-start-offset'='2020-05-20') */;</p>
+<p><strong>实时数据关联 Hive 表</strong></p>
+<p>在 Flink 与 Hive 集成的功能发布以后，我们收到最多的用户反馈之一就是希望能够将 Flink 的实时数据与离线的 Hive 表进行关联。因此，在 Flink 1.11 中，我们支持将实时表与 Hive 表进行 temporal join。沿用 Flink 官方文档中的例子，假定 Orders 是实时表，而 LatestRates 是一张 Hive 表，用户可以通过以下语句进行temporal join：</p>
+<p>SELECT</p>
+<p>o.amout, o.currency, r.rate, o.amount * r.rate</p>
+<p>FROM</p>
+<p>Orders AS o</p>
+<p>JOIN LatestRates FOR SYSTEM_TIME AS OF o.proctime AS r</p>
+<p>ON r.currency = o.currency</p>
+<p>与 Hive 表进行 temporal join 目前只支持 processing time，我们会把 Hive 表的数据缓存到内存中，并按照固定的时间间隔去更新缓存的数据。用户可以通过参数“lookup.join.cache.ttl” 来控制缓存更新的间隔，默认间隔为一个小时。</p>
+<p>“lookup.join.cache.ttl” 需要配置到 Hive 表的 property 当中，因此每张表可以有不同的配置。另外，由于需要将整张 Hive 表加载到内存中，因此目前只适用于 Hive 表较小的场景。</p>
+<p>Hive 增强</p>
+<p>Hive Dialect 语法兼容</p>
+<p>Flink on Hive 用户并不能很好的使用 DDL，主要是因为：</p>
+<ul>
+<li>Flink 1.10 中进一步完善了 DDL，但由于 Flink 与 Hive 在元数据语义上的差异，通过 Flink DDL 来操作 Hive 元数据的可用性比较差，仅能覆盖很少的应用场景。</li>
+<li>使用 Flink 对接 Hive 的用户经常需要切换到 Hive CLI 来执行 DDL。</li>
+</ul>
+<p>针对上述两个问题，我们提出了 FLIP-123，通过 Hive Dialect 为用户提供 Hive语法兼容。该功能的最终目标，是为用户提供近似 Hive CLI/Beeline 的使用体验，让用户无需在 Flink 和 Hive 的 CLI 之间进行切换，甚至可以直接迁移部分 Hive 脚本到 Flink 中执行。</p>
+<p>在 Flink 1.11中，Hive Dialect 可以支持大部分常用的 DDL，比如 CREATE/ALTER TABLE、CHANGE/REPLACE COLUMN、ADD/DROP PARTITION 等等。为此，我们为 Hive Dialect 实现了一个独立的 parser，Flink 会根据用户指定的 Dialect 决定使用哪个 parser 来解析 SQL 语句。用户可以通过配置项“ table.sql-dialect ” 来指定使用的 SQL Dialect。它的默认值为 “default”，即 Flink 原生的 Dialect，而将其设置为 “hive” 时就开启了 Hive Dialect。对于 SQL 用户，可以在 yaml 文件中设置“table.sql-dialect” 来指定 session 的初始 Dialect，也可以通过 set 命令来动态调整需要使用的 Dialect，而无需重启 session。</p>
+<p>Hive Dialect 目前所支持的具体功能可以参考 FLIP-123 或 Flink 的官方文档。另外，该功能的一些设计原则和使用注意事项如下：</p>
+<p><strong>向量化读取</strong></p>
+<p>Flink 1.10中，Flink 已经支持了 ORC (Hive 2+) 的向量化读取支持，但是这很局限，为此，Flink 1.11 增加了更多的向量化支持：</p>
+<ul>
+<li>ORC for Hive 1.x </li>
+<li>Parquet for Hive 1,2,3</li>
+</ul>
+<p>也就是说已经补全了所有版本的 Parquet 和 ORC 向量化支持，默认是开启的，提供开关。</p>
+<p><strong>简化 Hive 依赖</strong></p>
+<p>Flink 1.10 中，Flink 文档中列出了所需的 Hive 相关依赖，推荐用户自行下载。但是这仍然稍显麻烦，所以在1.11 中，Flink 提供了内置的依赖支持：</p>
+<ul>
+<li>flink-sql-connector-hive-1.2.2_2.11-1.11.jar：Hive 1 的依赖版本。</li>
+<li>flink-sql-connector-hive-2.2.0_2.11-1.11.jar：Hive 2.0 - 2.2 的依赖版本。</li>
+<li>flink-sql-connector-hive-2.3.6_2.11-1.11.jar：Hive 2.3 的依赖版本。</li>
+<li>flink-sql-connector-hive-3.1.2_2.11-1.11.jar：Hive 3 的依赖版本。</li>
+</ul>
+<p>现在，你只需要单独下一个包，再搞定 HADOOP_CLASSPATH，即可运行 Flink on Hive。</p>
+<p><strong>Flink 增强</strong></p>
+<p>除了 Hive 相关的 features，Flink 1.11 也完成了大量其它关于流批一体的增强。</p>
+<p><strong>Flink Filesystem connector</strong></p>
+<p>Flink table 在长久以来只支持一个 csv 的 file system table，而且它还不支持Partition，行为上在某些方面也有些不符合大数据计算的直觉。</p>
+<p>在 Flink 1.11，重构了整个 Filesystem connector 的实现 ：</p>
+<ul>
+<li>结合 Partition，现在，Filesystem connector 支持 SQL 中 Partition 的所有语义，支持 Partition 的 DDL，支持 Partition Pruning，支持静态/动态 Partition 的插入，支持 overwrite 的插入。</li>
+<li>支持各种 Formats：</li>
+<li>CSV</li>
+<li>JSON</li>
+<li>Aparch AVRO</li>
+<li>Apache Parquet</li>
+<li>Apache ORC.</li>
+<li>支持 Batch 的读写。</li>
+<li>支持 Streaming sink，也支持上述 Hive 支持的 Partition commit，支持写Success 文件。</li>
+</ul>
+<p>例子：</p>
+<p>CREATE TABLE fs_table (</p>
+<p>user_id STRING,</p>
+<p>order_amount DOUBLE,</p>
+<p>dt STRING,</p>
+<p>hour STRING</p>
+<p>) PARTITIONED BY (dt, hour) WITH (</p>
+<p>’connector’=’filesystem’,</p>
+<p>’path’=’...’,</p>
+<p>’format’=’parquet’,</p>
+<p>'partition.time-extractor.timestamp-pattern'=’$dt $hour:00:00’,</p>
+<p>'sink.partition-commit.delay'='1 h',</p>
+<p>‘sink.partition-commit.policy.kind’='success-file')</p>
+<p>-- stream environment or batch environment</p>
+<p>INSERT INTO TABLE fs_table SELECT user_id, order_amount, DATE_FORMAT(log_ts, 'yyyy-MM-dd'), DATE_FORMAT(log_ts, 'HH') FROM kafka_table;</p>
+<p>-- 通过 Partition 查询</p>
+<p>SELECT * FROM fs_table WHERE dt=’2020-05-20’ and hour=’12’;</p>
+<p><strong>引入 Max Slot</strong></p>
+<p>Yarn perJob 或者 session 模式在 1.11 之前是无限扩张的，没有办法限制它的资源使用，只能用 Yarn queue 等方式来限制。但是传统的批作业其实都是大并发，运行在局限的资源上，一部分一部分阶段性的运行，为此，Flink 1.11 引入 Max Slot 的配置[11]，限制 Yarn application 的资源使用。</p>
+<p>slotmanager.number-of-slots.max</p>
+<p>定义 Flink 集群分配的最大 Slot 数。此配置选项用于限制批处理工作负载的资源消耗。不建议为流作业配置此选项，如果没有足够的 Slot，则流作业可能会失败。</p>
+<p>想更进一步了解Flink？戳<strong>下方链接</strong>，报名《实时计算Flink极客训练营》，获取阿里云大数据独门绝学！</p>
+<p>https://developer.aliyun.com/learning/trainingcamp/sc/2?utm_content=g_1000181368</p>
+➜李彦宏：百度无人车试驾北京开启！安全员“下岗”，5G云代驾亮相
+http://www.sohu.com/a/418558574_308467	31439
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200915/e07a1f497c5049d48b58bb1bb237a281.jpeg" max-width="600" /></p>
+<p><strong>大数据文摘出品</strong></p>
+<p><strong>作者：刘俊寰、牛婉杨</strong></p>
+<p>今年的百度世界大会和李彦宏如约而至。</p>
+<p>每届的百度世界大会，<strong>自动驾驶</strong>都是百度最吸睛的技术，今年也不例外，而今年在自动驾驶上，百度也实现了多项重大突破：</p>
+<ul>
+<li class="ql-align-justify">原先需要配备的<strong>两位安全员被“下岗”</strong>；</li>
+<li class="ql-align-justify"><strong>5G云代驾</strong>首次亮相，一位云端驾驶员可以掌控多辆自动驾驶车；</li>
+<li class="ql-align-justify">百度与中国一汽在红旗品牌上共同研发的<strong>L4级无人驾驶车已经开始量产</strong>。</li>
+</ul>
+<p>在大会伊始，李彦宏就介绍道，百度世界大会已经举办14届了，每次大会百度都致力于展示过去一年取得的最新科技成果。</p>
+<p><strong>Apollo真·自动驾驶：安全员“被下岗”，“5G云代驾”首次亮相</strong></p>
+<p>说到百度的无人驾驶，大家一定不会忘记，三年前，李彦宏在北京乘坐无人驾驶汽车，惨遭“吃罚单”。</p>
+<p>三年后，百度Apollo最新的自动驾驶汽车到底发展到了什么地步呢？</p>
+<p>上周，百度Apollo在北京发布了针对个人的试驾服务。今天，百度也发布了最新的自动驾驶技术进展。</p>
+<p>演播室内，一辆Apollo从屏幕中向我们驶来，别担心，这是利用了<strong>5G和VR技术</strong>，完整复现了Apollo的细节。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200915/c48647d107e04877b91733ee0d19eec6.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>可以看到，这辆汽车在车顶搭载了一个<strong>圆柱形的激光雷</strong>，主要用于识别汽车周围的路况。</p>
+<p>同时，李彦宏介绍道，这是<strong>国内第一辆实现量产的原装无人驾驶汽车</strong>，这次百度也和一汽建立了合作关系，看得出来，整个Apollo汽车的设计很原生。</p>
+<p>李彦宏还补充道，现在百度的无人驾驶汽车已经在<strong>长沙、沧州、广州、重庆、北京亦庄</strong>等地都开启了测试。</p>
+<p>此前，文摘菌也专门去试坐了一下长沙的Apollo汽车，不知道升级之后的Apollo的试乘体验如何。</p>
+<p><strong>真正的“无人驾驶”，典型场景避让都很及时</strong></p>
+<p>为了给观众最直观的体验，央视记者、AI体验官保晓峰和百度集团副总裁李震宇在北京首钢园区给我们带来了最新鲜的乘坐体验反馈。</p>
+<p>首先，上车后，<strong>车内会语音自动提醒乘客系好安全带</strong>，在汽车的空间感上，保晓峰表示，感觉和普通出租车差不多。</p>
+<p>最值得一提的是，随着技术的升级，这次的无人驾驶汽车真正做到了“无人”，<strong>前排的前排驾驶座和副驾驶都没有人</strong>，也就是说，之前一直配备的安全员被取消了，“自动驾驶”也终于向“无人驾驶”迈进了。</p>
+<p>上车系好安全带后，<strong>点击屏幕“立刻出发”</strong>就可以直接出发，不过在出发前，汽车还需要进行短暂的<strong>自检</strong>，车内和车外环境都需要得到进一步地确认。</p>
+<p>上路后，保晓峰表示，汽车的<strong>起步很平稳，转弯也很顺畅</strong>，“比我开得要好很多”。</p>
+<p>在比较考验司机驾驶技术的掉头上，无人驾驶汽车也很顺利地<strong>一次性掉头成功</strong>，看得出来，驾驶硬技术很是过关。</p>
+<p>不仅如此，我们都知道，国内的道路情况比较复杂，除了一些横穿的摩托车和自行车外，还有很不一样的过马路方式，以及逆行的自动车等，但<strong>在面对这些典型的自动驾驶场景时，无人驾驶车的避让都很及时</strong>。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200915/9cd206b6aa7442a583943ccdd7b1bb83.jpeg" max-width="600" /></p>
+<p><strong>“5G云代驾”首次亮相，遇到路障也不怕啦</strong></p>
+<p>突然，道路前方遇到了<strong>路障</strong>，无人车很自然的停了下来。</p>
+<p>这也是一种典型的场景，即当无人驾驶系统无法自动做出反应时，乘客就需要向云端的驾驶员求助，这时候，乘客只需在前排座椅后背的屏幕上点击呼叫，<strong>“5G云代驾”</strong>就可以来帮忙啦。</p>
+<p>通过云端安全驾驶员的协助，无人车就能脱困，这也是百度“5g云代驾“的首次亮相。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200915/8ea050bd85e54a9da653e02e2f8f3358.gif" max-width="600" /></p>
+<p class="ql-align-justify">可以看到，安全员在云端就像玩“赛车游戏”那样操控方向盘，只不过，操控的是真的车，帮助无人车脱困后就可以再次把方向盘交给自动驾驶系统，有点酷哦~</p>
+<p>根据李彦宏介绍，<strong>一个安全员可以服务多达十辆汽车</strong>，而且随着无人驾驶汽车在全国范围的落地，百度也配备了很多安全驾驶员，能做到“云代驾”的<strong>百分百响应</strong>，这也大大降低了人工成本。</p>
+<p>需要注意的是，因为整个过程需要实时传送大量的图像，因此<strong>这也是一项只能用5G才能操作的技术</strong>。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200915/148ccea117db420a833d76f0e8cdda8d.jpeg" max-width="600" /></p>
+<p>到达目的地后，车内也会自动语音提醒，“正在靠边停车”，“已到达目的地”。</p>
+<p>总的来说，保晓峰说到，<strong>无人驾驶的乘坐比想象得更简单，操作也更方便</strong>。</p>
+<p>根据李震宇介绍，<strong>到2022年，首钢园区将会覆盖100多辆百度无人驾驶汽车</strong>。</p>
+<p><strong>阿波罗未来驾仓：唱K工作两不误</strong></p>
+<p>两位AI体验官从阿波罗自动驾驶汽车上下车后，进入到了一个看上去不怎么像汽车的驾仓内，李震宇表示，<strong>汽车没有方向盘，上车后你甚至可能无法分清楚前后方向</strong>。</p>
+<p>央视记者保晓峰也感叹道，<strong>这不像是在一辆车里，像更是个小客厅</strong>。</p>
+<p>李震宇表示，这辆汽车搭载了小度，说着他就唤醒了小度，可以看到，驾仓内部的<strong>娱乐功能十分丰富</strong>，你可以看选择电影、唱KTV，或者摩等，而要实现这些，你只需要唤醒小度即可。</p>
+<p>好奇心之下，两位唤醒了唱K功能，随着许巍《蓝莲花》歌声的响起，李震宇还从一旁的收纳箱里拿出了一个麦克风~</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200915/686cc67184a14136814c6a9cd08ab57e.png" max-width="600" /></p>
+<p>唱完K，也不要忘了工作，在这个百度驾仓内，可以实现<strong>工作场景的复现</strong>，你可以在车内打工作电话或者视频，看PPT什么的完全不在话下。</p>
+<p>在这里，李震宇还展示了<strong>自主泊车</strong>功能，所谓自主泊车，从字面意思上理解就是，<strong>自驶系统汽车自己选择车位停靠</strong>。李震宇还称，未来只需要一次用几分钟的时间手动停一次车位，无人驾驶系统就能立马学习，甚至找无人车代驾的时候，不用也再为找不着车而发愁，当你到了地下停车位，自动驾驶车就会主动来找你。</p>
+<p>而且，好消息是，这个自主泊车功能，即将在<strong>明年初</strong>应用到市场。</p>
+<p>不过，这里还出现了一点点小插曲，车辆进行自主泊车时，在一个拐弯遇到了行人，车辆也顺利地进行了避让。</p>
+<p>当两位AI体验官离开阿波罗未来驾仓后，旁边还停靠着一系列无人驾驶车，根据李震宇介绍，这些无人驾驶车配备了<strong>人脸识别语音识别</strong>等技术，也都搭载了小度，<strong>和人类的互动已经超过了两亿次</strong>。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200915/ade016fcf41c4e948d4b35d49b2f1513.png" max-width="600" /></p>
+<p>根据介绍，今天两位乘坐的是百度<strong>第四代无人驾驶车</strong>。</p>
+<p>根据李震宇介绍，百度无人驾驶汽车的每次迭代，<strong>在能力提高10倍的基础上，价格还能降低一半</strong>，第五代也将如此，而且，百度<strong>第五代的无人驾驶汽车今天就开始选型研发了</strong>。</p>
+<p><strong>百度首个L4级无人驾驶生产线</strong></p>
+<p><strong>中国一汽和百度在红旗品牌上共同研发了一款L4级无人驾驶车！而且已经开始量产！</strong></p>
+<p>AI体验官带我们参观了百度首个L4级无人驾驶生产线，工厂内，可以自动把配件运送到指定部位。</p>
+<p>那L4级自动驾驶意味着什么呢？</p>
+<p><strong>L4级自动驾驶，属于“高度自动驾驶”</strong>。也就是说，除了某些特殊情况，一般无需人类干预。只要是有地图的地方，这类汽车都能实现完全自动驾驶。<strong>在绝大部分时间，可以解放双手。</strong></p>
+<p>AI体验官在生产线中为我们介绍道，在完成质量检测后，还要给这些车来一个“加冕”仪式，也就是为自动驾驶车装上“眼睛”，配备了这些灵敏的“眼睛”之后，就完成了所有的组装。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200915/8650d53f6bd845c789d13f82968dbb63.jpeg" max-width="600" /></p>
+<p>这款自动驾驶车神经体统高度发达，极大提高了汽车的灵敏度。</p>
+<p>李彦宏表示，未来五年后，北京很可能不堵车了。通过自动驾驶等技术，可以让出行效率提高15%-30%。</p>
