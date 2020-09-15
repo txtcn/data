@@ -1,0 +1,14 @@
+➜AMD放出RX 6000显卡外观图，神似Radeon VII
+http://www.expreview.com/76084.html	6652
+<p>上周AMD发出了官方预告，说下个月会推出新的Zen 3处理器以及RX
+6000系列显卡，前者的发布时间在北京时间10月9日零时，后者则是10月29日零时。关于Zen 3目前官方口风还是很紧的，基本没透露些啥，但RX
+6000显卡，AMD今天在各大社交平台都放出了它的外观照片。</p><p style="text-align: center;"><img src="https://img.expreview.com/news/2020/09/15/Radeon_RX6000.jpg" border="0"/></p><p>我们当然无法从显卡的外观上看出它的性能，不过这应该是款旗舰级的产品，因为它的散热设计和去年的Radeon
+VII非常相似，都是采用三风扇设计，和采用涡轮风扇的RX 5700系列有很大的不同，说明它的发热应该要比RX 5700
+XT大得多，双8pin供电也说明它的功耗不低，由于官方的渲染图没有把挡板渲染出来，所以不太清楚显卡的高度，不过很大概率和Radeon
+VII一样是用越肩式PCB。</p><p style="text-align:center;"><img src="https://img.expreview.com/review/2019/02/Radeon%20VII/Radeon%20VII13.jpg" border="0"/><br/>Radeon 7</p><p style="text-align: left;">目前知道RDNA 2的改进点有三个：提高每瓦效能；加入光线追踪支持；加入可变速率着色支持。预计，相对于RDNA，RDNA
+2架构将会继续提升50%的每瓦效能。性能的话昨天有AMD的测试样卡性能曝光，大概就RTX 2080
+Ti的水平，但不确定这是否就是AMD的新旗舰卡跑出来的性能，因为目前已知的Navi 21和Navi 22两个新GPU规格都比Navi 10更大，都可以叫作Big
+Navi，两者都会细分出各种不同的规格，所以根本无法确定上面这测试是那块卡跑出来的。</p>
+➜TikTok安卓版曾有任意代码漏洞，在最新版本中已被修复
+http://www.expreview.com/76085.html	8340
+<p>有安全研究人员在TikTok安卓版内发现4个高危漏洞，可以被那些别有用心的第三方安卓应用利用。一旦成功，攻击者可以完全渗透目标用户的TikTok帐户。这个漏洞在TikTok 17.7.7版中已经被修复。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/09/15/tiktok-logo.jpg" width="100%"/></p><p><a href="https://blog.oversecured.com/Oversecured-detects-dangerous-vulnerabilities-in-the-TikTok-Android-app/" target="_blank">Oversecured</a>的研究人员表示，他们在TikTok内发现了任意代码执行以及盗窃的漏洞。这份报告刚好是在关于Oracle与字节跳动达成协议的报导之后出来的。这些任意代码执行漏洞一旦被利用起来，攻击者可以访问目标用户账号上的消息以及视频。除此之外他们也可以拥有用户的TikTok应用权限，意味着攻击者可以进一步访问目标用户手机或者平板上的图片、视频、下载内容、录音录像功能以及用户的通讯簿。</p><p style="text-align: center;"><img src="https://img.expreview.com/news/2020/09/15/tiktok-1.png"/><br/>任意代码执行漏洞</p><p>研究人员表示：</p><blockq><p>“如果用户在他们的安卓设备上安装了恶意应用的话，那么这些漏洞就有可能被黑客利用。目前所有的漏洞都已（在最新版本中）被修复，用户应升级至最新版来确保可以得到最好的体验。”</p></blockq><p style="text-align: center;"><img src="https://img.expreview.com/news/2020/09/15/tiktok-2.png"/><br/>任意代码盗窃漏洞</p><p>研究人员是在对TikTok进行扫瞄时发现，其加载文件至应用时会产生几个漏洞。所有任意代码执行漏洞都是在AndriodManifes.xml文件内的不同安卓组件中发现的。有问题的安卓组件包括DetailActivity、NotificationBroadcastReceiver以及IndependentProcessDownloadService AIDL。它们缺乏某些安全检查，因此第三方应用或者任何人都可以将恶意文件加载到它们当中。</p><p>攻击者只要成功诱使目标用户下载特定的应用，就可以让那些应用在TikTok的私人目录内创建一个库文件并且自动加载。因此大家应注意，不要下载或安装任何来历不明的应用。</p>
