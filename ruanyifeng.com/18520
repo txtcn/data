@@ -137,7 +137,7 @@ subscription.unsubscribe();
 }, [props.source]);
 </code></pre></blockquote>
 <p>上面例子中，<code>useEffect()</code>在组件加载时订阅了一个事件，并且返回一个清理函数，在组件卸载时取消订阅。</p>
-<p>实际使用中，由于副效应函数默认是每次渲染都会执行，所以清理函数不仅会在组件卸载时执行一次，组件每次重新渲染之前，也会执行一次，用来清理上一次渲染的副效应。</p>
+<p>实际使用中，由于副效应函数默认是每次渲染都会执行，所以清理函数不仅会在组件卸载时执行一次，每次副效应函数重新执行之前，也会执行一次，用来清理上一次渲染的副效应。</p>
 <h2>九、useEffect() 的注意点</h2>
 <p>使用<code>useEffect()</code>时，有一点需要注意。如果有多个副效应，应该调用多个<code>useEffect()</code>，而不应该合并写在一起。</p>
 <blockquote><pre><code class="language-javascript">
