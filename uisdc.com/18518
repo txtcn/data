@@ -1,0 +1,716 @@
+➜实操案例！B端信息逻辑「超级整理术」 （上）
+https://www.uisdc.com/b-side-finishing	58073
+<p>B端产品信息具有：信息量大、关联关系复杂，最终达到目的是用户高效率的理解信息并完成任务：</p>
+<ul>
+<li>这是什么？-信息与角色对应</li>
+<li>我要做什么？-状态+操作</li>
+<li>会达成怎样的结果？(信息引导)</li>
+</ul>
+<h4><span class="auto_menu">佐藤可士信息整理术</span></h4>
+<p>佐藤可士的信息整理术，通过问诊客户，将思绪信息化，将原本看不见摸不着的事物可视化具像化，提升沟通精确度，并通过提出假说，来确认对方的想法。</p>
+<p>通过还原更多的沟通细节来体现在实际处理项目过程中，如何整理自己的思绪与客户（用户）的思绪。整个系统、有序化的思维更适用于B端设计中。</p>
+<p><span class="img-zoom"><img alt="实操案例！B端信息逻辑「超级整理术」 （上）" class="alignnone size-full wp-image-388504" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-bd-20200913-1.jpg" width="1080" height="720" /></span></p>
+<p>△ 佐藤可士信息整理术</p>
+<p>阿飞信息逻辑设计六步走，信息量比较大，本片先讲前3步：显性化、罗列、分类。</p>
+<p>显性化 &gt; 罗列 &gt; 分类 &gt; 组装&gt; 排序 &gt; 确定主次</p>
+<h4><span class="auto_menu">将信息显性化</span></h4>
+<p>B端团队岗位协作中，一般由产品经理根据业务&amp;用户需求将需求信息显性化。设计需要了解用户原声、评审需求</p>
+<p><strong>1. 用户需求原声了解有节奏沟通</strong></p>
+<p>对于需求原声的深刻了解，阿飞这里有2个建议：（适用于小型团队，设计团队在1～3人；或者设计归属于产品部门下）</p>
+<p>一方面：阿飞有建议将产品经理调研过程和结果附在需求文档前。这一建议被产品团队采纳。这样让设计、开发都知晓需求原由，并可追溯</p>
+<p>另一方面：有机会多和参与产品用户调研中，积极跟进需求进展有节奏的沟通</p>
+<p>有个现状，不一定所有的业务需求前期都会有设计参与。此况下，在产品环节，要注意把控沟通时机和节奏。不要常常打扰到产品经理的思考思路，比如看到产品间或与运营、开发讨论时，需要重点关注的，有空主动去听听。涉及到相关用户流程问题、适时发表意见</p>
+<p><strong>2. 需求评审check需求/任务流</strong></p>
+<p>在产品需求评审前，产品一般会发出需求。设计一定要提前去通盘了解需求、check需求。因为岗位角色倾向重点不同，产品经理会注重清晰地体现出业务的信息、流程，一般体现的是物理逻辑。</p>
+<p>设计师check需求基于五要素：场景、角色、目的、工具、行为分析，是否满足用户使用场景的需求。从用户操作任务出发分析，俗语「磨刀不误砍柴功」阿飞自己画出「任务流程图」。</p>
+<p>这个过程设计师有疑问可以尽情与产品沟通。便于在需求评审时设计师有高质专业的评审建议。</p>
+<h4><span class="auto_menu">线性罗列</span></h4>
+<p>阿飞一般将产品需求的信息罗列在Sketch画布中，这一步看似简单，也是在考验设计师「工匠」精神。</p>
+<p>遇到不太能理解 的业务细节（为什么需要有这个字段？专业性字段是什么意思…）除看产品需求文档，另外可以对产品经理「灵魂拷问」，或是了解产品经理的心路历程</p>
+<h4><span class="auto_menu">分类</span></h4>
+<p>这里，除根据信息的属性外，阿飞常用的实操作性强的方法，根据「动静态」分类。动静态分开会更有利于用户的判断、操作。</p>
+<h5>1. 静态信息 快照、基础属性</h5>
+<p>对象形成后基本信息，在最终的完结流程都不会有变化，即「快照」。比如OMS(订单管理系统)订单信息：</p>
+<ul>
+<li>商品信息-图片、名称、sku规格、单价、购买数量</li>
+<li>买家信息-帐号昵称、收件信息</li>
+<li>费用信息-商品总额、优惠劵、实付款（后付款的付款金额，需要订单费用和实付款分开）</li>
+<li>更多……</li>
+</ul>
+<h5>2. 动态信息 ：状态、信息、数据、标签</h5>
+<ul>
+<li>自身状态动态变化：状态、信息、数据类</li>
+<li>同类比较动态变化：标签、数据类</li>
+</ul>
+<p><strong>状态类、操作、动态信息</strong></p>
+<p>正向流程的节点状态、所对应的操作一般也不同，对应所产生的动态信息</p>
+<p>eg.如订单有待付款、待发货、已发货等以及对应的更新时间，发货物流信息<br />
+eg.工单流程有审核环节，对应审核状态以及备注等</p>
+<p>异常流程-对应需有即时的告诉用户，如订单信息缺失，渠道发货失败：发生了什么事？怎么做可以恢复正常？</p>
+<p><strong>标签类</strong></p>
+<p>展示部分对象的特征和优势，eg.官方自营、认证类等</p>
+<p><strong>数据类</strong></p>
+<p>如交易量，评价等等有自身的变化，更具有对比性价值</p>
+<p>更多B端设计干货：</p>
+<p>[link https://www.uisdc.com/structured-approach]</p>
+<p>[link https://www.uisdc.com/structured-approach-2]</p>
+<p>欢迎关注作者微信公众号：「Aber UX设计」</p>
+<p><span class="img-zoom"><img alt="实操案例！B端信息逻辑「超级整理术」 （上）" class="alignnone size-full wp-image-388492" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sc-20200913-8.jpg" width="180" height="181" /></span></p>
+➜基础指南！覆盖超广的UX全链路专业/业务术语（中英对照+注释）
+https://www.uisdc.com/ux-terminology	59286
+<p>最近发现在很多场合都有关于UX专业术语的使用场景，比如dribbble搜个灵感的时候、写规范的时候和作品集里排版的时候。但如果选择去度娘一下的话就会发现各个平台五花八门还不一定100%专业的翻译━∑(￣□￣*|||━。这里借助当时留英学数媒时候pro.Jules传授的一些叨逼叨术语和自己的调研收集给大家分享一波，确保精准全面，建议收藏喔。(PS：一些我自己觉得容易混淆的名词都给各位带上示例图啦）</p>
+<p>最后一大趴还给各位海选了产品、运营嘴边常叨叨的一些和UED有些关联的业务术语及简单介绍，帮助大家更好的摄取相关文章的知识点，了解业务背景，以及补缺补漏。</p>
+<h4><span class="auto_menu">相关职业方向（入坑了解）</span></h4>
+<ul>
+<li>UI（User Interface Design）：用户界面设计</li>
+<li>UX（User Experience Design）：用户体验设计</li>
+<li>IXD（Interactive Design）：交互设计</li>
+<li>UR（User Research）：用户研究，我估摸着这就是为何国内总把UE当交互缩写，毕竟用研交互不分家</li>
+<li>PD（Product Design）：产品设计</li>
+<li>PM（Product Manager）：产品经理</li>
+<li>RD（Reserch &amp; Develop)：研发（ios/安卓开发）</li>
+<li>FE（Front End）：前端（H5/PC开发）</li>
+<li>BE（Back End)：后端</li>
+<li>QA（Quality Assurance）：测试（产品研发功能点梳理测试，反馈bug，保障产品运行)</li>
+</ul>
+<h4><span class="auto_menu">UX工作流（作品集高频使用术语）</span></h4>
+<ul>
+<li>Competitive Analysis：竞品分析</li>
+<li>Data Analysis：数据分析</li>
+<li>User Stories：用户画像（故事版）</li>
+<li>Red routes/Key User Journeys：核心用户行为路径</li>
+<li>User Flows：用户使用流程</li>
+<li>Brainstorm &amp; Sketch：头脑风暴与草图绘制（sketch是草图的意思哦，可不是黄钻石hiahia）</li>
+<li>Wireframe：线框图</li>
+<li>Prototype：原型</li>
+<li>Finalise Layout：定义布局（这里指最终敲定方案）</li>
+<li>User feedback：用户反馈</li>
+<li>Focus Group：焦点小组</li>
+<li>User Interviews：用户访谈</li>
+<li>Usability Test：可用性测试</li>
+</ul>
+<h4><span class="auto_menu">组件与规范（关键词搜索常用）</span></h4>
+<p>UI Kits：UI组件/组件库（不要再去度娘之后写UI components之类的啦~）</p>
+<p>Design Principle：设计原则</p>
+<p>Design Guidelines：设计规范</p>
+<p>Landing Page：落地页（一般以H5形式展现给新用户拉新注册的）</p>
+<p>Splash（Splash Screen）：闪屏页</p>
+<p>Launch（Launch Screen）：启动页</p>
+<p>Walkthrough：引导页</p>
+<p>Navigation：顶部导航</p>
+<p>Tab Bar：底部导航</p>
+<p>Sidebar：侧边栏</p>
+<p>Status Bar：状态栏</p>
+<p>Search Bar：搜索栏</p>
+<p>Breadcrumb：面包屑</p>
+<p>Dropdown：下拉菜单</p>
+<p>Pagination：分页</p>
+<p>Pagination Dots：分页点/轮播点</p>
+<p>Steps：步骤条</p>
+<p>Avatar：头像</p>
+<p>Checkbox：多选框</p>
+<p>Radio：单选框</p>
+<p>Text Field：输入框</p>
+<p><span class="img-zoom"><img alt="基础指南！覆盖超广的UX全链路专业/业务术语（中英对照+注释）" class="alignnone size-full wp-image-388209" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-fg-20200910-1.jpg" width="750" height="88" /></span></p>
+<p>Selector ：选择器（PC端的叫法）</p>
+<p><span class="img-zoom"><img alt="基础指南！覆盖超广的UX全链路专业/业务术语（中英对照+注释）" class="alignnone size-full wp-image-388210" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-fg-20200910-2.jpg" width="320" height="80" /></span></p>
+<p>Picker：选择器（移动端的叫法）</p>
+<p><span class="img-zoom"><img alt="基础指南！覆盖超广的UX全链路专业/业务术语（中英对照+注释）" class="alignnone size-full wp-image-388211" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-fg-20200910-3.jpg" width="750" height="430" /></span></p>
+<p>Popover：气泡卡片</p>
+<p>[link https://www.uisdc.com/ui-element-popover]</p>
+<p>Message：轻量级全局提示（安卓常称为Snackbar/toast、iOS常称Alert）</p>
+<p>[link https://www.uisdc.com/snackbar-design]</p>
+<p><span class="img-zoom"><img alt="基础指南！覆盖超广的UX全链路专业/业务术语（中英对照+注释）" class="alignnone size-full wp-image-388212" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-fg-20200910-4.jpg" width="558" height="117" /></span></p>
+<p>Modal：模态弹窗（模态与非模态的区别就在于点击弹窗外的地区是否收起弹窗）</p>
+<p>Action Sheet：操作器（勉强这么翻译8，可以进行有限选项操作的浮层，例如分享什么的）</p>
+<p>[link https://www.uisdc.com/sheet-design]</p>
+<p><span class="img-zoom"><img alt="基础指南！覆盖超广的UX全链路专业/业务术语（中英对照+注释）" class="alignnone size-full wp-image-388213" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-fg-20200910-5.jpg" width="515" height="800" /></span></p>
+<p>Badge：徽标（红点Dot包含在这个分类里）</p>
+<p>Tag：标签</p>
+<p>Slider：滑动器</p>
+<p>Button：按钮</p>
+<p>Switch：开关</p>
+<p>[link https://www.uisdc.com/stepper-and-switch]</p>
+<h4><span class="auto_menu">交互手势</span></h4>
+<ul>
+<li>Gesture：手势</li>
+<li>Hover：鼠标悬停</li>
+<li>Disable：不可点击态</li>
+<li>Click：鼠标点击</li>
+<li>Tap：手指点击</li>
+<li>Double Tap：手指双击</li>
+<li>Pinch：手指缩放（缩小）</li>
+<li>Spread：手指缩放（放大）</li>
+<li>Scroll：滑动（纵向）</li>
+<li>Slide：滑动（横向）</li>
+<li>Long Press：长按</li>
+<li>Drag：拖动</li>
+</ul>
+<h4><span class="auto_menu">主流设计语言与模型</span></h4>
+<ul>
+<li>Atom Design：原子设计（基础组件化设计思路）</li>
+</ul>
+<p>[link https://www.uisdc.com/atomic-design-guidelines]</p>
+<ul>
+<li>iOS Design：苹果系统设计</li>
+<li>Material Design：原质化设计（着名的谷歌MD设计语言）</li>
+<li>Metro/Modern UI：现代化设计（微软win8开始使用的设计语言，一开微软扁平化的先河）</li>
+<li>Ant Design：蚂蚁设计（阿里研发的企业级B端设计语言，非常好用，PC后台的组件搭建可以参考AD）</li>
+<li>Kano Model：卡诺模型，根据不同类型的需求与用户满意度之间的关系来划分需求优先级的模型</li>
+</ul>
+<p>[link https://www.uisdc.com/demand-analysis-kano-model]</p>
+<ul>
+<li>Double Diamond Model：双钻模型，用来描述设计过程的一种发散和聚合的思维</li>
+</ul>
+<p>[link https://www.uisdc.com/double-drilling-design-model]</p>
+<ul>
+<li>Google Heart Model：谷歌的用户体验度量模型，用来量化体验设计成果的。项目负责人们可以借鉴用来建立团队评估体系。</li>
+</ul>
+<p>[link https://www.uisdc.com/quantify-user-experience]</p>
+<p>友情提示：设计模型其实有很多，但是主流的模型我推荐大家深度了解这3个（卡诺、双钻、谷歌heart）就差不多了，基本涵盖了整个设计流程闭环。知识摄入需讲究实际应用性价比，否则容易陷入理论派误区。</p>
+<h4><span class="auto_menu">职场黑话系列</span></h4>
+<p><strong>1. 业务通用类</strong></p>
+<ul>
+<li>KPI（Key Performance Indicator）：关键绩效指标（也就是评定一些岗位年终绩效的业绩指标）</li>
+<li>OKR（Objectives and Key Results）：目标与关键成果（很多公司都会用来在年初时候让大家写全年工作计划和目标的）</li>
+<li>B2B（Business-to-Business)：企业对企业，平台交易的双方都是商家，比如阿里巴巴1688</li>
+<li>B2C（Business-to-Customer):企业对个人，平台的一端为商家一端为普通用户，比如京东和天猫的自营</li>
+<li>C2C（Customer-to-Customer):个人对个人，平台交易的双方都是普通用户，比如淘宝、咸鱼、转转</li>
+<li>O2O（Online To Offline）：线上到线下，是指将线下的商务机会与互联网结合，让互联网成为线下交易的平台，比如滴滴、美团、贝壳</li>
+</ul>
+<p><strong>2. 产品类</strong></p>
+<ul>
+<li>DAU（Daily Active User）：日活跃用户数量（决定C端产品量级的核心指标，业务导向的公司常问的一个数据）</li>
+<li>UV（Unique visitor)：独立访客数（最简单理解:一个账号一天内无论点击了多少次都是1个UV数）</li>
+<li>PV（Page View）：页面浏览数（最简单理解：一个账号点击多少次就有多少PV数）</li>
+<li>IP（Internet Protocol）：独立IP数（最简单理解：一个路由器的网下的电脑点击了多少次，多少个账号，都是一个IP数）</li>
+<li>TP（Time On Page）：页面停留时长（内容消费型产品关注：比如抖音）</li>
+<li>SKU（Stock Keeping Unit）：库存量单位「电商类产品常用」（即一款商品：例如：iPhone X 64G 银色 是一个SKU，Phone X 64G 金色又是一个SKU）</li>
+<li>SPU（Standard Product Unit）：标准产品单位「电商类产品常用」（即一类商品：例如：iPhone X是一个SPU）</li>
+<li>PRD（Product Requirement Document ）：产品需求文档（产品提供设计、技术做需求的详细文档说明）</li>
+<li>MVP（Minimum Viable Product）：最小可行产品，用最小的成本（资源投入）进行产品试错，多用于孵化类项目0-1。常见方式：灰度发布</li>
+<li>GrayRelease/dark launch：灰度发布，简单来说就是让一部分用户先用上新版本的内容，另一部分还用旧版本，慢慢过渡实现全面新版本覆盖。</li>
+</ul>
+<p>[link https://www.uisdc.com/15-data-terminology]</p>
+<p><strong>3. 运营类</strong></p>
+<ul>
+<li>KOL（Key Opinion Leader）：关键意见者（一般做内容的运营常用来泛指自带大波流量的网红-可以制作精良的优秀自媒体输出者）</li>
+<li>PGC（Professional Generated Content ）：专家制造内容（这里一般指介个app的内容比如新闻、视频都是由产品内容人员编辑生产的）</li>
+<li>UGC（User Generated Content）：用户生产内容（这里一般指介个app的内容比如视频、图片等都是由app的使用用户生产的）</li>
+<li>ROI（Return on Investment ）：投资回报率/投入产出比，用来衡量活动运营是否值得，能得到多少价值（运营们鸭梨也hin大，拿着大家的钱得花在刀ba上。）</li>
+<li>GMV（Gross Merchandise Volume）：销售额，成交总金额（电商类关注业务指标）</li>
+<li>AARRR模型：Acquisition、Activation、Retention、Revenue、Refer这个五个单词的缩写，分别对应这一款移动应用生命周期中的5个重要环节。分别为：获取用户、提高活跃度、提高留存率、获取收入、自传播</li>
+</ul>
+<p>[link https://www.uisdc.com/aarrr-funnel-model]</p>
+<p>题外话</p>
+<p>感觉最近圈内的小伙伴都是人到中年，焦虑无比，好不容易在不断缩减的hc中抓到机会，却成了996和PUA的另一场噩梦。</p>
+<p>我自己也处在命运交替的十字路口，想到「35岁」清退的新闻，只能说尽量努力规划好互联网职业生涯剩余的寿命积攒钱袋子和思路，为下一个十年做好准备。</p>
+<p>Anyway，希望大家还是少刷maimai减少负能量，理清现状和思路，做正确的选择比努力更重要。干巴爹~</p>
+<p>更多专业术语科普：</p>
+<p>[link https://www.uisdc.com/11-popular-design-pattern]</p>
+<p>欢迎关注作者的微信公众号：「Nana的设计锦囊」</p>
+<p><span class="img-zoom"><img alt="基础指南！覆盖超广的UX全链路专业/业务术语（中英对照+注释）" class="alignnone size-full wp-image-269451" src="https://image.uisdc.com/wp-content/uploads/2018/05/uisdc-nanaqr.jpg" alt="面试常问题！什么是设计系统、设计语言和设计语言系统？" /></span></p>
+➜腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇
+https://www.uisdc.com/young-culture	60478
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388539" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-2.jpg" width="1080" height="200" /></span></p>
+<p>很难界定千禧一代（生于20世纪80年代至2000年初——和 z 世代（生于1995年以后），但那些已成为当前消费市场中心的人与上一代有着不同的价值观和文化品味。他们表现出的消费特征是强调个人幸福而非群体，分享而非持有，体验而非产品。他们倾向于通过购买包含社会价值观和信息的东西来表达自己的信念，而不仅仅是单纯地购买。他们也喜欢那种展示自己成功或财富的文化，并且乐于投资昂贵的奢侈品。与老一辈为了一个遥远的未来而牺牲了现在不同，他们关注的是现在。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388540" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-3.jpg" width="1080" height="116" /></span></p>
+<p>千禧一代：在美国，千禧一代通常指的是出生于1980到21世纪初的人。对于千禧一代的界限有很多分歧，但2018年3月1日，《纽约时报》宣布，美国皮尤研究中心对1981年至1996年的千禧一代进行了定义。千禧一代也被称为 Y 一代，意思是他们是 X 一代的下一代。因为熟悉 IT 技术,这一代人也被称为技术一代。在《时代》杂志上，他们把这一代人称为「自我一代」 ，因为这一代人的思考和行动以自我为主。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388541" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-4.jpg" width="1080" height="118" /></span></p>
+<p>Z世代：指的是1995年后出生，在全球和美国市场上已占据最高人口比例，超过了千禧一代的人。目前，Z世代处于十几岁到二十多岁的年龄段，他们被称为数字原住民，不像千禧一代生长在模拟和数字文化的混合环境中，他们从小就接触到数字环境。</p>
+<p>首先，我们将用6个能代表千禧一代和z世代的关键词来总结他们的特征。其目的是了解处于趋势中心的他们，解读流动的变化，并预测未来。我们将以匹配每个关键词的例子来研究年轻一代的特点。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388542" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-5.jpg" width="1080" height="466" /></span></p>
+<p>对于千禧一代和Z世代来说，被认为是某一特定阶层的专有财产的文化，如向公众传播的游戏、动画和科幻电影等，已经成为他们生活的一部分。奢侈品牌历来在战略上排斥流行文化，但他们目前正试图通过针对千禧一代和Z世代的各种合作来反映年轻一代的品味和文化。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388543" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-6.jpg" width="1080" height="478" /></span></p>
+<p><strong>Supreme#StreetBrand#Drop</strong></p>
+<p>嘻哈和滑板在过去只是亚文化，现在成为谈论潮流不可或缺的因素。拥有滑板运动员感性和理念的街头品牌Supreme，受到全世界年轻人的支持。他们与许多奢侈品牌合作，激发年轻一代的收集欲望。千禧一代和Z世代毫不犹豫地将资金投入到他们喜欢的东西上。许多具有亚文化精神的公司和品牌正在引领这一潮流。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388544" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-7.jpg" width="1080" height="638" /></span></p>
+<p><strong>#Popmart#ArtToy#Blindbox#Unboxing</strong></p>
+<p>不同于动画或电影中的人物形象，艺术玩具是以艺术家的作品为基础，用3D形式制作出来的具有艺术感的人物。在中国，它们现在是最为热门的购买项目。千禧一代和Z世代喜欢享受爱好和表达个性的需求，使得这个市场正在迅速增长。过去，艺术玩具是一种只有少数人喜欢的文化，但千禧一代和Z世代不把钱花在业余爱好上，他们把这种收集艺术玩具的文化传播给了大众。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388545" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-8.jpg" width="1080" height="466" /></span></p>
+<p>复古是一种持续数年的潮流，如今，年轻一代更注重将旧的潮流创造诠释为新事物，而不仅仅是发现旧的东西。千禧一代和Z世代不怀念过去，但过去本身对他们很有吸引力。比起始终如一的文化，他们认为多样性和原创性是时髦的，他们没有经历过的内容是新出现的。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388546" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-9.jpg" width="1080" height="449" /></span></p>
+<p><strong>#UglyShoes#Balenciaga#Sneakers</strong></p>
+<p>Balenciaga在2017年发布了一款名为triple S的运动鞋，这是他们品牌之前从未见过的设计。它包含一个大的外底，一个不同成分的多层鞋帮，并被至少设计了3-4种颜色。triple S打开了ugly shoes的时代，因为设计得很像爸爸会穿的运动鞋，这种鞋也被称为「老爹鞋」。在不同品牌中，他们发布了代表「ugly shoes」的运动鞋，并变得非常流行。90年代是运动服装的全盛时期，许多品牌都使用最新技术重新推出当时热销的产品。这些款式不是根据铁杆趋势匆忙制造的，它蕴含着品牌悠久的传统。年轻一代对这些品牌的设计和故事充满热情。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388547" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-10.jpg" width="1080" height="383" /></span></p>
+<p><strong>#RetroRadio#RetroProduct#RetroInterior</strong></p>
+<p>千禧一代和Z世代在物质丰富的生活环境中长大，他们倾向于追求有价值的生活。在购买产品时，除了实用性，他们更喜欢独特性或故事化的产品。收音机曾经是记忆的产物，但最近又形成了以年轻消费者为中心的，复古收音机的新的消费趋势。集感性设计、故事性和多种功能于一体的复古收音机，成为年轻消费者喜爱的礼物，也是年轻一代想要拥有的室内配饰。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388548" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-11.jpg" width="1080" height="466" /></span></p>
+<p>在认为环保就是性感的态度下，千禧一代和Z世代喜欢素食主义，他们觉得假皮草很新潮，甚至会考虑制作过程来购买化妆品。现在，企业已经读懂了这些市场趋势，并开始改变营销方式，只有注重可持续性而不是追求简单美的公司才能生存下来。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388549" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-12.jpg" width="1080" height="358" /></span></p>
+<p><strong>#Patagonia#DoNotBuyThisJacket#Eco-friendly</strong></p>
+<p>Patagonia是一家以引领环境保护和自然保护而闻名的公司，他们发布了一则「不要买这件夹克」的广告，两年内销售额增长40%。年轻一代不是通过广告来购买Patagonia的产品，而是赞同他们的理念，即尽量减少对环境的破坏，追求公平交易，并告知一件夹克的制作过程如何影响环境，通过商业来保护环境。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388550" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-13.jpg" width="1080" height="363" /></span></p>
+<p><strong>#Freitag#UpCycling#Sustainability</strong></p>
+<p>Freitag品牌包包由卡车防水布、汽车安全带、废弃自行车橡胶管制作而成，是环境保护和循环再造的代表。它回收现有的废弃品，并通过添加不同的价值进行再创造。尽管售价高达200-600美元，但它目前有400家商店，去年的收入为10亿美元。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388551" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-14.jpg" width="1080" height="466" /></span></p>
+<p>我们称这些年轻人为「中性」的一代，他们接受不同的种族、性别和文化背景，并承认其价值观。与上一代相比，千禧一代和Z世代更了解和熟悉那些与自己不同的人，他们对同性恋和跨性别问题也很感兴趣。他们没有按照别人设定的标准去调整自己，而是有一种接受和肯定现状的意识。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388552" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-15.jpg" width="1080" height="327" /></span></p>
+<p><strong>#GlobalPrideCrossing#AnimalCrossing</strong></p>
+<p>针对性少数群体的活动在任天堂游戏《动物之森》中举办，这款游戏在今年很受欢迎。因为时间和空间的限制，以前没有机会参加活动的人们，可以轻松地在虚拟空间中参与活动。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388553" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-16.jpg" width="1080" height="385" /></span></p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388554" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-17.jpg" width="1080" height="440" /></span></p>
+<p><strong>#Non-BinaryEmoji#Memoji#Apple</strong></p>
+<p>苹果在其系统为每个表情符号添加了「性别中立」的选项。区分男人和女人的视觉元素被排除在外，比如头发的长度变为中等长度，并使用灰色，这样衣服的颜色就不会让人想起特定的性别。肤色也拓宽了选择范围，让用户选择与自己相似的颜色。苹果2019年推出的表情符号功能为更多种族和性别提供了多种选择，包括脸型、肤色、发型等，人们可以对苹果的性别和种族问题一目了然。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388555" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-18.jpg" width="1080" height="466" /></span></p>
+<p>数字原住民通常被称为「拥有智能手机的一代人」，智能手机的发展比其他任何技术都更主导着数字原住民的生活。他们熟悉互联网和IT，并且喜欢图像和视频内容，而非文本，喜欢手机而非电视机和计算机。视频是千禧一代和Z世代最突出的交流工具，他们把大部分时间花在YouTube上进行搜索、学习、消费和交流。YouTube已经成为他们不可或缺的服务。由于他们是通过视频学习和交流的一代人，许多公司利用影响力，在视频内容营销上投入大量的资金。在决定购买时，他们不是根据广告，而是通过各种渠道收集到的信息和经验来判断产品的价值。前几代人主要受老一辈人的影响，而这一代人则受年龄相近的影响者的影响。此外他们热衷于分享自己的兴趣和生产内容，他们可以被视为文化的消费者和生产者。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388556" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-19.jpg" width="1080" height="319" /></span></p>
+<p><strong>#GucciGang#Youtube#Influencer</strong></p>
+<p>17岁的说唱歌手Lil Pump穿Gucci产品演唱的Gucci Gang，在Billboard排行榜上名列第三。他通过Facebook，Instagram和YouTube对这首歌进行各种视频营销。2017年，以「Gucci」 和 「Gucci-ish」为关键词的谷歌搜索量也高居时尚类榜首。当其他奢侈品牌担心自己的品牌形象会在网络空间受损时，Gucci在网络进行投资，使Gucci成为千禧一代和Z世代喜爱的品牌。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388557" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-20.gif" width="639" height="373" /></span></p>
+<p><strong>#Meme#TikTok#Challenge#Remix</strong></p>
+<p>通过摘录、模仿和再加工一些现有内容而产生的模因，是业余爱好者和粉丝自愿创作并传播到SNS的一种游戏文化。它像病毒一样迅速传播，并给分享相同模因的群体一种强烈的同质感。最近，它作为一种代表千禧一代和 z 一代的数字游戏文化受到了广泛关注。美国杂志《纽约客》称TikTok为模因工厂，TikTok在美的用户年龄60%为16到24岁之间，它是一款经过优化的应用程序，用户可以消遣15秒左右的短视频，也可以自己制作内容。年轻人可以通过TikTok来复制和创造新的模因。TikTok不同的两个视频有多种混音，并且不同的人编辑相同的图像，可以产生新的，感觉不一样的图像。此外，「挑战」文化最近在TikTok变得流行起来。从表演特定任务，到舞蹈挑战，再到偶像歌曲，各式各样的挑战正在TikTok中举行。因此，千禧一代和Z世代正通过TikTok积极地引领内容市场。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388558" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-21.jpg" width="1080" height="466" /></span></p>
+<p>千禧一代和Z世代把消费看成是当前的满足感，而不是未来的储蓄，新的体验是必须的投资。即使减少了其他方面的开支，他们也会根据自己的心情和目的，投资消费一种不同寻常的、更加现实的体验。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388559" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-22.jpg" width="1080" height="671" /></span></p>
+<p><strong>#GentleMonster#CultureExperience#RetailExperience</strong></p>
+<p>创造与众不同的概念空间，引导用户体验和购买眼镜产品，Gentle Monsterde 在空间上充满产品购买与体验价值的空间策略，给千禧一代和Z世代带来好感。针对线上线下同时进行的项目，有效满足了这几代人的体验型消费倾向。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388560" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-23.jpg" width="1080" height="749" /></span></p>
+<p><strong>#NRC#Nike+RunClub#SNS#BrandExperience</strong></p>
+<p>Nike通过各种营销活动，提供令人愉悦的跑步体验，引领跑步趋势。在每年都举办高水平跑步活动，并且可以与专业教练和参与者一起训练的Nike + Run Club上，根据不同跑步者的距离、速度和水平等技能，Nike为他们提供定制的跑步程序。Nike的营销策略注重运动的难忘体验，而不仅仅是销售运动鞋，因为那些体验到跑步乐趣的年轻消费者会在社交媒体上，不断上传能展示自己跑步记录的照片。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388561" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-24.jpg" width="1080" height="298" /></span></p>
+<p>千禧一代和Z世代追求理性消费，并首先倾向于投资自己。接受一个品牌的方式也取决于品牌所追求的价值，它所具有的风格，以及它与自身的契合度。过去，奢侈品牌在战略上排斥流行文化，但现在他们正在针对年轻一代进行各种尝试。千禧一代和Z世代正在成为最有影响力的消费者，品牌需要的是能够直接吸引他们品味并带来乐趣的营销，而不是他们过去所追求的优雅的品牌战略。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388562" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-25.jpg" width="1080" height="264" /></span></p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388563" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-26.gif" width="640" height="320" /></span></p>
+<p><strong>Chrome Hearts x Converse Chuck Taylors</strong></p>
+<p>Chrome Hearts和Converse合作打造的全明星运动鞋已经发布。这款世上仅有一双的联名运动鞋，用Chrome Hearts的识别标志—金属十字徽标紧密地贴在匡威运动鞋中设计而成。Bam Margiela在Instagram上发布了这款运动鞋，他一直在发穿着联名运动鞋进行滑板运动的视频。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388564" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-27.jpg" width="1080" height="518" /></span></p>
+<p><strong>Chanel Game Center</strong></p>
+<p>奢侈品牌Chanel开了一家游戏中心，当你进入这个游戏中心，你会发现一个化妆品与娱乐共存的世界。以游戏机为概念，Chanel的目的是购物+娱乐。比起引诱人们对品牌进行单次性购买，重要的是让他们体验品牌并塑造一个年轻的形象。质量和苛性比固然重要，但是针对千禧一代和Z世代，品牌体验是否有吸引力和是否有乐趣更重要。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388565" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-28.jpg" width="1080" height="687" /></span></p>
+<p><strong>Louis Vuitton x NIGO</strong></p>
+<p>Louis Vuitton设计师Virgil Abloh和NIGO（日本街头时尚的传奇人物和Human Made的创始人）进行了一次合作。NIGO曾为日本代表性街头品牌Bape工作，Humanmade是NIGO于2010年创立的服装品牌，正在推出基于日常主题的美国复古休闲服装。此次合作通过Louis Vuitton 2020年秋季前系列外观手册公布，由标题为LV2的设计产品组成，用Nigo的风格表达Louis Vuitton的特征。当这两个在高级时装和街头品牌领域处于领先地位的品牌打破界限，展现出前所未有的融合，千禧一代和Z世代都非常喜欢。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388566" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-29.jpg" width="1080" height="624" /></span></p>
+<p><strong>Burberry</strong></p>
+<p>掉落式销售策略是指，通过一些商店或社交网络以惊人的方式销售限量版或小批量生产的产品。受Supreme等街头品牌投放策略的启发，Burberry每月17日推出一款针对年轻一代口味的新产品，这款新产品仅限于线上销售。掉落式销售策略是一种能够满足千禧一代和Z世代渴望拥有特殊产品需求的策略。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388567" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-30.gif" width="639" height="309" /></span></p>
+<p><strong>PALACE</strong></p>
+<p>PALACE是一个以滑板服装为主，对年轻人有很大影响的英国街头品牌，在英国被称为「Superme」。PALACE使用街头文化经常引用的复古元素来打造品牌形象。PALACE 公司有意通过模拟VHC(家庭视频系统)的拍摄方式进行市场营销。他们还通过模仿不同的品牌或制作看起来像是开玩笑的产品说明页，来迎合想要独特和新鲜事物的，年轻一代的口味。通过这些营销，PALACE得到了喜欢复古和街头文化的年轻一代的好评。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388568" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-31.jpg" width="1080" height="446" /></span></p>
+<p><strong>Lululemon</strong></p>
+<p>与其他时尚品牌不同，Lululemon强调通过品牌而不是产品本身获得体验。Lululemon有各种各样的项目，如瑜伽、冥想、现代舞和跑步，顾客可以定期参加，并一起享受锻炼和文化。Lululemon的 核心哲学是汗水生活，这是一种喜欢流汗，热爱生活的人的生活方式。千禧一代和Z世代更喜欢穿能让自己满意的衣服，而不是穿衣服给别人看，Lululemon品牌本身就能吸引到他们。现有的时尚服装市场总体呈下降趋势，但运动休闲服装市场在年轻一代中稳步增长。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388569" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-32.jpg" width="1080" height="264" /></span></p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388570" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-33.jpg" width="1080" height="496" /></span></p>
+<p><strong>Alexander Wang x McDonalds</strong></p>
+<p>去年11月，Alexander Wang发布了一款新产品，缎面午餐袋。因为外形酷似麦当劳的午餐袋，这款产品备受关注。Alexander Wang后来与麦当劳合作发布了午餐袋和野餐篮。他说「麦当劳品牌一直是最接近流行文化的品牌，能够参与到创意项目中来，我感到很荣幸」。麦当劳中国首席营销官徐佳婷（Christine Xu）也提到，「与Alexander Wang的合作反映了中国消费者对新理念和创新的强烈渴望，我希望这次合作能使人们微笑，能给他们的日常生活带来微小但令人惊叹的快乐」。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388571" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-34.jpg" width="1080" height="597" /></span></p>
+<p><strong>CocaCola NewCoke x Stranger Things</strong></p>
+<p>1985年，可口可乐推出一种新配方赢得了百事可乐的竞争，但由于现有消费者的强烈反对，新配方在上市三个月后就停止了生产。30年后，这款新可乐随Netflix电视剧《怪奇物语3》回归。30年前没体验过新可乐的年轻一代通过这部剧对新可乐的味道产生了好奇，可口可乐通过一家特殊的弹出式商店复制了新可乐的配方以及设计，并对这款限量版新可乐进行销售。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388572" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-35.jpg" width="1080" height="738" /></span></p>
+<p><strong>Gompyo Flour</strong></p>
+<p>Gompyo最初是韩国磨坊公司具有代表性的面粉品牌，但现在，它与LG家居&amp;保健、Run Rabbit、Swanicoco和4XR等各种品牌合作，以复古概念展示了厨房清洁剂、化妆品、服装、啤酒等各种产品。虽然「面粉等于Gompyo」在中年人中根深蒂固，但它被认为是适合年轻一代的，新颖而有趣的品牌。这种激进而富有挑战性的变化使其成为最受欢迎的复古品牌。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388573" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-36.jpg" width="1080" height="641" /></span></p>
+<p><strong>Jinro Soju</strong></p>
+<p>Jinro是最近随着newtro潮流而更新的品牌之一。Jinro透露了「 Jinro is back」的logo和浅蓝色瓶包装。这款重新诠释了他们原来品牌形象的产品在推出后两个月内就实现了销售目标。Jinro正通过与Obey，Covernat等街头时尚品牌合作，与户外品牌Helinox发行野餐装等方式，努力吸引年轻一代。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388574" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-37.jpg" width="1080" height="264" /></span></p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388575" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-38.jpg" width="1080" height="847" /></span></p>
+<p><strong>Louis Vuitton x LOL</strong></p>
+<p>积极抓住年轻消费者的Louis Vuitton也将数字营销扩展到了电子竞技领域。Louis Vuitton与英雄联盟合作的特别目标似乎是中国消费者，因为他们希望利用LoldCup (英雄联盟+世界杯）在中国的流行来扩展消费者的体验。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388576" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-39.jpg" width="1080" height="625" /></span></p>
+<p><strong>PUBG x BAPE</strong></p>
+<p>韩国皇室游戏PUBG与日本街头品牌BAPE合作。通过这次合作，BAPE发布了含有PUBG品牌元素的标志性产品，比如鲨鱼迷彩拉链风帽、短袖衬衫、背包和其他物品。如果用户在现实中购买这些产品，他们将获得可以在游戏中使用的代码，这些代码可以获取 BAPE的物品。通过这款合作产品，PUBG的用户不仅可以在现实，还可以在游戏中看起来独特而时尚。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388577" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-40.gif" width="640" height="279" /></span></p>
+<p><strong>Animal crossing</strong></p>
+<p>与被新冠疫情捆住了手和脚的现实世界不同，动物之森允许人们在虚拟空间中享受日常生活，它给那些不得不呆在家里的人带来了满足感。在这个游戏中，你可以通过换几件在现实中很难穿的奢侈衣服来展示你的时尚感。随着游戏对时尚越来越感兴趣，奢侈品牌也进入了虚拟世界。Valentino在动物之森中发布了二十种风格的衣服，Mark Jacobs 免费发布了6套，Anna Sui和 GCDS也有参与。对于追求个性和自我满足的千禧一代与Z世代来说，游戏中的奢侈服饰和配饰成为了一种很好的推广品牌的方式。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388578" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-41.gif" width="640" height="263" /></span></p>
+<p><strong>Zepeto x Blackpink</strong></p>
+<p>全球AR角色服务公司Zepeto与韩国偶像Black Pink有过一次代表性的合作。因为 Zepeto APP没有时间和空间的限制，粉丝可以和Black Pink的角色合照，并一起享受和参加各种各样的活动。如今，年轻一代喜欢在网上创建他们自己的角色(多重形象），这些生活在网络空间的角色，比在现实拥有更多的自由。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388579" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-42.gif" width="640" height="240" /></span></p>
+<p><strong>Fortnite x Travis Scott</strong></p>
+<p>Travis Scott在 《堡垒之夜》的游戏世界中举办演唱会并发布新歌。1230万用户在世界第五大游戏中同时观看了这场show。他们实时演出，用户则在游戏中交流和享受这场演唱会。在因为新冠疫情无法举办演唱会的情况下，通过游戏进行的虚拟演唱会给年轻一代带来了特别的乐趣。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388580" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-43.jpg" width="1080" height="311" /></span></p>
+<p>《和平精英》是腾讯游戏公司出品的一款皇室战争手游。通过与美国着名电动汽车品牌特斯拉合作，《和平精英》的用户可以在游戏中直接驾驶特斯拉。此前，当《和平精英》推出一款可以在游戏中驾驶的玛莎拉蒂时，游戏用户增加到了2700万。与特斯拉的合作也有望产生巨大的广告效应。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388581" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-44.jpg" width="1080" height="264" /></span></p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388582" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-45.gif" width="639" height="278" /></span></p>
+<p><strong>Snapchat x Demian Hirst</strong></p>
+<p>当代最着名的英国艺术家 Damien Hirst发明了一种 Snapchat镜头，任何人都可以在Snapchat APP中使用AR技术来体验他的旋转作品。有了这个镜头，人们可以用Demian Hirst完成作品的方式在APP上作画。Damien Hirst和Snapchat建议通过这个项目，向那些致力于为弱势群体提供现代医学科学的非盈利组织捐款。这项捐赠政策使Snapchat得到了不大会为社会或环境花钱的，千禧一代和Z世代的巨大反响。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388583" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-46.jpg" width="1080" height="640" /></span></p>
+<p><strong>KAWS Virtual Gallery</strong></p>
+<p>随着新冠病毒对空间的日益限制，世界各地的一些画廊和博物馆允许人们在线观看他们的展览。最近墨尔本国家美术馆与年轻一代喜爱的艺术家 KAWS共同举办了一个虚拟展览。进入NGV网站，人们可以在一个由3D构成的空间里欣赏一个逼真的展览。此外，KAWS还与Acute Art合作，创作了可在全球12个城市体验的AR雕塑。Acute Art通过积极利用VR和AR等尖端技术，引入了新的视觉艺术形式。通过手机的AR技术，用户可以自由地观看由3D实现的KAWS雕塑。采用这一先进技术的展览超越了时间和空间的限制，同时展示了绿色展览的可能性。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388584" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-47.gif" width="640" height="288" /></span></p>
+<p><strong>Apple [AR]T</strong></p>
+<p>使用AR技术，苹果发布了一款名为[AR]T的体验系列。该系列由交互式 [AR]T Walk组成，其中包括世界着名的当代艺术家的AR作品；以及Apple Store的[AR]T，用户可以在全球所有苹果商店体验AR作品。[[AR]T Walk有一个体验旧金山、伦敦、香港和东京等城市的概念，并在每个城市街道行走的同时，通过iPhone的AR技术欣赏艺术作品。在Apple Store的[AR]T中，用户可以在苹果专卖店欣赏Nick Cave扩增现实的艺术作品。专注于向数字原生一代分享有趣经验的方式，使苹果的AR技术推广取得了成功。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388585" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-48.jpg" width="1080" height="298" /></span></p>
+<p>千禧一代和Z世代都是数字原住民，他们使用移动设备的比例远远高于其他任何一代。通过移动设备，这些年轻一代可以进行超越时空限制的交流，他们喜欢通过图像和视频与同龄人交流，通过社区获取新闻和信息，也更加自由地展示自己的个性。这几代人的这些特点也被应用到了移动APP的首选项上。对于千禧一代和Z世代来说，从通信到社交，购物到银行，移动APP几乎应用于他们日常生活的每一部分。本节我们将分享市场上正在兴起的年轻一代的移动服务。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388586" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-49.jpg" width="1080" height="264" /></span></p>
+<p>年轻一代喜欢根据图片或视频来寻找、编辑和分享他们想要的信息，他们喜欢不厌其烦地制作和消费在线内容来展现自己。此外，千禧一代和Z世代热衷于不到一分钟的短视频。因为年轻人非常渴望用简单易行的方式制作和分享他们的日常故事，可以制作短视频的，像Instagram 和 TikTok一样的APP越来越受欢迎。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388587" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-50.gif" width="639" height="357" /></span></p>
+<p><strong>Tiktok</strong></p>
+<p>TikTok提供各种各样的工具帮助人们进行短视频内容创作。通过AR技术修饰人脸的滤镜、各种贴纸、速度控制器、反向播放和慢动作等功能，只需按几个按钮，就可以应用于用户的视频。不像其他视频平台，用户可以在TikTok轻松地编辑他们的视频并分享乐趣。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388588" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-51.jpg" width="1080" height="372" /></span></p>
+<p><strong>Instagram story</strong></p>
+<p>Instagram Story是一项功能，它允许用户将照片和视频分享到订阅源，并实时分享他们的日常生活。Instagram Story有一个特点，内容会在24小时之后消失。因为知道内容会很快就消失，用户可以以一种更随意的方式，实时展示他们的日常生活。Instagram Story受到喜欢获取关注，喜欢展示和表现自己的千禧一代和Z世代的欢迎。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388589" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-52.jpg" width="1080" height="647" /></span></p>
+<p><strong>IGTV</strong></p>
+<p>Instagram还推出IGTV，一个新的，允许用户上传长达一小时视频的视频平台。IGTV开通移动优化视频频道，降低了新影响者的门槛。虽然在YouTube上发布内容的用户比例要远远低于使用它的用户，通过在IGTV的个人账户上发布内容，Instagram却有让用户成为内容生产商的潜力，而不仅仅是使用者。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388590" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-53.jpg" width="1080" height="264" /></span></p>
+<p>与前几代人在书籍或门户网站上搜索信息不同，千禧一代和Z世代喜欢通过在基于视频内容的手机应用或社交媒体上提问来获取答案，这些手机应用或社交媒体可以提供即时的反馈和交流。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388591" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-54.jpg" width="872" height="285" /></span></p>
+<p><strong>Youtube</strong></p>
+<p>YouTube是千禧一代和Z世代用来获取信息的最大移动APP。例如当年轻一代想知道如何烹饪时，他们会搜索YouTube而不是阅读书籍或在门户网站上搜索。根据最近的一项研究，59%的千禧一代和Z世代更喜欢从YouTube视频中学习，55%的人说他们在YouTube上学到的东西实际上很有帮助。对于这几代人来说，YouTube已经成为教育和娱乐的平台。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388592" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-55.jpg" width="1080" height="403" /></span></p>
+<p><strong>Twitch</strong></p>
+<p>Twitch是一款千禧一代和Z世代都喜欢的，特定游戏流媒体服务。Twitch针对的是想在游戏文化中进行积极交流的游戏粉丝，作为一名社区成员，他们自愿管理和扩大Twitch的文化，并喜欢观看和与他们喜欢的 star streamers进行交流。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388593" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-56.jpg" width="1080" height="302" /></span></p>
+<p><strong>Reddit</strong></p>
+<p>Reddit是美国的一家社交新闻网站。大致来说，它是一个巨大的社区网站，但它专注于分享有趣的新闻和信息，而不是像社交网络一样注重成员之间的交流。千禧一代和Z世代通过访问Reddit社区来了解他们感兴趣的主题。调查显示，87%的千禧一代和Z世代表示，Reddit社区包含了他们想要的所有信息。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388594" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-57.jpg" width="1080" height="264" /></span></p>
+<p>随着千禧一代和Z世代的口味变得越来越个性化和细分化，他们希望获得的是适合自己口味的内容，精选服务分析个人口味并推荐合适的内容。最近，AI技术可以让用户更加细致地获得他们想要的内容推荐。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388595" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-58.jpg" width="1080" height="461" /></span></p>
+<p><strong>Spotify</strong></p>
+<p>Spotify的每周发现功能可以自动分析用户听过的音乐，并推荐适合他们口味的音乐。用户听得越多，越能得到更好的推荐。通过这个功能，Spotify已经成为世界上最好的音乐流媒体平台，它满足了许多千禧一代和Z世代的口味。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388596" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-59.jpg" width="1080" height="365" /></span></p>
+<p><strong>Zamface</strong></p>
+<p>Zamface是一项利用AI技术搜索 beauty YouTubers，并给用户推荐适合他们口味的美妆视频的服务。Zamface在年轻一代中越来越受欢迎，它的订阅用户95%的年龄在13至24岁之间。Z世代通过beauty Youtuber的视频关注和学习化妆方法，这是准确读取了他们的需求，并利用AR技术不断对服务进行创新的结果。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388597" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-60.jpg" width="1080" height="264" /></span></p>
+<p>现在的信息服务有很多，但很少能受到千禧一代和Z世代的喜爱。比起面对面，年轻一代有时候会觉得在网上交流更舒服。他们更熟悉实时分享自己现在的状态。有些服务就专注于这些特性。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388598" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-61.jpg" width="1080" height="502" /></span></p>
+<p><strong>Facebook Messenger</strong></p>
+<p>Facebook messenger在用户界面只留下两个按钮，将功能最小化，并特别强调社交功能。Facebook messenger带来了Instagram story的功能，用户可以在messenger中查看朋友的故事，也可以随时查看朋友的连接状态。千禧一代和Z世代通过移动设备与每个人建立联系是自然而然的。对于他们来说，不需要与真正的朋友见面，就能感觉到彼此在一起，因为这样，Facebook的messenger收获了巨大的人气。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388599" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-62.jpg" width="1080" height="345" /></span></p>
+<p><strong>Zenly</strong></p>
+<p>Zenly 是在一款基于谷歌地图的社交网络信息服务，它在青少年中很受欢迎。Zenly 有一项普通messenger服务没有的独特的功能。如果你使用Zenly ，你可以获知你朋友的位置，速度和剩余电量，当你与朋友相遇时，APP警报会显示你正在遇见他的事实。Zenly 在Z世代中如此受欢迎的原因是，其他几代人经常认为分享自己的位置是对隐私的侵犯，而年轻一代则认为共享位置很有趣，可以确认与朋友的关系。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388600" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-63.jpg" width="1080" height="298" /></span></p>
+<p>考虑到千禧一代和Z世代强调概念和故事的性格特征，许多公司为之创造了新的角色，并通过年轻人可以共情的故事与他们进行交流。年轻人现在熟悉图像或视频而不是文字，他们通过创建自己的角色内容来引领新文化，并通过将自己喜欢的角色转化为「文化因子」来自愿推广。此外，虚拟网红已经成为一种新的营销工具，以热衷于网红的年轻人为营销对象。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388601" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-64.jpg" width="1080" height="264" /></span></p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388602" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-65.gif" width="640" height="607" /></span></p>
+<p>许多公司根据年轻一代的口味，使用角色IP内容来制作短视频。最近，可以实时反馈用户响应并可以在社交平台上快速传播和轻松消费的短视频内容，已成为一种有效的营销工具。它以机智的短片而不是长篇故事片吸引年轻的消费者。</p>
+<p>以BT21角色品牌为例，通过使用其角色IP在TikTok中制作模仿的格式，产生了大量与年轻一代的口味相匹配的内容，并受到年轻人的喜爱。 此外，它们还提供了用于粘贴TikTok视频内容的角色贴纸，使用户可以自然地在他们制作的内容中宣传角色。 以Spotify和华为为例，通过使用一些适合年轻一代口味的流行艺术家的人物IP分享短视频，将新的品牌形象传达给了这些世代。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388603" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-66.jpg" width="1080" height="264" /></span></p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388604" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-67.jpg" width="1080" height="882" /></span></p>
+<p>千禧一代和Z世代人都熟悉IT设备，他们很容易以数字形式绘制事物。 这些世代倾向于将自己的日常生活制作成短片，然后将其上传到社交平台上。 他们制作这些简短的动画片来表达自己的个性。 卡桑德拉卡林（Cassandracalin）和Min4rin则是根据作为女性的经历来日常创作。 他们的漫画获得了女性的大力支持和同情，并且还出版问世。 这些案例成为Instagram被认可为另一个网络卡通平台的开始。 以洋基基为例，他幽默地在自己的社交平台上刊登了关于「工作中非理性状况」的简短漫画。 随着千禧一代和Z世代的到来，他的故事已在工人群体中引发许多话题，而且这些内容已通过书籍、在线表情包、商品和广告的形式被大众消费。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388605" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-68.jpg" width="1080" height="264" /></span></p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388606" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-69.gif" width="640" height="360" /></span></p>
+<p>千禧一代和Z世代人认为，表情包是一种新型的交流工具。 表情包是数字世界中独特的交流工具，可帮助清晰直观地表达情感并理解信息。 对于那些喜欢在不面对面的情况下进行交流的人来说，表情包已成为一种超越语言障碍的强大交流工具。 如今，千禧一代和Z世代使用表情包多于书写，他们甚至只使用表情包交谈。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388607" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-70.gif" width="640" height="399" /></span></p>
+<p>随着表情包成为一种新的交流工具，头像表情包通过将千禧一代及Z世代的个性和自我表达，让AR技术进一步发展。 年轻一代使用他们自己的头像表情包来表达自己并创造新的文化。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388608" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-71.jpg" width="1080" height="678" /></span></p>
+<p>千禧一代和Z世代使用的在线表情包包含了小众情感的表达，而且他们更喜欢轻便且大致带有直观信息的表情包。随着小众情绪表达的在线表情包变得流行，习惯了数字绘图的年轻一代倾向于自己制作在线表情包。即使它不那么精致，但如果年轻人能够共情这个概念，它也会受到年轻人的喜爱。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388609" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-72.jpg" width="1080" height="716" /></span></p>
+<p>随着在线表情包在年轻一代中的流行，它已成为角色行业的重要组成部分。由于个人可以在社交平台上出售在线表情包，因此出现了各种角色，受欢迎的角色则扩展到了角色商品业务。这些角色IP可以通过快闪店、在线商店，甚至可以直接与各种品牌进行合作。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388610" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-73.jpg" width="1080" height="264" /></span></p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388611" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-74.jpg" width="1080" height="730" /></span></p>
+<p>在千禧一代和Z世代的支持下，网络卡通市场急剧增长。网络卡通最近已成为制作电影、戏剧和游戏的主流内容。随着全球OTT市场的扩展，具有良好故事和想法的网络卡通内容成为IP业务的机会。网络卡通的流行，让《上帝之塔》和《高中之神》被制作成了动画。它已经在全球发行，包括亚洲、美国和欧洲，并且在海外市场上有很多粉丝。Itaewon类也是基于网络卡通在Netflix上制作的。 它在亚洲市场排名第一，并取得了巨大的成功。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388612" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-75.jpg" width="1080" height="724" /></span></p>
+<p>网络卡通IP在角色IP行业中占据很大一部分。使用网络卡通IP设计的角色商品受到年轻一代的喜爱。另外，各家公司与网络卡通IP进行合作以推广其品牌，因为它们可以自然地推广其产品并为消费者（尤其是年轻人）带来乐趣。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388613" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-76.jpg" width="1080" height="264" /></span></p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388614" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-77.jpg" width="1080" height="498" /></span></p>
+<p>虚拟网红是由主要消费者群体的变化和科学技术的发展创造的一种新的数字IP趋势。 它们主要在Instagram，Twitter，Facebook和Snapchat等社交媒体上活跃。即使他们不是真实的人，却能通过与粉丝交流来表现自己，并且拥有大量的关注者。这种虚构的特征已经成为利用社交媒体的公关市场的新趋势。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388615" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-78.jpg" width="1080" height="648" /></span></p>
+<p>这些虚拟网红正在与多个品牌合作 没有任何因素会损害这些虚拟网红的品牌形象，因为它们的出现不受时间和地点的限制，而且不像真实偶像那样，会出现个人隐私的问题。这是许多品牌对虚拟网红营销感兴趣的主要原因。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388616" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-79.jpg" width="1080" height="631" /></span></p>
+<p>在某些情况下，品牌会自己创造虚拟网红。肯德基（KFC）创造的桑德斯上校（Colonel Sanders）使人想起了该公司的创始人形象，只不过看着更年轻一些。韩国老牌饮料公司Binggrae创建了虚拟角色「Binggraeus」。Binggraeus有一个概念，他是做Instagram推广Binggrae品牌的王子，该品牌反映了年轻人喜欢的小众文化。Binggraeus能够通过制作具有个性的各种文化因子，并通过与年轻人积极沟通，来自然地推广他们的产品。 这些有影响力的人显然正在将品牌推广给年轻一代，也被用作各种品牌活动的主要典范。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388617" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-80.jpg" width="1080" height="298" /></span></p>
+<p>图形设计趋势不断变化，以反映千禧一代和Z世代的特征。年轻的一代更喜欢他们能够直接体会到的机智或感性的图像，而不是精心打磨和精致的图像。针对年轻人，可以快速应用于各种媒体的设计正在引领潮流。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388618" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-81.jpg" width="1080" height="264" /></span></p>
+<p>过去，品牌标识设计更加精致和不变，通常应用于印刷和应用程序。但如今，媒体变得越来越多样化，品牌标识也正在转变为一种灵活的形式，可以适应这种变化。许多品牌正在进行多种尝试，以在千禧一代和Z世代人身上打上烙印。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388619" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-82.gif" width="639" height="367" /></span></p>
+<p>许多品牌倾向于使用其品牌logo制作简短的logo动画。品牌logo已不再是品牌标识中不可更改的元素。品牌形象可以给千禧一代和Z世代一个有趣轻松的印象。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388637" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-94.jpg" width="1080" height="264" /></span></p>
+<p>随着数字平台的发展，海报也正在演变为移动海报。由于千禧一代和Z世代都熟悉视频内容，因此他们对移动图形比对精致图像更感兴趣。 而且，与过去不得不将所有内容打印在一页上的情况有所不同，通过运动图形以更加有趣的方式显示更多信息变得更加容易，这也吸引了年轻一代的关注。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388620" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-83.gif" width="639" height="388" /></span></p>
+<p>艾米莉·洛佩斯（EmilyLópez）的动态海报是由字体和复古图形组成的，感觉粗糙而怪诞。罗伯托·华纳（Roberto Warner）的海报采用简单的版式和图纸制作而成，突出了艺术家希望使用动态图形显示的内容。许多图形海报倾向于具有复古风格或由年轻一代喜欢的简单有趣的图形元素组成。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388621" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-84.jpg" width="1080" height="264" /></span></p>
+<p>千禧一代和Z世代宁愿主动参与并独自体验新事物，而不是单方面看到信息。许多设计师或艺术家试图通过使用诸如AR之类的新技术，使年轻一代参与他们的作品。年轻一代对与他们互动的图形更感兴趣。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388622" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-85.gif" width="639" height="499" /></span></p>
+<p>Agenda 2020和后印刷时代都是使观众参与到使用AR观看展览的项目，并且有很多使用AR技术的图形实验，使人们可以通过图形海报体验三维技术。通过让人们积极参与该项目，自然地将品牌形象烙印于热衷有趣和新体验的年轻一代中。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388623" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-86.jpg" width="1080" height="264" /></span></p>
+<p>过去，似乎只是由儿童绘制的类似涂鸦的图像往往不被认为是不错的图形。但是，千禧一代和Z世代更喜欢以一种轻松自由的方式表达自己的情感和个性，他们倾向于将「涂鸦式的插画」视为一种时髦的图形。有一点可以证明这种说法，许多希望得到千禧一代和Z世代支持的时装品牌都渴望与绘制涂鸦风格图形的插画家合作。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388624" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-87.jpg" width="1080" height="518" /></span></p>
+<p>Margonzales是一位专业的滑板手和艺术家。 他过去从事滑板很长一段时间，他从街头和滑板场景中汲取了灵感并在推出了自己的作品后就成为一名艺术家。他的自由奔放和个人主义插图受到许多年轻人的欢迎，并在他与Supreme发行合作产品时闻名世界。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388625" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-88.jpg" width="1080" height="632" /></span></p>
+<p>萨姆·考克斯（Sam Cox）是一位来自英格兰的艺术家，比杜奇先生更着名。 他的作品的特征在于图案、角色和对象像病毒传播一般不断扩展。乍一看，他的作品看上去很幼稚，但气氛明亮，受到很多人的喜爱。他最近还与芬迪开展了有趣的合作。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388626" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-89.jpg" width="1080" height="725" /></span></p>
+<p>丹尼尔·约翰斯顿（Daniel Johnston）于2019年去世，是歌手兼作词人和视觉艺术家。他一生中大部分时间都在精神疾病中挣扎，这影响了他的图形风格。2020年，街头品牌Supreme与其合作推出了联名产品。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388627" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-90.jpg" width="1080" height="264" /></span></p>
+<p>俗话说，潮流在变，复古风格如今却风行一时。现在，可以使人联想起80年代和90年代游戏和动画的图形重新成为一种时尚风格。复古风格对某些人来说可能是怀旧的，或者对某些人来说是新鲜的。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388628" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-91.gif" width="639" height="348" /></span></p>
+<p>Hanavbara是一个受欢迎的Instagram使用者，拥有24万追随者，主要绘制以K-pop偶像为主题的插图。他的插图使人们觉得自己正在观看90年代的动画场景。另外，Pixeljeff的插图让人想起90年代游戏中的场景。过去由于技术限制而制作的粗糙且简单的虚线游戏图形现在被当成了表达个性的一种方式。随着这种复古趋势，许多艺术家倾向于从过去的文化中获得启发。</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388629" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-92.gif" width="640" height="444" /></span></p>
+<p>路易威登最近发布了一个有趣的视频。 维吉尔·阿布洛（Virgil Abloh）制作了一个动画，名为「与朋友的动物园大冒险」，这是路易威登男装系列的新概念视频。 他们正在根据千禧一代和Z世代的需求，做出独特的新尝试，以摆脱传统时装秀的形式。另外，最近包含了老式动画图形的Toon-out等动画过滤器在年轻人中也很流行。包括Doja Cat在内的许多艺术家都制作了复古音乐录影带。这种复古风格已成为针对千禧一代和Z世代的新趋势。</p>
+<p>千禧一代占人口的31.5％，Z世代人口现在占比为32％。千禧一代已经在改变世界，Z世代也开启了新的范例。他们是现在和未来的真正消费者。这篇研究文章研究了这样的情况：这些世代具有比其他任何世代都更为独特的个性，它们正在成为未来的力量，并且正在发生变化，以理解和反映这些世代在设计和营销方面的文化和品味。我们希望本文能够帮助人们了解这些世代的特征，并了解他们所领导的趋势。</p>
+<p>[link https://www.uisdc.com/2020-2021-multimedia-trend]</p>
+<p>[link https://www.uisdc.com/art-toys-trend]</p>
+<p>[link https://www.uisdc.com/operational-trends]</p>
+<p>[link https://www.uisdc.com/ux-design-trend]</p>
+<p>欢迎关注作者微信公众号：「腾讯ISUX」</p>
+<p><span class="img-zoom"><img alt="腾讯万字干货！2020-2021 设计趋势报告：年轻文化篇" class="alignnone size-full wp-image-388630" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-93.jpg" width="180" height="184" /></span></p>
+➜壹周速读：提升排版的核心知识
+https://www.uisdc.com/quick-reading-weekly-vol72	61119
+<p><span class="img-zoom"><img alt="壹周速读：提升排版的核心知识" src="https://image.uisdc.com/wp-content/uploads/2020/09/quick-reading-weekly-vol72-1.jpg" width="750" height="168" class="alignnone size-full wp-image-388665" /></span></p>
+<p>排版是设计师的必修课。提升排版的小技巧很多，不过大都依托于核心的知识，清晰的思路，以及大量的练习。练习估计暂时帮不上太多，但是方法和核心知识，这儿还是挺齐全的。</p>
+<h4><span class="auto_menu">提升排版的核心知识</span></h4>
+<p><em><strong>1、光影知识全梳理</strong></em></p>
+<p><span class="img-zoom"><img alt="壹周速读：提升排版的核心知识" src="https://image.uisdc.com/wp-content/uploads/2020/09/sb1.png" class="aligncenter size-full wp-image-388651" /></span></p>
+<p>构图、色彩和光影属于设计中非常重要的3块体系，但构图和色彩大多是偏感性的主观理解，而光影则是理性的客观判断。当各种视觉元素组合完成后，只有「光影统一」，才能让所有元素真实的融在一起，最终形成真实立体、有层次的画面，而「光影统一」便是这篇超全面光影设计知识合集的核心原则：</p>
+<p>[link  https://www.uisdc.com/light-and-shadow-2 ]</p>
+<p><em><strong>2、 平衡视觉的方法</strong></em></p>
+<p><span class="img-zoom"><img alt="壹周速读：提升排版的核心知识" src="https://image.uisdc.com/wp-content/uploads/2020/09/sb2.png" class="aligncenter size-full wp-image-388651" /></span></p>
+<p>在设计如果连基本的视觉平衡都做不到，作品会给人一种强烈的半成品的感觉。通常，在平衡画面和布局的时候，有3种常用的方法，这篇文章会为你详细展示：</p>
+<p>[link  https://www.uisdc.com/picture-balance ]</p>
+<p><em><strong>3、构图的秘诀</strong></em></p>
+<p>在排版的时候，对于设计元素的摆放位置需要有一个大致的构想，这个构想就是构图，它相当于是版式的雏形，有了这个雏形之后，才能开始下一步的细化，只有充分理解构图的意义与作用，排版时才能做到心中有数。</p>
+<p><span class="img-zoom"><img alt="壹周速读：提升排版的核心知识" src="https://image.uisdc.com/wp-content/uploads/2020/09/sb3.png" class="aligncenter size-full wp-image-388651" /></span></p>
+<p>左右构图稳定且平衡，左右两边需要互相呼应。但是，左右布局在空间和细节的处理上也有不少讲究：</p>
+<p>[link https://www.uisdc.com/left-and-right-composition]</p>
+<p>[link https://www.uisdc.com/left-and-right-composition-2]</p>
+<p><span class="img-zoom"><img alt="壹周速读：提升排版的核心知识" src="https://image.uisdc.com/wp-content/uploads/2020/09/sb4.png" class="aligncenter size-full wp-image-388651" /></span></p>
+<p>上下布局则和左右布局类似，将版面分割为上下两部分，或让画面中的元素整体呈现出上下的分布趋势，主空间承载视觉点，次空间承载阅读信息，呈现的视觉效果平衡而稳定。但是同样的，上下布局的玩法也相当多样：</p>
+<p>[link https://www.uisdc.com/top-and-bottom-composition]</p>
+<p><span class="img-zoom"><img alt="壹周速读：提升排版的核心知识" src="https://image.uisdc.com/wp-content/uploads/2020/09/sb5.png" class="aligncenter size-full wp-image-388651" /></span></p>
+<p>当想要设计更灵动活泼的版面，营造轻松、动感、刺激等氛围时，「倾斜构图」是更适合运用的构图表现形式：</p>
+<p>[link  https://www.uisdc.com/tilt-composition-technique ]</p>
+<p><em><strong>4、提升质感的方法</strong></em></p>
+<p><span class="img-zoom"><img alt="壹周速读：提升排版的核心知识" src="https://image.uisdc.com/wp-content/uploads/2020/09/sb6.png" class="aligncenter size-full wp-image-388651" /></span></p>
+<p>商业海报是指宣传某种商品或某种商业服务的海报。我们在做商业海报时，需要考虑产品的属性、产品的使用对象、服务的对象，针对性的做出符合项目的设计才能在短时间内将人们的目光吸引，从而将普通用户转化为自己的潜在客户，具体怎么做呢？看这里：</p>
+<p>[link  https://www.uisdc.com/handmade-gourmet-poster-design ]</p>
+<p><em><strong>5、主观感受的秘密</strong></em></p>
+<p><span class="img-zoom"><img alt="壹周速读：提升排版的核心知识" src="https://image.uisdc.com/wp-content/uploads/2020/09/sb7.png" class="aligncenter size-full wp-image-388651" /></span></p>
+<p>视觉本身就是一件偏感性的学科，它不应该完全依赖数值，更应该在意人的感受，去解决视觉差的问题。所以，我们平时做设计的时候要明确一点：软件参数只是辅助，更多的需要提高自己眼睛的敏锐度。那么具体要怎么做呢？看这里：</p>
+<p>[link  https://www.uisdc.com/design-your-eyes-maths ]</p>
+<h4><span class="auto_menu">包装设计</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：提升排版的核心知识" src="https://image.uisdc.com/wp-content/uploads/2020/09/sb8.png" class="aligncenter size-full wp-image-388651" /></span></p>
+<p>在众多的设计领域里，包装设计可以说是最贴近我们生活的设计了，因为我们每天都会接触到它们。如果细心去观察它，你会发现，一个小小的包装，其实蕴含着众多的设计要素。版式、配色、以及图形和字体，这些都是我们在做平面设计时非常熟悉的要素，那么除此之外我们还需要去考虑哪些额外的设计问题呢？来看看这篇文章，带大家一起进入包装设计的大门：</p>
+<p>[link  https://www.uisdc.com/packaging-design-guide]</p>
+<h4><span class="auto_menu">UI·交互</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：提升排版的核心知识" src="https://image.uisdc.com/wp-content/uploads/2020/09/sb9.png" class="aligncenter size-full wp-image-388651" /></span></p>
+<p>设计心理学是一个很大的范畴，在绝大多数时候，设计所涉及到的心理学知识是围绕着这10个关键词来展开的：</p>
+<p>人的社会性、人的动机、如何观察、如何感知、如何记忆、如何思考、如何集中注意力、如何阅读、如何决策、人会犯错</p>
+<p>这次的万字长文，带你了解所有的相关知识：</p>
+<p>[link  https://www.uisdc.com/10-design-psychology-knowledge ]</p>
+<p><span class="img-zoom"><img alt="壹周速读：提升排版的核心知识" src="https://image.uisdc.com/wp-content/uploads/2020/09/sb10.png" class="aligncenter size-full wp-image-388651" /></span></p>
+<p>在平时的设计过程当中，你可能会有这样的疑惑，为什么在大部分APP中，当单个按钮和多个按钮同时存在时，最重要的按钮一般都会放置在页面的右侧呢？如果最重要的按钮放在左侧又有什么问题呢？按钮放在右侧的原因是什么呢？它又有什么理论依据呢？接下来带着这些疑问，开始我们今天所要介绍的内容：交互心理学之古腾堡原则</p>
+<p>[link  https://www.uisdc.com/gutenberg-principle-2 ]</p>
+<p><span class="img-zoom"><img alt="壹周速读：提升排版的核心知识" src="https://image.uisdc.com/wp-content/uploads/2020/09/sb11.png" class="aligncenter size-full wp-image-388651" /></span></p>
+<p>用户画像并不是一个新鲜的概念，是一个谁都能说上两句，但是在实际设计和产品当中，经常作用有限的「设计工具」。是 「用户画像」本身失效了么？如果没有，那么导致它失效的因素有哪些？是否有解决方案或者替代方案？这篇文章，给你答案：</p>
+<p>[link  https://www.uisdc.com/save-personas ]</p>
+<p><span class="img-zoom"><img alt="壹周速读：提升排版的核心知识" src="https://image.uisdc.com/wp-content/uploads/2020/09/sb12.png" class="aligncenter size-full wp-image-388651" /></span></p>
+<p>「个人主页」是一个听起来很熟悉，但又跟「个人中心」傻傻分不清楚的一个模块，一般情况下处于APP底Tab的最右边，通常喊它为「我的」。这个界面看似没什么挑战可言，给设计师一种「不就是排排版的事儿嘛」的膨胀误解，但最近发现，它并不像表面所呈现出的那么简单：</p>
+<p>[link  https://www.uisdc.com/personal-homepage-design-guide ]</p>
+<h4><span class="auto_menu">神器推荐</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：提升排版的核心知识" src="https://image.uisdc.com/wp-content/uploads/2020/09/sb13.png" class="aligncenter size-full wp-image-388651" /></span></p>
+<p>人工智能P图喊了一年又一年。这回，狼真来了。网络上疯传着一份，所谓「流出版」的PS2021安装包。这次，来感受一下这匹狼：</p>
+<p>[link  https://www.uisdc.com/ps-2021 ]</p>
+<h4><span class="auto_menu">设计师职场</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：提升排版的核心知识" src="https://image.uisdc.com/wp-content/uploads/2020/09/sb14.png" class="aligncenter size-full wp-image-388651" /></span></p>
+<p>设计师的职业规划要怎么做？各个阶段的设计师都对自己的职业规划，都表现得比较迷茫，这篇文章梳理了9个有效的方法，希望能够解决这个问题，和大家一起共勉：</p>
+<p>[link  https://www.uisdc.com/9-career-planning-skills ]</p>
+➜字体设计在变化之前，你得先做这一步
+https://www.uisdc.com/font-design-harmony	62863
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-384439" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yxs-2020813.jpg" width="720" height="161" /></span><br />
+<span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388238" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-1.jpg" width="1080" height="460" /></span></p>
+<p>不知道大家有没有遇到过这样一种情况，我们在做字的时候，发现做好的两个字死活搭不到一块，明明字分开看都没有问题，可是放在一起就感觉不太对。如果我们做的字出现了这种不搭的情况，肯定是因为字与字之间存在着不同。今天的这节课，我们给大家讲解一下，如何让你做的字体看起来更和谐。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388239" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-2.gif" width="640" height="360" /></span></p>
+<p>想要解决这种不搭的问题，我们可以从两方面下手。第一个就是减少字与字之间的不同之处，第二个则是增加文字之间的相同之处，去掩盖字的不同。我们先从治标又治本的减少不同开始讲。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388240" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-3.gif" width="639" height="135" /></span></p>
+<p>我们先来看下这四个字，可能乍一看会觉得没啥问题，可是我们仔细盯着会发现其实这四个字根本不搭。欢字比乐字大了许多，今字的重心又要比宵字低许多。为什么会出现这种情况呢？我们把这四个字分开看，他们也并没有什么太大的问题。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388241" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-4.jpg" width="571" height="800" /></span></p>
+<p>其实这四个字是我分别用了四个字库字体修改的，刨除了他们的体饰之后，我们会发现他们的骨骼区别是很大的，也正是因为他们骨骼上的不同，导致了这四个字看起来不搭。所以我们要减少不同，首先就从骨骼开始讲。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388242" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-5.gif" width="639" height="297" /></span></p>
+<p>其实这方面的知识我在「字体设计第一课」的那节课已经讲过一部分了，如果没看过那节课的同学建议你先停下来，去补一补那节课的知识哦。</p>
+<p>[link https://www.uisdc.com/font-design-basics]</p>
+<p>而看过的同学就跟着我一起往下听。我们依旧分别从中宫、重心、字面和灰度四方面来讲解，先来看看中宫。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388341" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-bc-20200910-1.jpg" width="800" height="437" /></span></p>
+<p>从视觉上来说，中宫大的字会更多的占据字面框，看上去也会显得比较大一些，而中宫小的则显小，这也是为什么中宫不同的字放在一起会显得不搭。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388243" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-6.gif" width="639" height="360" /></span></p>
+<p>来看个实际的例子，现在画面中重塑的这两个字是不是感觉不太搭？这里我们可以通过字面框内字体外侧的负空间去判断中宫的大小，我们在底下叠一个字面框，就可以发现重字的四周还是有一些负空间，而塑字则几乎占满了字面框，所以他们的中宫的差距是比较大的，导致了视觉上的大小不一致。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388244" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-7.jpg" width="800" height="151" /></span></p>
+<p>我们分别调整一下这两个字，调整中宫之后的他们就舒适多了。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388245" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-8.gif" width="638" height="196" /></span></p>
+<p>接着来讲一下重心，重心不一致除了会让文字看起来不搭之外，重心的频繁上下跳动也会让阅读更加的疲劳。屏幕上马赛克这三个字重心就非常的不一致，马字重心在中间，赛字重心偏低，而克字偏高。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388246" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-9.gif" width="638" height="196" /></span></p>
+<p>经过调整之后，这三个字也就更和谐了。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388247" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-10.gif" width="637" height="155" /></span></p>
+<p>然后是字面，我们在字体设计第一课中用过这四种图形去类比成四种外轮廓不一致的文字。如果将他们上下端物理对齐的话，他们在视觉上其实是不平衡的。所以得对他们进行一些视觉上的修正，适当地调节他们的字面。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388248" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-11.gif" width="639" height="306" /></span></p>
+<p>除此之外，这里再补充一个新的知识点，就是笔画多的字需要放大一些，笔画少的字需要缩小一些。例如画面中椅子这两个字，子字看着要比椅字大了许多，可是他们的字面大小是完全相同的。将子字缩小一些之后才显得大小比较一致。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388249" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-12.jpg" width="800" height="378" /></span></p>
+<p>举一个更加直观的例子，画面中繁体字的国字看上去要比囚字小一些，可是其实这两个字的外轮廓无论是大小还是形状都是完全一致的。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388250" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-13.gif" width="627" height="202" /></span></p>
+<p>最后回顾一下灰度，灰度主要指的是对于笔画少的字，笔画应该相对应的粗一点，笔画多的字，笔画则应该细一些。现在画面中的士字就是与另外两个字差不多粗细的，可是在视觉上士字明显是要偏细的，看上去显得特别弱。所以要将士字加粗一些，让字体之间的灰度差距别太大。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388251" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-14.gif" width="637" height="165" /></span></p>
+<p>除此之外，日本字体设计师成泽正信提出过一个理论，他说对于首尾两字都是笔画特别少的词组，那么首尾的这两个字需要在已经视觉加粗过后的基础上，再加粗一些，不然词组会显得有些无力。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388252" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-15.jpg" width="1080" height="283" /></span></p>
+<p>关于骨骼的内容我们就讲到这里，也许你们会觉得这么多需要微调的地方很难记。那么这里我再给大家介绍一条总结前面内容的定律。古希腊的智者普罗泰戈拉说过一句话叫「人是万物的尺度。」这句话或许是错误的哲学观点，可是在设计中却是一句真理。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388253" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-16.jpg" width="800" height="328" /></span></p>
+<p>用通俗点的话就是眼睛才是最准确的衡量标准。因为我们很难总结出笔画少的字要比笔画多的字小多少，笔画得粗多少。视觉上的调整是难以量化的。所以最简单的方式就是用眼睛去判断，看着细了就加粗，看着小了就放大。</p>
+<p>不过我们也需要尊重每一个汉字的不同，没有必要把不同的文字强行调成一模一样，所有字都一模一样，那么字也就不再是字了。汉字不同于西文，可以均匀地分布。汉字天生就是有笔画多少的区分，有重心的高低，有外轮廓的不同，所以汉字在阅读的时候也能产生西文不具备的节奏感，这或许也是汉字的魅力所在。所以我们在做字的时候，追求的是文字之间的和谐，而非绝对一致。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388254" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-17.gif" width="640" height="480" /></span></p>
+<p>前面我们讲的主要是骨骼上视觉的不搭，接下来我们来分析一下骨骼上气质的不搭。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388255" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-18.jpg" width="800" height="191" /></span></p>
+<p>文字的气质最常见的是传统气质和现代气质。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388256" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-19.jpg" width="800" height="437" /></span></p>
+<p>对于传统和现代这两种气质来讲，影响最大的是中宫。刚刚我们展示的这两个东字除了视觉上大小不一之外，他们气质也是相悖的。可是为什么中宫大的会具有现代感，而中宫小的会具有传统感呢？</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388257" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-20.gif" width="638" height="215" /></span></p>
+<p>那是因为在西文的字体设计中，他们更注重文字内部的负空间均匀分布，外部的负空间则可以通过字间距进行调节。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388257" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-20.gif" width="638" height="215" /></span></p>
+<p>而中文中由于有字面框的存在，在设计字体时需要考虑内白和外白的均衡。所以受到西方设计影响的现代型汉字也会更注重内白的分布，而忽略外白，从而导致了中宫偏大。传统型的字体关注了文字的外白，所以中宫就会偏小一些了。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388259" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-22.jpg" width="768" height="600" /></span></p>
+<p>另一方面，由于最初的印刷技术和电子显示技术不佳，而中宫比较大的字体具有更良好的识别度，所以电脑、书籍、报刊等普遍用的都是中宫比较大的字体。而电脑、书报等正是当时具备现代感的代表物品，所以中宫大的字体也获得了现代感的这种印象。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388260" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-23.jpg" width="800" height="177" /></span></p>
+<p>除了中宫之外，还有笔画的分布。传统型字体保留书法中的左收右放、上紧下松的特点，而现代字体则讲究的是视觉上的均衡分布。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388261" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-24.gif" width="639" height="360" /></span></p>
+<p>来看看这两个林字，左边的是传统的，我们可以很明显地看到左边的木字要小于右边的。而右边现代一些的林字，为了让视觉上比较平衡，左边的木字微微地比右边的小一点点；另外右边的林字重心是在视觉中心上的，而左边的则要更偏上一些。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388262" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-25.jpg" width="800" height="404" /></span></p>
+<p>骨骼分析完了，接下来我们来分析一下笔画。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388263" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-26.jpg" width="800" height="305" /></span></p>
+<p>首先要统一好笔画的线条，我们来看这两个撇笔画，他们的曲线就是两种不同的风格。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388264" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-27.jpg" width="800" height="485" /></span></p>
+<p>来看左边的这个，这个笔画其实是我从颜真卿写的木字中提取出来的，所以他的线条是具备有手写感的。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388265" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-28.jpg" width="544" height="800" /></span></p>
+<p>然后要注意笔画的起笔收笔是否统一，例如画面中的这三个字，分别是圆头的、平头的，以及对笔画末端进行切笔的。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388266" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-29.jpg" width="800" height="185" /></span></p>
+<p>笔画的体饰相信大家都知道需要统一，体饰不同的文字看上去就完全是两个字体了。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388267" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-30.jpg" width="800" height="310" /></span></p>
+<p>然后是笔画的粗细比例。例如画面中的这两个字虽然中宫、重心、字面和灰度都是一样的，可是横竖笔画的粗细比例不同，所以他们也明显搭不到一块去。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388268" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-31.jpg" width="800" height="194" /></span></p>
+<p>最后是笔画转折处需要统一，拐角处是用尖角还是圆角，又或者是规定某一个方向的拐角做特殊处理。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388269" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-32.jpg" width="800" height="379" /></span></p>
+<p>笔画上的细节可远不止我提出来的这五点，比如还有装饰角出现的位置、拐角的大小、曲线等等。虽然这些都是非常非常小的细节，可是小细节累积起来就成了大问题了，只有将这些隐藏在笔画里的小细节都统一了，我们做的字看起来才能够比较和谐美观。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388270" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-33.gif" width="640" height="360" /></span></p>
+<p>当我们尽可能地将文字中的不同之处消灭之后，那么我们就可以进入下一步，增加文字之间的共性了。那么增加共性到底是个怎么样的东西呢？</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388271" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-34.jpg" width="800" height="297" /></span></p>
+<p>日本着名字体设计师高桥善丸总结过一个理论——做字之前需要找到文字之间的视觉关联性，然后强调其中的特征。这里说的视觉关联性也就是我们所说的共性，强调共性不但可以让文字之间看起来更和谐，同时也能让字体产生表现力。接着来看一下我们可以从哪些方面去寻找共性。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388272" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-35.jpg" width="800" height="496" /></span></p>
+<p>这里我总结了寻找共性的三个方面，分别是笔画、偏旁或结构和骨骼。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388273" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-36.jpg" width="800" height="375" /></span></p>
+<p>先来看看笔画，笔画里我又细分出了四个点。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388274" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-37.jpg" width="800" height="231" /></span></p>
+<p>首先是统一笔画的弯曲程度，一般最常见的是将曲线笔画改成直线笔画。因为在中文中存在着横、竖等直线笔画和撇、捺等曲线笔画，而不同字的直线笔画和曲线笔画的数量不同，如果我们将所有的笔画都转变为直线的话，那么文字的共性也能得到增加。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388275" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-38.jpg" width="800" height="401" /></span></p>
+<p>来看一些实际的例子，崩坏这两个字，崩字的曲线笔画是比较少的，而坏的繁体字则存在着比较多的曲线。而这位作者将笔画尽可能直线化之后，这两个字也产生了强烈的共性。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388276" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-39.jpg" width="800" height="420" /></span></p>
+<p>这个是高桥善丸的字体作品，野放途这三个字也是全部用直线构成的，所以他们看起来是非常和谐的，另外高桥善丸为了体现野放途的那种自由奔放的感觉，还随意地将部分笔画进行了延长。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388277" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-40.gif" width="640" height="336" /></span></p>
+<p>当然我们也可以将笔画尽量的曲线化，但是这样的难度是要比直线化大许多。这依然是高桥善丸的作品，水都这两个字都尽量地曲线化去展现水的特质，高桥善丸还将这两个字处理成圆形去增加他们之间的共性。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388278" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-41.jpg" width="800" height="289" /></span></p>
+<p>这个字体作品就曲线化的更彻底了，包含横、竖在内的所有的笔画都是由曲线构成的。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388279" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-42.jpg" width="800" height="230" /></span></p>
+<p>刚刚讲到将曲线变为直线，其实我们还可以进一步将笔画的倾斜角度给统一了，这样文字的统一程度就更高了。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388280" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-43.gif" width="638" height="255" /></span></p>
+<p>来看看这个字体作品。这四个字的笔画只用了四个倾斜角度。分别是垂直的竖画、倾斜14°的横画、倾斜63°和-63°的撇、捺、点等倾斜笔画。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388281" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-44.jpg" width="800" height="334" /></span></p>
+<p>第三点是设计特征笔画，也就是我们可以选择词组中大多数字都共同拥有的笔画，然后对他进行比较有个性的设计。最常见的就是将点笔画设计成圆。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388282" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-45.gif" width="640" height="301" /></span></p>
+<p>河童这两个字就是将笔画中的点都处理成了小圆圈。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388283" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-46.jpg" width="600" height="521" /></span></p>
+<p>有时候我们也能根据词义将小圆圈变成别的点形状，例如井上悠的这个作品，为了突出雨的概念，将笔画点都替换成了蓝色的小水滴。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388284" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-47.gif" width="638" height="225" /></span></p>
+<p>除了点之外，别的笔画也可以用这样的手法。例如这组字，撇和捺笔画的设计都是比较醒目和夸张的。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388285" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-48.gif" width="638" height="338" /></span></p>
+<p>最后一点是在字体中加入书写笔画，这个手法适用范围是比较广的。例如画面中这个a piece of 工作室的作品，他在书法的宋体字中加入了日文的平假名，而日文的平假名来源于草书，我们也可以看做是加入书法笔画。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388286" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-49.jpg" width="600" height="305" /></span></p>
+<p>说了这么多，是时候来个案例的演示了。我们来做离骚这两个字。因为离骚是历史上的文学着作，具有强烈的文化属性，所以希望把他做成宋体字。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388287" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-50.jpg" width="600" height="82" /></span></p>
+<p>宋体字应该从横画开始做起，这个便是设计好的横画，从他体饰的曲线可以看出来，这是一款传统型的宋体字。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388288" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-51.jpg" width="800" height="122" /></span></p>
+<p>接着我们可以从横画推导出其他的笔画，具体怎么推导我们在《设计宋体字很难，这次我来教会你》的那节课中有详细的讲解，不懂的同学可以去翻看一下。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388289" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-52.jpg" width="800" height="301" /></span></p>
+<p>接着我们来选择一个参考字形，因为我们的定位是传统型的宋体，中宫必须也得相应小一些，所以我选择了筑紫明朝的老字形。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388290" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-53.gif" width="482" height="303" /></span></p>
+<p>我们在参考字体的骨骼上把设计好的笔画填上去，由于筑紫A老明朝是偏手写风格的宋体，所以不同字的字面并不一定完全一致，离骚这两个字就明显的大小不同，而我们这节课追求的是文字之间的和谐，所以我们还是尽可能地让这两个字差不多大小。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388291" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-54.jpg" width="800" height="157" /></span></p>
+<p>所以我们将离字给改大一些。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388292" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-55.jpg" width="800" height="270" /></span></p>
+<p>然后我们就要在这个字里寻找替代成书法笔画的地方。我们替换书法笔画可不是随便找一个笔画就替换的，一方面，他必须要在字里占据比较明显的位置，如果在边边角角不显眼的位置进行替换的话，那几乎就等于没有替换；另一方面是这个笔画要符合书写的走势，要能够展示书写笔画的美感。所以我们这里选择了将这两处替换成书法笔画。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388293" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-56.jpg" width="800" height="382" /></span></p>
+<p>我们将设计好的书写笔画替换上去，那么这个字就做好啦。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388294" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-57.jpg" width="800" height="365" /></span></p>
+<p>接着是偏旁或者结构的部分，这个部分我分成了笔画、偏旁和结构。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388296" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-59.gif" width="468" height="222" /></span></p>
+<p>也许你们会觉得奇怪，为什么刚刚有专门讲笔画的部分，而在偏旁结构这个部分也有笔画呢？我们用反叛这两个字来做例子解释一下。这两个字一共有五个撇笔画。而在字的最左端各有一个撇笔画，我们可以针对这两撇做特殊处理。所以我们这里强调的笔画是有位置上的关系的，而不是指相同的笔画。我们开始处理这两个字。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388297" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-60.jpg" width="800" height="307" /></span></p>
+<p>同样选择一个参考字形，刚刚我们做的是具有传统气质的宋体，那么我们这个字就做具有现代感的大中宫字体，所以我选择了用中宫比较大的微软雅黑作为参考。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388298" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-61.jpg" width="800" height="274" /></span></p>
+<p>因为反叛这个词带有不走寻常路的意味，而一般的字体设计都是横细竖粗的，所以我们对反叛这个词设置成横粗竖细，具体粗细比例暂定为1：2.5。然后将文字搭建起来。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388299" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-62.jpg" width="800" height="134" /></span></p>
+<p>由于两个字的笔画数量不同，使用一样的粗细比例的话会导致灰度上的不均匀。所以这里我们可以适当地调整一下笔画的粗细，让两个字的灰度别相差太远。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388300" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-63.gif" width="636" height="119" /></span></p>
+<p>接着我们要强调一下这两个笔画。我们可以将他们加粗，并且往外延伸一些。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388301" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-64.gif" width="517" height="217" /></span></p>
+<p>可是往外延伸之后，这个反字会显得有些不稳，感觉左下角重了。为了让反字平衡一些，所以我们可以将上面的一横往外伸出一些。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388302" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-65.gif" width="638" height="111" /></span></p>
+<p>现在的这两个字显得有一些些瘦高，气质有点不太对，所以我们可以稍微往下压一些。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388303" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-66.jpg" width="800" height="218" /></span></p>
+<p>最后调整一些细节，我们这个字就做好了。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388304" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-67.gif" width="639" height="297" /></span></p>
+<p>我们再来看一个例子，破坏这两个字最明显的笔画分别是撇和捺，他们在这两个字中是属于对称的位置关系，所以我们选择强调的笔画并不一定是要在相同的位置，也可以是对称的位置。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388305" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-68.gif" width="638" height="261" /></span></p>
+<p>接着是强调偏旁。强调偏旁很好理解，就是如果我们设计的字里有相同的偏旁的话，那么我们就可以将设计的重心放在偏旁上，这样可以保证词组之间的相似性。这里我们用海浪这次词作为例子，参考字形用的是opposans的常规字重。然后在参考骨骼的基础上把笔画搭建好。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388306" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-69.gif" width="636" height="126" /></span></p>
+<p>首先看海字的这个地方，笔画分布得不够均匀，显得结构有些不稳，所以我们要把海字的笔画调整一下。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388307" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-70.gif" width="639" height="135" /></span></p>
+<p>接着来看浪字，浪字头上的这个点非常奇怪，像独角兽的角似的。我们将点与底下的笔画分开会显得比较舒服一些。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388308" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-71.gif" width="480" height="270" /></span></p>
+<p>然后我们就要思考一下三点水应该怎么设计。在找三点水的经典碑帖时，我看到了柳公权对三点水是这么处理的，我觉得可以借鉴到我的这个字中。</p>
+<p>那么我就可以将下方的点拉长，做一个转折的处理，这样三点水就成了这两个字里比较突出的设计了。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388309" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-72.gif" width="636" height="126" /></span></p>
+<p>接着我们可以将这里进行出头处理。让这两个字多一些细节。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388310" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-73.jpg" width="800" height="257" /></span></p>
+<p>最后调整一些细节，那么这两个字就做好了。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388311" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-74.gif" width="586" height="608" /></span></p>
+<p>同样再来看个例子，柠檬这两个字都是木字旁的，所以作者便对这个木字旁做了往外延长的处理，另外值得注意的是，由于他做的木字旁比较夸张，所以对文字右边的部分也进行了相应的处理，不然左右两边就会被割裂开了。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388312" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-75.gif" width="639" height="265" /></span></p>
+<p>最后是结构，结构指的是强化文字中具有相同结构的部分。例如味道这两字，他们都有口字的结构，所以我们可以尝试在这上面下些功夫。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388313" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-76.gif" width="639" height="311" /></span></p>
+<p>味道这两个字我第一反应是联想到热腾腾的美食，是温暖有温度的，所以我在笔画的设计上模仿了宋体横画的体饰，让这个字体有一些人文的感觉。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388314" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-77.gif" width="639" height="251" /></span></p>
+<p>参考字形选择了中宫偏小的筑紫明朝，筑紫明朝相比我们前面用的筑紫A老明朝气质上会稍微没那么传统。根据筑紫明朝的骨骼将笔画放上去。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388315" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-78.gif" width="639" height="116" /></span></p>
+<p>这时候会发现这一块的负空间有一点大，而我们希望这个字笔画的分布能够更匀称一些。所以将这一点往下挪一些。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388316" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-79.gif" width="637" height="121" /></span></p>
+<p>然后这个位置笔画似连非连是字体设计中不应该出现的，将这一点往上收一收。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388317" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-80.gif" width="640" height="285" /></span></p>
+<p>味字的这一笔也可以往上提一些，让他更符合这一撇的走势。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388318" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-81.jpg" width="800" height="138" /></span></p>
+<p>最后调整一些细节。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388319" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-82.gif" width="480" height="231" /></span></p>
+<p>然后我们要开始想办法修饰一下这个口字结构，我们在书写的时候经常会有这样的连笔，例如这是王羲之写的口字。所以我们也可以将这个书写结构用在我们的字里，让我们这个字有些书写味道。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388320" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-83.jpg" width="800" height="344" /></span></p>
+<p>我们的这两个字就做好了。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388321" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-84.gif" width="462" height="244" /></span></p>
+<p>睡眠欲的这三个字同样是对口字结构做了特殊设计，所有的口字结构都处理成开口或者是封闭的圆形。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388322" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-85.gif" width="640" height="443" /></span></p>
+<p>而今生的这两个字所选取的部分就更加刁钻了，我们可以看到这两个字的上方都有一条绕了一个小圈的曲线。而今生原本的写法并不会产生这样的曲线，所以这位设计师的处理手法也是颇为巧妙。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388323" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-86.jpg" width="600" height="284" /></span></p>
+<p>不过在我们做字功底还不够深厚的时候，最好不要将一些不一样的笔画结构强行处理成一样，这样很可能会破坏掉原本的骨骼，损失了汉字原本的美感不说，还很可能让文字丢失了识别性，那样的字体设计可就得不偿失了。毕竟我们要寻找的是文字之间的共性，而不是将文字的不同强行扭转成共性。那么我们接着来往下看。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388324" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-87.jpg" width="800" height="387" /></span></p>
+<p>最后一个方面就是骨骼的共性了，骨骼我细分成了四点——横画对齐、中宫、重心、字面。其中，除了横画对齐之外，中宫、重心、字面这三个处理方法几乎可以应用于所有的汉字中。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388325" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-88.gif" width="637" height="174" /></span></p>
+<p>我们先来看看横画对齐。我们在看日本的字体设计时，经常能看到东京这两个字被做成这样的处理。因为东京两个字在结构上是有高度的相似性，所以可以将文字的横画对齐，这样文字就能有比较高的统一性了。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388326" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-89.gif" width="639" height="219" /></span></p>
+<p>千差万别这几个字虽然被设计得十分的夸张，但是通过将所有的横画进行对齐，让字与字之间产生了共性，所以这样一组个性强烈的字放在一起却不会违和。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388327" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-90.gif" width="637" height="203" /></span></p>
+<p>再来看看住宅作家这四个字，通过画横线我们可以看到，大多数的横线都对齐了，可是住字中间的一条横线却没有对齐。所以其实我们在用这种手法的时候，也不是一定要所有的横画都对齐才行，只要尽可能将能对齐的都对齐，那也能够产生共性。如果强行对齐会破坏文字的美感或者识别度，那我们就放弃那个难以对齐的横画就好了。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388328" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-91.jpg" width="800" height="156" /></span></p>
+<p>第二点中宫，就是我们可以给需要设计的字体设置一个比较夸张的中宫，让读者一看就被夸张的中宫所吸引。我们用一直往南做个小示范。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388329" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-92.gif" width="638" height="140" /></span></p>
+<p>我们将一直往南这四个字的中宫尽量地撑大，他们之间就能产生共性，如果我们在底下垫个字面框的话，就可以发现除了一之外的三个字都几乎将字面框占满了。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388330" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-93.jpg" width="845" height="800" /></span></p>
+<p>这个是高桥善丸挺着名的一个作品， 他就将白南风和青雨这五个字的中宫扩得非常大，而中间的笔画都缩得很小，从而形成了图形感。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388331" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-94.jpg" width="988" height="800" /></span></p>
+<p>重心与中宫相同，就是给文字设置一个比较夸张的重心。这组字就是将重心都提得非常的高，让文字在体现张力的同时，又能保持和谐统一。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388332" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-95.jpg" width="800" height="317" /></span></p>
+<p>最后就是设置字面，也就是我们常见的宽体、窄体等。我们用验伤这两个字来示范一下，由于验伤是一首抒情歌曲，具有一定的文艺属性，比较适合秀丽一些的气质，笔画也应该比较细一些，所以这里选用opposans Light字重作为参考字形。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388333" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-96.gif" width="640" height="320" /></span></p>
+<p>另外窄体相比宽体更具有秀丽、文艺的气质，所以这里我直接将字体压扁作为参考。然后将笔画填上参考字形中。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388334" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-97.gif" width="640" height="183" /></span></p>
+<p>这时候我们可以发现这两个字视觉上的大小不一致，底部与顶部并不对齐，需要进行一定的视觉修正。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388335" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-98.gif" width="450" height="370" /></span></p>
+<p>还有验字比伤字看着要宽一些。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388336" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-99.jpg" width="800" height="205" /></span></p>
+<p>将验字缩窄了一些，这样这两个字在视觉上就是平衡的了。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388336" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-99.jpg" width="800" height="205" /></span></p>
+<p>我们在之前的课程里介绍过，重心偏高的字体会更秀丽一些，所以我们也可以尝试将重心往上提一提。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388338" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-101.gif" width="636" height="165" /></span></p>
+<p>可是重心提高之后，这里的点笔画显得有些太长了，不太美观。所以我们可以将点上下交错着排列，这样可以让点稍微短一些。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388339" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-102.gif" width="637" height="167" /></span></p>
+<p>接着来处理这个地方，这里负空间大了一些。我们可以将提笔画倾斜一些，多占据一些负空间。</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-388340" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200910-103.jpg" width="800" height="348" /></span></p>
+<p>最后调整一些笔画细节，我们这组字就做好了。</p>
+<h4>总结</h4>
+<p>这节课的内容到这里就讲完了，我们来回顾一下今天的内容。这节课我们讲的是如何设计出和谐统一的文字，为此我们将这节课分成了两部分，一部分是减少文字之间的不同，另一部分是增加文字之间的共性。减少不同部分。我们可以从骨骼、气质和笔画风格三个方面去寻找文字之间不和谐的地方，并把他们修正。而增加文字共性则可以从笔画、偏旁部首或者骨骼三个方面去强调他们的视觉关联性，从而使文字在和谐统一的基础上产生视觉张力。希望这节课的内容能对你们有所帮助，我是千树，我们下期再见。</p>
+<p><strong>参考资料：</strong></p>
+<p>《字志 01》、《字志 02》、《字体设计 100+1》 靳埭强 着、《感觉舒服的文字》 高桥善丸 着</p>
+<p>欢迎关注研习设的微信公众号：「Yanxishe2017」</p>
+<p><span class="img-zoom"><img alt="字体设计在变化之前，你得先做这一步" class="alignnone size-full wp-image-271254" src="https://image.uisdc.com/wp-content/uploads/2018/05/yxskxsqr.jpg" alt="震惊！对客户不满就殴打客户？日本设计师横尾忠则的精彩人生" /></span></p>
