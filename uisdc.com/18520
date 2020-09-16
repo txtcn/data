@@ -1,0 +1,457 @@
+➜实操案例！B端信息逻辑「超级整理术」 （下）
+https://www.uisdc.com/b-side-finishing-2	58425
+<p>B端产品信息具有：信息量大、关联关系复杂，最终达到目的是用户高效率的理解信息并完成任务。本文借鉴佐藤可士的超级整理术，帮你梳理好复杂的B端信息。</p>
+<p>上期回顾：</p>
+<p>[link https://www.uisdc.com/b-side-finishing]</p>
+<h4><span class="auto_menu">组装、排序</span></h4>
+<p>承载画布：对于pc端，组装设计原则是避免有横向滚动条，笔记本、台式。所有信息最小宽度适配在 1366px 内；响应适配考虑到 1920px 尺寸。考虑到浏览器右侧滚动条10px 留足安全距离。</p>
+<p>首屏信息高度考虑768-110=658px内</p>
+<p>移动端一般使用750*1334 px，其中H5页面要减去考虑到浏览器的高度。</p>
+<p>将信息作为一个单元进行组装。信息组装的形式一方面要符合用户的认知习惯。常见有列表、矩阵式卡片、线性卡片、时间轴、树形组件等，亦可参考Ant Design、element UI等规范</p>
+<p>小技巧：注重视觉秩序性、信息整体性、保持对齐、简洁、克制</p>
+<h5>1. 列表：对比、高效</h5>
+<p><strong>应用场景和特点</strong></p>
+<p>雏形为excel表格。适用大量信息，一个对象为一行，多个对象同类数据为列。分割明确，信息间易于对比，阅览效率高。常和搜索、排序、筛选、操作、分页等元素协同。</p>
+<p><span class="img-zoom"><img alt="实操案例！B端信息逻辑「超级整理术」 （下）" class="alignnone size-full wp-image-388495" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sc-20200913-1.jpg" width="472" height="505" /></span></p>
+<p><strong>用户浏览习惯</strong></p>
+<ul>
+<li>首先通过纵向浏览快速对比列获知关键信息</li>
+<li>然后横向对单条目了解并执行相关操作</li>
+</ul>
+<p><strong>展示处理技巧</strong></p>
+<p>垂直方向对齐：</p>
+<ul>
+<li>一般数字类右对齐，如金额、数量，</li>
+<li>信息左对齐，如商品名、编号、时间、状态、操作等</li>
+<li>标题与对象垂直对齐</li>
+</ul>
+<p>水平方向-顶部对齐。前端使用组件默认是水平居中对齐，对于复杂信息展示会错乱，需要调整</p>
+<p>不能跨列超出。当字段过长可定义换行，信息对于用户不必要完整展示，超出2行或1行省略，鼠标悬浮气泡展示全部，如商品标题</p>
+<p>字段过多。一行展示不下，需将信息分类每类分列。将动态信息，如状态、操作单独列出，一般置于列表右侧。右侧主要适用右利人群，使用鼠标和手机右手居多，用户距离近方便操作</p>
+<h5>2. 线性卡片：「十」形浏览、</h5>
+<p><strong>应用场景和特点</strong></p>
+<p>兼具卡片和表格的特性。既有利于展示各个对象的特性，又可高效纵向阅读或对比。</p>
+<p><span class="img-zoom"><img alt="实操案例！B端信息逻辑「超级整理术」 （下）" class="alignnone size-full wp-image-388496" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sc-20200913-2.jpg" width="472" height="432" /></span></p>
+<p><strong>用户浏览习惯</strong></p>
+<ul>
+<li>首选会纵向浏览关键信息进行对比</li>
+<li>人后锁定目标对象后查看详情</li>
+</ul>
+<p><strong>行与行展示小技巧</strong></p>
+<ul>
+<li>单卡片内一般无纵向分割线</li>
+<li>行之间间距分割需明显，线或卡片间距</li>
+<li>垂直对齐，对齐方式与表格一致</li>
+<li>需对比的信息可突出，且对齐</li>
+<li>行高度克制，过高阅读效率会降低</li>
+</ul>
+<h5>3. 矩阵式卡片：「F」形浏览</h5>
+<p><strong>应用场景和特点</strong></p>
+<p>适用于富文本信息，网格布局，一行超过2个。用于突出各个对象的服务和特点，对比其次或不需要对比。</p>
+<p><span class="img-zoom"><img alt="实操案例！B端信息逻辑「超级整理术」 （下）" class="alignnone size-full wp-image-388497" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sc-20200913-3.jpg" width="472" height="432" /></span></p>
+<p><strong>用户浏览习惯</strong></p>
+<ul>
+<li>首段距离小范围内横向浏览</li>
+<li>在内容区的左侧做快速的纵向浏览</li>
+<li>用户并不会浏览页面上所有内容</li>
+<li>营销场景中，头图使用户聚焦于某卡片</li>
+</ul>
+<p><strong>展示小技巧</strong></p>
+<ul>
+<li>建议一行不要超过5个</li>
+<li>若有将重要的信息放在头两行</li>
+<li>每个卡片内容布局模式保持一致，居左</li>
+<li>卡片内将关键词和信息放在段首</li>
+</ul>
+<h5>4. 时间轴「十」形浏览、</h5>
+<p><strong>应用场景</strong></p>
+<p>垂直展示时间流信息，以时间为主轴，内容可有主题、用户名、图片、类型、详细内容等等。比如用户操作日志、物流轨迹、待办事项等</p>
+<p><strong>用户阅读习惯</strong></p>
+<p>从上到下纵向阅览，一般第一条用户重点关注</p>
+<p><strong>展示小技巧</strong></p>
+<ul>
+<li>已发生的事情为时间倒序展示</li>
+<li>将要发生的时间正序，如待办事项</li>
+<li>第一条重点展示</li>
+<li>时间纵向对齐</li>
+</ul>
+<h5>5. 树形组件「十」形浏览、</h5>
+<p><strong>应用场景</strong></p>
+<p>通过逐级大纲的来展现信息的层级关系，高效、整体框架一目了然。适用于任何需要通过层级组织的信息场景，如文件夹、组织架构、生物分类、国家地区、功能权限等等。</p>
+<p><strong>用户阅览习惯</strong></p>
+<p>用户可同时浏览与处理多个树状层级的内容。</p>
+<h5>6。 更多创意展示提高信息获取效率</h5>
+<p>根据信息的特性，从信息展示阅读高效性出发，充分发挥设计师的创意。</p>
+<ul>
+<li>多学习数据图表展示形式，如antv；</li>
+<li>各类网站搜索「数据可视化」拓展思维库</li>
+</ul>
+<p>如亨利设计的伦敦地铁路线图，一直沿用至今。</p>
+<p><span class="img-zoom"><img alt="实操案例！B端信息逻辑「超级整理术」 （下）" class="alignnone size-full wp-image-388498" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sc-20200913-4.jpg" width="1080" height="818" /></span></p>
+<p>△ 地理模式的地铁路线图</p>
+<p><span class="img-zoom"><img alt="实操案例！B端信息逻辑「超级整理术」 （下）" class="alignnone size-full wp-image-388499" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sc-20200913-5.jpg" width="962" height="685" /></span></p>
+<p>△ 电路板抽象模式的地铁路线图</p>
+<h4><span class="auto_menu">信息有主次</span></h4>
+<p>将信息组装排序好后，「分主次」这一步很多设计师会忽略。当用户看到页面，需要页面会「自己说话」，除考虑用户的F型视觉阅览习惯外，设计师有意识的引导设计：</p>
+<ul>
+<li>视觉焦点在哪里？</li>
+<li>主次关系逻辑顺序是什么？</li>
+</ul>
+<h5>1. 主次方法：主要、次要、焦点</h5>
+<p>通过文字的大小、粗细变化、深浅变化、颜色变化等来表现文字之间的信息层次。用户在短时间内获取关键信息。</p>
+<p><strong>主次注意点</strong></p>
+<ul>
+<li>避免颜色过多，强调重点多反而无重点</li>
+<li>主次对比层级不能过多，最多3个层级：主要、次要、焦点信息</li>
+<li>区分采用的形式不能过多</li>
+</ul>
+<h5>2. 状态颜色使用实例状态类</h5>
+<p><strong>事件状态分为</strong></p>
+<p>to do-即将要做的事eg：待发货、待处理退款等 ，若需要优先及时处理的可置顶</p>
+<p>doing-正在执行的事 eg：退款中、申请中</p>
+<p>done-已经发生的事，分为</p>
+<ul>
+<li>已成功的-是否需要后续的操作，不需则勿强化，如使用灰色的成功</li>
+<li>已失败-告知失败原因、该怎么做解决</li>
+<li>已过期-系统原因导致的需要警示用户，如店铺授权过期；不需关注可置灰置底</li>
+<li>已停用-系统原因导致的需要警示用户；用户手动触发，不再关注,使用浅灰色，或整个条目都置灰置底</li>
+</ul>
+<p><span class="img-zoom"><img alt="实操案例！B端信息逻辑「超级整理术」 （下）" class="alignnone size-full wp-image-388500" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sc-20200913-6.jpg" width="472" height="448" /></span></p>
+<p>△ B端常用色彩原理（勿转载）</p>
+<p>色彩使用要克制，可以将信息准确传达给用户即可。不一定以上5个色都用到，尽量用最少的颜色表达。减少色彩的方法：将差异不大的状态使用相同颜色</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p><strong>1. B端信息特点</strong></p>
+<p>信息量大、关联关系复杂、用户需要理解成本</p>
+<p><strong>2. 信息设计目的</strong></p>
+<p>用户高效率的理解信息并完成任务</p>
+<ul>
+<li>这是什么？（信息与角色）</li>
+<li>对应我要做什么？（状态+操作）</li>
+<li>会达成怎样的结果？(信息引导)</li>
+</ul>
+<p><strong>3. B端信息的「超级整理术」六步走</strong></p>
+<p><strong>第一步：信息显性化</strong></p>
+<p>主要是产品经理输出。设计师需要了解用户原声、需求评审、五要素（场景/角色/目的/工具/行为），便于后续设计</p>
+<p><strong>第二步：罗列</strong></p>
+<p>「工匠死磕」精神，将信息全面罗列，并理解每个信息，有理有据</p>
+<p><strong>第三步：分类</strong></p>
+<p>除根据业务信息属性分类，可重点考虑将静态、动态信息分开，便于用户get到重点信息。</p>
+<p>动态信息包括：状态、操作、数据、相关字段信息、标签类。</p>
+<p><strong>第四步：组装 第五步：排序</strong></p>
+<p>明确画布尺寸，避免出现横向滚动条</p>
+<p>形式主要有：表格、线性卡片、矩阵式卡片、时间轴、树形组件、更多创意形式</p>
+<p><strong>第六步.确定主次</strong></p>
+<p>信息有主次，且重点突出。文字信息通过大小、粗细变化、深浅变化、颜色变化 层次。</p>
+<p>欢迎关注作者微信公众号：「Aber UX设计」</p>
+<p><span class="img-zoom"><img alt="实操案例！B端信息逻辑「超级整理术」 （下）" class="alignnone size-full wp-image-388492" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sc-20200913-8.jpg" width="180" height="181" /></span></p>
+➜别被拖后腿！写给新手的平面设计基础指南（一）
+https://www.uisdc.com/basics-of-graphic-design	58908
+<p>近年越发觉得如果 UI 设计师完全没有平面的基础，视觉表现能力上就会极度匮乏，是无法应对实际工作需要的。</p>
+<p>这种匮乏表现在方方面面，做一个字段多的组件排列得非常奇怪，设计项目展示的时候内容十分局促，做作品集封面的时候放飞自我……</p>
+<p>所以考虑了很久，还是觉得需要做一个系列，针对平面入门的知识点进行输出，让大家不会被这些必备基础拖后腿。</p>
+<p>下面是正文内容。</p>
+<h4><span class="auto_menu">平面设计是什么</span></h4>
+<p>首先我们要具体定义一下，平面设计是什么。平面设计（ Graphic Design ）也叫做「视觉传达」，是大学设立的平面专业名称。</p>
+<p>它是一个囊括非常多细分类目的综合学科，主要包含字体、版式、广告、品牌、包装、运营等类目。是经历数个世纪的发展和洗礼扩充而成的，所以我们用一个时间线来简单做个扫盲。</p>
+<p>在 「上古时期」 印刷和造纸术普及后，书报的印刷就需要对字体、版式进行功能性的设计，满足阅读的需要，这就是平面设计的雏形。</p>
+<p><span class="img-zoom"><img alt="别被拖后腿！写给新手的平面设计基础指南（一）" class="alignnone size-full wp-image-388507" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jj-20200913-1.jpg" width="822" height="646" /></span></p>
+<p>工业革命时期，平面设计的任务就是满足资本扩张的需要，提高信息传播效率，应用更多元的视觉元素，减少文字数量，增加用户对所传达信息的理解和兴趣。</p>
+<p><span class="img-zoom"><img alt="别被拖后腿！写给新手的平面设计基础指南（一）" class="alignnone size-full wp-image-388508" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jj-20200913-2.jpg" width="1080" height="496" /></span></p>
+<p>随着资本主义的升级，企业开始进一步追求对消费者的影响力，而这种影响力被抽象成 「品牌」 的概念，于是平面设计开始注重更抽象的标识、视觉系统，也就是现在我们所说的品牌视觉设计。</p>
+<p><span class="img-zoom"><img alt="别被拖后腿！写给新手的平面设计基础指南（一）" class="alignnone size-full wp-image-388509" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jj-20200913-3.jpg" width="1080" height="743" /></span></p>
+<p>二战结束以后，美国经济的腾飞和全球化的热潮，使得消费主义兴盛，厂商和企业开始更注重商品的外观和样式，除了工业设计以外，包装和图形的设计也得到飞速的发展，成为一个重要的门类。</p>
+<p><span class="img-zoom"><img alt="别被拖后腿！写给新手的平面设计基础指南（一）" class="alignnone size-full wp-image-388510" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jj-20200913-4.jpg" width="808" height="632" /></span></p>
+<p>最后，进入20世纪末尾，互联网的发展使得平面内容的载体发生根本性的变化，从三维空间的实体转变成由数据转化成的像素点阵图。平面广告的多媒体化，甚至可以让消费者参与到信息传达的互动过程中，我们也叫它 —— 运营设计。</p>
+<p><span class="img-zoom"><img alt="别被拖后腿！写给新手的平面设计基础指南（一）" class="alignnone size-full wp-image-388511" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jj-20200913-5.jpg" width="601" height="800" /></span></p>
+<p>上面提到的这些类目都是平面设计的一部分，你既可以只专精一个领域，也可以雨露均沾。平面设计只是一个泛指，我们学习平面设计，就是作用到其中的某个类目中去。</p>
+<p>值得关注的问题是，平面设计的发展是完全伴随着商业社会的发展而兴盛的，用一句话来描述它 —— 平面设计就是通过编排内容元素去传达语义信息的商业行为。传达语义信息，就是它和摄影、涂鸦、插画、图案艺术的本质。</p>
+<p>比如下图是应用了 Gary Oldman 的海报和他的摄影照片，具备了语义信息，那就是平面设计而不是摄影了。</p>
+<p><span class="img-zoom"><img alt="别被拖后腿！写给新手的平面设计基础指南（一）" class="alignnone size-full wp-image-388512" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jj-20200913-6.jpg" width="954" height="640" /></span></p>
+<h4><span class="auto_menu">UI 设计师和平面的纠葛</span></h4>
+<p>我们都知道 UI 设计和平面设计也是有区别的，最大的不同点是 UI 元素设计出来是和用户互动的，并且它的载体完全在电子屏幕和系统中。所以 UI 的设计需要比平面多考虑关于交互、规范、体验、开发边界等问题。</p>
+<p><span class="img-zoom"><img alt="别被拖后腿！写给新手的平面设计基础指南（一）" class="alignnone size-full wp-image-388513" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jj-20200913-7.jpg" width="1066" height="800" /></span></p>
+<p>但是！除了一些思考方式的不同以外，UI 在界面视觉设计上使用的技能，还是包含在平面设计的体系之内。比如上方 UI 界面的案例，使用的排版、配色技巧，都只是平面的知识点内容。</p>
+<p>如果平面的基础排版能力过关，掌握 UI 的相关规范以后就可以很快上手，在不考虑交互的前提下设计出类似追波主页的界面是信手拈来的。所以优秀的视觉设计师偶尔做做 UI 界面会造成一种对 UI 设计师 「降维打击」 的错愕。</p>
+<p><span class="img-zoom"><img alt="别被拖后腿！写给新手的平面设计基础指南（一）" class="alignnone size-full wp-image-388514" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jj-20200913-8.jpg" width="706" height="800" /></span></p>
+<p>好的平面视觉能力，不一定能做出体验优异的界面，但良好的体验中一定包含优秀的平面视觉。学习 UI 的界面设计其实就是在掌握平面基础的一个过程，它是我们做出优秀产品的必要非充分条件。</p>
+<p>再者，UI 设计师的职业输出内容并不仅仅只有 UI 界面而已，虽然它最重要，但围绕项目展开的输出成果还包含项目的评审展示、规范文档、PPT 等等。</p>
+<p><span class="img-zoom"><img alt="别被拖后腿！写给新手的平面设计基础指南（一）" class="alignnone size-full wp-image-388515" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jj-20200913-9.jpg" width="1080" height="932" /></span></p>
+<p>没有基本的平面能力，这些工作就会做得一团糟，甚至粗糙得让开发同事觉得你担不起设计师这个称号，叫美工都嫌是赞誉了。</p>
+<p>还有，在目前 UI 的职业发展中，在转成管理岗脱离一线之前，基本不可能只负责 UI 有关的设计而已，还需要处理大量的运营设计需求，以及企业的日常需求。</p>
+<p>比如最让 UI 设计师深恶痛绝的 Banenr、H5 页面设计。</p>
+<p><span class="img-zoom"><img alt="别被拖后腿！写给新手的平面设计基础指南（一）" class="alignnone size-full wp-image-388516" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jj-20200913-10.jpg" width="925" height="800" /></span></p>
+<p>再到让我们无法回避的企业内部物料的设计，比如名片、纸杯、折页、展架等。</p>
+<p><span class="img-zoom"><img alt="别被拖后腿！写给新手的平面设计基础指南（一）" class="alignnone size-full wp-image-388517" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jj-20200913-11.jpg" width="984" height="684" /></span></p>
+<p>除了实际和工作内容，对于设计师身份最重要的证明，就是作品集了。但无论是哪个行业要设计作品集，本质上都是通过平面技巧来完成的。</p>
+<p>在室内、建筑、服装等行业，高级设计师或工作室的作品集通常会制作成一套画册，通过外包给平面设计师来完成，比如下面这种。</p>
+<p><span class="img-zoom"><img alt="别被拖后腿！写给新手的平面设计基础指南（一）" class="alignnone size-full wp-image-388518" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jj-20200913-12.jpg" width="1022" height="805" /></span></p>
+<p>但对于 UI 设计师来说，让我们的作品集经他人之手产出是不可能的，需要我们自食其力。所以如何来完成作品集基本页面内容的设计，对项目的包装，就成为每个 UI 设计师都需要面对的问题。</p>
+<p>而作品集中，对项目的包装（Zhuang B），会对自身水平的展现起决定性作用，无论是在 Behance 还是站酷，能上首页的先不论实际界面专业度如何，展示的高大上是必不可少的。</p>
+<p><span class="img-zoom"><img alt="别被拖后腿！写给新手的平面设计基础指南（一）" class="alignnone size-full wp-image-388519" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jj-20200913-13.jpg" width="613" height="800" /></span></p>
+<p><span class="img-zoom"><img alt="别被拖后腿！写给新手的平面设计基础指南（一）" class="alignnone size-full wp-image-388520" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jj-20200913-14.jpg" width="613" height="800" /></span></p>
+<p>这种现象的形成，好坏的影响都有，但不管怎么分析，实事摆在那里，不能将自己的作品、业务能力通过良好的平面技巧输出，那么对面试官来说就是 「弱鸡」、「菜鸟」、「新手」 还是别的什么不好的身份。</p>
+<p>设计师终究是以 「色」 示人的行当，视觉效果太差，就没人在意你的想法和实际成果，这时别埋怨马老板们只看得上花枝招展的妖艳JH，而忽视你有趣的灵魂（前提是你有的话）。</p>
+<p>学习 「茶艺」，刻不容缓呐！</p>
+<p>知道平面能力对于 UI 设计师来说有多重要了嘛？</p>
+<h4><span class="auto_menu">结尾</span></h4>
+<p>本篇先做个扫盲，到下一篇开始就会针对平面的一些理论作出说明，正式讲解有关平面的知识点。也希望大家可以重视这个问题。</p>
+<p>来不及看下期的同学也可以先看这两篇：</p>
+<p>[link https://www.uisdc.com/graphic-design-basis]</p>
+<p>[link https://www.uisdc.com/need-to-know-the-plane-foundation]</p>
+<p>欢迎关注作者的微信公众号：「超人的电话亭」</p>
+<p><span class="img-zoom"><img alt="别被拖后腿！写给新手的平面设计基础指南（一）" class="size-full wp-image-278484 alignnone" src="https://image.uisdc.com/wp-content/uploads/2018/07/Supermancallqr.jpg" alt="什么样的公司值得设计师全情投入？来看总监级的分析！" /></span></p>
+➜数百种动态效果可商用！Icon 8官方出品的动态图标库来了！
+https://www.uisdc.com/icons8-animated-icons-2-0	61236
+<p><span class="img-zoom"><img alt="数百种动态效果可商用！Icon 8官方出品的动态图标库来了！" class="alignnone size-full wp-image-388923" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-i8-20200915-1.jpg" width="1153" height="800" /></span></p>
+<p>Icons8 最早是一家制作免费图标的公司，后来也开始提供各种类型素材，像是免费向量图插图下载 Icons8 Illustrations</p>
+<p>[link https://www.uisdc.com/icons8-illustrations]</p>
+<p>免费自制图库 Moose Photos：</p>
+<p>[link https://www.uisdc.com/icon8-moose-photos]</p>
+<p>还有免费音乐素材库 Fugue 等等：</p>
+<p>[link https://www.uisdc.com/icon8-official-music-library]</p>
+<p>如果想要自行设计插图，也能利用 Vector Creator 编辑工具挑选各种素材元素、样式在线编辑器进行组合：</p>
+<p>[link https://www.uisdc.com/vector-creator]</p>
+<p>Icons8 除了包山包海各种设计相关资源都有，更重要的是授权方式清楚，在免费使用的情况下只要标示来源、链回原始网页就没什么问题。</p>
+<p>本文要介绍的「Animated icons 2.0」也是来自 Icons8，收录超过 900 个动画图标让你的项目计划更脱颖而出！这些图标加入可爱流畅的动态效果，由内部设计团队操刀确保所有图案都保有相当好的分辨率。</p>
+<p>Animated icons 2.0 提供的动态图标格式包括 Lottie 适用的 JSON、GIF 和 After Effects 格式，透过网页可以搜寻、预览动态图标效果。不过这项服务并非所有图示都是免费，仅有标示为「Free」可以免费下载，其余图案需要付费购买图标集才能取得。依照授权可做个人和商业用途，免费使用必须放置链结连回 Icons8。</p>
+<h4>Icons8 Animated icons 2.0</h4>
+<p>网站链接：<a href="https://icons8.com/animated-icons">https://icons8.com/animated-icons</a></p>
+<p><strong>使用教学</strong></p>
+<p>开启 Icons8 的 Animated icons 2.0 网页会看到现有的动画图示集，目前一共有 Color、iOS Glyph、Windows 10、Material Filled 和 Office style，依照说明他们会逐渐扩充到 2500 个图标图案，有兴趣的朋友可在网页输入 Email 订阅通知。</p>
+<p><span class="img-zoom"><img alt="数百种动态效果可商用！Icon 8官方出品的动态图标库来了！" class="alignnone size-full wp-image-388924" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-i8-20200915-2.jpg" width="1153" height="800" /></span></p>
+<p>点选任一图示可以快速预览，或是直接浏览某个图标集的所有图案，例如 Color style 这套图示就有 307 个图案，点选右上角「Buy this pack」购买完整图示，如标示为「Free」代表可以免费下载使用。</p>
+<p><span class="img-zoom"><img alt="数百种动态效果可商用！Icon 8官方出品的动态图标库来了！" class="alignnone size-full wp-image-388925" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-i8-20200915-3.jpg" width="1153" height="800" /></span></p>
+<p>Animated icons 2.0 所有图示都具有动画效果，看起来很生动、活泼，透过浏览器可预览动画，每个图标会有卷标方便以相同关键词进行搜寻和检索。</p>
+<p>利用下方按钮可以下载 JSON、GIF 或 After Effects 格式。</p>
+<p><span class="img-zoom"><img alt="数百种动态效果可商用！Icon 8官方出品的动态图标库来了！" class="alignnone size-full wp-image-388926" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-i8-20200915-4.jpg" width="888" height="800" /></span></p>
+<p><strong>值得一试的三个理由：</strong></p>
+<ul>
+<li>Icons8 Animated icons 2.0 收录许多动画图标图案</li>
+<li>提供 JSON、GIF 和 After Effects 格式供使用者下载</li>
+<li>仅标示 Free 可免费下载，所有图示皆可用于个人和商业用途</li>
+</ul>
+➜从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基
+https://www.uisdc.com/wasily-kandinsky	63887
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yxs-2020813.jpg" width="720" height="161" class="alignnone size-full wp-image-384439" /></span></p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388848" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-2.gif" width="640" height="940" /></span></p>
+<p>瓦西里·康定斯基（Василий Кандинский，格里历1866年12月4日－1944年12月13日），画家和美术理论家。康定斯基与彼埃·蒙德里安和马列维奇一起，被认为是抽象艺术的先驱。</p>
+<p>康定斯基在我们的印象中，是一个抽象派的艺术家，看似和平面设计关联性不大。当我们在不断地研究和学习设计过程，很容易就会注意到。</p>
+<p>他对整个平面设计的推动，以及在不断的通过绘画来创造新的表现形式的过程中，对平面的空间型以及点线面的方面做了大量的研究，最终也都体现到了他的画作中，影响了很多的艺术流派。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388849" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-3.gif" width="360" height="281" /></span></p>
+<p>在组建包豪斯学院时，康定斯基同样作为中坚力量，对平面的空间性进行了有力的探索，他对色彩独特且富有表现力的运用，使他的创作充满浪漫主义的神秘感，从混乱中产生新的生命。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388850" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-4.jpg" width="520" height="726" /></span></p>
+<p>△ 5岁时的康定斯基</p>
+<p>1866年12月4日出生的康定斯基，像很多艺术家一样，早在儿时和少年之际，就已塑造成型。他的天赋与生俱来，那种对内在动力的积极摄取，以及对创作的渴望也是毋庸置疑的。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388851" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-5.jpg" width="1000" height="718" /></span></p>
+<p>△ Rapallo &#8211; boat in the sea， 1902</p>
+<p>他描述生平最初的颜色记忆是葱郁明亮的绿色、白色、洋红色、黑色以及赭石色。这种对图像和色彩异常清晰的记忆能力，伴随着他的一生并成了他创作灵感的源泉。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388852" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-6.jpg" width="712" height="500" /></span></p>
+<p>△ 康定斯基的父母</p>
+<p>由于父母离婚，康定斯基内心第一次受到了打击，他被托付给姨妈进行照看。这个敏感的男孩从父母的紧张关系中逃离出来，一头扎进了自己内心深处的神话世界。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388853" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-7.jpg" width="379" height="512" /></span></p>
+<p>俄罗斯和德国的神话故事，让他的艺术想象力持久的得到滋养。但当他第一次尝试将自己内心体验融入到绘画的时候，却遭遇了失败，因为那时的他还没有能力将强大的内心体验和想象力很好的以视觉形式展示出来。</p>
+<p>他姨妈的细心唤醒了他对艺术的热爱，让他在这条路上不畏艰难地前行。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388854" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-8.jpg" width="600" height="717" /></span></p>
+<p>△ 青年时期的康定斯基</p>
+<p>为了平衡内心未解决的紧张（父母离婚），也有可能是为了逃避他内心难以驾驭的想象力。</p>
+<p>康定斯基决定学习法律学和经济学。在此后，他毫不费力的通过了司法考试，并获得了莫斯科大学讲师职位（是的，天才就是这么的随意）。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388855" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-9.jpg" width="1080" height="215" /></span></p>
+<p>这个时候康定斯基面临了一次抉择，是选择接受塔尔图大学教授职位邀请，还是过着漂泊无定的艺术家生活。这个时候两件事深深的触动了他。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388856" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-10.jpg" width="1200" height="162" /></span></p>
+<p>△ 莫奈的《干草垛》</p>
+<p>第一个触动他的是莫斯科的法国印象派展览上，克劳德·莫奈的《干草垛》使他迷惑惊奇。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388857" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-11.jpg" width="400" height="238" /></span></p>
+<p>△ 罗恩格林 剧照</p>
+<p>第二个则是，当他看到了莫斯科皇家剧院上演的瓦格纳的《罗恩格林》，全新的编曲深深震撼了康定斯基 “濒临疯狂的画面边缘处的野性的线条呈现在我的面前”音乐激发了康定斯基同感的可能性。同时，也给了他在绘画上尚未发现的一种预知能力。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388858" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-12.jpg" width="1080" height="811" /></span></p>
+<p>△ 当时，慕尼黑是世界艺术之都</p>
+<p>1896年，康定斯基做了最终的决定：他和年轻的妻子离开了莫斯科。他的妻子十分不愿意，毕竟康定斯基选择的是一份飘忽不定的生活，对未来感到不安。但是康定斯基还是决定前往慕尼黑。就这样法学生康定斯基，踏入了艺术的星辰大海！</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388859" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-13.jpg" width="800" height="320" /></span></p>
+<p>在康定斯基的而立之年，他来到了慕尼黑。当时的慕尼黑是世界艺术之都。艺术氛围相当地活跃，康定斯基到了慕尼黑并没有立刻开始创作，而是安安稳稳的在安东·阿斯比开办的艺术学校里面，经历了严格的裸体素描练习。</p>
+<p>这两年内他没有画出一幅知名的作品。尽管他非常的讨厌解剖素描，但是为了短时间内能快速的把基础捡起来，他还是坚持住了。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388860" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-14.jpg" width="1080" height="749" /></span></p>
+<p>△ Beach Baskets In Holland 1904</p>
+<p>阿斯比的绘画课程对于康定斯基是十分重要的，阿斯比用印象派手法进行创作，并且鼓励康定斯基在并置中使用分离的技法，在这幅《Beach Baskets In Holland》我们就能看到这种风格的体现。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388861" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-15.jpg" width="1080" height="447" /></span></p>
+<p>△ Beach Baskets In Holland 局部放大</p>
+<p>厚重的色块随意地相邻，视觉元素进行了独立的把控，在较为早期的画作中，我们能看到视觉元素还没有形成严格的系统，也与康定斯基主要想追求的抽象视觉表达相差甚远。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388862" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-16.jpg" width="1080" height="796" /></span></p>
+<p>△ 第一次方阵展览海报</p>
+<p>1901年，康定斯基有了一定成绩，他拉上几个朋友，组建了一个为艺术家及其作品展览而服务的社团「方阵」，并且亲自为第一次展览设计了海报。</p>
+<p>他将暴风雨般积极进取的精神转化在青年风格派的图形形式里面。这次展览将整个慕尼黑文化中的进步力量都凝聚在此。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388863" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-17.jpg" width="1080" height="701" /></span></p>
+<p>△ 老城 Old town II 1902</p>
+<p>在康定斯基早期的作品中《老城 Old town II》，他用色彩表现了一个高度风格化的城镇，这幅作品的灵感来自于康定斯基的罗滕堡之旅，整幅画运用了印象派的手法，表现出了一个悠闲温暖的午后时光，它完美地表达了康定斯基在慕尼黑时不谙世事的美好状态。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388864" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-18.jpg" width="586" height="800" /></span></p>
+<p>△ 歌手 The Singer 1903 木刻</p>
+<p>在这期间康定斯基不断地尝试新的创作方式，木刻则是给他提供了象征手法的灵感。这幅早期作品《歌手 The Singer》有着线条青年风格派以及装饰性的空间风格，显而易见的与音乐有着密切的关系。</p>
+<p>他坚信作品和观众之间有一种内在的契合，他称之为klang共鸣。木刻是康定斯基走向艺术独立的第一步。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388865" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-19.jpg" width="995" height="800" /></span></p>
+<p>△ Colorful Life 1907</p>
+<p>康定斯基最重要的作品之一，就是这幅《Colorful Life 多彩的生活》。一群色彩人物形象在秋色风景中漫无目的游荡，在坚实壮丽的山巅，一个宏伟的城市冉冉升起。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388866" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-20.jpg" width="600" height="1289" /></span></p>
+<p>整体的色彩明亮，画面中的人物栩栩如生，描绘俄罗斯的日常生活，技法依旧是印象派的手法，但是我们慢慢能看到康定斯基的创作的突破。</p>
+<p>主题的组合和运动方向变得明显，这幅画中描述俄罗斯过去和现在生活的世界性和精神层面，描绘死亡及复活的信仰，可以在里面找到日常的小争执和玩笑。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388867" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-21.jpg" width="850" height="566" /></span></p>
+<p>到了1908年的春天，从康定斯基决定到慕尼黑的这几年，他一直过着飘忽不定的日子。一次偶然的机会，他来到了位于阿尔卑斯山脚下的小城穆尔瑙，并在这里买了房子。通过那里的风景启发他进行新的艺术尝试，从木刻版画转向了风景油画。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388868" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-22.jpg" width="1080" height="810" /></span></p>
+<p>△ Murnau View With Railway And Castle 1909</p>
+<p>《Murnau View With Railway And Castle》在构图的方面展示了康定斯基木刻版画的众多特质，特别是在轮廓平面化方面。明亮而厚重的色彩运用和黑色的火车形成了强烈的对比，成为一种新的艺术表达形式。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388869" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-23.jpg" width="600" height="439" /></span></p>
+<p>△ Grungasse In Murnau 1909</p>
+<p>这一时期的作品大多都是用这种形式表现的，他的新风格十分的明显。画面通常是巨大而又简单的立方状方块，明暗或冷暖对比强烈的高亮色块构成。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388870" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-24.jpg" width="400" height="549" /></span></p>
+<p>△ Cemetery And Vicarage In Kochel 1909</p>
+<p>画面中常使用厚重的笔触，偶尔相互区别以让背景不同的颜色显现出来。甚至在不同区域之间经常轮流使用不同浓度的颜色和画面以使人集中注意力，也让画面有一种焦躁、闪烁的质感。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388871" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-25.jpg" width="550" height="434" /></span></p>
+<p>△ Interior (My Dining Room) 1909</p>
+<p>康定斯基把色彩之间的色调和对比发挥到了极致，尽管他的有些作品，如《Interior (My Dining Room)》有着很多和野兽派马蒂斯作品相似的元素，他的作品中的主题几乎淹没在色彩的滚滚洪流中。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388872" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-26.jpg" width="605" height="600" /></span></p>
+<p>△ Lyrical (Lyrics)divbrdiv 1911</p>
+<p>到了这个时期的末尾，1911年，康定斯基的画作就已经开始出现了抽象元素，在《Lyrical (Lyrics)divbrdiv》中，马和骑士被放大到了纪念碑一般大，景色退缩到了背景中。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388873" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-27.jpg" width="500" height="371" /></span></p>
+<p>△ Romantic landscapedivbrdiv 1911</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388874" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-28.jpg" width="700" height="546" /></span></p>
+<p>△ Glass Painting with the Sun (Small Pleasures)</p>
+<p>骑士和马在这里一时期，经常出现在康定斯基的画中。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388875" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-29.jpg" width="420" height="560" /></span></p>
+<p>△ Cover design for The Blue Rider Almanacdivbrdiv 1911</p>
+<p>为《蓝骑士年鉴》设计封面的时候，他把神话故事里面的骑士变成了圣乔治，这位屠龙出现在各种水彩、木刻、素描及夹金玻璃中。屠龙的形象一再出现在康定斯基的画中。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388876" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-30.jpg" width="600" height="448" /></span></p>
+<p>△ Sketch for Composition II 构成II</p>
+<p>康定斯基的作品中经常会出现的几个名字，「印象」「即兴」和「构成」。1909年的时候，康定斯基开始将他的作品进行归类：仍旧保持着自然具象元素的「印象」。无意识情感反映的「即兴」。最高难度水平，只能长期积累后才能成功的「构成」。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388877" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-31.jpg" width="500" height="590" /></span></p>
+<p>△ Improvisation 6 (African) 即兴6（非洲）</p>
+<p>画中的两个「非洲人」的形象几乎被鲜亮激烈的颜色淹没。这一时期的作品在创作上具有一致性，都是谨慎的一步步地发掘色彩和形式的独立语言。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388847" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-1.jpg" width="1199" height="800" /></span></p>
+<p>△ 这一时期的康定斯基即兴创作</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388878" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-32.jpg" width="600" height="240" /></span></p>
+<p>「蓝骑士」是德国的第二个表现主义社团，热衷于通过表达精神上的真实；致力于推动现代艺术，促进视觉艺术与音乐之间的结合和练习，相信色彩能够表达精神、具有象征性，强调要通过自发的、直观的形式去绘画。他们更重视抽象画面的表现作用。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388879" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-33.jpg" width="633" height="636" /></span></p>
+<p>△ 蓝骑士成员摄影</p>
+<p>康定斯基认为，所有艺术不仅仅是绘画，也是一种精神状态的重塑，并且通过转向抽象化、元素化变得更加贴近它们的目标。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388880" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-34.jpg" width="1000" height="698" /></span></p>
+<p>△ 构成V 1911</p>
+<p>最早最具有说服力的一个构成作品《构成V》，这幅作品对康定斯基有重大的意义。一系列偶发的不成熟的具体形象暗含在抽象的形式之中。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388881" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-35.jpg" width="660" height="358" /></span></p>
+<p>△ 在画面中的最顶端的城市。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388882" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-36.jpg" width="768" height="662" /></span></p>
+<p>△ 用原色表现的三个人驾驶的游艇。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388883" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-37.jpg" width="829" height="800" /></span></p>
+<p>△ Picture with a Black Archdivbrdiv 1912</p>
+<p>在早期的抽象绘画中，他通过强调色彩能够引起通感的价值。《Picture with a Black Archdivbrdiv》是情绪化地主宰抽象形式的世界的一个美妙例证。这幅作品中三个不同形状的区域彼此对立构成了极具戏剧性的组合。</p>
+<p>从右下角延伸到画面中的红色块颜色越来越深，和他相对的是一个蓝色的轮廓，点缀着少量笔触明显的浅黄色和橘红色，一个紫红色的圆形图案在红色块和蓝色块之上。尽管画面下方的两个色块在画面边缘较为稳定，但画面顶端的形式还是通过边角较小的色块显得自有动感。红和蓝调和的紫色似乎在努力融合这种紧张的冲突感。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388884" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-38.jpg" width="814" height="800" /></span></p>
+<p>△ Picture with a Black Archdivbrdiv 局部</p>
+<p>所有的图像元素奔跑着穿过画面，拱形则给整个画面增加了重量。这个拱形更像是一个直角，连接着三个色块，并起到加强紫红色圆形稳定性的效果。</p>
+<p>也可以把这个作品看成是一个运动的瞬间，从红色色块开始，然后他略微变成紫红色最后滑向蓝色色块。黑色的拱形看上去就像一个充满能量的火山，作为一个暴力抗争的图像，一边是红色形式，一边是蓝色轮廓。突出表现的基本主题就是」冲突「。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388885" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-39.jpg" width="500" height="453" /></span></p>
+<p>△ Improvisation 26 (Rowing), 1912</p>
+<p>在」蓝骑士「期间，康定斯基积极参与组织展览和建立新联系的工作使得他的抽象绘画道路迎来了决定性的时期。从逐渐拒绝关联引用到纯粹的色彩和形式进行表达，这一过程本身也是康定斯基」即兴「概念的最佳阐释。</p>
+<p>《Improvisation 26 (Rowing)》就延续了他1911年画作中，无组织的形状以及充满暗示性的线条，一个红色的拱形和六条黑色线条的组合变成了划船人形象的附带阐释。划行的小船成为了这一时期康定斯基无数次广泛表现的形象，也是康定斯基图像学的一部分。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388886" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-40.jpg" width="868" height="800" /></span></p>
+<p>△ 小乐趣 Small Pleasuresdivbrdiv，1913</p>
+<p>划船形象在《小乐趣 Small Pleasuresdivbrdiv》中作为前进的象征意义被表现的尤为清晰，就像骑马人的主题那样，同样是险境的象征，一个人暴露出的遗弃感的象征。具象的元素在宁静而保守的色彩构图中占据主导地位。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388887" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-41.jpg" width="668" height="512" /></span></p>
+<p>山顶的城镇清晰可辨</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388888" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-42.jpg" width="386" height="302" /></span></p>
+<p>这三人的小划艇漂流在水面上</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388889" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-43.jpg" width="1080" height="622" /></span></p>
+<p>山下的小村落也许暗含着风景</p>
+<p>洪水即兴 Improvisation. Delugedivbrdiv，1913</p>
+<p>他尝试将天启及灾难性的主题融入其中，这幅作品是康定斯基构成作品中色彩极为丰富、颇为动荡不安的作品之一。</p>
+<p>每一个可辨识的细节逐渐迷失在上下起伏的色彩喷发之中，只有在画面的左上角隐约可以看到山的形象，这是这一时期康定斯基最喜欢表现的一个基本主题。在一片混乱中，山的形象稳定坚固，不可动摇。坚信只有通过艰苦的努力才能进入精神的领地。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388891" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-45.jpg" width="500" height="502" /></span></p>
+<p>△ 峡谷即兴 Improvisation. Gorge，1914</p>
+<p>这幅画作展现了起起落落的洪流中，一对身穿巴伐利亚服装的情侣在栈桥处，伴随着小艇。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388892" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-46.jpg" width="1080" height="759" /></span></p>
+<p>△ 白色边缘的绘画 Painting With White Border，1913</p>
+<p>在艺术道路上最有里程碑意义的一件作品应当是《白色边缘的绘画 Painting With White Border》，他完成于第一次世界大战前夕。</p>
+<p>他在一次想起来「圣乔治和恶龙」的主题时，在大量的草稿和前期的准备中，他将这一个原始主题逐渐转化为越来越抽象的形式，最终呈现在油画中的视觉效果是」技法上简单、直接和清晰地描绘了康定斯基认为的绘画的基本准则即「黑白之间的博弈」。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388893" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-47.jpg" width="1080" height="752" /></span></p>
+<p>画面中的一个退了色的淡蓝形状代表着一个战斗者的形象，一条白色的线条。代表着战斗者的长矛直对着龙，即画面左下角那个迈步前进的黑色形象。这幅作品构图中最重要的就是画面四周围围绕着的白色边缘，他将我们的注意力都集中在了画面的核心部分。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388894" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-48.jpg" width="604" height="600" /></span></p>
+<p>△ 梦即兴 Improvisation. Dreamy.divbrdiv，1913</p>
+<p>各种颜色的形状围绕着背景色上弥漫的蓝色中心蜂拥而来。伴随着他们的第二种声音，线条符号以及散射状的图形元素与自由独立的色块交相呼应。迥异于其他即兴作品抽搐般的痉挛，整个构图流露出平静祥和的气氛。在画面里面，康定斯基在毫无生气的抽象的两个极端之间游走。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388895" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-49.jpg" width="1080" height="401" /></span></p>
+<p>随后第一次世界大战爆发，这个对整个二十世纪初的艺术史的影响是彻底的，就如同他对社会和思想的改变一样，它也令居住在穆尔瑙的康定斯基大吃一惊。康定斯基这一段的时期的绘画，也就在这一事件上暂时停止了。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388896" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-50.jpg" width="600" height="240" /></span></p>
+<p>战后康定斯基在极其艰难的情况下回到了德国，那个时候德国在一战中战败，民族情绪高涨。康定斯基到德国后显得很孤立。他的朋友有的在战争中丧生，有的居住在柏林以外的地方。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388897" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-51.jpg" width="480" height="330" /></span></p>
+<p>△ 瓦尔特·格罗皮乌斯</p>
+<p>这时，包豪斯学院的创立者瓦尔特·格罗皮乌斯邀请他去魏玛任教，他欣然接受了。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388898" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-52.jpg" width="600" height="317" /></span></p>
+<p>△ Draft for Mural In The Unjuried Art Show, Wall B，1922</p>
+<p>在离开柏林前不久，康定斯基为「未受伤的柏林艺术展」创作了四幅大型壁画。这些画作既是康定斯基在莫斯科时期艺术风格的最后回顾，也是对他未来艺术风格发展的一次展望。</p>
+<p>在黑色背景上使用彩画这种技术将这幅作品与他的慕尼黑时期联系起来。这也为他提供了一个新的机会，即用自由的形式去表达自己对艺术的综合理解。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388899" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-53.jpg" width="658" height="475" /></span></p>
+<p>△ 包豪斯 Masters’ Houses in Dessau</p>
+<p>格罗皮乌斯（包豪斯校长）召集了一批最现代最杰出的艺术家在魏玛的包豪斯学院授课。在包豪斯学院的课程上，康定斯基一方面侧重于他之前拟定的莫斯科艺术文化研究所教学计划，另一个方面也将新兴的格式塔心理学的一些新发现囊括在其中。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388900" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-54.jpg" width="1080" height="718" /></span></p>
+<p>△ 康定斯基（左2）在包豪斯时期</p>
+<p>在教授色彩时，他强调黄色和蓝色的对比，采纳了歌德的一些原则，并对神智学和超自然研究的成果进行的扩展（是的你没有看错）。第二种对比是黑色和白色的对比，第三种是绿色和红色的对比。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388901" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-55.jpg" width="1080" height="756" /></span></p>
+<p>△ 构成 VIII，1923</p>
+<p>康定斯基在魏玛时期的主要作品是一幅被命名为《构成 VIII》的大型作品。几何词汇被限定为集中有限的元素，例如圆形、半圆、排线、直线还有曲线，处于主导地位的圆形位于画面的左上角，还有其他一些非同心圆围绕在周围。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388902" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-56.gif" width="639" height="359" /></span></p>
+<p>△ 构成 VIII 立体效果动画展示</p>
+<p>棋盘状的栅格形穿过自由散布的圆形和半圆形，却并未限制这些圆形或是与这些圆形形成对抗的格局。这件作品中的各种图形相互矛盾且摇摆不定，但又形成了一种平衡，这正体现了一种康定斯基早期作品截然不同的风格。</p>
+<p>他早期作品的特色都是以颜色和形状来塑造独特的艺术效果，但这个时期的作品在精神层面有所突破，因此也少了一些紧张和焦虑的感觉。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388903" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-57.jpg" width="990" height="734" /></span></p>
+<p>△ 蓝色中 In Blue，1925</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388904" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-58.jpg" width="1080" height="688" /></span></p>
+<p>△ 黄-红-蓝 Yellow-Red-Blue，1925</p>
+<p>1925年，包豪斯的第一阶段结束（学校遭到了魏玛右翼政党的攻击）。第二阶段始于德国德绍。在《蓝色中 In Blue》和《黄-红-蓝 Yellow-Red-Blue》画作尺寸和艺术价值方面几乎可被视为经典之作，这件作品的左半部分是浅色、明亮的顔色和图形、线条，右半部分是暗色和深色，以及更多的来自于画家的创意，比如蓝黑色的圆形和黑色的曲线。</p>
+<p>土黄色象征「坚实」的意义，天蓝色看着似乎有向右上方「飘浮」象征过去的意味。这样安排形状和颜色所形成的对比效果是康定斯基对其早期作品中，骑士和龙主题的回忆，这两种意象都在这幅作品中以一种非常正式的形态重新出现。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388905" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-59.jpg" width="589" height="600" /></span></p>
+<p>△ 多个圆圈 Several Circles，1926</p>
+<p>表现康定斯基这些想法最好的作品是《多个圆圈》。一个黑色的圆圈像日食那样遮住另一个蓝黑色圆圈的一部分，周围还环绕着其他大大小小鲜艳颜色的圆圈。</p>
+<p>这些圆圈共同出现在一个黑褐色的背景中，重叠透明的圆圈可以营造出一种全新而且能清楚区别色调的效果。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388906" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-60.jpg" width="306" height="429" /></span></p>
+<p>△ 1928年包豪斯杂志 康定斯基（左一）</p>
+<p>1928年，在包豪斯的季刊上，他阐述了思维能力和直觉之间的重要关系:「新的艺术时代总会有新的主张和理论，这些主张和理论的必要性不言自明，与科学理论是一个道理。然而，这些主张永远无法替代直觉的作用。</p>
+<p>知识本身是苍白的，它必须通过提供素材和方法充实自己，而直觉又是通过利用素材和方法作为手段来实现最终的目标，如果没有这些方法和手段则无法实现最终的目标，仅凭直觉的创作将苍白无力。」</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388907" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-61.jpg" width="568" height="800" /></span></p>
+<p>△ 楼层 Storeys，1929</p>
+<p>《楼层》这幅画描绘了各种抽象的意向集合在一起，占据一座房子中各个楼层的场景，这些「楼层」也是对包豪斯学院越来越侧重建筑设计的讽刺。</p>
+<p>将生活空间的功能结构变成风格千篇一律的小型单元，就像在德绍用工业生产方法建成的特尔滕住宅区试点一样。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388908" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-62.jpg" width="600" height="406" /></span></p>
+<p>△ 变化无常 Capricious，1930</p>
+<p>康定斯基在德绍包豪斯学院最后几年推出的作品又变得轻快起来，还带有了一些幽默感，他艺术生涯晚期在巴黎的作品尤为如此。《变化无常》就是这时期作品中的一例，这幅画中的三桅船、宇宙飞船、埃及象形文字和克利梦幻般的象征性语言之间有一种神秘联系。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388909" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-63.jpg" width="800" height="600" /></span></p>
+<p>1931年，纳粹发动了一场针对包豪斯学院的恶意攻击，最后导致学院于1932年关闭。到了1933年4月希特勒上台，学院立刻遭到了盖世太保的搜查并被关闭。</p>
+<p>7月19日，教职工决定出于安全原因停办包豪斯学院，很多教师和学生都移民去美国继续传播包豪斯学院的主张和学说。康定斯基和他的妻子有幸及时逃亡巴黎，也开始了康定斯基新的创作时期。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388910" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-64.jpg" width="682" height="800" /></span></p>
+<p>巴黎艺术界对康定斯基的到来却表现得非常冷淡并且有所保留，一方面让法国艺术家与「巴黎学派」保持距离，另一方面对抽象画也不认可。康定斯基在积极联络旅居巴黎的俄罗斯艺术家无果而终之后，他开始减少与其他艺术家的联系。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388911" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-65.jpg" width="803" height="800" /></span></p>
+<p>△ 平缓上升 Gentle Ascent，1934</p>
+<p>《平缓上升》这件作品中，可以看到从五彩的云朵中升出各种色彩，这些颜色上特别细微的差别共同构筑了一曲色彩的美妙乐章。</p>
+<p>康定斯基似乎将构成主义关于色彩的理论都留在了包豪斯学院，他现在使用的色彩组合都是艺术界之前从未见过的，其中的大多数都具有巧夺天工的效果。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388912" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-66.jpg" width="584" height="800" /></span></p>
+<p>△ 天蓝色 Sky Bluedivbrdiv，1940</p>
+<p>这件作品中占主导地位的巨大色块很容易让人想起深海水母，其他形状让人想起浮游生物和微小的水生生物。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388913" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-67.gif" width="500" height="281" /></span></p>
+<p>特别是在《天蓝色》这件作品中，各种颜色的形状和图形在天蓝色背景上飘浮，就像透过显微镜观察到的未知世界。「颜色和形状的创新」一次又一次地创造出欢快的效果，在色彩斑斓的云状背景上显示出独立顽强的生命力。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388914" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-68.jpg" width="1000" height="656" /></span></p>
+<p>△ 构成X Composition X，1939</p>
+<p>《构成X》就是康定斯基在第二次世界大战爆发前完成的最后一幅大型画作。他利用大量的色彩和形状描绘了一个神秘虚幻的世界，但从这件作品中丝毫察觉不到军事冲突一触即发的紧迫感。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388915" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-69.jpg" width="1080" height="715" /></span></p>
+<p>△ 主调曲线 Dominant Curvedivbrdiv，1936</p>
+<p>康定斯基的作品突出的特点就是不可动摇的复杂性，一个典型的佐证便是大型画作《主调曲线》，描绘了一场充满幻想和纷繁复杂的焰火秀。大量象征性符号和生物形态漂浮其中，形成独具特色的圆圈；其中一些发展成为某种卷轴画，形成了画中画；右边阶梯状的建筑很清晰地表明康定斯基对感知心理学也有所了解。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388916" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-70.jpg" width="1010" height="661" /></span></p>
+<p>△ 圆圈的周围 Around the Circle，1940</p>
+<p>在《圆圈的周围》中，奇形怪状的颜色在黑色的池沼中熠熠生辉，就像夜色中莫斯科的穹顶。红色圆心周围的图案具有令人着迷的音乐效果。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388917" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-71.jpg" width="1000" height="736" /></span></p>
+<p>△ 温和的活力 Tempered Elan，1944</p>
+<p>康定斯基最后因为动脉硬化于1944年12月13日去世，他最后的作品《温和的活力》，像其他在战争期间创作的画作一样，除了稀缺的颜料，看不出任何其他来自外部或者内部的困窘。</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-388918" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200915-72.jpg" width="662" height="542" /></span></p>
+<p>康定斯基说：「抽象艺术处于一个新世界中，表面上与“现实”并无关联，但却与“真实”的世界密切相关。究其根本，它也遵循‘宇宙世界’的通行法则。所以“新的艺术世界”与“自然界”平行存在。这个“艺术世界”很真实也很具象。正因为如此，我更愿意将“抽象”艺术称为“具象的艺术”。」</p>
+<p>康定斯基深入的参与了现代艺术的重要发展进程。但他最大的贡献在于创造出一种全新的绘画理念。他通过各种形式将这样的理念传授给大众。</p>
+<p>康定斯基直到去世前都坚持自己认定的「内心世界」。在这个视觉的世界中，抽象并不只是其本身或只是单纯用来表达的一种手段，它意味着从欲望中升华出的对物质和生命的探究。</p>
+<p>更多艺术家的生平介绍：</p>
+<p>[link https://www.uisdc.com/yokoo-tadanori]<br />
+[link https://www.uisdc.com/kitagawa]</p>
+<p><strong>参考文献：</strong></p>
+<p>书名：康定斯基 ISBN编号: 9787805019857 作者:［德］哈乔·杜汐汀译者: 李璠；刘希出版社名称: 北京美术摄影出版社</p>
+<p>欢迎关注研习设的微信公众号：「Yanxishe2017」</p>
+<p><span class="img-zoom"><img alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" class="alignnone size-full wp-image-271254" src="https://image.uisdc.com/wp-content/uploads/2018/05/yxskxsqr.jpg" alt="字体设计在变化之前，你得先做这一步" /></span></p>
