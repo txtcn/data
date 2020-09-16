@@ -1,0 +1,445 @@
+➜梁宁：鸿蒙的雄心，三分天下有其一
+http://www.sohu.com/a/418610146_117018	48185
+<p class="ql-align-justify">今天，2020年9月15日，是特别的一天。</p>
+<p class="ql-align-justify">因为自今天起，美国对华为的芯片新禁令正式生效。</p>
+<p class="ql-align-justify">自此，台积电、高通、三星、SK海力士、美光等主要元器件厂商将不再供应芯片给华为。</p>
+<p class="ql-align-justify">2019年，华为就推出了鸿蒙系统，积极应对美国禁令。</p>
+<p class="ql-align-justify">上周，华为召开了2020开发者大会，华为消费者业务 CEO 余承东宣布了最新的鸿蒙 OS 2.0 ，目标是“共建万物互联的全场景智慧生态”。</p>
+<p class="ql-align-justify">针对最新的鸿蒙系统，梁宁老师和鸿蒙的开发者与生态建设者进行了沟通，得到了关于鸿蒙系统的9个关键问题和答案。</p>
+<p>我们征询梁宁老师授权，把她和鸿蒙开发者的沟通内容，独家分享给你。</p>
+<p>希望能帮助你进一步认识华为的鸿蒙系统。</p>
+<p class="ql-align-justify"><strong>01. 鸿蒙的开发语言？</strong></p>
+<p class="ql-align-justify">硬件驱动 C/C++，应用 JS</p>
+<p class="ql-align-justify"><strong>02. 鸿蒙与安卓最大的不同？</strong></p>
+<p class="ql-align-justify">通过分布式技术，将手机与 IOT 设备进行无线组合，形成超级终端。</p>
+<p class="ql-align-justify"><strong>2.1 最大好处</strong></p>
+<p><strong>让手机应用与 IOT 无缝互通。</strong></p>
+<p>以车载导航系统为例，过去通过蓝牙连接，只能播报路况语音。</p>
+<p>现在鸿蒙系统提供<strong>分布式软总线技术</strong>进行连接，不是简单投屏，甚至还能<strong>分享 CPU 计算资源</strong>。</p>
+<p>比如，使用车上 CPU 进行计算后，上传抖音视频时的压缩过程可以放到车上计算，缩短压缩时间，使得上传时间减少，手机功耗也会减少。</p>
+<p>用更便捷的方式进行设备之间互相连接，使得应用能够编写一次，跑在不同设备上。</p>
+<p><strong>2.2 内核技术</strong></p>
+<p>安卓基于Linux Kenel。</p>
+<p>鸿蒙为了支持在不同大小和形态下的设备，采取<strong>多种内核策略</strong>，这样能达到不同设备的最佳性能功耗。</p>
+<p><strong>这是安卓不具备的系统底层能力。</strong></p>
+<p>本次开源 LiteOS 技术是多款华为实际产品中沉淀出来的内核，12月支持Linux Kernel内核，兼容更多设备。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">反正鸿蒙是开源，微内核会在大家眼皮底线长出来。</p>
+<p class="ql-align-justify"><strong>03. 什么时候、在哪里可以体验鸿蒙？</strong></p>
+<p><strong>3.1 </strong>目前华为运动手表已经是鸿蒙系统，10月份发布。</p>
+<p>华为手表现在是国内手表市场份额第一的产品，非常期待。</p>
+<p><strong>3.2</strong> 双十一，美的会推出采用鸿蒙系统的 IOT 产品，消费者可以体验到。</p>
+<p class="ql-align-justify"><strong>3.3</strong> 10-11月华为 Mate40 上将能看到一些鸿蒙的特性，可以在 EMUI 11 版本体验到。</p>
+<p class="ql-align-justify"><strong>3.4</strong> 现在华为的旗舰店，也可以体验鸿蒙“碰一碰”万物互联。</p>
+<p class="ql-align-justify"><strong>04. 鸿蒙计划的 1+8+N 的万物互联和小米的米家连接区别是什么？</strong></p>
+<p>小米生态所有产品都可以通过手机操作。</p>
+<p>是因为小米生态产品通过加 SDK 通信组件，与小米手机连接，并进行通信。</p>
+<p><strong>鸿蒙系统手机与采用分布式技术的底层系统打通，可以实现音视频，甚至 CPU 级别的系统交互。</strong></p>
+<p>过去双摄像头、三摄像头发布后，大家调侃是否会出到100个摄像头，通过分布式能力，确实是可以的。</p>
+<p>外部设备可以理解为通过无线的方式装载到手机里，你可以认为手机的范畴变大了，是万物互联的超级设备。</p>
+<p><strong>05. 鸿蒙系统与安卓系统是否兼容？</strong></p>
+<p>鸿蒙选择兼容道路也是十分务实。</p>
+<p>已有移植到鸿蒙，只需要在多设备互动的功能中使用的新 API 增量开发，大大降低应用适配难度。</p>
+<p><strong>06. 鸿蒙为设备厂商提供哪些支持？</strong></p>
+<p><strong>6.1 </strong>开源免费</p>
+<p><strong>6.2</strong> SDK</p>
+<p><strong>6.3 </strong>百万级源码</p>
+<p><strong>6.4 </strong>设备开发工具链</p>
+<p><strong>6.5 </strong>开发板模组</p>
+<p><strong>07. 鸿蒙为开发者提供哪些支持？</strong></p>
+<p><strong>7.1 </strong>1万 API 调用</p>
+<p><strong>7.2</strong> 自主开发的框架</p>
+<p class="ql-align-justify"><strong>7.3</strong> 工具链</p>
+<p class="ql-align-justify"><strong>7.4 </strong>模拟器</p>
+<p class="ql-align-justify"><strong>7.5</strong> 需要获得技术支持可以到 Harmonyos.com 官网联系。</p>
+<p class="ql-align-justify">也可以自行到开源社区进行代码修改和提交。</p>
+<p class="ql-align-justify">开放性有开放原子开源基金会保障。（这个基金会，有时间再介绍）</p>
+<p class="ql-align-justify"><strong>08. 安卓强大在哪里？</strong></p>
+<p class="ql-align-justify">15年积累。</p>
+<p class="ql-align-justify">占据近全球87%智能手机用户心智。</p>
+<p class="ql-align-justify">400名开发者（99% Google 员工）。</p>
+<p class="ql-align-justify">1.2亿行代码。</p>
+<p><strong>09. 为什么安卓也需要中国？</strong></p>
+<p><strong>9.1</strong> 全球1/2的安卓手机是中国品牌。</p>
+<p class="ql-align-justify"><strong>9.2</strong> 全球1/4的安卓手机卖给中国用户。</p>
+<p><strong>9.3</strong> Google 网站自己披露的非手机类 ODM 合作伙伴，一共50家左右，都是中国企业，具体来说，7成在深圳，近3成在上海地区。</p>
+<p>简单来说，<strong>安卓最重要的伙伴，除了三星，全是中国企业！！！</strong></p>
+<p>综上，<strong>鸿蒙的雄心，三分天下有其一</strong></p>
+➜你到底在靠什么赚钱？你真的知道吗？
+http://www.sohu.com/a/418846852_117018	48297
+<p class="ql-align-justify">前段时间，我和一个品牌的品牌商、代理商一起开私董会。</p>
+<p class="ql-align-justify">品牌商，就是产品的生产商。</p>
+<p class="ql-align-justify">代理商，就是负责一个区域（比如一个省）的中间商。</p>
+<p class="ql-align-justify">品牌商把产品卖给代理商，代理商再把产品卖给门店的经销商。</p>
+<p class="ql-align-justify">开私董会的时候，我提出了一个问题：</p>
+<p class="ql-align-justify"><strong>代理商，到底靠什么赚钱？</strong></p>
+<p class="ql-align-justify">听到这个问题，大家几乎立刻就回答说，代理商靠差价赚钱。</p>
+<p class="ql-align-justify">我说，没错。</p>
+<p class="ql-align-justify"><strong>但是，看这个问题有两个角度，一个角度是盈利模式，另一个角度是商业模式。</strong></p>
+<p class="ql-align-justify">代理商从品牌商那里进货，再加价卖给门店的经销商，代理商是靠差价赚钱。</p>
+<p class="ql-align-justify">这是代理商的盈利模式。</p>
+<p class="ql-align-justify"><strong>盈利模式，就是利润从哪里来。</strong></p>
+<p class="ql-align-justify">盈利模式可以有很多种，除了赚差价，你还可以赚门店的服务费。</p>
+<p class="ql-align-justify">但是，最关键的问题，并不在于你是赚差价还是赚服务费。</p>
+<p class="ql-align-justify"><strong>而是，你到底凭什么赚这个差价？</strong></p>
+<p class="ql-align-justify">这，就是商业模式。</p>
+<p class="ql-align-justify"><strong>那么，你到底凭什么能赚到这个差价呢？</strong></p>
+<p class="ql-align-justify">大家陷入沉思，开始了一段很有趣的讨论。</p>
+<p>—<strong> 1 </strong>—</p>
+<p class="ql-align-justify">有人说，我能赚差价，是因为我掌握了资源，我跟品牌商关系特别好。</p>
+<p class="ql-align-justify">有人说，我能赚差价，是因为我有一个特别好的团队，战之必胜。</p>
+<p class="ql-align-justify">有人说，我能赚差价，是因为我一直为门店提供最好的服务。</p>
+<p class="ql-align-justify">……</p>
+<p class="ql-align-justify"><strong>我说，这些原因，听上去好像都很在理，但是在我看来，这些还远远不够。</strong></p>
+<p class="ql-align-justify">为什么？</p>
+<p class="ql-align-justify">我给你讲个故事。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">我有一个朋友，是做旅游行业的。他包下了一家欧洲航空公司在中国的机票代理权。</p>
+<p class="ql-align-justify">具体来说，就相当于他包下了这家航空公司的若干架航班的机票，然后再卖到中国。</p>
+<p class="ql-align-justify">当然他不是直接把机票卖给用户，而是卖给携程等平台上的代理商。</p>
+<p class="ql-align-justify"><strong>那么，他是在靠什么赚钱呢？</strong></p>
+<p class="ql-align-justify">从盈利模式上来看，他是把机票低价批来，再高价卖给代理商。</p>
+<p class="ql-align-justify">他赚的是批零差，也就是批发价和零售价之间的差价。</p>
+<p class="ql-align-justify"><strong>那从商业模式上来看，他到底为什么能赚这个批零差呢？</strong></p>
+<p class="ql-align-justify">在过去十几年，欧洲其实一直都不是特别太平。会出现罢工，会有一些难民，会出现恐怖袭击，或者中国和某些国家的关系突然变差等等。</p>
+<p class="ql-align-justify">这种时候，大量到中国、或者其他国家的机票就会面临卖不出去的风险。</p>
+<p class="ql-align-justify">什么叫风险？</p>
+<p class="ql-align-justify">风险就是不确定性。</p>
+<p class="ql-align-justify"><strong>因为有很大的不确定，这些航空公司，就会提前很早，比如一年或者半年，把所有的机票，以很低的价格打包卖给中间商。</strong></p>
+<p class="ql-align-justify">航空公司为什么不自己零售？</p>
+<p class="ql-align-justify">在没有任何风险的情况下，航空公司自己零售机票，也能卖得很好。</p>
+<p class="ql-align-justify">但是因为有很大的不确定，航空公司吃不准未来一年，欧洲会不会突然发生什么事件，导致机票滞销。</p>
+<p class="ql-align-justify">所以，航空公司宁愿提前很久，就把所有的机票，以很低的价格打包卖给中间商。</p>
+<p class="ql-align-justify"><strong>航空公司卖掉的，其实是未来有可能出现的风险。</strong></p>
+<p class="ql-align-justify">有一年，我的这个朋友就遇到了问题。</p>
+<p class="ql-align-justify">他包下了航空公司那个时段的所有机票。可是突然之间，法国发生了一个很大的意外事件。</p>
+<p class="ql-align-justify">于是，大量中国往返法国的机票就卖不出去了。</p>
+<p class="ql-align-justify">已经卖出去的，已几乎全部退票。</p>
+<p class="ql-align-justify">他非常痛苦，就去跟航空公司商量，现在去不了法国，这些机票我能不能退给你？</p>
+<p class="ql-align-justify">航空公司回复，当然不能。</p>
+<p class="ql-align-justify">航空公司的人私下跟他说，我们为什么要在半年或一年之前，就把所有机票用特别便宜的价格卖给你，让你赚批零差？</p>
+<p class="ql-align-justify">就是因为我们不愿意吃掉风险。</p>
+<p class="ql-align-justify">如果你能够控制风险，或者说愿意吃掉风险，那么你才可以赚这个批零差。</p>
+<p class="ql-align-justify"><strong>批零差，就是你吃掉风险的保险费。</strong></p>
+<p class="ql-align-justify">他这才恍然大悟。</p>
+<p class="ql-align-justify"><strong>有了金刚钻，才能揽瓷器活。</strong></p>
+<p class="ql-align-justify">在他们这一行，金刚钻就是，能够准确地预测风险，并快速处理风险。</p>
+<p class="ql-align-justify"><strong>没有金刚钻，在风险不出现的时候，你看上去依然赚钱。</strong></p>
+<p class="ql-align-justify"><strong>但本质上，你是在靠运气赚钱。</strong></p>
+<p class="ql-align-justify">你只是正好没有遇到风险。</p>
+<p>—<strong> 2 </strong>—</p>
+<p class="ql-align-justify">听完这个故事后，回到一开始的问题：</p>
+<p class="ql-align-justify"><strong>代理商，到底凭什么赚差价？</strong></p>
+<p class="ql-align-justify">大家重新思考过后，有人说：</p>
+<p class="ql-align-justify">我作为代理商能赚差价，是因为我开发了大量的话术，培养了大量的促销员，把促销员们派往下游的各个门店，帮他们卖产品。</p>
+<p class="ql-align-justify">我说，对，这就是你真正的核心竞争力。</p>
+<p class="ql-align-justify">一般的门店，假如转化率是3%，100个人进店，有3个人会买东西。</p>
+<p class="ql-align-justify">但是你不一样，因为你有专门的能力培养促销员，把促销员派到门店之后，门店的转化率提高了，假如提高到6%，你的利润就提高了一倍。</p>
+<p class="ql-align-justify">所以你靠什么赚钱呢？</p>
+<p class="ql-align-justify"><strong>你靠用自己的销售人员提高转化率来赚钱。</strong></p>
+<p class="ql-align-justify">另外一位代理商说，我能赚差价，是因为我的资金周转率高。</p>
+<p class="ql-align-justify">别人投入4个亿的资金，一年能做8个亿的生意，他的资金周转次数是2次，而我的周转次数是7次，所以我赚到的利润比别人多。</p>
+<p class="ql-align-justify">我总结说，你赚的，是资金效率的钱。</p>
+<p class="ql-align-justify">什么叫资金效率的钱？</p>
+<p class="ql-align-justify">就是你对资金的管理效率已经达到了很高的水平。</p>
+<p class="ql-align-justify">假如行业的平均水平是，每卖一块钱东西，利润是10%，能挣一毛钱。</p>
+<p class="ql-align-justify">资金一年周转2次，那就意味着每卖一块钱东西，一年可以挣两毛钱。</p>
+<p class="ql-align-justify">那你一年周转7次呢？</p>
+<p class="ql-align-justify">每卖一块钱东西，你一年可以挣7毛钱。</p>
+<p class="ql-align-justify">同样一块钱投进去，你能赚7毛，别人赚2毛。</p>
+<p class="ql-align-justify"><strong>所以，你靠资金周转效率来赚钱。</strong></p>
+<p class="ql-align-justify">还有一位代理商说，我能赚差价，是因为我的社群里有500个下线，每个人都能带动很大的销售。同时我还和很多机构，比如房地产商合作来销售产品，我能够不断找到合作方。</p>
+<p class="ql-align-justify">我说，没错，这就是你的核心竞争力。</p>
+<p class="ql-align-justify">你总是有一种能力，去不断找到低成本的流量。</p>
+<p class="ql-align-justify">别人获得流量的成本比较高，而你的成本比较低，你挣的就是流量之间的成本之差。</p>
+<p class="ql-align-justify"><strong>所以，你是靠不断找到那些低成本的流量来赚钱。</strong></p>
+<p class="ql-align-justify">另外一位代理商说，我能赚差价，是因为我做了一套会员系统，消费者在门店买了东西之后，可以在会员系统里产生复购。</p>
+<p class="ql-align-justify">我说，对了，这就是你的核心竞争力。</p>
+<p class="ql-align-justify">你在靠什么挣钱呢？</p>
+<p class="ql-align-justify">消费者在门店买了产品之后，不一定会再次来到门店复购。</p>
+<p class="ql-align-justify">但是你有了会员系统，能够经常触达消费者，他的复购率就会提高。</p>
+<p class="ql-align-justify">别人的消费者平均复购是2次，而你的消费者平均复购可能就是7次。</p>
+<p class="ql-align-justify">这就意味着，同样的获客成本，在别人那里能带来两份利润，而在你这里可以带来7份利润。</p>
+<p class="ql-align-justify">所以，你靠什么来赚钱？</p>
+<p class="ql-align-justify"><strong>你靠会员系统提升复购率来赚钱。</strong></p>
+<p class="ql-align-justify">每一位代理商都有自己赚钱的本事。都有比别人厉害的地方。</p>
+<p class="ql-align-justify">接下来，我们再来深入思考一个根本的问题。</p>
+<p class="ql-align-justify">抛开每个代理商身上的优势，所有的代理商最终都能赚到钱，这是靠什么？</p>
+<p class="ql-align-justify"><strong>换句话说，品牌商为什么需要代理商？代理商为什么会存在？</strong></p>
+<p class="ql-align-justify">假如品牌商把产品100块钱卖给代理商，代理商加价20块钱，120块卖给门店。门店又加价30块钱，150块卖给消费者。</p>
+<p class="ql-align-justify">那为什么品牌商不直接120块卖给门店呢？</p>
+<p class="ql-align-justify"><strong>这是因为，对品牌商来说，他直接把产品卖给代理商，效率更高。</strong></p>
+<p class="ql-align-justify">每个省，都有几千家门店。如果品牌商直接供货给门店，需要直接对接几万家门店。</p>
+<p class="ql-align-justify">而对接代理商，只需要几十个就好了。</p>
+<p class="ql-align-justify">品牌商肯定算过这个账，当他120块供货给几万家门店的时候，成本一定比100块供货给代理商更高。</p>
+<p class="ql-align-justify">代理商把商品120块供给门店，假如只用花10块钱的成本，他自己还能从中赚10块钱。</p>
+<p class="ql-align-justify">而如果品牌商来做这件事，可能需要花30元的成本。那他干嘛要自己做呢？</p>
+<p class="ql-align-justify"><strong>所以，你们作为代理商今天之所以能赚钱，是因为通过你们来管理上千家门店的效率，比品牌商直接管理上千家门店的效率要高。</strong></p>
+<p class="ql-align-justify">一旦有一天，品牌商的效率比你更高了，那他几乎一定会跳开所有的代理商，直接跟门店合作。</p>
+<p><strong>最后的话</strong></p>
+<p class="ql-align-justify">我们说任何生意，都要靠人来做，没错。</p>
+<p class="ql-align-justify">任何生意，都要靠厚到来做，没错。</p>
+<p class="ql-align-justify">任何生意，都要靠资源来做，这也没错。</p>
+<p class="ql-align-justify">但是，所有的人，所有的厚到，所有的资源，最终都是为了创造一个势能。</p>
+<p class="ql-align-justify"><strong>这个势能，才是你能够赚钱的本质。</strong></p>
+<p class="ql-align-justify">我们经常说，求之于势，不责于人。</p>
+<p class="ql-align-justify">一个 CEO 真正的价值是创造势能，势能是你的生意能够存在，你能够赚到钱的根本。</p>
+<p class="ql-align-justify">这些代理商，有的靠更高的复购率赚钱，有的靠更高的转化率赚钱，有的靠更便宜的流量赚钱，有的靠更高的管理效率赚钱。</p>
+<p class="ql-align-justify">这都是他们所创造的势能。</p>
+<p class="ql-align-justify"><strong>那么你呢？你到底是靠什么赚钱？</strong></p>
+<p class="ql-align-justify">只有找到这个东西之后，你才会始终安心地立于巨大的势能之上。</p>
+<p class="ql-align-justify">如果找不到，你所打的仗，其实就是在从山下，往山上仰攻。</p>
+<p class="ql-align-justify">拥有了势能，就像站在易守难攻的山头，往山下推石头。</p>
+<p class="ql-align-justify">你只需要用最普通的士兵，就能打赢别人最精锐的部队。</p>
+<p class="ql-align-justify">找到你的核心竞争力，最后你才可以真的“求之于势，不责于人”。</p>
+<p class="ql-align-justify"><strong>所以，思考一下，你到底是在靠什么赚钱？</strong></p>
+➜华为的鸿蒙操作系统，会取代安卓吗？
+http://www.sohu.com/a/418849756_117018	49554
+<p class="ql-align-justify">昨天，我们跟随梁宁老师，探讨了华为鸿蒙系统的9个关键问题。</p>
+<p class="ql-align-justify">身为中国巨头公司，华为的一举一动都引人关注，尤其是在美国最新禁令颁布之后。</p>
+<p class="ql-align-justify">有人猜测，华为发布鸿蒙系统是为了形成自己的生态，最终取代安卓。</p>
+<p class="ql-align-justify">但这实在是太难太难了，难到几乎不可能实现。</p>
+<p class="ql-align-justify">为什么？</p>
+<p class="ql-align-justify">今天，我们一起回顾一下本文，探讨一下背后的原因。</p>
+<p class="ql-align-justify">本文首发于2020年5月。</p>
+<p class="ql-align-justify">2019年5月16日那一天，美国将华为及其附属68家子公司纳入“实体清单”。</p>
+<p class="ql-align-justify">纳入“实体清单”，这意味着，未经美国政府批准，以后任何美国公司都不能与华为开展业务。</p>
+<p class="ql-align-justify">可是，华为是一家高度依赖美国技术、元器件供应、以及海外市场的公司。</p>
+<p class="ql-align-justify">如果美国供应商集体断供，比如谷歌公司不再向华为提供安卓后续版本的升级和授权；</p>
+<p class="ql-align-justify">高通、英特尔、赛灵思不再向华为提供芯片；</p>
+<p class="ql-align-justify">或者美国市场不再销售华为的产品…</p>
+<p class="ql-align-justify">这对华为来说，虽然算不上灭顶之灾，但也相当于绑住手脚，让华为寸步难行。</p>
+<p class="ql-align-justify">怎么办？</p>
+<p class="ql-align-justify"><strong>在去年（2019年）8月9日的华为开发者大会上，华为官方正式发布了，基于微内核的，全场景分布式操作系统：“鸿蒙”。</strong></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200916/c657c8886dc443d5a2b28c935de0e786.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">发布自己的操作系统，这意味着什么呢？</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify"><strong>华为选择在这个时期发布自己的操作系统，是迫于被美国制裁的无奈之举，还是早就已经部署好的战略呢？</strong></p>
+<p class="ql-align-justify">此前，华为的常务董事和高级副总裁余承东表示：</p>
+<p class="ql-align-justify">"我们的系统打通了手机、电脑、平板、电视、汽车智能穿戴，统一成一个操作系统。并且兼容全部安卓应用和 web 应用。"</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200916/a008cd05339f4b0db16636959c57cee3.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>看到这个消息，很多朋友认为，华为研发鸿蒙操作系统，是为了取代手机时代的安卓、IOS，甚至PC时代的 Windows，从而不被美国掣肘。</strong></p>
+<p class="ql-align-justify">但其实不是。</p>
+<p class="ql-align-justify">任正非在采访中也说过：</p>
+<p class="ql-align-justify">"华为推出的鸿蒙系统并不会取代谷歌的安卓系统。鸿蒙如果能够有一部分生态，那也是补充，而不是主要的替代关系。"</p>
+<p class="ql-align-justify">因为，在安卓、IOS、Windows 称霸天下的今天，想要做一个自主的跨手机、平板、电脑等平台的操作系统，还要形成自己的生态，实在是太难太难了，难到几乎不可能实现。</p>
+<p class="ql-align-justify">为什么？</p>
+<p>—<strong> 1 </strong>—</p>
+<p><strong>什么是操作系统？</strong></p>
+<p>要说清楚这个问题，我们首先得从操作系统开始讲起。</p>
+<p><strong>什么是操作系统？</strong> </p>
+<p>简单来说，你可以把它理解为计算机的“翻译官”。</p>
+<p>你想让计算机执行你的指令，你直接对它说：“计算2的10次方”，它是听不懂的。</p>
+<p>在最底层，它需要通过电信号（通电、断电、高电位、低电位等）控制各种元器件来执行具体的任务。</p>
+<p><strong>操作系统的作用，其实就是把人的指令变成机器底层元器件能够“听得懂”的电信号。</strong></p>
+<p class="ql-align-justify">但操作系统只是一个“翻译官”，它不能直接解决实际的问题。</p>
+<p class="ql-align-justify">比如你想要编写一个文稿，如果只有操作系统，你是编辑不了的。</p>
+<p class="ql-align-justify">你还需要运行在操作系统之上的软件和应用，比如 Windows 操作系统上的 Word，比如 iOS 操作系统上的 Pages。</p>
+<p class="ql-align-justify">开发一款软件或者应用，本身已经很不容易了，而想要开发一个承载着成千上万个软件的操作系统，更是难上加难。</p>
+<p class="ql-align-justify">有多难？</p>
+<p class="ql-align-justify"><strong>如果说开发一个软件或者应用的难度是10，那么在今天，开发一个操作系统的难度就是100，它们之间是数量级的差异。</strong></p>
+<p class="ql-align-justify">为什么开发一个操作系统这么难？</p>
+<p class="ql-align-justify">计算机底层的元器件只认识0和1，要把人们的各种复杂指令翻译成只由0和1组成的机器语言，你应该能想象得到，这是多么困难的一件事。</p>
+<p class="ql-align-justify">但是，除了因为涉及最底层的硬件，对工程师的技术要求更高之外，在做操作系统的道路上，还有一座（或者说是一群）几乎难以逾越的高山，那就是<strong>专利</strong>。</p>
+<p>—<strong> 2 </strong>—</p>
+<p><strong>专利，到底有多重要？</strong></p>
+<p>你知道吗，<strong>市场上每卖出一台安卓手机，生产厂家都要给微软交几美元。</strong></p>
+<p>为什么？</p>
+<p class="ql-align-justify">安卓操作系统不是谷歌公司的吗？厂家为什么要给微软交钱？</p>
+<p class="ql-align-justify"><strong>因为安卓系统中用到了大量微软的专利。</strong></p>
+<p class="ql-align-justify">虽然微软的 Windows 是 PC 操作系统，而安卓是手机操作系统，二者看上去没有什么交集。</p>
+<p class="ql-align-justify">但是一些写操作系统的最基础的方法，早在微软开发 Windows 的时候，就被注册专利了。</p>
+<p class="ql-align-justify"><strong>安卓再怎么写，也不可能绕过去。</strong></p>
+<p class="ql-align-justify">比如，微软发明了一种存储文件的方法，申请专利后，如果安卓也用这种方法来存储文件，那就必须给微软交专利费。</p>
+<p class="ql-align-justify">类似这样的专利，微软可能有成千上万个。</p>
+<p class="ql-align-justify"><strong>这成千上万个专利就像一堵墙，挡在了后来者开发操作系统的路上。</strong></p>
+<p class="ql-align-justify">这就是微软的<strong>专利壁垒</strong>。</p>
+<p class="ql-align-justify">在科技行业，专利是一家公司最重要的护城河。</p>
+<p class="ql-align-justify">有了专利壁垒，后来的竞争者就再也无法超越你。</p>
+<p>---</p>
+<p class="ql-align-justify">1997年，如果用四个字来形容当时的苹果公司，那就是：<strong>濒临倒闭</strong>。</p>
+<p class="ql-align-justify">乔布斯重新回到苹果，夺回权利，然后做了一个饱受质疑的决策。</p>
+<p class="ql-align-justify"><strong>当时的苹果非常需要钱，但投资人都不看好苹果，于是乔布斯决定找他最大的敌人帮忙，那就是：微软。</strong></p>
+<p class="ql-align-justify">他给比尔·盖茨打了个电话，说：</p>
+<p class="ql-align-justify">“微软在侵犯苹果的专利……</p>
+<p class="ql-align-justify">如果我们继续打官司，几年后我们可以赢得10亿美元专利罚金，这一点你我都很清楚。</p>
+<p class="ql-align-justify">但如果那样，苹果撑不到那个时候。所以让我们想想如何立即解决这个争端。</p>
+<p class="ql-align-justify">我需要的是微软承诺继续为 Mac 开发软件，并且要向苹果投资，这样我们的成功也能让微软获益。”</p>
+<p class="ql-align-justify">聪明如比尔·盖茨也许根本没想到，乔布斯会疯狂到这种地步。</p>
+<p class="ql-align-justify">但他最终真的投了苹果1.5亿美元，救了苹果。</p>
+<p class="ql-align-justify">为什么？</p>
+<p class="ql-align-justify">因为微软拥有很多专利，苹果也拥有很多专利，他们俩一直在打专利官司。</p>
+<p class="ql-align-justify">乔布斯利用这一点向盖茨提议：咱们别打官司了，不然只会两败俱伤。我们俩可以交叉授权，所有的专利纠纷从此一笔勾销。</p>
+<p class="ql-align-justify">但是，你要答应我一些条件，给我投点钱，并且承诺为我的 Mac 电脑开发 office。</p>
+<p class="ql-align-justify"><strong>于是在1997年，微软和苹果达成了专利和解。</strong></p>
+<p class="ql-align-justify"><strong>也是在那一年，人们终于在mac电脑上用上了 office。</strong></p>
+<p>---</p>
+<p class="ql-align-justify">2011年，谷歌斥资125亿美元收购了摩托罗拉。</p>
+<p class="ql-align-justify">但在2014年，又以29亿美元的价格把摩托罗拉抛售给了联想。</p>
+<p class="ql-align-justify">看上去谷歌太亏了啊，但真的是这样吗？</p>
+<p class="ql-align-justify">其实不是。</p>
+<p class="ql-align-justify"><strong>这笔交易对谷歌来说，赚，大，了。</strong></p>
+<p class="ql-align-justify">因为谷歌留下了摩托罗拉的所有专利，而把硬件和品牌全部卖给了联想。</p>
+<p class="ql-align-justify">这些专利进一步扩大了谷歌的专利壁垒，让谷歌的城墙坚不可摧。</p>
+<p>---</p>
+<p class="ql-align-justify">你看，微软、苹果、谷歌……这些专利巨人，一个一个挡在了华为的前面，无法逾越。</p>
+<p class="ql-align-justify">它们早已在 PC 和手机时代的操作系统世界里称了王。</p>
+<p class="ql-align-justify"><strong>这时，华为想要写出一个不侵犯任何已有专利的操作系统，推翻它们的统治，几乎没有可能。</strong></p>
+<p>—<strong> 3 </strong>—</p>
+<p><strong>更难的是适配</strong></p>
+<p>即便华为真的绕过所有专利，或者和这些专利巨头达成和解，做出了自己的手机或者 PC 操作系统，这还没算完。</p>
+<p class="ql-align-justify">如果华为想要像微软一样，做出一个开放的操作系统，它还要解决一个更难的问题，那就是适配。</p>
+<p class="ql-align-justify"><strong>如果说开发一个操作系统的难度是100，那么适配的难度就是1000。</strong></p>
+<p class="ql-align-justify">以微软为例。</p>
+<p class="ql-align-justify">市面上有成千上万种电脑和电脑配件，微软的 Windows 操作系统怎么去适配这么多机型？</p>
+<p class="ql-align-justify">每一版 Windows 的适配，对微软来说，都是一个巨大的挑战。</p>
+<p class="ql-align-justify">那微软是怎么办的？</p>
+<p class="ql-align-justify">微软总部有一幢几层楼的机房。微软会把市面上所有能买到的电脑和电脑配件（包括 CPU、显卡、鼠标、键盘等等等等）全部买回来，然后在操作系统的层面上，对这些东西做适配。</p>
+<p class="ql-align-justify">你可以想象一下，这个数量有多巨大，需要消耗多少人力物力。</p>
+<p class="ql-align-justify">这个挑战对于华为来说，也同样巨大。</p>
+<p class="ql-align-justify">华为的操作系统怎么适配不同屏幕尺寸的手机？</p>
+<p class="ql-align-justify">在刘海屏上怎么显示？</p>
+<p class="ql-align-justify">在全面屏上怎么显示？</p>
+<p class="ql-align-justify">有的手机用高通的芯片，有的手机用澎湃的芯片，华为的操作系统怎么调用不同的指令集？</p>
+<p class="ql-align-center">---</p>
+<p class="ql-align-justify">这些逻辑都是不一样的。</p>
+<p class="ql-align-justify">如果华为不打算适配这么多机型，只想像苹果公司一样，做一个封闭的操作系统自己使用，也许它的适配难度并不大。</p>
+<p class="ql-align-justify">但是，但是，它会遇到一个更艰难的挑战，那就是形成生态。</p>
+<p class="ql-align-justify"><strong>如果说适配的难度是1000，那么形成生态的难度就是10000。</strong></p>
+<p class="ql-align-center">—<strong> 4 </strong>—</p>
+<p class="ql-align-center"><strong>四大护城河</strong></p>
+<p class="ql-align-justify">在了解怎么形成生态之前，我们先来了解一个概念：<strong>护城河</strong>。</p>
+<p class="ql-align-justify">巴菲特先生曾经说过，想要成为行业巨头，获得超额利润，必须为自己的公司挖护城河。</p>
+<p class="ql-align-justify">今天你所能看到的所有很难被超越的公司，都在早期建立起了自己的护城河。</p>
+<p class="ql-align-justify"><strong>那一个公司可以有哪些护城河呢？</strong></p>
+<p class="ql-align-justify"><strong>有四个：无形资产、成本优势、转换成本和网络效应。</strong></p>
+<p class="ql-align-justify">我们上面讲的专利壁垒，就是无形资产护城河中的一种。</p>
+<p class="ql-align-justify">除了专利，无形资产护城河还包括品牌和法定许可。</p>
+<p class="ql-align-justify"><strong>品牌的关键，不是知名度，而是是否占领了消费者心智，并且因此拥有了定价权。</strong></p>
+<p class="ql-align-justify">比如蒂凡尼。</p>
+<p class="ql-align-justify">它的珠宝就是比别人贵，但你总觉得人生重大事件不买它，就不太对。</p>
+<p class="ql-align-justify"><strong>那什么是法定许可呢？</strong></p>
+<p class="ql-align-justify">为什么过去父母总想把子女送到银行工作？</p>
+<p class="ql-align-justify">因为钱多活少离家近。</p>
+<p class="ql-align-justify">为什么这个世界上会有钱多活少离家近的职业？</p>
+<p class="ql-align-justify">因为享受了超额利润。</p>
+<p class="ql-align-justify">为什么银行能享受超额利润？</p>
+<p class="ql-align-justify">因为这个行业有法定进入许可。</p>
+<p class="ql-align-justify">因为各种原因获得法定许可，进了围城的人，非常令人羡慕。</p>
+<p class="ql-align-justify">类似的行业，还有澳门的赌场，大陆的电信，以及各国的石油。</p>
+<p class="ql-align-justify"><strong>第二道护城河，是成本优势。</strong></p>
+<p class="ql-align-justify">什么叫“成本优势”？</p>
+<p class="ql-align-justify"><strong>就是我成本比你低，所以卖得比你便宜，还能有钱赚。</strong></p>
+<p class="ql-align-justify">你也降价试试？你一降价就亏损，因为你成本高。</p>
+<p class="ql-align-justify">因此，你卖贵因为没人买，就会死；你卖便宜因为不赚钱，也会死。</p>
+<p class="ql-align-justify">这就是成本优势。</p>
+<p class="ql-align-justify"><strong>第三道护城河，是转换成本。</strong></p>
+<p class="ql-align-justify">我是百度云的用户，一直用得很顺手，所以还付费成为了它的超级会员。</p>
+<p class="ql-align-justify">后来，腾讯也出了款“腾讯云”，也很不错，价格甚至更优惠。</p>
+<p class="ql-align-justify">但是，我却完全不为所动。</p>
+<p class="ql-align-justify">为什么？</p>
+<p class="ql-align-justify">因为我已经在百度云上有 800G 内容。我要把这 800G 内容，从百度云搬家到腾讯云，天啊，这个“转换成本”实在是太高了。</p>
+<p class="ql-align-justify"><strong>第四道护城河，是网络效应。</strong></p>
+<p class="ql-align-justify">什么叫网络效应？</p>
+<p class="ql-align-justify">我们在《5分钟商学院 | 基础篇》学过，</p>
+<p class="ql-align-justify"><strong>网络效应，就是某种产品对一名用户的价值，取决于使用这个产品的其他用户的数量，用户越多，越有价值；越有价值，用户越多。 </strong></p>
+<p class="ql-align-justify">一旦用户总数突破一个临界点之后，就会最终进入“赢家通吃”的状态。</p>
+<p class="ql-align-justify">这时我们会说，这个领域“格局已定”。</p>
+<p class="ql-align-justify">比如微信。</p>
+<p class="ql-align-justify">使用的人越多，对你就越有价值，当好友数量达到一定程度时，你们之间就形成了一张错综复杂的网络。</p>
+<p class="ql-align-justify">就算有一天，你打算从微信换到另一个更好用的社交软件上，也很有可能因为大部分朋友都在微信上，而不得不回来。</p>
+<p>—<strong> 5 </strong>—</p>
+<p><strong>形成生态</strong></p>
+<p class="ql-align-justify">我们刚才说，如果适配的难度是1000，那么形成生态的难度就是10000。</p>
+<p class="ql-align-justify">而<strong>在生态级，华为遇到的真正挑战，就是网络效应。 </strong></p>
+<p class="ql-align-justify">Windows 已经在 PC 操作系统市场形成了网络效应，安卓和 iOS 已经在手机操作系统市场形成了网络效应。</p>
+<p class="ql-align-justify"><strong>华为作为一个后来者，即便开发出了自己的PC和手机操作系统，但想要打破 Windows 和安卓的网络效应，形成自己的生态，可以说几乎无法做到。</strong></p>
+<p class="ql-align-justify">为什么？ </p>
+<p class="ql-align-justify">我们前面说过，操作系统只是一个“翻译官”，本身不解决实际的问题，解决实际问题的是操作系统上的 app。</p>
+<p class="ql-align-justify">你今天做出一个新的操作系统，用户还不多，用户不多，就没有人愿意为你的操作系统开发 app，因为覆盖不了开发成本。</p>
+<p class="ql-align-justify">而没有人愿意为你开发 app，就更不可能吸引更多的用户。</p>
+<p class="ql-align-justify">恶性循环。</p>
+<p class="ql-align-justify">微软曾经在 PC 时代那么成功，可是到了移动互联网时代，因为苹果和安卓都已经形成自己的网络效应，微软就很难跟他们竞争。</p>
+<p class="ql-align-justify">怎么办？</p>
+<p class="ql-align-justify">微软当初做 Windows phone 时，想了一个办法。</p>
+<p class="ql-align-justify">找到 iOS 平台上做得最好的50个 APP 厂商，说：你们帮我的 Windows phone 开发 app，所有的开发费用，我来出。</p>
+<p class="ql-align-justify">可是，虽然 app 开发出来了，用户增长还是很缓慢。</p>
+<p class="ql-align-justify">后续 app 更新需要大量费用，微软一旦不再投钱，好不容易积累的用户就会马上流失。</p>
+<p class="ql-align-justify">最终，微软的 Windows phone 还是没有形成自己的生态。</p>
+<p class="ql-align-justify"><strong>网络效应一旦形成，就几乎不可撼动。</strong></p>
+<p>—<strong> 6 </strong>—</p>
+<p><strong>我在下个时代等你</strong></p>
+<p class="ql-align-justify"><strong>如果说开发一个软件或者应用的难度是10；</strong></p>
+<p class="ql-align-justify"><strong>那么开发一个操作系统的难度就是100；</strong></p>
+<p class="ql-align-justify"><strong>适配所有机型的难度就是1000；</strong></p>
+<p class="ql-align-justify"><strong>而最终形成生态的难度就是10000。</strong></p>
+<p class="ql-align-justify">在做 PC 和手机操作系统的这条路上，华为会迎面遭遇两条巨大的护城河：专利壁垒和网络效应。</p>
+<p class="ql-align-justify">在今天这个时代，想要跟那些拥有专利壁垒和网络效应的巨人竞争，几乎注定失败。</p>
+<p class="ql-align-justify">那怎么办？</p>
+<p class="ql-align-justify"><strong>也许华为的最佳策略不是超越这些巨人，而是一路狂奔，到下个时代等着他们。</strong></p>
+<p class="ql-align-justify">什么意思？</p>
+<p class="ql-align-justify">微软是 PC 时代的霸主，已经拥有了专利壁垒和网络效应，那我苹果打不过他了怎么办？</p>
+<p class="ql-align-justify">我做个东西叫智能手机，到移动互联网的世界等着你，等你来到移动互联网的时候，我早已建成了自己的生态。</p>
+<p class="ql-align-justify">苹果成为了移动互联网时代的霸主，已经拥有了专利壁垒和网络效应，那我微软打不过他了怎么办？</p>
+<p class="ql-align-justify">我做个东西叫做云计算，到云计算的世界等着你，等你来到云计算的战场时，我也早已建成了自己的生态。</p>
+<p class="ql-align-center"><strong>---</strong></p>
+<p class="ql-align-justify"><strong>既然打不过，那我就不打了。</strong></p>
+<p class="ql-align-justify"><strong>一路狂奔，我去下个时代占领领先优势，在下个战场等着你。</strong></p>
+<p class="ql-align-justify">华为的 5G，其实采用的就是这个策略。</p>
+<p class="ql-align-justify">2009年，国家刚刚给中国移动、中国联通、中国电信发放了 3G 牌照；</p>
+<p class="ql-align-justify">2009年，TD-SCDMA 正式进入商用；</p>
+<p class="ql-align-justify">2009年，大家还在讨论“3G 什么时候普及”；</p>
+<p class="ql-align-justify">2009年，华为开始研究 5G；</p>
+<p class="ql-align-justify">而那个时候，人们对 5G 还一无所知。</p>
+<p class="ql-align-justify">正是因为在 3G 还没有普及的时候，华为就开始布局5G，所以10年后的今天，华为才能在5G领域遥遥领先。</p>
+<p class="ql-align-justify">在这10年中，华为在 5G 组网架构、频谱使用、空口技术、原型机实现和外场验证等多个领域取得了突破性的进展。</p>
+<p class="ql-align-justify">它所创新的 Polar Code、F-OFDMA 新空口、UCNC 上下行解耦等技术成为了 5G 的核心技术……</p>
+<p class="ql-align-justify">据欧洲电信标准化协会（ETSI）统计，截至2018年6月，华为在全球5G新空口和新核心网领域的标准专利数量均排名世界第一。</p>
+<p class="ql-align-justify"><strong>提前十年，华为就站在了下一个通信时代的塔尖。</strong></p>
+<p>—<strong> 7 </strong>—</p>
+<p><strong>鸿蒙是为下一个计算平台准备的</strong></p>
+<p class="ql-align-justify"><strong>正如 5G 策略体现出来的一样，华为一直都是韬光养晦的。</strong></p>
+<p class="ql-align-justify">鸿蒙操作系统其实也是如此。</p>
+<p class="ql-align-justify">它和 5G 一样，都是为下一个时代，为下一代计算平台准备的。</p>
+<p class="ql-align-justify">计算平台的迁移（从桌面时代，到手机时代），是战场的迁移，新战场，会诞生新的王者。</p>
+<p class="ql-align-justify">今天，一个全新的计算平台正在浮现：万物互联，比如手表，空气净化器，智能行李箱等等。</p>
+<p class="ql-align-justify">万物互联的设备量，远远大于手机的设备量，更是远远大于 PC 的设备量。</p>
+<p class="ql-align-justify">谁能占据这块没有竞争对手的空白市场，在新的计算平台，谁就能成为新的王者。</p>
+<p class="ql-align-justify">今天这一块市场有两个主要玩家：华为鸿蒙，谷歌 Fuschia。</p>
+<p class="ql-align-justify">而华为真正的策略，就是用鸿蒙占据万物互联计算平台。</p>
+<p class="ql-align-justify"><strong>这就像安卓不关心 Windows 有多强大一样，鸿蒙可以不关心安卓有多强大，因为它们是不同的计算平台。</strong></p>
+<p class="ql-align-justify">我们可以勾勒一幅图像：</p>
+<p class="ql-align-justify">PC 时代操作系统：Windows + MacOS；</p>
+<p class="ql-align-justify">手机时代操作系统：安卓 + iOS；</p>
+<p class="ql-align-justify">万物互联时代操作系统：也许会是鸿蒙，和谷歌的 Fuschia。</p>
+<p class="ql-align-justify">当然，这只是一种可能性，这里面的竞争才刚刚开始。</p>
+<p class="ql-align-justify">但是在 PC 时代、手机时代，早已关闭的可能性的窗口，已经打开，能不能成功，要看华为在空白战场建立生态的速度。</p>
+<p class="ql-align-justify">所以，鸿蒙真的有可能，成为一款真正的操作系统。</p>
+<p class="ql-align-justify">但不是取代安卓。</p>
+<p><strong>最后的话</strong></p>
+<p class="ql-align-justify">以前我们说，打败安卓的，一定不是另一个（another）安卓，而是下一个（next）。</p>
+<p class="ql-align-justify">鸿蒙，Fuachia，都有可能是那一个，微软、小米也在跑道上。</p>
+<p class="ql-align-justify">在万物互联计算平台，发令枪刚响，华为暂时领跑，但是不是能持续领先，还要紧张观看。</p>
+<p class="ql-align-justify"><strong>祝福华为。</strong></p>
+<p class="ql-align-justify">（我们所知道的信息还太少，以上判断仅基于有限信息。）</p>
