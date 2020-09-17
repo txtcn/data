@@ -203,6 +203,164 @@ Mod的名字叫做“Poket Souls”，打上它之后，你就能像捕捉宝可
 如果你想也试试这个Mod，那我得先提醒你，即使你已经能无伤手刃薪王、和洛斯里克热情好客的百姓们成为挚友，可你在通往魂可梦大师的路上仍然会非常艰难——因为在这个世界里，也严格遵守着宝可梦世界中一条神圣不可侵犯的准则：训练师不能参加战斗。
 </p>
 </div>
+➜游研社评测公版RTX 3080显卡：内外兼修
+https://www.yystv.cn/p/7071	7500
+<p class="picbox" style="text-align:left;">
+<span>我们拿到了已经被大家念叨半个多月的RTX 3080公版卡。</span>
+</p>
+<p>
+关于这卡的梗我觉得应该已经不用多介绍了。NVIDIA新一代Ampere核心GPU采用了三星的8nm制程，在性能和功耗上都实现了新的飞跃。按照NVIDIA的说法，中端的RTX 3070性能就超过了上一代卡皇RTX 2080Ti，高端的RTX 3080性能则大概是RTX 2080的两倍左右，上面还有更强力的旗舰RTX 3090。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/b55fad03ea2ef41921d1c5b3818efa6a.jpeg_mw680water" width="1080" height="747" />
+</p>
+<p>
+性能强也就罢了，定价也充满了惊喜，RTX 3070参考价499美元，RTX 3080定价699美元。也就是说，3000左右块钱的中端卡就能拥有几个月前价值万元的旗舰卡的性能。
+</p>
+<p>
+之前我们此前有一篇文章，<a target="_blank" href="https://www.yystv.cn/p/7007">汇总了一下网友们知道这个性能和这个价位之后的表现</a>。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/704a4d2c3632ded51d8291f0ef7d1b59.jpeg_mw680water" width="500" height="750" title="" align="" alt="" />
+</p>
+<p>
+新卡公布不久，游研社作为第一批测评媒体就拿到了公版显卡。由于NDA的原因，相关的测试内容现在才能发布。这几天把我们也憋得心痒难耐。
+</p>
+<p>
+测试之前还是先说说外观吧。很多人应该已经见过网上流出的一些新卡尺寸的示意图了，特别是这张：
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/57f6146912e78b84757f1f2767cb609d.jpeg_mw680water" width="640" height="447" />
+</p>
+<p>
+不过实际到手之后，带散热的公版RTX 3080和公版RTX 2080三维其实相差不大，放一般的中塔机箱肯定是没问题的，绝大部分兼容300mm长显卡的M-ATX和ITX机箱也肯定能放下。当然RTX 3090就是另外一个故事了。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/69902bcc8949e6e31a7ed5e94e9aa464.jpeg_mw680water" width="1080" height="718" />
+</p>
+<p>
+而且公版RTX 3080这个尺寸，其实也有点“虚胖”。PCB尺寸挺短的，有半截都是空心的散热结构。改成水冷头的话，可能也就ITX短卡的大小。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/8231f76a90a5f379177830f4af4d32f3.jpeg_mw680water" width="775" height="516" title="这半截其实上下通透" align="" alt="这半截其实上下通透" /> <span style="font-size:12px;color:#999999;">这半截其实上下通透</span>
+</p>
+<p>
+这个结构做的确实非常漂亮，比起上一代RTX 20系列的“煤气灶”，颜值和科技感都上了一个档次。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/9911d752712614c5791d55f1f78376ab.jpeg_mw680water" width="779" height="518" />
+</p>
+<p>
+这是NVIDIA公版卡非常独特的散热设计。和传统显卡的散热设计不同，这个新设计正反两面都有风扇。正面的风扇结构有点像老式的涡扇散热，冷风下吹，热量从机箱背面排出。背面的风扇则将冷风上吸，引导进入CPU散热的风道。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/a950356e298606ed52658734fd4b3961.jpeg_mw680water" width="1080" height="534" />
+</p>
+<p>
+这种散热既有下吹式的高效率，也像涡扇散热一样减小了机箱的积热。采用新散热，主要的原因还是这代显卡的规格又有了一次跃升。8000多个CUDA核心，比RTX 2080Ti几乎翻倍。68个RT核心比2080Ti也增长了30%。得益于8nm制程和新架构带来的高效率，功耗增长得不多，但是TDP也到了320W。
+</p>
+<p>
+在测试中，公版散热单烤Furmark在74度左右，整体效率还是可以的。这种设计会对CPU散热会增加一些压力，但是具体影响还是要看CPU散热形式、承载能力和风道走向。我们在测试的时候，CPU核心温度确实比测RTX 2080Ti的时候要高一些，但是由于没有和传统散热形式的RTX 3080作严格对比，这个差异没有什么价值。
+</p>
+<p>
+我们这次使用的测试平台是AMD 3900X + 技嘉X470 Gaming Elite的组合。内存频率定在3000MHZ，使用两块西数SN750作为系统和仓库盘。这个配置应该比较接近现在常见的中高端游戏电脑，对普通玩家的参考价值会更大一些。作为显卡性能对比的基准，我们用了一块公版的RTX 2080Ti。两个月前还是不可一世的消费级旗舰，现在就已经有点准备老骥伏枥的意思了。
+</p>
+<p>
+我们先测了一些基准性能。3DMark测了两项：考验综合DX12 4K游戏性能的Time Spy Extreme，和考验光线追踪性能的Port Royal。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/87cbe83a7e91052a6c94ffcd11f0356b.jpeg_mw680water" width="775" height="866" title="" align="" alt="" />
+</p>
+<p>
+没有光线追踪的常规游戏方面，我们测试了《荒野大镖客2》和《巫师3》两款比较经典，对PC优化也不错的大作作为基准。《荒野大镖客2》在4K最高画质下使用游戏内置Benchmark，《巫师3》则在4K最高画质下，开启最高档的Hairworks，对于显卡性能是一个挺严苛的考验。两款游戏最终平均帧数提升都超过40%，想想RTX 3080首发价格只有RTX 2080 Ti的一半，不由得让人感叹科技的进步。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/e86d2482e469b6942eb9b8349bd96b99.jpeg_mw680water" width="775" height="995" title="" align="" alt="" />
+</p>
+<p>
+RTX 30系列的NVIDIA Ampere架构GPU使用了第三代Tensor Core，效率和性能都有一定优化。《德军总部：新血脉》是一款和NVIDIA新技术结合比较好的游戏，从我们的测试来看，这款游戏开启DLSS后的表现十分惊艳，运行速度和画面质感提升也很明显。在4K最高特效，开启光追和DLSS之后，RTX 3080 Benchmark跑到了154FPS，比RTX 2080Ti提高了37%。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/337339cf069ea8d25bb5abb92b697c4b.jpeg_mw680water" width="775" height="972" title="" align="" alt="" />
+</p>
+<p>
+不过这种性能提升在不同游戏中还是存在一定差异。《控制》在4K，光追高，不开DLSS的情况下性能提高了25%左右，开启DLSS之后，帧数大概有22%的提升。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/9809e7b859df23e9b9c1dda074bff59b.jpeg_mw680water" width="775" height="969" title="" align="" alt="" />
+</p>
+<p>
+《死亡搁浅》不支光线追踪，但是支持DLSS。RTX 3080对比RTX 2080 Ti，未开启DLSS时的性能提升了32%，开启DLSS后性能也提升了40%。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/ea8285a6305e5d50ff6c6b3fef0aef98.jpeg_mw680water" width="775" height="994" title="" align="" alt="" />
+</p>
+<p>
+总体来说， RTX 3080传统渲染性能在帧数上的表现要比2080 Ti强30%-40%左右，确实差不多也就是RTX 2080的两倍。而RTX和DLSS相关的性能，比起上代显卡也有了显着的提升。
+</p>
+<p>
+我们还测试了一下RTX 3080运行《光明记忆》benchmark时的光线追踪性能。这款游戏使用了大量的光线追踪渲染技术，在开启光追之后对显卡的负担非常大。如果不开启DLSS，只开启光线追踪，RTX 2080Ti在1080P分辨率下尚能流畅运行，4K分辨率下就和幻灯片差不多了。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/4a9bc83bfb46894d505aae0d047ddfe7.jpeg_mw680water" width="1080" height="608" />
+</p>
+<p>
+RTX 3080在不开启DLSS，光追高的设置下，在1080P下跑出了70FPS的成绩，而开启DLSS性能模式后，则勐增到了132FPS。同样的设置，不开启DLSS，4K分辨率只有16FPS，勉强好过幻灯片，而开启DLSS之后已经可以相对流畅地运行了。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/745d39f6730a816ff21984977654be7a.jpeg_mw680water" width="1080" height="608" />
+</p>
+<p>
+《堡垒之夜》这款欧美人气极高的大作，借着RTX 30系列显卡的发布，也宣布支持光线追踪技术。RTX 3080在4K分辨率下开启光线追踪和DLSS平均帧数能到50-55FPS，相当可玩。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/d6082fe6d694c552f0bdf47f34f3fd05.jpeg_mw680water" width="775" height="822" title="《堡垒之夜》开启/关闭光线追踪的对比" align="" alt="《堡垒之夜》开启/关闭光线追踪的对比" /> <span style="font-size:12px;color:#999999;">《堡垒之夜》开启/关闭光线追踪的对比</span>
+</p>
+<p>
+硬性能只是一个层面。进一步整合CUDA、Tensor Core和RT Core之后，Ampere架构的RTX 3080还有着更低的渲染延迟。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/c3a87d96bf3683f7caff28b5ccc6db91.jpeg_mw680water" width="765" height="431" title="在Furmark烤机测试中RTX 3080（黄色）渲染延迟要显着低于RTX 2080Ti（黑色）" align="" alt="在Furmark烤机测试中RTX 3080（黄色）渲染延迟要显着低于RTX 2080Ti（黑色）" /> <span style="font-size:12px;color:#999999;">在Furmark烤机测试中RTX 3080（黄色）渲染延迟要显着低于RTX 2080Ti（黑色）</span>
+</p>
+<p>
+在这个基础上，NVIDIA还提供了一个叫做NVIDIA Reflex的技术，配合支持NVIDIA G-SYNC的显示器，可以有效降低整个系统的操作延迟，提高电竞选手的表现。目前Reflex已经确定支持《堡垒之夜》、《无畏契约》、《APEX英雄》等游戏。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/56f1c0b840962cfec9507c412ea1a6c9.jpeg_mw680water" width="775" height="460" title="" align="" alt="" />
+</p>
+<p>
+低系统延迟对于电竞游戏的意义不需要我们再多说什么了。高刷新率显示器能够立竿见影地缩短电竞选手的反应时间，而NVIDIA Reflex则在这个基础上更进一步，从根源上减轻系统延迟，消灭卡顿。
+</p>
+<p>
+我们分别用RTX 2080Ti和RTX 3080进行了几场《堡垒之夜》吃鸡模式的战斗。RTX 2080Ti 在4K分辨率下有一个情况很明显：游戏整体帧数挺高的，但是遇敌接战的时候，偶尔会有一些操作与视觉反馈之间微妙的卡顿。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/4e648d4d4fb6e3d316262e6367ac3873.gif_mw680" width="322" height="180" title="特别时这种大战一户口本的情况" align="" alt="特别时这种大战一户口本的情况" /> <span style="font-size:12px;color:#999999;">特别时这种大战一户口本的情况</span>
+</p>
+<p>
+而开启Reflex之后，这种卡顿基本上就消失了。跑图的时候，物品交互，瞄准射击，体感延迟都降低了不少。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/245126d18a31738978fd219779a359ec.gif_mw680" width="320" height="178" />
+</p>
+<p>
+新的NVIDIA Broadcast功能则或充分利用了RTX 30系列显卡的AI优势，优化了直播推流的效率，还推出了AI降噪、虚拟背景、人像跟踪等非常实用的功能。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/f0455d5c72f8841a87b8f0bce06f93d0.png_mw680water" width="600" height="332" />
+</p>
+<p>
+除了推荐有升级需求的玩家放心买爆之外，RTX 3080也让我们看到了几个值得关注的未来趋势。
+</p>
+<p>
+一个是供电系统的变化。这次RTX 3080公版采用了一个12pin的供电接头，从设计来看和英特尔今年新推的10pin主板供电设计很像，应该都是基于全新的ATX12VO供电标准。这个标准会大大简化机箱内走线，电源体积可能也会比以前要精简很多，很可能随着下一代CPU/主板的发布而开始普及。这一两年打算整体升级电脑的玩家可以多关注一下。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7071/88ab83be353ed59a13c594ba3bfe2eaf.jpeg_mw680water" width="775" height="561" title="这个新的12pin接口尺寸非常迷你" align="" alt="这个新的12pin接口尺寸非常迷你" /> <span style="font-size:12px;color:#999999;">这个新的12pin接口尺寸非常迷你</span>
+</p>
+<p>
+另外一个趋势，倒是和这次没登场的RTX 3070有关。从对比测试的结果和我们平时的游戏体验来看，虽然绝对性能被新卡碾压，但是旧皇2080Ti在4k分辨率下的游戏体验已经非常优秀，没有光线追踪的游戏基本都可以高特效60FPS以上流畅运行。如果同样性能水平RTX 3070能够稳定在3000元左右的价位，对于大部分玩家来说，淘汰1080P显示器的时间已经快到了。
+</p>
 ➜为什么十字军之王一直不做中国
 https://www.yystv.cn/p/7070	7800
 <blockquote class="doc-blockquote">
