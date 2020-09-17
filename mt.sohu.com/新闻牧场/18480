@@ -1,0 +1,103 @@
+➜Rancher 与 TiDB 达成深度合作，共建企业云原生生态
+http://www.sohu.com/a/411728898_425991	11940
+<p>2020 年 8 月 5 日，容器管理软件提供商 Rancher Labs（以下简称 Rancher）宣布与开源分布式数据库公司 PingCAP 达成深度合作，通过双方关键产品的集成与兼容性认证，TiDB 可以无缝运行在 Rancher 2.x 上，加速企业落地云原生。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200806/efe45713a22241e0969bbeb64697baf0.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">Rancher 的旗舰产品 Rancher 2.x 是一个开源的企业级 Kubernetes 管理平台，实现了 Kubernetes 集群在混合云 + 本地数据中心的集中管理和部署。Rancher 是目前业界应用最为广泛的 Kubernetes 管理平台，全球核心镜像下载量逾 3 亿，拥有知名企业客户逾 40,000 家。</p>
+<p class="ql-align-justify">TiDB 是 PingCAP 研发的知名开源分布式关系型数据库，目前已经支撑了国内外上千家客户的关键业务。TiDB Operator 是 PingCAP 基于 Kubernetes 平台研发的 TiDB 集群自动运维系统。目前，TiDB Operator 已正式开源。借助 TiDB Operator，TiDB 可以无缝可靠运行在公有云或私有部署的 Kubernetes 平台及容器化环境上，让 TiDB 成为真正的云原生数据库。值得一提的是，TiDB Operator 也是全球最早一批 Operator 项目，是 PingCAP 布局云原生的重要一步。</p>
+<p><strong>无缝对接，打造开箱即用的云原生数据库</strong></p>
+<p class="ql-align-justify">时至今日，Kubernetes 现已成为容器编排调度的事实标准。在最早期的时候，Kubernetes 只支持无状态应用的管理，这一状况直至 Kubernetes v1.3 才有所改善，Kubernetes 提出了 PetSet 的概念，在 v1.5 中将其更名为 StatefulSet，并且在 v1.9 中正式可用。自此，Kubernetes 正式支持部署和管理有状态服务。</p>
+<p class="ql-align-justify">然而，StatefulSet 只是一个抽象层，它无法解决有状态应用的所有问题。通过 StatefulSet ，用户可以进行创建集群、删除集群、扩缩容等基础操作，但进行无法备份、恢复数据库等常规操作。</p>
+<p>受限于 StatefulSet 的特性，TiDB 开发了 TiDB Operator，帮助有状态应用在 Kubernetes 上生产就绪地运行。<strong>Rancher 和 TiDB 在关键产品上的集成与兼容性认证，则帮助有状态应用更进一步无缝对接地在容器云平台上运行，打造开箱即用的云原生数据库。</strong></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>开箱即用，无缝运行</strong></p>
+<p class="ql-align-justify">Rancher 是业界最早实现容器应用商店理念的企业级产品，致力于帮助用户像使用水电一样使用容器资源。应用商店是 Rancher 对于使用容器资源的创造性构想，用户可以实现容器应用的开箱即用，从而更快、更低成本地快速提升业务价值。截至目前，Rancher Catalog 已集成了逾 50 款官方应用。</p>
+<p class="ql-align-justify">TiDB Operator 现已集成至 Rancher Catalog 当中，Rancher 用户可通过 Rancher Catalog 一键部署 TiDB Operator，极大地简化了用户在 Rancher 上部署 TiDB Operator 的使用体验，为用户提供一键部署、开箱即用的云原生数据库。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200806/689e6a2238d24f7bbcca652b10ee532a.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">TiDB Operator 是 TiDB 在 Kubernetes 上运行的最佳实践，为用户提供了多种在 Kubernetes 上部署 TiDB 集群的方式。Rancher 及 K3s 均是经 CNCF 认证的 Kubernetes 发行版，在测试环境中，用户可以使用 TiDB Operator 在 Rancher 或 K3s 上部署 TiDB 集群，为 TiDB Operator 提供了在既有 Kubernetes 集群上开箱即用的部署方式。</p>
+<p><strong>弹性伸缩，海量吞吐</strong></p>
+<p>TiDB 分布式关系数据库拥有强大的横向弹性伸缩能力，通过 TiDB Operator 结合了 Kubernetes 基础资源弹性调度的基本能力与 Rancher 高效的弹性管理手段，将云原生分布式数据库的业务支撑能力提升到新的高度，核心能力的联合及适配为高吞吐，海量数据处理的业务场景提供源源不断的动力与弹性。</p>
+<p><strong>快速备份，数据还原</strong></p>
+<p class="ql-align-justify">TiDB Operator 还可以和 Rancher 于今年 6 月 GA 的云原生存储解决方案 Longhorn 结合使用。用户可以在 Rancher 2.4 环境下基于 TiDB Operator + Longhorn 块存储快速部署 TiDB 集群，并在使用中基于 Longhorn 的快照技术快速备份和还原测试数据。</p>
+<p>基于 TiDB Operator 可以分钟级部署 TiDB 集群，基于 Longhorn 存储的快照功能可以快速对数据做备份，并在用户需要的时候将数据快速还原到某个时间点。这些功能极大地节约了测试环境的准备时间，为产品的快速迭代打下了坚实的基础。</p>
+<p><strong>兼容认证，降本提速</strong></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200806/1690ea148f1d47d08445c8ce2bd09946.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">Rancher 和 TiDB 已经正式完成产品兼容性互认证。经 Rancher 和 TiDB 的联合测试，Rancher 2.x 容器云平台和 TiDB Operator 可以顺利安装与对接，TiDB Operator 作为应用层，可以安装和运行在 Rancher 2.x 容器云平台上，性能表现优异，系统可靠稳定。</p>
+<p class="ql-align-justify">Rancher 2.x 容器云平台和 TiDB Operator 对接后，可以极大地提升用户构建云原生数据库的效率，降低时间成本和运维成本，为用户打造完成的容器云平台+分布式数据库的联合解决方案。</p>
+<p><strong>通力合作，共建企业云原生生态</strong></p>
+<p class="ql-align-justify">在不少人看来，基于容器的 PaaS 平台是下一代 PaaS 平台的技术方向。新一代容器云平台自上而下地覆盖了云计算的 IaaS 层和 PaaS 层涉及的各类问题，包括资源调度、服务编排、应用部署、监控日志、配置管理、存储网络管理、安全等，帮助企业专注于业务逻辑开发，缩短业务迭代上线周期，优化资源利用率，提高服务响应效率。</p>
+<p class="ql-align-justify">另一方面，在企业数字化转型的过程中，数据库是当中尤为关键的部分。对于企业而言，自建线下的数据库需要投入大量的人力和精力，面对日益增长的企业规模和爆发式增长的数据量，企业还将面临数据库扩容、弹性、运维、备份等各种各样的问题。较于线下，云具有无可比拟的优势，拥有按需交付、按需扩展、高可用性以及存储整合等优势。</p>
+<p class="ql-align-justify">Rancher 是业界唯一 100% 开源的企业级 Kubernetes 管理平台，帮助组织在各种环境中轻松地部署和管理容器。TiDB 是国产数据库当中的佼佼者，同时也是企业数字化转型的主要选择。<strong>二者的结合，将为企业提供深度融合的敏捷 IT 能力，充分实现软件定义的分布式数据中心，在加速企业业务应用交付的同时，为企业海量数据、海量用户、高并发和高可用的业务系统提供强而有力的支持。</strong></p>
+<p class="ql-align-justify">事实上，这也并非是 Rancher 和 PingCAP 的首次合作。作为国内云计算领域较受欢迎的两家技术厂商，Rancher 和 PingCAP 早在一些企业数字化转型的项目上便已开展了相关的合作，在容器云平台上打造开箱即用的云原生数据库。这为本次 Rancher 和 PingCAP 的深入合作打下了夯实的基础。</p>
+<p class="ql-align-justify">PingCAP 联合创始人、CTO 黄东旭表示，此次与 Rancher 的合作离不开双方一致的产品理念和开源技术信仰，后续双方也将在技术生态社区等方面进行更多样化的协作，为企业云原生生态的建设与发展共同努力。"事实上，TiDB 是全球最早一批拥抱 Operator 技术的产品，TiDB Operator 也是最早一批开源的带状态服务 Operator 实现，我们相信基于 K8s + Operator 的黄金组合能够让 K8s 上基础软件生态变得更加繁荣，Rancher 作为 K8s 生态中重要的玩家，我很高兴他们的理念和我们一致。"</p>
+<p class="ql-align-justify">Rancher 是业界最早支持 Kubernetes 容器编排的平台，并在 2018 年全面拥抱 Kubernetes。除此之外，Rancher 致力于建立一个开放式的生态系统，是业界唯一一家与所有领先云提供商合作、支持其托管的 Kubernetes 集群的企业级 Kubernetes 管理平台，为用户提供避免供应商锁定（Lock-in）的产品和技术生态。</p>
+<p class="ql-align-justify">“我很看好 PingCAP 在数据库行业的发展，非常高兴本次可以和 PingCAP 进行深入合作。”Rancher 联合创始人及 CEO 梁胜博士总结道：“Rancher 始终以客户受益为灵魂，为客户提供多元开放的选择。我们将与众多生态厂商一起，为用户带来更加简单易用的产品体验，让企业享受到容器技术的真正价值。”</p>
+<p><strong>未来，Rancher 和 PingCAP 将持续秉承开源、开放的合作精神，为企业数字化转型提供更本土化的云原生生态解决方案，共同推动企业落地云原生。</strong></p>
+<p><strong>关于 Rancher Labs</strong></p>
+<p>Rancher Labs 由 CloudStack 之父梁胜创建。旗舰产品 Rancher 是一个开源的企业级 Kubernetes 管理平台，实现了 Kubernetes 集群在混合云+本地数据中心的集中部署与管理。Rancher 一向因操作体验的直观、极简备受用户青睐，被 Forrester 评为 2018 年全球容器管理平台领导厂商，被 Gartner 评为 2017 年全球最酷的云基础设施供应商。</p>
+<p>目前 Rancher 在全球拥有超过三亿的核心镜像下载量，并拥有包括中国联通、中国平安、中国人寿、上汽集团、三星、西门子、WWK 保险集团、澳电讯公司、德国铁路、厦门航空、新东方等全球着名企业在内的共 40000 家企业客户。</p>
+<p><strong>关于 PingCAP</strong></p>
+<p>PingCAP 是一家开源的新型分布式数据库公司，致力于前沿技术领域的创新实现。其研发的分布式关系型数据库 TiDB 项目，具备「分布式强一致性事务、在线弹性水平扩展、故障自恢复的高可用、跨数据中心多活」等核心特性，目前，已被近 1000 家不同行业的领先企业应用在实际生产环境，涉及互联网、游戏、银行、保险、证券、航空、制造业、电信、新零售、政府等多个行业，包括美国、欧洲、日本、东南亚等海外用户。</p>
+➜一任千面，本色不改 ——汰渍任嘉伦微电影粉丝见面会 见证锦衣神探的本色时刻
+http://www.sohu.com/a/411734022_425991	13140
+<p><strong>2020年8月5日，</strong>宝洁公司旗下着名洗涤品牌汰渍携手品牌大使任嘉伦，打造全新深度互动式直播，以 “一任千面，本色揭秘” 为主题，举办汰渍任嘉伦微电影粉丝见面会，借助汰渍二合一深层洁净洗衣凝珠的强大功效，见证锦衣神探的本色时刻。此次直播间设计以大片中的洗衣房为主要元素，活动环节中延续微电影的内容场景，给观众带来沉浸式的直播互动体验。汰渍一直致力于解决消费者不断变化的洗衣需求，汰渍二合一深层洁净洗衣凝珠，在实现深层洁净的同时还能保护衣物颜色不串色，助力消费者轻松驾驭生活中的多种色彩，守护本色时刻。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200806/691d8471e78945a78f06569e8978a996.png" max-width="600" /></p>
+<p><strong>任嘉伦携手汰渍揭秘本色</strong> <strong>粉丝参与强互动直播</strong></p>
+<p>此次“一任千面，本色揭秘” 汰渍任嘉伦微电影粉丝见面会直播活动，前期大量互动玩法吸引粉丝全程参与微电影首发，于汰渍任嘉伦京东直播活动当日爆发高潮。基于汰渍《锦衣神探》大片所带来的灵感，汰渍首次打造深度互动式直播。直播间通过场景化设计带来浸入式体验，粉丝共创式互动玩法更让观众和汰渍品牌大使任嘉伦一起在戏内戏外揭秘本色，诠释多彩生活。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200806/8f50c85147b1405a83c2e0f090b21323.png" max-width="600" /></p>
+<p>从深情似海的广平王李俶到翩翩公子许宣，从机智冷酷的锦衣卫陆绎再到沉稳睿智的那岚岳，任嘉伦演绎千面角色，仍保持初心，本色不改。在此次活动过程中，任嘉伦作为《锦衣神探》大片主演，畅聊微电影拍摄时的感受和故事，更接受神秘挑战任务，化身锦衣神探成功通关开启汰渍二合一深层洁净洗衣凝珠的本色时刻。在应变能力大挑战环节中，粉丝通过弹幕为任嘉伦挑选任务，强互动进行内容共创，趣味性全面升级。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>在时尚搭配挑战环节中，任嘉伦更是现场安利汰渍二合一深层洁净洗衣凝珠，笑言夏日爱穿多彩衣物，而他的本色秘密就是——汰渍二合一深层洁净洗衣凝珠，可以轻松解放双手，深浅颜色衣物一起洗，也能深层洁净的同时实现护色防串色，使衣物鲜亮如初，本色不改。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200806/6eb82dbb91684c7a8700f03f7dec292a.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200806/26255891991b49c092e36861cb1b6924.png" max-width="600" /></p>
+<p><strong>趣味互动展示汰渍凝珠功效</strong> <strong>夏日洗衣的本色神器</strong></p>
+<p>为了更好地展现汰渍二合一深层洁净洗衣凝珠的强大功效，任嘉伦在眼力大挑战环节中展现锦衣神探的本色风采，通过衣服上的蛛丝马迹成功推理出用汰渍二合一深层洁净洗衣凝珠洗过的衣物，力证其深层洁净和护色防串色两大功效。</p>
+<p>汰渍二合一深层洁净洗衣凝珠产品中特别添加的3D护色因子，源自德国领先科技，在洗衣时牢牢抓取住染色因子，使染色因子悬浮在水溶液当中，阻止其沉积回衣物表面，从而防止衣物被串色。而特别添加的宝洁黄金配比的活性成分更能强力去除衣服污渍，让衣服实现深层洁净，带给消费者不同以往的潮流洗衣新体验。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200806/d184453031af440aa59c9bea4fcd998f.png" max-width="600" /></p>
+<p><strong>锦衣神探任嘉伦花式宠粉，多重福利掀直播热度</strong></p>
+<p>在直播过程中，任嘉伦和主持人与线上粉丝完成多重游戏互动，再掀直播热度。任嘉伦先后完成粉丝提问、Emoji猜词、当然啦等多个游戏环节，成功通过黑衣人设置的所有关卡获得通关口令开启本色时刻。直播间观看人次一度突破90万，汰渍携手任嘉伦为粉丝送出多重惊喜福利，送出汰渍二合一深层洁净洗衣凝珠。</p>
+<p>汰渍品牌自诞生以来，始终助力于为消费者提供洁净护衣的解决方案，通过产品科技的不断创新，切实推动行业变革。汰渍此次依托京东平台优势，由京东超市超明星ing和京东秒杀频道秒杀星时刻两个明星项目联袂共献，与直播观众内容共创，引领沉浸式直播新玩法，给观众带来前所未有的新鲜体验。汰渍二合一深层洁净洗衣凝珠的洗衣新风尚也必将进一步强化品牌时尚年轻化的形象，助力消费者轻松驾驭衣物多彩的场合，守护每个人的出彩本色。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200806/b10f76ae03c94fcab4d91b50f2ff22b8.png" max-width="600" /></p>
+➜隐形车衣首选北京XPEL官方直营店 金港易车威成行业标杆
+http://www.sohu.com/a/411770665_425991	26214
+<p class="ql-align-justify">不仅“行得方便”，更要“行得漂亮”，近年来汽车美容强势崛起，全面符合众多车友需求，在人气以及市场火爆度上对比往年均有显着提升。数据显示，中国目前有80%的车主长期保持汽车美容的习惯。金港易车威作为北京地区最大的XPEL官方直营店更是凭借强劲的软硬件配备，成为了汽车美容行业的翘楚。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200806/b4cbe82d2b0b4287bdd5b34fa96cad1b.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200806/215b7e377b0541f082729de976cd7701.png" max-width="600" /></p>
+<p class="ql-align-justify">汽车美容技术更新换代所带来的一系列利好，是国内汽车美容市场蓬勃崛起的关键因素。传统意义上的打蜡、封釉、镀膜、镀晶等汽车美容方式以“不定期抛光、让漆面越来越薄”为代价来实现汽车外在的光亮，这本身就是一种得不偿失的行为，而XPEL隐形车衣完全可以做到不伤害车漆、反而强势保护车漆的同时，实现汽车美容，这让车友从心理上更容易接受。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200806/026aa9933504488ba51705f951a1771d.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200806/fc0bc6852dd44565bdc73c1259ea5f5b.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200806/b31063d77f904469a6a66c602da1be0a.png" max-width="600" /></p>
+<p class="ql-align-justify">金港易车威工作人员表示，XPEL作为一款全球顶级隐形车衣，可以为车主带来高达40%的车漆提亮效果，让爱车看上去更新、更美观的同时，还能有效抵御油污、鸟屎、酸雨、树脂、刹车粉末、砂石的侵袭。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200806/4baaaae5e65b4588a035d1927e63850a.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200806/768313bb4beb4c16859af40f66cde2f2.png" max-width="600" /></p>
+<p class="ql-align-justify">在拥有超强的韧性，耐磨、耐腐蚀且抗碰撞等优势的同时，XPEL隐形车衣强大的自我修复能力更是“仅需一盆热水”，各式划痕、瘢痕全消失，如此简单、快捷、高效的汽车美容养护手段，自然赢得众多车友青睐。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200806/8d27725c87d2440483d90097797d3752.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200806/72e606afdc7e430882de7529a9498967.png" max-width="600" /></p>
+<p class="ql-align-justify">不仅如此，在当今“三分膜、七分贴”的行业大背景下，作为最大的北京XPEL官方直营店，金港易车威五星级技师严格遵循车型匹配专用车衣、检查车辆、施工前期准备、清洗漆面、施工上膜、施工刮水、收边、涂抹护理液、质检、交车十大步骤的同时，在不拆除汽车任何零部件情况下进行无开叉、无拼接、无胶印、无缺口、无死角360度完美包边、包角，贴膜技术之精湛赢得了全国范围内众多贴膜技师亲自前往观摩、学习。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200806/6e33d8acd5624bf9baa503a4a607b670.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200806/84b63ee6906f4a2fbcfc5456f6af6891.png" max-width="600" /></p>
+<p class="ql-align-justify">金港易车威在提供XPEL隐形车衣贴膜服务的同时，还提供威固隔热膜、陶瓷隔热膜、XPEL陶瓷5G膜、汽车改色膜、AX改色膜、CYS改色膜等产品以及服务。今年七月份，易车威更是超额完成威固隔热膜贴膜任务，为众多车友带来更清晰驾驶视野的同时，还能隔热、防晒、防紫外线、防爆，让驾车更安全、更愉悦。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200806/8ac140d6340647de89b0d68faa6ff7f8.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200806/fc1ba04b8910449393f735d2368be901.png" max-width="600" /></p>
+<p class="ql-align-justify">秉承处女座施工标准，易车威在贴膜工艺精益求精的同时，为车主提供十年质保承诺，让车主“安装一次，安心十年”！易车威，打造品质驾车新生活！</p>
