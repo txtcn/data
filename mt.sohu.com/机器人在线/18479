@@ -1,0 +1,68 @@
+➜GitHub硬核创客自制火星机器人，免费开源模拟“好奇号”
+http://www.sohu.com/a/411476910_562020	5770
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200805/538ff327bf6e4c138d1b564af3e5be5d.jpeg" max-width="600" /></p>
+<p>近期，我们看到报道最多的热词就是“火星”。未来，人类有可能在火星生活吗？随着众多探测机器人发射到火星探索未知领域，大家的期待值也逐渐升高。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/q_70/images03/20200805/2be2bec6c67c4242818ec5d3f5970f2e.jpeg" max-width="600" /></p>
+<p>2020年7月23日，中国首次火星探测任务，火星探测机器人“天问一号”发射成功。火星探测机器人共携带了13台科学仪器，遥感相机、浅层地表雷达等；7月30日，美国NASA“毅力号”踏上火星之旅。ATI开发了可靠耐用的定制款力和力矩传感器，“毅力号”的太空探索任务；2011年11月，美国曾发射了火星探测机器人“好奇号”。该测机器人于2012年8月成功登陆火星表面。</p>
+<p class="ql-align-center"><iframe width="500" height="300" scrolling="no" frameborder="0" border="0" allowfullscreen="true" src="//tv.sohu.com/s/sohuplayer/iplay.html?bid=208252213&amp;vars=%5B%5B%22showRecommend%22%2C0%5D%5D&amp;disablePlaylist=true&amp;mute=1&amp;autoplay=false"></iframe></p>
+<p class="ql-align-center">ATI研发空速力_扭矩传感器助力美国近期火星探测计划</p>
+<p>在火星探索中很重要的一个探索工具就是火星机器人。此前，这些高科技的火星机器人，看起来离我们遥不可及，但相信很多人也想能自己拥有一个高科技火星机器人。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/q_70/images03/20200805/1303fcf725844321a6bb40249448b6eb.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>在开源社区 GitHub 中一名叫做Jakob Krantz的硬核创客分享了一个模拟“好奇号”的火星机器人。并且开源了全部制作资料，引起众多关注。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/q_70/images03/20200805/12275c35a1054b089da37f1a80677d5c.gif" max-width="600" /></p>
+<p>这款火星机器人由3D打印制作，在设计上参考了美国宇航局的“好奇号” 。它可以在坑坑洼洼的沙地上顺畅行驶。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/q_70/images03/20200805/7ab203feb1cc4546a0729174cb849c70.jpeg" max-width="600" /></p>
+<p>同时，摇臂转向架高度模拟了“好奇号”，环绕摄像头可以进行第一视角拍摄。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/q_70/images03/20200805/0a951340721d452f882134bda65a6e1a.gif" max-width="600" /></p>
+<p>机械臂模拟“好奇号”</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/q_70/images03/20200805/89b577e561c8456b88b9bd59588e43a5.gif" max-width="600"><span class="img-desc" style="font-size: 16px;">过坑洼沙地易如反掌</span></img></p>
+<p>此外，随着扩充配件，它还能够伸出机械臂抓取物体，开发者可以通过手机应用程序集成自定义控件和数据进行各种操控。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/q_70/images03/20200805/020a1b9fbf58406e870455fa096ebe39.jpeg" max-width="600" /></p>
+<p>所以，要制作这样一辆像车一样的火星机器人需要几步呢？</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/q_70/images03/20200805/339861407c494cc6936325c397a7160e.jpeg" max-width="600" /></p>
+<p>玩过组装车的童鞋一定知道，组装一辆汽车必不可少的硬件就是车轮、车身和各种关键零部件。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/q_70/images03/20200805/c851cdec426347d5815d9d65918058be.jpeg" max-width="600" /></p>
+<p><strong>我们先来看下硬件部分。根据 GitHub 提供的资料，需要的硬件材料如下：</strong></p>
+<p>6 个60 RPM直流电机，用于每个车轮</p>
+<p>2 个无刷电机控制器</p>
+<p>12 个稳压器</p>
+<p>4 个MG946R/MG996R舵机控制转向</p>
+<p>6 个MG946R舵机，用于 6 自由度机械臂</p>
+<p>2 个MG946R/MG996R舵机，用于控制头部</p>
+<p>6 通道 RC 接收器和发射器</p>
+<p>6 个直流电机支架 </p>
+<p>ESP32（主控制器）</p>
+<p>充电锂电池 </p>
+<p>PVC 管，内径 23.40 毫米，外径 25 毫米</p>
+<p>大量螺钉和螺母，主要是 M3 规格，也有一些M4 规格</p>
+<p>5个 608ZZ 轴承和 5个5mm SKF 6005轴承</p>
+<p>车轮方面，作者表示有两种选择，一种是原装好奇号风格的一体式车轮。一种是火星 2020 风格的轮子，分两部分印刷，外部部分可以用柔性塑料印刷，如 TPU。</p>
+<p>运程信息处理方式上，目前有三种通信方式，分别是长距离广域网（LoRa）、WebSocket 协议以及通用 RC 发射器，通过车上的一个三向开关可以选择启动模式：WiFi 站 + LoRa、仅 LoRa 或 WiFi AP，有人连接到 WebSocket 服务器或通过 LoRa 连接火星车，就能接收到火星车自动发送的远程通信数据。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/q_70/images03/20200805/676a9b1b043442f7a3b25516b0e50ccf.jpeg" max-width="600" /></p>
+<p>全部组装完成的火星车长这样，虽然功能有限，但也非常令人期待了。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/q_70/images03/20200805/69605d481cca4a50a18e8408f41f14e5.jpeg" max-width="600" /></p>
+<p>在这个开源社区中作者公布了这个项目包括配套的控制器全部源文件（包括3D打印外壳文件和源代码等）。但他表示，项目仍需进行大量调整才可以使其更加完善，基于目前的基础平台，任何有经验的技术人员都可以进一步参与构建它。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/q_70/images03/20200805/bd378496cfbb4252a469e6cbf991da4c.png" max-width="600" /></p>
+<p>机械臂模拟“好奇号”完整视频</p>
+<p>“好奇号”过沙坑完整视频</p>
+<p>控制器资源网址：</p>
+<p>github.com/jakkra/RoverController</p>
+<p>火星车资源网址：</p>
+<p>github.com/jakkra/Mars-Rover</p>
+<p><strong>免责声明：本文部分图片来自源于网络</strong></p>
+<p><strong>招募作者</strong></p>
+<p><strong>请将简历和原创作品投至邮箱：jiahong.feng@imrobotic.com</strong></p>
+<p><strong>相关推荐：</strong></p>
+<p><a href="https://www.sohu.com/a/410699847_562020" target="_blank">热议：从中印机器人行业收入差，看两国制造业现状</a></p>
+<p><a href="https://www.sohu.com/a/410643697_562020" target="_blank">重塑现实 蓄力未来丨艾利特即将发布全新CS系列协作机器人</a></p>
+<p><a href="https://www.sohu.com/a/410406382_562020" target="_blank">机器人“不务正业”被叫停，燃爆舞台的“艺术家”一定要出道啊！！！</a></p>
+<p><a href="https://www.sohu.com/a/409414864_562020" target="_blank">融资降速、烧钱过快，后疫情时代中国机器人市场成资本避风港？（附资料下载）</a></p>
+<p><a href="https://www.sohu.com/a/410204657_562020" target="_blank">“蚁人”视角看世界，微型机器人GoPro仅重0.25克，还可60度旋转、6小时续航！</a></p>
