@@ -2619,3 +2619,95 @@ http://www.woshipm.com/marketing/4185727.html	35371
 <p>姜太公公，微信号公众号：grandpa_jiang，人人都是产品经理专栏作家。产品老流氓，终身学习者。致力于研究产品方法论，解决小白PM的疑难杂症。</p>
 <p>本文原创发布于人人都是产品经理。未经许可，禁止转载</p>
 <p>题图来自Unsplash，基于CC0协议。</p>
+➜设计师如何快速熟悉B端产品与业务？
+http://www.woshipm.com/pd/4186409.html	41209
+<blockquote><p>编辑导读：对于交互设计师，在熟悉B端产品公司的业务上有哪些关注点，怎么可以快速熟悉B端产品？本文作者依据工作中项目实践的所思所想，并结合案例等分享了自己对“交互设计师如何快速熟悉B端产品与业务”的一些看法和建议，供大家一同参考和学习。</p></blockquote>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/CQreQhw1Nc9ewAO7CHm8.jpg" alt="" width="900" height="420" /></p>
+<h2>一、业务与产品的关系</h2>
+<p>首先我想谈一下我认为的B端产品，综合前人的经验，我为B端产品做如下定义：<strong>B端产品是基于用户的业务场景，为企业提供商业价值的服务载体。</strong></p>
+<ol>
+<li>B端产品用户从属于企业，具备组织形态</li>
+<li>B端产品的呈现符合业务形态</li>
+<li>B端产品为企业提供商业价值</li>
+<li>B端产品多为软件，但不仅仅是软件</li>
+<li>B端产品的核心是为企业提供服务</li>
+</ol>
+<p>这里提到两个名词产品和业务，常常听说“要懂业务、熟悉产品”，那么业务与产品的关系是什么呢？</p>
+<p>我认为在互联网行业，产品是对部分业务的线上流程化表达，产品通常以软件形式呈现出来。那么我们在熟悉B端业务的时候，就要理清产品涵盖了哪些业务，线上业务与线下业务是如何衔接的。</p>
+<p>如果把业务比作一条线的话，那么产品就是线上的线段。一条业务线上有多个产品，被产品覆盖的部分称是线上业务，其它的是线下业务。</p>
+<p>产品与产品之间，线上业务与线下业务之间都存在衔接点，在产品里面，这些衔接点就是用户使用产品的起点或者终点。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/afRU0ZXZisZDpn5Z3llU.png" alt="" width="804" height="281" /></p>
+<p>比如一家服务于服装行业的互联网公司，主营业务是链接供应商与门店，为他们提供线上服装买卖服务。那么这条业务线上可能会涵盖门店进货、供应商库存管理、物流跟踪、财务结算、门店销售等业务。</p>
+<p>由于供应商都有自己的库存、财务系统，门店也有自己固定的销售方式，所以公司开发的软件产品集中在门店进货，供应商发货环节，其它部分通过获取第三方接口或者线下操作来打通。如图所示：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/J6dFziPPzgFSgw1QWFzo.png" alt="" width="912" height="327" /></p>
+<p>从图中可以看出，不论web系统、APP或者小程序都是服务于业务的，并且彼此存在联系。因此，作为交互设计师<strong>熟悉B端业务的第一步是理清楚公司业务与产品间的关系</strong>。</p>
+<h2>二、产品是如何解决问题的</h2>
+<p>大家都知道B端产品具备业务复杂、功能繁多，多角色，分权限的特点，所以B端产品对应的业务场景多且复杂。</p>
+<p>在实际工作中，我不会在刚刚接触产品时就去梳理业务场景、绘制操作流程图，因为往往很难入手反而陷入错综复杂的场景与流程之中。</p>
+<h3>那么设计师熟悉B端产品的切入点在哪里？</h3>
+<p>之前说过B端产品需要为企业提供商业价值，那么企业的关注点就是产品的方向。</p>
+<p>如一个大体量的服装电商企业，客户通常会关注商品是否精准入库、能否降低订单损耗、降低发货环节的错单漏单率。</p>
+<p>那么服务于这个企业的产品就会围绕解决提高入库准确率、降低发货错误率去呈现解决方案。</p>
+<p>我通常<strong>先了解产品解决了企业的哪些问题</strong>，这些内容在白皮书或者官网上能够找到。</p>
+<p>借用之前的例子，因为供应商商品管理系统的存在是为了让门店老板在进货APP上选购商品，因此商品管理系统的设计聚焦在“如何帮助供应商快速发布门店老板关注的商品信息？”上。</p>
+<h3>B端产品有哪些关键的要素？</h3>
+<p>因为B端产品的用户具备组织形态，实际场景中用户分布在各个岗位（角色&amp;权限），单独或者协同完成工作（任务）。</p>
+<p>深入一层分析，不难发现<strong>B端产品解决的问题需要不同角色的用户通过完成任务来实现</strong>。我就会重点关注解决这个问题的操作，<strong>在产品中通常需要完成一组或多组任务来解决用户问题，那就列出相关任务并绘制出对应的操作流程图以便我们更好的熟悉产品</strong>。</p>
+<p><strong>归纳一下步骤：</strong></p>
+<p>通过4步分析产品如何解决问题：</p>
+<ol>
+<li>列出产品解决的问题</li>
+<li>每个问题相关的用户任务</li>
+<li>分角色绘制用户路径</li>
+<li>记录各个流程中的信息与业务逻辑（看自己时间，不用了解的太细）</li>
+</ol>
+<p>再来举个例子吧，还是那家大体量的服装电商企业，希望降低发货环节的漏单错单率。</p>
+<p>那么<b>产品</b>就是一款拥有订单发货功能的<b>软件系统</b>，需要做的是在系统里把待发货的订单以<b>任务</b>的形式指派给仓库工作人员（用户），将原本员工的拣货、分拣、验货、打包等工<b>作流程</b>迁移到系统里面，并对工作结果逐个核验。</p>
+<p>用户在完成发货任务时的工作流程与系统衔接的部分就是<b>用户操作路径</b>，路径中每个触点页面所展示的就是信息（如订单详情），<b>信息量与信息布局由用户路径和业务逻辑决定的</b>。</p>
+<h2>总结</h2>
+<p>总结一下，快速熟悉B端产品和业务的方法：</p>
+<p>首先了解B端公司的业务分析产品覆盖了哪些业务范围；然后了解产品为企业解决了哪些问题（提供什么服务）带着这些问题去看产品的功能并列出解决问题需要完成的任务；最后带入用户分角色绘制用户路径/流程。</p>
+<p>可以看出整个方法是一个逐步聚焦的过程，从业务到产品到任务到流程，快速抓住重点才能达到快速熟悉产品与业务的目的。</p>
+<p>&nbsp;</p>
+<p>本文由 @青雨 原创发布于人人都是产品经理，未经作者许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
+➜Axure 9.0 教程：用动态面板制作Tab切换
+http://www.woshipm.com/rp/4186275.html	42339
+<blockquote><p>导读：Tab切换是很多网站必备交互，然而很多论坛教程并不完整，产品小白一步一步照着做，可能仍无法实现效果，浪费时间还打击自信。本文作者基于Axure 9.0版本，对制作Tab切换的每一个步骤和细节都进行了详细的讲解，与大家分享。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/gUyH5P72b4g8mFWrYQLz.jpg" alt="" width="900" height="420" /></p>
+<h2>案例要点</h2>
+<ol>
+<li>通过动态面板设置不同页面内容，n个tab设置n个状态；</li>
+<li>拖动矩形作为按钮，设置矩形选中状态；</li>
+<li>设置tab按钮的点击事件，设置动态面板的状态切换。</li>
+</ol>
+<h2>详细步骤</h2>
+<p><strong>1、 拖动一个矩形做tab</strong>，这里我想做一个女装男装童装三个tab切换，先拖动一个矩形，把矩形命名为女装（给形状命名习惯要养成），ps：先拖一个矩形就好，方便设置完交互再一波复制。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/x6pgqdxSgp42ga2WGDIb.png" width="900" /></p>
+<p><strong>2、拖动动态面板，</strong>给动态面板添加状态，做几个tab页添加几种状态。我这里设置了女装、男装、童装三种状态。（动态面板命名为服装品类tab）。每种状态下放对应的页面内容，我这里以文字示意。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/Lh6GB5eHIuJkbMQEcLzP.png" width="900" /></p>
+<p><strong>3、给tab按钮设置交互。</strong>选中女装按钮，点击交互下的编辑按钮进入交互编辑器。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/Xr23yGxXFHykFCGoZB1R.png" width="900" /></p>
+<p>在编辑器中，添加事件——单击时，添加两个动作：</p>
+<ol>
+<li>设置面板状态，目标【服装品类tab】到state【女装】；</li>
+<li>设置选中，目标【当前元件】，设置【值】，到达【真】。</li>
+</ol>
+<p>第一步操作是为了链接tab按钮和动态面板的状态，表示单击女装按钮进入动态面板女装页面；</p>
+<p>第二步操作表示单击操作时，该元件状态为选中，注意这一步非常重要，只有这样我们设置元件【选中】时的【交互样式】才能实现，比如单击女装时女装按钮高亮显示。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/25YHGBXMOXFiDBuHrlIK.png" width="900" /></p>
+<p><strong>4、单击形状属性旁的显示全部，</strong>给女装按钮设置选项组（名称可自定义，我这设置服装tab组），设置选项组才能达成单选目的。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/ad9tnpAehGnJFYHGdMS0.png" width="900" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/RUXiMy8jBqfjOaIYThwF.png" width="900" /></p>
+<p><strong>5、设置按钮的交互样式</strong>。这里可以设置悬停、选中、禁用等状态的交互样式。我这里设置选中时的样式为背景填充黄色。与第3步的单击操作设置选中结合，最终形成了单击按钮时黄色高亮的交互。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/fV3r6uncTuLp0nkg5LrN.png" width="900" /></p>
+<p><strong>6、复制女装按钮两次</strong>，修改每个按钮对应交互信息，形状名称改为男装/童装，单击时面板状态到男装/童装。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/sOqUrxCT4zRhkW3gEvbE.png" width="900" /></p>
+<p><strong>7、最后一步，</strong>设置按钮女装的默认状态是选中，表示打开时默认选中女装tab。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/LVx4iMbMKgUtOQauQtcF.png" width="900" /></p>
+<h2>最终效果</h2>
+<p>预览一下即大功告成。tab切换也有其他做法，但是动态面板更容易理解，大家可以一试，有问题可以在评论区交流。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/UIO2oZQDUGJyB5zrobm1.gif" alt="" width="900" height="855" /></p>
+<p>&nbsp;</p>
+<p>本文由 @西瓜汤圆 原创发布于人人都是产品经理，未经作者许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
