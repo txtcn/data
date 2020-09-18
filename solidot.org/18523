@@ -1,3 +1,15 @@
 ➜Thunderbird 78.2 正式加入对 OpenPGP 的支持
 https://www.solidot.org/story?sid=65575	14024
 21 年前，用户向 Mozilla <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=22687">递交了功能请求</a>，希望加入对 PGP/OpenPGP 的支持，当时电邮客户端 Thunderbird 还不存在。21 年后，随着 <a href="https://www.thunderbird.net/en-US/thunderbird/78.2.1/releasenotes/">v78.2.1</a> 的发布，Thunderbird 正式默认启用了对 OpenPGP 的支持，这一长达 21 年的功能请求终于完成了。在这之前，用户在 Thunderbird 中加密邮件通常需要使用扩展 Enigmail，使用并不方便，内置  OpenPGP 支持将大幅降低使用门槛。<p>
+➜GitHub CLI 1.0 发布
+https://www.solidot.org/story?sid=65576	15862
+GitHub 的命令行工具 CLI <a href="https://github.blog/2020-09-17-github-cli-1-0-is-now-available/">发布了 1.0 正式版本</a>。GitHub CLI 允许开发者在终端内直接操作 GitHub 的各项功能，如 pull requests 和 issues，减少上下文切换，专注于工作。GitHub CLI 1.0 让开发者可以在终端完成整个开发到发布的工作流；允许开发者为任意命令创建别名，能直接访问  GitHub API，等等。<p>
+➜Cloudflare 与互联网档案馆合作存档网站内容
+https://www.solidot.org/story?sid=65577	21498
+CDN 服务商 Cloudflare 与互联网档案馆合作<a href="http://blog.archive.org/2020/09/17/internet-archive-partners-with-cloudflare-to-help-make-the-web-more-useful-and-reliable/" target="_blank">存档网站内容</a>。启用 Cloudflare Always Online 服务的网站内容将会自动存档，如果原始内容托管方发生意外而不可用，那么 Cloudflare 将会通过互联网档案馆将网页内容呈现给用户。互联网档案馆的 Wayback Machine 至今存档了 4680 亿个网页，每天增加 10 亿新存档网页。Cloudflare CEO 兼联合创始人  Matthew Prince 表示 Wayback Machine 是一个令人印象深刻的基础设施，双方的合作将能让互联网更有弹性。<p>
+➜GNOME 项目宣布改变版本号命名方案
+https://www.solidot.org/story?sid=65578	22991
+GNOME 桌面环境项目<a href="https://lwn.net/Articles/831746/#Comments">宣布</a>改变版本号<a href="https://discourse.gnome.org/t/new-gnome-versioning-scheme/4235">命名方案</a>。在发布了 GNOME 3.38 之后，原计划在 2021 年 3 月释出的下个版本 GNOME 3.40 将重命名为 GNOME 40，其开发周期将包含三个阶段：40.alpha，40.beta 和 40.rc。在第一个稳定版 GNOME 40.0 发布之后，随后的 bug 修正版本将在小数点后加 1，如 40.1、40.2、 40.3...下一个版本则是 GNOME 41。为什么要改变版本号？开发者表示版本数字太大了手指脚趾都数不过来了。主要原因是在可预见的未来开发者不会像 GNOME 2 到 GNOME 3那样改变核心的技术，因此大的版本号也就不会随之增加。所以开发者决定将 3.40 直接改名为 GNOME 40，而如果改名为 GNOME 4.0 则可能会带来意想不到的暗示，好像新旧版本之间发生了巨大变化。<p>
+➜字节跳动计划让 TikTok 在美国上市
+https://www.solidot.org/story?sid=65579	24903
+路透援引知情人士的消息<a href="https://cn.reuters.com/article/usa-tiktok-global-ipo-0918-idCNKBS269035">报道</a>，如果拟议中的交易获得白宫批准，字节跳动计划让 TikTok Global 公司在美国 IPO，新公司将负责运营 TikTok。字节跳动正加紧与白宫达成协议，以避免美国对 TikTok 实施禁令。消息人士称，白宫和字节跳动已经就一项交易的某些方面达成了协议，尽管还没有得到特朗普的批准。该消息人士称，包括甲骨文和沃尔玛在内的美国投资者将持有 TikTok 美国业务至少 60% 的股份。新公司名为 TikTok Global，董事会中美国人将占多数，还有一名美国首席执行官和一名安全专家。甲骨文已经同意最终持有该公司 20% 的股份。消息人士还说，如果沃尔玛也成功协商获得股份，其 CEO 董明伦(Doug McMillon)也将在 TikTok Global 董事会获得一个席位。鉴于最近字节跳动投资者对 TikTok 的估值超过 500 亿美元，TikTok 若进行 IPO，将成为科技业有史以来最大的上市案之一。<p>
