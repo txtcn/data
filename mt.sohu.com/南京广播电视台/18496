@@ -1,0 +1,138 @@
+➜应急演练！南京紧绷广播电视网络安全弦
+http://www.sohu.com/a/414378036_349954	3146
+<p><span style="font-size: 16px;">广播电视安全播出是全市文化旅游广播电视行业安全生产十大专项整治行动的重要组成部分之一。为做好广播电视安全播出工作，提升广播电视播出网络安全应急保障能力，检验播出网络安全应急预案的可操作性，根据</span><span style="font-size: 16px;">江苏</span><span style="font-size: 16px;">省“网安2020”广电行业专项行动和江苏省广播电视安全生产专项整治三年行动</span><span style="font-size: 16px;">的工作部署，8月21日市文化和旅游局首次针对电视播出系统网络安全，组织实施了“2020年南京市广播电视网络安全应急演练”。</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">本次广播电视网络安全应急演练由市文旅局主办，市广电集团承办，省广播电视局安全传输保障处处长王晓文，南京市安全生产第二督导（巡查）组常任副组长、市应急管理局一级调研员柯用斌，市文化和旅游局（市广播电视局）副局长王冬青，南京广电集团总工程师金剑，省广播电视局安全传输保障处四级调研员褚静，各区文旅局和融媒体中心负责网络安全的同志现场观摩了本次演练。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200822/4e7ec5ff04904556af64dc5366345186.jpeg" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">演练在南京广电集团融媒播控中心举行，主要围绕防火墙受攻击、播控站宕机、数据库异常、SDN交换机故障和虚机漂移应急处置开展，重点检验广播电视播出机构在紧急状况中的应急处理能力。</span></p>
+<p style="text-align: justify;"><img src="http://p4.itc.cn/q_70/images03/20200822/789652691cc440beb571dc710cb6fd81.jpeg" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200822/891eb88539e84f52b45d80af7d004185.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>1、融媒播控中心防火墙受攻击应急演练 </p>
+<p>“报告！防火墙受到攻击！”模拟现场，安全运维管理员发现融媒播控中心防火墙受到攻击，立即到防火墙控制端执行操作，并上报值班长。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200822/0b3c49b8f2b54e38a578c144c86f96a1.jpeg" /></p>
+<p><span>△模拟攻击防火墙</span></p>
+<p>值班长观察防火墙情况，立刻进行断网操作，并按事故报告程序逐级向上报告，进行了合理处置。</p>
+<p>2、融媒播控中心播控站应急演练 </p>
+<p>模拟现场突然响起警报声，冗余工作站备播控机显示：主播控机异常！</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200822/ace2577860d74da99e46fd53be91e185.jpeg" /></p>
+<p>值班长观察播控站具体情况，关闭主播控软件，重新启动。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200822/9d84b4dfce4c45a6a713419e1eca8892.jpeg" /></p>
+<p>约10秒后，备播控机弹出界面：“主控机异常，是否接管主控权？”值班长点击“执行”，“确定”，顺利接管主控权。</p>
+<p>3、融媒播控中心数据库应急演练 </p>
+<p>数据库是播控系统的核心，一旦出问题，整个系统将崩溃不能使用。</p>
+<p>演练过程中，值班人员发现数据库异常，播出工作站报警，立刻上报安全运维管理员。</p>
+<p>安全运维管理员首先观察是否自动切至备数据库，发现自动备份失败，便手动进行切换处置。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200822/334aee4c1f924ae485d66188cc42a57a.gif" /></p>
+<p><span>△安全运维管理员打开数据库镜像软件ROSE MIRROR，手动切至备数据库</span></p>
+<p>4、融媒播控中心SDN交换机应急演练 </p>
+<p>监控画面突然变黑？ <span>值班人员紧急排查，发现SDN交换机备机发生故障。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200822/93b00827b3cc40a596098d3d2a39e324.png" /></p>
+<p><span>△大屏监控告警，出现黑屏状态</span></p>
+<p>安全运维管理员立即检查并重启SDN交换机，很快画面恢复。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200822/2cd06a8783b942b0a88ff929fb4dac47.png" /></p>
+<p><span>△模块化设备机房</span></p>
+<p>5、融媒播控中心虚机漂移应急演练 </p>
+<p>系统中，包括数据库、底层服务和IP播出服务都部署在虚拟环境。利用冗余的刀片，通过虚拟化管理软件，在任意一台虚拟机发生故障、无法正常工作时，安全运维管理员可以进行手工漂移。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200822/4bfb1d00ae194cdda6e216b281d22aef.png" /></p>
+<p><span>△安全运维管理员远程登录虚机控制端，观察并确认需要漂移的虚机，执行虚机漂移</span></p>
+<p>值班人员发现某虚机宕机，安全运维管理员立马到虚机控制端执行操作，40秒之内，将该虚机上正在进行的业务迁移到另一虚机上，业务连续性得到了保证。</p>
+<p style="text-align: justify;"><span style="font-size: 16px;">演练过程中，各参演人员服从指挥、协同配合，根据安全播出应急预案，对模拟的故障现象迅速反应、判断准确、紧急处置，演练最终取得成功。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200822/bef823c8f5b547e7b3847d7e35d396bd.jpeg" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200822/e92179cae44143fba11c7b669a637674.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200822/b9e94f1012c1410c8e4b400eac06941b.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200822/921b594eb5a8490c9c7351d49f9188c1.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200822/4856dd6a85b047bbbe8f11f636dcae09.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200822/fef6d1adb07f4f3582924eaf5bfc8284.jpeg" /></p>
+<p><span style="font-size: 16px;">本文部分图片来源于网络。如果分享内容侵犯您的版权或者所标来源非第一原创，请后台私信，我们会及时审核处理</span></p>
+➜你用过“花小猪“打车吗？TA在南京不合规！
+http://www.sohu.com/a/414423322_349954	33372
+<p style="text-align: center;"><span style="font-size: 16px;">最近</span></p>
+<p style="text-align: center;"><span style="font-size: 16px;">你的朋友圈和抖音</span></p>
+<p style="text-align: center;"><span><span style="font-size: 16px;">被</span><strong><span style="font-size: 16px;">花小猪打车</span></strong><span style="font-size: 16px;">的广告刷屏了吗？</span></span></p>
+<p style="text-align: center;"><span style="font-size: 16px;">折扣优惠、邀新奖励……</span></p>
+<p style="text-align: center;"><span style="font-size: 16px;">仿佛是打车界的“拼多多”</span></p>
+<p style="text-align: center;"><span style="font-size: 16px;">吸引了不少市民朋友的注意</span></p>
+<p><img height="214" width="219" src="http://p3.itc.cn/q_70/images03/20200822/74d384202430459280681b57f34d56b4.gif" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">但是！</span></p>
+<p style="text-align: center;"><span style="font-size: 16px;">在南京，</span></p>
+<p style="text-align: center;"><span style="font-size: 16px;"><span>这个网约车平台却</span></span></p>
+<p style="text-align: center;"><span style="font-size: 16px;"><span><strong>涉嫌违规、</strong></span></span><span style="font-size: 16px;"><span><strong>非法运营</strong></span></span></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">8月19日晚， <span style="font-size: 16px;">江北</span>新区综合行政执法局执法总队交通执法大队执法人员在东大成贤学院路段巡查时发现，有车辆停靠在地铁口，造成后方严重堵塞。经询问，该车驾驶员自称正在从事“网约车”运营，已于8月初按照平台方注册要求，上传驾驶证等照片并通过平台审核。经核实， </span><span style="font-size: 16px;"><strong>该驾驶员尚未取得网络预约出租汽车驾驶员证，该车也没有取得网络预约出租汽车运输证</strong></span><span style="font-size: 16px;">。同时</span><span style="font-size: 16px;"><strong>“花小猪”打车平台并未在南京市取得网络预约出租汽车经营许可，不具备网约车经营资质</strong></span><span style="font-size: 16px;">。</span></span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200822/5ee88f7c6d9b4b07be017a15063e71ce.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">“这个平台最近在抖音、朋友圈上很火的，我在家里看到了，想着在家也没啥事，就出来跑一跑。</span><span style="font-size: 16px;">”驾驶员告诉执法人员，自己于8月初刚刚新注册，按照平台方的要求把驾驶证等拍照后由平台审核，万万没想到这个平台有这么大的问题。</span><span style="font-size: 16px;">同时，旁边的乘客告诉执法人员，目前这个平台优惠力度很大，不仅首单免费，还有各种折扣券，很多人都是冲着这些优惠选择了“花小猪”。</span></span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200822/2bc7da1c0c914492bd8c830fa7083b2d.png" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">网友评论</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200822/049e2e862a5d4cf78a4ad983b169c573.jpeg" /></p>
+<p><span style="font-size: 16px;">随后，执法人员又陆续在东大成贤学院站附近查获另外两辆注册登记在“花小猪”平台的违规网约车。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200822/f4cad057b6c447a69c4fee5a3185a4da.jpeg" /></p>
+<p><span style="font-size: 16px;">因“花小猪”打车平台不具有南京市《网络预约出租客运经营许可证》，执法人员依据《网络预约出租汽车经营服务管理暂行办法》有关规定，对驾驶员涉嫌未取得经营许可、擅自从事或者变相从事网约车经营活动的行为，将给予一万元以上三万元以下的罚款。同时，新区执法总队将对了解的相关情况上报上级部门。</span></p>
+<p><span style="font-size: 16px;">在此，新区执法总队提醒广大市民，请驾驶员朋友选择正规的网约车平台开展网约车业务，请广大市民通过取得合法经营许可的平台搭乘合法车辆，唯有如此才能有效保障自己的合法权益和人身安全。</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">来源：江北新区综合行政执法、荔枝网、@南京发布</span></p>
+<p><span style="font-size: 16px;">本文部分图片来源于网络。如果分享内容侵犯您的版权或者所标来源非第一原创，请后台私信，我们会及时审核处理</span></p>
+➜诚挚邀请，请和我们一起为他们撑起爱的蓝天！
+http://www.sohu.com/a/414446724_349954	39600
+<p><span style="font-size: 16px;">8月21日，南京广播电视集团牛咔视频走进六合区竹镇镇，走访慰问5名结对帮扶困境青少年，为孩子们送去生活用品，并深入了解他们的家庭、生活、学习情况。</span></p>
+<p><span style="font-size: 16px;">浩瀚的蓝色夜空，星光璀璨</span></p>
+<p><span style="font-size: 16px;">平静的湖面清晰地倒映着挺拔的树木、黢黑的山谷以及大片夜空</span></p>
+<p><span style="font-size: 16px;">这是六合区竹镇镇10岁小姑娘青青（化名）画的一幅画</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200822/ba2acee547f14b4081b8515fdf56ab9d.jpeg" /></p>
+<p><span style="font-size: 16px;">她还有许多这样的作品，色彩鲜艳，明亮温暖。你很难想象这是一个没有参加过任何培训的孩子画出来的。</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200822/885c0b36a1c9425db7a04484ea90acdf.jpeg" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200822/33db469eb2184e6c814b056403be38ba.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">青青和母亲、外公、外婆一起生活，母亲生病后，父亲就一直失联。家里就靠年迈的外公打零工的收入和低保过活，外婆在家照顾青青和生病的母亲。青青的母亲需要大量药物维持病情，家庭经济负担很大。</span></p>
+<p><span style="font-size: 16px;">青青年纪小，却很懂事，她喜欢画画，就照着亲戚家小孩的绘画本自己摸索着去画，没有报过培训班。现在，她的作品已经有了厚厚一沓。我们询问青青有什么愿望时，她害羞地躲起来，青青的妈妈说：“只要让她出去看看，去哪里她都很开心，但是我们家没办法带她去远一些的地方。”</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200822/6874d505e1fd4ccf8ceb0c6d7048d778.jpeg" /></p>
+<p><span style="font-size: 16px;">在青青的画里，有各种各样的风景，这些都是她照着书本画出来的，而她却几乎没有机会走出竹镇镇。</span></p>
+<p><span style="font-size: 16px;">在走访中，我们痛心地发现，不是每一个孩子都能生长在父母的呵护和阳光下。小玲（化名）和青青一样，也是个喜欢画画的小姑娘。她与爷爷、奶奶和曾祖母生活，因为自从父亲因车祸入狱后，母亲就失联了。爷爷务农，奶奶无工作，无收入，长期吃胃药，曾祖母也需要长期吃药，家境很困难。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200822/e5f59fbea6d14f1780548b095e401091.jpeg" /></p>
+<p><span style="font-size: 16px;">小玲乖巧懂事，学习认真，家里贴了许多她的奖状。当我们和社工走进她家时，她正在小书桌前写作业。奶奶搂着小玲，欣慰地告诉我们：“她很乖，很少让我们担心，年纪小小的，还会自己做饭！”</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200822/fbfa058c9d494d51b3614a04d68006c7.jpeg" /></p>
+<p><span style="font-size: 16px;">在竹镇镇光华村，13岁的小男孩小山（化名）和爷爷相依为命，父亲去世后，母亲改嫁，从此没有了任何联系。爷爷身体不好，腿脚也不方便，还要照看孩子，年龄老迈无法出去打工赚钱，只能靠低保来维持生活。</span></p>
+<p><span style="font-size: 16px;">小山会经常帮着爷爷做家务，他是个爱笑的男孩子，提起自己喜欢的轮滑，双眼发光。他告诉我们，小时候妈妈给他买过一双轮滑鞋，他就在院子里滑，刚学的时候经常摔跤，但也很开心。他骄傲地说：“我很快就学会了，就不怎么摔了！”</span></p>
+<p><span style="font-size: 16px;">“那你现在还滑吗？”</span></p>
+<p><span style="font-size: 16px;">“不滑了，以前那双鞋子穿不下了……”</span></p>
+<p><span style="font-size: 16px;">像青青、小玲、小山这样的困境青少年，竹镇镇上还有十几个。关爱困境青少年，需要全社会的共同努力，需要各相关部门的全力支持和全面参与。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200822/47fea5d5c9ed4db486ef29359db591b6.jpeg" /></p>
+<p><span style="font-size: 16px;">目前，六合团区委响应团市委《困境青少年关爱行动方案》部署要求，完成市级20家爱心企业组织和六合区内100名困境青少年的结对，并积极组织开展“一对一”牵手关爱行动，向困境中的青少年传递团组织和社会的温暖关爱，更好地帮助困境青少年健康成长。</span><span style="font-size: 16px;"></span></p>
+<p>
+<table>
+<tbody>
+<tr>
+<td><span><img src="http://p4.itc.cn/q_70/images03/20200822/91f4ec2049504f70913fe417832a9317.jpeg" /></span></td>
+<td><span><img src="http://p7.itc.cn/q_70/images03/20200822/3684829fbb274d64ba95bbe9fddf34fa.jpeg" /></span></td>
+</tr>
+<tr>
+<td><span><img src="http://p1.itc.cn/q_70/images03/20200822/f7d608e01f1e42e181da0874e0c8e273.jpeg" /></span></td>
+<td><span><img src="http://p3.itc.cn/q_70/images03/20200822/37ba87a46b5c4007960afd1430f56c0a.jpeg" /></span></td>
+</tr>
+</tbody>
+</table></p>
+<p><span style="font-size: 16px;">这次的走访，</span><span style="font-size: 16px;">让我们更加了解</span><span style="font-size: 16px;">孩子们的处境和需求</span><span style="font-size: 16px;">。</span><span style="font-size: 16px;"></span><span style="font-size: 16px;">今后，</span><span style="font-size: 16px;">牛咔视频将</span><span style="font-size: 16px;">继续和“</span><span style="font-size: 16px;">一对一”</span><span style="font-size: 16px;">帮扶的</span><span style="font-size: 16px;">5</span><span style="font-size: 16px;">名</span><span style="font-size: 16px;">青少年保持常态化沟通，并为他们提供更有针对性的帮助</span><span style="font-size: 16px;">。</span></p>
+<p><span style="font-size: 16px;">每个孩子都是天使，却被残酷的现实紧紧束缚。愿我们的每一点帮助，能汇聚成托起他们的力量，让他们去飞，去看更广阔的天地，感受更美好的世界。</span></p>
+<p style="text-align: center;"><strong>让我们一起来做公益 </strong></p>
+<p style="text-align: center;"><strong>助力2020希望工程“圆梦行动” <span></span></strong></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200822/6788ed78b8994efcb01e2db9df35d6da.jpeg" /></p>
+<p><span style="font-size: 16px;">本文部分图片来源于网络。如果分享内容侵犯您的版权或者所标来源非第一原创，请后台私信，我们会及时审核处理</span></p>
