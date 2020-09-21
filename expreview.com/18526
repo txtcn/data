@@ -1,3 +1,45 @@
 ➜赛博朋克2077的主线剧情会比巫师3短：因为玩家抱怨后者剧情过于冗长
 http://www.expreview.com/76135.html	4860
 <p>CD PROJECT RED 的3A大作《赛博朋克 2077》已经马上要进行发售了，不少玩家都摩拳擦掌打算在年底第一时间体验到“2077”的感觉，但近日CD PROJECT RED 的开发人员透漏，由于之前有玩家抱怨《巫师三：狂猎》的主线剧情实在是太长了，他玩了很多次都没能彻底通关，希望《赛博朋克 2077》的主线剧情稍微精简一些。随即《赛博朋克 2077》的工作人员表示为了让更多的玩家能完整的体验到剧情，这次的整体主线剧情并不会太长。<br/></p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/09/21/s1.jpg" width="100%"/></p><p>CD PROJEKT 的高级任务设计师帕特里克 米尔斯的原文如下：</p><blockq><p>“我们知道，在 Cyberpunk 2077 中，主要故事的流程比《巫师 3：狂猎 》稍短，因为我们收到很多关于巫师 3 主故事太长的投诉。从后台指标来看，我看到大量的玩家玩巫师3玩了很久，但从来没有通关过。我们希望您看到整个剧情，因此我们确实缩短了《巫师 3：狂猎 》的主要剧情。”</p></blockq><p><br/></p><p style="text-align: center;"><img src="https://img.expreview.com/news/2020/09/21/s2.jpg" width="100%"/> &nbsp; &nbsp;<br/></p><p>当然了，《赛博朋克2077》也公布了自己的PC游玩推荐配置表，表格如下。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/09/21/s3.jpg" width="100%"/></p><p>可以看到这次《赛博朋克：2077》的配置要求还是比较亲民的，但是无一例外你可能首先要拥有一个64位的操作系统，组队配置仅需要i5-3570K或者FX-8310这种老CPU即可，显卡的话最低为GTX 780或者RX 470，内存仅需8GB，这都不是非常高的配置。而推荐配置的CPU要求也没有高到天上，CPU达到i7-4790或者Ryzen 3 3200G即可，显卡的话GTX 1060 6G版或者R9 Fury，内存12GB及以上就能满足要求。游戏大小约70GB，官方建议搭配使用SSD，效果更好。</p>
+➜Blender数据库走漏风声，RTX 3090渲染性能比RTX 3080快20%左右
+http://www.expreview.com/76137.html	7620
+<p><br/></p><!-- 热管 --><p>上星期NVIDIA的RTX 3080显卡解禁了，虽然他的性能远超上代的RTX 2080 Ti，但它并不是这代中性能最好的，这个星期RTX
+3090就会解禁，不过它的定位其实更接近与上代的TITAN RTX，并不是一款单纯的游戏卡，24GB的显存也让它很适合用来当成一张创作卡，或者说，准专业卡。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/09/02/RTX_30_Series_JHH_Keynote_Page_55_1200.jpg" width="100%" border="0"/></p><p>现在渲染引擎Blender上已经有RTX 3090的Benchmark成绩了，从测试结果来看RTX 3090的渲染速度比RTX
+3080快20%左右，这也正好符合他们两个内核的规格对比，RTX 3090有10496个CUDA单元，而RTX 3080则是8704个，正好相差20%。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/09/21/RTX3090_Blender.png" width="100%" border="0"/></p><p>不过这个数据是用CUDA测试的结果，如果使用Optix的话会更快，RTX 3090与RTX 3080在CUDA渲染的情况下运行Blender Open
+Date Benchmark结果如下：</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "Blender Open Date Benchmark"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "秒"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = null; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"bmw27","RTX 3090":"22.563","RTX 3080":"26.906"},
+{"type":"classroom","RTX 3090":"63.0533","RTX 3080":"75.7608"},
+{"type":"fishy_cat","RTX 3090":"45.0116","RTX 3080":"51.89"},
+{"type":"koro","RTX 3090":"62.8664","RTX 3080":"73.87"},
+{"type":"pavillon_barcelona ","RTX 3090":"121.745","RTX 3080":"150.34"},
+{"type":"victor","RTX 3090":"217.142","RTX 3080":"259.63"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>顺带一题RTX 3090的解禁时间是在9月24日晚上9点，它的售价是11999元，比5499元的RTX
+3080贵多了，说真的NVIDIA也没把它当作游戏卡，它的定位更加倾向于专业卡，也就是类似TITAN RTX的定位。</p>
+➜索尼为PlayStation5的预购货量不足抱歉：官推承诺年底会有更多货源供应
+http://www.expreview.com/76136.html	7920
+<p>近几天的硬件圈最火爆的一个词莫过于“抢购”了。无论是火爆的RTX 30系列显卡，还是次时代主机们，玩家们都纷纷表示这也太难抢了..索尼的次时代主机PlayStation5 也不例外，在全球各地的预购页面上，可供预购的机器基本上是一扫而空，总多玩家纷纷表示根本抢不到，并且二级市场上已经有人把PlayStation5 的首发机器炒到了约9000人民币以上，可以说是让玩家非常的不爽。</p><p style="text-align:center"><img src="https://img.expreview.com/news/2020/09/21/p2.jpg" width="100%"/></p><p>本来9月17日，各家零售商开始上线PS5的预购界面。结果不出所料，几家零售商的预购库存只持续了大约10分钟。各种二级市场已经以零售价的两倍出售预购的 PS5 游戏机。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/09/21/p1.jpg"/></p><p>对此，索尼在官方推特上表示抱歉，原文如下：</p><blockq><p>“老实说：PS5的预订流程本来可以比现在流畅得多。但是实际情况是很多玩家的体验很糟糕，我们对此深表歉意。
+在接下来的几天中，我们将发布更多PS5主机预订消息-并且零售商也将分享更多详细信息。
+到今年年底，还将有更多PS5可供选购。”</p></blockq><p style="text-align: center;"><img src="https://img.expreview.com/news/2020/09/17/ps52.jpg" width="100%"/></p><p>最后是PS5的具体发售日期，从11月12日开始，PS5 将在以下市场首先推出：美国、日本、加拿大、墨西哥、澳大利亚、新西兰和韩国。全球推广将于11月19日继续进行，在其他市场继续推出。PS5光驱版的建议零售价格为499.99美元/499.99欧元/449.99英镑/49980日元，而PS5数字版的建议零售价为399.99美元/399.99欧元/359.99英镑/39980日元。</p>

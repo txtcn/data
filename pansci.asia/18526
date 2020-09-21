@@ -1,0 +1,50 @@
+➜手算来不及啦！先驱者并起，数位计算机的萌芽时期│《电脑简史》数位时代（五）
+https://pansci.asia/archives/191561	7200
+<p class="has-text-color" style="color:#144d6f"><span style="color:#3c4b89" class="has-inline-color"><strong>1937 年，夏农完成影响深远的硕士论文，为后世擘划出逻辑电路，开启数位电脑的大门。不过历史上总会有一些先驱者，纵然还没有理论可依循，就先动手摸索尝试。数位电脑也是如此，在夏农公开发表论文之前，已经有多组人马试图打造新型计算机。奇妙的是，他们彼此互不相识，却宛如心有灵犀，都在 1936 &#8211; 1937 年之间开始着手开发。</strong></span></p>
+<blockquote class="wp-block-quote"><p>本文为系列文章，上一篇请见：<a href="https://pansci.asia/archives/191130">独自搞定电脑与通讯的理论基础，却罕为人知的天才——夏农│《电脑简史》数位时代（四）</a></p></blockquote>
+<h2>客厅即工坊，数位计算机的先行者——楚泽</h2>
+<p>数位计算机的先驱者中，最先动手打造的是德国的楚泽 (Konrad Zuse)。楚泽在大学期间曾对未来感到迷惘而转换科系，所以直到 25 岁才从土木工程系毕业。毕业后，楚泽到一家飞机公司担任结构工程师，但不到一年就决定辞职，全心开发计算机。</p>
+<p>据他回忆，这个念头早在大学时期就已萌生。当别人都在玩乐谈恋爱，他却只能埋首于算都算不完的方程式，不禁幻想着有部计算机可以代劳这些大量複杂的计算。没想到上班之后，竟又深陷计算地狱，让他下定决心要打造出一台可程式化的计算机，用来解各种複杂的联立方程式。</p><div class="pansc-content"></ins>
+<script async type="text/javascript" src="//cdn.holmesmind.com/js/init.js"></script></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="354" height="472" src="https://pansci.asia/wp-content/uploads/2020/09/6c44836afb2c32fc4b87de2ad8a36d72.jpg" alt="" class="wp-image-191562" srcset="https://pansci.asia/wp-content/uploads/2020/09/6c44836afb2c32fc4b87de2ad8a36d72.jpg 354w, https://pansci.asia/wp-content/uploads/2020/09/6c44836afb2c32fc4b87de2ad8a36d72-350x467.jpg 350w" sizes="(max-width: 354px) 100vw, 354px" /><figcaption>楚泽 (Konrad Zuse, 1910-1995) 摄于 1992 年。图：<a href="https://en.wikipedia.org/wiki/Konrad_Zuse#/media/File:Konrad_Zuse_(1992).jpg">WIKI</a></figcaption></figure></div>
+<p>1936 年夏天，楚泽把家裡客厅当作工作坊，开始打造 Z1 计算机（原本楚泽取为V1，V 代表德文 “Versuchsmodel”，意思是「实验机型」。后来为了与德国 V1 火箭区别，才改称 Z1）。楚泽将 Z1 规划为运算单元、记忆单元、控制单元、输入／输出单元，以及纸带读取器。这设计几乎就是现代电脑的基本架构，唯一差别在于 Z1 的记忆单元只是用来贮存运算的数字，不像现代电脑的记忆单元也用来贮存程式。Z1 的运算程序和巴贝奇的分析机一样，记录在打孔纸带上，再由读取器传送到控制单元（后来楚泽听从朋友的建议，改用废弃的电影胶卷，更便宜也更耐用）。</p>
+<p>Z1 还有外接一具电动马达，以每秒转动一圈的速度，让各个单元同步运作；这作用就相当于现代电脑中的「时脉产生器」。事实上，这具电动马达是整部机器中唯一的电气元件。这听起来很不可思议，楚泽不用继电器之类的元件，如何打造出二进位的数位计算机？。</p>
+<p>原来楚泽家中并不富裕，部分资金还是跟朋友募来的，根本买不起那麼多继电器。所以他只好另闢蹊径，找来朋友帮忙锯出一片片金属条，每片的末端再钉上一根针，然后将金属条纵横交错地装在板子上，做成可以左右或上下滑动。每个单元各自都有这样的板子，透过滑动金属条改变接触点，便能形成不同迴路，达到与继电器一样的效果。</p>
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" src="https://pansci.asia/wp-content/uploads/2020/09/7ae2c67fade7490f686d12ac7453422b-560x799.jpg" alt="" class="wp-image-191563" width="560" height="799" srcset="https://pansci.asia/wp-content/uploads/2020/09/7ae2c67fade7490f686d12ac7453422b-560x799.jpg 560w, https://pansci.asia/wp-content/uploads/2020/09/7ae2c67fade7490f686d12ac7453422b-350x499.jpg 350w, https://pansci.asia/wp-content/uploads/2020/09/7ae2c67fade7490f686d12ac7453422b.jpg 738w" sizes="(max-width: 560px) 100vw, 560px" /><figcaption>Z1 计算机的局部设计图。图：<a href="https://en.wikipedia.org/wiki/Z1_(computer)#/media/File:Zuse_Patent_907948.jpg">WIKI</a></figcaption></figure>
+<p>也因为资源有限，楚泽想出用「浮点数」(floating-point numbers，类似十进位的科学记法 a x 10<sup>n</sup>) 的形式来贮存数字，可以更有效地利用硬体零件。浮点运算如今也成了电脑做小数点运算的方式。</p>
+<p>虽然楚泽想办法找出克难的方法，不过光靠家人与朋友的资金还是捉襟见肘，于是他在 1937 年邀请一位製造机械式计算机的企业家前来参观，希望能获得他的资助；或许因此还能买得起继电器，打造下一个机型。</p>
+<p>到目前为止，楚泽仍是数位计算机的唯一领先者，但他不知道在大西洋的另一边，还有多组人马也已经起跑。夏农正在撰写那篇震古铄今的硕士论文，此外，有三位先驱者也在 1937 这一年试图开发数位计算机。当然，他们也都毫不知情自己加入了这场开发数位计算机的竞赛。</p>
+<h2>祕宝深藏阁楼半世纪，巴贝奇的继承者——艾肯</h2>
+<p>艾肯 (Howard Aiken) 比楚泽大十岁，母亲也是德国裔。他青少年时全家搬到印第安那州，父亲却开始酗酒家暴。艾肯十二岁时为了捍卫母亲，持拨火棒将抓狂的父亲赶出门，父亲从此消声匿迹未再回来，全家生活也因而陷入困顿。</p>
+<p>为了帮忙分担家中生计，艾肯只好辍学打工。所幸他的老师认为他有数学天分，特地帮他找了个夜间接线生的工作，让他白天仍能继续上学。艾肯就这麼半工半读直到完成大学学业，毕业后到电力公司上班，担任电机工程师。工作将近十年后，他于 1933 年又重返校园，进入哈佛大学攻读物理博士。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="560" height="521" src="https://pansci.asia/wp-content/uploads/2020/09/270054682b9cbf7bd18a68b95346097a-560x521.jpeg" alt="" class="wp-image-191564" srcset="https://pansci.asia/wp-content/uploads/2020/09/270054682b9cbf7bd18a68b95346097a-560x521.jpeg 560w, https://pansci.asia/wp-content/uploads/2020/09/270054682b9cbf7bd18a68b95346097a-350x326.jpeg 350w, https://pansci.asia/wp-content/uploads/2020/09/270054682b9cbf7bd18a68b95346097a.jpeg 739w" sizes="(max-width: 560px) 100vw, 560px" /><figcaption>艾肯 (Howard Aiken, 1900-1973)。图：<a href="https://en.wikipedia.org/wiki/Howard_H._Aiken#/media/File:Aiken.jpeg">WIKI</a></figcaption></figure></div>
+<p>1936 年，艾肯在准备博士论文时，常因为计算非线性微分方程式，耗费大量时间与精神，让他深感苦恼，因此也与巴贝奇、楚泽一样，期盼能交给计算机代劳。</p>
+<p>虽然当时已经有许多 IBM 之类的计算机公司，但是艾肯询问的结果，竟然没有一台可以处理非线性微分方程式的计算机。他有听闻布希刚发明的微分分析仪，但只能解线性微分方程式，因此也派不上用场。</p>
+<p>艾肯转念一想：既然 MIT 可以支持布希打造计算机，咱们哈佛难道不行吗？艾肯跑去跟系主任提这个想法。结果系主任告诉他：听说科学中心的阁楼裡有台黄铜製的计算机，要不你先拿去看能不能用。</p>
+<p>原来在阁楼中蒙尘已久的机器，竟是巴贝奇的差分机模型。这是他的儿子亨利在他死后所造，然后于 1886 年，为了祝贺哈佛建校两百五十週年，捐赠予哈佛大学。艾肯立刻迷上了巴贝奇的机器，他进一步研究后，才知道还有一架分析机才是巴贝奇的终极梦想。</p>
+<p>艾肯埋首史料之中，感觉巴贝奇彷彿从过去招唤着他，要他完成使命——倒不是要按照巴贝奇的原始设计图重现分析机，而是以当代技术实现分析机的功能。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="560" height="412" src="https://pansci.asia/wp-content/uploads/2020/09/0573ba755f195bf404e3e91321ffba87-560x412.jpg" alt="" class="wp-image-191565" srcset="https://pansci.asia/wp-content/uploads/2020/09/0573ba755f195bf404e3e91321ffba87-560x412.jpg 560w, https://pansci.asia/wp-content/uploads/2020/09/0573ba755f195bf404e3e91321ffba87-350x258.jpg 350w, https://pansci.asia/wp-content/uploads/2020/09/0573ba755f195bf404e3e91321ffba87-768x565.jpg 768w, https://pansci.asia/wp-content/uploads/2020/09/0573ba755f195bf404e3e91321ffba87.jpg 800w" sizes="(max-width: 560px) 100vw, 560px" /><figcaption>巴贝奇的儿子亨利所造的差分机模型。图：<a href="https://en.wikipedia.org/wiki/Charles_Babbage#/media/File:BabbageDifferenceEngine.jpg">WIKI</a></figcaption></figure></div>
+<p>不过艾肯现在的研究领域是理论物理，已不再是工程师了，所以他无意亲自动手，而是打算制定出计算机的规格后，再交由厂商设计打造。</p>
+<p>1937 年 4 月，艾肯完成二十三页的计算机企划案，除了涵盖分析机的所有功能，还增列一些要求，包括计算负数，以及运用现有的函数（这意谓着要有记忆体预存这些函数）。</p>
+<p>艾肯拿着企划案拜访一家大型计算机厂商，但对方评估了几个月后，还是婉拒他的提案。所幸这家厂商有位中阶主管相当热心，帮艾肯居中牵线，让他于当年 11 月向 IBM 简报他的企划案。艾肯浑然不知，此刻就在不远处的贝尔实验室裡，有位博士已经在打造数位计算机的原始电路。</p>
+<h2>在厨房完成数位计算机的概念验证——史提毕兹</h2>
+<p>史提毕兹 (George Stibitz) 比艾肯小四岁，成长过程相当顺遂，26岁取得数学博士学位后，就直接到贝尔实验室上班。当夏农于 1937 年暑假到贝尔实验室实习时，史提毕兹已经在那裡工作满七年，不过他与夏农不在同一部门，所以两人彼此并不认识。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="264" height="377" src="https://pansci.asia/wp-content/uploads/2020/09/b73fc0a6e6d1b38a71a7e3167cfa39ac.jpg" alt="" class="wp-image-191566"/><figcaption>史提毕兹 (George Stibitz, 1904-1995)。图：<a href="https://en.wikipedia.org/wiki/George_Stibitz#/media/File:George_Stibitz.jpg">WIKI</a></figcaption></figure></div>
+<p>这一年，史提毕兹被分派新的任务，恰巧是负责继电器的设计。身为数学家，史提毕兹原本就相当熟悉二进位制，他也注意到继电器与二进位制的关联性，而萌生了一个想法。</p>
+<p>1937 年 11 月的一个週末，史提毕兹把一些零件带回家，就在厨房餐桌上组装起来。他剪开菸草罐，裁出几块薄铁片，用它们将两个继电器、电池，与灯泡固定在木板上，再用电线把它们连接起来，做出史上第一个继电器组成的数位加法器。因为它是在厨房诞生的，史提毕兹的妻子乾脆把它取名为「型号 K」。</p>
+<p>因为史提毕兹只带了两套零件回家，所以只能输入二进位的 01 或 10，相加的结果用两个灯泡显示，亮代表 1 ，暗代表 0。虽然这个加法器如此阳春，但它的意义在于「概念验证」 (proof of concept)，证明了用继电器建构的电路，可以成为一部数位计算器。史提毕兹相信只要给他更多继电器，就能打造出加减乘除都能做的计算机。</p>
+<p>隔天史提毕兹带着型号 K 去公司，兴冲冲地展示给同事看，不过大家都只当它是个有趣的玩具，没有人察觉到它的重大意义。史提毕兹多年后回顾当时情景，不禁感慨：「没有烟火、没有香槟」。其实就连他也没想过自己正站在数位时代的开端，他只希望获得主管首肯，让他继续开发数位计算机。</p>
+<p>就在史提毕兹争取主管支持之际，美国中西部有位教授研究计算机已经一年多，某一天他突然灵光一闪，想出如何打造出全电子式的计算机。</p>
+<h2>魔幻时刻！在酒吧想出全电子式数位计算机——阿塔纳索夫</h2>
+<p>阿塔纳索夫 (John Vincent Atanasoff) 和史提毕兹年纪相仿，两人只差半岁，同样也在 1930 这一年取得物理博士学位。他在写博士论文时，和巴贝奇等计算机先驱一样，深受繁重的计算工作之苦，因而不时想像是否能用计算机解决。事实上，当时他还真的研究过学校向 IBM 租用的计算机，但发现它无法处理自己所用的方程式。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="168" height="221" src="https://pansci.asia/wp-content/uploads/2020/09/f7c53074e69817f89709562b63c79ed9.gif" alt="" class="wp-image-191567"/><figcaption>阿塔纳索夫 (John Vincent Atanasoff, 1903-1995)。图：<a href="https://en.wikipedia.org/wiki/John_Vincent_Atanasoff#/media/File:John_Atanasov.gif">WIKI</a></figcaption></figure></div>
+<p>1936 年，阿塔纳索夫已经是爱荷华大学的教授，他终于动手打造一台类比计算机，用来计算拉普拉斯转换。最后虽然打造成功，但他也认清类比计算机存在无法克服的限制，无论是运算速度与数字精确度都无法满足要求，于是他毅然决定转向开发数位式计算机。</p>
+<p>原子物理是阿塔纳索夫的研究领域，他刚好知道英国物理学家温-威廉斯 (C. E. Wynn-Williams) 于 1932 年用真空管电路打造二进位计数器，能以极高的速率侦测粒子，因此他决定也用真空管做为计算机的元件。不过真空管价格昂贵，如果全面採用，所需的资金恐怕他个人和学校都负担不起。</p>
+<p>权衡之下，阿塔纳索夫决定只有运算单元採用真空管，但记忆元件则使用电容器。电容器价格便宜许多，虽然充、放电的速度比较慢，但毕竟记忆单元的存取频率不像运算单元那麼高，拖慢的速度尚可接受。</p>
+<p>唯一的问题是，电容器的电力很快就会流失，贮存的资讯也就跟着消失。阿塔纳索夫一直想不出如何维持电容器的电力，一直到 1937 年 12 月的一个夜晚，他为了整理思绪开车上路，一路开到三百公里外的伊利诺州。他走进路边一家酒吧，点了酒慢慢小酌，突然间灵光一闪，电容器的充电机制就在脑中浮现。</p>
+<p>这个关卡突破后，他随即在餐巾上草拟出计算机的整体架构与基本规格。几个小时后，阿塔纳索夫步出酒吧，心满意足地徐徐开车返家，准备展开全电子式数位计算机的打造计画。</p>
+<p>阿塔纳索夫体验了许多发明家的魔幻时刻，而 1937 这一年在数位计算机的历史上也是神奇的一年。</p>
+<h2>群雄并起，谁能在数位计算机征战中胜出？</h2>
+<p>这一年，夏农完成影响深远的硕士论文，等待公开发表；德国的楚泽所设计的 Z1 计算机已在建造中；艾肯试图说服 IBM 开发他已制定好规格的计算机；贝尔实验室的史提毕兹完成逻辑电路的概念验证，争取主管同意开发数位计算机；阿塔纳索夫则跳过继电器，构思出全电子式的计算机。</p>
+<p>1937 年，群雄并起，不约而同地追逐数位计算机这座圣杯。究竟哪组人马最后会脱颖而出呢？</p>
+<p>The post <a rel="nofollow" href="https://pansci.asia/archives/191561">手算来不及啦！先驱者并起，数位计算机的萌芽时期│《电脑简史》数位时代（五）</a> appeared first on <a rel="nofollow" href="https://pansci.asia">PanSci 泛科学</a>.</p>
