@@ -53,3 +53,275 @@ http://www.expreview.com/76136.html	7920
 ➜Google扩展旗下APP服务，用户可将可疑下载档案发送至Google检查
 http://www.expreview.com/76138.html	8959
 <p>Google宣布，将会扩展其<a href="https://landing.google.com/advancedprotection/" target="_blank">Advanced Protection Program</a>的服务至可以让用户将他们认为有可疑的档案发送至Google，让他们来检查其中是否有恶意软件或者其他威胁。</p><p style="text-align: center;"><img src="https://img.expreview.com/news/2020/09/21/google-app.png" alt=""/></p><p>Google在3年前推出Advanced Protection Program（下称APP），旨在为那些容易成为黑客或不法分子目标的用户，例如记者、政治组织等的帐户提供更多的安全措施。而APP的确也可以很好地保护用户免遭网络钓鱼的攻击，这也是为甚么不法分子对于APP的用户现在大多都是诱使他们下载恶意软件来进行入侵。在去年8月份时，Google也曾经警告过APP的用户下载文件时要注意一点。</p><p>而在Google最新的<a href="https://security.googleblog.com/2020/09/improved-malware-protection-for-users.html" target="_blank">安全博客</a>中，他们表示会把APP服务扩展至可以允许用户在打开一个可疑的档案前，把档案发送至Google Safe Browsing来进行一次全面的检查。除了更好地保护用户外，Google也期望这些云端的扫瞄服务可以提高自身检测恶意文件的能力。</p><p>当APP的用户下载一个档案时，Google Safe Browsing 会首先对其进行一次快速检查来评估它是否安全。对于那些Google Safe Browsing认为有风险，但是并不完全清楚是否安全的档案，这项新的APP特性会弹出一个提示给用户，让他们发送档案作进一步检查。</p><p>如果用户选择将文件发送给Google，Chrome会将其上传到Google Safe Browsing，然后Google会使用静态和动态分析技术对其进行实时扫描。如果Safe Browser确定文件不安全，Chrome会警告用户。不过如果用户确定文件是安全的话，他们仍然可以绕过此警告，在不扫描的情况下打开文件。为了提高安全性，Safe Browser会在扫描后不久删除所有上传的文件。</p>
+➜RTX 3080显卡系统延迟能耗比测试：让人惊喜的Reflex功能以及光追下帧数
+http://www.expreview.com/76080.html	25928
+<!-- 热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管 --><p>RTX 3080作为NVIDIA RTX 30系显卡的旗舰级显卡，其性能也是受到相当多关注，特别是当初发布会上老黄表示RTX 3080将会拥有双倍于RTX 2080的性能时，应该不少人都是与笔者一样倒吸一口凉气的，脑子里只有一个想法：“太太太强了。”前几天是RTX 3080显卡评测解禁的日子，相信不少人都很急于想看看这张RTX 3080的性能到底是不是真如老黄所说的那样强，而我们当然也是有相应的评测，可以点《<a href="https://www.expreview.com/75997.html" target="_blank">GeForce RTX 3080天梯榜首发评测：史实级飞跃，4K光追从梦想照进现实》</a>看到。<br/></p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-2/focus.jpg" width="100%"/></p><p>不过呢，相信大家应该都记得前阵子我们体验过NVIDIA推出的那两套新的测试工具LDAT和PCAT，而这两套工具可以测试一些我们之前从未测过的项目，例如显卡在不同应用下的能耗比、99%以及95%高帧率、整部PC的系统延迟等等。因此这次可以说是一个很好机会来对比一下RTX 3080以及上代的旗舰显卡RTX 2080 Ti在这些项目中有些什么样的差别。</p><h1>NVIDIA Reflex</h1><p>首先我们来看看大家应该比较关心的延误方面表现。伴随RTX 30系显卡一同发布的，有一个对于电竞游戏，或者更仔细地说对于电竞选手来说很重要的新东西，那就是NVIDIA Reflex。那么这个NVIDIA Reflex到底是什么东西呢？其实它是分为两部分的，一部分是硬件，一部分是软件。</p><p>硬件部分是一个与我们这次使用的LDAT很相似的东西，叫Reflex Latency Analyzer，它其实可以视作为LDAT的一个进阶版本，是直接预安装在显示器里的，可以用来测量玩家从点击鼠标直到画面出现变化之间的时间差，也就是整套系统的所有延迟。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-2/i.jpg" width="100%"/></p><p>而软件部分则是NVIDIA Reflex SDK。这个NVIDIA Reflex SDK的作用是降低以及测量渲染延迟的，开发者可以直接整合到游戏内。而在开启其低延迟模式后，可以让CPU与显卡同步，大幅度减少渲染序列，从而降低渲染延迟。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-2/reflex.jpg" width="100%"/></p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-2/h.jpg" width="100%"/></p><p>对于硬核的电竞游戏玩家或者专业选手来说，这或许可以给到他们需要的那些优势。《堡垒之夜》、《Apex Legends》以及《无畏契约》都已经支持NVIDIA Reflex SDK，大家可以亲自体验一下。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-2/b.jpg" width="100%"/></p><p>这次笔者会以Epic大热的《堡垒之夜》以及拳头的《无畏契约》这两个游戏来测试一下关闭NVIDIA Reflex、开启以及开启+Boost后的延迟表现。在显卡方面，笔者会用公版的RTX 3080以及RTX 2080 Ti来进行2160P、1440P以及1080P的测试。为确保测试时延迟最小化，游戏画质会设置为低特效、100%的3D分辨率以及保持在全屏状态。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-2/f.jpg" width="100%"/></p><p>而LDAT的设置也是很简单的，首先把光传感器固定在屏幕上，然后把改装过的鼠标连接到光传感器上，再把光传感器连接到拥有LDAT软件的计算机上就可以了，既可以是测试机，也可以是一部独立的计算机，后者使用起来会比较方便，而且比较不会影响结果。</p><p>首先来看看之下RTX 3080的成绩。在没有开启NVIDIA Reflex选项时。可以看到在刷新率为144Hz的情况下，《堡垒之夜》2160P下系列延迟为27.4ms、1440P下为21.5ms，而1080P之下则是16.0ms。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "《堡垒之夜》2160P 144Hz 平均系统延迟"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "ms"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 30; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ['#953f61', '#72355f', '#d77169']; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "No NVIDIA Reflex", "RTX 3080": "27.4", "RTX 2080 Ti": "26.1"},
+{"type": "NVIDIA Reflex On", "RTX 3080": "22.7", "RTX 2080 Ti": "21.6"},
+{"type": "NVIDIA Reflex On+Boost", "RTX 3080": "22.7", "RTX 2080 Ti": "21.6"}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "《堡垒之夜》1440P 144Hz 平均系统延迟"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "ms"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 25; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 25; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ['#953f61', '#72355f', '#d77169']; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "No NVIDIA Reflex", "RTX 3080": "21.5", "RTX 2080 Ti": "17.5"},
+{"type": "NVIDIA Reflex On", "RTX 3080": "16", "RTX 2080 Ti": "17.3"},
+{"type": "NVIDIA Reflex On+Boost", "RTX 3080": "16.2", "RTX 2080 Ti": "17.2"}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "《堡垒之夜》1080P 144Hz 平均系统延迟"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "ms"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 20; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 20; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ['#953f61', '#72355f', '#d77169']; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "No NVIDIA Reflex", "RTX 3080": "16", "RTX 2080 Ti": "15.7"},
+{"type": "NVIDIA Reflex On", "RTX 3080": "15.4", "RTX 2080 Ti": "15.6"},
+{"type": "NVIDIA Reflex On+Boost", "RTX 3080": "15.4", "RTX 2080 Ti": "16.1"}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>这个成绩还算可以，但是在开启了NVIDIA Reflex之后延迟就进一步降低了。不论是在哪个分辨率之下，系统延迟都有所降低：2160P下降了4.7ms，1440P降低了5.5ms，1080P之下则下降了0.6ms。不过在NVIDIA Reflex设为开启+Boost的情况下，延迟的改善幅度可以说是与单纯只开启NVIDIA Reflex是一样的。至于RTX 2080 Ti的延迟表现也是差不多，在没有开启NVIDIA Reflex时甚至比RTX 3080好一点点，但是在开启NVIDIA Reflex后的延迟反而没RTX 3080的好。</p><p>从这个结果来看，NVIDIA Reflex在高分辨率下的作用会更加明显，毕竟1080P只是下降了0.6ms的延迟，但是在1440P以及2160P下都有着平均5ms左右的改进。对于专业玩家来说这样的改善应该是会比较明显能体验出来的。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "《无畏契约》2160P 144Hz 平均系统延迟"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "ms"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 20; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ['#953f61', '#72355f', '#d77169']; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "No NVIDIA Reflex", "RTX 3080": "14.9", "RTX 2080 Ti": "15.5"},
+{"type": "NVIDIA Reflex On", "RTX 3080": "14.6", "RTX 2080 Ti": "15.4"},
+{"type": "NVIDIA Reflex On+Boost", "RTX 3080": "14.6", "RTX 2080 Ti": "15.1"}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "《无畏契约》1440P 144Hz 平均系统延迟"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "ms"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 25; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 20; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ['#953f61', '#72355f', '#d77169']; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "No NVIDIA Reflex", "RTX 3080": "15.1", "RTX 2080 Ti": "15"},
+{"type": "NVIDIA Reflex On", "RTX 3080": "14.7", "RTX 2080 Ti": "15.2"},
+{"type": "NVIDIA Reflex On+Boost", "RTX 3080": "14.1", "RTX 2080 Ti": "15.7"}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "《无畏契约》1080P 144Hz 平均系统延迟"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "ms"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 20; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 20; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ['#953f61', '#72355f', '#d77169']; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "No NVIDIA Reflex", "RTX 3080": "14.9", "RTX 2080 Ti": "15.1"},
+{"type": "NVIDIA Reflex On", "RTX 3080": "15.1", "RTX 2080 Ti": "15.5"},
+{"type": "NVIDIA Reflex On+Boost", "RTX 3080": "15.2", "RTX 2080 Ti": "15.1"}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>而在《无畏契约》内，RTX 3080的成绩分别是14.9ms、15.1ms以及14.9ms，三者之间差别不算大。开启NVIDIA Reflex以及开启+Boost后的成绩整体上会好一点点，但并不是很多，相差0.3至0.4ms左右。至于RTX 2080 Ti的成绩整体上比RTX 3080要差一点点，各个延迟测试平均是比RTX 3080高出0.4ms左右。</p><p>笔者认为最主要原因有两个：一是因为《无畏契约》在2160P最低画质之下，RTX 3080的帧数已经达到了900多帧甚至经常摸到1000帧了，而RTX 2080 Ti也是经常徘徊在900帧左右，两者的帧数都太高，所以提升不是很明显；二是这已经到达144Hz显示器的极限了，想要进一步减少延迟的话，那么在其他硬件不变的情况下，换上240Hz或者即将发布的360Hz显示器应该会有不少帮助。</p><h1>功耗及帧数表现</h1><p>那么，RTX 3080在功耗方面的表现又如何呢? 我们继续用《堡垒之夜》作为测试游戏，配合NVIDIA的功耗测试工具PCAT来纪录下一局游戏的数据，并且与RTX 2080 Ti进行对比。由于《堡垒之夜》对显卡的要求其实不高，所以笔者是以2160P加上最高画质来测试的，这样可以让显卡达到最高负载状态。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-2/c.jpg" width="100%"/></p><p>PCAT的用法其实与我们之前用于测显卡功耗的仪器是一样的设置方法。先把电源上的显卡8P电源接在PCAT的一边，然后把PCI-E转接卡连接到PCAT上，把显卡插到转接卡上，并且把显卡8P电源线连接到PCAT上，最后把PCAT连到计算机上就完成了。至于帧数等的数据，笔者会以NVIDIA的FrameView来纪录。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-2/d.jpg" width="100%"/></p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "《堡垒之夜》2160P 最高画质 显卡功耗"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "W"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 400; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ['#953f61', '#72355f', '#d77169']; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "平均功耗", "RTX 2080 Ti": "265", "RTX 3080": "327", },
+{"type": "99%高功耗", "RTX 2080 Ti": "283", "RTX 3080": "353", },
+{"type": "最高功耗", "RTX 2080 Ti": "295", "RTX 3080": "371", }];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>测试下来，RTX 3080的平均功耗为327瓦，最高功耗为371瓦，99%时间功耗值为353瓦左右。而RTX 2080 Ti平均则是265瓦、最高295瓦、99%时间功耗值283瓦左右。不过功耗其实是需要配合帧数来说明的，因此笔者也用NVIDIA的FrameView软件把这次测试的帧数纪录下来。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "《堡垒之夜》2160P 最高画质 帧数"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "FPS"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 110; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ['#953f61', '#72355f', '#d77169']; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "平均帧数", "RTX 2080 Ti": "63.6", "RTX 3080": "87.0", },
+{"type": "95%高帧率", "RTX 2080 Ti": "72.5","RTX 3080": "100.4", }]
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "《堡垒之夜》2160P 最高画质 能耗比"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "FPS"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 0.3; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ['#953f61', '#72355f', '#d77169']; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "平均每瓦性能", "RTX 2080 Ti": "0.246", "RTX 3080": "0.271", }]
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>可以看到，RTX 3080对比RTX 2080 Ti在帧数方面提升了非常多，平均帧数比RTX 2080 Ti提升了24帧，95%高帧率提升了28帧。所以RTX 3080的能耗比相对RTX 2080 Ti也有所提升，平均系数从0.246提升到0.271，换算下来就是10%左右的能耗比提升。</p><p>笔者之后也以分别以RTX 3080以及RTX 2080 Ti在《堡垒之夜》2160P以及最高画质之下，开启光追的默认设置以及DLSS质量模式来测试了一次两张显卡在光追下的性能表现。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-2/a.jpg" width="100%"/></p><p>这次用的是NVIDIA在《堡垒之夜》内制作的光追地图。由于没有内置Benchmark，因此测试路线是由人物出生点开始，从右至左跑，包括在建筑内环绕一圈，最后回到出生点为止。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-2/g.jpg" width="100%"/></p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "《堡垒之夜》2160P 最高画质 光追 帧数"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "FPS"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 70; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ['#953f61', '#72355f', '#d77169']; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "平均帧数", "RTX 2080 Ti": "41.1", "RTX 3080": "53.7", },
+{"type": "95%高帧率", "RTX 2080 Ti": "48.3","RTX 3080": "63.1", }]
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "《堡垒之夜》2160P 最高画质 光追 能耗比"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "FPS"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 0.2; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ['#953f61', '#72355f', '#d77169']; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type": "平均每瓦性能", "RTX 2080 Ti": "0.158", "RTX 3080": "0.170", }]
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>可以看到，在开启光追之后，RTX 3080的平均帧数为54帧左右，对比RTX 2080 Ti的41帧有很大提升，提升了11%左右，而99%高帧率也达到了67帧左右，比起RTX 2080 Ti的41帧有明显改善。如果玩家是选择平衡或者性能模式的DLSS的话，那么60帧肯定是没有问题的。因此RTX 3080可以说是已经可以比较流畅地以光追来体验游戏了。至于在能耗比方面则是提升幅度要小点，大概有7至8%左右的提升。</p><h1>总结</h1><p style="text-align:center"><img border="0" src="https://img.expreview.com/review/2020/09/epx-2/e.jpg" width="100%"/></p><p>在这次的测试中可以看出来，RTX 3080相比起上代的旗舰级显卡RTX 2080 Ti不论是对于电竞方向或者是在3A大作方向的游戏都会有不少的改进。在实际测试中结果也确实如此，LDAT测出来RTX 3080配合NVIDIA Reflex在大部分测试中可以有效降低延迟；而配合PCAT及FrameView也可以看到RTX 3080的帧数以及能耗比相对RTX 2080 Ti都有不少提升。</p><p>对于电竞游戏或者选手来说，RTX 3080配合NVIDIA Reflex可以带给他们更加流畅的操作体验。RTX 3080本身强大的性能已经可以提供非常不错的游戏帧数以及渲染延迟，而NVIDIA Reflex则可以在这个基础上再进一步降低整套系统的延迟。两者结合一起可以让玩家对于游戏有更加精细的控制，以及对于战况可以更快的作出反应。</p><p>目前玩家已经可以在《堡垒之夜》、《Apex Legends》以及《无畏契约》内尝试一下NVIDIA Reflex功能，而接下来《命运2》、《使命召唤：战区》等电竞类游戏接下来都会都会支持。至于支持NVIDIA Reflex延迟检测工具的显示器也会陆续登埸，首批将会是ROG Swift PG259QNR、Predator X25、Oculux NXG253R以及AW2521H。</p><p>至于3A大作方面更加不用说了，RTX 3080可以说是把光追真正的带到了大众之流。在2160P之下可以用接近60帧的性能来开启光追，这对于不少3A大作来说无疑是一个喜讯，毕竟光追是未来的大方向，它可以让游戏的光影更加真实，让整体画面更加绚丽。</p>
