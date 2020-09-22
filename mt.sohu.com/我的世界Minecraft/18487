@@ -1,0 +1,122 @@
+➜《我的世界》村民终于当个“人”了 用命令方块三步教会村民说话
+http://www.sohu.com/a/412882296_100155291	8523
+<p>想必冒险家们都玩过一些解密地图，在这些地图中会有一些村民NPC，他们会在聊天框发出信息告诉冒险家们解谜的关键，同时也能让冒险家们有更好的代入感，那么这是怎么做到的呢？答案是用~！指~！令~！指令可以帮助冒险家们完成很多有趣的操作，下面让我们一起来看看吧。</p>
+<p><strong>村民会说话啦</strong></p>
+<p>版本：基岩版（基岩版包括手机版哦~）</p>
+<p>要想让某个特定的村民说话先得给他起个名字。拿出命名牌，在铁砧中打上名字，并给一个幸运村民使用</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200813/ad2342caa0834921946d073ee13b6e0f.png" max-width="600" /></p>
+<p>然后在聊天框输入/give @s command_block，村长就会给我们一个命令方块，将命令方块放在地面并点击使用。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200813/9ee25d768f6f40db9ecc521e4be99566.png" max-width="600" /></p>
+<p>在命令栏输入testfor @a[r=5]，方块类型选择循环，条件设置成无条件，红石选择保持开启。这个命令的意思是，检测该命令方块半径为5以内的所有玩家。冒险家们如果把[r=5]改为[rm=5]，则意为检测该命令方块半径为5以外的所有玩家。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200813/2ab48bddcd8647ec9eab20fa50c67d27.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200813/611a0ee9b16b46ab80c3cde359fab703.png" max-width="600" /></p>
+<p>然后在命令方块的任意一侧放一个红石比较器和红石粉，再连接一个命令方块，打开命令方块并输入“execute @e[type=villager,name=村长] ~~~ say 你好呀冒险家”其他设置保持默认即可。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200813/f6c37b5cbedf46d6a3b1ad7bee8f9cef.png" max-width="600" /></p>
+<p>这条命令的意思是让一个叫“村长”的村民发出“你好呀冒险家”的信息，只要走进命令方块周围5格以内（图中红色区域）村长就会在聊天区发出信息啦。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200813/ad69a9d3d9124a36860e9ce212bb88f2.png" max-width="600" /></p>
+<p>不过看这信息的字体是不是感觉少了NPC的味道呢？NPC的字体应该有颜色的~我们可以使用到分节符“§”来调整字体格式，Windows系统可以通过Alt+0167来得到该符号，而手机可以在输入法中查找得到哦！</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200813/5ed4656319844e9db70ba0ddc5ebfbae.png" max-width="600" /></p>
+<p>在命令方块中输入它并加数字就能获得不同的字体颜色了，如果再加字母“o”或者“l”，就能获得加粗或斜体的效果。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200813/bc28ad0b0cd341008cf62f5ecdf40cc9.png" max-width="600" /></p>
+<p>做完这些一个会自动说话的村民NPC就诞生啦！冒险家可以根据自己的需要改成不同的对话。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200813/da2edead38aa49fb91727a532080af94.png" max-width="600" /></p>
+<p>也可以修改命令，比如小编把图中红框中的命令改成[rm=5]</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200813/b404f017ce544ee7bb8989fa2a79921c.png" max-width="600" /></p>
+<p>这样只有冒险家离开命令方块5格远时村长才会说话。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200813/2230bb65769741969be6036f36d97951.png" max-width="600" /></p>
+<p>使用命令甚至还可以改变NPC哦，如果把命令中“type”的后面换成别的生物。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200813/1fac53ab29f14533a54bc1e999a9509a.png" max-width="600" /></p>
+<p>这样其他生物也会说话了哦~咦？盔甲架也会说话了！（害怕）</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200813/84bf38a03516466882191a0d4f98291e.png" max-width="600" /></p>
+<p>看完小编的指令分享，你有没有什么特别的想法呢？冒险家们赶快去游戏内做出你想要的NPC吧~！</p>
+➜大神在《我的世界》深海重新还原亚特兰蒂斯 难度堪比人类登月
+http://www.sohu.com/a/412970215_100155291	35856
+<p class="ql-align-justify">人类的历史发展至今，整个世界是经历了无数次的蜕变，很多失落的文明虽然已经退出了历史舞台，但是它曾经给人类也带来过辉煌的时刻。以着名的亚特兰蒂斯为例，各种史料都记载了它曾经的美丽。而《我的世界》大神们根据有限的资料，发挥了自己的想象力，重现出一个个梦幻的海洋文明。</p>
+<p class="ql-align-justify"><strong>亚特兰蒂斯</strong></p>
+<p class="ql-align-justify"><strong>作者：Lirias</strong></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200813/ae3a00179fa3495aa5ed96c94469cde4.png" max-width="600" /></p>
+<p class="ql-align-justify">因为史料确实有记载它曾经的风光，所以很多有关亚特兰蒂斯的作品都会使用宫殿这个元素，宫殿的风格也是很华丽的那种。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200813/03447545fb7e4d8591efb2f4bc4b3beb.png" max-width="600" /></p>
+<p class="ql-align-justify">然而海底的其他生物也有不逊色于宫殿的颜色，各种颜色相互影响，非常值得欣赏。</p>
+<p class="ql-align-justify"><strong>古代亚特兰蒂斯</strong></p>
+<p class="ql-align-justify"><strong>作者：ImaginaryTeam</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200813/db9b89ee2942479fb4668efe4c153a31.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">这里的亚特兰蒂斯已经不再是一个建筑群，因为海水的侵蚀，只留下了部分的建筑组件，海洋生物也已经习惯了它们的存在，在这里安了家。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200813/f740690f8d404dd5b1953336e1da97ae.png" max-width="600" /></p>
+<p class="ql-align-justify">我们将灯光挪过来，这次亚特兰蒂斯倒没有太多的色彩和细节，周围的珊瑚和鱼群成了它们主要的装饰品。</p>
+<p class="ql-align-justify"><strong>亚特兰蒂斯的心脏</strong></p>
+<p class="ql-align-justify"><strong>作者：playman</strong></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200813/2780b138f46f48879a13e0815a989b48.png" max-width="600" /></p>
+<p class="ql-align-justify">这个作品的建筑地虽然在陆地上，但是它确实也是是作者对亚特兰蒂斯的幻想表达。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200813/cfcbfd13f24a4e429702f4a213f8f78b.png" max-width="600" /></p>
+<p class="ql-align-justify">依然是受到了海水的影响，所有建筑表面都起了变化，令人毛骨悚然的是这种偌大的城市，无人存在的感觉。</p>
+<p class="ql-align-justify"><strong>亚特兰蒂斯高地</strong></p>
+<p class="ql-align-justify"><strong>作者：Vaxor</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200813/1dae85c6495445129788ba7ffac96efa.png" max-width="600" /></p>
+<p class="ql-align-justify">这里就恢复了正常，亚特兰蒂斯还是在水里，海马愉快的朝顶部发光的灯塔游去。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200813/818a32f446a64679a832689c3c5bc4b7.png" max-width="600" /></p>
+<p class="ql-align-justify">华丽古老的建筑已经被海洋的动植物塞满了，这是形成了一种新的海洋文明？</p>
+<p class="ql-align-justify">这样神秘的文明，具体怎么样现在还是一个谜。虽然未来可能会将它的真相重现于世，但这并不耽误人类对它美好的向往。那么你心中的亚特兰蒂斯又是怎样的呢？</p>
+<p class="ql-align-justify"><strong>文中部分图片来自网络 如涉侵权请联系官方删除</strong></p>
+➜《我的世界》史上最强对决 用指令加强钻石僵尸 铁傀儡能赢吗？
+http://www.sohu.com/a/412981031_100155291	39673
+<p>在《我的世界》中许多生物之间都会有互动，比如僵尸会攻击村民，铁傀儡会攻击僵尸，狼会攻击骷髅等等，那么能不能让这些互动更有趣呢？</p>
+<p>今天小编就给大家分享一个《我的世界》有趣小测试~</p>
+<p>版本：Java版1.14.3</p>
+<p>铁傀儡作为主世界最强力的生物之一，在1V1的情况下几乎难有敌手。它一直默默地守护着村庄，企图破坏村庄的生物都会被它好好教训一番，普通的僵尸基本挨不住铁傀儡的两次重击。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200813/4cf00e81c8574b24bbba5d59bb16b8fb.png" max-width="600" /></p>
+<p>不过如果是全副武装的僵尸呢？那种全套钻石盔甲+钻石剑的僵尸，当僵尸穿上这样的装备如果对上铁傀儡会是怎样的场景呢？</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200813/2a8b65f68cb64998bd7c12a04f94c41c.png" max-width="600" /></p>
+<p>虽然僵尸在生成的时候有一定几率会佩戴盔甲，但是要想看到全套佩戴的是很少的，更别说是钻石材质的了。我们可以用命令来让一个僵尸穿上这些盔甲，命令如下：/replaceitem entity @e[type=minecraft:zombie,name=“僵尸甲”] armor.head minecraft:diamond_helmet</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>▲这个是给“僵尸甲”带上钻石头盔，其他部分请参考下图</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200813/cab621d4ecda4c95a0dc9857ab5714e6.png" max-width="600" /></p>
+<p>▲从上往下分别是头盔、胸甲、护膝、鞋子、剑</p>
+<p>事先最好给这个僵尸命名哦</p>
+<p>要不全世界的僵尸都会穿上钻石盔甲的</p>
+<p>接下来也不用自己造一个铁傀儡了</p>
+<p>拿上栓绳，向村民暂时借用一下铁傀儡~</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200813/62f74e4c0d67444ebbb1e8f72f0fc50b.png" max-width="600" /></p>
+<p>好，双方选手已经准备就绪，比赛马上就能开始啦~</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200813/b3148928bb3342848d3301f8c49c7b39.png" max-width="600" /></p>
+<p>开赛！现在“僵尸甲”正气势汹汹的冲向铁傀儡</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200813/7a57d7461e3d490dad50185ffac05b21.png" max-width="600" /></p>
+<p>然后它……就没了。铁傀儡还顺手解决了一只蜘蛛。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200813/42ebd0daaa4846bbbfcff743c901266d.png" max-width="600" /></p>
+<p>既然在物理层面上打不过，那就让它使用魔法吧</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200813/888d85cca7a64a289bafa0ab0d1f16b2.png" max-width="600" /></p>
+<p>▲从上往下分别是头盔、胸甲、护膝、鞋子、剑</p>
+<p>我们补充一下命令，只需要在之前的命令基础上附加红框中的命令即可~</p>
+<p>格式：之前命令 {Enchantments:[{lvl:4,id:protection}]} 给僵尸的钻石盔甲和钻石剑分别附上：保护4和锋利5的魔咒</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200813/b61c8bd6e6404f2eb73130f2aed6c15f.png" max-width="600" /></p>
+<p>第二次比赛正式开始！“僵尸甲”这次竟然——多撑了10秒</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200813/e601542637e8461eb6fe679c426f4939.png" max-width="600" /></p>
+<p>看来即便使用魔法，在单打独斗下还是无法和铁傀儡抗衡呢。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200813/11dc279236344cb381111002fcb478eb.png" max-width="600" /></p>
+<p>虽然使用命令的附魔等级没有限制，但是为了比赛公平，小官微只给到了游戏中不使用命令情况下能获得的最高附魔等级。如果冒险家想看到别的附魔等级下僵尸的强度，可以调整命令中“lvl:???”的部分来改变。不知道怎样附魔等级的盔甲和剑僵尸才能打败铁傀儡呢？</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200813/9b74aff5572d40509f76957446817b1b.png" max-width="600" /></p>
+<p>如果给僵尸一把锋利等级999999的钻石剑，再对上铁傀儡……</p>
+<p>看完小官微分享的有趣小测试~冒险家赶紧去游戏中试试吧，你会让铁傀儡和谁battle呢？赶快在评论区留言吧</p>
