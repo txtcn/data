@@ -1,0 +1,258 @@
+➜到底什么是产品设计师？用一个案例让你学会！
+https://www.uisdc.com/what-is-pd	57812
+<p>最近看《破茧2》有点启发，突然觉着可以还不错的解答一下之前有铁汁提过的问题了：啥是产品设计师？和体验设计师有啥区别？我们又要转型了嘛？</p>
+<h4><span class="auto_menu">前情提要</span></h4>
+<p>在讲“产品设计师”这个概念之前，我们先再科普下现在大圈子里对“体验设计师”、“UI”、“交互”的定义都是个啥。</p>
+<p>大家疯狂听到的UX（“油茶”-体验设计师），其实市面上大部分的应用还是从交互到UI的“技能合成师”，虽然实际工作中不会真的要求他们既画原型图又出GUI，只是要求他们互通对2个方向都有所了解，实际工作中还是会有一定偏向的。具体应用的大厂比如阿里/滴滴等（都是阿里系的）的社招（2年工作经验起步），基本你去他们的内推系统或者boss上只会搜到ux这个职位，没有“UI”，也没有“交互”。</p>
+<p><span class="img-zoom"><img alt="到底什么是产品设计师？用一个案例让你学会！" class="alignnone size-full wp-image-389902" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-al-20200922-1.jpg" width="1002" height="431" /></span></p>
+<p>但是这并不代表着所有的大厂都是这样的，很多大厂比如网易、腾讯等，依然还是细分交互和UI，只是对于职级资深以上的设计师会有更多的横向全栈要求（懂业务、懂产品、懂设计闭环流程中上下游的各种知识点）。</p>
+<p>这么看来的话，其实全栈设计师是对高阶设计师的一种趋势需求，全栈不代表你啥都要做，只是可以利用你了解的知识和业务背景去更好的进行设计决策。那么产品设计师这个概念其实可以理解为设计师的综合能力升级到一定程度对自己能力的一种定位诠释和标签。具体什么样可以把自己定位成“产品设计师”呢？下面给大家讲个通俗易懂、生动活泼、一波三折、精彩绝伦的案例。</p>
+<h4><span class="auto_menu">先说下业务背景</span></h4>
+<p>年初因为疫情原因，催生了大量的视频会议、面试的市场需求，因此某个做招聘的公司下达了紧急的业务线0-1需求：抢在所有招聘平台之前做一个视频面试工具出来。在视频面试工具1.0急速开发上线之后，半年间平台服务不断增加，功能不断新增，流程不断耦合，原来的设计框架及语言明显已不能很好的支持未来短期内的业务拓展了。</p>
+<p><span class="img-zoom"><img alt="到底什么是产品设计师？用一个案例让你学会！" class="alignnone size-full wp-image-389903" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-al-20200922-2.jpg" width="1000" height="557" /></span></p>
+<p>于是UED侧自驱提出了改版2.0的提案及改版框架，希望通过体验流程和视觉语言的优化迭代形成更有价值的驱动。然鹅整体体验翻新这件事儿对于上下游来说并不是什么美差，让我们来康康他们的心理活动：</p>
+<p><strong>1. 产品经理：</strong></p>
+<p>由UED主导的改版对体验流程的框架改动太大，我们要配合他们把PRD全部重写一遍，还只是费力不讨好的凑一个支援的名义。虽然改版后确实体验会更好，拓展性更强，但也不能保证对我们的KPI有多么大的帮助，就保持个中立的心态吧。</p>
+<p><strong>2. 技术：</strong></p>
+<p>天呢（第一反应），这么大的改动先劝劝他们别着急改了吧，UED主导的需求占用这么多资源不合理不合理，让我先想想拿什么理由反对比较合适&#8230;.有了：1.资源不足，当前业务线占用人力太多。2.改动太大，很多框架需要重写，无法保证改版数据的提升就无法体现性价比</p>
+<p><strong>3. 运营 ：</strong></p>
+<p>emm（hin仔细的看框架和流程，思考1分钟），好像体验是好了不少，但是吧有个担心改动有点大，客户一时半会接受不了咋办，要不然别这么一次性全改了，一点点迭代吧还是保险一点。</p>
+<p>所以如何自驱一个让大家都相对认可的有价值的2.0体验改版，并在上下游不同的配合意愿下推动整个项目的发起和落地呢？</p>
+<h4><span class="auto_menu">思考用户到底需要什么</span></h4>
+<p>体验改版的出发点一般基于2个维度：用户诉求+产品目标，这个我觉得铁汁们都懂，之前也写过很多相关的文章。比如：</p>
+<p>[link https://www.uisdc.com/5-elements-of-user-experience]</p>
+<p>产品目标我们通过业务方、产品经理就可以获得了解，他们希望沉淀客户数据（资产积累、C端引流等）、形成竞对差异（品牌塑造）。</p>
+<p>而用户诉求收集的方式很多，这次的案例通过和运营专员合作，一起进行客户电话访谈和社群问卷投放，通过调研可以模拟出完整的用户体验地图，类似于：</p>
+<p><span class="img-zoom"><img alt="到底什么是产品设计师？用一个案例让你学会！" class="alignnone size-full wp-image-389904" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-al-20200922-3.jpg" width="1080" height="589" /></span></p>
+<p>这个时候通常针对用户的情绪低点进行相对的设计策略制定是可以直接解决对应问题的。比如用户觉得简历导入麻烦，我们就把流程路径优化，让ta少导入几次。但仅解决眼前的问题仅是单线条的设计思路（稍显单薄），如果从闭环设计流程出发，我们就需要先归纳总结调研出来的问题分几类，为什么会有这样的问题，用户的潜在需求是什么？也就是用户到底需要什么？</p>
+<p>《破茧2》里有个栗子我印象很深，觉得可以帮助大家更好理解“用户的潜在需求”这个概念：</p>
+<blockquote><p>在马车时代，老亨利·福特说过，如果你问你的顾客需要什么，他们只会说需要一辆更快的马车。</p></blockquote>
+<p><span class="img-zoom"><img alt="到底什么是产品设计师？用一个案例让你学会！" class="alignnone size-full wp-image-389905" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-al-20200922-4.jpg" width="447" height="334" /></span></p>
+<p>同理应用到我们本次的案例中，用户只会说ta想要更快导入简历，更便捷的面试流程，但洞察用户的潜在需求你就会发现，他们的诉求在于一套“更懂你”的服务，一套可以大面积覆盖AI智能的服务去解放他们的双手，质变提升他们的办公效率。</p>
+<p>结合产品本身的核心AI功能与技术就可以顺利定制出2.0的设计改版主题：SMART更懂你的服务体验。基于用户潜在需求的设计既可以更大空间的提升对应的业务核心指标（面试场次、面试率），也可以很好的与停留在单线条设计方案的竞对拉开品牌体验上的巨大差异，这样一来也可以给PM小伙伴多一点改版的信心与动力了。</p>
+<h4><span class="auto_menu">实现最小成本试错</span></h4>
+<p>一个大型自驱项目想要实现落地兑现，除了考虑满足各方的业务价值，还需要从产品生命周期角度考虑ROI（投入回报比），因为不同生命周期的策略重心是不同的，试错成本也是不同的。</p>
+<p><span class="img-zoom"><img alt="到底什么是产品设计师？用一个案例让你学会！" class="alignnone size-full wp-image-389906" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-al-20200922-5.jpg" width="1080" height="462" /></span></p>
+<p>比如一个探索期和成熟期的项目改版（如果没有构建固定组件库的前提下）虽然技术上的成本没有太大的差异，但用户成本就会有较大的差异，因为探索期的用户量很少，改动对于新用户的体验有所改善，对于少量老用户也没有过多影响。但成熟期进行一个大改版，就需要考虑大量用户的接受度了。</p>
+<p>这里给大家举个栗子：基本每次苹果系统大更新，或者iPhone物理外形更新都会被一些用户吐槽，很多时候并不是因为大家真的觉得有多丑多不好用，只是大家用惯了之前的不适应新的而已。</p>
+<p>那么如果验证用户会不会因为这个”不适应“放弃产品而成为流失用户呢？</p>
+<p>这里需要引入MVP（最小化可行产品）的概念（有不懂的术语可以参看之前的《覆盖超广的UX全链路专业/业务术语（中英对照+注释）》）：</p>
+<p>[link https://www.uisdc.com/ux-terminology]</p>
+<p>在资源缩减的互联网下半场，精益化设计思维显得更加重要，可以帮助我们在项目落地的过程中使用最小成本完成有效测试与覆盖。</p>
+<p>实现MVP的方式很多，根据具体案例情况，我们这里采用灰度发布的方式保障新版本在成长期用户间的平滑过渡，通过灰度下的业务指标验证改版的价值。至于灰度发布具体是个什么操作，大家可以回忆一下是不是有时候一些app你的界面和你朋友的界面忽然长的不一样了，那也许不是因为你没有更新，而是出于灰度用户中，让你先尝尝新版本的滋味，康康你们的路径和点击有什么变化。</p>
+<p>基于MVP的精益化设计，可以很好的安抚运营同学的顾虑，同时也为技术所需求的实际价值与性价比提供了快速验证方式。</p>
+<h4><span class="auto_menu">总结一下</span></h4>
+<p>其实业内对于产品设计师的定义还是很模煳的，就像当初的体验设计师一样。初阶的铁汁接触起这些来也许会觉得吃力，没有关系，思维是慢慢建立的，职业生涯的要点也是慢慢递进的。</p>
+<p>总结来说，如果未来哪一天你能够在整个项目的流程思考中，具备中下游分析能力、用户潜在需求洞察力和精益化设计思维，那么就基本匹配了一个产品设计师的定义。</p>
+<p>欢迎关注作者的微信公众号：「Nana的设计锦囊」</p>
+<p><span class="img-zoom"><span class="img-zoom"><img alt="到底什么是产品设计师？用一个案例让你学会！" class="alignnone size-full wp-image-269451" src="https://image.uisdc.com/wp-content/uploads/2018/05/uisdc-nanaqr.jpg" alt="基础指南！覆盖超广的UX全链路专业/业务术语（中英对照+注释）" /></span></span></p>
+➜用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？
+https://www.uisdc.com/liulishuo-vi	59477
+<p>流利说今年发布了新的品牌视觉规范手册，作为负责该项目的品牌设计师，今天想和大家聊聊关于品牌设计上的一些知识及心得。</p>
+<h4><span class="auto_menu">企业形象识别系统是什么？</span></h4>
+<p>企业形象识别系统又称之为 CIS，它由三大要素所构成，分别是：</p>
+<ul>
+<li>MI（Mind Identity）理念识别</li>
+<li>BI（Behavior Identity）行为识别</li>
+<li>VI（Visual Identity）视觉识别</li>
+</ul>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389698" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-1.jpg" width="1080" height="650" /></span></p>
+<p>企业通过 SIC 使社会公众能一目了然的了解企业传达的信息，从而达到识别并建立企业形象的目的。设计师常常提到的品牌视觉规范其实就属于 VI 这一部分。</p>
+<h4><span class="auto_menu">如何评判视觉规范?</span></h4>
+<p>视觉规范手册可以理解为“定义品牌视觉识别并解释如何使用的说明书”。建立视觉规范有助于明确公司理念与品牌之间的关系并建立产品与品牌之间统一的识别特征，将这些特征贯穿在品牌的整个视觉系统中从而使受众感受到更强的秩序感、统一感。</p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389699" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-2.jpg" width="1080" height="650" /></span></p>
+<p>什么才是一个好的品牌视觉规范呢？VI设计中主要遵循的原则和衡量标准主要有三个：品牌调性；视觉统一性 ；实际易用性</p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389700" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-3.jpg" width="1080" height="650" /></span></p>
+<p>下面就围绕着视觉规范中的“统一性”这一点，和大家展开聊一下。</p>
+<h4><span class="auto_menu">为什么统一性尤为重要？</span></h4>
+<p>因为不一致的品牌视觉会让客户感觉不专业，品牌视觉及调性的混乱会使得消费者感到困惑，不信任你的品牌。2020 年在《Brand Management in the Digital Age》 的文章最新研究表明，所有平台上一致的品牌展示将使收入最多可增加 23％。</p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389701" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-4.jpg" width="1080" height="650" /></span></p>
+<p>视觉规范中的一致性对于确保品牌知名度和可靠性至关重要。它最终传达出的是品牌对外的声音。当人们在公共场合看到您的产品时，他们可以轻松地发现自己熟知的品牌视觉。举一个正面的例子，比如 Target,他们在任何媒介上都保持一致的声音及调性，即使在社交媒体上也是如此。</p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389702" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-5.jpg" width="1048" height="548" /></span></p>
+<p>△ Target在不同媒介上的视觉呈现</p>
+<p>再举一个很好理解的例子：一个同事他总是西装革履，梳着整齐的短发。某一天，他穿着破旧的牛仔裤和上衣，身上纹了夸张的纹身来上班。这可能会导致你的不习惯，甚至你可能会询问他发生了什么。同样的逻辑也适用于品牌：不一致会使你的客户混淆甚至疏远。品牌视觉的统一很重要，因为它可以帮助企业在所有团队和渠道之间以一致的方式进行沟通。</p>
+<h4><span class="auto_menu">流利说的品牌统一历程</span></h4>
+<p><strong>1. 找出问题所在</strong></p>
+<p>在本次品牌视觉规范更新中，品牌视觉不统一是最基本的问题。视觉保持一致性是一个挑战，尤其是当需要创建大量内容和整合时，如果没有正确的方向，很容易会出现混乱。在流利说品牌视觉制作中，最难的点是要对原有品牌资产和新创建的资产进行归纳统一。不但要考虑到目前的实际应用场景，还要考虑到未来的易用性及延展性。首先我们对在视觉中出现的问题进行了归纳。</p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389703" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-6.jpg" width="945" height="541" /></span></p>
+<p>△ 标志使用混乱的案例</p>
+<p>总结下来基本问题出现在于：</p>
+<ul>
+<li>Logo 缺乏系统化统一，并且在不同应用场景下没有规范及使用标准；</li>
+<li>旧版色板易用性不好，无法同时满足线上线下使用场景；</li>
+<li>字体、 插画风格 、影像风格等等基础视觉元素不统一。</li>
+</ul>
+<p>在对这些问题进行梳理并制定好目标后，我们对每一项进行了逐步的优化和制定标准规范。</p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389704" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-7.jpg" width="1080" height="531" /></span></p>
+<p>△ 项目组讨论并找出问题</p>
+<p><strong>2. 标志的统一</strong></p>
+<p>标志是品牌的基础，一致性很重要。在不同情况下标志呈现都应具有相同的基本品质，但可能需要不同的呈现方式。</p>
+<p>比如在不同背景下运用的不同颜色版本；用于打印目的的黑白版本或用于品牌服装的简化版本。在做品牌统一规范时，所有可能涉及到的情况都需考虑进去。并明确写清每个版本的应用范围、直观的示例、使用的所有绝对“禁止”。</p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389705" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-8.jpg" width="1029" height="242" /></span></p>
+<p>△ 考虑不同 Logo 版本可应用范围</p>
+<p>流利说 Logo 本身是渐变色，因为颜色的复杂性，使用场景会受到很大的限制。首先我对 Logo 使用场景及需求进行搜集。归纳出，除了彩色Logo外，常用的 Logo 颜色形态为黑白及彩色单色，从而制定出另外三种单色的 Logo。为保证统一性和不同媒介上最好的呈现，对每种情况加以测试，选出最佳呈现效果后来制定规范化标准，并限定出可用背景种类及明暗度的参考值。</p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389706" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-9.jpg" width="913" height="497" /></span></p>
+<p>△ 不同颜色Logo在不同明暗度及背景上的应用范围</p>
+<p><strong>3. 颜色的统一</strong></p>
+<p>品牌色彩可帮助建立视觉在所有品牌作品上的一致性，而无论它们是数字作品还是印刷作品。大多数品牌使用 1-3 种主要颜色，然后指定辅助或重点颜色。为确保一致性，品牌标准色应提供不同色样。其中包括 Pantone（印刷、织物、塑料），CMYK（印刷）和 RGB/HEX（在线，数字媒体）。</p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389707" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-10.jpg" width="1066" height="369" /></span></p>
+<p>这次在进行颜色统一时，发现最大的矛盾点在于线上线下的颜色使用比较乱，为了画面的丰富，设计师会选择自行调整颜色，但这就导致颜色极其不统一。不同场景设计师常用的颜色是完全不同的，产品用色一般考虑到视觉舒适度，而选饱和度没有那么高的颜色。但是运营设计常常需要以吸引人为主，所以颜色饱和度相对偏高。因此颜色的使用上不同职能的设计师还是有很大差别的。</p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389708" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-11.jpg" width="1051" height="1127" /></span></p>
+<p>△ 常用颜色搜集与归纳</p>
+<p>为了解决这个问题，我们对设计师常用颜色进行了统计和归纳，以各渠道都可以适用为目标，对色板进行了优化。</p>
+<p>比如我们调整了主品牌的绿色，在原有基础上为了满足活动运营的需求，调整了绿色的饱和度，但又满足了产品中对于文字对比度的需求。</p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389709" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-12.jpg" width="1080" height="650" /></span></p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389710" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-13.jpg" width="918" height="471" /></span></p>
+<p>△ 筛选不同的绿色并测试对比度</p>
+<p>通过常用颜色的实际颜色测试和调研，对于辅助色我们提供了更多的亮度和饱和度的选项，在这一方面不但有更好的统一性，也大大提升了色板的易用性，更能满足不同设计师的需求。</p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389711" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-14.jpg" width="780" height="416" /></span></p>
+<p>△ 提供不同颜色明度的选项</p>
+<p><strong>4. 插画风格的统一</strong></p>
+<p>插画的风格在网站、社交媒体或其他渠道进行品牌传播时，保持一致的语气和个性很重要。比如品牌在微博上的风格是有趣和友好的扁平化画风，那么它在 Facebook 和淘宝上应该具有相似的风格。在淘宝上如果呈现的是炫酷立体风格，在用户感知上会觉得完全来自另一个品牌。</p>
+<p>在以往的插画风格上，我们的线上线下风格不太一致。经过小组讨论及尝试后，我们的解决方案是在不同平台上有不同的插画处理方法，但是整体传达的插画视觉形态是完全一致的。</p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389712" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-15.jpg" width="800" height="1843" /></span></p>
+<p>△ 相同的插画风格，不同表现形式</p>
+<p><strong>5. 其它视觉元素的统一</strong></p>
+<p>除了 Logo、颜色的统一及规范制作，这次品牌视觉升级同时也统一了字体、影像风格、办公室用品等一系列视觉基础应用。在字体上，除了统一各渠道的常用字体，还制定了字体排版细节的规范，以确保在版式上有最好的呈现。</p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389713" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-16.jpg" width="800" height="474" /></span></p>
+<p>△ 文字排版中的具体规范</p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389714" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-17.jpg" width="1076" height="568" /></span></p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-389715" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ll-20200921-18.jpg" width="1080" height="558" /></span></p>
+<p>△ 线上线下应用展示</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>品牌视觉规范的统一重要的还是对整体视觉和目标的把控。在统一之前一定要做好的几点：</p>
+<ul>
+<li>找出现有问题</li>
+<li>实际调研</li>
+<li>归纳共性</li>
+<li>测试与总结</li>
+</ul>
+<p>一个好的品牌规范不仅仅要达到视觉上的美感，更重要的是正确的传达企业调性，解决问题并做到优秀的应用性。</p>
+<p>本期作者的私藏推荐：<a href="http://www.brandnew.com">www.brandnew.com</a></p>
+<p>品牌设计网站，定期更新各大品牌的新闻和动态。大家可以多看看其它优秀品牌是如何做品牌视觉更新及优化的，在里面还可以找到很多设计灵感哦～</p>
+<p>[link https://www.uisdc.com/2019-tmall-brand-design]</p>
+<p>欢迎关注「流利说设计团队」公众号：</p>
+<p><span class="img-zoom"><img alt="用英语流利说的实战案例，聊聊如何利用品牌设计解决问题？" class="alignnone size-full wp-image-335818" src="https://image.uisdc.com/wp-content/uploads/2019/09/llsqr.jpg" alt="流利说实战经验！多语言UI设计避坑指南" /></span></p>
+➜用超多产品，解构今日头条设计背后的逻辑
+https://www.uisdc.com/toutiao-design-logic	61508
+<p>今日头条的出现颠覆了传统新闻产品（如网易、新浪和搜狐新闻）。</p>
+<p>传统新闻依靠着编辑人员的推荐，将新闻触达给用户，而今日头条则依靠着新闻算法，抛弃传统人工分发的思路，使分发效率数以万计的提升，其迅速崛起，成为头部新闻资讯产品。</p>
+<p>今日头条作为新闻信息流的头部产品，里面的设计细节和设计逻辑值得我们思考和分析。</p>
+<h4><span class="auto_menu">信息流样式</span></h4>
+<p>什么是信息流？信息流有两部分组成，信息流=信息+流。</p>
+<p>信息指的是内容，这些内容可以是新闻、视频、图片等，所呈现的样式多为列表或卡片。</p>
+<p>流指的是瀑布流，可以无限滑动浏览。</p>
+<p>所以信息流就是可以无限滑动浏览内容信息。</p>
+<p>信息流的样式的好坏，会直接影响到信息的展现效率和点击率，从而影响到用户获取信息的效率和整体阅读时长。</p>
+<p>下图为今日头条首页推荐频道的信息流：</p>
+<p><span class="img-zoom"><img alt="用超多产品，解构今日头条设计背后的逻辑" class="alignnone size-full wp-image-389909" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jg-20200922-1.jpg" width="943" height="800" /></span></p>
+<p>将信息流样式进行简单分类，使用最多的四种样式为纯文、左文右图、短内容、大图视频。如下图所示：</p>
+<p><span class="img-zoom"><img alt="用超多产品，解构今日头条设计背后的逻辑" class="alignnone size-full wp-image-389910" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jg-20200922-2.jpg" width="896" height="581" /></span></p>
+<p>纯文样式用于新闻中没有图片的情况，当文章中没有图片时，这时候采用改样式。列表含有：标题、来源、评论数、发布时间。</p>
+<p>对于含有图片时候，采用左文右图样式。目前新闻对于含有图片的列表样式，一般有3种分别为：左文右图、左图右文和三图。</p>
+<p>左图右文的样式，强化图片，弱化标题。对于新闻资讯来说，图片无法准确的表达其新闻资讯的内容，所以这种样式目前没什么产品使用。</p>
+<p>目前市面上绝大部分产品都采用左文右图，例如今日头条、网易新闻、腾讯新闻、新浪新闻等。只有是搜狐新闻采用左图右文。</p>
+<p><span class="img-zoom"><img alt="用超多产品，解构今日头条设计背后的逻辑" class="alignnone size-full wp-image-389923" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jg-20200922-15.jpg" width="882" height="162" /></span></p>
+<p>三图则通过图片吸引用户点击查看，更加通过图片引导用户点击，好处是可以提升点击率，但是整个信息流显得乱，影响用户阅读。</p>
+<p><span class="img-zoom"><img alt="用超多产品，解构今日头条设计背后的逻辑" class="alignnone size-full wp-image-389911" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jg-20200922-3.jpg" width="896" height="259" /></span></p>
+<p>和网易相比，头条信息流阅读起来更加舒服，视觉压力减少，这是基于今日头条三图样式占比很少，如下图所示，网易新闻信息流插入三图样式导致整个信息流杂乱。</p>
+<p><span class="img-zoom"><img alt="用超多产品，解构今日头条设计背后的逻辑" class="alignnone size-full wp-image-389912" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jg-20200922-4.jpg" width="877" height="800" /></span></p>
+<p>对比下网易新闻和今日头条信息流样式，如下图所示：</p>
+<p>纯文，今日头条的标题颜色更深，网易的相对而言淡一些。头条的列表高度比网易的高，这意味着，头条的屏幕展示条数比网易新闻的少，但是整体的空间感和留白呼吸感更舒服。同时今日头条含有发布时间，使得用户观看新闻资讯时，能够感知新闻的实时性。</p>
+<p><span class="img-zoom"><img alt="用超多产品，解构今日头条设计背后的逻辑" class="alignnone size-full wp-image-389913" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jg-20200922-5.jpg" width="888" height="187" /></span></p>
+<p>左文右图，头条的列表比网易的要高一些，对比来看，头条的标题更加明显，图片含有圆角半径，使得头条整体看上去更舒服。</p>
+<p><span class="img-zoom"><img alt="用超多产品，解构今日头条设计背后的逻辑" class="alignnone size-full wp-image-389914" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jg-20200922-6.jpg" width="888" height="187" /></span></p>
+<p>大图视频，两者的区别不大，依然是标题文字颜色、封面圆角和发布时间的差异性。</p>
+<p><span class="img-zoom"><img alt="用超多产品，解构今日头条设计背后的逻辑" class="alignnone size-full wp-image-389915" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jg-20200922-7.jpg" width="888" height="371" /></span></p>
+<p><strong>小结：</strong></p>
+<p>头条流整体的空间感、留白，标题颜色对比做的比较好。</p>
+<p>留白相对于网易更多一些，相同的屏幕空间，展示的内容信息会少一点，屏幕展示效率会低一些。但用户在阅读过程中舒适度更强，同样的情况下用户的阅读时长会变长。</p>
+<h4><span class="auto_menu">信息流分发</span></h4>
+<p>什么是信息流分发？通过一定的设计策略，将用户的流量合理的分配到其他各个地方，从而达到产品的设计目标，促进流量利用最大化。提升流量最大限度的转化，获得更大的商业化价值。</p>
+<p>今日头条的信息流主要包含5个模块：置顶模块、资讯列表、广告模块、短内容、其他功能模块的卡片入口。如下图所示：</p>
+<p><span class="img-zoom"><img alt="用超多产品，解构今日头条设计背后的逻辑" class="alignnone size-full wp-image-389916" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jg-20200922-8.jpg" width="1080" height="2873" /></span></p>
+<p>推荐流顶部的置顶内容，最多置顶两条，这里是因为相关政策原因。</p>
+<p>在正常信息流第一条之后，插入广告，为平台做商业化营收。之后就会根据用户的阅读习惯，给用户推荐信息内容，并时不时的插入广告等。</p>
+<p>今日头条没有编辑运营，所以几乎所有的新闻都来自于机器算法。少了编辑人员的人工运营，使得今日头条有巨量的内容按照不同用户的阅读习惯推荐用户不同的内容。</p>
+<h4><span class="auto_menu">搜索栏</span></h4>
+<p>在新闻信息流产品里，搜索栏所承接的使用场景主要有两个。一个是提供搜索新闻功能，通过关键词对当前或过去的新闻进行搜索。</p>
+<p>另一个是在搜索模块提供热搜新闻，提供用户阅读。</p>
+<p>那么如何提升搜索栏的点击次数。今日头条将热搜新闻以提示语的形式展示在搜索栏滚动，吸引用户。同时为了更大限度的展示新闻条数，采用一排两个的设计，保证最大程度的提升点击率。</p>
+<p><span class="img-zoom"><img alt="用超多产品，解构今日头条设计背后的逻辑" class="alignnone size-full wp-image-389917" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jg-20200922-9.jpg" width="1009" height="800" /></span></p>
+<p>用户点击搜索框之后，搜索框里面内置第一条热搜关键词。用户可通过键盘上的搜索，进行搜索。也可以点击搜索栏下方的两个热搜新闻进行搜索查看。</p>
+<h4><span class="auto_menu">短视频</span></h4>
+<p>视频标题内置于播放器中，这样的好处可以减少卡片高度，让视频曝光量提升，缺点是用户如果想看视频标题介绍时，则需要点击下播放器，标题才能再次出现。</p>
+<p><span class="img-zoom"><img alt="用超多产品，解构今日头条设计背后的逻辑" class="alignnone size-full wp-image-389918" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jg-20200922-10.jpg" width="964" height="800" /></span></p>
+<p>标题置于播放器里面，头条可以展示2.5条，而好看视频将标题置于外面只能展示2条，如下图所示：</p>
+<p><span class="img-zoom"><img alt="用超多产品，解构今日头条设计背后的逻辑" class="alignnone size-full wp-image-389919" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jg-20200922-11.jpg" width="922" height="800" /></span></p>
+<p>对于广告业务来说，收入的一个重要指标则是广告曝光量，为了提升广告的收入，则必须降低视频高度，使得广告曝光效率得到提升，以此提升收入，所以头条将标题放置于播放器里面符合商业目标，但是不符合用户目标。</p>
+<h4><span class="auto_menu">小视频</span></h4>
+<p>小视频的布局设计大致有两种，一种是抖音式布局，采用头像和操作项位于右侧。这样的好处是，视频的互动量很明显的展示出来，可引导用户互动。但对视频的内容有一定遮挡影响。</p>
+<p>另一种是好看视频式布局，将头像昵称、操作项放在底部，弱化视频的互动数据。让用户专注于视频内容。</p>
+<p><span class="img-zoom"><img alt="用超多产品，解构今日头条设计背后的逻辑" class="alignnone size-full wp-image-389920" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jg-20200922-12.jpg" width="933" height="800" /></span></p>
+<p>今日头条的小视频采用和抖音一样的布局。头像和操作项放于右侧。但是为了引导用户评论，在界面底部加入了输入框，引导用户评论，为了让用户更加方便的看评论。上滑手势变成了调起起评论。</p>
+<p><span class="img-zoom"><img alt="用超多产品，解构今日头条设计背后的逻辑" class="alignnone size-full wp-image-389921" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jg-20200922-13.jpg" width="920" height="800" /></span></p>
+<h4><span class="auto_menu">短内容流</span></h4>
+<p>推荐流里面的短内容（微头条），点击进入短内容feed流。而非短内容详情页。用户如果想看详情，那么需要用户再次点击。</p>
+<p><span class="img-zoom"><img alt="用超多产品，解构今日头条设计背后的逻辑" class="alignnone size-full wp-image-389922" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jg-20200922-14.jpg" width="959" height="800" /></span></p>
+<p>这种设计明显体验不好，估计产品为其他短内容导流。这样的交互设计，可以使得整体的短内容流的曝光量提升好几倍。</p>
+<p>这种做法牺牲了体验，用户如果需要看详情，则需要连续点击两次。这是为了业务指标作出牺牲的设计。</p>
+<h4><span class="auto_menu">后记</span></h4>
+<p>以上是关于今日头条的一些模块简单分析和解构，后续如果有深度解析，我会继续更新，敬请期待。</p>
+<p>[link https://www.uisdc.com/information-noise-reduction]</p>
+<p>欢迎关注作者的微信公众号：「Echo的设计笔记」</p>
+<p><span class="img-zoom"><img alt="用超多产品，解构今日头条设计背后的逻辑" class="alignnone size-full wp-image-268377" src="https://image.uisdc.com/wp-content/uploads/2018/04/uisdc-uxechoqr.jpg" alt="Android和iOS有哪些设计差异点？来看高手总结的7个不同！" /></span></p>
+➜3D图标越来越流行，UI设计领域要变天了？
+https://www.uisdc.com/3d-ui	63082
+<h4><span class="auto_menu">UI视觉的变革</span></h4>
+<p>在2020 年的苹果全球开发者大会（WWDC），苹果发布了新的 macOS 11（又名 Big Sur）。其中在UI视觉方面macOS Big Sur 系统最大的变化就是图标上， Big Sur更新了很多新设计风格的应用图标。</p>
+<p><span class="img-zoom"><img alt="3D图标越来越流行，UI设计领域要变天了？" class="alignnone size-full wp-image-389718" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ui-20200921-1.jpg" width="1080" height="637" /></span></p>
+<p>关于 Big Sur 的新图标的讨论很多，很多都在激烈争论。人们对苹果公司没有将完全扁平设计引入 Mac 感到松了一口气，但分歧并未停止。有些人认为这引领一种新的图标表现方式，而有些人则认为这是丑到了天际。</p>
+<p><span class="img-zoom"><img alt="3D图标越来越流行，UI设计领域要变天了？" class="alignnone size-full wp-image-389719" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ui-20200921-2.jpg" width="1125" height="600" /></span></p>
+<p><span class="img-zoom"><img alt="3D图标越来越流行，UI设计领域要变天了？" class="alignnone size-full wp-image-389720" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ui-20200921-3.jpg" width="1125" height="600" /></span></p>
+<p>但苹果的设计就是这样，不管你喜不喜欢，过一段时间他总会流行起来。就像iPhone11刚面世时，背面的摄像头组被无数人吐槽一样，而现在这个设计已经成了高端机的标板。</p>
+<p>大家还能想起来UI扁平化设计已经流行了多少年了吗？</p>
+<p>从2013年6月11日苹果发布iOS7算起，现在已经将近8年了，这8年时间扁平化像飓风一般席卷了整个UI设计圈，一夜间几乎所有的APP UI都被拍扁了。</p>
+<p><span class="img-zoom"><img alt="3D图标越来越流行，UI设计领域要变天了？" class="alignnone size-full wp-image-389729" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ui-20200921-13.gif" width="320" height="213" /></span></p>
+<p>其中以Instagram的换标作为扁平盛行时代的里程碑</p>
+<p>但扁平化设计的确已经一统江湖太久了，人们似乎已经有点厌倦了。其实设计风格就是这样，并没有绝对的好与不好，只要审美不疲劳，就可以继续流行下去，至于流行多久我们经常会用一个词去形容&#8212;耐看度。</p>
+<blockquote><p>好看：乍见之欢；耐看：久处不厌</p></blockquote>
+<p>扁平化带给我们的是画面的轻盈和设计的高效率，但是缺点也是明显的，场景表现过于单一的问题，设计感体现较为有限，于是很多设计师都在尝试用新的设计风格替代或者进化现在的扁平化设计风格，今天我们就来探讨一下新拟物背景下3D与平面的结合设计，能在UI中擦出什么样的火花。</p>
+<h4><span class="auto_menu">以前的拟物风格</span></h4>
+<p><span class="img-zoom"><img alt="3D图标越来越流行，UI设计领域要变天了？" class="alignnone size-full wp-image-389721" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ui-20200921-5.jpg" width="780" height="530" /></span></p>
+<p>△ 2014年我的作品-Cache：<a href="https://www.zcool.com.cn/work/ZMjY1OTEwMA==.html">https://www.zcool.com.cn/work/ZMjY1OTEwMA==.html</a></p>
+<p>现在这样的风格会被我们称之为重度拟物风格，他不好看了？技术落后了吗？当然不是！只是目前不流行了！</p>
+<p>他的特点是强调光影对比与物理质感，色彩都会比较偏“暗”，而且伴随设计的往往是难和慢！刻画一个细节需要很久，在强调设计效率组件化的今天，这种费时又难学的设计方法必然不会成为主流。</p>
+<p>当前的UI流行趋势是强调高饱和的色彩搭配（在没有光影细节之下也只有色彩可以玩了），这种风格明显也不符合趋势，被“淘汰”也就难免了。</p>
+<p>从设计角度上解析，图标主要是由四方面构成：构图+光影+色彩+纹理</p>
+<p><span class="img-zoom"><img alt="3D图标越来越流行，UI设计领域要变天了？" class="alignnone size-full wp-image-389722" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ui-20200921-6.jpg" width="900" height="273" /></span></p>
+<p>而拟物风格图标在这四方面更加强调构图、光影和纹理，而色彩则是更多去搭配纹理质感，所以你看到多数拟物风格图标在质感上很棒，但是色彩却没有那么丰富。</p>
+<h4><span class="auto_menu">新的拟物风格</span></h4>
+<p>说到新的拟物风格，这只是一个概念，也有称之为轻拟物，轻偏平，这里并没有通用的称呼和预设的设计方法，一切的UI设计风格都是为产品本身服务，如果新的设计风格能让产品整体体验得到“提升”，哪怕这种提升只是成功获取到了用户的注意力，那这个设计就是有价值的。</p>
+<p><span class="img-zoom"><img alt="3D图标越来越流行，UI设计领域要变天了？" class="alignnone size-full wp-image-389731" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-bc-20200922-88.png" width="900" height="90" /></span></p>
+<p>所以当下如果你的产品中想要吸引目光就要有点与众不同的东西，要么是独门的功能，要么就是吸晴的设计。</p>
+<p>显然扁平的彩色图标现在已经达不到这个效果了，而以前的拟物又显得有点过时，在这种时代背景下，新的风格必然就会被碰撞出来。</p>
+<p>于是乎我们就会看到以下的一些大厂“创新”，你不止能看到轻拟物设计，还能看到“实物”设计&#8230;&#8230;</p>
+<p><span class="img-zoom"><img alt="3D图标越来越流行，UI设计领域要变天了？" class="alignnone size-full wp-image-389723" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ui-20200921-7.jpg" width="900" height="481" /></span></p>
+<p>不得不说，各位设计师们还真是拼了&#8230;</p>
+<p>“哪怕这种提升只是成功获取到了用户的注意力，那这个设计就是有价值的。”没毛病！各位加油！</p>
+<p>当然苹果BigSur带给我们的图标设计创新更加有趋势意义，这种3D+平面的设计组合方法更加能给我们一些设计启迪和思考，并且这种3D图标与之前的拟物风格有着明显的视觉区别</p>
+<p><span class="img-zoom"><img alt="3D图标越来越流行，UI设计领域要变天了？" class="alignnone size-full wp-image-389724" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ui-20200921-8.jpg" width="600" height="367" /></span></p>
+<p>我用3D重构了一个计算器icon，以此为例来进行分解，如下：</p>
+<p><span class="img-zoom"><img alt="3D图标越来越流行，UI设计领域要变天了？" class="alignnone size-full wp-image-389725" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ui-20200921-9.jpg" width="661" height="800" /></span></p>
+<p>与2D设计方法设计图标一致，都是先勾画图形（建模），然后填色、加材质和灯光，但不同的是在3D环境下，这一切都比2D环境下简单了，而且视觉效果更佳，整体画面感更佳立体，质感更加饱满，并且根据渲染器的参数调节和材质质感的不同，即使是在同一模型下，也能制造出很多种不同的视觉体验。</p>
+<p><span class="img-zoom"><img alt="3D图标越来越流行，UI设计领域要变天了？" class="alignnone size-full wp-image-389726" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ui-20200921-10.jpg" width="900" height="573" /></span></p>
+<p>图标背板的选择上，由于选择了3D作为主体表现，3D背板过于抢视线，图标为了突出主体而非背景，建议使用2D平面背板与3D前景图标进行结合。</p>
+<p><span class="img-zoom"><img alt="3D图标越来越流行，UI设计领域要变天了？" class="alignnone size-full wp-image-389727" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ui-20200921-11.jpg" width="552" height="800" /></span></p>
+<p>3D设计图标的确有一些天然的优势，特别是在质感和光感的表达准确度上，是绝对超过2D的。</p>
+<p>但是2D图标在一些风格的设计也是很难替代的，比如线性图标和渐变风格图标。</p>
+<h4><span class="auto_menu">常见的 ICON 用3D重构展示</span></h4>
+<p><span class="img-zoom"><img alt="3D图标越来越流行，UI设计领域要变天了？" class="alignnone size-full wp-image-389728" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ui-20200921-12.jpg" width="1244" height="800" /></span></p>
+<h4><span class="auto_menu">观点总结</span></h4>
+<p>3D设计的确可以提升UI整体的视觉氛围，并且现在在一些APP中已经可以看到小范围3D案例了（比如支付宝），但是多是以插画的形式出现，其实与产品UI还是有一定距离的。</p>
+<p>未来3D设计一定会是UI中大展身手，但是目前的常见的3D设计软件实在是太庞大了，我与许多3D行业的同行聊天的时候，大家普遍的认知是现在的3D软件（包括C4D）的实际最佳场景依然是动画设计，UI的中的3D属于非常轻量级的，用现在主流的3D设计软件做UI应用案例，有点用巡航导弹打蚊子的感觉，而且这个蚊子还是距离一米以内。这有点像当年的PS来做UI，虽然可以完成但是效率不高，学习曲线也高，于是Sketch和Figma这样的产品顺理成章的取代了PS在UI界的地位。</p>
+<p>当然趋势不可避免，效率也会提升，且方法总是有的，降低门槛，提升效率一直是我们的追求！</p>
+<p>关于在UI中的3D快速设计方法，将会在以后的文章中更新，欢迎大家关注。</p>
+<p>[link https://www.uisdc.com/quick-reading-weekly-vol54]</p>
+<p>欢迎关注作者的微信公众号：</p>
+<p><span class="img-zoom"><span class="img-zoom"><img alt="3D图标越来越流行，UI设计领域要变天了？" class="alignnone size-full wp-image-172702" src="https://image.uisdc.com/wp-content/uploads/2016/01/bigdqr-2.jpg" alt="收藏起来！设计大咖牛mo王的私人推荐书单" width="180" height="180" /></span></span></p>
