@@ -23,3 +23,45 @@ http://www.geekpark.net/news/266457	4434
 <img class="uploaded-img" src="https://imgslim.geekpark.net/uploads/image/file/f7/1f/f71ff77ba5f54dfcd578f98394017512.jpg" max-width="100%" width="auto" height="auto">
 </div>
 <p>世卫组织总干事谭德塞表示，候选疫苗越多，得到安全有效疫苗的几率就越高，这不是慈善事业，而是符合每个国家的最大利益。结束新冠肺炎大流行和加速实现全球经济复苏的最快方式，是确保所有国家都有人能接种新冠疫苗，而不是一些国家的所有人都接种新冠疫苗。</p><p>世卫组织首席科学家苏米娅·斯瓦米纳坦称，中国的新冠疫苗研发项目非常活跃，已有数个候选疫苗处于临床试验领先阶段，世卫组织对中国的新冠疫苗很感兴趣，一直在密切关注，一些疫苗在现阶段临床试验中已被证明有效。（来源：央视网）</p><p><br></p>
+➜都 2020 年了，iOS 14 还能把「桌面小组件」玩出什么花样？
+http://www.geekpark.net/news/266481	27488
+<p>iOS 14 最大的变化之一，就是支持桌面小组件了。之前的小组件只能在今天视图，也就是负一屏中添加，自由度有限，而把范围扩展到桌面后，小组件的能力、形态都有了很大的变化。有的人可能会说，「也就比 Android 落后了十年」，我一开始也这样想。不过苹果「迟到」也不是第一次了，「后来居上」的情况也不少见，所以只凭推出时间下判断还是太早。<br></p><p>随着&nbsp;<a href="https://www.geekpark.net/news/266198" target="_blank">iOS 14 正式版</a>的推出，首批支持桌面小组件的第三方 App 也都陆续出现。经过几天的体验，又研读了苹果提供的开发文档，我发现苹果的小组件与安卓还是有很大的不同，其中不乏一些难以发现的「小惊喜」。</p><p><br></p><h2><p>外观统一，对设计美感有要求</p></h2><p>比较明显的不同是在外观上，如果粗略评价为「苹果的小组件就是比安卓的好看」，可能会被人认为是「无脑吹」。不过如果你仔细看了苹果对于小组件的<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/widgets/" target="_blank">设计规范</a>，就会发现这种「和谐」是有道理的。</p><div class="image-desc" style="text-align: center; color: #333;">
+<img class="uploaded-img" src="https://imgslim.geekpark.net/uploads/image/file/ef/88/ef887542ca435b19f777d0239a1b53ae.jpg" max-width="100%" width="auto" height="auto">
+</div>
+<p>苹果的桌面小组件一共大中小三种尺寸，最小的占四个图标空间，它不能像安卓一样随意更改，统一采用圆角矩形设计，与图标一致。</p><div class="image-desc" style="text-align: center; color: #333;">
+<img class="uploaded-img" src="https://imgslim.geekpark.net/uploads/image/file/d6/7f/d67f0e70f58c41bb25b1b998262d5bff.gif" max-width="100%" width="auto" height="auto">
+</div>
+<p>苹果在小组件的颜色上要求大胆，能体现品牌，但不能影响内容的展现。内容信息要求简洁明确，不能有太多混杂元素。小组件中如果需要放置功能标识，应该统一显示在右上角，并且不能出现与 App 图标、名称相同的元素。</p><div class="image-desc" style="text-align: center; color: #333;">
+<img class="uploaded-img" src="https://imgslim.geekpark.net/uploads/image/file/01/b5/01b5bc6abb163b8c0c7e0386bbd39e34.png" max-width="100%" width="auto" height="auto">
+</div>
+<p>更多就不列举了，总之苹果的整套规则十分详尽，并对设计美感有较为明确的要求。这也是苹果软硬件结合的优势，之后会多次讲到，「有限制的自由才是真正的自由」。<br></p><p><br></p><h2><p>将 App 内容投射到桌面</p></h2><p>除了外观上严格且细致的要求，苹果的桌面小组件在理念上也与安卓有着很大不同。它的理念是「将 App 内容投射到桌面」，重要的是内容而不是形式。苹果一再强调，「小组件不是迷你 App」，所以它只做展示，不能操作和滑动。</p><p>具体说来，小尺寸的小组件整体就相当于一个按钮，点击任意一处都是进入到 App 中，中尺寸和大尺寸的小组件可以进入不同区域（比如音乐小组件的专辑封面，提醒事项小组件的每个事项），但不能直接完成操作。</p><div class="image-desc" style="text-align: center; color: #333;">
+<img class="uploaded-img" src="https://imgslim.geekpark.net/uploads/image/file/48/f0/48f0ebda679105c7766ea81fab6f8198.gif" max-width="100%" width="auto" height="auto">
+</div>
+<p>安卓小组件则不同，它既可以做信息展示、信息集合，也能直接作为操作按钮，用户可以滑动并点击，在不进入 App 的情况下完成一些操作。</p><div class="image-desc" style="text-align: center; color: #333;">
+<img class="uploaded-img" src="https://imgslim.geekpark.net/uploads/image/file/58/44/5844a2fde9aca8661325795bf8d06b85.png" max-width="100%" width="auto" height="auto">
+</div>
+<p>不过苹果也在负一屏保留了原来的小组件形式，是可以直接操作的。</p><div class="image-desc" style="text-align: center; color: #333;">
+<img class="uploaded-img" src="https://imgslim.geekpark.net/uploads/image/file/15/0d/150d726fba9b2256dbca46bdd94e2476.jpg" max-width="100%" width="auto" height="auto">
+</div><p><br></p><h2>让 App 内容更容易触达用户</h2><p>看起来苹果是想把桌面小组件与负一屏组件区别开。用一个类比，桌面小组件有点像 3D Touch，3D Touch 是把 App 内部的控制选项拿出来，不进入 App 进行一些操作。桌面小组件则是把 App 中的内容拿出来，不用进入 App 看到信息。</p><div class="image-desc" style="text-align: center; color: #333;">
+<img class="uploaded-img" src="https://imgslim.geekpark.net/uploads/image/file/35/c6/35c6917de52f6408b4612f01dbe98148.jpg" max-width="100%" width="auto" height="auto">
+</div>
+<p>苹果上的时钟、日历图标大家应该很熟悉吧，直接在图标上显示时间日期，其实这就是最简易的桌面小组件。</p><div class="image-desc" style="text-align: center; color: #333;">
+<img class="uploaded-img" src="https://imgslim.geekpark.net/uploads/image/file/b9/6e/b96efb4692b236eabcfae46eca02dacb.gif" max-width="100%" width="auto" height="auto">
+</div>
+<p>苹果的桌面小组件是 App 内容的投射，理解了这个，小组件就能衍生出很多用法。比如你可以把天气中的城市、空气指数信息同时放到桌面，它们都来自一个 App，但展示不同内容。之前是需要点进去手动切换的，现在一目了然。</p><div class="image-desc" style="text-align: center; color: #333;">
+<img class="uploaded-img" src="https://imgslim.geekpark.net/uploads/image/file/93/1f/931f9c5963d64dd85ce98481e65bd0d9.jpg" max-width="100%" width="auto" height="auto">
+</div>
+<p>我觉得未来更多 App 图标变成动态，或者直接用一部分桌面小组件代替图标，都是有可能的，App 图标可以隐藏在 App 资源库中。不过目前的问题是苹果的桌面管理实在太差，添加小组件会把原本的桌面布局打乱，手动整理又是个非常复杂的过程。<br></p><p><br></p><h2><p>会「自动进化」的智能叠放</p></h2><p>苹果桌面小组件的另一大特色，就是智能叠放。简单来说就是把多个小组件叠在一起，系统会根据场景，将你要用到的小组件展示在最上端。举个例子，早上起来看天气，中午看附近美食，晚上看路况，理想状况下，你不需要手动去找对应的 App、小组件，它会自动展示给你。</p><div class="image-desc" style="text-align: center; color: #333;">
+<img class="uploaded-img" src="https://imgslim.geekpark.net/uploads/image/file/bd/78/bd7848a68f1c8e43018804073c2984ca.gif" max-width="100%" width="auto" height="auto">
+</div>
+<p>智能叠放的规则会根据时间、地点、日程等信息来变化，并且能学习每个人的使用习惯，也就是说它不是一成不变的。听起来是不是有点像 Siri 建议？其实 Siri 建议在小组件中也有了不同的形态，直接以小组件的方式显示在桌面，看起来和图标一样，但是会动态调整。让用户直接触达想要的服务，两者在理念上的确是相通的。</p><div class="image-desc" style="text-align: center; color: #333;">
+<img class="uploaded-img" src="https://imgslim.geekpark.net/uploads/image/file/b5/d7/b5d791b7e71f848d50ba0726a2b17d3f.jpg" max-width="100%" width="auto" height="auto">
+</div>
+<p>苹果在底层提供了 API，开发者可以设定自己的 App，在对应条件下与 Siri 建议、智能叠放联动。<br></p><p>智能叠放还有一个隐藏的使用方式，就是你可以自定义叠放哪些小组件，由此搭配一个属于自己的规则。举个例子，比如把地图、大众点评、打车应用叠放在一起，创建一个出去吃饭的场景。当然智能叠放的推荐规则，不像快捷指令、自动化那样，是确定的因果关系。它需要学习，重点是智能、无感，使用方式还是不同的。</p><div class="image-desc" style="text-align: center; color: #333;">
+<img class="uploaded-img" src="https://imgslim.geekpark.net/uploads/image/file/bc/da/bcda1baaf8daf57a93f6fa2624f736ed.jpg" max-width="100%" width="auto" height="auto">
+</div><p>
+<br>
+</p><p class="image-1600831027262"></p><h2>桌面小组件，可能会迎来「文艺复兴」</h2><p>目前苹果已经在 App Store 中提供了支持桌面小组件的 App 专区，展示信息类的比较多，比如天气、倒计时等，信息集合类的有备忘、待办等。另外，还有一些专为桌面小组件而生的 App 出现，比如 OneWidget、Widgetsmith，它们本身的 App 不提供其它服务，只是作为创建小组件的工具。</p><div class="image-desc" style="text-align: center; color: #333;">
+<img class="uploaded-img" src="https://imgslim.geekpark.net/uploads/image/file/6e/84/6e84199569cabbfd87cf78a1e1966123.jpg" max-width="100%" width="auto" height="auto">
+</div>
+<p>虽然是个旧功能，不过由苹果这个巨头来推动的话，桌面小组件可能迎来一次「文艺复兴」。旧 App 开始重新重视小组件，苹果已经铺好了路，安卓那边的问题只是统一接口。国内安卓生态在智能化上的推进可一点都不比苹果差，统一生态方面之前也有互传联盟、统一推送联盟的例子。甚至会因此出现一批新 App，专为小组件而生，就像前面讲的一样。智能叠放是个相当有潜力的功能，触达用户的方式会被完全改变，谁能把握机会就有待观察了。<br></p><p>另外别忘了，苹果的桌面小组件还同时支持 iOS、iPadOS、macOS，这三者之前的关系越来越紧密，意味着开发者只需要简单地适配，就能方便地在苹果全平台推行自己的小组件。总之，桌面小组件（至少是苹果的桌面小组件）未来可期。</p><p><br></p><p>本文由极客公园 GeekPark 原创发布，转载请添加极客君微信 geekparker。</p>
