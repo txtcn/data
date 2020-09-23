@@ -1,3 +1,253 @@
+➜让用户向左滑还是向右？用超多案例帮你解答这个问题！
+https://www.uisdc.com/swipe-left-and-right	59635
+<p>编辑导语：由于手机尺寸的限制，我们在进行内容浏览时会进行一些滑动操作，不同类型的内容操作也各不相同，比如图片会选择左右滑动操作，文字会选择上下滑动；本文就介绍了在设计中的“左”和“右”的操作，我们一起来看一下。</p>
+<h4><span class="auto_menu">左右横跳的泳道</span></h4>
+<p>最近经常在人人视频上看电视剧，发现人人视频在设计上有个很有意思的点。</p>
+<p>它的电影页中有很多推荐电影片单，每个片单里有5-12部电影；碍于手机尺寸，用户只能看到3部电影；如果你对这个片单里的电影比较感兴趣，可以滑动查看更多的电影——这种横向滑动的设计又被称之为“泳道”。</p>
+<p><span class="img-zoom"><img alt="让用户向左滑还是向右？用超多案例帮你解答这个问题！" class="alignnone size-full wp-image-389637" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sj-20200921-1.jpg" width="800" height="649" /></span></p>
+<p>那么问题来了，究竟向哪个方向滑动呢？</p>
+<p>或许你会觉得这是一个送分题，肯定是左滑啊；没错，你去查看100个APP，这种水平横滑的泳道，99个都是左滑的；但是人人视频就是那唯一的特例，它是左滑和右滑相互组合的。</p>
+<p><span class="img-zoom"><img alt="让用户向左滑还是向右？用超多案例帮你解答这个问题！" class="alignnone size-full wp-image-389649" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sj-20200921-13.gif" width="600" height="525" /></span></p>
+<p>前一个片单是左滑，后一个就是右滑；反之，前一个片单是右滑，后一个就是左滑。</p>
+<p>第一次碰到这种设计，我很奇怪：为什么要做出这种挑战用户固有认知的调整？后来思考了一下，开始理解他们的做法。</p>
+<p>当用户左滑查看电影时，浏览完最后一部电影，用户的视线是停留在在屏幕右侧；如果下一个片单依然采用左滑，那么用户的视线需要先移动到屏幕左侧，再移动到右侧——这个路线就是Z型浏览模式；而人人视频紧接着的是右滑，第一个视频直接从右侧开始，避免了用户视线的转移。</p>
+<p><span class="img-zoom"><img alt="让用户向左滑还是向右？用超多案例帮你解答这个问题！" class="alignnone size-full wp-image-389638" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sj-20200921-2.jpg" width="800" height="557" /></span></p>
+<p>人人视频的这种方案，让我想起夸克浏览器——用户在夸克浏览器里观看视频，如果点击屏幕的位置靠左，那么菜单就会出现在左边；如果点击的位置靠右，菜单就会出现在右边；这样的处理方式，可以缩短用户手指的移动距离。</p>
+<p><span class="img-zoom"><img alt="让用户向左滑还是向右？用超多案例帮你解答这个问题！" class="alignnone size-full wp-image-389650" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sj-20200921-14.gif" width="640" height="360" /></span></p>
+<p>一个是缩短视线移动距离，一个是缩短手指移动距离。</p>
+<p>我无法给出一个结论，这种左右横跳的交互方式是否合理；从我个人的角度来说，第一次使用不是很习惯，学习成本还是比较高的。</p>
+<h4><span class="auto_menu">左还是右？</span></h4>
+<p>设计中有很多这样“左、右”的争论。最经典的就是：对话框的确定按钮到底是在左边还是右边？这个话题被讨论了无数次。</p>
+<p>那么不管是左还是右，我们到底在争论什么？左和右代表了什么？</p>
+<p>我们习惯的浏览方向是由左至右，那么左代表了用户视线的起点。</p>
+<p>我们经常说用户的浏览模式是Z型的，但是在移动端界面中，左边为信息区，右边为操作区。</p>
+<p>用户在快速浏览页面的模式下，根据左边的信息区判断自己是否对这条内容感兴趣，如果感兴趣才进行操作；所以更多的情况下，用户的浏览模式不是Z型，而是L型的。</p>
+<p><span class="img-zoom"><img alt="让用户向左滑还是向右？用超多案例帮你解答这个问题！" class="alignnone size-full wp-image-389639" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sj-20200921-3.jpg" width="800" height="620" /></span></p>
+<p>iOS 11与iOS 10相比，我们可以发现页面标题、搜索框文案和内容都是改成放在左边。</p>
+<p><span class="img-zoom"><img alt="让用户向左滑还是向右？用超多案例帮你解答这个问题！" class="alignnone size-full wp-image-389640" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sj-20200921-4.jpg" width="800" height="726" /></span></p>
+<p>整体的视觉动线由中间改成了左边，用户在快速浏览过程中视线不需要发生偏移。</p>
+<p><span class="img-zoom"><img alt="让用户向左滑还是向右？用超多案例帮你解答这个问题！" class="alignnone size-full wp-image-389641" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sj-20200921-5.jpg" width="800" height="726" /></span></p>
+<p>右代表着更好的易用性。因为在移动端，用户更习惯单手握持手机进行操作；而我们大部分人都是右撇子。</p>
+<p>谷歌的MD设计中的浮动按钮，是位于界面右侧；微信的浮窗也是位于界面右侧，就是为了方便用户操作。</p>
+<p><span class="img-zoom"><img alt="让用户向左滑还是向右？用超多案例帮你解答这个问题！" class="alignnone size-full wp-image-389642" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sj-20200921-6.jpg" width="755" height="644" /></span></p>
+<p>看到这里或许你会理解为什么“对话框的确定按钮在左边还是右边？”这个话题经久不衰了吧。</p>
+<p>因为左边和右边背后都有理论支撑——左代表着离你的眼睛更近，右代表着离你的手更近。</p>
+<p>我们再来设想一个场景，针对左撇子用户，界面设计应该怎么调整；用户的惯用手是左手，那是不是要做镜面反转，把操作区移动到左边呢？读者中肯定有左撇子用户，你们会喜欢这种布局吗？</p>
+<p><span class="img-zoom"><img alt="让用户向左滑还是向右？用超多案例帮你解答这个问题！" class="alignnone size-full wp-image-389643" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sj-20200921-7.jpg" width="800" height="651" /></span></p>
+<h4><span class="auto_menu">流量分发</span></h4>
+<p>当然也会有一些设计方案在“左/右”的选择上没这么纠结，例如在微博、抖音这类社交产品中，其主页的“推荐”栏目永远在“关注”栏目的左边。</p>
+<p><span class="img-zoom"><img alt="让用户向左滑还是向右？用超多案例帮你解答这个问题！" class="alignnone size-full wp-image-389644" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sj-20200921-8.jpg" width="800" height="689" /></span></p>
+<p>以微博为例，“关注”和“推荐”在信息架构上是类似的，下面都有一些细分类目：“关注”里有不同的分组，“推荐”里也有不同内容类别，例如热门、同城、榜单等。</p>
+<p>但是“关注”用户需要点击下拉框才能筛选，而“推荐”里用户直接右滑就可以切换不同的内容类别；如果把“关注”里的分组也改成滑动切换的样式，那么必然会降低“推荐”栏目的流量。</p>
+<p><span class="img-zoom"><img alt="让用户向左滑还是向右？用超多案例帮你解答这个问题！" class="alignnone size-full wp-image-389645" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sj-20200921-9.jpg" width="800" height="720" /></span></p>
+<p>抖音也是类似的道理，因为用户左滑可以查看作者的主页，如果把推荐栏目放在左边，那么用户左滑就会进入关注栏目。</p>
+<p>引导用户进入已经关注的作者主页，相对来说意义不是很大；抖音的想法是——用户在刷推荐视频的时候，觉得这个视频很好玩，对这个视频的作者产生兴趣；用户可以直接滑动进入作者的主页，而不是需要点击头像才能进入主页。</p>
+<p><span class="img-zoom"><img alt="让用户向左滑还是向右？用超多案例帮你解答这个问题！" class="alignnone size-full wp-image-389646" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sj-20200921-10.jpg" width="800" height="720" /></span></p>
+<p>微博和抖音的“左关注，右推荐”的模式都是为了往推荐栏目引流。</p>
+<p>社交产品追求的是用户可以在这个产品里建立更多关系链，关系链是社交产品的护城河；既然这个人你已经关注了，说明关系链已经形成，那就没有必要引流了。</p>
+<p>从这里我们也能看出，在考虑方案的时候，不仅仅要考虑交互易用性，更要着眼于流量分配——哪个方案的流量分配更符合你的诉求，哪个就是好的方案。</p>
+<p>甚至在很多时候，当交互易用性跟流量分配相冲突时，交互易用性是被牺牲的一方，因为流量代表了产品经理的KPI。</p>
+<p><span class="img-zoom"><img alt="让用户向左滑还是向右？用超多案例帮你解答这个问题！" class="alignnone size-full wp-image-389647" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sj-20200921-11.jpg" width="750" height="613" /></span></p>
+<p>最典型的例子就是知乎为了给答案底部的广告引流把左右滑动切换答案改成了上下滑动；当然，我们也不能批判知乎的这种行为。</p>
+<p>还是回到对话框的话题，“确定按钮到底在左边还是右边？”，最好的办法就是A/B测试；如果是一个引导用户安装APP的对话框，你就看“确定”按钮放在哪边可以带来更多的转化率。</p>
+<p><span class="img-zoom"><img alt="让用户向左滑还是向右？用超多案例帮你解答这个问题！" class="alignnone size-full wp-image-389648" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-sj-20200921-12.jpg" width="800" height="259" /></span></p>
+<p>这个A/B测试，搜狗输入法曾经做过，结果显示：确定按钮放在左边转化率更高，误操作率更低，操作平均时长也更短；那么我们是否可以说，以后“确定”按钮就放在左边了？</p>
+<p>当然不可以，因为这个测试是在安卓4.0时期进行的；安卓4.0之前的系统对话框的确定按钮是在左边的，4.0才改成右边——用户之前的操作习惯会影响测试结果。</p>
+<p>还有一个因素就是设备尺寸，手机尺寸现在越来越大，用户需要双手握持手机；那么在双手操作的模式下，手指可以全覆盖屏幕，那么右边的易用性就没那么高了。</p>
+<p>总之，同一个交互问题，在不同的设备，系统，时间和场景下，会有不同的答案。</p>
+<p>更多作者的文章：</p>
+<p>[link https://www.uisdc.com/apple-vs-google]</p>
+<p>[link https://www.uisdc.com/interactive-mode-change-by-apple]</p>
+<p>欢迎关注作者的微信公众号：「王M争」</p>
+<p><span class="img-zoom"><img alt="让用户向左滑还是向右？用超多案例帮你解答这个问题！" class="alignnone size-full wp-image-248545" src="https://image.uisdc.com/wp-content/uploads/2017/11/wangmicheal-1-1.jpg" alt="充满争议的磁贴设计：微软，请等一等你的用户！" width="180" height="180" /></span></p>
+➜如何提高创意设计能力？试试这个P4D训练法！
+https://www.uisdc.com/commercial-design	61217
+<p>本文通过实战案例，深度讲解商业海报设计中该如何进行创意思维设计，以及如何借助“P4D训练法”进行创意思维训练。</p>
+<p><span class="img-zoom"><img alt="如何提高创意设计能力？试试这个P4D训练法！" class="alignnone size-full wp-image-389556" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200919-1.jpg" width="1280" height="3163" /></span></p>
+<p><span class="img-zoom"><img alt="如何提高创意设计能力？试试这个P4D训练法！" class="alignnone size-medium wp-image-389557" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200919-2.jpg" width="1280" height="2717" /></span></p>
+<p><span class="img-zoom"><img alt="如何提高创意设计能力？试试这个P4D训练法！" class="alignnone size-medium wp-image-389558" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200919-3.jpg" width="1280" height="4066" /></span></p>
+<p><span class="img-zoom"><img alt="如何提高创意设计能力？试试这个P4D训练法！" class="alignnone size-medium wp-image-389559" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200919-4.jpg" width="1280" height="3046" /></span></p>
+<p><span class="img-zoom"><img alt="如何提高创意设计能力？试试这个P4D训练法！" class="alignnone size-medium wp-image-389560" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200919-5.jpg" width="1281" height="3662" /></span></p>
+<p><span class="img-zoom"><img alt="如何提高创意设计能力？试试这个P4D训练法！" class="alignnone size-medium wp-image-389561" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200919-6.jpg" width="1281" height="3203" /></span></p>
+<p><span class="img-zoom"><img alt="如何提高创意设计能力？试试这个P4D训练法！" class="alignnone size-medium wp-image-389562" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200919-7.jpg" width="1281" height="2151" /></span></p>
+<p><span class="img-zoom"><img alt="如何提高创意设计能力？试试这个P4D训练法！" class="alignnone size-medium wp-image-389563" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200919-8.jpg" width="1281" height="3641" /></span></p>
+<p><span class="img-zoom"><img alt="如何提高创意设计能力？试试这个P4D训练法！" class="alignnone size-medium wp-image-389564" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200919-9.jpg" width="1281" height="2390" /></span></p>
+<p><span class="img-zoom"><img alt="如何提高创意设计能力？试试这个P4D训练法！" class="alignnone size-medium wp-image-389565" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-cy-20200919-10.jpg" width="1281" height="3312" /></span></p>
+<p>[link https://www.uisdc.com/cyberpunk-poster]</p>
+<p>欢迎关注作者的<a class="tag_a" href="https://www.uisdc.com/topic/%e5%be%ae%e4%bf%a1" target="_blank" rel="noopener noreferrer">微信</a>公众号：</p>
+<p><span class="img-zoom"><img alt="如何提高创意设计能力？试试这个P4D训练法！" class="alignnone size-full wp-image-389631" src="https://image.uisdc.com/wp-content/uploads/2020/09/Snipaste_2020-09-21_06-10-21.png" alt="赛博朋克风格案例！「商业合成海报」从构思到成品的全流程解析" width="176" height="175" /></span></p>
+➜你知道吗？现在流行的设计风格，都是他玩过的
+https://www.uisdc.com/mitsuo-katsui	63243
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-384439" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yxs-2020813.jpg" width="720" height="161" /></span></p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389769" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-1.gif" width="425" height="600" /></span></p>
+<p>一说到未来主义、超现实、渐变色光，相信大家应该都不会感到陌生，因为这些都是现在比较流行的风格。但是你知道吗？其实早在几十年前，日本就已经出现了类似的平面设计风格，而这位设计师就是日本平面设计界探索数字设计表现的开拓者——胜井三雄（Mitsuo Katsui）。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389770" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-2.gif" width="581" height="388" /></span></p>
+<p>△ 胜井三雄 Mitsuo Katsui</p>
+<p>胜井三雄，1931年出生于日本东京，1955年毕业于东京教育大学艺术系构成专业，后入职日本味之素公司，1961年成立胜井设计事务所，是日本当代最具代表性的平面设计大师之一，一生致力于开拓平面设计新领域，将计算机技术与平面设计相结合，成为日本利用印刷术、计算机等技术手段进行平面设计的第一人。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389771" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-3.jpg" width="596" height="412" /></span></p>
+<p>△ FONT&#8221;F&#8221; [福田繁雄] &amp; FONT&#8221;O&#8221; [胜井三雄]</p>
+<p>胜井三雄一生收获了很多荣誉，在福田繁雄去世后，日本平面设计师协会（JAGDA）理事会一致决定推选胜井三雄担任会长，此外他还是国际平面设计师协会（AGI）会员、武藏野美术大学名誉教授、东京和纽约艺术指导俱乐部成员。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389772" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-4.jpg" width="680" height="380" /></span></p>
+<p>△ 龟仓雄策 Yusaku Kamekura &amp; 1964年东京奥运会标识</p>
+<p>1964年，胜井三雄参与了由龟仓雄策等人策划的东京第18届奥林匹克运动会的整体视觉识别系统设计，还分别担任了1970年大坂国际博览会、1975年冲绳海洋博览会以及1985年筑波科学博览会的艺术指导，此外还受邀参加了2020年东京奥运会及残奥会的标志评选。</p>
+<p>胜井三雄所获奖项：</p>
+<p>第8届日本宣传美术展日宣美奖；东京ADC会员奖；第14届布鲁诺国际平面设计双年展全场大奖；第1届墨西哥国际海报双年展最佳作品奖；第13届华沙国际画报双年展金奖；第74届纽约ADC金奖；第7届JAGDA龟仓雄策奖；莱比锡“世界最美的书”展最佳作品奖</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389773" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-5.jpg" width="1080" height="140" /></span></p>
+<p>胜井三雄的创作将形与色应用到新媒体上，不断地去挖掘新媒体创作的无限可能性，并且把现代设计的构成原理作为自己创作的根基，从而让作品更有生命力。他的设计作品在形的构成和色的构成上都有独到的见解，构成形式新颖独特充满想象，善于利用错视觉原理和渐变构成的手法，给人带来不一样的视觉体验和审美感受。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389774" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-6.jpg" width="596" height="545" /></span></p>
+<p>△ 第3回67年度デザイン学生奨学図印赏，1967</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389775" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-7.jpg" width="616" height="618" /></span></p>
+<p>△ 左：第11回东京国际版画ビエンナーレ展，1979；右：HAYASHI——UCLA日本の伝统芸能，1981</p>
+<p>胜井三雄本身毕业于构成专业，所以自然已经有了自己的构成理念，并且在他的设计作品中都能够体现出来。他思考的东西，与其说是数学性的，不如说是几何性的。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389776" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-8.jpg" width="596" height="402" /></span></p>
+<p>胜井三雄喜欢探索颜色和颜色相邻之后的那种视觉变化，上图的线条作品是胜井三雄用记号笔手工绘制的，一条线的宽度正好是记号笔笔尖的宽度，虽然这样的试作现在在电脑上也许只需要一个按钮就可以完成，但是对于胜井三雄来说，用手绘制也是很重要的体验。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389777" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-9.jpg" width="563" height="800" /></span></p>
+<p>渐变构成的应用在胜井三雄的作品中经常出现，渐变构成是指基本形或骨骼逐渐地、有规律地循序变动，以此让画面产生节奏感和韵律感。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389778" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-10.jpg" width="596" height="270" /></span></p>
+<p>△ 『ブレーン』杂志，1961</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389779" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-11.jpg" width="452" height="418" /></span></p>
+<p>△  balance第3回日本インダストリアルデザイン会议，1977</p>
+<p>胜井三雄早在六十年代就开始运用彩纹几何图形的变化组合出极具韵律感的图案，并且创作出了一系列作品，用自己独有的方式探索形态和色彩的多种可能性。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389780" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-12.gif" width="552" height="595" /></span></p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389781" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-13.jpg" width="1080" height="2109" /></span></p>
+<p>△ 黄と青の対比による8つのヴァリエーション，1981</p>
+<p>胜井三雄认为虽然平面设计师通过媒体来进行设计，但是媒体本身也在随着时代的变化而变化着，所以即使可以使用方便的数字技术来实现设计，但也不能忽视创作的目的和方向性，有只能用电脑技术做出的设计，也有只能用计算尺一点点测量绘制完成的设计。比如在名为「黄蓝对比色的8种变化」的作品中，他将原始图像切成一半后重新组合出8种不同的变化表现，在设计规则的基础上作出了实验性的尝试。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389782" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-14.jpg" width="275" height="202" /></span></p>
+<p>△ グリーティング·カード</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389783" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-15.jpg" width="596" height="257" /></span></p>
+<p>△ 错视狂 FONT-F、错视狂 LOVE-L、错视狂 LOVE-O</p>
+<p>除了渐变，胜井三雄还擅长利用错视原理进行创作，错视是错误视觉或视觉传递发生错误的意思，通常指几何学的错视和因色彩对比所造成的错觉，也就是看到某个图形时，常有感觉与其客观大小、长度、方向等不同的现象，它能带给人们不同寻常的视觉感受和体验，达到艺术或者类似魔术般的效果。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389784" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-16.jpg" width="596" height="395" /></span></p>
+<p>△ 左：volume 1 平面·色彩·立体构成；右：volume 2 タイポグラフィ·シンボルマーク</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389785" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-17.jpg" width="596" height="285" /></span></p>
+<p>△  鹿岛日めくりカレンダー</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389786" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-18.jpg" width="596" height="398" /></span></p>
+<p>△ 左：『日本のしるし 全4巻』2巻 诸业种家じるし；右：『日本のしるし 全4巻』3巻 商品·业种のしるし</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389787" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-19.jpg" width="1080" height="139" /></span></p>
+<p>除了构成以外，胜井三雄还善于以色彩作为设计语言，将数字化技术和色彩丰富的视觉表现结合，以其新颖独特的色彩运用而着称，他对色彩的驾驭，达到了设计界前所未有的高度，并且具有强烈的个人风格。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389788" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-20.gif" width="425" height="601" /></span></p>
+<p>△ visionary ∞ scape，2004</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389789" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-21.gif" width="425" height="601" /></span></p>
+<p>△  visionary ∞ GENE+m，2005</p>
+<p>胜井三雄的图像图形创造，本质上是数字时代的产物，始终围绕如何操作数字媒体，以光以及如何将光与技术相结合为核心，利用点、线、面和色彩等视觉元素结合构成、错视、渐变构成的理念，以此来编织极其富有创造力的视觉作品。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389790" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-22.jpg" width="549" height="800" /></span></p>
+<p>△ sequent sight，2009</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389791" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-23.gif" width="425" height="602" /></span></p>
+<p>△ AGI-JAPAN 2006</p>
+<p>早年间，计算机时代还没有到来的时候，胜井三雄就在考虑未来设计随着科学技术的高度发展而变迁，早在1958年刚刚走出大学校门时的他就预言：“将来的设计可以不需要靠笔来完成，而可能是靠某种媒介应用与设计思维的碰撞就可以迅速完成的”，30年后，他的预言得到了证实。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389792" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-24.jpg" width="1080" height="743" /></span></p>
+<p>20世纪80年代胜井三雄受到苹果公司的邀请来到美国硅谷，共同探讨数字技术在设计中应用的可能性，率先将目光放到了电脑制图技术上。在那时，胜井三雄就已经当之无愧地被称为“利用印刷术、电脑等技术手段进行平面设计表现的日本第一人”，一些作品在当时号称平面设计传统领地的欧洲，也引起了不小的轰动。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389793" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-25.gif" width="425" height="602" /></span></p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389794" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-26.jpg" width="425" height="150" /></span></p>
+<p>△  MORISAWA FONT，1998</p>
+<p>胜井三雄在为森泽字体设计的文化论坛上说道：“设计没有被当作是一种共通的工具来看待，而更像是从各种源流中派生出来的、创作手法和风格各异的艺术形式，我觉得海报也好，标识也好，跟平面设计有关的所有创作都不应该被当成单一作品来孤立地看待，而是应该放在时代背景或者技术发展的大流中来看。”</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389795" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-27.jpg" width="600" height="1705" /></span></p>
+<p>△ 生かす文字、恋する文字、伝える文字、繋ぐ文字、情れる文字，2008</p>
+<p>这是胜井三雄2008年为森泽字体设计的系列海报，将数字技术与印刷技术相结合，利用图像构成的特殊手段，将形态与图形做特殊的处理，使本来在平面空间的字体赋予了时间和空间的概念，产生了新的时间和空间。这不仅仅是表现手段的独特性，更重要的是设计理念的多维化，能将有关联性的作品有效的结合起来，看到设计作品就能将我们的多种感官调动起来，从而与设计作品进行对话。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389796" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-28.jpg" width="566" height="800" /></span></p>
+<p>△  たて组ヨコ组57号，2003</p>
+<p>胜井三雄从学生时代起就痴迷于摄影，对相机成像中变化莫测的色彩和黑白照片中光影的对比产生了浓厚的兴趣，这种对色彩和光影独特的敏感度也影响了他的研究，“我想探索的是一种数码光和太阳光能够实现共鸣的创作方式。”他的作品中常常呈现出华丽的色彩与形式，同时又有着精致的构成，让人感受到数字空间里独有的质感。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389797" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-29.jpg" width="567" height="800" /></span></p>
+<p>△  PLEATS PLEASEISSEY MIYAKE:Elfin Ligh，1997</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389798" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-30.gif" width="425" height="601" /></span></p>
+<p>△ グラフィックトライアル·コレクション2006-2015</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389837" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-31-1.gif" width="425" height="602" /></span></p>
+<p>△ LITHRONE project，2008</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389800" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-32.jpg" width="569" height="800" /></span></p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389801" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-33.gif" width="640" height="452" /></span></p>
+<p>△ 光の国一夜と昼の狭间に，1993</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389802" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-34.jpg" width="565" height="800" /></span></p>
+<p>△ FUJI- Moon:Dedicatedto Buson, haiku poet</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389803" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-35.jpg" width="565" height="800" /></span></p>
+<p>△ FUJI- Rainbow:Dedicated to Basho，haiku poet</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389804" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-36.jpg" width="571" height="800" /></span></p>
+<p>△ 国际デザインセンター，1996</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389805" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-37.jpg" width="565" height="800" /></span></p>
+<p>△ 华，1993</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389806" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-38.jpg" width="564" height="800" /></span></p>
+<p>△ I’m here「空気清浄装置」，1993</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389807" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-39.jpg" width="565" height="800" /></span></p>
+<p>△ 写楽生诞 200 周年记念「花菖蒲思笄」，1994</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389808" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-40.jpg" width="565" height="800" /></span></p>
+<p>△ NOHーUCLA 日本の伝统芸能，2017</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389809" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-41.jpg" width="563" height="800" /></span></p>
+<p>△ 胜井三雄展 兆しのデザイン，2013</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389810" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-42.gif" width="425" height="601" /></span></p>
+<p>△ ゆらぎとゆらぎてん，2014</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389811" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-43.gif" width="425" height="600" /></span></p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389812" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-44.jpg" width="425" height="149" /></span></p>
+<p>△ 阳洸阴影华，2015</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389813" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-45.jpg" width="1080" height="141" /></span></p>
+<p>除了对光和色彩的灵活运用，胜井三雄也在不断探索运用多个学科领域的原理进行实验性创作的方式，CG技术让他对动态表达、晕色渐变、错视效果的运用更加娴熟，从而形成了一种胜井三雄式的超现实主义风格。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389814" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-46.jpg" width="596" height="415" /></span></p>
+<p>△ 『宣伝会议』杂志，1972</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389815" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-47.gif" width="425" height="531" /></span></p>
+<p>△ Pattern by marker printed on silkscreen</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389816" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-48.jpg" width="600" height="800" /></span></p>
+<p>△ Traditions and new techniques poster</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389817" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-49.jpg" width="596" height="412" /></span></p>
+<p>△ 左：年鑑日本のディスプレイ·商环境デザイン&#8217; 86，1985；右：日本文化デザイン会议&#8217; 85 九州，1985</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389818" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-50.jpg" width="596" height="413" /></span></p>
+<p>△ 左：NEW BASICS，1985；右：世界デザイン博覧会，1987</p>
+<p>胜井三雄的设计作品之所以会独树一帜，在于他擅长使用晕色渐变，在不同颜色之间运用渐变构成手法，对色彩的微妙变化把握得十分到位，再结合计算机技术创造出具有明显色彩特征的幻化效果，带给人们神秘且变化莫测的情境感受。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389819" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-51.jpg" width="300" height="425" /></span></p>
+<p>△ 零，1985</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389820" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-52.gif" width="640" height="452" /></span></p>
+<p>△ 小森コーボレーション2007</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389821" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-53.jpg" width="332" height="473" /></span></p>
+<p>△ 胜井三雄展「视覚の地平线」，2001</p>
+<p>这幅「视觉の地平线」运用的就是形的渐变构成原理，该作品由四个电脑图形渐变而成，这种构成形式在当时很少见，也在该作品中传达了一种律动感，让海报的整体感觉没有那么生硬。这种以计算机技术来辅助完成的构成形式虽然是前卫的，但也为当时的设计示范了更多的可能性。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389822" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-54.jpg" width="596" height="416" /></span></p>
+<p>△ デザインの世纪，1997</p>
+<p>胜井三雄利用晕色渐变结合CG技术做的招贴有很多，如「デザインの世纪」，它的图形是螺旋状的，颜色从里到外由深变浅，仿佛在不停地旋转，不停地向外放射着色光，黑暗中只有它的存在，胜井三雄将这美妙、变幻、转瞬即逝的一刻描摹了下来。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389823" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-55.gif" width="640" height="449" /></span></p>
+<p>△ GLOBAL BRAIN，1996</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389824" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-56.jpg" width="637" height="183" /></span></p>
+<p>△ ウロボロスの卵，2000</p>
+<p>在1999-2000年期间，胜井三雄创作了主题为「孕育的生命」的系列海报，形状上描述了一个襁褓中的胎儿在无限的循环，从内而外朦胧的、含蓄的多色渐变，内边缘的发光，以及图形的叠加和穿插使色彩显得更加晶莹剔透，显示出一种新生的力量，表达出了“保护、孕育”的主题，也在向我们传递着一种孕育生命的伟大精神。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389825" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-57.gif" width="300" height="427" /></span></p>
+<p>△ GLOBAL BRAIN</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389826" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-58.jpg" width="600" height="3869" /></span></p>
+<p>△  Ape Call from Tokyo，1990</p>
+<p>这是胜井三雄设计的「Ape Call from Tkyo」系列海报，表现形式上即使现在看来都很新鲜，不仅有强烈的空间感，构成形式也非常生动，每幅海报光与色、虚与实的对比都让整个画面非常具有视觉冲击力，拉大了设计空间感，能带给人很多启发。胜井三雄不仅是在传达一种信息，更是在表现他对现代设计的一种理解，这种设计语言也影响着后来一代又一代的设计师。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389827" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-59.gif" width="425" height="601" /></span></p>
+<p>△  Limits to growth，2012</p>
+<p>这是胜井三雄设计的「Limits to growth」系列海报，将鸡蛋比作地球，以环境问题和地球危机为主题，分别在形如鸡蛋的地球外边加了一层光圈，暗色的地球与亮色的光圈形成对比，从而产生一种压抑感，很容易让人与主题产生共鸣。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389828" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-60.jpg" width="1080" height="140" /></span></p>
+<p>如果你认为胜井三雄的作品只是光晕、渐变那就错了，因为他还有很多设计作品是简洁、朴实的形象。胜井三雄在创作中追求以有形之物体现无形之精神，从而使心灵达到返璞归真的境界，表达了浓厚的大和文化精神气质，充满了浓郁的禅宗意韵。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389829" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-61.jpg" width="597" height="842" /></span></p>
+<p>△ 『奥様手帖』宣传杂志</p>
+<p>胜井三雄喜欢遵循自然，在其为「奥様手帖」所设计的杂志封面中，我们可以看到多数素材都是生活中最常见的元素，如鸡蛋、树叶和花蕾等，给人带来亲和之感，色调极为温和淡雅，画面在质朴恬静中透露着无穷的韵味，具有一种自然的清澈质朴、简洁脱俗的艺术气质。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389830" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-62.gif" width="425" height="607" /></span></p>
+<p>在胜井三雄的作品中往往传达这样的创作思想：雅静的优于喧哗的、简约的优于繁琐的。同时，他还常常在作品当中巧妙地置入一些含有禅机的意象，既可以让观赏者享受到自然之美，又能够婉转地传达出自己的质朴性情。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389831" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-63.jpg" width="597" height="309" /></span></p>
+<p>△ 全音ミュージックカレンダー1973カレンダ，1972</p>
+<p>在日本人看来对称和比例虽是完美的，但这是一种人为的表现，而自然之美会体现为不对称或不完美。从胜井三雄的作品中可以观察到，不完美的形式或者瑕疵的状态更能表达事物的本质，体现了胜井三雄以残缺为美的审美意识。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389832" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-64.jpg" width="480" height="640" /></span></p>
+<p>△ Help Japan，2011</p>
+<p>2011年，胜井三雄为日本地震救灾设计的招贴「援助日本」，该招贴作品将日本国旗中的红日居于画面之上，辉映着白色底面，可是这一轮红日并不是完整的圆形，而是利用地震的裂纹将其形体打破。这种残缺的图形，能够激起观者内心的遗憾，并引发思索，这就与该招贴设计要表达的地震救灾的主题完美地融合起来，这个作品整体上呈现的就是一种略带瑕疵的形式美。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389833" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-65.jpg" width="597" height="411" /></span></p>
+<p>△  IDENTITY 椅子、水滴，1976</p>
+<p>设计的最终目标是将信息有效地传递，胜井三雄在创作的过程中会不断出现新的设计手法和理念，让作品更加赋予时代的气息，但同时也会保留自己独有的特色，这种对于设计的深刻理解，其实是在向我们传达着一种设计精神。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389834" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-66.jpg" width="1080" height="141" /></span></p>
+<p>2019年4月14日至6月2日，胜井三雄在他自己曾参与设计的宇都宫美术馆举办了「视覚の共振·胜井三雄」大型回顾展。展览从平面、编辑、CI设计到展览视觉、空间构成等多个方面展示了胜井三雄60多年的设计生涯和思考的轨迹，无论是作品的选择还是展厅的布置都表现出胜井三雄强烈的色彩风格。</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389835" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-67.jpg" width="600" height="1991" /></span><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-389836" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-yx-20200922-68.jpg" width="600" height="2632" /></span></p>
+<p>令人遗憾和难过的是，此次展览也成为了胜井三雄的最后一次展览，展览在去年4月份开馆，而胜井三雄于8月12号因胰脏癌在东京的家中去世，享年87岁。</p>
+<p>如今我们回首胜井三雄60余年的设计作品，如果光看作品可能很难区分出是哪个时代设计的，其原因是因为胜井三雄对新技术与设计的结合的嗅觉非常敏感，他充分利用了电子技术并合理的运用到他的设计之中，从而让他的作品没有明显的时代痕迹。</p>
+<p>胜井三雄善于及时变更自己的设计思维、立场和手段，他勇于创新，将日本传统文化和现代计算机技术相结合，无论在理念上还是新技术的运用上，都走在了日本平面设计的最前沿，向世界展示了日本设计，获得了国际设计界的认同，极大地推动了日本平面设计的发展，也为后来一批又一批的平面设计师，提供了借鉴和启迪。</p>
+<p>仅以此篇对胜井三雄先生辉煌的设计生涯做一个小小的回顾，天堂因你而色彩缤纷。</p>
+<p>[link https://www.uisdc.com/xincunzeren]</p>
+<p><strong>参考文献</strong></p>
+<ul>
+<li>[1] 中野デザイン事务所.视覚の共振·胜井三雄,光村図书出版</li>
+<li>[2] 吴卫.平面构成[M].北京:北京理工大学出版社,2010:68.</li>
+<li>[3] 刘梦洋.平面构成[M].北京理工大学出版社,2017:56.</li>
+<li>[4] 王受之.世界现代设计史[M].北京:中国青年出版社,2002:244.</li>
+<li>[5] 铃木大拙.禅与日本文化[M].北京:三联书店,1989:19.</li>
+<li>[6] 图片来源胜井デザイン事务所（www.katsui.co.jp）,部分来源于网络</li>
+</ul>
+<p>欢迎关注研习设的微信公众号：「Yanxishe2017」</p>
+<p><span class="img-zoom"><img alt="你知道吗？现在流行的设计风格，都是他玩过的" class="alignnone size-full wp-image-271254" src="https://image.uisdc.com/wp-content/uploads/2018/05/yxskxsqr.jpg" alt="从法学生到顶尖艺术家：抽象先驱瓦西里·康定斯基" /></span></p>
 ➜2020 年 9 月超使用设计圈干货大合集
 https://www.uisdc.com/tools-for-designers-september-2020	67058
 <p>9月的设计圈干货大合集来了！这次的干货合集当中有一些不太常见的新工具，比如3D排版设计工具 Ztext.js，比如异常沙雕的按钮控件 Impossible Checkbox，此外，还有图标、字体、图库等适用性超强的素材~<br />
