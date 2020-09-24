@@ -1,0 +1,61 @@
+➜你动、蒙娜丽莎跟着一起动，OpenCV这么用，表情口型造假更难防了
+http://www.sohu.com/a/413696884_610300	20986
+<p>梅宁航 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">有没有想过让蒙娜丽莎跟着你的表情动，来一番亲切的交流？</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200818/8aa802990c144e419127693b0c9feac8.gif" /></p>
+<p style="text-align: left;">Aliaksandr的一阶运动模型（First Order Motion Model）可以实现，但是实现过程非常复杂且繁琐。</p>
+<p style="text-align: left;">一阶运动模型功能强大，可以在未经预训练的数据集上对图像和视频进行特效生成，但代价是安装配置比较繁琐。</p>
+<p style="text-align: left;">能不能简单一点，再简单一点？</p>
+<p style="text-align: left;">印度一位程序员阿南德·帕瓦拉（Anand Pawara）设计了基于OpenCV实现的实时动画特效。</p>
+<p style="text-align: left;">毕竟OpenCV是成名已久的跨平台视觉库，是事实上的计算机视觉领域的标准库。</p>
+<p style="text-align: left;">几天前，阿南德在GitHub上开源了完整代码，并给出实现具体过程。</p>
+<p style="text-align: left;">走过路过，不要错过。</p>
+<p>安装过程 </p>
+<p style="text-align: left;">1、安装依赖模块</p>
+<p style="text-align: left;">安装依赖模块：</p>
+<p>pip install -r requirements.txt </p>
+<p style="text-align: left;">安装pytorch 1.0.0 :</p>
+<p>pip install torch=== <span>1.0</span><span>.0</span>torchvision=== <span>0.2</span><span>.1</span>-f https://download.pytorch.org/whl/cu100/torch_stable.html </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">2、下载配置文件（如果不能下载，文件链接在文末）</p>
+<p>gdown —id <span>1</span>wCzJP1XJNB04vEORZvPjNz6drkXm5AUK </p>
+<p style="text-align: left;">3、运行程序</p>
+<p style="text-align: left;">运行文件 :</p>
+<p>python image_animation.py -i path_to_input_file -c path_to_checkpoint </p>
+<p style="text-align: left;">针对摄像头的实时特效生成 :</p>
+<p>python .image_animation.py -i .InputsMonalisa.png -c .checkpointsvox-cpk.pth.tar Run application <span>from</span>video file : python image_animation.py -i path_to_input_file -c path_to_checkpoint -v path_to_video_file </p>
+<p style="text-align: left;">针对既有视频的特效生成 :</p>
+<p>python .image_animation.py -i .InputsMonalisa.png -c .checkpointsvox-cpk.pth.tar -v .video_inputtest1.mp4 </p>
+<p style="text-align: left;">如果你想上手试试，只需要调整相关 <strong>配置文件</strong>即可。 </p>
+<p style="text-align: left;">模型分为两种使用模式，一种是较为常规的导入视频常规方法，另外一种就是实时生成视频特效。</p>
+<p style="text-align: left;">但是，请注意，一定要使用 <strong>pytorch 1.0.0版本</strong>，因为更高的版本在后端依赖的一阶模型上存在问题。 </p>
+<p style="text-align: left;">按照作者的后续计划，会推出客户端程序，并且会增加 <strong>假声</strong>（deepfake voice）功能。 </p>
+<p>立足OpenCV的优化 </p>
+<p style="text-align: left;">阿南德所做的工作是简化现有的一阶运动模型（First Order Motion Model），使用OpenCV对视频进行特效生成。</p>
+<p style="text-align: left;">项目的后端支持由OpenCV库完成，避免使用复杂的模型，降低使用门槛。</p>
+<p style="text-align: left;">按照作者观点，使用这个模型只需要对一类数据集进行训练后，便可应用到对其全部事物上去，即具有较好的泛化能力。</p>
+<p style="text-align: left;">不同于原一阶模型的多个数据集测试效果，现在阿南德实时动态特效模型还只在人脸数据集上进行测试，后续后持续增加其他数据集。</p>
+<p style="text-align: left;">这个模型的特点是易用，配置非常简单，基本可以开箱即用，即使是训练自己的数据集也会比较简单。</p>
+<p style="text-align: left;">因为立足于对现有资源进行优化配置，操作简易，功能强大。</p>
+<p style="text-align: left;">当然，简单也会带来问题，比如现在数据集较为单一，针对的主要是人脸数据集。</p>
+<p>作者简介 </p>
+<p style="text-align: left;">项目作者阿南德·帕瓦拉（Anand Pawara）是印度AvenDATA公司的一名深度学习工程师，现居孟买。</p>
+<p style="text-align: left;">繁琐的工作自动化，大幅度降低上手的难度。</p>
+<p style="text-align: left;">完整实现过程连接在下面，如果有兴趣，欢迎自己去试试哟~</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

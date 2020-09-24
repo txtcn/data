@@ -1,0 +1,240 @@
+➜看屁股，你是一头大象吧
+http://www.sohu.com/a/414226976_610300	20453
+<p>杨净 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">总有人问，AI可以为生态平衡做些什么？</p>
+<p style="text-align: left;">在云南西双版纳雨林深处，他们给出了一份答案——「保护亚洲象，构建人象共处的雨林生态」。</p>
+<p style="text-align: left;">亚洲象，作为全球濒危物种之一，全国只有300余头，云南西双版纳地区是主要栖息地。</p>
+<p><img height="auto" width="794" src="http://p1.itc.cn/q_70/images03/20200821/bcabb9291e834bfbb0788578e0542a10.png" /></p>
+<p style="text-align: left;">在上世纪七八十年代，亚洲象在国内的数量曾降至170头左右，濒临灭绝。在行之有效的保护措施下，亚洲象的濒危状态得到一定的缓解。</p>
+<p style="text-align: left;">「保护亚洲象」已见成效，但随之而来的，是大象逐渐走出雨林，来到人类生活区，造成「人象冲突」事件。</p>
+<p><img height="auto" width="868" src="http://p2.itc.cn/q_70/images03/20200821/35c64eb25543436f967a5faac64fc5b9.jpeg" /></p>
+<p style="text-align: left;">于是，人与象如何在雨林家园内和谐相处成为了当地的新难题。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">为了解决这一难题，浪潮与西双版纳国家级自然保护区管护局携手，开发了一款 <strong>亚洲象生态保护系统</strong>，这也是全球首个针对亚洲象的AI保护应用。 </p>
+<p style="text-align: left;">亚洲象：我不要面子的嘛？ <span></span></p>
+<p><img height="auto" width="830" src="http://p7.itc.cn/q_70/images03/20200821/258cf9c678a1483e9468e6168984c47b.png" /></p>
+<p style="text-align: left;">自系统5月上线以来，已经抓拍了超过 <strong>26万</strong>张由动态闯入触发的照片，进行了近 <strong>2900次</strong>预警，在预警区域内还没有发生过人员伤亡的事件。 </p>
+<p>全球首个亚洲象生态保护系统 </p>
+<p style="text-align: left;">现在，这些问题被一举解决了，目前亚洲象生态保护系统主要有 <strong>三大亮点</strong>。 </p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p style="text-align: left;">而实现这些，研究团队做到了「软硬结合」。</p>
+<p style="text-align: left;">首先，需要「直面」亚洲象的硬件。</p>
+<p><img height="auto" width="1300" src="http://p9.itc.cn/q_70/images03/20200821/c2aca6797a834cd3b0de3198981fd133.png" /></p>
+<p style="text-align: left;">正如刚才所说，研究团队在一开始也遇到了训练样本有限的情况。</p>
+<p style="text-align: left;">为了获取更多的样本数量，他们在野象谷大象经常出没的区域搭建了众多采集站，收集到 <strong>上万张</strong>图片资料。 </p>
+<p style="text-align: left;">在模型训练阶段，研究人员在三个月内不断优化深度学习模型。</p>
+<p style="text-align: left;">由于野生亚洲象喜欢在夜间出没，且体型庞大，采集到的画面往往不是完整的躯体。</p>
+<p><img height="auto" width="6000" src="http://p1.itc.cn/q_70/images03/20200821/25be617dc56e4c1eb8ccc3a041a3064e.jpeg" /></p>
+<p style="text-align: left;">为了解决这一问题，他们在有效样本中标注亚洲象的特征，涵盖大象的头部、脚部、背部、尾部，以及测定亚洲象的身高来进行 <strong>「预处理」</strong>。 </p>
+<p><img height="auto" width="1056" src="http://p7.itc.cn/q_70/images03/20200821/91207a4d11984608aa7db70109f628f0.png" /></p>
+<p style="text-align: left;">此外，研究人员专门针对一些拍摄光线差（夜间、云雾天气）、画面模煳和影像残缺等问题，对模型进行不断的迭代优化。</p>
+<p style="text-align: left;">在反复比对验证优化之后，最终整个系统的精度达到 <strong>96%</strong>。 </p>
+<p style="text-align: left;">这当中，还有浪潮自身超强算力的AI服务器AGX-2加持，加速了学习进程。</p>
+<p>24小时实时监测、10秒钟预警 </p>
+<p style="text-align: left;">在过往的人工预警系统中，监测方法相对单一，仅靠 <strong>人工巡护</strong>和无人机两种方式，范围窄、效率低，数据较为分散，还不能做到 <strong>24小时</strong>实时监测。 </p>
+<p style="text-align: left;">而且人工监测还存在安全风险的问题。</p>
+<p style="text-align: left;">云南西双版纳国家级自然保护区科学研究所所长 <strong>郭贤明</strong>就曾表示， </p>
+<blockquote>
+<p>别看亚洲象个头非常大，其实象在不活动或者纯粹走路的时候一点声音都没有。</p>
+<p>之前澜沧一个监测员就是遇到这样的情况，一下子被象攻击了。</p>
+</blockquote>
+<p>别看亚洲象个头非常大，其实象在不活动或者纯粹走路的时候一点声音都没有。</p>
+<p>之前澜沧一个监测员就是遇到这样的情况，一下子被象攻击了。</p>
+<p style="text-align: left;">现在，亚洲象生态保护系统打开了新局面。</p>
+<p style="text-align: left;"><span style="font-size: 16px;"></span>强大的采集终端系统可以进行实时监测，然后根据监测到的亚洲象动态，多渠道及时发布预警信息，以提醒周围居民做好防卫工作，最大程度减少正面人象冲突，提高西双版纳人象冲突事件的预警处置能力和效率。 </p>
+<p><img height="auto" width="830" src="http://p3.itc.cn/q_70/images03/20200821/6c981c67d002428aa8f0444d7f9429e4.png" /></p>
+<blockquote>
+<p>系统刚开始搭建时，就预留了10秒钟 <strong>人工判别</strong>的时间。 </p>
+<p>如果10秒钟以内没判别，系统就会自动将这则信息发布出去，以缓解人象冲突问题。</p>
+</blockquote>
+<p>系统刚开始搭建时，就预留了10秒钟 <strong>人工判别</strong>的时间。 </p>
+<p>如果10秒钟以内没判别，系统就会自动将这则信息发布出去，以缓解人象冲突问题。</p>
+<p style="text-align: left;">通过系统积累的数据资料，科研人员能进一步发现它们在习性、生活方面的规律，也能为亚洲象栖息地保护和保护区建设提供参考，这将对亚洲象的保护、研究起到关键作用。</p>
+<p style="text-align: left;">用AI来推动人与象的「和谐互动」，浪潮想要做的不只这些。</p>
+<p style="text-align: left;">就拿这一系统来说，除了实现对亚洲象的无干扰全时段观察，还能够感知雨林生态系统的整体平衡，对雨林 <strong>温度</strong>、 <strong>湿度</strong>以及 <strong>食物链</strong>进行长期科学监测，为进一步保护和研究整个雨林生态系统做数据支撑。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200821/7bf322d321ab4459836d2818e9b4876c.png" /></p>
+<p style="text-align: left;">以「计算」来守护生态，并不轻而易举，短期内也不见得会有多少商业回报，但对于生态可持续发展，意义却不言自明。 </p>
+<p style="text-align: left;">现在，浪潮迈出了这一步。</p>
+<p style="text-align: left;">如何用人工智能做好生态保护？浪潮给更多想要加入进来的AI创新者们树立了新范式。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜阿里财报：盒马和天猫超市是跑的最快的业务，阿里云离盈利只差临门一脚
+http://www.sohu.com/a/414226978_610300	20453
+<p>郭一璞 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">阿里刚刚发布了截至2020年6月30日的季度财报。</p>
+<p style="text-align: left;">因为财年计算方式不同，这是阿里2021年Q1财报。</p>
+<p style="text-align: left;">这一季，阿里巴巴集团总收入 <strong>1538亿</strong>人民币，比去年增长34%； </p>
+<p style="text-align: left;">这1500多亿的收入里，营业利润有347亿，利润率23%，营业利润比去年增长42%。</p>
+<p style="text-align: left;">和去年同期一样，四大板块里只有「核心商业」是赚钱的，其他三个都在赔钱。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200821/4c9c623197ff4c50918b96b99e0e6307.png" /></p>
+<p>盒马猫超跑的最快 </p>
+<p style="text-align: left;">占阿里帝国近9成江山的淘宝、天猫、盒马、菜鸟、饿了么等，被划进了「核心商业」板块，收入1333亿，增长依然迅勐，达到了34%。</p>
+<p style="text-align: left;">其中，收入增长最快的，是包括 <strong>天猫超市</strong>、 <strong>盒马</strong>、进口直营和银泰在内的新零售收入，增长率高达80%，目前占到了阿里所有收入的五分之一。 </p>
+<p style="text-align: left;">这也是全阿里增长最快的业务，没有之一。</p>
+<p style="text-align: left;">但如果你以为是因为疫情人们被迫蹲在家里买买买那就错了，因为2019年同季度相比2018年同季度的增长更高，达到了134%。</p>
+<p style="text-align: left;">甚至，财报里还说盒马的GMV线上渗透率超过60%，这样算下来，整个线上买菜市场的半壁江山都姓马了。</p>
+<p style="text-align: left;">毕竟盒马有它真香的点，比如北京就不收配送费，不到1块钱买一把洋葱丝都能免费送。</p>
+<p>阿里云离盈利只差临门一脚 </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">「云计算」业务收入123亿，收入增长高达59%。</p>
+<p style="text-align: left;">这是除了上面提到的天猫超市盒马等之外的另一大增长点。</p>
+<p style="text-align: left;">虽然还在赔钱，但如果不算利息、纳税、摊销，阿里云的亏损已经从前年同季度的10%，到去年同季度的5%，最后收窄到这个季度的3%，离盈利只差临门一脚。</p>
+<p>数字媒体及娱乐 </p>
+<p style="text-align: left;">包含UC、优酷、大麦网等阿里大文娱部门的业务在内的「数字媒体及娱乐」收入70亿。</p>
+<p style="text-align: left;">值得注意的是，阿里觉得之前在「创新业务及其他」里的线上游戏业务已经超越孵化阶段了，被并在了「数字媒体及娱乐」里。</p>
+<p style="text-align: left;">但是在增加了游戏业务的情况下，收入增长5.68个亿，增长率依然只有9个百分点。</p>
+<p style="text-align: left;">这还是在疫情期间优酷付费会员增长超过60%的情况下。排除掉优酷，整个大文娱板块和前面的电商、阿里云简直没法比。</p>
+<p>创新业务及其他 </p>
+<p style="text-align: left;">包含高德地图、钉钉、天猫精灵等在内的「创新业务及其他」收入11亿，仅仅是整个阿里的1%。</p>
+<p style="text-align: left;">因为游戏被划走了，这块收入下降了6个百分点，比去年同期少了7300万。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200821/e6511576085b4ef5b80464f10cf99812.png" /></p>
+<p>但股价还是跌了 </p>
+<p style="text-align: left;">根据路透、华尔街见闻等的报道，这份财报其实是超预期的。</p>
+<p style="text-align: left;">但是阿里的股价还是跌了。</p>
+<p style="text-align: left;">阿里美股，财报发布前一个交易日的收盘价260.59，发布后的开盘价就跌倒了256.89。</p>
+<p style="text-align: left;">阿里港股，昨天的收盘价还是255整，今天的开盘价就跌倒了251.8。</p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span style="font-size: 16px;">财报原文：</span></span></p>
+<p><span style="font-size: 16px;">https://doc.irasia.com/listco/hk/alibabagroup/interim/2021/int1qsc.pdf</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜国产游戏《黑神话：悟空》刷爆全网，虚幻引擎4打造，网友：有生之年终于看到国产3A！
+http://www.sohu.com/a/414227245_610300	20453
+<p>浩楠 晓查 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">你也有被这段游戏试玩视频刷屏吗？</p>
+<p style="text-align: left;">13分钟、国产团队出品、B站上线不到24小时，播放量已经破千万，迅速火爆全网。</p>
+<p style="text-align: left;">这就是来自国内游戏团队 <strong>游戏科学</strong>（Game Science）开发的3A大作 <strong>《黑神话：悟空》</strong>。 </p>
+<p><img height="auto" width="2764" src="http://p2.itc.cn/q_70/images03/20200821/48e558fcf1834cd090ed8e31d5177465.png" /></p>
+<p style="text-align: left;">影响之大，还进一步扩散到海外，甚至连国外知名游戏媒体 <strong>IGN</strong>，都在Twitter上转发这款游戏的消息，反响可谓相当强烈。 </p>
+<p style="text-align: left;">这次，国产游戏真的 <strong>出圈</strong>了。 </p>
+<p><img height="auto" width="2372" src="http://p4.itc.cn/q_70/images03/20200821/49196d8f9c6a45498b1ea55f14ed50d9.png" /></p>
+<p>国内情怀杀，终于文化输出了 </p>
+<p style="text-align: left;">这款游戏融合了大量《西游记》小说和电视剧的元素，开场就是一段“老猴子”的回忆：</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200821/5d099469202e4f16afea2c3c6057f6d7.gif" /></p>
+<p style="text-align: left;">之后就进入了 <strong>实机演示</strong>的场景。 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200821/41c2bcfa6e70463eb4361e63a6d252c8.gif" /></p>
+<p style="text-align: left;">那些《西游记》里的场景，比如孙悟空从耳朵里抽出一个针，变成金箍棒：</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200821/04447a21a34d404db7a933f1a3ced053.gif" /></p>
+<p style="text-align: left;">用72变的技能变成蜜蜂潜行： </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200821/898e2795a5e5429b8c15125460344d73.gif" /></p>
+<p style="text-align: left;">被念紧箍咒痛到跪在地上：</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200821/074d167140004ed69ac6872046798c2b.gif" /></p>
+<p style="text-align: left;">“如意金箍棒”5个烫金大字登场：</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200821/74ced9daf9aa483790971ccc1f1d15d8.gif" /></p>
+<p style="text-align: left;">以及最后86版《西游记》电视剧主题曲响起：</p>
+<p><img height="auto" width="1280" src="http://p8.itc.cn/q_70/images03/20200821/e283c5c4060d4899940ba2493c3cb623.jpeg" /></p>
+<p style="text-align: left;"><span>这些要素无不在唤起每个人的童年记忆。</span></p>
+<p style="text-align: left;">当我们在被这一串串神话元素感动得稀里哗啦的时候，国外玩家还不知道发生了什么，他们还仅仅是在感叹游戏性和画面感。</p>
+<p style="text-align: left;">连IGN的编辑其实也没有看懂游戏的内涵。对于游戏的发售时间，官方回应不会需要500年，IGN原封不动地翻译了这段话，而看过西游记的人，都应该知道其中的内涵。</p>
+<p><img height="auto" width="1680" src="http://p2.itc.cn/q_70/images03/20200821/7af8b3988cf141999df793c91906c023.png" /></p>
+<p style="text-align: left;">为了帮助他们理解这款游戏，已经有国内玩家去Reddit论坛、Twitter上进行科普：</p>
+<p style="text-align: left;"><img height="auto" width="1188" src="http://p9.itc.cn/q_70/images03/20200821/c0bdad756dbf40038e60b312f1e3957b.png" /></p>
+<p style="text-align: left;">孙悟空耳朵里藏的针就是金箍棒，重达13500斤，原来被大禹放在东海龙宫镇海……</p>
+<p style="text-align: left;">真是好一波文化输出啊。</p>
+<p style="text-align: left;">有网友表示，如果这款游戏发售到国外，那就是 <strong>最好的文化输出机会</strong>。 </p>
+<p style="text-align: left;"><img height="auto" width="1184" src="http://p6.itc.cn/q_70/images03/20200821/d5015b23ad0841409e52f8cc5c17e1d3.png" /></p>
+<p style="text-align: left;">毕竟大家的欧洲历史知识都是靠育碧的《刺客信条》恶补的（狗头）。</p>
+<p style="text-align: left;">还有英文好的网友，已经开始指出预告片里翻译不恰当的地方，还有知名大v自告奋勇地要为游戏翻译各语种字幕。</p>
+<p><img height="auto" width="1056" src="http://p1.itc.cn/q_70/images03/20200821/bd50180c1b72406e9d962eff1db3ece9.png" /></p>
+<p>“世界水准的3A大作” </p>
+<p style="text-align: left;">这13分钟的实机测试，让网友惊叹“在有生之年能看到世界水准的3A大作！”。</p>
+<p style="text-align: left;">其实，这并不是第一款国产沉浸式动作RPG游戏。</p>
+<p style="text-align: left;">但之所以引起热烈反响，是因为游戏精良的画面特效、酷炫的动作设计、拳拳到肉的打击感。</p>
+<p style="text-align: left;">以及和对《西游记》、孙悟空传统文化IP的认真且创新的解读。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img height="auto" width="1568" src="http://p6.itc.cn/q_70/images03/20200821/78f21a065aab4169b71716fd12806d9c.png" /></p>
+<p style="text-align: left;">实机测试放出了一个完成的小关卡通关过程，故事定位在被烧毁的观音禅院，原型是《西游记》中，那个贪图唐僧袈裟的270岁金池长老的主场。</p>
+<p style="text-align: left;">视频中，玩家操作的是一个外形神似孙悟空的人物，为什么是“外形神似”？这里先卖个关子。</p>
+<p style="text-align: left;">除了物理攻击，玩家角色拥有4个独立技能。这4个技能都来自西游记，比如七十二变，视频开场那个金蝉子就是玩家角色变身的，并且这个技能CD并不短。</p>
+<p><img height="auto" width="750" src="http://p1.itc.cn/q_70/images03/20200821/ebe1bbccee3249e09d53d09eb6bad462.png" /></p>
+<p style="text-align: left;">还有定身咒，这也是孙大圣常用的技能。</p>
+<p style="text-align: left;">西游记中，这招通常用作潜行辅助，但在《悟空》这款游戏中，定身咒是关键时刻冻住boss保命的神技。</p>
+<p><img height="auto" width="750" src="http://p4.itc.cn/q_70/images03/20200821/d7fcfa5d85b44b998d3bf43ab095763e.png" /></p>
+<p style="text-align: left;">最有创意的是，游戏角色的格挡动作，并不是举起武器，而是直接使出孙悟空的“金刚不坏”，原地化作金身，硬抗伤害。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200821/1c427d63e36d4ce8bf04a1fc4cd74edf.gif" /></p>
+<p style="text-align: left;">还有孙悟空的撒豆成兵技能，拔下毫毛，一吹就变成了猴子猴孙。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200821/84ccbe164c8a4101bd9c7d75279cfe3e.gif" /></p>
+<p style="text-align: left;"><span>每击杀一个小boss，获得了相应武器道具以后，角色就吸收了这个boss的技能后面的挑战中可以使用。</span></p>
+<p style="text-align: left;">在叙事方面，实机测试视频的关卡末尾，给了玩家极大的震动和惊喜。 <span></span></p>
+<p style="text-align: left;">就在玩家要一击斩杀boss时，突然被一件兵器挡下，随着镜头上移，逐渐出现“如意金箍棒”几个字，随后， <strong>孙大圣本尊出现在镜头里</strong>。 </p>
+<p style="text-align: left;">这向玩家暗示了，《悟空》的故事不是简单的西游IP改编，故事里有更加宏大的背景和引人入胜的角色关系。</p>
+<p style="text-align: left;">而且，这样的情节设定，也让玩家的角色成长发展体验更好。</p>
+<p><img height="auto" width="1080" src="http://p7.itc.cn/q_70/images03/20200821/27fd96d0d35f4a7e87681f718c0a5861.png" /></p>
+<p style="text-align: left;">其他方面，悟空腾云驾雾、独面四大天王等情景，也十分符合人们对西游的认知和想象。</p>
+<p style="text-align: left;"><img height="auto" width="1080" src="http://p3.itc.cn/q_70/images03/20200821/0398460b2e01499d923987471843ff01.png" /></p>
+<p style="text-align: left;">不少网友表示，看到“如意金箍棒”时，几乎热泪盈眶了。</p>
+<p>虚幻引擎4打造 </p>
+<p style="text-align: left;">《黑神话：悟空》是用大名鼎鼎的 <strong>虚幻引擎4</strong>打造。 </p>
+<p style="text-align: left;">虽然虚幻引擎4支持多媒体编程接口DX11、物理引擎PhysX、APEX和NVIDIA 3D技术，可以打造非常逼真的画面。</p>
+<p style="text-align: left;">像任天堂这样的“大玩家”也基于此开发过多款游戏。</p>
+<p style="text-align: left;">但按照团队成员@戴巍 在知乎上的回答，对UE4还有更进一步的追求，认为一切还不算完美。</p>
+<p style="text-align: left;">之前有电影行业从业经历的戴巍，对视频切镜部分、光影材质都还不满意。</p>
+<p style="text-align: left;">他认为，这是UE4本身不可避免的缺陷。至少在大家期待的UE5面世之前，这个问题暂时无解。</p>
+<p style="text-align: left;">不过即便如此，国产游戏团队的这个初步成果，也令很多人激动不已了。</p>
+<p style="text-align: left;">因为“游戏科学”团队选择了一条最难走的路。国内十几年的游戏主机空白期，盗版游戏泛滥，让国产单机游戏大作濒临灭绝。</p>
+<p style="text-align: left;">“游戏科学”没有选择最赚钱的手机平台，也不是选择“免费+氪金”模式，而是选择了“一次性买断+付费DLC”这种国内少见的盈利模式。</p>
+<p style="text-align: left;">不知老PC玩家们是否还记得，当年花69元去音像店购买《仙剑奇侠传》、《古剑奇谭》的时光。</p>
+<p style="text-align: left;">而今游戏介质已经从光盘发展到网络下载，版权生态也在不断变好。</p>
+<p style="text-align: left;">玩家版权意识不断提高，盗版游戏下载网站近乎消失，破解游戏的生存空间越来越小。这给予了国产3A单机游戏良好的发展空间。</p>
+<p style="text-align: left;">但国内游戏团队还面临着不少问题。</p>
+<p style="text-align: left;">比如这次“游戏科学”团队放出试玩视频，其实并非为了吊足玩家胃口，而是他们面临开发人员稀缺的难题，放出预告片也是为了能够更好地招聘人才。</p>
+<p style="text-align: left;">在社交网络上，已经有开发者踊跃报名，表示愿意加入团队。</p>
+<p><img height="auto" width="1364" src="http://p1.itc.cn/q_70/images03/20200821/4b7698e32fd84f96a999917e550124f6.png" /></p>
+<p style="text-align: left;">另一方面，团队恐怕也是为了吸引投资。</p>
+<p style="text-align: left;">“游戏科学”已经成立6年，《黑神话：悟空》从2017年开始开发。视频游戏分析师Daniel Ahmad表示，开发完成至少还要2年以上的时间。</p>
+<p style="text-align: left;">祝《黑神话：悟空》早日上市。</p>
+<p style="text-align: left;">也欢迎你评论区交流这段《黑神话：悟空》观后感~</p>
+<p style="text-align: left;"><span style="font-size: 16px;">参考链接：</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">https://www.bilibili.com/video/BV1x54y1e7zf</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">https://www.ign.com/articles/black-myth-wukong-announced-consoles-next-gen-pc-gameplay</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">https://www.reddit.com/r/Games/comments/id3g7l/black_myth_wu_kong_13_minutes_official_gameplay/</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

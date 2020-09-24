@@ -1,0 +1,314 @@
+➜困扰数学家90年的猜想，被计算机搜索30分钟解决了
+http://www.sohu.com/a/415604663_610300	14791
+<p>晓查 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">数学家会代码，就连困扰人类 <strong>90年</strong>的数学猜想也挡不住。 </p>
+<p style="text-align: left;">来自斯坦福、CMU等高校的4名数学家，直接将一个数学难题转化成了对 <strong>10亿</strong>个结果进行“暴力搜索”。 </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200830/6677228f8687419ca19099efb97fb22f.png" /></p>
+<p><strong>△</strong>论文作者之一CMU助理教授Marijn Heule </p>
+<p style="text-align: left;">他们把这串代码输入 <strong>40台电脑</strong>组成的计算集群， <strong>30分钟</strong>后，计算机给出了一个 <strong>200GB</strong>大小的证明结果： </p>
+<blockquote>
+<p><strong>凯勒猜想</strong>在不超过7维的空间上都是正确的。 </p>
+</blockquote>
+<p><strong>凯勒猜想</strong>在不超过7维的空间上都是正确的。 </p>
+<p style="text-align: left;">现在，任何人都可以去 <strong>GitHub</strong>上克隆这串代码，验证这一数学定理。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200830/e0e1d8a0bae54349afc099fd9795b5ea.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">比较反转的是，这段获得计算机学术会议 <strong>IJCAR <span style="font-size: 16px;"></span></strong><span style="font-size: 16px;">（国际自动推理联合会议）</span>最佳论文奖的程序，上线GitHub半年，只揽获了一颗星。 </p>
+<p style="text-align: left;">那么，这4位数学家要证明的“凯勒猜想”到底是什么？为何非要用计算机来证明？计算机证明的结果可靠吗？</p>
+<p style="text-align: left;">下面让我们一一道来。</p>
+<p>什么是凯勒猜想 </p>
+<p style="text-align: left;">假如用一批完全相同的正方形瓷砖铺满地面，中间不留空隙。显然，瓷砖之间会共用一条边，如下图蓝线所示：</p>
+<p><img height="auto" width="646" src="http://p8.itc.cn/q_70/images03/20200830/126bbf71e9564e7aa14037a4f850154a.png" /></p>
+<p style="text-align: left;">在3维空间中，如果要用立方体占满空间，是不是也和2维空间类似呢？</p>
+<p style="text-align: left;">想象一下，如果像下图那样在空间中随便放入几个立方体，由此展开填满整个空间，那么唯一的办法就是让接上的立方体共用蓝色的面。</p>
+<p><img height="auto" width="778" src="http://p0.itc.cn/q_70/images03/20200830/ecafde37e2174033aaafae317bd2d74b.png" /></p>
+<p style="text-align: left;">2维、3维皆如此，更高维度的空间会怎样？</p>
+<p style="text-align: left;">1930年，德国数学家 <strong>凯勒</strong>猜测，如果用n维立方体填满无限空间，则立方体之间必然会出现“面对面”，对于任意维度都成立。 </p>
+<p style="text-align: left;">这便是凯勒猜想。</p>
+<p style="text-align: left;">但数学猜想不能仅靠直觉，必须有严格的证明。90年来，数学家一直不懈努力。</p>
+<blockquote>
+<p>1940年，数学家Perron证明了凯勒猜想在1到6维空间是正确的。</p>
+<p>1992年，另外两位数学家Lagarias和Shor证明，凯勒猜想在10维空间上是错误的。</p>
+</blockquote>
+<p>1940年，数学家Perron证明了凯勒猜想在1到6维空间是正确的。</p>
+<p>1992年，另外两位数学家Lagarias和Shor证明，凯勒猜想在10维空间上是错误的。</p>
+<p style="text-align: left;"><span style="font-size: 16px;">（注：这位Shor就是那个提出用量子计算机求解质因数分解的 <strong>Shor算法</strong>的数学家。） </span></p>
+<p style="text-align: left;">非常不幸，凯勒猜想竟然是错的！然而问题并没有到此结束。</p>
+<p style="text-align: left;"><span>还有3个维度没有解决呢！在7维、8维、9维三个维度空间</span>中 <span>，凯勒猜想是否成立？</span></p>
+<p style="text-align: left;">只要解决这三个维度，缠绕数学家几十年的问题就彻底搞定了。</p>
+<p style="text-align: left;">数学论证表明， <strong>如果凯勒猜想在n维空间上是错的，那么它在比n更高的维度上也一定是错的。</strong></p>
+<p style="text-align: left;">2002年，数学家Mackey已证明，凯勒猜想在8维空间不成立，因此在9维空间也不成立。</p>
+<p style="text-align: left;">至此， <strong>7维空间</strong>成为唯一的难题。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200830/46cefa8c01614d7baae107e78389da9a.jpeg" /></p>
+<p><strong>△</strong>证明8维空间凯勒猜想错误的CMU教授Mackey </p>
+<p>证明方法的改进 </p>
+<p style="text-align: left;">可能你已经发现，从上世纪90年代以来，凯勒猜想的证明速度大大加快，数学家只用了10年时间就把问题缩小到三个维度。</p>
+<p style="text-align: left;">这主要得益于两位数学家的贡献。</p>
+<p style="text-align: left;">当年，Perron求解1到6维时，没有特殊的捷径。而到1990年，凯勒猜想的证明方法发生了巨大的变化。</p>
+<p style="text-align: left;">数学家Corrádi和Szabó提出了一种新的思路，把原来无限空间的问题变成 <strong>有限</strong>的、 <strong>离散</strong>的问题，也让计算机解决凯勒猜想成为可能。 </p>
+<p style="text-align: left;">他们巧妙地把凯勒猜想变成了 <strong>图论</strong>问题，就是构造所谓的 <strong>凯勒图</strong>（Keller Graph），而图论正是计算机所擅长的。 </p>
+<p style="text-align: left;">在这种方法的指导下，Lagarias和Shor两人很快在2年后就证明了10维空间的情况：凯勒猜想不成立。又过了10年，Mackey证明，凯勒猜想在8维空间不成立。</p>
+<p style="text-align: left;">那么，凯勒图究竟是什么，它为什么能够加速凯勒猜想的证明？</p>
+<p>构造“凯勒图” </p>
+<p style="text-align: left;">首先，我们从最简单的2维情况说起。</p>
+<p style="text-align: left;">现在，我们有一种牌，牌上画着两个有颜色的点。 <strong>两个点是有顺序的，不能调换</strong>。比如，1黑2白≠1白2黑。 </p>
+<p style="text-align: left;">两个点总共可以涂4种颜色，颜色分成2对： <strong>红色对绿色</strong>、 <strong>白色对黑色</strong>。 </p>
+<p style="text-align: left;">数学家已经证明，分配给点的颜色相当于正方形在空间中的坐标。两张牌的颜色是否配对表示两个正方形的相对位置。</p>
+<p style="text-align: left;">点的颜色与正方形的具体关系是这样的：</p>
+<p style="text-align: left;">1、两对点完全相同，表示两个正方形完全重叠</p>
+<p><img height="auto" width="1076" src="http://p6.itc.cn/q_70/images03/20200830/6719e2f76084423f88082e0a1b7c5817.png" /></p>
+<p style="text-align: left;">2、两对点颜色都不同，且颜色都不配对，表示两个正方形有部分重叠</p>
+<p><img height="auto" width="1084" src="http://p0.itc.cn/q_70/images03/20200830/f472fa9c7c914135a99ced5b9bfb50c4.png" /></p>
+<p style="text-align: left;"><span>3、一对点颜色相同，另一对点颜色配对，表示两个正方形</span>共 <span>用一个边</span></p>
+<p><img height="auto" width="1080" src="http://p9.itc.cn/q_70/images03/20200830/bc06c84dd2964c70aea9989fda9f8a0f.png" /></p>
+<p style="text-align: left;">4、一对点颜色不同，另一对点颜色配对，表示两个正方形的边相互接触但不重合</p>
+<p><img height="auto" width="1086" src="http://p2.itc.cn/q_70/images03/20200830/abe2f2803f024ce69c899ad300166bd8.png" /></p>
+<p style="text-align: left;">2个点的凯勒图，要用2对颜色去填充牌面，总共有16种情况。</p>
+<p style="text-align: left;">然后我们把这16张牌摆在桌上，只有符合前面 <strong>条件4</strong>的两张牌，才用线将二者连起来。这样就构成了一张“凯勒图”。 </p>
+<p><img height="auto" width="1132" src="http://p4.itc.cn/q_70/images03/20200830/853b58730d94495682d13da9d97864c2.png" /></p>
+<p style="text-align: left;">包含16张牌的凯勒图就描绘了正方形填补平面的所有可能。</p>
+<p style="text-align: left;">如果2维空间中凯勒猜想不成立，那么我们肯定能找到4个正方形，它们之间没有共用的边，但是能够无缝隙填在一起。然后在屏幕上无限复制这4个正方形，就能填满整个屏幕。</p>
+<p style="text-align: left;">实际上并不可能。如果按此操作，只会得到有着无数孔隙（下图紫色部分）的填充方式。</p>
+<p><img height="auto" width="440" src="http://p3.itc.cn/q_70/images03/20200830/a8cae98d7a024525a79c42b5d7326a03.png" /></p>
+<p style="text-align: left;">对应到凯勒图中，就是找在图中找到4张牌，它们两两之间都有连线。（在数学里，这叫做 <strong>完全图</strong>。） </p>
+<p><img height="auto" width="492" src="http://p3.itc.cn/q_70/images03/20200830/e29fceaaf88b41fc815686ec247d445d.png" /></p>
+<p style="text-align: left;">显然，在2维问题的凯勒图中，我们找不到这样的4张牌。（可以自己去上面的凯勒图中找找看。）</p>
+<p style="text-align: left;">这样，我们把就把n维立方体以及位移s与牌的点数n、颜色对数s联系起来。</p>
+<p style="text-align: left;">作为更一般的规则，如果要证明n维凯勒猜想是错的，就要在对应的凯勒图中找到2 n 张牌，且这些牌两两相连。 </p>
+<p style="text-align: left;">正因为你找不到4个张牌组成的完全图，所以2维空间的凯勒猜想是对的。</p>
+<p style="text-align: left;">为了在3维空间中证明凯勒猜想，可以使用216张牌，每张牌上3个点，并可以使用3对颜色（这一点相对灵活）。然后，我们需要寻找2 3 =8张牌 ，它们两两之间都有连线，但还是找不到。 </p>
+<p style="text-align: left;">到了8维空间中，我们总算可以找到符合条件的256张牌，所以8维空间的凯勒猜想是错的。</p>
+<p><img height="auto" width="1004" src="http://p0.itc.cn/q_70/images03/20200830/507046f853bf43878ce08c4db562c3f8.png" /></p>
+<p><strong>△</strong>8维空间中的一个反例（一个凯勒图的完全子图） </p>
+<p style="text-align: left;">接下来的事情就是在7维空间对应的凯勒图上寻找 <strong>完全子图</strong>。然而这个问题却从8维问题解决后被搁置了17年。 </p>
+<p style="text-align: left;">根据前面的说明，求解8维空间和10维空间的凯勒猜想，要寻找2 8 =256和2 10 =1024张牌的子图，而7维空间只要寻找2 7 =128张牌的子图。 </p>
+<p style="text-align: left;">后者的难度似乎更小，7维空间的问题应该更简单啊！其实不然。</p>
+<p style="text-align: left;">因为，从某种意义上说，8维和10维可以“分解”为容易计算的较低维度，但7维不行。</p>
+<p style="text-align: left;">证明了10维情况的Lagarias说：“7维不好，因为它是质数，这意味着你无法将其分解为低维。因此别无选择，只能处理这些图的全部组合。”</p>
+<p style="text-align: left;">对于人脑来说，寻找大小为128的子图是一项艰巨的任务，但这恰恰是计算机擅长回答的问题。</p>
+<p>计算机帮忙 </p>
+<p style="text-align: left;">说干就干，此前证明8维问题的CMU教授Mackey拉上了斯坦福的数学在读博士Brakensiek和专长计算机辅助证明的助理教授Heule。</p>
+<p style="text-align: left;">回忆起立项的那天，Mackey说，Brakensiek是真正的天才，看着他就像看着NBA总决赛里的詹姆斯。Brakensiek本人确实很厉害，他曾是2013/14两届国际信息学奥赛金牌得主。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200830/ceca0ceaa498415f9300a98dec214295.jpeg" /></p>
+<p><strong>△ </strong>论文第一作者Brakensiek </p>
+<p style="text-align: left;">言归正传。为了方便计算机求解，他们换了个方向来思考：</p>
+<p style="text-align: left;">先设定牌上有7个点、6种可能的颜色，按照前面的“条件4”对这些牌上色，看看能不能找到128种不同的填色方法。如果找不到，那么凯勒猜想成立。</p>
+<p style="text-align: left;">用计算机辅助证明数学问题，还需要把它变成一系列逻辑运算，也就是处理01之间的与或非关系。</p>
+<p><img height="auto" width="1134" src="http://p0.itc.cn/q_70/images03/20200830/c5452d4d5b19409b8062f4780aefac51.png" /></p>
+<p><strong>△</strong>2的39000次方（来自Wolfram Alpha运算结果） </p>
+<p style="text-align: left;">一台普通电脑只能处理324位数种可能，离解决问题还远得很。就算交给超级计算机也不够。</p>
+<p style="text-align: left;">但是，这几位数学家想到了 <strong>排除法</strong>，只要得到结论，而不必实际检查所有可能性。效率才是王道！ </p>
+<p style="text-align: left;">比如，用计算机规则给128张牌上色，当你涂到第12张牌的时候，发现找不到符合条件的下一张牌了。那么所有包含这12张牌的排列都可以排除。</p>
+<p style="text-align: left;">提升效率的另一种方式是利用 <strong>对称性</strong>。如果已经验证了某种排列不可能，那与之对称的所有情况都可以排除。 </p>
+<p style="text-align: left;">通过这两种方法，他们把搜索空间缩小到10亿（2 30 ）。这样一来，用计算机搜索变成了可能。 </p>
+<p style="text-align: left;">最终，他们仅计算了 <strong>半个小时</strong>，便有了答案。 </p>
+<p style="text-align: left;">计算机没有找到符合条件的128张牌，所以7维空间的凯勒猜想确实成立。</p>
+<p style="text-align: left;">实际上，计算机提供的不仅仅是一个答案，证明的内容多达 <strong>200GB</strong>。4位论文作者将证明送入计算机的证明检查器，确认了它的可靠性。 </p>
+<p style="text-align: left;">解决了凯勒猜想后，Heule的下一个目标是用计算机证明数学里“最简单的不可能问题”—— <strong>3n+1猜想</strong>，去年陶哲轩已经“几乎”解决了这个问题，现在可能只差一步之遥了。 </p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">论文地址： </span></span></p>
+<p>https://arxiv.org/abs/1910.03740 </p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">源代码： </span></span></p>
+<p>https://github.com/marijnheule/Keller-encode </p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜所有的编程语言知识，都包含在这100张思维导图里了丨GitHub 13.1k星
+http://www.sohu.com/a/415604735_610300	14791
+<p>萧箫 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">编程里能用到的 <strong>所有知识</strong>，都在这里了。 </p>
+<p style="text-align: left;">这个号称东半球最全最酷的编程学习项目，不仅容纳了30万字的算法图解题典、100张各种编程语言的思维导图、1000本编程电子书，还有100篇大厂的面经。</p>
+<p style="text-align: left;">无论你是想收获大厂offer，还是不图名利、遍历编程的各种算法语言精髓，这里都能找到适合你的读物。</p>
+<p style="text-align: left;">最关键的是， <strong>0门槛</strong>。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200830/ceca9a2f21df44bda10bc8fd1681f99f.png" /></p>
+<p style="text-align: left;">那么，这份最近超火的编程学习项目，到底都有什么？</p>
+<p>30万字，图解100道算法难题 </p>
+<p style="text-align: left;">整个学习项目中的精华，自然是小浩 <strong>亲自编写</strong>的算法题解。 </p>
+<p style="text-align: left;">据小浩本人介绍，这份算法 <strong>绝对严谨</strong>，所有题解都在Leetcode上进行过测试运行。 </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200830/3f16eb3dcec04707a9fd6ab0c602b730.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">至于算法价值，小浩透露，有培训中心将他的这本算法图解拿去「卖钱」。</p>
+<p style="text-align: left;">竟然能让培训中心拿来作为打广告的筹码？</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200830/e808b12fc132478692da6879e7984c46.png" /></p>
+<p><strong>△</strong>图源自公众号小浩算法 </p>
+<p style="text-align: left;">是不是有点好奇了，来看看这些算法题解的画风：</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200830/84fb40d5542844ddb13fd0e10794466c.png" /></p>
+<p style="text-align: left;">看起来，小浩本人给每个算法都加上了图解，并配上了文字说明，让整个算法的解题方法看起来更加通俗易懂。</p>
+<p style="text-align: left;">不仅如此，每个算法的后面也配有相应的题解：</p>
+<p style="text-align: left;"><img src="http://p1.itc.cn/q_70/images03/20200830/21a2a3af68f14d4b94c5d236e84cba0e.png" /></p>
+<p style="text-align: left;">不仅有简单易懂的注释，而且整体程序的结构也非常清晰。</p>
+<p style="text-align: left;">看起来，0经验上手代码的确不是梦。</p>
+<p style="text-align: left;">什么，你说这样的算法太简单，对你来说不适用？</p>
+<p style="text-align: left;">没关系，算法题目被分成了 <strong>简单与进阶</strong>两个程度，如果简单的题目已经无法难倒你，可以直接上手进阶题目，走向算法的更高境界。 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200830/07cedae6164f4deabf1f546b486a74af.png" /></p>
+<p style="text-align: left;">当然，除了算法题解，这里也收集了非常全面的 <strong>面试经验</strong>，几乎可以说是从入门到offer一路通了。 </p>
+<p>100篇大厂面经，狂揽Offer </p>
+<p style="text-align: left;">编程作为一个讲求实际的技术，无论学习多少知识，最终变现、手拿offer才是进步的动力 <span>（doge）</span>。 </p>
+<p style="text-align: left;">这里直接列出了100篇大厂的面经，而且还对相关岗位做了细分，从 <strong>题目类型、解答到面试内容</strong>都有。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200830/f005437739e34d84a509f1f3026a4d47.png" /></p>
+<p style="text-align: left;">如果你学完这里面的面试题和基本知识，大厂offer也手持在望了。</p>
+<p style="text-align: left;">不仅如此，作者小浩还对如何刷题、什么样的需求适合刷什么样的题进行了解读。</p>
+<p style="text-align: left;">例如，心仪的公司是中小型公司的话，那就考虑一下这个「千方百计C语言部分500题」吧。</p>
+<p>100张思维导图，遍历所有编程语言 </p>
+<p style="text-align: left;">当然，如果想成为一个合格的码农，了解一种编程语言是远远不够的。</p>
+<p style="text-align: left;">毕竟，每种编程语言都有彼此的共通之处，也各自适用于不同的地方，例如，Python就整天被拿来当成计算器 <span>（雾）</span>。 </p>
+<p style="text-align: left;">无论是最近很火的Java，还是踏实稳健的C++，在这里都能找到详细的思维导图图解。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200830/7b5a51c235aa47b39ac4e9786e18717e.png" /></p>
+<p style="text-align: left;">以Docker镜像下的分支为例，非常详细地将需要了解的重点码了出来，哪个知识点不会，就去恶补一下，整体框架一目了然。</p>
+<p style="text-align: left;">这样，就不用担心面试的时候突然被问到某个语言时，当场愣住了。</p>
+<p>1000本电子书 </p>
+<p style="text-align: left;">电子书看起来有些杂，不仅有操作系统、智能系统、MySQL、大数据等等语言无关的计算机相关知识；还有Android、Go、Shell、PHP这种语言相关的学习书籍。</p>
+<p style="text-align: left;">光是语言无关类的大分类，就有19种。</p>
+<p style="text-align: left;">至于语言，则有33种时下比较热门的编程电子书。</p>
+<p style="text-align: left;">大致画风是这样的：</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200830/664b94f765484aec93ce0bb005e30df8.png" /></p>
+<p style="text-align: left;">也就是说，无论是算法，还是编程理论知识，都能在这里找到你想要的书籍。</p>
+<p style="text-align: left;">当然，作者本人也说了，在精不在多， <strong>找到适合自己的资料最重要</strong>。 </p>
+<p>一点小限制 </p>
+<p style="text-align: left;">一切看起来都非常完美，就是有一点小缺陷，这个算法的所有解题答案基本都是通过 <strong>go语言</strong>和 <strong>java语言</strong>编写的 <span>（看起来，作者本人的确是这两种语言的忠实粉丝）</span>。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;">不过，算法的逻辑依旧适用于所有语言。</p>
+<p style="text-align: left;">如果能用其他语言将算法的逻辑实现出来，相信对答案本身也会有进一步了解。</p>
+<p style="text-align: left;">事实上，每道算法题的下面基本都有评论，有好学的网友，已经开始在题目下面「打卡」，例如一位学习Java的网友，就在一道题下面给出了自己的答案。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200830/539719265f57414aa6d04fc9bb5a9201.png" /></p>
+<p style="text-align: left;">如果实在想不出来，也不妨逛逛评论区，说不定会有意想不到的收获。</p>
+<p>“意外”走红的项目 </p>
+<p style="text-align: left;">据作者小浩本人介绍，事实上，除了学习教程类项目在GitHub上本身吃香以外，这次的算法走红也有一定的原因。</p>
+<p style="text-align: left;">小浩分析了一些GitHub上的项目后发现，此前有关于学习教程类的中文项目，之所以在国外不太受欢迎，某种程度上也是因为没有英文。</p>
+<p style="text-align: left;">于是，小浩做了一些努力，在自己的项目中创建了英文分支，也对其中的一些内容进行了英文翻译。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200830/34abd3d7001242babc85979dd35d4a88.png" /></p>
+<p style="text-align: left;">在那之后，小浩也收到了不少邮件和Issue，询问他是否有完整翻译版本，在国外的受欢迎度也有所提高。</p>
+<p style="text-align: left;">虽然如此，这次的走红还是让他有点意外。</p>
+<p style="text-align: left;">毕竟，将这个项目开源到GitHub的初衷，只是因为有不良商家将他的算法图解拿去卖钱。</p>
+<p style="text-align: left;">不过，对于算法项目走红，小浩也感到高兴，毕竟这样能给更多想要入门算法的人提供帮助。</p>
+<p style="text-align: left;"><span>项目链接：</span></p>
+<p><span>https://github.com/geekxh/hello-algorithm</span></p>
+<p style="text-align: left;"><span>参考链接：</span></p>
+<p><span>https://mp.weixin.qq.com/s/oTqEyAAQuq1eNF2Wz5tjUA</span><span></span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜什么，PyTorch还能开发新药？哈佛推出这款工具包，10行代码训练“药神”模型
+http://www.sohu.com/a/415604738_610300	14791
+<p>萧箫 编辑整理 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">最近，来自哈佛大学等机构的研究人员，开发出了一个AI“药神”工具包，为加速 <strong>新冠疫情下的新药研发</strong>助力。 </p>
+<p style="text-align: left;">这款名为 <strong>DeepPurpose</strong>的工具包，不仅包含COVID-19的生物测定数据集，还有 <strong>56种前沿的AI模型</strong>。 </p>
+<p style="text-align: left;">作为一个基于PyTorch的工具包，DeepPurpose只需要不到10行代码，就能训练出AI“药神”模型。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200830/be05459e55754fcab8cdab13a2ec5281.png" /></p>
+<p style="text-align: left;">这些模型不仅能完成虚拟筛选，还能挖掘出已有药物的新功能 <span>（例如，高血压药物可治疗阿尔兹海默症）</span>。 </p>
+<p style="text-align: left;">下面来看看它实现的原理。</p>
+<p>56种前沿模型，功能齐全 </p>
+<p style="text-align: left;">DeepPurpose由两个编码器组成，分别用来生成药物分子和蛋白质的嵌入 <span>（Embedding）</span>，也就是深度学习过程中的映射。 </p>
+<p style="text-align: left;">随后，将这两个编码器串联到解码器中，用于预测二者的结合亲和力，如下图所示。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200830/71a1c55fe4664e34b53e0e181424c29a.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">在这期间，模型的输入是药物靶标对 <span>（drug-target pair）</span>，输出则是指示药物-靶对的结合活性的分数。 </p>
+<p style="text-align: left;">当然，DeepPurpose毕竟是一个工具包，所以无论是药物分子、还是蛋白质，它们的编码器都 <strong>不止一种类型</strong>。 </p>
+<p style="text-align: left;">对于药物分子，DeepPurpose提供了 <strong>8种编码器</strong>。 </p>
+<p style="text-align: left;">在这些编码器中，有用于构造分子结构图的、有将绘制的分子转换成二进制数的、也有用于获取序列顺序信息的等……模型各有不同。</p>
+<p style="text-align: left;">而对于靶蛋白，DeepPurpose也提供了 <strong>7种编码器</strong>，相较于药物的化学和信息学， 编码器对靶蛋白的转换更多地侧重于生物学信息。 </p>
+<p style="text-align: left;">也就是说，DeepPurpose一共能提供7*8=56种模型，其中许多模型非常新颖前沿，值得入手。</p>
+<p style="text-align: left;">那么，DeepPurpose究竟该怎么上手呢？</p>
+<p>10步以内，上手AI“药神” </p>
+<p style="text-align: left;">事实上，训练一个新药研发模型，需要通过以下几个步骤，每一步都只需要用 <strong>1行代码</strong>实现，所有这些步骤加起来，也 <strong>不超过10步</strong>。 </p>
+<p style="text-align: left;">来看看这个模型要经过的步骤：</p>
+<blockquote>
+<p style="text-align: left;">1、数据加载 </p>
+<p>2、指定编码器 </p>
+<p>3、分割数据集、编码 </p>
+<p>4、生成模型配置文件 </p>
+<p>5、初始化模型 </p>
+<p>6、训练模型 </p>
+<p>7、旧药新用/虚拟筛选 </p>
+<p>8、模型保存/加载 </p>
+</blockquote>
+<p style="text-align: left;">1、数据加载 </p>
+<p>2、指定编码器 </p>
+<p>3、分割数据集、编码 </p>
+<p>4、生成模型配置文件 </p>
+<p>5、初始化模型 </p>
+<p>6、训练模型 </p>
+<p>7、旧药新用/虚拟筛选 </p>
+<p>8、模型保存/加载 </p>
+<p style="text-align: left;">其中，DeepPurpose最关键的两个功能， <strong>旧药新用</strong>和 <strong>虚拟筛选</strong>可以在训练后实现。可以看见，DeepPurpose会自动生成药物的亲和度，并由低到高进行排序。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200830/3bb24e5ae6234e6e9e5c453c7c99d5ad.png" /></p>
+<p style="text-align: left;">这样，就能快速缩小高通量分子的筛选范围 <span>（如果亲和度为0，那真的不必考虑了）</span>。 </p>
+<p style="text-align: left;">至于虚拟筛选，也是类似的工作，会生成一个与上图相似的排名列表。</p>
+<p style="text-align: left;">不仅如此，这个AI模型还包含另外几种案例，例如SARS-CoV2 3CLPro的旧药新用方法、预训练模型等。</p>
+<p style="text-align: left;">此外，针对近期引发关注的新冠疫情，DeepPurpose也包含了 <strong>MIT收集的COVID-19开源数据集</strong>。 </p>
+<p style="text-align: left;">针对这些数据，工具包中有相应的函数，可以直接引用。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200830/d8a75bb606bc4f3da85e5b4348c66590.png" /></p>
+<p style="text-align: left;">而这个工具包的框架，正是基于 <strong>药物研发的原理</strong>制作的。 </p>
+<p>靶蛋白：药物作用对象 </p>
+<p style="text-align: left;">药物筛选最根本的原理，通常是判断药物分子与靶蛋白 <span>（药物作用的目标）</span>的 <strong>亲和性</strong>。 </p>
+<p style="text-align: left;">为什么是蛋白质？</p>
+<p style="text-align: left;">事实上，这是因为部分疾病 <span>（例如癌症、肿瘤）</span>产生的原因，通常与某一类蛋白质有关，如果能找到、并用药物“调节”这种蛋白质，就能治愈疾病。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200830/2691c9af74024db9aafd4cf4249712af.png" /></p>
+<p><strong>△</strong>图片来源于flickr </p>
+<p style="text-align: left;">例如，细胞与细胞之间的交流，依靠的就是细胞膜上的糖蛋白。而某种疾病发生的原因，可能就是因为一类细胞上的糖蛋白 <strong>过度表达</strong>。 </p>
+<p style="text-align: left;">而这个糖蛋白，就被称之为疾病过程中的 <strong>靶蛋白</strong>。 </p>
+<p style="text-align: left;">但能用来调节某种靶蛋白的药物，并不好找，毕竟不是每种化合物都能很好地与靶蛋白“贴贴”。</p>
+<p style="text-align: left;">在这样的基础上，研究人员开发了DeepPurpose，这个工具包能用于预测药物分子与靶蛋白的亲和度，专业学术名词叫药物-靶标相互作用 <span>（Drug-Target Interaction, DTI）</span>，简称 <strong>DTI</strong>。 </p>
+<p style="text-align: left;">之所以选择用AI助力新药研发，也有其背后的原因。</p>
+<p>AI助新药研发一臂之力 </p>
+<p style="text-align: left;">事实上，药厂研发出一种新药，需要 <strong>15年</strong>左右，甚至更久。 </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200830/340968bec0564d5a99da3c4ad9d5cc58.png" /></p>
+<p style="text-align: left;">而在这期间，光是 <strong>研究开发</strong>的阶段，就要花掉 <strong>2-10年</strong>。 </p>
+<p style="text-align: left;">研究开发的阶段，目的是筛选出有治疗潜力的新化合物，也就是说，每一种化合物都需要做实验，去不断试错。</p>
+<p style="text-align: left;">这一过程不仅枯燥无味，而且工程量巨大，人力财力都得砸。</p>
+<p style="text-align: left;">如果用AI完成药物筛选这一过程，对于新药研发的加速将会起到不小的作用。</p>
+<p>作者介绍 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200830/a321c99a90384ef6a40a1aca50c8a089.png" /></p>
+<p style="text-align: left;">论文的第一作者黄柯鑫，本科于纽约大学获得数学和计算机双学位，目前在哈佛大学读硕士，专业与医疗大数据有关。 </p>
+<p style="text-align: left;">黄柯鑫的研究方向，主要是图神经网络 <span>（GNN）</span>在新药研发和医疗文本 <span>（如电子病历等）</span>上的应用。 </p>
+<p style="text-align: left;">此外，Tianfan Fu、Lucas Glass、Marinka Zitnik、Cao Xiao和Jimeng Sun也共同参与了研究工作。</p>
+<p style="text-align: left;"><strong>传送门</strong></p>
+<p style="text-align: left;"><span>论文链接：</span></p>
+<p><span>https://arxiv.org/abs/2004.08919</span></p>
+<p style="text-align: left;"><span>项目链接：</span></p>
+<p><span>https://github.com/kexinhuang12345/DeepPurpose</span></p>
+<p style="text-align: left;"><span>黄柯鑫主页：</span></p>
+<p><span>https://www.kexinhuang.com/</span><span></span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

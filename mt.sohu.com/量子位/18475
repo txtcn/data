@@ -1,0 +1,83 @@
+➜代码改动两三行，AI数据秒换隐身衣！隐私计算+AI？如何一键切换
+http://www.sohu.com/a/410918627_610300	23185
+<p><strong>脱了马甲我照样儿认识你！</strong></p>
+<p>这句在2000春晚赵本山的经典台词，放在<strong>隐私圈</strong>有了新的解释：在不看到数据“真面目”的情况下，照样能得到答案。</p>
+<p>数据的进击与人工智能的野望</p>
+<p>随着人工智能（AI）技术的不断发展和各种产品落地，<strong>数据</strong>作为各种人工智能算法的<strong>原材料</strong>，其价值已经普遍得到大家认可。各个公司能够采集到的数据毕竟有限，想得到更精准的训练模型，就需要将数据联合起来挖掘更大的价值。</p>
+<p>但真正让数据“流动”并不简单，对于拥有数据的各个企业来说，面临着很大的矛盾：<strong>通过数据分享和交互显然可以提升AI算法的效果，但同时又必须要保障自己的数据不泄露出去。</strong></p>
+<p>Rosetta让隐私计算与AI攻守结合</p>
+<p>而解决数据的动态使用、分享中的安全问题，正是<strong>“隐私计算+AI”</strong>技术的专长。其融合在数据的使用、处理过程之中，保障计算过程本身（广义的讲，还包括计算结果）不会泄露原始明文数据本身的信息。</p>
+<p>国内首个自主研发的基于主流TensorFlow框架的隐私AI框架可以解决以上种种问题：<strong>Rosetta</strong> 。</p>
+<p>“Rosetta”名称取自古埃及的罗塞塔石碑（Rosetta Stone）。其上记载着古埃及象形文字、埃及草书和古希腊文三种文字。</p>
+<p>这里寓意着Rosetta框架将承载和结合AI、隐私AI和区块链三种典型的技术。这使得Rosetta的发展方向聚焦在以下三个方面：</p>
+<ul>
+<li>面向AI需求，服务AI开发者</li>
+<li>完全开源，透明开放</li>
+<li>持续集成高效、可扩展的隐私保护技术后端</li>
+</ul>
+<p>目前开源的 Rosetta 0.2.0版本中，以TensorFlow这一流行AI框架为基础，深度改造其python前端和后端kernel，融合了最前沿的安全多方计算（MPC）算法协议。</p>
+<p>那么让我们揭开Rosetta的神秘面纱，先睹为快，举一个简单的“硬核”例子：</p>
+<p>假设现在有三个个体A，B和C各自都具有自己采集到的一批私有数据，并且已经各自经过标准的特征工程等方式将其表达为三个矩阵Ma，Mb和Mc，正如大部分的AI算法（比如推荐系统）那样，某一个步骤中需要执行矩阵乘法这样的算子操作。</p>
+<p>显然为了保护数据的隐私，三方之间是不能将各自的数据直接明文的传输给其他参与者的，而这样的计算又必须要进行数据的交互，这时，用户可以引入Rosetta框架后很快的解决这一问题。</p>
+<p>Rosetta框架实例分析</p>
+<p>比如，各方在本地有一样的如下脚本rosetta_demo.py (这里为了更加直观的体验，我们以各方通过console输入简单的数据来示例，真实场景下可以调用隐私数据文件读取接口来输入)：</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200801/03d79be853824fb685460bc3e974add7.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>A 、B和C方在完成配置好网络拓扑配置文件后，分别运行</p>
+<p>python rosetta_demo.py --party_id=0</p>
+<p>python rosetta_demo.py --party_id=1</p>
+<p>python rosetta_demo.py --party_id=2</p>
+<p>然后，各方分别按照提示在终端中输入各自的私有数据，比如A方可以按照如下提示输入其对应的矩阵元素值：</p>
+<p>[2020-07-29 20:10:49.070] [info] Rosetta: Protocol [SecureNN] backend initialization succeeded!</p>
+<p>please input the private data (float or integer, 6 items, separated by space): 2 3 1 7 6 2</p>
+<p>假设A方输入的私有矩阵为</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200801/212bdbc528d047419a07624b2bdf22cf.jpeg" max-width="600" /></p>
+<p>,B方输入的私有矩阵为</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200801/d3b795340ae642018a8600fe62f6cf6e.jpeg" max-width="600" /></p>
+<p>,C方输入的素有矩阵为</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200801/8008179ed490421e8697c8aeb79ef1c9.jpeg" max-width="600" /></p>
+<p>。</p>
+<p>我们先直接打印出算子计算的结果，此时各方本地输出的是各不相同的被编码后的密文信息,比如：</p>
+<p>local ciphertext result: [[b'D\xa9P\xfeul\x00\x00#' b'\xcbj\x1c\x1f*D\x00\x00#' b'\xef\xdb\xa2\xddS\x90\xff\xff#' b'\xaa:\xbcD\x96\x83\xff\xff#']</p>
+<p>[b'\x16\xb3\xf6\xa9@x\x00\x00#' b'4\xff/\x99\xc9\xbb\xff\xff#' b'8\x11\xfa\xa1Y&lt;\x00\x00#' b'_9\x92&gt;\xea6\x00\x00#']</p>
+<p>[b'\xeb)\xf3\xa0\xfa\xc6\xff\xff#' b"\x1c'\xec\x80\xa1%\x00\x00#" b'\xf4\xcd\xc4\xb6\xfb\x1a\x00\x00#' b'B\x10\xeeNd\xe6\xff\xff#']]</p>
+<p>在上述脚本的最后我们显式的调用了SecureReveal接口来将隐私AI的结果“解密”出来，且通过设定参数为5来要求只有A和C可以得到明文值，所以A方和C方将得到类似如下的正确明文结果：</p>
+<p>plaintext matmul result: [[b'8.000000' b'14.000000' b'18.000000' b'4.000000']</p>
+<p>[b'4.000000' b'7.000000' b'9.000000' b'2.000000']</p>
+<p>[b'24.000000' b'42.000000' b'54.000000' b'12.000000']]</p>
+<p>[2020-07-29 20:11:06.452] [info] Rosetta: Protocol [SecureNN] backend has been released.</p>
+<p>而B方则不会得到正确的明文计算结果，其输出是：</p>
+<p>plaintext matmul result: [[b'0.000000' b'0.000000' b'0.000000' b'0.000000']</p>
+<p>[b'0.000000' b'0.000000' b'0.000000' b'0.000000']</p>
+<p>[b'0.000000' b'0.000000' b'0.000000' b'0.000000']]</p>
+<p>[2020-07-29 20:11:06.558] [info] Rosetta: Protocol [SecureNN] backend has been released.</p>
+<p>可以看出除了必要的数据预处理接口外，我们完全的复用了TensorFlow中的算子，在更复杂的计算逻辑图中，你可以像这个trivial例子中的Matmul一样，直接使用native TensorFlow的算子即可，不需要感知任何后端复杂的隐私协议！</p>
+<p>AI开发者能在不需要对隐私AI技术有任何了解的情况下，<strong>只需要改动两三行代码即可将现有AI代码转换为具备数据隐私保护功能的程序</strong>，Rosetta可以说是AI开发者的“贴心小马甲”。</p>
+<p>为了更相近了解这种隐私保护技术，量子位邀请到矩阵元算法科学家谢翔博士进行直播分享，<strong>Rosetta如何将隐私计算能力赋予人工智能</strong>，让我们的隐私更安全。</p>
+<p>分享内容</p>
+<ul>
+<li>隐私计算背景介绍</li>
+<li>如何实现隐私保护</li>
+<li>什么是Rosetta</li>
+<li>Rosetta运行原理</li>
+<li>Rosetta的应用场景</li>
+<li>未来的规划</li>
+</ul>
+<p>嘉宾介绍：</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200801/9a85f0930a324ae09ac006a5b4765dac.jpeg" max-width="600" /></p>
+<p><strong>谢翔，中国科学院软件研究所博士</strong>，矩阵元算法科学家，负责公司整体隐私计算技术的预研和产品化，主导设计和开发Rosetta开源框架。</p>
+<p>格密码理论、同态加密、零知识证明、安全多方计算等密码学算法和协议设计的专家。发表论文10余篇，曾在密码学的顶尖学术会议Eurocrypt，CCS上发表论文。</p>
+<p>直播&amp;报名</p>
+<p>直播时间：</p>
+<p>2020年8月6日（周四），19:00-20:30</p>
+<p>其中分享时间为60分钟，问答交流环节30分钟</p>
+<p>报名方式：</p>
+<p>添加小助手，qbitbot9，将邀请您加入直播群。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200801/8f62a413378d4f70bde365c67dd68715.jpeg" max-width="600" /></p>

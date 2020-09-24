@@ -1,0 +1,71 @@
+➜AI在茫茫人海中，看到只有你被Deepfake了丨阿里安全出品
+http://www.sohu.com/a/414393898_610300	21766
+<p>鱼羊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">自打有了deepfake，再也不敢相信「眼见为实」了。</p>
+<p style="text-align: left;">要说把朱茵换脸成杨幂，把海王换脸成徐锦江，大家还可以一笑而过。</p>
+<p><strong><img src="http://p8.itc.cn/q_70/images03/20200822/b64c5892090949c4bbaf09aa7eba557e.gif" /></strong></p>
+<p><strong>△</strong>图源：微博用户@慢三与偏见 </p>
+<p style="text-align: left;">可若是公众人物被deepfake了什么不该说的话、不该做的事，就让人细思极恐了。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200822/4a206224343c42ca90c66080ee03a9da.gif" /></p>
+<p style="text-align: left;">为了防止世界被破坏，为了维护世界的和平，（狗头）现在，阿里安全图灵实验室也加入了“围剿”deepfake的队列：</p>
+<blockquote>
+</blockquote>
+<p style="text-align: left;">魔高一尺，道高一丈。deepfake和deepfake检测技术的较量其实早已展开。</p>
+<p style="text-align: left;">不过，此前存在的deepfake检测方法主要分为两类：帧级检测和视频级检测。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">基于帧级的方法需要高成本的帧级别标注，在转化到视频级任务时，也需要设计巧妙的融合方法才能较好地将帧级预测转化为视频级预测。简单的平均值或者取最大值极易导致漏检或误检。</p>
+<p style="text-align: left;">而基于视频级别的检测方法，比如LSTM等，在deepfake视频检测时，过多专注于时序建模，导致deepfake视频的检测效果受到了一定的限制。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200822/a4fbaf0214ca42faa55b0bf6edc3e7b3.png" /></p>
+<p><strong>△</strong>部分deepfake攻击，四个人中只有一人被换脸 </p>
+<p style="text-align: left;">为了解决这些问题，阿里安全图灵实验室的研究人员们提出了基于多实例学习的Sharp-MIL <span>（S-MIL）</span>方法，只需视频级别的标注，就能对deepfake作品进行检测。 </p>
+<p style="text-align: left;">核心思想是，只要视频中有一张人脸被篡改，那么该视频就被定义为deepfake视频。这就和多实例学习的思想相吻合。</p>
+<p style="text-align: left;">在多实例学习中，一个包由多个实例组成，只要其中有一个实例是正类，那么该包就是正类的，否则就是负类。</p>
+<p style="text-align: left;">S-MIL就将人脸和输入视频分别当作多实例学习里的实例和包进行检测。</p>
+<p style="text-align: left;">并且，通过将多个实例的聚合由输出层提前到特征层，一方面使得聚合更加灵活，另一方面也利用了伪造检测的目标函数直接指导实例级深度表征的学习，来缓解传统多实例学习面临的梯度消失难题。</p>
+<p style="text-align: left;"><img src="http://p3.itc.cn/q_70/images03/20200822/d3f6620267b849eb8a13b6022a1e3289.png" /></p>
+<p style="text-align: left;">具体而言，算法主要由三个关键部分组成。</p>
+<p style="text-align: left;">首先，对输入视频中的采样帧进行人脸检测，并将提取的人脸喂给CNN，以获取特征作为实例。</p>
+<p style="text-align: left;">在实例设计上，与传统多实例学习的设定一样，实例与实例间是相互独立的。</p>
+<p style="text-align: left;">但由于deepfake是单帧篡改的，导致同一人脸在相邻帧上会有一些抖动，就像这样：</p>
+<p style="text-align: left;"><img src="http://p6.itc.cn/q_70/images03/20200822/6b570d8d34ff48ff8b024ecceeaefc6d.png" /></p>
+<p style="text-align: left;">为此，研究人员设计了时空实例，用来刻画帧间一致性，用于辅助deepfake检测。</p>
+<p style="text-align: left;">具体而言，使用文本分类里常用的1-d卷积，使用不同大小的核对输入的人脸序列从多视角上进行编码，以得到时空实例，用于最终检测。</p>
+<p style="text-align: left;">也就是说，第二步，是将编码后的时空实例提取出来，形成时间核大小不同的时空包。这些包被一起用来表示一段视频。</p>
+<p style="text-align: left;">最后，对这些包进行S-MIL，算出所有包的fake分数，这样，就能得到整个视频的最终fake分数，从而判断视频到底是不是deepfake。</p>
+<p style="text-align: left;">S-MIL定义如下：</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200822/32bec8e4890f488b960fc0a696e16bfd.jpeg" /></p>
+<p style="text-align: left;">其中，pi和p(i)^(j)分别是第i个包及其包里的第j个实例的正类概率；M为包里的实例数；w是网络参数；h(i)^(j)是包i里的实例j对应的特征。</p>
+<p style="text-align: left;"><img src="http://p5.itc.cn/q_70/images03/20200822/08b644614c4f4d6f9b986535012f5e4f.png" /></p>
+<p style="text-align: left;">由于现有的带帧标签的数据集中，同一视频中真假人脸混杂的样本较少，研究人员还构建了一个部分攻击数据集 <strong>FFPMS</strong>。 </p>
+<p style="text-align: left;">FFPMS共包含14000帧，包括4种类型的造假视频 <span>（DF、F2F、FS、NT）</span>和原始视频，既有帧级标签，也包含视频级标签。 </p>
+<p>检测效果达到SOTA </p>
+<p style="text-align: left;">研究人员在DFDC、Celeb和FFPMS数据集上对S-MIL进行了评估。</p>
+<p style="text-align: left;">实验结果表明，假脸的权重比较高，说明该方法在仅需视频级别标签的情况下，可以很好地定位到假脸，具有一定的可解释性：</p>
+<p style="text-align: left;"><img src="http://p0.itc.cn/q_70/images03/20200822/3089a18a5f3f4fe3b3a331b0e8c62afb.png" /></p>
+<p style="text-align: left;">并且，该方法在视频检测上能到达到state-of-the-art的效果。</p>
+<p style="text-align: left;"><img src="http://p8.itc.cn/q_70/images03/20200822/5a4f24c8d8fa4929986905f435e4d56a.png" /></p>
+<p style="text-align: left;"><img src="http://p3.itc.cn/q_70/images03/20200822/bb3abe86f7a548c5bc0c4110dc36b45f.png" /></p>
+<p>团队介绍 </p>
+<p style="text-align: left;">据阿里安全图灵实验室资深算法专家华棠介绍，截止目前，阿里已经将该检测技术使用在内容安全场景中，后续也会在直播场景中进行布局。</p>
+<p style="text-align: left;">阿里安全成立于2005年，目标是面向阿里巴巴经济体建立全面的网络安全、业务安全、数据安全与平台治理的管理机制，利用大数据构建强大的实时风险防御能力。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200822/f9548e5ea37344b0a059b4396abba419.jpeg" /></p>
+<p>传送门 </p>
+<p style="text-align: left;">论文地址： </p>
+<p>https://arxiv.org/abs/2008.04585 </p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

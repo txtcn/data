@@ -1,0 +1,217 @@
+➜安卓用户又少了一项自由，Android 11不再支持更改默认相机程序
+http://www.sohu.com/a/413869579_610300	17626
+<p>萧萧 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">在微博、微信上想要拍照上传时，想直接用FaceU或美图秀秀作为默认拍照程序，给自拍加个滤镜？</p>
+<p style="text-align: left;">在即将推出的Android 11里，这些第三方相机的选择都将 <strong>不复存在</strong>—— </p>
+<p style="text-align: left;">谷歌大手一挥，砍掉了安卓11里第三方相机应用 <strong>响应捕获图片、视频</strong>的权限，用户得使用默认相机拍照。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200819/ac9f8db70b324765a56722ab80861926.png" /></p>
+<p><strong>△</strong>图源Android Developers </p>
+<p style="text-align: left;">也就是说，假设你在微博、微信或QQ等社交媒体上冲浪，想要拍照上传，原本拍照时可以用某个相机「加滤镜」，现在没得选了。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200819/53aa0989196b4873b7448b8248f8aa89.png" /></p>
+<p style="text-align: left;">如果这些第三方相机应用想「拿回」这些权限，估计得另辟蹊径。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">对此，网友已经炸开了锅。</p>
+<p style="text-align: left;">有对此举「感到冒犯」的网友，已经不打算升级安卓11了：</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200819/2791902416404791b4850a15afa9462f.png" /></p>
+<blockquote>
+<p style="text-align: left;">如果你还想在你的手机上用GCam应用（相机应用），而不是默认相机app，那就别升级到谷歌的安卓11版本。</p>
+</blockquote>
+<p style="text-align: left;">如果你还想在你的手机上用GCam应用（相机应用），而不是默认相机app，那就别升级到谷歌的安卓11版本。</p>
+<p style="text-align: left;">也有网友调侃，安卓与苹果正在「走向彼此」：</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200819/b46a97ebdab5454888e1e74b3a7c11f1.png" /></p>
+<blockquote>
+<p style="text-align: left;">安卓开始加这些限制，苹果倒是开始自定义了。所以随着更新，安卓开始走向iOS，iOS将变得像安卓一样？</p>
+</blockquote>
+<p style="text-align: left;">安卓开始加这些限制，苹果倒是开始自定义了。所以随着更新，安卓开始走向iOS，iOS将变得像安卓一样？</p>
+<p style="text-align: left;">那么，对于这次的变动，安卓上的相机应用能否走点「歪门邪道」？</p>
+<p style="text-align: left;">似乎并不行。</p>
+<p style="text-align: left;">这次的限制看起来比较严格，Android 11甚至 <strong>阻止</strong>了开发人员采用自己的方式 <strong>模拟</strong>相机拾取器的功能。 </p>
+<p style="text-align: left;">有开发者“不信邪”，使用自制的小程序进行了测试，这个小程序可以用来查询手机上的相机应用。</p>
+<p style="text-align: left;">他在安卓10和11上都运行了这个程序，结果发现，相比于安卓10能检测到所有的相机应用，安卓11甚至连默认相机都不显示。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200819/99f562fe3d944c49877987d83423307f.png" /></p>
+<p><strong>△</strong>上下图分别为安卓10和安卓11 </p>
+<p style="text-align: left;">尽管谷歌已经为开发人员提供了一种解决办法，但听起来有些不切实际。</p>
+<p style="text-align: left;">举个例子，如果「微博」想要允许「美图秀秀」相机拍照的话，它需要额外弹出一个「美图秀秀」的应用请求 <span>（就像下载app的弹窗广告一样）</span>。 </p>
+<p style="text-align: left;">如果用户想在「微博」自拍美颜照上传，就得从「微博」 <strong>直接跳转</strong>到「美图秀秀」，为的只是拍一张自拍。 </p>
+<p style="text-align: left;">听起来是真麻烦。</p>
+<p style="text-align: left;">虽然这次的改变，对于习惯默认相机的用户来说，不是一个大改动，但却足以引起一些安卓开发者的警觉。</p>
+<p style="text-align: left;">毕竟，相比于苹果，安卓的开发平台一直以 <strong>自由开放</strong>着称。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200819/664ee49ccad8460eb94ceb8f78cf1974.png" /></p>
+<p style="text-align: left;">只要开发人员会编写程序，他们理论上能在安卓平台上完成各种任务。</p>
+<p style="text-align: left;">然而，安卓近10年的每一次重大更新，都会关闭某些功能、或是增加限制，官方统一的说法是，这么做是为了 <strong>保护用户的隐私安全</strong>。 </p>
+<p style="text-align: left;">这一次关闭程序中的相机拾取器，官方给出的理由也是如此，据谷歌的说法：“我们认为，保护用户的隐私和安全是正确的权衡。”</p>
+<p style="text-align: left;">但这样的做法，对于长期受益于安卓平台开放性的开发者来说，显然不是一个可以接受的理由。</p>
+<p style="text-align: left;">有用户表示，希望官方「理由能再清楚点」。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200819/2a92984b7741427da84468ae37c6edb3.png" /></p>
+<blockquote>
+<p style="text-align: left;">希望官方能给出更清楚一点的原因，安卓长期以来作为一个开放平台，这样的限制看起来非常诡异。</p>
+</blockquote>
+<p style="text-align: left;">希望官方能给出更清楚一点的原因，安卓长期以来作为一个开放平台，这样的限制看起来非常诡异。</p>
+<p style="text-align: left;">事实上，谷歌此举也有自己的原因所在。</p>
+<p style="text-align: left;">由于安卓平台的开放性，导致应用不需要通过应用商店就能直接下载，这也给了部分恶意应用的可乘之机。</p>
+<p style="text-align: left;">此前有新闻报道，国外一个下载量几亿的BeautyPlus应用，被爆出来用用户的数据和图像进行不法应用。</p>
+<p style="text-align: left;">想象一下，你在使用某款美颜相机的时候，你的照片不知不觉就被盗用于进行违法犯罪的行为。</p>
+<p style="text-align: left;">甚至，用户在不知情的情况下，就可能开启了某款安卓应用的相机权限。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200819/bd1819105089499787e64518824c2c67.png" /></p>
+<p style="text-align: left;">这对于安卓平台的自由生态是非常不利的。</p>
+<p style="text-align: left;"><span>参考链接：</span></p>
+<p><span>https://www.androidpolice.com/2020/08/18/android-11-camera-apps-chooser/?scrolla=5eb6d68b7fedc32c19ef33b4</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜录音降噪哪家强？搜狗西工大联合团队DNS挑战赛夺冠
+http://www.sohu.com/a/413869824_610300	17626
+<p>边策 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">近日，全球语音顶级会议 <strong>Interspeech 2020</strong>公布了“深度降噪挑战赛”（Deep Noise Suppression Challenge）的比赛成绩，搜狗联合西北工业大学音频语音与语言处理研究组（以下称搜狗-西工大联合团队）击败了亚马逊、微软、Facebook、中科院声学所、CMU等国内外顶尖高校和机构摘得桂冠。 </p>
+<p style="text-align: left;"><img src="http://p7.itc.cn/q_70/images03/20200819/c683bd2d0b214904851df9aa8804df02.jpeg" /></p>
+<p style="text-align: left;">在这场面向语音增强任务的竞赛中，搜狗-西工大联合团队提出的新的复数增强网络结构DCCRN(Deep Complex Convolution Recurrent Network)在实时降噪赛道以显着优势击败多路强手最终脱颖而出。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200819/403719884dfe4d89bf291a4f4a28e92f.png" /></p>
+<p style="text-align: left;"><img height="auto" width="2232" src="http://p5.itc.cn/q_70/images03/20200819/319a8028488c44feb683ac7e34fe339b.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">夺冠技术降噪效果究竟如何，让我们先来听一段语音： </p>
+<p style="text-align: left;">经过搜狗-西工大联合团队的技术处理后，背景嘈杂的声音已经完全去除，仿佛置身于安静的录音室。 </p>
+<p style="text-align: left;">但降噪效果好不是DNS挑战赛唯一的要求，背后还有许多我们“听不见”的艰难。 </p>
+<p>大赛难点与团队创新 </p>
+<p style="text-align: left;">为了考验各家技术的实用性，DNS挑战赛对语音降噪的硬件和延时提出了非常苛刻的要求。</p>
+<p style="text-align: left;">在实时赛道上几乎等于是要求降噪处理的声音与原音同步，具体规则如下：</p>
+<blockquote>
+<p>对于一帧长度为T毫秒的语音来说，在2.4Ghz的Core i5 四核CPU上处理时长不能超过T/2毫秒。使用的未来帧信息不超过40毫秒。</p>
+</blockquote>
+<p>对于一帧长度为T毫秒的语音来说，在2.4Ghz的Core i5 四核CPU上处理时长不能超过T/2毫秒。使用的未来帧信息不超过40毫秒。</p>
+<p style="text-align: left;">也就是说，参赛者要在(T/2+40)毫秒延时内消灭掉音频里的背景噪声。</p>
+<p style="text-align: left;">而搜狗工程师表示，他们和西工大联合开发的模型可以将延时控制在60毫秒以内。如果视频聊天里用上这项技术，那么用户基本不会感受到音画不同步。</p>
+<p style="text-align: left;"><img src="http://p2.itc.cn/q_70/images03/20200819/b12c06ad940d44bb856cffb1373fee8f.jpeg" /></p>
+<p style="text-align: left;">为了防止作弊，微软的DNS挑战赛对参赛者还有一项要求，那就是不能用盲测数据集继续训练调试模型，而且必须使用被Interspeech 2020收录的论文里的技术。</p>
+<p style="text-align: left;">搜狗-西工大联合团队使用的技术来自于他们被大会收录的论文：DCCRN: Deep Complex Convolution Recurrent Network for Phase-Aware Speech Enhancement。</p>
+<p style="text-align: left;">这篇论文的创新点在于：使用复数的卷积循环网络（CRN）来处理频域信号。</p>
+<p style="text-align: left;">传统的语音处理方法主要通过基本的卷积神经网络（CNN）或循环神经网络（RNN）来预测频谱。</p>
+<p style="text-align: left;">但是在频域处理信号会面临一个问题：时域信号经过短时傅立叶变换到时频域后成为复数，这个复数包含了信号的幅度和相位。</p>
+<p style="text-align: left;">过去虽然也有人使用复数频谱作为训练目标，但却是在实值网络中进行训练，将实部和虚部视为两个输入通道，用一个共享权值卷积核分别对实部虚部进行处理。</p>
+<p style="text-align: left;"><img height="auto" width="1664" src="http://p9.itc.cn/q_70/images03/20200819/0a222946877b46c09b356be7b5bec801.png" /></p>
+<p style="text-align: left;">这种方法不受复数乘法规则限制，等于把两个相关量割裂开来。</p>
+<p style="text-align: left;">为了解决这个问题，搜狗-西工大联合团队设计了一种用于复数运算的新网络结构，称为深度复数卷积循环网络（DCCRN），其中CNN和RNN结构都可以处理复数值运算。</p>
+<p style="text-align: left;"><img height="auto" width="1558" src="http://p0.itc.cn/q_70/images03/20200819/ef20d285ebc24386857117d905b61eea.png" /></p>
+<p style="text-align: left;">CRN集成了卷积编码器-解码器（CED）结构和长短期记忆（LSTM），而且还用复数LSTM代替了传统的LSTM。</p>
+<p style="text-align: left;">简而言之，DCCRN由一个卷积核处理实部、一个卷积核处理虚部，再使用复数乘法规则将其相连。复数模块通过复数乘法建立幅度和相位之间的相关性，从而有效地提升了实部和虚部估计精确度。</p>
+<p style="text-align: left;">仅凭借370万个参数，搜狗-西工大联合团队最终提交模型的MOS初赛得分与亚马逊并列第一，复赛时还高出亚马逊0.03分（overall）。</p>
+<p>搜狗为何能刷榜 </p>
+<p style="text-align: left;">有亚马逊、Facebook等科技巨头参与，搜狗为什么能够击败众多强大对手，获得语音降噪技术的第一？</p>
+<p style="text-align: left;">这与搜狗过往长期的技术积累有关。</p>
+<p style="text-align: left;">除了这次发表的DCCRN外，搜狗过去多次有技术成果被国际顶级学术会议收录。</p>
+<p style="text-align: left;">搜狗大力投入语音技术，也有在公司业务上的考量。</p>
+<p style="text-align: left;">在这次比赛前，其自研另一个 <strong>PureVoicePureVoice深度降噪算法</strong>已经应用到自家产品，比如AI录音笔中。 </p>
+<p style="text-align: left;">前不久，罗永浩在第一次直播中，与搜狗CEO王小川联合推荐的搜狗高端AI录音笔S1，向观众展示了搜狗强大的降噪能力。即使现场有吹风机这样的强噪声，搜狗录音笔S1也能清晰还原人声。</p>
+<p style="text-align: left;">虽然其售价2000多，高于市场上大多数竞品，但因为有AI降噪技术加持，这款旗舰产品很快一售而空，获得了用户认可，也证明了AI技术才是录音笔的核心竞争力。 </p>
+<p style="text-align: left;">另一边，搜狗积极探索将AI基础技术作为服务提供给产业使用，不局限于自家使用。</p>
+<p style="text-align: left;">去年，搜狗向索尼、爱国者、纽曼等录音笔品牌开放了“搜狗听写”服务，作为基础AI服务占领录音笔市场。</p>
+<p style="text-align: left;">作为一家技术驱动的公司，搜狗将不断让新技术注入到产品里，大赛中夺冠的DCCRN技术已经“在路上”，未来也会尝试将其部署在录音笔中。</p>
+<p>语音降噪前景几何 </p>
+<p style="text-align: left;">除了搜狗现有业务外，语音降噪的应用场景远不止于此。</p>
+<p style="text-align: left;">今年在疫情驱使下，在线办公软件成为大公司“必争之地”。国外微软谷歌、国内BAT今年都在快速迭代升级在线会议功能。</p>
+<p style="text-align: left;">而复杂的家庭办公环境给在线会议带来很大挑战。如何用AI技术消除背景噪音，是各大科技公司在努力解决的问题。</p>
+<p style="text-align: left;">最近，英伟达发布了视频会议的降噪工具，可以去除像敲击键盘、喝水这样的噪声，提高视频会议质量。但是这项技术需要用到英伟达的RTX中高端显卡，大大限制它的使用人群。</p>
+<p style="text-align: left;">如果能在算力更低、价格更便宜的设备上实现降噪，无疑会让更多用户受益。这也是搜狗技术团队努力的方向。</p>
+<p style="text-align: left;">搜狗工程师表示，DCCRN降噪技术能适配不同规格的硬件，上到手机电脑，下到小小的录音笔芯片，有着更广阔的应用空间。</p>
+<p style="text-align: left;">前面提到，搜狗-西工大联合团队开发的技术延时不超过60毫秒。超低的延时意味着什么？</p>
+<p style="text-align: left;">一般蓝牙耳机的音频延时大多在200毫秒以上，联机游戏画面的延时也在100毫秒以上。</p>
+<p style="text-align: left;">也许我们今后用到的无线降噪耳机、游戏语音对讲都会因为这项技术而受益。</p>
+<p style="text-align: left;">搜狗语音技术频繁刷榜背后，应该是搜狗对于AI降噪在语音行业的“基石”地位的思考。至于今后搜狗会在产业里扮演怎样的角色，让我们拭目以待。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜让人脸识别算法失灵，还能抵抗微信微博照片压缩！武大&Adobe提出抗压缩对抗新框架，成功率最高超90%
+http://www.sohu.com/a/413887273_610300	17626
+<p>鱼羊 编辑整理 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">上回书说到，现在， 对抗攻击的理念已经被应用到隐私保护领域 ： </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200819/65b0062fb8594a028091a9af627305ec.png" /></p>
+<p style="text-align: left;">不过，就有好学的同学提出了这样的疑问，各种App基本都会对图片重新进行压缩，那这种照片「隐身衣」不就会因此失效吗？ <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="//p5.itc.cn/q_70/images03/20200819/1bfacffb026e42f6b6eac979b9b48788.png" /></p>
+<p style="text-align: left;"><img src="http://p8.itc.cn/q_70/images03/20200819/39ac87ca7ece426a9ddfe6f8f62f8e69.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">最近，武汉大学国家网络安全学院就和Adobe公司合作，针对这个问题进行了研究， 并提出了一种 <strong>适用于任意压缩方式的抗压缩对抗性图像生成方案</strong>。 </p>
+<p style="text-align: left;">也就是说，这是一身具有 <strong>抗压缩</strong>能力的照片「隐身衣」。 </p>
+<p style="text-align: left;">即使经过处理的照片被社交平台中各种压缩算法改造一番，也依然能保持对抗性。比如，在微博上就可以达到 <strong>90%</strong>以上的成功率。 </p>
+<p style="text-align: left;"><img src="http://p8.itc.cn/q_70/images03/20200819/8b61360eb55e4f788c99a9e2a96e3822.png" /></p>
+<p>抗压缩的照片「隐身衣」 </p>
+<p style="text-align: left;">一般来说，添加了微小扰动的对抗性实例，都会受到图像压缩方法的影响。</p>
+<p style="text-align: left;">尤其是现在不同社交平台采用的压缩方法都是黑盒算法，压缩方法的变化也给对抗性实例的「抗压性」带来了不小的挑战。</p>
+<p style="text-align: left;">论文一作王志波教授就指出：</p>
+<blockquote>
+<p style="text-align: left;">在压缩算法未知或不可微的情况下，生成抗压缩的对抗性图像具有很大挑战性。</p>
+</blockquote>
+<p style="text-align: left;">在压缩算法未知或不可微的情况下，生成抗压缩的对抗性图像具有很大挑战性。</p>
+<p style="text-align: left;">为了解决这样的问题，这项研究提出了抗压缩对抗框架 <strong>ComReAdv</strong>。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200819/6316de4e483542579edab92c0e1d10fa.png" /></p>
+<p style="text-align: left;">具体而言，方案分为三个步骤。</p>
+<p style="text-align: left;"><strong>步骤一：构建训练数据集</strong></p>
+<p style="text-align: left;">通过上传/下载的方式，获取大量原始图像和对应的压缩图像，构建训练数据集。</p>
+<p style="text-align: left;"><strong>步骤二：压缩近似</strong></p>
+<p style="text-align: left;">利用原始图像-压缩图像对构成的数据集进行监督学习。</p>
+<p style="text-align: left;">研究人员设计了一个基于编码-解码的压缩近似模型，称为 <strong>ComModel</strong>。该模型被用于学习如何像黑盒压缩算法一样转换图像，以达到近似压缩的目的。 </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200819/25ef14c5d0ee42f590a9cc584c58366d.png" /></p>
+<p style="text-align: left;">其中，编码器从原始图像中提取多尺度特征，如内在纹理和空间内容特征。</p>
+<p style="text-align: left;">对应的，解码器对压缩后的对应图像进行由粗到细的重构，以模仿真实压缩图像的压缩效果。</p>
+<p style="text-align: left;">通过最小化重构图像和真实压缩图像之间的平均绝对误差 <span>（MAE）</span>，训练后的ComModel可作为社交平台未知压缩算法的可微近似形式。 </p>
+<p style="text-align: left;"><strong>步骤三：抗压缩对抗性图像生成</strong></p>
+<p style="text-align: left;">构建优化目标，将ComModel融入到对抗性图像的优化过程中，并使用基于动量的迭代方法(MI-FGSM)进行优化，最终使得生成的对抗性图像具有较好的抗压缩能力。</p>
+<p style="text-align: left;">研究人员表示，该方案不需要任何压缩算法的细节，仅根据适量的原图和压缩图的数据集，便能训练得到未知压缩算法的近似形式，并进一步生成相应的抗压缩对抗性图像，因此，该方案能应用于所有社交平台保护用户隐私。</p>
+<p>实验结果 </p>
+<p style="text-align: left;">研究团队进行了本地仿真测试（JPEG、JPEG2000、WEBP）和真实的社交平台（Facebook、微博、豆瓣）测试。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200819/3e4b5fdf06f84ac6afc417ce70229268.png" /></p>
+<p style="text-align: left;">本地仿真测试的结果显示，ComReAdv这一方法在「抗压缩」方面超越了SOTA方法，并且，可以有效抵抗不同的压缩方法，具有可扩展性。 </p>
+<p><img height="auto" width="838" src="http://p5.itc.cn/q_70/images03/20200819/ce4e83f8332e472abca189700177fc62.png" /></p>
+<p>而真实社交平台测试的结果也表明，该方法能显着提高对抗性图像的抗压缩能力。 </p>
+<p style="text-align: left;">在被不同的压缩方法压缩后，误导Resnet50分类模型的成功率达到了最先进的水平，在微博上可以达到90%以上的成功率。</p>
+<p>关于作者 </p>
+<p style="text-align: left;">论文一作 <strong>王志波</strong>，是武汉大学国家网络安全学院教授、博士生导师。 </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200819/8c8ded75da59449eb97987d71edaa212.jpeg" /></p>
+<p style="text-align: left;">王志波教授本科毕业于浙江大学信息学院自动化专业，2014年获美国田纳西大学计算机工程博士的学位。</p>
+<p style="text-align: left;">目前的研究方向包括物联网、移动感知与计算、大数据、网络安全与隐私保护、人工智能安全。</p>
+<p style="text-align: left;">对于这项研究，王志波教授表示：</p>
+<blockquote>
+</blockquote>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

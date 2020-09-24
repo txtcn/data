@@ -1,0 +1,519 @@
+➜阿里达摩院科学家，3年造出小蛮驴！量产物流机器人，完全自动驾驶，4度电跑100公里
+http://www.sohu.com/a/418980602_610300	11361
+<p>雷刚 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p>没想到，这就是阿里达摩院最前沿的AI和自动驾驶技术的集大成者。</p>
+<p>取名 <strong>小蛮驴</strong>，四轮构造，外形酷萌、灵活身手还能穿梭在各种末端道路场景中完成送货。 </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200917/09fc4ffb21504cae88d2b3040e4d2147.jpeg" /></p>
+<p>阿里方面解释，驴作为中国人过去最常用的劳动力，是帮助人代步、赶集、载货的生产力工具。而“小蛮驴”定位就是是数字原生时代的赶集工具。</p>
+<p>它有驴一样暖萌、可靠、通人性，还有一股使命必达的“蛮劲”。无惧高温雨雪、雷暴闪电、极寒酷暑。也寓意着蛮聪明、蛮能干，蛮安全</p>
+<p>作为阿里旗下首款物流机器人，小蛮驴具有类人认知智能，能轻松处理复杂路况，能聪明选择最优路径，遇到紧急情况，大脑应急反应速度是人类的7倍。</p>
+<p>同时，做到了规模化商用量产的必要条件，除了低成本，还有高可靠——相当耐苦耐劳，充4度电就能跑100多公里，每天最多能送500个快递，雷暴闪电、高温雨雪以及车库、隧道等极端环境均不影响其性能。</p>
+<p>阿里巴巴达摩院院长 <strong>张建锋</strong>（行癫）透露，小蛮驴已经在末端真实场景中久经检验，很快就会在社区、学校，办公园区大规模使用。 </p>
+<p>这也意味着：巨头阿里，正式进军机器人赛道。</p>
+<p>小蛮驴由何构成？ </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200917/1c24fe58798d46ba8926b028c591cd06.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>先 <strong>宏观</strong>看产品。 </p>
+<p>车身外观采用银灰色调，线条圆润、跟驴子一样自带萌感。</p>
+<p>需要注意的是，车厢格口可以自由定制，按照最多每车满载50件常规尺寸的快递/包裹/外卖、每天送货10次计算，机器人峰值运力可达一天500单。</p>
+<p>因为面向末端物流场景、提供最后三公里配送，小蛮驴在车速、续航和功耗方面，也有专门适配和设计。</p>
+<p><strong>车速</strong>方面，平均速度设定为15km/h，最高速度20km/h。 </p>
+<p><strong>续航</strong>，采用抽拉式充电电池，每次充电4度、续航里程102公里。机器人平均行驶100公里所耗费的电量，还不到吃一顿两小时火锅用的电。 </p>
+<p><strong>功耗</strong>方面，工作功率仅有615w，不到戴森吹风机的一半（1600w）,不到常规家用电磁炉的三分之一（约2000w）。 </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200917/a306631713b94b88919205d15d24c094.jpeg" /></p>
+<p>接着 <strong>技术</strong>维度拆解。 </p>
+<p>小蛮驴可以被分为三大部分——熟悉自动驾驶汽车的盆友或许不会陌生。</p>
+<p>一是 <strong>底盘</strong>，包括车身和线控集成，是小蛮驴的核心躯干。 </p>
+<p>而且阿里方面透露，底盘和车身的供应，实际也与汽车一致，出自整车厂。</p>
+<p>二是 <strong>传感器</strong>，小蛮驴的“眼睛”，让它有出色的感知能力。一前一后各1个激光雷达，加上6个摄像头组成的环视方案，以及毫米波雷达、惯导等传感器，跟当前最先进的无人驾驶汽车采用类似方案。 </p>
+<p>三是 <strong>计算单元</strong>，小蛮驴的“大脑”，也是让小蛮驴最显技术实力的地方。 </p>
+<p>阿里达摩院团队搭建了一个异构方案，利用嵌入式GPU和FPGA的相互配合，既能实现末端复杂场景下的高性能计算，还可以把成本和功耗降下来，能以1/3算力的达到同等智能水平。</p>
+<p>GPU可以发挥在计算性能方面的优势，FPGA则可以降低成本和补足GPU在数据传输方面的局限。</p>
+<p>最终，这套嵌入式计算硬件+达摩院量身打造的算法、压缩模型，让小蛮驴不仅有L4级自动驾驶能力，还能够低功耗长续航，为量产和规模化商用奠定了基础。</p>
+<p>那么这样的外观和技术硬件，究竟让小蛮驴拥有怎样的能力？</p>
+<p>阿里官方回答，核心还是最前沿的AI和自动驾驶的基础技术，并且在智能、安全、可量产三方面具备行业领先的竞争力。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200917/c944926a19734abf893f9f10e1fe63b1.gif" /></p>
+<p>首先是 <strong>智能</strong>，具备类人认知决策能力。能在复杂的末端场景中自如行驶、稳妥避障，顺滑处理转弯、急停、会车、倒车等情况。 </p>
+<p>在前两年的“内测”中，小蛮驴的自动驾驶率达到了“6个9”——99.9999%。</p>
+<p>其次是 <strong>安全</strong>，拥有五重安全设计，多层次冗余。 </p>
+<p>系统架构方面，就有大脑决策、冗余小脑、异常检测刹车、接触保护刹车、远程防护等。</p>
+<p>另外，远程驾驶系统——即云代驾，负责在特定情况，比如遇到超越机器人认知能力边界之外的状况，可以由人力远程介入接管，并且因为5G的不断普及，这种远程接管的时延和安全性也得到了进一步保障。</p>
+<p>最后， <strong>可量产</strong>，能够保证规模化商用。在算法自研和深度定制的基础上，小蛮驴在整体成本上实现了大幅下降，比业内一些原型产品同比只有其1/3甚至1/10。 </p>
+<p>并且随着供应链进一步整合和激光雷达等成本降低，整体成本还会进一步降低，这也意味着小蛮驴迈出第一步后，规模化商用只会越铺越快。</p>
+<p>但是，并不代表一切轻而易举。</p>
+<p>小蛮驴挑战性在哪儿？ </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200917/4f722d70f7c242cfa7b89c4293104b6a.jpeg" /></p>
+<p>发布会上，阿里巴巴达摩院院长张建锋说： </p>
+<blockquote>
+<p>物流配送需求正在极速爆发，预计在不久的将来，中国每天将产生10亿个配送订单。而末端物流是整个物流体系中成本最高、效率最低的环节，物流机器人就是阿里提供的解决方案。</p>
+</blockquote>
+<p>物流配送需求正在极速爆发，预计在不久的将来，中国每天将产生10亿个配送订单。而末端物流是整个物流体系中成本最高、效率最低的环节，物流机器人就是阿里提供的解决方案。</p>
+<p>所以阿里此番进军物流机器人领域，利益和动机都很明确。</p>
+<p>有天时的机遇。云计算、AI、5G等技术的交叉交融发展，正在推动机器人加速进化，机器人化解决方案也正在各行各业成为现实。</p>
+<p>一直以来，机器人和自动化都是制造业皇冠上的明珠，但在上述基础技术之前，具体产品和效果始终差强人意。</p>
+<p>而随着大数据、云计算、5G等新一代信息技术的发展，会促使机器人技术快速演进，软硬件技术日趋成熟、成本不断降低、性能不断提升……一个人机共生的时代正在到来，人与机器人的协作交互才刚刚开始。</p>
+<p>据国际机器人联合会预测，即将到来的机器人革命将创造数万亿美元市场。Gartner预测，企业级机器人市场2018年至2028年的复合增长率会超过15%，年装载数量会从280万台增加至1100万台。</p>
+<p>还有地利的诱惑。中国是公认的全球最大的机器人市场，中国电子学会数据显示，2014年至2019年，中国机器人市场平均增长率达到20.9%。其中服务机器人增速更高。</p>
+<p>其中，2019年中国家用服务机器人、医疗服务机器人和公共服务机器人市场规模分别为10.5亿美元、6.2亿美元和5.3亿美元，占比分别为47.7%、28.2%和24.1%。</p>
+<p>从全球范围看，中国在工业制造领域的机器人渗透率（density）已高于全球平均水平。</p>
+<p>但即便巨如阿里，想要摘取这颗“制造业皇冠上的明珠”，也不简单。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200917/53470143a9c641a8b11ba12237924dc3.jpeg" /></p>
+<p>核心有三大挑战，每一项都是世界级难题。 </p>
+<p>一， <strong>技术可用性和可靠性</strong>。 </p>
+<p>另一方面，令全世界自动驾驶从业者头疼的“长尾挑战”。</p>
+<p>小蛮驴上岗，可以视为限定区域 <span>（ODD）</span>内的低速自动驾驶配送。 </p>
+<p>但虽然条件范围已经相对明确，但只要场景中有人，而且人机共处，就会永远面临潜在的未知场景和难题，如果系统未曾学习、也无法聪明应对，就会在长尾挑战中沦陷。</p>
+<p>而且自动驾驶，当前仍是一门实验科学，对于长尾挑战尚无定式和套路可用。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200917/4e9308fb3ac749599d18bbbe61e1c20c.jpeg" /></p>
+<p>全世界范围内，一条路线是谷歌、Waymo开创的路测、ODD、规模化路测和试运营，最终在积累起足够场景和数据迭代之后，将产品和解决方案——RoboTaxi推向市场。 </p>
+<p>另一条路线的代表是特斯拉。直接在量产和实际场景中，让AI司机不断学习和迭代，最终可以进化至真正的RoboTaxi。但因为特斯拉作为车企、又是高速复杂的开放道路，这样的方案也始终被诟病过于激进。</p>
+<p>所以从两条路线来说，摆在阿里和小蛮驴面前的，没有成功路径可循。</p>
+<p>二、 <strong>量产</strong>。 </p>
+<p>不仅涉及成本和资源，也需要兼顾效率和安全，是一道寻找最优解的现实应用题。</p>
+<p>如果如行业内自动驾驶车辆动则上百万的成本，难言量产。如果不解决计算力和功耗方面的挑战，规模化商用也无从谈起。</p>
+<p>三， <strong>技术和商业模式都要形成闭环</strong>。 </p>
+<p>无论是谷歌Waymo，还是马斯克的特斯拉，终极目标都是希望用AI司机把人类从驾驶行为中解放出来，都奔着RoboTaxi实现而去。</p>
+<p>但马斯克最终选择广为诟病的影子测试模式，背后也离不开商业模式闭环的挑战。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200917/51a990dd1d6c4a1c9b2bfef5189ba87a.gif" /></p>
+<p>如果直到RoboTaxi真正实现才能产生现金流，没有其他现金奶牛业务支撑的特斯拉，可能根本活不到RoboTaxi真正实现的那一天。 </p>
+<p>所以，虽然现在阿里小蛮驴，迈出的第一步是末端场景下的载货，但上述三大挑战，不仅需要解决，还得铁人三项、项项优秀。</p>
+<p>那么现在，公开喊响量产、商用和规模化启动的小蛮驴，究竟有什么底气？</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200917/57050053f82d45adaf449bd7a6d4f217.jpeg" /></p>
+<p>阿里解题：小蛮驴如何炼成？ </p>
+<p>最核心的底气，自然还是来自 <strong>技术</strong>自信。 </p>
+<p>除了解构小蛮驴构成时谈到的传感器和计算硬件，阿里团队认为最能彰显技术领先性的，是其自研的自动驾驶机器学习平台：</p>
+<p><strong>AutoDrive</strong>。 </p>
+<p>该平台的本质，是由机器替代人工进行算法调参、模型优化，让AI模型可以在数据中实现循环迭代和进化，能够越来越智能、高效地解决长尾问题。</p>
+<p>达摩院自动驾驶实验室负责人王刚说，人工智能解决问题的发展规律，一定是不断减少人工参与。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200917/c3fe0aff464f46b7afdd6627ffc9bd0b.jpeg" /></p>
+<p>所以在打造小蛮驴的整个过程中，他们始终秉持这样的理念： </p>
+<blockquote>
+<p>不断把人工规则和方法，变成计算驱动，变成自学习，告别有多少人工才有多少智能的尴尬。</p>
+</blockquote>
+<p>不断把人工规则和方法，变成计算驱动，变成自学习，告别有多少人工才有多少智能的尴尬。</p>
+<p>于是在AutoDrive的“大中台”作用下，能够基于复杂的多模态的自动驾驶数据进行自学习，服务感知、定位、决策、控制等“小前台”的算法迭代，解决了人工调参成本高、效率低、结果不可控的问题。</p>
+<p>另外，基于AutoDrive平台的支持，感知、定位、决策规划等“小前台”能够不断提出更轻、更快的算法模型。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200917/14f64657946244b28b329e4467ca3505.png" /></p>
+<p>高精定位，能在无GPS或弱GPS环境下实现厘米级高精定位；</p>
+<p>意图预测能力，只用0.01秒就能判别100个以上行人和车辆的行动意图。</p>
+<p>……</p>
+<p>总之，AutoDrive也是阿里给出的应对自动驾驶长尾挑战的方法。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200917/3b034340f1b146bf8c68de20756dcdd2.gif" /></p>
+<p>在路线上，他们集合了Waymo路线和特斯拉路线的精华，在一个限定区域场景内，在现实运营中不断实现迭代。 </p>
+<p>但又在安全上多重冗余，从技术方案冗余到运营中的安全冗余，都让规模化落地商用有了保障。</p>
+<p>当然，小蛮驴的底气，毫无疑问还有阿里综合实力和阿里经济体的支撑。</p>
+<p>AutoDrive固然解决了数据和模型迭代问题，但没有大规模计算力支撑，就显得纸上谈兵。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200917/8c0e8771f9d8479eb36faffbdc197989.gif" /></p>
+<p>实际上，在小蛮驴研发过程中，达摩院从一开始就搭建了自己的自动驾驶云平台，将海量数据（场景数据库、自动驾驶车数据、数据采集车数据）搬上阿里云。 </p>
+<p>打通数据收集、数据标注、仿真、模型训练、评价等整套系统，在云端开展数据管理、仿真测试以及算法模型训练，大大提升了自动驾驶算法研发效率。</p>
+<p>基于这个自动驾驶云平台，达摩院推出了全球首个自动驾驶“混合式仿真测试平台”。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200917/3523f7d7cfe74f9da84f94e571558fe6.jpeg" /></p>
+<p>该平台采用虚拟与现实结合的仿真技术，引进真实路测场景和云端训练师，模拟一次极端场景只需 <strong>30秒</strong>，系统每日虚拟测试里程可超过 <strong>800万公里</strong>，大幅提升自动驾驶AI模型训练效率。 </p>
+<p>而阿里的经济体，则提供了最直接的应用场景。</p>
+<p>小蛮驴虽然今日才对外发布，但阿里方面透露，内测运营早已在两年前开始。</p>
+<p>核心内测场景，就是与菜鸟驿站结合送货，真实场景、真实问题，而且商业模式也非常直接。</p>
+<p>小蛮驴方面透露，菜鸟现在就是内部最大客户，接下来的大规模落地中，也会与菜鸟驿站更深入合作。</p>
+<p>所以小蛮驴的发布，绝不是达摩院黑科技落地交货的“表象”。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200917/2f362de1b85b4fa98780dcd96c010917.jpeg" /></p>
+<p>这只刚加入阿里动物园的“新物种”，是整个阿里经济体和生态中厚积薄发的技术成果。 </p>
+<p>小蛮驴，是阿里基础设施之上，结出的最新果实。</p>
+<p>这也侧面反映出物流机器人这件事，进场并非如此轻而易举，连阿里这样拥有顶尖技术、强大资源和自洽经济体生态的巨头，都积蓄了3年，才有阶段性答案。</p>
+<p>有意思的是，机器人也好、自动驾驶也是，外界其实早就知道阿里在研发。</p>
+<p>也时常有“是骡子是马拉出来熘熘”的调侃。</p>
+<p>没想到，最终站上阿里云栖黑科技年度发布头条的，是一只小蛮驴。</p>
+<p>所以也是时候，回答这个第三方观察的问题。</p>
+<p>如何评价小蛮驴？ </p>
+<p>首先，小蛮驴，真的 <strong>很阿里</strong>。 </p>
+<p>这是一种技术的理想主义和务实落地的平衡理念。从无到有打造小蛮驴的阿里团队，来自 <strong>达摩院自动驾驶实验室</strong>。 </p>
+<p>这是一个2017年内部组建的团队，负责人王刚，伊利诺伊大学香槟分校博士，曾任新加坡南洋理工大学终身教授……据说当时他主动请缨开启阿里自动驾驶研发，然后得到张建锋支持，一做就是三年。</p>
+<p>科学家出身的王刚，深知自动驾驶的核心挑战所在——本质是一个实验学科，需要基于案例和范例去不断学习，通过场景倒推技术不断进步。</p>
+<p>同时，有技术理想，但也要用商业化方式去倒逼科学难题解决。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200917/07032b59eaf64bf2acccd9d87eaaba91.png" /></p>
+<p>一般而言，科学课题变成商业范式，无外乎两条路： </p>
+<p>一条是没有条件和资源限制，最大程度解决难题，然后在过程中寻求商业化机会，人类历史上诸多技术创业，都分流于这条主干。</p>
+<p>另一种则是一开始就有明确的定义域，然后寻求极致最优解。</p>
+<p>王刚坦承，小蛮驴属于后一种，从3年前探索开始，他们就定下了 <strong>智能</strong>、 <strong>安全</strong>、 <strong>可量产</strong>的三重维度，最终在物流机器人领域，找到了将AI和自动驾驶现阶段完美落地的钥匙，推动自动驾驶技术从垂直场景向更广泛的场景演进。 </p>
+<blockquote>
+<p>大的逻辑很明确，你现在还不知道自动驾驶的能力边界究竟在哪里，如果一开始不能定义，就会变成一个不断找边界的过程。</p>
+</blockquote>
+<p>大的逻辑很明确，你现在还不知道自动驾驶的能力边界究竟在哪里，如果一开始不能定义，就会变成一个不断找边界的过程。</p>
+<p>而这种思考问题和解决问题的逻辑，也似曾相识。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200917/c836e1410d7a44c4a1d60e94d7c6dbb4.jpeg" /></p>
+<p>因为当初发起创办达摩院时，马云就是这样说的： </p>
+<blockquote>
+<p>研究不应该是Research for Fun（为快乐研究），也不应该Research for Profit（为利润研究），而是Research for solving the problem with Profit and Fun（为解决问题研究并带来利润和快乐）。</p>
+<p>For fun走得太远，for profit走得太近，都走不长。一个企业做得多大，在于企业解决多大的社会问题。这是阿里巴巴思考的逻辑。</p>
+</blockquote>
+<p>研究不应该是Research for Fun（为快乐研究），也不应该Research for Profit（为利润研究），而是Research for solving the problem with Profit and Fun（为解决问题研究并带来利润和快乐）。</p>
+<p>For fun走得太远，for profit走得太近，都走不长。一个企业做得多大，在于企业解决多大的社会问题。这是阿里巴巴思考的逻辑。</p>
+<p>所以小蛮驴的对外发布，也不只是一个产品亮相，而是以 <strong>机器人平台</strong>、以 <strong>小蛮驴智能科技有限公司</strong>亮相。 </p>
+<p>阿里之道，一以贯之。</p>
+<p>其次，小蛮驴还展现了阿里的平台化逻辑、生态逻辑，基础设施逻辑。</p>
+<p>小蛮驴亮相后的第一步，是在末端物流场景中规模化商用，提供最后三公里配送服务。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200917/4f693751216645acbb6af0cd661f4084.jpeg" /></p>
+<p>同时，名为 <strong>智能机器人</strong>的平台也在今日推出。 </p>
+<p>这个平台，要开放的是小蛮驴检验成熟的机器人通用技术和能力模块，用户可在平台上快速开发各类不同场景机器人。</p>
+<p>阿里官宣，除了轮式机器人，机器人平台还会开发双足、履带等不同类型机器人产品，用于救火救灾、防疫消杀、机场服务、景区导览、安全巡防等场景。</p>
+<p>所以由此推导，这个平台的边界，肯定还不会止于物流或服务类机器人。</p>
+<p>从一开始，小蛮驴就是AI和自动驾驶技术的产物，而在AI和自动驾驶领域，还有更大的场景和生态可展开。</p>
+<p>比起小蛮驴代表的 <strong>RoboDeliver</strong>货运方向，这条赛道上，还有更耳熟能详的 <strong>RoboTaxi</strong>。 </p>
+<p>阿里会止步于货运和服务的开放平台吗？</p>
+<p>肯定不会。</p>
+<p>或许未来某一天，小蛮驴这家公司，就会像平头哥一样，喊出“让天下没有难做的机器人自动驾驶”。</p>
+<p>这个意义上，小蛮驴的本质，是阿里使命愿景在AI机器人自动驾驶的的一次开花结果。</p>
+<p>而现在，阿里进军机器人的第一步，已正式迈出。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200917/b8346cd5a6074ea8920b19f63077d39a.png" /></p>
+<p>One more thing </p>
+<p>最后的最后，还有一个小问题：</p>
+<p>如何尽快享受到小蛮驴的机器人送货服务？</p>
+<p>阿里达摩院透露了一种方式——可以“挟包裹量以令小蛮驴”。</p>
+<p>目前小蛮驴具体落地应用，还没有明确的地点规划，但会沿着学校、社区和公司园区三大场景展开。</p>
+<p>那些日包裹量超过1000单的校园社区公司园区，可以被优先考虑。</p>
+<p>1000单是一个什么样的概念？</p>
+<p>618或双11为基准，不少大学校区都超过了这个数。</p>
+<p>所以想用小蛮驴，写信、发邮件，打Call ~~~</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span><span style="font-size: 16px;"></span></p>
+<p><strong>好课推荐 | 0基础学Python</strong></p>
+<p><span style="font-size: 16px;">《动手学Python》课程由</span><strong><span style="font-size: 16px;">上海交大博士教研团队</span></strong><span style="font-size: 16px;">研发，在线学习平台由上海</span><strong><span style="font-size: 16px;">交大AI实验室</span></strong><span style="font-size: 16px;">技术支持，旷视、文远知行、图森未来、来也科技等</span><strong><span style="font-size: 16px;">知名AI</span></strong><span style="font-size: 16px;"><strong>企业CEO/CTO力荐</strong></span><span style="font-size: 16px;">。</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">0基础可入门，限时开放体验课！扫码即刻开启Python学习之旅：</span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜人脸识别，现在连动漫角色都不放过
+http://www.sohu.com/a/419007700_610300	11361
+<p>萧箫 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">看过的动漫太多，以至于认角色时有点脸盲？</p>
+<p style="text-align: left;">又或者，只想给自己的二次元老婆剪个出场合辑，却不得不在各大搜索引擎搜索关于她的照片？</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200917/83a7890fd3aa4b689235257670788bf5.png" /></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200917/940a5e1544674388811ba90bd3201724.png" /></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200917/a21e8b9f91704165be3a4f982203e3bc.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200917/618fb8da6f7042578cc0d2af96189b35.png" /></p>
+<p style="text-align: left;">至于阴影和光照也不在话下，哪怕站在树荫里，也能被AI“侦测”：</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200917/18497c15555e4e979a76b9046bf20f8c.png" /></p>
+<p style="text-align: left;">那么，这样的技术是怎么做出来的呢？</p>
+<p>结合真人数据，训练卡通人脸识别 </p>
+<p style="text-align: left;">团队提出了一种卡通和真人的多人物训练框架，主要包括 <strong>分类损失函数</strong>、 <strong>未知身份拒绝损失函数</strong>和 <strong>域迁移损失函数</strong>三部分，如下图所示。 </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200917/08f2c7d040c24704a09d6832714392d6.png" /></p>
+<p style="text-align: left;">其中，分类损失函数主要用来对卡通脸和真人脸进行分类。</p>
+<p style="text-align: left;">而未知身份拒绝损失函数，则是为了在不同域之间进行无监督正则化投影。</p>
+<p style="text-align: left;">至于域迁移损失函数，目的是降低卡通和真人域之间的差异性，对他们的相关性进行约束。</p>
+<p style="text-align: left;">从实验结果来看， <strong>ArcFace+FL</strong>的效果最佳，所以此次团队选用了这个算法。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200917/94acb40218134beb847ab9e1c08b86cd.png" /></p>
+<p style="text-align: left;">至于后两个问题的答案，也是肯定的。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200917/60377d88697a480a816f0db1bfe9207e.png" /></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200917/27ae3e2059964b1c9636eb5dc16ac977.png" /></p>
+<p style="text-align: left;">事实上，动物角色训练出来的特征样本，相比于人脸来说，还是有点诡异。</p>
+<p style="text-align: left;">下图中分别是原图和对应的特征样本，相比于动漫男生和女生，虹猫的特征显得有点……不可捉摸。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200917/8bf74aa8444a4fcf9d39a9ddf39ea0a3.png" /></p>
+<p style="text-align: left;">不过这也说明，一个标准、大型的动漫人脸数据集是有必要的。</p>
+<p>标注数据，只需要一步 </p>
+<p style="text-align: left;">为了减少人工标注的工作量，研究者们设计了一种半自动数据集构建框架，用于构建iCartoonFace数据集。</p>
+<p style="text-align: left;">如下图，这个框架可以分为三个阶段：</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200917/5d456130eb8b4c71bdecda317b1c435c.png" /></p>
+<p style="text-align: left;">首先，对数据进行分层收集。先获取卡通图片信息，包括 <strong>专辑</strong>和 <strong>人物名称</strong>，再获取卡通人物图片，使得数据集结构非常清晰。 </p>
+<p style="text-align: left;">其次，对数据进行过滤。利用卡通人脸检测、特征提取器和特征聚类等，对图片数据进行噪声过滤。</p>
+<p style="text-align: left;">其中，特征提取器的性能会发生变化：随着标注数据的增多，性能不断增强。</p>
+<p style="text-align: left;">最后，标注人员只需要做一个步骤：根据特征聚类的结果，回答两张图片是否是同一个人物。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200917/208ab839d3d94a2793a5854b30daec8d.png" /></p>
+<p>目前最大的卡通人物标注数据集 </p>
+<p style="text-align: left;">例如，给创作者提供智能剪辑、或者是对恶搞的讽刺漫画、卡通风格人物进行审核辨识。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200917/0e08e3bf74304207894d654d4efdd2e7.png" /></p>
+<p style="text-align: left;">说不定，真能让广大观众对动漫角色“不再脸盲”。</p>
+<p style="text-align: left;"><strong>传送门</strong></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span>论文链接：</span></span></p>
+<p><span>https://arxiv.org/pdf/1907.13394.pdf</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span style="font-size: 16px;">数据集（在竞赛数据集一栏）：</span></span></p>
+<p><span style="font-size: 16px;">https://iqiyi.cn/icartoonface</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>华为HC 2020 开发者活动，让开发一站到底 </strong></p>
+<p>14场开发者训练营，28场扫地僧见面会，来自华为各领域最顶尖、最优秀的技术专家，25、26日两天技术全揭秘，······ <strong><span>华为HC 2020</span></strong>开发者盛会，更多精彩内容等你来体验。 </p>
+<p>扫码购买 <strong><span>「单日票」</span></strong>，签到时可领取开发者大礼包；通过量子位渠道购票，签到后还可获赠50元京东购物卡一张~ 领取方式：添加微信（qbitbot9），加入“量子位华为HC大会专属社群”。 </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜中德智能新能源汽车产业论坛召开，20余位中德行业领袖共论未来出行新趋势
+http://www.sohu.com/a/419007878_610300	11361
+<p>位来 发自 凹非寺 </p>
+<p>量子位 编辑 | 公众号 QbitAI </p>
+<p style="text-align: left;">当 <strong>传统造车强国—德国</strong>和 <strong>新技术飞速发展的中国</strong>相遇会碰撞出怎样的火花？全球未来出行将迎来怎样的明天？ </p>
+<p style="text-align: left;">9月14日， <strong>中关村先锋论坛——中德智能新能源汽车产业论坛</strong>在中关村壹号举行。 </p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200917/fa510b162a9e493682c468ae51289766.jpeg" /></p>
+<p style="text-align: left;">北京市委常委、副市长殷勇出席并发表致辞，北京市人民政府副秘书长杨秀玲、北京市经济和信息化局副局长姜广智、海淀区人民政府副区长、中关村科学城管委会副主任林剑华、中关村管委会二级巡视员刘航一同出席参会。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200917/6f5ce1187ed24f7f80136d2aab4086ea.jpeg" /></p>
+<p style="text-align: left;">在致辞中，殷勇副市长指出，北京是中国自动驾驶汽车产业的发源地，是中国拥有自动驾驶汽车企业和创新人才最多的城市。</p>
+<p style="text-align: left;">百余家自动驾驶企业与国家智能网联汽车创新中心、众多的科研机构在北京共同形成了国际领先的自动驾驶产业生态。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">面向未来，北京市将继续大力支持智能新能源汽车产业的发展，从 <strong>车、路、云、网、图</strong>等各个方面不断扩大开放合作，加快创新的步伐，推动美好的科技愿景早日成为现实。 <span style="font-size: 16px;"></span></p>
+<p>中关村智能网联汽车前沿技术创新中心启动 </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200917/776d4c761f7d498db1c1cf88060e8c04.png" /></p>
+<p style="text-align: left;">本次论坛上，北京市及中关村管委会以及海淀区的领导还共同见证了 <strong>中关村智能网联汽车前沿技术创新中心</strong>的启动。 </p>
+<p style="text-align: left;">中关村智能网联汽车前沿技术创新中心在中关村管委会、中关村科学城管委会共同支持下，由实创股份翠湖网联公司根据智能网联汽车产业发展需要全力打造，结合中关村自动驾驶创新示范区功能定位，未来，前沿技术创新中心将引入国内外智能网联汽车领域的知名前沿创新企业。 </p>
+<p>顶尖行业嘉宾，8小时智慧碰撞 </p>
+<p style="text-align: left;">本次论坛以 <strong>“未来出行 全球汇智”</strong>为主题，20余位中德顶尖嘉宾，8小时智慧碰撞。 </p>
+<p style="text-align: left;">上午，清华大学教授、学术委员会副主任欧阳明高院士带来“中国新能源汽车发展的现状与前景”主题发言。欧阳院士认为，未来智能新能源汽车将实现三方面革命性的突破——动力电动化、能源低碳化、以及系统智能化。</p>
+<p style="text-align: left;">中国电动汽车百人会副理事长兼秘书长张永伟带来“推动智能汽车与智慧城市协同发展”主题发言。张永伟表示，中国在电动化上已经建立了比较完备的产业基础，在电动化的发展当中中国体现了自己的鲜明的发展特色，特别是有大量来自互联网、IT 的跨界力量进入，让中国的这一轮汽车变革有了新的特点，有了新的角色，也建立了新的生态。</p>
+<p style="text-align: left;">清华大学教授、汽车安全与节能国家重点实验室主任李克强带来“智能网联汽车发展现状与对策建议”主题发言。李教授谈到，智能网联汽车不是一个单独的车辆问题，也不是一个单独的信息系统，而是两者融为一个整体。</p>
+<p style="text-align: left;">小马智行联合创始人兼CEO 彭军、AutoX创始人肖健雄、理想汽车联合创始人兼总裁沈亚楠相继进行主题发言，赛路诺（德国）新能源控股有限公司董事长艾大力远道而来现场参加了本次会议做精彩的致辞讲演。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200917/69ff3a9bab3b49de98db68f94a2bd5fb.jpeg" /></p>
+<p style="text-align: left;">下午，巴伐利亚州副州长兼州经济、统筹发展和能源部部长胡贝特-艾伊万格先生发来了致辞，他表示：“能够感受到中国的创新实力和勤奋以及面向未来的感知能力，希望这次论坛能够帮助巴伐利亚州和中国进一步加强这种合作。</p>
+<p style="text-align: left;">随后，千方科技、地平线公司、北科天绘以及德国联邦电动出行协会主席、弗劳恩霍夫协会电池联盟、圣加仑大学智能出行管理研究院等德方知名企业及界人士相继带来了精彩的业内见解。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200917/afecb6b3e75746a7a7e5562818463c54.jpeg" /></p>
+<p style="text-align: left;"><strong>圆桌环节</strong>由法国欧瑞泽基金集团董事总经理/亚太区总裁、中法合作基金管理人、瑞典政府投资促进署前副署长陈永岚先生主持，来自四维图新、海博思创、禾多科技、亮道智能的4位中方企业家与德国巴伐利亚州中国代表处首席代表Dr. Lucie Merkle（曼丽博士）进行了精彩的智慧碰撞，会上还现场连线了德国多位德国业界嘉宾和企业家。 </p>
+<p>中关村先锋论坛 </p>
+<p style="text-align: left;"><strong>中德智能新能源汽车产业论坛</strong>是中关村论坛的先锋论坛，由中关村科技园区管理委员会、海淀区人民政府、中关村科学城管理委员会作为指导单位，由赛路诺（德国）新能源、实创股份、中关村并购母基金等单位主办，德国联邦电动汽车产业协会（BEM)联合主办，由中关村壹号及翠湖网联进行承办。德国巴伐利亚州政府对于论坛的举办也提供了宝贵支持。 </p>
+<p style="text-align: left;">汇聚全球智慧，放眼未来出行发展， <strong>汽车智能化和网联化是未来出行发展的主要趋势。</strong></p>
+<p style="text-align: left;">论坛同期还配套举办了 <strong>2020中关村科学城自动驾驶嘉年华活动</strong>，80多家硬科技企业将带来最前沿的技术，最好玩的科技，小马智行、智行者、仙途智能、白犀牛、新石器、启明星辰等数十家自动驾驶知名企业整装集结组成了清扫车、巡逻车、物流车等各色自动驾驶车队，小马智行也在活动现场开放大众体验名额，自动驾驶嘉年华活动让大众真正走近自动驾驶，超前体验未来出行，让广大市民真正感受到自动驾驶的无穷魅力，感受到未来已来。 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200917/646a8169aaa145fcb56ef676714535f0.png" /></p>
+<p style="text-align: left;">汇聚全球智慧，放眼未来出行发展。中关村科学城通过搭建中德新能源汽车领域的对话交流平台，旨在 <strong>推动中德两国政产学研多领域交流，促进新能源汽车领域企业间合作。</strong><span style="font-size: 16px;"></span></p>
+<p style="text-align: left;">未来，中关村科学城将进一步推动示范区5G网络覆盖、全域开放测试、自动驾驶载人测试、自动驾驶无人化以及智能交通走廊建设，加快中关村自动驾驶创新示范区建设，充分发挥示范引领作用，不断推动智能网联汽车产业创新发展。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>华为HC 2020 开发者活动，让开发一站到底 </strong></p>
+<p>14场开发者训练营，28场扫地僧见面会，来自华为各领域最顶尖、最优秀的技术专家，25、26日两天技术全揭秘，······ <strong><span>华为HC 2020</span></strong>开发者盛会，更多精彩内容等你来体验。 </p>
+<p>扫码购买 <strong><span>「单日票」</span></strong>，签到时可领取开发者大礼包；通过量子位渠道购票，签到后还可获赠50元京东购物卡一张~ 领取方式：添加微信（qbitbot9），加入“量子位华为HC大会专属社群”。 </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜斯坦福前校长John Hennessy、张亚勤等一众大佬云集，共探最前沿技术
+http://www.sohu.com/a/419008120_610300	11361
+<p>金磊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">基础软件、尖端技术，频频被「卡脖子」，当下时局该如何突围？</p>
+<p style="text-align: left;">这或许就是当下技术从业者，最为关心的一个问题。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200917/b0622d06a81c429ab4c7e4ce7640cecc.png" /></p>
+<p style="text-align: left;">由 <strong>中国计算机学会</strong><span>（CCF）</span>举办的 <strong>中国计算机大会</strong><span>（CNCC）</span>，已经迈入第17个年头，即将在10月22日至24日期间举办。 </p>
+<p style="text-align: left;">而在今年的CNCC中，就会围绕着《信息技术助力社会治理》这一主题，从科研和学术领域出发，对软件基础、5G、卡脖子下的自主研发等，众多尖端话题进行讨论与交流。</p>
+<p style="text-align: left;">当然，还有智慧城市、大数据、人机交互、人工智能等前沿话题。</p>
+<p style="text-align: left;">除此之外，今年CNCC的特邀嘉宾也是「分量十足」。</p>
+<p style="text-align: left;">量子位作为本届CNCC战略合作媒体，先行送上一波重磅勐料。</p>
+<p style="text-align: left;">话不多说，一睹为快。</p>
+<p>一大波业界大佬来袭 </p>
+<p style="text-align: left;">在9月16日的CNCC2020新闻发布会中，CNCC2020程序委员会主席、北京大学教授谢涛介绍了特邀讲者阵容。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200917/b4de387e8067494db52a3e8531f9a7af.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>△</strong>CNCC2020程序委员会主席、北京大学教授 谢涛 </p>
+<p style="text-align: left;">目前已经确认的重磅特邀嘉宾如下：</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200917/ebd8b6d30cd9442693a8a011b079e489.png" /></p>
+<p style="text-align: left;">John Hennessy，ACM图灵奖获得者、斯坦福大学前校长、现任谷歌母公司Alphabet董事会主席。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200917/5963ade4e56b443786e16efcfc5e2d2e.png" /></p>
+<p style="text-align: left;">David Harel，以色列科学院副院长、美国科学院、工程院院士、美国艺术和科学院院士、英国皇家学会会士。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200917/3b89e638995d4254bf1f50732cab2890.png" /></p>
+<p style="text-align: left;">Katsumi Emura，NEC 前CTO、IPSJ主席。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200917/5ac87246dbda40ecb96b1e45299b8413.png" /></p>
+<p style="text-align: left;">廖湘科，中国工程院院士、国防科技大学研究员、CCF奖励委员会委员、候任主席。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200917/6707b93097f248a4b0a8fe5e4c5d3034.png" /></p>
+<p style="text-align: left;">黄铠，香港中文大学（深圳）校长讲座教授、IEEE Life Fellow、CCF首位海外杰出贡献奖获得者。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200917/bcaeb346dfa44bfbafc2fbfa7922fbdd.png" /></p>
+<p style="text-align: left;">李培根，中国工程院院士、华中科技大学教授、中国机械工程学会理事长。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200917/522154231b0745b487acb33820abc022.png" /></p>
+<p style="text-align: left;">刘明，中国科学院院士、中科院微电子研究所研究员、CCF集成电路设计专业组主任、IEEE Fellow。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200917/68fd9b9c04a34e4b982d4754adc1c734.png" /></p>
+<p style="text-align: left;">张亚勤，清华大学讲席教授、美国艺术和科学院院士。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200917/d104a68179fd43d7a16664cd66cf0026.png" /></p>
+<p style="text-align: left;">张黔，香港科技大学讲座教授、IEEE Fellow。</p>
+<p style="text-align: left;">当然，上述只是目前确定的与会嘉宾，谢涛表示，还有更多重磅讲者持续更新中。</p>
+<p>CNCC2020 </p>
+<p style="text-align: left;">在新闻发布会上，CCF理事长、大会指导委员会主席 <strong>梅宏</strong>院士，CNCC2020程序委员会主席、清华大学教授 <strong>史元春</strong>，CNCC2020大会总监、CCF秘书长 <strong>杜子德</strong>，分别对CNCC2020做了更为详尽的介绍。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200917/f52cf8c17c1140ffbc4add34a97edc14.png" /></p>
+<p><strong>△</strong>CCF理事长、大会指导委员会主席，梅宏院士 </p>
+<p style="text-align: left;">据梅宏介绍，CNCC2020将于10月22-24日举办，北京新世纪日航饭店将作为主会场。</p>
+<p style="text-align: left;">另外开设三个城市分会场、三个城市专场，线上同步直播。现场参会和线上直播并行、1个主会场5个城市会场或专场相结合。</p>
+<p style="text-align: left;">另还有3场大会主题论坛，100余场前沿技术论坛和活动及展览展示，使参会者全方位、深入地参与到大会中</p>
+<p style="text-align: left;">今年的CNCC2020将突破地域和时空的限制，全新呈现给业界同仁。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200917/7c4541c008fe461f81fc534314253f60.png" /></p>
+<p><strong>△</strong>CNCC2020程序委员会主席、清华大学教授，史元春 </p>
+<p style="text-align: left;">史元春介绍说，CNCC2020亮点颇多，今年首次尝试设立了分会场。</p>
+<p style="text-align: left;">除了在北京设立主会场外，还在沈阳、杭州、济南、重庆、厦门等地设置了3个分会场和3个专场，且开通了线上直播。</p>
+<p style="text-align: left;">多场地、多渠道融合的举办形式是CNCC2020创新之举。既减少了参会人员的聚集，又让参会人员不受时间与空间的限制可随意观看感兴趣的场次。</p>
+<p style="text-align: left;">关于日程安排方面，上午为大会特邀报告和大会论坛，下午则是各种主题的技术论坛及特色活动。报告主题丰富、形式多样，内容涉及众多领域热点话题。</p>
+<p style="text-align: left;">既有智慧城市、大数据、人机交互、人工智能等前沿话题，又有软件、5G、芯片等国际关注话题，还有计算机历史、影视科技、校企合作等新话题。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200917/19f784f3c3554453b825c48018d2d954.png" /></p>
+<p><strong>△</strong>CNCC2020大会总监、CCF秘书长，杜子德 </p>
+<p style="text-align: left;">杜子德介绍道，除了上述特邀报告和论坛，大会还将举办形式丰富的特色活动。</p>
+<p style="text-align: left;">不仅有优秀大学生颁奖会，还有备受关注的CCF科学技术奖、CCF-IEEE CS青年科学家奖、CCF海外杰出贡献奖、CCF王选奖、CCF/ACM人工智能奖等重要奖项也将在大会期间的颁奖典礼上隆重颁出。</p>
+<p style="text-align: left;">CCF CTO CLUB的加入，是CNCC2020的一大看点。</p>
+<p style="text-align: left;">CCF CTO Club刚刚成立于今年9月，首批邀请了47位计算技术领域富有影响力的企业CTO和资深学者加入。</p>
+<p style="text-align: left;">CCF的此举，就是希望通过顶尖企业CTO之间的交流帮助企业在竞争合作中成长，给中国企业的CTO们提供一个交流与成长的平台。</p>
+<p style="text-align: left;">而在CNCC2020将成为CCF CTO CLUB的首秀，届时将会有众多知名企业的CTO参与其中，共同对未来做技术展望。</p>
+<p>关于CNCC </p>
+<p style="text-align: left;">CNCC是由CCF主办的计算领域年度盛会，创建于2003年，是CCF旗舰会议，每年于不同城市举办，已成功举办十六届。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200917/c61371ca979442cd92df7044f9baf125.png" /></p>
+<p style="text-align: left;">去年，CNCC2019会议注册人数超过8000人，观展人次超过2万，共有来自超过1000家机构的代表参展参会。</p>
+<p style="text-align: left;">今年CNCC不论是附有使命感的大会主题：信息技术助力社会治理，还是北京作为主会场，另设三个分会场，三个专场并融合线上直播的会议形式，以及图灵奖获得者、院士、企业专家的豪华讲者阵容，都将让CNCC2020关注度与参会人数超越以往。</p>
+<p style="text-align: left;">那么，今年的CNCC，你期待了吗？</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>华为HC 2020 开发者活动，让开发一站到底 </strong></p>
+<p>14场开发者训练营，28场扫地僧见面会，来自华为各领域最顶尖、最优秀的技术专家，25、26日两天技术全揭秘，······ <strong><span>华为HC 2020</span></strong>开发者盛会，更多精彩内容等你来体验。 </p>
+<p>扫码购买 <strong><span>「单日票」</span></strong>，签到时可领取开发者大礼包；通过量子位渠道购票，签到后还可获赠50元京东购物卡一张~ 领取方式：添加微信（qbitbot9），加入“量子位华为HC大会专属社群”。 </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜自研芯片+自主AI框架，百度CTO王海峰携百度大脑6.0亮相
+http://www.sohu.com/a/418618167_610300	14525
+<p>晓查 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">如果让你和10年前、20年前的自己进行一场对话，你想说些什么？</p>
+<p style="text-align: left;">刚刚，百度用AI技术带我们体验了一把“穿越”的感觉，面对20年前的自己。</p>
+<p style="text-align: left;">今天“百度世界大会”首次与“央视新闻”合作，总台央视主持人康辉和百度创始人、董事长兼CEO李彦宏、百度CTO王海峰，“5个人”进行了一次特殊的对话。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/q_70/images03/20200915/8f028330eee44dc8985c1449706d18c9.jpeg" max-width="600" /></p>
+<p style="text-align: left;">明明只有康辉、李彦宏和王海峰三人，为何会变成“5个人”的对话呢？</p>
+<p style="text-align: left;">原来另外的“两个人”，分别是AI制造的康辉、李彦宏年轻时的自己。 </p>
+<p style="text-align: left;">两位虚拟人根据康辉和李彦宏20年前的形象、记忆和所拥有的知识打造，形象、动作、声音高度逼近真人。</p>
+<p style="text-align: left;">在这场特殊的对话里，不仅康辉、李彦宏能和20年前的“小康”、“小李”流畅闲聊，甚至两个虚拟人之间也来了一场亲切互动。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/q_70/images03/20200915/d93acc27012d4664a944bb4756026ca8.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">百度说，这是具备认知能力、可机机对话的终端虚拟人。</p>
+<p style="text-align: left;">而这一场对话背后，百度积攒了10年的技术。</p>
+<p style="text-align: left;">驱动“小康”、“小李”两位虚拟人的，是10年来不断进化的“百度大脑”。</p>
+<p style="text-align: left;">百度CTO王海峰表示两位虚拟人整合了视觉、语音、语言与知识等多种模态的AI技术，具备了认知能力。但这还只是百度大脑最新能力的“冰山一角”。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/q_70/images03/20200915/a44df9505ec14b3e881364228d7ad2b7.png" max-width="600" /></p>
+<p style="text-align: left;">接着，这位百度CTO从听、说、看，思考等多个层面，展示百度大脑升级到6.0之后的最新进展。</p>
+<p style="text-align: left;">而且王海峰强调，百度大脑的AI能力，正在通过云和开放平台输出给社会各界，支持各行各业智能化升级。此外，还有纵贯百度大脑各层的安全体系，为AI技术及应用保驾护航。</p>
+<p style="text-align: left;">概括起来就是：百度大脑，正在成为AI新型基础设施。</p>
+<p>百度大脑十年进化 </p>
+<p style="text-align: left;">“台上一分钟，台下十年功。”</p>
+<p style="text-align: left;">为了让虚拟人具备语音、视觉、知识等多方技能，作为技术底座的百度大脑“十年磨一剑”，才实现了现场酷炫的虚拟人对话效果。</p>
+<p style="text-align: left;">今年对百度大脑来说意义尤为特殊，因为它真的走过了十年，经历了AI技术从沉寂到兴盛：</p>
+<ul>
+<li>2010年，百度大脑开始基础能力积累，AI布局初具雏形；</li>
+<li>2016年，百度大脑1.0正式发布，开源飞桨深度学习框架上线；</li>
+<li>2017年，百度大脑2.0形成了完整的技术体系，AI能力全面开放；</li>
+<li>2018年，百度大脑3.0发布，核心技术进入多模态深度语义理解阶段；</li>
+<li>2019年，百度大脑5.0完整升级为软硬件一体的AI平台。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p2.itc.cn/q_70/images03/20200915/5ed59f7162344634bb32720bcc6eef44.png" max-width="600" /></p>
+<p style="text-align: left;">那么，到了第十个年头，百度大脑成功升级6.0后又带来了哪些新变化？</p>
+<p style="text-align: left;">过去一年，百度大脑又在AI计算架构、算法、能力上做出了创新和重要升级，已经成为智能时代的“AI新型基础设施”。</p>
+<p style="text-align: left;">如果说，百度大脑的第一个十年是完成了能力进化和体系构建，那么下一个十年，百度大脑的目标就是将最先进的AI技术落地化。</p>
+<p style="text-align: left;">过去每一次百度大脑的升级都以技术为关键词，而今年百度着重突出“AI新型基础设施”，契合国家战略中的“新基建”，也符合百度2019年产业智能化的落地思路。</p>
+<p style="text-align: left;">所以百度大脑6.0的全新升级，一言以蔽之就是：在完成技术升级的同时，也要在“新基建”中扮演重要角色，让各行各业快速运用AI技术，加速产业智能化。</p>
+<p>百度大脑6.0完整图景 </p>
+<p style="text-align: left;">虚拟人互动，让我们直观地看到了百度大脑一个应用，但百度大脑驱动的，不止于此。</p>
+<p style="text-align: left;">本届大会上亮相的百度无人车、小度音箱、度晓晓，背后的技术支持，都来自百度大脑。</p>
+<p style="text-align: left;">包括我们手机里安装的百度输入法、地图、搜索，背后也是靠百度大脑的AI技术。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/q_70/images03/20200915/abfa6f5723804f54a123707723e26a73.png" max-width="600" /></p>
+<p style="text-align: left;">所以，百度大脑是百度技术多年积累和业务实践的集大成，从硬件到软件，从技术底层到应用场景无所不包，也是百度技术的原动力。</p>
+<p style="text-align: left;">而且百度还要把它作为整个AI基建时代的动力贡献出来，并得到了产业界的广泛响应。</p>
+<p style="text-align: left;">百度大脑6.0—AI新型基础设施，已开放270多项领先的AI能力，凝聚230万开发者，企业发布的模型数量超过31万，是业内最全面、最领先、服务规模最大的 AI 开放平台，将更敏捷、更高效支撑AI工业大生产，助力产业智能化提速。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/q_70/images03/20200915/7bae71b64b2748a0990a85e1109d300a.png" max-width="600" /></p>
+<p style="text-align: left;">今年，百度大脑6.0除了下沉到“新基建”，也有全方位的升级和完善。</p>
+<p style="text-align: left;">无论是在软硬件维度的“基础层”，还是在技能维度的“技术层”。</p>
+<p>AI芯片百度昆仑 </p>
+<p style="text-align: left;">首先，百度大脑6.0交出第一份硬答卷：</p>
+<p style="text-align: left;">启动了2年的百度“昆仑”芯片项目，完成第一代芯片的量产和交付使用，第二代芯片已经提上日程，预计明年量产。</p>
+<p style="text-align: left;">在当前大环境下，这个量产和交付进展，毫无疑问也是一针强心剂，从产业到整个国家，意义和价值不言自明。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/q_70/images03/20200915/25dd0fd5bf954c59bfd4bd2a88b6137c.png" max-width="600" /></p>
+<p style="text-align: left;">实际上，如此速度，虽然意料之外，但也在情理之中。</p>
+<p style="text-align: left;">百度在AI芯片方面，实际十年前就已经开始探索。早在2010年，百度就已经在用FPGA研发AI架构，2011年就部署上线。</p>
+<p style="text-align: left;">如今，百度昆仑芯片的生态环境已初步建立，支持多款国产处理器，适用于语音、图像、NLP等多个场景。</p>
+<p style="text-align: left;">百度方面披露，截止到今天，百度昆仑芯片已经和正在部署接近2万片，向十几个客户完成交付。</p>
+<p style="text-align: left;">比如部署在百度搜索引擎上的百度“昆仑1”芯片，相比英伟达T4 GPU，百度昆仑1的性能在不同模型下有1.5-3倍的提升。</p>
+<p style="text-align: left;">另外，王海峰也在现场表示，百度“昆仑2”芯片已提上日程，这款芯片采用7nm先进的工艺，相对第一代性能提高了3倍，将于明年上半年量产。</p>
+<p>AI开源平台飞桨 </p>
+<p style="text-align: left;">谈百度大脑，也不得不提最大国产开源深度学习平台——飞桨。</p>
+<p style="text-align: left;">作为中国首个开源的产业级深度学习平台，百度飞桨在此次升级中，依然地位颇隆。</p>
+<p style="text-align: left;">飞桨到今年已升级到2.0版。本次升级可以用“动静统一、软硬结合”8个字来形容，升级内容包括两个方面：</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/q_70/images03/20200915/9bfa17dfffb041618799eeb31afebf77.png" max-width="600" /></p>
+<p style="text-align: left;">动态方面，图功能升级实现了动静态的结合，让用户更容易开发模型；全面升级的API体系，对开发者更加友好。</p>
+<p style="text-align: left;">而硬件方面，百度称飞桨与硬件结合，达到了国际领先水平，甚至超过了TensorFlow和PyTorch国外两大AI框架，可以适配22种芯片型号，覆盖15家硬件厂商，对国产AI硬件的支持力度业界第一。</p>
+<p style="text-align: left;">开发者拥护方面，也能体现飞桨影响力。</p>
+<p style="text-align: left;">飞桨正在作为AI新基建的重要基础设施，为产业智能化升级转型输出推动力。</p>
+<p style="text-align: left;">当然，这也离不开百度在飞桨生态建设方面的努力。比如百度大脑在多个视频平台上推出了深度学习系列精品课程，并出版了配套的入门教材，帮助开发者快速掌握AI技术。</p>
+<p style="text-align: left;">总之，面向国内AI硬件厂商，百度大脑有业界最广泛的适配方案，面对开发者，也有相关课程培养开发者，这也体现了今年百度大脑作为“AI新型基础设施”的理念。</p>
+<p style="text-align: left;">结合技能和新进展来看，这种基础设施的地位及作用，还会更清晰。</p>
+<p>知识图谱 </p>
+<p style="text-align: left;">百度大脑6.0的另一大进展，就是建成了 <strong>世界上规模最大的知识图谱</strong>。 </p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/q_70/images03/20200915/83f8a7b5eedb4090a06a12a775978aa6.png" max-width="600" /></p>
+<p style="text-align: left;">百度的知识图谱自2012年启动，经过近10年的发展，已拥有超过50亿实体和5500亿的事实，每日调用次数超过400亿次，覆盖了100多个行业场景。</p>
+<p style="text-align: left;">最近这一年，百度的知识图谱技术实现了全面的升级，针对不同的应用场景和知识形态，构建了事件图谱、多媒体图谱、行业知识图谱等多种图谱。</p>
+<p>语义理解框架文心(ERNIE) </p>
+<p style="text-align: left;">还有自然语言理解能力——NLP框架“文心”（ERNIE）——取得进一步提升，尤其在中文语义理解上，文心依旧一马当先。</p>
+<p style="text-align: left;">新版文心，相比去年在8项NLP任务中，语义理解的准确率相比去年提升了2.07%。</p>
+<p class="ql-align-center"><img src="//p3.itc.cn/q_70/images03/20200915/57bfc7b6bc674562bb28982a619ed867.png" max-width="600" /></p>
+<p style="text-align: left;">今年，百度还提出了基于多流机制的预训练语言生成技术——ERNIE-GEN和知识增强跨模态语义理解技术ERNIE-ViL。</p>
+<p style="text-align: left;">ERNIE-ViL首次将场景图知识融入到跨模态的预训练模型中，在视觉问答、图像检索等5个典型的跨模态任务上取得了SOTA效果，并在跨模态语义理解权威榜单VCR上登顶榜首。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/q_70/images03/20200915/06c9d1e627724d6992dfb25558f530b5.png" max-width="600" /></p>
+<p style="text-align: left;">近期发布的文心语义理解平台，将全面的NLP算法集、端到端的开发集和平台化服务于一体，提供数据处理、模型训练、模型评估、模型部署等环节提供一整套工具，一站式帮助企业实现智能化转型。</p>
+<p>视觉语音技术 </p>
+<p style="text-align: left;">此外，图像和语言、语音和语言的一体化理解能力。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/q_70/images03/20200915/a29d97d54b4846fea9e5635eea3ccf7b.png" max-width="600" /></p>
+<p style="text-align: left;">目前，百度语音交互技术日均调用量超过155亿次，广泛应用在移动端、智能家居、和语音IoT等场景。</p>
+<p>其他前沿技术 </p>
+<p style="text-align: left;">在巩固基础的前提下，百度大脑6.0也积极探索与融合前沿技术，将数据联邦、量子计算等领域纳入其中。</p>
+<p style="text-align: left;">百度发布了全国首个面向疫情预测与追踪的多方位数据协作平台——百度数据联邦平台。</p>
+<p style="text-align: left;">百度还推出了“量易伏”，这是国内首个云端原生量子计算平台。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/q_70/images03/20200915/89f8742819e743eb8a5ad77c22faf44d.png" max-width="600" /></p>
+<p style="text-align: left;">针对开发者，量易伏提供基于Python的开源开放工具包QCompute。</p>
+<p style="text-align: left;">百度还对量子机器学习工具集“量桨”进行了重磅升级：帮助开发者高效地搭建量子神经网络，上线支持20多个量子比特的量桨模拟器。</p>
+<p style="text-align: left;">最后，百度首次提出AI安全研究的三大维度：Security、Safety和Privacy，即强对抗环境下的安全威胁、非对抗条件下自然环境所产生的真实威胁和数据安全与隐私保护。</p>
+<p>从技术大脑到AI基础设施 </p>
+<p style="text-align: left;">毫无疑问，在百度创办20年之际，这次升级后的百度大脑6.0，已不能用技术大脑视之了。</p>
+<p style="text-align: left;">一方面，它依然是前沿技术边界探索、最新AI技术输出的集大成者。</p>
+<p style="text-align: left;">另一方面，它也展现出平台性、低门槛接入性，以及生产力特性——可以帮助非专业人士快速搭建AI系统，也让百度大脑成为智能化转型中的基础设施。</p>
+<p style="text-align: left;">或者就是百度强调的，AI新型基础设施。</p>
+<p style="text-align: left;">比如在最新的应用案例中，用百度大脑设计一个智能水运调度应用，非专业技术人员只需不到一天时间，就能完成AI图像模型的训练和部署，大大节省了寻找专业机器学习团队的开发成本。</p>
+<p style="text-align: left;">而这只是“黑科技”触手可及的案例之一、冰山一角。</p>
+<p style="text-align: left;">为了推动更多人加入进来，百度也放出“狠话”未来5年，还将继续培养500万，为中国智能经济和智能社会的发展提供AI人才保障。</p>
+<p style="text-align: left;">此外，当前形势下，最值得关注的就是这次在软硬件方面的自研自主进展。</p>
+<p style="text-align: left;">一方面是芯片，百度昆仑的新进展。</p>
+<p style="text-align: left;">另一方面是操作系统，百度大脑和飞桨这样的平台，就是数字化转型中的智能操作系统。</p>
+<p style="text-align: left;">而百度现在在央视展示的，核心就是四个字：自主可控。</p>
+<p style="text-align: left;">或许作为选项之一，未来可以避免被“卡脖子”。</p>
+<p style="text-align: left;">而且李彦宏也表态，在这种基础设施的投入上，会坚定不移走下去。</p>
+<p style="text-align: left;">李彦宏表示：</p>
+<p style="text-align: left;">但对于这样的投入，李彦宏认为值得。</p>
+<p style="text-align: left;">或许，这也是百度大脑可以十年发展、十年迭代之后，从一家公司的技术大脑成为整个产业的AI基础设施的核心原因吧。</p>
+<p>— <strong>完</strong>— </p>
+<p>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</p>
+<p><strong>好课推荐 | 0基础学Python</strong></p>
+<p>《动手学Python》课程由<strong><span style="font-size: 16px;">上海交大博士教研团队</span></strong>研发，在线学习平台由上海<strong><span style="font-size: 16px;">交大AI实验室</span></strong>技术支持，旷视、文远知行、图森未来、来也科技等<strong>知名AI企业CEO/CTO力荐</strong>。</p>
+<p style="text-align: left;">0基础可入门，限时开放体验课！扫码即刻开启Python学习之旅：</p>
+<p><strong>量子位 </strong>QbitAI · 头条号签约作者</p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>一键三连「分享」、「点赞」和「在看」</p>
+<p>科技前沿进展日日相见~</p>

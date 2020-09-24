@@ -1,0 +1,317 @@
+➜照片你随便拍，「光影」我任意调，MIT谷歌新研究，器材党老法师看了会沉默
+http://www.sohu.com/a/412924975_610300	18467
+<p>金磊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">在摄影这件事上，「光影」简直不要太重要。</p>
+<p style="text-align: left;">毕竟大师们摄影作品，大多都是对「光」和「影」的拿捏。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200813/58f726413c8c477bb42d66d17bea7b9d.png" /></p>
+<p><strong>△</strong>来自俄罗斯摄影师George Mayer </p>
+<p style="text-align: left;">而最近，MIT 和谷歌等机构联手提出了一种用神经网络「打光」的新方法，大大降低了对「光影」拿捏的门槛—— <strong>神经光线传输</strong><span>（Nerual Light Transport，NLT）</span>。 </p>
+<p style="text-align: left;">例如下图所示，只要拍好人物照片，无论背景如何转换，都可以相应的调节人物身上的「光影」。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200813/9a22b5229b654343b3c23eaf57186aa3.gif" /></p>
+<p style="text-align: left;">去背景后的「AI 打光」效果更加明显。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><img src="http://p4.itc.cn/q_70/images03/20200813/8c8d2bb415d444fbbd6d62999306df10.gif" /></p>
+<p style="text-align: left;">还有这样的。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200813/9c79f012c06546a7b45cb62df04d9b10.gif" /></p>
+<p style="text-align: left;">虽说「打光」效果是出来了，但这画风…有点像阴间的东西了。 </p>
+<p style="text-align: left;">言归正传，继续聊聊 NLT 这项技术。</p>
+<p>NLT——拿捏光线的一把好手 </p>
+<p style="text-align: left;">光线传输 <span>（LT）</span>可以描述一个场景中，物体在不同光照和方向下所呈现出来的样子。 </p>
+<p style="text-align: left;">而完整地了解一个场景的 LT，还可以实现任意光照下的新视图合成。</p>
+<p style="text-align: left;">于是，MIT 和谷歌的研究人员基于图像 LT 采集 <span>（以人体为主）</span>，提出了一种半参数的深度学习框架，来学习 LT 的神经表示，名曰 <strong>NLT</strong>。 </p>
+<p style="text-align: left;">总体而言，NLT 可以单独或同时完成以下两项任务：</p>
+<ul>
+<li>用定向光或HDRI图，重新照亮场景的光线真实性。</li>
+<li>合成具有视图依赖性效果的新视图。</li>
+</ul>
+<p style="text-align: left;">来看下 NLT 在不同任务下的效果。</p>
+<p style="text-align: left;">首先是 <strong>「定向重打光」</strong><span>（Directional Relighting）</span>。 </p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200813/351944b9b7874d2a9a0924e8a1a26ef7.gif" /></p>
+<p style="text-align: left;">可以看到人物在光线的变化下，阴影、高亮的变化非常自然。</p>
+<p style="text-align: left;">接下来，是基于 <strong>「背景图的重打光」</strong><span>（Image-Based Relighting）</span>。 </p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200813/a5456180ce4e414291e15618f80edc96.gif" /></p>
+<p style="text-align: left;">从背景图中，大致可以判断光源 <span>（太阳）</span>的方向，而随着背景图的转动，人物身上的阴影也会随之发生改变。 </p>
+<p style="text-align: left;">最后，是 <strong>「视图合成+同步光源」</strong><span>（View Synthesis &amp; Simultaneous）</span>。 </p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200813/a89b12ff9c5846af991220f498a87171.gif" /></p>
+<p style="text-align: left;">除了视觉效果惊艳之外，从定性角度来看，NLT 方法也取得了不错的效果。</p>
+<p style="text-align: left;">例如，在「重打光」 <span>（Redlighting）</span>任务中，与其它基线方法相比，在 PSNR 和 SSIM 两个指标中都取得了最先进的结果。 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200813/4641285086294e91a1e0ce7a08313ff6.png" /></p>
+<p style="text-align: left;">同样，在「视图合成」任务中，NLT 的结果也是相当不错。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200813/46b4a8ced8b14be090685d57f26bde69.png" /></p>
+<p style="text-align: left;">那么，NLT 具体是如何实现这般效果的呢？</p>
+<p>NLT模型：「查询」、「观测」两步走 </p>
+<p style="text-align: left;">NLT 的模型网络主要由2条路径构成，分别是 <strong>查询路径</strong><span>（Query Path）</span>和 <strong>观测路径</strong><span>（Observation Path）</span>。 </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200813/fc921023c1b24b7187e2d7ec928adcfd.png" /></p>
+<p style="text-align: left;">「观测路径」将附近的 K 个观测值作为输入，在目标光和观察方向周围采样，并将它们编码成多尺度特征，汇集起来用来消除对其顺序和数量的依赖。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200813/f6fda3e6e498459e9bd7feef1e90528b.png" /></p>
+<p style="text-align: left;">接下来，这些汇集起来的特征将被连接到 「查询路径 」的特征激活上。</p>
+<p style="text-align: left;">这条路径将所需的光线和观察方向，以及物理上精确的 disue base 作为输入。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200813/7b8fffe795fa40e7b291c101f453df74.png" /></p>
+<p style="text-align: left;">「查询路径」预测了一个残差图，该残差图被添加到diuse base上，用来产生纹理渲染。</p>
+<p style="text-align: left;">最后，通过将深度神经网络嵌入到UV纹理空间中，便可以合成与可见光线和观看角度对应的纹理空间RGB图像。</p>
+<p>华人小哥一作 </p>
+<p style="text-align: left;">这项研究的第一作者，是来自MIT的博士生，张修明。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200813/42a24bc045bd4252b1d00ec8165adeac.png" /></p>
+<p style="text-align: left;">张修明目前在 MIT 计算机科学与人工智能实验室 <span>（CSAIL）</span>，从事计算机视觉和计算机图形学领域的工作，尤其对重光照、视图合成和材料建模感兴趣。 </p>
+<p style="text-align: left;">另一位主要作者是Sean Fanello。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200813/a3a3248a92774383af75328d1eaccf89.png" /></p>
+<p style="text-align: left;">Sean Fanello是一名研究科学家，也是谷歌的经理，在谷歌领导容量性能捕获方面的工作。</p>
+<p style="text-align: left;">研究兴趣主要包括数字人类、体积重建、高质量的深度传感和非刚性跟踪。</p>
+<p style="text-align: left;">最后，项目将在近日开源，感兴趣的朋友持续关注下方参考链接中的信息更新。</p>
+<p style="text-align: left;"><span>参考链接：</span></p>
+<p style="text-align: left;"><span>http://nlt.csail.mit.edu/</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜ISC 2020技术日丨 网络空间危机四伏,如何发现威胁的蛛丝马迹?
+http://www.sohu.com/a/412918883_610300	20212
+<p>云风 发自 凹非寺 量子位 编辑 | QbitAI</p>
+<p>核心技术是强国之匙，当今世界，信息技术的迅勐发展特别是互联网技术的广泛应用，极大地促进了全球的经济文化发展。但与此同时，技术是一把“双刃剑”， 网络安全也正临新挑战。</p>
+<p>首次采用“万人在线”的云会议模式的第八届互联网安全大会（ISC 2020），为全球万千参会者打造永不闭幕的云上安全交流平台。8月13日-16日的技术日多个论坛中，更是行业领军专家、全球技术大咖等齐聚“云端“，共同探讨等保2.0时代，网络空间测绘、ATT&amp;CK安全能力衡量、安全分析技术、XDR分析检测等信息技术领域，构筑网络安全建设”合规之路“。</p>
+<p>网络空间对抗升级，ATT&amp;CK 框架构建安全基石</p>
+<p>ATT&amp;CK作为近几年最火的攻击框架，对于安全行业的实际检测有很强的指导性价值。它覆盖的攻击技术非常庞杂和具体，大概有200多项技术点。而随着对抗的升级，域安全在红蓝对抗中越来越重要。</p>
+<p>基于此，青藤云安全COO 程度以“ATT&amp;CK高频攻击技术的分析与检测”为议题，围绕ATT&amp;CK技术使用频率、攻击技术检测分析框架、ATT&amp;CK技术需要收集的数据类型频率分布、ATT&amp;CK数据源与事件日志、Valid Account 攻击等进行了深度探讨。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200813/1a24a6d9598f46c2b3d1dd4a868842f9.png" max-width="600" /></p>
+<p>其中，ATT&amp;CK高频技术方面还对Valid Account 攻击、Powershell 攻击、Masquerading攻击、Credential Dumping攻击、Scheduled Task攻击等五方面进行了详细的介绍和分析。</p>
+<p>1、Valid Account 攻击</p>
+<p>程度提出，攻击者会使⽤利⽤漏洞获取凭证访问的权限技术来窃取⼀个特定⽤户或服务账户的⽤户名密码或凭证，或者是通过社会⼯程学侦查获得特定⽤户或服务账户的⽤户名密码或证书，从⽽获得初始访问的权限。而攻击者可能使⽤的账户分为三类：默认账户、本地账户和域账户。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200813/5d2f23a8846043b5ac107bf52e69ecc3.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>针对入侵分析，程度提出攻击者通过其他⼿段获取的邮箱账号可以作为持久化的⼀种⼿段，可直接登陆到系统，然后新建⼀个隐藏账号来实现持久化。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200813/54397308174c420c8517de8797ca6dee.png" max-width="600" /></p>
+<p>针对检测分析，程度列举出两类不同的数据源。</p>
+<p>异常登陆，可监测所有登录时间，是否在非正常时间和非正常地点登录。</p>
+<p>账号变更，可监测所有账号的新增，修改。</p>
+<p>数据源为账号变更事件、异常登录事件</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200813/217ed814ce994dc080398752c0ed53f7.png" max-width="600" /></p>
+<p>Windows系统：监视创建LSASS.exe的Windows日志，验证LSASS是否作为受保护进程启动；监视程序执行的进程和命令行参数。例如PowerSploit的Invoke-Mimikatz模块；监控域控制器日志以查找可能与DCSync相关的复制请求和其他未安排的活动；监视来自与已知域控制器无关的IP的网络协议 和其他复制请求。</p>
+<p>Linux：要获取存储在内存中的密码和哈希，进程必须在/proc文件系统中打开要分析的进程的映射文件。该文件存储在/proc/maps路径下，其中目录的唯一的pid；AuditD监控工具，在许多Linux发行版中都提供，可用于监视在proc文件系统中打开此文件的恶意进程，警告pid，进程名称和此类程序的参数。</p>
+<p>数据源为进程监控，进程命令行参数，API监控，PowerShell日志</p>
+<p>2、Powershell 攻击</p>
+<p>程度提出，攻击者可以使用PowerShell执行许多操作，包括信息发现和执行恶意代码。例如，使用Start-Process cmdlet运行恶意的可执行文件，使用Invoke-Command cmdlet在本地或远程计算机上执行命令。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200813/72219235c75c459cbacbb316dae2eed3.png" max-width="600" /></p>
+<p>针对入侵分析，程度提出了三点。</p>
+<p>绕过本地权限执行，即上传xxx.ps1到目标服务器，在cmd的环境下，在目标服务器本地执行该脚本。</p>
+<p>本地隐藏绕过权限执行脚本。</p>
+<p>用IEX下载远程PS1脚本绕过权限执行。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200813/f558d38bf0e845c6904c0f58b4a131af.png" max-width="600" /></p>
+<p>针对检测分析，程度提出，如果攻击者获得管理员或系统访问权限，可能会通过注册表或命令行来定义自己的执行策略。可从以下几种方式进行检测：</p>
+<p>监控与PowerShell特定程序集相关的artifacts的加载和执行，例如System.Management.Automation.dll（特别是异常的进程名称/位置）。</p>
+<p>记录PowerShell日志，以更好的获知执行期间发生了什么（适用于.NET调用）。</p>
+<p>在数据分析平台中收集PowerShell执行细节，以补充其他数据。</p>
+<p>数据源为PowerShell日志，加载的DLL，DLL监控，Windows注册表，文件监控，进程监控，进程命令行参数。</p>
+<p>3、Masquerading攻击</p>
+<p>为了逃避防御和监控，攻击者会利⽤伪装，来操纵或滥⽤合法或恶意的可执⾏⽂件的名称或位置。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200813/388abd3e62d14051bad31de342d99524.png" max-width="600" /></p>
+<p>针对入侵分析，程度提出，会将windows伪装成svchost：把恶意exe⽂件重命名成svchost，放到其他系统⽬录中运⾏。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200813/070b42521e334c04801ac94f34e613aa.png" max-width="600" /></p>
+<p>针对检测分析，程度提出，以下几点：</p>
+<p>收集文件哈希，文件名与其预期的哈希值不匹配是可疑的。执行文件监控，具有已知名称但位于不寻常位置的文件是可疑的。同样，在更新或修补程序之外修改的文件也是可疑的。</p>
+<p>磁盘文件名与二进制文件的PE元数据的文件名不匹配，则可能表示二进制文件在编译后已重命名。通过查看InternalName，OriginalFilename和ProductName是否与预期匹配来收集和比较二进制文件的磁盘和资源文件名可以提供有用的线索，但可能并不总是指示恶意活动。</p>
+<p>对于RTLO，检测方法应包括在文件名中查找RTLO字符的常见格式，例如“\ u202E”，“[U + 202E]”和“％E2％80％AE”。防御者还应检查他们的分析工具，以确保他们不解释RTLO字符，而是打印包含它的文件的真实名称。</p>
+<p>数据源为文件监控，进程监控，二进制文件元数据。</p>
+<p>4、Credential Dumping攻击</p>
+<p>程度提出，攻击者可以使⽤凭证执⾏横向移动并访问需要较⾼权限才能访问的信息，且攻击者和专业安全测试⼈员都可以使⽤此技术中提到的⼏种⼯具。也可能存在其他⾃定义⼯具。可以使⽤Mimikatz、Cain、creddump7在本地处理SAM数据库，以检索哈希值。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200813/8c2724b2e37540aea15f05ffa853b036.png" max-width="600" /></p>
+<p>针对入侵分析，程度提出，lsass.exe的内存经常会被转储，以进⾏离线凭证窃取攻击。可以使⽤Windows任务管理器和管理权限，系统⼯具ProcDump，或者mimikatz来实现。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200813/af5428fcc63f46e2869881c819b98adc.png" max-width="600" /></p>
+<p>针对检测分析，程度提出以下几点：</p>
+<p>攻击者⼀般都通过powershell执⾏恶意命令，⽽且在执⾏powershell时，必然需要使⽤参数 -execbypass来绕过执⾏安全策略，这是⼀个很强的检测点。</p>
+<p>监控命令⾏和进程创建事件，mimikatz，reg save HKLM\sam sam，reg save HKLM\system system，reg save HKLM\security security，这些都是很好的特征。</p>
+<p>数据源为进程监控，进程命令行参数，API监控，PowerShell日志 。</p>
+<p>5、Scheduled Task攻击</p>
+<p>程度提出，攻击者使⽤at、schtasks和Windows任务计划程序在某个时间执⾏程序或脚本。如果使⽤RPC（通过身份验证），并且⽂件和打印机共享都被打开的情况下，还可以在远程系统上执⾏计划任务；在远程系统上执⾏计划任务通常要求该成员是Administrators组的成员；攻击者可以在计划任务中执⾏恶意程序，从⽽实现持久化，获得SYSTEM权限，或者在指定帐户的上下⽂中运⾏进程。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200813/3770fca1ae944ccf98e9f1ad9fc27e84.png" max-width="600" /></p>
+<p>针对入侵分析，程度提出在Windows系统下，管理员权限，攻击命令为创建计划任务。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200813/394db17027724222b11390ae3b279346.png" max-width="600" /></p>
+<p>而针对检测分析，数据源为Windows事件日志，监视进程和命令⾏参数以了解可⽤于创建任务的操作。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200813/31ab6ff18ce24c68af19b367af2ef209.png" max-width="600" /></p>
+<p>基于以上探讨，程度总结出“威胁狩猎系统=高质量数据+异构数据源的连接+强大的分析引擎+灵活的分析语言”。</p>
+<p>深挖难点：空间测绘精准感知，筑牢安全防御体系</p>
+<p>万物互联，攻击无孔不入，战场无处不在。伴随5G、IPv6、人工智能、云计算等新技术的涌入，数以百亿的资产设备暴露在未知威胁之下，世界级安全风险呈超指数级倍增。如何利用网络测绘手段精准、实时、智能的感知网络空间安全态势，及时感知威胁、识别定位资产，成为网络安全防御体系重要一环。</p>
+<p>作为威胁分析、安全研究方面的专家，华顺信安联合创始人、首席安全官的邓焕就网络空间测绘技术现状进行了分析，并从攻击者视角分享了来自黑灰产业的真实攻击事件及华顺信安在网络空间测绘技术方面的思考和实践。</p>
+<p>邓焕提出，当前，网络空间测绘技术存在攻防体系的不对称，如在技术层面防御通常比攻击慢半拍；信息不对称，攻击者 &gt; 安全人员等问题，需具备攻击者视角。如以攻击者视角利用全网探索探索引擎快速搜集业务系统ICO、CERT证书、子域名、同IP/IP段信息。</p>
+<p>邓焕强调，从攻击者视角来看，如果要入侵一台服务器，要从开放的端口服务、组件下手。那么第一步做的就是网络资产暴露面的梳理，主要围绕企业关键字如域名、IP、logo、ICP备案号、证书进行信息收集，以发现更多的企业资产，寻找突破口拿下目标。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200813/da903a19e90b44819f965fec1a02b725.png" max-width="600" /></p>
+<p>邓焕谈到，随着网络资产数字化，用户正面临着监管资产难以快速、全面、精准地管理，传统产品扫描缓慢、无法第一时间发现安全风险及网络威胁等痛点。目前阶段防守方大多抵挡不住来自黑客的攻击，主要是因为攻击者关心的永远不是用户的IP资产，而是用户IP资产上对应的漏洞。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200813/b5fbee931974494ea7cdabe464d60c53.png" max-width="600" /></p>
+<p>攻守有道，攻与守本身作为一对对立统一的矛盾，在互相对抗的同时又互相促进。邓焕认为这就意味着在数字时代局势下要转变以往的网络安全策略。只有实现网络资产的精准扫描，快速补漏，才能立于不败之地。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200813/ef2711801263445f9f8575ebff96c4e8.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200813/3c700597ad0140989da808bda1aef0c2.png" max-width="600" /></p>
+<p>邓焕最后强调道，网络空间资产安全防护不足主要原因是我们甚至不知道服务器的存在，而网络空间测绘技术便解决了这个问题。近年来，华顺信安聚焦网络空间测绘技术，旗下的FOFA平台搜索引擎拥有全球联网IT设备更全的DNA信息。可以把全球暴露在公网上设备的端口、协议、应用，甚至漏洞进行纵深的扫描，对资产的安全进行建模刻画。相信未来网络空间测绘技术或将成为网络安全的基础技术。</p>
+<p>深耕攻防之道，安全分析技术一网打尽前沿网安黑科技</p>
+<p>随着大数据时代的来临，传统的实时检测与防御已不能胜任对海量数据中细微异常的甄别。相比主机层和应用层以日志、请求等为分析对象，网络流量分析面对更底层的网络数据包，其中包含更多信息元素。</p>
+<p>绿盟科技伏影实验室安全研究员杜元正分享了关于“图卷集神经网络的样本家族分类”的相关研究进展。目前，可执行程序黑白二分类的技术相对成熟，在此基础上进行由功能、代码复用情况对恶意可执行程序进行多分类成为下一个突破方向。</p>
+<p>演讲中，杜元正分享了其研究团队针对此方向的研究历程，团队首先使用API\LIB调用序列作为特征对可执行文件进行分类，但由于恶意样本家族之间的API\LIB调用序列的特异性不足，导致分类结果不理想。随后更换特征提取思路，以恶意样本的控制流图(Control Flow Graph, CFG)作为特征、使用可以采集图特征的图卷积神经网络（Graph Convolutional Nerual Network）进行多分类。</p>
+<p>其中，控制流图具有图结构和和节点属性两个特征，且通过图卷积层对图结构与节点属性的特征采集，具有以下特征：</p>
+<p>节点属性缩放</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200813/889c3fb764014957bc26ff32c8c548b6.png" max-width="600" /></p>
+<p>节点属性传播</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200813/92e43a8f58c042da93e2a6e666a4a8c0.png" max-width="600" /></p>
+<p>针对排序池化层，杜元正提出，控制流图节点数量任意，因此特征图大小任意; 在分类前，使用排序池化层固定特征图的维度。而排序原则，即对于一个大小为M*N特征图，根据第N列的值排序，若相等，则比较第N-1列的值，以此类推。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200813/b4a7bbe6ce164573a9bf027534a299e3.png" max-width="600" /></p>
+<p>理想·环境下的分类结果，杜元正表示，使用恶意样本控制流图作为多分类特征，然后使用图卷积神经网络对分类特征进行分类，理想环境下分类效果拔群。</p>
+<p>恶意样本图节点属性缺失的情况下，分类：仅凭恶意样本的图结构进行分类</p>
+<p>恶意样本增加图节点属性后，收敛的所需要的轮数减少了30%</p>
+<p>与此同时，研究团队在此过程中遇到了两个工程问题但最终得以解决，其一是缺数据，最终通过做数据增强成功解决，其二是关于壳保护技术，研究发现利用“壳函数不会调用恶意样本自定义函数、恶意样本自定义函数不会调用壳函数”的这一特点，能够成功分离壳特征。就壳保护技术解决方案如下：</p>
+<p>壳特征分离，可见恶意样本函数调用图，包括壳函数调用图以及恶意样本本地函数调用图。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200813/0007ca5e7ba54ed3886a22a113db3bad.png" max-width="600" /></p>
+<p>基于“壳函数不会调用恶意样本本地函数，恶意样本本地函数不会调用壳函数”的观测结果，分离壳函数调用图与恶意样本本地函数调用图。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200813/0ed3b28dc1624b45b4b4121180479d55.png" max-width="600" /></p>
+<p>沙箱建设。通过注入插桩代码，在不影响程序动态执行结果的前提下，在程序执行过程中插入特定分析代码，实现对程序动态执行过程的监控与分析。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200813/aeb12499c81742e7b22386b74b98b2b7.png" max-width="600" /></p>
+<p>等保2.0时代，信息技术开启合规之路</p>
+<p>等保2.0时代高位启航一周年有余，显然对信息技术运营者、使用单位等提出了新的要求，全面护航自身安全隐患和不足，提高信息技术的安全防护能力，成为一大难题。</p>
+<p>中国工程院院士，国家集成电路产业发展咨询委员会委员，国家三网融合专家组成员，中央网信办专家咨询委员会顾问沈昌祥院士以“按等保2.0可信计算3.0筑牢新基建网络安全防线”为议题提出，按照国家网络安全法律、战略和等级保护制度要求，推广安全可信产品和服务，筑牢网络安全底线是历史的使命。新型基础设施是以数据和网络为核心，其发展前提是用主动免疫的可信计算筑牢安全防线。</p>
+<p>沈昌祥从以下三个方面进行了详细分析：</p>
+<p>1、用科学网络安全观构建新基建网络安全主动免疫新体系</p>
+<p>“一种”新模式，计算同时进行安全防护。主动免疫可信计算是一种运算同时进行安全防护的新计算模式。</p>
+<p>“二重”体系结构，计算部件+防护部件。建立免疫、反腐败子系统。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200813/bc70221a3346431eb16f3c062e13ab4a.png" max-width="600" /></p>
+<p>“三重”防护框架。可信安全管理中心支持下的主动免疫三重防护框架，“安全办公室”，“警卫室”，“安全快递”。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200813/28a493a4d2d44c979341aa08d53dc37d.png" max-width="600" /></p>
+<p>“四要素”人机可信交互。人机交互可信是发挥5G、数据中心等新基建动能作用的源头和前提，必须对人的操作访问策略四要素（主体、客体、操作、环境）进行可信度量、识别和控制。</p>
+<p>“五环节”可信设施。加强基础设施全程安全管控，用可信密码等技术检测、预警、恢复等措施确保设施各环节安全可信。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200813/4e35dea8fcee40b382f594c2d6e39a59.png" max-width="600" /></p>
+<p>“六不”防护效果，即攻击行为赖不掉、系统和信息改不了、非授权者重要信息拿不到、攻击者进不去、窃取保密信息看不懂、系统工作瘫不成。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200813/90bd8c753a7e45ecb2bce567df9f64dc.png" max-width="600" /></p>
+<p>2、打造主动免疫可信计算3.0新型产业空间</p>
+<p>开创可信计算3.0时代 。中国可信计算源于1992年立项研制免疫的综合安全防护系统（智能安全卡），于1995年2月底通过测评和鉴定。经过长期军民融合攻关应用，形成了自主创新安全可信体系，开启了可信计算3.0时代。</p>
+<p>抢占核心技术制高点 摆脱受制于人，完备的可信计算3.0产品链，将形成巨大的新型产业空间。如可信主机分多核CPU内实施可信并行结构和主板上加装TPCM+TCM模块，老设备可以方便地通过可信网络支撑平台把现有设备升级为可信计算机系统，而应用系统不用改动，便于新老设备融为一体，构成全系统安全可信。</p>
+<p>3、按等保2.0构筑新基建网络安全底线</p>
+<p>等保2.0新标准把云计算、移动互联网、物联网和工控等采用可信计算3.0作为核心要求，筑牢网络安全防线。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200813/b15da549f8c24f918bf729017debae86.png" max-width="600" /></p>
+<p>等保2.0新标准要求5G安全架构。5G网络在传统电信云的基础上引入NFV/SDN等技术进行ICT融合，将移动通信网络云化、虚拟化和软件化，使网络变得更灵活、敏捷和开放。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200813/5ccd25752cb6472884d59b158f47f238.png" max-width="600" /></p>
+<p>基于众多嘉宾的探讨，不难发现，当今网络安全市场， 等级保护新标准的发布与实施，对网络安全产品市场起到推波助澜的作用，使得多种技术和产品得到广泛的应用和部署，不仅促进此类产品的进一步发展，也促进了网络安全防护水平的进一步提升。</p>
+<p>ISC2020技术日期间精彩不断，全球顶尖嘉宾接连聚焦热点、难点问题，共谋网路安全发展之道，还有安全开发与测试、XDR分析检测、漏洞管理与研究、移动安全等多个分论坛同步上线。未来几天，ISC2020产业日、人才日等主题日将陆续开启，还有ISC夜谈、ISC Talk、CXO等特色活动持续开播，为永不落幕的安全大会注入最前沿、最专业的基石。</p>
+➜精度45.9%，推理速度72.9FPS，百度飞桨推出工业级目标检测模型 PP-YOLO
+http://www.sohu.com/a/412965199_610300	34406
+<blockquote>
+允中 发自 凹非寺
+</blockquote>
+<blockquote>
+量子位 编辑 | 公众号 QbitAI
+</blockquote>
+<p>工业视觉、自动驾驶、安防、新零售等我们身边熟知的各行各业都需要目标检测技术，由于其很好的平衡了标注成本、检测精度和速度等，成为当前智能制造产业升级浪潮中被商业化应用最为广泛的AI技术之一。</p>
+<p>而实际生产环境对检测算法的精度、速度、体积等要求往往十分苛刻。</p>
+<p>例如工业质检，生产线上往往需要毫秒级别的图片检测速度，而为了确保使用厂商收益最大化，还需要尽量平衡硬件成本和性能。因此，如何在保持高检测精度的前提下，尽量提高检测速度、减小模型体积，成为这项技术真正深入工业实际应用的关键。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200813/d9fc8ec764f34a59ad44569d612a49ac.jpeg" max-width="600" /></p>
+<p>而目标检测的王牌家族——<strong>YOLO系列模型</strong>，作为单阶段目标检测算法的代表之一，一经出世，便以快速精准的检测效果而迅速蹿红。其不仅在速度上做到真正实时，精度上也可以达到很多非实时两阶段模型才有的水平。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200813/51cb733aa0184a0f9c72b7baee47de60.jpeg" max-width="600" /></p>
+<p><strong>△ </strong>来自论文《YOLOv3: An Incremental Improvement》</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>而学术界和开源社区中的YOLO拥趸、大神们，并未止步于此， YOLO v4、”YOLO v5”也在今年被相继推出，它们大量整合了计算机视觉的state-of-the-art技巧，例如在数据增强、锚定框、骨架网络、训练方式等维度进行优化，从而达到大幅提升YOLO目标检测性能的效果。</p>
+<p>飞桨目标检测套件PaddleDetection的研发团队也为了让YOLOv3模型在工业实际应用场景拥有更优异的精度与推理速度，以尽量不增加模型计算量和推理开销为前提，探索出了一整套更深度的算法优化秘籍，将原先YOLOv3模型的精度（在COCO test-dev2017数据集）从33.0%提升了<strong>12.9个绝对百分点</strong>，达到45.9%，处于业界领先行列！而在该精度下，其推理速度在V100上达到了<strong>72.9 FPS</strong>。</p>
+<p>也就是说，它在<strong>精度</strong>和<strong>预测速度</strong>都超越原生的YOLOv4，并且<strong>体积更小</strong>，实打实的成为工业应用场景最实用目标检测模型。而这次华丽变身后的YOLOv3，也被正式命名为——<strong>PP-YOLO</strong>！</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200813/c4f4a2d2a2924d1e9aa8d19847e9f33b.jpeg" max-width="600" /></p>
+<p>如下表所示，在不同输入尺度下PP-YOLO模型与YOLOv4模型在COCO数据集精度和V100推理速度的交手结果。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200813/ab4f222a6dcd4b859d378a0d19b42adb.jpeg" max-width="600" /></p>
+<p><strong>△ </strong>注：上表中数据均为在单卡Tesla V100上batch size=1测试结果，TRT-FP16为使用TensorRT且在FP16上的测试结果，TensorRT版本为5.1.2.2</p>
+<p><strong>而PP-YOLO所应用的这套优化策略，也可以被尝试应用到该系列的其它模型上</strong>，产业开发者或者科研人员可借鉴这套优化算法展开进一步的探索。</p>
+<p>而这整套PP-YOLO的优化秘籍也被飞桨同学总结梳理成了论文，感兴趣的开发者可以参见下面的链接阅读原文。</p>
+<p>PP-YOLO论文：</p>
+<p>https://arxiv.org/abs/2007.12099</p>
+<p>PP-YOLO文档：</p>
+<p>https://github.com/PaddlePaddle/PaddleDetection/tree/release/0.4/configs/ppyolo</p>
+<p>飞桨团队也在AIStudio为大家创建了 PP-YOLO实战项目，以供开发者快速体验模型效果:</p>
+<p>https://aistudio.baidu.com/aistudio/projectdetail/708923</p>
+<p>PP-YOLO的高精度和高推理速度对多快速运动目标检测的视频也可以达到很好的效果。</p>
+<p>那PP-YOLO到底采用了哪些优化策略呢？下面咱们带领大家一起来深入剖析一下飞桨团队算法优化的 “内功心法”。</p>
+<h1>1. 基于YOLOv3-DarkNet53的初步优化</h1>
+<p class="ql-align-justify">原始的YOLOv3模型在COCO minival数据集上精度为33.0%，PaddleDetection首先加入了Bag of Freebies for Training Object Detection Neural Networks论文中提及的优化策略，在不引入额外计算量的情况下，精度提升了3.9个百分点，达到38.9%。具体策略如下：</p>
+<ul>
+<li>Image Mixup（图像混合）：以随机权重将两张图片混合起来，提高网络在空间上的抗干扰能力。以下图为例，将任意两张图片加权叠加作为输入，训练过程中使用的损失为两张图片的损失乘以各自权重的加和。</li>
+</ul>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200813/3b353e2db9494d0eaec5073e72f3bfa0.jpeg" max-width="600" /></p>
+<p><strong>△ </strong>来自论文《Bag of Freebies for Training Object Detection Neural Networks》</p>
+<ul>
+<li>Label Smooth（标签平滑）：通过在真实的分类标签one-hot编码中真实类别的1上减去一个小量，非真实标签的0上加上一个小量，将硬标签变成一个软的标签，起到正则化的作用，防止过拟合，提升模型泛化能力。</li>
+<li>Synchronize Batch Normalization（同步批归一化）：多卡训练时，一般实现的批归一化只统计单卡上均值和方差，而检测任务中，受显存的限制，batch size比较小，多卡同步，会使得均值和方差统计的更加准确。</li>
+</ul>
+<h1>2. 更优的骨干网络: ResNet50vd-DCN</h1>
+<p>骨干网络可以说是一个模型的基础，一个优秀的骨干网络会给模型的性能带来极大的提升。针对YOLOv3，飞桨研发人员使用更加优异的ResNet50vd-DCN 作为模型的骨干网络。它可以被分为ResNet50vd和DCN两部分来看。</p>
+<p>ResNet50vd是指拥有50个卷积层的ResNet-D网络。ResNet系列模型是在2015年提出后，在学术界和工业界得到了广泛的应用，其模型结构也在被业界开发者持续改进，在经过了B、C、D三个版本的改进后，最新的ResNet-D结构能在基本不增加计算量的情况下先住提高模型精度。经飞桨团队的多重实验发现，使用ResNet50vd结构作为骨干网络，相比于原始的ResNet，可以提高1%-2%的目标检测精度，且推理速度基本保持不变。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200813/5b2d0ce1170d43cca2d75bba489e0481.jpeg" max-width="600" /></p>
+<p>而DCN（Deformable Convolution）可变形卷积的特点在于：其卷积核在每一个元素上额外增加了一个可学习的偏移参数。这样的卷积核在学习过程中可以调整卷积的感受野，从而能够更好的提取图像特征，以达到提升目标检测精度的目的。但它会在一定程度上引入额外的计算开销。经过多翻尝试，PaddleDetection团队发现只在ResNet的最后一个stage（C5）增加可变形卷积，是实现引入极少计算量并提升模型精度的最佳策略。</p>
+<p>在使用ResNet50vd-DCN作为骨干网络后，YOLOv3模型的检测精度从原先的38.9% 达到39.1%，而推理速度得到了36%的大幅提高（58.2FPS -&gt; 79.2FPS）。</p>
+<h1>3. 更稳定的训练方式：EMA、DropBlock和更大的batch size</h1>
+<p>为了使PP-YOLO的训练过程有更好的收敛效果，飞桨团队通过API paddle.optimizer.ExponentialMovingAverage调用了EMA（Exponential Moving Average）滑动平均功能。滑动平均是指将参数过去一段时间的均值作为新的参数。相比直接对参数进行更新，采用滑动平均的方式能让参数学习过程中变得更加平缓，能有效避免异常值对参数更新的影响，提升模型训练的收敛效果。</p>
+<p>PP-YOLO的优化过程中使用了DropBlock算法来减少过拟合。如下图所示，相比于Dropout算法，DropBlock算法在Drop特征的时候不是以特征点的形式来Drop的，而是会集中Drop掉某一块区域，从而更适合被应用到目标检测任务中来提高网络的泛化能力。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200813/a71685cf8b1343758461a0fb6a7897b5.jpeg" max-width="600" /></p>
+<p><strong>△ </strong>来自论文《DropBlock: A regularization method for convolutional networks》）</p>
+<p>通过训练过程中的指数滑动平均和DropBlock策略，结合适当增大训练的batch size（将单卡的batch size调整到24，8卡总batch size为192，使训练更加稳定，获取更优的结果），YOLOv3此时在COCO minival数据集精度提升了2.5%（39.1%-&gt;41.4%）。</p>
+<h1>4. IoU学习</h1>
+<p>对于目标检测任务，IoU是我们常用的评估指标，即预测框与真实框的IoU越大，检测效果越好。基于“所见即所得”的思想，PP-YOLO使用了业界提出的一种新的Loss——IoU Loss，即在训练过程中使用模型产生的预测框和真实框求IoU，对其取反并加入到损失计算中，这样相当于在优化损失的时候就是在提升IoU。</p>
+<p>注：在PP-YOLO中，飞桨采用了最基础的IoU损失计算方法，即IoU Loss = 1 - IoU * IoU 。</p>
+<p>另一方面，我们知道YOLOv3模型里的预测框评分score = objectness score * classification score，即该预测框处存在目标的概率和对应目标类别的概率的乘积，而此种评分方式并没有考虑预测框的定位精度。而目标检测模型都需要对最后的预测框进行非极大值抑制（NMS），即按照预测框评分进行排序，然后删除得分低的框。因此很容易出现如下图的情况，即IoU低的预测框因为评分高而在NMS过程中将IoU高的预测框挤掉了。</p>
+<p>而使用IoU Aware可以很好的避免这种情况，即在训练过程中增加一个通道来学习预测框和真实框之间的IoU，在推理过程中，将这个通道学习的IoU预测值也作为评分的因子之一，这样就能一定程度上避免高IoU预测框被挤掉的情况，从而提升模型的精度。同时，由于只是输出层的每个anchor上增加了一个通道，对于推理计算量的增加也基本可以忽略不计。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200813/4a9d8dd340774be08a0b1b4b39acd227.jpeg" max-width="600" /></p>
+<p><strong>△ </strong>来自论文《IoU-aware Single-stage Object Detector for Accurate Localization》</p>
+<p>通过使用上述优化方法，模型精度又提升了1.1%（41.4%-&gt;42.5%），而对推理速度的影响比较小（79.2FPS -&gt; 74.9FPS）。</p>
+<h1>5. Grid Sensitive</h1>
+<p>YOLOv3的检测原理是将图片划分成多个网格，真实框的中心点落在哪个网格上就由哪个网格负责检测这个真实框，而推理输出特征图中包含预测框中心坐标的logits值，这个值经Sigmoid激活后，即表示预测框中心坐标在网格中的相对位置。如下图所示，预测框的Px和Py经Sigmoid激活后，即表示预测框中心坐标相对真实框中心坐标gx和gy的偏移。那么如果这个真实框的中心点刚好落在网格边缘，则训练过程中趋向于把输出logit值向正负无穷去学习，容易导致过拟合。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200813/d572ce90a57144cead19c02da74891ec.jpeg" max-width="600" /></p>
+<p>Grid Sensitive是YOLOv4模型引入的一种优化方法，即在计算预测框中心点在网格内的坐标时，对输出logit取sigmoid激活后，再加上一个缩放和偏移，可以保证预测框中心点能够有效的拟合真实框刚好落在网格边线上的情况。</p>
+<p>通过加入Grid Sensitive，此轮精度又提升了0.3%（42.5%-&gt;42.8%），推理过程中只需要对预测框解码时在中心点坐标上乘上缩放，再加上偏移即可，因此推理速度几乎没有影响（74.9FPS -&gt; 74.8FPS）。</p>
+<h1>6. 后处理优化: Matrix NMS</h1>
+<p>在推理过程中，NMS还会删除与得分高的框的重合度大于一定阈值的其它预测框，这样对于存在两个同类别物体重叠的的图像检测任务来说，就会出现一个物体的预测框把另一个物体的预测框抑制掉的情况，导致漏检。</p>
+<p>因此又引入了Soft NMS这个概念，其解决思路并不是粗暴的将与得分高的预测框重合度大于阈值的框直接滤除，而是降低这个预测框的评分，对预测框评分的惩罚系数与这两个框的重合度，也就是IoU正相关，采用这种软化的滤除方式就能有效的避免重叠的同类物体预测框互相冲突的情况，提高检测的精度。</p>
+<p>但引入Soft NMS会使推理速度变慢。因此此轮模型优化采用了更优的Matrix NMS：一种并行化进行Soft NMS的实现思路。Matrix NMS通过一个矩阵并行运算的方式计算出任意两个框之间的IoU，例如对某一个预测框B计算抑制系数时，Matrix NMS通过矩阵并行方式计算出所有得分高于B的预测框与预测框B的IoU，然后根据这些IOU和得分高于B的预测框的被抑制概率做近似估算，估算出B的抑制系数，从而实现并行化的计算Soft NMS，在提高检测精度的同时，避免了推理速度的降低。</p>
+<p>使用Matrix NMS后，模型在推理速度几乎不变的情况下提升0.7%的精度（42.8% -&gt; 43.5%）。</p>
+<h1>7. 特征提取优化: CoordConv, 空间金字塔池化</h1>
+<p>另外PP-YOLO还引入了两种几乎不增加计算量但是能优化特征提取的方法。我们知道深度学习里的卷积运算是具有平移等变性的，这样可以在图像的不同位置共享统一的卷积核参数，但是这样卷积学习过程中是不能感知当前特征在图像中的坐标的。CoordConv就是通过在卷积的输入特征图中新增对应的通道来表征特征图像素点的坐标，让卷积学习过程中能够一定程度感知坐标来提升检测精度。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200813/a881e896bf5c49f6b791da1508f54456.jpeg" max-width="600" /></p>
+<p><strong>△ </strong>来自论文《An Intriguing Failing of Convolutional Neural Networks and the CoordConv Solution》</p>
+<p>空间金字塔池化是SPPNet提出的，如下图所示通过多个不同尺度的池化窗口提取不同尺度的池化特征，把特征组合在一起作为输出特征，在骨干网络提取特征后加入空间金字塔池化，能有效的增加特征的感受野，是一种广泛应用的特征提取优化方法。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200813/6d7b86c3969546b89f5d02fe1bddad0d.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">使用CoordConv和SPP两种特征提取优化方法后，精度进一步提升了0.8%（43.5%-&gt;44.3%）， 这两种方式新增的推理计算量并不大，所以推理速度仅有少量下降（74.1FPS -&gt; 72.9FPS）。</p>
+<h1>8. 更优的预训练模型: SSLD</h1>
+<p>通过上述优化方法，PP-YOLO模型在COCO minival数据集上的精度优化到了44.3%，V100上预测速度为72.9FPS。另外飞桨推出的图像分类端到端套件PaddleClas还提供了ResNet50vd的SSLD知识蒸馏模型及权重，使ResNet50vd模型在ImageNet上的Top-1分类精度从79.1%优化到82.4%，感兴趣的同学可以通过下面的地址了解<strong>PaddleClas SSLD蒸馏方案</strong>。PP-YOLO模型在使用了SSLD知识蒸馏之后更优的预训练权重进行训练后，COCO minival数据集的精度又提升了0.5%（44.3%-&gt;44.8%）。</p>
+<p>PaddleClas SSLD的文档地址：</p>
+<p>https://paddleclas.readthedocs.io/zh_CN/latest/advanced_tutorials/distillation/distillation.html#ssld</p>
+<p>经过上述优化方法，飞桨的研发人员又将训练迭代次数和学习率衰减的迭代次数调整至和原始YOLOv3模型的迭代次数一致，也就是训练迭代次数从25万次增加到50万次，对应学习率衰减的迭代次数调整至40万和45万，使PP-YOLO模型（如表中的K模型所示）在COCO minival数据集精度再次提升0.5% ，达到45.3%，单卡V100上batch size=1时的预测速度为72.9 FPS。如果使用COCO test_dev2017数据集测试，精度将达到45.9%。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200813/7b352a4c925f4f05b0db2472d80207e0.jpeg" max-width="600" /></p>
+<h1>后续工作</h1>
+<p>考虑到现在工业、互联网等各行各业需要使用轻量化的模型在移动端、边缘端部署目标检测模型，PaddleDetection团队正在进一步优化适用于轻量化部署的PP-YOLO，很快也将以开源项目、详细的使用文档及快速体验Demo的组合形式为大家呈现。</p>
+<h1>课程预告</h1>
+<p>百度飞桨为了帮助大家能快速、深入、全面的了解<strong>目标检测</strong>技术，将于九月中旬特地开设“<strong>目标检测7日打卡营</strong>”。资深研发工程师倾囊相授多年“炼丹”经验，配套真实工业落地场景案例，最先进的调优方式、训练技巧、优化技巧和工业部署方案，7天带您一网打尽，千万不要错过！</p>
+<p>感兴趣的同学欢迎扫码加入PP-YOLO微信群，与更多深度学习开发者交流与探讨技术。</p>
+<p>更多飞桨的相关内容，请参阅以下内容。</p>
+<p>官网地址：https://www.paddlepaddle.org.cn</p>
+<p>飞桨PaddleDetection项目地址：</p>
+<p>GitHub: https://github.com/PaddlePaddle/PaddleDetection</p>
+<p>Gitee: https://gitee.com/paddlepaddle/PaddleDetection</p>
+<p>如果您觉得PP-YOLO对您带来了一些启发或者确实实用的话，也欢迎您可以给PaddleDetection项目点亮Star。</p>
+<p>飞桨开源框架项目地址：</p>
+<p>GitHub: https://github.com/PaddlePaddle/Paddle</p>
+<p>Gitee: https://gitee.com/paddlepaddle/Paddle</p>
+<p>— 完 —</p>

@@ -1,0 +1,69 @@
+➜1.3MB的超轻YOLO算法！全平台通用，准确率接近YOLOv3，速度快上45%丨开源
+http://www.sohu.com/a/416878332_610300	18660
+<p>萧箫 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">最轻的YOLO算法出来了！</p>
+<p style="text-align: left;">这是个模型非常小、号称目前最快的YOLO算法——大小只有 <strong>1.3MB</strong>，单核每秒 <strong>148帧</strong>，移动设备上也能轻易部署。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200907/36879a294bfc4915b6366132d405142e.png" /></p>
+<p style="text-align: left;">而且，这个 <strong>YOLO-Fastest算法</strong>满足所有平台的需要。 </p>
+<p style="text-align: left;">不论是PyTorch，还是Tensorflow，又或者是Keras和Caffe，可以说是 <strong>全平台通用</strong>。 </p>
+<p style="text-align: left;">此外，作者还推出了超轻YOLO的“加大版”，同样只需要3.5MB，就能实现比YOLOv3更好的目标检测效果。</p>
+<p style="text-align: left;">那么，这么轻的网络，检测效果怎么样？</p>
+<p>1.3MB的超轻YOLO 检测效果 </p>
+<p style="text-align: left;">下图是一只快速跑动的动物，可以看见，算法预测这只动物为鸡 <span>（chicken）</span>的概率是95%。 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200907/c802a0bb0c7b4bdcb32fe7d34103e073.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">不仅在动物检测上，对于人的检测效果也不错。</p>
+<p style="text-align: left;">从图中可见，正面人物的预测概率都 <strong>超过了90%</strong>，即使是接近侧面的人脸，系统也能准确预测出来，只是概率会偏小，接近50%。 </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200907/2b11862929f94e5a9220fa6eb581f51f.png" /></p>
+<p style="text-align: left;">此外也能看见，YOLO不仅能检测行人和动物，类似于餐桌和瓶子这样的目标物体也能检测出来。</p>
+<p style="text-align: left;">当然，桌上还有其他的瓶子，不过没有检测出来。</p>
+<p style="text-align: left;">而这样的检测效果，只需要1.3MB大小的YOLO-Fastest模型，相比于3.0MB的MobileNet-YOLOv3，参数少了65%，速度还要快上45%。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200907/0fd80030fa7e4a5ea0957e51f3436f99.png" /></p>
+<p style="text-align: left;">如果硬件要求没那么高，相比之下，还是精度更重要的话，这里的YOLO-Fastest-XL会更加适合。</p>
+<p style="text-align: left;">这个“加大版”YOLO-Fastest算法是一个3.5MB的算法模型，mAP要高上不少，达到了68.8%。</p>
+<p style="text-align: left;">整体来说，YOLO-Fastest是个 <strong>牺牲一定精度</strong><span>（大约5%的mAP）</span>、 <strong>大幅提升速度</strong>的目标检测模型。 </p>
+<p>结合最强移动端轻量级神经网络食用 </p>
+<p style="text-align: left;">之所以这么小，也是因为这个YOLO-Fastest搭配了号称当前最强的移动端轻量级神经网络 <strong>EfficientNet-lite</strong>。 </p>
+<p style="text-align: left;">这是个比MobileNet更轻的神经网络，但图像分类的效果还不错。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200907/c7fc67f4cdc54494b9ba58be6d9daa2b.png" /></p>
+<p><strong>△</strong>EfficientNet-lite架构 </p>
+<p style="text-align: left;">不过，这样的压缩会牺牲一定的精度，相比于YOLOv3，YOLO-Fastest模型的 <strong>mAP只有60.8%</strong>。 </p>
+<p style="text-align: left;">但对于一些容量有限的硬件来说，已经足够适用了。</p>
+<p style="text-align: left;">那么，究竟为什么要在目标检测算法中选择YOLO呢？</p>
+<p>YOLO：快速目标检测 </p>
+<p style="text-align: left;">目标检测算法YOLO的核心，在于它模型体积小、运算速度快。</p>
+<p style="text-align: left;">与R-CNN系列 <span>（Fast R-CNN、Faster R-CNN等）</span>的算法相比，YOLO的精度上不了台，但它的速度却是杠杠的。 </p>
+<p style="text-align: left;">检测速度，从先验框 <span>（下图中五彩斑斓的框架）</span>变换的频次就能看出来。 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200907/5fbcf8dfe9944b7cbe5f0271f4045d0e.gif" /></p>
+<p style="text-align: left;">之所以追求速度，是因为作为安防、自动驾驶领域的核心算法，目标检测讲究 <strong>实时</strong>。 </p>
+<p style="text-align: left;">如果安防要过几秒钟才能检测出窃贼的存在、或是自动驾驶汽车对路障的感知非常缓慢，那么后果可能会不堪设想。</p>
+<p style="text-align: left;"><img src="http://p3.itc.cn/q_70/images03/20200907/ec40c5d9a4d749fe931be85a509d074a.png" /></p>
+<p style="text-align: left;">此后诞生出来的SSD算法，有点像R-CNN和YOLO算法的折中。但对于某些存储体积有限的硬件来说，依旧只有YOLO才能“装得进去”。</p>
+<p style="text-align: left;">而只有230MFLOPS <span>（每秒运行230万次浮点运算）</span>的YOLO-Fastest模型，又给算力不足的硬件提供了机会，使得它有机会在更小的机器上运行。 </p>
+<p>作者相关 </p>
+<p style="text-align: left;">有意思的是，这位在GitHub上名为dog-qiuqiu的作者，此前还写过基于MobileNet图像分类算法的YOLOv3 <span>（GitHub 1.1k星）</span>，同样可以在全平台使用。 </p>
+<p style="text-align: left;">不仅如此，这个全平台通用的MobileNet-YOLOv3，体积和精度都要优于MobileNet-SSD。</p>
+<p style="text-align: left;"><img src="http://p4.itc.cn/q_70/images03/20200907/b7e67dfff8204dcd9bf28a28498cd97b.png" /></p>
+<p style="text-align: left;">在体积只有8.0MB <span>（相比于SSD减少了15.1MB）</span>的情况下，MobileNet-YOLOv3的mAP达到了73.26% <span>（相比于SSD上升了0.56%）</span>。 </p>
+<p style="text-align: left;">如果感兴趣的话，可以一同戳下方传送门查看这个目标检测算法。</p>
+<p style="text-align: left;"><strong>传送门</strong></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span>1.3MB超轻YOLO：</span></span></p>
+<p><span>https://github.com/dog-qiuqiu/Yolo-Fastest </span></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span style="font-size: 16px;">比SSD效果更好的MobileNet-YOLO：</span></span></p>
+<p><span style="font-size: 16px;">https://github.com/dog-qiuqiu/MobileNet-Yolo</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span><span style="font-size: 16px;"></span></p>
+<p><strong>好课推荐 | 0基础学Python</strong></p>
+<p><span style="font-size: 16px;">《动手学Python》课程由</span><strong><span style="font-size: 16px;">上海交大博士教研团队</span></strong><span style="font-size: 16px;">研发，在线学习平台由上海</span><strong><span style="font-size: 16px;">交大AI实验室</span></strong><span style="font-size: 16px;">技术支持，旷视、文远知行、图森未来、来也科技等</span><strong><span style="font-size: 16px;">知名AI</span></strong><span style="font-size: 16px;"><strong>企业CEO/CTO力荐</strong></span><span style="font-size: 16px;">。</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">0基础可入门，限时开放体验课！扫码即刻开启Python学习之旅：</span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

@@ -1,0 +1,202 @@
+➜对付审稿人“强迫引用”，新方法来了，Nature都说好
+http://www.sohu.com/a/415910039_610300	19605
+<p>萧箫 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">投稿到顶会，结果被审稿人暗示要引用他的文章？</p>
+<p style="text-align: left;">不仅要在参考链接里引用，而且还要加进内文甚至标题？</p>
+<p style="text-align: left;">以往遇到这种突如其来的“问候”，论文作者为了发表文章，大多只能忍气吞声。</p>
+<p style="text-align: left;">好消息是，目前两名来自美国俄克拉荷马州医学研究基金会 <span>（OMRF）</span>的生物信息学家开发出了一种检测方法，可发现科学家 <strong>蓄意操纵论文引用</strong>的行为。 </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200901/e70573087b7d4bcf827a253b80937620.jpeg" /></p>
+<p style="text-align: left;">不测不知道，一测吓一跳，通过分析PubMed数据库中的公共记录，他们发现，大约在2万名科学家中，竟然有 <strong>80人</strong>涉嫌极度歪曲他人的引用模式。 </p>
+<p style="text-align: left;">也就是说，这80人很有可能是强迫他人引用自己文章的“嫌疑犯”。</p>
+<p style="text-align: left;">两位文献计量学家在看过这篇研究后，表明“这项研究虽然还没有经过同行评审，但从技术上来看，这种方法应该是正确的。”</p>
+<p style="text-align: left;">似乎再也不用发愁被审稿人「强迫引用」了。</p>
+<p>高被引的检测原理 </p>
+<p style="text-align: left;">从这次的检测情况来看，研究者们利用PubMed，从每篇论文中获取作者姓名、发表的期刊名称以及编号，据此进行引用分析。</p>
+<p style="text-align: left;">研究者们剔除了一部分名称含煳的作者 <span>（例如不写全名的）</span>，避免发生「误伤」。 </p>
+<p style="text-align: left;">其中，引用论文的方式主要分为引用自己的论文 <span>（自引，SC）</span>和引用他人的论文 <span>（非自引，NSC）</span>两种，这里研究者主要针对非自引论文的行为进行调查。 </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200901/f5556b262bf14ddeab44102569bc8e55.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">毕竟，相对于疯狂引用自己的论文来说，强迫他人引用自己的行为更加恶劣。 </p>
+<p style="text-align: left;">然后，他们选择采用 <strong>NSC基尼系数</strong>（Gini Index）来衡量那些被引用学者的非自引情况。 </p>
+<p style="text-align: left;">嗯，基尼系数？</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200901/d00d268c2bdd4dcab9653d856a69816f.png" /></p>
+<p style="text-align: left;">听起来有点熟悉，这不是衡量国家收入分配情况的嘛？</p>
+<p style="text-align: left;">的确如此，如果贫富差距越大，那么一个国家的基尼系数也就会越大。</p>
+<p style="text-align: left;">不过，这个系数的计算方式对在一个学者的论文引用数量上，也有一定的道理。</p>
+<p style="text-align: left;">如果一个学者平时的论文基本无人问津，然而却在某一个期刊的某几篇文章中，出现了 <strong>大量被引用</strong>的情况，相较于平均值来说，他的NSC基尼系数就会诡异地变高。 </p>
+<p style="text-align: left;">例如，一位来自希腊的肿瘤学家Dimitrios Roukos，他的NSC基尼系数就非常不正常。</p>
+<p style="text-align: left;">从2009年到2014年，Roukos在一本名为《外科内窥镜》的期刊中获得71篇论文的近2000次引用，每项研究均引用了他的工作约20–30次，而且这些论文 <strong>都由他的同事或导师撰写</strong>。 </p>
+<p style="text-align: left;">目前，Roukos没有针对此事进行回应。</p>
+<p>「强迫引用」学术圈背后 </p>
+<p style="text-align: left;">还记得今年二月，知名美籍华人学者、生物物理和生物信息学家 <strong>周国城</strong>被2个期刊编委会开除的事情么？ </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200901/f73aa5c77f0142a997ad95a5d57016eb.png" /></p>
+<p style="text-align: left;">据Nature报道，周国城在担任JTB编委期间，审阅投稿论文时要求作者引用自己的文章、甚至将他开发的一种算法名称加入论文标题，以提高曝光度，最多的时候超过 <strong>50篇</strong>，截至被开除时，他的论文被引次数超过 <strong>58000次</strong>。 </p>
+<p style="text-align: left;">值得注意的是，另一本国际学术期刊《生物信息学》 <span>（Bioinformatics）</span>在 2019 年年初就禁止了周国城继续参与期刊的论文审稿，但当时并没有公开他的姓名。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200901/91c82463f31a4ce3b3d6e40930322ac8.png" /></p>
+<p style="text-align: left;">对此，周国城回应称，自己在论文中提到的算法不是“审稿人的强迫引用”，而是因其高效性而被许多用户所认可使用。</p>
+<p style="text-align: left;">但周国城绝非个案。</p>
+<p style="text-align: left;">调查表明，大约有 <strong>1/5</strong>的研究者经历过被“强迫引用”的情况。 </p>
+<p style="text-align: left;">对此，论文作者希望编辑和审稿人能开发一个数据库，明确在同行评审中，数据库内增加了哪些资料。</p>
+<p style="text-align: left;">此外，为提高论文引用率，频繁自引的情况也屡见不鲜。</p>
+<p style="text-align: left;">但除此之外，作者也指出，不应该单纯以论文引用数量来定义论文质量、或是给作者相应奖励。</p>
+<p style="text-align: left;">“这种现象，才是从根本上需要改变的。”</p>
+<p>作者介绍 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200901/b7c451f2e9394eb9bbd86a9bd20fae23.png" /></p>
+<p style="text-align: left;">论文一作Jonathan D. Wren，毕业于德克萨斯大学西南医学中心，目前是OMRF <span>（Oklahoma Medical Research Foundation）</span>实验室的一员，这是一所独立的、非营利性的高水平生物医学研究机构。 </p>
+<p style="text-align: left;">目前，Wren也是《生物信息学》期刊的副编辑。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200901/9378af57faa6445481b7dfe5d367b39f.png" /></p>
+<p style="text-align: left;">而另一位作者Constantin Georgescu，同样是博士，毕业于罗马尼亚多瑙河下游大学，目前也是OMRF实验室的一员。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜一张图实现3D人脸建模！这是中科院博士生入选ECCV的新研究 | 开源
+http://www.sohu.com/a/416011020_610300	19605
+<p>贾浩楠 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">通过一段视频，来重建人脸3D模型，没什么稀奇的。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200902/b926d261e6294cd9942a4525c2a1546f.gif" /></p>
+<p style="text-align: left;">但是，如果只有测试者的一张静态图片呢？</p>
+<p style="text-align: center;"><img height="auto" width="256" src="http://p9.itc.cn/q_70/images03/20200902/dcbc4e250bf143c7987630c9f178a0d9.png" /></p>
+<p style="text-align: left;"><span>新的</span><strong>3DDFA</strong><span>方法，最关键的核心，是</span><strong>3D辅助短视频合成</strong><span>方法，它能模拟平面内和平面外的人脸移动，将一幅静止图像转换为短视频。</span></p>
+<p style="text-align: left;">郭同学的这篇论文 <strong>Towards Fast, Accurate and Stable 3D Dense Face Alignmen</strong>，已经被ECCV 2020收录。 </p>
+<p>3DDFA-V2：一静一动 </p>
+<p style="text-align: left;">这其实是作者发布的3DDFA的第二个版本，两年前，团队已经发表了3DDFA的第一版。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">新版本具有更好的性能和稳定性。此外，3DDFA_V2集成了快速人脸检测器FaceBoxes，取代了原来的Dlib，同时还包括由C++和Cython编写的简单3D渲染。</p>
+<p style="text-align: left;"><img src="http://p0.itc.cn/q_70/images03/20200902/e8d9e986fcd64b518e99242fca3b96a7.gif" /></p>
+<p style="text-align: left;">还有动态的3D人脸建模： </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200902/4c6b2a8e8dfb4951ae884481c0042d15.gif" /></p>
+<p style="text-align: left;">3DDFA的另一面，“静若处子”（静态照片3D人脸重建）：</p>
+<p style="text-align: left;"><img height="auto" width="2223" src="http://p5.itc.cn/q_70/images03/20200902/44bd79a00e0e4f41b1e1bbff43e1cf05.png" /></p>
+<p style="text-align: left;">除了一静一动，3DDFA还能根据照片对人物姿态做出简单估计：</p>
+<p style="text-align: left;"><img height="auto" width="907" src="http://p3.itc.cn/q_70/images03/20200902/a696d3e72ac14927830056c2e747f334.png" /></p>
+<p style="text-align: left;">进行深度图像估计：</p>
+<p style="text-align: center;"><img height="auto" width="1879" src="http://p6.itc.cn/q_70/images03/20200902/1027886036c0428c8a7e1ed8d6e54fb2.png" /></p>
+<p style="text-align: left;">还能对图像的PNCC、PA <span>‍</span>F特征提取： <span>‍‍</span></p>
+<p style="text-align: center;"><img height="auto" width="1918" src="http://p5.itc.cn/q_70/images03/20200902/934d0a2b8d0140fca4146c2ae39889f2.png" /></p>
+<p style="text-align: left;">3DDFA-V2可以称得上是一个功能十分强大的面部3D重构工具，同时还集合了其他很多功能。</p>
+<p style="text-align: left;">那么，3DDFA-V2最关键的 <strong>照片转小视频</strong>的功能是如何实现的呢？ </p>
+<p>3D辅助短视频合成 </p>
+<p style="text-align: left;">3D密集人脸对齐方法，需要在在视频上运行，它提供相邻帧间提供稳定的3D重建结果。</p>
+<p style="text-align: left;">所谓稳定，是指在视频的相邻帧中，重建的三维图像的变化应该与真实物体的细粒度移动保持一致。</p>
+<p style="text-align: left;">然而，现有的大多数方法都无法满足这一要求，也难以避免随机抖动的影响。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200902/f9548a29b0ec438cb1aa5f25513bdd3a.png" /></p>
+<p style="text-align: left;">在二维人脸配准中，时空滤波等后处理是减少抖动的常用策略，但会降低精度，造成帧延迟。 </p>
+<p style="text-align: left;">此外，由于没有公开的三维密集人脸配准的视频数据库，采用视频进行预训练的方法也行不通。</p>
+<p style="text-align: left;">那么还有其他什么办法能改善静态图像转化视频的稳定性？</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200902/ff00da65e27c4accac52b2cd7877a463.jpeg" /></p>
+<p style="text-align: left;">3DDFA-V2中采用的是 <strong>批处理级的3D辅助短视频合成策略</strong>。 </p>
+<p style="text-align: left;">将一幅静态图像扩展到多个相邻的帧，由此形成一个mini-batch的合成短视频。</p>
+<p style="text-align: left;">一般来说，一个视频的基本模式可以分成：</p>
+<blockquote>
+<p style="text-align: left;">1、噪声。我们将噪声建模为 P(X)=x+N（0，2）， 其中 E=a 2 I </p>
+<p style="text-align: left;"><span>2、运动模煳。运动模煳可以表示为 M(X)=K*x，其中K是卷积核（算子*表示卷积）。</span></p>
+<p style="text-align: left;">3、平面内旋转。给定两个相邻帧 x t 和 x t+1 ，平面 从x t 和 x t+1 变化可以描述为相似变换 T（·） </p>
+<p style="text-align: center;"><img height="auto" width="570" src="http://p1.itc.cn/q_70/images03/20200902/2c7bbcca175c4f60ba5ed730a5e17d5b.png" /></p>
+</blockquote>
+<p style="text-align: left;">1、噪声。我们将噪声建模为 P(X)=x+N（0，2）， 其中 E=a 2 I </p>
+<p style="text-align: left;"><span>2、运动模煳。运动模煳可以表示为 M(X)=K*x，其中K是卷积核（算子*表示卷积）。</span></p>
+<p style="text-align: left;">3、平面内旋转。给定两个相邻帧 x t 和 x t+1 ，平面 从x t 和 x t+1 变化可以描述为相似变换 T（·） </p>
+<p style="text-align: center;"><img height="auto" width="570" src="http://p1.itc.cn/q_70/images03/20200902/2c7bbcca175c4f60ba5ed730a5e17d5b.png" /></p>
+<p style="text-align: left;">其中Δs为比例扰动，Δθ为旋转扰动，Δt1和Δt2为平移扰动。</p>
+<p style="text-align: left;">由于人脸具有相似的三维结构，同理也能够合成平面外的人脸移动。</p>
+<p style="text-align: left;">人脸剖面F(-)最初是为了解决大姿势的人脸对准问题而提出的，它被用来逐步增加人脸的偏航角∆φ和俯仰角∆γ。</p>
+<p style="text-align: left;">具体来说，以小批量的方式对多张静止图像进行采样，对于每张静止图像x0，对其进行稍微平滑的变换，生成一个有n个相邻帧的合成视频：</p>
+<p style="text-align: left;"><img height="auto" width="1250" src="http://p2.itc.cn/q_70/images03/20200902/edd07079a80f47d6a3557a8edd4732f6.png" /></p>
+<p style="text-align: left;">3D辅助短视频合成帧中，相邻两帧如何合成：</p>
+<p style="text-align: center;"><img height="auto" width="1634" src="http://p5.itc.cn/q_70/images03/20200902/47a4a9de2aaf452882c6816f89ea8e9b.png" /></p>
+<p>如何上手 </p>
+<p style="text-align: left;">目前，团队已经将3DDFA-V2开源，且安装使用都非常简单。</p>
+<p style="text-align: left;">安装指令：</p>
+<ul>
+<li></li>
+<li></li>
+</ul>
+<p style="text-align: left;">安装完成后，需要构建cython版本的NMS和Sim3DR：</p>
+<ul>
+<li></li>
+</ul>
+<p style="text-align: left;">运行演示：</p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p><span># running on videos</span><span>python3 demo_video.py -f examples/inputs/videos/214.avi</span><span></span></p>
+<p><span># running on videos smoothly by looking ahead by `n_next` frames</span><span>python3 demo_video_smooth.py -f examples/inputs/videos/214.avi</span></p>
+<p style="text-align: left;">例如，运行</p>
+<ul>
+<li></li>
+</ul>
+<p style="text-align: left;">将给出以下结果：</p>
+<p style="text-align: center;"><img height="auto" width="2223" src="http://p0.itc.cn/q_70/images03/20200902/1657529c9db3489cb93630f43bccce9c.png" /></p>
+<p style="text-align: left;">跟踪人脸动作的实现只需通过对齐即可。</p>
+<p style="text-align: left;">但如果头部姿势偏角大于90°或运动太快，则对齐可能会失败。可以考虑使用阈值来精细地检查跟踪状态。</p>
+<p style="text-align: left;">加载完成后，可以用任意图像作为输入，运行算法：</p>
+<ul>
+<li></li>
+</ul>
+<p style="text-align: left;">如果你能在终端看到输出日志，这说明成功运行，等待结果即可：</p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p style="text-align: left;">3DDFA-V2对计算机的软硬件都有一些要求：</p>
+<blockquote>
+<p style="text-align: left;">PyTorch 0.4.1版本以上</p>
+<p style="text-align: left;">Python 3.6版本以上（带有Numpy、Scipy、Matplotlib库）</p>
+<p style="text-align: left;">系统：Linux或macOS</p>
+</blockquote>
+<p style="text-align: left;">PyTorch 0.4.1版本以上</p>
+<p style="text-align: left;">Python 3.6版本以上（带有Numpy、Scipy、Matplotlib库）</p>
+<p style="text-align: left;">系统：Linux或macOS</p>
+<p style="text-align: left;">研究团队推荐的硬件条件为一块 <strong>英伟达GTX 1080</strong>GPU和 <strong>i5-8259U</strong>CPU。 </p>
+<p style="text-align: left;">当然，除了老黄的卡，你也可以直接在谷歌Colab上体验！</p>
+<p style="text-align: left;">如果这个工具对你有帮助的话，赶紧来试试吧!</p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">3DDFA-V2谷歌Collab： </span></span></p>
+<p>https://colab.research.google.com/drive/1OKciI0ETCpWdRjP-VOGpBulDJojYfgWv </p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">Github项目地址： </span></span></p>
+<p>https://github.com/cleardusk/3DDFA_V2 </p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

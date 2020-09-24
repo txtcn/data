@@ -1,0 +1,105 @@
+➜用命令行管理你的GitHub项目，不必再开网页，官方CLI工具1.0版今日上线
+http://www.sohu.com/a/419226779_610300	16018
+<p>晓查 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">经过大半年的迭代与完善，今天 <strong>GitHub CLI</strong>已经成功从beta版升级为1.0正式版，可供所有用户使用。 </p>
+<p style="text-align: left;">GitHub CLI让开发者在终端里使用 <strong>命令行</strong>（CLI）管理代码项目，不必打开网页，工作效率更高。 </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200918/3b6e86058c0d484483ef4a15319a3f55.png" /></p>
+<p style="text-align: left;">GitHub在官方博客中表示，自年初发布测试版以来，用户使用GitHub CLI创建了超过25万个拉取请求，执行超过35万个合并，创建超过2万个问题。</p>
+<p style="text-align: left;">GitHub CLI现已支持：</p>
+<ul>
+<li>在终端里处理各种GitHub工作流，包括从处理问题到发布软件包；</li>
+<li>调用GitHub API编写几乎所有动作的脚本，并为任何命令设置自定义别名；</li>
+<li>除GitHub.com之外，CLI还能连接到GitHub企业服务。</li>
+</ul>
+<p style="text-align: left;">从今以后，开发者只需输入 <strong>gh</strong>命令，就可以快速签出拉取请求、查看提交代码差异、查询bug问题详细信息等。 </p>
+<p>安装GitHub CLI </p>
+<p style="text-align: left;">对于Debian/Ubuntu用户：</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200918/ad650c7b7805445c9ef790506e4cfe06.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">对于Mac用户：</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200918/138c13247b874b4f9a48617e8a0479ce.png" /></p>
+<p style="text-align: left;">对于Windows用户，可以从终端里安装，也可以直接下载msi安装包。</p>
+<p>GitHub CLI怎么用 </p>
+<p style="text-align: left;">GitHub CLI的命令相当好记，全都以gh开头，之后跟上alias、api、pr、release、repo等，这些命令可以说是“顾名思义”。</p>
+<p style="text-align: left;">比如gh repo就是对存储库进行操作：gh repo clone是克隆存储库，gh repo create是新建存储库，gh repo fork是合并存储库。</p>
+<p style="text-align: left;">对于拉取请求也是类似，gh pr后加上create、checkout、diff、review即实现相应功能。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200918/dbc1b17120694deca32e27d07c27c7ba.png" /></p>
+<p style="text-align: left;">GitHub CLI还有一项重要功能是支持自定义命令缩写，操作方法和Linux中的 <strong>alias</strong>命令类似。 </p>
+<p style="text-align: left;">比如查询带有bug标签的问题，过去是打开网页从标签筛选，如果用命令行不做简化，那么需要输入一大串命令。</p>
+<p style="text-align: left;">现在只需将这个命令重命名为bugs，那么今后只要输入gh bugs就能快速看到此类问题，大大提高了维护代码的效率。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200918/a5b11b690c4c43bda67602065933da37.png" /></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200918/088cd2d543614c7ab7eae1451fc8138d.png" /></p>
+<p style="text-align: left;">以上只是GitHub CLI几个简单的使用案例，它还能实现更强大的功能，如果你也想试试，不妨去看看官方手册吧，一定会让你管理GitHub事半功倍。</p>
+<p style="text-align: left;"><span style="font-size: 16px;">开源地址： </span></p>
+<p>https://github.com/cli/cli </p>
+<p style="text-align: left;"><span style="font-size: 16px;">官方教程： </span></p>
+<p>https://cli.github.com/manual/ </p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>好课推荐 | 0基础学Python</strong></p>
+<p><span style="font-size: 16px;">《动手学Python》课程由</span><strong><span style="font-size: 16px;">上海交大博士教研团队</span></strong><span style="font-size: 16px;">研发，在线学习平台由上海</span><strong><span style="font-size: 16px;">交大AI实验室</span></strong><span style="font-size: 16px;">技术支持，旷视、文远知行、图森未来、来也科技等</span><strong><span style="font-size: 16px;">知名AI</span></strong><span style="font-size: 16px;"><strong>企业CEO/CTO力荐</strong></span><span style="font-size: 16px;">。</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">0基础可入门，限时开放体验课！扫码即刻开启Python学习之旅：</span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜屠榜大杀器UniMP！百度登顶图神经网络权威榜单三项榜首
+http://www.sohu.com/a/419227131_610300	16018
+<p>允中 发自 凹非寺 </p>
+<p>量子位 编辑 | 公众号 QbitAI </p>
+<p style="text-align: left;">近日，百度在 <strong>图神经网络</strong>领域取得新突破，提出融合标签传递和图神经网络的统一模型 <strong>UniMP</strong>（Unified Message Passing），在图神经网络权威榜单 <strong>OGB</strong>（Open Graph Benchmark）取得多项榜首。 </p>
+<p>Leaderboard for ogbn-products </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200918/6d70b52076794b29b9fcbe770bafbbff.png" /></p>
+<p>Leaderboard for ogbn-proteins </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200918/31cfd91a366b41e88c7b7e3959e7244e.png" /></p>
+<p>Leaderboard for ogbn-arxiv </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200918/f65f5de0710348919d4bdda632a7e244.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>图神经网络最权威榜单OGB </p>
+<p style="text-align: left;">图神经网络是用于图结构数据的深度学习架构，将端到端学习与归纳推理相结合，有望解决传统深度学习无法处理的因果推理、可解释性等问题，是非常有潜力的人工智能研究方向。但是，这个领域一直缺乏规模比较大且认可度较高的数据集。目前大量的论文仍然在Cora、PubMed、Citeseer等小数据集上进行实验，实验的效果也没有普适性。在此情况下，OGB(Open Graph Benchmark)应运而生：</p>
+<ul>
+<li>权威性高 ：OGB是由斯坦福大学图神经网络权威Jure Leskovec教授团队建立的大规模图学习任务的评测基准数据集，指导委员会包含Yoshua Bengio、Will Hamilton、Max Welling等业界大牛。Jure Leskovec教授在NeurlPS 2019大会的演讲中正式对外发布OGB并开源，是目前公认最权威的图学习相关基准测试数据集。</li>
+<li>数据丰富 ：OGB面向不同的图学习任务（包括节点分类，边预测，图分类）分别提供了多个数据集，如学术引用网络、知识图谱、分子图、生物网络等。其中最热门的三个半监督节点分类数据集：商品推荐ogbn-products、论文引用ogbn-arxiv和化学分子ogbn-proteins，对图神经网络研究者有极强的吸引力。</li>
+<li>夺榜激烈 ：OGB吸引了包括斯坦福、纽约大学、加州大学洛杉矶分校、康奈尔大学、亚马逊等多个机构参与打榜；榜单上也诞生了层出不穷的新颖图神经网络结构，如堆积112层的深度图卷积网络DeeperGCN，发表在ICML 2020的多层图网络GCNII，还有多种形式不同的图采样算法。</li>
+</ul>
+<p style="text-align: left;">近日，百度PGL团队创新提出统一消息传递图神经网络模型UniMP，在三大半监督节点分类数据集均荣登榜首。榜单上放出的开源代码与论文地址如下：</p>
+<p style="text-align: left;">UniMP开源代码地址：https://github.com/PaddlePaddle/PGL/tree/main/ogb_examples/nodeproppred/unimp</p>
+<p style="text-align: left;">UniMP论文地址：https://arxiv.org/pdf/2009.03509.pdf</p>
+<p>UniMP：统一消息传递模型 </p>
+<p style="text-align: left;">在半监督图节点分类场景下，节点之间通过边相连接，部分节点被打上标签。任务要求模型通过监督学习的方式，拟合被标注节点数据，并对未标注的节点进行预测。如下图所示，在一般机器学习的问题上，已标注的训练数据在新数据的推断上，并不能发挥直接的作用，因为数据的输入是独立的。然而在图神经网络的场景下，已有的标注数据可以从节点与节点的连接中，根据图结构关系推广到新的未标注数据中。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200918/fbcfa628bde145d89b57374a092e6fb7.png" /></p>
+<p style="text-align: left;">一般应用于半监督节点分类的算法分为图神经网络和标签传递算法两类，它们都是通过消息传递的方式（前者传递特征、后者传递标签）进行节点标签的学习和预测。其中经典标签传递算法如LPA，只考虑了将标签在图上进行传递，而图神经网络算法大多也只是使用了节点特征以及图的链接信息进行分类。但是单纯考虑标签传递或者节点特征都是不足够的。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200918/b17d4b7c2de24206baf5593ea8c97f15.png" /></p>
+<p style="text-align: left;">百度PGL团队提出的统一消息传递模型 UniMP，将上述两种消息统一到框架中，同时实现了节点的特征与标签传递，显着提升了模型的泛化效果。UniMP以Graph Transformer模型作为基础骨架，联合使用标签嵌入方法，将节点特征和部分节点标签同时输入至模型中，从而实现了节点特征和标签的同时传递。</p>
+<p style="text-align: left;">简单的加入标签信息会带来标签泄漏的问题，即标签信息即是特征又是训练目标。实际上，标签大部分是有顺序的，例如在引用网络中，论文是按照时间先后顺序出现的，其标签也应该有一定的先后顺序。在无法得知训练集标签顺序的情况下，UniMP提出了标签掩码学习方法。UniMP每一次随机将一定量的节点标签掩码为未知，用部分已有的标注信息、图结构信息以及节点特征来还原训练数据的标签。最终，UniMP在OGB上取得SOTA效果，并在论文的消融实验上，验证了方法的有效性。</p>
+<p>屠榜背后：飞桨图学习框架PGL加持 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200918/76536cac18ff4a20b0d27cf86c8f3ee4.png" /></p>
+<p style="text-align: left;"><strong>UniMP基于飞桨图学习框架PGL（Paddle Graph Learning）实现，依托飞桨核心框架以及自研的图引擎</strong>。PGL支持十亿节点百亿边的超巨图训练，原生支持异构图Metapath采样以及Message Passing双模式，预置多种业界主流图学习算法以及自研模型如ERNIESage、UniMP等，方便开发者熟悉和使用图神经网络领域模型。 </p>
+<p style="text-align: left;">飞桨PGL已经在搜索、广告、信息流、金融风控、贴吧、用户画像、智能地图等场景全面落地，可支持百亿巨图场景。图学习作为通用人工智能算法之一，势必成为这个时代新的基础设施，赋能各行各业，助燃智能经济腾飞。希望有志之士加入PGL，一起共建未来。</p>
+<p style="text-align: left;">PGL代码完全开源开放，欢迎开发者们使用并贡献您的奇思妙想。如果您觉得还不错，欢迎“Star”；如果您有意见需要交流，欢迎“Issue”，PGL开源代码和入门教程链接：</p>
+<p style="text-align: left;">PGL开源代码：https://github.com/PaddlePaddle/PGL</p>
+<p style="text-align: left;">如果您想详细了解更多飞桨的相关内容，请参阅以下文档。</p>
+<p style="text-align: left;">官网地址：https://www.paddlepaddle.org.cn</p>
+<p style="text-align: left;">飞桨开源框架项目地址：</p>
+<p style="text-align: left;">GitHub: https://github.com/PaddlePaddle</p>
+<p style="text-align: left;">Gitee: https://gitee.com/paddlepaddle/Paddle</p>
+<p>— <strong>完</strong>— </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>

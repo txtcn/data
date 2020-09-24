@@ -1,0 +1,286 @@
+➜七夕节脱单“神助攻”！AI教你写情话
+http://www.sohu.com/a/414783408_610300	15431
+<blockquote>
+允中 发自 凹非寺
+</blockquote>
+<blockquote>
+量子位 编辑 | 公众号 QbitAI
+</blockquote>
+<p>广大的钢铁直男们，七夕节快要到了，给女朋友的礼物下单了么？玫瑰鲜花预订好了么？烛光晚餐筹备了么？</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200825/98fee243df4d41ea9a5f5f18735f87b6.jpeg" max-width="600" /></p>
+<p>什么？！还有没女朋友的或者还没有向女神表白的？</p>
+<p>要想赢得女神芳心，文（甜）艺（言）情（蜜）话（语）也是不能少的！</p>
+<p>但是，礼物的小贺卡上准备好要写什么了吗？打电话或者见面后准备说啥？还在说“XX，我爱你”，“XX，我们白头到老”么？还是一直挠头不知道怎么表达？</p>
+<p>没关系，AI来拯救你！</p>
+<p><strong>AI情话、AI藏头诗、AI情诗大礼包开源上线啦！</strong></p>
+<p>为了在8月25日这天给钢铁直男们助攻一个浪漫优雅的七夕节，飞桨的研发人员也是蛮拼的！为了给开发者谋福利，加班加点在PaddleHub上线了AI情话和情诗模型！</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200825/e8848837314644a2befd1270c5cc814a.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>话不多说，咱们直接看效果！</p>
+<p>AI情话实测效果展示</p>
+<p>输入：</p>
+<p>你问我多喜欢你</p>
+<p>生成：</p>
+<p>你问我多喜欢你，</p>
+<p>我也说不出来，</p>
+<p>我心里明白，</p>
+<p>我宁愿跟你吵架也不愿意去爱别人。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200825/b862e69dde62470bb858ba69de9e56bc.jpeg" max-width="600" /></p>
+<p>哎妈呀，泪奔了，哭的不要不要的！</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200825/d40f7620e86c48f9a165332e2be7379b.gif" max-width="600" /></p>
+<p>再试试，输入：</p>
+<p>你有打火机么?</p>
+<p>生成：</p>
+<p>你有打火机么? 没有啊！那你怎么点燃我的心的？</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200825/64eff226f9f845f9aebb76cc22e26bd7.jpeg" max-width="600" /></p>
+<p>效果炸裂，这还只是一个<strong>AI情话</strong>功能。</p>
+<p>要是再整首诗写在小卡片上，女神的心能瞬间化成一江春水向东流。。。</p>
+<p>AI藏头诗实测效果展示</p>
+<p>输入：</p>
+<p>吾爱秋香</p>
+<p>生成：</p>
+<p><strong>吾</strong>慕斯人不以官，</p>
+<p><strong>爱</strong>闲能有几人闲。</p>
+<p><strong>秋</strong>来莫作功名看，</p>
+<p><strong>香</strong>满南山雪满山。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200825/ebac9a2017a24ba3a9a0b3f02cad1d6b.jpeg" max-width="600" /></p>
+<p>一战深藏功与名！</p>
+<p>目前演示页限制是七言绝句，如果是需要其它的七言律诗、五言绝句和五言律诗，可以通过代码调用，效果也是妥妥的！</p>
+<p>是不是着急了？我仿佛看到一群大老爷们儿向我杀来。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200825/db60933a22d944a3985aa9c3f784d4e7.jpeg" max-width="600" /></p>
+<p>大家快来我们PaddleHub官网上体验</p>
+<p>这是怎么做到的？</p>
+<p>这样炸裂效果的背后，离不开顶尖的ERNIE-GEN 算法加持，什么？不知道ERNIE-GEN？ERNIE听说过吧，NLP领域模型中的带头大哥，曾经斩获多项大奖！后来经过不断研发，ERNIE又衍生出了很多其它模型或组件，形成了ERNIE家族！ERNIE-GEN就是其中优秀一员。</p>
+<p>热心的说明：下面是讲技术的环节，想了解怎么用的小伙伴可以快速往下滑</p>
+<p>ERNIE-GEN是面向生成任务的预训练-微调框架，首次在预训练阶段加入span-by-span 生成任务，让模型每次能够生成一个语义完整的片段。在预训练和微调中通过填充式生成机制和噪声感知机制来缓解曝光偏差问题。此外, ERNIE-GEN 采用多片段-多粒度目标文本采样策略, 增强源文本和目标文本的关联性，加强了编码器和解码器的交互。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200825/12cf6925573045c190914a38a5fa8637.jpeg" max-width="600" /></p>
+<p>更多详情参考论文ERNIE-GEN:An Enhanced Multi-Flow Pre-training and Fine-tuning Framework for Natural Language Generation</p>
+<p>这些由ERNIE-GEN算法衍生出的AI情话（ernie_gen_lover_words）、AI藏头诗（ernie_gen_acrostic_poetry）等模型在微调时首先通过加载ERNIE 1.0中文模型参数完成热启动，然后采用开发者在网络上搜集到的情诗、情话数据，基于ERNIE-GEN框架进行微调。与传统的Seq2Seq做法相比，该模型实际使用效果具备更强的泛化能力，即使是微调使用的数据集中没见过的词汇或句子，模型也能够理解。</p>
+<p>例如输入“小编带大家了解一下程序员情人节”，将会输出：</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200825/6cd7694ad66348159e0ac0636dfd27f3.jpeg" max-width="600" /></p>
+<p>实际上“程序员”“数据库”这些词是从未出现在情话数据集中的，但是得益于知识增强的语义表示模型ERNIE带来的泛化能力，使模型仍然能够领悟到二者之间的关系。同时ERNIE-GEN独特的填充生成机制和噪声感知生成的策略，使得微调后模型文本生成效果更加自然流畅，相比传统的基于RNN结合Seq2Seq的生成做法，所需的训练数据量更小，而且文本生成效果更有内涵。</p>
+<p>正如模型输出所言，希望在七夕这一天，我们的程序都能够正常的工作，大家可以放心地过个愉快的情人节。</p>
+<p>想知道怎么用吗？</p>
+<p>整个预训练模型只要求安装PaddlePaddle 与 PaddleHub，诸位兄弟只需要了解基础 Python 就能跑得动。</p>
+<p>飞桨PaddleHub的开发者提供了AI情话、AI藏头诗、AI对联、AI写诗四种文本生成的示例代码，通过 Notebook 文件，我们能更形象地了解模型使用的完整过程。</p>
+<p>以下为调用AI情话预训练模型的代码：</p>
+<p>import paddlehub as hub#导入预训练模型module = hub.Module(name="ernie_gen_lover_words")#准备输入开头数据test_texts = ['情人节']#执行文本生成results = module.generate(texts=test_texts, use_gpu=True, beam_width=5)#打印输出结果for result in results: print(result)</p>
+<p>运行这个脚本后，我们就可以收货了。</p>
+<p>哎呀，甜度太高了，有点上头。</p>
+<p>[2020-08-21 20:58:08,095] [ INFO] - Installing ernie_gen_lover_words module[2020-08-21 20:58:08,097] [ INFO] - Module ernie_gen_lover_words already installed in /home/aistudio/.paddlehub/modules/ernie_gen_lover_words ['情人节，我愿做一条鱼，任你红烧、白煮、清蒸，然后躺在你温柔的胃里。', '情人节，对你的思念太重，压断了电话线，烧坏了手机卡，掏尽了钱包袋，吃光了安眠药，哎!可我还是思念你。', '情人节，对你的思念太重，压断了电话线，烧坏了手机卡，掏尽了钱包袋，吃光了安眠药，哎!可我还是思念你，祝你情人节快乐!', '情人节，对你的思念太重，压断了电话线，烧坏了手机卡，掏尽了钱包袋，吃光了安眠药，唉!可我还是思念你，祝你情人节快乐!', '情人节，对你的思念太重，压断了电话线，烧坏了手机卡，掏尽了钱包袋，吃光了安眠药，哎!可是我还是思念你。']</p>
+<p>如果有服务化部署的需求，借助 PaddleHub，服务器端的部署也非常简单，直接用一条命令行在服务器启动模型就行了：</p>
+<p>!hub serving start -m ernie_gen_lover_words -p 8866</p>
+<p>是的，就是这么简单，一行搞定服务器端！相比手动配置各种参数或者调用各种框架，PaddleHub的服务器端部署实在是太好用了。</p>
+<p>只要在服务器端完成部署，剩下在客户端调用就问题不大了。如下为客户端向服务器端发送请求做推理的示例脚本，包括制定要推理的输入文本、发送推理请求、返回并保存推理结果几个部分。</p>
+<p>import requestsimport json# 发送HTTP请求data = {'texts':['情人节'], 'use_gpu':False, 'beam_width':5} headers = {"Content-type": "application/json"} url = "http://127.0.0.1:8866/predict/ernie_gen_lover_words"r = requests.post(url=url, headers=headers, data=json.dumps(data))# 保存结果results = r.json()["results"]for result in results: print(result)</p>
+<p>如下所示，运行脚本后就可以从服务器端拿到推理结果了。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200825/50d0dd0c1d0544909db8cb09d7904349.jpeg" max-width="600" /></p>
+<p>飞桨的PaddleHub已经帮我们做好了各种处理过程。相信只要有一些 Python 基础，在本地预测、以及部署到服务器端都是没问题的。</p>
+<p>更多预训练模型，马上了解PaddleHub</p>
+<p>大家看到的AI情话，包括之前疫情期间开源的口罩人脸检测模型，都只是飞桨模型生态的冰山一角，更多的高质量的预训练模型，欢迎登录飞桨官网了解。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200825/c70a491c92054bf593c76a4bd10cb9d6.jpeg" max-width="600" /></p>
+<p>欢迎加入</p>
+<p>飞桨模型生态的发展，离不开每一位开发者的贡献，值得一提的是，我们本次的AI情话模型，也是开发者在AI Studio平台基于ERNIE-GEN的代码训练并贡献到PaddleHub上的，我们也欢迎更多的开发者可以加入进来，一起把深度学习模型玩起来用起来，看看通过丰富的预训练模型还能构造出哪些有趣的任务满足七夕的需求吧。</p>
+<p>同时我们相信还有很多技术达人想了解更多模型微调的技术细节，为了满足大家的需求，我们将于8月27日开一场直播课为大家进行讲解。</p>
+<p>— 完 —</p>
+➜七夕节，阿里云AI发女朋友了
+http://www.sohu.com/a/414790291_610300	17602
+<p>允中 发自 凹非寺 </p>
+<p>量子位 编辑 | 公众号 QbitAI </p>
+<p style="text-align: left;">少年，今日七夕。 <span>我想你一定还单身。</span></p>
+<p style="text-align: left;">这里有一份相亲战斗力评估指数，阿里云帮你测一测以后还能不能找到对象。【doge</p>
+<p style="text-align: left;">据说是借助哥伦比亚大学多年研究相亲找对象的心血，通过几个简单的特征来做评估。</p>
+<p style="text-align: left;">具体模（yuan）型（fen）的测试页面扫下方二维码即可试玩~</p>
+<p style="text-align: left;">在正式开始实验之前，我们需要寻找一个简单好用方便上手的工具，比如：阿里云的PAI-DSW探索者版，它对于个人开发者是免费的，还有免费GPU资源可以使用，实验的数据更会免费保存30天，文末有传送门，登录就可以试用。今天，就会通过这个工具来探索人性的奥秘，走进两性关系的神秘空间，嘿嘿嘿。 </p>
+<p style="text-align: left;">整个实验的数据收集于一个线下快速相亲的实验[1]。这个实验中，参与者被要求参加多轮与异性进行的快速相亲，每轮相亲持续4分钟，在4分钟结束后，参与者双方会被询问是否愿意与他们的对象再见面。只有当双方都回答了“是”的时候，这次相亲才算是配对成功。</p>
+<p style="text-align: left;">同时，参与者也会被要求通过以量化的方式从外观吸引力、真诚度、智商、风趣程度、事业心、兴趣爱好这六个方向来评估他们的相亲对象。</p>
+<p style="text-align: left;">这个数据集也包含了很多参加快速相亲的参与者的其他相关信息，比如地理位置，喜好，对于理想对象的偏好，收入水平，职业以及教育背景等等。关于整个数据集的具体特征描述可以参考文末链接[2]。</p>
+<p style="text-align: left;">本次我们实验的目的主要是为了找出，当一个人在参加快速相亲时，到底会有多高的几率能够遇到自己心动的人并成功牵手。</p>
+<p style="text-align: left;">在我们建模分析探索人性的秘密之前，让我们先读入数据，来看看我们的数据集长什么样。</p>
+<p><span>import</span>pandas <span>as</span>pd </p>
+<p>df = pd.read_csv( <span>'Speed Dating Data.csv'</span>, encoding= <span>'gbk'</span>) </p>
+<p>print(df.shape) </p>
+<p style="text-align: left;">通过观察，我们不难发现，在这短短的两年中，这个实验的小酒馆经历了8000多场快速相亲的实验。由此我们可以非常轻易的推断出，小酒馆的老板应该赚的盆满钵满（大雾）</p>
+<p style="text-align: left;">然后从数据的宽度来看，我们会发现一共有接近200个特征。关于每个特征的具体描述大家可以参考文末文档[3]。然后我们再观察数据的完整度，看看是否有缺失数据。</p>
+<p>percent_missing = df.isnull.sum * <span>100</span>/ len(df) </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>missing_value_df = pd.DataFrame({ </p>
+<p><span>'column_name'</span>: df.columns, </p>
+<p><span>'percent_missing'</span>: percent_missing </p>
+<p>}) </p>
+<p>missing_value_df.sort_values(by= <span>'percent_missing'</span>) </p>
+<p style="text-align: left;">通过以上代码，我们不难发现，其实还有很多的特征是缺失的。这一点在我们后面做分析和建模的时候，都需要关注到。因为一旦一个特征缺失的数据较多，就会导致分析误差变大或者模型过拟合/精度下降。看完数据的完整程度，我们就可以继续往下探索了。</p>
+<p style="text-align: left;">然后第一个问题就来了，在这8000多场的快速相亲中，到底有多少场相亲成功为参加的双方找到了合适的伴侣的？带着这个问题，我们就可以开始我们的第一个探索性数据分析。</p>
+<p><span># 多少人通过Speed Dating找到了对象</span></p>
+<p>plt.subplots(figsize=( <span>3</span>, <span>3</span>), dpi= <span>110</span>,) </p>
+<p><span># 构造数据</span></p>
+<p>size_of_groups=df.match.value_counts.values </p>
+<p>single_percentage = round(size_of_groups[ <span>0</span>]/sum(size_of_groups) * <span>100</span>, <span>2</span>) </p>
+<p>matched_percentage = round(size_of_groups[ <span>1</span>]/sum(size_of_groups)* <span>100</span>, <span>2</span>) </p>
+<p>names = [ </p>
+<p><span>'Single:'</span>+ str(single_percentage) + <span>'%'</span>, </p>
+<p><span>'Matched'</span>+ str(matched_percentage) + <span>'%'</span>] </p>
+<p><span># 创建饼图</span></p>
+<p>plt.pie( </p>
+<p>size_of_groups, </p>
+<p>labels=names, </p>
+<p>labeldistance= <span>1.2</span>, </p>
+<p>colors=Pastel1_3.hex_colors </p>
+<p>) </p>
+<p>plt.show </p>
+<p style="text-align: left;">从上边的饼图我们可以发现，真正通过快速相亲找到对象的比率仅有16.47%。</p>
+<p style="text-align: left;">然后我们就迎来了我们的第二个问题，这个比率和参加的人的性别是否有关呢？这里我们也通过Pandas自带的filter的方式</p>
+<p>df[df.gender == <span>0</span>] </p>
+<p style="text-align: left;">来筛选数据集中的性别。通过阅读数据集的文档，我们知道0代表的是女生，1代表的是男生。然后同理，我们执行类似的代码来找出女生和男生分别在快速相亲中找到对象的几率的。</p>
+<p><span># 多少女生通过Speed Dating找到了对象</span></p>
+<p>plt.subplots(figsize=( <span>3</span>, <span>3</span>), dpi= <span>110</span>,) </p>
+<p><span># 构造数据</span></p>
+<p>size_of_groups=df[df.gender == <span>0</span>].match.value_counts.values <span># 男生只需要吧0替换成1即可</span></p>
+<p>single_percentage = round(size_of_groups[ <span>0</span>]/sum(size_of_groups) * <span>100</span>, <span>2</span>) </p>
+<p>matched_percentage = round(size_of_groups[ <span>1</span>]/sum(size_of_groups)* <span>100</span>, <span>2</span>) </p>
+<p>names = [ </p>
+<p><span>'Single:'</span>+ str(single_percentage) + <span>'%'</span>, </p>
+<p><span>'Matched'</span>+ str(matched_percentage) + <span>'%'</span>] </p>
+<p><span># 创建饼图</span></p>
+<p>plt.pie( </p>
+<p>size_of_groups, </p>
+<p>labels=names, </p>
+<p>labeldistance= <span>1.2</span>, </p>
+<p>colors=Pastel1_3.hex_colors </p>
+<p>) </p>
+<p>plt.show </p>
+<p style="text-align: left;">女生的几率：</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200825/1a3dcfaea5854f03a72c89d9133c0f9b.png" /></p>
+<p style="text-align: left;">男生的几率：</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200825/e7b5ac9eb4464c2c87a31f83d922492a.png" /></p>
+<p style="text-align: left;">不难发现，在快速相亲中，女生相比于男生还是稍微占据一些优势的。女生成功匹配的几率比男生成功匹配的几率超出了0.04。</p>
+<p style="text-align: left;">然后第二个问题来了：是什么样的人在参加快速相亲这样的活动呢？真的都是大龄青年（年龄大于30）嘛？这个时候我们就可以通过对参加人群的年龄分布来做一个统计分析。</p>
+<p><span># 年龄分布</span></p>
+<p>age = df[np.isfinite(df[ <span>'age'</span>])][ <span>'age'</span>] </p>
+<p>plt.hist(age,bins= <span>35</span>) </p>
+<p>plt.xlabel( <span>'Age'</span>) </p>
+<p>plt.ylabel( <span>'Frequency'</span>) </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200825/66ee09dd29bc48e9b13b865b2a3143db.png" /></p>
+<p style="text-align: left;">不难发现，参加快速相亲的人群主要是22～28岁的群体。这点与我们的预期有些不太符合，因为主流人群并不是大龄青年。接下来的问题就是，年龄是否会影响相亲的成功率呢？和性别相比，哪个对于成功率的影响更大？这两个问题在本文就先埋下一个伏笔，不一一探索了，希望阅读文章的你能够自己探索。 </p>
+<p style="text-align: left;">但是这里可以给出一个非常好用的探索相关性的方式叫做数据相关性分析。通过阅读数据集的描述，我已经为大家选择好了一些合适的特征去进行相关性分析。这里合适的定义是指：</p>
+<p>date_df = df[[ </p>
+<p><span>'iid'</span>, <span>'gender'</span>, <span>'pid'</span>, <span>'match'</span>, <span>'int_corr'</span>, <span>'samerace'</span>, <span>'age_o'</span>, </p>
+<p><span>'race_o'</span>, <span>'pf_o_att'</span>, <span>'pf_o_sin'</span>, <span>'pf_o_int'</span>, <span>'pf_o_fun'</span>, <span>'pf_o_amb'</span>, </p>
+<p><span>'pf_o_sha'</span>, <span>'dec_o'</span>, <span>'attr_o'</span>, <span>'sinc_o'</span>, <span>'intel_o'</span>, <span>'fun_o'</span>, <span>'like_o'</span>, </p>
+<p><span>'prob_o'</span>, <span>'met_o'</span>, <span>'age'</span>, <span>'race'</span>, <span>'imprace'</span>, <span>'imprelig'</span>, <span>'goal'</span>, <span>'date'</span>, </p>
+<p><span>'go_out'</span>, <span>'career_c'</span>, <span>'sports'</span>, <span>'tvsports'</span>, <span>'exercise'</span>, <span>'dining'</span>, </p>
+<p><span>'museums'</span>, <span>'art'</span>, <span>'hiking'</span>, <span>'gaming'</span>, <span>'clubbing'</span>, <span>'reading'</span>, <span>'tv'</span>, </p>
+<p><span>'theater'</span>, <span>'movies'</span>, <span>'concerts'</span>, <span>'music'</span>, <span>'shopping'</span>, <span>'yoga'</span>, <span>'attr1_1'</span>, </p>
+<p><span>'sinc1_1'</span>, <span>'intel1_1'</span>, <span>'fun1_1'</span>, <span>'amb1_1'</span>, <span>'attr3_1'</span>, <span>'sinc3_1'</span>, </p>
+<p><span>'fun3_1'</span>, <span>'intel3_1'</span>, <span>'dec'</span>, <span>'attr'</span>, <span>'sinc'</span>, <span>'intel'</span>, <span>'fun'</span>, <span>'like'</span>, </p>
+<p><span>'prob'</span>, <span>'met'</span></p>
+<p>]] </p>
+<p><span># heatmap</span></p>
+<p>plt.subplots(figsize=( <span>20</span>, <span>15</span>)) </p>
+<p>ax = plt.axes </p>
+<p>ax.set_title( <span>"Correlation Heatmap"</span>) </p>
+<p>corr = date_df.corr </p>
+<p>sns.heatmap(corr, </p>
+<p>xticklabels=corr.columns.values, </p>
+<p>yticklabels=corr.columns.values) </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200825/66b12f29e9a44b80923d953007cd8c05.png" /></p>
+<p style="text-align: left;">通过上面这张图这张相关性分析的热力图，我们可以先关注一些特别亮的和特别暗的点。比如我们可以发现，在 pf_o_att这个表示相亲对象给出的外观吸引力这个特征上，和其他相亲对象给出的评分基本都是严重负相关的，除了pf_o_fun这一特征。由此我们可以推断出两个点： </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200825/dbdc0c97c61949a69016637088a7260a.png" /></p>
+<p style="text-align: left;">然后我们再看看我们最关注的特征 match，和这一个特征相关性比较高的特征是哪几个呢？不难发现，其实就是’attr_o’,’sinc_o’,’intel_o’,’fun_o’,’amb_o’,’shar_o’这几个特征，分别是相亲对方给出的关于外观，真诚度，智商，风趣程度，事业线以及兴趣爱好的打分。</p>
+<p style="text-align: left;">接下来我们就可以根据这个来进行建模了。首先我们将我们的特征和结果列都放到一个Dataframe中，然后再去除含有空值的纪录。最后我们再分为X和Y用来做训练。当然分为X，y之后，由于我们在最开始就发现只有16.47%的参与场次中成功匹配了，所以我们的数据有严重的不均衡，这里我们可以用SVMSMOTE来增加一下我们的数据量避免模型出现过度拟合。</p>
+<p><span># preparing the data</span></p>
+<p>clean_df = df[[ <span>'attr_o'</span>, <span>'sinc_o'</span>, <span>'intel_o'</span>, <span>'fun_o'</span>, <span>'amb_o'</span>, <span>'shar_o'</span>, <span>'match'</span>]] </p>
+<p>clean_df.dropna(inplace= <span>True</span>) </p>
+<p>X=clean_df[[ <span>'attr_o'</span>, <span>'sinc_o'</span>, <span>'intel_o'</span>, <span>'fun_o'</span>, <span>'amb_o'</span>, <span>'shar_o'</span>,]] </p>
+<p>y=clean_df[ <span>'match'</span>] </p>
+<p>oversample = imblearn.over_sampling.SVMSMOTE </p>
+<p>X, y = oversample.fit_resample(X, y) </p>
+<p><span># 做训练集和测试集分割</span></p>
+<p>X_train, X_test, y_train, y_test = train_test_split(X, y, test_size= <span>0.2</span>, random_state= <span>0</span>, stratify=y) </p>
+<p style="text-align: left;">数据准备好之后，我们就可以进行模型的构建和训练了。通过以下代码，我们可以构建一个简单的逻辑回归的模型，并在测试集上来测试。</p>
+<p><span># logistic regression classification model</span></p>
+<p>model = LogisticRegression(C= <span>1</span>, random_state= <span>0</span>) </p>
+<p>lrc = model.fit(X_train, y_train) </p>
+<p>predict_train_lrc = lrc.predict(X_train) </p>
+<p>predict_test_lrc = lrc.predict(X_test) </p>
+<p>print( <span>'Training Accuracy:'</span>, metrics.accuracy_score(y_train, predict_train_lrc)) </p>
+<p>print( <span>'Validation Accuracy:'</span>, metrics.accuracy_score(y_test, predict_test_lrc)) </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200825/3dd5a6dd7cdc45f691432fba9bf7ca15.png" /></p>
+<p style="text-align: left;">我们可以看到结果为0.83左右，这样我们就完成了一个预测在快速相亲中是否能够成功配对的机器学习模型。 </p>
+<p>传送门 </p>
+<p style="text-align: left;">阿里云的PAI-DSW探索者版：https://dsw-dev.data.aliyun.com/#/</p>
+<p style="text-align: left;">参考链接： </p>
+<p>[1] https://dsw-dev.data.aliyun.com/#/ </p>
+<p>[2] https://faculty.chicagobooth.edu/emir.kamenica/documents/genderDifferences.pdf </p>
+<p>[3] https://pai-public-data.oss-cn-beijing.aliyuncs.com/speed_dating/Speed%20Dating%20Data%20Key.doc </p>
+<p>— <strong>完</strong>— </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜中国商业航天单轮最大融资！星际荣耀B轮获投11.925亿
+http://www.sohu.com/a/414790462_610300	17602
+<p>雷刚 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p>中国商业航天，也有新进展传来。</p>
+<p>今天（8月25日），北京星际荣耀空间科技有限公司（以下简称“星际荣耀”）宣布完成 <strong>11.925亿元</strong>人民币B轮融资。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200825/d2767d3e56684fbebf9bbe6e5ec2a3e3.jpeg" /></p>
+<p>本轮融资由北京金融街资本运营中心领投，中金甲子、广合信诚、泰中合投资、红杉资本中国基金、中信证券、招商证券、旋石天成、上海科创基金、银盛泰资本、玲珑金山股权投资、亚祥兴泰、凯联资本、珠海顺联、南平百益等跟投，老股东经纬中国、鼎晖投资、甘泉资本等继续跟投。 </p>
+<p>这也是国内商业航天领域，单轮融资的最高纪录。</p>
+<p>星际荣耀方面称，本轮融资将主要用于双曲线系列运载火箭的研制、焦点系列可重复使用液氧甲烷发动机的研制以及人才队伍的建设培养等。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200825/e667ddcd743449fa94aa51ce0614e4ee.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>Why 星际荣耀？ </p>
+<p>不仅因为星际荣耀是国内民营商业航天的头部企业。</p>
+<p>还因为这也是中国第一家——目前唯一一家迈过“入轨”技术门槛的商业航天公司。</p>
+<p>在火箭发射领域，将卫星等有效载荷送入预定轨道，实现商业逻辑闭环，是衡量商业航天的硬指标之一。</p>
+<p>星际荣耀方面称，自成立以来，秉持“由固到液、由小到大”的技术发展路径，即从固体动力火箭到液体动力火箭、从小型运载火箭到中大型运载火箭，公司又实现了一系列新进展。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200825/4e4322ea85824811aebacf377eecb139.jpeg" /></p>
+<p><strong>固体运载火箭</strong>方面，2019年7月25日13时，星际荣耀自主研发的双曲线一号遥一小型固体运载火箭在中国酒泉卫星发射中心成功发射，意味着该公司成为中国第一家完成运载火箭入轨发射任务的民营公司。 </p>
+<p>并且该型号首次发射就将卫星以极高精度送入预定轨道。</p>
+<p>今年秋天，星际荣耀还将执行双曲线一号遥二运载火箭发射任务。</p>
+<p>而双曲线一号运载火箭也是国内首个产品化民营火箭型号，已具备规模化、持续化发射能力。</p>
+<p><strong>液体运载火箭</strong>方面，星际荣耀自主研发的焦点一号（代号“JD-1”）15吨级可重复使用液氧甲烷发动机，完成了多次全系统长程试车、大范围连续变推力试车、二次启动试车等地面试验，为运载火箭的可重复使用奠定了坚实基础。 </p>
+<p>焦点二号（代号“JD-2”）百吨级可重复使用液氧甲烷发动机研制工作也在有序进行。</p>
+<p>能够实现连续变推力的液体火箭发动机，是实现运载火箭垂直回收复用的关键。</p>
+<p>焦点一号可重复使用液氧甲烷发动机设计可重复使用次数达30次，大大降低了太空探索的成本。</p>
+<p>值得注意的是，焦点一号具有很高的工程应用价值，其功能可覆盖减速、着陆及长时间在轨、深空探测等多任务要求，对任务的适应性较强。</p>
+<p>据了解，焦点一号发动机将装配在星际荣耀自主研发的可重复使用运载火箭“双曲线二号”上，于2021年执行火箭一子级百公里垂直起降试验，并于同年执行首次入轨发射任务，有望填补中国可重复使用液体运载火箭的空白。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200825/506712d713c84e86adb2e633b824340c.jpeg" /></p>
+<p>下一阶段路线 </p>
+<p>星际荣耀也在本轮融资后，透露了下一阶段发展路线。</p>
+<p>未来，星际荣耀将继续进行双曲线一号的规模化发射以及小型可重复使用运载火箭双曲线二号、中型可重复使用运载火箭双曲线三号、15吨级可重复使用液氧甲烷发动机焦点一号及百吨级可重复使用液氧甲烷发动机焦点二号等的研发工作。</p>
+<p>目前，星际荣耀打造了一支国内一流的航天研发设计师队伍和航天型号管理队伍，团队成员200余人。</p>
+<p>其中研发人员所占比例超过70%，95%来自985、211高校，硕士及以上学历人员比例超过90%。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200825/2b33cf3ced97429ba4443b94d42f9477.png" /></p>
+<p>该研发团队在运载火箭研制方面的平均从业时间超过14年，具备较为丰富的航天工程相关经验。 </p>
+<p>此前，星际荣耀曾获得中信聚信、博钰城、久泰蓝山、襄阳正奇、天风睿利、睿信资本、复星集团、顺为资本、经纬中国、率然投资、鼎晖投资、电科星河、甘泉资本、沃德融金、京港合众等十余家国内知名投资机构及战略合作伙伴的投资。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

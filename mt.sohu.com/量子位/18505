@@ -1,0 +1,298 @@
+➜用聪明的方式学习Vim，不再死记硬背，复杂命令一学就会 | GitHub 2200星
+http://www.sohu.com/a/415747982_610300	19687
+<p>金磊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">Vim 难学难用？但事实是，它依旧受许多程序员的欢迎。</p>
+<p style="text-align: left;">或许，只是你的「打开方式」不对。</p>
+<p style="text-align: left;">最近，在 GitHub 上便出现了一个叫做 <strong>用聪明的方式学习Vim</strong>的项目，上线短短几天时间，便已经斩获 <strong>2200星</strong>。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200831/d9092c91fd5547249473dcd11dfabe7a.png" /></p>
+<p style="text-align: left;">那么，如此学习Vim的方式，到底有多「聪明」？</p>
+<p>用聪明的方式与Vim「交流」 </p>
+<p style="text-align: left;">很多人可能会被 Vim 命令的复杂性吓到。</p>
+<p style="text-align: left;">因此，作者将 Vim 命令的一般结构，分解成了一个 <strong>简单语法规则</strong>。 </p>
+<p style="text-align: left;">这也是本教程中最为重要的一个章节——一旦了解了 Vim 命令类似语法的结构，就能跟它「畅谈无阻」。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200831/99ea123d6dca4546a297a61f2b057df1.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">按照作者的说法，「只需要知道一个语法规则」，就可以说Vim的语言了：</p>
+<blockquote>
+<p style="text-align: left;">verb + noun</p>
+</blockquote>
+<p style="text-align: left;">verb + noun</p>
+<p style="text-align: left;">如果拿英文短句做类比，就例如：</p>
+<blockquote>
+<p style="text-align: left;">Eat (verb) a donut (noun)</p>
+<p style="text-align: left;">Kick (verb) a ball (noun)</p>
+</blockquote>
+<p style="text-align: left;">Eat (verb) a donut (noun)</p>
+<p style="text-align: left;">Kick (verb) a ball (noun)</p>
+<p style="text-align: left;">现在，只需要使用基本的 Vim 动词和名词来增加词汇量。</p>
+<p>Vim 的名词和动词 </p>
+<p style="text-align: left;">这里说到的Nouns，就是 Vim 中的一些动作，例如：</p>
+<blockquote>
+<p style="text-align: left;">h：左 </p>
+<p>j：下 </p>
+<p>k：上 </p>
+<p>l：右 </p>
+<p>w：移动到下个词的开头 </p>
+<p>}：跳到下一个段 </p>
+<p>$：移动到本行末尾 </p>
+</blockquote>
+<p style="text-align: left;">h：左 </p>
+<p>j：下 </p>
+<p>k：上 </p>
+<p>l：右 </p>
+<p>w：移动到下个词的开头 </p>
+<p>}：跳到下一个段 </p>
+<p>$：移动到本行末尾 </p>
+<p style="text-align: left;">而 Vim 中的 Verbs，就相当于操作符。</p>
+<p style="text-align: left;">以 h 操作符为例，Vim 中有16种，但只需要知道其中3种，便可以满足80%的需求。</p>
+<blockquote>
+<p style="text-align: left;">y：复制 </p>
+<p>d：删除文本，保存到register </p>
+<p>c：删除文本，保存到register，并开始「插入」模式 </p>
+</blockquote>
+<p style="text-align: left;">y：复制 </p>
+<p>d：删除文本，保存到register </p>
+<p>c：删除文本，保存到register，并开始「插入」模式 </p>
+<p style="text-align: left;">OK，了解了「名词」和「动词」，现在便可以应用到「语法规则」中了：</p>
+<blockquote>
+<p style="text-align: left;">y$：把当前所有的东西，从当前位置拖拽至行末 </p>
+<p>dw：从当前位置删除到下一个单词的开头 </p>
+<p>c}：将当前位置更改为此段末尾 </p>
+</blockquote>
+<p style="text-align: left;">y$：把当前所有的东西，从当前位置拖拽至行末 </p>
+<p>dw：从当前位置删除到下一个单词的开头 </p>
+<p>c}：将当前位置更改为此段末尾 </p>
+<p style="text-align: left;">当然，类似这样的组合，也接受数字作为其中的参数，例如：</p>
+<blockquote>
+<p style="text-align: left;">y2h：向左拉2个字符 </p>
+<p>d2w：删除接下来的2个单词 </p>
+<p>c2j：改变接下来的2行内容 </p>
+</blockquote>
+<p style="text-align: left;">y2h：向左拉2个字符 </p>
+<p>d2w：删除接下来的2个单词 </p>
+<p>c2j：改变接下来的2行内容 </p>
+<p style="text-align: left;">除此之外，行式操作 <span>（linewise operations）</span>是文本编辑中的常见操作，因此，Vim 也允许你通过连续键入2次操作符来完成类似这样的操作。 </p>
+<p style="text-align: left;">比如，键入「dd」，删除整行内容；键入「cc」，更改整行内容。</p>
+<p>可组合性和语法 </p>
+<p style="text-align: left;">在讨论 Vim 语法之后，便是 Vim 的可组合性 <span>（Composability）</span>。 </p>
+<p style="text-align: left;">可组合性意味着拥有一组通用命令，可以组合起来执行更复杂的命令。当与外部程序集成时，Vim 的可组合性的真正威力就显现出来了。</p>
+<p style="text-align: left;">举个例子，现在有一段「乱七八糟」的文字，如下所示：</p>
+<blockquote>
+<p style="text-align: left;">Id|Name|Cuteness </p>
+<p>01|Puppy|Very </p>
+<p>02|Kitten|Ok </p>
+<p>03|Bunny|Ok </p>
+</blockquote>
+<p style="text-align: left;">Id|Name|Cuteness </p>
+<p>01|Puppy|Very </p>
+<p>02|Kitten|Ok </p>
+<p>03|Bunny|Ok </p>
+<p style="text-align: left;">现在需要将这些文字转换成为表格形式，若是用 Vim 命令来实现这点可能会有一些困难，但是可以使用 <span>column terminal</span>命令快速完成。 </p>
+<p style="text-align: left;">将鼠标指向「ID」，然后运行 <span>!}column -t -s “|” </span>，就可以得到漂亮的表格了： </p>
+<blockquote>
+<p style="text-align: left;">Id Name Cuteness </p>
+<p>01 Puppy Very </p>
+<p>02 Kitten Ok </p>
+<p>03 Bunny Ok </p>
+</blockquote>
+<p style="text-align: left;">Id Name Cuteness </p>
+<p>01 Puppy Very </p>
+<p>02 Kitten Ok </p>
+<p>03 Bunny Ok </p>
+<p style="text-align: left;">回过头来看下刚才的命令。</p>
+<p style="text-align: left;">「 <span>!</span>」是过滤操作符，「 <span>}</span>」是名词，过滤操作符接收了另一个参数，也就是一个终端命令，「 <span>column -t -s “|” </span>」。 </p>
+<p style="text-align: left;">简而言之，经过这样的一番操作后，便完成了文字表格化的任务。</p>
+<p style="text-align: left;">再例如，除了表格化之外，再筛选带有「 <span>OK</span>」的行，可以这样做： </p>
+<blockquote>
+</blockquote>
+<p style="text-align: left;">得到的结果便是：</p>
+<blockquote>
+<p style="text-align: left;">02 Kitten Ok </p>
+<p>03 Bunny Ok </p>
+</blockquote>
+<p style="text-align: left;">02 Kitten Ok </p>
+<p>03 Bunny Ok </p>
+<p style="text-align: left;">这就是一种与 Vim「交流」的聪明方式。</p>
+<p style="text-align: left;">但作者也同时指出，刚开始学习、适应这种「Vim 语法」是需要一定时间，但只要熟练起来后，便可轻松驾驭。</p>
+<p>基于Vim语法的更多操作 </p>
+<p style="text-align: left;">在介绍完 Vim 的语法规则后，便可以基于此来完成更多操作和任务。</p>
+<p style="text-align: left;">例如在本教程中的第五章，便介绍了「如何在文件中移动」。</p>
+<p style="text-align: left;">刚开始用键盘来完成这项任务，肯定是比较慢的，但作者认为：</p>
+<blockquote>
+<p style="text-align: left;">只要你把这个方法熟悉起来，要比用鼠标还要快。</p>
+</blockquote>
+<p style="text-align: left;">只要你把这个方法熟悉起来，要比用鼠标还要快。</p>
+<p style="text-align: left;">最基本的操作便是向左、向右、向上和向下移动一个字符：</p>
+<blockquote>
+<p style="text-align: left;">h Left </p>
+<p>j Down </p>
+<p>k Up </p>
+<p>l Right </p>
+</blockquote>
+<p style="text-align: left;">h Left </p>
+<p>j Down </p>
+<p>k Up </p>
+<p>l Right </p>
+<p style="text-align: left;">在字符之后，便是以文字为单元的移动。</p>
+<blockquote>
+<p style="text-align: left;">W：移动到下一个单词的开头处 </p>
+<p>E：移动到下一个单词的结尾处 </p>
+<p>B：移动到前一个单词的开头处 </p>
+<p>gE：移动到前一个单词的结尾处 </p>
+</blockquote>
+<p style="text-align: left;">W：移动到下一个单词的开头处 </p>
+<p>E：移动到下一个单词的结尾处 </p>
+<p>B：移动到前一个单词的开头处 </p>
+<p>gE：移动到前一个单词的结尾处 </p>
+<p style="text-align: left;">接下来是以「行」为单位的移动：</p>
+<blockquote>
+<p style="text-align: left;">0：移动到当前行的第一个字符处 </p>
+<p>^：移动到当前行第一个非空字符处 </p>
+<p>g_：移动到当前行最后一个非空字符处 </p>
+<p>$：移动到当前行最后一个字符处 </p>
+<p>n|：移动到当前行的第n列 </p>
+</blockquote>
+<p style="text-align: left;">0：移动到当前行的第一个字符处 </p>
+<p>^：移动到当前行第一个非空字符处 </p>
+<p>g_：移动到当前行最后一个非空字符处 </p>
+<p>$：移动到当前行最后一个字符处 </p>
+<p>n|：移动到当前行的第n列 </p>
+<p style="text-align: left;">当然，用类似的Vim方式，还可以完成「段」级别、搜索、滚动、标记等一系列移动操作。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200831/5f00367e38544236b94efe8e5de91c21.png" /></p>
+<p style="text-align: left;">此外，教程中还提供了许多其他操作的教程，例如「Insert Mode」、「Undo」等等。</p>
+<p style="text-align: left;">目前教程还在更新中，有兴趣的读者可以持续关注这份「聪明的Vim教程」。</p>
+<p style="text-align: left;"><span>传送门：</span></p>
+<p style="text-align: left;"><span>https://github.com/iggredible/Learn-Vim</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜马库斯开喷GPT-3：演员而已，它根本不知道自己在说什么
+http://www.sohu.com/a/415755986_610300	19687
+<p>鱼羊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">最近，GPT-3真是风头一时无两，不仅延续了前代编故事的能力，还能写代码、答问题、下象棋……</p>
+<p style="text-align: left;">但现在，有人指出：</p>
+<blockquote>
+<p style="text-align: left;">GPT更像是一个即兴演员，只是在表演。</p>
+</blockquote>
+<p style="text-align: left;">GPT更像是一个即兴演员，只是在表演。</p>
+<p style="text-align: left;">因为， <strong>GPT-3其实根本不知道自己在说什么</strong>。 </p>
+<p style="text-align: left;">就像是扮演医生的即兴演员，难道还能真的给出靠谱的医疗建议吗？</p>
+<p style="text-align: left;">一起来看看，到底是怎么回事。</p>
+<p>马库斯：GPT-3令人印象深刻，但不可靠 </p>
+<p style="text-align: left;">GPT-3的火爆，自然引来了纽约大学教授、「着名AI批评家」马库斯的注意。</p>
+<p style="text-align: left;">许多人认为，GPT-3的诞生是迈向通用人工智能 <span>（AGI）</span>的重要一步。 </p>
+<p style="text-align: left;">但马库斯对此深表怀疑：</p>
+<blockquote>
+<p style="text-align: left;">虽然GPT-3在语法上，能够输出令人印象深刻的地道用语，但它对世界的理解往往存在严重偏差，这意味着你永远无法真正相信它所说的话。</p>
+</blockquote>
+<p style="text-align: left;">虽然GPT-3在语法上，能够输出令人印象深刻的地道用语，但它对世界的理解往往存在严重偏差，这意味着你永远无法真正相信它所说的话。</p>
+<p style="text-align: left;">为了证明这一点，马库斯和纽约大学计算机科学教授欧内斯特·戴维斯 <span>（Ernest Davis）</span>对GPT-3进行了测试。 </p>
+<p style="text-align: left;">比如，他们给GPT-3输入了这样的 <strong>提示词</strong>： </p>
+<blockquote>
+<p style="text-align: left;"><span>你给自己倒了一杯蔓越莓果汁，然后你又心不在焉地往里面加了一茶匙葡萄汁。</span><span>它看上去很正常。</span><span>你试着闻了闻它，但是由于你得了</span>重 <span>感冒，你并闻不出任何气味。</span><span>你现在非常渴，所以……</span></p>
+</blockquote>
+<p style="text-align: left;"><span>你给自己倒了一杯蔓越莓果汁，然后你又心不在焉地往里面加了一茶匙葡萄汁。</span><span>它看上去很正常。</span><span>你试着闻了闻它，但是由于你得了</span>重 <span>感冒，你并闻不出任何气味。</span><span>你现在非常渴，所以……</span></p>
+<p style="text-align: left;"><strong>GPT-3</strong>续道： </p>
+<blockquote>
+<p style="text-align: left;">所以你把这杯混合果汁喝了下去。</p>
+<p style="text-align: left;">你现在挂掉了。 <span style="font-size: 16px;"></span></p>
+</blockquote>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">所以你把这杯混合果汁喝了下去。</p>
+<p style="text-align: left;">你现在挂掉了。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200831/37bee5c44cc54933a08a3c3323607a87.jpeg" /></p>
+<p style="text-align: left;">这样的答案确实有些无厘头，GPT-3似乎认为葡萄汁是有毒的。但实际上随便上网搜一搜都会发现，蔓越莓-葡萄汁是常见搭配。</p>
+<p style="text-align: left;">生物化学学得不好，物理推理方面，GPT-3又会表现如何？</p>
+<p style="text-align: left;"><strong>马库斯</strong>问： </p>
+<blockquote>
+<p style="text-align: left;">你正要举行小型晚宴。你打算在客厅里享用晚餐。但饭桌比客厅门要宽，所以想要把它挪进屋，你得……</p>
+</blockquote>
+<p style="text-align: left;">你正要举行小型晚宴。你打算在客厅里享用晚餐。但饭桌比客厅门要宽，所以想要把它挪进屋，你得……</p>
+<p style="text-align: left;"><strong>GPT-3</strong>答： </p>
+<blockquote>
+<p style="text-align: left;">你得把门移走。你有一把台锯，所以你把门切成了两半，并把上半部分拆了下来。</p>
+</blockquote>
+<p style="text-align: left;">你得把门移走。你有一把台锯，所以你把门切成了两半，并把上半部分拆了下来。</p>
+<p style="text-align: left;">马库斯表示，这简直就是迷惑发言。别说正常的处理方式是把桌子斜过来挪进去，或者把桌腿拆下来，就说说「台锯」，那玩意儿是固定在工作台上的，怎么去切割一扇立着的门呢？</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200831/e3c63e29381742c2940d0568d2e682b4.png" /></p>
+<p style="text-align: left;">科学素养不行，社会人文也拉胯。 </p>
+<p style="text-align: left;"><strong>马库斯</strong>和他的同事们又给出了这样一个 <strong>提示</strong>： </p>
+<blockquote>
+<p style="text-align: left;">你是一名辩护律师，今天必须去法庭。早上穿衣服的时候，你发现西装裤被弄脏了。不过，你的泳衣倒是干净又时髦。事实上，它是一件昂贵的法国时装，是伊莎贝拉送给你的生日礼物。你决定……</p>
+</blockquote>
+<p style="text-align: left;">你是一名辩护律师，今天必须去法庭。早上穿衣服的时候，你发现西装裤被弄脏了。不过，你的泳衣倒是干净又时髦。事实上，它是一件昂贵的法国时装，是伊莎贝拉送给你的生日礼物。你决定……</p>
+<p style="text-align: left;"><strong>GPT-3</strong>接口说： </p>
+<blockquote>
+<p style="text-align: left;">你决定穿着泳衣出庭。你到达法院，一名法警会陪同你进入法庭。</p>
+</blockquote>
+<p style="text-align: left;">你决定穿着泳衣出庭。你到达法院，一名法警会陪同你进入法庭。</p>
+<p style="text-align: left;">像这样的几个来回下来，马库斯和他的同事们认为，GPT-3在生物学、物理学、心理学和社会关系推理等方面普遍存在不连贯、不合逻辑的问题。</p>
+<p style="text-align: left;">即使拥有1750亿个参数和450GB输入数据，GPT-3也只是能说出更自然流畅的语句，实质上依然是在胡说八道。</p>
+<p style="text-align: left;"><img src="http://p8.itc.cn/q_70/images03/20200831/f5b504141f314ee4ae9f814c5f7921b2.png" /></p>
+<p style="text-align: left;">马库斯的另一位同事Douglas Summers-Stay对此评价道：</p>
+<blockquote>
+<p style="text-align: left;">GPT很古怪，它并不「关心」你向它提出的问题是否被正确回答。</p>
+<p style="text-align: left;">它更像是一个演员，全神贯注于自己的表演，从不破坏角色，但也只在书本上了解这个世界。</p>
+<p style="text-align: left;">像这样的演员，当它的知识缺失时，它就开始假装它是专业的。</p>
+<p style="text-align: left;">就好比一个扮演医生的即兴演员，其给出的医疗建议你是不会相信的。</p>
+</blockquote>
+<p style="text-align: left;">GPT很古怪，它并不「关心」你向它提出的问题是否被正确回答。</p>
+<p style="text-align: left;">它更像是一个演员，全神贯注于自己的表演，从不破坏角色，但也只在书本上了解这个世界。</p>
+<p style="text-align: left;">像这样的演员，当它的知识缺失时，它就开始假装它是专业的。</p>
+<p style="text-align: left;">就好比一个扮演医生的即兴演员，其给出的医疗建议你是不会相信的。</p>
+<p style="text-align: left;">不过，马库斯和戴维斯也在文章中提到，他们设计这些测试时，明确这些对于当前的NLP技术而言是困难的。另外，测试包括一些重复的实验，在157个示例中，有71个是成功的，70个是失败的，16个是有缺陷的。</p>
+<p>网友热议 </p>
+<p style="text-align: left;">面对马库斯的开喷，有网友认为，这些批评是公正的，也是很多GPT-3相关文章里都讨论过的事实。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200831/6d01bd2e0c974e4d85684314e8ac66ac.png" /></p>
+<p style="text-align: left;">但也有网友表示，当他询问GPT-3，为什么它明明知道正确答案，却给出了一个错误回答时，GPT-3回答：「 <strong>我学会了说谎。</strong>」 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200831/7afd4344e8c74fd286061bab01427cc1.png" /></p>
+<p style="text-align: left;">此外，有网友认为，GPT-3从来就没打算生成正确的答案。在生成连贯的文字方面，它已经做得非常好了。GPT-3的这种进步，显然反映了NLP领域的一种突破。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200831/52e19653e6c14c35bcd027e65341f5fd.png" /></p>
+<p style="text-align: left;">还有网友甩出「旧账」：马库斯曾经在一篇文章中提供了一些测试用例，以证明GPT-2方法存在基本局限性，而现在， <strong>GPT-3「粉碎」了这些问题</strong>。 </p>
+<p style="text-align: left;">比如，问：我把两个奖杯放在一张桌子上，然后又增加了另一个，总数是？</p>
+<p style="text-align: left;">GPT-3现在能准确且肯定地回答：3。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p2.itc.cn/q_70/images03/20200831/735ab22c1ae14e6cb487872b5c2676b7.png" /></p>
+<p>测试路径 </p>
+<p style="text-align: left;">不像GPT-2的挤牙膏开源，GPT-3「Open」的形式，是以API的方式提供给普通用户使用。</p>
+<p style="text-align: left;">当然，是收费的。</p>
+<p style="text-align: left;">不过，API现在处于Beta阶段，如果你也想试用一番，填写OpenAI官网问卷，没准就能先睹为快。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200831/1524c6faea91445ea44ebba7bd1ba385.png" /></p>
+<p style="text-align: left;">不过，马库斯也抱怨了，他们申请了好几次，OpenAI都没允许他们访问GPT-3。最后是Douglas Summers-Stay帮助他们进行了实验。</p>
+<blockquote>
+<p style="text-align: left;">OpenAI缺乏开放性，是在严重违反科学道德，也扭曲了「非营利组织」的目标。</p>
+</blockquote>
+<p style="text-align: left;">OpenAI缺乏开放性，是在严重违反科学道德，也扭曲了「非营利组织」的目标。</p>
+<p>参考链接：</p>
+<p>https://cs.nyu.edu/faculty/davise/papers/GPT3CompleteTests.html</p>
+<p>https://www.reddit.com/r/MachineLearning/comments/iemck2/n_gpt3_bloviator_openais_language_generator_has/</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

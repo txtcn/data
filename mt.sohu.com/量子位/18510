@@ -1,0 +1,89 @@
+➜AI把视频里的你抹掉了！效果丝滑，毫无痕迹，还能完美去水印
+http://www.sohu.com/a/416596561_610300	17026
+<p>郭一璞 鱼羊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">男子骑自行车，越过沙丘，无影无踪，目击者称就消失在眼前：</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200905/63f8e0f9c5594f5bb15d46557d06f30c.gif" /></p>
+<p style="text-align: left;">因击球过勐，网球运动员携球拍共同湮灭：</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200905/bd41d02a68df456e87689087e9afec39.gif" /></p>
+<p style="text-align: left;">男大学生热爱徒步运动，进入深山戈壁后失踪：</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200905/3d95f050f2544889bfe22a14eae341f9.gif" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">白色面包车离奇消失，查遍监控摄像头均未发现踪影：</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200905/2337216390e5422da8a003f009cb0c57.gif" /></p>
+<p style="text-align: left;">妙龄少女广场起舞，光天白日下原地消失不知去向：</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200905/faa2dd7a17224f3dacccef72216969eb.gif" /></p>
+<p style="text-align: left;">中学男生周末荡秋千，飞到半空只剩秋千椅，家长称1秒前孩子还安然无恙：</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200905/350b080c82ee45f0b199e20595489d50.gif" /></p>
+<p style="text-align: left;">马术选手骑马越过栅栏后人马双双消失，网民怀疑任意门现世：</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200905/174da95d84a24775bacd0de754fdec89.gif" /></p>
+<p style="text-align: left;">帆船选手出海后离奇失踪，主办方搜寻后仍未获踪影：</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200905/92fa4f57138044f9b5eaa2cb5f24cd39.gif" /></p>
+<p style="text-align: left;">诡异的现象，让人怀疑视频中使用了和九又四分之三站台同样的魔法。</p>
+<p style="text-align: left;">没错，这就是今年ECCV上最神奇的 <strong>AI隐身衣</strong>技术。 </p>
+<p style="text-align: left;">让网友们惊叹，此情此景堪称灭霸。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200905/6ea6b9490e3945478817854304754533.png" /></p>
+<p style="text-align: left;">甚至开始担心，如果这个技术被小偷用上，家具都会“飘走”。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200905/64c27d03e97749f18f883c738aef1f84.png" /></p>
+<p style="text-align: left;">也有外国网友开心，觉得可以用来屏蔽广告，很不错。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200905/330f6a676e844eea95adabd99f954f6a.png" /></p>
+<p style="text-align: left;">这件隐身衣，究竟是怎么创造出来的？</p>
+<p>基于光流边缘引导的视频补全算法 </p>
+<p style="text-align: left;">AI这种完美去水印、删人物的「隐身」超能力，实际上是一种基于光流的视频修复算法。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200905/7b4a8c11f9a74030914f1bcee95f5b5e.png" /></p>
+<p style="text-align: left;">此前，量子位就曾经介绍过港中大商汤联合实验室和南洋理工大学的 光流引导 视频修复算法 。 </p>
+<p style="text-align: left;">不过，以往的基于光流的方法往往无法保留运动边界的锐度，使得修复后的画面不够平滑。</p>
+<p style="text-align: left;">另外，由于此前的方法是在相邻帧之间的局部光流连接中传播色彩，但并非所有视频中被水印、物体遮住的区域都可以通过这种方式恢复，就会造成伪影。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200905/7fb59638e776424fbc53ade2aa5b99bb.gif" /></p>
+<p style="text-align: left;">为了解决这些问题，来自弗吉尼亚大学和Facebook的研究团队主要采取了以下三种方法：</p>
+<ul>
+<li>分段平滑流补全 （Piecewise-smooth flow completion）</li>
+<li>非局部流连接 （Non-local flow neighbors）</li>
+<li>无缝融合 （Seamless blending）</li>
+</ul>
+<p><img src="http://p4.itc.cn/q_70/images03/20200905/46078d21f9014c17a8e5e9dd3c0890e1.png" /></p>
+<p style="text-align: left;">具体而言，首先，网络的输入包括待修复的视频本身，和一个二进制掩码视频，用以指明哪些部分需要算法合成。</p>
+<p style="text-align: left;">然后，计算相邻帧之间的光流，以及一组非相邻帧之间的光流，提取并补完流的边缘。下图中红线部分，即为神经网络“脑补”出来的边缘。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200905/aac7bc5a36cb4478a012556a1fc89234.png" /></p>
+<p style="text-align: left;">接着用流边缘来引导视频中被水印/人物挡住的缺失区域的修复。</p>
+<p style="text-align: justify;"><span style="font-size: 16px;">下一步，是按照光流的轨迹，为每个缺失的像素计算出一组候选像素。每个候选像素都有一个对应的置信度分数和一个二进制有效性指标。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200905/080e8ac926604e53b1fbd536f88d0c46.png" /></p>
+<p style="text-align: left;">以上图为例，绿色区域为缺失的部分，黄线、橙线和棕线分别代表第一非局部帧、当前帧和第三非局部帧的扫描线。</p>
+<p style="text-align: left;">可以看到，通过跟踪光流轨迹（黑色虚线），图上蓝色的像素点的候选像素被计算了出来。但由于人腿的运动形成了遮挡，计算红色像素点的候选像素就出现了困难。</p>
+<p style="text-align: left;">但在引入非相邻帧的非局部光流后，红色像素点就得到了额外的非局部领域（黄线和棕线上的红色像素点），由此，就可以计算出被人腿遮挡的真实背景。</p>
+<p style="text-align: left;">然后，再在梯度域中，使用置信度加权平均，融合每个缺失像素点的候选对象以重建颜色。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200905/5d34f97d91524b1f979e44716f5e47e7.png" /></p>
+<p style="text-align: left;">最后，迭代这个过程，直到没有缺失像素为止。</p>
+<p>实验结果：SOTA </p>
+<p style="text-align: left;">从视觉效果上来说，这只AI的隐身大法修炼得十分成功。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p2.itc.cn/q_70/images03/20200905/f309f77e2ea94d3da40c45551b657a6d.png" /></p>
+<p style="text-align: left;">与Diffusion和商汤的徐瑞等人的算法相比，新方法提供了更为清晰的运动边界，效果更加平滑。</p>
+<p style="text-align: left;">那么定量对比的结果又如何呢？直接来看数据。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200905/ef9900d34bc34dabafb63b988156a247.png" /></p>
+<p style="text-align: left;">在DAVIS数据集上，研究人员将该方法与现有方法进行对比，比较了水印之类的静止对象和运动对象两类合成掩码的视频补完结果。</p>
+<p style="text-align: left;">结果显示，新方法在各项指标上都达到了最佳性能。</p>
+<p>关于作者 </p>
+<p style="text-align: left;">这件酷炫的AI隐身衣，由弗吉尼亚理工大学和Facebook打造。</p>
+<p style="text-align: left;">一作是弗吉尼亚理工大学的三年级博士生Chen Gao。他的研究方向是计算摄影和计算机视觉，师从弗吉尼亚理工大学助理教授Jia-Bin Huang。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200905/9475486671e84ba29b4ef430ae99bb6d.jpeg" /></p>
+<p style="text-align: left;">这项工作是他在Facebook实习期间完成。目前，他在谷歌担任研究实习生。</p>
+<p style="text-align: left;">作者还表示，会很快开源这件AI隐形衣的代码，并放出在线Demo。</p>
+<p>传送门 </p>
+<p style="text-align: left;">项目地址： </p>
+<p>http://chengao.vision/FGVC/ </p>
+<p style="text-align: left;">论文地址： </p>
+<p>https://arxiv.org/abs/2009.01835 </p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span><span style="font-size: 16px;"></span></p>
+<p><strong>0基础Python入门</strong></p>
+<p><strong>扫码进群，免费领取体验课：</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

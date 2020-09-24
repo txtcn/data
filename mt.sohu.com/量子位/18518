@@ -1,0 +1,221 @@
+➜写代码、搜问题，全部都在「终端」完成！如此编程神器，是时候入手了
+http://www.sohu.com/a/418089278_610300	15958
+<p>贾浩楠 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">无论你是编程小白还是老司机，coding过程中总会遇到不懂的问题。</p>
+<p style="text-align: left;">最常见的方法是去论坛询问、谷歌搜索，需要反复在网页和编译器页面切换，即使有两个很大的分屏，生产力也会受到影响。</p>
+<p style="text-align: left;"><img height="auto" width="1340" src="http://p2.itc.cn/q_70/images03/20200913/0272e90d1ba84f1cb1e8bdda5bb1b092.png" /></p>
+<p style="text-align: left;">但是现在这个问题有希望解决了，一个便捷编程Q&amp;A工具 <strong>codequestion</strong>可以帮到你。 </p>
+<p style="text-align: left;">直接在终端输入「你要问的问题」，用普通的自然语言就行，和你去谷歌搜索没什么两样。</p>
+<p style="text-align: left;"><img src="http://p2.itc.cn/q_70/images03/20200913/f6f11de9f23e44c38e565b2c9ea9b21e.gif" /></p>
+<p style="text-align: left;">然后马上就能返回详细操作教程， <strong>实现了直接在终端用对话形式来查询操作手册</strong>。 </p>
+<p style="text-align: left;">这么好用的工具安装起来也不复杂。</p>
+<p>安装教程 </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">安装codequestion最简单的方法是通过pip或PyPI：</p>
+<ul>
+<li></li>
+</ul>
+<p style="text-align: left;">当然，你也可以克隆Github上的项目到本地：</p>
+<ul>
+<li></li>
+</ul>
+<p style="text-align: left;">安装codequestion需要Python 3.6版本以上。</p>
+<p style="text-align: left;">对于Linux系统来说，可以直接运行项目，但是Windows和Mac需要安装额外项。</p>
+<p style="text-align: left;">Windows需要安装 <strong>C++ Build Tools</strong>，地址如下： </p>
+<p style="text-align: left;"><span>https://visualstudio.microsoft.com/visual-cpp-build-tools/ </span></p>
+<p style="text-align: left;">PyTorch Windows的二进制文件不在PyPI上，安装时必须添加以下url链接：</p>
+<ul>
+<li></li>
+</ul>
+<p style="text-align: left;">对于Mac来说，安装前需要运行这个命令： </p>
+<ul>
+<li></li>
+</ul>
+<p style="text-align: left;">安装步骤已经完成了，接下来看看实例测试吧</p>
+<p>AI驱动的问答机制 </p>
+<p style="text-align: left;">codequestion下载完成以后，还需要安装一个模型。</p>
+<p style="text-align: left;">python -m codequestion.download</p>
+<p style="text-align: left;">这个模型的核心就是作者 <strong>David Mezzetti</strong>之前开发的AI算法 <strong>txtai</strong>。 </p>
+<p style="text-align: left;">txtai支持构建文本索引，执行相似性搜索，并创建基于提取式问题回答的系统。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200913/a335e245b69c4263b4ef3f09b2fea1b1.gif" /></p>
+<p style="text-align: left;">作者还提供了预训练的模型：</p>
+<ul>
+<li></li>
+</ul>
+<p style="text-align: left;">codequestion是可以定制的，可以针对自定义的问答库运行。目前，只支持Stack Exchange库中的问题帮助，未来会有更多的支持选项。</p>
+<p style="text-align: left;">完成模型安装后，可以通过以下命令运行测试：</p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p style="text-align: left;">代码中包含将测试数据下载到〜/ .codequestion / test中。 </p>
+<p style="text-align: left;">下面的表格显示了各种词向量/评分组合的测试结果。</p>
+<p><img height="auto" width="490" src="http://p8.itc.cn/q_70/images03/20200913/27b242abc5544d6f83b029b0b06bad8d.png" /></p>
+<p style="text-align: left;"><span>S</span><span>E 300d单词向量与BM25评分在这个数据集中表现最好。</span><span>即使减少了词汇量的Stack Exchange问题，SE 300d - B</span><span>M25在STS基准测试中的表现也相当不错。</span></p>
+<p style="text-align: left;">之前，量子位也介绍过一个相似的Linux命令行查询工具，也是直接在终端输入问题，返回答案。</p>
+<p style="text-align: left;">不同的是，当时的工具 <strong>howdoi</strong>是在在线技术论坛上搜索已有答案，范围比较有限。 </p>
+<p style="text-align: left;">那么这次介绍的codequestion的AI驱动机制，有什么先进之处呢？</p>
+<p>基本原理 </p>
+<p style="text-align: left;"><strong>第一步：原始数据转储处理</strong></p>
+<p style="text-align: left;">来自Stack Exchange库的原始7z XML转储通过一系列步骤进行处理。</p>
+<p style="text-align: left;">只有高分的问题和答案才会被检索到，并存储在模型中。</p>
+<p style="text-align: left;">问题和答案被整合到一个名为questions.db的单一SQLite文件中。questions.db 的模式如下：</p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p style="text-align: left;"><strong>第二步：检索</strong></p>
+<p style="text-align: left;">codequestion工具为questions.db建立了一个句子嵌入索引。</p>
+<p style="text-align: left;">questions.db模式中的每个问题都会被标记，并解析为单词嵌入。</p>
+<p style="text-align: left;">词嵌入模型是建立在questions.db上的自定义fastText模型。一旦某个token被转换为单词嵌入，就会创建一个加权的句子嵌入。</p>
+<p style="text-align: left;">词嵌入使用BM25索引对资源库中的所有token进行加权。但有一个重要的修改：标签被用来提升标签标记的权重。</p>
+<p style="text-align: left;">一旦question.db被转换为句子嵌入的集合，它们就会被归一化并存储在Faiss中，从而可以进行快速的相似性搜索。</p>
+<p style="text-align: left;"><strong>第三步：查询</strong></p>
+<p style="text-align: left;">codequestion使用与索引相同的方法对每个查询进行标记。这些标记被用来建立一个句子嵌入。根据Faiss索引对该嵌入句进行查询，以找到最相似的问题。</p>
+<p>离线开发好帮手 </p>
+<p style="text-align: left;">可以看出，这个codequestion工具的优势在于灵活的搜索匹配问题，并且能够根据问题回答的质量优先推选好的回答。</p>
+<p style="text-align: left;">这一点是类似工具使用关键词匹配搜索答案无法比拟的。</p>
+<p style="text-align: left;">目前codequestion的局限在于只支持Stack Exchange中的问题，但是，作者承诺后期会加入更多的库。</p>
+<p><img height="auto" width="1364" src="http://p7.itc.cn/q_70/images03/20200913/7b7de7c983df43acaa7ec35041484f69.png" /></p>
+<p style="text-align: left;">不少网友都反应，这个工具十分实用，尤其是它支持本地库中的问答机制，对于有离线开发需求的码农来说，帮助颇巨。</p>
+<p style="text-align: left;">怎么样？如果这个工具对你有用，那就赶快上手操作吧~</p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">参考链接&amp;传送门：</span></span></p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">Github地址： </span></span></p>
+<p><span><span style="font-size: 16px;">https://github.com/neuml/codequestion</span></span></p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">C++ Build Tools安装地址： </span></span></p>
+<p><span><span style="font-size: 16px;">https://visualstudio.microsoft.com/visual-cpp-build-tools/</span></span></p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">量子位之前介绍过的Linux命令行查询工具： </span></span></p>
+<p>https://mp.weixin.qq.com/s/5vfQRsAZ4zEKOJnUNT8Ebg </p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>好课推荐 | 0基础学Python</strong></p>
+<p><span style="font-size: 16px;">《动手学Python》课程由</span><strong><span style="font-size: 16px;">上海交大博士教研团队</span></strong><span style="font-size: 16px;">研发，在线学习平台由上海</span><strong><span style="font-size: 16px;">交大AI实验室</span></strong><span style="font-size: 16px;">技术支持，旷视、文远知行、图森未来、来也科技等</span><strong><span style="font-size: 16px;">知名AI</span></strong><span style="font-size: 16px;"><strong>企业CEO/CTO力荐</strong></span><span style="font-size: 16px;">。</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">0基础可入门，限时开放体验课！扫码即刻开启Python学习之旅：</span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜华为被曝自研编程语言“仓颉”，南大教授冯新宇领衔
+http://www.sohu.com/a/418089548_610300	15958
+<p>萧箫 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">近日，华为要自主研发编程语言的消息忽然在网上火了。</p>
+<p style="text-align: left;">据微博博主@IT工程师 称，华为正在研发新的自主编程语言 <strong>仓颉</strong>，领头人是南京大学的计算机科学与技术系博士生导师，冯新宇。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200913/1b52f4b7d73949efbea4797ce032a413.png" /></p>
+<p><strong>△</strong>图源微博@IT工程师，经授权 </p>
+<p style="text-align: left;">目前这件事尚未得到官方证实，但据知乎@匿名用户 透露，华为有意研究自己的程序语言，在行业内 <strong>早已是公开的秘密</strong>。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200913/1cccaf12baeb46d1afc1102305efa125.png" /></p>
+<p>「华为自研编程语言并非秘密」 “编译器实验室早已有之” </p>
+<p style="text-align: left;">事实上，华为在编译器与编程语言方面早有动向。</p>
+<p style="text-align: left;"><strong>方舟编译器</strong>，就是华为在编译器方向的研究成果之一。 </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">2019年8月31日，华为在开源平台上放出了方舟编译器的源代码，这是华为首个完全自主研发的编译器平台。</p>
+<p style="text-align: left;">知乎@养猫的哈士奇表示，华为2012实验室的中央软件研究院下面有一个编译器与编程语言实验室，这个实验室已经存在很多年了。</p>
+<p style="text-align: left;">从拉勾网上的招聘信息可以看见，华为2012实验室的中央软件院下面的确有一个编译器实验室&amp;芯片软件协同设计部，「在编译器及芯片软件协同设计领域 <strong>耕耘10余年</strong>」。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200913/1c7f56269d6240d8a8877ea4fb11c58a.png" /></p>
+<p><strong>△</strong>图源拉勾网 </p>
+<p style="text-align: left;">那么，为什么要进行这方面的研究？</p>
+<p style="text-align: left;">知乎@养猫的哈士奇 表示，去年一次交流中，华为消费者BG软件部的总裁 <strong>王成录博士</strong>，提到了华为为什么要搞这个实验室、做编译器这些东西。 </p>
+<blockquote>
+<p style="text-align: left;">简单来说，就是华为很早以前就发现，在核心网设备上自己编译，可以大大提高性能（通信设备也是有性能要求的），后来就开始有小规模的团队来做编译。也就是说，在做方舟编译器之前，华为已经做了很多年编译的相关工作了。</p>
+<p style="text-align: left;">在做智能手机的过程中，华为想把手机做到像iPhone一样流畅，但遇到很多困难，其中很重要的一点就是Android的虚拟机机制。</p>
+<p style="text-align: left;">所以他们做了一个很重要的决定——（研发）方舟编译器，事实上这不仅是针对手机平台、还包括通信设备等，将华为所有的编译工作都统一起来，全面提升效能。</p>
+</blockquote>
+<p style="text-align: left;">简单来说，就是华为很早以前就发现，在核心网设备上自己编译，可以大大提高性能（通信设备也是有性能要求的），后来就开始有小规模的团队来做编译。也就是说，在做方舟编译器之前，华为已经做了很多年编译的相关工作了。</p>
+<p style="text-align: left;">在做智能手机的过程中，华为想把手机做到像iPhone一样流畅，但遇到很多困难，其中很重要的一点就是Android的虚拟机机制。</p>
+<p style="text-align: left;">所以他们做了一个很重要的决定——（研发）方舟编译器，事实上这不仅是针对手机平台、还包括通信设备等，将华为所有的编译工作都统一起来，全面提升效能。</p>
+<p style="text-align: left;">然而，方舟编译器面临着Java的反射机制等问题，这些是需要解决的。</p>
+<p style="text-align: left;">所以，对于这次消息称华为要自研编程语言的消息，知乎@养猫的哈士奇 推测，自研编程语言是迟早要迈出的一步。</p>
+<p>“相关领域专家加入” </p>
+<p style="text-align: left;">此外，有知乎网友爆料，华为近段时间在相关方向的招人也非常大手笔。</p>
+<p style="text-align: left;">2014年的时候，华为在美国的研究实验室就聘用了Peng Wu，她此前曾经在IBM工作十几年，是并行计算语言和编译器领域的专家，曾经获得过2012年PACT的最佳论文奖。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200913/6ee8ed50563445309db972323d17d456.png" /></p>
+<p style="text-align: left;">据Peng Wu在领英上的资料，她于2014年12月加入华为编译器Programming Technologies Lab任资深总监，并于2019年5月加入华为的美国子公司Futurewei，担任技术总监，负责编程语言的设计、编译器框架的设计。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200913/2f7fd7dc83ec419aa84fa0d3c4b21eb0.png" /></p>
+<p><strong>△</strong>图源领英 </p>
+<p style="text-align: left;">而就在今年，华为在爱丁堡大学成立了编程语言实验室 <span>（Programming Languages Lab）</span>，又找了Dan R. Ghica做总监，目前，这个实验室已经在招聘编程语言工程师的博士实习生。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200913/7f1641480efe493c891506c2bfbb2381.png" /></p>
+<p><strong>△</strong>图源爱丁堡大学官网 </p>
+<p style="text-align: left;">从谷歌学术来看，Dan R. Ghica的主要研究方向就是编程语言，h-index达22，论文一共被引用一千余次。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200913/6cfe1a9d2e114385a7236a4bfde3ec9c.png" /></p>
+<p><strong>△</strong>图源谷歌学术 </p>
+<p style="text-align: left;">而这次传言中负责「仓颉」的教授冯新宇，究竟是什么人呢？</p>
+<p>冯新宇为何人？ </p>
+<p style="text-align: left;">根据南京大学的官网介绍，冯新宇教授本硕毕业于南京大学计算机科学专业，此后于耶鲁大学就读计算机科学博士，期间曾经在AT&amp;T实验室实习。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200913/3909a9b50b844c5780f2e65333ba9087.png" /></p>
+<p><strong>△</strong>图源南京大学官网 </p>
+<p style="text-align: left;">冯新宇教授主要从事程序验证、并发理论、程序设计语言理论方面的研究，是我国高校编程语言方向的专家。</p>
+<p style="text-align: left;">2010-2017年期间，冯新宇教授曾经在中科大就任教授，并于18年以后来到南京大学，目前在南京大学就任教授，并于2019年带领团队获得PLDI杰出论文奖。</p>
+<p style="text-align: left;">知乎@匿名用户 表示，冯新宇教授可能是在大陆高校就职发POPL和PL顶会最多的人（之一）。</p>
+<p style="text-align: left;">此外，冯新宇的导师、中科大少年班的校友 <strong>邵中</strong>教授，硕博毕业于普林斯顿大学，对编程语言及编译系统了解非常深入。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200913/6d883739c5f54202adbcf4dba0347196.png" /></p>
+<p><strong>△</strong>图源中国科学技术大学官网 </p>
+<p style="text-align: left;">邵中教授曾为SML语言研发编译器SML/NJ，对“带证明可信软件”领域有深入研究，在POPL上发表过5篇论文，也是国内首个在POPL上发论文的学者。</p>
+<p>谷歌、苹果已有自研编程语言 </p>
+<p style="text-align: left;">事实上，谷歌与苹果都已经推出了自己的编程语言。</p>
+<p style="text-align: left;">谷歌于2009年就推出了Go语言，这门语言设计的目的，是为了在运行速度快的同时，编译速度也不错，同时也更容易上手编写。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200913/2ce69e0adea74525ba8ebb83e1e6345c.png" /></p>
+<p style="text-align: left;">这也使得Go语言的语法限制较多，但它的确找到了“运行速度”、“编译速度”和“上手容易”三者的平衡点，成为目前较受欢迎的编程语言之一。</p>
+<p style="text-align: left;">而苹果也于2014年在WWDC上推出了自己的Swift语言，并凭借着类似于Python的易用性、和较强的运行效率，一度在当年跻身成为最受欢迎TOP 15的编程语言之一。</p>
+<p>对于尚未面世的「仓颉」 </p>
+<p style="text-align: left;">对于华为这次的自研编程语言「仓颉」，许多网友表达了自己的看法。</p>
+<p>1、走稳些，开源几乎是必须的 </p>
+<p style="text-align: left;">事实上，我国此前并非没有“自研编程语言”。</p>
+<p style="text-align: left;">今年1月份，中科院计算技术研究所推出了“木兰” <span>（μlang）</span>，这是一门基于Python实现的编程语言。 </p>
+<p style="text-align: left;">然而“木兰”项目负责人刘雷，却用了“完全自主设计、开发和实现”来形容这门编程语言。</p>
+<p style="text-align: left;">中科院官方随后回应，刘雷“夸大宣传”，这样的说法属于“虚假陈述”，这门语言也逐渐消失在大众视野中。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200913/3f6d1a50a41048fdab5c86c95de014f7.png" /></p>
+<p><strong>△</strong>“木兰”猜数字例程，图源知乎@吴烜 </p>
+<p style="text-align: left;">有了“木兰”的先例，针对这次华为的「仓颉」，知乎@吴烜 认为，国产编程语言应该走稳些，而且 <strong>开源几乎是必须的</strong>。 </p>
+<blockquote>
+<p style="text-align: left;">吸取木兰的一些教训吧，趁早开源，尽量避免以讹传讹。如果目标是通用编程语言，就要和现在市场上的英文编程语言在开放性上对齐。开源几乎是必须的。在此特殊时期，必然被放到显微镜下看，不如早作准备。</p>
+</blockquote>
+<p style="text-align: left;">吸取木兰的一些教训吧，趁早开源，尽量避免以讹传讹。如果目标是通用编程语言，就要和现在市场上的英文编程语言在开放性上对齐。开源几乎是必须的。在此特殊时期，必然被放到显微镜下看，不如早作准备。</p>
+<p style="text-align: left;">针对这次的新闻爆料，知乎@DBinary 则认为， <strong>“自研”不应是重点</strong>，「仓颉」应该拿出更有说服力的价值体现。 </p>
+<blockquote>
+<p style="text-align: left;">一门语言要发展，先不说生态，好歹说说这门语言诞生出来为了解决什么问题。而这个叫仓颉的语言，难道就仅仅是为了解决“自研”？</p>
+<p style="text-align: left;">如果只是拿自研编程语言这件事来说，真的不是很高大上的事情，你看我自己就写了一个叫Story的语言，从词法分析器开始写，编译器、虚拟机、调试器、一应俱全。这个语言，除了我之外应该没有第二个人会用了，不是因为语言高大上，而是因为没人看得上。</p>
+</blockquote>
+<p style="text-align: left;">一门语言要发展，先不说生态，好歹说说这门语言诞生出来为了解决什么问题。而这个叫仓颉的语言，难道就仅仅是为了解决“自研”？</p>
+<p style="text-align: left;">如果只是拿自研编程语言这件事来说，真的不是很高大上的事情，你看我自己就写了一个叫Story的语言，从词法分析器开始写，编译器、虚拟机、调试器、一应俱全。这个语言，除了我之外应该没有第二个人会用了，不是因为语言高大上，而是因为没人看得上。</p>
+<p style="text-align: left;">当然，如果仅仅就事论事，知乎@苏远 表示，从爆料的「仓颉」英文名Char来说，其实不是一个好选择，希望正式发布时，选个更好的名字。</p>
+<blockquote>
+<p style="text-align: left;">Char在计算机里是字符的意思，几乎所有编程语言里都有Char的概念。 如果一个新语言名字和一个计算机通用术语重名，在内容搜索方面已经先天处于不利地位。 开发者想查找仓颉的资料，一定会充斥着大量的无关信息。按照权重排名，很可能前五页都没有仓颉语言的结果。</p>
+</blockquote>
+<p style="text-align: left;">Char在计算机里是字符的意思，几乎所有编程语言里都有Char的概念。 如果一个新语言名字和一个计算机通用术语重名，在内容搜索方面已经先天处于不利地位。 开发者想查找仓颉的资料，一定会充斥着大量的无关信息。按照权重排名，很可能前五页都没有仓颉语言的结果。</p>
+<p style="text-align: left;">那么，对于华为自研编程语言「仓颉」一事，你怎么看？</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>好课推荐 | 0基础学Python</strong></p>
+<p><span style="font-size: 16px;">《动手学Python》课程由</span><strong><span style="font-size: 16px;">上海交大博士教研团队</span></strong><span style="font-size: 16px;">研发，在线学习平台由上海</span><strong><span style="font-size: 16px;">交大AI实验室</span></strong><span style="font-size: 16px;">技术支持，旷视、文远知行、图森未来、来也科技等</span><strong><span style="font-size: 16px;">知名AI</span></strong><span style="font-size: 16px;"><strong>企业CEO/CTO力荐</strong></span><span style="font-size: 16px;">。</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">0基础可入门，限时开放体验课！扫码即刻开启Python学习之旅：</span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>

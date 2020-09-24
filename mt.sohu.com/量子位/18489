@@ -1,0 +1,338 @@
+➜程序员：我只想买件没有格子的衬衫，怎么就这么难？
+http://www.sohu.com/a/413256070_610300	17376
+<p>晓查 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">说到程序员着装，大家会想到什么？</p>
+<p style="text-align: left;">自然是 <strong>格子衬衫</strong>了。 </p>
+<p style="text-align: left;">但一个外国程序员，终于对此厌倦，他不想再穿格子衬衫或条纹衬衫，于是他打开了亚马逊网站，输入了关键词“无条纹衬衫”（shirt without stripes），结果却是这样的：</p>
+<p><img height="auto" width="1001" src="//p1.itc.cn/q_70/images03/20200815/c55e58ff801c4e9a91f35c9252f888ba.png" /></p>
+<p style="text-align: left;">为什么几乎全部都是带条纹的衬衫啊？</p>
+<p style="text-align: left;">“一定是我打开的姿势不对！”</p>
+<p style="text-align: left;">或者只是亚马逊的自然语音处理（NLP）技术不够好吧。</p>
+<p style="text-align: left;">他又接着尝试了 <strong>谷歌</strong>和 <strong>微软</strong>的搜索引擎，结果却还是这样： </p>
+<p><img height="auto" width="1001" src="http://p0.itc.cn/q_70/images03/20200815/5592573923b24f8cb8f26a3ea0f369ae.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><img height="auto" width="1002" src="http://p6.itc.cn/q_70/images03/20200815/b6e2f5094cd04c339ea11a9927812c4c.png" /></p>
+<p style="text-align: left;">反正结果就算不是衬衫，也一定带条纹，甚至还搜出了球衣。</p>
+<p style="text-align: left;">如果把关键词换成“没有格子的衬衫”（shirt without plaid），结果还是让人失望。</p>
+<p style="text-align: left;">是不是感到这个世界满满的恶意？程序员想买个没有格子的衬衫怎么就这么难！</p>
+<p><img height="auto" width="560" src="http://p5.itc.cn/q_70/images03/20200815/ef4b7abaebfb40d4ba53d4a196699115.png" /></p>
+<p style="text-align: left;">接着，这位程序员把搜索结果上传到GitHub，短短十个小时就获得了300星。</p>
+<p style="text-align: left;">更让人没想到是，这件小小的事情影响范围还在扩大，几个小时就在Hacker News上带了400多条评论。</p>
+<p style="text-align: left;">看来有相同槽点想吐的人，并不少。</p>
+<p><img height="auto" width="2016" src="http://p9.itc.cn/q_70/images03/20200815/9f8fc6daa6584f27b2dcccbb19a62973.png" /></p>
+<p style="text-align: left;">并且事情也“闹大”了。</p>
+<p style="text-align: left;">大家发现，何止搜索引擎，现在你只需一个“不”就能让AI助手变“人工智障”。</p>
+<p style="text-align: left;">打开你的Siri，和它说“不要告诉我天气”，但Siri还是义无反顾地告诉了你天气状况。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200815/a333faf97f4349c9be8e084735af4377.jpeg" /></p>
+<p style="text-align: left;">那么问题来了：为什么AI会犯如此低级的错误呢？</p>
+<p>人工智能的盲区 </p>
+<p style="text-align: left;">无论是搜索商品图片还是询问天气，加上了一个“不”或“无”字，就变得复杂起来。</p>
+<p style="text-align: left;">这个“不”到底是哪个部分做出否定，可能人类也说不清楚。</p>
+<p style="text-align: left;">这类问题属于“归因”问题，可能是统计学方法不能解决的，这就触及到机器学习的盲区了。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200815/b92488bc86344e27ba093655e6cf3121.png" /></p>
+<p style="text-align: left;">在上面的问题中，处理一个“不”还算比较清晰，但是在一些对准确性有要求的领域，会有很大的问题。</p>
+<p style="text-align: left;">比如“无癌症证据”，到底是得到了没得癌症的证据，还是根本没有证据呢？</p>
+<p style="text-align: left;">这还算是比较简单的，人类语言中还有很多双重否定，有时候连人自己表达的时候都会犯错。</p>
+<p style="text-align: left;">处理这类问题，不能使用过去的统计方法，而需要更多关注语法内在的逻辑性，语言学中的乔姆斯基学派的研究者就是这么认为。</p>
+<p style="text-align: left;">但是涉及此类算法的研究很少，甚至很多从事算法的人对此并不感兴趣。</p>
+<p style="text-align: left;">一些从事机器学习研究的大型公司，他们研究的算法具有很大的适用性，但是在归因等情况下，他们的语言模型可能会失败。</p>
+<p style="text-align: left;">而且神经网络尚未显示出对此问题的改进。在说“不”这个问题上，各家的AI都不能通过图灵测试，甚至显得愚蠢。</p>
+<p style="text-align: left;">所以是不是“另有隐情”？</p>
+<p>技术不行还是SEO捣乱 </p>
+<p style="text-align: left;">是不是因为谷歌没有在搜索引擎里用上NLP技术，所以才导致错误的结果？</p>
+<p style="text-align: left;">实际上，谷歌去年10月就已经在英文版的搜索引擎里用上了BERT。</p>
+<p style="text-align: left;">过去，谷歌的搜索更多的是基于单个单词的理解。</p>
+<p style="text-align: left;"><span>比如“2019 brazil traveler to usa need a visa”，以前的谷歌搜索会基于visa、usa、brazil这几个关键词，而英文结果里更多的是美国人咨询</span>去 <span>巴西，所以搜索结果往往是相反的。</span></p>
+<p><img height="auto" width="1000" src="http://p1.itc.cn/q_70/images03/20200815/1f55af8b15f74892b67211c5a06dd66b.jpeg" /></p>
+<p style="text-align: left;">于是这让一些网友觉得，谷歌亚马逊研究多年的NLP技术不过如此，要理解人类语言还有很长的路要走。</p>
+<p style="text-align: left;">不过，经过努力，计算机已经能够搞清楚英文里的“无癌症证据”（No evidence of cancer、Evidence of no cancer）两者之间的差别。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200815/55dfc2b2caef40878e474dc979f0f2ca.png" /></p>
+<p style="text-align: left;">当然，还有一些技术之外的因素。</p>
+<p style="text-align: left;">任何搜索引擎都绕不开 <strong>SEO</strong>和广告问题。 </p>
+<p style="text-align: left;">那些卖条纹衬衫的商家会通过各种优化手段，霸占“条纹”和“衬衫”这两个关键词的头部位置，结果导致“no”和“without”之类的关键词被忽略。</p>
+<p style="text-align: left;">一些网友认为，是SEO的垃圾信息毁了搜索引擎，同时广告还是是谷歌搜索的重要收入来源，谷歌自己可能也无心解决——这一点自然无法妄加揣测。</p>
+<p style="text-align: left;">不过，我们也用最大的中文搜索引擎试了试，发现也是一样的结果：</p>
+<p><img height="auto" width="2584" src="http://p3.itc.cn/q_70/images03/20200815/af0f83993f0a49469c39bb3543aa14a1.png" /></p>
+<p style="text-align: left;">但往好的一面看，这也意味着时代之问有解了。</p>
+<p style="text-align: left;">之前，总有人“抬杠”，在智能时代里，你无法判断跟你交流的是人类还是AI……</p>
+<p style="text-align: left;">但现在，钥匙来了：机器是不能说“不”的。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200815/f50d22c29f06471085e5b27441f43acd.jpeg" /></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜马斯克卫星互联网开测：最快60M，高清视频网游都OK，先造福偏远农村
+http://www.sohu.com/a/413256245_610300	17376
+<p>边策 萧箫 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">马斯克吹的牛可能又要实现了。</p>
+<p style="text-align: left;">去年5月，SpaceX发射首批60颗Starlink卫星上天，希望给偏远地区人民带来快速的互联网。</p>
+<p style="text-align: left;">现在才短短一年，该计划的Beta测试用户已经享受到这项技术的便利。而且他们还用实测数据证明，Starlink的卫星互联网确实好用： <strong>网速快、延迟低</strong>。 </p>
+<p style="text-align: left;">近日，一位名叫“Snnackss”的网友晒出了一组Starlink卫星互联网速度数据：</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200815/21f7262ef20a42bcb0b4bedbb3e7300c.png" /></p>
+<p style="text-align: left;">可以看出，Starlink提供的下载速度均在30Mbps以上，最高甚至能达到 <strong>60Mbps</strong>。上传速度波动较大，也能基本能保证在10Mbps上下。 </p>
+<p style="text-align: left;">根据视频网站Netflix的建议，这个网速看超高清视频都是可以的。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200815/9f900bdd0cb94accb728016f5ffebe43.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">而Starlink网络延迟范围 <strong>从31ms到94ms</strong>，玩网络对战游戏问题不大。 </p>
+<p style="text-align: left;">这组数据对在大城市生活的人来说，称不上惊喜。毕竟他们已经习惯了千兆入户，几十GB的游戏几分钟下载完毕。</p>
+<p style="text-align: left;">但这却能给“水深火热”美国农村人民送去温暖。</p>
+<p style="text-align: left;">要知道，美国广大农村地区还在使用ADSL上网，也就是中国城市地区十几年前在用的“电话猫”，00后可能都没怎么见过。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200815/9562815965d34eba98ab6b6549759b82.png" /></p>
+<p style="text-align: left;">据美国FCC（联邦通信委员会）的数据，美国有2500万的互联网用户接入速度不高于25Mbps，这些用户几乎都在农村。 </p>
+<p style="text-align: left;">实际情况可能更惨。有人说他在早上最差的时候网速只有0.14Mbps，如果给运营商打电话投诉，网速大概能提升到2Mbps，但很快又不行了。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200815/b81f07f95e4d4b36a9eef8e632b92e34.png" /></p>
+<p style="text-align: left;">而且如此龟速的美国农村宽带并不便宜，还有网友反映，他的侄子在农村使用的是1Mbps的宽带，月费却高达90美元，甚至还有孩子没有网络。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200815/a3ca4262bcac48b391d0abd9a357cbcf.png" /></p>
+<p style="text-align: left;">总之在这个晒Starlink帖子已经沦为了美国农村网民“晒惨”现场，由此就能看出他们是多么期待马斯克的Starlink了。</p>
+<p style="text-align: left;">之后又有另一位内测上传了11组Starlink的测试数据，印证了Snnackss这位网友所言非虚。</p>
+<p>美国官方被打脸 </p>
+<p style="text-align: left;">美国FCC主席起初Ajit Pai并不看好马斯克的Starlink计划，严重怀疑SpaceX能够将网络延时控制在100ms以内。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200815/202522552e0349a19f25bf3faf793545.png" /></p>
+<p><strong>△</strong>FCC主席Ajit Pai </p>
+<p style="text-align: left;">因此他在今年5月曾提议，将SpaceX和其他提供卫星忽略网的运营商定义为 <strong>高延时</strong>。这就意味着，SpaceX、OneWeb这些公司无法享受美国政府提供的160亿美元农村宽带补贴。 </p>
+<p style="text-align: left;">而实际上，尽管Starlink的网络延迟测试没有达到马斯克期望的 <strong>低于20ms</strong>的目标，但已经明显低于FCC要求的100ms阈值。 </p>
+<p style="text-align: left;">SpaceX还告诉FCC，Starlink最终将达到千兆速度，其2016年向FCC提交的申请中表示，“一旦通过最终部署进行了全面优化，该系统将能够提供高带宽（每位用户最高1Gbps），为美国和全球的消费者和企业提供低延迟宽带服务。”</p>
+<p style="text-align: left;">迄今为止，SpaceX已经发射了约600颗卫星，并获得了FCC的许可发射，可以发射近12000颗卫星。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200815/1dc82bc6f9ba49cd99c192d54d97ecca.png" /></p>
+<p style="text-align: left;">由于Starlink部署在近地轨道，无线电波传播的时间更短，从而让网络延迟更短。即便如此，FCC还是不太相信，最终拒绝了SpaceX的农村宽带补贴申请：</p>
+<blockquote>
+<p style="text-align: left;">我们仍然怀疑卫星的轨道高度是卫星申请人满足委员会低延迟性能要求能力的唯一决定因素。……卫星网络中的传播延迟并不能单独解决网络其他部分的延迟问题，例如处理、路由和将流量传输到目的地。</p>
+</blockquote>
+<p style="text-align: left;">我们仍然怀疑卫星的轨道高度是卫星申请人满足委员会低延迟性能要求能力的唯一决定因素。……卫星网络中的传播延迟并不能单独解决网络其他部分的延迟问题，例如处理、路由和将流量传输到目的地。</p>
+<p style="text-align: left;">当初FCC怀疑SpaceX的时候，美国网友就觉得主席在“立flag”。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200815/89b0bf22806f4acebf97fdc2229fefa9.png" /></p>
+<p style="text-align: left;">如今才短短3个月时间，Starlink已经用实际数据打了FCC的脸，真可谓求锤得锤。</p>
+<p>美国网友：狂喜 </p>
+<p style="text-align: left;">对于Starlink目前的测试速度，不少美国网友都表示了自己的惊叹和期待。</p>
+<p style="text-align: left;">有网友表示，这简直就是「村通网」的狂喜。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200815/602cc8ccec22449daa86dd8ed58a64cd.png" /></p>
+<blockquote>
+<p style="text-align: left;">你们这些抱怨的人，都没在农村感受过糟糕的网络体验。这绝对值得惊叹，未来速度也会更好。况且，哪怕是10Mbps的速度，对于许多地方而言已经是神赐了。</p>
+</blockquote>
+<p style="text-align: left;">你们这些抱怨的人，都没在农村感受过糟糕的网络体验。这绝对值得惊叹，未来速度也会更好。况且，哪怕是10Mbps的速度，对于许多地方而言已经是神赐了。</p>
+<p style="text-align: left;">不仅农村，网友表示，以前任何没有服务的地方，未来都能上网 <span>（例如，在撒哈拉发朋友圈）</span>。 </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200815/2aada942eff0487f8fca84c7c89d9e82.png" /></p>
+<blockquote>
+<p style="text-align: left;">60Mbps对于某些没信号、信号巨差的地方来说，已经是很棒的速度了。</p>
+</blockquote>
+<p style="text-align: left;">60Mbps对于某些没信号、信号巨差的地方来说，已经是很棒的速度了。</p>
+<p style="text-align: left;">即使是比较严苛的网友，也用了「不太差」来形容这样的网速。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200815/0644908e83814c869b26362aeeb3ea65.png" /></p>
+<blockquote>
+<p style="text-align: left;">这样的速度不太差，甚至可以说挺有用，虽然也不算快就是了。</p>
+</blockquote>
+<p style="text-align: left;">这样的速度不太差，甚至可以说挺有用，虽然也不算快就是了。</p>
+<p style="text-align: left;">也有理智的网友，在乐观之余表示，肯定还会出现抢网速的情况。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200815/f4cf4dbf2a34481fb73d89712b1757d6.png" /></p>
+<blockquote>
+<p style="text-align: left;">毕竟还没完成嘛，所以速度会更好的。不过另一方面来说，目前用户还很少，将来的话，负载也会变得更高。</p>
+</blockquote>
+<p style="text-align: left;">毕竟还没完成嘛，所以速度会更好的。不过另一方面来说，目前用户还很少，将来的话，负载也会变得更高。</p>
+<p style="text-align: left;">据了解，Starlink的费用基本是每个月80美元，折合成人民币大概560元左右，可以获得每个月10Mbps的网速。</p>
+<p style="text-align: left;">对比一下国内的情况，现在的299元套餐，随随便便就能办个千兆宽带，上网速度最快可以达到125Mbps。</p>
+<p style="text-align: left;">如果光纤上网的话，速度还会更快。</p>
+<p style="text-align: left;">看起来似乎没什么好惊喜的？</p>
+<p style="text-align: left;">不过，此前有统计粗略估计，中国和美国的光纤到户渗透率分别达到90.4%和12.6%……</p>
+<p style="text-align: left;">这么一看，似乎也不难理解美国网友的呼声了。</p>
+<p>马斯克的卫星互联网要成？ </p>
+<p style="text-align: left;">虽然如此，马斯克的Starlink也给天文学家造成了困扰。</p>
+<p style="text-align: left;">早在2019年，马斯克发射第二波60颗卫星的时候，天文学家就表示，马斯克的卫星严重干扰了暗能量相机的曝光。</p>
+<p style="text-align: left;">但这并不阻止马斯克前进的步伐。</p>
+<p style="text-align: left;">对此，马斯克已经在尝试在Starlink上装上「遮光布」，便于相机在后面把这些「鬼影」消除掉。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200815/f41297ad05d8444592b44d54d350b4e1.png" /></p>
+<p style="text-align: left;">此外，SpaceX的Starlink计划，还获得了美国陆军的订单。</p>
+<p style="text-align: left;">据外媒spacenews报道，美国陆军与SpaceX已经签署了协议，计划在军事网络中，测试使用Starlink来传输数据。</p>
+<p style="text-align: left;">这项名为CRADA的协议，允许美国陆军在三年时间内使用Starlink的服务。</p>
+<p style="text-align: left;">在这种情况下，SpaceX如果能「看见」全球的任何一个地方……</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200815/cef08534adc34398a8d3efe0fd5eefaf.png" /></p>
+<p style="text-align: left;">当然，马斯克打造这样的计划，本意也许是好的——</p>
+<p style="text-align: left;">毕竟与军方合作，SpaceX也能在太空卫星方面获得更多的自由与权限，对确保Starlink建设起到至关重要的作用。</p>
+<p style="text-align: left;">而与美国陆军合作，也是马斯克商业化的第一步。</p>
+<p style="text-align: left;">SpaceX在资本市场也取得了巨大的成功。今天SpaceX方面今天传来一则好消息：据知情人士透露，SpaceX即将完成一轮新的20亿美元融资，估值达到了440亿美元。由于需求强劲，SpaceX先前曾扩大过该轮融资的规模。</p>
+<p style="text-align: left;">本月初，SpaceX的“龙飞船”成功带着两名NASA宇航员从国际空间站返回地球，迈出了其载人航天的第一步。</p>
+<p style="text-align: left;">此前还有有传闻，SpaceX有意将Starlink剥离上市，无论是toB的火箭发射，还是toC的卫星互联网，SpaceX今年真可谓“两开花”。</p>
+<p style="text-align: left;">参考链接： </p>
+<p>https://arstechnica.com/information-technology/2020/08/spacex-starlink-beta-tests-show-speeds-up-to-60mbps-latency-as-low-as-31ms/?comments=1 </p>
+<p>https://www.reddit.com/r/Starlink/comments/i84klo/speedtest_21_ms_46_mbps_down_10_mbps_up/g17v5r6/ </p>
+<p>https://www.reddit.com/r/Starlink/comments/i8n1s5/here_is_a_summary_of_the_recently_found_starlink/</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜「版权流氓」终结者：6天时间，堆出687亿段旋律
+http://www.sohu.com/a/413256247_610300	17376
+<p>萧箫 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">世界上 <strong>所有的</strong>音乐，都在这个网站里了。 </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200815/c8e1600f63c34c0b98e1837141926097.png" /></p>
+<p style="text-align: left;">准确地说，是一个八度内，所有 <strong>音符的组合方法</strong>。 </p>
+<p style="text-align: left;">两个程序员Riehl和Rubin，用6天时间，以每秒 <strong>30万段旋律</strong>的速度，暴力生成了 <strong>687亿段旋律</strong>。 </p>
+<p style="text-align: left;">而全球的音乐，2011年之前的也一共才发行过 <strong>7900万首</strong>。 </p>
+<p style="text-align: left;">这个八度内，从此没有新歌。</p>
+<p style="text-align: left;">太暴力，太魔幻了，简直是人类迷惑行为大赏。</p>
+<p>「程序员式」编曲 </p>
+<p style="text-align: left;">不靠灵感或乐理，这两个程序员生成旋律的方式，用的是 <strong>排列算法</strong>。 </p>
+<p style="text-align: left;">以钢琴为例，算法是这样的：</p>
+<p style="text-align: left;">首先，将钢琴上的音符，对应成一个个的数字，例如最中间的“do”对应1，“re”对应2……一直到“si”，共有7个白键音符。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200815/7d785a42600345a5b8dcc1a003fddb59.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">当然，还要加上升调的5个黑键，一共有12个音符，这就相当于一个八度。</p>
+<p style="text-align: left;">接下来，将12个音符放置在12×12的棋盘上，每个音符可以位于那一列的 <strong>任意一个格子中</strong>。 </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200815/97a31037079a4ecd935bd5fbefb36b92.png" /></p>
+<p style="text-align: left;">棋盘的横轴代表音符出场的顺序，纵轴则代表弹奏的音符。</p>
+<p style="text-align: left;">然后，计算机从“do”开始，编写所有的“旋律”：1-1-1-1-1-1-1-1、1-1-1-1-1-1-1-2、1-1-1-1-1-1-1-3、1-1-1-1-1-1-1-4……</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200815/38dabdd3400444649ae1f3eeb68efdf3.gif" /></p>
+<p style="text-align: left;">这样无限继续下去，地球上一个八度内所有旋律的呈现方式就都集齐了。</p>
+<p style="text-align: left;">节奏感？</p>
+<p style="text-align: left;">节拍？</p>
+<p style="text-align: left;">不存在的。</p>
+<p style="text-align: left;">无情的计算机器，只会将所有音符组合的可能性列出来，至于好不好听、有没有可行性，不加判断。</p>
+<p style="text-align: left;">这就导致，有些旋律听起来异常诡异……</p>
+<p style="text-align: left;">但无所谓，目的就一个字，全。</p>
+<p style="text-align: left;">只要生成的旋律足够全，那它就包括了所有的可能性。</p>
+<p style="text-align: left;">为此，他们甚至速成了一门R语言，只因为用它编写的算法跑得比Python快。</p>
+<p style="text-align: left;">是不是想到了庞加莱回归：</p>
+<p style="text-align: left;">如果一只不死的猴子，一直坐在打字机前瞎打，那么它最后一定能敲出一本《莎士比亚》着作。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200815/88d044b0a5dc459a942a2a6c8ca35828.gif" /></p>
+<p style="text-align: left;">但，就算能碰上些好旋律，写歌也不能这么写吧？</p>
+<p style="text-align: left;">他们到底在想什么？</p>
+<p style="text-align: left;">重点来了。</p>
+<p style="text-align: left;">Riehl和Rubin写了个生成MIDI <span>（标准音乐格式）</span>文件的软件，将这687亿段旋律，全部进行了 <strong>无版权</strong>公开。 </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200815/b2d677de905b4cb394397b06f0f1bd40.png" /></p>
+<p style="text-align: left;">这意味着任何人都可以使用这些旋律，而不必担心被提起诉讼。</p>
+<p style="text-align: left;">无论是原创歌曲、还是用来训练AI，「版权流氓」可钻的空子少了大半。</p>
+<p>降维打击「版权流氓」 </p>
+<p style="text-align: left;">版权流氓是什么？</p>
+<p style="text-align: left;">或许你听过Katy Perry的《Dark Horse》被起诉的案件，原告因为自己创作的歌曲与《Dark Horse》有节拍和音乐元素上的相似，向她提起 <strong>抄袭</strong>诉讼。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200815/3d2c898d7cbf4387827977f11f2c31e6.png" /></p>
+<p><strong>△</strong>《Dark Horse》MV </p>
+<p style="text-align: left;">关键是，赔款达 <strong>280万美元</strong>，还可能失去版权。 </p>
+<p style="text-align: left;">即使Katy Perry表示自己从未听过这首歌，原告却表示，自己的作品在油管播放量有300万，所以她一定听过……</p>
+<p style="text-align: left;">虽然Katy Perry最后胜诉，但这也折射出音乐界目前法律版权的乱象：</p>
+<p style="text-align: left;">只要旋律在此之前已经被用过，就可以成为版权申诉的理由。</p>
+<p style="text-align: left;">不可避免的是，没有被用过的旋律正在变得越来越少。</p>
+<p style="text-align: left;">如果100个创作者每秒创作1段新旋律，那么248年，这些旋律就会被用完。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200815/4562a359e4f748d288cd17a68dd9f7a8.png" /></p>
+<p style="text-align: left;">乔治·哈里森曾说过，「99%的流行音乐都会让人觉得似曾相识」。</p>
+<p style="text-align: left;">而Riehl和Rubin认为，旋律其实一直存在，他们只会被「发现」，而非被「创造」。</p>
+<p style="text-align: left;">他们的想法是，现在的法律非但不能很好地保护音乐创作者，可能还会为让创作者陷入无止境的诉讼中。</p>
+<p style="text-align: left;">版权不可怕，可怕的是利用规则漏洞的「版权流氓」。</p>
+<p>只是一种呼吁 </p>
+<p style="text-align: left;">事实上，Riehl和Rubin不仅是程序员，也是音乐创作者。</p>
+<p style="text-align: left;">除此之外，他们中的一个还有法律学历背景。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200815/1f9e3f576f5c4193abaa6c4e0a930e82.png" /></p>
+<p style="text-align: left;">所以，这样的代码，与其说是行为艺术，不如说是一种呼吁，毕竟12个音符生成的所有旋律，远不能代表钢琴上88个音组成的乐曲。</p>
+<p style="text-align: left;">他们希望能用这种方式，让版权问题引起重视，为音乐创作者提供一点自由的空间。</p>
+<p style="text-align: left;">但除此之外，也有人担心，这样的创作环境，是否会随着通用AGI的到来而被彻底取代。</p>
+<p style="text-align: left;">马斯克女友格莱姆斯曾表示，人工智能和算法最终会在10年、20年或30年内取代艺术家： <span>“我们处于人类艺术的尽头。一旦真的有AGI（通用人工智能），它们将比我们更擅长制作艺术……”</span></p>
+<p style="text-align: left;">而用人工智能创作的艺术作品，是「没有版权」的。</p>
+<p style="text-align: left;">那么，这两个程序员用软件生成的这些旋律，究竟会不会受到版权保护，而归属权又会属于谁？</p>
+<p style="text-align: left;">对此，你怎么看？</p>
+<p style="text-align: left;"><strong>传送门</strong></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span>项目链接：</span></span></p>
+<p><span>http://allthemusic.info/</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜特朗普又给TikTok续了90天
+http://www.sohu.com/a/413256442_610300	17376
+<p>金磊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">卖TikTok这部「连续剧」，又更新了。</p>
+<p style="text-align: left;">据路透社消息，特朗普签署最新行政令：</p>
+<blockquote>
+<p style="text-align: left;">要求字节跳动公司，在90天之内出售或剥离该公司在美国的TikTok业务。</p>
+</blockquote>
+<p style="text-align: left;">要求字节跳动公司，在90天之内出售或剥离该公司在美国的TikTok业务。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200815/c0673c691dbe41f6a5744c5d72593656.png" /></p>
+<p>特朗普最新行政令 </p>
+<p style="text-align: left;">特朗普在行政令中表示：</p>
+<blockquote>
+<p style="text-align: left;">有可信的证据让我相信，字节跳动可能会采取威胁到美国国家安全的行为。</p>
+</blockquote>
+<p style="text-align: left;">有可信的证据让我相信，字节跳动可能会采取威胁到美国国家安全的行为。</p>
+<p style="text-align: left;">而早在一周之前，特朗普政府给出的限制时间仅为45天。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200815/1c08d4e54d0548fcb33ed9a765133a00.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">对此，CNBC表示，至少对于一周前的决定，此次的行政令对于字节跳动来说是一件「好事」：</p>
+<blockquote>
+<p style="text-align: left;">新行政令让字节跳动在美国解决 TikTok 的潜在交易问题争取了时间。</p>
+<p style="text-align: left;">根据最新的行政令，字节跳动公司预计将销毁所有美国用户的TikTok数据。</p>
+</blockquote>
+<p style="text-align: left;">新行政令让字节跳动在美国解决 TikTok 的潜在交易问题争取了时间。</p>
+<p style="text-align: left;">根据最新的行政令，字节跳动公司预计将销毁所有美国用户的TikTok数据。</p>
+<p style="text-align: left;">字节跳动方面，此前也做出了相应的声明：</p>
+<blockquote>
+<p style="text-align: left;">美国总统颁发的行政命令没有遵循正当法律程序，对此感到非常震惊。</p>
+</blockquote>
+<p style="text-align: left;">美国总统颁发的行政命令没有遵循正当法律程序，对此感到非常震惊。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200815/08b93f4910134c319f2c476cfa531d90.png" /></p>
+<p style="text-align: left;">声明认为，该项命令开了一个有违表达自由和开放市场的危险先例。</p>
+<p style="text-align: left;">如果美国政府不能给予公正的对待，字节跳动将诉诸美国法院。</p>
+<p style="text-align: left;">外交部此前也在例行记者会中表示：</p>
+<blockquote>
+<p style="text-align: left;">美方在拿不出任何证据的情况下对中国企业做「有罪推定」并发出威胁， 暴露了美方所谓维护公平、自由的虚伪性，违反了世贸组织开放、透明、非歧视原则，不利于美国民众和企业利益。</p>
+</blockquote>
+<p style="text-align: left;">美方在拿不出任何证据的情况下对中国企业做「有罪推定」并发出威胁， 暴露了美方所谓维护公平、自由的虚伪性，违反了世贸组织开放、透明、非歧视原则，不利于美国民众和企业利益。</p>
+<p style="text-align: left;">对于特朗普的这波操作，网友们认为「朝令夕改」、「说改就改」。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200815/4df8250e81e1465b9d0011ca107dc0fc.png" /></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200815/332413d33d9149a29f198db53d1071c8.png" /></p>
+<p style="text-align: left;">那么，对于最新这集的「剧情」，你怎么看？</p>
+<p style="text-align: left;"><span style="font-size: 16px;">参考链接：</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">https://www.reuters.com/article/us-usa-tiktok/trump-orders-bytedance-to-divest-interest-in-us-tiktok-operations-within-90-days-idUSKCN25B00K</span></p>
+<p><span style="font-size: 16px;">https://www.cnbc.com/2020/08/14/president-trump-orders-bytedance-to-divest-from-its-us-tiktok-business-within-90-days.html</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

@@ -1,0 +1,252 @@
+➜调包侠神器2.0发布，Python机器学习模型搭建只需要几行代码
+http://www.sohu.com/a/411047779_610300	16233
+<p>萧箫 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">Python开源机器学习建模库 <strong>PyCaret</strong>，刚刚发布了2.0版本。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200802/69e599b1c0b6450290707b42ee5ce832.png" /></p>
+<p style="text-align: left;">这款堪称「调包侠神器」的模型训练工具包， <strong>几行代码</strong>就能搞定模型编写、改进和微调。 </p>
+<p style="text-align: left;">从数据预处理到模型效果对比，PyCaret都能 <strong>自动实现</strong>。 </p>
+<p style="text-align: left;">所以，PyCaret长啥样，2.0的版本又做了什么改进？</p>
+<p style="text-align: left;">一起来看看。</p>
+<p>机器学习库的「炼丹炉」 </p>
+<p style="text-align: left;">PyCaret说白了，有点像一个机器学习库的 <strong>炼丹炉</strong>。 </p>
+<p style="text-align: left;">以下是它「熔」进来的部分库：</p>
+<blockquote>
+<p style="text-align: left;">数据处理：pandas、numpy… </p>
+<p>数据可视化：matplotlib、seaborn… </p>
+<p>各种模型：sklearn、xgboost、catboost、lightgbm… </p>
+</blockquote>
+<p style="text-align: left;">数据处理：pandas、numpy… </p>
+<p>数据可视化：matplotlib、seaborn… </p>
+<p>各种模型：sklearn、xgboost、catboost、lightgbm… </p>
+<p style="text-align: left;">嗯…sklearn直接就给封装进去了，调用很方便。</p>
+<p style="text-align: left;">然后，PyCaret这个炼丹炉，自带功能“按键” <span>（定义了一些函数）</span>，包括数据预处理、模型训练、模型集成、模型分析、模型测试等。 </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">只需要写上几行Python代码，这些功能“按键”就会被按下，PyCaret自动帮你实现。</p>
+<p style="text-align: left;">至于实现过程中需要调用什么基本库，那些 <span>可以放弃思考</span>不需要考虑。 </p>
+<p style="text-align: left;">从下图来看，仅仅是 <strong>预处理阶段</strong>，就包含样本划分、数据预处理、缺失值处理、归一化、独热编码等功能。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200802/d1a1efa679f94ef29c94e2f3ed87109f.png" /></p>
+<p style="text-align: left;">如果要实现必需的预处理功能，需要多少行代码来调用？</p>
+<p style="text-align: left;">答案是 <strong>0行</strong>。 </p>
+<p style="text-align: left;">因为，当使用setup进行初始化时，PyCaret将 <strong>自动执行</strong>机器学习必需的数据预处理步骤，包括缺失值插入、分类变量编码、标签编码、数据集拆分等。 </p>
+<p style="text-align: left;">例如，在数据处理前，你发现数据集有空缺的地方 <span>（下图中NaN部分）</span>。 </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200802/764cf65bef2d4a4f85e870a8a467b71f.png" /></p>
+<p style="text-align: left;">别怕，PyCaret会自动分析数据，进行缺失值插入。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200802/3aed6f3a21e144d4bc0d7b6a4edb5df0.png" /></p>
+<p style="text-align: left;">预处理后，PyCaret还贴心地帮你准备了各种模型。</p>
+<p style="text-align: left;">从模型训练、选用到测试，只有你想不到的，没有它做不了的。</p>
+<p style="text-align: left;">如果已经将数据处理好，并交给PyCaret，一个 <strong>compare_models</strong>函数就能 <strong>训练库中的所有模型</strong>，进行结果比较后，标出最佳模型。 </p>
+<p style="text-align: left;">如下图，各种模型指标的最优值会被一键标黄，就看你怎么选择了。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200802/011e8b4ce8664b708340e0c0df79fad0.png" /></p>
+<p style="text-align: left;">选好后，想对模型进行一点优化？一个 <strong>tune_model</strong>函数就能帮你搞定。 </p>
+<p style="text-align: left;">或者，不想仅仅选用一个模型？</p>
+<p style="text-align: left;">PyCaret也准备了 <strong>模型集成</strong>的函数，blend和stack任你选。 </p>
+<p style="text-align: left;">除此之外，模型参数的分析 <span>（包括可视化）</span>也只需要几行代码就能实现，功能非常强大。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200802/f95fc6c1e7fa4c0490733774cdb3c229.gif" /></p>
+<p style="text-align: left;">最后，PyCaret还能为新数据提供迭代 <strong>预测结果</strong>，下面的效果，同样只需要几行代码就能完成。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200802/8c4bce814d3e48ee96d781bb930639ee.png" /></p>
+<p style="text-align: left;">那么，这次PyCaret增强，进行了什么改进呢？ <span>（项目见传送门）</span></p>
+<p>PyCaret 2.0增强版 </p>
+<p style="text-align: left;">这是PyCaret 2.0的6大特色，有些在1.0就有了，有些功能如 <strong>实验日志</strong>，看起来是更新后新加入的功能。 </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200802/48cfcc3f9131410ead14ef7d2dd4bdaa.png" /></p>
+<p style="text-align: left;">实验日志，对于模型的调整不可或缺。</p>
+<p style="text-align: left;">例如，想要将训练过程中模型的精度变化 <strong>可视化</strong>，通常我们会在模型中加入生成日志文件的函数，生成一个更直观的时间-精度变化图。 </p>
+<p style="text-align: left;">PyCaret 2.0加入了实验日志的功能，自动帮你跟踪模型实验过程中的各项指标，以及生成视觉效果等。</p>
+<p style="text-align: left;">不仅如此，在2.0中，模型生成到预测的所有工作流程，现在可以被设计了。</p>
+<p style="text-align: left;">也就是说，你可以设置一条自定义「流水线」，在这个过程中，从训练到测试，所有模块的功能都会被自动化完成。</p>
+<p style="text-align: left;">甚至，PyCaret 2.0还提供了机器学习模型前端软件的搭建工具。</p>
+<p style="text-align: left;">以及，PyCaret 2.0现在几乎支持所有算法的并行处理，xgboost和catboost模型也支持GPU训练。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200802/2a33b2db0aa34a02ae2a54a84cff8c33.png" /></p>
+<p style="text-align: left;">除此之外，还有一些新的程序功能，等待你去发现。</p>
+<p style="text-align: left;"><strong>传送门</strong></p>
+<p style="text-align: left;"><span>项目地址：</span></p>
+<p><span>https://github.com/pycaret/pycaret/releases/tag/2.0</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>报名 |「隐私计算+AI」技术直播</strong></p>
+<p>不了解任何隐私AI技术的情况下，开发者怎样做到只改动两三行代码，就将现有AI代码转换为具备数据隐私保护功能的程序？</p>
+<p>8月6号， <strong><span>中科院软件研究所博士、矩阵元算法科学家--谢翔</span></strong>将直播解析，加小助手“qbitbot9”或者直接扫码，即可进入直播交流群： </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜火爆全球的GPT-3，到底凭什么砸大家饭碗？
+http://www.sohu.com/a/411048042_610300	16233
+<p>边策 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">GPT-3是指第三代生成式预训练Transformer，它由旧金山AI公司OpenAI开发。该程序历经数年的发展，最近在AI文本生成领域内掀起了一波的创新浪潮。</p>
+<p style="text-align: left;">从许多方面来看，这些进步与自2012年以来AI图像处理的飞跃相似。</p>
+<p style="text-align: left;">与所有深度学习系统一样，GPT-3也是数据模式。它在庞大的文本集上进行了训练，并根据统计规律进行了挖掘。</p>
+<p style="text-align: left;">重要的是，此过程中无需人工干预，程序在没有任何指导的情况下查找，然后将其用于完成文本提示。</p>
+<p style="text-align: left;"><img src="http://p8.itc.cn/q_70/images03/20200802/15cf31f543db4217b3ce91072d5aea5f.png" /></p>
+<p>海量训练数据 </p>
+<p style="text-align: left;">GPT-3的与众不同之处在于它的运行规模和完成一系列令人难以置信的任务。</p>
+<p style="text-align: left;">第一版GPT于2018年发布，包含1.17亿个参数。2019年发布的GPT-2包含15亿个参数。</p>
+<p style="text-align: left;"><img src="http://p3.itc.cn/q_70/images03/20200802/62c4dcc89774480390be5356d4d46728.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">相比之下，GPT-3拥有1750亿个参数，比其前身多100倍，比之前最大的同类NLP模型要多10倍。</p>
+<p style="text-align: left;">GPT-3的训练数据集也十分庞大。 <strong>整个英语维基百科（约600万个词条）仅占其训练数据的0.6％。</strong></p>
+<p style="text-align: left;">训练数据的其他部分来自数字化书籍和各种网页链接。不仅包括新闻文章、食谱和诗歌之类的内容，还包括程序代码、科幻小说、宗教预言等各种你可以想象到的任何文字。</p>
+<p style="text-align: left;">上传到互联网的文本类型都可能成为其训练数据，其中还包括不良内容。比如伪科学、阴谋论、种族主义等等。这些内容也会投喂给AI。</p>
+<p style="text-align: left;">这种不可置信的深度和复杂性使输出也具有复杂性，从而让GPT-3成为一种非常灵活的工具。</p>
+<p style="text-align: left;">在过去的几周中，OpenAI通过向AI社区的成员提供GPT-3商业API，鼓励了这些实验。这导致大量新的用法出现。</p>
+<p style="text-align: left;">下面是人们使用GPT-3创建的一小部分示例：</p>
+<p>GPT-3能做什么 </p>
+<p style="text-align: left;">1、 <strong>基于问题的搜索引擎</strong>：就像Google，键入问题，GPT-3会将定向到相关的维基百科URL作为答案。 </p>
+<p style="text-align: left;">2、 <strong>与历史人物交谈的聊天机器人</strong>：由于GPT-3接受过许多数字化书籍的训练，因此它吸收了大量与特定哲学家相关的知识。这意味着你可以启动GPT-3，使其像哲学家罗素一样讲话。 </p>
+<p style="text-align: left;"><img src="http://p5.itc.cn/q_70/images03/20200802/3e75e0f93fac4465bbeca9ce45fcb188.gif" /></p>
+<p style="text-align: left;">3、仅需几个样本，即可解决语言和语法难题。</p>
+<p style="text-align: left;">4、 <strong>基于文本描述的代码生成</strong>：用简单的文字描述你选择的设计元素或页面布局，GPT-3会弹出相关代码。 </p>
+<p style="text-align: left;">5、 <strong>回答医疗问题</strong>：来自英国的一名医学生使用GPT-3回答了医疗保健问题。该程序不仅给出了正确答案，还正确解释了潜在的生物学机制。 </p>
+<p style="text-align: left;">6、基于文本的探险游戏。</p>
+<p style="text-align: left;">7、 <strong>文本的风格迁移</strong>：以某种格式编写的输入文本，GPT-3可以将其更改为另一种格式。 </p>
+<p style="text-align: left;">8、 <strong>编写吉他曲谱</strong>：这意味着GPT-3可以自行生成音乐。 </p>
+<p style="text-align: left;">9、写创意小说。</p>
+<p style="text-align: left;">10、 <strong>自动完成图像</strong>：这项工作是由GPT-2和OpenAI团队完成的。它表明可以在像素而不是单词上训练相同的基本GPT体系结构，从而使其可以像在文字上一样实现视觉数据自动完成任务。 </p>
+<p style="text-align: left;"><img src="http://p5.itc.cn/q_70/images03/20200802/5ce4cfea194240878ea1bef374829f49.gif" /></p>
+<p style="text-align: left;">但是，所有这些样本都需要一些上下文，以便更好地理解它们。而令人印象深刻的是，GPT-3没有接受过完成任何特定任务的训练。 </p>
+<p style="text-align: left;">常见的语言模型（包括GPT-2）需要完成基础训练，然后再微调以执行特定任务。</p>
+<p style="text-align: left;">但是GPT-3不需要微调。在语法难题中，它只需要一些所需输出类型的样本（称为“少量学习”）。</p>
+<p style="text-align: left;">GPT-3是如此庞大，以至于所有这些不同功能都可以在其中实现。用户只需要输入正确的提示就可以调教好它。</p>
+<p style="text-align: left;">但是网上传出的内容存在另一个问题：这些都是精心挑选的样本，生成结果肯定不止一个。必然有炒作因素。</p>
+<p style="text-align: left;">正如AI研究人员Delip Rao在一篇针对GPT-3的炒作解构文章中指出的那样，该软件的许多早期演示来自硅谷企业家，他们渴望宣传该技术的潜力并忽略其陷阱，因为他们关注AI带来的新创业公司。</p>
+<p style="text-align: left;">的确，疯狂的鼓吹情绪变得如此强烈，以至于OpenAI CEO本人都发Twitter说：GPT-3被过度宣传了。</p>
+<p style="text-align: left;"><img src="http://p1.itc.cn/q_70/images03/20200802/10e4a32777164eabbc67f3b0eb73d62b.png" /></p>
+<p>GPT-3也会犯低级错误 </p>
+<p style="text-align: left;">尽管GPT-3可以编写代码，但我们很难判断其总体用途。它是凌乱的代码吗，这样的代码会为人类开发人员带来更多问题吗？</p>
+<p style="text-align: left;">没有详细的测试很难说，但是我们知道GPT-3在其他方面会犯严重错误。</p>
+<p style="text-align: left;">当用户和GPT-3创造的“乔布斯”交谈时，询问他现在何处，这个“乔布斯”回答：“我在加州库比蒂诺的苹果总部内。”这是一个连贯的答案，但很难说是一个值得信赖的答案。</p>
+<p style="text-align: left;">在回答琐事问题或基本数学问题时，也可以看到GPT-3犯了类似的错误。例如，不能正确回答100万前的数是多少（回答是99万）。</p>
+<p style="text-align: left;">但是，我们很难权衡这些错误的重要性和普遍性。</p>
+<p style="text-align: left;">如何判断这个可以几乎回答所有问题的程序的准确性？如何创建GPT-3的“知识”的系统地图，然后如何对其进行标记？</p>
+<p style="text-align: left;">尽管GPT-3经常会产生错误，但更加艰巨的挑战是，通常可以通过微调所输入的文本来解决这些问题。</p>
+<p style="text-align: left;">用GPT-3创造出小说的研究人员Branwen指出，“抽样可以证明知识的存在，但不能证明知识的缺失”，可以通过微调提示来修复GPT-3输出中的许多错误。</p>
+<p style="text-align: left;">在一个错误的示范中，询问GPT-3：“哪个更重，一个烤面包机或一支铅笔？” 它回答说：“铅笔比烤面包机重。”</p>
+<p style="text-align: left;">但是Branwen指出，如果你在问这个问题之前给机器投喂某些提示，告诉它水壶比猫重，海洋比尘土重，它会给出正确的响应。</p>
+<p style="text-align: left;">这可能是一个棘手的过程，但是它表明GPT-3可以拥有正确的答案，如果你知道怎么调教它。</p>
+<p style="text-align: left;">Branwen认为，这种微调最终可能会最终成为一种编码范例。就像编程语言使用专用语法的编码更加流畅一样，未来我们可能完全放弃这些编程语言，而仅使用自然语言编程。从业人员可以通过思考程序的弱点并相应地调整提示，来从程序中得出正确的响应。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200802/4f2b609a400c42b1aa1656c9ab998d42.png" /></p>
+<p style="text-align: left;">GPT-3的错误引起了另一个问题：该程序不可信的性质是否会破坏其整体实用性？</p>
+<p>专业人士评价 </p>
+<p style="text-align: left;">一位匿名的在Google资深AI研究人员说，他们认为GPT-3仅能自动完成一些琐碎任务，较小、更便宜的AI程序也可以做到，而且程序的绝对不可靠性最终会破坏其商用。</p>
+<p style="text-align: left;">这位研究人员指出，如果没有很多复杂的工程调试，GPT-3还不够真正使用。</p>
+<p style="text-align: left;">AI研究人员Julian Togelius说：“ GPT-3的表现常常像是一个聪明的学生，没有读完书，试图通过废话，比如一些众所周知的事实和一些直率的谎言交织在一起，让它看起来像是一种流畅的叙述。”</p>
+<p style="text-align: left;">另一个严重的问题是GPT-3的输出存在偏见。英伟达的AI专家Anima Anandkumar教授指出，GPT-3在部分程度上接受了Reddit过滤后的数据的训练，并且根据此数据构建的模型产生的文本有“令人震惊地偏向性”。</p>
+<p style="text-align: left;">在GPT-2的输出中，如果要求完成下列句子时，模型会产生各种歧视性言论：“ 黑人（皮条客工作了15年）”、“ 那个女人（以Hariya为名做妓女）”。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>报名 |「隐私计算+AI」技术直播</strong></p>
+<p>不了解任何隐私AI技术的情况下，开发者怎样做到只改动两三行代码，就将现有AI代码转换为具备数据隐私保护功能的程序？</p>
+<p>8月6号， <strong><span>中科院软件研究所博士、矩阵元算法科学家--谢翔</span></strong>将直播解析，加小助手“qbitbot9”或者直接扫码，即可进入直播交流群： </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜如何打造全场景智慧生活？头部企业齐聚，共谈智能产业新机会 | 量子位私享会
+http://www.sohu.com/a/411054201_610300	16233
+<p>位来 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200802/1f62e613ef104c4f812136f83d236afd.png" /></p>
+<p style="text-align: left;">7月29日， <strong></strong>量子位携手峰瑞资本、中关村壹号共同举办了 <strong>「AI赋能，重塑未来生活方式」闭门私享会</strong>。 </p>
+<p style="text-align: left;">会议邀请了中关村壹号、峰瑞资本、石头科技、网易有道、思必驰、九号机器人、视感科技、声智科技、明日汇、龙猫数据等不同领域企业高管参会，从不同视角带来了精彩的主题分享。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200802/8b0584d54562471fa90ff9511886cdb1.png" /></p>
+<p style="text-align: left;"><strong>中关村壹号</strong>运营公司—北京实创亿达科技服务有限公司总经理 <strong>官兰兰</strong>分享了中关村壹号的科技园区建设经验。园区以“硬科技”为主导产业方向，重点关注人工智能、商业航天、金融科技等领域，为入驻企业提供系列产业服务，具备完善的商业配套。 </p>
+<p style="text-align: left;">壹号打造了智慧化楼宇管理、门禁、交通、安防等“ <strong>智慧园区</strong>”创新场景，本次私享会上，官兰兰与参会嘉宾探讨了智慧园区的建设方案，未来将进一步打造一体化智慧园区系统。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200802/78ea5986b41b400c889bd4f93dcc9f3b.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;"><strong>峰瑞资本</strong>合伙人 <strong>杨永成</strong>主导投资领域为深科技方向。他认为，IoT的发展是“润物细无声”的结果，万物互联一点一滴影响着我们的生活。而AI则是“知否知否，应是红肥绿瘦”，AI公司逐渐产生两级分化，有落地场景的公司快速发展，否则会面临落地与发展的困难。AI与IoT技术相结合极大地改变了人们的生活， <strong>投资美好生活等于投资美好回报</strong>，这也是峰瑞资本的投资理念之一。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200802/c67f5cc4a00a486da54fe8eacc33cf4a.png" /></p>
+<p style="text-align: left;"><strong>石头科技</strong>中国区VP <strong>程飞</strong>剖析了石头科技在的AI领域的探索，通过认知智能化和场景智能化赋能扫地机器人。今年推出的T7 Pro探索版，是全球首款搭载AI双目视觉的扫地机器人，真正做到 <strong>用创新简化生活</strong>。 </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200802/a695093fe1664122a7ae15d3cda4c52e.png" /></p>
+<p style="text-align: left;"><strong>网易有道</strong>智云业务负责人 <strong>李旭</strong>在分享中分析了教育智慧化现状以及智慧教育产品的市场痛点，并介绍了网易有道在教育领域的探索和实践。网易有道智云推出的有道智能学习终端，旨在实现 <strong>学业大数据的智能化管理</strong>，现已在成都、广州、西安、南京、杭州、合肥等当地学校落地。 </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200802/28db583447884d1cae93da792214f9eb.png" /></p>
+<p style="text-align: left;"><strong>思必驰</strong>基于“云+芯”一体中心战略打造未来AI生态、为合作伙伴提供全渠道、全链路的对话式AI技术服务。思必驰CMO <strong>龙梦竹</strong>分享了思必驰在智能车+家、硬件物联网到疫情防控、智慧城市等场景的发展与探索，并与参会嘉宾探讨了后疫情时代下 <strong>对话式AI的新机会</strong>。 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200802/43d10d83ad664108b238cb592fd21c8c.png" /></p>
+<p style="text-align: left;"><strong>九号机器人</strong>机器人技术负责人 <strong>陈子冲</strong>在现场向大家展示了配送机器人、滑板车等产品的应用场景，并分析了复杂场景中移动机器人应具备的竞争力四要素。机器人需做到长时间段无故障、无人工介入的 <strong>可靠性</strong>，准确交互的 <strong>人机协同</strong>能力，提升生产力、覆盖成本的 <strong>生产力价值</strong>，自主学习和进化的 <strong>数据智能</strong>能力，以形成独特的产品竞争力。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200802/446b72df495046fb9eb9762b64d620c9.png" /></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200802/fa1e946c53574f4098255d0db77e9af6.png" /></p>
+<p style="text-align: left;"><strong>声智科技</strong>联合创始人、CTO <strong>冯大航</strong>分享了声智推出的多项深度结合应用场景的产品和行业解决方案，如智慧园区、全屋智能、智能耳机等。目前声智科技已入驻中关村壹号园区，为园区提供的无接触式电梯交互方案为园区防疫提供了保障，真正实现了“ <strong>用科技改善生活</strong>”。 </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200802/dda7e5109e7240f9b0c13c2a3bd8cffb.png" /></p>
+<p style="text-align: left;"><strong>明日汇</strong>说一家通过大数据、人工智能、云计算等技术应用，助力传统酒店数字化转型和升级的服务商。创始人、CEO <strong>占戈</strong>介绍了其酒店智能化升级方案，根据客户个性化特征，拓展酒店业务空间，形成多样化盈利模式，助力酒店打造成生态化的住宿场景。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200802/ef03e4cae0b042bbaf96fc1f97b35d97.png" /></p>
+<p style="text-align: left;"><strong>龙猫数据</strong>专注人工智能领域数据采集、数据标注服务，为企业提供专业数据综合解决方案。业务总监 <strong>杨迎春</strong>介绍了龙猫数据在计算机视觉、自动驾驶、语音语义等领域的数据采集和标注优势。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200802/7babf06f21d243808a80e916ef8f2179.png" /></p>
+<p style="text-align: left;">在其后的议题讨论环节， <strong>量子位</strong>联合创始人 <strong>陈飞</strong>与各位参会嘉宾围绕智慧园区、智慧生活相关的多个话题展开了深度交流和探讨。 </p>
+<p style="text-align: left;">此次私享会定位于智慧生活主题，邀请了相关领域头部企业的高管，以闭门的方式大大促进了深度的交流以及行业合作。未来私享会也将围绕更多 <strong>AI+行业</strong><strong>主题</strong>展开线下讨论，促进行业头部企业产生更多交流和碰撞，推动行业的发展及合作。 <span style="font-size: 16px;"></span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜TikTok卖身都不行了？特朗普明确表态封杀，微软暂停收购洽谈
+http://www.sohu.com/a/411063422_610300	16233
+<p>允中 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">在特朗普的影响下，抖音海外版TikTok卖身事宜又有了新的变数。</p>
+<p style="text-align: left;">上回说到，多家外媒报道，特朗普要求字节跳动放弃对TikTok的所有权，字节跳动已经同意白宫的要求，并在积极为TikTok寻找出路（卖身），微软是TikTok的买家，双方正在洽谈收购事宜。</p>
+<p style="text-align: left;">华尔街日报援引知情人士透露，此番交易将在 <strong>周一</strong>进行，字节跳动、白宫和微软的代表都将出席。 </p>
+<p style="text-align: left;"><img src="http://p8.itc.cn/q_70/images03/20200802/6e6c00a04d7d4c94a2ec5ca4c0ca21a7.jpeg" /></p>
+<p style="text-align: left;">但现在，事情又有了变化。</p>
+<p style="text-align: left;">周五晚上，特朗普再次透出消息，他很快会签署行政命令，在美国封杀TikTok业务。</p>
+<p style="text-align: left;">他还进一步强调，自己不支持美国公司收购TikTok美国业务。</p>
+<p style="text-align: left;">因为特朗普的表态，字节跳动和微软的谈判已经暂停，等待美国白宫进一步明确立场。</p>
+<p style="text-align: left;">多数人心里已经有了不好的预感：等待TikTok的，可能不是一个好的结果。</p>
+<p>特朗普口风多变，字节跳动“自救”收效甚微 </p>
+<p style="text-align: left;">从去年开始，美国就开始了针对TikTok的围剿行动。</p>
+<p style="text-align: left;">先兆是有些美国共和党国会议员，呼吁考虑TikTok带来的国家安全风险。他们认为，中国可能会通过TikTok获取美国用户的资料。</p>
+<p style="text-align: left;">到去年年底，力度开始加大。</p>
+<p style="text-align: left;">一方面是美国五角大楼要求军方人员，删除TikTok应用。另一方面是美国外国投资委员会开始对TikTok展开调查。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">到今年6月，特朗普政府对TikTok的敌意已经不再抑制。美国国务卿蓬皮奥公开表示，正在考虑封杀TikTok。</p>
+<p style="text-align: left;">美国国会也通过法案，要求政府职员不得在工作手机上安装TikTok。</p>
+<p style="text-align: left;">在此两周前，特朗普就曾放话，正加紧研究是否要正式禁用海外版抖音TikTok。</p>
+<p style="text-align: left;"><img src="http://p3.itc.cn/q_70/images03/20200802/a5d8ae38c63b466c8b1a16564f6bf67a.jpeg" /></p>
+<p style="text-align: left;">上周三，特朗普在接受媒体采访时给出表态：正在研究TikTok，可能会封禁，但还在寻求其他的替代方案。</p>
+<p style="text-align: left;">在这个过程中，字节跳动及TikTok方面也一直没有坐以待毙。</p>
+<p style="text-align: left;">一方面，他们将TikTok与中国业务分离，还聘请了美国迪士尼高管Kevin Mayer担任首席执行官，并招募一支35人以上的游说大军。</p>
+<p style="text-align: left;"><img src="http://p5.itc.cn/q_70/images03/20200802/b73cfc068bc04fa2bb2d9a98b3af6c90.png" /></p>
+<p style="text-align: left;">可这些行动，并没有怎么影响美国当局对TikTok的立场。</p>
+<p style="text-align: left;">另一方面，他们也在探索特朗普口中的“其他的替代方案”，对于美国投资者或者微软的收购保持开放态度。</p>
+<p style="text-align: left;">到了现在，一切又陷入了未知数，等待数百亿美元估值的TikTok，可能被彻底封杀的局面。</p>
+<p style="text-align: left;">根据新浪科技报道，由于总统表态支持彻底封杀，TikTok一些明星博主今天早上已经开始向粉丝伤感告别，并转移到Instagram等其他社交平台。</p>
+<p style="text-align: left;">字节跳动也给出回应称：公司不对谣言或猜测发表评论。</p>
+<p style="text-align: left;">但TikTok仍在自救，表态不会离开美国，持续进行投资，未来三年在美国创造1万个工作岗位。</p>
+<p style="text-align: left;">这能否影响白宫以及特朗普的态度，现在还是个未知数。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>报名 |「隐私计算+AI」技术直播</strong></p>
+<p>不了解任何隐私AI技术的情况下，开发者怎样做到只改动两三行代码，就将现有AI代码转换为具备数据隐私保护功能的程序？</p>
+<p>8月6号， <strong><span>中科院软件研究所博士、矩阵元算法科学家--谢翔</span></strong>将直播解析，加小助手“qbitbot9”或者直接扫码，即可进入直播交流群： </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

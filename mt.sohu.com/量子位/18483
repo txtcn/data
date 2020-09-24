@@ -1,0 +1,123 @@
+➜GAN版马里奥创作家来了：一个样本即可训练，生成关卡要素丰富 | 开源
+http://www.sohu.com/a/412219168_610300	15063
+<p>鱼羊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">对超级马里奥的关卡太熟悉，想玩点刺激的？</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200809/ac8c957a8f0d463da1644a07ed7c0bcb.gif" /></p>
+<p style="text-align: left;">现在，汉诺威大学的研究人员推出了一个新的GAN，能够生成船新、可玩的超级马里奥关卡。</p>
+<p style="text-align: left;">画风完美统一，难点出其不意： <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p4.itc.cn/q_70/images03/20200809/af3ed10810eb47d583fb31306c51f451.png" /></p>
+<p style="text-align: left;">并且，仅需要一个示例，就可以进行训练。</p>
+<p style="text-align: left;">比起我这样的马里奥乱造家，看上去有逻辑多了。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p4.itc.cn/q_70/images03/20200809/dc138b65933c4d17a2b2bd488434b3c0.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">并且，他们已经把代码开源啦。</p>
+<p>GAN版马里奥创作家 </p>
+<p style="text-align: left;">在《超级马里奥制造2》这款游戏里，玩家可以组合不同的关卡零件，凭借自己的灵感创作超级马里奥关卡。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p9.itc.cn/q_70/images03/20200809/2ea4f2f285144d7da9d871610b8d1df9.png" /></p>
+<p style="text-align: left;">事实上，这只名为 <strong>TOAD-GAN</strong>的AI生成关卡的逻辑也与之类似。 </p>
+<p style="text-align: left;">TOAD-GAN是基于SinGAN架构的扩展，能够生成基于token的超级马里奥关卡。</p>
+<p style="text-align: left;">所谓token长这样： <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p9.itc.cn/q_70/images03/20200809/18e8deac578d4ebc874a8b20cb707e0c.png" /></p>
+<p style="text-align: left;">通过使用级联的生成器和判别器，SinGAN可以仅凭单一图像，训练生成模型。</p>
+<p style="text-align: left;">基于这个架构，在训练中，一个关卡被采样为N个不同的尺寸。</p>
+<p style="text-align: left;">N的选择标准，是生成器和判别器中卷积滤波器的感受野能够覆盖最小尺寸下关卡高度的至少一半。</p>
+<p style="text-align: left;">这样一来，既可以确保关卡中较大的结构被正确建模，也能保障其全局位置的变化。</p>
+<p style="text-align: left;">在空间下采样的过程中，一些小但重要的结构可能会丢失。为此，研究人员提出了一种保留重要token的下采样方法。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p9.itc.cn/q_70/images03/20200809/19b344c449874452b1b7e4d7393f5bca.png" /></p>
+<p style="text-align: left;">具体步骤如下：</p>
+<p style="text-align: left;">首先，在单样本编码的训练关卡上，使用双线性下采样来创建所选尺寸的基础关卡。</p>
+<p style="text-align: left;">针对每个尺寸中的每个像素，选择值大于0的token。并从该列表中，保留层次结构中等级最高的token，将其余token设置为0。</p>
+<p style="text-align: left;">然后，在每个像素的所有通道上应用Softmax。</p>
+<p style="text-align: left;">接着，还需要对较小尺寸的输出进行双线性上采样。</p>
+<p style="text-align: left;">这样，TOAD-GAN就可以通过将预定义输入注入到生成器级联中，来执行关卡编写。</p>
+<p style="text-align: left;">研究人员表示，这种应用对于程序内容生成而言十分有趣，因为给定token，设计者只需指定参考关卡或布局，生成器就会自动创建其变体， <strong>对数据量的要求并不高</strong>。 </p>
+<p>实验结果 </p>
+<p style="text-align: left;">研究人员对TOAD-GAN生成的结果进行了定性对比。</p>
+<p style="text-align: left;">可以看出，与超级马里奥的原生关卡相比，TOAD-GAN生成的关卡在保留了风格的基础上，产生了不同的元素组合方式。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p2.itc.cn/q_70/images03/20200809/b68cb112298a4e1e8db6305e165a6e41.png" /></p>
+<p style="text-align: left;">与此前的其他方法不同的是，TOAD-GAN是一个生成器对应一个关卡。这也就避免了不同类型的关卡风格被混合到一起，造成混乱。</p>
+<p style="text-align: left;">并且，也不会因为依赖于小样本的问题，而导致(p)中出现的重复情况。</p>
+<p style="text-align: left;">所以，TOAD-GAN生产成本的游戏关卡在视觉效果上，更加令人信服。</p>
+<p style="text-align: left;">研究人员还用Baumgarten等人提出的马里奥通关AI，验证了生成关卡的有效性。通关AI能在65%的随机生成关卡中取胜。在原生关卡中，其胜率是52%。</p>
+<p>不只是超级马里奥 </p>
+<p style="text-align: left;">其实，不只是超级马里奥，研究人员也通过实验证明，TOAD-GAN可以生成任何基于token的游戏的关卡，比如超级马里奥赛车。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p6.itc.cn/q_70/images03/20200809/33e83f095a004953abb39f1ea4c6b134.png" /></p>
+<p style="text-align: left;">TOAD-GAN只用原生赛道样本进行训练。</p>
+<p style="text-align: left;">对布局进行种子化处理，就可以保证赛车轨道的连接性和可玩性，还能让轨道结构与原始样本产生明显的不同。</p>
+<p style="text-align: left;">研究人员还表示，下一步他们还会将游戏机制揉进生成过程中，并将TOAD-GAN应用于Minecraft这样的像素游戏，或具有非线性关卡结构的迷宫游戏。</p>
+<p>传送门 </p>
+<p style="text-align: left;">论文地址： </p>
+<p>https://arxiv.org/abs/2008.01531 </p>
+<p style="text-align: left;">GitHub项目地址： </p>
+<p>https://github.com/Mawiszus/TOAD-GAN </p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜用50张图训练，就能识别高仿山寨货！阿里安全图灵实验室获ECCV 2020挑战赛冠军
+http://www.sohu.com/a/412219246_610300	15063
+<p>贾浩楠 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">阿里AI最近拿到了一个“世界第一”：计算机视觉领域顶会 <strong>ECCV 2020 VIPriors挑战赛</strong>分类赛道冠军。 </p>
+<p>训练数据50张图，堪称最难分类算法挑战 </p>
+<p style="text-align: left;">ECCV 2020 VIPriors挑战赛最困难的一点，是1000个数据类别中， <strong>每个类别仅有50张图片作为训练数据</strong>。 </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200809/c24e6dcaf1454dcd98742997c0562b3d.png" /></p>
+<p style="text-align: left;">这样的难度，对于传统的AI模型来讲，几乎是不可能的任务。因为它们普遍需要海量带标签训练数据作为基石，才能保证AI模型的效果。</p>
+<p style="text-align: left;">但是数据的收集和标注需要昂贵的人力成本，需要从不同的角度、光照条件和位置拍摄、收集几千甚至上万张图片并进行标注。</p>
+<p><img height="335px" width="471px" src="http://p2.itc.cn/q_70/images03/20200809/d738e8e9c6cb4f08bcc5fde962b3f9b7.png" /></p>
+<p style="text-align: left;">ECCV 2020 VIPriors挑战赛的初衷，就是鼓励探索能够高效学习的AI神经网络，降低神经网络训练过程中的人力标注成本和计算资源消耗，使用极少的训练数据， <strong>一块GPU也可以完成</strong>。 </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">在分类赛道上，比赛数据基于ImageNet抽取，1000个类别，每个类别仅使用50张图像，训练集共5w张图片，规模仅为Imagenet的1/26。</p>
+<p style="text-align: left;">比赛规定模型只能train from scratch，不能使用额外的训练数据，不能使用预训练模型，不能使用迁移学习，排名以测试集上的Top-1 Accuracy为准。</p>
+<p>戴口罩识别+AI零售打假 </p>
+<p style="text-align: left;">在比赛中，面对50张训练图片的苛刻要求，阿里安全图灵实验室的智能算法团队从三个技术方向进行了突破：</p>
+<blockquote>
+<p style="text-align: left;">利用随机抽取的两张训练图像，使用数据增强并进行拼接，最大程度丰富训练样本资源；</p>
+<p style="text-align: left;">设计独特的神经网络结构，加入显着性特征模块挖掘样本的特点，提升分类性能；</p>
+<p style="text-align: left;">利用分层语义结构，让AI模型更好地挖掘数据，实现更好的学习效果。</p>
+</blockquote>
+<p style="text-align: left;">利用随机抽取的两张训练图像，使用数据增强并进行拼接，最大程度丰富训练样本资源；</p>
+<p style="text-align: left;">设计独特的神经网络结构，加入显着性特征模块挖掘样本的特点，提升分类性能；</p>
+<p style="text-align: left;">利用分层语义结构，让AI模型更好地挖掘数据，实现更好的学习效果。</p>
+<p style="text-align: left;">获得了冠军，这项高效AI方案有什么实际应用呢？</p>
+<p style="text-align: left;">阿里安全图灵实验室资深算法专家薛晖介绍，疫情期间，突发口罩佩戴问题使得大量人脸门禁失效，很多小区需要摘下口罩刷脸，带来不必要的健康风险。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200809/091b553dd5e6466f9a0f556c09feab69.png" /></p>
+<p style="text-align: left;">对于零售场景，无论是线上还是线下，对于刚刚上新的某种产品，往往是样本数量较少，预训练任务和目标任务存在差异，预训练模型可能损害目标任务的准确率。而高效AI方案恰恰能够解决上述问题。</p>
+<p style="text-align: left;">以某知名品牌运动鞋上新为例，一段时间内仅能获得该产品不同的配色以及商品几个不同角度的图片。</p>
+<p><img height="auto" width="auto" src="http://p4.itc.cn/q_70/images03/20200809/159ff87b2f2844b791a602d21675852f.png" /></p>
+<p style="text-align: left;">对于在网上购物的你我来说，这项技术使消费者大大降低了碰到真假难辨的高仿货几率。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200809/b39045bff176432e8e223455186ac6b5.jpeg" /></p>
+<p style="text-align: left;">目前高效AI方案对内已应用到了阿里多个业务场景，如淘宝视频、淘宝直播、优酷等平台的知识产权保护，为数字基建的安全建设提供样本参考，对外则通过绿网直接服务大中小企业。</p>
+<p>阿里安全图灵实验室 </p>
+<p style="text-align: left;">阿里安全图灵实验室是阿里巴巴从事安全领域机器学习研发的顶级团队，专注于 CV、NLP 及 ML 领域，团队所研发的 AI 技术被广泛用于阿里巴巴经济体的全球业务网络安全、数据安全、知识产权、新零售安全以及风控反作弊等业务场景。</p>
+<p style="text-align: left;">今年分类赛道共有来自全球的56位选手参与，最终，阿阿里安全的高效AI分类技术超越三星、同济大学等国内外多支队伍的同类技术，勇夺冠军。</p>
+<p style="text-align: left;">“A visual inductive priors framework for data-efficient image classification”也已经被ECCV 2020 Workshop VIPriors接收。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

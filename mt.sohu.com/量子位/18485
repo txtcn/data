@@ -1,0 +1,232 @@
+➜矩阵元算法科学家谢翔：Rosetta如何连接隐私计算与AI？
+http://www.sohu.com/a/412543752_610300	17118
+<p>云风 发自 凹非寺 量子位 编辑 | 公众号 QbitAI</p>
+<p>大家好，我是谢翔，来自<strong>矩阵元</strong>。今天很高兴能够与大家分享矩阵元最近的一些研究成果。主要的方向是<strong>隐私计算</strong>，以及基于密码学的隐私开源框架—<strong>Rosetta</strong>。</p>
+<p>隐私计算时代来临？</p>
+<p>目前数据面临着一些挑战。随着数字化的发展，数据量指数级增加，一些核心的、关键的数据保护做得远远不够。目前来看，随着数据的生产要素化，不论国内国外对整个数据相关方向的关注程度越来越高，当然其中也有越来越多的挑战。而众多挑战之中我们认为其中最关键的一点就是数据隐私。</p>
+<p>从AI的角度来看，AI需要用数据来“喂”，只有通过足够多的数据或多样化的数据，才能训练出一个相对较好的模型使用。所以随着数据量的增大、数据多样化的增加，以及随着数据隐私的关注程度越来越高，AI面临着一个所谓的“窘境”——从AI角度来看，数据的多样化程度越高，对于整个模型的训练更有好处，模型精度也会相应提高。</p>
+<p>所以这给AI带来了一系列问题。如何能够在保护数据隐私的前提下，把各不同源、不同企业之间的数据能够融合运用？在目前传统的技术方法里很难解决这个问题，所以成为了AI可能面临的一大痛点。因此也引出了“隐私计算”的概念。</p>
+<p>关于隐私计算，简单来说就是保证数据在使用和融合过程中，保护隐私的综合性技术，而不是简单的一项技术。隐私计算大致分为三类：</p>
+<p>第一是<strong>密码学</strong>，第二是<strong>联邦学习</strong>（Federated Learning），是偏机器学习的技术；第三是<strong>可信执行环境</strong>（TEE），是硬件安全的技术。当然技术没有绝对的好坏之分，每个技术都有它的优势和劣势，所以在很多的综合性解决方案中，很多技术都是融合在一起使用的。</p>
+<p>密码学简单来说是研究各类不同情况下，如何保护数据隐私的一类学科。最主要的特点是：所有密码学的方向，在涉及算法、方案的时候，要先去定义一个安全模型，要定义什么样才是安全。之后在这个定义之下，会通过一些数学的方法技巧去证明这个方案是满足安全定义的，所以它相对来说具有完整的数学理论基础的密码理论。当然它的优势是，密码学考虑的是一个非常广泛的场景。所以它能够更好的适合或适配不同的场景。在某些场景下，能够做到比较高效。</p>
+<p>当然密码学也有瓶颈，在部分场景里性能、计算时间、通讯复杂度存在一定的瓶颈。当然更大的瓶颈在于，给没有密码学背景的人解释密码学原理，是一件难于上青天的事情。</p>
+<p>所以本次分享中，<strong>会更倾向于密码学的介绍，包括密码学的历史及主要技术</strong>，之后我会对其中的安全多方计算的基本原理做一些简单的介绍。</p>
+<p>密码学如何实现隐私保护？</p>
+<p>密码学中的隐私计算技术，大概分为三大类。分别是：<strong>安全多方计算</strong>、<strong>同态加密</strong>、<strong>零知识证明</strong>。</p>
+<p>安全多方计算（简称MPC），在1982年由姚期智先生提出，缘起于“百万富翁问题”。此问题讲的是有两个百万富翁，他们都很有钱，想比谁更有钱，但是又不想把各自的资产告诉对方，也不想找第三方帮他们做比较。所以他们如何能够在不泄露自己财产的前提之下，知道谁更有钱呢？安全多方计算领域由此开辟。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>抽象的来说，可以理解为有多个本地参与，他们各自都拥有一个隐私的收入，但是他们想去计算一个共同的函数或者说共同的模型，叫做f。这个f会跟各自的输入都有关系，然后各自拿到一个结果。所以我们把它抽象出来，如果f是一个比较的函数，模型里面只有两个人的话，就形成了一个经典的百万富翁问题。</p>
+<p>和我们今天讲的内容联系起来呢？如果这个f是一个模型或是机器学习的模型，比如说是一个逻辑回归、是一个CNN，相当于这三方各自都拥有一些数据，他们想共同训练这个模型。</p>
+<p>这就对应了今日主题：<strong>如何进行隐私 AI 建模的方式？</strong></p>
+<p>也就是说，安全多方计算其实是一个非常广的概念。从密码学的角度看，MPC用到机器学习、AI里面，就是一个非常具体的应用了。那么应用运用了何种具体的方式？这就是Rosetta所要解决的问题。</p>
+<p>Rosetta如何连接隐私计算与AI？</p>
+<p>讲到现在，相信大家一定会遇到一个很大的问题，就是我们很想运用密码学解决问题，但是如果没有很高的数学基础或者没有学习过密码学的话，相关算法实在是门槛太高了。但是一些AI领域的专家、学者对于AI的应用，深度学习、机器学习的框架已经非常熟了。所以这两种具有不同专业技能的人，之间有很深的沟壑。在现实生活中，急需把这两种技术做一个融合，但是密码学相对的技术门槛太高，会影响整个行业的发展，也会影响整套隐私计算或者隐私AI的计算技术问题和理论进展。</p>
+<p>所以我们想让熟悉机器学习，但是对密码学不了解的用户能够将隐私计算技术运用起来。另外对于一些熟悉了AI、或者TensorFlow、Pytorch等机器学习框架的开发者，让他们能够在几乎不改变开发习惯的前提下，就可以运用隐私AI的技术。我们需要做这样一个平台，或者开源框架，能够让不太熟悉密码学或者根本不懂密码学的AI层面的开发者或专家，能够用上隐私计算技术，这就是我们设计Rosetta的初衷，或者说设计Rosetta的一个根本原则。</p>
+<p>因此Rosetta具备以下特点：<strong>易用性</strong>，<strong>高效性</strong>和<strong>可扩展性</strong>。</p>
+<p><strong>易用性</strong>，目前完全复用了TensorFlow接囗。在明文和密文写模型的时候，TensorFlow的接囗是一样的，没有再变。极大地降低了AI工程师使用隐私计算技术的成本。</p>
+<p><strong>高效性</strong>，完全兼容原生TensorFlow对数据流图自动执行的各种运行时优化。我们用C++来实现算法，能够保持底层算法的高效性。我们同时在跟业界的密码学家设计高效前沿的MPC技术，来适配机器学习或者深度学习的一些模型。</p>
+<p><strong>可扩展性</strong>，因为在MPC领域算法和协议非常多，而且涉及不同的场景，可能用不同的算法会有更好的效果。如果有了新的算法过来，Rosetta能够非常快速的集成到整个框架里面去。</p>
+<p>下面，我们举例说明一下：</p>
+<p>这里有三个参与方，A、B、C，然后每个人都有一个矩阵Ma、Mb、Mc，之后他们去计算Ma乘Mb乘Mc，他们三个只能知道结果，中间的过程都不知道。在这样一个场景下，如何运用Rosetta来实现它呢？和TensorFlow明文使用的区别有两个，一个是<strong>import包和选择算法</strong>，一个是<strong>简单处理隐私输入</strong>，即需要把Rosetta包import进来，选择算法，然后定义隐私输入即可。</p>
+<p>Rosetta的架构如下：</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200811/a70fa4c48a1242a79f2be324024d1002.png" max-width="600" /></p>
+<p>整体而言，Rosetta的框架图如上图所示，它包括Python的前端APl，这块是Rosetta方便用户使用而特色支持的，然后与TensorFlow的前后端做了适配，同时我们开发了一个统一的密码协议管理层，可以去适配不同的密码协议。</p>
+<p>我们的目标是既能够让懂密码学的开发者把现在的东西复用到整个框架里来，也能够让不懂密码学的AI开发者能够无门槛的或者非常低门槛的去使用隐私计算技术，相当于把密码学与机器学习，有机的结合起来。这就是Rosetta的目标。</p>
+<p>下面说一下Rosetta的架构，首先要讲TensorFlow架构，TensorFlow架构简单地说就是一个图转化和一个图执行。我们充分利用了TensorFlow架构来进行密码适配。</p>
+<p>当TensorFlow把那个图变成下图左边标准的传统图时，我们去做了一个static pass，把每一个操作全部都转成SecureOp，这个统称是为了后面能够支持密码算法。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200811/a65cce246f7a4b8291ac1d93d48d3bf1.png" max-width="600" /></p>
+<p>然后第二步就是图执行，图执行我们运用了dynamic pass，左边的图就是刚才转化之后的图，然后当数据的时候，根据每一个这样的图，dynamic pass可以动态去适配用某一类密码协议去执行这个图。</p>
+<p>我们能够充分运用TensorFlow框架，同时因为能够利用整个底层的密码算法，dynamic pass也可充分利用TensorFlow这种optimizer之间的并行，可以让它跑得更快。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200811/a33e1bff5e02485fa6b3e5c571b01c86.png" max-width="600" /></p>
+<p>下面讲一个Rosetta在实际场景落地中的应用案例：<strong>金融场景下的应用</strong>。银行A与B，他们各有各的数据，然后互联网公司C也有数据，大家希望能够通过Rosetta把模型建起来，比如说训练逻辑回归后，把风控模型训练出来，训练出一个更加高效的模型。同时保证abc各方数据都不会被对方拿到，这种场景下，用Rosetta解决问题非常简单。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200811/c55462a6edbf4d5a8e0b3826053a153a.png" max-width="600" /></p>
+<p>如上图，把Rosetta import进来，然后选一个协议，然后选相应的输入。后面就是标准的用TensorFlow去回归，所以后面完全不需要有任何密码学背景，也可以完全写出来。在多数据融合的训练场景里，只要Rosetta一个包，然后把数据做一些处理。后面整个逻辑回归的代码书写，跟原来的是一模一样的，甚至可以把代码直接拷贝过来。这里有一个问题，<strong>我们用MPC的方式也就是密文的方式，它的精度与明文的方式有何区别？</strong></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200811/6373ce83f32545f48094d1fb79604ef6.png" max-width="600" /></p>
+<p>如上图，我们做了一个对比，大家可以看到几乎没有区别，基本等价了，所以在设计足够多的参数足够多的精度之后，完全可以保证整个模型的精度。当然还有一个场景就是所谓的模型预测服务。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200811/b8e21c98e3374bb28eaa04b633ebbee6.png" max-width="600" /></p>
+<p>最后讲一点，Rosetta刚刚开始，目前已经开源了0.2.1版本。下面是GitHub链接：</p>
+<p>https://github.com/LatticeX-Foundation/Rosetta</p>
+<p>欢迎大家关注Rosetta，Rosetta还是“少年”，我们还在不断补充功能和迭代优化。</p>
+<p>我们非常希望能够结交对架构设计和集成感兴趣的朋友们，或者针对其他框架，本身的开源也有优化想法的小伙伴们，大家一起参与进来。</p>
+<p>另外如果有对Rosetta或密码学感兴趣的朋友们，非常欢迎大家一起来交流，谢谢大家！</p>
+➜小鹏汽车招股书，满是智能技术自研的标签
+http://www.sohu.com/a/412552450_610300	18181
+<p>允中 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;"><span>小鹏汽车，现在也驶上了IPO上市快车道。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200811/ae8d597d839546b8bbbdc19fa33fc89c.jpeg" /></p>
+<p style="text-align: left;"><span>就在8月9日，小鹏汽车在美提交招股书，拟于纽约证券交易所挂牌上市，股票代码为</span><strong>XPEV</strong><strong></strong><span>。</span></p>
+<p style="text-align: left;">虽然上市节奏上，中国造车新势力已前有蔚来、近有理想，但在招股书中，后发的小鹏多次强调其智能化 <strong>自研能力</strong>。 </p>
+<p style="text-align: left;">小鹏汽车认为，这是目前与其他玩家的核心区别，也是未来进一步差异化竞争力的关键所在。</p>
+<p>去年营收23亿 </p>
+<p style="text-align: left;">招股书称，小鹏汽车是中国市场上领先的智能电动汽车(Smart EV)公司之一，在中国设计、开发、制造和销售智能电动汽车。</p>
+<p style="text-align: left;">小鹏汽车成立于2015年，其愿景是通过在自动驾驶、智能连接和核心车辆系统方面的创新，将智能电动汽车带给中国消费者。</p>
+<p style="text-align: left;">根据市场研究公司IHS Markit的报告，小鹏汽车的G3车型是2019年中国最畅销的电动SUV前三名之一。</p>
+<p style="text-align: left;">根据工信部的新能源汽车目录，小鹏汽车P7车型的NEDC（新欧洲驾驶循环周期）单次充电续航里程高达706公里，在中国现有电动汽车中是最长的。</p>
+<p style="text-align: left;">核心数据方面。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200811/e326a86caec14ee98f72c0a48fd5008c.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">招股书显示，2019年小鹏汽车收入为23.2亿人民币，虽然目前依然为亏损状态，但营收已经比2018年增长了238倍。</p>
+<p style="text-align: left;">而在疫情影响下的2020上半年，小鹏汽车营收依然达到了10.03亿人民币，毛亏损只占到3.6%，相比之前大幅收窄。</p>
+<p style="text-align: left;">上述财务数据结果，也与汽车产业特点有关。</p>
+<p style="text-align: left;">小鹏汽车自创立以来，目前为止共推出了两款量产车型。</p>
+<p style="text-align: left;">首款智能电动车G3车型，于2018年11月开始生产，截至2020年7月31日，小鹏交付了18741辆。</p>
+<p style="text-align: left;">第二款智能电动车P7车型，于2020年5月开始生产和交付，截至2020年7月31日，完成1966辆交付。</p>
+<p style="text-align: left;">此外，小鹏汽车计划在2021年推出第三款智能电动汽车。</p>
+<p style="text-align: left;">在招股书中，小鹏汽车也不断强调智能方向的愿景——通过在自动驾驶、智能连接和核心车辆系统方面的创新，将智能电动汽车带给中国消费者。</p>
+<p style="text-align: left;">而且这种“强调”，也体现在真金白银的研发投入中。</p>
+<p>从自动驾驶到工厂，全部自研 </p>
+<p style="text-align: left;">在招股书里，2018年，小鹏研发投入10.5亿，占营业费用62%；</p>
+<p style="text-align: left;">2019年的小鹏的研发投入达到了20.7亿，占营业费用的64%；</p>
+<p style="text-align: left;">而到了2020年上半年，小鹏的研发投入依然占到了营业费用的44%。</p>
+<p style="text-align: left;">连续三年里，技术研发一直是这家公司最烧钱的地方。</p>
+<p style="text-align: left;">这些钱，投入的效果如何？都换来了什么？</p>
+<p style="text-align: left;">先看自动驾驶。</p>
+<p style="text-align: left;">智能电动汽车领域的自动驾驶软件系统，基本上都在L2~L3之间，功能在自动泊车到限定路段辅助驾驶之间。</p>
+<p style="text-align: left;">这个领域中，特斯拉的Autopilot显然是最受关注的标杆性产品，而在几家国产智能电动汽车公司中，小鹏汽车是第一家自主研发出同类产品并商业化的。</p>
+<p style="text-align: left;">基于英伟达自动驾驶芯片Xavier，小鹏汽车研发出了Xpilot自动驾驶软件系统。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200811/c19dd11ea1494ba687b5bdf68fcf326e.png" /></p>
+<p style="text-align: left;">此前，小鹏推出的G3车型已经搭载了Xpilot 2.5系统，配合该系统整个车身遍布12个超声波雷达、5个高清摄像头、3个毫米波雷达，以实现辅助驾驶和自动泊车功能。</p>
+<p style="text-align: left;">再看智能交互。</p>
+<p style="text-align: left;">所有的智能车，都需要一个类似安卓的操作系统，小鹏就自己研发了智能汽车上的操作系统Xmart OS。</p>
+<p style="text-align: left;">车联网的操作系统必然有一大部分内容服务和应用功能与手机是重叠，但在此之外，需要做驾驶场景下的升级。</p>
+<p style="text-align: left;">而在最核心的导航层面，Xmart OS搭载了高德地图3000万离线数据，以及5000万在线数据，方便实现智能导航。</p>
+<p style="text-align: left;">另外远程控制也是一大特点，用户可以通过App，远程控制空调、门窗等，也可以查找车辆和充电桩。如果车不在身边而又发生了突发状况，还可以直接遥控摄像头，查看车周边环境。</p>
+<p style="text-align: left;">最后看生产制造。</p>
+<p style="text-align: left;">生产制造方面，此前小鹏的代工厂是海马汽车，而小鹏的上市也让这家戴上ST帽子的公司股价连涨。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200811/afaff52b35d44ec4b27cff5077b9dac1.png" /></p>
+<p style="text-align: left;">不过，小鹏自家位于广东肇庆面积3000亩的工厂也已经在两个月前亮相。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200811/88986d628993468c810c2cdbd6f2d31b.png" /></p>
+<p style="text-align: left;">这座工厂已经历经两年建设期，去国际自动化大厂ABB买了大量机械臂来自动化生产车辆，整个工厂的自动化程度非常高。</p>
+<p style="text-align: left;">看，小鹏这家公司在做的，不仅是智能汽车，甚至还囊括了智能制造。</p>
+<p style="text-align: left;">何小鹏本鹏说，小鹏汽车自己把 Tier 1 全部做完，除了没做芯片，基本上全部都自主。</p>
+<p style="text-align: left;">一个有趣的小八卦是，这座工厂在建设之前，是一片鱼塘，还有大面积的喀斯特地貌溶洞，小鹏光是买水泥“填坑”，就花了1个亿；甚至为了在广东的梅雨季节保证工厂不被淹，又专门买土，把差不多1000亩的地面垫高了2米。</p>
+<p style="text-align: left;">所以纵观而言，小鹏汽车的这种自研努力，完整覆盖了汽车产业智能化变革的内和外。</p>
+<p style="text-align: left;">而横向比较而言，在目前智能电动车领域，小鹏汽车也可谓最具自研雄心的厂商了。</p>
+<p style="text-align: left;">那么问题来了，在自研方向的押注，究竟能带来什么？</p>
+<p>自研，电动车终极道路 </p>
+<p style="text-align: left;">毫无疑问，短期会带来更重的“财务包袱”。</p>
+<p style="text-align: left;">自研，就意味着自建团队和自己做最重最苦的研发工作，类比于电商，就像自建物流和配送体系一样。</p>
+<p style="text-align: left;">但长远而言，自研又是产品性能和用户服务保障的最佳选择。</p>
+<p style="text-align: left;">说白了，自研是着眼于长期的选择。</p>
+<p style="text-align: left;">而且在“汽车产业百年未有之大变局”之下的当前，这种自研也显得十足必要。</p>
+<p style="text-align: left;">从上述小鹏自研项目来看，都是现在智能汽车最核心的智能化体验的能力，如果真心想实现最佳用户体验，自研甚至是不二之选。</p>
+<p style="text-align: left;">比如中国造车新势力们视为参照的特斯拉，起初在自动驾驶和智能化方面，也是采用供应商供应，但其后为了实现最好体验，马斯克不惜替换Mobileye，开启AutoPilot相关的完整自研。更有甚至，后来索性连硬件芯片，也实现了自研。</p>
+<p style="text-align: left;">这其实也不光是汽车领域正在发生的变革。</p>
+<p style="text-align: left;">这是AI+各行各业正在发生的变革。AI带来的新的计算模型和方式，也意味着对于硬件的适配需求度更高，于是开启了一个更紧迫的软硬件一体化时代。</p>
+<p style="text-align: left;">包含智能汽车在内，如果要追求本质创新和性能突破，最好的方式就是从头开始就软硬件一体化打造。</p>
+<p style="text-align: left;">而不同于其他领域，汽车上路，面临的场景更为复杂。</p>
+<p style="text-align: left;">在智能方面，不同地区的道路和场景特点，往往也需要因地制宜——外来的产品，遭遇中国的实际道路和交互方式，或许就会有问题。</p>
+<p style="text-align: left;">所以智能电动车的核心智能技术选择自研，从中国道路和中国语音交互的特点而言，从着眼长期趋势而言，这都是必由之路。</p>
+<p style="text-align: left;">这是小鹏汽车认定、选择的逻辑和押注的最初起点，目前而言，确实算得上一个不错的时机。毕竟选择在智能电动车领域，华尔街已经完全认可了特斯拉。</p>
+<p style="text-align: left;">理解小鹏汽车，或许并不费劲~</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜AI新海诚就是在下，不信来玩
+http://www.sohu.com/a/412644009_610300	18181
+<p>鱼羊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;"><img src="http://p2.itc.cn/q_70/images03/20200811/e52df428122f41b3be6cc7bb0fa6ae07.gif" /></p>
+<p style="text-align: left;">这样的东京街景，是不是有点日系纪实动漫那种feel了？</p>
+<p style="text-align: left;">现在，不需要人类画师一帧帧描画，把你拍下的视频喂给AI，就能让现实世界分分钟掉进二次元世界。</p>
+<p style="text-align: left;">布景：</p>
+<p style="text-align: left;"><img src="http://p3.itc.cn/q_70/images03/20200811/5309c995965f428388fb2a6715e2f7c7.png" /></p>
+<p style="text-align: left;">美食： <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p2.itc.cn/q_70/images03/20200811/5229f994e43c40f6a3e2b18f6a56695b.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">甚至复仇者联盟，也能瞬间打破电影宇宙和漫画宇宙的界限。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200811/e5d24fe745db4c259f5ae9d97a700739.gif" /></p>
+<p style="text-align: left;">这项研究名为 <strong>White-box-Cartoonization</strong>，来自字节跳动、东京大学和Style2Paints研究所。 </p>
+<p style="text-align: left;">论文已收录于CVPR 2020。</p>
+<p>白盒卡通表示 </p>
+<p style="text-align: left;">如此AI「魔法」的关键，还是生成对抗网络（GAN）。</p>
+<p style="text-align: left;"><img src="http://p0.itc.cn/q_70/images03/20200811/1a4f259bbaa84ca4bbd778bdf38038bc.png" /></p>
+<p style="text-align: left;">并且，研究人员提出了三个白盒表示方法，分别用来表示平滑表面、结构和纹理。</p>
+<p style="text-align: left;"><strong>表面表示</strong>：表示动漫图像的光滑表面。 </p>
+<p style="text-align: left;">使用导向滤波器对图像进行处理，在保持图像边缘的同时平滑图像，去除图像的纹理和细节信息。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p3.itc.cn/q_70/images03/20200811/8aa9884649454891b41641757924013e.png" /></p>
+<p style="text-align: left;"><strong>结构表示</strong>：获取全局结构信息和稀疏色块。 </p>
+<p style="text-align: left;">首先使用felzenszwalb算法将图像分割成不同的区域。</p>
+<p style="text-align: left;">由于超像素算法只考虑像素的相似性而忽略语义信息，研究人员进一步引入选择性搜索来合并分割区域，提取稀疏分割图。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p9.itc.cn/q_70/images03/20200811/15e87dea3cbd4ca4abc6226951216ac6.png" /></p>
+<p style="text-align: left;">另外，标准的超像素算法会使全局对比度降低，导致图像变暗。</p>
+<p style="text-align: left;">为此，研究人员提出了一种自适应着色算法，以增强图像对比度，减少朦胧效果。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p7.itc.cn/q_70/images03/20200811/dbc9622cfd724ded9bd80f15ab290e82.png" /></p>
+<p style="text-align: left;">然后，用预训练的VGG16网络提取生成器生成的图像和抽取的结构表示的高级特征，限制空间结构。 </p>
+<p><img height="auto" width="668" src="http://p0.itc.cn/q_70/images03/20200811/dc6107d1579342e68e7bafb2686b0ec7.png" /></p>
+<p><strong>纹理表示</strong>：反映卡通图像中的高频纹理、轮廓和细节。 </p>
+<p style="text-align: left;">研究人员提出了一种从色彩图像中提取单通道纹理表示的随机颜色偏移算法，以保留高频纹理，减少色彩和亮度的影响。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p6.itc.cn/q_70/images03/20200811/be7013278a614506b7d28f0404ad23ac.png" /></p>
+<p style="text-align: left;"><img src="http://p0.itc.cn/q_70/images03/20200811/ebf8a1c43c144a14ac3ccce5cf451b8b.png" /></p>
+<p style="text-align: left;">整个GAN框架带有一个生成器G，以及两个判别器Ds和Dt。其中Ds旨在区分模型输出的表面表示和真正的动漫图像。Dt用于区分模型输出的纹理表示和真正的动漫图像。</p>
+<p style="text-align: left;">具体而言，生成器网络是一个类似U-Net的全卷积网络。</p>
+<p style="text-align: left;">研究人员使用 stride=2 的卷积层进行下采样，以双线性插值层作为上采样，以避免棋盘式伪影。</p>
+<p style="text-align: left;">该网络只由3种层组成：卷积层、Leaky ReLU <span>（LReLU）</span>和双线性调整层。这使得该网络能轻松嵌入到手机等边缘设备中。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p5.itc.cn/q_70/images03/20200811/c574d3d0115e430da90b5908455cf1a3.png" /></p>
+<p style="text-align: left;">判别器网络则基于PatchGAN进行了调整，其最后一层为卷积层。</p>
+<p style="text-align: left;">输出特征图中的每个像素对应输入图像中的一个图像块 <span>（patch）</span>，用于判断图像块属于真正的动漫图像还是生成图像。 </p>
+<p style="text-align: left;">训练数据集方面，风景图像采集自新海诚、宫崎骏和细田守的动漫作品，人像图像则来自京都动画和PA Works。影片都被剪辑成帧并随机剪裁，大小为256×256。</p>
+<p>实验结果 </p>
+<p style="text-align: left;">所以，这种图像卡通化方法的效果究竟如何。</p>
+<p style="text-align: left;">在定量实验中，研究人员发现，AI提取的表示成功愚弄了训练好的分类器。</p>
+<p style="text-align: left;">与原始图像相比，分类器在三个提取的卡通表示中准确率都比较低。</p>
+<p style="text-align: left;">另外，计算出的FID指标也显示，卡通表征有助于缩小真实世界照片和卡通图像之间的差距。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p7.itc.cn/q_70/images03/20200811/5eeb96dfcde54de7920cf53ba5f34a28.png" /></p>
+<p style="text-align: left;">再来看一组直观的对比。</p>
+<p><strong><img src="http://p1.itc.cn/q_70/images03/20200811/1c54ce85ea2b4197a9f8661a3c0f4be0.png" /></strong></p>
+<p><strong>△</strong>(f)-(g)为CartoonGAN </p>
+<p style="text-align: left;">与之前的方法相比，白盒框架能生成更为清晰的边界轮廓，并有助于保持色彩的和谐。</p>
+<p style="text-align: left;">比如，图中(f)-(g)所展示的CartoonGAN的某些风格就存在色彩失真的问题，而白盒框架色彩更为自然。</p>
+<p style="text-align: left;">另外，白盒框架也有效地减少了伪影，效果超越CartoonGAN。</p>
+<p>网友：惊艳 </p>
+<p style="text-align: left;">如此效果，让不少网友大呼「惊艳」，在reddit上达到了500+的热度。</p>
+<p style="text-align: left;">有网友表示，有了这样的黑科技，未来，或许只需要一个创意，就能打造一部好作品。市场的准入门槛将因此而降低。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p1.itc.cn/q_70/images03/20200811/8646dd680728491f8c51f5b99da5f331.png" /></p>
+<p style="text-align: left;">也有网友认为，颜艺、卖萌这类现实中不存在的画面，还是要靠动漫制作人员的创作。不过，这样的AI将来无疑能减轻动漫制作人员的工作量。</p>
+<p style="text-align: left;">现在，研究人员还放出了在线Demo，如果你感兴趣，可以亲自上手试试~ <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p5.itc.cn/q_70/images03/20200811/1369c9e31d5e4132be1131eb375efa44.jpeg" /></p>
+<p style="text-align: left;">最后，左边出自人类的画笔，右边是AI的大作，你pick哪一个？ </p>
+<p><img height="auto" width="1818" src="http://p4.itc.cn/q_70/images03/20200811/459353604aaf4191aaf58ba7bb004e94.png" /></p>
+<p><img height="auto" width="1808" src="http://p6.itc.cn/q_70/images03/20200811/5a9df438faf64ba2b4653abf0c549df2.png" /></p>
+<p><img height="auto" width="1804" src="http://p1.itc.cn/q_70/images03/20200811/078a9cc264c24704be0153cbd8b26e2b.png" /></p>
+<p>传送门 </p>
+<p style="text-align: left;">GitHub地址： </p>
+<p>https://github.com/SystemErrorWang/White-box-Cartoonization </p>
+<p style="text-align: left;">在线Demo： </p>
+<p>https://cartoonize-lkqov62dia-de.a.run.app/cartoonize </p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>报名 |「隐私计算+AI」技术直播</strong></p>
+<p>不了解任何隐私AI技术的情况下，开发者怎样做到只改动两三行代码，就将现有AI代码转换为具备数据隐私保护功能的程序？</p>
+<p>8月6号， <strong><span>中科院软件研究所博士、矩阵元算法科学家--谢翔</span></strong>将直播解析，加小助手“qbitbot9”或者直接扫码，即可进入直播交流群： </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

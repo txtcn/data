@@ -1,0 +1,225 @@
+➜欧拉、欧几里得、笛卡尔都没能解决的数学问题，他探索了新的方案
+http://www.sohu.com/a/420053253_610300	15869
+<p>萧箫 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">欧拉、欧几里得、笛卡尔、尼科马修斯都没能解决的千年数学问题，还有破解的可能吗？</p>
+<p style="text-align: left;">还真有可能。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200922/59189b732ca045ba9ae749f67e55ec64.png" /></p>
+<p style="text-align: left;">最近，一位名为 <strong>佩斯·尼尔森</strong><span>（Pace Nielsen）</span>的数学家开辟了一种新方法，给这个“千年难题”提供了别样的解决思路。 </p>
+<p style="text-align: left;">这个数学问题是 <strong>奇数完美猜想</strong>，事实上，它的定义非常简单： </p>
+<blockquote>
+<p style="text-align: left;">是否存在一个奇数，使得它是完美数？</p>
+</blockquote>
+<p style="text-align: left;">是否存在一个奇数，使得它是完美数？</p>
+<p style="text-align: left;">然而，这个“简单问题”却在证明过程中变得越来越复杂，甚至成了数学上悬而未解的“疑案”。</p>
+<p>有“完美”的奇数吗？ </p>
+<p style="text-align: left;">首先来解决一个概念：“完美数”是什么？</p>
+<p style="text-align: left;">这个数最早被毕达哥拉斯发现，他给出了完美数的定义：</p>
+<blockquote>
+<p style="text-align: left;">一个完美数（必须是自然数），如果将它除了自身以外的所有因数相加，等于它自己。 <span></span></p>
+</blockquote>
+<p style="text-align: left;">一个完美数（必须是自然数），如果将它除了自身以外的所有因数相加，等于它自己。 <span></span></p>
+<p style="text-align: left;">例如，6就是一个完美数。</p>
+<p style="text-align: left;">由于6=1×6=2×3，所以6除了自己以外，它的约数还有1、2、3。</p>
+<p style="text-align: left;">可以看见，这三个约数的和为1+2+3=6，恰好等于6自己。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200922/245842a9bfe64d12ba4498dd17db4962.png" /></p>
+<p style="text-align: left;">除了6以外，还有28、496、8128……</p>
+<p style="text-align: left;">根据这些排列出来的数，欧几里得设计了一个公式，用来生成完美数。</p>
+<p style="text-align: left;">假设一个质数p，而2 ^ p - 1 <span>（2的p次方-1）</span>也同样是一个质数，那么 </p>
+<p style="text-align: left;">就会是一个质数。</p>
+<p style="text-align: left;">问题被解决了？</p>
+<p style="text-align: left;">没有。</p>
+<p style="text-align: left;">2000年后，欧拉研究这个问题时发现，欧几里得给出的公式，实际上只能生成 <strong>完美数中的每个偶数</strong>。 </p>
+<p style="text-align: left;">数学家尼科马修斯 <span>（Nicomachus）</span>下过定论，“完美数只能是偶数”，但没有证明。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200922/08d0a53772984f0a8b99f5f6fb7466a4.jpeg" /></p>
+<p style="text-align: left;">也就是说，没人知道 <strong>完美奇数猜想</strong>是否正确——到底存不存在这样的奇数 <span>（Odd Perfect Numbers，简称OPN）</span>，使得它是完美数？ </p>
+<p style="text-align: left;">问题吸引了不少数学家研究，OPN的限制条件也开始被提出：不能被105整除；任何OPN都必须大于10的2000次方……</p>
+<p style="text-align: left;">限制条件越来越多，OPN存在的可能性也在被缩小——像渔夫“收网”一样，越来越多的奇数正在被排除。</p>
+<p style="text-align: center;"><img src="//p4.itc.cn/q_70/images03/20200922/d407deda32fe48cf9e9f9e64b82572df.png" /></p>
+<p style="text-align: left;">根据数学上的定理，如果两个限制条件互相矛盾，那么OPN就不可能存在。</p>
+<p style="text-align: left;">然而， <span style="font-size: 16px;">随着限制条件越来越多，条件之间却没有一点矛盾的迹象</span>，导致这个猜想一直没被证明。 </p>
+<p style="text-align: left;">对此，数学家约翰·沃伊特表示： <strong>证明一种事物的存在非常简单，但证明它不存在，却要困难得多。</strong></p>
+<p>“收网”行不通，试试找相似 </p>
+<p style="text-align: left;">与众多研究“完美奇数猜想”的数学家一样，尼尔森一开始也试图增加OPN的限制条件，以证明它不存在。</p>
+<p style="text-align: left;">但他发现，这样的证明方法会随着限制条件的增加变得十分复杂。</p>
+<p style="text-align: left;">为此，尼尔森研究前人的成果，发现了笛卡尔留下的“欺骗数” <span>（spoof number）</span>。 </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200922/10bb925facdf48a4afeb0d88c33ed4ae.png" /></p>
+<p style="text-align: left;">事实上，这是笛卡尔试图证明“完美奇数”存在的一个 <strong>失败案例</strong>：他假装某些数是质数，以此得出了一个假冒版的“完美奇数”。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200922/84bd6497a44e4b5f92b9f63e4e33a160.png" /></p>
+<p style="text-align: left;">其实，22021等于19×19×61，这个数也因此成为了一个“欺骗数”。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200922/519cac7b669f428a9bded13450e9b809.png" /></p>
+<p style="text-align: left;">但如果将这种“欺骗数”用来证明“完美奇数”不存在呢？</p>
+<p style="text-align: left;">尼尔森与研究团队用了几年时间，找出了所有的“欺骗数”，并开始研究这些欺骗数的特点。</p>
+<p style="text-align: left;">他提出了自己的观点：“完美奇数”应该具有“欺骗数”的 <strong>一切特性</strong>，而且还自带特殊条件。 </p>
+<p style="text-align: left;">而如果能证明“欺骗数”不符合“完美奇数”的任何一个限制条件，那么“完美奇数”就不可能存在。</p>
+<p style="text-align: left;">简单来说，由于“完美奇数”不能被105整除，那么如果“欺骗数”都可以被105整除，“完美奇数”就不存在。</p>
+<p style="text-align: left;">虽然团队还没有找到这样的限制条件，但这无异于给“证明不可能”提供了一个更好的思路。</p>
+<p style="text-align: left;">约翰·沃伊特表示，这是个伟大的尝试。</p>
+<p style="text-align: left;">也有网友表示，这离难题的解决又近了一点。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200922/f2f819278a69452a9885e455c4b60cac.png" /></p>
+<p>尼尔森与奇数完美猜想 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200922/91ad434f79184cdcb8e1405056edaaf3.png" /></p>
+<p style="text-align: left;">尼尔森第一次与完美数猜想结缘，是在高中数学竞赛上。</p>
+<p style="text-align: left;">被这个问题所吸引，他找来了各种论文研读，并在大学时期选择了数学相关的专业学习，希望能为解决奇数完美猜想带来帮助。</p>
+<p style="text-align: left;">论文显示，尼尔森曾经在加州大学伯克利分校 <span>（UCB）</span>工作，目前在杨百翰大学 <span>（BYU）</span>，继续进行奇数猜想相关的研究。 </p>
+<p style="text-align: left;"><img src="http://p0.itc.cn/q_70/images03/20200922/f7a49b0c642c40218c86e611e3290b96.png" /></p>
+<p style="text-align: left;">对于数论问题，尼尔森表示自己“正在不断取得进展”。</p>
+<p style="text-align: left;">“只有不断到山里去，才可能最终找到钻石。”</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>免费报名 | CV、NLP领域最新学术及工业实践交流 </strong></p>
+<p>9月25日-9月29日， <strong>京东智联云技术专家</strong>、 <strong>微软总部推荐系统负责人</strong>、 <strong>ALBERT第一作者</strong>等多位业内顶尖技术大咖，将聚焦CV、NLP最新学术及工业界技术实践带来分享。 </p>
+<p>扫码即可免费报名参与~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜威马百亿新融资，冲刺科创板新造车第一股！国产四小龙下半场更热闹了
+http://www.sohu.com/a/420053441_610300	15869
+<p>雷刚 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">造车新势力史上最大单轮融资来了。</p>
+<p style="text-align: left;">威马， <strong>D轮获投100亿元</strong>，本轮融资由上海国资投资平台及上汽集团联合领投，百度与海纳亚洲创投基金（SIG）继续参与投资，湖北长江产业基金、苏州昆山产业基金、湖南衡阳国有投资平台、安徽合肥产业基金、国投创益产业基金、广州金融控股集团等国有产业投资者，以及芯鑫、紫光、红塔集团、雅居乐、盈科等实力派投资机构也参与了此轮融资。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200922/9fec0960cb004311a56f13e2b09e491a.jpeg" /></p>
+<p style="text-align: left;">威马汽车创始人、董事长兼CEO沈晖表示:</p>
+<blockquote>
+<p>D轮融资的完成，反映出投资者对智能新能源汽车产业前景的看好，对威马汽车的科技创新企业定位、长期发展战略、出色的核心团队、领先业界的前沿技术，以及对‘科技普惠、引爆主流’的核心价值理念的高度认可。参与这轮融资的都是各个领域的实力派，也都是愿意和威马一起长期发展的价值投资者。</p>
+</blockquote>
+<p>D轮融资的完成，反映出投资者对智能新能源汽车产业前景的看好，对威马汽车的科技创新企业定位、长期发展战略、出色的核心团队、领先业界的前沿技术，以及对‘科技普惠、引爆主流’的核心价值理念的高度认可。参与这轮融资的都是各个领域的实力派，也都是愿意和威马一起长期发展的价值投资者。</p>
+<p style="text-align: left;">另外也有消息称，随着此轮融资完成，威马IPO上市也被提上议程，而且威马将瞄准科创板，争作第一家本土上市的中国造车新势力。</p>
+<p style="text-align: left;">联系之前已登陆美国上市的蔚来、理想和小鹏，中国这波造车新势力也算完成了阶段性洗礼，以 <strong>「造车四小龙」</strong>格局，开启下半场竞速。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200922/d0a3a6030adc4f72b9ea6da0404ab0a9.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>如何看待威马D轮融资？ </p>
+<p style="text-align: left;">或许可以从两方面入手。</p>
+<p style="text-align: left;">一，入乎其内，威马通过新融资实现了最好的自我证明。</p>
+<p style="text-align: left;">在电动化、智能化浪潮中“揭竿而起”的造车新势力中，威马一直是头部玩家。</p>
+<p style="text-align: left;">无论是创始团队的汽车背景出身，还是最早自建工厂、交付，以及智能驾驶研发等等，威马都是造车新势力中排位最优的那一个。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200922/fd6ce55c280f4a78bcfcf728cf0bf913.jpeg" /></p>
+<p style="text-align: left;">只是在“资本”维度的竞速中，威马一度被先后上市的蔚来、理想和小鹏“赶超”。</p>
+<p style="text-align: left;">在三家纷纷赴美上市之时，江湖也不乏质疑：</p>
+<p style="text-align: left;">威马掉队了吗？</p>
+<p style="text-align: left;">现在，用资本维度被关注的方式，威马拿出了最好的自我证明。</p>
+<p style="text-align: left;">不仅没有掉队，还展现了厚积薄发和苦功潜行带来的回报。</p>
+<p style="text-align: left;">从加持股东来看，国有老牌车厂、国有资本投资者，以及实力派投资机构纷纷真金白银表达看好，名副其实获得国家队背书。</p>
+<p style="text-align: left;">从势能和后续爆料来看，冲刺科创板，也是一条 <strong>难但正确</strong>的路。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200922/2f920b2ef11840e3bf491464eb128977.jpeg" /></p>
+<p style="text-align: left;">一方面，用户市场和资本市场的统一，是让公司价值长远获得认可的最佳方式。</p>
+<p style="text-align: left;">另一方面，在如今太平洋对岸风云变幻、中概股纷纷回国上市的当下，瞄准科创板也是态度和信心的最好证明——虽然国内上市的门槛总要比海外能难一些。</p>
+<p style="text-align: left;">不过总而言之，这就是一条虽难而正确的路。</p>
+<p style="text-align: left;">二，出乎其外，D轮融资及曝出的一系列消息，从行业维度来看，也可视为中国造车新势力竞速，结束上半场争夺。</p>
+<p style="text-align: left;">以上市先后为顺序：蔚来、理想、小鹏，威马，中国造车新势力四小龙格局就此成型。</p>
+<p style="text-align: left;">回过头来看，四小龙都生于百年汽车工业未有之大变局开端，看到了汽车电动化、智能化和共享化的时代趋势。</p>
+<p style="text-align: left;">然后都抓住了 <strong>技术+资本</strong>的发展路径，以特斯拉为参照，以中国市场为大后方，完成了一场“留在牌桌”的上半场排位赛。 </p>
+<p style="text-align: left;">结果就是——四小龙格局。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200922/cda801724e81486da5ffda3c1e413f16.png" /></p>
+<p>造车新势力格局：四小龙 </p>
+<p style="text-align: left;">表现上，四小龙格局主要有三方面。</p>
+<p style="text-align: left;"><strong>第一，马太效应明显</strong>。资本和资源加速向头部企业集中。 </p>
+<p style="text-align: left;">不管是上市融资，还是地方注资和银行信贷，今年获得“真金白银”融资输血的只有蔚来、威马、小鹏、理想。</p>
+<p style="text-align: left;">腰部造车新势力的空间被进一步压缩，而尾部的逃杀已经完成，如赛麟、拜腾、博郡都在马太效应中失了速。</p>
+<p style="text-align: left;"><strong>第二，自我造血能力</strong>。 </p>
+<p style="text-align: left;">造车是公认的资本密集+技术密集行业，投入巨大，资源要求高，长期可持续就更需要自我造血能力。</p>
+<p style="text-align: left;">新融资也好、上市融资也好，本质上都是通过已经跑通的技术和商业闭环，获取更大体量的资金，实现更大规模的量产、销售和壁垒。</p>
+<p style="text-align: left;">这种造血能力，光有资本还不够，还要有供应链整合能力、制造能力，汽车的销售能力。</p>
+<p style="text-align: left;">在资本和上市选择上，我们说威马选择了「难但正确的路」。</p>
+<p style="text-align: left;">但其实在造血能力上，也存在「难但正确的路」，核心体现就是汽车生产上，有玩家先选择代工，有玩家从一开始就坚定自建工厂，但最后殊途同归，都会回到自建整车厂的道路上。</p>
+<p style="text-align: left;">也只有自建整车厂，才能实现成本和产品的最好把控。</p>
+<p style="text-align: left;">这也是为什么汽车行业内始终不敢忽视威马的原因——在四小龙中，威马是除特斯拉外最早唯一自建整车工厂与电池包工厂的头部新势力。</p>
+<p style="text-align: left;"><strong>第三，品牌认知</strong>。 </p>
+<p style="text-align: left;">在大浪淘沙之后，关于造车新势力的品牌认知，专业分析机构和大众舆论印象，也都画像清晰明确。</p>
+<p style="text-align: left;">在一份德意志银行的最新研报中，关于中国新电动车品牌，认为接下来相当长时期内，会持续以蔚来、威马、理想和小鹏的格局开启新竞争，会持续冲击燃油车市场份额。</p>
+<p style="text-align: left;">有意思的是，在电动车窗口期开启时，外界也有过“iPhone时刻”的类比。</p>
+<p style="text-align: left;">而如果把特斯拉视为iPhone，蔚来、威马、理想和小鹏这四小龙，不正是手机领域的华为小米OPPO和vivo？</p>
+<p style="text-align: left;">那么问题也就来了：四小龙格局已成，接下来拼什么？</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200922/4b0864ff33ec49c286c36336c3607dfc.png" /></p>
+<p>下半场比拼 </p>
+<p style="text-align: left;">一个目标：抢夺燃油车份额。</p>
+<p style="text-align: left;">三大核心比拼：技术、技术，还是技术。</p>
+<p style="text-align: left;">包含了整车及电池技术、三电技术，以及智能化技术。</p>
+<p style="text-align: left;">其中，类似智能手机竞争中最关键要要素， <strong>智能化技术</strong>——自动驾驶毫无疑问是重中之重。 </p>
+<p style="text-align: left;">从近期四小龙的最新战略行动中也可窥见一斑。</p>
+<p style="text-align: left;">为了自动驾驶，蔚来增发了股票融资投入研发，理想则挖来CTO并发布了自动驾驶规划，小鹏在上市招股书中把自研智能打成了重要标签……威马则发布“IdeaL4”技术战略，聚焦智慧座舱、数字化架构、平台化三电系统、自动驾驶技术领域的研发。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200922/fa644e756d61492a9c62bc614c548a8e.jpeg" /></p>
+<p style="text-align: left;">此外，在此次融资中，威马也再次谈到，未来3到5年，将在全球汇聚3000名顶级工程师，将最前瞻的技术，最快速的应用在主流价位的量产产品上，制造出更符合中国人用车喜好的“EC出行智能终端”。 </p>
+<p style="text-align: left;">所以不难想见，在造车新势力四小龙的下半场竞速中，自动驾驶将成为最具竞争力的差异化卖点。</p>
+<p style="text-align: left;">而目前，上市在即的威马“后发先至”，在与战略股东百度的深度合作中，率先完成了量产的L4级AVP完全自主泊车功能发布。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200922/421b356463f542aeafffa4e62edf5188.jpeg" /></p>
+<p style="text-align: left;">并且这种领先，还可能会因为与百度Apollo的自动驾驶正循环而获得加速度。</p>
+<p style="text-align: left;">一方面，百度Apollo毫无疑问是国内自动驾驶的领头羊，另一方面，威马目前近35000辆量产车，也会进一步巩固量产自动驾驶能力的口碑和优势。</p>
+<p style="text-align: left;">有意思的是，今年股价连连大涨的特斯拉，获得认可的本质在于自动驾驶，但目前国内尚无可以直接参照和对标的公司。</p>
+<p style="text-align: left;">如果威马IPO上市，搭载的又是智能化盟友百度Apollo的自动驾驶能力，或许特斯拉在科创板就有参照了。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>免费报名 | CV、NLP领域最新学术及工业实践交流 </strong></p>
+<p>9月25日-9月29日， <strong>京东智联云技术专家</strong>、 <strong>微软总部推荐系统负责人</strong>、 <strong>ALBERT第一作者</strong>等多位业内顶尖技术大咖，将聚焦CV、NLP最新学术及工业界技术实践带来分享。 </p>
+<p>扫码即可免费报名参与~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜RTX 3080被炒到原价7倍，最高卖5000美元，英伟达官方道歉：将打击黄牛抢购
+http://www.sohu.com/a/420053517_610300	15869
+<p>晓查 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">英伟达的最新显卡RTX 3080香不香？确实香。</p>
+<p style="text-align: left;">但是如果买不到，再香都是虚的。</p>
+<p style="text-align: left;">从9月17日开始，英伟达官方在官网发售RTX 3080，5499元的价格，因为实在太香，上线几分钟即售罄。</p>
+<p style="text-align: left;"><img height="auto" width="2440" src="http://p4.itc.cn/q_70/images03/20200922/7f255412ae77404fbcaf7da12afd161c.png" /></p>
+<p style="text-align: left;">有些用户连购买的选项都没看到，直接就是“缺货”通知，简直比春运抢票还刺激。</p>
+<p style="text-align: left;">既然官网买不到，那就去其他电商平台看看吧。不看不要紧，一看吓一跳。</p>
+<p style="text-align: left;">现在主流电商渠道的RTX 3080，要么是显示预约状态，要么价格炒到 <strong>7000元</strong>以上，比官方售价高出30~40%。 </p>
+<p><img height="auto" width="2708" src="http://p4.itc.cn/q_70/images03/20200922/7df724bcb0364d3780549903a9c81803.png" /></p>
+<p style="text-align: left;">为何RTX 3080如此难买？主要还是因为比RTX 2080Ti性能更强、价格更低，激发了用户的换机动力。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">然而，在3080发售前，2080Ti没有任何降价迹象，甚至还有玩家反馈说代理商借此囤货，价格反而更高。因为当年2080的价格比1080高出不少，代理商认为3080的价格也会居高不下。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200922/31889843fdad4dc5b7dfc94502ad6e49.jpeg" /></p>
+<p style="text-align: left;">但3080却以超高的性价比让2080Ti瞬间黯然失色。</p>
+<p style="text-align: left;">网传英伟达显卡的国内代理商为了清掉之前的库存，要求下游代理商必须搭配20系列才能拿到30系显卡的货。为了均摊成本，代理商选择了加价。</p>
+<p><img height="auto" width="1478" src="http://p3.itc.cn/q_70/images03/20200922/d6161c58fb014104bf9c7be2704f6d94.png" /></p>
+<p>英伟达官方道歉 </p>
+<p style="text-align: left;">由于黄牛给RTX 3080的定价实在太过荒谬，英伟达在社交网络上被疯狂吐槽，买不到显卡的用户纷纷发邮件向老黄求助。</p>
+<p style="text-align: left;">面对这一情况，英伟达昨天紧急在官网发布道歉声明，主要意思是这样的：</p>
+<p style="text-align: left;">由于RTX 3080销售火爆，网站访问量甚至超过了“黑色星期五”，英伟达与合作伙伴都没有做好准备，为此向用户表示歉意。</p>
+<p><img height="auto" width="1810" src="http://p3.itc.cn/q_70/images03/20200922/bb3fbbb6d8814cb8a3486e886062ff88.png" /></p>
+<p style="text-align: left;">对于黄牛加价和恶意抢购的情况，英伟达官方予以承认，称官网曾被恶意的经销商和抢购脚本机器人占领。</p>
+<p style="text-align: left;">为了应对黄牛，英伟达表示会把官方商店迁移到了专用环境中，增加容量并提供更多的僵尸程序保护。</p>
+<p style="text-align: left;">比如，将CAPTCHA验证码加入到结帐流程中，防止机器人下单，还对商店API实施了附加的安全保护。</p>
+<p style="text-align: left;">至于有些用户投诉黄牛用脚本购买多个RTX 3080的情况，英伟达已经手动取消了数百个订单，并且今后还将继续人工监控异常的购买情况。</p>
+<p style="text-align: left;">对这份官方声明，网友还是不太能接受，不过官网倒是非常实诚地把负面评论放了出来。</p>
+<p><img height="auto" width="604" src="http://p7.itc.cn/q_70/images03/20200922/098c11b408a04240ae4fae235c89ec9f.png" /></p>
+<p style="text-align: left;">原本“等等党”以为会到来的大胜利，被缺货和黄牛彻底毁掉了。</p>
+<p style="text-align: left;">另外，AMD的Big Navi显卡规格最近也被爆料出来：显存为12GB和16GB，比3080更大，预计10月28日发布。等等党也许还没输。</p>
+<p style="text-align: left;">所以，你是愿意继续等RTX 3080降价，还是支持AMD新显卡呢？</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>免费报名 | CV、NLP领域最新学术及工业实践交流 </strong></p>
+<p>9月25日-9月29日， <strong>京东智联云技术专家</strong>、 <strong>微软总部推荐系统负责人</strong>、 <strong>ALBERT第一作者</strong>等多位业内顶尖技术大咖，将聚焦CV、NLP最新学术及工业界技术实践带来分享。 </p>
+<p>扫码即可免费报名参与~ </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200922/0395261d827443ba89a85cfb80fef2ba.png" /></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
