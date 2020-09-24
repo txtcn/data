@@ -17,7 +17,7 @@ https://www.appinn.com/dawn-minimal-calendar-for-iphone/	30364
 <p>不过在付费订阅之后，Dawn 还有日历分类功能，被叫做 Space，你可以拥有多个 Space，让不同的任务分类管理。不过青小蛙并没有进行订阅测试，觉得日历已经很不错了，可以在 <a href="https://apps.apple.com/cn/app/id1509374383/?ref=appinn" class="rank-math-link" target="_blank" rel="noopener">App Store</a> 免费安装（<a href="https://enulus.com/dawn/" class="rank-math-link" target="_blank" rel="noopener">官网</a>）。</p>
 ➜如何使用 Everything 同时搜索文件夹名和文件名[技巧]
 https://www.appinn.com/everything-path-nopath/	43178
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/everything-path-search.jpg!o" alt="如何使用 Everything 同时搜索文件夹名和文件名[技巧] 34" title="如何使用 Everything 同时搜索文件夹名和文件名[技巧] 39"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/everything-path-search.jpg!o" alt="如何使用 Everything 同时搜索文件夹名和文件名[技巧] 37" title="如何使用 Everything 同时搜索文件夹名和文件名[技巧] 42"></figure></div>
 <p>来自<a href="https://meta.appinn.net/t/everything/19240" class="rank-math-link" target="_blank" rel="noopener">问题频道</a>的问题：</p>
 <p>我有一个资料的路径如下：<strong>E:\工作\工作资料\台账&amp;花名册\02.人员花名册.xlsx</strong></p>
 <p>目前我只记得住在一个 【<strong>台账</strong>】文件夹下有 一个叫【<strong>人员</strong>】的东西，请问如何搜索。</p>
@@ -26,7 +26,7 @@ https://www.appinn.com/everything-path-nopath/	43178
 <p>最后 @<a href="https://meta.appinn.net/u/Zakary" class="rank-math-link" target="_blank" rel="noopener">Zakary</a> 自己找到了解决方案。</p>
 <p>在 Everything 的<a href="https://www.voidtools.com/zh-cn/support/everything/searching/#%E4%BF%AE%E9%A5%B0%E7%AC%A6" class="rank-math-link" target="_blank" rel="noopener">修饰符</a>页面，提供了一个参数：<strong>path: / nopath: 匹配完整路径和文件名或仅文件名。</strong></p>
 <p>青小蛙也专门测试了一下，结果如下：</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/screenshot-2020-09-20-at-19-47-46.jpg!o" alt="如何使用 Everything 同时搜索文件夹名和文件名[技巧] 35" title="如何使用 Everything 同时搜索文件夹名和文件名[技巧] 40"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/screenshot-2020-09-20-at-19-47-46.jpg!o" alt="如何使用 Everything 同时搜索文件夹名和文件名[技巧] 38" title="如何使用 Everything 同时搜索文件夹名和文件名[技巧] 43"></figure></div>
 <p>在 Everything 里使用 “<strong>path:台账 人员</strong>” 和 “<strong>nopath:台账 人员</strong>” 进行搜索，结果显而易见，<strong>path:台账 人员</strong> 得到了我们需要的结果。</p>
 <p>其实青小蛙对于 <strong>path</strong> 参数的理解还不太清楚，有没有同学来一个简单的解释呢？</p>
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202009/screenshot-2020-09-20-at-19-58-11.jpg!o" alt="如何使用 Everything 同时搜索文件夹名和文件名[技巧] 36" width="451" height="312" title="如何使用 Everything 同时搜索文件夹名和文件名[技巧] 41"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202009/screenshot-2020-09-20-at-19-58-11.jpg!o" alt="如何使用 Everything 同时搜索文件夹名和文件名[技巧] 39" width="451" height="312" title="如何使用 Everything 同时搜索文件夹名和文件名[技巧] 44"></figure></div>
