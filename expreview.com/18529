@@ -56,3 +56,500 @@ var bd = 0; //描边，0或1，默认0
 var full = 0; //是否全屏，0 或 1
 var pic = ".jpg"; //图片格式
 WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><p>背板尾部，可以看到大面积的镂空处理，这与之前RTX 3080公版卡上那个经典的穿透式设计类似，也是增加气流穿透，加强散热效果。映众RTX 3090冰龙超级版仍然是将近三槽的厚度，供电方面是双8Pin供电接口，配合PCIE接口可以提供的75W，总共最多可以提供375W的供电，足够RTX 3090核心使用。</p>
+➜GeForce RTX 3090天梯榜首发评测：8K游戏玩家和重度创作者之选
+http://www.expreview.com/76161.html	46800
+<!-- CUDA,流处理器,Windows 10,热管,热管,热管,热管,热管,热管,热管,热管,热管 --><p>相信这次NVIDIA GeForce RTX 30系显卡可以说是赚尽玩家的眼球了，其全新的NVIDIA安培架构、大幅增加的CUDA核心、全新的GDDR6X显存以及升级过的Tensor Core以及RT Core对于游戏体验来说可以算是带来了翻天覆地的变化。得益于这些升级，玩家终于可以用RTX 3080在4K分辨率之下流畅的以60帧来打游戏了，但RTX 3080还远非是最强者，更加完整形态的RTX 3090才是目前消费级显卡裡的真旗舰！</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/focus.jpg" width="100%"/></p><p>RTX 3090是首个CUDA核心过万的GPU，多年前的憧憬在今天成为现实，其Tensor Core以及RT Core都比RTX 3080更多，最重要的是，RTX 3090拥有着超大的24GB GDDR6X的显存，而RTX 3080则只有10GB。</p><p>关于RTX 3080的具体表现可以在<a href="https://www.expreview.com/75997.html" target="_blank">《GeForce RTX 3080天梯榜首发评测》</a>中看到，今天的主角是更强更快更高的RTX 3090，不过还是先让笔者带大家简单回顾一下NVIDIA Ampere架构到底有些什么特别的地方吧！</p><h1>NVIDIA Ampere架构简介</h1><p style="text-align: center"><img alt="" src="https://img.expreview.com/news/2020/09/09/ampere-architecture/RTX_30_Series_JHH_Keynote_Page_30_1200.jpg" width="100%"/></p><p>这次RTX 3090显卡所用的是GA102-300是NVIDIA Ampere 架构中最为顶级以及规模最大的核心了。虽然说在GA102之上有GA100，但那是面向专业计算卡的核心，即便是RTX 3090也不会用上的。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/news/2020/09/09/ampere-architecture/GA102_1200.jpg" width="100%"/></p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var img1 = ["https://img.expreview.com/review/2020/09/zotac-3090/3090-arch.jpg", "RTX 3090核心图"]; //图片链接及说明
+var img2 = ["https://img.expreview.com/review/2020/09/zotac-3090/3080-arch.jpg", "RTX 3080核心图"];
+imgcompare(img1, img2);</script></div><p>这个使用三星为NVIDIA定制的8nm工艺打造的完整GA 102核心拥有7组GPC、一共42组TPC，每组TPC包含2组SM，所以总共拥有84个SM单元，相比起上代RTX TITAN的TU 102，GA 102多出了1组SM单元。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button class="previewtable" onclick="window.parent.showdemo()">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+title: "Founder Edition显卡规格参数对比",
+header: ["型号","RTX 3080","RTX 3090","TITAN RTX"],
+width: '92%',
+columnWidth: 'MAX', //表格单元宽度，"MAX"最大内容显示，""AVG"平均，"AUTO"自动，指定[15,16,20]
+id: tableid,
+data: [
+["核心代号","GA102-200","GA102-300","TU102"],
+["晶体管数目(亿)","283","283","186"],
+["核心面积(mm2)","628","628","754"],
+["制程 (nm)","8","8","12"],
+["GPCs","6","7","6"],
+["SMs/CUs","68","82","72"],
+["CUDA Cores/SP","8704","10496","4608"],
+["Tensor Cores","272（第三代）","328（第三代）","576（第二代）"],
+["RT Cores","68（第二代）","82（第二代）","72（第一代）"],
+["纹理单元","272","328","288"],
+["光栅单元","96","112","96"],
+["基础频率(MHz)","1440","1395","1350"],
+["Boost频率(MHz)","1710","1695","1770"],
+["单精度浮点性能 (TFLOPS)","29.8","35.6","32.6"],
+["纹理填充率 (GT/s)","465.1","566","509.8"],
+["像素填充率(GP/s)","164.2","193","169.9"],
+["显存","10GB GDDR6X","24GB GDDR6X","24GB GDDR6"],
+["显存数据速率(Gbps)","19","19.5","14"],
+["显存位宽(bit)","320","384","384"],
+["显存带宽 (GB/s)","760.3","936","672"],
+["视频接口","HDMI 2.1×1<br/>DisplayPort 1.4×3","HDMI 2.1×1<br/>DisplayPort 1.4×3","HDMI 2.0×1<br/>DisplayPort 1.4×3<br>USB-C×1"],
+["PCI-E","4.0","4.0","3.0"],
+["TGP (W)","320","350","280"],
+["推荐电源(W)","750","850","650"],
+["温度墙（℃）","83","83","84"],
+["体型设计","双槽","三槽","双槽"],
+["供电接口","12 Pin","12 Pin","8+8 Pin"],
+["发售时建议零售价","5499 RMB","11999 RMB","17200 RMB"]
+]
+});</script></div><p>而RTX 30系显卡上的SM单元相比RTX 20系的，最大变化是加倍了针对传统计算的FP21单元、引入第二代RT Core以及第三代Tensor Core。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/news/2020/09/09/ampere-architecture/image-20200910153205768.png"/></p><p>大家都知道在Turing架构中，NVIDIA整数型（INT32）和单精度浮点型（FP32）两种不同的数据类型交给两种不同的ALU进行计算。不过现代游戏应用中最为常见的还是FP32，因此为了提高计算效率NVIDIA在NVIDIA Ampere 架构上引入了可同时支持INT32或FP32两种数据类型的新ALU。也就是说，现在有两条不同的数据路径，一条能够同时处理整数或者单精度浮点，另一条则单纯处理处理单精度浮点计算。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/news/2020/09/09/ampere-architecture/RT-Core-motion-blur.jpg" width="100%"/></p><p>负责进行实时光线追踪运算的专用硬件单元RT Core在NVIDIA Ampere 架构上也更新到了第二代，最主要是增加了动态模煳的加速运算支持。NVIDIA在其中新加入的插值算法可以在保证动态模煳精确性的同时提高了实时光线追踪效率，官方表示最高可达8倍于上代的速度。另外在基础的BVH计算上，第二代RT Core也可以比第一代快2倍。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/news/2020/09/09/ampere-architecture/tensor-core-2_1200.jpg" width="100%"/></p><p>Tensor Core这个负责运行AI计算的硬件单元在NVIDIA Ampere 架构上也升级到了第三代。其实之前发布的A100计算卡上已经用上了新的第三代Tensor Core，它能够提供比第二代Tensor Core高出4倍的效能，不过游戏卡上面的Tensor Core进行了一定的精简，其FP16 FMA计算的吞吐量只有GA100核心中的Tensor Core的一半。</p><p style="text-align: center"><img src="https://img.expreview.com/review/2020/09/3080FE/re/1m.jpg" width="100%"/></p><p>而第三代Tensor Core带来的更强劲AI运算有些什么用呢? 答案就是DLSS。随着RTX 30系显卡一同发布的，还有DLSS的更新版 - DLSS 8K。顾名思义，DLSS 8K就是通过深度学习技术将画面分辨率拉伸至8K的新版DLSS，具体来说就是把1440P的画面拉伸至4320P，像素数量跨越了整整9倍。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/news/2020/09/09/ampere-architecture/gddr6x.jpg" width="100%"/></p><p>另外RTX 30系显卡也用上了NVIDIA与美光联合研发的GDDR6X显存。与GDDR6相比，GDDR6X最大的变化是信号传输机制以及增加带宽，从GDDR6的NRZ调制换用PAM4，而RTX 3080的显存带宽也达到了760 GB/s。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/news/2020/09/09/ampere-architecture/display-and-codec_1200.jpg" width="100%"/></p><p>再之后就是HDMI 2.1这个备受期待的新输出端口了。在HDMI 2.1之下，显卡可以用单线材做到8K60Hz或者4K120Hz的输出。对于想用大尺寸电视打游戏的玩家来说是一个不错的福音。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/news/2020/09/09/ampere-architecture/rtx-io-2_1200.jpg" width="100%"/></p><p>最后当然就是NVIDIA新推出的RTX IO了。这项技术是NVIDIA借助微软此前推出的DirectStorage API来实现的，将会作为插件的形式与后者整合，可以让显卡绕开CPU直接读取SSD数据，从而降低CPU的占用率。不过由于RTX IO需要依靠Windows的DirectStorage API，并且还需要游戏开发商做针对性的优化，所以最快我们也要等到明年才能看到这项技术的具体应用。</p><h1>RTX 3090：面向8K游戏玩家及重度创作者</h1><p>回到RTX 3090本身，这张NVIDIA称之为BFGPU（BIG FEROCIOUS GPU，但我更愿意称之为ＢIG F**KING GPU）的显卡在发布会上可是被当作TITAN显卡的替代者，而在NVIDIA的官方白皮书中也的确是把RTX 3090和RTX TITAN放到一起对比。它拥有82*128=10496个CUDA核心、82个第二代RT Core以及328个第三代Tensor Core，对比起RTX 3080来说每项都多出了20.6%左右。但是要说最不同的地方，恐怕就是显存了。RTX 3090用了24GB的GDDR6X显存，是RTX 3080的2.4倍，显存带宽也达到了可怕的936 GB/s，距离1 TB/s这个大关已经不远了。</p><p>而这个规格的显存本身也定位了RTX 3090本身的目前群体：想尝试8K游戏的顶端玩家以及需求大显存的创作者。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/8k-1.jpg" width="100%"/></p><p>对于站在游戏链顶端的玩家来说，2K他们已经看不上了，而4K也体验了很久，该是时候看看8K的游戏体验是怎样的了，而RTX 3090就是这么一张可以满足这些玩家愿望的显卡。相比RTX 3080，RTX 3090增加了20.6%的CUDA核心、RT Core以及Tensor Core，多了14GB的显存以及拥有NV LINK。这些硬件增幅都让RTX 3090的理论性能比RTX 3080强大不少。另外，得益于多出来的显存以及Tensor Core，NVIDIA专为8K游戏而设的DLSS 8K也终于可以派上用场。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/8k-2.jpg" width="100%"/></p><p>而RTX 3090对于重度创作者的应用就更大了，主要在渲染以及视频制作方面。在渲染一些大场景或者比较精细时，如果显存不足的话那么就需要花更多的时间才能完成渲染。如果想要保持在一定的时间内完成渲染的话，那就只能降低渲染精度，或者逐部分来进行渲染。而对于视频制作来说，在剪辑过程中需要不停的来回处理不同时间点的片段、色彩、效果以及音效等。当这些操作遇上4K或者8K的素材，以及现在愈来愈多的视频图形加速功能的话，那么对于显存就会有不少的要求。
+因此，拥有24GB显存的RTX 3090对于重度创作者们就比较友好。相对于RTX 3080，它拥有更大的24GB显存以及更强的光追性能，对于需要进行光追渲染的场景来说可以加速不少。</p><h1 style="line-height: 30.4px; white-space: normal;">索泰RTX 3090 X-GAMING OC介绍</h1><h2 style="line-height: 30.4px; white-space: normal;">索泰RTX 3090 X-GAMING OC规格</h2><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button class="previewtable" onclick="window.parent.showdemo()">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+title: "显卡基本规格",
+header: ["型号", "索泰 RTX 3090 X-GAMING OC"],
+width: '92%',
+columnWidth: 'MAX', //表格单元宽度，"MAX"最大内容显示，""AVG"平均，"AUTO"自动，指定[15,16,20]
+id: tableid,
+data:[
+["核心代号","GA102-300"],
+["流处理器单元数量","10496"],
+["基础频率(MHz)","1395"],
+["Boost频率(MHz)","1710"],
+["显存速率(Gbps)","19.5"],
+["显存类型","GDDR6X"],
+["显存容量(GB)","24"],
+["显存位宽(bit)","384"],
+["推荐电源","850W以上"],
+["视频接口","HDMI 2.1×1<br/>DisplayPort 1.4×3"],
+["供电接口","8+8 Pin"],
+["TGP(W)","350"],
+["尺寸(mm)","320*118*61"],
+["售价(元)","12699"]
+]
+});</script></div><p>笔者以手上这张索泰的RTX 3090 X-GAMING OC为例，它有10496个CUDA核心，基础频率是在1395MHz，而Boost频率则由于索泰这张显卡是超了频的，所以比公版的1695MH要高，达到了1710MHz。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/t.png"/><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/u.png"/><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/v.png"/></p><p>在显存方面，索泰RTX 3090 X-GAMING OC则是与公版一样，用了24GB的GDDR6X显存，显存位宽为384 bit、显存带宽同样为936 GB/s。显存频率则是在19.5 Gbps，比RTX 3080要高0.5 Gbps。</p><p>在视频输出接口方面，RTX 3090与RTX 3080是一样的，使用3个DisplayPort 1.4以及1个HDMI 2.1接口。这个HDMI 2.1接口在RTX 3090特别重要，因为单线HDMI 2.1可以支持最高8K 60Hz的输出，对于想在电视上体验8K游戏的玩家来说是一个非常重要的特性。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button class="previewtable" onclick="window.parent.showdemo()">预览</button><script>var title_text = "索泰RTX 3090 X-GAMING OC满载平均频率";
+var subtitle_text = "www.expreview.com ｜数值越高越好";
+var xname = "时间s"; //X轴单位
+var yname = ["MHz"]; //Y轴1单位，Y轴2单位(如果有的话)
+var leftside = "8%"; //左边空白
+var yax = 0; //是否双Y轴
+var yminmax = [20, 1900]; //Y轴最小值最大值，默认全0为自动，全1为自动以最小值数据最小值
+var fill = 0; //0-1表示填充透明度
+var sn = 5; //坐标轴分割为多少段
+var mp = 1; //是否显示最大最小值 0为不显示
+var symbolsize = 0; //数据点的大小，0为不显示
+var autocolor = 0; //是否自动颜色
+var colors = ['#5793f3', '#d14a61', '#675bba', '#A2CD5A'];
+var data_arr = [["0","满载平均频率"],["4","1965"],["7","1785"],["10","1800"],["13","1785"],["16","1755"],["19","1725"],["22","1800"],["25","1755"],["28","1740"],["31","1740"],["34","1770"],["37","1695"],["40","1755"],["43","1785"],["46","1740"],["49","1695"],["52","1740"],["55","1755"],["58","1740"],["61","1740"],["64","1785"],["67","1755"],["70","1785"],["73","1755"],["76","1755"],["79","1755"],["82","1800"],["85","1800"],["88","1725"],["91","1755"],["94","1755"],["97","1725"],["100","1755"],["103","1785"],["106","1725"],["109","1755"],["112","1755"],["115","1770"],["118","1770"],["121","1785"],["124","1740"],["127","1710"],["130","1770"],["133","1770"],["136","1740"],["139","1770"],["142","1740"],["145","1755"],["148","1785"],["151","1770"],["154","1770"],["157","1755"],["160","1770"],["163","1785"],["166","1755"],["169","1755"],["172","1785"],["175","1770"],["178","1755"],["181","1770"],["184","1770"],["187","1770"],["190","1755"],["193","1785"],["196","1755"],["199","1770"],["202","1770"],["205","1755"],["208","1785"],["211","1755"],["214","1785"],["217","1710"],["220","1800"],["223","1800"],["226","1740"],["229","1725"],["232","1785"],["235","1770"],["238","1770"],["241","1755"],["244","1755"],["247","1740"],["250","1800"],["253","1785"],["256","1785"],["259","1755"],["262","1785"],["265","1770"],["268","1770"],["271","1740"],["274","1785"],["277","1755"],["280","1815"],["283","1770"],["286","1755"],["289","1755"],["292","1785"],["295","1770"],["298","1755"],["301","1740"],["304","1785"],["307","1725"],["310","1785"],["313","1770"],["316","1770"],["319","1755"],["322","1800"],["325","1785"],["328","1740"],["331","1755"],["334","1755"],["337","1755"],["340","1800"],["343","1755"],["346","1740"],["349","1755"],["352","1800"],["355","1755"],["358","1770"],["361","1785"],["364","1755"],["367","1770"],["370","1755"],["373","1755"],["376","1740"],["379","1755"],["382","1785"],["385","1770"],["388","1785"],["391","1755"],["394","1740"],["397","1710"],["400","1800"],["403","1785"],["406","1755"],["409","1755"],["412","1785"],["415","1740"],["418","1755"],["421","1755"],["424","1755"],["427","1770"],["430","1785"],["433","1800"],["436","1770"],["439","1755"],["442","1785"],["445","1740"],["448","1755"],["451","1770"],["454","1755"],["457","1710"],["460","1785"],["463","1800"],["466","1740"],["469","1770"],["472","1785"],["475","1755"],["478","1785"],["481","1785"],["484","1755"],["487","1680"],["490","1800"],["493","1800"],["496","1755"],["499","1740"],["502","1755"],["505","1830"],["508","1770"],["511","1755"],["514","1785"],["517","1740"],["520","1800"],["523","1785"],["526","1755"],["529","1770"],["532","1770"],["535","1800"],["538","1725"],["541","1770"],["544","1770"],["547","1725"],["550","1725"],["553","1785"],["556","1770"],["559","1725"],["562","1755"],["565","1785"],["568","1755"],["571","1725"],["574","1770"],["577","1695"],["580","1755"],["583","1755"],["586","1785"],["589","1755"],["592","1770"],["595","1800"],["598","1785"],["601","1770"],["604","1770"],["607","1740"],["610","1800"],["613","1800"],["616","1770"],["619","1740"],["622","1785"],["625","1725"],["628","1755"],["631","1800"],["634","1785"],["637","1755"],["640","1800"],["643","1800"],["646","1785"],["649","1755"],["652","1770"],["655","1755"],["658","1785"],["661","1755"],["664","1755"],["667","1755"],["670","1785"],["673","1755"],["676","1755"],["679","1755"],["682","1770"],["685","1755"],["688","1755"],["691","1785"],["694","1785"],["697","1755"],["700","1755"],["703","1785"],["706","1740"],["709","1755"],["712","1785"],["715","1710"],["718","1755"],["721","1785"],["724","1785"],["727","1755"],["730","1770"],["733","1800"],["736","1785"],["739","1755"],["742","1785"],["745","1755"],["748","1770"],["751","1770"],["754","1755"],["757","1755"],["760","1725"],["763","1800"],["766","1770"]];
+ZHXInit(title_text, subtitle_text, xname, yname, leftside, yax, fill, sn, colors, data_arr, mp, autocolor, yminmax, symbolsize);</script></div><p>另外笔者也记录了这张索泰RTX 3090 X-GAMING OC在实际运行时核心频率供大家参考一下，可以看到显卡在满载时的平均核心频率是在1760MHz左右。</p><p>可能有朋友看到规格表上写着推荐至少850W的电源，但NVIDIA不是推荐750W吗？其实这是因为, 会使用RTX 3080的平台基本上不会是主流级平台，第十代酷睿i7以及第三代锐龙7处理器平台应该算是基本配置，更多玩家可能会选择在第十代酷睿i9或者是第三代锐龙9处理器平台上使用RTX 3080显卡，而这些CPU本身就是功耗大户。因此NVIDIA推荐RTX 3080显卡搭配使用750W电源是合情合理的，甚至我们可以说750W电源对于RTX 3080显卡来说只是“起步价”。</p><p>结合各种测试数据之后，我们其实更推荐大家为RTX 3080显卡配置额定功率不低于850W的电源，甚至1000W的电源其实也不为过，因为目前市场上大部分的850W电源在性能上都是比较可靠的，提供的接口也比较丰富，大家在搭配高端平台使用时可以更加安心，也有更好的升级潜力。&nbsp;</p><p>如果大家想看看为什么我们会推荐850W的电源的话, 可以看看<a href="https://www.expreview.com/76101.html" target="_blank">《750W就够用了吗？其实RTX 3080显卡值得配更好的电源》</a>这个视频了解更多。</p><h2 style="line-height: 30.4px; white-space: normal;">索泰RTX 3090 X-GAMING OC外观</h2><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/a.jpg" width="100%"/></p><p>这次RTX 30系的非公版显卡在外观上可以说是做了不少的改变，不少非公版显卡为了应对RTX 3080以及RTX 3090的发热量都把散热器做成3槽的设计，成为了名符其实的巨无霸。而既然散热器都要重新设计了，那么显卡的外壳也正好可以借此机会也改变一下，而索泰这次可以说是在显卡外观上改变得较多的了。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/b.jpg" width="100%"/></p><p>这次用于评测的索泰RTX 3090 X-GAMING OC在外观上面与上一代的X-GAMING有着非常大的差别，首先是显卡的配色。与之前的X-GAMING不同，这次索泰为RTX 3090X-GAMING OC换用了一个看上去很YOUNG的蓝粉色配色。正如之前开箱视频里有读者所说的那样，这个配色确实很有迈阿密的风格，一看就会让人想起阳光与海滩。</p><p>在尺寸方面，这张索泰RTX 3090 X-GAMING OC的长宽高为320mm*118mm*61mm。这个尺寸在RTX 30系显卡内也算是一个很正常的尺寸了，不会太长也不会过高。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button class="previewtable" onclick="window.parent.showdemo()">预览</button><script>var istart = 1; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+// var istart=['1','2','3','4','5','6'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 8; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/review/2020/09/zotac-3090/"; //图片目录
+var col = 4; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button class="previewtable" onclick="window.parent.showdemo()">预览</button><script>var istart = 9; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+// var istart=['1','2','3','4','5','6'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 14; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/review/2020/09/zotac-3090/"; //图片目录
+var col = 3 //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><p>用上了这样配色的RTX 3090 X-GAMING-OC也更加符合年轻人以及大众游戏玩家想要张扬个性的风格以及，多彩的外观也使得显卡不会死气沉沉。其正面其实是有些凹凸的设计，不过基本上都被那鲜艳的配色盖过了。虽然如此，但是这些凹凸设计还是为显卡表面增加了一些层次感。</p><p>而除了X-GAMING之外，索泰其实还有新的天启系列以及旗舰级的PGF显卡，两者在外观上也是与上一代的完全不一样，相信同样可以给到大家不少的新鲜感。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/d.jpg" width="100%"/></p><p>这张RTX 3090 X-GAMING OC的厚度达到了3槽，不过挡板是双槽的。这个厚度在RTX 30系显卡里面似乎也已经差不多成了标配，至少如果是在高度方面没有做越肩设计的话，那么基本上都是3槽的了，因为RTX 30系显卡，特别是RTX 3080以及RTX 3090的功耗都比较高，因此散热器也要做厚一点来应对。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/g.jpg" width="100%"/></p><p>像RTX 3090这个级别的显卡如果不上3风扇的话应该是压不住的，因此索泰RTX 3090 X-GAMING OC也是用了3个90mm的散热风扇。不过风扇用了黑配色，与显卡整体的配色不太符合，如果换用淡色一点的风扇整体观感会提升不少。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/e.jpg" width="100%"/></p><p>散热器外壳虽然在中间部分有一处凸出，但也不算是有越肩设计，也是属于一般显卡的高度以内。这个凸出的部分中间印有索泰英文名字的透光片，下面是一个RGB灯块，可以做出不错的RGB效果。至于长度方面，笔者量了下RTX 3090 X-GAMING的长度大概是在32cm，还没有说去到很长的地步。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/c.jpg" width="100%"/></p><p>显卡的背板也是采用了与导流罩上的相同图案和配色，而且除了「GEFORCE RTX」以「X-GAMING」这两个英文之外就没有其他多余的东西，可以说是很整洁了。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/f.jpg" width="100%"/></p><p>而在供电方面，这张索泰RTX 3090 X-GAMING OC用的是双8P接口，公版所用的12P接口是只用于公版RTX 30系显卡上的，非公版仍然会是用普通的8P接口。两个8P供电接口加上PCI-E插槽理论上最大可以提供375W的电力，对于这张TGP功耗为350W的显卡来说也是刚好足够的，不过就没有留下太多空间来超频就是了。</p><h2>索泰RTX 3090 X-GAMING OC显卡拆解</h2><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/h.jpg" width="100%"/></p><p>接下来到了显卡拆解的环节。索泰这张RTX 3090 X-GAMING OC的结构并不复杂，总共只有散热器、PCB以及背板3个部分。每个部分的螺丝位置也是清晰可见的，因此不用花多少时间就已经可以把螺丝全部卸下来。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/j.jpg" width="100%"/></p><p>首先来看看PCB。索泰RTX 3090 X-GAMING OC用的是公版的PCB，可以看到PCB上面满满都是电子元件，空间都基本上被利用尽了。这也是公版PCB的特点之一，就是在尽可能短的PCB内塞进所有的部件。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/m.jpg" width="100%"/></p><p>PCB中央就是那个硕大无朋的GA102-300 GPU核心，就是这个GPU里塞了10496个CUDA核心，以及比RTX 3080多20.6%的Tensor Core和RT Core。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/k.jpg" width="100%"/></p><p>PCB上的显存位置这次终于全部都用上了。而且除了正面，PCB的背面也有12颗显存，24颗加起来组成了RTX 3090那庞大的24GB显存。显存用的当然是NVIDIA与美光共同研发的GDDR6X，型号则是D8BGX。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/l.jpg" width="100%"/></p><p>索泰RTX 3090 X-GAMING OC用了14+4相的供电规模，MOSFET用的是来自的Alpha &amp; Omega的BLN0 911A。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/p.jpg" width="100%"/></p><p>至于供电PWM部分，用的是与公版RTX 3080 PCB上一样的uP9511R，总共有3颗，分别是正面有1颗，2颗在PCB背面。背面的2颗是用于控制核心供电的，而正面的那颗是用于控制显存供电的。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/n.jpg" width="100%"/></p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/o.jpg" width="100%"/></p><p>索泰RTX 3090 X-GAMING OC的散热器是3槽的厚度，拥有7根热管，其中两根是往显卡前面去的，而剩下的5根则是向末端去。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/i.jpg" width="100%"/></p><p>至于背板，因为PCB背面也有显存，所以上面也贴了导热贴，这也使得RTX 3090即便是在待机时，背板也会挺热的，特别是中央的部分。这也是为什么笔者建议大家在从主板上拆卸显卡的时候千万要小心，因为背板的温度是可以达到五六十度的，稍微不慎碰到的话是会烫手的。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/q.jpg" width="100%"/></p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/r.jpg" width="100%"/></p><h1 style="line-height: 30.4px; white-space: normal;">索泰RTX 3090 X-GAMING OC性能测试</h1><h2>测试平台</h2><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+align: 'left',
+width: '82%',
+padding: '8px 15px',
+header: ["测 试 平 台", ""],
+columnWidth: 'MAX', //表格单元宽度，"MAX"最大内容显示，""AVG"平均，"AUTO"自动，指定[15,16,20]
+id: tableid,
+data: [
+["<b>硬件平台</b>"],
+["CPU","AMD锐龙9 3900X"],
+["主板","ROG CROSSHAIR VIII FORMULA"],
+["显卡","RTX 3080 公版<br/>索泰 RTX 3090 X-GAMING OC"],
+["内存","芝奇 皇家戟 DDR4-3600 16GB*2"],
+["硬盘","影驰HOF Pro PCIe M.2 2TB SSD"],
+["散热器","华硕ROG STRIX LC 360 RGB一体式水冷"],
+["电源","鑫谷昆仑KL-1080电源"],
+["机箱","无"],
+["显示器","DELL UP3218K"],
+["<b>软件配置</b>"],
+["操作系统","Microsoft Windows 10 2004 64-bit"],
+["驱动","Geforce Driver 456.38"]
+]
+});</script></div><p>作为一张消费级的顶级、并且支持PCI-E 4.0的显卡，笔者这次也是选择了以AMD的锐龙9 3900X来配合这张RTX 3090来进行测试。另外由于这次会测试RTX 3090的8K游戏性能，因此笔者也是找来了目前市面上可以买到的唯一一款8K显示器，Dell的UP3218K来配合测试。至于在对比方面，目前只有RTX 3080可以作对比，所以选择了公版的RTX 3080来进行对比。</p><p style="text-align: center;"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/8k-monitor.jpg" width="100%"/><br/>8K显示器Dell UP3218K</p><h2>基准测试</h2><p>我们以3DMark作为显卡基准性能测试，测试项目包括Fire Strike、Fire Strike Extreme、Fire Strike Ultra、Time Spy、Time Spy Extreme以及Port Royal六个项目。其中Fire Strike、Fire Strike Extreme、Fire Strike Ultra三个项目分别测试的是显卡在DX11游戏中的1080p分辨率、2K分辨率和4K分辨率下的性能指数，Time Spy、Time Spy Extreme两个项目则是显卡在DX12游戏中的2K分辨率和4K分辨率下的性能指数，Port Royal是测试的显卡实时光线追踪的性能指数，具体成绩见下表，表中所列成绩均为3DMark显卡单项的得分。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button class="previewtable" onclick="window.parent.showdemo()">预览</button><script>var title_text = "显卡基准性能测试"; // 标题文字热管
+var subtitle_text = "www.expreview.com |数值越大越好  "; // 副标题文字
+var unit_text = "分 "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = null; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"FireStrike","RTX 3080":"40932","RTX 3090":"44288"},
+{"type":"FireStrike Extreme","RTX 3080":"20649","RTX 3090":"23218"},
+{"type":"FireStrike Ultra","RTX 3080":"10626","RTX 3090":"12101"},
+{"type":"Time Spy","RTX 3080":"17306","RTX 3090":"19317"},
+{"type":"Time Spy Extreme","RTX 3080":"8721","RTX 3090":"9925"},
+{"type":"Port Royal","RTX 3080":"11117","RTX 3090":"12652"},
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>从基准测试的成绩中可以看出，RTX 3090的得分平均比RTX 3080都要高出12%左右，并且在显卡压力愈大的情况下两者的成绩差距就愈大。</p><h2>4K游戏测试</h2><p>RTX 3090在游戏方面的定位是8K 60帧的，所以4K以下的游戏测试就不用看了，那肯定是完全暴打的，因此笔者就不跑1080P以及1440P的测试了，直接就以4K分辨率来跑。</p><p>在这次的9款游戏测试中，将会分别有3款传统光栅化游戏，也就是没有光追的游戏，以及6款可开启光追的游戏。所有游戏都会以最高画质来测试（《地铁：离去》选择Ultra画质）配以全屏和关闭垂直同步。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button class="previewtable" onclick="window.parent.showdemo()">预览</button><script>var title_text = "4K 光追游戏测试"; // 标题文字热管
+var subtitle_text = "www.expreview.com | 数值越大越好 "; // 副标题文字
+var unit_text = "fps"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = null; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"地铁：离去\n（光追+DLSS性能模式）","RTX 3080":"60","RTX 3090":"73.6"},
+{"type":"古墓丽影：暗影\n（光追+DLSS性能模式）","RTX 3080":"75","RTX 3090":"80"},
+{"type":"德军总部：新血脉\n（光追+DLSS性能模式）","RTX 3080":"173","RTX 3090":"179"},
+{"type":"堡垒之夜\n（光追+DLSS性能模式）","RTX 3080":"74.2","RTX 3090":"78.8"},
+{"type":"光明记忆Benchmark\n（光追+DLSS性能模式）","RTX 3080":"57","RTX 3090":"67"},
+{"type":"边境Benchmark\n（光追+DLSS性能模式）","RTX 3080":"50","RTX 3090":"54.8"},
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button class="previewtable" onclick="window.parent.showdemo()">预览</button><script>var title_text = "4K 光栅化游戏测试"; // 标题文字热管
+var subtitle_text = "www.expreview.com | 数值越大越好 "; // 副标题文字
+var unit_text = "fps"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = null; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"无主之地3","RTX 3080":"58.7","RTX 3090":"67.8"},
+{"type":"孤岛惊魂5","RTX 3080":"88","RTX 3090":"105.6"},
+{"type":"刺客信条：奥德赛","RTX 3080":"57","RTX 3090":"69.3"},
+{"type":"最终幻想：15","RTX 3080":"6818","RTX 3090":"8506"},
+{"type":"地铁：离去","RTX 3080":"60","RTX 3090":"74.3"},
+{"type":"杀手2","RTX 3080":"80.67","RTX 3090":"88.63"},
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>可以看到，在4K之下，RTX 3090与RTX 3080的帧数差距是在3.5%至24%左右。在《堡垒之夜》、《古墓丽影：暗影》以及《德军总部：新血脉》中，RTX 3090以及RTX 3080的帧数差距是最小的，分别只有6.2%、6.7%以及3.5%左右。这么小的差距其实对于笔者来说其实也是有点意外的，因为在其他的游戏里，RTX 3090比起RTX 3080都要领先10%至24%不等。</p><p>而如果说RTX 3080是面向4K 60帧的显卡的话，那么从上面的游戏测试来看RTX 3090就是一张超越了4K的显卡了。原本那些在RTX 3080时只能勉强达到4K 60帧的游戏，例如《地铁：离去》和《无主之地3》，在换上了RTX 3090之后就完全不用担心这个了，两者都可以超过60帧不少。</p><p>话虽如此，从上表其实都可以看出来，RTX 3090对比起RTX 3080的提升，其实并没有大家想像中的那么大，平均15%的性能增幅并没有像RTX 3080以30%甚至50%幅度超越RTX 2080 Ti那么夸张，而且在这次测试中，开启光追的游戏帧数提升其实并没有传统光栅化游戏的提升来得明显。</p><h2>8K游戏测试</h2><p>不过对于那些顶端玩家，那些想体验最强性能、在消费者市场最高分辨率之下游戏的壕玩家来说，RTX 3090有一点或者可以让他们心动，那就是其可以在8K，也就是4320P分辨率之下游戏。那么，实际上RTX 3090是不是真的可以在8K分辨率之下达到60帧呢？笔者这次选择了几款拥有NVIDIA最新的8K DLSS游戏以及一款没有光追没有DLSS的游戏来测试。与上面4K的测试一样，所有游戏都会以最高画质来测试配以全屏和关闭垂直同步。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button class="previewtable" onclick="window.parent.showdemo()">预览</button><script>var title_text = "8k 游戏测试"; // 标题文字热管
+var subtitle_text = "www.expreview.com | 数值越大越好 "; // 副标题文字
+var unit_text = "fps"; //单位
+var leftside = "10%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = null; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"死亡搁浅\n（光追+Ultra DLSS）","RTX 3080":"29.9","RTX 3090":"86.4"},
+{"type":"德军总部：新血脉\n（光追+DLSS Uber Performance）","RTX 3080":"0","RTX 3090":"76"},
+{"type":"极限竞赛：地平线4","RTX 3080":"58","RTX 3090":"66.7"},
+{"type":"逆水寒（光追+DLSS 超级性能）","RTX 3080":"53.8","RTX 3090":"60"},
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>从上面的测试结果中可以看出来，RTX 3090对于部分游戏的确是可以做出8K分辨率之下60帧的成绩。在《死亡搁浅》、《德军总部：新血脉》以及《逆水寒》中，在开了光追以及新的8K DLSS功能所带来的Ultra Performance DLSS选项之后之后，帧数都达到或者超过了60帧，在《死亡搁浅》中更加是达到了86帧。</p><p>那么没有光追以及DLSS的游戏呢？其实也是可以的。在《极限竞赛：地平线4》中，RTX 3090做出了在8K之下平均67帧的成绩，可以说是非常不错了。</p><p>至于RTX 3080在8K下的表现，可以看到在《极限竞赛：地平线4》其平均帧数达到了58帧，而在《逆水寒》也达到了平均54帧左右。不过在《死亡搁浅》中，平均帧数只有30帧不到，而《德军总部：新血脉》更是在从4K切换到8K时直接死机，连Benchmark也跑不了。</p><p>这也说明了，虽然在一些游戏中，RTX 3080的确有能力可以跑到50多帧，但是由于规格上的不足，因此整体上在面对8K游戏时仍然是不够看的，这时候RTX 3090的优势就展示出来了。虽然RTX 3090目前还是不能够做到全部游戏都上8K的，但是至少其足够大的显存以及硬件规格足以带给玩家在8k之下尝鲜的高端游戏体验。</p><h2>创作应用测试</h2><p>按照NVIDIA给RTX 3090的定位，除了游戏能力以外，它还是一张可以应付重度创作的生产力显卡，因此这次笔者也加入了RTX 3090在创作应用方面的测试。</p><p>由于这次RTX 3080的创作能力是很强的，它在应付大多数主流级别的创意应用已经表现非常好，上到RTX 3090更是没有压力，所以这里的创作测试，我们主要放在了需要大显存的重度创作使用上，由此来看看RTX 3080和RTX 3090之间的差距。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "重度创意应用显存占用测试 | OctaneRender"; // 标题文字
+var subtitle_text = "www.expreview.com"; // 副标题文字
+var leftside = "9%"; //左边空白
+var unit_text = "GB "; //单位
+var barh = 50; //bar的高度
+var toplegend = 30; //图例上方空白
+var mylegend = true; //是否显示图例，false为否
+var txtcolor = "#222"; //文字颜色，视频则设为白色
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色
+//var mycolor = [];    //自动随机生成颜色
+var mycolor = ["NVIDIA",2]; //自定义颜色
+//var mycolor = ['#cc0000', '#aaa', '#bbb', '#ccc', '#ddd', '#eee']; //自定义颜色
+var data_arr = [{
+"type": "RTX 3090",
+"显存": "14.1",
+"内存": "0.1"
+}, {
+"type": "RTX 3080",
+"显存": "8.7",
+"内存": "5.6"
+}];
+MBarInit(title_text, subtitle_text, leftside, unit_text, barh, toplegend, mycolor, autocolor, mylegend, data_arr, txtcolor);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "RTX 3090创作性能测试 | OctaneRender"; // 标题文字热管
+var subtitle_text = "www.expreview.com | 数字越小越好  "; // 副标题文字
+var unit_text = "秒 "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = null; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ["NVIDIA",2]; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{
+"type": "",
+"RTX 3090": "42",
+"RTX 3080": "575"
+}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "重度创意应用显存占用测试 | Blender 2.90 | Cycles"; // 标题文字热管
+var subtitle_text = "www.expreview.com | 最高值 |RTX 3080无法在Viewport之后完成最终渲染"; // 副标题文字
+var unit_text = "GB "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = null; //指定X轴最大值，null时为自动
+var autocolor = 0; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ANIColor("NVIDIA",3); //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{
+"type": "RTX 3090",
+"显存": "24",
+"Viewport": "8.5",
+"F12": "16.4"
+},{
+"type": "RTX 3080",
+"显存": "10",
+"Viewport": "8.0",
+"F12": "11"
+}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "RTX 3090创作性能测试 | Blender 2.90 | Final Render | Cycles"; // 标题文字热管
+var subtitle_text = "www.expreview.com | 数字越小越好  "; // 副标题文字
+var unit_text = "秒 "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = null; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ["NVIDIA",2]; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{
+"type": "Junkshop",
+"RTX 3090": "33.1",
+"RTX 3080（不渲染Viewport）": "37.35"
+}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "重度创意应用显存占用测试 | DaVinci Resolve | 8K RED RAW回放"; // 标题文字
+var subtitle_text = "www.expreview.com"; // 副标题文字
+var leftside = "9%"; //左边空白
+var unit_text = "GB "; //单位
+var barh = 50; //bar的高度
+var toplegend = 30; //图例上方空白
+var mylegend = true; //是否显示图例，false为否
+var txtcolor = "#222"; //文字颜色，视频则设为白色
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色
+//var mycolor = [];    //自动随机生成颜色
+var mycolor = ["NVIDIA",2]; //自定义颜色
+//var mycolor = ['#cc0000', '#aaa', '#bbb', '#ccc', '#ddd', '#eee']; //自定义颜色
+var data_arr = [{
+"type": "RTX 3090",
+"显存": "9.1",
+"内存": "2.5"
+},{
+"type": "RTX 3080",
+"显存": "8.8",
+"内存": "2.8"
+} ];
+MBarInit(title_text, subtitle_text, leftside, unit_text, barh, toplegend, mycolor, autocolor, mylegend, data_arr, txtcolor);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "重度创意应用显存占用测试 | DaVinci Resolve | 8K RED RAW回放 | 加动态模煳"; // 标题文字
+var subtitle_text = "www.expreview.com | RTX 3080报错"; // 副标题文字
+var leftside = "9%"; //左边空白
+var unit_text = "GB "; //单位
+var barh = 50; //bar的高度
+var toplegend = 30; //图例上方空白
+var mylegend = true; //是否显示图例，false为否
+var txtcolor = "#222"; //文字颜色，视频则设为白色
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色
+//var mycolor = [];    //自动随机生成颜色
+var mycolor = ["NVIDIA",2]; //自定义颜色
+//var mycolor = ['#cc0000', '#aaa', '#bbb', '#ccc', '#ddd', '#eee']; //自定义颜色
+var data_arr = [ {
+"type": "RTX 3090",
+"显存": "12.2",
+"内存": "2.5"
+},{
+"type": "RTX 3080",
+"显存": "0",
+"内存": "0"
+}  ];
+MBarInit(title_text, subtitle_text, leftside, unit_text, barh, toplegend, mycolor, autocolor, mylegend, data_arr, txtcolor);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "RTX 3090创作性能测试 | DaVinci Resolve | 8K RED RAW"; // 标题文字热管
+var subtitle_text = "www.expreview.com | 数字越小越好  "; // 副标题文字
+var unit_text = "秒 "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = null; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ANIColor("NVIDIA",3); //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{
+"type": "导出为4K YouTube",
+"RTX 3090": "12",
+"RTX 3080": "12",
+"RTX 3090+动态效果": "43"
+}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>在重度的创作工作中，对显存始终都是越大越好的，但不少创意应用其实还是挺灵活的，在当GPU的显存不足时，它们可以从系统内存共享借用，比如3D渲染软件有out-of-core的渲染机制，但系统内存与显存的性能毕竟有不小差距，在交互渲染这种会频繁数据交换的情况时，可能会影响渲染性能，所以更大显存就能放入更多渲染数据，避免要从内存借用。</p><p>在OctaneRender的测试项目里面，可以看到RTX 3080的显存已经岌岌可危了，占用到8.7GB显存，还向内存借了5.6GB，但在RTX 3090就很轻松了，约14GB的项目数据全部可以放在显存中，所以渲染起来非常快，只要42秒就可以完成，而对比下，RTX 3080却耗费9分多钟，按照两者的核心规格的差距，还不至于有那么大差距，这个情况其实验证了上述的显存不足，导致才影响到渲染性能。</p><p style="text-align:center;"><img src="https://img.expreview.com/review/2020/09/zotac-3090/3080_octa_vram.jpg" width="100%"/></p><p>Blender 2.90的做法是会优先自动根据显存上限来调整占用，在Viewport的交互预览时，RTX 3080最高可以会被占用到8GB显存，大多数时间占用都在7.7GB左右，这对10GB的总显存容量比较吃紧了，而RTX 3090就要宽松很多，即使最高占用8.5GB显存，也还占不到一半的显存总容量，如果这时候进行F12最终渲染，RTX 3090可以利用上显存的大容量优势，最高占用到16.4GB，这帮助提高了一点渲染速度，而RTX 3080会因为显存不足，导致Blender崩溃了。</p><p style="text-align:center;"><img src="https://img.expreview.com/review/2020/09/zotac-3090/3090_blend_vram.jpg" width="100%"/></p><p>而在Davinci Resolve 16中，RTX 3080在回放测试用的这段8K RED RAW素材时，显存已经不太够用了，达到了8.8GB，所以还是向内存借了点，而RTX 3090可以轻松满足素材需要的9.1GB显存。由于显存本就吃紧，RTX 3080就无法很难应付向视频素材加效果的操作，比如动态模煳效果的等级设置得太高的话，软件会提示显存不足，但RTX 3090就可以顺利设置，显存占用去到了12.2GB，完全在24GB的显存之内。</p><h2>功耗测试</h2><p>作为RTX 30系显卡里，面向大众消费者级别的最顶端显卡，RTX 3090拥有着350W的TGP功耗，可以说是近几年来见到过功耗最高的NVIDIA消费级显卡了。那么这张卡显卡实际的功耗又是多少呢？笔者以NVIDIA的PCAT功耗测试工具来测试了一下手上这张索泰RTX 3090 X-GAMING OC在待机以及满载时的功耗。显卡满载功耗在3DMark Time Spy Extreme压力测试中获得，待机功耗则是在进入系统后在桌面待机记录10分钟取平均值。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button class="previewtable" onclick="window.parent.showdemo()">预览</button><script>var title_text = "功耗测试";
+var subtitle_text = "www.expreview.com ｜数值越低越好";
+var xname = "时间s"; //X轴单位
+var yname = ["W"]; //Y轴1单位，Y轴2单位(如果有的话)
+var leftside = "8%"; //左边空白
+var yax = 0; //是否双Y轴
+var yminmax = [0, 0]; //Y轴最小值最大值，默认全0为自动，全1为自动以最小值数据最小值
+var fill = 0; //0-1表示填充透明度
+var sn = 5; //坐标轴分割为多少段
+var mp = 1; //是否显示最大最小值 0为不显示
+var symbolsize = 0; //数据点的大小，0为不显示
+var autocolor = 0; //是否自动颜色
+var colors = ['#5793f3', '#d14a61', '#675bba', '#A2CD5A'];
+var data_arr = [["0","待机功耗","满载功耗"],["1","16.883","367.287"],["5","17.271","357.726"],["9","17.282","356.452"],["13","18.744","354.38"],["17","16.982","376.951"],["21","17.075","364.792"],["25","16.498","361.681"],["29","19.208","344.63"],["33","17.078","348.994"],["37","16.523","333.349"],["41","18.81","346.647"],["45","16.993","348.623"],["49","17.759","335.978"],["53","16.895","332.558"],["57","22.582","351.456"],["61","16.267","344.813"],["65","14.91","352.175"],["69","15.034","344.282"],["73","15.324","357.645"],["77","17.277","354.21"],["81","15.783","349.616"],["85","16.116","339.726"],["89","15.136","336.775"],["93","14.849","358.873"],["97","15.633","353.097"],["101","15.084","347.433"],["105","17.771","353.902"],["109","17.682","367.511"],["113","17.09","374.31"],["117","17.566","366.142"],["121","14.988","356.857"],["125","15.631","355.927"],["129","16.115","345.111"],["133","20.172","344.608"],["137","17.578","365.282"],["141","17.76","354.097"],["145","17.09","335.328"],["149","18.149","361.599"],["153","16.241","344.882"],["157","16.012","367.69"],["161","16.214","360.407"],["165","16.498","350.02"],["169","18.259","358.217"],["173","17.564","364.458"],["177","16.621","361.626"],["181","17.671","353.103"],["185","17.662","369.479"],["189","18.328","361.053"],["193","16.302","345.249"],["197","16.425","344.101"],["201","16.058","358.761"],["205","15.34","352.395"],["209","19.702","367.226"],["213","25.214","364.895"],["217","21.524","361.971"],["221","25.294","339.648"],["225","17.09","369.101"],["229","15.72","345.548"],["233","15.829","367.343"],["237","17.192","349.624"],["241","15.917","348.485"],["245","16.496","352.81"],["249","17.558","347.839"],["253","18.439","364.092"],["257","18.731","365.453"],["261","17.869","350.715"],["265","16.795","349.989"],["269","16.894","359.03"],["273","15.928","361.351"],["277","17.488","356.034"],["281","17.382","360.321"],["285","17.785","353.984"],["289","16.957","345.613"],["293","17.282","347.795"],["297","26.555","347.705"],["301","16.506","355.078"],["305","18.159","358.101"],["309","16.916","358.719"],["313","18.742","338.664"],["317","18.244","349.902"],["321","27.785","343.209"],["325","22.883","369.955"],["329","22.034","341.46"],["333","17.479","348.082"],["337","17.578","350.212"],["341","16.323","351.841"],["345","14.766","352.091"],["349","15.722","353.766"],["353","15.14","346.332"],["357","16.596","350.366"],["361","20.947","350.942"],["365","17.578","356.095"],["369","17.081","345.726"],["373","16.588","363.643"],["377","16.594","354.996"],["381","18.261","345.382"],["385","17.671","337.467"],["389","18.158","350.028"],["393","18.642","339.088"],["397","18.797","365.13"],["401","17.378","340.979"],["405","16.319","354.28"],["409","17.863","353.764"],["413","17.758","368.436"],["417","16.776","352.622"],["421","18.155","360.887"],["425","16.905","354.448"],["429","16.886","344.225"],["433","16.199","349.023"],["437","22.026","353.817"],["441","15.826","351.982"],["445","17.865","358.802"],["449","17.273","357.954"],["453","17.271","348.571"],["457","16.107","364.471"],["461","16.108","368.849"],["465","17.564","359.049"],["469","25.11","361.5"],["473","23.264","360.053"],["477","23.756","369.927"],["481","17.67","367.724"],["485","16.602","372.986"],["489","15.046","375.675"],["493","16.597","364.666"],["497","16.974","352.874"],["501","16.301","357.997"],["505","16.209","370.304"],["509","18.45","372.124"],["513","18.26","358.89"],["517","16.304","369.872"],["521","17.575","359.094"],["525","17.863","367.871"],["529","16.811","342.808"],["533","18.458","367.611"],["537","17.864","360.791"],["541","17.366","352.633"],["545","16.698","348.202"],["549","19.238","343.54"],["553","17.663","358.984"],["557","16.229","341.577"],["561","16.216","342.946"],["565","17.374","346.22"],["569","18.051","337.808"],["573","17.671","345.2"],["577","18.445","341.401"],["581","18.452","352.791"],["585","17.994","345.763"],["589","17.378","358.446"],["593","18.383","353.696"],["597","18.635","357.41"],["601","15.331","360.346"],["605","16.217","353.243"],["609","14.925","374.602"],["613","16.312","348.928"],["617","15.533","346.676"],["621","17.565","367.611"],["625","17.111","363.59"],["629","16.136","335.095"],["633","17.277","344.466"],["637","15.925","333.171"],["641","16.422","340.942"],["645","16.333","356.422"],["649","17.38","363.926"],["653","17.667","342.874"],["657","17.079","366.328"],["661","17.966","353.836"],["665","16.978","353.631"],["669","18.655","344.204"],["673","16.822","343.24"],["677","17.498","347.402"],["681","17.57","340.051"],["685","17.001","366.893"],["689","15.815","348.053"],["693","17.468","339.634"],["697","18.25","367.897"],["701","17.083","349.112"],["705","16.302","354.16"],["709","17.37","365.564"],["713","17.382","350.291"],["717","17.778","356.1"],["721","17.583","363.887"],["725","16.119","350.314"],["729","18.086","355.897"],["733","16.505","369.012"],["737","18.364","345.57"],["741","16.597","352.428"]];
+ZHXInit(title_text, subtitle_text, xname, yname, leftside, yax, fill, sn, colors, data_arr, mp, autocolor, yminmax, symbolsize);</script></div><p>可以看到在待机时，索泰RTX 3090 X-GAMING OC的功耗为平均在18W左右，而在满载时，峰值功耗为377W左右，而平均下来则是在352W左右。加上搭载RTX 3090显卡的平台通常都是如Core i9-10900K或者锐龙9 3900X甚至3950X这样的高端平台，因此对于RTX 3090显卡来说，一个850W的电源是最基本的要求了。</p><h2>散热效果测试</h2><p>在这个环节中，笔者会以开放式平台来测试显卡的温度，测试时环境温度约为27℃。满载温度是在3DMark Time Spy Extreme测试中取得的，而待机温度则是开机以后记录10分钟。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button class="previewtable" onclick="window.parent.showdemo()">预览</button><script>var title_text = "温度测试";
+var subtitle_text = "www.expreview.com ｜数值越低越好";
+var xname = "时间s"; //X轴单位
+var yname = ["摄氏度"]; //Y轴1单位，Y轴2单位(如果有的话)
+var leftside = "8%"; //左边空白
+var yax = 0; //是否双Y轴
+var yminmax = [20, 90]; //Y轴最小值最大值，默认全0为自动，全1为自动以最小值数据最小值
+var fill = 0; //0-1表示填充透明度
+var sn = 5; //坐标轴分割为多少段
+var mp = 1; //是否显示最大最小值 0为不显示
+var symbolsize = 0; //数据点的大小，0为不显示
+var autocolor = 0; //是否自动颜色
+var colors = ['#5793f3', '#d14a61', '#675bba', '#A2CD5A'];
+var data_arr = [["0","待机温度","满载温度"],["4","50","56"],["7","50","55"],["10","50","53"],["13","49","53"],["16","49","53"],["19","49","58"],["22","49","68"],["25","49","70"],["28","48","71"],["31","49","72"],["34","48","73"],["37","48","73"],["40","49","73"],["43","48","73"],["46","48","73"],["49","48","73"],["52","49","73"],["55","49","73"],["58","48","73"],["61","48","73"],["64","48","73"],["67","48","73"],["70","49","74"],["73","49","73"],["76","49","73"],["79","49","73"],["82","49","73"],["85","49","73"],["88","49","73"],["91","49","73"],["94","49","73"],["97","49","73"],["100","49","73"],["103","49","73"],["106","49","73"],["109","50","73"],["112","50","73"],["115","50","74"],["118","50","73"],["121","50","73"],["124","50","73"],["127","50","73"],["130","50","73"],["133","50","73"],["136","50","73"],["139","50","73"],["142","50","73"],["145","50","74"],["148","50","73"],["151","50","73"],["154","50","73"],["157","50","73"],["160","50","73"],["163","50","73"],["166","50","73"],["169","50","73"],["172","50","73"],["175","50","73"],["178","50","73"],["181","50","73"],["184","50","73"],["187","50","73"],["190","50","73"],["193","50","72"],["196","50","73"],["199","50","72"],["202","50","72"],["205","50","72"],["208","50","73"],["211","50","72"],["214","50","73"],["217","50","72"],["220","50","72"],["223","50","72"],["226","50","72"],["229","50","72"],["232","50","72"],["235","50","72"],["238","50","72"],["241","50","72"],["244","50","72"],["247","50","72"],["250","50","72"],["253","50","72"],["256","50","72"],["259","54","72"],["262","55","72"],["265","52","72"],["268","51","71"],["271","51","72"],["274","51","72"],["277","51","71"],["280","51","72"],["283","51","72"],["286","51","72"],["289","51","72"],["292","51","72"],["295","51","72"],["298","51","71"],["301","51","72"],["304","51","72"],["307","51","72"],["310","51","72"],["313","51","72"],["316","51","72"],["319","51","72"],["322","51","72"],["325","51","72"],["328","51","71"],["331","51","72"],["334","51","72"],["337","51","72"],["340","51","72"],["343","51","72"],["346","51","71"],["349","51","72"],["352","51","72"],["355","51","72"],["358","51","71"],["361","51","72"],["364","51","72"],["367","51","71"],["370","51","71"],["373","51","72"],["376","51","72"],["379","51","72"],["382","51","72"],["385","51","72"],["388","51","72"],["391","51","71"],["394","51","72"],["397","51","71"],["400","51","71"],["403","51","72"],["406","51","71"],["409","51","72"],["412","51","72"],["415","51","72"],["418","51","72"],["421","51","72"],["424","51","72"],["427","51","71"],["430","51","72"],["433","51","72"],["436","51","71"],["439","51","71"],["442","52","72"],["445","52","72"],["448","52","72"],["451","52","72"],["454","52","72"],["457","52","72"],["460","52","71"],["463","52","72"],["466","52","72"],["469","52","71"],["472","52","72"],["475","52","72"],["478","52","72"],["481","52","72"],["484","52","72"],["487","52","72"],["490","52","72"],["493","52","72"],["496","52","72"],["499","52","71"],["502","52","72"],["505","52","72"],["508","52","72"],["511","52","72"],["514","52","72"],["517","52","72"],["520","52","72"],["523","52","72"],["526","52","72"],["529","52","72"],["532","52","72"],["535","52","72"],["538","52","72"],["541","52","72"],["544","52","73"],["547","52","73"],["550","52","73"],["553","52","73"],["556","52","73"],["559","52","73"],["562","52","73"],["565","56","73"],["568","53","73"],["571","52","73"],["574","52","73"],["577","52","73"],["580","52","73"],["583","52","73"],["586","52","72"],["589","52","72"],["592","52","73"],["595","52","73"],["598","52","72"],["601","52","73"],["604","52","73"],["607","52","73"],["610","52","72"],["613","52","73"],["616","52","72"],["619","52","72"],["622","52","73"],["625","52","73"],["628","52","72"],["631","52","73"],["634","52","73"],["637","52","72"],["640","52","72"],["643","52","73"],["646","52","73"],["649","52","72"],["652","52","73"],["655","52","73"],["658","52","73"],["661","52","73"],["664","55","73"],["667","55","73"],["670","53","73"],["673","52","73"],["676","52","73"]];
+ZHXInit(title_text, subtitle_text, xname, yname, leftside, yax, fill, sn, colors, data_arr, mp, autocolor, yminmax, symbolsize);</script></div><p>由于索泰RTX 3090 X-GAMING OC是拥有风扇智能停转功能，其风扇在60度以下是不会转的，因此可以看到待机温度会慢慢的一直往上升。至于满载时的温度，这张RTX 3090的最高温度为74度，但是大部分时间平均下来是在72.5度左右，可以说是温度控制得不错了。这时候风扇转速只是在60%左右，因此如果是想让显卡温度更低的玩家也可以把风扇转速调高一点。不过有一点要注意的是，这是在开放式平台上测出来的成绩，如果是在封闭式机箱中的话，那么显卡温度会进一步升高。</p><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/thermal.jpg" width="100%"/></p><p>另外也的确可以看到，因为PCB背面的显存是透过背板散热的，因此在运行游戏时背板也是非常热的，显存附近的位置快接近70度了，因此哪怕是在关机后也要小心不要触碰这块背板。</p><h2>风扇转速及噪音</h2><p>那么，60%左右的转速就是多少RPM呢？在索泰RTX 3090 X-GAMING OC上就是大概在1800 RPM左右。在满载的时候，可以看到由于温度有些微变化，因此风扇的转速也是从1750 RPM到1820 RPM之间反复来回。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button class="previewtable" onclick="window.parent.showdemo()">预览</button><script>var title_text = "风扇转速";
+var subtitle_text = "www.expreview.com ｜数值越低越好";
+var xname = "时间s"; //X轴单位
+var yname = ["RPM"]; //Y轴1单位，Y轴2单位(如果有的话)
+var leftside = "8%"; //左边空白
+var yax = 0; //是否双Y轴
+var yminmax = [0, 0]; //Y轴最小值最大值，默认全0为自动，全1为自动以最小值数据最小值
+var fill = 0; //0-1表示填充透明度
+var sn = 5; //坐标轴分割为多少段
+var mp = 1; //是否显示最大最小值 0为不显示
+var symbolsize = 0; //数据点的大小，0为不显示
+var autocolor = 0; //是否自动颜色
+var colors = ['#5793f3', '#d14a61', '#675bba', '#A2CD5A'];
+var data_arr = [["0","满载风扇转速"],["1","0"],["5","0"],["9","1008"],["13","1011"],["17","1265"],["21","1419"],["25","1520"],["29","1588"],["33","1635"],["37","1664"],["41","1688"],["45","1704"],["49","1710"],["53","1729"],["57","1730"],["61","1732"],["65","1741"],["69","1755"],["73","1755"],["77","1752"],["81","1758"],["85","1761"],["89","1764"],["93","1770"],["97","1773"],["101","1770"],["105","1767"],["109","1779"],["113","1782"],["117","1782"],["121","1788"],["125","1791"],["129","1794"],["133","1785"],["137","1791"],["141","1794"],["145","1791"],["149","1800"],["153","1801"],["157","1801"],["161","1795"],["165","1813"],["169","1807"],["173","1810"],["177","1813"],["181","1803"],["185","1803"],["189","1810"],["193","1813"],["197","1810"],["201","1810"],["205","1810"],["209","1813"],["213","1810"],["217","1813"],["221","1803"],["225","1813"],["229","1813"],["233","1800"],["237","1803"],["241","1813"],["245","1806"],["249","1800"],["253","1800"],["257","1800"],["261","1797"],["265","1806"],["269","1800"],["273","1797"],["277","1800"],["281","1803"],["285","1794"],["289","1794"],["293","1794"],["297","1791"],["301","1791"],["305","1791"],["309","1797"],["313","1785"],["317","1791"],["321","1797"],["325","1788"],["329","1788"],["333","1791"],["337","1782"],["341","1782"],["345","1785"],["349","1788"],["353","1785"],["357","1782"],["361","1776"],["365","1779"],["369","1779"],["373","1782"],["377","1779"],["381","1782"],["385","1782"],["389","1779"],["393","1776"],["397","1779"],["401","1776"],["405","1773"],["409","1779"],["413","1773"],["417","1776"],["421","1773"],["425","1770"],["429","1773"],["433","1776"],["437","1767"],["441","1767"],["445","1776"],["449","1773"],["453","1764"],["457","1767"],["461","1770"],["465","1767"],["469","1767"],["473","1764"],["477","1770"],["481","1770"],["485","1761"],["489","1773"],["493","1773"],["497","1770"],["501","1764"],["505","1758"],["509","1770"],["513","1764"],["517","1764"],["521","1761"],["525","1767"],["529","1773"],["533","1764"],["537","1770"],["541","1770"],["545","1773"],["549","1779"],["553","1776"],["557","1770"],["561","1770"],["565","1779"],["569","1779"],["573","1782"],["577","1779"],["581","1782"],["585","1785"],["589","1782"],["593","1791"],["597","1794"],["601","1788"],["605","1788"],["609","1797"],["613","1797"],["617","1785"],["621","1797"],["625","1797"],["629","1797"],["633","1791"],["637","1794"],["641","1791"],["645","1797"],["649","1797"],["653","1797"],["657","1803"],["661","1813"],["665","1807"],["669","1809"],["673","1803"],["677","1809"],["681","1812"],["685","1819"],["689","1812"],["693","1806"],["697","1809"],["701","1812"],["705","1809"],["709","1819"],["713","1809"],["717","1813"],["721","1809"],["725","1816"],["729","1816"],["733","1813"],["737","1813"],["741","1813"],["745","1819"],["749","1819"],["753","1807"],["757","1810"],["761","1816"],["765","1819"],["769","1816"],["773","1809"],["777","1819"],["781","1809"],["785","1806"],["789","1816"],["793","1813"],["797","1809"],["801","1809"],["805","1809"],["809","1812"],["813","1809"],["817","1797"],["821","1806"],["825","1800"],["829","1797"],["833","1797"],["837","1803"],["841","1794"],["845","1794"],["849","1797"],["853","1794"],["857","1797"],["861","1797"],["865","1785"],["869","1794"],["873","1788"],["877","1785"],["881","1782"],["885","1779"],["889","1779"],["893","1785"],["897","1785"]];
+ZHXInit(title_text, subtitle_text, xname, yname, leftside, yax, fill, sn, colors, data_arr, mp, autocolor, yminmax, symbolsize);</script></div><p>而如果把装有这张RTX 3090的开放式平台搬到境噪音约为30 dBA的房间的话，那么满载时的噪音水平在600mm距离之外听，大概是在41.6 dBA左右，只有风扇低沉的旋转声，可以说是相对安静的了。而如果是在封闭式机箱内的话，那么显卡的噪音也会进一步下降，加上一般玩家的电脑使用环境也会比30 dBA吵闹点，两者结合的话显卡的噪音就更不明显了。</p><h2>超频测试</h2><p style="text-align: left;">而在超频方面，笔者先把风扇RPM拉满百分百，把温度和TDP限制拉到上限，最终可以把显卡核心频率超到+140MHz，显存频率则超到等效20.6Gbps并且通过3DMark Time Spy Extreme测试。</p><p style="text-align: center;"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/+140-+600.jpg" width="100%"/></p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button class="previewtable" onclick="window.parent.showdemo()">预览</button><script>var title_text = "显卡超频测试"; // 标题文字热管
+var subtitle_text = "www.expreview.com |数值越大越好  "; // 副标题文字
+var unit_text = "分 "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = null; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"Time Spy Extreme","索泰 RTX 3090 X-GAMING OC 默频":"9925","索泰 RTX 3090 X-GAMING OC 超频":"10363"},
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>在这个幅度之下，索泰这张RTX 3090 X-GAMING OC在Time Spy Extreme中的显卡得分为10363分，比默频时高4%左右。这个超频的成绩换算到游戏里的话，可能只有1到2帧左右的差距，因此笔者其实也不太建议大家手动超频的，毕竟这样做的性价比不高，而且索泰RTX 3090 X-GAMING OC的双8P供电在一定程度上其实也限制了它的超频能力。</p><h1>8K游戏玩家及重度创作者的最佳选择</h1><p style="text-align: center"><img alt="" src="https://img.expreview.com/review/2020/09/zotac-3090/s.jpg" width="100%"/></p><p>NVIDIA Ampere架构所带来的性能提升在RTX 3090中展现得淋漓尽致。作为一张旗舰中的旗舰显卡，RTX 3090所拥有的的硬件规格仅次于专业卡所用的完整版GA102核心，比最接近的RTX 3080都要高出不少。而这也顺理成章的让RTX 3090成为NVIDIA的新一代卡皇。</p><p>RTX 3090比起RTX 3080提高了20.6%的CUDA核心、Tensor Core以及RT Core再加上其24GB的超大显存，这些特性也使它成为体验8K游戏以及专业重度创作者的首选。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script src="https://img.expreview.com/js/gpumin.js" type="text/javascript"></script><script type="text/javascript" src="https://topic.expreview.com/GPU/switch.js?20200924"></script><script type="text/javascript" src="https://topic.expreview.com/GPU/chart4.js"></script><script>GPUInit(10,"GeForce RTX 3090^admin");</script><script src="//topic.expreview.com/GPU/chart.js" type="text/javascript"></script></div><p>对于8K游戏来说，RTX 3090增加的Tensor Core以及RT Core配合新的8K DLSS，可以将部分游戏带到8K分辨率让玩家体验，并且帧率也还不错，可以做到流畅60帧游戏，这在以前是根本做不到的。</p><p>而RTX 3090更多的CUD核心、Tensor Core以及RT Core对于支持RTX 加速技术的创作应用来说可以起到极大的加速作用。不过要说对创作者来说最有用的，还是那24GB的超大显存。RTX 3080的10 GB显存虽然已经不少，但是在重度的创作应用中其实很多时候还是不够的，例如在进行8K RED RAW创作时会导致创作应用需要借用系统内存从而在交互渲染这种会频繁数据交换的情况时，会出现传输瓶颈和堵塞，使得GPU核心运算无法正常发挥出来。而RTX 3090的24GB显存就正好可以完美解决这个问题。</p><p>对于那些只是需要在4K或以下分辨率打游戏的玩家、或者是没有那么高创作强度的创作者来说，一张RTX 3080或许会是一个不错的选择，但是对于更高端的玩家以及经常需要重度创作的创作者们来说，只有显存更大以及规格更强的RTX 3090才足以真正满足他们的要求。RTX 3090的价格比RTX 3080更高（比如索泰这张RTX 3090 X-GAMING OC售价为12699元），但是随之而来的各种规格升级可以保证玩家以及重度创作者不论在游戏或者是创作时都可以拥有一个最佳的体验。</p><p>RTX 3090作为新一代真旗舰，屹立在当今显卡食物链的最顶端，已然是“一览众山小”，它是目前显卡架构、设计、制造最顶尖技术下的最杰出代表，下一个比它更强的显卡，或许在两年后或是三年后，而现在，我们需要做的是，安静地欣赏它在游戏领域和创作应用中的绝代风采。<br/></p>
+➜[视频] NVIDIA RTX 3090显卡评测：8K游戏、重度创作它都行
+http://www.expreview.com/76187.html	46920
+<p>作为NVIDIA这次RTX 30系GPU的超大杯，RTX 3090在全新Ampere架构下，有着夸张的10496个CUDA单元，以及高达24GB显存，NVIDIA表示它为8K游戏和重度创作而生的，那它的实际表现又是怎样？这个首发评测为你揭晓。</p><p style="text-align:center;"><img src="https://img.expreview.com/news/2020/09/24/rtx_3090_tit.jpg" width="100%"/></p><p>本视频无sponsor</p><p>如果你喜欢我们的视频，帮忙发弹幕、转发扩散吧，如果你不喜欢，请提建议帮助我们做得更好，先关注我们的频道，一起进步吧。</p><p>视频带有简体中文字幕，但需要到bilibili网站使用新版播放器查看，另外原站点可以支持最大4K分辨率播放，画质更佳，推荐使用。</p><p style="text-align: center;"><iframe src="//player.bilibili.com/player.html?aid=839729234&bvid=BV1V54y117BX&cid=238614070&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="620"> </iframe><script>if(IsMobile()){
+jQuery("iframe").attr("height",jQuery("#post_body").width() * 9 / 16);
+}
+else jQuery("iframe").attr("height", jQuery("#post_body").width() * 9 / 16 + 120);</script></p><p>手机通道：<a href="https://www.bilibili.com/video/BV1V54y117BX/" target="_blank" textvalue="哔哩哔哩">哔哩哔哩</a></p>
