@@ -1,0 +1,29 @@
+➜华为云更新AI开发平台，ModelArts 3.0上线
+http://www.sohu.com/a/420849406_355019	36884
+<p>华为云在人工智能领域一直有长期投入，ModelArts便是华为云给开发者打造的一站式AI开发平台，帮助开发者快速创建和部署模型，管理全周期AI工作流。</p>
+<p>如今，距离ModelArts诞生已走过2个年头，在2020华为全联接大会上，华为带来了重磅升级的ModelArts 3.0。相比于上一代ModelArts，这一次ModelArts 3.0 有以下几个新特点：</p>
+<p><strong>1. EI骨干模型</strong></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200925/941ae3a7e61844709dab57b903aee2c0.jpeg" max-width="600" /></p>
+<p>配合华为云骨干工具链EI-Backbone，用少量数据即可训练高精度模型，模型自动选择，参数配置自动调优，可以辅助开发者轻松完成模型训练。理想情况下，标注成本和训练成本能降低 90% 以上。</p>
+<p><strong>2. 联邦学习</strong></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200925/74ea09990c8b48d4a6d1e62044281db3.jpeg" max-width="600" /></p>
+<p>数据是AI应用的基础，只有基于多样化的数据，才能实现AI智能感知。然而，在实际AI行业落地中，数据是分散在不同的数据控制者之间，这就导致了行业应用的数据孤岛问题，使得AI算法训练效果受到限制。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>华为云Modelarts 提供了联邦学习特性，实现数据不出户的联合建模。用户各自利用本地数据训练，不交换数据本身，只用加密方式交换更新的模型参数，实现协同训练，加强模型准确度。</p>
+<p><strong>3. 模型智能评估、诊断 </strong></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200925/da7bec487f8d4854b25b7aaab6d5e16c.jpeg" max-width="600" /></p>
+<p>ModelArts提供了全面的可视化评估、智能化诊断功能，使得开发者可以直观的了解模型的各方面性能，尤其是在精度、性能、可解释性和可信度方面，进而开发者可以针对性的进行调优或部署生产。</p>
+<p><strong>4. 提高资源利用率</strong></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200925/ea0774f11af54a2b848b4c9260b6e02e.jpeg" max-width="600" /></p>
+<p>以前随着深度学习分布式训练的不断发展,各类模型的训练对于计算设备的需求越来越大。但由于代码质量问题、模型参数设置不合理或者整体资源池的使用频率等问题，会导致训练作业的资源还没有被充分利用。</p>
+<p>现在弹性训练是ModelArts的核心能力之一，可以根据模型训练速度的需求自适应实现资源的最佳分配。为了更好地支持超大算力需求的AI研发，华为ModelArts平台在集群规模，任务数量，以及分布式训练都做了针对性的优化。</p>
+<p>通过优化服务框架，ModelArts平台支持10万级别的作业同时运行、支持万级芯片的大规模分布式任务。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200925/ffceb5faa0fe4741ac976802927ad978.jpeg" max-width="600" /></p>
+<p>在华为眼中，联接、计算、云和AI技术就像100多年前的电力，而行业应用就像家用电器和工业电气。放眼未来，决定各行各业竞争力的关键就在于如何驾驭这些数字技术，构建行业应用。开发者无疑是推进这一进程，加速智能升级的核心力量。华为一直想要成为未来科技的管道，就必须要服务好开发者，用ModelArts平台，让开发者避免“重复造车轮”，更聚焦价值创造。</p>
