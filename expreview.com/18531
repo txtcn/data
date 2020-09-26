@@ -12,3 +12,6 @@ Gogh的新代码，其中绝大多数是GPU寄存器的自动生成的头文件�
 Next功能，这是Navi 2的新增功能，说明GPU就是Navi 2，可能Navi
 2核显需要较高的内存带宽所以先出的Cezanne用的还是Vega核显，但Van Gogh的CPU内核为啥要用Zen 2就看不懂了。</p><p style="text-align: left;">现在所知道的是，Van Gogh会采用改良版的7nm工艺，所以会有更好的能耗比与更高的频率，CPU其实要比现在的Zen
 2要强一点，但TPD在7.5-18W之间，基本上可以判断不会有桌面版本，只有U系列的移动低功耗版本，此外它还支持CVML，具备一定的AI计算能力。</p>
+➜英特尔发布Elkhart Lake低功耗SoC系列，专为物联网设备设计
+http://www.expreview.com/76200.html	9144
+<p>英特尔发布了其新的“ Elkhart Lake”低功耗SoC系列，该系列专为各种物联网设备（例如边缘服务和应用程序）而设计。新处理器基于英特尔最新的低功耗Tremont微架构打造，具有Gen 11核显以及丰富的I/O功能。&nbsp;&nbsp;</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/09/26/1m.jpg" width="100%"/></p><p>Elkhart Lake系列产品包括Atom x6000E以及Celeron和Pentium的J和N系列处理器。该系列规格最高的SoC具有四个Tremont内核，它们以1.90GHz的基频运行，具有1.5MB高速缓存，具有多达32个执行单元的Gen 11核显和高达12W的TDP。&nbsp;&nbsp;</p><p>英特尔最新的低功耗Tremont内核以及Gen 11核显与前代相比，可以在CPU密集型应用程序中表现出1.5到1.7倍的性能提升，在3DMark11表现出两倍的核显性能提升。由于物联网设备的更换时间较长，一般都会服役7到10年时间，所以这样的性能提升非常重要。</p><p>但是，真正使新型Elkhart Lake系列SoC不同于其前代产品和竞争对手产品的是处理器自身的I/O功能以及其平台控制器中枢（PCH）以及其他芯片。除了支持传统PC接口（如PCIe 3.0 x2、2.5GbE，DisplayPort，eDP，HDMI和USB Type-A / Type-C）之外，它还支持UFS 2.0，eMMC 5.1，SD和SPI / eSPI接口，这些接口在移动设备和物联网设备中很常见。&nbsp;</p><p>Intel Atom x6000E，Celeron J / N 6000系列和Pentium J / N6000系列处理器支持所有现代操作系统。此外，它们还受到Intel的OpenVINO工具包以及Media SDK的支持。 英特尔表示，已经有100多家合作伙伴会在其Atom x6000E，奔腾以及赛扬N和J系列SoC的基础上交付最终产品。</p>
