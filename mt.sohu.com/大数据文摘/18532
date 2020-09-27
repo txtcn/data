@@ -1,0 +1,127 @@
+➜在家做核子研究：怎么DIY一个粒子检测器
+http://www.sohu.com/a/421183805_308467	22056
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200927/9b75900a948440a29e6993baf6d9f13f.png" max-width="600" /></p>
+<p><strong>大数据文摘出品</strong></p>
+<p><strong>来源：clanhouse</strong></p>
+<p><strong>编译：肥恬儿、coolboy</strong></p>
+<p>如果把你和16岁的儿子关在家里，你们会做什么？</p>
+<p>好吧，第一个答案可能是造一个<strong>游戏PC</strong>，但现在DIY游戏PC的项目太多，有其他一些不一样的东西吗？</p>
+<p>或许，可以试着做一个<strong>粒子探测器</strong>？</p>
+<p>这个叫Steve Foster的博主在网上碰巧看到了一篇介绍欧洲核子研究中心(CERN)外联项目的文章，这个项目说，你能以<strong>不到30英镑的价格</strong>打造你自己的粒子探测器？？</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200927/3d19ec0d977844109f967077f10bd569.png" max-width="600" /></p>
+<p>GitHub链接：</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>https://github.com/ozel/DIY_particle_detector</p>
+<p>不过，感觉也挺值得尝试一番？</p>
+<p>于是，Steve Foster就和儿子一起，捣鼓着DIY了一个粒子探测器，过程中肯定也遇到了一些困难和好玩的事，接下来就和文摘菌一起来看看吧。</p>
+<p><strong>需要购买的组件</strong></p>
+<p>其实要DIY一个CERN套件并没有那么困难，你可以在kitspace上订购需要的零件。但问题是，你能用30欧元（27英镑）左右的价格搭建出来吗？</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200927/24477134aab6417f90d7fea6b8573dc4.png" max-width="600" /></p>
+<p>kitspace链接：</p>
+<p>https://kitspace.org/boards/github.com/ozel/diy_particle_detector/electron-detector/</p>
+<p>单个组件的价格自然在30欧元以下了，但只购买单个组件显然是不够的，有时候你必须购买10个电阻器，因为它们太便宜了，到最后，3便士的零件你可能前前后后花费了30便士。（这消费主义的陷阱）</p>
+<p>其中，最大的惊喜是，你<strong>最好购买三块电路板</strong>，实际经验告诉你这会物有所值的，尤其是，如果你对自己的焊接技能不自信的话，可以准备一块备用板，正好Alpha检测器型号也可以用同一块板。</p>
+<p>总的来说，所有电子元件的成本几乎都不到40英镑。如果你要购买一个有十几块板的经典模型，整体价格将接近每块木板33英镑/37欧元。</p>
+<p>除了上面的零部件外，你还可以考虑购买一些<strong>自选零件</strong>。</p>
+<p>我们在亚马逊上以大约8英镑的价格购买了<strong>链接BNC</strong>（连接器）和<strong>音频插孔的电缆</strong>，因为这样一来就比从头开始构建整个模型来得更快，更容易并且更便宜。</p>
+<p>我们还购买了一些现在工具箱里没有的工具。你可能更愿意以6英镑左右的价格购买<strong>金属盒或包装盒</strong>，但我建议可以使用<strong>旧的罐子或类似的物品</strong>代替。我们用的是我妻子在圣诞节时收到的Fossil手表上的展示盒。</p>
+<p>为了在外壳中安装板子，你需要某种<strong>金属支架</strong>。我们在亚马逊上以约11英镑的价格购买了一盒M3黄铜支架，不仅具有各种长度，并且包括所有必要的螺钉和螺栓。（120个组件，仅需一个！）然后你还需要一些较短的连接线——总计约30厘米。（温馨提示：如果你需要在购买过程中订购所有这些物品，那么Amazon Prime绝对物有所值。）</p>
+<p>最后，你需要某种<strong>放射源</strong>来尝试检测器。我们在亚马逊上以不到5英镑的价格购买了<strong>100克高纯度的氯化钾（KCl）</strong>，这价格明显比亚马逊上也有较高钾含量的富含钾的盐替代品更好。</p>
+<p><strong>你还需要哪些工具</strong></p>
+<p>上面列举的都是一些专业零件，还有一些基础零件也不能忘了。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200927/f713ec6a42ac47c4a144fad379d737f6.png" max-width="600" /></p>
+<p>开始之前，请确保你拥有所有需要的工具：</p>
+<ul>
+<li class="ql-align-justify">带有小尖头并且适用于组件和电路板的烙铁</li>
+<li class="ql-align-justify">拆焊泵和编织带（以防万一）</li>
+<li class="ql-align-justify">用于在焊接组件时整理多余的电线的小型剪钳</li>
+<li class="ql-align-justify">整理接线末端的剥线钳</li>
+<li class="ql-align-justify">用于测试接头和检查电路板的小型万用表</li>
+<li class="ql-align-justify">在旧的锡盒上打孔的打钉机</li>
+<li class="ql-align-justify">用于锉掉刚打的孔上尖锐边缘的锉刀</li>
+<li class="ql-align-justify">进行焊接时，用来固定电路板和组件的物件。我们用的是旧的墙砖和六角铅笔</li>
+</ul>
+<p><strong>让我们来动手构造一个探测器吧！</strong></p>
+<p>我们<strong>在大约3周的时间里每天花了大约3个小时</strong>来制作电路板，也许还要花一个小时来制作机箱并将把电路板安装到里面。</p>
+<p>为什么这么久呢？好吧，这个项目对于一个16岁的年轻人来说，和制造游戏PC的吸引力还是很不同的，做游戏PC通常比这个项目来得更有干劲儿。</p>
+<p>话归正转，我们现在决定<strong>将组件成组焊接</strong>。首先制造电阻器，然后制造电容器，之后是半导体。Wiki中的构建说明书非常好用，跟着步骤做就行了。</p>
+<p>我们在焊接时<strong>测试了每个接头</strong>，并且从电路板上的另一点也进行测试，以确保连接没有问题。我儿子在一块PCB上进行了所有焊接，而我开始在第二块板上进行工作，一部分用作备份板，另一部分可以构成Alpha检测器的基础。</p>
+<p>（同时我悲催的发现了这两样在第三个组件R3上已经是不一样的组装构造了！）</p>
+<p>以下是不同建设阶段的一些镜头：</p>
+<p class="ql-align-justify"><strong>第一阶段</strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200927/bd62f0907d154e3b9ec6e2dd1bbce6d6.png" max-width="600" /></p>
+<p>底部电阻</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200927/77e20890e34c4ca3a9e8847739443a7f.png" max-width="600" /></p>
+<p>顶部电阻</p>
+<p class="ql-align-justify"><strong>第二阶段 </strong></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200927/df60ff2f728542e6a1dc8224047acda7.png" max-width="600" /></p>
+<p>电容器底部</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200927/341264eb28614d1a98c9378c82c2900a.png" max-width="600" /></p>
+<p>电容器顶部</p>
+<p class="ql-align-justify"><strong>第三阶段</strong></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200927/7c32a56c41564874bc6d71e3a55d2ac0.png" max-width="600" /></p>
+<p>成品的底部</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200927/c98225503410489fab1d53da471b526b.png" max-width="600" /></p>
+<p>成品的顶部</p>
+<p class="ql-align-justify"><strong>第四阶段 </strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200927/50daa2120007434d8bd51934e4232206.png" max-width="600" /></p>
+<p>带有开关，电池和连接器的完整探测器</p>
+<p><strong>探测器测试</strong></p>
+<p>测试检测器时，要做的第一件事是通过<strong>测量电源连接器上的电阻</strong>来确保没有短路， （技能get！一个令人满意的9.8千欧姆），并确保电源已到达板上。</p>
+<p>然后我们将它插入PC并打开电源。</p>
+<p>接着我们<strong>用JavaScript的脉冲检测器来检查它是否正常工作</strong>。我轻按了开关，……居然什么也没有。</p>
+<p>因此，我们检查了电路板。有些焊接处看起来很干，而在另外一两个焊接处上，我们不能百分百确定相邻焊接处之间是否有气隙，因此我们<strong>只好拆焊并重新制作了大约3个焊接</strong>。</p>
+<p>然后，我们再次连接到PC，并在打开和关闭设备时看到了令人满意的脉冲。当锡罐被移动或当我们中的一个人靠近锡罐讲话时，我们还看到了很多拾音器。</p>
+<p>OK，那么下一步就是尝<strong>试使用辐射源</strong>。</p>
+<p>我称出约10g氯化钾放入一个塑料盖中，并<strong>放在检测器中的二极管下方</strong>。虽然我们没有在锡的盖子上开一个辐射窗，但是二极管就在氯化钾表面上方约1.5厘米处。接着我打开了检测器，哎…什么都没有，甚至没显示开/关脉冲。</p>
+<p>看到探测器似乎没啥反应， 我只好将设备拆开并重新测试了与万用表的连接，并所有外壳连接都是可以的，以及检查外壳是正确接地的。我检查了电池的电是否都通到每一个必备的部件，也看了一下电池电量是良好的。检查完这一圈，还是没发现哪里有错。</p>
+<p>不过很快地，我就发现了一个<strong>间歇性问题</strong>。有时，当设备打开或关闭时，JavaScript检测器会看到一个脉冲，但是其实并没有东西在检测。有时你会在网络示波器上看到噪音，有时却看不到。</p>
+<p>于是当我在摸索到底出了什么问题时， 我终于想到，<strong>或许可以尝试收听音频输出</strong>，这在Windows下就是一件微不足道的事情。</p>
+<p>还真的是！打开设备后，我会听到白噪声，每过20-30秒，就会听到轻声的咔嗒声。显然，检测器正在工作，只不过是因为软件的问题。</p>
+<p><strong>论一台旧电脑和声卡的重要性</strong></p>
+<p>我不得不说，在尝试使检测器工作时，Oliver Keller太给力了。有一说一，听他说一些关于音频连接和声卡的建议真的很重要。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200927/029367ba764b46cca34ec95cace3410c.png" max-width="600" /></p>
+<p>GitHub主页双手奉上：</p>
+<p>https://github.com/ozel</p>
+<p>问题在现代PC中的声卡（或芯片）太过智能了。它们主要任务是优化Skype和Zoom的麦克风输入，但这也意味着<strong>消除了恰好是探测器发出的信号噪声和多余的喀哒声</strong>。</p>
+<p>因为现代技术假设检测器信号为有害噪声，所以我需要一些原始技术。我有一台旧的笔记本电脑——<strong>Asus EeePC901</strong>，大约是十年前买的。多年来，它一直兢兢业业的成为我的实验工具人。</p>
+<p>比如说， 我试过把它的内存升级到2GB，又把可笑的小型4GB SSD换成32GB。我还通过多个版本的Ubuntu将它从Windows XP Home升级到Windows 10 Home。你可能会惊讶于这样的机器居然可以运行Windows 10和MS Office，只不过虽然可以运行，但是效果不佳。</p>
+<p>不仅如此，我又将它备份（对VMWare进行了虚拟化），并安装了Lubuntu的新副本。我还在FireFox下启动了网络示波器，此时我们终于有一个可以正常工作的检测器：</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200927/70459241f0434a53aeae31698e2f1ac3.png" max-width="600" /></p>
+<p>你可以在屏幕截图中清楚地看到检测器脉冲。</p>
+<p>噪声有时会达到峰值，并可能导致读数错误，但这些噪声是很容易被发现的。虚假脉冲是单边的，没有真实脉冲的回弹峰。</p>
+<p>从大约25克的氯化钾中，我发现检测器每分钟有两到三个脉冲。</p>
+<p><strong>那么，接下来呢？</strong></p>
+<p>OK，既然检测器能工作了，接下来还能用它来做什么？</p>
+<p>我们首先考虑的计划是<strong>尝试Python</strong>，确保我们可以看到并正确分析KCl的能谱， 然后将尝试各种措施以<strong>减少电气噪声</strong>。我怀疑锡会向内部泄漏一点光，但是可以用黑色胶带来补救。</p>
+<p>第三步将从我在探测器中，对收集的<strong>小型矿物质</strong>进行实验——那里肯定有放射性的东西。</p>
+<p>第四步会很有趣。不知道你是否听说过古老的格言，即<strong>香蕉也具有放射性？</strong>我们计划通过测量一团即美味又富含钾的香蕉的β衰减率来证明这一点！</p>
+<p>请大家拭目以待吧！</p>
+<p>相关报道：</p>
+<p class="ql-align-justify">https://clanhouse.com/cern-at-home-building-a-particle-detector</p>
+➜确诊乳腺癌后，她用AI做乳腺癌筛查和药物发现，还获得了100万美元AI促进奖
+http://www.sohu.com/a/421184992_308467	22676
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200927/f1f73adbefdd4441aebb01836e96adff.png" max-width="600" /></p>
+<p><strong>大数据文摘出品</strong></p>
+<p><strong>来源：mit.edu</strong></p>
+<p>人工智能领域也有“诺贝尔奖”了？</p>
+<p>一百多年来，每年都有诺贝尔奖表彰化学，文学，医学，和平与物理学方面的突破性成就。随着这些学科无疑继续影响社会，人工智能（AI）和机器人技术等新兴领域也开始深刻地重塑世界。</p>
+<p>近日，世界上最大的AI学会-人工智能促进协会（AAAI）宣布，设立最新的<strong>Squirrel AI人工智能奖</strong>，以造福人类。<strong>该奖项旨在奖励通过人工智能工作，对社会产生实质性变革的个人，奖金为100万美元</strong>，因此也被不少媒体人称为<strong>人工智能届的诺贝尔奖</strong>。</p>
+<p>第一年的获奖者Regina Barzilay是麻省理工学院电气工程和计算机科学的Delta电子学教授，也是麻省理工学院计算机科学和人工智能实验室（CSAIL）的成员，<strong>她因开发机器学习模型来开发抗生素和其他药物而受到认可，并在早期发现和诊断乳腺癌</strong>。</p>
+<p>本周，AAAI将正式向Barzilay颁发该奖项，并附有由在线教育公司Squirrel AI提供的100万美元的相关奖励。 </p>
+<p>AAAI奖项委员会主席Yolanda Gil表示：“只有世界知名的认可，例如计算机协会AM图灵奖和诺贝尔奖，才能获得数百万美元的金钱奖励。” “该奖项旨在表彰人工智能对人类的积极影响方面的独特性。” </p>
+<p>Barzilay对计算机科学的各个主题进行了研究，范围从可解释的机器学习到破译濒危语言。</p>
+<p>Barzilay对医疗领域的兴趣源于6年前的一次亲身经历。2014年，Barzilay被诊断为乳腺癌，幸运的是，由于发现时间早，她最终在乳腺癌中幸存下来以来。</p>
+<p>之后，Barzilay开始思考，如何让更多患者能够更早的发现乳腺癌，也开始投身于这个医疗项目。她<strong>创建了用于早期乳腺癌诊断和风险评估的算法</strong>，目前已在全球多家医院（包括瑞典，台湾和波士顿的马萨诸塞州综合医院）进行了测试。现在，她正在与巴西的Protea研究所等乳腺癌组织合作，为世界各地的贫困人口提供诊断工具。（她从工作中意识到，如果当时存在像她这样的系统，她的医生实际上可以在两三年前发现她的癌症。） </p>
+<p>与此同时，她<strong>一直致力于开发机器学习模型用于药物发现</strong>：与合作者她创建模型的治疗选择分子候选人已经能够加快药物开发，并帮助去年发现一种新的抗生素——Halicin。这是所示能够杀死许多对抗生素具有抗药性的致病细菌，包括鲍曼不动杆菌和艰难梭菌（“ c-diff”）。 </p>
+<p>“通过我自己的生活经验，我意识到我们可以创造出可以减轻人类痛苦并改变我们对疾病的理解的技术，”Barzilay说，“我很高兴能找到能够分享我的热情并帮助我实现这一愿景的合作者。”</p>
+<p>Barzilay在获得以色列内盖夫本古里安大学的学士学位和哥伦比亚大学的博士学位后，于2003年加入麻省理工学院。她还获得了麦克阿瑟“天才奖”，美国国家科学基金会职业奖，微软学院奖学金，该领域的多个“最佳论文”奖以及麻省理工学院的杰米森奖（卓越奖）。</p>
+<p>来源：</p>
+<p>https://news.mit.edu/2020/regina-barzilay-wins-aaai-squirrel-ai-award-artificial-intelligence-0923</p>
