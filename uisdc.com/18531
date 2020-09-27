@@ -1,0 +1,239 @@
+➜如何做一个可靠有效的AB测试？从这两方面入手！
+https://www.uisdc.com/ab-test	57612
+<p>AB测试的好处相信每个互联网从业者多少应该都知道，简单的说就是设置几组不同方案比较，通过上线后的数据判断哪个效果好。操作方式看着很简单，但想要做一个可靠有效的AB测试并不是这么简单，只有掌握一定的实验设计和统计学知识才可能完成一个有效的AB测试。接下来就从实验设计和统计这两方面讲解如何有效的做AB测试。</p>
+<p>在电商做用研经常会接到交互或设计关于想知道用户喜欢哪个的灵魂提问，面对这样的问题用研大部分时候通过访谈让用户表达偏好，可现实是用户说的和心里想并不一样，这就要求在访谈的时候不能只关注用户说喜欢哪个，要去深挖背后原因、该场景的心理模型、排除额外因素影响等等。因此，要回答这样一个问题往往至少要8个以上用户，对用户各种回答总结分析才能得到相对客观可用的结论，看似简单的提问在实际操作中成本其实很高。其实除了访谈外，我们还可以借助眼动仪、脑电等仪器和内隐实验测试了解用户真实的反应，不过这些总归是在成本和效率不能适应快节奏的要求。</p>
+<p>AB测试能很好的解决这些问题，不仅“见效快，而且疗效好”。AB测试的好处相信每个互联网从业者多少应该都知道，简单的说就是设置几组不同方案比较，通过上线后的数据判断哪个效果好。操作方式看着很简单，但想要做一个可靠有效的AB测试并不是这么简单，只有掌握一定的实验设计和统计学知识才可能完成一个有效的AB测试。当然开发埋点等这些资源也很重要，但不是本文做讨论。接下来就从实验设计和统计这两方面讲解如何有效的做AB测试。</p>
+<p>AB测试严格的说是一种相对简单的实验研究。实验研究是人为地创设一定的情境，从而操纵或控制变量变，基本目的在于解释变量之间的因果关系，即回答“为什么”的问题。实验研究有严格的研究设计，包括样本选择、研究的情境和方式、实验程序、设计方法等等，以保证实验结果的科学性。因此，对于AB测试要保证实验效果，同样需要对实验关键要素做好把控才能获得准确的结论。不过，AB测试毕竟是线上进行的快速验证实验，在有些地方是不可能与实验室研究相一致的，我们这里只关注实验的样本选择和设计方法。</p>
+<h4><span class="auto_menu">样本确认</span></h4>
+<p>样本确认从准确性和数量两个方面入手，准确性是指针对实验目标群体的圈选，数量则是实验最低选择的样本数量。大多数情况下，我们在进行AB测试时是在某个具体场景下进行的，在群体圈选上也都是在该场景下随机选择一定样本给予不同处理，这种情况下样本的准确性基本可以不用考虑了，不会出现偏差。因此样本选择的重点就是在数量的控制上，落到线上的实验就是流量的分配上。我们的目标是希望尽快完成测试获得结论做决策，另外就是希望收益最大化，所以我们在流量分配时要有所权衡，区分以下几种情况：</p>
+<ul>
+<li>不影响用户体验类：这类的实验一般只是在做感知层面的改动，不会造成严重的用户障碍，比如UI实验、文案类测验等，这类的测试可以均匀分配流量，可快速达到想要的效果;</li>
+<li>不确定性强的实验：这类实验主要是在操作或流程上有较大变动，会因为与现有用户习惯存在差异可能导致较大的数据波动，比如产品新功能或新版本上线，这类实验一般需要小流量实验，在允许的时间范围内得到结论;</li>
+<li>希望收益最大化的实验：这类实验大部分多数有较确定的方向或手段，只是无法确定哪个方向和手段的效果更好，比如运营活动等，这时应尽可能将效果最大化，一般分配较大流量，预留小部分做对照组评估ROI即可;</li>
+</ul>
+<p><span class="img-zoom"><img alt="如何做一个可靠有效的AB测试？从这两方面入手！" class="alignnone size-full wp-image-390166" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ab-20200924-1.jpg" width="640" height="264" /></span></p>
+<p>根据实验的假设和预期，实验的用户量可以通过统计检验的公式去推算最小用户量是多少，根据要检验的变量水平不同使用不同的检验公式。下面这个公式是根据实验目标计算样本量的：</p>
+<p><span class="img-zoom"><img alt="如何做一个可靠有效的AB测试？从这两方面入手！" class="alignnone size-full wp-image-390167" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ab-20200924-2.jpg" width="225" height="84" /></span></p>
+<p>其中，Zα/2 和 Zβ可以通过查表求得，根据检验样本所服从的分布不同去查找相应的表格，我们多数用的是T检验和卡方检验。S是样本标准差，即我们要做检验的那群样本的标准差。 （μx &#8211; μ0）是我们要检验的差值，其中μx可以理解为要测试的那群样本均值，μ0是测试目标要达到的均值。我们根据自己有的数据带入公式就能计算出所需样本量了。</p>
+<p>其实我们可以通过一个专门的网站来计算所需要的样本量，这里又分为两种情况，一种是比率型的数据验证，一种是数值型的验证：比率型的数据，包括转化率、留存率、点击率等都是可以的。以转化率为例，某个页面的转化率为11.8%，预期改动后能提升0.2pp，网站计算出来的最小样本量是67.8W，如果页面每天的流量是20W，那至少要4天以上的时间才能验证实验结论。这里要注意预期提升效果的设定，为了保证实验能有结果，这里可以低估，不可高估，因为高估后的样本需求量会极剧缩小，会严重影响实验结果。</p>
+<p><span class="img-zoom"><img alt="如何做一个可靠有效的AB测试？从这两方面入手！" class="alignnone size-full wp-image-390168" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ab-20200924-3.jpg" width="640" height="419" /></span></p>
+<p>数值型的数据，比如人均时长、客单价等。数值型的会更复杂一些，需要用T检验，这里需要们多次尝试计算样本量，这里其实还是需要用到公式里面的值，需要将对比的平均数、标准差填到工具中，平均数我们分别填写当前的数据和预期的数据，图中我填写的左边是11秒，右面填写预期是12.5秒。标准差这里则都填写大盘的标准差，也就是公式里面的S。样本量上左边填写大盘的每日样本数，右边就需要进行尝试变动，直到下方显着变化时就是最小样本数。</p>
+<p><span class="img-zoom"><img alt="如何做一个可靠有效的AB测试？从这两方面入手！" class="alignnone size-full wp-image-390169" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ab-20200924-4.jpg" width="640" height="573" /></span></p>
+<h4><span class="auto_menu">实验设计</span></h4>
+<p>确定样本量后，其实只是确定需要投入的时间，影响实验效果和结论的是我们如何去设置实验方案。这里我们从三个变量讲解如何设计好一个实验。</p>
+<p>首先是因变量的确定。很多情况下做测试我们没有真正搞清楚要验证的目标变量是什么，只是提出一个设想就开始了测试，而拿到数据不知道怎么分析验证了。比如，某会场目标是分流，交互和设计侧也做了很多策略，但上线拿到数据后却不知如何下手分析了，不知道“分流”该怎么去评判。其实问题就出在没有事先将目标和数据变量关系理清楚。那怎么去解决这个问题呢？这里采用一个定义和一个模型来完成因变量的确定。</p>
+<p>一个定义是“操作性定义”，它是指可以一个概念由测定他的程序来下定义。例如，上面提到的“分流”，测定方式是有多少流量进入到了二级页面，多少流量进入二级页面这个指标就是页面的点击率，点击率越高说明分流的效果就越好。那我们在设计实验和验证效果的时候就可以从提升点击率上入手。</p>
+<p>一个模型是“GSM”模型，分别是目标（Goal）、信号（Signal）和测量（Metirc）。根据模型我们通过目标对应到用户或者产品会出现的信号，这个信号对应某些用户和产品的行为现象，而这个行为现象的出现就有一定的测量指标反应出来。还是用“分流”的例子，页面分流效果增加这个是目标，这个目标下用户会更多的去到其他分会场或者子页面，这个用户的行为现象就对应了每个坑位的点击会更多，相应的就是点击率的提高。</p>
+<p><span class="img-zoom"><img alt="如何做一个可靠有效的AB测试？从这两方面入手！" class="alignnone size-full wp-image-390170" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-ab-20200924-5.jpg" width="640" height="234" /></span></p>
+<p>确定完因变量，接着就是自变量操纵了。自变量简单来说就是咱们做ab测试中要改变的那个因素，可以是交互方式、页面设计、新功能等等。自变量在理解上没什么问题，但我们会遇到自变量操纵程度和数量上的错误。操纵程度是指有些变量变化幅度不够，不能引起因变量的改变。比如，通过改变字体大小去提升用户点击，如果大小变化不够是无法引起用户注意的，自然也不会有想要的实验结果。自变量数量是指同时改变几个影响变量，如通过字体颜色和利益点共同去提升点击，其中的字体颜色和利益点就是2个变量，而这两个变量怎么搭配就需要根据变量的水平数和实验方式去设计，不同的实验设计又对应着不同的统计处理方法，如果展开又可以是一个复杂的篇幅。因此关于自变量个数，我们最好就只设置一个变量，这样得到的结论会更有说服力。至于其他变量的控制，就是接下来要说的额外变量了。</p>
+<p>最后要讲的额外变量的控制，这个往往是容易被忽视但也是最难的部分。我们在做AB测试的时候都有意识的把出了自变量以外的影响因素给控制好，可有时等到数据收回来才发现有些额外的因素影响或者有些因素根本没能力去控制。这个时候我们要掌握常用的几种额外变量处理手段，以达到纯粹的测试目标。</p>
+<p>第一种是“消除法”，即把额外变量排除出去。例如，我们实验测试遇到大促，而大促对页面点击转化都会有很大影响，这个时候就要考虑避开，将大促影响排除。</p>
+<p>第二种是“恒定法”，即使额外变量在实验中保持恒定不变。例如，我们打算对比不同的楼层查看方式对点击转化的影响，其中坑位数量是一个额外的影响因素，这个是时候我们就要保证用户在不同组上看到的商品坑位数是一样的，即保持额外因素的恒定。</p>
+<p>第三种是“统计控制法”，就通过一定的统计学手段排除额外变量的干扰。比如在大促期间做测试，必然会因为每年大促投入资源影响对比，这个时候可以通过回归或者协方差分析的方法排除一下每年大促增长对实验页面数据影响。当然除了以上3种外还有一些实验设计的方式去排除额外变量影响，这个方法就是配合自变量提前做好实验设计即可。</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>最后来总结一下，做好一个AB测试主要从2方面入手：一是样本确认，确定测试最小的样本数，保证实验验证效果；二是实验设计，分别从因变量的确定、自变量的操控和额外变量的控制做好设计。以上这些就是如何做好AB测试前期设计的要点，后面我们还要对不同设计做数据分析和效果检验，要知道如何设计多变量的方案，如何选择合适的统计分析方法，如何计算测试ROI等问题，如果这篇文章大家反馈比较多的话，下期再继续分享实验设计和数据分析方法的问题。</p>
+<p>[link https://www.uisdc.com/understand-multivariate-testing]</p>
+<p>欢迎关注「京东设计中心JDC」的微信公众号：</p>
+<p><span class="img-zoom"><img alt="如何做一个可靠有效的AB测试？从这两方面入手！" class="alignnone size-full wp-image-260728" src="https://image.uisdc.com/wp-content/uploads/2018/02/uisdc-jd-20180219-1.jpg" alt="如何定义栅格？来看京东的实战案例！" /></span></p>
+➜喜欢宫崎骏？吉卜力工作室放出400 张动画剧照免费下载！
+https://www.uisdc.com/studio-ghibli	57677
+<p>如果你喜欢宫崎骏作品，现在吉卜力将这些动画剧照释出，让使用者免费下载使用。</p>
+<p><span class="img-zoom"><img alt="喜欢宫崎骏？吉卜力工作室放出400 张动画剧照免费下载！" class="alignnone size-full wp-image-390295" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jp-20200926-1.jpg" width="1171" height="800" /></span></p>
+<p>吉卜力工作室（Studio Ghibli）官网9/18贴出公告：从本月开始，将按顺序提供吉卜力工作室的所有动画作品剧照，这个月会先开放八部作品，主要是较近期的动画，总共400张剧照免费下载。只要「在常识范围内」就能自由使用，但网站没有详细解释何谓常识范围，一般来说个人使用应该没有问题，若用于商业用途可能就必须事先询问或申请。</p>
+<p><span class="img-zoom"><img alt="喜欢宫崎骏？吉卜力工作室放出400 张动画剧照免费下载！" class="alignnone size-full wp-image-390296" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jp-20200926-2.jpg" width="1171" height="800" /></span></p>
+<p>第一波开放的作品包括回忆中的玛妮、辉耀姬物语、风起、来自红花坂、借物少女艾莉缇、崖上的波妞、地海战记、神隐少女一共八部动画，每部都提供50 张高画质动画剧照，可从吉卜力工作室官方网站找到图片预览，放大后就能下载取得原始图片。</p>
+<h4>スタジオジブリ｜STUDIO GHIBLI</h4>
+<p>网站链接：<a href="http://www.ghibli.jp/">http://www.ghibli.jp/</a></p>
+<p><strong>使用教学</strong></p>
+<p>开启「スタジオジブリ作品一覧」可以找到吉卜力工作室作品一览（或是在最新情报底下找到相关链结），如果有标示「作品静止画」代表该作品目前有开放免费下载使用的动画剧照。</p>
+<p><span class="img-zoom"><img alt="喜欢宫崎骏？吉卜力工作室放出400 张动画剧照免费下载！" class="alignnone size-full wp-image-390297" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jp-20200926-3.jpg" width="1343" height="800" /></span></p>
+<p>吉卜力工作室释出400 张动画剧照免费下载</p>
+<p><strong>STEP 2</strong></p>
+<p>在作品页面下方就会找到吉卜力工作室释出的动画剧照预览图。</p>
+<p><span class="img-zoom"><img alt="喜欢宫崎骏？吉卜力工作室放出400 张动画剧照免费下载！" class="alignnone size-full wp-image-390298" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jp-20200926-4.jpg" width="1171" height="800" /></span></p>
+<p><span class="img-zoom"><img alt="喜欢宫崎骏？吉卜力工作室放出400 张动画剧照免费下载！" class="alignnone size-full wp-image-390299" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jp-20200926-5.jpg" width="1171" height="800" /></span></p>
+<p>点选后开启更大张的图片，看得出来这次释出的剧照相当有诚意，不仅高画质而且没有太复杂的操作流程，在图片上另存图片将它储存后就能使用，图片格式为.JPG影像。</p>
+<p><span class="img-zoom"><img alt="喜欢宫崎骏？吉卜力工作室放出400 张动画剧照免费下载！" class="alignnone size-full wp-image-390300" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-jp-20200926-6.jpg" width="1171" height="800" /></span></p>
+<p>除了梗图迷因以外这些吉卜力工作室的剧照还能做什么用途呢？欢迎分享你的想法。</p>
+<p><strong>值得一试的三个理由：</strong></p>
+<ul>
+<li>吉卜力工作室释出400 张动画剧照图片供使用者免费下载</li>
+<li>除了大家熟悉的宫崎骏，也有工作室旗下其他脍炙人口作品</li>
+<li>只要「在常识范围内」就能自由使用这些素材</li>
+</ul>
+<p>[link https://www.uisdc.com/10w-museum-materials]</p>
+➜如何做好图片标签设计？来看Vivo设计总结的三部曲！
+https://www.uisdc.com/picture-label-design	59843
+<h4><span class="auto_menu">缘起</span></h4>
+<p>最近组内设计评审，视频和小说两个业务都涉及到在图片上显示标签（Tag）的设计，但是Tag的样式和位置却不完全不同，如下图所示：</p>
+<p><span class="img-zoom"><img alt="如何做好图片标签设计？来看Vivo设计总结的三部曲！" class="alignnone size-full wp-image-390319" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-bq-20200926-1.jpg" width="833" height="800" /></span></p>
+<p>加之对其他产品中图片上Tag的位置和样式各异的印象，不由得引发了我的思考，到底什么位置，何种样式的标签设计才是更合适的设计？这背后的设计逻辑又是什么？</p>
+<h4><span class="auto_menu">竞品分析</span></h4>
+<p>带着这样的疑问，我打开了手机中Top3的视频和小说App，通过分析整理，发现竞品主要采用了以下4种图片Tag样式。</p>
+<p><span class="img-zoom"><img alt="如何做好图片标签设计？来看Vivo设计总结的三部曲！" class="alignnone size-full wp-image-390320" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-bq-20200926-2.jpg" width="1080" height="239" /></span></p>
+<p>注：孤立式标签设计，是指标签与背景图片的边缘都有一定的距离。半贴边式标签则是指标签和背景图片某一条边重合。全贴边式标签则是指标签的两条边与背景图片都重合。</p>
+<p>从设计效果上来看，孤立式标签的醒目度要明显高于贴边式设计。</p>
+<blockquote><p>在《想象力-构图与创作思维》一书中，黄朝贵老师曾指出：孤立会起到强调作用，就像太阳和月亮悬挂在高空一样，孤立元素的重量感会因此增强。</p></blockquote>
+<p>而贴边式的标签，因为和图片边缘直接相连，更容易与图片背景融为一体。</p>
+<p>从方位上看，Tag靠左会比靠右更为醒目，因为符合用户自然的视线流动规律，毕竟多数用户都是从左向右浏览的。所以当标签位于左上角位置时，会加剧标签的视线聚焦效应。</p>
+<h4><span class="auto_menu">设计分析</span></h4>
+<p>分析完竞品的视觉呈现效果以后，我们再回来接着探讨：Tag之于小说或视频的意义？思考到底应该以什么形式，在什么位置展示标签呢？</p>
+<p>对于视频或小说而言，图片封面是信息的主体，Tag信息是对主体信息某一维度的强调，目的是为了更好的凸显主体的关键特性，辅助用户决策。</p>
+<p>既然Tag是辅助用户决策的因素，那我们可以从Tag的重要性、出现频率、背景图片大小3个维度来展开分析：</p>
+<h5>1. 重要性</h5>
+<p>根据重要性，我们把标签分为三大类：</p>
+<p><strong>首要决策因素：</strong>指用户主要根据这个因素来进行决策，比如热度、评分、排行榜等。当Tag用于展示首要决策因素时，Tag的醒目度在少遮挡内容的前提下越醒目越好。如榜单，所有App无一例外都放置在了图片的左上角，以凸显排名信息。</p>
+<p><span class="img-zoom"><img alt="如何做好图片标签设计？来看Vivo设计总结的三部曲！" class="alignnone size-full wp-image-390321" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-bq-20200926-3.jpg" width="1080" height="354" /></span></p>
+<p><strong>重要决策因素：</strong>指虽然并非用户的首要决策因素，但用户会因此而选择or放弃此对象，所以有必要把这个决策因素以醒目的方式呈现给用户，比如直播、广告、VIP、预告、完本、更新等。避免用户选择进入详情后，才发现不符合诉求，还要退出后重新选择，影响决策效率。对于重要决策因素的Tag，根据Tag出现的频率，可以灵活的决定其位置。</p>
+<p><span class="img-zoom"><img alt="如何做好图片标签设计？来看Vivo设计总结的三部曲！" class="alignnone size-full wp-image-390322" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-bq-20200926-4.jpg" width="1080" height="502" /></span></p>
+<p><strong>刺激性决策因素：</strong>指通常不是用户的固有决策因素，但在某些情况下，会刺激用户进行临时决策。比如限免、独播、自制、热映等。这些标签是产品侧希望传达给用户，提升转化的一种刺激手段，对于产品运营来说比较重要，但对于用户来说，重要性相对较低，所以一般建议放置在右侧，采用全贴边的设计形式。</p>
+<p><span class="img-zoom"><img alt="如何做好图片标签设计？来看Vivo设计总结的三部曲！" class="alignnone size-full wp-image-390323" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-bq-20200926-5.jpg" width="1080" height="798" /></span></p>
+<h5>2. 频率</h5>
+<p>首要决策因素不受频率影响，可以始终位于比较醒目的左上角区域突出显示。</p>
+<p>重要性决策因素和刺激性决策因素，和出现频率直接相关：如果出现频率低，为了凸显Tag可以考虑居左强化显示，如果出现频率非常高，则要考虑降低对主体信息的干扰，尽量靠右且弱化显示。</p>
+<p>此外，还有一类与内容主体密切相关的基本信息，它始终伴随内容主体而出现，比如视频时长、剧集集数、综艺期数、观看数等，因为它是主体的基本信息，出现频率接近100%，所以一般出现时会建议置于内容底部，并以更弱化的视觉形式展示（此类基本信息Tag不在我们本次讨论的范围之内）。</p>
+<h5>3. 背景图片大小</h5>
+<p>此外，还有一个考虑因素是背景图片的大小。因为标签的大小一般相对固定，当背景图片越大，同一位置和样式的标签醒目度就会越低。所以如果只在某些大图上有标签，可以根据标签的重要性，适当强化其显示效果。</p>
+<p><span class="img-zoom"><img alt="如何做好图片标签设计？来看Vivo设计总结的三部曲！" class="alignnone size-full wp-image-390324" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-bq-20200926-6.jpg" width="1080" height="281" /></span></p>
+<h4><span class="auto_menu">结论</span></h4>
+<p>综上所述，我们可以总结出图片Tag设计的3步曲：</p>
+<p><strong>1. 梳理Tag类型及优先级</strong></p>
+<p>根据Tag的重要性、出现频率和背景图片大小，决定各类Tag的优先级：首要决策因素Tag＞重要决策因素Tag＞刺激性决策因素Tag。</p>
+<p><strong>2. 对照Tag醒目度量表，决定Tag位置及形式</strong></p>
+<p>标签位置醒目度：左上＞右上</p>
+<p>标签形式醒目度：孤立式标签＞半贴边式标签＞全贴边式标签</p>
+<p>首要决策因素的Tag：一般建议采用左侧全贴边式标签。（在不遮挡内容的前提下，也可以考虑孤立式和半贴边式标签）</p>
+<p>重要决策因素的Tag：可左可右，看是否会与首要决策因素冲突，以及其出现的频率高低。（若与首要决策因素冲突，则建议居右，出现频率很高也建议居右）</p>
+<p>刺激性决策因素的Tag：一般建议采用右贴边的标签设计，减少用户的视觉干扰。（如果不存在首要及重要决策因素，刺激性决策因素也可以适当升级其醒目度）</p>
+<p><strong>3. 设计具体Tag样式</strong></p>
+<p>根据前面的推导，探索Tag具体的视觉效果，除了中规中矩的圆角矩形外，常见的Tag样式还有以下形式：</p>
+<p><span class="img-zoom"><img alt="如何做好图片标签设计？来看Vivo设计总结的三部曲！" class="alignnone size-full wp-image-390325" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-bq-20200926-7.jpg" width="1080" height="374" /></span></p>
+<p>当然，设计师也可以根据标签的属性，或者产品的品牌符号，自定义适合的Tag样式，以满足产品个性化的诉求。</p>
+<p>更多Vivo 出品的文章：</p>
+<p>[link https://www.uisdc.com/vivo-overseas-browser-revision]</p>
+<p>[link https://www.uisdc.com/vivo-browser-revision-design]</p>
+<p>欢迎关注作者微信公众号：「VMIC UED」</p>
+<p><span class="img-zoom"><img alt="如何做好图片标签设计？来看Vivo设计总结的三部曲！" class="alignnone size-full wp-image-381269" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-ew-20200723-1.jpg" alt="大厂如何做设计？来看vivo海外浏览器的实战案例" width="180" height="182" /></span></p>
+➜设计LOGO没想法？腾讯高手的A+B方法让你创意爆棚！
+https://www.uisdc.com/5-logo-ideas	63063
+<p>设计没有想法？不知道该怎么发挥自己的创意？想到了一点什么内容，但不知道该如何下手？</p>
+<p><span class="img-zoom"><img alt="设计LOGO没想法？腾讯高手的A+B方法让你创意爆棚！" class="alignnone size-full wp-image-390176" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-lg-20200924-1.jpg" width="1080" height="482" /></span></p>
+<p>今天跟大家分享的一个A+B的创意图形思考方法，我在日常工作中也偶有使用，相信看完对你的设计图形非常有帮助，甚至你会忍不住亲自画两个logo试试。</p>
+<h4>技法剖析</h4>
+<p>使用A图形+B图形，通过重新结构、组合，正负型交替设计，得到最终想要的创意图形，下面分享下我在日常设计中，提炼的几种组合方式。</p>
+<h4><span class="auto_menu">A. 直接组合</span></h4>
+<p>结合A、B两种图形的表达，简单直接的组合在一起，这种方式我们在日常绘制icon 时非常常见。</p>
+<p><strong>案例：用一个图标表达即时聊天</strong></p>
+<p>A图形：聊天通话首先想到的是气泡，B图形：快速即时想到的是闪电。基于2个基础概念输出基础形体，然后再进行融合，得到最终的图形设计</p>
+<p><span class="img-zoom"><img alt="设计LOGO没想法？腾讯高手的A+B方法让你创意爆棚！" class="alignnone size-full wp-image-390177" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-lg-20200924-2.jpg" width="1080" height="752" /></span></p>
+<h4><span class="auto_menu">B. 提取亮点组合</span></h4>
+<p>A和B各取一个亮点进行融合，最终可以表达出A或B的图形意象，但也可以作为第三种类型的表意使用。</p>
+<p><strong>案例：游戏+星球</strong></p>
+<p>A图形：使用游戏手柄中的按键来表达游戏感的延伸，B图形：使用带有光环的星球来表达宇宙感觉。如下：</p>
+<p><span class="img-zoom"><img alt="设计LOGO没想法？腾讯高手的A+B方法让你创意爆棚！" class="alignnone size-full wp-image-390178" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-lg-20200924-3.jpg" width="1080" height="752" /></span></p>
+<h4><span class="auto_menu">C. 相似形体组合</span></h4>
+<p>A和B的图形外轮廓相似度需达到90%以上，或者A与B或者B与A其中一个细节的相似度较高，将A和B进行结合得出一个较有创意的新图形。</p>
+<p><strong>案例：表情气泡</strong></p>
+<p>最为常见的一个表现就是带有情感的气泡设计，气泡中融入了表情的设计，使得图标更加具有情感化。</p>
+<p><span class="img-zoom"><img alt="设计LOGO没想法？腾讯高手的A+B方法让你创意爆棚！" class="alignnone size-full wp-image-390179" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-lg-20200924-4.jpg" width="1080" height="752" /></span></p>
+<h4><span class="auto_menu">D. 正负型组合</span></h4>
+<p>以A作为主形，B作为负形嵌入到A中进行阴阳正负形结合。最终输出的图形还是以A作为主表意，但融入了B的创意细节。</p>
+<p><strong>案例：柠檬+杯子</strong></p>
+<p>A图形：型以杯子作为主形，B图形：柠檬切面作为负形，使用柠檬切面与杯口进行结合。</p>
+<p><span class="img-zoom"><img alt="设计LOGO没想法？腾讯高手的A+B方法让你创意爆棚！" class="alignnone size-full wp-image-390180" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-lg-20200924-5.jpg" width="1080" height="752" /></span></p>
+<h4><strong><span class="auto_menu">F. 形体拼接</span></strong></h4>
+<p>A与B各上下或者左右的形体部分，直接进行拼接得出一个可以包含2个内容的图形设计。</p>
+<p><strong>案例：胶囊结合麦克风</strong></p>
+<p>A图形：胶囊，B图形麦克风，使用麦克风与胶囊的结合，设计出带有表情感的创意图形。</p>
+<p><span class="img-zoom"><img alt="设计LOGO没想法？腾讯高手的A+B方法让你创意爆棚！" class="alignnone size-full wp-image-390181" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-lg-20200924-6.jpg" width="1080" height="752" /></span></p>
+<p>更多的设计案例，助你打开创意</p>
+<p><span class="img-zoom"><img alt="设计LOGO没想法？腾讯高手的A+B方法让你创意爆棚！" class="alignnone size-full wp-image-390182" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-lg-20200924-7.jpg" width="1500" height="1021" /></span></p>
+<p>△ 来源于dribbble.com</p>
+<p>[link https://www.uisdc.com/logo-design-7-methods]</p>
+<p>欢迎关注作者微信公众号：「ID设计站」</p>
+<p><span class="img-zoom"><img alt="设计LOGO没想法？腾讯高手的A+B方法让你创意爆棚！" class="alignnone size-full wp-image-378287" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-nq-20200702-14.jpg" alt="动效不知如何落地？看完腾讯高手的经验就明白了" width="180" height="180" /></span></p>
+➜别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！
+https://www.uisdc.com/ios14-theme-design	67055
+<p>iOS14 发布之后，在 iOS 系统中已经悄咪咪发展了好几年的「快捷指令」，终于拥有了更多的权限，更强大的能力——在它的帮助下甚至可以「修改」iOS 系统的主题。于是这次系统更新之后，推特上的网友们把 iPhone 主题设计玩儿出花来了。</p>
+<p>有致敬 iOS 6 拟物化设计风格的：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa1.png" /></span></p>
+<p>也有奔着90年代的怀旧操作系统去的：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa2.png" /></span></p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa3.png" /></span></p>
+<p>有玩儿时尚流行风的：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa4.png" /></span></p>
+<p>也有喜欢低饱和度高级色调的：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa5.png" /></span></p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa6.png" /></span></p>
+<p>手绘爱好者所设计的主题视觉效果相当素雅：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa7.png" /></span></p>
+<p>涂鸦风格的图标搭配网格背景也非常可爱：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa8.png" /></span></p>
+<p>当然，油画和古典艺术的爱好者也有自己的一套：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa9.png" /></span></p>
+<p>还有蒸汽波x二次元的桌面设计：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa10.png" /></span></p>
+<p>而复古也确确实实是一直在流行：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa11.png" /></span></p>
+<p>也有在屏幕上塞满自家idol 的：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa12.png" /></span></p>
+<p>也有基于特定动漫来进行设计的主题：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa13.png" /></span></p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa14.png" /></span></p>
+<p>这次推特上的主题设计框查也又一次证明了，只要系统舍得开放某些权限，总会有用户舍得花时间把它变成自己想要的样子，哪怕会失去一丢丢它原有的味道。</p>
+<h4><span class="auto_menu">正确魔改主题的姿势</span></h4>
+<p>结合世界各地网友的魔改经验，这些主题的制作过程大概分为3个部分：背景选取+图标替换+小组件设计。通常，大家会围绕着一个主题来进行设计或者「复刻」。</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="alignnone size-full wp-image-390275" src="https://image.uisdc.com/wp-content/uploads/2020/09/palm-pre.jpg" width="1248" height="1600" /></span></p>
+<p>这里我以经典的 Palm Pre 的设计来给我的 iPhone 6s 换一个主题，并且按照上面提到的3个部分来演示。</p>
+<h4><span class="auto_menu">背景选取</span></h4>
+<p>壁纸的选取应该优先考虑。因为捷径所生成的图标，如果是调用实底的图片的话，图片会自然地把图标区域填满，而如果选取的是 PNG 格式的带有透明部分的图标的话，图标就会呈现出白底，就像下面的效果：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa15.png" /></span></p>
+<p>而很多自己设计主题的同学使用的方法，是在确定壁纸图片之后，在 PS 之类的工具中，给半透明的图标添加一个对应色彩的底，比如这样：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa16.png" /></span></p>
+<p>虽然不够完美，但是已经相当不错了~</p>
+<p>所以，我在壁纸上取了一个相近的颜色，偷懒给每个图标一个相同的底色：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa17.png" /></span></p>
+<p>下面具体说下怎么更换图标~</p>
+<h4><span class="auto_menu">图标更换</span></h4>
+<p>本质上 iOS 系统是不会让你拥有修改各个 APP 默认图标权限的。不过随着「快捷指令」 的功能完善，你可以创建一个新的「捷径」 ，用它来打开某个 APP，而这个捷径的图标和名称，你是可以随便修改的，而图标的「修改」就是基于这一点来实现——新建一个打开某个应用的快捷指令。</p>
+<p>如果没有安装快捷指令可以去 App Store 中下载它：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa18.png" /></span></p>
+<p>进入快捷指令之后，点击右上角的「+」来新建快捷指令：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa19.png" /></span></p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa20.png" /></span></p>
+<p>点击「添加动作」：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa21.png" /></span></p>
+<p>点击「脚本」，在列表最下方找到「打开App」：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa22.png" /></span></p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa23.png" /></span></p>
+<p>然后点击「选择」，选择你要打开的 App。我事先准备了带透明背景的 png 格式图标，比如我选择了一个视频类的 App：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa24.png" /></span></p>
+<p>然后点击右上角的菜单按钮，进入详细设置：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa25.png" /></span></p>
+<p>输入名称，点击「添加到主屏幕」：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa26.png" /></span></p>
+<p>这个时候注意，点击靠下的图标，来设置图标：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa27.png" /></span></p>
+<p>点击「选取照片」：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa28.png" /></span></p>
+<p>然后点击右上角的添加，就添加到桌面了：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa29.png" /></span></p>
+<h4><span class="auto_menu">小组件设计</span></h4>
+<p>iOS 14 中 小组件是一个热门功能。不过想要尽可能地按照自己的想法来定制化 iOS 14 的桌面，那么你需要自由度超高的 Widgetsmith 来帮你搞定图标以外的部分：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa30.png" /></span></p>
+<p>很多的个性化设计都是基于这款插件来实现的，它可以生成样式极为自由的桌面小组件，插入时间、日期、图片、文本等等元素，三种不同尺寸，千变万化的样式。</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa31.png" /></span></p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa32.png" /></span></p>
+<p>由于它自由度非常高，在具体的应用的时候，你需要根据自己的需求来调整。</p>
+<p>不过考虑到 webOS 和 iOS 14 在视觉风格上非常接近，我最后就插入了一个系统自带的天气小组件进去：</p>
+<p><span class="img-zoom"><img alt="别人都在秀iOS 14的个性化主题？我来教你快速魔改的方法！" class="aligncenter size-full wp-image-390253" src="https://image.uisdc.com/wp-content/uploads/2020/09/pa33.png" /></span></p>
+<p>WidgetSmith 的下载链接：<a href="https://apps.apple.com/cn/app/widgetsmith/id1523682319" target="_blank" rel="noopener noreferrer">https://apps.apple.com/cn/app/widgetsmith/id1523682319</a></p>
+<h4><span class="auto_menu">写在最后</span></h4>
+<p>本质上这是个折腾好玩儿的事儿，如果你恰好有想法和思路，可以让你的 iPhone 变成另外一个样子。</p>
+<p>做这套 webOS 主题的也仅仅是源自我的情怀。难得的是，我还存着8年前提取出来的 256&#215;256 px 的高清图标，不用就可惜了。不过当年的壁纸大都只有 320&#215;480 的分辨率，我用现在流行的人工智能图片放大服务，将图片放大了4倍来作为壁纸，在如今的手机上看起来效果还不错，相关工具看这里：</p>
+<p>[link https://www.uisdc.com/smart-upscaler]</p>
+<p>文末附有相关的图标和壁纸素材，感兴趣的同学自取吧~</p>
+<p>相关文章推荐：</p>
+<p>[link https://www.uisdc.com/selection-controls-ui-component]</p>
+<p>[link https://www.uisdc.com/macos-14-design]</p>
+<p>[link https://www.uisdc.com/ios14-widgets-design]</p>
