@@ -7,3 +7,6 @@ https://www.solidot.org/story?sid=65664	16839
 ➜伊朗海外侨民如何帮助本国人对抗断网
 https://www.solidot.org/story?sid=65665	18404
 互联网审查在伊朗日益稀松平常，VPN 等工具可以帮助绕过审查，但如果连接国际互联网的网线直接拔掉呢？VPN 在这种情况下也无可奈何。生活在海外的伊朗侨民正在利用旧的技术帮助伊朗人民获得未经审查的信息：卫星天线。数据显示，在 2013 年伊朗七成的家庭拥有卫星天线，而接入互联网的家庭只有二成。虽然互联网接入日益普及，但审查和断网让卫星连接仍然是可靠信息的重要来源。Mehdi Yahyanejad 开发了卫星文件转发应用 <a href="https://www.toosheh.org/" rel="noopener noreferrer" target="_blank">Toosheh</a>。它聚合了未经审查的信息，帮助伊朗居民了解国内正在发生的事情。去年 11 月伊朗发生了大规模抗议，政府杀死了 300 多名抗议者，逮捕了 7000 多人。在抗议期间伊朗居民体验到了史无前例的断网。Toosheh 在当月赢得了大约 10 万新用户。<p>
+➜Emacs 开发者讨论如何构建更“现代”的 Emacs
+https://www.solidot.org/story?sid=65666	20145
+在讨论了如何让 Emacs <a href="https://www.solidot.org/story?sid=64325">再次流行</a>起来之后，正在准备 Emacs 28 的开发者又热烈讨论<a href="https://news.slashdot.org/story/20/09/25/2213230/emacs-developers-including-richard-stallman-discuss-how-to-build-a-more-modern-emacs">如何构建更“现代”的 Emacs</a>。开发者认为需要做一些“看得见”的改变让现有的功能更容易接近用户。比如采用更中心化的方法管理颜色主题。改变键盘按键与鼠标绑定方式，新用户可能不知道 Cua 模式以及如何启用该模式。但默认启用该功能则可能会干扰到现有的用户。Emacs 原作者 Richard Stallman 认为改变基本按键绑定去模仿较新的编辑器是不可取的，将创造一个 Emacs 用户永远不会切换过去的新编辑器。鼠标行为的情况与之类似。在 Emacs 中点击右键是标记一个区域而不是像其它编辑器那样产生某种上下文菜单。Stallman 建议提供一个“重组模式”，将上下文菜单引入到未修饰点击右键，向用户展示预期编辑命令。他认为这是比较容易做到的。他指出现有的鼠标行为是源自 1990 年左右的 X Windows 标准。他不想太仓促，但现在是时候去更新了。<p>
