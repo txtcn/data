@@ -26,12 +26,13 @@ https://www.appinn.com/lightbulb-for-windows/	32283
 <figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202009/lightbulb.jpg!o" alt="LightBulb - 保护视力，自动根据时间调整显示器伽马值 1" title="LightBulb - 保护视力，自动根据时间调整显示器伽马值 1"></figure>
 <p>首先要说一下，最好的保护视力的方式是&#8230;休息，然后是定时休息，最后是&#8230;使用显示器的不同色温保护视力。</p>
 <p>来自 2018 年的<a href="https://meta.appinn.net/t/f-lux-lightbulb/7794" class="rank-math-link" target="_blank" rel="noopener">发现频道</a>，感谢 @<a href="https://meta.appinn.net/u/copyshiroe" target="_blank" rel="noopener">copyshiroe</a> 的推荐：在 GitHub 免费开源的应用，</p>
-<p>LightBulb 支持 Windows 7 及以上的系统，需要 .NET Core（<a href="https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-desktop-3.1.0-windows-x64-installer" target="_blank" rel="noopener">x64</a> | <a href="https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-desktop-3.1.0-windows-x86-installer" target="_blank" rel="noopener">x86</a>）。青小蛙穿越回 2018 发现了这个发现 🙈。</p>
+<p>LightBulb 支持 Windows 7 及以上的系统，需要 .NET Core（<a href="https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-desktop-3.1.0-windows-x64-installer" target="_blank" rel="noopener">x64</a>&nbsp;|&nbsp;<a href="https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-desktop-3.1.0-windows-x86-installer" target="_blank" rel="noopener">x86</a>）。青小蛙穿越回 2018 发现了这个发现 🙈。</p>
 <p>使用简单，有两种方式控制亮度：</p>
 <ul><li>手动设置日出、日落时间</li><li>根据地理位置自动设置日出日落时间</li></ul>
 <div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/2020-09-27-16-48-43.jpg!o" alt="LightBulb - 保护视力，自动根据时间调整显示器伽马值 2" title="LightBulb - 保护视力，自动根据时间调整显示器伽马值 2"></figure></div>
 <p>其余，就交给 LightBulb 了。</p>
 <p>LightBulb 并不是无脑改变色温，而是在日出、日落期间，有一个不知道多久的渐变区域，让色温能从白天的色温 6600K、亮度 100%，平滑过度到色温 3900K，亮度 85%。</p>
 <div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/lightbulb_z82amibhzd.jpg!o" alt="LightBulb - 保护视力，自动根据时间调整显示器伽马值 3" title="LightBulb - 保护视力，自动根据时间调整显示器伽马值 3"></figure></div>
+<p>系统托盘右键菜单还可以临时禁用一段时间。</p>
 <p>本来，青小蛙尝试录屏，然而测试了几款录屏工具之后发现，都不能将屏幕的变化录下来&#8230;在此求助各位大佬们了，这种屏幕色温的变化，该如何录屏？</p>
 <p>最后，LightBulb 在 <a href="https://github.com/Tyrrrz/LightBulb" class="rank-math-link" target="_blank" rel="noopener">GitHub</a> 开源及提供下载，青小蛙提供 2 个便携版的搬运（<a href="https://590m.com/file/15690961-462613779" class="rank-math-link" target="_blank" rel="noopener">1</a>，<a href="https://appinn.lanzoui.com/ipyYbgz0x2b" class="rank-math-link" target="_blank" rel="noopener">2</a>）。</p>
