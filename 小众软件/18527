@@ -1,18 +1,18 @@
 ➜CashWarden – 开源记账服务，支持机器人智能归类记账
 https://www.appinn.com/cashwarden/	14685
 <p><a href="https://www.appinn.com/cashwarden/" class="rank-math-link">CashWarden</a> 是一款开源的资产管理系统，支持多账户资产管理、定时记账、Telegram 机器人自动智能记账等功能。@Appinn</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/cashwarden.jpg!o" alt="CashWarden - 开源记账服务，支持机器人智能归类记账 31" title="CashWarden - 开源记账服务，支持机器人智能归类记账 36"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/cashwarden.jpg!o" alt="CashWarden - 开源记账服务，支持机器人智能归类记账 36" title="CashWarden - 开源记账服务，支持机器人智能归类记账 41"></figure></div>
 <p>来自<a href="https://meta.appinn.net/t/cashwarden/19230" class="rank-math-link" target="_blank" rel="noopener">发现频道</a>，其实青小蛙在推上早就发现开发者发的机器人记账图，当时就觉得非常有意思，开发者还说没写完先不放出来。结果就在发现频道发现了。</p>
 <p>先来看图：</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/optimized/2X/d/d86f7875a60d570843a36a3e4dd9f39f7555c851_2_1380x938.jpeg" alt="CashWarden - 开源记账服务，支持机器人智能归类记账 32" title="CashWarden - 开源记账服务，支持机器人智能归类记账 37"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/optimized/2X/d/d86f7875a60d570843a36a3e4dd9f39f7555c851_2_1380x938.jpeg" alt="CashWarden - 开源记账服务，支持机器人智能归类记账 37" title="CashWarden - 开源记账服务，支持机器人智能归类记账 42"></figure></div>
 <p>这是 <strong>CashWarden</strong> 的网页版界面，可以进行资产管理，包括设置多账户、查看记录、定时记账、绑定机器人、设置分类/标签，以及设置自动规则。</p>
 <h2>机器人智能记账</h2>
 <p>只有在设置自动规则之后，才能实现 Telegram 机器人的自动智能记账，没错依旧是真人工智能。</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/4/4e6f2e3564a9503536301f9629761dd7d75c161e.jpeg" alt="CashWarden - 开源记账服务，支持机器人智能归类记账 33" title="CashWarden - 开源记账服务，支持机器人智能归类记账 38"></figure></div>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/020-09-22-11-19-32.jpg!o" alt="CashWarden - 开源记账服务，支持机器人智能归类记账 34" title="CashWarden - 开源记账服务，支持机器人智能归类记账 39"><figcaption>CashWarden 规则设置页面</figcaption></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/4/4e6f2e3564a9503536301f9629761dd7d75c161e.jpeg" alt="CashWarden - 开源记账服务，支持机器人智能归类记账 38" title="CashWarden - 开源记账服务，支持机器人智能归类记账 43"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/020-09-22-11-19-32.jpg!o" alt="CashWarden - 开源记账服务，支持机器人智能归类记账 39" title="CashWarden - 开源记账服务，支持机器人智能归类记账 44"><figcaption>CashWarden 规则设置页面</figcaption></figure></div>
 <p>CashWarden 的规则设置可以实现当记录时触发关键词，就能自动分配支付账户，以及交易类型。比如上图的公交设置，就能实现：</p>
 <p>当你对机器人说：地铁5元、公交车5、公交 2 的时候，都会记录一笔类别为<strong>行车交通</strong>，类型为<strong>支出</strong>，记录到<strong>公交卡账户</strong>下，并添加<strong>出行标签</strong>的交易，非常方便，快捷。</p>
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202009/2020-09-22-11-24-08.jpg!o" alt="CashWarden - 开源记账服务，支持机器人智能归类记账 35" width="384" height="648" title="CashWarden - 开源记账服务，支持机器人智能归类记账 40"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202009/2020-09-22-11-24-08.jpg!o" alt="CashWarden - 开源记账服务，支持机器人智能归类记账 40" width="384" height="648" title="CashWarden - 开源记账服务，支持机器人智能归类记账 45"></figure></div>
 <p>只需要在 CashWarden 网页端的设置页面绑定 Telegram 机器人 @<a href="https://t.me/CashwardenBot" class="rank-math-link" target="_blank">CashwardenBot</a> 即可。不过每一笔记录下的四个按钮，青小蛙只知道删除是什么意思，后面三个不知道是干嘛的&#8230;</p>
 <h2>定时记账</h2>
 <p>定时记账很好理解，就是那些每个月都会循环支付的账单，比如房贷、每月通勤费、网费、基金定投等情形。</p>
@@ -23,19 +23,19 @@ https://www.appinn.com/cashwarden/	14685
 ➜Progress – 用 iOS 14 的屏幕小组件显示时间进度[iPhone]
 https://www.appinn.com/progress-check-your-progress-for-iphone-widgets/	43044
 <p><a href="https://www.appinn.com/progress-check-your-progress-for-iphone-widgets/" class="rank-math-link">Progress &#8211; Check your progress</a> 是一款新鲜上架的，专门针对 iOS 14 新的屏幕小组件应用，它可以在小组件上显示年度进度、月进度、周进度，以及自定义的各种进度，效果很漂亮。@Appinn</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/progress-check-your-progress.jpg!o" alt="Progress - 用 iOS 14 的屏幕小组件显示时间进度[iPhone] 27" title="Progress - 用 iOS 14 的屏幕小组件显示时间进度[iPhone] 32"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/progress-check-your-progress.jpg!o" alt="Progress - 用 iOS 14 的屏幕小组件显示时间进度[iPhone] 32" title="Progress - 用 iOS 14 的屏幕小组件显示时间进度[iPhone] 37"></figure></div>
 <p>感谢微信好友 @姚刚&amp;José 的推荐。</p>
 <p>Progress 利用了 iOS 新的小屏幕小组件，你可以将各种进程穿插放置在屏幕上。只需要设置开始日期、结束日期、颜色、图标、名称，就完成了一个自定义的时间进程，比如设置一个高考倒计时：</p>
 <div class="wp-block-columns">
 <div class="wp-block-column">
-<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202009/3dcf3104-b2b5-45b6-846e-9ad101af7c4a.jpg!o" alt="Progress - 用 iOS 14 的屏幕小组件显示时间进度[iPhone] 28" title="Progress - 用 iOS 14 的屏幕小组件显示时间进度[iPhone] 33"></figure>
+<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202009/3dcf3104-b2b5-45b6-846e-9ad101af7c4a.jpg!o" alt="Progress - 用 iOS 14 的屏幕小组件显示时间进度[iPhone] 33" title="Progress - 用 iOS 14 的屏幕小组件显示时间进度[iPhone] 38"></figure>
 </div>
 <div class="wp-block-column">
-<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202009/f386af26-e049-480c-b952-41e18bbe01a4.jpg!o" alt="Progress - 用 iOS 14 的屏幕小组件显示时间进度[iPhone] 29" title="Progress - 用 iOS 14 的屏幕小组件显示时间进度[iPhone] 34"></figure>
+<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202009/f386af26-e049-480c-b952-41e18bbe01a4.jpg!o" alt="Progress - 用 iOS 14 的屏幕小组件显示时间进度[iPhone] 34" title="Progress - 用 iOS 14 的屏幕小组件显示时间进度[iPhone] 39"></figure>
 </div>
 </div>
 <p>注意在添加小组件的时候，是找不到自定义进程的，需要长按图标，点击编辑小组件，然后在新出现的界面里，点击就能修改了，如下图：</p>
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202009/00751f1e-3c63-4be2-8bb4-d0a3fa4331f1.jpg!o" alt="Progress - 用 iOS 14 的屏幕小组件显示时间进度[iPhone] 30" width="358" height="720" title="Progress - 用 iOS 14 的屏幕小组件显示时间进度[iPhone] 35"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202009/00751f1e-3c63-4be2-8bb4-d0a3fa4331f1.jpg!o" alt="Progress - 用 iOS 14 的屏幕小组件显示时间进度[iPhone] 35" width="358" height="720" title="Progress - 用 iOS 14 的屏幕小组件显示时间进度[iPhone] 40"></figure></div>
 <p><strong>Progress</strong> 只有这样一个功能，十分简洁，主要是放在屏幕上很漂亮。</p>
 <p>最后，Progress &#8211; Check your progress 在 <a href="https://apps.apple.com/us/app/progress-check-your-progress/id1531556410?ref=appinn" class="rank-math-link" target="_blank" rel="noopener">App Store</a> 售价 12 元，青小蛙和开发者勾兑了一下，赠送了4枚兑换码给我们，将在微博抽奖送出，敬请关注：@<a href="https://weibo.com/appinncom" class="rank-math-link" target="_blank" rel="noopener">小众软件</a>（微博搜索“小众软件”）</p>
 <p>以及，虽然仅适配了 iPhone，但 iPad 同样可用，效果还行。</p>
