@@ -19,3 +19,9 @@ https://www.solidot.org/story?sid=65668	34502
 ➜Bitcoin Core 将启用一项加速签名验证的优化方法
 https://www.solidot.org/story?sid=65669	44486
 2020 年 9 月 25 日，名为<a href="https://patents.google.com/patent/US7110538B2/en" target="_blank">加速椭圆曲线加密操作方法</a>的专利过期。Bitcoin Core 将启用这项被称为 GLV Endomorphism 的方法<a href="https://www.btctimes.com/news/hal-finneys-proposal-for-optimizing-bitcoin-to-be-enabled-in-bitcoin-core" target="_blank">去加快签名验证的速度和效率</a>。GLV Endomorphism 是 Bitcoin 早期贡献者、最早从中本聪收到比特币的 Hal Finney 在 2011 年 2 月提议使用的，他的测试显示这一优化方法能将签名验证提速四分之一。 Bitcoin Core 实现了该方法但由于专利存在而一直没有启用。随着专利过期，开发者计划在下次发布时启用 GLV Endomorphism。<p>
+➜智能咖啡机被发现很容易修改
+https://www.solidot.org/story?sid=65670	48221
+安全公司  Avast 的研究员 Martin Hron 逆向工程了 Smarter 公司的联网智能咖啡机，<a href="https://arstechnica.com/information-technology/2020/09/how-a-hacker-turned-a-250-coffee-maker-into-ransom-machine/">发现了很多漏洞</a>。利用这些漏洞，他能触发咖啡机打开燃烧器，出水，启动磨豆机，显示勒索信息，让咖啡机重复发出哔哔的声音。唯一阻止这一切混乱的方法是拔掉电源插头。Hron 发现咖啡机与智能手机应用之间的连接是没有加密的，没有身份验证，没有代码验证，最新的固件就储存在手机应用，可以很容易导出进行逆向工程。<p>
+➜科学家首次演示日本猫的人类模仿能力
+https://www.solidot.org/story?sid=65671	48796
+Ebisu 可能是世界第一只真实意义上的 copycat。研究人员<a href="https://www.sciencemag.org/news/2020/09/kitty-see-kitty-do-cat-imitates-human-first-scientific-demonstration-behavior" target="_blank">首次演示了</a>该日本猫在受控条件下模仿主人行为的能力。这种能力只有少数动物具有。动物行为学家 Kristyn Vitale 说，人们普遍认为猫是孤独的和反社会的，但研究巩固了猫在观察并学习我们的看法。发现 Ebisu 的模仿能力是很偶然的。日本训狗师 Fumi Higaki 告诉匈牙利罗兰大学的 Claudia Fugazza，她曾用训练狗模仿能力的方法训练一只名叫 Ebisu（日本财神的名字） 的猫，这只猫住在宠物店里，喜好食物，因此很容易训练。两人于是对 Ebisu 展开了一系列测试，显示猫能在 81% 的时间里精确模仿主人的行为。Fugazza 说，此前只有海豚、鹦鹉、猿和虎鲸展现出人类模仿能力。<a href="https://link.springer.com/article/10.1007/s10071-020-01428-6">研究报告</a>发表在《Animal Cognition》期刊上。<p>
