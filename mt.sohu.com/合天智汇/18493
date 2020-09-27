@@ -1,0 +1,66 @@
+➜密码重置的那些事
+http://www.sohu.com/a/413974640_99907709	9581
+<p><strong>本文转自先知社区：https://xz.aliyun.com/t/8136</strong></p>
+<p><strong>分享一下平时实战中密码重置的姿势</strong></p>
+<p><strong>因为都是找的实战案例(尽量避免"云渗透")，可能姿势不全(水平有限，如果有缺有错，师傅们多带带) </strong></p>
+<p><strong>任意密码重置姿势.jpg </strong></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200820/ae17252c683543e686f76be084ad8eee.png" /></p>
+<p><strong>1.重置凭证泄露</strong></p>
+<p>很好理解，短信验证码，重置链接等一系列用于重置密码过程认证的值在burp返回包响应泄露。 </p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200820/0e6991c098ce42c0b01b2463b736f27b.png" /></p>
+<p>以上两个案例分别泄露了短信验证码与邮箱重置链接 </p>
+<p><strong>2.重置接收端可控</strong></p>
+<p>若服务端接受的手机号/邮箱是从客户端获取的话，那么就可以修改接收端，让重置信息发给自己手机或是邮箱。 </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>输入admin账号后，服务端返回手机号给前端，获取验证码时，服务端又从前端获取手机号码 </p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200820/97f6381c2dbe466181c2ea14cafdd9f6.png" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200820/f41bebf238ce40e59039d77f534ca9d6.png" /></p>
+<p><strong>3.重置元素弱关联</strong></p>
+<p>一次重置过程需要哪些参数参与呢？用户标识/接收端/步骤 </p>
+<p><strong>用户标识：cookie/username/sid</strong></p>
+<p>cookie混淆流程：找回密码时，未登录的cookie本地值不变，可关联多个账号，使用攻击者账号(自己注册的)走完找回密码流程，提交修改密码时截断。用一个新的账号(目标账号)发起流程，然后cookie就会关联目标账号，重放之前的包，就会修改目标账号的密码。 </p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200820/8a27005336be43d8897c6d5f91353bad.png" /></p>
+<p><strong>步骤跳过：</strong>这个案例遇见的特别多，当修改密码的操作被才拆分为step1，step2，step3时，我们就可以通过修改响应的状态码来欺骗前端来跳过重置的流程。(响应成功的状态码通常可以在页面的js文件中找) </p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200820/f8304ad2f04540f39ff83e6f00c22120.png" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200820/32b0334423484542be6afe2665ae5e1a.png" /></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200820/f7d1f4d64b404768a1939ef7d41e9171.png" /></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200820/1326f2ae36be471ea8e3cf22b3f6662c.png" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200820/d2514df256c94dae89b5fce40f1b4c17.png" /></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200820/96a259351df940929cab7388e2042c3b.png" /></p>
+<p><strong>5.重置凭证可爆破，可预测</strong></p>
+<p>可爆破：如果验证码是4位数字，有效期时间足够，而且未设置试错次数的话，可burp直接爆破。 </p>
+<p>可预测：通过观察token生成的规律，自己伪造，这里面的东西又多了..... </p>
+<p>这里再分享两个不同的案例： </p>
+<p><strong>案例一：</strong></p>
+<p>当我正确输入用户名，身份证号时会把验证码正确和错误的页面一同返回给我。 </p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200820/06facbb305774963ba2cf1b82742e0d5.png" /></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200820/55e8ab57b30645e780d4ce161be4dbe8.png" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200820/56f93e27af774de9a6f0c48087c85bec.png" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200820/bdf47bd0243e45789d3e13c647557e9a.png" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200820/0d60927aaa86400fb7bb04bae7933726.png" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200820/42df3c012300494aa197dfd607b48325.png" /></p>
+<p>哈哈这里还有个CSRF。 </p>
+<p><strong>案例二：</strong></p>
+<p>通过在js中找到的未授权的方法，可写入任意用户的资料(改预留手机号)来实现任意用户密码重置。 <strong></strong></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200820/8e74aac208814236928bc4f65b4605b5.png" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200820/fc5da8bef3c6427e91dc321a140be1ba.png" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200820/e577d3d004cd4a25b460fcb269285478.png" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200820/5795e2e80bfb4454b680333a83299cd5.png" /></p>
+<p><strong>案例三：</strong></p>
+<p>信息泄露导致密码重置，哈哈 </p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200820/967e4ee4731445469dc2304c3e419183.png" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200820/4e953a4dfb1f4119ada63f0eb9819a1e.png" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200820/ecb0472e255f4907b3800ed94f9874be.png" /></p>
+<p><strong>End.....</strong></p>
+<p>Dedecms任意密码重置</p>
+<p><span style="font-size: 16px;">https://www.hetianlab.com/expc.do?ec=ECIDe907-9309-4de6-8b4d-b941b34caa1c</span></p>
+<p>（DeDecms未对更改密码的跳转地址进行参数隐藏导致更改密码的临时密码被泄露，泄露以后构造URL传入临时密码，可以不需要任何验证即可更改任意用户密码。） </p>
+<p><span style="font-size: 16px;">重金悬赏 | 合天原创投稿涨稿费啦！ </span></p>
+<p>戳 <span>“阅读原文”</span><span>一起学</span></p>

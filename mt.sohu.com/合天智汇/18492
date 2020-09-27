@@ -1,0 +1,52 @@
+➜HW出圈了？不！是0day漫天飞了
+http://www.sohu.com/a/413783952_99907709	18706
+<p><span style="font-size: 16px;">文章整理自网络！</span></p>
+<p><span style="font-size: 16px;">2020HW刚开始，开局就天王炸 </span><span></span></p>
+<p><span style="font-size: 16px;">直接上了几道硬菜，</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200819/d917f99134e0428c81c98b4aa4d2d05c.png" /></p>
+<p><span style="font-size: 16px;">红队0day漫天飞，蓝队要忙的没时间吃饭，</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200819/3d63bbe8ce134495a47f9038a57c173a.png" /></p>
+<p><span style="font-size: 16px;">什么是红队蓝队？</span></p>
+<p><span style="font-size: 16px;">攻击和防守两个队伍，一般叫红队和蓝队，攻击方的目标是拿下DNS服务器、OA系统服务器、工控系统服务器等的控制权。攻击手段包括weblogic的WLS的0day漏洞利用、4A服务器的0day漏洞攻击、致远OA服务器攻击、Struts 2漏洞攻击等。</span></p>
+<p><span><strong><span style="font-size: 16px;">深X信EDR</span></strong></span></p>
+<p><span style="font-size: 16px;">payload</span></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">https://ip:port/tool/log/c.php?strip_slashes=system&amp;host=id</span></p>
+<p><span style="font-size: 16px;">一打一个小朋友</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200819/6bbdde9a12e0460291f4bbd4a1fa78c8.png" /></p>
+<p><span style="font-size: 16px;">除上面之外，还有任意文件读取，验证码绕过，还有就是rce。</span></p>
+<p><span style="font-size: 16px;">漏洞简单分析</span></p>
+<p><span style="font-size: 16px;">RCE_1</span></p>
+<p><span style="font-size: 16px;">漏洞文件：toollogc.php</span></p>
+<p><span style="font-size: 16px;">通过URL传参初始化变量，经典的变量覆盖漏洞。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200819/281f330452ae464c90f37a9ab78edcf6.png" /></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200819/d0479c6ee80f418d923f13fdeda18716.png" /></p>
+<p><span style="font-size: 16px;">RCE_2</span></p>
+<p><span style="font-size: 16px;">漏洞文件：toolphp_cli.php</span></p>
+<p><span style="font-size: 16px;">同样的问题，感觉这个更过分了，bypass waf webshell？</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200819/eeb92a7162224f51ada3bef461d8fb27.png" /></p>
+<p><span style="font-size: 16px;">RCE_3</span></p>
+<p><span style="font-size: 16px;">漏洞文件：toolldb_cli.php</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200819/560eeed41298455282b5fa93f26d4901.png" /></p>
+<p><span style="font-size: 16px;">太多了。。。</span></p>
+<p><span style="font-size: 16px;">任意文件读取</span></p>
+<p><span style="font-size: 16px;">漏洞文件：storecat.php</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200819/9f5684ef93234e76a9675d0379796d10.png" /></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200819/4afdd5d02d81436eb2d203c52851f3ca.jpeg" /></p>
+<p><span><strong><span style="font-size: 16px;">天X信漏洞</span></strong></span></p>
+<p><span style="font-size: 16px;">漏洞影响:已知版本号v3.1130.308p3_DLP.1</span></p>
+<p><span style="font-size: 16px;">风险等级:高</span></p>
+<p><span style="font-size: 16px;">漏洞细节:管理员登陆系统之后修改密码,未采用原由码校验,且存在未授权访问导致存在了越权修改管理员密码.</span></p>
+<p><span style="font-size: 16px;">默认用户superman的uid=1</span></p>
+<p><span style="font-size: 16px;">POST /?module-auth_user&amp;action=mod_edit.pwd HTTP/1.1</span></p>
+<p><span style="font-size: 16px;">一个月改半月，半个月改一天，天秀吧？本来以为协同作战很流弊， </span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200819/d954cb68634240a8a2e41f3f42ca4158.png" /></p>
+<p><span style="font-size: 16px;">没想到呀！上来红队直接放0day大招。还是红队大佬牛逼呀，</span></p>
+<p><span style="font-size: 16px;">参考文章</span></p>

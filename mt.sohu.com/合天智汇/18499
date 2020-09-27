@@ -1,0 +1,103 @@
+➜实战｜记一次授权的渗透测试
+http://www.sohu.com/a/414889551_99907709	10094
+<p><span style="font-size: 16px;">本文转自公众号：信安之路 </span></p>
+<p><span style="font-size: 16px;">前段时间收到小伙伴的求助，说是有一个站搞不了，让我看看能不能帮忙弄一下；刚好最近应急完了在看日志，看的有点烦，于是便接下了这个任务，增加点乐趣。</span></p>
+<p><span style="font-size: 16px;">信息收集</span></p>
+<p><span style="font-size: 16px;">拿到手的目标是一个 ip 加端口的站点，</span></p>
+<p><span style="font-size: 16px;">复制链接到浏览器打开，可以看到重定向至一个登录页，在观察登录入口时，发现验证码可复用，之后使用 burp 重发几次请求，得知同一账号，密码可无限错误，这里由于登录认证的缺陷，导致可进行账号密码爆破，运气好的话可以进入后台；但是，爆破动静太大了，会产生大量日志，容易被察觉，况且爆破后台需要一定的时间，目前处于收集资产阶段，简单测试几个弱口令失败后，转而去寻找其它的有用信息。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200826/24faee4e908c42be9610635f8f1894d6.png" /></p>
+<p><span style="font-size: 16px;">使用 fofa 简单探测了下端口，发现这个 ip 开放了很多端口，如 3306，27017，6379，22 等等</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200826/5d7f48d4d3e94ca7b79d6fd99c232470.png" /></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200826/8dc0bddf2f704011aafccb2fd1f98f6c.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">这里简单思考了一下，能利用的端口有 mysql，redis，mongodb，ssh 还有一些 http 服务，这其中 mysql 版本为 8.0.17，在这个版本，漏洞多多少少都修复的差不多了，接下来尝试 mongodb 未授权漏洞，不出所料，漏洞修复了；再尝试弱口令连接，也不存在~~，之后经过其它的信息收集手法，暂时对目标业务信息有了一个比较简单的认知，随后还是回到 http 服务，尝试从 web 端入手。</span></p>
+<p><span style="font-size: 16px;">漏洞探测</span></p>
+<p><span style="font-size: 16px;">之前在测试这些站点的时候，发现这个项目的运维特喜欢使用站点名称加年份的组合口令；根据这个有用信息，结合以前收集到的历史账号密码和目标站点的有用信息来生成一个小组合口令字典，随后再结合 burp 进行爆破，果然不一会，账号密码出来了~~</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200826/48bf660ca83a4e428220ec86a6f6cbee.png" /></p>
+<p><span style="font-size: 16px;">之后记录下账号密码，重新登陆时，却发现后台出现了这个情况，如下： </span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200826/bf4adc6138614e3cb96fa1f0081afbdc.png" /></p>
+<p><span style="font-size: 16px;">这时候的第一反应是，站点是不是部署了 waf，ip 被 ban 了？随后使用手机网络打开也同样如此，后来找业务方了解了下情况，说是不能用 admin 登陆，不然会出现错误~~</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200826/8709dacf2b114fdebcc952237241e213.png" /></p>
+<p><span style="font-size: 16px;">之后客户直接给出了个测试账号，我这边也懒得爆破了，就凑合着用了~~</span></p>
+<p><span style="font-size: 16px;">一波操作进到后台，随便点点点，发现了个上传的位置，准备好一个马儿，上传截包分析，经过几次实验后，发现 uploadFormat 上传参数可控，只需要增加后缀即可上传 </span><span style="font-size: 16px;">.Jsp</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200826/d5f7c5c34ced4c369cacc775c58e3429.png" /></p>
+<p><span style="font-size: 16px;">原本以为到此就结束了，没想到事情并不简单，复制得到的链接进行访问，发现全都是 404，之后再次在后台寻找其它上传点，发现仍旧如此，不单单是上传的文件会 404，就连站点原本存在的其它文件，复制链接打卡也同样会 404；经过几次尝试后，初步判断这个站点的上传和文件查看功能出现了问题，既然上传用不了，那就转而去寻找其它可利用漏洞，简单搜寻了一波，却也只发现了一堆 xss~~</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200826/e23af4d4b55f411986cac51db43bc208.png" /></p>
+<p><span style="font-size: 16px;">回想了下刚刚收集端口的时候，发现目标还开放了 redis 服务，前段时间搞内网的时候，就遇到了很多 redis 未授权，后台既然没有收获了，那就转向 redis 等服务入手吧。</span></p>
+<p><span style="font-size: 16px;">这里简述一下 redis 未授权漏洞：</span></p>
+<p><span style="font-size: 16px;">Redis 默认情况下，会绑定在 0.0.0.0:6379，如果没有进行采用相关的策略，比如添加防火墙规则避免其他非信任来源 ip 访问等，这样将会将 Redis 服务暴露到公网上，如果在没有设置密码认证（一般为空）的情况下，会导致任意用户在可以访问目标服务器的情况下未授权访问 Redis 以及读取 Redis 的数据。</span></p>
+<p><span style="font-size: 16px;">攻击者在未授权访问 Redis 的情况下，利用 Redis 自身的提供的 config 命令，可以进行写文件操作，攻击者可以成功将自己的 ssh 公钥写入目标服务器的 /root/.ssh 文件夹的 authotrized_keys 文件中，进而可以使用对应私钥直接使用 ssh 服务登录目标服务器</span></p>
+<p><span style="font-size: 16px;">使用 redis-cli 链接时提示 (NOAUTH Authentication required) 即需要输入密码链接，而非未授权。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200826/62e2b52884864b0ba9a4c18f3617ef7d.png" /></p>
+<p><span style="font-size: 16px;">之后利用 msf 进行枚举 redis 密码，通过短暂的枚举得到 redis 口令，下一步利用枚举到的口令进行登录验证，可知 redis 服务为弱口令，如下：</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200826/7cfa6d611f3c47d1a9c3f871bd803e5f.png" /></p>
+<p><span style="font-size: 16px;">漏洞利用</span></p>
+<p><span style="font-size: 16px;">关于 redis 漏洞的利用有很多种，比如主从复制 rce，定时任务写 shell 等，但我个人还是比较喜欢直接往服务器写入公钥去登录；既然想法有了，那就要行动起来；因为 msf 有现成的漏洞利用模块，所以就直接用它进行公钥的写入啦。</span></p>
+<p><span style="font-size: 16px;">这里简单介绍下 msf 下几个 redis 模块的用处：</span></p>
+<blockquote>
+<p><span style="font-size: 16px;">auxiliary/scanner/redis/file_upload #此模块功能为上传本地的文件到目标服务器。</span></p>
+</blockquote>
+<p><span style="font-size: 16px;">auxiliary/scanner/redis/file_upload #此模块功能为上传本地的文件到目标服务器。</span></p>
+<blockquote>
+<p><span style="font-size: 16px;">auxiliary/scanner/redis/redis_login #此模块功能是对 redis 的密码进行枚举，亲测速度很快。</span></p>
+</blockquote>
+<p><span style="font-size: 16px;">auxiliary/scanner/redis/redis_login #此模块功能是对 redis 的密码进行枚举，亲测速度很快。</span></p>
+<blockquote>
+<p><span style="font-size: 16px;">auxiliary/scanner/redis/redis_server #此模块功能是验证枚举或者其他手段得到的 redis 密码是否正确，该功能会执行一个 info 命令并返回执行结果。</span></p>
+</blockquote>
+<p><span style="font-size: 16px;">auxiliary/scanner/redis/redis_server #此模块功能是验证枚举或者其他手段得到的 redis 密码是否正确，该功能会执行一个 info 命令并返回执行结果。</span></p>
+<p><span style="font-size: 16px;">接下我们需要利用的模块为 </span><span style="font-size: 16px;">auxiliary/scanner/redis/file_upload</span><span style="font-size: 16px;">，先在本地生成一个公钥，需要注意的是，生成的公钥要改名为：authorized_keys，并且要在文件内容的前面和后面都加上 </span><span style="font-size: 16px;">nnn</span><span style="font-size: 16px;">换行符才行，否则会导致利用失败。</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200826/e2d313a323ea430293e8ea44fbd54bd8.png" /></p>
+<p><span style="font-size: 16px;">一切准备就绪后，设置好 options，run 可以看到公钥上传成功；成功上传后，使用公钥进行连接，由于服务器采用了 root 权限运行 redis 服务，所以这里连提权都不需要了~~</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200826/e639fb03fb9c46c98892c86fd3037e4f.png" /></p>
+<p><span style="font-size: 16px;">获取 root 权限后，发现目标处于内网环境，之后简单的收集了下内网信息，发现开放的服务还挺多的</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200826/76aebac14ef847b4a276c5745c5f4b81.png" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200826/453d4832087a4b77a64d522b0525b36f.png" /></p>
+<p><span style="font-size: 16px;">正准备进行下一步的内网渗透时，却被业务方叫停，说是超出了测试范围，由于授权单上只标明了 web 渗透，并未涉及到内网，到此，本次渗透也就不得已结束了。</span></p>
+<p><span style="font-size: 16px;"><strong>注</strong><span>：发布该文章时，所有漏洞均已修复，因为知道各位师傅的厉害，所有打码严重一点~~；文章如有错误，请第一时间指出，让萌新我学习一下，谢谢各位~</span></span></p>
+<p><span style="font-size: 16px;">小结 </span></p>
+<p><span style="font-size: 16px;">此次渗透最核心的问题还是 redis 弱口令，如果口令稍微复杂一点，可能漏洞利用就失败；其实本次渗透毫无波澜，甚至还有点无聊，这让我一度认为这是不是为 HW 而部署的一个蜜罐系统，虽然后来跟业务方确认了这是真实业务系统来着；废话不多说，花了一个下午的时间去测试，结果也出来了，得回去分析日志了~~ </span></p>
+➜临时找对象还来得及吗 | 七夕福利
+http://www.sohu.com/a/414889610_99907709	10094
+<p style="text-align: left;"><span style="font-size: 16px;">又是七夕了 </span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">没错！！！</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">走在大马路上撞见情侣概率又上升了</span></p>
+<p style="text-align: justify;"><img src="http://p9.itc.cn/q_70/images03/20200826/68031eb379e644108e45744f6a1fb751.jpeg" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">临时找对象肯定来不及了</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">与其看人谈恋爱</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">不如给自己充充电吧！</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200826/21c9435d32b8443abc7bc0bb362ecc30.gif" /></p>
+<p><strong><span style="font-size: 16px;">渗透测试训练营</span></strong></p>
+<p style="text-align: center;"><span style="font-size: 16px;">业内为数不多的渗透测试岗位培养课程</span></p>
+<p style="text-align: center;"><span style="font-size: 16px;">贴近真实的实操环境进行实操训练</span></p>
+<p style="text-align: center;"><span style="font-size: 16px;">“魔鬼训练营模式”教学</span></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: center;"><span style="font-size: 16px;">附赠合天畅学季度会员</span></p>
+<p style="text-align: center;"><span style="font-size: 16px;">一次付费，永久学习</span></p>
+<p style="text-align: center;"><span style="font-size: 16px;"><strong><span>今天购买还可享以下福利</span></strong></span></p>
+<p style="text-align: center;"><span style="font-size: 16px;"><strong><span>温馨提示：使用京东白条可享6期免息</span></strong></span></p>
+<p style="text-align: center;"><span><strong><span>特惠购课福利x留言点赞福利</span></strong></span></p>
+<p style="text-align: center;"><span style="font-size: 16px;"><strong>特惠购课福利</strong></span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;"><strong>今日前三名下单《渗透测试训练营》福利</strong></span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200826/d968a26b67a74f8b942e0971f8c14a5f.png" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;"><strong><span style="font-size: 16px;">特惠福利</span></strong></span></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><strong>今日第4名-第10名下单《渗透测试训练营》的小伙伴，享 <span>1299元</span>优惠券福利。 </strong></span></p>
+<p><span style="font-size: 16px;">扫码咨询更多课程详情</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200826/58a71c43d68d4137b8638964548d0b83.png" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;"><strong><span style="font-size: 16px;">留言点赞福利</span></strong></span></p>
+<p><strong><span style="font-size: 16px;">参与留言互动：</span></strong><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">留言活动不在本号，大家可以点我学习知识</span></p>

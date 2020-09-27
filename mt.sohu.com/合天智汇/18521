@@ -1,0 +1,193 @@
+➜Thymeleaf 模板注入导致命令执行
+http://www.sohu.com/a/418734458_99907709	13862
+<p style="text-align: center;"><span style="font-size: 20px;"><strong>9/16</strong></span></p>
+<p><span style="font-size: 16px;">文章共计2349个词</span></p>
+<p><span style="font-size: 16px;">来和我一起阅读吧</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">本文配合：</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;"></span><span style="font-size: 16px;">https://github.com/veracode-research/spring-view-manipulation/ </span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">食用更佳。</span></p>
+<p style="text-align: left;"><strong><span style="font-size: 16px;">背景：</span></strong></p>
+<p style="text-align: left;"><span style="font-size: 16px;">Thymeleaf </span><span style="font-size: 16px;">是与</span><span style="font-size: 16px;">java </span><span style="font-size: 16px;">配合使用的一款服务端模板引擎，也是</span><span style="font-size: 16px;">spring </span><span style="font-size: 16px;">官方支持的一款服务端模板引擎。他支持</span><span style="font-size: 16px;">HTML </span><span style="font-size: 16px;">原型，在</span><span style="font-size: 16px;">HTML </span><span style="font-size: 16px;">标签中增加额外的属性来达到模板</span><span style="font-size: 16px;">+ </span><span style="font-size: 16px;">数据的展示方式。默认前缀：</span><span style="font-size: 16px;">/templates/ </span><span style="font-size: 16px;">，默认后缀：</span><span style="font-size: 16px;">.html </span><span style="font-size: 16px;">。</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">首先我们来熟悉一下这个漏洞发生的一些前期知识：</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">1</span><span style="font-size: 16px;">、</span><span style="font-size: 16px;">spring mvc </span><span style="font-size: 16px;">及</span><span style="font-size: 16px;">thymeleaf </span><span style="font-size: 16px;">基础</span></p>
+<ul>
+<li>下载 github 中的项目，在 idea 中导入。（导入时选择 pom.xml 并以 project 的形式进行导入，这样他会自己去下载他的依赖，也就是 jar 包，配置 maven 这些如果有需要的话会单独写一篇文章。）</li>
+<li>要等他下载 jar 包完成，所以稍等一会。之后，我们来到 HelloController.java 文件。</li>
+</ul>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<ul>
+<li>这个方法名上加了 @GetMapping("/") 的注解，表示请求方法为 get 的 url 为 / 的请求会进到这个方法体里面进行处理。</li>
+<li>在这个方法里面，给 model 传入了一个参数，key 为 message ，value 为 happy birthday ，这个 model 会和我们要返回的视图名一起传回前端。</li>
+<li>这里的 return "welcome" 返回的是视图名，thymeleaf 会默认加上前缀 /templates 及后缀 .html ，即最终返回的视图名就是 /templates/welcome.html ，带上我们的数据 model 。</li>
+</ul>
+<p style="text-align: left;"><strong><span style="font-size: 16px;">/templates/welcome.html</span><span style="font-size: 16px;">：</span></strong></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<ul>
+<li>这里首先将 html 的名称空间设置为 thymeleaf ，接下来 html 文档中就可以使用 thymeleaf 中的指令了。比如接下来的 div 标签中就有 th:fragment 、th:text 这种形式，这种就是 thymeleaf 中的指令。</li>
+<li></li>
+</ul>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200916/3336d637d0c04d9eb29c9daa9ae87788.png" /></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span style="font-size: 16px;"><span>漏洞出现在</span></span><span>thymeleaf </span><span>的片段选择器中，关于片段选择器是什么，通过一个小例子就会知道。</span></span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">2</span><span style="font-size: 16px;">、</span><span style="font-size: 16px;"></span><span style="font-size: 16px;">片段选择器，</span><span style="font-size: 16px;">templatename::selector</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<ul>
+<li>这里接收一个 section 的参数，这个参数来决定我们页面显示哪一个部分。</li>
+</ul>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200916/d8f71ce816fe462c8736902bc55ed921.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<ul>
+<li>这里没有上个的 Spring Boot Web Thymeleaf example 字样了。将 section 换为 header ，就没有 Hello, ${message} 字样了。</li>
+</ul>
+<p style="text-align: left;"><span style="font-size: 16px;">3</span><span style="font-size: 16px;">、</span><span style="font-size: 16px;"></span><span style="font-size: 16px;">漏洞详情，</span><span style="font-size: 16px;">thymeleaf </span><span style="font-size: 16px;">在解析包含</span><span style="font-size: 16px;">:: </span><span style="font-size: 16px;">的模板名时，会将其作为表达式去进行执行。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200916/95c556a5cc5f4ed499e89a3fe1ecdcfe.png" /></p>
+<ul>
+<li>官方文档中也有提到。</li>
+</ul>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200916/25f816eb1b2b416baba0c11ad087caeb.png" /></p>
+<ul>
+<li>github 的文章给的 payload ：__${new java.util.Scanner(T(java.lang.Runtime).getRuntime.exec("id").getInputStream).next}__::.x</li>
+</ul>
+<ul>
+<li>这其中除了 __ 下划线暂时不理解之外，其他的应该都能清楚了。后面的 .x 是不需要也可以的，或者也可以换成其他的字符。</li>
+</ul>
+<ul>
+<li>__${…}__ 是 thymeleaf 中的预处理表达式，也就是会对双下划线包起来的表达式进行预处理。比如：#{selection.__${sel.code}__} ，这里的话 thymeleaf 会先对 ${sel.code} 进行解析，若解析的结果为 ALL ，那么再将其结果作为常规表达式的一部分，也即是 #{selection.ALL}</li>
+<li>所以，结合我们的 payload ，因为 payload 中包含了 :: ，也就是会将 templatename 以及 selector 作为表达式去进行执行，在这里给的 payload 中，表达式在模板名的位置：__${new java.util.Scanner(T(java.lang.Runtime).getRuntime.exec("id").getInputStream).next} 执行 id 这条命令，因为他会进行一个预处理那么无论他前面和后面有什么都会先去处理这个表达式，也就都会去执行里面的命令。</li>
+</ul>
+<p><span style="font-size: 16px;">4、 实操</span></p>
+<ul>
+<li>4.1 首先看一下</li>
+</ul>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<ul>
+<li></li>
+</ul>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200916/7d065c0d78b94681b0b9a6128027175b.png" /></p>
+<ul>
+<li>执行命令并回显。</li>
+</ul>
+<ul>
+<li>4.2 再看一下：</li>
+</ul>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<ul>
+<li></li>
+</ul>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200916/779820af1dc04c8b8140d351d151a839.png" /></p>
+<ul>
+<li>这时没有回显，状态也是 200 ，调试之后发现，前面模板名找不到会抛出一个异常，而这里是将我们的 section 放到 welcome :: 后面，而这时是找到的模板名，找不到 selector ，这时他不会抛出异常，只是没有内容显示了，但是命令还是会执行。</li>
+</ul>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200916/001b7cc6eeee4d53a75d288790dfbe5b.png" /></p>
+<ul>
+<li></li>
+</ul>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200916/312f54adb1734e738e663f9cd31c8eed.png" /></p>
+<ul>
+<li>测试发现，payload ：</li>
+</ul>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200916/cd11394ba4ac4147a7ea8cbddcd41e25.png" /></p>
+<p><span style="font-size: 16px;">4.3 还有一种魔幻操作，</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<ul>
+<li>这时返回值为空，并没有返回视图名，此时的视图名会从 URI 中获取，具体实现的代码在 DefaultRequestToViewNameTranslator 中的 getViewName 方法：</li>
+</ul>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<ul>
+<li>故此时在 uri 中的参数添加 payload 即可。</li>
+</ul>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200916/4fb0f24c1b3140db89f4eac522b9be88.png" /></p>
+<ul>
+<li>这里的 payload 必须包裹在 __...__ 之中，且后面加上 :: ，及 .string 。至于为什么我也没弄明白。</li>
+</ul>
+<p><span style="font-size: 16px;">5、防御</span></p>
+<p><span style="font-size: 16px;">1.1. 方法上配置 @ResponseBody 或者 @RestController </span></p>
+<ul>
+<li>这样 spring 框架就不会将其解析为视图名，而是直接返回。不配置的话 SpringMVC 会将业务方法的返回值传递给 DispatcherServlet ，再由DispatcherServlet 调用 ViewResolver 对返回值进行解析，映射到一个 view 资源。</li>
+<li>@RestController 表示该控制器会直接将业务方法的返回值响应给客户端，不进行视图解析。它内部继承了 @ResponseBody 。</li>
+</ul>
+<p><span style="font-size: 16px;">1.2. 在返回值前面加上 "redirect:"</span></p>
+<p><span style="font-size: 16px;">这样不再由 Spring ThymeleafView来进行解析，而是由 RedirectView 来进行解析。</span></p>
+<p><span style="font-size: 16px;">1.3. 在方法参数中加上 HttpServletResponse 参数</span></p>
+<p><span style="font-size: 16px;">这样 spring 会认为已经处理了 response ，无须再去进行视图名的解析。在 ServletResponseMethodArgumentResolver 类中检查了此参数。</span></p>
+<p style="text-align: center;"><span style="font-size: 20px;"><strong>9/16</strong></span></p>
+<p><span>投稿细则都在里面了，点击查看哦</span>重金悬赏 | 合天原创投稿涨稿费啦！ </p>
+➜你收到一条团队好友验证......
+http://www.sohu.com/a/418754280_99907709	13862
+<p style="text-align: center;"><span style="font-size: 20px;"><strong>9/16</strong></span></p>
+<p><span style="font-size: 16px;"><span>第 </span><span>137</span><span>个线下俱乐部</span></span></p>
+<p><span style="font-size: 16px;">兰州交通大学博文学院俱乐部成立啦</span></p>
+<p><strong><span style="font-size: 16px;">一定要在团队当中</span></strong></p>
+<p><span style="font-size: 16px;">你不是天才，或者加入一个团队，或者创建一个团队，伴随团队一起成长和提高，看见自己的进步。</span></p>
+<p><strong><span style="font-size: 16px;">努力努力再努力</span></strong></p>
+<p><span style="font-size: 16px;">比你聪明的人比你更努力，其实也还是需要一些天分，坚持到底,永不放弃，努力的过程中你会发现你的天分</span></p>
+<p><span><strong><span style="font-size: 16px;">能力是被动施教出来的还是主动求学出来的？</span></strong></span></p>
+<p><span style="font-size: 16px;">被动学习，要我学，浅尝辄止</span></p>
+<p><span style="font-size: 16px;">主动学习，我要学，融会贯通</span></p>
+<p><span style="font-size: 16px;">仅看懂课堂书本无法在CTF世界生存</span></p>
+<p><span style="font-size: 16px;">充分利用合天网安实验室提供的平台，积极学习相关知识，进行在线实验训练。</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200916/398539550c3143839272cb1b2630bb59.jpeg" /></p>
+<p><span style="font-size: 16px;">1、利用合天平台资源，普及网络安全知识，帮助身边同学了解网络安全的重要性；</span></p>
+<p><span style="font-size: 16px;">2、定期举行讨论学习会，交流分享学习心得，帮助能力较弱的同学提高；</span></p>
+<p><span style="font-size: 16px;">3、在初始阶段打牢基础，一步一个脚印，扎扎实实逐步提高；</span></p>
+<p><span style="font-size: 16px;">4、了解最新发布的网站漏洞，并学习其原理，能够做到漏洞复现；</span></p>
+<p><span style="font-size: 16px;">5、根据队员的不同的兴趣、特点和发展方向分组学习提高；</span></p>
+<p><span style="font-size: 16px;">6、有能力的成员可以与校园网络管理人员合作共同维护校园网络；</span></p>
+<p><span style="font-size: 16px;">7、条件成熟后，俱乐部成员一起参加各种线上线下比赛，提高水平。</span></p>
+<p><span style="font-size: 16px;">8、随着俱乐部的发展，根据实际情况做后续的发展计划。</span></p>
+<p style="text-align: center;"><span style="font-size: 20px;"><strong>9/16</strong></span></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">这是合天网安实验室的第 </span><span style="font-size: 16px;">137</span><span style="font-size: 16px;">个线下俱乐部</span></span></p>
+<p><span style="font-size: 16px;">完全民间非盈利性组织</span></p>
+<p><span style="font-size: 16px;">仅仅因为热爱</span></p>
+<p><span style="font-size: 16px;">没有复杂的规矩</span></p>
+<p><span style="font-size: 16px;">没有繁琐的手续</span></p>
+<p><span style="font-size: 16px;">有想法就来成立。</span></p>
+<p>戳 <span>“阅读原文”，</span><span>加入合粉俱乐部</span></p>

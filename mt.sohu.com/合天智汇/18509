@@ -1,0 +1,74 @@
+➜渗透某勒索服务器
+http://www.sohu.com/a/416524094_99907709	8968
+<p>亲爱的,关注我吧 </p>
+<p style="text-align: center;"><span style="font-size: 20px;"><strong>9/4</strong></span></p>
+<p><span style="font-size: 16px;">文章共计1399个词</span></p>
+<p><span style="font-size: 16px;">和我一起阅读吧</span><strong><span style="font-size: 20px;"></span></strong></p>
+<p><span style="font-size: 16px;">作者： <span>六号刃部</span></span></p>
+<p><span style="font-size: 16px;">来源公众号：酒仙桥六号部队</span><span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">1</span></strong></p>
+<p><span><strong>事情经过</strong></span></p>
+<p><span style="font-size: 16px;">和我一起合租的室友喜欢玩微信摇一摇，QQ附近人啥。我劝他别信这些，都是骗人的。他告诉我，你不懂，我相信总有一天会摇到属于我的那个“她”。终于在某年某月某日，我的室友终于摇到了他口中所说的那个“她”，在和那个“她”聊了一段时间后，我的室友见识到了社会的残酷。他告诉我自己被勒索了，对方给他发了一张他手机通讯录截图，威胁他说不转钱，就把他和妹子“luo聊”的视频发给通讯录上面的人</span></p>
+<p><span style="font-size: 16px;">关键聊天记录：</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200905/5b8e8e7a8c214bb5a13f1f7764762bf4.png" /></p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">2</span></strong></p>
+<p><span><strong>渗透目标</strong></span></p>
+<p><span style="font-size: 16px;">在模拟器安装好APP，打开APP后会获取通讯录和短信权限，一般人会直接允许获取权限，接着就是直接让我们用手机号进行登录。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200905/ec1f032fb2cb430e87b8766431c900f1.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">我随便输入一个手机号和邀请码，发现点击登录没反应，于是开启burpsuite进行抓包，发现点了登录后已经向服务器发送请求。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200905/3e20c9021797407e90e38e41cb18c208.png" /></p>
+<p><span style="font-size: 16px;">直接访问域名，看见熟悉的路径，一猜应该是thinkphp框架。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200905/424e3de680a24e5b8aa837ebce693490.png" /></p>
+<p><span style="font-size: 16px;">让其报错，果然猜的没错，得到thinkphp版本为5.0.5。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200905/4a4cbcadf7fe497bbf01b97012750744.png" /></p>
+<p><span style="font-size: 16px;">直接用RCE漏洞getshell，不得不说，搞这种勒索的安全意识有点差。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200905/bf9d9c34abe64430b2a3f535b73eb0b6.png" /></p>
+<p><span style="font-size: 16px;"><span>AntSword连接成功。</span></span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200905/f7ceb9c79792465f8fb065a614a8d080.png" /></p>
+<p><span style="font-size: 16px;">拿到数据库密码，支持外连，连上数据库后拿到管理员密码哈希和管理员登录IP地址。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200905/665bdadf00314fbfba248024fa373e95.png" /></p>
+<p><span style="font-size: 16px;">看了下是40位加密的哈希没解开，dump下网站源码，查看一下登录代码长啥样。查看登录代码发现调用makepass函数。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200905/61e9c300c5cb4b82a6446fceef896d1a.png" /></p>
+<p><span style="font-size: 16px;">找到makepass函数，知道了加密方法后我们生成一个自己的密码，修改原数据库密码，登录成功后再给他修改回去。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200905/af5d1d4d8c86410ea2826956d681f247.png" /></p>
+<p><span style="font-size: 16px;">经过一番折腾，终于看到后台长啥样了，中招的用户看来不少，每几分钟我刷新一下就发现会增加好几个受害者。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200905/663e6cf9dd634404b9d875d8ad6c37c5.png" /></p>
+<p><span style="font-size: 16px;">获取受害者手机通讯录。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200905/88eabae8113a483db6c6221796c7de69.png" /></p>
+<p><span style="font-size: 16px;">获取受害者手机短信记录。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200905/feb42821a70e44f3a1c82de29690fd13.png" /></p>
+<p><span style="font-size: 16px;">找到我室友的信息，然后删掉。</span></p>
+<p><span style="font-size: 16px;">收集了下服务器信息，得知是宝塔，提权服务器失败，一遇到搭建了宝塔的服务器就提不下来，于是想到直接钓管理员个人PC，因为我们有了shell，直接在文件里面添加代码。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200905/48218795f0f04bfda8bb00a94530b605.png" /></p>
+<p><span style="font-size: 16px;">这里使用FLASH钓鱼，只要管理员一登录就会显示FLASH版本过低，更新FLASH，跳转到我们准备好的钓鱼页面，诱导管理员下载提前准备好的flashplayerpp_install_cn.exe安装文件，免杀啥的都已经搞好，就等管理员上钩。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200905/085d2e839fa349d1884cb2104b2f443e.png" /></p>
+<p><span style="font-size: 16px;">没等多久，管理员上线了，在浏览桌面的时候发现1个BT.txt文件，查看一下发现是BT的登录地址，还有网站后台登录密码。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200905/eccce089727a4d039843648a9e5a1665.png" /></p>
+<p><span style="font-size: 16px;">利用获取的密码成功登录BT。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200905/46f1feb4f0b843adbabaa64f4234fbf5.png" /></p>
+<p><span style="font-size: 16px;">因为BT直接root权限运行，所以BT计划任务反弹直接获取的就是root权限。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200905/48e474add16d49e9804707cef6179e39.png" /></p>
+<p><span style="font-size: 16px;">NC监听12345端口，稍等片刻，成功获取服务器权限。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200905/5a71c8b479764c0e8cd0ff0f1861d20c.png" /></p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">3</span></strong></p>
+<p><span><strong>尾声</strong></span></p>
+<p><span style="font-size: 16px;">此类案件一直频繁发生，小编百度了一下，中招的特别多。</span></p>
+<p><span style="font-size: 16px;">分析作案手法：</span></p>
+<p><span style="font-size: 16px;">1.寻找受害人群，以单身男性为目标，因为中招几率较高。</span></p>
+<p><span style="font-size: 16px;">2.主动添加你的QQ，然后主动和你视频裸聊，没多久，她真的会发给你视频，男同胞由于在荷尔蒙的影响下，肯定会接的，然后你的手机画面中，会出现一个女孩揉胸顿足的画面，他会让你露脸和你的私密地方，她的诈骗在这里就已经正式开始了。</span></p>
+<p><span style="font-size: 16px;">3.这个时候他已经录了视频，录完了以后，她会直接挂掉。然后发你一个“app”，说她在上面直播，这个时候，她会要求你安装app去加个关注。此时你只要安装了APP，你手机通讯录就全泄露了。</span></p>
+<p><span style="font-size: 16px;">4.骗子有了你的裸聊视频，你的电话，你手机通讯录的好友电话等。</span></p>
+<p><span style="font-size: 16px;">5.开始威胁你，说要你转账才删除自己的裸聊视频。第一次他会说转100删除视频，视频删了以后，说转300删除一个你的通讯录的手机号，这就是一个无底洞，你要是转了就永远陷进去出不来了。</span></p>
+<p style="text-align: center;"><span style="font-size: 20px;"><strong>9/4</strong></span></p>
+<p><span>欢迎投稿至邮箱：</span><span>edu@heetian.com</span></p>
+<p><span>有才能的你快来投稿吧！</span><span></span></p>
+<p><span>投稿细则都在里面了，点击查看哦</span></p>
+<p><span>重金悬赏 | 合天原创投稿涨稿费啦！ </span></p>

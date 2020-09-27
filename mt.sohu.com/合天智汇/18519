@@ -1,0 +1,64 @@
+➜逆向入门分析实战（四）
+http://www.sohu.com/a/418271959_99907709	9480
+<p style="text-align: center;"><span style="font-size: 20px;"><strong>9/14</strong></span></p>
+<p><span style="font-size: 16px;">文章共计1836个词</span></p>
+<p><span style="font-size: 16px;">是逆向入门分析实战系列的第四篇</span></p>
+<p><span style="font-size: 16px;">来和我一起阅读吧</span></p>
+<p><span style="font-size: 16px;">这次我们对很多木马和APT组织常见的一个手法进行正向开发和逆向分析，这个手法就是当发现当前系统中存在特定的杀毒软件和行为监控软件等安全软件时，退出自身进程不再执行自身的恶意模块。其实这个原理还是很简单的，就是进程遍历，然后与这些安全软件的进程进行对比。</span></p>
+<p><span style="font-size: 16px;">进程遍历的常见方法是首先使用CreateToolhelp32Snapshot函数创建一个进程快照，这个快照是当前系统中所运行的所有进程，和使用Windows任务管理器查看进程的结果类似，区别在于Windows任务管理器是实时的，而创建进程快照是“拍照”那一刻所运行着的所有进程。之后使用Process32First和Process32Next对所有的进程进行遍历，将得到的进程名与安全软件的进程名进行对比，如果相等，则退出自身进程。对于windows10的任务管理器不再显示映像名称，可以使用cmd中的tasklist命令来查看当前运行的所有进程。</span></p>
+<p><span style="font-size: 16px;">那我们怎么知道安全软件的进程名呢？这就要靠自己去收集了，比如360tray.exe和360sd.exe就是360安全卫士和360杀毒的进程名，我们以360杀毒为例，当我们发现当前机器上运行了360杀毒则直接退出。</span></p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">1</span></strong></p>
+<p><strong><span style="font-size: 16px;">正向开发之进程遍历查找360杀毒</span></strong></p>
+<p><span style="font-size: 16px;">1、CreateToolhelp32Snapshot函数</span></p>
+<p><span style="font-size: 16px;">这个函数的参数有两个，第一个是dwFlags参数，这个参数用来指定快照中包含的系统内容，在这里我们要查看当前系统中所有的进程，所以dwFlags参数要指定为TH32CS_SNAPPROCESS，第二个参数为进程ID，这里我们应该指定为0，为什么会有这个参数呢？因为CreateToolhelp32Snapshot函数不仅仅可以用来查看当前系统中运行的进程，还可以查看某一个指定进程的所有堆（TH32CS_SNAPHEAPLIST）或者模块（TH32CS_SNAPMODULE），这个参数只有当查看某一个指定进程的所有堆或者模块时才有效。我们需要将其指定为0，表示查看当前系统中运行的进程，函数调用成功后返回值是快照的句柄（handle）。如果想了解更多内容可以查看MSDN文档。</span></p>
+<p><span style="font-size: 16px;">2、Process32First函数</span></p>
+<p><span style="font-size: 16px;">这个函数查找系统快照中第一个进程信息，有两个参数，第一个参数hSnapshot是CreateToolhelp32Snapshot返回的进程句柄，第二个参数LPPROCESSENTRY32是一个结构体指针，而这个结构体首先是需要我们来初始化，之后当Process32First调用成功后，就会将函数的返回值存储到这个结构体中，这一点和Python不太一样，需要注意。</span></p>
+<p><span style="font-size: 16px;">3、Process32Next函数</span></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">这个函数查找系统快照中下一个进程信息，和Process32First参数一样，两者结合即可遍历系统快照中的进程。</span></p>
+<p><span style="font-size: 16px;">4、编写代码</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200914/78c9df0dedf04ef0b4df9a0c355699e3.png" /></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200914/3eb751cbbc3848968d7d6356676a5452.png" /></p>
+<p><span style="font-size: 16px;">首先需要把必须的一些头文件包含进来，之后创建了一个listProcess函数来遍历进程，在listProcess函数里首先初始化LPPROCESSENTRY32结构体，其中需要注意的是在调用Process32First之前，我们需要先将结构体中的dwSize初始化，这个值表示结构体大小，可以通过sizeof(LPPROCESSENTRY32)获取。之后依次调用CreateToolhelp32Snapshot、Process32First、Process32Next，然后使用StrStr函数进行对比，系统快照中的进程名保存在LPPROCESSENTRY32结构体中的szExeFile这个成员变量里。理解这几个API函数和相互之间的调用关系，编写程序便水到渠成了。编译运行，在一台没有装360杀毒的主机上运行，最后执行完毕：</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200914/d49ba4d499cb44358dd959e4af946088.png" /></p>
+<p><span style="font-size: 16px;"><span>如果在一台装有</span>360 <span>杀毒的主机上运行，当检测到有</span>360se.exe <span>之后便停止运行：</span></span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200914/ba59899e84124ad884ab46a94014f075.png" /></p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">2</span></strong></p>
+<p><strong><span style="font-size: 16px;">逆向分析之进程遍历查找</span><span style="font-size: 16px;">360杀毒</span></strong></p>
+<p><span style="font-size: 16px;">ida</span><span style="font-size: 16px;">停留在这个界面，我们双击查看</span><span style="font-size: 16px;">listProcess</span><span style="font-size: 16px;">函数的内容：</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200914/fb4493072d7541d6ac7faaf6e62cd19c.png" /></p>
+<p><span style="font-size: 16px;"><span>首先查看其调用了</span><span>CrateToolhelp32Snapshot</span><span>函数：</span></span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200914/4c8c2c0a77b24029809365c8df9ad9a2.png" /></p>
+<p><span style="font-size: 16px;"><span>其中可以看到</span><span>PROCESSENTRY32</span><span>结构体在此系统版本和编译环境下的大小为</span><span>128h</span><span>，</span><span>dwFlags</span><span>的值为</span><span>2</span><span>，这是因为</span><span>TH32CS_SNAPPROCESS</span><span>是一个宏定义，它对应的常量为</span><span>2:</span></span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200914/ccce947fff484fc6ae46f5b90cb41d45.png" /></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200914/af56277cb4384a4fbff304fa9f2931aa.png" /></p>
+<p><span style="font-size: 16px;"><span>得到</span><span>CrateToolhelp32Snapshot</span><span>返回值后为什么要将其与</span><span>0FFFFFFFFh</span><span>进行对比？查看其二进制：</span></span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200914/a0f0ff053adb47bfb63f1635062fe6b5.png" /></p>
+<p><span style="font-size: 16px;"><span>32</span><span>个</span><span>1</span><span>，我们通过查看宏的方式，看到这个值是</span><span>-1</span><span>。</span></span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200914/ed90973735624352a4bc34210aa18993.png" /></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200914/3fc00e823f414867a28a117a2f80fa2e.png" /></p>
+<p><span style="font-size: 16px;"><span>为什么是</span><span>32</span><span>个</span><span>1</span><span>呢？我第一时间想到原来学习计算机组成原理的时候有一节课在讲补码，好像涉及到这个。经过查阅资料，发现确实是</span><span>-1</span><span>。负数是通过对其绝对值相同的正数先按位取反再加</span><span>1</span><span>得到的，即</span><span>-1</span><span>是通过对</span><span>1</span><span>按位取反之后再加</span><span>1</span><span>得到的，这样能保证两者相加结果为</span><span>0</span><span>（两者相加会溢出，正好为</span><span>0</span><span>）。把当年没认真学的知识弄清楚的感觉真棒！</span></span></p>
+<p><span style="font-size: 16px;"><span>之后，调用了</span><span>Process32First</span><span>函数，参数分别为一个指针和一个快照：</span></span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200914/93f9bfa8284446d1b2fd4ed38f77b568.png" /></p>
+<p><span style="font-size: 16px;"><span>之后，获取其进程名然后使用</span><span>StrStr</span><span>查找是否包含</span><span>360sd.exe</span><span>：</span></span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200914/1cc55eed1671449892c84a051ed7cc68.png" /></p>
+<p><span style="font-size: 16px;">重点查看这里：</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200914/c2d06bc438d549f08dfc0004d3279cde.png" /></p>
+<p><span style="font-size: 16px;"><span>其中，先将</span><span>eax</span><span>的值（即为</span><span>PROCESSENTRY32</span><span>结构体中的</span><span>szExeFile</span><span>成员变量，具体可查看</span><span>PROCESSENTRY32</span><span>结构体）存入</span><span>esp+4</span><span>，再将</span><span>the process is %sn</span><span>字符串存入</span><span>esp</span><span>中，这其实相当于是先</span><span>push eax</span><span>，再</span><span>push</span><span>字符串，然后调用</span><span>printf</span><span>进行输出。</span></span></p>
+<p><span style="font-size: 16px;"><span>之后再调用</span><span>StrStr</span><span>将进程名与</span><span>360sd.exe</span><span>进行对比。如果匹配上，则直接进入最左侧：</span></span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200914/3312664be83941f980ebcedd9e67eb91.png" /></p>
+<p><span style="font-size: 16px;"><span>如果匹配不上，则进入右侧，调用</span><span>Process32Next</span><span>，再循环执行。当</span><span>Process32Next</span><span>返回值为</span><span>FALSE</span><span>即为零时，则会跳转到中间，此时所有的进程已经遍历完。</span></span></p>
+<p><span style="font-size: 16px;">至此，整个程序逆向分析完毕。</span></p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">3</span></strong></p>
+<p><strong><span style="font-size: 16px;">总结</span></strong></p>
+<p><span style="font-size: 16px;"><span>此次正向开发和逆向分析，主要是对</span><span>windows</span><span>中的进程遍历相关的</span><span>API</span><span>进行了熟悉和掌握，同时，将遍历到的每一个进程名与常见的安全软件进行匹配，之后再采取相应的措施。基于此，可以拓展开发更多的功能，比如匹配一些行为监控软件、</span><span>Wireshark</span><span>、虚拟机</span><span>vmtools</span><span>软件等等。</span></span></p>
+<p style="text-align: center;"><span style="font-size: 20px;"><strong>9/14</strong></span></p>
+<p><span>投稿细则都在里面了，点击查看哦</span>重金悬赏 | 合天原创投稿涨稿费啦！ </p>
+<p>戳 <span>“阅读原文”</span>我们一起学习 </p>

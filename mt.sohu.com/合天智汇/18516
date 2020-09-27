@@ -1,0 +1,196 @@
+➜一次病毒应急的学与思
+http://www.sohu.com/a/417717355_99907709	11901
+<p style="text-align: center;"><span style="font-size: 20px;"><strong>9/11</strong></span></p>
+<p><span style="font-size: 16px;">文章共计3887个词</span></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">作者：</span><span style="font-size: 16px;">六号刃部</span></span></p>
+<p><span><span style="font-size: 16px;">转载自公众号：酒仙桥六号部队</span></span></p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">1</span></strong></p>
+<p><span style="font-size: 16px;"><strong>背景</strong></span></p>
+<p><span style="font-size: 16px;"><span>作为一名甲方安全工程师，平时除了对自家web进行渗透之外，还需要对突发的安全事件进行应急。</span></span></p>
+<p><span style="font-size: 16px;">这不是临近下班了，运维兄弟突然通知我们，有大量的windows机器cpu占用异常，很多都达到100%了，我们眉头一皱感觉事情不简单。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200911/f316e4a12bf74a6b99684d5e3f938087.png" /></p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">2</span></strong></p>
+<p><span style="font-size: 16px;"><strong>起因</strong></span></p>
+<p><span style="font-size: 16px;">二话没说问运维兄弟要了台机器的账号和密码，远程登陆查看情况，上来就看到cpu占用100%。这不妙啊，没跑啥服务就这么高，不会是被挖矿了吧。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200911/b023f995b7d640f8a825fccdc47cf9c5.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">服务器执行netstat -ano |findstr 445 可以看到一大堆的445链接，初步判断中毒了，而且扩散很严重，其中有扫描连接国外ip，不像直接定向攻击公司的病毒。继续观察其他的端口连接信息。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200911/947484e4ec124f7399913e309b2a9e75.png" /></p>
+<p><span style="font-size: 16px;">通过netstat -ano|findstr 1433 发现 对1433的连接也很多。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200911/393962ae2a0b4f049a8b63b69d084531.png" /></p>
+<p><span style="font-size: 16px;">我们判断是服务器中毒了，运维也联系安全公司派人应急。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200911/ae256cbe8b8d4efb85074015052c77e1.png" /></p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">3</span></strong></p>
+<p><span style="font-size: 16px;"><strong>病毒应急</strong></span></p>
+<p><span style="font-size: 16px;"><span>时间不等人，求人不如求自己，安全工程师要在这时候站出来。</span><span>检查服务器进程发现异常，svchost.exe下有powershell进程，查看详情发现命令很诡异。</span></span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200911/03cc6bce683142879af62ac31e55fe3e.png" /></p>
+<p><span style="font-size: 16px;">powershell如下：</span></p>
+<ul>
+<li></li>
+</ul>
+<p><span style="font-size: 16px;">解码后是这样：</span><span style="font-size: 16px;"></span><span style="font-size: 16px;">居然是个远程下载的ps命令，还是不认识的域名。</span></p>
+<ul>
+<li></li>
+</ul>
+<p><span style="font-size: 16px;">微步在线查一下发现是木马和驱动人生后门：</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200911/e3f5182dac1e4fc1a77fedaf7c831e0b.png" /></p>
+<p><span style="font-size: 16px;">百度搜索该域名后也确认为驱动人生病毒后门病毒，不排除变种。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200911/4d06a8b08c71427a9231669c0ca3d32e.png" /></p>
+<p><span style="font-size: 16px;">查看计划任务，发现这台机器已经被写入了好多定时任务，查看详情全部为同样的ps命令。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200911/7a10679cc0df43cb8ce292f250cb9add.png" /></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200911/111fbb2da8ae4c66b1709ae11ce5aab0.png" /></p>
+<p><span style="font-size: 16px;">病毒会通过powershell定时远程下载新的powershell并执行，开始蠕虫式传播。通过下载获取到源码如下：</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200911/51e7db25d58d4876b87b3b9a967b2824.png" /></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200911/13db393ad89f467cb266aa43f4adc673.png" /></p>
+<p><span style="font-size: 16px;">查看widows目录，发现大量的随机命名exe文件和mimikatz运行日志。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200911/2e395f51a21145cfb89c8dcadd12487a.png" /></p>
+<p><span style="font-size: 16px;"><span>获取到病毒样本的md5，也与公布的一致，确认为“驱动人生”病毒。</span><span>那么整个流程就很清楚了，大致如下：</span></span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200911/5e7e12e8b7964abbb9aad80c9101fb63.png" /></p>
+<p><span style="font-size: 16px;">我和同事们梳理了当前的情况：</span></p>
+<ul>
+<li>该病毒利用永恒之蓝漏洞、弱口令、mimikatz抓取域密码、数据库弱口令等方式传播。中毒特征为cpu使用率升高、对外请求恶意域名。</li>
+<li>第一感染区为办公网，无法判断当前数量。</li>
+<li>办公网与测试环境有代理，相当于做了网段打通。</li>
+<li>分公司办公网机器与总部未打通，但是域控与总部连通。</li>
+<li>现有windows server中有90%打了永恒之蓝补丁。</li>
+</ul>
+<p><span style="font-size: 16px;">根据当前的情况，我们首先要做的是防止扩散，但是还是晚了一步，多个分公司在工作群反馈杀毒软件弹窗，杀完之后还会出现，并且好多dhcp服务器也由于感染病毒，出现了员工网络不通的问题。</span></p>
+<p><span style="font-size: 16px;">我们立马远程看了下域控，发现也中招了，哭了。</span></p>
+<p><span style="font-size: 16px;">同时安全公司的应急响应工程师也确认了此次中毒事件为“驱动人生”病毒，但是无法判断第一台被感染的机器。建议全部安装杀毒软件重启并杀毒。汗，和没说一样，还是得靠我们自己。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200911/f9a768bb820a4044a22d7fa6dd8c9a5f.png" /></p>
+<p><span style="font-size: 16px;">眼看着病毒已经扩散成这样了，想办法杀毒吧。根据网上对病毒的分析，病毒会在windows计划任务添加定时任务，再执行powershell下载病毒程序躲避杀软检测。杀毒软件的查杀仅能将poweshell释放的exe杀掉，powershell还是会不断地释放病毒，仅杀毒软件查杀无法从根本上清除病毒。</span></p>
+<p><span style="font-size: 16px;">那么如果我们禁止服务器外网访问，并劫持恶意域名到内网服务器，我们是不是就可以控制病毒的扩散，利用病毒原有的逻辑下载计划任务清除脚本并重启服务就可以不用手动清除毒了。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200911/90815dede6c04daba01903a4670573bc.png" /></p>
+<p><span style="font-size: 16px;">逻辑如下：</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200911/5079a456d1a84e2799cd61e68108e5ad.png" /></p>
+<p><span style="font-size: 16px;">多说无益，开始整活儿。和ops咨询后，idc机房可以禁止服务器外网访问，办公网和测试网由于有需求需要开启外网访问，但所有的机器使用的dns服务器均为公司的私有dns。</span></p>
+<p><span style="font-size: 16px;">我们将v.beahh.com解析到了192.168.10.55上，同时我们在上面起一个微型web服务，对所有请求返回杀毒powershell脚本代码：</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p><span><span>#递归所有powershell有关的计划任务，发现立即删除</span></span><span><span>Function</span>DeletePowershellTaskScheduler( <span>$TaskPath</span>){ </span><span><span>$folder</span>= <span>$service</span>.GetFolder( <span>$TaskPath</span>) </span><span><span>$taskitem</span>= <span>$folder</span>.GetFolders( <span>0</span>) </span><span><span>foreach</span>( <span>$i</span><span>in</span><span>$taskitem</span>){ </span><span><span>$tasks</span>= <span>$i</span>.GetTasks( <span>0</span>) </span><span><span>foreach</span>( <span>$task</span><span>in</span><span>$tasks</span>){ </span><span></span><span><span>$taskName</span>= <span>$task</span>.Name </span><span><span>$taskPath</span>= <span>$task</span>.Path </span><span><span>$taskXml</span>= <span>$task</span>.Xml </span><span><span>#Write-Host $taskName</span></span><span><span>if</span>([String]::IsNullOrEmpty( <span>$taskXml</span>)){ </span><span><span>$i</span>.DeleteTask( <span>$taskName</span>, <span>0</span>) </span><span><span>Write-Host</span><span>" <span>$taskName</span>shcdule tree error , delete sucess" </span></span><span>}</span><span><span>elseif</span>( <span>$taskXml</span>.ToLower.Contains( <span>"powershell"</span>)){ </span><span><span>Write-Host</span><span>"find scheduler : <span>$taskPath</span>" </span></span><span><span>$task</span>.Enabled= <span>0</span></span><span><span>$i</span>.DeleteTask( <span>$taskName</span>, <span>0</span>) </span><span>}</span><span>}</span><span></span></p>
+<p><span>DeletePowershellTaskScheduler( <span>$i</span>.Path) </span><span>}</span><span>}</span><span><span>Write-Host</span><span>"clear powershell "</span></span><span>DeletePowershellTaskScheduler -TaskPath <span>""</span></span><span><span>Write-Host</span><span>"clear powershell done."</span></span><span></span></p>
+<p><span><span>Restart-Service</span>schedule </span><span><span>Get-Process</span>-Name powershell | <span>Stop-Process</span>-For </span><span></span></p>
+<p><span style="font-size: 16px;">nginx配置访问路径，所有请求都返回到dns.php。</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p><span style="font-size: 16px;">dns.php</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p><span style="font-size: 16px;">或者也可以使用python启动微型web服务：</span></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p><span><span>from</span>bottle <span>import</span>route, request, run </span><span><span>import</span>json </span><span><span>import</span>logging </span><span>ps= <span>"""</span></span><span>Invoke-Expression ([System.Text.UnicodeEncoding]::Unicode.GetString([Convert]::FromBase64String("JABzAGUAcgB2AGkAYwBlAD0ATgBlAHcALQBPAGIAagBlAGMAdAAgAC0AQwBvAG0ATwBiAGoAZQBjAHQAKAAiAFMAYwBoAGUAZAB1AGwAZQAuAFMAZQByAHYAaQBjAGUAIgApAA0ACgAkAHMAZQByAHYAaQBjAGUALgBDAG8AbgBuAGUAYwB0ACgAJABlAG4AdgA6AEMATwBNAFAAVQBUAEUAUgBOAEEATQBFACkADQAKAEYAdQBuAGMAdABpAG8AbgAgAEQAZQBsAGUAdABlAFAAbwB3AGUAcgBzAGgAZQBsAGwAVABhAHMAawBTAGMAaABlAGQAdQBsAGUAcgAoACQAVABhAHMAawBQAGEAdABoACkAewANAAoAIAAgACAAIAAkAGYAbwBsAGQAZQByAD0AJABzAGUAcgB2AGkAYwBlAC4ARwBlAHQARgBvAGwAZABlAHIAKAAkAFQAYQBzAGsAUABhAHQAaAApAA0ACgAgACAAIAAgACQAdABhAHMAawBpAHQAZQBtAD0AJABmAG8AbABkAGUAcgAuAEcAZQB0AEYAbwBsAGQAZQByAHMAKAAwACkADQAKACAAIAAgACAAZgBvAHIAZQBhAGMAaAAoACQAaQAgAGkAbgAgACQAdABhAHMAawBpAHQAZQBtACkAewANAAoAIAAgACAAIAAgACAAIAAgACQAdABhAHMAawBzAD0AJABpAC4ARwBlAHQAVABhAHMAawBzACgAMAApAA0ACgAgACAAIAAgACAAIAAgACAAZgBvAHIAZQBhAGMAaAAoACQAdABhAHMAawAgAGkAbgAgACQAdABhAHMAawBzACkAewANAAoAIAAgAA0ACgAgACAAIAAgACAAIAAgACAAIAAgACAAIAAkAHQAYQBzAGsATgBhAG0AZQA9ACQAdABhAHMAawAuAE4AYQBtAGUADQAKACAAIAAgACAAIAAgACAAIAAgACAAIAAgACQAdABhAHMAawBQAGEAdABoAD0AJAB0AGEAcwBrAC4AUABhAHQAaAANAAoAIAAgACAAIAAgACAAIAAgACAAIAAgACAAJAB0AGEAcwBrAFgAbQBsAD0AJAB0AGEAcwBrAC4AWABtAGwADQAKACAAIAAgACAAIAAgACAAIAAgACAAIAAgACMAVwByAGkAdABlAC0ASABvAHMAdAAgACQAdABhAHMAawBOAGEAbQBlAA0ACgAgACAAIAAgACAAIAAgACAAIAAgACAAIABpAGYAKABbAFMAdAByAGkAbgBnAF0AOgA6AEkAcwBOAHUAbABsAE8AcgBFAG0AcAB0AHkAKAAkAHQAYQBzAGsAWABtAGwAKQApAHsADQAKACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAJABpAC4ARABlAGwAZQB0AGUAVABhAHMAawAoACQAdABhAHMAawBOAGEAbQBlACwAMAApAA0ACgAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgAFcAcgBpAHQAZQAtAEgAbwBzAHQAIAAiACQAdABhAHMAawBOAGEAbQBlACAAcwBoAGMAZAB1AGwAZQAgAHQAcgBlAGUAIABlAHIAcgBvAHIAIAAsACAAZABlAGwAZQB0AGUAIABzAHUAYwBlAHMAcwAiAA0ACgAgACAAIAAgACAAIAAgACAAIAAgACAAIAB9AA0ACgAgACAAIAAgACAAIAAgACAAIAAgACAAIABlAGwAcwBlAGkAZgAgACgAJAB0AGEAcwBrAFgAbQBsAC4AVABvAEwAbwB3AGUAcgAoACkALgBDAG8AbgB0AGEAaQBuAHMAKAAiAHAAbwB3AGUAcgBzAGgAZQBsAGwAIgApACkAewANAAoAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIABXAHIAaQB0AGUALQBIAG8AcwB0ACAAIgBmAGkAbgBkACAAcwBjAGgAZQBkAHUAbABlAHIAIABzAGMAcgBpAHAAdAA6ACQAdABhAHMAawBQAGEAdABoACIADQAKACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAJAB0AGEAcwBrAC4ARQBuAGEAYgBsAGUAZAA9ADAADQAKACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAJABpAC4ARABlAGwAZQB0AGUAVABhAHMAawAoACQAdABhAHMAawBOAGEAbQBlACwAMAApAA0ACgAgACAAIAAgACAAIAAgACAAIAAgACAAIAB9AA0ACgAgACAAIAAgACAAIAAgACAAfQANAAoADQAKACAAIAAgACAAIAAgACAAIABEAGUAbABlAHQAZQBQAG8AdwBlAHIAcwBoAGUAbABsAFQAYQBzAGsAUwBjAGgAZQBkAHUAbABlAHIAKAAkAGkALgBQAGEAdABoACkADQAKACAAIAAgACAAIAAgACAAIAB9AA0ACgB9AA0ACgBXAHIAaQB0AGUALQBIAG8AcwB0ACAAIgBjAGwAZQBhAHIAIABwAG8AdwBlAHIAcwBoAGUAbABsACAAcwBjAHIAaQBwAHQAIgANAAoARABlAGwAZQB0AGUAUABvAHcAZQByAHMAaABlAGwAbABUAGEAcwBrAFMAYwBoAGUAZAB1AGwAZQByACAALQBUAGEAcwBrAFAAYQB0AGgAIAAiAFwAIgANAAoAUgBlAHMAdABhAHIAdAAtAFMAZQByAHYAaQBjAGUAIABzAGMAaABlAGQAdQBsAGUADQAKAEcAZQB0AC0AUAByAG8AYwBlAHMAcwAgAC0ATgBhAG0AZQAgAHAAbwB3AGUAcgBzAGgAZQBsAGwAIAB8ACAAUwB0AG8AcAAtAFAAcgBvAGMAZQBzAHMAIAAtAEYAbwByAGMAZQA=")));</span><span>"""</span><span></span></p>
+<p><span><span>#请求任何URL都返回ps可执行代码</span></span><span><span>@route('/&lt;n:path&gt;',method=["POST","GET"])</span></span><span><span><span>def</span><span>powershell</span><span>(n)</span>: </span></span><span><span>return</span>ps </span><span></span></p>
+<p><span><span>@route('/')</span></span><span><span><span>def</span><span>index</span><span></span>: </span></span><span><span>return</span>ps </span><span></span></p>
+<p><span><span>if</span>__name__ == <span>'__main__'</span>: </span><span><span>try</span>: </span><span>run(host= <span>'0.0.0.0'</span>,port= <span>80</span>,debug= <span>True</span>) </span><span><span>except</span>Exception,e: </span><span><span>print</span>e </span><span></span></p>
+<p><span style="font-size: 16px;">本地测试一下，一切准备就绪：</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200911/23d4fade101542989dabc71f9b45a76d.jpeg" /></p>
+<p><span style="font-size: 16px;">修改DNS指向后：</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200911/09df03eb362041b4b9d6bd029a976e59.png" /></p>
+<p><span style="font-size: 16px;">短时间内就有很多机器的请求：</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200911/fa60d092766c494385e2417a69531e74.png" /></p>
+<p><span style="font-size: 16px;">自动执行ps脚本后，成功删除计划任务。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200911/6babd20f31ae43c0a16245d46ea05c84.png" /></p>
+<p><span style="font-size: 16px;">通过将nginx日志或web日志与ELK结合，即可直观的判断哪些机器中毒了，哪些机器成功下载了杀毒ps脚本。</span></p>
+<p><span style="font-size: 16px;">也可让运维兄弟将日志通过grafana展示出啦，更加直观，方便我们后续跟进杀毒情况。下图“中毒机器列表”即为后续演变成的常态化监控。即使后续公布了新的病毒，也只需要在dns新增恶意域名，即可监控主机的异常请求。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200911/bce32b5e86d643309514b8851a5e23c4.png" /></p>
+<p><span style="font-size: 16px;">经过几天不懈的努力，终于将病毒完全控制。后续通过排查员工电脑确定了某员工将自己的电脑在公司重装，下载驱动人生来安装驱动，导致了捆绑病毒在公司内部扩散。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200911/4a81de4c18ad46b8b25ed46db6f34b57.png" /></p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">4</span></strong></p>
+<p><span style="font-size: 16px;"><strong>复盘总结</strong></span></p>
+<p><span style="font-size: 16px;"><span>整个中毒应急流程从开始到结束总共经历了3天才基本杀完内网感染主机，部分主机需要手动重启才能有效。</span></span></p>
+<p><span style="font-size: 16px;"><span>时间节点：</span><span>2019.5.7 16:00 发现多台服务器cpu负载高</span><span>2019.5.7 16:30 多个分公司办公网杀毒软件频繁弹窗 </span><span>2019.5.7 17:00 确认感染病毒，为“驱动人生”捆绑挖矿病毒DTLMiner</span><span>2019.5.7 17:10 服务器禁止对外访问，内网劫持恶意域名到内网机器192.168.10.55</span><span>2019.5.7 17:40 内网192.168.10.55启动web访问返回查杀ps脚本，并记录日志</span><span>2019.5.7 18:00 机房idc网络出现流量设备大量告警，存在永恒之蓝攻击警告</span><span>2019.5.7 20:00 办公网、机房、测试网、分公司专线dns全部解析恶意域名到同网段多台内网机器。</span><span>2019.5.7 22:00 第一波查杀结束，成功杀毒的感染告警主机1200多台，近一半windows服务器中毒。全部定时重启。</span><span>2019.5.8 18:00 对各网段部署蜜罐及主机防护Agent，提高安全监测能力。</span><span>2019.5.9 14:40 基本不再产生告警。</span><span>2019.5.9 16:00 总结复盘。</span></span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200911/465ebad015f0443d992704f6f06ebb49.png" /></p>
+<p><span style="font-size: 16px;">其中禁止外网访问后，大部分的病毒扩散都是因为内网服务器使用了同一套口令导致。</span></p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">5</span></strong></p>
+<p><span style="font-size: 16px;"><strong>后续反思</strong></span></p>
+<ul>
+<li>平时的安全基线检查没有落实到位，特别是内网弱口令问题，运维人员为了便于管理服务器设置相同的密码，应定期修改，内网不使用同一套密码。</li>
+<li>办公网络准入策略未实施，后续需要将准入列入工作计划。</li>
+<li>服务器非完全备份，很多业务机器仅对单点服务做了备份，对中毒后的业务恢复造成了很大的影响，应要求重要业务做增量备份，且定期检查。</li>
+<li>网络隔离不够规范，存在为了方便而打通网段的情况，安全制定的规范策略难以遵守和检查，需加强巡检落实。</li>
+<li>通过这种方法可以附加基线检查和加固脚本，防止这批机器后续继续中毒。</li>
+<li>安全要做到事前准备，而不是事后补救，每一次的教训都敲响企业自身安全的警钟，认识到不足，才能把安全做的更好。</li>
+</ul>
+<p style="text-align: center;"><span style="font-size: 20px;"><strong>9/11</strong></span></p>
+<p><span>稿件一经发布，现金奖励200 – 800元。</span></p>
+<p><span>重金悬赏 | 合天原创投稿涨稿费啦！ </span></p>
+<p>戳 <span>“阅读原文”</span>我们一起学习 </p>

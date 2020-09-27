@@ -1,0 +1,182 @@
+➜一次挖掘SRC漏洞 - 从0到有
+http://www.sohu.com/a/418487071_99907709	9088
+<p style="text-align: center;"><span style="font-size: 20px;"><strong>9/15</strong></span></p>
+<p><span style="font-size: 16px;">文章共计1991个词</span></p>
+<p><span style="font-size: 16px;">来和我一起阅读吧</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">转载自先知社区：https://xz.aliyun.com/t/8254</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">作者： <span>陈祝0ne </span><span style="font-size: 16px;"></span></span></p>
+<p>对一次SRC平台漏洞挖掘 全程文字描述多一点。</p>
+<p><span>测试范围:</span></p>
+<p>XXXXX平台: www.A.com </p>
+<p>Xxxxxxx平台: www.B.com </p>
+<p>本人信息搜集不是很6, 我这里直接测他的某个站的主站。所以我决定一个一个测，防止漏过，很多人一般都是先搜集子域名, 因为子域名的防护相对薄弱一点。而且奖金也一样的高。</p>
+<p>我就先打开了A.com的主站 先用layer先跑他的子域。在信息搜集中，我先测测A.com </p>
+<p>看看能不能捡个漏。 </p>
+<p>第一眼就相中了这个搜索框 习惯性先测高危测起，先测SQL注入。 </p>
+<p>在参数 输入 1’ 发现只返回了1 </p>
+<p>发现只返回了1 没有返回 1’</p>
+<p>那这里SQL注入 就不存在了，但是我们可以联想到</p>
+<p>然后我就这个搜索框来继续测XSS，发现失败了。他过滤了。 </p>
+<p>然后从其他点发现，他不是全局过滤单引号的，那我们实行plan B。 </p>
+<p>测试的时候发现有waf</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200915/2e2ea8711a9a4a01a35a11c107d0dd34.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>毕竟是主站，我们可以看看他是什么样的WAF, </strong></p>
+<p><strong>1.代码waf （对有效参数的参数值进行拦截） </strong></p>
+<p><strong>2.硬waf(拦截流量) </strong></p>
+<p>我输入一个不存在的参数， <strong>?x=1 union select</strong></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200915/78a3367f182446818a5dd9790b18dead.png" /></p>
+<p>直接给我拦了。 </p>
+<p>说明存在Waf 拦截的是流量。 </p>
+<p>那我就先来绕Waf</p>
+<p>最后发现这是智能型WAF, <strong>他不会管注释里的内容</strong></p>
+<p>那我的思路就来了 直接给他安排两个虚假的参数a 和b</p>
+<p>程序只接收的到id参数</p>
+<p>发现页面显示正常！ </p>
+<p>轻松bypass 可以用来测注入 也能用来测XSS，毫无阻拦 </p>
+<p>一顿操作下来 一个漏洞都没测到</p>
+<p>然后我们开始目录扫描 选择扫描302 403 200 这些 我用的BURP 因为怕其他软件的特征被封IP</p>
+<p>一分钟过去后 我们看到了结果。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200915/63152b55bbb24227974d39a67fad439d.png" /></p>
+<p><span>发现扫什么都是302 但是发现了tz这个目录不一样</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200915/e5b89407b61c40668061375097b1d7cc.png" /></p>
+<p><span>返回的是这个，那这个tz目录绝对有猫腻呀！</span><span>！</span></p>
+<p>然后我们观察他的url结构 后面都是跟方法名 那我们不扫文件 直接扫方法</p>
+<p>Fuzz一波</p>
+<p>啊哈 扫到另一个add</p>
+<p>字典呢 这里用的是 https://github.com/TheKingOfDuck/fuzzDicts <span>下载的</span></p>
+<p>返回结果是用户名不能为空，那我们就构造用户名的参数 </p>
+<p>Fuzz一波 比如username=1 </p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200915/eea35af787ed40238c3bbfbc30fa4daf.png" /></p>
+<p>啊哈？有不同的的返回结果了，让我们真实姓名不能为空 继续用&amp;来构造参数</p>
+<p>当我输入name=1 它还是提示这个，说明我们参数名不对，那我们百度一下真实姓名的英文 发现是realname 这个参数</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200915/78dc1f9a735d4b7ea66abc4dca70470c.png" /></p>
+<p>OK 有了新的返回结果，感觉就像是在猜谜语一样哈哈。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200915/a72024ee784a4fcf891f54aee5cfb55f.png" /></p>
+<p>当我们把身份证的英文字母都填进去的时候 发现答案都不对</p>
+<p>这时候我有点丧气了 躺了一会想想 想起以前日站的时候 身份证号参数基本上都是idcard呀 这些</p>
+<p>,突然想起来 会不会用的是拼音呢？</p>
+<p>然后索性我就用sfz=1 发信还是提示的这个</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200915/61b45a8618674098a15078c5577286a7.png" /></p>
+<p>我们注意到 是4个字 那我改为sfzh=1</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200915/e49a1b4046cc4e94a3284d07d8bab21c.png" /></p>
+<p>然后就返回了这个 说明参数全部猜对了。</p>
+<p>返回用户名1 已存在，我脑海中飞速运转。 </p>
+<p>它为什么知道 用户名已经存在？ </p>
+<p>答案一个：他和数据库交互了。 </p>
+<p>那这里就可能存在SQL注入。</p>
+<p>一个单引号过去了 果然报错了 然后试着用and 来闭合</p>
+<p>发现</p>
+<p>忘记了 有waf 但是我们不是已经过waf了吗</p>
+<p>指哪打哪 </p>
+<p>a=/ &amp;username=1' and 1='1&amp;realname=1&amp;sfzh=111'&amp;b= / </p>
+<p>构造payload </p>
+<p>1=2 的时候 返回这个</p>
+<p>这不就百分百存在SQL注入吗，然后我绞经脑汁 测不出数据来 不知道他是啥数据库</p>
+<p>用sqlmap跑直接给我IP给封了</p>
+<p>最后 and 1=‘dddd</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200915/e5dd42a83f9948d2a82c2e0dbffef382.png" /></p>
+<p>刚开始我看到这个 搜索了一波 刚开始以为是mssql 但是没测出来 用了waitfor delay 还报错了</p>
+<p>还以为是HQL注入 最后测了 老半天. 去下了个hqlmap但是开始就卡死了</p>
+<p>当时我还坚认为是HQL注入 哈哈哈 因为当时我是这么测的</p>
+<p>and user=’1 （这是错误的规范哦 因为这里的1 也是字符串 只有int类型 才会出数据）</p>
+<p>当时用substring 加上盲猜用户名函数是user 破解出user是dbo</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200915/d26090244b5b4840a85d8996b8db23ea.png" /></p>
+<p>我靠？是dbo 那还不是mssql数据库吗</p>
+<p>继续测 看到原因了 修改payload</p>
+<p>可以看到是报错mssql报错注入 可以欢快的出数据啦</p>
+<p><span><strong>后续</strong></span></p>
+<p>一个SQL注入到手，后续测了很多东西,一顿手工操作定位到账号密码 </p>
+<p>拿到了账号密码去其他平台撞库了。</p>
+<p>是一个PHP的站点</p>
+<p>进了后台 然后有一处任意文件上传 是有WAF 检测后缀</p>
+<p>首先上传个jpg 然后直接抓包改后缀 (是前端认证的话 抓包可以直接绕过)</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200915/d5c1cbde05df4de8846f100e65874895.png" /></p>
+<p>换行直接绕过 发现能上传绕过。</p>
+<p>可开心死我了。心想着一处Getshell到手了呀 然后再图片内容后面加上一句话木马</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200915/cc8f1352852b47208cf9090043b226a9.png" /></p>
+<p>啊哈？go 一直是没反应 说明了他还检测内容. 那我直接把代码内容删了 从&lt;?php 开始测</p>
+<p>首先想上传个phpinfo 都被拦截了 那我用短标签试试&lt;?=?&gt;</p>
+<p><span></span><span>&lt;?</span><span>=</span><span>phpinfo</span><span></span><span>?&gt;</span><span></span></p>
+<p>发现上传成功了 解释一下 这是php的短标签风格 “=”号 这里相当于echo</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200915/ec6aca3a32fb4d8e86880bc60e4aeef2.png" /></p>
+<p>之后发现是php5.6</p>
+<p>那可好绕了 php7.0下面的php都能用assert拼接 他是拦截关键字的</p>
+<p>直接$a='a'.'s'.'sert';</p>
+<p>最后发现$_GET['a'],$_PSOT['b'].... 这种传参方式被拦截了，</p>
+<p>继续 FUZZ 删到 他不拦截为止 删到了$_GET 他不拦截了 思路来了，那我可以用foreach。</p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p>伪全局,最后$key 相当于 $_GET['key'] </p>
+<p>最后直接 $a($key); 原生代码就等于assert($_GET['key']) </p>
+<p>然后久违的SHELL 就到手了~</p>
+<p style="text-align: center;"><span style="font-size: 20px;"><strong>9/15</strong></span></p>
+<p><span>重金悬赏 | 合天原创投稿涨稿费啦！ </span></p>
+<p>戳 <span>“阅读原文”</span>，我们一起学挖洞 </p>
+➜总结文件上传的类型和防御方法
+http://www.sohu.com/a/418509173_99907709	9088
+<p><strong><span>文末附黑客工具及学习资料领取！</span></strong></p>
+<p><span style="font-size: 16px;">文件上传（File Upload）是大部分Web应用都具备的功能，例如用户上传附件、修改头像、分享图片/视频等。正常的文件一般是文档、图片、视频等，Web应用收集之后放入后台存储，需要的时候再调用出来返回。</span></p>
+<p><span style="font-size: 16px;">但如果代码写的不严谨，没有对上传的文件的文件名、文件类型等等进行严格限制的话，攻击者如果成功上传了恶意脚本文件就可以达到控制网站等目的。 </span></p>
+<p><img src="//p6.itc.cn/q_70/images03/20200915/c043bc41b40c4164b59fdc9269e5d745.png" /></p>
+<p><strong><span style="font-size: 16px;">文件上传的类型：</span></strong></p>
+<p><strong><span style="font-size: 16px;">1. 客户端检测绕过（js检测）：</span></strong><span style="font-size: 16px;"></span></p>
+<p>利用firebug禁用js或使用burp代理工具可轻易突破。 </p>
+<p><strong><span style="font-size: 16px;">2. 服务端MIME检测绕过（Content-Type检测）：</span></strong><span style="font-size: 16px;"></span></p>
+<p>使用burp代理，修改Content-Type的参数 </p>
+<p><strong><span style="font-size: 16px;">3. 服务端扩展名检测绕过：</span></strong><span style="font-size: 16px;"></span></p>
+<p>文件名大小写绕过，例如Php，AsP等类似的文件名 </p>
+<p>后缀名字双写嵌套，例如pphphp，asaspp等 </p>
+<p>可以利用系统会对一些特殊文件名做默认修改的系统特性绕过 </p>
+<p>可以利用asp程序中的漏洞，使用截断字符绕过 </p>
+<p>可以利用不再黑名单列表中却能够成功执行的同义后缀名绕过黑名单的限制 </p>
+<p>可以利用解析/包含漏洞配合上传一个代码注入过的白名单文件绕过 </p>
+<p><strong><span style="font-size: 16px;">4. 服务端内容检测绕过：</span></strong></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong><span style="font-size: 16px;">4.1文件内容头检测</span></strong><span style="font-size: 16px;"></span></p>
+<p>一些上传的地方会检测文件内容头判断是不是允许上传的文件类型，不同类型的文件文件头也是不一样的 </p>
+<p><img src="//p0.itc.cn/q_70/images03/20200915/133fb9bea648411698c3b7496d104706.png" /></p>
+<p><span style="font-size: 16px;"><strong>4.2文件加载检测绕过</strong></span></p>
+<p><span style="font-size: 16px;">针对渲染/加载测试的攻击方式是代码注入绕过：使用winhex在不破坏文件本身的渲染情况下找一个空白区进行填充代码，一般会是图片的注释区</span></p>
+<p><span style="font-size: 16px;">针对二次渲染测试的攻击方式是共计文件加载器自身：如果要对文件加载器进行攻击，常见的就是溢出攻击；上传自己的恶意文件后，服务器的文件加载器会主动进行加载测试，加载测试时被溢出攻击执行shellcode，比如access/mdb溢出。</span></p>
+<p>防御 </p>
+<p><span style="font-size: 16px;">1. 文件扩展名服务端白名单校验</span></p>
+<p><span style="font-size: 16px;">2. 文件内容服务端校验</span></p>
+<p><span style="font-size: 16px;">3. 上传文件重命名</span></p>
+<p><span style="font-size: 16px;">4. 隐藏上传文件路径</span></p>
+<p><span style="font-size: 16px;">5. 文件上传的目录设置为不可执行</span></p>
+<p><span style="font-size: 16px;">6. 单独设置文件服务器的域名</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">当然文件上传漏洞与防御远不止上面列举的这些，如果大家想了解更多的文件上传的知识，</span><strong><span style="font-size: 16px;">今晚（9月15日晚上20:00）</span></strong><span style="font-size: 16px;">我们</span>zoneBAI <span style="font-size: 16px;">老师将在直播间手把手带大家学习实操， <strong>zoneBAI老师还会分享我们平时学习不到的小技巧哟，都是他多年的经验总结</strong>，快扫码预约直播吧！ </span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">除了文件上传，报名本次直播课，你还可以学习</span><strong><span style="font-size: 16px;">密码重置漏洞、支付逻辑漏洞、Burp爆破弱口令、SQL注入、Burp扫描、Metasploit等</span></strong><span style="font-size: 16px;">共计7个课程，每个课程均配套实操训练，干货满满，一次打包给你。 </span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">7 节课</span><span style="font-size: 16px;">+</span><span style="font-size: 16px;">7个实战练习 </span><span style="font-size: 16px;">+ </span><span style="font-size: 16px;">30天社群服务</span><span style="font-size: 16px;">+ </span><span style="font-size: 16px;">作业反馈</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">不要 999 ，也不要 99 </span><span style="font-size: 16px;">，</span><span style="font-size: 16px;">限时优惠</span><span style="font-size: 16px;">只需要</span><span style="font-size: 16px;"></span><span style="font-size: 16px;">1元</span><span style="font-size: 16px;">，赶紧抢购吧!</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200915/542b7c06d7054eb6bd4a0cb0d3d8f97f.png" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;"><strong>除了优质的课程和实操，我们还提供1V1班主任督学服务，</strong></span><span style="font-size: 16px;">班主任每天陪伴学员一起学习，帮助你一起对抗日常那些散漫状态，懒惰本能，和畏难情绪，告别学习拖延症。 </span></p>
+<ul>
+<li>班级群服务： 打卡学习、答疑讨论、干货分享</li>
+<li>督学服务： 开课提醒、实操作业</li>
+<li>就业服务： 简历优化、就业内推</li>
+</ul>
+<p style="text-align: justify;"><span style="font-size: 16px;">360° 的学习+练习+服务+反馈</span><span style="font-size: 16px;">，</span><span style="font-size: 16px;">让你学完留下的不只是印象，而是真正的能力！ </span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200915/262143b6c7724dfead27a6d74c88b8db.gif" /></p>
+<p style="text-align: justify;"><strong>福利！</strong></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">最后，如果</span><span style="font-size: 16px;">你已报名本次课程</span><span style="font-size: 16px;">，想要更多的黑客工具及学习资料，扫描下方二维码后回复 <span><strong>【黑客学习】</strong></span>领取。 </span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200915/a270241d2572407f89971c7c6a6fb4b9.jpeg" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">同时，如果你想看看自己适不适合入门黑客，也可以扫描二维码，我们有一套完整的测试体系可以帮助你。 </span></p>

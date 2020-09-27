@@ -1,0 +1,136 @@
+➜记一次渗透 ｜ 被骗4000花呗背后的骗局
+http://www.sohu.com/a/417494368_99907709	20074
+<p style="text-align: center;"><span style="font-size: 20px;"><strong>9/10</strong></span></p>
+<p><span style="font-size: 16px;">今天教师节，祝全体教师节日快乐</span></p>
+<p><span style="font-size: 16px;">文章共计3391个词</span></p>
+<p><span style="font-size: 16px;">作者：夜无名</span></p>
+<p><span><span style="font-size: 16px;">转载自公众号：HACK学习呀</span></span></p>
+<p><span style="font-size: 16px;"><strong>*严正声明：本文仅限于技术讨论与分享，严禁用于非法途径。</strong></span></p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">0</span></strong></p>
+<p><span style="font-size: 16px;"><strong>事件起因</strong></span></p>
+<p><span style="font-size: 16px;">事情是这样子的，那天逛着街路过一家手机店，当场被店门口招揽客人的销售员拦下，硬塞了一张活动条和充电宝给我说什么充电宝免费送，但要到店里边填个卷就行了，七月的天异常的热，反正也没什么急事进去蹭蹭空调也不错，进店后里面的店员向我要了号码说是要查一下积分，通过短信查询告知我号码的积分是一千八百多，细节来了：这里他表现的很惊讶问我的积分为什么那么高，积分高的话这里好啊那里好的给我一顿吹嘘使我膨胀，后面他拿出个清单说你这积分已经可以领平板电脑了，清单上面有手充电宝、小风扇、手机、电饭锅和平板电脑等等，当然平板电脑排在最高积分那，按照常人的选择大部分人都会选择平板电脑我也不例外的选择了平板，出来逛个街白嫖个平板它不香么，我再三的跟他确认可以免费拿的吗，他是的是的回答，可正中了他的套路。</span></p>
+<p><span style="font-size: 16px;">后面是另一位店员来接待我，把我拉到了店的最里边然后给我说到这边来跟你了解一些情况还有拿新的平板给你，问我有几张卡呀每个月所用的话费是多少，还有说这活动呢是针对一些信用高的用户做的回馈，然后让我打开支付宝看我的信用，我每月的花呗都会还本来信用就蛮高的，他又一顿的给我吹嘘我的信用有多高多高的使我膨胀，他又问我你这号码确定会使用一年以上吗之后他拿出一张表上面写着预存话费3999送平板什么什么字样，他见我犹豫了又给我列了一堆的公式各种计算话费跟你平时充值的费用一年下来多少多少的，涉世未深的我还觉得挺有道理的，总之从一进店开始就一直被牵着鼻子走，然后他问我要了身份证号说什么后台做个审核还特地强调说有些信用不好不是谁都可以通过的，他说给我审核两分钟，实际是直接给我开了个户，然后在我签字那个表盖了审核通过的字样，这里细节来了：第一审核通过了或者没通过他都没跟我确认要不要开户，第二他直接在你户里给你预存了3999话费并不是让你先支付后预存的，这就是所谓的“免费送”这时我已经感觉到不对劲了想走不办理了，但被告知账户已帮我预存了话费不让走，无奈只好给他支付宝一顿操作又套现又转账的把我花呗都套走了。</span></p>
+<p><span style="font-size: 16px;">回到家越发越觉得不对劲，越发越后悔，网上一搜关于这类的活动一抓一大把而且一模一样越看是越生气啊。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200910/baa1708b64c24b398fbeda1630650ea2.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">最主要的呢，送的平板也是八百多的根本不值预存话费的这个价，且居然有卡死的现象，于是乎我决定深挖瞧瞧。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200910/c7b2b1e5c0f74fd88c3122776af57279.jpeg" /></p>
+<p style="text-align: center;"><strong>1</strong></p>
+<p><strong>信息收集</strong></p>
+<p><span style="font-size: 16px;">通过验证短信发过来的短域名链接复制到浏览器解析得到网址xx.xxxx.xx好家伙这网址一看就不是移动官方旗下的,在通过站长工具查询该网址解析到阿里云且未启用cdn，该域名持有者系广东一家某科技公司，域名到今年11月份就到期了，在通过搜索该企业发现经营异常这四个大字，我这好几千的话费肯定是凉透了。</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200910/0ee2d220a1734d2d8e5a7365d84de7d2.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200910/b3740886998b41e2afdd4d559b17de38.png" /></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200910/f0db6c431bc44167a7bee48f445e9f27.png" /></p>
+<p><span style="font-size: 16px;">通过对得到的域名用nmap -p 1-65355 xx.xxxx.xx进行全端口扫描瞧瞧都开放了哪些服务，再从其服务进行入手，可以看到也就只有80跟22端口，唯一有用的信息就是22端口知道对方是Linux服务器的。</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200910/e4ac2aedf300452680fed2b59f76cdb2.png" /></p>
+<p><span style="font-size: 16px;">在通过对80端口访问web服务得到以下信息，这界面也是短信内容里短域名所跳转过来的界面。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200910/145a88a686a64d4ca32fd23eee90edcd.png" /></p>
+<p><span style="font-size: 16px;">它的URL形式是/admin/user/login明显的用户登陆界面，众所周知admin是管理的意思，直觉让我逐层递减目录访问，果不其然跳转到了admin/login的商家管理界面。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200910/9d0aea583a1447089972aa10e7afae93.png" /></p>
+<p style="text-align: center;"><strong>2</strong></p>
+<p><strong><span>漏洞挖掘</span></strong></p>
+<p><span style="font-size: 16px;">目前初步找出两个登陆界面，后台登陆是没有验证码的可进行爆破操作，但前提条件是知道商家的手机号，这里就先正常登陆我自己的用户瞧瞧里面有无可利用的地方，功能很简单并无可利用的地方头像处也无法进行编辑上传等操作该界面也只是提供显示话费的总额，我猜他们搭这样一个平台也只是显示个数字前几个月唬住消费者。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200910/6e97e9e49e7e4aa4bfc27decb9e35146.png" /></p>
+<p><span style="font-size: 16px;">决定退出用户用burp抓个包分析分析传输的数据，输入正确的手机号验证码以及短信验证码开启抓包，可看到参数都是以明文传输的，验证码这些均与正确那我如果替换成别的用户是不是可以达到一个水平越权漏洞了呢，mobile处替换号码成功登陆别的用户斩获水平越权漏洞一枚。</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200910/06aac38780584eea9d241ca9ca24fb8f.png" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200910/c804cb16868c40f4b0cd955885f53f4f.png" /></p>
+<p><span style="font-size: 16px;">一样的个人中心一样的无任何利用的地方，转战后台登陆框框，像这类的后台二话不说直接使用burp抓个登陆的POST包在保存到本地txt文件使用sqlmap跑一跑说不定有意外的收获，因为是阿里云的服务器本地跑百分百的被拦截，所以我选择用与它相同的阿里云服务器去跑，username，password，remenbaer这三个均不存在注入。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200910/0b5b758b193c48d0a2e6a8ebc375f5b4.png" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200910/dfc2d11b35e14dc082cf0f5a015a62cf.png" /></p>
+<p><span style="font-size: 16px;">没事，抓个包发个包看看响应回来的数据，可以看到账号的内容直接输出在了value的标签上。</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200910/9cd74c807174434380f976a14e43b5d2.png" /></p>
+<p><span style="font-size: 16px;">构造xss payload闭合插它！！”&gt;&lt;&gt;alert(/xss/)&lt;/&gt;然后在重新发包斩获反射性xss一枚。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200910/889ae8745b0d430e880bad14ad2c45a3.png" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200910/31f855ba9d2448638bfc530eaac9eaa9.png" /></p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">3</span></strong></p>
+<p><strong>Getshell</strong></p>
+<p><span style="font-size: 16px;">挖到的那个两个漏洞太鸡肋了，思路也暂时断了回过头再分析分析抓到的数据包，一直没太注意响应包仔细一看发现rememberMe=deleteMe字样，shiro反序列化漏洞呀。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200910/4540783b75b24bdeb5595c0a939f8ad3.png" /></p>
+<p><span style="font-size: 16px;">直接怼上exp，这里直接查看源代码取网站内的静态文件填入做检测。</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200910/44757180cfc34e0585a2cb2991304920.png" /></p>
+<p><span style="font-size: 16px;">可看到命令执行框内是可输入的证明存在该漏洞相反不存在则不可输入，且在/css的同级目录下生成了5663.js的验证文件，访问测试是否成功写入文件。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200910/8e45a9f6415841d59ae4b5da59ac102f.png" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200910/99f4149b903942d287e50284ae512b13.png" /></p>
+<p><span style="font-size: 16px;">成功写入文件，接下来写入shell冰蝎连接执行whoami查看当前权限，Linux的环境直接root最高权限省去了需要提权的麻烦。</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200910/affcb374eb6145469a3bda3b8e0fb7a1.png" /></p>
+<p><span style="font-size: 16px;">权限有了，并且服务器对外开放22端口可以直接写入公钥免密登陆，但考虑对方是阿里云的服务器异地登陆的话会有短信提醒动静太大所以没执行该方案，继续挖掘有用的信息，翻了半天翻到了个数据库的配置文件，数据库连接的地址是172.xx.xx.xx（各位师傅技艺高超内网地址也给码上防止爆菊）一看就知道是内网的ip站库分离啊，想办法代理转发出来连接瞧瞧。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200910/917a663ab69747318331b2b0740fed0e.png" /></p>
+<p><span style="font-size: 16px;">冰蝎上有个Socks代理配合Proxifier在加上Navicat Premium数据程序管理进行隧道代理打入其内网数据库，常规的配置好Proxifier后添加程序进行连接，可问题来了反反复复试了好几次一点连接就直接数据异常，十有八九的被拦截了。</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200910/d34df8c2bf8a4e908c8d2126a1981a75.png" /></p>
+<p><span style="font-size: 16px;">在内网代理这块踩了不少的坑总而言之还是自己经验不足，也有各位师傅指点使用adminer.php(这里手动@Uncia大佬)，adminer确实不错很轻量便捷只需上传web目录即可但奈何使处的环境是Java环境只支持jsp脚本adminer也只有php的脚本。</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200910/3d3bf3970f62408fb4666e9ddfe31f70.png" /></p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">4</span></strong></p>
+<p><span><strong>内网代理</strong></span></p>
+<p><span style="font-size: 16px;">既然adminer不支持冰蝎也代理不出，那咱们就自己搭一条代理的隧道出来，在这里踩了不少的坑尝试利用reDuh和Tunna要么就是没流量要么就是连上一下子就断开，不知道是不是我的姿势不对还是受当前环境的限制，最终在GitHub上找到reGeorg神器。</span></p>
+<p><span style="font-size: 16px;">reGeorg 可以说是 reDuh 的升级版，主要是把内网服务器的端口通过 http/https 隧道转发到本机，形成一个回路，用于目标服务器在内网或做了端口策略的情况下连接目标服务器内部开放端口，它利用 webshell 建立一个 socks 代理进行内网穿透，因为当前环境是java所以我们上传.jsp的转发文件到网站目录下。</span></p>
+<p><span style="font-size: 16px;">上传脚本后访问其脚本，显示Georg says, 'All seems fine',代理成功。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200910/7df24cb4b02a483190588c87a57c68b0.png" /></p>
+<p><span style="font-size: 16px;">后在本地执行python2 reGeorgSocksProxy.py -p 9999 -u http://xx.xxxx.xx/tunnel.jsp在命令行界面同样显示Georg says, 'All seems fine'即可。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200910/ed5e55239a404026a59f3404789aae63.png" /></p>
+<p><span style="font-size: 16px;">打开Proxifier基本配置好监听本地127.0.0.1的9999端口，然后设置代理规则添加Navicat程序，其他动作选择Direct关闭状态唯独只允许Navicat流量通过。</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200910/30428f296b37479c99aa30e798f786cf.png" /></p>
+<p><span style="font-size: 16px;">配置完后，右键Navicat以Proxifier本地代理模式打开。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200910/c4094dfbca054eba98ab16f250dd391c.png" /></p>
+<p><span style="font-size: 16px;">可以看到已稳定链接且Python窗口有流量传输（切记代理过程中请勿关闭窗口）。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20200910/cdb7ca3691884d4580205bdec1358aa9.png" /></p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">5</span></strong></p>
+<p><span style="font-size: 16px;"><strong>实锤骗局</strong></span></p>
+<p><span style="font-size: 16px;">数据库咱也连上了，看看会员表里的账号，通过筛选member会员表里的name字段查找自己的名字，果不其然自己就躺在那里数据的时间跟被套路的时间相吻合。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200910/f282badfcc2e40a0b362cef8fcca5318.png" /></p>
+<p><span style="font-size: 16px;">如何实锤？很简单库里的第一批用户是2019年5月份的，到现在也相差一年了，这是不是骗局登录19年的账号看看返现记录就一幕了然，就随机抽取一位幸运玩家结合前面的水平越权漏洞登录其账号。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200910/54a950e4cc7141b9ade521921c60cd05.png" /></p>
+<p><span style="font-size: 16px;">这都过去一年时间了果然也就只首次返现一次，前几个月唬住消费者过后又以各种理由的欺骗你，总之永远吃亏的还是消费者。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200910/a3afeda583e34fb79139f95f047becff.png" /></p>
+<p style="text-align: center;"><strong>6</strong></p>
+<p><strong>写到最后 </strong></p>
+<p><span style="font-size: 16px;">至于为何写这篇文章，因为我也是受害者我想通过这样的方式去剖析它让大家更直观的了解这个局以免更多的人被套路，你去办理的时候他们会跟你说这是移动授权下来的活动（之前也是这么跟我说的），但这一路下来可以看出跟移动半毛钱关系没有，只不过是他们自主搭建的一个平台，里边的余额也只是唬住你，有这么一个平台一个数字显示出来让你放心而已，至于首月到账的那几百块也只是从你那套的好几千手动给你充值给几百而已。</span></p>
+<p><span style="font-size: 16px;">不说了，接下来的一年里我要吃土还花呗了嘤嘤嘤，商家登录系统那我估计还会有更多的猫腻，但渗透测试点到为止，我的目的就是证明这是不是一个骗局既然实锤了咱们也没必要在深入了。</span></p>
+<p><span style="font-size: 16px;">我们所做的安全对抗，正如同没有硝烟的战争，战争的结果除了输赢之分，还有正义与非正义之别，唯一的区别就是我们要时刻站在正义的视角，探索了其漏洞原理，却不因此对其造成损害。</span></p>
+<p style="text-align: center;"><span style="font-size: 20px;"><strong>9/10</strong></span></p>
+<p><span>欢迎投稿至邮箱：edu@heetian.com</span></p>
+<p><span>稿件一经发布，现金奖励200 – 800元。</span></p>
+<p><span>重金悬赏 | 合天原创投稿涨稿费啦！ </span></p>
+<p>戳 <span>“阅读原文”</span>我们一起学习 </p>
+➜从0到1挖洞经验分享
+http://www.sohu.com/a/417606088_99907709	20074
+<p><span style="font-size: 16px;">几个月前我还是Web安全编外人员，现在我站上了网安讲堂，分享我的SRC漏洞挖掘心路历程。明晚直播间分享我的0-1挖洞经验，不见不散。</span></p>
+<p><strong><span style="font-size: 16px;">你是否也正在经历着从0到1？</span></strong></p>
+<p><span style="font-size: 16px;">你想从事什么行业，从 <span>建立兴趣</span>开始，首先问问自己： <span>我喜欢吗？是否能将此作为将来职业的敲门砖？</span></span></p>
+<p><span style="font-size: 16px;">后来我了解到了网安的现状与高待遇，再结合现在十个人七个填计算机，今后计算机专业的市场毋庸置疑会饱和，于是我有了学网安的念头。</span></p>
+<p><span style="font-size: 16px;">接触新的知识领域，开始特别努力，自己费力鼓捣很久，往往 <span>希望是“学有所成”，结果却不如人意</span>。其实对于零基础来说，很多难点不能很快解决，问题容易堆积，越到后面就越难学习。 </span></p>
+<p><span style="font-size: 16px;">于是，找到适合的学习平台成为了我的首要任务。</span></p>
+<p><span><strong><span style="font-size: 16px;">选择他，渗透他</span></strong></span></p>
+<p><span style="font-size: 16px;">也正巧这个时候看到了合天的广告， <strong><span>《web安全从零基础到精通》 <span>。</span></span></strong></span></p>
+<p><span style="font-size: 16px;">报名前我翻完了合天B站账号的所有发言记录，以及实验室网站和腾讯课堂的 <span>评论区</span>，最终才认可了这里。 </span></p>
+<p><strong><span style="font-size: 16px;">理由一：我从好评中来，我最终也回归评论</span></strong></p>
+<p><span style="font-size: 16px;">好评坚定了我选择他们的决心，几个老师给我最深的感受就是耐心，以前遥不可及的这些dalao，现在可以随意打扰。因为白天忙于升学课业，大部分的提问时间会选择深夜，但是我的老师们看到了就一定会回复我，这真的赞。</span></p>
+<p><strong><span style="font-size: 16px;">理由二：课程通俗易懂，难点不懂就问到底</span></strong></p>
+<p><span style="font-size: 16px;">现在的知识面远远拓宽了，比自学更见效的是我能清楚认识到不足，并及时能得到指点。教学+督导+反馈，真的不是说说而已。</span></p>
+<p><strong><span style="font-size: 16px;">理由三：相互激励，共同成长</span></strong></p>
+<p><span style="font-size: 16px;">亦师亦友，脱离课堂我们有合天SRC小队，大家会互相分享知识与技巧。老师的SRC漏洞挖掘经验给到了大家很多的帮助。</span></p>
+<p><span style="font-size: 16px;">第一次通过的一个1k的漏洞，喜不胜收！</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200911/77d2cefd1dd540228ee07b3212151f8f.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">当然成功的喜悦里夹杂了很多，老师的教导以及我的孜孜不倦。其实失败并不可怕，学下去就好了。</span></p>
+<p><span>扫码加小姐姐报名听课</span></p>
+<p><strong>如何加入合天网安讲堂 </strong></p>
+<p><span>01</span></p>
+<p><span>特聘讲师招募 </span></p>
+<p><span style="font-size: 16px;">在网安分享与教学服务这条路上，我们希望我们能营造一个环境：即 <span>“所有人向所有人学习，所有人支持所有人成长”</span>。如果您认可我们的初衷，想要支持更多的网安新人们的成长，那么，欢迎各位大佬备注“技能分享”加入我们，为大家分享您对网安学习的经验、技能或者独到见解。 </span></p>
+<p><span>02</span></p>
+<p><span>学员加入</span></p>
+<p><span style="font-size: 16px;">扫描下方二维码添加合天小姐姐。合天小姐姐将会拉你入群，并告知详细的直播安排~若对本次活动报名还有其他疑问，也可1V1进行咨询~</span></p>

@@ -1,0 +1,81 @@
+➜记一次小程序加解密测试
+http://www.sohu.com/a/417371891_99907709	11701
+<p>亲爱的,关注我吧 </p>
+<p style="text-align: center;"><span style="font-size: 20px;"><strong>9/9</strong></span></p>
+<p><span style="font-size: 16px;">文章共计1487个词</span></p>
+<p><span style="font-size: 16px;">和我一起阅读吧</span></p>
+<p><span style="font-size: 16px;">作者： <span><span style="font-size: 16px;">spider</span></span></span></p>
+<p><span style="font-size: 16px;">来源：先知社区</span></p>
+<p><span style="font-size: 16px;">网址：</span><span style="font-size: 16px;">https://xz.aliyun.com/t/8205</span></p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">1</span></strong></p>
+<p><span style="font-size: 16px;"><strong>前言</strong></span></p>
+<p style="text-align: justify;">由于小程序的便捷性，越来越多的应用迁移到了小程序上，由此伴随着小程序上线前的日常渗透测试工作也开始增加。但小程序的测试中经常会遇到数据包被加密了，导致无法进行改包测试。和测试网页数据包加密一样，就需要找到小程序前端相应的加解密方法进行加解密数据包改包测试。</p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">2</span></strong></p>
+<p><span style="font-size: 16px;"><strong>事情经过</strong></span></p>
+<p style="text-align: justify;">不同于网页f12查看网页源码即可查看搜索相应加解密函数，小程序虽然也是三大组件但其前端源码存放在微信安装包的wxapkg包中，我们需要使用一个root设备提取处相应的wxapkg包，并还原出前端源码。文件一般位于 /data/data/com.tenc ent.mm/MicroMsg/appbrand/pkg/（安卓系统，以下测试都在安卓机下进行）目录下。</p>
+<p style="text-align: justify;">提取的时候需要准备一台root手机或使用夜神等模拟器均可，然后使用adb进入/data/data/com .tencent.mm/MicroMsg/appbrand/pkg/，提取相应的文件。由于wxapkg的命名时随机的，可以使用ls -al 命令根据你所安装小程序时间来判断提取相应小程序的wxapkg包。.wxapkg是一个二进制文件，有其自己的一套结构，具体可以参考该 <span style="font-size: 16px;">http://lrdcq.com/me/read.php/66.htm</span>。 </p>
+<p style="text-align: justify;">接下来就需要对wxapkg文件进行反编译提取相应的前端源码，一般是搭建nodejs环境进行反编译还原。我比较懒不太想搭喜欢用傻瓜式操作，这边推荐一个小程序反编译工具CrackMinApp，具有图形化的操作界面及所需依赖环境。界面长这样：</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200910/090a0f57add14bc1a3572db16f268a63.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">下载和操作指南可以参考它的</span><span>github项目 <span style="font-size: 16px;">https://github.com/Cherrison/CrackMinApp</span></span><span style="font-size: 16px;">还原后的前端源码就这样：</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200910/e0162bfd95864187b56f6bd590ac3775.png" /></p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">3</span></strong></p>
+<p><span><strong>开始测试</strong></span></p>
+<p style="text-align: justify;">第一步就是要找到前端源码中的加解密的方法，一行行代码去找肯定不现实太费时间，一般都全局搜 encrypt、decrypt、AES、DES、RSA这些关键词。一般来说基本都用对称加密且AES出现的频率最高，如下所示直接找到相应的加解密方法和密码。 </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200910/d93830bd58e5433c8274650099a0b60e.png" /></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200910/816134979111451ea90d704af57be023.png" /></p>
+<p><span style="font-size: 16px;">用的还是ECB模式这这这。之后就好办了开始测试发现两个高危，中低危就不描述了，说实话加密的数据包解密后一般漏洞较多。</span></p>
+<p><span style="font-size: 16px;">3.1任意用户登录</span></p>
+<p>在忘记密码处输入手机号点击发送验证码，如下所示： </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200910/d8ce7ac66572423998b3338ad9720589.png" /></p>
+<p>在验证码输入框内输入任意6位数字，如下所示：</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200910/d166dcdb3b3147118991e3934605cd0f.png" /></p>
+<p>点击下一步，拦截服务器返回数据包，如下所示： </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200910/d70d040970224ea2a9fbdfca1f836ca2.png" /></p>
+<p><span style="font-size: 16px;">数据包内容解密结果如下： </span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200910/826544f3ac364bd9a330130b6bb762e6.png" /></p>
+<p><span style="font-size: 16px;">将返回数据包改成如下形式{"code":200}，加密后数据包发至客户端，</span></p>
+<p><span style="font-size: 16px;">欺骗成功跳转至设置密码处如下所示：</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20200910/f51de3752778433090d4914ee18764cd.png" /></p>
+<p><span style="font-size: 16px;">设置任意密码提交后即可成功修改密码，如下所示： </span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20200910/9f447b5176a94258bf1cf9cdb6b1bda6.png" /></p>
+<p><span style="font-size: 16px;">利用修改完的密码可成功登录，从而实现任意用户密码修改。</span></p>
+<p><span style="font-size: 16px;">3.2 SQL注入</span></p>
+<p>在发现处搜索项目抓取相应的数据包，重放返回如下数据信息： </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200910/efd3383870eb4f8ea4961e730170524c.png" /></p>
+<p><span style="font-size: 16px;">解密后为项目数据信息，如下所示：</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200910/f29ee5b7e918422bbf094157b09bdeb3.png" /></p>
+<p><span style="font-size: 16px;">修改POST参数值itemName为’,发现服务器返回500错误如下所示：</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200910/cb5cbac7912b43228454e164ddf1a2b6.png" /></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200910/0b703bddadb2445b9d702923f2a52312.png" /></p>
+<p><span style="font-size: 16px;">由于服务端返回的数据项目名称为例如某某公司，POST数据输入搜索参数为该公司名称有数据返回，输入搜索关键词为"公司“时无数据返回，故猜测sql语句逻辑为模煳查询为如下所示：</span></p>
+<ul>
+<li></li>
+</ul>
+<p>故构造payload首先猜测数据库用户名长度如下所示： <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200910/405acfe651674eebaaa6486256667cca.png" /></p>
+<p><span>‍</span></p>
+<p>加密后在POST包中发送如下所示当长度大于等于3时返回正常，大于等于4时无数据返回，故判断得到数据库用户名长度为3，如下所示： </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200910/2ba50b19adcc4599864586619d36e7f1.png" /></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200910/2a297f1310704fbf8e873a1efb4cf2cd.png" /></p>
+<p><span style="font-size: 16px;">同理构造如下payload猜测数据库用户名，如下所示：</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200910/0a3105748f874654ad876f4d7f7f302e.png" /></p>
+<p>之后就不深入了，测完收工。</p>
+<p style="text-align: center;"><strong><span style="font-size: 20px;">4</span></strong></p>
+<p><span style="font-size: 16px;"><strong>相关实验</strong></span></p>
+<p><span><strong><span style="font-size: 16px;">SQL注入原理与实践 </span></strong></span></p>
+<p><span style="font-size: 16px;">本实验介绍了SQL注入原理，解释了简单判断一个参数是否存在注入的原理，能够利用简单的SQL注入获取其他敏感数据</span></p>
+<p style="text-align: center;"><span style="font-size: 20px;"><strong>9/9</strong></span></p>
+<p><span>欢迎投稿至邮箱：edu@heetian.com</span></p>
+<p><span>有才能的你快来投稿吧！</span></p>
+<p><span>稿件一经发布，现金奖励200 – 800元。</span></p>
+<p><span>投稿细则都在里面了，点击查看哦</span></p>
+<p><span>重金悬赏 | 合天原创投稿涨稿费啦！ </span></p>
+<p>戳 <span>“阅读原文”</span>我们一起get实验 </p>

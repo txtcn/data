@@ -1,0 +1,116 @@
+➜实战渗透-从敏感文件泄露到Getshell
+http://www.sohu.com/a/410790547_99907709	11022
+<p><strong>本文转自先知社区：https://xz.aliyun.com/t/8059</strong></p>
+<p><strong>日常挖EDUSRC的思路,欢迎各位大佬指点或补充~</strong></p>
+<p>目标站点如下</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200731/04ae058a52634457b32e5016a5d3a57e.png" /></p>
+<p>是一个大型仪器预约平台,先简单通过信息收集得到以下信息</p>
+<p>中间件:IIS 开发语言: .NET (MVC)</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200731/f875bfd290d94f8babd2b3ec5583b768.png" /></p>
+<p>个人比较偏向于渗透NET开发平台的站点，因为其不区分大小写，在生成字典的时候不需要花费太多时间。 </p>
+<p>该系统提供两个功能,注册以及登录。由于这套系统比较常见，基本每个知名高校都有这么一个仪器平台。所以注册后的功能点就没必要再去花功夫探测了(有的话也被大佬交完了)。</p>
+<p>这里我直切主题:</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>先FOFA搜索相同站点。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200731/f3a88b2496ab43038ed16f9655841f13.png" /></p>
+<p>由于是NET平台,可以先搜集以下所有相同系统的站点。然后扫一扫备份之类的。常见的字典如: web.rar 备份.rar</p>
+<p>等等。.具体看运维的习惯(部分运维喜欢用bak)。</p>
+<p>使用某大佬的FOFA提取工具提取下结果</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200731/568f205f04d14f9e99308bbe997a2769.png" /></p>
+<p>然后使用御剑(由于御剑好像不支持https,所以这里我指定了协议为http。如果大佬们有支持https或者可以批量扫描的工具可惜推荐下(造轮子太麻烦,性能渣)</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20200731/21ca857717b14464819fab87d6cf43d3.png" /></p>
+<p>在某站点下发现疑似备份文件bak.rar, 先下载下来。</p>
+<p>解压后发现里面都是一些dll文件。由于是NET平台，源代码都会打包成dll文件。也就是说这些dll文件里面存放着网站的源代码。</p>
+<p>那么直接逆向编码，开始代码审计~~~~</p>
+<p>发现有点多。。。。由于是MVC模式,我们可以直接搜索Controller(控制器)</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200731/44ffdb504e2f483bbbd45f16f4806daa.png" /></p>
+<p>开始审计~这里先挨个探索(我个人比较喜欢直切主题：未授权的文件上传-日志写入(部分系统是由请求头决定文件名-反序列化-SQL注入))</p>
+<p>未授权的文件上传，这个比较好找。。有没有进行文件效验一看就知道。部分程序员都是把操作写成了一个方法，统一调用。</p>
+<p>如： </p>
+<p>在UserController下面的IniUserPhotoUpload 方法就是一处文件上传的操作 </p>
+<p><img src="http://p0.itc.cn/q_70/images03/20200731/d0014e6d1ccc469fb1d90042b4d441e7.png" /></p>
+<p>这里表面看着并没有什么文件属性效验的操作。但是最终写入是由MakeThumbnail操作的。</p>
+<p>在MakeThumbnail下面</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200731/10e100fccad14f9cbd6129f8e756cc83.png" /></p>
+<p>第151行，可以看到将参数传递给了MakeThumbnailByImg 方法。追踪此方法</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20200731/6aac37f41383405fb22ceb32624765cd.png" /></p>
+<p>在186行可以明显的看出这里进行了文件效验，且规定了后辍为jpg,jpeg,bmp,gif,png,ico 才可以成功上传 </p>
+<p>那么这里无果，继续探索下一个。</p>
+<p>最终在Lab下面发现一处疑似上传LOGO的操作。</p>
+<p>UploadLabOrg</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20200731/5e7a786533174a7798e32743c4b4940b.png" /></p>
+<p>写入操作最终是由SaveLabOrganization进行写入操作。</p>
+<p>追踪此方法。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20200731/22a3e051ff7747549e8e6bca8ac40d95.png" /></p>
+<p>主要操作在这里</p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p>当上传的文件大于0时，执行if里面的语句</p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p>其中ValidateLabOrganizationLogoUpload是判断文件内容大小是否超出以及扩展名是否正确的。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200731/43f9252491a94bbaa4d3200eae86e973.png" /></p>
+<p>其中并没有进行白名单效验~只是进行了一些判空以及移除符号的操作 </p>
+<p>找到了一处无效验上传点，开始构造POC:</p>
+<p>路由地址为:/控制器名/方法名</p>
+<p>使用HTML构造提交表单内容:</p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p>然后开始上传。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20200731/0370c60729bd44dc88ced7f1ae2d407d.png" /></p>
+<p>但是他返回了一个出错。。。有点无解，是不是要登陆？？</p>
+<p>注册了一个账户，发现仍然出错，再次回到代码层，可能是监听器的问题。找到filter</p>
+<p>发现了要验证Referer，在原有POC上添加一个Referer</p>
+<p>成功Getshell</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20200731/ed5ee7eba0fc46f09877eac48427b477.png" /></p>
+<ul>
+<li></li>
+</ul>
+<p><span style="font-size: 16px;">web敏感信息泄漏 </span></p>
+<p><span style="font-size: 16px;">https://www.hetianlab.com/expc.do?ec=ECID25ad-863a-454c-87b6-e2b09b1f764f</span></p>
+<p><span style="font-size: 16px;">（信息泄漏是指在正常情况下不能被普通用户访问的敏感信息没有被应用程序所保护，能够直接访问，通过该实验了解常见的web敏感信息泄漏漏洞原理，掌握常见的web信息泄漏漏洞的利用和漏洞防护。）</span></p>
+<p><span style="font-size: 16px;">欢迎投稿至邮箱：edu@heetian.com </span></p>
+<p><span style="font-size: 16px;">有才能的你快来投稿吧！</span></p>
+<p><span style="font-size: 16px;">投稿细则都在里面了，点击查看哦</span></p>
+<p><span style="font-size: 16px;">重金悬赏 | 合天原创投稿涨稿费啦！ </span></p>
+<p><span style="font-size: 16px;">戳原文，get学习</span></p>
