@@ -1987,3 +1987,90 @@ http://www.woshipm.com/marketing/4200955.html	14662
 <p>来源：https://mp.weixin.qq.com/s/4uuJxnae3sZwmKt_zsZdzA</p>
 <p>本文由 @新消费内参 授权发布于人人都是产品经理，未经许可，禁止转载。</p>
 <p>题图来自 Unsplash，基于CC0协议。</p>
+➜设计沉思录 | 以公寓管家PMS为例，探讨B端产品该如何设计
+http://www.woshipm.com/pd/4200174.html	21343
+<blockquote><p>导读：随着B端产品需求量与日俱增，B端市场的春天也逐渐到来，在这过程中B端体验设计变得越来越受到重视。面对挑战，设计师的设计思路该是怎样的？本文作者分享了自己在做 B 端产品时的一些总结和思考，供大家一起参考和学习。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/Br13Xn0vcXdp7Df8O6kT.jpg" alt="" width="900" height="420" /></p>
+<h2>01 关于B端和C端设计差异</h2>
+<p>B端和C端的产品具有明显的差异性，这导致了在设计思路上有很大的不同。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/YR82zKljJhZgbxXu5e3d.png" width="900" /></p>
+<p style="text-align: center;">B端与C端差异</p>
+<h3>1. 从用户与目的上</h3>
+<p>B端产品用户主要是企业或者客户服务于管理者，目的是提高效率，降低成本帮助客户制定整体的解决方案，用户往往必须要使用这些产品，使用即有任务驱动，完成任务立即结束，用完即走。</p>
+<p>C端产品面向用户，目的性和对效率追求较弱，要考虑用户偏好、兴趣，对不同类别进行分类，会由于产品的新颖度、趣味性愿意多花时间停留，主要是为“碎片化的时间”服务。</p>
+<h3>2. 从场景和诉求上</h3>
+<p>B端产品场景多、逻辑复杂因此导致设计细节的关注度受到影响，也会影响到用户对次要信息的判断，对成本控制比较严格，提高工作效率。</p>
+<p>C端产品会选择在自己舒适场景的前提下使用，有相对足够的时间和精力来浏览界面信息，逻辑相对单一，更注重用户的操作和体验。</p>
+<h3>3. 从盈收模式上</h3>
+<p>B端产品通过功能有明确盈利模式和固定使用用户群体。</p>
+<p>C端产品通过免费使用吸引用户，等积攒一定数量后需要探索变现路径，或者寻找其他变现路径。</p>
+<p>由于B端与C端各方面的差异性导致我们在设计时设计理念有很大不同。B端设计应更注重实用性，切合需求、在视觉上简洁高效，满足用户内心的诉求。在表达效果上，力求为用户提高效率、提升安全性，保证高识别度，在设计沉淀上，制定通用统一的设计控件，提高设计效率。</p>
+<p>下面将以品牌公寓管家（专为管理公寓服务的PMS公寓管理系统）为例，分享B端产品的设计思路。</p>
+<h2>02 该如何设计？</h2>
+<p>在设计公寓管家时，考虑到这是以PMS管理为主的公寓管理系统，在这样的系统中，该如何思考设计呢？我以设计前，中，后三个阶段来分享做B端设计中的一些思考。</p>
+<h3>1. 设计前</h3>
+<p><strong>（1）产品背景</strong></p>
+<p>公寓管家是帮助58品牌公寓商家助力商家房源和客源管理，房源发布，租客线索管理、vr、直播看房、在线签约、租后管理等重要功能的PMS管理系统，方便快捷提高效率，同时希望长租公寓运营商可借助这一优质平台，能更好获客和提升品牌号召力。</p>
+<p><strong>（2）服务用户群</strong></p>
+<p>公寓管家主要是2大群体：长租公寓运营商及房管员，希望满足他们管理房源，提高发房效率的目的。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/NM4LNJZDk1irv1SLl7qB.png" width="900" /></p>
+<p style="text-align: center;">公寓管家主要群体</p>
+<p><strong>（3）具体需求及场景</strong></p>
+<p>借助公寓管家，公寓方能很快线上获客，并对租客线索管理跟进，支持意向客户线上签约成交，公寓也可参与线上营销活动，塑造品牌形象。从获客到管理再到营销品牌这一系列场景下， 公寓方需要花大量时间和精力为进行维护， 因此他们诉求也希望可以帮助提升效率。</p>
+<p><strong>（4）竞品状况分析</strong></p>
+<p>通过竞品了解大概现有行业状况， 做到知己知彼，通过对定位，主要功能，交互体验，视觉样式这几个方面进行分析。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/NMwnI4HKyBJ2Z0R20tVr.png" width="900" /></p>
+<p style="text-align: center;">竞品分析</p>
+<p><strong>（5）梳理信息架构</strong></p>
+<p>背景、用户、使用场景、竞品等分析， 需要将产品流程进行梳理，梳理产品界面重要功能，呈现简介内容。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/UilwVE0OQWnZNDhFvl0V.png" width="900" /></p>
+<p style="text-align: center;">信息构架</p>
+<h3>2. 设计中</h3>
+<p>我们在前期明确产品的背景、目标人群、场景及竞品的状况，也梳理出大致功能点，接下来就是需要设计师在设计中定义风格、视觉展示，规范组件等。</p>
+<p><strong>（1）视觉风格</strong></p>
+<p>设计风格方面，参考B端产品通常视觉风格特点，结合公寓管家的功能特性，采用简洁，清晰 一致性。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/CWCR7qwQAlS5RmebGQgt.png" width="600" height="445" /></p>
+<p style="text-align: center;">风格定义</p>
+<p><strong>（2）视觉定义</strong></p>
+<p>1）颜色定义</p>
+<p>颜色选用上，选用体现B端PMS管理工具类产品特点的蓝色系为主色，其他色彩为辅助颜色。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/6OfQHp9g9cdYF4T7ejCr.png" width="900" /></p>
+<p style="text-align: center;">颜色定义</p>
+<p>2）字体</p>
+<p>中文选用苹方字体，字体饱满及辨识度和通用性高。数字采用58专属字体，Don58，字体瘦长更利于较长数字展示。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/cJfStfyYIGKB81NCPOmo.png" width="900" /></p>
+<p style="text-align: center;">苹方字体</p>
+<p>3）图标</p>
+<p>导航与内容图标采用线性图标，描边2PX宽度，增加更多细节。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/d9GsATBQHWqP1VLaF9Vg.png" width="900" /></p>
+<p style="text-align: center;">图标</p>
+<p>4）布局、适配、栅格</p>
+<p>布局：采用左右布局的方案， 将导航栏固定在左侧，提高导航可见性，方便页面切换。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/L3bT1KI40H6MxV5Dyx70.png" width="900" /></p>
+<p style="text-align: center;">布局</p>
+<p>适配：由于B端场景多样化，根据主流屏幕分辨率做不同适配，提高屏幕利用率，提升用户使用体验， 公寓管家采用左右布局，因此在适配方案上使用将左侧导航栏固定，对右侧工作区域进行动态缩放。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/nEldrV6VUWwm3RGEn5SC.png" width="900" /></p>
+<p style="text-align: center;">屏幕适配</p>
+<p>栅格：布局上的栅格会使页面更加工整简洁，以1440X900为设计基准，使用栅格系统在主要内容显示区进行12栅格划分，遵循8n的变化规律，使得设计元素有规律可循，减少决策时间提高效率，模块区分更清晰。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/m5v7uSKduHdjrONhTRf8.png" width="900" /></p>
+<p style="text-align: center;">页面栅格</p>
+<p><strong>（3）组件</strong></p>
+<p>在设计B端产品中往往也是大多数情况下会接到比较紧急的需求情况，所以在设计过程中组件化会能更好的提高效率和产能。随着功能的不断完善，组件也在不断更新中。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/6azZnoONQR4wyRGXaTgP.png" width="900" /></p>
+<p style="text-align: center;">部分控件</p>
+<h3>3. 设计后</h3>
+<p>当我们设计完成告一段落后， 设计稿交给开发实现过程中， 要随时跟开发沟通，上线后及时验收，保证对设计稿的高度还原，同时也应针对一些重要模块页面进行数据埋点，统计数据，为以后的设计优化，做好有力的数据支撑，提升产品的用户体验。</p>
+<h2>03 对于B端产品我的一点思考</h2>
+<p>作为一个设计师，在设计公寓管家过程中，不仅要做好设计，还要提升自己对业务的理解和配合开发的能力，更要有对整体把控和交互的能力，用更加全面的视角，规划整体设计。</p>
+<h3>1. 提升协作能力</h3>
+<p>B端产品由于其复杂的逻辑，需要整个团队包含产品、设计、技术、测试协同办公、共同协作，每个人都应该从整体出发，从用户的使用习惯出发，挖掘需求。</p>
+<h3>2. 深耕业务</h3>
+<p>在B端业务是一切的基石是根本，不谈业务的产品设计是没有灵魂的。只有了解业务，知晓业务各个环节、了解业务的场景，才能给用户带来更好的体验。</p>
+<h3>3. 小而美的设计</h3>
+<p>我们在设计中，常常会喜欢复杂的交互，更加丰富的色彩。但B端产品更注重的是信息承载和提高效率，我们怎样让用户在短时间内做出准确的判断，提升效率，需要小而美，小而精的设计。力求准确，降低学习成本。</p>
+<h2>04 写在最后</h2>
+<p>以上是我的一些反思，作为一名B端设计师，我也在不断地总结和成长，希望我的反思对你有所启发。我相信无论多复杂的业务和逻辑，只要我们全心全意、满足客户诉求都可以达成我们的目标。我也希望我这篇文章能够起到抛砖引玉的效果，欢迎共同探讨。</p>
+<p>&nbsp;</p>
+<p>作者：佟佳昕；视觉设计师</p>
+<p>本文来源于人人都是产品经理合作媒体@58用户体验设计中心（微信公众号@58UXD），作者@佟佳昕</p>
+<p>题图来自Unsplash，基于CC0协议</p>
