@@ -1,0 +1,29 @@
+➜积体电路不再漏电的明天？潜力股 MESO 让电脑手机更小更快！
+https://pansci.asia/archives/186154	7260
+<blockquote><p>用科学预见半导体的未来！PanSci 泛科学现正强力徵件！邀请半导体领域专家、研究者、学生来与臺湾最大的科学社群分享你最懂的半导体科学主题～不管是评论、科普、还是图文影音，都欢迎与我们联繫：contact@pansci.asia</p></blockquote>
+<p>文／台大物理系大二学生 林彦全、林禹廷<br />
+台大数学系大二学生 董沛承</p>
+<h3>半导体 CMOS 积体电路设计製程末路</h3>
+<p>互补式金属氧化物半导体 (CMOS) 是目前最广泛使用于<strong>积体电路</strong> (IC) 的设计製程，具有能量耗损较低、发热量少等优点，所以现今的 IC 大多使用 CMOS 。但 CMOS 也逐渐遇到许多无法突破的极限，例如理想的电晶体在截止状态时电流应该为零，但实际上依然有电流的存在，让电晶体不断耗电，就像关不紧的水龙头一样。</p>
+<p>你可能会想：那把水龙头锁得更紧不就解决啦！可是把水龙头锁得更紧对应到电子元件就是加大电压，加大电压也会增加电路消耗的能量，所以 CMOS 已经没办法再更省电了。</p><div class="pansc-content"></ins>
+<script async type="text/javascript" src="//cdn.holmesmind.com/js/init.js"></script></div>
+<p>除此之外，由于漏电流会随着电晶体尺寸的缩小而增加，因此漏电流同时也限制了电晶体的大小，换句话说， CMOS 已经没办法再更小了。总而言之，为了做出更快、更省电的电脑，人类需要一种完全不同于 CMOS 的设计製程。</p>
+<h3>划时代的发明：MESO 装置突破的瓶颈</h3>
+<p>为解决 CMOS 在发展上遇到的瓶颈，英特尔与柏克莱大学的研究人员提出一种全新的装置──<strong>磁电自旋轨道耦合装置</strong> (MESO) 。</p>
+<p>MESO 的运作概念如下图 1 所示，首先对装置输入电流（即输入电荷讯息），再将此电荷的讯息透过磁电效应 (magnetoelectric effect) 转变为磁场的资讯，储存在磁铁中（图 2 红色区块），随后通入电流 I 供给，并利用自旋轨道效应 (spin-orbit effect) 将存在磁铁中的资讯以电流与电压的形式读出。</p>
+<blockquote><p>换句话说， MESO 能透过输入电流（I 输入）决定磁铁磁性的方向以及输出电流（I 输出）的方向，并且能用 I 供给当作整个装置的开关。</p></blockquote>
+<div>wikipedia</a></p></div>
+<div>图 2 ：磁铁内部磁场与电荷的转换模式</p></div>
+<p>具体来说， MESO 的运作模式如图 3 ，他具有两种运作模式，当 I 输入向 x 方向输入时，磁铁磁性指向 -y 方向， I 输出向 -x 方向输出（图 3-A），反之亦然（图 3-B）。装置中，磁铁的两种状态就可以当作数位电路中的 0 跟 1 。有了 0 跟 1 就可以拿来做很多事情，例如日常生活中可见的手机、电脑，都是由数位电路所构成。所以 MESO 可以替代 CMOS 成为新的积体电路製程。</p>
+<div>Scalable energy-efficient magnetoelectric spin–orbit logic</a>》</p></div>
+<h3>MESO 和 CMOS 的差在哪裡？</h3>
+<p>MESO 跟 CMOS 比起来好在哪呢？从上一段可以看到 MESO 的结构和 CMOS 完全不同，所以 MESO 没有漏电流的问题，因此可以顺利的将装置缩小并减少供应电压，将装置缩小意味着 IC 能有更高的逻辑密度，而减少供应电压就能减少每次开关时的能量损耗，让我们能继续提升运算速度，而不让原件过热。</p>
+<p>此外，相较于 CMOS ，由于使用磁铁的磁性作为储存讯息的媒介， MESO 具有非挥发性（关闭时仍能保持讯息），因此可从待机迅速回到运作状态，有着巨大的优势。</p>
+<p>MESO 可以在没有恆定电流的情况下维持磁性，且能在超低功率的情况下运行，相较于传统 CMOS 消耗的能量更少，运算速度也更快。对未来的发展，如人工智慧或是你家电脑等需要大量与运算的装置提供更高效能的晶片。</p>
+<p>不过，MESO 仍处于研发阶段，有许多关键材料与技术尚未开发，距离商业化仍需一段时间，但相信将来 MESO 将会延续摩尔定律，创造超越 CMOS 的新世代。</p>
+<h3>参考资料</h3>
+<ol>
+<li>Sasikanth Manipatruni, Dmitri E. Nikonov, Chia-Ching Lin, Tanay A. Gosavi, Huichu Liu,Bhagwati Prasad, Yen-Lin Huang, Everton Bonturim, Ramamoorthy Ramesh &amp; Ian A.Young.(2019)《Scalable energy-efficient magnetoelectric spin–orbit logic》</li>
+<li>Sasikanth Manipatruni, Dmitri E. Nikonov, Chia-Ching Lin, Tanay A. Gosavi, Huichu Liu,Bhagwati Prasad, Yen-Lin Huang, Everton Bonturim, Ramamoorthy Ramesh &amp; Ian A.Young.(2019)《Scalable energy-efficient magnetoelectric spin–orbit logic_Supplement》</li>
+</ol>
+<div>PanSci 泛科学</a>.</p>
