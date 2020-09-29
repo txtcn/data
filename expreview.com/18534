@@ -11,3 +11,52 @@ http://www.expreview.com/76229.html	7080
 ➜最新ChromeOS更新有问题，会导致长期100% CPU占用
 http://www.expreview.com/76230.html	7963
 <p>最近的ChromeOS更新似乎有问题，因为更新过后系统的Google Play Store服务会导致CPU 100%占用，使得设备发烫以及有性能上的损失。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/09/29/chromeos-1.png" width="100%"/></p><p>据<a href="https://www.bleepingcomputer.com/news/google/new-google-chromeos-updates-cause-100-percent-cpu-usage-heating-issues/" target="_blank">Bleeping Computer</a>报导，ChromeOS的用户自从升级至ChromeOS 85.0.4183.108之后，会出现应用无法正常运作、设备不停发热、风扇全速运转以及耗电过快的情况。有用户在排查后发现，是由3Google Play的“com.andriod.vending:download_service”会突然长时间占用95%至100%的CPU所导致的。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/09/29/chromeos-2.jpg" width="100%"/></p><p>当Google Plat Store有更新时，这个“com.andriod.vending:download_service”服务就会启动并且下载更新。不过在这次的BUG中，很显然在没有更新时，它也会导致100%的CPU占用。</p><p>不过这个问题可能并不会影响所有的ChromeOS用户，因为目前只有宏碁Chromebook、华硕Chromebook Flip以及三星的Galaxy Chromebook用户<a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1130917#c6" target="_blank">回报</a>了这个问题。</p><p>为了解决这个问题，有的ChromeOS用户试过并且成功在Chrome Task Manager内杀掉这个“com.andriod.vending:download_service”进程，不过也有不少用户表示这样做没有用。也有的用户<a href="https://www.reddit.com/r/chromeos/comments/iyjegp/cpu_pegged_task_manager_says_its_app/g6e57vk?utm_source=share&utm_medium=web2x&context=3" target="_blank">表示</a>把Google Play Store退回到较旧的版本可以暂时解决这个问题。</p><blockq><p>“作为一个暂时的解决方法，我尝试把Player Store回退到一个没有问题的旧版本并且成功了，另外我也停用了背景WiFi及流量来防止它自己又更新上去。希望下一次更新可以解决这个问题。”</p></blockq><p>Google一位工程师<a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1132459" target="_blank">表示</a>，这个问题是源于ChromeOS内缺少了某些文件。</p><blockq><p>“在经过评估后，我们认为用户遭遇这个BUG是由于CrOS缺失了文件，导致不能确定UID proc时间的增量变化。”</p></blockq><p>目前这个问题并没有指派给特定的Google工程师来解决，但是开发者已经知悉这个BUG，有望于下一个更新中解决这个问题。</p>
+➜先马冰钻风扇使用体验：高效、耐用、不花俏的实用之选
+http://www.expreview.com/76197.html	25197
+<!-- 热管,热管 --><p>作为贯穿机箱、电源、散热器的产品，散热风扇在先马的产品序列中可以说是举足轻重的，而且与目前散热风扇以玩灯为主的大潮流不同，先马始终认为风扇的基础属性也就是风量、风压、噪音以及寿命才是最重要的，因此他们家的风扇产品都是以基础属性为主、RGB灯为辅的设计，只有本体达到他们的效能要求后，才会推出带灯的后续衍生产品，可以说产品设计的态度是非常务实的，这也是他们可以在散热风扇领域闯出一番名堂的根本。<br/></p><p style="text-align: center;"><img border="0" src="https://img.expreview.com/review/2020/09/Sama-BZ/00.jpg" width="100%"/></p><p style="text-align:left;">最近先马给玩家带来了一款重磅新品，一款并称之为“冰钻”的散热风扇产品。这款风扇的定位是“寿命型散热风扇”，MTBF平均无故障时间达到80000小时，可以提供最大73.71CFM的风量以及2.07mm水柱的最大风压，噪音则可以控制在32.92分贝的水平，不仅有充足的的使用寿命，而且基础性能也非常不错。</p><h1 style="text-align: left;">先马冰钻风扇介绍</h1><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Sama-BZ/DSC_2299.jpg" width="100%"/></p><p style="text-align:left;">先马冰钻风扇是以套装的形式进行销售，每套包含三把规格相同的冰钻风扇，售价为人民币199元。在其包装上，我们可以看到“寿命型散热风扇”、“无光”、“双滚珠”、“PWM”等关键信息以及风扇的基础数据，可以给到消费者比较直观的第一印象。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Sama-BZ/DSC_2305.jpg" width="100%"/><br/>先马冰钻风扇套装（正面）</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Sama-BZ/DSC_2306.jpg" width="100%"/><br/>先马冰钻套装（背面）</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Sama-BZ/DSC_2311.jpg" width="100%"/></p><p style="text-align:left;">先马冰钻风扇属于12cm直径产品，通体呈黑色，采用了坚固风量和风压的11扇叶设计，支持PWM调速，调速范围是800RPM至1850RPM。按照先马提供的数据显示，冰钻风扇在800RPM是可以提供32.2CFM的风量以及0.41mm水柱的风压，噪音为23.9分贝；提升至1200RPM是则可以提供42.1CFM风量和0.98mm水柱风压，噪音为27分贝；在1600RPM时则为风量65.2CFM和风压1.6mm水柱，噪音30.9分贝。因此对于冰钻风扇来说，其在1200RPM至1600RPM的转速区间中已经可以提供相当不错的基础性能。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Sama-BZ/DSC_2309.jpg" width="100%"/></p><p style="text-align:left;">不过相比于其表现不错的基础性能，冰钻风扇实际上主打的是其使用寿命。这款风扇采用了双滚珠轴承设计，来自于美蓓亚三美，也就是业内常说的NMB滚珠轴承，不仅静音耐用，而且还免维护，不需要定期加注润滑油。此外风扇还使用了铜合金轴承管，相比于常见的塑料轴承管，铜合金轴承管不仅可以承受更高的温度，也不容易在风扇运转过程中发生磨损和形变，更有利于延长风扇的使用寿命。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Sama-BZ/DSC_2327.jpg" width="100%"/><br/>先马冰钻风扇采用了30mm标准的大尺寸马达，输入规格为DC12V 0.2A</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Sama-BZ/DSC_2317.jpg" width="100%"/></p><p style="text-align:left;">冰钻风扇的扇叶虽然表面上平平无奇，但里面却包含了先马的细致，因为每个扇叶在出厂前都会进行动平衡的校正，通过加注固体胶的方式，使扇叶在高速运转时也不会产生抖动，不仅运行更加安静，也可以大大降低轴承以及马达的压力，同样有利于提升产品的寿命。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Sama-BZ/DSC_2320.jpg" width="100%"/><br/>风扇的四个角位都有一个凹槽，这是用来安装减震贴的</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Sama-BZ/DSC_2323.jpg" width="100%"/><br/>风扇外框有做支撑架，可以防止变形</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Sama-BZ/DSC_2325.jpg" width="100%"/><br/>风扇外框上有做一些简单的图案进行装饰，看上去就不会过于单调了</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Sama-BZ/DSC_2328.jpg" width="100%"/></p><p style="text-align:left;">先马冰钻风扇支持PWM调速，因此其采用的是4pin接口，线材有进行包线处理，既可以保护线材，也有利于提升观感。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Sama-BZ/DSC_2356.jpg" width="100%"/></p><p style="text-align:left;">现在先马的风扇套装大都标配一个集线器，可以把1个4pin风扇接口扩展为4个，这样不仅可以连接4把风扇，而且4把风扇都可以接受同一个PWM控制信号（风扇须支持PWM调速）。除此之外冰钻风扇还提供有3套白色和3套黑色的减震贴，用户可以根据自己的喜好选择合适的颜色使用。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Sama-BZ/DSC_2357.jpg" width="100%"/><br/>使用时只需要将减震贴取下并贴到相应的位置即可</p><p style="text-align: center;"><img border="0" src="https://img.expreview.com/review/2020/09/Sama-BZ/DSC_2360.jpg" width="100%"/><br/>黑色与白色的减震贴</p><h1><strong>风扇效能表现体验</strong></h1><p>接下来我们先对冰钻风扇的基础效能进行简单的体验，体验所使用的系统为我们定制的机箱散热测试系统，测试使用的是先马易大师精钢版机箱，对比的产品是先马自己的冰洞风扇套装。</p><p>在我们的散热测试模型中，搭配固定的风冷散热器（先马冰雪130），测试时散热器的风扇满速运转。机箱风扇配置为前置进风风扇装满，1个后置出风，使用ProArtist M12风扇，转速控制在900RPM左右。参测的冰钻风扇和冰洞风扇则作为前置进风风扇（3把全部安装），除了测试两者满速运行的效能与噪音差异外，我们还对冰钻风扇不同转速下的效能和噪音进行了体验。</p><p>为了便于大家理解，我们将套用机箱测试的超能指数计算方式，即下面的共识，计算出冰钻以及冰洞风扇对应的超能指数，以此作为对比。</p><p style="text-align: center;"><strong>Exp = 3.3*Pd/(10+Tc – Ta)&nbsp;&nbsp;</strong></p><p>Pd指发热模块稳定后的平均功耗，Tc为机箱内的平均温度，Ta指环境温度，Exp越大，表明散热效能越好。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "先马冰钻&冰洞风扇效能对比 | 超能指数"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "分 "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = null; //指定X轴最大值，null时为自动
+var autocolor = 0; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = ANIColor("Intel",5); //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type":"超能指数","冰洞@1200RPM":"67.3","冰钻@1850RPM":"77.8","冰钻@1500RPM":"76.6","冰钻@1200RPM":"71.5","冰钻@900RPM":"68.1"}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>先马冰洞风扇是固定1200RPM转速，其在室温的24.2摄氏度的情况下，可以将机箱内部温度控制在26.4摄氏度左右，此时测试模组的总功耗在248W左右，相当于超能指数67.3分；冰钻风扇最高转速在1850RPM左右，满速运转的情况下，可以在室温为24.4摄氏度时，将机箱内部温度控制在25摄氏度左右，测试模组总功耗在251W左右，相当于超能指数77.8分。</p><p>冰钻风扇是支持PWM调速的，因此我们也尝试了在1500RPM、1200RPM以及900RPM下冰钻风扇的散热效能，其在这三个转速下仍然可以将机箱内部温度控制在25摄氏度到26摄氏度的水平，测试模组功耗也可以维持在249W到250W左右的水准，计算下来相当于超能指数76.6分、71.5分以及68.1分，也就是说在900RPM下散热效能仍然可以与冰洞风扇持平。</p><h1>风扇噪音表现体验</h1><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "先马冰钻&冰洞风扇噪音对比"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "分贝 "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = null; //指定X轴最大值，null时为自动
+var autocolor = 0; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+//var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+var mycolor = ANIColor('AMD',6);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type":"噪音","环境":"33","冰洞@1200RPM":"42","冰钻@1800RPM":"51","冰钻@1500RPM":"44","冰钻@1200RPM":"41","冰钻@900RPM":"39"}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>而在噪音方面，测试时我们只保留参测风扇运转（3把均在运行），其余风扇全部停止，在环境噪音为33分贝左右的情况下，冰钻风扇的运行噪音经测试是在42分贝左右，而冰钻风扇则根据转速的不同表现出不同的噪音，满转速运转时达到51分贝，1500RPM是为44分贝，1200RPM与900RPM时为41分贝和39分贝，在没有其余声源的情况下，冰钻在1500RPM以下时其实已经比较安静，在常规平台上使用的话应该感觉不到噪音影响。</p><h1>总结：处处发光的多面手</h1><p>严格意义来说，先马冰钻风扇主打的并不是效能或者是静音，但是从我们的体验来看，其在这两方面的表现也确实是可圈可点，可以看得出来冰钻风扇并不是只在一个点上发光的产品，而是在综合表现上处处发光的多面手。<br/></p><p style="text-align: center;"><img border="0" src="https://img.expreview.com/review/2020/09/Sama-BZ/DSC_2305.jpg" width="100%"/></p><p>实际上冰钻风扇主打的是其长寿命，这点其实需要时间去证明，不过从冰钻使用了NMB滚珠轴承、100%扇叶校正以及提供3年质保（前3个月换新）等方面来看，先马对冰钻风扇的寿命可以说是充满信心的，完全值得大家信赖。</p><p>目前冰钻风扇是以3把套装的形式进行销售，每套售价为199元，从起品质以及享受的质保服务来说，性价比还是颇高的，值得玩家考虑。</p><p>购买链接：<a href="https://item.jd.com/100015276612.html" target="_blank">先马冰钻风扇套装</a></p>
