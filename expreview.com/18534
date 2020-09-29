@@ -60,3 +60,361 @@ var mycolor = ANIColor('AMD',6);   //这样自动生成4种AMD红色，其它如
 //var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
 var data_arr = [{"type":"噪音","环境":"33","冰洞@1200RPM":"42","冰钻@1800RPM":"51","冰钻@1500RPM":"44","冰钻@1200RPM":"41","冰钻@900RPM":"39"}];
 TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>而在噪音方面，测试时我们只保留参测风扇运转（3把均在运行），其余风扇全部停止，在环境噪音为33分贝左右的情况下，冰钻风扇的运行噪音经测试是在42分贝左右，而冰钻风扇则根据转速的不同表现出不同的噪音，满转速运转时达到51分贝，1500RPM是为44分贝，1200RPM与900RPM时为41分贝和39分贝，在没有其余声源的情况下，冰钻在1500RPM以下时其实已经比较安静，在常规平台上使用的话应该感觉不到噪音影响。</p><h1>总结：处处发光的多面手</h1><p>严格意义来说，先马冰钻风扇主打的并不是效能或者是静音，但是从我们的体验来看，其在这两方面的表现也确实是可圈可点，可以看得出来冰钻风扇并不是只在一个点上发光的产品，而是在综合表现上处处发光的多面手。<br/></p><p style="text-align: center;"><img border="0" src="https://img.expreview.com/review/2020/09/Sama-BZ/DSC_2305.jpg" width="100%"/></p><p>实际上冰钻风扇主打的是其长寿命，这点其实需要时间去证明，不过从冰钻使用了NMB滚珠轴承、100%扇叶校正以及提供3年质保（前3个月换新）等方面来看，先马对冰钻风扇的寿命可以说是充满信心的，完全值得大家信赖。</p><p>目前冰钻风扇是以3把套装的形式进行销售，每套售价为199元，从起品质以及享受的质保服务来说，性价比还是颇高的，值得玩家考虑。</p><p>购买链接：<a href="https://item.jd.com/100015276612.html" target="_blank">先马冰钻风扇套装</a></p>
+➜三星980 PRO 1TB M.2 SSD评测：现最强PCI-E 4.0 SSD
+http://www.expreview.com/76235.html	36287
+<!-- SLC,SLC,SLC,MLC,PCI-E 3.0,SLC,SLC,Windows 10,热管,PCMark 7,热管,PCMark 8,热管,热管,TRIM,trim --><p>去年AMD发布Zen 2架构第三代锐龙处理器的时候把PCI-E 4.0带进了消费级平台，但当时群联一家可提供PCI-E
+4.0的SSD方案，所以很长一段时间里市场上的PCI-E 4.0 SSD都是使用群联E16主控的，现在一年多过去了，是时候有其他玩家加入了，三星980
+PRO就是市场上第二个支持PCI-E 4.0的方案。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/09/Samsung_980pro/title.jpg" width="100%"/></p><p>三星980 PRO与上一代的970 PRO相比有两个重要变化，一个是接口从PCI-E 3.0x4升级到PCI-E
+4.0x4，所以SSD的最大传输速度从3500 MB/s翻倍到7000
+MB/s。第二点估计很多人就不爽了，就是闪存同MLC换成了TLC，以往三星带PRO后缀的SSD都是使用MLC闪存的，按照以往的命名方式980
+PRO应该会被叫作980 EVO，这不知道是不是代表着三星以后不在消费级市场上卖MLC闪存的产品，真的话以后想找用MLC闪存的SSD就更难了。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+title: "三星980 Pro规格参数",
+header:["容量","250GB","500GB","1TB","2TB"],
+width: '91%',
+columnWidth: 'AUTO', //表格宽度，"AVG"平均，"AUTO"自动（默认），指定[15,16,20]
+id: tableid,
+data: [
+["主控","三星 Elpis",],
+["闪存","三星128层堆叠3D TLC",],
+["LPDDR4缓存","512MB","512MB","1GB","2GB"],
+["接口","PCI-E 4.0 x4,NVMe 1.3c",],
+["最少SLC Cache","4GB","4GB","6GB","TBD"],
+["最大SLC Cache","49GB","94GB","114GB","TBD"],
+["连续读取","6400 MB/s","6900 MB/s","7000 MB/s","TBD"],
+["连续写入(SLC Cache)","2700 MB/s","5000 MB/s","---","TBD"],
+["连续写入(TLC)","500 MB/s","1000 MB/s","2000 MB/s","TBD"],
+["4K随机读取（QD1）","22000 IOPS","---","---","TBD"],
+["4K随机读取（Max）","500000 IOPS","800000 IOPS","1000000 IOPS","TBD"],
+["4K随机写入（QD1）","60000 IOPS","---","---","TBD"],
+["4K随机写入（Max）","600000 IOPS","1000000 IOPS","---","TBD"],
+["售价","599元","999元","1899元","TBD"],
+["TBW","150TB","300TB","600TB","1200TB"],
+["平均无故障时间","1500000小时",],
+["质保","五年",],
+]
+});</script></div><p>三星980 PRO的容量是250GB、500GB与1TB，从容量就能看得出这款SSD并没有开放全部的容量，留了一部分来做二级缓存，此外980
+PRO还有个2TB的容量，但暂时还没发布，关于它的参数也暂时没公开。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+title: "三星SSD规格对比",
+header:["型号","970 EVO Plus 1TB","970 PRO 1TB","980 PRO 1TB"],
+width: '91%',
+columnWidth: 'AUTO', //表格宽度，"AVG"平均，"AUTO"自动（默认），指定[15,16,20]
+id: tableid,
+data: [
+["主控","三星 Phoenix","---","三星 Elpis"],
+["闪存","三星92层堆叠3D TLC","三星64层堆叠3D MLC","三星128层堆叠3D TLC",],
+["LPDDR4缓存","1GB",],
+["接口","PCI-E 3.0 x4","---","PCI-E 4.0 x4",],
+["NVMe版本","NVMe 1.3","---","NVMe 1.3c",],
+["最少SLC Cache","6GB","n/a","6GB"],
+["最大SLC Cache","42GB","n/a","114GB"],
+["连续读取","3500 MB/s","3500 MB/s","7000 MB/s"],
+["连续写入(最大)","3300 MB/s","2700 MB/s","5000 MB/s"],
+["连续写入(TLC)","1700 MB/s","n/a","2000 MB/s"],
+["4K随机读取（QD1）","17000 IOPS","15000 IOPS","22000 IOPS"],
+["4K随机读取（Max）","550000 IOPS","500000 IOPS","1000000 IOPS"],
+["4K随机写入（QD1）","60000 IOPS","55000 IOPS","60000 IOPS"],
+["4K随机写入（Max）","400000 IOPS","500000 IOPS","1000000 IOPS"],
+["售价","1469元","2799元","1899元"],
+["TBW","600TB","1200TB","600TB"],
+["平均无故障时间","1500000小时",],
+["质保","五年",],
+]
+});</script></div><p>上面就是1TB的970 EVO Plus、970 PRO、980 PRO的规格对比，980
+PRO的NVMe标准从1.3升级到1.3c，由于接口的升级，980 PRO的读取性能远比970 EVO Plus、970 PRO要好，最小SLC
+Cache容量和970 EVO Plus一样是6GB，但最大容量从42GB增加到114GB，增加了2.7倍，由于SLC
+Cache的存在，5000MB/s的写入速度比970 PRO的2700 MB/s快得多，当然缓存用光后TLC是原始写入速度只有2000MB/s，这时就要比970
+PRO慢了。</p><p>从MLC换成TLC闪存其实变化最大的是它的耐久度，质保写入量从970 PRO的1200 TBW折半成600 TBW，与970 EVO
+Plus一个级别，不过根据他们的统计，在五年的时间内，99%的用户写入量都不超过156TB，99.7%的用户不会超过600TB，所以980
+PRO作为一款消费级SSD来说，耐久度是完全足够的。</p><p>而且TLC闪存更大的存储密度反馈出来的就是价格上的优势，980 PRO目前的价格其实和970 EVO
+Plus刚上市时是一样的，1TB的售价是1899元，比2799元的970 PRO便宜多了。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/09/Samsung_980pro/980PRO-2m.jpg" width="100%"/></p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 1; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+var istart=['980PRO-3','980PRO-4'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 8; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/review/2020/09/Samsung_980pro/"; //图片目录
+var col = 2; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><p>980 PRO的包装风格和上代差不多，不过文字排版的方向有所变化，包装右下角写着最大读取速度7000MB/s，这也是PCI-E 4.0
+SSD最大的优势，比其他的的PCI-E 3.0
+SSD快多了，开启外包装后就能看到SSD趟在一个白色的塑料盒里面，上面还有透明的上盖覆盖着，这个塑料盒其实是有两层的，底层藏着SSD的说明书。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 1; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+var istart=['980PRO-5','980PRO-6','980PRO-7','980PRO-8'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 8; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/review/2020/09/Samsung_980pro/"; //图片目录
+var col = 2; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><p style="text-align:left;">三星980 PRO与大多数M.2 SSD一样都是M.2
+2280规格，目前250GB、500GB与1TB都是单面设计的，2TB的估计也是单面的。SSD背部的贴纸和上代产品一样，不是单纯的贴纸，从侧面看很明显有一层铜贴在SSD的PCB上面，有强化散热的作用。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Samsung_980pro/980PRO-11m.jpg" width="100%"/>把贴纸撕开后可以四颗较大的芯片，银色的是主控，右侧两颗是闪存，中间长方形的是缓存</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Samsung_980pro/980PRO-10m.jpg" width="100%"/></p><p style="text-align:left;">三星新一代主控的名字叫Elpis，除了980 PRO之外OEM的PM9A1也在用它，支持NVMe
+1.3c规范，IO队列从上代Phoenix的32增加到128，工艺也从14nm升级到8nm，毕竟从PCI-E 3.0升级到PCI-E
+4.0，主控的性能肯定也有所增强，换更先进的工艺能降低发热量。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Samsung_980pro/980PRO-9m.jpg" width="100%"/><br/>缓存编号是K4F8E3D4HF，是三星的LPDDR4，容量1GB，其实970 EVO/EVO Plus上面也是这颗</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Samsung_980pro/980PRO-12m.jpg" width="100%"/></p><p style="text-align:left;">970 EVO 500GB使用是三星最新的第六代128层堆叠V-NAND
+TLC，依然是电荷捕获型3D闪存，这代闪存与上代一样Die
+Size有256Gb和512Gb两种，根据官方数据，它的读取延迟45us，写入延迟450us，而第五代96层堆叠V-NAND分别是50us与500us，速度提升了10%，而功耗也降低了15%。</p><h1><strong>测试平台与说明</strong></h1><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+align: 'left',
+width: '80%',
+padding: '8px 15px',
+header: ["测 试 平 台", ""],
+columnWidth: 'AUTO', //表格宽度，"AVG"平均，"AUTO"自动（默认），指定[15,16,20]
+id: tableid,
+data: [
+["<b>硬件平台</b>"],
+["CPU ","AMD Ryzen 7 3700X",],
+["主板","微星 PRESTIGE X570 CREATION | AMD X570",],
+["显卡","NVIDIA GeForce RTX 3090 Founder Edition",],
+["内存","芝奇 焰光戟DDR4-3600 8GB*2 CL16-16-16-36",],
+["硬盘","技嘉 AORUS NVMe Gen 4 SSD 2TB<br>三星 980 PRO 1TB<br>群联E16 1TB",],
+["电源","华硕 ROG THOR 1200W",],
+["显示器","AOC U2790PQU up to 3840*2160",],
+["<b>软件配置</b>"],
+["操作系统","Microsoft Windows 10 64bit build 2004",],
+]
+});</script></div><p>三星980 PRO已经把接口升级到PCI-E 4.0，所以我们必须得使用支持PCI-E 4.0的平台，所以SSD测试平台更换成AMD Ryzen 7
+3700X，主板是微星PRESTIGE X570
+CREATION，被测SSD会被安装到直连CPU的M.2接口以获取最佳性能，对比的产品是采用群联E16主控的1TB SSD，也就是目前市场上最为常见的PCI-E
+4.0 SSD。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Samsung_980pro/980PRO-1m.jpg" width="100%"/><br/>测试平台</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Samsung_980pro/CDI.jpg"/><br/>三星980 PRO CrystalDiskInfo截图，可用看到接口已经升级到PCI-E 4.0</p><h2 style="text-align: left;"><strong>CrystalDiskMark测试</strong></h2><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var iwd = 682; //图片宽度
+var iht = 442; //图片高度
+var pts = "CrystalDiskMark峰值性能"; //标题
+var psc = ['三星980 PRO 1TB', '群联E16 1TB']; //时间轴说明
+var pimgs = ['https://img.expreview.com/review/2020/09/Samsung_980pro/CDM_peak_980pro.jpg', 'https://img.expreview.com/review/2020/09/Samsung_980pro/CDM_Peak_E16.jpg']; //图片链接
+LBInit(iwd, pts, psc, pimgs, iht);</script></div><p>先来看看CrystalDiskMark的峰值性能测试，在队列深度8的时候三星980 PRO连续读写速度分别是6613/4932
+MB/s，比群联的E16方案快不少，特别是在读取性能方面，70%读/30%写的混合测试里面三星980 PRO
+1TB的传输速度是6250MB/s，而群联E16的方案只有4561 MB/s，可见三星980 PRO的峰值连续读写性能要比群联的E16方案更佳。</p><p>QD32的随机性能三星980 PRO 1TB测出来只有读取135000 IOPS，写入121000 IOPS，混合131000
+IOPS，比群联E16方案要慢。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var iwd = 682; //图片宽度
+var iht = 442; //图片高度
+var pts = "CrystalDiskMark真实性能"; //标题
+var psc = ['三星980 PRO 1TB', '群联E16 1TB']; //时间轴说明
+var pimgs = ['https://img.expreview.com/review/2020/09/Samsung_980pro/CDM_real_980pro.jpg', 'https://img.expreview.com/review/2020/09/Samsung_980pro/CDM_Real_E16.jpg']; //图片链接
+LBInit(iwd, pts, psc, pimgs, iht);</script></div><p>再来看看CrystalDiskMark的真实性能测试，因为SSD的峰值性能都在高队列深度下测出来的，实际上日常操作的队列深度只有1到3左右，在队列深度1的时候三星980
+PRO连续读写速度分别是4139/4220 MB/s，和群联E16相比写入性能差不多，读取快了1000MB/s，70%读/30%写的混合测试也是980
+PRO领先E16方案1000MB/s。</p><p>延迟方面，三星980
+PRO的读取延迟是47us，写入延迟19us，混合读写延迟39us，而群联E16方案读取延迟64us，写入延迟15us，混合读写51us，明显三星的读取延迟要比群联的方案低不少，混合读写延迟也比群联的低，不过写入延迟没那么好。</p><h2><strong>AS SSD Benchmark测试</strong></h2><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var iwd = 469; //图片宽度
+var iht = 549; //图片高度
+var pts = "AS SSD Benchmark测试"; //标题
+var psc = ['三星980 PRO 1TB', '群联E16 1TB']; //时间轴说明
+var pimgs = ['https://img.expreview.com/review/2020/09/Samsung_980pro/ASSSD_980pro.jpg', 'https://img.expreview.com/review/2020/09/Samsung_980pro/ASSSD_E16.jpg']; //图片链接
+LBInit(iwd, pts, psc, pimgs, iht);</script></div><p style="text-align:left;">使用AS SSD来测试的话三星980 PRO 1TB的连续读写速度为5427/3943 MB/s，4K
+QD1的随机读写速度是79/187MB/s，除了随机写入性能之外，其他各方面都比群联的E16方案更强。</p><h2 style="text-align: left;"><strong>Expreview Storage Benchmark 2014测试</strong></h2><p>Expreview Storage Benchmark
+2014是我们自己制作的I/O轨迹回放测试，是硬盘真实情况的重现，与PCMark的硬盘测试采用真实的磁盘I/O轨迹回放比较类似，会更为贴近实际应用情况，测试使用我们自行录制的真实硬盘I/O轨迹脚本，整测试包括日常应用、办公应用和游戏应用三个部分，涉及多个软件的操作，这些脚本使用Intel
+NAS Performance Toolkit进行全速回放。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "Expreview Storage Benchmark 2014测试"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better "; // 副标题文字
+var unit_text = "MB/s"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 0; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 0; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+var mycolor = ['#00a5ff','#f39519','#00a5ff','#00a5ff','#00a5ff','#00a5ff','#00a5ff'];
+var data_arr = [
+{"type":"日常应用","三星980 PRO 1TB":"458.5","群联E16 1TB":"445.8"},
+{"type":"游戏应用","三星980 PRO 1TB":"1087.4","群联E16 1TB":"640"},
+{"type":"办公应用","三星980 PRO 1TB":"4179.6","群联E16 1TB":"4019"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>其实在随机混合读写的日常应用测试中三星980
+PRO与群联E16方案的差别不大，有大量连续写入的办公应用测试也是，只是有轻微的领先，但在基本完全是读取的游戏应用测试中，三星980
+PRO的领先幅度非常大，980 PRO低队列深度连续读取的性能优势在这里得到了充分发挥。</p><h2><strong>PCMark 7测试</strong></h2><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "PCMark 7存储测试"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better "; // 副标题文字
+var unit_text = ""; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 0; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 0; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+var mycolor = ['#00a5ff','#f39519','#00a5ff','#00a5ff','#00a5ff','#00a5ff','#00a5ff'];
+var data_arr = [
+{"type":"原始得分","三星980 PRO 1TB":"26339","群联E16 1TB":"19248"},
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>三星980 PRO 1TB在PCMark 7磁盘测试中的原始得分是26339，而群联的E16方案得分是19248，可见三星这款980
+PRO性能要优秀不少，目前市场主流的PCI-E 3.0 x4 NVMe SSD的平均得分大概是15000左右。</p><h2><strong>PCMark 8测试</strong></h2><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "PCMark 8存储测试"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better "; // 副标题文字
+var unit_text = "MB/s"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 0; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 0; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+var mycolor = ['#00a5ff','#f39519','#00a5ff','#00a5ff','#00a5ff','#00a5ff','#00a5ff'];
+var data_arr = [
+{"type":"传输率","三星980 PRO 1TB":"642.74","群联E16 1TB":"624.6"},
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>三星980 PRO 1TB在PCMark 8磁盘测试中的测出来传输率是642MB/s，而群联的E16方案得分是624MB/s，性能略微领先。</p><h2><strong>PCMark 10测试</strong></h2><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "PCMark 10存储测试"; // 标题文字热管
+var subtitle_text = "www.expreview.com"; // 副标题文字
+var unit_text = ""; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 0; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 0; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+var mycolor = ['#f39519','#00a5ff','#00a5ff','#00a5ff','#00a5ff','#00a5ff','#00a5ff'];
+var data_arr = [
+{"type":"带宽(MB/s)","三星980 PRO 1TB":"451.41","群联E16 1TB":"338.42"},
+{"type":"平均存储时间(us)","三星980 PRO 1TB":"58","群联E16 1TB":"80"},
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>三星980 PRO 1TB在PCMark 10磁盘测试中的测出来传输率是451MB/s，平均存时间58us，而群联的E16方案得分是338MB/s，
+平均存时间80us，可见群联E16的方案延迟是比980 PRO更高的的，而这也是SSD最影响体验的一样东西。</p><h2><strong>TxBENCH测试</strong></h2><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/09/Samsung_980pro/TxBENCH.png" width="100%"/></p><p>TxBENCH的全盘写入曲线，测试结果980 PRO 1TB的SLC Cache有114GB左右，符合官方给出的数据，这个SLC
+Cache容量还是相当之大的，相比之下970 EVO Plus其实只有42GB，在SLC
+Cache容量内SSD的写入速度超过4700MB/s。而Cache用光后原始TLC的写入性能的平均写入速度是1764MB/s，速度非常的快，在目前的TLC
+SSD当中应该是最快的，全盘平均写入速度是1842MB/s，最小写入速度1547.3MB/s，写入速度非常的快。</p><p>当然了和使用MLC的970 PRO相比其实还有些差距的，970 PRO并没有Turbo Write技术，也就是SLC
+Cache，但凭借着MLC强劲的性能整块盘的写入速度都可以维持2700MB/s，如果拿980 PRO的缓外速度和970 PRO来比的话确实要低不少，但980
+PRO有着114GB的SLC Cache，<span style="color:#FF0000">当写入量少于162GB时980 PRO 1TB的耗时其实是少于970
+PRO 1TB的</span>。</p><h2 style="text-align: left;"><strong>IOMeter测试</strong></h2><p>以下是使用IOMeter对SSD全盘进行两小时的4K QD32随机写入后所记录下来的IOPS离散分布情况：</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/09/Samsung_980pro/IOMeter.png" width="100%"/></p><p>这是IOMeter对SSD全盘进行两小时的4K QD32随机写入后所记录下来的IOPS离散分布情况，最高处是SSD的SLC
+Cache，IOPS很稳定的在1790000附近，当他们耗尽切换到TLC写入模式后后曲线会变得很奇怪，居然是越来越快的，写入17分钟之后SSD的闪存彻底被填满切换到另一种工作状态，写入IOPS逐渐缓慢下降，这离散分布已经算好的了，整个过程的平均写入速度是264.4MB/s，而最后10分钟的平均写入速度是222.7MB/s，三星980
+PRO 1TB在高压力写入环境下表现还不错。</p><h2 style="text-align: left;"><strong>Trim与GC测试</strong></h2><p>这测试会在用IOMeter对没分区的SSD进行全盘的4K QD32写入2小时，然后再分区格式化进行全盘TRIM，随后再进行一次HDTune写入测试看看写入性能可以恢复到什么程度。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var iwd = 670; //图片宽度
+var iht = 688; //图片高度
+var pts = ""; //标题
+var psc = ['空盘性能', '写入完成后', '闲置一小时后', '全盘TRIM后']; //时间轴说明
+var pimgs =  [  'https://img.expreview.com/review/2020/09/Samsung_980pro/HDTune.jpg',
+'https://img.expreview.com/review/2020/09/Samsung_980pro/HDTune_00.jpg',
+'https://img.expreview.com/review/2020/09/Samsung_980pro/HDTune_60.jpg',
+'https://img.expreview.com/review/2020/09/Samsung_980pro/HDTune_trim.jpg',
+];
+LBInit(iwd, pts, psc, pimgs, iht);</script></div><p>空盘平均写入速度1943.4MB/s，写入2小时后平均写入速度降到只有247.3MB/s，放置一小时后基本没变化，只是少量的SLC Cache恢复了，也就是说这盘基本不会主动GC，全盘TRIM后
+马上测试就是上面最后那张图那样，性能基本大部分恢复了，但如果想要恢复到出厂状态估计需要放一段时间。</p><h2><strong>温度表现</strong></h2><p>其实很多大厂的SSD都是没有配备原装散热器的，毕竟他们还要考虑OEM的问题，三星980
+PRO的OEM版本就是PM9A1，笔记本电脑上许多是没有空间装散热器的，所以必须从过热保护这里下手。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Samsung_980pro/Idle.jpg" width="100%"/><br/>三星980 PRO 1TB待机时的温度状况</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Samsung_980pro/Load.jpg" width="100%"/><br/>这是三星980 PRO 1TB在经历半小时不间断写入后的温度状况，主控与闪存温度都很高</p><p style="text-align:left;">可能有人会被上面的温度吓怕了，不过这是三星M.2 SSD的常规操作，根据我自己的使用经验，三星M.2
+SSD如果不加散热片的话温度确实会很高，但不会出现任何掉盘或者其他不稳定情况，而且现在支持PCI-E
+4.0的其实只有X570和B550主板，他们其实都是带M.2 SSD散热片的，加装散热片后温度表现会好很多。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "三星980 PRO 1TB温度测试";
+var subtitle_text = "www.expreview.com | 温度越低越好";
+var xname = "时间s"; //X轴单位
+var yname = ["温度℃", "电压V"]; //Y轴1单位，Y轴2单位(如果有的话)
+var leftside = "8%"; //左边空白
+var yax = 0; //是否双Y轴
+var fill = 0; //0-1表示填充透明度
+var sn = 3; //坐标轴分割为多少段
+var mp = 1; //是否显示最大最小值 0为不显示
+var txtcolor = "#222"; //文字颜色，视频则设为白色
+var colors = ['#00a8ff', '#e84118', '#675bba', '#675bba'];
+var data_arr = [
+["0","主控温度(没散热片)","闪存温度(没散热片)","主控温度(有散热片)","闪存温度(有散热片)"],
+["1","79","99","59","67"],
+["2","79","98","59","66"],
+["3","79","98","59","66"],
+["4","79","98","59","66"],
+["5","79","98","59","66"],
+["6","79","98","59","66"],
+["7","79","98","59","67"],
+["8","79","98","59","66"],
+["9","79","98","59","67"],
+["10","79","98","59","67"],
+["11","79","98","59","66"],
+["12","79","98","59","66"],
+["13","79","98","59","66"],
+["14","79","98","59","66"],
+["15","79","98","59","66"],
+["16","79","98","59","66"],
+["17","79","98","59","67"],
+["18","79","98","59","66"],
+["19","79","98","59","66"],
+["20","80","99","59","66"],
+["21","80","98","59","66"],
+["22","80","99","59","67"],
+["23","80","98","59","67"],
+["24","80","98","59","67"],
+["25","80","99","59","66"],
+["26","80","99","59","67"],
+["27","80","99","59","66"],
+["28","80","99","59","67"],
+["29","80","98","59","67"],
+["30","80","99","59","66"],
+["31","80","99","59","67"],
+["32","80","99","59","66"],
+["33","80","99","59","67"],
+["34","80","99","59","66"],
+["35","80","99","59","66"],
+["36","80","99","59","66"],
+["37","81","99","59","66"],
+["38","81","99","59","66"],
+["39","81","100","59","67"],
+["40","81","100","59","67"],
+["41","81","100","60","67"],
+["42","82","100","60","67"],
+["43","82","100","60","67"],
+["44","82","99","60","67"],
+["45","82","99","60","67"],
+["46","82","99","60","67"],
+["47","82","99","61","68"],
+["48","82","99","61","67"],
+["49","82","99","61","67"],
+["50","82","99","61","67"],
+["51","82","99","61","67"],
+["52","82","99","61","68"],
+["53","82","99","61","68"],
+["54","82","99","61","68"],
+["55","82","99","61","68"],
+["56","82","98","61","68"],
+["57","81","98","61","68"],
+["58","81","98","61","68"],
+["59","81","97","61","67"],
+["60","81","97","61","68"]
+];
+TempInit(title_text, subtitle_text, xname, yname, leftside, yax, fill, sn, colors, data_arr, mp, txtcolor);</script></div><p>用了主板的散热片之后三星980 PRO
+1TB主控的最高温度从100℃降到68℃，而闪存温度从最高82℃降至61℃，散热片的作用还是非常大的，不过说真的，X570与B550主板直连CPU的M.2接口基本都配散热器的，不会有人真不用这散热器吧？</p><h1><strong>虽然换了TLC，但依然最强</strong></h1><p>记得当年给三星970 PRO的评价是除了Intel傲腾系列之外最强的性能SSD，现在我给980
+PRO的评价也是一样的，它是目前消费级市场最强的SSD，由于升级到了PCI-E 4.0接口，980 PRO有着7000/5000
+MB/s的连续读写速度，随机性能也非常强劲，比同是PCI-E
+4.0的群联E16方案强多了，而且Intel的傲腾SSD虽然有着犯规一样的随机性能，但连续性能太拖后腿了，不知道什么时候才会更新。</p><p>但这个最强不知道能维持多久，目前宣布使用群联的E18主控产品有很多，他们很快也会上市了，慧荣的新一代主控也会支持PCI-E 4.0，三星980
+PRO能在性能王座上坐多久现在每人知道答案。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/09/Samsung_980pro/CDM_Gen3.jpg"/></p><p style="text-align:left;">肯定有人想问：我的电脑没PCI-E 4.0能不能用980
+PRO？用当然是能用的，但连续性能会收很大影响，读写上限都会被PCI-E 3.0 x4限制只剩3500MB/s，不过即使这样速度也非常的快了。</p><p style="text-align:left;">当然了三星980 PRO换了TLC闪存这点确实是让人很不爽，不过说真的，TLC闪存的耐久度现在根本不是问题，而且980
+PRO出色的性能表现也充分体现了它的价值，250GB 599元、500GB 999元、1TB
+1899元的售价如果放在同容量SSD中肯定是贵的，但和其他PCI-E 4.0 SSD比起来就没什么了。三星980
+PRO的闪存变成了TLC也留下了两点疑问，980 EVO会变成怎么样？三星是否会弄个比980 PRO更高端，用MLC闪存的SSD出来？答案只有三星自己知道。</p><p style="text-align: left;">踏入2020年后半，PCI-E 4.0在加速普及，桌面平台AMD的TRX 40、X570、B550主板都支持PCI-E
+4.0，Intel的Z490主板其实也支持，但得等待明年Rocket Lake处理器发布才能解除封印，NVIDIA与AMD的新显卡也都支持PCI-E
+4.0。而笔记本市场方面就更快了，Intel最新发布的第11代Tiger Lake处理器也支持PCI-E 4.0，很快就会与大家见面，三星980
+PRO的OEM版本PM9A1应该会被不少Tiger Lake笔记本采用，PCI-E 3.0即将成为过去，步入PCI-E 4.0时代。</p>
