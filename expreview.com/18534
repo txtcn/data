@@ -1,9 +1,9 @@
 ➜NVIDIA推出GeForce 456.55驱动，改善RTX 3080/3090的稳定性
-http://www.expreview.com/76228.html	6783
+http://www.expreview.com/76228.html	6780
 <p>NVIDIA的新卡RTX
 3090/3080都出现了一定程度的闪退与崩溃问题，此前的分析是把这些问题的原因归咎于GPU背面的POSCAP和MLCC电容的组合搭配有关，不少AIC的言论也让人感觉是电容的问题，但昨天NVIDIA站出来说并不是电容的问题，而是软件层的问题，并且在昨天晚上推出了GeForce
 Game Ready 456.55驱动改善显卡的稳定性。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/09/29/NVIDIA_GeForce_game_ready_45655.jpg" width="100%" border="0"/></p><p>其实官方给出的更新日志并没有提及是如何修复这个问题的，但从reddit上的一些反馈可以确定新的驱动确实改善了RTX
-3080/3090的稳定性问题，显卡的峰值频率是否有被限制这还得进一步验证。</p><p>下载：<a target="_blank" href="https://www.nvidia.com/en-us/drivers/results/164741/">NVIDIA
+3080/3090的稳定性问题，显卡的峰值频率是否有被限制这还得进一步验证。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/09/29/NVIDIA.jpg" width="100%" border="0"/></p><p>下载：<a target="_blank" href="https://www.nvidia.com/en-us/drivers/results/164741/">NVIDIA
 GeForce 456.55 WHQL Game Ready驱动程序</a></p><p>更新日志：</p><p>Game Ready驱动程序修复：</p><p>Omniverse 2020.2.4496：从RTX Real-Time切换到RTX PathTraced渲染器后发生崩溃。<br/>在Vulkan游戏中，GeForce体验&gt;性能&gt;渲染延迟设置有时会保持为0。<br/>从驱动程序的“G-SYNC兼容”列表中删除了多个“G-SYNC兼容”显示器。<br/>Windows事件日志CPU利用率略有增加。<br/>从系统睡眠/休眠模式恢复后，NVIDIA Container服务可能会崩溃。<br/>笔记本：不能从NVIDIA控制面板设置Performance Power Mode。</p>
 ➜数毛社发布Xbox Series X实机演示视频：大多数游戏帧数相比天蝎座翻倍
 http://www.expreview.com/76229.html	7080
