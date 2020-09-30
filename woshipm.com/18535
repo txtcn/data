@@ -1434,7 +1434,7 @@ http://www.woshipm.com/user-research/4204794.html	21624
 <p>原文作者：Tom Paton</p>
 <p>原文地址：https://www.contactspace.com/blog/customer-experience-strategy</p>
 <p>译者：鹈小鹕，公众号：鹈鹕全面客户体验管理</p>
-<p>本文由 @Z Yuhan 翻译发布于人人都是产品经理，未经作者许可，禁止转载。</p>
+<p>本文由 @鹈小鹕 翻译发布于人人都是产品经理，未经作者许可，禁止转载。</p>
 <p>题图来自Unsplash，基于CC0协议。</p>
 ➜SaaS产品运营三步走——从做功能到理念输出
 http://www.woshipm.com/operate/4203749.html	22328
@@ -2354,3 +2354,130 @@ http://www.woshipm.com/marketing/4202250.html	28409
 <p>&nbsp;</p>
 <p>本文由 @松果财经 原创发布于人人都是产品经理，未经作者许可，禁止转载</p>
 <p>题图来自Unsplash，基于CC0协议。</p>
+➜从0-1搭建用户画像系统的设计思路
+http://www.woshipm.com/pd/4205239.html	28876
+<blockquote><p>编辑导语：如今在这个大数据时代，我们经常会被“标签化”，最常见的就是你逛淘宝时，会根据你的兴趣爱好等等特征进行推荐；本文是作者分享的关于从0到1搭建用户画像系统的设计思路，我们一起来学习一下。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4205292" src="http://image.woshipm.com/wp-files/2020/09/wedufJMFNEpEHFEbJSTK.jpg" alt="" width="900" height="420" /></p>
+<h2>一、需求目的</h2>
+<p>1）商城已上线2周年，已有10万+在售物品；数据仓库中积累着大量的业务数据、日志数据及埋点数据；如何充分挖掘沉淀在数据仓库中的数据的价值，有效的支持用户画像的建设，成为当前的重要工作。</p>
+<p>2）在保证用户规模不断增长的目标下，运营方考虑建立用户流失预警机制，及时识别将要流失的用户群体，及时采取运营策略换回用户。</p>
+<h2>二、产品结构</h2>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/1aIj5yP2ZVWkMrulemCP.png" alt="" width="1131" height="610" /></p>
+<h2>三、用户画像系统搭建流程</h2>
+<p>目前团队已经搭建了比较成熟的数据仓库。也就是说已经有结构化的、清晰的用户属性、用户行为相关数据。</p>
+<p>在此基础上，搭建用户画像系统，需要：</p>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4205280" src="http://image.woshipm.com/wp-files/2020/09/JQcuPJuwx7kw5n2G07UK.png" alt="" width="865" height="115" /></p>
+<h2>四、数据建模</h2>
+<p>对人、货、场进行分析，对用户个体的性质和特征做出概括，形成相应的用户属性标签、用户行为标签后。才可以开始建模。</p>
+<p>建模需要分别从定性、定量，两个方面入手：</p>
+<ul>
+<li>定性：在从已有数据中心，选择特征；假设这些特征与你要预测的值有一个关系，这个关系就是一个原始的模型。</li>
+<li>定量：确定模型中涉及到的所有未知系数。</li>
+</ul>
+<p>模型计算完成后，需要计算模型的置信度；此时根据测试数据（可以是团队内部测试、灰度测试等方式），来判断模型计算的结果，与预期是否相符。</p>
+<p>如果相符，就可以用这个模型来预测用户喜欢什么；如果与预期不相符，那么久需要重复上述过程。</p>
+<p>比如商城系统中，有以下数据项：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/ZnR7Y8D76ZqKgfI59ev3.png" alt="" width="675" height="351" /></p>
+<p>用户忠诚度指标（L），与用户活跃度、购物车商品数、收藏数、下单数、在线时长的用户行为指标有一定的关系；将这5项数据指标的熵权值，定义为用户忠诚度指标，可以用以下公式表示：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/q0CtIifnhya4sZzvBNhj.png" alt="" width="356" height="123" /></p>
+<p>其中a表示上表中A2-A6的归一化值，归一化计算公式如下：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/jqmUlQYyAXZg4BuLUNGy.png" alt="" width="322" height="154" /></p>
+<p>w表示权重。权重系数计算公式如下：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/qptgvNf2y1FiErk5uS6A.png" alt="" width="365" height="121" /></p>
+<p>其中，e为行为数据信息熵，计算公式如下：</p>
+<p><img data-action="zoom" class="aligncenter" style="color: #666666;" src="http://image.woshipm.com/wp-files/2020/09/HLJFkvuULfwCJrwk21ex.png" alt="" width="653" height="137" /></p>
+<p>最终计算所有的用户的指标L后，例如可以取前25%为高忠诚用户，25-50%为普通忠诚用户，剩余为低忠诚用户，取值范围可以根据业务实际情况调整。</p>
+<p>另外，由于权重系数，有可能随时间的增加而衰减；所以如果需要，还需要定义衰减因子r；加入衰减因子后，标签权重=衰减因子*行为权重。</p>
+<h2>五、梳理用户画像维度</h2>
+<p>设计用户画像维度时，建议使用MECE（Mutually Exclusive Collectively Exhaustive）准则；也就是对于一个重大的议题，能够做到不重叠、不遗漏的分类，而且能够借此有效把握问题的核心，并成为有效解决问题的方法。</p>
+<p>比如初步搭建用户画像维度，可以参考下图：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/EJ4a2mPaIvOBirra6AEm.png" alt="" width="889" height="498" /></p>
+<p>上图为商城系统，初步的用户画像维度。图中的数据，按照获取的方式，可以分为：统计类标签、规则类标签、挖掘类标签。</p>
+<p>统计类标签：这类标签是最为基础也最为常见的标签类型，例如对于某个用户来说，他的性别、年龄、城市、星座、近7日活跃时长、近7日活跃天数、近7日活跃次数等字段可以从用户注册数据、用户访问、消费类数据中统计得出；该类标签构成了用户画像的基础。</p>
+<p>规则类标签：该类标签基于用户行为及确定的规则产生；例如对平台上“消费活跃”用户这一口径的定义为近30天交易次数&gt;=2，在实际开发画像的过程中，由于运营人员对业务更为熟悉、而数据人员对数据的结构、分布、特征更为熟悉；因此规则类标签的规则确定由运营人员和数据人员共同协商确定。</p>
+<p>挖掘类标签：该类标签通过数据挖掘产生，应用在对用户的某些属性或某些行为进行预测判断；例如根据一个用户的行为习惯判断该用户是男性还是女性，根据一个用户的消费习惯判断其对某商品的偏好程度；该类标签需要通过算法挖掘产生。</p>
+<h2>六、形成初步用户画像</h2>
+<p>基于用户画像数据，可以使运营人员、营销人员，有更好的用户认识，带来更佳的用户服务质量，实现精准运营、精准营销。</p>
+<p>设计用户画像的可视化展现时，可以使用以下工具：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/9KXrn05elKL7BxxvjKDO.png" alt="" width="351" height="303" /></p>
+<p>其中tableau、powerbi等自助式数据分析工具，可以让没有编程经验的业务人员、运营人员等进行自我数据分析，不需要依赖IT人员。</p>
+<h2>七、评估用户画像效果</h2>
+<p>在初步形成了用户画像后，并不能直接交给运营、业务人员实际使用，还需要评估用户画像的准确性。</p>
+<p>评估方式主要分为3种：逻辑验证、A/B test、用户回访。</p>
+<p>逻辑验证：也叫做交叉验证；在完整的用户画像标签体系中，一些标签往往会存在一些相关性；比如用户的累计在线时长越长，订单量通常会越高；比如购买3C产品的用户群中，男性用户数通常大于女性用户数；另外，如果公司购买了第三方机构的数据，也可用于交叉验证。</p>
+<p>A/B test：也叫做灰度测试；以上述的忠诚度为例，保证对照组、实验组的流量相同；对实验组的用户，进行提升忠诚度的运营策略（促销活动、积分奖励等）；如果实验组的用户，忠诚度相比对照组用户，有一定提升，则可以认为用户画像比较精确。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/rkFLg557RdHgw44b6VIy.png" alt="" width="308" height="283" /></p>
+<p>用户回访：最朴实的评估方法，比如用户画像系统，定义了10万用户为低忠诚度用户；此时从中随机抽取1000人，交给客服，进行回访。根据回访结果，判断用户画像结果是否准确；甚至可以对回访结果进行文本挖掘，形成词云，查看消极词的占比。</p>
+<h2>八、总结</h2>
+<p>当公司业务规模，用户体量上升到一定量级；业务、运营团队，往往会提出对用户精准运营的想法；此时就需要用户画像系统，在支持业务运营的同时，也可以帮助产品经理更好的了解用户。</p>
+<p>0-1搭建用户画像系统，需要在已有比较成熟的数据仓库的前提下进行：</p>
+<ul>
+<li>数据建模：根据业务模式，设计相应的数据模型</li>
+<li>梳理用户画像维度：不重叠、不遗漏的梳理用户标签体系</li>
+<li>形成初步用户画像：可以使用tableau、powerBI、echarts等多种工具，生成可视化的用户画像</li>
+<li>评估用户画像效果；通过逻辑验证、A/B测试、用户回访等方式，验证用户画像系统中的标签是否准确</li>
+<li>根据评估效果，持续优化用户标签系统</li>
+</ul>
+<p>&nbsp;</p>
+<p>本文由 @16哥 原创发布于人人都是产品经理，未经许可，禁止转载。</p>
+<p>题图来自 unsplash，基于 CC0 协议</p>
+➜一套设计理论为你解决90%的困惑（中）
+http://www.woshipm.com/pd/4203599.html	28970
+<blockquote><p>编辑导读：线条拥有自由延伸的特性，因此具有高效的引导性、分割性和造型性，是产品设计中的基本表现形式。本文作者基于自身工作经验，对线条在产品设计中的应用提出了自己的观点和看法，与你分享。</p></blockquote>
+<p><img data-action="zoom" class="size-full wp-image-4203636 aligncenter" src="http://image.woshipm.com/wp-files/2020/09/q300j90qDYzmNkpyOLnP.jpg" alt="" width="900" height="420" /></p>
+<p>上篇文章我们简单讲述了点线面的重要性，以及点的特性和其于界面设计中的应用，这次来讲讲线。</p>
+<p>线条是一种简单、轻盈的存在，可以看作是点受外驱力作用下的运动轨迹。它从维度上来说属于一维，不同的外驱力结合使得线可以沿着任意方向自由得延伸，从而让它拥有了高效的引导性、分割性和造型性。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/HUDIoMzdWHbRk6YZpPAq.png" width="501" height="146" /></p>
+<p>康定斯基在书中以温度去定义线的情感，他将水平线定义为无限冷能的表现形式，将垂直线定义为无限暖能的表现形式。看似晦涩难懂，但联系到现实生活就相对容易理解一点。</p>
+<p>现实生活中的水平线通常存在于地平线中，因此给人的感觉是稳定、平和，类似非启动时的“冷”态；而垂直线常见于那些从基线建造、生长的事物，比如高楼大厦、参天巨木，它们都通过能量来实现垂直方向的高低变化，因此给人的感觉是上升、下落、变化等感觉，类似启动后的“暖”态，而线具备的冷暖态决定了水平和垂直线发挥各自作用时所传达的感受。</p>
+<h2>一、引导性</h2>
+<p>线可沿任意方向延伸的特点让它具备了很强的引导性。界面中最常见的就是跑步、地图类APP中的路线显示，就是通过线的引导性来显示起点到终点所行进的轨迹。</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/09/t2UY6tdod2xbzfelTMKL.png" width="505" height="415" /></p>
+<p>如果我们将起点和终点对齐归于一条线上时，便可以通过降维的方式将其缩减至单个维度。时间维度可以引申到界面中的时间轴、步骤条、加载条和音视频中的进度条等，这类维度通常需要加入点元素，通过点的向心性辅助定位。空间维度则引申到滑动页面时出现的滚动条等。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/7YI8tp0Opvq31BBVLGa1.png" width="496" height="269" /></p>
+<p>如上文对温度的解释，“暖”态的垂直线象征变化。当我们希望用户能够感知到时间的变化，或者流程需要花费较长时间时，垂直线相对来说是个更好的选择。比如外卖、快递的订单进度，火车的停靠站点时间，timeline，到账时间等信息，要么需要传达变化感，要么费时较长，因此适合以象征变化的垂直线来进行引导，给予用户变化感、产生需要等待的心理预期。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/bxqRfY69m1kT9HxwoPXA.png" width="505" height="386" /></p>
+<p>“冷”态的水平线象征静止。当我们希望用户能够沉浸在这个流程中，感知不到时间的变化，或者流程时间极短时，那就更适合用水平线。</p>
+<p>比如airbnb申请成为房东时，会有个需要用户即时填写的分页表单，为了让用户沉浸在填写中，同样以水平线作为它的进度反馈，降低时间变化感。美团药师的审方进度是即时性的，通常只需等待十几秒即可水平的静止感能够让用户产生”当前正在发生“的感觉，避免让用户产生需要等待较长时间的心理预期而离开当前页面。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/0UcDZdrPZYJeJec0HFJo.png" width="501" height="384" /></p>
+<p>但是，如果我们将美团审方的进度条改为纵向（去除文案提示），给用户带来的感觉也就大不相同。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/GUaIPzfFIN6C4WDNwvUl.png" width="502" height="415" /></p>
+<p>下文讲到的分割性也可以以冷暖态来解释。我们希望用户能够专心阅读信息，因此会尽量避免容易带来变化感的垂直分割线。即便迫于信息的划分需要不得不用到，也会尽量降低它的明度和长度。</p>
+<p>另外，界面中往往也存在着一条无形的线，它同样也是起着重要的引导作用，只是这类线不仅仅作用于某个特定模块，它通常作用于整个界面。没错，这条线通常被称作视觉动线。视觉动线在网格与列表那一节中简单说了下，只是这部分体系太过庞大，后面有时间单独写一篇分享。</p>
+<h2>二、分割性</h2>
+<p>很多时候，界面中仅仅以留白进行分隔时，很容易造成信息无法被明确得划分。这时我们往往需要引入额外的形式进行辅助。比如分割线。</p>
+<p>分割线通常运用在模块内部信息的分割，虽简单粗暴，但并不能应付更高层级的模块分割。而模块之间的分割通常以面性（分割条）来进行。留白、分割线和分割条三者的分割层级由低到高，通常需要在页面中结合使用。</p>
+<p>需要注意的是，线面的分割形式需要尽可能得轻量化，一旦拥有了视觉重量很容易成为噪音，我们需要尽量避免信噪比过低对用户阅读体验的破坏。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/ZnsrZ9umHSTj5GsWWeCw.png" width="502" height="310" /></p>
+<p>为了增加页面的呼吸感，我们很多时候会用留白这种最为轻量的分割方式代替所有的线、面。这类大留白的特点往往与Complexion Reduction风格相结合，视觉上不仅制造一种舒适的简约感和呼吸感，也减少了页面中线面分割形成的视觉噪音。</p>
+<p>Complexion Reduction最早源自Airbnb、Instagram、Medium等产品的页面改版，而后被UX设计师Michael Horton所总结出的设计趋势。苹果在17年所发布的ios11同属于这个风格，这类风格最突出的三个特征就是大标题、面性图标和克制用色。</p>
+<p>但是，这种去形式化的分割方法并非适用于全部页面，一般只有在页面模块单一、信息单元字段较少、或者以图片本身作为分割方式的页面才适合使用。比如ikea和airbnb的首页，它们并不像京东、支付宝有庞大的体量和业务需求，所以很适合全留白的方式。这让它们的首页看上去非常干净清爽，富有呼吸感。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/a8ffKOep3dl6TUi2EKor.png" width="509" height="389" /></p>
+<p>不过，在其他字段信息繁多的界面中，分割线依然是一种高效的分割方式。我们可以看到，IKEA和airbnb的详情页依旧选择了分割线的分割方式以应对繁多的字段信息，避免全留白带来的层级混乱。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/7Z7HeFxx4HHk6HW8RtDE.png" width="502" height="385" /></p>
+<h2>三、造型性</h2>
+<p>线本身可以沿任意方向自由延伸，形成一条曲线、折线、螺旋线等等。而当线的首尾相连时，便可以勾画出面。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/24zafX0svH9NAFm2Xsut.png" width="502" height="171" /></p>
+<p>但是，线的闭合性所形成的面仅仅是一具没有量感的空壳。但同时线条本身轻盈的特性让其更加轻量、通透，因此对于一些辨识要求较低、或者需要被弱化的元素来说往往是个不错的选择。</p>
+<p>界面中最常见的运用就是幽灵按钮和线性图标。</p>
+<p>相比于面性按钮和图标，量感的缺失让其无法在辨识性上胜出，但是在其它地方也各有所长。幽灵按钮常用于一些次按钮、未选中态以及tag，线性图标常被用于一些次要功能、未选中态以及装饰。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/0v6Kr9LPQ6lPCRLxMmyS.png" width="505" height="174" /></p>
+<p>当然，线面也可以根据产品自身需求作类别区分。比如支付宝和美团这些产品，工具型图标全部线性，而业务型图标全部面性。并且线性图标得益于背景主色色块的反白加成让它们并不会被过度弱化。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/IxeDiApC39419UpXaJJ0.png" width="497" height="212" /></p>
+<h2>四、虚线</h2>
+<p>虚线是点化线的最简易的表现。但是因为虚线本身断开的地方太多了，并不适合用于常规信息的分割，它通常适用于一些特定的场景。</p>
+<p>比如一些产品中的票券、账单这类特殊场景中，通常会加入虚线进行信息的分割，就是为了映射模拟现实世界中便于撕开的撕票线来增加代入感，减少认知负荷。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/gvLnU0nnBAyw6vP2Khyr.png" width="504" height="216" /></p>
+<p>虚线另一个特性是不可见性。这个特性最早可追溯至建筑、机械等行业的制图规范中——以同等点元素所构成的虚线代表对象视觉盲区中的棱边线及轮廓线。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/WX98srgjx849CQJeeMbP.png" width="502" height="206" /></p>
+<p>一些漫画或动画作品中当一个东西突然不翼而飞时，往往会留下一个虚线的轮廓。</p>
+<p>这种有意思的设定也被设计师引用到了用户界面中。比如当我们想让用户去上传一个图片时，往往会采取一个虚线的矩形结合按钮进行引导，便是为了告诉用户：嗨这块地还是空的，快来加点料！比如Pinterest、dribbble以及AntD的图片类upload组件，都采用了这种设定。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/fMrkA1O2yBz1YU2qg9HN.png" width="506" height="201" /></p>
+<p>另外，这种形式适用于表示空状态，比如dropbox。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/SNlz6ik1Zz6MDTUbiExd.png" width="504" height="204" /></p>
+<p>线的部分就讲到这里，但愿这些特性的讲解对你带来帮助。下周我们继续对面进行讲解，不见不散。</p>
+<p>&nbsp;</p>
+<p>作者：Andrew臣；微信公众号：转行人的设计笔记</p>
+<p>来源：https://mp.weixin.qq.com/s/sXbtJmgDMNXNRNOzRkh_Eg</p>
+<p>本文由 @转行人的设计笔记 授权发布于人人都是产品经理，未经许可，禁止转载。</p>
+<p>题图来自 Pexles，基于CC0协议。</p>
