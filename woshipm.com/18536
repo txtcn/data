@@ -263,3 +263,115 @@ http://www.woshipm.com/operate/4198038.html	12635
 <p>&nbsp;</p>
 <p>本文由 @林纾雨 原创发布于人人都是产品经理，未经作者许可，禁止转载。</p>
 <p>题图来自Unsplash，基于CC0协议。</p>
+➜一套设计理论为你解决90%的困惑（下）
+http://www.woshipm.com/pd/4203696.html	20146
+<blockquote><p>编辑导读：点线面是产品设计的基础，面是线的运动轨迹，由点、线强化自身而来。设计的创意层出不穷，但都需要建立在此基础上。本文作者基于自身工作经验，讲述面是如何在产品界面进行运用的，希望对你有帮助。</p></blockquote>
+<p><img data-action="zoom" class="size-full wp-image-4203751 aligncenter" src="http://image.woshipm.com/wp-files/2020/09/abr9t7L0vnTakUo1ohV4.jpg" alt="" width="900" height="420" /></p>
+<p>上篇文章我们简单讲述了线在界面中的表现及运用，这次来讲讲重头戏——面。</p>
+<p>面可以看作是线的运动轨迹，可以由一个闭合的线生成，也可以由点、线强化自身而来。</p>
+<h2>一、关于面</h2>
+<h3>1. 点线面的临界问题</h3>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/67MJLcx02Vxkjq2103Pg.png" width="499" height="145" /></p>
+<p>康定斯基在书中曾讲到，线的强化加粗，与点不断增大面临同样的问题，即与面之间的临界。</p>
+<p>这句话的意思就是，当点、线通过强化自身的面积、宽度后，和面的界限开始模煳，从而具备了面本身的性质。</p>
+<p>比如ios11中让人印象深刻的大标题，便是由通过增加每个点的面积（增加每个字的字号），以及笔画的线宽（增加每个字的字重）来趋向于面，以来营造出饱满、冲击的视觉张力。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/jFRpw7axrP3dT69YO4jQ.png" width="500" height="133" /></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/yP8Cd7zizazBPj8Nleqd.png" width="496" height="114" /></p>
+<h3>2. 辨识性</h3>
+<p>面二维的属性让它可以向四周无限得扩张自己的领土，这个优势让面可以轻松承载各类信息，并且也让它具备了绝佳的视觉张力。</p>
+<p>在一个点线面同时存在的画面中，人眼优先注意到的必定是拥有绝对视觉张力的面元素。这意味着面拥有着远胜于前两者的辨识性，或者说，在一部各类元素参演的戏剧里，面更擅长主角。</p>
+<p>比如在一个放置了文字的界面中，我们希望其中一段比较重要的文字完全和其他文字区分开，也就意味着这段文字需要进行对比。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/daNvnI5n2oBz0ZT14Gb0.png" width="501" height="213" /></p>
+<p>我们可以对这段文字加粗、加入颜色等等，这的确能做出一些明显的变化。但是仅仅是对字体本身的强化，一旦界面需要划分层级，就会显得很“平”，造成信息关系的暧昧。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/OSjQck2biO1WXv0A3w0t.png" width="509" height="216" /></p>
+<p>不过，当加入一层淡淡的色块充当文字背景后，便可以制造出极为明朗的层次关系。一方面，这段文字神奇得与其他信息迅速孤立开来，另外，有面作为“靠山”让它变得稍微与众不同，并且相比其他文字能被更快得注意到。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/kYX0mGoFD7Feh2rRMLtG.png" width="506" height="215" /></p>
+<p>当然，如果你觉得它很重要，那你可以增强文字与背景的颜色对比，给面加入各种各样的颜色。而当颜色对信息可读性造成影响时，为保证信息的顺利辨识，我们不得不对文字进行反色处理，以此作为视觉落点来强制用户迅速注意到它。这就是我们熟知的反白视觉手段。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/2XLGPCBp4Ht6rlT59Ucz.png" width="499" height="211" /></p>
+<p>面的这种强力属性被用到了界面的方方面面，比如按钮和图标。</p>
+<h4>3. 图标</h4>
+<p>相比前面所讲的线性图标，面的辨识性让面性图标可以更快得被识别。因此，界面中一些重要的业务入口通常都以醒目的面性图标存在，并且常以面性图标代表激活、选中时的状态，线性图标代表未激活、未选中时的状态。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/yT98EzUGy31yJ515P9JQ.png" width="503" height="172" /></p>
+<p>不过线性图标薄弱的辨识性并非完全适合标签栏状态的切换。用户在选中到当前页时，并不代表其他页面彻底弱化了，用户同样需要关注其他未选中的页面。正因如此，ios11中所有未选中的icon全部由线性更改为了面性。同样的，国内的简书、天猫等产品也进行了图标的改版以提升其他页面的点击率。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/JkhyLpxJVhPmeAykFogm.png" width="502" height="174" /></p>
+<h4>4. 按钮</h4>
+<p>对于按钮，面的辨识性为它的层级使用提供了更多可能。</p>
+<p>如下图，按钮从样式上来看大致有六种样式，反白、同色、灰色、幽灵、文字和图标按钮，其中面性按钮就占了一半。相比幽灵、文字和图标按钮，三种面性按钮都以面的强辨识性引导用户迅速注意到它。因此面性按钮相对对应更高的层级。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/tZ8PRR0iGzbtELe6tYc2.png" width="501" height="174" /></p>
+<p>当页面中存在多个功能按钮时，就需要以样式进行主次之分。深色按钮以强烈的颜色对比制造吸引力，因此常以深色表达层级最高的主按钮，而次按钮通常对应层级较低的浅色、灰色等样式。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/vH6WObQeJpCwzMBUNDIV.png" width="505" height="173" /></p>
+<p>当页面中没有主次功能之分时，按钮的样式通常取决于当前的用户场景及业务需求。</p>
+<p>比如知乎的答案详情页面，答主关注按钮是浅灰色样式，就是为了引导用户沉浸在内容中，避免深色样式对阅读造成干扰。而答主个人页的关注变为深色，则是由于用户点击答主头像的行为来自了解更多的动机，即用户对其产生了特定兴趣，在此场景下使用深色样式便是为了引导用户采取社交行为。另外按钮圆角的转化也是为了强化信息的聚焦。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/JNkMEFgTQOLv2ubuu8wX.png" width="505" height="328" /></p>
+<p>app store同理。商品列表页的按钮一致以浅灰色样式表达，而详情页使用了深色。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/jjHvjqcFjxGX3wO5dQlu.png" width="502" height="246" /></p>
+<p>我们在按钮样式的选择上，务必需要考虑到当前的用户场景，避免过低的信噪比而影响信息的传达效率。比如App store列表页中，用户的场景是非特定的浏览行为，如果使用深色按钮将会让其成为视觉焦点，强制用户不断注意到它，致使其成为“噪音”，影响用户对有效信息的获取。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/4SST0nWJMaZCHPqMd2af.png" width="506" height="408" /></p>
+<h3>5. 承载性与分割性</h3>
+<p>面无限延展的属性让它可以承载各类信息。包括文字、图片或视频元素，异或是元素自由组合所形成的信息单元。并且我们仅加深界面的背景色，就可以基于面的分割性，通过控制模块间距实现区域的划分。（这里的间距即我们熟知的分割条）</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/VDtsyYkUHBgpcWZ8Tl4S.png" width="494" height="252" /></p>
+<p>但这种文字墙一般平铺式的布局并不能更好得反映当前模块所在的层次，或者从用户认知上说它们倾向于一个层面上。而且直角矩形的四个顶角所形成的四个焦点，也让用户的视线倾向于发散而非聚焦。直到卡片的出现，问题得以顺利解决。</p>
+<h3>6. 卡片式设计</h3>
+<p>卡片在我们生活中随处可见，信件、名片、便利贴、甚至是我们的手机屏幕，它们从形态来说都属于面，并且都充分利用了面的承载性来充当一个收纳信息的容器或载体。信件收纳来信人的寄语，名片收纳对方的个人信息、便利贴收纳事项清单、屏幕收纳用户界面。而且它们方便携带，我们想要知道更多，打开它即可。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/Va3xCjBy5ohLVwuPaop8.png" width="508" height="297" /></p>
+<p>2012年I/O开发者大会中，随安卓4.1系统一同惊艳亮相的Google Now首次将卡片展示在了用户界面中。这种后拟物时代的设计不仅一改google以往混乱的信息展示问题，而且熟悉的拟物感收获了足量用户的喜爱。初尝甜头之后，Google将卡片应用到了所有的产品，并且将其作为基础元素列入了一门伟大的设计语言中——material design。</p>
+<p>你可以在material design中更系统得看到，google通过为界面添加了z轴（海报高度），来拟物映射生活中的一张张卡片。并且通过阴影的浓淡反应卡片所在的高度，通过不同的高度实时反映当前元素的层级关系。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/QCmdn7KnkHozptq3Tpqw.png" width="504" height="507" /></p>
+<p>而在ios11中，改版后的app store也使用了大量的卡片进行排列组合，形成格外的清晰的页面层次引导用户的视觉动线。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/6bKX45WA0nbbhYzN7qox.png" width="495" height="383" /></p>
+<p>相比原本平铺直叙的信息，卡片式设计通过以下优点让其风靡设计界。</p>
+<p><strong>1）更高效得获取信息</strong></p>
+<p>每张卡片都是一个独立的面。从面的辨识性上说，独立和聚焦的特点让卡片与其他内容形成天然的断层，更易形成视觉焦点。从面的分割性上说，卡片通过牺牲屏幕空间（四周的块外距）的方式让区域的分割相较分割条更为明确，清晰的层次关系便于用户迅速辨识和获取信息。</p>
+<p>比如改版后的支付宝，通过引入圆角卡片来引导用户更好得留意到下方的各类生活服务，以实现向生活服务数字平台的转型。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/MQYNwWHvULLopX2N8zL9.png" width="508" height="392" /></p>
+<p><strong>2）更轻量的入口跳转</strong></p>
+<p>每个卡片除了承载信息外，都可以作为单独的入口承载内页的所有信息，并且卡片的属性让内页的展示变为了展开而非跳转。</p>
+<p>比如app store点击卡片后，便以非线性的展开动画呈现所有内页信息，返回则只需下滑手势即可，轻量而有趣。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/esitCNEGHLTKQlPg3MMh.png" width="503" height="389" /></p>
+<p><strong>3）更多的交互手势</strong></p>
+<p>卡片独立的特点让它可排列也可堆叠，这为页面带来了更多的交互方式。我们可以通过左右滑动（scroll）解锁横向更多的空间，也可以左右轻划（flick）形成类似tinder那样新的产品机制。</p>
+<p>比如知乎的书架引入滑动手势展示更多内容，轻划手势切换问题卡片。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/HrpiL5sQlIHkFXCzPl09.png" width="504" height="389" /></p>
+<p><strong>4）更舒适的视觉观感</strong></p>
+<p>卡片基于自身独立的特征让它成为网格布局的常用载体，富有观赏性的视觉张力让页面更加吸引眼球。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/m9kDBqeUFwnMNJ8Jwv6H.png" width="507" height="390" /></p>
+<p>当然，卡片并不是通用的，原本可以靠留白或分割线分割的信息，如果为了视觉效果硬是卡片化处理，就会导致阅读的低效，而且浪费空间。</p>
+<p>比如常见的一些feed流，相比卡片，这类同类的信息流更适合以列表来帮助用户迅速得扫视，并节省页面空间。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/dABGr938y9sp48wOYCOQ.png" width="503" height="356" /></p>
+<h4>7. 卡片的嵌套和分割</h4>
+<p>产品的功能并非完全互相剥离的，很多时候存在包含和平行的关系。这两类关系分别可以以卡片的嵌套和分割进行处理。前者通过卡片堆砌表达信息的包含关系，而后者则通过视觉分割所形成的点击域传达信息的平行关系。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/4QasevEyUXbOQsFGjuWz.png" width="502" height="248" /></p>
+<p>比如天猫点评页中的金香蕉好物推荐，每个卡片承载了商品信息以及点评信息，通过卡片的嵌套表示出两者的包含关系。而单条推选理由及入口的引导属于平行关系，因此采用了视觉分割来进行划分。</p>
+<p>并且前者跳转的是点评详情，后者跳转的页面中包含了所有点评、商品推荐以及我要点评，因此在后者所属的面中加入了淡淡的一层业务主色来强化它的地位。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/f0jOOpyepdKhI612IQBL.png" width="506" height="391" /></p>
+<p>在支付宝改版后的卡包页中同样进行了一次嵌套处理，以更好得容纳不同的业务并传达各自所在的层级，并且以尺寸和颜色对比进行业务区分。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/PW8KtddWOaiVSmkVhJy3.png" width="508" height="392" /></p>
+<p>京东金融的付费业务卡片中存在两个平行关系的功能，因此以分割线形式进行了区域的划分。同时，它利用了颜色进行了有效的视觉及情绪引导：黑色背景进行反白处理将其作为一个单独的视觉落点，强制用户注意到这里，并且又传达了付费用户所尊享的高级感。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/Yu2AwkXQO2tkM97XVLz6.png" width="506" height="392" /></p>
+<h2>二、苹果是如何改头换面的</h2>
+<p>自从ios7转型扁平后，线元素在苹果设计语言中一直占有重要地位，线自身的纤细、轻盈感可以迅速打造apple独有的轻量调性，不仅是按钮、图标的样式，包括字体本身也更加倾向纤细的字重。</p>
+<p>但是，这个僵局在ios11发布的那天被彻底打破。2017年6月6日，苹果设计师乔纳森仿佛和线有了隔夜仇一般，从解锁页面到原生应用中，原本ios10中曾经被大量使用的线元素基本全部被面元素取代。</p>
+<p>锁屏页面，所有拨号按钮全部由幽灵样式改为了面性样式，而数字字重的变粗也是一种化面的倾向。这使得按钮及文字更易辨识，并且降低了线所产生的视觉噪音。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/Qx6npc4XmIuDTxkJtLRw.png" width="503" height="389" /></p>
+<p>App store中也同样发生着形态的易主。原本的幽灵按钮全部改为了浅灰色面性按钮。用于划分信息的分割线明度也得到了克制。另外，11代中众所周知的大标题同样也可以看做化面的倾向（通过增加自身的面积），强烈的视觉张力引导用户迅速得进行辨识。</p>
+<p>另外，所有的数字全部提至文字的前方，基于用户由左至右的动线更突出产品自身，以点化线的形式更好得引导用户进行扫视。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/wWiFYRjHkXhDGWm4JD66.png" width="506" height="308" /></p>
+<p>追求极致的苹果显然不能容忍tab中未选中态下出现的线元素，你可以在ios13中看到，线元素得到了彻底的消除，并且颜色一并得到了克制，再次提升了阅读内容的沉浸感。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/jcpy0fv0yOqPVcdftGHr.png" width="502" height="306" /></p>
+<p>ios11中的商品详情页获取按钮也同样使用了面性，深色的强调样式更好得契合了页面所在的用户场景，召唤用户对其感兴趣的商品采取点击行为。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/YUO89NAjVlYrVTgKe5pA.png" width="497" height="383" /></p>
+<p>控制中心页面，基于面元素的承载与分割性，所有的信号类功能独立收纳到了卡片中。亮度和音量的调节则由横向的线性滑竿控制条改为了纵向的面性控制块。一方面增强了两者的辨识力，另一方面，根据菲茨交互定律，面积的增大带来了更好的点击体验。这一点在miui11的控件优化中也得到了应用。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/s8KkpspjEMcN9CK89kEU.png" width="504" height="390" /></p>
+<p>所有的未选中态图标也进行了面性处理，大幅提升了10代中未选中页标签的辨识性。并且每个图标对应的文字也进行了加粗。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/09/f0MKx3E2vHghsDRTGzxv.png" width="509" height="171" /></p>
+<p>纵观ios11中所有形态的变化，我们可以发现这次改版的最终目的是：促进内容的高效获取。</p>
+<p>顺从作为苹果历来遵循的设计法则之一，和包豪斯“形式追随功能”设计理念不谋而合。设计永远只帮助用户理解内容，但永远不与内容竞争。这一点在ios11的这次“改头换面”被彻底应用及实现，并且对设计圈影响至今。</p>
+<h2>三、最后</h2>
+<p>点、线、面理论并不像格式塔、尼尔森可用性法则等方法论那样，为设计者提供切实可行的具体指导，它更类似一种内敛的全局观，帮助设计师抛开颜色、质感等额外手段，从宏观的角度以点、线和面的方式将所有的设计元素抽象化处理，让原本杂乱无序的万象有章可循。</p>
+<p>最后，以康定斯基的一句话结尾——</p>
+<p>研究艺术构成的目的无非如此：找到内在的生命，让生命的脉动显得可感，并为生命寻求规则。</p>
+<p>&nbsp;</p>
+<p>作者：Andrew臣；微信公众号：转行人的设计笔记</p>
+<p>来源：https://mp.weixin.qq.com/s/tVCKXXbYN5H7ieiCOKNfOQ</p>
+<p>本文由 @转行人的设计笔记 授权发布于人人都是产品经理，未经许可，禁止转载。</p>
+<p>题图来自 Unsplash，基于CC0协议。</p>
