@@ -1,7 +1,7 @@
 ➜跨平台传输内容，用快捷指令让 Pushbullet 在 iPhone 上复活
 https://www.appinn.com/pushbullet-for-ios-back/	19963
 <p><a href="https://www.appinn.com/tag/pushbullet/" class="rank-math-link">Pushbullet</a> 是一款可以跨平台的文本、图片、网址传输工具，可以很方便的在不同设备间传输内容。但由于一些原因，开发者选择下架 iOS 客户端。不过其 API 一直顺畅，@<strong><a class="rank-math-link" href="https://meta.appinn.net/u/feeshy" target="_blank" rel="noopener">feesh</a></strong><a class="rank-math-link" href="https://meta.appinn.net/u/feeshy" target="_blank" rel="noopener"><strong>y</strong> </a>同学利用<a href="https://www.appinn.com/tag/%e6%8d%b7%e5%be%84/" class="rank-math-link">快捷指令</a>功能，实现了在 iPhone、iPad 上手动接受、发送 Pushbullet 消息。@<a href="https://www.appinn.com/pushbullet-for-ios-back/" class="rank-math-link">Appinn</a></p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/pushbullet-ios.jpg!o" alt="跨平台传输内容，用快捷指令让 Pushbullet 在 iPhone 上复活 5" title="跨平台传输内容，用快捷指令让 Pushbullet 在 iPhone 上复活 5"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/pushbullet-ios.jpg!o" alt="跨平台传输内容，用快捷指令让 Pushbullet 在 iPhone 上复活 12" title="跨平台传输内容，用快捷指令让 Pushbullet 在 iPhone 上复活 12"></figure></div>
 <p>其实类似的需求很多，比如 <a href="https://meta.appinn.net/t/pc/13854" class="rank-math-link" target="_blank" rel="noopener">iPhone 上是否有向PC推送消息的轻量级软件？</a>在跨平台传输内容这件事情上，目前还没有一个完美的方案，可以说八仙过海，各显神通，比如青小蛙就通过现代 IM 工具实现了跨平台的文本、文件、图片传输。</p>
 <p>本文要求的技术含量较高，但乱操作也不会出现什么故障，所以请尽情折腾。</p>
 <p>以下为 @<strong>feeshy</strong> 同学原文，青小蛙略作修改。原理是用<strong>快捷指令</strong>调用 Pushbullet 的 API 进行收发内容。</p>
@@ -12,7 +12,7 @@ https://www.appinn.com/pushbullet-for-ios-back/	19963
 <ul><li>功能<ul><li>无需费力安装已下架的 Pushbullet 官方 App</li><li>从 iOS 推送文本和链接到其他设备</li><li>一键打开或复制从其他设备推送到 iOS 的链接或文本</li></ul></li><li>缺陷<ul><li>在 iOS 上并非“真正的”通知推送，而是要手动执行快捷指令才能接收</li></ul></li></ul>
 <h2>1. 获取 Access Token</h2>
 <p>登录账号后访问 <a href="https://www.pushbullet.com/#settings/account" class="rank-math-link" target="_blank" rel="noopener">https://www.pushbullet.com/#settings/account</a> 生成API令牌</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/2/2fb7ab8d3df44c04766055d3067d135ad00129eb.png" alt="image" title="跨平台传输内容，用快捷指令让 Pushbullet 在 iPhone 上复活 6"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/2/2fb7ab8d3df44c04766055d3067d135ad00129eb.png" alt="image" title="跨平台传输内容，用快捷指令让 Pushbullet 在 iPhone 上复活 13"></figure></div>
 <h2>2. 获取 device_iden</h2>
 <p>如果你并不想对各台设备进行区分，那么可以跳过这一步。</p>
 <p>如果想要精准地推送或接收某台设备的消息，我们需要知道它的 device_iden。</p>
@@ -27,8 +27,8 @@ https://www.appinn.com/pushbullet-for-ios-back/	19963
 <ul><li>推送接收二合一版<ul><li><a href="https://www.icloud.com/shortcuts/4c4ce15039cc4aa7aa959f9559af803c" target="_blank" rel="noopener">推送&amp;接收指令</a>：共享表单推送传入内容，图标、小部件查看接收的内容。无推送剪贴板功能</li></ul></li><li>单功能独立版<ul><li><a href="https://www.icloud.com/shortcuts/01b6cfb31c604d0cac3564747f59fb41" target="_blank" rel="noopener">推送指令</a>：共享表单推送传入内容，图标、小部件推送剪贴板内容</li><li><a href="https://www.icloud.com/shortcuts/921b57d61ed34955a87c1bb30261fa99" target="_blank" rel="noopener">接收指令</a>：图标、小部件查看接收的内容</li></ul></li></ul>
 <h2>4. 将快捷指令添加至主屏幕，自定义图标</h2>
 <p>你还可以把快捷指令添加到主屏幕，用自定义<a href="https://lh3.googleusercontent.com/I1rEarjkcHM2Yq13tYxJtg8idaYLK6kGXI0AMSm5VLMl5_nPwVuR4UFhAOSZo83CBe8" class="rank-math-link" target="_blank" rel="noopener">图标</a>制作一个以假乱真的“Pushbullet 客户端”</p>
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/8/850a4fc838d7349a1e231645959581972cb770dd.png" alt="跨平台传输内容，用快捷指令让 Pushbullet 在 iPhone 上复活 6" width="386" height="436" title="跨平台传输内容，用快捷指令让 Pushbullet 在 iPhone 上复活 7"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/8/850a4fc838d7349a1e231645959581972cb770dd.png" alt="跨平台传输内容，用快捷指令让 Pushbullet 在 iPhone 上复活 13" width="386" height="436" title="跨平台传输内容，用快捷指令让 Pushbullet 在 iPhone 上复活 14"></figure></div>
 <h2>如何在 iOS 上使用 Pushbullet？</h2>
 <p>终于到这里了，在 iOS 上，只需要选中文本，打开网页后，选择 分享，然后找到 Pushbullet，完工。</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/img_662fd9ffb75d-1.jpg!o" alt="跨平台传输内容，用快捷指令让 Pushbullet 在 iPhone 上复活 7" title="跨平台传输内容，用快捷指令让 Pushbullet 在 iPhone 上复活 8"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202009/img_662fd9ffb75d-1.jpg!o" alt="跨平台传输内容，用快捷指令让 Pushbullet 在 iPhone 上复活 14" title="跨平台传输内容，用快捷指令让 Pushbullet 在 iPhone 上复活 15"></figure></div>
 <p>更多细节请参考原帖：<a href="https://meta.appinn.net/t/pushbullet-for-ios/18629" target="_blank" rel="noopener">基于快捷指令的Pushbullet for iOS</a> via @feeshy。</p>
