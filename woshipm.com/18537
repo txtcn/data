@@ -169,3 +169,274 @@ http://www.woshipm.com/chuangye/4205306.html	8375
 <p>&nbsp;</p>
 <p>本文由 @松果财经 原创发布于人人都是产品经理，未经作者许可，禁止转载</p>
 <p>题图来自Unsplash，基于CC0协议。</p>
+➜万字干货：5G-IoT领域智能硬件产品解决方案设计典范 ——以智慧家居产品功能应用为例
+http://www.woshipm.com/ai/4196315.html	13177
+<blockquote><p>编辑导读：随着5G时代的到来，对产品的智能化提出了更高的要求。本文作者撰写了5G-IoT领域智能硬件产品的需求背景和5G智能硬件产品具体设计及智能硬件产品功能实现的产品方案，与你分享。</p></blockquote>
+<p><img data-action="zoom" class="size-full wp-image-4206030 aligncenter" src="http://image.woshipm.com/wp-files/2020/09/udZkbwQKAs93nIlns0v9.jpg" alt="" width="900" height="420" /></p>
+<p>5G在软件应用上会有很多产品冒出，笔者先撰写5G-IoT领域智能硬件产品的需求背景和5G智能硬件产品具体设计及智能硬件产品功能实现的产品方案。</p>
+<h2>一、综述</h2>
+<p>为了满足智慧家庭场景的5G产品发展需求，本产品通过在家庭网关融合5G能力，形成同时具有家庭网关接入能力和5G接入能力的一体化智能家庭接入终端，实现在家庭场景提供5G覆盖。</p>
+<p>5G小基站家庭网关集成固定宽带PON接入作为其回传，没有站址选取和建设维护等投入，因此部署5G小基站家庭网关可以大大降低网络投资；另外由于不需要网络规划，以及用户自己供电等因素，事实上也大大降低运营商对网络建设的投资。</p>
+<p>结合宏蜂窝网络的建设，由于小基站的部署可以减轻宏蜂窝网络的压力：即一旦用户进入小基站覆盖范围，就不再占用宏蜂窝的资源，这也间接减轻了对宏蜂窝网络的投资压力。</p>
+<h2>二、产品总体方案及规划设计</h2>
+<h3>2.1 5G小基站家庭网关网络架构</h3>
+<p>5G小基站家庭网关在网络中的位置如下图所示：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/0sAYhBLuPFt9Li1geWbA.png" width="441" height="161" /></p>
+<p>智慧家庭宽带数据、小基站数据、网管数据通过VLAN隔离，家庭基站一体化架构（包括RU+DU(L1/L2)+CU(RRC/RRM/PDCP/SDAP)）， 小基站网关只负责转发基站和核心网之间的数据，可以通过家庭网关网管配置管理小基站（共网管），也可以通过电信专用TR069小基站网管管理小基站（独立网管）。一体化架构CU/DU不分离，优点是区域的配置简化，降低成本。</p>
+<h3>2.2智能硬件设备形态和外部接口</h3>
+<p>5G小基站家庭网关系统设备是外观简洁大方、易于安装、放置稳固的家用电信设备，支持平放和后背壁挂的安装方式。</p>
+<p>家庭网关和5G小基站融合智能产品设备形态定义如下：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/cpXL41CgKZCgOBPPrgW4.png" width="590" height="346" /></p>
+<h3>2.3 产品系统架构设计</h3>
+<p>5G小基站家庭网关系统在逻辑上由5G小基站子系统、Wifi 6子系统、PON子系统等构成，其中5G家庭小基站是融合5G家庭网关逻辑上的一部分，与家庭网关集成合设，采用内部接口（PCIe）进行互联。系统方案如下图所示：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/eQHTJGLY8xD2Ywl5EohU.png" width="608" height="289" /></p>
+<p>5G小基站家庭网关在宽带系统的基础上提供5G的语音和数据连接业务，通过PON/OLT设备接入到小基站网关，小基站网关设备分别接入到5G核心网控制面和UPF，并通过TR069网管设备进行管理。</p>
+<p>小基站家庭网关总功耗在30-35W，采用有利于散热的总体ID/结构设计，两块PCB板（WIFI6和PON共板，5G SmallCell一块PCB板），立式ID有利于对流散热，也有利于多个天线的设置。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/lp44H2PcBixbpkBlSVDM.png" width="366" height="319" /></p>
+<p style="text-align: center;">结构设计</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/Q9s8cGYH9gvraVsOhdFy.png" width="230" height="366" /></p>
+<p style="text-align: center;">ID设计</p>
+<h3>2.4 产品整体功能设计</h3>
+<p>5G小基站子系统支持3GPP SA(Stand Alone)架构组网，小基站通过NGAP接口同5G核心网之间建立连接。</p>
+<ol>
+<li>支持下行2天线发射，每小区最大2流；支持上行2天线接收，每小区最大2流。</li>
+<li>上下行频段应至少支持3300MHz-3400MHz、3400MHz-3500MHz波段，支持系统带宽100MHz。</li>
+<li>支持下行调制方式： QPSK、16QAM、64QAM、256QAM；支持上行调制方式：π/2-BPSK、QPSK、16QAM、64QAM。</li>
+<li>层2功能支持MAC层、RRC层、PDCP层和SDAP层功能，详见3GPP相关章节。</li>
+</ol>
+<p><strong>2.4.1 HARQ</strong></p>
+<p>系统支持的下行和上行最大重传次数可通过网管系统进行配置。支持上下行异步HARQ。</p>
+<p><strong>2.4.2 随机接入</strong></p>
+<p>系统能够配置 PRACH 使用的时频资源、 PRACH 配置、随机前导格式和本小区使用的 PRACH 序列组等参数。</p>
+<p>系统支持为小区中的 UE 配置可用的 PRACH 序列组，包括根序列和循环位移版本，能够向 UE 发送随机接入反馈确认（Random Access Response Grant）。</p>
+<p>系统支持根据小区覆盖范围，配置逻辑根序列索引、零相关区间(Ncs)参数。</p>
+<p><strong>2.4.3 无线资源管理与调度</strong></p>
+<p>下行物理信道资源分配支持Type 0和Type 1的分配方式，支持下行链路自适应，根据信道质量、反馈等信息自适应调整编码等级。</p>
+<p>上行物理信道资源分配支持Type 0和Type 1的分配方式，支持上行链路自适应，根据信道质量、反馈等信息自适应调整编码等级。</p>
+<p>上下行调度算法支持最小周期为slot的动态调度。</p>
+<p>支持上下行频选、非频选调度。</p>
+<p><strong>2.4.5 功率控制</strong></p>
+<p>支持对下行的CSI-RS、PDCCH、PDSCH和SSB做静态功率配置。</p>
+<p>支持上行的PUSCH、PUCCH、PRACH的功率控制。</p>
+<p>支持msg3的功率控制。</p>
+<p>支持功率控制参数P0、alpha等可配。</p>
+<p><strong>2.4.6 RRC层功能</strong></p>
+<p>2.4.6.1 系统消息</p>
+<p>能够向UE发送必需的基本的系统消息和其他消息。</p>
+<p>2.4.6.2 RRC</p>
+<p>系统支持RRC连接功能，包括：</p>
+<ul>
+<li>RRC连接的建立、重配、重建及释放</li>
+<li>数据承载建立、重配和释放</li>
+<li>RRC的状态转换</li>
+</ul>
+<p>2.4.6.3 安全</p>
+<p>支持对信令的完整性保护(NIA 0/1/2/3算法)和空口加密功能(NEA 0/1/2/3算法)</p>
+<p>2.4.6.4 寻呼</p>
+<p>系统支持从网络侧发起的寻呼功能。</p>
+<p>2.4.6.5 承载</p>
+<ul>
+<li>支持SRB0， SRB1， SRB2的建立与释放。</li>
+<li>支持DRB的建立和释放，支持给每个UE建立8个DRB，每个DRB可独立配置RLC模式。</li>
+<li>支持PDU session的建立、释放和修改。</li>
+</ul>
+<p>小基站应支持如下承载：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/klN8h2weTjhsqhwislP9.png" width="501" height="332" /></p>
+<p>2.4.6.6 QoS</p>
+<p>支持基于不同业务的差异化服务。</p>
+<p>支持用户优先级的差异化服务。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/x14T72CMDxL5EVycicfg.png" width="502" height="283" /></p>
+<p>2.4.6.7 测量</p>
+<p>支持基于SSB和CSI-RS的RSRP、RSRQ和SINR的同频与异频测量。</p>
+<p>支持基于CSI-RS和SRS做信道质量测量。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/UCUh73AUWzrguekjFTxA.png" width="506" height="427" /></p>
+<p>2.4.6.8 移动性管理</p>
+<p>支持系统内和系统间的移动性管理，包括小区选择、小区重选、同频切换、异频切换等。</p>
+<p>支持邻区切换优化，支持在小基站网关上配置并分别控制每个5G小基站覆盖区域内接入终端的允许切换目标邻区列表，以避免不必要的切换或乒乓切换。</p>
+<p>支持通过相关性能指标的统计评估，用于自动配置和优化调整上述小基站覆盖区域内接入终端的允许切换目标邻区列表。相关性能指标可包括但不限于以下指标：</p>
+<ul>
+<li>切换成功率</li>
+<li>切换次数</li>
+<li>乒乓等异常切换次数</li>
+<li>邻区发现次数</li>
+</ul>
+<p><strong>2.4.7 RF指标</strong></p>
+<p>2.4.7.1 发射功率</p>
+<p>设备的5G通道标称发射功率（单通道）支持125mW(21dBm)。</p>
+<p>基站发射功率的动态范围在正常条件下为标称功率±2dB范围内，在极端条件下为标称功率±2.5dB范围内。</p>
+<p>2.4.7.2 RE功率控制动态范围</p>
+<p>RE功率控制动态范围满足下表的要求：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/SRIbqPqmPoMPF8j8lNrO.png" width="505" height="165" /></p>
+<p>2.4.7.3 总发射功率动态范围</p>
+<p>在100Mhz带宽下，基站的总发射功率动态范围大于等于24.3dB。</p>
+<p>2.4.7.4 发射机关断功率</p>
+<p>发射关断功率必须低于-85dBm/MHz，发射机开关变换期小于10us。</p>
+<p>2.4.7.5 频率误差</p>
+<p>频率误差是指，基站的实际发射频率和分配频率之间的误差。相同的源被用作射频频率 和数字时钟产生。测试周期需超过一个子帧的周期（1ms）。</p>
+<p>频率误差性能要求小于±0.1ppm 。</p>
+<p>2.4.7.6 矢量幅度误差EVM</p>
+<p>矢量幅度误差是测试经过均衡器之后的实际测试信号和理想信号之间的差值。这个差值被称作矢量误差。</p>
+<p>对于不同调制方式的PDSCH的EVM值应该优于下表中所给出的限值。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/dKPckCREgdgNHF3aTuTu.png" width="505" height="141" /></p>
+<p>2.4.7.7 邻道泄漏比（ACLR）</p>
+<p>邻道抑制比（ACLR）是指，以分配的信道频率为中心频率的载波平均功率与相邻的信 道频率为中心频率的载波平均功率的比值。该性能要求适用于当发射机处于发射开阶段的设备。</p>
+<p>ACLR的定义中使用了平方滤波器，其带宽等于发射信号的发射带宽配置（BWConfig）， 以分配的信道频率为中心频率。</p>
+<p>ACLR的限值为45dB。</p>
+<p>2.4.7.8 频谱发射模板</p>
+<p>工作频带发射功率不应超过下表中的值。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/IfHLmeIkrE5FK6zPgLl0.png" width="492" height="135" /></p>
+<p>2.4.7.9 杂散发射</p>
+<p>杂散发射的功率不应该超过下表中的限值。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/idT8WrHRlTTaUkGVMkOt.png" width="494" height="101" /></p>
+<p>根据工信部无线电管理局下发工信部无函（2018）86号函要求，基站在3.5GHz频段带外 辐射应满足下表要求。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/XmIGsOXatSrBKcJIqF5J.png" width="494" height="82" /></p>
+<p>2.4.7.10 参考灵敏度</p>
+<p>参考灵敏度功率电平PREFSENS是指，在指定参考测量信道配置下，基站天线连接器接收到 满足吞吐量性能要求的最小平均功率。</p>
+<p>100Mhz带宽的G- FR1-A1-5参考测量信道的参考灵敏度为-87.6dBm</p>
+<p>2.4.7.11 接收动态范围</p>
+<p>接收机动态范围是指，当在接收信道带宽内存在一个干扰信号时，接收机接收一个有用 信号的能力。在特定参考测量信道下，吞吐量应该满足一定的要求，动态范围性能要求中的 干扰信号类型是AWGN信号。</p>
+<p>设备接收的动态范围应该满足下表的要求。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/DwQB7BHLv23Ut2MMkEVv.png" width="504" height="46" /></p>
+<p>2.4.7.12 信道内选择性（ICS）</p>
+<p>信道内选择性（ICS）是指，当存在一个具有大功率谱密度的干扰信号时，接收机在分 配的资源块接收有用信号的能力。</p>
+<p>在特定参考测量信道下，吞吐量应该大于等于对应参考测量信道最大吞吐量的95%。干 扰信号应是NR信号。</p>
+<p>设备ICS的要求满足下表的要求。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/l3SMeSTWgIbUARBayj9q.png" width="494" height="116" /></p>
+<p>2.4.7.13 邻道选择性（ACS）和窄带阻塞</p>
+<p>邻道选择性（ACS），当存在一个与有用信号间隔指定频率的相邻信道的信号时，接收 机接收在指定信道频率上的有用信号的能力。</p>
+<p>在特定参考测量信道下，吞吐量应该大于等于对应参考测量信道最大吞吐量的95%。干扰信号应是NR信号。</p>
+<p>设备的邻道选择性满足下表要求。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/xgwCLDNLpwKxgYEcqOcU.png" width="499" height="116" /></p>
+<p>2.4.7.14 带内阻塞</p>
+<p>设备的窄带阻塞性能要求：有用信号平均功率-81.6dBm，干扰信号平均功率-41dBm。</p>
+<p>2.4.7.15 带外阻塞</p>
+<p>设备的一般阻塞要求满足下表要求。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/p93TA5NPA7SlXVXKBXq6.png" width="501" height="77" /></p>
+<p><strong>2.4.8 同步要求</strong></p>
+<p>小基站应支持时间同步和频率同步，且同步精度必须满足：</p>
+<ul>
+<li>小区间空口相位误差必须小于±1.5us，最大3 us；</li>
+<li>在任何1个子帧（1ms）的时间内，小基站输出信号的频率误差必须在±0.1 ppm范围内。</li>
+<li>支持通过PON时钟进行同步（小基站和家庭网关合设时必须支持）；</li>
+</ul>
+<p><strong>2.4.9 VoNR支持</strong></p>
+<p>小基站系统应支持5G VoNR功能，并基于标准的5QI进行话音业务QoS保障。</p>
+<p><strong>2.4.10 安全回传</strong></p>
+<p>小基站支持和安全网关之间通过IPSec建立安全的传输通道。鉴权支持EAP-AKA、IKEv2协议，支持X.509数字证书鉴权和PSK鉴权。</p>
+<p><strong>2.4.11 系统容量</strong></p>
+<p>支持1个2T2R或4T4R、100MHz带宽小区的处理能力。</p>
+<p>支持32个激活用户和64个连接用户。</p>
+<p><strong>2.4.12 峰值速率</strong></p>
+<p>2T2R：系统配置为100MHz带宽，2.5ms双周期子帧配比情况下，单用户下行峰值速率不低于600Mbps，单用户上行峰值速率不低于250Mbps。</p>
+<p>4T4R：系统配置为100MHz带宽，2.5ms双周期子帧配比情况下，单用户下行峰值速率不低于1.2Gbps，单用户上行峰值速率不低于250Mbps。</p>
+<p><strong>2.4.13 支持网络切片</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/k4mnrMdOltdzryMPKW4U.png" width="602" height="296" /></p>
+<p><strong>2.4.14 支持IPv6</strong></p>
+<p>小基站在IPSec隧道外层应支持IPv4单栈、IPv6单栈、IPv4和IPv6双栈，以实现和小基站网关通信。</p>
+<p>小基站在IPSec隧道内层也同时应支持IPv4单栈、IPv6单栈、IPv4和IPv6双栈，以实现和核心网通信</p>
+<ul>
+<li>Wi-Fi子系统支持Wi-Fi6标准，并且支持2.4GHz及5GHz频段（2*2 2.4G 11ax + 2*2 5Ghz 11ax）。</li>
+<li>PON子系统10G PON回传，4个LAN口。</li>
+<li>支持满足《中国电信智能家庭网关技术要求》规范要求。</li>
+<li>环境要求</li>
+</ul>
+<p>设备应在下表所列环境条件下正常工作，且整机外壳任意点相对于环境的温度升高应不大于20℃。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/7trtsAxxaoNDKLPkJbYt.png" width="490" height="47" /></p>
+<p><strong>2.4.15 可靠性要求</strong></p>
+<p>年故障率低于2%。</p>
+<p><strong>2.4.16 抗电磁干扰能力</strong></p>
+<p>满足《中国电信家庭网关总体技术要求》</p>
+<p><strong>2.4.17 本身产生的电磁干扰要求</strong></p>
+<p>满足《中国电信家庭网关总体技术要求》</p>
+<p><strong>2.4.18 过压过流保护</strong></p>
+<p>满足《中国电信家庭网关总体技术要求》</p>
+<p><strong>2.4.19 安全要求</strong></p>
+<p>家庭小基站设备具备漏洞软件升级的能力，可以由网管系统根据需要进行远程打补丁。其他安全要求满足国家信息技术设备安全相关要求，以及《中国电信家庭网关总体技术要求》的相关安全要求。</p>
+<h2>三、智能硬件功能实现解决方案</h2>
+<h3>3.1 5G小基站家庭网关智能硬件系统组成</h3>
+<p><strong>3.1.1 5G NR小基站硬件子系统</strong></p>
+<p>5G NR小基站硬件子系统硬件组成如下图所示，采用基于高通SOC套片(FSM10056+SDR9000)的一体化基站方案，协议栈(L2)运行在NXP的4*A53 @1.6Ghz CPU LS1043上，基带芯片FSM10056是符合Sub-6G标准（3GPP Rel 15 5G NR）的物理层基带处理器，支持Sub-6G TDD模式，采用10ns工艺；集成Arm Cortex-A7处理器，主频800 MHz；集成Qualcomm® Hexagon™ DSP处理器，主频866Mhz；集成2Gbit LPDDR4x内存，速率1.33G。</p>
+<p>基站的回传通过SGMII/SGMII连到PON系统，基站的同步通过PON系统的1PPS和TOD输出，基站同时支持GPS/北斗同步以及IEEE1588同步。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/NTmgQUpuJZ8aHdcJ2qOs.png" width="506" height="200" /></p>
+<p>小基站子系统规格如下：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/5MoXbKujNaAmh0byKilN.png" width="495" height="613" /></p>
+<p><strong>3.1.2 WIFI6智能硬件子系统</strong></p>
+<p>10G PON硬件子系统如下图所示，采用Broadcom的BCM68560 SOC系统，并且采用Semtech 的GN28L95 Driver 芯片的PON系统解决方案。</p>
+<p>10G PON硬件子系统，通过Serdes接口连到SOC系统，为数据提供上下行通道，10G PON硬件子系统架构如下图所示：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/kkPWHHkIU0vwBXzQv9jc.png" width="502" height="253" /></p>
+<p>​</p>
+<p>10G PON子系统规格指标如下：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/4PolTQG51egoHNuTzucR.png" width="505" height="750" /></p>
+<p><strong>3.1.3 10G PON智能硬件子系统</strong></p>
+<p>10G PON硬件子系统如下图所示，采用Broadcom的BCM68560 SOC系统，并且采用Semtech 的GN28L95 Driver 芯片的PON系统解决方案。</p>
+<p>10G PON硬件子系统，通过Serdes接口连到SOC系统，为数据提供上下行通道，10G PON硬件子系统架构如下图所示：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/hJePQrMoBrbtuTwOvoKo.png" width="495" height="258" /></p>
+<p>10G PON子系统规格指标如下：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/kD1AD86Sn3FghysBHjw0.png" width="490" height="325" /></p>
+<h3>3.2 5G小基站智慧家居网关的系统组成</h3>
+<p><strong>3.2.1 时钟同步系统</strong></p>
+<p>小基站支持时间同步和频率同步，且同步精度满足：小区间空口相位误差小于±1.5us，最大3 us；在任何1个子帧（1ms）的时间内，小基站输出信号的频率误差在±0.1 ppm范围内。</p>
+<p>本产品设计设计中，在OLT侧由外部高精度时钟/1588服务器作为系统的时钟源，OLT板卡上的1588 Client同1588服务器同步获取ToD和1PPS，小基站家庭网关PON子系统从光信号中提取恢复时钟，并将系统的1PPS和TOD输出给小基站。时钟同步系统如下图所示：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/ofCRs8DleWlUtDLXNp78.png" width="501" height="110" /></p>
+<p><strong>3.2.2 5G小基站OAM系统</strong></p>
+<p>OAM负责整个系统的管理和维护，系统框架如下：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/Nxg9cs7axSPvJ77L6hND.png" width="503" height="231" /></p>
+<p style="text-align: center;">OAM系统框图</p>
+<p>5G小基站OAM系统支持统一规划（组网方式，初始网管的配置，安全证书等）、统一网管（统一的软件，统一的数据模型，统一的配置）、融合网管（和家庭网关管理系统的有机融合，减少系统复杂性）。</p>
+<p>支持基于WebUI的本地管理维护界面和基于TR069的远程管理维护界面。WebUI和TR069两种方式都支持下列的管理维护功能.用户侧管理通过web方式提供管理服务，只对小基站自身的基本运行状态进行管理，管理功能包括：</p>
+<p>设备状态查看：能够查询当前小基站设备的性能占用情况，包括CPU利用率（以主CPU为准）、内存利用率、当前设备总体上下行速率（单位Mbps）、信号质量（RSRP等）、当前发射功率（毫瓦计）；</p>
+<p>设备管理：当前设备的接入数量、去激活某个接入用户、发射功率设置（分为50mW、125mW、200mW、250mW等，默认125mW）、设备重启等。</p>
+<p>Web服务：提供用户侧自管理的web能力，以及后续的管理权限升级能力。</p>
+<p>网管侧管理通过网管接口提供管理能力，可以实现对小基站的全部管理，包括用户侧相关的管理。主要包括：</p>
+<p>告警管理：实时采集系统内部生成的各种告警信息，包括硬件故障告警、硬件温度过高告警、软件故障告警、家庭网关模块故障、光纤接口故障、发射功率过低（低于50mW提示一般告警）、干扰较大（SINR、干扰电平大于某个阈值时触发）告警、接入终端数超限告警（根据网管下发接入数量阈值触发）等。</p>
+<p>配置管理：通过网管下发统一配置，如发射功率的统一配置、接入终端数量限制的统一配置；</p>
+<p>远程升级：可以根据网管规划的远程升级策略，触发远程升级，支持的策略包括：地理区域升级策略；时间段升级策略、设备类型升级策略。</p>
+<p>权限管理：能够通过远程配置的方式，对用户侧管理的功能权限进行开启或则限制，能够通过远程配置调整某项管理功能为全部开启或全部关闭。</p>
+<p>其他管理参照设备技术要求和网管规范。</p>
+<p><strong>3.2.3 5G小基站协议栈软件</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/coGauUOI53VHa46gKJIC.png" width="505" height="283" /></p>
+<p style="text-align: center;">5G小基站软件系统框图</p>
+<p>5G一体化基站协议栈软件分为两部分：</p>
+<ul>
+<li>L3 Control Plane(RRC/RRM/NGAP/XNAP/SON)</li>
+<li>L2和User Plane(SDAP/PDCP/RLC/MAC/Scheduler)</li>
+</ul>
+<p>软件模块概要说明：</p>
+<ul>
+<li>L3控制面包括RRC/RRM/SON等组件，运行在OSA抽象层之上；</li>
+<li>为了满足5G高速率，低延迟的要求，L2和用户面的代码运行在DPDK平台之上；</li>
+<li>CPU Core分成Master和Worker等2种</li>
+<li>1个Master Core（可以是Linux系统core），运行管理软件模块</li>
+<li>1个Worker Core运行跟接口有关的处理(eth,PCIe,加密)</li>
+<li>1个或多个Worker Core运行实际的业务处理，比如调度器，RLC</li>
+<li>DPDK接管回传网卡硬件和加密加速硬件，支持VLAN</li>
+<li>创建一个RawDevice或一个Service，包装Modem的DP/MHI/PCIe接口</li>
+<li>构建一个简化IP V4/V6栈，支持ARP，ICMP，nDisc，分段，路由，转发</li>
+<li>业务层的包只处理IP/UDP/GTP-U，其他的业务层IP包(TCP/SCTP等)通过KNI接口发送到Linux内核处理，从内核收到的包根据路由表和ARP表进行转发处理</li>
+</ul>
+<p><strong>3.2.4 小基站网关和5G核心网/OLT的接口</strong></p>
+<p>5G家庭小基站通过标准N1、N2接口与核心网控制面互联，并经由小基站网关进行信令收敛，通过标准N3接口与核心网转发面UPF互联，实现用户面数据的交互。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/U6P8RYGliGPQLGJ9j0Qo.png" width="496" height="366" /></p>
+<p style="text-align: center;">5G小基站子系统与5GC接口</p>
+<p><strong>3.2.5 智能家庭网关软件功能设计</strong></p>
+<p>PON网关部分的软件功能将完全满足《中国电信智能家庭网关技术要求》。</p>
+<p>下图中，ITMS+（增强型终端综合管理系统）是家庭网关业务的部署和控制平台，也是家庭网关设备的远程管理平台，通过它既可以实现对家庭网关上的数据、语音、视频、QoS等功能进行部署、管理和控制；又可以实现对家庭网关的远程状态查询、故障管理、设备配置和软件升级。EMS（网元管理系统）用于PON上行家庭网关PON接口相关的物理层及链路层的配置及管理。手机APP、智家平台作为互联网操控体验的管理手段，为用户提供智能家庭网关及智能应用的全新配置管理方式。IPTV业务平台提供IPTV、终端桌面、应用市场、IPTV 增值业务、智能增值应用等服务。Cloud VR业务平台提供VR增值业务应用服务。</p>
+<p>家庭网络内部各种终端通过智能家庭网关的用户侧接口与智能家庭网关进行通信，智能家庭网关对经过其的数据和应用进行转发、控制和管理，并通过网络侧接口与业务平台、ITMS+、智家平台、机顶盒终端管理平台进行交互，实现家庭网络和外部网络的通信，提供各种可管理、可控制的应用。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/35f1xuXObFMC1EcafBvf.png" width="490" height="269" /></p>
+<p><strong>3.2.6 安全设计</strong></p>
+<p>为确保合法的一体化小基站接入网络，根据相关安全要求，一体化小基站支持标准的证书安全管理架构，一体化小基站由设备商预先提供一个公私密钥对，并且具有预置公钥的设备签名的证书，一体化小基站对获取的密钥或证书等安全信息应存储在通用芯片安全区域，只允许写入安全密钥或证书，不允许向外读出密钥或证书等信息，安全区域架构基于芯片厂家或ARM的Trust Zone架构实现。</p>
+<p>对于安全证书获取及认证流程，需遵循一体化家庭小基站设备技术要求和安全管理要求。示意图如下：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/INbkEBaWKYQIKMiTZoHX.png" width="499" height="267" /></p>
+<p><strong>3.2.7 扩展性设计</strong></p>
+<p>3.2.7.1 协议栈软件更换扩展性</p>
+<p>一体化小基站在进行软件设计时对L1层软件进行接口封装，把高通封闭接口进行二次封装，使小基站具备装载中国电信自有L2和L3层软件的能力。</p>
+<p>图示如下：<img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/vuYrnPQc1hR3U4K1RGnr.png" width="490" height="518" /></p>
+<p>3.2.7.2 芯片兼容扩展性</p>
+<p>L1层设计应具备对专用芯片进行替换的软件基础，具备同时采用多家ARM架构专用芯片的设计基础。</p>
+<h2>四、总结</h2>
+<p>一个智能硬件PM不同于C端PM，智能硬件PM需要懂得产品的具体参数，并撰写出具体产品频数设计否则工程师无法撰写编码；另外智能硬件PM还要懂得产品的定义和用户对于产品能够实现功能的落地设计。</p>
+<p>本文是笔者带领的5G-AIoT团队实现智能硬件产品设计的一个智慧家居产品。可以给智能硬件产品经理起到示范参考的标本。</p>
+<h3>#专栏作家#</h3>
+<p>连诗路，公众号：LineLian。人人都是产品经理专栏作家，《产品进化论：AI+时代产品经理的思维方法》一书作者，前阿里产品专家，希望与创业者多多交流。</p>
+<p>本文原创发布于人人都是产品经理。未经许可，禁止转载。</p>
+<p>题图来自Unsplash, 基于CC0协议</p>
