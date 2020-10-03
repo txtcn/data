@@ -1,0 +1,981 @@
+➜国产EDA助力本土高端自动驾驶芯片量产
+http://www.sohu.com/a/421370226_166680	10794
+<p class="ql-align-justify">在这个每天产生大量数据的时代，汽车正在从传统的交通工具转变为智能化、网联化的移动终端，与此同时， AI 芯片正充当着承载数据的基石，为 AI 完成的每一次计算提供必要的算力支持。作为汽车智能化发展的核心，车载 AI 芯片可谓是皇冠上的明珠，以之为核心的汽车智能计算平台作为汽车的“大脑”，正全面赋能自动驾驶基础设施，加速智能汽车与自动驾驶的商业化落地进程。</p>
+<p class="ql-align-justify"><strong>国微思尔芯原型验证工具助力黑芝麻智能驾驶芯片研发</strong></p>
+<p class="ql-align-justify">作为全球智能驾驶计算平台领先企业，黑芝麻智能科技自 2016 年创立之初便深耕智能驾驶 AI 芯片、视觉感知核心技术开发与应用领域，通过与 <strong>EDA 解决方案提供商国微思尔芯</strong>（S2C）合作，黑芝麻于去年 8 月成功推出了面向 L2/L2.5 自动驾驶级别的华山一号 A500 芯片，并在不到300天的时间里顺利推出面向 L3/L4 自动驾驶级别的华山二号 A1000 芯片，为智能驾驶带来了高能效比、高算力利用率以及低延时的可靠国产解决方案。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200928/0351fc79e36d444f9a17cdd7116974ff.png" max-width="600" /></p>
+<p class="ql-align-center">华山二号 A1000 ，图源黑芝麻智能科技</p>
+<p class="ql-align-justify">在现有的边缘计算领域中，汽车作为少有的可以作为独立系统运行的完整计算平台并且承载着人身安全的重大责任，必须具备超高的计算性能、超高的能量效率以及超高的可靠性，具体落到车载芯片上，除满足上述要求外，还必须能够同时处理大规模的并发任务，而且需要进行多种模式的信息处理，这些都使车载计算芯片的复杂程度直线上升，再加上汽车行业独有的车规认证，任何一个步骤出现问题都将导致企业经济和市场机会的双重损失。</p>
+<p class="ql-align-justify">“我们把国微思尔芯的产品，从单颗 FPGA 的 Logic Module，到多颗 FPGA 的 Logic System，用在了我司面向自动驾驶的视觉感知芯片的原型验证上面，包括了芯片的 design 验证, firmware 以及 driver 的开发。其中核心 IP 的 design 包含了图像/视频处理、显示，计算机视觉，神经网络部分。”黑芝麻智能科技 ASIC 设计总监周斌添表示，“这些产品使用起来方便而且灵活，扩展性强，很大程度减少了我们的芯片原型验证时间。”</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200928/d503255e66bc4d8c86edffbe37eeaaca.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center">把 VU440 原型验证平台 和 Zynq ZCU102 进行连接，可以在验证 design 的基础上开发调试 firmware 和 driver。</p>
+<p class="ql-align-justify"><strong>多种产品+扩展子卡，大幅缩短开发流程</strong></p>
+<p class="ql-align-justify">原型验证非常适用于对嵌入式软件内容有高要求的项目，可以满足对时间敏感同时性能要求也较高的市场需求。其使得软件团队能够在最终的系统集成中尽早开始工作。</p>
+<p class="ql-align-justify">国微思尔芯的 Prodigy Logic Module 与 Logic System 系列产品是目前市场上最具竞争力、性价比最高的国产原型验证解决方案，黑芝麻智能科技先后分别采用了单颗 FPGA、双颗 FPGA 以及四颗 FPGA 的多种不同产品选项进行车用芯片开发。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200928/6c461142de794b19afda5c0c32ebcf98.jpeg" max-width="600" /></p>
+<p class="ql-align-center">黑芝麻采用的 Dual Prodigy Logic System 实物</p>
+<p class="ql-align-justify">这些业内领先的 Logic Modules/Logic Systems 以可扩展性、灵活性和可用性高着称，解决方案的优点包括：</p>
+<p class="ql-align-justify"><strong>· </strong>最具性价比的解决方案，满足不同设计容量和应用的需求</p>
+<p class="ql-align-justify"><strong>· </strong>模块化和一体化设计，提供最高的灵活性和性能</p>
+<p class="ql-align-justify"><strong>· </strong>完整的原型验证工具支持（自动分割和深度调试）</p>
+<p class="ql-align-justify"><strong>· </strong>丰富的应用接口子板库以快速构建目标原型系统</p>
+<p class="ql-align-justify">黑芝麻智能科技 ASIC 设计总监周斌添表示：“我们公司从成立之初就一直跟国微思尔芯保持密切合作，也一直在用国微思尔芯的 Prodigy 原型验证平台来验证我们的芯片原型。我们在 2019 年和 2020 年分别发布了华山一号和华山二号两颗面向自动驾驶的视觉感知芯片，这两颗芯片的<strong> IP 级设计验证再到系统级的设计验证，以及固件和驱动的开发都用到了国微思尔芯的解决方案</strong>。另外国微思尔芯原型验证平台的<strong>扩展子卡也很多</strong>，例如我们的设计中需要用到 HDMI 的显示子卡，一问国微思尔芯销售，就马上帮我们在国微思尔芯内部找到现成的符合需求的子板，省去了我们自己设计、生产的时间。”</p>
+<p class="ql-align-justify">目前，黑芝麻华山一号芯片正在量产中，且与国内头部主机厂关于 L2+ 和 L3 级别自动驾驶的项目也正在展开，预计 2021 年底，搭载黑芝麻华山二号芯片的车型也将正式量产！</p>
+➜比亚迪：比亚迪半导体已成为国内自主可控的车规级IGBT领导厂商
+http://www.sohu.com/a/421376644_166680	12477
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200928/6ffd43d762514291b73e16591274bad2.png" max-width="600" /></p>
+<p class="ql-align-justify">集微网消息，9月27日，比亚迪在接待机构调研时表示，经过十余年的研发积累和于新能源汽车领域的规模化应用，比亚迪半导体已成为国内自主可控的车规级IGBT领导厂商。</p>
+<p class="ql-align-justify">据公告显示，比亚迪半导体主要业务覆盖功率半导体、智能控制IC、智能传感器及光电半导体的研发、生产及销售，拥有包含芯片设计、晶圆制造、封装测试和下游应用在内的一体化经营全产业链。</p>
+<p class="ql-align-justify">此外，在工业级IGBT领域，比亚迪半导体的产品下游应用包括工业焊机、变频器、家电等，将为其带来新的增长点。在其他业务领域，比亚迪半导体也拥有多年的研发积累、充足的技术储备和丰富的产品类型，与来自汽车、消费和工业领域的客户建立了长期紧密的业务联系。 未来，比亚迪半导体将以车规级半导体为核心，同步推动工业、消费等领域的半导体发展，致力于成长为高效、智能、集成的新型半导体供应商。</p>
+<p class="ql-align-justify">在市场化战略布局方面，比亚迪表示，比亚迪半导体作为中国最大的车规级IGBT厂商，仅用42天即成功引入红杉资本中国基金、中金资本、国投创新等知名投资机构，迈出了比亚迪市场化战略布局的第一步。后续公司将加快推进比亚迪半导体分拆上市工作，并着手培育更多具有市场竞争力的子公司实现市场化运营，不断提升公司整体价值。（校对/LL）</p>
+➜中环股份：控股股东混合所有制改革完成，公司实控人将更变
+http://www.sohu.com/a/421377211_166680	12578
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200928/933f1c521c1a4086a78da7882b635f2e.png" max-width="600" /></p>
+<p class="ql-align-justify">集微网消息，9月27日，中环股份公告称，TCL科技受让天津津智国有资本投资运营有限公司及天津渤海国有资产经营管理有限公司分别持有的中环集团51%及49%股权，股权转让生效条件已达成，TCL 科技将持有中环集团100%股权。</p>
+<p class="ql-align-justify">依据《产权交易合同》约定，TCL科技已于近日支付了全部股权转让价款，且天津产权交易中心已出具本次交易《国有产权交易凭证》。本次变动，公司控股股东中环集团及其持股数量不变，TCL科技成为公司间接控股股东，公司实际控制人由天津市人民政府国有资产监督管理委员会变更为无实际控制人。本次变动后股权结构及间接控股股东基本情况如下：</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200928/ec5b57070d394411a67a395a7dc9b1e0.png" max-width="600" /></p>
+<p class="ql-align-justify">中环股份表示，本次变更对上市公司的人员独立、资产完整、财务独立不产生影响，上市公司将仍然具备独立经营能力，拥有独立的采购、生产、销售体系，拥有独立的知识产权，拥有独立法人地位，继续保持管理机构、资产、人员、生产经营、财务等独立或完整。（校对/LL）</p>
+➜上海贝岭:参股公司新洁能将于28日上市
+http://www.sohu.com/a/421376999_166680	12628
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200928/3f9680961f4d4730a6b2e3a6af1c3848.png" max-width="600" /></p>
+<p class="ql-align-justify">集微网消息，9月27日，上海贝岭晚间公告，公司的参股公司新洁能将于2020年9月28日在上海证券交易所正式挂牌上市，股票简称“新洁能”，股票代码“605111”。</p>
+<p class="ql-align-justify">截至本公告披露日，上海贝岭持有新洁能600万股股份，占其首次公开发行前总股本的7.91%，占其首次公开发行后总股本的5.93%。公司持有的新洁能上述股权自其上市之日起12个月内不得转让。</p>
+<p class="ql-align-justify">资料显示，新洁能为国内半导体功率器件设计龙头企业之一，主营业务为MOSFET等分立器件的研发和销售。公司销售的产品按照是否封装可以分为晶圆片和封装成品。公司目前已经形成沟槽型功率MOSFET(中低压)、超结功率MOSFET(高)两类主要产品系列，以及屏蔽栅沟槽型功率MOSFET(SGT)(中低压)、绝缘栅双极型晶体管(IGBT)和功率模块等新产品系列。</p>
+<p class="ql-align-justify">此外，新洁能目前拥有约500种型号的细分产品，产品广泛应用于消费电子、汽车电子、变频家电、新能源汽车及充电桩、LED等领域。公司各类产品的区别主要体现是产品在不同的电压平台下，使用合理及先进的设计技术和制造技术来实现功率器件低导通损耗与低开关损耗，从而提升能源转换效率。</p>
+<p class="ql-align-justify">据悉，在中国半导体行业协会发布的2016年及2017年中国半导体功率器件企业排行榜中，新洁能均名列“中国半导体功率器件十强企业”。2017-2019年，公司实现营业收入分别为50375.98万元、71579.03万元、77253.69万元；实现净利润分别为5189.11万元、14141.89万元、9820.95万元。（校对/LL）</p>
+➜*ST盈方：重组标的资产已完成过户，有望摆脱经营困境
+http://www.sohu.com/a/421377450_166680	12693
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200928/8fabcfe672fb420281a3a604f06353d5.png" max-width="600" /></p>
+<p class="ql-align-justify">集微网消息，9月26日晚，*ST盈方发布关于重大资产购买事项的进展公告称，重大资产购买事项已经得到公司及交易对方之一春兴精工相关股东大会审议通过，且《资产购买协议》的其他生效条件已满足，本次交易的各项协议已生效。</p>
+<p class="ql-align-justify">根据*ST盈方此前披露的重组方案，公司拟采用支付现金的方式，购买春兴精工(002547)、上海瑞嗔分别持有的华信科45.33%股权、5.67%股权；购买上海钧兴、上海瑞嗔分别持有的World Style 45.33%股权、5.67%股权，交易价格共计6亿元。交易完成后，*ST盈方分别持有华信科、World Style 51%股权。</p>
+<p class="ql-align-justify">同时，*ST盈方还将向绍兴舜元出售岱堃科技100%股权，以及上海盈方微拥有的对岱堃科技及其子公司美国盈方微1.02亿元的债权组成的资产包。</p>
+<p class="ql-align-justify">为满足*ST盈方本次重大资产购买的资金需求，公司与第一大股东舜元投资签署了《借款协议》，舜元投资将在《资产购买协议》生效后向公司提供本次重大资产购买的收购资金差额、且总金额不超过人民币3.4亿元无息借款。</p>
+<p class="ql-align-justify">根据《资产购买协议》约定，2020年9月22日，公司收到舜元投资向公司提供的无息借款2.83亿元，同日，公司向春兴精工、上海钧兴支付的首期股权转让款合计2.83亿元；并在2020年9月24日，公司收到舜元投资向公司提供的无息借款5667万元，于9月25日，公司将该笔款项支付至上海瑞嗔，本次交易完成后，*ST盈方分别持有华信科、WORLD STYLE 51%股权。</p>
+<p class="ql-align-justify">据公开资料显示，*ST盈方是以集成电路设计研发为核心，通过供应链整合优化智能终端，以大数据运营为支撑提供系统服务的智能系统运营商。值得一提的是公司已经连续三年亏损，重组标的资产完成过户后，有望逐步摆脱经营困境。（校对/LL）</p>
+➜主要生产5G滤波器，赣州讯康科技50条产线正式投产
+http://www.sohu.com/a/421402765_166680	21769
+<p class="ql-align-justify">集微网消息，日前，赣州讯康电子科技有限公司车间50条生产线已正式投产，预计到今年年底产值可达5千万。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200928/7b94b3eb78a04a67bdc618c4faa43e47.png" max-width="600" /></p>
+<p class="ql-align-justify">讯康科技是东莞市讯康电子科技股份有限公司全资子公司，总投资10亿元，集研发、生产、销售、服务为一体，自创TNK品牌，拥有近百项实用新型专利及发明专利，主要产品为5G滤波器。</p>
+<p class="ql-align-justify">该项目于2019年2月11日正式登记注册，2019年10月主体厂房开始装修，今年7月试产以来，公司营收稳定增长，8月份实现主营业务收入2004万元，在试投产阶段已达到企业入规标准。</p>
+<p class="ql-align-justify">目前，讯康科技车间装修已完成70%，预计年底可实现全面投产，届时生产线将增至200条，年产值可达5亿元。（校对/图图）</p>
+➜远见与谋略，国微集团国产EDA行进之路
+http://www.sohu.com/a/421403418_166680	21864
+<p class="ql-align-justify">集微网消息，1994年，如果有人跟你聊EDA，那你肯定满头问号；但如果放在今天来聊EDA，也许街边下棋的大爷也能跟你“唠叨”几句。</p>
+<p class="ql-align-justify">时隔26年，当白耿回想当初为什么选择“EDA”专业，依然神采熠熠。也正是因为当初对于编程的兴趣使然，让其在日后的职业生涯中，更加坚定了EDA软件研发的工作。</p>
+<p class="ql-align-justify">当国外EDA研究处于“因循守旧”状态时，喜欢“挑战”的白耿毅然决然的选择回国发展，为国产EDA添砖加瓦。</p>
+<p class="ql-align-justify">彼时（2017年），国微集团正着手做国产EDA，招揽国内外优秀人才，引进国外先进技术。机缘巧合下，白耿选择加入国微集团，任职首席技术官。</p>
+<p class="ql-align-justify">2020年9月16日，集微网有幸在国微集团深圳与白耿博士进行了深度交流，在与白耿博士交谈的过程中，“挑战、生命力、价值”等词被频频提及，从这位归国研发工程师身上，我们看不到任何骄傲自满，有的只是对技术的满腔热血与理想抱负。也因此，我们得以窥得国微集团布局EDA的深谋与远虑。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200928/4034f1f18ac4408c95c7fcb1a071a658.png" max-width="600" /></p>
+<p class="ql-align-center">国微集团首席技术官白耿博士</p>
+<p class="ql-align-justify"><strong>契机</strong></p>
+<p class="ql-align-justify">1994年，白耿在南开大学攻读硕士学位，当导师拿出两个研究课题（模拟电路设计与软件研发）供其选择时，生性喜欢“挑战”的他选择了软件研发方向，也是南开大学微电子专业首个用软件完成论文写作的学生。</p>
+<p class="ql-align-justify">南开大学硕士毕业后，白耿前往伊利诺伊大学攻读博士，最后用“EDA方向”论文拿下博士学位。</p>
+<p class="ql-align-justify">彼时（1990-2000年）的国外EDA产业正处于黄金发展期，很多最经典的EDA算法和最有生命力的工具均诞生于这个时期。</p>
+<p class="ql-align-justify">对于白耿等年轻人来说，产业正处于行业大势面前，蓬勃的发展机遇散发出的诱惑力，让任何一个有理想抱负的人都无法抵御。而这次的选择，也正式奠定了其随后近20年的EDA软件研发之路。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">2000-2018年，国外EDA产业发展走入商业化轨道，技术更新缺乏新意，变革更是鲜少有之，产业逐渐呈现“夕阳化”。此时国内EDA产业正处于兴起阶段，很多新的概念、新的工具不断涌现出来，犹如20年前的国外黄金期。</p>
+<p class="ql-align-justify">这让喜欢挑战的白耿再次热血沸腾，开始时刻关注国内EDA的行业发展。也正是在这时期（2017-2018年），国微集团组建EDA研发团队，并得到了王阳元院士、郝跃院士、魏少军教授以及张玉明院长的鼎力支持，开始从国外引进先进技术与技术人才。</p>
+<p class="ql-align-justify">机缘巧合下，白耿成为了第一批从国外引进的技术人才。谈及为何选择国微集团，白耿的回答言简意赅，“战略眼光、实干精神、企业文化，基于上述三点，我选择加入国微集团，与团队一起合作，参与开发出有影响力、有生命力的EDA工具，为国家EDA系统生态的建设贡献一份微薄力量。”</p>
+<p class="ql-align-justify"><strong>远见</strong></p>
+<p class="ql-align-justify">2018年，国微集团完成第一批人才及关键技术引进工作，研发团队初步搭建完成。同年12月17日，获批国家重大科技专项。</p>
+<p class="ql-align-justify">这一前瞻性布局，即为其国产EDA研发工作争取了三年的宝贵时间，夯实了其国产EDA软件研发基础，也为其2020年能够交付“数字芯片设计全流程EDA系统”，提供了有力保障。</p>
+<p class="ql-align-justify">如果2020年再来做这一布局，技术及人才引进工作审批时间将无法估量，国产EDA软件也无法在短时间完成技术研发，国产化替代进程将被放缓。</p>
+<p class="ql-align-justify">白耿介绍，正是因为几位院士、教授和集团领导的远见，提前布局了重大专项的开发工作，为国微集团争取了三年时间，用来引进关键技术、建立完整的研发团队、消化吸收、进一步自主创新。</p>
+<p class="ql-align-justify">集微网了解到，重大专项将于今年底完成验收工作，此次验收主要有8个EDA工具，包括布局布线、硬件仿真加速、时序分析、功耗分析、物理验证、形式验证、逻辑仿真、逻辑综合。</p>
+<p class="ql-align-justify">验收完以后，国微集团接下来要做的，就是继续丰富工具种类，投入更多的研发力量和资金去设计更多的EDA工具，如可制造性设计（DFM）、可靠性设计（DFR）、成品率设计（DFY）、可测试性设计（DFT）等。</p>
+<p class="ql-align-justify">与此同时，其还将通过合作或者引进的方式，吸引国内外优质的EDA企业，将他们开发的好的EDA工具整合到其平台，并保证EDA工具间能够形成有机的联合过程。</p>
+<p class="ql-align-justify">“国微集团要做的不止是重点开发几个关键的EDA工具，解决当下国内集成电路设计的卡脖子的问题，而是提供整体解决方案。”白耿表示，国微集团将打造EDA平台，保持开放心态，集成国内外优秀的算法、工具来形成全流程解决方案，让国内头部集成电路设计产业来用，打磨工具的同时去服务集成电路设计产业，形成良性循环，国产EDA产业才能够建立起来。</p>
+<p class="ql-align-justify"><strong>赶超</strong></p>
+<p class="ql-align-justify">1991年，国内首款EDA系统“熊猫”问世，随着国外EDA工具进入中国市场，EDA工具开始从自主推进变成严重依赖。</p>
+<p class="ql-align-justify">2008年，国内EDA软件研发再次起航，发展至今，国内EDA厂商如华大九天、概伦电子等企业，开始获得业界认可。遗憾的是，在数字芯片设计领域，缺少核心工具模块、无法支撑全流程设计等问题，正在掣肘产业进一步发展。</p>
+<p class="ql-align-justify">此时再回头看，国内数字EDA已经远远落后于国外近20年的时间。想要追赶，谈何容易。但若放弃，将继续面临“卡脖子”困境。</p>
+<p class="ql-align-justify">面对近20年的技术差距，国微集团选择“另辟蹊径”的方式来减小时间差。</p>
+<p class="ql-align-justify">一方面，在建立国产EDA平台时，国微集团的开发方式与国外恰好相反。其选择引进设计思想先进、整体软件架构较好的布局布线关键技术，再将里面的通用服务引擎如时序、功耗等工具性能分离出来，形成独立工具。</p>
+<p class="ql-align-justify">而国外的EDA公司发展之路是通过不停并购的方式，每套工具的开发公司不同，工具与工具之间的源程序代码也是不同的，对于物理分析的数学模型在细节上就会出现不一样的情况。</p>
+<p class="ql-align-justify">“当每一个单独的工具整合在一起时就可能出现报出的结果不一致，这就造成在芯片设计时性能起起伏伏，迭代优化与收敛速度不理想。”白耿介绍，国微集团开发的工具虽然也是独立的，但出自完整的源程序代码，拥有统一的数据平台，工具和工具之间信息交换效率高，分析的结果一致性也很高，这就使得芯片设计的收敛速度更快，迭代优化的周期更短。</p>
+<p class="ql-align-justify">另一方面，国微集团会在传统EDA工具中加入新兴技术，如AI算法。目前国内AI算法已经处于国际领先水平，国微集团也在尝试将国内AI算法的突破融合到EDA工具里面去，在目前开发的EDA产品中已经有多个项目跟AI相关。</p>
+<p class="ql-align-justify">“虽然2018年美国电子复兴计划中的电子设备智能设计——IDEA：Intelligent Design of Electronic Assets也在推进如何将传统EDA工具智能化。但由于国外客观条件的限制，在一定程度上阻碍了其AI技术的发展。”白耿表示，在传统EDA算法暂时落后的情况下引进新的血液——AI技术，我们有信心未来5年后国产EDA产品在一些尖端的领域能够赶超国外的技术。</p>
+<p class="ql-align-justify">集微网了解到，目前国微集团重点研发的8个工具中，产品性能对标国际先进水平的同时，在功耗、速度及面积方面还可以达到10%—15%的领先性。</p>
+<p class="ql-align-justify">白耿介绍，国微集团的通用服务引擎、时序、功耗跟签核都来自统一的源程序代码，在布局布线的时候不需要留过多设计余量，同样芯片速度下，可以保证低功耗的同时提升晶圆面积使用率，降低生产成本。</p>
+<p class="ql-align-justify"><strong>破局</strong></p>
+<p class="ql-align-justify">明确的先进性与方法学思路做指引，虽然可以在追赶的进程中加快速度，但现实面临的困境仍然需要去一一攻克。</p>
+<p class="ql-align-justify">摆在国微集团面前的，除了技术的差距之外，人才供给、产业生态、应用环境等问题也在掣肘其进一步发展。</p>
+<p class="ql-align-justify">如何突破当前困境，国微集团也有其考量。</p>
+<p class="ql-align-justify">2019下半年到2020年，国内涌现出众多EDA公司，对于行业而言，百花齐放对产业发展颇有益处，但多个公司做同样的工具、或者各公司间抢夺研发资源，等情况也客观存在，无形中会消耗本就不丰富的国产EDA资源。</p>
+<p class="ql-align-justify">白耿表示，这个问题需要从国家层面去考虑，进行整合，才能保证国产EDA更有效、更健康、长足的发展。</p>
+<p class="ql-align-justify">在横向联合方面，发掘国内现有的优秀算法、点工具，通过投资、融合、合作开发（高校）等方式，整合国内的优秀数字芯片的EDA工具到国微集团的设计平台中来，为国产数字芯片设计流程提供完整的解决方案。</p>
+<p class="ql-align-justify">在人才培育方面，国微集团一方面通过内部经验传承的方式来快速培育研发团队知识储备能力，另一方面将通过与高校联合的方式，如西安电子科大、上海交大、东南大学等，通过建立联合实验室，共同培养在读研究生等方式、栽培EDA方向的人才。</p>
+<p class="ql-align-justify">在开拓创新方面，国内科技领域在人工智能（AI，Machine Learning）、大数据、云计算方面的发展在国际处于领先位置。</p>
+<p class="ql-align-justify">国微集团在开发国产EDA 平台生态的同时，将联合国内其他研究单位、高校，着力为AI、云计算、异构加速算法在EDA 领域内开辟各种适用的场景。争取在人工智能EDA的发展方面，可以领先于其他国家。</p>
+<p class="ql-align-justify">在生态建设方面，EDA处于半导体产业的上游，EDA工具的成熟、技术突破升级，很大程度依赖于和芯片设计公司、半导体制造厂商之间的紧密合作和互动。其中，与半导体制造厂商的合作尤其重要。</p>
+<p class="ql-align-justify">通常，在先进工艺开发阶段，半导体厂商只会邀请国际三大EDA公司参与到先进工艺参考流程（reference flow）的构建过程中。其他中小EDA公司要比三大EDA公司晚一到两年的时间才可以获得同样工艺的详细信息，才能对自己的EDA工具进行功能增强、准备工艺文件等工作。</p>
+<p class="ql-align-justify">白耿强调，建立生态必须让IC设计、EDA、晶圆制造厂协同起来，才能让国内半导体行业健康发展。但从当前国内环境来看，需要政府及资本层面进行有机联合。</p>
+<p class="ql-align-justify"><strong>小结</strong></p>
+<p class="ql-align-justify">从入局时间年限来看，国微集团的EDA研发之路似乎刚刚开启；但从研发团队的经验维度来看，其已经深耕EDA产业长达10年以上。我们期待未来的时间里，国微集团能给EDA产业界带来更多的惊喜。</p>
+➜上市大涨185%，信号链芯片第一股芯海科技成功登陆科创板
+http://www.sohu.com/a/421403538_166680	21905
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200928/d0ad82b3b2b54086966690342cc5c50d.png" max-width="600" /></p>
+<p class="ql-align-justify">集微网消息，9月28日，芯海科技在上交所科创板正式挂牌上市，公司证券代码为688595，发行价格22.82 元/股，发行市盈率为61.14倍。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200928/026373a35eec4f33b331b0d6c3fa7b01.png" max-width="600" /></p>
+<p class="ql-align-justify">截至发稿时，芯海科技股票报价65.05元/股，涨幅185.06%，总市值达到65亿元。</p>
+<p class="ql-align-justify">芯海科技董事长卢国建在上市路演时表示，芯海科技是一家集感知、计算、控制于一体的全信号链芯片设计企业，专注于高精度ADC（模拟/数字转换器）、高性能MCU（微控制单元）、测量算法以及物联网一站式解决方案的研发设计，产品广泛应用于智慧健康、压力触控、智慧家居感知、工业测量、通用微控制器等领域。</p>
+<p class="ql-align-justify">自2003年成立以来，芯海科技就立志做中国的TI/ADI（德州仪器/亚德诺半导体技术有限公司）。17年来，芯海科技持续深耕高精度ADC和高可靠性MCU领域，高精度ADC技术处于国内领先、国际先进水平。上市后，公司将成为科创板全信号链芯片设计企业第一股。模拟芯片是集成电路设计中的皇冠，公司深耕的ADC设计技术是皇冠上的明珠，技术难度和门槛很高。芯海科技作为国内高精度ADC领军企业，ADC设计技术水平处于国内领先，最早打破国际垄断，通过持续研发创新，在智慧健康测量、压力触控等领域正引领全球技术发展趋势。</p>
+<p class="ql-align-justify">关于公司的发展战略，卢国建指出，未来公司将继续根据下游市场需求，顺应物联网、人工智能、汽车电子、医疗工控等新兴应用领域发展趋势，发挥自身在芯片领域的研发及设计优势，持续推出具有市场竞争力的芯片及解决方案，提高产品的品牌知名度，拓展应用领域及下游客户覆盖范围，巩固公司在芯片设计领域的市场地位，提升在感知测量和人工智能等细分领域的芯片市场份额和竞争力，成为行业领先的集成电路设计企业。（校对/Candy）</p>
+➜建成后可年产9000万颗光芯片，奥亿特科技5G光通信项目落户湖北宜昌
+http://www.sohu.com/a/421404031_166680	22141
+<p class="ql-align-justify">集微网消息，9月28日，9月湖北宜昌市重大项目签约项目26个，协议总投资108.24亿元，涉及精细电子、5G光通信等领域。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200928/c65bd1eed07047f2894d3ecc0ffbf08f.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：三峡日报</p>
+<p class="ql-align-justify">以下为此次签约的部分项目：</p>
+<p class="ql-align-justify">武汉强盛科技有限公司精细电子专用材料项目，项目总投资3亿元，占地50亩，选址枝江姚家港化工园，新建精细电子专用材料项目，主要产品为精细电子专用材料，项目建成投产后，可实现年产值5.5亿元。</p>
+<p class="ql-align-justify">武汉奥亿特科技有限公司5G光通信项目，项目总投资1亿元，建设厂房约5000平方米，选址枝江电子信息产业园，主要产品为2.5G-10G速率的光芯片，项目建成后可实现年产光芯片9000万颗，产值3亿元。</p>
+<p class="ql-align-justify">碳纤维汽车部品研发中心项目，项目总投资1亿元，新建汽车复合材料研发中心及示范生产线。</p>
+<p class="ql-align-justify">东莞市瑞鹏机器人自动化有限公司AGV智能机器人项目，项目总投资0.55亿元，选址伍家岗区工业园区，占地约5000平方米，建设生产厂房1栋，新购二条AGV智能机器人生产线。（校对/小如）</p>
+➜韩国半导体材料、组件和设备供应商反对专利诉讼“发现制度”
+http://www.sohu.com/a/421404463_166680	22363
+<p class="ql-align-justify">集微网消息（文/holly），据businesskorea报道，韩国半导体材料、组件和设备供应商反对韩国政府为保护专利权而计划引入的“发现制度”。他们称，在申请专利数量上占绝对优势的外国半导体企业，将通过滥用该制度提起大量专利侵权诉讼。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200928/b86cd5180ba544c8802a2939ea436449.png" max-width="600" /></p>
+<p class="ql-align-center">图源：businesskorea</p>
+<p class="ql-align-justify">上个月，韩国知识产权局(KIPO)对《专利法》提出了一项修正案，以便引入“发现制度”，即由法院指定或原告挑选的专家可以在专利诉讼前在被告的制造工厂收集证据。根据KIPO的说法，受害者不再需要证明专利侵权，可以迅速收集关键证据，该制度的引入可减少诉讼的时间和成本。</p>
+<p class="ql-align-justify">但韩国一些规模较小的半导体材料、组件和设备供应商则担心，这一制度将导致一系列诉讼，严重阻碍他们的商业活动。其中一位供应商代表解释说，“拥有更多专利的外国公司会频繁提起侵权诉讼，业内大多数韩国公司都无力应对。”</p>
+<p class="ql-align-justify">据悉，目前外国半导体材料和零部件供应商在韩国的平均专利申请数量为578件，而韩国同类企业的平均专利申请数量为29件。尤其是日本企业很可能会利用此制度，加上日本政府的出口限制，继续向韩国施压。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜楚江新材：子公司顶立科技高纯碳粉已实现小批量生产
+http://www.sohu.com/a/421404970_166680	22470
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200928/8ddb769a29a1446c9b065a7e44d1d82c.png" max-width="600" /></p>
+<p class="ql-align-justify">集微网消息，9月27日，楚江新材在互动平台上表示，公司子公司顶立科技在碳化硅单晶方面主要从事SiC单晶中的高纯C粉的研制，<strong>掌握了将5N及以下的C粉提纯到6N及以上的技术</strong>，研制开发的高纯碳粉、高纯碳纤维隔热材料、高纯石墨制品性能指标达国际领先水平，<strong>目前公司生产的高纯碳粉已实现小批量生产</strong>，研发阶段已经基本完成，但是到工程化和产业化阶段，还有一些任务需要完成。</p>
+<p class="ql-align-justify">企查查显示，楚江新材是一家金属材料生产商，是顶立科技控股母公司，公司主要产品包括铜合金线材、黄铜合金板带材、锡磷青铜合金板带材、导电铜杆、特种钢材及家具管等，以及连续式预氧化炉、真空退火炉、真空脱脂烧结一体炉等设备。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200928/4b60d3ca17294d5caa5c6501e1ab05f7.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：企查查</p>
+<p class="ql-align-justify">（校对/若冰）</p>
+➜realme新机入网，支持65W超级闪充10月发布
+http://www.sohu.com/a/421406020_166680	22791
+<p class="ql-align-justify">集微网9月28日消息（文/叶子），近日，一款型号为RMX2173的realme新机入网，预计该机就是realme副总裁徐起所说的国庆节后发布的真香爆款机型。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200928/501074fbdf994207b35792784460f968.png" max-width="600" /></p>
+<p class="ql-align-center">图源：工信部</p>
+<p class="ql-align-justify">据工信部数据，realme新机采用6.43英寸AMOELD屏幕，背面为矩形相机布局，内含四个摄像头，包括4800万像素+800万像素+200万像素+200万像素，前置则是一颗1600万像素自拍镜头。机身尺寸为160.9×74.4×8.1mm，重量为175g，提供灰和幻彩两种配色。</p>
+<p class="ql-align-justify">核心配置上， realme新机搭载CPU主频为2.4GHz的芯片，提供6/8GB RAM+128/256GB ROM，电池容量为2100mAh（双电芯），支持65W有线闪充。</p>
+<p class="ql-align-justify">对于Q系列，realme的官方定位是惊喜越级，据说该机售价非常有性价比，起售价或在1000元左右。 据数码博主透露，该机将于10月13日发布，还支持屏幕指纹识别，将和基于Android 11定制的realme UI 2.0一同亮相，值得期待。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜生产全面替代进口高品质半导体封装设备？江苏国芯智能装备项目开工
+http://www.sohu.com/a/421406256_166680	23003
+<p class="ql-align-justify">集微网消息，9月26日，常州金坛区举办2020年重点项目集中开工暨江苏国芯智能装备项目开工仪式。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200928/3739888af1184365af716397676195a7.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：金坛网</p>
+<p class="ql-align-justify">此次集中开工的重点项目共有16个，涵盖“三新一特”产业项目和重点民生工程，总投资超200亿元。</p>
+<p class="ql-align-justify">据金坛网报道，其中，国芯智能半导体封装设备项目计划总投资9.8亿元。项目建成后可生产全面替代进口的高品质半导体封装设备，成为具有国际竞争优势的“封装半导体设备制造商”，达产后预计可实现年销售收入20亿元。</p>
+<p class="ql-align-justify">江苏国芯智能装备有限公司总经理王忠平表示，金坛新的项目是研发、生产和销售一条龙的，而且我们还有一个想法，借助金坛快速的走向IPO。（校对/图图）</p>
+➜中国企业500强出炉：手机产业仅14家上榜！
+http://www.sohu.com/a/421406803_166680	23094
+<p class="ql-align-justify">集微网消息，9月28日，中国企业联合会、中国企业家协会发布“2020中国企业500强榜单”。据集微网统计，手机产业链相关企业有14家上榜。其中，华为投资控股有限公司、正威国际集团有限公司和联想控股股份有限公司分列手机行业前三位。</p>
+<p class="ql-align-justify">以下是中国企业500强手机产业链榜单：</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200928/b38b993e550c475b98a99b3cf33a09a1.png" max-width="600" /></p>
+<p class="ql-align-justify">此外，从2020中国企业500强的数据分析来看，呈现以下四个特点：</p>
+<p class="ql-align-justify">一是规模和效益增长态势良好。2020中国企业500强实现营业收入86.02万亿元，比上年增加了6.92万亿元，增速为8.75%；实现净利润38924.14亿元，比上年增加3603.19亿元，增速为10.20%。</p>
+<p class="ql-align-justify">二是结构调整继续深化。2020中国企业500强中先进制造业和现代服务业企业数量分别增加了6家和8家，而传统制造业企业有所减少。</p>
+<p class="ql-align-justify">三是研发创新成效明显。2020中国企业500强研发投入保持持续增加态势，研发强度维持在1.61%，达到历史最高值水平；发明专利占全部专利的比重为39.08%，比上年500强提高了2.47个百分点。</p>
+<p class="ql-align-justify">四是国际地位更加突出。2020年中国上榜世界500强企业数量为133家。其中，内地上榜企业为121家，比上年增加5家。（校对/Jack）</p>
+<p class="ql-align-justify">以下是中国企业500强名单：</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200928/4fc7f9ae8fe34e11b1c6e486045f7b07.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200928/2940a0e49e81452fa11941a86ce4052a.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200928/35cd353f01a4496c9364fabfd75119ff.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200928/b5f82c119d024d1084c38c43aea59313.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200928/9ba08b77889242bb903fc4ea6238c013.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200928/51c24e05fcb848af84d374b78e07a783.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200928/f08f404a1e804746b379197086edd1bf.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200928/c29512d97f1d428eb346827671185ac4.png" max-width="600" /></p>
+➜加速 5G 毫米波部署，三星推出Link Cell 小基站
+http://www.sohu.com/a/421406989_166680	23272
+<p class="ql-align-justify">集微网消息（文/小山）据台媒科技新报报道，为加快5G毫米波（mmWave）部署，三星电子推出全新小型基站Link Cell，可用来强化室内的5G毫米波信号，为以5G网络为基础的办公室、娱乐场所、商场、体育馆、饭店等场所提供高覆盖率的5G毫米波信号，让5G使用体验更加顺畅。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200928/bb073f86393f479ca12059fae8155e22.png" max-width="600" /></p>
+<p class="ql-align-center">（图源：网络）</p>
+<p class="ql-align-justify">三星网络业务执行副总裁兼研发部主管Jaeho Jeon表示，三星为无线运营商推出Samsung Link，以扩展5G网络的功能并无缝连接室外和室内的5G体验。</p>
+<p class="ql-align-justify">作为首批商用的5G毫米波室内小型蜂窝网络之一，Link Cell能协助无线运营商将5G服务带到各个种场所。</p>
+<p class="ql-align-justify">同时，新推出的小型基站Link Cell第一个版本支持28GHz，并且可以结合4个100MHz带宽，提供更高容量及高速下载功能。另外，Link Cell也可以快速、简单安装，能像WiFi AP一样，放置在墙壁或天花板上使用，并且可通过无风扇的冷却方式有效降低噪音。除此之外，Link Cell还可以针对RF的性能做出最佳的调整，让5G移动网络不论在室内或是从外部连接至室内时，都能无缝接轨，确保高质量的联网效果。</p>
+<p class="ql-align-justify">据悉，目前已确定采用该产品的运营商有美国的Verizon，该公司期能藉此扩展其5G超宽带的覆盖范围。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜美ITC推迟LG和SK电池诉讼案终裁日期
+http://www.sohu.com/a/421410080_166680	24189
+<p class="ql-align-justify">集微网消息（文/holly），美国国际贸易委员会（ITC）日前发布公告称，LG Chem（以下简称“LG”）和SK Innovation （以下简称“SK”）电池专利诉讼案的最终裁决由原来的10月5日推迟至10月26日。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200928/c8a97df5fcd341b6825ef0089f3fc937.png" max-width="600" /></p>
+<p class="ql-align-center">图源：businesskorea</p>
+<p class="ql-align-justify">ITC没有解释终裁推迟的的原因，但行业分析认为，受疫情的的影响很大。由于疫情，ITC正在进行的其他诉讼已经推迟了一个月或更长时间。</p>
+<p class="ql-align-justify">据悉，两家公司的专利纠纷由来已久，LG向ITC和美国法院提起诉讼，指控SK涉嫌有计划、有组织地通过雇佣其前工程师窃取商业机密。ICT于2020年2月14日做出了对SK的违约判决，如果该决定不变，SK将被禁止向美国出口电池、模块、包装以及相关零部件和材料。此外，ICT于2020年4月17日宣布，接受SK对与LG诉讼进行复审的请求并将在今年10月5日作出最终裁决。</p>
+<p class="ql-align-justify">此前业内人士认为，赢得ITC有利裁决的LG正在加大对SK的压力，要求其尽快达成协议。据悉，两家公司在和解资金方面存在很大分歧，牵扯数额可能从5000亿韩元到数万亿韩元不等。</p>
+<p class="ql-align-justify">韩联社报道指出，终裁延期是否会影响ITC最终裁决的结果，有各种各样的猜测。韩媒分析ITC的最终裁决可能有三种情况。</p>
+<p class="ql-align-justify">其一的可能性最大的，即维持SK的违约判决；其二是在保持初裁不变的基础上，进一步审查对SK的裁决是否符合美国的公共利益。SK正在美国佐治亚州建立电池厂，如果ITC举行听证会，大多数人认为SK在美国持续电池业务符合美国及其公司的利益，那SK就有在美国经营电池工厂的可能性。其三是对2月份的裁决发出重审命令。</p>
+<p class="ql-align-justify">不过有业内人士指出，无论ITC的结果如何，如果两家公司反复提出上诉，则诉讼很可能会延长3至4年或更长时间。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜华为哈勃投资光电转换器件研发商芯视界微电子，后者主营固态激光雷达芯片等
+http://www.sohu.com/a/421410263_166680	24251
+<p class="ql-align-justify">集微网消息，企查查显示，9月27日，南京芯视界微电子科技有限公司（简称“芯视界微电子”）发生工商变更，公司新增股东哈勃科技投资有限公司、南京芯视晶源电子科技合伙企业(有限合伙) ，同时注册资本由131.25万元增加至145.06万元，增幅为10.53%。</p>
+<p class="ql-align-justify">工商信息显示，南京芯视界微电子科技有限公司成立于2018年，是一家光电转换器件研发商，法定代表人为李成，经营范围包含：电子科技、信息科技、光学科技、半导体芯片、电子元器件、电子产品、计算机软硬件等。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200928/2232d0bd45814d95885c82806d846d18.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：企查查</p>
+<p class="ql-align-justify">芯视界微电子官方消息显示，芯视界微电子拥有先进的光电转换器件设计和单光子检测成像技术，主营固态激光雷达芯片、大数据中心超高速光电互联芯片及系统解决方案。2018年6月，南京芯视界获得峰瑞资本、江北智能制造产业基金领投的数千万元Pre-A轮战略投资，并全资收购硅谷芯片设计公司（visionICs LLC）。（校对/若冰）</p>
+➜上市大涨44%，新洁能正式登陆上交所
+http://www.sohu.com/a/421410354_166680	24279
+<p class="ql-align-justify">集微网消息，9月28日，新洁能在上海证券交易所主板上市，公司证券代码为605111，发行价格19.91元/股，发行市盈率为22.99倍。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200928/0e352c8e74ce497d8d1e59d46167bdc5.png" max-width="600" /></p>
+<p class="ql-align-justify">截至发稿时，新洁能股票报价28.67元/股，涨幅44%，总市值达到29亿元。</p>
+<p class="ql-align-justify">新洁能董事长、总经理朱袁正表示，公司成立于2013年1月，专业从事MOSFET（金属—氧化物半导体场效应晶体管）、IGBT（绝缘栅双极型晶体管）等半导体芯片和功率器件的研发设计及销售。公司是专业化垂直分工厂商，芯片主要由公司设计方案后交由芯片代工企业进行生产，功率器件主要由公司委托外部封装测试企业对芯片进行封装测试而成。公司已初步完成部分先进封装测试生产线的建设，将部分芯片自主封装成品后对外销售。公司产品系列齐全，广泛应用于消费电子、汽车电子、工业电子以及新能源汽车/充电桩、智能装备制造、物联网、光伏新能源等领域。自2016年以来，公司连续4年名列中国半导体行业协会发布的“中国半导体功率器件十强企业”，为国内领先的半导体功率器件设计企业之一。</p>
+<p class="ql-align-justify">关于公司的发展战略，朱袁正表示，作为国内半导体功率器件领先企业，公司将依托国家对半导体等战略新兴行业发展的战略支撑，专注于中高端半导体功率器件和模块的研发设计及销售。在保持MOSFET产品技术和市场优势基础上，公司将不断引进各类管理、技术、营销人才，构建高效、现代化的经营管理体系，进一步拓展MOSFET产品、重点深化IGBT产品，成为国内自主创新、技术领先、品质高端的自主品牌的优质企业。同时，公司将进一步拓展芯片加工产业，持续整合半导体功率器件封装测试环节垂直产业链，掌控先进半导体功率器件封装产线并布局SiC/GaN（碳化硅/氮化镓）宽禁带半导体功率器件，进一步强化企业核心竞争力，加快发展成为国际一流的半导体功率器件企业。（校对/Candy）</p>
+➜每日精选丨董明珠称格力渠道基本零库存；删差评收费几十元到数千元不等
+http://www.sohu.com/a/421410634_166680	24335
+<p class="ql-align-justify">集微网9月28日消息（文/数码控），对于公司的库存，董明珠还是很自信的。格力电器董事长董明珠在《至少一个小时》节目上表示，格力并没有因为疫情而财务作假，现在渠道库存只有三百万台，基本上是零库存状态，要想一下发力几百个亿也不是问题。<strong>希望董明珠说的是真的，毕竟管理企业的产品库存也是一门大的学问。</strong></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200928/5acfeb7d362548038e8a89884e5402ea.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：微博</p>
+<p class="ql-align-justify">消费者给产品打差评，对商家来说可是得花费一番功夫去删除。有媒体尝试在网上搜索，发现许多所谓的“删差评公司”，及对方留下的QQ号码等联系方式。媒体任意咨询了其中一名客服，对方称根据不同平台，收费几十到数千元不等。当媒体询问删差评的方式和渠道时，多家“删差评公司”均表示不方便说，但可以保证绝对安全。<strong>删差评也能成为一门生意，真是让人汗颜，对于商家而言，为了避免被打差评，还是要努力提高产品质量与服务才行。</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200928/e6436c10de6f4c82a026ca865388e043.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：微博</p>
+<p class="ql-align-justify">中秋节快要来临，商家们开始对月饼下手了。近日重庆涪陵在晒秋节上推出多种特色月饼供市民游客免费品尝，月饼大小各异，最大的直径近1米。月饼有传统的豆沙馅、五仁馅、牛肉馅，还有苦瓜馅、榨菜馅等，榨菜月饼以咸辣为主，吸引大量市民游客前来品尝。<strong>奇葩月饼的登场，一方面说明了人民群众的物质生活相当丰富，另外一方面也说明月饼的创新刻不容缓。</strong></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200928/aa288dafdbea45e989e197106e1f2acb.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：微博</p>
+<p class="ql-align-justify">阿里巴巴创始人马云现在鼓励人创业。马云认为，数字经济正在聚集强大的内需力量，中国巨大的市场和潜力就是撬动下一波经济发展的巨大发动机。现在是最好的创业时机。所谓成功的企业，都不是今天做出来的，都是20年或30年前对未来的判断决定了今天。<strong>马云说的有点道理，可是现在的创业需要很强大的技术支撑，技术上不够专业的，还是算了吧。</strong></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200928/33f9fbbf7f174d28845da23fc2ffe210.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：百度</p>
+<p class="ql-align-justify">为了吸引消费者的注意力，特斯拉员工也是使出了浑身解数。特斯拉Model S、Model X和Model 3亮相北京车展。9月26日展台上员工还集体来了段舞蹈，颇有马斯克2020年1月来上海工厂尬舞的风范。<strong>特斯拉的产品虽然与燃油车有一段差距，但是跟其他国产新能源车相比，它还是标杆一般的存在。</strong></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200928/06ef4bc466b04e20948f8abb898f1b8f.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：微博</p>
+<p class="ql-align-justify">更多的趣事，就在每日精选。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜美国通过投资吸引半导体厂回归很难；适应海外挑战是全球化扩张必须面对的
+http://www.sohu.com/a/421410549_166680	24368
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200928/e79fb9d6a97549afbc7ebf7002dd61a3.png" max-width="600" /></p>
+<p class="ql-align-justify"><strong>【集微发布】中国芯上市公司存货周转天数排行：平均152天，最长807天</strong></p>
+<p class="ql-align-justify">存货周转分析指标是反映企业营运能力的指标，可用来评价企业的存货管理水平，还可用来衡量企业存货的变现能力。一般来说，价值投资者可以通过公司的存货周转率来寻找或者验证优质的上市公司。优质的上市公司的存货周转率表现，都会优于行业的平均水平。</p>
+<p class="ql-align-justify"><strong>集微点评：半导体行业不同环节存货周转时间差异很大。</strong></p>
+<p class="ql-align-justify"><strong>立讯精密回应越南子公司5000人罢工：生产经营正常！</strong></p>
+<p class="ql-align-justify">9月14日，有投资者提问：看到有外媒报道说贵公司在越南子公司有超5000名员工罢工，导致工厂停止运转，请问该情况是否属实，以及该工厂目前运转情况怎么样？是否在正常运转当中。立讯精密9月27日在互动平台表示：公司越南子公司生产经营正常。</p>
+<p class="ql-align-justify"><strong>集微点评：在海外建厂生产因为社会环境完全不同，遭遇些困难也属正常，适应海外各种挑战是全球化扩张必须面对的一环。</strong></p>
+<p class="ql-align-justify"><strong>鼓励芯片制造商迁回产线！美国拟提供250亿美元政府补贴</strong></p>
+<p class="ql-align-justify">据日经亚洲评论报道，随着中美科技战逐渐趋于白热化，美国国会正计划为芯片制造商提供约250亿美元的政府补贴，以求通过巨额补贴让企业将生产线迁回美国。报道指出，美国对任何行业提供巨额补贴的决策都十分罕见，市场担忧此种直接支持可能会扭曲市场。</p>
+<p class="ql-align-justify"><strong>集微点评：美国政府希望通过投资吸引半导体厂回归估计很难，不是资金的问题，而是人才的难题。</strong></p>
+<p class="ql-align-justify"><strong>【芯视野】大陆OLED驱动芯片占比不足1%，如何破解“缺芯”之痛？</strong></p>
+<p class="ql-align-justify">近期，有机构预计，2020年，中国大陆厂商在全球AMOLED面板驱动芯片市场中的占比将达5%。该预测很可能过于乐观，实际上中国大陆AMOLED面板驱动芯片厂商的生存现状远比想象的还要残酷。多位AMOLED面板驱动芯片从业者向集微网记者透露，2020年，中国大陆厂商在全球AMOLED面板驱动芯片市场占比可能连1%都不到。为何AMOLED驱动芯片本土化率如此之低？中国大陆厂商该如何进一步提升AMOLED驱动芯片本土化率？</p>
+<p class="ql-align-justify"><strong>集微点评：大陆OLED面板刚刚突破，驱动芯片占比较小也正常，已经有不少公司正在巨资投入开发，未来几年肯定会取得突破。</strong></p>
+<p class="ql-align-justify"><strong>日经：柔宇科技计划2021年扩建面板工厂</strong></p>
+<p class="ql-align-justify">据日经中文网报道，柔宇科技正展开投资攻势，计划2021年扩建面板工厂，但如何确保稳定的客户是其面临的一大课题。柔宇国际柔性显示基地及全柔性屏大规模量产线占地面积约10万平方米，建筑面积约40万平方米，于2015年10月筹建，2016年动工并陆续启用，2018年6月点亮投产并实现大规模量产上市。</p>
+<p class="ql-align-justify"><strong>集微点评：虽然业界不少人对柔宇科技有不同看法，估计其IPO上市也是近在咫尺，建厂的消息应该也没错。</strong></p>
+<p class="ql-align-justify"><strong>重磅！国务院反垄断委员会发布知识产权领域的反垄断指南</strong></p>
+<p class="ql-align-justify">据国家市场监督管理总局官网消息，国务院反垄断委员会日前发布了《关于知识产权领域的反垄断指南》（以下简称《指南》）。《指南》中指出，反垄断与保护知识产权具有共同的目标，即保护竞争和激励创新，提高经济运行效率，维护消费者利益和社会公共利益。</p>
+<p class="ql-align-justify"><strong>集微点评：在专利授权领域海外厂商给大陆公司越来越大的压力，这份反垄断指南出台的很及时</strong>。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜一亿像素加持，小米 10T系列配置曝光
+http://www.sohu.com/a/421411886_166680	24769
+<p class="ql-align-justify">集微网9月28日消息（文/叶子），近日，小米 10T系列两款手机的配置信息及渲染图曝光，该系列将于9 月 30 日在海外发布。</p>
+<p class="ql-align-justify">爆料消息显示，小米 10T 系列包括两款机型，小米 10T Pro 和小米 10T。 小米10系列均采用6.67英寸小挖孔LCD屏，背部是矩形三摄，排布比较特别，高像素主摄单独放置在最上方，下面为其他两颗摄像头和闪光灯，采用侧面指纹，机身厚度为9.33mm，重量为218g。两款手机外形上的区别主要在背部颜色，小米10T有黑色和银色，10T Pro则多增加一款渐变亮色。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200928/aed6e2dec8084d90b5326e17b7f08c67.png" max-width="600" /></p>
+<p class="ql-align-center">图源：微博</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200928/5968045e754448e9b8e76e9a44430eae.png" max-width="600" /></p>
+<p class="ql-align-center">图源：微博</p>
+<p class="ql-align-justify">小米10T系列均搭载骁龙865处理器，采用 UFS 3.1+LPDDR5，屏幕最高分辨率为144Hz，IPS LCD显示屏，配备5000mAh电池，支持33W充电，支持NFC、双扬声器、红外等。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200928/f43ce78fa4b34fd8a44a7daf7f1e0cc9.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center">图源：微博</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200928/9e47d450660f48429a012a9639446031.png" max-width="600" /></p>
+<p class="ql-align-center">图源：微博</p>
+<p class="ql-align-justify">两款手机配置上不同主要是影像方面，小米10T主摄为6400万像素，还有1300万超广角摄像头和500万微距摄像头。小米10T Pro将主摄升级为支持OIS光学防抖的一亿像素摄像头，其他配置相同，影像实力更强。</p>
+<p class="ql-align-justify">据爆料消息，该机有望在国内上市，由Redmi发布，预计价格在3000元左右。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜美国触控公司SigmaSense获鸿海领投2200万美元
+http://www.sohu.com/a/421412623_166680	24905
+<p class="ql-align-justify">集微网消息（文/小山），据台媒工商时报报道，美国触控、传感技术新创公司SigmaSense宣布近期成功募资2200万美元资金。据悉，此次参与的策略投资人包括鸿海、GIS-KY业成、康宁、元太，以及 LG-MRI等，本轮融资将加快该公司半导体及软件解决方案的研发进程，推动高精度传感数据（high-fidelity sensing data）发展。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200928/3d608d41bcaf45f3b2d9dda7cbf1fbc4.png" max-width="600" /></p>
+<p class="ql-align-center">（图源：网络）</p>
+<p class="ql-align-justify">报道指出，总部位于德州奥斯汀的新创公司SigmaSense此次募资吸引了诸多显示器和触控面板厂的资金，其中鸿海则是这轮融资案的领投者，其他投资人还包括鸿海集团旗下触控面板厂GIS-KY、玻璃基板厂康宁、电子纸供货商元太、以及LG集团旗下的LG-MRI，戴尔前首席财务官Tom Meredith也参与了此轮融资。</p>
+<p class="ql-align-justify">SigmaSense表示，资金注入后将加快半导体及软件解决方案的研发进程，推动高精度传感数据发展。</p>
+<p class="ql-align-justify">据了解，SigmaSense专注于人机接口技术，包括触控和传感技术。SigmaSense的触控技术应用范围广泛，涵盖从可穿戴设备、触控笔、家庭娱乐设备，到医疗院所的非接触式登记机台、以及大尺寸电子白板。</p>
+<p class="ql-align-justify">新冠肺炎疫情爆发之后，让非接触式传感技术需求大幅成长。SigmaSense技术可支持悬浮非触控手势（high-hover touchless gestures），即使隔层水也能够感应，未来期望把非接触传感技术应用在包括汽车、消费性电子设备、医疗产品和工业应用产品之上。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜Counterpoint：三星缩小了与苹果在美国线上智能手机市场的差距
+http://www.sohu.com/a/421413029_166680	24988
+<p class="ql-align-justify">集微网消息（文/holly），据businesskorea报道，2020年第二季度，三星电子在美国线上智能手机市场脱颖而出，将其线上市场份额与苹果的差距缩小到1%。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200928/080f1ee4fd5e420babb1c576b7217679.png" max-width="600" /></p>
+<p class="ql-align-center">图源：Counterpoint</p>
+<p class="ql-align-justify">市调机构Counterpoint日前的报告显示，2020年第二季度，线上销售占美国智能手机市场的31%，是去年同期14%的两倍多。其中，三星电子占据了37%的份额，该公司的市场份额同比增长了16%。苹果的市场份额为38%。LG电子以9%的份额位居第三。</p>
+<p class="ql-align-justify">Counterpoint并调查了三星电子在20个线上销售渠道上的表现，三星手机在亚马逊的市场份额为55%，在Verizon和T-Mobile的线上渠道份额为33%。</p>
+<p class="ql-align-justify">对于三星电子的表现，Counterpoint称，三星电子是第二季美国市场受影响最小的智能手机供应商，因其线上销售依然活跃。今年第二季度，美国智能手机销量同比下降了25%（包括线上和线下渠道）。其中，中兴和一加的销量分别下降了68%和60%，LG电子和苹果的销量分别下降了35%和23%。而三星电子的销售量仅下降了10%，这表明该公司取得了不错的成绩。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜总投资5亿美元，半导体芯片存储封测、液晶显示模组等项目在霍尔果斯开工
+http://www.sohu.com/a/421412785_166680	25021
+<p class="ql-align-justify">集微网消息，9月26日，4家半导体通信设备生产加工项目集中在霍尔果斯落地开工，项目总投资5亿美元。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200928/183bff3893e14055a931a792b64c2d05.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：霍尔果斯市零距离</p>
+<p class="ql-align-justify">本次开工项目包括：高密度高效集成电路、液晶显示模组、电子通讯产品制造、销售产业链项目，由志阳有限公司(香港)和深圳国润实业发展有限公司投资2亿美元建设。</p>
+<p class="ql-align-justify">半导体芯片存储封测项目，由香港彩龙贸易有限公司和深圳圣泯科技有限公司投资1亿美元建设。</p>
+<p class="ql-align-justify">智能通信设备及半导体元器件生产项目，由香港图蓝科技有限公司和深圳市图蓝科技有限公司投资1亿美元建设。</p>
+<p class="ql-align-justify">精密数据电子线材项目，由恒星联科技（香港）有限公司和深圳拓变科技有限公司投资1亿美元建设。（校对/若冰）</p>
+➜国家大基金参与，月产能1万片，赛微电子8 英寸MEMS国际代工线一期正式投产
+http://www.sohu.com/a/421413068_166680	25044
+<p class="ql-align-justify">集微网消息，9月27日，赛微电子公告称，公司控股子公司投资建设的“8 英寸 MEMS 国际代工线建设项目”现正式通线投产运行，产能为 1 万片/月。</p>
+<p class="ql-align-center"><img src="//p6.itc.cn/q_70/images03/20200928/66e72ed4e9dc443784cff15ff0b0ade1.png" max-width="600" /></p>
+<p class="ql-align-justify">公告披露，赛微电子控股子公司赛莱克斯微系统科技（北京）有限公司（以下简称“赛莱克斯北京”）在北京经济技术开发区投资建设的“8 英寸 MEMS 国际代工线建设项目”（FAB3）的主厂房、各支持建筑层区以及一期产能所涉及的产线及超净间已经建成并达到投产条件。</p>
+<p class="ql-align-justify">赛莱克斯北京是由公司全资子公司北京赛莱克斯国际科技有限公司与<strong>国家集成电路产业投资基金股份有限公司</strong>共同投资的8英寸MEMS 国际代工线（FAB3）项目公司，主要从事 MEMS 芯片的生产代工业务。赛莱克斯北京建设的该 8 英寸MEMS 国际代工线依托于公司全资子公司 Silex Microsystems AB（以下简称“瑞典 Silex”）（FAB1&amp;FAB2）成熟的制造技术和生产管理模式，打造代表业界领先水平的 MEMS 产业化平台。</p>
+<p class="ql-align-justify">2019年12月25日，北京亦庄8英寸MEMS芯片生产线首台设备正式搬入。据当时北方亦庄官方消息，该项目建成后将成为北京首条商业量产、全球业界最先进的8英寸MEMS芯片生产线。</p>
+<p class="ql-align-justify">该8英寸MEMS 国际代工线一期产能为1万片/月，该部分产能的投产将开始为公司 MEMS 业务提供标准化的规模产能，此外，公告中还表示，公司北京MEMS产线为新建产线，从投产运行到良率提升、全面达产尚需一定时间。（校对/若冰）</p>
+➜【专利解密】布局光网络，思科优化光传输网络分组业务系统
+http://www.sohu.com/a/421413694_166680	25146
+<p class="ql-align-justify"><strong>【嘉德点评】思科关于建立光传送网络分组业务的专利内容，改进了现有光网络聚合传送架构中网络业务的透明迁移等问题。从专利也可看出，思科正一步步在软件、光纤、网络领域中进行技术创新积累，利用光互连技术改进传输网络。</strong></p>
+<p class="ql-align-justify">集微网消息，自思科收购光网络技术公司Acacia Communications后，便开始布局光网络传输技术领域，协助网络服务商、数据中心运营商满足消费者对大带宽数据传输快速增长的需求。</p>
+<p class="ql-align-justify">高速光通信系统通常需要使用聚合传送架构，即使用多种基于光传送网络对以太网帧进行透明传输，如同步光网络(SONET)、光传送网络(OTN)等，并部署分组业务。然而以太网接口标识符通常需要并入传输层，导致聚合传送架构的某些优点难以发挥作用，如传送网络业务的透明迁移、分组特征到传送网络中冗余路径的透明引用等。</p>
+<p class="ql-align-justify">为此，思科公司于2018年10月23日申请了一项名为“使用光传送网络的分组业务的透明部署”的发明专利（申请号：201880069933.2），申请人为思科技术公司。这项专利介绍了一种与光传送网络耦合的网络元件使用方法，包括计算从源网络元件光接口到目的网络元件光接口的路径，并向该光传送网络发送信令过程，通信结构如图1所示。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200928/eb2585261b284ec5b6081247431070a1.png" max-width="600" /></p>
+<p class="ql-align-center">图1 基于光传输网络的通信系统</p>
+<p class="ql-align-justify">通信系统100包括第一分组接口110-1的网络元件105-1，通过光传送网络115通信并耦合到第二分组接口110-2的网络元件105-2，每个网络元件105用作多层聚合传送网络节点，可转发或处理网络数据，如光传送网络(OTN)交换、密集波分多路复用(DWDM)转发等。光传送网络115包括在网络元件105之间的若干光学元件(如光纤)。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200928/d6c59feb4399452eb4ec1af42aa87337.png" max-width="600" /></p>
+<p class="ql-align-center">图2 在网络元件之间建立虚拟接口流程图</p>
+<p class="ql-align-justify">光传输网络创建的分组业务需要在不同的网络元件之间建立虚拟接口，如图2所示。首先在步骤305中，网络元件使用ODU或OTU等接口在光传送网络配置分组电路，并在315中计算分组电路的目的路径，明确各个转发节点，然后通过网络元件向光传送网络发送信令创建如GMPTS分组以终止电路。在步骤335中判断信令是否成功创建分组电路，如果成功创建则终止电路，并创建以太网接口，否则重新计算分组电路的目的路径。步骤365中，网络元件105-1确定是否已创建以太网束205-1，如果尚未创建则在步骤375注册束创建通知，否则添加以太网束，完成虚拟端口创建过程。</p>
+<p class="ql-align-justify">图2中虚拟接口的分组特征在光传送网络可动态改变，同时，虚拟接口具有类似的标识层次结构，并与底层传输层接口位于网络元件105上的相同位置，当网络故障使得传输层动态改变时，可通过网络元件的不同物理实体寻找新的传输路径。</p>
+<p class="ql-align-justify">以上就是思科关于建立光传送网络分组业务的专利内容，改进了现有光网络聚合传送架构中网络业务的透明迁移等问题。从专利也可看出，思科正一步步在软件、光纤、网络领域中进行技术创新积累，利用光互连技术改进传输网络，未来光通信网络到底如何发展，就让我们拭目以待吧！</p>
+<p class="ql-align-justify">（校对/holly）</p>
+➜河南省长尹弘与华为徐直军会谈，黄河鲲鹏项目已取得重要阶段性成果
+http://www.sohu.com/a/421414528_166680	25247
+<p class="ql-align-justify">集微网消息，9月27日，河南省长尹弘在郑州同华为公司副董事长、轮值董事长徐直军一行举行会谈，就河南与华为在数字经济等领域拓展合作事宜进行深入交流。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200928/c1e13cccc86d4ea1b277d56be90f2c53.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：河南政府网</p>
+<p class="ql-align-justify">尹弘表示，“十四五”时期，河南将加快产业结构调整和创新驱动发展，通过5G技术赋能，推动产业数字化、网络化、智能化发展，促进产业迭代，培育发展新动能。华为公司是我国信息产业的领军企业，技术优势突出，发展理念与河南高质量发展的战略方向和目标十分契合，<strong>双方合作的 “黄河鲲鹏”项目取得了重要阶段性成果</strong>。希望华为公司把河南作为产业布局的战略支点，发挥技术、人才、管理等方面的优势，依托现有项目带动培育新业态新模式，不断提升省企战略合作关系，努力取得更丰硕成果。</p>
+<p class="ql-align-justify">徐直军介绍了企业的发展战略和在豫项目进展情况，对河南积极推进“黄河鲲鹏”项目给予赞赏，表示十分看好河南发展态势，愿意创造更多机会，充分发挥华为技术优势，积极拓展合作空间，助力河南传统产业数字化转型。</p>
+<p class="ql-align-justify">2019年12月29日，黄河鲲鹏服务器和台式机生产线投产暨首批产品交付仪式在河南举行。</p>
+<p class="ql-align-justify">建成投产的河南黄河鲲鹏项目，标志着河南有了自主品牌——黄河牌的服务器和电脑，将使河南成为华为鲲鹏芯片服务器在国内的重要生产基地。（校对/若冰）</p>
+➜减轻千亿日元投资负担！JDI考虑合作量产手机OLED面板
+http://www.sohu.com/a/421450909_166680	34133
+<p class="ql-align-justify">集微网消息（文/小山），据科技新报援引日本时事通信社报道，正进行运营重组的日本中小尺寸面板厂Japan Display Inc（以下简称 JDI）社长菊冈稔接受在线采访时表示，关于智能手机OLED面板的量产，正考虑和其他企业进行合作。</p>
+<p class="ql-align-justify">据悉，巨额的设备投资是抢进智能手机OLED面板市场的门坎，而JDI期望藉由和其他企业合作，减轻动辄需要数千亿日元的投资负担。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200928/a60cbd3f06e843bdb1bacd32ed3503f6.png" max-width="600" /></p>
+<p class="ql-align-center">（图源：网络）</p>
+<p class="ql-align-justify">在智能手机OLED面板市场上，韩国三星电子掌控着压倒性的市占率。对此，菊冈稔指出，能够打出技术的差异性，客户的需求将成为分析是否进军该市场（智能手机/OLED）的基准。菊冈稔同时表示，为了摆脱对液晶面板的过度依赖，希望将OLED面板业务培育成营收规模最少数百亿日元的核心事业。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜韩媒：特斯拉寻求收购LG化学电池业务股份
+http://www.sohu.com/a/421450965_166680	34181
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200928/695f0fc0b03c4fb38f9317d884d6af8b.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：路透</p>
+<p class="ql-align-justify">集微网消息（文/Jimmy），韩国时报报道，消息人士透露，特斯拉寻求收购LG Energy Solution的股份，后者为LG化学正计划剥离的电池业务。</p>
+<p class="ql-align-justify">消息人士称，特斯拉拟收购LG Energy Solution 10%的股份。鉴于LG化学从全球主要汽车制造商赢得的订单数量，该公司的电池业务被认为是整个集团非常有前途的增长动能。LG化学为通用汽车的插电式混合动力汽车Volt等提供电池，它也是特斯拉的顶级电池供应商之一。因疫情影响，LG化学先前已推迟电池业务的分拆。</p>
+<p class="ql-align-justify">特斯拉CEO埃隆·马斯克曾表示，特斯拉仍将严重依赖电池制造商。基于此，行业专家表示，特斯拉可能会继续与电池供应商合作。</p>
+<p class="ql-align-justify">另一位知情人士称，现在判断特斯拉是否会收购LG化学的电池业务还为时过早，不过此举也是合情合理。</p>
+<p class="ql-align-justify">目前，特斯拉和日本松下在美国运营着一家名为Gigafactory的电动汽车组装和电池生产合资企业。但通过多元化的电池采购渠道，特斯拉可以降低其电池采购成本。</p>
+<p class="ql-align-justify">“虽然中国的宁德时代也是特斯拉最大的电池供应商之一，但鉴于特斯拉与松下的深厚合作关系，特斯拉将收购LG电池业务的股份，这并不令人意外，”消息人士表示。</p>
+<p class="ql-align-justify">据市场调查机构SNE Research发布的最新数据，LG化学超越宁德时代，成为今年上半年电动汽车电池的最大供应商。SNE Research数据显示，今年上半年，LG化学在电动汽车电池市场的份额为24.6%，高于去年同期的10.4%。今年上半年LG化学的电动汽车电池使用量为10.5千兆瓦时，去年同期为5.7千兆瓦时。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜韩媒：苹果将提前在韩国发布5G iPhone 12系列
+http://www.sohu.com/a/421451324_166680	34270
+<p class="ql-align-justify">集微网消息（文/小山），据韩联社报道，本周一有消息称，苹果公司预计将提前在韩国推出新款5G版本iPhone 12系列。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200928/d33e1c9326e8428f9aa54a1f01070069.png" max-width="600" /></p>
+<p class="ql-align-center">（图源：网络）</p>
+<p class="ql-align-justify">据韩国当地运营商称，他们准备在10月底或11月初时开售iPhone 12。</p>
+<p class="ql-align-justify">截至目前，苹果尚未确认iPhone 12系列的发布日期。但国外爆料者预计，iPhone 12将于10月13日发布，并将在10月23日于部分市场上市。</p>
+<p class="ql-align-justify">通常，苹果会先在特定国家市场发布新品，大约一个月后才会在韩国发售。不过业内人士表示，鉴于韩国已经可以提供5G服务，苹果显然是希望尽早在当地发布支持5G的iPhone系列，以吸引更多用户。</p>
+<p class="ql-align-justify">根据此前消息，苹果在今年晚些时候预计将发布四款iPhone 12系列，分别是5.4英寸的iPhone 12 Mini、6.1英寸的iPhone 12、6.1英寸的iPhone 12 Pro和6.7英寸的iPhone 12 Pro Max。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜Wi-Fi 6标准必要专利竞赛，高通略微领先华为?
+http://www.sohu.com/a/421453238_166680	34741
+<p class="ql-align-justify"><strong>【嘉德点评】专利是重要的技术情报，专利除了作为技术资料，还可以运用科学的专利分析方法，研究竞争对手的研究方向和专利布局情况，研究技术和行业的发展动态，进而可以为企业指明研发方向，提高研发效率。</strong></p>
+<p class="ql-align-justify">集微网消息（文/甘佳伟），近日，日本技术贸易株式会社（以下简称：NGB）公布名为《Essentiality Report on Wi-Fi 6 Patents》的专利研究报告，根据该报告内容可知，高通和华为引领着Wi-Fi 6技术的发展和标准的制定，其次为英特尔、LG、Newracom和Marvell，其中，高通虽然所持有的专利数量略微领先华为，但是在重要技术上，华为表现更为抢眼。</p>
+<p class="ql-align-justify"><strong>标准提案数量与专利持有数量排名正相关</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200928/0cbc661aeb5a454797467a238699d13b.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：NGB</p>
+<p class="ql-align-justify">该报告通过研究2013年至2020年3月IEEE官方网站公布的Wi-Fi 6标准提案数据发现：高通的提案数量名列第一，但是在2016年11月之前，华为和Newracom两个公司的提案数量多于高通和英特尔等公司，在2016年11月之后，高通才增加了更多的Wi-Fi 6标准提案，使得高通在总体的提案数量上领先于华为等公司。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200928/289b68aca9dc484cadc0f77855874967.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center">图片来源：NGB</p>
+<p class="ql-align-justify">随后，经过专利分析之后发现，在Wi-Fi 6标准必要专利家族的持有数量上，高通以135族专利排名第一，而华为则以113族专利排名第二，紧随其后的是提案数量第三的英特尔公司，但是其中也有表现较为强劲的公司——LG电子，LG电子凭借较少的重要提案和专利布局，专利持有量排到第四名。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200928/2d2ac926eb2a443eb80f8f2501cf7b61.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：NGB</p>
+<p class="ql-align-justify">在专利的申请和授权时间上，高通率先保持着较大数量的专利布局和申请，随后华为逐步增加专利的申请和布局数量，而随着Wi-Fi 6技术的不断发展和标准的制定，2013年至2016年，Wi-Fi 6的技术参与者们的专利授权数量也随着增长，但是在2016年之后，随着Wi-Fi 6技术的逐渐成熟，增长趋势不再，专利格局基本定型。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200928/bf5274fae69242deb93226413341ec1f.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：NGB</p>
+<p class="ql-align-justify">分析Wi-Fi 6的技术参与者在技术提案与专利数量的取得上，我们会发现各个公司的标准提案数量与专利持有数量排名呈现正相关，主导和引领Wi-Fi 6高通和华为提案数量遥遥领先，在专利的获得上也是位列前茅，这也说明只有积极参与技术标准制定的公司，才能获得更多的技术资产和优势。</p>
+<p class="ql-align-justify"><strong>华为强于物理层技术，而高通善于媒体接入控制层技术。</strong></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200928/92a209accc70475ea6850177c7ec8c6f.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：NGB</p>
+<p class="ql-align-justify">接下来，通过将Wi-Fi 6技术按照第一个维度分解为物理层（<strong>PHY</strong>）技术和媒体接入控制层（<strong>MAC</strong>）技术发现，华为在<strong>PHY</strong>技术的专利持有量优势更为明显，而高通则更擅长于<strong>MAC</strong>技术，并且持有该技术的更多的专利数量，但华为在Mac上的表现仅仅稍逊与高通，位列第二。</p>
+<p class="ql-align-justify"><strong>Wi-Fi 6技术的专利集中于多址接入技术，华为表现更加抢眼</strong></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200928/c1067891e40645b493ef874cc2c0476c.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：NGB</p>
+<p class="ql-align-justify">在另一个Wi-Fi 6技术的分类维度上，通过将该技术分为多址接入技术（OFDMA）、多用户多入多出技术（MU-MIMO）、波束成形（Beamforming）、160MHz、TWT节能机制（Target wake time）、BSS coloring、8 spatial streams、1024-QAM等八个技术，在进行专利数据的清理之后发现，Wi-Fi 6技术的主要专利涉及技术分布在多址接入技术（OFDMA）和多用户多入多出技术（MU-MIMO）技术上，其中专利最多的为OFDMA。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200928/5b617153dba647419971f5c330998b33.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：NGB</p>
+<p class="ql-align-justify">而进一步分析可以发现，在专利数量最多的多址接入技术（OFDMA）技术上，华为的专利表现更为抢眼，以70个专利家族的持有量排在第一，而高通和英特尔分别以58和57排名第二和第三。</p>
+<p class="ql-align-justify"><strong>总结</strong></p>
+<p class="ql-align-justify">通过对Wi-Fi 6技术的标准必要专利和提案进行分析，可以发现华为、高通、英特尔等技术参与者的专利持有数量与积极提案的数量相关，虽然高通在整体的提案和专利持有量上排名第一，但是华为在Wi-Fi 6的主要技术上的专利表现更为强劲。</p>
+<p class="ql-align-justify">（校对/holly）</p>
+➜QCY T1C蓝牙耳机成本揭秘：低于成本价销售为何不亏本？
+http://www.sohu.com/a/421461984_166680	37255
+<p class="ql-align-justify">集微网消息（文/叶子），我们已对QCY T1C真无线蓝牙耳机的BOM表进行了分析，此次价值观我们将对元器件数量及其成本进行分析。 </p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200928/42854c6540be43c98456c550d7b461b0.png" max-width="600" /></p>
+<p class="ql-align-center">图源：微博</p>
+<p class="ql-align-justify"><strong>器件分析说明：</strong></p>
+<p class="ql-align-justify">在开始分析之前，需要对元器件分析的一些概念和问题进行说明。我们是通过市场官方公开渠道购买机器，每个产品同一个元器件可能会有不一样的供应商，所以我们以购买拆解的机器为准。</p>
+<p class="ql-align-justify">在元器件的分析过程中，新产品可能会遇到识别不了品牌或者具体型号的情况，这部分元器件占比大约10%左右；成本预估是根据元器件的数据库来确定，同时会结合一些市场调研来做修正，不过影响元器件成本的因素有很多，例如厂商向供应商采购的数量也会令元器件单价发生变化，因此成本预估的误差也会有约10%的误差。</p>
+<p class="ql-align-justify">因此元器件的成本预估仅供参考，与真实的成本会有一定的差异。</p>
+<p class="ql-align-justify"><strong>器件分析：</strong></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200928/7ae618ce7f544d9c8cf88e69a72d83ab.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">我们预估QCY T1C真无线蓝牙耳机的整机成本为10.83美元（约合人民币73.56元），单个耳机成本为3.78美元，主控总成本为1.7美元，单个耳机主控芯片所占整机比例为8%。充电盒主控芯片所占整机比例为7%。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200928/a9a6642a9dfc49509db35a39ed2f4263.png" max-width="600" /></p>
+<p class="ql-align-justify">QCY T1C真无线蓝牙耳机整机包含154个组件，中国台湾提供2个器件，为主控IC，成本1.78美元，成本占比为16.4%，中国提供152个器件，占比98.7%，成本占比83.6%。QCY T1C真无线蓝牙耳机全部元器件都采用国产厂商供应，有利于控制成本，从而提高产品竞争力。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200928/238803e51be4427cbbfd8698948427aa.png" max-width="600" /></p>
+<p class="ql-align-justify">我们归纳整理了QCY T1C真无线蓝牙耳机成本排在前五的元器件，分别是蓝牙/音频控制芯片、扬声器、电池、耳机主板、电路保护芯片。从BOM表能够看出，QCY T1C真无线蓝牙耳机的结构比较简单，整机成本最高的元器件是瑞昱半导体提供的蓝牙/音频控制芯片。</p>
+<p class="ql-align-justify">我们预估QCY T1C真无线蓝牙耳机的成本约为73.56元，但QCY T1C真无线蓝牙耳机售价为69.9元，已经低于成本价了，促销活动价为49.9元，远低于成本价格，如此低的价格出售，难道不会亏本吗？</p>
+<p class="ql-align-justify">虽然低于成本价销售看起来要亏本，但因为订单量的不断增加，生产成本不断下降，最终还是可以实现盈利，这是很多小米生态链企业的经营策略。而高性价的产品能够迅速打开市场，提高品牌认知度。早在2014年，小米在QCY A轮融资的时候就投资了这家企业，现在QCY的产品也在小米有品上出售。</p>
+<p class="ql-align-justify">依靠出色的产品以及高性价比优势，QCY很快做到了国内领先，2017年开拓了海外市场，近三年耳机出货量已经达1200万以上，2019年QCY总销售额高达7.9亿元， 同比2018年增长了220%以上。据Canalys数据显示，QCY今年第一季度全球真无线蓝牙耳机市场份额第4，总发货量高达250万，同比19年爆发增长172%。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200928/7e3cff9f213e49b9b395cfed59260ab8.png" max-width="600" /></p>
+<p class="ql-align-center">图源：Canalys</p>
+<p class="ql-align-justify">QCY没有手机品牌背书，却依然做到了全球真无线蓝牙耳机市场份额第四，除了性价比优势，还因为QCY做到了集产、研、销于一体，以用户需求与科技创新为驱动，旗下产品均拥有自主知识产权。整个团队架构覆盖ID结构、模具开发，电子技术，软件技术、声学工程等，为QCY产品提供了全方位的技术支持。掌握核心技术，整合上下游供应商渠道，才能打造出高性价比的产品，性价比虽然不是护城河，但不是谁都可以做到极致性价比的。</p>
+<p class="ql-align-right">特别鸣谢：eWiseTech 拆解公司提供专业技术支援</p>
+<p class="ql-align-justify">（校对/holly）</p>
+➜富满电子与灵芯微电子设立合资公司，致力于5G射频系列芯片开发
+http://www.sohu.com/a/421462173_166680	37292
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200928/428f7b795c2b40cf8feae3edc1293875.png" max-width="600" /></p>
+<p class="ql-align-justify">集微网消息，9月28日，富满电子与杭州灵芯微电子有限公司（以下简称“灵芯微电子”）在深圳签署了《合作投资与经营5G项目协议》，共同出资3,000万元人民币设立上海赢硅微电子有限公司（以下简称“项目公司或标的公司”，具体名称以市场监督管理局核准为准）。其中，富满电子出资2,100万元人民币，占注册资本的70%；灵芯微电子以知识产权作价出资900万元，占注册资本的30%。</p>
+<p class="ql-align-justify">据了解，富满电子与灵芯微电子发起设立的项目公司，主要致力于5G射频系列芯片产品的设计开发。射频前端芯片是射频芯片的核心组成，包括功率放大器（PA）、低噪声放大器（LNA）、天线开关（Switch）、滤波器（Filter）、双工器(Duplexer和Diplexer)等，射频芯片主要用于无线通信，下游市场主要有通讯基站、手机和物联网设备等，是5G网络的基石。</p>
+<p class="ql-align-justify">据Yole预测，2018年全球射频前端芯片市场规模为150亿美元，到2025年将达到258亿美元，2018~2025年的复合年增长率为8%，伴随着5G的逐步商用，相关的市场容量正在迅速扩容中。目前该市场主要被Skywords、高通、村田等美日公司所垄断，国内相关公司体量普遍较小，与国外公司差距较大，是芯片行业被国外“卡脖子”的主要领域之一。</p>
+<p class="ql-align-justify">从公告获悉，本次双方合作的芯片范围包括：射频开关、射频滤波器、WiFiFEM芯片等。此次合作中，标的公司设计团队是行业的领军团队之一，拥有多年的射频芯片设计经验，在射频领域具有深厚的技术积累，富满电子则拥有领先的“fabless+封测”资源、良好的晶圆厂产能布局以及丰富的市场渠道。要通过本次合作，将加速上市公司5G芯片领域的布局，进一步丰富上市公司的芯片产品阵列，提高核心竞争力。</p>
+<p class="ql-align-justify">对于本次合作的影响，富满电子表示，射频芯片领域是千亿市场的赛道，伴随着5G的快速普及，以及国产替代需求的不断加快，本土射频芯片公司面临着极好的历史机遇期，通过本次对外投资，富满电子将切入射频芯片领域，打开一片新的巨大潜力市场。标的公司在射频IC领域已经有相关的成熟产品布局，同时，模拟IC公司的产品阵列深度与宽度是核心竞争力，未来通过深度整合，将进一步提升富满电子的综合实力和核心竞争力。此次标的公司成立，对富满电子业绩的增厚、客户的开拓、行业地位的提升等都将带来积极影响。（校对/Arden）</p>
+➜*ST盈方入股电子元器件经销公司华信科，春兴精工退出
+http://www.sohu.com/a/421462705_166680	37333
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200928/39760c9924aa4472acf571afb3098e21.png" max-width="600" /></p>
+<p class="ql-align-justify">集微网消息，近日，*ST盈方发布公告称，重大资产购买事项已经公司及交易对方之一苏州春兴精工股份有限公司(以下简称“春兴精工”)相关股东大会审议通过，且《资产购买协议》的其他生效条件已满足，本次交易的各项协议已生效。</p>
+<p class="ql-align-justify">根据《资产购买协议》约定，公司全资子公司上海盈方微电子有限公司(以下简称“上海盈方微”)应向春兴精工、上海钧兴通讯设备有限公司(以下简称 “上海钧兴”)支付的首期股权转让款合计 283,333,333 元;应向上海瑞嗔通讯设备合伙企业(有限合伙)(以下简称“上海瑞嗔”)支付的首期股权转让款合计 56,666,667 元。</p>
+<p class="ql-align-justify">截至本公告披露日，本次重大资产购买之标的资产深圳市华信科科技有限公 司(以下简称“华信科”)51%的股权及 WORLD STYLE TECHNOLOGY HOLDINGS LIMITED (以下简称“WORLD STYLE”)51%的股份已在所属登记注册机关依法办理完毕股 权(股份)转让的过户变更登记、章程备案、人员变更等手续。2020 年 9 月 25 日，本次重大资产购买的交易各方签署了《资产交接确认书》，对本次重大资产购买之标的资产的上述各类变更登记事项予以确认并对标的资产所属全部档案资料、所有印鉴、证照的交付情况予以了核验、清点。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200928/c918b9fc9e444272a13eaa53cb4964ae.png" max-width="600" /></p>
+<p class="ql-align-justify">值得注意的是，据启信宝查询，在华信科的股权变更项中，春兴精工于9月25日退出对华信科的投资，公司新增股东绍兴上虞虞芯股权投资合伙企业(有限合伙)(持股比例39%)、上海盈方微电子有限公司(持股比例51%)，后者为ST*盈方全资子公司。</p>
+<p class="ql-align-justify">据悉，华信科公司成立于2008年11月，主营电子元器件经销，拥有Goodix、Samsung、KDS等电子元器件知名品牌的代理权。公司注册资本1亿元人民币，法定代表人为徐非，经营范围有电子产品的技术开发与销售及其它国内贸易等。</p>
+<p class="ql-align-justify">*ST盈方成立于1993年2月，1996年深交所上市，目前公司的主营业务为SoC芯片的研发、设计和销售，通过本次并购，公司将有效整合芯片设计和分销业务。（校对/Lee）</p>
+➜赛微电子：瑞典Silex的MEMS产线已完成升级扩产
+http://www.sohu.com/a/421462479_166680	37371
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200928/1fad90a1df224986a1461f24db1595eb.png" max-width="600" /></p>
+<p class="ql-align-justify">集微网消息，9月28日，赛微电子发布关于全资子公司瑞典MEMS产线升级扩产完成的公告。</p>
+<p class="ql-align-justify">赛微电子位于瑞典斯德哥尔摩的全资子公司SilexMicrosystemsAB（以下简称“瑞典Silex”）所拥有的成熟运转的<strong>MEMS产线现已完成升级扩产，原有6英寸产线（FAB1）已升级切换成8英寸产线，原有8英寸产线（FAB2）亦已完成扩产。</strong></p>
+<p class="ql-align-justify">瑞典Silex成立于2000年，是全球领先的纯MEMS代工厂商，一直专注于MEMS芯片的生产代工业务。本次瑞典MEMS产线升级扩产完成后，瑞典Silex的产能全部成为8英寸，同时MEMS晶圆产能提升至7,000片/月的水平，新增产能将有效解决近年来瑞典Silex产能紧张的状况，可进一步满足全球各领域客户对MEMS工艺开发及晶圆制造不断增长的需求，增强公司在MEMS领域的全球市场竞争力。</p>
+<p class="ql-align-justify">与此同时，瑞典Silex完成产线升级扩产之后，将更好地与赛微电子控股子公司赛莱克斯微系统科技（北京）有限公司（FAB3）进行协同互补，将带动赛微电子MEMS业务体量进一步扩大，有力地保证赛微电子继续保持MEMS代工的全球领先地位。</p>
+<p class="ql-align-justify">赛微电子表示，瑞典MEMS产线运转成熟，产能释放将较为迅速，预计将对赛微电子的经营成果产生持续的积极影响，但MEMS瑞典产线从升级扩产完成到实现经营业绩的完全转化仍会存在一定的时间差；且未来不排除将继续加大资本投入进行产能扩充，对瑞典Silex经营业绩产生综合影响。（校对/Arden）</p>
+➜手机WiFi不用时最好将其关闭，中国电信这一解释让人信服
+http://www.sohu.com/a/421463124_166680	37491
+<p class="ql-align-justify">集微网9月28日消息（文/数码控），中国电信在昨天谈到了一个叫做WiFi探针的东西，即使消费者不主动连接附近的WiFi，他们的隐私也能被盗取，因此中国电信建议消费者在公众场合不需要连接WiFi时，最好将其关闭。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200928/51e9ba9e58ea41f39cb2c2cf52d91d88.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：百度</p>
+<p class="ql-align-justify">中国电信称WiFi探针的外观跟一般的路由器差不多，不法分子借口低价或免费安装路由器将WiFi探针安置在商铺、车站等公共场所。</p>
+<p class="ql-align-justify">当消费者的手机WiFi处于打开状态时，手机就会向周围发出寻找无线网络的信号，探针盒子发现这个信号后，就能迅速识别出用户手机的MAC地址，接着转换成IMEI号，再转换成手机号码。</p>
+<p class="ql-align-justify">再和大数据结合起来，就可以得到消费者的家庭住址、身份证号、搜索记录、消费记录等多项隐私信息。</p>
+<p class="ql-align-justify">所以中国电信建议消费者的手机在公共场所不需要用到WiFi时，最好将开关关闭，以免被不法分子利用。</p>
+<p class="ql-align-justify">此外，中国电信还谈到了“身份证和手机放在一起会消磁”的传言，中国电信表示身份证和手机放在一起不会消磁。</p>
+<p class="ql-align-justify">因为身份证内置的是非接触式IC卡智能芯片，没有磁性，所以不会被消磁的。而且“手机会将卡片消磁”这一说法是在非智能手机时代流行起来的，非智能手机的喇叭本身是一块磁铁，所以会有“消磁”的风险。如今的智能手机喇叭很小，基本不会出现“消磁”的问题。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜科创板汽车第一股来了！吉利汽车科创板IPO成功过会
+http://www.sohu.com/a/421463210_166680	37535
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200928/d03a1b04d76844d5b60180806b3e361a.png" max-width="600" /></p>
+<p class="ql-align-justify">集微网消息，9月14日晚间，上交所发布科创板上市委2020年第83次审议会议结果公告，吉利汽车科创板IPO成功过会。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200928/e4c46dd3d8c943f081f3f688702d1075.png" max-width="600" /></p>
+<p class="ql-align-justify">据招股书披露，吉利汽车主营业务主要有乘用车销售、汽车零部件销售以及知识产权许可收入三个板块。2017年-2020年H1，吉利汽车营业收入分别为935.53亿元、10,73.35亿元、981.39亿元和371.21亿元。</p>
+<p class="ql-align-justify">从主营业务构成来看，汽车销售收入一直是吉利汽车的核心收入。整车及整车成套件的销售收入占主营业务收入的比例较高，报告期各期的占比均超9成。</p>
+<p class="ql-align-justify">汽车销售方面，2017年度-2020年H1，吉利汽车合计销量分别为124.11万部、138.04万部、123.35万部及47.57万部；同时，2017年8月推出中高端合营品牌领克汽车，近几年销量逐年增长。根据中汽协统计，2017-2019年，吉利汽车含领克品牌合计销量的国内市占率连续三年居自主品牌首位，且处于持续提升状态。</p>
+<p class="ql-align-justify">除汽车销售之外，其他主营业务包括零部件销售和使用权及其他许可，近年来收入保持增长，报告期内，其他主营业务收入占比从2.10%增长到8.79%。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">在毛利率方面，吉利汽车2017-2019年的汽车销售毛利率分别为19.46%、18.32%和14.74%；综合毛利率分别为19.75%、18.79%和15.95%。从毛利率趋势来看，吉利汽车近三年的毛利率处于下降趋势。</p>
+<p class="ql-align-justify">对此，吉利汽车解释称，主要系一方面受行业周期等因素影响，国内汽车行业整体销量有所下降，行业竞争更为激烈；另一方面，新能源补贴政策退坡令企业收入承压，使得毛利率有所下降；此外，相关产品物料成本增加、新增5家工厂提高了相应成本等也对整体毛利率有一定影响。</p>
+<p class="ql-align-justify">不仅吉利汽车的毛利率在下降，通过与广汽集团、上汽集团等4家国内上市公司对比，笔者发现，国内汽车行业整体毛利率均处于下降趋势；但与同行4家上市公司对比，吉利汽车的综合毛利率和汽车销售毛利率均略高于同行均值。</p>
+<p class="ql-align-justify">吉利汽车认为，与可比公司相比，其产销规模较高，让吉利在采购、生产等环节的规模效应更显着，从而降低成本、提高毛利率水平；同时，提升零部件的通用化率并掌握模块化架构生产技术，强化采购的规模效应，从而降低采购成本。此外，吉利汽车在生产制造管理上已形成多家智能化工厂为主的产能结构，具备自动化、柔性化、智能化的生产能力，提高生产效率、降低生产成本。</p>
+<p class="ql-align-justify">在超高的国内市占率和优于同行的毛利率背后，是吉利汽车对车型研发和生产设备的持续高研发投入作为支撑。</p>
+<p class="ql-align-justify">2017-2020年H1，吉利汽车研发费用分别为15.17亿元、19.32亿元、30.73亿元和17.21亿元，呈增长趋势；研发费用主要由无形资产技术摊销、职工薪酬费用、委外研发支出等构成。吉利汽车表示，报告期各期的研发费用增长主要系无形资产技术摊销增加造成的。</p>
+<p class="ql-align-justify">据招股书披露，吉利汽车的无形资产技术摊销主要为自主研发资本化形成的无形资产摊销，报告期各期该摊销占研发费用比例为75.61%、71.32%、81.21%和88.15%。由此可知，吉利汽车高度重视技术团队的建设与研发能力的提升，通过科技水平的不断提升来加强产品的综合竞争力，报告期内对研发技术和研发团队持续保持较高的投入水平。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200928/4eb0debaef444c7fb4580f0c2efae366.png" max-width="600" /></p>
+<p class="ql-align-justify">从上表可见，2017-2019年，吉利汽车整体研发投入占比分别为6.03%、5.76%和5.55%，均高于行业可比公司。多年来对自主核心技术的研发投入，通过吸收国外先进技术、合作及自主研发，吉利已经逐步实现了汽车领域关键技术的全面布局。截至2020年6月30日，吉利汽车共拥有32项核心技术和9,332件授权专利。该授权专利数，可以问鼎目前科创板上市公司榜首。</p>
+<p class="ql-align-justify">与此同时，得益于近几年持续的高研发投入，吉利汽车在电动化和智能化汽车技术领域也成为了行业先行者，尤其是在第三代半导体碳化硅功率器件和智能网联核心芯片方面。</p>
+<p class="ql-align-justify">据行业内人士表示，目前行业主流三电系统通常采用400V-650V范围的电压平台。随着整车功率需求的日益提升，若维持400V-650V电压范围，系统的充放电流将升至上千安培，提高了连接器和线束的要求，导致成本压力也将随之增大。提升平台电压是解决该问题的唯一途径。</p>
+<p class="ql-align-justify">不过，提升电压对功率器件的耐压等性能提出了考验。为此，吉利汽车自主验证开发了更高电压的三电系统，通过将第三代半导体碳化硅材料运用于功率器件，将整车电压平台提升至800V。如此一来，相同功率所传输的电流更小，电控、电机以及线缆的线径和重量因此得以降低，功率密度显着提升，充电时间也将大幅缩短，提高整车动力经济性表现。</p>
+<p class="ql-align-justify">除了功率器件方面，在车联网及车载芯片业务上，吉利汽车多年来聚焦于汽车智能化与网联化，目前提供数字座舱电子产品、主动安全电子产品、无人驾驶传感器与控制器，以及车联网云平台和大数据平台的运营服务，并在这些领域研发出了核心芯片。</p>
+<p class="ql-align-justify">据招股书披露，目前在这些领域研发出的核心芯片产品包括：（1）高算力高效率智能驾驶处理器（AD1000），提供灵活可靠的OTA机制，支持L3+智能安全驾驶，具备跨域通信能力，支持自动驾驶的全栈解决方案；（2）国内首款7nm先进工艺制程的高端全数字智能座舱处理器（SE1000），高性能、低功耗、可灵活配置的CPU集群，最高支持5个4K/2K屏幕同时输出、11路2M@60fps摄像头同时输入，神经网络处理器（AI）支持高性能智能语音和机器视觉等人工智能应用；（3）车身控制及网关的高可靠车载芯片（M1000），可与SE1000联合提供IVI域数字驾舱芯片完整解决方案。</p>
+<p class="ql-align-justify">总体来看，尽管坐上了汽车销量冠军的宝座，但吉利汽车并不满足于此，仍继续提升零部件的通用化率并掌握模块化架构生产技术，强化采购的规模效应，从而降低采购成本；此外，吉利继续保持在汽车核心零部件开发上的高投入，并实现了在第三代半导体材料功率器件和车联网及车载芯片业务上的重大突破。（校对/Arden）</p>
+➜【每日收评】集微指数跌1.03%，芯海科技上市首日大涨175%！
+http://www.sohu.com/a/421463342_166680	37592
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200928/1c76548fa3f04aa39daed338364d057c.png" max-width="600" /></p>
+<p class="ql-align-justify">集微网消息，<strong>截至9月28日收盘，A股三大指数今日集体收跌，其中沪指收盘下跌0.06%，收报3217.53点；深成指下跌0.42%，收报12760.93点；创业板指下跌0.75%，收报2521.25点。市场成交量继续萎缩，两市合计成交仅有5402亿元，北向资金今日小幅净卖出10.79亿元。</strong></p>
+<p class="ql-align-justify">盘面上看，煤炭、光伏、白酒板块表现强势，疫苗、农业板块则大幅回调。两市846家个股上涨，3046家个股下跌；其中涨停家数21家，跌停家数47家。</p>
+<p class="ql-align-justify"><strong>半导体板块表现稍差。集微网从电子元件、材料、设备、设计、制造、IDM、封测、分销等领域选取了112家半导体公司作了统计，其总市值下跌1.93%。</strong></p>
+<p class="ql-align-justify">在112家半导体公司中，23家公司市值上涨，其中英唐智控、赛微电子、捷捷微电、扬杰科技、环旭电子涨幅居前；89家公司市值下跌，其中强力新材、沪硅产业、安集科技、中芯国际、清溢光电跌幅居前。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200928/029eea6354bf418d8e068f518e74f17f.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200928/0f557d831f0c4fa9a83016e96778dacf.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify"><strong>资金流入/出方面，据东方财富统计，半导体板块主力资金净流出21.04亿元，市场表现稍差。另外，酿酒、贵金属、煤炭、房地产、银行板块资金净流入靠前，其中医药、电子元件、软件、板块资金净流出靠前。</strong></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200928/215399bc889d49cd80528c84853a6894.png" max-width="600" /></p>
+<p class="ql-align-justify">国泰君安证券表示，指数再次接近下沿，不要让恐慌情绪遮蔽当前宝贵的赔率和胜率，珍惜每次回调机会，建议持股过节。海外市场的调整，是确认了在全球范围内由无风险利率下行推动的流动性扩张的行情告一段落；A股已预先演绎，海外冲击影响有限。北上配置结构转换：坚守科技，增配周期，不同风格微观交易结构压力分化。考虑胜率和赔率，首选科技和可选消费。科技成长仍是全年关键，短期中美预期不稳定，风险偏好下行将压制科技板块，但打造“内循环”下，科技的预期底有望提前出现，且此轮科技行情是尤其具备“盈利修复”特征的。</p>
+<p class="ql-align-justify"><strong>全球动态</strong></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200928/87f998ad8b044715a0ca7baba6891522.png" max-width="600" /></p>
+<p class="ql-align-justify"><strong>美股市场，截至周五（9月25日），道琼斯指数收盘上涨358.50点，涨幅1.34%，报27173.96点；标普500指数收盘上涨51.90点，涨幅1.60%，报3298.46点；纳斯达克指数收盘上涨241.30点，涨幅2.26%，报10913.56点；</strong></p>
+<p class="ql-align-justify">热门中概股涨跌不一，阿里巴巴涨0.5%，京东涨2.68%，百度涨0.02%，天华阳光涨50.3%，爱鸿森涨超10%，携程涨8.65%，蔚来涨超2%，拼多多跌1.28%。</p>
+<p class="ql-align-justify"><strong>费城半导体指数上涨30.42点，涨幅1.42%，报2,177.84点。</strong></p>
+<p class="ql-align-justify">费城半导体指数成分股涨多跌少，涨幅居前的公司为英伟达上涨4.26%、AMD上涨2.95%、Monolithic Power Systems Inc (MPWR)上涨2.15%；跌幅居前的公司为美光科技下跌0.67%、MKS Instruments下跌0.48%。</p>
+<p class="ql-align-justify">天风证券宋雪涛：美股近期属于上涨过快后的技术性调整。天风证券宋雪涛认为，目前与3月时的流动性危机对比，当前的基本面没有出现黑天鹅，流动性价格(比如Libor和cp)没有出现明显紧张，贵金属和债券利率也没有出现单一趋势，因此看起来更像是上涨过快后的技术性调整。9月中上旬主要是高估值的成长股获利回吐，近期价值股也开始技术性调整。</p>
+<p class="ql-align-justify"><strong>欧洲方面，截至截至周五（9月25日），英国富时100指数上涨0.34%，报5842.67点。法国CAC40指数下跌0.69%，报4729.66点。德国DAX指数小幅下跌1.09%，报12469.20点。</strong></p>
+<p class="ql-align-justify"><strong>亚太地区，截至9月28日收盘，恒生指数报23476.05点，上涨1.04 %；日经报23511.62点，上涨1.32%；韩国综合上涨1.29%。</strong></p>
+<p class="ql-align-justify"><strong>个股消息/A股</strong></p>
+<p class="ql-align-justify"><strong>芯海科技</strong>——上市首日大涨175%，信号链芯片第一股芯海科技成功登陆科创板。9月28日，芯海科技在上交所科创板正式挂牌上市，公司证券代码为688595，发行价格22.82 元/股，发行市盈率为61.14倍。截收盘，芯海科技股票报价62.81元/股，涨幅175.24%，总市值达到62.81亿元。公开资料显示，芯海科技是一家集感知、计算、控制于一体的全信号链芯片设计企业。</p>
+<p class="ql-align-justify"><strong>中科曙光</strong>——近期收到政府补助1.17亿元。中科曙光9月28日晚间公告，3月28日至公告日，公司及子公司累计收到尚未公告的与收益相关的政府补助1.17亿元，超过2019年度净利润的10%。根据相关规定，本期间收到的非经常性收益相关政府补助对当期非经常性损益产生影响金额为2926.95万元。</p>
+<p class="ql-align-justify"><strong>太极实业</strong>——子公司中标10.9亿元集成电路产线EPC项目。太极实业9月28日晚间公告，子公司十一科技近日获确认为浙江海芯微300毫米晶圆核心特种工艺生产线EPC项目的中标单位，中标价10.90亿元，工期558天。</p>
+<p class="ql-align-justify"><strong>个股消息/其他</strong></p>
+<p class="ql-align-justify"><strong>阿斯麦</strong>——台积电明年底前将累计采购阿斯麦55台EUV光刻机。来自Digitimes的报道称，台积电打算在2021年底前购置55台EUV光刻机，以加快EUV相关工艺制程的发展。截止今年二季度结束，阿斯麦累计出货了大概71台光刻机，台积电安装了30台左右，还有25台的缺口。阿斯麦今年下半年计划出货22台光刻机，明年全年最多50台，换言之，台积电打算抢下这其中超过1/3的供货。</p>
+<p class="ql-align-justify"><strong>台积电</strong>——将为苹果代工7400万颗A14处理器。北京时间9月27日，据外媒报道，今年台积电的最大客户依旧是苹果。现在有消息显示，台积电的5nm产品线现在已经投产，并且已经开始为苹果生产5nm芯片A14处理器，预计他们将为苹果代工7400万颗A14处理器。台积电代工的A14处理器，需要经过其他厂商的测试，再才能用于苹果的硬件产品，因此最终苹果今年iPhon12系列手机的供货量很可能小于7400万部。</p>
+<p class="ql-align-justify"><strong>苹果</strong>——传iPhone 12系列将于10月底或11月初在韩国上市。韩联社9月28日消息，知情人士周一表示，苹果公司希望在韩国吸引更多的5G用户，预计将比原定时间提前推出新iPhone 12系列。据当地电信运营商官员称，他们准备在10月底或11月初销售iPhone 12。苹果目前尚未确认其最新款智能手机的发布日期。但科技评论人士预计，iPhone 12将于10月13日发布，并将于10月23日在部分市场上市。以往iPhone新系列在韩国上市要比其他市场晚一个月左右。</p>
+<p class="ql-align-justify"><strong>集微网重磅推出集微半导体产业指数！</strong></p>
+<p class="ql-align-justify"><strong>集微半导体产业指数，简称集微指数，是集微网为反映半导体产业在证券市场的概貌和运行状况，并为投资者跟踪半导体产业发展、使用投资工具而推出的股票指数。</strong></p>
+<p class="ql-align-justify">集微网观察和统计了中国“芯”上市公司过去一段时间在A股的整体表现，并参考了公司的资产总额和营收规模，从112家集微网半导体企业样本库中选取了30家企业作为集微指数的成份股。</p>
+<p class="ql-align-justify">样本库涵盖了电子元件、材料、设备、设计、制造、IDM、封装与测试、分销等半导体领域的各个方面。</p>
+<p class="ql-align-justify"><strong>截至9月28日收盘，集微指数收盘点数为4050.82点，较前一交易日下跌42.09点，跌幅1.03%。</strong>（由于近期科创板有大量限售股解禁，所以集微网对集微指数进行了小幅调整，调整后的指数趋势与原指数趋势不变）</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200928/9a535c2b964b4d8db5b09c7946f9ab48.png" max-width="600" /></p>
+➜提高BiVO4活性及稳定性，我国学者在半导体抗光腐蚀研究方面取得新进展
+http://www.sohu.com/a/421463541_166680	37644
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200928/79af93b44148462c8bf785fd3dbfa76e.png" max-width="600" /></p>
+<p class="ql-align-justify">集微网消息，近日，内蒙古大学王蕾研究员带领的科研团队在半导体抗光腐蚀研究方面取得新进展，“钝化层助力BiVO4抗光腐蚀研究”的相关成果已在国际化学期刊《德国应用化学》发表。</p>
+<p class="ql-align-justify">据科技日报报道，王蕾研究员表示，半导体较低的光吸收率和较高的载流子复合率是影响转换效率的首要因素，因此，如何提高光电转换效率是当前光电催化研究领域的重中之重。</p>
+<p class="ql-align-justify">科研团队通过改善材料制备工艺以及恒电位光极化测试方法，有效提高了BiVO4活性及稳定性。</p>
+<p class="ql-align-justify">研究表明，无表面助催化剂修饰下的BiVO4在间歇性测试下，可以达到100小时的稳定性，表现出超强的“自愈”特性。</p>
+<p class="ql-align-justify">此外，电化学测试显示，半导体表界面产生的钝化层和氧空位协助作用，有效减小了半导体电子与空穴复合，提高了表面水氧化动力学，从而抑制了光腐蚀。</p>
+<p class="ql-align-justify">目前，该项目已经得到国家自然科学基金等多个项目的认可支持。（校对/小如）</p>
+➜安防芯片市场供货打响“排位战”，谁将会成下一个“海思”？
+http://www.sohu.com/a/421464968_166680	38247
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200928/4d8fd5dd931d40c584d119962fee909f.png" max-width="600" /></p>
+<p class="ql-align-justify">集微网消息，“今天Hi3559AV100报价4700一颗”，这则消息日前在微信群里炸开了花。</p>
+<p class="ql-align-justify">曾经一颗400元左右的AI安防芯片短短数月时间，价格翻了10倍不止，甚至仍未停止继续上涨的态势。</p>
+<p class="ql-align-justify">除海思Hi3559系列产品在涨价之外，海思Hi3159、Hi3516等系列产品价格也在疯狂上涨，上涨背后的原因却耐人寻味。</p>
+<p class="ql-align-justify">多位业内人士表示，芯片供应确实存在紧张情况，但更多的原因是代理商/贸易商在囤货、炒作，一时间市场需求被无限放大，产品价格也水涨船高。</p>
+<p class="ql-align-justify">一家企业的缺货情况，竟让下游应用企业纷纷自乱阵脚，备货、抢购、哄抬价格等戏码持续上演。而这，与其所处市场份额、芯片制程工艺等息息相关。</p>
+<p class="ql-align-justify"><strong>IPC领域一家独大</strong></p>
+<p class="ql-align-justify">说到海思的安防芯片发家史，就要从2006年说起。</p>
+<p class="ql-align-justify">2006年，国内视频监控尚处于模拟时代，国产视频编解码芯片出货占比仅1%，当时TI是国内视频编解码芯片的绝对老大，出货占比达51%。（数据来源：IHS调研报告）</p>
+<p class="ql-align-justify">彼时，国内安防市场正处于数字技术变革浪潮中。看准机会的海思于2006年6月，在TAIPEI COMPUTEX展会推出其H.264视频编解码芯片Hi3510。</p>
+<p class="ql-align-justify">也是在这个时候，大华正在开发第二代DVR，但支持H.264的芯片甚少有之。看准机会的海思开始推动与大华在研发层面进行紧密战略合作。</p>
+<p class="ql-align-justify">2007年，大华与海思签订20万片H.264视频编码芯片合同（Hi3510、Hi3511），用于当时快速发展的第二代硬盘录像机上。抓住时代机遇的海思随即乘风破浪，并将TI在国内安防市场的份额逐渐蚕食。</p>
+<p class="ql-align-justify">在日后的市场变革中，海思一路过关斩将，凭借优异的性能及性价比优势，成为安防IPC领域的全球龙头。数据显示，2018年海思IPC全球市占率超过60%，在中国的市占率则高达70%。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">而此次缺货严重的，也正是IPC SoC芯片。集微网了解到，主要系海思的中高端IPC SoC芯片，具体包括Hi3559AV100、Hi3159AV100、Hi3516DV300、Hi3516CV500等。</p>
+<p class="ql-align-justify">超高的市占率让其在安防市场拥有绝对话语权，然而，因为一纸禁令，上述安防芯片无法再进行生产制造，这也使得安防市场叫苦不迭。</p>
+<p class="ql-align-justify"><strong>产品替代难点何在</strong></p>
+<p class="ql-align-justify">此时有人困惑，国内没有一家企业可以替代嘛？答案是，“有的”，但若要实现全线替代海思产品，目前国内没有任何一家企业能够做到，仅部分产品可以满足市场需求。</p>
+<p class="ql-align-justify">一位芯片企业人士无奈表示，海思缺货是谁都无法预知的外因，作为国产芯片的龙头，海思芯片在技术积累、市场开拓、品牌认知等方面的优势非常明显。</p>
+<p class="ql-align-justify">“我们虽然也有十几年的研发实力，但只能补齐海思部分中低端产品线来供应客户；而在高端芯片领域，如Hi3519及Hi3559，国内目前没有一家企业可以快速填补空缺。”</p>
+<p class="ql-align-justify">抛开价格因素之外，在芯片制程、性能等方面，海思芯片所展示的先进性也让一众芯片企业望尘莫及。</p>
+<p class="ql-align-justify">集微网了解到，上述缺货芯片均采用12-28nm的芯片制程。其中，Hi3559AV100采用12nm制程工艺，并集成了NNIE、DSP、CPU、GPU、ISP、编解码单元等多个模块，可以单独实现人脸、车牌识别等功能，功耗低至3W。</p>
+<p class="ql-align-justify">其中，海思的ISP（图像信号处理模块）及编解码能力更是无人能敌，这也是一众芯片企业无法与之匹敌的根本原因所在。</p>
+<p class="ql-align-justify">Tips：ISP功能强大：集成了包括CFA插值、白平衡校正、伽玛校正、3D降噪、边缘增强、伪彩色抑制、宽动态处理等功能模块，并集成可用于用户编程的微控制器，在获得高性能的同时，大幅优化芯片功耗和物理面积，使得视频监控摄像机具有清晰度高、低光性能好、体积小、功耗低等显着特点。</p>
+<p class="ql-align-justify">业内知名人士表示，未断供前，3559市场价不超500元，使得AI摄像机得以大规模落地应用，而同类型芯片产品中，报价均在千元级别，且芯片性能不及海思。</p>
+<p class="ql-align-justify">除性能、价格等因素之外，高端芯片的研发成本也让芯片企业望而却步。</p>
+<p class="ql-align-justify">“一个芯片从研发、流片、到上市推广，大几千万甚至上亿的成本是客观存在的。”上述业内人士表示，对于企业来说，需要大量的出货才能将研发成本分摊出来，企业如果本身在安防市场份额不够，开发高端芯片风险非常高，没有人敢冒这个险。</p>
+<p class="ql-align-justify"><strong>中低端市场格局重塑</strong></p>
+<p class="ql-align-justify">一个不容争辩的事实是，海思芯片性能再好，价格再便宜，但在当前一切处于未知情况下，也只能成为过去式。</p>
+<p class="ql-align-justify">虽然在高端芯片市场，国内企业存在一定差距，但在中低端产品领域，国内企业依然非常能打，性价比极高。</p>
+<p class="ql-align-justify">集微网了解到，目前包括富瀚微、瑞芯微、星宸科技、安凯微电子、北京君正、晶晨股份、瓴盛科技、中星微、国科微、联咏科技等企业，都能实现中低端芯片市场的有力补充；而一些AI新秀企业也在摩拳擦掌，包括云天励飞、比特大陆、地平线、寒武纪、依图科技等企业。</p>
+<p class="ql-align-justify">谁将突出重围成为第二个海思有待时间的检验，但就企业当前的芯片产品及下游导入情况来看，我们或许可以一窥端倪。</p>
+<p class="ql-align-justify"><strong>富瀚微</strong></p>
+<p class="ql-align-justify">富瀚微安防视频监控多媒体处理芯片包括图像信号处理（ISP）芯片、网络摄像机（IPC）SoC 芯片和数字硬盘录像机（DVR）SoC 编解码芯片，主要应用于模拟/IP摄像机、车载电子和物联网领域。</p>
+<p class="ql-align-center">▼富瀚微视频监控多媒体处理芯片</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200928/437b90e2cda34e588f13886f2c57d42a.png" max-width="600" /></p>
+<p class="ql-align-center">资料来源：富瀚微招股说明书，国元证券研究中心</p>
+<p class="ql-align-justify">目前，富瀚微产品已与华为Hi3516D及以下系列产品性能参数不相上下，是海康威视最大的 ISP芯片供应商；在AI智能安防领域，该公司推出FH8626V100产品，具有高性能CPU，支持人形检测、越线报警等智能应用。</p>
+<p class="ql-align-center">▼华为海思产品参数</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200928/e65afb91e4e444a19d70f3073abfe1d7.png" max-width="600" /></p>
+<p class="ql-align-center">资料来源：海思官网，国元证券研究中心</p>
+<p class="ql-align-justify">与此同时，2019年富瀚微与安防龙头企业海康威视发生交易金额3.3亿元。国元证券预测，2021-2022年该公司安防类产品将分别实现营收10.74亿元与14.02亿元。</p>
+<p class="ql-align-justify">但需注意的是，虽然背靠海康威视，可以确保其稳定的产品销售与市场份额，并可以敏锐的感知到行业的市场变化情况；但也会因为其与海康威视的关系，造成其他企业谨慎选择其产品的首要原因之一。</p>
+<p class="ql-align-justify"><strong>瑞芯微</strong></p>
+<p class="ql-align-justify">经过多年的发展，瑞芯微在影像视觉处理、视频编解码、SoC 芯片设计、大系统开发上积累丰富的经验，形成了多层次、多平台的专业解决方案，涵盖 IoT 物联网、智慧商显、智能视觉、智能零售、平板电脑、智能电视盒子等领域。</p>
+<p class="ql-align-justify">2020年6月，瑞芯微发布两款高低搭配、内置NPU、面向IPC的SoC——RV1126与RV1109。</p>
+<p class="ql-align-justify"><strong>星宸科技</strong></p>
+<p class="ql-align-justify">成立于2017年的厦门星宸科技有限公司（简称“星宸科技”）核心团队源于MStar（晨星半导体，已被联发科收购），在ISP、音视频编解码、模拟电路设计、SoC系统设计以及自研IP方面有深厚的行业积累。</p>
+<p class="ql-align-justify">2019年10月27日，星宸科技发布全新的集成了自主研发的NPU内核的“降龙”系列IPC芯片——SSC336D/Q、SSC338G、SSC339G，基于台积电22/12nm工艺，支持LPDDR2/DDR3L，可选配混合式操作系统，同时还支持Secure Boot安全启动。</p>
+<p class="ql-align-justify">在具体性能方面，SSC336D/Q支持1080P/3M@30FPS，算力0.5TOPs；SSC338G支持4/5M@30fps，算力1TOPs；SSC339G支持4K@30FPS；实现高中低阶市场的全面覆盖。</p>
+<p class="ql-align-justify">据了解，“降龙”系列IPC芯片支持Caffe/TensorFlow两大主流AI开发平台，并提供C Model验证与完整的开发工具链，可实现人体侦测、运动追踪、姿态检测、人脸识别对比、面部表情侦测、宠物侦测、车型款式/车牌识别等智能化视频分析需求。</p>
+<p class="ql-align-justify">业内知情人士透露，目前传统安防企业正在切换星宸科技芯片方案。</p>
+<p class="ql-align-justify"><strong>瓴盛科技</strong></p>
+<p class="ql-align-justify">8月28日，瓴盛科技发布了两款AIoT SoC芯片——JA310与JA308，采用NPU+GPU+CPU芯片协同架构，基于三星的11nm FinFET工艺制程，相比28nm工艺的AIoT芯片功耗降低70%；采用双路通道专业级别监控ISP设计，支持双路2K+2K@30fps、单路4K@30fps；独立AI硬件单元，可提供2Tops的混合算力，并支持INT16/FP16运算。</p>
+<p class="ql-align-justify">目前，该公司AIoT SoC产品已经开始在下游市场中应用，如元橡科技基于JA310的双目立体视觉产品，银光软件面向学校的食品安全解决方案，安威士的智能监控产品，博观的人脸门禁终端，江苏乐众的卫星物联网、C-V2X智能网联、铁道专网终端等。</p>
+<p class="ql-align-justify"><strong>北京君正</strong></p>
+<p class="ql-align-justify">经过十几年的持续投入，北京君正已经在嵌入式CPU技术、视频编解码技术、影像信号处理技术、神经网络处理器技术、AI算法技术等方面完成了自主研发，主流产品工艺制程涵盖了从28nm到16nm工艺的范围。</p>
+<p class="ql-align-justify">在智能视频领域，2019年智能视频芯片实现营业收入1.79亿元，同比增长52.61%。其预计2020年下半年完成下一代芯片设计并进行样品的投片，该芯片可满足智能视频领域不断提高的对AI处理能力的需求。 </p>
+<p class="ql-align-justify">日前，该公司在回答投资者的提问时表示，目前安防领域主要为消费类市场的客户，会积极抓住市场机会，寻找时机进入专业安防领域。</p>
+<p class="ql-align-justify"><strong>晶晨股份</strong></p>
+<p class="ql-align-justify">基于在多媒体音视频领域的长期积累和技术优势，晶晨股份致力于叠加神经元网络、专用 DSP、数字麦克风、物体识别、人脸识别、手势识别、远场语音识别、超高清图像传感器、动态图像处理、多种超高清输入输出接口、多种数字音频输入输出接口等技术，通过深度机器学习和高速的逻辑推理/系统处理，并结合行业先进的12nm制造工艺，形成了多样化应用场景的人工智能系列芯片。</p>
+<p class="ql-align-justify">其中，智能家居影像系列产品内置神经网络处理器，支持800万像素高动态范围影像输入和 4K超高清编码。</p>
+<p class="ql-align-justify">据了解，该公司AI音视频系统终端芯片解决方案的合作客户包括百度、小米、阿里巴巴、Google、Amazon、JBL、Harman Kardon、Sonos等境内外企业。</p>
+<p class="ql-align-justify"><strong>云天励飞</strong></p>
+<p class="ql-align-justify">2019年11月13日，云天励飞发布其自主可控的神经网络处理器芯片——云天初芯TMDeepEye1000，内置四核神经网络处理器，可支持INT16 / INT12 / INT8混合精度量化数据，峰值算力达2.0Tops。</p>
+<p class="ql-align-justify">云天初芯TMDeepEye1000采用阿里平头哥玄铁810嵌入式处理器，工作频率达到1.2GHz，处理器采用RISC指令架构，双发射10级流水线；采用双核视觉DSP处理器，内置硬件加速运算子ACC，支持超过20个高效算子，每秒可跟踪1200张人脸；支持H.264和H.265解码，可支持4K@30fps视频、4路高清视频并行的实时分析。</p>
+<p class="ql-align-justify"><strong>地平线</strong></p>
+<p class="ql-align-justify">2017年，地平线发布首款边缘AI芯片旭日1；2019年，基于台积电28nm工艺制程的旭日2诞生。截至目前，地平线边缘AI芯片的出货量已经超过百万级。</p>
+<p class="ql-align-justify">2020年9月9日，地平线推出全新一代AIoT边缘AI芯片——旭日3，采用台积电16nm先进工艺，提供业界最优秀的AI计算能力，在2.5W的功耗下，能够达到等效5TOPS的标准算力。</p>
+<p class="ql-align-justify">地平线联合创始人兼技术副总裁黄畅表示：“旭日3在最新的边缘侧深度网络下有非常好的优化效果，使得客户可以充分利用芯片算力。在SoC处理器的基础能力之上，旭日3系列匹配强大的CPU、Codec、ISP能力，并且提供两种规格，以满足不同的市场需要。”</p>
+<p class="ql-align-justify"><strong>小结</strong></p>
+<p class="ql-align-justify">上述芯片企业仅是国内众多可提供安防芯片企业的冰山一角，未来，谁将从众多竞争对手中脱颖而出，需要交给应用市场来检验。但可以肯定的是，海思较高的市场占有率将被众多企业所蚕食，安防芯片供应市场格局将重塑。（校对/Lee）</p>
+➜星星科技与浙商资产等设立的合伙企业完成工商注册登记
+http://www.sohu.com/a/421465071_166680	38388
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200928/1491c0da9d164667b088cbd513a4a979.png" max-width="600" /></p>
+<p class="ql-align-justify">集微网消息，9月28日，星星科技发布公告称，为满足子公司星星触控科技(深圳)有限公司(以下简称“深圳触控”)业务发展的资金需求，优化融资结构，提升持续健康发展能力，公司拟引入浙江省浙商资产管理有限公司(以下简称“浙商资产”)在深圳触控层面实施市场化债转股。在此背景下，董事会同意公司与浙商资产、浙江金珏资产管理有限公司共同设立合伙企业。</p>
+<p class="ql-align-justify">截止今日，该合伙企业完成了工商注册登记手续，并取得萍乡经济技术开发区市场监督管理局颁发的《营业执照》。</p>
+<p class="ql-align-justify">此前，星星科技发布公告称，通过该合伙企业在深圳触控层面实施市场化债转股，向深圳触控增资60,200万元，其中新增注册资本53,750万元，剩余6,450万元计入深圳触控资本公积。公司就深圳触控本次增资事项放弃优先认购权。</p>
+<p class="ql-align-justify">增资完成后，深圳触控注册资本由80,000万元增加至133,750万元，公司持股比例为59.81%，星发工业中心持股比例为40.19%，深圳触控仍为公司控股子公司。</p>
+<p class="ql-align-justify">通过本次债转股，深圳触控的资产负债率将显着下降，以2020年3月31日财务数据测算，深圳触控资产负债率从68.85%降至47.34%，深圳触控资产负债率得到明显降低，有效缓解杠杆率高、财务负担重的问题。</p>
+<p class="ql-align-justify">星星科技表示，本次实施市场化债转股完成后，公司持有深圳触控 59.81%股权，仍为深圳触控的控股股东，对深圳触控相关重大决策具有决定权，不会导致公司合并报表范围发生变化。（校对/Lee）</p>
+➜总投资30亿元，惠科电子北海产业园邦定项目投产
+http://www.sohu.com/a/421465280_166680	38449
+<p class="ql-align-justify">集微网消息，9月28日，2020年第三季度全区重大项目集中开竣工暨惠科电子北海产业新城首个园区开园、邦定项目投产仪式在广西北海举行。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200928/5485e9390eda467882f0e45dd69db1d5.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：惠科</p>
+<p class="ql-align-justify">目前，惠科电子北海产业新城建设一期项目包括移动智能终端和智能电视机两大项目，总投资200亿元，项目于2019年3月正式破土动工。</p>
+<p class="ql-align-justify">据悉，产业新城首个开园的园区是移动智能终端项目的子园区，占地面积538亩，精密结构件压铸生产项目在该园区率先成功试产。</p>
+<p class="ql-align-justify">此外，此次投产的邦定项目是智能电视机项目最核心、重资产、技术含量最高的子项目，总投资30亿元。</p>
+<p class="ql-align-justify">值得注意的是，6月2日，惠科电子北海产业新城一期智能电视机项目邦定车间主体结构顺利封顶。</p>
+<p class="ql-align-justify">据北海工业当时官方消息显示，广西惠科项目部经理罗艳兰表示，这个邦定车间是产业新城的高技术的建设工程项目，这个项目建成了以后年产量可以达到3000万片一年。</p>
+<p class="ql-align-justify">2018年6月，惠科集团投资建设惠科电子北海产业新城，项目包括移动智能终端项目、智能电视机项目、第8.6代液晶显示屏项目、液晶玻璃基板多个子项目，总投资超过540亿元。</p>
+<p class="ql-align-justify">2019年6月10日，惠科产业新城3000万台智能电视机首开项目暨300万台智能电视机生产项目投产。（校对/若冰）</p>
+➜京东方拾光纪推出桌面智慧屏，内置OS系统可安装各类APP
+http://www.sohu.com/a/421465381_166680	38496
+<p class="ql-align-justify">集微网9月28日消息（文/叶子），近日，京东方旗下品牌拾光纪推出了一款显示器——27英寸桌面智慧屏SA27D0，该产品功能全面，内置OS系统，集成了USB-C接口，可扩展鼠标键盘外设使用，售价为1999元。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200928/9863bfaf4c7543c4aed1423b5104da69.png" max-width="600" /></p>
+<p class="ql-align-center">图源：京东</p>
+<p class="ql-align-justify">京东方拾光纪智慧屏采用了BOE京东方研发的27英寸ADS-IPS硬屏，分辨率2560×1440，刷新率为75Hz，还具有122%sRGB广色域色彩，可以呈现更真实的显示效果，得益于这块柔和的广视角雾面屏，其可视范围可达178°。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200928/f6194abd96e544d5b95228a483352df5.png" max-width="600" /></p>
+<p class="ql-align-center">图源：京东</p>
+<p class="ql-align-justify">京东方拾光纪智慧屏搭载京东方专业GAMMA技术，让暗部细节更清晰的同时亮部画质不受影响。京东方拾光纪智慧屏所呈现的真实可感的画面，全方位提升了视觉体验。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200928/acacca52dfc74f04859659783ba4ec16.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center">图源：京东</p>
+<p class="ql-align-justify">京东方拾光纪智慧屏采用DC调光低亮度也不闪烁，并通过了德国TUV莱茵低蓝光护眼认证，降低415nm~455nm波段的有害蓝光，避免长时间使用疲劳感。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200928/d3c6869188c942ba974e3d21da4296d5.png" max-width="600" /></p>
+<p class="ql-align-center">图源：京东</p>
+<p class="ql-align-justify">京东方拾光纪智慧屏就带有多功能旋转升降支架，支持上下升降120mm，-6°+22°俯仰角，横竖屏90°旋转，左右旋转±45°度，不管是横屏浏览还是竖屏模式都能调整到适合自己的使用位置。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200928/0736543ea6304404b336be4f316c03e1.png" max-width="600" /></p>
+<p class="ql-align-center">图源：京东</p>
+<p class="ql-align-justify">京东方拾光纪智慧屏具有三个输出接口，包含了HDMI接口、USB-C接口和DP接口，另外还加配了两个USB-A 3.0外设接口和3.5mm的音频输出孔。其中，USB-C接口支持视频信号传输，笔记本可以通过该接口进行视频传输的同时扩展使用USB-A接口，可扩展外设包含了键盘、鼠标、耳机等。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200928/64ed3557fdcb4ca8a2cb14387dad3d67.png" max-width="600" /></p>
+<p class="ql-align-center">图源：京东</p>
+<p class="ql-align-justify">京东方拾光纪智慧屏内置桌面OS系统、音箱、当贝-拾光纪应用市场，无需主机也可以安装各类APP播放影音视频，畅享3A云游戏大作，不仅可以用于办公，更成为影音娱乐工具。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200928/f6e91df5840b46fa97b69d1dfad4d899.png" max-width="600" /></p>
+<p class="ql-align-center">图源：京东</p>
+<p class="ql-align-justify">京东方拾光纪智慧屏还支持ALNA、AirPlay、Miracast协议，具有手机无感同屏或者投屏功能。苹果手机只需要与显示器共同连接同一个WiFi，就可以实现大小屏同屏。显示器本身还支持竖屏显示，可以在显示器上享受与手机相同的展现形式，视觉体验更是完美。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200928/31b828f78d1b44998e410c087bba65da.png" max-width="600" /></p>
+<p class="ql-align-center">图源：京东</p>
+<p class="ql-align-justify">安卓手机也能通过Miracast协议来实现同屏显示的功能。在显示器的桌面OS智能系统中，打开设置-投屏设置-Miracast服务，然后打开手机中投屏功能，找到有“拾光纪”进行连接即可。除了同屏功能外，这款显示器还支持手机投屏的功能，打开手机上软件播放视频时，可选择投屏功能。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜英唐智控收购先锋微技术100%股权，预计交割工作将于10月16日左右完成
+http://www.sohu.com/a/421465719_166680	38517
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200928/155174fabfc948b593ba07b03745b3d7.png" max-width="600" /></p>
+<p class="ql-align-justify">集微网消息，9月28日，英唐智控发布关于正式启动先锋微技术100%股权交割的进展公告。</p>
+<p class="ql-align-justify">截至本公告披露之日，英唐智控与交易对方已完成大部分交割前行动事项。其中，交割关键条件之一的日本政府审批（即，日本央行备案以及日本经济贸易产业省审批）已于2020年7月15日获得。</p>
+<p class="ql-align-justify">双方将继续尽合理商业努力以使交割尽快完成，在落实各项准备工作，并按照深交所相关规定披露启动正式交割的进展公告（以下简称“进展公告”）后即可进行股权的交割，交割工作预计将于2020年10月16日左右完成。</p>
+<p class="ql-align-justify">由于全球新冠肺炎大流行以及持续的出行限制的原因致使双方无法通过在日本亲自会面的形式完成交割，双方同意在进展公告发布完成后，将采用远程交割方式完成交割。具体而言，英唐智控将授权摩根路易斯律师事务所东京办公室在日本以亲自会面的形式参与交割会议，英唐智控团队将通过电话会议形式远程参与交割会议。</p>
+<p class="ql-align-justify">交割当日，双方将遵循以下流程完成交割：</p>
+<p class="ql-align-justify">1.双方确认所有交割先决条件已经满足。为确保远程交割顺利进行，双方将通过交割前流程确定全部交割前先决条件已满足。</p>
+<p class="ql-align-justify">2.收到交易对价后，卖方应立即(i)确认SPA协议项下的交易对价已收悉；(ii)自Aozora银行领取代表股份的股份证书并带自NO&amp;T律所办公室；并(iii)将股份证书交付给摩根路易斯律师事务所东京办公室律师MasakiIchimura，MasakiIchimura将以亲自会面的形式在NO&amp;T律所办公室参与交割会议。</p>
+<p class="ql-align-justify">3.英唐智控及先锋微技术有限公司更新先锋微技术有限公司的股东名册。</p>
+<p class="ql-align-justify">4.先锋微技术有限公司就变更公司名称及其他交割相关事项召开股东会议。股东会议结束后，买方应立即告知卖方股东会议已完成。</p>
+<p class="ql-align-justify">英唐智控表示，本次交易受疫情影响交割发生延期，尽管目前已经启动最终的正式交割程序，买卖双方将全力配合在预定时间内完成交割，但受限于国庆假期及远程交割沟通的效率影响，最终实际交割期限仍然可能存在一定的不确定性。</p>
+<p class="ql-align-justify">据悉，先锋微技术专注于光盘设备和图像处理的模拟IC和数字IC产品的研发生产，经过多年的发展，已经形成了包括光电集成电路、光学传感器、显示屏驱动IC、车载IC、MEMS镜在内的主要产品，并提供MBE以及晶圆代工服务。英唐智控完成对其的收购后，可将其在光电集成电路、光学传感器、车载IC领域的技术应用转换至当前快速发展的光通信市场和新能源汽车市场，与公司在国内的光通信行业及新能源汽车行业客户资源实现结合。</p>
+<p class="ql-align-justify">今年3月份，英唐智控以基准价格30亿日元现金（约19,225.84万元）收购先锋集团所持有的先锋微技术有限公司（以下简称“MTC”）100%股权。</p>
+<p class="ql-align-justify">2019年，先锋微技术营业总收入24,989.20万元，营业利润-731.16万元，净利润-707.32万元，资产总额35,119.39万元，所有者权益总额25,292.12万元。</p>
+<p class="ql-align-justify">英唐智控此前指出，先锋微技术在光电数字信号转换传输领域的长期积累，可将其在光电集成电路、光学传感器、车载IC领域的技术应用转换至当前快速发展的光通信市场和新能源汽车市场，再通过与公司在国内的光通信行业（如中兴、移动、光迅等）及新能源汽车行业（如比亚迪、吉利等）的客户资源结合，形成公司帮助获取国内客户个性化需求、再由先锋微技术快速响应完成定制化设计、最后交由（代）工厂完成生产制造并实现国内销售的产业链条，将有望迅速打开国内相关领域芯片设计开发市场。（校对/Candy）</p>
+➜叶甜春出席，华进半导体先进封装生产线项目签约落户嘉善
+http://www.sohu.com/a/421465942_166680	38591
+<p class="ql-align-justify">集微网消息，9月25日下午，浙江嘉兴市嘉善县举行华进半导体项目签约仪式，将在嘉善经济技术开发区建设先进封装生产线。中科院微电子研究所所长叶甜春等出席签约仪式。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200928/cb45a31340e44b7db2c7122bddbb45d5.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：嘉善视听</p>
+<p class="ql-align-justify">叶甜春充分肯定了嘉善集成电路产业聚力设计、封装、测试的发展路径，希望华进半导体全力落实嘉善项目建设，尽快实现项目达产。</p>
+<p class="ql-align-justify">华进半导体封装先导技术研发中心有限公司作为江苏省无锡市落实中央打造以企业为创新主体的新创新体系典型，在江苏省/无锡市政府、国家02重大专项与国家封测产业链技术创新战略联盟的共同支持下于2012年9月在无锡新区正式注册成立。</p>
+<p class="ql-align-justify">公司是由中科院微电子所和集成电路封测产业龙头企业长电科技、通富微电、华天科技、深南电路5家单位共同投资而建立。后又新增苏州晶方、安捷利（苏州）、中科物联、兴森快捷、国开基金五家股东。2020年5月获批准建设国家集成电路特色工艺及封装测试创新中心。（校对/若冰）</p>
+➜投资超40亿元，临港新片区新能源汽车配套产业项目集中签约
+http://www.sohu.com/a/421465977_166680	38657
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200928/1444cbcac44c400aba94ab173eb29fa8.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源： 网络</p>
+<p class="ql-align-justify">集微网消息（文/Jimmy），今日，上海自由贸易试验区临港新片区2020年新能源汽车配套产业项目集中签约，包括新泉、锦源晟等业内重点企业的13个项目正式落地临港新片区，覆盖汽车车身、底盘、内外车饰、新能源动力总成、材料、传感器及电子元器件等汽车产业链上各类配套产品，投资额总计超40亿元，达纲产值逾百亿元。</p>
+<p class="ql-align-justify">目前，新片区依托特斯拉、上汽荣威等企业加大产业链上下游布局，汽车领域关联企业突破60家，2020年产业规模预计将超过600亿。根据新片区创新型产业发展规划，到2025年，智能新能源汽车工业总产值目标1200亿元，是新片区首个有望突破千亿级的产业集群。</p>
+<p class="ql-align-justify">为全面贯彻落实《关于促进中国（上海）自由贸易试验区临港新片区高质量发展实施特殊支持政策的若干意见》等文件精神，促进临港新片区产业高质量发展，临港新片区在智能制造、高端装备、人工智能、集成电路、航空航天等重点产业领域进行了近二十家科技创新平台的建设布局和培育工作。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜涉及第三代半导体、GaN功率器件等产业，深圳重点项目拟资助名单公布
+http://www.sohu.com/a/421466091_166680	38715
+<p class="ql-align-justify">集微网消息，近日，深圳市科技创新委对外公示了2020年基础研究重点项目拟资助项目，302个项目榜上有名，涉及电子信息、生物和生态环保、智能装备、材料能源领域，拟资助总金额超过6亿元。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200928/85df58d79bb64ef1a4abb2a057778f75.png" max-width="600" /></p>
+<p class="ql-align-justify">其中，南方科技大学申报的“GaN功率和射频器件制备技术及其机理研究”项目拟获得250万元资助；“低功耗 PAM4调制全集成光接收芯片设计技术研究”项目拟获得200万元资助；“半导体封装互连的纳米铜材料烧结机理研究”项目拟获得200万元资助；“基于等离子体的第三代半导体晶圆超精密加工技术研究”项目拟获得200万元资助……</p>
+<p class="ql-align-justify">以及深圳大学申报的“毫米波可重构技术和新型5G毫米波双频收发机芯片关键技术研究” 拟获得250万元资助；北京大学深圳研究生院申报的“基于新型第三代半导体的双栅光电晶体管研究” 项目拟获得250万元资助；清华大学深圳国际研究生院申报的“高透明可拉伸柔性触控屏及传感器制备的研究” 项目拟获得250万元资助；深港产学研基地申报的“基于MEMS技术的法拉第原子滤光器小型集成化研究”项目拟获得300万元资助……</p>
+<p class="ql-align-justify">据了解，深圳市科技创新委是在去年12月启动此次基础研究重点项目申请的，成果形式主要以论文、着作、专利等为主，单个基础研究重点项目资助强度不超过300万元，研究期限一般为3年，采用“先征集、再选题、发指南、后申报”的模式进行事前资助。</p>
+<p class="ql-align-justify">以下为此次获得资助的部分项目名单：</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200928/ee2da7d7749e42ac9908f343a821efa1.png" max-width="600" /></p>
+<p class="ql-align-justify">（校对/小如）</p>
+➜小米电视大师82寸至尊纪念版正式发布，首发mini LED技术
+http://www.sohu.com/a/421466336_166680	38754
+<p class="ql-align-justify">集微网9月28日消息（文/叶子），今天，小米电视“大师”82寸至尊纪念版正式发布，配备了8K 120Hz屏，使用了15360个mini LED灯珠发光，售价达到了49999元。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200928/266789c638a44fab82ec47e49d9f4b8a.png" max-width="600" /></p>
+<p class="ql-align-center">图源：微博</p>
+<p class="ql-align-justify">小米电视“大师”82寸至尊纪念版是一款追求极致画质及音效的高端电视，采用7680x4320的8K分辨率、120Hz高刷新率，True 10bit面板，10.7亿色彩，同时还支持HDR10、杜比视界及HLG。这款电视首发使用了mini LED技术，这是未来一代的显示技术，集成了15360颗mini LED灯珠，960分区控光，60颗独立控光芯片，“锐影光控”技术使得每个分区都可以实现4096级明暗变化，层次丰富，细节出色。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200928/ae0e3c6c55f74e3aba2f726627cdc135.png" max-width="600" /></p>
+<p class="ql-align-center">图源：微博</p>
+<p class="ql-align-justify">小米电视“大师”82寸至尊纪念版实现了2000nit+的峰值亮度，40000：1的超高对比度，还支持98% DCI-P3色域，色彩还原准确。小米电视“大师”82寸至尊纪念版还支持MEMC高速运动补偿技术，还可以将低帧率速率修复到120Hz高帧视频。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">小米电视“大师”82寸至尊纪念版采用了全面屏设计，屏占比高达98%，一体弯折全金属拉丝工艺实现了极致窄边框，视觉效果出色。小米电视“大师”82寸至尊纪念版还采用了中央旋转底座，可以208度旋转，方便调整，透明底座+浮光呼吸灯的设计也有着与众不同的高端感。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200928/02709a139a1e405a94b3827b4a1ffecc.png" max-width="600" /></p>
+<p class="ql-align-center">图源：微博</p>
+<p class="ql-align-justify">小米电视“大师”82寸至尊纪念版使用了Novatek72685高端8K电视主芯片，双核A73+双核A53高性能CPU，Mali-G51MP4 GPU核心，还支持5G网络，支持AI大师引擎，结合22项画质算法可以智能提升画质。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200928/6e9bec89f4f84ea291feb26b085c3f12.png" max-width="600" /></p>
+<p class="ql-align-center">图源：微博</p>
+<p class="ql-align-justify">小米电视“大师”82寸至尊纪念版搭载了“声动之翼”——自动伸缩音响系统，相当于外置了2个独立的Soundbar，拥有8单元三分频倒相式低音增强系统，双功放电子分频，低音20瓦*2、中高频10瓦*2的硬件配置，匹配小米自研音效算法，完美还原高中低音，仿佛置身演奏会现场。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200928/d578c1f7af2045fcb6cdbcfc82b17f64.png" max-width="600" /></p>
+<p class="ql-align-center">图源：微博</p>
+<p class="ql-align-justify">小米电视“大师”82寸至尊纪念版支持MIUI For TV智能电视系统，支持小爱同学3.0，可以智能语音控制，还可以控制家里的AloT设备。小米电视“大师”82寸至尊纪念版配备了1个HDMI 2.1及2个HDMI 2.0接口，还支持蓝牙5.0、双频Wi-Fi 5、4G及5G 双模。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200928/2a7ba35c7c3a4dc8b89e2a4c89db35fa.png" max-width="600" /></p>
+<p class="ql-align-center">图源：微博</p>
+<p class="ql-align-justify">小米电视“大师”82寸至尊纪念版的价格为49999元，10月21日全渠道开售。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜华为智慧屏将率先搭载鸿蒙2.0 系统，新品年底发布
+http://www.sohu.com/a/421466423_166680	38820
+<p class="ql-align-justify">集微网9月28日消息（文/叶子），日前，华为消费者业务 IoT 产品线总裁支浩在华为智慧屏一周年直播时透露，华为智慧屏将作为第一批升级 HarmonyOS 2.0 系统的终端产品，很快和大家见面。同时，年底华为智慧屏将推出全新系列，定位大众娱乐。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200928/ba27b090c2c84572a7d93d7cc4ef394d.png" max-width="600" /></p>
+<p class="ql-align-center">图源：微博</p>
+<p class="ql-align-justify">与去年发布的版本相比，HarmonyOS 2.0 系统在分布式软总线、分布式数据管理、分布式安全等分布式能力进行了升级，同时发布了自适应的UX框架，让开发者能够更快速地接触设备和用户。</p>
+<p class="ql-align-justify">去年，华为消费者业务 CEO 余承东发布了华为智慧屏战略，宣布智慧屏是华为战略部署的重点，更是华为全场景智慧化战略的核心支撑。不同于传统大屏的单一影音功能，华为智慧屏在影音娱乐中心的基础上，打造出集智慧交互、跨屏体验、IoT 控制功能于一体的四大中心，引领大屏功能体验的全新升级。去年开创智慧屏新品类至今，华为智慧屏迅速布局与成长，从高端品质旗舰 X65 至入门尝鲜款 V55i 系列产品全覆盖。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200928/268bfcf1683342f8b07ee336426f4a91.png" max-width="600" /></p>
+<p class="ql-align-center">图源：微博</p>
+<p class="ql-align-justify">据数码博主爆料，华为将在今年年底推出一个全新的智慧屏系列为入门级，价位会低一些，可以期待一下。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜小米电视大师82英寸发布，采用4K超高清屏幕
+http://www.sohu.com/a/421466858_166680	39120
+<p class="ql-align-justify">集微网9月28日消息（文/叶子），今天，小米发布新品小米电视大师82英寸，采用4K超高清屏幕，售价9999元。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200928/d2f9021062454d50b6552ec1559158f1.png" max-width="600" /></p>
+<p class="ql-align-center">图源：微博</p>
+<p class="ql-align-justify">小米电视大师采用82英寸4K超高清屏幕，分辨率高达4320x2160，178°可视角度，DCI-P3 93%广色域覆盖范围，120Hz刷新率，10bit面板，10.7亿色。采用星幕锐影背光系统，具备240个控光分区，1000nits亮度，140000:1对比度，锐影光控技术使得每块分区可呈现4096级明暗变化， 赋予光线千变万化的层次与细节。</p>
+<p class="ql-align-justify">小米电视大师82英寸实现了对杜比视界、HDR10+、HDR10和HLG的全部支持。其中HDR10+ 能够完美呈现各种手机拍摄的HDR10+视频内容。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200928/ae4f7d1624f34ffe9e056f380422dd1d.png" max-width="600" /></p>
+<p class="ql-align-center">图源：微博</p>
+<p class="ql-align-justify">小米电视大师82英寸还具备AI大师引擎深度定制的独立APU神经网络计算单元，能够智能分析、识别、调优画面，AI 动态场景识别，五大场景逐帧同步调校。同时拥有AI音质增强辅助，能够智能识别当前播放内容的场景， 并针对这些场景来选择对应的声音模式。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">小米电视大师82英寸搭载载MTK 9650高端芯片，采用22nm制程，四核A73 CPU 架构+Mali G52 MC1 GPU架构+1T算力APU，内置4GB+64GB存储配置，提供USB 3.0高速传输，HDMI 2.1标准协议接口，最高支持4K 120Hz画质输入，VRR可变刷新率和ALLM自动低延迟模式，符合下一代游戏主机标准。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200928/0b2c5d5145c44298a7f897bd03e565f9.png" max-width="600" /></p>
+<p class="ql-align-center">图源：微博</p>
+<p>小米电视大师82英寸搭载MIUI for TV 智能电视系统，基于AI学习能力，可深度洞察不同用户的观影习惯。自动无限加载模式可将内容在一个页面全部呈现，用户只需按动遥控器，内容就会像“瀑布” 一样，无限呈现出来。</p>
+<p class="ql-align-justify">目前小米电视已与爱奇艺、腾讯视频、优酷、芒果TV、bilibili达成内容深度合作，用户在小米电视可收看上述平台的内容。除此之外，小米电视还汇集了未来电视、华数、百视通、搜狐视频、聚体 育、聚精彩、南瓜电影、4K花园等平台的内容。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200928/f0160cb8aa4f44a1b23f36d53ce20550.png" max-width="600" /></p>
+<p class="ql-align-center">图源：微博</p>
+<p class="ql-align-justify">小米电视大师82英寸内置了小爱同学3.0，全新的 UI 界面，支持蜜糖、茉莉、青葱、泡芙4 种声音，让用户有更多音色可选。还支持蓝牙语音遥控器，独立语音键，一键唤醒小爱同学，语音搜片或控制智能设备。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜量产智能手机OLED面板太烧钱！JDI：正考虑和其他企业合作
+http://www.sohu.com/a/421467879_166680	39444
+<p class="ql-align-justify">集微网消息（文/holly），据MoneyDj援引时事通信社消息报道，量产智能手机OLED面板太烧钱，正在进行运营调整的日本中小尺寸面板大厂JDI正考虑和其他企业合作，以减轻投资负担。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200928/d07e63290bd24289bb79e47ecd9e0735.png" max-width="600" /></p>
+<p class="ql-align-center">图源：JDI</p>
+<p class="ql-align-justify">该报道称，JDI社长菊冈稔在接受线上采访时释出了上述信号，菊冈稔表示抢进智能手机OLED面板市场需要巨额的设备投资，与其他企业合作可减轻其数千亿日元的投资负担。</p>
+<p class="ql-align-justify">据悉，韩国的三星电子正在引领智能手机OLED面板市场，对此，菊冈稔指出，“能够打出技术的差异性，客户的需求将成为判断是否进军该市场的基准。”</p>
+<p class="ql-align-justify">另外，他表示，为了摆脱对液晶面板的过度依赖，希望将OLED面板事业培育成营收规模最少为数百亿日元的核心事业。</p>
+<p class="ql-align-justify">据此前消息，JDI目前正在为苹果供应Apple Watch的OLED面板，且为了争取苹果更多的订单，JDI正寻求提高千叶县的茂源工厂的生产能力，当前该工厂的6代线(1500×1850毫米)产能约为2000-3000片/月。</p>
+<p class="ql-align-justify">此外，为了抢攻中小尺寸面板市场，JDI曾计划在2022年3月之前对该业务总计投资2.33亿美元（250亿日元）。早前，菊冈稔在新闻发布会上表示，JDI正在开发能耗更低的智能手机OLED面板。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜半年内累计超20亿元！云天励飞完成新一轮超10亿元战略融资
+http://www.sohu.com/a/421467892_166680	39492
+<p class="ql-align-justify">集微网消息，近日，云天励飞完成新一轮超过10亿元战略融资，投资方为深圳市特区建设发展集团以及中国电子信息产业集团下属的中国中电国际信息服务有限公司和中电金投控股有限公司。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200928/b9e772dfaa5f41ce9dd5955959c0bc91.png" max-width="600" /></p>
+<p class="ql-align-center">图片来源：企查查</p>
+<p class="ql-align-justify">据深圳商报报道，本轮中国电子作为老股东追加投资，与华登国际一同成为云天励飞前三大股东，将以网络安全和信息化产业国家队的身份在现代数字城市、网信生态、AI芯片和算法等全方位与云天励飞开展合作。</p>
+<p class="ql-align-justify">云天励飞成立于2014年8月，其官网显示，公司致力于通过AI技术进行物理世界的结构化，打造数字孪生城市，依托国际化专家团队和“全栈式”AI技术平台，打造了面向公共安全、新商业、AIoT等领域的产品和解决方案，已广泛应用于深圳、北京、上海、杭州、青岛、成都、东莞及东南亚等100多个城市和地区。</p>
+<p class="ql-align-justify">其自主研发的全球首套动态人像识别系统——云天“深目”，目前已经在深圳、青岛、成都、长沙、南京、杭州、上海、北京等国内外100多个城市落地应用。</p>
+<p class="ql-align-justify">据统计，云天励飞半年内累计完成超过20亿元融资：今年4月，云天励飞宣布完成10亿元的Pre-IPO轮融资。（校对/若冰）</p>
+➜三星引燃Mini LED背光电视市场战火，LED供应链热潮或再起
+http://www.sohu.com/a/421468061_166680	39508
+<p class="ql-align-justify">集微网消息（文/小山），TrendForce旗下光电研究处表示，各大电视品牌厂商纷纷导入Mini LED背光电视，随着技术提升成本持续优化，预估2021年Mini LED背光电视将会达到440万台，占整体电视市场比重约2%。随着苹果即将推出Mini LED背光产品应用在IT产品上，韩国厂商三星电子与LG均规划于2021年推出Mini LED背光电视，特别是三星电子看准市场热度，积极布局该技术在电视上的应用，明年出货目标预计达到两百万台以上。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200928/30237993ad3346eba7db4514b7eba299.png" max-width="600" /></p>
+<p class="ql-align-center">（图源：网络）</p>
+<p class="ql-align-justify">目前各大电视品牌厂针对高端电视的布局，主要以4K或是OLED为两大主轴， 三星将在现有QLED 广色域的基础上，再搭配可多分区调控的Mini LED背光源，通过大幅提升对比度与显示效果使画质更细致，加上比OLED电视更低价的优势，期许能扩大市占率。</p>
+<p class="ql-align-justify">TrendForce表示，2021年三星将会推出55英寸、65英寸、75英寸、85英寸等大尺寸Mini LED背光电视，搭配4K的高分辨率画质，并采用Mini LED多分区背光调控，可将现有显示器对比度由10,000：1拉升至1,000,000：1。预估Mini LED的背光分区数量至少需100区以上的规格才会具有如此高对比度效果；因此对应背光模块的使用数量上也相对增加，每台电视依不同设计规格，使用的Mini LED数量约在8000至30000颗之间，凭借高分辨率面板与多区域控光的搭配，提升消费者针对显示效果的体验升级。</p>
+<p class="ql-align-justify">三星Mini LED背光电视预计将使用高压 LED芯片作为背光源，凸显高动态对比(HDR)与广色域(WCG)使显示效果加乘，并大量且快速的针对LED芯片波长和规格进行严格检测与分选，包括三安、晶电与隆达、惠特、梭特、泰鼎、聚积等相关厂商都已积极切进供应链。</p>
+<p class="ql-align-justify">TrendForce认为，虽然整体尚未定案，多数厂商仍在送样阶段，但可预期的是LED供应链将再次掀起热潮。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜5G智能手机拉货，敦泰触控驱动IC出货逐季看增
+http://www.sohu.com/a/421468258_166680	39577
+<p class="ql-align-justify">集微网消息（文/小山），据台媒工商时报报道，敦泰在5G智能手机品牌的大力拉货下，推动整合触控驱动IC（IDC）出货量逐季看增。</p>
+<p class="ql-align-justify">业内人士预期，敦泰9月合并营收将有望再度谱写新高，第三季合并营收将再缔新猷，同时进入第四季后，改公司业绩有机会力拚交出淡季不淡成绩单，全年运营可望攀上历史新高，2020年获利也将转亏为盈。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200928/a8b704acf0484bf893c937b34e149c90.png" max-width="600" /></p>
+<p class="ql-align-center">（图源：网络）</p>
+<p class="ql-align-justify">5G智能手机市场从上半年力推高端旗舰机型，到进入下半年后开始推动中低端入门款新机，目的在于拉高5G渗透率。另外，各家电信商也同步推出补贴方案，让智能手机品牌厂冲刺5G中低端智能手机出货量。</p>
+<p class="ql-align-justify">据悉，敦泰已成功通过IDC产品切入OPPO、Vivo及小米等各大品牌厂，2020年以来出货量逐季攀升。</p>
+<p class="ql-align-justify">业内人士指出，第三季IDC出货量将具备6000万套的实力，相较第一季及第二季的4000～5000万成长不少，全年出货量将上看2.2亿套，与2019年全年的1.2亿套相比几乎将翻倍成长。</p>
+<p class="ql-align-justify">不过进入第四季后，出货量将比第三季传统旺季略为下滑，不过仍将优于去年同期，因而公司运营表现将淡季不淡，带动全年合并营收创下历史新高，2020年获利将有望转亏为盈。</p>
+<p class="ql-align-justify">报道指出，敦泰进入2020年后，受惠于中国大陆智能手机品牌扩大采用IDC产品，市占率从原先的20％左右，重新站上26～30％，全年市占率更将有机会挑战30％关卡，运营表现可望远优于2019年及2018年水平。</p>
+<p class="ql-align-justify">除此之外，随着5G手机开始大力采用AMOLED面板，相关驱动IC及触控IC市场需求也将同步看增，敦泰在AMOLED触控IC成功获得韩国面板厂青睐，后续AMOLED驱动IC将为业绩成长注入一股新动能。</p>
+<p class="ql-align-justify">（校对/零叁）</p>
+➜多家半导体设备企业重要零部件供应商，先锋半导体新厂区已投产
+http://www.sohu.com/a/421468352_166680	39597
+<p class="ql-align-justify">集微网消息，今年8月份，位于江苏泰州靖江的先锋半导体科技公司，面积为老厂区6倍大的新厂区已初步建成投产，产能得以大大提升。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200928/ab5f808e593a4b08bfd8f52754367156.png" max-width="600" /></p>
+<p class="ql-align-justify">据经济日报报道，先锋半导体研制的集成电路领域高精度感应耦合等离子体刻蚀设备核心部件，打破了国外巨头垄断。</p>
+<p class="ql-align-justify">在国内，该公司积极与中芯国际、中微半导体等半导体设备企业合作，目前是多家半导体设备企业的重要零部件供应商。</p>
+<p class="ql-align-justify">在国外，该企业已与东南亚、东欧等地区多个“一带一路”相关国家达成初步合作意向，凭借这些订单，公司预计可实现35%左右的年销售增长。</p>
+<p class="ql-align-justify">据今年4月靖江市科学技术协会消息，该企业新研发的用于5纳米芯片工艺的刻蚀机核心零部件已经研发成功，在新厂区投用后即将投入生产。</p>
+<p class="ql-align-justify">靖江先锋半导体成立于2008年，其官网显示，该公司主要为国内外半导体设备厂商提供金属零部件，是国内装备厂重要的零部件供应商，客户包括北方华创、中微半导体、中芯国际、华虹宏力等企业。（校对/图图）</p>
+➜华为旗舰机涨价8%中低端机价格止跌：OVM年内受益或有限
+http://www.sohu.com/a/421462742_166680	64380
+<p class="ql-align-justify">集微网消息 随着华为“断芯”危机的上演，关于“Mate40很有可能是华为最后一款真正意义上的旗舰机”的说法，同样也越演越烈，在市场影响的促动下，华为手机涨价，已经成为行业热点。</p>
+<p class="ql-align-justify">但据笔者从行业得知，华为手机涨价产品主要为旗舰机，对于中低端手机而言，涨价幅度并不明显，且还未出现断供的现象。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200928/77ec99539c924f0396df797473d7fd1f.png" max-width="600" /></p>
+<p class="ql-align-justify">另一方面，从国产手机品牌来看，近来市场有不少消息表示，随着华为销量的紧俏，国产手机品牌OPPO、vivo和小米将成为受益者，但据分析师表示，从今年的情况来看，OPPO、vivo与小米虽然是受益者，但受益程度并不如外界所想的那么明显。</p>
+<p class="ql-align-justify"><strong>华为手机涨价主要为旗舰机：中低端手机涨幅不明显现货充足</strong></p>
+<p class="ql-align-justify">近来，就华为手机涨价事件，<strong>据某分析机构向笔者表示：“华为手机涨价的主要因素还是在于芯片事件，目前来看，华为的旗舰机涨价大概在8%，而中低端手机的价格也出现止跌的现象（此前发布的手机会随着时间周期出现价格下跌情况）。”</strong></p>
+<p class="ql-align-justify"><strong>此外，据某手机分销商向笔者表示：“华为手机涨价虽然已经成为事实，但整体的涨幅事实上并没有多少，主要是旗舰机。从中低端普通手机来看，目前还都有现货，并未出现外界传言的那么夸张。”</strong></p>
+<p class="ql-align-justify">对于华为手机涨价的情况，<strong>更是有分销商对笔者坦言：“此前本来就积压了不少库存，随着华为手机芯片被阻断，导致华为以后手机生产量存在很大的不确定性，不少经销商也正好借助这个机会来清理库存。”</strong></p>
+<p class="ql-align-justify">从行业来看，据Counterpoint Research数据表示，除了拉美，北美、欧洲、中国、中东和非洲等主要市场的智能手机销售均价在二季度均有所上扬。其中中国市场的手机涨幅最高，达到了13%，为310美元。</p>
+<p class="ql-align-justify">报告表示，第二季度5G智能手机营收占全球智能手机总营收的20%。其中，中国是5G手机销售的最大贡献者。据悉，全球5G手机营收的72%来自中国，其中大部分来自华为发布的5G智能手机。</p>
+<p class="ql-align-justify">至于涨价原因，很大一部分来源于在于5G手机价格的提升，另一方面，在全球智能机销量下滑23%的同时，高端机仅下滑了8%，由此造成均价抬升。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify"><strong>库存+控量有助华为延长销售期：OVM年内国内市场受益有限</strong></p>
+<p class="ql-align-justify">对于华为而言，当前最大的不确定因素在于华为芯片何时能够正常生产制造，假如今后其芯片不能再生产的话，在采用外购芯片的情况，其需要多长的过渡期，当前的库存又能支持多久？</p>
+<p class="ql-align-justify"><strong>对此问题，据上述分析师向笔者表示：“其实华为在渠道还有不少库存，如果华为的芯片供给最终跟不上的话，那么华为可以采取控制销量的方法，这样可以销售的更久一些，再卖个一年应该问题不大。”</strong></p>
+<p class="ql-align-justify">而在分销商看来，当前最重要的是把库存清理掉，虽然华为手机涨价的可能性很大，但降低库存量控制风险依然十分有必要。<strong>据另一名分销商对笔者表示：“目前我们华为的产品还够卖，短期内看不到卖到缺货的迹象；但长远来看，我们会调整销售华为、OPPO和vivo的手机比例。如果华为真的断供了，那么我们肯定会把重心转到OPPO和vivo。”</strong></p>
+<p class="ql-align-justify">与此同时，OPPO和vivo、小米会成为受益者吗？答案是肯定的，<strong>据上述分析师表示：“但从目前来看，甚至年内来看，受益的程度或许并不是很明显。”</strong>因为从华为的库存来看，再销售几个月肯定没问题。</p>
+<p class="ql-align-justify">而据笔者此前分析，随着华为手机芯片遭遇阻碍，如三星、OPPO、vivo、小米甚至苹果在内的一线手机品牌都是受益者。但实际上，华为在海外被抢夺的市场份额，主要还是落入三星囊中。</p>
+<p class="ql-align-justify">因为从华为手机此前两年在海外市场占比情况来看，占比达到了将近一半，2019年随着其海外市场的步伐被阻，转而加大向国内市场进军，并且取得了十分不错的成果。然而，到了今年，华为手机芯片源头遭遇狙击，两大因素影响之下，这也就意味着华为在海外市场的大部分份额或将被释放出来。</p>
+<p class="ql-align-justify">从三星、OPPO、vivo、小米和苹果来看，苹果主要局限于高端市场，而OPPO和vivo虽然近两年有大力开拓欧洲市场，但其海外的“大本营”其实主要是东南亚和印度市场，相比OPPO和vivo，小米海外市场的占比其实更大，但小米海外市场最主要的销量源于印度。而印度市场本来就是华为此前并未发力的市场，其在印度市场的销量几乎可以忽略不计！</p>
+<p class="ql-align-justify">对于华为而言，在遭遇供应链芯片危机之际，更是借此作为营销契机，正如余承东对外表示，“由于美国的制裁，华为领先全球的麒麟系列芯片在9月15日之后无法制造，将成为绝唱。”这也掀起了消费者对华为旗舰机购买的热潮。但正如上述分析师对笔者表示：“在华为现有的库存基础上，再加上控制销量，华为手机再销售个一年应该没问题。”而华为还需要平衡的一个问题就是高中低端手机产量的比例！（校对/Sara）</p>
+➜【IPO价值观】深科达多项财务指标不敌同行：IPO前夕遭投资机构清仓
+http://www.sohu.com/a/421464770_166680	68760
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200928/08fed114e24c4e429d03b43cfc2bf7c8.png" max-width="600" /></p>
+<p class="ql-align-justify">集微网消息 近年来，在平板显示产业高速发展的背景下，精测电子、联得装备等设备厂商也得到快速发展，并已经登陆资本市场。而作为行业老牌企业的深科达似乎并没有把握机会，其2019年营收规模似乎停滞不前。据笔者查询发现，深科达多项指标均落后于同行可比公司。</p>
+<p class="ql-align-justify">为了扭转落后局面，深科达于科创板申请上市，欲借助资本的力量实现更好的发展。不过，在深科达IPO申请前夕，多家机构联席清仓该公司股票，考虑当前平板显示产业正处于技术演变阶段，深科达经营业绩承受很大的压力，不排除投资机构不看好其发展前景。</p>
+<p class="ql-align-justify"><strong>多项指标落后于同行</strong></p>
+<p class="ql-align-justify">众所周知，平板显示器制造过程中包括列阵（Array）、成盒（Cell）以及模组（Module）三个制程，由于前段与中段制程所需设备技术门槛高，生产难度大，国内市场基本被日本、韩国企业垄断，进入该领域的国内企业较少，只有在检测设备领域，精测电子和华兴源创等企业通过多年的努力，实现了技术突破，占据了一定的市场份额。</p>
+<p class="ql-align-justify">不过，在平板显示器件后段制程生产设备领域， 我国平板显示器件生产设备企业已实现了突破性进展，国产设备的性能、质量已完全可以满足平板显示模组组装工艺的需求，国内设备企业的迅速崛起与发展正逐步打破日本、韩国企业在平板显示模组组装设备领域的垄断地位，早期全面采购进口设备的平板显示行业企业加大了国产设备的采购比例，进口替代进程正在加速，国产设备市场份额不断提高。</p>
+<p class="ql-align-justify">根据CINNO Research数据显示，我国AMOLED后段制程设备领域国产化率已经从2016年的8%到2019年达到42%，而其市场规模也从5亿元提升到40亿元。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200928/3bf2f9942fb94ffaa250d76c2c188d40.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">目前，在平板显示器件后段制程设备领域，随着精测电子、深科达、联得装备、易天股份、华兴源创等国内企业的加入，市场竞争较为激烈。在此境况下，笔者从对比上述企业的营收、净利润、净利率等财务指数，看哪家企业更具有竞争力。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200928/e45b79785f7b486b90088e600fd5d501.png" max-width="600" /></p>
+<p class="ql-align-justify">以上五家企业的营收排名来看，深科达在2017年、2018年均排名倒数第二，到2019年排名倒数第一。值得注意的是，深科达的营收规模与联得装备、精测电子、华兴源创均有较大的距离。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200928/e4010e49982f4cdf94ab216f5300ce66.png" max-width="600" /></p>
+<p class="ql-align-justify">而在净利润方面，深科达近三年均排名倒数第一，以2019年为例，深科达的净利润仅为易天股份的1/2，华兴源创的1/3、精测电子的1/5。</p>
+<p class="ql-align-justify">由于每家厂商专攻领域存在差异，同时亦有部分业务存在直接竞争，或许单独的营收、净利润不能直接比较反映公司的竞争实力，但是净利率可以反映一家企业的经营效率，通过对比净利率，或许能够得出大致的竞争力排名。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200928/18ea7645702b4549af9e818cde4c6251.png" max-width="600" /></p>
+<p class="ql-align-justify">在净利率方面，深科达近三年均排在倒数第一，以2019年为例，易天股份以18.94%排名第一，华兴源创、精测电子、联得装备、深科达排名第2~5位，其净利率分别为14.03%、13.83%、11.74%、11.18%。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200928/bb5acf1014d3453cb7f1649ee49c5fed.png" max-width="600" /></p>
+<p class="ql-align-justify">在研发投入方面，深科达近三年的投入金额仅高于易天股份，而远低于精测电子、华兴源创、联得装备。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200928/5effb90506ab427695ab0b82d28a209c.png" max-width="600" /></p>
+<p class="ql-align-justify">而在研发费用率方面，深科达高于易天股份、联得装备，但远低于精测电子、华兴源创。以2019年为例，华兴源创研发费用率为15.34%，排名第一，精测电子、深科达、联得装备、易天股份分别以13.63%、10.09%、9.72%、7.17%位于第2~5位。</p>
+<p class="ql-align-justify">通过对比发现，深科达在营收规模、净利润、净利率、研发投入等方面均落后欲同行可比公司。同时，深科达的存货迅速增长以及应收账款逐年增加也导致公司资金运转紧张，而在其IPO前夕，多家机构也清仓离去。</p>
+<p class="ql-align-justify"><strong>IPO前夕，多家机构联席清仓 </strong></p>
+<p class="ql-align-justify">2017-2019年末，深科达应收账款的余额分别为16,656.89万元、22,338.98万元和29,679.31万元，占当期营业收入的比例分别为53.92%、49.06%和62.89%，占比较高。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200928/d191306c6c7d4dbcb58e3b3f5224f237.png" max-width="600" /></p>
+<p class="ql-align-justify">从上图可知，深科达的应收账款占当期营收的比例均高于同行可比公司。以2019年为例，深科达应收账款占比营收比例高达62.89%；华兴源创、联得装备、易天股份、精测电子紧随其后，其占比分别为46.86%、42.96%、31.25%、31.22%。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200928/3c33c1cf0a944b00a190f70a207d2775.png" max-width="600" /></p>
+<p class="ql-align-justify">而在应收账款周转率方面，深科达均低于联得装备、易天股份，说明营运资金过多呆滞在应收账款上，影响正常资金周转及偿债能力。</p>
+<p class="ql-align-justify">在坏账准备方面，报告期内深科达应收账款坏账准备分别为1,377.13万元、1,731.46万元、2,253.42万元，占比应收账款总金额的比例分别为8.27%、7.75%、7.59%。值得注意的是，2017年，深科达就出现苏州点精光电有限公司、贵州省湄潭县乾恒科技有限公司的应收账款无法收回的状况，全额计提坏账准备。未来随着深科达业务规模的扩大，应收账款可能会进一步增加，如果出现应收账款不能按期回收或无法回收发生坏账的情形，将对其经营业绩造成不利影响。</p>
+<p class="ql-align-justify">而在存货方面，深科达报告期各期末存货净额分别为12,405.59万元、17,390.47万元、16,138.18万元，占当期营业收入的比例分别为40.16%、38.20%、34.20%，存货余额占营业收入的比例较高。</p>
+<p class="ql-align-justify">尽管深科达的生产模式主要为以销定产的定制化生产模式，即根据客户订单的要求，按照客户提供的产品规格、质量要求和供货时间组织生产；但其报告期末存货余额较大，若出现因产品生产销售周期过长或销售受阻而造成存货积压，深科达将承担存货跌价的风险。</p>
+<p class="ql-align-justify">此外，从深科达近几年应收账款坏账和存货减值准备来看，其应收账款金额与存货账面价值虽在可控之中，但随着应收账款逐年增加以及存货增长迅速，将占用流动资产更大的比例，这对公司的偿债能力也造成影响。</p>
+<p class="ql-align-justify">这从其偿债能力指标中便有所反映，2017-2019年，深科达流动比率分别为2.44、2.20、2.12，速动比率分别为1.77、1.57、1.60，流动比率以及速动比率较低，说明深科达营运资金的捉襟见肘。</p>
+<p class="ql-align-justify">整体来看，深科达多项指标远落后于同行惨遭垫底，企业竞争力明显不足。以2019年为例，与联得装备、易天股份、精测电子、华兴源创等几家同行上市公司相比，深科达的营收、净利润、净利率等的排名均惨遭垫底。研发投入费用率倒数第三、研发投入金额排名倒数第二，仅略高于易天股份。另外在应收账款占营收比例方面，深科达均高于同行可比公司。</p>
+<p class="ql-align-justify">或许是不看好深科达的市场前景，在深科达申报IPO前夕，多家机构联席清仓该公司股票。</p>
+<p class="ql-align-justify">2017年3月，深科达与东证周德、九证资本、创钰铭启、广发信德、郭小鹏等投资方签订了《定向增发认购股票协议》；公司实际控制人黄奕宏与上述股东签订了附有对赌条款的《补充协议》，就业绩承诺与补偿、回购条款、共同出售权、上市承诺等事项做了约定。</p>
+<p class="ql-align-justify">2017年，因深科达未按要求完成对赌业绩，2018年10月深科达创始人黄奕宏按照此前签署的相关协议所约定的预测数，对创钰铭启、九证资本、广发信德三家机构的股票进行了回购并予以现金补偿，三家机构全部清仓离去。</p>
+<p class="ql-align-justify">机构分析人士认为，一般情况下，如果拟上市公司在IPO前夕即使未按要求完成对赌业绩，大部分机构也会选择继续陪伴，像深科达这种在IPO之前被3家机构同时抛弃的较为少见，说明该公司或许有些地方还是存在一定的硬伤；当然也考虑到当前平板显示器产业处于技术演进的过程，深科达的经营业绩承受很大的压力，不排除投资机构不看好其发展前景。（校对/Lee）</p>
