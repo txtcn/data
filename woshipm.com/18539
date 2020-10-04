@@ -127,3 +127,103 @@ http://www.woshipm.com/zhichang/4206802.html	11356
 <p>vitamin，微信公众号：皮酱叨逼叨。人人都是产品经理专栏作家，公众号运营小白，初中级B端产品一枚（一年开发经验+三年产品经验）。主导过在线教育类产品，目前是跨境电商供应链仓储物流产品一枚，欢迎勾搭，一同学习。</p>
 <p>本文原创发布于人人都是产品经理，未经作者许可，禁止转载</p>
 <p>题图来自 Pexels，基于CC0协议。</p>
+➜电商优惠券产品设计：整体框架分析
+http://www.woshipm.com/pd/4206348.html	21325
+<blockquote><p>编辑导读：优惠券的作用对于电商网站来说是不可或缺的，它是保持电商活跃度和转化率的手段，了解电商优惠券的整体框架设计有助于产品工作的顺利展开。本文作者总结了一份详细的设计攻略，其中有很多学习和参考的内容，希望对大家有所帮助。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/09/zQbNZLXj5K4rstYxBGYG.jpg" /></p>
+<p><a href="http://www.woshipm.com/pd/4199407.html" target="_blank" rel="noopener">上篇文章</a>介绍了电商优惠券的功能、价值、活动流程等呈现在运营和用户面前的前端展示，本篇文章将继续来介绍优惠券产品系统设计，以优惠券的活动编码来贯穿整个活动过程。</p>
+<p>优惠券系统是一个极其复杂的TOB系统，最重要的是功能的实现。优惠券系统是需要产品经理、活动策划人员、财务人员、店铺运营人员、用户等各方人士协同工作，才可保证活动的完美进行，以下将优惠券的系统流程进行分析。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/fhvXJ4X2TpFhxB4qTwZo.png" alt="" width="801" height="748" /></p>
+<h2>一、创建系统活动</h2>
+<p>活动创建主要进行三个步骤：建立活动规则、创建活动、活动发布。</p>
+<h3>1. 建立活动规则</h3>
+<p>无规矩不成方圆，在活动的举办中也是如此，涉及到优惠券的活动更是需要建立完善的规则，防止各家店铺来套取优惠券，影响平台的活动心智。完善的活动规则能促进活动的顺利进行，也能避免很多不必要问题的出现，因此在活动的前期就需要将规则梳理清楚。</p>
+<p>对于电商的促销活动，主要涉及5个维度—商家、商品、价格、库存、活动费用承担。</p>
+<p><strong>商户维度：</strong>对于电商平台而言，商户的规模是良莠不齐的，部分商户经过多年的积累已发展成为平台的核心店铺，而部分店铺规模小，不能带来大的销量，因此在不同类型的活动需要不同类型的商户来参与，如果是为了销售达成，则需核心起量商户参与，如需发展腰部商户，政策则需进行倾斜。</p>
+<p><strong>商品维度：</strong>更多时候是需要爆款/新品等高热度、高流速单品参与，为实现高ROI的效果。</p>
+<p><strong>价格维度：</strong>对近期的商品到手价格有所要求，例如价格到手价（即券前价）全网最低，且≤近30天最低价。</p>
+<p><strong>库存维度：</strong>核心要求为存销比，低存销比的产品在销售时可能出现无货现象，影响用户。</p>
+<p><strong>活动经费承担维度：</strong>平台对费用的承担比例，避免活动结束出现费用结算不清的问题。</p>
+<h3>2. 活动创建</h3>
+<p>在电商平台中，活动是营销策略，是最为重视的运营手段之一，优惠券是具体的营销力度或营销动作。</p>
+<p>一个活动下可设置多种类型的优惠券来进行营销，这些优惠券都是为此活动进行服务的，那活动与这些优惠券之间的关系可形象的比作父子，因此可将活动与优惠券设置为父子活动。</p>
+<p>首先根据活动主题来设置活动的基本信息，以近期的国庆活动为例：活动名称为国庆嗨购行业券，针对的类目为手机类目。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/XKoFJjvKSpQ3GQqervWw.png" alt="" width="342" height="147" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/dr3reNV6bhnuqEPIBCVw.png" alt="" width="344" height="135" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/EDuo68tm5HAa0316CsWv.png" alt="" width="617" height="82" /></p>
+<h3>3. 优惠券招商活动设置</h3>
+<p>活动招商报名即创建优惠券，报名相关选品。设置优惠券包含三大板块：活动详情介绍、活动规则介绍、选品报名规则介绍，在上篇文章中已有所介绍。</p>
+<p>活动详情介绍：主要介绍此活动的名称、对象、主要内容，招商的要求等，设置人员可对此活动进行简单的介绍。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/51xqgfAcBWmWDmDHeGrg.png" alt="" width="593" height="394" /></p>
+<p>活动规则介绍：活动规则设置包含活动类型、活动时间、券面额、展示区域。活动类型指不同类型的营销活动，常见的有限时打折、平台券、预约预定等。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/L2wXgcDSYvJchYtirkXt.png" alt="" width="591" height="54" /></p>
+<p>活动时间指活动开始和活动截止时间。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/txvXDXwZtra7Dg7QHYij.png" alt="" width="572" height="49" /></p>
+<p>每天领券时间：可设置为全天领券和指定时间段领券，全天领券可设置全天可领张数，指定时间段领券是分时间段来领券，每个时间段设置固定张数。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/djtgnbiIwPdMCqVND3YY.png" alt="" width="607" height="208" /></p>
+<p>券面额和券的活动次数都需设置，券的展示区域设置为该券可展示的位置。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/s5FDh7eJJiiYrt8xR6wc.png" alt="" width="603" height="243" /></p>
+<p>选品报名规则介绍：设置报名时间和活动审核时间，店铺、商品的报名门槛，逾期和不符合要求的店铺和商品不可报名此营销活动。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/W6RtLvIkkiu4GPS6R8Si.png" alt="" width="605" height="220" /></p>
+<p>审核：根据实际情况可设置为人工审核或系统审核。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/Qp6v99XKE50k7fzixFAG.png" alt="" width="612" height="102" /></p>
+<h3>4. 活动发布</h3>
+<p>活动发布之前可对活动内容进行修改、再编辑等一系列操作，但是一旦活动发布，也就意味活动将要进行到下一个环节，发布之后不可进行编辑再操作，而活动设置的细节不可再进行修改。当确认营销活动设置的细节没有问题后，即可对此营销活动进行发布。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/53fphiDvk4WXtTy3Y2yC.png" alt="" width="644" height="80" /></p>
+<h2>二、财务审批系统</h2>
+<p>根据前期对活动流程的分析可知在整个活动周期中至少需要两次的财务审批流程。</p>
+<h3>1. 整体活动额度申请审批</h3>
+<p>第一次为活动费用申请审批，财务根据活动的收益和活动的消耗额度对此活动进行评估，若出现活动费用短缺等问题，财务可有权一键驳回。</p>
+<h3>2. 活动优惠券设置审批</h3>
+<p>第二次审批则是在活动流程发布之后，同样需要财务人员对优惠券活动进行审批，财务人员需把控整体活动的费用预算，在各个时间节点，财务将通知费用的消耗情况。常见的财务审批系统是依托于OA办公系统，流程到财务人员权限下，财务人员核对活动设置细节，评估锁定的资源，如符合要求即可审批通过，活动入口正式建立成功。</p>
+<p>核心审批券信息有：招商对象、展示区域、券面值平台、承担比例、预估券转化率、优惠说明等，而这些信息都是在设置券的过程中就需完成的。财务人员是对券信息的进一步检查，防止出现券设置错误等问题。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/kVMmh1ow5UCAhwdVzcod.png" alt="" width="594" height="360" /></p>
+<h2>三、  运营报名与投放</h2>
+<h3>1. 活动报名</h3>
+<p>活动入口建立成功后将产生活动入口编码，运营人员可根据活动入口来报名对应的营销活动。若活动设置为以店铺维度参加活动，则运营人员可报名店铺编码，若活动设置为单品维度参与，运营人员需提报对应的SKU。</p>
+<p>活动报名时间截止后，活动策划人员可以按照活动规则要求对报名的选品进行审批，如果不符合要求，即可清退。此工作要求熟悉行业的各种产品，如爆款产品型号、滞销产品型号等，在具有销售压力的情况下，如何最大程度地发挥优惠券地作用，提升优惠券地ROI，参与地选品起到至关重要的作用。</p>
+<p>报名结束后将生成券活动编码，此编码将是后期页面展示和活动数据复盘的重要查询条件，也是券链接的重要组成部分。</p>
+<h3>2. 优惠券投放与页面展示</h3>
+<p>一般的优惠券的投放分为站内投放和站外投放。</p>
+<p><strong>（1）站内投放</strong></p>
+<p>站内投放是指在公司内部平台中展示相应的广告资源。优惠券常见的投放渠道有会员领券、类目会场领券、店铺页面领券等。如何在页面中投放优惠券呢，核心需要优惠券编码数据。下面将以会场页面投放为例介绍如何置放优惠券。</p>
+<p>会场页面主要包含主题、利益点、优惠券、核心产品等内容，这些内容都是通过相应的编码进行编辑的，以产品素材为例，运营人员通过编辑产品编码、产品型号、产品价格、产品核心利益点等关键信息，从而在会场页面中出现对应的产品。</p>
+<p>同样，在会场页面中添加优惠券也是通过编辑添加优惠券的编码，页面即可出现对应的优惠券，之后可调整优惠券的位置来提醒用户领取需要的优惠券。优惠券在其他渠道的投放操作也是类似的。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/GZ2sFRuf5XouMEBiD2RW.png" alt="" width="809" height="404" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/VHUGjRbpaxKyII5mLFxc.png" alt="" width="299" height="405" /></p>
+<p>大多数商品的四级详情页中会设置相应的优惠券，此优惠券是在创建券活动招商入口时就可进行设置，设置过程在上篇文章中有详细介绍。</p>
+<p><strong>（2）站外投放</strong></p>
+<p>和站内投放不同，站外投放是在外部平台中投放广告资源，付相应的广告费用，利用外部平台的流量来为自己的产品进行宣传。站外投放的主要作用是引流，引导消费者进入购物页面，领取优惠券后进行消费。</p>
+<p><strong>优惠券的页面展示</strong></p>
+<p>页面中的优惠券的状态分为立即领取和已抢光。若优惠券设置为全天领券，页面中的优惠券将一直释放优惠券，若优惠券领取完毕，则当天不再释放，页面显示已抢光。若优惠券设置为分时间段领券，页面中的优惠券是分时间段进行领取的，在某一时间段内领取完，页面显示已领完，下一时间段（如10点）开抢。</p>
+<p>优惠券显示主要信息：面额、使用门槛、使用规则等，下图展示的是某平台页面展示的优惠券。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/uZhUCpX2Ks8FTQp1IpAB.png" alt="" width="750" height="346" /></p>
+<h2>四、用户购买系统</h2>
+<h3>1. 我的优惠券</h3>
+<p>在用户购物系统中，通常会有单独的一栏：我的优惠券，在此模块中会展示该用户账户中存在的所有的优惠券。用户账户中的优惠券分为三种状态：可用、已用（使用记录）、过期。</p>
+<p>下图展示了某购物平台的优惠券。对于账户中新出现的优惠券或是即将过期的优惠券，系统推送消息进行提醒。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/T5vayEzrZG4ZNJKoypQN.png" alt="" width="288" height="134" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/ZWpMq8ARG9UbRjywgxCs.jpg" alt="" width="272" height="588" /></p>
+<h3>2. 支付</h3>
+<p>在订单付款页面结算时，系统会自动扣减可使用的最大额度的优惠券，面额相同的优先使用快过期的券。用户也可手动调整是否使用优惠券。在优惠券列表中存在可使用的优惠券和不可使用的优惠券，不可使用的优惠券可设置为灰色。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/XNqvrlbNt7euLJh0yme1.jpg" alt="" width="199" height="431" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/uBCKrSoioow7X581EKKd.jpg" alt="" width="200" height="433" /></p>
+<h3>3. 退货</h3>
+<p>当用户申请退货且退货成功后，在规定时间后优惠券可自动返回至用户的账户中。</p>
+<h2>五、数据分析系统</h2>
+<p>数据分析系统中核心指标数据为：优惠券的领取量、优惠券领取率、优惠券有效使用率、优惠券支付金额、优惠券的ROI、优惠券使用新买家数等，以下是对这些指标的简单介绍。</p>
+<ul>
+<li>优惠券的领取量：指用户成功领取的优惠券数量，具体分析两点：时间段、面额，不同时间段、不同面额的的优惠券领取量不同；</li>
+<li>优惠券领取率：(领取量 / 总发行量) * 100%；</li>
+<li>优惠券有效使用率：(有效使用量 / 使用量) * 100%；具体分析品牌、商品型号所对应的不同面额的优惠券的使用率；</li>
+<li>优惠券支付金额：成功使用优惠券订单的累计支付金额；</li>
+<li>优惠券ROI: 使用优惠券订单支付金额/优惠券金额，ROI越高，活动效果越好；</li>
+<li>优惠券使用新买家数 ：新买家数越高，优惠券的拉新效果越显着。在数据分析系统中，以券编码作为查询条件，可方便快速地查找到对应活动的数据。</li>
+</ul>
+<h2>六、总结</h2>
+<p>券编码是贯穿了整个活动周期的：创建活动时生成活动编码，报名活动后生成券编码，页面展示时将券编码作为媒介搜索券信息，从而生成优惠券，分析数据时依据券信息查询活动数据。</p>
+<p>本文对电商优惠券所涉及到的系统都进行了较为详细的介绍，电商优惠券系统是电商系统中较为复杂的部分，同时电商优惠券系统大多数是TOB系统，第一优先级是实现功能，但是其用户体验也是不可忽略的部分，之后针对一些细节板块我也将进行深入研究。</p>
+<p>&nbsp;</p>
+<p>作者：Caroline，一名希望每天都有进步的运营和产品爱好者。</p>
+<p>本文由 @Caroline 原创发布于人人都是产品经理，未经作者许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
