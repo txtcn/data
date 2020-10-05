@@ -1,0 +1,37 @@
+➜终端机雏形、远端操控、数据传输的首创者——史提毕兹│《电脑简史》数位时代（七）
+https://pansci.asia/archives/192591	7200
+<p class="has-text-color" style="color:#3c4b89"><span style="color:#3c4b89" class="has-inline-color"><strong>贝尔实验室的史提毕兹打造出第一个继电器加法器后，等了好几个月才获得主管批准，打造複数计算机。他为这台机器设计了许多首开先例的操作方式，包括多台输入/输出装置、远端操控、以电话线传输资料。就连「数位」 (digital) 这个词都经他建议才普遍使用的。</strong></span></p>
+<blockquote class="wp-block-quote"><p>本文为系列文章，上一篇请见：<a href="https://pansci.asia/archives/192270">电脑先驱中的先驱——不为人知的楚泽│《电脑简史》数位时代（六）</a></p></blockquote>
+<h2>複数计算机——因长途电话而生，成为贝尔实验室得力助手</h2>
+<p>1938 年春，楚泽在柏林打造 V1 已近尾声之际，贝尔实验室的史提毕兹终于等到主管的答覆。几个月前，史提毕兹向主管展示只有两个继电器的阳春加法器 Model K，希望能够进一步开发二进位的计算机。然而贝尔实验室是 AT&amp;T 成立的研究单位，研究的领域当然是以电话通讯为主。在主管眼中，继电器是电话交换机的零件，史提毕兹却想拿来搞数位计算机，与本业似乎毫不相干，因此迟迟未批准他的提案。</p>
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://history-computer.com/ModernComputer/Relays/images/ModelKStibitz.jpg" alt="ModelKStibitz.jpg"/><figcaption>只有两个继电器的 Model K。图：<a href="http://wiki.sjs.org/wiki/index.php/History_of_Computers_-_Complex_Number_Calculator">Wik</a>i</figcaption></figure></div>
+<p>不过目前他们实验室的确在计算上遇到瓶颈。主要是因为长途电话得靠讯号放大器增强讯号，但增强的结果，杂讯也跟着放大了，所以又得加上滤波器过滤杂讯。其中处理讯号的方程式牵涉到複数的计算（複数的基本形式是 a + bi，其中 a 与 b 是实数，i 是 -1 的平方根，称为虚数），相当麻烦，两数相乘就要六个步骤，相除更多达十二个步骤。</p><div class="pansc-content"></ins>
+<script async type="text/javascript" src="//cdn.holmesmind.com/js/init.js"></script></div>
+<p>为了不要浪费数学家的时间，贝尔实验室特地雇用一群女性计算员专门负责计算複数。虽然有机械式的四则计算器可以用，仍要耗费不少时间与人力，而且每一步骤都要先写下计算的结果，再将它们按实部与虚部分别加总，这过程不免发生人为错误。于是史提毕兹的主管把他找来，确认他能开发出计算複数的计算机后，才同意进行，并指派设计交换机的资深工程师威廉斯 (Samuel Williams) 和他合作开发。</p>
+<p>既然是专门计算複数，他们乾脆将这台机器取名为「複数计算机」(Complex Number Calculator)。史提毕兹针对複数计算的特性，设计成两个运算单元同时运作，各自进行实部与虚部的计算。运算单元当然是使用继电器，一共用了四百多个，但记忆单元则是改装自现成的纵横式交换机。</p>
+<p>输入／输出装置也是用传递电报的电传打字机 (Teletype) 改装而成，从打字机键盘输入算式后，计算的结果会由同一台打字机列印在纸上。经过一年多的时间，複数计算机终于在 1939 年 10 月完工，可以在 45 秒内完成两个複数的乘除。这计算速度似乎不是很快，但至少可以避免人为错误。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="200" height="226" src="https://pansci.asia/wp-content/uploads/2020/09/3916ad427340fb6df9d8efe302462ffb.jpg" alt="" class="wp-image-192595"/><figcaption>複数计算机的输入／输出装置。图：<a href="http://wiki.sjs.org/wiki/index.php/History_of_Computers_-_Complex_Number_Calculator">WIKI</a></figcaption></figure></div>
+<p>为了有效利用複数计算机，当机器于隔年一月正式上线时，共外接了三台电传打字机，让不同部门的人员可以在原地操作，直接得到答案，不须走到机器所在的位置。当有人正在使用时，互锁装置 (interlock) 会自动启动，防止第二个人再连进机器，以免干扰机器运作造成错误。複数计算机顺利运作，从此成为贝尔实验室的得力助手，直到进入 50 年代前才退役。</p>
+<h2>史上第一遭，透过电话线操作三百多公里外的计算机</h2>
+<p>1940 年 9 月 11 日，「美国数学学会」(American Mathematical Society) 在达特茅斯学院 (Dartmouth College) 举办年会，史提毕兹上台展示已经运作好几个月的複数计算器（约莫此时在欧洲那边，楚泽也在德国航空研究所展示他的 V2）。其实这台複数计算机并不在年会现场，它仍然安置在纽约的贝尔实验室，年会舞台上只放了一台电传打字机，两者透过三百多公里的电话线相连。</p>
+<p>史提毕兹在键盘输入算式后，过没多久电传打字机就将答案列印在纸上，令现场听众啧啧称奇。接着他邀请台下的数学家亲自测试，複数计算器也都吐出正确答案，获得普遍讚扬。</p>
+<p>值得一提的是，有几位即将在电脑发展中扮演重要角色的人物也在现场，包括冯纽曼、第一台通用型电子计算机的发明人莫奇利 (John Mauchly)，以及「模控学 (cybernetics) 之父」维纳 (Norbert Wiener)。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="560" height="747" src="https://pansci.asia/wp-content/uploads/2020/09/401ea7237898cf87ff29e1f4ae014558-560x747.jpg" alt="" class="wp-image-192597" srcset="https://pansci.asia/wp-content/uploads/2020/09/401ea7237898cf87ff29e1f4ae014558-560x747.jpg 560w, https://pansci.asia/wp-content/uploads/2020/09/401ea7237898cf87ff29e1f4ae014558-350x467.jpg 350w, https://pansci.asia/wp-content/uploads/2020/09/401ea7237898cf87ff29e1f4ae014558-768x1024.jpg 768w, https://pansci.asia/wp-content/uploads/2020/09/401ea7237898cf87ff29e1f4ae014558-1152x1536.jpg 1152w, https://pansci.asia/wp-content/uploads/2020/09/401ea7237898cf87ff29e1f4ae014558-1536x2048.jpg 1536w, https://pansci.asia/wp-content/uploads/2020/09/401ea7237898cf87ff29e1f4ae014558-scaled.jpg 1920w" sizes="(max-width: 560px) 100vw, 560px" /><figcaption>史上首度远端遥控电脑的会场：达特茅斯学院的麦克那厅。图：<a href="https://en.wikipedia.org/wiki/George_Stibitz#/media/File:Stibitz_McNutt_Hall_Dartmouth_0709_edited-1.jpg">WIKI</a></figcaption></figure></div>
+<h2>二次大战需大量防空火炮，射控系统急需自动测试</h2>
+<p>複数计算机获得各界正面评价，史提毕兹本想乘胜追击，争取预算继续改良计算机。不过对高层而言，花了两万美元的複数计算机已经够用了，看不出改良的迫切性。而且此时贝尔实验室正忙着军方的委託案，为防空火炮的射控系统开发类比计算机，用来预判敌机的飞行路径，实在没有多馀人力，于是否决了史提毕兹的提案。不料一年之后，竟是军方同样的委託案，重启了数位计算机的开发。</p>
+<p>原来纳粹军队在欧洲势如破竹，美国眼见同盟国情势危急，于是在 1941 年 6 月重新改组刚满周年的「国防研究委员会」，另外成立「科学研究发展局」，同样由凡纳尔．布希领导，直接对总统负责。史提毕兹随即被借调到科学研究发展局就职，加入射控 (Fire Control) 部门。</p>
+<p>几个月后美国宣布参战，军方的武器需求大增，贝尔实验室随即涌入大量订单。原本贝尔实验室都是靠人工计算并输入敌机的模拟数据，以测试、修正类比计算机，如今遽增的测试工作已非人工作业所能负荷。</p>
+<p>于是史提毕兹跳下来开发一套自动测试系统，他以複数计算机为基础，同样用继电器设计出「内插值计算机」(Relay Interpolator)，只要输入描述飞行路径的函数，计算机便利用内插法产出大量的数值，供射控系统模拟测试。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="502" height="800" src="https://pansci.asia/wp-content/uploads/2020/09/0db7ad8e779d99a76df0fefdd6ff2182.jpg" alt="" class="wp-image-192598" srcset="https://pansci.asia/wp-content/uploads/2020/09/0db7ad8e779d99a76df0fefdd6ff2182.jpg 502w, https://pansci.asia/wp-content/uploads/2020/09/0db7ad8e779d99a76df0fefdd6ff2182-350x558.jpg 350w" sizes="(max-width: 502px) 100vw, 502px" /><figcaption>图片下方中间即是射控系统的类比计算机。图：<a href="https://en.wikipedia.org/wiki/Fire-control_system#/media/File:Radar_and_Electronic_Warfare_1939-1945_A28824.jpg">WIKI</a></figcaption></figure></div>
+<h2>史提毕兹打造内差值计算机，进而设计通用型计算机</h2>
+<p>内插值计算机于 1943 年 7 月完工，用了 440 个继电器，和複数计算机差不多，最大的不同在于运算程序由打孔纸带控制，只要更换不同纸带就能执行不同的内插法。这是美国第一部可程式化的数位计算机，比起楚泽的 Z3 已经晚了两年，而且只做内插法的运算，不如 Z3 的用途广。</p>
+<p>史提毕兹随后又设计了两台计算机，同样用于射控系统，但功能更强大，可以直接算出防空火炮的弹道，并即时与敌机的飞行路径做比较。因为它们都是用继电器打造的数位计算机，贝尔实验室便按开发顺序，将它们取名为 Mode lII 和 Model IV。这两台计算机分别于 1944 年中与 1945 年初交给军方使用，直到 50 年代末才退役。</p>
+<p>由于这几部计算机都相当成功，科学研究发展局打算投入五十万美元，开发更大型的计算机，除了计算射表、弹道，还能让军方用来做各种计算。贝尔实验室于 1944 年获得这项通用计算机的开发案，规划设计当然仍由史提毕兹操刀，型号依例按开发顺序就叫 Model V（型号五）。</p>
+<p>Model V 于 1946 年 7 月启用，所用的继电器超过九千个，重达 10 吨。它有两套独立的系统，各自有完整的控制单元、运算单元、记忆单元与输入／输出装置，可以同时运算两种不同问题，也可以合成一体处理较複杂的大型问题。两套系统如何运作是由机器的主控单元指挥，主控单元有专属的控制程式，相当于现代电脑的作业系统 (Operation System)。</p>
+<figure class="wp-block-image size-large"><img loading="lazy" width="560" height="437" src="https://pansci.asia/wp-content/uploads/2020/09/2b05e019e466eb63a74d6467cf231fd9-560x437.png" alt="" class="wp-image-192600" srcset="https://pansci.asia/wp-content/uploads/2020/09/2b05e019e466eb63a74d6467cf231fd9-560x437.png 560w, https://pansci.asia/wp-content/uploads/2020/09/2b05e019e466eb63a74d6467cf231fd9-350x273.png 350w, https://pansci.asia/wp-content/uploads/2020/09/2b05e019e466eb63a74d6467cf231fd9-768x600.png 768w, https://pansci.asia/wp-content/uploads/2020/09/2b05e019e466eb63a74d6467cf231fd9-1536x1199.png 1536w, https://pansci.asia/wp-content/uploads/2020/09/2b05e019e466eb63a74d6467cf231fd9-2048x1599.png 2048w" sizes="(max-width: 560px) 100vw, 560px" /><figcaption>安装于美国陆军「弹道研究实验室」的Model V。图：<a href="https://en.wikipedia.org/wiki/Model_V#/media/File:Bell_Relay_Computer.png">WIKI</a></figcaption></figure>
+<h2>史提毕兹创举留后世，贝尔实验室再端新技术</h2>
+<p>不过史提毕兹并未全程参与 Model V 的开发。1945 年二次大战结束后，科学研究发展局也解除对他的借调，让他归建原单位。但史提毕兹决定不回贝尔实验室，而是以私人顾问的身分为企业与政府机构提供谘询服务。前几年他主要还是在电脑领域，但后来就转向生物医学的研究了。</p>
+<p>史提毕兹对电脑做出许多先驱性的试验。複数计算机同时接了三台输入／输出装置，虽然不能同时多人使用，仍算是后来电脑主机搭配多台终端机的最早雏型。而他在达特茅斯学院的数学年会上，完成史上首度远端操控电脑的演示，开启了操作电脑的另一种方式，同时证明了电话线传输数据的可能性。而且使用数位 (digital) 这个词来指称计算机也是史提毕兹率先倡议。</p>
+<p>1942 年，他在科学研究发展局的会议中，建议计算机的类别应该用数位与类比来区分，而不是「脉衝」(pulse) 与类比。如果不是他，今天我们用的词可能就是「脉衝电脑」、「脉衝化」、「脉衝时代」了。</p>
+<p>至于贝尔实验室，紧接着 Model V 推出精简版的 Model VI 之后，就再也没有投入计算机的开发。虽然如此，他们仍持续对电脑与网路做出许多重大贡献，包括数据机、电晶体、行动网路、卫星通讯，乃至 UNIX 作业系统与 C 语言，都改变了数位时代的面貌。</p>
+<div>PanSci 泛科学</a>.</p>
