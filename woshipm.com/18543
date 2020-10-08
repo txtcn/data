@@ -1,0 +1,152 @@
+➜Axure教程：用中继器做个性化表格
+http://www.woshipm.com/rp/4207297.html	8558
+<blockquote><p>编辑导语：我们在看表格时，不同的人关注的重点不一样，所以要用个性化表格来进行区分排列，让用户可以根据自己的喜好和需要进行排列；本文作者分享了关于如何用中继器做个性化表格，我们一起来看一下。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4208769" src="http://image.woshipm.com/wp-files/2020/10/x90IzGPjmFmSHCQeEjB0.jpg" alt="" width="900" height="420" /></p>
+<p>Hello，今天作者教大家如何在axure中用中继器做一个个性化表格。</p>
+<p>首先什么是个性化表格，为什么需要个性化表格呢？</p>
+<p>我们先来看看下面这个例子，是关于股票的一些数据，例如市盈率、市净率、量比、行业等上百个字段。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/XYiLeHbT2gAYTw9MVERi.gif" alt="" width="2543" height="830" /></p>
+<p>但是不同的投资者想看的数据不一样，例如张三是价值投资者，非常重视市盈率和市净率，对于其他的数据不太关心；李四是一个技术投资者，比较关心股票的量比、近期涨幅；对市盈率、市净率的数据莫不关心。</p>
+<p>这时我们怎么设计能同时满足不用用户的需求呢？</p>
+<p>这时候就需要用到自定义表格，用户可以根据自己的喜好定制个性化列表；例如张三，他可以定制查看市盈率、市净率等重要的数据，这样就可以满足不用用户的需求。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/uoKF4p1EywW2GNM6MyeU.gif" alt="" width="2360" height="1431" /></p>
+<p>原型演示地址：<a href="https://r8u8dy.axshare.com" target="_blank" rel="noopener">https://r8u8dy.axshare.com</a></p>
+<h2>制作教程</h2>
+<p>制作自定义列表作者会使用中继器来制作，如果你看过我之前的文章都可以发现，作者会比较喜欢用中继器来制作原型，因为作者希望以后需要再次使用类型的原型的时候，就不需要重新画图制作交互；所以用中继器来制作，制作完成之后，下次使用时，只需要在中继器填写对应数据就完成了，交互什么的都是由系统自动生成，非常高效。</p>
+<h3>1. 用中继器制作表格</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/RIrr3KUCIVeZ4IGEdZF6.png" alt="" width="2161" height="784" /></p>
+<p>1）表格中继器内材料</p>
+<p>如下图所示，我们需要几个矩形，分别为列表标题和和数据，需要几行的数据就加多少个data；为了美观，可以填充颜色修改矩形样式。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/4Y6IKK7F7ysYr9nzUOZI.png" alt="" width="183" height="761" /></p>
+<p>2）列表中继器表格内容</p>
+<p>如下图所示，需要设置title列和data列，data列取决于有多少行数据，然后依次填入对应数据即可。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/6OYkqg2zsGBma4RNmaB1.png" alt="" width="2216" height="517" /></p>
+<p>3）列表中继器内交互设置</p>
+<p>每项加载时，设置title的矩形文本=item.title，data的矩形文本=item.data。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/ptQF7pnkLcIwVlOXDg2t.png" alt="" width="2056" height="1168" /></p>
+<h3>2. 用中继器制作表格显示选项</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/PZxkkkLoSqw33BeYfSOe.png" alt="" width="1347" height="906" /></p>
+<p>1）选项中继器内材料</p>
+<p>仅需要多选按钮：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/SqXoNqCy7YOVbb5niLCm.png" alt="" width="291" height="39" /></p>
+<p>2）选项中继器表格内容</p>
+<p>需要两列，一列是title，就是和列表中继器内title数据一致即可，另外一列是xuanzhong，用于记录该选项是否被选中。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/1j0PMKtbgPw6PBAsRv1R.png" alt="" width="419" height="389" /></p>
+<p>3）选项中继器内交互设置</p>
+<p>设置复选框的文本=item.title。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/W7zN0NgUTQfyVzXbVL1n.png" alt="" width="460" height="159" /></p>
+<p>设置复选框是否选中，我们这里通过中继器来控制复选框是否选中；如果item.xuanzhong的数据为1，就设置该行复选框的状态为选中；如果不为1，则不选中。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/dZSfEYeVXS23lj6MqxjB.png" alt="" width="453" height="287" /></p>
+<p>复选框选中和取消全选事件：当复选框选中时，我们需要更新中继器，让中继器记得该行复选框被选中，所以是更新该行的item.xuanzhong==1；如果取消选中时，我们更新该行的item.xuanzhong==0即可。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/Hv7lur67ezywp1uoSC2y.png" alt="" width="488" height="292" /></p>
+<p>记录选中文字，每项加载时，我们需要记录选中的文字，我们新建一个文字标签，命名为筛选逻辑；如果xuanzhong==1时，我们让筛选逻辑加上该行的文字，即筛选逻辑文本=该文本原来的文字+item.title，筛选逻辑默认隐藏，制作逻辑处理。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/Fq3MzqX8T7DgSKqhuvta.png" alt="" width="2056" height="1168" /></p>
+<p>触发筛选逻辑，当中继器加载完最后一条时，我们要对表格中继器进行筛选，所以需要触发筛选逻辑鼠标单击时的事件。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/ExTtZINBMPcHK79GDscy.png" alt="" width="474" height="156" /></p>
+<p>筛选逻辑鼠标单击时，我们需要对表格中继器进行筛选，筛选的逻辑就是：筛选逻辑的文本包含列表的标题。</p>
+<p>这里我们需要用indexof函数进行判断：</p>
+<ul>
+<li>如果this.text.indexOf(TargetItem.title)&gt;-1，即表明该标题已选，显示。</li>
+<li>如果如果this.text.indexOf(TargetItem.title)≤-1，即表明该标题未选，隐藏。</li>
+</ul>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/QlRBWeVIM6tlz3yznxdL.png" alt="" width="2056" height="1168" /></p>
+<p>那到这里就制作完成了，完成之后我们只需要在excel整理好数据，然后复制粘贴到中继器表格，就完成了。</p>
+<p>以后每次使用基本上两分钟就完成自定义的表格，工作效率极高，而且还是高保真的。</p>
+<p>最后如果你喜欢我的原型教程的话，记得关注一下哈，谢谢大家。</p>
+<p>&nbsp;</p>
+<p>本文由 @做产品但不是经理 原创发布于人人都是产品经理，未经作者许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
+➜产品设计：如何让功能既灵活又简单？
+http://www.woshipm.com/pd/1071156.html	10533
+<blockquote><p>编辑导语：我们在网页上进行搜索时，会发现只用关键词就可以找到自己想要的内容，或者刚输入关键词下面就会出现一些有联系的内容，十分方便快捷；本文作者分享了怎么让功能变得即灵活又简单，我们一起来学习一下。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4208773" src="http://image.woshipm.com/wp-files/2020/10/zocCMZwKzhwKGxmY838O.jpg" alt="" width="900" height="420" /></p>
+<h2>一、为什么这是个问题？</h2>
+<p>功能设计是产品经理最基本的技能，也是产品最基本的组成部分和价值所在。</p>
+<p>所以，不管是在工作中，还是在面试中，一个功能设计得太复杂或者太鸡肋，都会直接拉低别人对你的印象分！！！</p>
+<p>但在产品设计中，灵活与简单这两个特性确实常常是冲突的。</p>
+<p>尤其是在工具型产品中，我们想把功能设计得很灵活，就常常会用起来很复杂；如果想设计得很简单，又会减少功能性，显得很鸡肋。</p>
+<p>当然还有个办法，就是在简单的功能中加入机器学习模型；不过如果团队自身积累不足，这个办法的投入就太高而价值又太小，不是个好办法。</p>
+<p>举个例子：在当今的产品中，包含的信息越来越多、越来越复杂，所以搜索功能就越来越重要了。</p>
+<p>在搜索功能上，我们既希望能够足够灵活（比如支持各种条件组合，支持“与或非”等等），又希望足够简单（像普通文字输入一样）。</p>
+<p>怎么办呢？</p>
+<p>这是一个比较典型的困境，我们来看看百度、Google等通用搜索引擎是怎么做的。</p>
+<p>它们在“简单”上做得很出色，当需要多个关键词时，只需要用空格隔开就可以了。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/XUPGvhXUZpSRTnO1p2UW.jpg" alt="" width="300" height="343" /></p>
+<p>还不错对吧？但是，再看看它们应对“灵活”的高级搜索功能……</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/K5kMZ9P9MBhIOmFTBNA3.jpg" alt="" width="475" height="196" /></p>
+<p>这里确实提供了足够的灵活性，但整个设计就崩塌了；因为从1个输入框变成了10项配置，太复杂了！！！</p>
+<p>那么如果加入机器学习模型呢？就这样：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/djiLXvaF3KIfEcdx0yOw.jpg" alt="" width="265" height="243" /></p>
+<p>这类推荐看似简单，但如果要认真做，需要投入不少人力和时间才能实现。</p>
+<p>所以，百度这是个失败的设计吗？</p>
+<p>其实不然——如果你是百度搜索引擎的深度用户，那么你应该知道这样一组搜索指令：</p>
+<ul>
+<li>用减号“-”代表排除关键字；</li>
+<li>用“intitle:”代表关键字只出现在标题中；</li>
+<li>用“inurl:” 代表关键字只出现在URL中；</li>
+<li>用“filetype:”代表只想看某些文件类型，比如docx、pdf；</li>
+<li>用“site:”代表只想搜索某个站点中的内容；</li>
+</ul>
+<p>以上这些指令都可以直接在搜索框中输入，既满足了高级用户的需求，又不会影响初级用户的使用体验。这就实现了既灵活又简单。</p>
+<p>那么，如果你想在设计自己的产品时也做到灵活而简单，应该怎么做呢？</p>
+<h2>二、原来的设计问题出在哪？</h2>
+<p>首先，我们定义问题的范畴。</p>
+<p>灵活与简单的取舍，不是一个纯粹的交互设计的问题，它还涉及到前端页面交互与后端系统的配合；所以单从交互设计的角度很难找到答案。</p>
+<p>这里必须说一点：要想提升对于产品的理解，需要练习自己的抽象思考能力。</p>
+<p>在这里，我们就需要把具体的产品交互做一次抽象和提炼，找到其中的规律；有技术背景的同学在这方面会有优势。</p>
+<p>为什么？因为技术语言本身就是对事物的抽象。</p>
+<p>其次，我们要打破一种思维定式：“一个功能是一体的，不再可分”；其实并不是这样的，就用上面的搜索引擎举例，它与用户相关的部分大致可以拆成两个子模块：</p>
+<ol>
+<li>收集用户输入搜索条件；</li>
+<li>系统解析用户输入的内容；</li>
+</ol>
+<p>所以，正是这两部分造成了灵活与简单很难取舍——用户随意输入的内容系统很难解析；而系统方便解析的内容对用户来说太复杂了。</p>
+<p>最后，我们可以借鉴技术领域的MVC设计理念，来考虑我们的产品功能设计。</p>
+<p>MVC是三个单词的首写字母——M代表Model，是指产品中的数据模型；V代表View，是指产品中呈现数据的方式，其实就是用户“看得见摸得着”的产品形态；C代表Controller，指的是真正用来响应用户操作的部分。</p>
+<p>这种设计理念为我们设计复杂功能打开了思路。</p>
+<p>一个产品功能，我们可以从三个方面来思考它的设计：</p>
+<p><strong>第一部分是Controller</strong>，我们可以理解为“核心功能”。比如，在搜索引擎中什么是“核心功能”？根据用户输入的条件，返回符合条件的结果，这就是核心功能；所以“查询”就是一个必不可少的Controller。</p>
+<p><strong>第二部分是View</strong>，直接理解就是“产品形态”。比如收缩引擎中的输入框，搜索结果列表；这两个具体的产品形态，就是两个View。</p>
+<p><strong>第三部分是Model</strong>，这部分就很抽象了；我们在这里不单独解释它，结合下面的例子一起说。</p>
+<p>我们以“用Excel中的数据画图表”这个场景为例，来看看MVC的三个部分是怎么配合工作的。</p>
+<p>首先，我们在一个Excel文件中保存的一份数据，这份数据，就相当于MVC中的Model。</p>
+<p>接下来，我们选中这些数据，然后使用插入图表的功能，并选择一种图表类型；比如我们选择了折线图，这其中“插入图表”就是一个Controller，而折线图就是一个View。</p>
+<p>这时假设我们不想用折线图了，想换成柱状图；那么，稍微对Excel有一些了解的同学都知道，为了把折线图换成柱状图，我们不需要复制一个Excel文件，也不需要再安装一套Excel软件，只需要改变一下图表类型。</p>
+<p>为什么这么简单？</p>
+<p>保存在Excel里的数据Model变了吗？没有。</p>
+<p>“插入图表”这个功能Controller变了吗？也没有。</p>
+<p>要做的只是切换一下View。</p>
+<p>所以，假设我们想在自己的产品中，增加一个类似“把折线图换成柱状图”的功能，我们实际要增加的只是一个View，而不需要改变已经有的Model和Controller。</p>
+<p>除非我们把“插入折线图”和“插入柱状图”当做完全不相干的两个功能来设计；不过这显然不合理，而且已经超纲了，我们不在这里讨论。</p>
+<h2>三、怎么用MVC设计产品功能？</h2>
+<p>现在你有体会到MVC在产品设计中的魅力吗？那我们再举个例子：</p>
+<p>协作型的产品通常都会增加权限管理模块。</p>
+<p>按照标准的RBAC（Role Based Access Control，基于角色的访问控制），我们需要设计的功能包括：</p>
+<ul>
+<li>单个/批量管理用户和给用户赋权；</li>
+<li>单个/批量管理角色和给角色赋权；</li>
+<li>权限校验，返回校验通过或拒绝；</li>
+</ul>
+<p>听起来像是个很复杂的功能模块吧？别慌，如果用MVC的理念怎么设计呢？</p>
+<p>这里只考虑了最核心的功能部分，在实际功能落地时，多少还会有其他功能补充进来，比如单点登录、读取用户信息等。</p>
+<p>首先我们有3个重要的Controller（不是全部哦），包括：</p>
+<ul>
+<li>1个更新用户与角色关系的Controller，支持批量；</li>
+<li>1个更新角色与权限关系的Controller，支持批量；</li>
+<li>1个校验权限的Controller，支持不支持批量都行；</li>
+</ul>
+<p>其次，我们只有3个重要的Module，包括：</p>
+<ul>
+<li>1个用户与角色对应关系的Model；</li>
+<li>1个角色与权限对应关系的Model；</li>
+<li>1个用户与权限对应关系的Model；</li>
+</ul>
+<p>其实，我们也可以把这三个Model合并成1个，这样我就只需要一个“用户-角色-权限”的Model了。</p>
+<p>最后，我们也只需要1个View了，因为在交互上无非是查询或者更新“用户-角色-权限”三者之间的关系。</p>
+<p>此时，如果之前我们确实没有考虑到“批量修改”的情况，但是随着用户量增加，越来越多的用户想要这个功能了。怎么办？</p>
+<p>如果我们在设计功能时用MVC的理念来考虑这个问题，只需要修改某一个Controller；并在前端的View上增加一些复选框的功能。</p>
+<p>数据模型Model不需要做任何修改，所以数据库也就不需要做什么改动了。</p>
+<p>&nbsp;</p>
+<p>作者：李阳，微信公众号：数据有毒（shujuyoudu）</p>
+<p>本文由 @李阳 原创发布于人人都是产品经理，未经许可，禁止转载</p>
+<p>题图来自 Unsplash，基于 CC0 协议</p>
