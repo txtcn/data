@@ -23,6 +23,531 @@ Navi，说真的到目前为止AMD在Zen 3和RDNA 2上的保密都挺好的，�
 ➜Realme发布全球首款SLED电视：RGB背光的回归？
 http://www.expreview.com/76211.html	11220
 <p><a href="https://www.realme.com/in/blog/realme-sled" target="_blank">Realme</a>在印度发布了全球首款4K SLED智能电视。这款电视将会为55寸，可以提供更好的色准以及对用户的眼睛更友好，Realme有公布这一消息的官方博客中表示。</p><p style="text-align:center;"><img src="https://img.expreview.com/news/2020/09/27/realme-sled-1.png" width="100%"/></p><p>这部SLED 4K电视的NTSC色域覆盖率为108%，并且也获得了德国莱茵低蓝光认证。根据Realme的说法，SLED电视的NTSC色域比起普通的LED电视以及QLED电视都要好，因此其可以给电视带来更加生动的视觉体验。</p><p>那么SLED到底是什么呢？这个听起来突然出现的概念其实和普通的LED是差不多的，只不过区别在于，普通的LED是用的白色背光，也就是WLED，而SLED则是把白色背光源换成了RGB背光源。所以从结构上来说的话，SLED电视和普通的LED电视都是一样的，只不过是换了一种颜色的背光而已。</p><p style="text-align:center;"><img src="https://img.expreview.com/news/2020/09/27/realme-sled-2.png" width="100%"/></p><p>Realme表示，由于换用了RGB背光，因此可以减少蓝光对眼睛的影响，并且可以提供更加纯净的颜色。另外Realme对于SLED的定位似乎是用来对标QLED电视的，因为在其博客上也放出了QLED和SLED的对比示意图，同时也表示SLED对比QLED可以提供更广的色域。同时，Realme也表示，SLED是除了OLED之外，唯一一种可以获得德国莱茵TUV低蓝光认证的显示技术。</p><p style="text-align:center;"><img src="https://img.expreview.com/news/2020/09/27/realme-sled-3.png" width="100%"/></p><p>目前Realme并没有放出任何关于这部SLED 4K电视的参数，同时也没有表明什么时候会把这部电视真正投入市埸。不过以RGB作为背光光源这个做法其实很久之前已经有了，所以Realme这次的SLED到底效果怎么样还是有待观察。</p>
+➜谁是最佳性价比6核游戏处理器？锐龙5 3600X vs.酷睿i5-10600K
+http://www.expreview.com/76214.html	35220
+<!-- PCI-E 3.0,TDP,Windows 10,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管 --><p><br/></p><p>AMD的Zen
+3处理器发布在即，不过种种迹象表面从发布到开卖还是有时间的，而且根据AMD以往的市场策略，即使新一代锐龙处理器上市后，旧的锐龙处理器还会卖很长一段时间，所以，Zen
+2架构的第三代锐龙处理器还会作为AMD的市场主流存在一段时间。</p><p>目前三代锐龙和十代酷睿AMD与Intel市场上的绝对主力，而且从锐龙3到锐龙7、酷睿i3到酷睿i7这代产品的核心数量都是对等的，只有到了锐龙9上才出现核心数量完全碾压酷睿i9的情况
+，而两边的主流产品是锐龙5与酷睿i5，典型的代表产品就是锐龙5 3600X和酷睿i5-10600K。</p><h1><strong>Zen 2架构同频不输对手</strong></h1><p>由于Intel在桌面市场上多年没有换过内核架构，而AMD这几年来内核的效能都有明显提升，从Zen到Zen+再到现在的Zen
+2，IPC都有明显的提升，其实我们早就测试过，在同样频率下，Zen 2的效能其实是要优于Coffee Lake的，而Coffee Lake到Comet
+Lake内核几乎是没任何变化，也就是说第三代锐龙处理器在同样频率下性能其实是要优于十代酷睿的，这也是为啥Intel这三代产品疯狂推高频率的原因。想了解这个测试详情的可以翻阅我们早前的文章：《<a target="_blank" href="https://www.expreview.com/69591.html">Ryzen
+7 3700X与Core i9-9900K同频性能测试：Intel这是要成追随者了？</a>》</p><p style="text-align: center"><img src="https://img.expreview.com/review/2019/07/AMD_Zen2/PPT_04.jpg" width="100%" border="0"/></p><p>当然可能有人要拿AMD锐龙处理器的游戏性能说事，确实AMD在这方面不是很占优，但也不能说两者游戏性能真的差很远，而且实际游戏估计你都体验不出来两者的差异，比较不少游戏中只有个位数的帧数差距，而且这是用了GTX
+2080 Ti这个级别的显卡才能测出来，如果用其他显卡的话差距只会缩小。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+title: "处理器规格对比",
+header: ["型号","Ryzen 5 3600X","Core i5-10600K"],
+width: '100%',
+columnWidth: 'MAX',
+id: tableid,
+data: [
+["制程工艺","TSMC 7nm","Intel 14nm++"],
+["核心/线程","6C/12T","6C/12T"],
+["基础频率","3.8GHz","4.1 GHz"],
+["最大加速频率","4.4GHz","4.8 GHz"],
+["一级数据缓存","32KB*6","32KB*6"],
+["一级指令缓存","32KB*6","32KB*6"],
+["二级缓存","512KB*6","256KB*6"],
+["三级缓存","16MB*2","12MB"],
+["内存支持","DDR4-3200","DDR4-2666"],
+["可用PCI-E通道","20条PCI-E 4.0","16条PCI-E 3.0"],
+["TDP","65W","125W"],
+["售价","1549元","1999元"],
+]
+});</script></div><h1><strong>7nm vs 14nm</strong></h1><p>第三代锐龙处理器用的是台积电7nm工艺，而第十代酷睿用的是Intel自家14nm++工艺，说真的Intel的14nm早在2014年就投产了，能一直改良用到现在也是挺厉害的，而且它至少还得撑两年多，但它与现在的先进工艺相比差距确实有点大。</p><p style="text-align: center"><img src="https://img.expreview.com/review/2019/07/AMD_Zen2/PPT_02.jpg" width="100%" border="0"/></p><p>AMD Zen 2架构处理器现在用的是台积电7nm工艺，与此前使用的Globalfoundries
+12nm工艺相比，晶体管密度翻了一倍，同性能下功耗降低50%或者同功耗下性能提升25%。工艺上的差距让AMD Zen
+2处理器能在提供Intel处理器同等性能的情况下省下不少的电力，实际上Zen 2的功耗与发热都比Comet
+Lake低得多，能耗比明显更好，这就是工艺领先的好处，AMD以前在制程工艺方面被Intel长年压制许多年，现在终于可以享受工艺吊打的快感。</p><h1><strong>PCI-E 4.0是未来</strong></h1><p>NVIDIA新发布的安培显卡全线支持PCI-E 4.0，而三星也发布了支持PCI-E 4.0的980 PRO SSD，AMD在10月末发布的RDNA
+2显卡也是PCI-E 4.，现在越来越多东西将支持PCI-E 4.0，早就不是刚发布时大家嘴上说可有可无的东西。</p><p>AMD Zen 2架构的第三代锐龙是全部都支持PCI-E
+4.0，而且除了给显卡用的16条之外还有另外4条划分给SSD使用，反观Intel的第十代酷睿出现了一种很有趣的情况，就是Z490主板是支持PCI-E
+4.0的，但Intel的处理器本身不支持，这应该是主板厂为未来所准备的，反正这代是没有的。</p><p style="text-align: center"><img src="https://img.expreview.com/review/2020/09/R5_3600x/980pro_CDM.jpg" width="100%" border="0"/></p><p>关于PCI-E 4.0所带来的提升，目前来说显卡还是有点难以体现，不过SSD倒是非常明显，上图左边是三星980 PRO PCI-E
+3.0的表现，右边则是PCI-E 4.0的。可见在PCI-E 3.0的时候速度只能去到3500MB/s，这也是现在大多数M.2
+SSD的极限速度，不过如果使用PCI-E
+4.0的话读取速度能到达6700MB/s，写入速度也能到4900MB/s，限制解除之后连续读写速度明显快了不少，然而随机性能并没有太大变化。</p><h1><strong>测试平台与说明</strong></h1><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+align: 'left',
+width: '82%',
+padding: '8px 15px',
+header: ["测 试 平 台", ""],
+columnWidth: 'MAX', //表格单元宽度，"MAX"最大内容显示，""AVG"平均，"AUTO"自动，指定[15,16,20]
+id: tableid,
+data: [
+["CPU ","AMD Ryzen 5 3600X<br>Intel Core i5-10600K",],
+["主板","技嘉 Z490 AORUS PRO AX | Intel Z490<br>技嘉 Z390 AORUS XTREME | Intel Z390<br>技嘉 X570 AORUS PRO WIFI | AMD X570",],
+["显卡","技嘉 RTX 2070 SUPER GAMING OC WHITE 8G<br>NVIDIA GeForce RTX 2060 SUPER",],
+["内存","芝奇 焰光戟DDR4-3600 8GB*2 CL16-16-16-36",],
+["硬盘","技嘉 AORUS NVMe Gen 4 SSD 2TB",],
+["散热器","采融 ARTISTS 3",],
+["电源","华硕 ROG THOR 1200W",],
+["显示器","AOC U2790PQU up to 3840*2160",],
+["<b>软件配置</b>"],
+["操作系统","Microsoft Windows 10 64bit build 1909",],
+["驱动","NVIDIA GeForce 445.87 WHQL Game Ready",],
+["<b>测试软件</b>"],
+[" ","3DMark V2.9.6631 64<br>AIDA64 Extreme 6.00.5122 Beta<br>SiSoftware Sandra Lite 2020.1.30.149<br>SuperPi Mod 1.9 WP<br>wPrime Benchmark v2.10<br>WinRAR 5.80(64位)<br>7-Zip 19.00(x64)<br>X264 Benchmark<br>X265 HD Benchmark<br>Corona 1.3 Benchmark<br>Pov-Ray 3.7.1 Beta3<br>Blender 2.81<br>Blender Bechmark 1.0 Beta 2<br>CINEBench R20<br>刺客信条：奥德赛<br>杀手2<br>全面战争：三国<br>古墓丽影：暗影<br>地铁：离去<br>孤岛惊魂5<br>GTA 5<br>无主之地3",],
+]
+});</script></div><p>锐龙5 3600X使用技嘉 X570 AORUS PRO WIFI主板，而酷睿i5-10600K使用技嘉Z490 AROUS PRO AX主板，均使用采融 ARTISTS 3散热器，芝奇皇家戟
+焰光戟DDR4-3600 8GB*2 CL16套装，显卡使用技嘉AORUS NVMe Gen 4 SSD 2TB，SSD是技嘉 AORUS NVMe Gen 4 SSD 2TB。</p><h1><strong>基准性能测试</strong></h1><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "Sandra 2020"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = " "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"处理器计算,整数","Core i5-10600K":"295.7","Ryzen 5 3600X":"296.73"},
+{"type":"处理器计算,单精度浮点","Core i5-10600K":"182.2","Ryzen 5 3600X":"175.43"},
+{"type":"处理器计算,双精度浮点","Core i5-10600K":"150.17","Ryzen 5 3600X":"151.15"},
+{"type":"处理器多媒体,整数","Core i5-10600K":"785.25","Ryzen 5 3600X":"736.15"},
+{"type":"处理器多媒体,单精度浮点","Core i5-10600K":"801.38","Ryzen 5 3600X":"763.58"},
+{"type":"处理器多媒体,双精度浮点","Core i5-10600K":"465.8","Ryzen 5 3600X":"470.54"},
+{"type":"处理器多媒体,四精度浮点","Core i5-10600K":"18.38","Ryzen 5 3600X":"18.42"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>Sandra
+2020的处理器计算测试可以测试出处理器的运算能力，一般来说核心数量和线程数量多会更占优势，当然实际结果也得看处理器的频率，基本上锐龙5
+3600X和酷睿i5-10600K旗鼓相当，互有胜负。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "SuperPi Mod 1.9 WP 1MB"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "s "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":" ","Core i5-10600K":"7.703","Ryzen 5 3600X":"9.39"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>SuperPi是一个完全比拼CPU频率的测试，是单线程的测试，也是Intel的传统优势项目，酷睿i5-10600K在项目中优势比较大。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "wPrime 2.10"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "s "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"32M,单线程","Core i5-10600K":"29.997","Ryzen 5 3600X":"28.815"},
+{"type":"1024M,多线程","Core i5-10600K":"118.846","Ryzen 5 3600X":"110.64"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>wPrime的算法和SuperPi不一样，更适合AMD锐龙处理器，锐龙5
+3600X在单线程还是多线程的表现都比酷睿i5-10600K要好。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "Fritz Chess Benchmark"; // 标题文字热管
+var subtitle_text = "www.expreview.com | higher is better  "; // 副标题文字
+var unit_text = " "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"单线程","Core i5-10600K":"3834","Ryzen 5 3600X":"3643"},
+{"type":"多线程","Core i5-10600K":"26013","Ryzen 5 3600X":"25206"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>国际象棋测试里面，酷睿i5-10600K的单线程和多线程性能表现更强下，但与锐龙5 3600X的差距拉不开。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "7-Zip"; // 标题文字热管
+var subtitle_text = "www.expreview.com | higher is better  "; // 副标题文字
+var unit_text = "KB/s "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"压缩","Core i5-10600K":"46015","Ryzen 5 3600X":"46177"},
+{"type":"解压缩","Core i5-10600K":"692658","Ryzen 5 3600X":"803065"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>7-zip使用内置的Benchmark测试，AMD锐龙5 3600X处理器在这软件里面表现比较出色，酷睿i5-10600K在压缩测试里面性能和锐龙5
+3600X差不多，但解压缩测试比锐龙5 3600X有一定差距。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "3DMark物理测试"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = " "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"FireStrike","Core i5-10600K":"20276","Ryzen 5 3600X":"20301"},
+{"type":"TimeSpy","Core i5-10600K":"8356","Ryzen 5 3600X":"7466"},
+{"type":"TimeSpy Extreme","Core i5-10600K":"3780","Ryzen 5 3600X":"3455"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>3DMark的物理测试，DX11的FireStrike测试中酷睿i5-10600K和锐龙5
+3600X出来的结果是一样的，不过到了DX12的TimeSpy测试中两者的性能差距拉开了10%。</p><h1><strong>创作能力测试</strong></h1><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "X264 Benchmark"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "fps"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"","Core i5-10600K":"58.75","Core i7-8700K":"56.02","Core i5-9600K":"42.7","Ryzen 5 3600X":"60.17"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "X265 Benchmark"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "fps"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"","Core i5-10600K":"49.76","Core i7-8700K":"45.99","Core i5-9600K":"40.83","Ryzen 5 3600X":"49.24"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>x264以及x265是两个老牌开源编码器，应用相当广泛，这次我们使用了新版本的Benchmark，它能更好的支持AVX
+2指令集。x264的测试中酷睿i5-10600K轻微落后于锐龙5
+3600X，x265测试中就反了过来，总体来说两个性能表现差不多。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "Corona 1.3 Benchmark"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "Rays/sec"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"","Core i5-10600K":"3688560","Ryzen 5 3600X":"3517020"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>Corona Renderers是一款全新的高性能照片级高真实感渲染器，可以用于3DS Max以及Maxon Cinema
+4D等软件中使用，有很高的代表性，这里使用的是它的独立Benchmark，这项测试里面锐龙5 3600X稍微落后于酷睿i5-10600K。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "Pov-Ray 3.7.1 Beta3"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "pps"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"多线程","Core i5-10600K":"3153.73","Ryzen 5 3600X":"3339.84"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>POV-Ray是由Persistence OF Vision
+Development开发小组编写的一款使用光线跟踪绘制三维图像的渲染软件,其主要作用是利用处理器生成含有光线追踪效果的图像帧，软件内置了Benchmark程序，
+在这些测试里面锐龙5 3600X的性能超过了酷睿i5-10600K。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "Blender Open Date Benchmark | bmw27 & classroom"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "s"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr =[
+{"type":"Blender Benchmark","Core i5-10600K":"932","Ryzen 5 3600X":"907"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>Blender是一个开源的多平台轻量级全能三维动画制作软件，提供从建模，雕刻，绑定，粒子，动力学，动画，交互，材质，渲染，音频处理，视频剪辑以及运动跟踪，后期合成等等的一系列动画短片制作解决方案，我们使用官方的Benchmark工具
+来进行测试，仅运行bmw27和classroom两个项目，统计最后的渲染所需的总时间，锐龙5 3600X在这项测试里面略胜酷睿i5-10600K。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "CINEBench R20"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "cb"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"单线程","Core i5-10600K":"503","Ryzen 5 3600X":"508"},
+{"type":"多线程","Core i5-10600K":"3623","Ryzen 5 3600X":"3714"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>CINEBench使用MAXON公司针对电影电视行业开发的Cinema
+4D特效软件的引擎，该软件被全球工作室和制作公司广泛用于3D内容创作，而CINEBench经常被用来测试对象在进行三维设计时的性能，这项测试是AMD的强项，所以锐龙5
+3600X胜出是意料之中的。</p><h1><strong>游戏性能测试</strong></h1><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "游戏测试"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "fps"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"刺客信条：奥德赛","Core i5-10600K+RTX 2060 Super":"69","Core i5-10600K+RTX 2070 Super":"77","Ryzen 5 3600X+RTX 2070 Super":"72"},
+{"type":"重返德军总部","Core i5-10600K+RTX 2060 Super":"99","Core i5-10600K+RTX 2070 Super":"157","Ryzen 5 3600X+RTX 2070 Super":"153"},
+{"type":"地铁：离去","Core i5-10600K+RTX 2060 Super":"55.99","Core i5-10600K+RTX 2070 Super":"78.71","Ryzen 5 3600X+RTX 2070 Super":"74.15"},
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>游戏方面，如果使用同一张显卡的时候，锐龙5 3600X表现确实比酷睿i5-10600K低一点，不过如果搭两套同价位的平台，酷睿i5-10600K可选配的显卡肯定会低一点，换成低一级的RTX 2060 SUPER之后结果就完全反转过来了，锐龙5 3600X的平台游戏性明显更强。</p><h1><strong>温度与功耗测试</strong></h1><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "温度测试 | 桌面待机"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "℃ "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 0; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr =[
+{"type":"","Core i5-10600K":"29.1","Ryzen 5 3600X":"32.8"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "温度测试 | AIDA 64 Stress FPU"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "℃ "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 0; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr =[
+{"type":"","Core i5-10600K @4.5GHz 1.248V":"68.9","Ryzen 5 3600X @4.05G 1.308V":"74"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>单纯看温度的话锐龙5 3600X在待机与负载时其实都是要比酷睿i5-10600K更高的。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "功耗测试 | 桌面待机"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "W "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 0; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"平台功耗","Core i5-10600K":"51","Ryzen 5 3600X":"66"},
+{"type":"CPU 输入功耗","Core i5-10600K":"4.3","Ryzen 5 3600X":"16.3"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "功耗测试 | AIDA 64 Stress FPU"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "W "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 0; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"平台功耗","Core i5-10600K @4.5GHz 1.248V":"187","Ryzen 5 3600X @4.05G 1.308V":"146"},
+{"type":"CPU 输入功耗","Core i5-10600K @4.5GHz 1.248V":"128","Ryzen 5 3600X @4.05G 1.308V":"92"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>功耗测试我们用功耗仪加测了CPU供电接口的输入功率，AMD锐龙5
+3600X的CPU输入功耗能到16W，MCM设计待机时功耗确实不怎么好设计，不过平台整体功耗就没差那么多，但酷睿i5-10600K的平台整体功耗还是低很多。</p><p>用AIDA 64 Stress
+FPU负载的话，酷睿i5-10600K的CPU供电接口输入功耗就要比锐龙5 3600X高得多了，峰值能到128W，
+平台整体功耗也要高40W，也就是说一旦负载起来，酷睿i5-10600K的功耗要比锐龙5 3600X高得多，这就是7nm对比14nm的制程差距所带来的。</p><h1>锐龙平台的性价比更高</h1><p>经过理论性能、创作能力和游戏性能全方位对比之后，我们可以看到这样的结果——对于理论性能和创作能力来说，锐龙5
+3600X在多线程性能上其实和酷睿i5-10600K势均力敌，两者在不同测试中互有胜负，不过单线程性能酷睿i5-10600K其实要略微好一些。</p><p>到了游戏性能方面，经过实测酷睿i5-10600K确实领先锐龙5
+3600X，但是领先幅度不大，我们并不能在他们之间体验到可以感知的差距，对于游戏玩家来说，用这两颗CPU打游戏的体验其实是一样的。</p><p>总的来看三代锐龙和十代酷睿对比的话，可以看到三代锐龙由于采用了7nm先进制程工艺和相比上一代又大跨步进化的Zen
+2架构，使得三代锐龙相比仍然在14nm工艺和Skylake上小修小改的十代酷睿而言，可以在相同的价位上提供更好的性能。</p><p>而且考虑到锐龙5 3600X支持PCI-E 4.0，现在NVIDIA的安培架构显卡已经支持，而AMD自家的早在Vega架构时就支持PCI-E
+4.0了，随着三星980 PRO的推出，PCI-E 4.0 SSD也有了更多的选择，这些是十代酷睿不能提供的，现在你有就有了更多选择三代锐龙的理由了。<br/></p><p>其实还有一点相当重要的就是，在同一规格下，AMD锐龙处理器的售价往往比Intel酷睿处理器更低，现在锐龙5 3600X在京东上售价是1549元，而酷睿i5-10600K的价格是1999元，前者还送一个幽灵Spire散热器，后者是不带原装散热器的，考虑到它125W的TDP，你至少得去配一个150元左右的散热器，价格差就更大了。<br/></p><p>此外还得考虑主板的成本，买酷睿i5-10600K你至少得去配一块Z490主板，虽然也有搭B460这种骚操作，但我不知道这样你买带K的处理器来干嘛，完全不推荐。而AMD这边选择就多了，锐龙5 3600X搭配X570、B550、B450都可以，而且即使选择对等位置的X570主板，价格也要比Z490更低，以价格基本是最便宜的微星GAMING PLUS为例，MPG X570 GAMING PLUS售价是1199元，而MSI MPG Z490 GAMING PLUS则是1299元，而且还有更为便宜的B550主板可以选择，现在主流B550的售价已经降到799元左右了，性价比相当高。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+title: "装机对比",
+header: [" ","AMD平台", " ",  "Intel平台", " "],
+width: '91%',
+columnWidth: 'AUTO', //表格宽度，"AVG"平均，"AUTO"自动（默认），指定[15,16,20]
+id: tableid,
+data: [
+["CPU","Ryzen 5 3600X","1529元","Core i5-10600K","1999元"],
+["散热器","盒装配送","/","利民AS120","129元"],
+["主板","微星MAG B550M MORTAR","799元","微星MPG Z490 GAMING PLUS","1399元",],
+["显卡","影驰RTX 2070 Super 大将","3399元","影驰RTX 2060 金属大师","2399元",],
+["总价", "5727元","---", "5926元","---"]
+]
+});</script></div><p>这样算下来，一套酷睿i5-10600K的CPU、主板、散热器的价格要比一套锐龙5 3600X至少要贵700元，如果选择B550主板的话两者的价差甚至可以拉到1000元，这完全可以让显卡升一个档次了，能从RTX 2060级别直接跳到RTX 2070 Super，那套平台游戏性能更强不用我说了吧。</p><p>总而言之，与对位的酷酷睿i5-10600K相比，锐龙5 3600X性价比明显更高，本身售价就要比酷睿i5-10600K低4到5百，还送一个散热器，而对手则至少得额外加150元买个散热器，主板也至少有100元的差价，而且三代锐龙现在还有更为便宜的B550主板可选，两套平台的价差能到600到1000元不等，有这个钱你可以把显卡升一个等级，从RTX 2060升级到RTX 2070 SUPER，这样能获得更好的游戏性能。</p>
 ➜NVIDIA GeForce RTX 3090公版图赏：RTX 3080在它面前就是个弟弟
 http://www.expreview.com/76205.html	37020
 <p>相信大家看到了，目前各家媒体的RTX 3090首发评测都是用的非公版显卡，这主要就是因为目前NVIDIA GeForce RTX 3090公版显卡全球存量都很少，我们想尽办法还是尽量快的弄到了一张NVIDIA GeForce RTX 3090公版卡，来看看它的高清图赏吧。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/09/26/3090FE/1m.jpg" width="100%"/></p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 2; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
