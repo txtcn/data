@@ -329,12 +329,337 @@ https://www.yystv.cn/p/7132	9000
 <p>
 如果你是《看门狗》系列的忠实粉丝，并对这次的“宝可梦”玩法感兴趣的话，《看门狗：军团》很可能是一次值得尝试的的体验。
 </p>
+➜从博弈论谈起，为什么说绝对平衡的FPS多人游戏反而不好玩？
+https://www.yystv.cn/p/7134	9600
+<div class="rich_media_content" id="js_content">
+<p class="MsoNormal" align="right" style="text-align:left;">
+<strong><span style="color:#E56600;font-size:14px;">*作者：</span></strong><span style="color:#E56600;font-size:14px;"><strong>EddyGao</strong></span>
+</p>
+</div>
+<blockquote class="doc-blockquote">
+<div class="rich_media_content">
+<p class="MsoNormal" align="left" style="text-align:left;">
+<strong>本文将重点分析</strong><span><strong>PVP FPS</strong></span><strong>游戏中平衡性对于游戏的意义，以及如何使用博弈论概念，对游戏的平衡性进行设计和分析。本文不涉及高深的理论和公式推导，只是较浅层地将博弈论现有研究和游戏的设计经验进行了一定的结合。文中所提到的游戏，均指如《</strong><span><strong>CS</strong></span><strong>》、《</strong><span><strong>COD</strong></span><strong>》等的</strong><span><strong>PVP FPS</strong></span><strong>游戏类型。</strong>
+</p>
+</div>
+</blockquote>
+<p class="MsoNormal" align="center" style="text-align:center;">
+<b><br />
+</b>
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;">
+<b><span class="r-triangle">平衡性：是什么？为什么？</span></b>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<strong>1.</strong><b>平衡性是什么</b>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+平衡性早就不是个新鲜的概念。在双人对抗游戏中，一个游戏平衡的定义是在参与者水平相同，并对游戏的胜利规则都完全理解的情况下（即理性人），多局游戏中两人的获胜概率均为<span>50%</span>；而在<span>n</span>人或<span>n</span>队参与的对抗的游戏中，情况会稍显复杂，仍从胜率角度看，每人或每队的胜率应该在<span>1/n</span>。平衡性就是衡量对局是否能达到设计胜率的参数。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<strong>2.</strong><b>为什么游戏关卡需要平衡性设计</b>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+从孩提时的游戏我们就能意识到，在一场人与人对抗的游戏中，如果规则或者参与人员不平衡，那么游戏就会变成毫无意义的活动。试想，在<span>“</span>剪刀石头布<span>”</span>中，如果剪刀变成了可以攻陷所有防御的工具，那么所有玩家都会选择剪刀了。
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/9fa7e0969a04c267915a7a17a84e7a01.jpg_mw680water" width="1080" height="687" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+“游戏是有意义的选择（<span>Meaningful
+Choice</span>）<span>”</span>，在<span>PVP</span>游戏中，每个人都没有必胜的选择，此时游戏的无法预测性，更突出了与人博弈的快乐。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<strong>3.</strong><b>博弈论与平衡性</b>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+平衡性是一个对抗游戏的基础，下面我们尝试从博弈论的角度解释为什么平衡性在对抗游戏中如此重要。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<span>博弈论（</span><span>Game Theory</span><span>）是属于经济学的二级学科，一个完整的博弈应当包括五个方面的内容：第一，博弈的参加者；第二，博弈信息，即博弈者所掌握的对选择策略有帮助的情报资料；第三，博弈方可选择的全部行为或策略的集合；第四，博弈的次序，即博弈参加者做出策略选择的先后；第五，博弈方的收益，即各博弈方做出决策选择后的所得和所失。</span>
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/30467abac2a93ce37cb47220502f90b5.jpg_mw680water" width="532" height="300" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+而<span>PVP</span>游戏中玩家就是博弈的参加者；玩家了解到游戏规则和战场情报是博弈信息；玩家做出的各种选择，是博弈论中的行为和策略；玩家的行为顺序属于博弈次序；而玩家因选择不同而游戏目标完成情况则是博弈论中的收益。可见，“<span>Game Theory</span>”正如其名，实际上也可以用来分析一场游戏的整体或局部的博弈情况。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+博弈有四种基础模型：静态完全信息博弈、动态完全信息博弈、静态非完全信息博弈和动态非完全信息博弈。信息是否完全要看参与者是否对规则和战场情报完全了解（是否实时的了解规则和其他的玩家选择），而动态和静态的区别主要在于，静态是单次的博弈，没有后续博弈，动态则相反。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+在<span>PVP FPS</span>游戏中，如《<span>CODM</span>》的几个经典<span>MP</span>模式，其博弈可以抽象为动态非完全信息博弈。
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/eed07afc007aa86fa20610553a829fbf.jpg_mw680water" width="1268" height="549" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+博弈论中，最重要的目标是研究一场博弈的解，也被称为博弈均衡时的策略。一场<span>“</span>平衡<span>”</span>的游戏，其实就是博弈均衡时，玩家的收益应该相等。无论收益正负还是零，相等即为<span>“</span>平衡<span>”</span>。有趣的是，我们会发现<span>BR</span>（吃鸡）类游戏并不符合这个定义，天命圈的玩家有明显的位置优势。那我们能说<span>BR</span>是不平衡的吗？实际上，如果我们仅以单局来看<span>BR</span>游戏的话，确实可以找到吃鸡率和玩家位置与刷圈位置的一定关系；但是该模式通过随机刷圈的方式，使得没有玩家可以利用这一优势，因此从多局的角度来看，玩家的收益仍然是相等的。在多人博弈中，用随机来制造平衡是一种常见的设计手段。<span></span>
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/5851d7c22447c7c21b341e664d2fa0ab.jpg_mw680water" width="1382" height="864" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+在传统的双队对抗的<span>PVP</span>游戏追求的都是通过关卡设计、玩法设计以及匹配系统，来保证游戏的博弈均衡是一场能够分出输赢的零和博弈，即一定有一个胜利方和一个失败方；当然随着设计师们对玩家心理的把握，也有让<span>AI</span>成为失败方来调节玩家体验的方法，我们暂且不在这里展开。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+当游戏达到博弈均衡时，此时所有理性参与者都愿意维持现状（稳定状态的），而不愿意改变行动，因为一旦改变行动就会让自己的收益变差。那游戏该如何进行下去呢？
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+这就要靠游戏机制了。像是胜利条件、缩圈等机制都是在逼迫玩家从博弈均衡状态中脱离。在不完全信息的动态博弈中，掌握了更准确信息的参与者会有更大几率获得胜利。再有，实际上博弈均衡的假设是基于参与者的完全理性的，在实际游戏中，参与者的状态、心态一定是不断变化的，这便是游戏中<span>“</span>与人斗，其乐无穷<span>”</span>的意义了。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<b>总而言之，一个博弈均衡时玩家的收益是否相等，就是游戏平衡的判断标准。而游戏机制就是要不停地把玩家推离均衡点，来造成局部或广泛的动态非完全信息博弈过程。</b>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<br />
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;">
+<b><span class="r-triangle">通过关卡设计影响平衡</span></b>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+研究平衡性设计，就要先了解是什么导致了不平衡。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<b>1.</b><b>收益、信息与策略</b>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+一个理性玩家（清楚所有游戏规则）在游戏中的博弈过程，可以简化成：<span>“</span>收集信息<span>-&gt;</span>形成策略<span>-&gt;</span>获得收益<span>”</span>的循环。通过游戏关卡设计，可以对这三个维度进行干预和调整，就可以直接影响到游戏的平衡设计。
+</p>
+<p class="MsoNormal">
+<b><span>1.1 </span>收益不同造成的不平衡<span>&nbsp;</span></b>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+平常在工作中，一个关卡设计师最常做的事就是对场景中掩体的摆放不停地推敲；掩体就是最直接造成玩家收益不同的玩法元素。
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/2f894e47b617baaf512fdc55cb48b443.png_mw680water" width="607" height="340" alt="不平衡的区域设计" title="不平衡的区域设计" align="" /><span class="picinfo">不平衡的区域设计</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+在如图所示的情况中，站在掩体后的玩家占有明显的优势。在这种局势下，谁能最先抢占到掩体后的位置，谁就能有更大的概率击败敌方玩家，这就是典型的不平衡的设计。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+如果想平衡这一场景，有很多方法。最简单的是给该空间内对称位置放置一个相同的掩体，只要保证玩家进入掩体的时间相等，空间对称就一定是绝对平衡的了。但是在大多数游戏的设计中，往往不会采用这样简单粗暴的方法。因为这既不真实，又容易造成玩家对方位的迷惑。
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/571bb1936a17c1069f56f0711b5c5a55.png_mw680water" width="607" height="381" alt="对称设计的掩体，失去了真实性和引导性" title="对称设计的掩体，失去了真实性和引导性" align="" /><span class="picinfo">对称设计的掩体，失去了真实性和引导性</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+除了掩体类型，还有高低差也会造成玩家的收益不同。与半身掩体一样，抢占到高点（无论是窗还是台）的玩家，都占有更大的收益优势。
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/1a6b4378ad2f2220f630f838669bb261.png_mw680water" width="607" height="353" alt="二楼窗边的玩家，露出了更少的身体，也处于需要移动视角才能看到的位置，所以更有优势" title="二楼窗边的玩家，露出了更少的身体，也处于需要移动视角才能看到的位置，所以更有优势" align="" /><span class="picinfo">二楼窗边的玩家，露出了更少的身体，也处于需要移动视角才能看到的位置，所以更有优势</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+在相同时间可以抵达的关键玩法区域中，如果一方暴露了更少的躯体部分（<span>Hitbox</span>），那么他的收益一定是大于暴露更多的玩家的。上述半身掩体、高低差的方法都是常见的制造不平衡收益的方法。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+显而易见，在一个平衡的对局中，多打少也会造成收益上的不平衡。往往人数不平衡的对局，就需要在角色基础属性上做更多的调整，以及机制上做随机，以保证没有人有必胜的策略。
+</p>
+<p class="MsoNormal">
+<b><span>1.2 </span>信息差造成的不平衡<span>&nbsp;</span></b>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+信息差在平衡性设计中也扮演了重要的角色。生活中常见的形成信息差的结构就是单面玻璃。
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/a1fe297fdff71b0f2cdb7dfe4e14f145.png_mw680water" width="607" height="271" alt="一面是玻璃，一面是镜子的单向玻璃" title="一面是玻璃，一面是镜子的单向玻璃" align="" /><span class="picinfo">一面是玻璃，一面是镜子的单向玻璃</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+而在<span>FPS</span>游戏中，最常见的由信息差（在这里主要是视差）而造成不平衡的设计是<b>通道转角</b>。
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/86ba061986e7da7a948e3bdf4c5eb6c3.png_mw680water" width="519" height="310" alt="由视差带来的不平衡的通道转角" title="由视差带来的不平衡的通道转角" align="" /><span class="picinfo">由视差带来的不平衡的通道转角</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+假设玩家<span>A</span>一定要通过转角，同时右边的玩家<span>B</span>也知道这一信息，那么当玩家<span>A</span>的通道比较狭窄时，玩家<span>A</span>的视角如下图：
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/e4e7b5c712ebf3a93188467ca5fabb4c.png_mw680water" width="605" height="354" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<span>而玩家</span><span>B</span><span>的视角如下图：</span>
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/f24f1070268705fb3ee3941ca00036af.png_mw680water" width="605" height="371" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<span>也就是说，在玩家</span><span>A</span><span>转向看到玩家</span><span>B</span><span>之前，</span><span>B</span><span>玩家早已看到玩家</span><span>A</span><span>露出的身位了。这种情况在现实的作战中也是常常存在的，由此产生了应对的</span><span>CQB</span><span>转角战术，即：通过通道转角时，一定要贴近转角外侧，并收起武器，以减少视差带来的影响。</span>
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/cdc1cb37374f501501055320ae658e79.png_mw680water" width="511" height="590" alt="CQB转角战术" title="CQB转角战术" align="" /><span class="picinfo">CQB转角战术</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+而另一种常见的利用信息差获取优势的方法是<b><span>“</span>背后的威胁<span>”</span></b>。如下图所示场景中，在二楼的敌人是不容易注意到从左侧斜坡走上来的玩家的，这就产生了信息差，因为他更可能去注意他的优势防守区域，即视野正前方。
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/70fe417314004ce7540cae9d0dec89d8.png_mw680water" width="607" height="362" alt="“背后的威胁”——玩家视野外的门" title="“背后的威胁”——玩家视野外的门" align="" /><span class="picinfo">“背后的威胁”——玩家视野外的门</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+而一个有经验的玩家是可以意识到敌人可能会从另一个方向来攻击自己，自然也会分出精力来关注门口的情况，甚至在门口架设阔剑地雷。而楼下的敌人则可以趁玩家关注门口的空挡（队友信息或无人机等），来到窗口下方，打到二楼玩家的背身。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+可以看到，一个玩家视野外的门，就造成了如此丰富的博弈结果。我们假设这个信息差不存在，那么这个关卡会变成怎样呢？
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/76488f950cd314a4dff57667133d5f59.png_mw680water" width="607" height="426" alt="玩家视野内的门" title="玩家视野内的门" align="" /><span class="picinfo">玩家视野内的门</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+二楼的玩家会因为提前抢占了这一位置，在这区域内变成<span>“</span>无敌<span>”</span>的。没人可以在二楼玩家眼皮底下爬上楼来清掉这个点，也没有人敢从楼下的空地穿过。这样的点位除非有特殊设计目的所在，否则便是很破坏游戏体验的设计。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+以上的例子，可以看出<span>“</span>背后的威胁<span>”</span>存在的意义。
+</p>
+<p class="MsoNormal">
+<b><span>1.3 </span>策略多寡造成的不平衡<span>&nbsp;</span></b>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+策略（也有翻译为战略）在博弈论中指的是针对博弈的某一阶段，参与者可以进行的选择。在<span>FPS</span>游戏中，这种可选策略的数量，也影响着对局的平衡。
+</p>
+<p class="picbox" align="center" style="text-align:center;">
+<img src="https://alioss.yystv.cn/doc/7134/542bfc89d5385414e6ea05a8d79f25c0.png_mw680water" width="304" height="191" alt="猜猜我在哪？" title="猜猜我在哪？" align="" /><span class="picinfo">猜猜我在哪？</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+一种更常见的以策略多寡来造成的不平衡的方法是多窗口的建筑，如下图所示。
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/0173a8905470b349d33770987849da77.png_mw680water" width="607" height="354" alt="有很多进攻窗口的建筑" title="有很多进攻窗口的建筑" align="" /><span class="picinfo">有很多进攻窗口的建筑<span style="color:#474747;font-size:16px;">&nbsp;</span></span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+下图所示的情况就是《<span>CODM</span>》游戏中令很多玩家崩溃的场景，如果此时该玩家没有任何其他掩体，存活的可能性微乎其微。
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/a18ee9878c7448e6241f06840f3e66eb.png_mw680water" width="607" height="293" alt="打地鼠" title="打地鼠" align="" /><span class="picinfo">打地鼠</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<b>2. </b><b>平衡性与游戏性</b>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<span>游戏经验丰富的读者一定会发现，虽然</span><span>“</span><span>不平衡</span><span>”</span><span>确实会对游戏性有很大的伤害，但在很多</span><span>FPS</span><span>地图中却处处充斥着这种不平衡的设计，这该如何解释呢？</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<span>我们可以先来看看以绝对平衡闻名的关卡地图设计。</span>
+</p>
+<p class="MsoNormal">
+<b><span>2.1 </span>绝对平衡的关卡设计<span>&nbsp;</span></b>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+绝对平衡的关卡，换句话说就是对于对抗双方，所处的位置环境和到关键点的距离都完全相同。从结构来看，绝对平衡的关卡，一定是对称结构的。再加上对称的复活<span>/</span>出生规则，以及其他对参赛双方完全相同收益的规则，就组合出了一个绝对平衡的游戏模式。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+在<span>FPS</span>发展的历史长河中，出现过不少大小不一的绝对平衡的关卡地图，其中最出名的当属<span>iceworld</span>。
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/0e9c476f3dd7220f06c6216dc6dcf1b4.png_mw680water" width="607" height="380" alt="iceworld" title="iceworld" align="" /><span class="picinfo">iceworld</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+这种简单重复的结构，加上较小的面积，作为练枪图是再合适不过了。摒除了地图理解和团队配合，每个玩家都可以单纯以枪法一决雌雄。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+这种极端的关卡，有些<span>“</span>大巧不工<span>”</span>的味道在里面。但不可忽视的是，<span>FPS</span>游戏虽然以枪法为玩法核心，但却不是唯一的玩法。关卡设计师如果在大面积的地图上也使用简单的对称结构，那往往会被玩家抱怨<span>“</span>偷懒<span>”</span>和<span>“</span>无聊<span>”</span>。毕竟一个哪里都一样的地图，既不方便玩家判断自己的位置，有没有任何体验上的惊喜。（甚至玩家在输了以后，也少了一个<span>“</span>这个地图玩的少<span>”</span>的甩锅理由<span>…</span>）
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+但是，在较大型地图的核心区域应用对称结构，再辅以一些美术包装，也可以制作出经典的地图。例如下图所示的《<span>COD</span>》黑色行动系列的地图<span>Meltdown</span>，感兴趣的读者可以查阅该图的设计，或者自行在游戏中体验。
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/407bc6585d53e680d30b56dbef61b0ae.png_mw680water" width="607" height="355" alt="Meltdown" title="Meltdown" align="" /><span class="picinfo">Meltdown</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<span>这里有个逻辑提醒读者注意，绝对平衡的关卡设计一定是对称的设计，但对称的设计不一定绝对平衡。这一点我们将在下一小节说到。</span>
+</p>
+<p class="MsoNormal">
+<b><span>2.2 </span>不平衡会为游戏带来什么？<span>&nbsp;</span></b>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+事实上，大部分<span>FPS</span>对战地图都是非平衡的设计。不过这里我们要明确，所有的关卡都是要避免绝对不平衡的。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+正如上文所提到的剪刀石头布，剪刀永远可以胜利的例子，如果玩家理性并且都可以选择剪刀，那这场游戏就会变成一场永无止境的平局。在博弈论中，这种情况被称为绝对优<span>/</span>劣势解。在游戏中，如果有存在下图的结构，哪怕地图是对称的，这种绝对的不平衡也会让每个理性玩家，都失去离开这个结构去冒险进攻的理由，甚至游戏的节奏会被严重拖沓到无法进行下去。<span></span>
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/76488f950cd314a4dff57667133d5f59.png_mw680water" width="605" height="424" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+为了游戏体验的丰富多样，且可以正常进行，让游戏除了比拼枪法外，还存在一定的策略性（分路、特定武器优势点、站位等），局部相对不平衡的设计是必要的。而为了减少地图对游戏机制的依赖，增加关卡的重玩性（避免玩家分到某队就退出游戏），整体的平衡也是必要的。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+局部不平衡的设计技巧，可以从空间上和时间上两个维度考虑。
+</p>
+<p class="MsoListParagraph" align="left" style="margin-left:18.0pt;text-align:left;text-indent:-18.0pt;">
+a.&nbsp; 空间上：提供可解的不平衡
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+下图实际上是一个典型的策略多寡造成的不平衡区域：玩家如果想穿过桥洞，就要面对来自三个不同地方的威胁。但在《<span>COD16</span>》中，关卡设计师通过地形上的土坡结合玩家动线，巧妙地将这种威胁一一化解了。
+</p>
+<p class="picbox" align="left" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7134/76998b5c5a84f09989778114e53d5ec7.png_mw680water" width="607" height="342" alt="《COD16》幼发拉底桥" title="《COD16》幼发拉底桥" align="" /><span class="picinfo">《COD16》幼发拉底桥</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+想象玩家从图中左侧移动到右侧，三处不同的威胁就会按照图中标示的<span>1</span>、<span>2</span>、<span>3</span>顺序依次出现。这也就给了玩家一个可以化解不平衡的方法。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+类似的设计还有很多，感兴趣的读者可以在以后的游戏中多多留意。
+</p>
+<p class="MsoListParagraph" align="left" style="margin-left:18.0pt;text-align:left;text-indent:-18.0pt;">
+b.&nbsp; 时间上：拒绝永恒不平衡
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+在有攻守的模式中，防守方往往会先占据一定的优势；然而一旦进攻方突破了某条防线或者关键区域，整个游戏<span>“</span>攻守互换<span>”</span>，胜利的天平就又会倒向进攻方。典型的应用了这个思路的游戏模式就是爆破模式。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+一个典型的爆破模式，一般为两队对抗。游戏可以分为三个阶段：开局战术实施阶段、下包前对抗阶段、下包后终局阶段。根据统计，爆破模式在比赛的前两个阶段时，防守方胜率是高于进攻方的。而在比赛进行到下包后阶段，攻守互换，进攻方的胜率会再次高于防守方。<span></span>
+</p>
+<span>为了证明这样的比赛仍然可以做到整体的平衡，我们假设一场爆破比赛的前两个阶段，防守方胜率为</span><span>70%</span><span>，进攻方为</span><span>30%</span><span>；下包后，防守方胜率为</span><span>30%</span><span>，进攻方为</span><span>70%</span><span>，而进攻方下包率</span><span>40%</span><span>；根据贝叶斯定律，我们知道：</span>
+<p class="MsoNormal" align="left" style="text-align:left;">
+防守方胜率<span>&nbsp;= 70%*(1-40%)+30%*40% = 54%</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+进攻方胜率<span>&nbsp;= 30%*</span>（<span>1-40%</span>）<span>+70%*40% = 46%</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+可以看出，攻守双方的胜率已经非常接近了。当然，由于这里忽略了下包率与胜率是有一定关联的，概率并不独立，所以只能以此作为一个近似计算。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+不过在真实的游戏中，在任何阶段，两方的胜率差如果像上述例子一样大，往往说明某一方确实占据了非常有利的位置；这时就体现出了爆破模式的另一个精妙所在<span>——</span>设计师用两个或以上的爆破点，配合<span>5~6</span>人的参赛人数，让两方队伍可以利用信息不对称，在不平衡的局部关卡中充分斗智斗勇。
+</p>
+<p class="MsoNormal">
+<b><span>3. </span>小结<span>&nbsp;</span></b>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+局部的不平衡而整体平衡的设计，是关卡设计中最体现一个设计师想法和能力的地方。在繁冗的<span>3D</span>空间，规划玩法空间；结合游戏玩法，设计关键点位；最终让玩家在看似不事雕琢的环境中，自得其乐，是一个此类游戏关卡设计师最高的追求之一。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<br />
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;">
+<b><span class="r-triangle">总结</span></b>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+一个完整的游戏模式玩法，仅靠关卡是无法保证平衡性的。局外机制如匹配、<span>Ban&amp;Pick</span>，局内机制如随机位置复活、半场换边等，共同构建起了这个复杂的博弈体系；游戏通过胜利条件将玩家推离博弈平衡，让参与的玩家都可以根据自己对游戏的理解，构建自己的：信息<span>-&gt;</span>策略<span>-&gt;</span>收益循环，不断根据动态的场面情况，来与对手斗智斗勇。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+在实际设计应用中，不但要通过定性来判断场景、关卡的平衡性，还需要通过用户研究、线上测试等方法，定量分析，切实地统计与模式相关的平衡性数据信息。随着近年<span>AI</span>技术的发展，使用机器学习<span>Agent</span>模拟人类玩家行为，提前发现未上线的地图、模式的问题的方案也在很多游戏中有落地应用了。
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<span>最后我想说，将游戏设计中的规律形成方法，经验形成理论，在此之中抽象出游戏最本质的模型（</span><span>meta-game</span><span>），不仅可以指导项目的设计方向，对行业的创新与发展也一定大有裨益。</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<span><br />
+</span>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<b><i><u>Reference:</u></i></b>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<i>1. </i><i>《博弈论基础》，罗伯特<span>·</span>吉本斯<span>&nbsp;</span></i>
+</p>
+<p class="MsoNormal" align="left" style="text-align:left;">
+<i>2. </i><i><a href="https://www.youxituoluo.com/522527.html" target="_blank">对抗类游戏平衡性评价与环境预测方法</a></i>
+</p>
 ➜在官方与玩家的共同“整活”中，《糖豆人》即将迈入第二赛季
 https://www.yystv.cn/p/7133	10200
 <blockquote class="doc-blockquote">
-<p class="picbox" style="text-align:left;">
 <span><strong></strong><strong>只有想不到的，没有做不到的</strong></span>
-</p>
 </blockquote>
 <p>
 在过去的一段时间里，玩法亲民且画风亲和的《糖豆人：终极淘汰赛》成为了玩家之间口耳相传的爆款，并在上线后短短两个月内，把糖豆人塑造成了知名游戏形象。
