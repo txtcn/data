@@ -1,0 +1,369 @@
+➜写给设计师的项目管理入门指南（上）
+https://www.uisdc.com/project-management-guide	57738
+<p>最近发现项目管理对自己蛮有用的，把自己的经验整理一下~希望对大家有用</p>
+<p>没有讲不明白的事，只有讲不明白的的人，我会用最通俗的语言，让你明白。</p>
+<p><span class="img-zoom"><img alt="写给设计师的项目管理入门指南（上）" class="alignnone size-full wp-image-391246" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-xs-20201009-1.jpg" width="800" height="4171" /></span></p>
+<p><span class="img-zoom"><img alt="写给设计师的项目管理入门指南（上）" class="alignnone size-medium wp-image-391247" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-xs-20201009-2.jpg" width="800" height="4556" /></span></p>
+<p><span class="img-zoom"><img alt="写给设计师的项目管理入门指南（上）" class="alignnone size-medium wp-image-391248" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-xs-20201009-3.jpg" width="800" height="4393" /></span></p>
+<p>上篇完。</p>
+<p>[link https://www.uisdc.com/designer-project-management-method]</p>
+<p>欢迎关注作者的微信公众号：</p>
+<p><span class="img-zoom"><img alt="写给设计师的项目管理入门指南（上）" src="https://image.uisdc.com/wp-content/uploads/2020/10/huifengqr.png" width="183" height="178" class="alignnone size-full wp-image-391271" /></span></p>
+➜如何设计行动按钮？用超多案例帮你完整掌握！
+https://www.uisdc.com/cta-design	58936
+<h4><span class="auto_menu">前言</span></h4>
+<p>“行动按钮”作为连接用户与产品的交互触点，在产品设计中扮演了至关重要的角色，一个优秀的按钮控件可以有效的提升交互体验，引导用户，提升产品转化率。本文是我在设计环节遇到问题并寻求解决方案过程中总结沉淀下来的几点小结，希望能为设计师伙伴们提供一些启发或帮助。</p>
+<h4><span class="auto_menu">背景</span></h4>
+<p>需求源于一款产品意在提升桌面图标的生成率，所以业务侧希望在用户退出该产品时以弹窗的形式引导用户创建图标。针对该需求，在弹窗行动按钮的优先级表达、行退操作布局设计中产生了疑惑，主要体现在以下4个方案中，页面示意如下：</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391159" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-1.jpg" width="813" height="444" /></span></p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391160" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-2.jpg" width="811" height="444" /></span></p>
+<p>发现问题</p>
+<ul>
+<li>按钮的优先级该如何表达？</li>
+<li>行进、后退该如何放置？</li>
+<li>业务侧与用户侧该如何权衡？</li>
+</ul>
+<p>问题聚焦</p>
+<ul>
+<li>行动按钮的优先级表达规范</li>
+<li>行动按钮的召唤行为分析</li>
+<li>行动按钮的本源分析</li>
+</ul>
+<h5>Part 1. 行动按钮的优先级表达规范</h5>
+<p>通过对 Material Design、简书、IXDC、MicroUX及设计相关文献的查阅归纳，对中行动按钮的规范、经验总结提炼如下：</p>
+<p><strong>按钮的优先级表达可划分为三个层级</strong></p>
+<p>具备高度强调作用的“填充（包含）按钮”、中度强调的“轮廓（概述）按钮”、低度强调的“文本按钮”。</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391161" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-3.jpg" width="808" height="301" /></span></p>
+<p><strong>正确表达</strong></p>
+<p>单个突出按钮：布局中应包含一个突出的按钮，以使其他按钮在层次结构中的重要性降低。此高强调按钮吸引了最多的关注。</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391162" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-4.jpg" width="835" height="273" /></span></p>
+<p>多个按钮：一个应用一次可以在（模态弹窗/底部栏）布局中显示多个按钮，因此高强调按钮可以与执行次要功能的中强调按钮和低强调按钮配合使用。</p>
+<p>可以在填充的按钮（高强调度）旁边放置一个轮廓按钮（中等强调）。</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391163" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-5.jpg" width="835" height="273" /></span></p>
+<p>可以在轮廓按钮（中等强调）旁边放置一个文本按钮（低强调）。</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391164" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-6.jpg" width="835" height="273" /></span></p>
+<p>使用多个按钮时，指示更重要的操作时，请将其放置在填充的按钮中。</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391165" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-7.jpg" width="835" height="273" /></span></p>
+<p>文本按钮通常嵌入在包含的组件（如卡片和对话框）中，以使其自身与出现它们的组件相关联。</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391166" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-8.jpg" width="835" height="273" /></span></p>
+<p>文本按钮间又可以通过颜色，粗细进行优先级区分。</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391167" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-9.jpg" width="835" height="273" /></span></p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391168" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-10.jpg" width="835" height="273" /></span></p>
+<p><strong>尽量避免</strong></p>
+<p>避免同时并列使用两个填充按钮（高优先级按钮）。</p>
+<h5>Part 2. 弹窗中行动按钮的召唤行为分析</h5>
+<p><strong>用户惯性认知：左后退，右行进</strong></p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391169" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-11.jpg" width="929" height="469" /></span></p>
+<p>论据说明：</p>
+<p><strong>头部平台情况</strong></p>
+<ul>
+<li>iOS的移动、电脑设备绝大所述情况下行进按钮都在右侧，后撤在左侧；</li>
+<li>早些时候，win与Android都为左前进，右后撤。而Android在4.0版本发布后也将按钮调换为了“左后退，右行进”，顺应了设计的大趋势。</li>
+</ul>
+<p><strong>A/B test数据结论。</strong></p>
+<p>早在 2004 年，就有 Walker 和 Stanley 的两人针对这个问题做了对比研究实验，实验选取定量测试者对程序进行操作，进行两轮测试并分别在按钮位置与问题上做了调换；</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391170" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-12.jpg" width="933" height="654" /></span></p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391171" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-13.jpg" width="942" height="654" /></span></p>
+<p>实验结果：在第一次实验中，A、B两实验组行进与后退的正确率相差无几，未达到（统计学中）“有感”；第二次实验（A、B组调换位置，并问相反的问题），A组变化不大，B组错误率高出三倍。（资料来源：《体验进阶》）</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391172" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-14.jpg" width="1080" height="558" /></span></p>
+<p>结论：该实验告诉我们一个道理，即不要轻易违背用户习惯。为了提高效率，人们通常只会在第一次接触新事物时，启用大脑，之后大部分情况都处于“无意识状态”。</p>
+<p><strong>行业情况</strong></p>
+<p>PC端。源于眼动视觉轨迹：自左向右的浏览习惯，因此行动按钮一般为：左行进，右后退。</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391173" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-15.jpg" width="1080" height="789" /></span></p>
+<p>△ PC端（win系统）：左行进，右后退</p>
+<p>移动端</p>
+<ul>
+<li>便于大多数右利手用户单手持机操作；</li>
+<li>符合古腾堡法则：左上角是视觉的第一落点区，而右下角是视觉最终落点区，右侧行进可避免阅读视线顺序造成无意识的回跳。</li>
+</ul>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391184" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-bc-20201009-16.jpg" width="327" height="600" /></span></p>
+<p>△ 移动端：左后退，右行进</p>
+<p><strong>按钮的召唤行为</strong></p>
+<p>通常，我们在产品中会为了达成某种指标，需要在界面上引导用户去完成我们希望其完成的操作。且这类操作是可以达成某种目的的，我们把这类操作称为「召唤行为」，该按钮成为召唤按钮，又称CTA（Call To Action），即从元素的角度引导用户完成任务，提升产品转化率。</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391175" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-17.jpg" width="932" height="509" /></span></p>
+<p>△ 召唤行为：取消</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391176" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-18.jpg" width="932" height="410" /></span></p>
+<p>△ 召唤行为：取消</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391177" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-19.jpg" width="932" height="410" /></span></p>
+<p>△ 召唤行为：继续选座</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391178" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-20.jpg" width="932" height="410" /></span></p>
+<p>△ 召唤行为：继续选座（调换位置虽然能暂时解决用户的退出行为，但容易产生误操作，与用户的期望不同，导致在产品体验上会被用户排斥）</p>
+<p>在模态弹窗下，还需要配合不同弹窗类型的标题文案/说明文案意向以及使用场景，来进行召唤按钮的设计，举例示意如下。</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391183" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-25.jpg" width="690" height="316" /></span></p>
+<p>小结：在移动端产品行动按钮设计中，一般回退操作在左，行进操作在右，召唤属性根据场景、弹窗标题等对按钮做突出处理。</p>
+<h5>Part 3. 模态弹窗下按钮的召唤行为优先级程度评估</h5>
+<p>以上是站在用户体验角度对按钮设计的分析，那么，在实际的方案设计到落地过程中，我们不仅要满足用户体验，同时也要站在业务方的角度看待问题，综合评估业务价值与用户体验，最终权衡两者得到的最优方案。那么如何评估召唤行为的强弱以及权衡业务价值与用户体验关系呢，小编有以下几点建议。</p>
+<p><strong>依据产品业务性质</strong></p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391181" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-23.jpg" width="945" height="355" /></span></p>
+<p>依据产品生命周期</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-391182" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-an-20201009-24.jpg" width="837" height="358" /></span></p>
+<h4><span class="auto_menu">归纳&amp;总结</span></h4>
+<ul>
+<li>「召唤按钮优先级表达」：包含的按钮&gt;概括按钮&gt;文本按钮（文本颜色、加粗）。</li>
+<li>「行动按钮位置循序」：左回退，右行进，核心是建立并遵循用户惯性认知，不随意打破。</li>
+<li>「召唤行为内核」召唤行为不是用户想做的事，而是我们应该要让用户做的事，但不是强迫。</li>
+<li>「召唤行为优先级程度评估」：需要结合需求的触发场景，区分所处的产品业务性质，确定所处的产品生命周期。</li>
+</ul>
+<p>[link https://www.uisdc.com/ux-design-call-to-action]</p>
+<p>欢迎关注作者微信公众号：「VMIC UED」</p>
+<p><span class="img-zoom"><img alt="如何设计行动按钮？用超多案例帮你完整掌握！" class="alignnone size-full wp-image-381269" src="https://image.uisdc.com/wp-content/uploads/2020/07/uisdc-bc-ew-20200723-1.jpg" alt="如何做好图片标签设计？来看Vivo设计总结的三部曲！" width="180" height="182" /></span></p>
+➜强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）
+https://www.uisdc.com/symmetrical-composition-2	62534
+<p>“对称构图”是将版面分割为两部分，通过设计元素的布局让画面整体呈现出对称的结构，具有很强的秩序感，给人安静、严谨和正式的感受，呈现出和谐、稳定、经典的气质。为了让大家加深对对称构图的理解，运用上一期知识点进行一则展览海报实操演示。</p>
+<p>[link https://www.uisdc.com/symmetrical-composition]</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391193" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-1.jpg" width="784" height="800" /></span></p>
+<h4><span class="auto_menu">方案一</span></h4>
+<p>方案一想呈现出混沌的“噩梦”感觉，使用故障风格进行表现。</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391194" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-2.jpg" width="640" height="800" /></span></p>
+<p>寻找具有梦境混沌般感觉的图片素材，在此基础上进行二次加工。</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391195" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-3.jpg" width="436" height="600" /></span></p>
+<p>把素材图片放置到PS中，复制一个图层，打开“图层样式”面板，在“通道”选项中取消勾选“R”通道：</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391196" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-4.jpg" width="1068" height="436" /></span></p>
+<p>用“自由变换”工具水平翻转图像，得到双色调效果：</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391197" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-5.jpg" width="436" height="600" /></span></p>
+<p>复制新图层，“图层混合模式”改为“正片叠底”，可以加强图片对比度，背景处理完成：</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391198" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-6.jpg" width="436" height="600" /></span></p>
+<p>进行主标题的刻画，把“梦境”两字笔画拆分开，让文字形成犹如梦境般既熟悉又陌生的感觉：</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391199" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-7.jpg" width="794" height="600" /></span></p>
+<p>其他信息重新进行刻画，将文字调整为两端对齐的四方形，这样可以达成工整严谨的效果。再通过文字大小对比、线条的分割和装饰，让信息传达更清晰也更美观。</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391200" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-8.jpg" width="1068" height="602" /></span></p>
+<p>把刻画好的信息放置在画面中轴线上，采用居中对齐的排版形式，让整个画面呈现出对称的状态：</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391201" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-9.jpg" width="581" height="800" /></span></p>
+<p>把标题的文字合并为一个图层，在“图层样式”通道中把“R”通道的对勾取消。复制一个图层，在“图层样式”通道中把“G”通道的对勾取消。稍微移动位置使之错位，就可以得到简单的故障效果:</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391202" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-10.jpg" width="584" height="600" /></span></p>
+<p>合并这两个文字图层，用矩形选区工具随机选择文字一小部分，复制后移动位置形成错位。再随机画出一些红色和蓝色线条，模拟故障条效果。</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391203" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-11.jpg" width="585" height="600" /></span></p>
+<p>正文部分也执行相同的步骤，但位置偏移量不要太大，保证文字的识别性。最后调整文字的颜色与背景相融合，设计完成：</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391204" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-12.jpg" width="582" height="800" /></span></p>
+<h4><span class="auto_menu">方案二</span></h4>
+<p>根据“梦境”的主题联想到睡梦中的“月亮”，并以此寻找素材：</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391205" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-13.jpg" width="436" height="600" /></span></p>
+<p>把文字信息放置在画面中轴线上，采用居中对齐的排版形式，呈现出对称的状态，在排版时注意把握好对比和节奏感。</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391206" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-14.jpg" width="581" height="800" /></span></p>
+<p>画面显得比较“空”，重新输入“梦境”二字，放大后从中轴线拆开，放置在画面左右两边，让画面整体呈现出左右对称的平衡、稳定的状态。最后进行模煳处理，设计完成：</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391207" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-15.jpg" width="581" height="800" /></span></p>
+<h4><span class="auto_menu">方案三</span></h4>
+<p>方案三灵感来源于梦境如镜花水月般虚无缥缈、不可捉摸。</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391208" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-16.jpg" width="640" height="800" /></span></p>
+<p>在PS中使用「文字工具」输入“梦”字；再使用「椭圆工具」画出五个圆，描边为“白色、4像素”，选择五个圆环图层右键“转换为智能对象”。放置在画面中央，方便之后的滤镜应用。</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391209" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-17.jpg" width="587" height="500" /></span></p>
+<p>按住「Ctrl」鼠标单击圆环图层缩略图可以得到圆环的选区，然后按「Ctrl+shift+i」反选，给“梦”字图层添加图层蒙版。把圆环图层隐藏，可以得到如图所示的效果：</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391210" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-18.jpg" width="1069" height="643" /></span></p>
+<p>给文字图层添加「滤镜」-「扭曲」-「水波」，样式选择“中心向外”，数量和起伏的参数调到最大：</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391211" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-19.jpg" width="1066" height="568" /></span></p>
+<p>给圆环图层添也加「水波」滤镜，数量的参数调小一些：</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391212" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-20.jpg" width="1057" height="604" /></span></p>
+<p>用黑色硬度100%的实边「画笔」，在圆环的「图层蒙版」上随机擦除，模拟水波起伏的渐隐效果，制作完成：</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391213" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-21.jpg" width="500" height="409" /></span></p>
+<p>“镜”字也使用相同的方法制作；并把其他文字信息以画面中轴线为中心，分布在画面左右两边，呈现出平衡、稳定的状态。</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391214" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-22.jpg" width="582" height="800" /></span></p>
+<p>最后加入透明液体气泡素材,渲染氛围和丰富画面，（文末有下载方式）。</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391215" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-23.jpg" width="1064" height="474" /></span></p>
+<p>设计完成：</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391216" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-24.jpg" width="582" height="800" /></span></p>
+<h4><span class="auto_menu">方案四</span></h4>
+<p>方案四灵感来源于“白日梦”，采用“对角对称”形式进行设计，令版面既具有对称的秩序性和工整性，又能打破画面呆板感。</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391217" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-25.jpg" width="800" height="2771" /></span></p>
+<p>把“梦境”二字进行笔划拆分，加入英文点缀，添加模煳效果，即能强调虚无的梦境氛围，又可以让标题效果更丰富美观：</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391218" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-26.jpg" width="1069" height="580" /></span></p>
+<p>把刻画好的“梦境”二字分布在对角线两端，互相呼应，呈现出对角的对称平衡状态，其他文字信息居中排列在中轴线上，设计完成。</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391219" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-27.jpg" width="592" height="800" /></span></p>
+<p>方案汇总</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-391220" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-dc-20201009-28.jpg" width="1200" height="376" /></span></p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>对称是比较严谨规范的构图方式，但是可以通过多种设计手法，巧妙破除对称构图的单一性与呆板感，也能使画面具有独特的美感、丰富的视觉效果和良好的设计感。</p>
+<p>往期回顾：</p>
+<p>[link https://www.uisdc.com/tilt-composition-technique]</p>
+<p>[link https://www.uisdc.com/tilt-composition-technique-2]</p>
+<p>[link https://www.uisdc.com/left-and-right-composition]</p>
+<p>[link https://www.uisdc.com/left-and-right-composition-2]</p>
+<p>欢迎关注作者的微信公众号：「艺海拾贝Design」</p>
+<p><span class="img-zoom"><img alt="强迫症最爱的「对称构图」，来领这份超全攻略！（实操篇）" class="alignnone size-full wp-image-267186" src="https://image.uisdc.com/wp-content/uploads/2018/04/uisdc-bhsyqr.jpg" alt="强迫症最爱的「对称构图」，来领这份超全攻略！" /></span></p>
+➜大厂高手出品！深入了解B端的弹窗设计应用（下）
+https://www.uisdc.com/pop-up-application-design-2	66132
+<p>本篇文章将分享B端弹窗相关内容，我把文章拆成上下两篇。本片文章将分享“非模态”弹窗相关内容。</p>
+<p>上期回顾：[link https://www.uisdc.com/pop-up-application-design]</p>
+<p>上篇文章使用了实际的案例详细分析了“模态”弹窗的不同类型，以及如何进行“模态”弹窗的选择和应用。文章中也大致的介绍了“模态”与“非模态”弹窗相关的一些基础认知。接下来我将结合工作中的一些总结，详细分析关于“非模态”弹窗的基础理论知识和如何区分不同类型的组件以及如何正确应用与选择。</p>
+<h4><span class="auto_menu">内容概览</span></h4>
+<p>之前有部分同学吐槽内容太多文章太长了，希望有个目录。那么满足用户需求，特意画了个简陋的目录，大家可以通过下面的目录针对感兴趣的内容进行选择性阅读。文章分为三大类，从基础理论到基础组件粒度的拆分提供大家阅读～</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390950" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-1.jpg" width="1500" height="1306" /></span></p>
+<h4><span class="auto_menu">什么是非模态弹窗？</span></h4>
+<p>“非模态”弹窗特点是不会破坏用户“操作流”，上篇文章中也提到过其中的“流”指的是“当人们全身心投入某个活动时，会对周边视而不见”，用户更享受界面中“控制权”，并且它能够在关键时刻提醒用户任务的状态、信息的提示，如：成功、失败、错误、警示（其包含：操作提示、暗提示、通知等）。当页面中出现“非模态”弹窗时用户依然可以操作主界面。下图所示是用户对“非模态”弹窗的处理流程。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390951" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-2.jpg" width="1200" height="559" /></span></p>
+<p>在B端产品中，经常会涉及一些重要复杂的操作，数据的删改对用户非常重要，所以需要用到“非模态”弹窗正确提醒/引导用户。在实际应用中常见的“非模态”弹窗的基础组件有“气泡”、“文字提示”、“警告提示”、“气泡确认框”、“全局提示”、“通知提示”。我把他们分为a.内容反馈、b.信息提示两大类，如下图所示：</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390952" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-3.jpg" width="1038" height="600" /></span></p>
+<h5>1. “非模态”反馈的概念</h5>
+<p>在艾伦·库珀在《About Face》中提到过一个概念就是“富视觉非模态反馈”，它的“富”在于能够让用户深入全面的感知信息，让用户了解一个进程的状态或者属性。它的“视觉”是指按用户习惯的方式使用界面中的元素。它的“非模态”在于不打断用户的情况下信息能及时地显示出来，即不需要用户做特殊动作或者转换模式，就能看到和理解这些反馈。它存在的意义在于，帮助用户更加有效的完成界面中的复杂任务。</p>
+<p><strong>内容反馈类型</strong></p>
+<p>“用户输入信息/操作用户界面时，系统给出相应的提示并出现内容反馈机制”。在设计师设计界面时常用到“通知提示”、“全局提示”、“气泡确认框”三种类型作为反馈消息。它的“非模态”在于用户操作后不打断用户的情况下及时地显示出来，明确告知用户的一些反馈结果，帮助用户更加有效的完成界面中的复杂任务。下图为它们实际的使用场景：</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390953" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-4.jpg" width="1200" height="728" /></span></p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390954" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-5.jpg" width="1200" height="694" /></span></p>
+<p><strong>信息提示类型</strong></p>
+<p>对于“内容反馈”及“信息提示”我把这两种类型都统称为“信息反馈”，因为它们两种类型很相似，都属于“非模态弹窗”类型。并且他们存在的意义都是及时有效的帮助用户完成任务目标，提高任务的操作效率和可理解程度”。信息提示常常用到“文字提示”、“气泡”、“警告提示”三种形式展现给用户。下图为它们实际的使用场景：</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390955" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-6.jpg" width="1200" height="711" /></span></p>
+<p>“非模态”弹窗中的“内容反馈”类型通常都会有时间限制，比如：“通知提示”、“全局提示”出现几秒钟后就会自动消失。当然也有部分需要操作行为动作才会消失，比如“气泡确认弹窗”它需要用户进行点击事件触发后出现，同时也需要用户点击指定动作才可消失，如下图：</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390996" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-bc-20201007-1.gif" width="1200" height="650" /></span></p>
+<p>“非模态”弹窗中的“信息提示”类型通常都需要进行指定动作操作后出现。当系统中出现一些成功、失败、错误、警示就需要“警告提示”告诉用户，其中“文字提示”、“气泡”它需要用户悬停在某个焦点时出现，移除才消失。如下图：</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390997" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-bc-20201007-2.gif" width="1200" height="650" /></span></p>
+<h5>2. “非模态”反馈存在的意义</h5>
+<p>上面提到了“非模态”弹窗是由“内容反馈”和“信息提示”组成，如：“文字提示”、“通知提示”、“全局提示”等。我们这边统称它为“信息反馈”，“信息反馈”存在的意义是及时有效的目的帮助用户完成任务目标，其中“有效”包含了“提供有用的信息反馈，提高任务的操作效率和可理解程度”。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390958" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-9.jpg" width="1089" height="600" /></span></p>
+<p><strong>有用</strong></p>
+<p>有用的“信息反馈”：1）回应操作结果：告诉用户发生了什么，刚刚做了什么以及前面的操作导致现所处的状态，让用户感受到一切都在掌握之中；2）操作路径引导：告诉用户哪些过程正在进行中，需要下一步需要做什么，及时告诉这一步哪些地方操作有误。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390959" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-10.jpg" width="800" height="165" /></span></p>
+<p>如下图云凤蝶所示，在用户进行手机/邮箱登录时需要进行滑块校验，当校验通过后需要及时回应用操作结果，并且明确告诉用户下一步需要做什么操作。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390960" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-11.jpg" width="1038" height="600" /></span></p>
+<p><strong>效率</strong></p>
+<p>提高用户的操作效率：1）操作行为反馈：在不打断用户行为操作的前提下提供良好的反馈机制，用户看到反馈后可继续操作当前页面；2）提前告知错误：在用户出现错误之前及时制止，尽量避免出现错误后才的告知用户；3）减少系统报错率：减少用户报错提示，设计师必须清楚不出错不代表用户总是正确的，而是杜绝“自以为是”地纠错用户错误，正确引导用户形成良好的操作环境（做B端转化类产品的同学应该知道，高频率报错和阻断大大减低了用户的转化率）。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390961" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-12.jpg" width="800" height="130" /></span></p>
+<p>下面两个案例图均为为腾讯广告投放平台。</p>
+<p>当用户未选择某个必填表单字段，导致无法继续进入到下一步操作时，弹出提示弹窗（几秒钟后消失）指导用户先要设置推广计划才可进入到下一步操作，并且对应的字段也会出现校验提示，更有效的指引用户对其进行操作。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390962" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-13.jpg" width="1200" height="693" /></span></p>
+<p>当用户上传创意素材后，当用户点击“创意检测”功能后，系统立即弹出对应的反馈，告诉用户操作结果。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390963" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-14.jpg" width="1200" height="693" /></span></p>
+<h4><span class="auto_menu">“非模态”弹窗组件拆分</span></h4>
+<p>“非模态”信息反馈弹窗组件，它能够在不同业务场景下使用，并且都能让用户感知到操作场景匹配的结果反馈/消息提示，做到合理有效的信息传达。在设计师选择并应用时，需要考虑用户完成任务时需要引起注意的方式。所以，根据不同组件的特性我们可以把组件的反馈提示的“重量”分为以下指数，进行定量分析。如下图所示：</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390964" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-15.jpg" width="1000" height="701" /></span></p>
+<h5>1. Message 全局提示</h5>
+<p><strong>简介</strong></p>
+<p>设计师在不希望用户在执行操作时中断用户并能告知用户结果的前提下，给予用户的临时反馈浮层，它出现位于页面顶部居中显示并自动消失，是一种不打断用户操作的轻量级提示方式。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390965" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-16.jpg" width="1200" height="710" /></span></p>
+<p><strong>结构与功能</strong></p>
+<p>全局提示是由：图标、提示文本、操作（可选）、关闭（可选）四部分组成，其中可选部分是否包含可根据实际情况进行配置。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390966" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-17.jpg" width="1200" height="450" /></span></p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390967" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-18.jpg" width="1283" height="800" /></span></p>
+<p>内容常常是一条较简短的成功、信息、错误、警示的操作提示文本。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390968" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-19.jpg" width="924" height="800" /></span></p>
+<p><strong>特点及使用场景</strong></p>
+<p>整体完结性独立页面反馈：需要在操作完成后提供一个里程碑式的结果提示，明确告知用户结果。例如：付款表单成功页面，给予全局的付款成功/失败的提示。</p>
+<p>针对一个操作区块的总体反馈：它是针对页面中某个区块操作过程的结果反馈。反馈后，页面自动跳转到顶部的提示区域。</p>
+<p>页面顶部固定位置反馈浮层：出现在整个页面左右居中偏上位置。出现3s（建议少于5秒）后自动消失。此类反馈显示一段时间后自动消失。反馈不跟随页面滚动而滚动，固定在页面的顶部位置显示。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390969" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-20.jpg" width="1200" height="705" /></span></p>
+<p><strong>使用建议</strong></p>
+<p>全局提示通常用于展示重要性不是很高的信息。如果需要用户高度关注和操作的场景，建议使用弹窗等方式来完成。</p>
+<p>提示文本内容需要尽量精简，保证用户在其自动消失前了解提示信息，字符建议控制在40个以内，整体宽度建议不超过 640px，不建议出现换行情况。</p>
+<h5>2. Notification 通知提示</h5>
+<p><strong>简介</strong></p>
+<p>一般用于系统主动推送或通知用户复杂的后台进程结果，向用户告知重要的问题或失败状态的临时通知浮层，并且希望用户立马做出决策。状态一般包含成功、失败、错误、警示，通常情况下他出现位于页面顶部右上角并可设置自动消失，不会打断用户操作的轻量级提示方式。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390970" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-21.jpg" width="835" height="600" /></span></p>
+<p><strong>结构与功能</strong></p>
+<p>通知提示是由：图标、标题（可选）、提示文本、操作（可选）、关闭五部分组成，其中是否包含可选部分可根据实际情况进行配置。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390971" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-22.jpg" width="1200" height="608" /></span></p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390972" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-23.jpg" width="888" height="800" /></span></p>
+<p>内容常常是一条较简短的成功、信息、错误、警示的操作提示消息。当用户鼠标移入卡片时，增加投影大小。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390973" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-24.jpg" width="875" height="800" /></span></p>
+<p><strong>特点及使用场景</strong></p>
+<p>希望用户立马做出决策：向用户告知重要的问题或失败状态，希望用户立马做出决策。例如：系统升级优化需通知用户，可以配置操作，如“查看详情”用户点击后可跳转至详情页面。</p>
+<p>系统主动反馈:系统主动推送或通知复杂的内容，明确需要告知用户的提示信息。带有交互的通知，给出用户下一步的行动点操作。例如：系统功能上线通知。</p>
+<p>屏幕顶部右上角位置反馈浮层：一般出现在整个页面右上角固定位置的反馈浮层（出现的位置可自定义，如：左上角、左下角、右上角、右下角）。可以设置通知提示常驻在页面中，也可以设置出现6s～8s（建议少于8s）后自动消失，此反馈不随页面滚动。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390974" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-25.jpg" width="1225" height="771" /></span></p>
+<p><strong>使用建议</strong></p>
+<ul>
+<li>避免使用用户不懂的专业术语，标题和提示需要文字简介明了，显示状态或者内容概括，文本尽量精简易懂，建议控制在 120 个字符以内。</li>
+<li>带有交互操作的通知类型，需要给到用户明确的操作按钮和关闭入口。</li>
+<li>减少用户操作区域的干扰，尽量避免遮挡屏幕中的重要信息/操作。不要重复发送同一条信息。</li>
+</ul>
+<h5>3. Popconfirm 气泡确认弹窗</h5>
+<p><strong>简介</strong></p>
+<p>气泡确认弹窗是在目标元素附近通过浮层显示内容的组件。它是针对页面内某个操作的独立反馈，它与“模态”确认对话框形式对比，气泡确认弹窗更加轻量化。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390975" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-26.jpg" width="1091" height="800" /></span></p>
+<p><strong>结构与功能</strong></p>
+<p>气泡确认窗是由：图标（可选）、标题（可选）、提示文本、操作四部分组成，其中是否包含可选部分可根据实际情况进行配置。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390976" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-27.jpg" width="1200" height="608" /></span></p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390977" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-28.jpg" width="991" height="800" /></span></p>
+<p>气泡确认窗中的图标可自定义，可根据实际业务诉求做调整，如下图所示：</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390978" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-29.jpg" width="1200" height="608" /></span></p>
+<p><strong>特点及使用场景</strong></p>
+<p>针对一个操作点的反馈浮层:它针对页面内某个操作点的独立反馈浮层。例如：针对单个删除操作的提示反馈，当用户点击操作元素时弹出确认弹窗的气泡浮层，与“模态”确认对话框形式对比，气泡确认弹窗更加轻量化。</p>
+<p>跟随操作点的反馈浮层:当鼠标点击某个元素时，出现在其元素之上的临时浮层。所有提示均带有明显指示箭头并指向对应的元素，建议只出现在按钮上方和下方。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390979" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-30.jpg" width="1200" height="746" /></span></p>
+<p><strong>使用建议</strong></p>
+<ul>
+<li>气泡确认弹窗的用法需要与气泡组件区分开，比如：不能承载表单类型组件。</li>
+<li>不要在气泡确认弹窗中承载不重要的信息，文案尽量精简、表意明确，考虑如何将专业术语解释的更清楚，特别是对操作对后续影响较大的重要提示信息。</li>
+<li>提供有价值的按钮，操作建议不超过2个。</li>
+</ul>
+<h5>4. Tooltip 文字提示</h5>
+<p>简介</p>
+<p>文字提示用于对界面上的元素进行简短地解释，提供按钮、文字、操作的文案解释，其内容为该元素的文本信息。例如：解释界面上的一个图标的含义/功能、界面上某个字段的操作介绍、展示界面上被截断的小段文本等，出现于鼠标悬停某个触发器上时显示。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390980" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-31.jpg" width="1251" height="800" /></span></p>
+<p><strong>结构与功能</strong></p>
+<p>文字提示是由：触发器（触发器可以是任何页面元素）、提示文本两部分组成。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390981" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-32.jpg" width="1200" height="451" /></span></p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390982" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-33.jpg" width="1200" height="451" /></span></p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390983" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-34.jpg" width="1200" height="450" /></span></p>
+<p>文字提示气泡浮层的出现位置与目标元素在页面中的位置有关。首要原则是避免对重要信息造成遮挡，当触发内容靠近窗口边缘时，优先反向显示。为保证良好的展示效果可以预设8种方向，如下图所示：</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390984" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-35.jpg" width="1200" height="657" /></span></p>
+<p><strong>特点及使用场景</strong></p>
+<p>针对一个操作点的提示反馈浮层:它与气泡确认弹窗类似，也是针对页面内某个操作点的独立反馈，与气泡确认弹窗不同的是用户只需将鼠标移入指定区域则显示提示，移出消失。</p>
+<p>跟随触发器的提示反馈浮层:当鼠标移入指定区域时显示提示，建议300ms后文字提示出现在其元素之上的临时浮层（主要是避免极端情况下鼠标划过页面，所有浮层全显示的情况）。所有提示均带有明显指示箭头并指向对应的元素，移出移出目标区域时，延迟300ms后消失。</p>
+<p>展示元素的更多详细信息/功能:鼠标悬停在操作按钮、头像、标签等触发器上出现的文本信息，表示其元素的更多详细信息。例如：表单中某些字段文案过长，并且页面空间有限，只能使用文案截断的方式展示，这时可用使用文字提示来展示被截断的所有内容。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390985" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-36.jpg" width="1200" height="742" /></span></p>
+<p><strong>使用建议</strong></p>
+<ul>
+<li>避免对重要信息造成遮挡，当触发内容靠近板块周边时需要前端同学做碰撞处理，达到应反向显示；在一个区域内容板块内，出现2个触发内容相临时，使用退让原则，优先内容展示为主。</li>
+<li>使用时建议优先上下居中对齐，其次左右边缘对齐，最后左右居中对齐。浮层中指向箭头需要与触发器的内容居中对齐。</li>
+<li>避免承载过于重要的信息，如错误提示。并且避免重复展示相同的信息。</li>
+<li>信息提示特点是短暂呈现内容，所以内容应该简短而清晰，避免使用大量的文本内容以及带有操作/文本链接，建议文本内容控制在60个字符以内。</li>
+</ul>
+<h5>5. Popover 气泡</h5>
+<p><strong>简介</strong></p>
+<p>当信息层级较低或需要轻量操作时，会将部分内容以某种形式收起。比如：用图标代替，当鼠标移入或者点击图标元素时可触发气泡提示，展示更多内容。并且，气泡出现在页面其他元素之上的临时浮层。它是一种非破坏性操作，用户可以随时通过点击触发器或点击气泡卡片之外的区域，可进行取消操作。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390986" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-37.jpg" width="1155" height="800" /></span></p>
+<p><strong>结构与功能</strong></p>
+<p>气泡是由：标题（可选）、提示文本、操作（可选）、关闭（可选）四部分组成，其中是否包含可选部分可根据实际情况进行配置。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390987" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-38.jpg" width="1200" height="546" /></span></p>
+<p>为了更加灵活的根据应用场景适配，提供小尺寸、大尺寸两种选择。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390988" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-39.jpg" width="1200" height="1475" /></span></p>
+<p><strong>特点及使用场景</strong></p>
+<p>整体完结性独立页面反馈：它与信息提示较类似的地方是针对页面内某个操作点的独立反馈。与信息提示不同的是它可以配置点击或者是鼠标移入指定区显示，用户可以对浮层上的元素进行操作，因此它可以承载更复杂的内容，比如链接、按钮、表单组件等。</p>
+<p>两种触发方式：</p>
+<ul>
+<li>悬浮触发：此类触发方式建议在只展示纯文本信息的场景下使用，不建议包含操作按钮或表单等复杂内容。当鼠标移入指定区域则显示，建议300ms后文字提示出现（主要是避免极端情况下鼠标划过页面，所有气泡全显示的情况）。移出目标区域和气泡之外区域时延迟300ms后消失（当如气泡中包含文本链接、人员标签等内容，支持鼠标移入气泡可进行操作）。</li>
+<li>点击触发：当鼠标点击目标元素时显示气泡，点击页面空白处或气泡中的操作可将其关闭，如错误点击空白处导致其关闭，建议不保留数据。建议在气泡中包含输入型表单或有操作按钮的场景下使用。</li>
+</ul>
+<p>可承载复杂的内容:当鼠标悬停/点击触发器，如：操作按钮、功能图标时，可弹出带有表单、按钮等复杂操作的气泡。举例：表格中，如果支持修改字段名称时，点击触发器弹出气泡，可直接在气泡中进行填写，点击确认按钮应用。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390989" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-40.jpg" width="1200" height="744" /></span></p>
+<p><strong>使用建议</strong></p>
+<ul>
+<li>避免承载过于重要的信息，如：错误校验提示。并且避免重复展示相同的信息。</li>
+<li>气泡可自定义承载表单类组件，但是需要避免承载过多的表单类型组件，点击卡片外部会收起/关闭的交互形式使得用户有不安全感。</li>
+<li>气泡出现时必须完整地呈现在可视范围内，不能被页面遮挡覆盖或被裁切。最好是前期设定好碰撞处理，内容较多时避免气泡过大可使用内部滚动的形式展示信息。</li>
+</ul>
+<h5>6. Alert 警告提示</h5>
+<p><strong>简介</strong></p>
+<p>警告提示用于系统向用户传递需要特别注意的信息，无需用户启动操作即可显示。这些信息通常是一直存在的，除非用户主动关闭。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390990" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-41.jpg" width="1200" height="709" /></span></p>
+<p>这些信息可以是整个网站级别的，或者是某个页面甚至是组件级别的。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390991" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-42.jpg" width="1200" height="266" /></span></p>
+<p><strong>结构与功能</strong></p>
+<p>警告提示是由图标、标题（可选）、文本内容、操作（可选）、关闭（可选）五部分组成，其中是否包含可选部分可根据实际情况进行配置。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390992" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-43.jpg" width="1200" height="450" /></span></p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390993" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-44.jpg" width="1200" height="1160" /></span></p>
+<p>按照功能分类，内容常常是一条较简短的安全、信息、错误、警示的提示消息。</p>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390994" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-45.jpg" width="1200" height="771" /></span></p>
+<p><strong>特点及使用场景</strong></p>
+<p>系统操作反馈:用于展示操作前或某些操作后，向用户显示警告的信息时系统反馈的信息，不会自动消失。</p>
+<p>屏幕显示位置：这些信息可以是整个网站级别的，或者是某个页面甚至是组件级别的，通常不是在用户使用中途出现的，而是一开始就存在的。类此反馈跟随页面滚动。</p>
+<p>两种展示类别:</p>
+<ul>
+<li>不可关闭：展现形式常驻在系统静态页面中，不会自动消失。</li>
+<li>可关闭：展现形式常驻在系统静态页面中，不会自动消失。提供关闭操作，用户可以通过点击关闭按钮来关闭此提示。</li>
+</ul>
+<p><span class="img-zoom"><img alt="大厂高手出品！深入了解B端的弹窗设计应用（下）" class="alignnone size-full wp-image-390995" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-tc-20201007-46.jpg" width="1200" height="745" /></span></p>
+<p><strong>使用建议</strong></p>
+<p>建议当提示内容较多时增加具有概括性标题，方便用户可快速理解主要内容，内容建议不超过5行，如有业务强烈诉求建议使用展开/收起能力。</p>
+<p>当警告提示中包含文本链接和文字按钮两种可操作项时，当点击会跳转至其他页面，建议穿插在提示文本中或跟随在提示文本后显示文本链接。当点击不跳走的操作时（展开/收起操作），需要与提示文本区分，那么建议放在容器的右侧。</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>根据上文我们可总结到“非模态”弹窗可以通俗的解释它为“在不干扰用的正常的操作的情况下与用户建立良好的互动，帮助用户更好的了解产品功能、减少困惑及错误，告知用户的任务状态及相关的信息提示，提升用户的整体使用体验”。根据其功能属性和使用场景我们大致可以把他们分为三大类，分别是为内容反馈、信息提示。并且，我把它们总结为“非模态反馈”，此类组件分别为：全局提示、通知提示、气泡确认弹窗、文字提示、气泡、警告提示，设计师们可以根据它们的特点和属性进行选择使用。</p>
+<p>这么多内容能看到最底部，很不容易。</p>
+<p>作者其他文章：</p>
+<p>[link https://www.uisdc.com/middle-platform-system-layout]</p>
+<p>[link uisdc.com/design-component-button]</p>
+<p><strong>参考文献</strong></p>
+<ul>
+<li><a href="https://www.yuque.com/wuxinghua/01/qmyrgt">https://www.yuque.com/wuxinghua/01/qmyrgt</a></li>
+<li><a href="http://www.woshipm.com/ucd/934439.html">http://www.woshipm.com/ucd/934439.html</a></li>
+<li><a href="https://www.douban.com/note/671602011/">https://www.douban.com/note/671602011/</a></li>
+<li><a href="https://flylib.com/books/en/2.153.1.174/1/">https://flylib.com/books/en/2.153.1.174/1/</a></li>
+</ul>
