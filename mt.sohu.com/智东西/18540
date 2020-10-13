@@ -1,0 +1,205 @@
+➜黄仁勋宣布Arm合作最新进展！打造英国最强AI超算，公布DPU处理器三年路线图
+http://www.sohu.com/a/422795542_115978	47348
+<p><img src="http://p2.itc.cn/q_70/images03/20201005/a7008f1959c241fda2de4ee5c5f7c6f3.jpeg" /></p>
+<p>芯东西（公众号：aichip001）</p>
+<p>编 | 心缘</p>
+<p>芯东西10月5日晚间报道，刚刚，在GTC技术大会上，英伟达（NVIDIA）创始人兼CEO黄仁勋再次站在家里厨房的炉灶前，带来一场线上主题演讲。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201005/471648e419ff4e67ac5ee36968424ee5.png" width="1000" height="563" /></p>
+<p>▲英伟达创始人兼CEO黄仁勋在厨房发表主题演讲</p>
+<p>黄仁勋一并推出面向数据中心、边缘AI、协作工具和医疗健康场景的一系列软硬件加速方案。此前被黄仁勋称为“未来计算三大支柱之一”的数据处理单元DPU新品也正式亮相。</p>
+<p>本次英伟达发布的核心新讯亮点如下：</p>
+<p><strong>1、Arm最新合作进展：</strong>宣布在三个方面进行投资，包括将GPU和DPU移植到Arm生态、加速高性能计算与云边端平台、向Arm提供英伟达AI、HPC、RTX引擎等先进SDK。</p>
+<p>2、数据中心：推出基于新型数据中心芯片架构DOCA的两款全新DPU处理器、DOCA软件开发包，并公布DPU未来三年路线图；</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>3、边缘AI：推出加速企业大规模部署AI的NVIDIA EGX Egde AI平台，宣布简化服务器AI应用部署和管理的NVIDIA Fleet Command新服务早期访问计划，推出售价59美元的入门级AI开发套件Jetson Nano 2GB。</p>
+<p><strong>4、协作工具：</strong>宣布Omniverse公开Beta测试版，让设计师可以在家中或世界各地实时协作；推出NVIDIA Maxine云AI视频流媒体平台，通过提供各种AI功能，更好地连接数百万远程工作和学习；</p>
+<p>5、医疗健康：宣布正在打造英国最强大的AI超级计算机Cambridge-1，AI性能达400 petaflops，拟为该超算投资约4000万英镑；宣布与全球医疗健康公司GSK达成合作；推出NVIDIA Clara Discovery平台，加速医疗领域开发AI应用程序；参与世界上最大的抗击新冠肺炎联邦学习行动，保护数据隐私。</p>
+<p>一、宣布Arm最新进展：投资三个方面 </p>
+<p>黄仁勋以英伟达与Arm合作的最新进展作为主题演讲的压轴内容。就在上个月，英伟达宣布以400亿美元收购这家英国芯片设计公司。</p>
+<p>“Arm是世界上最受欢迎的CPU，”黄仁勋说，“我们将共同向Arm生态系统提供英伟达加速和AI计算技术。”</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201005/731f8c992dd44395a53b85553a70a2a4.png" width="1000" height="562" /></p>
+<p>▲英伟达与Arm最新合作进展</p>
+<p>去年英伟达宣布将CUDA及科学计算堆栈移植到Arm，今天，黄仁勋宣布一项推进Arm平台的重大举措——英伟达在三个方面进行投资:</p>
+<p>（1）英伟达将在GPU、网络、存储和安全技术方面对Arm合作伙伴进行补充，以创建完整的加速平台；</p>
+<p>（2）英伟达正与Arm合作伙伴一起为高性能计算、云计算、边缘和PC创建平台——这需要芯片、系统和系统软件；</p>
+<p>（3）英伟达正在向Arm提供英伟达AI、HPC、RTX引擎等先进SDK。</p>
+<p>“现在这些功能只能在x86上使用，”黄仁勋说，“有了这一举措，Arm平台也将在加速计算和AI计算方面处于领先地位。”</p>
+<p>二、新型处理器 DPU ：基于 DOCA 架构，可编程、 AI 驱动、 “ 零信任 ” 安全 </p>
+<p>自今年4月宣布完成对Mellanox收购以来，英伟达在数据中心的加码一直备受关注。</p>
+<p>今日，英伟达推出这笔收购所带来的最新成果，面向数据中心的新一代可编程处理器（SoC）——NVIDIA BlueField系列数据处理单元（DPU）。</p>
+<p>英伟达创始人兼CEO黄仁勋说，现代数据中心由软件定义，运行数据中心的基础设施需要消耗20- 30%的CPU核心，为了减轻CPU的负担，需要一种新的处理器。</p>
+<p>“我们称之为数据处理单元（DPU）。”黄仁勋介绍说，新的NVIDIA BlueField 2 DPU是一个可编程处理器，具有强大的Arm核心和加速引擎，用于网络、存储和安全的加速处理任务。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201005/20ae5becfd2442fd80a8fe916ce0204e.jpeg" width="1000" height="500" /></p>
+<p>▲NVIDIA BlueField-2 DPU</p>
+<p>作为对CPU和GPU的补充，DPU具有加速、完全可编程和“零信任”安全特性，基于数据中心芯片架构DOCA（Datacenter-infrastructure-on-a-chip），将多核Arm CPU、高性能网络接口、各种灵活和可编程的加速引擎集于一体，能提升网络、存储和安全性能，防止数据泄露和网络攻击，同时节省大量运营支出。</p>
+<p>BlueField-2 DPU优化后，可在数据实时进出服务器时对数据进行处理，从而实现了高性能的完全可编程数据处理，同时将关键的网络、存储、安全任务从CPU卸下，释放了CPU资源。也就是说，该芯片将计算功能移到了数据所在的位置。</p>
+<p>以前可能要用125个CPU核提供的数据中心服务，如今一颗BlueField-2 DPU就能提供，这释放了宝贵的CPU内核，以便运行大量其他企业应用。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201005/f8b1591dff5d4451af126acec9ec64b2.png" width="1000" height="563" /></p>
+<p>▲NVIDIA BlueField-2 DPU</p>
+<p>英伟达目前的DPU产品线包括两款PCIe产品:</p>
+<p>（1）NVIDIA BlueField-2 DPU：包含8个64位A72 Arm核，具备NVIDIA Mellanox ConnectX-6 Dx SmartNIC的所有功能，完全可编程，提供每秒200千兆的数据传输速率和加速关键数据中心安全、网络和存储任务，包括隔离、根信任、密钥管理、RDMA/RoCE,、GPU direct、弹性块存储、数据压缩等等。</p>
+<p>（2）NVIDIA BlueField-2X DPU：计算性能是BlueField-2的85倍，除了包括BlueField-2 的所有关键特性外，还增强了NVIDIA Ampere GPU的AI能力，可用于数据中心安全、网络和存储任务，利用英伟达第三代张量核心，能够用AI进行实时安全分析，如异常检测和自动响应、实时流量分析在线率、动态安全编排、在线分析上传视频等。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201005/c38b7b0dac244f759a4eacc01406a071.jpeg" width="1000" height="500" /></p>
+<p>▲NVIDIA BlueField-2X DPU</p>
+<p><strong>现场，黄仁勋透露了为期三年的DPU路线图：</strong></p>
+<p>BlueField-2 DPU处理器目前正在试用阶段，预计2021年进入主要服务器制造商的新系统，BlueField-2X还在开发中，预计2021年上市。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201005/bf1f85d4e49e4e33804e822d964f014a.png" width="1000" height="562" /></p>
+<p>▲NVIDIA BlueField DPU路线图</p>
+<p>基于相同的DOCA架构，BlueField-3和BlueField-3X将在2022年问世，搭载更强Arm核，网络性能达到400Gbps；BlueField-4将在2023年问世，计算性能将达到BlueField-2的近600倍。</p>
+<p>英伟达还提供了NVIDIA DOCA软件开发工具包，现在可供早期访问合作伙伴使用。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201005/ed6d960d81ec40aeac27dbcbf3fad765.jpeg" width="1000" height="500" /></p>
+<p>▲NVIDIA DOCA SDK</p>
+<p>正如NVIDIA CUDA使得开发者能构架GPU加速的应用程序一样，新NVIDIA DOCA SDK使得开发者能在DPU加速的数据中心基础设施服务上，构建软件定义、硬件加速网络、存储、安全和管理应用程序。DOCA还提供了一组标准的开放API来帮助开发者在DPU上运行其代码。</p>
+<p>DOCA被完全集成到NVIDIA NGC中，为第三方应用程序供应商提供了一个方便的、集装箱化的软件环境，以利用先进的DPU数据中心加速服务，并开发、认证和分发应用程序给客户。</p>
+<p>华硕、源讯、Dell Technologies、富士通、技嘉、H3C、浪潮、联想、Quanta)/QCT、超微等全球领先的服务器制造商均已计划将英伟达DPU集成到它们的企业级服务器产品中。</p>
+<p>VMware、Canonical、红帽、Check Point Software Technologies等一些软件基础设施合作伙伴也已宣布或计划支持BlueField-2 DPU。</p>
+<p>三、加速大规模部署 AI ，推出 NVIDIA EGX Edge AI 平台和 Fleet Command 早期访问计划 </p>
+<p>面向边缘基础设施，英伟达带来NVIDIA EGX Edge AI平台，为全球科技领袖及数百家创业团队提供加速数据中心和边缘AI的GPU加速服务器，使得各种行业、各种规模的组织能够快速有效地大规模部署AI。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201005/736925c6f7be43d68a3f3be979f9a4eb.jpeg" width="1000" height="563" /></p>
+<p>▲NVIDIA EGX Edge AI平台</p>
+<p>基于英伟达EGX AI平台的系统可从Dell Technologies、浪潮、联想、超微等领先服务器制造商处获得，并已得到Canonical、Cloudera、红帽、SUSE和VMware等软件基础设施提供商的支持。</p>
+<p>此外，英伟达宣布EGX平台正在扩展，将把NVIDIA Ampere GPU和BlueField-2R DPU功能结合在一张PCIe卡上，为企业提供一个共同的平台来构建安全、加速的数据中心。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201005/2dfc23950e9f42908ce7d095a21e175f.png" width="1000" height="539" /></p>
+<p>▲NVIDIA EGX Edge AI平台</p>
+<p>EGX平台的核心是一个可在NVIDIA NGC上使用的优化AI软件栈，NVIDIA NGC提供了一系列行业特定的AI工具包和预培训的模型，使得在NVIDIA认证的系统上构建和部署AI应用程序更加容易。</p>
+<p>未来的企业数据中心将在10000个不同位置拥有一台或多台服务器，而非在一个位置拥有10000台服务器。为了简化和保护这些服务器上AI应用程序和模型的部署和管理，英伟达宣布了一项名为NVIDIA Fleet Command的新服务早期访问计划，目前向合格的客户开放。</p>
+<p>这种混合云平台将边缘计算的安全性和实时处理能力与远程管理和软件即服务的易用性相结合。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201005/cac5d2221f924013ba8b733ef64fc05a.jpeg" width="2000" height="1126" /></p>
+<p>▲NVIDIA EGX AI Platform Fleet Command</p>
+<p>通过一个统一的控制平面，Fleet Command集中管理分布在广大地区的服务器。其一触式配置、空中软件更新、远程管理和详细监控仪表板，使执行团队更容易减轻IT负担，最大限度地利用其AI应用和达到最高效率。</p>
+<p>全球供应链解决方案领导者KION集团是最早接触Fleet Command的公司之一，正用NVIDIA EGX AI平台为其智能仓库系统开发AI应用程序，提高零售配送中心的吞吐量和效率。</p>
+<p>四、售价 59 美元的入门级AI机器人开发套件 </p>
+<p>面向边缘侧，英伟达还推出了边缘AI机器人系列产品Jetson AI在Edge平台上的最新产品——入门级开发工具包Jetson Nano 2GB，售价仅59美元，将于本月底发售，这一价钱几乎只有去年发布的99美元Jetson Nano开发工具包的一半。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201005/208402b68e734411bb120a495e7d1dcf.jpeg" width="1000" height="781" /></p>
+<p>▲NVIDIA Jetson Nano 2GB开发套件</p>
+<p>通过在机器人和智能物联网等领域创建手工项目，该工具包为学生、教育工作者、机器人爱好者提供了一个可扩展的平台来学习和创建AI应用程序。</p>
+<p>它使用的是与NVIDIA CUDA-X加速计算堆栈相同的技术，并得到了NVIDIA JetPack SDK的支持。</p>
+<p>为了支持这一努力，英伟达还宣布提供免费的在线培训和AI认证项目，作为众多开源项目、how-to和视频的补充。</p>
+<p>目前Jetson Nano 2GB开发工具包已获得来自组织、企业、教育者以及嵌入式计算生态系统合作伙伴的认可。</p>
+<p>五、 Omniverse 平台正式公测，让远程 3D 仿真协作像编辑文档一样容易 </p>
+<p>在协作工具方面，英伟达宣布Omniverse平台的公开Beta测试版，使得设计师可以在家中或世界各地实时协作。</p>
+<p>Omniverse在今年秋季即可下载。该平台融合了英伟达在图形、仿真和AI方面的突破，是世界上第一个基于英伟达RTX实时渲染的3D仿真和协作平台，将物理和虚拟世界融合，以逼真的细节实时模拟现实，对于在机器人、汽车、建筑、工程、制造、媒体和娱乐行业工作的客户来说是必不可少的。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201005/78c3cbc4b5a5401aa7c735522adcb3b6.png" width="1000" height="538" /></p>
+<p>▲NVIDIA Omniverse平台</p>
+<p>团队可基于Omniverse平台实现远程实时协作，无论是建筑师修改3D建筑设计、动画师修改3D场景，还是工程师合作开发自动驾驶汽车，都像在网上共同编辑一份文档一样容易。</p>
+<p>例如，NVIDIA Omniverse增强了NVIDIA Drive Sim的能力，实现了前所未有的对大规模精细环境的实时、物理精确、多GPU模拟。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201005/1142812f74324be9b7b04238c817b219.png" width="1000" height="531" /></p>
+<p>▲在NVIDIA Omniverse驱动DRIVE Sim</p>
+<p>在Omniverse公开Beta版前，爱立信、Foster + Partners、ILM及其他40多家公司，以及多达400名个人创造者和开发者，已经对该平台进行了为期一年的早期访问，并向英伟达工程团队提供了反馈。</p>
+<p>卢卡斯影业及工业光魔技术副总裁Francois Chardavoine认为：“Omniverse展示了实时光线追踪的可能性，在视觉特效和动画制作的各个阶段，改进创作过程的潜力将是革命性的。”</p>
+<p>六、 NVIDIA Maxine 平台： 模块化设计轻松整合 AI 功能，大幅改善视频会议体验 </p>
+<p>今天英伟达还推出了基于云计算的流媒体视频AI平台NVIDIA Maxine，为开发者提供了一套基于云计算的GPU加速AI视频会议软件，通过整合了英伟达先进的视频、音频和对话AI功能，可以大幅提高流媒体质量和改善视频会议体验。</p>
+<p>“AI可以为视频通话创造奇迹，”黄仁勋说，“有了Jarvis和Maxine，我们有机会彻底改变今天的视频会议，并创造未来虚拟会议的存在。”</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201005/780b76a5e5e74d5e83b0855bc9675613.png" width="1000" height="536" /></p>
+<p>▲NVIDIA Maxine</p>
+<p>Maxine平台的模块化设计使开发人员可以轻松选择AI功能，将其集成到他们的视频会议解决方案中。</p>
+<p>通过在云端NVIDIA GPU上运行AI推理工作负载，视频会议服务提供商可以使用Maxine平台为数十万用户提供领先的AI能力，如凝视校正、超分辨率、实时字幕、噪声消除、人脸重亮等等。</p>
+<p>由于数据是在云端处理的，而不是在本地设备上处理的，因此终端用户无需任何专用硬件，就可以享受这些AI新特性，同时减少电脑、平板电脑和手机等终端设备上的数据流。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201005/91974720a84c4abf91ee59d647ccf719.jpeg" width="1000" height="750" /></p>
+<p>通过使用AI，Maxine可以将视频通话所消耗的带宽减少10倍。它并没有在整个屏幕上显示像素，而是分析通话中每个人的关键面部特征，然后在通话另一边的视频中智能地重新激活人脸，使得流媒体视频在互联网上以更少的数据来回流动。</p>
+<p>借助这一基于AI的视频压缩技术，开发者可以将视频带宽消耗减少到H.264流媒体视频压缩标准要求的1/10，从而降低了供应商的成本，并为终端用户提供了更流畅的视频会议体验。</p>
+<p>基于英伟达的生成对抗网络（GAN）研究，Maxine平台使得视频会议感觉更像面对面的交谈。</p>
+<p>例如，面部对齐功能可以自动调整人脸，这样通话时人们看起来是面对面的，而凝视校正则可以模拟眼神交流，即使摄像头与用户的屏幕没有对齐。自今年年初以来，视频会议的数量增长了10倍，这些功能有助于帮人们在交谈中保持专注。</p>
+<p>开发人员还可以添加一些功能，让参与者选择自己的动画角色，这些动画由他们的声音和情绪实时自动驱动。即便用户远离屏幕，自动帧选项使得视频反馈依然能跟随说话者。</p>
+<p>通过使用NVIDIA Jarvis SDK支持的AI对话特性，开发者还可以集成虚拟助手，通过语音识别、语言理解和语音生成技术，实现做笔记、设置动作项目、用类似人类的声音回答问题等功能。翻译、封闭式字幕和转录等其他AI会话服务，有助于确保参与者能够理解电话中讨论的内容。</p>
+<p>此外，云本地架构有助于节省成本并提供多整合AI功能。视频会议需求很难预测，因为在任意时间，都可能会有数百甚至数千名用户试图加入同一个电话。</p>
+<p>NVIDIA Maxine平台利用在NVIDIA GPU上运行在Kubernetes容器集群中的AI微服务，帮助开发者根据实时需求扩展他们的服务。用户可以同时运行多个AI特性，并满足应用程序延迟要求。</p>
+<p>Maxine平台集成了几项NVIDIA AI SDK和API的技术。除了NVIDIA Jarvis外, Maxine平台还借助NVIDIA DeepStream高通量音频和视频流SDK和NVIDIA TensorRT SDK，用于高性能深度学习推理。这些NVIDIA SDK所提供的AI音频、视频和自然语言能力，都是在NVIDIA DGX系统上进行数十万小时的训练而开发出来的。</p>
+<p>七、打造英国最强 AI 超算 Cambridge-1 ，AI算力达400 petaflops </p>
+<p>在医疗健康领域，英伟达宣布正打造英国最强大的AI超级计算机Cambridge-1，帮助英国医疗健康研究人员用AI来解决紧迫的医学挑战。</p>
+<p>该超算预计在年底前上线，这也是英伟达设计和制造的第一台用于外部研究访问的超级计算机，英伟达将为该超算投资约4000万英镑。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201005/07df8a0a15484820943038a946d10fec.jpeg" width="1000" height="500" /></p>
+<p>▲Cambridge-1 AI 超级计算机</p>
+<p>Cambridge-1超算将是一个NVIDIA DGX SuperPOD系统，它包含80个英伟达DGX A100系统，采用英伟达Mellanox InfiniBand技术，AI性能超过400 petaflops，Linpack性能超过8 petaflops，将在最新全球TOP500超算排行榜中跻身第29名，在当前Green500强排行榜中将跻身全球最节能超算的前三甲。</p>
+<p>英伟达还宣布与全球医疗健康公司GSK及其AI实验室建立合作关系，构建AI药物研发实验室（AI drug discovery lab），以推进药物和疫苗研发。</p>
+<p>GSK和AstraZeneca均在首批用Cambridge-1超算进行研究的医疗健康公司之列，此外来自Guy’s and St Thomas’ NHS Foundation Trust、伦敦国王学院、Oxford Nanopore公司的研究人员也计划利用该系统。</p>
+<p>Cambridge-1超算聚焦的四个关键领域为：</p>
+<p>（1）联合行业研究：解决大规模医疗保健和数据科学问题，从而改善患者的治疗结果；</p>
+<p>（2）授予大学的计算时间：NVIDIA GPU时间的访问将作为一种资源捐赠给特定研究，以帮助寻找治疗方法。</p>
+<p>（3）支持AI初创企业：英伟达将提供学习机会，并与初创企业合作，培育下一代并提供早期使用AI工具的机会。</p>
+<p>（4）培养未来的AI从业者：该系统将成为世界级研究人员的目的地，并为下一代提供实践经验。</p>
+<p>八、加速计算药研，推出 NVIDIA Clara Discovery 工具 </p>
+<p>NVIDIA将帮助研究人员利用为NVIDIA DGX优化的先进工具NVIDIA Clara Discovery，它集合了成像、放射学和基因组学的力量，为医疗领域最大的计算任务开发AI应用程序。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201005/313e5d4593334c579c6ed3f6f0e5e0ce.png" width="1000" height="538" /></p>
+<p>▲NVIDIA Clara Discovery</p>
+<p>其特点是预先训练的AI模型和应用程序特定框架，以帮助研究人员定义下一代药物发现过程，从寻找目标、构建化合物到开发反应。</p>
+<p>利用最近在自然语言处理方面的一项突破，研究人员现在可以利用特定于生物医学的语言模型来组织、理解和激活大型数据集、研究文献和整理现有治疗和其他重要现实数据的论文或专利。</p>
+<p>九、筛查新冠肺炎患者： 20 天内在 20 家医疗构建预测氧气需求的 AI 模型 </p>
+<p>在保护数据隐私安全、不共享数据的前提下， NVIDIA Clara联邦学习技术能实现预测患者氧气需求，并构建一个无需考虑地理位置、患者人数或数据大小，更易于推广的AI模型。</p>
+<p>该联邦学习模型将在未来几周作为NVIDIA Clara的一部分在NGC上发布。</p>
+<p>英伟达和Massachusetts General Brigham医院的研究人员开发了一种AI模型，可以确定因COVID-19症状出现在急诊室的患者在初次检查几小时甚至几天后是否需要补充氧气。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201005/87b24550d8df4fa0ae18f89936542adc.png" width="1000" height="437" /></p>
+<p>▲氧气预测AI工作流</p>
+<p>最初模型被命名为CORISK，由该医院的科学家Quanzheng Li博士开发。在许多国家可能开始出现第二波COVID-19患者之际，该方案将医学成像和健康记录结合起来，用来帮助临床医生更有效地管理住院治疗。</p>
+<p>为了将其推广到尽可能多的医院，英伟达和该医院启动了一项名为EXAM （EMR CXR AI模型）的计划，与来自世界各地的20家医院合作。据介绍，这是一项规模最大、最多样化的联邦学习计划。</p>
+<p>在短短两周内，全球合作完成了一个曲线下面积为0.94 （AUC目标为1.0）的模型，从而对住院病人所需的氧气水平做出了出色的预测。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201005/42d7a4325b144746914767350ba289f8.jpeg" width="1000" height="539" /></p>
+<p>▲联邦学习示意图</p>
+<p>通过使用NVIDIA Clara联邦学习框架，各个医院的研究人员能够使用胸片、病人的生命值和实验室值来训练一个局部模型，并通过一种称为联邦学习的隐私保护技术，将模型权重的子集与全局模型共享。</p>
+<p>该模型的最终目标是预测出现在急救室的患者需要补充氧气的可能性，帮助医生决定对患者的适当护理水平，包括ICU的设置。</p>
+<p>除了这一项目外，其他大规模联邦学习也正在进行中。例如Owkin正与英伟达、伦敦国王学院以及在MELLODDY制药集团的十多个其他组织，基于全球最大的AI协作药物化合物数据集，使用联邦学习技术在不牺牲数据隐私的前提下实现性能突破。</p>
+<p>伦敦国王学院希望，联邦学习技术能帮助在中风和神经损伤分类、确定癌症的根本原因以及为患者推荐最佳治疗方法等方面取得突破。</p>
+<p>结语：英伟达持续发力数据中心 </p>
+<p>继今年5月GTC技术大会甩出一系列基于安培GPU架构的硬核AI新品后，今天英伟达释放的新讯进一步聚焦在强化数据中心等四个关键领域的实力。</p>
+<p>显然英伟达并不餍足于其在云端AI加速和图形处理领域的领先地位，而是针对客户及开发者痛点持续补足缺口。</p>
+<p>尤其是英伟达今日展示的BlueField系列DPU处理器，是其整合Mellanox技术面向数据中心的又一次发力。如今英伟达400亿美元收购Arm的交易案正在推进中，可以看到，如果这一交易得以完成，不仅将为英伟达进军基于Arm架构的超算和服务器领域带来便利，也将有助于其DPU处理器的发展。</p>
+<p>除此之外，作为算力需求最大的产业之一，医疗诊断和新药研发显然也被英伟达视作拓展疆域的重点，无论是持续完善的NVIDIA Clara平台，还是英伟达打造的AI超算，都在为AI落地医疗场景提供更大的动能。</p>
+➜英伟达推出两款视觉计算专用安培GPU，CloudXR平台明年登亚马逊AWS
+http://www.sohu.com/a/422857072_115978	62916
+<p><img src="http://p7.itc.cn/q_70/images03/20201006/6b4a0a46e6604ce591fe71d90ff3d8fb.jpeg" /></p>
+<p>芯东西（公众号：aichip001）</p>
+<p>编 | 心缘</p>
+<p>芯东西10月6日报道，英伟达（NVIDIA）昨夜推出两款用于视觉计算的安培GPU卡NVIDIA Quadro RTX A6000和NVIDIA A40。</p>
+<p>目前两卡的价格暂未公布。从12月中旬起，Quadro RTX A6000可从PNY、Leadtek、Ingram Micro、Ryoyo等渠道合作伙伴以及nvidia.com处购买。明年年初，全球的OEM工作站和服务器供应商将提供NVIDIA Quadro RTX A6000和NVIDIA A40。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201006/20f69fd4238a49b0a8c3f3daccb6dff9.png" width="1000" height="561" /></p>
+<p>▲NVIDIA Quadro RTX A6000</p>
+<p>此外，英伟达宣布NVIDIA CloudXR平台将在支持NVIDIA V100和T4 GPU的亚马逊AWS EC2 P3和G4实例上可用，使云用户可将高质量的沉浸式体验传输到远程VR和AR设备上。</p>
+<p>AWS上的NVIDIA CloudXR将于明年上半年正式上市，并在未来几个月内提供私有Beta版。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>一、推出用于视觉计算的桌面级和数据中心级安培 GPU 卡，性能大幅提升 </p>
+<p>英伟达推出面向专业视觉计算的两款GPU卡，可加速渲染、AI、VR/AR和计算工作负载。</p>
+<p>有趣的是，这两款卡并没有延续Quadro品牌的命名，而是分别被命名为NVIDIA Quadro RTX A6000和NVIDIA A40。</p>
+<p>两款GPU卡均基于安培架构， 拥有10752个CUDA核心，采用48 GB GDDR6 w/ECC显存、双路NVLink。其中，A6000是首款基于英伟达新安培架构的专业显卡，单精度性能可达到40 TFLOPS，配备了4个DP 1.4接口；A40主要用于数据中心服务器，单精度最高性能达38 TFLOPS，配备了3个DP 1.4接口。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201006/19d155fa6f054ed1a3e8e90824d0f89f.png" width="1000" height="561" /></p>
+<p>▲NVIDIA A40</p>
+<p>两卡均采用了一些突破性技术，包括：</p>
+<p>1、第二代RT核：提供高达前一代2倍的吞吐量，以及并发的光线跟踪、着色和计算功能；</p>
+<p>2、第三代Tensor核心：吞吐量可达上一代的5倍，稀疏性吞吐量可达上一代的10倍，并支持新的TF32和BF16数据格式；</p>
+<p>3、新的CUDA内核：吞吐量为上一代FP32吞吐量的2倍，显着提高了图形和计算能力；</p>
+<p>4、48GB的GPU内存：单个GPU中可用的最大内存，使用NVLink连接两个GPU可扩展到96GB；</p>
+<p>5、虚拟化：通过添加Quadro Virtual Workstation等NVIDIA虚拟GPU软件，可以为远程用户支持图形工作负载和强大的虚拟工作站实例，从而为高端设计、AI和计算工作负载实现更大的工作流；</p>
+<p>6、PCIe Gen 4：带宽是上一代的2倍，加快了向GPU的数据传输速度，以支持数据密集型工作负载，如在支持PCIe Gen 4的服务器和工作站中进行数据科学、混合渲染和视频流传输。</p>
+<p>世界上最大的建筑公司之一Kohn Pedersen Fox Associates是第一批使用NVIDIA Quadro RTX A6000的公司之一。KPF可视化经理Paul Renner说：“使用Quadro RTX A6000，能够将分辨率提高2倍或3倍，并极大地加快了我们对城市景观中大型复杂建筑模型的实时可视化的能力。”</p>
+<p>雷诺集团是全球最大的汽车制造商之一，该集团计算机图形学和可视化解决方案工作人员Guillaume Shan说：“全新的NVIDIA Quadro RTX A6000超出了我们的期望，并在光线追踪的外部场景中，性能提升超过2倍。”</p>
+<p>Predator Cycling是一家专门生产定制碳自行车并在美国手工制造的公司，借助该NVIDIA Quadro RTX A600，其许多关键应用程序的性能提高了2-6倍，使团队能够在视频通话中同时运行分析、建模和屏幕共享。</p>
+<p>建筑设计公司HKS通过使用NVIDIA Quadro RTX A6000，可以在实时运行模拟时收到设计变化的近瞬时反馈，使其能将真实的建筑模拟时间从几天或几周，缩短到几分钟或几小时。</p>
+<p>二、英伟达通过亚马逊 AWS 提供流媒体 AR/VR 技术 </p>
+<p>英伟达还宣布NVIDIA CloudXR平台将在支持NVIDIA V100和T4 GPU的亚马逊AWS EC2 P3和G4实例上可用。</p>
+<p>XR是虚拟现实（VR）、增强现实（AR）和混合现实（MR）的统称。NVIDIA CloudXR平台包括NVIDIA CloudXR软件开发工具包、NVIDIA Quadro虚拟工作站（QvWS）软件和NVIDIA AI SDK，通过将逼真的图形与无线XR头显设备的移动性相结合，来增强沉浸式体验。</p>
+<p>借助从云端流式传输数据的能力，专业人士可以轻松地从任何地方设置、扩展和访问沉浸式体验，而无需被昂贵的工作站或外部VR追踪系统所束缚。</p>
+<p>CloudXR建立在NVIDIA RTX GPU之上，可从任何地方流式传输沉浸式AR、VR或MR体验。 CloudXR等高级工具的可用性不断增加，为增强协作、简化工作流和高保真虚拟环境铺平了道路。XR解决方案还为增加AI特性和功能引入了新的可能性。</p>
+<p>NVIDIA CloudXR平台包括：</p>
+<p>（1）NVIDIA CloudXR SDK：提供对所有OpenVR应用程序的支持，并包括对电话、平板电脑和HMD等广泛客户端的支持。其自适应流协议通过不断适应网络条件，以最低的感知延迟提供最丰富的体验。</p>
+<p>（2）NVIDIA Virtual Workstations：以最快的帧速率提供最逼真的、最高质量的图形，可从AWS等云提供商处获得，也可以从企业数据中心进行部署。</p>
+<p>（3）NVIDIA AI SDK：可提高性能并增强沉浸感。</p>
+<p>通过支持NVIDIA T4和V100 GPU的Amazon EC2 G4和P3实例上的NVIDIA CloudXR平台，企业们可以为世界各地的任何用户提供高质量的虚拟体验。</p>
+<p>Lucid Motors最近发布了新款电动汽车Lucid Air，具有动力强劲、效率高的特性，用户可通过ZeroLight平台的定制实现来体验。Lucid Motors正使用CloudXR平台开发虚拟设计陈列室，通过从AWS流式传输，购物者可进入该虚拟环境并查看Lucid Air的高级功能。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201006/e7b0123aa1574b92a2f0e53cab8cf658.png" width="1000" height="532" /></p>
+<p>“NVIDIA CloudXR可以让世界各地的人都能通过新型Lucid Air体验一种令人难以置信的沉浸式个性化设计，”Lucid Motors数字互动营销总监Thomas Orenz说，“通过使用AWS云，我们可以减少对现场服务器的需求，从而节省基础设施成本，同时还可以为我们的客户动态扩展VR配置体验。”</p>
+<p>另一个早期在AWS上采用CloudXR的是Gettys Group，这是一家位于芝加哥的酒店设计、品牌推广和开发公司。Gettys经常与可视化公司Theia Interactive合作，将设计过程转变为交互式的虚幻引擎VR体验。</p>
+<p>当冠状病毒大流行袭来时，Gettys和Theia使用NVIDIA CloudXR将客户项目发送到本地的Oculus Quest HMD上，并通过Quadro虚拟工作站从AWS EC2 P3实例中传输数据。</p>
+<p>“这改变了游戏规则，通过从AWS流媒体协作经验，我们可以在短时间内以数字方式将项目利益相关者聚集在一起，以进行快速的VR设计调整会议。”Gettys Group首席创新官Ron Swidler说，“这将节省大量的时间和金钱，但更重要的是，它将提高客户的参与度、理解力和满意度。”</p>
