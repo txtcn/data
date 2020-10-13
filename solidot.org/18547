@@ -1,0 +1,30 @@
+➜AMD Radeon 图形驱动占到了内核的 10.5%
+https://www.solidot.org/story?sid=65769	8828
+根据最新的 Linux 5.9 Git 树记录，内核包含有 2049 万行代码，以及 358 万行代码注释和 372 万空行，总共 2781 万行。其中 AMDGPU 图形驱动占据的比例最高。六年前，AMD <a href="https://www.solidot.org/story?sid=41378" target="_blank">采取行动</a>统一了 Linux 开源和闭源驱动，AMDGPU 内核驱动作为一个核心组件被开源驱动和闭源驱动共同使用。在 Linux 5.9 中，AMDGPU 驱动共有 216 万行代码，以及 24.7 万行代码注释和 10.9 万空行，共 251 万行，<a href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Linux-5.9-AMDGPU-Stats">占到了内核的约 10.5%</a>。相比之下，NVIDIA "Nouveau"驱动只有 14.9 万行代码，2.56 万行注释和 1.99 万空行。<p>
+➜Linux 5.9 释出
+https://www.solidot.org/story?sid=65770	12542
+Linus Torvalds 在内核邮件列表上<a href="https://lore.kernel.org/lkml/CAHk-=wi-u86++np80GQvgDuARdt9xpBNho6SjHLmYgm8jibGag@mail.gmail.com/T/#u">宣布</a>释出 Linux 5.9。主要新特性包括：支持 x86 <a href="https://lwn.net/Articles/821723/">FSGSBASE</a> 指令集，FSGSBASE 是英特尔于 2012 年在 Ivy Bridge 系列处理器中引入的指令集，用于直接操作 FS 和 GS 基址寄存器，对 FSGSBASE 的支持能显着改进性能；死线调度器（deadline scheduler）<a href="https://lwn.net/Articles/821578/" target="_blank">支持 CPU 容量感知</a>；<a href="https://lwn.net/Articles/789023/">close_range()</a>系统调用；<a href="https://lwn.net/Articles/817905/">主动内存压缩</a>大幅减少大页分配延迟；文件系统、驱动等方面的更新，更多可浏览 <a href="https://kernelnewbies.org/Linux_5.9" target="_blank">KernelNewbies 5.9</a>。<p>
+➜华为是中国最有价值的消费电子公司
+https://www.solidot.org/story?sid=65771	17925
+根据胡润研究院发布的<a href="https://www.hurun.net/CN/Article/Details?num=E333816684AF">榜单</a>，华为以 1.1 万亿元人民币的价值<a href="https://cn.reuters.com/article/hurun-huawei-china-1012-idCNKBS26X0DS?il=0" target="_blank">成为</a>中国最值钱的消费电子企业；但受美国制裁影响，华为今年的价值比去年下跌 1,000 亿元。榜单的调研范围仅包括中国大陆民营企业。小米以 4,340 亿元价值排名第二、第三位为VIVO 价值1,750亿元。10 大企业的总价值加起来为 2.166 万亿元，为全球价值最高的消费电子企业苹果的 16%。联想第七仅为 540 亿元，低于大疆和传音。<p>
+➜中国允许深圳探索特殊工时管理制度
+https://www.solidot.org/story?sid=65772	18513
+中共中央办公厅、国务院办公厅<a href="https://finance.sina.com.cn/china/gncj/2020-10-12/doc-iivhvpwz1492981.shtml">印发了</a>《深圳建设中国特色社会主义先行示范区综合改革试点实施方案（2020—2025年）》，其中包括“（五）完善适应超大城市特点的劳动力流动制度。深化户籍制度改革，调整完善积分落户政策。完善居住证制度，鼓励根据实际扩大公共服务范围、提高服务标准，稳步推进基本公共服务常住人口全覆盖。允许探索适应新技术、新业态、新产业、新模式发展需要的特殊工时管理制度。”“特殊工时管理制度”的措施相对模煳，鉴于深圳市的互联网和科技公司以受争议的 996 工作制着称，最新的规定被很多人视为是合法化 996 工作制。996 工作制是指从早九点至晚九点，每周工作六天。这一做法是违反现有劳动法的。<p>
+➜美国扣押伊朗革命卫队使用的域名
+https://www.solidot.org/story?sid=65773	19971
+根据美司法部公布的<a href="https://www.justice.gov/opa/pr/united-states-seizes-domain-names-used-iran-s-islamic-revolutionary-guard-corps" target="_blank">新闻稿</a>，美国扣押了伊朗革命卫队使用的 92 个域名。其中 4 个域名（newsstand7.com、usjournal.net、usjournal.us 和 twtoday.net）是针对美国进行宣传试图影响美国政策的新闻网站，它们自称是真实的新闻机构，但实际上都是由伊朗革命卫队控制的，这违反了外国代理人注册法。其它域名则用于向世界其它地区宣传伊朗。美国负责国家安全的助理司法部长 John C. Demers 称，假新闻机构已成为专制国家传播假信息的新渠道，这些国家在持续的尝试破坏美国的民主。<p>
+➜中国发射高分十三号卫星
+https://www.solidot.org/story?sid=65774	21594
+新华社报道称，中国于 12 日 零时 57分在西昌卫星发射中心用长征三号乙运载火箭，成功将高分十三号卫星发射升空，卫星顺利进入预定轨道。报道称，高分十三号卫星是高轨光学遥感卫星，主要用于国土普查、农作物估产、环境治理、气象预警预报和综合防灾减灾等领域。但有流言称这是一颗运行在同步轨道上的<a href="https://www.nasaspaceflight.com/2020/10/long-march-3b-lofts-gaofen-13/">光学侦察卫星</a>。<p>
+➜风能和太阳能公司市值超过埃克森美孚
+https://www.solidot.org/story?sid=65775	23861
+全球最大的风能和太阳能供应商 NextEra 市值<a href="https://finance.yahoo.com/quote/NEE?p=NEE&amp;.tsrc=fin-srch"> 1483 亿美元</a>，<a href="https://www.msn.com/en-us/money/markets/nextera-now-more-valuable-than-exxon-as-clean-power-eclipses-oil/ar-BB19NOIJ">超过</a>了曾经全世界市值最高的石油巨头埃克森美孚的 <a href="https://finance.yahoo.com/quote/XOM?p=XOM&amp;.tsrc=fin-srch">1468 亿美元</a>。NextEra 通过下注可更新能源尤其是风能而成为世界上市值最高的公用事业公司，因为电动汽车的流行和应对气候变化的紧迫性埃克森美孚则走到了相反的方向。NextEra 去年底拥有 18 GW 的风力和太阳能发电场，它还在继续扩张，已签署了 12 GW 的可再生能源合同。它的股价今年上涨了 20% 以上。由于疫情打击了对化石燃料的需求，埃克森美孚的股价下跌了 50%，8 月份它被道琼斯工业指数除名。<p>
+➜科学家发现控制长期记忆的关键元素
+https://www.solidot.org/story?sid=65776	33680
+根据发表在《自然》上的<a href="https://www.nature.com/articles/s41586-020-2805-8">一项研究</a>，在记忆巩固过程中，至少有两个不同的大脑网络发生了两个不同的过程——兴奋性网络和抑制性网络。兴奋性神经元参与创建记忆痕迹，抑制性神经元屏蔽背景噪音，使得长期学习发生。研究<a href="http://news.sciencenet.cn/htmlnews/2020/10/446756.shtm">还发现</a>，每个神经元系统都可以被选择性地操纵来控制长期记忆。这项研究回答了一个长期存在的问题，即哪些神经亚型参与了记忆巩固，它对治疗阿尔茨海默病和自闭症等涉及记忆过程改变的疾病的新靶点有潜在的影响。<p>
+➜澳洲研究发现新冠病毒能在手机屏幕和 ATM 等表面最长存活 28 天
+https://www.solidot.org/story?sid=65777	41469
+澳大利亚政府科研机构 CSIRO <a href="https://www.abc.net.au/news/2020-10-12/coronavirus-can-live-on-surfaces-28-days-australian-scientists/12752108">发现</a>，新冠病毒能在手机屏幕和 ATM 等表面最长能存活 28 天。CSIRO 科学家测试了病毒在棉花、纸张、不锈钢、玻璃和乙烯基等表面的存活时间。<a href="https://link.springer.com/epdf/10.1186/s12985-020-01418-7?sharing_token=gZeWNzpBqGqMWWlYBszijm_BpE1tBhCbnbw3BuzI2RPH7jdqQjm4GSWc627bmRViN0gdjUUXa4XmNsLCVxARS5fW6_H-pdK1v6GxwHmr02IpeWQaQhWfdiZqkh8IAAPswG5OMBeJlMvLtQ_xpm3V7AzNehvYyja-6O3X0Zs6-M4%3D">研究结果</a>（PDF）发表在《Virology Journal》 上。此前的研究发现病毒在气溶胶中检测出的时间最长 3 个小时，在塑料和不锈钢表面检测出得时间最长三天。但新研究发现病毒在失去效力前能在绝大部分表面存活  6 到 7 天。他们发现，即使在两周之后仍然有许多活的病毒潜在能传染给人。在玻璃和纸钞等表面一个月后仍然能发现病毒。专家表示，人更容易通过打喷嚏直接接触新冠病毒。但如果有人在触摸脸、鼻或嘴之前接触被污染表面，那么他们仍然可能受到感染。<p>
+➜微软利用商标法破坏僵尸网络
+https://www.solidot.org/story?sid=65778	56194
+微软<a href="https://krebsonsecurity.com/2020/10/microsoft-uses-copyright-law-to-disrupt-trickbot-botnet/" target="_blank">正利用商标法去破坏僵尸网络 Trickbot</a>。Trickbot 感染了数以百万计的计算机，传播勒索软件，它已经成为一个全球性威胁。美国军方的网络战司令部过去几天也在尝试破坏 Trickbot 僵尸网络。微软从弗吉尼亚州的一家法庭获得命令接管 Trickbot 使用的多台服务器。微软递交的民事诉讼文件称，Trickbot 背后的攻击者在感染 Windows 系统过程中对微软的品牌和商标造成了极大的损害。在获得法庭命令之后，微软负责客户安全的副总裁 Tom Burt 称他们切断了 Trickbot 使用的关键基础设施。微软承认此举未必能永久性破坏 Trickbot，攻击者可以通过改变指令控制服务器恢复行动。<p>

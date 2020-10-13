@@ -1,0 +1,1019 @@
+➜人类终于玩上了用土豆驱动的《毁灭战士》
+https://www.yystv.cn/p/7163	7200
+<blockquote class="doc-blockquote">
+<span><strong>无公害的毁灭战士</strong></span>
+</blockquote>
+<p>
+<span>虽然没有任何明文规定，但《毁灭战士》的铁粉仿佛都有一个终极的使命，那就是让这款杰作在一切通电的设备上运行。</span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7163/39332c2cd57960a1aed84c9a9f941019.png_mw680water" width="499" height="274" />
+</p>
+<p>
+<span>在无数技术宅的努力下，无数电子产品变成了《毁灭战士》专用机，冰箱、微波炉、相机、跑步机，甚至是验孕棒，任何你以为物理上不可能、性能上行不通的设备最终都被《毁灭战士》所征服，证明了“性能低下不是无法运行《毁灭战士》的借口”。</span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7163/1b2c701770f14e10817d4e56333e8a23.png_mw680water" width="544" height="328" />
+</p>
+<p>
+而说到性能低下，人们常常用土豆来形容电子产品的绿色无公害，土豆服务器、土豆相机是人们能想到的对这些设备的最烂修饰。
+</p>
+<p>
+“什么都带不动”的土豆和“在什么设备上都可以运行”的《毁灭战士》，简直是天作之合，网友Equalo就进行了一次矛与盾的对决，挑战用土豆来驱动《毁灭战士》。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7163/99c8b908a3c68c6142374556d29fdf11.jpeg_mw680water" width="550" height="413" />
+</p>
+<p>
+土豆之所以可能驱动《毁灭战士》，因为它可以像一些水果一样组成简单的电池，将两种不同活性的金属插入土豆并用导线连接就构成了一个基本的原电池。
+</p>
+<p>
+但土豆电池产生的电压很低，一个土豆大概能提供0.9伏的电压，关键是电流输出非常微弱，几乎测不出示数。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7163/879fa5075c9746dd8fbd8712f9c9c433.png_mw680water" width="962" height="546" />
+</p>
+<p>
+所以如果想让土豆电池驱动《毁灭战士》就必须选择一个额定电流较低的设备。
+</p>
+<p>
+Equalo选择了“树莓派zero”，理论上它只需要100-120mA的电流就可以运行。
+</p>
+<p>
+他首先通过编程让《毁灭战士》可以在树莓派上运行，这是相对简单的一步。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7163/88ac9c2dc6578553c8f9dc0b9dd053d3.png_mw680water" width="982" height="550" />
+</p>
+<p>
+加下来他要想办法用土豆给树莓派供电，理论上只要有足够多的土豆就可以实现，但实际操作中，Equalo需要想出一些方法尽量缩减土豆电池的规模。之前有以色列的研究人员发现，如果将土豆煮熟可以降低其内阻，产生10倍于生土豆的电能。
+</p>
+<p>
+于是Equalo也把土豆煮熟，然后分切成小块，再将小块土豆串联成一个土豆组得到更大的电压，然后再将多个土豆组并联获得更大的电流。经过计算，Equalo他发现一个土豆组大约能够产生1mA的电流，理论上他需要770块土豆才能产生足够的电能，这绝不是一个小工程。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7163/3fd3d4bc098e0700630698dec4075f63.png_mw680water" width="976" height="553" />
+</p>
+<p>
+于是他买了100多斤土豆，将它们全部煮熟并分切，单这个过程就花了他整整一天。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7163/cc69bddb414a52c76668c790264a9da7.jpeg_mw680water" width="1073" height="677" />
+</p>
+<p>
+第二天他才正式开始组装土豆电池，还专门叫来了朋友和妻子一起帮忙，花了两天时间才将770块土豆矩阵连接完毕。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7163/6000328eaa506784ca0d958892d94707.png_mw680water" width="1005" height="564" />
+</p>
+<p>
+然而当他将土豆连接到树莓派上时，主机并没有反应，电视机也没有信号接入，仪器现实土豆电池的电流为80mA左右，不足够让主板启动。
+</p>
+<p>
+这个结果让Equalo很失落，他不想继续增加土豆的数量了，第四天他下班回到家又用万用表测试了电池的电能，发现此时的电流居然达到了120mA，比之前多了不少。
+</p>
+<p>
+Equalo也无法解释其中的原理，可能是土豆内部产生的一些生物反应会随着时间推移影响电池的性能。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7163/ba93994246b76cd7390a23846ebdd249.png_mw680water" width="440" height="470" />
+</p>
+<p>
+但不论因为什么，土豆的电能达到了预期的指标，于是Equalo又尝试启动树莓派，但结果仍然没有反应。
+</p>
+<p>
+此时屋子里的土豆已经逐渐变质，房间里充满了实验的气息。身心俱疲的他陷入了绝望，他不知道到底需要多大的电流才能让主板启动，而屋子里已经呆不住人了。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7163/c285618921ef5f9080b6ef45cd062aaf.png_mw680water" width="554" height="312" />
+</p>
+<p>
+但这次试验花了Equalo 1个月的时间去准备，还有5天的辛苦组装，他不想就此放弃。
+</p>
+<p>
+他想到可以用更加低端的设备尝试一下，比如TI图形计算器，使用普通的电池驱动，只需要15-30mA的电流，这是他最后的希望了。
+</p>
+<p>
+于是他在计算器上安装了《毁灭战士》，然后把土豆接在了计算器上。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7163/2ddccdfb9445d16c95c7deb8cd7dd0bc.gif_mw680" width="400" height="224" />
+</p>
+<p>
+这次计算器成功的打开了，并顺利的运行了游戏。虽然结果没有Equalo最初计划的那么好，但也是首次有人成功用土豆驱动了《毁灭战士》。
+</p>
+<p>
+虽然完成了一项壮举，但Equalo却表示这次体验并不值得，非但没有任何成就感，而且留下了一屋子的烂土豆和严重的心理阴影。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7163/ef0c1229c4dd78c38293241dc742fd4c.gif_mw680" width="400" height="225" />
+</p>
+<p>
+不过Equalo的伟大牺牲至少证实了土豆的可塑性，人类又向第一代可食用服务器迈进了一步。
+</p>
+<p class="picbox">
+<br />
+</p>
+➜美国爆蛋之王的绝技，每招都让人下盘发凉
+https://www.yystv.cn/p/7164	7800
+<blockquote class="doc-blockquote">
+<p class="picbox" style="text-align:left;">
+<span><strong>“爆蛋对观众来说才是笑料，对我而言则是个严肃的事业”。</strong></span><strong></strong>
+</p>
+</blockquote>
+<p style="text-align:center;">
+<strong><span class="r-triangle">1</span></strong>
+</p>
+<p>
+在各种女性防身术中，最常见的招式可能就是对袭击者胯下的进攻了。众所周知，那是男性最脆弱的部分，任何打击都会造成剧烈的疼痛。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/9287665415a458e58e293606389c741b.gif_mw680" width="400" height="242" />
+</p>
+<p>
+然而这种疼痛虽是最可怕的惩罚，却也是人类共同的快乐之源。不知道为什么人们对爆蛋始终有一种执着，看到别人蛋蛋的忧伤，一定会发出由衷的笑声。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/765dc23bb818ca3e9842da7628111a58.gif_mw680" width="400" height="361" />
+</p>
+<p>
+因此爆蛋的动作也经常被用作为一种身体搞笑，只要中招的不是自己，人间就永远是喜剧。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/ed06632a87aea6c79fd6bab5ffe4d63f.gif_mw680" width="400" height="290" />
+</p>
+<p>
+经典喜剧片《举起手来》中，一半的笑料都要感谢太君们的蛋疼。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/2bc6695a91c537e622c3b1b1794632b9.gif_mw680" width="400" height="218" />
+</p>
+<p>
+在外国喜剧片中，胯下中招的桥段更是数不胜数。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/08126bc21846dff110f6d18368eefc2b.gif_mw680" width="400" height="181" />
+</p>
+<p>
+爆蛋秀的观众很轻松，但作为亲历者来说通常都不想经历第二次。然而美国的扎克·戈登却把爆蛋当成家常便饭，每年他都要故意遭受无数次下体打击，因此也被称为爆蛋之王。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/4adbd19822ddaf870a739b956c6b1b31.gif_mw680" width="400" height="234" />
+</p>
+<p>
+扎克·戈登更为人熟知的名字是马男（Horse），这是他给自己取的艺名，我喜欢叫他铁蛋儿。他经常亲自挑战各种姿势的爆蛋，将它们拍成视频供观众欣赏。
+</p>
+<p>
+很多人的卡裆是因为意外，而戈登的爆蛋都经过精心设计。他曾经玩过滑板，练过体操，因此总喜欢挑战高难度的动作，对于他来说每次爆蛋都是一次特技表演。
+</p>
+<p>
+尤其他自称从不带护具，认为这是对爆蛋艺术最起码的尊重。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/87b68356271bdfa3c6651aad6a176fe2.gif_mw680" width="400" height="235" />
+</p>
+<p class="picbox">
+<br />
+</p>
+<p style="text-align:center;">
+<strong><span class="r-triangle">2</span></strong>
+</p>
+<p>
+对于普通男性来说，裆部被踢可能是他们一生中最不想经历的事情，但对于戈登这只能算是热身运动。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/0cf7be78d8cc1ea61ce16dfa635ed390.gif_mw680" width="400" height="235" />
+</p>
+<p>
+戈登的个人最高纪录是在20分钟内被踢63下，还曾正面刚过UFC重量级冠军法布里西奥·温盾的大力撩阴脚。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/daed93f892b96d4e1c429c82a4c31dfc.gif_mw680" width="400" height="235" />
+</p>
+<p>
+他曾被跑酷高手当做落地的缓冲气囊。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/7777a890e0447b544d1b4ae54755cde2.gif_mw680" width="400" height="235" />
+</p>
+<p>
+也曾致敬尚格·云顿空中一字马。经过这样的打击依然能站起来，已经足以证明他的实力。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/2a77fa6a203530359440395f345f60c3.gif_mw680" width="400" height="232" />
+</p>
+<p>
+据戈登说，他小时候和兄弟打闹时，常被打蛋蛋，然而并没有很强烈的感觉，于是发现自己天赋异禀。
+</p>
+<p>
+2007年，他在YouTube发布了自己的第一个视频，遭到弹簧木马无情打击。虽然被击中后他疼得满地乱跑，然而如果换成其他人可能已经进了医院，这时他意识到自己的抗击打能力确实异于常人。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/23398b5d0a06bb729806bf1d710eaa11.gif_mw680" width="400" height="322" />
+</p>
+<p>
+这个视频在YouTube取得了很高的播放量，也开启了他的爆蛋之路。
+</p>
+<p>
+十多年来，戈登和自己的一群沙雕朋友们尝试用了各种新奇的方式测试他的抗击打能力，比如用从天而降的巨大轮胎砸向胯部。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/40caec4ae191a161d90d6f6df9c99cf1.gif_mw680" width="400" height="235" />
+</p>
+<p>
+用安全气囊进行零距离爆破。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/75a5a2eeb06d784a3b95c7b09b53701e.gif_mw680" width="400" height="235" />
+</p>
+<p>
+用吸尘机重重砸在两腿之间。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/e8bf82089339f70edad764e1cf81a5e9.gif_mw680" width="400" height="235" />
+</p>
+<p>
+即使没有他人的帮助，戈登也总能想出蛋疼的主意，比如利用杠杆原理重击自己。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/e65d2b16da549e6ad88dc37352b18ec1.gif_mw680" width="400" height="234" />
+</p>
+<p>
+研发自杀式单杠下法。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/11b5e9dfabab8c91f2a99bb21f469b72.gif_mw680" width="400" height="235" />
+</p>
+<p>
+戈登的走钢丝从没有成功过，因为他无法对这样的爆蛋机会视而不见。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/38bf7a959ecb78270bf18292de3c1a39.gif_mw680" width="400" height="322" />
+</p>
+<p>
+除了单纯的蛮力打击，戈登还尽量想出更多让自己受伤的花样，比如用自行车高速碾压。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/30a14e4d2675f5995c78a49521fea60f.gif_mw680" width="400" height="234" />
+</p>
+<p>
+被空气炮远程狙击。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/d455620a7523364494caab64b4087c14.gif_mw680" width="400" height="234" />
+</p>
+<p>
+他甚至还练出了铁蛋拉车的功夫，单凭下身能牵引轿车甚至直升飞机。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/503f35ef82d37dd57dbf9eba46d6e67e.gif_mw680" width="400" height="235" />
+</p>
+<p>
+对普通人来说，这些爆蛋挑战每一个都可能是毁灭性的，有时即使对于戈登来说都有极大的风险。比如他曾挑战用点45手枪进行蛋与弹对决。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/5495347f750c2ee9caecc0639cc89532.gif_mw680" width="400" height="234" />
+</p>
+<p>
+让别人在自己的腿上练习噼柴。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/1bbf27bb510bca6cb6be6f319ce3e476.gif_mw680" width="400" height="235" />
+</p>
+<p>
+可以说在爆蛋界，戈登是绝对的王者，并不是无人能敌，但难得的是他能坚持下来，融入生活，十几年如一日。有一年的父亲节，他送给老爸的节日礼物，就是踢自己一脚。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/7e73150782ca5515b5abbb0c83876617.gif_mw680" width="400" height="240" />
+</p>
+<p class="picbox">
+<br />
+</p>
+<p style="text-align:center;">
+<strong><span class="r-triangle">3</span></strong>
+</p>
+<p>
+对于戈登，人们提出最多的问题就是，为什么？为什么他要这样一遍遍的虐待自己？
+</p>
+<p>
+戈登的回答也很简单，为了钱。
+</p>
+<p>
+戈登本就是一个好动不好静的人，大学毕业后他曾在杂志社工作过，但很快就对坐办公室感到厌烦。他希望能靠自己的兴趣赚钱，做自己喜欢的事。
+</p>
+<p>
+而他的爱好就是作死，和朋友们耍酷、斗狠。他的经典之作就是从山坡上滚下来，明明摔疼了还要立刻弹起来，装作若无其事的样子，好像是说“根本不疼”。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/744ca05f197ca020536cc17814d45ef6.gif_mw680" width="400" height="235" />
+</p>
+<p>
+事实证明，作死确实可以当成一种职业。
+</p>
+<p>
+2000年MTV电视台曾推出过一个着名的综艺节目《蠢蛋搞怪秀》（Jackass），由约翰尼·诺克斯维尔领衔的一群愣头青们专门表演那些“请勿模仿”的危险动作，故意被水母蛰、用身体撞电风扇、骑着火箭上天，用身体的疼痛来换取观众的笑声。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/b734fa631aa357d360c38f982e1fb87e.gif_mw680" width="400" height="227" />
+</p>
+<p>
+当然节目中也少不了爆蛋的桥段。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/ecef01ea1ad8bb440b03fd8ed9bb1630.gif_mw680" width="400" height="293" />
+</p>
+<p>
+这个节目还曾在PS2上推出过同名游戏《Jackass: The Game》。游戏一开始导演就被抬上了救护车，而主角则临时客串新一季的导演，要为了提升收视率想尽办法折磨队员们的身体，拍出最夸张、疯狂的片子。
+</p>
+<p>
+队员的每次受伤都直接会用X光照片反应在屏幕上，如果能够造成受伤连击还能获得额外奖励，作大死，赚大钱的价值观在这里体现得淋漓尽致。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/19d394042478e6a903561ee7ef0bbd72.gif_mw680" width="400" height="236" />
+</p>
+<p>
+《蠢蛋搞怪秀》这群作死的演员们后来成了名，约翰尼·诺克斯维尔登上了杂志封面，从此成为了电影明星，算是职业作死人的杰出代表。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/4a23b993df44d32ff4491dc0cb93ad6f.jpeg_mw680water" width="340" height="408" />
+</p>
+<p>
+而近年来随着互联网和视频网站的发展，又出现了很多私人作死团体，他们也通过各种危险的活动博得流量，有的吃魔鬼辣椒，有的故意被蛇咬。在众多作死流派中，深耕爆蛋领域的戈登，仍占有一席之地。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/75759789cdab6ef1a1dcdbd222125f93.gif_mw680" width="400" height="234" />
+</p>
+<p>
+有时候戈登的爆蛋视频会被电视台收录进“最惊人的瞬间”之类的节目中，这样他就能获得几百至上千美元不等的版权费，这是他最初的经济来源。
+</p>
+<p>
+后来在2011年，《美国达人秀》的制作人看到了戈登的视频，邀请他参加节目。戈登在舞台上表演了裆口碎大石，技惊四座，最终用独一无二的爆蛋表演杀入64强。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/2c7b772a8eb2596c12762d8f764024aa.gif_mw680" width="400" height="235" />
+</p>
+<p>
+这次公开亮相让戈登获得了一定的知名度，之后他还作为主持人，参与了另一款专门以冒险和作死为主题的节目，还曾几次参加过《美国忍者勇士》的闯关真人秀。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/da0671486febabc9374f1889b682560d.gif_mw680" width="400" height="242" />
+</p>
+<p>
+就这样戈登逐渐被更多人所认识，还接到一些赞助和合作。甚至有人邀请他在自己的婚礼上进行一次不同寻常的表演。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/57d1aac6d30b5a4be492e8c14d1cb354.gif_mw680" width="402" height="231" title="新郎新娘轮流爆蛋" align="" alt="新郎新娘轮流爆蛋" /> <span style="color:#999999;font-size:12px;">新郎新娘轮流爆蛋</span>
+</p>
+<p>
+爆蛋让戈登过上了不错的生活，不过也让他受了不少伤痛。
+</p>
+<p>
+2012年的一次跳楼特辑中，他摔断肋骨，大便失禁。2013年他在一场车祸中险些丧命。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/96d31494d1bc3b5498516c23a6fbe9ad.jpeg_mw680water" width="728" height="515" />
+</p>
+<p>
+在一次表演中，他需要一次性经历多重痛苦打击，走过布满老鼠夹子的木板，然后穿越满是火焰的屏障，被木棍打中两腿之间，被胡椒喷雾洗脸，最后被泰瑟枪电击。在实际的表演中，泰瑟枪出现了故障无法停下，戈登被电了足足20多秒钟才得以解脱。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/a14174c678e8f78d6cfa95b7ee2a8f35.gif_mw680" width="400" height="234" />
+</p>
+<p>
+经常性的摔倒、冲撞使他患有脑嵴液漏，前后进行了多次手术。伤筋动骨更是无数，同时还伴随着情绪抑郁和低落。
+</p>
+<p>
+不过看过他视频的人，最担心的可能还是他的生育问题，但让人惊奇的是，他已经生了两个女儿。这也是他仍不打算停止爆蛋人生的原因，为了让家人和孩子能过上更好日子。
+</p>
+<p>
+他说：“爆蛋对观众来说才是笑料，对我而言则是个严肃的事业”。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7164/2b514e1d92d6b4acdbc71ff41af59e9a.jpeg_mw680water" width="1080" height="720" />
+</p>
+➜【白夜谈】我十分确信我的PS4里有蟑螂
+https://www.yystv.cn/p/7162	28800
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7162/c76848e04cb8426254930c559b7542fd.jpg_mw680water" width="775" height="775" alt="题图 / CaesarZX" title="题图 / CaesarZX" align="" /><span class="picinfo">题图 / CaesarZX</span>
+</p>
+<p>
+<span>蟑螂盛产季已经快过了。但对于人类而言，还远不是宣布胜利的时候。这种毛茸茸、不知廉耻的小生物，即使在秋冬天，也不过只是偃旗息鼓，躲在暗处，等待来年春天，再卷土重来。</span>
+</p>
+<p>
+往年的我，都会坦然接受这个事实，并对偶然相遇到的它们，睁一只眼闭一只眼，恪守互不干涉的条约。
+</p>
+<p>
+但今年我开始慌了，因为我认为——或者说确信，我的PS4里有蟑螂。
+</p>
+<p>
+PS4里会长出蟑螂这件事，已经是老生常谈了，但鉴于可能仍有一些天真可爱，且对这个世界仍抱有希望的人不清楚这个事实，我还是在此强调一下：
+</p>
+<p>
+PS4是蟑螂最好的温床。
+</p>
+<p>
+在早几年，一些因PS4有故障，而将其送去维修的玩家发现了这个情况。这些可怜的玩家们，抱着自己的宝贝游戏机去修理店，认为它不过是出了些可以用科学解释的小毛病。
+</p>
+<p>
+但到了地方拆开一看，发现里边蟑螂尸横遍野。而且修理员见此惨状，还会面不改色拍拍手，云淡风轻地评价，这是常事。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7162/3f4d0a48164e650c9c88c790e8335fff.jpeg_mw680water" width="1000" height="525" />
+</p>
+<p>
+这个消息被这些PS4变成蟑螂乱葬岗的玩家放在了网上。一度在玩家群体内引起恐慌，PS4也因此有了个蟑螂旅馆的别名。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7162/a0180dfce78aa334b7771d04ee9a8ecf.jpeg_mw680water" width="259" height="194" />
+</p>
+<p>
+据一些修理店大佬解释，之所以如此，主要因为PS4的设计非常亲蟑化：它的通风孔更宽，能让蟑螂钻进去；其内部电源也更温暖；大部分人也会将PS4放在地板上：我家大门常打开，开放怀抱等你。
+</p>
+<p>
+如果你是第一次听说这回事，可能会挺崩溃的。没关系，为了不让玩家们陷入绝望，修理店大佬也同时给出了一些避免PS4被蟑螂染指的方法。
+</p>
+<p>
+方法主要分为两条。一是把PS4往高点放，二是尽量确保自己家里没有蟑螂。
+</p>
+<p>
+简单来说，就是要听天由命。
+</p>
+<p>
+我对此早有耳闻，但一直不是很担心。我家不常见蟑螂，偶有也是出没在厨房附近，而我们之间最激烈的冲突，不过是某一天，我光着脚去拿汽水……嗯……
+</p>
+<p>
+而且我在北方。北方比较流行的蟑螂款式，是弱小无害的德国小蠊，和南方蟑螂比起来，它因为不会杀人，逊色很多。
+</p>
+<p>
+没什么大不了的——我这样认为，直到上个礼拜。
+</p>
+<p>
+上个礼拜，我在家里玩《荒野大镖客2》，玩得虎虎生风，十分爽快。但当我放下手柄时，一切快乐都烟消云散：我看到一只蟑螂，在距离PS4 30cm左右的墙面上，徐徐走过。
+</p>
+<p>
+我以为这是偶然。但随后几天，PS4附近的地板上，又陆续有蟑螂坦荡荡路过。
+</p>
+<p>
+当它们抬起触须，瞪了我一眼之后。我马上心如明镜：这是示威，我的PS4已经完了。
+</p>
+<p>
+我的PS4已经完了。它们应该已经在里面开始歌舞升平了。从今往后，我的每次开机，都是在给他们开暖气。
+</p>
+<p>
+之所以这么确信，主要是因为，我的卧室没有什么能让它们藏匿的角落，也没有食物来源。它们能多次出现在这里，八成已经是在PS4里扎了窝。
+</p>
+<p>
+推测出这个情况之后，我马上拿出一个成年人应有的勇气，用出了最英明果断的手段：逃避。
+</p>
+<p>
+在这之后，我没有再开过一次PS4，甚至也没有斗胆透过小小的通风口，去看一眼里面的情形。在网上搜集到的“引诱出蟑螂的方法”，我也并不打算去用。
+</p>
+<p>
+至于把机子拿到修理店去拆机这个途径，也是绝不可能去做的。
+</p>
+<p>
+主要是因为，如果拆了机，发现里面有蟑螂，那这个事情就成真了。但如果我永远不拆，那它将永远是薛定谔的螂，虽然可能在，但也有极大可能不在！
+</p>
+<p>
+所以直到现在，我的PS4仍摆在不远处的桌子上，带着渺茫的不确定性看着我。
+</p>
+<p>
+你可能不理解我的决定，但对我而言，这恐怕是最好的解决方法。我认为这是我进一步成长的体现。成年人必须要学会成为鸵鸟，才能生存下去。
+</p>
+<p>
+而如果你有面对蟑螂的勇气，又像我一样怀疑里面有蟑螂，那我建议你：先试着使用一些引诱出蟑螂的方法，如果不幸见其踪迹，那就直接去维修点拆机。不然某一天，你可能会在打机时闻到烤蟑螂的香气。
+</p>
+<p>
+顺便一提，在写到这里的时候，我又不慎搜到了NS里进小蟑螂的图片。所以我现在也不打算玩NS了。
+</p>
+<p style="text-align:center;">
+<img src="https://alioss.yystv.cn/doc/7162/bccfa7298da18cf84cf8e53b24cb8354.png" width="484" height="448" />
+</p>
+<p>
+最后，尽管上文可能会显得我十分没有勇气。但说实在的，我并不怕蟑螂，只不过是刻骨铭心地恨着他们而已。
+</p>
+➜通过自学，这个女孩创造了《Hades》《晶体管》《堡垒》的视觉宇宙
+https://www.yystv.cn/p/7165	36000
+<p>
+我看了很多对于《Hades》的评价，在游戏玩法和系统之外，出现频率最高的词是美术、配乐、配音。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/6ce229b119f1a0d0531cb9831bd904d3.gif_mw680" width="600" height="338" alt="" /><span class="picinfo"> </span>
+</p>
+<p>
+经过11年的发展，Supergiant开发的游戏已经呈现出一些标志性的特征，其中最重要的便是其独特的视觉风格。
+</p>
+<p>
+他们曾这样形容自己：“正因这种视觉风格的重要性，所以不是任何一个艺术家都能轻松的在这里工作，他们不仅要保留我们过去作品的风格和感觉，而且还需要帮助我们创造出比以往更有活力、想象力和梦幻的世界。”
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/ffd65314c055213b4cd255db52692f0f.jpg_mw680water" width="775" height="1032" alt="Supergiant10周年Jen Zee绘制的贺图" title="Supergiant10周年Jen Zee绘制的贺图" align="" /><span class="picinfo">Supergiant10周年Jen Zee绘制的贺图</span>
+</p>
+<p>
+从Supergiant开发的第一款《堡垒》到现在的《Hades》，能看到的海外媒体对这四款游戏的褒奖无不是首先对艺术风格发出赞叹。对大多数玩家而言，在不了解一款游戏的内核前，美术的确是最重要的初映象。
+</p>
+<p>
+之前我提到了Supergiant Games的艺术总监Jen Zee，正是她缔造出了Supergiant所拥有的这一视觉宝藏。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/a9daf30ec12ab0f8274a501e09bccdc3.jpg_mw680water" width="1000" height="893" alt="" />
+</p>
+<p>
+Jen Zee在西雅图长大，从小就非常喜欢玩游戏，《合金装备》、《恶魔城月下夜想曲》、《最终幻想战略版》是她的最爱。而她也曾表示《罪恶装备》的艺术家石渡太辅是自己最喜欢的游戏开发者之一，似乎也能从作品中感受到一丝《罪恶装备》的影响。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/599b3697a8e54d85f9b0e1d9c68f48fb.jpg_mw680water" width="642" height="362" alt="《罪恶装备》" title="《罪恶装备》" align="" /><span class="picinfo">《罪恶装备》</span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/0891d473de569d4cc9cb07b4dc371aa7.jpg_mw680water" width="775" height="436" alt="《Hades》" title="《Hades》" align="" /><span class="picinfo">《Hades》</span>
+</p>
+<p>
+和大部分游戏公司艺术总监的履历不同，Jen Zee并非科班出身而是自学成才，她2007年毕业于华盛顿大学信息专业，而绘画却是她从小的爱好。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/c61ec626d2952c5b3a0ad5d537557559.jpg_mw680water" width="675" height="900" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/b3b5d8d965f6c4269366268155bb4477.jpg_mw680water" width="624" height="877" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/8cfa20fb690d9f5254cf72bc208784cb.jpg_mw680water" width="616" height="830" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/990343aa94b836ab8b446141c8f8a259.jpg_mw680water" width="682" height="882" alt="日常作品" title="日常作品" align="" /><span class="picinfo">日常作品</span>
+</p>
+<p>
+因为一些原因，Zee于2010年加入了创立初期的Supergiant&nbsp;Games，在这里遇到了志同道合的同事们（资深游戏玩家），并成为了其第一款游戏《堡垒》的唯一2D美术师，负责了所有的原画、UI等工作。
+</p>
+<p>
+精美的手绘、丰富而鲜艳的色彩不仅没有让玩家视觉疲劳，反而每一帧都像幅画，给了大家耳目一新的感觉。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/bd7f2bfdc4fa27638044dee464ccfc10.jpg_mw680water" width="900" height="325" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/e9e0ce13fdb25f55cbc50373982f1f7f.jpg_mw680water" width="1080" height="608" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/e227478466826f7d0cc4e83517262538.jpg_mw680water" width="1074" height="632" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/00fb50591c68a6d9727524d5c7656beb.jpg_mw680water" width="1080" height="608" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/b85b106affe39cfbd9f71f39909d888f.jpg_mw680water" width="633" height="891" alt="《堡垒》原画" title="《堡垒》原画" align="" /><span class="picinfo">《堡垒》原画</span>
+</p>
+<p>
+没有专业理论的束缚，Zee在艺术创作上天马行空，无拘无束，极具辨识度的画风也为Supergiant独树一帜的艺术世界奠定了基础。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/320931030e320e5fa4e254f498b365d5.jpg_mw680water" width="880" height="1080" alt="" /><span class="picinfo"> </span>
+</p>
+<p>
+<span>加入Supergiant前，Jen Zee曾在Gaia Interactive工作了三年，做过概念设计和Flash编程，参与旗下网页游戏《zOMG！》和《街头霸王3：三度冲击 在线版》，并为Fantasy Flight Games做过兼职。</span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/7fdff450d4026c28e15729c822616be0.jpg_mw680water" width="775" height="428" alt="zOMG！" title="zOMG！" align="" /><span class="picinfo">zOMG！</span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/1a0d9ee0c60d0508e470193b9fa8316a.jpg_mw680water" width="775" height="1065" alt="街头霸王3：三度冲击主视觉（非Jen Zee绘制）" title="街头霸王3：三度冲击主视觉（非Jen Zee绘制）" align="" /><span class="picinfo">街头霸王3：三度冲击主视觉（非Jen Zee绘制）</span>
+</p>
+<p>
+在《堡垒》成功发行之后，Zee还兼职参与过《Gone Home》和《骷髅女孩》，都是大家比较熟悉的游戏。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/ca525b0c02d2ac65c5a0a3f54b0d9417.jpg_mw680water" width="500" height="313" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/d0fbae1a89780a619833ecf141653bd2.jpg_mw680water" width="1080" height="675" alt="" />
+</p>
+<p>
+2014年《晶体管》发行，可以看出它和《堡垒》的一些共同点，采用等距视角的方式和霓虹般的色彩依然吸引人，此时团队已经多了一名艺术家。
+</p>
+<p>
+Zee很享受在艺术中创造出一个强大的、令人喜爱的主角的挑战，在创作Supergiant Games世界的特色时也是如此。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/4da04552e7013d7186077b00006ec3f3.jpg_mw680water" width="945" height="1305" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/ddb5542f6f62b2a86219f083bf29c46f.jpg_mw680water" width="1080" height="608" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/4f303b0e8f8c9cec7389870f1f5a040c.jpg_mw680water" width="775" height="437" alt="《晶体管》原画" title="《晶体管》原画" align="" /><span class="picinfo">《晶体管》原画</span>
+</p>
+<p>
+Zee对自己所创作的《晶体管》女主角Red非常自豪：她很强大，很有吸引力，但不是传统电子游戏文化中普遍存在的那种女性性感角色。
+</p>
+<blockquote class="doc-blockquote">
+<p>
+<strong>我个人很喜欢创作女性角色，因为我发现有更多的方法可以让一个女人对各种取向的男人和女人都有吸引力。</strong>
+</p>
+</blockquote>
+<p>
+Zee在接受Nerdy But Flirty创始人Sarah The Rebel采访时谈到她在《晶体管》中的工作时表示。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/556572ed483e62fa1fa4b113716697c5.jpg_mw680water" width="1080" height="605" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/d88c344f67ce3a9b5d111ca7dcf95948.jpg_mw680water" width="1080" height="597" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/8f5af3c3b969edab11d670ba8c9a63c8.jpg_mw680water" width="775" height="518" alt="《晶体管》原画" title="《晶体管》原画" align="" /><span class="picinfo">《晶体管》原画</span>
+</p>
+<p>
+虽然没有明确这种方法，但这对所有媒介的艺术家来说都是一门学问：绘画、写作、电影制作等等。
+</p>
+<p>
+"我发现很难克制对色彩的热爱"，Zee告诉Nerdy-but-Flirty。"但我绝对相信柔和的色调也有其作用，并产生一种情绪，可以为一个更个性化，更严肃的故事服务。"
+</p>
+<p>
+她的创作确实与众不同，但很大程度可以看出，强烈的漫画影响是非常明显的，以及她丰富的绘画技巧和戏剧性的打光给了作品一种引人入胜的电影感。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/4f0b92237f9a27ab83049cc4e0bbc7be.jpg_mw680water" width="1080" height="608" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/1afaf71184bbae795eade34a2a15d8d3.jpg_mw680water" width="1067" height="599" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/e08d205391dd502e83b94c93df1d4af8.jpg_mw680water" width="1080" height="675" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/e37e558d8f9cc9e229eb7e9962345cf3.jpg_mw680water" width="877" height="512" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/8d1c19a641bf7c978a99b2b270c402bc.jpg_mw680water" width="1039" height="593" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/7028a67810494f809d0f5ac2f78f98f4.jpg_mw680water" width="775" height="436" alt="《晶体管》原画" title="《晶体管》原画" align="" /><span class="picinfo">《晶体管》原画</span>
+</p>
+<p>
+为了做出自己想要的那种赛博朋克感而又有独特光芒的《晶体管》，Zee从很多地方找到了创作灵感：“包括以用鲜明的色彩描绘女性人物着称的着名画家John William Waterhouse的作品，他那种柔和的色调与活跃的氛围带给Zee巨大的灵感；
+</p>
+<p>
+奥地利知名象征主义画家Gustav Klimt的作品也是如此，这位艺术家有趣的形状设计和对戏剧性表现的天赋似乎自然而然地与赛博朋克美学合成了一体”。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/6444c4eb31f1f4db9bd9317374ece50a.jpg_mw680water" width="1024" height="747" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/cd6f524a2b113b2eb824b5fd195bd0c7.jpg_mw680water" width="775" height="1094" alt="&copy;John William Waterhouse" title="&copy;John William Waterhouse" align="" /><span class="picinfo">&copy;John William Waterhouse</span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/833ef638c762965db8ab58581bb19319.jpg_mw680water" width="1080" height="1082" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/f0a5062d578dc10ad9eb6949eb3c2bd1.jpg_mw680water" width="775" height="792" alt="&copy;Gustav Klimt" title="&copy;Gustav Klimt" align="" /><span class="picinfo">&copy;Gustav Klimt</span>
+</p>
+<p>
+而在2017年发行的《Pyre》中，Jen Zee一如既往地为角色们设计出了独特的造型，游戏的奇幻设定也让她的风格走向狂野，这一点从人类头上的各种角，或者是两脚站立的动物上就能看出来。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/e28f24b6d95795be6233e60150056ef4.jpg_mw680water" width="1400" height="787" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/fa5c33774a5389aab24bcb6b617094e8.jpg_mw680water" width="775" height="437" alt="《Pyre》插画" title="《Pyre》插画" align="" /><span class="picinfo">《Pyre》插画</span>
+</p>
+<p>
+插句题外话，在这款游戏开发时，Supergiant Games团队总共只有12人，现在《Hades》也不过20人左右，很难想象这是一家成立了11年的成功独立游戏开发商，我甚至闻到了项目分红的金钱味儿…
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/a6f5d75727645e1c21cecd126bd1a3c4.jpg_mw680water" width="1080" height="608" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/733b73c2db34b0486d33e29acb75b085.jpg_mw680water" width="1080" height="608" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/439ecb553aa1b4e2d30a2f57b409dc2e.jpg_mw680water" width="775" height="437" alt="《Pyre》游戏截图" title="《Pyre》游戏截图" align="" /><span class="picinfo">《Pyre》游戏截图</span>
+</p>
+<p>
+虽然美术灵感来源于无数个方面，但Zee说，意大利漫画家Sergio Toppi和美国艺术家Franklin Booth的墨水作品在一开始就在她脑海里存在。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/7e41a3f889b8a5fe339d841f740df8cb.jpg_mw680water" width="775" height="415" alt="&copy;Sergio Toppi" title="&copy;Sergio Toppi" align="" /><span class="picinfo">&copy;Sergio Toppi</span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/58b030db58d286a5e2e046068d13f876.jpg_mw680water" width="775" height="349" alt="&copy;Franklin Booth" title="&copy;Franklin Booth" align="" /><span class="picinfo">&copy;Franklin Booth</span>
+</p>
+<p>
+"我喜欢传统作品的外形设计，并将它们带入我们创作的游戏中，"Zee补充道。
+</p>
+<p>
+"《圣斗士星矢》也是我非常喜欢的——女圣斗士魔铃和莎尔娜营造神秘感的面具是我一直想尝试的一个非常酷的想法。游戏《Pyre》中的祭祀仪式长袍和面具，就是将这个想法应用到游戏中的一个例子。"
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/a7329849af9d0fae6aa27d2b1e95569d.jpg_mw680water" width="775" height="367" alt="《Pyre》插画" title="《Pyre》插画" align="" /><span class="picinfo">《Pyre》插画</span>
+</p>
+<p>
+<br />
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/472b1c3debe957e6de234c38f6fa8445.jpg_mw680water" width="775" height="777" alt="《Pyre》黑胶封面" title="《Pyre》黑胶封面" align="" /><span class="picinfo">《Pyre》黑胶封面</span>
+</p>
+<p>
+直到如今的《Hades》，有不少人说风格像“JOJO”和荒木飞吕彦，虽然目前Jen Zee还没有分享她的灵感来源，但通过前作可以发现，传统艺术、日系游戏动漫和欧美动漫一直较大的影响着她的创作。（Hades美术作品阅读上一篇公主号推送文章）
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/feadce28f190f46b710e70c0c603bb0f.jpg_mw680water" width="1076" height="599" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/b9f95e01c9c9f7051c23edd7b69eecee.jpg_mw680water" width="1077" height="600" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/c5a5418819b17f8baed1d360bbf241c3.jpg_mw680water" width="1077" height="602" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/a302ae739df20ff819cbd8093750bc38.jpg_mw680water" width="1072" height="599" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/6c3a004751b382a6b4d7aa13ac185f1f.jpg_mw680water" width="775" height="433" alt="《Hades》概设" title="《Hades》概设" align="" /><span class="picinfo">《Hades》概设</span>
+</p>
+<p>
+在曾谈起自己创作历程中的灵感和榜样时她表示灵感太多了，无法一一列举，但有一些是能够影响她很久的，包括阿尔丰斯·穆夏、Lawrence Alma-Tadema、John Singer Sargent、吉田明彦、小岛文美、电影《Red Sonja》、柯南、《宇宙的巨人希曼》中的Dolph Lundgren；而自己最大的榜样则是父母和悟空。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/d30d8a6a6d157df293ebd23eeb18b155.jpg_mw680water" width="680" height="846" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/22cc8a3945a7579e54c780c42221a993.jpg_mw680water" width="680" height="1194" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/b518a435de8e5d35027021f66cf42474.jpg_mw680water" width="931" height="502" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/5a7a8f769b6d76258b36ee6435d5272a.jpg_mw680water" width="595" height="945" alt="&copy;Jen Zee 日常作品" title="&copy;Jen Zee 日常作品" align="" /><span class="picinfo">&copy;Jen Zee 日常作品</span>
+</p>
+<p>
+不少玩家对Jen Zee的美术风格赞不绝口，但她这种这种多元化的表现也并非一蹴而就，而是不断练习和积累来的。虽然“不够专业”，但是也让Jen Zee可以不受条条框框的约束，同时在体验更多的爱好、感受丰富的世界、提升更广的眼界后，在艺术上实现了自我提升。
+</p>
+<p>
+或许，不拘泥于理论在艺术上的表现才让创作有了更多的想象空间。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/a9e3a4e54a26463001d404f2c29141bf.jpg_mw680water" width="1068" height="1268" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/000537f0ed74202ed022d1b516768a4e.jpg_mw680water" width="538" height="963" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/45c075c73c88996f570787cbabf41639.jpg_mw680water" width="1043" height="1723" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/3bbaa8ecdb13308598c856a4bb1ae697.jpg_mw680water" width="775" height="582" alt="&copy;Jen Zee 日常作品" title="&copy;Jen Zee 日常作品" align="" /><span class="picinfo">&copy;Jen Zee 日常作品</span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/6cd4e626b650a6146d1fb492bccb19d3.jpg_mw680water" width="727" height="1080" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/a676f8bd730a0b7ff71e5d62d731e6e8.jpg_mw680water" width="775" height="938" alt="&copy;Jen Zee 同人作品" title="&copy;Jen Zee 同人作品" align="" /><span class="picinfo">&copy;Jen Zee 同人作品</span>
+</p>
+<p>
+经历Supergiant四款游戏的开发和接连成功，Jen Zee的美术功不可没，她也已然成为游戏业最有代表性的女性艺术家之一。从业余爱好到职业巅峰，Zee的故事同时也激励着更多向往游戏艺术行业的“业余画手”们。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/24d3d4594e8d2e71c508f1f8c80ebbc0.jpg_mw680water" width="1080" height="2325" alt="" />
+</p>
+<blockquote class="doc-blockquote">
+<p>
+<strong>我会给任何想要进入电子游戏艺术行业的人同样的建议--花时间做你喜欢的事情！多玩电子游戏，画画，练习！如果你创作出优秀的艺术作品，人们会认识到这一点。你只需要把你的作品展现在人们眼前。不要害怕接受与你计划或目标完全不同的工作，你会从每一份工作中学到一些新东西。条条大路通罗马，而我与Supergiant合作的道路绝不是直接的。</strong>
+</p>
+<p style="text-align:right;">
+<strong>——Jen Zee</strong>
+</p>
+</blockquote>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/78993aa1872e1147aa0ed7efec3a31f3.jpg_mw680water" width="1080" height="810" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/22b9bb3deaa6fb2e1f1cef177f91b864.jpg_mw680water" width="680" height="680" alt="" /><span class="picinfo"> </span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/27b8a20276bc85d10f653ad27cbb764b.jpg_mw680water" width="391" height="833" alt="&copy;Jen Zee 日常作品" title="&copy;Jen Zee 日常作品" align="" /><span class="picinfo">&copy;Jen Zee 日常作品</span>
+</p>
+<p>
+那么，有谁告诉我Jen Zee是不是华裔呢？我到底在纠结什么。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7165/7b3ea27a2f26baba38867fd845efb528.jpg_mw680water" width="695" height="382" alt="本文部分参考编译自：Nerdy But Flirty/Gadgets360/illustrators lounge" title="本文部分参考编译自：Nerdy But Flirty/Gadgets360/illustrators lounge" align="" /><span class="picinfo">本文部分参考编译自：Nerdy But Flirty/Gadgets360/illustrators lounge</span>
+</p>
+<p>
+你有特别喜欢的通过自学成为大佬的艺术家吗？评论安利给大家。
+</p>
+<p>
+<div style="text-align:right;">
+<strong><span style="color:#E56600;font-size:14px;">*本文转载自微信公众号“游点艺术（idartist）”，作者猫腩Monet</span></strong>
+</div>
+<strong>
+<div style="text-align:right;">
+<strong><span style="font-size:14px;color:#E56600;">本文所有图片仅为分享交流，不涉及商业用途，版权归属原作者所有，如有疑问请于同名微博私信联系</span></strong><span style="font-weight:normal;color:#E56600;font-size:14px;"></span>
+</div>
+</strong>
+</p>
+➜亚马逊开发的第一款PC游戏，上线不到六个月即宣告夭折
+https://www.yystv.cn/p/7166	40200
+<blockquote class="doc-blockquote">
+<p>
+<strong>“我只想知道我是怎么没的。”</strong>
+</p>
+</blockquote>
+<p>
+在2016年的TwitchCon大会上，当时亚马逊游戏部门发布了三款游戏： 3D的MOBA游戏《突围》（Breakaway），第三人称射击游戏《熔炉》（Crucible），以及带有开放世界与沙盒元素的MMOPRG《新世界》（New World）。<br />
+<br />
+此时的亚马逊正大举进军游戏行业，Twitch直播平台已经被亚马逊收购，亚马逊在大会上发布自家的游戏也是理所当然。<br />
+<br />
+其中，《突围》来自亚马逊2014年收购的Double Helix，并不是亚马逊的亲生子，它2017年起开始封闭测试，因为反响平平而胎死腹中。
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7166/7e843602730541aed7363ed3e80f0f2f.gif_mw680" width="652" height="338" alt="《突围》游戏画面" title="《突围》游戏画面" align="" /><span class="picinfo">《突围》游戏画面</span>
+</p>
+<div style="text-align:left;">
+<span>而免费游戏《熔炉》由亚马逊旗下子公司Relentless工作室开发，是亚马逊游戏部门的第一款PC游戏，可谓根正苗红的长子，理应被亚马逊寄予厚望。</span>
+</div>
+<div style="text-align:left;">
+<br />
+</div>
+<p style="text-align:left;">
+<span>遗憾的是，这位 “长子”也没能摆脱早夭的命运。</span>
+</p>
+<p style="text-align:left;" class="picbox">
+<img src="https://alioss.yystv.cn/doc/7166/b63971b23097572b6521a2e195a63610.png_mw680water" width="775" height="437" alt="《熔炉》游戏截图" title="《熔炉》游戏截图" align="" /><span class="picinfo">《熔炉》游戏截图</span>
+</p>
+<div style="text-align:left;">
+<span>《熔炉》基于射击游戏的框架，为不同的人物设计不同的特色技能与武器装备，这一点很像同时带有射击与MOBA元素的《守望先锋》，但《熔炉》要比《守望先锋》更加MOBA。</span>
+</div>
+<div style="text-align:left;">
+<br />
+</div>
+<div style="text-align:left;">
+<span>玩家需要通过击杀野怪获取团队经验值，升级角色属性、技能与武器装备；或者占领地图上的特定要点，获得增益效果。</span>
+</div>
+<div style="text-align:left;">
+<br />
+</div>
+<p style="text-align:left;">
+<span>游戏有三种玩法模式：双排大逃杀、8v8据点战，以及官方力推的4v4占领战“虫巢之心”：两支队伍出生在一张大地图上，狩猎在随机位置出生的虫巢，率先取得三个虫巢之心的队伍取得胜利。</span>
+</p>
+<p style="text-align:left;" class="picbox">
+<img src="https://alioss.yystv.cn/doc/7166/253cc2f89dfec0e5a55c88e29cacb457.gif_mw680" width="320" height="180" alt="" /><span class="picinfo"> </span>
+</p>
+<div style="text-align:left;">
+<br />
+</div>
+<div style="text-align:left;">
+<span>听起来很诱人，但作为一款“缝合”游戏，《熔炉》缺乏超越其他前辈的爆点。</span>
+</div>
+<div style="text-align:left;">
+<br />
+</div>
+<p style="text-align:left;">
+<span>事实上，除了《守望先锋》独占鳌头，这类同时带有射击与MOBA元素的游戏经常受到玩家冷遇。其中，Epic的《虚幻争霸》（Paragon）2018年便宣布关服；Gearbox的《为战而生》（Battleborn），从收费买断变为免费游戏后，日活玩家数仍然不足一千，不得不在2017年就停止更新，预计明年1月停止运营。</span>
+</p>
+<p style="text-align:left;" class="picbox">
+<img src="https://alioss.yystv.cn/doc/7166/5a5812ed17996065dc99e7872c69923d.jpg_mw680water" width="743" height="420" alt="《为战而生》游戏截图" title="《为战而生》游戏截图" align="" /><span class="picinfo">《为战而生》游戏截图</span>
+</p>
+<div style="text-align:left;">
+<span>《熔炉》的开发团队了解市场的动向，根据外媒Wired的报道，他们在2018年就想过蹭大逃杀游戏的热度上线游戏，可惜遭到了亚马逊高层的强烈反对。</span>
+</div>
+<div style="text-align:left;">
+<br />
+</div>
+<p style="text-align:left;">
+<span>这一拖就是两年，《熔炉》于今年的5月21日姗姗来迟，并迅速遭遇了口碑上的滑铁卢。Steam上仅有43%的玩家给出了好评，剩下的差评几乎覆盖了游戏的方方面面：画面差、优化差、服务器质量差、地图太大、移动太慢、打击感太烂、平衡性不佳、没有语音聊天功能、没有值得重玩的游戏内容……</span>
+</p>
+<p style="text-align:left;" class="picbox">
+<img src="https://alioss.yystv.cn/doc/7166/b3cd789fda7d6958cd5076bc1b856e70.png_mw680water" width="775" height="426" alt="大多数玩家从非Steam渠道获取《熔炉》，他们的评测未被记录在此" title="大多数玩家从非Steam渠道获取《熔炉》，他们的评测未被记录在此" align="" /><span class="picinfo">大多数玩家从非Steam渠道获取《熔炉》，他们的评测未被记录在此</span>
+</p>
+<p style="text-align:left;" class="picbox">
+<img src="https://alioss.yystv.cn/doc/7166/dbd265387224f3aea633104d6a8233ab.png_mw680water" width="614" height="222" alt="筛选所有评测得到的结果" title="筛选所有评测得到的结果" align="" /><span class="picinfo">筛选所有评测得到的结果</span>
+</p>
+<p style="text-align:left;">
+<span>玩家的评价不一定客观，但《熔炉》确实存在太多问题，像是未经测试打磨就匆匆上架的半成品。</span>
+</p>
+<p style="text-align:left;" class="picbox">
+<img src="https://alioss.yystv.cn/doc/7166/6d4c9aeff8d93a2882a51a6df8a41082.png_mw680water" width="962" height="723" alt="" /><span class="picinfo"> </span>
+</p>
+<p style="text-align:left;">
+<span>结果开发团队真的把《熔炉》当成半成品，送回熔炉重造了。7月1日，《熔炉》从Steam平台下架并转为Beta封闭测试，之前没有从Steam平台免费领取游戏的玩家，除非去亚马逊官网申请一份测试邀请，否则无法进入游戏。</span>
+</p>
+<p style="text-align:left;" class="picbox">
+<img src="https://alioss.yystv.cn/doc/7166/ea113d86d0e3199acb1f1550a9aea6d1.png_mw680water" width="751" height="444" alt="开发团队7月1日的更新公告" title="开发团队7月1日的更新公告" align="" /><span class="picinfo">开发团队7月1日的更新公告</span>
+</p>
+<div style="text-align:left;">
+<span>众所周知，一个游戏上线的正常操作，是先封闭测试找出问题，再公测试水，最后才正式发布；《熔炉》却反其道而行之，我们不知道是谁下的决策，个中缘由更是无从知晓。</span>
+</div>
+<div style="text-align:left;">
+<br />
+</div>
+<p style="text-align:left;">
+<span>10月9日，开发团队又突然发布公告，正式下达了《熔炉》的死亡判决：停止对《熔炉》的继续更新，在最后的游戏测试与社区活动后逐步关停匹配系统，预计在2020年11月9日彻底关闭服务器。</span>
+</p>
+<p style="text-align:left;" class="picbox">
+<img src="https://alioss.yystv.cn/doc/7166/79adbb2ee26c753bb0f5542d6d9291c2.png_mw680water" width="727" height="819" alt="开发团队10月9日的更新公告" title="开发团队10月9日的更新公告" align="" /><span class="picinfo">开发团队10月9日的更新公告</span>
+</p>
+<div style="text-align:left;">
+<span>《熔炉》之死，就是笔煳涂账，很难说清是哪一方的过错，可能是单纯的生不逢时，可能是玩家们的口诛笔伐让游戏蒙尘，也可能是高层管理的牵制让开发团队畏缩不前。</span>
+</div>
+<div style="text-align:left;">
+<br />
+</div>
+<p style="text-align:left;">
+<span>至少在剩余的忠实玩家眼中，《熔炉》的开发团队似乎不应背锅。他们一直在吸取玩家意见为游戏添加新内容，如果《熔炉》不死，说不定还能作为下一个《无人深空》浴火重生。</span>
+</p>
+<p style="text-align:left;" class="picbox">
+<img src="https://alioss.yystv.cn/doc/7166/41defb87e9e3580a856a4f1120c38467.png_mw680water" width="740" height="645" alt="开发团队9月23日的部分更新公告" title="开发团队9月23日的部分更新公告" align="" /><span class="picinfo">开发团队9月23日的部分更新公告</span>
+</p>
+<p style="text-align:left;" class="picbox">
+<img src="https://alioss.yystv.cn/doc/7166/c36aef7aeeb543c07ee09b113b2ff7be.png_mw680water" width="675" height="560" alt="死亡判决发布前一周，开发人员仍在细心回复玩家提供的更新意见" title="死亡判决发布前一周，开发人员仍在细心回复玩家提供的更新意见" align="" /><span class="picinfo">死亡判决发布前一周，开发人员仍在细心回复玩家提供的更新意见</span>
+</p>
+<p style="text-align:left;">
+<span>无论如何，逝者已去，而生者仍要继续前进。亚马逊游戏部门还剩下一位名叫《新世界》的次子，《熔炉》的开发人员与资源，都将投入《新世界》的开发。</span>
+</p>
+<p style="text-align:left;" class="picbox">
+<img src="https://alioss.yystv.cn/doc/7166/2eaf52c65b27ecad1475dbfbd5cba62e.jpg_mw680water" width="775" height="485" alt="《新世界》游戏宣传图" title="《新世界》游戏宣传图" align="" /><span class="picinfo">《新世界》游戏宣传图</span>
+</p>
+<div style="text-align:left;">
+<span>目前《新世界》已经完成了第一阶段测试，发售日期从今年8月跳票到了明年春天。不知道这是否受到了《熔炉》早夭的影响，但适当的跳票应该能够大大延长《新世界》的寿命。</span>
+</div>
+➜因为未经授权贩售周边，国外女主播被任天堂要求更改网名
+https://www.yystv.cn/p/7167	40500
+<blockquote class="doc-blockquote">
+<strong>我纹身、侵权、搞黄色，但我</strong><span><strong>是个爱宝可梦的好女孩。</strong></span>
+</blockquote>
+<p class="MsoNormal">
+第一眼看见<span>Pokeprincxss</span>，很多人会因为她遍布身体上下的纹身而对她产生某些负面的刻板印象。但是再多看几眼就会发现，这位看似十分社会的大姐头，身上纹的大部分是宝可梦。<span></span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7167/6fe2e859fdd22964b415d34d4a8525cf.jpg_mw680water" width="510" height="681" alt="" />
+</p>
+<p class="MsoNormal" style="text-align:left;">
+这位女网红八年前开始使用这个网名，原因是其中带有<span>“Poke”</span>，而《宝可梦》（<span>Pokemon</span>）给了她一个难忘的童年。<span></span>
+</p>
+<p style="text-align:center;" class="picbox">
+<img src="https://alioss.yystv.cn/doc/7167/11110710b2b5dc27f6b8fa398440e582.jpg_mw680water" width="539" height="681" alt="粉丝为她绘制的同人图 图源Instagram@nicoleleblond" title="粉丝为她绘制的同人图 图源Instagram@nicoleleblond" align="" /><span class="picinfo">粉丝为她绘制的同人图 图源Instagram@nicoleleblond</span>
+</p>
+<p class="MsoNormal">
+可最近，因为未经授权贩卖宝可梦周边，任天堂法务部气势汹汹地找上门来，要求她彻底改掉这个带有<span>“Poke”</span>的网名。
+</p>
+<p class="MsoNormal">
+现在她以<span>Digitalprincxss</span>的用户名继续活动，人气倒是丝毫未减，其<span>TikTok</span>账号依然保持着<span>190</span>万的粉丝数，<span>Twitch</span>直播平台也仍有超过<span>5</span>万名关注者。<span></span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7167/9cea19734bd83b6bceb3fbefcecd0822.png_mw680water" width="770" height="729" alt="Digitalprincxss的TikTok页面" title="Digitalprincxss的TikTok页面" align="" /><span class="picinfo">Digitalprincxss的TikTok页面</span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7167/c414b1605aaed790b87e27fd2749d8fc.png_mw680water" width="770" height="545" alt="Digitalprincxss的Twitch页面" title="Digitalprincxss的Twitch页面" align="" /><span class="picinfo">Digitalprincxss的Twitch页面</span>
+</p>
+<p class="MsoNormal">
+最早，出于对宝可梦的热爱，<span>Pokeprincxss</span>靠着上传宝可梦的相关视频，积累了一定的人气，随即成为了一名全职主播。除了宝可梦，她也在各个平台上传<span>Cosplay</span>、纹身教程、游戏实况与生活片段。
+</p>
+<img src="https://alioss.yystv.cn/doc/7167/a5fe7e0d1001e2e66783a796e8484689.png" width="600" height="390" alt="她在推特上传的生活照" title="她在推特上传的生活照" align="" /><span class="picinfo">她在推特上传的生活照</span>
+<p class="MsoNormal">
+同时，她也是一名成人主播。根据她的粉丝所述，她有一个只有关注者才能访问的页面，专门提供色情内容；而在大型成人内容网站<span>Pornhub</span>上，也能搜索到她的账号，不过所有内容都要付费观看。
+</p>
+<div style="text-align:center;">
+<img src="https://alioss.yystv.cn/doc/7167/ef81e9429c4320ed2fc9cda34f6d0d71.png" width="506" height="685" alt="" />
+</div>
+<p class="MsoNormal">
+基于高涨的人气，她开始着手准备商业化事宜。在父亲的帮助下，她通过提供在线法律服务的<span>Legalzoom</span>网站申请注册了属于自己的“<span>Pokeprincxss</span>”商标。
+</p>
+<p class="MsoNormal">
+半年前，她开始贩卖带有或模仿宝可梦元素的相关周边，按照<span>Pokeprincxss</span>本人的说法，当时她很傻很天真，只想全身心地投入进去，看到网上好多人都在这么干，因此并不知道这种行为是违法的。<span></span>
+</p>
+<p class="picbox">
+<img src="https://alioss.yystv.cn/doc/7167/8e14fde9cc08c8c705171bfd3714a5a8.jpg_mw680water" width="770" height="399" alt="周边主要以T恤为主" title="周边主要以T恤为主" align="" /><span class="picinfo">周边主要以T恤为主</span>
+</p>
+<p class="MsoNormal" style="text-align:left;">
+两个月前，<span>Pokeprincxss</span>收到了<span>Legalzoom</span>的邮件。邮件中提到，<span>Pokeprincxss</span>贩卖与宝可梦相关的周边并以此盈利，不构成任天堂作品的合理使用，涉嫌侵犯着作权；同时亦会让人产生<span>Pokeprincxss</span>与宝可梦官方存在合作关系之类的误解。<span>&nbsp;</span>
+</p>
+<p class="MsoNormal" style="text-align:left;">
+为此，<span>Pokeprincxss</span>不得继续贩卖相关周边，禁止使用<span>Pokeprincess</span>商标，禁止使用<span>Pokeprincess</span>及任何带有宝可梦元素的网名（比如读音相似的<span>Pokiprincess</span>）进行任何营利行为，并且需要向任天堂上缴贩卖周边的所得。<span>&nbsp;</span>
+</p>
+<p class="MsoNormal" style="text-align:left;">
+<span>Pokeprincess</span>平静地接受了邮件的所有要求。她找了一位律师帮助她与任天堂商议重新注册商标的事宜，并决定把自己除了<span>Pornhub</span>之外所有平台的账户名称改为<span>Digitalprincxss</span>。她并不担心与这个新名字挂钩的《数码宝贝》（<span>Digitalmon</span>）找上门来，毕竟她并没有制作其相关内容的打算。<span></span>
+</p>
+<div style="text-align:center;">
+<img src="https://alioss.yystv.cn/doc/7167/7f1f033ea68c245559262a1d984ea826.jpg" width="680" height="383" alt="" />
+</div>
+<p class="MsoNormal" style="text-align:left;">
+<span>10</span>月<span>9</span>日，<span>Digitalprincxss</span>在<span>Youtube</span>上传视频，亲自出面解释事件的原委。
+</p>
+<p class="MsoNormal" style="text-align:left;">
+她承认自己“搞砸了”（<span>fucked up</span>）。但她认为，很多人都在做着与自己类似的事情，要么网名里带有<span>poke</span>或<span>poki</span>，要么未经授权贩卖带有任天堂游戏元素的周边，任天堂却偏偏找到了妙蛙种子身上纹的自己，这多半是因为自己经营的成人内容，与任天堂的合家欢形象不符。
+</p>
+<p class="MsoNormal" style="text-align:left;">
+当然，她也在视频中解释道，她并不想作为一名牺牲者发出抱怨，只是提醒人们不要像她一样犯下相同的错误。她还补充道，<span>“</span>我仍然爱任天堂，会永远支持他们<span>”</span>，“能被缔造了自己童年的一批人关注，是很酷的事情”，甚至呼吁粉丝去买<span>Switch</span>。
+</p>
+<p class="MsoNormal" style="text-align:left;">
+她三天后发布的抽奖送<span>Switch</span>主机活动，证明了她的热爱所言非虚。<span></span>
+</p>
+<p class="picbox" style="text-align:left;">
+<img src="https://alioss.yystv.cn/doc/7167/218586e9a41cfd7adbd89c9132ad716e.png_mw680water" width="598" height="498" alt="" />
+</p>
+<p class="MsoNormal">
+<span>Digitalprincxss</span>的故事绝非个例，前不久，我们刚报道过任天堂叫停了一部开发八年之久的桃花公主黄油。任天堂法务部屡屡得手，似乎已经不能算作新闻，我们更记不清这是他们今年的第几次重拳出击。
+</p>
+<p class="MsoNormal">
+如何以合适与合理的方式输出对任天堂的热爱，是包括任天堂与任粉在内，所有人都应重新思考的问题。
+</p>
