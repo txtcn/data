@@ -1530,3 +1530,74 @@ http://www.woshipm.com/newretail/4216130.html	44114
 <p>&nbsp;</p>
 <p>本文由 @美股研究社 原创发布于人人都是产品经理，未经许可，禁止转载</p>
 <p>题图来自 Unsplash，基于 CC0 协议</p>
+➜Axure教程：文件上传、自动产生列表
+http://www.woshipm.com/rp/4216237.html	44187
+<blockquote><p>编辑导读：文件上传是很多网站常见的一个基础功能，本文跟大家分享，如何用Axure完成文件上传并自动产生列表效果，作者从预览图，到所需原件，再到操作步骤都一一展开了分析，并对过程中需要注意的问题进行了介绍，希望对你有所启发。</p></blockquote>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/10/vQWzUg0aDFdEmF5vxCOP.jpg" alt="" width="900" height="420" /></p>
+<p>根据流行的前端视觉框架，制作了这个文件上传的元件，重构了交互关系，所以可定制化程度变高。</p>
+<p>Axure本身是带一个文件上传的文本框的，只要在页面中放置一个文本框，并且把这个文本框的输入类型变成“文件”，它就自动变成了可以选择文件上传的表单元素，但是真的很简陋，无法适应视觉个性化定制，交互方式也有限。</p>
+<p>现在前端视觉框架越来越成熟，很多公司会根据框架创建自己的视觉规范，并让设计师在Axure当中直接制作高保真原型，从而减少设计师与开发之间的沟通成本。所以我根据流行的前端视觉框架，制作了这个文件上传的元件。</p>
+<p><img data-action="zoom" class="aligncenter" style="color: #666666;" src="http://image.woshipm.com/wp-files/2020/10/Atw18UjLi5c4IRYDft12.jpeg" /></p>
+<p>在开始制作前，你可以看一下效果预览：<a href="https://axhub.im/ax9/e354386a7e0f9a92/#g=1" target="_blank" rel="noopener">https://axhub.im/ax9/e354386a7e0f9a92/#g=1</a></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/wrA2le47cT4PhHq6VfqB.gif" width="560" height="245" /></p>
+<p>接下来我们一步一步的实现这个功能：</p>
+<h2>第一步：放置元件</h2>
+<p>首先在页面上放置5个元件：<strong>1个文本框，3个矩形，1个中继器。</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/vvwsHl54BmqslSzNNyIB.png" width="536" height="321" /></p>
+<p>其中的文本框记得设置输入类型为“文件”。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/7nfwoY4M9i1RdEFldVa8.png" /></p>
+<h2>第二步：设置ID</h2>
+<p>给这几个元件设定ID，分别是：fileButtonChose、fileButtonClick、fileButtonPath、fileButtonList。</p>
+<p>图中蓝色的按钮是主要交互按钮，默认不需要设置ID。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/XH2Bn9AZrLl2NellXr6x.png" width="513" height="305" /></p>
+<h2>第三步：添加交互动作</h2>
+<p>接下来我们开始给每一个元件添加交互动作</p>
+<h3>1. fileButtonChose ，文本框</h3>
+<p>主要脚本代码写在了这个元件上，通过Javascript模拟了文件选择动作，并把文件名推送给过渡元件。选中文本框以后，添加一个“隐藏”交互动作，当隐藏时，打开链接到URL，然后把javascript代码贴进去。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/vxGWQrLEIeA44pwoFz73.png" width="545" height="423" /></p>
+<p>代码在这里，可以直接拷贝粘贴</p>
+<p>如果你是用的是Axure8，可能会出bug，这时候尝试修改children()[<span class="code-snippet__number">1</span>]；files[0]；这两个数组的序号，原因是Axure不同版本生成的HTML结构有差异，导致javascript对象指针错误。</p>
+<pre class="code-snippet__js"><code><span class="code-snippet_outer">javascript:
+</span></code><code><span class="code-snippet_outer"><span class="code-snippet__keyword">var</span> fileButtonSelect=$(<span class="code-snippet__string">"[data-label='[[This.name]]']"</span>).children()[<span class="code-snippet__number">1</span>];
+</span></code><code><span class="code-snippet_outer">$(<span class="code-snippet__string">"[data-label='[[This.name]]']"</span>).change(
+</span></code><code><span class="code-snippet_outer">  <span class="code-snippet__function"><span class="code-snippet__keyword">function</span>()</span>{
+</span></code><code><span class="code-snippet_outer">    <span class="code-snippet__keyword">var</span> fileButtonName=fileButtonSelect.files[<span class="code-snippet__number">0</span>].name;
+</span></code><code><span class="code-snippet_outer">    $(<span class="code-snippet__string">'[]pspan'</span>).html(fileButtonName);
+</span></code><code><span class="code-snippet_outer">    $(<span class="code-snippet__string">"[data-label='fileButtonClick']"</span>).click();
+</span></code><code><span class="code-snippet_outer">  }</span></code><code><span class="code-snippet_outer">);</span></code></pre>
+<h3>2. fileButtonClick，矩形</h3>
+<p>这是一个过渡的元件，因为javascript无法直接操作中继器，所以使用一个元件来触发中继器的动作。</p>
+<p>添加交互单击时使 中继器fileButtonList添加一行数据。</p>
+<p>这里使用了一个局部变量[[LVAR1]]，变量值是fileButtonPath的元件文本</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/6e4qmOGjzhpKfhER4UiP.png" width="581" height="230" /></p>
+<h3>3. fileButtonPath，矩形</h3>
+<p>这是一个过渡的元件，因为javascript无法直接生成原生交互可以使用的全局变量，所以使用一个元件文本来缓存文件名。</p>
+<p>这个元件不需要添加交互。</p>
+<h3>4. 点击上传，矩形</h3>
+<p>这是可自定义视觉样式的主触发按钮。</p>
+<p>“点击上传”按钮添加一个单击动作，填入代码</p>
+<pre class="code-snippet__js"><code><span class="code-snippet_outer"><span class="code-snippet__selector-tag">javascript</span><span class="code-snippet__selector-pseudo">:fileButtonSelect.click()</span>;</span></code></pre>
+<p>并且设定移入移出的交互，切换fileButtonChose文本框的隐藏状态。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/T4qXE79ohuHxyFFrY6HB.png" width="593" height="349" /></p>
+<h3>5. fileButtonList，中继器</h3>
+<p>中继器的内部元件的结构是这样的，其中有一个ID为fileName的矩形，作为文件名的展示，另外还有一个删除按钮，可以对中继器的内容列表进行操作。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/IS9XqUP4CV739y0lGvSA.jpeg" width="590" height="332" /></p>
+<p>整体来看是这样：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/TINUjomABhGxtTx8qt3J.jpeg" width="522" height="97" /></p>
+<p>中继器fileButtonList的数据表暂时只做了一个字段PicName，你可以根据需求增加。</p>
+<p>制作完中继器，我们需要添加一个交互动作，作为加载时给内部的fileName做文本展示。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/IOYNR4xBpqxYQjIkN8fA.jpeg" width="590" height="369" /></p>
+<p>内部的删除按钮，可以加上这段交互动作</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/KIS3HsfSZCX4MNprIXjj.jpeg" width="594" height="359" /></p>
+<p>到这里，我们基本完成了整个元件的功能制作。</p>
+<h2>创建动态面板</h2>
+<p>通过创建动态面板，把不需要显示的元件隐藏。</p>
+<p>为了让元件看起来更美观，我们可以通过动态面板的可见区域的设置完成这个。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/m0Wub9qiIvyu7nTqxwJf.jpeg" width="600" height="355" /></p>
+<p>这是Axure系列的第一篇文章，文笔和表达方式还不成熟，欢迎大家提建议。</p>
+<p>演示地址中还有一个图片上传的功能，会在下一篇文章介绍。</p>
+<p>请关注我，近期会陆续推送一系列的Axure个性化定制文章，目的是方便大家根据流行的前端框架制定一套与技术效果一致的交互规范与视觉规范。</p>
+<p>&nbsp;</p>
+<p>作者：ELement；公众号：ElementChen</p>
+<p>本文由 @ELement 原创发布于人人都是产品经理，未经作者许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
