@@ -1,0 +1,899 @@
+➜你能买到最快的桌面级SSD：三星980Pro能比几百块的强多少？
+http://www.sohu.com/a/424014512_223764	4890
+<p>[PConline 评测]之前我心心念念的三星980 PRO终于来到我手里了。官方标称连续读取7GB/s、写入5GB/s，什么概念？拷贝一部高清的2GB爱情动作秒传，全高清4K，20GB的也就几秒。三星的PRO系列SSD每一代都能在当时的消费级SSD之中称霸。就比如970 PRO，在当时的消费级PCIe 3.0 SSD市场中说它最牛逼估计也没人反对。</p>
+<p>不过在去年PCIE4.0和X570主板同步推出，一大波搭载群联E16主控的PCIe 4.0 SSD就涌现了出来，技嘉影驰海盗船威刚都有，顺序读取上5G，写入也可以达到4G多，但是4K速度和970 PRO几乎差不多，970 PRO也能在这个PCIe 4.0起步的时间里再当一会王者。不过PRO毕竟是制霸消费级SSD的型号，不拿点真家伙显然不够面子。吃瓜的消费者还是对980 PRO有盼头的，想看看它在PCIe 4.0里能做出怎样的产品。</p>
+<p>但对各位吃瓜群众来说，三星的OEM大船一直都很香，很多人也想着出980 PRO后上OEM，不过980 PRO，你可能真的不用等大船。这里先上这次评测四款产品的CDM 1G图，分别是三星980 PRO，影驰HOF PRO，金士顿KC2500以及浦科特M8V。看不懂，后面再讲，先来讲讲980 PRO。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201012/48f2eee0204645dea53350c67f829a39.png" /></p>
+<p><strong>980 PRO价格掉下神坛，OEM会更香吗？</strong></p>
+<p>玩家对于970 PRO最津津乐道的就是在TLC横行的时期，它依然使用MLC颗粒，但特点就是贵。大家并不是不能接受TLC，就像机械硬盘的SMR、PMR，显卡里的丐版卡和豪华卡，只要你卖得足够便宜，其实消费者都是非常乐意的。</p>
+<p>那这次三星也是如大家所愿，1TB，1899元，比970 PRO便宜了快一千元。就以三星这个品牌，PRO这个名字，还有实测下来这么快的速度，你要说不香，那可能你真的不是它的目标人群。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201012/2775fae8e1c44c4ebc7c73b24bb9966f.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>然后很多玩家关心的OEM版也在某宝有卖了，PM9A1，1TB卖到1999元，各方面参数和980 PRO一样，还不如买官方带质保三年的。当然OEM这东西是出得越久越香的，特别是有大船靠岸的时候，有兴趣的可以做个等等党。</p>
+<p>回到这块产品，主控从Phoenix升级成Elpis，参数太臭太长就不讲了，简单来说就是提速，支持更多IO序列，多并发任务处理能力更加出色了。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201012/b6287e6f29124b7690daafaea36a0115.png" /></p>
+<p>DRAM缓存，一颗1GB的LPDDR4。闪存颗粒是两颗三星的第六代V-NAND，从9x层升级到1xx层，特点就是提速降功耗。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201012/43bcad5e73ba48058b59b5362d17d3fe.png" /></p>
+<p>CDM 1G文件大小，980 PRO各方面数据都非常无敌，不过顺序读取没有到7000MB/s，是不是虚假宣传？官方标称的7000MB/s，其实要看测试情景，队列深度要跑在Q32才可以获得官方标称的数据，旧版的CDM有Q32的选项，7.0.0版本则去掉了这个选项。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201012/e7a51d33b40446a383ef1f7e161fdbb8.png" /></p>
+<p>不过Q32队列深度对我们的使用来说是非常难达到的，日常用的话一般Q1会比较符合，我设置的Q8是用来模拟日常使用的峰值情况，已经比较极限了。不过即使对比Q1,980 PRO的速度也已经完胜在座各位SSD了。</p>
+<p>将大小增加至64GB，980 PRO的速度几乎没变，同样非常快。HOF PRO的顺序QD8读取则出现了较大幅度的掉速。另外4KQD8的读写也出现了不同程度的掉速。 然后是PCIe 3.0旗舰代表KC2500，速度几乎没变化，速度也达到3.0的最高水平。最后是浦科特M8V，速度也差不多，没变化。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201012/1199a712d9d34db588eef55d37709e9b.png" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201012/c4c0189d319049c0b5a719a75a558ec8.png" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201012/a7bc42fcb00946ec90affc9200603101.png" /></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201012/550292f19e744d5c8c2cf2f57bbb50e0.png" /></p>
+<p>四款SSD加大容量后，HOF PRO的CDM表现相对拉胯了一点。后面会继续测试4款SSD长时间的写入速度表现。</p>
+<p>ASSSD我们主要侧重于4K QD1的IOPS读取速度。最快的依然是980 PRO，4K读取可以达到两万多IOPS，随后依次递减，HOF PRO第二，一万八左右，KC2500第三，一万三左右，最后是浦科特M8V，一万。可能大家对这个没个概念，我认为的话7000以上，对游戏，开机这方面影响就很小了。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201012/3f19f3e84b8f49028e270f367739a1e8.png" /></p>
+<p>然后，大家最喜欢看的掉速环节。这个环节最让我意外的是HOF PRO，200GB长度，写入一条直线，速度接近4000MB/s，跟CDM结果完全不一样。再看其它，980 PRO是4000MB/s写入到115GB左右发生掉速，后面是1750MB/s左右。KC2500，速度波动有点厉害，在142GB从2700左右过山车的掉到750。M8V就很稳了，8GB小掉速到400MB，对一个SATA盘来说也就这样了。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201012/11a04a18f4dc42918348ea9410483ddc.png" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201012/f25cc08c62334d9faed159a0e3964230.png" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201012/9de7840c7f194525864007e9c3ab1d5f.png" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201012/b218d1b2976f415f8b64bd63dcfaffca.png" /></p>
+<p>后面把盘塞一半继续测HDTune。980 PRO的缓存容量依然是115GB左右，缓外有小掉速，1500。HOF PRO的速度依旧离谱，我真的不得不用离谱来形容这个盘，167G左右才从4000掉到1000。KC2500就直接不掉速了，一开始就来个最低速度，写入全程750MB左右。M8V就还是那么稳，虽然慢，但是与世无争，平平淡淡才是真。</p>
+<p>最后IOMeter，自定义128KB大小，QD32持续顺序写入半小时测试来测试颗粒真实读写性能。980 PRO是最快写满盘然后直写颗粒的，最后直写颗粒的速度约为2100MB。影驰HOF PRO比较惨，缓存写满后只有500MB写入。最后直写颗粒的速度在960MB左右。KC2500则有两段掉速区间，一段从2800掉到1300左右，第二段则直接掉到700，持续到写满盘为止，颗粒直写速度在1300左右。M8V，非常的安逸，隔壁NVMe打得头破血流，这边还在喝茶看戏。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201012/21484b1951da437396036d2d212c3881.png" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201012/90ce4959f7704e8bb4dce6e9eb92eb03.png" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201012/74724ef5b6a84ee394d9f3a97039bb37.png" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201012/0dc5b64ede6942bbbe7c34c3b8c08ac9.png" /></p>
+<p>在跑IOMeter的时候我顺便记录了一波温度，室温25°C，机箱内两个大热源夹着的情况下，980 PRO最高温度68°C，HOF PRO 71°C，这还是在前者读写速度更快的情况下测得的成绩。然后金士顿这个盘也比较离谱，装着TT定制的散热片，全程温度只有45°C。M8V因为软件读不出数据就没记录了。</p>
+<p>理论数据测完，980 PRO这个盘确实有点东西，先不管我上面说的QD32是不是用得着，也不谈价格，从不同容量测试的4K性能，掉速后的缓外性能以及温度来说，对比现在主流，买得到的PCIe 4.0固态已经是绝大部分胜出了。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201012/4b80f373673a412ba3aba2a41755389b.png" /></p>
+<p><strong>总结：</strong></p>
+<p>980 PRO的性能在现在是不需要质疑的，非常的强，温度看着非常烫，但距离过热保护72°C还有点距离，平时使用大可以放心。</p>
+<p>不过自PCIe 4.0推出之后，大家也非常喜欢去讨论SSD的顺序读写速度，认为这个数就是拿来看的，对实际用来说，除了拷大文件，其他地方没用。一定程度上这句话是没错的，日常使用基本不会碰到拷大文件的情况，游戏读取、下载，甚至你用两块NVMe硬盘对拷资料也基本跑不满SSD的顺序读写速度。就从我们的实测来看，SATA SSD也可以满足流畅的使用体验。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201012/e17fff80bb4445bd8eff2efb139c8a7c.png" /></p>
+<p>不过别忘了，微软自己的技术：Direct Storage，和老黄的RTX 30显卡搭载的私货：RTX IO。</p>
+<p>这两项技术都是通过绕过CPU和内存，直接从硬盘读取数据并让显卡解包渲染，实现游戏载入速度翻N倍的效果。以后的PCIe 4.0固态，除了在生产力上有用，对臭打游戏的你也会有很大的影响。说不定以后的游戏真的就把那个万恶的Loading界面给删掉了。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201012/08040cd980494d2c9a8c9990b19d0a1a.png" /></p>
+<p>这项技术在PS5、Xbox Series X也有体现，但很显然AMD这边全包了。Intel则估计还要憋出自己的Xe显卡才肯大力推广这项技术。因为现在桌面端要用上技术，只能AMD+N卡，自己的PCIe 4.0平台还要等下年。所以，我认为最快下年，买PCIe 4.0的产品，对玩家而言会有真正的实用意义，也不用像刚出PCIe 4.0固态那样调侃，买回去就光看跑分发呆了。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201012/184392c51d0f4effa9d1d82fd39a1fe5.png" /></p>
+<p>对了，980 PRO其实已经不是现在理论最快的消费级SSD了，搭载了IG5236主控的威刚S70号称读取速度超7.4G，写入速度也达到6.4G，比980 PRO还要快不少。不过东西刚发布，到时拿到了再和980 PRO碰一碰。</p>
+➜舒尔AONIC 215评测：经典中的经典款 升级为真无线后更好用了
+http://www.sohu.com/a/424006747_223764	6872
+<p><strong>[PConline 评测]</strong>在不同的时代中都能彰显价值的特质产品出现，而且这些特质一直都被消费者所需要着，并且为其买单，这便是经典。而在随身音频硬件领域，每一个产品类别都会有这样的经典款产品。以入耳式耳机为例，舒尔SE215就是经典中的佼佼者。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201012/01d0085157ad4d44b59394360bef6998.jpeg" max-width="600" /></p>
+<p>消费市场和消费人群是一直都在变化之中，经典固然有自己独特的韵味，但如果不寻求变化，也会逐渐被人遗忘。我们今天拿到的就是经典产品的进化款——舒尔AONIC 215。</p>
+<p><strong> 还是原滋原味的舒尔</strong></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201012/20025d1f5cce472cbc886005fc638ed9.jpeg" max-width="600" /></p>
+<p>与之前215采用的简单的开窗式包装大有差别，AONIC215采用的是圆形礼盒包装的形式，底部还印有TRUE WIRELESS（真无线）和蓝牙5.0 logo。从第一眼的观感来看，AONIC 215包装明显奢华了很多。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201012/2c01579d68774b6bab6c107232eb75f4.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>打开圆形礼盒包装，可以看见AONIC 215的本体和便携收纳包镶嵌在缓冲海绵里。耳机本体可以支持长达 8 小时聆听时间，标配的便携包还可提供三次充电，电池续航时间共计可以长达 32 小时。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201012/1ff1f4c52c754314870b9f1cc9ddaccc.jpeg" max-width="600" /></p>
+<p>我们就可以看到AONIC 215的本体。与之前的有线版和蓝牙版最明显的就是线材连接部分，而其SE215腔体部分实现完美继承。和有线版相同，AONIC 215仍然采用了MMCX接口，更换线材可以轻松让耳机变成一款有线耳机。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201012/36cb017e274c47d48feeff24ba58761d.jpeg" max-width="600" /></p>
+<p>MMCX接口是舒尔一大特色，大家可以单独选购RMCE-TW1真无线转换器，通过该接口就可以轻松将任何现有可拆卸式舒尔隔音耳机（包括AONIC 3 、4、 5 耳机及SE系列耳机）转换为真无线耳机。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201012/8b26575858834cc785684b64c2096a61.jpeg" max-width="600" /></p>
+<p>与很多品牌直接重构新产品不同，AONIC 215腔体和发声单元没有改变保证了原滋原味，依旧是拥有白，蓝，黑和透明四色可选，我拿到手的是透明色版本，可以清晰看到内部构造。而为了实现真无线，麦克风、无线模块、电池和按键都集中在了外接“转接器”中。按键支持短按实现暂停/播放功能，长按实现开关机操作。</p>
+<p>至于配件方面，除了一系列的纸质文书和硬质收纳包之外，还提供了为数不少的套子。从回弹效果满分，带有滤网的海绵套，再到常见的硅胶套，配上耳垢清洁棒，基本上能够满足日常携带和使用的需求。</p>
+<p><strong>主观试听佩戴体验 高解析力带来的享受</strong></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201012/f1b0f8eda4454e63b24f7f97ddfd6050.jpeg" max-width="600" /></p>
+<p>在试用环节中，首先让我们来测试舒尔AONIC 215的连接稳定性。我们使用了多款安卓手机、苹果iPhone XR以及PC电脑和笔记本进行了连接测试，发现 AONIC 215都能够很快连接上设备并能够正常识别，在运动的时候也不容易产生信号断断续续的情况。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201012/a163b2e7da3442a8946b0675ac24f170.jpeg" max-width="600" /></p>
+<p>一脉相承的挂耳式设计，使得佩戴稳固，即使在高强度的活动中，也可确保佩戴稳固舒适，适合长时间佩戴。挂耳式设计也为佩戴者提供了更灵活舒适且更为贴合的佩戴方式，不用担心不同用户耳朵耳道的差异，适合更为普遍的大众。</p>
+<p>当然这样的设计也有一些可以进一步完善的地方，两个无线模块还是有一些小分量的，日常通勤行走不会有明显的感受，但当偏头或者大幅度运动的时候，可以感觉到两个“小摆锤”在小幅度的不规则晃动。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201012/27a2b865ddb84904aa89b17e797b56d9.jpeg" max-width="600" /></p>
+<p>耳机自带环境音模式，可以在耳机的黑色按钮（按两下实现环境音的开启和关闭），也可以在APP上进行开启关闭操作，可以隔绝外界声音，或者不隔绝外界声音。比方说在咖啡店、地铁上，不想听见外部环境的各种声音干扰的时候，关闭环境音就可以听不到周围的声音。而当你需要与人短暂交谈的时候，例如购票、点餐也不必要麻烦的取下耳机，直接开启环境音就能无碍交流。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201012/6d3da3a874224f2e8276a5abfaf876bd.jpeg" max-width="600" /></p>
+<p>耳机还带有“高品质耳机放大器”，并支持多款编解码器（ 包括Qualcomm® aptX™、AAC和SBC）。 高品质耳机放大器类似于一个插件，可以提供更好的音质体验，其他耳机的扩大器可能是集成的，这是一个单独的插件。高品质耳机带来了高保真的音质,这意味着舒尔可以让耳机在无线的形态下实现媲美传统CD的声音品质。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201012/46c15b82ff964fc7add9604f91171c7a.jpeg" max-width="600" /></p>
+<p>谈到音质就避不开产品的设计理念，AONIC 215真无线隔音耳机凭借音乐人数十年的经验而设计，其设计理念与音乐人使用的舞台入耳式监听相同。同时Adam Levine作为享誉全球的音乐人也与SHURE合作了AONIC系列的发布与市场活动，看来对这款产品也是相当认可的。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201012/01d0085157ad4d44b59394360bef6998.jpeg" max-width="600" /></p>
+<p>在AONIC 215试听体验上，声音线条感清晰。高频放开，拥有不错的延展性。低频下潜虽然称不上优秀，但因为有相当不错的解析力加持，会收的非常干净，不会有过多的泛音。低频量感也有收敛的意思，不会显得那么硬和粗糙，特别是在乐器的表现上，能很好的演绎出乐器的质感。低频的收敛顺带中频也略有收敛，与之对应的人声方面稍有一些欠缺，一般的正常人声清晰不受到影响，但在演绎丰富变化的磁性声音时会有一些不足，整体来说表现还是相当不错的。</p>
+<p>无论是普通的流行乐还是爵士乐，都可以很好的表现出来，甚至你可以用这款耳机听一些古典乐，也会有还算不错的表现，整体的风格适应面相当广。</p>
+<p><strong> PConline 总结</strong></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201012/788cfca13ad247f6a83527d361ea6a65.jpeg" max-width="600" /></p>
+<p>表面上看AONIC215只是套着之前经典的SE215的外壳，实际上却走着与大多数耳机品牌厂商截然不同的路子，使用了相当有新意的模块化更新。而音频表现上针对现在流行音乐发展的表现，以及消费者得到更新的口味， AONIC215的声音往着更高解析力的方向走去。而215一贯被称道的佩戴，仍然出色的中低频表现，这些也是对经典的传承。如果对AONIC215的佩戴向往已久，又希望在真无线蓝牙耳机上得到不错的回放表现，那么AONIC215会是一个不错的选择。</p>
+➜飞利浦558M1RY显示器评测：55寸超大尺寸 坐在客厅打电竞
+http://www.sohu.com/a/424008131_223764	7211
+<p>[PConline 评测]英伟达在2018年的CES展会上发布了一个65英寸的巨屏游戏显示器，改写了人们对于游戏显示器一贯的认知。当游戏显示器的尺寸做到跟电视机一样大的时候，它用起来跟一台真的电视机有什么区别呢？在玩游戏的时候，它跟普通尺寸的电竞屏，又有什么不同呢？最近我们最近收到了飞利浦寄来的售价10099元的55英寸勐腾游戏显示器558M1RY，接下来就跟大家聊聊它与众不同的使用体验吧。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201012/4b8fc8f1a72549178c71f55ee90e6218.jpeg" max-width="600" /></p>
+<p><strong>工业设计：除非你家面积200平 否则只能放客厅的电视柜上</strong></p>
+<p>遍观整台显示器，飞利浦558M1RY最与众不同的地方就在于它的屏幕尺寸，达到了巨大的55英寸，跟现在主流的电视机有着同样的尺寸，这也就意味着，你没办法像二三十英寸的显示器一样放进你房间的桌子上，而只能放在你家的电视柜上，除非你家有着200平方米的面积。全金属的底座设计感OK，表面采用了浅灰色布面纹理的Soundbar也很有家居感，所以当整台机器放上电视柜之后，你基本上不太能感觉出它是一台显示器。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201012/a9a650344a6d4db282123c5dee6fe43d.jpeg" max-width="600" /></p>
+<p>在开箱搬动显示器的过程中，我们还明显感觉到，飞利浦558M1RY的重量比我们开箱过的很多55英寸的电视机还要重上不少，官方数据说带底座的总重量达到了惊人的53斤，要知道，飞利浦自家的55寸电视机也才23斤左右，558M1RY的重量是它的两倍有余。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201012/242fef06b8964191ad9cf94d1e219521.jpeg" max-width="600" /></p>
+<p>最重要的原因，除了面板本身就比较重之外，底座上自带了一个宝华韦健的2.1声道的Soundbar也“功不可没”，而且支架不同于多数电视机只在两侧放置小型简约的支撑，558M1RY的支架更像传统的显示器支架，还带有一定的人体工学设计，可以调节屏幕俯仰的倾角。如果要给一块沉重的面板做人体工学支架，那么支架本身也要足够坚固，所以558M1RY也支持200*200的壁挂设计，相比于使用底座，壁挂可以节省不少占地面积。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201012/6449dc0feb9d45d180c691aab14cda64.jpeg" max-width="600" /></p>
+<p>在接口上，558M1RY配备了3个HDMI、1个DP接口、4个USB和1个USB上行接口，总共4个显示接口可以让你同时接上4种不同的游戏平台和显示设备比如PS4、XBOX、任天堂Switch和PC主机，它还支持USB Hub给手机充电。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201012/f609f1307440482999e1fd23b274edd3.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201012/88e904c1fcb446ae89f79ca780af968b.jpeg" max-width="600" /></p>
+<p>在工业设计和显示效果上，558M1RY还支持飞利浦自家的传统艺能：流光溢彩的屏幕背景灯效果。依托飞利浦一贯擅长的照明技术，可以智能识别屏幕显示内容来自动调节游戏灯效，将屏幕光效延伸到屏幕周围，效果非常酷炫，喜欢RGB灯光的小伙伴应该会很喜欢这个设计，如果在晚上将客厅的灯熄灭，效果会更加突出。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201012/325e16fae585417ea7903b933db70451.jpeg" max-width="600" /></p>
+<p><strong>游戏体验：超大尺寸的电竞屏 用PS4比PC主机更和谐</strong></p>
+<p>先大致报一下参数，558M1RY采用了一块55英寸的VA面板，拥有3840*2160的UHD-4K分辨率、120Hz刷新率、2-4ms响应时间，支持HDR 1000认证和Adaptive-Sync同步技术。4K+120Hz在性能参数上非常强悍，我们也用PC主机、PS4和任天堂Switch来试玩了一把。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201012/675fd55395ab4fbf8bd8882971db0255.jpeg" max-width="600" /></p>
+<p>在三种游戏平台上，PC主机的游戏体验是最特别的。在搭建场景时，我们需要在电视柜隔壁放置一台PC主机来连接显示器和键鼠，如果我们追求的是比较极致的低延迟电竞体验，</p>
+<p>那么就要用到有线的键鼠外设，那么我们大概需要将键鼠放置在客厅的茶几上，然后我们盘腿坐在客厅的地板或者坐垫上，这样我们在游戏的过程中则需要稍微仰头来观看屏幕，这个姿势略微有点累脖子，但更大的问题是，有线的键鼠外设可能会占用比较多的客厅面积。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201012/eaabb3e4ca6a47c8b54d36eb8aac6827.jpeg" max-width="600" /></p>
+<p>所以在连接PC主机时，我更建议各位使用无线的键鼠外设，现在做得一流的无线键鼠的延迟情况已经能媲美很多有线的键鼠设备了，加上558M1RY的响应时间也做到了2-4ms，属于主流的电竞屏的水平了，而且具有120Hz的高刷新率，所以用来玩像FPS这类需要很快响应速度的游戏也问题不大。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201012/e182d7e52048472a845bbef076ec41c0.jpeg" max-width="600" /></p>
+<p>这时候可能有朋友会问，顶级的无线游戏键鼠卖得贵啊，但是558M1RY的价格也去到了一万块，那么既然买得起一万块的显示器，键鼠外设那就更不在话下了吧。</p>
+<p>而在PS4游戏机的体验时，我们只需要手持手柄就可以进行全部操作了，这时候我们就可以从玩PC主机时坐在地板上，变成坐在沙发上了。说实话，跟我们平时用电视机来玩PS4的体验差别不大，但因为一般的电视机面板的响应时间会比电竞屏长不少，所以558M1RY的游戏画面的拖影会比一般的电视机要少。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201012/116fab7090a34a46b7d4e27335bbd1b1.jpeg" max-width="600" /></p>
+<p>而在连接任天堂Switch时，游戏体验跟普通的55寸电视机基本没什么区别，都是非常爽的水平。另外还有宝华韦健的Soundbar，重达8斤的重量，出来的声音效果也是吊打几乎所有的显示器音箱了，对比大多数的电视机自带音箱，它的声音效果也依然更加出色。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201012/5a87f6f5553a4a698618b2fafe26aef7.jpeg" max-width="600" /></p>
+<p>在体验完一轮游戏之后，我们发现其实很多游戏都还去不到4K 120fps的水平，所以我们在显示端有了一个怪兽级的性能设备之后，想要完全发挥出它的性能，你还得配备一台同样怪兽级的输出设备。</p>
+<p>我觉得558M1RY这台显示器推出的时机很巧妙，因为在PC主机领域，英伟达刚刚发布了RTX 3080和3090显卡，性能相比上一代2080系列有着飞跃的提升，而在游戏机领域，索尼和微软也发布了新一代的PS5和XBOX，所以对于这几个不同的主流游戏平台来说，像558M1RY这种怪兽级的显示器的性能发挥都比以往任何时候要更加彻底。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201012/6fa3134fcab643ee951a64d77c9b2501.jpeg" max-width="600" /></p>
+<p><strong>屏幕素质：92% P3色域显示效果出众</strong></p>
+<p>常规操作，我们还是使用老朋友红蜘蛛校色仪测试一波屏幕素质。首先是色域测试，飞利浦558M1RY显示器拥有100%的sRGB色域，85%的AdobeRGB色域和92%DCI-P3色域覆盖范围，作为一款电竞显示器，已经做得非常出色，不仅显示色彩非常丰富，而且颜色之间的过度也非常平滑，就算工作上修图剪视频调色也算是够用。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201012/10add89aa7fc4f8ea696f6384a88f14b.jpeg" max-width="600" /></p>
+<p>其次是光度和灰阶的测试，光度是大家所熟知的GAMMA，而GAMMA2.0接近现在的工业标准，我们也能看到实际测量到的GAMMA 2.3曲线也和标准GAMMA2.2曲线非常之接近，可以看出这款显示器的画面灰度表现不错。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201012/86cd1a98df3b4571b57b63bbb7d2285e.jpeg" max-width="600" /></p>
+<p>在亮度、对比度测试中，可以看到，飞利浦558M1RY在100%亮度时达到800尼特的水平，要比绝大多数的显示器和电视机都要亮，而VA面板的对比度要IPS屏更好，在大部分的亮度下都达到了4000+：1，属于比较优秀的水准。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201012/8ffc36c452dc4eb68300e31c9d6a48f7.jpeg" max-width="600" /></p>
+<p>在色彩均匀性中我们可以看到，在50%的亮度中，飞利浦558M1RY的屏幕最大亮度偏差达到5.7，在亮度均匀性上，在100%亮度时，屏幕最大偏差达到11%，两者属于良好的水平。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201012/7d0fb923a16e4610932951c982f8af81.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201012/998166c616f54d8691670ee1419edc22.jpeg" max-width="600" /></p>
+<p>在色准测试方面，一般专业显示器平均ΔE &lt;2，ΔE值越小这块屏幕的色域越准确，飞利浦558M1RY的最大ΔE为3.24，平均ΔE为2.21，色彩精准度表现对于一款电竞显示器来说问题不大，但是有更高的色准需求的设计师或者摄影师朋友来说还是建议选择色准更优秀的设计专用显示器。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201012/e4291b431e07440fa7ed55c759353c3e.jpeg" max-width="600" /></p>
+<p><strong>总结：</strong></p>
+<p>最后我们来做个喜闻乐见的优缺点总结和选购建议。</p>
+<p><strong>优点：55寸超大屏很爽、4k120p性能很强、音响效果出色、游戏拖影比电视机更少</strong></p>
+<p><strong>缺点：上万的售价很贵、PC主机体验明显不如游戏主机、可视角度有待提高</strong></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201012/4ccb64a9855d4103aabd7b4c4dc414d4.jpeg" max-width="600" /></p>
+<p>飞利浦558M1RY作为一台55英寸的巨屏电竞屏，让它的使用场景从卧室搬到了客厅，虽然它的4k120p面板性能超强，但我们依然很不习惯在客厅搬出一套键盘鼠标来玩游戏，相比之下，使用PS4和XBOX这样的游戏主机会显得合理很多，其实在开箱时看到这个有着浓浓家居风的Soundbar时我就感觉这更像是一台电视机了。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201012/0e3a6b10ad924cdb833c568bc79a6fbb.jpeg" max-width="600" /></p>
+<p>另一方面，飞利浦做出这样一台有着超强内在性能和家居风外观设计的显示器和电视机混合怪物，再配以上万块的高昂售价，它真的不是一台飞利浦祈求用来赚钱的机型，就像所有品牌的最顶尖产品型号都是用来秀肌肉的一样，飞利浦558M1RY也不例外，它在秀肌肉的同时也探索了显示器和电视机的边界到底在哪里，以及要以什么样的形式来模煳这两种产物的边界，飞利浦这次给出的答案则是：电竞屏，这个答案会不会是未来的一个趋势现在还不好说，一切都还要让时间来回答。</p>
+<p>那么如果要认真地问：它适合什么样的购买人群？那么首先肯定就是不差钱的土豪们，其次就是在用普通电视机玩游戏时感到画面拖影或者游戏帧数不够的玩家朋友们了。</p>
+➜轻松省几千块！扩容苹果iPhone 12可以这样玩
+http://www.sohu.com/a/424029815_223764	7821
+<p>[PConline 专业评测] 几年前苹果在市场中还是炙手可热的状态时，iPhone几乎是「格调」的代名词，但现在的iPhone仅凭名字已经不能够让大家为之折服，正如低配版的iPhone因为容量问题很影响用户体验。苹果发布会即将开启，虽然有传iPhone 12可能推迟发布，但按照惯例512GB的iPhone 12 Pro系列都是万元起步的，估计这次也并不例外，估计对于部分预算不足的朋友又是一个深刻的痛。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201012/d69ea257671d45f88f55f97b57db8333.jpeg" /></p>
+<p>不过也确实，随着现在手机性能的发展，手机软件需要占的容量也越来越大，对于手机内存的压力日渐剧增，对于一些不能插TF卡、内存本身也不大、还不支持OTG的手机，尤其是「乞丐版」iPhone，手机安装一些软件后就剩不了多少空间。</p>
+<p>不过办法总比问题多，虽然苹果不给力，但并不妨碍其它配件厂商为iPhone排忧解难，针对于手机扩容，闪迪推出了一系列的苹果手机U盘备受iPhone用户喜爱，作为全球最大的闪速数据存储卡产品供应商的闪迪，不仅仅有大家日常所知的存储卡，移动硬盘等，闪迪的苹果手机U盘也是一块明星产品系列。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201012/639d930ab80a40138c117d260e393e2b.jpeg" /></p>
+<p>今天要跟大家来聊的这款产品也正是闪迪欣享™手机闪存盘(iXpand Mini)，一般闪迪手机U盘是一块多钱元一个G，但苹果iPhone容量的每个G价格就好几百了，例如iPhone 12系列的512GB版本价格需求1W元以上，而256GB的闪迪iXpand Mini价格大概是378元左右。显然使用闪迪iXpand Mini扩容更划算，除此之外，产品还时尚小巧，方便携带。安利这款产品半天了，下面我就带大家一起去看看这款闪迪iXpand Mini有什么不同之处吧。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><img src="http://p0.itc.cn/q_70/images03/20201012/f746b39d5d744524bbd3265bf44e6086.jpeg" /></p>
+<p><strong></strong><strong>简洁外观，迷你小巧：</strong><strong>粉色与</strong><strong>蓝色，重量4.5g</strong></p>
+<p>这款闪迪iXpand Mini拥有粉色与蓝色两种配色，外观设计依然是闪迪一贯的简洁时尚包装设计，从外包装就能直接看到U盘本体，一头是PC端的接口，另一头则是苹果专用的Lightning接口，而闪迪iXpand Mini的性能特点也都一目了然，比如支持USB3.0的高速传输，最高256的大容量，最快90MB/S的写入速度，可以轻松享受从iPhone上备份资料。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201012/fb6aaa6cc17447be97521950c71e2eeb.jpeg" /></p>
+<p>“迷你小巧”就是闪迪iXpand Mini给到我的第一感觉，可以看出整体的宽度做到了十分极致，仅有约12mm左右，扁平细长的U盘给我的感觉就像是在江河中漂浮的小船，同时闪迪iXpand Mini是获得苹果的MFI认证的(MFI认证编号100020-0080)，苹果官方认证可以说是非常靠谱。产品的重量只有4.5g，比眉笔还要轻，可以随身携带，随时扩容。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201012/d87138060fe340b18966a813cf2856dc.jpeg" /></p>
+<p>细看的话，做工也非常精细，在Lightning接口处有一个盖子，非常小巧，防止有灰尘进入，透明的盖子，使用感觉也是很牢固，这也就让我不用担心盖子不牢丢掉的情况发生。对外观的赞美差不多就到这里了，毕竟一款苹果手机U盘好不好，还得看它的实际操作的性能，不能全看颜值哈。</p>
+<p><strong></strong><strong>实际体验：轻松扩容，安全性足够</strong></p>
+<p>闪迪 iXpand Mini最大的功能点可是作为iPhone的拓展内存啊，因此在iPhone上好不好用那才是重中之重。首次插入iPhone手机，会跳出一个提示框，提示尚未安装应用，可以从App Store下载，也可以选择忽略。 </p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201012/bb374a71350446519cf1c2915b95abfd.jpeg" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201012/bfda433c69a34ff69db350f686f3cf54.jpeg" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201012/88960483e0f34442b018bec6e5dfac99.jpeg" /></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201012/ba865c71ffe947c1b9506b6e7694d4a4.jpeg" /></p>
+<p>App安装好后打开，可以看到App的最新特性，首先就是我们可以通过Chromecast和Amazon将其照片和视频分享到电视观看和播放， 然后就是支持对日历的备份和还原。有了些功能就意味着之后想要备份iPhone上的文件的非常方便了，可以进行备份iPhone／iPad的通讯录，照片，视频，和音乐。将我们认为重要的文件一键备份，也可以方便将照片分享到社交网站，真的是非常方便。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201012/7d812999a93044a9b7d4e84acd2e528e.jpeg" /></p>
+<p>备份之后，对于备份的内容可以选择全部闪迪，部分删除，还有不用删除，这样可以轻松的对于手机里面的资料进行管理，分分钟为iPhone“瘦身”。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201012/05ec83d21c5145fd845deb28f332ba69.jpeg" /></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201012/7a93ebd3db974d32bf269d35021860d6.jpeg" /></p>
+<p>闪迪iXpand Mini有多个不同容量的版本，有64GB,128GB和256GB，这次我手上拿到是的64GB版本，轻松为手机扩容。</p>
+<p>不过读写速度才是关键，毕竟有大容量在拉文件的时候如果没有快的速度，用起来岂不是非常难受，因此对于闪迪iXpand Mini的读写速度我们也进行了一番试用，实际测试的结果，速度与官方标注出来的速度基本一致，可以说实际使用的感觉觉得速度很快了，所以在速度方面还是满意的。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201012/a36fe266cfaf4535b1fe45f60356d7e8.jpeg" /></p>
+<p>当然了，闪迪iXpand Mini也同样适用于在Win／Mac下的客户端，可以用来对文件进行加密处理，在首次打开使用的时候会让你设置密码先，果然是将安全放在第一位啊。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201012/a988f8d42dc7427987ac3d9808dccb61.jpeg" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201012/41b943eab66141448c39d433622ad431.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201012/554c6ce3051f4da5b2145f887a1aeb72.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201012/19333fe7cb5149669ed604f131d3249b.jpeg" /></p>
+<p>打开客户端输入密码后就能查看加密的文件了，而闪迪iXpand Mini自带了闪迪密码保护功能的加密软件，可以用指纹或者Face ID，轻松密码保护文件。</p>
+<p>除了读写速度以外，还有一个最考验闪迪iXpand Mini的就是直接播放视频或音频，因为之前我也有用过其它的OTG 手机U盘，直接播放手机U盘里面的视频的话，会非常的卡，根本无法好好看剧，体验非常难受。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201012/2f5489aa3bf346e08aea9679b6a9d07d.gif" /></p>
+<p>但是在闪迪 iXpand Mini的测试中，里面的视频，音乐也可以在App里直接播放，支持各种常见的视频格式。笔者测试随意播放任意视频打开都很快，就跟在手机里打开视频一样，几乎零延时。</p>
+<p><strong></strong><strong>使用小结：外观时尚，传输给力</strong></p>
+<p>总的来说，对于不想花1W多元买512GB版本的iPhone 12，但又想体验大容量快感的消费者来讲，只需要选购百元级别的闪迪iXpand Mini就可以轻松解决大家的顾虑。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201012/0e79f01075ec4e52918e97d4abaf540a.jpeg" /></p>
+<p>另外闪迪 iXpand Mini小巧便携，而且传输速度非常给力，而且用手机直接播放里面视频或者照片等内容也非常快捷，对于经常要处理U盘里面的工作文件或者闲余时喜欢看电影的人来说确实非常合适。</p>
+<p>大家可以通过不同渠道购买：</p>
+<p>京东商城：https://item.jd.com/100000159037.html#crumb-wrap</p>
+<p>天猫旗舰店：https://detail.tmall.com/item.htm?spm=a1z10.1-b-s.w5003-23145051911.30.7a7a6277dkHvx6&amp;id=538714050210&amp;scene=taobao_shop</p>
+➜飞利浦346P1CRH评测：Type-C+21:9加持 笔记本电脑最佳搭档
+http://www.sohu.com/a/424011501_223764	7943
+<p><strong>[PConline 评测]</strong>随着Type-C接口的不断发展，这个接口也成为越来越多设备的标配，除了出现在手机、平板电脑和笔记本电脑等移动设备上，配备该接口的显示器产品也逐渐成为市场上的一种新势力。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201012/40c8c55540cf48d3a42b254011346392.jpeg" max-width="600" /></p>
+<p>今天我们上手的飞利浦346P1CRH显示器，Type-C接口除了作为视频输出接口和充电接口，还为这款显示器提供了USB拓展坞、脸部识别和有线网口，搭配比例为21：9的34英寸曲面大屏，可以让这款显示器带来哪些惊喜呢？</p>
+<p><strong> 外观赏析：做工出色 质感满满</strong></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201012/b4f934f5fd774ef98e85c26a9015aae0.jpeg" max-width="600" /></p>
+<p>飞利浦346P1CRH采用纯黑边框设计，配备一块分辨率为3440*1440的34寸VA曲面屏，曲率为1500R，最高刷新率达到100Hz，21:9曲面屏带来相当开阔的视野，可显示内容远超普通的16：9显示器。</p>
+<p>在Lr、Pr和Excel等对超宽比例有使用需求的场景上拥有非常出色的表现，比如在Lr应用中，排除工具栏等位置，中央的可预览图片数量大概增加了50%。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201012/b715be5eb034449dacf79c25d70a37d9.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>外方内圆的可旋转底座采用金属外壳加金属内支架设计，支持±180°旋转，内圆的木纹设计的质感相当不错。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201012/0da43a4912d74ad6a35e9504998e4e7b.jpeg" max-width="600" /></p>
+<p>背部外壳同样采取了木纹设计，整体设计非常整洁，支架支持上下和俯仰调节，高度调节范围为180mm，倾斜角度为-5°~20°，可以轻松满足不同场景下的使用需求，支架下方还很贴心地配备了理线槽，可以更好的整理下方的各种理线线材。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201012/a771c2f7e1cd4bcbbac80991f14ec151.jpeg" max-width="600" /></p>
+<p>背部支架采用快拆式设计，不支持左右旋转，不过参考它21:9的超宽曲面屏，这个也没有太大影响，下方的接口位置标配了一个快拆式挡板，搭配背部内圈的磨砂质感设计，整体一致性非常高。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201012/4a80aae571714c5cbacee5d406beb1b3.jpeg" max-width="600" /></p>
+<p>显示器的接口氛围两个部分，不太常热插拔的接口集中在显示器底部，包括包括全功能USB 3.2Gen2的上行Type-C接口（最大可提供90W供电）、两个DP接口（其中一个为输出接口）、一个HDMI2.0接口、一个RJ45网口和一个3.5mm音频接口，而需要经常插拔的USB接口则集中在显示器左侧后方。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201012/b617b7be55f44ac69a82bf643ccc26ef.jpeg" max-width="600" /></p>
+<p>左侧后方的接口区，自上而下包括四个USB3.2接口（其中第二行左侧黄色接口支持快充）和一个USB Type-B上行接口，对与没配备Type-C接口的设备也可以使用原装的Type-B转Type-A接口实现各种拓展功能。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201012/718886cb183341c9ad35b5d01a91f898.jpeg" max-width="600" /></p>
+<p>显示器还配备了一个弹出式摄像头，兼顾功能性和私密性，拥有一个支持1080P视频录制的200W摄像头，搭配降噪式麦克风可带来相当出色的视频通话效果，还配备了支持Windows 10 Hello的人脸识别IR镜头，解锁体验相当便捷。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201012/86b2007392224331b187a1181a6e8a4f.jpeg" max-width="600" /></p>
+<p>飞利浦346P1CRH还支持PowerSensor功能，通过显示器下方的Logo隔壁配备的红外+光线感应传感器，除了可以用在自适应调节亮度功能外，还可以自动识别用户与显示器的相对位置，当识别到用户远离显示器时（可调在1~4档之间调节识别灵敏度，数字越大识别范围越广），显示器会逐渐降低亮度，在节省能源的同时也可以保护隐私。</p>
+<p>此外，这款显示器还在底部配备了2*5W扬声器，实际音效比较不错，满足各种日常使用需求完全不成问题。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201012/9634dfdbba1a4679877a7cbf9e722156.jpeg" max-width="600" /></p>
+<p>为了完美实现各项拓展功能，飞利浦346P1CRH标配的线材非常完善，除了常规的电源、HDMI和DP线，还配备了一条Type-C转Type-C/A数据线和一条Type-B转Type-A数据线，能完整覆盖各种使用场景，不需要再购买额外的线材。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201012/1964e388437e49f6a8f2bc59dbb158db.jpeg" max-width="600" /></p>
+<p>显示器的OSD设置操作区位于显示器右下角，包括一个电源按键和四个多功能按键，操作起来非常直观，支持自定义按键功能，可以快速完成各种设置。</p>
+<p><strong> 显示效果：高素质21:9大屏带来超强沉浸感</strong></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201012/40c8c55540cf48d3a42b254011346392.jpeg" max-width="600" /></p>
+<p>飞利浦346P1CRH这块屏幕采用8bit面板，通过VESA的Display HDR400认证，峰值亮度达到500 cd/㎡，拥有比普通显示器更出色的色彩显示效果，搭配超宽曲面屏带来非常惊艳的显示效果。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201012/d1fda5c730d14bea91342695683ed72c.jpeg" max-width="600" /></p>
+<p>虽然采用曲面VA面板，但它的可视角度达到178°，表现同样非常出色，动态对比度可达到3000：1，可以带来更丰富的显示细节，在PS、AI和PR等专业图像处理应用中也有相当不错的表现。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201012/6bc3db327f41429aa709b0e7dc723c0b.jpeg" max-width="600" /></p>
+<p>这块34寸大屏偶尔用来玩一下游戏自然也不在话下，搭配4ms的灰阶响应速度和最高达100Hz的刷新率，搭配Adaptive-Sync自适应同步技术，让这款定位办公的显示器也能带来相当出色的游戏体验，21:9在车枪球游戏中可以带来更流畅顺滑的游戏体验。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201012/802d8fa4961c4f34a6f0502d67a2706a.jpeg" max-width="600" /></p>
+<p>出色的色彩表现搭配21:9的屏幕比例让飞利浦346P1CRH在视频剪辑、文字处理、表格处理等应用场景下更加高效，单屏就能显示非常丰富的信息。</p>
+<p><strong> OSD和其他功能体验：各种功能人性化十足</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201012/0689f8777acb4eb6aa175898374a7275.jpeg" max-width="600" /></p>
+<p>飞利浦346P1CRH的OSD菜单风格跟其他飞利浦显示器基本一致，使用五个OSD按键可以快速完成各种设置。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201012/4de4cc31b31d44ccac9b08e53eac63a2.jpeg" max-width="600" /></p>
+<p>这款显示器内置KVM开关，可以同时接入多台设备，在鼠标键盘直接与显示器连接的情况下还能支持跨输入源控制功能，可以充分发挥了超宽屏的优势。当连接多套设备可以在OSD菜单中手动设置KVM模式，使用Type-B转Type-A接口时可切换到USB UP模式，使用Type-C接口进行连接时则选择USB C模式，这个功能将直接影响调用Windows Hello摄像头的设备。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201012/93a4e42048e14b1e8f834d6280efa789.jpeg" max-width="600" /></p>
+<p>飞利浦346P1CRH还支持EasyRead（电子书阅读）、SmartImage（智能图像增强）等多种显示模式，可以轻松满足各类使用需求。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201012/069456c6ccee44c5b000e32ea9c4b302.jpeg" max-width="600" /></p>
+<p>DP out菊花链功能也是这款显示器的一大特色，可以通过DP输出口连接来让多台支持DP接口的显示器来实现快速串联，实现多画面的拓展或复制链接，只要带宽足够就不需要输出端配备太多的输出接口，既降低了显示器拓展的硬件要求，也降低了连接和理线难度。</p>
+<p><strong> 屏幕素质测试：综合表现出色</strong></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201012/cc57c9b2dffa4e41a59ef637c9830894.jpeg" max-width="600" /></p>
+<p>在色域测试环节，飞利浦346P1CRH的sRGB色域覆盖达到100%，P3色域的覆盖也达到了89%，这个表现对于一款为办公而生的显示器来说已经非常出色，也可以满足日常的修图和调色需求。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201012/24c09712aacd47fab7f06c4f931a204d.jpeg" max-width="600" /></p>
+<p>在色调响应方面，曲线约贴近2.2蓝色曲线会有更佳的表现，这款显示器的表现非常出色，基本完全贴合，可见飞利浦对这款显示器的调校能力。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201012/a46d01500c0e407aa4af30ba4542c26e.jpeg" max-width="600" /></p>
+<p>在亮度、对比度测试中可以看到，飞利浦346P1CRH在100%亮度时能轻松达到标称的500尼特峰值亮度，完美满足HDR400认证的亮度要求，对比度也达到了了2550，表现比较出色。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201012/55b672cfa3b64ce49016bf8aa8377cb3.jpeg" max-width="600" /></p>
+<p>屏幕色彩均匀性环节中，飞利浦346P1CRH的最大差值出现在83%亮度的情况下，最大差值6.4出现在正上方的第二象限，整体表现还算不错。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201012/96b1c16e099d4cc5b42bebb140eac314.jpeg" max-width="600" /></p>
+<p>在屏幕亮度均匀性测试，飞利浦346P1CRH的最大差值出现在50%亮度时，最大差值为14%出现在右下角的第九象限，亮度均匀度表现还是比较不错的。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201012/75f039622ad749e3a61ce3a40fe62303.jpeg" max-width="600" /></p>
+<p>色彩精准度测试方面，通过48组的颜色对飞利浦346P1CRH进行测试，得益于飞利浦对它的调校，色彩精度表现比较不错，48组测试成绩平均值仅为0.66，最小值为0.19，最大值为2.33，它的色彩精准度表现相当不错，色彩还原能力已经非常接近专业显示器的高水准。</p>
+<p><strong> PConline评测室总结：笔记本电脑最佳搭档</strong></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201012/523a1804d5984ec697bebe2e8b4f15ab.jpeg" max-width="600" /></p>
+<p>飞利浦346P1CRH是一款优秀的21:9比例的34寸曲面大屏显示器，得益于飞利浦出色的调校，这款显示器在显示效果和色彩表现都足够出色，还拥有PowerSensor、Adaptive-Sync和Windows Hello摄像头等附加功能，而最大的亮点还是通过对Type-C接口的支持，获得了强大的拓展能力和出色的便捷性。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201012/eb017f266b564ac6a501ff10110fb98e.jpeg" max-width="600" /></p>
+<p>这款显示器的最佳搭档是拥有全功能Type-C功能的笔记本电脑，把原来的电源线、数据线和视频连接线精简为使用一条Type-C数据线进行连接，轻松实现显示、拓展、供电和传输数据等功能，大幅降低了理线难度，对于需要长期在连接显示器和便携外出的商务人士来说非常友好，各种繁琐的线材和拓展坞也可以下岗了。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201012/423f0962e6034c0f83b3f8fc39f0e6e0.jpeg" max-width="600" /></p>
+<p>在适用人群方面，<strong>这款显示器是广大笔记本电脑一族的好搭档</strong>，尤其是对于拓展借口较少的轻薄本用户，它可以快速地增强笔记本的拓展能力，让其获得更强大的综合办公性能，<strong>此外这款优秀的屏幕也能轻松满足设计师和视频剪辑师等专业人士的使用需求，</strong>高刷新率和曲面屏也让它拥有相当不俗的游戏体验，最近准备为自己的笔记本电脑选配一台显示器的朋友可不要错过了。</p>
+➜投影机哪些功能是真的好用？用完才发现真香
+http://www.sohu.com/a/424059664_223764	22157
+<p>[PConline 玩投经验] 不得不说， 近年来随着投影技术的不断发展，眼下越来越多的投影机开始受到家庭用户的青睐。家用投影机作为投影机市场的重要细分市场，一直在投影机市场占据着举足轻重的地位。越来越多的家庭用户甚至在装修前就已经为投影机预留出了位置，的确购买一款家用投影机足不出户就可以享受到大屏观影的沉浸感。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201012/5d3f11aa761c4f03b224ab0d350b9bb8.jpeg" max-width="600" /></p>
+<p>挑选一款投影机，你会考虑到哪些因素呢？投影机的亮度、色彩、分辨率、散热、接口、或者是投影技术，的确这些都是衡量一款投影机重要的参数。但我们今天这些暂且都不提，来说说投影机的功能方面。投影机的功能可以说直接决定了用户的使用体验，尤其是对于家用投影机而言，投影机的功能至关重要。为了提升家庭用户总体的使用感受，各大厂商在这方面可谓是下足了功夫。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201012/ff3c2bf990b84c6281bfd576d1530a2a.jpeg" max-width="600" /></p>
+<p><strong> 盘点那些好用的投影机功能</strong></p>
+<p><strong>1、自动对焦和全自动梯形校正</strong></p>
+<p>说到好用到爆炸的功能，那么就不得不提到投影机的自动对焦和自动梯形校正功能。要知道，这对于家庭小白用户来说，可以说是必备的功能。其实在对焦方面虽然很多家用投影机都支持自动对焦功能，但实际的效果却不尽人意。我们都知道，一般来说当投影机与屏幕距离改变，屏幕就会出现模煳不清的情况，进行手动调节不仅费事而且十分繁琐。我想对于家庭用户来说这项功能应该算是人见人爱了，现在家庭之中都喜欢养宠物，免不了在使用过程中，顽皮的宠物会碰触到投影机发生移位导致又要重新调焦，有了自动对焦这些问题都可以迎刃而解。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201012/c87c17e826af4676b6e98d4e01d8cc07.jpeg" max-width="600" /></p>
+<p>而现如今，很多家用投影机均支持自动对焦和自动梯形校正功能。以极米投影机为例，经过手动对焦、电子对焦、自动对焦以及全画面自动对焦+实时清晰度补偿一系列的迭代升级，现在可以说是再次突破，实现了无感对焦并首次搭载在极米H3上。对焦的终极效果其实是不让消费者知道有对焦这一过程，而无感对焦做到了极速完成、无对焦图干扰观影，始终保持清晰，无论是从对焦速度还是对焦效果来讲都让用户几乎感知不到对焦过程的存在，他们打开或挪动投影始终都是清晰的画面。可以说好用的自动对焦加上全自动梯形校正，大大提升了用户的使用感受。</p>
+<p><strong>2、功能全面，开机无广告</strong></p>
+<p>对于家庭用户来讲，一般投影机在开机后总是需要漫长的启动时间。等待时间长是一方面，并且有大量的广告，十分影响用户的使用感受。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201012/b2cfb3bd0d854ea6956d84b1dd341ef7.jpeg" max-width="600" /></p>
+<p>而极米的GMUI 3.6相对上一代UI进行了多项优化，开机启动时间最高减少300%，音响模式进入时间最高减少260%，页面切换等待时间最高减少50%。它搭载了全新极米AI，通过语音能完成更加智能的交互。内容也更加丰富，包含超300门知识课程、超2万小时的4K内容、超60万首K歌曲目以及覆盖K12分年龄段教育内容。更为重要的是，升级到GMUI 3.6的极米产品将取消所有开机广告。没有了开机广告，用户的使用感受自然大幅度提升。经过实际的体验，开机在几秒内即可完成。</p>
+<p><strong>3、HDR给画面带来更高的动态范围</strong></p>
+<p>现如今，很多家用投影机都支持HDR功能。正所谓HDR就是高动态范围图像（High-Dynamic Range，简称HDR），相比普通的图像，可以提供更多的动态范围和图像细节。一般来讲，HDR技术带来的画质提升是直观可感的，即使是普通观众也能用肉眼辨别，因此2016年众多厂商纷纷在电视产品上搭载HDR技术。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201012/2ee2d537cf154ae29b193bff20070f33.jpeg" max-width="600" /></p>
+<p class="ql-align-center">开启HDR功能后</p>
+<p>而对于家用投影机来讲，有了DHR可以说让画面的质感有了显着的提升。从拍摄的样张中我们不难看出，画面色彩鲜艳饱和度高，并且层次感强，最大程度上为我们还原了样张本来的色彩。</p>
+<p><strong>4、更为流畅的画面表现</strong></p>
+<p>最后我们再来看看画面的流畅程度，一般来说在我们的传统认知中传统的投影机一般的使用场景主要在办公领域或者教室内，因此传统的投影机对动态的显示就不是那么关注，这也直接导致了传统投影机在播放动态视频时会因为多种原因导致画面掉帧的情况或者画面卡顿，当然很多入门级投影机在观看动作电影时也会出现这样的状况，严重的影响了用户的观影体验。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201012/c9bffed341b142b5a092908ffbd4d568.jpeg" max-width="600" /></p>
+<p>原理其实很简单，就拿我们平时经常看的高清动作类电影来说，传统的投影机一般会出现画面不流畅和拖尾的现象。其实从原理上来说，我们平时所看到的视频一般都是以一幅幅静态的画面依次播放形成的，静态画面的数量越多，我们所看到的画面也就越流畅。但由于受到技术、成本以及制式等多种因素的影响，现如今我们观看到的网络视频帧率都不会很高，一般来说通常为24帧。而当画面进行高速运动时，由于画面的帧数有限，就会导致运动的过程中会出现很多细节无法展示。虽然投影机在输出画面时会把图像处理成60帧的视频，但更多的画面其实都是重复帧。当我们在观看动作视频时，由于同一画面的信息持续的时间较长，人眼观看后就会感觉物体运动的不流畅。而搭载了MEMC运动补偿技术的投影机就可以解决这一痛点，让用户在观影时画面更为流畅。</p>
+<p><strong> 写在最后</strong></p>
+<p>说到投影机的参数，亮度、色彩、分辨率、散热、接口、投影技术这些的确是衡量投影机的重要参数。但对于家庭用户来说，好用的功能同样是必不可少的。自动对焦、自动梯形校正、运动补偿、开机无广告以及HDR功能，这些绝对是好用又不鸡肋的功能。在挑选投影机时不仅仅要考虑投影机的参数，这些好用的功能更是我们需要考虑的。</p>
+➜安兔兔9月安卓旗舰机排行：iQOO 5系列全系登顶
+http://www.sohu.com/a/424072677_223764	23012
+<p>[PConline 资讯]10月12日，安兔兔公布了9月份安卓旗舰手机性能排行榜，为广大用户在安卓旗舰机的购买选择上提供一定的参考。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201012/960a34b3256e43268b35b4d931626786.png" /></p>
+<p>从榜单中可以看到，系列全系登顶， Pro和iQOO 5分别以663752分和662165分的平均跑分位列榜单一二名，性能强劲可见一斑； 至尊纪念版和超大杯则紧随其后。在榜单前五名中，vivo旗下手机占到三台，看来vivo在9月份的安卓旗舰机市场中劲头十足。</p>
+<p>总体来看，榜单中的旗舰手机前10名跑分都在60万分以上，不得不说，安卓手机旗舰机市场的竞争还是相当激烈的。</p>
+➜安兔兔9月安卓旗舰机排行：iQOO 5系列全系登顶
+http://www.sohu.com/a/424063130_223764	23218
+<p>[PConline 资讯]10月12日，安兔兔公布了9月份安卓旗舰手机性能排行榜，为广大用户在安卓旗舰机的购买选择上提供一定的参考。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201012/63823896864b4522a3d5f8f40a939617.png" max-width="600" /></p>
+<p>从榜单中可以看到，iQOO 5系列全系登顶，iQOO 5 Pro和iQOO 5分别以663752分和662165分的平均跑分位列榜单一二名，性能强劲可见一斑；小米10 至尊纪念版和vivo X50超大杯则紧随其后。在榜单前五名中，vivo旗下手机占到三台，看来vivo在9月份的安卓旗舰机市场中劲头十足。</p>
+<p>总体来看，榜单中的旗舰手机前10名跑分都在60万分以上，不得不说，安卓手机旗舰机市场的竞争还是相当激烈的。</p>
+➜黄金周出游，带上三星Note20 Ultra轻松拍大片
+http://www.sohu.com/a/424102201_223764	32319
+<p>[PConline 杂谈]八天长假就要到了，这可是难得一遇的“国”遇上“家”的节假日，相信很多人都准备抓住机会出去玩一番。而出游肯定少不了拍照，人流奔涌的条件下，拥有一款拍照性能强大的手机就显得尤为重要。可是琳琅满目的手机市场中，挑选一款适合自己的拍照手机还是需要研究一番的。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201012/fb56eb98eff442a596a2122fcf72b0b6.jpeg" max-width="600" /></p>
+<p>这其中，三星的智能手机就很有发言权了。上个月发布的Galaxy Note20 Ultra 5G就在拍照上下了很大功夫，吸引众多消费者的关注。很多用户上手后都表示体验感非常之赞，分分钟轻松拍出大片效果。是否真的如此呢?接下来我们就一起来探索探索吧。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201012/e83024d7c56f483e8f0a709bc1e28588.jpeg" max-width="600" /></p>
+<p>一款手机拍照厉不厉害，最容易从硬件配置上看出来。三星Galaxy Note20 Ultra 5G的主摄配置了S5KHM1传感器， 1.08亿像素；超广角镜头是1200万像素的S5K2L3；长焦镜头为1200万像素的S5K3M5，支持5倍光学变焦、50倍数码混合变焦。这样的优越配置下，就算人再多，也可以先人一步拍到美景。此外，三星Galaxy Note20 Ultra 5G还有AI一键多拍功能，有了它，就算你不会拍照的技巧，也可以轻松拍出秒杀朋友圈的大片。</p>
+<p><strong>日间广角、超广角</strong></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>在光线充足的条件下，使用三星Galaxy Note20 Ultra 5G拍摄出来的照片看起来光线十分通透，整体的色彩呈现也比较自然，没有过度的渲染痕迹，色彩饱和度方面的表现也是众多手机中属于中上等的。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201012/af3d4964242149638e30bae25355da96.jpeg" max-width="600" /></p>
+<p>三星Galaxy Note20 Ultra 5G的超广角镜头为1200万像素的S5K2L3，蓝天白云看上去很自然，HDR效果也不错，总的来说这颗超广角镜头拍出的样张在各方面都有很好的的表现，能让照片中呈现更多的景色。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201012/d29de3ab8707454f8340bbee91dfd61d.jpeg" max-width="600" /></p>
+<p><strong>变焦</strong></p>
+<p>变焦也是三星Galaxy Note20 Ultra 5G的一大亮点，它支持5倍光学变焦、50倍混合变焦，就算人再多也可以先人一步拍到美景。三星Note20 Ultra的长焦镜头为1200万像素的S5K3M5，在成像以及变焦体验上的表现都很出色，没有明显的卡顿。</p>
+<p>为了让用户更方便地使用变焦功能，三星Galaxy Note20 Ultra 5G的拍照界面默认有三个变焦段，分别为0.5倍超广角，1倍广角以及5倍长焦，整体成像素质非常高，满足用户的需求毫无压力，下面一起来欣赏一下各种情景下的变焦效果吧。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201012/1127c99e0a1f4dde8b3d01f58dc6e875.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201012/f1f206eb46a04ab1916b694781e487c5.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201012/b7b66e9d805244869839fc455bce03fe.jpeg" max-width="600" /></p>
+<p><strong>夜景</strong></p>
+<p>三星手机在夜景方面一直有着很好的表现，之前的手机甚至被称为“夜视仪”，三星Galaxy Note20 Ultra 5G延续了这一传统，在夜景方面的表现依旧出色，其主摄像头为1.08亿像素的S5KHM1，光圈高达F1.8，拍出的样张较为纯净，并且暗部的细节也没丢。如果开启三星Galaxy Note20 Ultra 5G的夜间模式，你也可以在较暗的条件下也能拍出足够亮的照片。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201012/4668e861243e4a42a29ff6e01faf4b51.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201012/c23460a162f54b1b8eba8a939c247993.jpeg" max-width="600" /></p>
+<p><strong>AI一键多拍</strong></p>
+<p>三星Galaxy Note20 Ultra 5G还有一个很独特的功能——AI一键多拍，它可以自动调用超广角、长焦镜头，配合AI算法自动进行去背景色等滤镜处理，产生不同风格、不同角度的图片和视频，尤其适合捕捉人物的表情与动作，以及孩子、宠物等在运动时的场景，这功能在国庆黄金周出游期间可以派上大用场！</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201012/f26023591b754c1baf864176c61bb96d.jpeg" max-width="600" /></p>
+<p>在拍摄上，三星Galaxy Note20 Ultra 5G还可以将录制时长增加到15秒，视频方面还加入了专业模式，可以自行调节曝光时间、ISO、对比度、对焦方式等，此外还有21：9电影模式录制，轻松记录下美好时光。</p>
+<p><strong>这个拍照神器会是你的选择吗?</strong></p>
+<p>国庆长假马上就要来了，难道你想干看着朋友圈羡慕别人吗？真的大可不必，你与大片之间就差一个性能强大的拍照手机而已。三星Galaxy Note20 Ultra 5G在超广角、变焦、夜景以及AI上都下了很大功夫，有了它从此大片都是信手拈来的事情。时间不等人，如果你也想要“随手即是大片”的生活，不妨考虑一下三星Galaxy Note20 Ultra 5G吧。</p>
+➜想换iPhone 12？这篇攻略教你如何正确换机！
+http://www.sohu.com/a/424103574_223764	32672
+<p>[PConline 杂谈]今年，苹果没有在第一场秋季新品发布会上发布系列，相信有很多等待着换机的“果粉”们还在期待这款神秘的旗舰手机。据悉，苹果很可能在北京时间10月14日召开今年第二场发布会，并正式发布全新的系列机型，首批产品将在发布当周的周五开始预订，并在下一周的周五开始发货，本次iPhone 12新品发布有望掀起一波换机潮。</p>
+<p>iPhone 12的发布已箭在弦上，你是否还在纠结要不要把自己的手机换成iPhone 12呢？那就先看完这篇超强的iPhone 12换机攻略吧！</p>
+<p>在考虑换机之前，各位想换手机的粉丝可以先搬好小板凳，看看这次苹果交的“新作业”有何亮点和改进吧！</p>
+<p>iPhone12系列共有四个版本，分别为5.4寸的iPhone12、6.1寸的iPhone12 Plus、6.1寸的iPhone12 Pro以及6.7寸的iPhone12 Pro Max，电池容量分别2227mAh、2775mAh、2815mAh和3687mAh。其中，iPhone12与iPhone12 Plus为双摄，两个镜头分别为超广角镜头与主摄镜头；而定位更高端的iPhone12 Pro与iPhone12 Pro Max则为三摄，涵盖超广角、广角以及长焦镜头。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201012/6c766f16b3b648c0a498c850132423bb.png" /></p>
+<p>其中，iPhone 12 Pro 系列除了后置三摄外，还新增了ToF相机，其后置相机广角镜头还升级为传感器防抖，能够绘制出详细的3D环境，而且将会对在AR技术上会得到提升。主摄仍然都是1200万像素，但是摄像头的传感器尺寸会提高。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201012/c2e48448ad7c460cbb00fb228909eccb.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>在外观方面，今年的 iPhone 12 系列将走起「复古路线」，摒弃了从 iPhone 6 时代沿袭下来的「圆润中框」，改用为类似 iPad Pro 的直角中框设计。</p>
+<p>为了区分 Pro 款和普通款，苹果在中框和机背的材质上作出差异化选择，其中 iPhone 12 基础款将采用铝制直角中框 + 玻璃后盖，iPhone 12 Pro 系列将沿用不锈钢直角中框 + 玻璃后盖。苹果还新增了金属蓝外壳，对比起典雅的玫瑰金和沉稳的黑色，朋克风的金属蓝说不定会引起更多年轻粉丝的青睐。当然，无论是怎样的材质和设计，大家在换机的时候都可以上手摸摸，最后根据自己的喜好挑选。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201012/77e4a2b04a8e45ccbb879f23eea99bb3.jpeg" /></p>
+<p>在硬件方面，iPhone12系列均搭载了5nm工艺打造的苹果A14处理器，其跑分相比前代A13处理器有10%的提升，性能更是行业佼佼者的存在，再加上封闭性IOS14系统的协同优化，iPhone12系列用户体验还是令人期待的。</p>
+<p>值得一提的是，在外挂5G基带的方式下，iPhone12系列全系均支持5G网络，在各大手机厂商都争相推出5G手机的情况下，iPhone 12系列的这一升级也是为了应对激烈的5G手机市场竞争。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201012/1879b9a19aa04b49ac87cc2d81c97fac.jpeg" /></p>
+<p>价格一直都是影响购机的最主要因素，iPhone 12系列应该会延续像iPhone11系列这种比较亲民的价格。iPhone12系列最便宜的iPhone12起步价为749美元左右，国行起步价预计在5000元上下，而定位最高的iPhone12 Pro Max 起步价在1099美元左右，国行起步价预计在9599元上下。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201012/9cdca35bfac44940b9abe4fb26bb3db8.jpeg" /></p>
+<p>在了解完iPhone 12系列的基本情况之后，我们再来聊聊如何根据自己的实际情况来换机。</p>
+<p>iPhone 12适合喜欢小屏、对电池容量要求不太高的用户，或者之前用安卓、现在想尝试iPhone 手机的用户，如果你想在预算有限的情况下入手一台持久耐用的手机，那么iPhone 12将会是不错的选择。对于屏幕和续航要求更高的用户可以考虑iPhone12 Plus、iPhone12 Pro和iPhone12 Pro Max。</p>
+<p>除此之外，想要提升摄影体验的用户可以入手iPhone12 Pro和iPhone12 Pro Max，如果预算充足且喜欢“尊享”的用户就可以选择iPhone 12 Pro Max。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201012/aad775b4ca04418181b92f86bbb52dba.jpeg" /></p>
+<p>总之，作为苹果今年的旗舰机，iPhone 12系列无论是在外观还是性能上都有着不错的表现，而且目前看来iPhone 12不仅配置高，价格也香，是今年下半年值得入手的一台新机。心动的“果粉”们可以准备购买啦！</p>
+➜iPhone 12支持智能数据切换！这个5G有点不一样
+http://www.sohu.com/a/424103736_223764	32681
+<p>[PConline 资讯]iPhone 12系列将于本周发布，从目前曝光的消息来看，iPhone 12是一定会升级支持5G的。只不过苹果会不会推出仅支持4G网络的机型，例如较为低配的mini版，仍然还众说纷纭。</p>
+<p>虽然升级5G能够为苹果用户带来全新的更强大的网络体验，但是也会给目前的续航带来一定的压力。据悉，为此苹果将为iPhone 12配备 <strong>"智能数据模式"</strong>，即在4G和5G连接之间无缝切换。整个过程都将会在后台自动完成。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201012/f37b75e94a5346128b33d84a02ca955e.jpeg" /></p>
+<p>"智能数据模式"实现4G和5G连接之间的切换，主要取决于你在设备上做什么，也取决于该应用是否支持。当用户使用需要较高带宽的应用时，设备将从4G切换到5G，反之当需要低带宽时，连接将自动从5G切换到4G。例如，当要下载一个大文件时，iPhone 12会从4G连接转换到5G，要播放高清视频时也是如此。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201012/c533a3760a2c4aaaa579af86ad971481.png" /></p>
+<p>这项新功能还是相当有必要的，应用需求速率有高低之分，而较高带宽的应用也非常有限。设备不需要时刻连接上线到5G，这样可以明显降低后台续航的压力，有助于节省电池寿命。</p>
+<p>需要注意的是，上述功能将会在所有支持5G版本的iPhone 12中执行，但支持mmWave毫米波连接功能的iPhone 12机型将只在美国发售，其他地区将支持6GHz以下的5G，因此国行版iPhone 12与美版可能会有微小差距。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201012/3f36d1cd1820432f9599024155f2fb2b.jpeg" /></p>
+<p>不管怎样，苹果将于10月14日凌晨1点召开特别活动，正式发布iPhone 12系列新品，我们已经准备好小板凳在前排排队了，一起期待吧!</p>
+➜iPhone 12系列即将发布：这些亮点不能错过！
+http://www.sohu.com/a/424103482_223764	32683
+<p>[PConline 杂谈]在之前9月16日的苹果新品发布会上，万众期待的iPhone 12并没有出现。而目前根据外媒爆料，iPhone 12很可能<span>将延迟至10月份发布。</span>iPhone 12系列离大众越来越近了，那么在iPhone 12系列亮相之前，我们一起来看看它有什么亮点吧。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201012/3d37cc397d8741e5b0716d86d152decc.jpeg" /></p>
+<p>根据最新爆料， iPhone 12机型有四款，分别被命名为iPhone 12 mini、iPhone 12、iPhone 12 Pro和 iPhone 12 Pro Max。在如今的大屏时代，5.4英寸的iPhone 12 mini对于小屏幕爱好者来说非常友好，收获单手操控的快乐。</p>
+<p><strong>外观设计</strong></p>
+<p>iPhone 12系列采用了类似iPhone 4的直角边框的硬朗设计，超窄幅前额全屏，正面依然为刘海全面屏设计。同时，iPhone 12系列缩小了一部分刘海面积和边框宽度，屏占比也有了显着提升。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201012/67527e40b3d54c6084fde2c42b14e7dc.jpeg" /></p>
+<p>配色方面，iPhone 12可能会增加海军蓝和红色。去年的新增加的暗夜绿引发了不少网友抢购，这也是苹果希望从外观设计上吸引更多用户的策略，这样的“红蓝cp”你喜欢吗？</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>性能续航</strong></p>
+<p>硬件方面iPhone 12全系均搭载基于5nm工艺制程打造的A14处理器，同时搭载了6GB运行内存，功耗控制达到了行业的领先水平。而业内人士分析，<span>A14相对于A13CPU性能提升16.7%左右，而GPU仅提升8%左右，</span><span>不过，总的来说这颗处理器性能还是很强的</span>。</p>
+<p>值得期待的是，iPhone 12支持5G网络，这将会是苹果的首款5G手机！5G基带由高通提供，网络连接速度及覆盖程度都将达到最高的水准。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201012/6f71d686c2994e8f984746e28cab371d.jpeg" /></p>
+<p>在续航方面，此前有iPhone 12电池存在缩水的传闻，目前比较理性的预期就是iPhone 12续航维持上与上一代产品水平相近，切莫抱以过高期望了。电池容量虽然略有缩水，但好在A14处理器采用了更加先进的5nm工艺，整机的功耗也会相应降低。充电方面，iPhone 12搭载20W的快充技术，也终于比以前的充电速度快了。</p>
+<p><strong>影像系统</strong></p>
+<p>iPhone 12系列还将延续前作的方形相机模组，其中，两款 iPhone 12 系列延续上一代的后置双摄，而两款 iPhone 12 Pro 系列则将配备后置三摄，并将搭载LiDAR传感器。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201012/223383dbb2b644b389cf26757b990ff3.jpeg" /></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201012/e8c9ec568ca54372813813af15037e56.png" /></p>
+<p>iPhone 12 Pro 系列除了后置三摄外，还新增了ToF相机，其后置相机广角镜头还升级为传感器防抖，能够绘制出详细的3D环境，而且将会对在AR技术上会得到提升。主摄仍然都是1200万像素，但是摄像头的传感器尺寸会提高。</p>
+<p><strong>价格</strong></p>
+<p>在售价方面，外媒也对iPhone12系列手机进行了价格推测，iPhone 12 mini的售价最便宜，为649美元。iPhone 12的售价为749美元，iPhone 12 Pro的售价为999美元，iPhone 12 ProMax的售价为1099美元。当然具体价格如何，我们也是很期待！</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201012/061ee69bd5ab4724b3b27f39dfcf282e.jpeg" /></p>
+<p><strong>总结</strong></p>
+<p>总的来说，苹果iPhone 12系列手机无论是从外观、拍照、充电还是性能上，都有新的突破，也将会是表现更出色的一代手机。A14芯片性能提升、外挂5G基带芯片、20W快充、5.4英寸小屏机，你心动了吗？</p>
+➜799美元起？苹果将发布首款ARM Mac笔记本
+http://www.sohu.com/a/424118117_223764	32785
+<p>[PConline 资讯]<span>据</span><span>外媒最新</span><span>报道，</span><span>过几天的</span><span>iPhone 12</span><span>发布会将不会发布Mac产品</span><span>，首款采用定制化Apple Silicon处理器的Mac将</span><span>在</span><span>11月</span><span>的</span><span>“另一场发布会”公布。</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201012/c57e002d58564a82bf3f6257875e094b.jpeg" /></p>
+<p><span>事实上，</span><span>在</span><span>今年</span><span>6月份的WWDC主题演讲中，苹果宣布将从今年晚些时候开始为Mac从英特尔转向自己定制设计的处理器。当时，苹果表示，计划在今年年底前出货第一台采用Apple Silicon的Mac，并在两年左右的时间内完成过渡。</span></p>
+<p><span>据了解，</span><span>Apple Silicon处理器基于Arm架构</span><span>。</span><span>这意味着</span><span>，</span><span>未来的Mac将能够运行成千上万的iPhone和iPad应用，而无需重新编译。</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201012/dbf8401fd3594830857c2a424465744a.jpeg" /></p>
+<p><span>从国内和国外媒体汇总的数据来看</span><span>，首款搭载Apple Silicon的MacBook起售价为799美元（约合人民币5600元），而13英寸MacBook Pro的起售价格为1099美元。</span></p>
+➜想换iPhone 12？这篇攻略教你如何正确换机！
+http://www.sohu.com/a/424104777_223764	33026
+<p>[PConline 杂谈]今年，苹果没有在第一场秋季新品发布会上发布iPhone 12系列，相信有很多等待着换机的“果粉”们还在期待这款神秘的旗舰手机iPhone12。据悉，苹果很可能在北京时间10月14日召开今年第二场发布会，并正式发布全新的iPhone 12系列机型，首批产品将在发布当周的周五开始预订，并在下一周的周五开始发货，本次iPhone 12新品发布有望掀起一波换机潮。</p>
+<p>iPhone 12的发布已箭在弦上，你是否还在纠结要不要把自己的手机换成iPhone 12呢？那就先看完这篇超强的iPhone 12换机攻略吧！</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201012/f7340c610ab64f4682aba1703a22a91d.jpeg" max-width="600" /></p>
+<p>在考虑换机之前，各位想换手机的粉丝可以先搬好小板凳，看看这次苹果交的“新作业”有何亮点和改进吧！</p>
+<p>iPhone12系列共有四个版本，分别为5.4寸的iPhone12、6.1寸的iPhone12 Plus、6.1寸的iPhone12 Pro以及6.7寸的iPhone12 Pro Max，电池容量分别2227mAh、2775mAh、2815mAh和3687mAh。其中，iPhone12与iPhone12 Plus为双摄，两个镜头分别为超广角镜头与主摄镜头；而定位更高端的iPhone12 Pro与iPhone12 Pro Max则为三摄，涵盖超广角、广角以及长焦镜头。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201012/f2bfeeb65f004b9a8406e5f8869e3f44.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>其中，iPhone 12 Pro 系列除了后置三摄外，还新增了ToF相机，其后置相机广角镜头还升级为传感器防抖，能够绘制出详细的3D环境，而且将会对在AR技术上会得到提升。主摄仍然都是1200万像素，但是摄像头的传感器尺寸会提高。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201012/440fdc7392cb4eec814ba37fb326a0ff.jpeg" max-width="600" /></p>
+<p>在外观方面，今年的 iPhone 12 系列将走起「复古路线」，摒弃了从 iPhone 6 时代沿袭下来的「圆润中框」，改用为类似 iPad Pro 的直角中框设计。</p>
+<p>为了区分 Pro 款和普通款，苹果在中框和机背的材质上作出差异化选择，其中 iPhone 12 基础款将采用铝制直角中框 + 玻璃后盖，iPhone 12 Pro 系列将沿用不锈钢直角中框 + 玻璃后盖。苹果还新增了金属蓝外壳，对比起典雅的玫瑰金和沉稳的黑色，朋克风的金属蓝说不定会引起更多年轻粉丝的青睐。当然，无论是怎样的材质和设计，大家在换机的时候都可以上手摸摸，最后根据自己的喜好挑选。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201012/9f6ee832c1f4471f8013ff00f47b3dcc.jpeg" max-width="600" /></p>
+<p>在硬件方面，iPhone12系列均搭载了5nm工艺打造的苹果A14处理器，其跑分相比前代A13处理器有10%的提升，性能更是行业佼佼者的存在，再加上封闭性IOS14系统的协同优化，iPhone12系列用户体验还是令人期待的。</p>
+<p>值得一提的是，在外挂5G基带的方式下，iPhone12系列全系均支持5G网络，在各大手机厂商都争相推出5G手机的情况下，iPhone 12系列的这一升级也是为了应对激烈的5G手机市场竞争。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201012/6889e64483e8489db3ca8a8187c6aa45.jpeg" max-width="600" /></p>
+<p>价格一直都是影响购机的最主要因素，iPhone 12系列应该会延续像iPhone11系列这种比较亲民的价格。iPhone12系列最便宜的iPhone12起步价为749美元左右，国行起步价预计在5000元上下，而定位最高的iPhone12 Pro Max 起步价在1099美元左右，国行起步价预计在9599元上下。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201012/74b81164f35b4d749f1e12b1562ef1e9.jpeg" max-width="600" /></p>
+<p>在了解完iPhone 12系列的基本情况之后，我们再来聊聊如何根据自己的实际情况来换机。</p>
+<p>iPhone 12适合喜欢小屏、对电池容量要求不太高的用户，或者之前用安卓、现在想尝试iPhone 手机的用户，如果你想在预算有限的情况下入手一台持久耐用的手机，那么iPhone 12将会是不错的选择。对于屏幕和续航要求更高的用户可以考虑iPhone12 Plus、iPhone12 Pro和iPhone12 Pro Max。</p>
+<p>除此之外，想要提升摄影体验的用户可以入手iPhone12 Pro和iPhone12 Pro Max，如果预算充足且喜欢“尊享”的用户就可以选择iPhone 12 Pro Max。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201012/5596481dec384bb2ac1bc764ca5a0a69.jpeg" max-width="600" /></p>
+<p>总之，作为苹果今年的旗舰机，iPhone 12系列无论是在外观还是性能上都有着不错的表现，而且目前看来iPhone 12不仅配置高，价格也香，是今年下半年值得入手的一台新机。心动的“果粉”们可以准备购买啦！</p>
+➜升降式风谷散热设计，光追独显加持 荣耀猎人游戏本V700体验不一般
+http://www.sohu.com/a/424118412_223764	33218
+<p>[PConline 海选导购]<span>荣耀推出的MagicBook系列和MagicBook Pro系列笔记本以时尚外观，强大的性能深受消费者喜欢，配合着华为荣耀的手机使用，体验感更是一流。而近期发布的荣耀猎人游戏本系列填补了荣耀在游戏本的空白，对于广大游戏爱好者更是福音。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201012/b0e745f3b5c14c7a84e091c6d4b4a67c.jpeg" /></p>
+<p><span>作为荣耀首款游戏本——荣耀猎人游戏本V700，无论在工业设计上，还是游戏性能上，散热稳定等各方面都贴合了游戏玩家对游戏本最真切的需求。下面我就向各位简单介绍这款高性能的笔记本——荣耀猎人游戏本V700。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201012/c37cea8cdd374aef8a5fc02fb8640c39.jpeg" /></p>
+<p><strong>超跑外型——“最靓仔”的游戏本</strong></p>
+<p><span>在打开荣耀猎人游戏本V700包装的时候，其轻薄和高颜值设计足够让人惊艳。荣耀猎人游戏本V700的A面刻画着荣耀猎人品牌标志的飞镖Logo，通电后会发光，</span><span>仿佛</span><span>像是在唤醒猎人。猎人游戏本V700外面采用的是全金属机身设计，边缘采用CNC工艺切割技术，再加上背后肌肉感满满的蓝色猎人肩线，让猎人V700的机身不仅美观，拿在手中的也充满质感。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201012/6cd4af0f5870455e83fa2bb6967a9404.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span>荣耀猎人游戏本的B面采用的是16.1英寸FHD屏，其4.7mm超窄边框给人更大观看视野，显示面积比普通的15英寸游戏本提升了6.6%，同时该屏幕还拥有100% sRGB色域，高达300尼特的亮度及1000：1的高对比度，视觉呈现更真实，同时支持144Hz高刷新率，保障了游戏画面的流畅。</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201012/2eaa2b1e9ea1489cace8598d2444decb.jpeg" /></p>
+<p><span>荣耀猎人游戏本的C面采用了亲肤材质，指纹电源按键放置在了机身中间，有一种对称的美。而键盘是定制的电竞键盘，同时提供了数字小键盘，双曲面键帽，键腹为0.3mm，按键键程达到了1.8mm，手感俱佳，同时键盘也支持四分区灯效，十分酷炫。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201012/6d3f6e8fd063447894bc0088ad007147.jpeg" /></p>
+<p><span>最值得一提，也是我最喜欢的地方是，区别其他大部分笔记本，荣耀猎人游戏本V700采用的是独特的升降式风谷散热设计。当打开笔记本上盖的时候，猎人游戏本V700会通过机械式结构自动打开底部风谷通道，进风量增加40%，该设计让猎人游戏本V700的整体厚度控制在20mm以下，更显轻薄。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201012/c1fe1f13b83b4b59be74f1058c552552.jpeg" /></p>
+<p><span>底部风谷的光效，十分酷炫。这像不像一辆性能强劲的超级敞篷跑车在打开敞篷的感觉？我每次打开都心情澎湃。</span><span>有了</span><span>这些</span><span>散热</span><span>设计</span><span>加持，荣耀猎人游戏本V700</span><span>保障</span><span>其强悍的性能</span><span>输出。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201012/8149b34477c14062bb1763002dbd249d.jpeg" /></p>
+<p><strong>强悍性能加持，接口丰富</strong></p>
+<p><span>荣耀猎人游戏本V700最高可选英特尔第十代酷睿处理器i7-10750H，6核12线程，高达2.6GHz的基频，睿频更是高达5GHz。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201012/b686c9b060fa414dbb5bf5243e80344d.jpeg" /></p>
+<p><span>而显卡方面，该机最高搭载NVIDIA的RTX 2060 6GB独显，基于优秀的图灵GPU架构，支持RTX光追及DLSS 2.0，让画面呈现更真实的光影。同时荣耀猎人游戏本V700搭配双通道16GB内存，还有512GB NVMe SSD。出色CPU和GPU如同猎人手中的猎枪，而内存和SSD如同锋利的瑞士军刀，如此装备怎么不惹人爱？</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201012/b4a15cd8688f4e70867308f1f6782bbe.jpeg" /></p>
+<p><span>荣耀猎人游戏本V700同时支持Nahimic for Gamers游戏音效，能够在游戏精确定位和感知声音方向。荣耀猎人游戏本还支持双WLAN模组，支持高速Wi-Fi 6的网络，高速上网开启极致的游戏体验。在接口上，荣耀猎人游戏本V700还提供了3.5mm耳机孔、USB-C全功能接口、HDMI视频输出、RJ-45网络接口，还有2个USB 3.2 Gen1、1个USB 2.0接口，丰富的接口能够让荣耀猎人游戏本V700轻松扩展外围设备，实现连屏输出。</span></p>
+<p><strong>自带软件调节，调出你想要的模式</strong></p>
+<p><span>荣耀猎人游戏本V700内置定制的软件，能够单独对游戏性能进行调控。荣耀猎人游戏本V700提供安静、均衡和狂战三个模式可以选择，分别代表不同的性能强度，同时还对一些硬件状态信息进行监控，而自带的HUNTER按键也支持模式快速切换，开启狂战模式后能够将GPU和CPU性能最大限度释放。同时软件还能对荣耀猎人游戏本V700的四区的光效调节，1600万颜色能够自由选择，自带呼吸、常亮、波浪等数种模式。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201012/f23b0a98b76d44e6801e1086a1fecee1.jpeg" /></p>
+<p><span><strong>总结</strong></span></p>
+<p><span>荣耀猎人游戏本V700是一款十分</span><span>出众</span><span>的游戏本，</span><span>散热设计出色，</span><span>性能强悍，光效</span><span>酷炫等都让用户感到惊喜，再加上</span><span>荣耀猎人游戏本V700</span><span>继承荣耀其他笔记本系列，拥有多屏协同这些等高效率功能，拥有快速分享、游戏30S回录等功能。要是最近想入手游戏本或者高性能笔记本，</span><span>荣耀猎人游戏本V700</span><span>绝对是不错的选择。</span></p>
+➜为了剪三星Note20 Ultra拍的8K视频，我特地升级了电脑
+http://www.sohu.com/a/424118126_223764	33338
+<p>[PConline 专业评测]不久之前，英伟达发布了它的王牌高端显卡，同时也是电竞玩家们的最爱——RTX 3090。这款显卡除了较上代有着巨大的性能提升外，它最高也能支持显示效果高达8K 60帧的游戏图像效果，因为这个特性，让更多人了解到了8K已经悄无声息地开始潜入我们的生活中。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201012/e487ac1d9dcf4bb7af3a1f9d42e01710.jpeg" /></p>
+<p>当然，显卡与屏幕支持是体验8K的必要条件，但有一个高质量的8K视频源也是必不可缺的。目前市场上能进行8K视频录制的设备屈指可数，在手机领域更是寥寥无几，但就手机8K高质量视频录制功能上，三星作为手机、传感器等众多行业的老大哥，一部几乎完美的、支持8K视频录制功能的手机——三星Galaxy Note20 Ultra 5G在上个月正式面世。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201012/a58435a6fd4e439491585261ce5e8897.jpeg" /></p>
+<p>三星Galaxy Note20 Ultra 5G，是今年三星家推出的又一款对机圈影响深远的高端旗舰手机，它有极致强悍的性能，也有极致的摄影体验。通过它1.08亿像素的主摄，我们能够欣赏到精细度极高的画面，同时还支持导演级8K视频的拍摄。8K超清视频使个人创作和灵感发挥得到了更广阔的舞台，不管是工作拍摄需要，还是个人创作需求三星Galaxy Note20 Ultra 5G都能随时满足。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201012/2be6e200023343e7b7ec71bd28e4cb14.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>了解了那么多，迫不及待地想实际试一下三星Galaxy Note20 Ultra 5G拍摄的8K视频的效果。但当我将它拍摄的8K视频导入电脑准备进行剪辑操作时，一个很严重的问题横生于前，我的电脑居然卡死在了剪辑界面。曾以为能和我同经百战的它，今天居然先我而去，它蓝的很刺眼，也很扎心。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201012/211767473d1648d8b95e2a5795763fa4.jpeg" /></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201012/c1f3380146e24e55ae032567a190f181.jpeg" /></p>
+<p>于是我决定把我多年的积蓄拿出来，顺便向同事们借了一点，没过几天，我便拥有了我人生中第一部装配着顶级显卡和显示器的高端工作站。这次我小心翼翼地将三星Galaxy Note20 Ultra 5G连接到电脑上，同时将前几天拍摄的并“杀害”我老电脑的凶手导进了新电脑里。当剪辑软件的导入界面流畅加载时，我心里那块石头终于放下来了，欣然地开始了新一天的工作。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201012/59a2ce31bf194450aed63088f6b6ec18.gif" /></p>
+<p>相比已经足够清晰的4K视频，8K视频在细节和品质上都有一个较为明显的提升，这种提升在8K显示屏上更为突出。对比起来，三星Galaxy Note20 Ultra 5G拍摄的这个8K视频，在我的数据库里，简直一个能打的都没有。相比4K视频，8K视频的清晰度和裁剪后精密程度都有着很大的优势；相比其他手机拍摄的最高画质视频，它除了画质上有不错的优势外，它的暗部细节保留更多，亮部高光控制得更为自然，视频品质在一些成像色彩与素质上虽不及专业8K摄像机，但就日常生活和用户体验上看，这个8K的感知几乎无比强大。</p>
+<p>三星Galaxy Note20 Ultra 5G拍摄的8K 24fps超高清分辨率视频，在视频品质上毋庸置疑是当前行业顶尖的水准，视频内截取的每帧图像都能转换为3300万像素的超清快照，无论是拍摄的创作性和后期剪辑的可玩性上，三星Galaxy Note20 Ultra 5G都为用户们提供了完整的创作体验。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201012/cb2a5e5b70df4567a34122325bfc0a2d.jpeg" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201012/8dbfa602f3864f078881993eb3289aec.jpeg" /></p>
+<p>（以上为三星Galaxy Note 20 Ultra 5G拍摄4K视频截图及放大效果）</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201012/52940054f4cd4eefb6abb11f6cdea6bc.jpeg" /></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201012/c2c278361c44498bb9823332a7a3e83b.jpeg" /></p>
+<p>（以上为三星Galaxy Note 20 Ultra 5G拍摄8K视频截图及放大效果）</p>
+<p>视频创作已逐渐成为目前年轻群体的核心需求，它能够很好地传递自身的想法，也可以很快地将信息进行传递。三星Galaxy Note20 Ultra 5G在手机超高清视频的领域里几乎一枝独秀，并且支持8K视频拍摄的它也受到了众多UP主、视频博主的喜爱。在未来很长一段时间里，8K视频拍摄都将成为手机拍摄着重发展的部分，它在细节的表现和大场景的采集上都比4K、1080P视频提升巨大，拥有更好的拍摄体验，当然也更能得到用户们的青睐。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201012/d968e266fbfc4663926e373b81462a78.jpeg" /></p>
+<p>最后，在感受完三星Galaxy Note20 Ultra 5G带来的强大8K拍摄体验后，它呈现给世界的8K视频录制功能优点已经数不过来了，对比其他智能手机最高仅支持4K 30fps的录制效果，三星Galaxy Note20 Ultra 5G做到的已经足够完美。</p>
+➜迷雾将散！iPhone 12发布前一天还有新的爆料
+http://www.sohu.com/a/424107713_223764	33645
+<p>[PConline 资讯]苹果将于北京时间10月14日凌晨1:00举行新品发布会，届时大家期待的iPhone 12系列将会亮相，时间越来越近了，而有关新款iPhone 12的爆料仍然没有停止。至于又有什么新消息曝光了呢。现在就带大家一起来看看吧！</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201012/4a1e2a4fde1b4b90a342863480b2314c.jpeg" max-width="600" /></p>
+<p>在数据网络这方面，大家知道iPhone 12系列终于将支持使用5G网络，据消息称苹果会为iPhone 12系列机型配备“智能数据模式”，该功能将使设备自动在 4G 和 5G 连接之间切换。</p>
+<p>当使用需要更高带宽的应用程序时，如看高清视频、下载大文件，设备将从 4G 切换到 5G，反之亦然，当需要低带宽时，如只是微信聊天，连接将自动从 5G 切换到 4G。</p>
+<p>大家知道现在5G流量套餐仍然非常昂贵，这种智能切换模式有助于节省流量。而使用5G网络也非常耗电，这有助于节省电池电量，提高iPhone 12的续航时间。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201012/e1fc9ddb95ea4f4b9325a5911cd8d785.jpeg" max-width="600" /></p>
+<p>摄像方面，苹果将采用Sensor-Shift技术，取代目前的OIS光学防抖技术。这意味着，iPhone12 拍摄时，防抖移动的是传感器，而不是镜头，提高iPhone 12的拍摄防抖能力。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201012/6cc2e63829c345218d75ad335e7162e8.jpeg" max-width="600" /></p>
+<p>无线充电方面iPhone 12也有升级之处，充电功率将提升至15W，还具有磁性定位功能，以后iPhone 12无线充电的时候就不需要特意对准位置，获得更轻松的体验。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201012/56631d5b018f475d9aa9d4c01735df06.jpeg" max-width="600" /></p>
+<p>以上就是关于iPhone 12系列最新的爆料消息，最终的结果还请大家关注14日凌晨1:00的发布会。大家有什么想法欢迎在评论区积极讨论哦！</p>
+➜观影游戏难两全？创维S81 Pro OLED电视都满足你
+http://www.sohu.com/a/424108520_223764	33941
+<p>[PConline 评测]说起当下的的电视市场，绝对是让人眼花缭乱，抛开一些附加功能，评判电视的黄金标准还是画质，而画质的基础就是显示面板。对于主流家用电视而言，显示面板主要分为两类——OLED面板和液晶面板。液晶电视我们现在一般叫做LED电视，还有QLED、miniLED等，其本质也是液晶电视。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201012/be1d49b6d62e4262a9074d9576caeac6.jpeg" max-width="600" /></p>
+<p>那买电视选OLED还是液晶？两者的区别主要在于当电视显示黑色画面时，OLED面板的黑色 区域是不通电的，能显示接近现实最纯净的黑色。而液晶电视由于先天性的原因限制，在显示纯黑色画面时能明显看到电视透光等情况。其次，OLED面板得益于自发光技术，在画面对比度和色彩显示细腻程度上，也是领先了液晶电视一个层次。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201012/b6ea4ebf2f244e3284cc542fe24ace6a.jpeg" max-width="600" /></p>
+<p>另外，随着新款PS5、xbox即将问世，作为黄金搭档的电视也将走上120Hz高刷新率的新纪元，引领一波高刷电视的新潮流。创维S81 Pro就是走在这风口上的先驱者，凭借OLED和高刷新率面板，实实在在地让游戏、观影两全其美。</p>
+<p>理想是美好的，现实是否依旧丰满？让我们一起探究一下。</p>
+<p><strong> 画质评测：超高对比度带来最纯粹的画面表现力</strong></p>
+<p><strong>对比度</strong></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201012/bffa7f8588d44d30860e8b147504a34c.jpeg" max-width="600" /></p>
+<p>比起看厂商给出的参数，我更喜欢用自己的眼睛来判断。一望无际深邃宇宙的黑色与亮白色的航空服形成了鲜明的对比，OLED屏显示黑色可以完全不亮，非常纯粹。月球表面的碎石在光线照射下黑白鲜明，没有过爆的亮部，也没有涂抹的暗部，整个画面在高强度的对比度下，层次鲜明。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201012/cfcaddfb87594ccb9f8c648cb1e36762.jpeg" max-width="600" /></p>
+<p>以前看液晶电视，最不喜欢暗场多的画面，黑色部分会自带白色光晕“效果”，分分钟让你出戏。而创维S81 Pro的 OLED屏幕对于画面暗场的表现张力，足以进一步烘托场景氛围，即使曝光过度，黑色部分的呈现也依然纯粹，这是液晶电视难以呈现和媲美的。</p>
+<p><strong>色彩</strong></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201012/f63e17776a5a470180a159494da2ba35.png" max-width="600" /></p>
+<p>看完对比度，接下来看看这款电视机的色彩表现能力。我们使用红蜘蛛X来对这款电视的表现进行测试，结果显示，100%的sRGB，91%的adobe RGB，98%的P3，数值表现相当不错。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201012/31f57384b1ba473ca2c54d3f8a8ac4b7.jpeg" max-width="600" /></p>
+<p>在实图表现中，画面的色彩表现也非常自然，既不素淡，也没有过度美化的油画感，挥洒出画面中食材的新鲜质感，很讨好眼球。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201012/35a2ffbadc484ff2809173e56aec8836.jpeg" max-width="600" /></p>
+<p>例如这个蓝色为主的场景就非常考验创维S81 Pro色域表现力，近处海水的浅蓝、远处海水的深蓝以及天空蔚蓝，没有涂抹的痕迹也没有色彩割裂感，同色系的蓝色调过度非常自然，增添了画面的层次感。</p>
+<p><strong>动态表现</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201012/88170418fa1b4ba587df0429d0580788.jpeg" max-width="600" /></p>
+<p>作为高端智能电视，创维S81 Pro也内置了支持独立APU的AI画质引擎，其中MEMC运动补偿搭配120Hz的刷新率可谓是鲜有的强强组合。在上面这张高速运动火车的画面中，车身上的文字依然清晰可见，无拖影不抖动。</p>
+<p>在《头号玩家》试播片段中，急速飞驰的赛车，摇晃的镜头，四处摆动的灯笼，紧张激烈的镜头丝滑流畅，高速场景也没有出现拖影，而且画面的亮度并没有因为刷新率的提高而降低。有了MEMC运动补偿技术的支持，的确创维S81 Pro很适合用于观看动作片、体育赛事等。</p>
+<p><strong>HDR和杜比视界</strong></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201012/9502b243da604c999e996804dbceb93a.jpeg" max-width="600" /></p>
+<p>创维S81 Pro还支持HDR动态对比度功能，在这张场景中，我们可以明显看到，画面的暗部细节和亮部细节均得到不同程度的优化，同时明暗之间均没有出现暗部涂抹和亮部过爆的情况，白云的轮廓和地面石路的颗粒感清晰可见。同时，画面左上角的蓝色天空也能非常清楚地看见蓝色系的深浅变化，在HDR的支持下，画面变得相当有立体感。</p>
+<p>影院老司机都知道，选择杜比视界影厅通常要比普通影厅贵近100元或更高票价，这是因为杜比视界影厅播放的影片均经过杜比视界专业调校，屏幕亮度、对比度、色域都是普通影厅播放机难以媲美的。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201012/232d6b3fd17a4670a323034e4c6d43be.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201012/58402e56781a46fe8db615b810a0c2f3.jpeg" max-width="600" /></p>
+<p>创维S81 Pro直接支持杜比视界和HDR动态显示，在OLED配置的基础上仿佛是如虎添翼，该功能可以在“图像模式”中直接打开使用，相当方便，同时你还可以根据影片色调的明暗，选择相应的杜比视界明亮或柔和模式，以达到更舒适的观影效果。</p>
+<p><strong>更丰富的自定义图像模式与功能</strong></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201012/247418d55ff9473d860dcc69644f5010.jpeg" max-width="600" /></p>
+<p>当然除了专业的杜比视界模式外，创维S81 Pro也有标准、鲜艳、影院、体育、游戏等多种类型的图像模式可供选择。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201012/0d6389ebbdc645f8b789c6d36eedc034.jpeg" max-width="600" /></p>
+<p>根据我们的测试，看电影时推荐使用“电影原彩模式”，能真实还原广播级监视器水准的画面表现，画面更具有电影感，仿佛置身影院一般。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201012/5fc2f91b95a94af98e130df37bcf7f73.gif" max-width="600" /></p>
+<p>创维S81 Pro还内置环境光传感器功能，能实时监测周围环境光线，自动调节画面亮度和色温，配合OLED护眼功能，能有效减少长期看电视造成的眼睛疲劳，是一个非常人性化的贴心功能。</p>
+<p><strong> 音质评测：屏幕声场带来身临其境的听觉体验</strong></p>
+<p><strong>CSO屏幕声场</strong></p>
+<p>S81 Pro作为创维电视首款OLED 模组自制的CSO机型，能够通过屏幕本身的震动进行声音传播，实现音画合一、音随画动，使画面和声音的出处完全相同。</p>
+<p>在试播的赛车片段中，即使是极速的场景变换，飞驰的赛车，快速的移位，声场变化也紧随其后，相当有沉浸式体验的效果。</p>
+<p><strong>DASS杜比全景声音响系统</strong></p>
+<p>与创维S81 Pro屏幕杜比视界模式相对应的自然是杜比全景声音响系统，试播了杜比官方视频，可以明显感觉到不同位置的声音变化。</p>
+<p>当外接Suprav DRUM无线低音鼓，组成DASS杜比全景声音响系统2.1.2时，创维S81 Pro电视的环绕声效果更是显着。</p>
+<p><strong>扬声器分频设计</strong></p>
+<p>除了优秀的声场表现外，创维S81 Pro在音质表现上也非常出色——单边主声道采用了丝膜球顶高音扬声器+跑道形全频扬声器，扬声器分频设计。</p>
+<p>试音蔡琴的歌曲《渡口》，低音下潜有力，人声表现清晰，无论是下潜鼓声的重音或是高音，都非常清晰明了地表现出来，相当不错。</p>
+<p><strong> 游戏体验：4K 120Hz，次世代游戏利器</strong></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201012/2d3d529df09e43e089144dceb76ecfc5.jpeg" max-width="600" /></p>
+<p>创维S81 Pro配备了4K120Hz屏幕、HDMI2.1高速接口，支持VRR可变刷新率，并且可以通过插帧技术实现240Hz Crystal Motion OLED，那我们怎能错过激动人心的游戏测试环节呢？我们测试了古墓丽影和CS:GO两款主流动作射击类游戏，以及手机传屏试玩王者荣耀。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201012/ecec6dbe138f4989ae7f9ee8c1cef6ca.jpeg" max-width="600" /></p>
+<p>在CS:GO中，明显感觉压枪要比同款其它电视容易许多，并且在快速移动，180度转身等快速移动操作中，画面移动非常流畅，没有出现其它电视中的严重拖影感。射击时，主观感觉射击对象出现的时间“延长了”，更容易瞄准射击，同时鼠标点击和画面的反馈是实时同步，没有一丝延迟感。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201012/8e4a922772e14d3ba66d71deba521e62.jpeg" max-width="600" /></p>
+<p>试玩古墓丽影的第一感受，画面看的我是太舒服了。因为古墓丽影的画面基本都是处于昏暗的的洞穴中，夹杂着几缕光线，过去用显示器或其它电视玩时，根本是暗的看不清楚画面，创维S81 Pro对于画面对比度的控制非常喜人，而在大场景切换中，几乎没有出现画面的卡顿和延迟，在一些跳跃、平衡木的操作中，画面的翻转非常流畅，高刷新率真的可以治眩晕啊。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201012/c7ece475fcc7452db8e231c3ecbb95bd.jpeg" max-width="600" /></p>
+<p>除了主机游戏外，还可以将手机内的游戏画面全场景投射至创维S81 Pro的屏幕上，游戏在传屏连接上非常稳定，没有出现掉帧和卡顿情况，画面切换依然保持清晰。即使同步对比高刷屏的手机，两者画面的流畅度也非常，没有很明显的延迟感，操控也十分顺手。</p>
+<p><strong> 系统体验：家庭智能中心</strong></p>
+<p>在系统功能体验方面，创维S81 Pro内置了TrensAI VOICE全时AI语音助手，除了传统的遥控器唤醒方式，还全新升级的远场语音交互功能，能智能识别语音的男声、女声、童声，进行个性化的内容推荐。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201012/ab9172d57df64945931dbd23c0d3c916.gif" max-width="600" /></p>
+<p>在语音交互体验上，也更为人性化，无需反复使用唤醒词，在一次唤醒智能语音助手后，能进行连续对话，更为轻松方便。在语音识别种类上，创维依旧支持多种常见方言，所以家中的老人也不用煞费苦心地练习普通话语音交互了。语音交互操作上不仅仅是日常的搜片、天气、电视控制功能，还支持联动各类智能家居，24小时值勤，随时控制智能家电。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201012/4841d23289c949c0a98d459f852ee07e.gif" max-width="600" /></p>
+<p>TrensAI AOD全时AI明视功能就是利用OLED黑色像素不发光的特点，实现和现在旗舰智能手机一样的息屏显示功能，显示内容也可以根据自身需求进行定制，例如日期、天气、智能家电信息、备忘录、音乐等等</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201012/a9b9d54e6794440cbb4230db82feae8a.jpeg" max-width="600" /></p>
+<p>标配的摄像头配备了F1.76大光圈以及3D降噪功能，白天进行视频通话时画面非常清晰、流畅不卡顿。降低室内光线模拟暗光环境拍摄时，这颗前置摄像头还是非常给力，不仅拍摄的人物清晰，周围的门、沙发拍摄的也很清楚，展现了非常不错的动态捕捉范围。另外在功能上，前置摄像头也并不局限于视频通话，还有手势控制等附加功能提升操控乐趣。</p>
+<p><strong> 外观设计：拒绝臃肿，将薄做到极致</strong></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201012/f148f241333a49d282264e83fbe9e853.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201012/5928184ea43040ec91cae10a0c88185c.jpeg" max-width="600" /></p>
+<p>外观上，创维S81 Pro采用了目前主流的窄边全面屏设计，增添了观影、娱乐时的沉浸式效果，四角做了圆弧处理，过渡自然。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201012/1dbaece68cae4110acfa9333f80e738f.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201012/b7e65519a6114111a4e8ca737744b199.jpeg" max-width="600" /></p>
+<p>电视侧面最薄处比手机还要薄，侧边看上去非常清爽，没有了传统电视臃肿的感觉，这也是OLED屏幕的优势之一。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201012/f7fd5a75ef5443ddb660e1e3c85da655.jpeg" max-width="600" /></p>
+<p>电视机底部是L型金属拉丝质感的底座，以支撑整个电视在电视柜上的摆放。相对于传统双“八”字底座，创新S81 Pro电视距离电视柜台面的缝隙更小，同时电视机背部与墙面的缝隙也变得更小，即使不上墙，贴合度也很高。</p>
+<p><strong> 总结：你想要的音画质和游戏体验，它都给你了</strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201012/9fe70a6d42ba4ee19d83d854600002c0.jpeg" max-width="600" /></p>
+<p>电视的大屏游戏体验是电脑显示器所无法媲美的，同时OLED面板的画质效果也是普通液晶面板难以呈现的，但往往来说，在电视的游戏体验上，游戏性能一直是短板。而创维S81 Pro不仅做到了高刷屏，还支持240Hz Crystal Motion OLED，VRR可变刷新率、游戏专属模式等一系列辅佐流畅度的功能，提高了观感，也大大强化了游戏体验。</p>
+<p>另外创维S81 Pro强大的音效系统在声场和音质上也有着非常不错的表现，作为一款高品质、兼具游戏、观影、娱乐的电视机，基本挑不出毛病。如果你刚好打算入手新款PS5或xbox，或者是喜欢看电影且注重视听体验，那创维S81 Pro绝对是最佳选择。</p>
+➜OPPO再出Find X2定制版，英雄联盟S10最强周边现身
+http://www.sohu.com/a/424164025_223764	48254
+<p>[PConline 杂谈]英雄联盟 S10 赛季，火热开启。</p>
+<p>早在 9 月份，英雄联盟官方就开启 S10 赛季的官方预热，头号玩家们在官方预告后第一时间就感叹：氪金买英雄、买皮肤的时候又到了，叫上三五知己好友一起看直播、一起吐槽的时候又到了。当然，氪金看直播，少不了当然是自己在排位赛中征战赛场，first blood！</p>
+<p>除了官宣的 MV 外，作为目前地球上最氪金的游戏之一，官宣 MV 自然无法满足所有玩家的口味，作为英雄联盟游戏的官方合作伙伴，OPPO 给大家带来了不一样的惊喜。10月12日上午11时30分 ，OPPO 在官方微博发布自制英雄联盟非官方 MV《英雄登场-Be the Legend》，其中阿水和shy又现合体，Faker、盲僧-Sofm、亚索-Doinb等人现身成为看点，歌曲部分由唱作歌手@TIA袁娅维献唱，一经发布便引发大量关注。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201012/7f0cde4fe0c04312bb65812633db43a4.jpeg" /></p>
+<p>等等，只有非官方劲爆 MV，你也太小看 OPPO 。在官方 MV 发布的同时，OPPO Find X2英雄联盟 S10 限定版预约页面正式上线，S10 赛季最强定制周边由此诞生，不仅有定制版的 OPPO Find X2，更有 OPPO Watch 还有全新未发布的圆表盘 OPPO Watch 。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201012/c995c10829f2486290d963c585e962eb.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><img src="http://p9.itc.cn/q_70/images03/20201012/eb0d2f411357408fbb17fea41734c7dc.png" /></p>
+<p>玩高定，OPPO 一直以来都是认真的，这次的英雄联盟 S10 限定版也不例外。从官方预定所曝光的外观图中可以看出，高定后的 OPPO Find X2 采用了全新的外观配色，金色点缀与绿色主色调的搭配，与游戏中的英雄风格如出一辙，特别是后盖上具备渐变色调的绿色，配合 S10 赛季的 logo，神秘中透露着几分霸气，霸气中又展现出几分时尚。系统的主题定制一直都是 OPPO 发力的一大重点，战斗风十足的时间显示界面，游戏感十足的摄像头快捷键。是的，深度高定就是那么彻底。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201012/26c3b3428c9c46eabfbcb78fe4c87ba3.jpeg" /></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201012/536d3e22332a498c9fc94480290af102.jpeg" /></p>
+<p>延续了 OPPO x EVA 新世纪福音战士的节奏，这次的 OPPO 英雄联盟 S10 限定版也推出了智能手表设备的深度定制。为了最大程度满足不同的消费者需求，这次的 OPPO Watch 不仅是在原产品的基础上进行深度定制，定制的表盘、定制表带这些都是常规操作，OPPO 把圆形表盘产品的首发也给了英雄联盟定制版。从官方图中可以看出，这次的圆形表盘 OPPO 依旧采用了极高屏占比的策略，单从曝光图无法判断的是否为曲面玻璃设计，但这个圆形表盘产品带来了极高的用户关注度。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201012/5b9c24bde02b45ccb79fb5befc1ca217.jpeg" /></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201012/fef7506ad29e4d28a3b978596b81322d.jpeg" /></p>
+<p>外行看热闹，内行看门道，在玩家都在为深度定制的英雄联盟周边喝彩之时，我们却惊觉：一直在高定的包装上玩出新高度的 OPPO ，这次的英雄联盟高定版到底会玩什么新花样？是将英雄的元素进行植入，还是说在包装的物理层面给予全新的设计元素？到底看似普通的手机后盖上会不会采用巧夺天工的新工艺？</p>
+<p>最后也是十分重要的，这次的英雄联盟定制版 OPPO 的限定出货量是多少？无论是高达版、EVA 定制版还有艺术家限定版，OPPO 都采用加量不加价的政策在发售，卖的不仅仅是产品也是情怀更是收藏。作为全球最受欢迎的手游之一，这个最强周边未发售就引发了极高的关注度，到底是万一挑一的忠实玩家才能购得？亦或是采用 S10 赛季门票的抽奖方式呢？善于产品营销的 OPPO 肯定会给出我们别样的答案。</p>
+<p>相较于 OPPO Reno4 系列的限定版，OPPO Find X2 在机身配置上满足每位玩家拿着定制版征战 S10 赛季的梦想：高通骁龙 865 旗舰处理器，SA/NSA 双模 5G，120Hz超感屏，超感多焦段影像系统，65W超级闪充，不做猪队友不做小学生，从用上 OPPO Find X2 英雄联盟限定版开始。</p>
+<p>你会是抢购 OPPO Find X2 英雄联盟限定版，拿到游戏 first blood的人吗？亦或是你是全球第一个英雄联盟定制版首胜？还等什么！</p>
+➜被低估了的Apple Watch：凭啥卖出一亿只？
+http://www.sohu.com/a/424180313_223764	57633
+<p>[PConline_杂谈]10月7日，苹果公司正式定档了秋季第二场发布会时间，自我调侃为“真快，又要见了”，不过也正是因为这场发布会的预告，引发了不少网友对此前九月中旬的首场秋季发布会的讨论，并再次看到了很多人对Apple Watch的质疑，<strong>“手表凭什么成为一场苹果发布会的主角？”</strong></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201013/6a1e460020a643e5a6ba837fffd9705f.jpeg" /></p>
+<p><strong></strong><strong>Apple Watch全球出货量近亿只</strong></p>
+<p>其实早在2014年Apple Watch 1代第一次亮相之初，尽管科技圈对这款手表普遍认可，但手表业界并不太看好这款可穿戴智能产品，认为其根本无法挑战瑞士手表在行业中的地位。</p>
+<p>但和传统的机械手表不同的是，智能手表拥有着极高的可玩性，非常适合那些追求极致科技感的用户。其后的情况，大家也都知道了。不仅仅是苹果，华为、三星、小米等等品牌都陆续推出了自己的智能手表产品，并且在不断丰富自己的产品线。而一直充当领头羊地位的Apple Watch，尽管在外观上面没有太大的变化，却也在配置、功能、玩法上面进行着不断的调整和优化。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201013/4dd025537c2048a588951c247a995c23.jpeg" /></p>
+<p>就在2020年后半年的最新数据报告中，Apple Watch的全球出货量已接近1亿只，根据美国调研公司的统计，在美国市场，约35%的iPhone用户拥有Apple Watch，并且这一数字仍在持续增长，不得不说，Apple Watch正在为苹果创造着巨大的营收价值。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>Apple Watch为啥稳占鳌头？</strong></p>
+<p>Apple Watch在苹果全家桶中一直都是一个非常特殊的存在，不同于一般安卓智能手表的“独立自主”风，Apple Watch需要配合iPhone手机使用才能发挥全部实力，一旦脱离了手机，Apple Watch的功能立马会被阉割掉一半。</p>
+<p>新手表没有iPhone甚至连激活都激活不了，关键是这个“半成品”价格还比一般安卓手表贵出两三倍。就拿今年刚刚发布的Apple Watch S6来说，起售价已经达到了3199元，高配版价格可以达到6299元，这钱都够买个旗舰款安卓手机了。相信不少用户看到这里，都要质疑一下，<strong>所以到底为啥要买Apple Watch？便宜又好用的安卓智能手表不香香么？</strong></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201013/2b2e4df3b17b484db51f295a871049d1.jpeg" /></p>
+<p><strong>1、苹果生态是永远滴神</strong></p>
+<p>苹果的生态系统已经翻来覆去快被夸烂了，苹果在系统的封闭性与生态的构建方面都拥有很高的完整度，我们可以使用iPad作为MacBook的副屏；可以使用iPhone继续浏览在MacBook中为看完的网页；手机拍下的照片可以马上同步到电脑的相册中；当有电话呼入时，平板、手表，电脑，手机都会响起……通过iOS苹果将自己的多条产品线的产品融合为一个整体，多产品的有效互动带来使用便利的同时也极具未来感。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201013/78349aae82364dd79f5b6ae70ac611d8.jpeg" /></p>
+<p>就拿Apple Watch S6来说，我们在手机端安装的APP，到了手表端就不用再去安装，Apple Watch可以将手机端下载好的，适配手表的App自动同步过来。不仅如此，手表端的APP还会自动登录你的iPhone账号，这就意味着用户可以完全无缝地在手表和手机上面来回切换并使用这些 App，纵享丝滑体验。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201013/78d0412725a84cbba7d8b5720524bcd2.gif" /></p>
+<p>↑ 自动同步手机端APP</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201013/770d63f663aa48df9ae0cbabd3435608.gif" /></p>
+<p>↑ 自动同步手机端地图导航</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201013/0fb4aed907ca489ca6b6ed196d5d456d.jpeg" /></p>
+<p>↑ 自动同步手机端健康信息</p>
+<p>这些细小的有效互动可能并不显眼，但是真正使用起来，却可以拥有一气呵成的顺畅使用体验。而这样的使用快感，正是安卓智能手表所欠缺的。</p>
+<p>早前支付宝的风控部门大佬在一档电视节目中提到了“软件打扰率”的概念，说一个软件通知或提醒用户各种信息或者服务的频率不应该太高，过高使人厌烦，逼人想卸载。这个概念用在安卓智能手表的使用体验上，也很合适，比如你在安卓手机上安装的App并不会自动同步到智能手表里，需要手动下载。下载完成之后，在智能手表上打开APP，还要再次登录，甚至诸如支付软件，还要进行重新绑定和认证，使用体验可想而知。</p>
+<p><strong>2、引领时尚潮流</strong></p>
+<p>瑞士手表一度是手表行业的执牛耳者，厂商繁多，品牌、种类、设计各不相同，是时尚界和奢侈界的宠儿。不过很显然苹果也不准备只定位在科技圈，时尚圈和奢饰品圈也是要闯一闯的。多年来，苹果向来以时尚的硬件产品引领潮流，并因此与时尚圈建立起亲密关系，苹果的可穿戴产品也在越来越多的跨越科技与时尚的界限，其中Apple Watch就是真正可以成为“时尚配件”的数码设备。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201013/d80f384372974d7ab2c7cb41920e06c2.jpeg" /></p>
+<p>虽然Apple Watch已经历经数代设计迭代，但是在表盘外观上面，相对一代产品并没有太多的变革之处，但在表带上，却提供了非常多样的选择，包括链式表带、运动表带、皮质回形表带等等，各种颜色各种款式都能够单独购买。</p>
+<p>在今年9月中旬的第一场秋季发布会上，苹果加大了和奢侈品牌爱马仕的“捆绑合作”力度，推出的爱马仕合作高端版Apple Watch Series 6，售价约合8500元人民币，是顶配版售价的1.5倍，除了测血氧等最新功能外，该款手表还配备了充电器以及爱马仕表带和多款专属表盘。实际上，苹果还和Nike、Hermes、Coach、卡西欧等诸多品牌联名，推出多个合作系列，在时尚道路到稳扎稳打，可谓是只有你想不到，没有Apple Watch搞不到的表带。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201013/8255e3c1e9a048b2b04c1a5acbea79b4.jpeg" /></p>
+<p><strong>3、创新脚步永不停留</strong></p>
+<p>要想在智能手表领域走得更远，走出固化的设计思路，做创新和差异是根本。今年发布会上，watchOS 7就加入了家人共享设置功能，这意味着智能手表不再只是年轻群体的专属，家里的老人和孩子也可以拥有一款自己的苹果表，这将是改变如今智能手表领域格局的关键一步。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201013/c5c320f7d47746ca99868b6090149c10.jpeg" /></p>
+<p>值得一提的是，用户可以用自己的iPhone为家人设置Apple Watch，这样即使家人不拥有iPhone也能使用Apple Watch。虽然市面上的儿童智能手表很多，但是针对老年人的智能手表基本没有，有的老人不喜欢带手机，或者不会用智能机，如果用Apple Watch的话，老人用语音命令就能给子女发短信和打电话，Apple Watch 的震动提醒也能解决老人听不见铃声的问题。当然了，Apple Watch还拥有紧急联络和摔倒检测功能，这些对老人来说也非常实用。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201013/de771fd73b5840d998ab4b2495ba7819.jpeg" /></p>
+<p>今年由于疫情原因，卫生健康也成为了大部分人的关注点，新一代Apple Watch增加了督促“洗手”的功能。这个功能就很简单直接了，Apple Watch 可以通过麦克风听到水流声，然后用加速度计检测到你的洗手动作。这两个条件都 check 之后，你就会在表盘上看到一个倒计时，让你洗够 20 秒，从而尽可能的杀灭手上的细菌。在现在这个特殊时期，洗手几乎可以说是和戴口罩一样重要的防护措施，苹果能开发出这样一个看似不起眼、实际上却心思缜密的小功能，还是非常值得鼓励的。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201013/b655752618db45a4acaa78e22da87168.jpeg" /></p>
+<p>此外，今年Apple Watch Series 6在运动健康上也有所创新，增加了血氧饱和度检测，患有心脏病、糖尿病、哮喘这些慢性疾病的人可以通过这项功能来了解自己的病情恶化程度，如果你睡觉的时候经常会打呼噜，也能用它了解到打鼾是否已经影响到了自己的健康，又或者身处高海拔地区，血氧饱和度也是用户判断自己身体是否已经超出负荷的一个重要体征。</p>
+<p><span></span><strong>总结</strong></p>
+<p>苹果公司在智能手表市场的表现一骑绝尘，今年第二季度甚至占据了30%的市场份额，非常恐怖。其实安卓厂商在平板时代败下阵来的一个重要原因就是软件生态不完善，到了智能手表市场，这是亟待补齐的短板，也是实现突破的契机。如今，在5G、芯片等技术革新带来的IoT浪潮下，智能手表的战略价值已经提升，在可观的增量与未来的机遇面前，围绕智能手表的战火只会更加浓烈。</p>
+➜为电竞而生 雷柏V30幻彩RGB游戏鼠标评测
+http://www.sohu.com/a/424186898_223764	58514
+<p>[PConline 评测]雷柏这个品牌对于大家来说应该并不陌生，作为国产外设品牌的中坚力量，其凭借在鼠标键盘市场的多年耕耘，使得其产品的使用体验和用户评价不断攀升。纵观目前的外设市场，已经有众多品牌推出专业电竞鼠标，其中不乏一些近千元的产品，这让很多预算有限的玩家难以接受。</p>
+<p>对于绝大数游戏玩家，体验出色而性价比高的产品才更符合他们的需求。雷柏推出的V30游戏鼠标就着力于这部分游戏玩家，接下来就和大家体验一下这款售价为169元的游戏鼠标。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201013/06a11e62549c4cf384b3bc067ec79fef.jpeg" /></p>
+<p>外观方面，雷柏V30游戏鼠标采用对称式设计，符合右手人体工学，表面材质为ABS塑料，采用磨砂哑光喷漆处理，在触感上顺滑细腻，相当舒适，这种材质也能够在一定程度上防滑耐磨。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201013/f34ed02e206949aba6e73e2240c108d9.jpeg" /></p>
+<p>鼠标共有七个按键，包括两个主键、两个鼠标侧键、一个滚轮和一个DPI切换按键。其中左右两个主键为独立式设计，由于上表面采用分离式设计，使得左右主键的受力更为均匀。玩家在使用过程中能够更快地进行点击操作，助力玩家在游戏中取得优异表现。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201013/27fb4c2330114c91b413f362dd8cc3dd.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>鼠标尺寸为127x65.5x40mm，中等大小，正常手型的用户都有着很不错的手感，得益于精心勾勒的鼠标曲线，后半部分微凸，为手心提供了厚实的支持。前半部设计更是贴心，手指槽下凹，两侧微翘，为手指预留放置空间。整体造型十分线性流畅，就算长时间握持也不会有不适感。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201013/74b90449be894bd3850aa00602fcd61e.jpeg" /></p>
+<p>既然是游戏鼠标，RGB灯效肯定不会落下。V30拥有一个约1680万色的RGB背光系统，鼠标的滚轮、LOGO以及尾部能够同时显示不同的灯光效果，灯光的流动和过渡效果都很不错。并且官方预设了7种不同的背光模式，通过鼠标底部的背光按键能够在无驱动的状态下控制灯效的切换及关闭。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201013/f057d436b0e44839938b5864ec6ceab9.png" /></p>
+<p>雷柏V30的外观十分出色，但决定一个鼠标好不好用还需要要看它的性能表现。鼠标是否跟手，是否会有发飘的感觉，或者能否适应大幅移动等都与其内部的光学引擎有关。雷柏V30鼠标采用的是PMW3325电竞级光学传感器，拥有最高5000DPI，100IPS移动速度，20G加速度，最高回报率达到了1000Hz，这样的性能表现可以说是十分出色的，在激烈的游戏中也十分顺畅，没有延迟，不会跳帧或丢帧。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201013/00e68940868b41088cce5428de94721c.jpeg" /></p>
+<p>而在鼠标的按键体验上，两个分离式的主键拥有3000万次寿命的的微动，使用的手感干净清脆，回弹迅速，按键也十分稳固没有松动的情况出现，这也是采用分离式设计鼠标的优势。同时也大大降低了微动失灵、双击等问题出现的概率。滚轮部分包裹有防滑橡胶，并且支持RGB灯效。 DPI切换按键与外壳造型融为一体，点击手感比较舒适清晰。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201013/03fa966769ba47959b10ccba279fe943.jpeg" /></p>
+<p>同时该按键可以在预设的7档DPI 如400/800/1200/1600/2400/3200/4000之间快速切换，多档位的调节可以满足不同使用情景下的操作要求，后续驱动上线后更是可以升级到5000DPI。鼠标背光通过显示7种不同的颜色分别对应7档DPI值，不得不说这是一个十分炫酷贴心的设计。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201013/b92d9d45f6ea418b9b95af75818a3d21.jpeg" /></p>
+<p>鼠标左侧设有两枚侧键，表面同样为磨砂处理，按键手感清脆，回弹很快，体验很不错。左右侧裙部分，则是V30的一大亮点，采用孔状纹理工艺，提供更为出色的防滑性能，不同于市面上一些橡胶材质的侧裙，V30的侧裙是注塑一次成型的工艺，具备透气排汗的效果，同时也有不错的防滑性能。即使长时间使用也不会出现打油、掉色的情况。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201013/3ffcbb3599f84bb3b7e5e5437a6b09d6.jpeg" /></p>
+<p><strong>总结：</strong>总的来说，雷柏V30游戏鼠标整体的使用体验还是比较优秀，在手感上没有什么可挑剔的地方，提供了十分舒适、高贴合度的握持体验。无论是外壳表面的触感还是按键的点击感，或者是具有防滑效果的侧面孔状纹理，在同价位游戏鼠标产品中都属于中高水平。性能方面，PMW3325处理器以及7挡DPI调节足够入门以上玩家使用了，也能够满足市面绝大部分游戏的操作要求。在灯光效果方面，三区域的RGB背光效果在同级别产品中也算是比较亮眼的，支持7种不同灯光模式，视觉效果也十分的炫酷突出。雷柏V30幻彩RGB游戏鼠标售价169元，可以说是高性价比鼠标，感兴趣的朋友可以关注一下。</p>
+➜自从家里更换了激光电视 终于肯放下手机了
+http://www.sohu.com/a/424187087_223764	58514
+<p>[PConline 玩投经验] 现如今因为有了手机和Pad这类电子设备的加持，很多人看电视的机会越来越少了。纵观液晶电视的发展史，其实从八九十年代的21寸到现如今主流的55寸液晶电视，最大的区别当属于电视的尺寸。由此看来，从观看的体验来讲，屏幕越大，观看就越爽，所以在预算充足的情况下，大家都在寻求越来越大的屏幕，那么拥有100寸屏幕的激光电视会是一个好的选择吗？</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201013/bc67c2c1f760494b96001e8534913a9a.jpeg" /></p>
+<p><span></span><strong>了解什么是激光电视</strong></p>
+<p>说到现如今主流的观影设备，液晶电视和投影机是我们熟知的设备，那么什么是激光电视呢？众所周知，电视技术经历了黑白电视，彩色电视和以液晶电视、PDP、OLED等为代表的数字电视三次技术迭代，激光电视将使用了激光光源的DLP数字电影放映技术和电视技术结合形成第四代电视显示技术。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201013/5162cbaa20bf43009c7e2f30f4e7fc90.jpeg" /></p>
+<p>激光电视本质上也属于投影机，但激光电视的画面尺寸要比一般投影更大，投射比也更小。即使设备贴墙摆放，也能投射出80—100英寸的画面。目前主流激光电视最大投影尺寸一般在100英寸左右。</p>
+<p><span></span><strong>激光电视具备这些优势</strong></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>1、百寸大屏幕，看电影就是爽</strong></p>
+<p>相比于液晶电视，激光电视尺寸优势非常明显。尽管今年大尺寸液晶电视价格已经数次下调，比如出现了5000元以内的入门级75英寸液晶电视，2万元的85英寸电视。但如果上升到100英寸，价格就会高出很多。从显示面积来看，100英寸大小约为221厘米X125厘米，比75英寸电视大了78%，比85英寸电视大了38%。而目前主流激光电视配备100英寸抗光屏幕，价格从2万至5万不等，更具优势。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201013/ed6be1cbef0e4225aaf4fa8e37c00306.jpeg" /></p>
+<p>不仅如此，激光电视本质是超短焦投影机与抗光屏幕的组合。如果用户想要更大的画面，仅需更换屏幕，付出的费用并不太高。比如，最近明基BenQ推出激光电视新品i960L，配备100英寸黑栅抗光屏幕，也提供120英寸甚至更大屏幕的升级服务。</p>
+<p><strong>2、画质优秀，夜晚观看更幸福</strong></p>
+<p>接下来说说画质，习惯于白天看液晶电视的用户，可能并不欣赏激光电视的画质。前面我们提到过，其实激光电视就是短焦投影机，反射光线成像，容易受到环境干扰。尽管各大厂家极力克服，仍无法做到如液晶电视直射光一样的鲜艳夺人。虽然白天画面看起来很清晰，但与液晶比仍然不够艳丽。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201013/d144a3ac90c349b7a7bae80c8f1ffe1d.jpeg" /></p>
+<p>但对于白天工作，只有晚上回家才能看电视的用户而言，激光电视白天观看的劣势就可以忽略不计了。所以对于这类用户群体而言，激光电视就是个不错的选择。</p>
+<p><strong>3、寿命更长，更便捷</strong></p>
+<p>我们都知道，一般来讲投影机在使用一段时间后，就会出现亮度不足的问题。这时候就需要用户另外购置更换投影灯泡。激光电视由于采用的是激光光源，不仅亮度比一般投影要高，而且亮度衰减速度很慢，上万小时的使用时间，足以满足家庭所需。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201013/f9a4716c099d4853b5dcdbda413df94e.jpeg" /></p>
+<p>而在便捷性方面，激光电视可以说是想投哪里投哪里。相比于液晶电视而言激光电视的体积更小，极大程度上方便用户移动位置。我们都知道，在一些真实的家庭环境中，超大的液晶电视往往不利于安装。并且在运输的过程中也是不利于搬运的，有些住宅的电梯甚至无法放入大尺寸的液晶电视。而相比这些激光电视则更加小巧，同时激光电视一般都会自带自动对焦功能，所以完全不用担心移动后需要重新调焦的问题。</p>
+<p><strong>4、辐射小，对健康更有优势</strong></p>
+<p>前面我们说过，激光电视因为是反射光线成像，画面效果受环境光影响大。但也正是因为如此，激光电视比液晶更柔和，能更好的爱护眼睛。激光电视的图像获取来自激光电视屏幕反射自激光电视主机的光线，与人眼观看世间万物的原理一致，相比液晶电视，对人眼的伤害小，即使长时间观看也不会感到疲倦。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201013/b236456722ae4cf89a8b8bba92a29f2c.jpeg" /></p>
+<p>同时很多激光电视搭载了自动息屏功能，当用户靠近激光电视时，它会自动息屏，离开后自动恢复画面，守护眼睛健康。</p>
+<p><strong>同样也有这些不足</strong></p>
+<p><strong>1、价格还是偏高</strong></p>
+<p>虽然激光电视的价格现阶段已经跌到万元以内，但相较越来越便宜的液晶电视，显然后者更亲民。激光电视对于普通家庭来说，仍然属于“奢侈品”。当然价格贵，并不是激光电视的错。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201013/a59d5743d2e94ee89a1f45bb0c8fd03e.jpeg" /></p>
+<p><strong>2、受环境光影响较为严重</strong></p>
+<p>虽然激光电视的亮度比普通投影高上不少，但与同尺寸液晶电视相比还有一定距离。更直白一点说，就是当环境光比较亮时，激光电视的画面色彩就会打大折扣。</p>
+<p><span></span><strong>写在最后</strong></p>
+<p>用激光电视看电影到底香不香？答案是肯定的。无论是从机身的体积还是画面的效果来看，激光电视都有着很大的优势。虽然在白天观看会受到环境光的影响，但搭配上抗光幕可以获得最佳的观影效果。如果对家庭观影有着一定的需求并且有一定的预算，那么激光电视是个不错的选择。这回有了激光电视的加持，终于可以放下手中的手机了。</p>
+➜果粉也用安卓！MacBook连接安卓机最好的工具
+http://www.sohu.com/a/424187125_223764	58514
+<p>[PConline 应用]尽管iPhone很出色，然而iPhone在续航、快充、5G、本土化功能等方面的短板，让很多果粉也换用了安卓手机，或者将安卓作为备机。然而，很多果粉都只有MacBook，毕竟MacBook目前仍是最出色的轻薄本之一，在macOS上如何连接安卓机？macOS固然支持安卓的MTP模式，但体验其实并不好，更多朋友会选择其他一些第三方方案。</p>
+<p>之前锤子曾经推出过一款macOS连接安卓机的软件“HandShaker”，不过它已经久未更新了。有没有其他工具？今天就来给大家推介一款“OpenMTP”，这可能是当前macOS连接安卓机最好的工具了！</p>
+<p><strong>OpenMTP：https://openmtp.ganeshrvel.com/</strong></p>
+<p>OpenMTP是一款来自国外的软件。首先它的一大良心之处，就在于它是完全开源且免费的。如果你是一名开发者，也可以点击下面的链接，进入OpenMTP的GitHub开源页面查看其源代码。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201013/4ed1f508d46b46f3b907ddfe33dfc850.jpeg" /></p>
+<p>OpenMTP主界面</p>
+<p><strong>OpenMTP GitHub页面：https://github.com/ganeshrvel/openmtp</strong></p>
+<p>OpenMTP的使用非常简单，用dmg镜像载入安装后，开启软件，然后通过USB将安卓机连接到MacBook之类的macOS电脑上，OpenMTP就可以呈现安卓机当中的内容了。OpenMTP能够支持安卓机的内置存储空间和SD卡，也支持大于4GB的文件，兼容性不俗。</p>
+<p>OpenMTP的操作也没有什么短板。它支持最基本的拖曳传输，无论想把文件从安卓传输到Mac中，还是反过来，直接拖曳就可以完成；另外，它也支持macOS众多快捷键，例如常见的command(⌘)+c/v复制粘贴等等，用起来没有什么门槛。</p>
+<p>OpenMTP传输过程</p>
+<p>OpenMTP的界面简简单单，支持列表和图标视图，并且支持多种文件排序方式。总体而言，它的体验是和macOS的Finder比较接近的，传输速度也没有什么掉链子的地方，完全可以担当起Mac和安卓之间数据传输的桥梁。</p>
+<p>简而言之，这是一款非常实用的工具。macOS原生对安卓机的连接有不稳定等问题，用OpenMTP可以很好地弥补这方面的缺陷。如果你同时是Mac和安卓机的用户，这款OpenMTP绝不容错过了。</p>
+➜AirPods老充不满电是啥怪毛病？一招轻松解决
+http://www.sohu.com/a/424187228_223764	58514
+<p>[PConline 技巧]AirPods是目前综合体验最好的蓝牙耳机，就算不是果粉，也有很多人用得不亦乐乎。不过，有很多朋友特别是用iPhone的朋友，都发现AirPods充电怎么充都充不满，电量最高也就去到80%。这到底是怎么回事？这就来教大家如何解决！</p>
+<p>其实AirPods充不满电这个情况，是最近才出现的，这是由于苹果在iOS14中，加入了AirPods健康充电模式，如果在iOS中开启了“优化电池充电”功能，那么这个选项也会作用到AirPods、Apple Watch等设备当中，AirPods会跟随着iPhone一样，默认只充电到80%，并且会自动学习用户的充电习惯。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201013/761ef2fb05704c0fb41358df96e7abec.jpeg" /></p>
+<p>AirPods会套用iOS14中的优化电池充电设定</p>
+<p>知道了原因，解决起来就很简单了。拿起你的iPhone，进入到iPhone的设置界面，在“电池”选项中，找到“电池健康”这个页面，关闭“优化电池充电”的开关即可。</p>
+<p>如此一来，AirPods就可以充电到100%了，Apple Watch等设备也是如此。</p>
+<p>当然，这个做法是有利有弊的。苹果之所以在iOS14中添加这一设定，以AirPods的续航为代价，目的就是为了增加AirPods等设备的电池寿命。AirPods使用的是锂电池，锂电池的物理特性决定了电量浅充浅放能够得到更长的电池寿命，而电池寿命对于AirPods来说，意义重大——AirPods太过小巧精密，几乎是无法拆卸重装的，自然也没法更换电池。在以往，如果经常使用AirPods，可能两年左右续航就会下降到难以接受的程度。iOS14的新设定可以尽量延长电池寿命，也相当于延长了AirPods的使用寿命。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201013/1ce0c2f04980487d8e83bd047333bba3.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>系统也提示，这是为了减缓电池老化</p>
+<p>不过，也有朋友采取了其他方法解决AirPods的电池寿命问题，例如购买AppleCare+服务，当AirPods出现电池明显衰退时，可以在两年内换新。目前适用于AirPods的AppleCare+服务定价300元，如果你用的是AirPods Pro这样的贵价货，还是比较划算的。如此一来，无需优化电池充电到80%，也可以尽情使用AirPods，续航体验更好。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201013/e899bb78566544cf933f2acc2e3782f8.jpeg" /></p>
+<p>AppleCare+也可以提供电池维修服务</p>
+<p>总的来说，这类精密数码产品的电池衰退问题的确是个硬伤，iOS14的充电80%方案或者AppleCare+，也只是缓兵之计。而对于没有这些方案的其他蓝牙耳机，使用寿命就更加无法保障了，希望各大厂商都可以更关注这方面的问题吧。</p>
+➜全能表现+超高颜值 办公显示器也可以玩出新花样
+http://www.sohu.com/a/424187514_223764	58514
+<p><strong>[PConline 评测]</strong>在目前的显示器市场上，高端显示器有两个截然不同的方向，一个是面向电竞领域的方向，归结起来就是更宽的视野、更高的刷新率。另一个则是面向生产力方向，更高的分辨率和更加出色的色彩表现。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201013/1e5542a9a43d41c3b85cfed9063b80de.jpeg" /></p>
+<p>不过作为显示设备，这两个方向的显示器在颜值上同样没有放弃打磨，许多厂商都推出了不少兼顾颜值和性能的专业产品，我们要上手的飞利浦279C9显示器，就是面向生产力方向的一款高颜值显示器。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201013/e0fda596106a4105b744388a3057f817.jpeg" /></p>
+<p>在显示器领域，尤其是偏向商务风格的显示器，要做出亮点其实并不容易，受限于内部结构和偏向沉稳的配色，其实很难在这些基础要求上大做文章。</p>
+<p>不过飞利浦279C9依然能够在有限的空间中，交出一份非常不错的答卷，它外观设计还获得了2020年iF设计奖和红点奖，也足以说明飞利浦这款显示器在外观设计上的功力。</p>
+<p><span></span><strong>外观赏析：每个角度都是旗舰级</strong></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201013/0b315cbcc1f8429693a6d4840c431e32.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>看一款显示器，几乎所有人关注的焦点都是正面。从正面的角度看，飞利浦279C9给人的感觉非常小巧，比普通27寸的显示器看起来要小一圈。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201013/ad70728c147543bea088f3f2743b62de.jpeg" /></p>
+<p>这款显示器的边框被遮盖于屏幕后面，这样的设计与目前流行的无边框电视非常相似。通过这样的设计，黑边的厚度被大大降低了，同时也达成了屏幕四边的边框等宽的效果，也大幅提高了画面的沉浸感，这样的设计也对装配工艺有着更高的要求。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201013/ea1272e8adfd41d5b4cb3b93becf121d.jpeg" /></p>
+<p>显示器的背面使用了弧面拉丝工艺，相比起钢琴烤漆工艺，这样的设计能够有效避免指纹污染，即使有灰尘落下也不会显得过于明显。顶部除了一排散热孔外，只有一个非常简洁的飞利浦Logo，美观耐看的同时，也非常方便打理。中间则是显示器支架的固定位置，当然显示器也是支持100mm*100mm的VESA挂架的。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201013/dbc14668652443a69a9433f342a0cee0.jpeg" /></p>
+<p>说到显示器支架，飞利浦279C9的显示器支架同样有着非常高的颜值，可以看到整个支撑杆本体非常纤细，但是上手的感觉其实很有分量，非常扎实。在支撑杆背面，还有束线卡扣，设计非常贴心。底座则是采用了方形外观+圆形镂空的设计。方形区域采用的是磨砂设计，内侧镂空则是被一圈拉丝圆环所覆盖，整体设计非常有层次感。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201013/a61fe14587e84d3f8241bdb2ac2c4ca8.jpeg" /></p>
+<p>这套支架除了高颜值以外，还支持多向自由调节的功能，可以实现90°的垂直旋转、130mm的高度调节、±175°的左右旋转，和-5°~20°的上下倾斜角度调节。有了这样高颜值多功能的底座，我相信大部分用户都不会选择VESA挂架了。</p>
+<p><span></span><strong>实际体验：Type-C设备的最佳伴侣</strong></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201013/6887eab391934a8d8af0c2cf64c40355.jpeg" /></p>
+<p>接口方面，这款显示器也提供了旗舰级显示器应该有的所有接口，显示输入方面有1个DP接口、2个HDMI接口、1个Type-C全功能接口，另外还有4个USB3.2接口以及1个3.5mm音频接口。这个Type-C接口，支持65W PD充电之外的同时，还能为显示器的4个USB接口提供数据传输功能。如今的笔记本电脑，很多都只配备1-2个USB Type-A接口，拓展性比较受限，搭配这样一款显示器可以很方便地解决拓展性不足的问题。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201013/6e441d9717124362933292a0b3e999a9.jpeg" /></p>
+<p>配件方面，这款显示器提供的线缆也非常全面。除了电源适配器之外，它还为用户提供了HDMI线、双头Type-C线（USB 3.1 Gen1标准）、DP线、Type-A转Type-C线。目前市面上的主流设备，基本上都无需再额外购买线缆进行转接了。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201013/ac196da625dd48c5a1d7732f673fd14d.jpeg" /></p>
+<p>其实有些用户可能会觉得，显示器背面的USB接口使用起来并没有提升便捷感。但从我个人的使用角度来说，对于多终端用户，这个功能是非常实用的。首先将鼠标键盘通过USB接口连接显示器，再通过Type-C接口接入笔记本电脑、手机与平板电脑，这样就可以很方便地在不同设备之间，获得同样愉悦的输入体验了。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201013/3d452dbf547f44cc920202a56256c474.jpeg" /></p>
+<p>此外它也通过了HDR 400认证，能够有效改善画面细节，提升对比度与层次感。尽管屏幕支持最高刷新率为60Hz，但是这一功能还是对于游戏画面有着很大的提升，在进行一些休闲类游戏或者3A大作的时候，能够有效改善画面的质量。对于喜欢看电影的朋友，这一功能也非常实用。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201013/59125c5c73ee4dd9b096751404fd2cb2.jpeg" /></p>
+<p>除此之外，飞利浦279C9还预置了7种预设的色彩模式，包括EasyRead与LowBlue两种非常实用的模式，EasyRead是让屏幕呈现出电纸书一样的质感，能够有效延缓文字阅读中的疲劳不适感。而LowBlue则是过滤蓝光的模式，开启后画面的色彩会稍微偏黄一些，再加上其采用的DC智能调光，在护眼这一块，飞利浦279C9是下了很大功夫的。</p>
+<p><span></span><strong>性能表现：色彩还原准确</strong></p>
+<p>从飞利浦的资料，我们可以得知，279C9使用的是一块27寸4K超清LGD原厂的IPS屏幕、支持AMD FreeSync技术。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201013/c342264cf1d34ada800b4c994a5f27cb.png" /></p>
+<p>在色域测试环节，飞利浦3279C9的sRGB色域覆盖达到99%，P3色域覆盖也达到了84%，对于一款4K显示器而言，这样的色域覆盖是非常不错的。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201013/0037e8ddfb6446d88fdf17c5ce94990c.png" /></p>
+<p>在色调响应方面，曲线约贴近2.2蓝色曲线会有更佳的表现，这款显示器的表现非常出色，基本完全贴合。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201013/c40750652aae4e9989e5ec6e09e740bb.png" /></p>
+<p>色彩均匀性方面，从测试的结果可以看出，当屏幕亮度为83％时，飞利浦 279C9显示器整体来看比较均匀，具体来看屏幕的第四象限最接近D65的标准，差值最大的象限出现在第九象限，差值为1.8，屏幕色彩均匀性表现十分出色。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201013/a61b407cd6604ad291082ad58bc7db3e.png" /></p>
+<p>亮度均匀性方面，在100%亮度下这款显示器最亮的地方出现在屏幕的中间。亮度差异最大区域在左下角，差异值为9%。 </p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201013/e03b01506657404c9032e1b156c3381b.png" /></p>
+<p>色彩精准度测试方面，通过48组的颜色进行测试，可以看到，飞利浦279C9的Delta E最大值为4.52，最小值只有0.57。平均值也只有1.12，远小于∆E≤2的标准，不管是日常办公还是专业的图像处理以及视频调色，这款显示器都可以完全胜任。</p>
+<p><span></span><strong>PConline评测室总结</strong></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201013/6b5482002dc942c8bd13742bf33cb448.jpeg" /></p>
+<p>不管是从外观，还是从实际使用的角度来看，飞利浦279C9都足以称得上是一款优秀的产品。首先是出色的外观设计，独特的屏幕结构，加上精细的做工使得它在桌面上能够赢得出色的存在感。</p>
+<p>而在使用上，人体工学支架调节、Type-C一线连、多种护眼阅读模式、HDR400以及出色的屏幕素质，都在努力去降低它在使用上的存在感，方便到让你觉得这是非常理所应当的。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201013/b117c61227474cbcb2d4f91748a8c3a8.jpeg" /></p>
+<p>当然，将近4000元的售价不便宜，但上述的功能，还是让它的性价比表现非常出色。对于超极本用户、对产品颜值和性能要求都比较高的用户，飞利浦279C9是一个很不错的选择。</p>

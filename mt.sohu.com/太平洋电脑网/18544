@@ -1,0 +1,790 @@
+➜AMD发布Zen 3架构锐龙5000系列 单核不再短板，游戏性能全面起飞
+http://www.sohu.com/a/423337144_223764	3307
+<p><strong>[PConline 资讯]</strong>2020年10月9日，AMD正式发布了Zen 3架构5000系列锐龙处理器，对比Zen 2，它在单核与能效比方面有着大幅提升，摆脱了用户一直以为的“AMD单核弱”的印象。</p>
+<p><strong> 同时苏妈还透露了RDNA2的“One more thing”，我们也通过手上的数据大概猜测了RX 6000显卡的性能，往下看就对了。</strong></p>
+<p><strong> IPC提升19%</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201009/9f38532b8e9842feb21684ea299ec0ea.jpeg" max-width="600" /></p>
+<p>第一个最大亮点的提升就是IPC，对比上代Zen 2，4GHz下IPC提升了19%，这部分的提升来自于缓存、分支预测器、执行引擎等联合带来的提升。</p>
+<p><strong> CCX大改，单CCX可达8核</strong></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201009/34a06dfd1948481094c0b12ec29552ad.jpeg" max-width="600" /></p>
+<p>对比于Zen 2的CCD内双4核CCX设计，Zen 3把单个CCX直接做成了8核设计，这样就省去了Zen 2架构内CCX之间的IF总线互联，传输数据带来的延迟，大幅减低延迟。此外8个核心可共享32MB的三缓，8个核心数据交互也能获得更快的速度。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong> 能效比碾压i9-10900K</strong></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/49667d386fec47b68fe94953eff9e089.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/c25d4f39bb3c4c24b4e196ccf283b4c3.jpeg" max-width="600" /></p>
+<p>新7nm+带来的能效比提升对比Ryzen 7 1800X为2.4倍，对比Ryzen 9 3900XT则是1.2倍。同时AMD也大胆放出与i9-10900K的能效比对比结果，Zen 3的能效比是i9-10900K的2.8倍！</p>
+<p><strong> 规格，价格</strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201009/141a82471240488995d531e7cf74f974.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201009/5010c0eed3194770aeeb65d66e903c78.jpeg" max-width="600" /></p>
+<p>各方面信息如上，四款处理器分别约合人民币（汇率6.79计算）：</p>
+<p><strong>Ryzen 9 5950X，16核32线，4.9GHz：5425元</strong></p>
+<p><strong>Ryzen 9 5900X，12核24线，4.8GHz：3727元</strong></p>
+<p><strong>Ryzen 7 5800X，8核16线，4.7GHz：3048元</strong></p>
+<p><strong>Ryzen 5 5600X，6核12线，4.6GHz：2030元</strong></p>
+<p><strong> 性能：强就一个字</strong></p>
+<p><strong> 首先是Ryzen 9 5900X：</strong></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/a146aed445e4449caf3caa4e359f0e42.jpeg" max-width="600" /></p>
+<p>1080P分辨率，全高特效设置，Ryzen 9 5900X比上代Ryzen 9 3900XT各项游戏均有提升，<strong>其中以单、双核游戏方面提升最优，最大的幅度的英雄联盟（DX11 API）可达到恐怖的50%帧数提升。</strong></p>
+<p><strong> 而且就像是PUBG、古墓丽影、全战三国这种经典“A黑”游戏，提升也非常可观。</strong></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201009/46e1db9a4ad14322b97f376c27c3e8d2.png" max-width="600" /></p>
+<p>接着是CineBench R20，Ryzen 9 5900X的单核分直接达到631之高，<strong>这是什么概念？号称单核强劲的i9-10900K也只有544分，这也是世界上首个默频单核破600分的CPU！</strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201009/b3b3688e58a84a4f8c318c415d95ade3.jpeg" max-width="600" /></p>
+<p>之后就是喜闻乐见的友商对决，Ryzen 9 5900X对比i9-10900K，整体依然是Ryzen 9 5900X占优，且单核游戏方面已经秒掉i9-10900K了（LOL与CS：GO）。</p>
+<p><strong> 接下来，Ryzen 9 5950X：</strong></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201009/3f23276c4d2243b7b2a7634bb7767fd5.jpeg" max-width="600" /></p>
+<p>此处为Ryzen 9 5950X对比Ryzen 9 3950X，生产力与游戏方面，单核性能提升效果依然显着，多核则没那么高了。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201009/b443653a5fb94755b5cf28d7e5986813.jpeg" max-width="600" /></p>
+<p>然后又是喜闻乐见的对决i9-10900K，生产力方面Ryzen 9 5950X在单核应用上依然完胜，游戏方面也比i9-10900K表现要好。</p>
+<p>各位要重点注意的是，<strong>这里的《古墓丽影：暗影》与《全面战争：三国》可是此前有名的“A黑”游戏</strong>，这次直接反超Intel处理器，可见Zen 3有多厉害。</p>
+<p><strong> 最后AMD也提到了几款CPU的性价比，均是与Intel的对位产品做对比：</strong></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/0967028c0f9b4aa890a3ca82ab06e5f4.jpeg" max-width="600" /></p>
+<p>Ryzen 9 5900X（549USD）对比i9-10900K（529USD），前者单核性价比高13%，多核性价比高23%，1080P游戏性能性价比高3%。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201009/6aac161ed7d54df19a5bb5786a415d20.jpeg" max-width="600" /></p>
+<p>Ryzen 7 5800X（449USD）对比i7-10700K（409USD），前者单核性价比高9%，多核性价比高11%，1080P游戏性能性价比两者持平。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201009/db78e0dcb1224e57bcb2eb96085eb265.jpeg" max-width="600" /></p>
+<p>Ryzen 5 5600X（299USD）对比i7-10700K（299USD），前者单核性价比高19%，多核性价比高20%，1080P游戏性能性价比高13%。</p>
+<p><strong> 500系主板无缝升级，400系主板可能要等到2021年1月</strong></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201009/2df00fb1bffe4f5195c4b536894c2646.jpeg" max-width="600" /></p>
+<p>苏妈虽然承诺400系主板可以用上Zen 3，但目前还在与主板厂商研发BIOS，最快要在2021年1月才有Beta版BIOS供用户尝试。不过估计大家也不急，这次Zen 3可能会缺货。</p>
+<p><strong> 除了Zen 3，还有……</strong></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201009/a2ef7b412a854a6c836cf569f49ed07f.jpeg" max-width="600" /></p>
+<p>万万没想到，苏妈竟然把RDNA2拿出来讲了，她本人也在发布会上说：很喜欢大家给这张卡命名：“Big Navi”（不知道有没有听错）。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201009/c006e1e3e2e74879aa40cfc5bf7469a4.jpeg" max-width="600" /></p>
+<p>在这个“One more thing”中，苏妈也悄悄给出了三个游戏，新RX 6000显卡的测试成绩。<strong>还真巧了，我们之前RTX 3080正好测了《使命召唤：现代战争重制版》的4K成绩！</strong></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/14c5d5ee81f040be8dabb3fe3ea692cd.jpeg" max-width="600" /></p>
+<p class="ql-align-center">此前测试的现代战争4K成绩</p>
+<p><strong> 虽然测试平台大概率不同，但差距应该不过5%，依照这个结果，RX 6000的旗舰型号性能应该就和RTX 2080 Ti差不多了，与之前泄露的信息基本吻合。</strong></p>
+<p><strong> 总结</strong></p>
+<p>Zen 3处理器可谓惊喜连连，我们终于看到了这么多年后AMD能反击Intel一波的情景了，不过还是老生常谈，卖多少，买不买得到，才是用户面对的最终问题。</p>
+<p>就价格来说，Zen 3比上代Zen 2稍贵，已经比较接近现在的Intel处理器售价了（屠龙者终成恶龙？），但性能厉害不少，并且再综合主板，其实Zen 3这边是更加便宜的，B550就可以畅玩，还可以超内存。相反Intel想超内存得要Z490系列，主板立刻拉高装机成本，性价比方面AMD这边依然有着话事权。</p>
+<p>但想装机的朋友建议除了家境比较富裕或者想解锁更多玩法，不然最好不要碰X570，一是太贵，二是会面临Zen 4淘汰风险。</p>
+<p>显卡方面惊喜则没有CPU那么多，虽然显卡性能有提升，但如果真的是RTX 2080 Ti的性能，那确实提不起太大兴趣，除非价格可以绝杀一波。而这就要等10月28日的RDNA2发布会了。</p>
+➜OPPO x 天刀全新联动活动开启,一起解锁三重好礼
+http://www.sohu.com/a/423338714_223764	3743
+<p>[PConline 资讯] 国风燎原，OPPO x天刀计划启动！10月5日，天涯明月刀“国风燎原”校园计划 x OPPO校园创作赛事开启，OPPO手机联动活动、OPPO Reno4 pro限量版定制礼盒将陆续上线，创作好礼、狂欢福利就等你来拿！此外，创作赛事特别探索奖作品，还会搭载OPPO校园“相信年轻的力量卫星”被送入太空，与月同赏。科技国风，精致浪漫，你值得拥有！</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201009/37aa11c1212247dcbf6412d40c900c10.jpeg" max-width="600" /></p>
+<p><strong>创作活动开启 豪华好礼相送</strong></p>
+<p>十城明月，共创天涯。即日起至10月26日期间，天涯明月刀“国风燎原”校园计划 x OPPO校园创作赛事将正式启动。在此期间，创作者可以从摄影组、绘画组、音乐组、视频组四赛道中任选一个或多个赛道进行作品投递，尽情挥洒自己的国风创意。当然，比赛中的“十城”为泛指，不限具体地理位置，创作者们不必因此而受限。若创作者暂无创作方向，也可以关注10月14日天涯明月刀“十城明月”虎牙直播汲取灵感，释放内在的文化潜能。</p>
+<p>10月29日，天刀将会公布参赛者的获奖名单。每个赛道均设优胜奖1位，参与奖若干。除却5000 Q币激励金外，优胜奖将根据赛道的不同，获奖作品会分别被置于手游、腾讯视频内进行推广展示，更将同步在OPPO手机、QQ音乐内作壁纸、音乐歌单、弹窗动画，让整个世界都看到你的作品。此外，创作赛事还设定一名特别探索奖，创作者作品将搭载OPPO校园 “相信年轻的力量”卫星，随卫星发射送入太空，获奖者还可得到由OPPO送出的“天涯明月刀限量版定制礼盒”。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201009/d46f3879712048e5a3ed2d17ba7b4b98.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>联动活动开放 解锁超多惊喜</strong></p>
+<p>10月16日，OPPO x 天涯明月刀全新联动活动也将一并开放，少侠们打开OPPO手机，就可解锁超多内容。主题商店内，少侠们可免费获取《天涯明月刀》精美动效主题、高清壁纸及专属铃声。用一句“你好小布”唤醒Breeno语音，对小布（Breeno语音中文名）说：“天涯明月刀”，就可将独具江湖风味的“天刀语音包”收入囊中。左划乐划锁屏，十城明月大片和更多游戏场景锁屏图片瞬间Get。打开Soloop即录，使用《天涯明月刀》游戏定制模板，还可剪辑你的专属江湖视频，记录江湖心动瞬间哦。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/bac72c5dc08d4418bd1e1217bdcd9fe2.jpeg" max-width="600" /></p>
+<p><strong>限量定制礼盒 套装淘宝直播</strong></p>
+<p>除却创作、手机方面的联动外，OPPO 联合天涯明月刀还将推出限量版定制礼盒，内含OPPO Reno4 Pro 5G手机、移花灵鹿骨瓷杯精美两件套。OPPO Reno4 Pro 5G手机，品质一如既往，充电5分钟，刷剧续航4小时，玩起天刀更是妥妥的神器一枚。此外，买手机就会送移花灵鹿骨瓷杯，顷刻收获颜值惊喜。10月14日，天猫OPPO官方旗舰店限量发售，日付低至4.2元起就可抱走天刀限量定制礼盒。十城明月现场，OPPO还将携手天猫同好派在淘宝直播带来专场直播，想要该定制礼盒的少侠们，可以前来观看哦！</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201009/5143059e4a7349c7b9f2457626c2d851.jpeg" max-width="600" /></p>
+<p>OPPO x天刀三轮联动即将启动，精美好礼等你来拿！如果你也钟爱国风，如果你也有创作灵感，如果你也对OPPO x天刀充满兴趣，那就赶快前来参与吧！</p>
+➜达尔优EM910鼠标上手：轻装上阵依旧能打
+http://www.sohu.com/a/423340015_223764	4111
+<p><strong>　[PConline 评测]</strong>提起达尔优，许多人第一反应就是牧马人鼠标。在电竞行业兴起的这些年，达尔优牧马人扮演了一个非常重要的角色。重要到什么程度呢，前几年如果你到一个大学男生宿舍，你会发现有一大半打游戏的男生用的鼠标都是达尔优的牧马人。随着牧马人系列的更新换代，达尔优也从这一系列中衍生除了许多不同的产品，比如说牧马人五代EM915、尊享版的EM925pro以及入门级的EM902等等。如今，轻量化鼠标开始流行，达尔优也为牧马人系列推出了专属的轻量化产品，就是今天所评测的这款EM910鼠标。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201009/78164f4fb48a4cc6ad705ee5fb0305c7.jpeg" max-width="600" /></p>
+<p><strong> 外观设计：经典外观的另一种打开方式</strong></p>
+<p>牧马人系列的前世今生，要说起来可以说一整篇文章。但我们今天的主题是评测，所以还是回到产品本身来。外观方面，这款产品采用了牧马人系列非常经典的对称式设计，在外形的风格上和EM915一脉相承。就算把它的Logo完全遮住，也能一眼看出它就是牧马人。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201009/763351deda04405caf6770071ec22e8a.jpeg" max-width="600" /></p>
+<p>当然，从外观图片来看，我们也可以很明显看出，标志性的裂纹灯效是肯定不会有的。取而代之的是更加符合当今主流审美的灯光效果，鼠标边缘有一圈导光条，正面则是以点阵灯光的形式展现的达尔优Logo，属于非常耐看的设计。灯效的调节是可以通过鼠标底部的按键进行设置的，其预置了常亮、霓虹、呼吸、跑马灯与指动5种模式。这样的外观设计，使得它不管是搭配电竞风格的电脑外设，还是拿到办公室作为办公鼠标使用，都不会有任何的违和感。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201009/448c4645ce71494e9b19d6d809f33b6e.jpeg" max-width="600" /></p>
+<p>配色方面，这款鼠标目前在售的配色有黑色以及蓝白两种，蓝白配色采用的虽然是比较明亮的色彩，但用了低饱和度的设计，在初看非常惊艳的同时，也非常耐看。材质上，两款配色的鼠标整体都采用了类肤磨砂的材质，滚轮则是采用了一个格纹的橡胶材质，防滑性能非常出色。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201009/5f1d03fa038348adbf4235760541a1bb.jpeg" max-width="600" /></p>
+<p>作为轻量化的鼠标，达尔优EK910的重量只有75g，上手的感觉非常轻盈。虽然没有达到达尔优A960那种65g的极致轻盈水平，但相比起同价位主流品牌的鼠标来说，都要轻一些。这反映在操作上是一个很直观的体验，在游戏中更轻的鼠标能让你有更快的响应，办公中轻量化的鼠标也能让你的手腕更加轻松。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201009/96bfb4ffe97f46c78b9b76981c92e9ca.jpeg" max-width="600" /></p>
+<p>对于轻量化鼠标来说，很多人会担心其结构强度的问题，其实我也有这样的疑虑。达尔优EK910采用了创新内骨架的设计。在实际的体验中，用力按压鼠标外壳，它的变形幅度非常小，甚至比大部分的重型鼠标表现都要再好一些。可以看到，在装配工艺和结构强度方面，这款鼠标的质量是无需担心的。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201009/a786c39632d34ac2975c1f98bbd946a4.jpeg" max-width="600" /></p>
+<p>线材的选择上，这款鼠标采用了编织线材，相比起橡胶材质和其他编织线材，这款鼠标的线材给人的直观感受就是更加柔软，力求在使用上尽力降低其存在感。</p>
+<p><strong> 性能实测：扎实用料+易上手设置</strong></p>
+<p>外观固然是选择鼠标的一个重点，但最关键的还是在于好不好用。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201009/0d8c6450cd8445b185948728d0b0c39d.jpeg" max-width="600" /></p>
+<p>性能方面，达尔优EK910搭载了PMW3336光学传感器，这款传感器定位中端，能够满足大部分用户的游戏与日常使用，支持500~8000的dpi调节，回报率则从125Hz到1000Hz分为四个挡位可调，加速度为30g。对于MOBA、FPS等多种类型的游戏来说，这款鼠标都能够完美胜任。不仅如此，它的微动寿命达到3000万次，寿命问题也是无需担心的。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201009/4c606312cef545b1980eb05dfedcbb96.jpeg" max-width="600" /></p>
+<p>按键方面，除了左右键和滚轮，它还配备了两个侧键，以及滚轮后方的两个dpi调节按键。达尔优为这款鼠标配备了其专利的KBS技术，这一技术可以让左右键能够无死角触发。在实测中，不管采用抓握还是趴握的形式，点击左右键的不同部位，其触发感受都是一样的。对于不同手型和使用习惯的用户来说，这样的设计效果是非常明显的。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201009/afbf7dec38124a96bccd1477b5c8fa6f.png" max-width="600" /></p>
+<p>除了依靠按键去调节性能指标以外，达尔优EM910还可以通过软件对鼠标设置进行微调。在官网下载驱动软件之后，可以看到驱动软件可以对按键进行自定义调节以及宏设置。6挡dpi同样可以通过软件进行更加细致的调节，让大部分玩家都能找到自己最适合最熟悉的dpi设置。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201009/dc2ed76ea1704bc1827fbdedd3a34c77.png" max-width="600" /></p>
+<p>同时在软件上我们也能对鼠标回报率进行调节，一共分为4个挡位，可以适应办公、游戏以及电竞等多个不同需求，还能对鼠标速度、双击速度进行微调。灯光设置同样也可以在驱动软件中找到，通过软件，我们可以非常容易地对RGB灯光进行自定义，与桌面其他的设备实现灯光的搭配效果，实际的使用也非常容易上手。</p>
+<p><strong> 总结</strong></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201009/e4d44370633748e1b791de54d7d019f4.jpeg" max-width="600" /></p>
+<p>总体来说，达尔优EK910的表现十分均衡，各方面表现都几乎没有短板。经典的外观设计加上全新的配色，再搭配轻如鸿毛的重量，使得它不管是游戏还是办公都能有非常不错的表现。牧马人系列多年以来积累的优化，使得它在新鲜之余，也有着十分可靠的稳定性。目前，它的售价为149元，在这个价位，达尔优EM910算是一款非常具有性价比的产品。</p>
+➜4G网速跟不上？5G手机带你一起乘风破浪！
+http://www.sohu.com/a/423364569_223764	9799
+<p>[PConline 杂谈] 进入21世纪以来，人们的生活变得越来越便捷，如身隔数千米的我们能“面对面谈话”，足不出户我们也能知天下事，买天下物，这些变化都得归功于快速发展的网络。时至今日网络似乎成为了我们身体的一部分，正如段子手说的：“可以一天不吃饭，但不能一天不上网”。就在我们越依赖网络的同时，我们开始不满足于现在的4G网络速度了。直播看超清画质时常卡顿、购物节秒杀抢不过PC党、微博加载缓慢，吃瓜不及时，这些烦恼都得甩锅给缓慢的4g网络。想要畅快的网上冲浪？这时候你就需要一款5G手机带你一起乘风破浪了！</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201009/9b7441fca90d42dfa9b23d63f4953879.jpeg" max-width="600" /></p>
+<p>今天推荐的几款5G手机都拥有一个共同点，那就是极快的网速，他们分别是一加8 Pro、OPPO Ace2、vivo s7、realme X7 Pro。首先来看主要参数表。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201009/5adf089174fa426e99ee7950ad944b19.jpeg" max-width="600" /></p>
+<p><strong>外观</strong></p>
+<p>这几款手机的外观设计，手机厂商都有着独特的理解。在一加8 Pro上，青空配色表现为随光线变化呈现不同颜色——从侧面看去呈蓝色，随着逐渐转向正视呈现出绿色的渐变，配合哑光AG玻璃，让明快的配色同样不失内涵。OPPO Ace2的直屏设计和背部的奥利奥设计，简约低调，vivo S7则有着大气潮流的外观吸，配色方面，vivo S7拥有三种风格各异的配色：莫奈漫彩、爵士黑和月光白，可以满足不同人群的审美偏好。realme X7 Pro全新的，难以被定义的颜色——C位色，“双纹双镀”工艺的加持，让它有了多变炫目的色彩，AG淋涂工艺则锁住了这些变幻莫测的光影，赋予它低调而通透的质感。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>一加8 Pro</strong>正面采用了一块6.78英寸的双曲面屏幕，曲率相比前代一加7 Pro有所增加，曲面面积减少，不仅进一步收窄了手机的宽度，同时也减少了因曲面反光对于观感的影响。手机背面是这代一加8 Pro的亮点所在，提供了黑镜、青空、蓝调三个配色，其中黑镜采用亮面玻璃质感，青空与蓝调则采用第五代AG玻璃（防眩光玻璃）的设计，雾度有所增加，抗指纹能力有所提升。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201009/a5a650e32ea343b3a88258e4d65d694f.jpeg" max-width="600" /></p>
+<p><strong>　OPPO Ace2</strong>配备了一块6.55英寸的OLED屏幕，采用左上角挖孔设计，支持90Hz刷新率、180Hz触控采样率，分辨率为2400×1080，局部峰值亮度可达1100nit，这块屏幕还通过了HDR10+认证和德国莱茵TÜV全局护眼认证。背面采用四摄奥利奥镜头模组，有月岩灰，梦幻紫，极光银三种配色。重量实测为185g，保证了日常使用的良好握持感，放在口袋里不会很重，长时间游戏也不会累手。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201009/d0a82c61990340ca9de8015f603ecfe9.jpeg" max-width="600" /></p>
+<p><strong>vivo S7</strong>正面采用了一块6.44英寸AMOLED全面屏，分辨率达到2400x1080，宽高比为20:9，非常接近电影的拍摄比例21:9，修长的设计不仅握持手感舒适，而且追剧、刷短视频时的视觉体验也很让人享受。从侧面来看，vivo S7的机身厚度非常纤薄，控制在了7.39mm。整机重量为170g左右，因此将它拿在手中，完全不会觉得沉重，对比今年上市的一众动辄200g+的5G手机，vivo S7凭借轻薄鹤立“机”群。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201009/e1b318222afe4587a43accd8fe3aca6b.jpeg" max-width="600" /></p>
+<p><strong>realme 真我X7 Pro</strong>选择了一块6.55英寸分辨率为2400*1080的AMOLED屏幕。这块屏幕不仅采用全新E3发光材料，而且拥有高达120Hz的刷新率和240Hz触控采样率，用户在滑动操作、游戏场景触控操作等更加流畅，跟手响应速度更快。同时屏幕采用高端手机才使用的COP封装工艺，全局亮度800nit，峰值亮度1200nit、还拥有4096级亮度调节，亮度变化更柔和。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201009/2d1b3b007c0f468f84884533e0bf3a2a.jpeg" max-width="600" /></p>
+<p><strong>性能和系统</strong></p>
+<p>这几款手机都支持NSA+SA 双模5G，不仅网速体验极好，而且性能配置方面也没有落后，一加8 Pro、OPPO Ace2的骁龙865平台，realme　X7 Pro的天玑1000Plus，都是当前手机处理器榜中数一数二的存在。而vivo S7的骁龙765G在游戏体验上也有着不俗的表现。</p>
+<p><strong>一加8 Pro</strong>延续历代机型特色，并没什么悬念的搭载了高通骁龙865平台、LPDDR5运存、UFS3.0闪存等顶级配置。同时，得益于高通X55基带。支持NSA+SA 双模5G高速上网。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201009/74697e6c30874f39a2cc517832ab9044.jpeg" max-width="600" /></p>
+<p>安兔兔跑分586208分，Geekbench4单核分数900分，多核3320分，顶级旗舰的水准。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201009/22b37c2a86d84381897ab398d984585b.jpeg" max-width="600" /></p>
+<p><strong>OPPO Ace2</strong> 采用了高通骁龙 865 移动平台，不仅能够配合 最高LPDDR5 内存+ UFS 3.0 存储提供超强的游戏性能，还可以支持 SA/NSA 双模 5G 网络，从而实现超快网络体验，出门在外时无论是看高清在线视频，还是下载游戏数据包，OPPO Ace2 都能够超额满足你的需求。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201009/29446e259d53453191a156dc345bd15d.jpeg" max-width="600" /></p>
+<p>游戏实测方面，OPPO Ace2的表现十分稳定，适配了超高帧率的和平精英，在90FPS的游戏测试35分钟的游戏时间，Ace2跑出平均88.9FPS的成绩，大卡顿只有0.8，真就一直高帧率一直爽。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201009/9c7fe946c06d49bcbba261f27393a01d.png" max-width="600" /></p>
+<p><strong>vivo S7</strong>选择了骁龙765G。它跟骁龙865一样都是基于7nm制程工艺打造的，并且支持NSA/SA双模5G频段，满足日常流畅操作使用需求没有压力，在安兔兔的跑分测评中取得32万分+的成绩，符合中端手机的标准。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/03259b4686c94053a0e2a00da647f2ac.jpeg" max-width="600" /></p>
+<p>从统计的数据图来看，vivo S7的表现非常不错，十多分钟的游戏中几乎全程保持在59.5帧左右，帧率图已经几近一条直线，游戏的体验非常不错，王者上分那是轻轻松松的。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201009/6a01a3e76091469fa8c6be178bcd35a1.jpeg" max-width="600" /></p>
+<p><strong>X7 Pro</strong>搭载联发科天玑1000Plus处理器，VC液冷散热，7nm工艺 A77+G77架构，支持双模5G，覆盖n1/n3/n41/n77/n78/n79六频段，支持5G+5G双卡双待，满足所有场景的5G的使用需求。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/210024aeffed406e995e3a814fe73aee.jpeg" max-width="600" /></p>
+<p>通过安兔兔跑分获得，realme 真我X7 Pro CPU达到了167272分，GPU达到了201709分；通过鲁大师跑分获得，realme 真我X7 Pro CPU达到了158302分，GPU达到了173559分。第一梯队的性能表现。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201009/973f6dbf2f314909a53b3ceb4e7d8f92.jpeg" max-width="600" /></p>
+<p><strong>拍照</strong></p>
+<p>在拍照方面，一加8 Pro旗舰级的四摄组合，OPPOAce2可以拍出一亿像素照片，vivo S7 的前置双摄，可以留下非常好看的照片，realme 真我X7 Pro在较暗的场景下也能直出6400万的超清图片，成像拥有更好的噪点控制以及更加丰富的细节表现。这几款手机都能让你很好的记录生活。</p>
+<p>影像系统方面，<strong>一加8 Pro</strong>升级到了四摄组合。其中主摄传感器为今年的旗舰级Sony IMX689，传感器尺寸为1/1.4英寸，单个像素1.12μm，支持全像素全向对焦，大幅提升了相机对焦速度，并支持OIS光学防抖。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/3047701eb87448689e8ef8573dc9d876.jpeg" max-width="600" /></p>
+<p>而超广角镜头传感器，一加8 Pro则采用了Sony IMX586，作为去年的旗舰级传感器，在其他机型中通常作为主摄，此次一加8 Pro用作超广角，无论在广角摄影还是微距摄影上都带来了出色表现。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201009/758fb6bded9146799f0bd0c3b2ebbffc.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201009/b5c7c1428ad642f697fe4c317702a475.jpeg" max-width="600" /></p>
+<p>从硬件来看，<strong>OPPOAce2</strong>在拍照方面同样给出了不错的答案。其提供了一套主流四摄方案，它们分别为4800万主摄、800万超广角、一枚肖像镜头以及一枚漏光镜头。其中4800万主摄采用成熟的索尼IMX586传感器，配合f/1.7的大光圈以及四合一像素合成技术。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201009/b9ec0330f5e84833947999942313a0a1.jpeg" max-width="600" /></p>
+<p>并且在软件算法方面，OPPO Ace2拥有超分辨率算法技术，通过手持拍照采集的多帧照片之间的亚像素位移， 重建出更高分辨率的图像，最合成一张分辨率为12032×9024的照片，照片放大裁切也很清晰。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/4997b98b5312403a9531c61b5559570b.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201009/2869675a0ce543acb680a154348ff1cf.jpeg" max-width="600" /></p>
+<p><strong>vivo S7 </strong>搭载了前置双摄，其中主摄是三星 GH1，具备 4400 万像素，f/2.0 光圈 +，支持像素四合一和 PDAF 自动对焦，副摄为超广角镜头，800 万像素，f/2.28 光圈，105° 超广角。在算法方面，S7 带来了五重质感美颜 3.0 技术，新增泪钻状、雀斑妆等个性化妆容和 “小头”功能，自拍多风格功能升级到 3.0，新增了假日、洛可可、1980s 三种不同风格。此外还新增了 “双重曝光”功能，可以同时使用前置和后置的主摄进行取景，拍出更多的创意图片。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201009/689ba410ae9b49d28ad1ec5e358c1e75.jpeg" max-width="600" /></p>
+<p>后置 6400 万像素主摄 + 800 万像素 120 超广角 + 200 万像素，其中主摄是 vivo NEX3S 上的那枚 GW1，vivo 打磨已经得心应手了，从样张中可以看到，GW1 具备超强感光能力与超高宽容度，可以显着提升画面亮度、色彩逼真度，呈现出丰富的画面细节。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201009/1e044393f75641fa9fa212c203e0f106.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201009/4db083ac53e6473aa08d9eaa3b4de04d.jpeg" max-width="600" /></p>
+<p>摄像环节， <strong>X7 Pro</strong>的后置搭载四摄影像系统，64MP主摄，传感器为索尼IMX686旗舰级传感器，同时这也是目前realme最好的一枚主摄镜头。另外，还有8MP超广角（119°）+2MP黑白人像+2MP微距三枚镜头，都是比较主流的镜头配置了，完全满足我们对手机相机的需求。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201009/b61f7a2b6d25490eb4941f1455823aef.jpeg" max-width="600" /></p>
+<p>从样张中可以看出照片的画面细腻感，色彩的还原度，如果显示在X7 Pro自己的屏幕上将更加绚烂。另外64MP多帧技术是realme独家自研的算法，这是一种全新的多帧合成技术，加上X7 Pro主摄独特的解析力其画面可想而知！</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201009/362e2ee74d45464895ab050b3d24335b.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/722b55209a174ac8a7f319c64a5809bc.jpeg" max-width="600" /></p>
+<p><strong>推荐理由</strong></p>
+<p><strong>推荐产品：一加8 Pro</strong></p>
+<p><strong>参考价格：5399元</strong></p>
+<p>用了一加8 Pro之后，你就忘不掉2K+分辨率与120Hz所带来的细腻顺滑感觉，也忘不掉随光影变幻的外观和仅为199g的轻薄手感。而在那些感知较强的参数上，一加8 Pro同样有目前旗舰级别的处理器、双旗舰的影像传感器，以及4510mAh电池，让手机变得非常全面。可以说，一加8 Pro绝对满足你对旗舰机的所有幻想。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201009/52ac34abeada4e5b9125d7fc271f6658.jpeg" max-width="600" /></p>
+<p><strong>推荐产品：OPPO Ace2</strong></p>
+<p><strong>参考价格：3999元</strong></p>
+<p>ACE 2其实还是有不少亮点的，屏幕素质还算不错，快充表现相当吓人，轻薄设计对重量敏感的人也很友好，如果你对拍照的需求不大，对手机的重量比较敏感或者过去使用的手机重量较轻，对游戏性能，屏幕素质和快充要求较高的话，ACE 2是一部值得你购买的产品。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/de16c2532ca4461e976444c7f4bff33a.jpeg" max-width="600" /></p>
+<p><strong>推荐产品：vivo S7</strong></p>
+<p><strong>参考价格：2798元</strong></p>
+<p>vivo S7无论是在自拍功能上，还是在外观设计上，都体现出了满满的诚意，“轻薄自拍旗舰”的称号可谓实至名归。借助于vivo S7，我们可以随时随地拍出清晰且有质感的照片，同时，vivo S7还能带给我们视觉与触觉上的双重极致享受。总之，不管是对于“自拍党”还是“颜值党”而言，vivo S7都是一款让人心动的5G旗舰手机！</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201009/1d2a9455166b45ff87caba174f4fa5d8.jpeg" max-width="600" /></p>
+<p><strong>推荐产品：realmeX7 Pro</strong></p>
+<p><strong>参考价格：2199元起</strong></p>
+<p>realmeX7 Pro无论在手机外观设计、入手体感，主打高性能高性价比120Hz刷新率的柔性屏和65W的闪充技术，加上更加潮流的外观设计，都是这个价位段顶级的配置和体验。X7 Pro仅仅2199元起步的售价，更是使之成为了性价比极高的存在。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/201889d83bad4ac9acd6397ef2f903f1.jpeg" max-width="600" /></p>
+<p><strong>总结</strong></p>
+<p>不定时的视频会议、十万火急的工作文档处理，网速慢延迟一高，分分钟让我们抓狂！如何拯救我们的十万火急？换5G手机是个好办法，今天推荐的四款5G手机不但颜值、性能极好，而且可以让你畅快地网上冲浪。用上5G手机，让我们一起畅享超高网速，探索更广阔的网络世界吧。</p>
+➜如何做个合格的吃瓜群众？5G让你快过狗仔队！
+http://www.sohu.com/a/423371034_223764	11101
+<p>[PConline 杂谈]作为一名吃瓜专业户，什么明星恋情曝光、什么新剧上映、产品发布等，我都必定要凑个热闹一探究竟。无奈的是，用着4G手机的我吃瓜总慢人一步，可谓瓜都吃不上热乎的，于是我盯上了5G手机。从今年起，5G手机进入了新的纪元，5G基站的迅速扩建、各大运营商的5G网络套餐也陆续推出，这让过去空有其表的5G手机能真正地为我们带来优质网络体验。百Mb每秒的下载速度、丝滑流畅的上网体验你还怕不能第一时间吃上热瓜吗？今天我就来给各位介绍几款5G手机，助你做个合格的吃瓜群众，轻松快过狗仔队！</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/27220fc6a69147dd96817df61fa75ff6.jpeg" max-width="600" /></p>
+<p>它们分别是一加8 Pro、OPPO Ace 2、荣耀X10、Realme X7 Pro，那么它们为什么说是今年最热门的5G旗舰呢？我们不妨先来看看它们各自的主要参数吧！</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201009/23a11095f99e4e5aa74b126619a3a083.png" max-width="600" /></p>
+<p><strong>外观对比</strong></p>
+<p>从上方的参数表中，我们也可以大致看出我在这里给大家带来的四款机型都可以说的上是妥妥的“第一梯队”。而且有一点是一样的，它们都有着多种色彩的外观，让我们年轻群体有了更多的选择，彰显着自己的个性。</p>
+<p><strong> 一加8 Pro</strong>拥有是最和谐的后盖设计，位于背部中线排列的镜头模组、一加的Logo，辅以AG雾面的玻璃背板，可以说是外观与手感同时兼顾的绝佳搭配。而正面则是一块6.78英寸的AMOLED曲面挖孔屏，而且正因为这块优秀的屏幕，让它成为了今年为数不多的可以让2K+和120Hz这两种屏幕优势同时发挥的手机了。在我们买手机第一会考虑的机身配色上，一加8 Pro推出的配色有青空、蓝调和黑镜三款，青空和蓝调的背面采用的是AG磨砂工艺，黑镜款的背面为亮面玻璃。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/ed4407c3eae345bda0a2b2838204f125.jpeg" max-width="600" /></p>
+<p><strong>OPPO Ace2</strong>的背面看起，Ace 2 的背面用的是一块3D曲面玻璃的背板，四颗摄像头以两列的方式排布在圆环内，品牌Logo位于靠下的位置。我们手上拿的是月岩灰转过来看正面，Ace 2的正面是一块支持90Hz刷新率的6.55寸OLED 挖孔直屏，也通过了HDR 10+的认证。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/09998019e0184abcbb2f0b1361307591.jpeg" max-width="600" /></p>
+<p><strong>荣耀X10</strong>是今天的第三款推荐机型。如果你是一个不喜欢给手机装上保护套的“裸奔党”，那这荣耀X10的背面外观一定能吸引到你，因为荣耀X10在外观上用的是一种名为“超时空菱影幻变”的背面设计，有着光速银、探速黑、竞速蓝和燃力橙四种配色版本。正面是一块6.63英寸全面屏，有着90Hz的高刷新率。前置摄像头用的是升降式，使得整机正面有着特别好的一体性。因为在屏幕材质上用的是IPS，又要保持背部的一体性，所以用的是侧边的指纹识别。整机厚度8.8mm和203克的重量。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201009/73c5b9f920b74b10a7154aa6216fe45a.jpeg" max-width="600" /></p>
+<p><strong> Realme X7 Pro</strong>有着最吸睛的外观，有着三纹理双镀的AG工艺加持，让背面看起来有着特别亮丽的色彩外观。三种不同层次的纹理拼接起来给人带来一种及其活力的观感。翻到正面来看，Realme用的是时下流行的AMOLED 单挖孔全面屏，6.55寸大屏配以120Hz的超高刷新率，在日常使用可以给你带来极为流畅跟手的体验。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201009/c781007d36b44f04a500ac2975292464.jpeg" max-width="600" /></p>
+<p><strong>性能和系统对比</strong></p>
+<p>在机身性能方面来看，这四款机型用的都是目前在市场上主流的5G芯片，一加8 Pro和OPPO Ace2用的是高通骁龙865处理器，荣耀X10使用的是华为家的麒麟820，Realme X7 Pro则是联发科天玑系列的旗舰芯片1000+。</p>
+<p><strong> 一加8 Pro</strong>在配置的选择上，用的都是超上乘的搭配方案，高通骁龙865、双模5G、触感反馈一向很好的Haptic线性马达，颜色准确的屏幕配上杜比全景声的双扬声器，简直可以给你带来视觉上和听觉上的双重享受。在电池续航方面，一加8 Pro有着4510mAh 容量的大电池，有着自家的30 W Warp有线闪充和同为30W的无线充电，在日常使用中可以一定程度上消除了高分辨率和高刷齐开时带来的续航焦虑。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201009/f7a5816d03694867b971da0f025e605b.jpeg" max-width="600" /></p>
+<p>从日常的跑分上来看，一加8 Pro在安兔兔上的跑分成绩为576334分，在Geekbench 5中，单核成绩900分，多核成绩3304分，连续读写速度分别为1725.83MB/s和744.3MB/s，都处于目前的前列水准。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201009/eaf86df862af4db19b45f84f7cc2b7f6.jpeg" max-width="600" /></p>
+<p><strong> OPPO Ace 2</strong>在配置的选择上，当然也是旗舰级的，安卓阵营最强的5G处理器高通骁龙865、双模5G、LPDDR5的内存和UFS 3.0的闪存，也支持最新的Wi-Fi 6。这么强的配置，在充电上自然也是马虎不得，OPPO家的充电技术可谓是人尽皆知的，Ace 2机身内搭载的是双电芯的4000 mAh 大容量电池，配备的是自家65W的superVOOC 2.0有线快充，还支持40W的无线快充和10W的无线反向充电，可以随时为你手边支持无线充电的手机或耳机作个“临时充电宝”。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201009/c3351f33b33c43b785360172902c8225.jpeg" max-width="600" /></p>
+<p>在读写速度方面，连续读取和写入速度分别为1631.7MB/s和677.71MB/s，随机读取和写入速度分别为219.05MB/s和204.12MB/s，结合OPPO的HyperBoost技术，读写速度自然没得说，稳稳的旗舰速度。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201009/26b4dfc19d2c4c6f94bc7963669f520f.jpeg" max-width="600" /></p>
+<p><strong> 荣耀X10</strong>是荣耀X系列里首款支持5G的机型，搭载的是海思麒麟820双模5G芯片，可以同时兼顾性能与功耗控制，最高主频可以达到2.36GHz。在整体看来，荣耀X10 的最大亮点在于有着最快的5G网络速度，有着最多的5G频段支持。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201009/46d6b730181f477ab3081615c0a137da.jpeg" max-width="600" /></p>
+<p>从跑分情况来看，荣耀X10 的安兔兔得分376145分，Geekbench 5中单核得分636，多核得分2429，总体来看与上代旗舰基本处于“五五开”的架势。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/960bc69b82af4a69813cef7b8519e7d1.jpeg" max-width="600" /></p>
+<p><strong> Realme X7 Pro</strong>不仅外表漂亮，内部性能也同样不差。Realme X7 Pro搭载的是“仅次于865”的天玑1000+芯片和8G的LPDDR4X内存，使得它不仅内存速度提升了，功耗也比上代降低了不少。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201009/5e834b2aa4174f49b6b2709e80d6849a.jpeg" max-width="600" /></p>
+<p>在性能跑分方面，Realme X7 Pro 搭载了目前仅次于骁龙865的天玑1000+旗舰芯，说是仅次于，但性能同样不差，在安兔兔跑分成绩535793分，鲁大师成绩426712分。为了照顾日常玩游戏因为发热而导致降频的情况，Realme X7 Pro还配备了电竞级别的VC液冷散热，让机身核心温度降低，游戏性能得到充分发挥。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201009/843711cf81f34b6f9584e8f0f55afbbd.jpeg" max-width="600" /></p>
+<p><strong>拍照对比</strong></p>
+<p>在拍照方面这几款手机都很出色，凭借强大的硬件和软件算法，让你随手一拍就能得到精美的照片。</p>
+<p><strong> 一加8 Pro</strong>背面摄像头为主摄和超广角两颗4800万像素摄像头加上800万的3倍长焦以及500万像素的滤光摄像头的四摄组合，几乎覆盖了日常能使用到的所有焦段。主摄传感器用的是索尼定制的IMX689。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/6779e33704624579a9c8f67472bf7f86.jpeg" max-width="600" /></p>
+<p>在日常光照条件下，得益于索尼的IMX689 的大传感器，在大逆光的场景下也能拍出观感超好的高动态对比照片。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/f9dd831d1ad449418d2b94c9f1d18b89.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201009/b2b433816f394abb9b66d4e496b99bc8.jpeg" max-width="600" /></p>
+<p><strong> OPPO Ace 2 </strong>在后摄的配置上当然也是旗舰级别的，4800万主摄、副摄800万另外两颗是复古镜头和人像镜头，都是200万像素。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201009/5e43e736d6114b88b43a20fd162c7f1c.jpeg" max-width="600" /></p>
+<p>OPPO Ace 2的主摄用的是索尼的IMX586传感器，拥有1/2英寸的感光面积，用以降低夜间噪点，提升整体画质。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201009/c6572cf5bdd44588a769f3ac402e0c48.jpeg" max-width="600" /></p>
+<p>不仅是夜景，在日常拍摄的场景里，得益于独有的“像素四合一”技术，即便是在阴天，OPPO Ace 2 也能有更大的进光量，从而可以拍出观感优秀的照片。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201009/e39523e1e8e344d4b4e70b7b6f545bab.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/cb9031c4fb924ab78082de9b54406948.jpeg" max-width="600" /></p>
+<p><strong> 荣耀X10</strong>的后置相机模组里，有着一颗4000万像素的超清主摄，不仅是主摄性能强悍，还有一颗800万的广角/景深二合一镜头和一颗200万像素的超微距镜头。内部还搭载了索尼1/1.7英寸的超大CMOS，让荣耀X10 可以拥有更高的动态范围。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/c06422005f414881a0591676626b2903.jpeg" max-width="600" /></p>
+<p>因为在内部像素的排列方式上用的是独特的RYYB排列方式，从而使得进光量得到显着增加，让它不论是在白天还是夜间暗光条件下，都能很好控制噪点，提升整体画面亮度。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201009/dee40b1de8e246fd8d2d029d0c771de5.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201009/25219e72a8d248e2920e1d3c2423bc22.jpeg" max-width="600" /></p>
+<p><strong> Realme X7 Pro</strong>在拍照上有着自家的一门黑科技，名为6400万多帧技术，是一种新型的多帧合成算法，通过这项算法，可以对拍摄出的画面进行降噪处理。有了这项技术的加持，可以获得出细节更丰富、噪点更低的夜景照片。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201009/431ada4710f44e46babebfa5c7c41ba4.jpeg" max-width="600" /></p>
+<p>一部手机的真正拍摄实力，只有在夜景拍摄当中才能完整体现，Realme X7 Pro在夜景拍摄上，有着索尼IMX686的加持和自己对于软件的优秀算法，哪怕是在光线不充足的场景，也能拍出明亮的照片。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201009/13db07f2afe442ea982c76492e773d99.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201009/4084c0783740435a9c24ad6b2a207dd6.jpeg" max-width="600" /></p>
+<p><strong>推荐理由</strong></p>
+<p><strong>推荐产品：一加8 Pro</strong></p>
+<p><strong>产品价格：5399元起</strong></p>
+<p>年底将至，如果你对于手机的追求是观感细腻的屏幕和极致均衡的配置，那就选择一加8 Pro。如果不把即将发布的8T系列算上的话，一加8 Pro可以说是一加现阶段产品线中的当家旗舰，相信它能给你带来的，都是最佳的使用体验。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201009/ca85b3e49b204400b171d1e410bc06ab.jpeg" max-width="600" /></p>
+<p><strong>推荐产品：OPPO Ace 2</strong></p>
+<p><strong>产品价格：3999元起</strong></p>
+<p>今年OPPO 在这Ace2 上，我们可以看到它有着与旗舰机相一致的硬件配置和出色的游戏体验，足以堪称“性能怪兽”。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/b7d7682370754fc4a50ef22bb6d44cc5.jpeg" max-width="600" /></p>
+<p><strong>推荐产品：荣耀X10</strong></p>
+<p><strong>产品价格：1899元起</strong></p>
+<p>荣耀X10可以说是集多种卖点于一身的高性价比机型，有着多种5G网络制式的加持，以及打破屏幕性质的高刷新率，让追求性价比的游戏党有了明确的选择。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201009/c081ba1f682145fbb935319584db5bd6.jpeg" max-width="600" /></p>
+<p><strong>推荐产品：Realme X7 Pro</strong></p>
+<p><strong>产品价格：2199元起</strong></p>
+<p>作为主打面向年轻消费者的Realme X7 Pro，在配置和价格上可谓比其他厂商要更加大胆，搭载的都是旗舰上才会出现的快充、高刷、高速率，而起售价仅两千出头。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/9523a418c18a444cb8741f9b041cce97.jpeg" max-width="600" /></p>
+<p><strong>总结</strong></p>
+<p>从前的我看不起5G手机，觉得它和4G并没什么区别，直到我用上了才觉“真香”。特别是图片、视频加载上快人一步，在别人还在缓存时，我就已经把瓜吃完了。早于人前先吃到瓜，可是本“瓜民”最大的自豪！如果你也想要体验5G的极速网络，感受非一般的吃瓜体验，以上的四款手机不论是外观还是性能都是你的绝佳之选！</p>
+➜坚果2020新品发布会，10月20日与你不见不散！
+http://www.sohu.com/a/423385627_223764	12457
+<p>[PConline 资讯]2020年10月9日10:00，坚果手机正式公布了 2020 新品发布会的相关信息。坚果手机 2020新品发布会将于10月20日19:30在五棵松 · M 空间举行。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201009/dd827e0ec1644ba18c3895cb16c54a8c.jpeg" /></p>
+<p>此次门票将以赠票形式发放给锤友们。前往新浪微博参与@坚果手机 发起的活动，晒出你购买过的坚果手机产品、参加过的以往产品发布会的现场照片或门票票根，即有机会获得此次发布会的门票！</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201009/3ef39a5a1c5948b39df4780a1aa9df0c.jpeg" /></p>
+<p>对于坚果手机2020新品发布会，Smartisan的产品经理朱海舟发文称：“全新的，崭新的。”据此前爆料，坚果手机新品或命名为坚果Pro4，采用了全面屏设计+白色面板，息屏后格外吸睛。</p>
+<p>坚果新机这次可能将会在全场景智能方面有所加强，或增添与其他电子产品的智能联动。锤友们敬请期待吧~</p>
+➜影驰HOF OC Lab 皑钻 D4-4400 内存评测：可以战未来的内存
+http://www.sohu.com/a/423380777_223764	13465
+<p><strong>　[PConline 评测]</strong>一般来说，想要战未来的一套电脑，首先是要各方面硬件都没有短板，最好是所有硬件都属于旗舰级的配置。试想一下，如果你用上了最新的RTX 30系显卡，搭配上英特尔i9-10900K或者是AMD Ryzen 3900X，却配上了两条频率只有2133MHz的内存，岂不是很尴尬？</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201009/3075d68a5a914bd5a212fa046042fa2b.jpeg" max-width="600" /></p>
+<p>正是因为如此，许多有实力的厂商会推出高频内存，来帮助硬件玩家更好地战未来。这些内存，在拥有强劲性能的同时，也拥有非常出色的外观设计。作为这些厂商的代表，影驰近日也推出了几款高性能高颜值的内存新品。除了前段时间评测的皑钻系列内存之外，还有今天要进行评测的HOF OC Lab 皑钻 D4-4400 内存。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201009/025c456b3830420783adb97a2569c4cc.jpeg" max-width="600" /></p>
+<p>从名字我们不难看出，这次评测的内存依然是出自OC Lab之手，作为亚洲顶级的超频实验室，影驰OC Lab的实力非常出色，那么这款内存是否也是如此呢？</p>
+<p><strong> 外观：钻石设计吸引眼球</strong></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201009/4a4612f7f15147a6937bdb76b55f633c.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>外观方面，我们可以看到，影驰在其白色散热马甲上采用了钻石设计，做了非常多的菱形纹理。这样带来的效果不仅是外观非常有层次感，摸起来也十分带感。但和我一样没事摸内存玩的，应该属于少数。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201009/382d532edf9a42cf95b42310e11f715c.jpeg" max-width="600" /></p>
+<p>在散热马甲的正中则是一圈金色装饰，内嵌了HOF的Logo，马甲上半部分则做了镂空处理，内嵌了钻石形状的透明导光条，不同于以往的简洁设计，这次影驰皑钻的设计更多增加了一些奢华的元素。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201009/bd5c6489e6f24384b913c505d3916666.jpeg" max-width="600" /></p>
+<p>虽然带有透明的导光条，但是实际上这款皑钻 D4-4400是不带RGB灯效的。这对于喜欢无灯主机，或者是不喜欢带灯光效果内存的朋友们来说，也是比较友好的。如果喜欢这款内存外观的同时，还想要拥有内存灯效的朋友们，则需要关注同样外观造型的皑钻RGB系列了。</p>
+<p><strong> 性能：比钻石还硬的性能</strong></p>
+<p>我们都知道，HOF系列在用料上是从不含煳的，这次的皑钻也不例外。这款内存采用了10层PCB搭配三星B-die颗粒。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/74115902377b4a00910afd2cfd9b6734.png" max-width="600" /></p>
+<p>作为超频颗粒中的名将，三星B-die颗粒有着高频率、低时序的特点，被高性能内存广泛采用。影驰所采用的10层PCB，能够更好地发挥颗粒特性。今天测试的皑钻 D4-4400，仅需要通过开启XMP，就可以达到4400MHz的高频。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201009/04fef6f921e948428c4321e7356cda49.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201009/7aed76cc4e764891b728c6085984ae89.jpeg" max-width="600" /></p>
+<p>这次测试，为了更好发挥内存性能，我们采用了英特尔i9-10900K以及华硕ROG MAXIMUS XII Extreme主板来进行内存的测试，影驰HOF 皑钻能否在这样的平台上取得更好的成绩呢？</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201009/76f5a843cf044d139f492577a4585390.jpeg" max-width="600" /></p>
+<p>通过CPU-Z，我们可以看到，这款内存默认频率仍然是2133MHz，电压为1.2V，其XMP频率则是4400MHz，电压为1.5V，时序则来到了18-22-22-42，同时支持Intel XMP2.0技术，超频到4400MHz对它来说也只是基本盘而已。</p>
+<p>在实测中，我们采用了AIDA64的内存读写测试以及7-Zip的基准测试来考验内存性能。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201009/de63d7c37dfe47f192f34d82cd607958.jpeg" max-width="600" /></p>
+<p>默频状态AIDA64内存测试中，HOF OC Lab 皑钻的内存读取速度为32133MB/s、写入速度为31431MB/s、复制速度为29442MB/s，内存延时则为67.1ns。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/ca47dfb81ddb4783859be58e2ad6d75e.jpeg" max-width="600" /></p>
+<p>开启XMP超频至4400MHz后，皑钻的各项性能指标都有了大幅度的提升，读取速度达到了56969MB/s，写入速度达到了62287MB/s，复制速度也达到了53189MB/s，而内存延时则降低到了47.0ns，如果通过手动超频，对时序和电压进行进一步调节，相信其表现应该会更加出色。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/e24d640e9f4b41d9861c561774abdadd.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/936a8588f1ba4743942d3f6e5cdadb37.jpeg" max-width="600" /></p>
+<p class="ql-align-center">左：默频 右：XMP</p>
+<p>7-Zip基准测试中，默频状态下的压缩速度为37822KB/s，解压缩速度为1142359KB/s。开启XMP之后，这两项指标分别提升到了40879KB/s以及1217068KB/s。提升效果同样是非常明显。</p>
+<p class="ql-align-center"><strong>影驰HOF OC Lab 皑钻 DDR4-4400 内存性能测试</strong></p>
+<p><strong>测试项目DDR4-2133DDR4-4400提升理论性能测试AIDA64内存读取</strong>32133MB/s56969MB/s77.3%<strong>AIDA64内存写入</strong>31431MB/s62287MB/s98.1%<strong>AIDA64内存复制</strong>29442MB/s53189MB/s80.7%<strong>AIDA64内存延迟</strong>67.1ns47.0ns30.0%<strong>7-Zip压缩</strong>37822KB/s40879KB/s8.1%<strong>7-Zip解压缩</strong>1142359KB/s1217068KB/s6.5%<strong>综合性能提升幅度50.11%</strong></p>
+<p>通过上面的测试结果，我们可以看到开启了XMP以后，影驰HOF OC Lab 皑钻在测试成绩提升很还是非常明显的，总体的提升为50.11%。由于内存XMP的参数设置会相对宽松一些。所以动手能力强的朋友，也可以通过自己手动调节参数来获取更高的性能，比如进一步提升频率或者是收紧时序。</p>
+<p><strong> 总结：和钻石一样能战未来</strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201009/b332b43f4a8843638988be66d1ee147d.jpeg" max-width="600" /></p>
+<p>作为HOF家族的一员，皑钻在拥有超高颜值外观的同时，还有着出类拔萃的性能。正如钻石坚硬耐久的特性一样，这是一款当下非常能打，放到未来也不会落伍的内存。它仅仅通过XMP就能够达成4400MHz的高频，对于动手能力强的玩家来说，甚至还可以进行进一步的优化。不带RGB的设定略显遗憾，但也给了喜欢无光主机的朋友们一个非常优秀的选择。喜欢这款外观，又想要RGB的朋友们，则需要更多关注另一款产品——皑钻RGB了。至于售价嘛，这款 HOF OC Lab 皑钻 D4-4400的售价为1099元，对于高端超频玩家以及想要一套主机战未来的朋友，确实也是非常实惠的。</p>
+➜OPPO与清华大学正式合作，成立未来终端技术联合研究中心
+http://www.sohu.com/a/423384886_223764	14514
+<p>[PConline 资讯]2020年9月29日<strong>，</strong>OPPO与清华大学正式成立未来终端技术联合研究中心，将围绕人机交互技术、认知计算、计算机视觉、计算摄像学方面的研究工作，与未来终端及可穿戴设备行业应用紧密结合，实现多学科领域的交叉融合，服务国家创新驱动发展战略。OPPO将与计算机系、自动化系、脑与认知科学研究院、软件学院、材料学院、医学院、美术学院等多个院系展开深入合作。清华大学戴琼海院士指出：“联合研究中心的建立将推动智能手机在病理检测、显微镜、人机交互等众多领域的应用。”</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201009/18652ab564984fa892e870b3aa3acac9.jpeg" max-width="600" /></p>
+<p>清华大学副校长郑力表示：“OPPO是世界移动通信领域的重要企业，在智能手机等终端的研发和制造上具有强大的实力，在相关技术领域也有深厚的积累，期待清华与OPPO的科研合作早日取得突破性成果。”</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/db6b6c41bf7e4ce598b112cd9625e7d0.jpeg" max-width="600" /></p>
+<p class="ql-align-center">清华大学副校长郑力</p>
+<p>与清华大学成立联合研究中心是OPPO贝尔计划的又一重要里程碑，从2018年推出的贝尔计划开始，OPPO就与斯坦福大学、清华大学、纽约大学、北京大学、浙江大学、电子科技大学等国内外40所知名高校开展科研合作和学术交流，与清华大学、浙江大学两所顶尖高校成立了联合研究中心。OPPO高级副总裁刘君表示：“联合研究中心标志着双方的科研合作进入了新的阶段，希望共同携手面向未来，在信息技术、交互、大健康、设计等领域开展科研合作，培养人才，共同探索未来终端技术，为世界贡献至美科技。”</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201009/40363574c9b94275a8970c9dbbd5f20a.jpeg" max-width="600" /></p>
+<p class="ql-align-center">OPPO高级副总裁刘君</p>
+<p>OPPO研究院院长刘畅表示：“OPPO将以技术助力产品和服务破圈，在万物互融战略牵引下，与清华在工艺、设计、人工智能以及下一代交互技术等领域深入合作，通过场景创新引领软硬件技术应用的无尽可能，持续打造软硬服一体化的产品体验，为用户提供更加智能和便捷的服务。”</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/d8c3f39e37bf44539eb535fc74ab6fae.jpeg" max-width="600" /></p>
+<p class="ql-align-center">OPPO研究院院长刘畅</p>
+<p>作为一家年轻的科技企业，OPPO秉承“开发、聚焦、赋能”的理念，将持续与全球高校展开合作，为全球科研人才搭建成长平台。</p>
+➜雷柏GK500机械键盘评测：年轻人的高性价比机械键盘
+http://www.sohu.com/a/423386667_223764	15134
+<p><strong>　[PConline 评测]</strong>在一台电脑中，感知最强的配件是什么？CPU还是显卡？答案很显然都不是，感知最强的当然是键鼠显示器等外设，这些外设和你的实际使用是息息相关的，是直接与你的使用体验挂钩的。因此，机械键盘正在变得越来越普及。对于对于想拥有一把机械键盘但却囊中羞涩的朋友来说，百元级的机械键盘自然是首选。但百元级的键盘鱼龙混杂，最好的办法当然是选择一把大厂出品的机械键盘了。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/b983d04ae5314df195fd6b1aeb0160d9.jpeg" max-width="600" /></p>
+<p>今天进行评测的就是来自老牌实力大厂雷柏的GK500，一款标准的百元级机械键盘。</p>
+<p><strong> 外观：硬朗年轻化的设计</strong></p>
+<p>外观方面，这款产品的设计是充满硬汉风的，采用的是悬浮式设计。相比于略显沉闷的嵌入式设计，这样的设计显得更加年轻化，同时也非常方便日后进行维护和清理。正面采用了铝合金作为上盖材质，并做了镂空设计，整体的设计语言十分硬朗。同时，它的整体尺寸不小，达到了456x158x44mm，重量方面也达到了878g，在如今的键盘中，算得上重量级选手了。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201009/9993d9d4cb404f6a8af2c9a44c931278.jpeg" max-width="600" /></p>
+<p>这款键盘采用的是标准的104键布局，得益于较为宽大的尺寸，按键设计不会显得非常紧凑，能够有效防止误触。从侧面看，可以看到六排键帽的阶梯式排列，人体工学的设计使得键盘能更好的贴合手指运动轨迹。这种设计的好处，在于长时间的使用之后，能够提升手部舒适性。试想一下，在连续团战之后，手一软金身没按出来，岂不是亏大了？</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201009/3908e898b03c4b9dbd137a2f7a5e7c7e.jpeg" max-width="600" /></p>
+<p>再来看到背面，背面采用了工程塑料的材质，并配有两段式脚托，以及非常宽大的脚垫。这使得它能够稳稳抓住台面，不会因为激烈团战而产生位移。底部也配备了4个疏水孔，具有防泼溅功能，有效抵抗一般的液体洒入。此外，这款产品并没有采用可分离键线的设计，而是采用了一体化的线材，并在与键盘本体的接口处设计了防弯折。其实对于这款键盘来说，可分离键线的设计也确实不是刚需，毕竟这样大小的键盘，应该也不会有人带着它进行移动办公吧。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201009/fbec0f64620a4839988cfe7748e67b60.jpeg" max-width="600" /></p>
+<p>键帽方面，GK500采用了双色注塑键帽的设计，这种设计能够保证键帽在长期的使用中不会出现掉色难以辨认字体的情况。同时它采用了一个磨砂的表面设计，能够有效避免激烈游戏时出现打滑的情况。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/b20703efe9ad46e7b863206379b17365.jpeg" max-width="600" /></p>
+<p>轴体方面，这款产品采用了雷柏自主研发的轴体。如今的机械键盘，轴体可以说百花齐放，除了传统标杆级的樱桃原厂轴以外，TTC、凯华以及雷柏都有着非常出色的轴体产品。GK500所采用的轴体，其单轴使用寿命能达到6000万次，属于非常耐用的轴体。可以看到，这把雷柏GK500采用的是黑轴。同时，雷柏也为GK500提供了青轴的版本。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201009/f618d88c77a747a288f9011102619c4d.jpeg" max-width="600" /></p>
+<p>对于初次接触机械键盘的用户来说，时常会困扰于轴体的选择。其实轴体的选择并没有标准答案，关键还是要适合自己的使用需求。对于游戏用户来说，采用触发速度快，没有段落感的黑轴会更加畅爽，当然黑轴需要更大的按压力度。而青轴则是具有很强的段落感，触发力度也更轻一些，适合文字工作者。不过值得一提的是，青轴会产生更大的声音，学生朋友们为了宿舍和谐着想，需要谨慎选择。</p>
+<p><strong> 灯光效果：仅需组合键就能轻松定制</strong></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201009/3d83dcca9a1448b199f815169f96fb2d.jpeg" max-width="600" /></p>
+<p>将键盘通电之后，可以看到这款产品有着非常丰富的灯光模式。通过键盘快捷键，我们可以轻松调出呼吸模式、流星蛇形跑马模式、常亮模式、浮光模式、活跃模式等5种预设模式。同时我们还可以通过组合键进行灯光自定义，并储存为键盘预设，使自己的键盘与众不同。我们也能够通过组合键对其亮度和呼吸频率进行调节，实际上它能够完成非常多的灯光变换。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201009/49240b3e6bd74f01aaaf739b731a28f9.jpeg" max-width="600" /></p>
+<p>除了灯光自定义之外，这款键盘还支持通过快捷键进行系统的操作，通过Fn键+F1~F12，我们可以用快捷键打开系统软件的开关、进行播放暂停，音量大小的调节。即使身处游戏中，也无需跳出桌面进行音量调节。并且键帽上也有对应的图案展示，方便用户熟悉快捷键的操作。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201009/e02457734d3a42ab95ff2aa928a2b665.jpeg" max-width="600" /></p>
+<p>对于游戏玩家来说，这款鼠标还具有另外一些非常实用的功能，首先是全键无冲，在游戏中再多的按键也不怕冲突。另外还有Win键锁定功能，避免因为一时激动误触Win键，导致超神被弹出窗口终结。最为特别的是，通过组合键，我们还能一键切换方向键与WASD按键，符合不同玩家的操作习惯。</p>
+<p><strong> 总结：</strong></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201009/fbb1c9c69d484ddc95875d8b375cf2e9.jpeg" max-width="600" /></p>
+<p>作为百元级的机械键盘，其实GK500的短板已经非常难找到了。全键无冲+多彩混光的设计，加上出色的外观以及雷柏的稳定品控，对于初次接触机械键盘的用户来说，能够有效避免选购踩雷，可以说是百元级入坑首选了。仅仅129元的售价，就能拥有一款品质有保障的入门级的机械键盘，可以说是十足的性价比之选了。</p>
+➜原来蓄谋已久:三星Z Fold2迎来折叠屏的光荣时刻
+http://www.sohu.com/a/423397037_223764	15583
+<p>[PConline 杂谈] 第一部手机在1983年诞生，从“大哥大”到“按键功能机”到“触控手机”再到今天的“全面屏”手机，已经走过了近40个年头。逐渐消失的键盘被越来越大的屏幕所取代，屏幕尺寸大多数已经做到了6英寸以上，屏占比甚至已经达到了95%。</p>
+<p>手机尺寸发展至今，在保持舒适握感的基础上，屏幕大小已经达到了极限的形态。如何打破这种二维形态极限，实现手机屏幕的再一次质变，这是整个手机行业都需要思考的问题。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201009/48ee02aba1c64c06af05b53a0c7ba6e9.jpeg" /></p>
+<p>“时常会有一台设备的发布，颠覆人们的期待并为业界开辟新道路”，我们很荣幸可以见证三星折叠屏手机的率先发布，为业界打开了一扇通往未来世界的门。</p>
+<p>三星Galaxy Fold折叠屏手机的发布，让手机屏幕从传统二维形态，突破性地变成了三维形态，这是一场革命性的升级，打破了现阶段手机屏幕尺寸发展的壁垒。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201009/a44a37886f4c4d1b977ad288457095f9.jpeg" /></p>
+<p>手机如果想变成折叠形态的，需要进行多方面的积累和技术突破，例如屏幕、铰链、主板结构、电池堆叠等等方面的变革，其中最主要的难点在于屏幕和铰链。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201009/2c4b997accc34dd6b85e5ab976ece478.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>三星在手机屏幕的研发上，一直处于行业的天花板位置。早在2013年三星就提出会在未来的某个时间推出折叠显示设备，并且也有相关概念视频在网络上曝光；2014年底三星宣布在未来一年内，三星是唯一一家可以量产柔性屏幕的手机制造商，并申请了相关柔性设备专利。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201009/8d1964d6bb264a278480861066e04a3e.jpeg" /></p>
+<p>三星Galaxy S6 Edge搭载的曲面屏开始引领智能手机曲面新风潮。从这种种迹象不难看出，三星很早之前就在为折叠屏手机做准备，Galaxy Fold的发布也印证了三星对未来趋势预判的实力与底气。</p>
+<p>如果说三星Galaxy Fold第一代产品更多地是面对极客、商务男性等用户群体的话，那么三星第二款折叠屏手机Galaxy Z Flip则更多地覆盖到了女性用户群体。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201009/31c35469cf6043b8903df900037ca828.jpeg" /></p>
+<p>2020年2月，三星Galaxy Z Flip正式发布，这是一款可以上下折叠的手机，折叠前屏幕6.7英寸，折叠后则如掌心般大小，类似一个便携式化妆镜，更便携的同时，也开启了折叠手机概念新形态。这让三星在折叠屏手机形态上完成了新的工艺和技术的积累。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201009/4bde790b275745f184b256a45a405148.jpeg" /></p>
+<p>三星Galaxy Z Fold2今年9月在中国发布，目前已经在市场上开售。这是三星在经历了初代Fold系列不断攻克难关以及Flip中技术再积累，终于迎来了高光时刻。</p>
+<p>三星Galaxy Z Fold2外观风格比第一代更加硬朗，并且在颜色搭配上也更具潮流，迷雾金的配色更显品质。而内屏使用了一块7.6英寸UTG超薄柔型玻璃材质屏幕，相比初代Fold上采用的PI薄膜，新材质的应用让折叠后的痕迹更加自然，观感也更加舒适。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201009/11c9f345e1c64bbb8fa8707842c8dbde.jpeg" /></p>
+<p>主屏幕这次突破性地支持了120Hz自适应技术，相比上代60Hz刷新率屏幕，无论是浏览网页还是游戏视频，都有了更流畅的感官体验。同时也由上代的刘海屏升级成了打孔屏，屏占比的进一步提升，让视野更加完整。</p>
+<p>而外屏则由初代的4.6英寸升级为6.2英寸，这让手机在折叠状态中可用性进一步提升。材质则采用了康宁第六代大猩猩玻璃，无论是坚固性或耐用性都有了新的提升。</p>
+<p>三星Galaxy Z Fold2的铰链技术也迎来了新的升级，凸轮制动技术让折叠的屏幕可以多角度悬停，带来更多便捷的使用场景。同时隐形铰链的工艺再度升级，相比上代在折叠动态上更加流畅顺滑。</p>
+<p>在处理器上，三星Galaxy Z Fold2采用了最新的高通骁龙865+处理器，支持双模5G。丝毫没有因为这是一款主打商务性质的手机在性能配置上妥协。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201009/261de5a140344ba4bc75a3024b3c253a.jpeg" /></p>
+<p>三星折叠屏经过三代的发展打磨，我们不只看到了三星Galaxy Z Fold2的更加成熟，同时也是三星把折叠屏产品从概念逐步变成现实，并且让产品的实用性达到了批量生产的要求，不再是实验室产品。</p>
+<p>三星把二维的屏幕变成了三维的折叠，让信息交换效率有了突破性变革，这不只是三星引领了智能手机下一个时代的风口，同时也是三星为整个科技行业带来新的发展方向。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201009/af402bef9c3543cbb6a7fb345a85ce1f.jpeg" /></p>
+<p>想了解更多关于三星Galaxy Z Fold2的信息可以到三星官网https://www.samsung.com/cn/smartphones/galaxy-z-fold2/了解。目前Galaxy Z Fold2已经正式开售，感兴趣的朋友可以在三星官网、各大电商平台或者线下门店购买。</p>
+➜PCIe4.0和阵列两手抓。极速SSD哪种形态更靠谱?
+http://www.sohu.com/a/423396942_223764	16579
+<p><strong>[PConline 资讯]</strong>昨天早些时候，西部数据发布了两款属于BLACK系列（黑盘）的全新产品，包括旗下首款支持PCIe4.0的M.2硬盘SN850、基于PCIe3.0并使用RAID 0阵列的AIC（直接使用PCIe接口与主板连接）固态硬盘。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201009/f08d1f5ecdfd4f349b8e555096616e40.png" /></p>
+<p>这两款硬盘虽然采用不同的连接方式，但是读写速度都分别达到了6GB/s和4Gb/s的水准，这种布局也代表了超高速固态硬盘市场在未来一段时间内的发展方向。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201009/de956649497f41699f65dcca4acc6ebf.png" /></p>
+<p>支持PCIe4.0的SN850的最高读取速度达到7GB/s和100万IOPS，拥有500G、1TB和2TB这三个版本，发售计划跟当前的SN750类似，这款固态硬盘将在不带散热片的情况下率先上市，而带散热片和RGB灯光的版本将在明年第一季度上市。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201009/a0efdc1871f74b90a37cc8b73f436306.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>具体的性能参数方面，500G版本的顺序写入速度达到4.1GB/s（定价130美元）、1TB版本达到4.3GB/s（定价240美元）、而最大的2TB版本则达到5.1GB/s（定价480美元），在支持PCIe4.0的M.2固态硬盘中算是比较不错的成绩，内部结构相较当前的SN750也有一定的优化，SLC缓存和队列深度性能也有一定的优化。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201009/6d9d24ca4c4b4b3dab5b9d9bb05699f5.png" /></p>
+<p>而采用两个PCIe 3.0组成RIAD 0阵列的AN1500则提供高达6.4GB/s的读取速度和4.1GB/s的写入速度，虽然跟使用PCIe 4.0的SN850在绝对性能表现上还有略微的差异，但是这个速度表现实际表现中基本不会可感知的差异，而且这款产品在不支持PCIe4.0的平台上（某牙膏厂出来挨打）也能完整发挥性能，甚至能在没有M.2接口的主板上使用，兼容性自然更加出色。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201009/e33f05bcb0bb4da5ac922384fa14db7c.png" /></p>
+<p>AN1500的售价为1TB版本299美金、2TB版本549美金、4TB版本999美金，每GB售价比SN850略贵，在体积占用上可能也有所欠缺，不过RGB灯条和一体式散热装甲也算通过高颜值弥补了体积上的劣势，而且散热性能和接口兼容性也变得更加出色，加上更大的容量上限和更强大的兼容性，对于大部分用户来说这种形态或许会更加实用。</p>
+<p>随着固态硬盘在近年来的发展，在经历了从机械硬盘向SATA协议固态硬盘演进，到SATA协议固态硬盘向NVMe协议固态硬盘演进这两个重大飞跃后，硬盘早已不再是新平台的性能瓶颈，更何况许多实用固态硬盘的朋友，用着传输速度500MB/s左右的SATA协议固态硬盘在日常使用上，跟PCIe4.0硬盘也没有明显区别，如今从PCIe3.0向PCIe4.0演进的步伐自然也缺乏吸引力</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201009/2f90716969824a7e8a032f026eaf627b.png" /></p>
+<p>加上在PCIe3.0协议内也有像AN1500这样的产品通过各种方式获取超强的性能表现，而且不需要对整套平台的其他硬件提出额外的要求，英特尔用户更是直接没法用，PCIe4.0固态硬盘的吸引自然也比较一般，目前主要还是各大厂商用在旗舰级的新品当中，这种情况（1~2年）在短期内应该也不会有太大改变。</p>
+➜富士将推出XF 10-24mm F4 R OIS II 是你的菜吗
+http://www.sohu.com/a/423407286_223764	20856
+<p><strong>【PConline 资讯】</strong>根据最新的消息来源称，之前传闻中的富士XF 10-24mm F4 R OIS II将于10月正式发布。根据Fujirumors消息，新镜头将改善密封性与加入光圈环。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201009/fa9f0b3726804fa88299c79ecc074333.jpeg" max-width="600" /></p>
+<p>早前富士推出的富士龙镜头XF10-24mmF4 R OIS具有超广角至标准焦距功能，能够拍摄出具有视觉冲击效果的动态风景影像，可捕捉从前景到最远处的各个细节，不啻为此类拍摄的佳配之选。后来富士也推出了超广变焦镜头XF8-16mmF2.8 R LM WR，提供了等效12-24mm视角以及恒定F2.8光圈，不过XF8-16mmF2.8 R LM WR官方定价约是XF10-24mmF4 R OIS两倍。按照目前消息，XF 10-24mm F4 R OIS II会在原来基础上改进镜筒的密封性，加入光圈环。除了10-24mm二代镜头，富士还将在2021年2月底之前陆续发布以下两款镜头：XF 27mm F2.8 II、XF 70-300mm F4-5.6。</p>
+➜富士X-S10新机即将发布 中端机再次逆袭？
+http://www.sohu.com/a/423407688_223764	21076
+<p><strong>【PConline 资讯】</strong>近日，业内传闻富士X-S10将于10月15日正式发布，这将会是富士首次将机身防抖技术应用到中端机型上。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201009/f5218e1e9c8640b9af59db26d4824127.jpeg" max-width="600" /></p>
+<p>据外媒信息，富士X-S10将会是一款中端APS-C画幅微单相机，新机配备了机身防抖功能，这也是富士第一次在中端机型上搭载防抖功能，全新的X-S10有可能超越或取代X-A系列产品，主打视频取向，提升F-log高动态视频表现，面向更多的视频拍摄爱好者。据称新机配备了翻转屏，自身体型也会得到瘦身。售价上作为中端机型应该会和X-T30差不多。</p>
+➜你怎么还在用2G冲浪？我爱的5G新世界来啦！
+http://www.sohu.com/a/423419125_223764	23807
+<p>[PConline 杂谈]时光荏苒，2020年的今天已经有不少城市即将实现5G全面覆盖。当初用着2G网络，抱着手机躲在被窝里看小说的小孩也已经长大了，一步步地经历了3G网络的图文时代，再到4G网络的视频时代，如今正处于步入5G网络时代的过渡期。5G时代会是怎么样？下载3A大作不再开着电脑下载一天一夜，观看4K视频缓存的小圈圈不再出现，这样极速的5G世界是否让你心动？今天刚好见到几款搭载了最新5G技术的靓机，特此推荐给各位，带领大家一起进入5G的新世界！</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201009/f748881ee8ef4d28b921535c9e92d84d.jpeg" max-width="600" /></p>
+<p>今天介绍的这四款机型都是5G手机中的旗舰机，它们分别是一加8 pro、OPPO Ace2、荣耀30 pro+、realme X7 Pro，我们先看看下面的主要参数表。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/76f2b66c2a19414789f9676fd6784fcc.png" max-width="600" /></p>
+<p><strong>外观</strong></p>
+<p>这几款手机在外观设计方面都各具特色，一加8 Pro使用双曲面玻璃设计、OPPO Ace2为简约设计风格、荣耀30 Pro+稳重硬朗而realme X7 Pro更突出年轻时尚。下面我们就一起看看它们具体的外观设计吧！</p>
+<p><strong> 一加8 Pro</strong>正面搭载一块6.78英寸三星AMOLED单挖孔设计的屏幕，2K分辨率和120Hz刷新率的黄金组合，既保证显示精度又提供充足流畅度。一加8 Pro屏幕最高亮度达到1300nit，能够避免在室外使用手机看不清屏幕的问题。在配色方面一加8 Pro主要有黑镜和青空两种颜色，黑镜色背板为亮面玻璃后盖，青空色背板使用AG雾面玻璃，触感细腻，不容易沾染指纹。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/411634248d1d408aa1d0e90641f0858b.jpeg" max-width="600" /></p>
+<p><strong>OPPO Ace2</strong>正面是一块6.55英寸OLED单挖孔直屏，支持90Hz刷新率和180Hz的触控采样率，在玩游戏时更高的触控采样率能够更“跟手”，减少触控拖沓感。由于采用直屏设计，屏幕边缘不会出现偏色，玩游戏时不用担心边缘误触问题。在配色方面OPPO Ace2共有三种颜色，分别是极光银、月岩灰和梦幻紫。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201009/2dd2227454bc4973a03acf3905ff0913.jpeg" max-width="600" /></p>
+<p><strong> 荣耀30 pro+</strong>正面是一块6.57英寸的超曲率OLED曲屏，屏幕左上方为双挖孔前置双摄设计，屏幕支持90Hz刷新率和1670万色DCI-P3广色域，使得画面显示更连贯色彩展现更丰富。手机背部硕大的荣耀“HONOR”LOGO十分亮眼，颜值拉满的同时提高了手机辨识度。在配色方面荣耀30 pro+拥有幻夜黑、路野仙踪、钛空银三种配色，其中钛空银使用AG磨砂工艺，握持手机时阻力更大不易跌落。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201009/51411f8de69146eead66facabcca7681.jpeg" max-width="600" /></p>
+<p><strong>realme X7 Pro</strong>采用了一块的6.55英寸AMOLED单挖孔屏幕，屏幕拥有120Hz刷新率和240Hz触控采样率，在游戏场景中画面流畅连贯，触控响应及时没有阻隔感。手机背部使用多层镀膜加AG磨砂工艺，在不同光线下呈现不同的色彩变换，磨砂玻璃降低汗渍和指纹进一步提升后盖的美观度。在配色方面realme X7 Pro拥有星宇黑、幻梦白和C位色三种，其中C位色的后盖最梦幻多彩，适合学生党使用。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/28a29accdb414cd39f937d5af24c2b9f.jpeg" max-width="600" /></p>
+<p><strong>性能和系统</strong></p>
+<p>一款手机的性能和系统会直接影响我们日常使用体验，这四款手机都搭载旗舰级处理器，其中一加8 Pro、OPPO Ace2使用骁龙865，荣耀30 Pro+使用海思麒麟990 5G处理器，而 realme X7 Pro搭载联发科天玑1000+处理器。</p>
+<p><strong> 一加 8 Pro</strong>在配置方面搭载了骁龙865移动平台，拥有LPDDR5内存和UFS 3.0存储组合，使用体验流畅极致感觉不到卡顿。在系统方面氢OS保持着简单流畅的系统设计，系统的每个动画都经过优化，整体的触觉和视觉做到了流畅和美观的完美结合，是许多安卓原生系统爱好者的福音。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/be6f9c052fd442cd9094efcebf6e87d5.jpeg" max-width="600" /></p>
+<p>我们使用安兔兔和Geekbench4对一加8 Pro进行性能测试，安兔兔成绩586208分，Geekbench4单核分数900分、多核3320分，性能上是绝对的安卓真旗舰。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201009/b5c6b358a01c4b129add6d36afdb0eb7.jpeg" max-width="600" /></p>
+<p><strong> OPPO Ace2</strong>在硬件配置上使用高通骁龙865处理器，最高拥有12GB LPDDR5内存以及UFS 3.0闪存版本可选，对广大游戏玩家而言，更高的内存闪存规格可以更快的加载游戏减低卡顿概率。在系统方面OPPO Ace2搭载Color OS系统，系统内的UI动画为了适配高刷屏经过专门优化，手指点触的每一个动效都流畅连贯，系统的美观度和流畅度属于安卓第一梯队。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201009/6d156a21cd654c0294d51bf6b332c1b6.jpeg" max-width="600" /></p>
+<p>我们使用AndroBench对OPPO Ace2进行存储性能测试，其中连续读取和写入速度为1631.7.41MB/s和677.71MB/s，随机读取和写入速度分别为219.05MB/s和204.12MB/s，急速的内存读写速度结合系统优化让你告别卡顿。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/708962db67c147538833d9ec7faa8188.jpeg" max-width="600" /></p>
+<p><strong> 荣耀30 Pro+</strong>采用的是华为自研海思麒麟990 5G处理器，7nm+EUV先进制程工艺将5G基带集成到Soc上，带来高速的网络和高效的性能体验还能减少功耗，可谓一举双得。系统方面荣耀的Magic UI的功能非常丰富且容易上手，手机系统内提供视频、音乐等让你可以不再下载第三方应用软件。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201009/7aa889a681a240eba19ea9bbc3e2a6c5.jpeg" max-width="600" /></p>
+<p>在跑分方面，荣耀30 Pro+ GeekBench中取得了单核757分，多核2965分的好成绩，而在AI BenchMark上荣耀30 Pro+取得了10276分的成绩，性能表现处于安卓阵营第一梯队。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201009/f5d6241d3254439cbce60f12e0f44a28.jpeg" max-width="600" /></p>
+<p><strong> realme X7 Pro</strong>搭载了联发科旗舰级天玑1000+处理器，在游戏过程中帧数保持很稳定，不会出现关键时刻掉帧的现象。系统方面realme X7 Pro采用的是realme UI 1.0，系统的图标支持了自定义功能，喜欢方的图标还是喜欢圆的图标都可以根据喜好自行选择。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/f19b3bf8b9a044fe874b9a5853d6c1b6.jpeg" max-width="600" /></p>
+<p>我们通过安兔兔和鲁大师测试realme X7 Pro的性能，其中安兔兔535793、鲁大师426712的成绩抢眼，在性能天玑1000+处理器无需担心。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201009/4347e2477e86409cafb6aa85b7ceb4d6.jpeg" max-width="600" /></p>
+<p><strong>拍照</strong></p>
+<p>手机拍照已经成为了许多人的日常，手机不是单方相机，但通过多摄系统和软件算法的加持，让你也可以拍出好看的大片。这几款手机在拍照上都下尽功夫，下面我们具体看看它们的表现吧！</p>
+<p><strong> 一加8 Pro</strong>在拍照硬件上搭载4800万像素主摄、4800万像素超广角、800万像素3倍长焦镜头和500万像素滤光镜。其中主摄是向索尼定制的IMX689传感器，具体参数为1/1.4 英寸超大尺寸传感器、f/1.78 大光圈、有效像素为 4800 万。一加8 Pro这套多摄方案几乎覆盖了我们常用的焦段，能够灵活应对远中近的不同景物，下面我们看看它的样张如何？</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201009/4bf9ab017c8b4d189cd05398536eaf7e.jpeg" max-width="600" /></p>
+<p>由于主摄超大的感光面积，一加8 Pro无论是白天还是晚上成像都非常出色，白天样张中画面整体明亮动人，在亮度不足的夜晚画面依然能够保持高清晰度。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201009/fe3df93335ac47338e691821eae80c32.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201009/99e8c2606f6a44efbaa5b2ee6fd27546.jpeg" max-width="600" /></p>
+<p><strong> OPPO Ace2</strong>后置奥利奥中拥有超清四摄影像系统，具体包括4800W主摄、800W超广角、肖像定制镜头、漏光定制镜头的四摄组合。其中800万像素的超广角镜头为拥有119度广角摄影，同时支持广角防畸变，能够提供更大的构图视角，拍到更多内容。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201009/ed248df57f0e40c6ba9240612a42d91f.jpeg" max-width="600" /></p>
+<p>在光线充足的场景中，OPPO Ace2得益于4800万像素主摄，解析力明显是其优势，画面的宽容度很高，近处和远处天空通透感十足。在夜晚样张中画面亮度平稳，近处灯箱的细节得到保留。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201009/dd0f07e36a314ba4a18bfd7ec1f83c4a.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201009/7131b790d4bb4e4d8b819ef062a07124.jpeg" max-width="600" /></p>
+<p><strong> 荣耀30 Pro+</strong>搭载后置5000万像素超大底主摄、800万像素潜望式长焦和1600像素万超广角，在任何场景中都能应对自如。其中主摄为旗舰级1/1.28英寸超感光传感器IMX700，这颗传感器的感光面积足矣比肩传统数码相机，拥有超乎想象的感光能力，搭配自研AI算法，可以清晰还原暗光下的每一个细节。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201009/79d3f33a4b07409ab82d69db6a56d681.jpeg" max-width="600" /></p>
+<p>在实拍样张中，荣耀30 Pro+拍摄照片靓丽动人，第一张样张中近处凳子和远处天空都能得到准确曝光。第二张是微距样张，得益于IMX700传感器超大感光面积，主体花瓣背后奶酪般的景深感，近处花瓣片片分明。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201009/62187d0bc0a34e249adad187d5b17808.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201009/f8b8a5cf526846f7980288a39c70ca3f.jpeg" max-width="600" /></p>
+<p><strong> realme X7 Pro</strong>在后置镜头方面采用6400万索尼IMX686旗舰级传感器主摄、800超广角、200黑白人像、200微距四摄组合系统，其中黑白和微距可以提供更多的拍照玩法，镜头直出的黑白风格相比滤镜要更真实。IMX686传感器在样张的解析力、宽容度和弱光表现都相当不错，还有出色动态范围以及超清晰的丰富细节，并且即使在低光环境下也能拍摄质量出色的照片。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201009/98d7aa8d179f43b3b29e52e1272d4f8f.jpeg" max-width="600" /></p>
+<p>夜间场景中整体亮度不足光线比较复杂，非常考验手机的硬件和软件算法优化。在下面的夜间样张中realme X7 Pro发挥稳定，第一张样张远近亮度精准，画面拍出了夜晚的独特美感，第二张中准确的压制灯箱过度曝光，画面亮度和清晰度很高。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201009/b216211b924046b3963f9b5d3e4f356a.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201009/9062e4353091457089a7249bd4709d8d.jpeg" max-width="600" /></p>
+<p><strong>推荐理由</strong></p>
+<p><strong>推荐产品：一加 8 Pro</strong></p>
+<p><strong>参考价格：5399元</strong></p>
+<p>一加8 Pro在屏幕综合素质属于手机中的顶级产品，无论是精细度还是流畅度都是同价位中的佼佼者，如果你需要入手一款5G旗舰手机，一加8 Pro是不错的选择。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201009/0806346167d54771841e0d9f826247b8.jpeg" max-width="600" /></p>
+<p><strong>推荐产品：OPPO Ace2</strong></p>
+<p><strong>参考价格：3999元</strong></p>
+<p>OPPO Ace2在配置方面达到旗舰级，直屏加高刷新率的屏幕组合适游戏玩家，又喜欢游戏又拥有5G快速网络不香吗？</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201009/4df91ba83c214d8fa74d378017fd215b.jpeg" max-width="600" /></p>
+<p><strong>推荐产品：荣耀30 Pro+</strong></p>
+<p><strong>参考价格：4999元</strong></p>
+<p>荣耀30 Pro+是一台综合实力强大的水桶机，搭载华为自研麒麟990 5G处理器，在5G速度上让你快人一步，想体验5G极速网络选择荣耀30 Pro+准没错。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201009/4ac2e4ee1dea4640ac74501c4afaf8c5.jpeg" max-width="600" /></p>
+<p><strong>推荐产品：realme X7 Pro</strong></p>
+<p><strong>参考价格：2199元</strong></p>
+<p>realme X7 Pro在硬件和软件方面都能给你流畅不卡顿的使用体验，配合便宜的售价，realme X7 Pro能够让你体验到5G网速的快感，适合预算有限又想买到5G高配置手机的朋友。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201009/16557509ccef4b4ba0ef1f52a495f9cd.jpeg" max-width="600" /></p>
+<p><strong>总结</strong></p>
+<p>5G时代正在来临，以前的通讯网络技术将成为过去式，5G畅快的网络体验和极低的延迟，是未来万物互联的重要基础。这四款手机搭载5G技术，都拥有强大的性能配置，在系统和拍照方面是同价位的佼佼者。如果你正想要换购新手机拥抱5G世界，为何不在这四台优秀的产品中选择呢？</p>
+➜为何要让相机走入直播？佳能EOS Webcam Utility试用
+http://www.sohu.com/a/423483708_223764	36515
+<p>[PConline 专业评测]如果不是这场疫情，直播可能再晚两年才能如此火爆，但随着疫情的到来，限制了人们出行的便利，网上购物、直播聊天、在线办公成为了当下主流消费群体的刚需。但受限于直播设备的操作繁琐和采购门槛，这种线上视频形式的互动如今却迟迟没有“质”的提升，佳能在国庆节前发布的EOS Webcam Utility直播软件无疑就是瞄准用户的这些问题。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201009/10f477d924674ebca066b43da7d51bd2.jpeg" /></p>
+<p>作为一名办公品类的媒体，笔者在疫情期间也使用过不少直播/在线会议设备、直播/在线会议平台以及配套的多款软件，优点都是易上手使用便捷，但短板却都出现在在摄像头上，无论是会议平板、手机或是笔记本自带的摄像头，效果都差强人意。</p>
+<p><span></span><strong>直播/在线会议痛点有哪些？</strong></p>
+<p>无论是直播还是视频会议，根据我们的观察主要问题集中在以下几点：</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201009/651a7c04c5594c1782e8aba12e76eb49.jpeg" /></p>
+<p>一、手机直播是目前最为主流的直播方式，往往是一台内存充足拥有高像素的摄像头性能稳定的手机为主体加上手机支架、麦克风、声卡、补光灯等设备进行，这套设备采购价格低廉且稳定性高，号称只要网络不卡，直播不停。</p>
+<p>但手机直播的缺点也十分明显，那就是对焦，如今的手机内置算法主要以自动人脸识别对焦为主，当碰上诸如口红这样“小只”的产品时，主播往往就要以手为背景，提高对焦效率。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>二、笔记本/会议平板的视频会议系统，往往会使用笔记本/会议平板配置的摄像头进行视频采集工作，使用者往往只需要一个软件一个账号即可开机上线，是目前最方便的直播/在线会议方式。</p>
+<p>但笔记本和会议平板上的摄像头往往是固定机位，其追求的是画面“全”的方向而忽略到画面“美”的细节，甚至很多笔记本和会议平板上的摄像头会因环境光线的变化而造成较高的色差。</p>
+<p>三、相机/摄像机等专业设备的加入是疫情后慢慢流行起来的直播方式，用户不仅需要高价配置相机/摄像机等视屏采集设备，还需要配置视频采集卡、笔记本电脑、补光灯等设备，甚至在一些较大规模的直播中会用到多机位和导播台接入。</p>
+<p>这虽然是现阶段最为完备的直播解决方案，但设备采购价格高昂且需要专业人员使用，导致成本极高，目前仍属于小众专属。</p>
+<p>无论是手机、笔记本、会议平板、相机或是摄像机，其实都可以在直播和在线会议中无缝切换，只是播放的平台不同而已，但以上这些设备都存在或多或少的问题。此时佳能发布的EOS Webcam Utility直播软件无疑就很好的解决了上述问题。</p>
+<p><span></span><strong>支持42款相机产品</strong></p>
+<p>首先，佳能EOS Webcam Utility是一款仅需一根数据线就能将佳能的数码相机产品瞬间变成网络视频捕捉设备的应用软件。在这之中，用户无需再另行采购昂贵的视频采集卡，就可实现清晰的网络直播操作，极为廉价。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201009/ef99c572976a4ea09a81983a868466da.jpeg" /></p>
+<p>比较让我们吃惊的是，佳能EOS Webcam Utility可支持多达42款数码产品，上至31款EOS单反相机，下到8款微单相机和3款小型数码相机，而这些数码相机发布的时间跨度高达7年以上，让用户可直接使用已购买的佳能数码相机产品进行连接，无需再购买硬件产品。</p>
+<p><span></span><strong>下载安装</strong></p>
+<p>作为佳能的免费应用软件，用户可在佳能官网上下载EOS Webcam Utility最新版本应用。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201009/2de5a9b71f6248229b0bf084a854eb30.jpeg" /></p>
+<p>用户只需点击进入服务与支持页面，选择现有的产品品类和相机型号，点击选择应用软件，即可看到佳能EOS Webcam Utility最新版，用户此时只需根据自身计算机系统选择对应版本下载就好。</p>
+<p>下载完成后你会惊奇的发现佳能EOS Webcam Utility的安装压缩包只有4.36MB，这是因为这款软件主要是起到了插件的作用，让系统识别佳能数码相机产品作为图像视频捕捉操作。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201009/a82b95ef95484ea285c31eb5707c9a42.jpeg" /></p>
+<p>佳能EOS Webcam Utility不仅因文件较小下载快速，安装也极为简便，用户只需打开安装包点击“下一步”即可完成，无需像其它驱动软件需进行选择。</p>
+<p><span></span><strong>连接使用</strong></p>
+<p>与采用视频采集卡需要的动辄百元的视频数据线不同的是，佳能EOS Webcam Utility所需的数据线其实已随相机附赠出现，不同型号的佳能相机产品有Micro USB、Typce-C等，用户翻找下购机时的包装即可找到，即便实在找不到数据线，也可上某宝花费几元搞定，经济实惠。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201009/2ffb50978dab42b2b1b6d0131e74e446.jpeg" /></p>
+<p>将数据线与笔记本进行连接后，只需将相机拨至视频模式后，打开会议或是直播软件即可将视频源选择EOS Webcam Utility，此时笔记本旁的佳能相机就是你最好的摄像头了！</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201009/6c3525780177479ca914e54b27b57be6.jpeg" /></p>
+<p>根据我们的试用确认，佳能EOS Webcam Utility拥有极强的兼容性，如主流的视频会议平台Zoom、Skype、Micrsoft Team、腾讯会议等会议应用都可以很好的进行支持。</p>
+<p><span></span><strong>佳能EOS Webcam Utility直播软件优势</strong></p>
+<p><strong>大尺寸传感器获得更好的成像效果：</strong>相比于现有的直播/在线会议解决方案，我们认为佳能EOS Webcam Utility首先是基于佳能强大的相机阵容及其内部的大尺寸传感器带来的压倒性的画质，相比目前手机最为强大的前置摄像头，其传感器也仅为4mm左右，无论是佳能的单反、微单甚至是小型数码相机的传感器尺寸都呈碾压态势，更大的传感器带来的不仅是更好的光通量，在同样视频分辨率传输中，更大的传感器带来的是更好的细节展现，加上佳能目前全系的多点自动对焦功能，更是让用户在画面内实时处于最佳角度。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201009/c3ac495e70264a2e89c19514c8d386c5.jpeg" /></p>
+<p><strong>镜头可选拍摄形式更多样：</strong>不少人看到了佳能EOS Webcam Utility支持的42款相机，但这背后却也囊括了这42款相机所支持的海量镜头，如在较为宽广的会议室中，普通的摄像头无法照顾到全场，此时换上一支佳能广角镜头即可达到所需效果。这极大的弥补了现阶段直播/在线会议对极近、极远、极广的画面需求，可以为当下直播/在线会议带来更多的展现形式。</p>
+<p><strong>高性价比：</strong>我认为，佳能EOS Webcam Utility不仅仅是一个软件端的应用或是系统识别的插件，其背后代表着佳能为直播/在线会议领域带来更好的画面效果，相比于以手机为视频捕捉平台的直播解决方案或是以笔记本/会议平板的摄像头为视频采集解决方案拥有更好的画质，比之传统的相机/摄像机直播方案来说更是节省了大量的视频采集卡的采购成本，无论是横向还是纵向比较，佳能的这套EOS Webcam Utility直播软件系统成为了目前为止在画面展现能力、采购成本间最好的平衡。</p>
+<p><strong>结语：</strong>我们所说的一切也许您不会相信，但当你使用过佳能EOS Webcam Utility后才会感受到其不同之处。佳能EOS Webcam Utility也许就是相机行业王者对新行业的责任。</p>
+➜不出意外的话，这就是今年性价比最高的素皮手机
+http://www.sohu.com/a/423532995_223764	58511
+<p>[PConline 资讯] 10月9日上午，realme手机官方微博公布了realme Q2 Pro的一个全新版本——素皮版，而作为一款定位青年潮流的轻旗舰，素皮版本的公布无疑让原本备受关注的realme Q2系列锦上添花。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201010/264fe06ae91b47bca7f392da37fb91c7.jpeg" /></p>
+<p>素皮版本realme Q2 Pro背面的素皮层上压制印有realme品牌slogan——“DARE TO LEAP”，大字符元素使背面设计更具潮流风格，与白色素皮典雅相结合的银色金属品牌字母，也点缀着整个背面机身。</p>
+<p>据曝光，realme Q2 Pro将搭载联发科天玑系列处理器，采用120Hz AMOLED屏幕和48MP主摄，曝光最久也最让人惊喜的是realme Q2系列全系将标配65W超级闪充，因此，realme Q2系列也是第一款有机会将65W闪充带入千元机行列的手机系列。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201010/fcf1e874011a424e81c891038ce49b17.jpeg" /></p>
+<p>究竟realme Q2系列还会给我们带来怎样的惊喜，我们一起期待一下吧！</p>
+➜长假为何我选当贝小投影C2陪伴？无它，懒尔
+http://www.sohu.com/a/423533188_223764	58519
+<p>[PConline 专业评测] 随着疫情后第一个长假的到来，你是怎么度过的呢？在家宅上三五天，和三五好友外出游玩？其实我也是这么过的，但和你们有稍许不同的是，我随身携带了当贝小投影C2，这款专为我这种懒人打造的便携式投影产品。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201010/8e301300dbe244b0854b698ca9a3b7ae.jpeg" /></p>
+<p>不思考、耐心少也许是天下懒人的共性，当我想选择一台便携投影便于平时大屏观影追剧时，想想市场中众多便携投影质量参差不齐实在是懒得挑，再想想一台便携投影还要让我去做调焦梯形校正的后续操作，身为行业从业者的我都如此，你会去选择购买一台便携投影吗？直到在假期前收到这款当贝小投影C2，才一扫长期盘踞在我心中便携式投影的阴霾，本想总结这款产品的特性，但思前想后也许只有——无它，懒尔的描述最为适合。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201010/455fa515c2224d7a83d7fa704743c273.jpeg" /></p>
+<p>说起当贝小投影C2，不得不提一下我们去年夏季评测的当贝C1便携式投影，消费者也许从命名上会主观的认为C2是C1的后续版本，但其实更像是苹果手机和苹果SE系列之间关系，二者之间受众人群有细微的差别。这也导致了当贝小投影C2虽然在亮度、电池容量上不如当贝C1，但在价格上我却认为当贝小投影C2更为实惠。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201010/80983c43cbd6401aa2c43785a5e34549.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>作为当贝C1的“轻量化”产品，当贝小投影C2不仅需要满足的小户型大屏观影的需求，其便携的属性更注定了这款产品要能满足户外携带的一系列考验，这款投影机到底表现如何我们拭目以待。</p>
+<p><span></span><strong>极简设计应用为王</strong></p>
+<p>有之前当贝C1评测经历，当收到当贝小投影C2拆箱上手时，实话说并没有给我太多惊艳的感觉，甚至有一些小小的失落，从外观上看当贝小投影C2就是一款将前、后、顶面刷成白色的当贝C1，一样的长方体竖立摆放方式，并没有什么不同。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201010/3f6a5d065c8e474c931541800e4b0dd0.jpeg" /></p>
+<p>但当你像我这样把当贝小投影C2带回家中体验试用时，你才会发现当贝小投影C2的这种外观设计是多么的实用，长方体的机身无论是放入行李箱或是背包中都极为方便，不会像一些异性设计的便携投影产品占用你所剩不多的储物空间。而磨砂材质的外壳此时更是秒杀一切绚烂的“钢琴漆”。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201010/9628552ba76340b3a15d50b2de4d8d99.jpeg" /></p>
+<p>在机身细节上，当贝小投影C2更是体现了“大巧若愚”，无论是前方的镜头还是侧面的电源数据接口，都没有突兀的凸起，收纳起来占地面积利用率极高。</p>
+<p><img src="//p6.itc.cn/q_70/images03/20201010/ca0d89ece73d46a9a83439530cb701b5.jpeg" /></p>
+<p>当然在接口方面，当贝小投影C2并没有减配，在机身侧面包括音频接口、HDMI接口、USB2.0接口以及电源接口整齐排列。</p>
+<p><span></span><strong>你的性能符合我所需</strong></p>
+<p>售价极为实惠的当贝小投影C2在性能方面肯定不如那些动辄两千元以上的便携投影产品，但通过实际使用，我认为当贝小投影C2的性能足以满足我的日常投影需求。采用30000小时寿命LED光源的当贝小投影C2，具有发热量小、高可靠性的优点的同时，更带来了整机维护和售后成本远低于传统投影机。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201010/1037e22a753e418ea086561c574804ec.jpeg" /></p>
+<p>在处理器方面当贝小投影C2采用Mstar的四核MSD6A358专业智能电视芯片，内置DDR3 1GB内存更是让用户在调用选取应用程序时更为顺滑，当然对于智能投影来说，用户想要安装一些应用程序对其内部存储空间有一定的要求，当贝小投影C2拥有16GB内存还可支持外接U盘或是移动硬盘，增加了用户加装应用的可能性同时，扩展了投影的应用场景和环境。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201010/b5db66d24db246e6bbacd8bff80b581d.jpeg" /></p>
+<p>当贝小投影C2标称亮度达到了255ANSI流明的亮度，相比于同价位的其他投影机产品亮度方面更为出众。在标准分辨率达480P的当贝小投影C2还可兼容1080P内容播放，虽然该产品可投射出30英寸~300英寸画面，但根据我的投影经验，投射在60英寸时是该投影最佳观赏尺寸。</p>
+<p>在使用时可以轻松投出百吋大屏，呈现视频、图像以及文字等内容，无论是居家看电影，还是外出旅行使用，相信这样的配置都可以满足你对投影机的种种需求。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201010/5a685955de73440292b21778ba171217.jpeg" /></p>
+<p>与当贝C1内置的12800mAh电池不同的是，当贝小投影C2内置的是9600mAh电池，由于后者亮度较低在满电的状态下可以达到3小时以上的续航。这样即使在外出旅行使用时没有外接电源也可以完整的观看一部电影。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201010/b87f11c35d3f4a21b01e26dd99f03981.jpeg" /></p>
+<p>对于观影而言，其实不仅需要震撼的视觉体验，视听体验也同样重要。为此当贝小投影C2提供的HIFI级音响能够带来更好的视听盛宴。</p>
+<p><span></span><strong>功能强大操控便捷</strong></p>
+<p>在操作方式上，当贝小投影C2为用户提供了便捷的操控方式。在使用时只需通过蓝牙遥控器即可完成操作，不像红外遥控器一般需躲避障碍物，蓝牙遥控器可多角度使用十分方便。匹配当贝在遥控器侧面的独创的魔术键，短按即可实现自动对焦，长按会调出设置页面，非常的便捷。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201010/0ba522eef2a642079dffeaf79f017d80.jpeg" /></p>
+<p>说起遥控器，不得不提下当贝小投影C2的AI遥控语音控制功能，当你还在为乱扔遥控器此时无法找到时，当你还在一下一下调低音量时，只需通过当贝小投影C2的AI遥控语音控制功能即可对声音大小进行调整。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201010/2e94c42db22344d795135488a50fd2db.jpeg" /></p>
+<p>当然，如果你实在是找不到遥控器了，还可通过当贝遥控APP或是当贝OS公众号的找遥控器功能快速找到你的遥控器。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201010/d2b963d55ea34be6be1eb945a7feadc3.jpeg" /></p>
+<p>当然当贝小投影C2也为用户提供了方便的快捷键，只需要通过机身顶部的按钮即可完成对音量的控制，操作起来十分便捷。</p>
+<p>在对焦方式上，当贝小投影C2采用全自动激光高速对焦。通过其内部搭载的ToF传感器，当贝小投影C2可在更短时间内实现无感对焦操作，相比传统摄像头图像对焦，激光对焦的对焦效率提升至十倍以上。</p>
+<p>在实际的测试中，激光自动对焦不仅准确率很高而且速度更快。当然在选项中也可以选择手动对焦方式，可随时根据画面的情况来实时对焦。</p>
+<p><span></span><strong>大容量才有真海量</strong></p>
+<p>开机后我们其在智能系统的主页中我们可以看出当贝小投影C2在功能方面是十分全面的，内容上包括了电影、电视剧、综艺等不同的栏目供用户观看。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201010/2003d5c671364c328e82f98fe8d97b78.jpeg" /></p>
+<p>当然想要有海量的影音资源，大容量是必不可少的。当贝小投影C2在存储方面达到了16GB的高容量存储，为用户下载软件和游戏提供了强有力的保障。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201010/3c0c29c2e50e4375aa859a61f4f0b6d4.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201010/3582f5435a89478fbd72c3ebf409e5f4.jpeg" /></p>
+<p>当然在投屏的方式上，当贝小投影C2同样为用户提供了各式各样的投屏方式可供用户选择。其中就包括视频投屏、手机投屏和电脑投屏等方式，让看电影、玩游戏、办公演示变得更加轻松。</p>
+<p><span></span><strong>性能测试</strong></p>
+<p>我们对投影机的测试主要通过亮度实测、工作发热以及机身重量等多个角度进行测试，由于使用环境不同，用户应当考虑到自身的播放环境，以及外界光线影响等因素，我们的测试也将最大程度的减少误差，为您提供仅供参考的客观数据。</p>
+<p>关于我们的评测细则，您可以参考：<strong><span>【</span>如何看待数据分析?全面解析投影评测细则<span>】</span></strong></p>
+<p><strong>分光光度计</strong></p>
+<p>我们通过分光光度计对投影机产品的实际亮度以及对比度进行测量，分光光度法是通过测定被测物质在特定波长处或一定波长范围内光的吸收度，对该物质进行定性和定量分析。常用的波长范围为：(1)200～400nm的紫外光区(2)400～760nm的可见光区,(3)2.5～25μm（按波数计为4200cm&lt;-1&gt;～400cm&lt;-1&gt;）的红外光区。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201010/905c0a7d51144738b2a033b67cd65c7f.jpeg" /></p>
+<p><strong>测温枪</strong></p>
+<p>利用的红外测温原理，将物体发射的红外线具有的辐射能转变成电信号，红外线辐射能的大小与物体本身的温度相对应，根据转变成电信号大小，可以确定物体的温度。</p>
+<p>从测试的结果来看，当贝小投影C2标称亮度为255ANSI流明，实测数据为249ANSI流明。高亮度可以极大的增强实际的色彩表现的同时，也可以有效降低环境光对于画面的影响。接下来我们会分别在无光和正常灯光下对机器进行样片的测试，让大家可以直观的看到投影机实际画面的效果。这样的亮度无论是居家观影还是外出携带户外观影，这个当贝小投影C2的亮度相信可以满足大多数用户的观影需求。</p>
+<p>另外在噪声方面当贝小投影C2在满功率运行状态下标称低于24dB，可以说低于卧室夜间噪声标准。虽然我们在实际测试中噪声达到了42dB，但是测试过程中会受环境因素所影响，所以实际数值会有些许差异。因为测试的环境噪音和满功率下的噪音基本相同，所以我们说投影机的噪声是低于环境噪音的，在同类产品中噪声表现可以说表现优异。</p>
+<p><span></span><strong>高清样片测试</strong></p>
+<p>下面测试我们均选择高清图片进行固定场景截图拍摄，通过细节的呈现效果，来展示当贝小投影C2的演示效果。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201010/d4c6d3ff57ef46cbb016cccf7b731894.jpeg" /></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201010/c6df27058e2d4115a43fa4316b650a44.jpeg" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201010/3f81d26338d646e68fa4eefa6fb12e0a.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201010/820aa69352ef45899855d2d4eb706fde.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201010/eb5f33ed06524e32a1f24c131cf88498.jpeg" /></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201010/f4bcd6d2e6044f838ff7ddd42a9881ff.jpeg" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201010/acf3e0ae80e0473bbcccdd6fbde32fc5.jpeg" /></p>
+<p><strong>编辑点评：</strong>这组样片我们分别从色彩、层次、细节以及景深等多个维度，对投出画面进行测试。当贝小投影C2的色彩表现里可以说是令人满意的，层次感很丰富。尤其是细节部分处理的精准到位，像花朵的颜色以及露珠的整体呈现效果十分自然，烤鸭的肉质感也表现的十分优秀。表现出了稳定与不俗的画面质感。</p>
+<p><span></span><strong>无遮光环境样片测试</strong></p>
+<p>在我们的日常使用中环境可以说是非常多样化，我们并不能保障投影机的每次使用都可以在一个无光的环境下，尤其在外出旅行时我们无法保障投影机使用的环境。因此，作为一款投影机而言，其一定要具备较强的抗环境光能力。为此，我们在本次评测文章中，特意加入了在正常灯光下，对当贝小投影C2进行了高清样片拍摄，让大家可以更直观的对比两者的画面表现力。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201010/c42b7713e79c4a0a94a0a00194d12489.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201010/aeb9036474a84a8b87e77616876c6c4d.jpeg" /></p>
+<p>无光环境（左）、无遮光环境（右）</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201010/05e5cfe1aa3f471ea477f04c0b8bb3d9.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201010/305be7481d244e0098a6ab4fe65dfbc7.jpeg" /></p>
+<p>无光环境（左）、无遮光环境（右）</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201010/d7e95eb06ed24565a5270489707347c7.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201010/576a0cb264304d44830f5b77d215ba66.jpeg" /></p>
+<p>无光环境（左）、无遮光环境（右）</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201010/8ad13af8637a468f8b107cb83c43ed0f.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201010/bef3d2cf77c647aa9942ae6f5c108bc5.jpeg" /></p>
+<p>无光环境（左）、无遮光环境（右）</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201010/6e1a4217bc56441f84dfe2afb3e0e8a3.jpeg" /></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201010/857d67f8a45644c69c40094ff7794a28.jpeg" /></p>
+<p>无光环境（左）、无遮光环境（右）</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201010/d462cc1328fe4132bde211183f95d545.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201010/d09f7923664e4a91abaddd3a35dacf0e.jpeg" /></p>
+<p>无光环境（左）、无遮光环境（右）</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201010/af6fbae210d448028fd42b8c3b912c6d.jpeg" /></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201010/d0a9efd0004e42dfadc7c6364e57eee1.jpeg" /></p>
+<p>无光环境（左）、无遮光环境（右）</p>
+<p><strong>编辑点评：</strong>从无遮光样片中我们可以看的更为直观，开灯环境与遮光环境下，我们看到的画面会存在明显的差异，但即使是在无遮光的环境下当贝小投影C2仍然具备较强的色彩表现能力。在日常的使用中这些差异完全可以忽略不计，从雪花的质感来看来层次感极强，表现力优秀，居家观影和外出使用相信都可以满足你的种种需求。</p>
+<p><span></span><strong>写在最后</strong></p>
+<p>通过一系列的测试，当贝小投影C2在各个方面可以说是令人满意的。首先凭借着小巧的机身和科技感十足的外观相比一定深受年轻人的喜爱。在性能上更是拥有255ANSI流明的亮度。更是提供了众多人性化的设计，处处为用户着想。如9600毫安的大容量电池或者说16GB的高容量存储，为用户提供了强有力的保障。这样一台投影机既能居家观影使用，又能户外旅行携带，想要大屏观影，一台当贝小投影C2就够了。</p>
+➜常说AMD YES，却不知选哪款A卡好？或许应该看看这些
+http://www.sohu.com/a/423533276_223764	58519
+<p>[PConline 导购]近年来，AMD旗下的产品凭借更强的性能和更便宜的售价获得消费者广泛认可，在科技圈中，“AMD YES”逐渐成为高性价比DIY硬件的代名词，越来越多用户在装机时会将AMD作为首选。A粉用户更是将装机方案中的处理器和显卡均选择AMD。而作为小白，到底该如何选择AMD的显卡呢？那么不妨看看这些吧。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201010/ce5c0a9d77654680988efadb973304dc.jpeg" /></p>
+<p><span></span><strong></strong><strong>推荐一：蓝宝石RX 5700 XT 8G D6 超白金PRO OC</strong></p>
+<p>作为AMD亲密的合作伙伴，蓝宝石的产品代表了目前A卡的最高的水准，而作为蓝宝石的旗舰产品，蓝宝石RX 5700XT 8G D6 超白金 OC更是受到无数A饭的喜爱，那么这张显卡究竟如何呢？</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201010/18b54284e6d946b39964c9ed6107ec23.jpeg" /></p>
+<p>在外观方面，蓝宝石RX 5700 XT 超白金PRO继承了超白金的外观设计，整个导流罩正面采用纯黑设计，搭配蜂巢状的纹路，看起来比较简约硬朗，它的正面有三颗双滚珠轴承的风扇，采用了非对称的设计，能有效减少气流的干扰的同时提升散热效率并且噪音更低。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201010/244eb1aec460442c95615d5f8a89734d.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>它的背面是一块以银色为主色调的金属背板，不仅能够增强显卡强度，保护PCB元件，还可以通过多个小散热孔进行辅助散热。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201010/6e9296b097bc4b18a727600ca95bdb86.jpeg" /></p>
+<p>配置方面，蓝宝石RX 5700 XT 超白金PRO显卡采用7nm制程工艺的核心，这颗核心拥有2560个流处理器，Boost频率为1980MHz，采用8G GDDR6显存，位宽为256bit，它还搭载了三挡BIOS开关，相比较于传统的双BIOS，增加了一档VBIOS。当显卡处于VBIOS时，即可在TriXX软件内一键切换BIOS。用户通过这个软件，在不需要花费任何成本的情况下，最大限度提高游戏帧数，并保证游戏画质几乎不会有任何损失。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201010/353b9d2c63a54b2f914e9df9f8d93457.jpeg" /></p>
+<p><strong>编辑点评：</strong>相较与公版在散热和性能上提升不小，而且外形更加炫酷，对于细节更加用心雕琢。相较竞品的售价，这款蓝宝石的旗舰更加便宜，对于想入手中高端非公显卡的A粉来说，蓝宝石RX 5700XT 8G D6 超白金 OC一定是绕不开的产品。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201010/33357cde14a24f338380c44b5c4229f2.jpeg" /></p>
+<p>这张显卡目前在蓝宝石京东自营旗舰店售价为3399元，追求高性能的A粉一定不能错过。</p>
+<p><span></span><strong></strong><strong>推荐二：讯景RX 590 GME傲狼版</strong></p>
+<p>讯景RX 590 GME傲狼版讯景推出一款全新的RX 590 GME显卡，归列为新分支傲狼系列。它的背面采用了一大块铝板，部分地方采用了镂空的设计，强化了显卡强度的同时散热方面也有所提升。外观设计有棱有角，虽然没有RGB灯光，不过讯景全线基本都是这样的风格。它的正面有着3颗80mm的静音风扇。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201010/25b9a638fe0146c080ce634b05d41234.jpeg" /></p>
+<p>它的内部的散热器则采用了四根镀镍热管，采用了两段式的散热鳍片，纯铜镀镍的镜面散热底座设计也让显卡核心和散热器有了更紧密的接触。除了显卡核心，讯景在显卡的显存以及供电VRM方面这些发热量比较高的地方也有散热设计，可谓是面面俱到。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201010/a1a0e37f6eda450dadc20094ba1d702c.jpeg" /></p>
+<p>RX 590 GME傲狼版标称8GB显存，核心频率是1440MHz，相比于官方公版的频率能稍高一些。在性能方面，3D Mark中FSE取得了6726分的成绩，TS显卡得分则为4513分。鲁大师测试成绩为184881分。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201010/6c631a81176e4bab8ef638c748dd82f7.jpeg" /></p>
+<p><strong>编辑点评：</strong>正值各种新卡面世的时候，针对的是入门游戏玩家，讯景推出一款RX 590 GME傲狼版显卡，毕竟新架构上市之初一般都是高端产品，它的性能、噪声和散热处于一个相对平衡的状态，并且按照1080P中高以上画质的标准来看，RX 590 GME应付大部分游戏还是没问题的，如果你的预算有限，买不起RTX 30系和RDNA 2架构这种新品，这款显卡也许会适合你，目前在京东售价为1499元。</p>
+<p><span></span><strong></strong><strong>推荐三：迪兰RX 5600 XT 6G X战神</strong></p>
+<p>今年年初，AMD就在CES上发布了RX 5600 XT核心。作为国内最早开始做A卡的厂商，也是AMD的老牌AIB合作伙伴，在玩家们中的口碑相对不错。此前迪兰已经发布了非公版——迪兰RX 5600 XT 6G X战将PLUS，广受游戏玩家的欢迎。而迪兰RX 5600 XT 6G X战神再度带给玩家们惊喜。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201010/b325b666b87e4d0e8eb842e2336ce40f.jpeg" /></p>
+<p>外观方面，迪兰RX 5600 XT 6G X战神的正面主体为枪灰色，加上中间的香槟金金属装饰条，凸显了显卡的金属质感，这样的配色给人满满的高级感。它的中间风扇周围融入锐利机翼的设计，显卡顶部还配备了一个支持ARGB的X型logo信仰灯，显得电竞感十足。配合上全尺寸铝合金背板，整体颜值非常高，可配合玩家打造极具个性的电竞主机。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201010/00363ef90ccc4c3ea31e3032a51940a7.jpeg" /></p>
+<p>迪兰RX 5600 XT 6G X战神采用多相数字供电设计，可以减低每相供电的发热同时，还可以使GPU得到的电波更稳定。显卡核心则为7nm制程，采用了全新的RDNA架构，能耗比非常高。这张显卡采用了双BIOS设计，静音模式下，频率1495MHz，加速频率1620MHz，性能模式下，游戏频率为1615MHz，Boost加速频率为1750MHz，同时还配备了6GB的GDDR6高速显存，让显卡稳定输出极致性能，给玩家更好的体验。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201010/400e485e4c14427c90962d651a566f99.jpeg" /></p>
+<p>散热方面，迪兰RX 5600 XT 6G X战神采用一体式散热模组，可同时给GPU/显存/供电MOSFET散热，加上三风扇加持，散热效率非常高，通过实测，在室温25℃下，furmark烤机GPU核心温度最高只有62℃。另外，它还支持智能启停技术，让显卡在低负载下完全停止风扇运行，在上网、看视频等时候带来更安静的使用体验。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201010/e625806bdad8402a866b7236b5966d70.jpeg" /></p>
+<p><strong>编辑点评：</strong>迪兰RX 5600 XT 6G X战神显卡采用7nm工艺制程打造，功耗更低，并且采用大尺寸静音三风扇设计，散热有保证，12层PCB设计，多相数字供电，给用户提供更好负载平衡和温度保护，支持PCI Express 4.0，吞吐能力为16GT/s，这样高性能显卡在迪兰京东自营旗舰店上，售价仅需2299元，有兴趣的朋友别错过。</p>
+<p><strong>总结：</strong>AMD不论显卡还是处理器都有不错的性能表现，整体看性价比都是很高的，搭配AMD的处理器一起购买将会更加优惠，而且有一众厂商的支持，AMD的表现也越来越优秀，用户越来越多优先选择AMD，最后，AMD YES！</p>
+➜色域比QLED更好？Realme的SLED电视又是何方神圣
+http://www.sohu.com/a/423533356_223764	58519
+<p>[PConline 杂谈]前段时间，知名的手机厂商Realme在印度召开发布会，发布了一款4K SLED电视，并宣称是全球首款。根据Realme的说法，这款SLED电视的NTSC色域要比普通的液晶电视和QLED电视都好，能够带来更好的色彩表现。同时这款电视还拥有更优秀的护眼功能，获得了德国莱茵低蓝光认证。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201010/77c8fd064efe41bba5453ee9256c8531.jpeg" /></p>
+<p>看到这里，可能不少人会很奇怪，听过QLED、OLED，这个SLED又是何方神圣？是一项新技术还是只是营销噱头？今天就跟大家简单科普一下。</p>
+<p><span></span><strong></strong><strong>SLED电视=RGB背光</strong></p>
+<p>SLED电视和三星的QLED电视一样，都是带有背光源的，不能和OLED电视一样实现自发光，所以还是可以算作LCD电视。SLED、QLED和普通LCD电视的区别只在背光源上。</p>
+<p>普通的LCD电视采用的是WLED背光技术，蓝光LED发光二极管激发黄色荧光粉产生白光，再通过RGB滤光片生成红、绿、蓝三种颜色。而三星的QLED则是将LCD电视的白色背光源，更换成蓝色背光源，并使用吸收蓝光并发出红色或绿色的量子点膜。</p>
+<p>而Realme的SLED则是直接将背光源更换成红、绿、蓝三种颜色，也就是RGB背光。所以SLED电视说到底，就是采用RGB-LED背光的LCD电视。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201010/b355545102ba42b484c75872b41a14b9.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span></span><strong></strong><strong>RGB背光的优点</strong></p>
+<p>采用RGB背光的最大优点便是色彩表现了。前面我们已经说到，无论是采用WLED背光的LCD电视，还是三星的量子点QLED电视，都是采用人造白光灯来投影成像的，而这么做最大的一个缺陷就是会出现色彩失真。而QLED因为加入了一层量子点膜，所以色彩表现相对于普通WLED背光的电视确实要更好。此外，电视厂商通过算法，极大的弥补了它们的缺陷，使WLED和QLED也能有很好的色彩表现。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201010/d3559749f89746d08c5e18f3f2dd0a30.jpeg" /></p>
+<p>但是RGB背光的先天优势就是拥有相对纯正的红、绿、蓝三基色，拥有比较完整的色谱，不需要通过RGB滤光片来生成不同颜色的光，能最大程度的减少色彩失真的情况。所以RGB背光能得到比QLED和WLED更好色彩还有更广的色域空间，根据Realme官方的说法可以达到108%的NTSC色域。</p>
+<p>RGB背光的第二大优点便是防蓝光了。WLED和QLED因为背光源的原因，光谱中对人眼有害的短波蓝光占比很高，而RGB背光在防蓝光这方面则具有得天独厚的游戏，采用RGB背光源的电视的光谱中红、绿、蓝三种颜色分布更加均匀，蓝光占比更少。这也是为什么Realme敢宣称是除OLED电视之外，唯一一种可以获得德国莱茵TUV低蓝光认证的显示技术。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201010/a7a9560f11984944a8895ab5099572ca.jpeg" /></p>
+<p><span></span><strong></strong><strong>RGB背光是老古董了</strong></p>
+<p>不过看起来这么先进的RGB背光，其实并不是什么新鲜技术了，早在十几年前就已经被电视行业使用过了。电视界的老大哥索尼，就是最早采用RGB背光源的厂家之一，在2010年前，索尼就在自己的X300和X4500两款电视上采用了RGB背光。</p>
+<p>既然，RGB背光相比WLED背光画质表现更加优秀，为何RGB背光在之后的十几年间几乎就销声匿迹，直到最近才重回大家的视线。这就不得不说一下RGB背光的缺点了。</p>
+<p>RGB背光哪都好，但是有一点不好，就是设计更为复杂，造价更为昂贵。而在消费级市场，价格就是影响普及率的重要因素，大尺寸LCD电视之所以能在近几年迅速普及开来，就是得益于LCD面板的降价。相比之下，WLED背光虽然色彩表现不如RGB背光，但是设计简单，造价低廉，有利于大规模生产和普及，所以WLED背光才取代RGB背光成为市场主流。</p>
+<p><span></span><strong></strong><strong>写在最后</strong></p>
+<p>随着智能家居的普及，电视将被赋予更多的任务，或将成为整个智能家居生态的入口，而各大手机厂商也纷纷进军电视行业，完善自己的IoT生态。小 米、华为已经在电视行业站稳脚跟，OPPO也即将发布自己的首款电视。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201010/e6883f532e3c4df184e0bf488a076a0f.jpeg" /></p>
+<p>而目前Realme公布的这款4K SLED电视还没有其他详细信息，虽然官方给其的定位是对标三星的QLED电视，但是实际表现究竟如何，我们无从得知。不过，影响电视画质的并不只有面板，算法也是相当重要的一部分，面板决定的是画质的下限，算法决定了画质的上限。索尼能成为电视界的标杆，靠的就是其在影像领域多年的积累，以及强大的算法支持。</p>
+<p>希望Realme的SLED电视是一款能给我们带来惊喜的电视，而不是仅仅是一个营销噱头。</p>
