@@ -1,0 +1,39 @@
+➜5G和AI时代，HPC存储遭遇三大壁垒，升级正当时
+http://www.sohu.com/a/423771129_610727	56570
+<p style="text-align: left;"><span style="font-size: 16px;">随着信息化的飞速发展，人类对信息处理能力的要求越来越高，海量的数据需要高效的计算与存储，高性能计算HPC应运而生，并且开始在我们的社会进步中发挥着无可替代的重要作用。</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">在新药研发领域，借助HPC可以加速药物筛选和分子分析，使得新药的研发周期大幅缩短；</span><span style="font-size: 16px;">在新车研发领域，通过HPC实现车辆碰撞的技术仿真，用数据来模拟物理碰撞，大幅降低了研发</span><span style="font-size: 16px;">费用和周期；</span><span style="font-size: 16px;">在基因测序领域，人类第一次完整全基因组的测序花了13年的时间，而今在HPC的加持下，这个时间已经降低到1天以内；</span><span style="font-size: 16px;">在天气预报领域，如今的预报准确率相比十年前有了很大的提升，这些进步的背后HPC技术功不可没。</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201011/7be2a3f077454a6bb727b848197962a3.png" /></p>
+<p><span style="font-size: 16px;"><strong><span>HPC存储升级正当时</span></strong></span><span style="font-size: 16px;"><strong><span></span></strong></span></p>
+<p><span style="font-size: 16px;">随着5G、大数据和AI等技术的发展和成熟，数据的潜在价值进一步凸显，各行业的数据量都迎来了新一轮爆发式增长。新一代基因测序设备日产出数据可达6TB，单颗商业卫星年采集数据量高达1PB，每辆自动驾驶训练车每天产生60TB数据。作为HPC的数据底座，高性能海量存储对于高性能数据价值挖掘的作用进一步凸显。</span></p>
+<p><span style="font-size: 16px;">数据量增长的同时，HPC也开始与大数据、AI等技术融合，向以HPDA（Highperformance data analytics ）和HPC-based AI为代表的新计算架构演进，将HPC产业带入新的发展阶段。</span></p>
+<p><span style="font-size: 16px;">新的趋势下意味着更大的机遇，同时也给存储带来了新的挑战：</span></p>
+<ul>
+<li>HPDA和HPC-based AI对数据分析效率提出了更高的要求，数据处理过程变得多样化，一份数据在不同的阶段需要通过不同的协议访问。传统方式下一套存储只提供一种协议访问能力，这就形成了服务壁垒，跨协议访问时需要多次数据拷贝，效率低下。</li>
+<li>随着CPU+GPU异构计算技术的快速发展，需要更大带宽、更低时延的存储以充分释放算力潜能，同时，需要适配不同的性能模型以匹配业务负载的多样化趋势，比如同时提供对带宽与OPS（Operations per Second）的支持。传统存储仅擅长一类性能模型，高带宽与高OPS不可兼得，这就形成了性能壁垒，难以应对复杂性能模型。</li>
+<li>由于数据的价值不断释放，企业愿意去更多、更久地保存数据，数据量从PB向EB级跨越，需要存储系统支持数据全生命周期的管理，不断的优化TCO。传统存储无法兼顾性能与成本，冷热数据需手工在不同存储间搬迁，这就形成了成本壁垒。</li>
+</ul>
+<p><span style="font-size: 16px;">如何打破这三重壁垒的限制，充分释放算力潜能，成为了当下HPC产业的重要课题，这也是HPC产业实现升级的必由之路。</span></p>
+<p><span style="font-size: 16px;"><strong>OceanStor Pacific</strong></span><span style="font-size: 16px;"><strong>引领HPC产业升级</strong></span></p>
+<p><span style="font-size: 16px;">在近日的华为全联接2020上，华为基于OceanStor Pacific系列推出了新一代高性能并行存储方案，通过打破三大壁垒定义下一代HPC并行存储，引领HPC产业升级浪潮。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201011/1d0bf54449994817acaa8ab34c0dc67f.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;"><strong>01 打破服务壁垒</strong></span><span style="font-size: 16px;"><strong>架构升级，多协议无损互通</strong></span></p>
+<p><span style="font-size: 16px;">OceanStor Pacific系列全新推出了下一代并行文件系统，支持NFS/CIFS/HDFS/S3多种协议访问同一份文件数据，实现全流程0拷贝。在自动驾驶、精准医学、智能制造等新兴的HPDA场景中，大幅提升数据访问效率。</span></p>
+<p><span style="font-size: 16px;">最能体现OceanStor Pacific系列创新能力的，是它的协议互通能力无需安装任何网关或插件，每种服务都能够提供完整的语义和性能，真正把协议互通能力做到大规模商用级别，这与当前业界存在诸多限制的网关式协议互通有本质差别。</span></p>
+<p><span style="font-size: 16px;"><strong>02 打破性能壁垒</strong></span><span style="font-size: 16px;"><strong>性能升级，一套存储实现高带宽和高OPS</strong></span></p>
+<p><span style="font-size: 16px;">由于架构设计的侧重点不同，传统数据存储大都仅擅长一种性能模型。OceanStor Pacific系列通过软硬件协同创新打破了这一性能壁垒，实现了一套存储同时提供大文件高带宽和小文件高OPS。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201011/7274c25870d64f5ca13edce6fdf2b3a2.png" /></p>
+<p><span style="font-size: 16px;">软件方面，通过目录分区、多粒度磁盘空间管理、大IO直通小IO聚合等系列技术兼顾大IO和小IO处理能力；通过新推出的DPC并行客户端全面兼容MPI-IO和RDMA访问，提升单流和单客户端性能。</span></p>
+<p><span style="font-size: 16px;">硬件方面，最新推出的OceanStor Pacific系列高密NVMe全闪产品， 单框支持80个Half-Palm NVMe SSD，全面支持PCIe 4.0总线和100GE网络，消除介质和网络瓶颈。基于软硬件协同创新，OceanStor Pacific系列高密NVMe全闪产品在5U空间内即可为用户提供高达144GB/s带宽和160万IOPS性能，从容应对多样化性能挑战。</span></p>
+<p><span style="font-size: 16px;"><strong><span>03 打破成本壁垒</span></strong></span><span style="font-size: 16px;"><strong><span>冷热数据智能分级优化成本</span></strong></span></p>
+<p><span style="font-size: 16px;">针对热数据要求高性能，冷数据要求低成本的诉求，OceanStor Pacific系列提供了智能分级能力，通过数据在SSD、HDD、蓝光等不同介质间的自由流动，平衡数据的性能和成本矛盾。</span></p>
+<p><span style="font-size: 16px;">OceanStor Pacific系列提供了灵活的配置策略，可实现数据由产生、归档到删除的全生命周期管理，且数据的分级流动对上层应用透明，无需应用作任何改动。此外，OceanStor Pacific系列高密大容量产品在5U空间里支持120个3.5寸硬盘，通过高密实现60%以上的机柜空间节省，让海量数据不再成为负担。</span></p>
+<p><span style="font-size: 16px;">OceanStor Pacific新一代高性能并行存储，通过协议互通打破服务壁垒、软硬协同创新打破性能壁垒、智能分级打破成本壁垒，引领HPC产业升级。</span></p>
+<p><span style="font-size: 16px;">未来，HPC的应用领域将进一步拓宽，也会给存储带来更高的挑战，华为将始终坚定方向，在效率、性能、成本维度持续创新，帮助用户应对产业升级浪潮。</span></p>
