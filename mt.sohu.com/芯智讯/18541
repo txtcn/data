@@ -1,0 +1,28 @@
+➜挑战英特尔！英伟达推数据中心处理器：一颗DPU顶125颗x86芯片！
+http://www.sohu.com/a/422863273_128469	12793
+<p class="ql-align-center" style="text-align: center;"><img src="http://p5.itc.cn/images01/20201006/047c06e1ac324e9bb9189ef23c476c63.png" max-width="600" /></p>
+<p>10月6日消息，当地时间周一，英伟达（Nvidia）公布了全新的可软件定义的数据中心专用处理器DPU（Data Processing Unit）及其生态产品路线图，将在服务器市场力推Arm架构，以期在利润最丰厚的服务器处理器市场取得更大市场份额。英伟达表示，一些有限功能的型号将在几个月内推出，而全面的版本计划在两年内推出。包括戴尔、联想等在内的服务器厂商计划将英伟达的产品整合到自家的服务器产品之中。</p>
+<p>过去多年来，GPU芯片一直是英伟达的主打产品，并且被大量应用在图形处理等领域。但近年来，它们也被大量应用于人工智能训练领域，帮助提高人工智能对于图像识别等任务的速度。这些芯片通常安装在英特尔中央处理器旁边，帮助加速人工智能相关工作的计算。而现在，英伟达计划通过全新的可软件定义的数据中心专用处理器DPU来取代英特尔的CPU。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p0.itc.cn/images01/20201006/da0b1cf4fa104f518fbafa50361e8a38.png" max-width="600" /></p>
+<p>根据计划，英伟达将在2021年，推出两款DPU芯片：BlueField-2和BlueField-2X。</p>
+<p>其中，BlueField-2集成了8颗64位Arm-Cortex A72内核，拥有2个超长指令字（VLIW）加速引擎，以及两个100Gb/s的网络通道（Mellanox ConnectX 6 Dx NIC），在网络性能和存储性能上有诸多亮点，并且提供了更多硬件安全功能，包括无代理微分段、高级恶意软件检测、深度包检测和应用程序识别，远远超过了纯软件解决方案。英伟达称，一颗BlueField-2 DPU可以替换125颗x86处理器。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center" style="text-align: center;"><img src="http://p8.itc.cn/images01/20201006/dfcf8dc8000041fb9439a323287f1813.png" max-width="600" /></p>
+<p>值得一提的是，BlueField DPU脱胎于英伟达以69亿美元收购的Mellanox公司时获得的智能网络芯片SmartNIC技术，Mellanox其与Arm公司（英伟达已经宣布以400亿美元收购）的处理器IP结合，形成了BlueField IPU，兼顾了软件定义解决方案的速度和灵活性，并且提高了安全性、加速了性能并改善了效率。第一代的BlueField IPU芯片已经在2019年正式发布。BlueField-2 DPU则是在Mellanox于今年3月宣布的BlueField-2 IPU 基础上进化而来。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p0.itc.cn/images01/20201006/04c3dfc02ec349e5b775c961dd855d7d.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p9.itc.cn/images01/20201006/b56e3a1d987346b0a2aaa0f89ba7dccd.png" max-width="600" /></p>
+<p>而BlueField-2X则会把英伟达的Ampere GPU和DPU放在一个系统中。英伟达企业计算负责人Manuvir Das表示，在BlueField-2X加入GPU就是为了人工智能应用的加速。</p>
+<p>随后，在2022年，英伟达将推出BlueField-3及BlueField-3X，这些DPU都会与英伟达的GPU整合在一个系统当中，不过在器件上仍然是分离的。而2023年推出BlueField-4，将会真正的以SoC的形式集成在一起，成为真正的片上数据中心处理器。而在算力方面，英伟达表示，BlueField-4将是BlueField-2的600倍。英伟达喊出的这个数据听起来真的是有些太“飘”了！</p>
+<p>除了公布多款可软件定义的数据中心专用DPU产品之外，英伟达还推出了基于DPU的软件生态架构DOCA（Data-Center-Infrastructure-On-A-Chip Architecture）。英伟达企业计算负责人Manuvir Das将DOCA比作服务器领域的CUDA（统一计算设备架构）。</p>
+<p>CUDA是一种由英伟达推出的通用并行计算架构，该架构使GPU能够解决复杂的计算问题。 它包含了CUDA指令集架构（ISA）以及GPU内部的并行计算引擎。 开发人员可以使用C语言来为CUDA架构编写程序。而CUDA架构也正是英伟达近年来在GPU以及人工智能领域获得成功的关键。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20201006/b3a887a4ed0e4324a9cbb0b08a225627.png" max-width="600" /></p>
+<p>据介绍，英伟达全新推出的DOCA架构基于开放的API，如用于数据包处理的P4，用于网络的DPDK，用于存储的SPDK，CUDA和英伟达AI。DOCA可以与主要的OS和虚拟机管理程序无缝兼容、集成，而为DOCA编写的程序可以BlueField-2 DPU 以及未来所有版本上运行。</p>
+<p>从英伟达近年的布局来看，从传统的GPU图形处理器产品，转向以CUDA架构为基础的人工智能计算产品，为英伟达带来了巨大的成功。而2019年英伟达斥资69亿美元收购Mellanox正是为了进一步进军数据中心市场做准备。要知道Mellanox的太网产品和InfiniBand智能互连解决方案在数据中心市场拥有很大的市场份额。根据英伟达的说法，Mellanox的这些产品被用于世界上一半以上最快的超级计算机和许多领先的超大规模数据中心。而今年英伟达再度斥资400亿美元对Arm的收购，其真正的目的可能也正是为了在利润丰厚的数据中心市场与英特尔正面竞争。全新的BlueField DPU和DOCA架构的推出，则正是英伟达在数据中心市场对英特尔发起挑战的开始。</p>
+<p>编辑：芯智讯-林子</p>

@@ -1,0 +1,110 @@
+➜3D传感市场要变天？苹果力推之下，dToF将成新风口？
+http://www.sohu.com/a/424774988_128469	8453
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201015/cf07203c1e0c4f19a57064afec56c0c7.png" max-width="600" /></p>
+<p>北京时间10月14日凌晨，苹果正式发布了iPhone 12系列四款机型，跟之前爆料的一样，iPhone 12 Pro和iPhone 12 Pro Max都加入了此前iPad Pro曾率先采用的基于dToF技术的激光雷达扫描仪，这也意味着苹果在ToF技术应用上的进一步加码，而此举或将加速引爆整个ToF市场。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p1.itc.cn/images01/20201015/887bac47adf5476ba60a7a393893db53.png" max-width="600" /></p>
+<p>虽然，目前不少旗舰智能手机已经部署了ToF 3D摄像头，但是基本都是基于iToF技术，相比之下，dToF具备低功耗、抗干扰等优势，适用于对测距精度要求高的较远距离测距场景。伴随苹果iPhone 12系列的采用，以及AR/VR 技术的发展，dToF 有望成为智能手机摄像头的下一个风口。</p>
+<p><strong>一、dToF 开启深度信息的新未来</strong></p>
+<p>3D sensing 是智能手机创新的趋势之一，当前正加速向中低端手机渗透。目前实现 3D sensing 共有三种技术，分别为双目立体成像、结构光和 ToF，目前已经比较成熟的方案是结构光和 ToF。其中结构光方案最为成熟，已经大规模应用于工业 3D 视觉，ToF 则凭借自身优势成为在移动端较被看好的方案。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p4.itc.cn/images01/20201015/234966c727c2456799ed59465b38be25.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>ToF 的多场景应用呈现出了比结构光更为广阔的发展前景。作用距离的劣势限制结构光的应用，ToF 技术则弥补了距离上的缺陷，可以被应用于包含 3D 人脸识别、3D 建模以及手势识别、体感游戏、AR/VR 在内的更多场景中，能够为智能手机带来更娱乐性和实用性的体验。此外，相比结构光技术，ToF 的模组复杂度低，堆叠简单，可以做到非常小巧且坚固耐用，在屏占比不断提高的外观趋势下，更得到手机厂商的青睐。</p>
+<p>在今年苹果新iPad Pro率先采用了基于dToF技术的“雷达扫描仪”之后，也引发了业界关于dToF和iToF两种ToF技术的关注。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20201015/51ede6994b3e492f8a66601833d24321.png" max-width="600" /></p>
+<p>ToF（Time of Flight），通过测量发射光与反射光的飞行时间计算出光源与物体之间的距离，本质上是时间维度测量。根据测距的方式不同，目前存在两种 ToF 技术路线：iToF（间接飞行时间，indirect-ToF）和 dToF（直接飞行时间，direct-ToF）。dToF 直接测量飞行时间，原理是通过直接向测量物体发射光脉冲，并测量反射光脉冲和发射光脉冲之间的时间间隔，得到光的飞行时间，从而直接计算待测物体的深度。iToF 则是通过发射特定频率的调制光，检测反射调制光和发射的调制光之间的相位差，测量飞行时间。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201015/2ff5b13c39174653b04670f67eb18fbb.png" max-width="600" /></p>
+<p>iToF 间接测量飞行时间，具备低成本、较高分辨率优势，适用于短距离测距。iToF 原理为把发射的光调制成一定频率的周期型信号，测量该发射信号与到达被测量物反射回接收端时的相位差，间接计算出飞行时间。由于 iToF sensor 的 pixel 相对较小，可实现相对高图像分辨率。但iToF问题在于的测距精度的实现限制了最大测距距离，从原理上看，调制频率越高则测距精度越好，高调制频率意味着对应的测距距离不能太大，并且环境光会对电路产生干扰。因此目前 iToF 主要应用在手机面部识别、手势识别等测距距离较短的场景中。</p>
+<p>iToF 传感器电路相对简单，难点主要在深度算法，安卓阵营自 2018 年引入 iToF 并推动其主流化。目前如三星、华为、OPPO、vivo 等品牌均有在中高端机型中配臵，除此之外，iToF 在物体识别，3D 重建以及行为分析等应用场景中能够重现场景中更多的细节信息，因此还被广泛应用于机器人、新零售等领域。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p8.itc.cn/images01/20201015/f41408291a194edfa0bcc00cb79a672f.png" max-width="600" /></p>
+<p>dToF 直接测量飞行时间，具备低功耗、抗干扰等优势，适用于对测距精度要求高的较远距离测距场景。dToF 原理为向被测物体发射光脉冲，通过对反射和发射光脉冲时间间隔的测量，直接计算待测物体的深度。测距原理使得 dTOF 测量精度不会因距离增大而降低，功耗更低同时对环境光的抗干扰能力更强。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p1.itc.cn/images01/20201015/cee7bc61b031412fa2ced5561f3f3a3f.png" max-width="600" /></p>
+<p>dToF 深度算法相对简单，难点在于用以实现较高精度的 SPAD。dToF 要检测光脉冲信号（纳秒甚至皮秒级），因而对光的敏感度要求会很高，因此接收端通常选择 SPAD（单光子雪崩二极管）或者 APD（雪崩光电二极管）这类传感器来实现，集成度弱于普通的CMOS 图像传感器，像素尺寸一般大于 10μm，从而分辨率通常较差，成本更高。SPAD是 dTOF 技术的核心，技术难度大且制作工艺复杂，目前世界上极少厂家具备量产能力，集成难度很高难以小型化应用在手机等小型消费电子上，因而除传统热门应用领域车载LiDAR 之外，消费电子领域目前仅有苹果一家实现商用（iPad Pro 首次搭载）。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p9.itc.cn/images01/20201015/4a8b393d59dd41be8b0e2fff32a80026.png" max-width="600" /></p>
+<p>未来 TOF 会向更高集成度、更小的传感器尺寸、更高分辨率发展。目前传统的 CIS 单像素尺寸最小可达到 0.7μm，而目前 0.6μm 也已经在研发中。但 ToF传感器更要求单像素获取信号的能力，因而需要更大的单像素尺寸；dToF 传感器电路设计比较复杂，需占据较大的片上尺寸；iTOF 像素尺寸则需暂时让步于更高的集光效率。种种原因使得 ToF 图像传感器的小型化存在一定困难。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p7.itc.cn/images01/20201015/128346a0d5a14af29831fcc161326307.png" max-width="600" /></p>
+<p>半导体工艺改进将有望实现 TOF 传感器小型化。ToF 传感器厂商通过半导体工艺方案的改进，如背照式（BSI）、堆栈式（Stacked）CMOS 等技术，将原本位于光电二极管上方的布线层移至下方，以及将光电转换器、电子倍增器（electron multipier）这些部分垂直堆叠，增大像素开口率，同时减小像素尺寸。目前根据松下最新的研究成果，dToF 传感器也可以用 CMOS 工艺实现，集成度已经在数量级上逼近 iToF 方案。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p8.itc.cn/images01/20201015/6485bc9458f848b19e715f6cb9936d02.png" max-width="600" /></p>
+<p>目前 ToF 技术低分辨率的固有缺陷仍然存在，未来有望随技术更迭而实现突破。目前ToF 测量精度量级仍然相较结构光方案落后，但近两年其传感器分辨率已经在提升。iToF方面，英飞凌面向消费市场的一般 REAL3™传感器（iToF）也达到了 3.8 万像素，2019年推出的 IRS2771C 则达到 15 万像素；dToF 方面，例如 iPad Pro 2020 的 LiDAR 分辨率达到了 3 万像素；另外 TDC 电路设计进步也逐步提升着 CMOS 电路中的 TDC 时间分辨率精度，有望带来 dToF 的分辨率的提升。</p>
+<p><strong>二、ToF 未来最有潜力的应用在 AR 领域</strong></p>
+<p>目前手机是 ToF 在消费电子中的主要应用领域，随着市场对 3D 视觉与识别技术的兴趣日益浓厚，头部终端厂商推动 TOF 技术在 3D 感知和成像方向上不断拓展，我们看到 TOF技术在智能手机端加速渗透，TOF 的使用进一步丰富着 3D sensing 的应用场景。伴随苹果iPhone 12系列的采用，以及AR/VR 技术的发展，ToF 有望成为智能手机摄像头的下一个风口。</p>
+<p>ToF 助力消费级 AR 普及。ToF 技术的应用亦是 AR、VR 时代的催化剂。考虑到 ToF 的两个独特的优点——作用距离长、刷新率高，存在远距离 3D 测距需求的 AR/VR 是最能体现 TOF 优势的功能之一。3D 摄像头技术提供的手势识别功能将成为未来 AR/VR 领域的核心交互手段。目前各大厂商推出的 VR 设备大都需要控制器，游戏控制器的优势在于控制反馈及时、组合状态多。</p>
+<p>根据 Markets and Markets，2019 年全球 AR 市场规模达到 107 亿美元，预计到 2024 年将达到 727 亿美元，复合增长率达 46.6%。过去几年中，以 Facebook、英特尔、高通和三星为代表的公司在 AR 领域进行了大量投资，推动了全球 AR 市场的快速增长。中国AR 市场规模预计在 2024 年将达到约 59 亿美元，从下游应用来看，工业应用占比最大，约占 42%，其次是汽车（18%），零售（15%）以及航空与国防（10%）等。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p9.itc.cn/images01/20201015/cd044b2bb1be40b7a656d844ac32ec2e.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20201015/266d2c7f4cbf481da9ef38faed49e2cc.png" max-width="600" /></p>
+<p>AR 室内设计。2020 款 iPad Pro 使用了 dToF LiDAR 技术，通过这一技术可以获得 3D 空间的深度信息，建立详细的室内环境空间数据，模拟出摆放了新家具后的情况。宜家的IKEA Place 应用，利用 AR 让家居产品的外观和在家中的摆放效果直接呈现在用户眼前。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p0.itc.cn/images01/20201015/1d8e95cbe1864757bfe277bce8ed3f1c.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p0.itc.cn/images01/20201015/ceb1f4c4e2304f60aaaef9d57130afca.png" max-width="600" /></p>
+<p>医疗学习。Complete Anatomy 是一款教医学院学生通过虚拟技术了解心脏、实时肌肉运动、神经系统等人体结构的软件，在 2020 款 iPad Pro 上可以使用这一软件，它将帮助专业人士更准确的评估病人的身体运动情况，为未来医学发展带来更多可能性。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p0.itc.cn/images01/20201015/e4f28b2516dc4bd0ba9c9c7a0f332b92.png" max-width="600" /></p>
+<p>3D 摄像头技术提供的手势识别功能将成为未来 AR/VR 领域的核心交互手段。目前各大厂商推出的 VR 设备大都需要控制器，游戏控制器的优势在于控制反馈及时、组合状态多。以 HoloLens 为例，就拥有一组四个环境感知摄像头和一个深度摄像头，环境感知摄像头用于人脑追踪，深度摄像头用于辅助手势识别并进行环境的三维重构。</p>
+<p>拍照虚化。ToF 具备更好的景深信息采集功能，加入智能手机后摄模组后，能够实现快速、远距离获取更高精度的深度图（depth map），从而完成较结构光范围更大的 3D 建模，而且由于自带红外光源，其在暗光环境下获得的景深信息同样准确。因此，有 TOF摄像头参与的成像在虚化效果上会更加真实，富有层次。华为 2019 年发布的旗舰机 P30 Pro 在后臵 3D 成像与感知模组中加入 ToF 镜头辅助，ToF 镜头获取的更多景深信息加强背景虚化功能，相比双目视觉更加精准，使得得到的图像虚化边缘更加清晰、更具表现力。</p>
+<p>手势识别。目前不少手机具备的悬浮手势识别功能，不用直接接触手机屏幕，仅借由前臵 ToF 的对手势的 3D 感知，通过如在手机前挥挥手这样简单的操作来实现翻页、滚屏等普通操作。体感游戏相比前者更具交互性，通过 TOF 技术能够采集到被拍摄人的身体深度信息，捕捉和采集身体的动作，进行手势判定，控制预制的 3D 建模人偶的形象和动作，实现真人和 3D 虚拟形象跟随，用身体、动作和手势做游戏交互。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20201015/37f656fd50b14e4ea978ff82927bec42.png" max-width="600" /></p>
+<p>ToF 技术的应用是 AR、VR 时代的催化剂。考虑到 ToF 的两个独特的优点——作用距离长、刷新率高，存在远距离 3D 测距需求的 AR/VR 是最能体现 TOF 优势的功能之一。3D 摄像头技术提供的手势识别功能将成为未来 AR/VR 领域的核心交互手段。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p1.itc.cn/images01/20201015/0ee8fc492d8f47be90d67ed006dbd560.png" max-width="600" /></p>
+<p>dTOF 技术的应用有望推动 AR 内容的完善，加速消费级 AR 普及。苹果 2017 年便针对开发者们发布了用于 iOS 设备上 AR 应用开发的 ARKit 开发工具，2020 年发布的 iPad Pro为消费电子设备首次搭载 dToF 模组，可视为苹果针对 5G 时代 AR 领域的进一步布局。</p>
+<p>此前iPad Pro 搭载的 LiDAR（激光雷达扫描仪），采用 Sony 3 万像素 10μm dTOF 图像传感器，SPAD 阵列的探测器，并集成了 Lumentum 的 VCSEL 芯片和 TI 的 VCSEL 驱动芯片，能达到 ps 级时间分辨率，可实现 5 米范围内的 3D 感知与成像，具备更快的 AR 建模速度、更高的测量精度和更少的抖动、错位。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p2.itc.cn/images01/20201015/bf32a046f8bf45279a4cfb375176b013.png" max-width="600" /></p>
+<p>▲iFixit拆解新款iPad Pro的后置相机模组</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201015/bb3da6796d8149faa188cc14bbbb4ce3.png" max-width="600" /></p>
+<p>▲TechInsights拆解的新款iPad Pro的“激光雷达扫描仪”内部的Sensor</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p0.itc.cn/images01/20201015/871c9e15eac34071a134abb384c1577a.jpeg" max-width="600" /></p>
+<p>Sony 的 dTOF 方案首次采用 3D 堆叠工艺，像素内连接通过混合键合互连技术将探测器晶圆和逻辑电路晶圆键合实现，同时，深沟槽隔离（Deep trench isolation）也被应用，充满金属的沟槽完全隔离了像素。从而有效控制了 dTOF 传感器的尺寸，使其成功的应用在 iPad 这类小型消费电子设备中。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p5.itc.cn/images01/20201015/50b58b0135914b0ea1e6122a4f817832.png" max-width="600" /></p>
+<p>目前 iPad Pro 的 LiDAR 共呈现出三种典型场景的应用。AR 测量、AR 游戏和 AR 装修设计。</p>
+<p>AR 测量：LiDAR 可以快速计算人的身高，并展现垂直和边缘引导线。通过开发者开发的app 可实现对物体尺寸、建筑物更精细的测量。</p>
+<p>AR 游戏：LiDAR 通过对周围真实环境的扫描和快速获得深度信息能力，为 AR 游戏开辟了更广阔的设计空间。如官网展示的《炽热熔岩 (Hot Lava)》电子游戏，可以把客厅变成一个虚拟的熔岩环境，游戏中的玩家可以跳到家具上以此来避开模拟中的地板熔岩。iPad Pro 上市后带动开发者不断丰富 iOS 平台上 AR 游戏内容，也使一些原有的 AR 游戏因为玩法升级而更具有生命力。</p>
+<p>AR 装修：iOS 上的 Shapr3D app，借助 LiDAR 对房间进行扫描创建 3D 模型，用户可以对该模型展开编辑或添加新对象，使用 AR 可以查看实际房间在编辑后的虚拟效果，帮助用户在装修动工前更真切体验设计效果。宜家 Place 应用同样可以通过扫描一个房间获得与之匹配的家具推荐，然后使用 AR 查看家具摆放效果。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p0.itc.cn/images01/20201015/7626ec55f0a841b1bfd3e98b4fa90bd5.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201015/19750256fc8f476c866faccd435b48c4.png" max-width="600" /></p>
+<p>dTOF 在 iPad Pro 上的应用，可以视为苹果打通 AR 生态硬件基础的第一步。未来苹果通过技术改进和突破，有望将 dTOF 引入手机端以及更多地 AR 设备，促进 AR 硬件设备的发展同时，也激发设计师基于 dTOF 的特性开发如建筑、教育、医疗等更多场景的 AR内容应用，推动 AR 应用生态持续完善。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p4.itc.cn/images01/20201015/9efb4ef9f7fb4b67b2035bc1f8c9cb13.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20201015/74491024e06b4093945fb5f709eb5cfb.png" max-width="600" /></p>
+<p>华为河图（Cyberverse）定义地球级 XR 应用（包括 VR、AR、MR 等扩展现实技术）， 将 AR 应用拓展到更广阔的数字世界。华为河图（Cyberverse）被定义用来提供地球级的虚拟现实融合服务的数字平台，华为 AR 地图是其推出的第一个商业产品，主要功能包括 AR 实景导航、全息信息展示、虚实融合拍照及其他虚拟活动等。全场景空间计算能力是河图的核心，这一能力所需的宏观地图可以使用卫星定位，而室内及一些微观场所的建模定位则依赖智能手机的 3D Sensing 来完成。目前华为 P40 系列机型已经能够支持华为 AR 地图。</p>
+<p>下一波移动终端创新将围绕 AR 进行革命性创新。AR/VR 开发平台的搭建和完善，及增强现实内容市场的蓬勃发展，必然会推动 TOF 产业的发展。TOF 有望接力结构光，从生物感知到虚拟现实，从人脸识别到 3D 建模，带来产业端升级和用户体验优化，前臵人脸识别+后臵虚拟现实功能可能成为手机的下一个形态。伴随 AR/VR 的发展，ToF 有望成为 5G 时代智能手机摄像头的下一个风口。</p>
+<p><strong>三、下一波创新性革命，TOF 市场空间巨大</strong></p>
+<p class="ql-align-center" style="text-align: center;">下一波移动终端创新将围绕 AR 进行革命性创新。随着增强现实内容市场的蓬勃发展，内容厂商不断推动 AR/VR 开发平台的发展，必然会推动 TOF 产业的发展。TOF 有望接力结构光，从生物感知到虚拟现实，从人脸识别到 3D 建模，带来产业端升级和用户体验优化，前臵人脸识别+后臵虚拟现实功能可能成为手机的下一个形态。伴随 AR/VR 的发展，ToF 有望成为智能手机摄像头的下一个风口。</p>
+<p>我们看到 2019 年 3D 感测手机大多集中在高端机等旗舰机型，结构光以苹果为代表，自iPhoneX 后的机型都已经搭载结构光功能，而华为搭载 TOF 的机型数量最多。根据 Yole的预测数据也显示，全球 3D 成像和传感器的市场规模在 2016–2022 年的CAGR 为 38％，2017 年市场规模 18.3 亿美元，2022 年将超过 90 亿美元。其中，消费电子是增速最快的应用场，2016–2022 年的 CAGR 高达 160％，到 2022 年消费电子市场规模将超过 60亿美元。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20201015/ad562b7035ca46e2886cbe8963ef40fa.png" max-width="600" /></p>
+<p>从出货量上来看，我们预测智能手机 3D 感测需求将从 2017 年的 4000 万部增加至 2019年的 2 亿部以上，其中 2019 年的 ToF 机型还主要集中在几款高端旗舰机，从 2020 年开始 TOF 的出货量将进一步爆发，特别是在iPhone 12系列发布之后，TOF在整体 3D 感应中占比有望达到 40%。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20201015/e157c17c5ac5433492ac6be0103df4c5.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p0.itc.cn/images01/20201015/e4d8d2c850194993955ad229a15a6e4e.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p2.itc.cn/images01/20201015/07d784255b354adca80535c40a755d4a.png" max-width="600" /></p>
+<p>我们预测 2019/2020 年 TOF 的出货量为 7760 万/1.6 亿部，同比大幅增长747%/108%。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p5.itc.cn/images01/20201015/30ac5b3021284ca69736f97a09e0d6f4.png" max-width="600" /></p>
+<p><strong>四、BOM 比较：TOF 或更具成本优势</strong></p>
+<p>我们预计 ToF 和结构光的 BOM 成本大约为 12~15 美元和 20 美元，相比之下 TOF 更具有成本优势。以 iPhone X 为例，结构光技术的解决方案包括三个子模块（点投影仪，近红外摄像机和泛光照明器+接近传感器），而 ToF 解决方案则将三个集成到一个模块中，可以将包装成本降低。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p4.itc.cn/images01/20201015/a3dc8e038a794f6f90cc047d8bfea225.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201015/79bf31a945e848aca2f3867537fdb4ab.png" max-width="600" /></p>
+<p>我们预计在这个 TOF 模组中，芯片的成本仍占主要的部分，大约占到整体 BOM 的 28%~30%。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201015/3777583e2a24454597e3d1c5e98bebe4.png" max-width="600" /></p>
+<p><strong>五、深度解析 3D Sensing 摄像头产业链</strong></p>
+<p>目前 TOF 或结构光的 3D 感知技术均为主动感知，<strong>因此 3D 摄像头产业链与传统摄像头产业链相比主要新增加红外光源、红外传感器和光学组件等部分。通过对已经上市的主流 3D 摄像头产品进行拆解分析，3D 摄像头产业链可以被分为：1、上游：红外传感器、红外光源、光学组件、光学镜头以及 CMOS 图像传感器；2、中游：传感器模组、摄像头模组、光源代工、光源检测以及图像算法；3、下游：终端厂商以及应用</strong>。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p5.itc.cn/images01/20201015/ae1a9850ba604df7a91fcda115e6e584.png" max-width="600" /></p>
+<p>TOF 和结构光二者虽然原理不同，但其所需要的核心部件基本相同，TOF 中的核心部件包括发射端的 VCSEL 光源、Diffuser 等，接收端的镜头、窄带滤光片、近红外 CMOS 等。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20201015/414a2a99c01841a3ad0bdc1477e98b55.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p1.itc.cn/images01/20201015/e810d4525118487daa12331e7d5a7161.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p0.itc.cn/images01/20201015/4fd504ff912c4c9faf5d4e8a5f9791f4.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p1.itc.cn/images01/20201015/f9afcdf71a5e44169732fb61d2763480.png" max-width="600" /></p>
+<p>编辑：芯智讯-浪客剑</p>
+<p>资料来源：国盛证券、芯智讯过往文章</p>
+<p><strong>活动预告：</strong>10月30日，芯智讯将在深圳举办“新挑战·新机遇——2020第四届生物识别技术与应用论坛”，届时芯智讯将邀请兆易创新、艾迈斯半导体、舜宇智能光学等3D传感领域的企业负责人共同探讨TOF技术的发展。欢迎点击“扩展链接”报名参与！</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p8.itc.cn/images01/20201015/f18be0c9d5bd40fcb94849fd708d49d7.png" max-width="600" /></p>
+➜传华为已暂停向高通支付18亿美元专利费！
+http://www.sohu.com/a/424901071_128469	40925
+<p class="ql-align-center" style="text-align: center;"><img src="http://p4.itc.cn/images01/20201015/9c7f8852c2dd40409549517f81489f06.jpeg" max-width="600" /></p>
+<p>10月15日消息，近日有传闻称，华为此前和高通达成的长期专利合作协议还没有落实，由于高通还没有恢复向华为供应芯片，华为暂停了向高通支付这笔18亿美元的专利费。有分析认为，华为此举是为了获得芯片供应向高通施压，如果高通依然无法为华为供货，华为缴纳这笔专利费可能无限期暂停。</p>
+<p>目前高通及华为均未对此消息进行回应。</p>
+<p>而在芯智讯看来，华为确实有可能暂停了向高通支付这笔专利费，但原因并不是高通无法为华为供货。</p>
+<p>要知道早在去年5月，美国就将华为列入了实体清单，之后高通就已经无法向华为供货。而今年7月华为与高通达成专利授权协议之时，高通也并未恢复向华为供货。那么为什么华为无法使用高通芯片，也需要继续向高通缴纳专利授权费呢？因为华为自研的麒麟处理器和采购的联发科手机芯片都有使用到高通的专利技术，所以需要向高通支付专利授权费。比如之前一直使用联发科芯片的魅族，就因为不向高通缴纳专利授权费而被高通以侵犯专利为由告上了法庭，最终魅族不得不乖乖交钱以获得授权。</p>
+<p>所以，即便是在今年5月，美国进一步加码对于华为制裁，使得华为自研的麒麟处理器制造受阻之后，华为依然还是在今年7月底与高通达成了专利授权协议，因为当时华为还是能够通过采购联发科的手机芯片来维持手机业务的运转。</p>
+<p class="ql-align-center" style="text-align: center;">但是，自今年8月，美国第三次对华为进行制裁之后，使得华为在自研手机芯片制造受阻的同时，采购联发科等第三方的手机芯片也进一步受阻，华为的手机业务的开展陷入困境。在此背景之下，华为已经确实没有必要继续向高通缴纳专利授权费了。</p>
+<p>所以，华为停止向高通缴纳专利授权费并不是因为高通不能供应芯片，而是因为在美国禁令下，华为自己芯片不能制造，也不能采购联发科等第三方的手机芯片，手机业务的运转受阻，未来手机业务能不能活下来还是问题，怎么可能还要为未来几年去交专利授权费。</p>
+<p>编辑：芯智讯-浪客剑</p>

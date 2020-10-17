@@ -1,0 +1,60 @@
+➜助力面板行业创新，FPGA将成屏厂TCON最佳选择？
+http://www.sohu.com/a/421713154_128469	40983
+<p class="ql-align-center" style="text-align: center;"><img src="http://p8.itc.cn/images01/20200929/526300f817a04ec1b3c6323c5197c74f.png" max-width="600" /></p>
+<p>9月25日，赛灵思召开线上媒体分享会，介绍了赛灵思的FPGA产品如何加速新兴显示面板技术的发展。</p>
+<p>近年来，随着视频内容提供商不断推出更高质量画质的内容，以及消费者对于显示器显示效果持续追求，刺激了上游显示面板技术的持续升级。在此背景之下，显示效果更好的支持高动态范围 (HDR)技术正在成为显示面板、智能电视、智能手机等厂商追逐和炒作的热点。这过程中，赛灵思的FPGA为显示面板厂商的创新提供了很大的助力。</p>
+<p><strong>什么是HDR？</strong></p>
+<p>HDR（High-Dynamic Range）是高动态范围图像，相比普通的图像，可以提供更多的动态范围和图像细节，根据不同的曝光时间的LDR（Low-Dynamic Range，低动态范围图像），并利用每个曝光时间相对应最佳细节的LDR图像来合成最终HDR图像。它能够更好的反映出真实环境中的视觉效果。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p2.itc.cn/images01/20200929/37d4c197bf964a148d94528a74839ff3.png" max-width="600" /></p>
+<p>而要呈现完美的HDR需要满足两个条件：宽色域和高亮度范围。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p0.itc.cn/images01/20200929/a77f521b4a3540e1918de40974e18c2e.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>如上图中的“蛇形图”代表的就是我们人眼所能看到的所有的颜色。目前传统的这个高清电视所能看到的是Rec.709这个图里面的最小的这个三角形所覆盖的色度范围；但是4K UHD电视所能覆盖的色域则是DCI-P3这个更大的一个三角形范围；到8K SHV则就是Rec.2020这个三角形所覆盖的范围。</p>
+<p>在亮度方面，人眼所能分辨的范围是0到10000个nits，超出这个范围来说，对于人眼也就没有了意义。而普通液晶电视能表现的最低亮度为0.1nits，最亮为500到1000nits之间。</p>
+<p>而HDR的概念就是，实现接近人眼所能覆盖的色域和亮度范围。即利用相机来尽可能的记录画面中人眼所能感受的真实的自然的色彩范围和亮度范围，这是一个光电转换的过程，而显示器则需要尽可能的还原相机所记录的真实的自然画面，这是一个电光转换的过程。</p>
+<p>所以，HDR 内容生产和显示实际上包括三个因素：动态范围、光电/电光传递函数(OETF/EOTF) 和宽色域。</p>
+<p>业界有两种常用的 HDR 伽玛曲线标准：SMPTE 2084 采用的感知量化 (PQ) 标准和混合对数伽玛 (HLG) 标准。PQ 通过采用大多数像素位代表较低的亮度级别来覆盖整个亮度范围，这是在较低水平的细节上补充人眼灵敏度的一种方法。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p1.itc.cn/images01/20200929/c8e8f450a0384d93b7d00996e3e64248.png" max-width="600" /></p>
+<p><strong>HDR对面板厂商带来的挑战</strong></p>
+<p>尽管 HDR 标准为内容和显示器设定了相同的目标，但不幸的是，显示器技术还是远远滞后的。</p>
+<p>赛灵思大中华区核心市场总监酆毅（Bob Feng）表示，大多数消费类LCD显示器提供的峰值亮度大概在1000nits，OLED大概在800-1000nits，量子点可以做到1000nits，而Micro LED可以做到4000nits，但是都比HDR SMPTE2084 中定义的10000nits亮度要小得多。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p4.itc.cn/images01/20200929/5ac3cf8cf6c04f28b9ad26085cff3151.png" max-width="600" /></p>
+<p>酆毅（Bob Feng）</p>
+<p>赛灵思公司大中华区核心市场事业部 (CMG)市场及业务开发总监</p>
+<p>同样，在低亮度水平上，不同的面板技术，也有着很大的差异。比如对于LCD的这个显示技术来讲，其需要背光，而背光的光源提供模式有很多种。从比较简单的边缘式背光，到直下式背光，然后迭代到量子点的背光和MiniLED背光，然后还有叠屏背光。而由于背光的存在，在展示完全的黑色时，其最低亮度仍有接近0.05-0.005nit，这将显着影响动态范围的实现。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20200929/2b76e48e6f48444b862ba300044d9fef.png" max-width="600" /></p>
+<p>虽然OLED和MicroLED是自发光，无需背光，能够实现接近0nits（0.0001nits）的最低亮度。但是，目前在大尺寸的OLED电视上，LG一家独大，其他屏厂目前在良率上还是有着一定的挑战，另外大尺寸OLED电视的成本对于普通消费者也不是很友好。而Micro LED作为一项新技术，其所面临的挑战更大。</p>
+<p>同样，色域范围上，大多数的HDR显示器也并不达标，与HLG和PQ标准均采用的Rec. 2020的色域要求相比，大多数 HDR显示器仅接近 DCI-P3。</p>
+<p>也就是说，目前虽然有符合HDR制作标准的HDR内容，但是实际上，各种宣传支持HDR显示的面板却并不完全符合HDR显示标准的要求。因为要解决这个问题，还需要依赖于显示面板技术的进一步升级，这可能还需要一个过程。</p>
+<p>所以，如何尽可能的提升现有的显示面板的对于HDR内容的还原，成为了现阶段面板厂商所面临的主要问题。</p>
+<p>对此，很多厂商将高动态范围和宽色域联系在一起，形成一个较新的概念——3D色彩容量，酆毅形象的将其称之为“3D调色桶”。</p>
+<p>酆毅表示，为了最好地将具有较大调色桶的 HDR 内容呈现给具有较小调色桶的特定显示器，必须要完成适当的转换或映射过程。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p9.itc.cn/images01/20200929/5360cd80b5974985b0dbd4078daa6d5e.png" max-width="600" /></p>
+<p>色彩容量转换的效果取决于 HDR 标准、显示器类型和显示器供应商。其中，HDR 标准确定了如何使用选定的伽玛曲线、最大动态范围和色域来创建交付内容，而显示器类型和供应商则确定了实际的表示能力。</p>
+<p>因此，在不同供应商的不同技术类型的显示面板（LCD/OLED/叠屏/MicroLED）中，每一个都需要在其时序控制器 (TCON) 中使用特定的色彩容量映射算法，以便为不同的面板正确地匹配各种色域和对比度输入，例如混合对数伽马(HLG)、HDR10 和杜比视界，从而最大程度的优化显示效果。与此同时，HDR内容通常还伴随着不同分辨率和刷新率需求，这就极大地增加了 TCON 输入和输出接口的种类和带宽的需求。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p9.itc.cn/images01/20200929/438f61fdb8b04a0cb286013a98cb91fe.png" max-width="600" /></p>
+<p>这些都使得通过专用集成电路 (ASIC) 或专用半导体产品 (ASSP) 等专用器件来设计 TCON 的常规方法，正在变得越来越困难，并且阻碍了新型创新面板的及时采用。</p>
+<p>举个例子来说就是，如果使用ASIC或ASSP来设计面板的TCON，那么屏厂商针对LCD/OLED/叠屏/MicroLED这四种类型的面板，以及FHD/UHD/8K这三种分辨率，就需要设计12颗不同的ASIC或ASSP与之一一匹配（如果考虑不同的刷新率，可能需要更多颗芯片）。显然，这对于面板厂商来说，不仅挑战更大，而且所需耗费的研发投入更大，综合成本也更高。这也使得屏厂难以专注于它的屏的良率和显示效果上的提升。</p>
+<p><strong>赛灵思FPGA助力新兴显示面板创新</strong></p>
+<p>对于目前屏厂所面临的挑战，赛灵思的FPGA产品则提供了相比ASIC或ASSP更为灵活的解决方案。</p>
+<p>由于FPGA是可编程逻辑器件，其相对于针对特定算法而固化的ASIC或ASSP来说，可以适应更多类型的算法，这也意味着一颗基于FPGA芯片的TCON可以适应多种不同技术类型的屏幕的需求。</p>
+<p>“不管你是LCD的算法，OLED算法，叠屏的算法，还是Micro LED的算法，你都可以通过同一颗FPGA芯片来实现，不过，针对不同的分辨率及刷新率需要选择不同的FPGA。因此，不同分辨率及刷新率对于芯片的处理速度和带宽需求有很大的差异。”赛灵思大中华区核心市场总监酆毅解释称：“对于屏厂来说，原本可能需要12颗ASIC或ASSP才能够解决的问题，现在可能只需要4颗FPGA就能够解决，极大的减轻来了屏厂的负担。选用FPGA作为TCON将成为屏厂一个非常理想的选择。”（值得一提的是，海尔的叠屏电视所采用的叠屏就采用了赛灵思的FPGA作为TCON。）</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p1.itc.cn/images01/20200929/ac47f12b83d14733942d38e12212b7a4.png" max-width="600" /></p>
+<p>此外，FPGA 还具有其他一些优势。比如，它面向视频接口的灵活性。根据显示器供应商和类型的不同，TCON 的视频输出，可能会在 eDP、LVDS、RSDS、P2P 等多种信令标准之间有所不同。此外，TCON 输入也不必受到 V-by-One 接口的限制，而是可以将 HDMI 或 DisplayPort 接口重新编程到 FPGA 中。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p2.itc.cn/images01/20200929/490b8cd4806148f0894d860f40787bc8.png" max-width="600" /></p>
+<p>这种架构上的变更，可以助力 TCON 直接与更多的网络友好型移动 SoC（而不仅仅是传统的电视 SoC）接口连接。这一改进使得对不断增长的 HDR 内容池的访问变得更加轻松和丰富，同时还不会增加额外的组件成本。而且，甚至可以直接使用移动SoC替代掉主流的4K TV SoC，进一步简化电路，降低成本。</p>
+<p>酆毅表示：“我觉得，FPGA在TCON方面的最大特点和价值就是适合任何屏、任何接口和任何屏厂。</p>
+<p>据介绍，目前赛灵思已经与视显光电合作，针对不同面板厂商（涵盖了三星/LG/友达/群创/京东方/华星光电）的不同技术类型（LCD/OLED/QLED）的FHD/4K@60FPS/8@60FPS/8K@120FPS面板分别推出了基于Spartan 6、Kintex 7 VASSP、Kintex UltraScale KU060、Kintex UltraScale KU115的解决方案。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20200929/7ff8d6a513504aeea7ed25126e2eb140.png" max-width="600" /></p>
+<p>虽然，在显示面板领域的TCON设计上，FPGA相比ASIC有着很多的优势，但是并不代表FPGA就能够包打天下，ASIC就没有用武之地。</p>
+<p>酆毅也坦言，“当面板技术非常成熟，且已能够大规模商用时，TCON选择ASIC才是合适的。”</p>
+<p>不过，在酆毅看来，目前大屏OLED只有LG的技术比较成熟，其他屏厂还不能够很好的解决良率问题，这个时候去开ASIC是不明智的。此外，还有新的叠屏、MicroLED等新的面板技术，在这些技术还在发展当中，或者商用前景还不够明朗的时候，选择FPGA去做为TCON，是一个最佳的选择。</p>
+<p>“不管是屏厂也好，还是不同的屏的技术类型也好，所对应的色彩容量转换的调色桶是不同的。所有的屏，都需要事先定义好一个调色桶，然后屏厂需要将那个屏往那个调色桶设计，同时需要并行的去开发针对该调色桶的转换算法固化的ASIC。但是，如果在屏的设计过程中，这个调色桶稍微有一点点改变，那么原来设计好的算法，就有可能要重新更改，这个其实对并行进行的ASIC开发是一个灾难。所以，在对应的屏幕技术完全成熟化、商用化之前，去开ASIC，将是一件非常痛苦和困难的事情。而FPGA在这个过程中可以完美的解决这个问题。”酆毅进一步解释到。</p>
+<p>编辑：芯智讯-浪客剑</p>
