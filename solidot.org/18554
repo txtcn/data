@@ -1,0 +1,40 @@
+➜Chrome 的网站数据设置豁免了 Google 旗下网站
+https://www.solidot.org/story?sid=65836	7757
+一位扩展开发者注意到，在 Chrome 的“Cookie 和网站数据”设置中，用户可以启用“关闭 Chrome 时删除 Cookie 与网站数据”。但在启用该选项之后，Google 旗下网站如搜索和 YouTube 的数据在关闭之后并没有删除。他对其进行了一番测试，在没有登陆 Chrome  或任何 Google 服务的情况下 YouTube 等 Google 服务的数据在浏览器关闭之后仍然保留了，也就是说 Google 旗下网站默认<a href="https://lapcatsoftware.com/articles/chrome-google.html">豁免于用户设置</a>。Google 的做法再次<a href="https://news.ycombinator.com/item?id=24817304">引发了争议</a>。<p>
+➜疾控中心在冷链食品外包装分离出新冠活病毒
+https://www.solidot.org/story?sid=65837	9125
+中国疾控中心发表<a href="http://www.chinacdc.cn/yw_9324/202010/t20201017_222144.html">报告称</a>，它在对青岛新冠肺炎疫情溯源调查过程中，从工人搬运的进口冷冻鳕鱼的外包装阳性样本中检测分离到活病毒。这是国际上首次在冷链食品外包装上分离到新冠活病毒，并证实接触新冠活病毒污染的外包装可导致感染。报告称，在特定环境条件下，物品表面存活的病毒可能导致无有效防护的易感接触者发生感染，感染风险人群主要为冷链物品从业人员。本发现提示，在防范境外感染者输入的同时，需注意在境外被病毒污染的冷链物品将病毒输入的风险。<p>
+➜中国禁止诱导未成年人沉迷的产品和服务
+https://www.solidot.org/story?sid=65838	10720
+全国人大常委会上周六通过了修订后的未成年人保护法，其中包括禁止诱导未成年人沉迷的产品和服务。<a href="https://zh.m.wikisource.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%9C%AA%E6%88%90%E5%B9%B4%E4%BA%BA%E4%BF%9D%E6%8A%A4%E6%B3%95_(2020%E5%B9%B4)" target="_blank">新的未成年人保护法</a>将于 2021 年 6 月 1 日起施行，相比<a href="https://zh.m.wikisource.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%9C%AA%E6%88%90%E5%B9%B4%E4%BA%BA%E4%BF%9D%E6%8A%A4%E6%B3%95_(2012%E5%B9%B4)">旧版本</a>，新版增添了“网络保护”一章，其中包括：<i>
+“第六十九条　学校、社区、图书馆、文化馆、青少年宫等场所为未成年人提供的互联网上网服务设施，应当安装未成年人网络保护软件或者采取其他安全保护技术措施。智能终端产品的制造者、销售者应当在产品上安装未成年人网络保护软件，或者以显着方式告知用户未成年人网络保护软件的安装渠道和方法。
+第七十一条　未成年人的父母或者其他监护人应当提高网络素养，规范自身使用网络的行为，加强对未成年人使用网络行为的引导和监督。未成年人的父母或者其他监护人应当通过在智能终端产品上安装未成年人网络保护软件、选择适合未成年人的服务模式和管理功能等方式，避免未成年人接触危害或者可能影响其身心健康的网络信息，合理安排未成年人使用网络的时间，有效预防未成年人沉迷网络。
+第七十四条　网络产品和服务提供者不得向未成年人提供诱导其沉迷的产品和服务。网络游戏、网络直播、网络音视频、网络社交等网络服务提供者应当针对未成年人使用其服务设置相应的时间管理、权限管理、消费管理等功能。以未成年人为服务对象的在线教育网络产品和服务，不得插入网络游戏链接，不得推送广告等与教学无关的信息。
+第七十五条　网络游戏经依法审批后方可运营。国家建立统一的未成年人网络游戏电子身份认证系统。网络游戏服务提供者应当要求未成年人以真实身份信息注册并登录网络游戏。网络游戏服务提供者应当按照国家有关规定和标准，对游戏产品进行分类，作出适龄提示，并采取技术措施，不得让未成年人接触不适宜的游戏或者游戏功能。网络游戏服务提供者不得在每日二十二时至次日八时向未成年人提供网络游戏服务。 </i><p>
+➜Linux 5.10 将 2038 年问题变成 2486 年问题
+https://www.solidot.org/story?sid=65839	20131
+Linux 内核的下一个版本 5.10<a href="https://www.phoronix.com/scan.php?page=news_item&amp;px=XFS-Linux-5.10" target="_blank"> 引入了</a>针对 XFS 文件系统的改进，其中包括部分解决 2038 年问题的补丁。2038 年问题是指类 Unix 系统采用的是 32 位时间计数 time_t，计数从 1970 年开始，到 2038 年 1 月将会溢出。为了应对 2038 年问题，XFS 文件系统允许的时间戳范围从之前的 1901 年 12 月到 2038 年 1 月扩大为 1901 年 12 月到 2486 年 7 月。为了保存向后兼容性，该功能未默认启用。<p>
+➜Google 内部数据显示员工自我感觉在家办公的生产效率略低
+https://www.solidot.org/story?sid=65840	21944
+Google 内部数据显示员工自我感觉<a href="https://it.slashdot.org/story/20/10/18/0056240/googles-internal-data-suggests-employees-feel-less-productive-at-home">在家办公的生产效率较低</a>。内部调查发现，截至 6 月的三个月内，投票的 Google 工程师只有 31% 感觉生产效率更高，比截至 3 月的季度记录低 8%。Google 负责工程生产力的高管 Michael Bachman 发邮件给其他高级经理和高管，提醒他们注意这一数据。不是所有调查都认为远程在家办公生产效率低。DevOpsWorld 2020 会议上公布的报告称，许多软件开发者报告生产效率提高了。生产力问题可能也与工作环境有关，如果有孩子而疫情高峰期间孩子都在家中，这也会干扰到人的注意力。<p>
+➜美籍华人利用微信为特朗普拉票
+https://www.solidot.org/story?sid=65841	23744
+金融时报<a href="http://www.ftchinese.com/story/001089847?adchannelID=&amp;full=y">报道</a>，虽然大多数华裔美国人在 2016 年的大选中投票支持希拉里•克林顿(Hillary Clinton)，但在四年后的今天，微信上最响亮的声音都是支持特朗普的。哥伦比亚大学新闻学院的 Chi Zhang 的研究显示，在微信上的党派博客中，覆盖面最广的博客倾向于支持共和党。Chi Zhang 将该平台描述为“不对称的两极分化”。亲特朗普者散布的错误信息在微信的美国博客上广泛传播。这些博客很容易注册，面对的受众通常不足 1 万人。华裔美国人支持特朗普的许多原因与特朗普的其他支持者相同。一位支持者称，“人们重视家庭，提倡勤奋工作，反对许多现代观念，比如同性恋和性自由。”<p>
+➜埃及利用废水在沙漠植树
+https://www.solidot.org/story?sid=65842	24265
+作为保护环境、减少污染和优化利用水资源计划的一部分，<a href="https://www.al-monitor.com/pulse/originals/2020/10/egypt-africa-desert-forests-plant-trees-wastewater.html" target="_blank">埃及利用废水在沙漠中植树</a>。Serapium 森林计划始于 1998 年，虽然干旱和降雨量不足，这座森林目前包含 200 公顷的树。Serapium 森林的成功促使其他干旱的非洲国家效仿。2019 年，21 个非洲国家启动了“绿色长城”植树项目，从非洲大陆西部的塞内加尔到东部的吉布提，蔓延约 8000 公里。该项目计划到 2030 年完成，目前进度 15%，预计森林面积将超过 1 亿公顷，预计花费 80 亿美元。<p>
+➜中国载人航天空间站工程准备全面动工
+https://www.solidot.org/story?sid=65843	27403
+中国载人航天工程办公室主任郝淳<a href="http://news.sciencenet.cn/htmlnews/2020/10/447124.shtm">表示</a>，中国载人航天工程已经全面转入空间站建造的任务准备阶段。中国正力争 2022 年前后完成中国空间站在轨建造计划。按计划，未来两年中国将进行 11 次发射任务，先后发射天和核心舱、问天实验舱和梦天实验舱，以及 4 艘神舟载人飞船和 4 艘天舟货运飞船，完成中国空间站在轨建造。中国载人航天工程第三批预备航天员选拔工作日前已结束，共有 18 名预备航天员(含 1 名女性)最终入选，包括 7 名航天驾驶员、7 名航天飞行工程师和 4 名载荷专家。<p>
+➜小米苹果增产填补华为减产份额
+https://www.solidot.org/story?sid=65845	29366
+华为在今年第二季度超过三星成为全球最大的手机制造商，但从 9 月 15 日开始，美国对华为的制裁生效，除了利用逐渐枯竭的库存它将无法再通过台积电代工芯片。华为手机被认为将会继续减产，而它的竞争对手如小米和苹果等<a href="https://cn.nikkei.com/industry/itelectric-appliance/42397-2020-10-19-04-59-47.html" target="_blank">则计划通过增产去填补华为减产的份额</a>。苹果向供应商提出计划表示将 2020 年的 iPhone 产量定为比当初计划增加 1 成的 2 亿 2000 万部左右。多家供应商表示，智能手机份额排在第 4 位的小米和居第 5 位的欧珀（OPPO）也提出 2021 年比 2020 年计划增长逾 5 成的约 2 亿部的生产目标。华为手机零部件的库存被认为可用 6 个月左右，到 2021 年 1～3 月以后预计进一步减产。<p>
+➜黑客正尝试利用 Zerologon 向尚未打补丁的服务器植入后门
+https://www.solidot.org/story?sid=65846	34425
+微软在 8 月的例行更新中修复了被命名为 Zerologon 的高危漏洞 CVE-2020-1472，它允许已在目标网络立足的任意攻击者完全控制 Active Directory。该漏洞可被用于发动勒索软件攻击或植入间谍软件。安全研究人员在 9 月中旬<a href="https://www.solidot.org/story?sid=65546">公开了</a>漏洞利用的 poc 代码，之后<a href="https://www.solidot.org/story?sid=65654">就传出</a>黑客正在利用该漏洞的消息。安全研究员 Kevin Beaumont 上周<a href="https://arstechnica.com/information-technology/2020/10/hackers-are-using-a-severe-windows-bug-to-backdoor-unpatched-servers/">披露</a>，他设立的蜜罐探测到黑客正尝试利用 Zerologon 向尚未打补丁的服务器植入后门。攻击是利用脚本发动的，所有命令都在数秒内完成，攻击者使用用户名 sdb 和密码 jinglebell110@ 创建了账号并启用了远程桌面，即使服务器后来打上了补丁攻击者仍然能持续远程访问。<p>
+➜物联网僵尸网络被用于充当代理服务器
+https://www.solidot.org/story?sid=65847	34585
+安全公司 Bitdefender 的研究人员<a href="https://arstechnica.com/information-technology/2020/10/thousands-of-infected-iot-devices-used-in-for-profit-anonymity-service/" target="_blank">发现</a>大约 9000 台物联网设备——大部分运行  Android，少数运行 Linux 和 Darwin——组成了被称为 Storm 的僵尸网络，其主要目的是创建盈利目的的代理服务器。这不是第一次僵尸网络充当代理服务器。攻击者是通过 SSH 扫描寻找弱密码或默认密码的设备然后感染机器，恶意程序 <a href="https://www.bitdefender.com/files/News/CaseStudies/study/376/Bitdefender-Whitepaper-IPStorm.pdf">IPStorm</a> 是用 Go 语言编写，整合了 NTP、UPnP 和 SOCKS5 等协议的开源实现，将 lib2p 库用于点对点功能。<p>
+➜猎户座流星雨本周达到峰值
+https://www.solidot.org/story?sid=65848	46309
+猎户座流星雨将于 10 月 21 日凌晨<a href="https://www.space.com/orionid-meteor-shower-2020-peaks-soon" target="_blank">达到峰值</a>，预计每小时能看到&nbsp; 15 到 30 颗彗星。猎户座流星雨是五大流星雨之一，是八月英仙座流星雨之后最壮观的流星雨。猎户座流星雨与哈雷彗星有关，地球每年这个时节都会经过彗星留下的碎片，碎片撞击地球大气层产生了流星。可以看到猎户座流星雨的时间是从 10 月 16 日到 26 日。<p>

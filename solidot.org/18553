@@ -1,0 +1,9 @@
+➜“不小心删库”
+https://www.solidot.org/story?sid=65833	47211
+提供在线计分板服务的 Keepthescore <a href="https://keepthescore.co/blog/posts/deleting_the_production_database/">透露</a>他们“不小心删了产品库”。幸运的是云服务商 DigitalOcean 每天会自动备份数据库，因此在删库之后他们使用备份数据库恢复了服务，但有大约 7 小时的数据永久丢失了。开发者承认他们也不知道是什么原因导致了删库，他们在代码中特别强调是删除 localhost 的数据库，但不知为何却把产品数据库删掉了。有人<a href="https://news.ycombinator.com/item?id=24813795">猜测</a>与 SSH 端口转发有关，开发者的开发机通过 SSH 连接到产品服务器，localhost 的数据库实际上就是产品数据库。<p>
+➜湾区领导人拒绝永久性远程办公提议
+https://www.solidot.org/story?sid=65834	50578
+旧金山湾区的交通委员会起草了一个方案，要求到 2035 年大型企业允许员工每周三天在家办公，以减少汽车通勤带来的排放。但地方精英<a href="https://news.slashdot.org/story/20/10/17/0038238/make-remote-work-permanent-no-way-say-bay-area-leaders" target="_blank">对这一提案嗤之以鼻</a>，立法议员、商界和公共交通支持者强烈批评了这一方案。政客和商界领袖表示这将鼓励硅谷公司外逃。San Jose 市长 Sam Liccardo 将这一想法比作铺一条连接硅谷和得州的通道，Liccardo 和旧金山市长 London Breed 督促交通委员会寻找更好的减排方案。湾区的立法议员表示，远程办公将伤害到大企业周围的小型企业，让市区丧失活力，减少公交车的使用，严重影响到低薪水工人。<p>
+➜三星手机让香港澳门用户使用中国大陆的 DNS 服务
+https://www.solidot.org/story?sid=65835	54906
+香港和澳门的三星手机用户报告，三星最近释出的固件将中国大陆的公共 DNS 服务 114.114.114.114 加入到了 DNS 设置中，三星手机还被发现连接到 WIFI 时大约每分钟向包括 114 在内的所有 DNS 服务器查询一次 qq.com 的域名，即使用户没有安装任何腾讯的软件。这一消息引发了隐私方面的担忧。三星在 10 月中旬释出的最新固件<a href="http://blog.headuck.com/2020/10/12/samsung-phones-force-mainland-china-dns-service-upon-hong-kong-wifi-users/" target="_blank">修复了</a> DNS 问题，但对 qq.com 的查询<a href="http://blog.headuck.com/2020/10/15/samsung-phones-force-mainland-china-dns-service-upon-hong-kong-wifi-users-2/">没有发生改变</a>。<p>
