@@ -1,0 +1,102 @@
+➜Oculus官方教程：利用Unity和Unreal开发Quest应用与内容安全
+http://www.sohu.com/a/425728278_395737	22998
+<p>上一篇文章中，Oculus指出了VR开发者想要在Quest平台获得成功，所需要进行的前期准备、营销策略和商业模式选取，以及如何选择PC VR和一体机平台，并提出多种建议。</p>
+<p>今天，我们将继续了解一下开发者使用Unity和Unreal不同引擎来开发Oculus应用的注意事项，以及虚拟头像与VR社交、内容安全、建立用户社群等方面。</p>
+<p>1）Unity开发：</p>
+<p>在下方视频中，Oculus和Unity工程师展示了利用Unity开发Quest应用的最新成果，包括推出API、XR插件系统、提升开发迭代速度、优化通用渲染流程等方面。</p>
+<p>2）Unreal开发：</p>
+<p>在下方视频中，Epic Games和Oculus工程师展示了Oculus在于UE4引擎集成上的重大提升，包括加速开发迭代、全新的示例代码和更新的Unreal Editor。此外，Epic还将推出免费的12节线上培训课程，帮助开发者用Unreal开发VR应用。</p>
+<p>3）开发者可考虑的VR社交特性：</p>
+<p>○ 临场感、协作性、用户新鲜事；</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201019/9e54a12d69194f88a6093911241b379a.png" max-width="600" /></p>
+<p>○ 全新的Avatar II更新美术风格、SDK 2.0和Body API；</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201019/2d35c492c46a4ede9e143af79ca79d5c.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>○ 全新的头显系统加入更多样的发型、五官特征、脸型、体型、妆容、饰品、服装等定制化内容，号称有10亿种不同的搭配；</p>
+<p>○ 未来虚拟头像还将加入下肢，实现全身形象模拟；</p>
+<p>○ Avatar SDK 2.0可在VR应用中直接使用，无需额外开发或编辑3D虚拟形象；</p>
+<p>○ 自Quest推出以来，Avatar系统加入注视点识别、微表情、机器学习驱动的对口型等功能；</p>
+<p>○ 除了新增多种功能外，Avatar SDK 2.0还具备模块化特性，提供资源API、动画API（可用来动态优化渲染效率）、上半身追踪API；</p>
+<p>○ 上半身追踪API具备3Point IK模拟、手势识别、唇部口型同步等特点；</p>
+<p>○ 重定向API可自然将用户实际姿态与虚拟形象匹配，即使身体比例不匹配；</p>
+<p>○ 串流API可用于录制虚拟头像动作，并与其他用户分享；</p>
+<p>4）多人协作系统：</p>
+<p>○ Oculus现有的多人协作功能包括：Destination、Rich presence、Deep Linking；</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201019/d29deddcc15b428b990fc4834db10ee7.png" max-width="600" /></p>
+<p>○ Destination可以为用户展示可以进入的VR应用内场景；</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201019/2d797b73170943249f7c9a54f78f251f.png" max-width="600" /></p>
+<p>○ Rich Presence可以让你看到好友正在VR中做什么，还可以加入；</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201019/9300e0f2758044ee93e61e36179d9e2d.png" max-width="600" /></p>
+<p>○ Oculus Parties新增功能Travel Together结合Destination和Deep Linking功能，可以让最多8名用户同时进入VR应用同一场景（相当于组队游戏）；</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201019/b2a91cd2687c47dca1d1511d88290122.png" max-width="600" /></p>
+<p>○ 支持Travel Together功能的游戏将有效降低VR用户寻找好友的时间，快速组队开始游戏，即使用户不在VR中也可以收到邀请，你还可以加入其他人的队伍；</p>
+<p>○ 开发者可自定义Deep Linking，包括设置分享url、可分享的空间和关卡、设置共享空间、竞赛、私人空间等功能；</p>
+<p>○ 建议开发者优化Deep Linking载入时间、预先设置可定位进入的社交地点、设置密码设定等功能来确保安全性、通过丰富的图像和描述来帮助用户寻找优质内容；</p>
+<p>○ 可通过结合通知与Deep Linking功能，提醒用户好友的进度（比如破纪录的关卡等）；</p>
+<p>○ 开发者还可以利用Oculus的Scoreboards分数应用，促进玩家与好友的互动跟竞争，为玩家自定义游戏挑战；</p>
+<p>○ Scoreboards新增挑战功能，可以让玩家创建不同分数等级和时间限制的挑战，而且挑战等级也随着玩家成绩而不断提高；</p>
+<p>○ 用户移动端Oculus应用中就能查看Scoreboards和Challenge，无需进入VR；</p>
+<p>5）应对盗版与作弊风险；</p>
+<p>○ Quest既是一款游戏主机，也是一个开发套件，一些用户可能会利用它来进行VR应用盗版和作弊，甚至会容易利用Quest基于的安卓平台的开源代码，来开发模拟器；</p>
+<p>○ Oculus建议开发者不要使用模拟器平台，因为Oculus官方平台更安全，可确保其他人不会盗取你的应用；</p>
+<p>○ Oculus平台通过验证启动（只有Facebook支持的系统软件才能在Oculus设备上运行）、月更安全补丁、检测技术（可识别更改软件）；</p>
+<p>○ 建议开发者在上传资源时预先验证（包括OBB和DLC文件），并谨慎对待多人服务器（验证用户，排除机器人）；</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201019/b54f5ae0940346e8823f8afdcea9b71e.png" max-width="600" /></p>
+<p>○ 利用Oculus Developer Dashboard来检测应用弱点；</p>
+<p>6）培养活跃社群：</p>
+<p>○ 通过与活跃VR用户和拥护者互动与合作，构建活跃的社群；</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201019/cfe4506fa1944d2695587b7b3aee379b.png" max-width="600" /></p>
+<p>○ VR拥护者是VR社区成员的一部分，也是最活跃的部分，应用体验时间最长、讨论贡献最多、最热衷于宣传VR的人群；</p>
+<p>○ VR拥护者对于发展VR用户群有关键作用，因此开发者需要为VR应用制定社群标准和文化；</p>
+<p>○ 构建VR生态、促进玩家间互动可通过竞赛活动、排行榜、奖励等方式实现；</p>
+<p>○ 通过规章制度和文化来塑造积极的VR用户社群；</p>
+<p>○ 吸引志同道合的VR拥护者，共同构建社群。</p>
+➜迪士尼VR专利：利用飞机、游船模拟器增强线下VR项目沉浸感
+http://www.sohu.com/a/425729496_395737	23378
+<p>近期，美国专利商标局发布了迪士尼一项新专利，专利中指出了一种基于VR的娱乐系统。据悉，该系统结合VR视觉和体感设备，可以让你碰到VR中虚拟物体时能体验到逼真的触觉反馈，沉浸感更强。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201019/e461f300dbdc4a209dc3a7c82b8234df.jpeg" max-width="600" /></p>
+<p>据青亭网了解，这份专利名为“提升穿戴式头显设备的空间感知以及方向感系统和方案”，简单来讲就是一种通过汽车、飞机、火车、跑步机或游艇等交通工具模拟器来为VR使用者提供与虚拟画面匹配的空间和方向体感。具体来讲，就是模拟速度、加速度、刹车、转向、排气等体感，为游乐园项目提供虚实结合的沉浸感受。</p>
+<p>此前，The Void也曾推出体感反馈+VR的线下游戏，当你在VR中碰到门把手的时候，也会在真实环境中碰到把手，比普通VR游戏更逼真。而迪士尼专利中描述的方案，在此基础上更进一层，将动态的VR画面与动态体感结合，效果会逼真。</p>
+<p>不愧是迪士尼，希望日后能看到迪士尼乐园在线下推出VR游轮、飞机模拟等项目，将线下娱乐设施与虚拟画面结合，带来与众不同的全新体验。</p>
+➜GIGXR推移动AR医疗教学平台，解决线上实验教学难题
+http://www.sohu.com/a/425730613_395737	23587
+<p>10月19日消息，教育、医疗XR解决方案公司GIGXR宣布推出两种全新医疗培训解决方案HoloPatient Remote和GIG Mobile。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201019/bdce5045d09c4a0d899b4d74b0cf23c4.jpeg" max-width="600" /></p>
+<p>据青亭网了解，HoloPatient是GIGXR开发的AR医疗平台，其中包含大量基于容积摄影制作的AR视频内容，以逼真的视觉向学生展示病患的症状等情况。而HoloPatient Remote是在此基础上的一个延伸，特点是支持移动设备或平板电脑，学生无需HoloLens AR头显，就可以在家进行培训。GIG Mobile则是一款移动端app，教师可用它来设置GIGXR的沉浸式学习系统，制定教学内容和方式等等。</p>
+<p>HoloPatient Remote特点：</p>
+<ul>
+<li>○ 学生可通过移动设备与使用HoloLens 2的老师远程交流和互动；</li>
+<li>○ 逼真的AR病患模拟；</li>
+<li>○ 学生可设置病患所处空间或位置；</li>
+<li>○ 学生可以从多个角度查看病人，并与之互动，与老师交流；</li>
+<li>○ 远程协作教学；</li>
+</ul>
+<p>GIG Mobile特点：</p>
+<ul>
+<li>○ 创作可复制的教学课件模板，安排给特定学生群；</li>
+<li>○ 学生可以用来远程加入HoloPatient培训；</li>
+<li>○ 学员信息采集；</li>
+<li>○ 二维码登陆，更快速；</li>
+</ul>
+<p>此前，GIGXR已经为应对新冠疫情推出病毒诊断AR应用HoloPatient：COVID-19，用于培训医生快速诊断新冠患者。而今天推出的HoloPatient Remote和GIG Mobile则是为了解决疫情之下，远程实验课教学的难题。与需要使用AR眼镜的方案相比，移动端AR成本更低，更容易广泛应用。</p>
+➜Oculus创始人Luckey悬赏Quest 2破解方案
+http://www.sohu.com/a/425730881_395737	23718
+<p>近期，由于Oculus强制Quest 2用户使用Facebook账户登录，引起一些用户不满，甚至还有被封号的情况。因此，前AltspaceVR成员、Mozilla WebXR部门的高级软件工程师Robert Long在Twitter上以5000美元悬赏可以破解Quest 2设备，或者修改后台服务的方法。更有意思的是，Oculus创始人Palmer Luckey在Twitter上表示要加码，出10000美元来悬赏Quest 2破解方案，甚至还@了Epic老大Tim Sweeney。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201019/c416d6bd0acd46c79fcb31f21f631429.jpeg" max-width="600" /></p>
+<p>不管Long是否是在开玩笑，但这侧面反映出开发者对于Facebook在VR生态上的封闭和反竞争策略的不满。不过据悉，即使是Quest一代，目前为止还没有任何人能够获取她root权限，并运行定制的固件。</p>
+<p>Long表示：如果为Oculus平台开发应用还需要强制登陆Facebook账户，那我宁愿选择放弃这个平台，甚至放弃Oculus Browser使用的WebXR功能。</p>
+<p>使用过安卓手机的用户可能知道，破解或越狱手机的方式之一是通过root，来获取类似于超级管理员一样的最高权限。而同样基于安卓系统的Quest似乎也可以通过这种功能方式来越狱，越狱之后也能像手机一样，安装破解版或非官方应用。</p>
+<p>当然，破解和越狱手机可能会涉及知识产权等法律问题，不过在一些国家中并不算违法。尽管如此，Facebook相信也会想办法从技术上进行回击。考虑到Quest生态发展与VR开发者关系密不可分，Facebook与开发者们之间的关系未来也是值得关注的一件事。</p>
+➜Quest 2将不支持对Oculus Go应用的向后兼容
+http://www.sohu.com/a/425731433_395737	23842
+<p>近期，Oculus前CTO John Carmack证实Quest 2将不再向后兼容Oculus Go应用。据悉，Oculus Go产品线目前已经终止，这款3DoF一体机上面的应用主要为全景视频、3DoF应用等更专注休闲娱乐观影的内容，在Quest 2 6DoF一体机上运行，可能会缺少一些交互性。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201019/c28b531efed345a39189e5e8a558d460.png" max-width="600" /></p>
+<p>不过据Carmack称，放弃对Oculus Go应用向后兼容的决定是经过内部讨论的，而且他输掉了这场讨论。也就是说，Carmack本意并不想放弃Oculus Go应用。其实，近年来从OC大会上Carmack的发言可以看出，他是Oculus推出3DoF一体机Go背后的关键驱动力，因此对于他来说，放弃对Go的向后兼容意味着，这个产品线将永远停留在历史中。同时也意味着，Oculus将重心从3DoF内容撤离，更专注于6DoF应用。</p>
+<p>对于Quest 2不再支持Go的3DoF内容，部分购买了Go和Quest 2的用户表示遗憾，不过这也是VR内容在朝着更优质方向发展的一种说明。</p>
