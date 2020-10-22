@@ -236,16 +236,119 @@ http://www.sohu.com/a/426311971_223764	5724
 <p>戳我购买哟～</p>
 <p><strong>这就是微星</strong></p>
 <p>无论如何，在过去的一段时间里，微星在笔记本业务上的逆势增长，都是既离不开优秀的产品设计，也离不开一体化的生产流程的——贴心的设计与强大的功能赢得了消费者的赞誉，而一体化的科学生产流程，则在许多代工厂受到影响的情况下，为微星带来了特别的优势。完整的生产流程带来了合理分配精力与预算的可能，而优秀的产品设计与功能实现，也因而持之以恒——微星，不仅仅是一个品牌，更是品质的保证。</p>
+➜用上RTX 3080游戏还是卡？Reflex技术怎样让你操作不变形
+http://www.sohu.com/a/426302660_223764	14118
+<p><strong>[PConline 杂谈]</strong>说到电竞游戏如何畅玩，玩家一般会与屏幕刷新率，或者帧数直接挂钩，这在高刷屏刚推出的那时确实是很多玩家关注的点之一。毕竟当时大家没有一个完整、清晰的概念，<strong>只是知道：帧数上去了游戏也就流畅，操作更加得心应手。</strong></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/q_70/images03/20201021/a23ce79f81f44dc7ad75439eee4ee24c.jpeg" max-width="600" /></p>
+<p>发展至今，不少玩家也逐渐意识到除了帧数、刷新率，硬件延迟也会给游戏操作带来影响，<strong>即使屏幕刷新率高了，游戏帧数也足够了，但操作起来还是有些不跟手的情况，经常脑子到了，手也到了，但游戏角色就像慢半拍一样。</strong></p>
+<p>他们也在不断的学习硬件知识，想尽办法怎样去降低延迟，提升自己的操作上限。<strong>说句实话，玩家越来越懂硬件，都是给游戏逼的……</strong></p>
+<p>NVIDIA Reflex技术是在今年9月推出的新技术，旨在通过优化渲染队列，降低CPU渲染队列压力来降低游戏响应延迟。在设置菜单里还可以选择“Reflex+Boost”选项，这样在CPU成为瓶颈的情况下，也可以锁定系统的GPU频率，进一步改善延迟状况。</p>
+<p><strong>该技术已经支持Valorant、Apex英雄、使命召唤：战区、使命召唤：黑色行动与堡垒之夜，日后会支持更多的游戏。</strong></p>
+<p>下面我将会通过英伟达的LDAT套件，实测并讲解游戏中的哪些因素会影响游戏延迟，同时也会针对英伟达在数款游戏中新搭载的Reflex技术来测试它对游戏延迟的优化作用。</p>
+<p><strong>延迟与Reflex</strong></p>
+<p>先来简单复习一下延迟的概念：</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/q_70/images03/20201021/1fc0ac3bdeab478bb81bf14376b5929b.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>输入→输出（端对端）过程，这个过程即为“延迟”</p>
+<p>端到端延迟，包括鼠标输入延迟，主机处理数据延迟与显示器输出图像的延迟，每一环都会影响你的操作体验。</p>
+<p><strong>高延迟，带来的问题就是画面变化总比鼠标慢一拍，也有很多玩家将此称为“跟手性”。更低的延迟，更能让玩家实现“指哪打哪”的效果。</strong></p>
+<p>LDAT套件可以测量出整个过程的总延迟，这篇文章要探讨的主要是怎样调整游戏设置来达到降低游戏延迟的效果，关于外设、电脑配置搭配会怎样影响延迟就考虑留到下期讲解了。</p>
+<p>NVIDIA Reflex技术是在9月2日发布会时推出的新技术，旨在通过优化渲染队列，降低CPU渲染队列压力来降低游戏响应延迟。该功能有两档可选：Reflex，和Reflex+Boost。</p>
+<p><strong>该技术已经支持Valorant、Apex英雄、使命召唤：战区、使命召唤：黑色行动与堡垒之夜，日后会支持更多的游戏，</strong>这次我们就选取其中三款支持Reflex的游戏来测试。</p>
+<p><strong>延迟的测量：LDAT</strong></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/q_70/images03/20201021/862e86b804c646d9acc908ac648def2f.jpeg" max-width="600" /></p>
+<p>LDAT是一个“麻雀虽小，五脏俱全”的小套件，通过内部敏感的亮度传感器可捕捉到显示器变化的一瞬间。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/q_70/images03/20201021/60356ee004d84117838e66c33ed84d38.gif" max-width="600" /></p>
+<p>软件可显示亮度水平，从黑色切换至桌面蓝色，可迅速检测到亮度变化</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/q_70/images03/20201021/2ee48c55d67c42e38519bb5035b8cd3b.gif" max-width="600" /></p>
+<p>用它测量延迟，最靠谱的方法是捕捉游戏中亮度变化最大，且触发最快的情景（如开枪，枪口火花闪烁，或者其它瞬发，亮度变化大的地方），FPS游戏最适合就是枪口火花，将传感器对准，并使用配套改装鼠标触发即可记录。</p>
+<p><strong>需要注意的是，这套设备肯定也有自己的延迟，但只要控制好无关变量不改变，就可以对比出自己想要的结果。</strong></p>
+<p><strong>平台硬件配置</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201022/d4df7294dba74cf4bfea7310160d1ba1.png" max-width="600" /></p>
+<p>这次我们挑选了新卡RTX 3080，图灵架构系列中端代表GTX 1660 Super，RX 5700 XT公版，以及很多人还在用的GTX 1060 6G，Reflex技术支持GTX 10系显卡，我们也想看看在旧卡上这项技术会对延迟有多大提升。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/q_70/images03/20201021/e43867287de94859b2a67d1971ba58a9.jpeg" max-width="600" /></p>
+<p>RTX 3080我们选择了影驰黑将，售价5499元的它性能与散热方面表现都非常不错，是很多人买RTX 3080时会加入考虑的一款非公卡，用它测试也比较有代表性。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/q_70/images03/20201021/4f4bb56fc0bd453fbf726e793a757691.jpeg" max-width="600" /></p>
+<p>为了测试4K电竞到底可不可行，我们也弄来了一台宏碁X27 4K144Hz显示器，从1080P到4K均可实现144Hz的刷新率。</p>
+<p><strong>驱动设置方面，N卡关闭G-Sync，打开低延迟模式的超高选项，A卡则打开Radeon Anti-Lag。</strong></p>
+<p><strong>测试游戏</strong></p>
+<p><strong>Valorant</strong></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/q_70/images03/20201021/0899dc859c704c7bb51e63ee37413eba.png" max-width="600" /></p>
+<p>Valorant是一款Riot（拳头）公司新推出的FPS射击游戏，虽然被人称为“缝合怪”，但游戏性相当不错，对玩家的枪法技术要求也比较高，官方宣传的力度非常勐烈。不过目前因为没有进入国服，所以热度也消减得比较快，日后引进至国内应该会有不错的热度。</p>
+<p><strong>测试环境：遗落境地地图，画质全高，关闭帧数限制，使用神射手枪，传感器对准枪口火花记录自动连发100次，测量平均延迟。</strong></p>
+<p><strong>堡垒之夜</strong></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/q_70/images03/20201021/76f0a05013a94b22b71d0be22b0eb624.png" max-width="600" /></p>
+<p>堡垒之夜火了全靠它后期推出的大逃杀模式，虽然现在还有不少大主播支撑热度，但人气也不够刚出的时候那么大了。不过游戏的搭板子挺有新意，刚枪的技术要求也很高。游戏也搭载了不少前沿技术，如光线追踪、DLSS与Reflex，作为这次测试延迟的游戏非常合适。</p>
+<p><strong>测试环境：创造模式，画面设置为全屏、中等预设画质、DX11。使用突击步枪，传感器对准枪口火花记录自动连发30次。</strong></p>
+<p><strong>使命召唤：战区</strong></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/q_70/images03/20201021/505beb403d24406a954d8ec1f0cb9ecd.png" max-width="600" /></p>
+<p>使命召唤：战区作为免费的大逃杀游戏，因其快节奏与多样的玩法受到不少玩家的喜爱，总之爽快就完事了。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/q_70/images03/20201021/1f24ab56ea704badbaf28c378bde3952.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/q_70/images03/20201021/f2dcabd5c3284c4786c098485086a2f2.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/q_70/images03/20201021/98ceb1f380084aa58bbaa24eb732fff2.png" max-width="600" /></p>
+<p><strong>测试环境：测试场景为大逃杀练习模式的水塔塔顶（见上图），画面配置如上方三张小图，使用格洛克手枪对钢板连发13次，传感器对准钢板火花处记录。</strong></p>
+<p><strong>测试结果</strong></p>
+<p>测试结果会分为几部分，分别讲解不同设置下对延迟的影响。</p>
+<p><strong>不同显卡在游戏不同分辨率中的运行帧数</strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/q_70/images03/20201021/8f43da2bfa7a4eb4b5012e99c6ecfd48.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/q_70/images03/20201021/70b709306cc448e6b9edc75b9b5fdb81.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/q_70/images03/20201021/b3f7fea0208244a3bb94959f0ba6d691.png" max-width="600" /></p>
+<p>帧数方面四款显卡都依照着RTX 3080＞RX 5700 XT＞GTX 1660 Super＞GTX 1060，理论上帧数越高，延迟就会越低，这在之后的延迟测试里会有所体现。</p>
+<p>《堡垒之夜》里GTX 1660 Super和GTX 1060在4K下的帧数也很高的原因是默认中等画质设置下，游戏会按照分辨率来调整3D分辨率的比例，正好我们也可以测试下这种特殊情况下Reflex能不能起效。</p>
+<p><strong>不同游戏、显卡、分辨率之间的延迟对比</strong></p>
+<p>四款显卡分别进行了三款游戏的测试，游戏延迟方面，《使命召唤：战区》延迟最高，《Valorant》第二，《堡垒之夜》则最低，不同游戏之间会存在引擎差异带来的延迟影响，当然这里对延迟影响比较大的是帧数。</p>
+<p>对比四款显卡，延迟排序也如帧数一样，RTX 3080＞RX 5700 XT＞GTX 1660 Super＞GTX 1060，根据上面的帧数测试结果<strong>也可断定帧数越高（显卡性能越强），对降低游戏延迟的效果就更大。</strong></p>
+<p>再对比分辨率，提高分辨率后，延迟提升也非常明显，这主要就是高分辨率带来的渲染压力，显卡性能不足所致。例如GTX 1060，在4K分辨率的《使命召唤：战区》只有31帧，端到端延迟163ms，玩起来有很明显的不跟手感觉。当然这里只是用作示例，毕竟我认为不会有人真的想用GTX 1060来流畅玩4K游戏。</p>
+<p><strong>帧数、游戏、显卡、分辨率测试小结：</strong>总结上面两小节数据，帧数和延迟总体呈现一个正相关的状态，帧数越高，对降低延迟的效果就越大。</p>
+<p>但分析RTX 3080在《Valorant》中的帧数与延迟表现，可以发现帧数在很高的时候，对延迟的表现影响就变得更小。1080P、2K、4K之间，帧数虽然各相差300帧，但4K与2K的延迟差距却比2K到1080P的要大得多。</p>
+<p>虽然帧数在到达一个点后，对延迟的优化效果会下降，但这不影响<strong>“帧数高，延迟低”</strong>这一个结论。根据这个结论，也可以推出画质越高，延迟越高的结论，毕竟提升画质后一般帧数会变低。</p>
+<p><strong>实测Reflex技术对游戏延迟的影响</strong></p>
+<p>Reflex技术降低的是渲染期间的延迟，其中包含了CPU、驱动、游戏一系列产生的延迟。而即使你没有LDAT这种检测延迟的套件，你也能在游戏中找到相关参数来测量延迟。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/q_70/images03/20201021/d6beea5bb7aa4c67ad90fd8d4c5c4f79.jpeg" max-width="600" /></p>
+<p>Reflex关闭</p>
+<p>以《Valorant》为例，设置中可查看一系列硬件信息与延迟，其中有CPU RHI（即渲染提交）时间，游戏转译延迟等，这两个其实就是延迟中的大头，也是Reflex技术降低延迟要处理的地方。</p>
+<p>此处配置为RTX 3080，4K分辨率。Reflex关闭时，CPU RHI时间为9.24ms，游戏转译延迟为29.24ms。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/q_70/images03/20201021/fc4b732679e645c09b6a48b585e4a717.jpeg" max-width="600" /></p>
+<p>Reflex开启</p>
+<p>当打开Reflex后，CPU RHI时间立刻降低至2.87ms，游戏转译延迟也降至12.96ms。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/q_70/images03/20201021/de1c35f233854392a02f32de4bcffe1b.jpeg" max-width="600" /></p>
+<p>Reflex开启+Boost</p>
+<p>而把Boost也打开后，CPU RHI时间为2.38ms，游戏转译延迟为12.64ms，与Reflex其实差不多。</p>
+<p><strong>下面来看看三款游戏，三款N卡通过LDAT套件测得的延迟。</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/q_70/images03/20201021/1d1cb938a38f4ee4a8a43144cfffe4cb.png" max-width="600" /></p>
+<p>《Valorant》中，对RTX 3080来说，打开Reflex与关闭之间的延迟差距并不大，因为它的帧数已经很高了，足以抵消掉软件渲染延迟所带来的整体延迟影响。</p>
+<p>提升最明显的就是GTX 1660 Super与GTX 1060两张卡了，4K分辨率下提升最大，GTX 1660 Super从41.9ms降至29ms左右，GTX 1060则从46ms降至31ms左右。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/q_70/images03/20201021/006c9da37c2f472bb580defba5763c60.png" max-width="600" /></p>
+<p>《堡垒之夜》中，RTX 3080依然是因为帧数很高的原因，打开与关闭Reflex影响极小。</p>
+<p>而GTX 1660 Super、GTX 1060的帧数表现也非常高，Reflex提升的效果也没有《Valorant》里那么大，较明显的区间在4K分辨率下。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/q_70/images03/20201021/a5aab8f1985241d7960d18272885fbe8.png" max-width="600" /></p>
+<p>《使命召唤：战区》里就有意思了，三张显卡的游戏帧数都不算特别高，RTX 3080在打开Reflex后延迟下降了不少，4K打开Reflex+Boost后的延迟也比较接近2K不打开Reflex的延迟表现了。</p>
+<p>而再看GTX 1660 Super，GTX 1060，两张卡在2K分辨率下延迟降低幅度最大，4K下则应该是因为帧数过低而起不到较好的延迟降低效果。</p>
+<p><strong>Reflex技术实测小结：</strong>这项技术对处于高压情况下的显卡会有一点帮助，例如2K下GTX 1660 Super、GTX 1060，4K下的RTX 3080，而当帧数太高，达到一个临界点后再打开Reflex，带来的提升就会变得较小。<strong>不过总归是免费的技术，不用白不用，反正开了也不会影响性能表现。</strong></p>
+<p><strong>PConline 评测室总结</strong></p>
+<p>一轮测试下来总结出两点：<strong>一、帧数高，延迟就低；二、Reflex技术能让显卡在负载较大，帧数不算太高的情况下有效降低延迟，提升操作体验。</strong></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/q_70/images03/20201021/51f4baa9fedc4f30bcc8794289ca323b.jpeg" max-width="600" /></p>
+<p>要帧数高，无非就两个方法，一是购买性能强劲的显卡，二是降低游戏分辨率，画质特效。 对于GTX 1660 Super与GTX 1060来说，1080P与2K更会是它们的主战场，要在这两个分辨率下实现高帧数相对简单。而对于RTX 3080，4K下只要舍得调整画质，那满足144Hz也不是大问题。建议想尝试4K 144Hz的玩家购买RTX 3080显卡，只有2K、1080P电竞游戏需求的可以考虑GTX 1660 Super。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/q_70/images03/20201021/e2751ba1da0e4e89a89bce6d61a71413.jpeg" max-width="600" /></p>
+<p>影驰这款RTX 3080黑将售价非常实惠，5499元即可享受到RTX 3080核心带来的强劲性能与不错的散热性能，不过最近缺货的问题依然存在，有想法的朋友可以关注下影驰的电商页面或者公众号。</p>
+<p>通过实测我们也发现打开Reflex能有效降低延迟，即使帧数不足以达到高刷屏的指标，也可以缓解操作不跟手的情况，而且该功能只要是10系以上的显卡都可以开启，唯一缺点就是当前支持的游戏比较少，以后逐步完善后会有不少的游戏玩家受益。</p>
 ➜百朗2020新品发布：健康升级，共赢未来！
-http://www.sohu.com/a/426260414_223764	10343
-<p>[PConline资讯]10月16日，百朗2020新品发布会于深圳蛇口希尔顿南海酒店顺利举行。空气净化行业专家、来自全国各地的经销商、行业客户以及媒体朋友等数百余位嘉宾莅临发布会的现场，共同见证崭新的篇章。</p>
+http://www.sohu.com/a/426260414_223764	14515
+<p>10月16日，百朗2020新品发布会于深圳蛇口希尔顿南海酒店顺利举行。空气净化行业专家、来自全国各地的经销商、行业客户以及媒体朋友等数百余位嘉宾莅临发布会的现场，共同见证崭新的篇章。</p>
 <p>今年正值百朗中国成立15周年，发布会开场对近日百朗于惠州市正式揭牌的广东省高效智能新风系统工程技术研究中心进行了简要介绍，预示百朗将以更高端的研发水平，为新风行业升级提供动力。</p>
-<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201022/85745caa4b5d4fe2865430c2013a4322.jpeg" max-width="600" /></p>
-<p class="ql-align-center">技术研究中心内部环境展示</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201022/8ae2b43f5e7940b6aee9a39a896fc25c.jpeg" max-width="600" /></p>
+<p class="ql-align-center">技术研发中心内部环境展示</p>
 <p>此次的百朗2020新品发布会以“共赢未来”为主题，发布了包括<strong>前装全屋中央新风系统、后装无管道新风系统、浴暖宝、凉霸、空气净化器</strong>五大系列在内的二十余款新品，看点十足。</p>
-<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201022/9a0b870ba2b2499aa4313e7f9a13d11b.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201022/d7153c522dc941bbac7475366d8b4874.jpeg" max-width="600" /></p>
 <p class="ql-align-center">发布新品型号总览</p>
-<p><strong>新风系统大升级，给你健康好空气</strong></p>
+<p><strong> 新风系统大升级，给你健康好空气</strong></p>
 <p>发布会上首先公布的是百朗SOLO 1.5、TECHO 4.0、NOAH Plus 2.5等升级版前装全屋中央新风系统，其更新的基础在于产品核心部件的迭代，主要围绕内部六菱形可水洗交换芯、抗菌抗病毒滤网、直流马达这3大核心部件的配置进行最新的技术应用，从而达到性能上的突破。</p>            <div class="lookall-box">
 <div class="lookall-shadow"></div>
 <section class="lookall">
@@ -255,20 +358,22 @@ http://www.sohu.com/a/426260414_223764	10343
 </section>
 </div>
 <div class="hidden-content control-hide">
-<p>SOLO 1.5和TECHO 4.0分别作为百朗入门型和中端型新风系统，相较上一代在不同程度上都作出了多达12项的改进，其中就包括刚刚提到的3大核心部件的升级——马达可以提供正压送风，提升风档，过滤网增加抗污染物等级等。除了性能提升，在外观的改变上TECHO 4.0新风系统的厚度甚至从原来的290mm减薄至240mm，减少了空间占用面积，节省材料，达到环保的作用。</p>
-<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201022/037ff25a806a47b18a2ce865881645dc.jpeg" max-width="600" /></p>
+<p>SOLO 1.5和TECHO 4.0分别作为百朗入门型和中端型新风系统，相较上一代在不同程度上都作出了多达12项的改进，其中就包括刚刚提到的3大核心部件的升级——马达动力强劲，可以提供<strong>多模式正压送风</strong>，提升风档；六棱形<strong>交换芯可取出用缓水流冲洗清洁</strong>，抗菌防霉，系统寿命延长；<strong>过滤网增加抗污染物等级</strong>，整机对PM2.5杂质净化率高达99%。</p>
+<p>除此之外，SOLO 1.5和TECHO 4.0中加入全新设计的智能模式，配合<strong>新型电子脉冲灭菌技术</strong>，不仅能在物理层面阻挡空气中的颗粒污染物，还能检测装修污染，在不产生臭氧与有害射线的条件下有效杀灭细菌，病毒与微生物。</p>
+<p>而在外观的改变上，TECHO 4.0新风系统的厚度甚至从原来的290mm减薄至240mm，<strong>减少了房屋占用面积</strong>，节省材料，达到环保的作用，这也在一定程度上使得其在安装过程中更为方便。由此可见，百朗在追求创造更高品质产品的同时，在用户使用体验方面也下了不少功夫。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201022/1607de6969024ee6a7d2b4f16e1f8349.jpeg" max-width="600" /></p>
 <p class="ql-align-center">百朗入门型和中端型新风系统</p>
 <p>NOAH Plus 2.5作为全新的百朗旗舰型新风系统，在风量调节方面有着更为出色的表现，最大风量可达500CMH，大户型或者是别墅只需安装一台系统即可保证全屋空气质量。DC马达的配置使其运行时更为节能，工作所产生的噪音量也将大幅度降低。</p>
-<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201022/795f080ca9a848f1a57bc085ce62b20b.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201022/3f98aebcd77f409ca13ef8d83ce47a4c.jpeg" max-width="600" /></p>
 <p class="ql-align-center">NOAH Plus 2.5新风系统的优势</p>
 <p>以上系列新品均加装有Q TOUCH E新风系统控制器，智能模式下可自动检测应用场景，洁净新风，智能享用。</p>
 <p>后装无管道新风系统的全新升级则是主要聚焦于其抗菌能力，最新的双向流柜式新风系统X4、单向流壁挂式除霾新风机WA100等均在原有命名方式上加上了“抗菌版”的后缀，使用全面升级多功能滤网，实现细菌、悬浮颗粒物等污染的全方位净化，呵护用户呼吸健康。</p>
-<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201022/39a86cfa63cc4dd9b30d51e6dac0ce3f.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201022/ec36cf721d8444cb890af7f60b4d2f0c.jpeg" max-width="600" /></p>
 <p class="ql-align-center">升级抗菌抗病毒滤网</p>
-<p><strong>多款家居好产品，伴你长久到未来</strong></p>
+<p><strong> 多款家居好产品，伴你长久到未来</strong></p>
 <p>除了在新风系统上下功夫，百朗推出的全新浴暖宝、凉霸以及空气净化器也相当引人注目。</p>
 <p>百朗给此次发布会上推出的浴暖宝配备了防水能力达到IPX4级别的无线遥控器，同时增加干燥与凉风功能，精准控制浴室温度升降并保证浴后室内湿气的排出，抑制细菌滋生。CFT-G012百朗凉霸改善了摆叶的智能遥控，可实现定向吹风不影响灶台火势，智能定时关闭，省心省电。空气净化器方面则是一如既往地增加了滤网容尘量，产品寿命得到延长。</p>
-<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201022/cb7c239698e044fb8d544d58da45c294.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201022/fc8753b753204404b2e9febec036f64f.jpeg" max-width="600" /></p>
 <p class="ql-align-center">新品浴暖宝功能图</p>
 <p>在发布会的最后，来自中国指数研究院地产家居事业部的研究员公布了2020上半年的中国地产家居舒适品类新风部品精装修市场报告，报告指出环境空气质量对人体健康和居住空间的影响，尤其是在后疫情时代，随着人们对于空气中病毒、细菌的警惕性提高，空气新风系统的进一步发展十分重要。</p>
 <p>在未来，期待能出现更多、更好、更绿色的空气净化产品与室内空气解决方案，相信百朗作为新风系统拓创者，能够继续创新，为我们带来洁净空气，保护健康。</p>
