@@ -1,0 +1,35 @@
+➜Xbox Series X/S自动HDR模式详细测试公开：大多数SDR游戏获得更佳体验
+http://www.expreview.com/76419.html	7320
+<p>次时代主机的发售日期越来越临近了，不少小伙伴早已经持币以待了，但是两家主机厂商很明显不想放过主机发售之前拉拢用户的最后的机会，因此最近几天关于次时代主机的技术细节新闻频率也是越来越高，我们都知道之前微软曾提到过新的Xbox Series X/S都将支持一项令人振奋的新技术-自动HDR技术。</p><p>据微软官方解释，现在越来越多的电视、显示器都具备HDR技术，但是很可惜许多经典的老游戏当时是按照SDR的格式制作，玩家们在新主机上没有办法体验到HDR那种高动态的对比范围体验，因此微软专门着手开发了这个自动HDR技术，它无需老游戏开发者做任何额外工作就可以自动实现，开机既可游玩HDR。此外，新的自动HDR技术不会造成额外的延迟以及性能损耗，确保玩家可以流畅的获得终极游戏体验。</p><p style="text-align: center;"><img src="https://img.expreview.com/news/2020/09/25/xj3.jpg" width="100%"/></p><p><a href="https://www.youtube.com/watch?v=LT1a6NXYy6E&feature=emb_logo" target="_blank">外媒数毛社</a>就利用自己手里的Xbox Series X游玩了几款老的SDR游戏看看自动HDR的表现如何，不过很遗憾的是如果没有HDR设备很难看到对比的效果，因此数毛社没有选择屏摄的方式而是直接用采集卡录制了HDR视频，由于小编的显示器也不支持HDR，因此只能用语言描述一下数毛社的结论。</p><p>在大多数老游戏中，例如《蝙蝠侠：阿卡姆骑士》《铁甲飞龙》等游戏中自动HDR的效果很棒，但是在部分游戏比如《黑暗之魂：2》的表现却并不好，整个画面看起来过于明亮，损失了创造者营造的那种黑暗氛围的意图，但好在如果你不喜欢自动HDR的效果你可以选择关闭这个功能。</p><p>不过总的来说，这项自动HDR技术还是相当强大的，在大多数SDR游戏中都能提供一个不错的体验。因此玩家们在购买下一个显示设备时，是否支持HDR技术将会成为一个重要的考量因素。</p>
+➜AMD移动处理器线路图：Rembrandt将采用Zen3+RDNA2，支持PCIe 4.0和USB4
+http://www.expreview.com/76421.html	7889
+<p style="text-align:left;">AMD的Zen
+3架构处理器Vermeer即将在11月5日开卖，而明年初应该会有新一代移动处理器，不过明年开始AMD的移动处理器不会向以前一样一年只有一个架构，除了传言最多的Cezanne之外还有Lucienne、van
+Gogh等不同架构的产品。</p><p style="text-align:center;"><img src="https://img.expreview.com/news/2020/07/08/Zen3_Logo.jpg" width="100%" border="0"/></p><p style="text-align:left;"><a target="_blank" href="http://www.3dcenter.org/news/hardware-und-nachrichten-links-des-19-oktober-2020">3dcenter</a>论坛上有人爆料AMD未来移动处理器的，然后他们网站做了信息整合，首先是谈论最多的Cezanne，它采用配备一个Zen
+3架构CCX，核显则是Vega架构的，最多8 CU，依然只支持PCI-E
+3.0，内存还是DDR4和LPDDR4。而信息比较少的Lucienne其实规格和现在的Renoir一模一样，估计就是Renoir的工艺改良版，就像锐龙3000和锐龙3000XT的关系一样，它的定位低于Cezanne。</p><p style="text-align:center;"><img src="https://img.expreview.com/news/2020/10/23/AMD_APU.jpg" border="0"/></p><p style="text-align:left;">至于van Gogh则是采用Zen
+2的CPU加RDNA2核显，只有一组CCX，所以最大只有4核心，GPU则拥有8组CU，依然是台积电7nm工艺，PCI-E依然是3.0的，但内存支持LPDDR4与DDR5，目前的信息是它只有低电压的版本。</p><p style="text-align: left;">Rembrandt估计明年出不来，它采用Zen 3架构处理器加RDNA 2核显，拥有一组Zen
+3的CCX，最多8核心，核显则最多12组CU，采用台积电6nm工艺，支持PCI-E 4.0和USB4，内存方面也支持DDR5和LPDDR5。</p>
+➜NVIDIA发布GeForce Experience应用安全更新，修复2个高危漏洞
+http://www.expreview.com/76420.html	7980
+<p>NVIDIA为其GeForce Experience 应用发布了安全更新，以解决几个可以允许攻击者执行任意代码、提升权限、接触敏感讯息以及触发DoS状态的漏洞。</p><p style="text-align:center"><img border="0" src="https://img.expreview.com/news/2020/10/23/nv-gfe.png" width="100%"/></p><p>这3个漏洞的CVE代号分别为CVE-2020-5977、CVE-2020-5990以及CVE-2020-5978。其中，CVE-2020-5977以及CVE-2020-5990都是属于高危漏洞，危险程度得分分别为8.2以及7.3分。</p><p>CVE-2020-5977是由一个在加载NVIDIA Web Helper NodeJS Web Server节点时的不受控搜寻路径导致的，它可被用来提升权限以及执行任意漏洞，同时也容许攻击者通过触发DoS来使目标系统上的GeForce Experience 应用无法使用。而CVE-2020-5990则是一个存在于ShadowPlay组件中的漏洞，同样可以让攻击者提权、执行任意代码以及泄露讯息等。至于威胁程度较低的CVE-2020-5978则是由一个被nvcontainer.exe以用户本地权限创建的文件夹引起的，可以导致DoS以及被用作提权。</p><p>NVIDIA<a href="https://nvidia.custhelp.com/app/answers/detail/a_id/5052/kw/security%20bulletin" target="_blank">表示</a>：</p><blockq><p>“风险评估是基于各种已安装的系统的平均风险而成的，可能不能真实地反映本地系统的风险。”</p></blockq><p>这次的几个漏洞影响全部3.20.5.70版之前的GeForce Experience 应用。考虑到不少玩家在安装NVIDIA驱动时都会选择默认的安装方式因此把GeForce Experience 应用也装上，以及有不少玩家都会用GeForce Experience 内的游戏优化功能来提升帧数（虽然很多时候登不上，并且优化不一定有效果），因此也是建议玩家尽快<a href="https://www.nvidia.com/en-us/geforce/geforce-experience/" target="_blank">下载</a>最新版的GeForce Experience 应用，或者让GeForce Experience 自行升级到最新版本。</p>
+➜Intel公布2020财年Q3财报：总营收高于预期，PC业务同比上涨1%
+http://www.expreview.com/76424.html	9600
+<p>在过去的三个月里面，Intel不算有太多能让大家引起广泛讨论的消息，他们最近在PC市场最大新闻，也只有发布了第11代酷睿移动处理器，而在今天Intel最新<a href="https://www.intc.com/news-events/press-releases/detail/1424/intel-reports-third-quarter-2020-financial-results" target="_blank">公布了2020财年Q3季度财报</a>，总营收183亿美元，同比下跌4%，但其实这高于此前Q2财报的预测。</p><p>首先该季的营收大头依旧是CCG（即我们熟知的个人电脑业务），营收98亿，同比上升1%了，这主要是国外疫情持续的环境下，居家办公和学习对笔记本、台式机都有需求，这是出乎意料的表现，但由于数据中心业务表现不理想，同比下跌了7.7%，营收59亿美元，Intel该季的毛利率下跌了5.7%，为53.7%，而EPS也大降了25%，每股收益为1.02美元。</p><p>其它营收下滑的业务还包括了IoT部门，同比下跌33%，营收6.77亿美元，NSG存储业务同比下跌11%，营收12亿美元，以及PSG可编程方案业务，营收同比下跌19%。只有做自动辅助驾驶的子公司，Mobileye是业务表现上涨的，贡献了2.34亿美元，同比增长2%。</p><p>而在Q3季度的主要亮点中，Intel公布了第11代酷睿处理器，另外位于Arizona的10nm Fab已经进入全量投产，还有Iris Xe MAX独立显卡以及开始出货了，至于Mobileye也有为ADAS推出了SuperVision方案。</p><p>对于接下来的传统销售旺季Q4，Intel也保持不看好的预测，他们预计总营收在174亿美元，毛利率在24.5%，EPS为1.02美元每股，但在2020年的全年预期中，Intel保持了750亿美元的总营收预估。</p>
+➜AMD可能推出专用矿卡，基于Navi 10芯片打造
+http://www.expreview.com/76423.html	16020
+<!-- 流处理器,TDP --><p style="text-align: left;">Linux新闻媒体<a href="https://www.phoronix.com/scan.php?page=home" target="_blank">Phoronix</a>发现了一些Linux补丁，这些补丁指向用于目前并未发布且专用于加密货币挖掘的AMD图形计算卡（矿卡）。补丁的描述中提到了一个“navi10区块链SKU”，这意味着Navi 10芯片是这款新显卡的核心。&nbsp;</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/10/23/ZDXW1.jpg"/><br/>(图片来源: <a href="https://www.shutterstock.com/" target="_blank">Shutterstock</a>)</p><p>该设备ID为0x731E，Phoronix表示这张显卡与市场上其他Navi 10产品（即RX 5700XT和RX 5700）之间的主要区别是缺少Display Core Next（DCN）和Video Core Next（VCN）引擎，目前尚不清楚是是硬件层面的阉割还是软件层面的屏蔽禁用，但不出意外的话，这张显卡并没有显示信号的输出的能力。</p><p>Navi 10芯片基于AMD的RDNA 1.0架构，采用台积电7nm FinFET工艺制造。Navi 10核心尺寸为251mm²，可容纳多达103亿个晶体管，拥有40个计算单元，总计2560个流处理器。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+title: "AMD Navi 10 显卡规格参数对比",
+header: ["显卡型号", "核心", "流处理器", "游戏/加速频率","显存","速率","位宽","TDP"],
+width: '92%',
+columnWidth: 'MAX', //表格单元宽度，"MAX"最大内容显示，""AVG"平均，"AUTO"自动，指定[15,16,20]
+id: tableid,
+data: [
+["Radeon RX 5700 XT","Navi 10 XT", "2560","1755/1905MHz","8GB GDDR6","14Gbps","256bit","225W"],
+["Radeon RX 5700","Navi 10 XL", "2304","1625/1725MHz","8GB GDDR6","14Gbps","256bit","180W"],
+["Radeon RX 5600 XT","Navi 10 XLE", "2304","1375/1560MHz","6GB GDDR6","12Gbps","192bit","150W"],
+["Radeon RX 5600","Navi 10 XE", "2048","1375/1560MHz","6GB GDDR6","12Gbps","192bit","150W"],
+]
+});</script></div><p>目前，AMD在其四款桌面级Radeon游戏显卡中使用了Navi 10芯片，核心代号分别为Navi 10 XT/XL/XLE/XE。目前暂不确定AMD的Navi 10专用矿卡是否会仅采用其中之一，还是多款芯片同时出现。</p><p>根据Phoronix的说法，这个补丁的发布时间表明该Navi 10区块链显卡要等到明年年初才会首次亮相。AMD的这个策略理论上很合理，毕竟专用矿卡价格也会相对低廉，各大矿场也没有必要再去采购消费级零售市场的高价游戏显卡作为挖矿使用；AMD也可以借此机会清除多余的Navi 10库存芯片，尽早准备新一代的Radeon RX6000 系列的图形显卡。</p>
