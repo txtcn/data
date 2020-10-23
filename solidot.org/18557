@@ -37,3 +37,9 @@ https://www.solidot.org/story?sid=65885	34882
 ➜创业公司尝试商业化实验性内存技术 CeRAM
 https://www.solidot.org/story?sid=65886	40231
 ARM 研究院（Arm Research）的 7 名工程师本月初成立了一家创业公司 Cerfe Labs，<a href="https://spectrum.ieee.org/nanoclast/semiconductors/memory/arm-spinout-details-correlatedelectron-memory-plans">尝试商业化</a>过去五年与 <a href="https://www.symetrixcorp.com/">Symetrix</a> 合作研发的实验性内存技术 CeRAM（correlated electron RAM）。CeRAM 有望成为静态随机存取存储器(SRAM)的非易失替代。CeRAM 能在无电源供应的情况下保存数据， 被认为比 SRAM 更小。大部分半导体物理学是基于一个假设：你可以个别的处理电子。但半个多世纪前 Neville Francis Mott 发现某些材料中电子被迫聚集一起的时候会产生奇特的现象。前 ARM 研究院研究员、现在的 Cerfe Labs 首席技术官 Greg Yeric 称，其中之一是被称为 Mott 转变的金属态和绝缘态之间的可逆转变。他们发现一种碳掺杂的氧化镍材料会在导电体和绝缘体之间转变，而且两个状态都是非易失性的。他们认为 CeRAM 能成为 SRAM 的优秀替代，而且它的速度更快，写入数据能达到 2 纳秒脉冲宽度，与处理器的 L3 缓存相当。<p>
+➜Vinton Cerf 的星际互联网计划
+https://www.solidot.org/story?sid=65887	41943
+太空探索是艰难的，一个原因是太空通信无比困难，探索遥远天体的宇航员和地球控制中心之间面临非常长的通信延迟。1998 年的一天，TCP/IP 的合作者 Vinton Cerf <a href="https://www.quantamagazine.org/vint-cerfs-plan-for-building-an-internet-in-space-20201021/" target="_blank">有了星际互联网的设想</a>。但要将互联网延申到太空面临着许多新的障碍，通信是天文距离，行星还会移动干扰信号。不涉及数据存储的 TCP/IP 协议对星际互联网是没有用的。Cerf 和研究人员提出了新的协议 Bundling ——一种可容忍延迟网络（DTN）。Bundling 具有地球互联网所不具有的特点：通信节点能储存数据。从地球到木星之间的通信可能需要经过火星中继，而数据包抵达火星时火星与木星之间可能没有合适的发送路径，这不能像 TCP/IP 那样丢弃数据包，而是需要先存储再转发。他在接受采访时谈论地球互联网的糟糕一面时说，“如果建了一个巨大防火墙，把里面的人都监控起来。这不是我们想要生活的社会，但我们需要应对这个问题。我们如何能不走到那个极端？我没有一个正确的答案。我希望我有。”<p>
+➜华为囤积了可维持到 2021 年的 5G 基站芯片
+https://www.solidot.org/story?sid=65888	43726
+华为在特朗普政府制裁前<a href="https://www.bloomberg.com/news/articles/2020-10-22/huawei-outhustles-trump-by-stockpiling-chips-needed-for-china-5g" target="_blank">大量囤积了至少可维持到 2021 年的 5G 通信芯片天罡</a>。彭博社援引知情人士的消息报道，台积电从 2019 年底开始加紧生产 7 纳米的天罡芯片，在 9 月 15 日制裁正式生效前台积电交付了 200 多万个芯片，这使得华为可以向中国三大电信运营商——中移动、中电信和中联通——继续供应关键的 5G 芯片。由于美国的制裁，华为比过去更依赖国内的销售。2012 年华为只有三分之一的收入来自国内，而 2019 年这一比例提高到了接近三分之二。<p>
