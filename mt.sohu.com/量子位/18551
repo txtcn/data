@@ -1,0 +1,705 @@
+➜如何从NumPy直接创建RNN？
+http://www.sohu.com/a/425078362_610300	16090
+<p>木易 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">使用成熟的Tensorflow、PyTorch框架去实现递归神经网络（RNN），已经极大降低了技术的使用门槛。</p>
+<p style="text-align: left;">但是，对于初学者，这还是远远不够的。知其然，更需知其所以然。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201016/89e33e340fd0453e99e71569d7f1937c.jpeg" /></p>
+<p style="text-align: left;">要避免低级错误，打好理论基础，然后使用RNN去解决更多实际的问题的话。</p>
+<p style="text-align: left;">那么，有一个有趣的问题可以思考一下：</p>
+<blockquote>
+<p>不使用Tensorflow等框架，只有Numpy的话，你该如何构建RNN？</p>
+</blockquote>
+<p>不使用Tensorflow等框架，只有Numpy的话，你该如何构建RNN？</p>
+<p style="text-align: left;">没有头绪也不用担心。这里便有一项教程：使用Numpy从头构建用于NLP领域的RNN。</p>
+<p style="text-align: left;">可以带你行进一遍RNN的构建流程。</p>
+<p>初始化参数 </p>
+<p style="text-align: left;">与传统的神经网络不同，RNN具有3个权重参数，即：</p>
+<blockquote>
+<p>输入权重（input weights），内部状态权重（internal state weights）和输出权重（output weights）</p>
+</blockquote>
+<p>输入权重（input weights），内部状态权重（internal state weights）和输出权重（output weights）</p>
+<p style="text-align: left;">首先用随机数值初始化上述三个参数。</p>
+<p style="text-align: left;">之后，将词嵌入维度（word_embedding dimension）和输出维度（output dimension）分别初始化为100和80。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">输出维度是词汇表中存在的唯一词向量的总数。</p>
+<p>hidden_dim = <span>100</span></p>
+<p>output_dim = <span>80</span><span># this is the total unique words in the vocabulary</span></p>
+<p>input_weights = np.random.uniform( <span>0</span>, <span>1</span>, (hidden_dim,hidden_dim)) </p>
+<p>internal_state_weights = np.random.uniform( <span>0</span>, <span>1</span>, (hidden_dim, hidden_dim)) </p>
+<p>output_weights = np.random.uniform( <span>0</span>, <span>1</span>, (output_dim,hidden_dim)) </p>
+<p style="text-align: left;">变量prev_memory指的是internal_state（这些是先前序列的内存）。</p>
+<p style="text-align: left;">其他参数也给予了初始化数值。</p>
+<p style="text-align: left;">input_weight梯度，internal_state_weight梯度和output_weight梯度分别命名为dU，dW和dV。</p>
+<p style="text-align: left;">变量bptt_truncate表示网络在反向传播时必须回溯的时间戳数，这样做是为了克服梯度消失的问题。</p>
+<p>prev_memory = np.zeros((hidden_dim, <span>1</span>)) </p>
+<p>learning_rate = <span>0.0001</span></p>
+<p>nepoch = <span>25</span></p>
+<p>T = <span>4</span><span># length of sequence</span></p>
+<p>bptt_truncate = <span>2</span></p>
+<p>dU = np.zeros(input_weights.shape) </p>
+<p>dV = np.zeros(output_weights.shape) </p>
+<p>dW = np.zeros(internal_state_weights.shape) </p>
+<p>前向传播 输出和输入向量 </p>
+<p style="text-align: left;">例如有一句话为： <strong>I like to play.</strong>，则假设在词汇表中： </p>
+<p style="text-align: left;"><span>I</span>被映射到索引2， <span>like</span>对应索引45， <span>to</span>对应索引10、 <strong>**对应索引64而标点符号</strong>.** 对应索引1。 </p>
+<p style="text-align: left;">为了展示从输入到输出的情况，我们先随机初始化每个单词的词嵌入。</p>
+<p>input_string = [ <span>2</span>, <span>45</span>, <span>10</span>, <span>65</span>] </p>
+<p>embeddings = [] <span># this is the sentence embedding list that contains the embeddings for each word</span></p>
+<p><span>for</span>i <span>in</span>range( <span>0</span>,T): </p>
+<p>x = np.random.randn(hidden_dim, <span>1</span>) </p>
+<p>embeddings.append(x) </p>
+<p style="text-align: left;">输入已经完成，接下来需要考虑输出。</p>
+<p style="text-align: left;">在本项目中，RNN单元接受输入后，输出的是下一个最可能出现的单词。</p>
+<p style="text-align: left;">用于训练RNN，在给定第t+1个词作为输出的时候将第t个词作为输入，例如：在RNN单元输出字为“like”的时候给定的输入字为“I”.</p>
+<p style="text-align: left;">现在输入是嵌入向量的形式，而计算损失函数（Loss）所需的输出格式是 <strong>独热编码</strong>（One-Hot）矢量。 </p>
+<p style="text-align: left;">这是对输入字符串中除第一个单词以外的每个单词进行的操作，因为该神经网络学习只学习的是一个示例句子，而初始输入是该句子的第一个单词。</p>
+<p>RNN的黑箱计算 </p>
+<p style="text-align: left;">现在有了权重参数，也知道输入和输出，于是可以开始前向传播的计算。</p>
+<p style="text-align: left;">训练神经网络需要以下计算：</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201016/661af218c15e4d5c88179f6bdcab05c3.png" /></p>
+<p style="text-align: left;">其中：</p>
+<p style="text-align: left;"><strong>U</strong>代表输入权重、 <strong>W</strong>代表内部状态权重， <strong>V</strong>代表输出权重。 </p>
+<p style="text-align: left;">输入权重乘以input(x)，内部状态权重乘以前一层的激活（prev_memory）。</p>
+<p style="text-align: left;">层与层之间使用的激活函数用的是tanh。</p>
+<p><span><span>def</span><span>tanh_activation</span><span>(Z)</span>: </span></p>
+<p><span>return</span>(np.exp(Z)-np.exp(-Z))/(np.exp(Z)-np.exp(-Z)) <span># this is the tanh function can also be written as np.tanh(Z)</span></p>
+<p><span><span>def</span><span>softmax_activation</span><span>(Z)</span>: </span></p>
+<p>e_x = np.exp(Z - np.max(Z)) <span># this is the code for softmax function </span></p>
+<p><span>return</span>e_x / e_x.sum(axis= <span>0</span>) </p>
+<p><span><span>def</span><span>Rnn_forward</span><span>(input_embedding, input_weights, internal_state_weights, prev_memory,output_weights)</span>: </span></p>
+<p>forward_params = [] </p>
+<p>W_frd = np.dot(internal_state_weights,prev_memory) </p>
+<p>U_frd = np.dot(input_weights,input_embedding) </p>
+<p>sum_s = W_frd + U_frd </p>
+<p>ht_activated = tanh_activation(sum_s) </p>
+<p>yt_unactivated = np.asarray(np.dot(output_weights, tanh_activation(sum_s))) </p>
+<p>yt_activated = softmax_activation(yt_unactivated) </p>
+<p>forward_params.append([W_frd,U_frd,sum_s,yt_unactivated]) </p>
+<p><span>return</span>ht_activated,yt_activated,forward_params </p>
+<p>计算损失函数 </p>
+<p style="text-align: left;">之后损失函数使用的是 <strong>交叉熵损失函数</strong>，由下式给出： </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201016/194011136a4245bfb22d10ba7011e6b6.png" /></p>
+<p><span><span>def</span><span>calculate_loss</span><span>(output_mapper,predicted_output)</span>: </span></p>
+<p>total_loss = <span>0</span></p>
+<p>layer_loss = [] </p>
+<p><span>for</span>y,y_ <span>in</span>zip(output_mapper.values,predicted_output): <span># this for loop calculation is for the first equation, where loss for each time-stamp is calculated</span></p>
+<p>loss = -sum(y[i]*np.log2(y_[i]) <span>for</span>i <span>in</span>range(len(y))) </p>
+<p>loss = loss/ float(len(y)) </p>
+<p>layer_loss.append(loss) </p>
+<p><span>for</span>i <span>in</span>range(len(layer_loss)): <span>#this the total loss calculated for all the time-stamps considered together. </span></p>
+<p>total_loss = total_loss + layer_loss[i] </p>
+<p><span>return</span>total_loss/float(len(predicted_output)) </p>
+<p style="text-align: left;">最重要的是，我们需要在上面的代码中看到第5行。</p>
+<p style="text-align: left;">正如所知，ground_truth output(y)的形式是[0，0，….，1，…0]和predicted_output(y^hat)是[0.34，0.03，……，0.45]的形式，我们需要损失是单个值来从它推断总损失。</p>
+<p style="text-align: left;">为此，使用sum函数来获得特定时间戳下y和y^hat向量中每个值的误差之和。</p>
+<p style="text-align: left;">total_loss是整个模型（包括所有时间戳）的损失。</p>
+<p>反向传播 </p>
+<p style="text-align: left;">反向传播的链式法则：</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201016/062bf4ed08264b4aa3e22b6df8324ff8.png" /></p>
+<p style="text-align: left;">如上图所示：</p>
+<p style="text-align: left;">Cost代表误差，它表示的是y^hat到y的差值。</p>
+<p style="text-align: left;">由于Cost是的函数输出，因此激活a所反映的变化由dCost/da表示。</p>
+<p style="text-align: left;">实际上，这意味着从激活节点的角度来看这个变化（误差）值。</p>
+<p style="text-align: left;">类似地，a相对于z的变化表示为da/dz，z相对于w的变化表示为dw/dz。</p>
+<p style="text-align: left;">最终，我们关心的是权重的变化（误差）有多大。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201016/495532f47c8f488c8502364daf0a30ed.png" /></p>
+<p style="text-align: left;">而由于权重与Cost之间没有直接关系，因此期间各个相对的变化值可以直接相乘（如上式所示）。</p>
+<p style="text-align: left;">RNN的反向传播</p>
+<p style="text-align: left;">由于RNN中存在三个权重，因此我们需要三个梯度。input_weights(dLoss / dU)，internal_state_weights(dLoss / dW)和output_weights(dLoss / dV)的梯度。</p>
+<p style="text-align: left;">这三个梯度的链可以表示如下：</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201016/10f5327a1c6b410ab60da369cb816eb4.png" /></p>
+<p style="text-align: left;">所述dLoss/dy_unactivated代码如下：</p>
+<p><span><span>def</span><span>delta_cross_entropy</span><span>(predicted_output,original_t_output)</span>: </span></p>
+<p>li = [] </p>
+<p>grad = predicted_output </p>
+<p><span>for</span>i,l <span>in</span>enumerate(original_t_output): <span>#check if the value in the index is 1 or not, if yes then take the same index value from the predicted_ouput list and subtract 1 from it. </span></p>
+<p><span>if</span>l == <span>1</span>: </p>
+<p><span>#grad = np.asarray(np.concatenate( grad, axis=0 ))</span></p>
+<p>grad[i] -= <span>1</span></p>
+<p><span>return</span>grad </p>
+<p style="text-align: left;">计算两个梯度函数，一个是multiplication_backward，另一个是additional_backward。</p>
+<p style="text-align: left;">在multiplication_backward的情况下，返回2个参数，一个是相对于权重的梯度（dLoss / dV），另一个是链梯度（chain gradient），该链梯度将成为计算另一个权重梯度的链的一部分。</p>
+<p style="text-align: left;">在addition <span style="font-size: 16px;">_</span>backward的情况下，在计算导数时，加法函数（ht_unactivated）中各个组件的导数为1。例如：dh_unactivated / dU_frd=1（h_unactivated = U_frd + W_frd），且dU_frd / dU_frd的导数为1。 </p>
+<p style="text-align: left;">所以，计算梯度只需要这两个函数。multiplication_backward函数用于包含向量点积的方程，addition_backward用于包含两个向量相加的方程。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201016/9985d0a75ac14f83b36bce63cd2897d2.png" /></p>
+<p><span><span>def</span><span>multiplication_backward</span><span>(weights,x,dz)</span>: </span></p>
+<p>gradient_weight = np.array(np.dot(np.asmatrix(dz),np.transpose(np.asmatrix(x)))) </p>
+<p>chain_gradient = np.dot(np.transpose(weights),dz) </p>
+<p><span>return</span>gradient_weight,chain_gradient </p>
+<p><span><span>def</span><span>add_backward</span><span>(x1,x2,dz)</span>: </span><span># this function is for calculating the derivative of ht_unactivated function</span></p>
+<p>dx1 = dz * np.ones_like(x1) </p>
+<p>dx2 = dz * np.ones_like(x2) </p>
+<p><span>return</span>dx1,dx2 </p>
+<p><span><span>def</span><span>tanh_activation_backward</span><span>(x,top_diff)</span>: </span></p>
+<p>output = np.tanh(x) </p>
+<p><span>return</span>( <span>1.0</span>- np.square(output)) * top_diff </p>
+<p style="text-align: left;">至此，已经分析并理解了RNN的反向传播，目前它是在单个时间戳上实现它的功能，之后可以将其用于计算所有时间戳上的梯度。</p>
+<p style="text-align: left;">如下面的代码所示，forward_params_t是一个列表，其中包含特定时间步长的网络的前向参数。</p>
+<p style="text-align: left;">变量ds是至关重要的部分，因为此 <span style="font-size: 16px;">行</span>代码考虑了先前时间戳的隐藏状态，这将有助于提取在反向传播时所需的信息。 </p>
+<p><span><span>def</span><span>single_backprop</span><span>(X,input_weights,internal_state_weights,output_weights,ht_activated,dLo,forward_params_t,diff_s,prev_s)</span>: </span><span># inlide all the param values for all the data thats there</span></p>
+<p>W_frd = forward_params_t[ <span>0</span>][ <span>0</span>] </p>
+<p>U_frd = forward_params_t[ <span>0</span>][ <span>1</span>] </p>
+<p>ht_unactivated = forward_params_t[ <span>0</span>][ <span>2</span>] </p>
+<p>yt_unactivated = forward_params_t[ <span>0</span>][ <span>3</span>] </p>
+<p>dV,dsv = multiplication_backward(output_weights,ht_activated,dLo) </p>
+<p>ds = np.add(dsv,diff_s) <span># used for truncation of memory </span></p>
+<p>dadd = tanh_activation_backward(ht_unactivated, ds) </p>
+<p>dmulw,dmulu = add_backward(U_frd,W_frd,dadd) </p>
+<p>dW, dprev_s = multiplication_backward(internal_state_weights, prev_s ,dmulw) </p>
+<p>dU, dx = multiplication_backward(input_weights, X, dmulu) <span>#input weights</span></p>
+<p><span>return</span>(dprev_s, dU, dW, dV) </p>
+<p style="text-align: left;">对于RNN，由于存在梯度消失的问题，所以采用的是截断的反向传播，而不是使用原始的。</p>
+<p style="text-align: left;">在此技术中，当前单元将只查看k个时间戳，而不是只看一次时间戳，其中k表示要回溯的先前单元的数量。</p>
+<p><span><span>def</span><span>rnn_backprop</span><span>(embeddings,memory,output_t,dU,dV,dW,bptt_truncate,input_weights,output_weights,internal_state_weights)</span>: </span></p>
+<p>T = <span>4</span></p>
+<p><span># we start the backprop from the first timestamp. </span></p>
+<p><span>for</span>t <span>in</span>range( <span>4</span>): </p>
+<p>prev_s_t = np.zeros((hidden_dim, <span>1</span>)) <span>#required as the first timestamp does not have a previous memory, </span></p>
+<p>diff_s = np.zeros((hidden_dim, <span>1</span>)) <span># this is used for the truncating purpose of restoring a previous information from the before level</span></p>
+<p>predictions = memory[ <span>"yt"</span>+ str(t)] </p>
+<p>ht_activated = memory[ <span>"ht"</span>+ str(t)] </p>
+<p>forward_params_t = memory[ <span>"params"</span>+ str(t)] </p>
+<p>dLo = delta_cross_entropy(predictions,output_t[t]) <span>#the loss derivative for that particular timestamp</span></p>
+<p>dprev_s, dU_t, dW_t, dV_t = single_backprop(embeddings[t],input_weights,internal_state_weights,output_weights,ht_activated,dLo,forward_params_t,diff_s,prev_s_t) </p>
+<p>prev_s_t = ht_activated </p>
+<p>prev = t <span>-1</span></p>
+<p>dLo = np.zeros((output_dim, <span>1</span>)) <span>#here the loss deriative is turned to 0 as we do not require it for the turncated information.</span></p>
+<p><span># the following code is for the trunated bptt and its for each time-stamp. </span></p>
+<p><span>for</span>i <span>in</span>range(t <span>-1</span>,max( <span>-1</span>,t-bptt_truncate), <span>-1</span>): </p>
+<p>forward_params_t = memory[ <span>"params"</span>+ str(i)] </p>
+<p>ht_activated = memory[ <span>"ht"</span>+ str(i)] </p>
+<p>prev_s_i = np.zeros((hidden_dim, <span>1</span>)) <span>if</span>i == <span>0</span><span>else</span>memory[ <span>"ht"</span>+ str(prev)] </p>
+<p>dprev_s, dU_i, dW_i, dV_i = single_backprop(embeddings[t] ,input_weights,internal_state_weights,output_weights,ht_activated,dLo,forward_params_t,dprev_s,prev_s_i) </p>
+<p>dU_t += dU_i <span>#adding the previous gradients on lookback to the current time sequence </span></p>
+<p>dW_t += dW_i </p>
+<p>dV += dV_t </p>
+<p>dU += dU_t </p>
+<p>dW += dW_t </p>
+<p><span>return</span>(dU, dW, dV) </p>
+<p>权重更新 </p>
+<p style="text-align: left;">一旦使用反向传播计算了梯度，则更新权重势在必行，而这些是通过批量梯度下降法</p>
+<p><span><span>def</span><span>gd_step</span><span>(learning_rate, dU,dW,dV, input_weights, internal_state_weights,output_weights )</span>: </span></p>
+<p>input_weights -= learning_rate* dU </p>
+<p>internal_state_weights -= learning_rate * dW </p>
+<p>output_weights -=learning_rate * dV </p>
+<p><span>return</span>input_weights,internal_state_weights,output_weights </p>
+<p>训练序列 </p>
+<p style="text-align: left;">完成了上述所有步骤，就可以开始训练神经网络了。</p>
+<p style="text-align: left;">用于训练的学习率是静态的，还可以使用逐步衰减等更改学习率的动态方法。</p>
+<p><span><span>def</span><span>train</span><span>(T, embeddings,output_t,output_mapper,input_weights,internal_state_weights,output_weights,dU,dW,dV,prev_memory,learning_rate= <span>0.001</span>, nepoch= <span>100</span>, evaluate_loss_after= <span>2</span>) </span>: </span></p>
+<p>losses = [] </p>
+<p><span>for</span>epoch <span>in</span>range(nepoch): </p>
+<p><span>if</span>(epoch % evaluate_loss_after == <span>0</span>): </p>
+<p>output_string,memory = full_forward_prop(T, embeddings ,input_weights,internal_state_weights,prev_memory,output_weights) </p>
+<p>loss = calculate_loss(output_mapper, output_string) </p>
+<p>losses.append(loss) </p>
+<p>time = datetime.now.strftime( <span>'%Y-%m-%d %H:%M:%S'</span>) </p>
+<p>print( <span>"%s: Loss after epoch=%d: %f"</span>% (time,epoch, loss)) </p>
+<p>sys.stdout.flush </p>
+<p>dU,dW,dV = rnn_backprop(embeddings,memory,output_t,dU,dV,dW,bptt_truncate,input_weights,output_weights,internal_state_weights) </p>
+<p>input_weights,internal_state_weights,output_weights= sgd_step(learning_rate,dU,dW,dV,input_weights,internal_state_weights,output_weights) </p>
+<p><span>return</span>losses </p>
+<p>losses = train(T, embeddings,output_t,output_mapper,input_weights,internal_state_weights,output_weights,dU,dW,dV,prev_memory,learning_rate= <span>0.0001</span>, nepoch= <span>10</span>, evaluate_loss_after= <span>2</span>) </p>
+<p style="text-align: left;">恭喜你！你现在已经实现从头建立递归神经网络了！</p>
+<p style="text-align: left;">那么，是时候了，继续向LSTM和GRU等的高级架构前进吧。</p>
+<p style="text-align: left;"><span style="font-size: 16px;">原文链接：</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">https://medium.com/@rndholakia/implementing-recurrent-neural-network-using-numpy-c359a0a68a67</span></p>
+<p>— <strong>完</strong>— </p>
+<p style="text-align: left;"><span style="font-size: 16px;">本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>「百度AI开发」系列课 免费报名</strong></p>
+<p>百度EasyDL不仅让企业「定制AI模型」像家用电器一般简单，并且还能像高级AI工程师一样专业。</p>
+<p>10.21日起，3期公开课带你 <strong><span>0门槛轻松上手EasyDL</span></strong>、实现 <span><strong>AI模型训练与部署</strong></span>！扫码添加好友、加入课程直播群吧~ <strong><span>▽</span></strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜十问旷视印奇、唐文斌：AI公司步入「深水区」，友商其实不是友商
+http://www.sohu.com/a/425078532_610300	16090
+<p>郭一璞 李根 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p>AI明星公司旷视，刚庆祝了自己的9周岁生日。</p>
+<p>以技术和理工天才云集着称的他们，把新的一岁用 <strong>「指数之年」</strong>形容，以 <strong>「向上生长」</strong>作为主题。 </p>
+<p>同时，一场规模盛大的智慧物流发布会在新办公楼展开，来自“传统行业”的资深骨干站到聚光灯下，而且类似的面孔正在旷视占比越来越多。</p>
+<p>是的，即便作为AI头部公司，经受过密集而广泛地关注，但对于旷视的变化，以及A面B面，依然有一系列问题悬而未解。</p>
+<p>比如关于IPO上市、AI冷暖、技术与业务、核心与边界、合作与竞争……</p>
+<p>而这一系列的问题，又还有谁比 <strong>CEO印奇 <span style="font-size: 16px;">和</span>CTO唐文斌 </strong>更合适回答？ </p>
+<p>所以这一次，量子位“十问”，两位创始人“十答”，可能当前旷视被关注的一切，都在这次回答里。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201016/a352429fae50472caa4f9c71983e0074.jpeg" /></p>
+<p>一问上市 </p>
+<p><strong>量子位：上市现在是个啥进展？</strong></p>
+<p><strong>印奇：</strong>还在选择一个合适的时间点。 </p>
+<p><strong>量子位：是什么让旷视上市没有一蹴而就？</strong></p>
+<p><strong>印奇：</strong>大的国际环境，去年年底到今年确实多变。 </p>
+<p><strong>量子位：旷视自己怎么看“上市”？</strong></p>
+<p><strong>印奇：</strong>两个大方面吧。 </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>第一，我们能把这个业务，包括公司治理在内，已经能用上市标准去审视了，代表自信。</p>
+<p>第二，虽然旷视还挺年轻的，但当时上市的时候我们认为“1+3”业务已经比较成形，知道未来3-5年大概会达到哪个地步。我们希望在一个公开的平台上，让大家更透明地看到公司的治理，让大家认为这个行业有guideline <span>（路线）</span>，这是我们上市的初衷。 </p>
+<p><strong>量子位：即便现在不那么顺利？</strong></p>
+<p><strong>印奇：</strong>不管大家相不相信，我们真的把上市当成手段，而不是目的。 </p>
+<p>大环境变幻所有人都看得到，过程里我们也经常会自己问so what。</p>
+<p>一般来说，你问一个人问题，他回答一个答案，你不断问so what，他就崩溃了。</p>
+<p>但问旷视上市完了之后——so what？我们认为，上市是手段，上市之后也希望股价是坚挺、稳定的，很健康地和公司业务一直往上走。</p>
+<p>所以一定要选择合适的窗口来上。</p>
+<p><strong>量子位：但上市这个“手段”也会带来好处？</strong></p>
+<p><strong>唐文斌：</strong>肯定是能带来好处的，第一能给我们带来更好的品牌，对我们一些to B的业务确实是有帮助的；第二是更灵活的资本政策，使得我们做一些业务的时候，能够更方便。这是核心的点，而不在于其他的东西。 </p>
+<p><strong>量子位：心态会有变化吗？</strong></p>
+<p><strong>唐文斌：</strong>我们一直以平常心看待它，但依然会很积极地考虑所有可能的选择，上市只是其中一个事情而已，而不是最重要的事情。 </p>
+<p>最后还是长期主义，就像印奇说的， <strong>有的人上市是起点，也可能是终点，对我们来说上市只是其中一个里程碑而已</strong>。 </p>
+<p>我觉得只有想不清楚的人才不淡定，想清楚自己到底要什么，在追求的东西是什么。</p>
+<p>如果这些问题是思考过的，你的答案是清楚的，你就很淡定；你没想过，不知道答案，就会被其他的想法牵着走。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201016/a8fcd128482f4d5ab0f1cff03eae30ea.jpeg" /></p>
+<p>二问AI </p>
+<p><strong>量子位：外界把上市跟AI冷暖联系在一起，你们怎么看今年外界对AI的唱衰？</strong></p>
+<p><strong>印奇：</strong>我们在AI产业已有九年时间，但AI产业真正快速爆发是这5-6年间，今年真正进入AI产业落地的深水区。 </p>
+<p>这是大家熟悉的Gartner曲线。</p>
+<p>之前，中国企业很少有机会在全世界引领一项技术从技术创新到产业落地的全过程，所以从创业者、投资人到媒体，中国各方都没有完整经历过Gartner曲线。</p>
+<p>现在， <strong>所有AI企业都已经步入到「死亡之谷」</strong>。 </p>
+<p><strong>量子位：你怎么看「死亡之谷」周期？</strong></p>
+<p><strong>印奇：</strong>我自己感觉可能在18-24个月，现在行之将半。 </p>
+<p>在AI产业里已经有了很多问题和很多解决方案，我想「死亡之谷」的持续时间可能不会那么短，也不会那么长。我们有信心穿越周期。</p>
+<p><strong>量子位：之所以唱衰，也有AI算法壁垒的原因？</strong></p>
+<p><strong>印奇：</strong>真正对于算法的供给侧，AI提供的远远不够。 </p>
+<p>我听到这种说法：「AI已经没有什么技术壁垒，AI算法似乎很容易了。」</p>
+<p>但大家真正在生活里用到的AI算法好像还是「老三样」，还是极少的AI供给。</p>
+<p>AI算法侧其实还在极度稀缺的阶段，而且还面临可交付和规模化两个问题。</p>
+<p><strong>量子位：那为什么「死亡之谷」会出现在现在？</strong></p>
+<p><strong>唐文斌：</strong>举个考试的例子。大家应该考过科目一吧， <strong>考90分很容易，但考100分不容易</strong>。 </p>
+<p>这和AI其实是一样的，当我们去看一个算法时，如果只是想要在一些东西里拿到60-70分可能确实没有那么难，但越往上越难。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201016/f2be6a1f2b254a35a421e516206bbb4c.gif" /></p>
+<p><strong>量子位：区分标准是什么？</strong></p>
+<p><strong>唐文斌：</strong>场景。往往是真正需要更高精尖技术的场景越往上越难，价值也就越大。 </p>
+<p>比如自动驾驶，自动驾驶对技术的挑战是非常大的，我认为现在所有的自动驾驶公司离解决问题还有非常大的距离，但自动驾驶场景的价值非常大，这毋庸置疑。</p>
+<p>所以， <strong>在关键性的场景应用里，我认为现在的技术，离被解决还是有非常大的距离</strong>。 </p>
+<p><strong>量子位：听到「AI凉了」会悲观吗？</strong></p>
+<p><strong>唐文斌：</strong>不看广告看疗效。 </p>
+<p>大家在之前对AI的鼓吹是有点过度的，我当时在公司里讲，我们不是一家AI公司，是一家以AI技术为核心的产品和解决方案公司。</p>
+<p>所以，不要自嗨，就踏踏实实的把技术做好，把产品做好，把用户价值交付出去，这是最关键的事情，最后永远是你给客户创造了10元的价值，你从他那分了3元，这才是我们应该要做的事情。</p>
+<p>鼓吹和唱衰都没有必要，最后还是回到到底怎么能够更务实地关注到最核心的本质， <strong>要看疗效而不是去看广告</strong>。 </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201016/6bdc7ff6a4024bc3b35b959cdc00fd11.jpeg" /></p>
+<p>三问落地 </p>
+<p><strong>量子位：除了场景，AI落地难在什么地方？</strong></p>
+<p><strong>印奇：</strong>AI算法的本质是软件，但这个软件又依赖于数据，很难成为简单的交付型产品，不是我招个聪明人写code交付就结束了。 </p>
+<p>AI算法的甲乙方关系正在被重新定义，甲方和乙方，如何把数据流通和算法流通循环起来，才能生成很好的商业模式。</p>
+<p>这种情况下如何才能产生最终的用户价值？现在来看 ，软件、算法、硬件在一起设计之后，确实比单独设计软件、算法和硬件效果要好得多。</p>
+<p>而且这个好还不是一个90分和99分的关系，可能是59分和20分的关系。</p>
+<p><strong>量子位：也有种现象是“变硬才能变强”？</strong></p>
+<p><strong>唐文斌：</strong>软硬件结合这件事情有两种不同的理解： </p>
+<p>第一种理解，因为软件卖不上价钱，所以你要带着硬件一起卖，你就卖上价钱了，你有收入。</p>
+<p>第二种理解，你只有软硬件的co-design（协同设计），在一起设计，才能变成更好的产品。</p>
+<p>但如果自己不做研发，找个合作伙伴厂商，把他们买过来、装上我的软件和算法接着去卖就OK了，我觉得这件事不本质。</p>
+<p>因为我们从整个价值链角度来讲，你在这里面没有Value Add（附加价值）。</p>
+<p>我们做每件事情都要去想why us？我们做出来会不会有任何差异化？</p>
+<p>或者我们这样做了，世界会不会因为我们而不同？比如商业价值链条更顺畅……但我觉得现在还没到这个时间点。</p>
+<p>现在更多还是在产品维度上，这个产品本身要因我而不同才行。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201016/f14ed13feefb4d24b07d42ad08c9d7ab.jpeg" /></p>
+<p>四问路线 </p>
+<p><strong>量子位：所以旷视的选择是？</strong></p>
+<p><strong>印奇：</strong>我们选择以 <strong>物联网应用</strong>来看待这个问题。 </p>
+<p>也许5年后、10年后，旷视在这样的生态里会往后退一退，但我认为也不会退到算法的维度，至少操作系统和核心的软件，里面的一些关键芯片，里面真正的关键元器件，还是旷视的核心产品。</p>
+<p>包括我们的物联网，它会很开放的，会连接很多的硬件，未来物联网硬件是百亿量级，我们自己做不过来。</p>
+<p><strong>量子位：你们招股书里一直在强调「AIoT」。</strong></p>
+<p><strong>印奇：</strong>有一个概念我非常believe，就是 <strong>AI小于IoT</strong>。 </p>
+<p>虽然我们是一家AI公司，大家可以发现越来越多的企业以及巨头，比如华为、小米，大家把AI和IoT两个词连接得越来越紧，其实这是两个词。</p>
+<p>在过去20年里，从互联网到移动互联网，下一个是什么时代？是AI吗？我觉得自然延伸下来是物联网时代。</p>
+<p>打个比方，物联网就像当年的互联网一样， <strong>AI更像当年的搜索引擎</strong>，所以， <strong>AI是物联网里一个核心技术能力</strong>，是延续未来很长一段时间技术创新的主轴，但不是产业落地的核心点。 </p>
+<p><strong>量子位：意味着AI公司的商业模式，落在什么地方？</strong></p>
+<p><strong>印奇：</strong>AI真正的商业价值的变现，真正能够有规模，商业化落地的公司，大部分是面向线下的，更多的是和实体行业的结合，更像在IoT大时代洪流当中承载的载体。 </p>
+<p>这就是为什么我们想说AI和IoT未来会越来越多关联在一起。</p>
+<p>所以，未来AIoT会变成一个词，就像当年说ICT一样，但当我们审视这些价值时会发现，AI是里面那个杀手级的能力和杀手级特性，但IoT是那个大时代的洪流。</p>
+<p><strong>量子位：有没有可类比的参照？</strong></p>
+<p><strong>印奇：</strong>在PC时代会发现一个应用大家想的是Word、Office、PowerPoint，它可能就是一个软件。 </p>
+<p>当大家在移动互联网时代想到App就是微信，支付宝。</p>
+<p>当到AIoT物联网，我们认为会包含这样几个要素：</p>
+<p>首先，一定会选择 <strong>空间</strong>，所有的物联网设备会装在一个空间里，无论是家庭、仓库、城市还是楼宇，这个空间里会形成一张网，会有计算AIoT中间计算节点。 </p>
+<p>其次，会连接很多 <strong>设备</strong>，这些设备很多不一样，有传感器，还有机器人，还有很多设备。 </p>
+<p>当这些物联网硬件设备连在一起时，上面有很强的 <strong>软件</strong>连接所有这些东西，贯穿云边端，最后给最终用户提供服务，这就是AIoT应用。 </p>
+<p><strong>量子位：AIoT应用就是落地的终端形态？</strong></p>
+<p><strong>印奇：</strong>我认为AI产业落地的真正本质，就是 <strong>在不同空间不同场景构建一个个独立的AIoT应用</strong>，只有应用有了才会有这个产业链，才会有平台，才会有芯片，才会有所有东西生机勃勃的发展。 </p>
+<p>在AIoT的应用里，它的壁垒和难度要比之前大得多。所以真正想说我能把一个AI技术应用到一个行业落地时，会发现路径是很长的。</p>
+<p><strong>量子位：有多长？</strong></p>
+<p>印奇：真正当我们去用一个算法变成最终AIoT应用时它往往要经历三个过程。</p>
+<p>第一步， <strong>0-0.1阶段</strong>，本质上是技术可行性和产品价值的验证，先产生一个新的算法，算法在性能上要可用。 </p>
+<p>第二步， <strong>0.1-1阶段</strong>，要完成最小的可用产品打磨，触达行业用户，并且用户买单了，完成了最早期的商业实现和落地。 </p>
+<p>这个AI公司首先成为系统集成商，打造端到端示范性概念验证项目。</p>
+<p>大家很多时候会说发现早期AI公司会变成项目的集成商，因为当你想做端到端应用时，第一步得能先成为总的设计师和集成商，用上你的算法，这才是端到端交付给用户的价值，任何一个to B或to C的企业不会只买个半成品，不会只买个算法，需要在他产业里能产生价值。所以， <strong>AI算法过程中首先要成为优秀的系统集成商</strong>。 </p>
+<p>但是这里就有个岔路，有的公司可能说我就是集成商，就一直沿着集成商这条路走出去了，那么你可能就越来越不像个AI公司。</p>
+<p>第三步， <strong>1-N阶段</strong>，当你做集成是手段，完成集成之后会发现，当你可以形成端到端的闭环时，首先要区别沉淀这个行业里最重要的软件，相当于用系统集成牵引做出软件平台，连接所有的硬件，因为这些硬件是不同厂商提供的，这是使用系统性去牵引软件。 </p>
+<p>当你把软件做得很好的时候，会发现很关键的硬件，现在市面上没有一个厂商真正做得非常非常好，这时候你就会真正用软件牵引软硬结合的平台。</p>
+<p><strong>从算法到系统集成，到软件平台到最后的软硬结合</strong>，这是真正想在行业落地时必经的一个 <strong>最小路径</strong>。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201016/1823580c2bf94f869190698c82cec6f3.jpeg" /></p>
+<p><strong>量子位：这三个阶段，旷视走到哪里了？</strong></p>
+<p><strong>印奇：</strong>旷视的三个大场景不同，很难简单讲旷视总体在0.1、1还是N，因为不同的行业在不同的领域有不同的阶段，有的产品在N的阶段，有的产品在0.1和1的阶段，很难一概而论。 </p>
+<p><strong>量子位：这三个阶段最难的是什么？有没有哪个环节可能是失败的？</strong></p>
+<p><strong>印奇：</strong>这三个环节里，我认为头和尾最难。 </p>
+<p>第一个是0-0.1的阶段。中国过去二三十年有多少是创新驱动的业务？其实非常非常少的。此前一个商业人才做业务的时候，一般不会做两面不确定性的业务，要么技术场景是确定的，我就在商业模式和销售通路上做创新；要么销售通路是确定的，我给创造一个新的产品。</p>
+<p>但AI大部分产品在0-0.1阶段里两个都不确定，你发现要找那个交集，这是很难的事情，这个难度占整个链路的50%。</p>
+<p>第二个阶段，不能说简单，但第二个阶段相比1和3要更简单一些。</p>
+<p>到第三个阶段的时候，一个AI公司的核心任务是必须构建出自己非常强的软+硬平台化能力。硬件能力是平台化，硬件从供应链到生产制造到销售需要平台，搭建完之后软件会变得越来越容易。</p>
+<p>真正解决了0-0.1的公司，如果能在很快的时间里构建第二步和第三步的话，可能就会是行业里胜出的公司。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201016/82d7c7b4f46d44c9a860da9347c75a02.jpeg" /></p>
+<p>五问组织 </p>
+<p><strong>量子位：所谓“经济基础决定上层建筑”，是不是组织也会有相应变革？</strong></p>
+<p><strong>印奇：</strong>当要把AI产业落地时，会发现它对组织的密度和阵型要求是极高的。回到人的问题，技术的同学都知道，技术再难、商业模式再难，我们往往没有那么frustrated。 </p>
+<p>但这是非常复杂的组织，一个AI行业，这里并不是指AI公司，而是AI公司里的产品部门可能具备四个人群。</p>
+<p>首先它需要 <strong>产品经理</strong>，可能是这个小板块的CEO，这个产品经理他既需要有AI的背景同时需要学习行业的背景。所以，人群画像里我们画有50%的AI，50%的行业。 </p>
+<p>第二要有 <strong>CTO</strong>，把软件、硬件算法整体来看，这个人也得很综合，有AI行业背景同时也能学习行业。 </p>
+<p>第三是 <strong>CAIO首席AI官</strong>，他能真正对算法上有突破，且能对算法可行性评估做得非常好的，这个人可能很懂AI，没有那么懂行业。 </p>
+<p>第四最后真正的闭环是AI的人，同时要有行业Know-how，有行业积累的人，所以最后肯定要有 <strong>CMO</strong>。真正帮助产品推向市场，去营销的时候，这个人往往是非常懂行业，同时有开放心态，他们也去学习AI。 </p>
+<p>当AI每个小的产品落地过程中，可能都需要这样四个角色，我们叫每进入一个AI行业，需要搭好4 in 1的组织架构。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201016/cf34e8d8f735493a828f5c88c42118b2.jpeg" /></p>
+<p><strong>量子位：这一系列要求，也是落地之难的一部分？</strong></p>
+<p><strong>印奇：</strong>刚才我们是从算法的供给，AI价值闭环和AI产业落地组织要求上来看，就已经能发现AI这群公司其实还是挺不容易的。 </p>
+<p>如果想踏踏实实做好AI产业落地，会发现每个场景下都得考虑这个事情，需要2-3年时间，才能走完这个闭环。</p>
+<p><strong>量子位：旷视自己现在也是这样？</strong></p>
+<p><strong>印奇：</strong>旷视现在有3000人，基本上按照一个AI行业需要有CEO、CTO、首席AI官、CMO，统计了旷视人员比例发现挺精准的4：4：2。 </p>
+<p>AI背景的人占40%，从行业来的人才40%。</p>
+<p>这些行业来的人才对我们帮助非常非常大，有来自消费电子，有来自物流管理，仓储管理，这些人结合才能让我们在行业里深度落地。</p>
+<p>同时20%的职能能够去构架、去支撑的一些人。</p>
+<p>六问核心 </p>
+<p><strong>量子位：回到旷视本身，怎么理解旷视的核心和边界？</strong></p>
+<p><strong>印奇：</strong>一言以蔽之，就是「1+3」。 </p>
+<p><strong>1</strong>，指的是一个AI生产力平台Brain++。 </p>
+<p><strong>3</strong>，指的是3大落地赛道和方向：个人物联网、城市物联网，供应链物联网。 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201016/42cb133c035447d28a80368a53629316.png" /></p>
+<p><strong>量子位：这3大方向里有细分吗？</strong></p>
+<p><strong>印奇：</strong>在每个点里我们有新的产品，创新的技术，但真正的客户群体，这三个群体包含了AIoT里最重要的三个场景。 </p>
+<p>第一面向家庭、个人客户；第二面向城市、政府；第三是供应链，制造物流零售，所谓商业里最主线条的战场。</p>
+<p><strong>量子位：今年还把算法生产工具Brain++开放了，没有顾虑吗？</strong></p>
+<p><strong>印奇：</strong>准确讲，3月我们选择开源的深度学习框架天元，是Brain++的最核心组件。 </p>
+<p>坦白来说Brain++开源开放，我们自己早期还是有点纠结的，因为我们内部整个开发了六七年时间，我们认为这套技术是我们的核心竞争力之一。</p>
+<p>旷视内部有大概1400个左右的研发人员，他们每天在工作中真的全员在使用Brain++，即便可以使用TensorFlow或Pytorch等其他任何开源框架。</p>
+<p>所以 <strong>Brain++是我们拿手的绝活</strong>。 </p>
+<p><strong>量子位：那为什么还拿出来分享？</strong></p>
+<p><strong>印奇：</strong>希望可以让更多程序员可以用Brain++开发自己的应用。 </p>
+<p>原因是未来算法的供给虽然很海量，但每个行业和每个场景需要的算法可能非常丰富，这时我们的Brain++就能真正发挥生产力平台的作用。</p>
+<p><strong>量子位：有预期吗？</strong></p>
+<p><strong>印奇：</strong>希望成为 <strong>口碑最好</strong>的吧。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201016/7753a308d4c9431eafe38de631d5b500.png" /></p>
+<p>七问边界 </p>
+<p><strong>量子位：旷视的个人物联网、城市物联网、供应链物联网三条赛道里，哪一条的市场空白最大？</strong></p>
+<p><strong>唐文斌：</strong>三个板块不太一样，to B的东西都没有那么快。比如安防，大家知道是万亿级的市场，万亿级的市场里面有多少智能化的部分？现在比例还没有那么高，智能化的部分可能只占1%-2%。 </p>
+<p><strong>量子位：除了这三大场景之外，你们会考虑更多场景么？</strong></p>
+<p><strong>唐文斌：</strong>从业务大的板块上讲， <strong>我们不会再往外扩</strong>，因为整个「1+3」体系已经有巨大的商业价值，每个行业都是万亿级的场景，我们要做的事情是把它做深做实，不管是在技术层面上还是产品层面上。 </p>
+<p><strong>量子位：也有AI公司做很多行业，你们为什么不做？</strong></p>
+<p><strong>唐文斌：</strong>第一要尊重行业，你做不了那么多东西，每个东西其实都很深，需要很深的know-how（行业知识），而且需要你从最核心团队从上到下建立know-how，否则你做的很多决策就不一定是对的。 </p>
+<p>第二，每个行业都很重，你蜻蜓点水地搞了搞没啥意义，做不好价值设计，交付不了客户价值。</p>
+<p>第三，每个行业都很大，你干嘛干那么多？</p>
+<p><strong>少即是多</strong>，你不应该做那么多，反而应该更专注。 </p>
+<p>当然，有时候我们看到一些机会，有洞察的，觉得非常有意思，就做了。</p>
+<p>但还是应该做得很扎实，同时不要忘记对底层平台的积累，底层平台未来是能去赋能更多场景的，但现在没有到那个时间，你先把Key App做好，就像微软先把Office做好一样。</p>
+<p>我们业务里这几个板块都有潜力成长为Office，但它距离真正的Office还很远，都还没有长成收入数百亿的支柱型产业，现在营收规模都很小。</p>
+<p><strong>量子位：所以怎么看待那些一下子做了十几个、二十个产业的业态？</strong></p>
+<p><strong>唐文斌：</strong>那我只能觉得 <strong>不明觉厉</strong>啊，反正我不明白逻辑是什么，但我觉得很厉害。 </p>
+<p><strong>量子位：对于旷视，未来最核心的想象力、最大的故事在哪里？</strong></p>
+<p><strong>唐文斌：</strong>我认为是 <strong>「AI没有边界」</strong>。 </p>
+<p>之前我们本质上有点工具论，用工具对一些行业进行改造，让行业在原有基础上降本增效、提升体验，觉得所有的行业都值得重新看一遍。</p>
+<p>我们现在肯定没有能力去做那么多行业，做三个行业就已经够多了。</p>
+<p>但未来是没有边界的，未来可以有这样的商业模式，再加上好的组织形态和资本形态，也许能够赋能更多的场景。</p>
+<p>它不一定是现在公司的这种形态，有可能是公司里划分了很多小的创业公司，分别去赋能不同的领域，每个领域又有从头到尾许多环节无穷多的东西可以做。这件事情会让我觉得很有意思，可以做成一个没有边界的公司。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201016/91b01d7fb7c34d4a8c8e74dabeb64111.jpeg" /></p>
+<p><strong>量子位：所以旷视的定位是什么？</strong></p>
+<p><strong>印奇：</strong>我们内部这样认为，我们真正希望能成为 <strong>人工智能行业的务实者和领跑者</strong>。 </p>
+<p>稍微解读一下这两个词：</p>
+<p><strong>“务实者”</strong>，当我们呈现了AI落地的困难，大家可能会觉得这是一个长跑，因为AI技术大家如此兴奋，对这个行业大家会有很高的预期，或者大家对它预期的波动性很高，有时候很爱有时候很讨厌，在很波动的外部环境下，一个AI企业唯有务实，踏踏实实做好每一件事情，每一个点滴才能真正让这个公司长久成为一家伟大的公司。 </p>
+<p><strong>“领跑者”</strong>，后面我们也会更多分享到，旷视非常非常自信，我们会认为在真正所专注的行业里我们绝对是行业的领跑者，既有我们的产品落地，商业化能力，也包括我们的核心技术能力。 </p>
+<p><strong>量子位：站在现在看未来5年，旷视是一家怎样的公司？</strong></p>
+<p><strong>印奇：</strong>第一点，旷视“1+3”是brain++加上下面三个场景，从五年的维度，旷视不会像很多AI公司宣传的那样做特别平台化的公司。 </p>
+<p>旷视会有几个支柱型的产业，甚至三个产业里未来不一定每个产业都是我们的支柱，可能1-2个产业是在旷视产业里会逐步扩大。</p>
+<p>其中逻辑很简单，这个产业在单体里可以做到100亿、1000亿的年收入，它会有几个支柱型产业，虽然现在BAT是个平台化的互联网公司，但它会有立身之本，从电商、搜索、社交起来。</p>
+<p>我想五年之后，旷视这个定义的命题，从我们选择的三个产品下应该很明确，至少1-2个是我们的立身之本，100-1000亿是量化的感觉。</p>
+<p>第二点，旷视本质上在不同维度构建不同的“脑”，我们在云上叫Brain++，其实是在构建我们的算法能力；在仓库里构建了河图，其实它是个中脑，在这样的情况下可以连接不同的设备；在每个设备里，不管是芯片还是软件它是小脑，可以让device，每个机器人变得很聪明，大脑、中脑、小脑这样连接是贯穿的，脑以外的功能，我们想五年之后会有很多合作伙伴能帮我们做得更好，我们是这样的想象。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201016/9f7bab79456a45d5a850ec75cefa5283.jpeg" /></p>
+<p>八问竞争 </p>
+<p><strong>量子位：如何看待这个行业的竞争？</strong></p>
+<p><strong>印奇：</strong>to B竞争和to C不太一样，to B竞争没有to C那么激烈，因为行业比较碎片化。 </p>
+<p>我们自己也能感觉到这三个大的赛道，我们友商和大家想象的友商变得越来越不一样， <strong>这三个赛道最重要的友商，几乎都不是大家认为中的「我们的友商」</strong>。 </p>
+<p>当你进入这个行业里，会发现行业里有非常优秀的玩家，这些玩家可能偏传统，也在里面提供核心的产品。</p>
+<p>我们每进入到一个行业，走着走着会发现出现了真正的友商，你跟他去学习，跟他去竞争。这三个行业都不一样。</p>
+<p><strong>量子位：举个例子。</strong></p>
+<p><strong>唐文斌：</strong>我们去年在工业物联网方向上有非常大的一单case，这个case上我们竞争对手不是其他的AI公司，而是行业里已有的玩家。 </p>
+<p>因为这个客户非常大，几乎把这个行业所有的厂商都叫过去了，像海选一样，一轮一轮搞了三四轮，最后选了我们。</p>
+<p>为什么选了我们呢？当时我们跟他讲了一句话，我们绝对不是这个行业里最有经验的厂商，但一定是进入到这个新的行业里最创新的、带着更强的技术意识的、而且有更强软件能力的厂商，我们要用更好的大脑去赋能这个场景，这个大脑真的能给你这个场景带来不一样的价值，而这个价值可能是其他厂商所不能提供的。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201016/a7c65b482ad84088bd676034e5eb27c5.jpeg" /></p>
+<p><strong>量子位：有人说，AI公司真正的价值是在新的领域开拓新的预算，也就是说一个客户本来没这个需求，也没有做这个预算，你要让他们花钱做这个，你同意这个观点吗？</strong></p>
+<p><strong>唐文斌：</strong>我不同意。这要分场景看。 </p>
+<p>一些场景的本质上在做预算的转移。你原来的预算是放在那件事情上的，我能不能把预算移到这边来，而且可能还不需要那么多预算。预算的转移就是用新手段解决老问题，要解决的问题没有本质的变化，是解决方案的变化。</p>
+<p>不同的场景要分开来看，不能一概而论说在挖掘新的东西。</p>
+<p>比如通信不是新问题，你要做的是怎样让通信的体验更好，这是一种新的解法；</p>
+<p>安防就是让城市里的摄像头用起来，以前摄像头拍下的画面让人看，现在机器看了，这是一种新的解法；</p>
+<p>做仓储物流最后不管是对接到电商的还是线下门店，都是给发货问题提供新的解法。</p>
+<p>你还是要干这些事情，无非是人干还是机器干，哪个干得更高效的问题， <strong>大部分场景不创造新的问题，只创造新的解法</strong>。 </p>
+<p><strong>量子位：最大的竞争来自哪里？</strong></p>
+<p><strong>印奇：</strong>在城市场景，大家知道所有的互联网公司、科技公司、AI创投都在这里面，这个场景不是单向对旷视有没有挑战，因为每个公司的技术产品发现都很难deliver（传递）最后用户的价值，大家都很焦灼。这是比较混乱的场景。 </p>
+<p>相反在消费电子场景下，这个行业格局以及我们的行业定位已经比较好地形成，和用户之间形成了非常好的信任关系。供应链场景上比较新。在这三个场景，我们认为， <strong>最大的竞争和以后潜在的合作都来自于这个行业已有的巨头，都不是来自大家认为的AI公司</strong>。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201016/39b35d92ecc14651ba8cc7ef4c6297ba.gif" /></p>
+<p>九问合作 </p>
+<p><strong>量子位：对定位和竞争的认识，是不是也会让旷视有变化？</strong></p>
+<p><strong>唐文斌：</strong>我们现在平均年龄好像已经到30岁了。平均年龄肯定比以前要大，因为很多行业需要有相关经验的人。 </p>
+<p><strong>量子位：这样在你们公司不用担心35岁失业。</strong></p>
+<p><strong>唐文斌：</strong>我认为要尊重行业经验。 </p>
+<p><strong>量子位：技术的人，行业的人，他们的重要性的程度大概是几比几？</strong></p>
+<p><strong>唐文斌：</strong>很难讲这个比例，不同时候不太一样。如果问我对行业的了解程度是什么水平，我认为是60分，刚及格，因为我肯定不可能那么深入。我进入这个行业的时间，或者说深入去看这个行业的时间可能也就一年，和干了20年的同事相比，他肯定有更深的洞察。 </p>
+<p>我能不能抓主要矛盾，能不能抓核心问题，能不能知道哪些东西是我不知道的，能不能在该问问题的时候问出正确的问题，即便这些问题好像显得很无知，但能不能做到这样可能更关键。</p>
+<p>我在这个行业里待了一年，和一些真专家进行了探讨和讨论，我有信心说我是这个行业里的半专家。</p>
+<p><strong>量子位：和传统企业聊AI的时候，他们的接受能力怎么样，能get到点吗？</strong></p>
+<p><strong>唐文斌：</strong>能啊。我举个例子，去年年初的时候我们发布河图（机器人网络操作系统），我认为行业里很多人都觉得，我们河图的那个逻辑是非常makes sense（有道理）的。 </p>
+<p>甚至有一些行业里很先锋的人士，他们也想做这个东西，但限于算法的能力，限于软件的能力，他们做不出来，因为物流这个行业里，可能做软件的人就没有那么多，更别说做算法的人就更少了。对于这样一些很有想法的人，我们就把他拉进来了呀。</p>
+<p><strong>量子位：是挖进来吗？</strong></p>
+<p><strong>唐文斌：</strong>对啊，我们就挖进来了嘛。 </p>
+<p><strong>量子位：喜欢招什么样的人才？</strong></p>
+<p><strong>唐文斌：</strong>我们最喜欢两种人，都是 <strong>从技术和行业这两边往中间走的人</strong>，要一根轴能立得住，但能往中间靠。 </p>
+<p>我们非常喜欢有深厚的技术背景、有技术洞察的人，但也要非常谦虚、有很强的学习能力，能非常快速地学习行业知识。</p>
+<p>同时，我们也非常喜欢自身行业的先锋人士，他们的思想不是固步自封的，他们是有创新意识的，也有着学习的心态和快速的学习能力，能在这个基础上形成自己的洞察和认知。</p>
+<p>我们特别喜欢这样的一些人，也特别希望这样的人能够加入我们。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201016/d54926a914c6481da9c6f15808810e5c.jpeg" /></p>
+<p>十问创业 </p>
+<p><strong>量子位：最近有没有让你们觉得头疼的问题？</strong></p>
+<p><strong>唐文斌：</strong>我们一路上还是比较顺利的，这是真话。我认为，接下来最关键的事情是，怎样踏踏实实把事情做好。 </p>
+<p>如果要讲头疼的点，那就是组织。</p>
+<p>大部分时候我都是在看事儿，业务上需要我们投入很多思考。</p>
+<p>但我接下来下半年会更多地看组织，现在公司人也不少，公司需要成为一个好的产品，也需要做产品经理的价值设计，需要设计给员工的价值——这个公司能不能成为一个好的产品，让大家能够在这个地方被激励，觉得干起来有意思，成为一个效率很高的地方。</p>
+<p>接下来我会花比较多的时间做公司这个产品的价值设计，怎么将公司这个产品变成更好的产品。</p>
+<p><strong>量子位：是因为创业公司跑得太快吗？</strong></p>
+<p><strong>唐文斌：</strong>这是一方面。另一方面跟我和印奇没有什么工作经验有关系，我们第一份工作就是创业，这是真心话。 </p>
+<p>做产品经理有一点很重要的东西就是同理心，你需要站在另外一个角度看问题。</p>
+<p>第一个问题是我们俩其实没有在别的地方上过班，不是从基层做起，没有体会过“我有老板、有老板的老板、有老板的老板的老板”的状态，所以我们看问题的时候未必有那个同理心。</p>
+<p>第二个问题是我没做过销售。印奇和我也去谈了很多单子下来，很多项目就是我们作为销售谈下来的，但没有经过体系化销售的培训，我们可能在技术上、产品上有很多的思考，在销售方面的同理心还是会有问题的。</p>
+<p>所以，我有没有站在员工视角的同理心？我有没有站在销售视角的同理心？这里要打问号。</p>
+<p>好在我有这个觉察。这些问题都是我们作为一个产品经理需要思考的问题。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201016/8d06863145244188b6cc16b8cb43e026.jpeg" /></p>
+<p><strong>量子位：所以创业里的节奏感很重要？</strong></p>
+<p><strong>印奇：</strong>我们自己创业这九年时间里一直在反思一个问题，就是关于节奏感的问题。 </p>
+<p>一个创业公司，可能AI在这几个大赛道里可以通过逻辑推理得出这个赛道有巨大的商业价值和产品价值，但是旷视在之前有做得稍早一点的问题，比如我们发现有个产品三年前做了，做了之后不work（起效），三年之后发现它成为真正很Value（有价值）的产品。</p>
+<p>自动驾驶可能是非常好的例子。在to B的公司、技术性的公司，因为你的公司不像互联网公司，节奏感是以月为度的，可能早6个月、12个月没有问题，但如果是to B的公司，早5年，早10年，那可能你这个故事就是不成立的。</p>
+<p>所以，方向很重要，节奏也更重要。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>榜单征集！7大奖项锁定AI TOP企业</strong></p>
+<p><strong>「2020中国人工智能年度评选」</strong>正式启幕！将从公司、人物、产品、社区四大维度共7个奖项寻找优秀的AI企业，欢迎大家扫码报名参与。 </p>
+<p>榜单将于12月揭晓，也期待与百万从业者们，共同见证这些优秀企业的荣誉！ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜当专业动画师用GAN帮自己“偷懒”，几分钟就完成了几周的工作
+http://www.sohu.com/a/425078548_610300	16090
+<p>萧箫 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">当视觉特效师与GAN强强联手，做出来的动画会不会更好看？</p>
+<p style="text-align: left;">答案是YES。</p>
+<p style="text-align: left;"><span style="font-size: 16px;">这是一位视觉特效师，用海外版抖音上超火的小姐姐Bella Poarch的视频，生成的奥巴马TikTok版动画：</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">不仅动画效果逼真，表情生动，GAN生成的人物也不会出现意外“脱模”的情况。</span></p>
+<p style="text-align: left;">当时，这位专业动画师一接触到AI，就看中了AI搞艺术的“本事”——用GAN将一个视频中的人物动画化，只需要 <strong>几分钟</strong>。 </p>
+<p style="text-align: left;">相比之下，如果用正常的软件进行动画制作，可能需要耗费一个动画师 <strong>几周的时间</strong>。 </p>
+<p style="text-align: left;">不过，他很快发现，现有的这些AI人脸动画化的模型，做出来的卡通形象实在太丑。</p>
+<p style="text-align: left;">如下图，此前用AI将安倍晋三动画化后，卡通人物的脸色看起来不太好…… <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201016/3bb2b8ca24424754bc726986b3922116.png" /></p>
+<p><strong>△</strong>动画化后有点印堂发黑的诡异感 </p>
+<p style="text-align: left;">于是，他干脆自己上手，结合现有的GAN模型进行优化调整。</p>
+<p style="text-align: left;">效果好极了！</p>
+<p style="text-align: left;">不仅像是给正常的人脸加了美颜特效，卡通形象简直堪比迪士尼动画中的主角：</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201016/3da113b2a6e04ee48a1fe32c8d935720.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">连奥巴马都“返老还童”，比开了美颜看起来还年轻。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201016/889f733fc4b741cbb222c24dcb16953f.png" /></p>
+<p style="text-align: left;">而且，任何人都能控制这些卡通人物的表情，即使是提前录制好的视频也可以。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201016/dcd7d7b00bb549f9afa0c919cf400cfb.gif" /></p>
+<p style="text-align: left;">那么，这样的动画效果，到底是怎么做出来的？</p>
+<p>迁移学习的妙用 </p>
+<p style="text-align: left;">这位视觉特效师，选择了用一种特殊的方式制作好看的卡通人物形象。</p>
+<p style="text-align: left;">他利用 <strong>迁移学习</strong>生成了一个7×6的表格，根据迁移学习的强度来生成不同风格的人脸。 </p>
+<p style="text-align: left;">也就是说，如果迁移学习强度越大，人物就会越接近卡通化，而迁移学习强度越小，人物就越接近真实形象。</p>
+<p style="text-align: left;">可以看见，图像越靠近左下角，人像就越真实；而越靠近右上角，人物就更接近卡通化。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201016/fff405b36efb4392a8d4a222c60754ce.png" /></p>
+<p style="text-align: left;">这样，既能最大程度上保留人物的特点，又能使卡通脸看起来更逼真。</p>
+<p style="text-align: left;">而且AI还能根据“客户需求”，判断出更适合的人像，并进行数据训练。</p>
+<p style="text-align: left;">连尤金老爷子看起来都年轻了不少，甚至有点《飞屋环游记》里老爷爷的慈祥意味了。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201016/4b357f43ccb54856965602701e40873b.png" /></p>
+<p style="text-align: left;">在这其中，视觉特效师利用了GAN来生成卡通人物的形象。</p>
+<p>既能“性别转换”，也能变化年龄 </p>
+<p style="text-align: left;">这位视觉特效师采用的基础模型是Justin Pinkney和Doron Adler的作品 <strong>StyleGAN2 FFHQ</strong><span>（Nvidia的模型）</span>，主要根据DeepAI做成。 </p>
+<p style="text-align: left;">StyleGAN的原理在于，它摒弃了输入层，添加了一个非线性映射网络。</p>
+<p style="text-align: left;">此外，它创新了一种名为style-based generator的生成器，能够控制所生成图像的高层级属性(high-level attributes)，如 发型、雀斑等。</p>
+<p style="text-align: left;">而且，这个StyleGAN自带一个开源数据集FFHQ，里面包含着各种各样的人脸数据集。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201016/a7ff0eecd9864ce4adef90981520b52f.png" /></p>
+<p style="text-align: left;">而这位视觉特效师，则是将这个StyleGAN2 FFHQ进行了微调。</p>
+<p style="text-align: left;">利用GAN生成的人物形象，不仅可以卡通化，还可以让图像模式化 <span>（Stylized）</span>，生成风格相似的人物表情和特征。 </p>
+<p style="text-align: left;">不仅可爱的小朋友能被卡通化，而且还能根据眉毛和脸部特征构建一个女孩子的面部：</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201016/982df9985c87461598d88af99c247814.png" /></p>
+<p style="text-align: left;">如果人物“长大”了，那么模式化出来的女孩子的面部，也会变得更成熟：</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201016/5681511752514604bac751cf19eeb1ea.png" /></p>
+<p style="text-align: left;">这份软件目前还没开源，因为看起来，这位视觉特效师对自己做出来的动画还不是太满意，认为仍然有更多可以改进的空间。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201016/a102f630423b49a285916a8e8749dacd.png" /></p>
+<p style="text-align: left;">不过，网友似乎已经有点急不可耐。</p>
+<p style="text-align: left;">有热爱二次元的网友表示，希望这样的工具能将所有的漫画改成动漫。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201016/17dec0c828bd4275a47381043bd32ecd.png" /></p>
+<p style="text-align: left;">也有网友表示，这样的工具看起来已经很棒了，不知道作者是否有意愿在对作品满意后，进行开源。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201016/eeee809b912a48f5956d2f9a91779da3.png" /></p>
+<p style="text-align: left;">期待这位视觉特效师能够达成目标，将这份模型代码开源。</p>
+<p>作者介绍 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201016/2e2f4eb95ffc41f69473512b9a077ea1.png" /></p>
+<p style="text-align: left;">Nathan Shipley，视觉特效师，动态图形艺术家，创意技术人员，目前感兴趣的研究方向是AI生成艺术。</p>
+<p style="text-align: left;">此外，这位特效师还曾经在2019年，为佛罗里达州圣彼得堡的达利博物馆“复活”了超现实主义画家Salvador Dali本人。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201016/c50b82cbd5ee496780e6dc0f77e212b0.gif" /></p>
+<p style="text-align: left;">那些对画家Dali的着作有兴趣的观展者，只要按下按钮，就能看见屏幕中的Dali正对你“打招呼”，神态非常惟妙惟肖。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201016/2344e84f15c9484da6a2d71d49ef4b7c.gif" /></p>
+<p style="text-align: left;">如果对他的艺术作品感兴趣的话，可以戳下方地址主页查看。</p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span>Nathan Shipley主页地址：</span></span></p>
+<p><span>http://www.nathanshipley.com/gan</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span style="font-size: 16px;">参考链接：</span></span></p>
+<p><span style="font-size: 16px;">https://www.reddit.com/r/MachineLearning/comments/j0btow/p_toonifying_a_photo_using_stylegan_model/</span></p>
+<p><span style="font-size: 16px;">https://www.dezeen.com/2019/05/24/salvador-dali-deepfake-dali-musuem-florida/</span></p>
+<p>— <strong>完</strong>— </p>
+<p style="text-align: left;"><span style="font-size: 16px;">本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>「百度AI开发」系列课 免费报名</strong></p>
+<p>百度EasyDL不仅让企业「定制AI模型」像家用电器一般简单，并且还能像高级AI工程师一样专业。</p>
+<p>10.21日起，3期公开课带你 <strong><span>0门槛轻松上手EasyDL</span></strong>、实现 <span><strong>AI模型训练与部署</strong></span>！扫码添加好友、加入课程直播群吧~ <strong><span>▽</span></strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜理想汽车事故，智能短板暴露
+http://www.sohu.com/a/425078607_610300	16090
+<p>允中 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p>理想汽车对最近这起备受关注的车祸回应了。</p>
+<p>近期，青岛理想ONE在晚间高速路、辅助驾驶状态，与右前方变道货车相撞，副驾亲属受伤，车身前部遭受挤压……</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201016/fd2b26291324494d9f0a0f5dbc909b7f.png" /></p>
+<p>其后，相关行车记录视频流出，围绕事故的争议也随之展开，主要有两点： </p>
+<ul>
+<li>一，在此次事故中，理想ONE的A柱断裂，全车安全气囊无一弹出，汽车本身质量是否合格？</li>
+<li></li>
+</ul>
+<p>作为一家以“智能”作为差异化的造车新势力，这桩事故牵出的问题，无论是汽车安全性，还是智能能力，实际每一项都直指关键。</p>
+<p>事故如何发生？ </p>
+<p>9月22日晚，近22点左右，青岛理想ONE车主，与父母家人，驾车行驶在G18高速内侧道。</p>
+<p>此时，右前方一辆厢式货车打左转灯变道，试图进入内侧道。</p>
+<p>但理想ONE不仅没有减速，还最终径直撞了上去。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201016/80850c20bc854547baa2f6d8ec972798.gif" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>事后车主披露，当时车辆处于 <strong>辅助驾驶</strong>系统开启状态，车速保持在120KM/h左右。 </p>
+<p>并且在事故发生过程中，理想ONE系统对前车变道，没有警示，也没有减速，等到他发现接管，为时已晚，理想ONE右前方撞击到货车左后方。</p>
+<p>事故后车身撞成这样：</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201016/6b885a1bd5304303b2ec4b9ff4747c84.png" /></p>
+<p>这样：</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201016/e65233e801fc420ab63c2485ec934453.png" /></p>
+<p>以及这样：</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201016/cb72cf60fa4841e0b4afd144af02bd10.png" /></p>
+<p>理想ONE A柱断裂，副驾亲属面部受伤，所幸没有危及生命安全，后排亲属也遭受撞击伤害。</p>
+<p>但遭遇如此撞击，全车七个气囊无一弹出——这也是事后理想车主质疑的关键问题。</p>
+<p>Why？</p>
+<p>理想在10月14日给出官方调查后的回应。</p>
+<p><span>（完整回应图文见文末）</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201016/149d53350cda491fabaa1660bc71ea0e.jpeg" /></p>
+<p>理想如何回应？ </p>
+<p>主要涉及三方面。</p>
+<p>首先， <strong>责任</strong>。 </p>
+<p>理想称，本次事故经交管部门判定，大货车由于违规并线承担全部责任。</p>
+<p>其次， <strong>车辆质量安全</strong>。 </p>
+<p>对于追尾事故后出现A柱断裂，理想官方回应称，由于大货车的尾部并未正确安装符合国家要求的防护装置，高度过高，导致理想ONE追尾大货车时，A柱直接卡主货箱，使A柱成为主要受力点，A柱无法单独承受如此大冲击力。</p>
+<p>理想还强调，理想ONE的A柱使用的是1500MPA的超高强度钢，与宝马X7、奥迪Q7、沃尔沃CX90车型的A柱材料强度一样。</p>
+<blockquote>
+<p>国内外的试验及实际发生的道路交通事故均表明，乘用车在发生钻撞货车的情况时，如货车后防护装置不满足标准，乘用车A柱无法承受货箱的直接碰撞或挤压。</p>
+</blockquote>
+<p>国内外的试验及实际发生的道路交通事故均表明，乘用车在发生钻撞货车的情况时，如货车后防护装置不满足标准，乘用车A柱无法承受货箱的直接碰撞或挤压。</p>
+<p>而针对 <strong>安全气囊</strong>无一弹出的问题，在最初工作人员给出“没有撞到点上”的回应后，理想也在此次进行了完整解释： </p>
+<blockquote>
+<p>此次事故中，车辆A柱单独收到挤压，车辆前舱纵梁、前指梁、防撞梁及吸能盒均为发生明显变形，这种情况并不属于安全气囊的保护场景，气囊传感器受限于位置无法监测到足够的减速度导致气囊未开启，而且目前在售车型中也没有一款车在A柱设计气囊传感器。</p>
+</blockquote>
+<p>此次事故中，车辆A柱单独收到挤压，车辆前舱纵梁、前指梁、防撞梁及吸能盒均为发生明显变形，这种情况并不属于安全气囊的保护场景，气囊传感器受限于位置无法监测到足够的减速度导致气囊未开启，而且目前在售车型中也没有一款车在A柱设计气囊传感器。</p>
+<p>另外，理想官方还补充：在此碰撞情况下，大货车尾部是挤压进车身，即使气囊起爆也起不到任何保护作用。</p>
+<p>并表示如果还有媒体质疑，愿意接受同级别做工车型进行对比实验——理想免费提供理想ONE进行支持。</p>
+<p>最后， <strong>辅助驾驶</strong>系统问题。 </p>
+<p>理想承认，此次事故中车主使用了理想ONE辅助驾驶系统。</p>
+<p>回应解释称：</p>
+<blockquote></blockquote>
+<p>还进一步提醒和强调：</p>
+<blockquote>
+<p>L2级辅助驾驶还是以驾驶员为主来控制车辆，不能完全替代驾驶员做决策，也请各位用户安全使用理想ONE的辅助驾驶系统。</p>
+</blockquote>
+<p>L2级辅助驾驶还是以驾驶员为主来控制车辆，不能完全替代驾驶员做决策，也请各位用户安全使用理想ONE的辅助驾驶系统。</p>
+<p>毫无疑问，相比动辄把车祸事故归因于 <strong>“车主对自动驾驶系统使用不当”</strong>、 <strong>“未能及时接管”</strong>的车厂…… </p>
+<p>理想汽车无论在态度上，还是回应中，都直面问题，并且敢于承认不足。</p>
+<p>但即便如此，理想依然没有完整回答质疑，特别是在辅助驾驶系统方面——</p>
+<p>为何视频中如此明显且不算突然的变道，理想ONE系统近乎“视而不见”？</p>
+<p>而且认为这是L2辅助驾驶系统的局限性……像是 <strong>行业普遍挑战</strong>？ </p>
+<p>在理想的辅助驾驶方案中，以视觉系统和雷达为主，采用了Mobileye EyeQ4视觉芯片，以及77GHz的毫米波雷达，是当前非特斯拉的智能汽车的“标配方案”。</p>
+<p>而理想ONE在此方案加持下，主要可以实现三方面能力：</p>
+<p>全速域自适应巡航、车道保持辅助：</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201016/b9fd04ebc7ee4328a4c58cf43225cd0a.gif" /></p>
+<p>自动紧急制动：</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201016/3c3e35685f574932869f8c1606fc4290.gif" /></p>
+<p>以及自主泊车：</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201016/707fb40a88784693ae428cc1ada58b5a.gif" /></p>
+<p>即便仅按这三项能力而言，理想ONE在本次事故中的表现和结果，也令人出于意料。 </p>
+<p>但最主要的 <strong>短板</strong>，可能打铁还靠本身硬——出在辅助驾驶系统的硬件方案局限上。 </p>
+<p>车聚网援引之前理想工作人员回答，称理想ONE一方面使用的是水平视角52º的EyeQ4版本——而不是视角更大的100°版本；另一方面在用于高速长距离探距的毫米波雷达方面，理想ONE只用了1个——作为对比，蔚来用了5个，威马用了3个，小鹏G3用了3个……</p>
+<p>虽然传感器方案，不能简单以参数之和来比较智能程度。</p>
+<p>不过在当前自动驾驶软硬件都处于初步应用时期，越多的传感器，确实能更好实现安全冗余。</p>
+<p>当然，成本也相应会增加。</p>
+<p>但对于以智能化作为核心卖点的造车新势力而言，如果没有足够的安全冗余作为保障，智能化卖点，就建立在浮沙之上。</p>
+<p>一方面希望驾驶过程中尽可能解放车主，另一方面又希望车主必要时随时能接管，还没有足够的硬件冗余方案……</p>
+<p>更何况，售价在10万-15万档的小鹏G3、威马，都能尽可能高配，为何32万售价的理想ONE，在事关安全的传感冗余方案里自信得只用1个毫米波雷达？</p>
+<p>因为特斯拉Model 3也只用一个？</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201016/93139fa0c359450a9a8ed7a1e38f28ff.gif" /></p>
+<p><strong>△</strong>特斯拉Model 3深圳事故，系统同样未识别变道大货车 </p>
+<p>但如果直接对标特斯拉，就还得在在FSD硬件、摄像头，以及感知距离等方面，都完全对其。 </p>
+<p>实际上，理想ONE在传感器方案上的短板，之前就有车友反馈，并且表示 <strong>自己加钱也可以</strong>实现升级。 </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201016/5b99234e5f044a5bbbffcf00da7a20cd.jpeg" /></p>
+<p>不过现实情况是，涉及前装量产，理想ONE已难直接回应能与不能，只能表示：使用变道辅助时，务必主动观察周围环境使用条件。</p>
+<p>言外之意，再明确不过。</p>
+<p>只是谁也想不到，实际驾驶场景长尾挑战太多，青岛车主对理想ONE辅助驾驶系统的过分信任，造成一家出行中的悲剧。</p>
+<p>是理想ONE的传感方案和智能驾驶能力“短板”造成的吗？</p>
+<p>或许也不能这样直接归因。</p>
+<p>毕竟辅助驾驶就是需要车主注意力集中，而且车辆安全是一项综合工程，这也是为什么理想汽车回应中对A柱断裂和气囊无一弹出长篇幅解释的原因。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201016/6a833bc7ff894082861c4891c33b1def.jpeg" /></p>
+<p>但对于以智能作为卖点的新造车公司 <strong>理想汽车</strong>而言，这样的事故结果非常现实： </p>
+<p>在一个动不动就宣扬造车质量和安全“百年积淀”的行业，差异化的智能能力应考成绩如此，于本于末，都显得尴尬。</p>
+<p>理想可以不必有纯电动、加速新能源变革的理想主义，但距离安全可靠的智能化理想，这次事故也暴露了关键问题。</p>
+<p>这样的短板，会在下一代补上？</p>
+<p>毕竟CTO已经近期到位，自动驾驶方面也宣称要用上英伟达最新ORIN自动驾驶芯片，传感方案应该也会一并加码优化……</p>
+<p>因为理想ONE才是第一款车，所以理想依然还有时间和机会。</p>
+<p>而且此次事故前后，理想股价也未受影响，市值创下新高。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201016/d8477fb992ea4dc9b70b3561d2d358dc.png" /></p>
+<p>并且值得注意的是，蔚来和小鹏也都在涨，中国造车新势力整体都在被看好。</p>
+<p>只不过这种看好基于长远，可能暂时还不会因为一两次事故而发生变化。但事故背后暴露的短板，如果不能及时亡羊补牢，或许就会风气浮萍之末。</p>
+<p>对于理想是这样，对于智能汽车们，也是这样。</p>
+<p>你说呢？你怎么看理想ONE这次事故和回应？</p>
+<p><span style="font-size: 16px;"><span>附理想汽车事故回应全文：</span></span><span></span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201016/ebfe5b5d4dc840fdbfaf74fb9f302a9d.jpeg" /></p>
+<p>— <strong>完</strong>— </p>
+<p style="text-align: left;"><span style="font-size: 16px;">本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>「百度AI开发」系列课 免费报名</strong></p>
+<p>百度EasyDL不仅让企业「定制AI模型」像家用电器一般简单，并且还能像高级AI工程师一样专业。</p>
+<p>10.21日起，3期公开课带你 <strong><span>0门槛轻松上手EasyDL</span></strong>、实现 <span><strong>AI模型训练与部署</strong></span>！扫码添加好友、加入课程直播群吧~ <strong><span>▽</span></strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

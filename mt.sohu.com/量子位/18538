@@ -1,0 +1,315 @@
+➜RTX 3090 AI性能实测：FP32训练速度提升50%，张量核心缩水
+http://www.sohu.com/a/422427880_610300	16509
+<p>晓查 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">NVIDIA最近发布了备受期待的RTX 30系列显卡。</p>
+<p style="text-align: left;">其中，性能最强大的RTX 3090具有 <strong>24GB显存</strong>和 <strong>10496个CUDA核心</strong>。而2018年推出的旗舰显卡Titan RTX同样具有24GB显存。 </p>
+<p>
+<table>
+<tbody>
+<tr>
+<td></td>
+<td><span style="text-align: center;"><strong>Titan RTX</strong></span></td>
+<td><span style="text-align: center;"><strong>RTX 3090</strong></span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;">架构</span></td>
+<td><span>图灵TU102</span></td>
+<td><span>安培GA102</span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;">CUDA核心</span></td>
+<td><span>4609</span></td>
+<td><span>10496</span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;">张量核心</span></td>
+<td><span>576</span></td>
+<td><span>328</span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;">显存</span></td>
+<td><span>24GB</span></td>
+<td><span>24GB</span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;">显存带宽</span></td>
+<td><span>672GB/s</span></td>
+<td><span>936GB/s</span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;">TDP</span></td>
+<td><span>285W</span></td>
+<td><span>350W</span></td>
+</tr>
+</tbody>
+</table></p>
+<p style="text-align: left;">RTX 3090在深度学习训练任务中，性能表现究竟如何，它能否取代Titan RTX成为最强消费级AI训练卡？现在已经有了答案。</p>
+<p style="text-align: left;">国外两位AI从业者在拿到这款显卡后，第一时间测试了其在TensorFlow上的AI训练性能。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201003/1f1aac3f4bf34b9f86f592bb000b8e00.jpeg" /></p>
+<p style="text-align: left;">由于RTX 3090现阶段不能很好地支持TensorFlow 2，因此先在TensorFlow 1.15上进行测试。</p>
+<p style="text-align: left;">话不多说，先看数据。在FP32任务上，RTX 3090每秒可处理561张图片，Titan RTX每秒可处理373张图片，性能提升 <strong>50.4%</strong>！ </p>
+<p><img height="auto" width="615" src="http://p2.itc.cn/q_70/images03/20201003/91b62cfc489a4af6aaa7c6373285bc7b.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">而在FP16任务上，RTX 3090每秒可处理1163张图片，Titan RTX每秒可处理1082张图片，性能仅提升 <strong>7.5%</strong>。 </p>
+<p><img height="auto" width="606" src="http://p2.itc.cn/q_70/images03/20201003/6b11bd7bf72d4923be356e39f06925ab.png" /></p>
+<p style="text-align: left;"><span>为何在FP32任务上的性能提升比在FP16上更明显，主要是因为RTX 3090大大提高了CUDA核心的数量。但是用于处理FP16</span>的 <span>张量核心数量明显减少，这可能会影响FP16性能。</span></p>
+<p style="text-align: left;">即便如此，张量核心更少的RTX 3090在很多FP16任务上，性能依然有小幅提升。</p>
+<p style="text-align: left;">随后，英伟达官方提供了支持RTX 3090的CUDA 11.1，谷歌官方在TensorFlow nightly版中提供了对最新显卡的支持。</p>
+<p style="text-align: left;">又有用户再次测试了两款显卡的性能对比。</p>
+<p>
+<table>
+<tbody>
+<tr>
+<td></td>
+<td><span style="text-align: center;"><strong>FP16</strong></span></td>
+<td><span style="text-align: center;"><strong>FP32</strong></span></td>
+</tr>
+<tr>
+<td></td>
+<td><span><strong>Titan RTX</strong></span></td>
+<td><span><strong>RTX 3090</strong></span></td>
+<td><span><strong>Titan RTX</strong></span></td>
+<td><span><strong>RTX 3090</strong></span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;">AlexNet</span></td>
+<td><span>6634</span></td>
+<td><span>8255</span></td>
+<td><span>4448</span></td>
+<td><span>6493</span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;">Inception3</span></td>
+<td><span>656.1</span></td>
+<td><span>616.3</span></td>
+<td><span>223</span></td>
+<td><span>337.3</span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;">Inception4</span></td>
+<td><span>298.1</span></td>
+<td><span>132.7</span></td>
+<td><span>99.74</span></td>
+<td><span>143.7</span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;">ResNet152</span></td>
+<td><span>423.9</span></td>
+<td><span>484</span></td>
+<td><span>134.5</span></td>
+<td><span>203.6</span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;">ResNet150</span></td>
+<td><span>966.8</span></td>
+<td><span>1260</span></td>
+<td><span>336</span></td>
+<td><span>525.9</span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;">VGG16</span></td>
+<td><span>339.7</span></td>
+<td><span>442.5</span></td>
+<td><span>212.1</span></td>
+<td><span>325.6</span></td>
+</tr>
+</tbody>
+</table></p>
+<p style="text-align: left;">可以看出，使用FP32进行的所有模型训练，RTX 3090都能实现40%~60%的训练提升。而大多数模型的FP16训练速度几乎不变，最多提升20%，甚至在Inception模型上还有所下降。</p>
+<p style="text-align: left;">只能说RTX 3090在张量核心上的“刀法”颇为精准，如果你对FP16训练性能有较高要求，也许可以等待今后的升级版。</p>
+<p style="text-align: left;">不过RTX 3090上市价格仅1499美元，比Titan RTX便宜1000美元，仍不失为“性价比”之选。</p>
+<p style="text-align: left;"><span style="font-size: 16px;">参考链接：</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">https://www.pugetsystems.com/labs/hpc/RTX3090-TensorFlow-NAMD-and-HPCG-Performance-on-Linux-Preliminary-1902/</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">https://www.evolution.ai/post/benchmarking-deep-learning-workloads-with-tensorflow-on-the-nvidia-geforce-rtx-3090</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>榜单征集！7大奖项锁定AI TOP企业</strong></p>
+<p><strong>「2020中国人工智能年度评选」</strong>正式启幕！将从公司、人物、产品、社区四大维度共7个奖项寻找优秀的AI企业，欢迎大家扫码报名参与。 </p>
+<p>榜单将于12月揭晓，也期待与百万从业者们，共同见证这些优秀企业的荣誉！ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜微软AI要参加IMO竞赛！小目标：数学金牌
+http://www.sohu.com/a/422427883_610300	16509
+<p>贾浩楠 萧箫 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">今年，可能是最后一届 <strong>“纯人类”</strong>参赛的IMO <span>（国际奥数竞赛）</span>。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201003/e18ad3650db447479ed518284a16608e.png" /></p>
+<p><strong>△</strong>参加2020年IMO的中国代表队（李金珉的官方年龄信息有误） </p>
+<p style="text-align: left;">因为在明年，AI可能也会加入这场金牌争夺战中，成为一名“种子选手”。</p>
+<p style="text-align: left;">这名潜入IMO赛事的AI名为 <strong>Lean</strong>，由 <strong>微软</strong>的研究人员开发。 </p>
+<p style="text-align: left;">目前，他们正计划让Lean参与明年的国际奥数竞赛。</p>
+<p style="text-align: left;">也就是说，它将与世界各国的奥赛选手一起争夺IMO金牌。</p>
+<p>准备在IMO上一展身手的Lean </p>
+<p style="text-align: left;">其实，微软研究人员让AI参加IMO的理由，原因是它是个很好的实验工具 <span>（工具人）</span>。 </p>
+<p style="text-align: left;"><span style="font-size: 16px;">微软研究员Selsam是挑战赛</span><span style="font-size: 16px;">IMO Grand Challenge的创始人之一</span><span style="font-size: 16px;">，他表示，这项比赛的目的是</span><span style="font-size: 16px;">训练一个人工智能系统，以便在世界顶级数学竞赛中赢得金牌。</span></p>
+<p style="text-align: left;">因为这里不仅有数学上“最简单”的难题 <span>（连高等数学都用不上，但就是做不出来）</span>，而且还汇集了来自世界各地的顶尖高手。 </p>
+<p style="text-align: left;">如果AI能像人一样证明这些数学定理，某种程度上也能说明，让它“像人一样思考”不会太过困难。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201003/add958e4c9094c42a4708bb5ae408ffb.gif" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">基于这个想法，微软的研究人员从2013年开始研发Lean，希望让AI能拥有自主判断、根据假设进行演绎的能力。</p>
+<p style="text-align: left;">也就是说，它是个旨在缩小交互式定理证明、与自动定理证明之间的差距的开源项目。</p>
+<blockquote>
+<p style="text-align: left;">自动定理证明：对数学中提出的定理或猜想，寻找一种证明或反证的方法。系统不仅能根据假设进行演绎，还要有一定的判定技巧。</p>
+<p style="text-align: left;">交互式定理证明：借助计算机辅助证明工具，理解检验数学定理正确性，完成数学定理的证明。</p>
+</blockquote>
+<p style="text-align: left;">自动定理证明：对数学中提出的定理或猜想，寻找一种证明或反证的方法。系统不仅能根据假设进行演绎，还要有一定的判定技巧。</p>
+<p style="text-align: left;">交互式定理证明：借助计算机辅助证明工具，理解检验数学定理正确性，完成数学定理的证明。</p>
+<p style="text-align: left;">Lean已经推出了3个版本，现在的第四个版本Lean 4还在完善中，现在的逻辑系统基于依赖类型理论，已经强大到足以证明所有的常规数学定理。</p>
+<p style="text-align: left;">也就是说，想要让它自己证明IMO中提出来的、此前“没见过的”数学问题，依旧非常困难。</p>
+<p style="text-align: left;">目前，Lean 4还没有彻底做好准备，作者Leonardo de Moura表示，如果让它参加今年的IMO，“可能只能得0分”。 <span></span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201003/0c65c1bb2a1b4126a045b7d3c868a434.png" /></p>
+<p style="text-align: left;">因为，Lean目前甚至无法理解某些数学问题需要涉及哪些概念，而这些概念本身又是“什么意思”。</p>
+<p>证明的“第一步”，就难住了算法 </p>
+<p style="text-align: left;">对于不少人来说，数学十分抽象、难以学好。</p>
+<p style="text-align: left;">事实上，AI和你的感觉一样。</p>
+<p style="text-align: left;">一般的工程应用问题中，AI得心应手，因为在预训练阶段，算法模型已经对一类问题有所了解。</p>
+<p style="text-align: left;">也就是说，AI现阶段能干的活仍然有限，通常要给定条件和数据，经过持续的“刷题”，才能做“更复杂的计算”。</p>
+<p style="text-align: left;">这是一个从“1”到“2”、“3”，甚至是无穷的过程。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201003/2277644a60ae48e0baa8e5179829f8aa.gif" /></p>
+<p style="text-align: left;">但数学问题的证明本质并不一样，证明一个公理，或是一个复杂的等式，需要完全“白手起家”。</p>
+<p style="text-align: left;"><strong>证明的第一步：提出一个合理证明路径。</strong>这个从0到1的关键，目前只有人类的大脑能胜任。 </p>
+<p style="text-align: left;">绝大部分AI，很难给出证明思路的第一步。</p>
+<p style="text-align: left;">拿一个最简单最古老的数学公理来说，公元前300年，欧几里得就证明了 <strong>质数有无限多个</strong>。 </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201003/bd2cc90e3e7941908e2ae2358786bc4b.gif" /></p>
+<p style="text-align: left;">而要证明这一结论，关键是要认识到，总是可以通过乘所有已知的质数并加1来找到一个新的质数。有了这个思路，接下来的证明就很简单了。</p>
+<p style="text-align: left;">但“想到这个思路”这一行为本身，对于AI来说，难度巨大。</p>
+<p style="text-align: left;">说回IMO，正式比赛中的3道题目，尽管不涉及微积分等高等数学，但无一不是要求选手利用中学的所有数学知识，进行巧妙的构思给出解题方法。</p>
+<p style="text-align: left;">比如这道2005年IMO真题：</p>
+<p style="text-align: left;"><img src="http://p4.itc.cn/q_70/images03/20201003/53294b4627944fccb0099b36f9c5232d.png" /></p>
+<p style="text-align: left;">当时不同国家的参赛选手至少给出了3种不同的证明，其中被广泛认可讨论的解法，采用柯西不等式简化的思路，篇幅大概需要半页A4纸。</p>
+<p style="text-align: left;">而另一位来自摩尔多瓦的选手，极富创造性的用两行式子完成了证明：</p>
+<p style="text-align: left;"><img src="http://p6.itc.cn/q_70/images03/20201003/948313d795aa480f97d85defe39e046b.png" /></p>
+<p style="text-align: left;">上面一行是“因为”，下面一行就是“所以”，其简洁、精准甚至可以说“粗暴有效”震惊全场。</p>
+<p style="text-align: left;">精巧的思路也获得了当年的IMO特别奖。</p>
+<p style="text-align: left;">要说明的是，IMO特别奖不看总成绩，只颁给解题方法独到的选手。</p>
+<p style="text-align: left;">这种石破天惊的“第一步”，对于现在的AI来说，几乎是不可能做到的。</p>
+<p style="text-align: left;">这也许就是为什么微软的研究人员设定的目标是“冲击金奖”吧。</p>
+<p style="text-align: left;">巧的玩不转，Lean采取什么方法跟人类大脑竞争呢？</p>
+<p>Lean如何学数学？ </p>
+<p style="text-align: left;">Lean和所有AI算法一样，需要“喂数据”进行训练。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201003/f20ae4f0cda14b2f99d9a2449f7b0a5d.gif" /></p>
+<p style="text-align: left;">目前的Lean，不但无法设计出完整的IMO题目证明过程，它甚至无法理解其中一些问题所涉及的概念。</p>
+<p style="text-align: left;">所以，Lean的首要任务是学习更多的数学知识。</p>
+<p style="text-align: left;">训练数据来自 <strong>Mathlib</strong>的库。Mathlib是一个数学基础数据库，它几乎包含了大学二年级以下所有数学知识。 </p>
+<p style="text-align: left;">但Mathlib在中学数学上仍有一些差距，团队正在对Mathlib数据库进行补全。</p>
+<p style="text-align: left;">掌握知识只是第一步，如何灵活运用才是关键。</p>
+<p style="text-align: left;">团队采取的方法与象棋、围棋AI等相同—— <strong>遵循决策树，直到算法找到最优解</strong>。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201003/50899a012233434796b243962bce9a1d.gif" /></p>
+<p style="text-align: left;">许多IMO题目的关键是寻找某种证明的模式。深入数学证明的底层，是一系列非常具体的、有逻辑的步骤。</p>
+<p style="text-align: left;">研究人员尝试通过IMO题目证明的全部细节来训练Lean。</p>
+<p style="text-align: left;">但在这种方法也有局限，每个特定的题目证明对于算法来说太“专”，下一个不同类型题目仍然不会解。</p>
+<p style="text-align: left;">为了解决这个问题，团队需要数学家写出之前IMO题目的详细形式化证明。然后，团队提炼证明中的采用的不同策略。</p>
+<p style="text-align: left;">接下来，Lean的任务，就是在这些策略中寻找一个 “胜利 “的组合。</p>
+<p style="text-align: left;">这项任务实际上比描述起来困难的多，团队这样比喻它：</p>
+<blockquote>
+<p style="text-align: left;">在围棋中，目标是找到最好的一步棋。而在数学中，目标是找到最好的一盘棋，然后在这盘棋中找到最好的一步棋。</p>
+</blockquote>
+<p style="text-align: left;">在围棋中，目标是找到最好的一步棋。而在数学中，目标是找到最好的一盘棋，然后在这盘棋中找到最好的一步棋。</p>
+<p style="text-align: left;">团队说，也许到了明年，获得金牌仍然是很困难的，但至少，Lean有机会参赛了。</p>
+<p style="text-align: left;">对此，有网友感叹AI这些年神速的进展：先是国际象棋、又是围棋……现在，AI又要来攻占国际奥赛金牌了。</p>
+<p style="text-align: left;"><img src="http://p1.itc.cn/q_70/images03/20201003/dac81ad2b45d4d62b81898512efeaea6.png" /></p>
+<p style="text-align: left;">但也有网友持悲观态度，认为AI现阶段只能在某些方面趋近人类的水平。</p>
+<p style="text-align: left;"><img src="http://p9.itc.cn/q_70/images03/20201003/c73c90acba7b4853a0cd15a06ce4092b.png" /></p>
+<blockquote>
+<p style="text-align: left;">目前AI的算法，都是建立在人类认知基础上的……所以像（证明数学定理）这样特殊的任务，我持消极态度，毕竟世界上只有少部分人能提供帮助。</p>
+</blockquote>
+<p style="text-align: left;">目前AI的算法，都是建立在人类认知基础上的……所以像（证明数学定理）这样特殊的任务，我持消极态度，毕竟世界上只有少部分人能提供帮助。</p>
+<p style="text-align: left;">这个问题出乎意料的难以解释透彻。数学家在尝试解决新问题时，大脑的活动是难以描述的，更不要说落实在算法上。</p>
+<p style="text-align: left;">尽管已经有AI团队朝数学思想的深层迈出了一步，但是从他们采取的策略来看，仍然是学习过往思路，选择成功率最高的“排列组合”。</p>
+<p style="text-align: left;">这样的AI算法，要在创造力和突破性上超越人类，“火候”还差得远。</p>
+<p style="text-align: left;">而隔壁的GPT，也在数学证明方向上取得了初步成果。</p>
+<p style="text-align: left;">最近，OpenAI推出了用于数学问题的GPT-f，利用基于Transformer语言模型的生成能力进行自动定理证明。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201003/2c97035a6522415ea2116525dad453fa.jpeg" /></p>
+<p style="text-align: left;">由GPT-f发现的23个简短证明已被Metamath主库接收，这也是首次AI的数学证明获得业内认可。</p>
+<p style="text-align: left;">GPT真的是要砸所有人的饭碗，连数学家都不放过。 </p>
+<p style="text-align: left;">那么，Lean和GPT-f，你更看好哪一个呢？</p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span>项目链接：</span></span></p>
+<p><span>https://leanprover.github.io/</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span>在线可玩：</span></span></p>
+<p><span>https://leanprover.github.io/live/master/</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>榜单征集！7大奖项锁定AI TOP企业</strong></p>
+<p><strong>「2020中国人工智能年度评选」</strong>正式启幕！将从公司、人物、产品、社区四大维度共7个奖项寻找优秀的AI企业，欢迎大家扫码报名参与。 </p>
+<p>榜单将于12月揭晓，也期待与百万从业者们，共同见证这些优秀企业的荣誉！ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜特斯拉的三季度：车卖很多、车主很烦、股价很魔幻
+http://www.sohu.com/a/422427971_610300	16509
+<p>贾浩楠 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">三季度的特斯拉，很魔幻。</p>
+<p style="text-align: left;">一方面，是特斯拉的汽车交付量，又刷新了记录，一如既往超越预期。</p>
+<p style="text-align: left;">但另一方面，是公布优秀业绩的当天，股价大幅下跌的「魔幻」一幕。</p>
+<p style="text-align: left;">曾直言「股价影响工作」的马斯克，不知道如何评价此情此景？</p>
+<p style="text-align: center;"><img height="auto" width="1142" src="http://p8.itc.cn/q_70/images03/20201003/2171618a4cc649c1ba901ad22eefef6f.png" /></p>
+<p>疫情之下三季度，销量比去年同期还多45% </p>
+<p style="text-align: left;">与2019年同期相比，交付量增加了45％，与今年第二季度相比，增加了53%。</p>
+<p style="text-align: left;">这一成绩打破了公司销售记录，为历史最好成绩，也远超之前业内人士预测的12.99万的期望值。</p>
+<p><img height="auto" width="1610" src="http://p1.itc.cn/q_70/images03/20201003/b6ba63d549db4ccb86bf77893419d92b.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;"><span>根据中国乘联会的数据统计，7月、8月特斯拉在中国销售分别为</span><strong>11041、11811辆</strong><span>。</span></p>
+<p style="text-align: left;">尽管还没有9月数据，但可以大致判断，中国消费者为特斯拉的总销量贡献了10%左右的份额。</p>
+<p style="text-align: left;">而马斯克在前几天刚结束的电池日上却又一次重申，50万辆的年目标不变。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201003/49c6c1686e92404a81f11de0934b484b.jpeg" /></p>
+<p style="text-align: left;">能不能实现？从特斯拉交付量环比增幅连续超过50%的势头来看，是可能的。</p>
+<p style="text-align: left;">但是，市场投资者对于特斯拉的预期和信心，却没有这么乐观。</p>
+<p>特斯拉：我给自己打鸡血 </p>
+<p style="text-align: left;">最近特斯拉的负面消息似乎比以往更多，影响也比以往更大了。</p>
+<p style="text-align: left;">网络中断、缺乏亮点的电池日等等，让特斯拉股价出现了连续下跌的情形。</p>
+<p style="text-align: left;">9月23日，特斯拉就遭受了「双重暴击」。</p>
+<p style="text-align: left;">先是发生史无前例的全球断网严重事故；接着又开了普遍另外界失望的电池日大会。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201003/7eb0493d101c4bf39f29e43823eadb80.jpeg" /></p>
+<p style="text-align: left;">即使宣布仅售2.5万美元（约人民币17万）的特斯拉新车型也没能挽回大家的失望之情。</p>
+<p style="text-align: left;">当天，特斯拉股价一度下跌10.34%，市值蒸发约409亿美元（折合人民币约为2784亿元）。</p>
+<p><img height="auto" width="640" src="http://p9.itc.cn/q_70/images03/20201003/f052da58e9b6438d8dfde579c4f1016b.png" /></p>
+<p style="text-align: left;">直到10月1日，特斯拉股价才恢复“断网”之前的水平。</p>
+<p style="text-align: left;">国庆节当天，特斯拉又“悄悄”给自己打了一针鸡血。</p>
+<p style="text-align: left;">不到25万的售价，让昨天的等等党瞬间变成了今天的「新韭」。</p>
+<p style="text-align: left;">图片: https://uploader.shimo.im/f/9YIfsezp5q7NYmqe.png</p>
+<p style="text-align: left;">当天，美股收盘时，特斯拉上涨超过4%。</p>
+<p style="text-align: left;">但是，一天之后，又有第三方给了特斯拉泼了一盆冷水。</p>
+<p style="text-align: left;">昨天，欧洲汽车安全管理局，给了特斯拉引以为傲的自动驾驶“中级”的评价。</p>
+<p><img height="auto" width="1284" src="http://p4.itc.cn/q_70/images03/20201003/0c6d039877224a18b16d5e75f9fd0bd0.png" /></p>
+<p style="text-align: left;"><span>而奥迪、宝马、奔驰等车型的自动驾驶功能得到了“非常好”的评价。</span></p>
+<p style="text-align: left;">截止今日收盘，特斯拉股价又大跌7%左右。</p>
+<p><img height="auto" width="1142" src="http://p4.itc.cn/q_70/images03/20201003/229a90e7cc5447fe8e691988e6a7948f.png" /></p>
+<p style="text-align: left;">特斯拉放出3季度交付破纪录的好消息，仍然没能止住下跌。</p>
+<p style="text-align: left;">而就在几个月前，仅仅是马斯克透露几句量产还没影的Cybertruck和半挂卡车，特斯拉股价也会疯涨一波。</p>
+<p style="text-align: left;">大家对特斯拉的信心还坚挺吗？</p>
+<p style="text-align: left;">欢迎你在留言区说出你的看法~</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>榜单征集！7大奖项锁定AI TOP企业</strong></p>
+<p><strong>「2020中国人工智能年度评选」</strong>正式启幕！将从公司、人物、产品、社区四大维度共7个奖项寻找优秀的AI企业，欢迎大家扫码报名参与。 </p>
+<p>榜单将于12月揭晓，也期待与百万从业者们，共同见证这些优秀企业的荣誉！ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>

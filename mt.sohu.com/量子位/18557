@@ -1,0 +1,480 @@
+➜中国AI服务器，刷新全球18项性能基准测试纪录
+http://www.sohu.com/a/426620706_610300	51060
+<p>允中 发自 凹非寺 </p>
+<p>量子位 编辑 | 公众号 QbitAI </p>
+<p style="text-align: left;">美国东部时间10月21日，全球倍受瞩目的权威AI基准测试MLPerf公布今年的推理测试榜单， <strong>浪潮AI服务器NF5488A5</strong>一举创造 <strong>18</strong>项性能记录，在数据中心AI推理性能上遥遥领先其他厂商产品。 </p>
+<p style="text-align: left;">MLPerf是当前全球最具影响力的AI计算基准评测组织，由图灵奖得主大卫·帕特森（David Patterson）联合谷歌、斯坦福、哈佛大学等单位共同成立，每年组织全球AI训练和AI推理性能测试并发榜。此次MLPerf的AI推理基准测试有全球23家公司和单位参与，在数据中心及边缘等场景进行AI计算产品的性能比试。今年MLPerf训练榜单已于7月公布。</p>
+<p>浪潮NF5488A5获数据中心AI性能绝对优势 </p>
+<p style="text-align: left;">此次浪潮NF5488A5一举创造18项MLPerf推理性能记录，成为创纪录最多的AI服务器。今年的测试中，数据中心AI性能最受关注，全部参与机构提交了507项性能测试数据。浪潮NF5488A5创下了数据中心22个赛项中的13项性能记录以绝对优势领先，NVIDIA DGX取得了5项数据中心性能记录。而在此前的MLPerf训练榜单中，NF5488A5在最核心的Resnet50训练任务中也创下了性能记录，单机性能高居榜首。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201023/6c81da82564149268929ea3dfc2f31be.png" /></p>
+<p style="text-align: right;"><strong>△</strong><span style="font-size: 16px;"></span><span style="font-size: 16px;">浪潮NF5488A5创造18项MLPerf推理性能新记录</span></p>
+<p>性能大幅提升3倍，全栈AI能力优势凸显 </p>
+<p style="text-align: left;">在此次基准测试中，浪潮AI服务器NF5488A5在开放优化(Open)和固定任务(Closed)的ResNet50基准性能测试中，均表现优异，相比2019年MLPerf推理榜单的服务器最好性能提升高达3倍。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201023/41a253f05e5a46a5ba0bdbd5bccc6e5a.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: right;"><strong>△ </strong><span style="font-size: 16px;">2019、2020年 ResNet50推理性能对比</span></p>
+<p style="text-align: left;">NF5488A5是浪潮自研的新一代AI服务器，是此次MLPerf全球竞赛中唯一可以在4U空间内支持8块安培架构A100芯片实现NVLink高速互联的AI服务器。浪潮NF5488A5在系统拓扑上采用了超低延迟设计，支持PCIe 4.0全链路极致优化，高频通信单元采用一级拓扑最近连接，最大限度提升处理器到AI芯片间的通信性能。同时，通过配置NUMA节点，确保每颗处理器与其直连的GPU之间通信性能最优，最大限度降低通信延迟。此外，NF5488A5通过深度优化系统结构设计，确保设备可在高温环境下稳定运行。</p>
+<p style="text-align: left;">本次基准测试中，浪潮展示出了卓越的AI计算软硬件协同优化能力。在硬件层面，通过对CPU、GPU硬件性能的精细校准和全面优化，使CPU性能、GPU性能、CPU与GPU之间的数据通路均处于对AI推理最优状态；在软件层面，结合GPU硬件拓扑对多GPU的轮询调度优化使单卡至多卡性能达到了近似线性扩展；在深度学习算法层面，结合GPU Tensor Core 单元的计算特征，通过自研通道压缩算法成功实现了模型的极致性能优化，在精度无损的情况下性能提升近2倍。</p>
+<p style="text-align: center;"><img src="//p4.itc.cn/q_70/images03/20201023/41aa6e3a57ad4cc4a0a0e45735f1e98a.png" /></p>
+<p style="text-align: right;"><strong>△ </strong><span style="font-size: 16px;">各服务器MLPerf AI推理性能对比（以浪潮NF5488A5为基准，越高越好）</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">浪潮是全球领先的AI计算领导厂商，其AI服务器在中国的市场份额已连续三年保持在50%以上。</span><span style="font-size: 16px;">浪潮致力于AI计算平台、资源平台和算法平台的研发创新，并通过元脑生态与AI领先企业共同推进AI产业化和产业AI化进程。</span></p>
+<p>— <strong>完</strong>— </p>
+<p><strong>「百度AI开发系列课</strong><strong>」</strong><strong>免费报名</strong></p>
+<p>5分钟上手，10分钟定制高精度AI模型，硬核百度EasyDL，小白也能学！</p>
+<p>10.21日起，3期公开课带你 <strong><span>0门槛轻松学AI开发</span></strong>、实现 <span><strong>AI模型训练与部署</strong></span>！扫码添加量子位小助手（qbitbot12）、加入课程直播群吧~ <strong><span>▽</span></strong></p>
+<p>p.s.完成课堂任务还有机会赢取 <strong><span>李彦宏新书《智能经济》</span></strong>哦~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜猿辅导凭什么超级吸金
+http://www.sohu.com/a/426626369_610300	51060
+<p>允中 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p>技术之力，不仅在重塑教育领域，更在重构教育行业格局。</p>
+<p>猿辅导就是最新、最好的证明。</p>
+<p>或者现在该说：全球教育科技第一独角兽公司 <strong>猿辅导</strong>了。 </p>
+<p>在今天（10月22日），猿辅导官宣了新一轮融资，获投22亿美元，投后估值高达155亿美元，成为全球估值最高的教育科技独角兽公司。</p>
+<p>距离IPO上市，应该也只剩时间问题。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201023/2cfebaac47fa4794966deaf89f87454e.jpeg" /></p>
+<p>超级吸金猿辅导 </p>
+<p>此次22亿美元新融资，为G1和G2轮。</p>
+<p>中G1轮由腾讯公司领投，高瓴资本、博裕资本和IDG资本等跟投。</p>
+<p>G2轮由DST Global领投，中信产业基金、新加坡政府投资公司（GIC）、淡马锡、挚信资本、德弘资本（DCP）、Ocean Link、景林投资、丹合资本等基金参与了本轮融资。</p>
+<p>投后155亿美元的新估值，也创造了全球教育科技的新纪录，是中国教育科技公司首次跻身全球教育科技独角兽第一名。</p>
+<p>值得注意的是，疫情带来的在线教育增长，也让猿辅导吸金能力进一步加强。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201023/0637d2a922df47479f79b313186fad1a.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>就在今年3月，猿辅导刚官宣了一轮10亿美元融资，当时投后估值为78亿美元。 </p>
+<p>加上本次22亿美元新融资，猿辅导创办以来完成了10轮融资，累积融资额近50亿美元。</p>
+<p>如此恐怖的吸金能力，一方面是实力和成绩进展，另一方面更是资本市场对其代表的未来潜力和增长的坚信。</p>
+<p>猿辅导凭什么？ </p>
+<p>如果从 <strong>业务</strong>上看，猿辅导展现的是在线教育的「全栈全场景」。 </p>
+<p>旗下拥有猿辅导网课、斑马AI课、猿题库、小猿搜题和小猿口算等多款智能学习产品。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201023/82bfc3509d2746e785b20b563f673302.jpeg" /></p>
+<p>覆盖了中小学、学龄前，学与教等主要场景。 </p>
+<p>猿辅导称，截止当前，猿辅导和斑马AI课——两大网课平台正价在读学生人次共计370万左右，是目前国内网课用户规模最大的在线教育公司。</p>
+<p>但更关键之力，或许要关注其 <strong>技术</strong>底色，更直白说是AI能力。 </p>
+<p>猿辅导展现的增长和潜力，正是AI对教育变革和锻造的最好证明。</p>
+<p>2012年创办开始，猿辅导就主打用科技手段提升学习体验、激发学习兴趣，帮助中国学生更便捷地获取优质的教育资源。</p>
+<p>主打中小学网课的 <strong>猿辅导</strong>，解题工具平台 <strong>小猿搜题</strong>和 <strong>小猿口算</strong>，以及近来高速增长的 <strong>斑马AI课</strong>…… </p>
+<p>都是科技和AI赋能教育，一以贯之，也帮助猿辅导从之前的K12成功下探，真正实现教育从娃娃抓起。</p>
+<p>最典型的就是 <strong>斑马AI课</strong>。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201023/0849870b658a41bdb183ca0fcd044901.png" /></p>
+<p>从英语切入，利用AI打造智能学习模型，后来成功实现学科拓展，现在已是国内学龄前最大的在线课程学习平台。 </p>
+<p>而猿辅导的这种AI实力，也在全球性比拼中有过硬证明。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201023/1769f5419ca9462daf5e10356257a7ba.jpeg" /></p>
+<p>猿辅导在这两项全球AI竞技中，系统模型展现的水平，超过了人类水平。 </p>
+<p>此外，猿辅导还向业界开源共享超过5项自主研发技术。</p>
+<p>所以现在，猿辅导获得的资本认可，也可以认为是AI和技术的认可。</p>
+<p>在中国，教育领域一度被认为格局已成，巨头森然，但前有新东方、后有好未来之后，以猿辅导为代表的第三代教育科技公司正在登上历史舞台。</p>
+<p>作为人类最古老的行业，教育在AI等新一代技术驱动之下展现的潜力，才刚刚开始。</p>
+<p>— <strong>完</strong>— </p>
+<p style="text-align: left;"><span style="font-size: 16px;">本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>「百度AI开发系列课</strong><strong>」</strong><strong>免费报名</strong></p>
+<p>5分钟上手，10分钟定制高精度AI模型，硬核百度EasyDL，小白也能学！</p>
+<p>10.21日起，3期公开课带你 <strong><span>0门槛轻松学AI开发</span></strong>、实现 <span><strong>AI模型训练与部署</strong></span>！扫码添加量子位小助手（qbitbot12）、加入课程直播群吧~ <strong><span>▽</span></strong></p>
+<p>p.s.完成课堂任务还有机会赢取 <strong><span>李彦宏新书《智能经济》</span></strong>哦~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜清华芯片研究再获顶会MICRO加持：软件定义芯片团队出品，最佳论文提名后又一突破
+http://www.sohu.com/a/426626468_610300	51060
+<p>杨净 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: justify;">最近，第53届国际微架构大会 <span>（MICRO）</span>在线上顺利召开。 </p>
+<p style="text-align: justify;">作为计算机体系结构四大顶级会议，清华大学 <strong>魏少军</strong>、 <strong>刘雷波</strong>团队有两篇入选该会议论文。 </p>
+<p style="text-align: justify;"><img src="http://p5.itc.cn/q_70/images03/20201023/021860866f6e4eb682c6c6fb013907c7.png" /></p>
+<p style="text-align: justify;">这是该团队既去年斩获MICRO 2019最佳论文提名后，在体系结构顶级会议上的又一重要突破。</p>
+<p style="text-align: justify;">在会议上，他们做了两篇学术报告。</p>
+<p style="text-align: justify;">分别为：</p>
+<blockquote>
+<p style="text-align: justify;">Constant-time Alteration Ternary CAM with Scalable In-Memory Architecture</p>
+</blockquote>
+<p style="text-align: justify;">Constant-time Alteration Ternary CAM with Scalable In-Memory Architecture</p>
+<p style="text-align: justify;">一种基于可扩展存内架构并支持常数时间更新的三态内容寻址存储器。</p>
+<blockquote>
+<p style="text-align: justify;">TFE: Energy-efficient Transferred Filter-based Engine to Compress and Accelerate Convolutional Neural Networks</p>
+</blockquote>
+<p style="text-align: justify;">TFE: Energy-efficient Transferred Filter-based Engine to Compress and Accelerate Convolutional Neural Networks</p>
+<p style="text-align: justify;">一种基于转换卷积核的卷积网络压缩与加速架构。</p>
+<p style="text-align: justify;">报告人分别是两篇论文一作清华大学微电子所博士生 <strong>陈迪贝</strong>和 <strong>莫汇宇</strong>，论文通讯作者均是 <strong>刘雷波</strong>教授。 <span style="font-size: 16px;"></span></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>什么样的研究？ 基于可扩展存内架构并支持常数时间更新的三态内容寻址存储器 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201023/b4e46d59a0ca4a73af1f649c6986699a.png" /></p>
+<p style="text-align: right;"><strong>△</strong><span style="font-size: 16px;">清华微电子所博士生陈迪贝同学报告论文的主要工作</span><span style="font-size: 16px;"></span></p>
+<p style="text-align: justify;">三态内容寻址存储器 <span>（TCAM）</span>凭借其不错的匹配性能，广泛应用于现代交换机和路由器的高速包分类。 </p>
+<p style="text-align: justify;">然而，传统TCAM依赖于物理地址的规则优先级编码面向高速匹配设计，无法满足规则快速更新的需求。主流硬件交换机每秒仅支持大约四十至五十条规则更新，高达 <strong>数百毫秒</strong>的更新延迟成为了网络性能瓶颈。 </p>
+<p style="text-align: justify;">于是，基于这个问题，陈迪贝介绍了一种支持常数时间更新的三态内容寻址存储器 <strong>CATCAM</strong>。 </p>
+<p style="text-align: justify;"><img src="http://p2.itc.cn/q_70/images03/20201023/5fc156dfa0b545a4b88d6854e1487019.png" /></p>
+<p><strong>△</strong>CATCAM芯片原型 </p>
+<p style="text-align: justify;">具体来说，就是提出了基于矩阵的优先级编码方法，将规则的优先级关系与地理地址解耦。</p>
+<p style="text-align: justify;">规则的优先级关系被编码在优先级矩阵中，当输入项通过匹配矩阵完成匹配后，其结果将遍历优先级的匹配规则，对应8T SRAM的位线计算逻辑。</p>
+<p style="text-align: justify;">借助双电压列写方法，新规则可插入矩阵中任意空位，实现常数时间的规则更新。</p>
+<p style="text-align: justify;"><img src="http://p6.itc.cn/q_70/images03/20201023/0ffeddf392dd4d9a8fbac8a8fe1e1877.png" /></p>
+<p><strong>△</strong>基于矩阵的优先级编码及其存内计算实现 </p>
+<p style="text-align: justify;">此外，该工作还设计了运用全局优先级编码的层次化扩展架构，采用基于区间的动态调度逻辑，在满足扩展性的同时保证了任意规模下常数时间的规则更新。</p>
+<p style="text-align: justify;"><img src="http://p3.itc.cn/q_70/images03/20201023/2c9dcd25b70c485489c6675a03573cb6.png" /></p>
+<p><strong>△</strong>CATCAM硬件架构 </p>
+<p style="text-align: justify;">最终，通过重新设计三态内容寻址存储器的优先级机制，CATCAM消除了规则更新导致的大量现有规则迁移，在提升更新吞吐量和响应速度的同时保证了扩展性。</p>
+<p style="text-align: justify;">与现有最先进的解决方案相比，实现了至少 <strong>三个数量级</strong>的加速比。 </p>
+<p style="text-align: justify;">主要合作者还有李兆石、熊天柱、刘志伟、尹首一等。</p>
+<p>基于转化卷积核的神经网络压缩和加速架构 </p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201023/5f71c9f91ef44b98b5164b7222e73acc.png" /></p>
+<p style="text-align: right;"><strong>△</strong><span style="font-size: 16px;">清华微电子所博士生莫汇宇同学报告论文的主要工作</span></p>
+<p style="text-align: justify;">神经网络模型的参数决定了模型大小，大网络会消耗更多的参数和计算来提高网络的拟合能力。</p>
+<p style="text-align: justify;">无论使用GPU、CPU，都需要考虑现存或内存对整个模型参数的保存能力，对面积、功耗极为敏感的边缘端设备，无法接受过多的参数和计算。</p>
+<p style="text-align: justify;">此前，就有研究人员提出 <strong>转换卷积核</strong>的方法，利用结构化压缩，来使硬件运行更高效。但该方法由于存在着大量的重复计算，限制了卷积运算速度的进一步提升。 </p>
+<p style="text-align: justify;">基于此，莫汇宇同学介绍了一种基于结构化压缩的神经网络加速方法，并提出了一种高效的神经网络加速架构。</p>
+<p style="text-align: justify;">在同样工艺和频率下，该架构的面积为Eyeriss结构的 <strong>57.96%</strong>，功耗为其 <strong>24.12%</strong>。 </p>
+<p style="text-align: justify;"><img src="http://p5.itc.cn/q_70/images03/20201023/431c2af4431c4e9a8752a26fcfeba560.png" /></p>
+<p><strong>△</strong>整体硬件架构 </p>
+<p style="text-align: justify;">这一方法减少了卷积核转化过程中大量冗余计算。在模型压缩率不变的情况下，有效提高了网络模型的运算速度和能效。</p>
+<p style="text-align: justify;">该工作设计了堆叠的寄存器堆，当相同权值出现在转化卷积模型卷积核的同一行时，使用寄存器堆存储每个权值与输入激活值的乘积，以及不同权值和输入激活值的局部和结果。</p>
+<p style="text-align: justify;">当处理不同的转化卷积模型时，通过与之对应的数据和控制流，将共享乘积和局部和传输到不同的计算单元，以便重复利用生成不同输出通道的结果。</p>
+<p style="text-align: justify;"><img src="http://p6.itc.cn/q_70/images03/20201023/20a8fce9620f42c79bd05bd33df8db84.png" /></p>
+<p><strong>△</strong>堆叠寄存器组重复利用存转化卷积核模型运算的中间局部和 </p>
+<p style="text-align: justify;">此外，研究人员还设计了一种有效的存储调度方式。</p>
+<p style="text-align: justify;">在整个卷积处理过程中，输入数值按行输入，每行都会同时和卷积核的所有行卷积运算，其卷积结果将会分别存储在单独的存储模块中。</p>
+<p style="text-align: justify;">这样，存储单元里的卷积结果将会被不同输出结果共同使用，且该结果将会随着卷积过程进行循环更新。</p>
+<p style="text-align: justify;">即能重复利用存储模块，也能提高卷积结果的复用率。</p>
+<p style="text-align: justify;"><img src="http://p7.itc.cn/q_70/images03/20201023/b0f709ee53f14a31832bb7c062f7543c.png" /></p>
+<p><strong>△</strong>整行卷积结果的复用 </p>
+<p style="text-align: justify;">最终，实验结果表明，与最优的神经网络架构在经典VGGNet网络上相比，该架构实现了最大4×的模型压缩，2.72×的加速及10.74×的能效提升。</p>
+<p style="text-align: justify;">主要合作者还有朱文平、栗强、尹首一等。</p>
+<p>清华魏少军、刘雷波团队 </p>
+<p style="text-align: justify;">关注芯片、体系结构等领域的伙伴对这一团队并不陌生。</p>
+<p style="text-align: justify;">清华大学魏少军教授、刘雷波教授团队在软件定义芯片领域取得了多项重要技术突破。</p>
+<p style="text-align: justify;">相关技术在多项国家重大工程中得到批量应用，曾获国家技术发明二等奖、教育部技术发明一等奖、电子学会技术发明一等奖、中国发明专利金奖、世界互联网大会15项世界互联网领先科技成果等。</p>
+<p style="text-align: justify;"><img src="http://p3.itc.cn/q_70/images03/20201023/ca3fde821c0945b98c884b9f43c08013.png" /></p>
+<p><strong>△</strong>魏少军教授 </p>
+<p style="text-align: justify;">在JSSC/TIFS/TPDS等领域顶级期刊上发表论文200多篇，在ISCA/HOT CHIPS/DAC/VLSI等领域顶级会议发表论文20余篇。</p>
+<p style="text-align: justify;">去年8月，他们的研究成果登上高性能芯片顶级会议Hot Chips，这是31年来中国高校 <strong>首篇一作</strong>论文。官方介绍称，他们这一技术有望解决中国95%以上服务器CPU面临的芯片安全难题。 </p>
+<p style="text-align: justify;">一个月之后，在顶会MICRO上，他们获得了MICRO 2019最佳论文提名，这是MICRO 52年历史上第二次有亚洲高校及机构获得该奖项。</p>
+<p style="text-align: justify;">就在上个月，他们以「后量子密码硬件加速」技术登上第22届密码硬件与嵌入式系统会议（CHES）。这是国际密码芯片和物理安全方向最重要的顶会之一。</p>
+<p>— <strong>完</strong>— </p>
+<p><strong>「百度AI开发系列课</strong><strong>」</strong><strong>免费报名</strong></p>
+<p>5分钟上手，10分钟定制高精度AI模型，硬核百度EasyDL，小白也能学！</p>
+<p>10.21日起，3期公开课带你 <strong><span>0门槛轻松学AI开发</span></strong>、实现 <span><strong>AI模型训练与部署</strong></span>！扫码添加量子位小助手（qbitbot12）、加入课程直播群吧~ <strong><span>▽</span></strong></p>
+<p>p.s.完成课堂任务还有机会赢取 <strong><span>李彦宏新书《智能经济》</span></strong>哦~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜自动驾驶公交车开上苏州街头，这次不是“试运营”了，市民乘车依然免费
+http://www.sohu.com/a/426626554_610300	51060
+<p>郭一璞 发自 苏州高铁新城 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">自动驾驶公交车，已经出现在了苏州街头。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201023/3c9eec85854f4ccb8c92c16af71b0eb1.png" /></p>
+<p style="text-align: left;">9座小巴车，中国移动5G网络加持，配备了安全员，这些车辆来自去年刚刚创立的自动驾驶公司轻舟智航。</p>
+<p style="text-align: left;">目前，轻舟智航的RoboBus在苏州有Q1、Q2两条线路，均在苏州北站周边的高铁新城一带9.8平方公里的范围内运行。</p>
+<p style="text-align: left;">虽然已经开始了常态化运营，不过目前还是完全免费的。</p>
+<p>无人公交 </p>
+<p style="text-align: left;">轻舟智航RoboBus的外观和普通小巴车没有太大的区别，创始人于骞说，目前轻舟智航一共5辆车，均是采购后改装的。</p>
+<p style="text-align: left;"><img src="http://p2.itc.cn/q_70/images03/20201023/1dd9aba743d14c07a6d51e82defb134a.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">如果仔细观察，也不难发现激光雷达的供应商。</p>
+<p style="text-align: left;"><img src="http://p8.itc.cn/q_70/images03/20201023/643789c979be40608c94e58be9afa9fe.png" /></p>
+<p style="text-align: left;">和一些封闭园区自动驾驶小巴不同，轻舟智航RoboBus车辆内部的安全员区域保留了方向盘和驾驶位。</p>
+<p style="text-align: left;"><img src="http://p0.itc.cn/q_70/images03/20201023/760499675b314232b42ca93a87b992eb.png" /></p>
+<p style="text-align: left;">另外车上一共有9个座位，和普通的公交车一样，配备了充足的扶手。</p>
+<p style="text-align: left;"><img src="http://p7.itc.cn/q_70/images03/20201023/a055efb26e834d56b6b179888ae863c3.png" /></p>
+<p style="text-align: left;">并且，车门右侧也有刷卡/扫码区域。目前轻舟智航的RoboBus是免费运营的，现场工作人员介绍，目前用户上车仅需扫描二维码以方便公司做信息统计使用。</p>
+<p style="text-align: left;"><img src="http://p6.itc.cn/q_70/images03/20201023/e58c7d6df4ad4bfb95dec10a01f64027.png" /></p>
+<p style="text-align: left;">安全员区域和乘客区域之间配备了闸门，以保证安全员工作不被打扰。</p>
+<p style="text-align: left;"><img src="http://p2.itc.cn/q_70/images03/20201023/08386580e6d74a6c9af96dc7e4877057.png" /></p>
+<p style="text-align: left;">而闸门的上方，也就是乘客区的前方，悬挂了一块显示屏。</p>
+<p style="text-align: left;">车内向用户展示的显示屏分为了两部分，界面主体是行驶状态，展示道路周围的车辆、道路限速、当前时速、启动/停车状态；右侧则是和普通公共交通类似的报站界面。</p>
+<p style="text-align: left;"><img src="http://p2.itc.cn/q_70/images03/20201023/4ca3279c9b4a473aabdb6307bbaefe65.png" /></p>
+<p style="text-align: left;">对于参与了目前早鸟计划的普通乘客，只要在设定好的站点刷二维码就可以上车了。</p>
+<p style="text-align: left;"><img src="http://p8.itc.cn/q_70/images03/20201023/d2f2d13749d248b3820aaf9b3b0b2f25.png" /></p>
+<p style="text-align: left;">行驶过程中，和RoboTaxi一样，安全员坐在驾驶区域，双手放在膝盖上，随时准备接管方向盘。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201023/789e716f345c4115ad3a67e46bcbfd16.gif" /></p>
+<p style="text-align: left;">整个乘坐体验和普通公交车类似，也有语音站点提示功能。跑起来的时速在20-50km/h左右，和市区内的公交车速度接近。</p>
+<p style="text-align: left;">不过，由于担心公交车自动开关门可能会夹到人，目前车门控制还是由安全员来进行的。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201023/036fde94489a4285a0fcd0d7d216e377.gif" /></p>
+<p style="text-align: left;">车内的乘客也可以抬头看到车辆道路的运行状况，和许多自动驾驶车辆类似的是，轻舟智航的RoboBus策略相对保守，会最大限度保证行驶安全，遇到特殊的交通状况会及时刹车。</p>
+<p>Waymo背景团队 </p>
+<p style="text-align: left;">近一两年来，自动驾驶落地试运营服务用户，并不是意外的消息。</p>
+<p style="text-align: left;">百度的Apollo已经开始在长沙、沧州、北京三地接送乘客，AutoX的RoboTaxi也接入了高德地图开始服务用户，美团的自动驾驶配送车也已经在北京首钢园上线。</p>
+<p style="text-align: left;">但轻舟智航仍然是其中效率非常可观的一家，这家公司2019年3月才在美国硅谷成立，时至今日仅仅19个月，便已经实现了载客落地。</p>
+<p style="text-align: left;"><img src="http://p0.itc.cn/q_70/images03/20201023/f135dd4b14df4ab1a2436f7f8bec08ca.png" /></p>
+<p style="text-align: left;">不过，我们前面看到的产品确有与众不同之处，轻舟智航的RoboBus和目前市面上的一些无人小巴并不属于同一类产品，直接在开放道路上运营而非封闭园区内，速度更快。</p>
+<p style="text-align: left;"><img src="http://p9.itc.cn/q_70/images03/20201023/7fe676229b8a4b10876c81b26cd26bf2.png" /></p>
+<p style="text-align: left;">或者说，轻舟智航的RoboBus解决的是城市出行「最后一公里」的问题，并非园区通勤车，而是短线公交，和共享单车的功能类似，而且解决了共享单车无法带小孩、带行李，雨天出行不便的问题。</p>
+<p style="text-align: left;">轻舟智航团队来自于硅谷，创始团队技术成员均曾就职于Waymo，</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201023/1aeed999b4764dd8ab32de6f7b36d223.png" /></p>
+<p style="text-align: left;">商务VP郝景山曾是商汤、Momenta的早期团队成员。郝景山介绍，目前轻舟智航已经开始尝试面向公交公司商业化落地。 </p>
+<p>在苏州，自动驾驶遍地跑 </p>
+<p style="text-align: left;">不过，在苏州高铁新城，除了轻舟智航，你还可以看到海量的自动驾驶车辆。</p>
+<p style="text-align: left;">比如Momenta的RoboTaxi：</p>
+<p style="text-align: left;"><img src="http://p4.itc.cn/q_70/images03/20201023/389eee219dfb4f218e6e948b33816ab9.png" /></p>
+<p style="text-align: left;">仙途智能的自动清扫车：</p>
+<p style="text-align: left;"><img src="http://p8.itc.cn/q_70/images03/20201023/4629731947954998bb05009f6491a283.png" /></p>
+<p style="text-align: left;">智加科技的自动驾驶卡车：</p>
+<p style="text-align: left;"><img src="http://p4.itc.cn/q_70/images03/20201023/e297db34028b420a8346693fcac8cc2f.png" /></p>
+<p style="text-align: left;">J6F的智能驾驶环卫车：</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201023/d5c798de6a144a2b91407e231965791f.png" /></p>
+<p style="text-align: left;">为了筹备第二天中国移动的大会，这些车辆们都一字排开，仿佛在办自动驾驶车展。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201023/c44af930636a499b80dcd8a72bc65892.jpeg" /></p>
+<p style="text-align: left;">苏州高铁新城已经有了64家自动驾驶产业链相关公司，也汇聚了不少自动驾驶相关技术人才。</p>
+<p style="text-align: left;"><img src="http://p2.itc.cn/q_70/images03/20201023/e24c7590048a4b3caa706466cd216db4.png" /></p>
+<p style="text-align: left;">甚至，在这里的城市道路上，都有自动驾驶专用道。</p>
+<p style="text-align: left;">一位当地自动驾驶公司员工说，自己的公司两年前搬来时还感觉空空荡荡，但如今，这片新城逐渐繁华了起来，产业链布局也已经初见成效。</p>
+<p style="text-align: left;">而一位自动驾驶车队管理员说，自己也有算法同事住在上海，离高铁站近，方便了人才流动，“不过如果不懂算法的话可能就不太好找工作，毕竟这些自动驾驶公司行政后勤岗位一个萝卜一个坑。”</p>
+<p>— <strong>完</strong>— </p>
+<p style="text-align: left;"><span style="font-size: 16px;">本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>「百度AI开发系列课</strong><strong>」</strong><strong>免费报名</strong></p>
+<p>5分钟上手，10分钟定制高精度AI模型，硬核百度EasyDL，小白也能学！</p>
+<p>10.21日起，3期公开课带你 <strong><span>0门槛轻松学AI开发</span></strong>、实现 <span><strong>AI模型训练与部署</strong></span>！扫码添加量子位小助手（qbitbot12）、加入课程直播群吧~ <strong><span>▽</span></strong></p>
+<p>p.s.完成课堂任务还有机会赢取 <strong><span>李彦宏新书《智能经济》</span></strong>哦~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜AI端计算产业应用：如何快速训练高精度模型并在设备端加速计算 | 公开课报名
+http://www.sohu.com/a/426626706_610300	51060
+<p>位来 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p><span style="font-size: 16px;">近年来，端侧AI在技术和应用方面都取得了快速发展，</span><strong><span style="font-size: 16px;">端计算模型</span></strong><span style="font-size: 16px;">已应用到各行业的AI实践中。</span><span style="font-size: 16px;">如部署在野外</span><span style="font-size: 16px;">气象观测点用于环境监测，</span><span style="font-size: 16px;">响应垃圾分类</span><span style="font-size: 16px;">政</span><span style="font-size: 16px;">策</span><span style="font-size: 16px;">用</span><span style="font-size: 16px;">来打造智</span><span style="font-size: 16px;">能</span><span style="font-size: 16px;">垃</span><span style="font-size: 16px;">圾</span><span style="font-size: 16px;">桶等等</span><span style="font-size: 16px;">。</span></p>
+<p><span style="font-size: 16px;">但端计算也面临一些挑战，比如计算需求量大、对实时性要求高、受限与内存和存储等。</span></p>
+<p><span style="font-size: 16px;">那么，在实际应用中，我们应</span><span style="font-size: 16px;"><strong>如何训练端计算模型？如何提升模型计算速度？</strong></span></p>
+<p><span style="font-size: 16px;"></span><span style="font-size: 16px;">欢迎对端</span><span style="font-size: 16px;">计算、AI开发感兴趣的小伙伴报名围观~</span></p>
+<p>分享内容 </p>
+<p style="text-align: left;"><span><strong>主题：</strong></span></p>
+<p><strong><span style="font-size: 16px;">AI端计算应用</span></strong><span style="font-size: 16px;">—如何快速训练高精度模型，并在设备端加速计算</span></p>
+<p><strong><span>分享提纲：</span></strong></p>
+<ul>
+<li>端 计算模型应用 背景介绍</li>
+<li>瑕疵检测、垃圾分类场景 案例展示</li>
+<li></li>
+<li>实战演示 ：如何借助EasyDL&amp;EasyEdge部署端计算模型，实现办公室垃圾智能检测场景</li>
+</ul>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201023/26a909408ca54af9b6c24aa04c8fce14.jpeg" /></p>
+<p style="text-align: left;"><span><strong><span style="font-size: 16px;">阿达，百度AI平台研发部高级研发工程师。</span></strong></span><span style="font-size: 16px;">加州大学伯克利分校硕士，主要参与百度EasyEdge端计算模型生成的研发工作，包括深度学习模型的转换、加速和在异构计算设备的高性能推理部署方案研发</span><span style="font-size: 16px;">等。</span></p>
+<p>直播&amp;报名 </p>
+<p style="text-align: left;"><strong><span>直播时间：</span></strong></p>
+<p style="text-align: left;"><span style="font-size: 16px;">2020年10月28日，19:00-20:30</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">其中Q&amp;A时间为30分钟</span></p>
+<p style="text-align: left;"><strong><span>扫码报名：</span></strong></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;"><span style="font-size: 16px;">欢迎大家与阿达老师、更多开发者一起探讨和交流，也欢迎分享海报给需要的朋友：</span></p>
+<p style="text-align: center;"><span style="font-size: 16px;">△ </span><span style="font-size: 16px;">扫码加好友，加入课程直播群</span><span></span></p>
+<p>关于百度EasyDL </p>
+<p><span style="font-size: 16px;">EasyDL是基于深度学习平台飞桨、结合业界先进的工程服务技术打造的、简单易用的模型训练和服务平台，具有3大特点：</span></p>
+<ul>
+<li><p><span style="font-size: 16px;">极简的交互和使用流程，最快15分钟即可完成模型训练；</span></p></li>
+<li><p><span style="font-size: 16px;">高精度的训练效果，其中图像分类模型的线上平均准确率在99%以上；</span></p></li>
+<li><p><span style="font-size: 16px;">部署方式丰富，全面支持云、端、边部署。</span></p></li>
+</ul>
+<p><span style="font-size: 16px;">极简的交互和使用流程，最快15分钟即可完成模型训练；</span></p>
+<p><span style="font-size: 16px;">高精度的训练效果，其中图像分类模型的线上平均准确率在99%以上；</span></p>
+<p><span style="font-size: 16px;">部署方式丰富，全面支持云、端、边部署。</span></p>
+<p><span style="font-size: 16px;">简言之，EasyDL极大降低了深度学习的应用门槛，把AI开发这件事情，搞得像使用「家用电器」一样简单，而且训练产出的AI模型质量，如同高级工程师产出的一样专业。</span></p>
+<p><strong><span>One More Thing：</span></strong></p>
+<p><span style="font-size: 16px;">为了进一步降低企业应用AI的门槛与成本，EasyDL还重磅推出</span><strong><span style="font-size: 16px;">「万有引力」计划</span></strong><span style="font-size: 16px;">，为有AI应用需求的企业提供专项基金，详情请点击</span><strong><span style="font-size: 16px;">「阅读原文」</span></strong><span style="font-size: 16px;">。</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜「华为麒麟9000若管够，苹果三星算什么！」
+http://www.sohu.com/a/426626727_610300	51060
+<p>金磊 鱼羊 萧箫 木易 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">雄壮音乐起，带点悲壮，华为手机掌舵者余承东出场。</p>
+<p style="text-align: left;">这一次华为新一代旗舰Mate 40系列手机发布，大家都抱着来看「绝版麒麟」的心态。</p>
+<p style="text-align: left;">然而，当余承东真正来到手机发布环节，阴霾短暂地一扫而空，余承东开心到合不拢嘴：</p>
+<blockquote>
+<p style="text-align: left;">这就是华为史上最强的Mate40系列手机！</p>
+</blockquote>
+<p style="text-align: left;">这就是华为史上最强的Mate40系列手机！</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201023/0ba65417d75a4da2acd3c0bec5515765.gif" /></p>
+<p style="text-align: left;">而且，如果你是出于情怀而支持，余承东用一系列的性能证明——大可不必。</p>
+<p style="text-align: left;"><img src="http://p2.itc.cn/q_70/images03/20201023/6b0e9bded8c44e3aa8b1c5d85f54c525.png" /></p>
+<p style="text-align: left;">作为华为「史上最强Mate」，亮点可提炼如下：</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<ul>
+<li>大 ：最大6.76英寸柔性屏幕，延续了88°超曲环幕屏。</li>
+<li>快 ：搭载5nm麒麟9000/9000E，CPU、NPU、GPU，全面吊打其他同类产品！</li>
+<li>好 ：搭载EMUI 11，AI能力更强，更懂你。</li>
+<li>省 ：价格方面，最低只要899欧元（约合7107元人民币，通常国内售价比欧版便宜许多）。</li>
+</ul>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201023/e9455acd397a408c9a433e57fd103d5a.gif" /></p>
+<p style="text-align: left;">当然，此次还有50W的超级车载快充、66W的超级快充移动电源，带补光灯的手机壳等一系列外设，以及智能手表和智能眼镜等一系列产品。 </p>
+<p style="text-align: left;">老样子，我们一文看尽。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201023/60154ee2555146159c35ff8bb56e96e0.gif" /></p>
+<p>外观：星环式4摄，曲面屏，90Hz </p>
+<p style="text-align: left;">人靠衣裳马靠鞍，手机先看它外观。</p>
+<p style="text-align: left;">所以还是老规矩，「长相」这样：</p>
+<p style="text-align: left;">屏幕方面，华为Mate40采用了一块 6.5 英寸的柔性 OLED 屏幕。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201023/41b273b4b9764db794f33978fd9fb200.png" /></p>
+<p style="text-align: left;">而Mate40 Pro、Mate40 Pro Plus均采用了6.76英寸柔性屏幕，延续了88°超曲环幕屏。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><img src="http://p9.itc.cn/q_70/images03/20201023/56d5afe71abd4611993b3034bb14ae42.png" /></p>
+<p style="text-align: left;">当然不用担心屏幕太大而误碰，已经内置软件不会发生这种bug。</p>
+<p style="text-align: left;">屏幕 <strong>刷新率</strong>方面，没有达到预期的120Hz，全部均为 <strong>90Hz刷新率</strong>。 </p>
+<p style="text-align: left;">此处，余承东解释说：</p>
+<p style="text-align: left;">120Hz刷新率很容易，但徒增功耗，90Hz体验更好。为了最佳体验，90Hz就够了。</p>
+<p style="text-align: left;">前置摄像头的位置也发生了变化。</p>
+<p style="text-align: left;">这次，华为Mate40系列一改以往的「刘海」，而是以左上角的 <strong>「胶囊」</strong>来呈现。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201023/68fbb962de4f46e385b3e18def95a81c.png" /></p>
+<p style="text-align: left;"><strong>后置摄像头</strong>的外观也有所变化。 </p>
+<p style="text-align: left;">Mate 40、Mate 40 Pro、Mate 40 Pro+，延续了「奥利奥」后置摄像头造型。</p>
+<p style="text-align: left;"><img src="http://p9.itc.cn/q_70/images03/20201023/7697087e30474278862a832a86e0eb9c.gif" /></p>
+<p style="text-align: left;">对此，网友吐槽：似乎跟小米电视遥控器，傻傻分不清了。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201023/f9315c5546a743dabd7802d3db4ce22b.png" /></p>
+<p style="text-align: left;">Mate 40 RS 保时捷设计版，则独享 <strong>「宫灯八角窗」</strong>。 </p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201023/63cc9198ae0743abb45e2180571d0a8b.gif" /></p>
+<p style="text-align: left;"><strong>颜色</strong>方面，Mate40 和 Mate40 Pro 将提供五种颜色。 </p>
+<p style="text-align: left;">有传统的黑色、白色；新增的绿色和黄色。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201023/6c6824b419fc4f4e993d2df1da2181c4.png" /></p>
+<p style="text-align: left;">还有秘银色，在不同光线、角度会呈现不同颜色。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201023/5a43747e79ef4647b71da80e4cfc475e.gif" /></p>
+<p style="text-align: left;">Mate40 Pro Plus的材质是纳米微晶陶瓷，颜色为黑色和白色。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201023/969d8f6ba3ed41808e580550a79ca4f4.png" /></p>
+<p style="text-align: left;">Mate40 RS保时捷设计款，将具有陶瓷后面板。</p>
+<p style="text-align: left;">同时，Mate30系列上被砍掉的 <strong>音量键</strong>，这次也重新回归，当然虚拟按键也保留了下来。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201023/952f2ad16c8b4781946babbab661dc2b.gif" /></p>
+<p style="text-align: left;">而且还是左右手都可控的那种。</p>
+<p style="text-align: left;"><strong>防水防尘</strong>方面，华为Mate40 Pro和Mate40 Pro Plus，都支持IP68级防水防尘；Mate40支持IP53级防水。 </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201023/4995d693c45e4031b743651aaa056f62.gif" /></p>
+<p>「最强」相机：17倍光学变焦、超强镜头畸变矫正 </p>
+<p style="text-align: left;">说完外观，再具体来看硬件参数。</p>
+<p style="text-align: left;">摄像头，依旧是华相机最大的亮点。</p>
+<p style="text-align: left;">中杯Mate 40的后置摄像头采用：5000万像素主摄 + 1600万像素超广角镜头 + 800万像素3倍长焦镜头。支持5倍光学变焦。</p>
+<p style="text-align: left;">大杯Mate 40 Pro则采用：5000万像素主摄 + 2000万像素超广角电影镜头 + 1200万像素5倍潜望式长焦镜头。支持7倍光学变焦。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201023/d5559cce0c114f5abc4f73e9725db9cf.png" /></p>
+<p style="text-align: left;">而超大杯Mate 40 Pro+，更是在一颗800万像素10倍潜望式长焦镜头的支持下，实现了 <strong>17倍</strong>光学变焦。 </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201023/364a366be4ea47a091b98ae3aa49ee40.png" /></p>
+<p style="text-align: left;">Pro和Pro+都支持前后摄双超广角、双电影摄影镜头。</p>
+<p style="text-align: left;">并且如预告片所示，这次在相机方面，Mate 40Pro+通过采用业界首发的自由曲面镜头，能有效优化广角镜头造成的畸变。</p>
+<p style="text-align: left;">让你所拍即所见，再也不怕站在镜头边缘。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201023/185ee2c4e6d64aec838aa8590837274d.png" /></p>
+<p style="text-align: left;">而前后摄双电影摄影镜头，则让240fps不限时超级慢动作拍摄成为可能，效果是酱婶的。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201023/d619eb468aa44da9a6ca17c7ffa4473e.gif" /></p>
+<p style="text-align: left;">另外，超级防抖和AI跟拍功能，则让Mate 40系列有了一点Vlog神器的味道。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201023/898472264be14652a72a527d06778bb4.gif" /></p>
+<p>「绝版」麒麟5G芯：5nm，153亿晶体管，性能全方位吊打骁龙865+ </p>
+<p style="text-align: left;">这次华为Mate40 Pro、超大杯及保时捷设计版，搭载的是 <strong>麒麟9000芯片</strong>，是 <strong>全球首个采用5nm制程的5G SoC芯片</strong>。 </p>
+<p style="text-align: left;">麒麟9000共包含 <strong>153亿个晶体管</strong>，搭载第三代5G移动通信芯片，在现网测试中，上行比其他的5G手机 <strong>快5倍</strong>，下行快2倍。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201023/27f5e27f90b64efeb852296387df6b02.png" /></p>
+<p style="text-align: left;">虽然麒麟9000并未搭载ARM的Cortex-A78架构，只有A77，但工艺制程从7nm提升到了5nm。</p>
+<p style="text-align: left;">简单来看一下麒麟9000的设计： <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201023/a9e2d57b1e7947899c5ef1805401454f.png" /></p>
+<p style="text-align: left;">与苹果A14一样，麒麟9000采用台积电 <strong>5nm</strong>工艺制程，使得性能有所提升。 </p>
+<p style="text-align: left;">CPU性能提升 <strong>25%</strong>，麒麟9000并未搭载Cortex-A78，而是采用了1+3+4 <span>（1个3.13GHz的A77大核+3个2.54GHz的A77大核+4个2.04GHz的A55小核）</span>的结构。 </p>
+<p style="text-align: left;">GPU性能提升 <strong>50%</strong>，采用最新的Mali-G78，24个计算单元，图形处理性能进一步提升，可以高帧率运行各种大型游戏。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201023/07b922b6734e4f6f9e2e77218cc96c48.png" /></p>
+<p style="text-align: left;">此外，还集成华为自研NPU <span>(性能提升150%，比其他同类产品快2.4倍)</span>。 </p>
+<p style="text-align: left;">除了麒麟9000之外，这次还有一款芯片，就是被称为“低配版”麒麟9000芯片的 <strong>麒麟9000E</strong>，由华为Mate40搭载。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201023/6e2216a90fd242d8ae945a3f9d03d95f.png" /></p>
+<p style="text-align: left;">这款芯片同样采用台积电5nm制程，频率稍低，NPU中比麒麟9000少1块芯片，性能不及麒麟9000，但较之麒麟990依旧更加优秀。</p>
+<p style="text-align: left;">效果怎么样？</p>
+<p style="text-align: left;">得益于最新的GPU，华为Mate40的图形处理性能更好了，现在的效果和之前相比，画质简直不能再漂亮：</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201023/e0f8074e3baa4f6899d700ff883a844d.gif" /></p>
+<p style="text-align: left;">而X轴线性马达，则让Mate40在玩手机游戏 <span>（如赛车）</span>时，不仅性能无压力，特效还直接拉满： <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201023/6e00dfcd5ca240eb8acb0130fbde4dec.gif" /></p>
+<p style="text-align: left;">最重要的还有性能品控。</p>
+<p style="text-align: left;">余承东表示，四年前华为承诺华为手机可使用18个月不卡顿，而现在可以达到36个月不卡顿。</p>
+<p style="text-align: left;">他给出的数据是，华为Mate 40 Pro使用36个月后流畅性只比最开始下降 <strong>2.5%</strong>。 </p>
+<p>余承东：“华为手机平时用不到充电宝” </p>
+<p style="text-align: left;">当然了，Mate 40系列支持快充，而且是 <strong>66</strong>W快充 <span>（50W无线充电）</span>的那一种，比之前的Mate 30 Pro提高了26W <span>（无线提高23W）</span>。 </p>
+<p style="text-align: left;">厉害的是，华为新出的移动电源，甚至可以直接 <strong>满血</strong>给华为Mate40充电。 </p>
+<p style="text-align: left;">不过，“其实华为手机不太需要移动电源”。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201023/2091a99e087642fdae89e91bb68edd6d.png" /></p>
+<p style="text-align: left;">此外，华为Mate40配备 <strong>4200mAh</strong>电池，而Mate40 Pro+则配备 <strong>4400mAh</strong>电池。 </p>
+<p style="text-align: left;">更有意思的是，华为的电池甚至具有 <strong>抗严寒</strong>特性，严寒环境下快充不受影响。 </p>
+<p style="text-align: left;">相比于三星S20和苹果11 Pro Max在严寒条件下“直接宕机”，华为Mate 40 Pro不仅坚挺，电量还以肉眼可见的速度上升：</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201023/bd5cc4716d844623ac82eb0b0d15c67a.gif" /></p>
+<p style="text-align: left;">此外，手机还能以 <strong>反向充电</strong>的方式给环闪灯供电。 </p>
+<p style="text-align: left;">那么，和其他产品相比怎么样呢？</p>
+<p style="text-align: left;">相较之前，华为P40内置3800mAh电池，快充22.5W；</p>
+<p style="text-align: left;">而P40 Pro则与Mate 30一样，搭载4200mAh电池，最大快充40W、无线27W；</p>
+<p style="text-align: left;">Mate40 Pro电池容量为4500mAh，快充与Mate 40一样。</p>
+<p style="text-align: left;">对比刚出的iPhone12系列，根据中国工业和信息化部数据显示，手机电池全部缩水，最低仅有 <strong>2227mAh</strong>。 </p>
+<p style="text-align: left;">其中，iPhone 12 mini的电池容量为2227mAh；iPhone 12电池容量为2851mAh；iPhone 12 Pro电池容量为2815mAh；iPhone 12 Pro Max电池容量为3687mAh。</p>
+<p style="text-align: left;">至于iPhone 12的快充，就只有20W……</p>
+<p style="text-align: left;"><span>（网友补充：库克说充得快，不排除是因为电池容量小？）</span></p>
+<p style="text-align: left;">看来在电池这一方面，苹果12还是不能打。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201023/a7efbdd188b4419dbf50531c421e6850.gif" /></p>
+<p>AI黑科技：手势「隔空操作」、「一眼懂你」 </p>
+<p style="text-align: left;">华为手机的黑科技，向来的口碑都是 <strong>「妙哇」</strong>。 </p>
+<p style="text-align: left;">这次也不例外。</p>
+<p style="text-align: left;">Mate40系列沿袭了上一代 <strong>「隔空操控」</strong>的功能，不仅如此，还赋予了更多的玩法。 </p>
+<p style="text-align: left;">除了延续上一代的上和下手势，还有左和右以及按压手势：</p>
+<p style="text-align: left;">现在支持隔空翻页阅读、浏览照片，隔空按压即可播放、暂停音乐以及接听电话。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201023/103b009edfc940aba1b16fad23b22e9a.gif" /></p>
+<p style="text-align: left;">Mate40系列还将AOD升级为 <strong>灵动熄屏显示</strong>。 </p>
+<p style="text-align: left;">熄屏状态下的手机能准确捕捉你的眼神，开启显示个性动图；只需一个眼神，手机还能瞬间点亮！</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201023/7eff7f2f59c349a992ec8fa59c6a0eaf.gif" /></p>
+<p style="text-align: left;">支持智慧多窗模式，多屏协同。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201023/be3e3c1173ab4b6ea838459a6c25b93f.gif" /></p>
+<p>还有其他一连串产品 </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201023/4d85f51ed003491f9815fd071ca3326b.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201023/90f60d5c1f6841bab0595e8ddbc4091c.jpeg" /></p>
+<p style="text-align: left;">还有新一代智能眼镜，嗯，还是眼镜款耳机那一种。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201023/0c6163e0c9b44cbeb1d8a94041b7578c.jpeg" /></p>
+<p style="text-align: left;">同时，也有新款智能音箱SoundX、手写笔M-Pen 2等产品发布。 <span></span></p>
+<p style="text-align: left;">按照惯例，再次奉上价格表：</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201023/f85d2c1e851449e08316fb2e69459c00.png" /></p>
+<p style="text-align: left;">不过价格方面，华为10月30日还会在上海专门召开一次发布会，按照惯性，国内售价一般都比国外要便宜。</p>
+<p style="text-align: left;">值得一提的是，这次的产品发布非常丰富，但最后到了结尾。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201023/aea3def892924ce3b1b9e11a6253e098.gif" /></p>
+<p style="text-align: left;">余承东声调开始不同： </p>
+<p style="text-align: left;">今年是特别的一年、困难的一年，我们遭受美国第三轮打压和禁令，极不公平。</p>
+<p style="text-align: left;">「但是不管处境多么艰难，华为始终会坚持创新，把最好的技术和创新带给大家。」</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201023/c2293c2434d04e1bb1c21deab47dfcc2.gif" /></p>
+<p style="text-align: left;">一张彩虹的PPT硕大，然后视频缓缓，乌云蔽日，一道光亮始终不屈。 </p>
+<p style="text-align: left;">弹幕也开始悲壮：</p>
+<p style="text-align: left;">快哭了！华为太难了！</p>
+<p style="text-align: left;">这要是芯片管够，绝对吊打苹果！</p>
+<p style="text-align: left;">一定会挺过去的！</p>
+<p>— <strong>完</strong>— </p>
+<p style="text-align: left;"><span style="font-size: 16px;">本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>「百度AI开发系列课</strong><strong>」</strong><strong>免费报名</strong></p>
+<p>5分钟上手，10分钟定制高精度AI模型，硬核百度EasyDL，小白也能学！</p>
+<p>10.21日起，3期公开课带你 <strong><span>0门槛轻松学AI开发</span></strong>、实现 <span><strong>AI模型训练与部署</strong></span>！扫码添加量子位小助手（qbitbot12）、加入课程直播群吧~ <strong><span>▽</span></strong></p>
+<p>p.s.完成课堂任务还有机会赢取 <strong><span>李彦宏新书《智能经济》</span></strong>哦~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

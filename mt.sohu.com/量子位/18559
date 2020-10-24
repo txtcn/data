@@ -1,0 +1,671 @@
+➜它来了！无人车穿梭在深圳的“宇宙最强街道”
+http://www.sohu.com/a/426978676_610300	19142
+<p>允中 发自 凹非寺 </p>
+<p>量子位 编辑 | 公众号 QbitAI </p>
+<p style="text-align: left;">粤海街道，被网友戏称为“宇宙最强街道”，这里是腾讯、中兴、华为、大疆的诞生地。这一街道拥有上百家上市公司，仅2018年就创造了2509亿元的GDP。同时，这片约14平方公里的街道，在2019年被深圳市综合交通运行指挥中心评为“深圳十大拥堵街道”。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;">即使到了夜晚9点，这里也依旧车水马龙。</p>
+<p style="text-align: left;"><img src="http://p9.itc.cn/q_70/images03/20201024/b00efe15bc8b47238241b5bc019224f0.jpeg" /></p>
+<p style="text-align: left;">地铁的施工建设，也让各种奇形怪状的泥头车成为这里的常客。 <span style="font-size: 16px;"></span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201024/647df39eb8a94da4b2ebb2d68534a43d.png" /></p>
+<p style="text-align: left;">网约车司机也常感慨：“虽然这里的订单多，但路却不好走。”</p>
+<p style="text-align: left;">这样的街道，自动驾驶汽车能走吗？</p>
+<p style="text-align: left;">当然。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">面对临时出现的管道修理工作人员，它能够流畅绕行。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201024/507ee5956a9c4372a7704280f1c4dc8d.gif" /></p>
+<p style="text-align: left;">即使骑电动自行车的外卖小哥突然出现，也能及时刹停，确保安全。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201024/94969428e2554e8f84b4a62311b4072a.gif" /></p>
+<p style="text-align: left;">面对拥堵的车流，它也懂得变换车道。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201024/c3c82550888d4885b0cfb3f69e27e3fb.gif" /></p>
+<p style="text-align: left;">当前方停车挡住了去路，它便找准时机，迅速绕行。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201024/1d6e1f432a4c4226bd7ecb13eedcdadd.gif" /></p>
+<p style="text-align: left;">即使在夜间拥堵的情况下，自动驾驶汽车也能够轻松应对滚滚车流。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201024/0a4912e51ce049599638bda0d75b2e32.gif" /></p>
+<p style="text-align: left;">这是深圳 <strong>元戎启行</strong>科技有限公司的自动驾驶汽车，在粤海街道，已测试了将近一年的时间。 </p>
+<p style="text-align: left;">以上几类路况是目前城市中最常见的复杂路况，也是检验L4级自动驾驶能力的挑战性项目。</p>
+<p style="text-align: left;">自动驾驶汽车要在这几类路况中像人类一样驾驶自如，需要对环境和与交通参与者的交互进行建模，建立对环境的高维度认知，从而通过语义信息来进行驾驶决策。</p>
+<p style="text-align: left;">简单来说，就是需要自动驾驶系统在获得了周围交通参与者的类型、速度、加速度、运动轨迹等信息的基础上，还需要判断整个环境中交通参与者的运动行为是否正常，并且判断当自动驾驶汽车发生速度或方向上的改变时，周围的车辆将会产生何种行为变化，最后再进行决策。</p>
+<p style="text-align: left;">对于汽车来说，道路上的主要交通参与者是汽车。但在国内城市道路中，常见的还有行人、电动自行车等交通参与者。通常情况下，他们不会在非机动车道出现，但根据世界卫生组织的报告，在全球范围内，行人和骑自行车者占所有道路交通死亡人数的26％。因此，行人和自行车，也是车辆行驶过程中需要谨慎关注的交通参与者。</p>
+<p style="text-align: right;"><iframe allowfullscreen="" src="https://v.qq.com/iframe/preview.html?width=500&amp;height=375&amp;auto=0&amp;vid=m3163kiftfk"></iframe><strong>△ </strong><span style="font-size: 16px;">元戎启行自动驾驶汽车与交通参与者进行交互</span></p>
+<p style="text-align: left;">城市路段的车速相对较高，自动驾驶系统需要能够对汽车、行人、电动自行车等交通参与者进行精准、高效的感知，并通过环境和交互模型快速全面分析路况，才能在短时间内进行驾驶决策。</p>
+<p style="text-align: right;"><iframe allowfullscreen="" src="https://v.qq.com/iframe/preview.html?width=500&amp;height=375&amp;auto=0&amp;vid=s3163qysywz"></iframe><strong>△ </strong><span style="font-size: 16px;">元戎启行自动驾驶汽车在交通流密集的路段灵活行驶</span></p>
+<p style="text-align: left;">在前方多条车道都有大量汽车停下或缓慢行驶时，自动驾驶系统就需要判断出当前场景是否属于交通流密度较高的场景，并判断出在可行的车道中，哪条车道的车辆更少。如果要换道，系统还需要先判断后侧来车的车速是否会随本车发生变化、车与车之间能否保持安全距离。在迅速分析判断后，自动驾驶系统还须迅速执行。</p>
+<p style="text-align: left;">元戎启行副总裁刘念邱表示：“我们采用数据驱动的方式进行建模。通过大量的实际路测和模拟测试，让自动驾驶汽车能够灵活地处理城市中各类复杂的交通状况。”</p>
+<p style="text-align: right;"><iframe allowfullscreen="" src="https://v.qq.com/iframe/preview.html?width=500&amp;height=375&amp;auto=0&amp;vid=m3163kiftfk"></iframe><strong>△ </strong><span style="font-size: 16px;">元戎启行在粤海街道进行路测（一镜到底）</span></p>
+<p style="text-align: left;">粤海街道是深圳科技企业的集中区域，每天有大量年轻人往返此地。他们对效率的追求，也转换为了大量的出行订单。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201024/064959753b7c49779dfe3487214e8f95.jpeg" /></p>
+<p style="text-align: right;"><strong>△ </strong><span style="font-size: 16px;">粤海街道夜间打车情况</span></p>
+<p style="text-align: left;">刘念邱说：“城市中的写字楼聚集区相对其他区域，有更多的出行订单，是具备高经济价值的Robo-Taxi运营区域。而这些区域的出行，对效率有更高的要求。从运营Robo-Taxi的角度出发，在确保安全的基础上，还需要考虑自动驾驶的 <strong>运行效率</strong>、 <strong>经济效益</strong>。因此我们在技术上进行了许多优化。” <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;">“我们通过自研的深度学习推理引擎，让系统具备高效的执行效率的同时，也降低了对计算资源的需求。目前整套自动驾驶系统，可在功耗仅45瓦的计算平台上稳定运行。我们的传感器套件也通过良好的空气动力学设计，将风阻对汽车行驶里程的影响降低到了7%。相较传统方案有了大幅降低。”</p>
+<p style="text-align: left;">根据元戎启行的测试，原里程约320公里的电动车，在采用了元戎启行的自动驾驶解决方案后，仍可行驶超过 <strong>300</strong>公里。而使用传统高功率工控机、未经过空气动力学改良的传感器套件的方案，整车的行驶里程不到200公里。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201024/9359c4cf87ac4e7db4104cbe89f437e8.jpeg" /></p>
+<p style="text-align: right;"><strong>△ </strong><span style="font-size: 16px;">元戎启行计算平台DeepRoute-Tite</span></p>
+<p style="text-align: left;">目前，元戎启行已分别与曹操出行和东风公司合作，在杭州和武汉进行Robo-Taxi测试运营。其中，在与曹操出行的合作中，双方合作的自动驾驶车队数量将扩大到10辆，并且接入曹操出行APP，预计在2021年面向公众提供自动驾驶试乘服务。在2022年亚运会举办期间，将车队规模扩大到数百辆级别。而元戎启行等企业与东风公司合作的自动驾驶领航项目，将在两年内推出不少于200辆Robo-Taxi。随着合作的推进，Robo-Taxi将逐渐进入人们的生活。</p>
+<p>— <strong>完</strong>— </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>
+➜这才是最好的程序语言，不服来辩
+http://www.sohu.com/a/426978755_610300	19142
+<p>娅宁 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">毫不夸张，这是我听过「最动听」的程序员故事。</p>
+<p style="text-align: left;">今天，1024，程序员节。</p>
+<p style="text-align: left;">一个小程序悄然上线，然后迅速在圈内引起波澜，大家争相上传自己的代码，看看一行行敲下的字符，究竟有多优雅。</p>
+<p style="text-align: left;">口罩检测是明快的，失物找回有固定明确的击打节奏，疲劳提醒雄浑之中透着温暖，行程分享更像是冬日暖阳拍打在你背上……</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201024/6c30694ac43d414bacefaed695400b30.jpeg" /></p>
+<p style="text-align: left;">算了，或许这只是我的感觉，因为虽然是同一段代码，但一千个观众有一千个莫扎特。</p>
+<p style="text-align: left;">程序是理性的，但没想到，有程序员实现了「解码」。</p>
+<p style="text-align: left;">现在每一段代码，都是感性十足的音乐节奏。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201024/ced1c062c11e4c5687128f58b2089152.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">这是4个滴滴程序员三天内的业余时间之作。</p>
+<p>创作之初：“听起来很酷，那就试试” </p>
+<p style="text-align: left;">北京平常的一天。</p>
+<p style="text-align: left;">滴滴程序员于留宝，接到同事辛老师的消息，问他有没有兴趣创作一段程序员自己的音乐。</p>
+<p style="text-align: left;">于留宝很意外，自己虽喜欢听歌，在音乐上却是外行，最多在团队聚餐时唱唱，搞创作，实在是不可能。</p>
+<p style="text-align: left;">辛老师说，为什么不能把代码变成音乐？</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201024/4baf3141d0934833a1b2550c90f15d19.jpeg" /></p>
+<p style="text-align: left;">辛老师来自滴滴客户服务团队，也是滴滴内部出了名的音乐才子，在公司组了乐队，业余时间写歌，创作，玩音乐。 </p>
+<p style="text-align: left;">“觉得很有意思，这是我第一次做这样的事情。”于留宝答应了。自己每天和代码打交道，现在要让它流动起来，成为一支曲子，让别人听到。</p>
+<p style="text-align: left;">这听起来很酷，那就试试。</p>
+<p style="text-align: left;">就这样，从辛老师的一个点子，一条消息，一个小项目开始了。于留宝所在的业务部门首先有一些感兴趣的同学加入进来，后来，因为涉及到乐理知识，团队开始寻求外援，AI labs语音相关的同学，还有服务端、前端的同学，都纷纷加入。代码音乐的小程序开发团队，就这样成立。</p>
+<p style="text-align: left;">这是一个项目团队，但更像是兴趣小组，准确说，是两者的结合。</p>
+<p style="text-align: left;">“知道大家喜欢编程，没想到公司这么多人喜欢音乐。”</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201024/162c7354cb1a4a19a3104f5db1b94811.jpeg" /></p>
+<p>迭代优化：编程与音乐的共鸣 </p>
+<p style="text-align: left;">把代码转换成音乐，采用什么映射逻辑，这是摆在一开始的问题。</p>
+<p style="text-align: left;">如何将复杂的代码用简单的数字来表示，于留宝想了很多种方式，比如，用一个复杂的公式映射，对每一行代码进行编码。</p>
+<p style="text-align: left;">但他发现，这样做的逻辑性和可解释性不强。“我们希望做出来的东西是有共鸣的，能让别人理解。不光听到音符，而且感知到代码。”</p>
+<p style="text-align: left;">囿于复杂的公式、逻辑，想要呈现得通俗简单，不容易。于留宝陷入了困顿。</p>
+<p style="text-align: left;">一天，于留宝盯着屏幕上一行行长短不一的代码，整齐却错落有致。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201024/6d1e01db190e4d919ee4cedc358fdc64.jpeg" /></p>
+<p style="text-align: left;">灵感在一瞬间闪现。“把代码横过来，像不像音乐播放器里跳跃的音浪？” </p>
+<p style="text-align: left;">代码的长度本身就构成一种韵律，代码和音乐在这个维度相通。</p>
+<p style="text-align: left;">这不需要复杂的映射。原理每个人都可以懂，而且，这个映射不拘泥于特定的代码，所有的代码都有长度，都能以音乐的形式表达。</p>
+<p style="text-align: left;">于留宝把这个点子跟团队成员分享。一拍即合。</p>
+<p style="text-align: left;">这是第一次迭代，抛弃了之前的很多复杂公式，用一种比较简单的逻辑呈现代码，让大众可以感知。</p>
+<p style="text-align: left;">确定了思路后，于留宝回归本职，做了一个算法工程师擅长的事——数字映射。他的技术能力已经在滴滴日常的业务中千锤百炼，把这个想法用算法实现并不难。</p>
+<p style="text-align: left;">以代码长度为基础，再将不同的功能块、关键词、条件语句等代码元素融入到映射逻辑中，代码就变成了数字，后边接一个时序预估模型，生成不同的节拍。</p>
+<p style="text-align: left;">音乐的骨架有了，但听起来总缺点什么。如何让它丰满，有血有肉，有美感，于留宝知道，自己的力量已经不够了。</p>
+<p style="text-align: left;">滴滴有近6000名工程师，一定会有志同道合的朋友。AI labs里做语音相关的同学，很快加入进来。懂乐理知识的同学，结合代码特点，对音乐做了一些微调。</p>
+<p style="text-align: left;">项目发起人辛老师对不同功能的代码进行了不同风格的编曲。</p>
+<p style="text-align: left;">这是又一次迭代。由粗到精，从一个功能的简单实现，到完善优化，终于将代码变成了音乐。</p>
+<p style="text-align: left;">第一次听到demo，超出于留宝的预期。“音乐的灵性在那一瞬间打动我，真实地感受到业务代码可以这么美。”</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201024/423f590a3d824070b93ee990865a7236.jpeg" /></p>
+<p style="text-align: left;">音乐中展示的代码，在滴滴庞大的技术系统中，是九牛一毛。</p>
+<p style="text-align: left;">八年来，滴滴的程序员累计编写了超10亿行代码。技术积累不是一首曲子能代表，但曲子是一个缩影，让外界的人看到滴滴的技术内核。</p>
+<p style="text-align: left;">代码转音乐团队的工程师们常常提到四个字“迭代优化”。</p>
+<p style="text-align: left;">于留宝说，这是程序员的工作惯性，已经融入他们内心深处、个人气质中。</p>
+<p style="text-align: left;">迭代无处不在。</p>
+<p style="text-align: left;">这次音乐项目的迭代用了两个星期，但滴滴平台迭代优化的历程，已经走过八年。</p>
+<p style="text-align: left;">最能诠释“迭代”二字、也最能承载滴滴技术积淀的，是滴滴的核心业务之一——派单。</p>
+<p style="text-align: left;">乘客每次发单，背后都需要借助大规模分布式计算最优匹配、最佳路径、最短时间，并且，匹配要做到动态、实时。</p>
+<p style="text-align: left;">早期，平台派单算法是每1.5-2s做一次供需的计算匹配，在确保乘客接驾体验的基础上最大化成交率，让更多的用户能被司机应答，更多的人能快速出发。</p>
+<p style="text-align: left;">从2016年开始，滴滴开始思考，算法能不能做到在更长时间维度的优化？</p>
+<p style="text-align: left;">他们想到AlphaGo，“强化学习”。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201024/fc51d7c347b44ee7be6f1065b1f5d2ac.jpeg" /></p>
+<p style="text-align: left;">技术迭代按下快进键。 </p>
+<p style="text-align: left;">2017年，滴滴开发了一套基于强化学习的智能派单匹配系统，把目标从2秒钟最优改成了1天最优。这个系统上线后，成效显着。</p>
+<p style="text-align: left;">但平台对优化的思考没有止步。成交率虽大幅提升，但那时的系统，只能模拟简单的时间空间，不能模拟动态的复杂信息（如天气），如何把这些信息都包括进来？</p>
+<p style="text-align: left;">2018年，滴滴开发了一套基于深度强化学习的方法V-Net，把所有潜在有价值的信息都包含起来，对网约车派单问题进行半马尔可夫过程建模，提出基于强化学习的泛化决策迭代框架，创新有效地结合了深度强化学习，时间差学习和传统组合优化方法，在确保乘客出行体验的同时进一步提升司机的收入。结合了深度强化学习、时间差学习和传统组合优化方法。</p>
+<p style="text-align: left;">这一次，不仅考虑到了乘客出行体验，而且，滴滴平台上的数千万车主和司机的收入因技术而提高了。</p>
+<p style="text-align: left;">多年技术积累也得到外界肯定。2019年，滴滴网约车派单解决方案获瓦格纳运筹学杰出实践奖（Daniel H. Wagner Prize）。这也是瓦格纳运筹学杰出实践奖创建22年以来，中国公司第一次被授予该奖项。</p>
+<p style="text-align: left;">成立八年，尽管早已走过了市场输赢的战争，滴滴的技术变革无时无刻不在发生。深耕AI和大数据技术，纪录不断被刷新。计算永不止息，每秒峰值处理4000万次数据，每日新增轨迹原始数据超106TB，相当于21400部5GB大小的蓝光电影。</p>
+<p style="text-align: left;">从小项目到大平台，如程序员们说的，迭代优化，早已成为惯性。</p>
+<p style="text-align: left;">但这个代码变音乐的程序，每一次迭代都有另类的兴奋感。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201024/607069d8570643d7bdbd2a23dd0eb58b.jpeg" /></p>
+<p>开放与开源：与所有程序员共享快乐 </p>
+<p style="text-align: left;">Demo 出来后，项目群里立刻沸腾。大家沉浸其中，“很有成就感”。</p>
+<p style="text-align: left;">团队里有人提出，效果这么好，我们为什么不做一个小程序出来呢？</p>
+<p style="text-align: left;">把映射逻辑做成一个小程序，让更多的程序员参与进来，让更多代码能够转换成跳动的音符被听到，而不局限于滴滴的业务代码。</p>
+<p style="text-align: left;">“这是为程序员开发的小程序，我们想把这份快乐和所有的程序员一起分享。”于留宝说。</p>
+<p style="text-align: left;">意见一致，大家又有了新的目标——开发一个小程序。</p>
+<p style="text-align: left;">更多的人加入进来了，产品经理、开发、服务端、前端、UI，开始了一场小程序开发的头脑风暴。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201024/e42dcb807bdd43de8e1b1cb9c1a87db5.jpeg" /></p>
+<p style="text-align: left;">目标只有一个： </p>
+<p style="text-align: left;">在程序员节这一天，让所有的程序员都能听到自己写的代码，共享快乐。</p>
+<p style="text-align: left;">开源是真程序员的信仰，而且滴滴程序员们曾因开源而受益。</p>
+<p style="text-align: left;">只用了23小时，这项“黑科技”就成功上线。开源开放，虽然时间紧迫，滴滴的技术人员们却将产品优化与迭代了将近20次。</p>
+<p style="text-align: left;">当然，滴滴自己也爱对外开源。</p>
+<p style="text-align: left;">2017年，滴滴首个开源项目VirtualAPK发布。这是滴滴开源的起点。</p>
+<p style="text-align: left;">开源三年多，滴滴已经发布了40多个项目，涵盖人工智能、小程序、智慧交通、中间价与架构、移动开发、研发测试、前端、系统工具、大数据、运维监控等领域。</p>
+<p style="text-align: left;">在Github上获得了 6.8万star，目前排名全球89，国内第5，仅在BAT华为之后，已经超过很多从13年就开始做开源的其他互联网公司。</p>
+<p style="text-align: left;">为什么要投入精力做开源？</p>
+<p style="text-align: left;">滴滴高级副总裁、开源委员会主席章文嵩博士这样说：“滴滴受益于开源，也要回馈于开源。”</p>
+<p style="text-align: left;">滴滴的技术文化，是开放协作的。大量的应用开源软件加上自主开发的软件，共同构建了这个全世界规模最大的出行平台。</p>
+<p style="text-align: left;">滴滴方面还透露，滴滴还在积极推动内部开源，提升内部工程师开放、协同的能力。</p>
+<p style="text-align: left;">目前已经有包括平台化项目、工具、架构、SDK库等370多个项目实现内部开源。</p>
+<p style="text-align: left;">内部开源可以打破部门壁垒，避免“重复造轮子”，已经有1/5的滴滴工程师参与进来。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201024/385fe85d489a4990bfe807e44f1b0157.jpeg" /></p>
+<p>团队文化：因为年轻，物以类聚 </p>
+<p style="text-align: left;">10月22日夜里十一点半，距离小程序上线还有两天。</p>
+<p style="text-align: left;">1024代码音乐开发小分队的群里，成员们还在讨论“设计稿”“转换动画”的呈现效果，团队很有默契——“原来大家都在加班，想把这个事情做到完美”。</p>
+<p style="text-align: left;">从有一个想法，到曲子demo出来，再到小程序完成，团队很多人的心血都投入于此。</p>
+<p style="text-align: left;">“这是第一次，我们为了自己去开发一个功能，而不是为了服务用户。”于留宝说。</p>
+<p style="text-align: left;">这对大家来说意义重大，团队也因此更有激情。它不是一项任务，这是一群有共同热爱的人自发聚集，用自己的创造力，做的一件好玩、有意义的事。</p>
+<p style="text-align: left;">这不是一个严格的项目，大家没有放下日常的工作，而是在业余时间支撑起这个项目。</p>
+<p style="text-align: left;">“有时间的时候随时在线上沟通，下班以后才聚在一起讨论，很多同事不在同一个办公点，拉个Zoom就能开会。”一个团队成员介绍。</p>
+<p style="text-align: left;">过程中每一步优化和迭代，都启发出滴滴工程师们更多的想法和创意，创造出对这个特殊产品更高的期待，也吸引着越来越多的同学加入。</p>
+<p style="text-align: left;">于留宝喜欢大家“拧成一股绳”的感觉。并肩作战的两个星期，于留宝重新认识了身边这些程序员们，这像是个“挖掘宝藏”的过程。</p>
+<p style="text-align: left;">平时沉稳低调的同事原来这么潮，他可能是个隐藏的贝斯手、作曲人，有人散发着文艺气息，有人有着与生俱来的幽默，“甚至，你会突然发现某个人长得这么帅。”</p>
+<p style="text-align: left;">习惯了追求把代码写好的程序员们，有着自己的浪漫和审美，才华和个性。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201024/f2a9466c923840e9ab4a12643de36902.jpeg" /></p>
+<p style="text-align: left;">为什么加入滴滴写代码？ </p>
+<p style="text-align: left;">他们中的不少人曾给过不平凡的答案。</p>
+<p style="text-align: left;">作为出行为核心的公司，滴滴打通线上线下，并且因为打车叫车是实时行为，还是空间和时间叠加的挑战，拿物理领域来说，就是原子和量子世界的交融，前无古人，是真正的无人之境。</p>
+<p style="text-align: left;">“我不知道上帝用什么创造世界，但程序员用代码改变世界。”</p>
+<p style="text-align: left;">但也有更加平凡和现实的回答。</p>
+<p style="text-align: left;">这里年轻人多，不仅因为滴滴作为高速成长公司，吸引年轻人。而且年轻人在这里也容易有机会出头上位。</p>
+<p style="text-align: left;">年轻人聚集，思想活，技术活，文化氛围也就利于各种点子野蛮生长。</p>
+<p style="text-align: left;">爱音乐的程序员这次把代码变成音乐，而上一次爱吐槽的其他年轻人则把“吐槽大会”开到了公司。</p>
+<p style="text-align: left;">这次是爱音乐的年轻程序员搞的，之前滴滴也是最早把“吐槽大会”开到公司的企业。</p>
+<p style="text-align: left;">所以代码变音乐，虽然只是滴滴程序员的业余项目，但每一个音符背后，都是滴滴技术和文化的声响。</p>
+<p style="text-align: left;">如果细听，和弦的编排，的确融入了程序员们的个人特质，躁动的、冷酷的、张扬的、舒缓的……团队里的每个人不一样，但都是可爱的。</p>
+<p style="text-align: left;">小程序上线，一段开心忙碌的旅程结束了。 </p>
+<p style="text-align: left;">说到程序员节想怎么过，于留宝又变回了严谨低调的工程师。他的愿望：</p>
+<blockquote>
+<p>“最好的庆祝就是线上服务稳定，没有bug。”</p>
+</blockquote>
+<p>“最好的庆祝就是线上服务稳定，没有bug。”</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。 </p>
+<p>同时，AI内参群为大家提供了交流和分享的平台，更好地满足大家获取AI资讯、学习AI技术的需求。扫码即可订阅： </p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>一键三连「分享」、「点赞」和「在看」</p>
+<p>科技前沿进展日日相见~</p>
+➜AI已来，更有未来！科大讯飞全球1024开发者节，这场AI盛会你也可以云参与
+http://www.sohu.com/a/426978919_610300	19142
+<p>万铎 黄阳 发自 合肥 </p>
+<p>量子位 编辑 | 公众号 QbitAI </p>
+<p><span style="font-size: 16px;">提到1024，想必不少人都不会感到陌生。</span></p>
+<p style="text-align: left;">在这个对广大开发者尤为特殊的日子，2020科大讯飞全球1024开发者节也在昨天如期而至。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201024/511f56dbeb6f4d5a996c5b0984b6a61d.jpeg" /></p>
+<p style="text-align: left;">在主论坛上，科大讯飞董事长刘庆峰首先发表了开幕演讲。从场景驱动AI赋能的角度，讲述了人工智能发展如何改变我们的生活。 </p>
+<p style="text-align: left;">随后科大讯飞高级副总裁、消费者事业群总裁 胡国平发布了《2020中国人工智能API经济白皮书》以及《1024计划 4.0》，致力于通过AI赋能，服务百万开发者与生态伙伴。</p>
+<p style="text-align: left;">除此之外，科大讯飞集团副总裁于继栋带来了讯飞开放平台新品，为企业提供更具定制化的多种AI服务。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201024/b570c99ddf8b40b2a761be1fa9688da5.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">除了主论坛的各种精彩演讲，1024节自然也少不了广大开发者的成果展示。</p>
+<p style="text-align: left;">大鹅还亲眼看到了一直活在PPT里的华为鸿蒙系统。</p>
+<p style="text-align: left;">此外还有可以充当健身教练的魔镜、戴上就秒进影院的AR眼镜、看起来超级酷炫的配送无人机、可以语音输入甚至实时翻译的鼠标等科技产品，涵盖教育、物流、娱乐、办公、居家等多个领域。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201024/9c365ce6b0174b7f946e2e12ce88ea32.jpeg" /></p>
+<p style="text-align: left;">最后要说的是，由于受疫情的影响，本届科大讯飞全球1024开发者节对参会人员和参展企业的数量作出了限制。</p>
+<p style="text-align: left;">不过不用担心，你还可以通过线上AI展区、抖音线上AI公益音乐节以及AI科技节目《Show AI》参与进来。</p>
+<p style="text-align: left;">当然你也可以点点关注，让大鹅带你去看更多好玩又酷炫的前沿科技活动。</p>
+<p>— <strong>完</strong>— </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>一键三连「分享」、「点赞」和「在看」</p>
+<p>科技前沿进展日日相见~</p>
+➜丘成桐教授，不必动怒
+http://www.sohu.com/a/426978929_610300	19142
+<p>郑集杨 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">今明两天，2020年丘成桐大学生数学竞赛即将在清华大学展开决赛的角逐！</p>
+<p style="text-align: left;">由于先前 <strong>丘老怒斥</strong><span style="font-size: 16px;">传闻</span>的发酵，让 <span style="font-size: 16px;">今年的</span><span style="font-size: 16px;"><span style="font-size: 16px;">决赛增加了许多看点，而其中之一</span>便是：清华学子能否成功“宽慰”丘老？ </span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">这件事，还得从十几天前说起。 </span></p>
+<p style="text-align: left;">10月13日，决赛入围名单公示的第二天，网上流出消息称：该比赛的创始人——丘成桐院士批评清华大学在2020年大学生数学竞赛中惨败，并且还晒出了截图。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201024/d00cf3a538ed445da9fccd8dd72d3595.png" /></p>
+<p style="text-align: left;">聊天截图中，丘老进行痛批，出现了诸如“羞也不羞？”、”严格检讨！“、“令人汗颜！”、“如何交代？”等字眼，措辞极其严厉。</p>
+<p style="text-align: left;">“丘老生气了”，迅速在网上引起了热议。</p>
+<p style="text-align: left;">只不过，人们关注的焦点，似乎并不在 <strong>丘老生气了</strong>（聊天截图是否为丘老所言），而更多的是 <strong>丘老为什么生气</strong>（丘赛成绩以及结果的成因）。 </p>
+<p style="text-align: left;">事到如今，截图的真伪已然无法考证，也不是那么重要了。反倒是截图中所提及的 <strong>“清华大学惨败”</strong>、 <strong>“如何招生”</strong>、 <strong>“”授课不够负责“</strong>等问题，究竟如何？尚有争论。 </p>
+<p style="text-align: left;">于是，值此决赛之际，为了让大家更好地了（吃）解（瓜），做出自己判断。我们便顺着截图中所提几个要点，带大家来好好捋一捋。</p>
+<p>清华大学惨败？尚可一战 </p>
+<p style="text-align: left;">2020年清华大学是否在丘赛中惨败？在讨论这个问题之前，得先了解一下丘赛赛制、目前进行到的阶段以及先前阶段的结果。</p>
+<p>丘赛赛制 </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">丘赛面向中国的本科在校生。测试分为五个科目：</p>
+<blockquote>
+<p>几何与拓扑、代数与数论、概率与统计、应用与计算数学及分析与偏微分方程程</p>
+</blockquote>
+<p>几何与拓扑、代数与数论、概率与统计、应用与计算数学及分析与偏微分方程程</p>
+<p style="text-align: left;">奖项共设“个人单项奖”、“个人全能奖”和“团体奖”三类，各类分别设金奖、银奖和铜奖三个等级。其中：</p>
+<p style="text-align: left;">个人单项奖：根据科目，每个科目设立一项金奖，三项银奖和六项铜奖。</p>
+<p style="text-align: left;">个人全能奖：奖励综合能力卓越、个人单项竞赛科目大于等于2个铜奖的学生。</p>
+<p style="text-align: left;">团体奖：奖励成绩排名前5的团队（5人为一队）。</p>
+<p style="text-align: left;">比赛分为三个阶段：报名，半决赛（初筛，全国笔试）以及总决赛，之后便是颁奖典礼。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201024/6b4ca433f727491fbea166d0abcedfd8.jpeg" /></p>
+<p><strong>△</strong>图源：yau-contest </p>
+<p style="text-align: left;">另外，最终获奖个数由当年评选情况决定，而2020年的半决赛笔试因为新冠疫情而延期了，目前决赛正在进行中。</p>
+<p>往年半决赛及决赛结果 </p>
+<p style="text-align: left;">为了可以更加直观地看待今年入围情况，同时也是借助往年的情况对清华学生入围和最终成绩进行关联性分析。</p>
+<p style="text-align: left;">我们整理了2018年和2019年除了各项科目的入围人数和最终获奖情况。</p>
+<p style="text-align: left;">首先是2018年度的入围数据，见下图：</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201024/e100e5f4150b4a69ab9f1417dc46bcb7.png" /></p>
+<p style="text-align: left;">2018年最终的决赛结果：清华2银4铜，北大5金6银10铜。（真-惨败）</p>
+<p style="text-align: left;">接下来看看2019年度的入围数据，见下图：</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201024/0a73465bb168421cbcbf2c3bcf261879.png" /></p>
+<p style="text-align: left;">2019年最终的决赛结果：清华2金1银10铜，北大1金12银12铜。其中还值得一提的是，当年的个人全能奖前两名都是清华大学的同学。</p>
+<p style="text-align: left;">从过去两年的数据，可以看到的是：</p>
+<blockquote>
+<p>1、往年中，北大入围及获奖人数都是明显多于清华的；</p>
+<p>2、入围人数可以保证奖牌数，但是最终金牌归属仍有较大变数。</p>
+</blockquote>
+<p>1、往年中，北大入围及获奖人数都是明显多于清华的；</p>
+<p>2、入围人数可以保证奖牌数，但是最终金牌归属仍有较大变数。</p>
+<p style="text-align: left;">所以，2020年丘赛入围情况是如何呢？是会引得“丘老的愤怒”？统计见下图：</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201024/66380ddcc5c547c084d2caa747fa631d.png" /></p>
+<p style="text-align: left;">不难看出，清华入围人数较去年基本持平，北大略有上升。</p>
+<p style="text-align: left;">2020年清华初赛成绩不如北大，这是事实，也是历来如此。而至于“惨败”，不论是从半决赛情况（北大常年强势）还是总决赛情况（尚未出结果），都是不好盖棺定论的。</p>
+<p style="text-align: left;">那惹得“丘老愤怒”的半决赛名次，目前尚不可知，能知道的只是：北大常年多数，清华尚可一战。</p>
+<p style="text-align: left;">所以，“丘老可先不必动怒”，20年总决赛最后究竟是走向18年“北大包圆”还是19年“各有千秋”，数日之后，便见分晓。</p>
+<p>如何招生？计算机赢了 </p>
+<p style="text-align: left;">“如何招生？“，截图中发出了如此的质问！这直击了常年来清华较之于北大在丘赛入围上差距的 <strong>病根</strong>。 </p>
+<p style="text-align: left;">在网友的讨论中，多数的分析都指向了一个结果—— <strong>生源不行</strong>，毕竟，数学是一个很看天赋的学科。 </p>
+<p style="text-align: left;">那么，清华招生确实不行吗？</p>
+<p>数学国家集训队人才流向 </p>
+<p style="text-align: left;">对于在生源质量这一块，需要一个指标：既能代表数学人才又能尽量避免其他因素干扰。而 <strong>中国数学奥林匹克国家集训队</strong>，便是这样一个合适的指标。 </p>
+<p style="text-align: left;">原因有二：1、国集每年经过筛选得到的60人名单，是同龄人中数学方面的翘楚；2、参加国家集训队后可以直接保送升学，尽可能地排除高考其他因素的干扰。</p>
+<p style="text-align: left;">那么，每年的国家集训队中当年的高三学生，最后都流向了哪里呢？</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201024/ec31b2998bf34870992cc4492ec958cf.png" /></p>
+<p style="text-align: left;">如果就清华和北大的统计来看，清华接收的国集当年高三学生在逐年增多，并且已经反超北大。似乎，这优质的数学生源并不能算少？</p>
+<p style="text-align: left;">但是，事实却是这样的：</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201024/acf10a894e234df5bd43566e4fd21ff1.png" /></p>
+<p style="text-align: left;">对，没错，选择清华的数学人才多数都去了计算机专业（姚班、智班），此外还有选择经济金融专业的，而选择继续从事数学的人才， <strong>寥寥无几</strong>。 </p>
+<p style="text-align: left;">而相比之下，选择北大的数学人才则基本都是留在了数院。</p>
+<p style="text-align: left;">这些数据，也算是一个趋势的代表体现了，此外的数学人才，面对未来时做何选择，也是大致可以想象的了。</p>
+<p style="text-align: left;">所以，“丘老先别生气”了，清华之中并不是没有数学人才，只不过都在清华计算机专业罢了。</p>
+<p style="text-align: left;">人才的选择和流动，无非是 <strong>存量与增量</strong>的无奈， <strong>面包与兴趣</strong>的现实抉择。 </p>
+<p>丘成桐数学英才班 </p>
+<p style="text-align: left;">此外，在丘成桐先生的积极倡导下，2018年2月教育部批复同意清华大学开设“丘成桐数学英才班”，丘成桐先生担任首席教授。</p>
+<p style="text-align: left;">丘班的目标招收高二、高三考生，考生将录取至清华大学数学科学系“数学与应用数学”专业。到目前为止，丘班已经完成了三年的招生工作（18-19）。</p>
+<p style="text-align: left;">2019年丘班的名单如下：</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201024/175e1d92e14243f2a0c6db65ba45fd44.jpeg" /></p>
+<p><strong>△</strong>图源：sohu </p>
+<p style="text-align: left;">而2020年丘班的名单如下：</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201024/0e211570639149e399810d364b125d1a.jpeg" /></p>
+<p><strong>△</strong>图源：sohu </p>
+<p style="text-align: left;">较之于2019年的招生，2020年丘班的招生人数从17人变为了27人，生源也从去年的最高只有国奖银牌，变为今年的信息国家集训队，质量有着进一步的提升。</p>
+<p style="text-align: left;">但是，依旧没有数学国家集训队的成员报名参加，对数学人才的吸引力仍有提升的空间。</p>
+<p>北大数院和清华数学系 </p>
+<p style="text-align: left;">虽然清华（计算机）对于数学人才的吸引力已然超过北大（狗头），但是清华数学较之于北大数学的吸引力仍然是处于弱势的。</p>
+<p style="text-align: left;">而弱势的原因，既有体量的因素，也有历史的原因。毕竟，在北大，数学是一个学院（数学科学学院），而在清华目前暂且还只是一个系（数学科学系）。</p>
+<p style="text-align: left;">还得从1952年院系调整说起。</p>
+<p style="text-align: left;">北京大学创办于1898年，初名京师大学堂，1912年更名为北京大学。1913年秋北京大学的数学门的招生，开启了中国现代高等数学教育的先河。</p>
+<p style="text-align: left;">1952年秋，全国高等学校进行了院系调整。北京大学数学系与清华大学数学系、燕京大学数学系经调整后，组建了新的北京大学数学力学系。1978年分设为数学系和力学系。</p>
+<p style="text-align: left;">1985年，概率统计教研室独立成立了概率统计系。1995年，在数学系与概率统计系的基础上成立了北京大学数学科学学院。</p>
+<p style="text-align: left;">目前北大数学科学学院下设四个系：数学系、概率统计系、信息与计算科学系和金融数学系；拥有五个本科生专业和四个博士专业。</p>
+<p style="text-align: left;">现有教师133人，其中中科院院士8人，长江特聘教授12人，杰出青年基金获得者28人，优秀青年基金获得者11人。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201024/96d0607830624029aa8628b5e52cfb2f.jpeg" /></p>
+<p><strong>△</strong>图源：pku </p>
+<p style="text-align: left;">清华大学数学科学系也有着辉煌而悠久的历史。其前身，是创建于1927年的清华大学数学系和前工程力学数学系计算数学专业以及1979年恢复建立的应用数学系。</p>
+<p style="text-align: left;">1927年清华数学建立以来，积极与国际接轨，罗致和吸引了诸如华罗庚、陈省身等许多着名数学家，逐步发展壮大。</p>
+<p style="text-align: left;">1952年，全国高校进行了院系调整，清华大学数学系并入了北京大学数学系及其它院校。</p>
+<p style="text-align: left;">此外，由于工程教育的需要，清华大学设立了高等数学教研室，主要担负全校数学基础课的教学任务。1958年，清华创建了国内第一个工科大学的计算数学专业。</p>
+<p style="text-align: left;">1979年，清华大学数学系 <strong>重建</strong>并更名为应用数学系，1999年系名更改为数学科学系。 </p>
+<p style="text-align: left;">经过几代人的不断努力，清华数学系已成为国内几个最具实力的数学系之一。全系教师共计92人，其中拥有长江特聘教授4人，国家杰出青年基金获得者12人。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201024/73f6734db18f410d82cf49c36c689adc.jpeg" /></p>
+<p style="text-align: left;">可以看到，虽然清北的数学历史都是非常悠久的。但是由于院系调整的历史原因，清华的数学存在了较长的空白期，直到1979年才重建，而这也导致了其目前整体实力上确实落后北大较多。</p>
+<p style="text-align: left;">而就在10月15日，高等教育评价专业机构 <strong>软科</strong>正式发布“2020软科中国最好学科排名” 。其中数学专业排名中清华便位于北大、复旦之后，位列第三。 </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201024/4557d79982a744b9a39e6b5ed30a764e.png" /></p>
+<p><strong>△</strong>图源：shanghairanking </p>
+<p style="text-align: left;">不过不能否认的是，最近几年，在丘老和清华一众教师队伍的努力下，清华数学的学科排名突飞勐进。迅速成长下清华数学的未来，还是值得期待的。</p>
+<p>其他原因？ </p>
+<p style="text-align: left;">除了“生源差距”，网友还就其他角度给出了自己的分析和理由。</p>
+<p style="text-align: left;">至于这些原因的影响占比多大，那便是仁者见仁，智者见智了。</p>
+<p>授课不够负责？ </p>
+<p style="text-align: left;">截图中的怒斥，还有一个关键点，是“授课不够负责”。而这种事情，是较难形成共识的，因为不同人有着不同的学习方法，对于不同的教学体系，也是各有所好。</p>
+<p style="text-align: left;">所以，基于矛盾统一性和普遍性的原理，我们罗列了一些对比点，供读者判断。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201024/e06f5dadbf5143418148d945fd57a995.png" /></p>
+<p style="text-align: left;">在课程设置上，普遍的认为是清华是更加合理的，层次更加分明。</p>
+<p style="text-align: left;">而在教学方式上，清华是有拿的出手的课程，如：于品的《数学分析》、李思的《几何与对称》等，而北大相对的中规中矩。</p>
+<p style="text-align: left;">最后，在课程进度上，是出现了一定的分歧：有些人认为课程层次分明加快了课程的进度，有利于快速建构知识框架；另外一部分人则认为慢一些有利于打好基础，增加深度；</p>
+<p style="text-align: left;">不过，单从网友的反应来看的话，似乎“授课不够负责”这点，是稍稍有些 <strong>冤枉</strong>的。 </p>
+<p>清华四年级学生未参赛 </p>
+<p style="text-align: left;">此外，还有人透露了今年的特殊情况——清华大四的学生并未参赛，而北大是参加的。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201024/d986f21a6cc548d49431720be6b764ae.png" /></p>
+<p style="text-align: left;">这，是否也是一个原因呢？</p>
+<p style="text-align: left;">欢迎大家在底下评论区留言，和我们一起讨论。</p>
+<p>丘成桐与丘赛 </p>
+<p style="text-align: left;">最后，补充介绍一下丘成桐院士和丘成桐大学生数学竞赛。</p>
+<p style="text-align: left;">丘成桐院士</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201024/b0f64aa49359410eacf89064afd87be2.jpeg" /></p>
+<p><strong>△</strong>图源：yau-contest </p>
+<p style="text-align: left;">丘成桐院士，1949年生于广东汕头市，美籍华裔数学家，教授。</p>
+<p style="text-align: left;">1966年考入香港中文大学数学系，1969年获推荐留学于美国加州大学伯克利分校，师从陈省身，1971年获得了博士学位。</p>
+<p style="text-align: left;">1987年起任美国哈佛大学讲座教授至今，并分别于1994年及2003年始出任香港中文大学数学科学研究所所长及香港中文大学博文讲座教授至今。此外，他于2013年起任哈佛大学物理系教授。</p>
+<p style="text-align: left;">丘老对微分几何学做出了极为重要的贡献：1976年，其证明了卡拉比猜想(Calabi Conjecture)与爱因斯坦方程中的正质量猜想(Positive Mass Conjecture)，并对微分几何和微分方程进行重要融合，解决问题，其影响直至今天。其后，继续在几何、拓扑学、物理学上做出许多成就。</p>
+<p style="text-align: left;">1982年，荣获国际数学界最高荣誉的 <strong>菲尔兹奖</strong>(Fields Medal)，即相当于数学界的诺贝尔奖。 </p>
+<p style="text-align: left;">1995年，当选中国科学院外籍院士。</p>
+<p style="text-align: left;">现任清华大学丘成桐数学科学中心主任。</p>
+<p style="text-align: left;">丘成桐大学生数学竞赛</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201024/c08bba7a2c5942489a6b34a3890167b2.jpeg" /></p>
+<p><strong>△</strong>图源：yau-contest </p>
+<p style="text-align: left;">丘成桐大学生数学竞赛2010年由丘成桐院士发起设立。</p>
+<p style="text-align: left;">竞赛侧重从 <strong>几何与拓扑</strong>、 <strong>代数，数论与组合</strong>、 <strong>概率与统计</strong>、 <strong>应用与计算数学</strong>、 <strong>分析与偏微分方程</strong>5个方向全面考查学生在本科阶段的数学基本知识与基本功。 </p>
+<p style="text-align: left;">竞赛按照国外一流大学的研究生资格考试标准选拔优秀数学人才，旨在激励广大学子在数学基础知识、综合能力及学术修养方面全面进步，助力中国大学数学教育发展。</p>
+<p style="text-align: left;">竞赛设立至今，累计有500余所中国各地大学，1万余名大学生报名参加比赛，获得奖励学生520余名。</p>
+<p style="text-align: left;">丘成桐大学生数学竞赛在培养中国数学人才方面发挥了重要作用，已经成为发掘和选拔年轻数学人才和国内外知名大学数学及相关专业研究生录取的重要参考。 <span></span></p>
+<p style="text-align: left;">参考链接： </p>
+<p>http://yau-contest.com/</p>
+<p>http://www.cms.org.cn/upload/file/1811/2048.pdf</p>
+<p>https://gaokao.chsi.com.cn/zsgs/mdgs--method-toBssIndex.dhtml</p>
+<p>https://www.math.pku.edu.cn/xygk/xyjj/index.htm</p>
+<p>http://math.tsinghua.edu.cn/publish/math/2568/index.html</p>
+<p>https://www.tsinghua.edu.cn/info/1097/4339.htm</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong><span>「百度AI开发系列课」免费报名！</span></strong></p>
+<p>5分钟上手，10分钟定制高精度AI模型，硬核百度EasyDL，小白也能学！ </p>
+<p>10.28日，百度高级工程师带你 <strong><span>轻松学AI开发</span></strong>、 <strong><span>实现AI模型训练与部署</span></strong>！扫码添加量子位小助手（qbitbot12）、加入课程直播群吧~▽ </p>
+<p><span><strong>p.s.</strong></span>参与群互动、完成课堂任务还有机会获得100元京东卡、《智能经济》图书等礼品哦~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜合格的CTO应该是什么样？雷军王海峰王小川等共谈「技术创新」
+http://www.sohu.com/a/426979019_610300	19142
+<p>金磊 发自 CNCC现场 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">企业在社会中的分量有多重？</p>
+<blockquote>
+<p style="text-align: left;">从17世纪到20世纪70年代，改变人类生活的160种主流创新工业，80%以上是由公司来完成。</p>
+<p style="text-align: left;">今天，全世界70%的专业和三分之二的研究的开发经费，都是来自企业。</p>
+</blockquote>
+<p style="text-align: left;">从17世纪到20世纪70年代，改变人类生活的160种主流创新工业，80%以上是由公司来完成。</p>
+<p style="text-align: left;">今天，全世界70%的专业和三分之二的研究的开发经费，都是来自企业。</p>
+<p style="text-align: left;">这就是中国工程院院士、CCF名誉理事长 <strong>李国杰</strong>，在10月22日 <strong>CCF 2020 首届CTO高峰论坛</strong>中，给出的一组数据。 </p>
+<p style="text-align: left;">不仅如此，李国杰院士直接抛出了企业之重任：</p>
+<blockquote>
+<p style="text-align: left;"><strong>是一个国家强大的基础</strong>。 </p>
+</blockquote>
+<p style="text-align: left;"><strong>是一个国家强大的基础</strong>。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201024/527c98be933f4626b0fc5468412e6120.png" /></p>
+<p style="text-align: left;">然而，众所周知，近两年国内外格局产生了巨大的变化，也就产生了新的形势和新的环境。 </p>
+<p style="text-align: left;">而在这种情况下， <strong>「技术创新」</strong>又该如何前行？ </p>
+<p style="text-align: left;">企业的难题，企业中人最有话语权。</p>
+<p style="text-align: left;">为此，小米集团创始人、董事长兼首席执行官 <strong>雷军</strong>、百度首席技术官 <strong>王海峰</strong>、搜狗CEO <strong>王小川</strong>等众多知名企业家、CTO齐聚一堂，围绕 <strong>《新形势下的技术创新之道》</strong>发表了各自的思考。 </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">除此之外，学术界大佬、中国工程院院士 <strong>李国杰</strong>等也参与其中，从不同的角度给出了别样的看法。 </p>
+<p>李国杰：别看发表多少论文、获多少奖，要看实实在在的贡献 </p>
+<p style="text-align: left;">正所谓「知其然，知其所以然」。</p>
+<p style="text-align: left;">李国杰院士先对 <strong>研究开发的目的</strong>做出了分析。他认为无非是三种原因： </p>
+<ul>
+<li>第一是 探索未知世界奥秘 ：满足人类的好奇心，在知识海洋中遨游。</li>
+<li>其次是 实验室形式的做工程任务 ：满足国家相关部门的需求。</li>
+<li>最后是 企业的形式 ：将知识变成产品和服务，提高人类的物质和文化生活水平。</li>
+</ul>
+<p style="text-align: left;">除了少数人是出于第一和第二种目的外，绝大多数的科研工作，最终体现的真正意义，是 <strong>市场产品或服务</strong>。 </p>
+<p style="text-align: left;">因此，李国杰院士认为：</p>
+<blockquote>
+<p style="text-align: left;"><strong>我们一定要形成以产品技术为目标导向的科技文化。</strong></p>
+</blockquote>
+<p style="text-align: left;"><strong>我们一定要形成以产品技术为目标导向的科技文化。</strong></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201024/c34159d89b104ddba21a17609786ffcd.png" /></p>
+<p><strong>△</strong>CCF名誉理事长 中国工程院院士 李国杰 </p>
+<p style="text-align: left;">至于为什么要呼吁重视产业技术，李国杰院士给出了明确的答案。他认为：</p>
+<blockquote>
+<p style="text-align: left;">研究与开发并不是从上游到下游的信息关系，产业技术的研究开发，反过来对基础研究和业务研究有很强的拉动力。</p>
+</blockquote>
+<p style="text-align: left;">研究与开发并不是从上游到下游的信息关系，产业技术的研究开发，反过来对基础研究和业务研究有很强的拉动力。</p>
+<p style="text-align: left;">一言蔽之， <strong>企业和高校之间的关系</strong>，不应该是一锤子买卖，而应当是多层次的互动。 </p>
+<p style="text-align: left;">所谓目标导向的基础研究和应用研究，主要不是看技术研究有什么新成果，而是要看产业技术研究的需求。</p>
+<p style="text-align: left;">然而，面对如此环节，李国杰提出了一个客观的问题：</p>
+<blockquote>
+<p style="text-align: left;">科学技术发展 <strong>最薄弱的环节</strong>就是产业技术。 </p>
+</blockquote>
+<p style="text-align: left;">科学技术发展 <strong>最薄弱的环节</strong>就是产业技术。 </p>
+<p style="text-align: left;">理由如下。</p>
+<p style="text-align: left;">一般而言，实验室技术是单向技术，但是产业技术本身是不能够有明显短板的；实验室技术也许能够解决90%的需求，但是剩下10%可能要花10倍以上的精力，甚至有时候要推倒重来。</p>
+<p style="text-align: left;">而且，不同企业级的产业技术，必须要考虑推出的时间、成本、鲁棒性、兼容性等等约束，所以在限制条件下的创新，有时候比原始创新来的困难。</p>
+<p style="text-align: left;">至于如何破局？李国杰院士从 <strong>两大方面</strong>指出了明路。 </p>
+<p style="text-align: left;">首先，是 <strong>人才</strong>方面——产业方式的人才，不能仅仅是自学之材，还应该是 <strong>知市之材</strong>。 </p>
+<p style="text-align: left;">也就是说，做科研一定要关注最终的目标，还要有更宏观一点的目标：为人类的文明做贡献。</p>
+<p style="text-align: left;">李国杰院士举了一个非常现实的例子：</p>
+<blockquote>
+<p style="text-align: left;">我们申请一大堆科研项目，每个人掌握多少科研经费，这个并不是目标，这是一种承诺是一种责任。</p>
+<p style="text-align: left;">所以发表了多少文章，获得多少奖励，再一个就是戴多少帽子，这些都是中间奖；最终是要看对科学技术和产业的发展，有没有实实在在的贡献和影响。</p>
+</blockquote>
+<p style="text-align: left;">我们申请一大堆科研项目，每个人掌握多少科研经费，这个并不是目标，这是一种承诺是一种责任。</p>
+<p style="text-align: left;">所以发表了多少文章，获得多少奖励，再一个就是戴多少帽子，这些都是中间奖；最终是要看对科学技术和产业的发展，有没有实实在在的贡献和影响。</p>
+<p style="text-align: left;">其次就是 <strong>生态</strong>方面，李国杰院士认为，发展产业技术一定要有一个健康的环境，并呼吁： </p>
+<blockquote>
+<p style="text-align: left;">计算机界的企业，要一起 <strong>构建企业的命运共同体</strong>；为中国的IT产业冲出重围作出历史性的贡献。 </p>
+</blockquote>
+<p style="text-align: left;">计算机界的企业，要一起 <strong>构建企业的命运共同体</strong>；为中国的IT产业冲出重围作出历史性的贡献。 </p>
+<p style="text-align: left;">对于李国杰院士的演讲，小米科技集团创始人、董事长兼CEO <strong>雷军</strong>表示非常认同： </p>
+<blockquote>
+<p style="text-align: left;">特别是2020年，对中国的科技创新是一个重要的分水岭。</p>
+<p style="text-align: left;">整个中国科技的创新未来何去何从，可能今年就是一个重要的转折点。</p>
+</blockquote>
+<p style="text-align: left;">特别是2020年，对中国的科技创新是一个重要的分水岭。</p>
+<p style="text-align: left;">整个中国科技的创新未来何去何从，可能今年就是一个重要的转折点。</p>
+<p style="text-align: left;">在如此背景下，雷军也是从 <strong>人才</strong>和 <strong>生态环境</strong>两方面入手，谈了下他对科技创新的想法。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201024/4ead9e8c60da46f1b8fe8f463beec0d0.png" /></p>
+<p><strong>△</strong>小米集团创始人、董事长兼CEO 雷军 </p>
+<p style="text-align: left;">「人才是创新的根源」，雷军为此举了小米在人才培养方面的例子。</p>
+<p style="text-align: left;">小米在内部专门成立了一个企业学院，叫做 <strong>清河大学</strong>，专注于员工的培训和教育。但雷军也表示，要把它做起来需要非常漫长的时间。 </p>
+<p style="text-align: left;">因此，「如何有效解决人才问题」，以及「如何成为全球人才的高地」，是现在需要共同探讨的问题。</p>
+<p style="text-align: left;">其次，是在 <strong>生态环境</strong>方面。 </p>
+<p style="text-align: left;">雷军认为，整个社会都弥漫着「成王败寇」的观点，因为创新是 <strong>失败999次只能成功1次</strong>的游戏，而在这种游戏中，失败者是绝大多数，失败次数也是惊人的： </p>
+<blockquote>
+<p style="text-align: left;">因此，一个宽松、包容的环境，是整个创业创新里最重要的事情。</p>
+</blockquote>
+<p style="text-align: left;">因此，一个宽松、包容的环境，是整个创业创新里最重要的事情。</p>
+<p style="text-align: left;">最后，面对CTO云集的现场，雷军针对 <strong>研发投入</strong>发表了自己的一些看法： </p>
+<blockquote>
+<p style="text-align: left;">每位CTO手里都有大量的研发预算，如何在其中拿出来一块，做5-10年的技术研发投入？</p>
+</blockquote>
+<p style="text-align: left;">每位CTO手里都有大量的研发预算，如何在其中拿出来一块，做5-10年的技术研发投入？</p>
+<p style="text-align: left;">雷军以小米为例，总结了成立10年能够进入世界500强企业，以及全球创新50强企业的一些经验—— <strong>三条永不更改的铁律</strong>： </p>
+<ul>
+<li>技术为本 ：所制造的产品在多项技术方面达到了全球领先，甚至是压倒性的。</li>
+<li>性价比为纲 ：在突破高端的同时，也要坚持这一点。</li>
+<li>做最酷的产品 ：以「小米透明电视」为例，别人质疑太贵没人买，小米把它变为商品，让人们体验到科技的进步。</li>
+</ul>
+<p style="text-align: left;">对此，CCF企工委主任、小米集团副总裁 <strong>崔宝秋</strong>评价道： </p>
+<blockquote>
+<p style="text-align: left;">他 <span>（雷军）</span>坚信，坚持创新死磕硬核技术，重视基础研发，才能在高质量发展的道路上，真正做到行稳致远。 </p>
+</blockquote>
+<p style="text-align: left;">他 <span>（雷军）</span>坚信，坚持创新死磕硬核技术，重视基础研发，才能在高质量发展的道路上，真正做到行稳致远。 </p>
+<p style="text-align: left;">从CEO的视角解读完技术创新，接下来是企业CTO角度。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201024/86db0838420e432b844da27bd1988db5.png" /></p>
+<p><strong>△</strong>百度首席技术官 王海峰 </p>
+<p style="text-align: left;">百度首席技术官 <strong>王海峰</strong>先是对CTO一职做了解读，他概括为 <strong>三大方面</strong>： </p>
+<ul>
+<li>首先，要洞察科技的发展趋势，统筹技术布局，而且要确保技术的领先性。</li>
+<li>其次，CTO虽然对技术负责，但是最终不仅仅是技术要领先，最终还是要让技术有用。</li>
+<li>最后，CTO也是要为企业的技术人才负责，要建设高效的研发体系，打造顶级的技术团队。</li>
+</ul>
+<p style="text-align: left;">王海峰认为，百度最为核心的技术就是 <strong>人工智能</strong>，而人工智能发展到了今天，不仅仅属于一家企业，而是属于全社会，属于各行各业： </p>
+<blockquote>
+<p style="text-align: left;">这时候我们把人工智能技术打造成一个软硬一体的AI大生产平台，进而形成现代的AI的信息基础设施。</p>
+</blockquote>
+<p style="text-align: left;">这时候我们把人工智能技术打造成一个软硬一体的AI大生产平台，进而形成现代的AI的信息基础设施。</p>
+<p style="text-align: left;">而百度人工智能技术的集大成就是 <strong>百度大脑</strong>，王海峰以 <strong>翻译</strong>和 <strong>语音</strong>两个领域为例，做了深入的讲解。 </p>
+<p style="text-align: left;">这两个方向都是大约在10年前，也就是2010年左右，百度开始着手的方向。</p>
+<p style="text-align: left;">而倒退到那个PC年代，翻译和语音的应用并不是非常广，那么为什么要在那个时候发力这两个领域呢？</p>
+<p style="text-align: left;">王海峰解释道：「这就是所谓的技术远瞻与近思」。</p>
+<blockquote>
+<p style="text-align: left;">因为我当时刚加入百度，我会看搜索用户到底有哪些需求，我发现搜索里面有几个百分点的需求都跟翻译相关，说明翻译需求很旺盛，但是当时解读的不是非常好。</p>
+</blockquote>
+<p style="text-align: left;">因为我当时刚加入百度，我会看搜索用户到底有哪些需求，我发现搜索里面有几个百分点的需求都跟翻译相关，说明翻译需求很旺盛，但是当时解读的不是非常好。</p>
+<p style="text-align: left;">此处王海峰还引用了「巴别塔」的例子，并表示 <strong>跨越语言鸿沟是人类一直以来的梦想</strong>。 </p>
+<p style="text-align: left;">而后十年至今的发展，也印证了王海峰及其团队当年的判断。</p>
+<p style="text-align: left;">现如今，百度每天翻译的量大概是达到1000亿字符，这是非常庞大的量。这个需求的确是随着技术的进步，随着产业的进步在充分的释放，而且在持续的增长。</p>
+<p style="text-align: left;">语音方面也是如此，王海峰当时也远瞻到了智能手机的普及，以及语音交互的需求。</p>
+<p style="text-align: left;">再后来，不仅仅是智能手机，语音技术用在了各种各样的设备中，将来可能还会变得无处不在。</p>
+<p style="text-align: left;">也是从十年才开始发力，百度语音做到现在，每天的使用量是超过155亿次。</p>
+<p style="text-align: left;">……</p>
+<p style="text-align: left;">最后，王海峰也认为 <strong>人才</strong>是非常之重要。 </p>
+<blockquote>
+<p style="text-align: left;">百度有1万多的工程师，我们同时跟各方一起合作，现在已经培养人工智能相关的人才总量超过100万。</p>
+<p style="text-align: left;">同时，我们希望未来五年联合社会各界，为我们国家培养人工智能技术和产业人才500万以上。</p>
+</blockquote>
+<p style="text-align: left;">百度有1万多的工程师，我们同时跟各方一起合作，现在已经培养人工智能相关的人才总量超过100万。</p>
+<p style="text-align: left;">同时，我们希望未来五年联合社会各界，为我们国家培养人工智能技术和产业人才500万以上。</p>
+<p style="text-align: left;">最后的主题演讲，来自CCF企工委副主任、CTO Club主席、搜狗CEO <strong>王小川</strong>。 </p>
+<p style="text-align: left;">在经历了10年CTO、10年CEO的生涯，他结合自己的职业发展和个人的经验，阐述了技术在企业中的角色，CTO在企业中的角色。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201024/4ca6aa0393c149dfa32bb7417dce8c4b.png" /></p>
+<p><strong>△</strong>CCF企工委副主任、CTO Club主席、搜狗CEO 王小川 </p>
+<p style="text-align: left;">王小川先是引用了邓爷爷的一句经典名言「技术就是第一生产力」。他认为：</p>
+<blockquote>
+<p style="text-align: left;">技术本身是有它的溢出效应，就是整个世界存在的规律，这种规律一方面靠人去认知它。</p>
+<p style="text-align: left;">而后把这种规律变成了我们的技术，让技术去理解这个世界。</p>
+</blockquote>
+<p style="text-align: left;">技术本身是有它的溢出效应，就是整个世界存在的规律，这种规律一方面靠人去认知它。</p>
+<p style="text-align: left;">而后把这种规律变成了我们的技术，让技术去理解这个世界。</p>
+<p style="text-align: left;">所以，王小川认为应当把技术和教育放到一个高度， <strong>需要把人培养起来</strong>。 </p>
+<p style="text-align: left;">那么，技术对于一个企业来讲有什么样的作用？王小川将其分为 <strong>三类</strong>。 </p>
+<ul>
+<li>第一种情况是，技术是对企业产生了 底层信息化的支撑作用 ，使得一个企业自身或者在行业当中，能够大大地降低他们的信息获取的速度，减少交易的成本。</li>
+<li>第二种情况是，技术对于企业是 一种驱动性的作用 ，就像引擎一样。技术好一些，就会使得整个公司的产品竞争力提升不少，搜索也好，推荐也好，而且逐步走向成熟的AI。</li>
+<li>第三种情况比较Geek，对技术要求更高，甚至在中间 产生颠覆性的作用 ，甚至引领这个行业达到变革。包括今天提到的无人驾驶、苹果引领的Siri人机交互等。</li>
+</ul>
+<p style="text-align: left;">而当技术对企业，甚至整个行业产生变革影响时，王小川认为，CTO对于企业而言，便不再是简单的「二号位」，而是决定了企业前进的方向。</p>
+<p style="text-align: left;">因此，王小川认为：</p>
+<blockquote>
+<p style="text-align: left;">对CTO而言，一定要定战略。一般到了总策略，把公司战略翻译成技术上的战略，CTO在里面要有更快的理解，有灵敏性的作用，当然也包括断事用人。</p>
+</blockquote>
+<p style="text-align: left;">对CTO而言，一定要定战略。一般到了总策略，把公司战略翻译成技术上的战略，CTO在里面要有更快的理解，有灵敏性的作用，当然也包括断事用人。</p>
+<p style="text-align: left;">最后，王小川分享了一下对于「如何做好CTO」的一点想法，包括四个维度：</p>
+<ul>
+<li>第一，要理解趋势，有自己的洞见。</li>
+<li>第二，有足够的同理心。</li>
+<li>第三，有非常强的好奇心。</li>
+<li>第四，得是一个通才。</li>
+</ul>
+<p style="text-align: left;">……</p>
+<p style="text-align: left;">以上便是CNCC2020首届CTO高峰论坛的精彩内容。</p>
+<p style="text-align: left;">从企业角度到学界角度，从CEO角度到CTO角度，都分别深入浅出地对技术之于企业、之于行业，甚至之于国家的意义，做了深刻的探讨。</p>
+<p style="text-align: left;">当然，接下来CNCC2020的内容更加精彩，感兴趣的读者可以持续关注哦~</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong><span>「百度AI开发系列课」免费报名！</span></strong></p>
+<p>5分钟上手，10分钟定制高精度AI模型，硬核百度EasyDL，小白也能学！ </p>
+<p>10.28日，百度高级工程师带你 <strong><span>轻松学AI开发</span></strong>、 <strong><span>实现AI模型训练与部署</span></strong>！扫码添加量子位小助手（qbitbot12）、加入课程直播群吧~▽ </p>
+<p><span><strong>p.s.</strong></span>参与群互动、完成课堂任务还有机会获得100元京东卡、《智能经济》图书等礼品哦~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜电竞直播名场面，不关弹幕能不能看清？虎牙：可
+http://www.sohu.com/a/426979318_610300	22935
+<blockquote>
+鱼羊 发自 凹非寺
+</blockquote>
+<blockquote>
+量子位 报道 | QbitAI
+</blockquote>
+<p>盆友，万众瞩目的S10半决赛马上要开始了，你闹钟定好了没？</p>
+<p>身在一个时不时就办公室开黑，连团建都在聚众玩健身环的编辑部里，我虽然游戏玩得菜，不妨碍直播看得及时啊~（手动狗头）</p>
+<p>毕竟要是错过了这种瞬秒双c的大场面，下回吹水插话buff不是又没了？</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201024/6146408a38b94e5bab0e906eec301482.gif" max-width="600" /></p>
+<p>不过直播追了一场又一场，游戏理解没啥长进，我却发现自己可能有点“猫饼”。</p>
+<p>明明大家都在关注比赛，我却看到了点别的……</p>
+<p>满屏的AI技术。</p>
+<h1>围观S10，我却被弹幕吸引了</h1>
+<p>事情是这样的，那天我习惯性打开虎牙，进入2020英雄联盟全球总决赛直播间。</p>
+<p>双方在大龙跟前开始互殴，我刚准备关掉满屏的弹幕认真围观一波团战，却发现这波弹幕有点不一样：</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201024/ad01ac90745745b4811635f00f6b90c4.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>大龙</strong>、<strong>英雄</strong>、<strong>大招</strong>……画面里的关键要素弹幕都完美绕开了。</p>
+<p>并且，画面还挺稳定流畅，在不关弹幕的情况下，比赛现场的细节都没有被遮挡。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201024/b76cc553f99e402e81c5d2c054ba9f25.gif" max-width="600" /></p>
+<p>有了这个功能，不错过选手神级操作的同时，尽情享受弹幕欢乐的氛围不是梦，可比调低弹幕透明度效果好多了，奈斯啊！</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201024/fbd440d516884c3b98ee479d79535c9e.jpeg" max-width="600" /></p>
+<p>诸君可能会觉得，这有啥，各大网站早已上线不挡人像的实时弹幕技术，这早就不是新鲜事儿了。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201024/a220a0f96b43429c83059851cec92eb6.gif" max-width="600" /></p>
+<p>但作为一个经常和程序员们一起开“吐槽大会”的科技编辑，直觉告诉我，即使看上去技术不算新奇，功能上线显得轻轻松松，用户体验满足起来貌似“毫不费力”，背后对于每一个实现细节的推敲，也可能让程序员偷偷又备了好几瓶生发液。</p>
+<p>毕竟，如果只是在海量弹幕里抠出人像，只要针对人体进行单类别语义分割就可以了，但在英雄联盟的比赛里，想要看清细节，涉及的目标物可就多得多了：英雄、大小龙、大招……</p>
+<p>思路飘到此处，那就不妨直接去问问虎牙的技术大佬。</p>
+<p>这一问，还真问出了点门道来：AI弹幕这事儿，看似简单，可也着实费心思。</p>
+<h1>直播背后的黑科技</h1>
+<p>别的不说，S10直播前一天，虎牙的工程师们就经历了肾上腺素飙升的一刻。</p>
+<p>原本，代码已经在测试环境里稳稳当当跑了一个星期，只等上线，但就在正式上线这前一天，工程师们发现，赛事方给到的数据流存在很多格式不一致的情况。</p>
+<p>也就是说，直播中某些线路会因为数据流格式的问题，没办法呈现智能弹幕的功能。</p>
+<p>时间紧急，好在技术团队通力合作，花了两三个小时的时间找到了问题所在，这才没耽误功能正式上线。</p>
+<p>但跟真正的难题比起来，这也只是一个“小插曲”。</p>
+<p>虎牙AI基础技术部总经理许佳介绍，实际上，智能弹幕的实现主要涉及CV中的两类技术：<strong>目标检测</strong>和<strong>目标分割</strong>。</p>
+<p>核心是针对当前画面，识别出英雄在哪里，放了什么大招，并把它们的位置和轮廓信息都准确地识别出来。</p>
+<p>乍一看，都是成熟可借鉴的技术，但真要应用到S10的赛事直播中，并且呈现出理想的直播效果，还是让虎牙的工程师们犯了难。</p>
+<p>前文也提到，比起单纯突出主播的智能弹幕，游戏画面中的要素复杂得多，特别是团战这样的关键画面中，英雄大小不一、各种技能光效都会对目标检测、目标分割造成干扰。而且这在全球直播领域，并没有可以参照的前例。</p>
+<p>具体而言，难点可以归结为为以下三点。</p>
+<h1>难点1：稳定性、实时性保障</h1>
+<p>首先，直播流是实时传输的数据， AI智能弹幕从输入到输出就需要在30ms内处理完毕。同时，在稳定性上，一旦处理结果发生丢帧或前后结果不一致，在用户看来画面的抖动就会很明显。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201024/48a35d47d92a441eb791f0d615a3722e.png" max-width="600" /></p>
+<p>在如今上线的版本中，虎牙主要通过三点来应对这一挑战。</p>
+<p><strong>模型精简</strong>：综合运用模型简化，压缩，推理优化等技术提高运行速度，同时确保准确性在95%以上。</p>
+<p><strong>智能调度</strong>：尽可能并行，根据超时，模型计算量来分派任务。</p>
+<p><strong>利用时间序列的关联性，通过文字，图像等多种信息结合来优化结果</strong>。</p>
+<h1>难点2：Mask的准确预测</h1>
+<p>许佳还坦言，虽然基于虎牙在技术底层架构的扎实积累，技术团队在3个星期内搞定了AI智能弹幕的初版，但在上线之前，后续他们花费了更多的时间、精力在Mask预测的迭代、优化上。</p>
+<p>这里麻烦的点在于，LOL的英雄有很多不同的皮肤，皮肤不同又会导致英雄形态完全不同。</p>
+<p>理论上，任意英雄的任意皮肤都有可能出现在比赛中。但从真实比赛场景中能获得的原始图像数据又是很有限的。</p>
+<p>因此，从训练数据集的角度来说，在构建阶段就需要充分考虑数据构造、数据均衡、数据增强等方法的设计。</p>
+<p>这里， 为了提高Mask预测的准确性，虎牙的工程师们创新地提出了背景生成技术， 通过虎牙之前积累的赛事数据，生成无英雄的背景视频，然后再通过背景相减的方法，来获得鲁棒mask分割。 在此基础上，再结合目标检测对英雄、大招等进行针对性处理， 这样在准确性上带来了很大的提升。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201024/4dc73e8695a146548882685d4dc8278b.png" max-width="600" /></p>
+<h1>难点3：观看体验的优化</h1>
+<p>另外，在游戏直播中，游戏角色运动也有其独特之处，比如单帧对象大多分布零散，比如在快速移动的同时，会伴随大量光影特效，计算其Mask后，Mask会产生非常快速的抖动，造成真实观看体验中的“眩晕感”。</p>
+<p>为此，虎牙技术团队在之前积累的光流算法SelFlow技术基础上，利用帧间信息，对mask进行平滑， 通过前后帧融合的后处理方式，来平滑观看体验。此外，虎牙前端的同学，也在用mask将弹幕和画面融合时，巧妙地加入边缘羽化处理，也很大程度上优化了观看体验。</p>
+<p>涉及的细节这么多，想要兼顾产品呈现和用户体验，对于虎牙技术团队而言挑战不算小。</p>
+<p>好在虎牙工程师们有足够的热情，发起这99分到100分的挑战——他们之中有很多都是LOL死忠粉、游戏硬核玩家。</p>
+<p>许佳就说，虎牙电竞赛事直播从s6就开始做了，现如今解决卡顿、画质之类的“温饱问题”，也有了很深的技术积累，对技术和产品团队来说，自然而然就想更进一步。</p>
+<p>虎牙的技术团队是一个愿意不断积累、不断挑战自我的团队，目标不仅仅是满足用户顺畅、清晰看到直播的基础需求，而是在此之上，还要给用户带来更好的观看体验。</p>
+<p>AI智能弹幕也正是因此诞生，虎牙工程师的目标是让用户在观赛的道路上“从温饱奔向小康”，以及在将来享受到更深层次的沉浸式体验。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201024/d263abe51cb748fcbd37595fb626d885.jpeg" max-width="600" /></p>
+<p>另一方面，虎牙在AI底层技术方面也早有动作。</p>
+<p>像AI智能弹幕和AI打点实时回放，及其相关的游戏内容实时理解架构，基本技术思路都是将大任务化成小任务并行协作，化繁为简。</p>
+<p>而其基础正是虎牙团队的Leaf-AI服务。这是虎牙自研的Serverless服务架构。</p>
+<p>基于此，任务背后多个小模型可以实现并行计算、按需伸缩，尽可能节约昂贵的GPU资源。在计算资源受限的情况下，还可以结合线上反馈及运行，进行无感知更新和效果切换，尽量把用户体验做到最佳。</p>
+<p>用心做产品，观众老爷们自然认可，反馈回来的结果也给工程师们打了一剂强心针。</p>
+<p>许佳透露，数据方面，在虎牙S10赛事的直播中，AI弹幕覆盖率达到了98%，也就是说98%的观众都会在观看比赛时打开弹幕防遮挡，数据说明一切，工程师们的用心和努力得到了最好的回应。</p>
+<p>而从感性的角度来说，有不少用户都在评论、弹幕中反映AI智能弹幕“有意思”。</p>
+<h1>电子竞技孵化的黑科技</h1>
+<p>说起来，跟电子竞技、游戏相关的AI黑科技，从AI浪潮兴起之初，就一路层出不穷。</p>
+<p>出圈如DeepMind的星际AI AlphaStar，不仅碾压99.8%人类对手，占据各家科技媒体头条，还正正经经登上了Nature。</p>
+<p>《吃豆人》、《打砖块》这样的经典小游戏，也被认为是孵化AGI（通用人工智能）的绝佳训练场。</p>
+<p>有时候你也搞不清楚，这群科研人员到底是为了催生黑科技才沉迷游戏，还是沉迷游戏顺手就写成了论文（误）。</p>
+<p>或许也可以说，游戏也是黑科技的第一生产力。参与电竞，也是在推动生产力呀~（手动狗头）</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201024/53282e9c36ba42a69014af484bf4a2ff.png" max-width="600" /></p>
+<p>目前弹幕的数量还没到顶峰时刻，半决赛以及总决赛现场肯定又是一波海量弹幕，这对于AI智能弹幕而言也是一次精彩的挑战。所以召唤师峡谷的盆友们，你们觉得今年LPL战区能再拿个冠军不？来唠唠看好哪支队呗？</p>
+<p>走过路过的盆友，也不妨一起来虎牙围观吐槽，感受一下电竞氛围呀~</p>

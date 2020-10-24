@@ -119,3 +119,249 @@ http://www.sohu.com/a/420416659_610300	2582
 <p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
 <p>一键三连「分享」、「点赞」和「在看」</p>
 <p>科技前沿进展日日相见~</p>
+➜原来最强赘婿在二次元长这样，秒穿次元壁的AI特效又双叒火了
+http://www.sohu.com/a/420553884_610300	18916
+<p>鱼羊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">虽然每天早晨甚至无法从50平米的地铺上醒来，但偶尔刷刷知乎，还是会被这类问题吸引住眼球——</p>
+<p style="text-align: left;">穿越到霸道总裁小说的世界，是一种怎样的体验？</p>
+<p style="text-align: left;">最近，一个能满足这种幻（xia）想的快手AI特效火了。</p>
+<p style="text-align: left;">不仅老铁们纷纷穿越，许多明星大V也贡献了自己的「言情小说脸」。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;">你看这位李雪琴老师，就瞬间女主光环加持，慵懒的眼神里又多了几分灵动的忧郁。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200924/b3b75ce01cee45709a0173a7e70e61ab.png" /></p>
+<p style="text-align: left;">硬糖少女刘些宁，更是引得网友直呼：这不就是霸道总裁小说封面女主本主吗？</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20200924/ec31d534ae104646951dcb5a2cae432f.gif" /></p>
+<p style="text-align: left;">还有歪嘴战神本神，到了二次元的世界，还是熟悉的配方，熟悉的味道。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200924/4e93b527b1ce46c1a71a8a1f7946f4a5.gif" /></p>
+<p style="text-align: left;">看到这些，我不禁产生了一个大胆的想法，让老婆们也一起穿越，不也就是举起手机就能搞定的事？</p>
+<p><strong><img src="http://p8.itc.cn/q_70/images03/20200924/86072a1431074245a2122629e296133d.jpeg" /></strong></p>
+<p><strong>△</strong>新垣结衣 </p>
+<p style="text-align: left;">嗯，新垣结衣是二次元走出来的实锤了！</p>
+<p style="text-align: left;">更妙的是，这样一个AI特效，不仅能实时捕捉每一个表情变化，模仿咆哮帝也能hold得住： <span style="font-size: 16px;"></span></p>
+<p><strong><img src="http://p7.itc.cn/q_70/images03/20200924/0636ccf26ddc49198afaac5bf96fd259.gif" /></strong></p>
+<p><strong>△</strong>明道 </p>
+<p style="text-align: left;">细节处理也着实奥利给，描眉画眼线这样的动作也不会让面部出现奇怪的扭曲。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200924/67c1a92effd848fdb11d1a0300178944.gif" /></p>
+<p>打破次元壁的技术 </p>
+<p style="text-align: left;">所以快手这一堪称「穿越神器」的AI特效，在技术上是如何实现的呢？</p>
+<p style="text-align: left;">快手工程师介绍，相比于此前的一些特效玩法，「手绘」系列最大的不同，是需要兼顾真实感、美感以及卡通效果三方面的要求。</p>
+<p style="text-align: left;">也就是说，既要最大程度保留用户本人的五官和外形特征，还要具备手绘风格的美学和艺术效果。</p>
+<p style="text-align: left;">这就对整体风格和局部细节的呈现都提出了高要求。</p>
+<p style="text-align: left;">为此，快手特效中心团队研发了一个基于GAN <span>（对抗生成网络）</span>的图像翻译和风格迁移学习训练框架，结合此前CycleGAN、U-GAT-IT等技术的主要优点，并根据实际需求进行了定制化的开发和优化。 </p>
+<p>CycleGAN </p>
+<p style="text-align: left;">CycleGAN可以说是GAN中的「前辈高人」，由UC伯克利的朱俊彦团队提出，影响了后续一众「换脸」研究。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200924/6ee3232cad30492e86c426a0ad9c0746.gif" /></p>
+<p style="text-align: left;">其最大的突破，是打破了图像风格转换中，需要成对图片训练集的限制。</p>
+<p style="text-align: left;">也就是说，在源域和目标域之间，无需建立训练数据间一对一的映射，就可实现风格迁移。</p>
+<p style="text-align: left;">就像下图中右侧所示。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20200924/6a8d662bac5747718f7dd21ea13e4c62.png" /></p>
+<p style="text-align: left;">基于此，去年香港中文大学贾佳亚教授团队，就曾提出过一个加强版的CycleGAN，可以将人脸照片转化成如同手绘图像，甚至还能反向转换，将二次元的卡通图像，转换成现实中可能的样子。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200924/c778e06b8e694a42bfad32f28b26a0fd.jpeg" /></p>
+<p>U-GAT-IT </p>
+<p style="text-align: left;">U-GAT-IT，是一种无监督图到图翻译算法，由韩国游戏公司NCSOFT开发。</p>
+<p style="text-align: left;">同样是打破次元壁的神器： <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20200924/6c801c9ea03f4e0d9e5f122740ec051b.png" /></p>
+<p style="text-align: left;">具体而言，U-GAT-IT由两个GAN组成。</p>
+<p style="text-align: left;">一个负责把现实世界的自拍照进二次元，即从源领域到目标域的翻译。</p>
+<p style="text-align: left;">另一个则反过来，能把二次元人物拉回到三次元中，即从目标域到源领域的翻译。</p>
+<p style="text-align: left;">同样，也不需要成对的训练数据。</p>
+<p style="text-align: left;">为了生成更加逼真的图像，U-GAT-IT还以端到端的方式引入了注意力机制和可学习归一化方法。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20200924/86678857852c4e2da629cab518d556f5.png" /></p>
+<p style="text-align: left;">在这一次快手手绘特效的实现上，训练同样以大量非配对数据为基础，并加上了一部分人工修图得到的配对数据作为引导，通过 <strong>混合训练</strong>的方式，既快速又精准地得到整体上较为接近手绘的风格化效果。 </p>
+<p style="text-align: left;"><span style="font-size: 16px;"></span>另外，由于手绘数据采集成本较高，所以研究人员还采用了 <strong>迁移学习</strong>的方法进行数据扩增，并根据快手用户日常进行的人像拍摄场景分布规律，进行了适配。 </p>
+<p style="text-align: left;">在 <strong>细节增强</strong>方面，快手则通过加入人脸关键点、人像语义分割等AI技术，精确地定位到对应的关键区域，并在整体的基础上重点加强局部区域的细节调整，以全局与局部的混合训练有效的提升了整体效果的呈现。 </p>
+<p style="text-align: left;">在此基础之上，针对手绘中特殊的线条和高光图案，研发人员也设计了对应的损失函数进行监督学习。</p>
+<p style="text-align: left;">而针对短视频的形式，快手的手绘特效还要考虑保障 <strong>实时效果</strong>，人怎么动，画面也要跟得上。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200924/20906dc955d34e20b6c69bb6d7ec37e6.gif" /></p>
+<p style="text-align: left;">这就涉及到 <strong>手机计算能力与模型计算量的适配</strong>、 <strong>脸部效果跟背景效果和素材的适配</strong>、 <strong>视频效果流畅性</strong>等诸多因素。 </p>
+<p style="text-align: left;">为此，从算法，到工程、特效、涉及等多个环节，研发人员都进行了大量的尝试，以及细致的优化、打磨。</p>
+<p>快手技术实力：不止于AI特效本身 </p>
+<p style="text-align: left;">打造这款特效的，是快手的Y-tech技术团队。</p>
+<p style="text-align: left;">快手Y-tech是快手在人工智能等前沿领域的探索者和先行者，以研发前沿科技、提升用户体验、创造用户价值为使命，致力于在计算机视觉、机器学习 、深度学习和计算机图形学等领域开展技术研究和业务落地。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200924/164a4ce9df304df5af01f40dde5f1bc2.jpeg" /></p>
+<p style="text-align: left;">其实，从技术的角度上来说，对于快手的工程师们而言，追求效果上的极致，还不是全部目标……</p>
+<p style="text-align: left;">更重要的一点，是要覆盖高、中、低端各种手机型号，让每一个档次的机型的能力都发挥到最大。</p>
+<p style="text-align: left;">一方面，是因为每一次的产品落地，都关系到4亿用户的实际体验，牵一发而动全身。</p>
+<p style="text-align: left;">另一方面，快手的用户特性决定，用户手中的手机型号分布会很广，不同机型算力和内存资源差异很大。</p>
+<p style="text-align: left;">为了能够让每一位天南地北的老铁都能够无差别地享受AI技术带来的乐趣，在技术的设计方案上，就既要力求让高端机充分发挥计算能力，给用户带来极致体验，同时也要在中低端机上做到逼近高端机的效果。</p>
+<p style="text-align: left;">也就是说，不管算力高低，在最后的用户体验上，都要实现GAN的「秒变」。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200924/19d4a3426bfb483fbd64b326f9523403.png" /></p>
+<p style="text-align: left;">这事实上涉及了三方面的指标： <strong>准确率</strong>、 <strong>能耗</strong>、 <strong>延迟</strong>。毕竟除了特效的实时性，如果一次使用电量就哗哗掉，手机温度蹭蹭涨，那也非常影响用户体验。 </p>
+<p style="text-align: left;">而要在跨度如此之大、很大一部分算力并无优势的硬件上，兼顾这三个指标，其中挑战不可谓不大。</p>
+<p style="text-align: left;">以这一次的「手绘」系列为例，工程师们进行了非常细致的方案细分和探索，针对不同的机型，采取差异化的AI模型生成方案。</p>
+<p style="text-align: left;">这实际上给AI算法和工程团队带来了更大的工作量。</p>
+<p style="text-align: left;">但对于快手工程师而言，让每一个档次机型的方案都尽可能达到更好的效果，既是一种「使命感」，也是一种刻在企业文化里的「技术特性」。</p>
+<p style="text-align: left;">近年来，快手已有不少AI产品成功落地、应用，其背后的技术路线，始终是坚持打造自研AI基础引擎、打造普惠AI算法，坚持让用户无差别享受高算力AI技术的 <strong>Hard模式</strong>。 </p>
+<p style="text-align: left;">比如自研YCNN深度学习推理引擎，是快手很多AI功能的强大加速器，是将AI模型迁移到不同场景、不同算力硬件的技术基础。</p>
+<p style="text-align: left;">比如定制化压缩模型，使快手能在考量各种边界条件、有限的计算以及内存资源条件下，把模型的计算量降到最小，同时又不影响算法效果。</p>
+<p style="text-align: left;">这在技术上的难度和积累，其实是不言而喻的。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200924/2985e2d1952f4cd08fa9ecf1298a487e.jpeg" /></p>
+<p style="text-align: left;">所以，每一次新的爆款，每一次给老铁们带来的新乐趣，其实都是快手技术团队实力的又一次强有力证明。</p>
+<p style="text-align: left;">而在技术可能加剧资源、地区和发展不平等的今天，快手运用自身强大技术，普惠每一个用户的技术民主化路线，也是其「接地气」的核心所在，是快手每一次新技术落地背后易于忽略却又令人感叹的地方。</p>
+<p style="text-align: left;">另外，像今天这样的特效，可能还只是快手专门集结特效中心的开头动作，后续可能还会有更多「接地气」的AI特效玩法……</p>
+<p style="text-align: left;">像是让二次元人物走进现实的动作捕捉这种：</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20200924/b2bb259a2ef74d519edbe737cc0706a4.gif" /></p>
+<p style="text-align: left;">所以如果你也有想到、期待一些新特效新玩法，不如评论区大胆表达起。</p>
+<p style="text-align: left;">说不定就是下一个火爆全网的短视频新玩法呢~ </p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>免费报名 | CV、NLP领域最新学术及工业实践交流 </strong></p>
+<p>9月25日-9月29日， <strong>京东智联云技术专家</strong>、 <strong>微软总部推荐系统负责人</strong>、 <strong>ALBERT第一作者</strong>等多位业内顶尖技术大咖，将聚焦CV、NLP最新学术及工业界技术实践带来分享。 </p>
+<p>扫码即可免费报名参与~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜患上乳腺癌后开发AI诊断模型，这位MIT女科学家获得AAAI首届百万美元最高奖
+http://www.sohu.com/a/420554058_610300	18916
+<p>杨净 贾浩楠 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">今天，由世界上最大的AI学会——AAAI颁发的， <strong>首届「AI诺贝尔奖」</strong>出炉！ </p>
+<p style="text-align: left;">获奖者是来自MIT计算机与人工智能实验室 <span>（CSAIL）</span>的Regina Barzilay教授。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20200924/be240cc5378b4e76ab0c81a6bf0e121a.jpeg" /></p>
+<p style="text-align: left;">获奖原因是，她开发了用来早期预警和防治乳腺癌、开发抗生素等药物的ML模型，获得了广泛的认可。</p>
+<p style="text-align: left;">明年2月，AAAI将正式为她颁发这一奖项——AAAI Squirrel AI 奖，奖金高达 <strong>100万美元</strong>。 </p>
+<p style="text-align: left;">AAAI前任主席兼奖励委员会主席Yolanda Gil表示：</p>
+<blockquote>
+<p>只有世界知名的奖项，比如图灵奖、诺贝尔奖，才会获得百万级别的奖金。</p>
+<p>该奖项旨在表彰那些在AI领域工作对人类、社会产生变革性影响的人。</p>
+</blockquote>
+<p>只有世界知名的奖项，比如图灵奖、诺贝尔奖，才会获得百万级别的奖金。</p>
+<p>该奖项旨在表彰那些在AI领域工作对人类、社会产生变革性影响的人。</p>
+<p style="text-align: left;">那么这位首届「AI诺贝尔奖」得主，究竟有何厉害之处？</p>
+<p>罹患癌症：从NLP转战医疗AI </p>
+<p style="text-align: left;">Regina Barzilay，MIT电机工程与计算机科学系教授、CSAIL成员。</p>
+<p style="text-align: left;">她曾在以色列内盖夫本古里安大学获得本科学位，随后前往哥伦比亚大学攻读计算机科学博士学位，并在康奈尔大学做了一年博士后研究。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200924/a8e6e27f397544b6995d8edcaf6d8073.jpeg" /></p>
+<p style="text-align: left;">Barzilay最早的研究领域并不是AI医疗，而主要是NLP <span>（自然语言处理）</span>，从句法解析和破译灭绝语言，到开发新的方法来训练神经网络。 </p>
+<p style="text-align: left;">她在这个领域可以说是卓有成就，多次获ACL、EMNLP、SLT最佳论文奖，ACL、AAAI奖学金，以及美国国家科学基金会 <span>（NSF）</span>职业奖、微软院士奖学金。 </p>
+<p style="text-align: left;">然而2014年的一次诊断改变了她的人生轨迹：她被诊断出患有 <strong>乳腺癌</strong>。 </p>
+<p style="text-align: left;">当时，Barzilay的第一反应是：“我会活下来吗？我的儿子怎么办？”</p>
+<p style="text-align: left;">但是作为一位AI领域的科学家，Barzilay又给自己提出了第三个问题：为什么乳腺癌不能更早早诊断出来呢？</p>
+<p style="text-align: left;">根据JAMA <span>（《美国医学会杂志》）</span>统计，乳腺癌，作为女性最常见的癌症之一，也是死亡人数最高的。 </p>
+<p style="text-align: left;">幸运的是，她的治疗很成功。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20200924/ca343ee5d92b49b0a0d474006f3f9b9f.jpeg" /></p>
+<p style="text-align: left;">在治疗过程中，她发现医疗团队在治疗护理方面已经做得很好了。</p>
+<p style="text-align: left;">但与此同时，在技术上可以做到的，却连最简单的事情都没有解决，比如，诊断延迟、无法收集数据，以及用作诊断研究中的统计缺陷等。</p>
+<p style="text-align: left;">也就是从那时开始，她开始关注乳腺癌早期防治医学上来。</p>
+<p style="text-align: left;">她创建了早期乳腺癌诊断和风险评估的算法模型，该项目已经在全球多家医院，包括瑞典、波士顿、中国台湾地区等地方落地。</p>
+<p style="text-align: left;">现在她正与巴西的Protea研究所等乳腺癌组织合作，为世界各地的贫困人口提供诊断工具。</p>
+<p style="text-align: left;">她发现，如果当时使用自己这个系统，那么医生至少可以提前 <strong>两三年</strong>发现她的癌症。 </p>
+<p style="text-align: left;">2018年，她正式成为「Susan Komen」基金会学者，一个由51位专家组成，专注于乳腺癌研究的美国规模最大的乳腺癌组织。</p>
+<p style="text-align: left;">除了将AI技术用于诊断，她也致力于开发用ML模型来研发新的药物。</p>
+<p style="text-align: left;">她跟合作者一起创建了用于选择治疗药物候选分子的模型，这些模型可以加快药物开发的速度。</p>
+<p style="text-align: left;">很快，就在去年，她就发现了一种名为 <strong>「Halicin」</strong>的抗生素。 </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20200924/3cfa05f9848145d895a27f0a4cc08a34.jpeg" /></p>
+<p style="text-align: left;">实验证明，它能够杀死致病细菌，包括很多对抗生素有抗药性的细菌，比如，鲍曼不动杆菌 <span>（医院感染的重要病原菌、主要引起呼吸道感染）</span>。 </p>
+<p style="text-align: left;">并由此，获得了2019年药物发现和医疗保健领域的前100名AI引领者 <span>（Top 100 AI Leaders in Drug Discovery &amp; Advanced Healthcare 2019）</span>。 </p>
+<p style="text-align: left;">作为J-Clinic共同负责人之一，最近专注于一个「AI Cures」的研究，这是一个跨机构的倡议，专注于开发负担得起的Covid-19抗病毒药物。</p>
+<p style="text-align: left;">MIT CSAIL负责人Daniela Rus表示，</p>
+<blockquote>
+<p>Regina一直是医疗AI领域的开拓者，她提出了关于我们如何使用机器学习来治疗和诊断疾病的重要问题。</p>
+<p>她既是一位杰出的研究者，也是一位忠实的教育者，我们CSAIL的所有人都被她的工作所鼓舞，并为有她作为同事而感到自豪。</p>
+</blockquote>
+<p>Regina一直是医疗AI领域的开拓者，她提出了关于我们如何使用机器学习来治疗和诊断疾病的重要问题。</p>
+<p>她既是一位杰出的研究者，也是一位忠实的教育者，我们CSAIL的所有人都被她的工作所鼓舞，并为有她作为同事而感到自豪。</p>
+<p style="text-align: left;">最值得一提的，就是她研发的早期乳腺癌诊断预警模型。</p>
+<p style="text-align: left;">正如今天，MIT CSAIL在社交网络上表示，2014年她被诊断为乳腺癌，2017年，他建立了早期诊断风险评估模型，然后在今天，成为首届AI诺贝尔奖得主，也主要因为这项工作。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20200924/45c7770e6ab34ccd8c97cd39b8b89d2d.png" /></p>
+<p style="text-align: left;">现在，她的这项研究——使用AI算法来判断癌症风险，已经投入临床了。</p>
+<p style="text-align: left;">过去最常使用的的算法是 <strong>Tyrer-Cuzick</strong>模型。 </p>
+<p style="text-align: left;">TC模型是在通用风险算法Gail上，结合了 <strong>乳房造影密度</strong>和 <strong>乳腺纤维腺体组织</strong>等乳腺癌风险因素的预警模型。 </p>
+<p><img height="auto" width="900" src="http://p6.itc.cn/q_70/images03/20200924/831e20218d454d1491779f6c442379a2.png" /></p>
+<p style="text-align: left;">但是，TC模型有明显的缺陷。因为乳房造影密度是一个主观概念，不同的医师在操作时，对于机器给出的阴影密度数值会有不同的判断。</p>
+<p style="text-align: left;">此外，TC算法考虑的因素不够全面，同一密度数值的患者，最终诊断结果可能完全不同。</p>
+<p style="text-align: left;">而针对TC模型的不足，Barzilay博士和她的团队开发了三种不同的模型。</p>
+<p style="text-align: left;">一种是基于传统风险因素进行判断的 <strong>逻辑回归模型</strong>（RF-LR）；将患者在进行乳房X光检查时的风险因素映射到患者在5年内是否患癌这个结果上。 </p>
+<p style="text-align: left;">第二个是仅基于X光片图像的深度学习模型；用PyTorch构建了一个深度卷积神经网络ResNet。给定一个乳房的1664 X 2048像素图片，模型会预测是否会在5年内发展成乳腺癌。</p>
+<p style="text-align: left;">最后一种是结合RF-LR和X光片的混合模型，这也是最终投入临床使用，准确率最高的模型。</p>
+<p style="text-align: left;">所有模型的训练数据，是团队从医疗机构获取的从2009年到2012年间，60886名患者的检查资料。其中既包括乳腺癌确诊，也有疑似乳腺癌，最后没有确诊的。</p>
+<p style="text-align: left;">团队还对每名提供资料的患者进行为期5年的医学随访，以确认模型的准确率。</p>
+<p style="text-align: left;">为了衡量模型捕获长期未来风险的能力，需要计算每种模型的AUC（接收器工作特性曲线下的面积），以区分3–5年内患癌症的患 者和5年内未患癌症的患者。</p>
+<p><img height="auto" width="1356" src="http://p2.itc.cn/q_70/images03/20200924/75776f7bf2974c4da9017e53641b6ad0.png" /></p>
+<p style="text-align: left;">混合模型的取得较好预测成绩的一个重要原因，是判断癌症发病率并不是仅仅按照X光片的组织致密度，而是综合了从过往病历中学习到经验，包括年龄、病史、生理周期等等因素。</p>
+<p style="text-align: left;">在临床对比中，在已确诊的乳腺癌患者中，混合模型在前期就对其中的 <strong>31%</strong>作出了预警，而传统的TC模型的有效预警仅有 <strong>18%</strong>。 </p>
+<p style="text-align: left;">目前这项技术已经在新加坡、中国台湾、美国、瑞典等等多家医院进行了测试。</p>
+<p>第一届AI“诺贝尔奖” </p>
+<p style="text-align: left;">颁出这个奖项的AAAI，大家已经很熟悉了， <strong>美国人工智能协会</strong>， 是人工智能领域的主要学术组织之一。 </p>
+<p style="text-align: left;">如今AAAI已经改名成了“人工智能促进协会”（the Association for the Advance of Artificial Intelligence）。</p>
+<p style="text-align: left;">说到这个奖项，是由国内的AI教育企业松鼠AI和AAAI联合设置的，当然，100万美元的奖金，也是由松鼠AI出。</p>
+<p style="text-align: left;">其实，奖项的全名，也冠上了“AAAI和松鼠AI人工智能人类福祉奖”（AAAI SQUIRREL AI AWARD FOR ARTIFICIAL INTELLIGENCE FOR THE BENEFIT OF HUMANITY）。</p>
+<p style="text-align: left;">这个奖项，颁给”用有意义的方式保护，增强和改善人类生活，并具有长效影响的的人工智能进展。”</p>
+<p style="text-align: left;">评奖委员会，也是AAAI的会员、学术界大佬，其中包括深度学习三巨头之一 <strong>Bengio</strong>。 </p>
+<p><img height="auto" width="1406" src="http://p9.itc.cn/q_70/images03/20200924/658c2dec6e6f407db95d17cc55c6b119.png" /></p>
+<p style="text-align: left;">在AAAI官网上，并没有说这是“AI诺贝尔奖”，只是去年松鼠AI与AAAI达成合作后，在国内的宣传上，用了“AI诺贝尔奖”这个词。</p>
+<p><img height="auto" width="600" src="http://p7.itc.cn/q_70/images03/20200924/cb11cede74ef45e2952377b81f99cd0b.png" /></p>
+<p><strong>△</strong>图源：中国网 </p>
+<p style="text-align: left;">“AI诺贝尔奖”是为了宣传，没有被广泛认可，甚至AAAI官网也没有这么说，但每年拿出100万美金的真金白银，确实没有假。 </p>
+<p style="text-align: left;">从获奖的Regina Barzilay博士来说，不幸罹患癌症，却能从中发现科研课题，并且坚持用几年时间持续研究，用AI将乳腺癌诊疗技术向前带动了重要一步，也为全世界无数女性患者，带来了更多先期发现治疗的希望。</p>
+<p style="text-align: left;">从人道主义角度考察，Barzilay博士获得这个奖实至名归。</p>
+<p style="text-align: left;">至于松鼠AI，算是用力所能及的方式为人工智能的发展做出了努力吧~</p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span>参考链接：</span></span></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span>https://news.mit.edu/2020/regina-barzilay-wins-aaai-squirrel-ai-award-artificial-intelligence-0923</span></span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">https://jclinic3.wixsite.com/reginabarzilay</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">https://news.mit.edu/2017/mit-computer-scientist-regina-barzilay-wins-macarthur-genius-grant-1011</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>免费报名 | CV、NLP领域最新学术及工业实践交流 </strong></p>
+<p>9月25日-9月29日， <strong>京东智联云技术专家</strong>、 <strong>微软总部推荐系统负责人</strong>、 <strong>ALBERT第一作者</strong>等多位业内顶尖技术大咖，将聚焦CV、NLP最新学术及工业界技术实践带来分享。 </p>
+<p>扫码即可免费报名参与~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜全球首款64核AMD工作站发布，搭载最新线程撕裂者Pro，号称“地表最强”
+http://www.sohu.com/a/420554669_610300	18916
+<p>晓查 发自 联想总部 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">联想在总部未来中心发布了全球首款64核工作站 <strong>ThinkStation P620</strong>，这也是全球首款采用AMD <strong>线程撕裂者Pro</strong>处理器的专业工作站。 </p>
+<p><img height="auto" width="1440" src="http://p1.itc.cn/q_70/images03/20200924/fbed1635ede54659a363e6873f488b5e.jpeg" /></p>
+<p style="text-align: left;">P620工作站最高可选64核128线程的锐龙3995WX CPU、双路NVIDIA Quadro RTX 8000专业GPU、1TB DDR4-3200内存和20TB硬盘。</p>
+<p style="text-align: left;">一直以来，受限于技术核架构设计，传统工作站单路工作站一般最多支持18核心，若想实现更高性能，往往需要另外添加CPU平台，组成双路工作站。</p>
+<p style="text-align: left;">而联想ThinkStation P620支持AMD锐龙线程撕裂者Pro达到了惊人的64核，最高主频4.0GHz，支持128个PCIe 4.0通道和8通道内存，大大超过了传统单路工作站的的性能。难怪联想将之成为“地表最强”工作站。</p>
+<p><img height="auto" width="1440" src="http://p8.itc.cn/q_70/images03/20200924/ff76b8a61d234fdcb20f47a8f3987e80.png" /></p>
+<p style="text-align: left;">P620最多支持两张NVIDIA Quadro RTX 8000或四张RTX 4000显卡，对于影音工作站来说，可以应付极为复杂的图像处理渲染场景，更流畅地加载复杂模型，极大缩短渲染时间。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20200924/7bd74631fb2e41fd8e41a56c5c8a2df6.png" /></p>
+<p style="text-align: left;">和台式机不同，P620是一款面向专业人士打造的工作站，专业用户不仅对硬件有着极致的要求，也追求机器高度的稳定性。</p>
+<p style="text-align: left;">联想和AMD共同打造了一款多路直通散热解决方案，确保整机稳定可靠。联想甚至还给P620进行了严苛的军标测试。</p>
+<p><img height="auto" width="1440" src="http://p3.itc.cn/q_70/images03/20200924/c3559a97b83e4e7fb84f80b3b1fa233c.png" /></p>
+<p style="text-align: left;">在经过63℃高温和-25℃低温24小时、多角落跌落、95%高湿度、霉菌测试等极限测试后，P620依然能正常工作。</p>
+<p style="text-align: left;">与此同时，P620延续了ThinkStation工作站的模块化设计，降低用户后续维护和升级难度。</p>
+<p style="text-align: left;">而实际上，联想ThinkStation工作站用户实际需要维护的情况极少见。2019年TBR返修率研究显示，联想工作站在前三年的返修率是所有供应商中最低的。</p>
+<p><img height="auto" width="1440" src="http://p1.itc.cn/q_70/images03/20200924/4c4da062900042078ac56fb7792a3edb.png" /></p>
+<p style="text-align: left;">在软件方面，联想ThinkStation P620为运行TensorFlow、PyTorch等机器学习工具的用户带来了高质量的解决方案。</p>
+<p><img height="auto" width="1440" src="http://p7.itc.cn/q_70/images03/20200924/6e451c8ea19d4130b14b6741e565e74a.png" /></p>
+<p style="text-align: left;">ThinkStation P620将于2020年9月上市，预计价格4599美元起，约合人民币3.1万元。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>免费报名 | CV、NLP领域最新学术及工业实践交流 </strong></p>
+<p>9月25日-9月29日， <strong>京东智联云技术专家</strong>、 <strong>微软总部推荐系统负责人</strong>、 <strong>ALBERT第一作者</strong>等多位业内顶尖技术大咖，将聚焦CV、NLP最新学术及工业界技术实践带来分享。 </p>
+<p>扫码即可免费报名参与~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>

@@ -1,0 +1,289 @@
+➜神经网络“炼丹炉”内部构造长啥样？牛津大学博士小姐姐用论文解读
+http://www.sohu.com/a/423214384_610300	16456
+<p>萧箫 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">神经网络就像“炼丹炉”一样，投喂大量数据，或许能获得神奇的效果。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201008/006d63a812e74156977a7f446138f149.png" /></p>
+<p style="text-align: left;">“炼丹”成功后，神经网络也能对没见过的数据进行预测了~</p>
+<p style="text-align: left;">然而，这种情况下，神经网络其实成了“黑匣子”——具有一定的功能，但看不见是怎么起作用的。</p>
+<p style="text-align: left;">如果只做简单的图像分类，其实还好；但如果用在医学方向，对疾病进行预测，那么神经网络下的“判断”就不可轻信。</p>
+<p style="text-align: left;">如果能了解它是怎么工作的，就更好了。</p>
+<p style="text-align: left;">出于这种考虑，来自牛津大学的博士生Oana-Maria Camburu撰写了毕业论文《 <strong>解释神经网络</strong><span>（Explaining Deep Neural Networks）</span>》。 </p>
+<p style="text-align: left;">在这篇论文中，她将这些“黑匣子”一个个打开，对神经网络原理进行了详细的解释。</p>
+<p>为什么要打开神经网络“黑匣子”？ </p>
+<p style="text-align: left;">事实上，神经网络之所以起作用，最直观的原因就是，它 <strong>由大量非线性函数组成</strong>。 </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201008/a86f31e467ef48918ac251b4c7254f12.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">这些非线性函数，使得网络可以学习原始数据中各种抽象级特征。</p>
+<p style="text-align: left;">然而，也正是因为神经网络中的这些非线性函数，使得人类往往难以理解，它们是如何起作用的。</p>
+<p style="text-align: left;">这就导致神经网络在疾病预测、信用额度、刑法等方向上“不太受欢迎”。</p>
+<p style="text-align: left;">医生和法律相关的研究者往往更乐意采用可解释模型，例如线性回归、决策树，因为神经网络在疾病预测中的确出过问题：</p>
+<p style="text-align: left;">人们利用神经网络预测肺炎患者的病情发展，其中一项患者特征为 <strong>是否有哮喘病史</strong>。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201008/4cad5080e7bd4aa1aaf7b8c3743cef2f.png" /></p>
+<p style="text-align: left;">神经网络经过训练后预测，有哮喘病史的患者死于肺炎的可能性较低。</p>
+<p style="text-align: left;">但其实结果恰好相反，哮喘本身会给肺炎带来雪上加霜的效果。</p>
+<p style="text-align: left;">之所以数据表明哮喘患者较少死于肺炎，往往是因为哮喘能被及早发现，所以患者得肺炎后能被及早治疗。</p>
+<p style="text-align: left;">如果这种神经网络被应用于实践中，将会带来非常危险的结果。</p>
+<p style="text-align: left;">此外，即使是神经网络，也会对男女性别产生 <strong>刻板印象</strong>、产生种族偏见。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201008/a7f5dad26ca040d4b0e27292231c4d3d.jpeg" /></p>
+<p style="text-align: left;">例如，调查表明，有些语料库和模型，在预测再犯时，会更“偏爱”男性。</p>
+<p style="text-align: left;">除了错误的预测和种族、性别歧视以外， <strong>神经网络还很脆弱</strong>。 </p>
+<p style="text-align: left;">为了让神经网络应用于更多的方向，也为了让我们更好地学习它的原理，作者从两个方向对神经网络进行了解释。</p>
+<p>2种方法解释神经网络 “事后再解释” </p>
+<p style="text-align: left;">第一种方法，称之为基于特征的解释方法，又叫“事后再解释”——因为这种方法，是在神经网络训练好后，才对其输入特征进行解释的。</p>
+<p style="text-align: left;">这种方法针对文本的词 <span>（token）</span>、或是针对图像的超像素 <span>（super pixels）</span>，进行“事后”解释。 </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201008/1b3e022a898645dda6421a2a271c9828.png" /></p>
+<p style="text-align: left;">目前这种方法应用较为普遍，不容易出现解释偏见，但需要验证解释方法的真实性。</p>
+<p style="text-align: left;">这里的根本原理，是研究外部解释方法给出的解释、与模型本身生成的自然语言解释之间，是否存在相关性，而相关性具体又是什么。</p>
+<p style="text-align: left;">在论文中，作者引入了一种新的验证方法，来判断解释方法的真实性。</p>
+<p>让神经网络自己解释 </p>
+<p style="text-align: left;">那么，如果能让神经网络一边训练、一边“解释自己”呢？</p>
+<p style="text-align: left;">这是论文提到的第二种方法，即在模型中植入一个生成预测解释的模块，对预测的结果进行解释。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201008/f54b6a954ac046a2a53739eb97e930c9.png" /></p>
+<p style="text-align: left;">至于神经网络对自己的解释是否正确，还需要人为进行判断。</p>
+<p style="text-align: left;">在这里面，作者同样引入了一种判断方法，对模型自己生成的解释进行判断，从而得出神经网络解释的结果。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201008/88e333a8b7d74da1b271e2a5f97df3a3.png" /></p>
+<p style="text-align: left;">对神经网络详细结构、具体解释方法感兴趣的小伙伴，可以戳下方论文地址查看~</p>
+<p>作者介绍 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201008/0d979a0bcb024408a2d4d341b9d6f425.png" /></p>
+<p style="text-align: left;">Oana-Maria Camburu，来自罗马尼亚，目前是牛津大学的博士生，主修机器学习、人工智能等方向。 </p>
+<p style="text-align: left;">高中时期，Oana-Maria Camburu曾获IMO <span>（国际奥数竞赛）</span>银牌。她曾经在马普所、谷歌实习，读博期间，论文被ACL、EMNLP、IJCNLP等顶会收录。 </p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span style="font-size: 16px;">论文地址：</span></span></p>
+<p><span style="font-size: 16px;">https://arxiv.org/abs/2010.01496</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>榜单征集！7大奖项锁定AI TOP企业</strong></p>
+<p><strong>「2020中国人工智能年度评选」</strong>正式启幕！将从公司、人物、产品、社区四大维度共7个奖项寻找优秀的AI企业，欢迎大家扫码报名参与。 </p>
+<p>榜单将于12月揭晓，也期待与百万从业者们，共同见证这些优秀企业的荣誉！ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜关于Python3.9，看这张16岁高中生做的「新特性必知图」就够了
+http://www.sohu.com/a/423214385_610300	16456
+<p>金磊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;"><strong>Python3.9</strong>，「千呼万唤始出来」。 </p>
+<p style="text-align: left;">先来速看下此次发布版本的重点。</p>
+<p style="text-align: left;">新 <strong>语法特性</strong>： </p>
+<ul>
+<li>PEP 584，为 dict 增加合并运算符。</li>
+<li>PEP 585，标准多项集中的类型标注泛型。</li>
+<li>PEP 614，放宽对装饰器的语法限制。</li>
+</ul>
+<p style="text-align: left;">新 <strong>内置特性</strong>： </p>
+<ul>
+<li>PEP 616，移除前缀和后缀的字符串方法。</li>
+</ul>
+<p style="text-align: left;">新 <strong>标准库中的特性</strong>： </p>
+<ul>
+<li>PEP 593，灵活的函数和变量标注。</li>
+<li>添加了 os.pidfd_open ，允许不带竞争和信号的进程管理。</li>
+</ul>
+<p style="text-align: left;"><strong>解释器</strong>方面的改进： </p>
+<ul>
+<li>PEP 573，从 C 扩展类型的方法快速访问模块状态。</li>
+<li>PEP 617，CPython 现在使用基于 PEG 的新解析器。</li>
+<li>……</li>
+</ul>
+<p style="text-align: left;">新 <strong>库模块</strong>： </p>
+<ul>
+<li>PEP 615，IANA 时区数据库现在已包含于标准库的 zoneinfo 模块。</li>
+<li>图的拓扑排序实现现在已由新的 graphlib 模块提供。</li>
+</ul>
+<p style="text-align: left;">为了更好地理解此次更新，Twitter上一位16岁少年 <strong>Pratham Prasoon</strong>，还自制了一张 <strong>「Python 3.9新特性必知图」</strong>。 </p>
+<p style="text-align: left;">列出了他认为比较重要的 <strong>八大新特性</strong>，广受网友好评。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201008/18174f7245b64ce584a723bc040c7c75.png" /></p>
+<p>字典合并与更新运算符 </p>
+<p style="text-align: left;">此次 <strong>「字典的合并与更新运算符」</strong>的新特性，是Python3.9的一大亮点。 </p>
+<p style="text-align: left;">合并 <span>(|)</span>与更新 <span>(|=)</span>运算符已被加入内置的 dict 类，扩充了现有的 dict.update 和 {**d1, **d2} 字典合并方法。 </p>
+<p style="text-align: left;">在Prasoon提供的图中也展示了对应的示例，如下图所示：</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201008/827a749790d447b3948d9484095e190c.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>新增用于移除前缀和后缀的字符串方法 </p>
+<p style="text-align: left;">在Python的官方文档，以及Prasoon的图表中，也着重展示了新的用于 <strong>「移除前缀和后缀的字符串」</strong>方法。 </p>
+<p style="text-align: left;"><span>str.removeprefix(prefix)</span>和 <span>str.removesuffix(suffix)</span>可以方便地从字符串中，移除不需要的前缀或后缀： </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201008/8ea591dcf8b54acbb7aec32dda28603a.png" /></p>
+<p>标准多项集中的类型标注泛型 </p>
+<p style="text-align: left;">在 <strong>类型标注</strong>方面，现在可以使用内置的多项集类型 <span>（例如 list 和 dict）</span>作为通用类型，而不必再从 typing 导入对应的大写形式类型名。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201008/1ac97f0304134c198c055296c02a9fa4.png" /></p>
+<p>__import__特性修改 </p>
+<p style="text-align: left;"><span>__import__ </span>现在会引发 <span>ImportError </span>而不是 <span>ValueError</span>。 </p>
+<p style="text-align: left;">至于原因，在Python的官方文档中有相应的解释：后者曾经会在相对导入超出其最高层级包时发生。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201008/7b28e9f3d5014560b3fc9e47c639c27a.png" /></p>
+<p>新增的模块 </p>
+<p style="text-align: left;">在新增模块方面， <strong>zoneinfo模块</strong>为标准库引入了 <strong>IANA 时区数据库</strong>。 </p>
+<p style="text-align: left;">这是一个基于系统时区数据的实体 datetime.tzinfo 实现，示例如下图所示。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201008/523ac61f003346ff887ed740d2f85bf1.png" /></p>
+<p>改进的模块 </p>
+<p style="text-align: left;">除了新增的模块外，Python3.9还对原有的一些模块进行了改进。</p>
+<p style="text-align: left;">Prasoon举出了他认为比较重要的一项—— <strong>Random</strong>。 </p>
+<p style="text-align: left;">名为 <span>random.Random.randbytes</span>的方法，可以用于生成随机字节串，如下图所示。 </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201008/dd2a9f334e0649a8a765cea0941c8814.png" /></p>
+<p style="text-align: left;">此外，还有 <strong>cancel_futures</strong>。 </p>
+<p style="text-align: left;">Python3.9将新的 cancel_futures 形参，添加到 <span>concurrent.futures.Executor.shutdown</span>，可以取消尚未开始运行的所有挂起的 Future，而不必等待它们完成运行再关闭执行器。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201008/ca5e5df89088431d8a2dda1f7aec551f.png" /></p>
+<p style="text-align: left;">当然，除了这八大新特性外，Python官方文档也更为详细地列举了此次更新的内容。</p>
+<p style="text-align: left;">感兴趣的读者可以戳文末链接做更深入的了解。</p>
+<p>关于作者 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201008/8fbc5c6d203547a8aabf767c558be9ce.png" /></p>
+<p style="text-align: left;">Pratham Prasoon是一位16岁的印度高中生，对金融充满激情，对编程世界充满好奇，自称是一个科学怪才 <span>（science geek）</span>。 </p>
+<p style="text-align: left;">作为一名编程人员，他认为自己是「工具不可知」类型选手，也就是说，没有特别唯一是使用的编程语言，而是会根据自己的目的而做出选择。</p>
+<p style="text-align: left;">目前，他正在学习React、 Flask、Django和Tensorflow。</p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span>参考链接：</span></span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>榜单征集！7大奖项锁定AI TOP企业</strong></p>
+<p><strong>「2020中国人工智能年度评选」</strong>正式启幕！将从公司、人物、产品、社区四大维度共7个奖项寻找优秀的AI企业，欢迎大家扫码报名参与。 </p>
+<p>榜单将于12月揭晓，也期待与百万从业者们，共同见证这些优秀企业的荣誉！ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜89岁诺奖得主罗杰·彭罗斯，有一个令人咂舌的家族
+http://www.sohu.com/a/423214615_610300	16456
+<p>雷刚 发自 凹非寺 </p>
+<p>量子位&amp;凤凰网科技 联合出品 </p>
+<p>什么叫“牛X的人，很早就全家牛X了”、“家学渊源”、“家族基因”……</p>
+<p>新晋诺贝尔物理学奖得主Roger Penrose <span>（罗杰·彭罗斯）</span>就是最好的说明。 </p>
+<p>10月6日，2020诺贝尔物理学奖揭晓，英国物理学家罗杰·彭罗斯 <span>（Roger Penrose）</span>、德国天体物理学家赖因哈德·根策尔 <span>（Reinhard Genzel）</span>和美国天文学家安德烈娅·盖兹 <span>（Andrea Ghez）</span>共同加冕科学最高荣誉，表彰他们黑洞方面的研究贡献。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201008/3f1d825ad7134743bdf83f36b726d796.jpeg" /></p>
+<p>其中，1931年出生、已89岁的彭罗斯教授，获奖原因是发现黑洞形成是广义相对论的有力预言，获得1000万瑞典克朗奖金的一半。 </p>
+<p>而关于罗杰·彭罗斯教授和他背后的家学渊源，也在诺贝尔奖后受到了更多关注。</p>
+<p>真是满门院士、全家贵族，一家都有维基百科……</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201008/dd4ad4770f274bde90f838c2fbac9642.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>△</strong>Via 微博@活儿姐Luna 罗杰·彭罗斯本人：霍金好友，诸多偶像科学家的偶像 </p>
+<p>首先，我们还是先从获奖的罗杰·彭罗斯教授说起。</p>
+<p>诺奖刚宣布，大家首先关注到的自然是获奖原因，这是科学最高荣誉首次颁向黑洞研究，而且在霍金教授仙逝两年之后，颁给了他的科研好友彭罗斯教授。</p>
+<p>实际上，1931年出生的罗杰·彭罗斯教授，比霍金年长11岁。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201008/43f3f17f2e59420580ee8ddd16ae62ab.jpeg" /></p>
+<p>他出生于英国科尔切斯特，毕业于伦敦大学学院，随后前往剑桥大学攻读博士学位。</p>
+<p>目前，他是是英国数学物理学家，牛津大学数学学院教授。1994年还因对科学的贡献被授予英国爵位。 </p>
+<p>在诺奖之前，罗杰·彭罗斯教授还跟霍金教授有过多次同台获奖的经历，比如伦敦皇家天文学会艾丁顿奖、沃尔夫物理学奖，二人也有合着：《时空的本质》。</p>
+<p>但是，罗杰·彭罗斯教授可不是一个名字离不开“霍金”的人，除了物理学，他在数学、科学哲学等领域都颇有建树。</p>
+<p>而且国际象棋也下得很好——准确地说，他们全家都下得很好。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201008/7ef7eb3f3287497c94f7dda699cc2bbd.jpeg" /></p>
+<p>这种科学领域的全能之才，让罗杰·彭罗斯教授在诸多领域都有重要思想。 </p>
+<p>比如在人工智能领域，他早就发表过看法，不看好模仿人类大脑来打造AI的思路，因为计算机是理性算法和逻辑实现的产物，但人类大脑——即便是理性的那部分，也不完全是算法的。</p>
+<p>甚至罗杰·彭罗斯教授对计算机的观点，还被“AI之父”马文·明斯基批判过：</p>
+<blockquote>
+<p>罗杰·彭罗斯试图在一章接一章地表明，人类的思想不能建立在任何已知的科学原理之上。</p>
+</blockquote>
+<p>罗杰·彭罗斯试图在一章接一章地表明，人类的思想不能建立在任何已知的科学原理之上。</p>
+<p>至于罗杰·彭罗斯教授在计算机领域的认知对不对，我们最后还有个“小彩蛋”。</p>
+<p>不过罗杰·彭罗斯教授的诸多科学思考和分享，不仅没有打击其他科学家对人类智能和AI的研究，反而成为了他们学术道路的榜样。</p>
+<p>比如中国人民熟悉的AI女神科学家——斯坦福大学教授 <strong>李飞飞</strong>。 </p>
+<p>在诺奖公布后，李飞飞教授就发推称：</p>
+<blockquote>
+<p>罗杰·彭罗斯教授是我童年时的偶像，他不仅是物理学巨人，也是重要的知识分子榜样，正是他的着作激励我从物理学转向神经科学，最终走上AI研究之路。</p>
+</blockquote>
+<p>罗杰·彭罗斯教授是我童年时的偶像，他不仅是物理学巨人，也是重要的知识分子榜样，正是他的着作激励我从物理学转向神经科学，最终走上AI研究之路。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201008/35876484f8634aecb8a76fcc60834ce4.png" /></p>
+<p>另外，博学多才，罗杰·彭罗斯教授众所公认的品质之一。</p>
+<p>而这种博学，或许跟其出生的传奇家庭家族密不可分。</p>
+<p>父亲：英国遗传学大牛 </p>
+<p>罗杰·彭罗斯的父亲，Lionel Penrose，莱昂内尔 · 彭罗斯。</p>
+<p>是英国知名的遗传学专家、精神病学专家、儿科医生、数学家，1960年拉斯克医学奖得主——该奖也有诺贝尔风向标之称，2020年诺奖医学奖获奖者就都有拉斯克获奖经历。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201008/b2d72722c8bd45e49b6b9a9273d76cf8.jpeg" /></p>
+<p>莱昂内尔 · 彭罗斯在艺术方面也颇有造诣，比如国际象棋、音乐和绘画等。 </p>
+<p>他也是第二次世界大战后英国医学遗传学的核心人物，甚至被奉为“优生学”的宗师——虽然莱昂内尔 · 彭罗斯并不喜欢“优生学”这个名字。</p>
+<p>但是，莱昂内尔 · 彭罗斯确实对自己的四个儿女，都实现了 <strong>优生优育</strong>。 </p>
+<p>这次荣膺诺奖的罗杰·彭罗斯教授，家中排行第二，他的哥哥弟弟和妹妹，全都是各自领域内大牛。</p>
+<p>而且还像是父亲“能力”的精准继承和发扬。</p>
+<p>哥哥：理论物理学家 </p>
+<p>Oliver Penrose，奥利弗·彭罗斯。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201008/64af052ff14c4e4f8d0b3bdf73680a77.jpeg" /></p>
+<p>丁堡赫瑞瓦特大学的数学教授，以非对角长程序的概念而闻名，是当今理解超流体和超导体的核心，他的研究还覆盖了更抽象的时间理解和量子力学，是国际知名的理论物理学家。 </p>
+<p>关于奥利弗·彭罗斯的研究成果，可能另一位受他启发的物理学家更令中国人民熟知——没错，诺贝尔奖得主杨振宁教授的超导与超流的判据，就是沿此而来的。</p>
+<p>弟弟：国际象棋大师 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201008/8f2d183f3a624dd4aa3bbee8c8fdf22b.jpeg" /></p>
+<p>Jonathan Penrose，乔纳森·彭罗斯。 </p>
+<p>英国国际象棋大师，17岁时就初露锋芒，被认为是英国顶级象棋选手，在1958年至1969年间赢得了10次英国国际象棋锦标赛冠军。</p>
+<p>1961年赢得了国际大师赛冠军，其后超过了英国国际象棋传奇亨利 · 欧内斯特 · 阿特金斯的成就，创造新纪录。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201008/cd0947fee25042fcbec90b80a2001358.jpeg" /></p>
+<p>1993年，他被国际棋联授予特级大师称号。 </p>
+<p>此外，乔纳森·彭罗斯还是一位心理学家，大学讲师，拥有博士学位。</p>
+<p>妹妹：遗传学家 </p>
+<p>Shirley Penrose，婚后改了夫姓，现在叫Shirley Hodgson，雪莉·霍奇森。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201008/e3682bc8222b4319b5240738f334c939.jpeg" /></p>
+<p>是英国知名的医学科学家、遗传学家。在伦敦大学圣乔治学院任教，是癌症遗传学教授。 </p>
+<p>雪莉·霍奇森也是英国皇家医学院院士、英国皇家生物学会院士。</p>
+<p>父亲一支，满门贵族 </p>
+<p>此次主人公罗杰·彭罗斯的父亲，莱昂内尔 · 彭罗斯，可以说儿女个个成龙成凤。</p>
+<p>不过，如果从“基因”上来说，这也不全是他的“功劳”。</p>
+<p>因为光在他这一支，“祖上”也足够传奇，都有专门百科收录。</p>
+<p>罗杰·彭罗斯的 <strong>爷爷</strong>，J. Doyle Penrose，詹姆斯 · 多伊尔 · 彭罗斯，是一位爱尔兰画家。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201008/876cafa967dd4a14b98338b1abf09ce0.jpeg" /></p>
+<p><strong>△</strong>J. Doyle Penrose画作 </p>
+<p>听起来不像是“贵族”，但娶到的却是当时顶级贵族家的千金。 </p>
+<p>罗杰·彭罗斯的 <strong>奶奶</strong>，Elizabeth Josephine Peckover，出身名门，是英国贵族、银行家、一等男爵士——Alexander Peckover的女儿。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201008/874381dae41e4f38a80d766cc1898067.jpeg" /></p>
+<p>据说亚历山大男爵还曾立遗嘱，拒绝让自己的孙子继承贵族头衔： </p>
+<p>“If my grandson wants the title he must earn it.”</p>
+<p>如果我的孙子想要头衔，他必须自己争取。</p>
+<p>没想到，他的孙子真的靠科学贡献，获得授勋。</p>
+<p>此外，罗杰·彭罗斯的 <strong>叔叔</strong>，Roland Penrose，罗兰 · 彭罗斯爵士，也是英国知名的艺术家、历史学家和诗人，甚至在二战中把“伪装艺术”应用到了反法西斯军事行动中。 </p>
+<p>母亲一支，知识精英 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201008/12af082955df4d3f9322400d068fc985.jpeg" /></p>
+<p>罗杰·彭罗斯的 <strong>母亲</strong>，Margaret Leathes，玛格丽特·利斯，学术成就方面的公开资料不多。 </p>
+<p>但家族也颇为传奇。</p>
+<p>罗杰·彭罗斯的 <strong>太外公</strong>，Stanley Leathes，斯坦利·利斯，是载入史册的英国神学家和东方学家。斯坦利·利斯的岳父，还是大英皇家御医。 </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201008/794afabea49945848d87310bca4ee72e.jpeg" /></p>
+<p>罗杰·彭罗斯的 <strong>外公</strong>， John Beresford Leathes，约翰·贝雷斯福特·利斯，是英国的生理学家和早期的生物化学家，伦敦皇家学会会员。 </p>
+<p>罗杰·彭罗斯的 <strong>外舅公</strong>， Stanley Mordaunt Leathes，斯坦利 · 莫顿特·利斯，是英国诗人、经济学家、历史学家和政府高官，也被授勋爵士。 </p>
+<p>而关于罗杰·彭罗斯的母亲，虽然公开成就方面的资料有限，但有这样四个各领域大牛儿女，想必也极为不凡了。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201008/26fbb4853410494a83936322e42cadb0.jpeg" /></p>
+<p>所以有网友说：该给妈妈颁个大教育家。 </p>
+<p>此外，玛格丽特·利斯的才华和魅力，或许也能通过另一件事管窥。</p>
+<p>开头不是也说了罗杰·彭罗斯教授在AI相关方面，也有不少知名且深刻的思考。</p>
+<p>有人就认为，这可能与其 <strong>继父</strong>有关。 </p>
+<p>因为罗杰·彭罗斯的继父，正是大名鼎鼎的Max Newman，麦克斯·纽曼。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201008/3f2d91c19ddb4a7d9689b98be0f58db2.jpeg" /></p>
+<p>英国数学家、密码学家，发明了世界上第一台可工作的电子储存程序电子计算机，也是AI之父阿兰·图灵的老师。 </p>
+<p>在1973年，纽曼教授的发妻去世后，时年76岁的他与玛格丽特·利斯 <span>（莱昂内尔 · 彭罗斯在一年前去世）</span>结为夫妻。 </p>
+<p>Max Newman也就成了罗杰·彭罗斯教授的继父。</p>
+<p>互动一则 </p>
+<p>当然，英国这种家学渊源、满门院士的情况，似乎也符合“贵族”传统。</p>
+<p>无独有偶，人工智能领域也有一位这样的大牛，他的家族和履历也非常传奇，而且还跟中国人民颇有交集。</p>
+<p>量子位后台回复 <strong>传奇</strong>，即可了解这位乔治·布尔的后裔。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201008/47fe69ff89594587a338c2e5bd75cdbb.jpeg" /></p>
+<p>如果你还知道其他类似的家学渊源故事，也欢迎告诉我们。</p>
+<p>对了，虚构的《生活大爆炸》里的Leonard莱纳德一家，不算哦~</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201008/b6fcfcc2bbb14946a3d53b5d6153d9ec.gif" /></p>
+<p style="text-align: left;"><span style="font-size: 16px;">参考链接：</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">https://en.wikipedia.org/wiki/Roger_Penrose#Family_life</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">https://en.wikipedia.org/wiki/Lionel_Penrose</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">https://en.wikipedia.org/wiki/Oliver_Penrose</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">https://en.wikipedia.org/wiki/John_Beresford_Leathes</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">https://en.wikipedia.org/wiki/Roland_Penrose</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">https://en.wikipedia.org/wiki/Max_Newman#</span></p>
+<p>— <strong>完</strong>— </p>
+<p><strong>榜单征集！7大奖项锁定AI TOP企业</strong></p>
+<p><strong>「2020中国人工智能年度评选」</strong>正式启幕！将从公司、人物、产品、社区四大维度共7个奖项寻找优秀的AI企业，欢迎大家扫码报名参与。 </p>
+<p>榜单将于12月揭晓，也期待与百万从业者们，共同见证这些优秀企业的荣誉！ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
