@@ -1,0 +1,157 @@
+➜从这4个方面，帮新手快速入门VR界面设计
+https://www.uisdc.com/vr-ui-design	58258
+<p>在过去的十年中，我们已经针对从手机到二十英尺交互式显示器的各种屏幕尺寸和输入类型设计了数字产品。尽管不同的屏幕尺寸都有其优点和缺点，但它们都遵循相似的设计原理：二维表面，受约束的边框和基于单击的输入方法。几年前，虚拟现实设计应用程序开拓出新的设计领域，这一设计将与我们之前使用的任何类型的屏幕都大不相同。</p>
+<p><span class="img-zoom"><img alt="从这4个方面，帮新手快速入门VR界面设计" class="alignnone size-full wp-image-393445" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-vr-20201025-1.gif" width="639" height="412" /></span></p>
+<p>经过一段时间的积累，国内外很多团队都有了相应的一些概念和设计想法，今天就来和大家理一理VR设计的基本原理。</p>
+<h4><span class="auto_menu">基础原则</span></h4>
+<p><strong>1. 优化性能</strong></p>
+<p>保持帧速率高于60fps是至关重要的，确保帧速率保持稳定也同样关键。没有这个，您就有可能会晕车。人类的前庭系统是一个善变的野兽，这意味着您要与开发团队定下VR产品的性能天花板是怎样的。低保真度和高稳定性优于高保真度和低稳定性，VR分辨率较低，但以120fps的速度运行，在硬件级别是一个很好的例子。</p>
+<p><strong>2. 优先考虑舒适度</strong></p>
+<p>菲特定律在虚拟现实中完全有效，可以确保用户节省运动轨迹：将关联使用的动作（即下一个/上一个）集群在一起，使布局具有规则性等。事先规划您的应用程序是更适合坐着还是站着，或是需要完整360°旋转。</p>
+<p><span class="img-zoom"><img alt="从这4个方面，帮新手快速入门VR界面设计" class="alignnone size-full wp-image-393446" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-vr-20201025-2.gif" width="600" height="386" /></span></p>
+<p><strong>3. 优先考虑易于学习</strong></p>
+<p>由于VR的相关应用普及的还很少，因此UI速记的空间很小。这意味着你得确保所有内容都能提供清晰的反馈，通过操作而不是文本说明来解释交互，并及时引入关键概念。</p>
+<p><span class="img-zoom"><img alt="从这4个方面，帮新手快速入门VR界面设计" class="alignnone size-full wp-image-393447" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-vr-20201025-3.gif" width="400" height="257" /></span></p>
+<p><strong>4. 避免过于刻板</strong></p>
+<p>过去十年的大部分时间里，我们都在从极致的拟物走向简约。VR设计中许多人的第一本能是使一切表现得和现实世界无限接近。但事实是我们不需要重现日常存在的所有细节，在有用的情况下使用来自现实世界的提示，但要充分利用VR环境的物理特性和灵活性这一特点。</p>
+<p><strong>5. 声音是至关重要的细节</strong></p>
+<p>不要低估它，这是VR软件与日常软件极其差异化的一点。人们尚且不会在VR中进行多任务处理，同样也不会同时在现实世界中做任何其他事情。用户的注意力完全由VR掌控，而声音可以帮助用户摆正自己的位置并专注于该任务。这也是设计师可以向用户提供反馈的基本方法之一。</p>
+<h4><span class="auto_menu">相机</span></h4>
+<p><strong>1. 请勿在相机上放置物品</strong></p>
+<p>如果无法移开视线，这会很不舒服，想想当您的眼镜上有污迹时是什么样的感受。</p>
+<p><strong>2. 请勿使相机加速或减速</strong></p>
+<p>保持相机以恒定的速度移动，加速和减速将使用户感到不舒服。请遵循以下规则：向前&gt;向后，向上/向下&gt;向左/向右扫射，快速相机剪切&gt;相机缓慢旋转。</p>
+<p><strong>3. 尝试匹配用户眼睛的高度</strong></p>
+<p>用户矮还是高？想想幼儿与姚明之间的视角差异。对于位置跟踪的系统，这要容易得多，但是当位置跟踪不可用时，可以预先考虑它。</p>
+<p><span class="img-zoom"><img alt="从这4个方面，帮新手快速入门VR界面设计" class="alignnone size-full wp-image-393448" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-vr-20201025-4.jpg" width="800" height="450" /></span></p>
+<h4><span class="auto_menu">UI元素</span></h4>
+<p><strong>1. 定位</strong></p>
+<p>距眼睛小于0.5m的物体很难聚焦，超过20m的物体又会难以分辨。我们现有的基于屏幕的VR显示器和光学元件，眼睛会聚焦在2m的距离处。在距用户2m-10m的范围内，是物体摆放的舒适区。</p>
+<p><span class="img-zoom"><img alt="从这4个方面，帮新手快速入门VR界面设计" class="alignnone size-full wp-image-393449" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-vr-20201025-5.jpg" width="800" height="276" /></span></p>
+<p><span class="img-zoom"><img alt="从这4个方面，帮新手快速入门VR界面设计" class="alignnone size-full wp-image-393450" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-vr-20201025-6.jpg" width="800" height="450" /></span></p>
+<p>△ 图片：Mike Alger</p>
+<p><strong>2. 头部运动范围</strong></p>
+<p>三星互动设计师亚历克斯·朱（Alex Chu）对舒适的运动范围进行了研究：</p>
+<ul>
+<li>左/右：左右30°为舒适区域，最大角度是55°</li>
+<li>向上：向上下20°为舒适区域，最大角度是60°</li>
+<li>向下：向下最大12°为舒适区域，最高角度是40°</li>
+</ul>
+<p>谷歌的迈克·阿尔杰（Mike Alger）将这一理论进行了图形化：</p>
+<p><span class="img-zoom"><img alt="从这4个方面，帮新手快速入门VR界面设计" class="alignnone size-full wp-image-393451" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-vr-20201025-7.gif" width="520" height="335" /></span></p>
+<p><span class="img-zoom"><img alt="从这4个方面，帮新手快速入门VR界面设计" class="alignnone size-full wp-image-393452" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-vr-20201025-8.jpg" width="800" height="448" /></span></p>
+<h4><strong>3. 相互作用</strong></h4>
+<p><strong>焦点和激活反馈十分必要</strong></p>
+<p>VR中没有东西是明显可操作的，因此在聚焦时，对象需要表明其是否可操作。声音对此是有所帮助的，尤其是在激活反馈这一场景下。</p>
+<h4><strong>4. 运动</strong></h4>
+<p><strong>避免在靠近大型物体的时候高速横向运动</strong></p>
+<p>试着短距离慢步向前或向后移动能有效改善眩晕感。</p>
+<p><strong>避免把物体向用户快速移动</strong></p>
+<p>当物快速移向你的脸时，第一反应绝对是低头躲避，这绝不会是你想触发的用户本能。</p>
+<p><strong>小心移动用户视角</strong></p>
+<p>如果需要让用户有所走动，请不要使用加速度。最好的选择是立即将它们从一个位置移动到另一位置，即“传送”。可以试着遵循这个使用优先规则：向前&gt;向后，向上/向下&gt;向左/向右扫射，快速相机剪切&gt;相机缓慢旋转。</p>
+<p><span class="img-zoom"><img alt="从这4个方面，帮新手快速入门VR界面设计" class="alignnone size-full wp-image-393453" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-vr-20201025-9.jpg" width="650" height="325" /></span></p>
+<p><strong>5. 十字线</strong></p>
+<p>应该以与用户关注的内容相同的距离呈现。具有悬停状态和活动状态。在大多数情况下，仅应在可交互实体附近或上方显示它们。</p>
+<p><span class="img-zoom"><img alt="从这4个方面，帮新手快速入门VR界面设计" class="alignnone size-full wp-image-393454" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-vr-20201025-10.gif" width="640" height="411" /></span></p>
+<p><strong>6. 文本</strong></p>
+<p>由于当前的HMD约为13 PPD（Pixel-per-Degree），因此文本应高约1.5°度。计算得知在大多数显示器上大约20像素高。</p>
+<p><span class="img-zoom"><img alt="从这4个方面，帮新手快速入门VR界面设计" class="alignnone size-full wp-image-393455" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-vr-20201025-11.jpg" width="800" height="410" /></span></p>
+<p>这一结论来自于迈克·阿尔格（Mike Alger）所沉淀出的经验，可以尝试使用以下公式计算文本大小。</p>
+<p><span class="img-zoom"><img alt="从这4个方面，帮新手快速入门VR界面设计" class="alignnone size-full wp-image-393456" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-vr-20201025-12.jpg" width="800" height="380" /></span></p>
+<h4><span class="auto_menu">环境打造</span></h4>
+<p><strong>1. 站在地面上</strong></p>
+<p><strong>保证用户是双脚挨地的</strong></p>
+<p>创建一个地面，以确认人物不会悬空</p>
+<p><strong>构架重要内容</strong></p>
+<p>环境的设计要把用户视线引导至重要内容</p>
+<p><strong>2. 路径探索</strong></p>
+<p><strong>设定好用户的默认方向</strong></p>
+<p>您通常会发现需要将用户从一个场景转换到另一个场景。确保在执行此操作时，新场景永远与用户的视线对齐。</p>
+<p><strong>使用声音，动作，光线和颜色来引导用户的注意力</strong></p>
+<p>对比度和色彩是引导人们注意力的最佳视觉方式。但是在VR中，我们面临一个独特的问题，即人物可能会背对重要元素。理想情况下，您极力减少了这一情况出现，但是一旦发生，声音便是诱使用户转过头来面向它的最佳方法。</p>
+<p><strong>天空/背景</strong></p>
+<p>您的3d环境将需要一片天空，这相当于背景。通常是球体（使用等矩形或其他类型投影的全景纹理）或具有6个部分“折叠”到盒子内部的纹理的立方体。</p>
+<p><span class="img-zoom"><img alt="从这4个方面，帮新手快速入门VR界面设计" class="alignnone size-full wp-image-393457" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-vr-20201025-13.gif" width="512" height="288" /></span></p>
+<h4><span class="auto_menu">总结一下</span></h4>
+<p>以上几点如果你已经有所了解并应用，那么，恭喜！这只是 VR的基本概念以及我认为有用的方法论的简短摘要。这个行业有点让人不知所措的地方，也是它令人兴奋之处——它的发展非常迅速，总是有新的理论和方法呈现出来。这是一段独特的旅程，技能差距往往会令人沮丧，但请记住，从小处着手，终有一天会在学习中找到属于你的玩法。</p>
+<p>[link https://www.uisdc.com/designing-ux-for-vr]</p>
+<p><strong>内容参考：</strong>Ryan Betts &#8211; Practical VR: A Design Cheat SheetAndy Stone &#8211; Designing User-Interfaces for Virtual RealityJake Blakeley &#8211; Transitioning to a Career in AR/VR Design。配图源于网络，侵删</p>
+➜关于纸张，你应该知道的都在这里
+https://www.uisdc.com/8-paper-characteristics	58852
+<p>本文总结了纸张的8个实用知识点，包括纸张原材料种类、特性、白度、光泽度、油墨吸收性、平滑度、定量和基重、以及印刷适性等多个方面。</p>
+<p>[link https://www.uisdc.com/printing-basics]</p>
+<p><span class="img-zoom"><img alt="关于纸张，你应该知道的都在这里" class="alignnone size-full wp-image-393424" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-ys-20201025-1.jpg" width="1080" height="1080" /></span></p>
+<p><span class="img-zoom"><img alt="关于纸张，你应该知道的都在这里" class="alignnone size-medium wp-image-393425" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-ys-20201025-2.jpg" width="1080" height="1080" /></span></p>
+<p><span class="img-zoom"><img alt="关于纸张，你应该知道的都在这里" class="alignnone size-medium wp-image-393426" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-ys-20201025-3.jpg" width="1080" height="1080" /></span></p>
+<p><span class="img-zoom"><img alt="关于纸张，你应该知道的都在这里" class="alignnone size-medium wp-image-393427" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-ys-20201025-4.jpg" width="1080" height="1080" /></span></p>
+<p><span class="img-zoom"><img alt="关于纸张，你应该知道的都在这里" class="alignnone size-medium wp-image-393428" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-ys-20201025-5.jpg" width="1080" height="1080" /></span></p>
+<p><span class="img-zoom"><img alt="关于纸张，你应该知道的都在这里" class="alignnone size-medium wp-image-393429" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-ys-20201025-6.jpg" width="1080" height="1080" /></span></p>
+<p><span class="img-zoom"><img alt="关于纸张，你应该知道的都在这里" class="alignnone size-medium wp-image-393430" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-ys-20201025-7.jpg" width="1080" height="1080" /></span></p>
+<p><span class="img-zoom"><img alt="关于纸张，你应该知道的都在这里" class="alignnone size-medium wp-image-393431" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-ys-20201025-8.jpg" width="1080" height="1080" /></span></p>
+➜你看别人家的双11预售页！设计的太炸了吧！
+https://www.uisdc.com/11-11-pre-sale-page	65454
+<p>大家好，雷德思和寨透们，又到了一年一度的双11，天猫第12个双11啊，时间过的真快啊，今年一眨眼又快没了。</p>
+<p>下面看看今年电商设计的期末大考都有哪些精彩表现吧</p>
+<p>[link https://www.uisdc.com/11-11-cat-head-design]</p>
+<p>熘熘梅旗舰店 | 全俯视构图，一看就花功夫拍摄了</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393460" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-1.jpg" width="800" height="2880" /></span></p>
+<p>喜茶旗舰店 | 一如既往的喜茶风格</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393461" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-2.jpg" width="529" height="800" /></span></p>
+<p>vivo官方旗舰店 | 画的很漂亮</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393462" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-3.jpg" width="545" height="800" /></span></p>
+<p>crd克徕帝官方旗舰店 | 卖钻石的店</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393463" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-4.jpg" width="500" height="1197" /></span></p>
+<p>名尊旗舰店 | 宇宙飞船</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393487" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-bc-20201025-61.gif" width="390" height="589" /></span></p>
+<p>小米官方旗舰店 | 右下角还有梵高…</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393464" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-5.jpg" width="552" height="600" /></span></p>
+<p>李子柒旗舰店 | 画风很漂亮</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393465" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-6.jpg" width="411" height="800" /></span></p>
+<p>小鹿蓝蓝旗舰店 | 卖宝宝零食产品的</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393466" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-7.jpg" width="501" height="800" /></span></p>
+<p>a1爱逸旗舰店 | 零食店铺</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393467" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-8.jpg" width="438" height="800" /></span></p>
+<p>桃子来了官方旗舰店 | 店名很有趣</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393468" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-9.jpg" width="631" height="800" /></span></p>
+<p>Combi康贝官方旗舰店 | 画风很柔和</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393488" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-bc-20201025-62.gif" width="640" height="856" /></span></p>
+<p>林氏木业家具旗舰店 | 抢奔驰了啊啊啊啊</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393469" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-10.jpg" width="600" height="1418" /></span></p>
+<p>卡贝锁具旗舰店 | 少侠，买把锁吧</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393470" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-11.jpg" width="484" height="800" /></span></p>
+<p>五芳斋官方旗舰店 | 优惠券都做的很精致</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393471" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-12.jpg" width="600" height="2320" /></span></p>
+<p>廖记棒棒鸡旗舰店 | 让我想起上学时候玩的红警</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393472" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-13.jpg" width="433" height="800" /></span></p>
+<p>无穷食品旗舰店 | 大鸡腿</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393473" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-14.jpg" width="577" height="800" /></span></p>
+<p>英氏婴童洗护旗舰店 | 买1送4</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393474" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-15.jpg" width="633" height="800" /></span></p>
+<p>Bananain蕉内旗舰店 | 文案很666</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393475" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-16.jpg" width="641" height="800" /></span></p>
+<p>卫诗理旗舰店 | 定金卡很显眼</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393476" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-17.jpg" width="600" height="1894" /></span></p>
+<p>花印旗舰店 | 日本特色</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393477" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-18.jpg" width="600" height="1578" /></span></p>
+<p>十月天使官方旗舰店 | 页面颜色和包装盒颜色一致</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393478" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-19.jpg" width="600" height="1327" /></span></p>
+<p>欧诗漫旗舰店 | 可以</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393479" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-20.jpg" width="529" height="800" /></span></p>
+<p>铜师傅旗舰店 | emm词穷</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393480" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-21.jpg" width="600" height="1626" /></span></p>
+<p>袋鼠比比旗舰店 | 店名很萌啊~~</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393481" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-22.jpg" width="600" height="1382" /></span></p>
+<p>老金磨方旗舰店 | emm词穷了</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393482" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-23.jpg" width="474" height="800" /></span></p>
+<p>美的生活电器旗舰店 | 萌萌的の</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393483" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-24.jpg" width="721" height="800" /></span></p>
+<p>海澜之家旗舰店 | 太炫了</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393484" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-25.jpg" width="326" height="800" /></span></p>
+<p>御泥坊旗舰店 | 云想衣裳花想容，春风拂槛露华浓</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393485" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-26.jpg" width="600" height="2327" /></span></p>
+<p>花西子旗舰店 | 苗族印象系列产品，纹样非常精致</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-393486" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-mg-20201025-27.jpg" width="600" height="2121" /></span></p>
+<p>就先展示到这儿啦，你对哪家印象最深？还有哪家比较牛欢迎推荐</p>
+<p>欢迎关注作者的微信公众号：「超级美工」</p>
+<p><span class="img-zoom"><img alt="你看别人家的双11预售页！设计的太炸了吧！" class="alignnone size-full wp-image-307281" src="https://image.uisdc.com/wp-content/uploads/2019/02/cjmgqr.jpg" alt="高手在民间！《流浪地球》官方设计师和大神网友的巅峰对决！" /></span></p>
