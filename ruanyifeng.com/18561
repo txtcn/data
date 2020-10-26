@@ -1,0 +1,149 @@
+➜微信小程序入门教程之一：初次上手
+http://www.ruanyifeng.com/blog/2020/10/wechat-miniprogram-tutorial-part-one.html	4123
+<p>微信是中国使用量最大的手机 App 之一，日活跃用户超过3亿，月活跃用户超过11亿（<a href="http://www.xinhuanet.com/info/2020-01/10/c_138692663.htm">2019年底统计</a>），市场极大。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202009/bg2020092908.jpg" alt="" title="" /></p>
+<p>2017年，微信正式推出了小程序，允许外部开发者在微信 内部运行自己的代码，开展业务。这引发了热烈反响，截止2020年6月，小程序数量已经超过了<a href="https://www.sohu.com/a/414519022_116132">550万个</a>。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202009/bg2020092909.jpg" alt="" title="" /></p>
+<p>小程序已经成为国内前端的一个重要业务，跟 Web 和手机 App 有着同等的重要性。小程序开发者供不应求，市场招聘需求极其旺盛，企业都抢着要。</p>
+<p>尽管如此，小程序的教程却很缺，要么是不够系统，要么就是跳跃性太大，很多关键的地方寥寥数语，初学者摸不着头脑。我自己学的时候，就苦于找不到好一点的教程。</p>
+<p>本文就是我的小程序学习笔记，整理成教程的形式，希望对于初学者有用。需要学会的主要知识点，我都会讲到，我的目标是你读完这个教程，就能学会怎么写小程序。</p>
+<p>考虑到很多同学并没有开发经验，小程序是他们接触的第一个开发领域。我会讲得比较细，希望新人也能没有困难地阅读这个教程。由于内容比较多，这个教程将分成四次连载。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100910.jpg" alt="" title="" /></p>
+<p>所有示例的完整代码，都可以从 GitHub 的<a href="https://github.com/ruanyf/wechat-miniprogram-demos">代码仓库</a>下载。</p>
+<h2>一、小程序是什么？</h2>
+<p>学习小程序之前，先简单说一下，它到底是什么。</p>
+<p>字面上讲，小程序就是微信里面的应用程序，外部代码通过小程序这种形式，在微信这个手机 App 里面运行。</p>
+<p>但是，更准确的说法是， <strong>小程序可以视为只能用微信打开和浏览的网站。</strong> 小程序和网页的技术模型是一样的，用到的 JavaScript 语言和 CSS 样式也是一样的，只是网页的 HTML 标签被稍微修改成了 WXML 标签。所以，小程序页面本质上就是网页。</p>
+<p>小程序的特殊之处在于，虽然是网页，但是它不支持浏览器，所有浏览器的 API 都不能使用，只能用微信提供的 API。这也是为什么小程序只能用微信打开的原因，因为底层全变了。</p>
+<h2>二、小程序的优势</h2>
+<p>小程序最大的优势，就是它基于微信。</p>
+<p>微信 App 的功能（比如拍照、扫描、支付等等），小程序大部分都能使用。微信提供了各种封装好的 API，开发者不用自己实现，也不用考虑 iOS 和安卓的平台差异，只要一行代码就可以调用。</p>
+<p>而且，开发者也不用考虑用户的注册和登录，直接使用微信的注册和登录，微信的用户自动成为你的用户。</p>
+<h2>三、知识准备</h2>
+<p>由于小程序基于网页技术，所以学习之前，最好懂一点网页开发。具体来说，下面两方面的知识是必需的。</p>
+<p>（1）JavaScript 语言：懂基本语法，会写简单的 JS 脚本程序。</p>
+<p>（2）CSS 样式：理解如何使用 CSS 控制网页元素的外观。</p>
+<p>此外，虽然 HTML 标签和浏览器 API 不是必备知识，但是了解浏览器怎么渲染网页，对于理解小程序模型有很大的帮助。</p>
+<p>总的来说，先学网页开发，再学小程序，是比较合理的学习途径，而且网页开发的资料比较多，遇到问题容易解决。但是，网页开发要学的东西太多，不是短期能掌握的，如果想快速上手，先学小程序，遇到不懂的地方再去查资料，也未尝不可。</p>
+<h2>四、开发准备</h2>
+<p>小程序开发的第一步，是去<a href="https://mp.weixin.qq.com/">微信公众平台</a>注册，申请一个 AppID，这是免费的。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202009/bg2020092910.jpg" alt="" title="" /></p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202009/bg2020092911.jpg" alt="" title="" /></p>
+<p>申请完成以后，你会得到一个 AppID（小程序编号） 和 AppSecret（小程序密钥），后面都会用到。</p>
+<p>然后，下载微信提供的<a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html">小程序开发工具</a>。这个工具是必需的，因为只有它才能运行和调试小程序源码。</p>
+<p>开发者工具支持 Windows 和 MacOS 两个平台。我装的是 Windows （64位）的版本，这个教程的内容也是基于该版本的，但是 MacOS 版本的操作应该是完全一样的。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202009/bg2020092914.jpg" alt="" title="" /></p>
+<p>安装好打开这个软件，会要求你使用微信扫描二维码登录。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202009/bg2020092915.jpg" alt="" title="" /></p>
+<p>登录后，进入新建项目的页面，可以新建不同的项目，默认是新建小程序项目。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202009/bg2020092916.jpg" alt="" title="" /></p>
+<p>点击右侧的<code>+</code>号，就跳出了新建小程序的页面。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202009/bg2020092918.jpg" alt="" title="" /></p>
+<p>如果直接新建小程序，会生成一个完整的项目脚手架。对于初学者来说，这样反而不利于掌握各个文件的作用。更好的学习方法是，自己从头手写每一行代码，然后切换到"导入项目"的选项，将其导入到开发者工具。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202009/bg2020092919.jpg" alt="" title="" /></p>
+<p>导入时，需要给小程序起一个名字，并且填写项目代码所在的目录，以及前面申请的 AppID。</p>
+<h2>五、 hello world 示例</h2>
+<p>下面，就请大家动手，跟着写一个最简单的小程序，只要五分钟就能完成。</p>
+<p>第一步，新建一个小程序的项目目录。名字可以随便起，这里称为<code>wechat-miniprogram-demo</code>。 </p>
+<p>你可以在 Windows Terminal 里面执行下面的命令，新建并进入该目录。</p>
+<blockquote><pre><code class="language-bash">
+$ mkdir wechat-miniprogram-demo
+$ cd wechat-miniprogram-demo
+</code></pre></blockquote>
+<p>第二步，在该目录里面，新建一个脚本文件<code>app.js</code>。这个脚本用于对整个小程序进行初始化。</p>
+<p><code>app.js</code>内容只有一行代码。</p>
+<blockquote><pre><code class="language-javascript">
+App({});
+</code></pre></blockquote>
+<p>上面代码中，<code>App()</code>由小程序原生提供，它是一个函数，表示新建一个小程序实例。它的参数是一个配置对象，用于设置小程序实例的行为属性。这个例子不需要任何配置，所以使用空对象即可。</p>
+<p>第三步，新建一个配置文件<code>app.json</code>，记录项目的一些静态配置。</p>
+<p><code>app.json</code>采用 JSON 格式。JSON 是基于 JavaScript 语言的一种数据交换格式，只有五条语法规则，非常简单，不熟悉 JSON 的同学可以参考<a href="https://wangdoc.com/javascript/stdlib/json.html#json-%E6%A0%BC%E5%BC%8F">这篇教程</a>。</p>
+<p><code>app.json</code>文件的内容，至少必须有一个<code>pages</code>属性，指明小程序包含哪些页面。</p>
+<blockquote><pre><code class="language-javascript">
+{
+"pages": [
+"pages/home/home"
+]
+}
+</code></pre></blockquote>
+<p>上面代码中，<code>pages</code>属性是一个数组，数组的每一项就是一个页面。这个示例中，小程序只有一个页面，所以数组只有一项<code>pages/home/home</code>。</p>
+<p><code>pages/home/home</code>是一个三层的文件路径。</p>
+<ol start='1'>
+<li>所有页面都放在<code>pages</code>子目录里面。</li>
+<li>每个页面有一个自己的目录，这里是<code>pages</code>下面的<code>home</code>子目录，表示这个页面叫做<code>home</code>。页面的名字可以随便起，只要对应的目录确实存在即可。</li>
+<li>小程序会加载页面目录<code>pages/home</code>里面的<code>home.js</code>文件，<code>.js</code>后缀名可以省略，所以完整的加载路径为<code>pages/home/home</code>。<code>home.js</code>这个脚本的文件名也可以随便起，但是习惯上跟页面目录同名。</li>
+</ol>
+<p>第四步，新建<code>pages/home</code>子目录。</p>
+<blockquote><pre><code class="language-bash">
+$ mkdir -p pages/home
+</code></pre></blockquote>
+<p>然后，在这个目录里面新建一个脚本文件<code>home.js</code>。该文件的内容如下。</p>
+<blockquote><pre><code class="language-javascript">
+Page({});
+</code></pre></blockquote>
+<p>上面代码中，<code>Page()</code>由小程序原生提供，它是一个函数，用于初始化一个页面实例。它的参数是一个配置对象，用于设置当前页面的行为属性。这里是一个空对象，表示不设置任何属性。</p>
+<p>第五步，在<code>pages/home</code>目录新建一个<code>home.wxml</code>文件。WXML 是微信页面标签语言，类似于 HTML 语言，用于描述小程序的页面。</p>
+<p><code>home.wxml</code>的内容很简单，就写一行<code>hello world</code>。</p>
+<blockquote><pre><code class="language-markup">
+hello world
+</code></pre></blockquote>
+<p>到这一步，就算基本完成了。现在，打开小程序开发工具，导入项目目录<code>wechat-miniprogram-demo</code>。如果一切正常，就可以在开发者工具里面，看到运行结果了。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100108.jpg" alt="" title="" /></p>
+<p>点击工具栏的"预览"或"真机调试"按钮，还可以在你的手机上面，查看真机运行结果。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100109.jpg" alt="" title="" /></p>
+<p>这个示例的完整代码，可以到<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/01.hello-world">代码仓库</a>查看。</p>
+<h2>六、WXML 标签语言</h2>
+<p>上一节的<code>home.wxml</code>文件，只写了最简单的一行<code>hello world</code>。实际开发中，不会这样写，而是要加上各种标签，以便后面添加样式和效果。</p>
+<p>小程序的 WXML 语言提供各种页面标签。下面，对<code>home.wxml</code>改造一下，加上两个最常用的标签。</p>
+<blockquote><pre><code class="language-markup">
+&lt;view>
+&lt;text>hello world&lt;/text>
+&lt;/view>
+</code></pre></blockquote>
+<p>上面的代码用到了两个标签：<code>&lt;view&gt;</code>和<code>&lt;text&gt;</code>。</p>
+<p><code>&lt;view&gt;</code>标签表示一个区块，用于跟其他区块分隔，类似 HTML 语言的<code>&lt;div&gt;</code>标签。<code>&lt;text&gt;</code>表示一段行内文本，类似于 HTML 语言的<code>&lt;span&gt;</code>标签，多个<code>&lt;text&gt;</code>标签之间不会产生分行。</p>
+<p>注意，每个标签都是成对使用，需要有闭合标记，即标签名前加斜杠表示闭合，比如<code>&lt;view&gt;</code>的闭合标记是<code>&lt;/view&gt;</code>。如果缺少闭合标记，小程序编译时会报错。</p>
+<p>由于我们还没有为页面添加任何样式，所以页面的渲染效果跟上一节是一样的。后面添加样式时，大家就可以看到标签的巨大作用。</p>
+<h2>七、小程序的项目结构</h2>
+<p>总结一下，这个示例一共有4个文件，项目结构如下。</p>
+<blockquote><pre><code class="language-bash">
+|- app.json
+|- app.js
+|- pages
+|- home
+|- home.wxml
+|- home.js
+</code></pre></blockquote>
+<p>这就是最简单、最基本的小程序结构。所有的小程序项目都是这个结构，在上面不断添加其他内容。</p>
+<p>这个结构分成两层：描述整体程序的顶层 app 脚本，以及描述各个页面的 page 脚本。</p>
+<h2>九、项目配置文件 app.json</h2>
+<p>顶层的<code>app.json</code>文件用于整个项目的配置，对于所有页面都有效。</p>
+<p>除了前面提到的必需的<code>pages</code>属性，<code>app.json</code>文件还有一个<a href="https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html#window"><code>window</code>属性</a>，用来设置小程序的窗口。<code>window</code>属性的值是一个对象，其中有三个属性很常用。</p>
+<blockquote>
+<ul>
+<li><code>navigationBarBackgroundColor</code>：导航栏的颜色，默认为<code>#000000</code>（黑色）。</li>
+<li><code>navigationBarTextStyle</code>：导航栏的文字颜色，只支持<code>black</code>（黑色）或<code>white</code>（白色），默认为<code>white</code>。</li>
+<li><code>navigationBarTitleText</code>：导航栏的文字，默认为空。</li>
+</ul>
+</blockquote>
+<p>下面，改一下前面的<code>app.json</code>，加入<code>window</code>属性。</p>
+<blockquote><pre><code class="language-javascript">
+{
+"pages": [
+"pages/home/home"
+],
+"window": {
+"navigationBarBackgroundColor": "#ff0000",
+"navigationBarTextStyle": "white",
+"navigationBarTitleText": "小程序 Demo"
+}
+}
+</code></pre></blockquote>
+<p>上面代码中，<code>window</code>属性设置导航栏的背景颜色为红色（<code>#ff0000</code>），文本颜色为白色（<code>white</code>），标题文字为"小程序 Demo"。</p>
+<p>开发者工具导入项目代码，就可以看到导航栏变掉了。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100110.jpg" alt="" title="" /></p>
+<p>这个示例的完整代码，可以到<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/02.app-json">代码仓库</a>查看。</p>
+<p>除了窗口的样式，很多小程序的顶部或尾部，还有选项栏，可以切换到不同的选项卡。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100111.jpg" alt="" title="" /></p>
+<p>这个选项栏，也是在<code>app.json</code>里面设置，使用<a href="https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html#tabBar"><code>tabBar</code>属性</a>，这里就不展开了。</p>
+<p>如果你看到了结尾，说明真的对小程序开发非常感兴趣。今天就讲到这里，下一篇将讲解如何设置基本的页面样式，做出用户界面 UI。</p>
