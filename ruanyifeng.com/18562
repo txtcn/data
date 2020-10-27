@@ -1,0 +1,151 @@
+➜微信小程序入门教程之二：页面样式
+http://www.ruanyifeng.com/blog/2020/10/wechat-miniprogram-tutorial-part-two.html	13723
+<p>这个系列的<a href="http://www.ruanyifeng.com/blog/2020/10/wechat-miniprogram-tutorial-part-one.html">上一篇教程</a>，教大家写了一个最简单的 Hello world 微信小程序。</p>
+<p>但是，那只是一个裸页面，并不好看。今天接着往下讲，如何为这个页面添加样式，使它看上去更美观，教大家写出实际可以使用的页面。</p>
+<p>所有示例的完整代码，都可以从 GitHub 的<a href="https://github.com/ruanyf/wechat-miniprogram-demos">代码仓库</a>下载。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100911.jpg" alt="" title="" /></p>
+<h2>一、总体样式</h2>
+<p>微信小程序允许在顶层放置一个<code>app.wxss</code>文件，里面采用 CSS 语法设置页面样式。这个文件的设置，对所有页面都有效。</p>
+<p>注意，小程序虽然使用 CSS 样式，但是样式文件的后缀名一律要写成<code>.wxss</code>。</p>
+<p>打开上一篇教程的示例，在项目顶层新建一个<code>app.wxss</code>文件，内容如下。</p>
+<blockquote><pre><code class="language-css">
+page {
+background-color: pink;
+}
+text {
+font-size: 24pt;
+color: blue;
+}
+</code></pre></blockquote>
+<p>上面代码将整个页面的背景色设为粉红，然后将<code>&lt;text&gt;</code>标签的字体大小设为 24 磅，字体颜色设为蓝色。</p>
+<p>开发者工具导入代码之后，得到了下面的渲染结果。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100303.jpg" alt="" title="" /></p>
+<p>可以看到，页面的背景色变成粉红，文本字体变大了，字体颜色变成了蓝色。</p>
+<p>实际开发中，直接对<code>&lt;text&gt;</code>标签设置样式，会影响到所有的文本。一般不这样用，而是通过<code>class</code>属性区分不同类型的文本，然后再对每种<code>class</code>设置样式。</p>
+<p>打开<code>pages/home/home.wxml</code>文件，把页面代码改成下面这样。</p>
+<blockquote><pre><code class="language-markup">
+&lt;view>
+&lt;text class="title">hello world&lt;/text>
+&lt;/view>
+</code></pre></blockquote>
+<p>上面代码中，我们为<code>&lt;text&gt;</code>标签加上了一个<code>class</code>属性，值为<code>title</code>。</p>
+<p>然后，将顶层的<code>app.wxss</code>文件改掉，不再直接对<code>&lt;text&gt;</code>设置样式，改成对<code>class</code>设置样式。</p>
+<blockquote><pre><code class="language-css">
+page {
+background-color: pink;
+}
+.title {
+font-size: 24pt;
+color: blue;
+}
+</code></pre></blockquote>
+<p>上面代码中，样式设置在 class 上面（<code>.title</code>），这样就可以让不同的<code>class</code>呈现不同的样式。修改之后，页面的渲染结果并不会有变化。</p>
+<p>这个示例的完整代码，可以到<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/03.css">代码仓库</a>查看。</p>
+<h2>二、Flex 布局</h2>
+<p>各种页面元素的位置关系，称为布局（layout），小程序官方推荐使用 Flex 布局。不熟悉这种布局的同学，可以看看我写的<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html">《Flex 布局教程》</a>。</p>
+<p>下面演示如何通过 Flex 布局，将上面示例的文本放置到页面中央。</p>
+<p>首先，在<code>pages/home</code>目录里面，新建一个<code>home.wxss</code>文件，这个文件设置的样式，只对 home 页面生效。这是因为每个页面通常有不一样的布局，所以页面布局一般不写在全局的<code>app.wxss</code>里面。</p>
+<p>然后，<code>home.wxss</code>文件写入下面的内容。</p>
+<blockquote><pre><code class="language-css">
+page {
+height: 100%;
+width: 750rpx;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+</code></pre></blockquote>
+<p>开发者工具导入项目代码，页面渲染结果如下。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100304.jpg" alt="" title="" /></p>
+<p>下面解释一下上面这段 WXSS 代码，还是很简单的。</p>
+<p>（1）<code>height: 100%;</code>：页面高度为整个屏幕高度。</p>
+<p>（2）<code>width: 750rpx;</code>：页面宽度为整个屏幕宽度。</p>
+<p>注意，这里单位是<code>rpx</code>，而不是<code>px</code>。<code>rpx</code>是小程序为适应不同宽度的手机屏幕，而发明的一种长度单位。不管什么手机屏幕，宽度一律为<code>750rpx</code>。它的好处是换算简单，如果一个元素的宽度是页面的一半，只要写成<code>width: 375rpx;</code>即可。</p>
+<p>（3）<code>display: flex;</code>：整个页面（page）采用 Flex 布局。</p>
+<p>（4）<code>justify-content: center;</code>：页面的一级子元素（这个示例是<code>&lt;view&gt;</code>）水平居中。</p>
+<p>（5）<code>align-items: center;</code>：页面的一级子元素（这个示例是<code>&lt;view&gt;</code>）垂直居中。一个元素同时水平居中和垂直中央，就相当于处在页面的中央了。</p>
+<p>这个示例的完整代码，可以到<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/04.flex">代码仓库</a>查看。</p>
+<h2>三、WeUI</h2>
+<p>如果页面的所有样式都自己写，还是挺麻烦的，也没有这个必要。腾讯封装了一套 UI 框架 <a href="https://github.com/Tencent/weui">WeUI</a>，可以拿来用。</p>
+<p>手机访问 <a href="https://weui.io/">weui.io</a>，可以看到这套 UI 框架的效果。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100305.jpg" alt="" title="" /></p>
+<p>这一节就来看看，怎么使用这个框架的小程序版本 <a href="https://github.com/Tencent/weui-wxss/">WeUI-WXSS</a>，为我们的页面加上官方的样式。</p>
+<p>首先，进入它的 <a href="https://github.com/Tencent/weui-wxss/">GitHub 仓库</a>，在<code>dist/style</code>目录下面，找到<a href="https://github.com/Tencent/weui-wxss/blob/master/dist/style/weui.wxss"><code>weui.wxss</code></a>这个文件，将<a href="https://raw.githubusercontent.com/Tencent/weui-wxss/master/dist/style/weui.wxss">源码</a>全部复制到你的<code>app.wxss</code>文件的头部。</p>
+<p>然后，将<code>page/home/home.wxml</code>文件改成下面这样。</p>
+<blockquote><pre><code class="language-markup">
+&lt;view>
+&lt;button class="weui-btn weui-btn_primary">
+主操作
+&lt;/button>
+&lt;button class="weui-btn weui-btn_primary weui-btn_loading">
+&lt;i class="weui-loading">&lt;/i>正在加载
+&lt;/button>
+&lt;button class="weui-btn weui-btn_primary weui-btn_disabled">
+禁止点击
+&lt;/button>
+&lt;/view>
+</code></pre></blockquote>
+<p>开发者工具导入项目代码，页面渲染结果如下。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100306.jpg" alt="" title="" /></p>
+<p>可以看到，加入 WeUI 框架以后，只要为按钮添加不同的 class，就能自动出现框架提供的样式。你可以根据需要，为页面选择不同的按钮。</p>
+<p>这个示例中，<code>&lt;button&gt;</code>元素使用了下面的<code>class</code>。</p>
+<blockquote>
+<ul>
+<li><code>weui-btn</code>：按钮样式的基类</li>
+<li><code>weui-btn_primary</code>：主按钮的样式。如果是次要按钮，就使用<code>weui-btn_default</code>。</li>
+<li><code>weui-btn_loading</code>：按钮点击后，操作正在进行中的样式。该类内部需要用<code>&lt;i&gt;</code>元素，加上表示正在加载的图标。</li>
+<li><code>weui-btn_disabled</code>：按钮禁止点击的样式。</li>
+</ul>
+</blockquote>
+<p>WeUI 提供了大量的元素样式，完整的清单可以查看<a href="https://github.com/Tencent/weui-wxss">这里</a>。 </p>
+<p>这个示例的完整代码，可以到<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/05.weui">代码仓库</a>查看。</p>
+<h2>四、加入图片</h2>
+<p>美观的页面不能光有文字，还必须有图片。小程序的<code>&lt;image&gt;</code>组件就用来加载图片。</p>
+<p>打开<code>home.wxml</code>文件，将其改为如下代码。</p>
+<blockquote><pre><code class="language-markup">
+&lt;view>
+&lt;image src="https://picsum.photos/200">&lt;/image>
+&lt;/view>
+</code></pre></blockquote>
+<p>开发者工具加载项目代码，页面的渲染结果如下，可以显示图片了。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100309.jpg" alt="" title="" /></p>
+<p><code>&lt;image&gt;</code>组件有<a href="https://developers.weixin.qq.com/miniprogram/dev/component/image.html">很多属性</a>，比如可以通过<code>style</code>属性指定样式。</p>
+<blockquote><pre><code class="language-markup">
+&lt;view>
+&lt;image
+src="https://picsum.photos/200"
+style="height: 375rpx; width: 375rpx;"
+>&lt;/image>
+&lt;/view>
+</code></pre></blockquote>
+<p>默认情况下，图片会占满整个容器的宽度（这个例子是<code>&lt;view&gt;</code>的宽度），上面代码通过<code>style</code>属性指定图片的高度和宽度（占据页面宽度的一半），渲染结果如下。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100310.jpg" alt="" title="" /></p>
+<p>当然，图片样式不一定写在<code>&lt;image&gt;</code>组件里面，也可以写在 WXSS 样式文件里面。</p>
+<p>这个示例的完整代码，可以到<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/06.image">代码仓库</a>查看。</p>
+<h2>五、图片轮播</h2>
+<p>小程序原生的<a href="https://developers.weixin.qq.com/miniprogram/dev/component/swiper.html"><code>&lt;swiper&gt;</code>组件</a>可以提供图片轮播效果。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100311.jpg" alt="" title="" /></p>
+<p>上面页面的图片上面，有三个提示点，表示一共有三张图片，可以切换显示。</p>
+<p>它的代码很简单，只需要改一下<code>home.wxml</code>文件即可。</p>
+<blockquote><pre><code class="language-markup">
+&lt;view>
+&lt;swiper
+indicator-dots="{{true}}"
+autoplay="{{true}}"
+style="width: 750rpx;">
+&lt;swiper-item>
+&lt;image src="https://picsum.photos/200">&lt;/image>
+&lt;/swiper-item>
+&lt;swiper-item>
+&lt;image src="https://picsum.photos/250">&lt;/image>
+&lt;/swiper-item>
+&lt;swiper-item>
+&lt;image src="https://picsum.photos/300">&lt;/image>
+&lt;/swiper-item>
+&lt;/swiper>
+&lt;/view>
+</code></pre></blockquote>
+<p>上面代码中，<code>&lt;swiper&gt;</code>组件就是轮播组件，里面放置了三个<a href="https://developers.weixin.qq.com/miniprogram/dev/component/swiper-item.html"><code>&lt;swiper-item&gt;</code>组件</a>，表示有三个轮播项目，每个项目就是一个<code>&lt;image&gt;</code>组件。</p>
+<p><code>&lt;swiper&gt;</code>组件的<code>indicator-dots</code>属性设置是否显示轮播点，<code>autoplay</code>属性设置是否自动播放轮播。它们的属性值都是一个布尔值，这里要写成<code>{{true}}</code>。这种<code>{{...}}</code>的语法，表示里面放置的是 JavaScript 代码，这个放在下一次讲解。</p>
+<p>这个示例的完整代码，可以到<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/07.swiper">代码仓库</a>查看。</p>
+<p>页面样式就讲到这里，<a href="http://www.ruanyifeng.com/blog/2020/10/wechat-miniprogram-tutorial-part-two.html">下一篇教程</a>讲解怎么在微信小程序里面加入 JavaScript 脚本，跟用户互动。</p>
