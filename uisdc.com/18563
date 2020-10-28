@@ -1,0 +1,246 @@
+➜iPhone 12来了，设计师们如何提前做好适配？
+https://www.uisdc.com/iphone-12	58323
+<p>10月13号，苹果举办了年度的发布会并发布了四款新iPhone，发布会的重头戏是介绍新的设计和新的功能特色，这里简单总结下：</p>
+<p>我觉得这次的设计是iPhone5/iPad Pro机型的回归，我个人是非常喜欢那套设计的，喜欢它的小巧和功能。无线充电技术可以让未来的苹果笔记本电脑（基于ARM）也同样可以具备快捷充电方式。</p>
+<p><span class="img-zoom"><img alt="iPhone 12来了，设计师们如何提前做好适配？" class="alignnone size-full wp-image-393673" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-pg-20201028-2.jpg" width="1080" height="609" /></span></p>
+<h4><span class="auto_menu">适配难度正在发生变化</span></h4>
+<p>如果设计师有做过移动端应用或响应式网页设计的话，可能会知道，有越来越多的苹果设备尺寸需要适配。下图是目前sketch和Figma上的画板预设。</p>
+<p><span class="img-zoom"><img alt="iPhone 12来了，设计师们如何提前做好适配？" class="alignnone size-full wp-image-393674" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-pg-20201028-3.jpg" width="617" height="359" /></span></p>
+<p>但这些新款的iPhone让手机尺寸变得更加复杂，还记得乔布斯介绍带视网膜屏幕的iPhone4吗？</p>
+<p>他当时特别提到的一点是，iPhone4手机的基础分辨率和其他iPhone手机都是一样的，都是320&#215;480，只是像素密度高了2倍。</p>
+<p><span class="img-zoom"><img alt="iPhone 12来了，设计师们如何提前做好适配？" class="alignnone size-full wp-image-393675" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-pg-20201028-4.jpg" width="720" height="461" /></span></p>
+<p>那是一个伟大而又纯粹的时期，只需要设计320&#215;480的设计稿，输出2x的视网膜屏幕尺寸就满足要求了。</p>
+<p>这是非常“苹果”的——一条清晰，容易遵循的道路，完全是为了消除不必要的复杂性。</p>
+<h4><span class="auto_menu">来到2020年</span></h4>
+<p><span class="img-zoom"><img alt="iPhone 12来了，设计师们如何提前做好适配？" class="alignnone size-full wp-image-393676" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-pg-20201028-5.jpg" width="1080" height="312" /></span></p>
+<p>看看上图中一堆复杂的尺寸，我甚至还没有把第一代的iPhone SE(320&#215;568)放进来（点开可以看大图）</p>
+<p>因为有了这些各异的分辨率，增加了非常多的复杂性，对吧？</p>
+<h4><span class="auto_menu">那应该要如何处理呢？</span></h4>
+<p>在iPhone12和12Pro的情况下，根据下面这条twitter，我们得到了新的390宽度。</p>
+<p><span class="img-zoom"><img alt="iPhone 12来了，设计师们如何提前做好适配？" class="alignnone size-full wp-image-393677" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-pg-20201028-6.jpg" width="785" height="600" /></span></p>
+<p>但iPhone 12 Mini的分辨率降到了375&#215;812，和iPhone x一样。这种里的问题是，它的实际分辨率不再是3x，而是2.88x。当然，对于更小的屏幕，它不会造成太大的问题，因为如何显示对象的大多数实际计算都是在代码中完成的。</p>
+<p><span class="img-zoom"><img alt="iPhone 12来了，设计师们如何提前做好适配？" class="alignnone size-full wp-image-393678" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-pg-20201028-7.jpg" width="1080" height="239" /></span></p>
+<p>△ Ukiyo——我们正在开发的一款为创意人士量身打造的应用程序，可以在目前所有的iphone手机上看到。</p>
+<h4><span class="auto_menu">所以要如何进行设计？</span></h4>
+<p>下面的设计示例，它并不理想，特别是顶部和底部的间距需要单独适配。在一些手机上，主按钮需要滚动，所以我们必须调整整个卡片和字体大小，以使得这些设备也能很好的兼容。</p>
+<p><span class="img-zoom"><img alt="iPhone 12来了，设计师们如何提前做好适配？" class="alignnone size-full wp-image-393679" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-pg-20201028-8.jpg" width="596" height="216" /></span></p>
+<p>△ 为特定的机器分辨率进行必要的调整，左边只放大图片是不可取的</p>
+<p>当然，对于程序员来说，直接使用Swift代码来调试UI会简单很多，但在设计阶段，我们还是想比较直观的看在不同的设备上会是什么样子。可以使用sketch mirror在手机上预览它，设计侧其实能做更多的工作。</p>
+<p><span class="img-zoom"><img alt="iPhone 12来了，设计师们如何提前做好适配？" class="alignnone size-full wp-image-393669" src="https://image.uisdc.com/wp-content/uploads/2020/10/ia_600000009_看图王.jpg" width="596" height="190" /></span></p>
+<p>到目前为止，我们需要做2个尺寸的设计稿，分别是375&#215;812的iPhone X大小以及更大的414&#215;896。它覆盖了大多数手机，开发简单调整布局，就能适配其他少数设备上更多的内容。</p>
+<p>但对于现在的新尺寸390和428的宽度呢？</p>
+<h4><span class="auto_menu">我们应该简单地把这些手机的设计放大吗？</span></h4>
+<p>答案是视情况而定。在相同的内容量情况下，UI可以保持相同的尺寸，而内容本身可以被放大，质量会更高。</p>
+<p>但是仅仅是把每一个设计都放大可能会失去我们在画面中做好的版式设计，画面可能会失去平衡。设计元素可能开始变得太大、太小、太宽。</p>
+<p>另外，一些上下缩放会导致非常细的线条出现不好的锯齿效果，因为这都是基于像素近似的，所以如果你使用的是非常细/很浅的字体，可能会丢失一些易读性。</p>
+<p>苹果在iOS7之后解决了这个问题，它引入了更粗的字体，并去掉了大多数太细的字体。但是有些设计师喜欢这些细字体，因为他们把它们理解为“精致的”和“好的设计”。</p>
+<p><span class="img-zoom"><img alt="iPhone 12来了，设计师们如何提前做好适配？" class="alignnone size-full wp-image-393670" src="https://image.uisdc.com/wp-content/uploads/2020/10/ia_600000010_看图王.jpg" width="1080" height="257" /></span></p>
+<p>如果我们试图将同样的“滚动高度”对应到这些手机上，那么我们会得到一些未使用的空间，当然这不是最佳适配策略。直接这样拉通对比有点夸张，因为有些手机有不同的长宽比，这只是为了显示一个普遍的纵向适配原则。</p>
+<h4><span class="auto_menu">折叠线</span></h4>
+<p>折叠线是一个比较经典的概念，一条无形的线将我们通常在一个屏幕上看到的东西（没有滚动）和其他设计分开。其理念是，所有最重要的元素都应该“放在最上面”以便更容易地被看到。</p>
+<p>有一些观点认为“人们不会滚动”，这在现代听起来有点傻（数据显示，我们平均每天在手机上能滚动300米）。</p>
+<p>但它可能会影响到一些电商项目，在这些项目中，首屏是需要精心设计的，以便在一个屏幕上显示尽可能多的相关信息和提高购买率。当然，我们可以创建一个覆盖按钮，但这并不能解决中断特定手机信息的问题。</p>
+<p>所以我想对于电商来说，通过将同样的设计升级到更大的尺寸，实际上可能更容易测试体验，因为这将使我们对人们在所有设备上看到的东西有一个更一致的看法。</p>
+<p>一个44pt高（1@x下等同于44px高）的按钮在2@x时为88px高，在320&#215;480视口中统一44pt渲染。</p>
+<p><span class="img-zoom"><img alt="iPhone 12来了，设计师们如何提前做好适配？" class="alignnone size-full wp-image-393671" src="https://image.uisdc.com/wp-content/uploads/2020/10/ia_600000011_看图王.jpg" width="791" height="458" /></span></p>
+<p>彩云注：我觉得这里需要给大家稍微解释下pt这个单位的意义：</p>
+<p>pt是专门为苹果操作系统设计的一个单位，它与屏幕上的像素密度无关，只与屏幕上的内容多少有关。在第一代 iPhone 到 iPhone 3GS 的非 Retina 屏幕上，一个点就等于一像素，可以表示为 @1x；而在 iPhone 4 到 iPhone 4s 的 Retina 屏幕上，一个点等于两个像素，可以表示为 @2x。而日后发布的一些设备（如 iPhone 6 Plus、iPhone X）还会出现一个点等于三个像素的情况，可以表示为 @3x，这种 @1x、@2x、@3x 可以称之为「比例因子」。</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>我错过了两个基于同一个视口的分辨率时期。它使体验设计变得更容易，而且也很好测量。</p>
+<p>随着界面的碎片化，iOS正慢慢地变成Android的样子——大量的分辨率、高宽比和设备增加了复杂性。</p>
+<p>彩云注：我觉得随着iPhone12的到来，屏幕尺寸越来越碎片化，也越来越难记，这里面有2个关键点需要大家掌握，总结下：</p>
+<p>苹果目前屏幕逻辑分辨率只有 3种：320pt，375pt和414pt。</p>
+<p>适配规则也就是2种方式：一种是直接垂直方向边长，即在垂直方向上可以看到更多的内容（符合这个规则的有iPhone 4s 到 iPhone 5，从 iPhone 8 到 iPhone X，从 iPhone 8 Plus 到 iPhone XR、iPhone Xs Max，从 iPhone SE 第一代到 iPhone 12 ）；另一种是等比放大，即直接在横向界面上漏出更多内容，比如2个卡片扩充到现实3个卡片。（符合这个规则的有 iPhone 5s 到 iPhone6、iPhone 6 Plus，从 iPhone X 到 iPhone Xs Max、iPhone XR）。</p>
+<p>[link https://www.uisdc.com/ui-element-size-setting-guide-1]<br />
+[link https://www.uisdc.com/ui-element-size-setting-guide-2]</p>
+<p>欢迎关注译者的微信公众号：「彩云译设计」</p>
+<p><span class="img-zoom"><img alt="iPhone 12来了，设计师们如何提前做好适配？" class="alignnone size-full wp-image-263083" src="https://image.uisdc.com/wp-content/uploads/2018/03/uisdc-dh-20180313-9.jpg" alt="腾讯设计师出品！超全面的3D设计自学指南（附超多教程）" /></span></p>
+➜电商设计如何用好中国风？收下这份全面指南！（附实战案例）
+https://www.uisdc.com/e-commerce-design-chinese-style	61925
+<p>下半年，往往是电商设计师最繁忙的季节，双11、双12、双旦节等重量级节日接踵而来。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393684" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-1.jpg" width="1080" height="540" /></span></p>
+<p>不过，有意思的是，与双11、双12活动页百花争放的多元化设计不同的是，春节前夕的最后一个电商大促节日：年货节，页面风格却更趋向于一个统一的风格：中国风。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393759" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-2.jpg" width="1200" height="590" /></span></p>
+<p>由于年货节直接对标的是我国传统的春节，因此在整个设计风格上都会更贴向充满节日氛围和中华传统元素的中国风。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393760" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-3.jpg" width="1200" height="688" /></span></p>
+<p>然而，市面上一些中国风页面与KV的设计，却有一种“刻意用力写命题作文”的牵强感。对中国风的理解往往浮于表面，只做到了元素上的引进，将固有文化符号进行一个无序的堆积。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393761" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-4.jpg" width="1200" height="356" /></span></p>
+<p>如何设计一张神形具备的中国风电商海报？如何将固有的文化符号提炼创新，设计出与众不同的感受？如何根据产品特性，从内核层面融入中国风特质？在学习技法前，我们不妨以史为镜，从泱泱大国五千年的历史长河中寻找答案。</p>
+<h4><span class="auto_menu">中国商业海报的前世今生</span></h4>
+<p><strong>1. 中国古代商业设计</strong></p>
+<p>追根溯源，中国最早的商业海报雏形可以追溯至春秋战国时期，那时集市中的商铺用来推销自家产品，吸引顾客的古老商业标志叫：幌子。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393688" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-5.jpg" width="1029" height="800" /></span></p>
+<p>幌子，又称“望子”，是我国古代用来吸引顾客的视觉引导物。它作为店铺营业的标志，早期由布艺制作，挂在杆头，悬在店铺门口，形似旗帜。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393689" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-6.jpg" width="1029" height="800" /></span></p>
+<p>随着历史的推移，经历了秦始皇灭六国的统一、汉朝的建立、三国两晋南北朝的纷争，中国古代进入了精神文化发展最为蓬勃的唐宋时期。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393690" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-7.jpg" width="1050" height="600" /></span></p>
+<p>唐诗宋词的文化浸染，平静年代商业的发展及精神追求，极大地促进了消费与商业竞争。因此，为了争抢顾客，幌子从材质、样式与配色得到了一个多元化的改良与美化。不少设计者从当时皇宫建筑的样式中吸取灵感，添加了各式花纹。</p>
+<p>至此，由争夺市场所孕育出的对商业美的追求开始生根萌芽。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393691" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-8.jpg" width="1307" height="483" /></span></p>
+<p>但西风东渐，晚晴末期，受清政府闭关锁国的特殊历史与国情影响，中国的平面设计出现了断层。至此，中国古代平面设计匆忙的画上了并不圆满的句号。</p>
+<p><strong>2. 中国近现代商业设计</strong></p>
+<p>根据史书记载，我国真正意义上的商业设计起源于1840年鸦片战争到1950年解放初期的这近百年时间。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393762" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-9.jpg" width="1200" height="603" /></span></p>
+<p>由于这百年是介于古代设计史和当代设计史之间一段跨时代转折意义的历史，因此，这段时期也被称为中国近现代平面设计发展史。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393763" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-10.jpg" width="908" height="600" /></span></p>
+<p>二十世纪初，沿海地区的城市逐渐出现了一些月份牌和招贴画，这便是中国近现代早期平面设计的开端。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393764" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-11.jpg" width="870" height="600" /></span></p>
+<p>月份牌海报是有据可查的中国近现代最早的海报形式，从中也可以看出设计者们在传统文化和外来理论之间的徘徊和踯躅：海报中体现了中西美术概念的融合与碰撞，一方面，它临摹西方的文案、样式与图腾；另一方面，它又沿袭中国的传统国画艺术。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393765" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-12.jpg" width="836" height="600" /></span></p>
+<p>从当时的海报中，不难看出中国传统花鸟山水国画的技法影子，同时，月份牌还结合了西方传教士郎士宁等人由欧洲带来的透视法则。以主观感情为核心的写意国画和以客观科学为主旨的立体透视相互碰撞，翻开了中国近现代平面设计的新章。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393696" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-13.jpg" width="640" height="452" /></span></p>
+<p>到了二十世纪二三十年代，传统国画的笔法结合西方立体塑造理论，又受到欧洲商人带来的资本商业模式和营销方式的影响，越来越多的设计师加入了这场设计风格的革命。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393766" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-14.jpg" width="561" height="800" /></span></p>
+<p>随着西方经济文化的输入，二十世纪三十年代沿海地区也逐渐耸立起了高楼大厦与百货公司，街头巷尾的高楼建筑与随处可见的宣传广告牌，整个城市逐渐有了现代都市的雏形。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393698" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-15.jpg" width="640" height="595" /></span></p>
+<p>这一时期，涌现了一大批艺术创作家，为推动中国现代平面设计的发展做出了巨大的努力，比如设计师都冰如、鲁迅、闻一多、沈从文、巴青等。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393767" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-16.jpg" width="1200" height="420" /></span></p>
+<p>到了二十世纪六十年代，解放后，我国的海报又迎来了第二次高潮——思想意识与形态的展现。它以苏联美术为标杆，核心内容虽然倾向政治宣传，但由于我国的地大物博、群众艺术参与度高等因素，这一时期同样在我国近现代平面设计中留下了不少至今也值得称道的丰功伟绩。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393768" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-17.jpg" width="872" height="600" /></span></p>
+<p>文革时期，中国近现代平面设计发展受到了严重阻碍，这种重创直到文革后才得到了一定缓解。同时，文革后的改革开放，也正式宣告中国平面设计结束了近现代的历史进程，正式开启了现代平面设计新篇章。</p>
+<p><strong>3. 中国现代商业设计</strong></p>
+<p>改革开放后，我国的平面设计正式步入现代平面设计阶段，平面设计这个大领域也逐渐分化成众多针对性和专业度更强的分支，也就分化出了我们所说的商业设计</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393769" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-18.jpg" width="1200" height="620" /></span></p>
+<p>20世纪80年代，随着经济全球化的加速，各国之间的深度经济往来加速了文化的输入输出碰撞。当刚刚复苏的传统设计遇上国外先进完整的设计理论，无疑给国内的整个平面设计圈造成了巨大的冲击。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393770" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-19.jpg" width="831" height="600" /></span></p>
+<p>到了20世纪90年代，中国商业海报设计发生了第三次巨变，突破了单一的维多利亚式排版，出现了众多与国际主流设计接轨的新潮表现形式。不过，这种巨变的本质，更像是一把双刃剑。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393772" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-20.jpg" width="884" height="600" /></span></p>
+<p>一方面，先进平面设计理论的输入让中国现代平面设计有了值得参考的模板，从而可以在最短时间最快地跟上先锋部队；但另一方面，强势而成熟的西方设计风格改变了国内的设计趋势，盲目的模仿与追捧导致国内商业设计与西方设计体系同质化，覆盖了中国传统设计风格的体现。</p>
+<p>这种同质化的设计趋势是好还是坏？伴随这样的质疑声，千禧年代的钟声敲响，21世纪来了。</p>
+<p><strong>4. 中国当代商业设计</strong></p>
+<p>虽然起步晚，质疑声此起彼伏，但吸取了国外先进的平面设计理论，并且依靠中国多代平面设计师的共同努力，我国商业设计逐渐追上国际水准，商业设计市场趋向平稳。</p>
+<p>而计算机的普及与大数据时代下消费主义的催生，新兴的电子商务与电子贸易诞生了，其伴生产物——电商设计也进入了人们的视野中。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393773" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-21.jpg" width="1200" height="428" /></span></p>
+<p>如果说中国现代平面设计的发展犹如一个奔跑的巨人，那电商设计的发展则是巨人肩膀上的一只蜂鸟，速度有过之而无不及。仅十多年的时间，中国的电商设计便完成了从毫无美感的文案堆积到包括赛博朋克、波普艺术、孟菲斯、MBE、北欧极简主义在内的多种国际主流风格百花齐放的阶段。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393774" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-22.jpg" width="1200" height="495" /></span></p>
+<p>近十年，依托于中国经济的高速增长，自身国力与国际影响力的与日俱增，我国越来越多各行各业的优秀设计师开始重拾现代设计发展中被遗弃的中国元素。</p>
+<p>于是，中国风诞生了。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393775" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-23-1.jpg" width="1200" height="625" /></span></p>
+<h4><span class="auto_menu">生活中的中国风</span></h4>
+<p><strong>1. 中国风的定义</strong></p>
+<p>中国风，是金庸先生笔下的快意江湖，是周杰伦人口相传的《东风破》，是杨丽萍翩翩起舞的孔雀。中国风作为国人的母体文化，早已深深融入我们每个人的生活，是一门将中国五千年文化浓缩到一处的极致艺术。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393776" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-24.jpg" width="832" height="600" /></span></p>
+<p>商业设计中的中国风，即在商业设计本身规范的基础上，融入中国传统的文化符号或意识特性，在蕴含大量中国元素的同时适应全球流行趋势，讲究水乳交融而不突兀。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393777" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-25.jpg" width="855" height="600" /></span></p>
+<p><strong>2. 中国风的应用</strong></p>
+<p>中国风近年来在各行各业都受到广泛的重视，金庸古龙先生的传统武侠小说在世界范围内的大火也证明了国际市场上的中国热。在歌曲领域，周杰伦、林俊杰等流行歌手致力于在歌曲中融入中国传统文化，《青花瓷》、《烟花易冷》、《江南》等歌曲都以其浓浓的中国风受到了国际上热烈的反响。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393778" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-26.jpg" width="1200" height="355" /></span></p>
+<p>旗袍、汉服这样的中国传统服饰近年来同样备受追捧，成为了国际时尚界的一股新生力量。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393779" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-27.jpg" width="1200" height="360" /></span></p>
+<p>中国风IP的孵化也逐渐丰富，中国风的挂饰、手机壳等配饰物件逐渐成为消费新宠</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393780" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-28.jpg" width="1000" height="494" /></span></p>
+<p>影视海报的中国风也日渐兴盛，不仅是诸如《影》这样的国产电影，包括《毒液》《神奇动物在哪里》《猩球崛起》等好莱坞大片的海报也都用到了中国风的设计风格</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393712" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-29.jpg" width="537" height="800" /></span></p>
+<p>电商海报更是如此，以花西子、故宫文创为首的大厂也是掀起了一股中国风电商海报的热潮。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393713" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-30.jpg" width="660" height="800" /></span></p>
+<p><strong>3. 为什么中国风设计风头正盛</strong></p>
+<p><strong>大厂效应，</strong>随着中国经济的崛起，在美妆服饰等行业涌现出了大批量的国产品牌和欧美主流品牌争夺市场，但由于起步晚，即使质量过硬也难以和成熟的海外品牌相抗衡。</p>
+<p>在这种环境下，各大厂商纷纷曲线救国，借用自身最大的优势——中国风武装自己，与国外竞品争夺市场。</p>
+<p>在这个过程中无形地运用了自己的影响力推广了中国风，推广了中国文化符号。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393782" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-31.jpg" width="1200" height="450" /></span></p>
+<p><strong>母体文化的力量，</strong>作为生在这片土地上，从小感受中华传统文化的炎黄子孙，添加了中国文化符号的歌曲、图片等元素更能互换起国人内心的亲切感，引发共鸣。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393715" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-32.jpg" width="1280" height="567" /></span></p>
+<p><strong>国力的强大与经济的崛起，</strong>大国的影响力同样体现在各个方面，中国的崛起让更多人接触到中国文化，感受到了中华五千年文化的魅力，产生了对中国元素的强烈兴致。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393783" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-33.jpg" width="1000" height="564" /></span></p>
+<p>国内群众的母体倾向和国外友人对中国文化的追捧，两者形成良性循环，进一步促进了中国风的传播与兴盛。</p>
+<h4><span class="auto_menu">电商设计里中国风的发展</span></h4>
+<p><strong>1. 传统中国风设计</strong></p>
+<p>传统的中国风海报意在将中国固有文化符号诸如华表、祥云、屏风、丝绸缎这类元素运用到画面中；再或是运用中国传统国画的水墨工笔技法设计海报，用晕染泼墨的形式传递中国风的意境。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393717" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-34.jpg" width="640" height="800" /></span></p>
+<p><strong>2. 新中式设计风格</strong></p>
+<p>新中式这个词，最早出现在室内装修中，“新”不能完全按照字面意思理解，而应理解为中国当代文化。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393784" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-35.jpg" width="1000" height="560" /></span></p>
+<p>在设计美学中，新中式可以理解为运用现代平面设计原理，结合现代平面设计技术，合理运用中式元素。</p>
+<p>比如全友家居的海报就在欧式装修风格的基础上融入了中国风的配色与点缀，形成了这种与国际接轨又保有传统文化符号的新中式感。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393785" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-36.jpg" width="790" height="600" /></span></p>
+<p><strong>3. 百鸟争鸣的中国风</strong></p>
+<p>现如今，伴随中国风的热度，先驱设计师们开始摸索中国风的新形态。文化渊博的中华大地，不应该只有一种风格。</p>
+<p>于是，我们看到了更加细分的中国风海报，更多少数民族的配饰与特色被提炼到了商业海报中，细分文化IP逐渐登录商业舞台。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393786" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-37.jpg" width="620" height="800" /></span></p>
+<p>传统文化的元素堆积确实可以给画面增加中国风的调性，但是，设计最讲究的就是创新，出其不意才是设计的灵魂，一味套版陶瓷水墨，不仅难以铸就经典，甚至可能破坏整个画面的和谐。</p>
+<p>所以，接下来我们从理论层面探讨，如何设计出更有韵味的中国风海报。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393721" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-38.jpg" width="1280" height="567" /></span></p>
+<h4><span class="auto_menu">中国风电商海报的进阶探索</span></h4>
+<p><strong>1. 化繁为简，保留纹案的古意予以简化</strong></p>
+<p>虽然表现中国风特色的最直接方式就是引用古老中国的装饰纹理；庭院、油纸伞、屏风、檀香&#8230;将这些最代表中国传统文化的元素置入海报中。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393722" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-39.jpg" width="1066" height="600" /></span></p>
+<p>然而，传统元素的华美装饰往往过于复杂，譬如精美的华表龙柱，原封不动放入场景以作装饰，大部分产品想必难以hold住&#8230;稍不注意就会造成细节过剩、抢夺视觉中心、淡化产品地位等问题。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393723" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-40.jpg" width="960" height="600" /></span></p>
+<p>因此，我们要学会做减法，华表太复杂？我们只留一个外形意象，或者干脆摒弃不用；屏风木纹太复杂？那我们放弃冗杂的木纹细节，只保留少量的图案花纹。人都是有主观能动性的，透过这样简化的元素，已经足够让他们想象到中国古代雄伟辽阔的皇宫后院了。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393724" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-41.jpg" width="1066" height="600" /></span></p>
+<p><strong>2. 重视意象表现，展现新的形式</strong></p>
+<p>创意是设计的灵魂，不管什么设计风格，一成不变在这个行业意味着死亡。我们不能一味人云亦云去模仿现成的中国风元素，泱泱大国五千年历史，我们不该拘泥于展现某一个年代的某一件装饰，我们该跳脱出来，放眼整个历史长河，把我们的感受具象化，形成自己独有的中国风诠释。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393787" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-42.jpg" width="1200" height="320" /></span></p>
+<p>影视剧拍摄就是最好的案例，唐宋的诗情惬意，明清的宫斗大戏，春秋三国的战乱纷争，都可以充分的去挖掘..所以，这个真的不该成为疑问，不要因为“拿来主义”成本最低就去随大流。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393788" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-43.jpg" width="1200" height="428" /></span></p>
+<p><strong>3. 风格混搭，取长补短创造新风格</strong></p>
+<p>在新中式风格的基础上，通过与现代潮流的对话碰撞产生的创新。在点线面的和谐搭配基础上，合理运用传统文化符号。</p>
+<p>这一点也是新中式风格的精髓，集百家之所长。传统文化有传统文化的好，现代潮流也有现代潮流的优势，这不是一个非此即彼的选择题，相反，我们要学会融会贯通，在点线面的穿插中融入中国文化符号，从内核开始完善中国风。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393789" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-44.jpg" width="1144" height="800" /></span></p>
+<p>比如这类具有空间感的中国风海报，就是从立体搭建开始，先满足画面整体的节奏感与呼吸感，保证张弛有度，不凌乱；继而在渲染材质和细节搭配环节才开始加入中国风元素及配色。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393728" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-45.jpg" width="1280" height="567" /></span></p>
+<p>接下来，我们用一个具体的案例来聊聊拿到产品，如何从0打造一款中国风页面。</p>
+<h4><span class="auto_menu">中国风电商海报设计实战</span></h4>
+<p>“花西子”是一个以“东方彩妆，以花养妆”为理念,致力于中国风特色的彩妆品牌。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393790" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-46.jpg" width="1200" height="118" /></span></p>
+<p>在此我们拿之前和花西子团队合作的一个商业案例为大家展示电商设计中的中国风运用。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393791" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-47.jpg" width="509" height="800" /></span></p>
+<p>首先，我们要明确的是，我们做的不是简单的中国元素符号的堆积，通过上文的电商中国风进阶探索我们知道了，现代的中国风设计，不是遗世独立的体制外之美，而是一种传统美与现代设计理论结合之后的融合美。</p>
+<p>所以，我们先运用现代设计的逻辑，针对产品透视做一个简单的立体空间搭建，舞台设计带入一定的起伏节奏。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393792" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-48.jpg" width="509" height="800" /></span></p>
+<p>接下来我们思考，如何在画面中融入中国风的特质？</p>
+<p>我们可以参考上文的探索步骤，代入进行思考：在应用中国风的同时化繁为简，仅保留象征性的元素与意象。比如，古代宫廷的华美装饰往往离不开大理石的点缀，因此，我们可以试着把产品底座做一个大理石材质的贴图处理。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393793" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-49.jpg" width="509" height="800" /></span></p>
+<p>观察现实生活中大理石的平台不难发现，大理石是不存在如此锋利的转折边缘的，温润如玉是我们对大理石的一种美好想象，因此，我们双击图层，打开图层样式，调整参数，增加边缘棱角，让大理石的边缘呈现出圆角结构。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393794" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-50.jpg" width="509" height="800" /></span></p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-medium wp-image-393795" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-51.jpg" width="793" height="531" /></span></p>
+<p>调用曲线配合蒙版根据场景光源调整底座的明暗面，拉开顶/立/侧块面之间的层次感。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393796" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-52.jpg" width="509" height="800" /></span></p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-medium wp-image-393797" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-53.jpg" width="1000" height="705" /></span></p>
+<p>我们通过对古代装饰的收集不难发现，中国古代的首饰与装扮精华就在于一层镶边作为细节的点缀。因此，我们也给底座正面加一层镶边，增加底座的细节丰富性，同时深化中国风意象。</p>
+<p>镶边的制作手法也很简单，用钢笔工具勾出镶边的走势，选择编辑-描边，颜色选择香槟色，作为金边的亮部；</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393798" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-54.jpg" width="613" height="600" /></span></p>
+<p>再复制一层，将颜色填充为暗色调，作为金边暗部。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393799" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-55.jpg" width="613" height="600" /></span></p>
+<p>再次复制一层，图层模式选择线性加深，适当高斯模煳，把金边与底面遮挡形成的阴影画出来即可。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393800" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-56.jpg" width="613" height="600" /></span></p>
+<p>底部平台基本处理完成后，我们来继续美化上层圆台。我们先用同样的方法对圆台进行大理石材质贴图和棱角打磨：</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393801" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-57.jpg" width="509" height="800" /></span></p>
+<p>如果继续用镶边的修饰形式处理圆台画面未免会显得有些过于重复。因此，我们需要用另外一种同样能代表中国传统美学的装饰元素来处理我们的圆台，比如包边。</p>
+<p>用椭圆工具在圆台下方绘制出包边形状，配合画笔擦出大概的金属受光产生的明暗变化。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393802" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-58.jpg" width="509" height="800" /></span></p>
+<p>如果想表现出一种古代宫廷的华美，可以多复制几层，填充亮色，通过位移让底部包边形成层次感，自然地形成一种皇室华美器皿的意象。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393803" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-59.jpg" width="509" height="800" /></span></p>
+<p>在圆台顶面再增加两层镶边，进一步丰富圆台细节。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393804" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-60.jpg" width="509" height="800" /></span></p>
+<p>为什么依然感觉不到一种古韵悠长的质感？这是因为整个画面最灵魂的地方还没有处理——影。</p>
+<p>影子不仅是一个真实画面不可缺少的元素，同样也是中国悠长历史中重要的文化符号，物体与物体之间遮挡关系所形成的阴影，物体在镜面材质上所形成的的倒影，正是因为倒影和阴影的刻画，才能更深刻地体现出画面的质感与光效。</p>
+<p>在这里，我们将平台与平台，产品与平台之间的光影关系处理清楚，通过曲线与蒙版、画笔等工具表现出来即可。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393805" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-61.jpg" width="509" height="800" /></span></p>
+<p>主产品区处理完成后，为了让前景更加突出，我们可以将背景适当压暗，并调用曲线，根据产品受光方向，处理背景的明暗面。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393806" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-62.jpg" width="509" height="800" /></span></p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393807" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-63.jpg" width="343" height="488" /></span></p>
+<p>我们可以用套索工具勾出光束形状，在此基础上，新建曲线工具进行提亮，再进行一个动感模煳，快速制作出光束效果，增加一层朦胧意向的画面光感。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393808" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-64.jpg" width="509" height="800" /></span></p>
+<p>还可以再进一步制作一些亮度更高，边缘更锋利的光束，进一步强化画面意向光感，渲染画面情绪。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393809" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-65.jpg" width="509" height="800" /></span></p>
+<p>光感处理完毕后，海报的整体质感基本成型。不过，依然存在上部留白过多、中国风神韵体现不够明显等问题。所以接下来，我们借鉴苏州园林镂窗灵感，给背景设计一个具备中国风神韵的窗口。</p>
+<p>用钢笔工具勾出大概的形状，描边，复制一层，适当调节大小，进行重复操作后，便可以得到一个由中国传统园林建筑形态简化而来的装饰符号。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393810" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-66.jpg" width="509" height="800" /></span></p>
+<p>不过，现在画面会给人一种沉稳的视觉压力，因此，我们在站酷海洛上挑选一张桃色系的背景图迎合产品本身色调的同时增加画面的色彩多样性，当然，别忘了将图片适当模煳，以免抢夺视觉中心。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393811" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-67.jpg" width="509" height="800" /></span></p>
+<p>可以在窗口的位置围绕产品适度放一些具象的鲜花做点缀，形成一个良好的画面虚实占比。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393812" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-68.jpg" width="509" height="800" /></span></p>
+<p>元素摆放完成后，根据元素之间的遮挡关系添加阴影、闭塞阴影和倒影即可。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393813" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-69.jpg" width="509" height="800" /></span></p>
+<p>在产品和背景直接添加光效和烟雾，拉开产品与背景的层次，同时强化产品的聚焦感。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393814" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-70.jpg" width="509" height="800" /></span></p>
+<p>如果觉得画面扔有些单调，可以在画面中再加一点类似花瓶或飞花这样的古风元素，但切记装饰元素细节不宜太复杂，避免细节过剩。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393815" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-71.jpg" width="509" height="800" /></span></p>
+<p>最后加上文案与国风UI，一张中国风韵味浓厚的产品海报就完成了。</p>
+<p><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-393816" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gf-20201028-72.jpg" width="509" height="800" /></span></p>
+<p>当然，上述案例只是中国风的一种表现手法，像文章开头所说，只要能唤起我们作为中国人民族触感的优秀海报都可以称为中国风。</p>
+<p>以上，我们从中国平面设计发展，聊到生活中的中国风，再到电商设计中的中国风运用，浅探了中国风设计的玩法规律和演变历程，最后用一个电商中国风海报案例进行学以致用讲解。借此希望能通过本篇文章，激发大家的灵感，创作出更好的中国风作品。感谢观看！</p>
+<p>[link https://www.uisdc.com/sketch-in-banner-design]</p>
+<p>欢迎关注作者的<a class="tag_a" href="https://www.uisdc.com/topic/%e5%be%ae%e4%bf%a1" target="_blank" rel="noopener noreferrer">微信</a>公众号：</p>
+<p><span class="img-zoom"><span class="img-zoom"><img alt="电商设计如何用好中国风？收下这份全面指南！（附实战案例）" class="alignnone size-full wp-image-389631" src="https://image.uisdc.com/wp-content/uploads/2020/09/Snipaste_2020-09-21_06-10-21.png" alt="如何提高创意设计能力？试试这个P4D训练法！" width="176" height="175" /></span></span></p>
