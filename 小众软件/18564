@@ -43,3 +43,31 @@ https://www.appinn.com/animiz-wancai/	20796
 <p>激活后， 1 年内有效。在账号状态里能查看到期时间</p>
 <div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202010/t12.jpg!o" alt="[限时领取激活码] 万彩动画大师 - 快速制作动画视频的软件 12" title="[限时领取激活码] 万彩动画大师 - 快速制作动画视频的软件 12"></figure></div>
 <p>这里需要注意，若升级前正使用账号登录万彩动画大师，升级后，软件上依然显示免费版，那么请先退出账号，重新登录即可。</p>
+➜打造「个人跑步主页」将 Runtastic、Nike Run Club、Strava、Garmin、Keep 的跑步数据可视化
+https://www.appinn.com/running-page/	26110
+<p>Running Page 是一个可以将个人跑步数据可视化的小项目，你只需要跑步，以及做一些微小的操作，就可以获得一个如下图一样的，漂亮的个人跑步主页。目前支持多家数据源：Strava、Nike Run Club、Runtastic(Adidas Run)、Garmin、Garmin-cn、Keep。@Appinn</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202010/running-personal-page.jpg!o" alt="打造「个人跑步主页」将 Runtastic、Nike Run Club、Strava、Garmin、Keep 的跑步数据可视化 1" title="打造「个人跑步主页」将 Runtastic、Nike Run Club、Strava、Garmin、Keep 的跑步数据可视化 1"></figure></div>
+<p>开发者 @<a href="https://twitter.com/yihong06181/status/1299625973038501889" class="rank-math-link" target="_blank" rel="noopener">yihong0618</a> 说：</p>
+<blockquote class="wp-block-quote"><p>个人跑步数据可视化。把代码优化了下，顺滑了一些，增加了点击排序小功能。之后想办法把教程写下，把代码变得 common 一些让多些感兴趣热爱跑步的程序员也用上。欢迎来玩 <a rel="noreferrer noopener" href="https://t.co/chMxodtGxi?amp=1" target="_blank">https://yihong.run/running</a></p></blockquote>
+<h3>特性如下</h3>
+<ol><li>GitHub Actions 管理自动同步跑步进程及自动生成新的页面</li><li>Gatsby 生成的静态网页，速度快</li><li>支持 Vercel(推荐) 自动部署</li><li>React Hooks</li><li>Mapbox 进行地图展示</li><li>Nike 及 Runtastic(Adidas Run) 以及佳明（佳明中国）及Keep, 自动备份 gpx 数据，方便备份及上传到其它软件</li></ol>
+<p>并且放了一段录屏：</p>
+<div class="aspect-ratio">
+<iframe src="//player.bilibili.com/player.html?aid=842565604&#038;bvid=BV1K54y1r79a&#038;cid=250522785&#038;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+<p>在这个<strong>个人跑步主页</strong>上呢，展示了你的总跑步旅程，以及每一年的统计，当然还有很酷的地图，以及每一次跑步信息。和&#8230;很多彩蛋。</p>
+<p>比如每一年的跑步统计热力图，就像 GitHub 一样直观的看到在这一年中，哪一天跑步了，哪一天没跑步，以及&#8230;哪一天跑的很多</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202010/2020-10-29-11-12-38.jpg!o" alt="打造「个人跑步主页」将 Runtastic、Nike Run Club、Strava、Garmin、Keep 的跑步数据可视化 2" title="打造「个人跑步主页」将 Runtastic、Nike Run Club、Strava、Garmin、Keep 的跑步数据可视化 2"></figure></div>
+<p>还有一个更好玩的图，集中展示了你的跑步路线（超过10公里）</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202010/2020-10-29-11-15-34.jpg!o" alt="打造「个人跑步主页」将 Runtastic、Nike Run Club、Strava、Garmin、Keep 的跑步数据可视化 3" title="打造「个人跑步主页」将 Runtastic、Nike Run Club、Strava、Garmin、Keep 的跑步数据可视化 3"></figure></div>
+<p>注意上面两张可视化效果图需要点击左侧的 <strong>Total 跑步旅程</strong> 部分，才会现实出来：</p>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202010/2020-10-29-11-20-01.jpg!o" alt="打造「个人跑步主页」将 Runtastic、Nike Run Club、Strava、Garmin、Keep 的跑步数据可视化 4" width="400" height="913" title="打造「个人跑步主页」将 Runtastic、Nike Run Club、Strava、Garmin、Keep 的跑步数据可视化 4"></figure></div>
+<p>而如果点击的是某一个年度，那么看到的是该年里的每一次跑步数据：</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202010/2020-10-29-11-21-21.jpg!o" alt="打造「个人跑步主页」将 Runtastic、Nike Run Club、Strava、Garmin、Keep 的跑步数据可视化 5" title="打造「个人跑步主页」将 Runtastic、Nike Run Club、Strava、Garmin、Keep 的跑步数据可视化 5"></figure></div>
+<p>那么问题来了，如何做到这些呢？</p>
+<p>running_page 项目在 <a href="https://github.com/yihong0618/running_page" class="rank-math-link" target="_blank" rel="noopener">GitHub</a> 开源，并且提供了大致的安装流程，青小蛙理了一下，可以归纳为：</p>
+<ol><li>安装</li><li>删除测试数据</li><li>下载跑步数据</li><li>部署</li><li>设置 GitHub Actions</li></ol>
+<p>这一部分牵扯很多技术问题，请移步 GitHub 页面详细阅读安装指南。</p>
+<p>然后，就可以获得一个漂亮的个人跑步页面了，目前已经有这些示例：</p>
+<figure class="wp-block-table"><table><thead><tr><th>Runner</th><th>page</th><th>App</th></tr></thead><tbody><tr><td><a href="https://github.com/shaonianche" target="_blank" rel="noopener">shaonianche</a></td><td><a href="https://run.duangfei.org/" target="_blank" rel="noopener">https://run.duangfei.org</a></td><td>Nike</td></tr><tr><td><a href="https://github.com/yihong0618" target="_blank" rel="noopener">yihong0618</a></td><td><a href="https://yihong.run/running" target="_blank" rel="noopener">https://yihong.run/running</a></td><td>Nike</td></tr><tr><td><a href="https://github.com/superleeyom" target="_blank" rel="noopener">superleeyom</a></td><td><a href="https://running.leeyom.top/" target="_blank" rel="noopener">https://running.leeyom.top</a></td><td>Keep</td></tr><tr><td><a href="https://github.com/geekplux" target="_blank" rel="noopener">geekplux</a></td><td><a href="https://activities.geekplux.com/" target="_blank" rel="noopener">https://activities.geekplux.com</a></td><td>Nike</td></tr><tr><td><a href="https://github.com/guanlan" target="_blank" rel="noopener">guanlan</a></td><td><a href="https://grun.vercel.app/" target="_blank" rel="noopener">https://grun.vercel.app/</a></td><td>Strava</td></tr><tr><td><a href="https://github.com/tuzimoe" target="_blank" rel="noopener">tuzimoe</a></td><td><a href="https://run.tuzi.moe/" target="_blank" rel="noopener">https://run.tuzi.moe/</a></td><td>Nike</td></tr></tbody></table></figure>
+<p>所以，跑个步顺便学个编程，怎么样？</p>
