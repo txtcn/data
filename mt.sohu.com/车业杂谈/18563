@@ -1,0 +1,119 @@
+➜“自研芯片”这条路，为何蔚来非走不可？
+http://www.sohu.com/a/427894430_108024	30601
+<p>近日，有消息称蔚来计划自主研发自动驾驶计算芯片，并已组建了独立的硬件团队“Smart HW”来负责此项目，李斌亲自挂帅。</p>
+<p>“自研芯片”，这短短四个字听起来就不便宜。以Nvidia的Xavier为例，该自动驾驶芯片在开发时动用了2000名工程师，开发费用合计高达20亿美元！20亿美元是个什么概念？国内此前不少造车新势力，从诞生到消失都没融到这么多钱。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201028/c4c239cc42514307833d1be4fe3d11ba.jpeg" max-width="600" /></p>
+<p>那么李斌，作为“2019年最惨的人”，为何执意要走“自研芯片”这条烧钱的路呢？用用供应商的不也挺香吗？</p>
+<p><strong>供应商的芯片可能真没那么香</strong></p>
+<p>自动驾驶主要围绕芯片、系统、算法和数据来进行能力提升。短期来看，数据可以拉开自动驾驶系统间的差距，但长期来看，芯片才是决胜的关键。就像两位小学生，在智商差距不大的情况下，获得知识更多（路况数据收集得更多）的小朋友，相应的成绩会更好。但是时间放长来看，他们获取的知识都到一定瓶颈后，决定他们成就高低的就是智商了。芯片，则是决定自动驾驶系统“智商”的核心。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201028/30c471f779b54a9f857e98890b4741a3.jpeg" max-width="600" /></p>
+<p>目前，自动驾驶领域的车用芯片大致分为三类： GPU，FPGA和ASIC。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>GPU即图像处理单元（Graphics Processing Unit），擅长图像处理和大量重复性的运算任务，但是尺寸不具有优势，且能耗巨大。</p>
+<p>FPGA即现场可编程逻辑门阵列（Field Programmable Gate Array），可以烧入FPGA配置文件来定义逻辑门电路以及存储器之间的连线，从而实现硬件的可编程。FPGA可实现比GPU更高的并发处理，且功耗更低。但是其基本单元的计算能力有限，也就是说相同算力情况下，FPGA的尺寸不占优势。</p>
+<p>ASIC即特殊应用集成电路（Application Specific Integrated Circuit），指应特定用户需求和特定电子系统的需求而设计、制造的集成电路。</p>
+<p>GPU，如Nvidia的Xavier，属于通用集成电路。也就是说为了满足广泛用户的需求，对于特定用户来说会出现硬件冗余、能耗冗余，而冗余的这部分成本用户依然需要买单。比如特斯拉自动驾驶硬件的第一代，采用的是Mobileye Q3芯片，该芯片是以视觉处理为主，深度学习为辅。而随着特斯拉的销量开始上来，有了道路数据的基础，马斯克于是更倾向于深度学习为主的芯片，这才有了2019年的特斯拉自研芯片FSD。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201028/62cd15a04401473d9932dc12d32b5492.jpeg" max-width="600" /></p>
+<p>所以长期来看，ASIC芯片对于车企来说才是更节约成本的方式，同时能够更好的匹配车企们的不同系统和算法。此外，大家都采用相同供应商芯片的话，将来很可能面临同质化严重的问题，很难体现在友商之中的优势，营销、销售也可能因此陷入困局。</p>
+<p><strong>自研与采购，可能并不冲突</strong></p>
+<p>大家可能被Nvidia的20亿美元研发费用吓到了，但车企自研芯片的费用可能并不需要这么多。一方面，车企自研芯片并不等于自制芯片，就像你自己装修房子并不是说水电、木工这些都得自己来。另一方面，自研芯片并不是一次性投入，而是一个持续性投入。如果李斌真要拿一百多亿一次性投到芯片研发中去，想必投资方都会跳起来骂街了。所以自研芯片虽然听起来很费钱，但对于蔚来现阶段的发展没到伤筋动骨的地步。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201028/7001f3745961428082244d6cd77bc600.jpeg" max-width="600" /></p>
+<p>当然，自研芯片并不是说与供应商要一刀两断，事实上两条技术路线并不冲突。芯片供应商需要路况数据来优化自家的芯片设计，车企需要路况数据来优化自家的系统和算法，所以他们都希望更多带有自动驾驶辅助功能的汽车开在路上。这种共赢的合作是短时间内不会被打破的，而在整个合作的过程中，车企也能从供应商处学习到不少芯片方面的经验，进而在自研芯片过程中做出更优的方案。</p>
+<p>2019年11月5日，蔚来汽车宣布，将与Mobileye合作研发L4级别自动驾驶汽车，蔚来汽车负责整车级别自动驾驶系统的研发、集成及汽车的大规模量产。而Mobileye负责提供芯片和相关技术，同时还会大量采购蔚来ES8特别版用于智能出行服务。从时间节点来看，现在蔚来与Mobileye的合作已达到一定深度，此时推进自研芯片不恰恰是最好的时机吗？</p>
+<p><strong>自研芯片是为了确立未来优势</strong></p>
+<p>特斯拉的HW3.0芯片，相比上一代芯片在性能提升的同时，成本还降低了20%，马斯克已经开始尝到自研芯片的甜头了。此前有数据显示，国产Model 3的单车利润接近10万元！随着大家销量的提升，如果不多想想降低成本的办法，特斯拉与自主造车新势力之间的差距就会越拉越大。</p>
+<p>自研芯片确实是笔不菲的投入，但带来的好处也是显而易见的。一方面，可以夯实老用户的品牌忠诚度。大家都知道，老用户的口碑孵化在蔚来的营销体系中占据着非常重要的位置，让老用户看到蔚来的进步，对于品牌忠诚度的提升是明显的。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201028/7aad7da3e9404c32bd6cc1b2ff58a612.jpeg" max-width="600" /></p>
+<p>另外一方面，造车新势力最缺的是什么？钱啊！只有让投资方看得到你品牌的未来优势，你才能更容易融到资金。要知道，特斯拉成立至今，融资已超百亿美元，蔚来想要追赶特斯拉，仍需要持续的融资。推进自研芯片项目，相当于蔚来已经领好了下一张饭票，不用再愁吃了这顿没下顿了。</p>
+<p><strong>写在最后：</strong>综合来看，自研芯片可以强化蔚来在未来市场中的竞争力，可以稳固消费者和投资人的信心。而且现在，又是蔚来布局自研芯片最好的时机。所以，虽然该项目还未经过董事会讨论，但笔者认为，自研芯片，蔚来是非走不可了。</p>
+➜7.7万起的大空间捷途X70PLUS让小型SUV在城镇怎么活？
+http://www.sohu.com/a/427901070_108024	32161
+<p>10月27日，捷途X70PLUS在西部区域正式上市，新车售价区间为7.7-13.7万元。作为现款捷途X70的升级版车型，尺寸更大的捷途X70PLUS搭载两种动力共推出9款车型供选，对于消费者而言，购车可享受5大购车权益。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201028/90da75659d274c308afec7fdd1fd7608.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201028/88012f2d20fb44a6a2715b0724639d48.jpeg" max-width="600" /></p>
+<p>“勇征蜀道 无畏天险”，捷途就是这么一个逆势前行的品牌，虽才2岁，已经挺进中国SUV车企前11位。而本次，《车业杂谈》有幸在剑门关小试了一把捷途X70PLUS，特别惊喜于这台“网红”新车的内部空间表现。整个体感下来，认为这台车应该会让一些小型SUV车型在二三线城市很难有生存空间。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201028/4a35f845732445d6be184e963745d310.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>新车长宽高分别为4749/1900/1720mm，轴距达到2745mm，空间表现领跑同级，并配备5/6/7座布局供消费者选择。坐在第二排，腿随便摆什么姿势都可以，而且前面坐180cm的男性，后排的笔者（165cm）半躺着试着翘了一个男士二郎腿，还有约2拳的腿部空间。在另外一台试驾车上看到了3位摄像小哥拿着设备坐在后排，由于宽大的空间，后排并不会拥挤。而5座车的后备箱438L，放2-3个24寸的箱子应该是轻松加愉快的，如果二排座椅放倒，可秒变一张大床，一车多用。放置行李也好，舒适坐姿也好，从空间来讲，捷途X70PLUS的确很适合旅行，而且不接受反驳。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201028/a82a1a34723d469c8bccb7fcdd0758bc.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201028/5772492aa5dc4f25a065ba32eb7c9e44.jpeg" max-width="600" /></p>
+<p>带上PLUS，对于近期的车型而言，便意味着全面升级。从外观来讲，采用“徽城翘楚”家族设计语言的X70PLUS，更有中国味道，而且前格栅尺寸更大，前脸更显大气。整个外观造型，笔者最喜欢纵向的四点式日间行车和矩阵式转向灯的视觉冲击，而且大灯造型更狭长犀利，时尚精致感更强。对于尾部，贯穿式的尾灯，则保持了时下流行的风格。多说一句，试驾时发现，不同配置车身颜色有细节差异，仅高配车型保持了车身颜色一体的设计，稍低配的车型则是黑色的轮眉和保险杠下包围，细节上提升了不同配置的辨识度。这种细节的差异不仅体现在外观，内部同样有这样的辨别逻辑。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201028/c4bea2ddff654428a1cc3c64c21efa6c.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201028/b52ca8259ad4412d8ba19fb7e6d96615.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201028/86e54f1d519d47949be3534ffa235784.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201028/dca4e3a1f43240149eb44d2f5bebc8ea.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201028/361c6ba377ad40e5967ce685acfad638.jpeg" max-width="600" /></p>
+<p>内饰方面，捷途X70PLUS拥有米棕、红黑、全黑三种配色可选，而我们试驾的车型为全黑内饰。进入车内会发现，新车采用了双10.25英寸的一体式联屏设计，时下流行。值得一提的是，由于配置不同，空调控制区域会有不同的设计，高配车型会有一个旋钮控制屏，下方做了镂空设计，将手机无线充电和USB接口集成在该部分，而稍低一点的配置，则配备了一块常见的触控屏，而且无线充电和USB接口也在我们熟悉的方位。会不会为了享用不同的中控造型而选择不同的车型呢，这就要看各位消费者的喜好和需求了。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201028/893249d46dde4aa68515d3fcbdf7463b.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201028/5669b4a2bbc44e899ee5c09c1e508adc.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201028/8301935dae71478fb0859899599a3033.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201028/16fc6253c2a1434cbb24775a7867044f.jpeg" max-width="600" /></p>
+<p>比较有意思的发现是，新车配备了主驾座椅电动调节，调节按钮设置在门板上，同时我们关注到，在电动座椅调节按钮附近设有座椅记忆功能预留按键，从捷途工作人员处了解到，这是为更高配置的车型埋下了伏笔。此外，由于捷途X70PLUS配备了同级唯一的声学夹层玻璃、车门三层密封配置，关上窗户便能很大程度的隔绝风噪和发动机噪音。由于本次试驾多为道路较窄的盘山路段，L2.5级的驾驶辅助系统并没有施展开拳脚，我们也且留个悬念，放在以后的机会进一步体验之后再跟大家分享。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201028/0b54120171654d1594b21cb14fcda10a.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201028/9802ac93b40f42ed909f897422f78b73.jpeg" max-width="600" /></p>
+<p>我们知道，捷途X70PLUS另一个升级就在于动力，在1.5T发动机基础上新增了1.6TGDI发动机，匹配6速手动、6速双离合及7速双离合变速箱。其中，1.5T发动机最大功率114kW，最大扭矩230N·m；1.6T发动机最大功率145kW，最大扭矩290N·m，且拥有37.1%的热效率。当然了，这是数据上的表现，试驾路段为剑阁县城区前往剑门关风景区，期间道路多弯多陡坡，无论是普通模式还是运动模式，动力的输出都是偏线性的，整体爬坡并不会因为是个大块头就拖泥带水，也就是说，无论是日常通勤，还是出游对抗盘山路，这台车完全够用了。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201028/372905e14608415ea947f6f9fc576bde.jpeg" max-width="600" /></p>
+<p>此外，西部区上市之际，捷途汽车带来的“旅行+战略”成功引起了笔者的注意，其中，全旅途周边生态布局不仅方便了捷途车主自驾去旅行，更为他们带来了旅游景区、酒店住宿折扣等实惠，也为当地就业发展、农副产品扶贫等创造了更多机会，跟奇瑞控股集团JETOUR捷途营销公司西部分公司总经理汪俊先生了解到，目前，与捷途汽车合作的旅游景区已经达到82家，未来还会继续开发，截止年底争取突破100家，对于捷途车主来说，不仅是买车，还是买了自驾游的服务。据奇瑞控股集团JETOUR捷途营销公司客户生态链运营部部长王忠宇先生透露，11-12月份，捷途汽车还将为车主发布与其他合作伙伴联手的新权益。纵观整个车市，能这样去为车主打造权益的，捷途算是先行者。难怪便宜又有实力的捷途X70PLUS上市10天订单已破3000台。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201028/4e7d1d2a5eb04b0d9e5e1ee214a71e72.jpeg" max-width="600" /></p>
+<p><strong>写在最后：</strong>在8-15万区间的SUV，竞争十分激烈，捷途X70PLUS综合实力不俗，特别是大空间，相信会吸引很多二三线城市的用户，甚至包括一线城市的退休人员去改装成适合自驾露营的车辆。今年淘汰赛在加速，对于能为用户带来更多权益的捷途，相信会站住脚跟，并不断向上的。</p>
+➜探店五菱凯捷，重点体验空间，6个座椅玩法多，仍是多功能MPV
+http://www.sohu.com/a/427918270_108024	36416
+<p class="ql-align-center"><iframe width="500" height="300" scrolling="no" frameborder="0" border="0" allowfullscreen="true" src="//tv.sohu.com/s/sohuplayer/iplay.html?bid=220978220&amp;vars=%5B%5B%22showRecommend%22%2C0%5D%5D&amp;disablePlaylist=true&amp;mute=1&amp;autoplay=false"></iframe></p>
+<p>五菱凯捷上市在即，网传订单火爆。是不是真的火爆，为何火爆，凭何火爆？《车业杂谈》心怀好奇前去探店。此前，它发布了预售价格为8.98-11.98万元，作为一台有6个座位的紧凑级MPV，这个价格还是比较友好。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201028/93290f52d9d74a519e5b589ce370e954.png" max-width="600" /></p>
+<p>刚一进店，就看见有一组客户在看车。随后，销售顾问告诉我们，近期来看这个车的人，基本看完后，半数都会下订，这个比例还是相当高的。</p>
+<p><strong>近距离接触五菱凯捷，直觉感受有两点：</strong></p>
+<p>第一，MPV讲求空间利用率，五菱凯捷造型总体中规中矩（长宽高分别为4875*1880*1690mm，轴距达2800mm）。外观的细节还是用了些心思，像前脸的设计，包括格栅、大灯均是当下流行的款式，看起还是很乘用化。另外，银标和尾部的字母标也显得比红标车档次要高那么一些。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201028/15571ea8b80d42948183b125443070ac.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201028/4cc8fad8fe814f90b3f83b2e87c5c0a2.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201028/a5f15ea005f44f0aba749fb554f30939.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201028/2abc06d871524839a9e53b557c5dd3b9.png" max-width="600" /></p>
+<p>第二，静态体验一辆车的外观质感，难免会关注两点。一是车漆，二是开关门的手感。和红标车型相比，五菱凯捷的车身漆面感觉多了一些层次感，细腻程度好过以往，车门开关的手感也给人留下较好的印象，可能比某些合资入门车型还要好点。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201028/8d338f9ff94b4c519f0a9fe72ae1a0e4.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201028/d1967563a7b4471d9e168f6a10b751c6.png" max-width="600" /></p>
+<p>内饰方面，五菱凯捷大量采用了平直线条，非常简洁，各区布局也很清晰；镀铬装饰条和钢琴亮漆材质增加了一些档次感。另外，这个方向盘还采用了平底设计，增加了一点运动氛围。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201028/faeb95ebe4564dd79e28b82e57b532b0.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201028/7122bb74fd3e4a20856731cbe38723d2.png" max-width="600" /></p>
+<p>展厅里的这台车是中高配【自动尊贵型】，预售价格为10.98万。这里值得一提的是，这个斜边设计的大屏尺寸是10.25英寸，全系标配——看得出来，销售顾问介绍的时候，说起这个也很自信。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201028/be782a99605943079d4bc49b3b86fa80.png" max-width="600" /></p>
+<p><strong>其实，本次探店小编重点想要感受的是这款车的座椅布局。</strong></p>
+<p>五菱凯捷是6座车型，但是在厂家宣传的时候，非常强调这台车是“大四座”。印象里面，高端MPV才比较喜欢强调大四座，10万级的SUV或MPV以往都是宣传自己“大三排”、“大7座”——那五菱凯捷到底怎么想的呢？</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201028/8ebf0b3b706744a18b5b5ab91a15d97c.png" max-width="600" /></p>
+<p>空间布局是否灵活，二排很关键。这个车的一大特点就是第二排座椅的滑动空间非常大，前后调节范围可达半米，而且还带腿托。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201028/dd11917fa8b049e8ac4f1c09bf8f9a39.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201028/c4e0a097446e4d1eb3acbca37f42fa42.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201028/0bfe12d4bcc34f11926b27ab4a630c52.png" max-width="600" /></p>
+<p>因此，当驾乘人数3-4人的时候，坐在二排的乘客自由度和舒适度就非常大了——这大概是厂家强调大四座的第一个卖点。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201028/1305dc04e44843aa80d1fc3447a42a13.png" max-width="600" /></p>
+<p>座椅下方侧面有两个调节机关，一个是负责调节前后方位，一个负责调左右，当然都是手动。这当然不比电动调节那样丝滑，但用力方面，也还不算太费力，可以接受。左右调节，两个座位靠拢的时候，照顾邻座的小孩和老人都会很方便。左右调开，中间大约有20公分的距离，为进入三排留出了一个小通道。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201028/52836d56741444c9a10af204a0aa1536.png" max-width="600" /></p>
+<p>那再说下五菱凯捷的第三排。MPV车型和所谓的7座SUV最大的不同就在于，它的第三排是座椅，而不是加个厚坐垫。小编身材比较瘦小，160cm，正常坐姿是完全没问题的，腿部和头顶空间还有不少富余；假如一个中等身材的男生坐进三排，也不会太憋屈。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201028/39192864a3b54db380479a2282ad483e.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201028/d8fbdd457d154fff91131d04ac44a00d.png" max-width="600" /></p>
+<p>另外，这个第三排还可以折叠收缩放进后备箱（一拉、二推、三折叠，小编按照说明书，还是琢磨了很久才找到手感），后面就能形成一个较为平整的空间。如果你偶尔需要装很多东西，带货也好，长途自驾游也好，这个座椅状态就很合适——这应该就是厂家强调五菱凯捷是“大四座”的第二个场景。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201028/61f099a78e8043b58574a825d308279b.png" max-width="600" /></p>
+<p>一番静态体验下来，总体评价，五菱凯捷作为五菱品牌旗下定位相对更高的车型，在外观、工艺和舒适性上确有明显提升；但同时，它依然没有放弃它多功能的定位——毕竟，这是忠实的五菱客户群体最在乎的一个方面。10万元左右，买台这样的车，无论是家用还是做点小生意，里子面子都够了。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201028/96ae579e4fd148ac9cbe32140a8cac62.png" max-width="600" /></p>
+<p>至于这台车的动力体验如何，后期《车业杂谈》在试驾后再与大家分享。</p>
