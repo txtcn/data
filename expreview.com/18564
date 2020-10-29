@@ -1,3 +1,18 @@
 ➜微软表示Xbox Series X/S是唯一具备完整RDNA2特性的游戏主机
 http://www.expreview.com/76490.html	8478
 <p>次时代主机的发售日期已经真正的进入倒计时阶段，微软和索尼在这段关键时期并没有放弃任何一个宣传自家游戏主机的机会。前阵子可能索尼方面出手过于频繁，微软这边也是坐不住了。就当AMD正式发布基于RDNA2代的RX 6000系列显卡之后，微软立即向自己的合作伙伴表示祝贺，同时表明自己的Xbox Series X/S才是唯一具备完整RDNA2特性的游戏主机。</p><p style="text-align: center;"><img src="https://img.expreview.com/news/2020/10/29/Xbox1.jpg" width="100%"/></p><p><a href="https://news.xbox.com/en-us/2020/10/28/a-closer-look-at-how-xbox-series-xs-integrates-full-amd-rdna-2-architecture/" target="_blank">微软在Xbox新闻网站上发表了一篇文章</a>，由技术研究员安德鲁·古森和项目管理总监杰森·罗纳德撰写。文章中祝贺了AMD RDNA2架构的成功发布，同时也强调了Xbox Series X/S是唯一完全支持AMD RDNA2架构的下一代主机。</p><p>“过去15年以来，Xbox和AMD之间一直保持着长期的战略合作关系（从Xbox 360时代就已经开始）这也包括Xbox Series X与Xbox Series S。11月10日我们将一起推出次时代游戏主机，提供在游戏机领域中玩家从未见过的能耗比提升、卓越的性能和强大的兼容性，这些都是由 AMD &quot;Zen 2&quot;和 RDNA 2 架构提供支持。并且我想强调的是Xbox Series X/S是唯一具备完整RDNA2特性的游戏主机。”</p><p>这些新特性包括硬件级加速光线追踪、DirectML机器学习、VRS可变速率着色、可变刷新率、向后兼容性等等。不过这篇文章似乎也在暗示市场上的另外一家采用AMD定制芯片的索尼PS5不会完整的支持所有RDNA2特性，事实上索尼在PS5的一些细节还没有完全公之于众，有人表示索尼在某些功能上可能会有自己的解决方案，比如定制的SSD控制芯片就是一个例子。那么PS5到底支持多少RDNA2特性？这个问题估计要等到PS5发售才能得到答案了。</p>
+➜AMD RDNA 2显卡光追性能超NVIDIA RTX 20系列，至少和RTX 3070打平
+http://www.expreview.com/76492.html	9472
+<p style="text-align:left;">AMD昨晚的发布会上带来了RDNA 2的RX 6900XT、RX 6800XT与RX
+6800三款显卡，从官方公布的性能来看能RX 6900XT和RX 6800XT能与RTX 3090/3080打个平手，而RX 6800的性能应该高于RTX
+3070，在发布会上AMD也表示这三款显卡是支持实时光线追踪的，但没有提到具体的实现方式。</p><p style="text-align:center;"><img src="https://img.expreview.com/news/2020/10/29/RDNA2_01.jpg" width="100%" border="0"/></p><p style="text-align:left;">在官方的RDNA 2架构介绍页面上有提到新架构实时光追的实现方法，和NVIDIA一样，AMD的RDNA
+2架构直接往CU单元里面加了硬件光追单元，他们把它叫作Ray Accelerators，每个CU单元里面都有一个Ray
+Accelerators，也就是说拥有80组CU的RX 6900XT有80个，RX 6800XT则有72个，RX 6800有60个。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/10/29/RDNA2_02.jpg" width="100%" border="0"/></p><p>RDNA 2的光追性能是昨晚发布会并没有提及的，不过架构介绍页面下的注释有写：由AMD工程实验室在2020年8月17日对基于AMD RDNA
+2的图形卡进行测量，使用Microsoft DXR SDK中的Procedural Geometry应用程序，AMD RDNA
+2显卡在使用软件DXR时只有34fps，而使用硬件层计算的话能达到471fps，性能提升了13.8倍。</p><p style="text-align:center;"><img src="https://img.expreview.com/news/2020/10/29/RDNA2_03.png" border="0"/></p><p style="text-align:left;"><a target="_blank" href="https://wccftech.com/amd-radeon-rx-6000-rdna-2-big-navi-graphics-cards-ray-tracing-performance-detailed/">wccftech</a>拿了这个数据和网上收集回来NVIDIA显卡跑的数据进行了对比，发现RDNA
+2显卡的光追性能要优于NVIDIA上一代显卡，基本上就是RTX 3070的级别，但和RTX 3080/3090差远了，在此测试中RTX
+3070得分约为469fps，而RTX 3080能到630fps，RTX 3090更是能到749fps。</p><p style="text-align:left;">不过AMD那个介绍页面根本没有说清楚用的是哪一种显卡来跑这个测试，也没有说测试的设置和分辨率，上面图表里的其他成绩都是基于默认设置和分辨率跑出来的。AMD RX
+6000系列的光追性能怎么样，还得等到解禁当天的首发评测才会知道。</p><p><br/></p>
+➜Switch开放云端游戏，首批游戏有《Control》及《杀手3》
+http://www.expreview.com/76491.html	9643
+<p>任天堂的Switch自推出以来除了有不少专明为其开发的游戏外，也有不少大作陆续移植到这个人见人爱的移动主机平台，其中不乏诸如《上古卷轴5：天际》《巫师3：狂猎》《地铁：离去》等的知名大作。然面，这些大作是移植了，但是它们都有一个很大的缺点，那就是由于Swtich性能不足而导致画面大幅缩水。不过现在Switch对于这个问题有一个很好的解决办法，那当然就是云端游戏了（笑）。</p><p>其实Switch之前也有游戏以云端形式上架，早在2年前《生化危机7》重制版就已经可以在Switch上云游玩了，但是只限于日本地区。而这次新登录Swtich的两款游戏则是在全球范围内都可以玩到。</p><p style="text-align: center;"><img src="https://img.expreview.com/news/2020/10/29/control-3.jpg" width="100%"/></p><p>第一款是大名鼎鼎的《Control》，准确来说是包含了游戏本体以及两个DLC的《Control Ultimate Edition – 云端版本》。这个游戏在计算机上跑要求都不低，开了光追之后更加是让不少系统都会很吃力，而在本世代主机PS4 Pro或者Xbox One X上面运行也是不尽人意。现在透过云端游戏，玩家可以轻松体验远超掌机性能的画面。</p><p style="text-align: center;"><img src="https://img.expreview.com/news/2020/10/29/hitman-3.jpg" width="100%"/></p><p>而第二款游戏则是《杀手2》的续作《杀手3》。这款光头潜行双枪爆头各种意外死亡的游戏目前官方也只是放出了预告片，预计会在明年1月推出。而现在官方宣布《杀手3》将会以云端游戏形式登录Switch，那么有机会两者是会同时推出的。</p>
