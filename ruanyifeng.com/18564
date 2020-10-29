@@ -1,0 +1,183 @@
+➜微信小程序入门教程之三：脚本编程
+http://www.ruanyifeng.com/blog/2020/10/wechat-miniprogram-tutorial-part-three.html	6967
+<p>这个系列教程的前两篇，介绍了小程序的<a href="http://www.ruanyifeng.com/blog/2020/10/wechat-miniprogram-tutorial-part-one.html">项目结构</a>和<a href="http://www.ruanyifeng.com/blog/2020/10/wechat-miniprogram-tutorial-part-two.html">页面样式</a>。</p>
+<p>今天，接着往下讲，教大家为小程序加入 JavaScript 脚本，做出动态效果，以及如何跟用户互动。学会了脚本，就能做出复杂的页面了。</p>
+<p>本篇的难度要大于前两篇，如果觉得不好理解，可以先跟着例子，动手做一遍，然后再读文字说明，可能就容易理解了。</p>
+<p>所有示例的完整代码，都可以从 GitHub 的<a href="https://github.com/ruanyf/wechat-miniprogram-demos">代码仓库</a>下载。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100912.jpg" alt="" title="" /></p>
+<h2>一、数据绑定</h2>
+<p>前面的所有示例，小程序的页面都是写死的，也就是页面内容不会变。但是，页面数据其实可以通过脚本传入，通过脚本改变页面，实现动态效果。</p>
+<p>小程序提供了一种特别的方法，让页面可以更方便地使用脚本数据，叫做"数据绑定"（data binding）。</p>
+<p>所谓"数据绑定"，指的是脚本里面的某些数据，会自动成为页面可以读取的全局变量，两者会同步变动。也就是说，脚本里面修改这个变量的值，页面会随之变化；反过来，页面上修改了这段内容，对应的脚本变量也会随之变化。这也叫做 MVVM 模式。</p>
+<p>下面看一个例子。打开<code>home.js</code>文件，改成下面这样。</p>
+<blockquote><pre><code class="language-javascript">
+Page({
+data: {
+name: '张三'
+}
+});
+</code></pre></blockquote>
+<p>上面代码中，<code>Page()</code>方法的配置对象有一个<code>data</code>属性。这个属性的值也是一个对象，有一个<code>name</code>属性。数据绑定机制规定，<code>data</code>对象的所有属性，自动成为当前页面可以读取的全局变量。也就是说，<code>home</code>页面可以自动读取<code>name</code>变量。</p>
+<p>接着，修改<code>home.wxml</code>文件，加入<code>name</code>变量。</p>
+<blockquote><pre><code class="language-markup">
+&lt;view>
+&lt;text class="title">hello {{name}}&lt;/text>
+&lt;/view>
+</code></pre></blockquote>
+<p>上面代码中，<code>name</code>变量写在<code>{{...}}</code>里面。这是小程序特有的语法，两重大括号表示，内部不是文本，而是 JavaScript 代码，它的执行结果会写入页面。因此，<code>{{name}}</code>表示读取全局变量<code>name</code>的值，将这个值写入网页。</p>
+<p>注意，变量名区分大小写，<code>name</code>和<code>Name</code>是两个不同的变量名。</p>
+<p>开发者工具导入项目代码，页面渲染结果如下。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100407.jpg" alt="" title="" /></p>
+<p>可以看到，<code>name</code>变量已经自动替换成了变量值"张三"。</p>
+<p>这个示例的完整代码，可以查看<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/08.data-binding">代码仓库</a>。</p>
+<p>页面和脚本对于变量<code>name</code>是数据绑定关系，无论哪一方改变了<code>name</code>的值，另一方也会自动跟着改变。后面讲解到事件时，会有双方联动的例子。</p>
+<h2>二、全局数据</h2>
+<p>数据绑定只对当前页面有效，如果某些数据要在多个页面共享，就需要写到全局配置对象里面。</p>
+<p>打开<code>app.js</code>，改写如下。</p>
+<blockquote><pre><code class="language-javascript">
+App({
+globalData: {
+now: (new Date()).toLocaleString()
+}
+});
+</code></pre></blockquote>
+<p>上面代码中，<code>App()</code>方法的参数配置对象有一个<code>globalData</code>属性，这个属性就是我们要在多个页面之间分享的值。事实上，配置对象的任何一个属性都可以共享，这里起名为<code>globalData</code>只是为了便于识别。</p>
+<p>然后，打开<code>home.js</code>，改成下面的内容，在页面脚本里面获取全局对象。</p>
+<blockquote><pre><code class="language-javascript">
+const app = getApp();
+Page({
+data: {
+now: app.globalData.now
+}
+});
+</code></pre></blockquote>
+<p>上面代码中，<code>getApp()</code>函数是小程序原生提供的函数方法，用于从页面获取 App 实例对象。拿到实例对象以后，就能从它上面拿到全局配置对象的<code>globalData</code>属性，从而把<code>app.globalData.now</code>赋值给页面脚本的<code>now</code>属性，进而通过数据绑定机制，变成页面的全局变量<code>now</code>。</p>
+<p>最后，修改一下页面代码<code>home.wxml</code>。</p>
+<blockquote><pre><code class="language-markup">
+&lt;view>
+&lt;text class="title">现在是 {{now}}&lt;/text>
+&lt;/view>
+</code></pre></blockquote>
+<p>开发者工具导入项目代码，页面渲染结果如下。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100408.jpg" alt="" title="" /></p>
+<p>可以看到，页面读到了全局配置对象<code>app.js</code>里面的数据。</p>
+<p>这个示例的完整代码，可以查看<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/09.global-data">代码仓库</a>。</p>
+<h2>三、事件</h2>
+<p>事件是小程序跟用户互动的主要手段。小程序通过接收各种用户事件，执行回调函数，做出反应。</p>
+<p>小程序的<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html">常见事件</a>有下面这些。</p>
+<blockquote>
+<ul>
+<li><code>tap</code>：触摸后马上离开。</li>
+<li><code>longpress</code>：触摸后，超过 350ms 再离开。如果指定了该事件的回调函数并触发了该事件，<code>tap</code>事件将不被触发。</li>
+<li><code>touchstart</code>：触摸开始。</li>
+<li><code>touchmove</code>：触摸后移动。</li>
+<li><code>touchcancel</code>：触摸动作被打断，如来电提醒，弹窗等。</li>
+<li><code>touchend</code>：触摸结束。</li>
+</ul>
+</blockquote>
+<p>上面这些事件，在传播上分成两个阶段：先是捕获阶段（由上层元素向下层元素传播），然后是冒泡阶段（由下层元素向上层元素传播）。所以，同一个事件在同一个元素上面其实会触发两次：捕获阶段一次，冒泡阶段一次。详细的介绍，请参考我写的<a href="https://wangdoc.com/javascript/events/model.html#%E4%BA%8B%E4%BB%B6%E7%9A%84%E4%BC%A0%E6%92%AD">事件模型解释</a>。</p>
+<p>小程序允许页面元素，通过属性指定各种事件的回调函数，并且还能够指定是哪个阶段触发回调函数。具体方法是为事件属性名加上不同的前缀。小程序提供四种前缀。</p>
+<blockquote>
+<ul>
+<li><code>capture-bind</code>：捕获阶段触发。</li>
+<li><code>capture-catch</code>：捕获阶段触发，并中断事件，不再向下传播，即中断捕获阶段，并取消随后的冒泡阶段。</li>
+<li><code>bind</code>：冒泡阶段触发。</li>
+<li><code>catch</code>：冒泡阶段触发，并取消事件进一步向上冒泡。</li>
+</ul>
+</blockquote>
+<p>下面通过一个例子，来看如何为事件指定回调函数。打开<code>home.wxml</code>文件，改成下面的代码。</p>
+<blockquote><pre><code class="language-markup">
+&lt;view>
+&lt;text class="title">hello {{name}}&lt;/text>
+&lt;button bind:tap="buttonHandler">点击&lt;/button>
+&lt;/view>
+</code></pre></blockquote>
+<p>上面代码中，我们为页面加上了一个按钮，并为这个按钮指定了触摸事件（<code>tap</code>）的回调函数<code>buttonHandler</code>，<code>bind:</code>前缀表示这个回调函数会在冒泡阶段触发（前缀里面的冒号可以省略，即写成<code>bindtap</code>也可以）。</p>
+<p>回调函数必须在页面脚本中定义。打开<code>home.js</code>文件，改成下面的代码。</p>
+<blockquote><pre><code class="language-javascript">
+Page({
+data: {
+name: '张三'
+},
+buttonHandler(event) {
+this.setData({
+name: '李四'
+}),
+}
+});
+</code></pre></blockquote>
+<p>上面代码中，<code>Page()</code>方法的参数配置对象里面，定义了<code>buttonHandler()</code>，这就是<code>&lt;button&gt;</code>元素的回调函数。它有几个地方需要注意。</p>
+<p>（1）事件回调函数的参数是事件对象<code>event</code>，可以从它上面获取<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html">事件信息</a>，比如事件类型、发生时间、发生节点、当前节点等等。</p>
+<p>（2）事件回调函数内部的<code>this</code>，指向页面实例。</p>
+<p>（3）页面实例的<code>this.setData()</code>方法，可以更改配置对象的<code>data</code>属性，进而通过数据绑定机制，导致页面上的全局变量发生变化。</p>
+<p>开发者工具导入项目代码，点击按钮后，页面渲染结果如下。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100409.jpg" alt="" title="" /></p>
+<p>可以看到，点击按钮以后，页面的文字从"hello 张三"变成了"hello 李四"。</p>
+<p>这个示例的完整代码，可以查看<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/10.events">代码仓库</a>。</p>
+<p>这里要强调一下，修改页面配置对象的<code>data</code>属性时，不要直接修改<code>this.data</code>，这不仅无法触发事件绑定机制去变更页面，还会造成数据不一致，所以一定要通过<code>this.setData()</code>去修改。<code>this.setData()</code>是一个很重要的方法，有很多细节，详细介绍可以读一下<a href="https://developers.weixin.qq.com/miniprogram/dev/reference/api/Page.html#Page-prototype-setData-Object-data-Function-callback">官方文档</a>。</p>
+<h2>四、动态提示 Toast</h2>
+<p>小程序提供了很多组件和方法，用来增强互动效果。比如，每次操作后，都显示一个动态提示，告诉用户操作的结果，这种效果叫做 Toast。</p>
+<p>打开<code>home.js</code>文件，为<code>this.setData()</code>加上第二个参数。</p>
+<blockquote><pre><code class="language-javascript">
+Page({
+data: {
+name: '张三'
+},
+buttonHandler(event) {
+this.setData({
+name: '李四'
+}, function () {
+wx.showToast({
+title: '操作完成',
+duration: 700
+});
+}),
+}
+});
+</code></pre></blockquote>
+<p>上面代码中，<code>this.setData()</code>方法加入了第二个参数，这是一个函数，它会在页面变更完毕后（即<code>this.setData()</code>执行完）自动调用。</p>
+<p>这个参数函数内部，调用了<code>wx.showToast()</code>方法，<code>wx</code>是小程序提供的原生对象，所有客户端 API 都定义在这个对象上面，<code>wx.showToast()</code>会展示微信内置的动态提示框，它的参数对象的<code>title</code>属性指定提示内容，<code>duration</code>属性指定提示框的展示时间，单位为毫秒。</p>
+<p>开发者工具导入项目代码，点击按钮后，页面渲染结果如下。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100410.jpg" alt="" title="" /></p>
+<p>过了700毫秒，提示框就会自动消失。</p>
+<p>这个示例的完整代码，可以查看<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/11.toast">代码仓库</a>。</p>
+<h2>五、对话框 Modal</h2>
+<p>下面，我们再用小程序提供的<code>wx.showModal()</code>方法，制作一个对话框，即用户可以选择"确定"或"取消"。</p>
+<p>打开<code>home.js</code>文件，修改如下。</p>
+<blockquote><pre><code class="language-javascript">
+Page({
+data: {
+name: '张三'
+},
+buttonHandler(event) {
+const that = this;
+wx.showModal({
+title: '操作确认',
+content: '你确认要修改吗？',
+success (res) {
+if (res.confirm) {
+that.setData({
+name: '李四'
+}, function () {
+wx.showToast({
+title: '操作完成',
+duration: 700
+});
+});
+} else if (res.cancel) {
+console.log('用户点击取消');
+}
+}
+});
+}
+});
+</code></pre></blockquote>
+<p>上面代码中，用户点击按钮以后，回调函数<code>buttonHandler()</code>里面会调用<code>wx.showModal()</code>方法，显示一个对话框，效果如下。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100411.jpg" alt="" title="" /></p>
+<p><code>wx.showModal()</code>方法的参数是一个配置对象。<code>title</code>属性表示对话框的标题（本例为"操作确认"），<code>content</code>属性表示对话框的内容（本例为"你确认要修改吗？"），<code>success</code>属性指定对话框成功显示后的回调函数，<code>fail</code>属性指定显示失败时的回调函数。</p>
+<p><code>success</code>回调函数里面，需要判断一下用户到底点击的是哪一个按钮。如果参数对象的<code>confirm</code>属性为<code>true</code>，点击的就是"确定"按钮，<code>cancel</code>属性为<code>true</code>，点击的就是"取消"按钮。</p>
+<p>这个例子中，用户点击"取消"按钮后，对话框会消失，控制台会输出一行提示信息。点击"确定"按钮后，对话框也会消失，并且还会去调用<code>that.setData()</code>那些逻辑。</p>
+<p>注意，上面代码写的是<code>that.setData()</code>，而不是<code>this.setData()</code>。这是因为<code>setData()</code>方法定义在页面实例上面，但是由于<code>success()</code>回调函数不是直接定义在<code>Page()</code>的配置对象下面，<code>this</code>不会指向页面实例，导致<code>this.setData()</code>会报错。解决方法就是在<code>buttonHandler()</code>的开头，将<code>this</code>赋值给变量<code>that</code>，然后在<code>success()</code>回调函数里面使用<code>that.setData()</code>去调用。关于<code>this</code>更详细的解释，可以参考<a href="https://wangdoc.com/javascript/oop/this.html">这篇教程</a>。</p>
+<p>这个示例的完整代码，可以查看<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/12.modal">代码仓库</a>。</p>
+<p>今天的教程就到这里，对于初学者来说，已经讲了很多东西，可能需要慢慢消化。如果对网页开发和 JavaScript 语言不熟悉，你也许会觉得不容易完全理解，不用担心，初学者只需要知道加入脚本的方法，以及脚本可以达到的效果就可以了，后面做到实际的项目，慢慢就会加深理解。</p>
+<p>有了脚本以后，就可以通过小程序 API，去调用微信的各种内置能力。下一篇教程将重点讲解如何使用小程序 API。</p>

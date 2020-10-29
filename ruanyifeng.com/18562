@@ -148,4 +148,4 @@ style="width: 750rpx;">
 <p>上面代码中，<code>&lt;swiper&gt;</code>组件就是轮播组件，里面放置了三个<a href="https://developers.weixin.qq.com/miniprogram/dev/component/swiper-item.html"><code>&lt;swiper-item&gt;</code>组件</a>，表示有三个轮播项目，每个项目就是一个<code>&lt;image&gt;</code>组件。</p>
 <p><code>&lt;swiper&gt;</code>组件的<code>indicator-dots</code>属性设置是否显示轮播点，<code>autoplay</code>属性设置是否自动播放轮播。它们的属性值都是一个布尔值，这里要写成<code>{{true}}</code>。这种<code>{{...}}</code>的语法，表示里面放置的是 JavaScript 代码，这个放在下一次讲解。</p>
 <p>这个示例的完整代码，可以到<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/07.swiper">代码仓库</a>查看。</p>
-<p>页面样式就讲到这里，下一篇教程讲解怎么在微信小程序里面加入 JavaScript 脚本，跟用户互动。</p>
+<p>页面样式就讲到这里，<a href="http://www.ruanyifeng.com/blog/2020/10/wechat-miniprogram-tutorial-part-three.html">下一篇教程</a>讲解怎么在微信小程序里面加入 JavaScript 脚本，跟用户互动。</p>
