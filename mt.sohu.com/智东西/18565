@@ -360,3 +360,67 @@ http://www.sohu.com/a/428446727_115978	46140
 <p class="ql-align-justify">虽然batch的增大会一定程度上提高模型的泛化能力和稳定性，但随着batch的增大，模型的性能反而会下降。因此一般情况batch的设置不会太大，常用的设置为32、64和128。而48G的显存在最大程度上提供了稳定性和提高batch的可能性。</p>
 <p class="ql-align-justify">最后从整体的使用体验来看，HP Z8 G4工作站凭借着两块NVIDIA Quadro RTX 8000为整个训练提供了足够的计算能力。完全可以满足中小型模型训练的算力需求。</p>
 <p class="ql-align-justify">同时因为其卓越冷却设计和惠普高效的散热解决方案，在整个训练过程中并没有出现很大的噪音和很大的热量，避免了影响其他同事的工作。</p>
+➜别人的终点华为的起点！用普惠AI守护城市安全
+http://www.sohu.com/a/428505194_115978	77152
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201031/352cb537423843ee8a4fd920964357b1.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>智东西（公众号：zhidxcom）</strong></p>
+<p class="ql-align-justify"><strong>文 | 李水青</strong></p>
+<p class="ql-align-justify">你也许不知道，高空抛物已是城市生活中的一大难以治理的安全隐患。一个小小的烟头、水果从高处扔下来，就可能引起严重火灾、人员伤亡、财物破坏，事发后抛物者往往难以寻找，难以追责治理。</p>
+<p class="ql-align-justify">近日，华为推出一款用<strong>AI监测“高空抛物”的解决方案，正是解决这一难题</strong>。当空中坠下物体，物体下落的轨迹将被华为软件定义摄像机实时记录，并立刻告警。经验证，该方案的<strong>识别准确率高达95%，能够辅助追责定责</strong>。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201031/7f2a8900edc641d4b49345c4ca09f093.gif" max-width="600" /></p>
+<p class="ql-align-justify">“高空抛物监测”案例是华为机器视觉普惠AI落地案例中的一大代表。2020年3月，华为机器视觉正式进军中小企业为主的安防分销市场，推出智慧零售、智慧社区等十大行业解决方案，立志让老百姓都用上实惠好用的AI。很显然，这也是AI普惠大众日常生活的一个缩影，<strong>AI早已不是居庙堂之高的先进科技，正在生活中很多看不见之处庇护着我们</strong>。</p>
+<p class="ql-align-justify"><strong>如今，华为在“让老百姓用上实惠实用的AI”这件事上，已经卓有成效。</strong>截至2020年9月，华为已有200多个智慧社区、智慧校园、智慧零售等领域的项目中标或者已经在交付实施，凭借“好用、易用、不贵”的特点打动了很多安防合作伙伴、行业客户。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">华为不是那个5G全球一哥，自主手机最强的华为吗？其实早已不止于此，在AI安防领域，华为的根已经扎得很深，同时正在多方面开枝散叶，落入寻常百姓生活中。</p>
+<p class="ql-align-justify">华为如何让老百姓都用上实惠的AI技术？经过大半年的推进，华为安防分销业务进展如何？让我们从华为“高空抛物监测”方案说起。</p>
+<p class="ql-align-justify">一、如何治理“悬在城市上空的痛”？</p>
+<p class="ql-align-justify">高空抛物现象被称为“悬在城市上空的痛”。</p>
+<p class="ql-align-justify">2019年11月，最高人民法院印发《关于依法妥善审理高空抛物、坠物案件的意见》，明确对于故意高空抛物者，根据具体情形按照以危险方法危害公共安全罪、故意伤害罪或故意杀人罪论处，同时明确物业服务企业责任。而后，各地都纷纷颁布政策法规治理“高空抛物”，推动物业单位承担起相关义务。</p>
+<p class="ql-align-justify"><strong>物业如何监测定责？针对这一问题，业内主要有两类方案。</strong></p>
+<p class="ql-align-justify"><strong>第一种</strong>是业内常见的是传统的<strong>视频回溯方案</strong>。这种方法非常繁琐，需要一点点回查24小时视频，而且没有抛物轨迹记录，很难锁定楼层。</p>
+<p class="ql-align-justify"><strong>第二种</strong>是搭载了高空抛物识别算法的<strong>专用摄像机型</strong>，这一类方案价格昂贵，往往超出中小企业可承受的成本范围。让我们走近看看小区场景，一般城市小区楼层较高，以30~40层高楼为例，就需要安装3~4台设备，如果小区有十多栋楼，总共就需要180台摄像机往上。</p>
+<p class="ql-align-justify"><strong>能不能有第三种既实惠、又实用的解决方案？</strong>带着这种追问求索，<strong>华为D10-SIU摄像机</strong>在近5个月的研发探索之后，应运而生。</p>
+<p class="ql-align-justify">近日，华为的这款“黑科技”摄像机已正式进驻了位于北京市海淀区的水木清华园小区，为小区居民的安全保驾护航。来自水木清华园小区的客户称：“已经发现了几起高空抛物的事件，由于没有发生伤害，我们快速找到了肇事者，并且进行了教育批评。”</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201031/fa6887453dc344578d3180f20a86f4f3.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">我们了解到，当遇到空抛物的现象，这款摄像机能够拍摄下<strong>完整的物体坠落轨迹</strong>，并且在<strong>一分钟之内快速定位</strong>。目前，已经有<strong>众多分销商、物业客户选择了这一方案。</strong></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201031/ef3e2bb62a4d48b093f0b9cdbe54ebdf.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">可见，高空抛物的危害<strong>绝不是危言耸听，已经成为城市生活中的刚需</strong>。尤其是对哪些高层建筑密集的园区，只是没有传统的好的解决办法，人肉盯梢不现实，宣传教育覆盖面有限。</p>
+<p class="ql-align-justify">二、华为的答案：老百姓用得起的AI</p>
+<p class="ql-align-justify">为什么华为的方案能够获得中小企业的青睐？</p>
+<p class="ql-align-justify">华为的答案是，让<strong>中小企业能获得最直观有力的“AI魔力”</strong>。以“高空抛物监测方案”为例，华为的高空抛物监测方案比业界传统的解决方案在智能化方面有很大的提升，主要有<strong>三大“黑科技”</strong>：</p>
+<p class="ql-align-justify">1、基于滤波卷积算法，实现<strong>像素小目标物体检测</strong>。通俗来看，识别像素越小，越能实现越高楼层的抛投检测。这款相机目标检测像素低至6*6像素，一个高楼层的小烟盒掉下都能够实时检测。这样的物体，恐怕人用肉眼是很难发现的。</p>
+<p class="ql-align-justify">2、<strong>抛物的轨迹实时呈现</strong>，平台实时告警。当物体坠落，能过通过记录的轨迹的第一个点确定是从哪个楼层抛投下来的，有助于物业定责。</p>
+<p class="ql-align-justify">3、长短时序神经网络<strong>排除环境干扰</strong>。该相机减少了光线变化的干扰，白天黑夜都能用；还能排除飞鸟、树叶等环境因素干扰，低误报率。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201031/652f27618f0e4117abb4ebe799bad605.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">华为机器视觉“高空抛物监测”项目负责人告诉我们，从2020年5月开始，团队就在思考一个问题，如何把过去昂贵高端摄像机的高空抛物算法，“塞进”仅仅1T算力的摄像机里？经过长达3个多月的开发、商业化验证、落地实测，D10-SIU的识别率终于达到95%，达到行业高水平。</p>
+<p class="ql-align-justify">可见，华为要做“不一样的”安防分销，不是说说而已。</p>
+<p class="ql-align-justify">值得一提的是，中小企业想要拥有这样的“AI魔力”的成本<strong>并不昂贵</strong>。以高空抛物监测摄像机为例，这款机器的价格比行业低40%~50%。这正是华为普惠AI思路的所指，华为把“让老百姓用上实惠AI”这件事越做越实！</p>
+<p class="ql-align-justify">三、别人的终点，华为的起点</p>
+<p class="ql-align-justify">华为的思路是以终为始，全力进军AI。</p>
+<p class="ql-align-justify">尽管这个占安防市场60%的细分领域，安防分销市场，盘踞着几大安防“老炮”多年编织的渠道网，占据大片存量市场；但华为已经在这张网之下看到了一片AIoT新战区，并且迅勐播下AI的“火种”。据统计，目前国内安防分销行业智能渗透率不足3%，预期市场体量达千亿。</p>
+<p class="ql-align-justify">当智东西问到，华为的高空抛物监测等一系列解决方案背后<strong>最核心的竞争力</strong>是什么？华为机器视觉副总裁、分销业务总经理唐本莹告诉智东西，还是“<strong>好望商城</strong>”。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201031/35a5f992cb0e407c939f991ded30dce1.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">▲华为机器视觉副总裁、分销业务总经理唐本莹</p>
+<p class="ql-align-justify">好望商城是华为面向新一代软件定义摄像机打造的一款算法商城。就像苹果手机生态中App Store，为苹果手机提供各类App一样；好望商城也是华为SDC生态中，为智能摄像机等设备提供AI算法App的商城。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201031/5c471dacf5ee4855a881eebaae7e3acb.png" max-width="600" /></p>
+<p class="ql-align-justify">目前华为好望商城已经上线包括人像检测、客流识别、垃圾检测等<strong>上百种AI算法</strong>。回到华为“高空抛物监测”案例，团队称，后续还将在高空抛物算法基础上面，叠加烟雾检测算法，用于帮助小区预测火灾。也就是说，社区不需要再花费成本购置新机，就能获取新的AI能力！</p>
+<p class="ql-align-justify">华为正在让摄像机成为一种像手机一样可以一键下载App的智能摄像机。而功能机到智能机的转变，无疑会带来智慧性能爆发，价格下降。</p>
+<p class="ql-align-justify">难怪有人说，华为做任何行业，都是以别人的终点为起点。</p>
+<p class="ql-align-justify">四、立足普惠AI生态，将“AI+行业”推上快车道</p>
+<p class="ql-align-justify">2019年，华为的入局为智能安防行业带来了一套HoloSens全场景感知的颠覆式玩法，也搅起了初尝AI的安防一江春水。围绕软件定义摄像机、算法商城、智能视频存储平台，一个从前端的摄像机到云边缘、到云中心的全新机器视觉算法生态正在浮现。</p>
+<p class="ql-align-justify">华为有一套打造普惠AI方案的强大方法论。通过构建“芯片+算法+系统”的全栈技术提升性能，搭建生态平台来压缩所处产业链算法开发、设备集成的成本，华为正将这些方法论串联成闭环，让AI实惠可用！</p>
+<p class="ql-align-justify">华为好望在2020年3月正式进入安防分销市场，华为提出，要把智能成本降下来，实现真正普惠。与此同时，华为推出D系列SDC、后端智能NVR800、App软件以及好望商城新产品四件套，以及零售商超、办公楼宇、工业园区等十大行业解决方案。</p>
+<p class="ql-align-justify">时隔7个月，华为好望已经取得了阶段性成果。</p>
+<p class="ql-align-justify">华为机器视觉副总裁、分销业务总经理告诉智东西，在今年6月份之前，大家的评价都是华为好望的智能摄像机很好用，但是很多不知道怎么用；7~10月，大家逐渐意识到AI的重要性，80%的渠道、分销伙伴都在通过构建技术团队、加大传播做AI转型；而到明年春节，我们将迎来第三个阶段，随着销售渠道和技术方案更成熟，我们将迎来新的爆发。</p>
+<p>可以看到，华为正通过“好望商城”及一整套软件定义摄像机OS生态、渠道生态、制造生态，打通智能安防产业链上下游原本的蔽塞关系，实际上是在对传统安防的产业链进行一次声势浩大的重构，加速千行百业智能化转型。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201031/cbcaa46342c0436a956648929946843f.png" max-width="600" /></p>
+<p class="ql-align-justify">结语：AI进入城市微单元，华为使AI更懂行</p>
+<p class="ql-align-justify">从华为的“高空抛物监测”解决方案这一个切面，我们能看到AI真的已经进入老百姓能真实感知到的千行百业。华为机器视觉及好望分销品牌，凭借一套全新的算法生态、渠道生态、制造生态打法，正在让老百姓开始用得上、用得起AI技术。</p>
+<p class="ql-align-justify">AI落地到千行百业不是一句空话，不同的行业有不同的知识体系，不同的场景有不同的痛点，考验企业通过一个个项目磨练“懂行”能力和意志。</p>
