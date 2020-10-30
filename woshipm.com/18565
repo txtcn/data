@@ -1,0 +1,165 @@
+➜设计沉思录 | 如何开发一款休闲小游戏？
+http://www.woshipm.com/pd/4237861.html	4041
+<blockquote><p>编辑导读：互联网各平台的竞争越发激烈，各平台用尽浑身解数想留住用户——在平台自身功能之外，还可以玩游戏。那么，一款休闲小游戏是怎么开发的呢？本文作者结合案例，对游戏开发设计的过程进行了详细的梳理总结，与大家分享。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/qYKssvFa1Zi4d89BDaBI.jpg" alt="" width="900" height="420" /></p>
+<h2>01 前言</h2>
+<p>从古至今，游戏作为社会生活中的一部分，扮演着十分重要的角色。都说游戏人生，可见游戏在整个人类发展中的重要性。</p>
+<p>从以前的和几个朋友踢沙包，玩泥巴，跳皮筋，到了现在的电子游戏，网络游戏，可以说游戏的发展迅速，科学技术水平的提高带动着游戏的发展</p>
+<h2>02 游戏美术团队组织架构</h2>
+<p>游戏设计师包括UI设计师、2D原画师、技术美术、3D设计师、UI设计师、动画师、特效师、动效师等.</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/hK3KJoTGxt1kdFwg3v0t.jpeg" width="900" /></p>
+<h2>03 游戏开发流程</h2>
+<p>以梦想小镇为例，大概介绍下产品的工作流程</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/Riur61Yni5ct4CdDiLC1.jpeg" width="900" /></p>
+<h3>1. 立项期</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/HfYQ9W9zDgrXsaE6aphh.jpeg" width="590" height="488" /></p>
+<ul>
+<li>调研市场、了解用户群体，确定立项方向</li>
+<li>团队基因，基于美术，技术和产品这三个方面的经验和积累，来衡量能够做的出什么项目，能够做的好什么项目。</li>
+</ul>
+<h3>2. 研发前期</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/lnL4Z7QbqDRQGXrHsdDP.jpeg" width="592" height="489" /></p>
+<ul>
+<li>分析竞品游戏，确定游戏风格、类型及玩法</li>
+<li>建立游戏框架</li>
+<li>向程序提出核心功能技术支持需求</li>
+</ul>
+<h3>3. 研发中期</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/X1t8njtsbw3Tt9EbZxZR.jpeg" width="599" height="495" /></p>
+<ul>
+<li>写策划案</li>
+<li>建立数据表结构（这个工作因团队而异，可能不属于产品规划的工作）</li>
+<li>与程序、美术共同沟通策划案的实现细节</li>
+<li>对完成的资源和功能进行确认并提出优化方案</li>
+<li>测试游戏，对游戏流程、体验、表现等进行调整</li>
+</ul>
+<h3>4. 研发后期</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/s8IFXelHBzbkk5poKkmK.jpeg" width="605" height="483" /></p>
+<ul>
+<li>与运营进行沟通，确定游戏商业化的功能设计</li>
+<li>与市场沟通，确定推广方案</li>
+<li>与渠道沟通，整理接口需求</li>
+</ul>
+<h3>5. 上线后</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/908kfvkPdsn4r0nK6Tk5.jpeg" width="651" height="481" /></p>
+<ul>
+<li>跟踪游戏数据，与运营、美术沟通，设计游戏优化方案（比如梦想小镇里的新手引导、登录奖励等）</li>
+<li>确认游戏后续版本、运营活动方案</li>
+<li>开发游戏后期版本、运营活动（过程同研发中期）</li>
+</ul>
+<h2>03 美术制作的流程</h2>
+<h3>第一步：确定美术风格和制定美术规范</h3>
+<p>在游戏开发初期，美术团队会和制作人以及核心团队进行讨论，根据游戏的玩法机制，设计出多种美术风格方案，用用户调研来验证方案，最终由主美为游戏确定最合适的美术风格。</p>
+<p>在美术风格确定后，美术团队需要快速找素材，以示意图的形式验证美术制作流程是否可落地，从而制定美术品质的标准。</p>
+<p>游戏制作过程中，美术资源需要反复迭代，最终达到团队最初制定的美术品质标准。</p>
+<h3>第二步：2D美术</h3>
+<p><strong>（1）原画设计</strong></p>
+<ol>
+<li>场景原画按游戏文本设定场景内容或自我拟定创作内容，以作者对叙述内容理解，发挥作者的创作绘画出游戏场景。</li>
+<li>角色原画指游戏文本设定内容或个人拟定想法，对人物、装备或饰品、武器、补给品、动物（怪物）、植物、机器，以游戏文本内容或自我创作对特定事物进行发挥创作绘画。</li>
+</ol>
+<p>在的制作梦想小镇的时候，前期我们会先出几版概念稿，等确定下来后我们再进行精细化制作</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/Dh3Vo65sAxIJcRT1tL4s.jpeg" width="900" /></p>
+<p><strong>（2）UI界面设计</strong></p>
+<p>游戏UI的职能，像游戏的登录界面、游戏装备界面、人物属性界面、装备界面、统统都属于游戏UI的范畴</p>
+<p>游戏UI更注重功能性和易用性，人机交互、色彩搭配、设计感、层次感、统一性</p>
+<p>游戏UI在整个游戏制作过程中，占比很大，牵扯到各个美术资源的协调统一。时常要考虑程序能否实现你的界面功能，玩家操作是否便利。这些需要你对整个游戏核心玩法、世界观、程序实现的全面了解。</p>
+<p>在制作梦想小镇的时候，我们会先把UI系统架构、重要功能布局做出来，每个模块的尺寸确定好后，就可以给前端了，这样UI可以和开发同时进行，美术资源做好后直接替换就好了。这么做的好处是比较节省时间，开发可以同步进行，效率也比较高。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/R8BVGSLsU9nUZAhHeGOD.jpeg" width="900" /></p>
+<h3>第三步：3D美术</h3>
+<p><strong>（1）游戏3D角色</strong></p>
+<p>因为梦想小镇暂时涉及不到3d角色，我简单介绍一下。</p>
+<p>3d角色设计师要做的就是游戏中的人物、动物、怪物等。作为一个合格的游戏角色设计师，应该是建模和贴图都学要独立制作完成的。</p>
+<p>在游戏设计中，角色3d设计师从原画那里得到图稿之后，如果是做手绘的话，一般是建模、展uv、画贴图&#8230;&#8230;次时代的话需要的是先创建初模、ZB雕刻高模、低模、uv、贴图等。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/ZrlNQIqeJh6uIfmAfDQQ.jpeg" width="452" height="553" /></p>
+<p><strong>（2）游戏3D场景</strong></p>
+<p>游戏中，3D场景是很重要的角色，他会把游戏画面直接传递给玩家。</p>
+<p>3D场景设计师会完成游戏中场景的制作，例如游戏中的环境、机械、道具元素等，并对这些场景资源进行整合优化，以保证游戏的正常运行。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/cdjE20RTTYI7ujrsEtLx.png" width="900" /></p>
+<p style="text-align: center;">（梦想小镇3D房子）</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/yBiXPNcsZ7sXih6a0VZl.png" width="900" /></p>
+<p style="text-align: center;">（梦想小镇3D汽车）</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/65Wjq7N9dBIsgfpoROAC.jpeg" width="900" /></p>
+<p style="text-align: center;">（梦想小镇3D化背景）</p>
+<h3>第四步：游戏动效</h3>
+<p>游戏动效，更确切地说是游戏UI动效，作用在UI、交互流程、用户体验等方面。游戏动效是更高级的交互设计展现形式，通过动态演示 UI元素的变化来引导用户操作，将信息更快更准确的传达给受众。游戏动效设计优先注重的是增强界面的交互性，帮助玩家轻松体验游戏。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/TWcXpzCsh4I5kZFEQZUY.gif" width="402" height="894" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/KOTVAuoEkRKgNC1qKwTc.gif" width="402" height="870" /></p>
+<h3>第五步：游戏特效</h3>
+<p>因为梦想小镇暂时涉及不到特效这块，我简单介绍一下</p>
+<p>特效设计师是一个美术岗位，美术占比很大。提起特效，第一时间在大家脑海闪过的词应该是：酷炫，绚丽，会发光的东西、魔法等。特效是游戏里视觉冲击力最强的部分，有着提升游戏美感，影响玩家视觉感受的作用。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/qRezdesq3GcfM3bKSAAL.gif" width="601" height="338" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/bawxHJEV5dwADwAz2Rd9.gif" width="601" height="397" /></p>
+<p style="text-align: center;">（以上图片参考均来自CGWELL.COM）</p>
+<h3>第六步：美术资源整合</h3>
+<p>美术资源整合包括美术效果检验和美术性能调优。</p>
+<ol>
+<li><strong>检查美术资源：</strong>美术资源完成后，每个设计师需要检查自己做的美术资源是否达到标准，放在一起是否和整体的美术资源风格统一，将最重要的美术资源再进行一次美术优化，让游戏画面进一步提升。</li>
+<li><strong>资源优化：</strong>设计师需要考虑游戏上线后，玩家能不能正常玩这个游戏。如果美术资源过大就会降低运行效率，例如输出的图片进行压缩、模型面数，或减少一些特效粒子数等，从而使游戏体验更佳顺畅。</li>
+</ol>
+<h3>第七阶段：测试阶段</h3>
+<p>这个阶段基本完善，所有素材已导入/所有系统已完备。</p>
+<p>QA测试，美术走查，把有问题的反馈给程序，程序开始debug，</p>
+<p>debug debug debug debug…</p>
+<p>优化优化优化优化……</p>
+<p><strong>然后，上线</strong></p>
+<p>游戏开发过程中，美术、产品、研发需要不断的沟通协商。所有创作人员需要全心付出，才能做出一款很棒的游戏作品</p>
+<p>感谢大家观看</p>
+<p>&nbsp;</p>
+<p>作者：蔺国辉，3D设计师</p>
+<p>本文来源于人人都是产品经理合作媒体@58用户体验设计中心（微信公众号@58UXD），作者@蔺国辉</p>
+<p>题图来自Unsplash，基于CC0协议</p>
+➜说说发券那些事（2）：券要怎么设计？
+http://www.woshipm.com/it/4237587.html	5501
+<blockquote><p>导读：优惠券作为重要的用户运营和营销手段，已经毋庸置疑的共识了。上一篇作者和大家分享了关于发券的相关设计（<a href="http://www.woshipm.com/pd/4237536.html" target="_blank" rel="noopener">《说说发券那些事（1）：如何花式发券？》</a>），那么如何进行券的设计？如何给用户发券？也成了用户营销的重要课题。今天就和大家唠唠券要怎么设计。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/eIy93csfUf3kMp6xJJVj.jpg" alt="" width="900" height="420" /></p>
+<h2>一、券都有哪些类型？</h2>
+<ul>
+<li>从券的形式可以分为：折扣券、满减券、立减券；</li>
+<li>从数量看分为：单张券和券包。</li>
+</ul>
+<p><strong>（1）折扣券</strong></p>
+<p>对于产品价格区间多的品牌，折扣券<strong>比较容易根据商品的毛利率来控制成本</strong>，所以折扣券常会设定为全场商品。对于想设计多人点单，折扣券也可以包装成第二杯免费（5折），3人同行1人免单（6.6折）这样的表述会比单纯的折扣更加有吸引力。</p>
+<p><strong>（2）满减券</strong></p>
+<p>满减券我为是对用户来说体验不算好的券，一是用户需要去计算这个门槛，二是门槛的设定限定了可适用的商品的范围。但是对于商家来说，满减券可以很好的控制成本，<strong>并能对用户的消费行为起一定引导作用</strong>，比如引导用户去消费某个品类的商品，或者引导用户是多人点单。</p>
+<p><strong>（3）立减券</strong></p>
+<p>减券对用户的吸引力是最简单粗暴，也是容易理解的；所以常常用来刺激新人和沉睡用户。立减券现在也常常被包装成“立减金”、“津贴”、“饮品金”等这样的模式，这个是从设计层面上让用户感觉是拥有的小金库，用户则会更加珍惜并使用。如果确认发立减券了，<strong>一定要把“无门槛”“全场”这样的字眼重点强调。</strong></p>
+<p><strong>（4）券包</strong></p>
+<p>券包的目的分为两种：</p>
+<p><strong>一种是为了培养用户的消费习惯</strong><strong>，常常针对新用户和沉睡唤醒中的用户</strong>，券的设计上往往是会设定一定的折扣和有效期的梯度，让用户逐渐成长，用有效期来控制刺激用户的消费频次。</p>
+<p><strong>另一种是锁定消费，为了提频，常常针对中低频的用户</strong>，为了锁定更好的效果，往往会设计要支付小金额来购买券包。券包常常都是以满减券和立减券组成，这样可以组合成一个大金额的大券包，利用这个大金额吸引用户。</p>
+<h2>二、券的金额/折扣要怎么设计？</h2>
+<p>我将券金额/折扣从无到有的设计总结了以下的步骤：</p>
+<p>第一步：<strong>首先明确品牌的北极星指标</strong>，从生意角度是为了追求商品销售额，还是从资本的角度这阶段先做用户数。将这个北极星指标作为设计的目标值。</p>
+<p>第二步：<strong>然后要确定边界阈值</strong>，要保持商品的毛利率在什么水平，不允许存在任何商品的亏损等这些条件来作为边界条件。</p>
+<p>第三步：接着先<strong>基于运营人员的营销经验来制定一些券的策略</strong>，往往先是基于对用户的同理心来评判这个方案是否有吸引力。要以怎样的交互形式呈现给用户。</p>
+<p>第四步：<strong>开始配置跑数据</strong>，经过一段时间后（半个月~1个月的时间），进行数据的分析复盘，找到可以提升的空间</p>
+<p>第五步：<strong>基于分析的结果，提出优化的方案</strong>，进行多组实验的设计；然后切<strong>AB实验/灰度实验进一步跑数据</strong></p>
+<p>第六步：得到北极星指标最大化的券的方案。后续就可以<strong>通过机器学习的方法进行不断的自动化地学习优化。</strong></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/10/WLHUq0qhRu4hSRHi96lr.png" width="903" height="404" /></p>
+<p>券固然是提频或促活的好手段，但是<strong>切记不能扰乱我们的产品价格锚，在用户对我们的价格感知中还是商品的原价</strong>，而优惠只是他们能够模煳地感知他们会发券。</p>
+<p>像瑞幸咖啡之前的券内容其实只有3.8折、4.8折、1.8折、5折这几个固定的折扣，券内容简单可陈，同时他们又是靠循环发券来运转的销售体系，让这些折扣在用户心智中牢牢地打下了心智，完全打乱用户对瑞幸的价格锚定，用户不知道商品的价格，他们只记住了3.8折。</p>
+<p>而且为了用户的增速，沉睡用户一睡就发3.8折，规律一下就被摸清了，那些撸羊毛非咖啡刚需的用户就会等到3.8折再消费。</p>
+<p>所以在整体券设计的过程中，我们要谨慎谨慎再谨慎：</p>
+<ol>
+<li><strong>券的内容尽可能多样</strong>，不要让某个固定的折扣/券金额在用户心中打下牢牢的心智。</li>
+<li><strong>在券类型上，满减券和立减券会更加理想</strong>，这些券让用户对商品的价格还是有感知的，而折扣券很容易导致用户的价格感知锚混乱</li>
+<li><strong>发券的频次要有限制</strong>，减少对于中低频、高频用户的主动发券。<strong>也不要让用户能够发现频次的规律</strong>。否则很容易养成养成他们有券才消费的习惯。对于那些固定领券的入口券一定要限量。</li>
+<li><strong>对于该放弃的用户就放弃，不要无限制的让利</strong>，否则往往养成的是撸羊毛的用户。对于撸羊毛用户在券设计上我们可以思考如何耗费他们的社交货币，带动消费。</li>
+</ol>
+<h2>三、基于不同客群的发券策略</h2>
+<p>最后和大家分享下，直接在新零售品牌中，针对不同客群制定的发券，通过实验证明有效的一些策略：</p>
+<ul>
+<li><strong>新客：</strong>给出一个较高的优惠，此刻用户对品牌还没有任何感知，所以给到优惠倾斜降低他的决策成本，促进首单转化。</li>
+<li><strong>新客成长：</strong>要培养新客完成成熟客户转化的一个过程，这里有个增长的术语叫“魔法数字”。对于新客我们会发一个大券包，除了首单消费外，其他的券会形成一定的折扣和有效期的折扣，来培养新客消费到TA的魔法数字；</li>
+<li><strong>中低频：</strong>优惠券这时候的作用主要是提频，对于中低频不建议做太多的优惠折扣，这里往往可以结合新品、活动做触达刺激消费。券可能是对于品牌想要冲量的时候的一个手段。可以考虑用付费券包的形式，锁定消费来提频。</li>
+<li><strong>高频：</strong>对于高频用户我们更多要去探索怎么给他们带来专属感和尊贵感，让他们成为品牌的合伙人和粉丝。</li>
+<li><strong>沉睡客户：</strong>拉回一个沉睡客户的成本远远低于拉新一个客户，所以对沉睡客户往往就要做更多的优惠倾斜。对于沉睡客户我们还要去识别用户为何流失，如果用户本就不是品牌的客户或者不构成消费条件，再怎么给予优惠也于事无补。</li>
+<li><strong>沉睡唤醒中：</strong>好不容易唤醒的客户，培养ta再次成为稳定的客户也是至关重要，大概的设计逻辑也同新人成长相同。</li>
+</ul>
+<p>关于更多的发券策略，欢迎和我一起探讨。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/10/qZWiRouj44V5fMCIJfqG.png" /></p>
+<p>券设计好后，想要达到效果，用户触达也很重要，下周和大家分享，常用的触达的渠道和数据效果~</p>
+<p>&nbsp;</p>
+<p>本文由 @咸蛋散人 原创发布于人人都是产品经理，未经作者许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
