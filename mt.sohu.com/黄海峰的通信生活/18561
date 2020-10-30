@@ -1,0 +1,11 @@
+➜闪存时代登上存储性能顶峰，端到端NVMe必不可少
+http://www.sohu.com/a/427466489_610727	55472
+<p class="ql-align-justify">近日听说华为存储又登上了存储组织SPC-1的顶峰，这在存储的全闪存时代，确实/好像是一件不太容易的事情。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201026/7106d69b21074a86989e12fa002f2d70.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">存储进入全闪存时代，是发展史上一次大的跨越，SSD硬盘比机械硬盘性能/容量/密度几十倍的提升，让存储这个产业跟上了云计算、大数据、5G等多样化产业的发展，甚至与超越行业需求，成为应用发展的推动力。</p>
+<p class="ql-align-justify">这样的一个时代，比起机械性能时代来说，要登上性能顶峰更加不容易。仔细研究一下华为登顶的产品OceanStor Dorado 18000 V6，有一个技术是促成其性能强劲最根本的源动力，那就是端到端NVMe。</p>
+<p class="ql-align-justify">NVMe硬盘从2010年出现到今天，已经在服务器领域大规模的完成了对SATA/SAS SSD盘的替换，由于其减少了一次协议转换的时间，而且采用并发协议，时延降低超过44%，并发能力可以达到SAS的上百倍，在应对海量小文件并发访问和极致时延场景下具有性价比更高的优势，作为主要场景就是用好硬盘的存储，当然更要发扬光大。有了NVMe的加持，全闪存存储就像加满油的火箭，速度势不可挡。</p>
+<p class="ql-align-justify">采用了NVMe硬盘还不行，端到端NMVe还得配套有网络协议，NoF（NVMe overFabric），这也是一次存储网络的飞跃。就像高铁也需要有高速的轨道一样，这可不是换一根光纤那么简单。大家都知道，存储历史30年以来，FC协议一直是大行其道的，他稳定、时延低，独立于以太网外，一直是挑着应对数据库苛刻要求的大梁，那么NoF除了带宽是FC的3倍，数据安全性、可靠性是否能够超越呢？</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201026/02a7c1c46d524f0cbde68b6901427c8c.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">华为是最早采用端到端NVMe的厂商，那到底有什么样的底气，可以放心使用NoF呢？原来是华为智能无损网络和OceanStor全闪存联合推出的NOF+方案，采用OceanStor全闪存接口在系统内实现故障自动巡检-即时感知-主动修复，链路故障感知时间从15秒至30秒缩短到1秒以内，极大提升系统可靠性。使得NoF+做到了提前扫描，并自动修复故障，挑起SAN网络的重担。</p>
+<p class="ql-align-justify">有了端到端NVMe的支持，OceanStordorado 18000 V6获得SPC-1 2100万的成绩，也就水到渠成了。</p>
