@@ -102,7 +102,7 @@ name: '张三'
 buttonHandler(event) {
 this.setData({
 name: '李四'
-}),
+});
 }
 });
 </code></pre></blockquote>
