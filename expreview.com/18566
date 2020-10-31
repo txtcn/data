@@ -1,0 +1,28 @@
+➜SiSoftware发布Ryzen 5 5600X和Ryzen 5 5800X报告：6核打8核，8核打12核
+http://www.expreview.com/76513.html	8580
+<p>据<a href="https://videocardz.com/newz/sisoftware-release-early-ryzen-7-5800x-and-ryzen-5-5600x-reviews" target="_blank">videocard</a>报导：<a href="https://www.sisoftware.co.uk/" target="_blank">SiSoftware</a>已发布了Zen3 CPU（Ryzen 7 5800X和Ryzen 5 5600X）的内部测试结果。</p><p>SiSoftware在报告中称：6核“ Zen3比Zen2快15-40％”而八核5800X甚至要比3700X快25％至40％。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/10/31/5600x.png" width="100%"/></p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/10/31/5800x.png" width="100%"/></p><p>AMD Ryzen 5 5600X和Ryzen 7 5800X的CPU得分，来源：<a href="https://www.sisoftware.co.uk/" target="_blank">SiSoftware</a></p><p>开发人员声称Ryzen 5 5600X就能超过Intel的8核i9-9900K处理器，这被认为是巨大的胜利。当谈到Ryzen 7 5800X时，SiSoftware则这样表示：8核Zen3 CPU的性能类似于12核Zen2 CPU（例如上一代的Ryzen 9 3900X），而10900K则完全失去竞争力。</p><p>请注意，报告中SiSoftware并没有提供他们拥有这些CPU的证据（未展示CPU的照片），数据可能是从开发人员软件或第三者收集和汇总的。</p><p>SiSoftware在Ryzen 5 5600X上的结论：</p><p>尽管在Zen2上没有特别大的结构改变（除了较大的8核CCX布局以及统一的L3缓存），但在依旧6核心的情况下，Zen3在传统和高度矢量化的SIMD（Single Instruction Multiple Data，单指令多数据流）算法上仍要快得多。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 1; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+// var istart=['1','2','3','4','5','6'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 6; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/news/2020/10/31/5600/"; //图片目录
+var col = 3; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><p>图片来源：<a href="https://www.sisoftware.co.uk/" target="_blank">SiSoftware</a></p><p>SiSoftware在Ryzen 7 5800X上的结论：</p><p>尽管在Zen2上没有特别大的结构改变（除了较大的8核CCX布局以及统一的L3缓存），&nbsp;Zen3设法在传统和高度矢量化的SIMD算法上更快，即使在竞争对手使用了AVX512和更多核的情况下，也不敌Ryzen 7 5800X，我们当然没想到性能会这么好。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 1; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+// var istart=['1','2','3','4','5','6'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 6; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/news/2020/10/31/5800/"; //图片目录
+var col = 3; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><p>图片来源：<a href="https://www.sisoftware.co.uk/" target="_blank">SiSoftware</a></p><p>如果这一代的ZEN3真的达到这个性能表现，说明单核性能出现了CPU市场多年未见的巨大进步，intel再不想点办法，在消费级市场的危机才刚刚开始。</p>
+➜微软建议用户尽快安装更新，免遭Zerologon漏洞攻击
+http://www.expreview.com/76514.html	9300
+<p>微软<a href="https://msrc-blog.microsoft.com/2020/10/29/attacks-exploiting-netlogon-vulnerability-cve-2020-1472/" target="_blank">表示</a>，目前仍然有黑客利用Netlogon远程协议中的Zerologon漏洞（CVE-2020-1472）来入侵未安装安全性更新的计算机。</p><p style="text-align:center;"><img src="http://img.expreview.com/news/2020/10/31/ms-patch-2.jpg"/></p><p>虽然微软在8月份时已经推出了一连串的安全更新来解决这个漏洞，但是有不少用户，特别是企业用户依然没有更新他们的Windows服务器设备，使得他们继续暴露在提升特权攻击的危险中。在面对没有安装安全性更新的系统时，攻击者可以利用Zerologon漏洞来骗过域账号，并且以此来窃取域名的敏感讯息甚至接管整个域的控制。</p><p>在一篇官方<a href="https://msrc-blog.microsoft.com/2020/10/29/attacks-exploiting-netlogon-vulnerability-cve-2020-1472/" target="_blank">博客</a>中，微软安全应对中心的工程副总裁Anachal Gupta呼吁还未更新的用户尽快安装8月份的安全性更新：</p><blockq><p>“对于任何域控制器来说，安装2020年8月11日或以后的安全性更新是解决这个漏洞至关重要的第一步。在安装完成后，Active Directory域控制器以及受信任的账号将会与Windows域账户一起受到保护。因此我们强烈建议任何未更新的用户尽快安装安全性更新。客户在安装更新后需要按照KB4557222的指引来确保系统受到最好的保护。”</p></blockq><p>由于部分受到Zerologon漏洞影响的设备出现了验证问题，因此微软也正在分两个阶段推出修补漏洞的措施，同时也更新了原本的漏洞文档里的FAQ来更清楚地解答用户的疑问。</p><p>而如果用户的系统是使用微软Defender for Identity者微软365 Defender的话，系统在受到Zerologon漏洞攻击时也可以马上通知用户。</p>
