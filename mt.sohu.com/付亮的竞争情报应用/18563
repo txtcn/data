@@ -1,0 +1,29 @@
+➜腾讯安全玄武实验室想展示的可能不是5G消息的漏洞
+http://www.sohu.com/a/427781634_263944	2852
+<p class="ql-align-justify">在10月24日举办的GeekPwn 2020国际安全极客大赛上，腾讯安全玄武实验室的工程师进行了《一种利用未知漏洞劫持5G网络下TCP传输的远程攻破展示》。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201028/4c7913bad9664634887141872d6aaa50.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">由于在展示过程中，工程师采用的是假冒用户入驻运营商基站，并给同一基站下的其他用户发送短信的方式，因此很多媒体叫“5G消息”。</p>
+<p class="ql-align-justify">但从展示的过程看，并不能证明是通过5G网络发送的短信，另外此短信与运营商正测试的“5G新消息”或“5G消息”并不一致，更像是此前曾火过一段时间的2G短信漏洞。</p>
+<p class="ql-align-justify">在媒体的报道中，有这样的内容：</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201028/fb7768e6ca4e4ddaa10b2bb44daf2d91.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">一、如此实现发送信息</p>
+<p class="ql-align-justify">从这里实际也看不出与5G网络有多少关系。要知道“5G新消息”与之前的2G等下的短消息，有了很多不同，更像是在使用一个安全程度较高的互联网APP。</p>
+<p class="ql-align-justify">2G时代，曾经有伪基站争夺了基站对手机的控制权，然后向控制的手机发送短信息，实现的结果与此次展示中显示的结果类似，显示任意号码、发送短信。只不过，原来的是短信，现在可以支持彩信等更丰富的内容。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">二、发送信息后的后果</p>
+<p class="ql-align-justify">可以通过短信内容诱导用户实施一些行为，一是假冒打款需求（这是伪基站一种常规模式），骗取款项，迷惑性很强。发送的多了，就可能有人上当。二是诱导用户点击超链接，实现木马病毒或假冒APP下载安装等。如果安装到手机上，可以盗取手机上的内容，实现对手机应用的监听，危害确实极大。</p>
+<p class="ql-align-justify">但目前IOS禁止安装外部应用，安卓平台大多有安装外部应用提醒，可阻止大部分应用的安装。</p>
+<p class="ql-align-justify">另外这种危险本身不涉及银行账号安全，但银行或网银支付工具应通过流程优化，尽最大可能阻止假冒APP以及用户信息泄露带来的资产异常流动。</p>
+<p class="ql-align-justify">三、短信息的安全级别</p>
+<p class="ql-align-justify">从安全等级看，身份信息、银行支付信息、手机号码信息、互联网应用实名注册信息，安全级别逐步降低，位居前面的可以为后面的安全背书，但反过来不可以。</p>
+<p class="ql-align-justify">例如，手机号+验证码，可作为互联网应用实名登记工具，但不能单独为支付宝支付背书。</p>
+<p class="ql-align-justify">注意，这里的身份信息，并不是身份证号码，对骗子来说，身份证上可直接看到的内容几乎都是明码。现在的身份信息，包括身份证等信息与本人的指纹、虹膜或视频人脸识别（活体）比对。</p>
+<p class="ql-align-justify">未来商用的“5G消息”，不仅可用于5G，还可应用于3G、4G环境中，由于内容中很可能包含比短信更多的隐私信息，因此，在安全设计时会有更多的考虑。</p>
+<p class="ql-align-justify">最后需要说明的是，虽然不少媒体报道了该消息，但在GeekPwn 2020国际安全极客大赛，腾讯工程师的该项展示并没有能够在规定的时间内完成。</p>
