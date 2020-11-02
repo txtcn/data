@@ -180,4 +180,4 @@ console.log('用户点击取消');
 <p>注意，上面代码写的是<code>that.setData()</code>，而不是<code>this.setData()</code>。这是因为<code>setData()</code>方法定义在页面实例上面，但是由于<code>success()</code>回调函数不是直接定义在<code>Page()</code>的配置对象下面，<code>this</code>不会指向页面实例，导致<code>this.setData()</code>会报错。解决方法就是在<code>buttonHandler()</code>的开头，将<code>this</code>赋值给变量<code>that</code>，然后在<code>success()</code>回调函数里面使用<code>that.setData()</code>去调用。关于<code>this</code>更详细的解释，可以参考<a href="https://wangdoc.com/javascript/oop/this.html">这篇教程</a>。</p>
 <p>这个示例的完整代码，可以查看<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/12.modal">代码仓库</a>。</p>
 <p>今天的教程就到这里，对于初学者来说，已经讲了很多东西，可能需要慢慢消化。如果对网页开发和 JavaScript 语言不熟悉，你也许会觉得不容易完全理解，不用担心，初学者只需要知道加入脚本的方法，以及脚本可以达到的效果就可以了，后面做到实际的项目，慢慢就会加深理解。</p>
-<p>有了脚本以后，就可以通过小程序 API，去调用微信的各种内置能力。下一篇教程将重点讲解如何使用小程序 API。</p>
+<p>有了脚本以后，就可以通过小程序 API，去调用微信的各种内置能力。<a href="http://www.ruanyifeng.com/blog/2020/11/wechat-miniprogram-tutorial-part-four.html">下一篇教程</a>将重点讲解如何使用小程序 API。</p>

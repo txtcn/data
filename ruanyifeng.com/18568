@@ -1,0 +1,242 @@
+➜微信小程序入门教程之四：API 使用
+http://www.ruanyifeng.com/blog/2020/11/wechat-miniprogram-tutorial-part-four.html	37981
+<p>今天是这个系列教程的最后一篇。</p>
+<p><a href="http://www.ruanyifeng.com/blog/2020/10/wechat-miniprogram-tutorial-part-three.html">上一篇教程</a>介绍了，小程序页面如何使用 JavaScript 脚本。有了脚本以后，就可以调用微信提供的各种能力（即微信 API），从而做出千变万化的页面。本篇就介绍怎么使用 API。</p>
+<p>所有示例的完整代码，都可以从 GitHub 的<a href="https://github.com/ruanyf/wechat-miniprogram-demos">代码仓库</a>下载。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100913.jpg" alt="" title="" /></p>
+<h2>一、WXML 渲染语法</h2>
+<p>前面说过，小程序的页面结构使用 WXML 语言进行描述。</p>
+<p>WXML 的全称是微信页面标签语言（Weixin Markup Language），它不仅提供了许多功能标签，还有一套自己的语法，可以设置页面渲染的生效条件，以及进行循环处理。</p>
+<p>微信 API 提供的数据，就通过 WXML 的渲染语法展现在页面上。比如，<code>home.js</code>里面的数据源是一个数组。</p>
+<blockquote><pre><code class="language-javascript">
+Page({
+data: {
+items: ['事项 A', '事项 B', '事项 C']
+}
+});
+</code></pre></blockquote>
+<p>上面代码中，<code>Page()</code>的参数配置对象的<code>data.items</code>属性是一个数组。通过数据绑定机制，页面可以读取全局变量<code>items</code>，拿到这个数组。</p>
+<p>拿到数组以后，怎样将每一个数组成员展现在页面上呢？WXML 的数组循环语法，就是一个很简便的方法。</p>
+<p>打开<code>home.wxml</code>，改成下面的代码。</p>
+<blockquote><pre><code class="language-markup">
+&lt;view>
+&lt;text class="title" wx:for="{{items}}">
+{{index}}、 {{item}}
+&lt;/text>
+&lt;/view>
+</code></pre></blockquote>
+<p>上面代码中，<code>&lt;text&gt;</code>标签的<code>wx:for</code>属性，表示当前标签（<code>&lt;text&gt;</code>）启用数组循环，处理<code>items</code>数组。数组有多少个成员，就会生成多少个<code>&lt;text&gt;</code>。渲染后的页面结构如下。</p>
+<blockquote><pre><code class="language-markup">
+&lt;view>
+&lt;text>...&lt;/text>
+&lt;text>...&lt;/text>
+&lt;text>...&lt;/text>
+&lt;/view>
+</code></pre></blockquote>
+<p>在循环体内，当前数组成员的位置序号（从<code>0</code>开始）绑定变量<code>index</code>，成员的值绑定变量<code>item</code>。</p>
+<p>开发者工具导入项目代码，页面渲染结果如下。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100507.jpg" alt="" title="" /></p>
+<p>这个示例的完整代码，可以参考<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/13.wxml">代码仓库</a>。</p>
+<p>WXML 的其他渲染语法（主要是条件判断和对象处理），请查看<a href="https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/list.html">官方文档</a>。</p>
+<h2>二、客户端数据储存</h2>
+<p>页面渲染用到的外部数据，如果每次都从服务器或 API 获取，有时可能会比较慢，用户体验不好。</p>
+<p>小程序允许将一部分数据保存在客户端（即微信 App）的本地储存里面（其实就是自定义的缓存）。下次需要用到这些数据的时候，就直接从本地读取，这样就大大加快了渲染。本节介绍怎么使用客户端数据储存。</p>
+<p>打开<code>home.wxml</code>，改成下面的代码。</p>
+<blockquote><pre><code class="language-markup">
+&lt;view>
+&lt;text class="title" wx:for="{{items}}">
+{{index}}、 {{item}}
+&lt;/text>
+&lt;input placeholder="输入新增事项" bind:input="inputHandler"/>
+&lt;button bind:tap="buttonHandler">确定&lt;/button>
+&lt;/view>
+</code></pre></blockquote>
+<p>上面代码除了展示数组<code>items</code>，还新增了一个输入框和一个按钮，用来接受用户的输入。背后的意图是，用户通过输入框，为<code>items</code>数组加入新成员。</p>
+<p>开发者工具导入项目代码，页面渲染结果如下。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100509.jpg" alt="" title="" /></p>
+<p>注意，输入框有一个<code>input</code>事件的监听函数<code>inputHandler</code>（输入内容改变时触发），按钮有一个<code>tap</code>事件的监听函数<code>buttonHandler</code>（点击按钮时触发）。这两个监听函数负责处理用户的输入。</p>
+<p>然后，打开<code>home.js</code>，代码修改如下。</p>
+<blockquote><pre><code class="language-javascript">
+Page({
+data: {
+items: [],
+inputValue: ''
+},
+inputHandler(event) {
+this.setData({
+inputValue: event.detail.value || ''
+});
+},
+buttonHandler(event) {
+const newItem = this.data.inputValue.trim();
+if (!newItem) return;
+const itemArr = [...this.data.items, newItem];
+wx.setStorageSync('items', itemArr);
+this.setData({ items: itemArr });
+},
+onLoad() {
+const itemArr = wx.getStorageSync('items') || [];
+this.setData({ items: itemArr });
+}
+});
+</code></pre></blockquote>
+<p>上面代码中，输入框监听函数<code>inputHandler()</code>只做了一件事，就是每当用户的输入发生变化时，先从事件对象<code>event</code>的<code>detail.value</code>属性上拿到输入的内容，然后将其写入全局变量<code>inputValue</code>。如果用户删除了输入框里面的内容，<code>inputValue</code>就设为空字符串。</p>
+<p>按钮监听函数<code>buttonHandler()</code>是每当用户点击提交按钮，就会执行。它先从<code>inputValue</code>拿到用户输入的内容，确定非空以后，就将其加入<code>items</code>数组。然后，使用微信提供的<code>wx.setStorageSync()</code>方法，将<code>items</code>数组存储在客户端。最后使用<code>this.setData()</code>方法更新一下全局变量<code>items</code>，进而触发页面的重新渲染。</p>
+<p><code>wx.setStorageSync()</code>方法属于小程序的客户端数据储存 API，用于将数据写入客户端储存。它接受两个参数，分别是键名和键值。与之配套的，还有一个<code>wx.getStorageSync()</code>方法，用于读取客户端储存的数据。它只有一个参数，就是键名。这两个方法都是同步的，小程序也提供异步版本，请参考<a href="https://developers.weixin.qq.com/miniprogram/dev/api/storage/wx.setStorage.html">官方文档</a>。</p>
+<p>最后，上面代码中，<code>Page()</code>的参数配置对象还有一个<code>onLoad()</code>方法。该方法属于页面的生命周期方法，页面加载后会自动执行该方法。它只执行一次，用于页面初始化，这里的意图是每次用户打开页面，都通过<code>wx.getStorageSync()</code>方法，从客户端取出以前存储的数据，显示在页面上。</p>
+<p>这个示例的完整代码，可以参考<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/14.storage">代码仓库</a>。</p>
+<p>必须牢记的是，客户端储存是不可靠的，随时可能消失（比如用户清理缓存）。用户换了一台手机，或者本机重装微信，原来的数据就丢失了。所以，它只适合保存一些不重要的临时数据，最常见的用途一般就是作为缓存，加快页面显示。</p>
+<h2>三、远程数据请求</h2>
+<p>小程序可以从外部服务器读取数据，也可以向服务器发送数据。本节就来看看怎么使用小程序的网络能力。</p>
+<p>微信规定，只有后台登记过的服务器域名，才可以进行通信。不过，开发者工具允许开发时放松这个限制。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100510.jpg" alt="" title="" /></p>
+<p>按照上图，点击开发者工具右上角的三条横线（"详情"），选中"不校验合法域名、web-view（业务域名）、TLS 版本以及 HTTPS 证书" 。这样的话，小程序在开发时，就可以跟服务器进行通信了。</p>
+<p>下面，我们在本地启动一个开发服务器。为了简单起见，我选用了 <a href="https://www.npmjs.com/package/json-server">json-server</a> 作为本地服务器，它的好处是只要有一个 JSON 数据文件，就能自动生成 RESTful 接口。</p>
+<p>首先，新建一个数据文件<code>db.json</code>，内容如下。</p>
+<blockquote><pre><code class="language-javascript">
+{
+"items": ["事项 A", "事项 B", "事项 C"]
+}
+</code></pre></blockquote>
+<p>然后，确认本机安装了 Node.js 以后，进入<code>db.json</code>所在的目录，在命令行执行下面命令，启动服务器。</p>
+<blockquote><pre><code class="language-bash">
+npx json-server db.json
+</code></pre></blockquote>
+<p>正常情况下，这时你打开浏览器访问<code>localhost:3000/items</code>这个网址，就能看到返回了一个数组<code>["事项 A", "事项 B", "事项 C"]</code>。</p>
+<p>接着，打开<code>home.js</code>，代码修改如下。</p>
+<blockquote><pre><code class="language-javascript">
+Page({
+data: { items: [] },
+onLoad() {
+const that = this;
+wx.request({
+url: 'http://localhost:3000/items',
+success(res) {
+that.setData({ items: res.data });
+}
+});
+}
+});
+</code></pre></blockquote>
+<p>上面代码中，生命周期方法<code>onLoad()</code>会在页面加载后自动执行，这时就会执行<code>wx.request()</code>方法去请求远程数据。如果请求成功，就会执行回调函数<code>succcess()</code>，更新页面全局变量<code>items</code>，从而让远程数据显示在页面上。</p>
+<p><code>wx.request()</code>方法就是小程序的网络请求 API，通过它可以发送 HTTP 请求。它的参数配置对象最少需要指定<code>url</code>属性（请求的网址）和<code>succcess()</code>方法（服务器返回数据的处理函数）。其他参数请参考<a href="https://developers.weixin.qq.com/miniprogram/dev/api/network/request/wx.request.html">官方文档</a>。</p>
+<p>开发者工具导入项目代码，页面渲染结果如下。它的初始数据是从服务器拿到的。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100509.jpg" alt="" title="" /></p>
+<p>这个示例的完整代码，可以参考<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/15.web-request">代码仓库</a>。</p>
+<p>这个例子只实现了远程数据获取，json-server 实际上还支持数据的新增和删改，大家可以作为练习，自己来实现。</p>
+<h2>四、<code>&lt;open-data&gt;</code>组件</h2>
+<p>如果要在页面上展示当前用户的身份信息，可以使用小程序提供的<a href="https://developers.weixin.qq.com/miniprogram/dev/component/open-data.html"><code>&lt;open-data&gt;</code>组件</a>。</p>
+<p>打开<code>home.wxml</code>文件，代码修改如下。</p>
+<blockquote><pre><code class="language-markup">
+&lt;view>
+&lt;open-data type="userAvatarUrl">&lt;/open-data>
+&lt;open-data type="userNickName">&lt;/open-data>
+&lt;/view>
+</code></pre></blockquote>
+<p>上面代码中，<code>&lt;open-data&gt;</code>组件的<code>type</code>属性指定所要展示的信息类型，<code>userAvatarUrl</code>表示展示用户头像，<code>userNickName</code>表示用户昵称。</p>
+<p>开发者工具导入项目代码，页面渲染结果如下，显示你的头像和用户昵称。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202011/bg2020110201.jpg" alt="" title="" /></p>
+<p><code>&lt;open-data&gt;</code>支持的用户信息如下。</p>
+<ul>
+<li><code>userNickName</code>：用户昵称    </li>
+<li><code>userAvatarUrl</code>：用户头像    </li>
+<li><code>userGender</code>：用户性别    </li>
+<li><code>userCity</code>：用户所在城市</li>
+<li><code>userProvince</code>：用户所在省份</li>
+<li><code>userCountry</code>：用户所在国家</li>
+<li><code>userLanguage</code>：用户的语言</li>
+</ul>
+<p>这个示例的完整代码，可以参考<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/16.open-data">代码仓库</a>。</p>
+<p><code>&lt;open-data&gt;</code>不需要用户授权，也不需要登录，所以用起来很方便。但也是因为这个原因，小程序不允许用户脚本读取<code>&lt;open-data&gt;</code>返回的信息。</p>
+<h2>五、获取用户个人信息</h2>
+<p>如果想拿到用户的个人信息，必须得到授权。官方建议，通过按钮方式获取授权。</p>
+<p>打开<code>home.wxml</code>文件，代码修改如下。</p>
+<blockquote><pre><code class="language-markup">
+&lt;view>
+&lt;text class="title">hello {{name}}&lt;/text>
+&lt;button open-type="getUserInfo" bind:getuserinfo="buttonHandler">
+授权获取用户个人信息
+&lt;/button>
+&lt;/view>
+</code></pre></blockquote>
+<p>上面代码中，<code>&lt;button&gt;</code>标签的<code>open-type</code>属性，指定按钮用于获取用户信息，<code>bind:getuserinfo</code>属性表示点击按钮会触发<code>getuserinfo</code>事件，即跳出对话框，询问用户是否同意授权。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100603.jpg" alt="" title="" /></p>
+<p>用户点击"允许"，脚本就可以得到用户信息。</p>
+<p><code>home.js</code>文件的脚本代码如下。</p>
+<blockquote><pre><code class="language-javascript">
+Page({
+data: { name: '' },
+buttonHandler(event) {
+if (!event.detail.userInfo) return;
+this.setData({
+name: event.detail.userInfo.nickName
+});
+}
+});
+</code></pre></blockquote>
+<p>上面代码中，<code>buttonHandler()</code>是按钮点击的监听函数，不管用户点击"拒绝"或"允许"，都会执行这个函数。我们可以通过事件对象<code>event</code>有没有<code>detail.userInfo</code>属性，来判断用户点击了哪个按钮。如果能拿到<code>event.detail.userInfo</code>属性，就表示用户允许读取个人信息。这个属性是一个对象，里面就是各种用户信息，比如头像、昵称等等。</p>
+<p>这个示例的完整代码，可以参考<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/17.user-info">代码仓库</a>。</p>
+<p>实际开发中，可以先用<code>wx.getSetting()</code>方法判断一下，用户是否已经授权过。如果已经授权过，就不用再次请求授权，而是直接用<code>wx.getUserInfo()</code>方法获取用户信息。</p>
+<p>注意，这种方法返回的用户信息之中，不包括能够真正识别唯一用户的<code>openid</code>属性。这个属性需要用到保密的小程序密钥去请求，所以不能放在前端获取，而要放在后端。这里就不涉及了。</p>
+<h2>六、多页面的跳转</h2>
+<p>真正的小程序不会只有一个页面，而是多个页面，所以必须能在页面之间实现跳转。</p>
+<p><code>app.json</code>配置文件的<code>pages</code>属性就用来指定小程序有多少个页面。</p>
+<blockquote><pre><code class="language-javascript">
+{
+"pages": [
+"pages/home/home",
+"pages/second/second"
+],
+"window": ...
+}
+</code></pre></blockquote>
+<p>上面代码中，<code>pages</code>数组包含两个页面。以后每新增一个页面，都必须把页面路径写在<code>pages</code>数组里面，否则就是无效页面。排在第一位的页面，就是小程序打开时，默认展示的页面。</p>
+<p>新建第二个页面的步骤如下。</p>
+<p>第一步，新建<code>pages/second</code>目录。</p>
+<p>第二步，在该目录里面，新建文件<code>second.js</code>，代码如下。</p>
+<blockquote><pre><code class="language-javascript">
+Page({});
+</code></pre></blockquote>
+<p>第三步，新建第二页的页面文件<code>second.wxml</code>，代码如下。</p>
+<blockquote><pre><code class="language-markup">
+&lt;view>
+&lt;text class="title">这是第二页&lt;/text>
+&lt;navigator url="../home/home">前往首页&lt;/navigator>
+&lt;/view>
+</code></pre></blockquote>
+<p>上面代码中，<code>&lt;navigator&gt;</code>就是链接标签，相当于网页标签<code>&lt;a&gt;</code>，只要用户点击就可以跳转到<code>url</code>属性指定的页面（这里是第一页的位置）。</p>
+<p>第四步，修改第一页的页面文件<code>home.wxml</code>，让用户能够点击进入第二页。</p>
+<blockquote><pre><code class="language-markup">
+&lt;view>
+&lt;text class="title">这是首页&lt;/text>
+&lt;navigator url="../second/second">前往第二页&lt;/navigator>
+&lt;/view>
+</code></pre></blockquote>
+<p>开发者工具导入项目代码，页面渲染结果如下。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100604.jpg" alt="" title="" /></p>
+<p>用户点击"前往第二页"，就会看到第二个页面。</p>
+<p>这个示例的完整代码，可以参考<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/18.multi-pages">代码仓库</a>。</p>
+<h2>七、wx.navigateTo()</h2>
+<p>除了使用<code>&lt;navigator&gt;</code>组件进行页面跳转，小程序也提供了页面跳转的脚本方法<code>wx.navigateTo()</code>。</p>
+<p>首先，打开<code>home.wxml</code>文件，代码修改如下。</p>
+<blockquote><pre><code class="language-markup">
+&lt;view>
+&lt;text class="title">这是首页&lt;/text>
+&lt;button bind:tap="buttonHandler">前往第二页&lt;/button>
+&lt;/view>
+</code></pre></blockquote>
+<p>开发者工具导入项目代码，页面渲染结果如下。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202010/bg2020100605.jpg" alt="" title="" /></p>
+<p>然后，打开<code>home.js</code>文件，代码修改如下。</p>
+<blockquote><pre><code class="language-javascript">
+Page({
+buttonHandler(event) {
+wx.navigateTo({
+url: '../second/second'
+});
+}
+});
+</code></pre></blockquote>
+<p>上面代码中，<code>buttonHandler()</code>是按钮点击的监听函数，只要用户点击按钮，就会调用<code>wx.navigateTo()</code>方法。该方法的参数是一个配置对象，该对象的<code>url</code>属性指定了跳转目标的位置，自动跳转到那个页面。</p>
+<p>这个示例的完整代码，可以参考<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/19.wx-navigateto">代码仓库</a>。</p>
+<p>写到这里，这个小程序入门教程就告一段落了，入门知识基本上都涉及了。下一步，大家可以阅读小程序的<a href="https://developers.weixin.qq.com/ebook?action=get_post_info&amp;docid=0008aeea9a8978ab0086a685851c0a">官方教程</a>和<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/">使用文档</a>，争取对小程序 API 有一个整体的把握，然后再去看看各种实际项目的源码，应该就可以动手开发了。以后，我还会写小程序的进阶教程，包括云开发，介绍如何写小程序的后端，下次再见。</p>
