@@ -2114,3 +2114,1264 @@ http://www.woshipm.com/it/4240503.html	20141
 <p>&nbsp;</p>
 <p>本文由 @像蜗牛一样慢慢走 原创发布于人人都是产品经理。未经许可，禁止转载</p>
 <p>题图来自Unsplash，基于CC0协议</p>
+➜关于系统状态的可见性，你需要知道这几点
+http://www.woshipm.com/pd/4240760.html	21902
+<blockquote><p>编辑导读：系统通过交流当前状态可以使用户感知到对正在对系统的控制，这样可以帮助用户可以采取适当的措施来实现自己的目标，并最终使得用户信任品牌。本文对系统状态的可见性进行四个维度的分析，希望对你有帮助。</p></blockquote>
+<p><img data-action="zoom" class="size-full wp-image-4241333 aligncenter" src="http://image.woshipm.com/wp-files/2020/11/RBFnXiL3cqZK49NXlfXM.jpg" alt="" width="900" height="420" /></p>
+<p>雅各布·尼尔森（Jakob Nielsen）的十种启发式方法中的第一种-系统状态的可视性-不仅涉及用户界面设计，还涉及更多的内容。从本质上讲，它与沟通和透明度有关，这对于生活的许多方面都是至关重要的。人们追求可预测性和可控制性，并且在大多数情况下，更多的信息可以转化为更好的决策。</p>
+<p>无论您身在何处，无论在做什么，都可以花一些时间环顾四周，并记下您周围的各种系统以及它们如何传达当前状态。</p>
+<ul>
+<li>您的手机或笔记本电脑会显示剩余电池的寿命；</li>
+<li>您的电子邮件应用程序会告诉您您有多少未读电子邮件；</li>
+<li>地铁上的标牌指示下一站（或者，如果您错过了最后一站，则表示下一列火车到达车站要多少分钟）</li>
+</ul>
+<p>所有这些信息块使您可以准确评估与之交互的系统的当前状态。</p>
+<p>定义：系统状态的可见性是指系统状态传达给用户的程度。理想情况下，系统应始终在合理的时间内通过适当的反馈使用户了解发生的情况。</p>
+<h2>一、知识就是力量</h2>
+<p>只有知道当前的系统状态，才能进行相应的调整。 也就是说，您可以克服评估的难题，并弄清楚下一步需要做什么才能实现目标。</p>
+<p>例如，当您开车时，您需要不断查看它的速度，以确定您需要加快还是减速。如果您曾经驾驶过车速表损坏，可以证明这一点非常困难。试想当这发生在我身上时，我试图跟上步伐并盲目地相信它们的行驶速度是合理时，我会感到周围汽车的摆布。缺乏信息通常等于缺乏控制。</p>
+<h2>二、适当的反馈</h2>
+<p>每当用户与系统交互时，他们都需要知道交互是否成功。系统实际上获取了点击按钮后的那个请求，还是忙于其他事情却忽略了它？该商品是否已添加到购物车？请求通过了吗？（用户有这些问题的原因之一是，它们曾经被无法正常运行的技术所摧毁。但是，即使无错误技术的欢乐时光到来，人们仍然会怀疑他们是否确实点击或轻按了）</p>
+<p>用户操作的适当反馈可能是用户界面设计的最基本准则。它用于使用户了解当前状态，并允许他们在正确的方向上引导交互，而不会浪费精力。</p>
+<p>这样的反馈可以像用户单击按钮时改变颜色一样简单，或者在过程需要更长的时间来完成时显示进度指示器。这些指示器表明系统正在运行，并减少了不确定性-防止用户多次单击同一按钮，因为他们不确定第一次是否可以运行。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/ByoKBN0TANwVEHsOmYGR.png" width="495" height="427" /></p>
+<p>更改颜色并在选择屏幕上的按钮上添加选中标记，表明系统已注册用户的选择（左）。 进度指示器向用户保证更长的等待时间是正常的，并且系统仍在工作（右）。</p>
+<p>为交互式事件提供即时反馈，使用户可以快速识别错误源并在错误发生后立即予以修复。 实际上，即时反馈是直接操作的主要好处之一，直接操作是一种交互样式，用户可以直接对不同的UI对象进行操作。 与直接操作UI相比，命令行界面不显示系统的当前状态，也不提供即时反馈。 程序员知道在缺乏即时反馈的界面中定位错误的源可能有多困难。 他们通常不得不求助于断点和步进之类的工具，以了解系统状态如何随着代码中指定的每个动作而变化。</p>
+<p>您是否希望用户感觉自己正在使用DOS或Unix？ 这些古老的命令行用户界面与现代GUI设计之间的真正区别不是彩色图标的存在。 系统状态的可见性。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/iZ31uIgihs4Uv0yXztws.png" width="332" height="676" /></p>
+<p>即使当用户由于系统没有屏幕而无法看到操作的效果时（例如仅语音设备（例如Amazon Echo和Google Home）也是如此），听到命令的最小反馈也是必不可少的。 亚马逊的Echo在设备上显示一盏灯，表明它当前正在监听或正在使用该命令。 例如，这种开-关指示器不如正在运行的计时器好，但是至少可以确保用户可以听见系统发出的命令，并且计时器设置在第一位。</p>
+<h2>三、迫使用户采取行动</h2>
+<p>现代系统通常很复杂，并且假设描述系统状态的所有变量都可以传达给用户是不合理的。用户不关心许多后台组件，例如下载和执行哪些JavaScript文件以使站点正常工作。但是，有时后台方面实际上可以在后台发挥重要作用。</p>
+<p>以库存大小为例。产品可用的库存量通常与用户无关，因此不应显示。但是，有两个例外：</p>
+<ul>
+<li>库存不足时：如果人们知道只剩少量物品，那么他们就会更有可能立即采取行动-紧随稀缺和社会证明等偏见。</li>
+<li>没有库存的物品时：该信息可以节省用户尝试添加到不再可用的购物车产品的工作量。 （丢失立即下达订单比失去对未来订单的信誉要好，如果用户觉得自己不信任您，则永远不会下订单。）</li>
+</ul>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/pZKjxhd1lLrF5NVsc6Vh.jpg" width="501" height="284" /></p>
+<p>另外，告知用户当前距离免费送货或其他类型的交易有多远，这也可以鼓励更多购买。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/r7aIgNMg2KGcEO55burU.png" width="498" height="269" /></p>
+<p>NatureBox.com：页面顶部的横幅显示用户需要花费多少钱才能获得免费送货服务。</p>
+<p>要传达可能影响用户的后台事件，您可以使用通知或指示器。模态对话框也用于通知人们状态变化，这可能会严重影响他们。</p>
+<h2>四、沟通创造信任</h2>
+<p>当在与人的现实关​​系中，该人隐瞒我们的信息或单方面做出决定时，我们开始失去信任，并感到这种关系不再处于平等的地位。当我们与系统交互时，也会发生同样的事情。</p>
+<p>当我们了解系统的状态时，我们会感到处于控制之中–我们可以依靠系统在所有情况下均按预期方式运行。互动的可预测性不仅可以建立网站或应用程序的机制，还可以建立品牌本身的信任。</p>
+<p>网站和应用程序应向用户明确传达系统的状态-在未通知用户的情况下，不得采取对用户有影响的行动。当外部事件或时间流逝导致系统状态发生变化时，请简要但易于理解地进行解释。</p>
+<p>例如，当用户重新访问以前创建的愿望清单，现在该清单列表包含缺货或不再出售的商品时，应该怎么办？最糟糕的用户体验是，如果这些项目只是从列表中消失而没有说明原因。屏幕顶部的通知如何？这只会稍微好一点，因为它不会帮助用户记住以前在列表中找到合适替代品的项目。这两种方法都失去了对用户的控制，降低了信任度-如果其中的项目有时会自行消失，则用户可能会停止依赖愿望清单。</p>
+<p>建立信任的一种更好的方法是明确传达当前系统的状态（哪些项目不再可用），然后允许用户将其从列表中删除或使其可见以备将来参考。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/ZAuVuRPoKaNHIuHcxaeY.png" alt="Screenshot of out of stock items on wish list at Loft website" width="503" height="464" /></p>
+<p>Loft.com继续在愿望清单中显示缺货商品，并带有适当的消息传递功能以将商品状态传达给用户。</p>
+<h2>五、结论</h2>
+<p>系统状态的可见性是良好用户体验的基本原则。 从本质上讲，这种启发式鼓励开放和持续的沟通，这对于所有关系（无论是与人还是与设备）都至关重要。 对系统当前状态一无所知的用户无法决定下一步要实现其目标的方式，也无法确定其操作是否有效或是否犯了错误。，不要蒙住您的用户。</p>
+<p>&nbsp;</p>
+<p>原文作者：奥罗拉·哈利（Aurora Harley）</p>
+<p>原文地址：<a href="https://www.nngroup.com/articles/visibility-system-status/" target="_blank" rel="noopener">https://www.nngroup.com/articles/covid-changed-users/</a></p>
+<p>本文由 @汪仔8250 翻译发布于人人都是产品经理。未经许可，禁止转载</p>
+<p>题图来自 unsplash，基于CC0协议</p>
+➜这些UI设计中常犯的错误，你还在犯吗？
+http://www.woshipm.com/pd/4240792.html	22873
+<blockquote><p>编辑导语：对于新手设计师来说，做设计难免会出错。有的错误在犯的时候并不知道，被人指出后才恍然大悟，还有很多错误因为各种原因被忽视掉了。无论是哪种情况，设计师终究都要改正并且提升才可以。本文作者为我们总结了UI设计中常犯的错误，看看你中招了多少吧！</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4241440" src="http://image.woshipm.com/wp-files/2020/11/PeqK7BV6Noeup5L7pHaq.jpg" alt="" width="900" height="420" /></p>
+<p>设计源于生活，细节成就品质。</p>
+<p>前言：这是一篇外文文章，由于近期在做B端产品，写得不错，很有共鸣所以翻译分享给大家。有些地方稍加修饰加上了自己的经验想法，同时也把原文附上了，尽可能得让大家感受原作的用意表达。</p>
+<p>Introduction：</p>
+<p>In my job as UX Consultant for a Mendix partner, I often come across self-organized teams creating awesome internal applications. My job involves improving the UX within their applications.</p>
+<p>The best days are when I am completely blindsided by the ingenuity of the creative ways some problems are solved, forcing me to explain why some logical solutions are a bad idea. The solutions given by me are not a “single truth”, there are always exceptions, don’t quote me on anything written here, but use it as inspiration to start the conversation.</p>
+<p>简介：我的工作是作为Mendix Partner的顾问，我经常会碰到组织良好的额团队做出非常不错的机构应用，我的工作就是是改善这些应用的用户体验。</p>
+<p>这些天我完全被一些具有创造性的问题解决方式震惊到了，这促使我将要给大家解释为什么这些创造的逻辑是糟糕的。我的方案并不是唯一的真理，永远有更好的，我这里仅仅是抛砖引玉。</p>
+<h2>一、Everything in a single screen</h2>
+<p>囊括一切：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/pTyJ56NeggnFkPfOsvkX.png" alt="image.png" width="800" height="423" /></p>
+<p>This is the most commonly implemented UX bad practice.You start your little app with a tight interface, add a couple of features and before you know it, you have a screen full of buttons. Don’t feel bad, we’ve all been there.</p>
+<h3>1. Arguments</h3>
+<ul>
+<li>Less clicks</li>
+<li>I can see everything, creates overview</li>
+<li>Users hate scrolling</li>
+</ul>
+<p>一个页面囊括一切：这是最普遍、最糟糕的用户体验。紧凑的界面塞满了按钮，填满了内容，整个屏都是按钮。这样做的理由是：</p>
+<ul>
+<li>更少的点击和页面跳转</li>
+<li>呈现给客户更多得内容，创造全局概览</li>
+<li>用户厌恶滚动浏览</li>
+</ul>
+<p>Whenever I see this interface solution it reminds me of a swiss army knife with all the tools unfolded, and the only one that is used is the bottle opener.</p>
+<p>当我看到这样的界面使我想起了瑞士军刀，囊括尽可能多的工具，而唯一有用的是启瓶器。</p>
+<h3>2. Overwhelming 信息铺天盖地</h3>
+<p>Having all the options spread out seems like it creates overview, but the problem is that your brain can only understand 9 options at best, and let`s be honest the user probably doesn’t use 95% of the buttons that often.</p>
+<p>所有的选项铺展在一个页面似乎创造了全局概览，但问题是大脑最多只能理解9个选项，因此用户95%的按钮都不经常用。</p>
+<blockquote><p>Millers law /弥勒定律：短时记忆期间平均能够记住的元素数量仅为7(±2)个。</p></blockquote>
+<h3>3. Proximity 临近原则</h3>
+<p>Another problem is that buttons should be close to the data that they influence. Having more buttons means losing visual proximity.</p>
+<p>另外一个问题是按钮要尽可能紧邻与其相关联的内容，呈现更多的按钮意味着失去视觉上的紧邻原则。</p>
+<h3>4. Users dont hate scrolling 用户不讨厌滚动浏览</h3>
+<p>The “users hate scrolling argument” is often a side effect of not having the right context at the right time and solving it by craming as much information in a single screen to help create context.</p>
+<p>“but in our analytics we see that only 10% of the users scroll to the bottom of our landing page” seems like a safe bet to conclude that 90% of your audience hates scrolling.</p>
+<p>The problem is not the scrolling, its the amount of information. Having more information higher on the page doesnt mean that users will absorb that information but will burn out quicker and make them leave.</p>
+<p>用户讨厌滚动一方面的影响是在正确的时间没有出现正确的内容，所以才在一屏上填满更多的信息来创造内容。</p>
+<p>在我们研究分析的结果中，只用百分之10% 的用户滚动到登陆页的按钮，由此极有可能的结论是90%的用户讨厌滑动鼠标。</p>
+<p>其实问题不在于滚动鼠标而是信息量，把大量的信息呈现在同一个界面并不代表用户=用户都会注意到，反而会是用户失去耐心愤然离去。</p>
+<h2>二、Dropdown buttons</h2>
+<p>下拉菜单：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/zOy4yXI2VrkWCOtNvwHk.png" alt="image.png" width="804" height="430" /></p>
+<p>So you’ve cleaned up your screen and put all the buttons in dropdowns.</p>
+<h3>1. Arguments</h3>
+<ul>
+<li>More Focus</li>
+<li>Less clutter, easier to find what I need</li>
+</ul>
+<p>为了让页面更简洁，就把所有的按钮尽可能的放到下拉菜单里</p>
+<p>好处是：</p>
+<ul>
+<li>更专注</li>
+<li>页面简洁，用户更容易找到他所需要的</li>
+</ul>
+<h3>2. Balance is key 平衡是关键</h3>
+<p>Think about your interface as a physical space, if you hide a page in a set of drawers, you need to open every drawer until you find what you are looking for. This is the same for digital UI.</p>
+<p>If your drawers are logical and are in the right place this works well, but having garden supplies in a drawer in your garden shed sounds smart, so should your bbq supplies go in there too? Or in the kitchen? Or both?</p>
+<p>A good balance goes a long way. How often you use your bbq determines if it should go in the shed or kitchen.</p>
+<p>If you only have 5 buttons, they might not need to go in a dropdown, but 6 buttons, that’s a different story.</p>
+<p>把你的界面想象成一个现实空间，如果你把一张纸放到一套抽屉里，在你找到他之前你需要打开每个抽屉，对于UI界面也一样。</p>
+<p>但是如果你的抽屉式合乎逻辑的，并且放在了正确的地方，那这很管用；在花园小屋的抽屉里放花园用品听起来很明智，但是你的烧烤用品也应该放进去吗？还是在厨房里呢？还是两者兼而有之呢？</p>
+<p>很好的平衡有很长的路要走，多久使用一次烧烤用品决定你是放在棚子里还是厨房里。如果你只有5个按钮，就不需要放在下拉菜单了，如果是6个，那情况有不一样了。</p>
+<h2>三、where am I</h2>
+<p>我在哪里：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/NO9GHWVxKO5umbEaQ1Rz.png" alt="image.png" width="801" height="429" /></p>
+<p>You have a consistent design system and brand style, all pages feel the same. Soon you feel like you are walking through a forest of pages, not knowing if you have seen this page before, or if this is a different page with similar states.</p>
+<h3>1. Arguments</h3>
+<ul>
+<li>Consistent visual style</li>
+<li>Design Systems driven design</li>
+<li>Efficient use of screen real-estate</li>
+</ul>
+<p>你有一个一致性的设计系统和品牌风格，所有的页面感觉都一样，很快你你感觉就像走在了页面组成了丛林里，不知道你当前的页面是否之前看到过，还是不同的页面有相似的状态。</p>
+<h3>你认为这样的好处是</h3>
+<ul>
+<li>一致的视觉风格</li>
+<li>设计系统驱动设计</li>
+<li>有效的使用屏幕</li>
+</ul>
+<p>It’s friday afternoon, you have A.D.D and are bouncing between social media, colleagues, some private messages and trying to do your work. The last thing on your mind is what link you just clicked and where you are in the flow or process.</p>
+<h3>2. Create every screen for this user.</h3>
+<ul>
+<li>Give pages clear headers or page names</li>
+<li>Implement breadcrumbs if you are more than 1 level deep</li>
+<li>If the flow has multiple steps, show those steps.</li>
+</ul>
+<p>然后正是这样吗？</p>
+<p>在星期五下午，你有A.D.D，在社交媒体、同事、一些私人信息之间忙来忙去，试图做你的工作。你脑海中的最后一件事就是你刚才点击的链接以及你在流程或过程中的位置，所以：</p>
+<p>为用户按照以下原则设计界面：</p>
+<ul>
+<li>给界面设定清晰的标题；</li>
+<li>如果有不同层级就使用面包屑；</li>
+<li>如果任务流有多个步骤，那么就显示出来。</li>
+</ul>
+<h2>四、Popup in popup</h2>
+<p>多重弹窗：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/i99HmFgzuaIRfpKuDWBN.png" alt="image.png" width="801" height="431" /></p>
+<p>To save space, you have a button with a notification.In the notification there is a button that leads to another popup.</p>
+<h3>1. Arguments:“More context awareness”</h3>
+<p>为了节约空间给一个按钮添加了提示弹窗，而在提示弹窗里又增加了一个，增加的理由是：更多的上下文衔接意识。</p>
+<h3>2. What happens when I…</h3>
+<p>The problem with this is that the user loses his mental model of where he is in the process. If he finishes the second popup, will he go to the original popup or back to the original screen?Either the first popup should be a screen, or the second popup should be an inline error message.</p>
+<p>这样做的会导致什么问题是用户会失去在任务过程中的心流，如果用户关闭第二个弹窗，是会回到先前的弹窗还是回到主页面呢？</p>
+<p>这会给用户造成困惑；所以最终的解决方案是，要么第一个弹窗是一个页面，要么第二个弹窗是一个弱提示弹窗/非模态弹窗。</p>
+<h2>五、Card in card</h2>
+<p>卡片嵌套：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/QvLgurZtH2DKUBxIs5dC.png" alt="image.png" width="805" height="426" /></p>
+<p>Cards are trending at the moment, so what could be better than a single card? how about a card in another card… mind blown.</p>
+<h3>1. Arguments:“Cards are nested to create visual hierearchy”</h3>
+<p>UXers often talk about visual hierarchy. The way in which elements are organized on a screen portraying their importance to the user. Along the way physical symbolism such as cards were introduced.</p>
+<p>卡片设计目前很流行，还有什么是比卡片还要好的吗？卡片中的卡片又效果如何呢，神魂颠倒。</p>
+<p>这样做的理由是：卡片嵌套能创造视觉层次结构。</p>
+<p>UX设计师们经常谈论视觉层级结构，这样能很好的将元素组织起来把最重要的展现给用户，因此像看片这样的实体象征被引入到设计中。</p>
+<h3>2. In a traditional card deck, cards are all equal of size</h3>
+<p>Cards are placed on, under or next to other cards to communicate certain states or relationships. When you nest a card inside another card, the users mental model of what you can do with cards starts to breakdown.</p>
+<p>The user subconsciously starts to question relationships of other objects in the interface, and all logic is thrown out the window.</p>
+<p>传统纸卡牌尺寸都一样大，通过将卡片并排叠加传达某一状态或关系，当卡片进行嵌套，用户通过卡片建立的心智模型崩溃了。用户下意识地开始疑惑界面上其他卡片之间的关系，所有的逻辑都被打乱了。</p>
+<p>The solution is easy though!Dont nest cards, but place them close to each other, next to each other, or placed within an outline (like laying cards down on a casino table).</p>
+<p>解决方案很简单，不要进行卡片嵌套。而是进行平铺排列，或者置于外轮廓线内，像赌场桌上的排卡牌一样。</p>
+<h2>六、Form fields</h2>
+<p>表单域设计：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/UsMFQPVtV8c10AIhWGkO.png" alt="image.png" width="801" height="430" /></p>
+<p>Should I have a long list of form inputs? Maybe break it up in to multiple steps? Or have 3 columns of form inputs so it all fits in a single screen?</p>
+<h3>1. “Users hate scrolling”</h3>
+<p>The main problem isn’t the amount of pages or the amount of forms, it is how many forms are visible on the screen at a single time. Like buttons, this should be reduced to the minimal amount possible that still gives context and ease of use.</p>
+<p>表单域该怎么做？是罗列一整页的输入表单，还是对表单分布显示，还是在分成3栏并显示在同一页，用户讨厌滑动鼠标？</p>
+<p>主要的问题不在于页面数量和表单数量，而是在同一时间多少个表单显示在屏幕上，就像按钮一样，在保证易用易读的前提下，也应该尽可能减少到最小数量。</p>
+<h3>2. Always use a single column</h3>
+<p>Best practise is to always put intput fields in a single colomn.The users eyes have an easy time to flow down and check off each section.</p>
+<p>永远只用单栏显示：最佳的实践是设计一栏表单即可，这样用户视觉连续向下流动足一核对每个部分。</p>
+<h4>3. Are you telling a story 你在讲故事吗？</h4>
+<p>Sometimes your input fields are about the journey the user is about to embark on (on boarding), or maybe they have important consequences (tax slips). This is the best time to break up your fields into multiple pages.</p>
+<p>This gives you some visual space to create some breathing room and explain to the user what they are doing and why it‘s amazing or important.</p>
+<p>有时，如果输入表单是一系列的任务或者有不同的重要次序，那么就可以进行分页展示。</p>
+<p>这样能带来更多的留白空间，页面也具有呼吸感；同时能让用户明白自己在做什么，什么是重要的，让用户具有惊奇感又感觉到轻松。</p>
+<h3>4. Dropdowns 下拉选择表单</h3>
+<p>If there are only 1–5 items to choose from please don’t put them in a dropdown. I know it might look elegant and all, but it’s just not worth the users effort. Placing radio buttons is a friendlier approach.</p>
+<p>如果只有1-5个选项，就不要做成下拉式菜单，虽然会显得简洁优雅，但是用户使用起来比较费力耗时，直接像收音机按钮排列出来会是更友好的方式。</p>
+<h2>七、Recap, Quick rules</h2>
+<h3> 1. Recap, Quick rules</h3>
+<ul>
+<li>No more than 9 buttons；</li>
+<li>Only use drop downs as a last resort；</li>
+<li>Give every page a header；</li>
+<li>When a page is more than 1 deep, give it breadcrumb；</li>
+<li>When in multiple steps, show the steps；</li>
+<li>No more than 9 words per line；</li>
+<li>Never use popup in a popup；</li>
+<li>Never nest a card in a card；</li>
+<li>Keep form fields in a single column。</li>
+</ul>
+<h3>2. 总结回顾：</h3>
+<ul>
+<li>按钮不超过9个，最好是5个；</li>
+<li>不到万不得已不要用下拉；</li>
+<li>给每个页面清晰简洁的标题；</li>
+<li>当一个页面有不同层级，使用面包屑；</li>
+<li>文本每行不超过9个词（这里大家酌情参考就行，中文肯定不止。占屏幕宽度一半到三分之二都是可接受的）；</li>
+<li>不要有多重弹窗；</li>
+<li>不能进行卡片嵌套；</li>
+<li>保持输入表单设计成一栏。</li>
+</ul>
+<p>&nbsp;</p>
+<p>作者：虫二无二；公众号：看摹设</p>
+<p>本文由 @虫二无二 原创发布于人人都是产品经理，未经许可，禁止转载</p>
+<p>题图来自 <a href="https://unsplash.com/">Unsplash</a>，基于 CC0 协议</p>
+➜京喜如何给京东惊喜
+http://www.woshipm.com/evaluating/4240324.html	22953
+<blockquote><p>编辑导语：如今很多平台都开始发展下沉市场的业务，京东的京喜就主打下沉市场，以拼团为主；但是在下沉市场已经有拼多多这个大头了，京喜该如何站稳脚步？本文作者从几大维度详细分析了京喜app，我们一起来看一下。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4241617" src="http://image.woshipm.com/wp-files/2020/11/TUciR4bQYU619dNmItrt.jpg" alt="" width="900" height="420" /></p>
+<p>2020年8月17日，京东发布了该公司截至2020年6月30日的第二季度未经审计财报；财报显示，京东第二季度净营收为人民币2011亿元（约合285亿美元）， 较去年同期增长33.8%。</p>
+<p>今天我们来聊聊京东攻打下沉市场的重要载体——“京喜”。</p>
+<p>2019年9月19日上线以来，京喜已经布局183个产业带，助力1000余商家销售额破千万；京喜70%的用户来自3-6线城市，今年二季度，下沉新兴市场用户订单量环比一季度增长84.2%；京东618期间，京喜的日订单量最高超过1000万单——由此可见，京喜确实给了京东一个大大的惊喜。</p>
+<p>今天，笔者将从电商行业，竞品对比、用户价值分析、京喜商业价值分析、产品迭代历程、产品结构和运营策略七个维为大家分析京喜成功的原因。</p>
+<h2>一 、电商的行业分析</h2>
+<h3>1. 电商发展的历程</h3>
+<p>中国电子商务开始于1999年，传统企业初触互联网，拉开了中国电商的序幕；在过去的21年中，电商发展历程大致可以分为以下4个阶段：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/Meh12VkSmOPr5s71JB87.png" alt="" width="526" height="201" /></p>
+<h3>2. 社交电商站上风口</h3>
+<p>传统电商人到中年，红利将尽，获客成本攀升；移动社交蓬勃发展，流量价值凸显，将社交与电商融合的商业模式为电商企业降低引流成本提供了良好的解决方案。</p>
+<p>如今国内市场社交电商主要有以下4种模式：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/KoHwqlBHga40HRR8RyJ0.png" alt="" width="746" height="399" /></p>
+<p>京喜作为京东攻打下沉市场的利剑，在传统电商市场接近饱和的情况下，开始了新的电商模式——社交电商。</p>
+<p>下面，我们将从PEST四个层面分析一下社交电商的发展的原因：</p>
+<p>1）政策（Politics）层面</p>
+<p>2016年，商务部、发改委等联合发布“电子商务十三五规划”明确鼓励社交电商发展，随着一批法规的实施，涉嫌传销等问题基本解决，为社交电商发展打开了政策空间。</p>
+<p>2019年，国务院办公厅印发《关于促进平台经济规范健康发展的指导意见》，指出社交电商作为平台经济的一种新业态，在促进大众创业万众创新、推动产业升级、拓展消费市场、增加就业等方面作用不可低估。</p>
+<p>2019年《电子商务法》开始实施，天猫、京东等平台部分无证小型商铺面临关闭的风险；同样微商和海外代购亦被纳入电子商务经营者范畴，受法律管制——这一系列影响为以熟人社交为流量来源的社交电商提供了广阔的空间。</p>
+<p>2）经济（Economy）层面</p>
+<p>社交电商目标大多是下沉市场。下沉市场通常指三线以下城市及农村乡镇地区的市场；根据Mob研究院2019年数据统计，中国下沉市场月活跃用户超6亿，且59.2%用户收入不超过5000元。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/tKjh7nmWAb7zUXlfQWe5.jpg" alt="" width="332" height="295" /></p>
+<p>下沉市场多价格敏感型用户，在消费力度及消费能力不高的情况下，价格是其购物的重要考虑因素；由此可见，以京喜、拼多多为主导的拼购类社交电商将有巨大的市场。</p>
+<p>3）社会（Society）文化层面</p>
+<p>随着社会的进步和生活水平的提高，人们有了更多元化的购物需求；具《2019“下沉市场”图鉴》统计，下沉市场消费者对购物优惠券和购物分享有明显的偏好性。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/foHoIRqsXWPALTifVWMO.jpg" alt="" width="627" height="303" /></p>
+<p>大多数用户缺乏辨别商品好坏能力，这点在下沉市场变现更加明显，他们通常相信身边亲朋的推荐。</p>
+<p>据统计，下沉市场用户日均使用手机时长达5.25小时他们拥有更加充裕的时间去维护社交关系以及传播优质商品，社交电商的口碑传播和裂变传播在下沉市场能得到更加充分的展现。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/b4KhOgCzuqkHdW32Ebbn.jpg" alt="" width="625" height="304" /></p>
+<p>4）技术（Technology）层面</p>
+<p>电商行业的发展依托于科技的进步，据统计，截止至今年3月份，我国网民规模已超过9亿，较2018年底增长7508万；互联网普及率达64.5%，较2018年底提升4.9个百分点，年平均涨幅创新高。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/6yyySscM2AqCQbE4U4yz.jpg" alt="" width="571" height="359" /></p>
+<p>更大规模的互联网普及率也带来大规模的网络购物使用率，截止至今年3月，网络购物用户规模达7.10亿，较2018年底增长1.00亿，占网民整体的78.6%。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/HSNkEgosBcZy7Gw9ADYo.jpg" alt="" width="537" height="313" /></p>
+<p>手机、Ipad等硬件性能的提升给电商平台购物体验带来了极大的改善——无论是店铺图文介绍亦或KOL带货直播，更高性能的设备都提供了更加优质的体验。</p>
+<p>大数据时代发展使平台比你还了解自己，通过人物画像和智能推荐，实现个性化导购服务。</p>
+<p>物联网的发展使物流配送体系逐渐完善，更加快速准确的物流配送和清晰直观的物流信息，使线上购物有了线下般的“透明”体验。</p>
+<p>5G的快速发展将全方位提高购物体验。虚拟现实和AR将集中到购物中，智能配送平台崛起，电商行业将进入全新的购物时代。</p>
+<h3>3. 电商行业的前景</h3>
+<p>依托着政策制度的不断完善和社会、经济、科技的发展，电商行业在20年内蓬勃发展；传统电商已到互联网红利末期，且下沉市场前景广阔，社交的电商未来可期。</p>
+<h2>二、竞品对比</h2>
+<p>如今社交电商格局未定，京喜想从中厮杀出一片天地仍然面临重重困境，一方面面临新的电商模式与传统电商模式的市场竞争，另一方面同为社交电商玩法，京喜得面对同样想在社交电商市场分一杯羹的竞争对手。</p>
+<p>因此，我们选择京东老对头——淘宝下沉市场载体“淘宝特价版”与拼购类社交电商大头“拼多多”作为本次竞品分析的对象。</p>
+<p>下面我们将从成长路径及业务模式分析三者的异同点。</p>
+<h3>1. 京喜</h3>
+<p>1）成长路径</p>
+<ul>
+<li>2014年，京东启动社交电商布局，京东与腾讯达成战略合作，入驻微信及手Q购物一级入口；</li>
+<li>2016年，京东正式开启拼购业务，上线了内容导购生态“购物券”；</li>
+<li>2018年6月，京东拼购小程序上线；</li>
+<li>2019年4月，拼购APP上线测试；5月，京东与腾讯达成新一轮战略合作，将利用微信一级入口及微信市场等独特资源，打造区别于京东现有场景和模式的全新平台；618期间，京东拼购在下沉市场推动增长，并携手新华信用发布“厂直优品”计划；7月，京东拼购业务部更名京东社交电商业务部，战略地位升级；9月，京东拼购全面升级为以微信一级入口为主要载体的社交电商平台“京喜”。</li>
+</ul>
+<p>2）业务模式</p>
+<p>京喜通过与腾讯合作，借助手Q及微信的流量，以“低价不低质量”切入下沉市场。</p>
+<ul>
+<li>京喜流量渠道：以微信为主载体，基于包括小程序、手Q 、M站、APP、粉丝群在内的6大移动端渠道入口；发挥社交电商优势，满足用户社交需求。</li>
+<li>商品来源：以拼购为核心，产地供应链，直接对接供货源头，去掉中间成本，没有中间差价。</li>
+<li>付款方式：微信支付和京东支付，可与京东金融的优惠活动联动。</li>
+<li>物流配送：京东自有物流与第三方物流结合，京东物流发起“千镇万县24小时达”时效提速计划，该计划重点针对低线城市城区、县城以及周边乡镇，包括仓储投入。</li>
+<li>购物保障：京东增值保障，京东金融保障服务官方旗舰店委托第三方服务商提供，例如：过期换新、意外保护、仨月意外换新、半年意外换新；工厂直供和产地直发的商品都有第三方质检机构检测。</li>
+</ul>
+<h3>2. 拼多多</h3>
+<p>1）成长路径</p>
+<ul>
+<li>2015年4月，拼多多正式上线。</li>
+<li>2016年2月，拼多多单月成交额破1000万，付费<a href="https://baike.baidu.com/item/%E7%94%A8%E6%88%B7/3621489">用户</a>突破2000万。</li>
+<li>2016年7月，拼多多用户量突破1亿，获得B轮1亿美元融资，I  DG资本、腾讯、高榕资本领投。</li>
+<li>2016年9月，拼多多与拼好货宣布合并。</li>
+<li>2016年10月10日，拼多多周年庆单日交易额超过1亿元。</li>
+<li>2017年10月，拼多多近1个月长期占据iOS总榜及购物类第一名。</li>
+<li>2018年7月26日，拼多多正式登陆美国资本市场，发行价19美元，市值达到240亿美元。</li>
+<li>2018年10月，国美电器与拼多多已展开合作，前者为拼多多提供电器类商品经营业务。</li>
+<li>2019年2月，拼多多纳入MSCI。</li>
+<li>2019年6月11日，拼多多入选“2019福布斯中国最具创新力企业榜”。</li>
+<li>2019年12月，拼多多入选2019中国品牌强国盛典榜样100品牌。</li>
+<li>2020年4月25日凌晨，拼多多发布2019年年报，年报显示，2019年，拼多多是在成交额10066亿元，平台年活跃买家数量达852亿，较上年增长1.67亿，活跃买家年平均消费额1720.1元，同比增长53%，年活跃商家数超过510万，较上年同期的360万增长41.7%。</li>
+</ul>
+<p>2）业务模式</p>
+<p>拼多多用户通过发起和朋友、家人、邻居等的拼团，以更低的价格，拼团购买需要的商品；拼多多凝聚更多人的力量，用更低的价格买到更好的东西。</p>
+<ul>
+<li>流量渠道：挂靠微信二级入口——小程序及公众号，低于京喜，但微信庞大的流量池为拼多多短期实现用户增长提供助力。拼多多是第一个通过拼团模式实现社交裂变和用户积累的平台。在5年时间内成为与淘宝、京东同级别的电商购物平台。</li>
+<li>商品来源：淘宝等传统电商巨头开始走向品牌化后，关闭一部分中低尾端的商家店铺以及自行入驻的商家；拼多多发起“新品牌计划”，聚焦中小企业，通过打通生产与需求之间的信息流，帮助他们在拼多多上快速建立品牌。</li>
+<li>付款方式：微信支付、微信好友帮付、支付宝、QQ钱包、蚂蚁花呗，可以与支付宝的活动联动。</li>
+<li>物流配送：第三方物流配送，拼多多倾向于 “轻资产”的商业模式，专注于帮助商家增进对零售供应链的理解和参与。</li>
+<li>购物保障：正品保障保险卡，拼多多联合中国人保财险及国内外知名品牌共同推出，在指定店铺买到假货可以理赔。</li>
+</ul>
+<h3>3. 淘宝特价版</h3>
+<p>1）成长路径</p>
+<ul>
+<li>2018年3月，淘宝特价版APP开启了内测</li>
+<li>2020年3月26日，淘宝特价版正式上线</li>
+</ul>
+<p>2）业务模式</p>
+<p>淘宝特价版是淘宝C2M战略产物，依托核心数字化能力和淘宝特价版，淘宝将帮助产业带工厂升级为“超级工厂”。</p>
+<ul>
+<li>流量渠道：淘宝特价版依托于阿里巴巴生态综合能力转化下沉用户；根据阿里巴巴最新季报数据显示，淘宝特价版3个月用户数相当于拼多多21个月。</li>
+<li>商品来源：淘宝特价版是C2M模式，顾客直接与工厂对接，产地供应链。</li>
+<li>付款方式：支付宝。</li>
+<li>物流配送：淘宝菜鸟平台与自找第三方物流相结合。</li>
+<li>购物保障：与淘宝体系一致，淘宝消费者保障，所有淘宝店铺需支付1000元保障金。</li>
+</ul>
+<h3>4. 总结</h3>
+<p>就下沉市场而言，价格永远是影响购物决策的锚点；所以无论是京喜、拼多多、淘宝特价版都是以低价策略攻打下沉市场——拼多多主打“百亿补贴”、京喜与淘宝特价版为C2M式供应链。</p>
+<p>但随着市场的发展，影响下沉用户购买决策的最主要因素将不再是价格，产品质量将提高下沉用户购买决策占比。</p>
+<p>京喜主打“低价不低质量”，有京东好物质量背书；接下来要做的就是充分利用微信11亿的客户流量，积攒用户数量，实现更高的业绩水平。</p>
+<h2>三、用户价值分析</h2>
+<p>观察社交电商，它其实是电商的社交化，其本质还是电商，但社交玩法是它成功的关键；京喜作为社交电商同样如此，而社交电商的参与方主要有以下4个：用户、商家、平台、供应商。</p>
+<p>其业务逻辑如下：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/h2JZLcxQOpihfI1jaCwt.jpg" alt="" width="774" height="497" /></p>
+<p>京喜想在社交电商市场占据更大的市场，而且作为C2M模式平台必须同时满足用户、商家和供应商三方的需求。</p>
+<p>下面，笔者将依次分析京喜在满足三方需求的路上做了哪些努力：</p>
+<h3>1. 用户</h3>
+<p>社交是平台能否成功的关键——下沉市场作为中国目前最大的社交电商蓝海市场，6亿下沉用户是社交电商必争之地。</p>
+<p>现如今，下沉市场消费理念趋于成熟，消费者购物不再以低价为唯一筛选标准；据调查统计，就商品本身，商品品质和质量、用户口碑和评价是消费者购买决策的前两名影响指数，商品价格的影响已经排至第三；而对商户而言而言，信誉度和物流情况是消费者关注的前两名指标。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/qqDbCnrWQrTHQYNK8rt7.jpg" alt="" width="487" height="379" /></p>
+<p>了解完消费者的购物需求已经影响购物决策因素后，我们分析一下目前市场上的购物渠道：</p>
+<p>1）实体商铺</p>
+<p>尽管电商发展迅速，但实体商铺仍然是市场上消费占比最大的渠道；尤其在三四线及以下城市，大多数消费者更愿意去地方超市。</p>
+<p>主要原因如下：</p>
+<ul>
+<li>开业比较久的实体商铺有天然的信任背书；</li>
+<li>实体商铺的商品更多被周围邻居使用，获取产品真实口碑和评价成本更低；</li>
+<li>实体店购物能直接感受实际外观和质量，避免出现图不对货的“照骗”事件；</li>
+<li>购物过程中享受导购对该产品的介绍过程，满足了消费者购物过程中的虚荣心；</li>
+<li>线下购物减少了物流配送时间，当天买当天用，无需等待；</li>
+<li>实体商铺售后更方便，任何产品问题都能直接找商家进行售后维护。</li>
+</ul>
+<p>但实体店购买商品问题也比较突出：</p>
+<ul>
+<li>同样标准下，线下商品价格普遍比线上更贵；</li>
+<li>实体商铺空间的局限性导致地方超市产品种类有限，如衣服、食品等款式、种类繁多的品类可选性有限；</li>
+<li>当居住环境周围无商业圈时，并且在货比三家过程中，由于各实体门店地理位置的原因，出门采购所花费的时间和精力成本更高。</li>
+</ul>
+<p>2）传统电商</p>
+<p>21年来实体电商已经发展成我们日常生活的一部分，无论是一二线城市或下沉市场，线上购物早已不是新鲜事。</p>
+<p>传统电商与实体商铺一样是人找货的购物模式，只是将购物渠道从线下转移到了线上；传统电商比实体商铺有更多样化的商品、更实惠的价格、更方便的购物体验。</p>
+<p>但缺点同样明显：</p>
+<ul>
+<li>商品评价及口碑易作假，辨别商品质量与品质难度大，获取产品真实口碑所需成本更高；</li>
+<li>只能根据图片或者视频了解商品，经常出现货不对图的情况；</li>
+<li>物流配送时间长，当物流出现问题时，用户等待收货时间长，容易对商品丧失耐心；</li>
+<li>售后不如实体商铺方便，部分商品需要快递寄回商家进行维修，在某些急用场合容易产生问题。</li>
+</ul>
+<p>由此可见，实体商铺和传统电商在部分维度属于对立面，两者各有优劣，但都无法很好的满足用户想买以低价到最合适商品的需求。</p>
+<h3>2. 商家</h3>
+<p>作为商家，他们想的是在交易过程中获得最大利润，即最低的成本和最高的销售额。</p>
+<p>但随着市场竞争的加剧和消费者被市场教育程度的提高，商家的日子也越过越紧。</p>
+<p>我们来看一下商家是销售渠道有哪些：</p>
+<p>1）实体商铺</p>
+<p>有需求就会有市场，消费者对实体商铺购物有需求，作为商家自然会开实体门店，那么现在市场上实体店铺的困难主要有哪些：</p>
+<ul>
+<li>房租、水电、工资等成本支出：实体商铺必须会有的必要的支出，那么这就意味着如果当月销售利润低与房租、水电、员工工资等必要支出，那么财务上还是处于亏损状态，连获利也无法达到；</li>
+<li>地域限制客户流量：实体商铺的交易过程必须满足消费者在现场这一客观条件，门店位置无法移动，所处环境客流量有限，客户的进店率也大幅降低，无法进行门店店员无法进行销售；</li>
+<li>客户竞价：客户拿线上价格或同行竞品低价商品的价格竞价，导致门店销售压力增大，只能不断压缩利润空间达到获利的目的；</li>
+<li>不可抗拒因素干扰：如今年疫情，今年的新冠疫情导致大量实体商铺倒闭关门；若是碰上其他火灾、洪水等不可抗力导致门店无法营业，则获利遥遥无期。</li>
+</ul>
+<p>2）传统电商销售</p>
+<p>考虑以上因素，尤其是线上线下竞价严重，不少商家开始在线上开店，走上了传统电商的道路，那么传统电商的商家又有怎样的困扰呢：</p>
+<ul>
+<li>获客成本高，由于用户在没接触实物的情况下，无法在短时间内了解商品的品质，传统电商无法短时间内获取客户信任；</li>
+<li>客户粘性低，传统电商对客户而言方便多店铺对比，客户维护成本相对较高；</li>
+<li>初期客户流量获取成本高，新店铺平台分配流量有限，要想获得更高的曝光率和更多的客户流量必须付出更多的金钱成本。</li>
+</ul>
+<p>综上，传统电商确实解决了实体门店被地理位置限制流量和，但也同样失去了实体店的客户信任背书，客户获取和维护成本依然居高不下；为此，商家需要一种集两种渠道优点的新模式进行商业开展。</p>
+<h3>3. 供应商</h3>
+<p>供应商在整条业务链中扮演着货物供应的身份，它的需求是大量且稳定的订单；想要实现这一目的，一是需要其下属经销商有优秀的销售实力，二是工厂需要了解市场需求，生产出用户喜爱的产品。</p>
+<p>供应商的销货渠道有两个，供货商铺或销售平台厂家直供。</p>
+<p>经商铺渠道销货，在一系列中间过程后，要么压缩商品利润，要么提高售价，牺牲部分市场占有率；此方式对有一定实力的厂商可行，但若产品本省利润点低，或工厂规模不大，则商铺销售渠道需多加考虑。</p>
+<p>由此观之，工厂直营店对供货商而言是一大优势选择：</p>
+<ul>
+<li>扩大销售渠道，防止库存堆积；</li>
+<li>防止经销商乱价市场，维护自身品牌价值；</li>
+<li>直接接触消费者，了解市场和客户的第一诉求，为后续的产品优化提供改进意见和方向。</li>
+</ul>
+<h3>4. 平台</h3>
+<p>通过以上分析，我们了解到销售过程的实现更多是实体门店和传统电商两大渠道；而这两大渠道对用户和商家也各有利弊，其优劣势在价格、品质背书、销售服务、口碑获取成本等方面呈两面性。</p>
+<p>那么京喜作为新的社交电商模式的平台，在解决上诉问题上做了哪些努力呢？</p>
+<p>1）社交电商与传统电商有什么不同</p>
+<p>社交电商通过社交网络实现裂变式传播，用户既是购买者也是推广者。</p>
+<p>客户流量是电子商务的销售基础，传统电商流量为倒三角模式，搜索浏览—点击查看—下单购买—复购，层层转化，层层递减；而社交电商则是裂变式增长，一传十，十传百，理想情况下可实现指数型的用户增长。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/z8SRKBvdk5vY8s5SPyE2.jpg" alt="" width="708" height="220" /></p>
+<p>并且传统电商的搜索模式固定了消费者的统一流量入口，在这种模式下网络购物呈现“中心化的特征”；在商品在商品供给极大丰富的情况下，用户趋于羊群效应，几乎都会选择搜索排名靠前并且销售量大的店铺——这么做的结果是产品连锁的马太效应，流量不断向头部商品汇聚，中小长尾商户难有出头之日。</p>
+<p>而社交电商则以社交网络为纽带，商品机遇用户个体进行裂变式传播，每个用户分享的社交节点杜能作为流量入口并产生交易，呈现“去中心化”的结构特点；只要产品性价比够高，很容易形成好的口碑传播，给长尾商户更广阔的发展空间。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/b54zFZvckvyoD8HNlyhr.jpg" alt="" width="784" height="315" /></p>
+<p>社交电商从用户拉新到留存全生命周期进行更高效低成本运营，主要表现如下：</p>
+<ul>
+<li>拉新阶段：社交电商依靠社交裂变、分享好货、拼单购买实现用户增长，相比实体商铺的地域流量限制和传统电商的平台分配流量，此模式兼具了实体商铺的口碑传播优势和传统电商的购物挑选好货的便利性，降低获客成本；</li>
+<li>转化阶段：一方面社交电商依托熟人之间互相信任的关系提高转换率，熟人介绍降低了用户获取商品真实口碑的成本，也降低商铺获取新用户信任的成本，提高商品转换率；另一方面用户大多使用社群这一渠道进行拼单，部分自建社群的商户可以通过社群标签可以对用户做天然的结构划分，实现商铺的精细化运营；</li>
+<li>留存阶段：用户既是购买者，也是推荐者，由于是客户主动推荐的店铺及商铺，在二次营销过程中出现回头客的概率更大，整个营销过程中能实现更大的客户留存率。</li>
+</ul>
+<p>2）京喜的行动</p>
+<p><strong>用户吸引：</strong></p>
+<p>作为社交电商，京喜有天然的优势，并且目标明确——攻打下沉市场。</p>
+<p>在社交玩法模式加成下，京喜又是如何抓住下沉市场用户的心呢？</p>
+<p><strong>低价政策吸引：</strong></p>
+<p>我们之前说过，下沉用户是价格敏感型消费者，为此低价是吸引下沉用户最直接和最有效的手段。</p>
+<p>在供应源头上，京喜的“双百”计划布局产业带，重点打造100个产业带和100个源产地，从供应商层面降低产品成本从而降低平台商品价格。</p>
+<p>从营销模式上，京喜百亿补贴、9.9包邮、1分福利、免费水果、1元抢等营销活动，包含21个品类的产品，满足用户多品类需求。</p>
+<p>值得一体的是京喜购物返现模式，购物返利具体操作为客户下单成功后可以通过社交分享让朋友帮忙返现；此玩法不但能给下单用户切实的金钱返现，并且在返利驱动下用户的主动分享传播意愿提高，为平台及商铺拉新提供新的流量入口。</p>
+<p><strong>品质保障吸引：</strong></p>
+<p>我们已经知道下城市场用户消费理念日均成熟，对于商品，他们更看重产品本身的品质，理性观念突出。</p>
+<p>京喜的slogan正是“低价不低质”——背靠京东品质保障，京东联合行业协会、权威检测认证机构及行业头部品牌；向消费者进行品质科普知识、品质认证标准介绍，更有经过层层筛选的更高品质、更严认证的品质优选商品，为消费者带来具有“京东品质认证”标准的好物。</p>
+<p>去年双11期间，京东安排了千名员工组成“爆款评审团”，展示选品、验品、评审的全过程；通过介入产品源头，解决消费者的品质担忧；此外，京东主站也给京喜提供了丰富、可靠的商品。</p>
+<p><strong>京东物流助力：</strong></p>
+<p>自建物流作为京东一笔弥足珍贵的财富，也为京喜提供了更低成本的包装设计、流转费用和站点管理费用的控制等诸多帮助，而物流一直是电商的短板。</p>
+<p>尽管下城市场用户能接受更长的配送时间，但他们对物流速度这个要素的关注度已经高于一二线城市，物流已经成为下沉市场一大痛点。</p>
+<p>据调查统计，物流速度称为下沉用户网购认为最需要加强的服务。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/0qimM5rbufXzI5T7OnuW.jpg" alt="" width="767" height="284" /></p>
+<p>2019年京东布局“千县万镇24小时达”计划，2020年将升级“千县万镇24小时达”时效提升计划；面向低线城市及重点县镇继续布局物流新基建，创新仓储模式，提升县镇村三级物流触达能力和服务时效，推动城乡物流普惠，再塑中国消费者物流体验。</p>
+<p><strong>商户/供应商吸引：</strong></p>
+<p>商家入驻平台最直接的需求就是卖货，而京喜对商家的支持主要体现在资金、入驻、运营、人力四大方面。</p>
+<p>资金：京喜对所有类目商家免收平台使用费、且扣点低至6%，疫情期间还追加资金加大补贴力度，向健康卫生商品和民生保障商品重点倾斜——对于这四类商家，都重点给予货品补贴。</p>
+<p>入驻：京喜向超过30个类目开放“直播小店”运营模式，通过“0成本、轻运营”，帮助商家快速上手直播卖货；对于想入驻京喜平台商家，京喜设置最快6小时审核的极速入驻绿色通道，提供证件代办服务和免费代办入驻。</p>
+<p>运营：京喜提供千万级流量注入和超60种社交互动玩法；免费开放直播绿色通道，推出无忧主播服务；提供专业运营团队1V1服务及京喜商家独享的京东物流相关服务；以多种模式快速助销。</p>
+<p>尤其讲京喜的直播：京喜的直播称为溯源直播，相比于传统的直播间带货，除了场地区别，在主播方面也有很大差异。</p>
+<p>溯源直播中，主播主要有三种：</p>
+<ul>
+<li>商家，包括农产品种植户、工厂厂长等对原产地货品优势最为熟悉的商家；</li>
+<li>京喜官方主播，也称为溯源主播，京喜会在产业带基地专门设立直播服务中心，溯源主播到基地帮助商家快速开播，同时也会对商家做短期培训课程，诣在对商家做直播的本地化扶持；</li>
+<li>京喜的官方直播间，会邀请京喜内部的运营人员和外部媒体、明星、红人等来做主播。 打造紧贴供应链的直播生态。</li>
+</ul>
+<p>人力：京喜开通政府对接渠道并定期开展线上对接会，针对生鲜果蔬、绿植鲜花、品牌积压型、产业带工厂型、直播小店不同类型的商家设置专属的绿色通道，提供一步找人专属服务。</p>
+<p>值得一提的是，京喜还联动京东数科、京东物流为商家提供金融和物流服务。</p>
+<p>例如：京东数科为京喜商家开通金融服务绿色通道，通过息费减免、延迟还款，帮助商家解决资金周转难题；京东物流对京喜的新增入仓家提供1对1服务，实现48小时急速签约和系统配置，借助京东物流高效的仓储配送能力，让商品不仅能卖得出去，还送得到。</p>
+<h3>5. 总结</h3>
+<p>通过以上分析我们可以发现，京喜作为社交电商满足了用户和商户的总多需求，再加上自身品质和物流网络的加成，京喜可以在如此短时间获得成功不是没有原因的。</p>
+<h2>四、商业价值分析</h2>
+<p>京喜社交电商的本质还是电商，而考核电商的核心指标就是GMV（一定时间内的成交总额），其计算公式为：</p>
+<p style="text-align: center;"><strong>GMV=用户数*转化率*客单价</strong></p>
+<p>从公式可见，GMV与用户数、转化率、客单价三者都有直接的正相关联系，下面我们便从这三方面分析京喜是通过哪些手段提高自身GMV。</p>
+<h3>1. 提升平台用户数</h3>
+<p>用户是电商平台的基石，拉新是贯穿整个产品生命周期的重心，我们将京喜的拉新方式从产品外和产品内两方面分析：</p>
+<p>1）产品外拉新</p>
+<p><strong>京东导流：</strong></p>
+<p>不知道大家是否记得2019年双十一京东最大特点，每次在京东买完一单，订单完成的页面都会有京喜的导流广告，无一例外，都是巨大的提醒您获得了xx元红包的提示。</p>
+<p>借助京东本身的客户池，京喜开始了平台初期的客户池累积，并且这些客户都对京东生态有一定的信任基础，客户质量较高。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/7Op6jeVzoozYJ1hinnv6.jpg" alt="" width="411" height="805" /></p>
+<p><strong>提高广告曝光率：</strong></p>
+<p>为了快速占领市场，京喜进行了多次活动、分别联合政府、电视台、客运系统、大型商城等大型机构与平台展开线上线下联合活动。</p>
+<p><strong>多渠道入口引流：</strong></p>
+<p>“京腾计划”的让京喜获得微信一级入口，如今京喜有着包括小程序、手Q 、M站、APP、粉丝群在内的6大移动端渠道入口；微信这个超级社交巨头为京喜带去了大量的用户流量。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/RpL53l9QV4BRJjOxEsOk.jpg" alt="" width="438" height="546" /></p>
+<p>2）产品内拉新渠道</p>
+<ul>
+<li>购物前裂变；</li>
+<li>用户拉新奖励；</li>
+</ul>
+<p>京喜拉新奖励，每邀请1个京喜新用户下单可获得3元奖励，每月邀新榜首额外奖励666元红包；并且京喜设置1分钱拉新专享产品，老用户可通过邀请新用户拼团下单1分钱购买商品。</p>
+<p><strong>多种玩法进行社交裂变：</strong></p>
+<p>京喜设置如瓜分10万元红包、京喜农场好友助力、任务集市好友助力等多种社交玩法，以红包或优惠券吸引用户主动将平台分享给他人。</p>
+<ul>
+<li>购物中裂变；</li>
+<li>两人成团，快速拼购；</li>
+</ul>
+<p>拼购下单是一种快速且有效的营销模式，利用下沉市场对价格的敏感，主动对商品进行分享传播，从而达到扩大影响力和吸引客户的目的。</p>
+<p><strong>砍价：</strong></p>
+<p>设置“砍至1元”频道，利用用户对价格的敏感和贪便宜的心理，在购物过程中将产品和平台进行分享推广。</p>
+<ul>
+<li>购物后裂变；</li>
+<li>购物返现；</li>
+</ul>
+<p>京喜商品详情页都有购物返现的金额，在不打断用户购买流程的前提现，结束购物的用户可以通过分享商品给他人获得平台购物返利。</p>
+<p>3）总结</p>
+<p>通过以上分析可看出，除了前期的京东导流，京喜获取用户渠道主要是微信一级入口和多种裂变玩法引导用户自传播。</p>
+<h3>2. 提升转化率</h3>
+<p>电商平台最主要的目的是让用户产生交易行为，在吸引大量用户来到平台后，下一步要做的自然是引导下单，使之转化为平台付费用户，如此平台才能产生商业价值。</p>
+<p>京喜在拉新阶段做了那么多的动作，那么在转化阶段又有那些行之有效的方法呢？</p>
+<p>1）新用户激活</p>
+<p>新用户注册成功后，京喜对其有一系列的优惠活动引导下单：新人买一送一、新人专享1元购、新人专享话费减3元、88元新人优惠礼包。</p>
+<p>部分优惠券无门槛使用且覆盖品类多，结合京喜本身低价商品，最终用户实际付款可能就1分钱，对新用户的转化有明显的效果。</p>
+<p>2）商品选购阶段（平台首页）—无明确目标商品时</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/5FakHsTQdw2PyBOXUKtC.jpg" alt="" width="277" height="601" /></p>
+<ul>
+<li>轮播页广告：7份广告不停轮播，品牌优惠、新款上市等信息，在满足“7±2法则”前提下，通过广告给予用户视觉冲击，吸引客户点开广告了解详情；</li>
+<li>优惠频道吸引：设置“9包邮”、“清仓特卖”、“领券中心”“京东秒杀”等有明显带优惠信息标题的频道，吸引客户点开的详情页；</li>
+<li>娱乐频道吸引：免费送礼，设置“免费水果”、“好物0元造”、“全民赚大钱”等带有娱乐性质的频道，用户花费更多的时间和精力完成任务，获得免费商品或优惠券，提高用户活跃度和用户黏性，增大转化效率。其中免费水果活动中，用户需要完成任务获得水滴培育水果种子，果树成熟后免费寄给用户，在水果先尝后买的模式吸引下，对果蔬类商品的转化有明显的提升；</li>
+<li>商品品质保障吸引：设置“厂直优品”、“工厂直供”、“产地直发”等频道，以工厂直供解释商品特价，通过提高用户对商品品质的信任而提高转化率；</li>
+<li>爆款吸引：设置“今日必拼”、“今日推荐（爆款热卖）”层级，利用用户从众心理，吸引其点击的好奇心；其中今日必拼界面通过倒计时、“万人团疯抢”、下单用户头像更新等设置，给浏览用户以紧迫感，加上低价产品，诱导冲动型消费。</li>
+</ul>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/s1DQxf1TLhN9YYDuYdcG.jpg" alt="" width="231" height="502" /></p>
+<p>商品简介设计：商品简介包含下单返利、优惠信息、包邮、2人拼、XX人以拼等不同类型信息，从价格、热度、优惠、口碑评价等多个维度吸引用户点击进入详情页。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/Jx9ZZkBArnSW9vf4LL6i.jpg" alt="" width="316" height="686" /></p>
+<p>3）商品详情页—有具体目标商品</p>
+<p>商品详情页直接影响用户是否下单购买商品，因此，一些“小心机”的设计是必须要有的。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/Hmoe5JRylG8ld5WPtNKE.jpg" alt="" width="433" height="1070" /></p>
+<ul>
+<li>购物返利，价格后面直接标出返利金额，降低用户防御机制，给用户自己占便宜的心理，促使用户下单；</li>
+<li>便捷拼团，2人起拼，底部价格有单独购买和我要开团两种价格，体现团购的划算性；同时平台主动帮助用户拼单，并设置参团倒计时，给用户以紧迫感，让用户觉得此时不买就是损失；</li>
+<li>营造人气、口碑氛围，设计热销榜排名和标出好评度，一方面建立用信任感，另一方面营造出强烈的消费人气氛围。</li>
+</ul>
+<p>3）购物车</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/l7n54nDvunyChHvIn3nz.jpg" alt="" width="471" height="1021" /></p>
+<ul>
+<li>体现价格优惠，降价提醒，购物返现提提醒，展示平台让利性。</li>
+<li>结算直接参团，无需邀请好友拼团，提高购物体验。</li>
+</ul>
+<h3>3. 提高客单价</h3>
+<p>客单价由单次购买金额和购买频次决定，即提高客单价要么让用户单次多花钱，要么多次复购。</p>
+<p>1）提高单次购买金额</p>
+<p>派发满减优惠券，京喜设置专门的“领券中心”频道，商品详情页也有领券界面；满减券通常进行梯度设计，促使用户为了使用更大额的优惠券而凑单。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/0bO1EAtJkfiZ8552rUXX.jpg" alt="" width="261" height="567" /></p>
+<p>智能好物推送，商品详情页，购物车页、“我的”主页等多个页面下方都有设计商品推送，平台通过大数据推测用户可能喜欢的商品并进行推荐，解决用户的潜在需求从而提高客单价。</p>
+<p>2）提高复购率</p>
+<p>京喜省钱卡：京喜推出京东省钱卡，每月花费8元即可获得最高118元的购物优惠，其中包括4张满3.01减3元的优惠券，对用户而言仅需使用一张即可回本；京喜省钱卡带有平台会员特性，优惠券以7天为周期进行发放，能有效提升用户在不同周期的购买频次。<img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/OX2ymqtQf72E7devOQ0t.jpg" alt="" width="393" height="852" /></p>
+<p>优惠推送：平台不定时向用户发送优惠消息，吸引用户了解详情并下单。</p>
+<h3>4. 总结</h3>
+<p>京喜在拉新，转化，复购几个方面都做了大量的努力，和其他平台相比京喜所拥有的微信一级入口和京东打下的品质保障，不难相信，在不久的将来，京喜将创作更大的商业价值。</p>
+<h2>五、产品迭代分析</h2>
+<p>为了深入分析京喜的版本迭代节奏，探究产品迭代逻辑，笔者对京喜从V1.0.0上线到V3.13.0的所有核心版本迭代整理如下：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/rSDVMTwbKaISj0uiG4E1.png" alt="" width="499" height="595" /></p>
+<p>京喜作为京东“下沉之战”的利刃，独立时间并不长，但其有大型电商平台基因，在初期产品功能建设的过程中有天然的优势；京喜退出的主要目的是—占领更大份额的下沉市场。</p>
+<p>根据上述产品迭代路径分析，我们把京喜的发展分为两个阶段：分别是V1.0.0——V1.3.0、V2.0.0——至今，两个阶段各有侧重，下面我们对两个阶段逐一分析。</p>
+<h3>1. V1.0.0&#8211;V1.3.0 产品基础功能完善</h3>
+<p>2019年4月15日，京东拼购上线，意味着京东对社交电商板块的进攻正式浮出水面；京喜的前身来自京东微信手Q业务部，本身具有一定的社交基因，再加上背靠京东这个老东家，在平台基础建设上也有诸多便利。</p>
+<p>所以半年内京喜便搭建好平台基调，其中购物车功能的完善使京喜与拼多多的产品方向走向两条不同的道路；京喜购物车页面与京东购物车联动，也意味着京喜的平台基础设施搭建完成，进入全力运营阶段。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/yPQQjx1Tpz9zpbM2Ed2M.png" alt="" width="448" height="162" /></p>
+<h3>2. V2.0.0&#8211;至今 全力运营阶段</h3>
+<p>2019年10月31日，京喜接入微信一级入口，进入全力运营阶段，京喜的下载量也开始持续上涨；据酷传数据统计，京喜上线至今累积下载量超2.85亿，这份数据不得不让人称赞。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/KynbyKvvkqIUxdctjpa2.jpg" alt="" width="655" height="437" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/vCnM3JhEdBCT1uVlxkAy.jpg" alt="" width="856" height="494" /></p>
+<p>这个阶段是平台的快速成长期，扩充用户数成为第一需求；在这期间借助双十一、双十二、618等多个电商阶段，京喜上线老拉新奖励、1分福利、购物返利等多种营销活动，将分享贯穿至用户的整个购物节点；通过这个优惠活动，促使希望以更低的价格购买商品的用户乐于分享平台。</p>
+<p>有了初步的用户累计后，为了实现用户的转化和留存，京喜多次更新优惠活动——不但有传统营销方式如一元爆款、厂家发券、京喜省钱卡等，更通过“周四京喜日”等打造专属营销活动；同时，平台的登录、搜索、结算版块也进行了优化升级，除账号密码和手机验证登入外，支持京东账户一键登录和微信登录，简化用户登录流程；购物车版块支持结算直接参团，简化用户寻找拼友的流程；通过一系列的购物流程优化，不断提高用户的购物体验。</p>
+<p>京喜的迭代过程也体现了其产业带布局的战略方向——以工厂直供为噱头，以溯源直播为基础，从农产种植户/工厂厂长等对原产地货品优势最为熟悉的商家和官方主播两个方向打造紧贴供应链的直播生态；通过布局产业带，将优质产能以及更有针对性、更实惠的商品对接给下沉市场新消费人群，是京喜的核心定位和独特优势所在。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/PRuXIcLZ5d8KaM1CoeMK.png" alt="" width="494" height="484" /></p>
+<h3>3. 总结</h3>
+<p>尽管京喜上线时间不长，但背靠京东的天然优势使其在基础功能搭建阶段少走了很多弯路。</p>
+<p>京喜上市半年内便完成了包括登录、搜索、加购、结算等基础性功能版块的搭建；后期通过微信这一大“鱼池”和多渠道的流量入口大量吸引用户并进行转化和留存的运营。</p>
+<p>在发展过程中，产品不断迭代，但始终保持自己的运营节奏——供应链布局。</p>
+<p>在竞争激烈的社交电商中抢夺市场，稳固自身地位。</p>
+<h2>六、产品结构分析</h2>
+<p>产品结构又称为产品脉络，如果把产品理解为一棵树，产品的结构就是树木的枝干，他决定这树木的形状和魅力。</p>
+<p>一款好的产品，其产品结构必定是能满足用户在不同场景下的需求；下面我们分析一下京喜的各项功能分别满足了用户的哪些需求，以及他们在APP中是如何分布的。</p>
+<p>以下为京喜V3.13.0产品结构图：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/fTZj8ymcgTkjT0a99xa5.png" alt="" width="976" height="2700" /></p>
+<p>为了便于分析，笔者通过对京喜的产品结构按照用户、场景、需求和功能进行重新梳理得到下面的表格：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/DmOJ3oUN1ED8tAxqV10l.png" alt="" width="682" height="457" /></p>
+<p>京喜移动端的主要使者是用户，所以产品的整体设计需要满足用户的潜在需求；用户在使用产品的过程中，更具其使用场景和浏览的页面进行划分，主要有以下三个场景：</p>
+<ul>
+<li>产品购买前的挑选阶段；</li>
+<li>挑选目标商品的购买中阶段；</li>
+<li>完成交易过程的购买后阶段；</li>
+</ul>
+<p>下面我们将对三个场景进行单独分析，探究京喜的产品设计是如何满足用户在不用场景下的潜在需求。</p>
+<h3>1. 购买前</h3>
+<p>作为一款产品，账号登录时最基本的，京喜用户用户来源大多来自微信渠道入口，而背靠京东也注定京喜和京东的用户有大量的交集；为此京喜优化登录流程，使用户可以使用微信和京东账号一键登录，简化登录流程。</p>
+<p>而我们在之前的分析中说过，电商平台的商业价值在于引导用户消费；那么，用户在购买前浏览平台的场景中，我们可以将其分为有明显消费意愿和没有消费意愿的用户。</p>
+<p><strong>有明显消费意愿的用户：</strong></p>
+<p>此类用户要么是有目标类别，要么就直接有目标商品；针对有目标类别的用户，京喜在首页设计了22项大类商品供用户选择，仅需左右滑动商品类目或直接点击下拉菜单及可进入相关类别的商品页，简化用户操作路径并减少了搜索时间；同时，在底部菜单栏的第二栏，京喜还设计了更为详细的商品分类，满足用户的精细化需求。</p>
+<p>搜索框是有目的性消费者最直接的搜索方式，京喜搜索框始终固定于页面顶层，不会随着下滑页面而消失，点开搜索框底部有最近搜索和热门搜索两个功能模块；最近搜索可记录用户的搜索痕迹，便于用户搜索同一商品。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/2TKu3wet8pNeIfRjhSsB.jpg" alt="" width="565" height="586" /></p>
+<p>购物通常是一个理性的过程，很多用户购买商品通常会多次挑选比价，选出自己最心仪的商品进行下单。</p>
+<p>在没有加购的情况下，为帮助用户快速定位浏览过的商品或类别，搜索框的记忆功能会显示最近搜索情况；而我的——我的足迹也也回帮用户记忆浏览痕迹，帮助用户快速下单。</p>
+<p><strong>无明显消费意愿的用户：</strong></p>
+<p>鉴于京喜的使用者多是价格敏感型的下沉用户——首页轮播图通过大面积图片优惠信吸引用户眼球，告知用户最新促销活动；9.9包邮、1分福利、清仓特卖造等带有明显优惠性质的频道，醒目的摆在了首页的二级页面；先从价格层面吸引用户，在频道栏右划的过程中，厂直优品、工厂直供等频道突出产品品质。</p>
+<p>在低价和优质双重吸引下，降低用户的防备心理，提高其购买欲望；全部频道栏的免费水果、好物0元造、全民赚大钱等娱乐性质的活动通过“免费”、“0元”等极具诱惑力的文案吸引用户完成相关任务，提高用户的活跃性和黏性。</p>
+<p>对那些在平台闲逛的用户，他们想知道其他人买了什么，搜索框中的热门搜索推荐和首页的今日必拼、今日推荐则满足了用户的好奇心。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/y3ITsobHnDIn5W7r0BUa.jpg" alt="" width="388" height="840" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/Ab4U5XhYnrx9vpxphjsi.jpg" alt="" width="390" height="290" /></p>
+<h3>2. 用户挑选目标商品的购买中阶段</h3>
+<p>用户在挑选心仪商品时，往往希望了解更多的信息，包括商品品质、实物款式、使用口碑等信息；详情页中评价体系和品类排行榜设计满足了用户对该产品人气及口碑的好奇，客服咨询则可以解答用户对物流配送、还有没有货、售后等非商品属性的信息。</p>
+<p>直播是京喜一大特色——当浏览的商品有相关直播时，页面自动出现直播小窗口，方便用户和商户直接询问，了解商品更多信息；而京喜为了发展其直播生态的产业链，将底部菜单栏中间C位设计为直播频道；直播的设计可满足用户对商品的好奇并提高用户活跃度和黏性，商家、工厂厂长、农产品种植户口中听到的介绍能更清楚的了解商品的特性，打消他们对商品品质的顾虑。</p>
+<p>货比三家是每一个用户在购物时都会做的事，当用户在商品详情页滑至底部时，意味着该商品可能并非用户最满意的那个；为此京喜在详情页下方提供好物推荐版块，根据大数据和用户行为分析，为其推荐与当前浏览商品属性相同或相近的好物，解决了用户希望多方比货的潜在需求。</p>
+<p>当用户需要一次购买多件商品时，一个个付款显得太繁琐，购物车模块便很好的满足了这一需求，京喜购物车可查看全部加购商品并统一付款；若用户不想此刻为商品买单，右上角的编辑商品功能可以实现删除商品和移至收藏，满足用户在不同时期对商品的操作需求。</p>
+<p>下沉用户最关心的商品属性就是价格，京喜将团购价、券后价、购物最高可返金额、可领优惠券种类全部放在一起，满足了交互设计原则中的接近法则，即人体大脑会将接近的物体组合在一起。</p>
+<p>而较大的字体和具有强反差的红白配色突出价格版块，刺激用户眼球，体现商品的优惠性；对于不想进行社交分享有希望享受团购价的用户，京喜主动帮助用户拼团，两人成团的字眼加还差1人成团以及底部倒计时的提醒，京喜的意图已经很明显了，吸引并刺激用户下单，而用户也愿意接受这种吸引。这是一个双赢的设计。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/QTw2SCTuerARM6mwWJsQ.jpg" alt="" width="279" height="340" /></p>
+<h3>3. 完成交易过程的购买后阶段</h3>
+<p>完成交易过程后，最高近20%的返利金是价格敏感性用户的又一机会；对于想寻求最低价的用户而言，他们乐意进行二次分享以获得额外的购物优惠。</p>
+<p>线上购物对比线下的一个弱势就是物流配送时间，用户在等待快递时候往往是期待并且焦虑，我的-待收货模块设计可清楚解决用户对商品物流信息的掌控欲；快递有没有发货、到哪个城市了，还有多久能到，这些信息都能一一呈现。</p>
+<p>快递到货后，用户有任何问题都可在客户服务和售后模板进行相关咨询和操作，询问商品的使用方法或退换货；及时减少订单纠纷，降低用户的潜在负面情绪，商品评价功能则很好的满足了用户的表达需求。</p>
+<p>当用户对同一商品有再次购买的需求，订单-再次购买可一建跳转至商品详情页，简化用户再次搜索的商品的流程。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/QhK0npgUwx3LXde8NgyW.png" alt="" width="254" height="154" /></p>
+<h3>4. 总结</h3>
+<p>通过以上分析可以得出结论，京喜的功能设计基本满足了用户在购买前、购买中和购买后的不同场景需求；对价格、优惠等高频需求在产品结构上重点突出，多个场景下优化操作流程，给用户以舒适的人性化体验。</p>
+<h2>七、运营路径分析</h2>
+<p>京喜前身来自京东手Q业务部，而业务负责人来自腾讯ECC团队。</p>
+<p>这意味着京喜在运营层次和京东主站走的两条路线，也就是我们一直谈的拼购和下沉市场；京喜上线时间较短，客户群体也相对年轻，所以京喜的运营路径相比其他产品常见的冠名综艺或跨界合作；京喜走的是更“实在”运营路线。</p>
+<p>京喜的运营方向主要是以下两个路径：</p>
+<h3>1. 平台活动促消费</h3>
+<p>京喜是2019年双十一被京东重磅推出，在百亿补贴千亿优惠的噱头下不断吸引用户；而后京喜也是补贴不断，“超级百亿补贴”、“万店狂欢”、“京喜省钱卡”等平台活动持续不断，籍此维持平台热度和用户粘性。</p>
+<h3>2. 产业带布局助销售</h3>
+<p>京喜在成立之初就明确以产业带为战略落点，在全国范围内布局产业带并建立与下沉新兴市场匹配的供应链。</p>
+<p>为打造供需最短链，京喜于2月11日上线“京喜助农”会场，助销80.6万吨产源带果蔬；后陆续布局澄海玩具产业带、南安家装产业带、庆安大米产业带、汕头美妆个护产业带等。</p>
+<p>据了解，截至目前京喜产业带覆盖已经超过180个；京喜方面表示，今年京喜还将持续大力赋能商家自播能力，预计培养1万个厂家主播。</p>
+<h3>3. 总结</h3>
+<p>在“产业带+下沉新兴市场用户”双端并进的策略推动下，京喜有70%的用户来自3-6线城市，这些用户带来了近6成的订单量；京喜平台有超1000个商家销售额破千万，累计售出80万吨农产品、60亿件工厂产品。由此可见，京喜跟接地气的运营方向更适合下沉市场的特点，而京喜也是抓住了这一明确的方向前行。</p>
+<h2>八、SWOT分析</h2>
+<p>综合以上信息，现以SWOT模型对京喜进行分析：</p>
+<h2><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/ulyu5f8IjjzoFjDOCSRa.jpg" alt="" width="746" height="451" />九、总结</h2>
+<p>通过对社交电商以及对京喜的整体分析，我们可以得出以下几个结论：</p>
+<p>传统电商人之中年，在政策、经济、社会、技术等因素的共同推动下社交电商已经站上风口并展示出其增强潜力，在未来的几年中，社交电商还有极大的上升空间。</p>
+<p>在社交电商中，京喜并非一家独大，尤其是拼购类社交电商领域，拼多多是目前公认的老大；但京喜背靠微信和京东两大流量池，又有京东布局多年的物流生态加成；在社交属性、品质保障和物流配送三方面占优的京喜未来一定能多得更大的市场份额。</p>
+<p>在社交电商市场中，主要有四个参与方：用户、商家、供应商、平台；平台想要获得更大的发展必须同时满足用户、商家、供应商三方的不同需求，平衡其中利益。</p>
+<p>社交电商自带拉新和留存的优势，但为了实现更大的商业价值，创造更大的GMV；扩大用户数、提高转化率、提升客单价必须三管齐下。</p>
+<p>充分微信一级入口获取用户，加之产业带的布局以提高产品品质；通过溯源直播提高转化率，发展专属营销活动辅以优惠券、省钱卡等福利提高客单价，刺激消费转化。</p>
+<p>于产品迭代方面，京喜上线时间不长，但基于传统电商的基因也产品在短时间内将电商平台基础功能搭建完成；目前产品扔处于快速上升期，此阶段产品通过多样化的拉新活动和优惠补贴进行用户的拉新和留存转化；近期迭代以溯源直播为主，直播生态的建设推动京喜产业带布局——京喜的发展未来可期。</p>
+<p>京喜的使用者基本是消费者，所以其功能设计都市围绕消费者在购买前、购买中、购买后等不同场景下的需求而进行。</p>
+<p>经过实际体验，京喜确实能满足消费者的绝大部分需求，并且在部分场景下进行流程优化从而提高用户体验；相信这也是京喜未来产品结构布局的主要方向，毕竟好的用户体验才是一个产品的生命力。</p>
+<p>京喜的运营方向是对用户的优惠促销和对自生的产业带布局形成完整的消费生态，对下沉市场而言，这种实实在在的运营和优惠才是最有效的。</p>
+<p>以上是本人以熟悉行业为目的动作的产品分析报告，鉴于自己对行业和平台了解有限，其中分析不到位之处还请各位大佬批评指正！</p>
+<p>&nbsp;</p>
+<p>本文由 @红笺小字 原创发布于人人都是产品经理，未经作者许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
+➜大火的“密室”竟是短命产业，它的安全出口在哪？
+http://www.woshipm.com/it/4239688.html	23180
+<blockquote><p>编辑导语：密室逃脱类前几年在国内兴起，是一种真人密室逃脱体验的游戏，因类型独特，游戏体验度和参与度高，获得了很多年轻人的喜爱；但此产业的更新迭代较快，不能做到长期生存；本文作者分析了密室逃脱产业的现状和发展，我们一起来看一下。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4239880" src="http://image.woshipm.com/wp-files/2020/11/wpcGtr9PYKDpR4Iyjebb.jpg" alt="" width="900" height="420" /></p>
+<p>21世纪的年轻人越来越“猎奇”了。</p>
+<p>忽明忽暗的灯光，不寒而栗的音乐；惊险烧脑的剧情，层层相扣的关卡；一波一波地刺激着玩家的心跳与肾上腺素的分泌。</p>
+<p>而正是这种猎奇、探秘、逃生类的线下娱乐游戏项目——“密室逃脱”，正在年轻群体中悄然流行。</p>
+<p>然而这种新兴的娱乐项目真这么火吗？有这么赚钱吗？是创业者的好去处吗？</p>
+<h2>一、新致富秘籍——“密室跳脱”</h2>
+<p>原以为密室逃脱还仅算是一种小众娱乐项目，但没想到，在B站上，搜索“密室逃脱”关键词，相关视频每条播放量都达上万的播放量；且在知乎、贴吧等各大论坛类网站上，搜索热度也不少，每个话题也有着上万次的浏览量、讨论热度也非常高。</p>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4239817" src="http://image.woshipm.com/wp-files/2020/10/xjS5XpaVuqr7DiO16C1Z.jpg" alt="" width="640" height="470" /></p>
+<p>据了解，真人密室逃脱源自于网络解密逃生类游戏，但由于其娱乐价值远超于网络版逃脱游戏，且更易被消费者青睐，很快地在想要紧抓消费市场的创业者中流行起来。</p>
+<p>企查查数据显示，我国目前共有1868家密室相关企业，其中西安以131家企业成为数量最多的城市，2019年企业注册量达到598家，同比上升130%。</p>
+<h2>二、但是，密室逃脱真的赚钱吗？</h2>
+<p>不同密室逃脱主题单价不同，但客单价大致约为150元，消费者年龄段为15-35岁的年轻群体；一次主题体验时间半小时至两小时之间，但因为恐怖、惊悚或者悬疑的体验感致使许多玩家入场没几分钟就退出；扣去主题成本费及场地、人员费等，商家收取的利润不算低。</p>
+<p>对于创业者而说，这类娱乐项目的进入门槛较低且利润可观，又紧贴消费市场等特点，很快成为他们创业的驱动力。</p>
+<p>真人密室逃脱“游戏联盟”在今年已完成了4000万元的A轮融资，融资后估值达数亿元，且在去年其用户增长率超过30%，营收达到2亿元。</p>
+<p>那么，为什么密室这类娱乐项目现在火了呢？</p>
+<h2>三、沉浸式体验“引燃”密室</h2>
+<p>随着KTV、逛街等传统娱乐项目不能满足人们的猎奇需求，密室逃脱这类线下娱乐项目凭实景逼真、参与感强及体验内容丰富等特点逐渐在学生及白领之间悄然流行，目前这类游戏正成为时下最受年轻人喜欢的休闲类游戏之一。</p>
+<p>笔者有一位朋友就是这类游戏的忠实爱好者，当初他就特别喜欢恐怖、逃生版类的解密游戏；目前他居住城市的密室逃脱门店主题几乎被他玩遍，每店家有新主题上线他都会即刻动身去体验。</p>
+<p>其实，<strong>大部分年轻人喜欢密室逃脱这类娱乐项目，大多是喜欢上那种紧张神秘、刺激烧脑的沉浸式体验感；</strong>这种沉浸式体验不单可以缓解工作与生活上的不顺意或压力，另一方面还可拓展自身社交圈，交到许多志向相投且十分有趣的朋友。</p>
+<p>从娱乐价值上去分析，密室逃脱算是一种新颖的沉浸式体验消费项目，可以为玩家提供新颖刺激、好奇解谜、沟通合作等多种心理需求；让玩家在枯燥无味或压力爆棚的生活与工作上，感受一番肾上激素与心跳狂飙的放肆体验。</p>
+<p>Z世代下的年轻人喜欢新奇、刺激的沉浸式体验感；因而<strong>在新消费时代下，中国迎来了体验式经济的新时代，沉浸式体验也“引燃”了密室这个线下娱乐游戏产业。</strong></p>
+<p><strong>另一方面，密室游戏的火爆也离不开综艺明星效应与游戏IP的效应；</strong>随着这类沉浸式娱乐项目成为了文娱行业转型的突破口，越来越多密室主题与火爆游戏或者影视、综艺IP结合，为偶像经济蓄力，这也就吸引大批年轻群体的加入。</p>
+<p>在2019年《密室大逃脱第一季》的播出后，密室相关企业注册量迅勐拉升。</p>
+<p>据企查查数据显示，2018年注册量仅有260家，2019年同比上升130%，达到598家；尽管有疫情影响，但2020年上半年，密室相关企业注册量也达到了183家。</p>
+<h2>四、密室竟逃脱不了“短命”结局？</h2>
+<p>就是这样一个大火、新颖的体验式消费产业，却是一个周期短的产业？</p>
+<p><strong>首先，密室的顾客粘性不足，玩家的复购率低，并且游戏危险程度也较高，造成的踩踏事故及心理创伤事故也频有发生。</strong></p>
+<p>据企查查数据显示，近五年来，密室相关风险信息数量逐年增长，2019年相关风险信息数量已经达到214件，较2018年同比上升了30%。</p>
+<p>而密室主题中大多数的密码锁与机关密室周期短，不能重复使用等特点导致顾客在消费一次之后很难进行二次消费或者多次消费；类比电影院，其就像一个更新频次放缓的院线生意，无法避免复购率低的问题。</p>
+<p>此外，密室主题馆价格越高，沉浸式体验感越强、场景越逼真等这也不利于玩家留存率的发展。</p>
+<p><strong>其次，密室的成本较高、场景布置费用又高，密室主题又不可能长期更换存在生命周期等特点，决定着店家很难逃脱转型或关门的命运。</strong></p>
+<p>每个密室主题生命周期都较短，只有一到两年；但当本地大部分消费者玩过后，就意味着店家需要重新购买主题或者重做，而这笔主题版权费用及重做费用价又太高，导致许多资金链不强的店主经过一两年的经营就会考虑转型或者关门。</p>
+<p>另一方面，这也暴露出店家为了控制成本、蹭网络游戏IP的高流量而造成侵权问题；知名网络游戏、影视动漫或流量IP作为密室主题的主要设置灵感来源，许多店家为更好宣传或吸引客流目的，就会改造或悄悄利用未买版权的IP主题。</p>
+<p><strong>最后，商业模式上的缺陷，加上行业进入壁垒不高且缺乏竞争标准，加速赛竞争的激烈与乱象，不利于产业稳固良性发展。</strong></p>
+<p>密室最核心的问题在于规模效应很弱，其场地一般又设立在地下室等资源稀缺地段，导致商业扩展受限，规模复制性存疑；而在行业竞争日益激烈的背景下，店家们又缺乏知识产权保护的手段，导致许多优秀机关及剧情被抄袭或复制，行业乱象频发。</p>
+<p>在这条赛道下，店家们如何发掘自身特有竞争力以保持品牌价值，是密室这个行业经营者亟需解决的问题。</p>
+<h2>五、VR密室是一个好出口吗？</h2>
+<p>对于2012年发展至今的密室逃脱来讲，其还处于一个起步或中间过渡阶段；而搁在还未体验过这种线下娱乐游戏的玩家而言，他可能还会认为密室是个新娱乐方式；但现在<strong>它已经沦为了旧玩法，现今更为流行的新玩法是VR沉浸式密室逃脱。</strong></p>
+<p>据《沉浸式技术与产业发展的整体现状与未来趋势》显示，国家文化科技创新服务联盟秘书长刘兵将国内沉浸式技术与产业的发展分为三个阶段：2005-2011年为前探索时期、2011-2015年为萌芽起步期、2015-2019年为快速成长期。</p>
+<p>况且在10月24日于南京举办的第二届中国沉浸产业发展论坛上，<strong>沉浸式体验下一个趋势就是“虚实结合”，因此传统密室未来趋势很可能在VR沉浸式密室逃脱。</strong></p>
+<p>这种以VR技术赋能传统线下娱乐产业，提升用户体验的新玩法，是可以来解决传统线下密室商业变现问题及发展瓶颈的。</p>
+<p>密室新玩法集中于to B的业务发展，以先建立标准化渠道分发系统，再通过加盟扩张方式更加专注于研发商与发行商的角色，推动更多上游内容开发商及高流量IP参与到内容体系的构建中。</p>
+<p>因此，有着这些发展潜力的VR沉浸式密室逃脱不难解决传统密室标准化缺失问题，还可解决主题周期短的问题等；故而，玩家复购率或也能大幅提升。</p>
+<p>另外，VR沉浸式密室逃脱所需的场景、场地配置不高，其需要的是更为专业的VR技术——这一方面又可解决传统密室逃脱的场景限制及场地单一或规模问题。</p>
+<p>最后，<strong>密室本质是一个重资产的行业，它的发展不可避免遇到瓶颈与束缚，商业模式有缺陷也很正常，但其前景依旧不错，仍存在很大的投资价值以及盈利空间。</strong></p>
+<p>首先，该行业行业发展时间较短，竞争对手相对较少；其次，密室大多开在一二线城市，而优质的密室占比还不足仅达20%，玩家需求大未满足下发展空间巨大；最后，密室作为实景游戏，需要的创意及想象力十分丰富，除了融合了桌游、真人APC，还结合了发展潜力巨大的VR技术。</p>
+<p>总结而言，<strong>密室作为一个起步阶段的产业，路上可能会遇上各种发展瓶颈，但整个行业发展前景依旧可观的，对于创业者来说才有更大的发展机会。</strong></p>
+<p>&nbsp;</p>
+<p>作者：叶小安</p>
+<p>本文由 @松果财经 原创发布于人人都是产品经理，未经作者许可，禁止转载</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
+➜内卷的教育行业，外扩的营销态势
+http://www.woshipm.com/marketing/4241208.html	23209
+<blockquote><p>编辑导读：今年是在线教育行业蓬勃发展的一年，但是不断燃烧的营销经费让人们看到教育行业的困境。有业内人士表示，这是标志着在线教育的内卷时代到来。不少在线教育企业为了破局，纷纷开始降低运营成本，提升效率。本文将从四个方面进行分析，与你分享。</p></blockquote>
+<p><img data-action="zoom" class="size-full wp-image-4241620 aligncenter" src="http://image.woshipm.com/wp-files/2020/11/tDp0Is9nXgo5PyGjas3l.jpg" alt="" width="900" height="420" /></p>
+<p>2020年在线教育的转化率（低价课转正价课比例）夏转秋平均在15%-30% ，结合在线教育前期巨额的营销投入来看，后期的转化率和留存率水平偏低，导致亏损成为行业常态。有业内人士称，在线教育的内卷时代来了。</p>
+<p>《财报看公司》曾表示，在线教育的破局之路只有两个：一是在现有商业模式上，提升运营效率，降低成本；二是寻找新的商业模式。目前看来，大多数公司都选择了以第一条路为主，第二条路为辅的方式。</p>
+<p>为了提升效率、降低成本，首当其冲就是营销效率。笔者对比研究了多份各研究机构和媒体平台的教育行业最新营销报告，发现了以下四点营销洞察，并做了简要分析，供相关朋友参考。</p>
+<h2>一、营销战略地位更重，只为降本增效</h2>
+<p>根据巨量算数与创业邦研究中心联合制作的《2020教育行业生存实录》调查结果显示，营销板块已经位居企业对外战略项目的权重之首，从 2020往后展望，教育企业提高营销预算的意愿明显更强了。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/5qGooW7HrHmiye3MpNEl.png" width="496" height="248" /></p>
+<p>营销成为一众教育企业正在重点布局的方向。如图，共计64.8% 的受访企业将 “品牌营销与获客” 的重要性放在“最重要” 和 “很重要”，相较于其他对外战略版图规划，营销推广占据最高权重。</p>
+<p>此外，教育企业年营销预算的变化也反映出营销推广仍将是一场不可避免的“硬碰硬”。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/Y5cd08bda4c8IoX5FNEH.png" width="507" height="280" /></p>
+<p>43%的受访企业表示，营销预算会继续提升，而其中约有40%表示预算提升是为了开拓增量市场，30% 表示预算会继续从产品端向营销端倾斜，30% 表示投入更多预算对现有营销解决方案进行升级。</p>
+<p>而表示降低营销预算的企业占比约30%，主要手段是剔除无效的营销解决方案，以降低营销成本。从根本上来说，教育企业营销预算增减变化，均为实现营销解决方案的降本增效。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/OeYxe4nakdLvvQkBnnSK.png" width="502" height="250" /></p>
+<p>进一步细分，从不同赛道来看对营销战略的重视程度，“K12教育” 是最为重视营销投入的赛道，而 “低幼教育” 是相对在营销环节投入最少的赛道。</p>
+<p>这可能和不同赛道的发展成熟度呈正相关，K12是相较于其他赛道最为成熟、竞争也最为饱和的一支，其营销竞争也最为激烈。由此可见，尚未完全成熟的赛道，如低幼教育领域，可以参考K12赛道的营销演变路径，提前做好残酷竞争的准备。</p>
+<p>且不同赛道营销预算的变化也存在各自的特点：</p>
+<ol>
+<li>职业和语言教育赛道倾向于增加营销推广预算。其目的一是抢占更多市场份额，二是用于新型营销解决方案的更迭。这和该赛道的消费人群需求特征强相关——复杂、多样、变化快。</li>
+<li>兴趣教育赛道在营销预算投入相对较为稳定，因为市场还远没有达到饱和，需求在进一步挖掘的阶段。</li>
+<li>K12教育赛道大体上有较为稳定的营销推广预算。其中50% 表示会想办法降低营销预算，因为行业地位较稳定，希望通过削减已有无效方案来降低成本。相较于前期的烧钱大战，大部分企业表现得更为理性，着力于剔除那些无效的营销方案形成的累赘，进一步针对目标人群的触达、转化做出提升。</li>
+</ol>
+<h2>二、流量依旧是决策最重因素，预算流向短视频高地</h2>
+<p>今年，教育行业营销决策呈现出一个重要的变化，即向短视频和社交广告平台全面倾斜。公开资料显示，短视频和社交广告在广告投放市场份额逐年上升，而搜索引擎、传统资讯平台的广告份额被不断挤压，逐年递减。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/yPu05f65zKhpwwmlIjAF.png" width="404" height="237" /></p>
+<p>信息时代让教学终端和场景呈现出更加碎片化的趋势，由此衍生出了一种独具创新型的营销模式——短视频和直播带“课”。</p>
+<p>这个现象是由推广决策的逻辑导致的——用户流量始终是推广决策中最重要的评估因素。超过70%的教育企业主表示：在选择营销平台时，最关注的是流量，其次才是用户匹配度、投放成本等。</p>
+<p>这也是短视频平台会成为教育行业心头好的原因，短视频形式正值壮年，是目前国内最重要的流量高地。因此，头部在线教育企业都会在短视频和社交广告平台排兵布阵，在激烈的争夺下，宁愿付出高昂的创作成本，也要先确保在高地上插一面旗帜。</p>
+<p>以抖音、快手为代表的短视频端口迅速崛起，为教育企业触达用户提供了重要渠道，大量的内容和广告充斥着这些平台，带来的必将是成本的增加和效果的削减。</p>
+<p>这就给营销内容的质量带来了极大考验。营销内容的制作需要从不同平台的流量特征出发，把握住高潜人群的喜好，用贴合匹配的内容提升在流量高地的竞争力。</p>
+<p><strong>【案例】跟谁学品牌矩阵，内容细分，满足不同受众需求</strong></p>
+<p>跟谁学在快手的品牌账号呈矩阵式分布。账号涵盖科目广，细分类型多，重点以英语和语文科目相关教学分享为主，内容包括趣味英语学习、英语笔记分享、语文作文积累，文言文学习等。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/qVkgXv1dMyltfsHJKijZ.png" width="508" height="561" /></p>
+<p>内容形式方面，主要以短视频教学分享片段为主，辅以长图形式的知识点罗列，此外在长假期间，以视频直播课的形式开通提分训练营，提分内容包括语文、数学、英语、物理四科，学员可通过品牌账号直接下单购买。</p>
+<h2>三、新模式不断，始终落在更精细转化</h2>
+<p>教育营销新模式从短视频、直播，到教育类IP 的打造，看似重构了传统营销场景，其本质还是通过不同的场景、不同的表现形式，最终落在私域流量的运营上。</p>
+<p>今年上半年，教育类达人直播的确掀起了一股不小的热潮，数据显示，2020上半年抖音教育达人直播时长的月复合增长率在半年内翻了四倍。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/gWeDZMa5koDDzMKyaLlt.png" width="508" height="306" /></p>
+<p>教育行业的极强内容属性，使得干货类素材占比最高。最受到欢迎的专家达人直播带课，也是赢在专业背书上。可见，教育营销的内容抓手本质还是专业性，从而获得用户的信任感。</p>
+<p>顺着以信任为基础的获客吸引路径，私域流量自然成为了获客后最重要的沉淀路径。调研显示，占比92%的教育企业已经或正在短视频平台入驻自营账号矩阵，通过直播间名人带课来转化这批流量粉丝。许多头部在线教育机构已经在私域运营上取得了不错的战绩。</p>
+<p>例如，火花思维在2020年5月高频推出了系列直播间带课，每一场直播都会邀请明星、垂直大V 参与，探讨育儿及学习心得，顺便带货价值千元的课程包，平均一场直播带课可以收获上千万的销售额。</p>
+<p>同时，更垂直、专业的IP发展趋势，也迫使企业在做流量运营时，需要更精细化 。例如，教育行业带货主播随着赛道等属性不断趋于细分，职业教育用户偏好学生一族的本色主播、K12教育用户偏好资深教师、语言学习用户追捧明星艺人。这样的细分倒逼着教育行业在营销内容上的生产、管理、承接都需要更加精细化，不同群体要设置不同的转化流程。</p>
+<p><strong>【案例】某中小学网校模式，通过路径改造和线索追踪，提升转化率</strong></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/oxntGmecEHQZFLUdXNId.png" width="495" height="687" /></p>
+<p>将原来的表单收集路径修改为在线购课路径，通过付费筛选前置，提升转化率。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/Ud4grMhrBtv7VA8qVB4b.png" width="506" height="256" /></p>
+<p>其逻辑是依托【低价课引流转正价课】的链路，如图，采用【电商+低价课+实物】模式， 成功将正课转化率提升150%。</p>
+<h2>四、更加看重品牌，促进转化正当时</h2>
+<p>在过去几年我们对教育行业的认知中，获客是不太求品牌的，即在营销层面，教育企业常将效果和品牌割裂开来，且更偏重于效果。品牌广告和效果的衔接不紧密，造成大量潜在线索的流失。</p>
+<p>今年，教育类广告主尤其意识到，无论是短视频、直播、私域流量运营，“品牌”都对最终的触达和转化起到关键作用。为了让效果广告能有一个正向提升，品牌广告的投入成为了大势所趋。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/szYaJn6YlqMp9qs2SNzX.png" width="407" height="290" /></p>
+<p>2020年上半年中，45% 教育类企业营销活动的开展目的是为形象宣传， 而以活动宣传和产品宣传为主要目的的营销活动开展占比次之，相较于加强销售转化，树立品牌形象成为教育类广告主更为迫切关注的营销目的之一。今年的5-6月，教育品牌主在综艺赞助渠道涌现了一个小浪潮——教育品牌对综艺的赞助数量从19年同期的4个增长至10个。</p>
+<p><strong>【案例】作业帮以“重而深”的策略突出品牌形象、渗透给受众</strong></p>
+<p>作业帮今年的大手笔品牌形象策略，主要包括品牌代言人、综艺赞助、梯媒广告。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/ITv5CdVwI5GU90NPvDU9.png" width="588" height="302" /></p>
+<p>品牌代言人：通过与中国女子排球队达成代言合作，树立高质量可信赖的品牌形象。综艺赞助：通过赞助多档具有强用户基础的综艺节目，迅速提高品牌知名度和覆盖度。梯媒广告：通过投放具有“强触达”特征的电梯媒体广告，从线下覆盖更多人群，强化受众记忆。</p>
+<p>危与机，相辅相成，上线下激烈角逐的同时，各场景之间也在抢占流量滩地。2020年接近尾声，兼具抗周期及强刚需属性的教育市场迎来了的是危机与机遇的并存，伴随着愈发碎片化信息时代的到来，教育的营销之路也进一步向数字化迁移。</p>
+<p>竞争依旧处在白热阶段，消费者高度分散的注意力是营销降本增效面临的最大挑战，流量在教育领域也将是一场持久战——唯有增强自身的营销能力、提升在不同触点的承接转化能力，才能打好一场硬仗。</p>
+<p><strong>参考：</strong></p>
+<p>1.《2020中国教育行业生存实录：育见未来，全局提效》 创业邦&amp;巨量算法，2020</p>
+<p>2.《快手平台在线教育行业研究报告》快手，2020</p>
+<p>3.《2020年H1教育行业篇：广告主营销策略洞察系列报告》艾瑞咨询</p>
+<p>4. 《在线教育营销模式分析：企业如何做好获客、转化与留存？》广证恒生证券研究所，2020</p>
+<p>5.《2019教培行业获客策略白皮书》致趣百川，2019</p>
+<p>&nbsp;</p>
+<p>作者：Agnes；微信公众号：灵蹊营销笔记</p>
+<p>本文由 @Agnes 原创发布于人人都是产品经理，未经作者许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议</p>
+➜Shopee虾皮产品分析报告
+http://www.woshipm.com/evaluating/4236582.html	23785
+<blockquote><p>导读：随着互联网时代的到来，新兴的网上购物模式对人们来说不再陌生，并逐渐融入大众生活。靠电商事业发展起来的阿里巴巴把电商红利推了市场关注的焦点，越来越多不同类型的电商事业发展起来，纷纷抢占市场。Shopee是一家面向东南亚的跨境电商，是什么因素让他决定这样的发展战略？又是什么因素，让Shopee成立不久便成为了在东南亚市场的电商龙头之一？本文将对此做详细分析。</p></blockquote>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/r8xO7fy91p0j7q8Aw16I.jpg" alt="" width="900" height="420" /></p>
+<h2>一、行业分析</h2>
+<p>跨境电子商务是指分属不同关境的交易主体，通过电子商务平台达成交易、进行支付结算，并通过国际物流送达商品、完成交易的一种国际商业活动。</p>
+<p>近年来随着经济全球化的发展和信息技术的突飞勐进，中国跨境电商交易规模持续快速增长，其年均增长速度均超过30%。这增速背后离不开各种因素的影响和制约，下面我们采用 PEST 分析模型来深入探讨外部宏观因素对跨境电商带来的积极影响。</p>
+<h3>1.1 政策(Politics)层面</h3>
+<p><strong>1.1.1 中国跨境电子商务综合试验区的设立</strong></p>
+<p>中国跨境电子商务综合试验区是中国设立的跨境电子商务综合性质的先行先试的城市区域，从2015年3月7日国务院在杭州设立了首个试验区到今年4月共发布同意在石家庄等105个城市设立跨境电子商务综合试验区的批复。</p>
+<p>商务部、海关总署、税务总局等部门出台了一系列支持此试验区发展的政策措施，最具含金量的主要有三个方面，如表1所示，标志着跨境电商上升为国家战略地位。<br />
+<img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/0TzRKP9lH30Eougplmwn.png" alt="" width="900" height="508" /></p>
+<p style="text-align: center;">表1 优惠政策及其含金量</p>
+<p><strong>1.1.2 “一带一路”政策方针</strong></p>
+<p>2015年3月28日，国家发展改革委、外交部、商务部联合发布了《推动共建丝绸之路经济带和21世纪海上丝绸之路的愿景与行动》。</p>
+<p>其基本内涵在于紧密结合经济全球化和区域经济一体化深入发展的新形式，更好统筹国内国际两个大局，更好统筹国内发展和对外发展，有序推进海陆统筹、东西方商品资源物流大通道建设，积极推动与沿线国家和地区开展投资协定和自由贸易协定谈判，从而促进区域贸易自由化和投资便利化。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/nN9K8shEAEMqgyCLFCtb.png" alt="" width="900" height="1024" /></p>
+<p>在此理念的倡议下，全国跨境电商零售进出口总额由2015年的360亿元增长到2019年的1862.1亿元，年复合增速约56%，“一带一路”沿线国家正成为中国越来越重要的贸易伙伴。</p>
+<p><strong>1.1.3 中国—东盟建立自由贸易区</strong></p>
+<p>中国—东盟自由贸易区的建设促使货物贸易自由化，通过降税模式的确定、原产地规则的确定和非关税措施的采用，有效消除贸易障碍，简化通关手续，免除检测和测试的重复等，促进货物贸易自由化。</p>
+<p>随着自贸区红利的释放，2020年7月14日，中国海关总署公布的2020年1～6月贸易统计数据显示，在与所有国家和地区的贸易额当中，与东盟的贸易额首次升至第一为2978亿美元，同比增长2％，保持了正增长。</p>
+<h3>1.2 经济（Economy）层面</h3>
+<p><strong>1.2.1 东南亚各国人均GDP情况</strong></p>
+<p>东南亚是与中国联系最为紧密的地区之一，不仅是因为地理位置上与中国靠近，而且在经济、人口等方面也联系紧密。下表是2019和2018年东南亚各国与中国人均GDP情况，以及这两年的人均GDP增量和增速：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/Airt9ArTLzwJI48s2UCo.png" alt="" width="900" /></p>
+<p>从上表来看，在2019年和2018年，新加坡连续两年超过6万美元的人均GDP，不仅在东南亚地区稳居榜首，甚至在全世界范围内都能排进前10名。第二名文莱虽然不是发达国家，但其人均GDP已经可以进入发达国家之列，甚至比属于发达国家的韩国的人均GDP还要高一些。第三是马来西亚比我国高了近1000美元左右。</p>
+<p>剩下8个国家的人均GDP低于中国，但其拥有较高的人均GDP增长速率，其中泰国，印度尼西亚，老挝，东帝汶，柬埔寨，这5个国家的增速已超过中国，在国民经济发展上存在巨大潜力。通过对东南亚各国人均GDP情况的分析，无论是目前人均GDP已超过中国的国家还是有着较高经济增速的国家都有着较强的人均购买力，对于电商行业有着巨大市场。</p>
+<p><strong>1.2.2 东南亚经济体正向富裕阶层过渡</strong></p>
+<p>东南亚的主要经济趋势一直是中产阶级的增长，但随着各国国内生产总值(GDP)持续上升，这个庞大的中产阶级已开始向富裕阶层过渡。现在，大众富裕阶层的增长速度超过了该地区任何其他收入阶层，而且预计增长速度还会加快。</p>
+<p>在该地区人口最多的四个经济体——印度尼西亚、菲律宾、泰国和越南——从2017年到2030年，大众富裕阶层的人数预计将以每年8%的速度增长，而中产阶级的人数增长预计为4%。在此期间，仅这四个国家的富裕人口预计就将从4,600万增加到1.25亿，他们在人口中所占的比例预计将增加一倍以上，达到21%。</p>
+<p>以越南为例，到2030年，该国16%的人口将富裕起来，而目前这一比例为5%;在印度尼西亚，这一比例预计将从9%跃升至21%。大众富裕阶层已经形成了一个关键市场，他们控制着20%至40%的家庭财富，到2030年，这一比例可能会在关键的东南亚市场大幅上升至30%至65%左右。</p>
+<p>这一阶层拥有强大的经济消费能力，对经济环境的变化有良好的适应力，消费者支出往往保持稳定或继续增加。</p>
+<h3>1.3 社会（Society）文化层面</h3>
+<p>首先，我们先了解下东南亚市场的总体情况</p>
+<ul>
+<li>人口规模：全球人口数量排名第三，仅次于中国和印度</li>
+<li>年龄结构：东南亚人口结构年轻化，20-49岁人群占比高45.3%</li>
+<li>互联网渗透率：互联网渗透率随着移动通讯发展显着增长，55%</li>
+</ul>
+<p>东南亚地区年轻消费者的超前观念和互联网普及率的不断增加，成为该地区网购销量一路飙升的主要推动力之一。</p>
+<p><strong>1.3.1 东南亚人口结构</strong></p>
+<p>人口结构代表着一个国家未来消费潜力，年轻人越多潜力越大，等到这些国家人口平均年龄达到40岁左右时，社会平均消费能力将达到顶峰。东南亚人口密度大，目前人口规模已达6.3亿（其中青年人口占60%），占世界总人口的8.6%，其中近50%为城市人口，年龄中位数约为29岁，所以东南亚地区有着明显的消费潜力。</p>
+<p>另一方面，东南亚地区年轻人偏多，这类消费者更偏向于体验新鲜事物和追求高效购物，尤其在这个全球化时代，他们追求从全世界购买商品，在任何地方通过手机轻松支付，最后能快速使用上这些进口商品，这让跨境电商行业存在巨大发展潜力。</p>
+<p><strong>1.3.2 对中国品牌的认可度高</strong></p>
+<p>东南亚消费者对中国品牌的认同度其实是比欧美人群要高很多的。中国品牌能够以优势价格供应从高端成套设备到廉价消费品的全线高质量产品，同时能满足东南亚国家发展阶段的多元化要求。</p>
+<h3>1.4 技术（Technology）层面</h3>
+<p><strong>1.4.1 互联网市场环境良好</strong></p>
+<p>东南亚地区互联网覆盖面大，互联网渗透率已经超过60%。互联网市场没有任何网络限制，居民可以任意登陆全球所有网站。同时，这些政府都在大力推进互联网商用业务，印度、马来西亚、泰国等政府，马云都是座上宾，但这些地区互联网商用仍然较为滞后，反而说明潜力更大。</p>
+<p><strong>1.4.2 “中国制造”手机助力东南亚移动端的发展</strong></p>
+<p>东南亚很多市场直接跳过桌面端，直接进入移动端，同时以低价高品质打入东南亚市场的中国品牌，如华为，小米，给东南亚人民提供了更多购买手机的机会和选择，助力东南亚移动端网上购物的发展。</p>
+<p><strong>1.4.3 物流业的发展</strong></p>
+<p>跨境电商带动东南亚地区物流行业的发展，国际大咖与本土资本因看好该地区物流行业的商机而纷纷涌入，例如：顺丰，DHL，JNE，SingPost，NinjaVan，J＆T等国际和东南亚本土知名物流供应商均开始设立专门用于处理电商物流交付的电子系统。</p>
+<p>除此之外，东南亚电商的巨头玩家都已经建立起属于自己的自营物流网络和平台配套物流配送，与此同时也保障了配送的效率和物流的安全。甚至一些印度的物流玩家已开始尝试智能机器人与人工智能，减少对人为干预的依赖和需求。</p>
+<h2>二、竞品分析</h2>
+<h3>2.1 竞品选择</h3>
+<p>由iPrice Group2018年第四季度iPrice Map of E-Commerce资料显示：Lazada和Shopee是东南亚地区最受欢迎的电商平台，几乎覆盖了东南亚地区所有国家下载排行榜的第一位，接下来将选择shopee和Lazada做具体的竞品分析。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/SDKc8JxIqLWwRGERPpRJ.png" alt="" width="900" /></p>
+<h3>2.2 产品发展路径分析</h3>
+<p><strong>（1）shopee</strong></p>
+<ul>
+<li>2015年于新加坡成立并设立总部。</li>
+<li>2016年，Shopee在中国开展跨境业务，总部设于深圳。同年其母公司Sea获得马来西亚国库控股公司领投，腾讯追投的1.7亿美金D轮融资</li>
+<li>2017年，shopee母公司Sea集团于纽交所上市，同年其母公司宣布融资5.5亿美元，并计划把这部分资金用于Shopee在印尼的扩张</li>
+</ul>
+<p><strong>（2） Lazada</strong></p>
+<ul>
+<li>创建于2012年，总部设在新加坡</li>
+<li>2014年营收1.543亿美元，但净运营亏损达到1.525亿美元</li>
+<li>2017年6月，阿里巴巴向电商平台Lazada再投资10亿美元，将持股比例从原来的51%提升至83%，以确保获得这家快速增长初创企业的控制权</li>
+<li>2018年3月，Lazada获得阿里巴巴增资20亿美元</li>
+</ul>
+<h3>2.3 核心业务模式分析</h3>
+<p><strong>（1）shopee</strong></p>
+<p><strong>1） C2C和B2C业务模式相结合</strong></p>
+<p>2017年以前，Shopee的重点一直都是C2C，C2C模式把卖家和买家聚集在一起，对Shopee的市场交易总值增长有巨大的影响。这个模式对仓储的要求比较低，只需与物流供应商合作即可。但两年前Shopee就已经开始发展基础设施，推出了Shopee Mall，开始拓展B2C业务。</p>
+<p>这么做简单来说有三个好处：</p>
+<ol>
+<li>拓展平台产品覆盖率；</li>
+<li>大量引入品牌方，提高产品质量保证；</li>
+<li>官方控制物流模式，减少并控制物流成本。</li>
+</ol>
+<p><strong>2）卖家选品来源</strong></p>
+<p>shopee卖家的选品来源主要分为两部分，一部分是Shopee平台内的，一部分是Shopee平台之外的</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/ObLiB6U8TQ09JyA1M2zL.png" alt="" width="900" /></p>
+<p><strong>3）电商平台管理</strong></p>
+<p><strong>①APP管理。</strong>Shopee针对东南亚7个国家的差异性，推出7款适合不同国家的本土App。据第一财经报道，印尼早晚高峰堵车严重，Shopee印尼App就推出了摇金币游戏，消费者可在该时间段摇到金币兑换折扣。</p>
+<p><strong>②平台收费管理。</strong></p>
+<ul>
+<li><strong>佣金</strong>：开店前三个月免佣金，后续佣金比例为订单金额<strong>【不含运费】</strong>的6%</li>
+<li><strong>支付交易手续费</strong>（与第三方支付工具无关）：订单金额<strong>【包含运费】</strong>的2%</li>
+<li>除以上费用外，无其他费用（如开店保证金、技术服务费、年费等）</li>
+</ul>
+<p><strong>4）广告宣传</strong></p>
+<ul>
+<li>线上：APP上站内引流结合在Facebook及旗下Instagram，YouTube、Tik Tok等站外平台上引流。</li>
+<li>线下：在泰国的曼谷，印尼的雅加达，还有台湾的台北铺设地推广告。比如整列地铁的广告，或者是当地高速公路的广告牌。</li>
+</ul>
+<p><strong>5）订单支付方式</strong></p>
+<p>买家在shopee下单时，可以选择两种支付方式，一种是 Non-COD（非货到付款），一种是COD（货到付款）。</p>
+<ul>
+<li><strong>Non-COD</strong> 包裹需由买家下单时在线上完成货款和运费的支付，可以使用信用卡，银行转账等方式；</li>
+<li><strong>COD</strong> 包裹则是物流供应商向收件人收取货款和运费，买家下单后无需任何线上支付动作，但是目前只有台湾、印尼、泰国、菲律宾、越南开通了货到付款，新加坡、马来西亚、巴西站点不支持货到付款。</li>
+</ul>
+<p><strong>6）物流模式</strong></p>
+<p><strong>①Shopee自建物流SLS（Shopee Logistics Service）</strong>。SLS实际上是一个中转仓的模式，卖家按要求将包裹就近发往Shopee位于上海、深圳、泉州、义乌的转运仓，由平台承接后续的清关、尾程配送等事宜。</p>
+<p>卖家可以自己设定发货期是3天或者7天。</p>
+<p>在Shopee前台，买家可选择SLS或其他指定的物流商进行物流运输。</p>
+<p><strong>②Shopee已开设5大海外仓。</strong>海外仓是指卖家批量备货至Shopee境外当地仓库，从而实现本地销售及高速尾程配送的物流形式。目前Shopee海外仓（包括马来西亚，印度尼西亚，泰国，菲律宾，台湾）覆盖东南亚和中国台湾5大市场，构建东南亚最大的仓库交付网络。</p>
+<p><strong>（2）LAZADA</strong></p>
+<p><strong>1）B2C业务模式</strong></p>
+<p>lazada的业务模式更侧重于B2C，更倾向于高端形式的路线，更注重打造品牌质量。在此业务模式下，平台能掌控整个供应链，快速建立仓储和履约的能力。</p>
+<p><strong>2）商品来源</strong></p>
+<p>吸引品牌商家入驻，注重上传商品的品牌审核。Lazada会审核商品的品牌是否在平台的品牌库中，只有属于其中的品牌才能上传，不然需要添加新的品牌；没有品牌的产品请选择“OEM”；在产品图片中若出现品牌名称，请确保与“Brand”栏填写的品牌一致。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/m65IyVjqmQqAWmeSkdn4.png" width="600" /></p>
+<p><strong>3）电商平台管理</strong></p>
+<ul>
+<li><strong>APP和网站管理。</strong>Lazada PC端针对东南亚6个国家设计了6个不同的购物网站，分别是越南(Lazada.vn)、新加坡(Lazada.sg)、马来西亚(Lazada.com.my)、泰国(Lazada.co.th)、菲律宾(Lazada.com.ph)、印度尼西亚(Lazada.co.id)。但是针对移动端只有一款APP。</li>
+<li><strong>平台收费管理。</strong>平台佣金+增值税GST+账务处理费</li>
+</ul>
+<p><strong>4）平台佣金（commission） </strong></p>
+<p>Lazada对于卖家订单的抽成佣金会根据不同的产品类目而不同，佣金收费比例一般在1%-4%，越南站点为6%至8%。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/FHyJkOLxuPkA519NQLwz.png" alt="" width="900" /></p>
+<ul>
+<li><strong>增值税GST：</strong>Lazada针对东南亚6国的增值税收费有所不同，分别是：马来西亚&#8211;6%，新加坡&#8211;7%，泰国&#8211;7%，印度尼西亚&#8211;10%，菲律宾&#8211;12%，越南&#8211;10%。</li>
+<li><strong>账务处理费：</strong>账务处理费是固定的每笔订单金额总额的2%。</li>
+</ul>
+<p><strong>5）物流</strong></p>
+<ul>
+<li><strong>自营物流LGS。</strong>时效在10左右。要在48小时之内填写物流跟踪号，并在订单产生后5天内将货物寄到Lazada中国中转仓（义乌仓、深圳仓、香港仓），后续运输由平台负责，若超过规定时间，订单则被自动取消，卖家也可以选择自发货。</li>
+<li><strong>海外仓LGF(Lazada Global fulfillment)。</strong>LGF是Lazada平台推出的专门针对跨境商家提供的海外仓服务。目前该服务仅开放马来西亚市场。</li>
+</ul>
+<h3>2.4 核心业务对比</h3>
+<p>通过如上对Shopee和Lazada主要业务的分析，发现这两家东南亚电商巨头在业务模式上有很多异曲同工之处，但也存在差异，接下来主要分析Shopee在哪些业务方面更占优势，帮助其获得更多用户的使用。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/XR2KQRSC0N9ZLLuvoqYY.png" alt="" width="900" /></p>
+<p><strong>2.4.1 Shopee业务模式更适合东南亚消费者</strong></p>
+<p>Shopee和Ladaza主要的区别是业务模式的不同，shopee的业务模式从C2C起步，这种业务模式较为灵活，商品来源较广泛，价格相对低。而Lazada的业务模式为B2C，更看重平台上商品的品质和品牌，严格把控平台上售卖的商品质量，商品价格相对来说高，不适合东南亚经济收入水平较低的群体购买。</p>
+<p>Shopee的卖家数量和店铺数量超过Lazada 从超级店长数据统计分析来看，以马来西亚站数据为例，Shopee的店铺数有23万，Lazada的店铺数为14万。</p>
+<p>Shopee的业务模式更适合东南亚地区经济发展不平衡，人民收入差距大的情况。后为满足东南亚不同消费阶层的需求，提高商品质量，融入B2C模式，加入Shopee Mart和Shopee Mall。</p>
+<p><strong>2.4.2 7大APP平台解决不同国家差异性</strong></p>
+<p>东南亚消费者更偏向于移动端购物，所以Shopee针对东南亚不同的国家设计了七款不同的APP，这能更好的适应不同国家消费群体的差异性，针对不同国家消费者的特点，推出不同的爆款产品及设计不同的运营战略等，同时也很好的解决了语言不同的问题，吸引不同国家消费者使用，相比之下Ladaza移动端APP的灵活性会较低一点。</p>
+<p><strong>2.4.3 物流管理及海外仓优势</strong></p>
+<p>在自营物流管理方面，Shopee给卖家的发货时间弹性更大一点，卖家可以根据情况设定发货期是3天或者7天，不用担心超时订单会被取消，这样能帮助卖家更好的处理异常情况的发生。</p>
+<p>目前从平台能提供的海外仓服务来看，shopee涉及的服务多于Lazada，更能吸引卖家入驻Shopee，并给买家提供更好的物流服务。卖家可提前备货到海外的仓库进行储存，待用户下单后，商品将直接从海外仓进行发货，物流时间因此会有大幅缩短，并且时效更有保障。</p>
+<p>另外，卖家可以提前安排大批量的货物发往海外仓备货，在时间、条件符合要求的情况下，可选择海运，和空运相比，能减少不少国际运费。</p>
+<h2>三、消费者价值分析</h2>
+<h3>3.1 平台参与方</h3>
+<p>使用Shopee平台的用户主要有四类人群分别是卖家，买家，物流提供方以及平台规则制定者。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/g42gagpCigCu60qvvcQS.png" alt="" width="900" /></p>
+<p>其中，每个角色使用平台的目的不同和平台的交互关系也有所区别。</p>
+<ul>
+<li>卖家通过平台申请开办自己的店铺，上新、推广、卖出产品，通过平台打印运单号，最后将货物按打包要求进行打包，将货物寄往相应的仓库；</li>
+<li>买家通过浏览平台上的产品，选择自己需要的且性价比最高产品，购买后在平台上查看物流信息，追踪快递的到货情况，对于不满意的产品在平台上申请退换货；</li>
+<li>物流方通过平台接收线上订单，扫描运单得到货物物流信息，安排国际货运，为平台更新货运节点信息。</li>
+</ul>
+<p>下图是平台用户和平台之间的业务关系图，由于shopee是自建物流SLS属于平台方，后文将不做分析。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/rubqXwlc1419dz8DMAoj.png" alt="" width="900" /></p>
+<h3>3.2 用户需求分析及目前解决方案分析</h3>
+<p><strong>3.2.1 卖方</strong></p>
+<p><strong>1）卖家需求</strong></p>
+<ul>
+<li>卖出更多商品：作为卖家最直接的需求是卖出更多产品，获得更多利益</li>
+<li>节约运营成本：卖家为了赚取最大利益，除了卖出更多商品，赚得更多钱外，另一方面就是节约运营成本，减小支出。</li>
+<li>获得有效的指导：尤其是对于刚入行的新手卖家来说，他们更希望获得有效的指导以及有机会学习他人的成功经验，帮助他们更快的经营生意，少走弯路。</li>
+<li>有高质量的物流服务：卖家希望所卖货物能又好又快的送到客户手中，不然低质量的物流服务会造成货损率和投诉率的升高，造成客户的流失。</li>
+<li>语言沟通无障碍：能看懂平台上的内容；和买家能顺利沟通，了解买家需求，解决买家问题。</li>
+</ul>
+<p><strong>2）现有解决方案</strong></p>
+<p>对于解决以上需求，现有如下解决方案，但都还存在不足。</p>
+<p>①开线下分店</p>
+<p>此方法虽然能增加销量，但对比线下实体店每月不稳定的盈收和高额的月固定成本，如店铺租金、员工月工资来说，可能会造成卖方亏损。</p>
+<p>②入驻中国本土电商平台</p>
+<p><strong>市场饱和问题：</strong>对于已成熟的电商平台如淘宝、京东、亚马逊等，同类产品的电商卖家基本已趋于饱和，以淘宝上日用品水杯为例，卖家总数已多达511,904家，天猫旗舰店19,433家，金冠店1907家，竞争已非常激烈，其他品类的产品也大多与此局面类似，让许多想要进入此市场划分‘蛋糕’的卖家望而却步。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/vfNGLs146J9fpeMxGRki.png" alt="" width="900" /></p>
+<p><strong>运营成本高：</strong>高额的保障金：电商巨头会要求入驻商家缴纳高额保障金，入驻淘宝商城首先需缴纳保障金10,000元，以及实时的服务费用（如下图片内容是淘宝商城服务费用的简述）；天猫会根据不同产品类目收取商家最低10万元，最高50万元的保证金，京东和天猫几乎不相上下。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/ThGizsoDYW433hemRcYV.png" alt="" width="900" /></p>
+<p>每月需支出引流费用：成功入驻平台后，接下来就是思考如何引流，吸引客户，以淘宝平台为例，阿里巴巴卖家服务市场里推出的引流服务，像首页推出的这八大服务基本都需要购买才能使用。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/DJQTlGDexr3yfbpgb6vW.png" alt="" width="900" /></p>
+<p>具体以营销推广中的流量推广为例，平台方选出的精选服务收费在30元/月-220元/月不等，原来在淘宝上开店并不是产品质量好就能吸引更多流量，而是靠支付流量推广费用，来使店铺曝光。</p>
+<p>以下是淘宝店铺的装修费用，服务费在30元/月-300,000元/月之间，大大增加了店铺每月的固定成本。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/XQqRYUBmdQtWqEJOlKXa.png" alt="" width="900" /></p>
+<p><strong>平台方缺少指导和支持</strong>：现有电商巨头的卖家服务平台上多重视有偿服务的推广，而缺少关于‘如何经营一家网店’这类知识的官方指导，对于一些前期投资资本不足的卖家来说这类指南文件是至关重要的，他们没有多余的钱去买流量和装修店铺等，只能从官方的运营‘干货’中学习，去摸索如何经营好一家网店。</p>
+<p><strong>3.2.2 东南亚买方</strong></p>
+<p><strong>1）东南亚买家需求</strong></p>
+<ul>
+<li>商品多样性：买家希望在购物时能一次性买完他所需要的全部东西，而不是要跑好几个地点购物。</li>
+<li>商品性价比高：买家对商品性价比的要求高，这样才能帮他们节约成本，以便最大程度节约支出。</li>
+<li>购物便利：买家基本都会以最近原则选择购物地点，他们希望体验便利的购物，节约非必要的购物时间。</li>
+</ul>
+<p><strong>2）现有解决方案</strong></p>
+<p>①线下购物</p>
+<p><strong>东南亚零售业态目前不发达：</strong>东南亚线下超市选址大多选在大型购物商场里或附近，小型零售店稀缺，分布较散。以马拉西亚吉隆坡八打灵再也的一范围地区的超市分布为例，如下图所示，超市分布在Mummys party shop购物中心里，其附近一家商圈里有一家711,其他区域内就没有购物店。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/hYDpwEer3BYprjjL8lFe.png" alt="" width="900" /></p>
+<p><strong>交通不发达：</strong>对东南亚地区来说，除了新加坡，其他国家的公共交通都没有很发达，尤其是像印尼这种岛屿国家，对东南亚人民线下购物造成了很大阻碍。</p>
+<p>总结：通过分析，现有的解决方案主要存在线下开店成本高、本土电商市场已饱和、本土电商运营成本高、平台方缺少给卖家的指导和支持、东南亚线下零售业态不发达、购物不便利的问题。</p>
+<h3>3.3 Shopee解决方案</h3>
+<p><strong>3.3.1 shopee面向东南亚市场</strong></p>
+<p>shopee将主卖场设在东南亚这片蓝海市场，正如上面行业分析中所提到的东南亚市场因人口红利及互联网的高度普及，成为跨境电商新兴市场中最具发展潜力的一个，给中国卖家提供了新的商机。</p>
+<p><strong>3.3.2 shopee平台运营成本低</strong></p>
+<p>在Shopee开店，无平台使用费、年费及保证金，前三个月而且还免佣金,三个月之后平台会收取5%的订单佣金，这个佣金也是成交之后从营业额里面扣除了,相比其他电商平台来说shopee的运营成本已经低很多了。</p>
+<p><strong>3.3.3 shopee给卖家提供有力的支持</strong></p>
+<p><strong>1）运营指导</strong></p>
+<p>shopee平台上发布了很多网店运营相关的内容，关注shopee微信官方公众号，发现一共有三个学习路径，分别是shopee大学，官方直播，虾电台。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/5EuTTshK9Go0NTuX3t2C.png" alt="" width="900" /></p>
+<ul>
+<li><strong>shopee大学：</strong>需要用卖家账号登陆，上面有大量的卖家想要获得的知识，平台规则可以让卖家更好的了解平台收费，运作模式等，运营实操能帮助卖家更好的经营网店，而且所有资料都是对卖家免费开放的。</li>
+<li><strong>官方直播：</strong>这是虾皮开放给卖家的公开课，每次直播后都有回放记录，卖家可以根据自己时间灵活的学习。</li>
+<li><strong>虾电台：</strong>虾电台是shopee官方推出的音频栏目，以短音的方式讲解shopee卖家常见问题和官方政策解读，这样卖家利用琐碎的时间，比如通勤时间，也能学习shopee运营知识，这一栏目可以看出shopee平台为卖家周全的考虑。</li>
+</ul>
+<p><strong>2）免费提供Facebook、Instagram的广告运营</strong></p>
+<p>Shopee了解卖家的痛点，并以扶持卖家增长为最大目标，因此本次推出Shopee跨境卖家脸书协作广告，透过Shopee 7大站点拥有数千万粉丝的官方FB和INS账号进行投放，卖家无需自建帐号，Shopee官方大号亲自带货，Shopee官方广告团队专业代运营，不收取任何手续费 ，让卖家花的每一分钱都扎实投放到消费者上。</p>
+<p><strong>3.3.4 自建物流助力让买家享受高效的网上购物</strong></p>
+<p>shopee跨境电商平台可以让东南亚买家随时随地使用手机或电脑就可以完成购物，外加shopee自建物流SLS为保障了国际快递又好又快的交到买家手中。</p>
+<p>比如SLS 结合空运及陆运提高运输效率，通过运营、协调超过20座机场的200多条航线以及800多个航班组成其覆盖东南亚7大站点的全面跨境物流网络，顺利打通中国至东南亚市场的商路，实现货物最快3天送达东南亚市场。</p>
+<p><strong>3.3.5 提供小语种客服翻译，减轻本土运营压力</strong></p>
+<p>做跨境电商，不可避免要克服的一点就是语言问题。东南亚语言体系较庞杂，Shopee贴心地在印尼、泰国、越南站点均提供了免费小语种客服翻译服务，针对有竞争力的产品，还会提供本地化翻译服务。</p>
+<p>虽然是机器翻译，但是翻译质量非常高，其中印尼语已经接近人工翻译的水平，为跨境卖家和本地买家提供便利。</p>
+<h2>四、商业价值分析</h2>
+<p>shopee的核心业务为跨境电商，而电商最看重的指标为GMV(Gross Merchandise Volume)=用户数*转化率*客单价，指一定时间段内的成交总额，用于衡量电商业务的营收,指标越高说明电商业务越赚钱。</p>
+<p>Shopee在2019年的GMV达到176亿美元，较2018年同比增长71.0%，预计在2020会增长的更多,接下来我们重点分析shopee是通过哪些手段提升这三个关键指标的。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/cUzM2rm61aehCTYrfpp2.png" alt="" width="900" /></p>
+<h3>4.1 提高新用户数</h3>
+<p><strong>4.1.1 广告推广</strong></p>
+<p><strong>1）同当红明星签订广告代言</strong></p>
+<p>签约blackpink。2018年双十二大促来临之际，Shopee宣布韩国首席女子天团BLACKPINK担任Shopee首位区域品牌代言人，为Shopee引入超强流量。</p>
+<p>签约C罗。2019年9.9大促前夕，全球足球巨星克里斯蒂亚诺•罗纳尔多(Cristiano Ronaldo, C罗)成为shopee全球代言人，作为超级偶像，C罗常年稳居社交媒体火爆“IP”之一，同样能给shopee带来巨大流量</p>
+<p><strong>2）成为重磅足球赛事ICC新加坡赛区首家电商合作伙伴</strong></p>
+<p>ICC，全称为International Champions Cup(国际冠军杯)，是世界上首屈一指的足球锦标赛。Shopee与ICC结盟，在平台上为足球爱好者开设了售票通道，还为用户带来了更多赛事福利，包括免费观看新加坡站赛事以及亲临现场与球星亲密互动的机会。足球在东南亚是无可争议的第一运动，此次合作吸引了大量男性用户使用Shopee。</p>
+<p><strong>3）举办购物节晚会</strong></p>
+<p>2019年，Shopee在印度尼西亚举办了12.12晚会，邀请众多明星为Shopee 12.12生日大促造势。节目在NET、GTV等主流频道播出，覆盖2.6亿印度尼西亚人口，提高了Shopee的知名度，让更多印尼人知道shopee,并吸引他们下载shopee。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/EELCXgJWhwU9Wp4ndYI6.png" alt="" width="900" /></p>
+<p><strong>4）在facebook、instagram上投放广告</strong></p>
+<p>据We Are Social统计，在Shopee的七大市场，FB和INS广告共计可触达4.6亿用户，Shopee店铺的广告将直接投放在Facebook与Instagram两大平台上，这样可以提高Shopee的曝光度，大大提升用户下载率。</p>
+<p><strong>4.1.2 熟人关系推广</strong></p>
+<p>shopee抓住年轻用户的喜好，推出了shopee games,shopee live,shopee story等一系列的功能，这些功能让客户在购物的同时也能和朋友一起互动聊天、分享生活、玩游戏等，深受东南亚用户的喜爱。这些社交和娱乐功能，会促进东南亚的年轻用户把Shopee分享给身边的熟人，通过熟人网络无形的帮助Shopee进行推广。</p>
+<h3>4.2 提高用户转化率</h3>
+<p>接下来分析shopee是如何吸引客户完成一次网购来提高用户转化率。</p>
+<p><strong>4.2.1 首页</strong></p>
+<p><strong>1）新人欢迎礼包</strong></p>
+<p>点开shopeeAPP，首先会弹出一个免运费的优惠广告，此优惠只针对新用户，没有最低消费限制，但是有使用有效期，推动客户在规定期限内完成第一次购物。</p>
+<p>首页还专门设立了新用户空间，给新用户提供免费的礼物来促进客户消费。</p>
+<p><strong>2）全面的项目分类</strong></p>
+<p>首页有对各种项目的分类包括游戏、直播、餐饮优惠、男士专场等，总有一个栏目会吸引新用户继续浏览，让他们发现感兴趣的商品后进行下单购物。</p>
+<p><strong>3）明显的低价信息</strong></p>
+<p>消费者容易被折扣优惠信息吸引，他们希望通过网购买到比线下商店价格便宜的同类产品，然后下单购买商品完成转化率还会有种“占了便宜”的愉悦感。</p>
+<p>百万美金折扣（Million Dollar Discount）。shopee抓住消费者的这一心理，在首页推出了‘million dollar discounts’，这是shopee官方和各大品牌合作推出的优惠活动，仅提供限量商品，官方保证全网最低价且100%正品保证，促进消费者下单。</p>
+<p>限时抢购（Shocking Sale）。首页显示限时优惠的产品信息，倒数计时优惠活动结束时间，突出标明产品折扣，以及显示产品已售信息及库存信息，让买家产生有许多人同时想买此产品，如果不立刻下单，产品就被卖完了的感觉，促使消费者下单。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/Ve2DVbTEwcZ7KziO33S8.png" alt="" width="900" /></p>
+<p><strong>4）社交互动</strong></p>
+<p>首页里还设置了shopee 快拍和shopee 直播，shopee story是参照instagram里的快拍功能，超过24小时内容就会自动消失；shopee直播是卖家通过直播来推荐商品，这两个功能都能让买家更直观的看到商品详情和商品试用情况，能促进买卖家之间的互动，从而促进买家购买。</p>
+<p><strong>4.2.2 搜索界面</strong></p>
+<ol>
+<li><strong>固定搜索框的位置</strong>。平台把搜索框的位置固定在每一个板块的最顶端，方便用户找到使用。<strong>多方式搜索产品。</strong>平台提供给用户多种搜索方式来搜索目标产品，如：可以通过输入关键字搜索所需商品，也可通过识别商品照片或商品QR码或者拍照来搜索，帮助用户快速的找到目标商品。</li>
+<li><strong>优惠活动推荐搜索。</strong>在搜索栏中会自动带出推荐的优惠信息，搜索记录的第一行再次显示了优惠活动，让买家容易注意到此优惠以及很方便的进入此链接浏览。</li>
+<li><strong>搜索记录</strong>。搜索界面会记录用户搜索过的商品，如果买家有事中断了购物，搜索记录会帮他记起想购买的东西，继续完成购物。</li>
+<li><strong>热门搜寻及分类推荐。</strong>为了促进没有明确目标的消费者进行下单购物，shopee在搜索栏放置了热么搜索板块和详细的分类板块，可以引导这类消费者点击浏览，在浏览中发现想买的商品，从而下单。</li>
+</ol>
+<p><strong>4.2.3 商品列表界面</strong></p>
+<p><strong>1）商品分类</strong></p>
+<p>通过搜索商品，来到商品列表，由于搜索出的商品过多，shopee为了帮助买家快速挑选到心仪的商品，给商品设置了不同标签分为不同类别。</p>
+<p>首先将商品按热门、最新、最热销、价格将商品进行分类，在每个分类下又将商品按官方商城、Shopee优选、10%现金回赠的商品，shopee24进行分类，让买家能根据自己不同的需求快速找到符合自己购买预期的商品，节省网店浏览时间，快速买到心仪商品。</p>
+<p><strong>2）卖家分类</strong></p>
+<p>在商品列表中，如果是马来西亚本地卖家卖的商品，在商品名称下面会有一个“local seller”的标签，针对部分东南亚消费者来说可能会更相信本地卖家提供的商品质量，从而选择本地卖家的商品进行购买。应用标签区分卖家同样是方便用户挑选商品。</p>
+<p><strong>3）突出大图、价格、折扣信息、销量信息</strong></p>
+<p>从下图可以清晰地看到，首先是突出的是商品图片以便用户确认是想要的商品，第二突出的是价格，是否能够符合用户心理价位，第三突出折扣信息和打完折后价格与原价对比，让用户觉得网购可以省钱。第四看到的是商品评分和销售量，反应商品人气，从而引导用户进入商品详情页。<br />
+<img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/UGv15JaxpxMkA5qZqswj.png" alt="" width="500" /></p>
+<p><strong>4.2.4 商品详情页</strong></p>
+<p>用户在商品列表页选择感兴趣的商品后，进入商品详情页，商详页是用户消费体验感页面，设计的好坏直接会影响用户的购买行为。Shopee是如何帮助用户快速决策把商品加入购物车的呢？</p>
+<p><strong>1）更多商品图展示</strong></p>
+<p>进入商品详情页，在页面顶部设置有商品图片展示滚动页，让买家通过图片看到更多商品细节，加深判断此商品是否为心仪商品，有的细节照片可以为商品加分，让用户觉得商品质量很好，这就是自己想要的商品，加入购物车准备下单购买。</p>
+<p><strong>2）建立消费保障</strong></p>
+<p>Shopee非官方商城里的商品，有Shopee承诺第三方支付保障买卖双方权益。官方商城里的商品，还有Shopee特别保障100%正品，15天鉴赏期，免运费。</p>
+<p><strong>3）商店优惠卷信息曝光</strong></p>
+<p>让买家清楚的知道有哪些优惠卷可以使用，优惠折扣是什么样的，让他们不会错过优惠信息，更愿意购买产品。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/vdGUIMYCTfZN8mLZ68CS.png" alt="" width="900" /></p>
+<p><strong>4）运费信息</strong></p>
+<p>显示运费信息，展开界面是详细的运费咨询，向买家介绍运输方式，对应运输时效和运费，让买家更好的评估到货时间是否在自己的预期内，为了早点收到货，他们会选择提前下单。</p>
+<p><strong>5）体现库存数量</strong></p>
+<p>在商品详情的第一行位置，优先显示库存数量，告诉用户，如果你现在不买一旦卖完了就再也买不到了，从而打造商品稀缺性，使用户产生购买紧迫感，对心仪商品及时下单。</p>
+<p><strong>6）商品评价</strong></p>
+<p>通过用户评论，新用户可以从评论中借鉴其他购买者对商品的使用体验，若是好评率高的商品，新用户会更多的相信商品质量是好的，更愿意购买。另一方面营造出强烈的消费人气氛围，对于人气高的商品，用户可能会存在从众心理，从而进行购买。</p>
+<p><strong>4.2.5 购物车</strong></p>
+<p>通过前面一些列设计已成功吸引用户将商品加入了购买车，离付款就差一步了！购物车界面是如何推动客户去买单的呢？</p>
+<ol>
+<li><strong>优惠价格显示。</strong>在购物车界面，再一次突出显示商品的优惠价格和原价进行对比，让用户感到在平台购物的优惠，被低价吸引进行购买。</li>
+<li><strong>库存提醒。</strong>购物车界面对库存显示换了一种说法为剩下几件商品，再次给客户制造出一种购买的紧迫感，如果晚一点支付购买，商品就买不到了。</li>
+<li><strong>运费优惠提示。</strong>“使用免运费优惠卷即享有运费折扣”此运费优惠提示在购物车界面的最顶部显示，以及每家店铺会有运费折扣的提示，让用户觉得网上购物的物流费用是划算，而不会因为高额的物流费用而放弃网购。</li>
+</ol>
+<p><strong>4.2.6 结账页面</strong></p>
+<p>到了完成购物的最后一步，在费用结算界面shopee是如何推动用户完成订单支付的呢？</p>
+<ol>
+<li>匹配最优的商店优惠卷：平台会为买家匹配最优的商店优惠卷，方便买家节约时间和成本</li>
+<li>折抵shopee币：shopee币在网购支付时可以当现金抵扣，100虾币=1RM，积累一定量的shopee币也是一个不小的折扣。</li>
+<li>付款方式多样性：shopee推出多样性的支付方式，方便买家付。尤其是shopee和711合作推出的711店铺线下付款，用户选择在7-11的现金支付，然后会收到一个付款条形码，用这个条形码就可在711店员处结账了。</li>
+</ol>
+<h3>4.3 提高客单价</h3>
+<p><strong>4.3.1 提高用户单次购买金额</strong></p>
+<p><strong>1）最低消费扣减优惠卷</strong></p>
+<p>shopee店铺为提高客单价，会设置有最低消费的优惠卷，可能是满减优惠卷，也可能是满金额后的折扣卷。用户如果想使用此种优惠卷就需要凑单把单次购买价格提高去使用此优惠卷的折扣，帮助平台提高了客单价。</p>
+<p><strong>2）关联特别促销的商品</strong></p>
+<p>在购物车中平台会提示用户购买的商品有特别促销，点击新增，会看到超低折扣的关联商品，平台通过吸引用户加购关联的低价商品来提高客单价。</p>
+<p><strong>3）套装促销</strong></p>
+<p>购买一件商品没有折扣，购买两件商品有折扣优惠，买的越多，折扣力度越大，用套装促销的方法吸引用户买更多的商品。</p>
+<p><strong>4.3.2 增加用户回购次数</strong></p>
+<p><strong>1）回赠shopee币</strong></p>
+<p>shopee官方商店和shopee优选店铺可以给买家赠送shopee币，买家赚到虾币可用于下次购买时抵扣金额，促使买家进行二次购物。</p>
+<p><strong>2）提升用户网购体验感</strong></p>
+<p>shopee看重东南亚用户的网购体验感，很多功能都直接为用户着想，如上面提到的shopee官方平台会直接为客户匹配最优的优惠卷，另外，对于很久没上线的卖家，shopee也会提醒买家不要着急购买，先和卖家沟通后再决定，这些细节是很多电商巨头没有做到的，但是shopee做到了。</p>
+<p>总结：shopee善于抓住东南亚年轻人的喜好，无论是广告推广还是游戏、社交等新功能的推出，都为shopee吸引来了大量新用户。为提高用户转化率，shopee精心设计平台上的每一功能，吸引新老用户从进入首页直到付款完成。</p>
+<p>最后shopee从提高用户单次购买金额和增加用户回购次数这两方面去提高客单价，shopee币和shopee games相结合，吸引更多用户玩shopee游戏赚金币，最后用于购买商品抵扣费用。shopee抓住了机遇，给东南亚用户提供结合购物、社交、娱乐于一体的线上服务，其GMV在今年乃至之后几年都会持续增长。</p>
+<h2>五、产品迭代</h2>
+<p>本节将分析shopee APP的迭代过程，深入探索此产品每阶段的优化功能是如何与产品阶段性发展目标相匹配，如何更好的满足客户需求，提升客户体验。</p>
+<h3>5.1 Shopee APP迭代路径</h3>
+<p>首先，如下表所示，笔者归纳出Shopee从2015.04.06日上线的1.0.8版本到目前最新的2.59.20版本，这个过程中的产品迭代路径。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/mjUAe7HAYgbPB12QJy14.png" alt="" width="600" height="4214" /></p>
+<p>以下是酷传网上导出的2019-04-01～2020-09-03之间的ShopeeAPP日下载量，可以看出下载量呈“J”型增长，说明ShopeeAPP目前处于快速成长期，结合以上表格内容，笔者将ShopeeAPP的迭代过程分为3大块。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/IOq5GX32Q6vnx7vhBY6b.png" alt="" width="900" height="1126" /></p>
+<h3>5.2 迭代过程分析</h3>
+<p><strong>5.2.1 第一阶段：搭建产品基础功能</strong></p>
+<p>从2015年4月6日Shopee APP上线以来至2015年12月09日，即Shopee APP的1.0.8-2.1.33版本，shopee在不断上线产品的基础功能，迎合东南亚市场的需求，不断提高产品质量。</p>
+<p><strong>在1.8.36版本中</strong>新增网上银行支付功能，原有的支付方式只符合一部分用户的付款习惯，为迎合更多用户的在线付款偏好，新增付款方式的选择，方便用户付款，完成线上交易，从而提高平台转化率。</p>
+<p><strong>在1.10.13版本中</strong>，新增社交内容分享功能，用户可以把Shopee上的帖子分享在其他平台上，或分享给熟人，帮助Shopee在刚上线3个月左右的时候，扩大知名度和不断拉新。在这一版本中还新增了产品展示图编辑器，更好的满足卖家编辑产品展示图，有助于引导用户下单。</p>
+<p>时隔一个月后，<strong>在1.11.21版本</strong>中，新增14个产品图像滤镜。这时发现光有产品展示图编辑器还不够，有些卖家没有时间利用这一功能去美化产品图片，所以上线了滤镜功能，帮助用户在短时间内美化图片<strong>在1.12.8版本</strong>中新增SMS用户登陆方式。这时发现原有的登陆方式用户注册成功率不高，新用户在注册上停留的时间长，容易导致新用户的流失，从而新增手机短信验证的登陆方式，方便用户快速登进App。</p>
+<p>同样<strong>在2.0.22版本中</strong>，对卖家社区的内容新增标签分类功能。在产品上线半年后，随着卖家社区的内容逐渐增多，对于没有目标关键词搜索的用户来说，很难浏览同一类别的信息，这些信息也相应的减少了曝光量。</p>
+<p>所以为方便用户浏览，增加同类动态的浏览量，给予卖家社区的内容对应的标签，进行分类汇总。此时上线的&#8217;Feed&#8217;功能，即shopee的内容社区，主打电商社交，这与shopee的发展战略相挂钩，同时迎合东南亚购物群体喜欢社交的偏好，让消费者在看直播、看帖子的过程中购买商品。</p>
+<p><strong>在2.0.24版本中</strong>，新增卖家分类收藏的功能。用户可以依据不同的分类收藏潮流店铺，之后可以更便捷的找到目标卖家。</p>
+<p>保证产品有好的基础功能，是吸引更多用户使用的前提条件。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/Vcbe6flrgKo2CpEaBvKX.png" alt="" width="900" height="2088" /></p>
+<p><strong>5.2.2 第二阶段：注重产品运营，拉新用户；并不断优化产品功能，提高产品体验</strong></p>
+<p>在经历了前阶段产品基础功能的打磨后，从2.2.29版本至2.16.13版本，Shopee将重心慢慢转移到产品的运营推广上，同时不断优化、新增产品功能，提升用户的产品体验，这阶段用户数量迅速增长。</p>
+<p><strong>2.2.29版本</strong>优化了原有的4大功能，这时距离Shopee上线将近1年的时间。</p>
+<p>优化聊天记录功能。聊天记录之前是按产品来区，这样导致记录条数多，不利于汇总和查看，优化后按照卖家来区分，这样可以把同一店铺的产品聊天记录汇总，也便于用户查找和浏览之前的沟通记录。</p>
+<p>更新通知功能。当消息通知一多，消息列表中全是未读信息，导致用户抓不到内容重点，可能看完几条消息后就会清空通知页面，导致消息阅读点击量不高，为解决这个问题，shopee将用户收到的通知按内容分为5部分，帮助用户迅速了解通知的内容方向，让他们根据兴趣查看不同类别的通知。</p>
+<p>更新分享功能。可以方便的把shopee上的内容分享到Facebook和Messenger上，这样既满足用户的社交互动，又提高了shopee在这些平台上的曝光率，让更多用户知道并下载shopee。</p>
+<p>优化商品评价功能。给用户评价增加了打分功能，更好的量化用户对商品的满意度，给其他用户更好的参考。</p>
+<p><strong>2.11.15版本</strong>中支持更多的官方商店，是为了让Shopee平台上有更多的官方商店，<strong>2.15.23版本</strong>在App底部导航栏新增Shopee官方商城的按钮，提高用户对官方商城的注意，方便用户进入页面购买商品。另一方面，此时Shopee已运营两年多，积累了一定数量的用户，之前低价商品只能满足部分买家需求，随着马来西亚经济的发展，一部分用户开始追求高品质的商品，Shopee不断优化官方商城的功能很好的满足这类用户的需求，吸引更多用户使用shopee以及增加平台上的回购率。</p>
+<p><strong>2.2.44版本</strong>优化‘加入购物车’的功能。通过数据统计，购物车页面的点击次数不高，用户对此功能的使用频次不多，但是购物车页面又存在很多优惠活动的推广，Shopee优化购物车功能，增加购物车页面的入口，以及简化功能操作步骤，方便用户使用。</p>
+<p><strong>2.3.52版本</strong>新增评分争议功能。这一功能的新增偏向卖家，一些卖家反馈对收到买家恶意评分无可奈何，一些虚假评论严重影响了商品的销量。为解决卖家的问题，平台新增评分争议功能，给予卖家向平台申诉不合理评分的权利，避免这类不公平的评分存在。</p>
+<p><strong>2.3.36版本</strong>优化店铺布局，方便用户浏览商品，查找商品，从而提高转化率。</p>
+<p><strong>2.6.4版本</strong>持续优化评价功能，促进卖家与买家间的互动交流，让卖家更了解买家对商品的评价，知道如何改进，从而提高销售额，以及让买家收到卖家回复，让买家体会到他们的想法被重视，从而建立信任感，之后愿意回购。</p>
+<p><strong>2.14.22版本</strong>上线的shopee 9.9移动购物节以及<strong>2.16.13版本</strong>上线的shopee 11.11购物节，以及<strong>2.12.15版本</strong>中新增的限时抢购活动。为了不断提高产品的商业价值，这些促销活动都是拉新用户、提高转化率的好方法。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/tnDmGIwVjRolInr4IEH6.png" alt="" width="900" height="1800" /></p>
+<p><strong>5.2.3 第三阶段：持续优化产品整体功能，拓展市场</strong></p>
+<p>2.26.13版本后，ShopeeAPP基本上没有特别的新功能上线，平台开始注重对已有功能的优化和存在漏洞的修复，如：优化了平台搜索功能、优化了电池耗电量等，从而提升用户体验感，增加已有用户粘性，以及吸引更多的新用户，拓展市场。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/4r1e4P5iNUWZ5soG7XOh.png" alt="" width="900" height="502" /></p>
+<p>整体来看，到目前为止ShopeeAPP经历了三个发展阶段，在每个阶段都有侧重的发展重点并取得了可观的效果。</p>
+<p>第一阶段，重视产品基础功能的打磨，好的功能是产品获得市场认可、吸引客户使用的前提条件。第二阶段，将重心逐渐转移到运营层面，开始举办购物节、促进买卖双方的有效合作等，同时不断优化及新增产品功能。第三阶段，持续优化产品功能，修复存在的漏洞，提高产品的用户体验。</p>
+<p>正是每阶段优化产品功能的成功，注重用户体验，Shopee的下载量呈&#8217;J&#8217;型曲线持续升高，今年5月份，Shopee2020年Q1年报数据公开发布，Shopee在这一季度蝉联东南亚购物类App下载量及平均月活跃用户数第一，并在全球购物类App中总下载量位列前三，取得了傲人的成绩，潜力巨大。这就是Shopee的整体迭代步骤。</p>
+<h2>六、产品结构分析</h2>
+<p>在迭代分析中我们分析了Shopee的产品功能的迭代过程，接下来我们分析这些功能是如何分别满足不同用户在不同场景下的需求，以及这些功能模块在整个APP中是怎么布局的，这主要通过产品结构进行分析。</p>
+<h3>6.1 产品结构脑图</h3>
+<p>首先，梳理Shopee马来西亚 2.60.4版本的产品结构脑图，对产品功能以及功能布局有个整体框架概念。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/L3E8h3MMTOe5aVx0F48s.png" alt="" width="1000" height="4663" /></p>
+<h3>6.2 用户需求分析</h3>
+<p>Shopee移动端的关键用户为消费者，为了分解消费者需求，并探究ShopeeAPP的功能是如何满足他们的需求，笔者通过对Shopee的产品结构按照用户、场景、需求和功能进行梳理，得到下面的表格</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/H5kx4T9Efer8sL6atehC.png" alt="" width="900" height="2630" /></p>
+<h3>6.3 产品结构分析</h3>
+<p>接着结合6.1产品结构脑图和6.2用户需求分析的内容，进行产品结构分析</p>
+<p>消费者在使用ShopeeAPP时，会存在三种场景：</p>
+<ol>
+<li>购买前了解平台优惠活动，搜索目标商品，了解商品详情，根据预期，选择购买商品</li>
+<li>购买中选择最优优惠活动，检查商品信息和收货地址是否正确，进行结算</li>
+<li>购买后查看订单详情以及跟进订单更新，了解货物在途信息，收货后判断是收货还是要退换货</li>
+</ol>
+<p><strong>场景一：购买前了解平台优惠活动，搜索目标商品，了解商品详情，根据预期，选择购买商品</strong></p>
+<p>在购买前这个场景中，会存在如下两种类型的消费者，他们在购物前选择商品上存在异同，ShopeeAPP是通过什么功能分别满足他们的需求呢？</p>
+<ul>
+<li>有明确购买目标的消费者</li>
+<li>没有明确购买目标的消费者</li>
+</ul>
+<p><strong>（1）不同需求：购物前搜索目标商品</strong></p>
+<p><strong>1）有明确购买目标的消费者</strong></p>
+<p>在购买前，有明确购买目标的消费者希望能利用关键信息迅速搜索出心仪产品，Shopee平台将搜索框放在首页的最顶部，方便消费者一进入APP就能进行搜索，并提供给消费者多种搜索方式，可以是关键字搜索、拍照搜索、照片搜索或者扫一扫，方便此类消费者迅速找到目标商品。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/qIEnjmKnY1FaIuX4FfpF.png" alt="" width="261" height="854" /></p>
+<p><strong>2）没有明确购买目标的消费者</strong></p>
+<p>对于没有明确购买目标的消费者来说，他们希望平台能引导他们查看商品进行购物。</p>
+<p>Shopee在app首页最顶部的搜索栏中默认显示了平台推荐的优惠商品，直接搜索就能开始浏览。</p>
+<p>紧靠着搜索栏设置了滚动活动信息，让买家很容易关注到近期的优惠活动及不容错过的折扣商品。</p>
+<p>在APP首页往下翻，有“百万美元折扣”和“显时抢购”的模块，利用低价的促销方式吸引客户了解商品并购买。</p>
+<p>首页和Feed中的”SHOPEE快拍“、“Shopee直播”，以及Feed中的帖子，能让这类消费者看到别人对商品的分享和体验，基于从众心理，他们很有可能购买别人觉得好的商品。</p>
+<p>Shopee为消费者提供了详细的商品分类，在APP首页及搜索界面都有详细的商品类，提示消费想要搜寻的商品类目，方便让这类消费者通过分类提示搜索目标产品。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/10/k9vxSDjwc42VnL6ATlST.png" alt="" width="213" height="636" /></p>
+<p><strong>（2）相同需求</strong></p>
+<p><strong>1）想购买质量好的/正品商品</strong></p>
+<p>Shopee为满足消费者想购买高质量商品的需求专门推出了Shopee官方商城，官方商城里的商品有100%正品保证，消费者若从Shopee官方商城购得仿冒品，可获得双倍价格退换，为用户提供了品质保障。Shopee在首页里设置了进官方商城的接口，同时将此模块放在底部导航栏的中间醒目位置。</p>
+<p><strong>场景二：购买中选择最优优惠活动，检查商品信息和收货地址是否正确，了解费用明细，进行结算</strong></p>
+<p>经6.2分析，此场景下消费者主要存在四种需求，shopee提供了哪些功能来满足用户需求的呢？</p>
+<p><strong>2）判断是否为最优优惠</strong></p>
+<p>到了购买中的场景下，用户希望知道目前所选的优惠方案是否已经是最省钱的方案了。Shopee在结账界面设置了商店优惠卷模块，在购买中也可重新选择优惠卷，平台也为用户匹配出了优惠卷的最佳选择（最佳优惠卷上有标签提示为preferred）。</p>
+<p><strong>3）便利的支付方式</strong></p>
+<p>对于不同用户常用的支付方式存在不同，有的用户喜欢用网上银行，有的用户喜欢线下付款，有的用户需要用信用卡等，为了满足不同客户支付偏好的差异性，shopee在结算页中提供了6种支付方式，从而满足客户支付的所有偏好，尤其是为了迎合不能网上付款的消费者的需求，专门提供了在7-11的现金支付和ATM/现金汇款的支付方式，这点是shopee做的非常好的地方，也是国内电商基本没有提供给消费者的支付方式。</p>
+<p><strong>4）检查收货信息、商品信息是否正确</strong></p>
+<p>结账页中最顶部是收货地址模块，用信纸的虚线将其标注出来，提醒消费者查看。</p>
+<p>结算页中显示商品价格、规格、数量，方便用户检查商品信息是否正确。</p>
+<p><strong>5）明确最终消费价格及价格明细</strong></p>
+<p>在结算页中，shopee为消费者列明了费用明目，并通过计算得出最终的付款金额，简洁明了，方便消费者查看。</p>
+<p><strong>场景三：购买后查看订单详情以及跟进订单更新，了解货物在途信息，收货后判断是收货还是要退换货</strong></p>
+<p>订单支付成功后，Shopee又是提供了哪些功能去满足客户的需求的呢？</p>
+<p><strong>1）查看订单信息</strong></p>
+<p>购买后，用户最关心的订单信息应该是订单的物流情况：快递什么时候发货，什么时候可以到货。Shopee在通知中设置了订单更新通知，平台会主动给客户发送订单更新信息，让用户第一时间收到通知。另外，用户也可以在我的购买清单待出货的模块中查看订单物流信息，了解快递的到货情况。</p>
+<p>除此之外，为了帮助用户记忆已购买订单的详细信息，shopee在我的购买清单中设置“订单已完成”的模块，方便用户查看订单详情。</p>
+<p><strong>2）退换货</strong></p>
+<p>对于收到的不满意的商品，用户想要退货退款或者更换商品规格，可以在我的购物清单“订单已完成”中申请，该订单会进入退货退款中，同时商家也会收到邮件提醒，推动商家跟进不满意订单。</p>
+<h3>6.4 总结</h3>
+<p>从以上分析可以发现，作为跨境电商平台，出海东南亚，Shopee的功能设计可以很好的满足用户购买前、购买中和购买后三个场景下的需求，且Shopee的一些功能十分具有创意以及人性化，如：Shopee story就是迎合东南亚消费者爱玩instagram而设计的,同时也能起到推荐商品的作用。</p>
+<p>正是shopee的功能能很好的满足客户需求，shopee的下载量和GMV才能保持快速增长，Shopee才能成为东南亚跨境电商的领先者。</p>
+<h2>七、运营路径分析</h2>
+<p>所谓“产品负责生孩子，运营负责养孩子”，这句话也从侧面反映出产品和运营的紧密关系。那shopee是如何结合产品和运营，从而使自己产品在短短的五年时间内快速成长，打入东南亚市场的呢？</p>
+<p>笔者对Shopee成立至今，主要的运营活动梳理如下，并运用AARRR模型将其归类（因为无法获取到运营活动的详细数据，没法进行分析，所以仅简单罗列并分类，供大家参考）：</p>
+<h3>7.1 增加用户获取</h3>
+<p><strong>7.1.1 营造名人效应</strong></p>
+<p>根据东南亚市场年轻人口多且热衷追星的市场特点，Shopee历年来也与很多明星进行合作，吸引年轻消费者。</p>
+<ul>
+<li>2017年8月，shopee邀请泰国当红明星Nadech和Yaya为shopee泰国站代言；马来男明星携原创品牌入驻shopee马来站；坐拥500万粉丝的淘宝网红张大奕入驻shopee台湾站；台湾美妆教主Kevin自有品牌入驻shopee新加坡站。</li>
+<li>2018年的双十二，shopee正式宣布请韩国顶级女团blackpink作为新区域的品牌代言人。邀请了菲律宾当地的超级明星Anne Curtis成为菲律宾站点的代言人。</li>
+<li>2019年9月，99购物节，Shopee宣布需求巨星C罗将担任其全球代言人。Shopee菲律宾市场官宣世界拳击冠军Manny Pacquiao作为11.11大促的品牌大使。11月10号，Shopee邀请到知名韩团GFRIEND 在印尼雅加达进行现场表演。</li>
+</ul>
+<p><strong>7.1.2 电视广告片（TVC）</strong></p>
+<p>洗脑式的背景音乐朗朗上口，让人不自觉的就跟着唱了起来，再加上魔性的动作，Shopee推出的电视广告不仅可以在短时间内抓住观众的注意，还形成了独特的品牌印记，在观众的脑海里久久挥之不去，而不是一看就忘。</p>
+<ul>
+<li>Shopee推出一支为印度尼西亚男孩圆梦的“感人大片”，点击量爆表，让印度尼西亚全民都知道：“上Shopee就可以轻松买到所有商品”！ 基于“大片”，Shopee在Facebook上发起了“鲨鱼舞挑战赛”，参赛者拍摄视频并上传可赢取超级大奖。Shopee洗脑神曲在印度尼西亚一夜爆红，网民踊跃上传视频。</li>
+<li>BLACKPINK为Shopee演绎的广告原曲DDU-DU DDU-DU，在Youtube有近5亿的点击量</li>
+<li>C罗与Shopee合作的第一支电视广告迄今为止在线播放量达3500万次</li>
+</ul>
+<h3>7.2 提高用户活跃度</h3>
+<p><strong>7.2.1 打造购物节</strong></p>
+<p>Shopee推出了9.9超级购物节、10.10超级品牌日、11.11最强购物节和12.12生日庆，这些购物节以丰富商品选择、大幅折扣力度、海量娱乐活动、优质购物体验，成功征服各个市场的消费者。</p>
+<ul>
+<li>Shopee官方宣布2018年9.9超级购物节日平台总单超580万单，其中跨境单量较2017年增长6倍；11.11大促总单量1100万单，跨境单量攀升至8倍，12.12大促总单量1200万单，跨境单量暴涨至10倍，三次涨幅均跑赢大盘；</li>
+<li>在2019年，9.9超级购物日跨境单量较平日攀升至5倍，11.11超级购物节跨境单量暴涨至9倍，12.12生日大促跨境更获得10倍单量涨幅，单量至平日十倍售出8000万件。</li>
+</ul>
+<p><strong>7.2.2 互动游戏和赠品</strong></p>
+<p>就像线下商场中的游乐设施一般，电商平台现在的做法是将线下的成功经验复制到了线上，实践先吸引再消费的购物链条，用户在逗留玩耍的时候，有更多的机会触达至商品，并参与到购买中。参与Shopee的小游戏可获得Shopee金币和优惠券，燃烧买家购物欲，助力卖家狂爆单。</p>
+<ul>
+<li>在2019年6月初，Shopee发起摇金币游戏，将价值260万的Shopee金币回馈给用户，期间有超过10万名用户登录Shopee并参与游戏！</li>
+<li>同年11.11大促，Shopee全新推出Shopee Catch，连同Shopee Shake 、Shopee Slice 、Spin&amp;Win 等其它各式的Shopee游戏，在短短3周里为Shopee平台带来超1.5亿次点击，有效提升浏览时长并强势引流。</li>
+</ul>
+<p><strong>7.2.3 直播带货</strong></p>
+<p>为了加强用户粘性，Shopee还与时俱进地推出了电商直播——Shopee Live，第一年播放量便已达5亿，海量流量让商品在极短时间内实现高曝光和快出单。</p>
+<ul>
+<li>此前持续了一个月的“Great Shopee”直播促销活动，就吸引包括欧莱雅和Innnisfree在内的上百个品牌参与，部分品牌的入店流量明显增多，销售额更是比以前多了三分之二。</li>
+</ul>
+<p><strong>7.2.4 打造了超萌吉祥物</strong></p>
+<p>Shopee还打造了超萌吉祥物，他们是Shopee台湾萌宠虾小编和虾酱、数钱数到手软的泰国萌宠Shogi狗狗，菲律宾吉祥物可爱的眼镜猴Pat和Pixie。萌宠“网红”于Facebook疯狂圈粉，透过有趣的粉丝互动频繁放送各种优惠，吸引不同消费族群到Shopee进行购物。</p>
+<h3>7.3 提高留存率</h3>
+<p><strong>7.3.1 大牌产品独家合作</strong></p>
+<p>Shopee和一系列知名品牌推出产品独家发售，这些产品只有在shopee上才能买到，突出shopee的优势，吸引更多消费者。</p>
+<ul>
+<li>Shopee与OPPO在菲律宾站点联合推出了最新款OPPO F7 128GB Diamond Black，这款特别版手机只有在Shopee上才能购买到，该活动一经推出便引发菲律宾消费者疯狂抢购。</li>
+</ul>
+<p><strong>7.3.2 举办卖家千人大会</strong></p>
+<p>Shopee每年在旺季前举办千人卖家大会，让卖家了解shopee前半年的发展，包括shopee一路向上的业绩，热卖的产品，提供给卖家的激励机制等，意在让卖家相信平台，有动力升级店力，单量一飞冲天，实现双赢。</p>
+<ul>
+<li>Shopee于2019年7月10日及16日分别在深圳和义乌召开“店力升级 旺季无敌”跨境商家动员大会，延续去年辉煌再推升级版“卖家充电计划”，发400万充电基金，助力更多卖家强力爆单。</li>
+</ul>
+<p><strong>7.3.3 跨界合作</strong></p>
+<p>通过其他企业的优势，shopee跨界合作，强强联手，实现双赢。</p>
+<ul>
+<li>2018年6月，东南亚“滴滴” Grab 和 Shopee 达成合作，现在菲律宾用户可以从 Shopee购买商品，并在同一天通过 Grab 发货。Grab和shopee携手涉足物流领域，为用户提供优质的物流服务。</li>
+<li>2020年，宝洁和Shopee携手合作设计“Shop Me My Home ”的活动，旨在将商品类别关联起来，为消费者提供无缝便携的在线购物体验，从而使消费者很自然的购买相关联商品，促进消费。</li>
+<li>在金融服务方面，Shopee与跨境知名金融服务商Payoneer、PingPong、连连支付均达成合作，让跨境买家有更多元、安全的支付选择。</li>
+</ul>
+<h3>7.4 提高产品口碑，形成自传播</h3>
+<p><strong>7.4.1 助力公益</strong></p>
+<ul>
+<li>2018年5月，shopee携手M2030和盖茨基金会共抗东南亚地区疟疾。</li>
+<li>2020年2月1日，Shopee跨境业务通过深圳市慈善会向武汉疫区捐赠人民币100万元，专项用于支援新型冠状病毒肺炎的疫情防控。</li>
+<li>2020年5月，Shopee响应广东省第二扶贫协作工作组、深圳市委统战部的动员，投身深圳帮扶广西脱贫攻坚事业，远赴广西河池大化县、百色市靖西县实地考察，结对帮扶与广西省大化县国家挂牌督战村弄平村，同时正式成立公益冠名基金</li>
+</ul>
+<p><strong>7.4.2 政府合作</strong></p>
+<ul>
+<li>2018年11月，Shopee与义乌市达成战略合作。 Shopee于新加坡站点开设“义乌馆”，于App首页设立义乌专区入口，为卖家提供流量支持；Shopee在义乌建立“Shopee跨境物流集货仓”；Shopee与义乌工商学院开展校企合作，联合设立“Shopee跨境电商学院”，培养东南亚跨境电商人才 。</li>
+<li>2019年4月，Shopee与厦门市达成战略合作，于厦门成立全国首个Shopee跨境孵化中心，设立专属海西经济区的SLS福建转运仓（Shopee Logistics Service, Shopee自建物流），将海西经济区正式纳入2019年战略版图。</li>
+<li>2019年6月，Shopee与杭州市达成战略合作。通过与杭州综试办联手，Shopee在杭州落地Shopee杭州孵化中心，合作共建Shopee杭州物流中心，落地“双帆计划”推动人才培养，并于新加坡设立“杭州馆”提供流量扶持，共建数字丝路“新杭线”。</li>
+</ul>
+<h2>八、总结、展望及建议</h2>
+<h3>8.1 全文内容总结</h3>
+<p>通过对跨境电商市场以及Shopee的整体分析，我们可以得出以下几个结论：</p>
+<ol>
+<li><strong>行业分析</strong>。从市场环境上分析，外部宏观因素包括政策、经济、社会、技术为出海东南亚的跨境电商的快速发展提供了有利条件。</li>
+<li><strong>竞品分析</strong>。Lazada和Shopee是东南亚地区最受欢迎的两大电商平台，Shopee比lazada起步晚，但Shopee凭着B2C和B2B相结合的商业模式，以及更能理解消费者差异并针对东南亚不同国家推出不同的购物APP,逐渐占领东南亚电商市场，深受东南亚用户的喜爱。</li>
+<li><strong>消费者价值分析</strong>。Shopee主要的使用方为卖家，买家，物流提供方以及平台规则制定者，Shopee了解不同平台使用方的痛点，并发现当时的解决方案不能很好的处理这些问题，shopee设计了自己的方案，很好的解决了用户痛点。</li>
+<li><strong>商业价值分析</strong>。Shopee的核心业务是跨境电商业务，为提高GMV，Shopee在提高新用户数、提高用户转化率、提高客单价这三个方向上结合东南亚年轻人的喜好采取相应措施，促进了GMV的快速增长。</li>
+<li><strong>产品迭代</strong>。整体来看，ShopeeAPP的迭代节奏很好，共经历了三个发展阶段，前期打磨产品基础功能，当用户数达到一定数量，开始转移重心在运营上，最后的阶段持续优化产品整体功能，拓展市场，在每个阶段都有侧重的发展重点并取得了可观的效果。</li>
+<li><strong>产品结构分析</strong>。Shopee移动端的目标用户是消费者，所以所有功能设计都是围绕满足消费者购物前、购物中、购物后三个场景不同的需求进行。通过上文对Shopee功能的梳理，Shopee基本上能满足消费者的需求，好的用户体验才是一个产品的生命力。</li>
+<li><strong>运营路径分析</strong>。运营与产品相辅相成，Shopee重视运营，通过各种运营方式实现产品推广，前文共介绍了shopee打造的11种主要运营方式。这些运营活动帮助Shopee提高了产品知名度和服务质量，强势拉新，吸引更多用户下载shopee，使用shopee，从而实现用户对平台的认可、感兴趣、购买、忠诚（AIPL）。</li>
+</ol>
+<h3>8.2 Shopee未来的发展方向</h3>
+<p><strong>8.2.1 不断优化、创新产品功能</strong></p>
+<p>Shopee出海东南亚主要打造跨境电商功能，同时也将购物功能与多元化的社交、游戏、生活服务等功能相结合，把Shopee打造成了一个有趣、实用、符合当代东南亚年轻人口味的购物平台。</p>
+<p>早在2019年，Shopee移动端就斩获<strong>年度下载量、月活数、用户留存率三大冠军</strong>，这已证明Shopee功能在用户拉新和用户留存方面取得了不错的成绩，同时也是Shopee今后需要继续发展的方向。</p>
+<p>持续优化产品的必备型需求功能，如：购物功能，加大资源投入期望型需求功能，如：社交、游戏功能，找准机会多创造魅力型需求功能，从而不断获得新用户，留住老用户，拉开与竞品的差距。</p>
+<p><strong>8.2.2 持续提供完善的服务体系</strong></p>
+<p>Shopee从商家入驻到店铺成功运营，为卖家提供了一系列的团队服务，让卖家可以方便的解决操作流程中遇到的问题，并且可以学习到更多商铺运营的知识和经验，有助于提高卖家的销售额。</p>
+<p>对买家而言，Shopee从消费者搜索商品到最终下单、售后，为买家提供了优质的购物服务，不断提高用户体验。Shopee需要不断提高对平台目标用户的服务水平，多做用户调研，根据用户反馈发现问题、解决问题。</p>
+<h3>8.3 功能优化</h3>
+<p>其次，经过对Shopee App马来西亚2.60.4版本的使用和分析，笔者发现有两点产品功能可以继续优化，若有分析不到位的地方，请帮忙指出。</p>
+<p><strong>8.3.1 首页内容与用户查询商品的相关性不强</strong></p>
+<p>开始用Shopee时，发现优惠商品推荐栏目，如：百万品牌补贴和限时促销，放在首页布局靠前的位置，这样利于用户打开首页就被优惠商品吸引，从而提高转化率。</p>
+<p>后面测试淘宝和Shopee在首页内容上的区别，分别在淘宝和Shopee首页搜索栏中搜索祖马龙香水，分别进行5次搜索，发现一打开淘宝首页就能看到双11淘宝直播栏目中出现了祖马龙香水的图片，在商品推荐列表中祖马龙香水同样排在了靠前位置。</p>
+<p>相比之下，看到Shopee首页的内容关联就没有这么强，打开首页显示的内容中，除了搜索栏中默认搜索文案变为了祖马龙香水外，其他内容，包括优惠活动推荐栏目还是和之前推荐一样，并没有与用户查询商品相关联，在首页往下滑动，到了首页排布的第8个栏目“热门商品”才推荐了用户常查询的祖马龙香水，展示了商品图片。</p>
+<p>琢磨消费者心理，用户常搜索的商品，大概率情况下是他们想要购买的商品，可能是出于价格对比或购物行为被其他事打断导致搜索浏览完后没有下单，这时如果能在首页的优惠商品推荐栏目、Shopee Live、Shopee Story等栏目中多显示这类被用户搜索次数多、或浏览时间长的商品，针对不同用户提供多一点的个性化推荐，会增加商品的点击率，诱导用户下单。</p>
+<p><strong>8.3.2 运费信息显示逻辑不一致</strong></p>
+<p>在Shopee上购物的过程发现商品列表的商品卡片上有些显示了运费Free的图标，但是到了这些带运费Free图标商品的结算页中，在物流选项中还是出现了运费，并且没有优惠活动可以将其抵消，运费还是被算入了付款总额中。</p>
+<p>这样运费信息显示的不一致，容易误导用户进行下单，但当他们发现还是存在物流费用时，会对优惠信息产生质疑，多出来的运费不符合用户付费预期，从而导致了潜在消费者的流失。更严重的话，会降低用户对平台的信任，很大程度上影响用户对平台的忠诚度。</p>
+<p>所以建议Shopee可以持续优化商品列表中运费Free图标的显示逻辑，做到运费信息一致性，减少因此带给用户的困惑。</p>
+<p>&nbsp;</p>
+<p>本文由 @五月天和我 原创发布于人人都是产品经理，未经作者许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议。</p>

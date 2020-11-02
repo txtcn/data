@@ -17,7 +17,7 @@ https://www.appinn.com/raindrop-5/	20507
 ➜如何转发安卓备机的短信到另一台手机 ？
 https://www.appinn.com/how-to-forward-sms-in-android/	35624
 <p>这是一个 #<a href="https://meta.appinn.net/c/app/tasker/52" class="rank-math-link" target="_blank" rel="noopener">Tasker</a> 板块的话题，@<strong><a href="https://meta.appinn.net/u/feeshy" class="rank-math-link" target="_blank" rel="noopener">feesh</a></strong><a href="https://meta.appinn.net/u/feeshy" class="rank-math-link" target="_blank" rel="noopener"><strong>y</strong> </a>同学因为新办了手机卡，分享了使用 <a href="https://www.appinn.com/tasker/" class="rank-math-link">Tasker</a> 来转发短信到另外一台手机的方法，而各路大神们就开始折腾各种转发方案了。@Appinn</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202010/sms-to-mail.jpg!o" alt="如何转发安卓备机的短信到另一台手机 ？ 27" title="如何转发安卓备机的短信到另一台手机 ？ 28"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202010/sms-to-mail.jpg!o" alt="如何转发安卓备机的短信到另一台手机 ？ 32" title="如何转发安卓备机的短信到另一台手机 ？ 33"></figure></div>
 <p>所以这篇文章还可以叫：<strong>将安卓备机的短信转发到另外一台手机的几种办法</strong>。</p>
 <h2>@feesky 方案</h2>
 <p>首先来看题主 @<strong><a href="https://meta.appinn.net/u/feeshy" target="_blank" rel="noopener">feesh</a></strong><a href="https://meta.appinn.net/u/feeshy" target="_blank" rel="noopener"><strong>y</strong> </a>同学的方法，他利用 Bark 和 <a href="https://www.appinn.com/pushbullet-for-ios-back/" class="rank-math-link">Pushbullet</a> 实现了从 Android 转发短信到 iPhone 的需求：</p>
@@ -29,7 +29,7 @@ https://www.appinn.com/how-to-forward-sms-in-android/	35624
 <h2>@tthy 方案</h2>
 <p>其实原帖是去年 11 月份发布的，今天注意到也是因为 tthy 太能折腾。</p>
 <p>@tthy 通过 <a href="https://www.appinn.com/fooview-fvfile-for-android/" class="rank-math-link">FV悬浮球</a> 的<strong>自定义任务</strong>功能实现了短信转发，<a href="https://meta.appinn.net/t/topic/12460/10?u=qingwa" class="rank-math-link" target="_blank" rel="noopener">具体思路在这里</a>。</p>
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/d/d007aae037eed534402a240eab2573548724e0ec.png" alt="如何转发安卓备机的短信到另一台手机 ？ 28" width="337" height="599" title="如何转发安卓备机的短信到另一台手机 ？ 29"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/d/d007aae037eed534402a240eab2573548724e0ec.png" alt="如何转发安卓备机的短信到另一台手机 ？ 33" width="337" height="599" title="如何转发安卓备机的短信到另一台手机 ？ 34"></figure></div>
 <p>楼主的需求比较简单，触发只要设置触发条件为通知 应用选择 短信 电话，然后把消息传递到子任务，子任务就设置从外部分享内容来获取文字，然后把文字分享，分享通过微信、邮箱，都没问题，无非就是后续动作上的区别，我自己用微信来转发，完全是因为。。。。现在根本离不开微信，另外之前也试过163邮箱，但是转发以后消息总有点延迟。</p>
 <p>@<a href="https://meta.appinn.net/u/tthy" target="_blank" rel="noopener">tthy</a> 表示 FV悬浮球 的可玩性非常高，青小蛙表示满脑袋浆煳，继续往下看。</p>
 <p class="has-large-font-size">但是</p>
@@ -40,15 +40,15 @@ https://www.appinn.com/how-to-forward-sms-in-android/	35624
 <blockquote class="wp-block-quote"><p>这里也推下 SMS to MAIL 这个老 app 吧，不过 Play 已经搜不到了 我用他有5年了。</p><p>从 2.3 的机子用到 A7100 双卡机，简单稳定无广告无内购，有个 SMTP 邮箱就行</p></blockquote>
 <p><strong>SMS to MAIL</strong> 支持 Android 2.3 以上的设备，你可以非常放心的将老设备拿出来用，青小蛙也测试了 Android 11，用起来完全正常。</p>
 <p>长这样：</p>
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202010/photo_2020-10-27_17-43-51.jpg!o" alt="如何转发安卓备机的短信到另一台手机 ？ 29" width="278" height="494" title="如何转发安卓备机的短信到另一台手机 ？ 30"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202010/photo_2020-10-27_17-43-51.jpg!o" alt="如何转发安卓备机的短信到另一台手机 ？ 34" width="278" height="494" title="如何转发安卓备机的短信到另一台手机 ？ 35"></figure></div>
 <p>作为一款上古且不再更新的 App，长这样已经不错了。（在<a href="https://d.appinn.com/sms-to-mail-for-android/" class="rank-math-link" target="_blank" rel="noopener">这里下载 SMS to MAIL</a>）</p>
 <p>使用简单，只需要添加一组规则，设置一个 SMTP 账号就行了，最后记得在 HOME 页面里点击 ACTIVE 激活：</p>
 <div class="wp-block-columns">
 <div class="wp-block-column">
-<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202010/photo_2020-10-27_17-43-53.jpg!o" alt="如何转发安卓备机的短信到另一台手机 ？ 30" title="如何转发安卓备机的短信到另一台手机 ？ 31"><figcaption>规则里需要设置一个接收邮箱</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202010/photo_2020-10-27_17-43-53.jpg!o" alt="如何转发安卓备机的短信到另一台手机 ？ 35" title="如何转发安卓备机的短信到另一台手机 ？ 36"><figcaption>规则里需要设置一个接收邮箱</figcaption></figure>
 </div>
 <div class="wp-block-column">
-<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202010/photo_2020-10-27_17-43-52.jpg!o" alt="如何转发安卓备机的短信到另一台手机 ？ 31" title="如何转发安卓备机的短信到另一台手机 ？ 32"></figure>
+<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202010/photo_2020-10-27_17-43-52.jpg!o" alt="如何转发安卓备机的短信到另一台手机 ？ 36" title="如何转发安卓备机的短信到另一台手机 ？ 37"></figure>
 </div>
 </div>
 <p>当然青小蛙还是轻敌了，没想到这个方案中，SMTP 账号是最难获得的&#8230;</p>
@@ -56,4 +56,4 @@ https://www.appinn.com/how-to-forward-sms-in-android/	35624
 <p>就这样，Yahoo 居然在青小蛙的账号中复活了&#8230;</p>
 <p>另外，你还可以设置 <strong>SMS to MAIL</strong> 的规则，让他帮你把短信转发到另外一个手机号码上，只需要花费少许的短信费用。</p>
 <p>当然，买一个带有双卡手机可能是更简单的解决方案。</p>
-<div class="wp-block-image is-style-default"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202010/weixin-qrcode.jpg!o" alt="小众软件微信公众号二维码" title="如何转发安卓备机的短信到另一台手机 ？ 33"></figure></div>
+<div class="wp-block-image is-style-default"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202010/weixin-qrcode.jpg!o" alt="小众软件微信公众号二维码" title="如何转发安卓备机的短信到另一台手机 ？ 38"></figure></div>
