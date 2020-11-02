@@ -135,8 +135,9 @@ that.setData({ items: res.data });
 </code></pre></blockquote>
 <p>上面代码中，<code>&lt;open-data&gt;</code>组件的<code>type</code>属性指定所要展示的信息类型，<code>userAvatarUrl</code>表示展示用户头像，<code>userNickName</code>表示用户昵称。</p>
 <p>开发者工具导入项目代码，页面渲染结果如下，显示你的头像和用户昵称。</p>
-<p><img src="https://www.wangbase.com/blogimg/asset/202011/bg2020110201.jpg" alt="" title="" /></p>
+<p><img src="https://www.wangbase.com/blogimg/asset/202011/bg2020110205.jpg" alt="" title="" /></p>
 <p><code>&lt;open-data&gt;</code>支持的用户信息如下。</p>
+<blockquote>
 <ul>
 <li><code>userNickName</code>：用户昵称    </li>
 <li><code>userAvatarUrl</code>：用户头像    </li>
@@ -146,6 +147,7 @@ that.setData({ items: res.data });
 <li><code>userCountry</code>：用户所在国家</li>
 <li><code>userLanguage</code>：用户的语言</li>
 </ul>
+</blockquote>
 <p>这个示例的完整代码，可以参考<a href="https://github.com/ruanyf/wechat-miniprogram-demos/tree/master/demos/16.open-data">代码仓库</a>。</p>
 <p><code>&lt;open-data&gt;</code>不需要用户授权，也不需要登录，所以用起来很方便。但也是因为这个原因，小程序不允许用户脚本读取<code>&lt;open-data&gt;</code>返回的信息。</p>
 <h2>五、获取用户个人信息</h2>
