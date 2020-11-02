@@ -68,3 +68,127 @@ http://www.expreview.com/76538.html	42900
 ➜仅售100美元的Raspberry Pi 400键盘主机，会是你开始树莓派最佳入门选择
 http://www.expreview.com/76540.html	46740
 <p>Raspberry Pi（树莓派）作为全球最受欢迎的SBC，近年来一直也在推陈出新，以满足不同的需求，但基本保持了一块绿色PCB的模样，显得很极客硬核，如果你本来就喜欢这集成电路风格那还好，只是对于新手，特别是小朋友就不友好了，其实Raspberry Pi基金会有推出过官方的机壳，现在他们把Raspberry Pi做得更加简化了，推出一款自带Raspberry Pi 4的键盘主机。</p><p>这个Raspberry Pi 400的外观和体积，基本是与此前官方那个78键的纯键盘是一样的，只是在里面塞入了Raspberry Pi 4B的配置，但它不是简单地把Raspberry Pi 4给塞进去，而是重新设计了PCB，所以并非只是个带有键盘的机壳，它是一台完整的设备，插电和接上显示、网络就能用。</p><p>内部主要硬件方面，两者则是基本相同的，SoC采用了与Raspberry Pi 4B相同的博通BCM2711，为64位4核心的Cortex-A72 CPU，但应该是用了新步进的芯片，现在默认频率提高到了1.8GHz，并在键盘内带有大面积的散热片，但内存方面只有4GB可选，依然没有内置eMMC存储，只能用microSD卡扩展。</p><p style="text-align:center;"><img src="https://img.expreview.com/news/2020/11/02/rasp_pi_400_02.jpg" width="100%"/></p><p>机器的接口也几乎与Raspberry Pi 4B相同，有两个USB 3.0、两个支持4K60输出的micro HDMI，一个千兆网卡（现在支持PoE），一个供电用的USB-C，以及40pin的GPIO接口，但USB 2.0只有一个，应该是另外一个用来在内部接了键盘，而无线连接方面，支持双频ac Wi-Fi，以及蓝牙5.0 BLE。</p><p>机器的接口也几乎与Raspberry Pi 400，还随机附带了官方鼠标、USB-C电源适配器，内置有操作系统的MicroSD卡，micro HDMI线，还有一本新手入门指南，所以目的很明确，就是为了提供教育市场，还有那些不喜欢或不懂折腾硬件的用户，它的售价为100美元，也比配齐一套Raspberry Pi 4要更便宜些，国内单机的售价为615元，感兴趣可以<a href="https://www.raspberrypi.org/products/raspberry-pi-400/?resellerType=home" target="_blank">点这里</a>找中国的经销商。</p>
+➜《看门狗：军团》硬件需求评测：游戏中的顶级黑客需要现实中的顶级显卡助力
+http://www.expreview.com/76539.html	55440
+<!-- Windows 10,显卡测试,热管,显卡测试,热管,显卡测试,热管,热管 --><p>育碧旗下的《看门狗》系列游戏到今天已经有三部作品，分别是《看门狗》、《看门狗2》以及在今年10月底正式发售的《看门狗：军团》，其中在2014年5月底发售的《看门狗》凭借极高的游戏自由度、出色的游戏质量与丰富的游戏内容被誉为“开启次世代游戏的大门之作”，只可惜两年后的《看门狗2》在代入感与角色塑造上表现平平，虽然完成了延续前作的任务，但是并未实现超越前辈的目标，在玩家群中的口碑也大不如前作。</p><p>而作为该系列作品的第三部，《看门狗：军团》原定是在今年3月6日发售的，但由于各种各样的原因以及开发人员需要更多的时间来打磨游戏，最终游戏跳票至今年10月29日才正式发售。不过这次跳票似乎还是有价值的，因为《看门狗：军团》相比前两部作品确实作出了很多改动，同时引入了一些新的玩法，例如玩家不再操纵固定的角色，而是通过招募NPC的方式来实现游戏角色的多样化，这是《看门狗：军团》相比前两作的最大区别，也是游戏的核心玩法。</p><p style="text-align: center;"><img border="0" src="https://img.expreview.com/review/2020/11/Watch_D/open-00.jpg" width="100%"/></p><p>当然《看门狗：军团》相比前两作不仅仅在游戏模式上进行了改变，作为确定会登陆新世代游戏主机PS5和Xbox Series
+X/S的作品，《看门狗：军团》画质上也做出了充分的改进，而目前能为游戏画质提供明显改善的技术，光线追踪以及配套的DLSS功能显然是首选，而《看门狗：军团》也确实是目前首发即支持光线追踪与DLSS功能的游戏大作之一。</p><p>有新的玩法，而且还有光线追踪与DLSS，相信《看门狗：军团》这对于很多玩家来说，这就已经有足够的吸引力了。那么我们需要怎么样的硬件配置才能畅玩《看门狗：军团》呢？现在的主流游戏平台在新作面前是否存在性能压力呢？这就是我们今天要看的内容。</p><h1><strong>《看门狗：军团》画质设置</strong></h1><p>《看门狗：军团》不仅是最新款的3A游戏大作，而且它还是一个功能丰富的PC硬件性能测试工具，因为其不仅提供有丰富的画质设置项目，而且自带有内置Benchmark以及性能分析功能，可以很直观地让玩家看到自家PC平台在什么地方形成了《看门狗：军团》的运行瓶颈，从而有了明确的改善方向。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/11/Watch_D/WD-07.jpg" width="100%"/><br/>
+《看门狗：军团》画质设置界面</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/11/Watch_D/WD-08.jpg" width="100%"/></p><p style="text-align:left;">《看门狗：军团》提供有大量的画质设置选项，同时也提供有5个预设画质，分别为低、中、高、非常高和最高，不过五档画质选项都没有开启光线追踪与DLSS功能，同时“最高”画质也不是真正的最高画质，其“头灯阴影”选项在预设最高时仅为“2辆车”，而手动选到最高的话是“4辆车”。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/11/Watch_D/WD-09.jpg" width="100%"/></p><p>光线追踪与DLSS是需要使用GeForce RTX系列显卡并手动开启的，其中光线追踪提供有<span lang="zh-cn">无、适量、高、非常高四个档位，DLSS则有无、效能模式、品质模式、平衡模式与最高效能五个档位。按照游戏的规划，DLSS一般是搭配光线追踪功能使用，其中1080P+光追推荐开品质模式，2K+光追推荐平衡模式，4K+光追推荐效能模式，最高效能则仅适用于8K分辨率下。</span></p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/11/Watch_D/WD-04.jpg" width="100%"/></p><p style="text-align:left;">在画质设置界面中我们可以看到游戏的内置Benchmark功能，运行后会给出相应的成绩，除了有最高FPS、平均FPS、最低FPS等常规成绩外，还会有包括显存占用、内存占用、CPU占用以及GPU占用等多项数据，甚至还会绘制相应的帧数曲线以及帧生成时间曲线。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/11/Watch_D/WD-05.jpg" width="100%"/></p><p style="text-align:left;">我们还可以通过Benchmark的成绩直接分析哪个画质选项对帧数影响比较大，以及平台中哪个硬件对游戏性能有较大影响，例如上图中的“CPU效能低下”就代表现在平台中的CPU限制了其它硬件的发挥。</p><h1>测试平台与相关设置说明</h1><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+align: 'left',
+width: '82%',
+padding: '8px 15px',
+header: ["测 试 平 台", ""],
+columnWidth: 'MAX', //表格单元宽度，"MAX"最大内容显示，""AVG"平均，"AUTO"自动，指定[15,16,20]
+id: tableid,
+data: [
+["<b>硬件平台</b>"],
+["CPU ", "英特尔酷睿i9-10900K @ 默认频率"],
+["主板", "微星MEG Z490 GODLIKE（Intel Z490）"],
+["显卡", "索泰RTX 3090 X-GAMING<br>索泰RTX 3080 天启<br>索泰RTX 3070 X-GAMING<br>索泰RTX 2080 SUPER 玩家力量至尊OC<br>索泰RTX 2070 SUPER 玩家力量至尊OC<br>讯景RX 5700 XT 海外三风扇版", ],
+["内存", "芝奇皇家戟DDR4-4000 CL15 8GB *2", ],
+["SSD硬盘", "浦科特M9Pe 512G", ],
+["CPU散热器", "XPG LEVANTE 240 ARGB", ],
+["电源", "猎金部落GAMING GX 850W", ],
+["显示器", "戴尔UP3218K @ 7680x4320 60Hz", ],
+["<b>软件配置</b>"],
+["操作系统", "Microsoft Windows 10 Pro 2004 64-bit", ],
+["驱动", "NVIDIA GeForce Game Ready Driver 457.09<br>AMD Radeon Software Adrenalin 2020 Edition 20.10.1 Optional", ]
+]
+});</script></div><p>我们先来看一下这次测试的平台，平台基于英特尔酷睿i9-10900K处理器打造，配置有双通道DDR4-4000 8GB*2内存，显卡方面选用的是6款当前的中高端显卡，包括有NVIDIA的GeForce RTX 2090、RTX 3080、RTX 7070、RTX 2080 Super、RTX 2070 SUPER以及Radeon RX 5700XT，具体产品型号如下所示：</p><p><strong>- 索泰RTX 3090 X-GAMING OC<br/>- 索泰RTX 3080 天启<br/>- 索泰RTX 3070 X-GAMING OC<br/>- 索泰RTX 2080 SUPER 玩家力量至尊OC<br/>- 索泰RTX 2070 SUPER 玩家力量至尊OC<br/>- 讯景RX 5700 XT 海外三风扇版</strong></p><p style="text-align: center;"><img src="https://img.expreview.com/news/2020/09/19/p.jpg" width="100%"/><br/>索泰RTX 3090 X-GAMING OC</p><p style="text-align: center;"><img src="https://img.expreview.com/review/2020/10/3080TQ/jpg/1.jpg" width="100%"/><br/>索泰RTX 3080 天启</p><p style="text-align: center;"><img src="https://img.expreview.com/review/2020/10/ZOTACX/1-2.jpg" width="100%"/><br/>索泰RTX 3070 X-GAMING OC</p><p style="text-align: center;"><img src="https://img.expreview.com/review/2019/08/zotac2080super/look/pgf/fall/2.jpg" width="100%"/><br/>索泰RTX 2080 SUPER 玩家力量至尊OC</p><p style="text-align: center;"><img src="https://img.expreview.com/review/2019/07/ZOTAC-Super/ZOTAC-Super-2.jpg" width="100%"/><br/>索泰RTX 2070 SUPER 玩家力量至尊POC</p><p style="text-align: center;"><img src="https://img.expreview.com/review/2019/10/5700XTIII/DSC_7372.jpg" width="100%"/><br/>讯景RX 5700 XT 海外三风扇版</p><p>测试时使用的操作系统为Windows 10 Pro 64位 2004版，显卡驱动均为最新版，分别是NVIDIA GeForce Game Ready Driver 451.67 WHQL以及AMD Radeon Software Adrenalin 2020 Edition 20.10.1
+Optional，测试测试场景为内置Benchmark，测试分为1080P、2K、4K以及8K分辨率三个项目，均启用“最高”级别
+画质，同时我们还将进行光线追踪与DLSS功能的相关测试。</p><h1>《看门狗：军团》显卡需求测试</h1><h2>1080P/2K/4K分辨率显卡测试<br/></h2><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "显卡测试 | 看门狗：军团 | 预设最高画质 | 无光线追踪 | 无DLSS"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "FPS "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 120; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type":"1920x1080","RTX 3090":"112","RTX 3080":"105","RTX 3070":"91","RTX 2080 SUPER":"79","RTX 2070 SUPER":"75","RX 5700 XT":"68"},{"type":"2560x1440","RTX 3090":"91","RTX 3080":"86","RTX 3070":"71","RTX 2080 SUPER":"59","RTX 2070 SUPER":"56","RX 5700 XT":"48"},{"type":"3840x2160","RTX 3090":"59","RTX 3080":"55","RTX 3070":"43","RTX 2080 SUPER":"30","RTX 2070 SUPER":"28","RX 5700 XT":"22"}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>首先我们来看看1080P、2K以及4K分辨率下PC版《看门狗：军团》的显卡需求，在开启预设的“最高”画质且不开启光线追踪与DLSS功能的情况下，可以看到游戏对显卡的要求虽然称不上是“杀手”级，但也算不上是亲民水平。从成绩上看，在1080P分辨率下，主流级的游戏显卡确实可以获得很不错的帧数体验，按照RX 5700 XT级别显卡也能有平均70FPS的水平来看，RX 5700或RTX 2060 SUPER级别的显卡基本上也能满足此时的游戏需求。</p><p>2K分辨率下游戏对显卡的要求有一个档次的提升，从成绩上看需要不低于RTX 2070 SUPER级别的显卡才能获得平均60FPS水平的帧数，要求不算低但仍然在我们的期望范围之内；不过到了4K分辨率游戏对显卡的要求就大幅度提升了，如果你追求的是4K分辨率、预设最高画质、平均60FPS的要求，那么RTX 3080甚至是RTX 3090显卡才能满足你的需求。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/11/Watch_D/WD-01.jpg" width="100%"/></p><p style="text-align:left;">那么为什么《看门狗：军团》在1080P与2K分辨率下显卡需求只差了一个档次，而从2K到4K分辨率就有了质的差异，需要用到当前最强的游戏显卡呢？其实我们可以从游戏的显存占用上看出一些端倪。根据《看门狗：军团》自带Benchmark提供的信息，在1080P分辨率下，游戏的显存占用是在8GB以内，因此8GB显存的显卡在性能发挥上基本不会受阻。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/11/Watch_D/WD-04.jpg" width="100%"/></p><p style="text-align:left;">然而在4K分辨率下，游戏的显存占用是可以去到接近9GB的，也就是说8GB显存的显卡会碰上显存不足的情况，这时候游戏就会借用系统内存来充当显存使用，系统内存与显存之间存在巨大的带宽差异，而且还有延时等不利因素，显然会干扰到GPU的性能发挥。因此在高分辨率的情况下，拥有24GB显存的RTX
+3090与10GB显存的RTX
+3080受到的影响要远小于其它参测的8GB显存产品。而这里也给了我们一个提示，那就是想要畅玩《看门狗：军团》，8GB显存的显卡应该是“起步价”。</p><h2>光线追踪+DLSS显卡测试<br/></h2><p>《看门狗：军团》支持光线追踪与DLSS功能，因此相比于常规的预设画质，开启了光线追踪与DLSS功能的游戏才是《看门狗：军团》的完全体，而目前这个“完全体”只有GeForce RTX系列显卡可以品尝，这也是GeForce RTX系列显卡在目前的优势之一。</p><p>在这项测试中，游戏的光线追踪效果统一设置在“高”等级，而DLSS则根据分辨率的不同来选择不同档次，其中1080P分辨率对应DLSS品质模式、2K分辨率对应平衡模式、4K分辨率对应效能模式。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "显卡测试 | 看门狗：军团 | 最高画质 | 光线追踪 | DLSS"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "FPS "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 100; //指定X轴最大值，null时为自动
+var autocolor = 0; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+//var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+var mycolor = ANIColor('NVIDIA',3);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr =[{"type":"1080P+光追","RTX 3090":"80","RTX 3080":"75","RTX 3070":"61","RTX 2080 SUPER":"49","RTX 2070 SUPER":"46"},{"type":"1080P+光追+DLSS","RTX 3090":"94","RTX 3080":"90","RTX 3070":"78","RTX 2080 SUPER":"67","RTX 2070 SUPER":"64"},{"type":"2K+光追","RTX 3090":"60","RTX 3080":"56","RTX 3070":"42","RTX 2080 SUPER":"35","RTX 2070 SUPER":"31"},{"type":"2K+光追+DLSS","RTX 3090":"87","RTX 3080":"83","RTX 3070":"67","RTX 2080 SUPER":"58","RTX 2070 SUPER":"54"},{"type":"4K+光追","RTX 3090":"35","RTX 3080":"33","RTX 3070":"21","RTX 2080 SUPER":"11","RTX 2070 SUPER":"10"},{"type":"4K+光追+DLSS","RTX 3090":"70","RTX 3080":"67","RTX 3070":"40","RTX 2080 SUPER":"33","RTX 2070 SUPER":"31"}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>从测试成绩来看，如果你只打开光线追踪，不使用DLSS功能，那么要在游戏中获得平均60FPS的体验，在1080P分辨率需要不低于RTX 3070级别的显卡,，2K分辨率下则需要RTX 3090，4K分辨率则基本可以直接告别，毕竟RTX 3090显卡也只能跑出平均35FPS的成绩。</p><p>因此在预设最高画质且开启光线追踪的情况下，要获得比较好的游戏帧数体验，DLSS功能是必不可少的。在启用相应等级的DLSS功能后，我们可以看到1080P分辨率下显卡的需求已经下降至RTX 2070 SUPER，2K分辨率下则是RTX 2080 SUPER，4K分辨率下则需要RTX 3080，而且从成绩分布来看，4K分辨率下的显存占用又成了8GB显存显卡在《看门狗：军团》中“最大的痛”。</p><h2>8K分辨率显卡测试</h2><p>8K分辨率下的测试其实是娱乐性的，因为目前有能力尝试8K分辨率游戏的，基本上只有RTX 3090显卡，RTX 3080最多只能摸一下边。因此在8K分辨率测试中我们只收录了RTX 3080与RTX 3090两款显卡的成绩，包括开启光追与DLSS下的成绩。<br/></p><p>需要注意的是8K分辨率下测试所用的游戏画质仍然是预设最高，光线追踪也是开启到高等级，不过DLSS使用的是最高效能模式，此模式是专门针对8K分辨率而开发的。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "显卡测试 | 看门狗：军团 | 7680x4320 | 预设最高画质"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "FPS "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 50; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [{"type":"8K","RTX 3090":"21","RTX 3080":"12"},{"type":"8K+光追","RTX 3090":"11","RTX 3080":"8"},{"type":"8K+光追+DLSS","RTX 3090":"43","RTX 3080":"21"}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>8K分辨率下的《看门狗：军团》在显存占用上其实可以达到15GB的水平，因此只有10GB显存的RTX 3080显卡在运行“8K+光线追踪”测试时曾多次出现游戏闪退的现象，个位数的帧数也表示其根本不可能满足这种情况下的游戏性能需求，只有DLSS方能拯救RTX 3080显卡，在同时开启光线追踪与DLSS的情况下RTX 3080的平均帧数为21FPS，尽管仍然没有什么游戏体验可言，但进去截图还是可以的。</p><p>相比之下拥有24GB显存的RTX 3090就从容得多，虽然8K分辨率+光线追踪只能跑出平均11FPS的水平，但是在开启DLSS后会提升到平均43FPS，虽然不是理想状态但用来体验游戏是问题不大的。</p><h1>《看门狗：军团》CPU需求测试<br/></h1><p>接下来我们看看《看门狗：军团》对CPU的硬件需求，测试中我们通过调整主频以及开关核心/线程的方式来模拟不同级别的处理器，同时为了不让显卡造成性能瓶颈，测试中我们将使用RTX 2080 Ti显卡，选用1080P分辨率并开启预设最高的“非常高”画质。<br/></p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "CPU测试 | 看门狗：军团 | 1920x1080 | 预设最高画质 | RTX 3090"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "FPS "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 0; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度,当为7倍数时，不显示刻度线
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 120; //指定X轴最大值，null时为自动
+var autocolor = 0; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为AMD NV Intel 标准色,
+//var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿，可替换成AMD Intel
+var mycolor = ANIColor('Intel',9);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr =[{"type":"平均帧","4C4T 4.5GHz":"96","4C8T 4.5GHz":"101","6C6T 3.5GHz":"99","6C6T 4.0GHz":"103","6C6T 4.5GHz":"105","6C12T 4.5GHz":"108","8C8T 4.5GHz":"108","8C16T 4.5GHz":"109","10C20T 4.5GHz":"111"}];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor, xaxismax);</script></div><p>《看门狗：军团》对CPU的要求并不低，这也是大部分沙盒型游戏的共通点。我们可以看到与10核心规格的CPU相比，六核心和八核心CPU在游戏中的性能差距不算拉得太大，但四核心CPU已经尽显疲态，成为了限制显卡性能发挥的明显瓶颈。而超线程的开启与否也会对游戏帧数形成一定的影响，另外主频对游戏的影响也依旧明显，高频处理器在《看门狗：军团》中仍然有一定优势。</p><p>因此从成绩上看，《看门狗：军团》对CPU的要求是6核心起步，而且要尽量选择支持超线程的高频产品，这样才能在在游戏中尽可能地发挥其他硬件的效能。</p><h1>就算是游戏中做黑客，你也要有强悍的PC硬件</h1><p>作为年度游戏的有力竞争者，《看门狗：军团》对PC硬件的需求虽然算不上“杀手级”，但也不能简单地用“亲民”二字来形容。诚然如果我们只是需要在1080P分辨率加预设最高画质下游戏，主流级的RX 5700 XT级别显卡已经能跑出平均70FPS水平的帧数，也就是说RX 5700/RTX 2060 SUPER级别显卡应该可以获得不错的游戏体验，足够玩家畅玩游戏了。&nbsp;</p><p>但是如果你对游戏画面的要求比较高，例如说我要在4K分辨率下游戏，又或者是需要开启光线追踪特效，那么很显然主流级的游戏显卡是满足不了你的，你必须要将显卡的预算至少提升到RTX 3070的级别，方能在更高分辨率加光追特效的环境下畅玩《看门狗：军团》。当然如果你追求的是极致画面效果，例如8K分辨率+光线追踪，那么现在RTX 3090基本上是你唯一之选，而且你必须要借助DLSS技术，才能获得“可以一试”的游戏体验。</p><p>至于CPU方面的要求则比显卡要“简单”一些，因为不管是你的目标是什么，目前四核CPU在《看门狗：军团》中都会显露出疲态，正在逐步成为主流的六核心CPU才是高性价比的选择，而且要尽量选择带超线程技术的高频产品。当然预算充足的玩家也可以直接选用更高端的CPU，因为《看门狗：军团》能够展现出高端产品的价值。</p>
