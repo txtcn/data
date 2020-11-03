@@ -1,3 +1,288 @@
+➜滴滴出品！如何从零开始设计一款地图？
+https://www.uisdc.com/map-design-2	59697
+<p>通过阅读“地图基础知识及通用设计原则”，相信大家已经对地图及其设计有了一定认知，本篇我们来了解下如何实践。</p>
+<p>[link https://www.uisdc.com/map-design]</p>
+<h4><span class="auto_menu">Part 1. 上篇要点回顾</span></h4>
+<p><strong>1. 核心设计原则</strong></p>
+<ul>
+<li>符合制图学和公众认知</li>
+<li>保证识别度</li>
+<li>清晰有层次</li>
+<li>细分地图模式</li>
+<li>具有品牌特性</li>
+</ul>
+<p><strong>2. 元素分类</strong></p>
+<ul>
+<li>点元素：地名、POI等</li>
+<li>线元素：道路、地铁线、水系线、铁路线、航线、边界线等</li>
+<li>面元素：陆地、草地、湖泊海洋、AOI等</li>
+</ul>
+<p>*名词解释：POI, Point of Information的缩写，即“信息点”。一个POI可以是一栋房子、一个商铺</p>
+<p>*名词解释：AOI, Area of Interest的缩写，即“信息面”。指的是区域状的地理实体，如医院、小区等</p>
+<h4><span class="auto_menu">Part 2. 设计背景</span></h4>
+<p>为了实现“让出行更美好”的使命，今年乘客端新增了自驾导航。地图贯穿了该产品的全流程，且首页、路线规划页、导航中等场景用户需求都不相同。然而已有的模式，从配色到信息展现，都不符合首页地图的场景需求，于是需要重新设计。</p>
+<p>以下详解设计过程。</p>
+<h4><span class="auto_menu">Part 3. 设计落地</span></h4>
+<h5>1. 设计关键词推导</h5>
+<p>根据自驾导航的目标，拆解出了首页地图的设计目标：</p>
+<ul>
+<li>构建适合自驾场景的浏览地图</li>
+<li>提升地图体验与设计品质，提高用户满意度和好感度</li>
+<li>打造具有滴滴品牌调性的地图</li>
+</ul>
+<p>用户需求及习惯表明：在首页主要是明确自身定位、查看其他位置信息，且视距基本是手持距离。那么“构建适合自驾场景的浏览地图”关键点就在于识别度，更好的展示重点信息，保证用户读图效率。</p>
+<p>“提升地图体验与设计品质，打造具有滴滴品牌调性的地图”的目标，可以通过视觉手段实现。在浏览场景，用户使用地图的时间不固定，为避免长时间浏览产生疲惫感，地图配色需要更舒适，对比度也要适中。这点也与自驾导航整体的设计关键词“轻量”不谋而合，于是推导出了关键词轻量化、品牌感。</p>
+<h5>2. 设计地图方案</h5>
+<p>明确设计关键词后，开始着手设计。关键词中的轻量化、品牌感基本上决定了这款地图的调性，识别度则重点影响信息展现。上篇提到，设计时可以把地图元素拆分成点、线、面三类，按照由大到小的顺序设计，即先确定配色，再设计文字图标等信息，以免元素过多互相干扰。</p>
+<p><strong>设计整体配色</strong></p>
+<p>轻量化：传达轻量化的感受需要控制取色范围，于是我们制定了颜色使用规则（下图）。</p>
+<p>色相：以冷色为主，医院（红色系）等具有公众认知的颜色可除外；颜色从品牌色系中选取</p>
+<p>明度：限定颜色的明度范围，选取中间-略高的部分，平衡颜色对比度</p>
+<p>饱和度：避免使用高饱和度的颜色，保证配色的舒适感</p>
+<p>通过分析颜色，我们对传达轻量化的感受有了大致的把握。那么品牌感如何体现呢？</p>
+<p>品牌感：具有品牌调性的地图能更好的融入产品设计风格，也能够区别于竞品，这在滴滴全流程的设计中都十分重要。在地图上我们主要用颜色及图标绘制表达品牌调性。</p>
+<p>颜色：结合轻量化的用色规则，从品牌色系中选取，使地图配色与其他组件更加融合</p>
+<p>图标绘制：沿用滴滴设计规范中的图标绘制语言，如圆角、简单形状等，拉齐视觉感受</p>
+<p><span class="img-zoom"><img alt="滴滴出品！如何从零开始设计一款地图？" class="alignnone size-full wp-image-394660" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-xs-20201102-1.jpg" width="1200" height="706" /></span></p>
+<p><span class="img-zoom"><img alt="滴滴出品！如何从零开始设计一款地图？" class="alignnone size-full wp-image-394661" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-xs-20201102-2.jpg" width="1178" height="582" /></span></p>
+<p>最终根据“轻量化”和“品牌感”这两个关键词，设计出了地图配色的效果图。</p>
+<p><span class="img-zoom"><img alt="滴滴出品！如何从零开始设计一款地图？" class="alignnone size-full wp-image-394662" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-xs-20201102-3.jpg" width="1200" height="531" /></span></p>
+<p><strong>设计地图信息</strong></p>
+<p>配色确定后，即可开启POI图标+文字、AOI文字、道路文字、以及各类行政区划文字的设计。</p>
+<p>识别度：设计地图信息时，保证基本识别度的方式，可通过文字颜色、字号大小、图标绘制等实现。但是要做到清晰有重点，就要关注信息间的层次感。</p>
+<p>以POI信息为例。回顾下此时的用户需求：了解自身定位、查看其他位置信息。从这点可以锁定第一展示优先级应为POI——地图上定位最精准的信息种类。而已有的图标识别度较弱，无法满足需求，于是我们进行了重绘。通过用色表达图标类型、首选有公众认知的载体作为表意、增强颜色饱和度及对比度，搭配文字颜色，从视觉上把POI信息提升至第一顺位。</p>
+<p>用同样的方法，根据重要程度，通过设计拉开了信息的视觉层级：POI&gt;道路名称&gt;AOI名称&gt;行政区划信息。</p>
+<p><span class="img-zoom"><img alt="滴滴出品！如何从零开始设计一款地图？" class="alignnone size-full wp-image-394663" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-xs-20201102-4.jpg" width="1040" height="800" /></span></p>
+<p><strong>整体调整</strong></p>
+<p>在完成了配色和信息设计后，我们需要整合所有元素统一调整。此时，通常会出现元素互相干扰的问题，我们可以回归到场景需求中解决此类问题，按照信息的重要程度调整，最终形成完整方案。</p>
+<p><span class="img-zoom"><img alt="滴滴出品！如何从零开始设计一款地图？" class="alignnone size-full wp-image-394664" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-xs-20201102-5.jpg" width="1200" height="724" /></span></p>
+<h4><span class="auto_menu">Part 4. 设计验证</span></h4>
+<p>地图方案落地后，我们会关注设计品质的验证。由于地图的工具属性，验证其设计品质及用户满意度一直是行业内较困难的事情。地图既是一种图形语言，又承载了大量的信息，且需符合场景需求，要验证的内容非常多。因此我们建立了地图评测模型，从美观度、识别度、读图效率等多维度进行评测，量化地图设计品质。</p>
+<p>通过对自驾导航首页地图的两轮调研，我们回收了大量有效结论，如用户对道路等级的关注程度、如何使用AOI信息等等。新版地图在美观度、识别度等方面均得到了用户的认可。</p>
+<p>了解用户的声音，能更好的帮助我们深耕地图设计领域、全力推动地图体验优化。</p>
+<p><span class="img-zoom"><img alt="滴滴出品！如何从零开始设计一款地图？" class="alignnone size-full wp-image-394665" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-xs-20201102-6.jpg" width="1200" height="339" /></span></p>
+<h4><span class="auto_menu">Part 5. 未来形态畅想</span></h4>
+<p>当前科技发展迅速，近些年出现的HUD、AR等导航，用现实世界的画面代替了地图，不需要转换思维、记忆地图语言，让人与世界的连接更轻松便捷。我们不妨顺着这个趋势大胆的畅想一番，在未来的某天，世界的数据会植入我们脑中，不再有陌生的地方，现有的地图形态也许会消失，因为它就在我们脚下。</p>
+<p>欢迎关注滴滴创意设计中心：</p>
+<p><span class="img-zoom"><img alt="滴滴出品！如何从零开始设计一款地图？" class="alignnone size-full wp-image-160743" src="https://image.uisdc.com/wp-content/uploads/2017/07/ddqr1.png" alt="滴滴出品！地图基础知识及通用设计原则" width="180" height="180" /></span></p>
+➜看不懂UI文字设计规范？这篇文章帮你搞定！
+https://www.uisdc.com/ui-text-design-specification	60350
+<p>UI设计中，文字设置是必不可少的一环。</p>
+<p>文字设置过程中涉及到字体类型、字号、字重、行高、行宽以及颜色等。</p>
+<p>本文讲述的文字设计规范，包含以下部分：</p>
+<ul>
+<li>类型</li>
+<li>字号</li>
+<li>字重</li>
+<li>行高</li>
+<li>行宽</li>
+<li>颜色</li>
+</ul>
+<h4><span class="auto_menu">类型</span></h4>
+<p>iOS设备的系统默认字体，中文为苹方，英文&amp;数字为SF UI Text。</p>
+<p><span class="img-zoom"><img alt="看不懂UI文字设计规范？这篇文章帮你搞定！" class="alignnone size-full wp-image-394683" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-gd-20201102-1.jpg" width="811" height="312" /></span></p>
+<p>Android设备系统默认字体，中文为思源黑体，英文&amp;数字为Roboto。</p>
+<p><span class="img-zoom"><img alt="看不懂UI文字设计规范？这篇文章帮你搞定！" class="alignnone size-full wp-image-394684" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-gd-20201102-2.jpg" width="797" height="307" /></span></p>
+<h4><span class="auto_menu">字号</span></h4>
+<p>不同的使用场景，文字的字号也不相同。文字的主使用场景分为：一级标题、二级标题、三级标题、正文和提示文字 。</p>
+<p>文字最小字号一般为11。也有特殊情况，例如标签里面的文字，字号为10甚至可能更小。</p>
+<p><span class="img-zoom"><img alt="看不懂UI文字设计规范？这篇文章帮你搞定！" class="alignnone size-full wp-image-394685" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-gd-20201102-3.jpg" width="812" height="559" /></span></p>
+<h4><span class="auto_menu">字重</span></h4>
+<p>字重就是指字体笔画的粗细。字重的等级是用来标明同一字体家族中不同粗细笔画的字型。</p>
+<p>UI设计中，常用的字重有两个，一个是常规（Regular），另一个是中黑体（ Medium）。</p>
+<p>正常文字使用常规体（Regular）。当需要突出层级展示，增加对比时使用中黑体（ Medium），中黑体（ Medium）常用于标题。</p>
+<p><span class="img-zoom"><img alt="看不懂UI文字设计规范？这篇文章帮你搞定！" class="alignnone size-full wp-image-394686" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-gd-20201102-4.jpg" width="842" height="162" /></span></p>
+<h4><span class="auto_menu">行高</span></h4>
+<p>字号大小等于文字高度，如下图所示，字号为16时，行高设置为16，那么其行高也是字体本身的高度（16pt）。</p>
+<p><span class="img-zoom"><img alt="看不懂UI文字设计规范？这篇文章帮你搞定！" class="alignnone size-full wp-image-394687" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-gd-20201102-5.jpg" width="1080" height="170" /></span></p>
+<p>行高= 字号 + 行间距。</p>
+<p>如下图所示：行间距距离文字上方为3pt，行间距距离文字下方也为3pt。字体高度为16pt。</p>
+<p><span class="img-zoom"><img alt="看不懂UI文字设计规范？这篇文章帮你搞定！" class="alignnone size-full wp-image-394688" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-gd-20201102-6.jpg" width="1080" height="169" /></span></p>
+<p>行高（22）= 字号（16） + 行间距（3+3）。</p>
+<p>在界面过程中，需要规范字号大小和对应的行高。不然的话会存在设计布局问题。<br />
+举个例子，设计一个标签时，当字号为14时，行高为20，那么为了保持视觉上字体到四周距离相同，那么上下间距为4，左右间距为8。</p>
+<p>因为行间距的存在，不能将上下间距和左右间距设置相同。</p>
+<p><span class="img-zoom"><img alt="看不懂UI文字设计规范？这篇文章帮你搞定！" class="alignnone size-full wp-image-394689" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-gd-20201102-7.jpg" width="1080" height="226" /></span></p>
+<p>如果行高设置为14（文字本身大小），那么上下间距应该也为8pt，而非4pt。</p>
+<p>如下表格为iOS设计指南建议字号和对应的行高对照表。</p>
+<p><span class="img-zoom"><img alt="看不懂UI文字设计规范？这篇文章帮你搞定！" class="alignnone size-full wp-image-394690" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-gd-20201102-8.jpg" width="843" height="800" /></span></p>
+<p>下图是Sketch默认字号和行高对照表：</p>
+<p><span class="img-zoom"><img alt="看不懂UI文字设计规范？这篇文章帮你搞定！" class="alignnone size-full wp-image-394691" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-gd-20201102-9.jpg" width="565" height="800" /></span></p>
+<p>可以看出iOS建议字号行高的对照表和Sketch默认的不一样。</p>
+<p>Sketch视觉稿到了开发实现，字号和对应行间距会出现不一致的情况，这样会导致还原度出现问题。</p>
+<p>解决行高无法完美开发还原的办法有两个：</p>
+<ul>
+<li>将行高设置为字号大小，这样的话，就不存在行间距的问题，可以保证完美还原。但是由于一倍行高会导致有些机型的字被切掉。</li>
+<li>使用字体插件，这样它可以自动修复Sketch文档中的字体行高，做到Sketch中字体行高与开发中字体行高100%还原。</li>
+</ul>
+<p><span class="img-zoom"><img alt="看不懂UI文字设计规范？这篇文章帮你搞定！" class="alignnone size-full wp-image-394692" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-gd-20201102-10.jpg" width="706" height="238" /></span></p>
+<h4><span class="auto_menu">行宽</span></h4>
+<p>行宽=字体宽度+两侧距离字体的宽度</p>
+<p>行宽作用于文本范围，如下图所示：</p>
+<p><span class="img-zoom"><img alt="看不懂UI文字设计规范？这篇文章帮你搞定！" class="alignnone size-full wp-image-394693" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-gd-20201102-11.jpg" width="1080" height="149" /></span></p>
+<p>将行宽拉长，代表着设置了文本内容范围，文本距离右侧语音图标为12pt，表示当文字内容距离语音图标12pt时，文字打点或截断展示。</p>
+<h4><span class="auto_menu">颜色</span></h4>
+<p>字体颜色有两种规则定义做法，一种是直接使用色值，如图所示：</p>
+<p><span class="img-zoom"><img alt="看不懂UI文字设计规范？这篇文章帮你搞定！" class="alignnone size-full wp-image-394694" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-gd-20201102-12.jpg" width="966" height="263" /></span></p>
+<p>另一种做法是通过不透明度实现，通常以#000000为基准，设置不同的不透明度，如下图所示：</p>
+<p><span class="img-zoom"><img alt="看不懂UI文字设计规范？这篇文章帮你搞定！" class="alignnone size-full wp-image-394695" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-gd-20201102-13.jpg" width="941" height="206" /></span></p>
+<p>综合而言，使用不透明度的方法，使用场景更加广泛一些。</p>
+<p>iOS&amp;Android自动修复行高的插件下载链接: <a href="https://pan.baidu.com/s/1QbKTDSnTpIFm9bpB6bzppQ">https://pan.baidu.com/s/1QbKTDSnTpIFm9bpB6bzppQ</a> 提取码: kphj</p>
+<p>备用下载链接：<a href="https://share.weiyun.com/7jscZcpC">https://share.weiyun.com/7jscZcpC</a></p>
+<p>[link https://www.uisdc.com/make-ui-design-guideline]</p>
+<p>欢迎关注作者的微信公众号：「Echo的设计笔记」</p>
+<p><span class="img-zoom"><img alt="看不懂UI文字设计规范？这篇文章帮你搞定！" class="alignnone size-full wp-image-392702" src="https://image.uisdc.com/wp-content/uploads/2020/10/echoqr.jpg" alt="拿到需求别急着抄竞品，高手用这5个方法做出优秀方案！" width="180" height="183" /></span></p>
+➜全球最大的音乐服务商Spotify，如何做设计原则升级？
+https://www.uisdc.com/introducing-spotifys-new-design-principles	60892
+<p>Hi，大家好，我是彩云。Spotify，也叫“声田”，是一个在国外非常火的正版音乐平台，也是目前全球最大的流音乐服务商之一，在去年用户规模就已经达到了2.48亿。那这么大量用户的产品如何定义自己的设计原则，又是如何做升级的，值得我们学习。</p>
+<p>我希望大家通过本篇文章的学习，可以将其思路与自己的产品相结合，思考自己产品的设计原则，并用到作品集里，相信会非常具有说服力。</p>
+<p>译文：</p>
+<p><span class="img-zoom"><img alt="全球最大的音乐服务商Spotify，如何做设计原则升级？" class="alignnone size-full wp-image-394671" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cy-20201102-2.jpg" width="1080" height="608" /></span></p>
+<p>在本文中，我会介绍我们是如何提炼出新的设计原则，并在团队中推广实施的。</p>
+<p>去年，我们团队一起深入研究了一个棘手的问题：随着 Spotify 的不断发展，我们如何在我们产品不断迭代中保持高水平的设计质量？</p>
+<p>经过一些研究，我们确定了一个关键突破口: 为了提高设计质量，我们需要清晰、实用的设计原则。为什么是设计原则？首先，我们在没有定义设计原则的基础上无法评估团队的设计是否符合Spotify的设计标准。其次，我们也想设计师在讨论设计目标和提供意见时使用同样的设计语言。一套不断更新的设计原则可以保证我们设计的一致性。</p>
+<h4><span class="auto_menu">设计原则的诞生</span></h4>
+<p>Spotify 最早的设计原则诞生于2013年的，当时团队做了很多工作来确定大家认可的原则。Spotify 是一家以瑞典文化为基础的公司，我们之前的Lagom原则反映了这一点。( lagom 是瑞典特有的文化特征，注重平衡和谐，尽善尽美)</p>
+<p><span class="img-zoom"><img alt="全球最大的音乐服务商Spotify，如何做设计原则升级？" class="alignnone size-full wp-image-394672" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cy-20201102-3.jpg" width="1080" height="607" /></span></p>
+<p>2013年 Spotify 的设计原则: 内容第一，活力，熟悉，少即是多，保持真实，和谐。到了2020年，Spotify 已经发生了很大的变化。我们成长为一个音频优先的公司，并且在播客上加倍发力；我们为听众、艺术家和广告商设计产品；设计师团队也从几个人发展到了将近200人。</p>
+<p>回顾之前的原则，我们问自己: 我们的设计和我们的产品目标是真实一致的吗？Spotify 的设计师们是否有这方面的意识？答案都是否定的。</p>
+<p>在之前的设计原则中，我们确定了三个方面的问题:</p>
+<p><strong>1. 只专注于消费者的音乐体验</strong></p>
+<p>Spotify 已经成长起来，而且这些原则似乎并不适用于我们设计的所有东西</p>
+<p><strong>2. 设计概念重叠</strong></p>
+<p>像“ lagom”和“ do less”这样的原则可能有部分重叠，这使得它们难以明确区分和用于评估我们的工作</p>
+<p><strong>3. 记忆困难</strong></p>
+<p>从我们的调查和设计师的反馈中，我们了解到有太多的原则需要跟踪。数量较少的原则更容易在实践中运用</p>
+<p>简而言之，旧的原则需要更新。</p>
+<h4><span class="auto_menu">构建新的设计原则</span></h4>
+<p>去年，我们工作小组的成员，大约十几个产品设计师和用户体验作家聚在一起，在一个合作研讨会上讨论解决这个问题。这样做的目的是让每个人都参与进来，而不是只有一个人清楚“ Spotify 的设计应该是什么样子”。</p>
+<p>我们使用了三个指导性问题来集中注意力:</p>
+<ul>
+<li>我们为什么要创造这些设计原则？</li>
+<li>它们是给谁用的？</li>
+<li>它们将如何被使用？</li>
+</ul>
+<p>经过一番激烈的辩论，我们一致认为，原则是创造和评估作品的框架——它们可以帮助产品设计师做出设计决策，并为我们的设计评论提供一种相同的设计语言。真正的挑战是定义新原则是什么。在设计时，我们应该追求什么样的价值观和设计属性？产品应该传递给用户什么感觉？</p>
+<p>我们将所有的想法汇集成一个巨大的列表矩阵，通过投票来帮助我们缩小范围。在此基础上，我们提出了新原则的草案，与我们的设计领导团队分享，并进行了一些微调。</p>
+<p><span class="img-zoom"><img alt="全球最大的音乐服务商Spotify，如何做设计原则升级？" class="alignnone size-full wp-image-394673" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cy-20201102-4.jpg" width="1080" height="607" /></span></p>
+<p>就这样，我们新的 Spotify 设计原则诞生了。</p>
+<p><span class="img-zoom"><img alt="全球最大的音乐服务商Spotify，如何做设计原则升级？" class="alignnone size-full wp-image-394674" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cy-20201102-5.jpg" width="1080" height="607" /></span></p>
+<p>△ 相关性，人性化，统一性</p>
+<h5>1. 相关性</h5>
+<p><strong>把你作为一个个体来对待</strong></p>
+<p>Spotify 是为你量身定做的，希望它是个性化的。为了实现相关性的目标，我们需要考虑我们要呈现什么，呈现给谁，以及在什么背景下呈现。简而言之，只有当我们在正确的时间呈现正确的信息时，它才是相关的。相反，我们不想要“一刀切”的体验。</p>
+<p><span class="img-zoom"><img alt="全球最大的音乐服务商Spotify，如何做设计原则升级？" class="alignnone size-full wp-image-394675" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cy-20201102-6.jpg" width="1080" height="607" /></span></p>
+<p>△ Spotify 的播放列表和注册页面</p>
+<h5>2. 人性化</h5>
+<p><strong>它是关于交流、表达和人际关系的</strong></p>
+<p>Spotify是依赖于推荐算法的产品，但其实都是基于人。有时候我们很情绪化，有时候坚持理性逻辑，像人一样。Spotify应该像文化本身一样充满活力，比如人的体验是直觉性的和对话式的。当产品过于聪明、技术化或功能化时，它就失去了人性化。</p>
+<p><span class="img-zoom"><img alt="全球最大的音乐服务商Spotify，如何做设计原则升级？" class="alignnone size-full wp-image-394676" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cy-20201102-7.jpg" width="1080" height="607" /></span></p>
+<p>△ 例如 Discover Weekly cover 和 Spotify Kids 应用程序</p>
+<h5>3. 统一性</h5>
+<p><strong>产品功能和应用如何体现品牌感</strong></p>
+<p>我们希望我们所有线上线下设计都具备Spotify的品牌统一性，通过这种一致性在产品中建立熟悉感和信任感，这也是我们为什么我们遵循我们的设计系统——从修改之前的设计原则开始，而不是重新创造。我们希望我们的设计原则能够被重复使用，并具备一致性</p>
+<p><span class="img-zoom"><img alt="全球最大的音乐服务商Spotify，如何做设计原则升级？" class="alignnone size-full wp-image-394677" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cy-20201102-8.jpg" width="1080" height="607" /></span></p>
+<p>△ 营销活动实例</p>
+<h4><span class="auto_menu">推出原则</span></h4>
+<p>写原则是一回事&#8230; 让每个人都参与进来完全是另一回事。下面是我们如何让每个人参与进来，推广我们的设计原则：</p>
+<ul>
+<li>首先，我们以工作坊形式在一个设计团队试运行，在实际工作情景中体验这些设计原则是否有用，有哪些用的好和不好的例子</li>
+<li>然后，我们将这些原则纳入现有的设计工作中ーー例如，在全员设计会议上介绍这些原则，并将它们添加到我们的设计手册和新员工入职流程中</li>
+<li>几个月后，我们在所有的设计团队中展开了一系列的工作坊，通过这种方式，每个设计师都可以从中练习如何将原则运用于工作中</li>
+</ul>
+<p><span class="img-zoom"><img alt="全球最大的音乐服务商Spotify，如何做设计原则升级？" class="alignnone size-full wp-image-394678" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cy-20201102-9.jpg" width="1080" height="607" /></span></p>
+<p>△ 展示如何使用设计原则的卡片</p>
+<p>这些为了在团队里推行设计原则做的工作是否太多? 还是不够? 根据我们所做的工作，复盘了2点需要注意的地方：</p>
+<p><strong>1. 案例越多越好</strong></p>
+<p>口头上表达 Spotify “人性化”和“相关性”的设计原则很容易 ，但什么才是“人性化”和“相关性”的设计呢？所以案例非常重要，案例越多越有利于我们对抽象设计原则的理解。</p>
+<p><strong>2. 不要遗漏线下品牌设计</strong></p>
+<p>回顾整个过程，我们在向团队首次推广我们的设计原则时，应该多设计一些海报，贴纸或其他品牌延展设计。新的设计原则和理念需要时间去内化吸收，线下设计物品可以潜移默化的帮助团队理解。在没有“正式”的线下设计情况下，一位设计师同事把设计原则作为自己的桌面壁纸，这点也非常棒。</p>
+<p><span class="img-zoom"><img alt="全球最大的音乐服务商Spotify，如何做设计原则升级？" class="alignnone size-full wp-image-394679" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cy-20201102-10.jpg" width="1080" height="607" /></span></p>
+<p>这位同事的设计原则桌面壁纸</p>
+<p>远程工作让线下品牌相关设计变得棘手，不过我们已经开始着手海报和其他有趣的设计。</p>
+<p><span class="img-zoom"><img alt="全球最大的音乐服务商Spotify，如何做设计原则升级？" class="alignnone size-full wp-image-394680" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cy-20201102-11.jpg" width="1080" height="607" /></span></p>
+<p>△ 设计原则的范例</p>
+<h4><span class="auto_menu">到目前为止的结果</span></h4>
+<p>我们推出了这些原则之后，有什么改变吗？</p>
+<p><strong>1. 提高设计意识</strong></p>
+<p>好消息是，现在大多数设计师都意识到 Spotify 有设计原则。最近的一项调查(由我们的设计行动小组进行)表明，设计师知道“相关性”、“人性化”和“统一性” ，他们在设计时也会考虑这些原则。这表明，与我们之前的六条原则相比，新原则更具备实施性，也更容易被记住。</p>
+<p><strong>2. 共同的设计语言</strong></p>
+<p>设计师(有时)在设计评审时会参考这些原则，但在这方面还有进步的空间。比如在设计讨论中需要有意识的运用这些设计原则，随着时间的推移，希望它成为我们下意识的直觉反应。我们将继续研究如何改进我们的设计流程、工具和设计资源。</p>
+<p>当我们开始这个项目时，我们希望关于设计质量有比较有益的讨论，对“ Spotify ”的设计意味着什么有相同的认知，所以我们的新原则是否影响了质量？现在下结论还为时过早。但我们希望“相关的、人性化的、统一的”设计原则可以传达出我们希望在产品中实现的目标——这些原则能够不断提醒我们要做得更好。</p>
+<p>更多改版案例：</p>
+<p>[link https://www.uisdc.com/baidu-emoji-redesign]</p>
+<p>欢迎关注译者的微信公众号：「彩云译设计」</p>
+<p><span class="img-zoom"><img alt="全球最大的音乐服务商Spotify，如何做设计原则升级？" class="alignnone size-full wp-image-263083" src="https://image.uisdc.com/wp-content/uploads/2018/03/uisdc-dh-20180313-9.jpg" alt="腾讯设计师出品！超全面的3D设计自学指南（附超多教程）" /></span></p>
+➜当大部分人都在夸Figma的协作时，我觉得这是个噩梦！
+https://www.uisdc.com/this-is-not-collaboration	60953
+<p>写在前面，Figma大概是最近几年最火的设计工具了，Figma独特的协作功能可以有很多特别的使用方式，比如一起下五子棋、象棋和在Figma里聊天。这应该是很多老板的完美设计工具了，可以实时看到大家在干活，仿佛在你的电脑上安装了一个监视器。我一直觉得这点挺反人类的。设计师Michal Malewicz对此有了些思考，今天把这篇文章带给大家。</p>
+<p>现在的设计工具越来越强大了，但这好像也是设计师噩梦的根源。</p>
+<p>这会是一篇有争议的文章。如果你是Figma的超级粉丝，估计你现在恨不得向我扔石头，我猜的对么？但是先别激动，听我说完。</p>
+<h4><span class="auto_menu">协作是指…</span></h4>
+<p>我的设计生涯是从90年代末开始的，那个时候对于设计师来说，协作是指有人坐在你身后，坐在一个笨重的电脑面前，戳着屏幕。</p>
+<p>“ 把那个挪过来” 然后 “不不不，太远了” 。</p>
+<p><span class="img-zoom"><img alt="当大部分人都在夸Figma的协作时，我觉得这是个噩梦！" class="alignnone size-full wp-image-394414" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-xz-20201030-1.jpg" width="720" height="465" /></span></p>
+<p>我们的CRT显示器被手指戳过的地方会有污迹，所以一个人的显示器越脏，意味着他收到的反馈越多。你可以把每一个指纹看作是一个现代的 “ Figma 评论 ” 。</p>
+<p>我们离那个年代已经很远了，从最开始的Adobe系列，到sketch，再到现在Figma这个设计工具向设计师展现了全新的设计方式。</p>
+<p><span class="img-zoom"><img alt="当大部分人都在夸Figma的协作时，我觉得这是个噩梦！" class="alignnone size-full wp-image-394415" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-xz-20201030-2.jpg" width="599" height="351" /></span></p>
+<p>△ 三个人一起做个三明治也许是个好主意。</p>
+<p>目前协作是个热门的话题，它被认为是切片面包以来最好的创新。</p>
+<p>几乎所有跟我聊过的Figma用户都表示，他们因为它强大的协作功能，更喜欢这个工具。我敢打赌，免费计划和操作系统独立性（Sketch仅限于Mac）才是咱们选Figma的主要原因，但我也理解为啥大家都不愿意承认这些。</p>
+<p>他们甚至把协作作为主要的营销信息放在Figma.com网站上。</p>
+<p><span class="img-zoom"><img alt="当大部分人都在夸Figma的协作时，我觉得这是个噩梦！" class="alignnone size-full wp-image-394416" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-xz-20201030-3.jpg" width="954" height="316" /></span></p>
+<h4><span class="auto_menu">如何展示协作？</span></h4>
+<p>我认为这是一种不正确的协作方式。为什么呢？</p>
+<p>好吧，看看上面的图片，四个人在一块画板上拖东西不叫协作，这已经糟糕到不能算是设计了。</p>
+<p>我问过了广泛使用Figma作为设计工具的大团队，甚至他们也认为上面的图片不是他们日常使用工具的表现。</p>
+<p><span class="img-zoom"><img alt="当大部分人都在夸Figma的协作时，我觉得这是个噩梦！" class="alignnone size-full wp-image-394417" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-xz-20201030-4.jpg" width="794" height="477" /></span></p>
+<p>△ 反馈前 vs 反馈后</p>
+<h4><span class="auto_menu">做出“改变”的客户</span></h4>
+<p>我们通常用sketch工作，偶尔也用Figma。</p>
+<p>我的一个客户最近要求能够参与编辑我们的Figma文件，我们勉强的答应了。接下来发生的事情对于每个设计师来说都是噩梦。</p>
+<p>首先，他们意识到他们可以跟踪我们设计师在文件中工作的光标，所以他们早上登录，盯着他的工作几个小时，直到我把他们从文件中踢出。</p>
+<p>这是一种微观管理模式，老板整天站在你身后，以确保你无时不刻都在工作。想象一下，每当你打开Twitter或Instagram时，你背后都会有一条鞭子抽打你。</p>
+<blockquote><p>太棒了！我们可以实时看到他在工作！</p></blockquote>
+<p>那个客户也不太了解Figma，无法实际从事这项工作。所以只是让他们自己更新登陆页面上的副本。有道理，对吧？然而事实上，他们大多是不小心把整个部分移入或移出画板，然后破坏你的文件。</p>
+<p><span class="img-zoom"><img alt="当大部分人都在夸Figma的协作时，我觉得这是个噩梦！" class="alignnone size-full wp-image-394418" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-xz-20201030-5.jpg" width="343" height="92" /></span></p>
+<h4><span class="auto_menu">协作的最好部分是在它关闭的时候？</span></h4>
+<p>快速解决方案是只在我们处理完文件后才允许查看它。</p>
+<p>周围的人都表示，“看着你的一举一动” 这种微观管理技术会让所有的设计师都感到沮丧。</p>
+<p>当多人在同一屏幕上工作时，也存在潜在的混乱问题，尤其是远程操作。因为每个人都有着不同的设计方式。</p>
+<p>想象一下艾米把每个人的背景色都改成她喜欢的颜色。</p>
+<p><span class="img-zoom"><img alt="当大部分人都在夸Figma的协作时，我觉得这是个噩梦！" class="alignnone size-full wp-image-394419" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-xz-20201030-6.jpg" width="1080" height="633" /></span></p>
+<h4><span class="auto_menu">如何真正协作？</span></h4>
+<p>实际上，人们使用协作功能的方式完全不同。首先，最好有一个总是同步的“真实源”文件。在Sketch中，我们使用Dropbox来做到这一点，我们必须在进入之前确保文件被关闭并由其他人保存。</p>
+<p>显然，消除不同步问题是良好协作的一大优势。您得确信该文件始终是最新的，即使原作者去度假或辞职。</p>
+<p>其他人可以直接插手接管，让整个设计项目始终保持同步。怪不得sketch也在介绍这个功能，对我来说这部分是整个“协作”中最具开创性的部分。</p>
+<p>我采访过的一个更大的组织，他们通常在一个项目中最多有五个设计师，但他们很少在同一个页面上工作。即便非要一起工作，每个人都会被分配一个画板来填充先前商定的设计库组件。</p>
+<p>如果没有这个设计库，事情会立刻开始混乱，每个人都有一点自己的工作方式，或有意无意的忘记一些关键的准则。毕竟，我们都是人。是人就会遗忘和犯错。</p>
+<p><span class="img-zoom"><img alt="当大部分人都在夸Figma的协作时，我觉得这是个噩梦！" class="alignnone size-full wp-image-394420" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-xz-20201030-7.jpg" width="846" height="157" /></span></p>
+<p>设计库（或“系统”）可以通过协作来解决这个问题，但有时仅靠它们是不够的。</p>
+<p>但即使考虑到这些严格的规则，他们仍然需要做套“设计标准”，文件由设计经理进行统一调整。</p>
+<p>仍然不够理想，但是好多了。</p>
+<p><span class="img-zoom"><img alt="当大部分人都在夸Figma的协作时，我觉得这是个噩梦！" class="alignnone size-full wp-image-394421" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-xz-20201030-8.jpg" width="720" height="472" /></span></p>
+<p>设计师可以看到注释（如果他愿意的话），但是客户看不到设计师在工作，也不能跟踪光标。</p>
+<h4><span class="auto_menu">反馈也是协作</span></h4>
+<p>另一个很棒的，但不是那么突出的功能是在文件中留下对设计的评论反馈。虽然这个功能在InVision中存在很多年了，但你需要先浏览网上的评论，再回到sketch做些修改，然后用Craft来同步它。</p>
+<p>在设计工具中出现的注释简化了这个流程，节省了很多时间。</p>
+<p>然而，当设计师正在工作时添加反馈，会使客户很容易进行微观管理。</p>
+<p>添加反馈的最佳方法是创建一种与协作分离的“反馈”模式。在这种模式下，你只能留下评论，但是看不到任何人的光标。如果设计师做了一些改动，他们仍然可以在画板上看到实时更新，但它让评论者专注于评论，而不是看着设计师跟忙碌的蜜蜂一样移动。</p>
+<p>每个人在“页面”中完成的实际设计，但是并没有在同一个画板上工作。</p>
+<p><span class="img-zoom"><img alt="当大部分人都在夸Figma的协作时，我觉得这是个噩梦！" class="alignnone size-full wp-image-394422" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-xz-20201030-9.jpg" width="920" height="285" /></span></p>
+<h4><span class="auto_menu">沟通问题</span></h4>
+<p>我认为主要的问题不在于功能本身（尽管它们确实需要一些改进），而是在于它们呈现的方式。</p>
+<p>当然，在市场营销的意义上，展示人们在同一个画板上工作会更“性感”，但在现实世界中却没有任何意义，还可能会给经验丰富的设计师们带来“坏印象”。</p>
+<p>因此，这些工具应该侧重于显示：</p>
+<ul>
+<li>设计文件的唯一真实来源</li>
+<li>易于反馈和评论</li>
+<li>使用相同的组件库，在不同的页面上工作</li>
+</ul>
+<p><span class="img-zoom"><img alt="当大部分人都在夸Figma的协作时，我觉得这是个噩梦！" class="alignnone size-full wp-image-394423" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-xz-20201030-10.jpg" width="278" height="126" /></span></p>
+<p>这些都比展示四个人一起移动四个单词更好。因为在现实中，你不能期望四个大脑同步。我们都是不同的独特的人，有着自己的方法，这种协作会让大家看起来像没有灵魂的机器人，并且带来混乱和丑陋。</p>
+<p>[link https://www.uisdc.com/figma-vs-sketch]</p>
+<p>欢迎关注作者微信公众号：「非科班设计」</p>
+<p><span class="img-zoom"><img alt="当大部分人都在夸Figma的协作时，我觉得这是个噩梦！" class="alignnone size-full wp-image-394424" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-bc-20201030-3.jpg" width="180" height="178" /></span></p>
 ➜掌握这5大要素，你也能快速搞定极简设计风格
 https://www.uisdc.com/minimalist-design-guideline	64875
 <p><span class="img-zoom"><img alt="掌握这5大要素，你也能快速搞定极简设计风格" src="https://image.uisdc.com/wp-content/uploads/2020/11/1_I3PbDMBEsJcYB-lgK6_YBg.jpeg" width="1600" height="1200" class="alignnone size-full wp-image-394974" /></span></p>
