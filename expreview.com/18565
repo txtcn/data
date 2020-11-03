@@ -64,7 +64,7 @@ LLC谐振主控采用的是CM6901T6X</p><p style="text-align:center;"><img borde
 DC设计，配置有独立的子PCB，采用了常规的开放式电感并使用固态电容进行滤波。其PWM控制器是uP3861P，每路配置有1个整流MosFET和1个续流MosFET，均为EMB06N03HR，规格是30V/45A@100℃/6mΩ。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/10/GEX-750/DSC_2748.jpg" width="100%"/><br/>骨伽GEX
 750电源输出端</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/10/GEX-750/DSC_2749.jpg" width="100%"/><br/>
 输出滤波使用了多个2200μF电容</p><p style="text-align: center;"><img border="0" src="https://img.expreview.com/review/2020/10/GEX-750/DSC_2734.jpg" width="100%"/><br/>骨伽GEX
-750电源模组接口PCB，使用了固态电容进行滤波</p><h1>骨伽V750 SFX Gold电源性能测试</h1><h2 style="text-align: left;">均衡负载</h2><p style="text-align: left;">目前我们会对所有参测的电源进行120%额定功率下的230V输入均衡负载测试以及纹波测试，该项测试的成绩不纳入超能指数的计算中，单纯是用来观察电源的功率余量。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+750电源模组接口PCB，使用了固态电容进行滤波</p><h1>骨伽GEX 750电源性能测试</h1><h2 style="text-align: left;">均衡负载</h2><p style="text-align: left;">目前我们会对所有参测的电源进行120%额定功率下的230V输入均衡负载测试以及纹波测试，该项测试的成绩不纳入超能指数的计算中，单纯是用来观察电源的功率余量。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
 document.write('<div id="' + tableid + '"></div>');
 Table().init({
 title: "骨伽GEX 750电源均衡负载测试",
@@ -210,7 +210,7 @@ var mycolor = ['#32cd32','#FF8C00','#2550FE','#9B0082','#32cd32']; //自定义�
 var data_arr = [{"负载点":"A","上限":"5","12V":"0.62 ","5V":"0.62 ","3.3V":"1.15 ","下限":"-"},{"负载点":"B","上限":"-","12V":"0.57 ","5V":"0.58 ","3.3V":"1.03 ","下限":"-"},{"负载点":"C","上限":"-","12V":"0.42 ","5V":"0.70 ","3.3V":"1.21 ","下限":"-"},{"负载点":"D","上限":"-","12V":"0.42 ","5V":"0.76 ","3.3V":"1.36 ","下限":"-5"}];;
 ZHDInit(title_text, subtitle_text, unit_text, leftside, move, mblur, mycolor, data_arr);</script></div><p>骨伽V750 SFX Gold电源在+5V和+3.3V输出上使用了DC to
 DC设计，这个设计在交叉负载（拉偏测试）中是比较有利的，而且在不同的负载环境中，三路输出的电压偏离度趋势都是相同的，变化幅度也非常小，称得上是表现优秀。</p><h2>保持时间</h2><p>掉电保持时间（Hold-up Time）是指电源掉电之后电压输出值跌出范围允许的5%的时间，我们测量的是<span style="color:#FF0000">+12V、+5V和Power-OK（Power-Good）信号的保持时间</span>。</p><p>SSI EPS12V 2.92服务器电源设计指导中对输出电压保持时间的要求是电源在<span style="color:#FF0000">75%的负载下保持时间应该大于18ms，而Power-OK信号的保持时间要求是大于17ms</span>。</p><p>掉电保持时间如此受关注，是因为其很大程度上关系到硬件的寿命，Power-OK保持17ms意味着面临17ms以内的掉电情况时电脑能持续运行而不出现关机、重启的状况，而各路电压保持18ms或者更长的时间，是为了在掉电发生时各个硬件能够做出应急处理，比如机械硬盘的磁头归位
-、SSD的掉电保护。</p><p>骨伽V750 SFX Gold电源的保持时间是在75%负载（DC输出562.5W）的情况下测得。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "骨伽GEX 750电源 | 保持时间"; // 标题文字热管
+、SSD的掉电保护。</p><p>骨伽GEX 750电源的保持时间是在75%负载（DC输出562.5W）的情况下测得。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "骨伽GEX 750电源 | 保持时间"; // 标题文字热管
 var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
 var unit_text = "毫秒ms "; //单位
 var leftside = "8%"; //左边空白
