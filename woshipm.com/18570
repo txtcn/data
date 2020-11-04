@@ -1,0 +1,357 @@
+➜关于微信小程序，你不知道的那些事
+http://www.woshipm.com/pd/4243099.html	5163
+<blockquote><p>编辑导语：微信小程序，是一种不需要下载安装即可使用的应用，它实现了应用“触手可及”的梦想，用户扫一扫或搜一下即可打开应用。2017年1月9日，张小龙在2017微信公开课Pro上发布的微信小程序正式上线。我们日常使用的微信小程序，你真的了解它吗？</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4243727" src="http://image.woshipm.com/wp-files/2020/11/2mvxuoW98Do26imK2Pf3.jpg" alt="" width="900" height="420" /></p>
+<p>第一次写将近6000字的文章，把我所理解的小程序讲给你听。文章很长，先列一个提纲：</p>
+<ol>
+<li>从短信到公众号</li>
+<li>订阅号与服务号</li>
+<li>H5与原生页面</li>
+<li>从服务号到小程序</li>
+<li>触手可及的小程序</li>
+<li>用完即走的小程序</li>
+<li>交互模式与业务逻辑</li>
+</ol>
+<h2>一、从短信到公众号</h2>
+<p>关于小程序，我们有很多的疑问：微信为什么要做小程序？小程序在整个微信生态里的定位是什么？要理解小程序的定位，首先是要明白微信的定位是什么？</p>
+<blockquote><p>微信的本质是一款工具——张小龙</p></blockquote>
+<p>微信到底是一款什么样的工具呢？</p>
+<p>或许在我们理解中，微信只是一款替代了短信的即时通讯工具。短信对于普通用户来说，的确只是一个通讯工具。自从微信出现了，我们短信发的越来越少了。</p>
+<p>但是对于企事业单位来说，用户通过短信收取服务的通知，例如：我们经常会收到商家各种营销短信。</p>
+<p>学校要求家长开通校园通短信服务，方便接收学校的通知。例如，这次考试你孩子考了多少分，年级排名是多少，下次家长会什么时候参加。</p>
+<p>当然，学校也不是总发这些扫兴的短信。偶尔也会来点惊喜，例如，高二那年冬天，有次下大雪，校园通群发短信。因为道路积雪，明天放假。</p>
+<p>企事业单位需要通过短信来触达用户，这是短信时代的一大需求。微信要完全取代短信，必须要提供相应的能力来覆盖这方面的需求。微信推出的产品是——微信公众平台，简称微信公众号。</p>
+<p>所以，微信公众号的最初定位是为企业用户打造一个连接品牌和用户的群发工具。疫情期间，很多企业的通知都是通过公众号发布的。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于微信小程序，你不知道的那些事" src="http://image.woshipm.com/wp-files/2020/11/qivjLTvnBvhdQ0YGs7sx.jpeg" alt="关于微信小程序，你不知道的那些事" width="302" height="537" /></p>
+<p style="text-align: center;">南京图书馆公众号疫情期间通知</p>
+<p>微信公众号从一开始就没有打算做成一个自媒体平台，但是最终却成长成了自媒体使用最好的一个平台，这是一个美丽的错误。这点我比较喜欢张小龙的坦诚，他不会因为公众号成了自媒体平台，就说我们的初心就是做一个自媒体平台。</p>
+<blockquote><p>公众号不是给自媒体准备的。——张小龙</p></blockquote>
+<h2>二、订阅号与服务号</h2>
+<p>从短信到公众号是一个非常大的进步。</p>
+<p>首先短信是不受控群发的，带来的副作用就是我们经常会收到骚扰和欺诈短信。而公众号是基于订阅关系推送的，所以避免了垃圾消息。你必须关注这个公众号，才能收到推送消息。</p>
+<p>从企业的角度来说，公众号消息是免费的，节省了发送短信推送的成本。公众号带来的改变不仅于此，在我看来公众号最大的意义在于重构了我们的信息获取模式。</p>
+<p>十年前的海报和广告牌，商家都会放上联系电话和网站网址，没有钱搭建网站的就只放上联系电话。当时商家都会热衷于购买短小好看的域名，吉祥顺口的电话号码，尽量方便用户记忆。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于微信小程序，你不知道的那些事" src="http://image.woshipm.com/wp-files/2020/11/T8cwKQFtRamgGOJvc1Tj.jpeg" alt="关于微信小程序，你不知道的那些事" width="503" height="360" /></p>
+<p style="text-align: center;">曾经的广告牌主推网址和电话号码</p>
+<p>当公众号出现之后，广告牌中长长的网址和电话号码不见了，取而代之的公众号二维码。如果你感兴趣，直接扫码关注公众号，查阅相关信息。不需要再访问网站，或者拨打电话咨询。</p>
+<p>公众号作为一个内容分发平台，降低用户获取内容的门槛，是内容更加轻量的载体，但是它承载的还是内容。</p>
+<p>微信的目标是连接一切，微信不满足于止步于连接用户与内容，微信想直接连接用户与服务，他们希望在传播内容的同时还可以提供服务。</p>
+<p>微信在2013年专门拆分出一个服务号出来，服务号只有组织才能申请，其定位就是提供服务的平台。如果说订阅号的定位是连接用户与内容，而服务号就是连接用户与服务。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于微信小程序，你不知道的那些事" src="http://image.woshipm.com/wp-files/2020/11/O0EVmbu7dENJDzWdsMpw.jpeg" alt="关于微信小程序，你不知道的那些事" width="701" height="430" /></p>
+<p style="text-align: center;">服务号为服务商开发了更多接口</p>
+<p>订阅号与服务号最大的区别不在于推送频率以及展示的入口，而在于服务号提供了更多的接口能力，订阅号只是提供了订阅推送能力。</p>
+<p>以用户就餐的场景为例，如果这家餐厅开通的是订阅号，用户只能看到推送的文章。订阅号也有菜单栏，但是不支持配置外部链接，用户在菜单栏里看到的其实还是文章。</p>
+<p>而服务号开放了更多的接口例如获取用户信息、模版消息、微信支付等，用户在餐厅的服务号里可以直接完成在线排队、点餐、付款等操作。</p>
+<p>就拿在线排队这个功能来说，我们经常会遇到餐厅座位已满的情况。</p>
+<p>我们要排队，只能人坐在那里耗，不能走远。服务号的出现，商家获取到用户的openID，通过推送模版消息告诉用户实时排队进度，用户可以四处逛逛。</p>
+<p>如果没有服务号，“在线排队，实时提醒”的功能也可以做，但是商家的开发成本和用户使用成本都会提高。实时提醒的方式只能通过发短信方式，而且需要用户输入手机号，用户的手机号也会存在泄漏的风险。</p>
+<p>对于一些业务逻辑比较简单的服务商来说，放弃开发独立的app，转而运营微信服务号是一个更好的选择。</p>
+<p>不仅仅是更低的研发成本，更是因为微信是最大的流量池，用户在微信里可以直接享受服务，可以减少因下载安装app所造成的用户流失。</p>
+<p>用户在哪里，服务就应该在哪里。</p>
+<p>下载安装一款几十M甚至上百M的app对于用户来说，是一件成本很高的事情。我到你这吃饭，点个菜还需要下载安装你们的app，你疯了吧？</p>
+<h2>三、H5与原生页面</h2>
+<p>服务号的出现，让用户可以在不下载安装app的情况下就可以享受服务，但是服务号是无法取代APP的，为什么？</p>
+<p>首先我们来回答一个问题——服务是什么？</p>
+<p>服务对于用户来说最直观的感受就是一个个页面，我在这个页面上可以缴话费，在那个页面上可以查询公交车信息，页面是服务的载体。</p>
+<p>那么问题来了——这些页面是如何搭建的呢？</p>
+<p>这里我们先花时间简单介绍一下前端知识，我们在手机上看到的页面分为原生页面和h5页面:</p>
+<ol>
+<li>原生页面的开发成本更高。搭建一个原生页面，需要安卓和iOS两端各开发一套页面；而H5页面，只需要开发一套页面就行了；</li>
+<li>用户要访问原生页面必须要下载安装APP，而用户在浏览器就可以直接访问H5；</li>
+<li>原生页面的改动，必须要经过应用市场的审核。审核通过后，用户还需要更新APP的版本，才可以看到改动后的原生页面。H5页面的改动不需要审核，可以随时上线，更加敏捷。苹果每年圣诞节期间都要休假暂停审核的平台，如果你的APP针对元旦在原生页面上做了一些改动，iOS版本必须要提前提审；</li>
+<li>原生页面直接跟操作系统交互，而h5页面是跟宿主浏览器交互，所以原生页面可以提供更多功能；</li>
+<li>原生页面的交互比H5更加流畅。</li>
+</ol>
+<p>总结：</p>
+<ul>
+<li>H5页面开发成本低，速度快，功能少，体验差；</li>
+<li>原生页面开发成本高，速度慢，功能多，体验好。</li>
+</ul>
+<p>而服务号的主体只能基于h5进行开发，很难给用户提供原生app一样的体验。因此让服务号承载连接用户与服务的功能，其实是过度赋能的，微信需要一个产品来连接用户与服务。</p>
+<h2>四、从服务号到小程序</h2>
+<p>2016年初，因为服务号没有达到预期，微信宣布要新开发一个新的公众号形态，一种提供新的服务能力的公众号——应用号。</p>
+<blockquote><p>“我们开发公众号不是为了媒体，我们的本意不是传播内容，我们要提供服务，但服务号没有达到预期，我们在讨论一个新的形态，叫应用号。平时不发东西，他安静的存在在那，低频的需求不需要安装App，微信尝试让更多App以轻量便捷的形态在微信中存在，就是应用号。”——张小龙，2016年微信公开课，谈应用号</p></blockquote>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于微信小程序，你不知道的那些事" src="http://image.woshipm.com/wp-files/2020/11/dvmVBSTBTRgLjVHebmzV.png" alt="关于微信小程序，你不知道的那些事" width="599" height="376" /></p>
+<p style="text-align: center;">2017微信公开课，张小龙正式推出小程序</p>
+<p>一年后，微信应用号上线了，只不过名字改成了小程序。</p>
+<p>小程序兼顾了原生和h5的优点，从用户的角度来说，体验比h5更好，比下载app更加便捷。开发成本低，开发一套页面可以兼容不同的平台，可以给用户提供原生页面的体验。</p>
+<p>其实在我看来，小程序更像是一项新的前端技术，而不是新的产品形态。</p>
+<p>张小龙在小程序刚发布时，给小程序定了4个特性：无须安装、触手可及、用完即走、无须卸载。其实无须安装，深究起来是错误的。</p>
+<p>小程序是需要用户下载的，但是小程序的包太小了。与APP动辄几十M乃至一百多M相比，只有1-2M大小的小程序非常的轻量，2018年初很火跳一跳小程序包的大小只有4M。在loading过程中就可以完成下载，用户基本上是无感知的，因此包装成无需下载也没什么问题。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于微信小程序，你不知道的那些事" src="http://image.woshipm.com/wp-files/2020/11/6VuAS4mMnGtvFPYNPv7w.jpeg" alt="关于微信小程序，你不知道的那些事" width="501" height="448" /></p>
+<p style="text-align: center;">18年初火爆一时的“跳一跳”</p>
+<h2>五、触手可及</h2>
+<p>触手可及，在我看来是微信小程序最重要的一个特性，因为他体现了张小龙对于未来应用形态的理解。</p>
+<blockquote><p>假如我看到房间里面的一盏灯，我想让这个灯关掉或者打开，当我透过这样一个很智能的眼镜看到这盏灯的时候，我会希望在那个灯的上方会出现一个虚拟的开关，我甚至可以用眼镜去控制这样一个开关，那个开关是什么东西？</p>
+<p>它其实是出现在真实物体上面的一个应用程序。当我看到这盏灯的时候，它的开关应用程序就自动出现了，同样的你可以想象非常非常多的场景。</p>
+<p>当你走到一个公园的门口的时候，可能公园门口会出现公园门票的应用程序，也就是说当你看到任何一个眼睛能看到的实物的时候，这个实物背后的信息和应用程序都会自动浮现出现。</p>
+<p>你通过眼镜或者别的方法控制这样一个应用程序，去启动它，去运行它。——张小龙，2017年微信公开课，谈未来应用形态</p></blockquote>
+<p>在张小龙的设想中，小程序是没有统一的固定入口的，小程序入口应该是出现具体的需求场景中。当用户有需求时，用户就可以立刻访问小程序；当用户没有需求的时候，就不应该提供访问小程序的入口。</p>
+<p>小程序刚上线的时候，最主要的访问来源是线下扫码。</p>
+<p>微信小程序上线后半年，使用频率最高的小程序是摩拜单车、实时公交、滴滴出行这些线下场景。张小龙提到的电灯和公园的例子都是线下的场景，所体现的想法也正是小程序应场景而生的理念。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于微信小程序，你不知道的那些事" src="http://image.woshipm.com/wp-files/2020/11/BjT4p9L0eQ3gDNTmJsE5.png" alt="关于微信小程序，你不知道的那些事" width="601" height="286" /></p>
+<p>但是对于各个服务商来说，这一点他们很不喜欢。</p>
+<p>不管用户对自己有没有诉求，他们都希望自己小程序可以无时不刻不在用户的眼前晃悠。朋友圈、公众号、微信群，他们希望在微信所有流量大的场合都露出自己的小程序。</p>
+<p>基本上微信每次发布一个新的功能，都会被理解成一个新的风口，各家都会一窝蜂上去想着怎么去捞取一波新的流量红利。因为微信是中国dau最大的app，是头号的流量池。</p>
+<p>为了防止过度营销，微信小程序在入口上做了很多限制。</p>
+<p>首先，微信小程序不支持分享到朋友圈，也就是说用户在朋友圈看不到微信小程序。</p>
+<p>一旦小程序可以分享到朋友圈，那么各个商家就会想办法把小程序打造成一个营销工具，在朋友圈进行病毒式营销吸取粉丝，这明显有悖于张小龙对于小程序应场景而生的定位。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于微信小程序，你不知道的那些事" src="http://image.woshipm.com/wp-files/2020/11/wu0R4TqTXTRiehpFAIRk.png" alt="关于微信小程序，你不知道的那些事" width="704" height="401" /></p>
+<p>初期的小程序甚至不能通过长按识别二维码进入小程序。就是为了防止一些服务商会通过生成新年签等图片在朋友圈进行圈粉营销。</p>
+<p>后面小程序的入口逐渐放开，用户可以从微信公众号（菜单、文章页）、其他小程序和APP的入口访问小程序。</p>
+<p>今年7月份微信小程序在安卓端开始支持分享到朋友圈，但是分享到朋友圈的只是单页模式的小程序。</p>
+<p>单页模式做了很多限制，可实现的交互与接口能力有限。最首要的就是页面无登录态，这直接断绝了商家的营销需求。因为在这个页面，你根本拿不到用户信息。</p>
+<p>微信严禁服务商把小程序当成一个营销引流工具，微信小程序有个运营规范建议大家可以看一下，里面详细记载了通过小程序进行营销引流的各种死法。</p>
+<h2>六、用完即走</h2>
+<p>在张小龙的设想中，小程序是一个提供服务的工具，用户完成了服务就应该直接离开。对于很多商家来说，他们不想让用户用完即走。因为用户走了可能就再也不回来了，用户想用户留在小程序里。</p>
+<p>如何提升小程序的用户留存呢？有钱的话就砸钱，每天都有羊毛可以薅，用户肯定每天都来。但是这个成本太高，且不具备可持续性。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于微信小程序，你不知道的那些事" src="http://image.woshipm.com/wp-files/2020/11/KFr1Yfd8fZecZtVuguPE.png" alt="关于微信小程序，你不知道的那些事" width="400" height="712" /></p>
+<p style="text-align: center;">【我的小程序】是小程序唯一固定的入口，【最近使用】只是小程序的使用记录，并不算是固定入口</p>
+<p>那么换一种思路，诱导用户把小程序添加到任务栏的【我的小程序】，例如：添加就给你发积分、卡券。</p>
+<p>这样用户每天都能看到，增加曝光。但是微信没有提供用户添加小程序事件的接口，也就是说这个用户有没有添加这个小程序你根本不知道。</p>
+<p>看来这条路也不行，微信认为小程序就是一个工具，铁了心让你用完即走。</p>
+<p>那么走去哪？微信是头号流量池，各服务商会尽量从微信来引流到自己的app，公众号甚至是其他小程序。</p>
+<h3>1. 小程序之间互相跳转：支持</h3>
+<p>微信为了避免小程序之间互推引流，之前对小程序相互跳转进行了严格的限制。</p>
+<p>首先两个小程序必须维护同一个公众号主体下，需要把对方小程序的appid维护在app.json中，而且最多只能跳转10个小程序。但是从今年5月份开始，限制逐渐解除。</p>
+<p>现在只要你知道对方小程序的appid，就可以做到在在自己的小程序（原生页面）里唤起对方小程序。</p>
+<h3>2. 小程序与公众号</h3>
+<p>用户可以公众号菜单、文章直接打开小程序；但是小程序为公众号引流场景很少，目前微信只放开了线下扫码这一场景。</p>
+<h3>3. 小程序与APP</h3>
+<p>对不起，微信对小程序直接唤起app功能又做了限制。</p>
+<p>对于一般小程序来说，从小程序唤起APP的场景只有一种：就是用户A从app分享一个页面给用户B，用户B在微信小程序里打开这个页面，这种情况用户B是可以直接唤起app。</p>
+<p>其他场景中，小程序一律不可以唤起app。</p>
+<p>为什么这里特指“一般小程序”？</p>
+<p>因为我们可以看到很多小程序不是上面的场景，也可以直接唤起第三方app。你可以查一下这些公司的股权结构，绝大部分都是腾讯入股的。</p>
+<blockquote><p>我在这里要澄清一点，刚刚说到，哪怕对投资公司在系统里面，也会一样对待，但是确实大家对投资的公司是有所倾斜的。</p>
+<p>我们在这一点上做的不够好，而不是说想要倾斜他们，只是我们对于这种平台的保护做的不够好，我相信我们团队在今后这一块投入更大的人力和资源，使得我们可以对所有的公司，包括我们投资的公司一视同仁。——张小龙，2019年微信公开课，谈微信小程序对投资公司的倾斜</p></blockquote>
+<p>总体来说，微信小程序对于微信来说就是一个提供服务的工具，微信不希望服务商把小程序用成了一个恶意营销引流的工具。</p>
+<p>又或者说微信关心的不是你的小程序是否“恶意”引流，他所关注的是你通过何种方式引流——自己私下引流，不行；交钱接入微信广告引流，行！</p>
+<h2>七、产品的面子与里子</h2>
+<p>最后再说一下我自己的想法，我们很喜欢做竞品分析，但是多数的竞品分析总是在UI交互层面打转。</p>
+<p>如果我们不去思考其业务逻辑，界面层级的分析只能是管中窥豹，盲人摸象。</p>
+<p>或许我们会在分析报告里使用一些用户体验、交互成本诸如此类看起来很严谨科学的词汇，但是本质还是针对你看的事物进行一种浅显的表达。这种分析其实没什么含金量。</p>
+<p>例如，如果你要做小程序登录功能的竞品分析，你会发现很多小程序会让用户授权使用微信绑定的手机号，有的小程序没有。</p>
+<p>如果我们仅从操作成本的角度来看，我们会选择授权使用绑定手机号的流程。因为这个流程，用户不需要手动输入手机号，并且微信绑定手机号的时候，会有短信验证，相当于加了一个安全核验。</p>
+<p>如果我们信任微信的安全核验，甚至可以直接拿微信授权的手机号走一键登录。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于微信小程序，你不知道的那些事" src="http://image.woshipm.com/wp-files/2020/11/f4Hk01oDGJs19UeBNfoL.jpeg" alt="关于微信小程序，你不知道的那些事" width="402" height="714" /></p>
+<p style="text-align: center;">滴滴出行小程序直接获取用户绑定的手机号，不需要用户手动输入</p>
+<p>但是我们发现有很多小程序，例如爱奇艺小程序，依然让用户手动输入手机号，简直太低效了！</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于微信小程序，你不知道的那些事" src="http://image.woshipm.com/wp-files/2020/11/fsg2kknL29NsBIFuyWQO.png" alt="关于微信小程序，你不知道的那些事" width="403" height="717" /></p>
+<p style="text-align: center;">爱奇艺小程序依然选择让用户手动输入手机号</p>
+<p>如果我是爱奇艺的产品经理，我也会采用这样的方式。</p>
+<p>对于一个家庭来说，不需要每个人都开通爱奇艺账户，一个人开通，全家借着看的场景很常见。如果采用微信授权手机号登录的方式，那么可能只有绑定这个手机号的微信才能登录了。</p>
+<p><img data-action="zoom" class="rich_pages js_insertlocalimg aligncenter" title="关于微信小程序，你不知道的那些事" src="http://image.woshipm.com/wp-files/2020/11/AplZCAQH3OlhDnp7aB1x.png" alt="关于微信小程序，你不知道的那些事" width="313" height="556" /></p>
+<p>类似的例子还有用户个人信息授权，有的小程序让用户进行个人信息授权，有的小程序则没有。</p>
+<p>如果你不知道个人信息授权可以拿到用户的哪些信息，以及这些信息在我的业务场景下具体可以用来做什么，我们是无法回答我的小程序是否需要用户个人信息授权这个问题的。</p>
+<p>例如，如果你的小程序会有邀请好友给你砍一刀的分享裂变活动。那么这种情况，我建议你获取用户的个人信息授权，因为好友需要你的微信头像和昵称进行信任背书。</p>
+<p>如果说UI交互是产品的面子，那么业务逻辑和产品模式是产品的里子。面子很一眼就能看到，但是里子却很难掌握。毕竟我们不是内部人员，我们只知道他这样做了，但是不知道他为什么这样做。</p>
+<p>尝试分析他们为什么这么做，不要纠结于自己得出的结论是否是正确答案。因为除非你问对方产品经理，要不然你永远不知道准确答案。思考的过程远比结果重要。</p>
+<h3>#专栏作家#</h3>
+<p>王M争（微信公众号：王M争），人人都是经理专栏作家，资深互联网人，B站账号：王M争</p>
+<p>本文原创发布于人人都是产品经理。未经许可，禁止转载</p>
+<p>题图来自 unsplash，基于 CC0 协议</p>
+➜如何做一个内容社区？只需这4步即可
+http://www.woshipm.com/operate/4243090.html	5838
+<blockquote><p>编辑导读：不同的内容社区在产品形态和运营手段上可能会有一些不同，但是发展过程会有一些共性，产品的功能也会有很大的相似性。本文作者对内容社区的搭建过程进行了梳理，与大家分享。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/4aZLGk613wKJTbjpnG9R.jpg" width="900" height="420" /></p>
+<h2>01</h2>
+<p><strong>在做社区之前，事先确定用户群体、做好内容定位。</strong></p>
+<p>这两者是相辅相成，缺一不可，简单来说，你这个社区要呈现什么样的内容？需要什么样的用户去产出和消费。</p>
+<p>（1）用户入驻：除了UGC，还应该挖掘邀请PGC来到社区发声，扩大社区影响力。</p>
+<p>（2）内容生产：在社区创建初期，由于没有内容和用户，可先以P带U，以此营造内容氛围。</p>
+<h2>02</h2>
+<p><strong>确定完用户群体和内容定位，就可以着手搭建基础功能架构。</strong></p>
+<p>由于社区的创作助力为偏草根UGC，即其创作难度较高，所以好社区一定是可以降低创作者门槛的。</p>
+<h3>1. 编辑器</h3>
+<p>既是降低用户创作门槛的第一站，也是把控整个内容社区调性（辅助审核）的关键，所以要朝着轻量且简单好用出发。如果追求极致，可以考虑<strong>图片智能优化</strong>、<strong>错别字智能矫正</strong>。与之匹配的还应该有<strong>热门话题勾选</strong>、<strong>近期有奖活动</strong>等有助于提升内容调性的功能；</p>
+<p>编辑器分为<strong>短动态</strong>、<strong>长图文</strong>、<strong>视频</strong>、<strong>问答</strong>等形式，具体可匹配自身社区平台。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/dx5I9amiH5gd9OPfpWqz.png" width="400" height="747" /></p>
+<h3>2. 内容呈现页</h3>
+<p>先行确定<strong>左图右文</strong>、<strong>左文左图</strong>（百度首页）、<strong>上文下图</strong>、<strong>单张大图</strong>（图片最为重要）、<strong>瀑布流</strong>（小红书、美团）、<strong>两栏网格</strong>（适合电商）、<strong>三栏网格</strong>等形式中的一项或者几项，选择最适合社区内容呈现方式，再去思考推荐问题。</p>
+<h3>3. 积分商城（激励机制）</h3>
+<p>一般社区都附带有商城功能（奖励规则），作为激励用户产出、消费的引擎，商城的建设不光是某一指定的功能，更应该贯穿整个社区。</p>
+<p>完整的商城必定充斥着购物优惠券、实物、自家虚拟币等几种商品，以及附带<strong>签到打卡</strong>等功能。更重要的是，这里需要一个计算属性极强的功能，统计着用户所有的行为。</p>
+<h2>03</h2>
+<p><strong>搭建完基础功能，如何刺激用户不断生产内容？</strong></p>
+<p>请问朋友圈不给你任何奖励，你为啥坚持发动态？是不是朋友圈满足了自己的“社交”需求。</p>
+<p>换句话说，没人给你点赞、评论、扫码，你还会去发动态吗？所以说，找到自己平台的特色，最好能解决用户某一特定需求。但一般情况下，可通过精神激励、物质激励两种方式，刺激用户不断生产内容。</p>
+<h3>1. 精神激励</h3>
+<p>（1）做好IP形象打造，对头部用户来说至关重要，产品机制上不仅要做好“关注”功能，还要做好优质作者批量推荐，让创作者拥有十足的网红感；</p>
+<p>（2）做好创作日榜、周榜、月榜，并对上榜用户给予勋章海报等荣誉（同样适用实物激励）；</p>
+<p>（3）头像+V及相关头衔，先行对用户分层，拔出头部、腰部等核心用户，给与其独特的V标及头衔，放大这部分用户的话语权，帮助用户提升领袖标杆；</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/JJdVUEtJaiczPrAhjT1n.png" width="405" height="221" /></p>
+<p>（4）#非奖励热门话题#，适当抛出当下匹配本平台的热门话题，大批量推送到用户面前让其进行讨论，支持优质用户独显尊贵身份，乘机梳理权威性；</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/5K8pULHuixHWaNi3kTcg.png" width="452" height="427" /></p>
+<p>（5）做好内容消费的激励模式：用户对内容的有效消费，也可正向反馈给创作用户。消费用户对自己感兴趣的作品进行有效阅读、评论、点赞、分享、收藏、打赏等等行为，会是产出用户最直接的激励。</p>
+<h3>2. 物质激励</h3>
+<p><strong>（1）自掏腰包</strong></p>
+<ol>
+<li>固定基础奖励机制，每篇高质量文章可获得A-X奖励，以此正向反馈创作者，逐渐形成闭环，适用于日常内容征集。</li>
+<li>通过脉冲活动，刺激用户产出匹配调性的高质量内容，适合于短期内容缺口填充。此类活动包括产品化任务闯关形式、奖励话题共鸣、专题活动等。</li>
+</ol>
+<p><strong>（2）借花献佛</strong></p>
+<p>让用户/客户掏腰包激励生产用户，最常见的有付费阅读、打赏、图文带货、广告分润：</p>
+<ul>
+<li>付费阅读：免费阅读X%，付费阅读Y%，可让用户自产自销；</li>
+<li>打赏：常规功能，诱导消费用户打赏生产用户；</li>
+<li>图文带货：支持生产用户添加XX平台商品链接，匹配撰写相关文章，诱导用户去消费进而获取利润；</li>
+<li>广告分润：可分为平台广告分润、自营广告分润两种；</li>
+</ul>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/HOWQgrHspg9AMWLomcLd.png" width="450" height="259" /></p>
+<h2>04</h2>
+<p>当各种功能和框架逐渐搭建，接下来要做的基本上是运营层面的策略和产品的迭代。</p>
+<h3>1. 用户成长体系</h3>
+<p>是用户核心利益维护的关键，也是平台对用户分层运营的指标，更是将种子用户转化为核心用户的关键。一般情况下，用户成长体系包括等级体系、积分体系、会员体系、任务系统、勋章系统等。</p>
+<p>（1）等级体系：有助于提升用户活跃和留存，主要由用户当前等级和升降提示、相对等级激励政策、等级之间的升降规则（量化指标）、等级层级数量和关系组成。</p>
+<p>（2）用户升级：分为主动行为、被动行为两种，即用户主动参与各种任务升级，或者产品端给予用户的激励/处罚而导致的升级/降级。最简单常规的升级行为有：每天登陆、签到等，适当降级也可反向激励用户活跃；</p>
+<p>（3）积分体系：有提高用户活跃度、刺激消费、增加粘性、提升用户忠诚度、提升用户离开成本主要作用。是对产品端内虚拟货币把控的一种运营策略，与之相对匹配的则是积分商城（前文有提到），也可以再设置抽奖（大转盘）回收积分；</p>
+<p>（4）任务系统：与积分体系相对应的便是任务体系，用户可通过新手任务、日常任务、活动任务、勋章任务、游戏任务等刺激做出不同行为，达到相关要求即可获得相应奖励；</p>
+<p>（5）勋章系统：可单独存在，也可并入任务系统，主要是通过相应的任务，让用户获得相关虚拟勋章激励等荣誉。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/aB758e3St6t9KutWoAUP.png" width="607" height="551" /></p>
+<p>（6）会员体系：这个得看社区是否有这个需求，一般情况下是不需要的，会员体系基本适用于视频、音频、电商等平台；</p>
+<h3>2. 除了用户成长体系，还应该有评判单一账号健康平衡的系统</h3>
+<p>即做到有赏有罚，最常见的算是账号指数&amp;信用分系统（内嵌社区各种需要遵守的规章制度及文章审核标准）；</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/ZBDiZXZwYtZqvGc7uj3w.png" width="900" height="653" /></p>
+<h3>3. 对于内容社区平台，日常及节假日以产出为目的的话题、专题、产品化活动，算是最直接刺激产出的方式</h3>
+<p>如果做完以上4个步骤，基本上算一个初具规模的内容社区。当然，这还远远不够，后续关于社区的内容我会持续更新，记得点赞关注哦~</p>
+<p>&nbsp;</p>
+<p>作者：大仲；个人微信：XZATO01；4年自媒体创业经验，全网总阅读量5亿+，PUGC社区化产品持续研究深耕者；</p>
+<p>本文由 @大仲 原创发布于人人都是产品经理，未经作者许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
+➜与Excel图表相比，交互式数据可视化大屏的优势有哪些？（1）
+http://www.woshipm.com/data-analysis/4243069.html	6019
+<blockquote><p>编辑导语：数据可视化，这是近年来一个热度比较高的词，将数据以视觉形式来呈现，如图表或地图，以帮助人们了解这些数据的意义。数据可视化大屏，是当前可视化领域的一项热门应用，好的数据可视化大屏是布局、色彩、图表、动效的综合运用。与Excel图表相比，交互式数据可视化大屏的优势有哪些？</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4243753" src="http://image.woshipm.com/wp-files/2020/11/KNuSKYUDgQUxlNbmb8kY.jpg" alt="" width="900" height="420" /></p>
+<p>随着互联网的快速发展，拥有一定规模的企业也将拥有大量的数据信息，因此动态的数据大屏将成为公司业务部门不可缺少的辅助工具。</p>
+<p>在单个屏幕上进行可视化数据的交互不再是可选择性的，而是业务必需品。这就是为什么越来越多的人想要去了解数据可视化大屏，运用数据大屏。</p>
+<p>坐在舒适的工位上，享受交互式数据可视化大屏的强大功能，抛弃过往的静态数据的Excel电子表格放在一边，开始利用交互式数据大屏的设计及其功能的优势。</p>
+<p>所以本篇文章我要给大家介绍：什么是交互式仪表板，为什么需要一个数据大屏？比较交互式数据大屏和静态数据报告，如何使用数据大屏来使你的业务表现更好。</p>
+<h2>一、什么是交互式数据可视化大屏？</h2>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/hVbpnMTqpEalMdxWAp9C.gif" alt="" width="802" height="225" /></p>
+<p style="text-align: center;">图源：袋鼠云EasyV</p>
+<p>数据可视化大屏是一种数据管理工具，可以跟踪、分析、监视和直观显示关键业务指标，同时允许用户与数据进行交互，从而使他们能够制定明智的，数据驱动的，健康的业务决策。</p>
+<p>数据大屏在商业智能环境中使用，在经理和公司战略之间建立联系，使部门可以更有效地协作，并使员工能够以更高的生产率执行任务。</p>
+<p>此类数据大屏的目的在于解决简化工作环境和数据分析流程，因为企业每天都会收集大量数据，并且公司需要能够在正确的时间为正确的答案提供正确的解决方案。</p>
+<h2>二、交互式数据大屏与静态Excel报告</h2>
+<p>毫无疑问：交互式数据大屏为企业提供了前所未有的见解。</p>
+<p>专业的数据可视化平台可以使你在单个屏幕上进行数据的访问，轻松共享结果，节省时间并提高生产率。静态ppt演示，数据具有停滞性的分析报告，等待分析人员提取报告然后拥有过时数据的日子已经一去不复返了。</p>
+<p>尽管Excel和ppt以及其他各种电子表格和演示文稿应用程序仍然是许多重要的业务工具，但它们的交互性选项却受到限制。</p>
+<p>与传统的静态报告相比，交互式数据可视化大屏具有以下主要优点：</p>
+<h3>1. 敏捷性</h3>
+<p>交互式数据大屏使用户能够使用最新数据按需回答关键业务问题，此外，只需单击几下鼠标，便可以从不同的视角和角度查看数据。</p>
+<p>放大和缩小，详细说明时间间隔，过滤国家/地区或显示和隐藏不需要的特定参数，使你能够以最全面的方式查看数据，这是前所未有的。</p>
+<h3>2. 避免多余的报告</h3>
+<p>只需要一种具有最新交互功能的可视化大屏即可快速调整显示的数据，而不用创建10张静态ppt。</p>
+<p>大屏使用实时数据以及已实现的智能数据警报，使用户能够完全抛弃ppt和Excel，数据大屏将在每次发生数据异常时向用户发出警报。</p>
+<h3>3. 更少的技术参与</h3>
+<p>通过授权用户执行临时的数据分析，公司可以节省宝贵的IT资源，因为对数据库查询或自定义的请求数量将大大减少。</p>
+<p>然后，IT部门可以专注于其他紧迫或有价值的任务，而业务用户可以快速获得重要业务问题的答案。</p>
+<h3>4. 速度</h3>
+<p>毫无疑问，对于任何想要在残酷的数字时代生存的公司而言，今天的迅速发展都是至关重要的因素。使用传统的Excel或ppt时，数据每更新一次都必须要在表格内手动更新。</p>
+<p>使用现代数据大屏工具，则无需这样做。实时数据大屏支持实时数据，这就是商业智能的核心所在。</p>
+<h3>5. 生产力</h3>
+<p>虽然静态报告已成为现代社会提高生产力的有用工具，但在当今的现代互联网经济中，这还远远不够。</p>
+<p>收集并需要分析的数据量在不断增长，并且大量的静态或纸页或数百万行和列无法像以前那样帮助到你。数据可视化平台工具的兴起使用户可以自行修改数据，并使用可提高生产率的现代技术。</p>
+<p>综上所述：为什么需要强大的交互式数据大屏？</p>
+<p>交互式数据大屏可迅速吸引企业各自数据信息，并提供直观的展示和易于理解的见解。通过可视化的形式快速突出数据发展趋势，并找出不合规之处来提供管理人员进行辅助分析。</p>
+<p>数据大屏不仅用于管理，而且可以由公司中的所有团队轻松利用。它们使你可以轻松地可视化数据，按需过滤以及将数据切片和切块以进行更深入的挖掘，它们也可能很有趣。</p>
+<p>你是否利用这些数据大屏的力量进行销售？</p>
+<p>因此现在我们必须确定我们必须具有的交互式数据大屏的功能，我一共总结了十几个图表功能，本篇文章先介绍六个：</p>
+<p><strong>1）图表过滤器/点击过滤</strong></p>
+<p>精心构建的交互式仪表板提供了多种剖析数据的方式。你应该能够轻松浏览数据以发现广泛的见解，进一步启用交互性的一项重要功能是单击过滤器选项。</p>
+<p>这使用户可以将可视化图表和图形的尺寸用作临时过滤器值。就像单击图表中的任何数据集一样简单。</p>
+<p>地图是重要的数据可视化，在可视化大屏中，我们喜欢在数据大屏上使用它们。将可视化地图与单击过滤器一起使用时，效果会更好。</p>
+<p>假设你要按国家/地区显示收入数据，使用点击过滤器，只需在数据可视化大屏上的地图上单击特定国家（地区）即可。然后，你可以激活它作为整个数据可视化大屏的筛选器。</p>
+<p>大屏上可视化的数据现在仅适用于所选国家/地区，你可以轻松地单击它以返回到未过滤的视图，也可以单击另一个国家来访问该数据。</p>
+<p>只需单击几下，用户就可以轻松地与数据进行交互，找到与它们相关的内容，现在无需像在Excel中那样为每个国家/地区构建数据可视化！</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/7z5gsWVtRs8Lw1b9Nqq6.gif" alt="" width="802" height="447" /></p>
+<p style="text-align: center;">图源：袋鼠云EasyV</p>
+<p><strong>2）直通</strong></p>
+<p>追踪是一种数据可视化大屏功能，可向你显示特定数据，变量或KPI的其他，更具体和详细的​​信息，而不会过多占用仪表板。</p>
+<p>假设你要查看大屏当中的局部信息部分。通过简单地单击特定的数据图表（在这种情况下为纯利润），追踪功能将使你可以清晰地可视化此数据，而无需在主屏幕上显示。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/lmPCLPA4jMTBP2uLjdQa.gif" alt="" width="792" height="297" /></p>
+<p style="text-align: center;">图源：袋鼠云EasyV</p>
+<p>就像上图的智慧园区案例，如果你想显示园区的具体管理数据，那么钻取选项无疑是你要添加的功能之一，以便更深入地了解所选图表的各种详细信息。</p>
+<p>你想了解楼栋电力管理，电梯运维状况，追踪功能将帮助你通过单击几次来了解这些问题。</p>
+<p><strong>3）下钻</strong></p>
+<p>如果要创建数据可视化大屏，则向下钻取是你应查找并熟悉的功能之一。</p>
+<p>此选项使你可以向图表添加更多级别，这意味着只需单击你的可视化效果，你就可以钻入较低级别的X轴。</p>
+<p>向下钻取使你可以将其他变量“嵌套”到图表中，只需单击它，就可以根据你的参数更改图表，这个交互功能在地图组件当中使用的比较多。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/mVxMJnqSP7Ts7AAVQEb5.gif" alt="" width="801" height="337" /></p>
+<p style="text-align: center;">图源：袋鼠云EasyV</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/0wWvgm8cbyKNch4ksqkY.gif" alt="" width="515" height="287" /></p>
+<p style="text-align: center;">下钻功能示例按渠道和国家/地区显示客户数量，图源：datapine</p>
+<p>如在上图示例中我们可以看到的，按选定国家/地区的渠道查看客户数量的表现。</p>
+<p>当我们应用向下钻取时，图表本身发生了变化，我们可以看到各个国家（在本例中为奥地利，比利时，加拿大，荷兰，英国和美国）的每个渠道的结果。</p>
+<p>通常，向下钻取可以添加到任何类型的图表。</p>
+<p>有时称为嵌套图表，它们在表格中特别有用，可以在其中访问其他细分选项，例如类别/细分的汇总数据（例如，按渠道或国家/地区）以及更改汇总类型（总和、平均值、中位数等等）。</p>
+<p>与追踪类似，当我们不想用多个图表过度拥挤视觉效果时，只需在指尖更深入地研究数据，并为可能出现的问题提供更多信息，即可在交互式数据大屏中使用此功能。</p>
+<p>借助现代数据可视化大屏创建平台，此类分析易于创建和演示。</p>
+<p><strong>4）交叉表过滤器</strong></p>
+<p>最好的交互式数据可视化大屏使你能够通过不同的选项卡应用过滤器，以节省宝贵的时间并加快数据分析过程。</p>
+<p>本质上，交叉表筛选器将使你有机会动态同步并在不同的数据大屏选项卡上应用筛选器。</p>
+<p>实际上，假设创建了一个具有4个不同选项卡的交互式数据分析大屏，并且希望能够将一个过滤器应用于正在使用的所有选项卡。通过使用交叉表筛选器，所有其他选项卡都会更改，而无需分别创建4次。</p>
+<p>如前所述，此过滤器将使你节省时间并提高生产率，因为无需在每个选项卡上手动应用过滤器，也不会浪费一些工作时间。</p>
+<p>此外，这些智能数据分析技术用于轻松连接数据大屏不同部分中的信息，从而使你的分析更加轻松快捷。</p>
+<p><strong>5）时间间隔小部件</strong></p>
+<p>你应该知道的另一个内置交互式数据大屏功能是时间间隔小部件，这些小部件使你可以使用交互式向下钻取功能来增强数据大屏上不同图表上的各个时间刻度。</p>
+<p>使用时间间隔小部件，可以通过单击X轴上的日期或时间字段来选择图表上显示的数据的时间间隔。</p>
+<p>使用此功能可以将数据的年度视图从年度视图切换到每月，每周或每天，而无需更改整个数据大屏上显示的时间段。如果要真正快速更改单个图表的时间间隔而又不影响数据大屏上的其他数据可视化效果，这将特别有用。</p>
+<p><strong>6）自定义图表工具提示</strong></p>
+<p>有许多交互式数据大屏示例可根据其复杂程度提供自定义级别，可以调整以显示特定元素详细信息的一项重要功能是自定义图表工具提示。</p>
+<p>当你将鼠标悬停在图表上时，使用此选项可以调整所显示的信息，以提供一个小片段。假设你有一个带有各种类别的堆积条形图，可以在以下位置调整悬停信息：</p>
+<ul>
+<li>仅一类；</li>
+<li>所有类别；</li>
+<li>将自定义文本添加到类别（例如，用于其他说明）；</li>
+<li>另外添加总和、平均值、百分比等。</li>
+</ul>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/5ghpnT6CAf3sWPNYx3Ma.png" alt="" width="800" height="413" /></p>
+<p>一个小片段显示了在自定义图表工具提示下创建的其他详细信息。</p>
+<p>以上为本次文章介绍的6个功能，剩下的几个数据大屏必备的功能我们下篇文章再进行介绍～</p>
+<p>&nbsp;</p>
+<p>本文由 @数据可视化那些事 原创发布于人人都是产品经理，未经许可，禁止转载</p>
+<p>题图来自 unsplash，基于 CC0 协议</p>
+➜2020年中国游戏直播市场发展分析
+http://www.woshipm.com/it/4243344.html	6063
+<blockquote><p>导语：伴随着国家大力提倡数字经济发展，电子竞技及衍生的游戏直播成为了当下数字用户聚集发展的主流阵地，2019年，我国电子竞技市场规模达到1236.5亿人民币，用户规模近5亿人。高速发展的电竞市场为游戏直播提供了充分的发展土壤，此篇分析专题主要涵盖了电子竞技市场的发展情况以及游戏直播市场的发展趋势。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/kgDvZaZ0BubEmVL5r8Cs.jpg" alt="" width="1080" height="608" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/aaSJI3R4gom69Eldy21S.jpg" alt="" width="1080" height="608" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/nxACj5ty31UOA6IvDCpH.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/fck3KljIflKR4Yyx6VXk.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/j87Qy331gBWyUPam1Wd3.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/C9YtqR87Oolphur3kdti.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/3buZ1McNIzXYiKmsXniX.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/Zwj1q54thH9F8mM3nUfW.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/Kklz4FqSO84IoH3pGCNj.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/9C13qj5vct7AyysCZBu7.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/FXjXwdvwcRxv1kuVpd4E.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/XO1ba5FXmNQv3M2jo7sH.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/WVRTtvxz1yx1QcY1Qngi.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/AOAOPvvWIQZbJBmt5rPY.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/zQmxEFphFNtTKe2HbyLv.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/yNQENky5cBe3x1hFEoGG.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/iTjNYUhsVnkmDNnNmzkx.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/DntlcdNVd8mcDqXktMGP.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/W2K0mGhnmbJe9DoF7SQQ.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/hgrQezIxoSKBvbzTykD4.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/69yaQoRCJjzC4bwhMnVz.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/pYNezQ6Xp1wmVsL09A7p.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/H5cnq3nFbMZfULcpjR9z.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/Djss5kko126IRzhiBjoE.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/KntMZhqWKaQ0VSSqi56L.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/QNwRT5tKiB9sE9i4PiZX.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/be2hDGZzeQtzl9rzOXYL.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/L5FrnY024cXSUrDl4UwR.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/FWxVilihKoIxS5ZYKjYE.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/P4oTlVPrlt99c8pSRpwg.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/PH2zIoKk8O8DmeWhQFpq.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/7ufVdyLBaQo5iWaEyocL.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/buwWpPathvYSpJg1KcuP.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/6YVzIDlSPgXRK3HYxUJP.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/A6v4Gigee1aWIikZOms0.jpg" alt="" width="1280" height="720" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/5wpiJcUvhyuyIm9mvQrf.jpg" alt="" width="1280" height="720" /></p>
+<p>&nbsp;</p>
+<p>作者：易观分析，微信公众号：yiguanguoji</p>
+<p>本文由 @Analysys易观 原创发布于人人都是产品经理。未经许可，禁止转载</p>
