@@ -1,0 +1,403 @@
+➜工具型产品可用性测试怎么做？来看酷家乐的实战经验！
+https://www.uisdc.com/tool-product-usability-testing	57862
+<p>本文将针对酷家乐旗下云端建模工具——酷大师所做的可用性测试，说明工具型产品如何去做可用性测试。</p>
+<p>打造一款产品的过程中，我们需要时刻保持警惕：功能是否满足用户核心需求？交互流程能否做到简单流畅？是否还有未知领域可以由用户带来启发？进行一次准备充分的可用性测试，无疑是解答上述问题快捷有效的方式。</p>
+<p>下面我将结合本次针对酷家乐旗下云端建模工具——酷大师所做的可用性测试，说明工具型产品如何去做可用性测试。</p>
+<h4><span class="auto_menu">准备阶段</span></h4>
+<h4>第一步：明确测试目的</h4>
+<p>测试目的不同，安排的测试任务就不同，进而就会影响最终得到的结果。所以测试之初需要考虑清楚测试目的。国际标准化组织在人体工程学设计的人机交互部分（ ISO9241） 把b2可用性c 规定为 3 个指标：</p>
+<ul>
+<li>有效性：用户使用该系统完成任务的精度和完整性；</li>
+<li>效率：用户使用该系统完成任务需要耗费的资源；</li>
+<li>用户满意度：用户对该系统的舒适度和认可接受程度。</li>
+</ul>
+<p><span class="img-zoom"><img alt="工具型产品可用性测试怎么做？来看酷家乐的实战经验！" class="alignnone size-full wp-image-394402" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gj-20201030-1.jpg" width="917" height="225" /></span></p>
+<p>结合这3个指标，我将本次测试目的设定为：</p>
+<ul>
+<li>了解用户对酷大师现有主流程的使用现状；</li>
+<li>了解用户对酷大师的体验满意度及需求满足情况。</li>
+</ul>
+<h4>第二步：确定测试时间和环境</h4>
+<p><strong>测试时间：</strong></p>
+<ul>
+<li>测试准备时间：建议为期2天。准备相关文档、设备、场地、任务等。</li>
+<li>用户测试时间：建议为期3-5天。可短时间内容集中进行用户测试，或在工作日穿插进行测试。</li>
+<li>结果整理时间：建议为期5天。用于整理测试信息、落实产品迭代任务、撰写总结报告等。</li>
+</ul>
+<p><strong>测试环境：</strong></p>
+<ul>
+<li>线下环境：邀约用户到公司办公室现场测试；</li>
+<li>线上环境：考虑到用户路程及时间等限制性因素，也可在线上进行测试。</li>
+</ul>
+<h5>第三步：安排测试设备</h5>
+<ul>
+<li>操作设备：取决于目标用户群体主要使用的设备，假如用户都使用ipad，就要将ipad列为主要操作设备。</li>
+<li>录音设备：测试结束后需要进行详细的信息整理，录音资料可以帮助回忆沟通内容。可使用手机自带录音功能或专业录音笔。录音前必须告知用户，在征得许可后方能进行录音。</li>
+<li>录屏设备：工具型产品的操作过程中涉及很多细节，录屏资料可以帮助工作人员进行问题定位。可使用电脑自带录屏功能，或录屏工具。</li>
+<li>远程设备：由于部分用户需在线上测试，可使用在线工具进行远程协作，比如：zoom、腾讯会议等。</li>
+<li>记录本和笔：测试过程中进行表格填写时需要使用。</li>
+<li>文档资料：主要包括测试过程中需要填写的表格。建议打印n+2套，n是测试样本数量，另外2套备用。</li>
+<li>场地准备：提前预约会议室，给用户独立的操作环境。</li>
+<li>测试酬劳：具体可根据公司政策进行准备。</li>
+</ul>
+<h5>第四步.邀约测试样本</h5>
+<p>Nielsen在理论中认为5-8位用户可以测试出85%的可用性问题，实践下来确实如此，样本数量建议控制在这个范围。</p>
+<p><span class="img-zoom"><img alt="工具型产品可用性测试怎么做？来看酷家乐的实战经验！" class="alignnone size-full wp-image-394403" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gj-20201030-2.jpg" width="1012" height="549" /></span></p>
+<p>在同一个产品的用户中，新手用户、永久的的中间用户、专家用户这三类角色通常是共存的。我们需要让新手用户快速和无痛苦地成为中间用户；避免为那些想成为专家的用户设置障碍；最为重要的是，让永久的中间用户感到愉快，因为他们的技能将稳定地处于中间层。</p>
+<p>本次测试中，我尽量使样本中包含这3类用户，比例为2：3：3。测试之后，就可以大概知道对于不同类型用户来说，产品可用性和</p>
+<p>易用性情况，也可以得到多维度差异化的反馈。</p>
+<h5>第五步：设计测试文档</h5>
+<p>测试中需要使用一些管理用户信息或记录用户反馈的表格，在准备阶段就要做好表格设计和打印工作。下面是具体的表格，可根据具体需求做相应调整。</p>
+<p><strong>《用户信息&amp;排期表》</strong></p>
+<p><span class="img-zoom"><img alt="工具型产品可用性测试怎么做？来看酷家乐的实战经验！" class="alignnone size-full wp-image-394404" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gj-20201030-3.jpg" width="1500" height="539" /></span></p>
+<p>在这张表中管理测试用户信息b2姓名、职业c 、测试安排「时间、地点」、测试工作人员「主持人、观察员」。一场测试尽量安排一位主持人和一位观察员作为工作人员相互配合。</p>
+<p>主持人负责与用户沟通互动，推进测试进程；观察员负责设备和资料保障，以及测试过程中的行为观察和记录。一个人独自承担主持人+观察员角色的话，在用户反馈密集而现场又出现临时状况时就会手忙脚乱，所以建议两个角色分工协作。</p>
+<p><strong>《用户基本信息问卷》</strong></p>
+<p><span class="img-zoom"><img alt="工具型产品可用性测试怎么做？来看酷家乐的实战经验！" class="alignnone size-full wp-image-394405" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gj-20201030-4.jpg" width="1500" height="642" /></span></p>
+<p>在这张问卷中可以设计与产品相关的用户基本信息问题，问卷设计原则为：</p>
+<ul>
+<li>关联性：与需要测试的内容相关；</li>
+<li>层级性：问题层级依次递进，使用户回答问题时能够思维连贯，由浅入深；</li>
+<li>隐私性：尽量避免涉及用户敏感信息，必须涉及时需解释原因，尊重用户意愿。比如有些用户不愿透露年龄、收入等信息。</li>
+</ul>
+<p>这张问卷使用在线工具呈现，比如腾讯问卷；也可现场打印纸质问卷进行询问填写。大多数用户比较喜欢现场填写。</p>
+<p><strong>《单任务满意度问卷》</strong></p>
+<p><span class="img-zoom"><img alt="工具型产品可用性测试怎么做？来看酷家乐的实战经验！" class="alignnone size-full wp-image-394406" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gj-20201030-5.jpg" width="1500" height="640" /></span></p>
+<p>测试过程中，我们需要让用户完成一个完整任务，该任务需要拆解成若干单任务。在每个单任务结束后，立刻对用户进行该单任务的满意度询问。</p>
+<p><strong>《SUS系统可用性量表》</strong></p>
+<p><span class="img-zoom"><img alt="工具型产品可用性测试怎么做？来看酷家乐的实战经验！" class="alignnone size-full wp-image-394407" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gj-20201030-6.jpg" width="1500" height="688" /></span></p>
+<p>用户结束完整任务后，填写该量表。该量表由10个题目组成，包括奇数项的正面陈述和偶数项的反面陈述。在结果整理阶段，我们再对该量表进行分值计算。</p>
+<h5>第六步：规划测试脚本</h5>
+<p>从开始到结束，需要主持人将整场测试的各个环节串联起来，引导用户操作，推动测试进程向前发展。为防止意外状况出现，可以预设测试脚本，规划情境和话术，并在预测试环节验证及优化该话术。</p>
+<p>比如可以这样开场：“首先非常感谢您今天能来参加我们的可用性测试，我是主持人XXX，这位是观察员XXX。我们这次是对酷大师建模工具进行可用性测试，想了解您使用时的体验和感受。</p>
+<p>在这里需要强调的是：我们测试的对象是工具，而不是您，所以您不必感到紧张……当您使用工具时，我们会观察和记录。今天的测试大概需要一个小时，测试过程中会有休息时间。测试过程中，请您将手机保持静音状态……“</p>
+<p>比如可以这样进行两个单任务环节串场：“好的，我们已经完成了第一个单任务。现在有一份简单的问卷，填完后可以稍微休息一下。</p>
+<p>「出示问卷，并作简要填写说明」「问卷完成后进行简单访谈，用户也稍稍休息后继续」现在，我们开始进行第二个单任务「要清晰且大声地说出这句话，以“鼓励”测试参加者和提示记录人员」……”</p>
+<p>具体话术依据需要测试的内容和情境展开，尽量做到专业、友好。</p>
+<h5>第七步：设计测试任务</h5>
+<p>可用性测试往往带有一定目的性，而这些目的能不能达成，取决于任务与目的的关联性以及用户是否能够给到对应反馈。通常，测试用户是愿意给予反馈的，那么测试任务的设计就成为整个准备阶段最重要的环节。</p>
+<p>做好测试任务的设计和拆解：需要具备从全局高度理解产品的能力；需要知道产品全链路的过去起源、现状细节、未来走向；需要精确把控重点，拎出骨架；需要去繁就简，以较少的任务成本测出最有价值的信息。</p>
+<p>本次测试中，我设计的主流程是：模型创建——材质铺贴——模型渲染——模型发布——模型分享，并且我还希望测到拉伸、阵列、组编辑、移动、旋转这样的主功能。所以我将这两块有机结合，给到用户创建一个「楼梯踏步模型」的任务。</p>
+<p>我将任务按照主流程拆解为5个单任务，主功能分布到其中几个单任务中，且尽量做到两个单任务中不重复使用同一个主功能。</p>
+<p><span class="img-zoom"><img alt="工具型产品可用性测试怎么做？来看酷家乐的实战经验！" class="alignnone size-full wp-image-394408" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gj-20201030-7.jpg" width="1200" height="443" /></span></p>
+<h4><span class="auto_menu">预测试阶段</span></h4>
+<p>大多数产品都存在一些限制因素导致的尚未解决的已知问题。这些问题在测试中出现的话，会转移用户注意力，削弱本次测试的价值，偏移本次测试的目的。</p>
+<p>另外，我们准备阶段进行的种种规划也需要得到验证。结合这两个原因，正式测试之前建议进行内部的用户预测试。找出并修复测试环节中的漏洞，准备好各类突发状况下的planB，以及修复影响正式测试的已知问题，提高正式测试的执行效率。</p>
+<h4><span class="auto_menu">正式测试阶段</span></h4>
+<p><strong>第一步.测试开场，填写《用户基本信息问卷》</strong></p>
+<p>本次测试是在工作日穿插进行8场一对一用户测试。这样可以放缓测试节奏，在两场测试间隙有充足时间简单整理上一场收集的信息，与下一场用户确认测试安排，以及对突发状况及时处理。</p>
+<p>正式开始前半小时，观察员需确认设备都已调试妥当，资料都已打印完成。主持人可与用户进行联系，带领用户进入测试场所。主持人可以通过填写《用户基本信息问卷》了解用户基本信息，帮助用户消除在陌生环境下的沟通障碍。也可以使用户以放松状态完成测试任务，以开放心态为后续拓展性话题的展开做好准备。</p>
+<p>无论是填写《用户基本信息问卷》还是后续的问卷，建议采用主持人提问、用户回答的方式收集信息。用户的注意力集中于思考和沟通，就能够提供更多有价值的信息，而不是忙于撰写问卷。</p>
+<p><strong>第二步.完成单任务，填写《单任务满意度问卷》</strong></p>
+<p>主持人按照顺序分步解说单任务。单任务测试过程中，工作人员不要去打扰用户，也不要给用户任何提示，所有的问题都等到测试结束再进行解答。</p>
+<p>观察员需仔细观察用户操作，记录用户是否很容易判断出如何操作，完成某个重要功能点时是否顺畅；需随时关注用户表情，记录下明显表情相关联的流程或功能点等等细节。</p>
+<p>一个单任务完成后，提示用户稍事休息，然后提问《单任务满意度问卷》中的问题。此时可以回答用户操作过程中的疑问，也可以藉由操作中的细节做延展发散，询问用户操作感受。通常可以获得很多针对该单任务的意见和建议。这些意见和建议后续就需要记录整理，作为优化任务帮助提升产品可用性和易用性。</p>
+<p><strong>第三步.填写《SUS系统可用性量表》，了解整体评估</strong></p>
+<p>整个任务完成后，可以藉由填写《SUS系统可用性量表》，了解用户对整体的评估。由于量表的10个题目中，包括奇数项的正面陈述和偶数项的反面陈述，所以在提问过程中一定要陈述清楚题目。如果用户认为有些问题无法回答，则视为其选择中间值。在后续的结果整理阶段，再对量表总分进行计算。</p>
+<p>在问题询问过程中，可以有针对性地询问原因。比如针对第2个问题“我认为酷大师建模工具的操作较为复杂，其实没必要这么复杂”。</p>
+<p>如果用户认为不复杂，则可以询问哪些点非常简单易用；如果用户觉得复杂，则可以询问哪些点觉得复杂。用户告知原因的同时，常常会说出他认为比较简单的解决方案。这些解决方案或者来自于竞品，或者来自于实践，或者来自于创新，常常可以帮助我们开拓思路，走出认知盲区。</p>
+<p><strong>第四步.拓展性访谈，测试收尾</strong></p>
+<p>在这个环节可以不必拘泥于原定的测试任务。建议预留一定时间，大到行业发展，小到产品细节，与用户进行一番深度探讨。这些来自于一线的用户常常会带来一些新鲜的灵感，为产品未来的拓展提供一些线索，解决产品当下的一些困惑。</p>
+<p>由于我们一开始就对测试样本进行了分类，所以也可以结合前面几个环节的信息，对各分类下的用户诉求和行为习惯进一步验证、区分、归纳。</p>
+<h4><span class="auto_menu">结果整理阶段</span></h4>
+<p><strong>第一步.SUS量表分值计算</strong></p>
+<p>首先，我们需要计算SUS量表总分。奇数项计分采用“原始得分-1”，偶数项计分采用“5-原始得分”。由于是5点量表，每个题目的得分范围记为0~4（最大值为40），而SUS的范围在0~100，故需要把所有项的转换分相加，最终再乘以2.5，即可获得SUS分数。</p>
+<p>其次，我们可以获得分量表得分。SUS量表中，第4和第10项构成的子量表为“易学性”（Learnability），其他8项构成的子量表为“可用性”（Usability）。</p>
+<p>为了使易学性和可用性分数能够与整体SUS分数兼容，范围也是0~100，需要对原始分数进行转换：易学性量表转换分数的总和乘以12.5，可用性量表乘以3.125。</p>
+<p>最后，我们可以将SUS量表分数换算成百分等级来解释，找到对应评级。百分等级的意思是指测量的产品或系统相对于总数据库里其他产品或系统的可用性程度。比如SUS得分是73分，其百分等级大约为67，意味着比大约66%的产品可用性更好。</p>
+<p><span class="img-zoom"><img alt="工具型产品可用性测试怎么做？来看酷家乐的实战经验！" class="alignnone size-full wp-image-394409" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gj-20201030-8.jpg" width="650" height="600" /></span></p>
+<p><strong>第二步.整理问题列表，推进迭代优化</strong></p>
+<p>做完所有用户的测试之后，我们一定会收集到很多涉及具体功能点的反馈。对于正向反馈，我们可以谦虚地接受，并且思考这些打动用户的点如何复用；对于非正向反馈，我们应该冷静地思考，它们将是本次可用性测试中最直接而有效的收获！</p>
+<p>对这些反馈可以进行分类归纳，将其中能够立即应用于产品的内容整理出来，按照优先级，放入产品迭代优化任务中。这些任务将提高产品可用性，在数据层面能够帮助提升留存率。我们这次可用性测试中总共获取97个有效反馈，其中62个整理进产品迭代任务，并且取得了用户使用数据上的相应提升。</p>
+<p><strong>第三步.撰写测试报告</strong></p>
+<p>整个测试环节通常只有2-3位工作人员，如果希望能和团队一起分享测试的收获，建议整理一份总结报告。可以使用word或者ppt形式，说明测试背景、测试用户信息、主要结论、发现的问题、以及解决问题的行动项。</p>
+<h4><span class="auto_menu">总结升级</span></h4>
+<p>经过几场颇具收获的工具型产品的可用性测试之后，我做了一些总结，希望能够形成适应于工具型产品的可用性测试体系：</p>
+<p><strong>1. 目的性</strong></p>
+<p>工具型产品的可用性测试目的比较统一：帮助团队优化体验路径；帮助团队明确用户使用产品时的体验感受；帮助设计师验证设计指标。</p>
+<p><strong>2. 专业性</strong></p>
+<p>完整的可用性测试全程都需要专业支撑，从筹备到进行，从任务到结果，每一个细节都需要考虑到位。在这过程中我们要尽量保证：流程规划清晰；文档整理完整；分工明确到位。</p>
+<p><strong>3. 参与性</strong></p>
+<p>大多数可用性测试是用户体验相关岗位人员发起，但是用户对于产品的反馈与团队每位成员息息相关，所以建议团队共同参与。比如在这次可用性测试中，就邀请了产品经理和研发人员担当观察员或主持人；邀请用研人员给予专业指导培训；在对测试反馈的问题进行优化过程中，也是团队通力合作，推进迭代快速进行。</p>
+<p><strong>4. 周期性</strong></p>
+<p>可用性测试不是进行一次就结束的一场表演。而是结合产品进展情况，可持续实施的一种有效的快速验证方式。</p>
+<p>可以在新产品上线后进行，可以在重要功能上线前进行，也可以在迭代优化后进行。建议周期性进行可用性测试，取得一些结果后立即应用于产品，隔段时间再次验证，形成良性循环。亦趋近于精益用户体验中倡导的基本MVP理念。</p>
+<p>当然，每次可用性测试都需要工作人员投入大量时间和精力，所以专业赋能可以成为很好的解决方案。即团队成员可以学习使用该方法，轮流进行周期性操作。</p>
+<p><span class="img-zoom"><img alt="工具型产品可用性测试怎么做？来看酷家乐的实战经验！" class="alignnone size-full wp-image-394410" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-gj-20201030-9.jpg" width="993" height="800" /></span></p>
+<h4><span class="auto_menu">写在最后</span></h4>
+<p>我们日常其实接触并积累了大量专业方法，可用性测试只是其中一种。在不断实践的过程中才能真正体会到这些方法的魅力之处，在不断落地的过程中才能打磨自身的方法论体系，形成属于自己的一套打法，给产品设计带来新颖的专业思路。</p>
+<p>[link https://www.uisdc.com/user-testing-6-simple-steps]</p>
+<p>欢迎关注公众号「酷家乐用户体验设计」</p>
+<p><span class="img-zoom"><img alt="工具型产品可用性测试怎么做？来看酷家乐的实战经验！" class="alignnone size-full wp-image-394411" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-bc-20201030-2.jpg" width="180" height="180" /></span></p>
+➜查阅超10 万字资料，总结了这份「简约设计」深度思考（三）
+https://www.uisdc.com/minimal-design-3	61526
+<p>“大而全”还是“小而精”的观点争论，相信大家肯定都听到过，抑或是正在深陷其中。传统的观念认为，一个产品的功能越多，似乎就等同于这个产品越强大；而在当今年代，则是简约至上的设计理念大行其道。</p>
+<p>但很多人只是做到了“伪装的简单”，而并非“真正的简约”。简约至上需要正确的方法策略！</p>
+<h4><span class="auto_menu">内容回顾</span></h4>
+<p>时隔这么久，让我们先来回顾一下，上一篇系列文章都讲了哪些重要内容吧：</p>
+<ul>
+<li>“大而全的复杂设计”看似覆盖了更多的用户，但也会因此而流失更多的用户；</li>
+<li>从简单的角度来看，产品设计中，对于用户最重要的情感应该是让用户感觉自己在掌控着一切；</li>
+<li>故事可以把大量的信息浓缩到寥寥数语之中，效率极高。而且，故事很容易记住，很方便与他人分享，每个人也都喜欢听故事；</li>
+<li>愿景的设定， 应该是一个经过反复“猜测—&gt;求证—&gt;提炼”的螺旋式上升的过程</li>
+</ul>
+<p>上期回顾：</p>
+<p>[link https://www.uisdc.com/minimal-design]</p>
+<p>[link https://www.uisdc.com/minimal-design-2]</p>
+<h4><span class="auto_menu">减法的阻力</span></h4>
+<p><strong>1. 抉择时刻</strong></p>
+<p>公司的资源总是有限的，无论是对于旧产品的优化，还是对于新产品的迭代，我们总会面临抉择时刻：</p>
+<p>对于旧产品的优化，我们要考虑砍掉哪些功能，保留哪些功能。</p>
+<p>对于新产品的迭代，我们同样要考虑先开发哪些功能，后开发哪些功能。（很多时候后开发等同于不开发，因为会被安排在永远的下一期）</p>
+<p>似乎所有人都知道有这些事情需要抉择，但似乎所有人又都不知道该如何抉择。</p>
+<p>如果我们去咨询产品的用户，得到的答案似乎永远都是“不要删，全都要”，类似这样的回复。</p>
+<p>因为他们总能够列举出这些功能使用的场景，尽管有些场景出现的概率很低很低，但从他们的角度出发，又确实非常必要。</p>
+<p>如果我们在公司内部讨论的话，这个话题似乎永远都是争执不休。</p>
+<p>因为组织是由不同优先权的人构成的：战略层的眼光是长远的，这些人通常喜欢大型、亮眼的项目；管理层则更倾向于让具体的任务平滑对接；而执行层的人则喜欢小巧可靠的项目。</p>
+<p><strong>2. 沉没成本误区</strong></p>
+<p>使得我们难以抉择的原因，可以从一个经济学的现象来解释，叫做“沉没成本误区”。</p>
+<p>也就是说，对于旧产品的优化，删除任何功能，都会导致我们已经付出的时间和努力白白浪费掉；</p>
+<p>就算是对于新产品的迭代，未排上期的功能，也会让我们觉得，浪费掉了我们的调研成本、需求分析成本或者是产品设计成本。</p>
+<p>结果就变成了，我们经常调侃的一句话：“小孩子才做选择题，成年人当然是全都要！”</p>
+<p>这个经济学现象，让我想起大学的一个女同学搬家的经历：</p>
+<p>几年前有一次帮助大学同学搬家，真的是刷新了我的认知&#8230;当时找的一辆面包车运行李，还是那种中长型的，结果却是，满满的一车竟然装不下！</p>
+<p>女生的衣服就占了半车，这个也很正常。但是我这个同学的行李里面，竟然连螺丝刀、胶带、锤子这种东西都包含在内&#8230;</p>
+<p>我问她带着这些东西干嘛，然后她回答我说，说不定什么时候就用上了&#8230;</p>
+<p>避免铺张浪费，自古就是我们中国民族的传统美德。我同学搬家，把这些大大小小的东西都带上，似乎也没错，甚至感觉还挺有道理。</p>
+<p>但仔细一想，这就是典型的“沉没成本误区”。</p>
+<p>因为把这些边边角角的东西都带上，进而导致了一车装不下，结果就是还需要再跑一趟。</p>
+<p>而车辆多跑一趟的成本，远远高于了这些不常用东西自身的成本。更何况，收拾这些东西还要付出相应的时间和精力。</p>
+<p><strong>3. 边际成本效应</strong></p>
+<p>我们在考虑成本的时候，往往只是考虑了“沉没成本”，并且这种思维观点有时候真的能说服很多人。</p>
+<p>但现实是我们往往忽略了另外一个重要的方面：“边际成本效应”。</p>
+<p>还是拿搬家这件事情举例子，虽然行李中带上了螺丝刀、胶带、锤子这些东西，确实避免了“沉没成本”的损失。</p>
+<p>但是使用这些东西的次数真的少之又少，而且每一次收拾这些东西所付出的时间、精力以及运输所产生的“边际成本”，远远高于了摒弃这些东西的“沉没成本”。</p>
+<p>并且我们有诸多的替代方案来解决问题，例如需要的时候去借一下，甚至是重新买一个。</p>
+<p>就算是强如“BAT”这种互联网龙头企业，也无时无刻不在对比着“沉没成本”与“边际成本”。</p>
+<p>让我们看一些腾讯这些年停运的产品：</p>
+<ul>
+<li>腾讯微博：2020年9月停止运营；</li>
+<li>web QQ：2019年1月停止运营；</li>
+<li>腾讯TM：2017年9月停止运营；</li>
+<li>QQ旋风：2017年8月停止运营；</li>
+<li>QQ家园：2015年6月停止运营；</li>
+<li>QQ聊天室：2009年宣布关闭；</li>
+<li>&#8230;</li>
+</ul>
+<p>唉，看到这些产品，不禁让我想起那天夕阳下的奔跑，那是我逝去的青春&#8230;</p>
+<p><strong>4. 小结</strong></p>
+<p>道理有时候真的很简单，我们只需要转变一下思维方式即可。</p>
+<p>在抉择的时候，我们可以尝试把思考的问题聚焦于“为什么要保留它，保留它需要付出多少边际成本”；而不是仅仅盯着“为什么要去掉它，去掉它损失了多少沉没成本”。</p>
+<p>转变一下，你会有意想不到的惊喜。</p>
+<p><span class="img-zoom"><img alt="查阅超10 万字资料，总结了这份「简约设计」深度思考（三）" class="alignnone size-full wp-image-394699" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-jy-20201102-1.jpg" width="1080" height="608" /></span></p>
+<h4><span class="auto_menu">减法的路径</span></h4>
+<p>人们在处理信息、学习流程和记忆细节方面的能力是有限的，所以我们在面向具体产品设计的过程中，也需要时刻谨记为产品做“减法”。</p>
+<p>用户的心声往往是这样的：“你如果不快点告诉我，你有什么用，我就走了，我是懒得学习。反正有那么多简单好用的类似产品，也能够解决我的问题。”</p>
+<p>具体做“减法”的路径，可以从以下四个方面来入手：</p>
+<p><strong>1. 减去造成错误的来源</strong></p>
+<p>即使非常小的错误也会让用户懊恼。而且不要指望用户可以通过自身的学习来避免错误，因为这不是用户需要承担的职责。</p>
+<p>常见的例子，是我们为每个产品所编写的使用说明书。长长的文字与相关的图案，都好像在说：“我已经给你解释的很清楚了，你如果做错了可就别怪我了。”</p>
+<p>但事实却是用户根本懒得去看使用说明书，用户只想拿来就用，并且能够立马上手。</p>
+<p>所以说，我们作为设计人员，应该想方设法减去造成错误的来源，将错误扼杀在摇篮之中，这才是提升用户体验的重要途径。</p>
+<p>我们来举一个实际的案例：日期选择控件的设计，业务场景是银行账单的查询。</p>
+<p>如果我们不求甚解的话，一个非常常见的日期选择控件，即可解决问题。</p>
+<p><span class="img-zoom"><img alt="查阅超10 万字资料，总结了这份「简约设计」深度思考（三）" class="alignnone size-full wp-image-394700" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-jy-20201102-2.jpg" width="429" height="370" /></span></p>
+<p>但对于用户来说，如果选择了将来的日期，肯定是毫无意义的，后台返回的数据一定是NULL。这就产生了可能造成错误的来源。</p>
+<p>因此，资深的交互设计师，会在设计的过程中，直接摒弃掉这种错误的来源，让用户根本不可能发生这种错误。比如对于未来日期的选择设置为“禁用”的状态。</p>
+<p><span class="img-zoom"><img alt="查阅超10 万字资料，总结了这份「简约设计」深度思考（三）" class="alignnone size-full wp-image-394701" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-jy-20201102-3.jpg" width="422" height="376" /></span></p>
+<p><strong>2. 减去不知所云的文字；</strong></p>
+<p>还记得多年前的网页界面风格吗？大概是这样的。</p>
+<p><span class="img-zoom"><img alt="查阅超10 万字资料，总结了这份「简约设计」深度思考（三）" class="alignnone size-full wp-image-394702" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-jy-20201102-4.jpg" width="1080" height="638" /></span></p>
+<p>对于今天的我们来说，看到这样的界面，只想马上关掉，并且还会找到各种杀毒软件，屏蔽掉与这种界面类似的连接&#8230;</p>
+<p>虽然我们现在见到的产品，跟以前比较已经清爽了很多，但往往还是存在了很多冗余的文字，影响了用户体验。</p>
+<p>它们往往存在于下面几个隐蔽的角落：</p>
+<p><strong>引荐性的文字：删！</strong></p>
+<p>例如一打开界面，映入眼帘的那句废话：“欢迎光临本网站，祝您心情愉快&#8230;”</p>
+<p><strong>不必要的说明：删！</strong></p>
+<p>例如一个表单界面的提交按钮处：“填写完这些字段后，请您点击提交按钮把申请提交给我们&#8230;”</p>
+<p><strong>繁琐的解释：删！</strong></p>
+<p>例如一个“产品搜索”链接的解释性文字：“产品搜索：回答几个简单的问题，即可帮您找到合适的产品&#8230;”</p>
+<p>对于这种，我们可以直接把标题本身作为链接，只保留“产品搜索”四个字，即可让用户明白意图！</p>
+<p><strong>3. 减去不必要的选项；</strong></p>
+<p>大多数人都有选择恐惧症。</p>
+<p>想想我们每天中午点外卖的场景吧，有没有人会耗费一个小时的时间在琳琅满目的菜单界面中，纠结到底选择哪个商家，吃什么饭？</p>
+<p>给用户提供选择会让人感觉自己在把控着局面，而在某些情况下，人们更愿意少一些选择。如果选择超过一定的界限，特别是在很多选择都相似的情况下，选择反而变成了负担。</p>
+<p>聪明的默认值可以减少用户的选择，有效地节省用户的时间和精力！真正智能的默认值会“关注”用户在做什么，然后预测用户接下来的行动。</p>
+<p>通过分析客户信息（例如日志文件），可以找到很多默认值的依据，例如：</p>
+<ul>
+<li>热门文档（“头条新闻”）；</li>
+<li>类似项（“浏览过这个产品的用户还看过&#8230;”）</li>
+<li>个性化信息（“使用你的地址自动填写表单”）</li>
+<li>共同的选择（把“中国”放在国家列表的最前面）</li>
+</ul>
+<p><strong>4. 减去视觉混乱的元素；</strong></p>
+<p>删除视觉混乱的元素意味着人们必须处理的信息变少了，能够把注意力集中到真正重要的内容上。</p>
+<p>而删除混乱元素的方法也很简单：</p>
+<p>观察设计方案中的每一个元素，想一想为什么需要它。它能够提供重要的信息，还是能够提供支持？先把它从方案中删掉，如果方案中没它不行，再把它拿回来。</p>
+<p>一些具体的方法，供大家参考：</p>
+<ul>
+<li>使用空白或浅背景色来划分页面，不要使用线条。因为线条在前景中，而空白和颜色在背景上，前景会更多地吸引人的注意力。</li>
+<li>尽可能少使用强调。如果仅加粗就行了，就不必又加粗、又放大、又变成红色。</li>
+<li>别乱使用粗黑线，均匀、浅色的线更好。</li>
+<li>控制信息的层次。如果页面中信息的层次超过了3个，就会导致用户迷惑。比如说，要少用数字、大字体或粗字体，最好总共不超过3个层次：标题、子标题和正文。</li>
+<li>减少元素大小的变化。例如，如果你在设计某个报纸的电子版，可能会有一大块放置头条新闻，另有5小块放置次要一些的新闻，千万不要让版面上出现大小都不同的6个区块。</li>
+<li>减少元素形状的变化。整个界面中最好只使用一种按钮样式，使用3或者4中按钮样式就太花哨了。</li>
+</ul>
+<p><strong>5. 一个例外</strong></p>
+<p>在做“减法”的途径中，有一个例外，那就是：不可避免的法律要件，必须包含特定的内容或信息。</p>
+<p>常见的是金融和医药类的产品或服务，必须带有特定的声明。这些声明对于公众其实没有什么意义，但立法者对此有要求。</p>
+<h4><span class="auto_menu">结语</span></h4>
+<p>做“加法”其实很简单，因为我们有着做不完的需求，穷极不完的场景。但是做“减法”往往很痛苦，因为心存疑虑的利益相关方都会出面阻止！</p>
+<p>而想要打造极致的产品，就必须学会做“减法”。法国的一位作家曾经说过：“完美并非加无可加，而是减无可减。”</p>
+<p>总而言之，对于产品的简化意味着改变，而改变总是伴随着着痛苦。但我们需要知道，改变的过程分为三个阶段，而且改变的策略终将会有回报！</p>
+<p><strong>第一阶段：舒适阶段。</strong></p>
+<p>此阶段的重点是走出舒适区，想要走出舒适区，那么搜集证据就显得很有必要，例如竞争对手近期要发布更新了。</p>
+<p><strong>第二阶段：痛苦阶段。</strong></p>
+<p>痛苦一定会来，此阶段需要讨论的是，我们承受损失的能力有多大。</p>
+<p>如果此阶段复杂且耗时较长，那我们可能需要AB测试的方式，来平稳地度过此阶段了。</p>
+<p><strong>第三阶段：收益阶段。</strong></p>
+<p>如果新设计不错，可以看到曲线上扬，而这最终将带来收益。</p>
+<p>对于用户的研究，可以预测这个提高的幅度有多大。</p>
+<p>好了，以上就是我们今天的所有内容了，希望能够给大家带来帮助。当然，除了对产品做“减法”之外，简约至上还有另外三种方法策略，让我们下期不见不散~</p>
+<p>欢迎关注作者的微信公众号：「晓庄同学产品笔记」</p>
+<p><span class="img-zoom"><span class="img-zoom"><img alt="查阅超10 万字资料，总结了这份「简约设计」深度思考（三）" class="alignnone size-full wp-image-339355" src="https://image.uisdc.com/wp-content/uploads/2019/10/xzqr.jpg" alt="如何度过职场试用期？来看职场老鸟的总结！" /></span></span></p>
+➜一键抠图神器大测评，哪款才是当仁不让的C位选手？
+https://www.uisdc.com/cutout-software-evaluation	65734
+<p>快到年底最忙的时候了，一波接着一波的项目需求就要向你砸来，大量的图片素材抠起来实在是耽误时间</p>
+<p>​今天我给大家带来了感动所有设计师神器5个抠图工具大测评！！！看看到底哪个才是抠图工具中的好手快跟紧脚步~</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395030" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-1.jpg" width="812" height="600" /></span></p>
+<p>本次测评我将围绕操作便捷度、抠图数量、抠图质量、网站功能、是否付费这5个维度来对这5个抠图神器进行测评~</p>
+<p>PS:为了得到一个比较客观的结果，我们将使用三类图片进行测试</p>
+<ul>
+<li>普通背景的图片</li>
+<li>边缘复杂的图片</li>
+<li>有透明效果的图片</li>
+</ul>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395031" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-2.jpg" width="722" height="600" /></span></p>
+<p>话不多说那就开始吧</p>
+<h4><span class="auto_menu">稿定抠图</span></h4>
+<p>网站链接：<a href="https://koutu.gaoding.com">https://koutu.gaoding.com</a></p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395032" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-3.jpg" width="966" height="528" /></span></p>
+<p>稿定抠图首页这样滴~首页展示了三种主要的功能，分别为“批量抠商品”“批量抠人像”、“证件照换底色”可以说光看到这几个字眼，设计师们的泪水就要不争气地往下流了</p>
+<p>下面我们来看看操作过程，首先将图片上传到网站中，点击图中上传图片，也可以直接拖拽或粘贴图片、输入图片网址进行上传。怎么样是不是很简单？然后会跳转到生成好的抠图页面</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395033" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-4.jpg" width="1000" height="625" /></span></p>
+<p>这里能看到图片智能抠好的预览图如果不满意，还可以对图片进行手动修改</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395034" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-5.jpg" width="483" height="167" /></span></p>
+<p>接着，网站还可以对图片进行自定义的调整</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395035" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-6.jpg" width="436" height="160" /></span></p>
+<p>比如对图片质感进行自定义，说白了，就是添加喜欢的滤镜~</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395036" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-7.jpg" width="1000" height="625" /></span></p>
+<p>还可以对图片背景进行更改、替换</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395037" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-8.jpg" width="1000" height="610" /></span></p>
+<p>也可以将图片裁剪成自己想要的尺寸比例、对图进行旋转缩放等细节操作</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395038" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-9.jpg" width="1000" height="610" /></span></p>
+<p>值得一提的是搞定抠图还能给图片添加阴影，可以说是太贴心了！</p>
+<p>最后可以将自定义好的图片进行下载，搞定抠图提供了PNG与JPG的下载格式，满足不同场景的使用需求</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395039" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-10.jpg" width="1000" height="610" /></span></p>
+<p>下面来看看效果</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395040" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-11.jpg" width="889" height="610" /></span></p>
+<p>还不错，边缘自然不生硬，输出的图片质量为3000*2000，十分高清！！再来看看其他类型的图片抠出来的效果。</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395041" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-12.jpg" width="889" height="610" /></span></p>
+<p>动物毛发边缘处理地稍微有些不自然，细小的地方被吃掉了</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395042" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-13.jpg" width="618" height="700" /></span></p>
+<p>环境复杂的图片细节的处理会有一些小瑕疵，比如树叶之间和花瓣之间的区域不是那么细节可以手动调整一下</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395043" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-14.jpg" width="615" height="429" /></span></p>
+<p>含有透明像素的图片抠图效果有些不自然~</p>
+<p>测试到这里发现稿定抠图只免费提供5张图片的下载，想要抠更多的图片就要付费了，这里可以根据需要选择相应的服务</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395044" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-15.jpg" width="731" height="499" /></span></p>
+<p>打分环节</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395045" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-16.jpg" width="682" height="700" /></span></p>
+<h4><span class="auto_menu">阿里妈妈</span></h4>
+<p>网站链接：<a href="https://chuangyi.taobao.com/tools/santi?spm=a2esx.13162256.kbheader00.9.af184f2agRDCvz">https://chuangyi.taobao.com/tools</a></p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395046" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-17.jpg" width="966" height="528" /></span></p>
+<p>听到名字就能知道是阿里旗下的网站</p>
+<p>首页长这样~网站描述为「全自动高精度抠图，支持快速交互调整，擅长处理人物和电商商品」</p>
+<p>下面来看看使用方法~首先根据图示上传图片然后会自动跳转到生成后的页面</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395047" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-18.jpg" width="877" height="387" /></span></p>
+<p>边缘羽化有些过度了，但是整体效果还不错</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395048" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-19.jpg" width="877" height="463" /></span></p>
+<p>网站也可以对图片进行手动修改有增加、去除背景的功能，也可以对背景进行自定义调整</p>
+<p>在导出图片过程中时发现阿里妈妈支持PNG格式的下载</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395049" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-20.jpg" width="627" height="445" /></span></p>
+<p>导出的图片素材为6100*4167，保留了原图片的尺寸大小，nice~</p>
+<p>下面看看其他内容的图片</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395050" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-21.jpg" width="627" height="445" /></span></p>
+<p>动物毛发处理地比较生硬，有些地方没有照顾到</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395051" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-22.jpg" width="492" height="700" /></span></p>
+<p>在处理复杂背景图片上，阿里妈妈还挺粗糙的</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395052" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-23.jpg" width="615" height="429" /></span>​</p>
+<p>透明像素的背景处理效果还不错~打分环节</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395053" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-24.jpg" width="682" height="700" /></span></p>
+<h4><span class="auto_menu">Canva</span></h4>
+<p>网站链接：<a href="https://www.canva.cn/create/remove-background/">https://www.canva.cn/create/remove-background/</a></p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395054" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-25.jpg" width="966" height="627" /></span></p>
+<p>下面看看操作~点击“立即体验抠图功能工具&#8221;</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395055" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-26.jpg" width="615" height="429" /></span></p>
+<p>会跳转到网站首页提示让你登陆，登陆需要点击“创建设计”上传图片</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395056" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-27.jpg" width="615" height="429" /></span></p>
+<p>经历过稍微缓慢的加载过程后，在编辑页面选中图片</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395057" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-28.jpg" width="615" height="429" /></span></p>
+<p>然后点击上方菜单栏中的「抠图特效」，再点击左侧列表中的「抠图」，才能进行抠图orz</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395058" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-29.jpg" width="615" height="429" /></span></p>
+<p>过程也是有些缓慢</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395059" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-30.jpg" width="615" height="429" /></span></p>
+<p>接着会出现抠好图片预览，就可以对图片进行自定义与下载啦~</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395060" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-31.jpg" width="615" height="429" /></span></p>
+<p>canva提供了七种格式的免费下载，如Png、Jpg、Pdf、GIF等，但如果想要下载透明背景就要付费了，白嫖失败</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395061" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-32.jpg" width="1033" height="449" /></span></p>
+<p>看看效果</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395062" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-33.jpg" width="615" height="429" /></span></p>
+<p>后脑勺稍微有些煳掉了，整体效果还不错~</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395063" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-34.jpg" width="615" height="429" /></span></p>
+<p>毛发有点小生硬，但好在还保留了一点细节处的毛发</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395064" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-35.jpg" width="500" height="700" /></span></p>
+<p>复杂背景的处理也还不错~</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395065" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-36.jpg" width="615" height="429" /></span></p>
+<p>打分环节~</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395066" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-37.jpg" width="682" height="700" /></span></p>
+<h4><span class="auto_menu">remove.bg</span></h4>
+<p>网站链接：<a href="https://www.remove.bg/zh">https://www.remove.bg/zh</a></p>
+<p>之前介绍过这个网站和它出品的插件：</p>
+<p>[link https://www.uisdc.com/remove-bg]</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395067" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-38.jpg" width="966" height="531" /></span></p>
+<p>国外组选手，根据首页提示上传图片</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395068" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-39.jpg" width="1243" height="700" /></span></p>
+<p>图片生成时间很快，得到的图片质量也非常高清</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395069" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-40.jpg" width="709" height="429" /></span></p>
+<p>网站的自定义的功能有对细节和背景进行调整两部分~然后就可以下载啦</p>
+<p>网站提供了两种大小的图片进行下载612*408和6100*4067，但高清版本需注册支付后下载，所以如果对图片质量要求不高的话，可以直接进行选择像素低的版本的~</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395070" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-41.jpg" width="612" height="408" /></span></p>
+<p>再来看看其他类型的图片对比</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395071" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-42.jpg" width="709" height="429" /></span></p>
+<p>这里动物的毛发较前面相比比较是抠最好的，细节保留的比较完整~</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395072" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-43.jpg" width="574" height="700" /></span></p>
+<p>背景复杂的图片很让人惊喜！说不上完美，但整体效果很不错了~</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395073" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-44.jpg" width="615" height="429" /></span></p>
+<p>透明像素的图片效果也很透亮，这几位选手差距并不太大~，打分环节</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395074" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-45.jpg" width="682" height="700" /></span></p>
+<h4><span class="auto_menu">slazzer</span></h4>
+<p>网站链接：<a href="https://slazzer.com">https://slazzer.com</a></p>
+<p>之前介绍过：</p>
+<p>[link https://www.uisdc.com/slazzer]</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395075" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-46.jpg" width="966" height="531" /></span></p>
+<p>直接将图片拖拽或点击按钮就可上传到网站</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395076" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-47.jpg" width="709" height="429" /></span></p>
+<p>网站反应速度也很快，也含有对背景调整这一自定义功能</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395077" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-48.jpg" width="709" height="429" /></span></p>
+<p>最后下载时与remove.bg一样，有两种尺寸可以进行选择，有钱任性选择全尺寸，白嫖选择低尺寸就好~</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395078" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-49.jpg" width="563" height="429" /></span></p>
+<p>本着白嫖原则下载的低尺寸</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395079" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-50.jpg" width="615" height="429" /></span></p>
+<p>最后看看其他类型的对比~</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395080" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-51.jpg" width="615" height="429" /></span></p>
+<p>感觉动物毛发抠图国外组比国内组发挥要好~背景复杂组的发挥就不是很稳定了，看来还是要根据图片内容进行分析</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395081" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-52.jpg" width="500" height="700" /></span></p>
+<p>背景复杂组的发挥就不是很稳定了，看来还是要根据图片内容进行分析</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395082" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-53.jpg" width="615" height="429" /></span></p>
+<p>透明像素还不赖~打分环节！</p>
+<p>​<span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395083" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-54.jpg" width="682" height="700" /></span></p>
+<p>最后！</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-395084" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-my-20201104-55.jpg" width="794" height="800" /></span></p>
+<p>如果对你有帮助的话，不要忘了告诉更多小伙伴哦~</p>
+<p>欢迎同学们关注最充满智（dou）慧（bi）的设计账号：</p>
+<p><span class="img-zoom"><img alt="一键抠图神器大测评，哪款才是当仁不让的C位选手？" class="alignnone size-full wp-image-380742" src="https://image.uisdc.com/wp-content/uploads/2020/07/meiyaqr.png" width="200" height="200" /></span></p>
