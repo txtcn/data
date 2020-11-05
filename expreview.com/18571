@@ -41,9 +41,9 @@ GT/s数据传输速率、PAM4信令和FEC。&nbsp;</p><p>0.5版本：第一稿�
 ➜RTX 3060和RTX 3050 Ti或将于明年1月发布，下一代Hopper架构或采用5nm
 http://www.expreview.com/76586.html	16920
 <p style="text-align: left;">可能迫于AMD近期RX
-6000系列的发力，相关迹象表面英伟达近期会逐步加快更新换代速度，将光线追踪技术进一步渗透到产品线中。据推特用户<a href="https://twitter.com/kopite7kimi/status/1323994099012173824" target="_blank">kopite7kimi</a>今天再次爆料，NVIDIA
+6000系列的发力，相关迹象表明英伟达近期会逐步加快更新换代速度，将光线追踪技术进一步渗透到产品线中。据推特用户<a href="https://twitter.com/kopite7kimi/status/1323994099012173824" target="_blank">kopite7kimi</a>今天再次爆料，NVIDIA
 GeForce RTX 3060和RTX 3050 Ti会采用新的GA106
-GPU。这将是NVIDIA首次将光线追踪技术带到x050系列，从此也会纳入到RTX产品线中。&nbsp;</p><p style="text-align: center;"><img src="https://img.expreview.com/news/2020/11/05/3060_3050.png"/></p><p>RTX 3060和RTX 3050 Ti采用的全新GPU是基于最新的Ampere架构，但目前这款GPU还没有得到NVIDIA官方确认。据悉，RTX
+GPU。这将是NVIDIA首次将光线追踪技术带到x050系列，从此也会纳入到RTX产品线中。&nbsp;</p><p style="text-align: center;"><img src="https://img.expreview.com/news/2020/11/05/3060_3050.png"/></p><p>RTX 3060和RTX 3050 Ti采用的是基于最新的Ampere架构GPU，但目前还没有得到NVIDIA官方的确认。据悉，RTX
 3060将采用3840个CUDA核心，而RTX 3050 Ti则采用3584个CUDA核心。GA106
 GPU预计将采用192-bit内存控制器，这表明可能是6GB甚至12GB GDDR6显存。RTX 3060预计在2021年1月发布，而RTX 3050
 Ti可能会在1月至2月之间到来。英伟达还计划推出RTX 3050非Ti，但规格尚未确定。&nbsp;</p><p>kopite7kimi还提到一个有关Hopper架构的小道消息，这是Ampere架构的后续产品，可能会采用台积电5nm制造工艺，包括传闻数据中心使用的H100
@@ -65,10 +65,672 @@ http://www.expreview.com/76598.html	37560
 晒单返现。</h1><p>11日当天购买的产品，确认收货后提交使用心得联系客服，返现20元。&nbsp;</p><h1>&nbsp;活动四、 店铺部分产品白条六期免息。</h1><p style="text-align: center;"><img src="https://img.expreview.com/news/2020/11/05/JHT_DE.png" width="100%"/>&nbsp;</p><h2><span style="color: rgb(255, 0, 0);">还有大额优惠券。希望大家有空可以看看，如果合适就不要犹豫了。</span></h2><h2><a href="https://mall.jd.com/index-1000000431.html?from=pc" target="_blank">金河田京东自营官方旗舰店</a></h2>
 ➜台积电28nm业务需求量大增，华为可能进军硅片制造业务
 http://www.expreview.com/76594.html	40140
-<p>最近，中美之间的技术贸易战对中国的半导体制造商来说，非常具有挑战性。美国政府出台了相关的规定措施，即未经美国政府批准，他们无法使用任何美国技术。这阻止了美国有关的技术在境外的使用，使很多企业不能使用最新的制造工艺进行生产，并更换了他们首选的代工厂，而且让相关企业失去了一部分的客户群。<br/></p><p>据<a href="https://www.techpowerup.com/274259/tsmc-witnesses-28-nm-process-demand-soar" target="_blank">TECHPOWERUP了解</a>，目前台积电使用28nm工艺进行生产的需求量出现了大规模的增长，预测将在今年第四季度达到近100%的峰值，增长的主要动力源于中国的客户转换生产设施。与此同时，在其他与台积电有业务有往来的企业里，主要的增长来自于高通。</p><p>另一方面，据<a href="https://www.techpowerup.com/274260/huawei-to-enter-silicon-manufacturing-business-without-us-technologies" target="_blank">TECHPOWERUP消息</a>，华为可能进军晶片制造业务，而且不会使用美国的技术。由于美国政府对华为实施的制裁措施，使其无法使用任何基于美国技术的制造设备，从而让华为无法通过台积电的设备制造自己设计的最新芯片。在几乎没有办法跟进最新的半导体制造技术情况下，华为正在研究自己建了晶片的生产厂。</p><p>华为有意与合作伙伴、上海的IC研发企业一起进入芯片生产行业中，生产设施将不会使用任何美国的技术。据称，项目最快将于今年年底开始，而第一个成果是将工艺推进到45nm节点，这是一个今天看来相对落后的制造工艺。预计到明年年底，将转向更先进的28nm节点。虽然产能还不清楚，但目标是立足于满足华为的需求。通过这个项目，华为将排除美国制裁带来的任何影响，并将拥有软件和硬件的完整设计和生产体系。</p>
+<p>最近，中美之间的技术贸易战对中国的半导体制造商来说，非常具有挑战性。美国政府出台了相关的规定措施，即未经美国政府批准，他们无法使用任何美国技术。这阻止了美国有关的技术在境外的使用，使很多企业不能使用最新的制造工艺进行生产，并更换了他们首选的代工厂，而且让相关企业失去了一部分的客户群。<br/></p><p>据<a href="https://www.techpowerup.com/274259/tsmc-witnesses-28-nm-process-demand-soar" target="_blank">TECHPOWERUP了解</a>，目前台积电使用28nm工艺进行生产的需求量出现了大规模的增长，预测将在今年第四季度达到近100%的峰值，增长的主要动力源于中国的客户转换生产设施。与此同时，在其他与台积电有业务有往来的企业里，主要的增长来自于高通。</p><p>另一方面，据<a href="https://www.techpowerup.com/274260/huawei-to-enter-silicon-manufacturing-business-without-us-technologies" target="_blank">TECHPOWERUP消息</a>，华为可能进军晶片制造业务。由于美国政府对华为实施的制裁措施，使其无法使用任何基于美国技术的制造设备，从而让华为无法通过台积电的设备制造自己设计的最新芯片。在几乎没有办法跟进最新的半导体制造技术情况下，华为正在研究自己建了晶片的生产厂。</p><p>华为有意与合作伙伴、上海的IC研发企业一起进入芯片生产行业中，生产设施将不会使用任何美国的技术。据称，项目最快将于今年年底开始，而第一个成果是将工艺推进到45nm节点，这是一个今天看来相对落后的制造工艺。预计到明年年底，将转向更先进的28nm节点。虽然产能还不清楚，但目标是立足于满足华为的需求。通过这个项目，华为将排除美国制裁带来的任何影响，并将拥有软件和硬件的完整设计和生产体系。</p>
 ➜LG推出27GN800-B高刷新率2K显示器，具有99%的sRGB广色域并且支持HDR10
 http://www.expreview.com/76600.html	41626
 <p>随着PC上的显卡性能大步飞跃，现在高刷新率显示器已经越来越成为玩家的标配，LG在推出了27GN850-B这款27寸的高刷新率显示器后现在又悄悄推出一款型号为<a href="https://www.lg.com/us/monitors/lg-27gn800-b-gaming-monitor#" target="_blank">27GN800-B</a>的产品，外观上面与27GN850-B几乎一模一样，仅在少许项目上有所不同。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/11/05/01.jpg" width="100%"/></p><p>LG 27GN800-B是一款27英寸的高刷新率显示器，刷新率为144Hz，采用了IPS面板，分辨率为2560x1440（QHD），作为一款瞄准电竞市场的显示器，具有极短的1ms GtG响应时间，平均亮度为350尼特，对比度为1000:1。</p><p>它还具有99%的sRGB广色域并且支持HDR10和自适应同步技术，分别为AMD FreeSync Premium和NVIDIA G-SYNC Compatible。接口方面，提供了一对HDMI接口，一个DisplayPort接口和一个耳机接口。</p><p>与27GN850-B的不同点除了27GN850-B是98%DCI-P3色域而27GN800-B是99%的sRGB色域之外，它们的功耗和支架调节也略有不一样。较新的27GN800-B功耗更低，官方信息显示27GN800-B功耗在45-48W之间，而27GN850-B功耗在51-55W之间。</p><p>支架调节方面的变化更大，27GN850-B可以进行上下、倾斜和旋转调节，而较新的27GN800-B则只能进行倾斜调节。虽然官方现在还未公布价格，但是考虑到以上的配置信息和27GN800-B的型号命名明显比27GN850-B的要低这一点，可以认为27GN800-B会是价格更亲民的型号，这也让它或许会成为更多人的选择。</p>
 ➜威刚发布SE770G移动固态硬盘，读写速度高达1000/800 MB/s、还有RGB灯
 http://www.expreview.com/76599.html	43020
 <p>新一代的游戏主机快要发售了，不过面对现在的游戏动辄百GB起步的体积，不仅让人担心一个主机是否只能装几个游戏而已。当然了，游戏开发商肯定会针对主机端做优化，尽量压缩体积，不过毕竟一代主机是要用好多年的，关于主机存储容量的焦虑还是影响着玩家。虽然目前不清楚是否有外部方案，但是如果有的话，一个高速的外接硬盘是必不可少的。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/11/05/22.jpg" width="100%"/></p><p>现在威刚推出了<a href="https://www.adata.com/hk/feature/690" target="_blank">SE770G</a>移动固态硬盘，具有高达1000 MB/s的连续读取速度(最高)和高达800 MB/s的连续写入速度(最高)，或许是一个解决方案之一。除了高速读写之外，威刚SE770G移动固态硬盘还有一个很大的特点是具有RGB灯效，也算是现在顺应潮流的设计吧。</p><p>其他参数方面，威刚SE770G目前仅有黑色版本，但有两个容量版本可以选择，分别是512GB 和1TB的，尺寸方面为99.5 x 57.5 x18mm，重136g。高速读取需要高速接口的支持，威刚SE770G的接口是USB 3.2 Gen 2 Type-C的，不过包装提供两种数据线，分别是一条USB 3.2 Type-C to C&nbsp;数据线和一条Type-C to A&nbsp;数据线。</p><p>虽然官方宣传页看意思主要还是宣传其RGB灯光效果，不过我们这些性能党肯定还是注意力在性能方面了，关于高达1000 MB/s的连续读取速度(最高)和高达800 MB/s的连续写入速度(最高)官方做了容易理解的说明，即传输10GB大小的4K高画质影片，仅需约20秒左右即可完成传输。</p><p>然后关于前面提到的用于主机扩展存储的方面，威刚目前给出的支持平台除了PC之外，还有如下这些：iPad Pro 2018(含)年后机种、MacBook Pro 2019(含)年机种、MacBook Air 2019(含)年机种、XBOX ONE X、PlayStation 4 Pro。</p>
+➜锐龙9 5950X/5900X CPU天梯榜首发评测：这波是AMD的全面胜利
+http://www.expreview.com/76577.html	50400
+<!-- TDP,Windows 10,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管,热管 --><p>AMD去年推出的Zen
+2架构在IPC上基本上就追平甚至略微超过了Intel的酷睿桌面处理器，两者的游戏性能差距其实已经差很少了，多线程性能其实AMD早就是碾压态势，今年Intel推出了第十代酷睿桌面处理器Comet
+Lake进行反击，但大家看到Comet Lake之后的反应估计和我一样：就这？简单来说Comet Lake就是上一代Coffee
+Lake处理器再加了两个核心，然后把功耗限制继续往上加，并改良散热硬是拔高频率后的产物，但CPU内核还是五年前的Skylake，简单来说IPC五年没提升过。在Intel原地踏步这几年，AMD就在奋起直追，官方表示全新的Zen
+3比起上一代又有了19%的IPC提升，游戏性能更是有了很大的改善，感觉要把对手最后的优势也夺走。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/title.jpg"/></p><p>Zen
+3这一代处理器的命名直接跳过了锐龙4000系列，新的处理器叫作锐龙5000系列，估计是要让名字和明年初发布的新一代移动处理器同步，不然新的移动处理器又要“领先”桌面处理器一代了。</p><h1><strong>第五代锐龙处理器规格一览</strong></h1><p>这次AMD首批推出的第五代锐龙处理器只有四款，但囊括了6核12线程、8核16线程、12核24线程、16核32线程这些中高端重点型号，价格方面国内售价相对上代是有些微升幅，幅度不算很大，目前第五代锐龙处理器型号还不算齐全，后续AMD应该会继续扩充产品线。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+title: "第五代锐龙处理器规格",
+header: ["型号", "核心/线程", "最大/基础频率", "L3缓存", "PCI-E版本", "可用PCI-E通道", "DDR4", "TDP", "散热器", "售价"],
+width: '92%',
+columnWidth: 'MAX', //表格单元宽度，"MAX"最大内容显示，""AVG"平均，"AUTO"自动，指定[15,16,20]
+id: tableid,
+data: [
+["Ryzen 9 5950X", "16/32", "4.9/3.4GHz", "64MB", "4.0", "20", "3200MHz", "105W", "N/A", "￥6049"],
+["Ryzen 9 5900X", "12/24", "4.8/3.7GHz", "64MB", "4.0", "20", "3200MHz", "105W", "N/A", "￥4099"],
+["Ryzen 7 5800X", "8/16", "4.7/3.8GHz", "32MB", "4.0", "20", "3200MHz", "105W", "N/A", "￥3199"],
+["Ryzen 5 5600X", "6/12", "4.6/3.7GHz", "32MB", "4.0", "20", "3200MHz", "65W", "幽灵Spire", "￥2129"],
+]
+});</script></div><p>16核32线程的锐龙9 5950X，基础频率3.4GHz，加速频率能到4.9GHz，64MB L3缓存，105W TDP，售价6049元；<br/>12核24线程的锐龙9 5900X，基础频率3.7GHz，加速频率4.8GHz，64MB L3缓存，105W TDP，售价4099元；<br/>8核16线程的锐龙7 5800X，基础频率3.8GHz，加速频率4.7GHz，32MB L3缓存，105W TDP，售价3199元；<br/>6核12线程的锐龙5 5600X，基础频率3.7GHz，加速频率4.6GHz，32MB L3缓存，65W TDP，售价2129元。</p><h1><strong>Zen架构的进化历程</strong></h1><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/Architecture_01.jpg"/></p><p>2017年AMD推出了初代Zen架构，对比之前AMD的挖掘机架构可以说是革命性的架构变更，IPC提升幅度高达52%，放弃物理多核模块化设计，回归传统的SMT同步多线程架构，首次引入CCX最小CPU计算单元这概念，每个CCX里面有4个核心，并且配备8MB
+L3缓存，每个Die上最多两个CCX，并引入Precision Boost与XFR技术。</p><p>2018年推出的Zen+可以说是Zen架构的小改，改善了缓存与内存延迟，工艺从14nm升级到12nm，所以最大频率能从4GHz提升到4.35GHz，Precision
+Boost与XFR也升级到第二代，允许更多线程同时提升到更高的频率，不同线程的负载可以把频率提升到不同水平，不像第一代那样一刀切只能提升两个线程。</p><p>2019年推出的Zen
+2架构改进就非常之大了，改用台积电7nm工艺，最高频率能达到4.7GHz，依然是4核CCX，但CPU的结构大改，采用MCM多芯片封装，内部被分为了CCD以及IOD两个部分，每块PCB上最多可安装一个IOD和两个CCD，这样的设计让单个CPU的核心数量从8核翻倍到16核，但由于内存控制器安放在IOD内，所以内存延迟明显增加，为了弥补，每个CCX内的L3缓存翻倍到了16MB，内核方面，浮点单元位宽从2x128bit提升到2x256bit，大幅提升执行AVX-256指令的效率，所有的改进加起来让IPC提升了15%，此外Zen
+2架构也是首款支持PCI-E 4.0的消费级处理器。</p><p>2020年，AMD带来了全新的Zen 3架构，它采用更为成熟的7nm工艺，CCX改成8核心的，单个CCD内原来两个独立的16MB
+L3缓存也同一成一块32MB的L3缓存，与Zen 2相比IPC提升高达19%。</p><p>到底是那些东西让Zen 3有如此之大的IPC提升呢，下面让我们慢慢道来。</p><h1><strong>Zen 3较Zen 2的重大改进</strong></h1><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/Architecture_02.jpg"/></p><p>Zen 3与Zen 2架构的对比如上图所示，主要改进地方包括：前端功能增强，能更快地获取代码，尤其是对于分支代码和大尺寸代码；执行引擎减少延迟并扩大结构以提取更高的指令级并行度（ILP）；加载/存储有更大的结构和更好的预取，以支持增强的执行引擎带宽。</p><p>最大的变化是单个CCX的核心数量从4个增加到8个，现在每个CCD内都只有1个CCX，L3缓存也从两组16MB的统合成单个32MB，减少对主内存访问的依赖性，减少核心到核心的延迟，减少核心到缓存的延迟。这对于PC游戏尤其有用，因为PC游戏往往具有频繁使用L3缓存的特性，现在这些游戏现在能直接访问32MB的L3缓存，而不是16MB。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/Architecture_03.jpg"/></p><p>而19%的IPC提升，是缓存预取、执行引擎、分支预测器、微操作缓存、前端、加载/存储等多个地方改良叠加起来的结果。</p><h2><strong>前端改进</strong></h2><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/Architecture_04.jpg"/></p><p>Zen
+2架构的前端采用了更快的TAGE分支预测器，每个时钟周期能获得更多的预测，可在操作缓存和指令缓存之间更快地切换，并且能够更快的从错误预测中恢复，分支预测器准确性也进行了调整。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/Architecture_05.jpg"/></p><p>取指令与指令解码系统方面，分支目标缓冲器也有所变化，重新分配各级BTB以获得更好的预测延迟，L1 BTB数量从512条目翻倍到1024条目，L2
+BTB数量从7000条目减少到6500条目，ITA也从1000增加到1500，缩短了流水线管道，所以发生预测变量错误时能够更快的恢复，“无气泡”预测功能可更快地预测并更好地处理分支代码。</p><p>L1指令缓存依然是32KB 8-Way，但对预取和利用率都进行了改良优化，操作缓存则进行了简化，效率会比Zen 2更高。</p><h2><strong>执行引擎</strong></h2><p>执行引擎在整数与浮点方面都进行了改进</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/Architecture_06.jpg"/></p><p>整数单元方面，Zen 3的整数调度器从Zen
+2架构的92个条目增加到96个条目，现在有四个24条目的ALU/AGU调度器。物理寄存器文件从180增长到192，从而提供了更大的操作窗口。重排序缓存从224条目增加到256条目。每个内核依然拥有四个整数ALU单元和三个AGU地址生成单元，增加了一个专用分支单元和两个st数据选择器，现在每周期可并行处理10个事件。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/Architecture_07.jpg"/></p><p>Zen 3内核与Zen 2内核的ALU执行单元是相同的，但Zen
+3的调度器允许不同工作负载之间均衡共享使用ALU和AGU，这种共享调度制度可提供更大的吞吐量。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/Architecture_08.jpg"/></p><p>浮点执行单元从4个增加到6个，增加了独立的F2I/存储单元，用于存储和把浮点寄存器文件搬到整数单元，现在MUL和ADD不用在兼顾这些操作了，能够专注自己的工作了，每周期的运算能力更强了，FMAC周期从5缩短到4，使用了更强的调度器，减少了选择浮点和整数操作的延迟。</p><h2><strong>读取与存储系统</strong></h2><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/Architecture_09.jpg"/></p><p>Zen 3内核的存储队列从48个增加到64个，L2 DTLB的数量依然是2K，L1数据缓存依然是32KB 8-Way，但与Zen
+2架构的相比，每时钟周期的读取和存储次数都加了一，现在每时钟周期能进行三次读取操作和两次存储操作，但如果是浮点数据的话每周期操作数会减一，读取/存储操作更具灵活性
+。</p><p>Zen
+3架构的CCX进行了改动，现在每个CCX的L3缓存翻了一倍，所以预取算法进行了改动，能更高效的利用更大的L3缓存。使用了新技术缩短了存储-读取这样的转发操作的延迟。整个读取与存储系统有更高的带宽
+，可以满足更大更快的执行资源的需求。</p><h2><strong>8核心CCX</strong></h2><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/Architecture_10.jpg"/></p><p>与内核的改动相比，CCX的改动才是最大的，Zen与Zen 2架构每个CCD内都有2个CCX，而每个CCX内包含4个核心，并且有各自独立的8MB或16MB
+L3缓存，到了Zen
+3架构AMD修改了CCX的设计，每个CCX内有8个核心，L3缓存现在也是全部核心共享的32MB，这样能够有效降低CPU核心之间的通信延迟。Zen
+2架构即使同一芯片内的CCX之间通信也是要走IOD上的SDF的，延迟非常大，Zen
+3架构这一的改动大幅降低了同一芯片内核心通信的延迟，并且能够有效降低内存延迟，随着缓存与内存效能的提升，Zen 3架构能获得更好的游戏性能。</p><p>此外由于单个CCX的核心数量从4个增加到8个，CCX的内部总线也一同变了，AMD放弃了一直沿用的XBAR总线，改用了环形总线，毕竟4核互联只需要6条XBAR就足够了，但8核的话需要28条，复杂度大幅增加，改用环形总线确实是更好的选择。</p><h2><strong>不变的MCM封装与IOD</strong></h2><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/Architecture_11.jpg"/></p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/Architecture_12.jpg"/></p><p>Zen 3的CCD依然是使用台积电7nm工艺生产的，芯片面积是80.7mm<sup>2</sup>，晶体管数量是41.5亿，而Zen
+2的CCD面积是74mm<sup>2</sup>，内部有39亿个晶体管。IOD依然是那个没换，用GF的12nm工艺，芯片面积125mm<sup>2</sup>，内部有20.9亿个晶体管。</p><p>封装方面这个其实和Zen 2是一样的，一个CPU内包含一或两个CCD合一个IOD，相互之间采用Infinity
+Fabric总线连接，上行带宽32B每周期，下行带宽16B每周期，所以同样会出现Zen 2那样的单CCD处理器内存写入速度只有双CCD的一半的这种情况。</p><p>由于IOD没换，所以内存控制器也是那样有内存频率和IF总线存在1:1或1:2分频的现象，但锐龙5000系列的fclk能跑到2000MHz，所以内存能够跑到DDR4-4000并采用1:1分频，但目前BIOS还有些问题，只有体质好的处理器能跑到2000MHz的fclk，等以后更新到AGESA
+1.1.8.0之后就大部分都能达到了。</p><h2><strong>首发仅支持AMD 500系列主板</strong></h2><p>AMD没有像前三代那样一同发布新的主板芯片组，确实新的处理器依然采用AM4接口，所以现有主板从物理接口上是兼容的，而且实际上AMD
+500系列主板早就做好了对Ryzen 5000系列处理器的支持。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/AM4_Platform.jpg"/></p><p>此前500系列主板的AGESA 1.0.8.0版本BIOS就能点亮Ryzen 5000系列处理器，但要完全发挥性能要更新最新的AGESA
+1.1.0.0版本BIOS，这个版本的BIOS能提供最佳的体验，估计是让主板更好的适配新处理器更高的加速频率。</p><p>对于还在使用AMD
+400系列主板的用户，还是会给出支持新处理器的BIOS的，但不会像500系列主板那样在第一时间得到支持，新BIOS目前AMD还在和主板厂商合作开发中，大概在2021年1月会陆续推出测试版本。</p><p>至于AMD 300系列主板，这次是彻底没提到了，估计AMD官方是不会给出支持的了，能不能上Zen 3就完全看板厂心情了。</p><h1 style="text-align: left;"><strong>锐龙9 5950X与锐龙9 5900X处理器图赏</strong></h1><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 1; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+var istart=['Zen3-1','Zen3-2','Zen3-3','Zen3-4','Zen3-5','Zen3-6','Zen3-7','Zen3-8','Zen3-9','Zen3-10','Zen3-11','Zen3-12','Zen3-13','Zen3-14','Zen3-15','Zen3-16'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 8; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/review/2020/11/AMD_Ryzen5000/"; //图片目录
+var col = 4; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><p>AMD这次首发的4颗处理器当中只有锐龙5
+5600X是带原装散热器的，而且配的是较薄的幽灵Spire，我们手头上两颗锐龙9处理器虽然是不带散热器的，但它内部的空间其实刚好能放进幽灵Spire散热器，估计AMD这次是打算统一所有包装盒的尺寸。</p><h1>理论与应用性能测试</h1><h2><strong>测试平台与说明</strong></h2><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+align: 'left',
+width: '82%',
+padding: '8px 15px',
+header: ["测 试 平 台", ""],
+columnWidth: 'MAX', //表格单元宽度，"MAX"最大内容显示，""AVG"平均，"AUTO"自动，指定[15,16,20]
+id: tableid,
+data: [
+["CPU ","AMD Ryzen 9 5950X<br>AMD Ryzen 9 5900X<br>AMD Ryzen 9 3950X<br>AMD Ryzen 9 3900XT<br>Intel Core i9-10900K",],
+["主板","技嘉 X570 AORUS PRO WIFI | AMD X570<br>华硕 ROG MAXIMUS XII EXTREME | Intel Z490",],
+["显卡","NVIDIA GeForce RTX 3090 Founder Edition",],
+["内存","XPG 龙耀D50 DDR4-3600 8GB*2 CL18-20-20-42",],
+["硬盘","三星 980 PRO 1TB",],
+["散热器","华硕ROG STRIX LC 飞龙360",],
+["电源","酷冷至尊 V1000 PLATINUM",],
+["显示器","AOC U2790PQU up to 3840*2160",],
+["<b>软件配置</b>"],
+["操作系统","Microsoft Windows 10 64bit build 20H2",],
+["驱动","NVIDIA GeForce 456.96 DCH Game Ready",],
+]
+});</script></div><p>这次要测试的包括16核的锐龙9 5950X与12核的锐龙9 5900X，对比的对象是AMD Zen 2架构同样核心数量的锐龙9 3950X和锐龙9
+3900XT，以及Intel的酷睿i9-10900K。AMD平台使用技嘉 X570 AORUS PRO WIFI主板，而Intel平台则使用华硕 ROG
+MAXIMUS XII EXTREME主板，均使用360一体式水冷散热器，XPG 龙耀D50 DDR4-3600 8GB*2套装，显卡使用NVIDIA
+GeForce RTX 3090 Founder Edition，SSD是三星 980 PRO 1TB。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/platform.jpg"/></p><p>需要注意的是我们目前手头上并没有锐龙9 3950X，下面列出的数据是以前测试的记录下来的，所以部分测试会没有锐龙9 3950X的数据，游戏测试也没有锐龙9
+3950X，不过游戏这部分，采用改良工艺的锐龙9 3900XT其实要比锐龙9 3950X更强一些。</p><p style="text-align: center;"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/X570_pro_wifi.jpg"/><br/>测试使用的技嘉X570 AORUS PRO WIFI主板</p><h2><strong>CPU缓存与内存测试</strong></h2><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var iwd = 539; //图片宽度
+var iht = 608; //图片高度
+var pts = "AIDA 64内存与缓存测试"; //标题
+var psc = ['锐龙9 5900X', '锐龙9 5950X', '锐龙9 3900XT', '酷睿i9-10900K']; //时间轴说明
+var pimgs = ['https://img.expreview.com/review/2020/11/AMD_Ryzen5000/5900X.png', 'https://img.expreview.com/review/2020/11/AMD_Ryzen5000/5950X.png', 'https://img.expreview.com/review/2020/11/AMD_Ryzen5000/3900XT.png', 'https://img.expreview.com/review/2020/11/AMD_Ryzen5000/10900k.png']; //图片链接
+LBInit(iwd, pts, psc, pimgs, iht);</script></div><p>由于缓存的改动，Zen 3的内存延迟明显低于Zen
+2，同样搭配DDR4-3600内存时延迟从69ns下降到61ns，依然和对手的酷睿处理器有一定差距，但已经改善了不少。L1与L2缓存的带宽有所提升，延迟也降低了一些，但从幅度来看L1更像是CPU频率提升带来的影响
+，L2缓存的速度确实更快了，L3缓存与Zen
+2相比带宽减半了，主要是因为L3缓存从原来的16MB*2变成了现在的32MB*2，区块少了一半，但实际上每个CCX对应的L3带宽是没变化的，利用率其实还更高。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 1; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+var istart=['Latency_Ryzen9_5900X','Latency_Ryzen9_5950X','Latency_Ryzen9_3900XT','Latency_Corei9_10900K'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 8; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/review/2020/11/AMD_Ryzen5000/"; //图片目录
+var col = 2; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><p>这次我们使用了Sandra的处理器多内核效率来测试CPU的内核延迟，测试时关闭了CPU的SMT和超线程，可以看到锐龙9
+3900XT在CCX内部通信时延迟其实是很低的，在26到30ns之间，不过一旦跨CCX的话通信延迟就大幅上升，达到了59到73ns，而且同CCD和跨CCD之间是没有区别的，因为跨CCX之间的通信都要经过IOD，所以延迟非常高。</p><p>到了锐龙9 5900X和锐龙9
+5950X，由于CCX的改动，同CCD里面的核心间通信延迟基本都一样低，跨CCD通信的话延迟和上一代是差不多的，而8核心以下的锐龙5000处理器根本不存在跨CCD通信这一问题，CCX的改动受益最大可能是它们。</p><p>我们也测试了酷睿i9-10900K的内核延迟，由于不是MCM设计，所以10个内核之间的通信延迟是几乎一样的，在39到45ns之间，延迟大于AMD的CCX内部通信延迟，但小于跨CCD的通信延迟。</p><h2><strong>PCMark 10整机性能测试</strong></h2><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "PCMark 10基准测试"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = " "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"总分","Ryzen 9 5950X":"8703","Ryzen 9 5900X":"8410","Ryzen 9 3900XT":"7569","Core i9-10900K":"8209"},
+{"type":"常用基本功能","Ryzen 9 5950X":"10861","Ryzen 9 5900X":"10954","Ryzen 9 3900XT":"10113","Core i9-10900K":"10664"},
+{"type":"生产力","Ryzen 9 5950X":"10966","Ryzen 9 5900X":"9989","Ryzen 9 3900XT":"8793","Core i9-10900K":"10233"},
+{"type":"数位内容创作","Ryzen 9 5950X":"15021","Ryzen 9 5900X":"14753","Ryzen 9 3900XT":"13234","Core i9-10900K":"13759"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "PCMark 10应用程序测试"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = " "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"Word","Ryzen 9 5950X":"10525","Ryzen 9 5900X":"10202","Ryzen 9 3900XT":"9140","Core i9-10900K":"9792"},
+{"type":"Excel","Ryzen 9 5950X":"28341","Ryzen 9 5900X":"26257","Ryzen 9 3900XT":"23391","Core i9-10900K":"23899"},
+{"type":"PowerPoint","Ryzen 9 5950X":"11453","Ryzen 9 5900X":"12021","Ryzen 9 3900XT":"10864","Core i9-10900K":"10862"},
+{"type":"Edge","Ryzen 9 5950X":"10115","Ryzen 9 5900X":"10242","Ryzen 9 3900XT":"9418","Core i9-10900K":"9837"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>此前AMD两代锐龙处理器在PCMark 10的测试中和Intel的产品是有较明显差距的，到了Zen 2架构差距已经大幅缩小，而现在的Zen 3则是
+反超了对手，毕竟Zen 3的单线程性能比Zen 2确实有很明显的提升，而且新的PCI-E 4.0 SSD出现了，存储性能差距比对手只能用PCI-E
+3.0的拉得大了。</p><h2><strong>PCI-E 4.0测试</strong></h2><p style="text-align: left">PCI-E
+4.0的最大受益者并不是显卡，因为对显卡来说它根本用不着那么高的带宽，最大的受益者是SSD，现在许多高性能M.2 SSD都已经触碰到了PCI-E 3.0
+x4的极限，升级带宽刻不容缓，把通道数升到x8不太现实，M.2接口的规格放在那里，要上x8的只能用AIC，所以最好的方法就是从PCI-E
+3.0升到4.0，这样M.2接口的带宽就能从4GB/s翻倍到8GB/s了。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/980pro.jpg"/></p><p style="text-align: left">我们用三星980 Pro 1TB测试了它在PCI-E 3.0和PCI-E
+4.0时的性能，我们在BIOS里面可以设置PCI-E是Gen几，可见在PCI-E
+3.0的时候速度只能去到3500MB/s，这也是现在大多数M.2 SSD的极限速度，不过如果使用PCI-E
+4.0的话读取速度能到达6700MB/s，写入速度也能到4900MB/s，限制解除之后连续读写速度明显快了不少，然而随机性能并没有太大变化。现在只有AMD平台能够提供PCI-E 4.0，这也是目前AM4平台的一大优势。</p><h2><strong>基准性能测试</strong></h2><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "Sandra 2020"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = " "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"处理器计算,整数","Ryzen 9 5950X":"765.6","Ryzen 9 3950X":"768.2","Ryzen 9 5900X":"651.2","Ryzen 9 3900XT":"580.8","Core i9-10900K":"616.2"},
+{"type":"处理器计算,单精度浮点","Ryzen 9 5950X":"519.6","Ryzen 9 3950X":"468.8","Ryzen 9 5900X":"426.5","Ryzen 9 3900XT":"345.8","Core i9-10900K":"329.9"},
+{"type":"处理器计算,双精度浮点","Ryzen 9 5950X":"430.3","Ryzen 9 3950X":"399","Ryzen 9 5900X":"351.1","Ryzen 9 3900XT":"296.6","Core i9-10900K":"272"},
+{"type":"处理器多媒体,整数","Ryzen 9 5950X":"2344.9","Ryzen 9 3950X":"1884.8","Ryzen 9 5900X":"2081.7","Ryzen 9 3900XT":"1498.8","Core i9-10900K":"1484.9"},
+{"type":"处理器多媒体,单精度浮点","Ryzen 9 5950X":"2525.7","Ryzen 9 3950X":"2009.9","Ryzen 9 5900X":"2138.7","Ryzen 9 3900XT":"1527.8","Core i9-10900K":"1473.7"},
+{"type":"处理器多媒体,双精度浮点","Ryzen 9 5950X":"1479.2","Ryzen 9 3950X":"1220.5","Ryzen 9 5900X":"1263.8","Ryzen 9 3900XT":"930.4","Core i9-10900K":"859"},
+{"type":"处理器多媒体,四精度浮点","Ryzen 9 5950X":"64.1","Ryzen 9 3950X":"47","Ryzen 9 5900X":"51.57","Ryzen 9 3900XT":"35","Core i9-10900K":"38.86"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>Sandra 2020的处理器计算测试可以测试出处理器的运算能力，一般来说核心数量和线程数量多会更占优势，当然实际结果也得看处理器的频率，
+可以看得出的是，Zen 3处理器的浮点运算性能比起Zen 2确实有了很大幅度的提升，整数性能也有一定提升，但幅度没有浮点那么大
+，至于那个酷睿i9，只有10个核，在这种纯算力的测试里面被16核与12核吊打太正常了。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "SuperPi Mod 1.9 WP 1MB"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "s "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":" ","Ryzen 9 5950X":"7.328","Ryzen 9 3950X":"8.953","Ryzen 9 5900X":"8.5","Ryzen 9 3900XT":"9.063","Core i9-10900K":"7.172"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>SuperPi是一个完全比拼CPU频率的测试，是单线程的测试，这项测试里酷睿i9-10900K虽然还是第一，但差不多被锐龙9 5950X追上了，但锐龙9
+5900X和锐龙9 5950X之间差距有点大，估计是BIOS的原因。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "wPrime 2.10"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "s "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"32M,单线程","Ryzen 9 5950X":"27.502","Ryzen 9 3950X":"27.63","Ryzen 9 5900X":"27.762","Ryzen 9 3900XT":"27.569","Core i9-10900K":"27.602"},
+{"type":"1024M,多线程","Ryzen 9 5950X":"46.918","Ryzen 9 3950X":"42.45","Ryzen 9 5900X":"58.932","Ryzen 9 3900XT":"56.274","Core i9-10900K":"67.637"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>wPrime的算法和SuperPi不一样，所以出来的结果完全不一样，单线程测出来的结果5个处理器几乎一模一样，多线程测试里面Zen 2架构的甚至比Zen
+3的跑得更快，比较神奇的一个结果，当然与10核的酷睿i9-10900K比起来肯定是全胜的。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "Fritz Chess Benchmark"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = " "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"单线程","Ryzen 9 5950X":"4670","Ryzen 9 3950X":"3856","Ryzen 9 5900X":"4642","Ryzen 9 3900XT":"3911","Core i9-10900K":"4189"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>国际象棋测试由于最多只能测试16个线程，所以这里只用来测试处理器的单线程性能，两个Zen 2架构的单线程性能都比酷睿i9-10900K更低，但两颗Zen
+3的就反超了差不多10%的性能。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "7-Zip"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "KB/s "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"压缩","Ryzen 9 5950X":"78951","Ryzen 9 3950X":"71685","Ryzen 9 5900X":"79229","Ryzen 9 3900XT":"72663","Core i9-10900K":"59521"},
+{"type":"解压缩","Ryzen 9 5950X":"2421670","Ryzen 9 3950X":"1989818","Ryzen 9 5900X":"1994697","Ryzen 9 3900XT":"1575936","Core i9-10900K":"1214650"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>7-zip使用内置的Benchmark测试，Zen 3架构的两颗锐龙5000处理器表现都非常出色
+，压缩测试是无法使用CPU的全部线程的，所以12核与16核的差距不大，两颗Zen 3的领先Zen 2大概10%的性能，解压缩就可完全使用CPU的所有线程，锐龙9
+5900X甚至比锐龙9 3950X还要强一点，可见Zen 3的IPC真的提升非常大，锐龙9 5950X的解压缩能力甚至是酷睿i9-10900K的一倍。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "3DMark物理测试"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = " "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"FireStrike","Ryzen 9 5950X":"38460","Ryzen 9 3950X":"33386","Ryzen 9 5900X":"36524","Ryzen 9 3900XT":"30052","Core i9-10900K":"29566"},
+{"type":"TimeSpy","Ryzen 9 5950X":"12800","Ryzen 9 3950X":"12609","Ryzen 9 5900X":"12707","Ryzen 9 3900XT":"12180","Core i9-10900K":"13755"},
+{"type":"TimeSpy Extreme","Ryzen 9 5950X":"8423","Ryzen 9 3950X":"8350","Ryzen 9 5900X":"7606","Ryzen 9 3900XT":"6731","Core i9-10900K":"6619"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>3DMark的物理测试，除了不能使用CPU全部线程的TimeSpy基本测试外其他两个测试都是AMD的锐龙处理器完胜，FireStrike测试中锐龙9
+5900X的测试结果甚至高于锐龙9 3950X，但在压力更大的TimeSpy Extreme测试中就比不过16核了，但依然可以看出它比锐龙9
+3900XT有非常大的性能提升。</p><h2><strong>创作能力测试</strong></h2><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "X264 Benchmark"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "fps"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":" ","Ryzen 9 5950X":"152.75","Ryzen 9 3950X":"132.11","Ryzen 9 5900X":"135.7","Ryzen 9 3900XT":"115.81","Core i9-10900K":"102.15"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "X265 Benchmark"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "fps"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"","Ryzen 9 5950X":"105.68","Ryzen 9 3950X":"87.03","Ryzen 9 5900X":"91.51","Ryzen 9 3900XT":"74.59","Core i9-10900K":"76.21"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>x264以及x265是两个老牌开源编码器，应用相当广泛，这次我们使用了新版本的Benchmark，它能更好的支持AVX 2指令集。
+在这项测试中即使是12核的锐龙9 5900X也可以胜过上代旗舰16核的锐龙9 3950X，这应该就是浮点算力增加带来的结果。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "Corona 1.3 Benchmark"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "Rays/sec"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":" ","Ryzen 9 5950X":"9897200","Ryzen 9 3950X":"8168750","Ryzen 9 5900X":"8370960","Ryzen 9 3900XT":"6822550","Core i9-10900K":"6497810"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>Corona Renderers是一款全新的高性能照片级高真实感渲染器，可以用于3DS Max以及Maxon Cinema 4D等软件中使用，有很高的代表性，这里使用的是它的独立Benchmark，
+同样的在这项测试里面锐龙9 5900X性能也是要高于锐龙9 3950X的，看来浮点算力的提升对渲染软件提升非常大，在看核心数量的渲染软件中，AMD锐龙处理器基本是完胜对手。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "Pov-Ray 3.7.1 Beta3"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "pps"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"单线程","Ryzen 9 5950X":"623.25","Ryzen 9 3950X":"505.58","Ryzen 9 5900X":"618.42","Ryzen 9 3900XT":"487","Core i9-10900K":"554.65"},
+{"type":"多线程","Ryzen 9 5950X":"8745.71","Ryzen 9 3950X":"7982.95","Ryzen 9 5900X":"7533.52","Ryzen 9 3900XT":"6344.7","Core i9-10900K":"5481.32"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>POV-Ray是由Persistence OF Vision Development开发小组编写的一款使用光线跟踪绘制三维图像的渲染软件,其主要作用是利用处理器生成含有光线追踪效果的图像帧，软件内置了Benchmark程序。
+单线程测试里面两颗Zen 3处理器完全超过了对手的酷睿i9-10900K，多线程测试的话，肯定是核心数量更多的锐龙处理器的天下，可以看得出Zen 3处理器基本上比Zen 2的提升了10%甚至更高。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "Blender 2.90 | 单线程"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "s"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr =[
+{"type":"单线程","Ryzen 9 5950X":"159.83","Ryzen 9 3950X":"179.74","Ryzen 9 5900X":"161.12","Ryzen 9 3900XT":"170.46","Core i9-10900K":"156.97"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>Blender是一个开源的多平台轻量级全能三维动画制作软件，提供从建模，雕刻，绑定，粒子，动力学，动画，交互，材质，渲染，音频处理，视频剪辑以及运动跟踪，后期合成等等的一系列动画短片制作解决方案，我们使用的是最新的2.90版本，现在只用测试工程来测试CPU的单线程性能，多线程测试使用官方的Benchmark工具。
+单线程测试，虽然说还是酷睿i9-10900K排第一，但两颗锐龙5000系列处理器已经和它差不多了，性能比上代的锐龙3000有了非常明显的提升。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "Blender Benchmark | bmw27 & classroom"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "s"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"多线程","Ryzen 9 5950X":"337","Ryzen 9 5900X":"401","Ryzen 9 3900XT":"451","Core i9-10900K":"511"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>多线程测试只测试了Benchmark里面的bmw27与classroom两个项目，上表是两个项目的总耗时，锐龙9 5900X的用时比锐龙9
+3900XT缩短了10%以上，可见Zen 2到Zen 3之间的提升是非常大的，核心数量多的优势也很明显，酷睿i9-10900K被远远抛下。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "CINEBench R20"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "cb"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"单线程","Ryzen 9 5950X":"640","Ryzen 9 3950X":"537","Ryzen 9 5900X":"634","Ryzen 9 3900XT":"544","Core i9-10900K":"548"},
+{"type":"多线程","Ryzen 9 5950X":"10091","Ryzen 9 3950X":"9331","Ryzen 9 5900X":"8560","Ryzen 9 3900XT":"7218","Core i9-10900K":"6294"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>CINEBench使用MAXON公司针对电影电视行业开发的Cinema
+4D特效软件的引擎，该软件被全球工作室和制作公司广泛用于3D内容创作，而CINEBench经常被用来测试对象在进行三维设计时的性能，这项测试是AMD的强项，锐龙9
+5950X的单线程直接跑到了640分，多线程更是直接突破10000分，锐龙9 5900X的单线程也有634分，比自己的上一代以及对手竞品都高得多。</p><h2><strong>游戏性能测试</strong></h2><p>游戏测试全部都是在1080p分辨率下进行的，除了《地铁：离去》这款游戏之外其他都是开启预设最高档的画质设置，而《地铁：离去》用则是Ultra这档设置。
+《CS:GO》测试使用了官方的Benchmark地图，并且解锁了最高帧数。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "1080P游戏测试"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Higher is better  "; // 副标题文字
+var unit_text = "fps"; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 1; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"CS:GO","Ryzen 9 5950X":"719.54","Ryzen 9 5900X":"727.28","Ryzen 9 3900XT":"568.19","Core i9-10900K":"633.82"},
+{"type":"英雄联盟","Ryzen 9 5950X":"330.7","Ryzen 9 5900X":"358.1","Ryzen 9 3900XT":"250.9","Core i9-10900K":"291.3"},
+{"type":"刺客信条：奥德赛","Ryzen 9 5950X":"104","Ryzen 9 5900X":"104","Ryzen 9 3900XT":"102","Core i9-10900K":"109"},
+{"type":"全面战争：三国","Ryzen 9 5950X":"158.8","Ryzen 9 5900X":"154.9","Ryzen 9 3900XT":"139.8","Core i9-10900K":"154.5"},
+{"type":"重返德军总部","Ryzen 9 5950X":"242","Ryzen 9 5900X":"255","Ryzen 9 3900XT":"219","Core i9-10900K":"245"},
+{"type":"古墓丽影：暗影","Ryzen 9 5950X":"193","Ryzen 9 5900X":"190","Ryzen 9 3900XT":"144","Core i9-10900K":"181"},
+{"type":"地铁：离去","Ryzen 9 5950X":"132.29","Ryzen 9 5900X":"134.1","Ryzen 9 3900XT":"113.65","Core i9-10900K":"140.29"},
+{"type":"战争机器5","Ryzen 9 5950X":"154.3","Ryzen 9 5900X":"160.4","Ryzen 9 3900XT":"121.8","Core i9-10900K":"151"},
+{"type":"GTA 5","Ryzen 9 5950X":"179.34","Ryzen 9 5900X":"179.5","Ryzen 9 3900XT":"162.4","Core i9-10900K":"176.8"},
+{"type":"无主之地3","Ryzen 9 5950X":"158.28","Ryzen 9 5900X":"155.17","Ryzen 9 3900XT":"152.29","Core i9-10900K":"160.03"},
+{"type":"看门狗：军团","Ryzen 9 5950X":"110","Ryzen 9 5900X":"110","Ryzen 9 3900XT":"97","Core i9-10900K":"114"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>说真的，AMD这一代锐龙5000的游戏性能真的非常强劲，锐龙9 5900X与锐龙9
+3900XT相比，平均这么多款游戏下来提升了19%，与酷睿i9-10900K相比的话，11款游戏里面只有4款输了，有一款打平，其他6款全都高于对手，在《英雄联盟》里面甚至要高出对手23%，《CS：GO》里提升幅度也高达14%，可以说Zen
+3架构可以彻底颠覆那些还在认为AMD处理器打游戏不行这个顽固的概念。</p><h1><strong>温度测试</strong></h1><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "温度测试 | 桌面待机"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "℃ "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 0; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr =[
+{"type":" ","Ryzen 9 5950X @2.2GHz 0.360V":"32","Ryzen 9 5900X @2.2GHz 0.360V":"34.7","Ryzen 9 3900XT @2.2GHz 0.920V":"36","Core i9-10900K @0.8GHz 0.755V":"32.1"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "温度测试 | AIDA 64 Stress FPU"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "℃ "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 0; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr =[
+{"type":" ","Ryzen 9 5950X @3.8GHz 1.016":"60","Ryzen 9 5900X @4.25GHz 1.128V":"70.3","Ryzen 9 3900XT @3.95GHz 1.200V":"78","Core i9-10900K @4.9GHz 1.181V":"77.2"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>采用Zen 3架构的锐龙5000系列处理器温度明显更低了，而且待机电压控制明显要低于Zen 2，温度也更低，用AIDA64 FPU来烤机的时候，锐龙9
+5900X的频率到了4.25GHz，电压比跑3.95GHz的锐龙9 3900XT低不少，温度也只有70℃，低了8℃，至于那个锐龙9
+5950X，它只能跑到3.8GHz，温度60℃，其实上代的锐龙9 3950X也有这个现象，就是烤机的时候温度功耗比锐龙9 3900X还要低。</p><h1><strong>功耗测试</strong></h1><p>在功耗测试方面，我们使用专用的设备直接测量主板上CPU供电接口的供电功率，
+目前绝大部分主板都只通过CPU供电接口为CPU进行供电，因此CPU供电输入的功率变化基本上就是CPU功耗变化所引起的，监测该接口的功率就可以直接反应CPU功耗的高低。AIDA64的CPU
+Package功耗以及平台功耗则是进一步的参考数据，用来体现整台平台的功耗组成。</p><p>此外必须说明的是，目前我们测量的是主板上CPU供电接口的输入功率，并非直接的CPU供电功率，因此从该理论上来说应该是略高于CPU的实际供电功率，而且会更因为主板的不同而产生变化，但是这个测试数据仍然有很高的参考价值，因为电源实际上是对主板进行供电而非直接对CPU进行供电，因此对于电源的选择来说，直接测试CPU供电接口的供电功率更有实际意义。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "功耗测试 | 桌面待机"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "W "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 0; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"CPU 输入功耗","Ryzen 9 5950X @2.2GHz 0.360V":"10.7","Ryzen 9 5900X @2.2GHz 0.360V":"11.2","Ryzen 9 3900XT @2.2GHz 0.920V":"13.5","Core i9-10900K @0.8GHz 0.755V":"4.9"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "功耗测试 | AIDA 64 Stress FPU"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "W "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 0; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#fff'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"平均功耗","Ryzen 9 5950X @3.8GHz 1.016":"142","Ryzen 9 5900X @4.25GHz 1.128V":"153","Ryzen 9 3900XT @3.95GHz 1.200V":"156","Core i9-10900K @4.9GHz 1.181V":"242"},
+{"type":"峰值功耗","Ryzen 9 5950X @3.8GHz 1.016":"144","Ryzen 9 5900X @4.25GHz 1.128V":"156","Ryzen 9 3900XT @3.95GHz 1.200V":"159","Core i9-10900K @4.9GHz 1.181V":"248"}
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor);</script></div><p>待机的功耗优于AMD锐龙处理器是MCM封装，而且锐龙9处理器里面都有三个芯片，所以待机功耗确实没对手那么好，不过和自己的Zen 2处理器相比，Zen
+3的待机功耗确实降低了。</p><p>而16核的锐龙9 5950X的满载功耗要比12核的锐龙9 5900X更低，平均功耗低了9W，峰值功耗低了12W，比较它负载时的频率与电压要低得多，而锐龙9
+5900X的功耗则要比锐龙9 3900XT低3W，虽然说负载频率要高不少，但电压更低，至于对手的酷睿i9-10900K，完全没眼看。</p><h1><strong>超频测试</strong></h1><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/AMD_Ryzen5000/5900X_OC.png"/></p><p>超频我们只跑了锐龙9 5900X，用的新版RyzenMaster软件，Zen 3的超频能力又上了一个台阶，我们手头上这颗锐龙9
+5900X能超到4.7GHz，电压加到1.272V，能稳定通过AIDA64 FPU烤机测试，不过这时温度已经有点压不住的迹象了，CPU
+Package功耗206W，4.8GHz能开机，但跑不了重载测试，而上一代的基本上4.4GHz就到顶了。</p><h1><strong>ZEN 3让AMD CPU在游戏上扬眉吐气</strong></h1><p>上一代Zen
+2处理器AMD进行了大刀阔斧的改革，大胆采用MCM封装，把I/O模块独立出来强化了CPU的核心拓扑能力，让最大核心数量从8核翻倍到16核，内核也进行了各种优化也让IPC提升了15%，而到了Zen
+3，IOD部分没改，对CCD内的CCX进行了大幅改动，把CCD内的两个4核CCX融合成一个8核CCX，L3缓存也整合成一整块，这有效降低了CPU核心之间的通信延迟，L3缓存的利用也变得更为高效，核心内部也进行了各种改动，我们测出来单线程性能比Zen
+2提升了12%之多，而且功耗方面也有所下降，能用更低的功耗达到更高的频率，能耗比有不少提升。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script src="https://img.expreview.com/js/cpumin.js" type="text/javascript"></script><script type="text/javascript" src="https://topic.expreview.com/CPU/ark.js"></script><script type="text/javascript" src="https://topic.expreview.com/CPU/idata.js"></script><script type="text/javascript" src="https://topic.expreview.com/CPU/idata2.js?20201105"></script><script type="text/javascript" src="https://topic.expreview.com/CPU/adata.js"></script><script type="text/javascript" src="https://topic.expreview.com/CPU/adata2.js?20201105"></script><script type="text/javascript" src="https://topic.expreview.com/GPU/chart4.js"></script><script>CPUInit(10,"AMD Ryzen 9 5950X^admin");</script><script src="//topic.expreview.com/GPU/chart.js" type="text/javascript"></script></div><p>CCX的改动带来的收益很明显，就是降低了各种各样的延迟，这让锐龙5000系列处理器的游戏性能大幅度提升，锐龙9 5900X游戏性能比锐龙9
+3900XT整体提升了19%，和对手的酷睿i9-10900K相比也高了3.6%，以往Zen
+2处理器即使多线程性能还有拓扑能力如何比对手酷睿处理器强也有人拿游戏性能来挖苦它，但现在游戏性能不再是AMD的短板，最强游戏处理器不再是酷睿i9-10900K了。</p><p>至于多线程性能，12核与16核的锐龙9处理器打对手的10核酷睿i9是怎么打怎么赢的，我觉得就不用再多说些什么了。</p><p>锐龙5000处理器的价格比锐龙3000的上市价是略微有所上升，但性能提升了这么多，加一点价也是正常，不过上代人气较高的锐龙7 3700X和锐龙5
+3600的继任者没有出现在首发名单上，不知道AMD什么时候才会把剩下的锐龙5000系列处理器推向市场。</p><p>目前来说，Zen 3的这几款处理器面对对手的Comet Lake是毫无悬念轻松取胜，但真正的强敌是Intel明年第一季度推出的Rocket
+Lake，由于换了架构估计游戏性能也会提升不少，到时游戏性能谁胜谁负不好说，但多核性能AMD几乎是赢定了，毕竟Rocket
+Lake最多只有8核，16核打8核应该是没什么悬念。当然了这都是明年第一季度之后的事情了，还有好几个月呢，现在高喊那六个字母就行了。</p><p>购买链接：<a href="https://pro.jd.com/mall/active/2WEJdLjKNHBQLwFskwjqCqrv6xyM/index.html" target="_blank">京东</a> <a href="http://amddnyj.tmall.com/campaign-11287-32.htm?wh_weex=true" target="_blank">天猫</a></p>
+➜[视频] 游戏Zen的更强了， AMD锐龙5900、5950X处理器首发评测
+http://www.expreview.com/76601.html	51480
+<p>AMD上一代的锐龙3000系列处理器，在多个方面其实都已经强于隔壁家了，但唯独在一个重要的方面是要落后，那就是游戏表现上了，这也是游戏玩家们纠结要不要Yes一番的最大顾虑，但勤奋的AMD，也是知道自己哪里做得不好，就加强哪里，这次新一代的锐龙5000系列处理器，直接就是冲着提升游戏性能而来的，他们甚至号称这次锐龙9 3900X，是迄今全球最快的游戏处理器，所以我们这次就来看看，各位&quot;臭&quot;打游戏的，是不是真的可以彻底支持AMD阵营了。</p><p>本视频无sponsor。</p><p>如果你喜欢我们的视频，帮忙发弹幕、转发扩散吧，如果你不喜欢，请提建议帮助我们做得更好，先关注我们的频道，一起进步吧。</p><p>视频带有简体中文字幕，但需要到bilibili网站使用新版播放器查看，另外原站点可以支持最大4K分辨率播放，画质更佳，推荐使用。</p><p style="text-align: center;"><iframe src="//player.bilibili.com/player.html?aid=800236145&bvid=BV1jy4y1z7W9&cid=252897601&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="620"> </iframe><script>if(IsMobile()){
+jQuery("iframe").attr("height",jQuery("#post_body").width() * 9 / 16);
+}
+else jQuery("iframe").attr("height", jQuery("#post_body").width() * 9 / 16 + 120);</script></p><p>手机通道：<a href="https://www.bilibili.com/video/BV1jy4y1z7W9/" target="_blank" textvalue="哔哩哔哩">哔哩哔哩</a></p>
