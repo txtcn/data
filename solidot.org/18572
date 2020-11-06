@@ -16,3 +16,9 @@ https://www.solidot.org/story?sid=66018	22074
 ➜A68a 冰山可能与南乔治亚岛相撞
 https://www.solidot.org/story?sid=66019	25257
 世界最大冰山 A68a <a href="https://www.bbc.com/zhongwen/simp/science-54809445">正向英国海外属地南乔治亚岛漂移</a>。这块来自南极洲巨大的冰山与南大西洋南乔治亚岛的大小相似，冰山现在极有可能撞上这座野生动物天堂。如果发生撞击将对当地的企鹅和海豹构成严重威胁。这些动物的正常觅食路线可能被切断，从而妨碍牠们正常喂养幼仔。A68a 的撞击会压碎所有生活在海底的生物，这种干扰需要很长时间才能扭转。这座冰山的面积大约 4200 平方公里，重达数千亿吨。但它相对较薄（水下深度大约为 200 米或更少），这意味着它有可能在停靠前漂流到南佐治亚岛的海岸。<p>
+➜BBC Online 迁移到 AWS
+https://www.solidot.org/story?sid=66020	25760
+BBC Online <a href="https://www.bbc.co.uk/blogs/internet/entries/8673fe2a-e876-45fc-9a5f-203c049c9f9c">最近迁移到了 AWS 云服务</a>，从使用自己的数据中心改为使用亚马逊的数据中心。BBC 网站非常庞大，有 44 种语言，以前大部分网页都是用 PHP 写的，托管在伦敦附近的两个数据中心。云端服务相对于自行托管的一个优势是可以随时根据需要增添服务器，移除许多不必要的冗余。现在，BBC 的大部分网页都是在 AWS 使用 React 进行渲染。BBC Online 现在更快更可靠了。<p>
+➜GitHub 否认网站源代码泄露
+https://www.solidot.org/story?sid=66021	27139
+隐私活动人士 Resynth1943 <a href="https://resynth1943.net/articles/github-source-code-leak/">声称</a> GitHub 的源代码泄露。但  GitHub CEO Nat Friedman 迅速回应<a href="https://arstechnica.com/information-technology/2020/11/githubs-source-code-was-leaked-on-github-last-night-sort-of/#p3" target="_blank">否认网站源代码泄露</a>。Friedman 解释说，源代码意外公开的是 GitHub Enterprise Server，并非网站本身，虽然两者共享了一部分代码，但区别也很大。Friedman 称，它通常以混淆格式向客户提供 GitHub Enterprise Server 的源代码，但几个月前不小心向客户提供了非混淆的 GitHub Enterprise Server 代码。<p>
