@@ -27,21 +27,21 @@ https://www.appinn.com/focusreader-for-android/	21078
 ➜sheet2doc – 从 Excel 中自动填充对应数据到 Word 中
 https://www.appinn.com/sheet2doc/	34694
 <p><strong>sheet2doc</strong> 是一款可以从 Excel 中自动填充对应数据到 Word 中的在线服务，可以极大的减轻工作量。@<a href="https://www.appinn.com/sheet2doc/" class="rank-math-link">Appinn</a></p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202010/sheet2doc.jpg!o" alt="从 Excel 中自动填充对应数据到 Word 中" title="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 38"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202010/sheet2doc.jpg!o" alt="从 Excel 中自动填充对应数据到 Word 中" title="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 47"></figure></div>
 <p>其实青小蛙也有类似的需求，就是&#8230;发送兑换码。每次青小蛙手里都只有邮箱和兑换码，如果一封一封手动发邮件，早已发疯。所以一直是通过一款 MailMerge 插件来实现从 Excel 获取邮箱、姓名、兑换码，然后自动填入邮件模板，发送这样快捷实现的。</p>
 <p>sheet2doc 的原理和 MailMerge 一样，只需要提供一个简单的 .xlsx 或者 .csv 文件，然后配合带有对应标签的 .docx 文档即可。</p>
 <h2>举个例子</h2>
 <h3>Excel 示例</h3>
 <p>首行是 tag 标签，比如下面的 name、redeemcode、description，必须与 Word 中一一对应。</p>
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202010/2020-11-02-17-22-01.jpg!o" alt="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 30" width="446" height="264" title="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 39"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202010/2020-11-02-17-22-01.jpg!o" alt="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 38" width="446" height="264" title="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 48"></figure></div>
 <h3>Word 示例</h3>
 <p>Word 中最重要的是标签，需要用两个花括号加空格 {{ name }}、{{ redeemcode }}、{{ description }}，如下图：</p>
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202010/2020-11-02-17-23-06.jpg!o" alt="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 31" width="458" height="273" title="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 40"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202010/2020-11-02-17-23-06.jpg!o" alt="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 39" width="458" height="273" title="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 49"></figure></div>
 <p>这样，Excel 与 Word 就实现了一一对应，只需要依次上传到 sheet2doc 网站中即可：</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202010/2020-11-02_17_29_58.jpg!o" alt="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 32" title="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 41"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202010/2020-11-02_17_29_58.jpg!o" alt="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 40" title="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 50"></figure></div>
 <p>正常情况下，上传了 Excel 文件后，就会识别出里面的 Tags，然后直接复制到 Word 中即可。</p>
 <p>最终可以下载到一个压缩包，里面包含了每一个 Word 文档：</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202010/2020-11-02-17-33-48.jpg!o" alt="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 33" title="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 42"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202010/2020-11-02-17-33-48.jpg!o" alt="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 41" title="sheet2doc - 从 Excel 中自动填充对应数据到 Word 中 51"></figure></div>
 <p>注意免费版 sheet2doc 只能处理 5 个文档，付费价格也略贵，也不提供一次性付款服务，所以问题来了，有替代品么？</p>
 <p>sheet2doc 官网<a href="https://sheet2doc.com/?ref=appinn" class="rank-math-link" target="_blank" rel="noopener">在这里</a>。</p>
 <p>最后来看一段演示视频：</p>
