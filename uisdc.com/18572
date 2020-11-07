@@ -1,0 +1,95 @@
+➜实战案例！腾讯文档全平台系统设计复盘
+https://www.uisdc.com/tencent-document-design	63282
+<h4><span class="auto_menu">背景</span></h4>
+<blockquote><p>“操作系统对我们而言已不是最重要的了，更重要的是应用和服务。” [1]- 微软 CEO Satya Nadella</p></blockquote>
+<p>去年微软发布的便携折叠屏设备 Surface Duo 首次搭载了来自 Google 的安卓系统，而微软 CEO 也在随后的采访中表示 Windows 系统已不是微软未来的重心，他们更关心开发者如何为这些设备创造应用，无论这个平台是 Windows 还是安卓。与此同时，为了更好地服务开发者，微软也终于将原有的 UI Fabric 框架和移动端框架迁移到一个库并统称为 Fluent UI ，正式完成跨平台系统 Fluent Design 的搭建。而官方推出的全新 Office 套件移动版（安卓+iOS）则是应用 Fluent Design 一次很好的应用和推广。</p>
+<p>[link https://www.uisdc.com/microsoft-fluent-design-system]</p>
+<p>微软重应用轻系统的策略固然有它自己的历史原因，但我们仍可以从中窥见系统之间壁垒减弱的趋势。近几年主流系统之间也有很多互相借鉴和融合，例如如今很多安卓手机默认采用了苹果的 home bar 取代三大金刚键，而苹果 iOS 14 系统中的桌面插件也被认为“逐渐安卓化”。交互方式逐渐成熟和趋同后，平台系统退至幕后。服务开发者，让开发者为用户创造更大的价值才是长久之道。</p>
+<p>除此之外，随着移动设备的生产力逐步加强，手机、折叠屏、平板、电脑之间的界限变得模煳，端与端的差距也在缩小。同样是去年，苹果正式推出 iPadOS 系统，对键鼠的灵活支持让移动端的便捷和桌面端的超强生产力进一步融合。而从应用的开发而言 Electron、Flutter 等跨系统框架层出不穷，开发者也在不断尝试在不同平台上用一套代码提供同一套服务，减少系统隔阂所带来的维护成本。</p>
+<p>尽管全平台系统设计的概念还不成熟，但我们可以看到打造流畅的全平台体验的必要性。这也许会成为下一代应用的基础规则，正如当初的响应式设计。</p>
+<h4><span class="auto_menu">腾讯文档面临的挑战</span></h4>
+<p>腾讯文档发布于 2018 年，支持主流的平台和系统。但随着功能的扩展，设计和开发维护成本也在多线程同步增加，而且因为开发的时间差，很容易出现体验不一致，功能对不齐的情况。对于快节奏的互联网行业，多线并行的试错成本也比较高。</p>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395367" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wd-2020110710.jpg" width="1200" height="723" /></span></p>
+<p>△ 腾讯文档支持的端和平台</p>
+<p>初期腾讯文档为了快速上线，同时保持各平台的一致性，手机端和平板端的 App 都是基于 Web 简单适配而来，性能较差，无法满足用户的基本诉求。为了从根本上解决问题，文档团队对于产品在全平台和端上的表现重新进行了审视，对框架进行了设计调整和优化，希望通过这次改版给用户带来更流畅高效的全平台体验。</p>
+<h4><span class="auto_menu">全平台设计的原则</span></h4>
+<p>此时此刻，一个腾讯文档的白领用户可能正在工位写报告或通勤的路上查阅文档，一名学生可能在电脑上写论文或者去打印店打印，一位老师则可能刚刚发了一份在线统计表格到群里让各位家长在手机上填写。腾讯文档需要尽可能多地覆盖渠道和场景，支撑用户真正做到随时随地打开文档，快速完成当下的任务。</p>
+<p>但值得注意的是，在全平台的设计当中我们并不追求完全的一致，而是整体感知的和谐。一致的界面可以降低认知成本，但用户在不同环境也会有不同预期，例如在性能更强大的设备上自然希望能够完成更复杂的任务。那么腾讯文档如何保持其“效率”的特征？为此我们确立了以下设计原则：确保内部感知的一致性，让各端效益最大化。</p>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395368" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wd-2020110711.jpg" width="1200" height="723" /></span></p>
+<p>△ 全平台设计的原则</p>
+<h4><span class="auto_menu">确保感知的一致性</span></h4>
+<p>一致性是产品设计的基础，它可以大大减少用户的学习成本，同时强化用户对产品调性或者品牌的认知。</p>
+<p>好的品牌规范可以起到从风格上起到提纲挈领的作用，如主色调，字体，icon 风格，和用户对话的语言语调等等。而完善的设计系统则可以深入到组件，让用户从使用习惯上觉得熟悉和顺畅，从而创造一致的产品体验。</p>
+<h4><span class="auto_menu">各端效益的最大化</span></h4>
+<p>如果说产品的核心体验是一块石头，那么桌面设备、移动设备、小程序等等就像形状各异的容器。当把核心体验放到不同的容器中时，充分利用该环境的优势，填充体验缝隙，对于腾讯文档这样的效率型产品则尤为重要。</p>
+<p>我们可以从三个维度去考量和发现机会：平台环境 / 使用姿态 / 交互方式。</p>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395369" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wd-2020110712.jpg" width="1200" height="723" /></span></p>
+<p>△ 效益最大化的三个维度</p>
+<h5>1. 平台环境</h5>
+<p><strong>屏幕尺寸</strong></p>
+<p>电脑、平板、手机的基础布局差异；异形屏、折叠屏，手机的横竖屏，浏览器窗口的拉伸适配。</p>
+<p><strong>系统环境</strong></p>
+<p>Windows 和 Mac 的头部有差异；部分 Android 系统底部保留了虚拟三大金刚键；小程序右上角固定有一个控件；H5 自带顶部和底部导航栏，需考虑最小展示区域。</p>
+<p><strong>平台特性</strong></p>
+<p>移动端可通过跳转应用快速授权登录或分享到社交平台；桌面端可通过鼠标拖拽快速上传或批量操作。</p>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395370" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wd-2020110713.jpg" width="1200" height="723" /></span></p>
+<p>△ 常见的平台环境示例</p>
+<h5>2. 使用姿态</h5>
+<p>用户在移动端的使用通常为临时态，短时间内聚焦单个任务。此时明确的导航和突出重点信息能够更好地帮助用户完成任务。</p>
+<p>而用户在桌面端的姿态通常比较专注，可能持续一段时间。此时在界面中高效清晰地展示较丰富的信息能够更好地利用户的注意力，减少不必要的跳转，高效完成任务。</p>
+<h5>3. 交互方式</h5>
+<p>相同的布局在不同的平台上也要面对不同的交互方式。手指左划右划，长按拖拽都是移动端的常见操作，而在桌面端通过键鼠控制时，则需要转译为鼠标左右键点击，点击拖拽等。此外在桌面端善用快捷键也是提升效率的重要方式，尤其是对于具有一定经验并寻求进阶的用户，培养习惯也有助于提升用户粘性。</p>
+<p>除了核心交互方式的差异，移动端还有两个独特的优势：1. 更丰富的输入形态。例如拍照扫描，语音录入，手写笔，陀螺仪 (例如甩动手机撤回输入)，定位系统等。恰当进行利用能够给用户带来不同于桌面端的效率提升；2. 更方便通过QQ/微信等社交平台进行分享传播。挖掘社交平台中的场景带来新用户，形成良性循环。</p>
+<p>平板设备需要额外注意，特别是针对新的 iPadOS 系统。它虽以移动端交互为主，但也融合了键鼠的适配。因此必要时也需要提供元素的 hover 响应，并和开发同学定义好键盘快捷键和鼠标点击的交互策略。</p>
+<h4><span class="auto_menu">以原则为尺，定义规则</span></h4>
+<p>接下简单分享一下腾讯文档的实践过程。我们在“确保内部感知的一致性，让各端效益最大化”的原则下，采用从静到动，从外到内，从通用到特殊的顺序着手定义规则。</p>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395358" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wd-202011071.jpeg" width="1200" height="675" /></span></p>
+<p><strong>1. 定义各端静态主框架</strong></p>
+<p>手机端 的特点是专注当前任务。可以通过信息降噪，加强对比来让信息传达能明确，帮助用户完成单个任务；而清晰的导航可以避免小屏幕上页面频繁切换所带来的导航负担。</p>
+<p>用户通常为单手手持设备，因此我们将主导航下移使得更容易点击。此外在框架上预留了语音，拍照等快捷创建内容的入口规划。</p>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395359" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wd-202011072.jpeg" width="1200" height="675" /></span></p>
+<p>平板端 在交互方式上和手机很相似，但更大的屏幕尺寸允许用户实现轻量的多任务。在平板上我们支持了三栏布局以提升信息展示效率，减少不必要的页面跳转。考虑到用户通常为双手手持，我们将主导航放在了左侧更方便点击的位置。</p>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395360" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wd-202011073.jpeg" width="1200" height="675" /></span></p>
+<p>桌面端 是主力生产平台，通常是多窗口多任务，键鼠操作精确高效。在专注姿态下，我们可以尽量安静地展示更多常用功能，让用户在一个视图中即可完成相对复杂的任务。同时在列表页中，更大的空间让我们可以把目录树展开，减少导航跳转。</p>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395361" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wd-202011074.jpeg" width="1200" height="675" /></span></p>
+<p>下图汇总了三个端导航的映射关系以及功能上的差异点。</p>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395362" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wd-202011075.jpeg" width="1200" height="675" /></span></p>
+<p><strong>2. 布局的动态响应</strong></p>
+<p>系统的强健性：系统在一定参数扰动下，仍能维持某些性能的特性。</p>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395363" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wd-202011076.jpeg" width="1200" height="675" /></span></p>
+<p>定义完各端的静态框架后开始考虑中间状态的响应过渡。如今设备之间的差异越来越模煳，使用方式也越来越灵活。要想低成本地应对，我们需要对页面进行足够的分解和抽象。而这就不得不提到 iOS 系统中一个叫 Size Classes [3] 的概念。</p>
+<p>Size Classes 发布于 2014 年苹果的开发者大会 ，在这个规则中开发人员可以无需判断设备的类型，而是将屏幕的长和宽抽象为宽松和紧凑两种类型，从而组合出不同的设备尺寸。开发人员只要在 Xcode 中设置好在对应布局下的显示规则即可，iOS 系统会自动根据内容的尺寸类型去调整布局。这套规则大大减轻了开发人员的适配工作量，也为苹果之后更多尺寸和更高分辨率的设备适配的打下基础，吸引更多开发人员用更小的成本开发出通用的应用。</p>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395371" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wd-2020110714.jpg" width="1200" height="888" /></span></p>
+<p>△ 苹果设备的 Size Classes 示例</p>
+<p>参考 Size Classes 的规则，我们将页面定义为宽松和紧凑两种布局。那么一个页面可能适用于宽松或紧凑的布局，或者由多页子页面组合而成，而子页面的布局则根据它当前的尺寸去判断是适用于宽松还是紧凑布局。这样只需要定义两种基础布局的响则即可组合出更多页面。</p>
+<p>以下图的平板界面为例，它实际上由一个列表页 (紧凑布局) 和详情页 (宽松布局) 组合而成。在手机端显示时，每个子页面则成为一个独立的页面，继续根据尺寸判断布局策略即可，无需重新定义间距。</p>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395364" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wd-202011077.jpeg" width="1200" height="675" /></span></p>
+<p><strong>3. 容器的动态响应</strong></p>
+<p>在页面的布局策略发生变化时，页面里的容器也需要进行一些形态变化以更好的适用当前场景。以菜单为例，在紧凑布局下通过增加蒙层的方式可以让用户更好地聚焦当前任务。</p>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395365" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wd-202011078.jpeg" width="1200" height="675" /></span></p>
+<p>而当屏幕尺寸较大，页面响应为宽松布局时，在触发菜单的按钮附近以浮层的方式展示则可以避免中断用户的流程，并保留更多环境信息。</p>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395366" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wd-202011079.jpeg" width="1200" height="675" /></span></p>
+<p><strong>4. 排查特殊环境</strong></p>
+<p>制定完通用规则之后需再排查一遍是否有特殊场景被遗漏。比如产品在第三方平台内嵌的场景。</p>
+<p>以内嵌到企业微信的腾讯文档应用为例，现网多导航的嵌套导致文档几乎不可用。但因为企业微信是效率办公用户重要的一环，它对我们用户有重要的价值，因此在平衡投入和收益后，我们仍为这种情况补充了特殊的响应策略。</p>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395372" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wd-2020110715.jpg" width="1200" height="723" /></span></p>
+<p>△ 企业微信中的“腾讯文档”应用</p>
+<h4><span class="auto_menu">项目成果</span></h4>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395373" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wd-2020110716.jpg" width="1200" height="600" /></span></p>
+<p>经过调整，腾讯文档的新版 App (手机/平板) 以及电脑客户端 (Windows/Mac) 均已上架。iPad 版本也支持键盘和鼠标啦。文末附有直达链接，欢迎下载体验。</p>
+<h4><span class="auto_menu">后记</span></h4>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395374" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wd-2020110717.jpg" width="1200" height="723" /></span></p>
+<p>△ Craig Federighi 在演示 Cnontinuity demo [4]</p>
+<p>最后让我们回到 2014 年，苹果在的 iOS 8 的发布会上首次推出了 Hand-off 功能。你可以在手机上编辑一封邮件或短息，然后在另一个设备上无缝衔接继续编辑。通过 iCloud 和蓝牙，苹果的应用可以在 Mac，iPad 和 iPhone 之间时刻保持体验上的连贯性。我想这是全平台设计进程中的最令人激动的真正的创新。</p>
+<p>当万物互联的时代到来时，一切都可以成为媒介，一切都可以交互。也许那时候真的可以做到“内容就像水”，跨过系统和平台的壁垒实现流畅无缝的体验。</p>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-395027" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-2020104-1.jpg" width="180" height="183" /></span></p>
+<p>△ 扫码下载腾讯文档 APP</p>
+<p>引用：</p>
+<ul>
+<li>[1]<a href="https://www.theverge.com/2019/10/3/20896908/microsoft-windows-satya-nadella-importance-apps-services-android">https://www.theverge.com/2019/10/3/20896908/microsoft-windows-satya-nadella-importance-apps-services-android</a></li>
+<li>[2] 《交互设计精髓》</li>
+<li>[3]<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/">https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/</a></li>
+<li>[4]<a href="https://www.youtube.com/watch?v=HeW7zxoyq0o&amp;ab_channel=McLeonida">https://www.youtube.com/watch?v=HeW7zxoyq0o&amp;ab_channel=McLeonida</a></li>
+</ul>
+<p>欢迎关注作者微信公众号：「腾讯ISUX」</p>
+<p><span class="img-zoom"><img alt="实战案例！腾讯文档全平台系统设计复盘" class="alignnone size-full wp-image-388630" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-93.jpg" alt="腾讯文档如何做品牌升级？来看这份复盘总结 (上）" width="180" height="184" /></span></p>
