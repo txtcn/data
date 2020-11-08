@@ -67,3 +67,130 @@ http://www.woshipm.com/operate/4248297.html	9198
 <p>作者：刘亚澜，微信公众号：深响</p>
 <p>本文由 @深响 原创发布于人人都是产品经理，未经许可，禁止转载</p>
 <p>题图来自 Unsplash，基于 CC0 协议</p>
+➜B端UI交互界面基础组件-表格
+http://www.woshipm.com/pd/4248835.html	12231
+<blockquote><p>导语：在前一篇文章《<a href="http://www.woshipm.com/pd/4225499.html" target="_blank" rel="noopener">B端UI界面交互基础组件-翻页控制</a>》中，一起学习了B端“翻页控制”组件UI设计规范，其中包括“常规翻页”、“简单翻页”、“极简翻页”；并从翻页控制组件的需求场景、内容布局以及交互方式等方面对以上组件进行了详尽的规范描述；今天我们继续介绍了B端“表格”组件的交互规范。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4249376" src="http://image.woshipm.com/wp-files/2020/11/IO1aaS8siqQuM5A7EdOh.jpg" alt="" width="900" height="420" /></p>
+<h2>一、基础表格</h2>
+<h3>1. 需求场景</h3>
+<p>二维数据进行集中展示</p>
+<h3>2. 内容与布局</h3>
+<p>表格主体分为三个区域：表头、表体、统计数据。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/Hxcw6b5FoiKOuvS2Q6hS.png" alt="" width="737" height="251" /></p>
+<p>1）表头布局</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/ZJnVqA6MIa9OqAJDXtPj.png" alt="" width="801" height="458" /></p>
+<p>表头位于表最顶部。</p>
+<p>一般情况下，非特殊情况，不显示序列号，存在行选择按钮时不推荐显示序号列：</p>
+<p>有选择框无序号列：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/tEfqiUUt4G2iy638ZeSl.png" alt="" width="537" height="176" /></p>
+<p>有序号列无选择框：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/t7EDYrcBAyD8OLLju4Fa.png" alt="" width="513" height="204" /></p>
+<p>在一个表格列数据中，必须制定一个关键列（对行数据具有代表意义的数据项），关健列在首列：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/xddMXCbdOYOW007NzQ7h.png" alt="" width="681" height="248" /></p>
+<p>在表头可见的情况下，至少保留关键列标题，其他列根据业务员场景的功能的复杂性动态调整：</p>
+<p>仅显示关键列与操作列标题：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/5AkBkY7lnzuNcJiG2STk.png" alt="" width="361" height="182" /></p>
+<p>仅保留关键列标题：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/nhu6EwchAWYPRKfUETLP.png" alt="" width="375" height="105" /></p>
+<p>包含列标题、排序按钮、数据控制按钮。</p>
+<p>列标题：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/y7VLbNgMo9kYywlrNJvK.png" alt="" width="511" height="242" /></p>
+<ul>
+<li>在列数据为文本类型时，局左显示；</li>
+<li>列数据为同一单位数字时，居右显示，单位不同则按文本类型处理；</li>
+<li>单列中包含两项列数据定义时，用“/”符号连接数据项，例如：ID/名称、创建时间/到期时间；</li>
+<li>标题带单位，统一使用“标题文本（单位）”表现。</li>
+</ul>
+<p>列数据控制按钮，跟随在列标题之后，提供诸如：分类、排序功能。</p>
+<p>在特定情况下，数据宽度超过预定限制，需要对列锁定。</p>
+<p>左侧锁定：序号必须处于锁定状态，非特殊情况关键列也需要处于左侧锁定状态。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/sjEFLF4mqfJv8uNiRixQ.png" alt="" width="521" height="266" />左右两侧锁定：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/YCHhVZil2uxBnFCOzxDs.png" alt="" width="500" height="268" /></p>
+<p>2）表体布局</p>
+<p>显示高度设定，无论表体数据行数量多少显示高度固定，当内容超高时出现垂直滚动条：</p>
+<p>表体无数据时：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/poNyqGAOxwSccw1Lq1ex.png" alt="" width="385" height="127" /></p>
+<p>表体内容较少时：</p>
+<p><img data-action="zoom" class="aligncenter" style="color: #666666;" src="http://image.woshipm.com/wp-files/2020/11/SoHFq868haiOJeKC8EhN.png" alt="" width="353" height="162" /></p>
+<p>表体内容较多时：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/sXAOXRCzfZZ6urwIb8Cx.png" alt="" width="389" height="285" /></p>
+<p>显示高度受限，当表体高度达到限制高度时，表体高度不再变化，并出现垂直滚动条：</p>
+<p>表体有最小高度限制：未达到最小高度时，表体以最小限制高度为准：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/MGKiWWPgCF0znNxvNFMv.png" alt="" width="340" height="165" /></p>
+<p>表体无最小高度限制：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/dYZVNH4Vz1tIDQKt8OGi.png" alt="" width="340" height="165" /></p>
+<p>高度已到达上限，表体出现垂直滚动条：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/BwKpGkktj25yOYD5qLM6.png" alt="" width="389" height="285" /></p>
+<p>当表体无数据时，如需提示用户在无数据情况下进行数据新增可以进行如下显示：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/KzXyr82cLJvUrJoYFSzY.png" alt="" width="353" height="81" /></p>
+<p>表体行每列数据根据表头约束内容进行显示：</p>
+<p>列为两项数据联合显示：每行数据占用一行，行内文本遵循文本显示规范。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/LSsihPMJNM3YY5ePBJEu.png" alt="" width="295" height="122" /></p>
+<p>如列数据仅作为补充描述内容，文本显示可以进行弱化显示。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/dpGvt58kS4fK8RErVSKp.png" alt="" width="296" height="220" /></p>
+<p>表格中如果有关键数据项，如ID、名称，尽量保证显示宽度，一个表格中只允许一个关键数据项（尽量选取全英文字符数据项为关键数据项）。</p>
+<p>例如ID作为本表格的关键数据项，ID涉及总长度为32个字符；则保证32个字符能完全显示的空间，其余数据项允许显示宽度不够截断展示。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/psM7Cqp6E1csCcl2cKio.png" alt="" width="404" height="287" /></p>
+<p>3）统计项区域在可见状态时，跟随在表体后部，局左显示：</p>
+<p>表格无选中框：只显示“总计X条”。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/yZJJ9ASd5FaU9SdqM3ww.png" alt="" width="552" height="210" /></p>
+<p>表格有选中框：显示“已选择X条，总计X条”</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/2wS4GMYtVchmzwhBpS5T.png" alt="" width="550" height="208" />4）【建议】对表格数据项数量进行控制，尽量避免出现列显示超过设计宽度。</p>
+<h3>3. 交互建议</h3>
+<p>当表格支持行选择时，选择应对行数据统计后，数据区域对应内容发生变化。</p>
+<h2>二、分屏加载表格</h2>
+<h3>1. 需求场景</h3>
+<p>二维数据进行集中展示。</p>
+<p>支持大数据量的数据展示。</p>
+<p>避免大数据量一次获取与加载的性能问题。</p>
+<h3>2. 内容与布局</h3>
+<p>根据功能需要，表格主体分为两个区域：表头、表体、加载控制、数据统计。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/0s85U6rgjgUE3dI0sJHM.png" alt="" width="651" height="270" /></p>
+<p>表头、表体与基础表格样式约束保持一致。</p>
+<p>加载控制按钮处于表体与统计信息显示区域之间。</p>
+<p>手动控制加载出现加载控制按钮：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/cRojhy2CalE05pXZfkRQ.png" alt="" width="522" height="133" /></p>
+<p>滚屏自动加载不使用加载控制按钮，直接使用加载状态：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/VpVEGX8zrO7TRNaBFjh6.png" alt="" width="557" height="246" /></p>
+<p>当数据处于加载过程时，加载控制按钮变更为加载状态信息：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/X78k5z17DTtoAcV8pyej.png" alt="" width="436" height="234" /></p>
+<p>当表格数据无更多数据时，加载控制按钮隐藏显示：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/M1BVwKM3pqEzULcIHl4m.png" alt="" width="552" height="198" /></p>
+<p>数据统计信息在表格行数据是否具备复选功能时表现不同状态。</p>
+<p>无复选框或有复选框但未选择任何数据“已加载X条，总计X条”：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/Mr1UEqMw2EEo3oAy8QEq.png" alt="" width="372" height="79" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/UfXrvmyM92yNKhVbgKEM.png" alt="" width="359" height="63" /></p>
+<h3>3. 交互行为</h3>
+<p>使用点击加载更多模式，需点击加载按钮进入数据获取；完成数据更新后追加数据到标题行数据后部，每次获取数量根据业务需要进行设置：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/6Uve2liOSf4CMMAjSoLN.png" alt="" width="521" height="740" />当所有数据加载完毕后，加载控制按钮区域隐藏：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/nU9bthKV41dWbXEYFb2e.png" alt="" width="522" height="468" /></p>
+<p>当表格数据属于可选择，且已有数据被选择时，统计信息如下：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/XEDoXhVMISqYlQ4YF57a.png" alt="" width="524" height="339" /></p>
+<p>滚屏自动加载在纵向滚动条滚动到表格列底部时，自动触发加载行为：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/x7PigbCiAeudeTK2X4HQ.png" alt="" width="554" height="232" /></p>
+<p>正在加载中不允许二次加载，需加载完毕后进行再执行对应加载操作。</p>
+<h2>三、分页加载表格</h2>
+<h3>1. 需求场景</h3>
+<p>二维数据进行集中展示。</p>
+<p>支持大数据量的数据展示。</p>
+<p>避免大数据量一次获取与加载的性能问题。</p>
+<p>支持页面按需要快速跳转加载。</p>
+<h3>2. 内容与布局</h3>
+<p>根据功能需要，表格主体分为两个区域：表头、表体、翻页控制。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/oQHbCQlHWw0O7JFoS3ik.png" alt="" width="587" height="234" /></p>
+<p>表头、表体显示规则与基础表格相同。</p>
+<p>表格统计数据在翻页控制按钮中集中展示。</p>
+<p>当表格数据无数据时，翻页控制按钮不可见：</p>
+<p>有数据时，翻页按钮可见：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/4miFVB0sIOoQyV3BYDRQ.png" alt="" width="467" height="218" /></p>
+<p>无数据时，翻页按钮不可见。</p>
+<p>翻页按钮区域居于表格居右展示。根据表格业务需要选择翻页按钮类型</p>
+<h3>3. 交互行为</h3>
+<p>在有表体数据选中操作时与翻页控制按钮统计数据联动。</p>
+<p>翻页按钮触发对应翻页操作后，表体数据、统计数据对应刷新。</p>
+<p>当指向页码无任何数据时，自动跳转到运行跳转的最后一页。</p>
+<h2>四、总结</h2>
+<p>关于B端基础交互组件“表格”的相关分享就到这里，下一章我们介绍“表单”包括基础表单、全页表单的相关交互规范。</p>
+<p>&nbsp;</p>
+<p>本文由 @云计算产品汪 原创发布于人人都是产品经理，未经许可，禁止转载</p>
+<p>题图来自 unsplash，基于 CC0 协议</p>
