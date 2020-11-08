@@ -1,0 +1,59 @@
+➜拿到嫌犯的手机了，然后呢？想抓到罪证可没那麼简单！初探数位鑑识的奥祕
+https://pansci.asia/archives/194360	7254
+<ul><li>作者 /&nbsp;慕容峰 │ 从事数位鑑识工作多年，在分析证物的过程中，彷佛侧耳倾听证物娓娓道来一般，同时审慎客观地仔细分析察看，即便是旁枝末节也不轻易放过，浸淫其中而乐此不疲。</li></ul>
+<p>智慧型手机已然成为人们生活中不可或缺的一部份，举凡记事、行程提醒、影音娱乐、购物消费、社群聊天、导航等等，皆可一机搞定满足食衣住行育乐各种需求。</p>
+<p>正因为如此，我们使用智慧型手机过程中所留存的各种资讯，其实就约等于使用者日常生活的纪录。</p>
+<div class="wp-block-image wp-image-186520 size-large"><figure class="aligncenter"><img loading="lazy" width="560" height="373" src="https://pansci.asia/wp-content/uploads/2020/05/e78dc60a85694d5fe36ee41568224d6a-560x373.jpeg" alt="" class="wp-image-186520" srcset="https://pansci.asia/wp-content/uploads/2020/05/e78dc60a85694d5fe36ee41568224d6a-560x373.jpeg 560w, https://pansci.asia/wp-content/uploads/2020/05/e78dc60a85694d5fe36ee41568224d6a-350x233.jpeg 350w, https://pansci.asia/wp-content/uploads/2020/05/e78dc60a85694d5fe36ee41568224d6a-768x512.jpeg 768w, https://pansci.asia/wp-content/uploads/2020/05/e78dc60a85694d5fe36ee41568224d6a-30x20.jpeg 30w, https://pansci.asia/wp-content/uploads/2020/05/e78dc60a85694d5fe36ee41568224d6a.jpeg 1880w" sizes="(max-width: 560px) 100vw, 560px" /><figcaption>智慧型手机成为现今提取犯罪证据的重点物品。图／<a href="https://www.pexels.com/photo/selective-focus-photography-of-person-holding-turned-on-smartphone-1092644/">pexels</a></figcaption></figure></div>
+<p>试想看看，倘若鑑识人员可以拿到嫌疑犯的智慧型手机（以下简称为手机），是不是就可以知道找出嫌疑犯的各种生活小细节呢？由此可知，智慧型手机（以下简称为手机）的取证，已经逐渐成了犯罪调查的重中之重。</p><div class="pansc-content"></script>
+<!-- leaderboard -->
+<ins class="adsbygoogle"
+style="display:inline-block;width:300px;height:250px"
+data-ad-client="ca-pub-4485239425924787"
+data-ad-slot="泛科学\/MW_300x250_内文文中_泛科学"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<blockquote class="wp-block-quote"><p>只要能有效提取手机裡的各项迹证，便有助于釐清有无与案情相关之处！</p></blockquote>
+<h2>犯罪调查中的重点：智慧型手机！</h2>
+<p>对鑑识人员而言，虽然手机与电脑同样都可以当作证物，却有着很大的差异。</p>
+<p>桌机、笔电的硬碟是可以拆卸的，然而手机是使用快闪记忆体（Flash）来储存资料，而且直接焊在电路板上，再加上手机只有一个 USB 埠可资利用的情况之下，如何自手机中提取迹证，便成了鑑识人员的一大挑战。</p>
+<div class="wp-block-image wp-image-186518"><figure class="aligncenter size-full is-resized"><img loading="lazy" src="https://pansci.asia/wp-content/uploads/2020/05/c81e728d9d4c2f636f067f89cc14862c-2.png" alt="" class="wp-image-186518" width="496" height="465" srcset="https://pansci.asia/wp-content/uploads/2020/05/c81e728d9d4c2f636f067f89cc14862c-2.png 496w, https://pansci.asia/wp-content/uploads/2020/05/c81e728d9d4c2f636f067f89cc14862c-2-350x328.png 350w, https://pansci.asia/wp-content/uploads/2020/05/c81e728d9d4c2f636f067f89cc14862c-2-30x28.png 30w" sizes="(max-width: 496px) 100vw, 496px" /><figcaption>手机只有一个 USB 埠，增加鑑识人员提取迹证的难度。图／作者提供。</figcaption></figure></div>
+<h2>首先，打开手机与工作站的 USB 通道！</h2>
+<p>为了保护手机的资料安全，手机厂商通常会限制 USB 连线后的权限，也就是说，当我们将手机用 USB 连上工作站（电脑）时，工作站无法马上直接识别手机，也无法读取手机裡面的资料。</p>
+<p>因此当鑑识人员使用 USB 将手机连上准备好的工作站后，第一要务便是要<strong>让手机可被工作站顺利识别</strong>，建立手机与工作站之间的基础信任关係，不然就什麼也做不了，更别说提取资料了。</p>
+<ul><li>为了方便说明，在此我们先将情况简化，假设鑑识人员非常幸运，拿到的手机没有被锁定。</li></ul>
+<p>这个时候，鑑识人员可以视情况在工作站安装手机的驱动程式，接下来，让手机透过 USB 连上工作站，并在手机中的「设定」中找到「开发人员选项」，开启「USB 侦错」功能，打开手机与工作站之间的 USB 通道。</p>
+<h2>拿来控制手机的「遥控器」：ADB</h2>
+<p>打开通道然后呢？鑑识人员究竟要怎麼做，才能提取手机内的资料？在此，我们就不得不先谈谈所谓的 ADB 啦！ ADB 是 Android Debug Bridge 的缩写，它就像是<strong>工作站拿来掌控手机的遥控器</strong>，当我们透过 USB 把手机连接到电脑后，就可以利用 ADB 的指令来控制、调教这一支手机。</p>
+<p>完成这些步骤后，鑑识人员可以在工作站执行 ADB 的指令「lsusb」，来测试看看工作站有没有办法辨识 USB 装置，如果执行获得如下图结果，就表示有顺利辨识出连接的 USB 装置。</p>
+<div class="wp-block-image size-large wp-image-189765"><figure class="aligncenter"><img loading="lazy" width="560" height="235" src="https://pansci.asia/wp-content/uploads/2020/08/eccbc87e4b5ce2fe28308fd9f2a7baf3-4-560x235.png" alt="" class="wp-image-189765" srcset="https://pansci.asia/wp-content/uploads/2020/08/eccbc87e4b5ce2fe28308fd9f2a7baf3-4-560x235.png 560w, https://pansci.asia/wp-content/uploads/2020/08/eccbc87e4b5ce2fe28308fd9f2a7baf3-4-350x147.png 350w, https://pansci.asia/wp-content/uploads/2020/08/eccbc87e4b5ce2fe28308fd9f2a7baf3-4-30x13.png 30w, https://pansci.asia/wp-content/uploads/2020/08/eccbc87e4b5ce2fe28308fd9f2a7baf3-4.png 659w" sizes="(max-width: 560px) 100vw, 560px" /><figcaption>顺利辨识出所连接的 USB 装置为行动装置的结果图。图／作者提供。</figcaption></figure></div>
+<p>接着，我们执行指令 adb devices 以查看手机目前的状态。</p>
+<h2>建立手机跟工作站之间的基础信任关係！</h2>
+<p>执行结果如下图所示，图中「BXXXXXDR」这个值，就像是手机在电脑中的装置名字（识别值），手机的状态为后面的「offline」 ，意即「离线」的意思。</p>
+<div class="wp-block-image wp-image-189766 size-large"><figure class="aligncenter"><img loading="lazy" width="560" height="240" src="https://pansci.asia/wp-content/uploads/2020/08/c81e728d9d4c2f636f067f89cc14862c-4-560x240.png" alt="" class="wp-image-189766" srcset="https://pansci.asia/wp-content/uploads/2020/08/c81e728d9d4c2f636f067f89cc14862c-4-560x240.png 560w, https://pansci.asia/wp-content/uploads/2020/08/c81e728d9d4c2f636f067f89cc14862c-4-350x150.png 350w, https://pansci.asia/wp-content/uploads/2020/08/c81e728d9d4c2f636f067f89cc14862c-4-30x13.png 30w, https://pansci.asia/wp-content/uploads/2020/08/c81e728d9d4c2f636f067f89cc14862c-4.png 666w" sizes="(max-width: 560px) 100vw, 560px" /><figcaption>进行取证时，需同时留意工作站及手机的状态。图／作者提供。</figcaption></figure></div>
+<p>欸咦？刚刚不是已经接好了 USB 了吗？为什麼手机的状态还是离线呢？这时候我们必须将视线移开工作站的萤幕画面，回头看看手机萤幕上的动静。</p>
+<p>此时，我们可以发现手机萤幕上弹出了如下图的警示讯息，为了能于此工作站上以 ADB 指令控制这支手机，并把资料提取出来，务必要勾选「一律允许透过这台电脑进行」并点击「确定」，这样才能让手机跟电脑之间建立永久、有效的信任关係。</p>
+<div class="wp-block-image size-full wp-image-189764"><figure class="aligncenter"><img loading="lazy" width="297" height="502" src="https://pansci.asia/wp-content/uploads/2020/08/a87ff679a2f3e71d9181a67b7542122c-2.png" alt="" class="wp-image-189764" srcset="https://pansci.asia/wp-content/uploads/2020/08/a87ff679a2f3e71d9181a67b7542122c-2.png 297w, https://pansci.asia/wp-content/uploads/2020/08/a87ff679a2f3e71d9181a67b7542122c-2-18x30.png 18w" sizes="(max-width: 297px) 100vw, 297px" /><figcaption>手机跳出的警示讯息。图／作者提供。</figcaption></figure></div>
+<p>一旦完成之后，就可以再次执行指令 adb devices。所得到的执行结果如下图所示，状态值由「offline」变成了「device」，即代表电脑成功辨识手机，并处于正常开机模式。</p>
+<div class="wp-block-image size-large wp-image-189767"><figure class="aligncenter"><img loading="lazy" width="560" height="260" src="https://pansci.asia/wp-content/uploads/2020/08/c4ca4238a0b923820dcc509a6f75849b-3-560x260.png" alt="" class="wp-image-189767" srcset="https://pansci.asia/wp-content/uploads/2020/08/c4ca4238a0b923820dcc509a6f75849b-3-560x260.png 560w, https://pansci.asia/wp-content/uploads/2020/08/c4ca4238a0b923820dcc509a6f75849b-3-350x162.png 350w, https://pansci.asia/wp-content/uploads/2020/08/c4ca4238a0b923820dcc509a6f75849b-3-30x14.png 30w, https://pansci.asia/wp-content/uploads/2020/08/c4ca4238a0b923820dcc509a6f75849b-3.png 660w" sizes="(max-width: 560px) 100vw, 560px" /><figcaption>状态值由「offline」变成了「device」。表示工作站及手机已建立信任关係，且下次连接无须再行确认。图／作者提供。</figcaption></figure></div>
+<p>由于信任关係已建立完成，在未撤销的情况下，后续当这支手机再次接入此工作站时，便不会再次要求手机「允许 USB 侦错」了。</p>
+<h2>你从来都不是手机心中「最重要」的人</h2>
+<p>接下来，鑑识人员要想办法获得手机的<strong>系统最高权限</strong>，让工作站有权利提取手机的一切。</p>
+<blockquote class="wp-block-quote"><p>在这裡，要跟各位说明一件事，那就是「你未曾真正拥有过你的手机」。</p></blockquote>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://media.giphy.com/media/1dSj45mbnCIms/giphy.gif" alt=""/><figcaption>连上厕所，我都不会让手机离开我耶！为什麼它仍然不属于我？图／<a href="https://media.giphy.com/media/1dSj45mbnCIms/giphy.gif">Giphy</a></figcaption></figure></div>
+<p>各位想必不以为然，「手机的主人明明就是我，每天陪我吃喝拉撒睡，睡前、睡醒第一个看到的人都是它，它怎麼不是我的？」</p>
+<blockquote class="wp-block-quote"><p>但实情是，当各厂牌的手机一出厂，手机的预设环境都只是<strong>一般使用者环境</strong>，也就是说，你，只是这支手机的一般使用者，不是手机系统中的最高权限者。</p></blockquote>
+<p>为什麼厂商要这麼做？原因很单纯，为了避免高昂的维修成本。</p>
+<p>试想看看，如果每个使用者都拥有手机的最高权限，相对就有较高的机会将手机玩残，一旦手机变砖（手机弄坏以至于完全没反应），使用者就只能带着它去找厂商帮自己擦屁股。厂商自然不乐见如此，因此，厂商在手机出厂时就会预设：仅让使用者以一般权限帐号运行。</p>
+<p>普通消费者在一般使用过程中，不太容易察觉到这件事情，只有某些非常规操作，像是「刷机」或「root」的玩家，才会用到比较高的系统权限。</p>
+<h2>提升你的地位，才能带走手机的全身心</h2>
+<p>「提权」，意即将自己的操作权限由一般使用者提升至「系统最高权限」，造访手机内部的任何路径、存取手机的所有档案。</p>
+<p>对于鑑识人员来说，提权就是取得重要迹证的关键，一旦拥有装置的至高无上权后，就可以从手机中获得嫌疑犯的详细资料、相关罪证。例如，当鑑识人员来到 Android 手机的 App 所在路径 /data/data/ ，执行「ls –al」指令，就可以顺利列出了该路径下的资料夹及档案。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="560" height="395" src="https://pansci.asia/wp-content/uploads/2020/10/8c3fa8196ef3e2c81e88d4c24d6b7c06-560x395.png" alt="" class="wp-image-194365" srcset="https://pansci.asia/wp-content/uploads/2020/10/8c3fa8196ef3e2c81e88d4c24d6b7c06-560x395.png 560w, https://pansci.asia/wp-content/uploads/2020/10/8c3fa8196ef3e2c81e88d4c24d6b7c06-350x247.png 350w, https://pansci.asia/wp-content/uploads/2020/10/8c3fa8196ef3e2c81e88d4c24d6b7c06.png 661w" sizes="(max-width: 560px) 100vw, 560px" /><figcaption>执行「ls –al」后。图／作者提供。</figcaption></figure></div>
+<p>嫌疑犯与他人的通讯纪录，时常也会成为重要的犯罪证据之一，倘若鑑识人员需要针对 Line 进行取证，便可在/data/data/路径下查找是否有与 Line 相关的 「package name」，例如负责储存 Line 相关资料的「jp.naver.line.android」资料夹。</p>
+<p>当我们需要调阅 Line 裡面的聊天讯息时，鑑识人员会切换至「jp.naver.line.android」中的「databases」，裡头便有着存放聊天讯息的关键档案！</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="560" height="327" src="https://pansci.asia/wp-content/uploads/2020/10/5f9d3d8ac309fc2105a615fd57a6e1c0-1-560x327.png" alt="" class="wp-image-194366" srcset="https://pansci.asia/wp-content/uploads/2020/10/5f9d3d8ac309fc2105a615fd57a6e1c0-1-560x327.png 560w, https://pansci.asia/wp-content/uploads/2020/10/5f9d3d8ac309fc2105a615fd57a6e1c0-1-350x204.png 350w, https://pansci.asia/wp-content/uploads/2020/10/5f9d3d8ac309fc2105a615fd57a6e1c0-1-768x448.png 768w, https://pansci.asia/wp-content/uploads/2020/10/5f9d3d8ac309fc2105a615fd57a6e1c0-1.png 799w" sizes="(max-width: 560px) 100vw, 560px" /><figcaption>读取 Line 的 databases资料夹后，可以找到内部的档案列表。图／作者提供。</figcaption></figure></div>
+<h2>鑑识的奥义：永不言弃，突破手机的「心防」！</h2>
+<p>透过鑑识人员与手机之间的「攻心大战」中，想必读者们对于智慧型手机的取证有了初步的了解，一窥鑑识人员不断攻略手机的生活。</p>
+<p>儘管面临着重重难关及挑战，鑑识人员从不轻言放弃，在巴掌大小的手机之间攻城掠地，力求掌握提取迹证的关键契机，为还原真相及打击犯罪贡献一己之力。</p>
+<div>PanSci 泛科学</a>.</p>
