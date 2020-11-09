@@ -23,23 +23,23 @@ https://www.appinn.com/raspberry-pi-400/	9891
 ➜Stroke – 开源鼠标手势软件[Windows]
 https://www.appinn.com/stroke-for-windows/	25148
 <p><strong>Stroke</strong> 是一款开源的鼠标手势软件，小巧（主程序 74KB）、速度快，可通过插件扩展功能。@<a href="https://www.appinn.com/stroke-for-windows/" class="rank-math-link">Appinn</a></p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/stroke.jpg!o" alt="Stroke - 开源鼠标手势软件[Windows] 29" title="Stroke - 开源鼠标手势软件[Windows] 39"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/stroke.jpg!o" alt="Stroke - 开源鼠标手势软件[Windows] 30" title="Stroke - 开源鼠标手势软件[Windows] 41"></figure></div>
 <p>来自<a href="https://meta.appinn.net/t/topic/18180" class="rank-math-link" target="_blank" rel="noopener">发现频道</a>，<a href="https://www.appinn.com/screenote-for-windows/" class="rank-math-link">Screenote – 全快捷键截图、贴图工具[Windows]</a> 的开发者 @<a href="https://meta.appinn.net/u/Poerin" target="_blank" rel="noopener">Poerin</a> 同学的又一款作品。</p>
 <p>Stroke 在 <a href="https://github.com/poerin/Stroke" class="rank-math-link" target="_blank" rel="noopener">GitHub</a> 开源，支持 C# 语言编写脚本，可使用 .NET Framework 及自己编写 dll。</p>
 <hr class="wp-block-separator"/>
 <p>需要管理员权限运行 Stroke，之后就和你想象中的鼠标手势工具一样使用，当然设置起来要&#8230;门槛高一些。</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/stroke-configure_jfko4vwbzn.jpg!o" alt="Stroke - 开源鼠标手势软件[Windows] 30" title="Stroke - 开源鼠标手势软件[Windows] 40"><figcaption>运行 Stroke.Configure.exe 配置</figcaption></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/stroke-configure_jfko4vwbzn.jpg!o" alt="Stroke - 开源鼠标手势软件[Windows] 31" title="Stroke - 开源鼠标手势软件[Windows] 42"><figcaption>运行 Stroke.Configure.exe 配置</figcaption></figure></div>
 <p>@Poerin 同学还提供了一些截图：</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/e/edf57bec68397e75fb9a50b17136681ab6c8388f.gif" alt="Stroke - 开源鼠标手势软件[Windows] 31" title="Stroke - 开源鼠标手势软件[Windows] 41"></figure></div>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/3/31e51594debf9bac0205c6ed0111269a5d232928.gif" alt="Stroke - 开源鼠标手势软件[Windows] 32" title="Stroke - 开源鼠标手势软件[Windows] 42"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/e/edf57bec68397e75fb9a50b17136681ab6c8388f.gif" alt="Stroke - 开源鼠标手势软件[Windows] 32" title="Stroke - 开源鼠标手势软件[Windows] 43"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/3/31e51594debf9bac0205c6ed0111269a5d232928.gif" alt="Stroke - 开源鼠标手势软件[Windows] 33" title="Stroke - 开源鼠标手势软件[Windows] 44"></figure></div>
 <p>关于 Stroke 的速度，Poerin 专门做了测试：</p>
 <hr class="wp-block-separator"/>
 <p>那么 Stroke 反应有多灵敏呢？从鼠标弹起，开始判别是否在任何动作包中触发了相应的动作，到执行手势完成，我们来看看花了多少时间（13 年买的 i5 笔记本）。<br />我们在以下两个位置插入记录时间的代码：</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/2/288a073559c62f4caa2a3ee51d588e32960be386.png" alt="Stroke - 开源鼠标手势软件[Windows] 33" title="Stroke - 开源鼠标手势软件[Windows] 43"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/2/288a073559c62f4caa2a3ee51d588e32960be386.png" alt="Stroke - 开源鼠标手势软件[Windows] 34" title="Stroke - 开源鼠标手势软件[Windows] 45"></figure></div>
 <p>测试 5 轮结果如下，<a href="https://docs.microsoft.com/en-us/dotnet/api/system.datetime.ticks?view=netframework-4.7.2" class="rank-math-link" target="_blank" rel="noopener">Ticks</a>&nbsp;是以 100 纳秒（1 ns = 10^(-9) s）为单位计数的：</p>
 <p>Start:637372381902555779<br />End:637372381902595758<br />Start:637372381947865912<br />End:637372381947905872<br />Start:637372381966984207<br />End:637372381967024144<br />Start:637372381983986626<br />End:637372381984046605<br />Start:637372382038631758<br />End:637372382038661736</p>
 <p>即 分别得到 39979、39960、39937、59979、29978，即大概是 4毫秒、4毫秒、4毫秒、6毫秒、3毫秒。（1秒 = 1000 毫秒）。</p>
 <p>取决于你的使用滚轮的手速和火狐的反应，你可以：</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/5/511831d039ff6d1da8f7486aa51c6920fde5b49d.gif" alt="Stroke - 开源鼠标手势软件[Windows] 34" title="Stroke - 开源鼠标手势软件[Windows] 44"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/5/511831d039ff6d1da8f7486aa51c6920fde5b49d.gif" alt="Stroke - 开源鼠标手势软件[Windows] 35" title="Stroke - 开源鼠标手势软件[Windows] 46"></figure></div>
 <p>而关于定制，@Poerin 提供了一个<a href="https://meta.appinn.net/t/topic/18180/9?u=qingwa" class="rank-math-link" target="_blank" rel="noopener">百度翻译的脚本</a>。</p>
 <p>总之这是一款定制性很高，但门槛也略高的鼠标手势工具，帖子里的信息量很大， 不少同学还推荐里其他手势软件，<a href="https://meta.appinn.net/t/topic/18180" class="rank-math-link" target="_blank" rel="noopener">欢迎围观</a>。</p>
