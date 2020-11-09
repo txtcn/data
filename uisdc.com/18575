@@ -1,0 +1,457 @@
+➜如何保护用户的隐私信息？看看大厂是怎么处理的！
+https://www.uisdc.com/protect-user-privacy	57834
+<p>总结一下各大产品在「隐私保护」这方面的做法与设计点，今后面对用户隐私信息设计时，有更多的切入点和参考对象。</p>
+<p>我们每天都会用到各式各样的APP，有金融的，社交的，电商的&#8230;而这些APP里面又储存着你重要的隐私信息。如登录密码、金额数值、身份信息等等。</p>
+<p>对于这些隐私信息，我们这些打工人是既敏感，但又比较无奈地信任着这些APP。</p>
+<p>因此今天总结一下，各大产品在「隐私保护」这方面的做法与设计点，今后面对用户隐私信息设计时，有更多的切入点和参考对象。</p>
+<h4><span class="auto_menu">密码输入的保护</span></h4>
+<p>密码是我们登录各大APP的钥匙，也是我们的信息数据得以保障的依据。在这方面的保护上，各大APP也是尽出奇招。无论在设计手法上，还是系统功能上。</p>
+<p><strong>1. iOS录屏与截图后：隐藏密码</strong></p>
+<p>得益于iOS一贯对用户隐私的高度重视，在各个APP上填写密码时被屏幕录制与截图功能所监控，苹果也能通过自有技术进行检测与保密处理。</p>
+<p>保存后的图片与视频里会自动隐藏掉密码输入的痕迹，包括加密符号与键盘输入时的字符。</p>
+<p><span class="img-zoom"><img alt="如何保护用户的隐私信息？看看大厂是怎么处理的！" class="alignnone size-full wp-image-395391" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bh-20201108-1.jpg" width="441" height="800" /></span></p>
+<p><strong>2. B站：制造“防窥”感知</strong></p>
+<p>B站app输入手机号时，上面的吉祥物一直保持‘睁眼’状态，而当光标定位到‘密码’或者‘验证码’输入栏时，吉祥物就变成了‘捂眼睛’状态。</p>
+<p><span class="img-zoom"><img alt="如何保护用户的隐私信息？看看大厂是怎么处理的！" class="alignnone size-full wp-image-395392" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bh-20201108-2.jpg" width="820" height="700" /></span></p>
+<p>这种利用周边元素来制造“没人会看见你密码”的感知，也是很多APP同有的做法。</p>
+<p><strong>3. 银行APP：自定义键盘</strong></p>
+<p>这属于特定类型的产品中才有，如银行、金融、理财等APP。</p>
+<p>出于对用户信息安全的保护，这些产品都会自定义开发一套手机键盘，以确保用户每次输入的字符是都随机、无规则展示。</p>
+<p><span class="img-zoom"><img alt="如何保护用户的隐私信息？看看大厂是怎么处理的！" class="alignnone size-full wp-image-395393" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bh-20201108-3.jpg" width="800" height="416" /></span></p>
+<p>避免被他人记住你的点击区域与顺序，从而获取相关信息。但相应的实现成本也是不低的~</p>
+<h4><span class="auto_menu">身份信息的屏蔽</span></h4>
+<p><strong>1. 美团：差评时自动匿名</strong></p>
+<p>如美团和饿了么，在用户给出低分评价时，会自动勾选匿名评价，避免用户受到商家的恶意骚扰。</p>
+<p>不过这只是明面上的做法，商家是否真的无法获取到用户信息，我一直是xx态度的。</p>
+<p><strong>2. 嘀嗒拼车：延迟发布差评</strong></p>
+<p>滴答拼车除了自动匿名评价外，会对差评的内容进行延迟发布，通过时间差来避免用户遭到司机的恶意骚扰。</p>
+<p><span class="img-zoom"><img alt="如何保护用户的隐私信息？看看大厂是怎么处理的！" class="alignnone size-full wp-image-395394" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bh-20201108-4.jpg" width="891" height="600" /></span></p>
+<p><strong>3. 微信：新建马甲身份</strong></p>
+<p>使用微信登录其他app、网站时，可以创建一个身份信息进行登录，新身份里包括了新头像与昵称，还能随机获取。</p>
+<p><span class="img-zoom"><img alt="如何保护用户的隐私信息？看看大厂是怎么处理的！" class="alignnone size-full wp-image-395395" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bh-20201108-5.jpg" width="906" height="800" /></span></p>
+<p>避免将自己主要的社交信息同步其他平台，特别是使用腾讯旗下产品时，“不想被微信好友知道”这种场景。</p>
+<h4><span class="auto_menu">金额数值的保护</span></h4>
+<p><strong>1. 理财通：隐藏金额文案</strong></p>
+<p>理财通在隐藏自己的金额数值时，不同于传统做法 只展示加密符号（******），而是把加密字符变成：‘空空如也’的文案。</p>
+<p><span class="img-zoom"><img alt="如何保护用户的隐私信息？看看大厂是怎么处理的！" class="alignnone size-full wp-image-395396" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bh-20201108-6.jpg" width="703" height="600" /></span></p>
+<p>这种‘无’的概念，在隐私保护的感知上比‘有，但加密了’有效些。</p>
+<p><strong>2. 平安壹钱包：手挡住屏幕时隐藏金额</strong></p>
+<p>在个人资产界不会直接显示你金额，而当你用手挡住屏幕时，系统会预判你只想偷偷让自己可见，从而自动显示你的金额数值。这种利用屏幕感知的隐私设计也是一大亮点。</p>
+<p><span class="img-zoom"><img alt="如何保护用户的隐私信息？看看大厂是怎么处理的！" class="alignnone size-full wp-image-395397" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bh-20201108-7.jpg" width="814" height="700" /></span></p>
+<h4><span class="auto_menu">录屏处理</span></h4>
+<p>除了上述iOS的隐藏密码外，其他APP也有相应的设计点。</p>
+<p><strong>1. 银行APP：弹窗警告</strong></p>
+<p>如中国银行or工商银行，在面对用户录屏输入密码时，会强制性弹窗提示用户。</p>
+<p><span class="img-zoom"><img alt="如何保护用户的隐私信息？看看大厂是怎么处理的！" class="alignnone size-full wp-image-395398" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bh-20201108-8.jpg" width="566" height="700" /></span></p>
+<p>这种相对比较折中做法，起到安全提示作用。但提示完后，用户还是能够在录屏情况下输入字符，即使密码有加密处理，但键盘上的输入符还是被一一录下来的。</p>
+<p><strong>2. 脉脉：黑屏处理</strong></p>
+<p>而脉脉直接将屏幕置黑，这么做是为了提示用户得停止录屏，才能正常输入密码。而不是让用户在黑漆漆的环境下输入密码。</p>
+<p><span class="img-zoom"><img alt="如何保护用户的隐私信息？看看大厂是怎么处理的！" class="alignnone size-full wp-image-395399" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bh-20201108-9.gif" width="400" height="630" /></span></p>
+<p>听说，之前的宜家在面对录屏时，除了会隐藏密码的字符外，连同密码的位数也一起给去了。</p>
+<h4><span class="auto_menu">截图处理</span></h4>
+<p>这也是日常中最容易出现的场景，能对屏幕上所有敏感信息进行图片保存。因此，对于安全要求高的产品，都会对用户截图的行为进行处理与预警。</p>
+<p><strong>1. 支付宝与微信钱包：提示风险</strong></p>
+<p>支付宝和微信钱包中，对收款码进行截屏时，会向用户提示截屏存在的风险。</p>
+<p><span class="img-zoom"><img alt="如何保护用户的隐私信息？看看大厂是怎么处理的！" class="alignnone size-full wp-image-395400" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bh-20201108-10.jpg" width="802" height="700" /></span></p>
+<p><strong>2. 银行APP：禁止截图</strong></p>
+<p>部分银行app在这方面卡得更严，直接禁止让用户截图。</p>
+<p><span class="img-zoom"><img alt="如何保护用户的隐私信息？看看大厂是怎么处理的！" class="alignnone size-full wp-image-395401" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bh-20201108-11.jpg" width="784" height="700" /></span></p>
+<p><strong>3. QQ：一键隐藏名称</strong></p>
+<p>QQ截屏时可以一键屏蔽用户的qq昵称，避免传播自己的社交信息。</p>
+<p><span class="img-zoom"><img alt="如何保护用户的隐私信息？看看大厂是怎么处理的！" class="alignnone size-full wp-image-395402" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bh-20201108-12.jpg" width="493" height="700" /></span></p>
+<h4><span class="auto_menu">多窗口漏出处理</span></h4>
+<p>当手机调起多个屏幕窗口时，应用内的信息漏出是一个容易忽略的地方。即使每一个应用中的内容可见性不是很强，还是那一小块区域还是容易让别人知道你在操作什么（特别是在查看某某方面时）。</p>
+<p>针对这方面的设计，一些大厂APP的处理为我们提供了一些方向与参考，如：</p>
+<p><strong>1. 支付宝：模煳界面内容</strong></p>
+<p>支付宝与蚂蚁财富，调起多窗口时模煳掉屏幕里的内容。</p>
+<p><span class="img-zoom"><img alt="如何保护用户的隐私信息？看看大厂是怎么处理的！" class="alignnone size-full wp-image-395403" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bh-20201108-13.jpg" width="814" height="700" /></span></p>
+<p><strong>2. UC浏览器：黑屏处理</strong></p>
+<p>UC浏览器则直接黑屏处理，啥都不让你看到。</p>
+<p><span class="img-zoom"><img alt="如何保护用户的隐私信息？看看大厂是怎么处理的！" class="alignnone size-full wp-image-395404" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bh-20201108-14.jpg" width="751" height="700" /></span></p>
+<p><strong>3. 潮汐：留存用户</strong></p>
+<p>该产品多窗口时，则提示用户不要关闭应用，对产品的留存起到一定的作用。即使当产品内没啥对可泄露用户隐私的内容。</p>
+<p><span class="img-zoom"><img alt="如何保护用户的隐私信息？看看大厂是怎么处理的！" class="alignnone size-full wp-image-395405" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bh-20201108-15.jpg" width="741" height="700" /></span></p>
+<h4><span class="auto_menu">结语</span></h4>
+<p>好了，以上就是一些各大APP对面对用户隐私的保护场景与应对措施，希望大家可以根据自己的实际情况，灵活应用这些技巧。</p>
+<p>[link https://www.uisdc.com/privacy-experience-design]</p>
+<p>欢迎关注作者的微信公众号：「和出此严」</p>
+<p><span class="img-zoom"><img alt="如何保护用户的隐私信息？看看大厂是怎么处理的！" class="size-full wp-image-330370 alignnone" src="https://image.uisdc.com/wp-content/uploads/2019/08/uisdc-bc-20190813.jpg" alt="这就是仪式感设计？看完我懂了！" /></span></p>
+➜想给网站换个背景图？这个神器提供超多免费素材！
+https://www.uisdc.com/css-background-patterns	59426
+<p>网页比较少有背景图需求，多半都是以单色为主，如果觉得略显单调，也能使用纹理材质或渐层色做为背景，例如 Paper-co 就有许多日系的纸张纹理材质可用做背景，不仅看起来可以提升质感，也不会影响阅读造成负担：</p>
+<p>[link https://www.uisdc.com/web-paper-texture]</p>
+<p>若喜欢重复背景图 Hero Patterns 可以在不下载任何文件的情况下生成好看的平铺式背景图：</p>
+<p>[link https://www.uisdc.com/heropatterns-texture-material-web]</p>
+<p>&nbsp;</p>
+<p><span class="img-zoom"><img alt="想给网站换个背景图？这个神器提供超多免费素材！" class="alignnone size-full wp-image-395293" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cs-20201106-1.jpg" width="1153" height="800" /></span></p>
+<p>本文要介绍的「CSS Background Patterns」是一个免费背景图生成工具，可以制作漂亮纯 CSS 背景素材，网站已提供一些基本图形设计，用户只要选取后就能立即套用到背景预览，除此之外，还能自定义背景、前景色、不透明和间距数值，实时呈现在网站上，对于想要一些简单构图背景、又不想造成阅读干扰来说是很有用的在线生成器。</p>
+<p>用户可快速复制 CSS Background Patterns 产生的图片背景 CSS 语法，丢进网站样式表单就能套用，完全不用下载或托管图片文件，也能让网页维持在最精简状态，避免因为加载图片而造成延迟问题。</p>
+<h4>CSS Background Patterns</h4>
+<p>网站链接：<a href="https://www.magicpattern.design/tools/css-backgrounds">https://www.magicpattern.design/tools/css-backgrounds</a></p>
+<p><strong>使用教学</strong></p>
+<p>开启 CSS Background Patterns 网站后往下卷动就能看到网站提供的背景图案。</p>
+<p><span class="img-zoom"><img alt="想给网站换个背景图？这个神器提供超多免费素材！" class="alignnone size-full wp-image-395294" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cs-20201106-2.jpg" width="1270" height="800" /></span></p>
+<p>点选图案右上角的「Preview Pattern」将图案套用到背景实时预览效果。</p>
+<p><span class="img-zoom"><img alt="想给网站换个背景图？这个神器提供超多免费素材！" class="alignnone size-full wp-image-395295" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cs-20201106-3.jpg" width="1066" height="800" /></span></p>
+<p>上方有一排编辑器功能可以调整调整背景颜色、前景颜色、不透明度和间距，CSS Background Patterns 特色是在设定后会立即反映在网站上，就不用逐一下载或重新整理，非常方便。</p>
+<p><span class="img-zoom"><img alt="想给网站换个背景图？这个神器提供超多免费素材！" class="alignnone size-full wp-image-395296" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cs-20201106-4.jpg" width="1168" height="800" /></span></p>
+<p>设定后进行预览，没问题的话点选图片右上角「Copy CSS Code」就能快速复制 CSS 原始码，将它使用到你网站的样式表单即可立即套用。</p>
+<p><span class="img-zoom"><img alt="想给网站换个背景图？这个神器提供超多免费素材！" class="alignnone size-full wp-image-395297" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cs-20201106-5.jpg" width="1168" height="800" /></span></p>
+<p><strong>值得一试的三个理由：</strong></p>
+<ul>
+<li>免费背景图生成器，可快速制作纯 CSS 语法的背景图案</li>
+<li>在线调整前景、背景颜色、不透明度和间距等参数</li>
+<li>一键快速复制取得 CSS 程序代码</li>
+</ul>
+➜近万字干货！B端产品增长设计通用模式（附超多案例）
+https://www.uisdc.com/b-end-product-growth-design	61222
+<h4><span class="auto_menu">导语</span></h4>
+<p>「增长（Growth）」概念的火热源自几年前畅销书《增长黑客》，目前已经成为互联网公司的重要课题之一。</p>
+<p>增长设计，顾名思义，即通过设计来促进增长。对于 C 类产品的增长，方法和渠道较为多样，设计师能够发挥的空间和价值也比较大，我们看到的增长设计案例通常也都是以 2C 产品的为主。而 B 类产品的增长设计则受限较多。即便如此，如果 B 类产品的设计师能抓住机会、拓宽思路、不断尝试，也能够创造出独特的增长价值。</p>
+<p>本文以增长漏斗 RARRA 模型为线索，按 Retention（留存）、Activation（激活）、Referral（传播）、Revenue（变现）、Acquisition（获客）的顺序，分享 B 类产品增长设计的通用模式和行业案例。考虑到数据安全原因，部分具体数据暂不展示。</p>
+<h4><span class="auto_menu">Retention：留存策略</span></h4>
+<p><strong>1. 高效迭代：分析-优化-测试</strong></p>
+<p>通过小成本、小范围测试，找到撬动的增长点快速迭代、持续优化，将效果提升到最高。整个测试流程：发现问题一数据分析一产生假设一展开测试一衡量结果，然后不断循环。随着产品的发展，必然会有新功能的加入和旧页面的调整，为了防止贸然上线新版本而带来不良影响，小范围测试就是一个很好的方式。</p>
+<p>行业案例：软件开发与办公协作领域的头牌公司 Atlassian 的设计师曾经通过测试和优化迭代循环的方式来找出合适的设计方案。下图展示了他们测试新旧模态弹窗用户辨识度的数据，结果显示，新版的图文结合的方式反而容易让用户感到困惑。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395091" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-1.jpeg" width="1110" height="638" /></span></p>
+<p>经过测试结果分析，设计师们认为可能是弹窗底部大块的文字让用户难以快速抓住核心信息，因此他们对排版方式进行了改进，将底部的一部分文字移动到顶部，并进行了新一轮的测试，结果显示最新的版本效果最佳。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395092" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-2.jpeg" width="914" height="800" /></span></p>
+<p><strong>2. 特定的细分客户群</strong></p>
+<p>产品发展早期，很难迅速赢得广泛的关注。因此众多 B 类产品选择首先专注于一个组织中的一个部门，将产品传播给特定的人群，然后再逐步影响组织中的其他部门。具体可以采用以下步骤：</p>
+<ul>
+<li>为特定市场的早期用户群提供研讨会和线上线下会议；</li>
+<li>与目标市场中的早期客户讨论产品解决了哪些具体问题，并确保营销方案反映了这些痛点和解决方案；</li>
+<li>当你开始构建新功能时，在扩展到其它细分市场之前，确保它们与你的目标市场保持强相关。</li>
+</ul>
+<p>行业案例：成立于 2002 年的 Atlassian 在发展早期，首先在开发团队中扎根，然后以开发团队为切入点，逐步扩展到企业组织中的其他团队。因为开发团队喜欢使用 Jira（Atlassian 公司的项目协同管理工具）并且不想转换，所以带动了其他团队也开始使用 Atlassian 的系列产品。目前 Atlassian 在全球有超过 6w 家客户。Salesforce 在销售市场也做了同样的事情。该公司的产品一开始只是一个客户关系管理（CRM）工具，并锁定了销售团队为目标客户。但而以此为据点，现在他们正扩展到企业业务的几乎所有市场。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395093" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-3.jpg" width="1432" height="800" /></span></p>
+<p><strong>3. 优化产品性能</strong></p>
+<p>产品性能优化应该一开始就纳入考量范围，建立良好的框架结构。虽然因为近年来移动端设备和网络环境的大幅度提升，流量少、内存小、加载缓慢等因素对大部分用户已经不再是制约因素了，但是依旧要注意产品的交互性能。</p>
+<p>行业案例：阿里巴巴研发效能业务的体验团队通过自主研发的数据工具，实时监控各产品的性能，并通过 6 个维度评分的方式给出好、中、差三个等级的奖牌增加业务方的体感，督促产品性能的优化。例如其中内部研发工具 Aone 的开发人员参考该数据，针对首页等核心页面的加载时长问题做了专项治理，取得了显着效果，也将奖牌等级提升了一级。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395094" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-4.jpg" width="1492" height="442" /></span></p>
+<h4><span class="auto_menu">Activation：激活策略</span></h4>
+<p><strong>1. 让用户体验到惊喜时刻</strong></p>
+<p>惊喜时刻（Aha Moment）是指能够让用户眼前一亮的产品核心功能点。 如果你能让用户体验到产品的惊喜时刻，那么这个用户很有可能成为你产品的留存户。惊喜时刻的公式：<br />
+（谁）在（多长时间内）完成（多少次）（什么行为）</p>
+<p>惊喜时刻能帮助我们了解哪些行为导致了用户的留存，帮助团队找到清晰的聚焦点。「Aha Moment」往往可以浓缩成某个「Magic Number（神奇数字）」。对于 Twitter 这个数字是 30，即关注了 30 个其他用户的人更有可能留存下来； Facebook 的是 10，如果一个新用户在一周内添加了 10 个及以上的好友，那么 ta 很可能在 Facebook 上长期保持活跃。</p>
+<p>行业案例：对于号称「历史上增长最快的 SaaS 公司」 Slack 来说，这个惊喜时刻的「神奇数字」是 2000，即累计发送了 2000 条消息的客户更有可能继续使用并最终为服务付费，该公司是这样解释这个数字的：</p>
+<p>如果一个团队在 Slack 上累计交流了 2000 条信息，这证明他们确实充分尝试使用了 Slack——真的试过了。对于一个50人左右的团队来说，这意味着大约10小时的信息量。对于一个10人的团队来说，这可能相当于一周的信息量。我们发现，不管其它因素如何，在收发了 2000 条信息后，93% 的客户至今仍在使用 Slack。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395095" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-5.jpg" width="1110" height="779" /></span></p>
+<p><strong>2. 消除摩擦</strong></p>
+<p>用户的欲望 &#8211; 摩擦 = 转化</p>
+<p>摩擦是指阻碍人们完成他们想要完成的行动的障碍。摩擦无处不在，它可能是要你对一个刚开始用的 APP 进行打分的弹框、没有反馈的操作、填写不必要的信息、漫长的使用路径等等。</p>
+<p>行业案例：以简单易用着称的项目管理工具 Basecamp 为新注册的用户提供了完整的项目样例，包括虚拟的人员、公告板、to-do list、时间规划表等等，一应俱全、简单易懂，还有可爱卡通形象来随时给与帮助，让用户放松心情、减少学习成本、顺滑地从新手过渡到熟练用户。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395096" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-6.jpg" width="1492" height="743" /></span></p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395097" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-7.jpg" width="1492" height="794" /></span></p>
+<p>行业案例 1：蚂蚁集团区块链业务「蚂蚁链」包含的产品双链通，是帮助 B 类商家解决供应链金融问题的创新性平台。对应商家用户来说，该业务逻辑的理解门槛较高；入驻程序也较为复杂，特别是电子版身份证的验证，提交之后需要经过一段时间的等待，且通过率较低，客户也经常不知道为什么没有通过。这些原因导致用户一次激活率较低，往往需要尝试多次。</p>
+<p>针对这些问题，设计师专门走访了上海、成都等地的多家客户进行现场观察，然后对入驻流程和相关页面进行了优化。优化后，用户激活一次性整体成功率显着提高；用户产品认知方面，选择「非常清楚」的用户比例翻倍，「不太清楚」和「不清楚」也明显降低。</p>
+<p>行业案例 2：阿里妈妈是隶属于阿里巴巴集团的大数据营销平台。其营销推广产品直通车是全国营销收入领先的业内知名产品，但专业门槛非常高、推广价格也高，专职的用户需要 2~3 个月的时间才能完全掌握使用技巧，而对于精力和经费都有限的中小卖家来说，是否注册加入已成为一个纠结的问题。为了消除用户顾虑、减少认知成本带来的摩擦、提升注册率，设计团队将注册界面进行了优化：通过可视化的方式向用户直观地展现直通车的推广操作原理、核心推广位，鼓励商家点击注册。优化后商家的月均注册率显着提升。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395098" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-8.jpg" width="1164" height="697" /></span></p>
+<p><strong>3. A/B 测试寻找最优方案</strong></p>
+<p>增长的核心方法就是测试。测试可以免除设计师、产品经理、老板的主观看法和各持己见的争论，通过数据的反馈判断方案的效果。A/B则试，就是设计两种不同的方案，且两个方案之间只存在一个变量，以排除其它干扰元素。因为 A/B 则试只能存在一个变量，为了提高效率，我们可以同时进行多组 A/B 测试。</p>
+<p>行业案例：为了提升从商家服务市场页面给营销推广产品的引流的效果，阿里妈妈的设计师先设计了两个版本的视觉方案同时上线，通过工具分流测试每个创意的点击率、转化率、跳出率，选出最优方案后继续通过 A/B 测试迭代优化，找出更好的创意方案。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395099" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-9.jpg" width="1310" height="800" /></span></p>
+<p><strong>4. 运营活动</strong></p>
+<p>利用人趋利的心理，运营活动和各种促销优惠是吸引用户屡试不爽的一个策略。 妥善运用不仅能影响用户的单次决策，还可以逐渐引导和改变用户习惯。电商的各种造节（双11、双12、 618)就是通过运营活动逐渐改变用户的购物习惯的典型案例。</p>
+<p>常见的形式有满减优惠、满赠优惠、现金补贴、红包补贴、限时优惠、返利等等，不要以为这些「小恩小惠」只对 C 类用户有吸引力，B 类客户的老板们也很喜欢这种优惠和补贴哦~ 在蚂蚁链市场部举办的行业会议上，现场抽奖的奖品是几千到几万元的「代金券」（客户购买蚂蚁链服务时可抵扣），现场获奖的公司、银行的领导们都很开心。双十一也不只是淘宝天猫这些 C 类消费平台的节日，阿里云这样的 B 类技术平台一样有「五折」、「满减」活动。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395100" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-10.jpg" width="853" height="800" /></span></p>
+<p>行业案例：阿里巴巴的云技术业务阿里云，去年双 11 在云产品平台上展开了拼团购活动。玩法是这样的，用户通过开团建立熟人拉新关系群，被邀请者通过购买超低价折扣云产品获取参团资格，邀请者从中获取现金奖励及补贴返现，最终根据团内新用户数排名瓜分百万现金。此次拼团活动的一个特征是门槛较高，参团用户需购买 5 折云产品才可参团，这一限制将大量羊毛党拒之门外。除了新用户可享受的商品折扣外，额外增加了拉新后折上折返现、拉新现金红包奖励以及拉新现金返利。零头小利很难吸引 B 类云产品用户群为之付出成本参与任务，但综合收益可以满足用户预期。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395101" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-11.jpeg" width="1422" height="800" /></span></p>
+<p><strong>5. 消息推送</strong></p>
+<p>消息推送是一种实时、精准、有效的提醒方式，形式包括 APP 的消息 push、邮件、短信等。 它的主要功能是用来激活用户，提升用户活跃度和留存率。 消息推送的核心指标主要为消息的到达率、点击率、转化率，可以通过测试和数据分析，建立起质量评估体系。下图为阿里云的推送邮件「您有一份创业助力金礼包待领取，免费领取！」：</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395102" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-12.jpg" width="1110" height="783" /></span></p>
+<p><strong>6. 游戏化机制</strong></p>
+<p>「游戏化」就是在非游戏情境中，使用游戏的设计思想和机制。游戏化的最终目标不仅仅是为了让用户觉得好玩，它是一种桥梁和手段，用游戏元素和游戏式的设定创造出乐趣和粘性，从而驱动和引导受众，让商业目的更容易、更快速的实现。常用的游戏化元素包括等级、点数、徽章、排行榜、虚拟形象、通关解锁等等，如下图钉钉的捐步数排行榜。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395103" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-13.jpeg" width="369" height="800" /></span></p>
+<p>行业案例：千牛作为淘系商家的一站式工作台，是双十一商家移动端的主阵地，提供了丰富的活动报名、规则解读、资讯直播等功能。但对于那些无法参加大促的中小卖家而言，这些功能无法吸引他们。针对这个问题，去年双十一，千牛首次尝试了互动玩法，并通过节日氛围的营造，向商家传播快乐双十一，提高非会场商家的参与感。在游戏的角色和内容设计上，将多角色子账号的创建和千牛品牌形象进行融合，加强商家对千牛多角色帐号的学习和了解，提升品牌及形象的认知度。此次互动游戏有大量商家积极参与，人均互动次数、互动率、首次尝试三项核心数据，均达到了预期效果。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395104" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-14.jpg" width="1042" height="562" /></span></p>
+<p><strong>7. 社区氛围运营</strong></p>
+<p>营造良好的社区氛围有利于用户之间建立良好友善的氛围。产品早期的社区氛围可以通过团队自身的运营来带动。</p>
+<p>行业案例：语雀是蚂蚁集团内部孵化出的在线文档编辑与办公协同工具，同时面向 B 类企业客户和 C 类个人用户。为了营造知识传播分享的学习氛围，突破工具产品的定位局限，运营团队打造了「发现」板块，主要面向互联网行业的年轻从业者，并通过前端大牛的入驻吸引了很多同行业的用户来编写技术文档、分享技术文章。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395105" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-15.jpg" width="925" height="800" /></span></p>
+<h4><span class="auto_menu">Referral：传播策略</span></h4>
+<p><strong>1. 广告传播</strong></p>
+<p>广告包括线上和线下传播，线下大至户外广告牌、地铁广告，小至易拉宝、传单、杂志广告等，线上形式就比较丰富，各种渠道的广告投放、H5营销、新媒体营销等。线下广告因为难以监测影响效果和转化率，现在多为线上线下联动。</p>
+<p>行业案例 1：之前钉钉「开工节」的线下广告因为社畜气息太浓重而饱受争议，虽然引起了上班族们的不满，但话题热度也相当高。2020 年的广告与新版表情包和疫情期间在线办公/上学的场景结合，成功引起了大家的共鸣。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395106" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-16.jpeg" width="1014" height="600" /></span></p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395107" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-17.jpg" width="1073" height="600" /></span></p>
+<p>行业案例 2：Slack 在发现网站关键页面的流量增长放缓之后，考虑到这意味着新用户增长动力不足。面对这种状况，Slack在展示广告获客方面进行了新的尝试，就是在投放渠道方面，在Google Display Network 的投放逐渐减少，同时增加在 Carbon Ads 上的投放。Google Display Network 是非常宽泛的流量平台，主要靠量取胜，并没有特定的人群属性。但 Carbon Ads 的受众人群则全部是程序员和设计师。这说明，除了原本典型的开发者用户，Slack 试图吸引新的设计师用户群体。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395108" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-18.jpg" width="1200" height="607" /></span></p>
+<p><strong>2. 借势营销</strong></p>
+<p>借势营销通常是借助节日、事件等，为自己的产品助力，扩大品牌曝光和品牌认知。借势营销的大佬杜蕾斯当仁不让，常常会引起大众的讨论和传播。</p>
+<p>行业案例：阿里巴巴「素材中心」是面向全集团的素材采购、分享平台，素材种类包含素材图片、视频、字体等。平台上线初期，为了低成本地提升素材量、打开知名度，项目组与集团负责公益的社会责任部、摄影兴趣派、负责版权的法务合作发起营销活动，号召集团员工上传自己的摄影作品作为免费素材，每分享的作品被成功下载一次，平台即为免费午餐公益活动捐一笔 0.1 元的款，分享者可以申报公益时。</p>
+<p>因为公司一向重视公益，鼓励每个员工每年累计公益时，且公司内摄影爱好者的规模庞大，所以这次活动得到了集团公益团队的大力支持，不但为平台带来了几千张原创免费素材，更大大增加了平台的知名度和用户群（PV、UV 翻倍）。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395109" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-19.jpg" width="1200" height="618" /></span></p>
+<p><strong>3. 社交裂变</strong></p>
+<p>社交裂变传播，人人都是节点，传播的效果可以几何式倍增。裂变是目前市场上最有效的推广方法之一。裂变常见于微博、微信等社交平台，激发传播，带来水 波式的反馈效果。</p>
+<p>行业案例 1：腾讯云的「十年筑梦，伴你同行」 H5 互动，回顾十年发展历程，展现品牌实力，邀请用户继续使用，吸引用户参与领取十周年礼包的活动。内容策划和交互方式上，在标题界面下滑屏幕，浏览十年历程总结，包括 2010 年技术沉淀，2013 年拥有姓名，2013 至 2017 拓展数据中心、云产品上线，2018 年深入行业发力技术升级、构建基础设施平台，2019 年在品牌合作等四个方面的「100万」成绩，2020 年科技向善，最后是总结语和邀请链接。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395142" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201104-21.jpeg" width="559" height="800" /></span></p>
+<p>行业案例 2：2019 年底，为面向 B 类客户推广蚂蚁链，同时向普罗大众科普区块链的落地场景，负责蚂蚁链业务的设计小组与市场部同事合作，结合市场部举办的「蚂蚁区块链金融开放峰会」等行业活动推出 H5 互动，通过线下会议和线上公众号同时传播，鼓励大家通过微信、钉钉分享。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395143" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201104-22.jpeg" width="1840" height="1087" /></span></p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395119" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-29.jpg" width="1000" height="468" /></span></p>
+<p><strong>4. 邀请拉新</strong></p>
+<p>因为线上流量红利的枯竭、获客成本越来越高，邀请拉新因其低成本、高效率的特点，已经成为各大产品常用的拉新工具。对被邀请的新用户和邀请的老用户，活动通常对双方都提供奖励。设计上要注意淡化广告的特质，营造分享优惠、提供帮助的感觉。邀请拉新最经典的案例，就是 Dropbox 的拉人涨空间的活动，据说当年让这个网盘产品在短短 15 个月内，增长了 3900% 的注册用户。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395120" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-30.jpg" width="1000" height="152" /></span></p>
+<p>这种拉新方式已经成为 C 端产品中的常见套路，在 B 类业务中比较少见，但对于形成社群的中小企业和微型企业的企业主来说，也可以尝试使用。</p>
+<h4><span class="auto_menu">Revenue：变现策略</span></h4>
+<p><strong>1. 收费模式</strong></p>
+<p>基础功能免费，增值功能付费：通过免费服务吸引客户，再通过提供增值服务，将一部分免费客户转化为付费客户。</p>
+<p>行业案例：Teambition 虽然允许企业用户免费使用，但限制项目人数和项目数量（具体限制信息在官网上都无法直接找到），只要团队达到一定规模就必须转换为付费，而且是按每人每年的收费模式。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395121" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-31.jpg" width="669" height="800" /></span></p>
+<p>免费试用/限时优惠：免费试用通过「免费试用 30 天」、「限时免费公测」等方式吸引客户开始尝试使用，到期后如果已经产生粘性则有转化成付费客户的可能。限时优惠包括「首单优惠」、「首年优惠」等等。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395144" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201104-23.jpg" width="965" height="1537" /></span></p>
+<p>行业案例：语雀商业化的第一年时，对企业和个人客户均采用首年优惠（企业空间正常价格 5999 元/年，优惠价 2999 元/年；个人空间正常 99 元/年，优惠价 69 元/年）；第二年则对企业客户采用首单优惠方式，而个人客户不再有首年优惠。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395124" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-34.jpg" width="1453" height="800" /></span></p>
+<p>专注服务付费客户：免费模式的基础是海量用户来分摊边际成本。这样即使转化率很低，在庞大总量的基础上也能得到不错的付费用户数；但是如果产品本身体量很小，免费用户带来的运营成本就会让企业难以负荷。</p>
+<p>行业案例：Bidsketch（网站提案模板平台）发现随着免费用户量的攀升，付费用户比例缩 减到 1%，为了刺激用户付费，团队进行了一系列尝试：各种付费的优惠活动、15 天付费功能体验、消息推送等等，但是收效甚微…… 于是他们做了一个测试，从页面上删除了免费的选项，结果一周后，付费转化率提升了 8 倍。因此他们取消了免费账户的选项，专心向付费用户提供服务。目前 Bidsketc 的策略是：免费试用 14 天，然后就需要转为付费用户，付费有 solo\team\business 三种收费标准。</p>
+<p><strong>2. 用户细分</strong></p>
+<p>就像留存阶段那样，将用户分为群组，此时要重点关注每个群组带来的收益，可以根据用户的消费额、年龄性别地点、获客渠道、购买次数等等对用户分组。</p>
+<p>行业案例：语雀作为从 2019 年起刚刚开始尝试商业化的办公类工具产品，用户增长是核心目标之一。考虑到阿里巴巴的电商基因，在商业化初期，语雀针对电商企业用户群进行针对性的增长实践。设计师通过用户调研和客户走访，首先验证了这个群体对于文档工具和知识库产品的需求；然后针对定量、定性调研结果，定制专门针对电商企业的文档模板、知识库模板、空间模板；接着设计了面向商家用户的落地页，并通过商家后台进行引流。最终效果显着，电商模板一度成为用户使用率最高的模板之一。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395125" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-35.jpg" width="644" height="800" /></span></p>
+<h4><span class="auto_menu">Acquisition：获客策略</span></h4>
+<p><strong>1. 优秀的官网和落地页</strong></p>
+<p>我们不能强调各种各样特殊策略的过程中，忽略最「传统」、但往往也是最关键的官网、落地页本身的设计。优秀的官网和落地页要能快速而准确地向目标用户传达出产品的核心价值，并吸引他们马上开始注册和使用。</p>
+<p>行业案例：设计平台 Canva 为用户提供了创建社交媒体图形、演示文稿、海报、文档等各种设计模板和工具，该公司的愿景是「无摩擦地帮助每个人创造出美丽的设计」，目标用户是「渴望用更好的方法来创造美丽的设计的人」。基于这样的愿景，它的官网和落地页为这些目标人群充分展示出了他们需要的东西。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395126" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-36.jpg" width="750" height="602" /></span></p>
+<p>Canva 的主页风格非常简洁，直观的展现了产品的信息，并没有过多的解释产品，而是引导用户快速注册和使用。为了鼓励产品的使用，在注册登录的入口下面展示了一系列最常用的设计模板类型：</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395127" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-37.jpg" width="1000" height="225" /></span></p>
+<p>页面上提供的关于产品的信息不多，只有「世界上最容易使用的设计工具」、「1000万人在Canva上设计」和「设计任何东西，在任何地方发布」这样有很强说服力的宣传语。如果想进一步了解产品，最好的方式是立即注册或登录，直接感受产品本身的魅力，也可以比较免费版、企业版、商用版的异同。</p>
+<p><strong>2. 筛选优质种子用户</strong></p>
+<p>这个步骤通常是在产品的冷启动阶段，也就是从0开始导入第一批用户和制造内容的过程。早期种子用户的质量会决定产品初期的氛围和走向，影响产品的发展和运营策略。筛选种子用户的前提是要确保产品达到 PMF 状态，也就是产品和市场匹配状态（Product/market fit)。</p>
+<p>行业案例：strikingly（一款快速制作网站的在线工具）在上线之初，并没有大范围展开推广，而是专注于找到 100 个“超级粉丝”。为此 stikingly 寻访了公司周围所有的学校社团和创业公司，邀请他们使用自己的产品。创始人 David Chen 在 facebook上添加了 2000 多名用户，每天和他们聊天，听取他们的反馈，有时候还会邀请用户出来喝茶聊天。这些种子用户不但在产品初期贡献了很多宝贵意见，还主动把产品推荐给其他人，甚至解答新用户的提问和困扰。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395128" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-38.jpg" width="1204" height="609" /></span></p>
+<p>3. <strong>外接资源引流</strong></p>
+<p>外接资源引流就是利用其它产品或平台为自己的产品进行用户导流。C 端产品通常利用拥有大量用户的社交平台，通过引流促进用户的快速增长，比如拼多多利用微信的社交关系，通过亲朋好友低价拼团快速吸引了大量的早期用户。而 B 类产品的引流通常是同领域、或使用场景相关联的产品进行互通，拥有同类用户群的产品之间的彼此导流。</p>
+<p>行业案例：文档工具腾讯文档与项目管理工具 Tower 彼此打通，即为彼此的用户带来使用上的方便，又可以增加产品曝光度、相互引流。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395129" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-39.jpg" width="1200" height="639" /></span></p>
+<p><strong>4. 举办比赛</strong></p>
+<p>举办与产品相关的比赛或征集活动，参赛者需要上传作品来获得评比的机会。这样不仅提高知名度、带来新用户，还能激励用户去了解产品、使用相关功能，提高激活和留存量。需要注意几点：</p>
+<ul>
+<li>参赛门槛高低要根据目标受众合理设置，比赛流程体验要顺畅；</li>
+<li>评审机制透明、具有一定权威性，奖品需要有足够吸引力来吸引参赛者；</li>
+<li>比赛本身也是一种营销活动，要通过有效的渠道触达目标受众。</li>
+</ul>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395130" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-40.jpg" width="658" height="800" /></span></p>
+<p>行业案例：蚂蚁金融科技于 2019 年举办了「链创·未来」蚂蚁区块链创新大赛，一方面可以挖掘和助力区块链创业公司和团队，一方面可以推广蚂蚁链的 BaaS（Blockchain as a Service）产品。为期 9 个月的比赛累计收到 400 个报名参赛项目，参与人数近万；答疑群入群人数达到 2500 人，全国 60 多家媒体投放，媒体阅读量超 20 万+，同时举办了近十场线上培训以及多场线下活动，取得了一定推广宣传效果。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395145" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201104-24.jpeg" width="1630" height="553" /></span></p>
+<p><strong>5. 搜索引擎和应用商店优化</strong></p>
+<p>网站利用搜索引擎的排序规则，采用 SEO（关键词优化、页面结构、文章标题、 内容长度、外链等等）和 SEM（竞价排名）的方法，影响搜索权重，提升网站曝光。 但是移动时代信息更加分散，相比其他获客方式，搜索引擎优化对于APP的获客转化效果不够直接有效了。</p>
+<p>应用商店优化即 ASO，主要有 iOS 的 App Store 和安卓的应用宝、各大手机商的应用商店等，主要为应用标题、关键词、产品描述、缩略图和评论优化。</p>
+<p>行业案例：Ant Deign 是蚂蚁体验技术部推出的开源设计体系，在业内有较高的影响力。为了推广 Ant Deign 的 Sketch 插件 Kitchen，设计团队的相关负责人通过搜索优化，使得搜索「Kitchen」、「Kitchen Sketch」等关键词的整体排名明显提升，通过百度、Google 搜索引擎渠道的访问量提升 40% 以上。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395133" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-43.jpg" width="1201" height="600" /></span></p>
+<p><strong>6. 地推</strong></p>
+<p>除了线上的宣传渠道之外，也会有线下的地面推广，常见的有发宣传单、路演、设置摊位做拉新活动等。地推要注意的是要根据产品定位，选择匹配的区域和用户人群。</p>
+<p>行业案例：虽然不是设计师出身，但创业公司 Teambition 的 90 后帅哥老板齐俊元对于体验设计有着自己独到的见解和经验，他常年活跃在设计大会 IxDC中，会议期间除了演讲分享，还可以看到该公司的展台、宣传品。</p>
+<p><span class="img-zoom"><img alt="近万字干货！B端产品增长设计通用模式（附超多案例）" class="alignnone size-full wp-image-395134" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yq-20201104-44.jpg" width="1259" height="769" /></span></p>
+<h4><span class="auto_menu">结语</span></h4>
+<p>以上就是笔者收集的 B 类业务增长设计的方法和策略、行业典型案例，以及自己实践和见证的项目。欢迎交流切磋，更希望听听你的故事~~</p>
+<p>B 类业务的增长设计实践，机会和挑战相对有限，且设计工作往往和产品设计、市场营销、运营推广工作交叉，需要设计师们擦亮眼睛、抓住机遇、敢于面对风险和质疑、勇于挑战。加油~~</p>
+<p>[link https://www.uisdc.com/aarrr-funnel-model]</p>
+<p><strong>参考资料</strong></p>
+<ul>
+<li><a href="http://b-berger.com/atlassian">http://b-berger.com/atlassian</a></li>
+<li><a href="https://usefyi.com/atlassian-history/">https://usefyi.com/atlassian-history/</a></li>
+<li><a href="https://36kr.com/p/1722896957441">https://36kr.com/p/1722896957441</a></li>
+<li><a href="https://36kr.com/p/1724044378113">https://36kr.com/p/1724044378113</a></li>
+<li><a href="https://www.odaily.com/post/5141106">https://www.odaily.com/post/5141106</a></li>
+<li><a href="https://www.h5anli.com/cases/202008/snzm.html">https://www.h5anli.com/cases/202008/snzm.html</a></li>
+<li><a href="https://yuque.antfin.com/aoneux/amsdko/ll0ovm">https://yuque.antfin.com/aoneux/amsdko/ll0ovm</a></li>
+<li><a href="https://www.uisdc.com/become-increase-designer">https://www.uisdc.com/become-increase-designer</a></li>
+<li><a href="https://www.growthmanifesto.com/canva-growth-study">https://www.growthmanifesto.com/canva-growth-study</a></li>
+<li><a href="https://growthhackers.com/growth-studies/slack-fastest-growing-b2b-saas-business-ever">https://growthhackers.com/growth-studies/slack-fastest-growing-b2b-saas-business-ever</a></li>
+</ul>
+➜不藏不掖着，响应式网页大揭秘来了！
+https://www.uisdc.com/responsive-web-design-3	67646
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-384439" src="https://image.uisdc.com/wp-content/uploads/2020/08/uisdc-yxs-2020813.jpg" width="720" height="161" /></span></p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395423" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-2.jpg" width="800" height="342" /></span></p>
+<p>大家肯定有过这样的体验，有些网站在电脑端使用起来还不错，但是并没有做相应的移动端口的适配，导致在用手机浏览的时候，非常不便，大大降低了网页的使用率。</p>
+<p>随着移动端设备的不断普及和发展，导致网页设计也从原来的电脑端，过渡到了移动端。这也就要求我们设计一个网页的时候需要去适配不同的设备。</p>
+<p>而我们都知道，网页设计是整体且系统的，在设计过程不能各自适配各自的端口，那样会导致整个网页设计的项目不统一。再加上现在各种尺寸的显示器，没有办法一一进行统计和适配。今天我们就来讲解一下怎么去解决这个问题。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395424" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-3.jpg" width="600" height="173" /></span></p>
+<p>响应式网页 RESPONSIVE WEB DESIGN 简称为RWD，可以让网页自动的适应不同尺寸的显示器。这种形式的优点也是显而易见的，那就是高适应性和提升网页的实用性。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395425" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-4.gif" width="528" height="393" /></span></p>
+<p>这是一个典型的响应式网页，当在我们缩小这个家具网页页面的同时，它的内容也随着发生改变。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395426" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-5.jpg" width="707" height="494" /></span></p>
+<p>我们来看一下这个示意图，这是一个正常尺寸的网页。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395427" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-6.gif" width="426" height="301" /></span></p>
+<p>当我们缩小它的尺寸时，里面每一个元素都会相应的发生改变，现在看到的是一个平板端口的尺寸，内容并没有受到任何的影响。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395428" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-7.gif" width="332" height="297" /></span></p>
+<p>当我们的尺寸进一步的缩小，到了移动端，元素自动调整，依旧是不会影响整个网页的识别。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395429" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-8.gif" width="533" height="376" /></span></p>
+<p>而这个网页，在电脑端观看没有任何问题，但是并没有适配其他的端口，浏览起来就会给用户造成不便，导致用户流失。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395430" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-9.gif" width="639" height="401" /></span></p>
+<p>来看这个网页，在收缩的过程可以明显看到，每到达一个点的时候，里面的元素就会相应的减少，直到最小。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395431" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-10.jpg" width="600" height="113" /></span></p>
+<p>中断点，是网页在收缩的过程中的最小范围。当网页到达这个范围以后，网页内部的元素就要进行相应的变化，用来适应网页尺寸的变化。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395432" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-11.jpg" width="751" height="580" /></span></p>
+<p>这是一个正常尺寸的网页的线框图，我们接下来通过收缩这个网页，理解中断点的概念。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395433" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-12.gif" width="504" height="461" /></span></p>
+<p>当网页收缩到了标记的中断点的位置以后，整个网页就要做出相应的调整。不然有些元素就会影响整个网页的观感。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395434" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-13.gif" width="504" height="461" /></span></p>
+<p>下方的单元型数量减少，保持元素的基本比例不受影响。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395435" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-14.gif" width="504" height="461" /></span></p>
+<p>以此类推，继续收缩这个网页。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395436" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-15.gif" width="504" height="461" /></span></p>
+<p>到了下一个中断点的时候，整个元素还是要进行相应的调整。最常见的做法就是，减少这一屏的元素数量。保持他们的正常比例不变。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395437" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-16.jpg" width="600" height="111" /></span></p>
+<p>前面讲过的中断点，并不是随意去设定的数值，各个大的互联网公司，都会制定自己公司的设计指导手册。我们在刚刚进入这个行业的时候，如果束手无策，不妨多去看看这些设计的指导手册。</p>
+<p>指导手册会提供一个规范的设计标准，确保设计师的设计规范。就像最简单的数学公式。这里我们主要来看一下，谷歌的指导手册（Material Design）。</p>
+<p>手册链接：<a href="https://material.io/design/">https://material.io/design/</a></p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395438" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-17.gif" width="639" height="374" /></span></p>
+<p>这份指导手册，涵盖整个显示器端的内容，从最开始的网格搭建，到大的设计原则。大家感兴趣可以去这个网站看一下。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395439" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-18.jpg" width="1080" height="1122" /></span></p>
+<p>今天我们主要来看的是，这里面给我们提供的关于中断点的信息。黄色标记的位置就是中断点的信息。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395440" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-19.jpg" width="600" height="234" /></span></p>
+<p>这份表格里面规定的数值很多，在适配的时候不需要全部都做，我们只需要挑选几个常见的就可以了。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395441" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-20.jpg" width="629" height="800" /></span></p>
+<p>在上面的动图演示中，使用就这个规范里面的数值，这样，设计出来的响应式网页会更加的具有规范性。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395442" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-21.gif" width="639" height="347" /></span></p>
+<p>这个网页我们在浏览的时候，可能会发现它只有两个中断点，其他的时候基本保持不变。</p>
+<p>这是因为，平板端基本可以直接沿用电脑端的相关尺寸，而手机端必须要重新的适配。</p>
+<p>现在大家应该对响应式网页有一定的了解了。它的高适应可以让你的网页，更好地适应不同的设备，并且提高网页的实用性。</p>
+<p>中断点越多会让你的网页变得更加的细腻，而当我们没有那么多的时间和精力去做的时候，可以像上面的网页一样，只适配两个尺寸。</p>
+<p>这样可以确保大部分的用户都可以接受到网页的信息。接下来，我们来看一下，响应式网页的类型都有哪些。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395443" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-22.jpg" width="600" height="111" /></span></p>
+<p>响应式网页的类型分为两种，固定网格和流动网格，这里的网格并不是我们熟知的网格系统的建立，而是在收缩网页的时候，网格的变化模式。</p>
+<p>先来看一下固定网格，这里是在收缩网页的过程中，网格基本固定保持不变，当收缩接近中断点时，页面才会发生变化。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395444" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-23.gif" width="534" height="431" /></span></p>
+<p>我们先来看一下线框图，红色的线段是中断点的标记。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395445" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-24.gif" width="534" height="431" /></span></p>
+<p>当我们的页面收缩到一个中断点的位置，最边缘的元素就会自动被减掉，用来适配尺寸。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395446" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-25.gif" width="534" height="431" /></span></p>
+<p>到达下一个中断点的时候也是同样的方式。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395447" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-26.gif" width="222" height="349" /></span></p>
+<p>固定网格的最大的特征是整个网页，在收缩的过程，到了中断点就会自动的减少元素，其他元素基本保持不变。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395448" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-27.jpg" width="600" height="111" /></span></p>
+<p>而流动网格的形式，则是相反的，元素会随着尺寸的变化而变化。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395449" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-28.gif" width="640" height="378" /></span></p>
+<p>这个网页，在收缩的过程，到了中断点就会自动的减少元素，其他元素基本也会随着尺寸进行相应的变化。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395450" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-29.gif" width="640" height="454" /></span></p>
+<p>继续来收缩这个网页，当网页收缩接近中断点的时候，整个网页中的每一个元素，比例都随之变化。当到中断点的时候，边缘的元素被减掉。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395451" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-30.gif" width="640" height="454" /></span></p>
+<p>以此类推到下一个中断点的时候，各个元素还是按照比例进行缩放，直到接近下一个中断点。但并不是每一个中断点都需要去减少元素，可以适当的按照元素的比例进行调整。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395452" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-31.gif" width="640" height="454" /></span></p>
+<p>到达下一个中断点，元素继续减少，用以适配尺寸。最后到达最小的尺寸为止。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395453" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-32.jpg" width="709" height="600" /></span></p>
+<p>这里除了这样的继续两列展示，还有另外一种形式。直接变成一个单专栏型的网页展示，这样可以最大的展示图像的效果。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395454" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-33.jpg" width="800" height="328" /></span></p>
+<p>流动网格中，随着网页的尺寸变化，整个元素的大小发生着改变。</p>
+<p>在设计的过程中选择流动网格还是固定网格，主要取决于网页的内容，图片和文字可以适应随着网页的变化而变化，可以选择使用流动网格，反之则是固定网格。</p>
+<p>这里还是要再强调一下，网格类型主要是指网格的模式，是固定的还是移动的，和我们在设计中的网格系统有一定的区别。</p>
+<p>接下来，Adobe 的Xd 这个软件的实际操作，给大家讲解一下。在设计响应式网页的时候，如何去按照不同的端口去设置网格系统。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395455" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-34.gif" width="640" height="360" /></span></p>
+<p>首先我们打开页面后，点击右下角画板，会出现网格的菜单，点击版面按钮，版面网格就建立完成了。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395456" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-35.jpg" width="823" height="800" /></span></p>
+<p>建立好版面网格后，下方的数值，它们分别代表着不同的设定，我们一个一个来讲解。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395457" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-36.jpg" width="800" height="510" /></span></p>
+<p>首先是列，这个概念比较清晰，就是网格中的矩形框，这里设置了12列。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395458" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-37.jpg" width="800" height="510" /></span></p>
+<p>间隔宽度则是矩形框之间的距离，这里设置了16像素。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395459" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-38.jpg" width="800" height="510" /></span></p>
+<p>列宽则是矩形框的宽度，这里是135像素。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395460" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-39.jpg" width="600" height="101" /></span></p>
+<p>响应式网页的网格系统分为两种，第一种是间隔宽度固定的形式。这种网格的形式是网格中的间隔宽度始终保持不变。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395461" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-40.gif" width="500" height="294" /></span></p>
+<p>我们现在来看这个网页，它是一个流动网格的形式，网格系统使用的是间距宽度固定的类型。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395462" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-41.jpg" width="800" height="876" /></span></p>
+<p>无论网页是怎么收缩和调整的，间距是始终保持不变的。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395463" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-42.gif" width="639" height="353" /></span></p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395464" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-43.gif" width="496" height="339" /></span></p>
+<p>在Adobe Xd 软件中就可以直接操作了，模拟收缩网页的方式，右下角的间隔宽度始终保持不变。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395465" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-44.gif" width="639" height="287" /></span></p>
+<p>电脑端的部分设置完成以后，因为是同样的网格系统，就可以直接移植到其他的屏幕尺寸中去。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395466" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-45.gif" width="500" height="494" /></span></p>
+<p>最后到了手机端，这里大家会明显的发现，元素的尺寸变小了，而且单屏展示的内容丰富程度提升了。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395467" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-46.jpg" width="600" height="101" /></span></p>
+<p>相比第一种形式的网格形式，第二种形式是栏数上呈现着每个设备的栏数都不固定的特征，这也是现在比较流行的网格系统的设置方式。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395468" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-47.jpg" width="800" height="943" /></span></p>
+<p>再回来看谷歌的指导手册，红色部分有固定使用的栏数。由于手机端的尺寸较小，放置12栏的网格，会显得很密集，可以按照谷歌指导手册的栏数规定进行设置。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395469" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-48.jpg" width="863" height="800" /></span></p>
+<p>这里也同样可以在xd中进行操作。点击工具栏的画板按钮，右面会出现很多的预设，这个预设会定期更新。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395470" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-49.jpg" width="434" height="800" /></span></p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395471" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-50.gif" width="640" height="351" /></span></p>
+<p>点击一个平板的预设，就会自动的帮我们设置好8栏的版面网格。继续可以选择手机端的预设，设定出一个4栏的版面网格。这样三个端口的网页就已经全部设定好了。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395472" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-51.jpg" width="1080" height="501" /></span></p>
+<p>同样的内容，我们在电脑端设置完成后。可以更加容易的进行适配。整体不会随着网格系统的变化发生太大的改变，因为12栏到8栏也是按照比例进行的改变。</p>
+<p>前面整个的响应式网页的设置和适配大家应该都已经熟悉了，在设置网格系统的这个步骤时，栏数不固定的类型，现在得到越来越设计师的认可。</p>
+<p>就像我前面课程中讲过的，网页设计是一个模块化的组织，我们就像拼搭积木一样进行设计，网页尺寸发生变化，可以就适当的减少积木的数量进行适配。接下来，通过一个案例让大家明白具体的适配思路都有哪些。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395473" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-52.jpg" width="800" height="431" /></span></p>
+<p>在做网页的过程中，很多人会有疑惑，设计网页先设计电脑端还是手机端，在这里我建议大家先设计电脑端，因为手机端只是一个简化的过程，相对来说更加的容易。反之，则会加大工作难度。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395474" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-53.jpg" width="568" height="46" /></span></p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395475" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-54.gif" width="639" height="387" /></span></p>
+<p>首先设置网页的版面网格也就是可视范围，这里设置了1700px。可视范围越大图片的展示效果越好。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395476" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-55.gif" width="639" height="387" /></span></p>
+<p>创建12栏，栏间距20像素的网格系统，这里采用的是间距保持不变的形式。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395477" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-56.gif" width="639" height="387" /></span></p>
+<p>这里主要讲解的是响应式网页的适配方式，版式这里我们就快速略过。置入图片，提前做好的导航栏文字组。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395479" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-58.jpg" width="588" height="552" /></span></p>
+<p>首先设置可视范围，这里设置了900像素。然后设置网格系统，还是同样的12栏，栏间距20像素。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395480" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-59.jpg" width="964" height="800" /></span></p>
+<p>最后按照屏幕大小去调整置入版面中。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395481" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-60.jpg" width="746" height="800" /></span></p>
+<p>由于平板的尺寸和显示器接近，这里只是微调就可以了。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395482" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-61.jpg" width="1080" height="90" /></span></p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395483" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-62.gif" width="450" height="725" /></span></p>
+<p>手机端的版面就需要进行重新的设置了，第一步还是先要设定版面网格。同样使用还是20栏，栏间距20像素的网格系统。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395484" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-63.jpg" width="443" height="800" /></span></p>
+<p>置入画面，重新设计文字组的形式。这样手机端就适配完成了。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395485" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-64.gif" width="639" height="343" /></span></p>
+<p>继续适配一下主栏的内容，这里电脑端的内容相对来说，排版比较松散。而手机端也应该相应的保持，这种松散的感觉，但是要尽量的放大图片，进行展示。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395486" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-65.gif" width="639" height="343" /></span></p>
+<p>商品展示这里使用的三栏展示的重复单元型展示商品。手机端则可以适当的简化，放置两个商品进行展示。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395487" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-66.gif" width="639" height="343" /></span></p>
+<p>电脑端部分使用的是左右组合的单元型形式，手机端就要尽量的去简化。</p>
+<p>视频可以直接展示放在手机中，下方的关于我们变成一个通栏的形式，放置于黑色背景上，和网页中的保持一致。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395488" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-67.gif" width="639" height="343" /></span></p>
+<p>网页端的联系我们这一部分，高度是屏幕的高度，手机中不需要这么严格的设置，只需要按照通栏的形式进行编排。保持手机端上下部分的统一性，以及和电脑端的关联性。</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-395489" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-68.gif" width="639" height="343" /></span></p>
+<p>这样我们整个网页的适配就完成了。</p>
+<p>今天我们讲解的响应式网页，可以使你的网页适配各种显示器的尺寸，更好的浏览网页的内容。</p>
+<p>现在了解响应式网页的原理和适配的方法，剩下的就是需要你不断的去积累手机端和电脑端相关的表现形式。</p>
+<p>好了，我们本期的内容就到这里了，我们下期再见。</p>
+<p>[link https://www.uisdc.com/everysize]</p>
+<p>欢迎关注研习设的微信公众号：「Yanxishe2017」</p>
+<p><span class="img-zoom"><img alt="不藏不掖着，响应式网页大揭秘来了！" class="alignnone size-full wp-image-271254" src="https://image.uisdc.com/wp-content/uploads/2018/05/yxskxsqr.jpg" alt="国宝级品牌设计公司，知名作品独家大揭秘！" /></span></p>
+➜壹周速读：成为高手的排版设计方法
+https://www.uisdc.com/quick-reading-weekly-vol78	79169
+<p><span class="img-zoom"><img alt="壹周速读：成为高手的排版设计方法" src="https://image.uisdc.com/wp-content/uploads/2020/11/quick-reading-weekly-vol78-1.jpg" width="750" height="168" class="alignnone size-full wp-image-395623" /></span></p>
+<p>排版设计是刚需。做不好排版怎么办？排版的视觉风格怎么拿捏？高手是如何搞定构图、文本以及色彩的？看这几篇文章，你想知道的答案可能都在其中。</p>
+<h4><span class="auto_menu">视觉·排版</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：成为高手的排版设计方法" src="https://image.uisdc.com/wp-content/uploads/2020/11/pp1.png"  class="aligncenter size-full wp-image-395619" /></span></p>
+<p>想要做好版式设计，不仅仅只是掌握几个设计手法、几种设计表现，或者是几种视觉效果，而在于对版面空间的把控和对信息的敏感度及处理方式，使多种不同的信息能够形成完整的统一表现，才能通过视觉感知把信息更好的传递观者。这篇文章，为你详细分析了版式设计做不好的几个主要原因：</p>
+<p>[link  https://www.uisdc.com/why-you-cant-do-layout-design ]</p>
+<p><span class="img-zoom"><img alt="壹周速读：成为高手的排版设计方法" src="https://image.uisdc.com/wp-content/uploads/2020/11/pp2.png"  class="aligncenter size-full wp-image-395619" /></span></p>
+<p>「双十一」到来，大家都在忙着屯优惠券，唯有设计师还在操心「版式设计」。一副好的版式设计作品，可以在有限的页面内，以最快速、最直接、最有效的方式传递出核心的内容和信息，并让读者和受众留下深刻而良好的印象。这篇文章，会分享一些快速出效果的版式设计：</p>
+<p>[link   https://www.uisdc.com/typographic-design-thinking]</p>
+<p><span class="img-zoom"><img alt="壹周速读：成为高手的排版设计方法" src="https://image.uisdc.com/wp-content/uploads/2020/11/pp3.png"  class="aligncenter size-full wp-image-395619" /></span></p>
+<p>与双11、双12活动页百花争放的多元化设计不同的是，春节前夕的最后一个电商大促节日：年货节，页面风格却更趋向于一个统一的风格：中国风。虽然目前还只是双11，但是很多品牌和设计师已经开始有意识地开始筹备后续的设计，那么电商中的中国风要如何设计？来看这篇完全指南：</p>
+<p>[link   https://www.uisdc.com/e-commerce-design-chinese-style]</p>
+<h4><span class="auto_menu">高手的版式三部曲</span></h4>
+<p>这是来自研习设的「高手的版式三部曲」，是一套非常走心且实用的版式学习资料，横跨了好几个月才最终完成：</p>
+<p><span class="img-zoom"><img alt="壹周速读：成为高手的排版设计方法" src="https://image.uisdc.com/wp-content/uploads/2020/11/pp4.png"  class="aligncenter size-full wp-image-395619" /></span></p>
+<p>第一篇讲的是版式。借用世界名画的构图技巧，带你了解种种不同的版式在画面、布局和构图上的呈现效果，和关键诀窍：</p>
+<p>[link  https://www.uisdc.com/layout-composition]</p>
+<p><span class="img-zoom"><img alt="壹周速读：成为高手的排版设计方法" src="https://image.uisdc.com/wp-content/uploads/2020/11/pp5.png"  class="aligncenter size-full wp-image-395619" /></span></p>
+<p>第二篇讲的是字体。这篇文章也将围绕着「文字」展开，相信大家看完后会对「文字」有一个全新的了解，也将明白文字对于版面的意义是巨大的，以及如何处理好它：</p>
+<p>[link  https://www.uisdc.com/layout-design-text ]</p>
+<p><span class="img-zoom"><img alt="壹周速读：成为高手的排版设计方法" src="https://image.uisdc.com/wp-content/uploads/2020/11/pp6.png"  class="aligncenter size-full wp-image-395619" /></span></p>
+<p>第三篇是色彩。如果说构图相当于骨架，文字相当于五官，那配色就相当于是在脸上画一个精致的妆容。因为配色是整个编排流程中的最后一步，通常我们都是在搭建完骨架，刻画好文字后，才会考虑配色的问题。一个好的配色，会让版面的视觉效果更上一层楼：</p>
+<p>[link   https://www.uisdc.com/color-matching-3]</p>
+<h4><span class="auto_menu">UI·产品</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：成为高手的排版设计方法" src="https://image.uisdc.com/wp-content/uploads/2020/11/pp7.png"  class="aligncenter size-full wp-image-395619" /></span></p>
+<p>QQ-自习室是一款以学习为特色，基于手机QQ平台的陪伴型多人直播产品，简单来说就是一个线上的自习室。作为疫情期间诞生的创新小产品，它在资源有限的前提下也拿到了还算不错的成绩。这篇文章给大家分享线上自习场景探索过程中的发现与思考：</p>
+<p>[link   https://www.uisdc.com/qq-study-room]</p>
+<p><span class="img-zoom"><img alt="壹周速读：成为高手的排版设计方法" src="https://image.uisdc.com/wp-content/uploads/2020/11/pp8.png"  class="aligncenter size-full wp-image-395619" /></span></p>
+<p>很多UI同学会碰到这样的情况：作图时连一像素的分割线都纠结好几次，但是开发完的效果却不尽人意，UI验收不通过。然后前端这边委屈的想拿出藏在键盘下的四十米大刀找你来血拼……这篇文章，帮你搞清楚精准还原设计稿的秘诀：</p>
+<p>[link  https://www.uisdc.com/design-restoration ]</p>
+<p><span class="img-zoom"><img alt="壹周速读：成为高手的排版设计方法" src="https://image.uisdc.com/wp-content/uploads/2020/11/pp9.png"  class="aligncenter size-full wp-image-395619" /></span></p>
+<p>在我们日常生活中，仪式感使我们的生活充满各种趣味性，营造更贴合的氛围，直击内心。而在互联网产品中，为了使用户的产品体验更贴近于真实生活、有情感共鸣，不少产品在仪式感这块也下不了不少功夫：</p>
+<p>[link  https://www.uisdc.com/ritual-design ]</p>
+<h4><span class="auto_menu">新视野</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：成为高手的排版设计方法" src="https://image.uisdc.com/wp-content/uploads/2020/11/pp10.png"  class="aligncenter size-full wp-image-395619" /></span></p>
+<p>巴洛克在历史当中属于一个不容易清晰甄别的风格，它是一种诞生于哥白尼、伽利略活跃时期的艺术风格，「善于用光」、「舞台感」及「浮夸雕塑装饰」是它的标签。关于这种艺术风格，你想了解更多，就看这里：</p>
+<p>[link  https://www.uisdc.com/baroque ]</p>
+<h4><span class="auto_menu">酷站推荐</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：成为高手的排版设计方法" src="https://image.uisdc.com/wp-content/uploads/2020/11/pp11.png"  class="aligncenter size-full wp-image-395619" /></span></p>
+<p>「PICaboo!」是一个日本免费、可爱的向量图插图素材网站，无论是个人或商业用途皆可从网站下载EPS、PNG格式插图，只要在不违反使用条款情况下，可以自由使用于网站、印刷、影片、应用程序或广告等等。PICaboo!提供的免费插图都是「免费」也能使用于商业用途，使用时不需要标示出处来源，也不用向站方取得授权：</p>
+<p>[link  https://www.uisdc.com/picaboo ]</p>
