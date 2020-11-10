@@ -1,0 +1,42 @@
+➜3分钟看懂，如何解决Twitter分享索权过多的问题
+http://www.sohu.com/a/430811874_99975453	14968
+<p>经常接触海外用户的开发者，对Twitter平台绝不会感到陌生，作为出海应用和游戏App必选的社交分享平台，MobTech开发者服务早在ShareSDK（社会化登录分享组件）1.0版本就已集成了它。</p>
+<p>近期，MobTech开发者服务平台收到部分用户反馈，反映Twitter分享前的授权动作索取了过多权限，需要ShareSDK进行优化。到底是哪里出了问题？</p>
+<p>让我们先从ShareSDK的分享流程说起。</p>
+<p><strong>ShareSDK分享流程</strong></p>
+<p>不同社交平台的分享API并不相同，但多数需要在分享前完成授权。ShareSDK同时提供了分享（share）和授权（authorize）两个API，只是为了使用方便，分享API背后默认进行了授权检查，所以开发者日常可忽略授权的API（如下图）：</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201110/2ebdb87d48aa4a37bc2182dc566ec15f.png" max-width="600" /></p>
+<p>而Twitter的问题在于默认情况下，它的授权动作索取了太多权限：</p>
+<p>所以解决这个问题的第一个办法，就是不要让ShareSDK默认完成授权，而是在分享前调用authorize的另一重载，实现对权限裂变的控制。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201110/5f452a9910b5420498212e17b60f3bac.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>尝试1、通过重载的授权方法减少索权</strong></p>
+<p>具体的操作如下图：</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201110/b61e4c493bf4442ca28d6a8c5f6221ea.png" max-width="600" /></p>
+<p>执行分享前先通过isAuth方法判断终端用户是否已经授权了分享，如未授权，则自行调用authorize的另一种重载方法authorize(String[])来直接指定需要的权限列表进行授权，并在授权成功后调用share方法继续分享。</p>
+<p>因此现在只要查一下Twitter开放平台的文档，找到所需的权限就能解决问题——结果很遗憾！Twitter并没有权限列表的概念，所以这个方案不可行。</p>
+<p><strong>尝试2、修改Twitter App控制台配置</strong></p>
+<p>既然通过代码配置不可行，根据我们过往的经验，只能在Twitter的App控制台内进行配置。</p>
+<p>果不其然，在一个不起眼的角落里，发现了Twitter的权限分级选项，但只有3个：只读、写入和读写（如下图）：</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201110/6adbda5d9fb04b5a80067c12b369161f.png" max-width="600" /></p>
+<p>一般情况下， “只读”选项肯定申请了最少的权限，切换之后，授权页面的权限列表少了很多，但完成授权后却直接影响了分享功能，Twitter提示权限不够！</p>
+<p>这样看来，<strong>分享动作至少要“写入”权限</strong>。在尝试设置后，尽管可以执行分享工作，但授权页的权限列表又增多了。</p>
+<p><strong>尝试3、基于操作系统的API进行分享</strong></p>
+<p>既然开放平台的API不能解决这个问题，那只能寻求操作系统API的帮助了，这里的实现原理也很简单（如下图）：</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201110/9894df55d92f49d18c00517359ab82b8.png" max-width="600" /></p>
+<p>对于安卓系统而言，这个方案操作很简单。先前ShareSDK已给部分平台提供了这个功能，而在iOS平台实现，开发者需要注意不同App提供的API会有差异，甚至还会受到iOS系统和App版本的影响。</p>
+<p>完成了尝试三的修改，<strong>Twitter索权过多的问题确实就被解决</strong>。并且和之前一样，可以通过增加一项配置、无需修改分享的调用代码，就可直接切换至新的分享方式，<strong>特别适用于只需要分享而无需登录的场景应用</strong>。</p>
+<p>除了Twitter，我们还将这种方案推广到所有同样模式的社交平台中，建议出海开发者更新至最新版本，适用此方案进行分享，<strong>解决用户在分享中产生授权过多的问题</strong>。</p>
+<p><strong>关于ShareSDK</strong></p>
+<p>很多移动开发者都有了解，分享涉及的平台众多，需要挨个接入可不是件容易活儿。更别说各平台的配置、更新以及兼容适配性等问题，没一件省事。项目组的研发、推广、运营、品牌打造等工作，已足够焦头烂额，<strong>社交平台的接入是否有更简便的方法？</strong></p>
+<p><strong>有！用ShareSDK！</strong></p>
+<p>ShareSDK仅需一键集成，轻松解决了以上开发困扰，同时还省去了后续一系列维护平台的步骤，省时省心又省事。</p>
+<p>在信息安全越来越被关注的时代，ShareSDK对每个平台的安全性非常重视且严谨对待，是业内知名且安全系数高的一款社交化分享组件。当前ShareSDK已融入了原生和系统分享，完善的分享方式，让开发者使用更便捷！</p>
+<p>所以，这样一款分享SDK，接入仅需5分钟，不香么？</p>
