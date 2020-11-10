@@ -4,3 +4,714 @@ https://sspai.com/post/63543	3649
 ➜快捷启动器中的「潜力股」，它想成为你的 Mac 默认搜索工具：Raycast
 https://sspai.com/post/63521	12439
 <p style="margin-left:!important;">关于如何提升生产力，这是个可以无限探索下去的话题。所有帮助提升生产力或者改善效率的工具，都是在尽可能压缩核心工作之外的时间，包括 macOS 的「聚焦（Spotlight）」、Alfred 以及接下来要提到的 Raycast。</p><p style="margin-left:!important;">一开始在 Product Hunt 上看到 Raycast 介绍，觉得其不过是又一个「Alfred」而已。老实说，我并不是 Alfred 的忠实用户，曾因为看到很多人推荐而去安装使用，但略显陈旧的 UI 和繁杂的设置菜单让我觉得「聚焦（Spotlight）」好像也能凑合用着。</p><p style="margin-left:!important;">如果以 macOS 系统版本风格来比喻的话，Alfred 的 UI 风格应该能匹配几年前的 macOS 吧，而 Raycast 却是能够驾驭 macOS Big Sur 全新的视觉风格。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/03a7ee0233fcb7a3c6725aa71ec4c541" alt="https://img.qikepai.cn/blog/2020/11/ptPrKc.jpg"></figure><p style="margin-left:!important;">为了避免造成误解，我这里就不进行两者的比较，开发者针对 Raycast、聚焦（Spotlight）以及Alfred的区别也做了简单的 <a href="https://raycast.com/faq">说明</a>，有兴趣可以跳转查看，当然也欢迎有心得的朋友补充在评论区一起交流。</p><h2 style="margin-left:0px;"><strong>为开发人员定制的生产力工具</strong></h2><p style="margin-left:!important;">Raycast 是直到 10 月 29 日才放出这第一个公测版本，对外宣布种子轮已筹集 270 万美元。根据开发者介绍，Raycast 正是受命令行的启发，作为软件工程师，他们注意到自己真正写代码的时间越来越少，反而需要更多的时间来管理软件开发，例如跟踪 bug 反馈、管理 sprint、发布新版本等等，这些都需要借助网页端或者其它的不同工具来完成。</p><p style="margin-left:!important;">于是，Raycast 正是为了解决他们的困扰而创建，尽可能将常用的管理开发、内部会议、任务规划等内容集成在一起，腾出更多地时间放在编写代码上。简单过一下 Raycast 目前所能实现的核心功能：</p><ul><li>在 macOS 上启动程序或者搜索文件，相当于聚焦（Spotlight）；</li><li>在 Asana、GitHub、Jira 或Linear 中创建、搜索和关闭 issues；</li><li>批准、合并和关闭 GitHub 的拉取请求；</li><li>调用 Zoom 管理日常会议；</li><li>支持快捷设置日程、待办事项以及其它诸多系统设置；</li><li>支持脚本扩展；</li><li>……</li></ul><p style="margin-left:!important;">虽然我可能并不是 Raycast 的精准目标用户，但这段时间体验下来确实发现了不少惊喜，让我开始习惯用 Raycast 取代聚焦（Spotlight）。</p><h2 style="margin-left:0px;">功能体验</h2><h3 style="margin-left:0px;">可完全取代聚焦（Spotlight）</h3><p style="margin-left:!important;">既然 Raycast 包含了聚焦（Spotlight）的功能，意味着你完全可以用 Raycast 替换掉它。单从 UI 上来说，Raycast 比 Alfred 更有 macOS 原生应用的感觉，替代聚焦（Spotlight）完全不会产生违和感。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/eaa7a0735bfb751376fa9b983a7473f9" alt="https://img.qikepai.cn/blog/2020/11/nDaOyl.jpg"></figure><p style="margin-left:!important;">Raycast 开启后，菜单栏会有常驻图标，当然也可以通过快捷键呼出 Raycast，默认快捷键为「option + 空格」，设置菜单里还「贴心」地给出了替换聚焦（Spotlight）的方法——其实就是在系统设置中关闭聚焦（Spotlight）的快捷键，然后把 Raycast 快捷键改为「command + 空格」。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/668569e65f47261af2c53e4efbba9a80" alt="https://img.qikepai.cn/blog/2020/11/0GTfBa.jpg"></figure><p style="margin-left:!important;">与聚焦（Spotlight）、Alfred 不一样，呼出 Raycast 之后并非只显示一个搜索框，还包含一些推荐项目（根据使用频率推荐）、手动收藏项目以及快捷操作，下滑则能看到所有的项目。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/85b4f83268cac88ed532ff6b7ce0e806" alt="https://img.qikepai.cn/blog/2020/11/8ar4lz.jpg"></figure><p style="margin-left:!important;">你可以在搜索框中任意输入内容，优先会展示本地已有的应用或者快捷命令，其次可选搜索文件或者直接在搜索引擎中搜素。Raycast 默认只有 Google、DuckDuckGo 两种搜索引擎且无法修改。</p><p style="margin-left:!important;">软件右下角有快捷菜单，除了打开应用/文件之外，还可以快速定位文件位置或者执行其它操作，而且这些所有的一系列操作都可以使用快捷键完成。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/5391537ca11aa04a42a68a83fe5ee0b6" alt="https://img.qikepai.cn/blog/2020/11/6ZKH45.jpg"></figure><p style="margin-left:!important;">文件搜索功能支持部分图片、文档预览，且能显示文件详细信息，这个比聚焦（Spotlight）实用性更高。</p><p style="margin-left:!important;">关于应用快捷启动以及文件搜索与聚焦（Spotlight）还是比较类似的，只是在一些功能上做得更加细致，这里就不花费更多篇幅介绍了，毕竟这个并不算核心亮点。</p><h3 style="margin-left:!important;">支持管理日程、待办事项、剪贴板历史等</h3><p style="margin-left:!important;">Raycast 对接了不少第三方应用的功能服务，也包括 macOS 系统自带的日程查看以及待办事项管理，这些所能实现的操作在设置中都可以直接看到，可手动选择关闭。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/ed5dfd4cd43398aa9313919379122dd2" alt="https://img.qikepai.cn/blog/2020/11/OSae9l.gif"></figure><p style="margin-left:!important;">不过同样是系统应用，通过 Raycast 可以查看、创建待办事项，而日历日程却只能查看，无法通过 Raycast 新建。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/ccb6c3822592635746a8a48242f3db74" alt="https://img.qikepai.cn/blog/2020/11/FEMAP6.jpg"></figure><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/07b5902cdaa5e5746e02b6c982462576" alt="https://img.qikepai.cn/blog/2020/11/bZ9nh3.jpg"></figure><p style="margin-left:!important;">待办事项同步 macOS 的提醒事项，可以查看、勾选已完成的目标事项，也可以自由创建。直接可以在 Raycast 中完成，无需单独打开提醒事项，效率明显提升了不少。</p><p style="margin-left:!important;">剪贴板历史记录算是 Raycast 给我的一个小小惊喜，这是Raycast本身自带的小功能。关于剪贴板管理器，我之前也用过一段时间的 Paste，但发现自己其实用到的并不多，没必要单独开一个软件持续后台，另外考虑到云端同步的隐私安全，Paste 我就并没有用很久。而通过Raycast 搜索「Clipboard History」，能够直接查看近期的剪贴板记录。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/16a3c365297b329aaf66bca2b2b64e9a" alt="https://img.qikepai.cn/blog/2020/11/LnaTZD.jpg"></figure><p style="margin-left:!important;">手动数了一下，Raycast 能够保存 50 条最近的历史记录，而且还可以选中部分历史复制内容置顶。至于隐私问题应该不用担心，Raycast 本身所有的数据都加密保存在本地，即便对接一些第三方 API 服务也是直接传送到对应云端，并不存在「中间商」。</p><h3 style="margin-left:0px;">接入第三方服务高效协作</h3><p style="margin-left:!important;">如之前所言，Raycast 主要面向开发人员。目前 Raycast 已经接入了GitHub、Jira、G Suite、Linear、Asana、Zoom 等服务，能够快速完成特定操作。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/13780c80cf54669fc6c004ce468f3b65" alt="https://img.qikepai.cn/blog/2020/11/3IqgI1.jpg"></figure><p style="margin-left:!important;">用户需要通过 OAuth 协议登录指定服务，已完成自有账号内容的双向同步。</p><p style="margin-left:!important;">不过很遗憾，我并不是程序员，不在 GitHub 中处理开发任务，所以没办法展示，你可以查看 <a href="https://raycast.com/extensions/github" target="_blank">官方演示视频</a> 查看具体用法，功能上还是表现地很直观的，几乎无需打开浏览器网页。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/b1ccc84713ae75499d5733d852ecc52e" alt="https://img.qikepai.cn/blog/2020/11/IYbjN4.jpg"></figure><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/0af9e8cd3ef391ab0ef01e9705fdd83f" alt="https://img.qikepai.cn/blog/2020/11/KMO5lv.jpg"></figure><p style="margin-left:!important;">同样，Zoom 也需要完成登录，才能在 Raycast 中创建会议、查看待参加会议等，只是加入会议时需要调用本地 Zoom 客户端接入。</p><p style="margin-left:!important;">目前看来，Raycast 对目前已有的第三方协作服务的整合还是比较深入的，能够直接在 Raycast 上完成操作，而省去了来回切换网页或者工具软件的繁琐。</p><h3 style="margin-left:0px;">系统快捷设置，支持脚本命令</h3><p style="margin-left:!important;">日常使用电脑，可能经常会需要调整一些系统设置项，例如音量调节、休眠、锁屏或者深色模式切换等等，有快捷按键的还好，更多的是需要进入设置中去找，这个过程本身就会比较浪费时间。所以不少用户会通过第三方工具来完成，例如 <a href="https://sspai.com/item/77" target="_blank">One Switch</a> 等。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/980ba9e38f0dac18bddb9bf219a95967" alt="https://img.qikepai.cn/blog/2020/11/NDXGs6.jpg"></figure><p style="margin-left:!important;">Raycast 本身内置了一些系统功能调节，同时支持加载命令脚本，意味着能够将很多较为隐秘的系统设置融入 Raycast 实现快捷操作。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/5fed6815a564a939964dcc7992e9d146" alt="https://img.qikepai.cn/blog/2020/11/Efyxf5.jpg"></figure><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/cfed94fc7d8b51a2a74ca5bdfe927b70" alt="https://img.qikepai.cn/blog/2020/11/UcqA8T.jpg"></figure><p style="margin-left:!important;">而通过脚本命令还能实现 Raycast 没有内置的一些系统功能，添加其它一些快捷操作。由于我使用时间并不长，所添加的第三方脚本命令并不多，唯一用得最多的就是「深色模式快捷切换」。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/fd7b87844ea7d190638efa9c80294e97" alt="https://img.qikepai.cn/blog/2020/11/Z3vSSt.jpg"></figure><p style="margin-left:!important;">如果你觉得用搜索的方式还不够快，你可以单独设置快捷键，真正实现一键切换。</p><p style="margin-left:!important;">Raycast <a href="https://github.com/raycast/script-commands/blob/master/extensions.md" target="_blank">提供</a> 了大量的脚本命令可供直接安装，大家可以根据需要自行添加，有能力的也可以自己 <a href="https://github.com/raycast/script-commands" target="_blank">参考规范</a> 编写。</p><h3 style="margin-left:0px;">小功能：资讯浏览、计算器、汇率转换、时间查询等</h3><p style="margin-left:!important;">Raycast 还集成了一些小功能，这些在设置中并不能直接看到，所以阅读 <a href="https://www.notion.so/Raycast-Manual-d5c85a7694dc4e4088b8b93557ea6d2d" target="_blank">手册</a> 彻底了解Raycast还是很有必要的。</p><p style="margin-left:!important;">资讯浏览功能算是隐藏的小彩蛋，不过 Raycast 目前只内置有 Hacker News 的资讯源，能够查看最新的三十条资讯标题，如果看到有兴趣的再点击跳转网页查看。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/31449ecae920679eaafe6bec39a52655" alt="https://img.qikepai.cn/blog/2020/11/fd3NSI.jpg"></figure><p style="margin-left:!important;">类似的资讯浏览方式，在之前使用的 Here 应用中见到过，类似 RSS 订阅。如果 Raycast 这个功能能够支持自定义，就能够自由添加更多新闻源，对于我这种经常关注资讯的还是挺有用的，毕竟大部分的快资讯看看标题就能知道有没有价值了。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/a1332a9c094d079d276d587a5d2aab9f" alt="https://img.qikepai.cn/blog/2020/11/xr894v.jpg"></figure><p style="margin-left:!important;">计算器、汇率转换、时间查询……Raycast似乎还在继续增加很多小功能，不知道这些有没有能吸引你。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/7ce814905c8a338e88dcf7ddb124f489" alt="https://img.qikepai.cn/blog/2020/11/XQrZQN.jpg"></figure><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/29e5dc0471c840884182ed6d8f1ec39b" alt="https://img.qikepai.cn/blog/2020/11/6yCEfL.jpg"></figure><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/09/article/2c33eda2128690669b34cb53de694796" alt="https://img.qikepai.cn/blog/2020/11/4JthBe.jpg"></figure><h2 style="margin-left:0px;"><strong>Raycast 会成为下一款「神器」吗？</strong></h2><p style="margin-left:!important;">使用 Raycast 不到一个星期，显然觉得还有很多东西我并没有能深刻体验到，但现在仅有的一些已经足够让我惊喜。</p><p style="margin-left:!important;">Raycast 和 Alfred 确实存在很多相似之处，但 Raycast 对第三方服务的整合更加深入，包括操作视图、信息展示更详细，除了本身涵盖的一些系统快捷设置之外，还可以通过命令脚本扩展，可玩性大大增强。想到这里，我觉得聚焦（Spotlight）要在系统设置里长眠了。</p><p style="margin-left:!important;">关于 Raycast 得收费计划，开发团队也已经声明了，目前公测阶段会保持免费，后期会有针对高级用户和团队的付费模式，核心功能仍然保持免费。在 macOS 版本正式上线之后，Raycast 也会逐渐支持 Windows 和 Linux 端，这对广大开发人员来说算是大好消息。</p><p style="margin-left:!important;">目前来看，Raycast 有足够的潜力成为下一款效率神器。但对于国内用户而言，如果不加入中文支持便捷性会大打折扣，单纯通过英文搜索（不支持拼音）对于国内用户着实不够友好。被许多人称道的 Notion 至今还没实现中文化，Raycast 目测也还有很长的路要走。</p><p style="margin-left:!important;">你可以在 <a href="https://raycast.com/" target="_blank">官网</a> 下载 Raycast。</p><p style="margin-left:0px;">&gt; 下载少数派&nbsp;<a href="https://sspai.com/page/client">客户端&nbsp;</a>、关注&nbsp;<a href="https://sspai.com/s/J71e">少数派公众号&nbsp;</a>，发现更多实用 App 📱</p><p style="margin-left:0px;">&gt; 实用、好用的&nbsp;<a href="https://sspai.com/mall/class/28" target="_blank">正版软件</a>，少数派为你呈现&nbsp;🚀</p><p>© 本文着作权归作者所有，并授权少数派独家使用，未经少数派许可，不得转载使用。</p>
+➜iPhone 12 Pro 的激光雷达能做哪些有趣的事？
+https://sspai.com/post/63498	23311
+<h3 style="margin-left:0px;"><strong>Matrix 首页推荐</strong></h3><p style="margin-left:0px;"><a href="https://sspai.com/matrix">Matrix</a> 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。</p><p style="margin-left:0px;">文章代表作者个人观点，少数派仅对标题和排版略作修改。</p><hr><p style="margin-left:0px;">iPhone 12 Pro 和 iPad Pro 2020 上新搭载的那颗<strong>激光雷达扫描仪（LiDAR）</strong>究竟能做什么？本文将从一个实验讲起，向你展示其在 3D 扫描、AR 增强现实、 Unity 游戏、3D 打印领域的联动。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/11/07/95cb4cf8df6597fe91f66bbe2a92b749.jpg"></figure><p style="margin-left:0px;">为了探究这个问题，我向附近的小商店 Quick and Convience 寻求帮助。在店主 Andy 的允许下，我使用激光雷达扫描了他的商店。我将通过这次实践，向你反馈雷达传感器的真实使用体验。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/11/07/978d34b2280f8e6837745f05727e17eb.jpg"></figure><h2 style="margin-left:0px;">激光雷达扫描仪</h2><p style="margin-left:0px;">根据 Apple 官方介绍，激光雷达扫描仪具备纳秒级速度。它可测量激光触及物体后反射回来所用的时间，这样就能绘制出你所处空间的深度图。简单来说，这是一颗深度测量镜头，可以完成瞬间测距工作。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/11/07/d49ef0f4a49a9a07485827938405a4ad.png"></figure><p style="margin-left:0px;">测距结果不但可以被用于AR 场景的迅速定位、夜间成像的对焦、相片合成时的背景虚化，也可以提取其原始数据分析周围场景。</p><p style="margin-left:0px;">AR 的使用情况我在另一篇文章详细讲过，若你感兴趣可以去阅读「<a href="https://sspai.com/post/63116" target="_blank">AR：未来，即将到来</a>」。本文进行的这项实验，考验的就是其最原始的本领，周边场景的完整测绘能力。</p><h2 style="margin-left:0px;"><strong>扫描到的信息</strong></h2><p style="margin-left:0px;">从货柜开始，打开雷达传感器进行扫描，看到的是如下的场景。从图中你会发现，雷达传感器与肉眼不同，它看到的只有远近关系而没有材质。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/11/07/ddae54b0f68ba5ba6c7021e20288fd97.jpg"></figure><p style="margin-left:0px;">无人汽车上使用的雷达往往能识别一百米左右的距离。但受限于机身尺寸和需求差异，iPhone Pro 和 iPad Pro 上的雷达传感器只能识别几米的距离。上图中，你可以看到深度信息只包含镜头周边的场景，过远的地方则无法识别。</p><p style="margin-left:0px;">那我们怎么才能扫描整个场景呢？答案是陀螺仪和网格系统，iPhone 会通过陀螺仪来对设备姿态进行记录。当扫描开始后，它会通过一套网格系统来记录被拍摄物品所处的位置。如下图所示，便是拍摄过程中的网格视图。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/11/07/839a5f38ccf23e6def6edb79d4e8123e.jpg"></figure><p style="margin-left:0px;">扫描到的信息是无数的位置关系。为将这些信息变成可用的模型，我们可以使用多边形网面图，它也被称作 Mesh。如下图所示，货柜被进一步处理成一个个三角形组成的一张网。这个网所具备的凹凸代表的便是真实世界中物品所具备的形状和深度关系。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/11/07/3bdba4799417c06578efe12a382622b5.jpg"></figure><p style="margin-left:0px;">除了深度信息外，最后一步需要获取的便是从摄像头拍照。这一步与雷达传感器无关，使用的是设备上的普通摄像头，用于记录场景的材质 Texture。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/11/08/f9641da834cc0736f473a639575c5b2f.jpeg"></figure><h2 style="margin-left:0px;"><strong>信息组合之后</strong></h2><p style="margin-left:0px;">上一小节所探讨的是雷达传感器创建周边场景所需要技术元素。用网格图综合这些信息后，你便可以得到整个商店的完整深度信息图。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/11/07/cecc6d8e06a9d904639d706968edcea5.jpg"></figure><p style="margin-left:0px;">将这些深度信息组合所得的网面图所得三角填充基础色，得到结果如下图所示。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/11/07/96fcbcd1daf4fdc247e6fed3f2d40c3e.jpg"></figure><p style="margin-left:0px;">最后将拍到的图片根据位置一一还原到扫描到的场景中，会得到完整的，带有纹理的图片。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/11/07/5f5e27086ca9cafb90d322bee52f667a.jpg"></figure><h2 style="margin-left:0px;"><strong>最终结果</strong></h2><p style="margin-left:0px;">稍微对上图所得的 3D 模型进行边角处理，得到的完整模型如下。这便是 iPad Pro 或者 iPhone 12 激光雷达扫描仪配合普通摄像头所看到的世界。下图由 928 张图片合成所得，灰色区域并非合成失败，而是我自己没记住那些地方扫了那些没扫，最终被不小心遗漏。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/11/07/52d5d5ab8d1ffcf2a2d789614b375a29.jpeg"></figure><p style="margin-left:0px;">若你想下载这份扫描结果，可以访问<a href="https://www.legolas.me/ar-scene" target="_blank">我的网站 - AR 分页</a>。分享的文件为 usdz，下载大小为 25MB。当你在 iPhone 或 iPad 上下载该文件时，设备会自动使用 AR 模式将其打开。本文所使用的扫描软件为「3D Scanner App」，仅支持配有 LiDAR 的设备使用。</p><h2 style="margin-left:0px;"><strong>激光雷达与 AR 相结合</strong></h2><p style="margin-left:0px;">得到成品图之后，我和老板进行了简单探讨。我们认为成品模型所具备的效果很像早些年网游里的材质贴图，当然雷达扫描仪不负责纹理这块，而且现阶段软件对图片合成的效果还有很大提升空间。</p><p style="margin-left:0px;">如果把模型用 AR 展示出来会怎么样？这样琢磨着，我将商店模型用 AR 放置在了小商店的入口处。得到的效果如下图，把玩间忽然间有一种很梦幻的感觉，小场景中也有货架、房顶、商品。一时间商店中好像出现了一个小人国，有一种动画短片里镜头深入，又见同一个场景的轮回感。</p><iframe class="ss-videoIframe" src="//player.bilibili.com/player.html?bvid=BV1qT4y1F79G"> </iframe><p>&nbsp;</p><p style="margin-left:0px;">若你想下载这份扫描结果，可以访问<a href="https://www.legolas.me/ar-scene" target="_blank">我的网站 - AR 分页</a>。分享的文件为 usdz，下载大小为 25MB。当你在 iPhone 或 iPad 上下载该文件时，设备会自动使用 AR 模式将其打开。本文所使用的扫描软件为「3D Scanner App」，仅支持配有 LiDAR 的设备使用。</p><h2 style="margin-left:0px;"><strong>激光雷达与 3D 打印相结合</strong></h2><p style="margin-left:0px;">既然激光雷达具备 3D 扫描的能力，是否有可能使用它扫描周边场景，接着直接将扫描到的模型用 3D 打印出来呢？为了验证目前 3D 扫描的精度，我找到了几个最近打印出来的 3D 模型，用于扫描测试。设想很简单，如果 3D 扫描仪有能力精确扫描出 3D 打印的模型，那么扫描到的模型便可以被用在 3D 打印中。</p><p style="margin-left:0px;">下图是艺术家周远玉设计，我参与制作的 3D 打印模型，用于对比展示。这张照片以 AirPods Pro 作为参照物，用雷达扫描仪扫描。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/11/07/eb85ca31909fde5cc38ea9cff15fd1ad.jpg"></figure><p style="margin-left:0px;">上图中，打印出的象牙的直径约为 0.2 毫米，雷达传感器的 3D 扫描远无法到达这个精度。作为较大对照物的树干高度约为十厘米，而扫描仪也无法捕捉其表面细节。所得结论，现阶段 iPhone Pro 或 iPad Pro 所配置的激光雷达的精度还不够，尚不足以用于扫描模型以用于 3D 打印。</p><p style="margin-left:0px;">iPhone 前端用于 Face ID 的也是激光雷达，为什么其精度可以被用于安全扫描呢？这是因为虽然二者同属于激光雷达扫描仪，但 Face ID 所投射出的点阵主要用于面部识别，精度更高，但识别范围相对较近。而 iPhone 或 iPad 背后的雷达传感器投射范围较大，但精度相对较低。下图左侧为后置激光雷达传感器，右侧前置是 Face ID。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/11/07/4e050abe9d81d58961814ead56c00f87.jpeg"></figure><p style="margin-left:0px;">若你对 3D 打印的现状、原理及选购方法感兴趣，可以关注我。未来我会写一篇 3D 打印的回答，介绍下图中的光敏树脂打印及固化机， 并对比讨论传统的热熔 3D 打印机，到时会放出一些看似不可思议的图和视频。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/11/07/e34eb05a09b363baa85b5714ef4f2432.jpg"></figure><h2 style="margin-left:0px;"><strong>激光雷达与 Unity 游戏结合</strong></h2><p style="margin-left:0px;">既然已经通过激光雷达获得了 3D 的商店图模型，如果直接将扫描到的场景用于游戏会怎么样？基于这个想法，我将 3D 模型导出，重整了材质纹理，如下图所示。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/11/07/e722a8c78517d96569686f3e5b737a0d.jpg"></figure><p style="margin-left:0px;">接着，我将这些新获得的素材放入了游戏引擎 Unity 2020 中，制作了一个卡丁车游戏场景，如下图所示。商店自身场景比较暗，我给赛车加了大灯，并给场景添加了光源。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com//2020/11/08/3e011cc5c8b266b30821ae67dcf66367.jpeg"></figure><p style="margin-left:0px;">在商店里跑一圈，视频如下。不难看出，3D 扫描所获取的模型局限性还很大，存在多边形过多、纹理素质差等问题，因此在未来很长一段时间，用 iPhone 扫描的 3D 模型都无法替换传统的游戏模型制作方式。不过可以用 iPhone 扫描场景，并在商店中开卡丁车，依旧是个很有趣的尝试！</p><iframe class="ss-videoIframe" src="//player.bilibili.com/player.html?bvid=BV11T4y1F7f8"> </iframe><h2 style="margin-left:0px;"><strong>总结</strong></h2><p style="margin-left:0px;">本文中，我探索了激光雷达在 3D 场景、AR、3D 打印、游戏中的可能性。激光雷达现阶段仍存在局限性，如精度不完美，识别距离一般。基于这些遗憾，在 AR 应用中，整个世界都被增强的场景暂时无法见到。</p><p style="margin-left:0px;">我曾经认为雷达传感器仅对于 AR 有帮助，实则不然，这个传感器的出现会在未来数年影响许多领域。扫描仪速度极快，在手机上就能对周边环境进行感知的能力更是前所未有。看到熟悉的商店变为手机中的模型、游戏里的场景，让人惊叹技术发展之快的同时，更是对未来充满遐想。</p><p style="margin-left:0px;">试想未来的一天，大家不用再拘泥于佩戴者 3D 眼镜去电影院感受伪 3D 画面，而是随时可以掏出手机，像拍视频一样的拍摄周边场景分享给朋友。朋友收到 3D 扫描后，直接用自身佩戴的 AR 眼镜将你看到的场景完整还原在自己的生活中。而这，只是众多畅想之一。</p><hr><p style="margin-left:0px;">未来我也将在应用中继续探索这些新能力的应用，若你也有想法想要实现，可以订阅「<a href="https://sspai.com/series/147" target="_blank">给创作者的 iOS 独立开发指南</a>」，它含设计、构思、编程、推广、商业化等内容。无论你是不熟悉编程领域的新人，还是熟知技术的开发者，都能在本教程中扩充视野、补充所缺的知识，最终制作出属于你的应用程序。</p><p style="margin-left:0px;"><strong>作为作者福利，我申请了额外的优惠券给你，可以与正在进行的双十一优惠叠加使用，欢迎</strong><a href="https://sspai.com/coupon/f9c7bbf5db70dedd2b0439f0898f3876" target="_blank"><strong>点击领取</strong></a><strong>。</strong></p><p>&gt; 下载少数派 <a href="https://sspai.com/page/client">客户端</a>、关注 <a href="https://sspai.com/s/J71e">少数派公众号</a>，让你的数字生活更精彩 🎉</p><p>&gt; 特惠、好用的硬件产品，尽在 <a href="https://shop549593764.taobao.com/?spm=a230r.7195193.1997079397.2.2ddc7e0bPqKQHc">少数派 sspai 官方店铺</a> 🛒</p><p>© 本文着作权归作者所有，并授权少数派独家使用，未经少数派许可，不得转载使用。</p>
+➜双十一的最后一天，这些「史低价」产品错过就要等来年了｜Pi Store 11.11
+https://sspai.com/post/63347	25355
+<p>
+和 11 月 1
+日一样，双十一的最后一天也是<strong>没有套路、直接优惠价、再满减</strong>的超低价促销。11
+月 11
+日是你今年最后一次用史低价买到这些产品的时刻，现在就是最佳的入手时机，不但早买早享受而且还打折！<br>
+</p>
+<p>
+促销价格<b><font color="#008000">&nbsp;11 月 11 日&nbsp;00:00 开始生效</font></b>，记得提前加入购物车。
+</p><figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false"><img src="https://cdn.sspai.com/2020/11/10/cd0063dea0eaf28afdb2169d372948ae.png" alt=""></figure>
+<h2 id="ss-H2-1604025143357">新周边上架限时折扣</h2>
+<h3 id="ss-H3-1604025930853">少数派 x JSAUX 20W 迷你快充充电头、充电线</h3>
+<p><strong>💰 <font color="#008000">双十一单头 ¥49</font>（原价 ¥79） ，<font color="#008000">套装 ¥79</font>（原价¥139）</strong></p>
+<p>
+<b>🛒&nbsp;</b><a href="https://item.taobao.com/item.htm?spm=a230r.1.14.91.4e7212d8ZE7boL&id=629599437406&amp;ns=1&amp;abbucket=14#detail" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买&gt;</a><strong><br></strong>
+</p>
+<p>这款充电头比苹果原装的 18W 充电头还小，充电功率却达到了 20W，可以为你的 iPhone
+12 提供更快的充电速度。双十一期间，购买充电头 + 配套充电线套装仅需
+¥79，相当于原价购入充电头还白送一条充电线。<br></p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/7362714a1240e5b46ae31b3aa0f32e01.png" alt="">
+</figure>
+<h3 id="ss-H3-1604025915863">少数派 x tomtoc 限定配色 Switch 收纳包</h3>
+<p>💰<font color="#008000"> </font><strong><font color="#008000">双十一 ¥109</font>（原价 ¥149，送少数派定制刺绣贴）</strong></p>
+<p>
+<b>🛒&nbsp;</b><a href="https://item.taobao.com/item.htm?ft=t&id=630570797977" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买&gt;</a>
+</p>
+<p>
+这次我们又和老朋友 tomtoc 搞了点新玩意给大家——限定配色 Switch
+收纳包。蓝黄配色是我派周边的年度配色：前阵子推出的 20W
+快充充电头、这次的联名收纳包、接下来要推出的键盘、单肩背包……
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/11/02/e7c9b773a5a394347f014cc6f83ff640.png" alt="">
+</figure>
+<p>
+Switch 收纳包兼顾了轻薄手感和超强保护。即使将 Switch 放在包中，厚度也仅有 4
+厘米，它的跌落测试更是通过军用标准，不用担心自己的爱机会遭受磕碰；选用的防泼水材质，更是能全方面保护你的爱机。此外，收纳包内部还提供了
+10 个卡带存储槽，方便你将喜欢的游戏随身携带。
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/ff5d913d9a05cc0a3cbb40fb89701629.png" alt="">
+</figure>
+<h3 id="ss-H3-1604025921214">
+少数派 x tomtoc 限定配色&nbsp;iPad Pro 收纳包 11 寸
+</h3>
+<p>💰<font color="#008000"> </font><strong><font color="#008000">双十一 ¥189</font>（原价 ¥239）</strong></p>
+<p>
+<b>🛒&nbsp;</b><a href="https://item.taobao.com/item.htm?ft=t&id=630879962060" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买&gt;</a><strong><br></strong>
+</p>
+<p>
+除了 Switch 收纳包外，我们这次还与 tomtoc 推出了 iPad Pro 联名款 11
+寸收纳包。iPad 收纳包同样拥有高强度的防摔抗压性能和泼水保护。
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/dec27480bd95ab8c766cec35d4328ae2.jpg" alt="">
+</figure>
+<p>
+在收纳包内部提供了让收纳控狂喜的收纳空间，除了 iPad Pro，你也能将 Apple
+Pencil、耳机、线材等物品一同收纳进去。<br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/11/02/ae37f06dea16848feea78c7946824306.jpg" alt="">
+</figure>
+<h3 id="ss-H3-1604025926263">少数派 x tomtoc H61 双肩包</h3>
+<p>💰<font color="#008000"> </font><strong><font color="#008000">双十一到手 ¥624</font>（原价 ¥699）</strong></p>
+<p>
+<b>🛒&nbsp;</b><a href="https://item.taobao.com/item.htm?ft=t&id=607457517577" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买&gt;</a><strong><br></strong>
+</p>
+<p>
+收纳控狂喜的 H61 可以完全满足你的出行收纳需求。H61 拥有 4
+仓设计，不但能容纳更多东西，还可以做到合理有效的分类。
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/c4483625b342e701f8fa204f5332885d.png" alt="">
+</figure>
+<p>
+防水表面也能应对小雨、泼溅水，不必担心因此影响背包的耐用性。人体工学肩带和背板都采用高弹加厚保护，保持肩背部的舒适干爽和无压力的背负体验。
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/51e02055319e010397677e5bd5c0a2d7.jpg" alt="">
+</figure>
+<h3 id="ss-H3-1604025198461">Bitplay iPhone 12 手机壳</h3>
+<p><strong>💰<font color="#008000"> 双十一到手 ¥228</font>（原价 ¥258）</strong></p>
+<p>
+<b>🛒&nbsp;</b><a href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.39001debpYX20D&ft=t&amp;id=629496308478" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买&gt;</a><strong><br></strong>
+</p>
+<p>
+如果你经常外出旅游或是个手机爆破达人，那么多功能的 Bitplay iPhone 12
+手机壳或许会是你保护手机的好选择。手机壳上带有多功能自立登山扣，既可以挂在背包防丢，也可以轻松转换成手机支架。
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/d102e6d0f8d3b32cc722a1c8a74d33a2.jpg" alt="">
+</figure>
+<p>
+为了应对出行途中可能发生的意外，Bitplay 手机壳采用了隐形防摔气囊 +
+四面全包裹设计，达到了军规级防摔。手机壳上的硅胶粘垫、背盖和登山扣环均为可拆卸替换式设计，满足你的更多个性化需求。
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/f0c4d55b1156d1a6672b0cf294e492c7.jpg" alt="">
+</figure>
+<h3 id="ss-H3-1604025936479">少数派 x&nbsp;平底锅揽件指南鼠标垫</h3>
+<p><strong>💰<font color="#008000"> 双十一 ¥45</font>（原价 ¥49）</strong></p>
+<p>
+<b>🛒&nbsp;</b><a href="https://item.taobao.com/item.htm?ft=t&id=630234336612" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买&gt;</a><strong><br></strong>
+</p>
+<p>平底锅揽件指南的新款鼠标垫选择了「最强防具」平底锅作为主要图案。</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/35f0387c8c53f2cf7ec4d54b3795631b.jpg" alt="">
+</figure>
+<p>
+在尺寸方面，它与我们先前推出的 小组件鼠标垫 相同，均为
+400*300*4mm。在材质上，新款鼠标垫采用了与像素吃鸡款鼠标垫相同的面料，具有一定阻尼，提升游戏手感。
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/11/02/b506b91719e41ce41131cb84279a2a09.jpg" alt="">
+</figure>
+<h3 id="ss-H3-1604025172638">少数派 x 吻吻鱼联名玻璃随身杯</h3>
+<p><strong>💰<font color="#008000"> 双十一 ¥98</font>（原价 ¥129，送 10 元付费内容优惠券）</strong></p>
+<p>
+<b>🛒&nbsp;</b><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-22968806714.50.587b61f0wpYjRb&id=626951548085" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买&gt;</a><strong><br></strong>
+</p>
+<p>让大家久等了，这款前阵子推出的定制随行杯终于有现货啦。</p>
+<p>
+随行杯采用了玻璃材质，配合上硅胶杯身套，不再会像 Rivers
+联名杯那样被认为是一次性用品而丢掉。随行杯容量为 365ml
+刚好可以装下一份中杯咖啡。
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/19e50b1e1bd0039ff363d388365d114c.jpg" alt="">
+</figure>
+<p>
+高硅硼玻璃的杯身做到了冷热坚固，耐冷 -20 度、耐热 150 度，<span style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+">硅胶圈套既能隔热也能隔冷</span>。配合上怎么甩也不漏水的防漏杯盖，相信它可以成为你出门在外装饮品的好伙伴。
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/e062ba2f3c4bb02425b84a8ed3ea796c.jpg" alt="">
+</figure>
+<h3 id="ss-H3-1604025165637">少数派 x SuperTank Pro 定制版</h3>
+<p><strong><font color="#008000">💰 双十一到手 ¥898</font>（原价 ¥1168）</strong></p>
+<p>
+<b>🛒&nbsp;</b><a href="https://item.taobao.com/item.htm?ft=t&id=630566261997" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买&gt;</a><strong><br></strong>
+</p>
+<p>
+SuperTank Pro 拥有 26800mAh 大容量电池，支持 100W 快充，只需 1 小时 45
+分即可完成自充，能够满足你一整天的用电需求。配备了 4 个 USB-C 接口，可以同时为
+4 台设备提供快充，138W 的输出总功率不但能充手机，甚至还能同时给笔记本供电。
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/11/02/3884fab2bfa3fe3a29be9bb75f0dfef1.jpg" alt="">
+</figure>
+<p>
+少数派定制版 SuperTank Pro 不但拥有独特的开屏 Logo
+图案，现在购买还送恐慌贴纸、USB-C to Lightning 数据线。<br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/bbddb8c847b3a8d455c0bb84400daab2.png" alt="">
+</figure>
+<h3 id="ss-H3-1604025182398">八位堂街机手柄</h3>
+<p>
+<strong>💰 <font color="#008000">双十一标准版到手 ¥499</font>（原价 ¥499）</strong>
+</p>
+<p>
+<b>🛒&nbsp;</b><a href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.16c11debP4oLqT&ft=t&amp;id=630058601671" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买&gt;</a><strong><br></strong>
+</p>
+<p>
+八位堂的街机手柄能够带你回到在街机上与好友酣战的时光。手柄支持蓝牙、2.4G
+无线及有线三种连接方式，并且还能兼容 Switch、PC 和 Steam
+游戏。手柄支持自定义连发按键，帮你解决当年未通的难关。如果你是一个怀旧党，相信这款手柄能给你带来新鲜而熟悉的游戏体验。
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/8314080f5698bad6f454f200d54b4742.png" alt="">
+</figure>
+<h3 id="ss-H3-1604025185948">HHKB 键盘 2020 款</h3>
+<p>
+「双十一」也迎来了 HHKB HYBRID Type-S
+的首次打折，这款备受好评的键盘对于常用键盘的程序员、文字工作者来说，算得上是一款工作利器。键盘支持蓝牙
+/
+有线双模连接，支持多平台统一输入体验，即使你经常需要切换平台，也不必反复确认键位。<br>
+</p>
+<p>
+HHKB 下单赠送价值 99 元的<a href="https://item.jd.com/52137492200.html" target="_blank" class="insert-link">
+鼠标键帽套装</a>（颜色随机）、C to C 数据线、拔键器和清洁工具。
+</p>
+<h4 id="ss-H4-1604025188112">HYBRID Type-S 双模静音版</h4>
+<p><strong>💰 <font color="#008000">双十一到手 ¥2399</font>（原价 ¥2899）</strong></p>
+<p>
+<b>🛒&nbsp;</b><a href="https://item.taobao.com/item.htm?ft=t&id=630571137735" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买&gt;</a>
+</p>
+<p>
+Type-S 通过 60 键的布局实现了 104
+键的功能，并且双手无需离开主键区，输入效率更高。键盘采用了非接触式静电容，按键声音更小，更耐用。厂商精心调校的压力曲线也能让你的每一次敲击体验更好。
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/e1aff95d166991b95b5ce2e6012a98a0.jpg" alt="">
+</figure>
+<h4 id="ss-H4-1604025192262">新款 HYBRID 双模版</h4>
+<p><strong>💰<font color="#008000"> 双十一到手 ¥2288</font>（原价 ¥2688）</strong></p>
+<p>
+<b>🛒&nbsp;</b><a href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.368f1debrAD3E9&ft=t&amp;id=605369550468" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买&gt;</a><strong><br></strong>
+</p>
+<p>
+HHKB 的新款 HYBRID
+键盘采用了非接触式静电容，在降低噪音的同时，还可以提升键盘的耐用度。按键采用了活塞式柱轴与榫卯式结构，既保证了按键手感，也让键帽安装得更加稳固。
+</p>
+<p>
+新款 HYBRID 支持蓝牙 / 有线双模连接，可以
+通过快捷键快速切换连接模式及设备。你还可以通过软件自定义按键，打造专属于你的键盘。
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/dd42c204ca64be3ed5885c3bdefe85cb.jpg" alt="">
+</figure>
+<h4 id="ss-H4-1604025195362">新款 CLASSIC 有线版</h4>
+<p><strong>💰<font color="#008000"> 双十一到手 ¥1699</font>（原价 ¥2099）</strong></p>
+<p>
+<b>🛒&nbsp;</b><a href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.16c11deb8jAehe&ft=t&amp;id=610294901035" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买&gt;</a><strong><br></strong>
+</p>
+<p>
+新款 CLASSIC 有线版键盘在按键及手感方面，与 HYBRID
+采用了相同的非接触式静电容技术，并且也拥有精心调校过的压力曲线。不过相比于
+HYBRID，CLASSIC 不支持蓝牙连接和自定义按键，更适合对键盘没有极致需求的用户。
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/6e67f2c9af68763b4d7568b28b4c23f8.jpg" alt="">
+</figure>
+<h3 id="ss-H3-1604025204232">Nomad 18 线圈无线充电板</h3>
+<p><strong><font color="#008000">💰 双十一到手 ¥1389</font>（原价 ¥1599）</strong></p>
+<p>
+<b>🛒&nbsp;</b><a href="https://item.taobao.com/item.htm?ft=t&id=630090931280" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买&gt;</a><strong><br></strong>
+</p>
+<p>
+如果你拥有两台手机，Nomad 18 线圈无线充电板可以同时满足你给 AirPods
+和两个手机充电的需求。充电板表面采用更显质感的牛皮材质，能够有效促进空气流通，减少热量。
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/56395e9bfb62e88229637249dc75b798.png" alt="">
+</figure>
+<h3 id="ss-H3-1604025207013">飞傲 FD1 入门 HIFI 耳机</h3>
+<p><strong>💰 <font color="#008000">双十一到手 ¥358</font>（原价 ¥398）</strong></p>
+<p>
+<b>🛒&nbsp;</b><a href="https://item.taobao.com/item.htm?ft=t&id=627740070063" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买&gt;</a><strong><br></strong>
+</p>
+<p>
+音频领域内的知名国产品牌，飞傲的耳机一直以相对平民的价格和不俗的音质吸引了大批用户。FD1
+的动圈单元采用了 N50
+双磁路设计，磁通量比传统单磁路有所提升，从而使低音效果更加优秀。耳机采用了人体工学设计，单耳重量仅
+4.5g，保证了佩戴的舒适度。
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/5842a8bddcbf8ce9a8c518c36d6c2720.jpg" alt="">
+</figure>
+<h3 id="ss-H3-1604025119954">除了新周边，这些产品也在超低价等你入手</h3>
+<p style="text-align: center;">💡 扫描二维码买 ScreenBar</p>
+<p><img src="https://cdn.sspai.com/2020/11/10/af7ebeb512e3bc4510e22d19239f081f.png" alt="" width="400"></p>
+<p style="text-align: center;">
+🔗&nbsp;<a href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.3d2c1debYtXdqj&ft=t&amp;id=619029732215" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 incharge&gt;</a>
+</p>
+<div>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/bc270b5b986659c886611aabfe253dd8.png" alt="" width="400">
+</figure>
+</div>
+<p style="text-align: center;">
+📁&nbsp;<a href="https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-22968806719.25.5c106a59Zs8jai&id=613461349762" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买少数派定制单肩包&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/c8ad3362f7202842dc6a572469c50eea.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">⚡️&nbsp;<a href="https://item.taobao.com/item.htm?ut_sk=1.Xno30da6wY8DAG2DmqVV6Bas_21380790_1604041737140.Copy.1&id=624347669005&amp;sourceType=item&amp;price=198&amp;suid=A95EB5F7-FC20-4BC6-BE2E-86E684A4648E&amp;shareUniqueId=4778634695&amp;un=ceca663a57f803fd6c63b333dcb4f84f&amp;share_crt_v=1&amp;spm=a2159r.13376460.0.0&amp;sp_tk=aGtWVGNqY1ZsRHA=&amp;cpp=1&amp;shareurl=true&amp;short_name=h.4ciYJeJ&amp;bxsign=scdFRZoj5VYLT7zoqHRgLyNfUo_jMUEDkEQO-K2nR-w9Hyw-WhRqYdUOayWrXQVa9_U357kCTnlHP-j9Y3ntVeBR0-ZdPYXuD_CceGmHnl3yWY&amp;sm=df974b&amp;app=macos_safari" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买征拓 S3 多口快充&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false"><img src="https://cdn.sspai.com/2020/11/10/d22ebcd04a10991ee9cbf9085e72119b.png" alt="" width="400"></figure><p style="text-align: center;">
+🧴&nbsp;<a href="https://item.taobao.com/item.htm?ft=t&id=588092227242" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 AM 清洁套装&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/1f1eaaa13696d65d3a0636cd05c44e9b.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+⚡️&nbsp;<a href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.45e51debqbPw4e&ft=t&amp;id=624918843222" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买征拓移动电源&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/d5231fd3fe5ef95a241b4caf79acd1ec.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+🔭&nbsp;<a href="https://sspai.taobao.com/search.htm?orderType=&viewType=grid&amp;keyword=iQunix&amp;lowPrice=&amp;highPrice=" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 iQunix 支架&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/e4c3566ec2771af3fed8ce78db2975e6.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+📱&nbsp;<a href="https://item.taobao.com/item.htm?ft=t&id=610113479598" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 MOFTX 手机支架&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/d34c71e4a7a697e930bb562c5341c8a0.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+🧮&nbsp;<a href="https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-22968806714.9.3d0561f0vRNFC9&id=624688070655" target="_blank" class="insert-link" style="
+font-style: inherit;
+font-variant-caps: inherit;
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+">点这买搜拾洞洞板&gt;</a>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/85fa6f85eb00977fdbf8a850b256918d.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+👀&nbsp;<a href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.45e51debqbPw4e&ft=t&amp;id=627119608644" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买眼罩&gt;</a>，<a href="https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=3383333194&activityId=6245401711be4d9089d328ba7141cfb5" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+text-align: left;
+">先领券再下单&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/432609d6e49b5b98e75234eced329a0c.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+🎮&nbsp;<a href="https://item.taobao.com/item.htm?spm=a230r.1.14.16.7fd11e4aIye0Cs&id=627109944443&amp;ns=1&amp;abbucket=14#detail" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 Genki Dock&gt;</a>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/cbe38ec1f5dabfc67fdb9bffe90cf103.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+🖱️&nbsp;<a href="https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-22968806719.73.5c106a59Zs8jai&id=627270409949" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买小组件鼠标垫&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/a005e9d802269d23e60d1968abe5270c.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+🗄&nbsp;<a href="https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-22968806714.34.38f961f0uOvqxJ&id=588720592618" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 tomtoc 内胆包&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/f7f4f99f628ef4074ab76dfd91cbe9e1.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+⚗️&nbsp;<a href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.45e51debqbPw4e&ft=t&amp;id=624198948557" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 MAJEXTAND 电脑支架&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/a3d1cd3bda0dffb6a8089b8e693e954c.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+🧺&nbsp;<a href="https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-22968806714.9.335a61f0LgNSFU&id=627637984320" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 bgest 真空压缩袋&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/acb79d819b7b121a53e8d1664b36e131.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+🌂&nbsp;<a href="https://item.taobao.com/item.htm?ft=t&id=625683901911" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买少数派定制晴雨伞&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/7ec2a85a59397c2660373ffc661458be.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+🎧&nbsp;<a href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.45e51debqbPw4e&ft=t&amp;id=624806958468" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 SONGX 无线耳机&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/b4be3fdb95fa07f5d6a45033f49b56ab.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+🎮&nbsp;<a href="https://item.taobao.com/item.htm?ft=t&id=608898790039" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 Genki 蓝牙发射器&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/fc549ecdb149e7ce8ae21bb2f62bda8a.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+⌨️&nbsp;<a href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.45e51debqbPw4e&ft=t&amp;id=615405227033" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 NuType 机械键盘&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/c9b54c589a1f5e84c45e998018682a8d.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+🔋&nbsp;<a href="https://item.taobao.com/item.htm?ft=t&id=613451073389" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 Helper 桌面电源&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/352957df60198758661f418a726fbb4e.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+🧑🏻‍💻&nbsp;<a href="https://sspai.taobao.com/search.htm?orderType=&viewType=grid&amp;keyword=%CA%F3%B1%EA%B5%E6&amp;lowPrice=&amp;highPrice=" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买少数派定制鼠标垫&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/2bbf66c2d9eb0b6a08d9ff811dfe69b4.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+🧼&nbsp;<a href="https://item.taobao.com/item.htm?ft=t&id=585552748572" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 AM 屏幕喷雾&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/9123b7fc075d370e99a28fad2303048e.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+🎛&nbsp;<a href="https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-22968806714.18.12d661f0ZFcc8H&id=624291518773" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 SLICECHARGE 无线充电器&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/70c72abb4f467eac8b8a3253a7f100e5.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+🎚&nbsp;<a href="https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-22968806714.78.467961f0f364Wy&id=629527234436" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 SLICECHARGE 无线充电器&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/1b2427a28ee62c0279d8a315a963ebf5.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+🧊&nbsp;<a href="https://item.taobao.com/item.htm?ft=t&id=587922594809" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 AM 清洁软胶&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/da50f73bce0a29a7421258f0b435a5f2.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+⌨️&nbsp;<a href="https://item.taobao.com/item.htm?ft=t&id=596673541751" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 iQunix 机械键盘&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/d10cec738122b57fcd91282bd0a82554.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+🎩&nbsp;<a href="https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-22968806719.55.5c106a59Zs8jai&id=620862218121" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买少数派定制渔夫帽&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/ba15df7f469321722cd5e43bcb78fe90.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+👔&nbsp;<a href="https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-22968806714.9.7fee61f0CvKso9&id=620864390525" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买 Emoji T 恤&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/109b54d82d69952460f409984d8fc1b9.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+📒&nbsp;<a href="https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-22968806714.35.4b2161f022Ks6j&id=613710578861" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买少数派定制笔记本&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/99b848218479ad20909148ca7dd5f6f7.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+🧻&nbsp;<a href="https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-22968806714.9.304761f0QgvU39&id=612240689945" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买酒精湿巾&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/26531883b4cbedfdcb463e9ca76a0694.png" alt="" width="400">
+</figure>
+<p style="text-align: center;">
+📍&nbsp;<a href="https://sspai.taobao.com/search.htm?orderType=newOn_desc&viewType=grid&amp;keyword=%BB%D5%D5%C2&amp;lowPrice=&amp;highPrice=" target="_blank" class="insert-link" style="
+font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,
+'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+font-size: 16px;
+font-style: inherit;
+font-variant-caps: inherit;
+">点这买少数派定制徽章&gt;</a><br>
+</p>
+<figure tabindex="0" draggable="false" class="ss-img-wrapper custom-width" contenteditable="false">
+<img src="https://cdn.sspai.com/2020/10/30/1cee1e97116aff438bd03a711820406b.png" alt="" width="400">
+</figure>
+<p>最后，请不要客气，多买一点，买得开心。</p><p><br></p><p>© 本文着作权归作者所有，并授权少数派独家使用，未经少数派许可，不得转载使用。</p>
