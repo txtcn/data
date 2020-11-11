@@ -13,3 +13,6 @@ TikTok 的母公司字节跳动周二向一家美国上诉法院<a href="https:/
 ➜微软发布 .NET 5.0
 https://www.solidot.org/story?sid=66063	24854
 微软<a href="https://devblogs.microsoft.com/dotnet/announcing-net-5-0/">发布了 .NET 5.0</a>。新版包括了 <a href="https://devblogs.microsoft.com/aspnet/announcing-asp-net-core-in-net-5/">ASP.NET Core</a>，<a href="https://devblogs.microsoft.com/dotnet/announcing-the-release-of-ef-core-5-0/">EF Core</a>，<a href="https://devblogs.microsoft.com/dotnet/c-9-0-on-the-record/">C# 9</a> 和 <a href="https://devblogs.microsoft.com/dotnet/announcing-f-5/">F# 5</a>，.NET 库增强了 Json 序列化、正则表达式和 HTTP（HTTP 1.1、HTTP/2）的性能。Visual Studio 用户需要 Visual Studio 16.8 以上版本才能使用 .NET 5.0。 .NET 5.0 是微软统一 .NET 堆栈和生态系统的首个版本，它计划在每年的 11 月发布一个新版本，这意味着 2021 年的 11 月将会发布&nbsp; .NET 6.0。.NET 5.0 不是长期支持版，它将支持到 .NET 6.0 发布 3 个月之后即 2022 年 2 月中旬，.NET 6.0 是长期支持版本，将支持三年。<p>
+➜英特尔 SGX 再次被打败
+https://www.solidot.org/story?sid=66066	42157
+研究人员<a href="https://arstechnica.com/information-technology/2020/11/intel-sgx-defeated-yet-again-this-time-thanks-to-on-chip-power-meter/">找到了</a>新方法远程窃取英特尔 CPU 的密钥，即使 CPU 启用了 SGX（software guard extensions）。最新的攻击被称为 <a href="https://platypusattack.com/">PLATYPU</a>，能通过 Running Average Power Limit（RAPL）远程利用发动旁路攻击。RAPL 是英特尔的接口，用于监控通过 CPU 和内存的能流。研究人员发现，利用 RAPL 能获得有关指令和数据流的足够多线索，从而推断出 CPU 加载的值，泄露 SGX 保管的加密密钥，挫败 ASLR（地址空间布局随机化），建立一个秘密通道悄悄窃取数据。英特尔始于 Sandy Bridge 架构的 CPU 都存在该漏洞。<p>
