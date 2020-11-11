@@ -1,36 +1,36 @@
 ➜如何预防旧手机 24 小时不间断充电导致电池故障
 https://www.appinn.com/24-recharge-auto/	43464
 <p>越来越多的 Android <a href="https://www.appinn.com/tag/%E6%97%A7%E6%89%8B%E6%9C%BA" class="rank-math-link">旧手机</a>可以拿出来废物再利用，比如<a href="https://www.appinn.com/shuangkazhushou-sms-forward-for-android/" class="rank-math-link">短信转发</a>、比如挂一个<a href="https://www.appinn.com/rrys-in-android-phone/" class="rank-math-link">人人影视客户端</a>实现 24 小时下载，可比 NAS 什么的省钱、省事多了。</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/24recharge.jpg!o" alt="如何预防旧手机 24 小时不间断充电导致电池故障" title="如何预防旧手机 24 小时不间断充电导致电池故障 21"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/24recharge.jpg!o" alt="如何预防旧手机 24 小时不间断充电导致电池故障" title="如何预防旧手机 24 小时不间断充电导致电池故障 22"></figure></div>
 <p>这次还是 @<strong><a href="https://meta.appinn.net/u/tthy" target="_blank" rel="noopener">tthy</a></strong> 同学分享的方法，使用 <a href="https://www.appinn.com/fooview-fvfile-for-android/" class="rank-math-link"><strong>FV悬浮球</strong></a> + <strong>小米智能插座</strong>，通过监测电池电量，定时开关插座来实现，非常有意思。</p>
 <hr class="wp-block-separator"/>
 <p>以下为 @tthy 同学在论坛发布的帖子：</p>
 <h2><a href="https://meta.appinn.net/t/topic/20259" target="_blank" rel="noopener">FV自动充电/防止过充任务</a></h2>
 <p>最近趁着双11买了这个：</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/2/27f63a461c906b73afdb3a0febddd18fd4e6526b.jpeg" alt="如何预防旧手机 24 小时不间断充电导致电池故障 16" title="如何预防旧手机 24 小时不间断充电导致电池故障 22"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/2/27f63a461c906b73afdb3a0febddd18fd4e6526b.jpeg" alt="如何预防旧手机 24 小时不间断充电导致电池故障 17" title="如何预防旧手机 24 小时不间断充电导致电池故障 23"></figure></div>
 <p>准备用来监控设备功耗，以及实施一些暂时还没想出来的想法，然后突然想起小青蛙似乎非常在意手机过充导致电池故障的问题。。。</p>
 <p>那好，就先搞个自动充电以及防止过充的任务呗</p>
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://i.loli.net/2020/11/07/sYD2pOcRGV4HBM1.gif" alt="如何预防旧手机 24 小时不间断充电导致电池故障 17" width="236" height="472" title="如何预防旧手机 24 小时不间断充电导致电池故障 23"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://i.loli.net/2020/11/07/sYD2pOcRGV4HBM1.gif" alt="如何预防旧手机 24 小时不间断充电导致电池故障 18" width="236" height="472" title="如何预防旧手机 24 小时不间断充电导致电池故障 24"></figure></div>
 <p>动图是剪辑+加速过的，实际速度要慢四倍-。-</p>
 <h3>直接上任务</h3>
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/1/138845e979c42b582027a567cd63657d94f70d6b.jpeg" alt="如何预防旧手机 24 小时不间断充电导致电池故障 18" width="332" height="1496" title="如何预防旧手机 24 小时不间断充电导致电池故障 24"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/1/138845e979c42b582027a567cd63657d94f70d6b.jpeg" alt="如何预防旧手机 24 小时不间断充电导致电池故障 19" width="332" height="1496" title="如何预防旧手机 24 小时不间断充电导致电池故障 25"></figure></div>
 <p><br />这里的充电时间，得在米家app里先预设一个，至于设多久，得根据设备充电速度自己调整了。</p>
 <p>再做个自动开启的任务：</p>
 <div class="wp-block-columns">
 <div class="wp-block-column">
-<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/7/790b0187bae599bd502d083c1017fe5eed18f22a.png" alt="如何预防旧手机 24 小时不间断充电导致电池故障 19" title="如何预防旧手机 24 小时不间断充电导致电池故障 25"></figure>
+<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/7/790b0187bae599bd502d083c1017fe5eed18f22a.png" alt="如何预防旧手机 24 小时不间断充电导致电池故障 20" title="如何预防旧手机 24 小时不间断充电导致电池故障 26"></figure>
 </div>
 <div class="wp-block-column">
-<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/e/e20fd938f5b1e136e6800b223cd0199d2ae1e911.png" alt="如何预防旧手机 24 小时不间断充电导致电池故障 20" title="如何预防旧手机 24 小时不间断充电导致电池故障 26"></figure>
+<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/e/e20fd938f5b1e136e6800b223cd0199d2ae1e911.png" alt="如何预防旧手机 24 小时不间断充电导致电池故障 21" title="如何预防旧手机 24 小时不间断充电导致电池故障 27"></figure>
 </div>
 </div>
 <p>我一般都不直接在任务里写上判定条件，而是用另一个自动任务来调用。这样最后我会把所有需要自动运行的任务放在同一个文件夹，万一有那个任务莫名其妙被关了，一下就能找到。</p>
 <p>另外，判定条件也可以这样：</p>
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/9/9716545e4f9dd4e7ad00bd242dd992528420e612.png" alt="如何预防旧手机 24 小时不间断充电导致电池故障 21" width="426" height="876" title="如何预防旧手机 24 小时不间断充电导致电池故障 27"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/9/9716545e4f9dd4e7ad00bd242dd992528420e612.png" alt="如何预防旧手机 24 小时不间断充电导致电池故障 22" width="426" height="876" title="如何预防旧手机 24 小时不间断充电导致电池故障 28"></figure></div>
 <p>Android低电量状态会发系统广播。。。如果用的三星手机。。。bixby 日常就更方便了。。电量%多少都能做触发</p>
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/4/4f4c6f022155b48d534f788afa9000cb8fa16af1.png" alt="如何预防旧手机 24 小时不间断充电导致电池故障 22" width="395" height="812" title="如何预防旧手机 24 小时不间断充电导致电池故障 28"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/4/4f4c6f022155b48d534f788afa9000cb8fa16af1.png" alt="如何预防旧手机 24 小时不间断充电导致电池故障 23" width="395" height="812" title="如何预防旧手机 24 小时不间断充电导致电池故障 29"></figure></div>
 <p>虽然bixby不能触发fv自动任务，但是可以触发开启米家app，然后把fv自动任务里的触发条件设置成这样，也就完事了。</p>
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/f/f25f614bea016cf4a09bc10a79901addaaab4739.png" alt="如何预防旧手机 24 小时不间断充电导致电池故障 23" width="369" height="242" title="如何预防旧手机 24 小时不间断充电导致电池故障 29"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/f/f25f614bea016cf4a09bc10a79901addaaab4739.png" alt="如何预防旧手机 24 小时不间断充电导致电池故障 24" width="369" height="242" title="如何预防旧手机 24 小时不间断充电导致电池故障 30"></figure></div>
 <p>这个任务给扔家里跑 <a href="https://www.appinn.com/rrys-in-android-phone/" class="rank-math-link">rrshareweb</a> 的旧手机用最合适了，不过它的缺点也很明显，因为要打开app，模拟屏幕动作，所以必须保持不锁屏状态。</p>
 <p>关于这个骚操作有疑问的同学可以<a href="https://meta.appinn.net/t/topic/20259/" class="rank-math-link" target="_blank" rel="noopener">点击前往细看</a>。</p>
 <hr class="wp-block-separator"/>
