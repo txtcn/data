@@ -13,6 +13,18 @@ TikTok 的母公司字节跳动周二向一家美国上诉法院<a href="https:/
 ➜微软发布 .NET 5.0
 https://www.solidot.org/story?sid=66063	24854
 微软<a href="https://devblogs.microsoft.com/dotnet/announcing-net-5-0/">发布了 .NET 5.0</a>。新版包括了 <a href="https://devblogs.microsoft.com/aspnet/announcing-asp-net-core-in-net-5/">ASP.NET Core</a>，<a href="https://devblogs.microsoft.com/dotnet/announcing-the-release-of-ef-core-5-0/">EF Core</a>，<a href="https://devblogs.microsoft.com/dotnet/c-9-0-on-the-record/">C# 9</a> 和 <a href="https://devblogs.microsoft.com/dotnet/announcing-f-5/">F# 5</a>，.NET 库增强了 Json 序列化、正则表达式和 HTTP（HTTP 1.1、HTTP/2）的性能。Visual Studio 用户需要 Visual Studio 16.8 以上版本才能使用 .NET 5.0。 .NET 5.0 是微软统一 .NET 堆栈和生态系统的首个版本，它计划在每年的 11 月发布一个新版本，这意味着 2021 年的 11 月将会发布&nbsp; .NET 6.0。.NET 5.0 不是长期支持版，它将支持到 .NET 6.0 发布 3 个月之后即 2022 年 2 月中旬，.NET 6.0 是长期支持版本，将支持三年。<p>
+➜InfluxDB 的未来将基于 Rust 和 Apache Arrow
+https://www.solidot.org/story?sid=66065	34231
+用 Go 语言开发的开源时序型数据库 InfluxDB <a href="https://www.influxdata.com/blog/announcing-influxdb-iox/">宣布了未来的开发计划</a>：InfluxDB IOx，用 Rust 语言开发，使用<a href="https://arrow.apache.org/" target="_blank"> Apache Arrow</a> 和柱列式数据结构。InfluxDB 项目创始人 Paul Dix 称，Rust 能给予运行时行为和内存管理更细粒度控制，它带来的额外好处是并发编程更容易消除了数据竞争。InfluxDB IOx 目前还处于早期开发阶段，计划明年初发布  alpha 版本。<p>
 ➜英特尔 SGX 再次被打败
 https://www.solidot.org/story?sid=66066	42157
 研究人员<a href="https://arstechnica.com/information-technology/2020/11/intel-sgx-defeated-yet-again-this-time-thanks-to-on-chip-power-meter/">找到了</a>新方法远程窃取英特尔 CPU 的密钥，即使 CPU 启用了 SGX（software guard extensions）。最新的攻击被称为 <a href="https://platypusattack.com/">PLATYPU</a>，能通过 Running Average Power Limit（RAPL）远程利用发动旁路攻击。RAPL 是英特尔的接口，用于监控通过 CPU 和内存的能流。研究人员发现，利用 RAPL 能获得有关指令和数据流的足够多线索，从而推断出 CPU 加载的值，泄露 SGX 保管的加密密钥，挫败 ASLR（地址空间布局随机化），建立一个秘密通道悄悄窃取数据。英特尔始于 Sandy Bridge 架构的 CPU 都存在该漏洞。<p>
+➜NASA 和 SpaceX 完成首次商业载人飞行的认证
+https://www.solidot.org/story?sid=66067	50216
+NASA 和 SpaceX <a href="https://www.nasa.gov/feature/nasa-and-spacex-complete-certification-of-first-human-rated-commercial-space-system">完成了</a>首次商业载人飞行的认证。NASA 局长 Jim Bridenstine <a href="http://news.sciencenet.cn/htmlnews/2020/11/448415.shtm">表示</a>：“我非常自豪地说，我们正在用美国的火箭和航天器，回归到美国本土进行常规的载人航天发射活动。”此前，美国依赖俄罗斯的载人航天飞船长达 9 年。NASA 宇航员 Michael Hopkins、Victor Glover、Shannon Walker 和 JAXA 宇航员野口聪一，计划于美国佛罗里达州时间 14 日 晚间 7 时 49 分，搭乘 Crew Dragon 飞船从佛州肯尼迪太空中心升空，预计于 8 小时后抵达国际空间站。<p>
+➜领英披露了来自中国的内容删除请求
+https://www.solidot.org/story?sid=66068	50627
+Linkedin(领英)在最新的<a href="https://about.linkedin.com/transparency/government-requests-report">透明度报告</a>中公布了了来自政府的数据请求：从 2020 年 1 月 1 日到 6 月 30 日，来自美国的用户数据请求最多，377 次请求涉及 2,459 个账号，Linkedin 满足了 78% 的请求。其它国家的用户数据请求 132 次。有两个国家提出了内容删除请求，土耳其提出了 2 次请求，Linkedin 满足了要求；中国提出了 18 次请求，Linkedin 满足了其中 16 次请求。<p>
+➜微软释出补丁修复 112 个安全漏洞
+https://www.solidot.org/story?sid=66069	54812
+微软在周二<a href="https://www.theregister.com/2020/11/11/patch_tuesday_updates/" target="_blank">释出了</a> 11 月例行安全更新，修复了 112 个安全漏洞，其中 17 个为高危级。15 个微软产品受到影响，其中包括  Microsoft Windows、Office、Internet Explorer、Edge (EdgeHTML 和 Chromium 版)、ChakraCore、Exchange Server、Dynamics、Windows Codecs Library、Azure Sphere、Windows Defender、Teams、Azure SDK、Azure DevOps 和 Visual Studio。修复的一个漏洞是 Google 安全团队 Project Zero  在上月底披露的 Windows Kernel Cryptography Driver 漏洞(CVE-2020-17087)，该提权漏洞据信正被利用，因此 Google 提前进行披露。<p>
