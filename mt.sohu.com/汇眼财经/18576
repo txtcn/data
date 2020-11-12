@@ -1,0 +1,75 @@
+➜一文读懂DYMMAX：新晋无抵押去中心化期权交易协议
+http://www.sohu.com/a/430771768_468071	5039
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201110/63631595b3584982a41fa63228fd5a5b.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">数字货币和资产市场的出现对于全球经济本身来说是一个重要事件。虽然这个现象在当前影响很小且难以服务日常需要，但是我们可以见到，一个围绕数字资产的金融服务时代正在起步。它们既基于经典的中心化方案运行，又以分布式方式运行，资产得到交换，收益随时间推移不断获得，实物资产得到标记化，同时实现其他多种好处。</p>
+<p class="ql-align-justify">如一般的金融市场一样，加密货币行业的参与者有着各种各样的需求：投机者期望通过短期波动赚钱，投资者会期望其投资组合中资产市场价值得到长期性增长。尽管需求各异，但所有类型的投资者都需要安全的投机工具，这种工具须与数字货币的一般概念不发生冲突，同时须提供与传统交换工具对等的机会。</p>
+<p class="ql-align-justify">为此，有许多从业者开发期货和期权的经典交割和结算方式。其中的一些用于从汇率波动中获益，而另一些则用于为资产进行担保，使其价值能够在不可避免的波动中得到稳定，同时可为流动性提供者创造利基，为公司带来可观的收入。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201110/4911f3917bf84e1e8f511ac40f485cd6.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">最近两年，随着去中心化金融（DeFi）的快速发展。据知名DeFi数据分析平台DeFi Pulse显示，截至北京时间11月7日，DeFi总锁仓资产（TVL）将近124亿美金，涵盖借贷、合成资产、工具架构、交易所、衍生品等类别。在衍生品领域，期权还鲜少被谈及，但据Chainlink等机构预测去中心化期权将成为下一个DeFi热点。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">本文将为大家介绍去中心化期权领域一颗冉冉升起的新星——新晋无抵押去中心化期权交易协议DYMMAX。</p>
+<p class="ql-align-justify"><strong>一、DYMMAX协议是什么？</strong></p>
+<p class="ql-align-justify">DYMMAX名字来自于“Dynamic Market Making Auctions and Exchange”的缩写，意为「动态做市商拍卖和交易」，作为一种去中心化协议，它用于基于具有固定赔率定价模型的派息下注进行加密货币发行期权，并可以ERC20代币的形式二次发行合约。</p>
+<p class="ql-align-justify">Dymmax以一种已得到充分研究的平价模型为基础，使期权能够在没有卖方的情况下进行发行。不同期权种类（看跌、看涨或IRONFLY）的买家将联合建立银行账户，保证有充足的资金支付到期付款。当所有的赌注都完成时，各期权类型的价格将进行链下计算，以此获得最大的拍卖效率。所有匹配的指令都将通过ERC-20代币进行标记化处理，方便二级市场。到期日相同的平价期权代码会每天发行，补充现有供应，增加流动性。</p>
+<p class="ql-align-justify">DYMMAX协议的创建是为了解决去中心化衍生品市场的以下问题：</p>
+<p class="ql-align-justify">100％的合约安全性；</p>
+<p class="ql-align-justify">高保费；</p>
+<p class="ql-align-justify">低流动性。</p>
+<p class="ql-align-justify"><strong>1.去中心化期权全额抵押品存在的问题</strong>：由于市场缺乏一个控制交易者损益的单一结算中心，因此，除溢价外，期权的买方有义务向合约提供与所报价资产的行使价相对应的金额，卖方有义务自行提供基础资产。作为此操作的结果，在行使期权之前，智能资产合约中200％以上的基础资产价值在ATM strike协议终结时仍被冻结。</p>
+<p class="ql-align-justify">如果使用障碍期权（Barrier Option，界限期权／障碍期权）来解决这个问题，那么买主和卖主将贡献出行使价和障碍之间的差额。当然，上述情况下的合约是经过计算的，无法交付。但是这样的合同是危险的，因为价格可能会在短时间内超过障碍并行使选择权。这种价格变化可能是由价格数据提供者或智能合约中的预言机引发的。因此，此类合同仅减少了冻结资金的数量，增加了同样严重的新问题。</p>
+<p class="ql-align-justify"><strong>2.高保费的问题：</strong>它部分是由于需要完全抵押的合同。但是在更大程度上，这是由于期权卖方无法通过基础资产或与基础资产具有持续相关性的其他工具对冲风险。尽管加密货币是一种高度波动的工具，并且高溢价对应于卖方根据Black-Scholes定价模型接受的风险，但主要的调整是由于卖方无法承担基础资产的风险从该位置向相反方向移动。因此，卖方试图保护自己，以防价格波动并溢价，这反过来又阻止了买方进行交易。</p>
+<p class="ql-align-justify"><strong>3．分散期权的流动性低的问题：</strong>它是上述两个问题的结合，许多交易者选择在集中交易所进行衍生产品交易，从而通过低抵押品获得了较高的股本回报，从而从财务上受益。同时，与获得的收益相比，单个监管中心的风险也成为背景。</p>
+<p class="ql-align-justify">在寻找上述问题的解决方案时，我们还尝试为交易者提供与现货市场相比的以下优势：</p>
+<p class="ql-align-justify">对冲低抵押品头寸的能力；</p>
+<p class="ql-align-justify">投机交易的盈利能力提高。</p>
+<p class="ql-align-justify"><strong>二、DYMMAX协议如何运行？</strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201110/3ac8f019b3bd4ef6b7c0c8f761fc2bf4.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">DYMMAX协议基于固定赔率的赔率下注，其中包括针对拍卖期间收到的订单开发的匹配算法。DYMMAX协议的期权发行机制从根本上不同于经典的交换模型，在传统的交易模型中，每个期权合约都包含一个做市商，该庄家以预期的计算波动率（IV）报价该合约。DYMMAX协议不是一般的做市商，而是开发了一种自动延长24小时竞价的系统。</p>
+<p class="ql-align-justify">如前述描述，尽管算法的新颖性，但交易者在使用拍卖时仍会获得不可否认的优势，比如：</p>
+<p class="ql-align-justify">交易无滑点；</p>
+<p class="ql-align-justify">进入市场时无价差；</p>
+<p class="ql-align-justify">所有参与者都可以以相同的价格获得更好的选择；</p>
+<p class="ql-align-justify">无论提交申请的时间如何，所有参与者都将收到带有ATM Strike的合约。</p>
+<p class="ql-align-justify">在执行日期之前的拍卖结束之后，所有联系人都以ERC20代币的形式自由交易，这可以使用DYMMAX去中心化二级流通平台完成。</p>
+<p class="ql-align-justify">执行日期的付款是从智能合约中的资金池中进行的。该协议所依据的定价模型是自筹资金的，这意味着所有中标期权的付款均由智能合约中的资金池来保证，不需要外部干预。</p>
+<p class="ql-align-justify"><strong>三、DYMMAX协议具有以下优点：</strong></p>
+<p class="ql-align-justify">杠杆高达20：1；</p>
+<p class="ql-align-justify">当市场朝相反方向发展时风险有限；</p>
+<p class="ql-align-justify">从市场下跌和停滞中获利的能力；</p>
+<p class="ql-align-justify">长期投资组合保险；</p>
+<p class="ql-align-justify">做市商的风险管理；</p>
+<p class="ql-align-justify">发行期权的代币化；</p>
+<p class="ql-align-justify">在二级市场上即时套利。</p>
+<p class="ql-align-justify">鉴于使用去中心化协议实施通用金融工具的复杂性，其中一些还需进行大幅度改进，以适应最初的加密货币概念，这恰恰是DYMMAX团队在去中心化期权协议开发过程中投入大量精力的地方。</p>
+<p class="ql-align-justify"><strong>四、定价模型对比</strong></p>
+<p class="ql-align-justify">金融市场上有各种各样的根据Black-Scholes模型进行期权评估的工具，包括“Greeks”的计算，预期波动率（IV）和策略制定。期权在许多世界性的证券交易所进行交易，并且具有巨大的营业额，尤其是标准普尔500指数的期权。</p>
+<p class="ql-align-justify">随着DeFi的快速发展，有从业者已经尝试创建基于智能合约的期权交易协议，并且其中一些项目正在成功运行。它们建立在买卖双方之间订立个人合约的原则上。例如，用户爱丽丝想购买ETH / USDT的看涨期权，行使价为360，而用户鲍勃想写相同的合约。为了保证期权协议的执行，爱丽丝有义务向合约提供360 USDT代币，以确保在以ETH / USDT的价格在到期日以360 USDT的价格购买1 ETH的可能性高于360。Bob必须向合同贡献1 ETH，以确保Alice可以购买1 ETH。对于此操作，Bob会收到一笔溢价，当交易完成时，Bob会自行设定溢价，并且只有当溢价适合双方参与者时，交易才能完成。</p>
+<p class="ql-align-justify">许多人可能会问，这种方法的缺点是什么？问题在于，参与者在智能合约中冻结了总行使价的200％，这对投资回报率产生了极大的负面影响。为了增加获利能力，卖方试图增加溢价，这排斥了买方并且对协议流动性的增长和交易者的利益产生了负面影响。为了以某种方式降低溢价，某些协议将自己定位为对冲工具，提供对OTM（价外）行使价的交易。但是，尽管溢价有所下降，但投资回报率差距对买主而言仅在扩大，从长远来看，购买此类工具无利可图。</p>
+<p class="ql-align-justify">尝试使用“障碍”（barriers）来解决这些分散的问题也引起很大争议。例如，在这种协议中没有资产的实物交割，而卖方和买方为合约提供了20％的价格，并且当价格在一个方向或另一个方向上移动了指定值后，合约要么平仓，要么要求从无利可图的方面进行补充。但是此类合约不能称为期权，它们更像是每个合约中内置的保证金。</p>
+<p class="ql-align-justify">DYMMAX协议希望结合每种方法的优势，它使用固定赔率定价模型的基数投注来计算期权金，并使用24小时长时间拍卖而不是经典订单簿。该模型基于共享资金池，该池不需要合同的全部抵押，但可以保证在任何市场情况下都向所有参与者付款。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201110/668e378ee36240feb7243b4fbef59894.png" max-width="600"><span class="img-desc" style="font-size: 16px;">DeFi期权协议对比</span></img></p>
+<p>DYMMAX协议还具有明显不同的合同报价模型。它在每个合同的订单簿中没有通常的做市商，而是在整个拍卖中拥有共享的流动资金池，其数量会影响最终溢价。这意味着每个人都可以按任何比例提供流动性，并从中获得相应的收益。在beta阶段，不可能提供流动性，但是产品发布包括用于流动性提供者进行风险管理的接口。</p>
+<p class="ql-align-justify"><strong>五、机构&amp;个人投资者的创新工具在市场的各个阶段都能盈利</strong></p>
+<p class="ql-align-justify">市场的这几个阶段，我们提供适当的操作策略：牛市套利、铁蝇、熊市套利</p>
+<p class="ql-align-justify"><strong>1. 牛市套利（Bull Spread）</strong></p>
+<p class="ql-align-justify">适用于成长市场的策略，如果期权到期日市场价格大于执行价格，则可以获得盈利。熊市期间此策略损失有限并不超过初始期权价格。</p>
+<p class="ql-align-justify"><strong>2. 铁蝶套利（Iron Fly）</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201110/aff26379f23d4f45bc9fb13ca7e9ee58.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">适用于呆滞市场的策略，如果期权到期日市场价格比较接近于执行价格，则可以获得盈利。如果价格大幅波动，其损失限于初始期权价格。</p>
+<p class="ql-align-justify"><strong>3. 熊市套利（Bear Spread）</strong></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201110/a2956bc0e01d4d31a868ac64f5f792a4.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">下跌趋势策略。类似于空头头寸，但价格上涨时其损失有限。</p>
+<p class="ql-align-justify"><strong>六、用户对资金无懈可击的控制</strong></p>
+<p class="ql-align-justify">拍卖：在DYMMAX协议中，用户可以实时监控买卖状态、交易委托账本和固定策略价格。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201110/66cffd2279d5486a8c136759cb242090.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">投资组合：监控您的投资组合：DMX代币、期权的盈亏及到期时间。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201110/9597f8fef47d460e967311d3a9db1143.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">构建工具：用基本策略作为构成要素创建定制策略。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201110/1e654e864af5438fbaa915293b8c3faf.jpeg" max-width="600" /></p>
