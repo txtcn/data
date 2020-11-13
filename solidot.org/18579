@@ -1,3 +1,6 @@
 ➜中芯国际称美出口管控导致部分设备交付延迟
 https://www.solidot.org/story?sid=66083	11523
 中国最大的芯片制造商中芯国际<a href="http://www.ftchinese.com/story/001090197">警告称</a>，其业务因美国 9 月发布的出口管制而面临延迟和不确定性。由于美国管制措施，它的部分美国机台“供货期延长或有不确定性”以及物流延迟的状况。由于设备供货延迟，这家芯片制造商表示将把本年度资本开支削减 12%，从 67 亿美元降至 59 亿美元。中芯国际联席首席执行官赵海军和梁孟松在一份声明中表示：“短期内出口管制对公司产生一定影响，但影响可控。”梁孟松补充称，该公司正积极就美国机械、零部件和原物料申请所有必要的许可证。<p>
+➜苹果服务器宕机导致无数应用停止响应
+https://www.solidot.org/story?sid=66084	13100
+大批苹果用户在社交媒体上<a href="https://news.ycombinator.com/item?id=25074959" target="_blank">报告</a>，他们的应用程序失去响应或需要数分钟时间才能启动运行。受影响的服务还包括 Apple Pay、Messages 和 Apple TV 设备。导致这一大规模故障的罪魁祸首是苹果验证应用可信的公证服务器 ocsp.apple.com。ocsp 代表 Online Certificate Status Protocol stapling，从 MacOS Catalina 起，苹果用户每次打开或执行一个程序，系统都会将其哈希值<a href="https://medium.com/@acecilia/apple-is-sending-a-request-to-their-servers-for-every-piece-of-software-you-run-on-your-mac-b0bb509eee65" target="_blank">发送到该服务器</a>（苹果知道你运行的任何程序），在获得回应前应用程序会保持冻结状态。如果苹果设备没有联网，那么系统将会认为你离线，允许程序执行。今天发生的问题是 ocsp.apple.com 能 ping 通但无回应，于是系统一直尝试验证然后超时。对这一问题苹果尚未发表声明。<p>
