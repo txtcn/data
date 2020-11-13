@@ -4,3 +4,12 @@ https://www.solidot.org/story?sid=66083	11523
 ➜苹果服务器宕机导致无数应用停止响应
 https://www.solidot.org/story?sid=66084	13100
 大批苹果用户在社交媒体上<a href="https://news.ycombinator.com/item?id=25074959" target="_blank">报告</a>，他们的应用程序失去响应或需要数分钟时间才能启动运行。受影响的服务还包括 Apple Pay、Messages 和 Apple TV 设备。导致这一大规模故障的罪魁祸首是苹果验证应用可信的公证服务器 ocsp.apple.com。ocsp 代表 Online Certificate Status Protocol stapling，从 MacOS Catalina 起，苹果用户每次打开或执行一个程序，系统都会将其哈希值<a href="https://medium.com/@acecilia/apple-is-sending-a-request-to-their-servers-for-every-piece-of-software-you-run-on-your-mac-b0bb509eee65" target="_blank">发送到该服务器</a>（苹果知道你运行的任何程序），在获得回应前应用程序会保持冻结状态。如果苹果设备没有联网，那么系统将会认为你离线，允许程序执行。今天发生的问题是 ocsp.apple.com 能 ping 通但无回应，于是系统一直尝试验证然后超时。对这一问题苹果尚未发表声明。<p>
+➜Google Play Store 是  Android 恶意程序的主要传播渠道
+https://www.solidot.org/story?sid=66085	22104
+作为  Android 生态系统最大的应用商店，Google Play Store 被发现同时也是 Android 恶意程序的<a href="https://www.zdnet.com/article/play-store-identified-as-main-distribution-vector-for-most-android-malware/" target="_blank">主要传播渠道</a>。研究人员分析了 2019 年 6 月到 9 月之间 1200 万 Android 设备安装的 3400 万个应用（来自于 790 万种应用）。根据对恶意程序的不同分类，10% 到 24% 的应用可以被归为恶意或用户不想要的应用。67% 的恶意应用是通过官方应用商店安装的，10% 来自于第三方应用商店。虽然从 Google Play Store 安装的应用中恶意应用的比例实际上非常小，但由于其规模的庞大导致总的数量仍然很惊人。<p>
+➜美国暂缓执行 TikTok 禁令
+https://www.solidot.org/story?sid=66086	22997
+特朗普要求 TikTok 剥离美国业务的行政命令于周四 11 月 12 日生效，但在命令正式生效前，美国商务部<a href="https://arstechnica.com/tech-policy/2020/11/trump-admin-delays-tiktok-ban-it-was-already-legally-told-to-hold/">宣布暂缓执行</a>，以“等待多起诉讼的进展”。虽然 TikTok 的母公司字节跳动尚未剥离 TikTok ，但它已经与甲骨文和沃尔玛公司达成了交易。字节跳动本周早些时候提起上诉，寻求给予它更多的时间去完成与甲骨文的交易，表示美国政府最近几周没有与它继续进行沟通。而 TikTok 之前提起的诉讼已经让禁令事实上搁置。<p>
+➜Google 对 Widevine 破解库递交 DMCA 删除通知
+https://www.solidot.org/story?sid=66087	25277
+Widevine 是 Google 开发的 DRM 技术，Widevine CDM（内容解密模块）和 Widevine License Server 被用于流媒体内容的 DRM 保护，被 Disney+、Netflix、Amazon Prime Video、YouTube 和 Hulu 等流媒体服务商广泛使用。11 月 9 日 Google 以侵权为由向 GitHub <a href="https://github.com/github/dmca/blob/master/2020/11/2020-11-09-Google.md" target="_blank">递交 DMCA 删除通知</a>，要求 GitHub 删除数十个破解 Widevine  DRM 保护技术的库（都是同一个库的镜像）。GitHub 已经按照 Google 的要求移除了这些库。<p>
