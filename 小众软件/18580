@@ -1,0 +1,12 @@
+➜如何将带有 magnet: 的磁力链接文本转换为可点击链接？
+https://www.appinn.com/magnet-text-to-url/	22717
+<p>有同学在论坛提问：<a href="https://meta.appinn.net/t/topic/20419" target="_blank" rel="noopener">有懂user.js的大佬吗，文字magnet转可点击链接 有办法实现吗？</a></p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/text-to-url.jpg!o" alt="如何将带有 magnet: 的磁力链接文本转换为可点击链接？ 1" title="如何将带有 magnet: 的磁力链接文本转换为可点击链接？ 1"></figure></div>
+<p>loli 同学遇到的问题是：</p>
+<p>我有在用 <a href="https://github.com/lkytal/GM" target="_blank" rel="noopener">https://github.com/lkytal/GM</a> 里的 Text to link，作用是将文字URL转成可点击的，但是并没有作用到 magnet 磁力链接上。</p>
+<p>现在每次都要手动选择复制然后粘贴，请问有实现 magnet 转 链接的方法吗？</p>
+<h2>解决方案</h2>
+<p>大佬 <strong><a href="https://meta.appinn.net/u/Fox" target="_blank" rel="noopener">Fox</a></strong> 很快写了一个 <a href="https://greasyfork.org/zh-CN/scripts/416070-%E6%96%87%E6%9C%AC%E5%8F%98%E9%93%BE%E6%8E%A5" class="rank-math-link" target="_blank" rel="noopener">文本变链接</a> 脚本解决问题，安装后在网页上看到如 </p>
+<p class="has-text-align-center">magnet:?xt=urn:btih:69c9ddf56161e101e177edc43e3ff011c7b69d27</p>
+<p>这样的文本（注意是文本不是链接），只需要双击它，就能调用其它软件打开了。</p>
+<p>具体可见原帖，地址：<a href="https://meta.appinn.net/t/topic/20419" class="rank-math-link" target="_blank" rel="noopener">https://meta.appinn.net/t/topic/20419</a></p>
