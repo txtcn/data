@@ -1,0 +1,27 @@
+➜如何解决国内某视频网站利用 WebRTC 占满上行带宽的问题
+https://www.appinn.com/webrtc-control/	8918
+<p>@<a href="https://meta.appinn.net/u/48vows" target="_blank" rel="noopener">48vows</a> 同学在大半个月之前问了一个问题：<a href="https://meta.appinn.net/t/topic/19960" target="_blank" rel="noopener">EDGE如何控制webRTC禁止斗鱼这类HTML5的p2p</a>？这事吧，其实挺尴尬的。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/webrtc-control.jpg!o" alt="如何解决国内视频网站占满上行带宽的问题" title="如何解决国内某视频网站利用 WebRTC 占满上行带宽的问题 1"></figure></div>
+<h2>什么是 WebRTC</h2>
+<p>WebRTC（网页即时通信，英语：Web Real-Time Communication） 是一个被主流浏览器广泛支持的可以在网页上进行实时语音或视频对话的 API，包括 Chrome、Firefox、Opera、Safari（开发者预览阶段）均支持，并且在移动端也有支持。</p>
+<p>延展阅读：</p>
+<ul><li><a href="https://www.appinn.com/webrtc-security-hole/">如何解决 WebRTC 的历史遗留安全隐患？Chrome、Firefox、Safari 全中招</a></li></ul>
+<h2>为什么尴尬呢</h2>
+<p>因为免费的视频观看用户的确占用了带宽，但并没有付费。于是贡献一点自己的带宽出来也不是什么大问题，毕竟不存在速度又快又免费的服务啊。但是呢，把用户上传占满这种事情，如果不是故意的，那就是技术不行了啊。</p>
+<p>有个很重要的原因是，占满了用户的上行带宽，用户的下行网速也将受到很大的影响。</p>
+<p>@48vows 同学对这个问题也特别说明了：</p>
+<p>Chrome 倒是找到不少办法，也有用 abp 的，但是 abp 兼容性真的没 uBlock Origin 好，已经回不去了。Edge 貌似就是个特例，把开源内核改的。。。</p>
+<p>现在最烦人的就是斗鱼，我能接受你p2p，你凭什么把上行占满？</p>
+<p>Chrome 商店下载的诸如 WebRTC Network Limiter，没用；abp 脚本安装在 uBlock Origin 无效；写静态规则直接视频无法加载。</p>
+<p>真服气，全网就没有一个 Edge 能屏蔽或者限制 webRTC 的 p2p 的方法？</p>
+<p>不过就是 22 天后的今天，@48vows 自己<a href="https://meta.appinn.net/t/topic/19960/5" class="rank-math-link" target="_blank" rel="noopener">标记了问题解决</a>，使用的是 WebRTC Control 扩展。</p>
+<h2>WebRTC Control</h2>
+<p>WebRTC Control 是一款用来防止因为 WebRTC 而泄漏 IP 地址的 Chrome 扩展，默认会阻挡 <strong>RTCPeerConnection</strong> 和 <strong>RTCDataChannel</strong> 两个接口的连接。</p>
+<ul><li><strong>RTCPeerConnection</strong> 接口代表一个由本地计算机到远端的WebRTC连接。该接口提供了创建，保持，监控，关闭连接的方法的实现。</li><li><strong>RTCDataChannel</strong> 接口代表在两者之间建立了一个双向数据通道的连接。</li></ul>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/screenshot-2020-11-14-at-23-46-36.jpg!o" alt="WebRTC Control 选项页面" title="如何解决国内某视频网站利用 WebRTC 占满上行带宽的问题 2"><figcaption>WebRTC Control 选项页面</figcaption></figure></div>
+<p>于是就可以用来阻挡这些视频网站使用 WebRTC 占满用户的上行带宽了。</p>
+<h2>使用简单</h2>
+<p>WebRTC Control 的使用非常简单，通过 <a href="https://chrome.google.com/webstore/detail/webrtc-control/fjkmabmdepjfammlpliljpnbhleegehm/" class="rank-math-link" target="_blank" rel="noopener">Chrome 应用商店</a> 安装之后，只需要点一下浏览器的扩展栏按钮即可，当呈现如下图蓝色边框时，就是禁用状态。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202011/screenshot_2020-11-14_at_23_50_28.jpg!o" alt="如何解决国内某视频网站利用 WebRTC 占满上行带宽的问题 1" width="362" height="201" title="如何解决国内某视频网站利用 WebRTC 占满上行带宽的问题 3"></figure></div>
+<p>再点击一下会变成灰色，恢复正常。</p>
+<p>最后，你可以在<a href="https://webbrowsertools.com/test-webrtc-leak/" class="rank-math-link" target="_blank" rel="noopener">这个网站</a>测试是否通过 WebRTC 泄漏了自己的 IP</p>
