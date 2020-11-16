@@ -1,0 +1,34 @@
+➜力控会议演讲丨ABB机器人力控技术及汽车焊缝打磨方法
+http://www.sohu.com/a/429180676_562020	35774
+<p><span style="font-size: 16px;">本文源于ABB机器人许健先生在“第二届机器人力控技术研讨会暨宇立仪器用户会议”的演讲，由宇立（SRI）整理发布。演讲ppt中的大部分视频和图片已省略，如有需要可联系宇立获取完整资料。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201103/14aba00b2636471689f714a478ce363d.jpeg" /></p>
+<p><span style="font-size: 16px;">机器人力控制基于机械手和环境间的交互作用，环境力被引入控制回路，实现机器人和外界可控的接触力和接触的稳定性，使得机器人可做接触运动而不发生碰撞停机现象。在力控打磨和装配应用中，采用力控制调整装配路径和速度，可以有效提升品质。</span></p>
+<p><strong><span style="font-size: 16px;">ABB经典的力控产品包含三个部分：力控软件、力转换盒和6轴力传感器。</span></strong><span style="font-size: 16px;">6轴力传感器是2011年ABB和宇立联合开发的，包括小、中、大三个型号，能够覆盖大部分应用。6轴力传感器信号通过转换盒进入机器人控制系统，力控软件中有标准的指令进行传感器标定、重力补偿和力控制等。力控软件能进入ABB控制器底层，因此，力控效果很好。同时，ABB还提供图形化的编程工具，轨迹自动生成，应用更加简单。</span></p>
+<p><span style="font-size: 16px;">力控打磨方面，ABB有两条主要的技术路线： <span>六轴力传感器反馈控制</span>和 </span><span style="font-size: 16px;">ABB自适应打磨头</span><span style="font-size: 16px;">。</span></p>
+<p><span>六轴力传感器反馈控制</span></p>
+<p><span style="font-size: 16px;">六轴力传感器有两种控制模式， <strong>恒压力模式</strong>和 <strong>SpeedChange模式</strong>。恒压力模式的轨迹速度是固定的，根据环境参数控制打磨力。 </span><span style="font-size: 16px;">SpeedChange模式在控制打磨力恒定的同时，也根据环境参数调整打磨速度。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201103/139aeff3c0814a3e94af7c7fc83e3fcb.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span>ABB自适应打磨头</span></p>
+<p><span style="font-size: 16px;">ABB自适应打磨头是ABB近年来开发的独立力控制打磨设备。自适应打磨头集成了力传感器、位移传感器和倾角传感器，具备轴向的恒力浮动功能，支持多种通信方式。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201103/899a6c8ddf6b4ae5b1e6e4d4a39c2b9f.jpeg" /></p>
+<p><span>汽车车身焊缝打磨</span></p>
+<p><span style="font-size: 16px;">汽车车身焊缝打磨一直都是高端的打磨应用，要求设备的智能化程度高、力控效果好、工作稳定可靠。在车身打磨领域ABB采用自适应打磨头技术，有效提升了力控响应速度和力控精度，且大大缩短了调试时间，已在一汽大众和一汽红旗得到成功应用。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201103/8ef7ff500ea2492c9002fa203e5bb795.jpeg" /></p>
+<p><span style="font-size: 16px;">力控会议 * 宇立仪器</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">机器人力控技术研讨会暨宇立仪器用户会议由 <strong>德国汉堡大学多模态技术研究所所长，德国汉堡科学院院士张建伟教授和宇立仪器总裁黄约博士</strong>共同组织， </span><span style="font-size: 16px;">旨在提供一个平台，供机器人力控业内人士相互交流，共同推进机器人力控技术发展和应用升级。</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">本届会议有180多位业内专家、学者、资深工程师和终端客户代表参会，并对会议给予了极高评价。来自 <strong>ABB、KUKA、节卡、深圳华大、Franka、3M、南方科大、航天805所、山大、 德国汉堡大学、北理工和宇立</strong>的15位专家，分享机器人力控的技术和经验。 </span></p>
+<p style="text-align: left;"><span><strong><span style="font-size: 16px;">宇立仪器（SRI, www.srisensor.com）</span></strong></span><span style="font-size: 16px;">是全球领先的机器人力控产品提供商，已在六轴力传感器和机器人力控行业深耕十几年，积累了大量客户和实际使用案例。近年来，推出了多款六轴力传感器、机器人关节扭矩传感器和iGrinder智能浮动磨头，在业内积累了良好的声誉。客户包括全球各大汽车公司、机器人公司、高校和研究所。宇立仪器特意组织本次会议，请业内朋友共聚一堂，交流探讨，共同推进机器人力控技术发展和应用升级。同时，也通过举办本次盛会感谢所有朋友的支持和信任。</span></p>
+<p>会议盛况回顾 </p>
+<p><span style="font-size: 16px;">招募作者</span></p>
+<p><span style="font-size: 16px;"><strong>请将简历和原创作品投至邮箱：jiahong.feng</strong>@imrobotic.com </span></p>
+<p><span style="font-size: 16px;">免责声明：本文部分图片来自源于网络 </span></p>
+<p><span>招募作者</span></p>
+<p><span><strong>请将简历和原创作品投至邮箱：jiahong.feng</strong>@imrobotic.com </span></p>
