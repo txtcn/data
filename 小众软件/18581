@@ -1,7 +1,7 @@
 ➜如何解决国内某视频网站利用 WebRTC 占满上行带宽的问题
 https://www.appinn.com/webrtc-control/	8918
 <p>@<a href="https://meta.appinn.net/u/48vows" target="_blank" rel="noopener">48vows</a> 同学在大半个月之前问了一个问题：<a href="https://meta.appinn.net/t/topic/19960" target="_blank" rel="noopener">EDGE如何控制webRTC禁止斗鱼这类HTML5的p2p</a>？这事吧，其实挺尴尬的。</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/webrtc-control.jpg!o" alt="如何解决国内视频网站占满上行带宽的问题" title="如何解决国内某视频网站利用 WebRTC 占满上行带宽的问题 5"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/webrtc-control.jpg!o" alt="如何解决国内视频网站占满上行带宽的问题" title="如何解决国内某视频网站利用 WebRTC 占满上行带宽的问题 7"></figure></div>
 <h2>什么是 WebRTC</h2>
 <p>WebRTC（网页即时通信，英语：Web Real-Time Communication） 是一个被主流浏览器广泛支持的可以在网页上进行实时语音或视频对话的 API，包括 Chrome、Firefox、Opera、Safari（开发者预览阶段）均支持，并且在移动端也有支持。</p>
 <p>延展阅读：</p>
@@ -18,11 +18,11 @@ https://www.appinn.com/webrtc-control/	8918
 <h2>WebRTC Control</h2>
 <p>WebRTC Control 是一款用来防止因为 WebRTC 而泄漏 IP 地址的 Chrome 扩展，默认会阻挡 <strong>RTCPeerConnection</strong> 和 <strong>RTCDataChannel</strong> 两个接口的连接。</p>
 <ul><li><strong>RTCPeerConnection</strong> 接口代表一个由本地计算机到远端的WebRTC连接。该接口提供了创建，保持，监控，关闭连接的方法的实现。</li><li><strong>RTCDataChannel</strong> 接口代表在两者之间建立了一个双向数据通道的连接。</li></ul>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/screenshot-2020-11-14-at-23-46-36.jpg!o" alt="WebRTC Control 选项页面" title="如何解决国内某视频网站利用 WebRTC 占满上行带宽的问题 6"><figcaption>WebRTC Control 选项页面</figcaption></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/screenshot-2020-11-14-at-23-46-36.jpg!o" alt="WebRTC Control 选项页面" title="如何解决国内某视频网站利用 WebRTC 占满上行带宽的问题 8"><figcaption>WebRTC Control 选项页面</figcaption></figure></div>
 <p>于是就可以用来阻挡这些视频网站使用 WebRTC 占满用户的上行带宽了。</p>
 <h2>使用简单</h2>
 <p>WebRTC Control 的使用非常简单，通过应用商店安装之后，只需要点一下浏览器的扩展栏按钮即可，当呈现如下图蓝色边框时，就是禁用状态。</p>
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202011/screenshot_2020-11-14_at_23_50_28.jpg!o" alt="如何解决国内某视频网站利用 WebRTC 占满上行带宽的问题 4" width="362" height="201" title="如何解决国内某视频网站利用 WebRTC 占满上行带宽的问题 7"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202011/screenshot_2020-11-14_at_23_50_28.jpg!o" alt="如何解决国内某视频网站利用 WebRTC 占满上行带宽的问题 4" width="362" height="201" title="如何解决国内某视频网站利用 WebRTC 占满上行带宽的问题 9"></figure></div>
 <p>再点击一下会变成灰色，恢复正常。</p>
 <h2>下载地址</h2>
 <ul><li><a href="https://microsoftedge.microsoft.com/addons/detail/webrtc-control/eepeadgljpkkjpbfecfkijnnliikglpl" class="rank-math-link" target="_blank" rel="noopener">Edge 商店</a></li><li><a href="https://addons.mozilla.org/en-US/firefox/addon/webrtc-control/" class="rank-math-link" target="_blank" rel="noopener">Firefox 商店</a></li><li><a href="https://addons.opera.com/en/extensions/details/webrtc-control/" class="rank-math-link" target="_blank" rel="noopener">Opera 商店</a></li><li><a href="https://chrome.google.com/webstore/detail/webrtc-control/fjkmabmdepjfammlpliljpnbhleegehm/" class="rank-math-link" target="_blank" rel="noopener">Chrome 商店</a></li></ul>
@@ -30,20 +30,20 @@ https://www.appinn.com/webrtc-control/	8918
 ➜someday – 极简化任务管理，只有 3 个分类：今天、明天和某天[iPhone]
 https://www.appinn.com/someday-for-iphone/	32899
 <p>someday 是一个极简化的任务管理应用，它把任务分为三类：今天、明天和某天，然后再无任何其他功能了，甚至目前都没有提醒功能。@Appinn</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/someday.jpg!o" alt="someday - 极简化任务管理" title="someday - 极简化任务管理，只有 3 个分类：今天、明天和某天[iPhone] 1"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/someday.jpg!o" alt="someday - 极简化任务管理" title="someday - 极简化任务管理，只有 3 个分类：今天、明天和某天[iPhone] 3"></figure></div>
 <p>someday 适合那些嫌弃当前各大<a href="https://www.appinn.com/tag/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86/" class="rank-math-link">任务管理</a>工具太繁琐的同学，什么子任务、子分类、标签、备注、附件、分类组、到期日、重要、分配给等等一大堆功能，someday 只提供最基本的任务列表功能。</p>
 <p>不过青小蛙觉得未来应该有个提醒功能，毕竟现在连屏幕小组件也没有，那用户用几天忘了打开岂不是悲剧了&#8230;</p>
 <h2>someday 长这样：</h2>
 <div class="wp-block-columns">
 <div class="wp-block-column">
-<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202011/87012236-8318-4b44-8105-9a6673ee4acd.jpg!o" alt="someday - 极简化任务管理，只有 3 个分类：今天、明天和某天[iPhone] 1" title="someday - 极简化任务管理，只有 3 个分类：今天、明天和某天[iPhone] 2"></figure>
+<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202011/87012236-8318-4b44-8105-9a6673ee4acd.jpg!o" alt="someday - 极简化任务管理，只有 3 个分类：今天、明天和某天[iPhone] 1" title="someday - 极简化任务管理，只有 3 个分类：今天、明天和某天[iPhone] 4"></figure>
 </div>
 <div class="wp-block-column">
-<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202011/d3b79217-da5c-4ecf-bb7e-0c223bad9258.jpg!o" alt="someday - 极简化任务管理，只有 3 个分类：今天、明天和某天[iPhone] 2" title="someday - 极简化任务管理，只有 3 个分类：今天、明天和某天[iPhone] 3"></figure>
+<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202011/d3b79217-da5c-4ecf-bb7e-0c223bad9258.jpg!o" alt="someday - 极简化任务管理，只有 3 个分类：今天、明天和某天[iPhone] 2" title="someday - 极简化任务管理，只有 3 个分类：今天、明天和某天[iPhone] 5"></figure>
 </div>
 </div>
 <p>这就是全部界面了，如果想要更改任务，点一下进去就是最后一个界面了，可以点击那个 Today 更改分类，毕竟还是有三个分类的。</p>
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202011/7784c21f-761c-433d-bb7b-1f2fe35e64fe.jpg!o" alt="someday - 极简化任务管理，只有 3 个分类：今天、明天和某天[iPhone] 3" width="262" height="524" title="someday - 极简化任务管理，只有 3 个分类：今天、明天和某天[iPhone] 4"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://img3.appinn.net/images/202011/7784c21f-761c-433d-bb7b-1f2fe35e64fe.jpg!o" alt="someday - 极简化任务管理，只有 3 个分类：今天、明天和某天[iPhone] 3" width="262" height="524" title="someday - 极简化任务管理，只有 3 个分类：今天、明天和某天[iPhone] 6"></figure></div>
 <p>青小蛙比较喜欢这类轻量级的小应用，如果未来能完善一下提醒，那真是可以拿来一用。</p>
 <h2>下载安装</h2>
 <p>目前 <strong>someday</strong> 可以在 <a href="https://apps.apple.com/cn/app/someday-one-day-at-a-time/id1537662355" class="rank-math-link" target="_blank" rel="noopener">App Store</a> 免费安装，开发者还提供了 <a href="https://testflight.apple.com/join/If8fFbS5" class="rank-math-link" target="_blank" rel="noopener">testflight</a> 测试新功能。</p>
