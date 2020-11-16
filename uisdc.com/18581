@@ -1,0 +1,469 @@
+➜搜索是如何逐步实现业务创新的？我总结了这3个方法！
+https://www.uisdc.com/search-design-innovation	59458
+<p>推荐算法出现之前，寻找信息的主场景是通过搜索获取。</p>
+<p>用户通过搜索框，输入目标的关键词进行查询。这一过程是用户的主动行为。</p>
+<p>推荐算法出现之后，平台算法主动给用户想要的信息。寻找信息的方式，从用户的主动行为变成了被动接受行为。</p>
+<p>用户不需要主动操作就轻易地获得想要的信息。</p>
+<p>推荐算法越精准越成功，用户搜索行为就越低。</p>
+<p>推荐算法的日益成熟并降低用户搜索的行为，搜索是如何逐步实现业务创新的？本文大纲如下：</p>
+<ul>
+<li>搜索形态创新</li>
+<li>搜索框入口创新</li>
+<li>搜索词展示创新</li>
+</ul>
+<h4><span class="auto_menu">搜索形态创新</span></h4>
+<p>传统意义上的搜索功能都是通过输入关键词进行搜索。</p>
+<p>为了减少用户输入，在搜索过程中，加入历史搜索记录。如下图所示：</p>
+<p><span class="img-zoom"><img alt="搜索是如何逐步实现业务创新的？我总结了这3个方法！" class="alignnone size-full wp-image-395673" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-ss-20201110-1.jpg" width="481" height="800" /></span></p>
+<p>为了提升搜索功能的竞争力，在搜索页加入搜索发现或猜你喜欢的功能，这是推荐算法的加入帮助用户更好的找到想找信息。也有一些产品为了商业化收入，混杂着广告热词，如下图所示：</p>
+<p><span class="img-zoom"><img alt="搜索是如何逐步实现业务创新的？我总结了这3个方法！" class="alignnone size-full wp-image-395674" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-ss-20201110-2.jpg" width="481" height="800" /></span></p>
+<p>为了增加更多用户感兴趣的点，排行榜的加入可以更大限度的触达用户感兴趣点。如下图所示。</p>
+<p><span class="img-zoom"><img alt="搜索是如何逐步实现业务创新的？我总结了这3个方法！" class="alignnone size-full wp-image-395675" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-ss-20201110-3.jpg" width="481" height="800" /></span></p>
+<p>总结：随着搜索功能的迭代升级，搜索已经从单纯的搜索功能，逐步演化为通过推荐给用户推荐想找的信息，搜索中的承接页承担着搜索+推荐的使命，这样的搜索形态，只是为了让用户更加便捷找到想找的内容。</p>
+<h4><span class="auto_menu">搜索入口创新</span></h4>
+<p>搜索入口，一共有4种设计形态。</p>
+<p><strong>1. 图标为入口</strong></p>
+<p>用户点击搜索图标，进入搜索页面，这种设计形式的入口，展示给用户的视觉呈现感最弱。如下图所示：</p>
+<p><span class="img-zoom"><img alt="搜索是如何逐步实现业务创新的？我总结了这3个方法！" class="alignnone size-full wp-image-395676" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-ss-20201110-4.jpg" width="481" height="800" /></span></p>
+<p>这种入口设计，是Android设计指南比较提倡的，由于视觉感知弱，目前绝大部分产品均抛弃了这种入口形式，仅部分产品遵循Android规范在使用。</p>
+<p><strong>2. 搜索框为入口</strong></p>
+<p>如下图所示。通过展示搜索框，并通过提示语告知用户可在搜索框内搜索想要的信息。</p>
+<p><span class="img-zoom"><img alt="搜索是如何逐步实现业务创新的？我总结了这3个方法！" class="alignnone size-full wp-image-395677" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-ss-20201110-5.jpg" width="481" height="800" /></span></p>
+<p><strong>3. 搜索框+新闻/热搜词轮播</strong></p>
+<p>为了更加吸引用户，促使用户使用搜索功能，现在的产品通常都是在搜索框里面放置基于用户行为感兴趣（或最热）的词/新闻，促使用户看到后，触发搜索行为。</p>
+<p><span class="img-zoom"><img alt="搜索是如何逐步实现业务创新的？我总结了这3个方法！" class="alignnone size-full wp-image-395678" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-ss-20201110-6.jpg" width="481" height="800" /></span></p>
+<p><strong>4. 搜索框+新闻/热搜词轮播+搜索按钮</strong></p>
+<p>加入搜索按钮，是为了提升搜索功能的视觉抢点，由于传统PC端搜索，都是搜索框加搜索按钮，所以在移动端也加入搜索按钮，会使得搜索功能更加被用户所注意到。如下图所示。</p>
+<p><span class="img-zoom"><img alt="搜索是如何逐步实现业务创新的？我总结了这3个方法！" class="alignnone size-full wp-image-395679" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-ss-20201110-7.jpg" width="481" height="800" /></span></p>
+<h4><span class="auto_menu">搜索词展示创新</span></h4>
+<p>搜索结果页，搜索词的展示有两种形态，一种是文本展示，另一种是标签展示。</p>
+<p><strong>1. 文本展示</strong></p>
+<p>文本展示是比较常见的设计。用户如果想要重新输入关键词，需要激活输入框，点击叉号图标，全部删除。</p>
+<p><span class="img-zoom"><img alt="搜索是如何逐步实现业务创新的？我总结了这3个方法！" class="alignnone size-full wp-image-395680" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-ss-20201110-8.jpg" width="878" height="800" /></span></p>
+<p><strong>2. 标签展示</strong></p>
+<p>用户只需要点击标签上的叉号，即可完成全部删除关键词。如下图所示：</p>
+<p><span class="img-zoom"><img alt="搜索是如何逐步实现业务创新的？我总结了这3个方法！" class="alignnone size-full wp-image-395681" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-ss-20201110-9.jpg" width="481" height="800" /></span></p>
+<p>标签展示的优点除了能快速删除外，还能添加多个关键词进行筛选，</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>本文主要是搜索形态创新、搜索框入口创新和搜索词展示创新以及其创新背后的逻辑。不涉及到搜索过程中的关键词匹配联想和搜索结果的设计。</p>
+<p>后续文章会尝试将搜索剩下的设计总结写出来，大家有什么疑问，欢迎在评论区留言。</p>
+<p>[link https://www.uisdc.com/search-design]</p>
+<p>欢迎关注作者的微信公众号：「Echo的设计笔记」</p>
+<p><span class="img-zoom"><img alt="搜索是如何逐步实现业务创新的？我总结了这3个方法！" class="alignnone size-full wp-image-392702" src="https://image.uisdc.com/wp-content/uploads/2020/10/echoqr.jpg" alt="看不懂UI文字设计规范？这篇文章帮你搞定！" width="180" height="183" /></span></p>
+➜深度分析12条经典动效设计原理，提升产品可用性！
+https://www.uisdc.com/12-principles-of-motion-design	59553
+<p>大家好，我是Clippp，今天分享的文章是「动效」设计。动效在产品设计中扮演着重要角色，它的好坏与否直接影响了用户的使用体验。</p>
+<p>动效对产品的可用性体验有多维度的影响。在界面中动效不仅仅是一种视觉装饰，它能够提升产品的参与度并扩展交流的范围。</p>
+<p>本文追根溯源，先从动效的起源讲起，一步步推进与产品、体验之间的关系，最后通过案例分析动效设计的原理和应用。一起来看看吧～</p>
+<h4><span class="auto_menu">动效设计的起源</span></h4>
+<p>动效与用户体验的结合相对较新，其根源是迪士尼动画设计的十二个条基本原理。迪士尼动画原理是为了讲故事而提炼出的基本的物理运动规律。这些原理能让绘制的卡通角色移动和表演，但不能充分满足现代UI界面的交互需求。</p>
+<p>为了弥合这个差距，动效专家Canedo Estrada改编的《动效设计的10条原理》更适合应用到数字产品设计中。</p>
+<p>[link https://www.uisdc.com/ultimate-guide-to-ui-animation]</p>
+<p><span class="img-zoom"><img alt="深度分析12条经典动效设计原理，提升产品可用性！" class="alignnone size-full wp-image-392065" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-sd-20201014-1.gif" width="540" height="600" /></span></p>
+<p>在围绕界面元素建立用户体验时，重新定位动效原理的关键在于：</p>
+<ul>
+<li>将动效设计与UI动画区分开;</li>
+<li>阐明动效如何帮助可用性;</li>
+<li>解开核心动效的内部工作机制。</li>
+</ul>
+<h4><span class="auto_menu">动效设计与用户体验</span></h4>
+<p>在讨论动效设计的原理之前，重要的是要强调动效不仅仅是装饰，而是一种用来帮助用户体验的行为。动效设计涉及两种基本的交互类型：实时和非实时。</p>
+<p><strong>1. 实时</strong></p>
+<p>当用户在屏幕上点击UI元素时，实时交互提供即时反馈，会对用户的操作做出即时响应。</p>
+<p><span class="img-zoom"><img alt="深度分析12条经典动效设计原理，提升产品可用性！" class="alignnone size-full wp-image-392066" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-sd-20201014-2.gif" width="800" height="600" /></span></p>
+<p><strong>2. 非实时</strong></p>
+<p>非实时交互发生在用户操作后，这意味着用户需要经过短暂的转场才能看到结果，然后再继续。</p>
+<p><span class="img-zoom"><img alt="深度分析12条经典动效设计原理，提升产品可用性！" class="alignnone size-full wp-image-392067" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-sd-20201014-3.gif" width="800" height="600" /></span></p>
+<p>另外动效设计通过四种不同的方式来提升产品的可用性：</p>
+<ul>
+<li>期望：当用户与界面交互时，他们期望看到哪些行为？动效是否符合预期或引起混乱？</li>
+<li>连续性：交互在整个体验中是否发生一致的运动行为？</li>
+<li>叙述：触发的动作是否与满足用户意图的事件的逻辑进程相关联？</li>
+<li>关系：UI界面的空间、美学和层级结构如何相互关联并影响用户的决策？动效如何影响各种元素的关系？</li>
+</ul>
+<h4><span class="auto_menu">产品动效设计原理</span></h4>
+<p>这里提供12种动效设计原理的解析，每一种对应不同的案例，从更直观的角度来解读抽象的原理。</p>
+<p><strong>1. 缓动(Easing)</strong></p>
+<p>缓动效果模拟了现实世界中对象随时间加速或减速的方式。它适用于所有运动的UI元素。下图中的卡片和对应的椅子移动速度很快，但由于缓动效果它们可以平稳地受到控制。</p>
+<p><span class="img-zoom"><img alt="深度分析12条经典动效设计原理，提升产品可用性！" class="alignnone size-full wp-image-392068" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-sd-20201014-4.gif" width="700" height="525" /></span></p>
+<p><strong>2. 偏移和延迟(Offset &amp; Delay)</strong></p>
+<p>当多个UI元素同时快速移动时，用户倾向于将它们组合在一起，而忽略了每个元素自身的功能性。</p>
+<p>偏移和延迟会在移动的UI元素之间创建层级结构，并传达它们相关但又不同的消息。元素的时间、速度和间距不是完全同步的，而是交错排列从而产生一种微妙的“一个接一个”的效果。</p>
+<p>当用户在屏幕之间穿梭时，偏移和延迟表明存在多个交互选项。</p>
+<p><span class="img-zoom"><img alt="深度分析12条经典动效设计原理，提升产品可用性！" class="alignnone size-full wp-image-392069" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-sd-20201014-5.gif" width="800" height="600" /></span></p>
+<p><strong>3. 父子关系(Parenting)</strong></p>
+<p>父子关系将一个元素的属性链接到其他元素中。当父元素中的属性更改时，子元素的链接属性也会更改，同时所有元素的属性都可以相互链接。</p>
+<p>在下图中，将父元素（蓝色滑块）的位置与子元素（灯泡发光效果&amp;光照强度）相关联。当父元素左右移动时，子元素的发光效果的范围和光照强度的数值会发生变化。</p>
+<p><span class="img-zoom"><img alt="深度分析12条经典动效设计原理，提升产品可用性！" class="alignnone size-full wp-image-392070" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-sd-20201014-6.gif" width="800" height="600" /></span></p>
+<p>父子关系在元素间创建关系并建立层级结构，允许多个元素同时与用户交互。因此这种效果非常适用于实时交互中。</p>
+<p><strong>4. 转换（Transformation）</strong></p>
+<p>当一种UI元素变成另一种形式时就会发生转换。例如，转换展示了下载的开始、中间和完成状态——下载按钮转换为进度条，进度条转换为完成图标。</p>
+<p><span class="img-zoom"><img alt="深度分析12条经典动效设计原理，提升产品可用性！" class="alignnone size-full wp-image-392071" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-sd-20201014-7.gif" width="800" height="600" /></span></p>
+<p>从UX角度看，转换效果告知用户元素的状态发生了变化并将信息传递给用户，提高了用户的认知度。</p>
+<p><strong>5. 数值变化（Value Change）</strong></p>
+<p>数值的变化（数字、文本或图形）在数字界面中非常丰富，从银行APP到日历到电商网站的各种产品中都会出现。</p>
+<p><span class="img-zoom"><img alt="深度分析12条经典动效设计原理，提升产品可用性！" class="alignnone size-full wp-image-392072" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-sd-20201014-8.gif" width="800" height="600" /></span></p>
+<p>在某种程度上，数据的动态表达和交流可能会对数据的价值产生影响。例如下图中的数值被动态引入，向用户显示他们有能力影响数据，提升了参与活动的意愿。</p>
+<p><strong>6. 遮罩（Masking）</strong></p>
+<p>遮罩是对界面上的部分内容进行战略性的显示和隐藏。通过改变元素的形状和比例，在改变元素效果的同时允许元素本身保持可识别性。因此，照片和插图等视觉形式是理想的选择。</p>
+<p>从可用性的角度来看，设计师可以通过遮罩向用户展示产品正在进行一系列的交互。</p>
+<p><span class="img-zoom"><img alt="深度分析12条经典动效设计原理，提升产品可用性！" class="alignnone size-full wp-image-392073" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-sd-20201014-9.gif" width="800" height="600" /></span></p>
+<p><strong>7. 覆盖（Overlay）</strong></p>
+<p>二维空间中没有深度，元素只能沿X或Y轴移动，叠加在界面中创造出前景/背景相区分的位置关系。通过模拟深度，覆盖可以根据用户的需要隐藏和显示元素。</p>
+<p>在使用覆盖时，信息层级结构是重要的考虑因素。例如，用户在笔记应用中首先应该看到的是笔记列表，然后使用覆盖来显示每个笔记的辅助选项，如删除或归档。</p>
+<p><span class="img-zoom"><img alt="深度分析12条经典动效设计原理，提升产品可用性！" class="alignnone size-full wp-image-392074" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-sd-20201014-10.gif" width="800" height="600" /></span></p>
+<p><strong>8. 克隆（Cloning）</strong></p>
+<p>克隆是将现有的对象拆分成新对象，这是一种突出显示重要信息或交互选项的方法。通过克隆将元素与界面相链接，如果元素只是突然出现或消失没有关联性，那么用户将缺乏信心去交互。</p>
+<p><span class="img-zoom"><img alt="深度分析12条经典动效设计原理，提升产品可用性！" class="alignnone size-full wp-image-392075" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-sd-20201014-11.gif" width="800" height="600" /></span></p>
+<p><strong>9. 模煳（Obscuration）</strong></p>
+<p>想象一扇磨砂玻璃门，虽然看不清门后的东西但是我们能察觉到门后事物的存在。</p>
+<p>模煳的工作原理是一样的。它为用户提供提示，让用户意识到自己正在操作的界面之后还有其他的层级结构。导航菜单、密码屏幕和文件窗口是常见的示例。</p>
+<p><span class="img-zoom"><img alt="深度分析12条经典动效设计原理，提升产品可用性！" class="alignnone size-full wp-image-392076" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-sd-20201014-12.gif" width="800" height="600" /></span></p>
+<p><strong>10. 视差（Parallax）</strong></p>
+<p>当两个（或更多）元素同时以不同的速度移动时会构成视差效果。视差的主要目的是划分层级结构：</p>
+<ul>
+<li>可交互的元素移动速度更快，出现在前景中；</li>
+<li>非交互式元素移动速度较慢，退到背景中。</li>
+</ul>
+<p><span class="img-zoom"><img alt="深度分析12条经典动效设计原理，提升产品可用性！" class="alignnone size-full wp-image-392077" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-sd-20201014-13.gif" width="800" height="600" /></span></p>
+<p>视差引导用户点击可交互的元素，同时允许非交互的元素保留在屏幕上并保持设计的统一性。</p>
+<p><strong>11. 维度（Dimensionality）</strong></p>
+<p>维度使界面元素具备具多个方向的交互，这种行为是使元素看起来是可折叠、可翻转、浮动的或具有深度。</p>
+<p><span class="img-zoom"><img alt="深度分析12条经典动效设计原理，提升产品可用性！" class="alignnone size-full wp-image-392078" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-sd-20201014-14.gif" width="800" height="600" /></span></p>
+<p>作为一种叙述性工具，维度意味着元素的不同侧面是相互联系的，并且可以实现无缝的屏幕过渡。</p>
+<p><strong>12. 平移与缩放（Dolly &amp; Zoom）</strong></p>
+<p>平移与缩放通过视角的变化能产生更多空间上的体验，逐级递进显示更高级别的细节。</p>
+<p>平移：点击元素后发生距离远近的平移，用户的视点会越来越接近图像。（一个人拿着照相机走到一朵花前面近距离拍摄）</p>
+<p><span class="img-zoom"><img alt="深度分析12条经典动效设计原理，提升产品可用性！" class="alignnone size-full wp-image-392079" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-sd-20201014-15.gif" width="800" height="600" /></span></p>
+<p>缩放：用户的视角与图像的距离保持不变，但图像在屏幕中的比例会增加。（这个人站在原地不动，只利用相机的变焦功能使花显得更大）</p>
+<p><span class="img-zoom"><img alt="深度分析12条经典动效设计原理，提升产品可用性！" class="alignnone size-full wp-image-392080" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-sd-20201014-16.gif" width="800" height="600" /></span></p>
+<h4><span class="auto_menu">总结——动效即交流</span></h4>
+<p>互动体验要求动效具备敏捷和微妙的形式。</p>
+<p>坚持动效设计原理，即使最基本的界面元素也能成为交流的复杂媒介。动效设计与产品用户体验之间的关系正在迅速成熟，而且动效跨越了二维屏幕上元素的抽象运动和3D世界中对运动的感知之间的鸿沟～</p>
+<p>文章很长，感谢看到最后～希望文章能够让你有所收获！</p>
+<p>欢迎关注作者微信公众号：「Clip设计夹」</p>
+<p><span class="img-zoom"><img alt="深度分析12条经典动效设计原理，提升产品可用性！" class="alignnone size-full wp-image-370563" src="https://image.uisdc.com/wp-content/uploads/2020/05/uisdc-bc-20200506-22.jpg" alt="顶部导航和侧边导航，哪一种用户体验更好？" width="180" height="182" /></span></p>
+➜10个产品细节剖析，让你看看大厂是如何做设计的！
+https://www.uisdc.com/10-product-details-6	60656
+<p>作为设计师，在拿到产品需求的时候，所要做的不仅仅是完成产品的设计工作，更重要的是要思考如何通过设计的的手段去推动产品背后的商业价值达到最大化，提升视觉体验、增强用户的粘性以达到用户转化的目的。不需要我们设计的有多么复杂，可能是一个步骤的简化、一句打动人心的文案、贴心的提示、趣味的动效&#8230;</p>
+<h4><span class="auto_menu">「天猫」搜索框：IP形象打造品牌</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>进入天猫APP首页，顶部为了节约空间，搜索框以常规的样式显示。页面上滑时，顶部搜索框变外形换成了天猫的品牌形象元素“猫头”样式。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>品牌不一定是IP，但IP一定是品牌，一个企业的品牌形象至关重要。IP不一定是企业的必需品，但有了它就能更进一步的对品牌的传播起到推动作用。比如将创始人或者公司核心人物的个人精神加入到品牌的形象当中，进而产生出巨大的品牌号召力。天猫在品牌传播方面应该是数一数二的存在，不管是宣传海报、弹窗外形、特色专题或插画等大部分都用了公司的IP形象，抽象的“猫头”样式。常规的事务都不会有太大的吸引力，就搜索框来说，在应用中的作用可谓是举足轻重，最常规的样式就是矩形（或圆角）框。</p>
+<p>天猫APP的搜索框样式则打破常规，为了提升品牌形象，把顶部搜索框外形设计成天猫的品牌形象IP“猫头”样式，将自身产品所拥有的优势与IP形象相结合，最大化的从视觉上增强品牌印象和品牌魅力，让用户通过品牌在心目中形成了美好的记忆，以至于围绕品牌形成消费经验，下次可能还会使用，达到增强用户粘性的目的，用庞大的用户量和使用频次增加产品的转化率。</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-395764" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201111-1.jpg" width="797" height="800" /></span></p>
+<h4><span class="auto_menu">「网易云音乐」贴心的驾驶模式</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在开车时使用网易云音乐，可以设置为驾驶模式，系统自动屏蔽大部分功能，只显示播放、上一曲、下一曲操作按钮，并增大点击触发范围，放置屏幕偏中间的位置，更容易操作。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>Facebook数据表明，虽然音乐类用户体量没有视频类应用高，但是综合使用时长却高出视频类应用很多，听音乐能减轻我们的压力，比如：上班坐车、睡觉前以及闭目养神无聊时都可以听着音乐。当然，我们在驾驶时也不例外，虽然所要做的主要事情是开车，但开车时候听音乐能缓解我们的精神压力，尤其是长途驾驶。无论是在交通流畅还是交通拥堵，音乐都能很好的压制住人的烦躁情绪，保持注意力的唤醒水平，从而提高人的反应速度，对驾驶的安全性有好处。车载导航除了地图外，最常用的功能也就是音乐了，这也验证了音乐的普遍性。（因人而异，音乐的情绪和感受，对部分用户还是有影响的，比如：旋律不明显的快速说唱音乐时，驾驶者会变得紧张；心情不好听着伤感的歌曲等）。鉴于音乐跟用户之间的粘性，出于安全考虑，在驾驶过程中，对于音乐类型的应用，操作应该做到更加便捷。</p>
+<p>网易云音乐中的驾驶模式，就是最好的例子。通过在设置中调整为驾驶模式后，设备上只有播放、上一曲、下一曲操作按钮，页面更加简洁，排除无关元素对视觉的干扰，无需思考、一目了然。其次，按钮接近有设备的中间位置，操作范围增大，放大热区无需精准操作，提升了产品易用性。界面的简洁程度以及易用性能让正在开车的用户有需求的情况下快速操作，缩短操作时间以降低驾驶安全隐患。</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-395765" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201111-2.jpg" width="797" height="800" /></span></p>
+<h4><span class="auto_menu">「高德地图」搜索框位置：用户自行掌控</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>使用高德地图时，可根据用户自身的喜好在我的-设置-首页设置页面，随时调整搜索框在屏幕中的位置。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>在我们使用的众多APP中，搜索框的位置都是在顶部的，这符合用户的操作习惯，也形成了惯性思维。当用户有搜索需求时，第一视觉会直接移至屏幕顶部扫视，然后直接执行操作。但置于顶部并不是唯一的设计方法。</p>
+<p>高德地图为了提升使用体验，可以根据用户的自身喜好及设备条件，在设置中调整搜索框的位置，给出两个位置以供用户选择，即置于顶部和底部，这样做的好处有两点：</p>
+<p>在众多的用户群体里面，用户的使用行为也是千奇百怪，为了满足不同用户的使用习惯，将搜索框的位置让用户自行选择，多一个选择就多一个方便，用户需要有控制和来去自由的权利，切换方式给用户带来了更强的掌控感，增加用户使用粘性。</p>
+<p>即使大部分用户都习惯搜索框在顶部，但因为目前设备尺寸越来越大的原因，依然会有部分用户会将搜索框置于底部。菲茨定律告诉我们“尽可能缩短手指与操作所相关按的间距”， 搜索框固定在屏幕底部，用户可以随时随地采取操作，能在最短的时间类毫不费力的触达目标，提升产品的易用性。</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-395766" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201111-3.jpg" width="797" height="800" /></span></p>
+<h4><span class="auto_menu">「百度网盘」超级会员尊贵的“黑金”图标</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>开通百度网盘超级会员的用户，可在设置中将桌面默认图标改为尊享图标，“黑金”样式彰显尊贵。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>开通过百度网盘超级会员的用户都知道，相比未开通之前，下载速度可谓是蜗牛比火箭，还附有其他各种功能：存储空间、急速下载、高清画质&#8230;等，但我相信大部分用户多是奔着急速下载去的。</p>
+<p>百度网盘超级会员还有一个设置，虽然没有实质的功能性，但抓住了用户的心理弱点，就是尊享图标。可在设置中将桌面默认图标改为“黑金”样式的尊享图标，利用大部分用户的炫耀心理，通过换成“黑金”尊享图标炫耀自身的形象以及地位，表示对自己的肯定，满足自己的虚荣心，以求博得面子，可以带来一种荣耀和心理上的满足感。另外还能用差异化样式给用户带来惊喜，让用户感受到会员的尊贵感和特权性，以达到更好的用户体验。</p>
+<p>[link https://www.uisdc.com/baidu-skydrive-member-center]</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-395767" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201111-4.jpg" width="797" height="800" /></span></p>
+<h4><span class="auto_menu">「虾米音乐」登录页面的微动效</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>进入虾米音乐登录页面，会看到很多元素从设备四周向中间聚拢的微动效，使用缓慢的运动轨迹反复循环。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>一个产品想要盈利，登录功能是用户转化关键的一环，毕竟如果没有用户量，再好的产品也是空谈。登录功能的用户体验时至关重要，其样式也是存出不穷。</p>
+<p>虾米音乐在登录页面使用了微动效，通过部分元素从设备四周向中间聚拢的动画方式，让视觉快速聚焦在中心的一键登录按钮上，减少用户对登录方式的选择性困难和决策时间。另外如果没有明确的注册（一键登录）需求，用户对注册会有一定的抗拒心理，这时候动效就可以对用户的抗拒心理产生一部分干扰，并往登录入口引导，降低用户的心理防备，以进行一键登录操作，提升注册成功概率。</p>
+<p>（登录页面的动画请慎用，不适当的动效方式会对用户的登录操作产生一定的干扰）</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-395768" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201111-5.jpg" width="797" height="800" /></span></p>
+<h4><span class="auto_menu">「淘票票」选座：如何提高上座率？</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>用淘票票APP购买电影票，在挑选座位时，如果选择2个或以上的座位，座位中间或两边不能留有空位，点击确认选座会出现弹出提示，以提升座位的利用率。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>经常看电影的用户应该都有碰到，不知道从什么时候开始，在网上购买电影票出现了“潜规则”，选购电影票座位时，不能留下单个空位。这种不成文的规定让单身的友友们瞬间受到一万点伤害，直接想暴风哭泣。甚至有单身的人碰到这种境遇，感觉就是歧视，其实不然。</p>
+<p>淘票票APP作为当前主流的购票平台，自然是也有这种限制，其原因跟平台的背景并无关联。购票时，如果选择2个或以上的座位，中间或者两边留有空位时，系统会自动弹出“座位旁边不要留空”的toast小窗提示，主要是因为空出来的单个座位会很难卖出去，这样一来就会造成座位资源的浪费，也会降低影院上座率。如果允许留下单个座位的话，本来应该可以坐满的场次，就不能坐满了，因为其他购票用户发现全是单个座位，就选择了下一场，毕竟去看电影的用户大多都是结伴而行，不管是情侣还是朋友，都希望座位挨在一起，全是单个不相连的座位，用户就可能放弃购票了，不仅损失消费数量，而且单座没人也浪费资源、影响利润，这是出于对主流用户群体的考虑。</p>
+<p>之前，网上流传着一个事件：其中一年的11月11日，某电影院的座位都被观影者间隔性购买，其目的是单身用户为了故意让情侣们的座位挨不到，避免秀恩爱、破坏虐单行为的一场恶作剧，结果就是影院的上座率很低，直接造成经济损失。不管这个事件是否有真实性，但减少单个座位的出现，从优化资源配置、降低座位空置率以及方便结伴而行的观众观影体验来说，这样的设计是人性化的。</p>
+<p>（为了统一，其他购票平台都有这种限制，用淘票票APP页面只是用于案例展示）</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-395769" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201111-6.jpg" width="797" height="800" /></span></p>
+<h4><span class="auto_menu">「腾讯QQ」青少年模式：有效防止小盆友“胡来”</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>通过QQ的左上方头像-设置-通用，可开启青少年模式，即对部分功能做了限制，提供更简洁纯净的体验；</p>
+<p>开启验证锁，在修改部分功能设置时，需要短信验证，避免被小盆友自行修改功能设置。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>虽然微信在社交产品里一直是大哥级别的担当，但QQ并没有因此隐退，两个社交软件各自都是带着不同的使命立身于社交界。如果经常需要传送一些文件或对信息的保留，QQ明显比微信更实用。网上经常流传着一些言语，说“腾讯的社交和游戏毁了青少年”，果真如此的话，不可能有庞大的用户体系让之立足，对此，我个人不做过多的言语。其实很多事情都是事在人为，假如没有腾讯，一定会有A讯、B讯&#8230;等企业取而代之，相同的问题依然存在。纵然如此，腾讯团队依然在对所出现的过情况进行不断的完善。</p>
+<p>QQ此次推出的青少年模式，对于在学习中必须要使用QQ的青少年，为避免在学习过程中不断分心而受到其他功能的影响起到了一定的抑制作用。在设置中切换为青少年模式，限制部分功能，再开启短信验证锁，避免被小盆友自行修改功能设置即可，“麻麻再也不用担心我的学习了”。设置后：</p>
+<ul>
+<li>极简的页面显示，让学习更加纯粹；</li>
+<li>屏蔽大部分的娱乐和广告类内容，排除无关功能；</li>
+<li>设置“聊天消息显示拼音开关”，更便于小盆友对文字的认识；</li>
+<li>设置QQ帐号是否能被陌生人搜索到、被陌生人拉入群，通过搜索添加好友等功能，防止以学习为目的去嗨聊；</li>
+<li>自动屏蔽无效搜索信息，只能搜到现有联系人及聊天记录，以减少干扰。</li>
+<li>&#8230;&#8230;</li>
+</ul>
+<p>看到这些功能，青少年模式简直就是为学习而量身打造的，不过再好的软件只是辅助，真正还得结合家长的教育和监督，以增强小盆友的自觉性，根据软件功能的优势结合进行有效利用，方能达到最佳效果。</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-395770" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201111-7.jpg" width="797" height="800" /></span></p>
+<h4><span class="auto_menu">「微信」跳转到还没看位置：上下衔接</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在浏览微信朋友圈时，点击跳到还没看的位置，已浏览过的信息会快速上移，自动跳转至上次结束的位置。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>有很多用户的闲暇时间都留给了微信，除了聊天之外，就属朋友圈了。没事的时候发个朋友圈证明自己还“活着”，也会不停的去刷着其他好友发的朋友圈记录，微信好友比较少的还行，如果较多又具有强迫症，必须把朋友圈的所有信息都刷完的用户真的是“难产”，因为这次没刷完结束后，下次根本无法记起上次结束的位置，总感觉好像有什么重要的信息漏掉了。</p>
+<p>根据用户的诉求，微信又推出一重磅功能“跳到还没看的位置”。但很多用户都会或多或少的去刷着朋友圈，除了对部分好友信息的了解，也可能是打发时间，有时会有心理作祟“要从上次的地方接着看，是不是什么重要的信息漏掉了”。系统会在上次已浏览过的信息前面提示“跳到还没看的位置”入口，点击可以直接忽略已浏览过的信息，直接跳到上次结束的位置，能有效避免用户因重复查看而浪费时间，带来便利性的同时，用户的粘性也会随之提升。</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-395771" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201111-8.jpg" width="797" height="800" /></span></p>
+<h4><span class="auto_menu">「哔哩哔哩」猝不及防的登录弹窗</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>进入哔哩哔哩APP，在体验过程中，就算用户没有主动点击登录、也没通过特定条件触发登录，系统也会不定时的自动弹出“本机号码一键登录”的提示，促使用户登录（登录即注册）。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>市面上99.9%的APP都有登录功能，因为这直接涉及到产品的用户量、使用粘性及企业的利益。登录后可以记录用户操作数据，保护隐私，确保APP的功能能被全部使用，以实现等级差异的基础，不过登录功能相当于对用户的使用设定了门槛，可能会增加用户体验，也可能会导致用户流失，各有利弊。目前APP是登录性质无非两种：①强制登录，这种性质有助于真实用户的转化，但因为登录的阻碍，可能会导致很多用户放弃使用并导致用户流失；②非强制登录，可以让用户优先体验产品，但因为用户不能深度使用，会减少用户对产品的认知，降低转化率。其实在这两种登录性质上，众多应用都无法做到很完美，只能根据自己产品的实际情况在利弊上进行取舍。</p>
+<p>哔哩哔哩APP为了规避掉这两个弊端，用了一个折中的办法。进入APP时，无需强制登录，在体验过程中，即使没有主动触发登录条件，系统也会不定时的自动弹出登录提示，通过友好的文案“登录解锁体验更多精彩内容”为用户着想，偶尔提醒用户，采用所有登录方式中最为便捷的“本机号码一键登录”，用户登录成功后，系统自动注册。既规避了强制登录的阻碍，同时又通过非条件触发的弹窗+最便捷的登录方式提升用户注册率，增加产品用户总量，一举两得。</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-395772" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201111-9.jpg" width="797" height="800" /></span></p>
+<h4><span class="auto_menu">「Tell」解忧杂货店：不开心就写信</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在Tell应用里，可以随时将我们的不开心、烦恼通过信笺的方式提交，后台会有专业的义工或其他用户给我们细心的回信解答，真情实感回复，超级暖心治愈。</p>
+<p><strong>2. 设计思考：</strong></p>
+<p>居住在一、二线城市的大部分人群压力巨大，并且邻居之间、人与人之间的距离感也越来越远。很多用户面对婚姻家庭、亲密关系和职场事业等束手无策，另外在成长中的青少年也都有着不能和父母、同学说的烦恼等无处倾诉。因此，需要有一个私人空间来诉说，以寻求答案和解决办法。</p>
+<p>Tell是一款陌生人社交软件，在我们有不开心或烦恼时，通过写信的方式进行倾诉，晚上十点半信封会被分发到各位tellers信箱里，收到信封的人会耐心解答，让我们去收获陌生人的温暖。还也可以对收到的信（每天只有三封）进行回复，通过看别人倾诉的烦恼去为他们解答，收获温暖的同时尽力去让别人收获，赠人玫瑰手有余香。</p>
+<p>除此之外，用户每天还能定时使用小篝火通过语音倾诉来缓解负面情绪的功能。以安静温暖的对话和探讨，帮助自己面对当下的强烈情绪、急于逃离的孤独，以及迫切需要解答的烦恼，如同情绪回收站，超级暖心治愈。</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-395773" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201111-10.jpg" width="797" height="800" /></span></p>
+<h4><span class="auto_menu">结语</span></h4>
+<p>设计师需要养成体验产品的好习惯并将优秀的产品细节记录下来，加强自己的记忆，不仅能提升自己的语言组织和总结能力，也为日后输出优秀的作品当铺垫，对自己的能力提升以及未来的职业发展带来便利。</p>
+<p>本期产品细节分享结束，我们下期再见。</p>
+<p>上期回顾：</p>
+<p>[link https://www.uisdc.com/10-product-details-5]</p>
+➜为什么我10秒就可以做出漂亮的背景图？有这个神器你也行！
+https://www.uisdc.com/glitchart	62663
+<p>有时候我们需要一些好看的背景素材，时间一紧张可能就做得不咋地，没关系，今天给大家推荐一个自动生成背景纹理的网站。</p>
+<h4><a href="https://glitchart.io/">https://glitchart.io/</a></h4>
+<p>可谓是非常优秀。</p>
+<p>不过我看它网站上的默认颜色没那么理想，比如：</p>
+<p><span class="img-zoom"><img alt="为什么我10秒就可以做出漂亮的背景图？有这个神器你也行！" class="alignnone size-full wp-image-396231" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-sq-20201114-1.jpg" width="523" height="600" /></span></p>
+<p>我觉得效果不理想的原因可能是颜色用的太多太杂了：</p>
+<p><span class="img-zoom"><img alt="为什么我10秒就可以做出漂亮的背景图？有这个神器你也行！" class="alignnone size-full wp-image-396232" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-sq-20201114-2.jpg" width="619" height="450" /></span></p>
+<p>这么多的颜色，饱和度又都那么高，很难驾驭的。</p>
+<p>所以我建议大家先从两个色相用起，比如我们就用蓝紫渐变：</p>
+<p><span class="img-zoom"><img alt="为什么我10秒就可以做出漂亮的背景图？有这个神器你也行！" class="alignnone size-full wp-image-396233" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-sq-20201114-3.jpg" width="694" height="649" /></span></p>
+<p>但这样可能有点单调，我们可以再延展一个，比如浅蓝色，丰富一下层次：</p>
+<p><span class="img-zoom"><img alt="为什么我10秒就可以做出漂亮的背景图？有这个神器你也行！" class="alignnone size-full wp-image-396234" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-sq-20201114-4.jpg" width="684" height="651" /></span></p>
+<p>这样效果就还可以了。</p>
+<p>之后，我们在随便加点文字排版：</p>
+<p><span class="img-zoom"><img alt="为什么我10秒就可以做出漂亮的背景图？有这个神器你也行！" class="alignnone size-full wp-image-396235" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-sq-20201114-5.jpg" width="1422" height="600" /></span></p>
+<p>嗯，还可以！</p>
+<p>除了改颜色，还有很多其他选项，比如线条的大小、疏密、方圆等等：</p>
+<p><span class="img-zoom"><img alt="为什么我10秒就可以做出漂亮的背景图？有这个神器你也行！" class="alignnone size-full wp-image-396236" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-sq-20201114-6.jpg" width="575" height="600" /></span></p>
+<p>比如线条疏密大小，我们调整大一点：</p>
+<p><span class="img-zoom"><img alt="为什么我10秒就可以做出漂亮的背景图？有这个神器你也行！" class="alignnone size-full wp-image-396237" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-sq-20201114-7.jpg" width="800" height="460" /></span></p>
+<p>再比如我们把线条调整谓圆角的：</p>
+<p><span class="img-zoom"><img alt="为什么我10秒就可以做出漂亮的背景图？有这个神器你也行！" class="alignnone size-full wp-image-396238" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-sq-20201114-8.jpg" width="800" height="459" /></span></p>
+<p>大家可以自行体验哈！</p>
+<p>[link https://www.uisdc.com/background-image-generator]</p>
+<p>欢迎关注作者的微信公众号：「菜心设计铺」</p>
+<p><span class="img-zoom"><img alt="为什么我10秒就可以做出漂亮的背景图？有这个神器你也行！" class="alignnone size-full wp-image-229091" src="https://image.uisdc.com/wp-content/uploads/2017/04/cxsjpqr2-1-1-1.jpg" alt="研究了上百个产品，才发现原来个人中心头图就这6个套路！" width="180" height="180" /></span></p>
+➜学会这些方法，画出1000+图案设计都不是问题！
+https://www.uisdc.com/pattern-design-method	64263
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396084" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-1.jpg" width="800" height="341" /></span></p>
+<p>重复图案在我们的大自然中可以说是很常见了，比如说蜜蜂的蜂巢、斑马的纹路再或者是蟒蛇的鳞片。多年以来，很多的设计师们也以此作为灵感，创作出了很多经典的作品，而且几乎在任何的设计领域都能见到图案的影子，这些图案风格独特，而且都源自于不同的文化。有着各自的艺术风格。图案设计就像是一个兼具了统一与变化的藏宝库，等待着每一位设计师去尝试挖掘。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396085" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-2.jpg" width="605" height="700" /></span></p>
+<p>1990年代末，考古学家在南非的布隆伯斯洞窟的岩壁上发现了一组图案。根据年代测定得出的结论，这些图案距今已经有七万三千年了。这也是人类目前为止发现的最早的装饰图案，可以说人类的历史就等同于装饰的历史。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396086" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-3.jpg" width="540" height="700" /></span></p>
+<p>提到装饰图案的设计，我们必须要先来说说闻名世界的伊斯兰艺术，在伊斯兰艺术中几何图案被大量的运用，我们从细密画种就可以看出来这点。从地毯织物再到建筑的装饰纹样，到处都充斥着各种类型的几何形装饰图案，在公元八世纪，伊斯兰的工匠们从罗马和波斯文化中借鉴原有图案并发展出新的几何形状。从这个时候起抽象的几何图案便被更加频繁的用在了伊斯兰的各种装饰中。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396087" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-4.jpg" width="600" height="1448" /></span></p>
+<p>我们现在去一些清真寺，在墙壁和穹顶上也可以看到非常壮观的几何形重复图案。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396088" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-5.jpg" width="800" height="340" /></span></p>
+<p>伊斯兰装饰图案的单元形非常讲究几何，所以在制作的时候，也是需要利用几何形的网格来创作图形。可以说每一个伊斯兰的几何图案，都散发着人类对几何无限的想象力。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396089" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-6.gif" width="405" height="405" /></span></p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396090" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-7.jpg" width="600" height="325" /></span></p>
+<p>接着我们来说一下古埃及，古埃及的设计师们习惯直接从大自然和身边的事物中吸取灵感，创作图形。从他们的装饰中可以印证这点。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396091" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-8.jpg" width="624" height="800" /></span></p>
+<p>这三个柱头来源于埃及不同的宫殿，但是追寻图案的原型其实都是源自于尼罗河畔随处可见的的纸莎草。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396092" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-9.jpg" width="1012" height="800" /></span></p>
+<p>这几组图案也是取自不同服饰和布艺装饰，但寻其本质其实都是由鸟类的羽毛抽象简化而成的。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396093" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-10.gif" width="405" height="405" /></span></p>
+<p>古埃及人将身边随处可见的元素进行抽象的设计，重复编排，就形成了古埃及艺术装饰中的一幅幅经典纹样。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396094" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-11.jpg" width="600" height="253" /></span></p>
+<p>中国传统的纹样我们就很常见了，作为中国传统文化的重要组成部分，其实中国纹样一直贯穿于中国历史发展的整个流程和我们的日常生活。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396095" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-12.jpg" width="800" height="493" /></span></p>
+<p>窗棂又被称为窗格，一般是指窗户内部的装饰图案。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396096" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-13.jpg" width="1080" height="334" /></span></p>
+<p>△ 资料参考：书籍《东方元素与设计》</p>
+<p>一般的窗格是由几何线条构成，我们在一些中式建筑和古装影视剧中也经常可以见到不同类型的窗格图案。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396097" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-14.jpg" width="1080" height="330" /></span></p>
+<p>△ 资料参考：书籍《东方元素与设计》</p>
+<p>还有这种万字纹，回纹，云纹，都是非常经典的中国传统窗棂纹样，比起西方的图案，中国的传统窗棂纹样，富丽堂皇，韵味十足，又有着吉祥如意的寓意。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396098" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-15.jpg" width="1080" height="356" /></span></p>
+<p>△ 资料参考：YINGSTARS工作室</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396099" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-16.gif" width="405" height="405" /></span></p>
+<p>中国的纹样不单单是取悦视觉，更多的是一种精神上的寄托，中国人通常都会使用象征谐音等手法来创作图案，给图案赋予吉祥，祈福，平安的寓意。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396100" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-17.jpg" width="589" height="450" /></span></p>
+<p>19世纪末期，英国兴起了威廉莫里斯的工艺美术运动，装饰风潮一时间也进入到了全盛时期。不过，在另一方面也出现了对装饰艺术应用过于泛滥的质疑。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396101" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-18.jpg" width="1080" height="359" /></span></p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396102" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-19.jpg" width="589" height="450" /></span></p>
+<p>进入20世纪之后建筑家密斯凡德罗提倡少即是多的概念，着手设计排除装饰要素的建筑，伴随着包豪斯新设计的抬头，装饰的风潮也急速衰退。</p>
+<p>[link https://www.uisdc.com/less-is-more-mies-2]</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396103" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-20.jpg" width="630" height="500" /></span></p>
+<p>上面我们了解了图案设计的历史，那在现代，图案设计中也是十分常见的，通过一个或几个简单单元形的不断重复，可以给图形赋予一种装饰意义，优秀的图案设计可以在一瞬间抓住消费者的眼球，也可以强化人们对品牌的认知和记忆。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396104" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-21.jpg" width="580" height="481" /></span></p>
+<p>华与华公司设计的厨邦酱油包装，使用了绿格子作为品牌的超级符号。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396105" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-22.jpg" width="1080" height="551" /></span></p>
+<p>当消费者看到绿格子的时候会自然的与餐桌、餐厅、吃饭等关键词联系起来。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396106" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-23.jpg" width="1080" height="373" /></span></p>
+<p>当商品全部摆放在货架上之后，统一性极强的格子图案又会产生阵列优势，更容易把远处的顾客吸引过来。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396107" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-24.jpg" width="600" height="145" /></span></p>
+<p>着名的奢侈品品牌LV，经典的老花图案也是由重复图案所构成的。LV的老花图案是由圆圈包围的四叶花卉、四角星、凹面菱形内包四角星，加上重叠一起的LV两个字所组成，作为支撑 LV 品牌的辅助元素，老花图案在消费者眼中是LV品牌最重要的视觉符号，历久不衰。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396108" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-25.jpg" width="648" height="114" /></span></p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396109" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-26.gif" width="332" height="248" /></span></p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396110" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-27.jpg" width="600" height="145" /></span></p>
+<p>日本乐天口香糖今年也大胆尝试了新的风格，推出了新口味的产品和新款的包装设计。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396111" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-28.jpg" width="687" height="800" /></span></p>
+<p>这次推出了七种口味的口香糖，每种口味都设计了不同颜色的包装纸，每种颜色的包装纸又延伸出了不同种类的图案，而且图案设计的非常漂亮，就算我不爱吃口香糖，我也会想去收集一下这个包装纸。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396112" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-29.jpg" width="760" height="600" /></span></p>
+<p>图案的单元形设计的也非常巧妙，比如这款超凉薄荷口味的口香糖。为了突出超凉薄荷的凉，使用了生活在南极的企鹅作为单元形。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396113" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-30.jpg" width="784" height="600" /></span></p>
+<p>蓝莓口味的口香糖使用了Bluberry的首字母B作为单元形。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396114" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-31.jpg" width="600" height="258" /></span></p>
+<p>刚才带大家看了一些重复图案在品牌设计中的应用，有的图案看起来很复杂，但其实制作起来没有你想象的那么难，接下来就给大家具体的演示一下重复图案的设计和制作方法。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396115" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-32.jpg" width="600" height="223" /></span></p>
+<p>要说到设计方法，这里还是要提到一个人，在1981年，俄罗斯的结晶学家费多洛夫在论文中证明了平面上重复的图样可归类为17个种类的理论。这个理论也被称为“17种平面对称群”这项定理如今在科学领域中也被当做运用的标准。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396148" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-65.jpg" width="1000" height="1039" /></span></p>
+<p>这些是我提前做好的一些图案，这些图案全都是利用平面对称群的理论来设计的，有些图案看似很复杂，但是如果利用好平面对称群的理论，操作起来其实比你想象中要简单的多。接下来就挑选几个有代表性的来给大家讲解。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396116" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-33.jpg" width="300" height="62" /></span></p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396117" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-34.gif" width="329" height="329" /></span></p>
+<p>P1是最简单的形式，只需要将设计好的单元形以等距同方向的原则复制排列就可以了。虽然P1看似很简单，但是如何单纯的利用平移做出很丰富的图案，就需要你在单元形上下功夫了。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396118" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-35.gif" width="319" height="319" /></span></p>
+<p>首先我们来做单元形，这里我们可以利用之前提到的伊斯兰几何图案的制作方法，我们先用几何图形做一个网格，然后我们提取其中的线条组成一个莓果的形状。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396119" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-36.gif" width="309" height="309" /></span></p>
+<p>之后我们把这个单元形用P1的方法进行重复。这个时候我们看，图案中还是有很多负空间的，那么我们可以让这个图案更加丰满一些，我们在负空间再添加一组图形。这样我们的造型部分就完成了。最后我们再赋予它一个颜色。这组图形就完成了。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396120" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-37.jpg" width="552" height="600" /></span></p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396121" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-38.gif" width="332" height="332" /></span></p>
+<p>另外我们也可以利用P1组合出这样很有立体感的图案。我们先画一个6X6的网格，然后可以按照网格线画出图形，然后我们再给图形赋予一个明暗关系的颜色。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396122" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-39.gif" width="292" height="292" /></span></p>
+<p>最后我们进行P1的重复排列，就完成了。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396123" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-40.jpg" width="1200" height="508" /></span></p>
+<p>总结一下，在十七种平面对称群中，P1是第一个也是最简单的一个形式。因为只有单纯的平行移动，所以难免会有些单调的感觉，如果想做出丰富的画面，那需要你在单元形上做出一些巧思和创意。虽然说是单调，但是单纯的重复也有突出和强调的效果，很多品牌的商标都会使用P1的方式设计图案，以此来加深品牌的印象。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396124" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-41.jpg" width="300" height="62" /></span></p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396125" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-42.gif" width="346" height="346" /></span></p>
+<p>接下来我们来讲一下P4，P4的基本设计方法是将基本型进行四次90度的旋转，然后再进行重复编排。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396129" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-46.jpg" width="552" height="600" /></span></p>
+<p>下面我用这个案例来给大家演示P4的设计方法。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396126" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-43.gif" width="333" height="333" /></span></p>
+<p>在制作P4单元形的时候，我们可以利用正方形的格子来规范我们的单元形，我们顺着田字框画一条曲线，然后在右上的方框内再画一个田字框，把之前线条的端点放在田字框的中心，最后再把线条连接到大田字框的中心。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396127" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-44.gif" width="405" height="405" /></span></p>
+<p>然后我们将这个线条进行四次90度的旋转。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396128" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-45.gif" width="301" height="301" /></span></p>
+<p>最后再进行重复编排，赋予一个颜色，这个图案就完成了。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396129" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-46.jpg" width="552" height="600" /></span></p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396130" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-47.gif" width="405" height="405" /></span></p>
+<p>我们再换一个单元形试试看，形态不一样，但操作方法是一样的。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396131" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-48.gif" width="319" height="319" /></span></p>
+<p>我们将线条在正方形格子内旋转四次，最后重复编排再填充颜色。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396132" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-49.jpg" width="552" height="600" /></span></p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396133" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-50.gif" width="318" height="318" /></span></p>
+<p>我们换个方法再来做一个，演示这么多次的目的是希望大家在看的时候一定要记住我的方法，图形虽然不一样，但方法是共通的，大家一定要举一反三，换成自己设计的单元形也要会做。这次我们直接用正方形来创建单元形。我们把这个正方形想象成一张纸，然后将它对折。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396134" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-51.gif" width="264" height="264" /></span></p>
+<p>然后我们将这个长方形在左右的四分之一处再画两条线，顺着这两条线调整点的位置，让他形成一个错位的图形。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396135" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-52.gif" width="345" height="345" /></span></p>
+<p>之后，进行四次90度的旋转，重复编排。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396136" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-53.gif" width="377" height="377" /></span></p>
+<p>其实排完之后我们可以感觉到，图案还是不太丰满，那我们可以在中心位置再添加一个P1的重复单元形。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396137" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-54.gif" width="405" height="405" /></span></p>
+<p>我们可以直接利用这个负空间填充一个颜色，但是如果全部填满的话就感觉有点太死板了，那我们也可以将内部图形除以黄金比1.618，缩小一些。最后再加上颜色。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396138" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-55.jpg" width="1200" height="500" /></span></p>
+<p>我们也可以将轮廓改成曲线的形式。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396139" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-56.jpg" width="576" height="800" /></span></p>
+<p>我们总结一下，P4是以正方形格子为基础，加上90度旋转四次设计而成的图案，比较简单的单元形经过P4的设计也可以设计出比较丰满的画面，使用P4设计图案，也可以给人精致和有趣的视觉感受。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396140" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-57.jpg" width="300" height="62" /></span></p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396141" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-58.gif" width="387" height="387" /></span></p>
+<p>这次我们以日本传统的纱绫形来举例，PGG的创作方法是将基本型旋转180°，然后再复制一个旋转90度。将旋转后的图形位移，最后重复编排。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396146" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-63.jpg" width="553" height="600" /></span></p>
+<p>PGG使用起来还是比较复杂的，所以们换另外一个案例，再给大家演示一下操作方法。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396142" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-59.gif" width="405" height="405" /></span></p>
+<p>首先我们还是可以利用方形格子来创建单元形，我们在方形格子中画一个半圆，然后调整半圆的曲线把它变成一个扇形，我们再在扇形内加入一个放射性的线条元素。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396143" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-60.gif" width="405" height="405" /></span></p>
+<p>把单元形先复制旋转180度，然后再整体旋转90度。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396144" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-61.gif" width="405" height="405" /></span></p>
+<p>将旋转后的单元形再复制一个旋转90度，然后向左下方移动，对齐。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396145" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-62.gif" width="405" height="405" /></span></p>
+<p>最后我们复制，重复编排，就完成了。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396146" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-63.jpg" width="553" height="600" /></span></p>
+<p>大家在看教程的时候，可以自己试着做一下，最好自己去设计一个新的单元形，然后用我今天教给大家的方法去编排。最后还是要强调一遍，一定要记住我的方法，图形虽然不一样，但方法是共通的，大家要举一反三。</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-396147" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201113-64.jpg" width="800" height="1720" /></span></p>
+<p>今天我们讲了平面对称群的几种设计方法，其实平面对称群也只是装饰图案设计的冰山一角，装饰图案发展了这么多年，创作图案的方法多种多样，无法一篇文章全部照顾到。以后有机会，再给大家慢慢分享，好了那今天的教程就到这里，我们下次再见。</p>
+<p>欢迎关注研习设的微信公众号：「Yanxishe2017」</p>
+<p><span class="img-zoom"><img alt="学会这些方法，画出1000+图案设计都不是问题！" class="alignnone size-full wp-image-271254" src="https://image.uisdc.com/wp-content/uploads/2018/05/yxskxsqr.jpg" alt="不藏不掖着，响应式网页大揭秘来了！" /></span></p>
+➜壹周速读：那些最有用的设计原则
+https://www.uisdc.com/quick-reading-weekly-vol79	67529
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="alignnone size-full wp-image-396288" src="https://image.uisdc.com/wp-content/uploads/2020/11/quick-reading-weekly-vol79-1.jpg" /></span></p>
+<p>当你拥有还不错的设计功底的时候，大概需要做好两件事情：1是把握好设计原则，让整个设计合理到位；2是追随当下的趋势，让设计更加贴合潮流。这期的壹周速读，不仅带你了解最新趋势，而且给你最有用的设计原则：</p>
+<h4><span class="auto_menu">2021年新趋势</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="aligncenter size-full wp-image-396267" src="https://image.uisdc.com/wp-content/uploads/2020/11/bf1.png" /></span></p>
+<p>疫情，隔离，线下教育受阻，线上学习成为了主流，网购替代了去超市采购，娱乐和沟通都从面对面改为远程。需求的转变，也带来了新的增长。2021年，平面设计的趋势也在这些改变和增长中悄悄发生变化，下面是资深设计师 Iveta Pavlova 所总结的12个平面设计趋势：</p>
+<p>[link https://www.uisdc.com/graphic-design-trends-2021]</p>
+<h4><span class="auto_menu">超有用的设计原则</span></h4>
+<h4>1、尼尔森的可用性十大原则</h4>
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="aligncenter size-full wp-image-396267" src="https://image.uisdc.com/wp-content/uploads/2020/11/bf2.png" /></span></p>
+<p>「尼尔森十大原则」又称为「用户界面设计的10种可用性启发式」，是由雅各布·尼尔森（Jakob Nielsen）提出的10条交互设计一般原则。之所以将其定义为“启发式”，是因为它们是广泛的经验法则，而不是特定的可用性准则。「尼尔森十大原则」诞生了接近30年，在无数的产品设计当中得到验证，运用这些原则有助于我们试探设计的边界，探索设计的可能性：</p>
+<p>[link https://www.uisdc.com/nielsen-design-principles ]<br />
+[link https://www.uisdc.com/nielsen-design-principles-2]</p>
+<h4>2、UI动效设计的9大原则</h4>
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="aligncenter size-full wp-image-396267" src="https://image.uisdc.com/wp-content/uploads/2020/11/bf3.png" /></span></p>
+<p>迪士尼的动画设计12原则可能是传统动画领域，最为重要、价值不可估量的原则体系之一。这12条原则当中，绝大多数都可以应用到 UI 的动效和交互设计当中，从而让交互和体验更上一层楼。这篇文章基于这12条原则，梳理出了 9 条适用于 UI 设计的原则，一起来看看吧：</p>
+<p>[link https://www.uisdc.com/disney-basic-principles-ui]</p>
+<h4>3、金融类APP的十大设计原则</h4>
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="aligncenter size-full wp-image-396267" src="https://image.uisdc.com/wp-content/uploads/2020/11/bf4.png" /></span></p>
+<p>财务和金融相关的应用是一个相对专业的分支，在这个领域当中创造体验优异的设计并不是一件简单的事情。身为资深设计师Taras Bakusevych 在这篇文章当中，分享了10个确保这类产品足够优秀的核心设计原则：</p>
+<p>[link https://www.uisdc.com/10-tips-financial-ux-design]</p>
+<h4>4、图标设计的7大原则</h4>
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="aligncenter size-full wp-image-396267" src="https://image.uisdc.com/wp-content/uploads/2020/11/bf5.png" /></span></p>
+<p>创建高质量系列图标，你得使用一套周到系统的方法，需要有训练有素的双眼，大量的迭代学习，以及坚持实践，才能做到。下面的文章中，设计师 Helena Zhang 将结合7项设计原则，和大量的实际案例，来为你详细说明，如何创建高质量的图标：</p>
+<p>[link https://www.uisdc.com/7-principles-of-icon-design]</p>
+<h4>5、防呆设计的10大原则</h4>
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="aligncenter size-full wp-image-396267" src="https://image.uisdc.com/wp-content/uploads/2020/11/bf6.png" /></span></p>
+<p>简单的说，防呆设计就是帮助尽可能多的人进行「无脑操作」的方法。防呆设计，自然就是通过设计的方法来实现防呆。人们总是会犯错，无论是在用工业产品还是电子产品。虽然工业设计和产品设计是不同的行业，但设计的本质都是在寻找问题的解决方法，那就是如何更好地避免错误发生：</p>
+<p>[link https://www.uisdc.com/10-deterioration-design-rules]</p>
+<h4>6、最有效的信息组织设计原则</h4>
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="aligncenter size-full wp-image-396267" src="https://image.uisdc.com/wp-content/uploads/2020/11/bf7.png" /></span></p>
+<p>我们的设计必须显示展现出组织性良好的信息，这样用户才能很容易的理解所显示的内容。这是提供良好用户体验的关键。在大量显示数据的方式中，有一种经受了时间的考验，并证明即使在今天也是高效的，它被称为「五帽架原则」：</p>
+<p>[link https://www.uisdc.com/latch-information-architecture-princeple]</p>
+<h4><span class="auto_menu">平面版式</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="aligncenter size-full wp-image-396267" src="https://image.uisdc.com/wp-content/uploads/2020/11/bf8.png" /></span></p>
+<p>「满版构图」是将图片、文案和设计元素等充满整个版面，营造出丰富的画面效果，具有极强的代入感以及视觉感受，传递的情感也更加丰沛。满版文章的特点可以看这里：</p>
+<p>[link https://www.uisdc.com/full-page-composition]</p>
+<p>而为了让大家加深对「满版构图」的理解，下面这篇借助敦煌旅游海报实操演示，帮助大家对这一排版知识进行深入理解：</p>
+<p>[link https://www.uisdc.com/full-page-composition-2]</p>
+<h4><span class="auto_menu">UI·产品</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="aligncenter size-full wp-image-396267" src="https://image.uisdc.com/wp-content/uploads/2020/11/bf9.png" /></span></p>
+<p>空状态是指用户在使用产品时遇到的因无数据展示而中断体验的场景。空状态并不全指异常状态，并不局限于产生错误的异常场景。空状态通常会有哪几种类型？在日常设计的时候，要注意哪些问题？还有哪些可供遵循的设计方法？「南山可」的这篇文章里有答案：</p>
+<p>[link https://www.uisdc.com/empty-status-page-design]</p>
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="aligncenter size-full" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-yx-20201108-4.gif" width="528" height="393" /></span></p>
+<p>响应式网页可以让网页自动的适应不同尺寸的显示器。这种形式的优点也是显而易见的，那就是高适应性和提升网页的实用性。如果你对于响应式网页了解不多，那么研习设的这篇文章，就帮你彻底梳理清楚：</p>
+<p>[link https://www.uisdc.com/responsive-web-design-3]</p>
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="aligncenter size-full wp-image-396267" src="https://image.uisdc.com/wp-content/uploads/2020/11/bf10.png" /></span></p>
+<p>设计师「CE青年」主要深耕于B端设计中，熟知B端表格设计与C端的巨大差异，无论是表格的展示形式还是承载内容上都非常不同。而现在网上有不少关于表格如何设计的文章，但要真正落到实处的少之又少，而他的这篇文章就主要聊聊表格，探讨一下B端表格究竟应该如何设计：</p>
+<p>[link https://www.uisdc.com/b-end-form-design]</p>
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="aligncenter size-full wp-image-396267" src="https://image.uisdc.com/wp-content/uploads/2020/11/bf11.png" /></span></p>
+<p>在设计图标的时候，很多这个图标和实际品牌、业务并没有什么联系，它仅仅满足了可辨识这个温饱需求。图标缺失品牌感，就会导致同质化的问题。这可能会导致产品缺乏记忆点，甚至导致设计话语权降低。那么，有没有什么系统、易于理解的方法来让我们的图标具备品牌感？来看看高手是怎么做的：</p>
+<p>[link https://www.uisdc.com/the-icon-has-been-drafted ]</p>
+<h4><span class="auto_menu">设计神器</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="aligncenter size-full wp-image-396267" src="https://image.uisdc.com/wp-content/uploads/2020/11/bf12.png" /></span></p>
+<p>「CleanPNG」是一个提供透明背景的免费图库，依照介绍，收录超过 300 万个具备透明背景的 PNG 图片，这些素材都有相当好的画质分辨率，提供 50000 个分类快速检索，帮助使用者快速找到需要的素材，也有搜寻功能可利用关键词查找，透过筛选器依照更新时间、尺寸大小、类型和颜色显示，就能在更快时间找到合适的图片：</p>
+<p>[link https://www.uisdc.com/cleanpng]</p>
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="aligncenter size-full wp-image-396267" src="https://image.uisdc.com/wp-content/uploads/2020/11/bf13.png" /></span></p>
+<p>这个问题相信有不少同学都遇到过，看到一款很喜欢的字体，但是死活找不到它的名字。私房课社群里的同学给出了一个网站，而笔者在此基础上，搜索多个网站后，把能「查中文字体」的神器都罗列出来，为大家做一个简单测评，看哪个更好用：</p>
+<p>[link https://www.uisdc.com/font-recognition]</p>
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="aligncenter size-full wp-image-396267" src="https://image.uisdc.com/wp-content/uploads/2020/11/bf14.png" /></span></p>
+<p>「CSS Background Patterns」是一个免费背景图生成工具，可以制作漂亮纯 CSS 背景素材，网站已提供一些基本图形设计，用户只要选取后就能立即套用到背景预览，除此之外，还能自定义背景、前景色、不透明和间距数值，实时呈现在网站上，对于想要一些简单构图背景、又不想造成阅读干扰来说是很有用的在线生成器：</p>
+<p>[link https://www.uisdc.com/css-background-patterns]</p>
+<h4><span class="auto_menu">设计师职场</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="aligncenter size-full wp-image-396267" src="https://image.uisdc.com/wp-content/uploads/2020/11/bf15.png" /></span></p>
+<p>设计师都知道作品集的重要性，但每次想整理的时候，又总觉得好像无从下手。彩云的这篇文章就跟大家聊聊，一份好作品集要怎么做以及要注意的地方：</p>
+<p>[link https://www.uisdc.com/portfolio-production]</p>
+<p><span class="img-zoom"><img alt="壹周速读：那些最有用的设计原则" class="aligncenter size-full wp-image-396267" src="https://image.uisdc.com/wp-content/uploads/2020/11/bf16.png" /></span></p>
+<p>很多刚入行的 UI 设计师，一直处于比较恶劣或者枯燥单一的工作环境里，经过一两年的实践感觉自己还在原地踏步，毫无寸进。这时候就要审视一下，未来的出路在什么地方，应该如何提升自己，要如何掌握进阶的方法，进入更好的平台中去。想要从初级设计师进阶，看这里：</p>
+<p>[link https://www.uisdc.com/ui-advanced-knowledge-points]</p>
