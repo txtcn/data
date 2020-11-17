@@ -64,7 +64,7 @@ www.google.com/js/bg/*.js$script,domain=translate.google.cn
 ➜如何解决「Google 翻译」访问及翻译 速度很慢很迟钝的问题
 https://www.appinn.com/how-to-fix-g-cn-translate-slow/	36724
 <p>这里所说的 <strong>Google 翻译</strong> 是一款免费的在线翻译工具，可以直接访问，地址是：<a href="https://translate.google.cn/?ui=tob" class="rank-math-link" target="_blank" rel="noopener">https://translate.google.cn/</a> 但最近的改版导致打开极其缓慢，已经影响使用，@<strong><a class="rank-math-link" href="https://meta.appinn.net/u/OKOK" target="_blank" rel="noopener">OKO</a></strong><a class="rank-math-link" href="https://meta.appinn.net/u/OKOK" target="_blank" rel="noopener"><strong>K</strong> 同学</a>找到了缓慢的原因并解决了它，适合于电脑浏览器。@Appinn</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/g-cn-translate.jpg!o" alt="Google 翻译" title="如何解决「Google 翻译」访问及翻译 速度很慢很迟钝的问题 25"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/g-cn-translate.jpg!o" alt="Google 翻译" title="如何解决「Google 翻译」访问及翻译 速度很慢很迟钝的问题 30"></figure></div>
 <p>一直以来，<strong>谷歌中国</strong> G.cn 提供的翻译功能是可以正常使用的，这也是谷歌中国为数不多还能正常使用的服务了。不过最近的改版导致 <strong>Google 翻译</strong> 打开很慢很慢，@<strong>OKOK</strong> 同学的原文如下：</p>
 <hr class="wp-block-separator"/>
 <h2>解决「Google 翻译」改版后，访问及翻译 速度很慢很迟钝的问题！</h2>
@@ -72,7 +72,7 @@ https://www.appinn.com/how-to-fix-g-cn-translate-slow/	36724
 <p>前段时间为了解决 Google 翻译 的<strong>翻译结果选择列表及其翻译结果溢出屏幕的问题</strong>，我写了个<a href="https://greasyfork.org/zh-CN/scripts/413721-google-%E7%BF%BB%E8%AF%91%E7%BE%8E%E5%8C%96" target="_blank" rel="noopener">油猴脚本</a>，结果刚公开分享脚本，一个星期后 Google 翻译 就改版了，而新的样式<strong>解决了溢出问题</strong>，但是<strong>又出现了一个新问题</strong>！</p>
 <blockquote class="wp-block-quote"><p>不知道是不是巧合，这个毛病很早就有了，早不修复晚不修复，偏偏我忍无可忍自己研究修复后，Google 翻译就修复了这问题。。。</p></blockquote>
 <p>那就是每次<strong>访问及翻译</strong>时都会请求 <code>google.com</code>，然而国内是无法访问这个网站的，所以导致使用体验很糟糕，翻译非常迟钝！</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/b/b41f498b8ae941e9b2b204512acfbec0a6622104.png" alt="如何解决「Google 翻译」访问及翻译 速度很慢很迟钝的问题 15" title="如何解决「Google 翻译」访问及翻译 速度很慢很迟钝的问题 26"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/b/b41f498b8ae941e9b2b204512acfbec0a6622104.png" alt="如何解决「Google 翻译」访问及翻译 速度很慢很迟钝的问题 19" title="如何解决「Google 翻译」访问及翻译 速度很慢很迟钝的问题 31"></figure></div>
 <p>给大家提供两个解决办法！</p>
 <h2>1. 屏蔽请求</h2>
 <p>如果你浏览器安装的有任意一个<strong>广告屏蔽扩展</strong>，那么可以在<strong>自定义屏蔽规则</strong>中添加：</p>
@@ -82,7 +82,7 @@ www.google.com/js/bg/*.js$script,domain=translate.google.cn
 <p>我也不清楚这个 js 文件是干嘛的，但是屏蔽后依然可以正常翻译、朗读等！</p>
 <h2>2. URL 重定向</h2>
 <p>安装一个 URL 重定向浏览器扩展，把请求中的 <a href="http://google.com/" target="_blank" rel="noopener">google.com</a> 重定向为 <a href="http://google.cn/" target="_blank" rel="noopener">google.cn</a>。</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/5/54a3106dcf5850a3a1c3aa84db1f3e3392786fd6.png" alt="如何解决「Google 翻译」访问及翻译 速度很慢很迟钝的问题 16" title="如何解决「Google 翻译」访问及翻译 速度很慢很迟钝的问题 27"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/meta/uploads/default/original/2X/5/54a3106dcf5850a3a1c3aa84db1f3e3392786fd6.png" alt="如何解决「Google 翻译」访问及翻译 速度很慢很迟钝的问题 20" title="如何解决「Google 翻译」访问及翻译 速度很慢很迟钝的问题 32"></figure></div>
 <h3>扩展下载：</h3>
 <p>我用的是 URLRedirector（URL重定向）扩展。</p>
 <ul><li><strong>Github：</strong> <a href="https://github.com/fengyc/URLRedirector" class="rank-math-link" target="_blank" rel="noopener">https://github.com/fengyc/URLRedirector</a></li><li><strong>Chrome 离线版：</strong> <a href="https://xiu.lanzoux.com/b07489s0h" target="_blank" rel="noopener">https://xiu.lanzoux.com/b07489s0h</a></li><li><strong>Chrome 商店：</strong> <a href="https://chrome.google.com/webstore/detail/maolmdhneopinciaokgohljhpdedekee" target="_blank" rel="noopener">https://chrome.google.com/webstore/detail… </a></li><li><strong>Firefox 商店：</strong> <a href="https://addons.mozilla.org/zh-CN/firefox/addon/urlredirector/" target="_blank" rel="noopener">https://addons.mozilla.org/zh-CN/firefox/addon/urlredirector/</a></li></ul>
