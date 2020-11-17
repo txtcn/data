@@ -46,6 +46,103 @@ Modulo集群软件套件进行集成。增压模块使用AMD EPYC处理器与NVI
 Booster Module单独运行时能够达到44.1 HPL PetaFLOPS，这使其成为欧洲最强大的系统。</p><p>8、意大利Eni S.p.A.公司安装的戴尔PowerEdge系统HPC5排名第八，使用了英特尔Xeon Gold CPU和NVIDIA Tesla V100
 GPU，性能达到35.5 PetaFLOPS。在榜单上用于商业用途的系统里，以这台性能最为强大。</p><p>9、安装在德克萨斯大学德克萨斯高级计算中心的戴尔C6420系统Frontera现在列在第九位，它使用其448,448个英特尔Platinum
 Xeon核心，实现了23.5 PetaFLOPS。</p><p>10、排名第十的Dammam-7安装在沙特阿拉伯的沙特阿美公司，是目前前十名中的第二台商用超级计算机，也是前十里第二台新上榜的机器。HPE Cray CS-Storm系统采用英特尔Xeon Gold
-CPU和NVIDIA Tesla V100 GPU。它在HPL基准上达到了22.4 PetaFLOPS。</p><h1>Green500的情况：</h1><p>1、最节能的系统是美国NVIDIA新推出的DGX SuperPOD。它在2.4 HPL性能运行期间取得了26.2 GigaFLOPS/Watt的能效，功耗为38MW（忽略扩展所需的额外硬件），位列TOP500的第172位。</p><p>2、上届Green500冠军MN-3。虽然它的得分从21.1提高到了26.0 GigaFLOPS/Watt，但却滑落到了第二名的位置。该系统采用MN-Core芯片，这是一款针对矩阵运算进行优化的加速器。它在TOP500中排名第332位。</p><p>3、安装在德国Forschungszentrum Jülich（FZJ），它实现了25.0 GigaFLOPS/Watt，在TOP500中排名第七。</p><p>4、阿托斯制造的另一台机器Spartan-2。它在HPL上实现了24.3 GigaFLOPS/Watt，在TOP500榜单中排名第148位。</p><p>5、Selene，效率为24.0 GigaFLOPS/Watt。它也占据了TOP500榜单的第五位。</p><p>除MN-3系统外，其余排名前五的Green500系统均采用了全新的NVIDIA A100 GPU作为加速器，同时这四款系统均采用AMD EPYC作为主CPU。</p><p>在Green500排名前40的系统中，有37个系统利用了加速器，2个系统使用了A64FX矢量处理器，1个系统（神威太湖之光）是申威多核处理器。</p><h1>TOP500其他一些数据：</h1><p>1、共有149个系统使用加速卡/协从处理器技术，比6个月前的146个有所增加。其中140个采用了NVIDIA芯片。</p><p>2、英特尔继续在TOP500的处理器份额中占据主导地位，超过90%的系统配备了Xeon或Xeon
+CPU和NVIDIA Tesla V100 GPU。它在HPL基准上达到了22.4 PetaFLOPS。</p><h1>Green500的情况：</h1><p>1、最节能的系统是美国NVIDIA新推出的DGX SuperPOD。它在2.4 HPL性能运行期间取得了26.2 GigaFLOPS/Watt的能效，功耗为38MW（忽略扩展所需的额外硬件），位列TOP500的第172位。</p><p>2、虽然上届Green500冠军MN-3的得分从21.1提高到了26.0 GigaFLOPS/Watt，但却滑落到了第二名的位置。该系统采用MN-Core芯片，这是一款针对矩阵运算进行优化的加速器。它在TOP500中排名第332位。</p><p>3、安装在德国Forschungszentrum Jülich（FZJ），它实现了25.0 GigaFLOPS/Watt，在TOP500中排名第七。</p><p>4、阿托斯制造的另一台机器Spartan-2。它在HPL上实现了24.3 GigaFLOPS/Watt，在TOP500榜单中排名第148位。</p><p>5、Selene，效率为24.0 GigaFLOPS/Watt。它也占据了TOP500榜单的第五位。</p><p>6、除MN-3系统外，其余排名前五的Green500系统均采用了全新的NVIDIA A100 GPU作为加速器，同时这四款系统均采用AMD EPYC作为主CPU。</p><p>7、在Green500排名前40的系统中，有37个系统利用了加速卡，2个系统使用了A64FX矢量处理器，1个系统（神威太湖之光）是申威多核处理器。</p><h1>TOP500其他一些数据：</h1><p>1、共有149个系统使用加速卡/协从处理器技术，比6个月前的146个有所增加。其中140个采用了NVIDIA芯片。</p><p>2、英特尔继续在TOP500的处理器份额中占据主导地位，超过90%的系统配备了Xeon或Xeon
 Phi芯片。尽管最近高性能计算领域的替代处理器架构兴起，但AMD处理器(包括中国海光的芯片)在目前的榜单中仅占21个系统，还有10个基于Power架构的系统和5个基于ARM架构的系统。不过，采用基于AMD处理器的系统数量比半年前增加了一倍。</p><p>3、系统互连的分类基本没有变化，大约一半的系统（254个）使用以太网，大约三分之一的系统（182个）使用InfiniBand，大约十分之一的系统（47个）使用OmniPath，一个系统使用Myrinet；其余的系统使用定制互连（38个）和专有网络（6个）。在总容量方面，InfiniBand连接的系统仍然占主导地位，其性能超过1个ExaFLOPS。由于Fugaku使用专有的Tofo
 D互连，6个专有网络系统的总性能（472.9 PetaFLOPS）几乎与254个基于以太网的系统（477.7 PetaFLOPS）相当。&nbsp;&nbsp;</p><p>4、中国以212台机器上榜，继续在系统占有率上领先，轻松击败美国的113台，和日本的34台。尽管系统数量较少，美国仍以668.7 PetaFLOPS的总性能领先于中国的564.0 PetaFLOPS。得益于排名第一的Fugaku系统，日本593.7 PetaFLOPS的总性能超过了中国。</p>
+➜十铨引领者EXPERT PCIe 2TB SSD评测：超高耐久让创作者放心
+http://www.expreview.com/76765.html	36720
+<!-- PCI-E 3.0,Windows 10 --><p>随着现在网络的发展，越来越多人投身内容创作行业，而数字内容创作者对电脑硬件性能是有一定需求的，所以对应的产品也相继出现，十铨T-CREATE系列就是针对内容创作者的系列，而前段时间我们测试的T-CREATE
+CLASSIC
+32GB内存套装就很能突出内容创作者的存储需求，各种内容创作软件都是非常吃内存的，同时你得有一个大硬盘来存放各种工程与素材，放HDD当然是最省钱的，但使用SSD的话确实能大幅提升软件的运行流畅度，有效提高效率，更能让使用者保持良好的心情，今天我们就要测试同属十铨T-CREATE系列的另一款产品——引领者EXPERT
+PCIe SSD。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/Team_T-CREATE/title.jpg" width="100%"/></p><p>引领者EXPERT PCIe
+SSD是一款专门为内容创作者所准备的SSD，它拥有超大的容量，而且有超高的耐久度，还有业界第一的12年超长固保，是一个可以让你安心的创作者SSD。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+title: "十铨T-CREATE EXPERT PCIe SSD规格参数",
+header:["容量","1TB","2TB"],
+width: '91%',
+columnWidth: 'AUTO', //表格宽度，"AVG"平均，"AUTO"自动（默认），指定[15,16,20]
+id: tableid,
+data: [
+["主控","慧荣SM2262EN",],
+["闪存","3D TLC",],
+["DDR4缓存","1GB","2GB"],
+["接口","PCI-E 3.0 x4,NVMe 1.3",],
+["连续读取","3400 MB/s",],
+["连续写入","3000 MB/s",],
+["4K随机读取（Max）","180000 IOPS",],
+["4K随机写入（Max）","140000 IOPS",],
+["售价","？","5999元",],
+["TBW","6000TB","12000TB"],
+["平均无故障时间","3000000小时",],
+["质保","12年",],
+]
+});</script></div><p>十铨T-CREATE引领者EXPERT PCIe
+SSD的容量只有1TB和2TB，巨大的容量足够内容创作者存放大量的工程文件与素材，而且大家应该留意到那个夸张的TBW了，是不是在怀疑我打多了一个0？并没有官方真的是这样标的，这款引领者EXPERT
+PCIe SSD的耐久度差不多是目前市场上主流TLC SSD的十倍，1TB的TBW是6000TB，而2TB的是12000TB，而此前我们所测试的三星980
+PRO 1TB的是600 TBW，2TB则是1200 TBW，引领者EXPERT PCIe
+SSD的MTBF也有普通SSD的两倍时间，达到了3,000,000小时，它主打的就是耐久度和稳定性，确保内容创作者可以安心使用。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 1; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+var istart=['Tcreate-1','Tcreate-2'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 8; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/review/2020/11/Team_T-CREATE/"; //图片目录
+var col = 2; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><p>引领者EXPERT PCIe
+SSD用的是一次性包装，延顶部的虚线撕开就能拿到SSD，保证正面就写着这款SSD是面向创作者，读取速度能到3400MB/s，而且有着超过的耐久度，并且拥有长达12年的质保服务，用的是3D
+TLC闪存。背面写着它的具体性能与耐久度，使用PCI-E 3.0 x4通道，支持NVMe 1.3。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/Team_T-CREATE/Tcreate-4m.jpg" width="100%"/></p><p>引领者EXPERT PCIe SSD与大多数M.2 SSD一样都是M.2
+2280规格，由于容量比较大，1TB与2TB都采用双面设计，SSD的正面贴着一层薄薄的金属散热片，会比那些只贴张贴纸在正面的SSD散热会好一些，钛灰色的散热片也很适合创作者这个主题。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/11/Team_T-CREATE/Tcreate-3m.jpg" width="100%"/><br/>SSD的背面，后面有两颗闪存，上面有张贴纸写着它的基本信息</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/11/Team_T-CREATE/Tcreate-5m.jpg" width="100%"/><br/>正面的金属散热片其实很薄，不过怎么都比背面的贴纸厚</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 1; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+var istart=['Tcreate-6','Tcreate-7'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 8; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/review/2020/11/Team_T-CREATE/"; //图片目录
+var col = 2; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><p>撕掉散热器和贴纸后是这样的，正面非常紧凑，主控放中间，左边是两颗DRAM缓存，右边是两颗NAND闪存，PCB的背面还安装有两颗闪存，毕竟是2TB的SSD，双面闪存很正常。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/Team_T-CREATE/Tcreate-9m.jpg" width="100%"/></p><p>SSD采用慧荣SM2262EN主控，这是一个8通道NAND控制器，每通道支持4CE，可支持ONFI 4.0/3.0和Toggle DDR
+3.0/2.0的闪存，最高每通道800MT/s，主控支持NANDXtend ECC技术，支持2KB编码字LDPC纠错技术，提升对3D
+NAND的耐用性和数据稳定性，支持端到端资料路径保护，支持即时AEC全盘数据加密等技术。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/11/Team_T-CREATE/Tcreate-8m.jpg" width="100%"/><br/>缓存是两颗三星的DDR4-2400，单颗容量1GB，总缓存容量2GB</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/11/Team_T-CREATE/Tcreate-10m.jpg" width="100%"/><br/>缓存是自封的，以微笑标记，看不出来是什么，根据官方的介绍这应该是企业级的3D TLC闪存，不然也不可能有这么大的TBW</p><h1><strong>测试平台与说明</strong></h1><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+align: 'left',
+width: '80%',
+padding: '8px 15px',
+header: ["测 试 平 台", ""],
+columnWidth: 'AUTO', //表格宽度，"AVG"平均，"AUTO"自动（默认），指定[15,16,20]
+id: tableid,
+data: [
+["<b>硬件平台</b>"],
+["CPU ","AMD Ryzen 9 5900X",],
+["主板","微星 MEG B550 UNIFY | AMD B550",],
+["显卡","NVIDIA GeForce RTX 3070 Founder Edition",],
+["内存","芝奇 焰光戟DDR4-3600 8GB*2 CL16-16-16-36",],
+["硬盘","十铨T-CREATE引领者EXPERT PCIe SSD 2TB<br>三星 980 PRO 1TB",],
+["电源","华硕 ROG THOR 1200W",],
+["显示器","AOC U2790PQU up to 3840*2160",],
+["<b>软件配置</b>"],
+["操作系统","Microsoft Windows 10 64bit build 20H2",],
+]
+});</script></div><p>测试平台使用AMD Ryzen 9 5900X处理器，主板是微星MEG B550
+UNIFY，被测SSD会被安装到直连CPU的M.2接口以获取最佳性能。</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/11/Team_T-CREATE/CDI.png"/><br/>十铨T-CREATE引领者EXPERT PCIe SSD 2TB CDI截图</p><h2 style="text-align: left;"><strong>CrystalDiskMark测试</strong></h2><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var iwd = 682; //图片宽度
+var iht = 442; //图片高度
+var pts = "CrystalDiskMark测试"; //标题
+var psc = ['真实性能', '峰值性能']; //时间轴说明
+var pimgs = ['https://img.expreview.com/review/2020/11/Team_T-CREATE/CDM_1.png', 'https://img.expreview.com/review/2020/11/Team_T-CREATE/CDM_2.png']; //图片链接
+LBInit(iwd, pts, psc, pimgs, iht);</script></div><p>先来看看CrystalDiskMark的真实性能测试，在队列深度1的时候引领者EXPERT PCIe SSD 2TB连续读写速度分别是2855/2967
+MB/s，70%读/30%写的混合测试传输速度则是2093MB/s，这样的QD1读写速度其实已经很不错了，4K QD1随机读写速度则是75/251
+MB/s，随机读写延迟是55us和16us，写入延迟很低，读取延迟表现还算不错。</p><p>峰值性能测试，这个SSD在QD8的时候连续读写速度分别是3517/3254 MB/s，基本上就是PCI-E 3.0
+x4的传输极限，混合读写的性能比QD1的时候更低，估计是主控性能限制，QD32时4K随机读写IOPS分别能达到170,000和136,000，混合也有145,000
+IOPS，是一个非常高的成绩了。</p><h2><strong>AS SSD Benchmark测试</strong></h2><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/11/Team_T-CREATE/ASSSD.png"/></p><p style="text-align:left;">使用AS SSD来测试的话引领者EXPERT PCIe SSD 2TB的连续读写速度为3014/2343 MB/s，4K
+QD1的随机读写速度是69/220MB/s，作为一个PCI-E 3.0的M.2 SSD，这性能表现其实很不错了。</p><h2 style="text-align: left;"><strong>PCMark存储测试</strong></h2><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/11/Team_T-CREATE/PCMark7.PNG" width="100%"/><br/>PCMark 7存储测试里面这款SSD的原始得分是15327</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/11/Team_T-CREATE/PCMark8.jpg" width="100%"/><br/>PCMark 8的得分是5053，传输速度611.59MB/s</p><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/11/Team_T-CREATE/PCMark10.jpg" width="100%"/><br/>PCMark 10存储测试带宽是366.97，平均存储时间75us</p><h2 style="text-align: left;"><strong>TxBENCH测试</strong></h2><p style="text-align:center;"><img border="0" src="https://img.expreview.com/review/2020/11/Team_T-CREATE/TxBENCH.png" width="100%"/></p><p style="text-align:left;">TxBENCH的全盘写入曲线，SLC Cache有305GB左右，缓存内写入速度大概3100MB/s左右，而SLC
+Cache用完后TLC的原始写入速度也有1300MB/s，速度还是很快的，不过大概8分钟之后会开始出现过热保护的现象，我们其实已经使用主板散热片压着这个SSD了，但依然会这样，最后那段就是SSD的空余闪存空间都用完了，在一边清理缓存一边写入数据，不过最低写入速度也在500MB/s附近。</p><h1 style="text-align: left;"><strong>总结</strong></h1><p style="text-align: left;">十铨T-CREATE引领者EXPERT PCIe
+SSD有着海量容量的同时也有着相当不错的性能，这都是它的卖点之一，但它最大的卖点还是它极高的耐久度，10倍于TLC
+SSD的TBW，长达12年的质保不是一般SSD可以提供的，为了让内容创作者能够安心创作，引领者EXPERT PCIe
+SSD做到了，能提供这么长的质保就代表十铨对它的质量与稳定性很有信心，否则不可能会提供12年这么长的质保期的，当然了这款SSD售价也接近企业级的水平，2TB售价5999元，价格确实挺高的，
+不过说真的它的耐久度和质保确实比企业级的还要高，就差不支持掉电保护而已。</p>
