@@ -4530,3 +4530,138 @@ http://www.woshipm.com/it/4186871.html	34534
 <p>作者：吴之猫，健康管理小硕，医疗健康产品汪+文艺猫。微信公众号：有不知</p>
 <p>本文由 @吴之猫 原创发布于人人都是产品经理，未经作者许可，禁止转载</p>
 <p>题图来自Unsplash，基于CC0协议。</p>
+➜微博核心传播者挖掘与传播规模预测研究
+http://www.woshipm.com/data-analysis/4265764.html	39262
+<blockquote><p>摘要：基于30条热门微博的全部传播数据及参与传播的账号关系，本报告利用数据挖掘方法量化地评估出各主题微博转发网络的结构特征、传播特征、内容特征，并以此建立全面、系统的综合评价体系，再结合PageRank算法思想，提出了一种有效的核心传播者挖掘算法，从而精准地评估各条微博中各节点的影响力差异，识别核心传播者。最后依据核心传播者的行为集合建立传播模型，预测了单条微博的传播规模。</p></blockquote>
+<p><img data-action="zoom" class="size-full wp-image-4267607 aligncenter" src="http://image.woshipm.com/wp-files/2020/11/CzBc9wgxAkQB6zXihiIL.jpg" alt="" width="900" height="420" /></p>
+<p>由中国新闻史学会计算传播学研究委员会与微热点大数据研究院联合举办的第二届传播数据挖掘竞赛已圆满落幕，15支战队尽显风采。以下为“核心用户挖掘与传播规模预测”选题优秀作品《社交媒体时代核心用户识别与传播规模预测分析》，由来自中国传媒大学“猪头DD的BoysandGirls天天有钱”精彩呈现。</p>
+<h2>一、引言</h2>
+<p>作为一种基于用户关系信息分享、传播以及获取的社交平台，当前微博已成为中国最重要的公共空间，而微博的核心传播者起着舆论引导甚至改变舆情发展方向的重要作用。微博核心传播者的挖掘对信息的传播与演化的深度分析、舆情监控和引导都具有重要意义。另一方面，也为提供个性化服务以及差异广告的投递提供便利。如何挖掘微博核心传播者，成为我们关注的议题。</p>
+<h2>二、问题的提出与分析</h2>
+<p>挖掘核心传播者是本报告的核心议题。在此背景下，提出以下四个子问题：</p>
+<ol>
+<li>核心传播者如何定义，存在什么样的特征？</li>
+<li>未知个体身份信息的情况下，基于30条热门微博的全部传播数据及参与传播的账号关系，如何对核心传播者的关键特征进行有效量化？</li>
+<li>如何基于量化的关键特征建立全面系统的评价体系并精准地评估各条微博中各节点的影响力差异，并识别核心传播者？</li>
+<li>在有限的信息中如何较准确地刻画出核心传播者的行为画像，进而建立有效的模型预测单条微博的传播规模？</li>
+</ol>
+<h2>三、研究过程与方法</h2>
+<h3>3.1 微博核心传播者概念辨析</h3>
+<p>本报告中的“微博核心传播者挖掘”和“意见领袖挖掘”不同。在《人民的选择》中，拉扎斯菲尔德(Lazarsfeld)首次提出“意见领袖”。意见领袖作为媒介信息的影响的中继和过滤环节，对大众传播效果产生重要影响，是大众传播中不可缺少的一部分。</p>
+<p>关于微博意见领袖挖掘的研究众多，但当前大多数挖掘意见领袖是基于微博整个的传播环境而言。</p>
+<p>本研究从给定的数据集里找“核心传播者”，非严格意义上的“意见领袖”，不考虑用户评论、点赞、活跃度等因素。笔者基于研究范围，将本文的微博核心传播者定义为：在微博信息传递中，对舆论的发展能起到关键性的导向作用，具有影响他人态度和行为的能力，能加快传播速度并扩大影响的用户。</p>
+<h3>3.2 核心传播者影响力特征</h3>
+<p>基于对用户节点的深度分析，综合用户节点的各类属性，本研究基于30条热门微博的全部传播数据及参与传播的账号关系，选取用户的结构特征、传播特征和内容特征作为用户影响力特征,并以此建立综合评价体系：</p>
+<p><strong>3.2.1 结构特征</strong></p>
+<p>结构特征体现了用户本身因素和所在网络拓扑的结构因素，通常可以由粉丝数，关注数，中心度等属性表示。附录A图1显示了一个社交网络拓扑图。但由于数据集所限，同时为了提高准确度，本研究将用户的结构特征指标归结为以下两点：</p>
+<p>（1）用户关注数。关注数代表用户能力范围内的信息接受度，核心传播者的关注数应该在一个合理区间内。</p>
+<p>（2）用户粉丝数。因粉丝数在数据集中未给出，本研究使用倒排索引法从用户关注集合中反向找出用户粉丝集合。附录A图2显示了该方法得到的用户粉丝数符合幂律分布，且获取的用户为实际参与到传播行为的“激活用户&#8221;,是粉丝中对传播贡献最为显着的部分，故可将该结果用于构建用户结构特征指标。</p>
+<p><strong>3.2.2 传播特征</strong></p>
+<p>用户的传播特征即用户在信息传播过程中的传播行为特征，通常表现为在一段时间内发布的微博数和微博被点赞、被转发和被评论的数量等。同样因数据集所限，只将特征固定在转发数。同时，我们通常认为，当用户发布的微博被非粉丝转发条数越多，说明其影响力不局限于固定受众，影响力可能越大。因此，本研究将传播特征区分为粉丝转发数和非粉丝转发数。</p>
+<p><strong>3.2.3 内容特征</strong></p>
+<p>在意见领袖挖掘问题中，用户的影响力不能简单地从结构特征和行为特征衡量，还需要从语义内容角度去评价特定用户对于某一话题的观点[1]，内容特征参考以下两点：</p>
+<p>（1）文本相似度。微博社交网络大量的“灌水”、“刷数据”的行为使得许多转发行为在内容上与原内容无关，表达价值有限，因而引入文本相似度以衡量转发文本与原微博在内容上的相关程度，具有与原微博较高相似度的转发文本才能真正传播观点和内容，方能实现核心传播者所应具备的“扩大影响”以及“引导舆论走向”的职能要求。</p>
+<p>（2）内容情感倾向。在微博社交网络中，原创微博会引发大量的转发，转发内容综合体现了众人的褒贬情感。识别信息传播过程中传播者的主流情感态度, 有利于筛选出引导舆论发展方向、对其他受众施加显着影响的真正核心传播者。</p>
+<h3>3.3 核心传播者的指标权重</h3>
+<p>以结构特征、传播特征、内容特征为分析指标，运用模煳层次分析法确定指标权重。模煳层次分析法（FAHP）判断指标元素权重相较传统的层次分析法具有计算过程复杂度低与计算结果分辨率高等优点，有利于提高排序与决策的科学性。</p>
+<h3>3.4 核心传播者挖掘算法</h3>
+<p><strong>3.4.1 评价体系各指标量化方法</strong></p>
+<p>结构特征和传播特征数据能够较为容易地从数据集中获得。在内容特征方面，对于情感指数，首先需要对用户的转发文本的情感极性进行分类。本文采用LSTM神经网络训练了10万条带有正负情感标记的微博转发、评论文本数据集，经过五轮训练，准确率高达94%，损失函数则低至0.37（见附录A图3），具有较好的预测效果。</p>
+<p>随后，由于模型的预测结果实际是文本内容为正向及负向的双向可能性，尝试以情感极性的期望描述情感的强烈程度。（文本情感极性分析流程见附录A图4）众多研究表明网络的负面情绪往往相比正向情绪具有更大的传播效果，因而得到公式:</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/wZspKNODHKYnpsilntba.png" /></p>
+<p>文本相关度则利用TF-IDF算法获取。由于微博转发文本主要针对热点事件、话题开展讨论，共输入1000余篇完成分词的新闻文本构造出词典并构建TF-IDF模型，最后以此进行原微博文本与转发文本的相似度匹配。</p>
+<p><strong>3.4.2 预处理问题</strong></p>
+<p>在内容属性挖掘过程中，本研究首先对转发文本的非汉字词组、标点、用户昵称等进行了过滤。由于每种特征数据具有不同的量纲，因此采用min-max标准化对数据进行线性转换，将结果映射到（0,1）之间。转换函数为：</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/FZdnGxccemK21DOxqmoi.png" /></p>
+<p>综上得到综合评价指数计算公式：</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/GyuwYXox6TkPMn2nhToC.png" /></p>
+<p><strong>3.4.3 改进的PageRank算法</strong></p>
+<p>三维度的综合评价体系可以有效评估一个节点本身的直接影响力，然而用户的影响力与传播效果除了本身的直接影响，还应包括传递本节点观点的后续节点传播所带来的间接影响。由此，本研究尝试引入网页排名算法PageRank 思想：</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/xOA8VKQcSLdXz7Eoi8LQ.png" /></p>
+<p>其中，Vn,Vn-1代表一系列节点组成pagerank值向量，M为N×N概率转移矩阵。相较于传统微博影响力研究针对粉丝-关注网络进行PageRank计算，本研究创新性地将PageRank思想引入微博转发网络。PageRank算法的思想与微博转发网络相吻合。因此本研究将构建由转发者指向被转发者的有向关系图。</p>
+<p>但PageRank的弊端在于过分看重外部链接的间接价值而忽视了节点本身的直接价值，前文所述三维度指标体系恰好可以较为全面评价一个节点本身的直接影响力和价值。参考陈淑娟[2]、冯勇[3]等的研究思路，本研究将节点i的综合评价指数I作为权重参数乘至到PageRank转移概率矩阵中第i列(即为所有节点链接到节点i的概率加权)，从而影响PageRank的迭代结果。</p>
+<p>本处数学处理的意义可解释为：当一个转发用户的自身影响力与传播价值较高，任何对他进行二次转发的节点将有更大的概率将流量引向该用户。</p>
+<p>综上，改进后的用户影响力(User Influence, UI)的矩阵表达式如下：</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/jwNtVVAekO7PgsPc6Ljb.png" /></p>
+<p>其中AIndex为本微博各转发节点综合评价指数所组成的N×N对角矩阵，Vn为n次迭代后得到的N个节点的UI值组成的向量。</p>
+<h3>3.5 预测单条微博传播规模</h3>
+<p><strong>3.5.1 核心传播者的信息传播动力学建模</strong></p>
+<p>信息在社交媒体中的传播模式呈现出去中心化的特点，核心传播者在信息传播过程中带动了大量的二次传播[4]。本研究对核心传播者带动的信息传播模式进行可视化（附录A图5）发现，绝大多数的核心传播者的转发能够迅速引起大量的二次转发，之后转发数迅速下降，进入到慢速传播状态，直至转发数极低或者为零。</p>
+<p>由此，本研究对核心传播者的信息传播模型借由Wang等人[5]的思想：在信息传播初期，单位时间内核心传播者带动的转发数为幂律衰减函数，随后核心传播者的影响力和信息新鲜度下降，转发数又呈现出指数衰减。因此将核心传播者的信息传播过程表示如下：</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/iSF8QlbUWbC304G05pmQ.png" /></p>
+<p>其中，F0，α，τ为预估参数。F0为用户初始影响力，在本研究中，其决定因素为结构特征；α为核心传播者的影响力衰减速度，τ为核心传播者影响力的持续时间，二者的大小是信息传播过程中多种因素交织的结果，在本研究中简化为由结构特征、内容特征和微博转发时间决定。3.5.2 预测单条微博传播规模</p>
+<p>本研究将数据集中的30条热门微博分为训练集和测试集，其中训练集内微博数量为22，用来得到各个核心传播者的参数；测试集内微博数量为8，用来预测核心传播者的单条微博传播规模。</p>
+<p>对训练集中的所有核心传播者分别用公式（6）进行非线性最小二乘拟合，得到各个核心传播者的信息传播模型参数，并利用相关系数R2进行拟合效果的评价。由于测试集中的核心传播者不一定出现在训练集中，所以当预测一个新的核心传播者的传播规模时，需要计算其与已知核心传播者的差异。</p>
+<p>本研究选用粉丝数、关注数、情感值、文本相关值和转发时间距原微博发布时间的时间间隔五个特征来度量用户属性。对数据用式（2）进行标准化处理，得到用户之间的距离计算公式为：</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/DdUTDgjNKZUBMh1FrnyG.png" /></p>
+<p>其中，x1k、x2k分别为用户1和用户2在第k维度的特征值。选取与当前核心传播者距离最小的核心传播者的参数作为前者的参数，从而预测当前核心传播者单条微博的传播规模。综上，本研究的研究思路与流程如附录A图6所示。</p>
+<h2>四、研究结果与发现</h2>
+<h3>4.1 数据集</h3>
+<p>本研究使用微博提供的基于30条热门微博的全部传播数据及参与传播的账号关系，附录B表1为数据的基本概要，附录A图7为30条微博的主题分类。</p>
+<h3>4.2 综合评价体系的构建</h3>
+<p>本研究邀请了传播学和大数据方向的专家进行对评价体系进行研判，被调查者结合舆情传播理论和自身经验对影响指标因素，进行最小、中间、最大比值的三值评分，进而通过三角模煳法进行模煳层次分析，表1和附录A图8为得到的各指标权重。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/KPnMPuXam27e7Z0dhet4.png" /></p>
+<h3>4.3 核心传播者挖掘结果</h3>
+<p>综合评价体系中，结果特征、传播特征均通过python的pandas等数据分析库在源数据中进行定向抓取。情感分析采用keras进行LSTM模型的训练并利用模型挖掘。以第26条微博“少年的你”数据结果为例，按PageRank排名取前十位核心传播者见附录B表2。</p>
+<h3>4.4 核心传播者挖掘结果验证与对比分析</h3>
+<p>为验证核心传播者挖掘算法的有效性，本研究尝试通过微博文本内容手动检索实际微博及挖掘出的核心用户的有效信息，利用检索结果以及微热点分析结果，开展如下对比分析。</p>
+<p><strong>4.4.1 核心用户信息溯源</strong></p>
+<p>以第26条微博为例，本研究根据用户的转发数据以及文本内容于微博平台进行信息溯源，并完成以下验证：</p>
+<p>（1）关键转发者大多拥有一定规模粉丝量。最小粉丝规模2000+，最大粉丝规模45.6万+；</p>
+<p>（2）关键转发者为该相关话题知名账号，大多拥有新浪官方认证、活跃用户、粉丝大咖等标识。例如用户@我亲爱的拥有和虚无（即附录B表3核心转发者排名第二，用户ID为b672fadcb306797bbba44cae1ecf576 5）；</p>
+<p>（3）分析所得账号的发博频率和转发互动率均有较好表现。例如用户@赤颊（即附录B表3核心转发者排名第九，用户ID为4cd45eb84d5a48e142011b8 1af4f044f）。</p>
+<p>综上，在用户粉丝规模、账号特征和属性、账号活跃度和粉丝互动率等方面进行综合评测，认为以上关键转发者符合本研究的核心传播者意义。</p>
+<p><strong>4.4.2 与微热点进行对比分析</strong></p>
+<p>本研究依托微博分析工具微热点(微舆情)对原始微博进行“微博传播分析”，结果见附录A图9,与本研究结果对比可得：前十名的核心传播者中，前五名结果一致，六至十名用户一致但排名稍有变动，原因为研究方法与微热点统计方法存在差异。</p>
+<p>即微热点中各引爆点的参考依据仅为二次转发数量这一指标，而本研究所使用的方法，除此之外加入对用户关注及粉丝数、是否为粉丝转发、文本相关度及内容情感的参考，使得其更符合本研究对核心传播者的定义。本研究作法也使得数据的参考价值局不限于单条微博，在微博的大舆论环境中，考虑核心传播者本身所具备的能量。</p>
+<p>综上，综合判定该研究方法所得结果符合要求并具有一定通用性。</p>
+<h3>4.5 单条微博规模预测结果</h3>
+<p>在得到所有已知核心传播者之后，便可以对训练集中的核心传播者模型参数进行拟合并存储，然后对测试集中的核心传播者的传播规模进行预测。</p>
+<p>具体流程如附录A图10所示。其中，为更合理地预测实时消息，在当前核心传播者转发微博后，等待10分钟，获取其该微博的被转发数,用如下公式计算其相对初始影响力：</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/WiuC8bzTjbE77tTrXTRO.png" /></p>
+<p>其中F0为数据库中核心传播者的初始影响力，N10为数据库中核心传播者在10分钟内的被转发数。之后便可用公式（6）计算当前核心传播者的传播规模。附录A图11为对测试集中的一条微博的8位关键传播者进行的传播规模预测，观察可知本方法较好地预测了各个核心传播者的传播规律与规模,在最终传播规模的预测上，8位关键传播者实际引发了1152次转发，而根据模型预测的最终值为1340，准确率达到83.68%。</p>
+<h2>五、研究结论和讨论</h2>
+<p>实验及分析比对结果表明，本研究能够准确挖掘到核心传播者，所提模型和方法，也能够较好地刻画意见领袖在消息传播过程中所起到的作用,能够较好地对单条微博的传播趋势和规模进行预测，这对于微博中公众舆论的引导以及广告定点投放等具有重要意义。</p>
+<p>在构建模型和挖掘核心传播者的过程中，我们也可以发现，核心传播者具有区别于其他普通传播者的特征，例如：一定数量的粉丝规模和关注数，发布的博文质量更高，能够带动更大的转发量等。</p>
+<p>由于篇幅限制，部分研究方法细节和实验结果说明难以得到充分展示。</p>
+<p>本研究也存在不足之处：第一，模煳层次分析法包含专家的主观判断，无法彻底避免评价的主观性；第二，研究缺乏更全面的用户行为数据且数据量较小，所以难以更精准地挖掘出核心传播者，传播规模预测效果有待进一步提高。这些将是本研究的未来改进方向。</p>
+<h2>参考文献</h2>
+<p>[1]Song K，Wang D，Feng S，et al．Detecting opinion leader dynamically in Chinese news comments［A］．Web-Age Information Management［M］．Berlin Heidelberg: Springer，2012. 197－209[2] 陈淑娟,徐雅斌.面向主题社团的意见领袖挖掘方法[J/OL].计算机工程与应用:1-11[2020-05-31].http: //kns.cnki.net/kcms/detail/11.2127.TP.20200109.1653.006.html.</p>
+<p>[3]冯勇,马宇光,刘建.微博营销中融合行为分析的重要用户发现方法[J].小型微型计算机系统,2019,40(0 8):1646-1651.</p>
+<p>[4] 高金华,刘悦,程学旗.去中心化的微博传播动力学建模[J].中国科学:信息科学,2018, 048(011):P.1575-1588.</p>
+<p>[5] WANG Chenxu, GUAN Xiaohong, QIN Tao, ZHOU Yadong. Modeling on Opinion Leader&#8217;s Influence in Microblog Message Propagation and Its Application[J]. Journal of Software, 2015, 26(6): 1473-1485</p>
+<h2>附录A</h2>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/2uSmoUcZ4uTqV9UWgkKx.png" /></p>
+<p style="text-align: center;"><strong>图1 社交网络拓扑图</strong></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/JxxQrNn0GdmIFyAfyJpZ.png" /></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/23ZG2l8IkyUzqS1oY8vn.png" /></p>
+<p style="text-align: center;"><strong>图2粉丝数分布情况</strong></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/37WHIABZ3rKhYprslj3b.png" /></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/uNkFXVQaXK4SmX8eKacO.png" /></p>
+<p style="text-align: center;"><strong>图3 LSTM神经网络进行情感分类的准确率与损失函数</strong></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/OklmIkRTiJyQYo2o3xtm.png" /></p>
+<p style="text-align: center;"><strong>图4 文本情感极性分析流程</strong></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/0MpRI84AxQf7GbLKrDEj.png" /></p>
+<p style="text-align: center;"><strong>图5一条典型的核心传播者带动的微博的传播模式</strong></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/3NmF5P84yRxCPxTPIPo2.png" /></p>
+<p style="text-align: center;"><strong>图6 本研究的研究思路与流程</strong></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/WEVaLEVH3CStkkTKvuCf.png" /></p>
+<p style="text-align: center;"><strong>图7 30条微博主题分类</strong></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/9IpRdRhqibW46rIgcbhT.png" /></p>
+<p style="text-align: center;"><strong>图8 各指标权重可视化</strong></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/neXXiJcRoSjOJtSy5CKr.png" /></p>
+<p style="text-align: center;"><strong>图9 微热点分析意见领袖图</strong></p>
+<p style="text-align: center;">（截至截图时间2020年05月26日数据）</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/hKS9Gn5f4cCoa4mSObp1.png" /></p>
+<p style="text-align: center;"><strong>图10 传播规模预测流程</strong></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/qrtm81el7EH8rZmSEYUd.jpeg" /></p>
+<p style="text-align: center;"><strong>图11 单条微博核心传播者传播规模预测结果</strong></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/fHreKMTBAG7lk9y71DKX.png" /></p>
+<p style="text-align: center;"><strong>图12 30条微博部分核心传播者传播规模预测结果</strong></p>
+<h2>附录B</h2>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/630nKC76ZBL5pSLoydpp.png" /></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/kV5fWmQy2YzBQO0HW6v9.png" /></p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/11/av15VqPUnmYwNHi88src.png" /></p>
+<p>&nbsp;</p>
+<p>本文由 @数据锅 原创发布于人人都是产品经理，未经许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
