@@ -1,0 +1,73 @@
+➜苹果M1芯片详解：性能及能效成倍提升，英特尔酷睿i9也不是对手？
+http://www.sohu.com/a/431190767_128469	53099
+<p class="ql-align-center" style="text-align: center;"><img src="http://p4.itc.cn/images01/20201111/998f08090f9a42a89538b5feca20049b.jpeg" max-width="600" /></p>
+<p>北京时间11月11日凌晨，苹果举行新品发布会，正式发布了首款针对Mac电脑的自研芯片，即此前苹果公布的“Apple Silicon”，命名为M1。与此同时，苹果还推出了三款搭载M1芯片的产品，分别是新一代的入门级笔记本MacBookAir、新款高端笔记本MacBook Pro、新款迷你版台式机Mac Mini。这三款产品的起售价分别为7999元、9999元和5299元，目前已经接受预订，下周发货。</p>
+<p>早在今年6月的WWDC2020大会上，苹果就正式宣布了将针对旗下的Mac电脑产品推出基于Arm架构的全新自研芯片，并在两年内逐步替代X86架构的英特尔处理器的计划。</p>
+<p>那么接下来我们就来看看，苹果针对Mac电脑的首款定制芯片M1到底有多强。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p1.itc.cn/images01/20201111/e430bcd0ae994fc99ef33b158cd5def9.jpeg" max-width="600" /></p>
+<p><strong>160亿个晶体管</strong></p>
+<p>首先，苹果M1芯片似乎并不是A14的简单升级版，虽然都是基于台积电的5nm工艺打造，但是M1拥有高达160亿个晶体管，相比之前的A14的118亿个晶体管提升了约35.6%，同时也高于麒麟9000的153亿个晶体管。</p>
+<p>而对于处理器来说，同等制程下，晶体管数量多少往往直接意味着芯片性能的强弱。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>8核CPU：性能及能效远超英特尔x86 CPU</strong></p>
+<p>在CPU部分，M1芯片集成了8个核心，包括4个高性能大核心和4个高效能小核心，不过主频并未公布，官方称8个CPU核心可混合运行以协助处理多线程任务。而此前的A14则只有两个高性能大核心。</p>
+<p>苹果还表示其M1的大核是目前最强大的内核，性能相比上一代基于Intel处理器的Macbook Air提升了3.5倍，能带来极强的性能，在多个应用场景下均有出色表现。</p>
+<p>根据此前网上曝光的疑似搭载M1处理器的设备的Geekbench 5跑分显示，M1的单核基准测试得分为1634，多核基准测试得分为7220。作为对比，A14单核基准测试得分1583，多核基准测试得分为4198；配备Intel Core i9处理器的16英寸MacBook Pro，单核基准测试得分1096，多核基准测试得分为6869。从跑分结果来看，M1的性能已经超过了Intel Core i9（酷睿i9-9880）处理器。</p>
+<p>那么苹果是如何实现其M1芯片在CUP性能上的巨大提升的呢？</p>
+<p>众所周知，苹果是目前为数不多的拥有基于Arm指令集自主设计移动处理器能力的智能手机厂商，即便是三星在推出几代的自研猫鼬CPU内核之后，最终还是放弃了。可以说，在自研移动CPU内核方面，苹果的技术实力甚至要强于高通。</p>
+<p>早在2013年，苹果就推出了全球首款基于64位的ARMv8指令集的移动处理器——苹果A7，并首发应用于iPhone 5S上。相比之下，首款基于Arm的首个64位CPU内核Cortex-A57的处理器直到2014年才正式推出。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201111/32cfa717e07d4a6d91b39f96cf7c4764.png" max-width="600" /></p>
+<p>而当时苹果A7的CPU内核采用的则是苹果自研的“Cyclone”微架构，苹果也将其称之为“桌面级架构”。或许从那时起，苹果就已经开始决定在未来某个时间点，将其自研CPU推向桌面级Mac产品。</p>
+<p>根据Anandtech报道称，苹果今年推出的A14处理器的大核CPU采用了全新的“Firestorm”微架构，其拥有高达8个宽度的解码块，目前仅有IBM POWER10中的P10内核拥有这样的解码器设计。相比之下，目前英特尔的x86 CPU仍然只采用4-wide的解码器设计，Arm最新的Cortex-X1内核也只有5-wide解码器设计。此外，Firestorm还具有极强的乱序执行能力。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201111/e7fc27a98ec34fb5b8f557db1d691e12.png" max-width="600" /></p>
+<p>Anandtech通过分析苹果公布的M1芯片内部结构图后，认为苹果M1芯片的大核心依然是Firestorm微架构。不过M1的二级缓存升级到了16MB，相比之下A14仅有4MB的二级缓存。另外，M1的Icestorm小核心可能也已经进行了大的修改。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p1.itc.cn/images01/20201111/5c3a86a1d2344c66b831898557014aea.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p9.itc.cn/images01/20201111/e259a7c2bffc4677b30c2398c42766dd.png" max-width="600" /></p>
+<p>△苹果M1内部结构图</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p4.itc.cn/images01/20201111/5ca6bcaed9f04fe4a91206420804d346.jpeg" max-width="600" /></p>
+<p>△苹果A14内部结构图</p>
+<p>苹果表示M1小核心在保证基本性能的同时，能耗却只有前代的十分之一，可高效处理轻量级任务。</p>
+<p>而大小核心的协同工作，不仅保证了整体的CPU性能，还提供了绝佳的能效比。苹果表示，相比2012年时的Mac产品所搭载的处理器，M1芯片的CPU能效比已经提升了3倍。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p8.itc.cn/images01/20201111/ba9e1dc5acf4459b9e07a5b0bb2f713b.png" max-width="600" /></p>
+<p>根据苹果展示的PPT显示，在10W的功耗限制下，M1芯片可提供传统X86笔记本处理器2倍以上的CPU性能。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p7.itc.cn/images01/20201111/935458c558e548c9b242bad5e33d4e19.jpeg" max-width="600" /></p>
+<p><strong>8核GPU，性能达竞品两倍</strong></p>
+<p>早在2017年苹果就曾宣布将在未来两年内停止使用Imagination的GPU，转而采用自研的GPU。不过此后几年在自研GPU上，苹果的进展似乎并不顺利，或许研发遇到了问题，又或是因为难以避开Imagination的相关专利，今年1月，苹果与Imagination重新达成了新的多年的专利授权协议。在此背景之下，全新的M1芯片的GPU性能也是值得期待。</p>
+<p>苹果M1配备了8核心的GPU，相比A14的GPU核心数量提升了一倍，再加上5nm工艺的加持，苹果表示，M1的GPU兼顾了性能和能效，可能是世界最强的集显，不论是剪辑还是播放多个全画质4K视频流等重负载也没有什么压力。</p>
+<p>根据苹果公布的数据显示，在同等功耗下，M1的GPU性能是其他最新推出的笔记本芯片的GPU性能的两倍，而在同等性下，M1的功耗只有其他笔记本电脑芯片的1/3。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p7.itc.cn/images01/20201111/9a8d026443bb41d7abd12d1a708b9c5d.png" max-width="600" /></p>
+<p><strong>16核NPU，算力11TOPS</strong></p>
+<p>苹果M1芯片还集成了与A14一样的16核的神经网络处理器（NPU），不过算力只有11TOPS，相比之下A14的NPU的算力则达到了11.8 TOPS。不知道苹果是出于何种考虑，降低了M1的NPU的算力？不过，这一点完全可以通过CPU和GPU性能的大幅提升来弥补。</p>
+<p>苹果表示，得益于M1强大的人工智能算力，搭载M1芯片的产品可以轻松的识别照片和视频中的家人和朋友，理解自然的语音来进行听写，甚至通过分析音频来识别笑声、掌声等。</p>
+<p><strong>16GB的统一DRAM</strong></p>
+<p>此外，M1芯片还支持高达16GB的具有高带宽、低延迟特性的统一内存体系架构，可以让各种应用能在CPU、GPU和NPU间高效地共享数据，从而可以更快速的处理各种任务。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p4.itc.cn/images01/20201111/96d85cfee0b84f458bfc694e56c460e6.png" max-width="600" /></p>
+<p><strong>M1处理器加持，Mac产品性能及续航成倍提升</strong></p>
+<p>具体到产品上，苹果表示，搭载M1的新款Macbook Air的CPU性能是上一代基于英特尔处理的Macbook Air的3.5倍，GPU则提升了5倍，机器学习性能提升也提升了9倍。苹果称其整体性能超过了98%的PC笔记本。</p>
+<p>而基于M1芯片的新款Mac mini，较上一代基于英特尔处理器的Mac mini，在CPU性能上提升了3倍，GPU性能提升了6倍，机器学习性能提升了15倍。整体性能相比其他最畅销的PC性能高出了5倍，但体积只有它们的1/10。</p>
+<p>在具体的应用的性能提升上，苹果表示，配备M1芯片的全新MacBook Air在Final Cut Pro、Xcode、Logic Pro、Adobe Lightroom等专业生产力软件中，性能都有显着的提升。</p>
+<p>比如Final Cut Pro的转码速度最高提升了3.9倍；</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p5.itc.cn/images01/20201111/c81fdda3e5da40408ba892cc8d3851aa.jpeg" max-width="600" /></p>
+<p>Xcode的项目构建速度最快提升了3.6倍；</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p5.itc.cn/images01/20201111/f4baf26a621a4287b540010c98c65098.jpeg" max-width="600" /></p>
+<p>Logic Pro的Amp Designer插件数量可增至2.5倍；</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p8.itc.cn/images01/20201111/d6f6234806a3450f994a77ff6fa715e5.jpeg" max-width="600" /></p>
+<p>Adobe Lightroom的图像导出速度最快提升了2.3倍。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p7.itc.cn/images01/20201111/81f919bd6b924bab92b090c83aced94c.jpeg" max-width="600" /></p>
+<p>苹果公司软件工程高级副总裁Craig Federighi还表示，基于M1芯片的Mac，运行JavaScript的速度提升了1.5倍，响应速度快了1.0倍。</p>
+<p>在续航方面，得益于M1的高能效特性，其电池寿命也相比上一代的Macbook提升了2倍。苹果表示全新MacBook Air续航可长达18小时，全新MacBook Pro 13续航更是破纪录达到了20小时。可让用户不接电源的情况下，移动办公时间更加持久。此外，更高的芯片能耗比，还意味着实现同样的性能所带来的发热量更低，因此全新的MacBook Air可以再次回归无风扇设计，做到高性能与低噪音兼顾。</p>
+<p><strong>软硬件的大一统</strong></p>
+<p>从首款采用自研芯片的iPhone 4开始，苹果就一直在推动软硬件跨平台的大一统。此前iPhone、iPad、Apple Watch等产品都采用的是基于Arm架构苹果自研芯片，及苹果自己系统。但唯独在苹果的Mac电脑上，依然采用的是基于X86架构的Intel处理器。由于底层硬件的不同，也使得苹果在系统软件生态上产生了割裂，移动设备上是一套硬件和软件系统，Mac产品上是一套硬件和软件系统。</p>
+<p>而随着苹果自研Mac芯片的推出，将进一步提升苹果整体的软硬件一体化的优化整合能力。使得苹果的iPhone、iPad、Mac等产品都将基于同样的Arm芯片架构，从而使得的外围硬件生态可以共享，更为关键的是，这也将彻底打通iPhone、iPad、Mac的系统软件生态，在Mac电脑上同时运行iPhone和iPad软件将不再是问题。</p>
+<p class="ql-align-center" style="text-align: center;">在此前的WWDC2020大会上，苹果就曾表示，开发人员还可以在基于其自研处理器的Mac产品上正常使用iOS和iPadOS应用程序，而无需进行任何修改。新推出的macOS Big Sur系统也已经可以平稳、无缝地过渡到苹果Mac芯片。</p>
+<p>而为了让开发者能将原来运行在X86架构Intel芯片之上的Mac应用，更轻松的适配苹果自研的Mac处理器，苹果还提供了一系列的工具。比如，可帮助开发者构建同时能在x86和Arm架构芯片上运行的应用的Universal 2，可以自动将为英特尔处理器编写的指令转译苹果Arm芯片可以理解的指令，使得苹果Arm芯片直接能运行原x86平台应用程序Rosetta 2。</p>
+<p>在今天的发布会上，苹果表示，目前基于M1芯片的Mac产品已经可以运行各种苹果原生应用。M1芯片还将在下个月支持Lightroom，明年支持Photoshop。所有应用在M1芯片上运行非常流畅，渲染效果也很出色。</p>
+<p>可以预见的是，随着M1的顺利推出，并成功在Mac产品上应用，苹果利用自研Mac芯片替代英特尔X86处理器的计划或将进一步提速，可能用不到两年就会全部完成替换。毕竟，凭借苹果自身强大的出货能力，自研的Mac芯片的成本要远低于采购英特尔处理器的成本。</p>
+<p>编辑：芯智讯-浪客剑</p>

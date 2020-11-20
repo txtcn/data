@@ -1,0 +1,153 @@
+➜收购eASIC两年之后，Intel发布首款结构化ASIC产品N5X
+http://www.sohu.com/a/432742242_128469	51770
+<p style="text-align: left;">11月18日，英特尔在线上举办了“2020英特尔FPGA技术大会”，正式发布了全新可定制解决方案英特尔eASIC N5X，将帮助加速5G、人工智能、云端与边缘工作负载的应用性能。</p>
+<p style="text-align: left;">作为英特尔于2018年收购eASIC之后推出的首款结构化eASIC产品系列，eASIC N5X搭载了英特尔® FPGA兼容的硬件处理器系统，通过FPGA中的嵌入式硬件处理器帮助客户将定制逻辑与设计迁移到结构化ASIC中，带来了更低的单位成本，更快的性能和更低的功耗等好处。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p0.itc.cn/images01/20201118/6ee8af248c444ac78e23b752fc5888b7.jpeg" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;">△英特尔首款用于5G、人工智能、云端与边缘的结构化ASIC</p>
+<p style="text-align: left;">此次英特尔推出的eASIC N5X系列结构化ASIC共有5款产品，配备了0.7-8.83百个结构化逻辑元件，等效7-8.8百万门ASIC，同时还集成了四个主频1.5Ghz的64位 Arm Cortex-A53内核，以及源自英特尔Agilex FPGA产品系列的具备身份验证和防篡改特性的安全数据管理器。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20201118/82f437e92a184a6098d9c0cb689288f4.png" max-width="600" /></p>
+<p style="text-align: left;">英特尔表示，与自己的Agilex FPGA AGF014相比，eASIC N5X （N5X047）在同样的逻辑时钟频率和内存时钟频率下，核心功耗降低了50%，并且单位成本也降低了50%。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">此外，由于在结构化 ASIC中使用预定义基础阵列需要的掩码层自定义和设计步骤更少，因此与标准单元ASIC 相比，NRE（一次性工程费用）更低，工程量更少。因此，相比标准单元ASIC，eASIC N5X可缩短上市时间，并降低非经常性工程成本。</p>
+<p style="text-align: left;">因此，用户可以凭借N5X器件快速创建功耗优化、高性能、高度差异化、低成本的解决方案，并且可以满足许多应用的关键安全性需求。</p>
+<p class="ql-align-center" style="text-align: center;">英特尔公司副总裁、可编程解决方案事业部总经理Dave Moore表示： “数据改变行业和商业的潜力从未如此之大。英特尔® eASIC N5X给我们的客户带来了独特优势，让他们得以同时充分享受英特尔FPGA带来的灵活性和面市速度的优势，以及结构化ASIC带来的更低运行能耗的性能效益。通过我们称之为‘定制逻辑连续体’的英特尔FPGA、eASIC和ASIC产品组合让客户得以利用数据的潜力，这是市场上其它厂商无法做到的。”</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201118/9591571c96b647b48bed6a495047150a.png" max-width="600" /></p>
+<p style="text-align: left;">△英特尔公司副总裁、可编程解决方案事业部总经理Dave Moore</p>
+<p style="text-align: left;"><strong>夹缝中求生的eASIC迎来新篇章？</strong></p>
+<p style="text-align: left;">众所周知，FPGA是一种可编程的半定制芯片，其与GPU一样具有并行处理优势，并且也可以设计成具有多内核的形态，当然其最大的优势还是在于其可编程的特性。这也意味着用户可以根据需要的逻辑功能对电路进行快速烧录。即使是出厂后的成品FPGA的逻辑块和连接，用户无需改变硬件，就可通过升级软件来配置这些芯片来实现自定义硬件功能。</p>
+<p style="text-align: left;">但是，FPGA是用硅片面积来换取灵活性的，天生不足表现为资源利用率低、价格昂贵。FPGA中的互联使用的是专用可编程连线模块，80%的硅片面积被用作布线路由，要多绕许多路径，要过许多用晶体管搭建的开关。将基于SRAM的查找表LUT逻辑单元组成逻辑电路所需要的逻辑层数比直接使用片上金属线做互联的定制化ASIC多。因此，在速度和功耗上都要比ASIC差很多。数据显示，同样硅片面积小，65nm工艺的FPGA在性能上也只能相当于180nm的ASIC，而成本上与180nm的ASIC芯片并没有优势。</p>
+<p style="text-align: left;">相较于及半定制的FPGA来说，ASIC芯片的计算能力和计算效率都直接根据特定的算法的需要进行定制的，所以其可以实现体积小、功耗低、高可靠性、保密性强、计算性能高、计算效率高、成本低等优势。当然，ASIC芯片的缺点也很明显：前期投入费用高昂，设计流程复杂，风险较高；一旦设计完成，流片后就无法再修改逻辑电路，缺乏FPGA那样的灵活性；如果无法大量应用的话，其整体成本可能比部署FPGA更高。</p>
+<p style="text-align: left;">为此eASIC公司则试图在标准单元ASIC和FPGA之外中找到另外一条定做芯片的途径。所以eASIC推出了半成品的结构化ASIC，当然要做成客户定制的芯片仍然需要掩模，只不过掩模层数少一些。</p>
+<p style="text-align: left;">总的来说，结构化ASIC能够节省一半的NRE费用和设计时间，芯片的性能和功耗接近标准单元ASIC。但芯片的成本约是标准单元的1.5 ~2倍，因为其密度大约只有标准单元ASIC的50%~75%左右。结构化ASIC的市场定位决定了其在ASIC与FPGA的夹缝中求生。</p>
+<p style="text-align: left;">或许是因为半导体工艺升级换代太快了的缘故，大多数结构化ASIC的优势还没有来得及完全发挥出来，就被新工艺淘汰出局。直到在90nm之前，大多数结构化ASIC在商业运作上都没有FPGA成功。客户要么更喜欢便宜的标准单元ASIC，要么更喜欢没有风险的随时都可重新编程的器件FPGA。除非把做ASIC的NRE降到微不足道，还要让设计工程师避开复杂的后端设计的困扰，否则难以扭转结构化ASIC尴尬的局面。</p>
+<p style="text-align: left;">总部位于美国加州圣塔克拉拉的eASIC公司自2006年推出首款结构化ASIC以来，就一直致力于推动结构化ASIC应用。其推出的eASIC解决方案由其的eASIC平台、使用自有的easicopy或标准的ASIC方法交付的ASICs以及公司专有的设计工具组成。其eASIC平台采用了一种多功能、预定义且可重用的基础阵列和可定制的单掩模层。</p>
+<p style="text-align: left;">可以说，eASIC解决了ASIC设计复杂、费用高昂等障碍，降低了ASIC的进入门槛，同时解决了FPGA静态泄漏和高功耗。凭借其高性能、低功耗、低费用和快速上市时间等特点，有望在快速增长的定制化芯片市场上占据一席之地。</p>
+<p style="text-align: left;">正因为如此，2018年，英特尔正式收购了eASIC，并使其成为了英特尔可编程解决方案事业部的一部分。</p>
+<p style="text-align: left;">在英特尔看来，eAISC与其FPGA（2017年收购的Altera）技术相辅相成。FPGA设计允许公司快速修改芯片架构，但它们也需要更大的功率，成本也更高。相比之下，eASIC芯片效率更高，可以从一开始就快速配置（但不能修改）。“芯片编程不是在现场，而是在工厂完成的。在工厂完成对芯片编程的成本仍然高达数十万美元，但只需要几个月而非两年的时间就能完成。”</p>
+<p style="text-align: left;">英特尔表示，在收购eASIC交易之后，将进一步增强可编程逻辑部门的实力，可为客户提供更多选择。如果客户对英特尔可编程芯片的定制方式有自己的偏好，该程序便可在工厂里融入芯片，从而在不增加太多成本的情况下更好地获得全定制芯片（标准ASIC芯片）的好处。</p>
+<p style="text-align: left;">英特尔强调，FPGA为客户设计提供了最强的面市速度优势和最高的灵活性，同时，ASIC和结构化ASIC设备以最低能耗与成本提供了最好的硬件优化性能。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20201118/d7c50a3d75d248cb8c66d1308c7d5af1.jpeg" max-width="600" /></p>
+<p style="text-align: left;">随着此次eASIC N5X的发布，英特尔也成为了全球唯一一家提供涵盖FPGA（如英特尔Agilex和英特尔® Stratix™-10）、结构化ASIC（如英特尔®eASIC N5X）以及ASIC的完整定制逻辑连续体的半导体公司。这一全面的数据处理可定制逻辑产品组合以业内独特的方式帮助英特尔客户真正实现特定市场解决方案的单位成本、性能、能耗和面市速度优化。</p>
+<p style="text-align: left;">编辑：芯智讯-浪客剑</p>
+➜RCEP协议落地，对于中国半导体产业有何影响？
+http://www.sohu.com/a/432744080_128469	52644
+<p class="ql-align-center" style="text-align: center;"><img src="http://p2.itc.cn/images01/20201118/1c165deba2534b3c968909da2114c538.jpeg" max-width="600" /></p>
+<p>11月15日，第四次区域全面经济伙伴关系协定领导人会议以视频方式举行，经过8年谈判，东盟十国以及中国、日本、韩国、澳大利亚、新西兰15个国家，正式签署区域全面经济伙伴关系协定（RCEP，Regional Comprehensive Economic Partnership）。</p>
+<p>据介绍，RCEP拓展了原有“10+1”自贸协定的规则涵盖领域，既对标国际高水平自贸规则，纳入了知识产权、电子商务、竞争、政府采购等议题，又在中小企业、经济技术合作等领域作出加强合作等规定。</p>
+<p>比如在货物贸易方面，协定生效后，15国区域内90%以上的货物贸易将最终实现零关税，且主要是立刻降税到零和10年内降税到零，使RCEP自贸区有望在较短时间兑现所有货物贸易自由化承诺。</p>
+<p>官方称，这不仅仅是东亚区域合作极具标志性意义的成果，更是多边主义和自由贸易的胜利。</p>
+<p>那么，对于大家关心的半导体产业，RCEP会带来哪些影响呢？</p>
+<p>众所周知，在此次缔约的15国当中，日本和韩国是全球半导体产业链当中的两个强国，其中日本在半导体材料（全球最强）、半导体设备领域（仅次于美国）非常强势，而韩国则在显示面板和存储领域处于领先地位。</p>
+<p>具体到货物贸易关税方面，随着RCEP的落地，中日韩之间的半导体及显示相关领域的关税具体又有何变化呢？对此芯智讯查阅了RCEP当中的中日韩之间的关税承诺与半导体及显示相关的部分，并整理如下：</p>
+<p><strong>中国对日本关税承诺</strong></p>
+<p>首先在硅材料方面，经掺杂用于电子工业的直径在7.5cm-15.24cm之间单晶硅片基准税率为0。此外，直径30cm以上的单晶硅棒以及经掺杂用于电子工业其他单晶硅棒，基准税率为4%，第一年将直接降至0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p8.itc.cn/images01/20201118/4f571b8660a640668aafcfcd721e5e96.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20201118/96da840c0cee4c0082b6c64764bc17de.jpeg" max-width="600" /></p>
+<p>对于专用于或主要用于制造半导体单晶柱或晶圆、半导体器件、集成电路或平板显示器的机器及装置，比如研磨、切割、CMP、氧化、扩散、退火、CVD、PVD、光刻机、离子注入、刻蚀及剥离等众多半导体设备，中国对日本的关税均为0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201118/5badda4be847432493976a5484acd0af.jpeg" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p0.itc.cn/images01/20201118/1a5b3852af01425bb263a27ee617616e.png" max-width="600" /></p>
+<p>不过，在湿法刻蚀、显影、剥离、清洗环节，所用到的超声波清洗装置上，中国对日本的关税基准税率为10%，第1年将降至9.1%，随后逐年递减，直至第11年降至0。</p>
+<p>另外在主要用于或专用于装配与封装半导体器件或基础电路的设备当中：塑封机的基准税率为5%，第1年将降至4.5%，随后逐年递减，直至第11年降至0；引线键合设备基准税率为8%，第1年将降至7.3%，随后逐年递减，直至第11年降至0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201118/7697c80c68154f95aaac44491afdd959.jpeg" max-width="600" /></p>
+<p>在主要用于或专用于升降、搬运、装卸、搬运单晶柱、晶圆、半导体他器件、集成电路或平板显示器的设备方面，除了集成电路工厂专用的自动搬运机器人的基准税率为0外，其他设备的基准税率为5%，第1年将降至4.5%，随后逐年递减，直至第11年降为0。</p>
+<p>对于专用于或主要用于制造半导体单晶柱或晶圆、半导体器件、集成电路或平板显示器的机器及装置所需的相关零件和附件方面：升降、搬运、装卸机器用（自动搬运设备用除外）的零件和附件的基准税率为5%，第1年将降至4.8%，随后逐年递减0.2个百分点；引线键合装置用的零件和附件的基准税率为6%，第1年将直接降至0。</p>
+<p>在集成电路方面，包括处理器、控制器、存储器、放大器及其他集成电路器件和零件，中国对日本的关税基准税率都全部保持为0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20201118/ccc7a5dc8a3c456cab788013434fda10.jpeg" max-width="600" /></p>
+<p>此外，电阻、电容等集成电路所需求的基础元件，中国对日本的关税基准税率也全部保持为0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p1.itc.cn/images01/20201118/77608e7fc3824b76a1fe897a1c4f837b.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20201118/7c0079d8e02f44229d8ff53ea15e6ff1.jpeg" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201118/0d06dc49725e433dbde530ff5089496d.jpeg" max-width="600" /></p>
+<p>在电视机所需的彩色电视接收机所需的显示面板、等离子显像组件及零件、有机发光二极管显示屏方面，中国对日本的关税基准税率均为15%。另外，对于装有LCD或LED的显示板，基准税率为0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p4.itc.cn/images01/20201118/ec96810859fb47d982222096ea1b4362.jpeg" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201118/5ba38e93c1de4a47a9f2c3f7d6c82122.png" max-width="600" /></p>
+<p><strong>日本对中国关税承诺</strong></p>
+<p>在经掺杂用于电子工业的硅片及硅材料方面，日本对中国的关税基准税率全部为0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p4.itc.cn/images01/20201118/c8f5391241c245c4b7bb4661ed3149ba.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p2.itc.cn/images01/20201118/0a064df9e4424315ab081b3a95ee3aa1.jpeg" max-width="600" /></p>
+<p>对于专用于或主要用于制造半导体单晶柱或晶圆、半导体器件、集成电路或平板显示器的机器及装置，以及零件及附件方面，日本对中国的关税基准税率也均为0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201118/67cae160ae2248a6a2a28c66c2bae16a.jpeg" max-width="600" /></p>
+<p>在集成电路方面，包括处理器、控制器、存储器、放大器及其他集成电路器件和零件，日本对中国的关税基准税率也都全部为0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p7.itc.cn/images01/20201118/98cc8ba489ce4b4eb9214da5d70a1232.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p9.itc.cn/images01/20201118/cf0dbb3e70e64bf3ae68ecab091ef7c3.jpeg" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201118/f0b7b872504b4806aca8c12f4cc0cb9d.jpeg" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20201118/83381017c50c457d912ab2bd34be50eb.jpeg" max-width="600" /></p>
+<p>在电阻、电容、印刷电路方面，日本对中国的关税基准税率也都全部保持为0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p2.itc.cn/images01/20201118/46d9c769e7544fe48499767a17a1daa9.jpeg" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p2.itc.cn/images01/20201118/b1bbcb892b4c4749b8914440ec39eb4f.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p9.itc.cn/images01/20201118/90ce1811466d4555a5d67e2b8bc7c6ce.jpeg" max-width="600" /></p>
+<p>在电视机或显示器所需的显示模组，日本对中国的关税基准税率均为0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p8.itc.cn/images01/20201118/3c6a3837180b41c0a77aa17e0ae2d60a.jpeg" max-width="600" /></p>
+<p><strong>中国对韩国关税承诺</strong></p>
+<p class="ql-align-center" style="text-align: center;">在硅材料方面，按重量计硅含量不低于99.99%，经掺杂用于电子工业的化合物或直径在7.5cm-15.24cm之间单晶硅片，中国对韩国的关税基准税率为0。此外，直径30cm以上的单晶硅棒以及经掺杂用于电子工业其他单晶硅棒，基准税率均为4%，第一年将直接降至0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p2.itc.cn/images01/20201118/996162218def419eb5865007c5ceb555.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20201118/996ed6339c014d848e2e12494c6b9ecb.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;">对于专用于或主要用于制造半导体单晶柱或晶圆、半导体器件、集成电路的机器及装置，比如研磨、切割、CMP、氧化、扩散、退火、CVD、PVD、光刻机、离子注入、刻蚀及剥离等中东半导体设备，中国对韩国的关税均为0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p5.itc.cn/images01/20201118/c3551fc6bfe84804ad45754660ae738a.jpeg" max-width="600" /></p>
+<p>对于制造平板显示器用的机器及装置，其中的众多设备的关税基准税率均为0。不过，在湿法刻蚀、显影、剥离、清洗环节，所用到的超声波清洗装置上，中国对韩国的关税基准税率为10%，第1年将降至9%（日本是9.1%），随后逐年递减1%，直至第10年降至0（日本是第11年降为0）。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p7.itc.cn/images01/20201118/0689734897414bb7a1448b6aa5f8b1b5.jpeg" max-width="600" /></p>
+<p>另外在主要用于或专用于装配与封装半导体器件或基础电路的设备当中：塑封机的基准税率为5%，第1年将降至4.8%（日本为4.5%），随后逐年递减，直至第20年降至0（日本是第10年降至0）；引线键合设备基准税率为8%，第1年将降至7.2%（日本为7.3%），随后逐年递减，直至第10年降至0（日本是第11年降至0）。</p>
+<p>在主要用于或专用于升降、搬运、装卸、搬运单晶柱、晶圆、半导体他器件、集成电路或平板显示器的设备方面，除了集成电路工厂专用的自动搬运机器人的基准税率为0外，其他设备的基准税率为5%，第1年将降至4.5%，随后逐年递减，直至第10年降为0（日本为第11年降为0）。</p>
+<p>对于专用于或主要用于制造半导体单晶柱或晶圆、半导体器件、集成电路或平板显示器的机器及装置所需的相关零件和附件方面：升降、搬运、装卸机器用（自动搬运设备用除外）的零件和附件的基准税率为5%，第1年直接降为0（日本为第一年降至4.8%，随后逐年递减，直至第21年降为0）；引线键合装置用的零件和附件的基准税率为6%，第1年将直接降至0。</p>
+<p>在集成电路方面，包括处理器、控制器、存储器、放大器及其他集成电路器件和零件，中国对韩国的关税基准税率也都全部保持为0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p0.itc.cn/images01/20201118/6ff75070cf29471cb84f480b29a9186f.png" max-width="600" /></p>
+<p>此外在电阻、电容、印刷电路方面，中国对韩国的关税基准税率也都全部保持为0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p0.itc.cn/images01/20201118/98bc0d79b352463da887aa75fa0eb42f.jpeg" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p5.itc.cn/images01/20201118/199261f13f3e4e49a697cf20434cbd79.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201118/58dd14d0a27541e093d3151981d8798e.png" max-width="600" /></p>
+<p>在电视机所需的彩色电视接收机所需的显示面板、等离子显像组件及零件、有机发光二极管显示屏方面，中国对韩国的关税基准税率均为15%。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p7.itc.cn/images01/20201118/e6d6e4e69921421e87cc355ad9a3c596.png" max-width="600" /></p>
+<p><strong>韩国对中国关税承诺</strong></p>
+<p>在硅材料方面，经掺杂用于电子工业的硅片或化合物，韩国对中国的关税税率均为0。而在按重量计硅含量不低于99.99%的硅材料方面，韩国对中国的关税基准税率为3%，第1年将直接降至0。其他类型的硅材料，韩国对中国的关税基准税率为5%，第1年将降至4.5%，此后逐年降低0.5个百分点，直至第10年降为0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p9.itc.cn/images01/20201118/a8fbfd77da5e483499a41b447d529f68.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p7.itc.cn/images01/20201118/7d4d038de918419d8cd22a97282d8329.png" max-width="600" /></p>
+<p>专用于或主要用于制造半导体单晶柱或晶圆、半导体器件、集成电路或平板显示器的众多机器及装置中，韩国对中国的关税大多为0，仅极少数设备的基准税率为8%，不过第1年都将直接降至0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p1.itc.cn/images01/20201118/b0d1d843265d4ade89d6b9f13c86613c.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p4.itc.cn/images01/20201118/e8de3fd8d0674e5291ef8ae3b2235753.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201118/9d03fcf523d44ceeb3ca054204a94bc1.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p5.itc.cn/images01/20201118/ab8e25026dd7468195ea097179667e91.jpeg" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p9.itc.cn/images01/20201118/16f5910834284018b8adc8aaaad96175.jpeg" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p4.itc.cn/images01/20201118/ec21a72c12f947eba5c96e5629129ef6.jpeg" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p9.itc.cn/images01/20201118/6a332c6457674650b3374d251c4060dd.jpeg" max-width="600" /></p>
+<p>在制造平板显示器用的机器及装置类目下：</p>
+<p>通过激光或其他光或光子束、超声波、放电等工艺去除材料来加工任何材料的设备的基准税率均为8%，第1年都将降至7.2%，此后逐年递减0.8个百分点，直至10年降至0。</p>
+<p>而在基于电化学、电子束、离子束或等离子弧工艺的去除材料来加工任何材料的设备当中，用于制造有机发光二极管（OLED）的干式蚀刻机的基准税率为5%，第1年降至4.5%，此后逐年降低0.5个百分点，直至第10年降至0；其他干式蚀刻机及其他设备的基准税率均为8%，第1年都将降至7.2%，此后逐年降低0.8个百分点，直至第10年降至0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p6.itc.cn/images01/20201118/871f6dcd94bb4dbe875d9e8a0797306c.jpeg" max-width="600" /></p>
+<p>在归类于矿物材料加工设备下的研磨设备和抛光设备及其他设备的基准税均为8%，第1年降至7.2%，此后逐年降低0.8个百分点，直至第10年降为0。</p>
+<p>另外，用于制造有机发光二极管（OLED）的涂布设备基准税率为5%，第1年降至4.5%，此后逐年降低0.5个百分点，直至第10年降为0。其他的涂布和显影设备的基准税率均为8%，第1年降至7.2%，此后逐年降低0.5个个百分点，直至第10年降为0。</p>
+<p>基于物理或化学方式的用于制造有机发光二极管（OLED）的沉积设备的基准税率均为5%，第1年降至4.5%，此后逐年降低0.5个百分点，直至第10年降为0。其他类型的用于显示面板制造的沉积设备的基准税率均8%，第1年降至7.2%，此后逐年降低0.5个百分点，直至第10年降为0。</p>
+<p>对于各类液晶面板加工设备，基准税率基本都为8%，第1年将降至7.2%，此后逐年降低0.8个百分点，直至第10年降为0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p1.itc.cn/images01/20201118/c6ccdf1d886948729088e9ba47bc5e6b.png" max-width="600" /></p>
+<p>对于主要用于制作和修复掩膜版的设备，以及装配与封装半导体器件或集成电路的设备，虽然有部分设备的基准税率为3%-8%，但是第1年均将直接降至0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p1.itc.cn/images01/20201118/549e04c1c595485ab46b37f543e30f9b.png" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p7.itc.cn/images01/20201118/1e84f0988ad443389a0b298fd67458d9.png" max-width="600" /></p>
+<p>另外，主要用于或专用于升降、搬运、装卸、搬运单晶柱、晶圆、半导体他器件、集成电路或平板显示器的设备，韩国对中国的基准税率为0。</p>
+<p>在集成电路方面，包括处理器、控制器、存储器、放大器及其他集成电路器件和零件，韩国对中国的关税基准税率也都全部保持为0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p1.itc.cn/images01/20201118/98dad45db0a44d898db1a7da1ee36730.png" max-width="600" /></p>
+<p>此外在电容、电阻、印刷电路方面，中国对韩国的关税基准税率也都全部保持为0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p3.itc.cn/images01/20201118/32ba18e1e1cc46fcb5d3ff53585d51bf.jpeg" max-width="600" /></p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p0.itc.cn/images01/20201118/67173160f40a4b198fadefc57e4e61ab.jpeg" max-width="600" /></p>
+<p>在电视机所需的等离子显示面板方面，韩国对中国的关税基准税率均为8%，第1年直接降至0。LCD和OLED面板方面，韩国对中国的关税基准税率均为8%，第1年均直接降至7.2%，随后逐年降低0.8个百分点，直至第10年降至0。</p>
+<p class="ql-align-center" style="text-align: center;"><img src="http://p5.itc.cn/images01/20201118/524b7cbb0e904520b429de0ea0bf35c7.jpeg" max-width="600" /></p>
+<p><strong>小结：</strong></p>
+<p>对于国内的厂商来说，在RCEP协定签署之前，虽然进口自日韩的绝大部分半导体芯片及部分的半导体设备和半导体材料就已经是零进口关税（但是需要交13%的增值税），不过仍有部分半导体设备和半导体材料仍然存在8%左右的关税。</p>
+<p>从上面的数据来看，根据RCEP的协议，对于很多原本存在8%左右关税的半导体材料和半导体设备来说，大部分都将在RCEP协定签署后第1年内降至0，其他也大多将会在10年内降至0。</p>
+<p>可以说，随着RCEP的落地，中国的晶圆厂及封测厂也将受益于日韩半导体材料和设备的进口关税的降低。当然，对于国产半导体材料和设备厂商来说，这将也是一个挑战，因为会面临来自日韩厂的更大的竞争。但是，这也是机会，对于具有竞争优势的国产半导体材料、芯片及设备厂商来说，这也是一个进入日韩市场的机会，因为相应的，日韩对中国的半导体材料和设备的进口关税也在全面降低。</p>
+<p>而对于国内下游的智能终端厂商来说，进口的日韩的半导体芯片关税之前基本就是0，所以这块没有什么变化，不过随着日韩对中国终端设备税率的降低，有利于国内的终端设备厂商进一步开拓日韩市场。</p>
+<p>除了贸易方面的挑战与机遇之外，RECP的15个国家还将会采用负面清单方式对制造业等5个非服务业领域投资作出较高水平开放承诺，大大提高了各方政策透明度。并且，各方承诺对于区域内各国的投资者、公司内部流动人员、合同服务提供者、随行配偶及家属等各类商业人员，在符合条件的情况下，可获得一定居留期限，享受签证便利，开展各种贸易投资活动。这将有助于加强中国半导体产业与日韩半导体产业之间的合作，有利于三方的半导体领域的企业和资本在区域内的投资。</p>
+<p>商务部国际贸易经济合作研究院国际市场研究所副所长白明也表示：“RCEP签署对于我国高端产业影响更大一些，之前日韩之间、中日之间都没有自贸协定，这次签署之后或将有助于相关国家在半导体等领域的合作，但技术管制等因素还是存在。” </p>
+<p>编辑：芯智讯-浪客剑</p>
