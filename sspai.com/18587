@@ -1,0 +1,49 @@
+➜Google Photos 导出照片信息错乱？2 种方法解决它
+https://sspai.com/post/63675	12562
+<h3 style="margin-left:0px;"><strong>Matrix 首页推荐</strong></h3><p style="margin-left:0px;"><a href="https://sspai.com/matrix">Matrix</a> 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。</p><p style="margin-left:0px;">文章代表作者个人观点，少数派仅对标题和排版略作修改。</p><hr><p>承接上一篇《<a href="https://sspai.com/post/63659" target="_blank">我为什么弃用 Google Photos</a>》，这篇讲述如何将照片导出 Google Photos。我将说下遇到的不少问题，以及提出两个方法去解决。</p><h2>遇到问题</h2><p>Google Photos 以相册形式去管理，你会通过自带的 Album 功能，把相关的照片放在同一个相册下。</p><p>你将遇到三个问题：</p><ol><li>重复</li><li>Meta 弄乱</li><li>照片 Meta 文件不见了</li></ol><h3>重复</h3><p>例如，去天津旅游，就建一个「天津」，把相关的照片放一起。问题是，谷歌同样把你的照片都放在一个个以日期为名的相册里。我 10 月 10 日去的天津，拍了张 <code>food.jpg</code>，旅程结束后，我把这张照片以及其他沿途拍的放在「天津之旅」相册中。此时<code>food.jpg</code>出现在了两个文件夹里：</p><pre class="language-shell"><code>.
+├── 2020-10-10
+│   ├── food.jpg
+├── 天津之旅
+│   ├── food.jpg</code></pre><p>所以将所有照片导出的时候，你会有两张一样的照片。</p><h3>Meta 被移除</h3><p>使用官方工具 Google Takeout 导出所有照片时，照片的 Exif 数据被移除，并放到一个额外的 JSON 文件里。以上面的例子，导出 2020-10-10 的照片，会得到 <code>.jpg</code> 和 <code>.json</code>：</p><pre class="language-shell"><code>.
+├── 2020-10-10
+│   ├── food.jpg
+│   ├── food.jpg.json
+│   ├── metadata.json</code></pre><p>JPG 和 JSON 一般以成双出现，有的时候 JSON 命名为 <code>文件名.扩展.json</code>（上面的例子），有的时候则是 <code>文件名.json</code>。每一个相册，还会有一份 <code>metadata.json</code>，记录相册的 metadata。</p><p>谷歌把每一张照片原本的 Exif 数据（e.g. 地点、日期）抹掉，放到对应的 JSON 里。</p><pre class="language-javascript"><code>{
+"title": "IMG_7545.HEIC",
+"description": "",
+"imageViews": "0",
+"creationTime": {
+"timestamp": "158202xxxx",
+"formatted": "18 Feb 2020, 10:35:07 UTC"
+},
+"modificationTime": {
+"timestamp": "158362xxxx",
+"formatted": "8 Mar 2020, 00:50:35 UTC"
+},
+"geoData": {
+"latitude": 25.382409333333334,
+"longitude": 169.39753444444445,
+"altitude": 78.39409156147392,
+"latitudeSpan": 0.0,
+"longitudeSpan": 0.0
+},
+"geoDataExif": {
+"latitude": 22.242533333333334,
+"longitude": 114.15739444444445,
+"altitude": 80.11492156147392,
+"latitudeSpan": 0.0,
+"longitudeSpan": 0.0
+},
+"photoTakenTime": {
+"timestamp": "1581511593",
+"formatted": "12 Feb 2020, 12:46:33 UTC"
+}
+}</code></pre><p>如果不管 JSON 直接导入到新的照片服务，你照片会没有日期、地点，时间次序是错的。</p><p><strong>注</strong>：有些照片我的 Exif 丢了，有些照片则没丢。可能和是否使用原图上传的设置有关，可能压缩后，就会把原本的 Exif 移除掉，变成 JSON。</p><h3>JSON 并非一一对应</h3><p>导出后，JSON 并不一定有与之一一对应的照片。有可能有照片，却不见了 JSON；也可能有 JSON，却没找到照片。</p><p>Google Takeout 在导出照片时，会把所有数据根据总体大小切割成一份份 <code>.zip</code> 文件，有可能在分割的过程里，JSON 和照片归在不同的 ZIP 中。解压后，自然在不同文件夹。</p><h2>导出方法</h2><p>我摸索后，发现有两种方法：</p><ul><li>先导出，后处理</li><li>先处理，后导出（我的做法）</li></ul><p>第一个方法，偏技术性，需要用到命令行。第二个方法是我用的方法，比较简单，不过重复性的动作较多。</p><p>无论前者还是后者，你都需要从 Google Takeout 导出数据：</p><ol><li>去 <a href="https://takeout.google.com/">Google Takeout</a></li><li>选取需要的相册后，导出</li><li>下载解压</li></ol><h3>先导出，后处理（第一个方法）</h3><p>（当时进行迁移时，网上还没有那么多关于 Google Photos 导出教程，所以我自己并没有使用这个方法。）</p><p><strong>简介</strong>：在 Google Takeout 一键导出，然后治理照片重复以及 Exif 问题。这需要使用第三方开源工具 ExifTool，将 JSON 里的信息再次转换为图片的 Exif。</p><h4>先导出</h4><p>Google Takeout 导出时，应该全选所有相册，避免有漏掉的照片。下载并解压后，得到庞大的文件数量，我四年的数据导出时生成了八万多个文件（照片、视频、JSON）。</p><pre class="language-shell"><code>├── 2018-05-27-28
+│   ├── IMG_20180528_122431.jpg
+│   ├── IMG_20180528_122431.jpg.json
+│   ├── IMG_20180528_132828.jpg
+│   ├── IMG_20180528_132828.jpg.json
+├── 2019-06-29
+│   ├── IMG_20190629_161802.jpg.json
+│   ├── IMG_20190629_161804.jpg.json
+│   ├── IMG_20190629_161809_Bokeh.jpg.json</code></pre><p>能看到有些文件夹（e.g. <code>2019-06-29</code>）只有 JSON，而没有与之对应的照片。接下来，把 JSON 里的内容合成到原本照片里。</p><h4>后处理</h4><p>首先，安装免费开源工具 <a href="https://exiftool.org">ExifTool</a>，支持 Windows、macOS 和 Linux。macOS 用户可以使用 Homebrew 下载 <code>brew install exiftool</code>。</p><p>我们通过这个工具来对照片的 Exif 进行读写，将 JSON 信息抽取出来，写到 Exif 中。</p><p>用到的命令如下，按需修改。</p><p>如果文件名为 <code>文件名.扩展.json</code>，使用的代码格式为：</p><pre class="language-shell"><code>exiftool -tagsfromfile '%d/%F.json' '-ImageTag&lt;JsonTag' FileOrDir</code></pre><p>否则，文件名为 <code>文件名.json</code>，则使用：</p><pre class="language-shell"><code>exiftool -tagsfromfile '%d/%f.json' '-ImageTag&lt;JsonTag' FileOrDir</code></pre><p>替换 <code>FileOrDir</code> 成你的目标位置（或文件）；替换 <code>ImageTag</code> 成 Exif 定义的标签；替换 <code>JsonTag</code> 为 JSON 文件中的标签。例如：</p><figure class="table"><table><thead><tr><th>ImageTag</th><th>JsonTag</th><th>一对</th></tr></thead><tbody><tr><td>ImageDescription</td><td>Description</td><td><code>'-ImageDescription&lt;Description'</code></td></tr><tr><td>DateTimeOriginal</td><td>PhotoTakenTimeTimestamp</td><td><code>'-DateTimeOriginal&lt;PhotoTakenTimeTimestamp'</code></td></tr></tbody></table></figure><p><strong>注意</strong>：谷歌不断更改 JSON 里标签的命名方法，请查看 Google Takeout 导出 JSON 中标签的<a href="https://github.com/StarGeekSpaceNerd/Metadata_Reference/blob/master/Photos.google.com.md#user-content-google-takeout">最新命名方法</a>，<strong>记得更改对应的 JsonTag</strong>。</p><p>使用一条命令循环所有子目录，读取根目录下所有文件和子目录中的文件 JSON 中不同标签：</p><pre class="language-shell"><code>exiftool -r -d %s -tagsfromfile "%d/%F.json" "-GPSAltitude&lt;GeoDataAltitude" "-GPSLatitude&lt;GeoDataLatitude" "-GPSLatitudeRef&lt;GeoDataLatitude" "-GPSLongitude&lt;GeoDataLongitude" "-GPSLongitudeRef&lt;GeoDataLongitude" "-Keywords&lt;Tags" "-Subject&lt;Tags" "-Caption-Abstract&lt;Description" "-ImageDescription&lt;Description" "-DateTimeOriginal&lt;PhotoTakenTimeTimestamp" -ext "*" -overwrite_original -progress --ext json FileOrDir</code></pre><ul><li><code>-r</code> 循环子目录</li><li><code>-ext "*"</code> 表明包含所有文件类型，可以改成 <code>-ext "jpg"</code> 或者 <code>-ext "mp4"</code> 限定修改特定文件类型</li><li><code>--ext "json"</code> 表明剔除类型为 JSON 的文件</li><li>读者如果需要更多关于工具的操作方法，可以参考 ExifTool 的指令<a href="https://exiftool.org/exiftool_pod.html">文档</a></li></ul><p>这会更改所有照片的 Exif，记得<strong>备份</strong>好原本下载的 ZIP。</p><h3>先处理，后导出（第二个方法）</h3><p>我发现的第二个方法，相比第一个方法笨很多，不过却是蛮有效，不需要命令。原理是利用 Google Photos 对用户创建的相册，采取<strong>不同的数据处理方法</strong>，并不会将 Exif 抹掉变成 JSON。</p><p><strong>简介</strong>：将图片分类以年份为名的相册，导出（e.g. <code>2019</code>、<code>2018</code>）相册，下载解压，完成 bingo。</p><h3>先处理</h3><p>首先，我们把图片按照他们的年份。打开 <a href="https://photos.google.com">Google Photos</a>，点击左方的 Albums，然后 Create album。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/18/e7731a9cc7431f897acf7afc036047bb.png"></figure><p>然后填入年份，并 Select Photos（选取照片）。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/18/7df7dde35d7b7a16a7882ef9edef6896.png"></figure><p>点击上方导航栏的 <strong>Search Your Photos</strong>，输入年份，例如 <code>2014</code>，弹出联想，点击 <code>2014</code>：</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2020/11/18/6e97d5c2a629df12199b8782d31d3410.png"></figure><p>此时画面出现选取年份的所有照片，点击第一章照片左上角的 ☑️ 选取，按住 SHIFT，拉到页面最底点击最后一张照片的☑️，完成该年份全选。（Google Photos 网页端不支持 CMD + A / Ctrl + A 进行全选）点击右上角 Done。</p><p>这样一年的照片就完成了，重复以上操作到其他年份。根据你 Google Photos 一共有多少年，就要完成多少次的操作，我自己重复了十次，耗时大约 20 分钟。</p><h3>后导出</h3><p>导出可以使用 Google Takeout 或者 Google Photos 自带的相册导出功能。</p><p>Google Photos 相册：在 Album 中进入到相册，右上角三点，Download All 会下载相册的 ZIP 文件。</p><p>Google Takeout：导出选取创建的年份为名的相册。</p><p><strong>参考资料</strong>：</p><ul><li><a href="https://www.sites.google.com/site/picasaresources/Home/Picasa-FAQ/google-photos-1/how-to/how-to-download-all-autobackupped-pictures?tmpl=%2Fsystem%2Fapp%2Ftemplates%2Fprint%2F&amp;showPrintDialog=1#TOC-Download-albums-using-Album-Archive">How to download photos and videos</a></li><li><a href="https://stackoverflow.com/questions/42024255/bulk-join-json-with-jpg-from-google-takeout">bulk join json with jpg from Google Takeout</a></li><li><a href="https://exiftool.org/forum/index.php?topic=11378.0">Topic: Merging jpg.json files with .jpg export google takeout</a></li><li><a href="https://github.com/mattwilson1024/google-photos-exif">google-photos-exif</a></li><li><a href="https://legault.me/post/correctly-migrate-away-from-google-photos-to-icloud">How To Correctly Export And Migrate Away From Google Photos</a></li></ul><p>（题图使用 <a href="https://icons8.com" target="_blank">Icons8</a> 网站制作）</p><p style="margin-left:auto;">&gt; 下载少数派 <a href="https://sspai.com/page/client">客户端 </a>、关注 <a href="https://sspai.com/s/J71e">少数派公众号 </a>，了解更妙的数字生活 🍃</p><p style="margin-left:auto;">&gt; 想申请成为少数派作者？<a href="https://sspai.com/apply/writing" target="_blank">冲！</a></p>
