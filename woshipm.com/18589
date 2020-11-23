@@ -1,0 +1,119 @@
+➜B端UI界面交互基础组件：会话框
+http://www.woshipm.com/pd/4269421.html	4426
+<blockquote><p>导语：在前一篇文章《<a href="http://www.woshipm.com/ucd/4258773.html" target="_blank" rel="noopener">B端UI界面交互基础组件-表单</a>》中，一起学习了B端“表单”组件UI设计规范，其中包括“基础表单”、“全页表单”；并从表单组件的需求场景、内容布局以及交互方式等方面对以上组件进行了详尽的规范描述；今天我们继续介绍了B端“会话框”组件的交互规范。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4269445" src="http://image.woshipm.com/wp-files/2020/11/SuVLTND5oOOIVmq7mhk1.jpg" alt="" width="900" height="420" /></p>
+<h2>一、基础会话框</h2>
+<h3>1. 需求场景</h3>
+<p>需要在当前页面进行信息提示。</p>
+<p>需要在不影响当前页面布局内容的情况下，提供用户快速操作、配置的入口。</p>
+<h3>2. 内容布局</h3>
+<p>根据功能，会话框分为三个区域：标题栏、内容区域、操作按钮，布局如下：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/eOSaozfpjSKp6GGhR7Wn.png" alt="" width="540" height="263" /></p>
+<p>标题栏：会话框标题局左对齐，关闭按钮居右显示，会话图标根据会话框内容需要显示。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/WRkrccB7oIcUP1Brqg7l.png" alt="" width="496" height="111" /></p>
+<p>内容区域：内容根据显示需要，向下自动扩展。</p>
+<p>操作按钮区域：操作说明居左显示，操作按钮居右显示，推荐操作的按钮重点标注：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/vctuIV4JR8hbbbIhEHS2.png" alt="" width="540" height="241" /></p>
+<p>注：</p>
+<ul>
+<li>操作按钮说明主要用于操作按钮区出现多个按钮，需要对部分特定操作进行特别说明的情况；</li>
+<li>推荐操作按钮需要分布在一组操作按钮的头或尾，避免出现在中间位置；</li>
+</ul>
+<p>通用情况下，初始状态下会话窗口基于页面居中（水平、垂直）显示。</p>
+<h3>3. 交互行为</h3>
+<p>点击关闭按钮、取消按钮，将关闭会话窗口，如涉及复杂配置类窗口，为避免用户误操作，需要提供二次确认弹窗。</p>
+<p>其他详细交互行为，请查看对应会话窗口。</p>
+<h2>二、提示信息会话框</h2>
+<h3>1. 需求场景</h3>
+<p>根据用户的操作行为，进行相应信息提示。</p>
+<p>仅做操作行为或操作结果提示、或者建议用户执行某一特定操作。</p>
+<h3>2. 内容与布局</h3>
+<p>区域分布与通用会话框相同。</p>
+<p>标题栏中图标与提示标题，内容与提示信息强相关，图标需表意直观、标题文本需简单概要说明当前提示信息核心内容。</p>
+<p>图标：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/DiKvS1LpCbQCqKQQCEhf.png" alt="" width="231" height="68" /></p>
+<ul>
+<li>提示：信息说明</li>
+<li>提醒：用户操作可能受阻，需用户进行处理或者关注。</li>
+<li>成功：操作成功</li>
+<li>失败：操作失败</li>
+<li>标题：成功与失败提示需使用：“操作 + 结果”方式呈现，例如：删除成功、更新失败、连接失败等。</li>
+</ul>
+<p>内容区域高度须有最小高度限制（因内容区域内容过少，导致内容区域高度过小时，需限定内容区最小高度）。</p>
+<p>内容区分为：提示内容（详情）、备注信息：</p>
+<p>常规布局：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/EDoXF7luDZwTXjCuPIo3.png" alt="" width="491" height="299" /></p>
+<p>展开详情：详情内容展开后，达到一定长度自动出现垂直滚动条。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/jmkU3fdT3Pm2pG4NA3yQ.png" alt="" width="497" height="356" /></p>
+<p>提示会话框一般建议只提供一个操作按钮，用于关闭会话框；如果因业务需要，需要通过操作按钮进行后续业务执行时，允许出现多个操作按钮。</p>
+<p>推荐使用模式：</p>
+<p>内容提示：仅提示用户，常用于帮助说明等场景</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/qM7fuZRqF4VGk2BNYvk1.png" alt="" width="463" height="284" /></p>
+<p>提醒：操作前置条件不满足，推荐用户进行必要操作：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/tMZgn9aonqxFp0BuEIVr.png" alt="" width="460" height="596" /></p>
+<p>成功：用于提示单项操作结果：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/Im6vnUYOX4iiPhIa9fSp.png" alt="" width="465" height="336" /></p>
+<p>单项操作失败：用于提示单项操作结果：操作对象一般使用ID表达并重点标注，默认显示24个字符（中文占2个字符），字符超过24个字符时显示前19个字符“&#8230;”链接后2个字符。</p>
+<p>对象名称未超长：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/WIO9NGv2kzZy6mBHovG9.png" alt="" width="490" height="264" /></p>
+<p>对象名称已超长：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/VEH8HNTBiv9L2PY3g8rz.png" alt="" width="488" height="268" /></p>
+<p>鼠标移入对象使用Tips全文显示：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/nuOCYSMVEVts8kssCnUR.png" alt="" width="492" height="268" /></p>
+<p>注：</p>
+<ul>
+<li>详情信息一般在普通用户（无法解决问题能力的用户不予显示）；</li>
+<li>详情信息展开高度需要有最大高度限制，超过一定限度后续限制高度，并出现滚动条；</li>
+</ul>
+<p>批量操作有异常：用于提示批量操作结果有部分失败或异常：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/AXDXGM6rL5Djh2uOXDbD.png" alt="" width="491" height="307" /></p>
+<p>操作按钮定义以具备简要、明确的短语定义。</p>
+<h3>3. 交互行为</h3>
+<p>交互行为与通用会话框保持一致。</p>
+<h2>三、行为确认会话框</h2>
+<h3>1. 需求场景</h3>
+<p>根据用户的操作行为，进行相应信息提示。</p>
+<p>根据用户操作确认的入口，避免误操作。</p>
+<h3>2. 内容与布局</h3>
+<p>区域分布与通用会话框相同。</p>
+<p>行为确认会话框根据行为影响范围进行分类。</p>
+<p>提示类二次确认：一般性操作，误操作无较大影响，行为可逆。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/HF7qpHoEOmbiyukAJGHr.png" alt="" width="499" height="764" /></p>
+<p>警告类：在业务上会造成一定风险，需要用户进行信息内容阅读确认后，再操作。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/4DPfTxlMARJUc2qneUFI.png" alt="" width="474" height="544" /></p>
+<p>安全验证：在业务上会造成较大危险，如有可能会导致业务瘫痪或终止，需要通过保障级别较高的操作验证行为进行安全保障，如输入手机验证码等方式。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/6o1gNuPakQypQ1nXIvnE.png" alt="" width="473" height="277" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/elwVc5WC8wohbpNmOZBs.png" alt="" width="476" height="276" /></p>
+<h3>3. 交互行为</h3>
+<p>警告类与安全类验证，信息确认框，操作确认按钮需前置操作如验证码，密码输入经过格式合法性校验通过后才能启用。</p>
+<p>仅有两次确认复选框：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/vcOoBQIk6RMODLVv1tE9.png" alt="" width="477" height="523" /></p>
+<p>仅有文本验证输入框：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/epYmEIpwvOCBX9tWHHxB.png" alt="" width="466" height="625" /></p>
+<p>操作再次确认与文本输入框组合：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/JltfnZOoGBuGDQYgCBx6.png" alt="" width="469" height="618" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/wFfTrdWdRrlN3DtKo625.png" alt="" width="467" height="269" /></p>
+<p>其他交互行为与通用会话框保持一致。</p>
+<h2>四、配置会话框</h2>
+<h3>1. 需求场景</h3>
+<p>用户进行日常操作时，需要进行快速配置。</p>
+<p>配置完成后，可以继续驻留在配置操作发起时相应界面。</p>
+<p>配置相对较少。</p>
+<h3>2. 内容与布局</h3>
+<p>区域分布与通用会话框相同：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/JeRBtOGrvRTt9y4jWxBZ.png" alt="" width="525" height="492" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/4injTZNYu1Gzv5T9aQmh.png" alt="" width="521" height="525" /></p>
+<p>标题栏无会话框图标，内容如下：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/ZVaSbes3u71QAj2HvH9a.png" alt="" width="534" height="102" /></p>
+<p>内容区布局：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/FTNusTIDEjzVHIiyzDWt.png" alt="" width="518" height="487" /></p>
+<p>配置表单内部布局参考基础表单布局格式。</p>
+<h3>3. 交互行为</h3>
+<p>交互整体行为与基础会话框保持一致。</p>
+<p>配置表单与会话框操作按钮关联关系与常规表单操作按钮关系一致。</p>
+<p>配置成功，刷新源目标页面。</p>
+<h3>五、总结</h3>
+<p>关于B端基础交互组件“会话框”的相关分享就到这里，下一章我们介绍“B端UI交互里的系统性交互行为”包括“操作反馈”、“表格相关”、“分组配置”的相关交互规范。</p>
+<p>&nbsp;</p>
+<p>本文由 @云计算产品汪 原创发布于人人都是产品经理，未经许可，禁止转载</p>
+<p>题图来自 unsplash，基于 CC0 协议</p>
