@@ -1,32 +1,361 @@
 ➜移动端多项筛选中的「不限选项」，到底该怎么用？
-https://www.uisdc.com/unlimited-options	42202
-<p>移动端多项筛选中的不限选项到底该怎么用？</p>
-<p>如图所示，这是比较常见的移动端多项筛选样式：</p>
-<p><span class="img-zoom"><img alt="移动端多项筛选中的「不限选项」，到底该怎么用？" class="alignnone size-full wp-image-397322" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-nn20201122-3_meitu_2.jpg" width="1200" height="1046" /></span></p>
-<p>工作中的你，在做下拉筛选时，是否对多项筛选进行过思考呢？如：</p>
-<p>1、为什么多选时需要重置和确认，单选时则不需要？<br />
-2、为什么有的筛选项中有不限，而有的筛选项中又没有？不限到底有什么作用呢？</p>
-<p>针对问题1，比较容易理解：即因为多选时，是用户去选择多个选项进行筛选，我们无法得知用户是在选择了多少个选项后想进行筛选操作，所以给一个确认按钮，来确定用户已经选择好筛选项。针对重置按钮也比较好理解，因为如果择的筛选项太多，想要回到初始值时，最快捷的方式就是重置。</p>
-<p>针对问题2，为什么有的筛选项中有不限，而有的筛选项中又没有？不限到底有什么作用呢？</p>
+https://www.uisdc.com/unlimited-options	-44198
+<p>移动端筛选再常见不过了——</p>
+<p>我们在租房时，对于户型、朝向都要要求时会用到多项筛选；我们在找工作时，对薪资和工作经验也会做多项筛选的限制。</p>
+<p>下图所示的就是比较常见的移动端多项筛选样式：</p>
+<p><span class="img-zoom"><img alt="移动端多项筛选中的「不限选项」，到底该怎么用？" class="alignnone size-full wp-image-397321" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-nn20201122-3_meitu_1.jpg" width="1200" height="1005" /></span></p>
+<p>工作中的你，在做下拉筛选时，是否对多项筛选进行过思考呢？</p>
+<h4>问：</h4>
+<p><strong>1、为什么多选时需要重置和确认，单选时则不需要？</strong><br />
+<strong> 2、为什么有的筛选项中有不限，而有的筛选项中又没有？不限到底有什么作用呢？</strong></p>
+<h4>答：</h4>
+<p><strong>针对问题1</strong>，比较容易理解：即因为多选时，是用户去选择多个选项进行筛选，我们无法得知用户是在选择了多少个选项后想进行筛选操作，所以给一个确认按钮，来确定用户已经选择好筛选项。针对重置按钮也比较好理解，因为如果择的筛选项太多，想要回到初始值时，最快捷的方式就是重置。</p>
+<p><strong>针对问题2</strong>，为什么有的筛选项中有不限，而有的筛选项中又没有？不限到底有什么作用呢？</p>
 <p>下图是自如的下拉筛选：</p>
 <p><span class="img-zoom"><img alt="移动端多项筛选中的「不限选项」，到底该怎么用？" class="alignnone size-full wp-image-397322" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-nn20201122-3_meitu_2.jpg" width="1200" height="1046" /></span></p>
 <p>可以看到自如的户型选择是多选项，出现了不限这个选项，当选择不限时，会清空掉已选的其他户型内的选择。</p>
 <p>下图是拉勾的下拉筛选：</p>
 <p><span class="img-zoom"><img alt="移动端多项筛选中的「不限选项」，到底该怎么用？" class="alignnone size-full wp-image-397323" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-nn20201122-3_meitu_3.jpg" width="1200" height="979" /></span></p>
 <p>拉勾期望薪资是单选项，也出现了不限这个选项，当选择不限时，会清空掉已选的选择。</p>
-<p>所以，这个时候你肯定疑惑了：不限既用在了多选选择也用在了单项选择上？</p>
+<p><strong>所以，这个时候你肯定疑惑了：不限既用在了多选选择也用在了单项选择上？</strong></p>
+<p>————</p>
 <p>解决问题从问题本身出发，我们可以先思考一下，为什么会出现不限这个选项？</p>
 <p>肯定是因为你给了用户很多个选项，但是用户觉得这些选项都可以选，所以用户在这时候选择了不限。</p>
 <p>还有一种情况是用户在选择了几个选项后，觉得还是恢复默认态比较好，所以用户选择了不限。</p>
 <p>所以选了不限的用户其实分为两类：</p>
-<p>一类用户希望有个选项选了可以包括你所给的所有选项（有点像全选）</p>
-<p>另一类用户希望回到默认状态，即什么都不选</p>
-<p>所以不限选项在这里有两个作用：</p>
-<p>1、清空已选选项恢复默认态<br />
-2、选择给出的所有选项</p>
-<p>结论：建议不限还是用在多项选择中，因为不限的作用是：</p>
-<p>1、清空已选选项恢复默认态</p>
-<p>2、选择给出的所有选项。</p>
-<p>如果是单项选择，清空选项的成本较低，只需要再点击一下已选选项就可以了，完全不需要不限这个选项。如果是单项选择又给一个选项是选择所有选项，那这个类别本就不应该做成单项选择。</p>
+<p><strong>A类用户希望有个选项选了可以包括你所给的所有选项（有点像全选）</strong></p>
+<p><strong>B类用户希望回到默认状态，即什么都不选</strong></p>
+<p>所以</p>
+<p>————</p>
+<p>不限选项在这里有两个作用：</p>
+<p><strong>1、清空已选选项恢复默认态</strong><br />
+<strong> 2、选择给出的所有选项</strong></p>
+<h4>结论：</h4>
+<p><strong>建议不限还是用在多项选择中，因为不限的作用是：</strong></p>
+<p><strong>1、清空已选选项恢复默认态</strong></p>
+<p><strong>2、选择给出的所有选项。</strong></p>
+<p><strong>如果是单项选择，清空选项的成本较低，只需要再点击一下已选选项就可以了，完全不需要不限这个选项。如果是单项选择又给一个选项是选择所有选项，那这个类别本就不应该做成单项选择。</strong></p>
 <p>本文仅个人观点，欢迎大家来讨论各自的思考和见解，促进彼此共同进步~</p>
-<p>[link https://www.uisdc.com/backstage-systematic-screening-design]</p>
+<p>[link https://www.uisdc.com/screening-function-design-summary]</p>
+➜交互设计入门指南（二）：九大经典定律
+https://www.uisdc.com/9-classic-laws	59461
+<p>坊间多为流传七大定律，但实际随着体系的不断完善，有很多新的理论产生，个人总结了九大定律。如有错误，还望指证。</p>
+<p>上期回顾：</p>
+<p>[link https://www.uisdc.com/nielsen-design-principles-3]</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396794" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-1.jpg" width="1200" height="1749" /></span></p>
+<p>先举个例子来理解一下：我要点击手机上的确认按钮所需要的时间，和手与按钮的距离（D） 按钮的大小（S）有关。 当距离越长，所需要的时间越长。当按钮越大，所需要的时间越短。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396795" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-2.jpg" width="1200" height="374" /></span></p>
+<p>自我理解：我们将日常看到的界面元素进行去色彩和去信息化，把这些控件/元素等都变成灰色色块，其实也就变成了最简单的原型图。这些灰色色块抛开了视觉上的属性，其实有两大最基本的属性，即色块的位置和大小。 菲兹定律告诉我们，要通过控制色块或者说界面元素的大小和位置（绝对距离和相对距离）来进行界面布局，进而控制交互时间，达到我们设计或者业务层面的目的。</p>
+<p><strong>1. 合理的自身大小</strong></p>
+<p>这里是说合理的大小。一般来讲越大用户越容易到达，但是屏幕的大小是一定的，某一按钮/目标越大就会降低其他按钮/目标的大小。所以大小是相对制衡的，要根据具体情景和需求制定合理的大小（包括肉眼大小和实际热区大小）。但是关于手指点击的最小热区有规定是44x44px，一般的图形的热区大小都要高于这个大小，才能便于点击。其他大小要根据功能需求进行制定。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396796" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-3.jpg" width="1200" height="970" /></span></p>
+<p><strong>2. 控制合理的相对距离</strong></p>
+<p>相对距离指的是界面内部各个元素与控件之间的距离。一般通过研究整个流程的交互动作，相互关联的操作元素/操作手势距离会相对比较近，这样能有效减少操作的时间。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396797" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-4.jpg" width="1200" height="1046" /></span></p>
+<p><strong>3. 特殊的绝对位置：屏幕边界</strong></p>
+<p>屏幕边界是可以确定的（鼠标向某一方向一直移动终会停留在屏幕边界），但是屏幕中央确是较难确定的（四个方向鼠标均能延展出去）。一些重要和主要的操作放在屏幕的边界，可以方便用户快速到达，也是菲茨定律的普遍应用。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396798" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-5.jpg" width="1200" height="933" /></span></p>
+<p><strong>4. 反向设计：增加时间来达成业务目标</strong></p>
+<p>业务目标有时候是与用户目的是相违背的，也需要根据具体场景来判断菲茨定律的使用走向。在特殊情境下也会通过距离和自身大小来反向增加使用时间来完成目的。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396799" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-6.jpg" width="1200" height="2653" /></span></p>
+<p>自我理解：席克定律也在研究交互时间。我们需要通过控制席克定律所总结的两大因素：数目和复杂程度 进而去左右界面布局的形式，从而缩短交互时间，达成良好的体验。</p>
+<p><strong>1. 精简选择的余地</strong></p>
+<p>选择增加也就意味着事情可以发展的方向更加多元化，用户就需要权衡事情该往哪个方向发展，而这就需要时间。不要让你的用户思考太多，所以一般给出的选项在满足需求的情况下要尽可能的少。（这里注意：一般情况下要少但也不能太少，强迫用户也是不可取。）</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396800" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-7.jpg" width="1200" height="1399" /></span></p>
+<p><strong>2. 减少事情的复杂程度</strong></p>
+<p>事情越复杂，越难处理。尽可能的将复杂的事件通过交互或者版式等手段进行简化，让用户觉得容易把握，而不是大量事物/流程/元素的堆砌。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396801" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-8.jpg" width="1200" height="2358" /></span></p>
+<p>自我理解：米勒定律对人的记忆数目进行了定量的研究，即 5-9 个是人脑接受起来比较合适的，多了就容易混乱。</p>
+<p><strong>1. 控制选项的数量</strong></p>
+<p>同一类型或者同一层级的元素出现，数目一般控制在5-9个。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396802" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-9.jpg" width="1200" height="897" /></span></p>
+<p><strong>2. 将多信息进行分段处理，便于理解记忆</strong></p>
+<p>面对有大量信息的时候（数字/文字/段落）将其分割到5-9个等大脑容易记住的数量。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396804" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-11.jpg" width="1200" height="916" /></span></p>
+<p><strong>3. 顺应时代的取舍</strong></p>
+<p>看到了有一些设计并没有按照米勒定律去执行，因为随着时代的发展，有一些定律并不是万能适用的。定律不可照搬，要根据具体情境去做取舍，以最终效果为导向。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396805" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-12.jpg" width="1200" height="1391" /></span></p>
+<p>自我理解：和四大基本原则的亲密性原则类似，即在界面布局的时候性质相同的事物要相接近，不相同的要远离，这样更符合人们的既定认知。</p>
+<p><strong>1. 将相近的功能的分为一组</strong></p>
+<p>在面临很多复杂功能时，简单的堆砌显得啰嗦，需求又不能随意删减。这时候就可以将相类似的功能放在同一个组别里面进行收纳整理，这与席克定律也相接近。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396806" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-13.jpg" width="1200" height="462" /></span></p>
+<p><strong>2. 按照事物性质和关联程度严格把握布局的间距</strong></p>
+<p>这里与视觉设计也有很多重叠，即落实到页面的高保真的细节。保证内容想接近的元素间距要小，内容有区分的间距要大。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396807" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-14.jpg" width="1200" height="1945" /></span></p>
+<p>自我理解：任何事物都有其复杂性，不可避免。某些事物一旦失去其复杂性，其作用本质就可能失去效果。不要抱怨某些流程和工作，他们的复杂性是其发挥作用所必然带来的。所以才需要你来优化和简化。</p>
+<p><strong>1. 把复杂性降到最低点</strong></p>
+<p>事物的复杂性是固定，但是要思考你所面对的是最简程度的复杂性么。首先优化内部系统的整个流程和不必要的步骤能够有效降低系统本身的复杂性。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396808" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-15.jpg" width="1200" height="462" /></span></p>
+<p><strong>2. 把复杂性进行转移组合隐藏</strong></p>
+<p>再把复杂性降低到最低程度之后，事物/流程仍然表现出一定复杂性时。就要考虑造成复杂的元素是什么，是否要将造成复杂的元素进行收纳组合，甚至隐藏。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396809" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-16.jpg" width="1200" height="1936" /></span></p>
+<p>自我理解：在相同前提下我们选择最简单有效的。单纯的炫技是可耻的。</p>
+<p><strong>1. 给用户清晰的引导</strong></p>
+<p>想清楚这张界面的主要目的是什么，顺着这个目标去引导用户，其他元素的视觉层级要让步，来让用户抓住重点。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396810" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-17.jpg" width="1200" height="462" /></span></p>
+<p><strong>2. 少即是多</strong></p>
+<p>少代表流程/步骤/界面元素的减少，多意味着用户量的增加体验感的增强。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396811" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-18.jpg" width="1200" height="462" /></span></p>
+<p><strong>3. 衡量产品功能的取舍</strong></p>
+<p>产品在功能迭代改版上，会出现大量不同的声音和方向。但功能不是越多越好，用户的时间是确定的，在某一功能上消耗的时间长，在其他功能上就短了。奥卡姆剃刀就要求我们找到主功能点，其他功能点要做出让步妥协甚至砍掉。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396812" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-19.jpg" width="1200" height="1047" /></span></p>
+<p>自我理解：关于防错定律和我的上一篇文章入门（一）的放错和容错原则基本近似，只是分类的更细致一些，分解到了操作的前中后阶段来防止错误。上一篇有更多解释。</p>
+<p><strong>1. 操作前禁止操作或者预告结果</strong></p>
+<p>有一些功能在你操作之前就禁止操作，避免了错误的发生。或者通过告知操作之后会产生的不良后果</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396813" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-20.jpg" width="1200" height="462" /></span></p>
+<p><strong>2. 操作中 提醒用户</strong></p>
+<p>在操作过程中，进行错误提醒，有效避免错误的进行</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396814" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-21.jpg" width="1200" height="462" /></span></p>
+<p><strong>3. 操作后给用户弥补错误的机会</strong></p>
+<p>用户在使用app的过程进入错误的路线，需要给用户弥补的机会</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396815" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-22.jpg" width="1200" height="1459" /></span></p>
+<p>自我理解：这一点主要体现在产品设计上，通过对未完成任务的提醒，来去博得用户的注意力，进而达到商业目的。</p>
+<p><strong>1. 倒计时/读条等交互反馈</strong></p>
+<p>倒计时会给人一种紧促感，逼迫用户去注意，无形之中给用户规定了任务，这个任务也就是咱们的业务目标。倒计时读条等交互方式也应该谨慎恰当使用，因为不是每一个任务场景都需要给用户紧迫感。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396816" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-23.jpg" width="1200" height="462" /></span></p>
+<p><strong>2. 定向反馈提醒</strong></p>
+<p>这一点也是利用未完成任务的相关信息反馈达到让用户去完成任务的业务目的。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396817" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-24.jpg" width="1200" height="1551" /></span></p>
+<p>自我理解：在上一篇一致性原则里面讲到了和竞品保持一致/和迭代版本保持一致，其实是我拓展的。这一定律是明确指出了一致的根本原因。在产品设计的时候，用户的心理就是我希望你的使用方式/操作和主流一致，超出预期的就会有人群不接受，就会有用户流失。</p>
+<p><strong>1. 能不创新就不创新</strong></p>
+<p>创新意味着改变，改变的不仅仅是你的界面还有用户习惯和长久以来的认知模型。破坏习惯重建习惯是有很大风险的。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396818" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-25.jpg" width="1200" height="935" /></span></p>
+<p>其实能看到很多Dribble页面很有特点，也不是完全没有落地性，但是实际国内产品并没有看到这样的设计，原因就是不符合雅各布定律。</p>
+<p><strong>2. 好的的产品都是创新的 不同的</strong></p>
+<p>这一点好像和上一点有点相悖。但是其实也不违背，有很多分寸的拿捏往往不是理论能完全决定的。微信后来居上绝不是因为照搬qq，如果新的创新带来的优势能够弥补不相同所带来的不足，也是可以尝试的。</p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396819" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-26.jpg" width="1200" height="920" /></span></p>
+<p><span class="img-zoom"><img alt="交互设计入门指南（二）：九大经典定律" class="alignnone size-full wp-image-396820" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201118-27.jpg" width="1200" height="3057" /></span></p>
+➜10个产品细节剖析，让你看看大厂是如何做设计的！
+https://www.uisdc.com/10-product-details-7	59580
+<p>设计不是拼图，深入下去，有很多细节需要推敲，而这些细节的背后的逻辑与意义更值得关注。产品主要强调的是与人的交互，用户通过对产品的操作来实现自身的目的，比如双击，滑动，常按等，而操作一般建立在产品的功能基础上，产品的功能细节体现在产品的业务逻辑中，产品所提供的功能是否更好的满足用户的需求，操作细节与功能细节密不可分，功能影响着用户的操作，而操作细节更多体现在用户的感受。</p>
+<h4><span class="auto_menu">「淘宝」缺货：主操作按钮并未置灰</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在淘宝挑选到自己喜欢的商品时，如果该商品缺货，主操作按钮文字会变成“缺货中，提醒掌柜发货”的提示。</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-396986" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201119-1.jpg" width="797" height="800" /></span></p>
+<p><strong>2. 设计思考：</strong></p>
+<p>除了吃饭最重要之外，接下来应该就是网购了，当然，这也是建立在自身经济条件或“信用”良好的情况下。当我们在购物应用上看到心仪的商品时，满怀期待的去下单，结果看到一个灰色的按钮不能操作，部分APP只显示了库存0，其他什么提示也没，满满的挫败感有木有？</p>
+<p>淘宝APP则是用了友好的方式提醒用户。当我们需要下单发现缺货时，淘宝并没有用一个灰色不能点击的按钮呈现，相反，按钮做的更加醒目，通过提示“缺货中，提醒掌柜发货”文案提示，同样能激起用户点击的欲望，让整个流程能够继续，而不是在此终结，导致用户不知多措。有一点我们心里都知道，根本不需要用户提醒，商家肯定更清楚商品是否缺货，这样做的目的是便于用户继续完成主流程的操作，也留用户一丝希望，后期有再次光临的可能性，同时让用户暂时忘记无法达到目标的挫败感，安抚负面情绪，又有体谅的情怀。</p>
+<h4><span class="auto_menu">「使命闹钟」治疗懒床癌：不辱使命</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>使命闹钟是治疗懒床癌“患者”的专用药，只需设定一种关闭闹钟的方式，在闹钟响起后，要想成功关闭，则需要完成设定的方式（要动脑筋），待闹钟成功关闭，头脑已经清醒。</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-396987" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201119-2.jpg" width="797" height="800" /></span></p>
+<p><strong>2. 设计思考：</strong></p>
+<p>明天早上我要早点起床，先设定两个闹钟，好好学点东西，Emm&#8230;&#8230;。清晨，闹钟一个接一个的响起，眯着眼睛无限延时，N分钟过去之后&#8230;天啦，要迟到了。这种情况80%人都经历过吧，我们总是无限的把希望寄托在明天，殊不知想的比做得多，到了第二天睡到太阳晒屁股了依然是平凡的一天。不管我们是为了利用早上的珍贵时间还是为了早睡早起，但是早上起床困难却成了我们最大的障碍。</p>
+<p>使命闹钟可以帮助我们解决这个问题。在设定闹钟时，选择一个关闭闹钟的方式，比如：摇一摇、吹一吹、数学题等，可用让我们通过动脑筋的方式完成关闭闹钟的条件方可，这真算是神仙操作了，狠起来连自己都不放过的赶脚，待闹钟成功关闭，睡意已去、大脑清醒，可以准备起床了。</p>
+<p>（PS：本人亲身经历，曾经设置过数学题，出题的太狠了：162&#215;46+1149=？，这时如果还迷迷煳煳，可能连手机里的计算器都找不到，更不要说把每个数字精准的输入完成计算了）</p>
+<h4><span class="auto_menu">「网易云音乐」截图预判分享行为</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在网易云音乐的任何界面，只要系统判断有截图行为，就会弹出最常用的分享渠道，便于用户传播分享。</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-396988" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201119-3.jpg" width="797" height="800" /></span></p>
+<p><strong>2. 设计思考：</strong></p>
+<p>分享功能是每个互联网产品不可或缺的功能，它可以满足不同人的传播需求。比如用户认同一个东西的价值、希望得到某种虚荣、利用稀奇古怪的事情博取关注和点赞等。晒悲伤，博人同情，或者是排解压抑情绪，表面上看虽然只是用户的一种表达方式，但还有一个最重要的就是企业自身产品的推广和传播。想要用户更高频率的触发分享行为，就需要在用户行动之前花点小心思了。</p>
+<p>网易云音乐在任何页面，只要系统判断用户有截图行为，就会主动弹出分享渠道，便于用户直接进行传播，跟其他大部分APP需要在特定也页面才能分享或者通过打开社交软件传播相比，缩短了操作路径，提高了用户对截图页面的分享几率，方便用户的同时也可以对产品的推广起到一定作用。</p>
+<p>那么，问题来了，截图自动弹窗对于不需要分享的用户来说并不友好，还要手动关闭，是不是增加了用户的操作成本呢？其实不然，根据Facebook调研数据表明，在娱乐、多媒体类型的应用里，高达69%的用户截图都是为了分享，占据大部分用户群体，其截图自动弹出分享正是为迎合这三分之二的用户提供便利，一个产品的呈现不管用哪种方式表达，都无法让所有用户满意，只需满足大部分用户即可，这也是设计团队即使发现了这方面的不友好，也没有对这个功能痛下杀手的原因。另外，分享功能虽然重要，但并不属于高频操作，所以即对部分用户不友好，但如果其他方面能做到尽善尽美，并不会给用户带来多大的影响，最终也会在微弱的负面情绪下坦然接受。</p>
+<h4><span class="auto_menu">「全民K歌」练唱：利用加载进度普及使用技巧</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>全民K歌的练唱功能，首次进入在加载进度时，除了加载动画和进度条之外，还会出现各种功能使用技巧的小提示，避免用户在等待的过程中出现焦虑的情况。</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-396989" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201119-4.jpg" width="797" height="800" /></span></p>
+<p><strong>2. 设计思考：</strong></p>
+<p>用户与界面的每一次互动都是一次加载过程，因操作引起的页面跳转、刷新或弹窗等行为，页面都需要向服务器发送请求信息。在此过程中，由于网络及页面自身处理信息的原因，导致加载过程可能发生延长，从而需要一个“反馈”即加载来缓和用户的等待。有时加载时间过长会让用户感到崩溃，如何缓解用户在等待过程中可能会出现的焦虑感，是一个非常重要设计要素，否则就会造成用户的流失。</p>
+<p>在使用全名K歌的练唱功能时，由于首次进入的加载时间（6~10秒）较长，除了应有的加载动画之外，还使用了进度条百分比提示，向用户生动的展示着当前页面的加载的进度，从而通过进度条设计唤起用户情感，以实现与用户情感层次的交流。另外还会出现各种功能场景使用技巧的小提示，弱化用户正在等待加载页面的心理感知，将用户的思维引导至其他方面，缓解因等待可能出现的焦虑，通过教育用户来达到由被动变主动的目的。</p>
+<p>[link https://www.uisdc.com/loading-animation-design]</p>
+<h4><span class="auto_menu">「农业银行」银行卡设置别名</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在农业银行的卡片详情页面，可以分别对不同卡片设置别名，比如工资卡、房贷卡、生活卡等。</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-396990" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201119-5.jpg" width="797" height="800" /></span></p>
+<p><strong>2. 设计思考：</strong></p>
+<p>进入互联网时间，人均着手多张银行卡。手机银行APP也可以绑定多张卡片，因账户是同一个人开设的，所以显示的名称是一样的，并且还有部分用户在同一家银行根据不同卡种的优惠程度办理了多张信用卡。因个人需要，不同的卡片可能用于不同的用途，比如工资卡、炒股账户、房贷卡等，如果卡片资金混用，整体收支可能会一团糟。</p>
+<p>在农业银行APP的卡片详情页面，可根据自己不同用途的需求，对卡片设置一个便于记忆、个性化的名称，并不会影响到在银行账户中的名字，设置好之后，便于用户更好的对自身理财账户进行区分，方便记忆和使用。另外还可以避免银行卡部分信息被（他人瞟窃）泄露，登录时无需银行卡号或身份证号，凭借设置的别名加密码登录即可。</p>
+<h4><span class="auto_menu">「高德地图」导航-不一样的超速预警</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>使用高德地图导航时，如果超速驾驶，系统除了语音播报和左上角时速变红之外，屏幕两侧还会出现红色的光芒闪动，用视觉强调超速预警。</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-396991" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201119-6.jpg" width="797" height="800" /></span></p>
+<p><strong>2. 设计思考：</strong></p>
+<p>我们在使用导航自驾时，经常会听到语音播报“前方限速xxx，你已超速”，因为超速提醒会提前500米播报，这时如果及时把速度降下来，基本不会有事，但如果没有听到语音播报，一如既往向前冲，那么就要悲剧了，首先，别人都在减速，而自己还在超速，就会给自己或其他人带来很大的安全隐患；其次如果被电子警察拍到，罚款不说还得扣驾照分。</p>
+<p>高德导航在超速的情况下，除了应有的语音播报和左上角时速标识变红外，在屏幕两侧还会出现红光闪动，用强烈的视觉提醒告知用户已超速，非常显眼，可以在用户没有听到语音播报的情况下，再次通过视觉预警，降低超速发生的概率，避免给自己或他人带来安全隐患以及经济损失。</p>
+<p>（PS：当我们开着车超速的时候，突然出现的红光闪动，有没有感觉到，就像玩吃鸡、王者时，血条快没有了突然出现的红光闪动，如果还无脑向前冲，就算有十条命也不够你造的，总之后果很严重）</p>
+<h4><span class="auto_menu">「搜狗输入法」一秒发送一屏表情</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>使用搜狗输入法长按表情emoji时，屏幕会出现一连串的表情输入，并伴随数字提示清晰显示表情的数量。</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-396992" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201119-7.jpg" width="797" height="800" /></span></p>
+<p><strong>2. 设计思考：</strong></p>
+<p>在社交聊天中，表情是我们必用的功能，表情往往比文字更能表达我们的真实感受，它能表达出我们的喜怒哀乐，相比冷冰冰的文字更生动、贴切。每个用户都有那个几个常用具有代表性的表情符号，但不同的应用，表情符号的样式也有明显的不同，这时候我们就可以通过搜狗输入法，在任何应用都能使用同一套表情系列，能满足用户在所有（部分不支持显示表情的除外）应用的表情需求，其他的功能也是一应俱全。</p>
+<p>搜狗手机输入法emoji表情的魅力还不止于此。在与好友沟通的时候，会看到它每间隔一小段时间，就能发来一屏幕的表情，很惊讶也很好奇，这是怎么办到的呢？其实很简单，只需要在键入状态下长按emoji，屏幕上会连续出现此表情，一直按着会一直增加，而且还伴随着数字提示，可以清楚知道已输入表情的数量。用emoji发多个表情能表达出丰富情感，既方便又好玩，动效的表情和数字变化让显示更加直观，同时又略带趣味性。</p>
+<h4><span class="auto_menu">「悦跑圈」数值变化的动效设计思考</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>进入悦跑圈首页，累计跑量的总数据通过动效在1500毫秒内从0不断增加、直至累计的实时数据为止，非常显眼。</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-396993" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201119-8.jpg" width="797" height="800" /></span></p>
+<p><strong>2. 设计思考：</strong></p>
+<p>数据是每个APP里面非常重要的板块，有很多时候，用户频繁的进入应用，而目标则是直击数据累计。数据虽然是最真实的写照，但如果表现的不够合理，反而会带来负面影响，影响信息的传播，误导用户的认知。</p>
+<p>悦跑圈APP则是在短时间内，将用户累计跑量从0至总数据以动效的方式逐步增减展现，将抽象的数据通过可视化的手段表达出其内里的信息和规律，更加直观地传达数据信息，便于用户的大脑能够更好地抓取和理解有效信息，增加信息的印象。这种逐步增加的动效变化方式，让数据更容易被接受、内容更容易被理解、信息更容易被记忆。当累计数据很低时，从另一方面也起到的安抚用户心理的作用，暗示着任何东西和事务都是从0开始不但的积累，只要不放弃，数值就会不断增加，更是对用户的一种鼓励。</p>
+<h4><span class="auto_menu">「百度网盘」会员即将到期巧妙的提醒</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>百度网盘的会员即将到期时，进入我的页面，会从设备右侧缓缓弹出挽留的文案提示，5秒后自动消失，再次进入后会看到新的文案，点击可直接进入续费页面。</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-396994" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201119-9.jpg" width="797" height="800" /></span></p>
+<p><strong>2. 设计思考：</strong></p>
+<p>会员是互联网产品中最稳定的一个用户群体，也是企业在盈利需求上非常重要的支柱，随着会员对产品的认同不断增加，企业也会钻研更多能满足会员的服务和特权（我说的会员不是注册用户，而是开通增值服务购买虚拟产品的客户群）。在如今基本全面小康生活的条件下，开通会员的用户有很多并不是有硬性需求，或许只是一时兴起短暂的需要，那么在会员到期时，如何留住会员继续使用增值服务则成了企业关键问题点。产品对于这种情况的处理，常见的无非三种：</p>
+<ul>
+<li>无任何提示：用户会员到期后，在不知情的状况下自动失去增值类的服务特权；</li>
+<li>强提示：通过弹窗或新页面告知用户会员即将到期，提醒用户续费，虽然有一定的作用，但如果设计不当，可能会造成用户的反感；</li>
+<li>弱提示：合适的时间、合适的地点给予用户弱提示会员即将到期，能轻微吸引用户注意力但不影响其他功能的使用，属于友好的提醒。</li>
+</ul>
+<p>百度网盘则是用了第三种弱提示。进入我的页面，在个人信息及部分功能区域给予简单的文案，不影响其他功能的使用。友好的文案提示，丝毫不提续费会员的字眼，而是告知用户即将失去什么，会有什么样的后果，给用户造成一种心理负担，强调之前所获得的增值服务内容即将过期、无法继续使用，体现出服务或内容的「稀缺性」，从而让用户产生恐惧心理，强调事情的后果之后，促使用户行动，能唤醒用户的「警惕意识」，且能带来一定的驱动力，在不是特别理性的情况继续续费该服务，从而形成转化。</p>
+<h4><span class="auto_menu">「微信」长按信息：搜一搜的妙用</span></h4>
+<p><strong>1. 产品体验：</strong></p>
+<p>在微信对话框长按消息，点击搜一搜，即可查到跟词条相关百科、视频号、朋友圈、其他文章等。</p>
+<p><span class="img-zoom"><img alt="10个产品细节剖析，让你看看大厂是如何做设计的！" class="alignnone size-full wp-image-396995" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-dm-20201119-10.jpg" width="797" height="800" /></span></p>
+<p><strong>2. 设计思考：</strong></p>
+<p>微信搜一搜功能上线快3年时间，可真正在用的用户却不多。在自己的印象中，有没有出现过这种情况，当朋友发来一个自己不熟悉的网络名词时，为了避免尴尬，赶紧复制到浏览器看看是什么梗，等了解清楚之后再回到微信，“卧槽”应用都结束进程了，需要重新进入，emmm&#8230;..</p>
+<p>使用微信的搜一搜，长按需要搜索的信息调出菜单，选择搜一搜，即可在微信内搜索跟所选消息相关的内容。搜一搜会自动提取消息的关键词，如果对自动提取的关键词不满意，点击顶部标题的箭头，在弹出的页面中，滑动选择新的关键词即可，省时又省力，减少对用户搜索需求流程的打断以及不必要的重复操作，提升用户体验。</p>
+<h4><span class="auto_menu">结语</span></h4>
+<p>设计师需要养成体验产品的好习惯并将优秀的产品细节记录下来，加强自己的记忆，不仅能提升自己的语言组织和总结能力，也为日后输出优秀的作品当铺垫，对自己的能力提升以及未来的职业发展带来便利。</p>
+<p>本期产品细节分享结束，我们下期再见。</p>
+➜想让平面布局更有章法？收下这份几何构图总结！
+https://www.uisdc.com/geometric-composition	61855
+<p>本期带来的是“几何构图”的使用攻略，几何构图是版面设计元素根据几何形态来组织视觉语言、构建画面，形成一个人为的视觉空间，让视觉元素布局更有章法，传达出理性之美。</p>
+<h4><span class="auto_menu">三角构图</span></h4>
+<p>三角构图指画面中的主要元素形成一个三角形的态势，可以是正三角形、斜三角形或倒三角形。</p>
+<p><span class="img-zoom"><img alt="想让平面布局更有章法？收下这份几何构图总结！" class="alignnone size-full wp-image-397024" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-lx-20201119-1.jpg" width="1067" height="534" /></span></p>
+<p><strong>1. 正三角</strong></p>
+<p>正三角构图上小下大，具有挺拔高耸感。重心落在底部，底边接近水平，是既平衡稳定又不失灵活的构图形式。</p>
+<p><span class="img-zoom"><img alt="想让平面布局更有章法？收下这份几何构图总结！" class="alignnone size-full wp-image-397025" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-lx-20201119-2.jpg" width="800" height="1855" /></span></p>
+<p><strong>2. 倒三角</strong></p>
+<p>倒置的三角构图体现出一种不稳定的张力，以及心理的紧张压迫感，充满运动趋势。</p>
+<p><span class="img-zoom"><img alt="想让平面布局更有章法？收下这份几何构图总结！" class="alignnone size-full wp-image-397026" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-lx-20201119-3.jpg" width="800" height="1041" /></span></p>
+<p><strong>3. 斜三角</strong></p>
+<p>斜三角可以视为倾斜度不太高的倒三角，充满了不确定性，静中有动，运用比较灵活。</p>
+<p><span class="img-zoom"><img alt="想让平面布局更有章法？收下这份几何构图总结！" class="alignnone size-full wp-image-397027" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-lx-20201119-4.jpg" width="1116" height="800" /></span></p>
+<h4><span class="auto_menu">四边形</span></h4>
+<p>四边形构图是指版面中的主要视觉元素按四边形形状进行排列，理性而严谨，是设计时经常使用的平衡构图方式。</p>
+<p><span class="img-zoom"><img alt="想让平面布局更有章法？收下这份几何构图总结！" class="alignnone size-full wp-image-397028" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-lx-20201119-5.jpg" width="1127" height="800" /></span></p>
+<p><strong>1. 压四角</strong></p>
+<p>用视觉元素压住版面的四角，使版面均衡稳定。</p>
+<p><span class="img-zoom"><img alt="想让平面布局更有章法？收下这份几何构图总结！" class="alignnone size-full wp-image-397029" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-lx-20201119-6.jpg" width="800" height="1752" /></span></p>
+<p>也可以将主标题作为主体的视觉元素，放大后编排到版面的四个角落，在突出标题的同时兼顾画面中心元素展现，很适合标题字数较少、想营造稳重感觉的设计情境。</p>
+<p><span class="img-zoom"><img alt="想让平面布局更有章法？收下这份几何构图总结！" class="alignnone size-full wp-image-397030" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-lx-20201119-7.jpg" width="1129" height="800" /></span></p>
+<p><strong>2. 框架型</strong></p>
+<p>利用主体周边的元素构建成四边形的边框，利用画框形式汇聚观者的视线，从而起到突出主体，增强画面形式感与临场感的作用。</p>
+<p><span class="img-zoom"><img alt="想让平面布局更有章法？收下这份几何构图总结！" class="alignnone size-full wp-image-397031" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-lx-20201119-8.jpg" width="1500" height="698" /></span></p>
+<p><strong>3. 倾斜型</strong></p>
+<p>将画面主体元素以倾斜四边形的形态呈现在画面上，可以有效增加版面的动感和空间感，打破版面的单调与平淡，显得更具创意性。</p>
+<p><span class="img-zoom"><img alt="想让平面布局更有章法？收下这份几何构图总结！" class="alignnone size-full wp-image-397032" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-lx-20201119-9.jpg" width="1500" height="701" /></span></p>
+<h4><span class="auto_menu">圆形构图</span></h4>
+<p>主体以轮廓分明的圆形形象占据版面中心，规定了构成作品的视觉对象与范围，同时它也将主体从环境中分离出来，产生视觉焦点，使主体强烈而突出。</p>
+<p><span class="img-zoom"><img alt="想让平面布局更有章法？收下这份几何构图总结！" class="alignnone size-full wp-image-397033" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-lx-20201119-10.jpg" width="800" height="1486" /></span></p>
+<p>还可以将主体放置于版面中心位置，使四周元素向中心集中或者向四周辐射，形成纵深感，将观者的视线强烈地引向主体中心，并能产生旋转、运动、聚焦等视觉效果。</p>
+<p><span class="img-zoom"><img alt="想让平面布局更有章法？收下这份几何构图总结！" class="alignnone size-full wp-image-397034" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-lx-20201119-11.jpg" width="1200" height="570" /></span></p>
+<h4><span class="auto_menu">曲线构图</span></h4>
+<p>是指把主要的视觉元素在版面上呈曲线编排的构图方式，其他元素填充空余空间，具有灵活自由的属性，可以产生浪漫的心理感受和音乐般的节奏与韵律感。</p>
+<p><span class="img-zoom"><img alt="想让平面布局更有章法？收下这份几何构图总结！" class="alignnone size-full wp-image-397035" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-lx-20201119-12.jpg" width="1075" height="800" /></span></p>
+<p>曲线构图的常用的形式有S形、C形、Z形、U形等。可以引导读者的视线进行阅读，优美雅致，根据形状不同还可以传达出多种情感，画面显得生动有趣。</p>
+<p><span class="img-zoom"><img alt="想让平面布局更有章法？收下这份几何构图总结！" class="alignnone size-full wp-image-397036" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-lx-20201119-13.jpg" width="1200" height="513" /></span></p>
+<h4><span class="auto_menu">散点构图</span></h4>
+<p>散点式构图也可以看作不规则的曲线构图，是指将设计元素呈点状的散布在画面中，特点是形散而神不散。所谓的散布并非是松散的胡乱分布，而是存在着内在联系，让画面处于一个自由和谐的状态，给人回味的空间，营造一种自由随意的氛围。</p>
+<p><span class="img-zoom"><img alt="想让平面布局更有章法？收下这份几何构图总结！" class="alignnone size-full wp-image-397037" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-lx-20201119-14.jpg" width="1200" height="557" /></span></p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>在设计时可以将版面设计元素根据几何形态来组织视觉语言、构建画面，让视觉元素布局更有章法，传达出理性之美。常用的几何构图形式有三角形构图、四边形构图、圆形构图、曲线构图等。</p>
+<p>往期回顾：</p>
+<p>[link https://www.uisdc.com/full-page-composition-2]</p>
+<p>欢迎关注作者的微信公众号：「艺海拾贝Design」</p>
+<p><span class="img-zoom"><img alt="想让平面布局更有章法？收下这份几何构图总结！" class="alignnone size-full wp-image-267186" src="https://image.uisdc.com/wp-content/uploads/2018/04/uisdc-bhsyqr.jpg" alt="内容太多如何设计？来看「满版构图」实操演示！" /></span></p>
+➜全网都说好的vivo新系统，跟用户体验走了反方向
+https://www.uisdc.com/originos	62589
+<p>不知道各位铁子们的朋友圈是啥样，反正我的朋友圈几乎被vivo刷屏了；吓的我赶紧看了看微博和知乎这个号称 “前苹果设计师操刀” 的系统到底有什么不一样。</p>
+<p><span class="img-zoom"><img alt="全网都说好的vivo新系统，跟用户体验走了反方向" class="alignnone size-full wp-image-397378" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-vi-20201122-2.jpg" width="1128" height="600" /></span></p>
+<p>浏览了几十篇相关文章和报道，好评如潮，我根据这些输入总结了如下几个特性：</p>
+<p>OriginOS参考了原生安卓、iOS和Windows 10的交互特点，将传统安卓的抽屉、桌面、小部件整合起来，按用户的使用习惯和用户行为感知形成一个叫做TimeLine的时间流动线。</p>
+<p><span class="img-zoom"><img alt="全网都说好的vivo新系统，跟用户体验走了反方向" class="alignnone size-full wp-image-397379" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-vi-20201122-3.jpg" width="800" height="426" /></span></p>
+<p>在OriginOS原子界面中，vivo希望用户不再区分桌面、抽屉和插件，而是根据自己的实际需要在桌面安排想要的内容。这个内容可能是APP图标、可能是APP小部件、也可以是系统插件。总之，根据用户的行为，在桌面展示用户需要的东西。</p>
+<p><span class="img-zoom"><img alt="全网都说好的vivo新系统，跟用户体验走了反方向" class="alignnone size-full wp-image-397380" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-vi-20201122-4.jpg" width="800" height="380" /></span></p>
+<p><span class="img-zoom"><img alt="全网都说好的vivo新系统，跟用户体验走了反方向" class="alignnone size-full wp-image-397381" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-vi-20201122-5.jpg" width="800" height="332" /></span></p>
+<p>在安卓设计规范之外，vivo发明了一个叫做“华容网格体系”和“原子组件”的新规范。这一规范可以看到Windows 10和iOS 14的影子。这一规范从生态角度来说，跨越十分激进，想做到理想化的状态，需要全行业来支撑这些组件具备更宽泛的信息展示能力。</p>
+<p><span class="img-zoom"><img alt="全网都说好的vivo新系统，跟用户体验走了反方向" class="alignnone size-full wp-image-397382" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-vi-20201122-6.gif" width="700" height="410" /></span></p>
+<p>坦诚地讲vivo属实付出了很多，在细节的追求上甚至可以跟当年的锤子有点一拼了，但站在用户体验的角度上，我斗胆泼个冷水～</p>
+<h4><span class="auto_menu">朗朗上口的名字是用户体验的起点</span></h4>
+<p><span class="img-zoom"><img alt="全网都说好的vivo新系统，跟用户体验走了反方向" class="alignnone size-full wp-image-397383" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-vi-20201122-7.jpg" width="800" height="362" /></span></p>
+<p>Origin？这是个什么，经受了9年义务教育和4年高等教育的洗礼，我居然读不出来，是我不行还是蓝厂阳春白雪？不难看出，蓝厂另外一个号称“OS”的funtouch，我用了几分钟的时间才知道是“放他吃”啊！</p>
+<p>对比下MIUI，colorOS和flyme已经弱爆了，更别提 “充电2小时5分钟，通话5分钟2小时” 这种神级文案了，所以我奉劝vivo放下包袱，说点人话。一个用户都读不出来的名字，又怎么谈用户体验呢？</p>
+<h4><span class="auto_menu">自由开放的尽头就是禁锢与枷锁</span></h4>
+<p>我很是认同OriginOS的最大亮点就是华容网格，官方号称“通过不同尺寸磁贴的自由变化和放置，形成每个用户独有的行为驱动逻辑和动线设计”，极大的鼓励用户自定义桌面，表面看“用户自定义”是用户体验的极致，但这就好比把你抛在大草原里骑马，哪都能去，去哪都行，因为并没有一条路可以走…图图新鲜还行，但最终我还是不敢走。WindowsPhone当年的界面就是这种情况，官方动态配图看好的不行，可是对用户有着极大的审美要求，排列的不好可真是相当丑。</p>
+<p>再有一点，这个网格系统让我想起了魅族Flyme的smartbar：</p>
+<blockquote><p>Smart bar 是魅族在旗舰手机 MX2 发布时推出的一项操作解决方案。它智能整合系统返回键和菜单键，使其与软件功能栏合二为一。“底栏”左右分别显示返回与菜单键，中间三个空位留给软件功能按钮。如果软件功能按钮过多，Smart bar会将其自动放进菜单栏。双层变单层，优先的屏幕显示区域被更好的释放，上下点击也不会出现误操作，而且界面更美观，风格也更加统一。</p></blockquote>
+<p><span class="img-zoom"><img alt="全网都说好的vivo新系统，跟用户体验走了反方向" class="alignnone size-full wp-image-397384" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-vi-20201122-8.jpg" width="800" height="426" /></span></p>
+<p>本身是好心，但需要第三方来适配，无形中加大了第三方的工作量，显然vivo还不具备像苹果一样的号召力来牵动生态内的伙伴来搞这个。</p>
+<h4><span class="auto_menu">混乱的设计语言</span></h4>
+<p><span class="img-zoom"><img alt="全网都说好的vivo新系统，跟用户体验走了反方向" class="alignnone size-full wp-image-397385" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-vi-20201122-9.gif" width="800" height="153" /></span></p>
+<p>△ colorOS</p>
+<p>想比OPPO的“无边有界”，vivo没有一个统一的视觉语言来Cover，你能看到三种形式“扁平”“拟物”“新拟态”共存其中，特别是今年在Dribbble流行起来的“新拟态”，完完全全的概念设计居然被搬到系统上？真是大跌眼镜。甚至你可以看得到这是 “Fluent Design” “Metro” 和 “Materia design” 的结合体，就是没有一点苹果的影子，所以说是前苹果设计师操刀，我是有点质疑的…</p>
+<p>[link https://www.uisdc.com/neumorphism-design-trends]</p>
+<p><span class="img-zoom"><img alt="全网都说好的vivo新系统，跟用户体验走了反方向" class="alignnone size-full wp-image-397386" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-vi-20201122-10.jpg" width="800" height="430" /></span></p>
+<p>△ 微软 Fluent Design</p>
+<p><span class="img-zoom"><img alt="全网都说好的vivo新系统，跟用户体验走了反方向" class="alignnone size-full wp-image-397387" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-vi-20201122-11.jpg" width="800" height="426" /></span></p>
+<p>以图标为例，上图展示了3种截然不同的风格，在一个设计师的眼里这可能是个设计还原的事故。我理解的设计语言应该有一个完整的世界观，像Fluent Design一样，ta是对自然世界的高度抽象和概括，并不是仅仅为了好看，反观OriginOS，一个系统里二次元和三次元搞起了暧昧，就像初音和擎天柱谈起了恋爱一样让人难以接受。</p>
+<h4><span class="auto_menu">食之无味弃之可惜的交互细节</span></h4>
+<p><span class="img-zoom"><img alt="全网都说好的vivo新系统，跟用户体验走了反方向" class="alignnone size-full wp-image-397388" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-vi-20201122-12.gif" width="350" height="765" /></span></p>
+<p>在交互方面，点击OriginOS桌面的击交互池图标，就能直接在桌面上自由调整交互形式。要知道，以往vivo每款新机都可能更换一套手势逻辑，现在OriginOS把选择权交还给了用户：用户可以按照自己的习惯，在26种不同组合当中选择更适合自己的手势操作组合。</p>
+<p><span class="img-zoom"><img alt="全网都说好的vivo新系统，跟用户体验走了反方向" class="alignnone size-full wp-image-397389" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-vi-20201122-13.jpg" width="488" height="476" /></span></p>
+<p>但这又跟锤子的“大爆炸”和“一步”类似，你说这事是个问题吧，但也不是那么大的问题，导致费了大心思又获得不了市场的局面。</p>
+<h4><span class="auto_menu">双系统并行？大型A/B测试</span></h4>
+<p><span class="img-zoom"><img alt="全网都说好的vivo新系统，跟用户体验走了反方向" class="alignnone size-full wp-image-397390" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-vi-20201122-14.jpg" width="800" height="426" /></span></p>
+<p>最有意思的莫过于双系统并行了，OriginOS和Funtouch可以自由切换，有点像我做设计不知道哪个方案更好事出了灰度大法一样。这种做法无疑让我觉着整个OS团队对自己作品信心的折扣，既然是自己认为最好的，那又何必在意批评呢，放松一点，大胆一点。</p>
+<h4><span class="auto_menu">总结一下</span></h4>
+<p>不过吐槽归吐槽，不足归不足，vivo能有觉悟来下定决心搞搞系统这事还是值得鼓励的，明显可以看得到细节上下的功夫，也明显可以感觉vivo是从用户体验的角度出发，尽量不让APP绑架用户，最大化的把刚需搬到你能看得到的地方，所以还是要给vivo一个赞！今天的发布也才是第一步，相信未来OriginOS可以做的更好！</p>
+<p>欢迎关注作者微信公众号：「负能量补给站」</p>
+<p><span class="img-zoom"><img alt="全网都说好的vivo新系统，跟用户体验走了反方向" class="alignnone size-full wp-image-397377" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-vi-20201122-1.jpg" width="180" height="179" /></span></p>
+➜壹周速读：设计师的作品集制作指南
+https://www.uisdc.com/quick-reading-weekly-vol80	65222
+<p><span class="img-zoom"><img alt="壹周速读：设计师的作品集制作指南" class="aligncenter size-full wp-image-397419" src="https://image.uisdc.com/wp-content/uploads/2020/11/quick-reading-weekly-vol80-1.jpg" width="750" height="168" /></span></p>
+<p>作品集是很多设计师求职应聘过程中，最重要的一个组成部分。作品集有哪些坑要注意，做好作品集有哪些要点要踩中，进入大厂要如何优化它，都有讲究。这一期壹周速读就从作品集制作指南开始：</p>
+<h4><span class="auto_menu">作品集制作指南</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：设计师的作品集制作指南" class="aligncenter size-full wp-image-397403" src="https://image.uisdc.com/wp-content/uploads/2020/11/np1.png" /></span></p>
+<p>有很多设计师能力感觉还不错，但在作品集里没明确表现出来，不少作品集则显得逻辑混乱，浏览体验不佳，使得原本的作品和设计价值没法得以体现。设计师老戴头的这篇文章，通过作品集的设计者和面试官两个角色的双重视角，对作品集的制作思路、技巧与避坑经验做一个总结和分享：</p>
+<p>[link https://www.uisdc.com/designer-portfolio-2]</p>
+<p><span class="img-zoom"><img alt="壹周速读：设计师的作品集制作指南" class="aligncenter size-full wp-image-397403" src="https://image.uisdc.com/wp-content/uploads/2020/11/np2.png" /></span></p>
+<p>这篇文章出自资深设计总监 Diana Malewicz 之手，她经常会分享一些实操性极强的文章，这篇文章是她基于以往招聘设计师的经验，梳理出来的设计师简历和作品集的10个死穴，想必这也是很多设计师特别想知道的事情：</p>
+<p>[link https://www.uisdc.com/10-crucial-mistakes-in-portfolio]</p>
+<p><span class="img-zoom"><img alt="壹周速读：设计师的作品集制作指南" class="aligncenter size-full wp-image-397403" src="https://image.uisdc.com/wp-content/uploads/2020/11/np3.png" /></span></p>
+<p>对于很多偏产品、交互、UI的设计师而言，想要让作品集价值更高，还有一个办法，就是将用户体验5要素融入到作品集当中。如果你能够掌握对的方法，能够 get 到如何使用用户体验 5 要素深度分析产品设计，如何高级且不露声色地把它应用到你的作品集里，那么你就距离 Offer 更近一大步了：</p>
+<p>[link https://www.uisdc.com/5-elements-of-user-experience ]</p>
+<p><span class="img-zoom"><img alt="壹周速读：设计师的作品集制作指南" class="aligncenter size-full wp-image-397403" src="https://image.uisdc.com/wp-content/uploads/2020/11/np4.png" /></span></p>
+<p>设计师都知道作品集的重要性，但每次想整理的时候，又总觉得好像无从下手。彩云的这篇文章就跟大家聊聊，一份好作品集要怎么做以及要注意的地方：</p>
+<p>[link https://www.uisdc.com/portfolio-production]</p>
+<h4><span class="auto_menu">设计趋势</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：设计师的作品集制作指南" class="aligncenter size-full wp-image-397403" src="https://image.uisdc.com/wp-content/uploads/2020/11/np5.png" /></span></p>
+<p>LOGO 是品牌设计当中最为重要的一环，LOGO 本身的设计不仅昭示了品牌的身份，甚至可以表现品牌的价值观和特点。和视觉设计不同，LOGO 的设计常规类型其实是相对固定的，通常不会有某种类型的 LOGO 占据主流，但是不同类型的 LOGO 呈现出不同的变化和趋势倾向，下面就是 LOGO 设计在 2021 年呈现出的 11 个趋势：</p>
+<p>[link https://www.uisdc.com/logo-design-trends-2021]</p>
+<h4><span class="auto_menu">干货·神器</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：设计师的作品集制作指南" class="aligncenter size-full wp-image-397403" src="https://image.uisdc.com/wp-content/uploads/2020/11/np6.png" /></span></p>
+<p>最新一期的设计圈实用干货大合集来了！和以往类似，11月的干货合集当中，涵盖了一些实用性颇为不错的设计工具和开发工具，但是最实用的始终是各种图标、组件、还有字体，下面具体看看吧：</p>
+<p>[link https://www.uisdc.com/new-tools-for-designers-november-2020]</p>
+<p><span class="img-zoom"><img alt="壹周速读：设计师的作品集制作指南" class="aligncenter size-full wp-image-397403" src="https://image.uisdc.com/wp-content/uploads/2020/11/np7.png" /></span></p>
+<p>有时候我们需要一些好看的背景素材，时间一紧张可能就做得不咋地，没关系，这篇文章给大家推荐一个非常给力的自动生成背景纹理的网站，Glitchart：</p>
+<p>[link https://www.uisdc.com/glitchart]</p>
+<p><span class="img-zoom"><img alt="壹周速读：设计师的作品集制作指南" class="aligncenter size-full wp-image-397403" src="https://image.uisdc.com/wp-content/uploads/2020/11/np8.png" /></span></p>
+<p>「Tailwind.ink」是一个很有趣的色彩工具，以 AI 人工智能产生调色盘，依照说明，这个工具利用 Tailwindcss（CSS 框架）训练程序学习，当用户开启网站、选择特定色调，Tailwind.ink 就会依照该色码产生 100 种相关色，像是偏向特定颜色或是加入深浅的渐变色，全部列在网页中就能轻松找到更合适的色码：</p>
+<p>[link https://www.uisdc.com/tailwind-ink]</p>
+<h4><span class="auto_menu">产品·UI</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：设计师的作品集制作指南" class="aligncenter size-full wp-image-397403" src="https://image.uisdc.com/wp-content/uploads/2020/11/np9.jpg" /></span></p>
+<p>弹窗是在设计APP时候绕不开的一个元素，选择合适的弹窗形式，是需要多加思考的地方，避免变成只会完善产品原型的线框美工。弹窗可以传达信息，反馈状态以及引导用户操作，通常弹窗会分为两种类型，模态弹窗与非模态弹窗，它们各自都有哪些讲究？看这里：</p>
+<p>[link https://www.uisdc.com/app-ummary-of-the-popup]</p>
+<p><span class="img-zoom"><img alt="壹周速读：设计师的作品集制作指南" class="aligncenter size-full" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-wz-20201112-6.gif" width="564" height="290" /></span></p>
+<p>《王者荣耀》里的皮肤确实在逐步贴近玩家的喜好，而且诗词、典故、文化元素也越来越多。《王者荣耀》在2020至今的DAU已经达到日均1亿。在美术，尤其是皮肤设计方面，他们到底改变了什么，又是怎么做的？看看他们的美术总监 Steve 的幕后分享：</p>
+<p>[link https://www.uisdc.com/king-glory-art-interview]</p>
+<p><span class="img-zoom"><img alt="壹周速读：设计师的作品集制作指南" class="aligncenter size-full wp-image-397403" src="https://image.uisdc.com/wp-content/uploads/2020/11/np10.png" /></span></p>
+<p>UX设计流程中，需求分析是绝大多数流程的开端。那么，产品需求到底是什么？传说中的 PRD 文档又具体是怎么一回事？又有哪些常见的分析策略是设计师必须掌握的？看看酸梅干超人的这篇深入分享：</p>
+<p>[link https://www.uisdc.com/product-analysis]</p>
+<p><span class="img-zoom"><img alt="壹周速读：设计师的作品集制作指南" class="aligncenter size-full wp-image-397403" src="https://image.uisdc.com/wp-content/uploads/2020/11/np11.png" /></span></p>
+<p>插画目前在UI设计中已经逐渐成为了较为重要甚至不可或缺的一部分，无论是在运营UI还是在UX中，插画设计以自己独特的属性魅力，成为了UI设计中的新趋势，这篇文章详细科普了插画对于不同需求与场景下，是如何应用到 UI 设计当中去的：</p>
+<p>[link https://www.uisdc.com/illustration-science]</p>
+<p><span class="img-zoom"><img alt="壹周速读：设计师的作品集制作指南" class="aligncenter size-full" src="https://image.uisdc.com/wp-content/uploads/2020/10/uisdc-sd-20201014-1.gif" width="540" height="600" /></span></p>
+<p>动效在产品设计中扮演着重要角色，它的好坏与否直接影响了用户的使用体验。在界面中动效不仅仅是一种视觉装饰，它能够提升产品的参与度并扩展交流的范围。虽然如今 UI 动效是迪士尼的动画设计12 原则，但是动效设计和它并非一一对应。这也催生了这篇文章——这篇文章梳理了一些动效设计中，更直接有效的规则和方法：</p>
+<p>[link https://www.uisdc.com/12-principles-of-motion-design]</p>
+<p><span class="img-zoom"><img alt="壹周速读：设计师的作品集制作指南" class="aligncenter size-full wp-image-397403" src="https://image.uisdc.com/wp-content/uploads/2020/11/np12.png" /></span></p>
+<p>天猫双十一的奇迹，也不是一蹴而就。奇迹的背后，是所有人十年如一日的自我挑战、追求极致的共同结果。但同时，对于阿里小二来讲，双十一也成为了一项无比艰巨的任务，他们需要在所有人的期待和关注下，顶住压力给大家一个惊喜。这里，是你想知道的幕后：</p>
+<p>[link https://www.uisdc.com/tmall-double-11-brand-design-case]</p>
+<p><span class="img-zoom"><img alt="壹周速读：设计师的作品集制作指南" class="aligncenter size-full wp-image-397403" src="https://image.uisdc.com/wp-content/uploads/2020/11/np13.png" /></span></p>
+<p>近一年，随着iOS和安卓陆续支持了深色模式，各个团队的一通操作，也的确为用户带来「眼前一黑」的体验。深色模式也成为了前阵子业界最火的话题之一。只是在实际项目中，深色模式大多经历了反复的迭代和修改，那么深色模式到底要怎么设计？看看腾讯设计师的总结：</p>
+<p>[link https://www.uisdc.com/dark-mode-summary]</p>
+<h4><span class="auto_menu">平面排版</span></h4>
+<p><span class="img-zoom"><img alt="壹周速读：设计师的作品集制作指南" class="aligncenter size-full wp-image-397403" src="https://image.uisdc.com/wp-content/uploads/2020/11/np14.png" /></span></p>
+<p>重复图案在我们的大自然中可以说是很常见了，比如说蜜蜂的蜂巢、斑马的纹路再或者是蟒蛇的鳞片。多年以来，很多的设计师们也以此作为灵感，创作出了很多经典的作品，而且几乎在任何的设计领域都能见到图案的影子，这些图案风格独特，而且都源自于不同的文化。这篇文章，就为你详细梳理一下几何图案设计的历史：</p>
+<p>[link https://www.uisdc.com/pattern-design-method]</p>
