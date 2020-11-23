@@ -1,0 +1,771 @@
+➜耕升RTX 3090 炫光评测：玩灯？它比较在行
+http://www.sohu.com/a/432333992_223764	6287
+<p>之前我们评测过两款RTX 3090，它们的性能、外观上都各有春秋，但在玩灯方面还少了点意思，毕竟有些人喜欢无光污染，有些人则喜欢一套RGB主机。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201117/9c2d309f2fd04b44bca0402e4a3b3086.jpeg" max-width="600" /></p>
+<p>而如何把显卡的灯效与主机里的其它灯效同步一直困扰很多人，虽然理论上都是12V RGB或者5V ARGB设计，但除了改线，或者使用与主板一样品牌的显卡，是没有办法实现整机灯光同步的。</p>
+<p>今天评测的这款耕升RTX 3090 炫光则在显卡的RGB模块上设计了灯光同步接口，只要你的主板支持标准的12V RGB或者5V ARGB同步接口就可以灯光同步，下面我们就来详细剖析这款显卡各项表现。</p>
+<p><strong> 耕升RTX 3090 炫光开箱</strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201117/0bc56242a9b7442d838f28429a6a86de.jpeg" max-width="600" /></p>
+<p>耕升RTX 3090 炫光的外观为白色透光扇叶+黑色主配色的散热器外壳。三个风扇框的设计比较奇特，中间是标准圆形，两边则是菱形的设计。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201117/88fe9e40797b404982fc25fc4ad8081b.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>中心风扇特写，十一片扇叶，细看扇叶可以有纹理，官方称这扇叶为锋刃设计。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201117/7d1b058329694cbe9a6ae9e1ce620311.jpeg" max-width="600" /></p>
+<p>显卡配备了PCIe槽支架一个，亚克力材质，刻有耕升宣传标语。支架配有RGB灯条，需接至主板灯光接口，可进行灯光同步。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201117/2bb9d46f49d546f39556bed2b73f8530.jpeg" max-width="600" /></p>
+<p>金属背板，非常大的一个X图案，两侧做了不少镂空设计，左侧可透过镂空看到散热鳍片，一是前方的风扇可吹透鳍片提升散热效果，二是这个位置是背扇的安装位置，让预配的背扇加强此处的通风能力，具体散热效果我们后面再来测试。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201117/2cbc540d55914343adfcc52b4e80e171.jpeg" max-width="600" /></p>
+<p>供电接口与公版一样为双8Pin，不过虽然是双8Pin，每张卡的功耗墙也有所不同，这张卡BIOS预设的功耗墙为350W，比公版还要保守。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201117/2609edf4a4664fef9f5a05e7c800ccd4.jpeg" max-width="600" /></p>
+<p>这张卡一个比较大的看点就是预配的背扇了，对比其它品牌显卡的外置风扇，这个显然大得多了。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201117/614e1399b60649959a89c825d225ec63.jpeg" max-width="600" /></p>
+<p>风扇直径80mm，通过卡扣安装在背板上，接线即可用。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201117/1c23b1d3e626424e9cc705cb0bcd354a.jpeg" max-width="600" /></p>
+<p>安装背扇后一个问题就是显卡该部分厚度会增加不少，ATX主板与机箱会比较好兼容它的体积。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201117/536b96850ee548378e4951e816f46457.jpeg" max-width="600" /></p>
+<p>显卡顶部有GAINWARD字样的RGB透光设计。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201117/4828687ba1db41d1b19a7a5327dcb78f.jpeg" max-width="600" /></p>
+<p>背部显示输出接口为3*DP 1.4a+1*HDMI 2.1，比较常规的搭配。</p>
+<p><strong> 整体灯效+灯光同步效果展示</strong></p>
+<p>显卡支持主板灯效同步系统，接在本次测试使用的华硕ROG M12E中就可以通过AURA Sync控制整机灯效。 </p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201117/331167af26474e548884c13af4fd37a2.gif" max-width="600" /></p>
+<p class="ql-align-center">多色呼吸</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201117/650dc342c8d4433ab6e6213e991ef20c.gif" max-width="600" /></p>
+<p class="ql-align-center">彩虹</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201117/623f5d3963364fc385908cfbb31850f2.gif" max-width="600" /></p>
+<p class="ql-align-center">红色彗星</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201117/b8b7618154cd45cd99dfb70b49e4a9ed.gif" max-width="600" /></p>
+<p class="ql-align-center">蓝色彗星</p>
+<p>整套机包括主板、内存与显卡都支持AURA Sync，实际看上去的灯效是非常同步、好看的，显卡与主板的灯光也没有色差。</p>
+<p><strong> 显卡拆解</strong></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201117/d56c0ecdf1434369a799b56503047276.jpeg" max-width="600" /></p>
+<p>显卡的散热措施做得比较充分，可以看到显存、MOS管、电感都贴上了导热贴，左侧供电部分也安装有导热金属片。</p>
+<p>显卡为18相供电设计，14相核心供电，4相显存供电。MOS管与此前评测的两款RTX 3090一样，同样是来自AOS的DrMOS。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201117/408c339a58404a40a2d5226a187b399d.jpeg" max-width="600" /></p>
+<p>核心部分可见7条热管经过底座，其中两根为U型设计，另外5根贯通整个散热器。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201117/c8e02f7e9f2a41a4803fbc75fb5e895c.jpeg" max-width="600" /></p>
+<p>背部的12颗GDDR6X显存，来自镁光，核心电容为四颗聚合物电容+两组MLCC。</p>
+<p><strong> 测试平台</strong></p>
+<p class="ql-align-center"><strong>RTX 3090显卡评测平台</strong></p>
+<p>操作系统<strong>Windows 10 2004 Pro Workstations</strong>CPU<strong>Intel：</strong></p>
+<p><strong>i9-10900K OC@5GHz 1.26V</strong>主板<strong>Intel：</strong></p>
+<p><strong>华硕ROG M12E</strong>内存<strong>芝奇 皇家戟 DDR4 8GBx2 4000MHz C15</strong>SSD<strong>影驰HOF PRO 1TB x2（系统盘+游戏盘）</strong>显卡<strong>耕升 RTX 3090 炫光</strong></p>
+<p><strong>NVIDIA GeForce RTX 3080 Founders Edition</strong></p>
+<p><strong>NVIDIA GeForce RTX 2080 Ti Founders Edition</strong>电源<strong>超频三 七防芯GI-P850</strong>水冷散热器<strong>超频三 凌镜GI-CX360 水冷散热器</strong></p>
+<p>测试平台和首测一致。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201117/d99ae4ada8f84532b0c9575e34b7a1dd.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201117/2f39b14ec6f34243a9ad4ae02e831c1b.png" max-width="600" /></p>
+<p class="ql-align-center">显卡GPU-Z参数与功耗墙</p>
+<p>我们截取了GPU-Z下显卡的参数与BIOS参数，显卡的BOOST频率与公版是一样的，1695MHz，不过BIOS中的功耗墙设计就非常保守了，350W封顶，公版的RTX 3090封顶可以跑到400W，不过公版有NV第一方加持，体质通常是最好的，所以跑的高也不出奇。</p>
+<p><strong> 理论性能实测</strong></p>
+<p>先上3DMark理论测试，我们把3DMark的DX11、DX12和光线追踪测试都跑了一遍，对比的两款显卡也是性能较强的RTX 3080与RTX 2080 Ti。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201117/2ae3a1c9819f4d899d4b5bac477f5fba.png" max-width="600" /></p>
+<p><strong>3DMark理论测试小结：</strong>从3DMark跑分的结果来看，耕升RTX 3090 炫光的综合性能会比RTX 3080强约10.2%左右，虽然功耗墙限制到350W，但成绩是比较高的。</p>
+<p><strong> 无光追、DLSS游戏性能测试</strong></p>
+<p>由于RTX 3090支持光线追踪，新游与老游，支持光线追踪与不支持的我们会分开进行测试。因为此前测过RTX 3080已经能满足4K游戏需求，所以在RTX 3090上我们直接从4K起步来测试。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201117/990542b2c7f047b0a52a7bd41331fd50.png" max-width="600" /></p>
+<p><strong>无光追、DLSS游戏实测小结</strong>：平均下来看4K分辨率下耕升RTX 3090 炫光要领先RTX 3080约10.3%。</p>
+<p><strong> 光线追踪、DLSS游戏测试</strong></p>
+<p>支持光线追踪的游戏随着老黄的大力推进而不断增加，在今天我们可以测试的游戏也更多了。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201117/0c598d6d67bc439395377dd841964aae.png" max-width="600" /></p>
+<p><strong>光线追踪、DLSS游戏实测小结：</strong>在4K分辨率的光线追踪、DLSS游戏测试中，耕升RTX 3090 炫光领先RTX 3080约10.7%。</p>
+<p><strong> 功耗、噪音、温度</strong></p>
+<p>耕升RTX 3090 炫光玩灯确实有一套，跑分与游戏性能也够看，那用户的实际体验方面会如何？</p>
+<p><strong> 频率稳定度</strong></p>
+<p>我们通过Fire Strike Ultra的压力测试来记录显卡的高负载运行情况。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201117/57bc2b8b8705414c81a88fb5a74c40d9.png" max-width="600" /></p>
+<p class="ql-align-center">无背扇</p>
+<p>无背扇情况下，显卡的压力测试成绩为96.9%，差0.1%通过测试。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201117/4e995a36be244cbb93d1a1346af8f724.png" max-width="600" /></p>
+<p class="ql-align-center">有背扇</p>
+<p>有背扇情况下，显卡以97.4%的稳定度通过测试，下面来分析运行期间的频率来探究原因。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201117/5ca83c1b2e1643d69cd710acf7fc2129.png" max-width="600" /></p>
+<p>无背扇情况下的频率波动比较大，应该是受到了温度与功耗墙的共同限制，显卡核心频率一飙高就受限降频。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201117/f9b807958926468683392cec7a420057.png" max-width="600" /></p>
+<p>而安装了背扇之后，显卡的频率相对无背扇，波动变小了一点，且平均频率比无背扇的情况要高6MHz。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201117/6c95d920245c4a74b84fe028f2fdadca.png" max-width="600" /></p>
+<p>对比参测的两款公版RTX显卡，耕升RTX 3090 炫光在安装背扇后的成绩相对能让人接受。</p>
+<p><strong> 峰值功耗</strong></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201117/80b87829db0643c59af003ad579be4ec.png" max-width="600" /></p>
+<p>功耗方面通过PCAT套件记录峰值功耗，实测无背扇峰值功耗达398.8W，平均功耗350.1W，与TGP相符，但测试期间出现功耗瞬跌至203W的情况，原因未明。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201117/0dc6615ee57648a6a45f68e1eff84b13.png" max-width="600" /></p>
+<p>安装背扇的功耗与不装差不多，但没有出现上面瞬跌功耗的情况，全程功耗也比较稳定，平均功耗依然是符合350W TGP的表现。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201117/c911955fbce54fb7a9f49985fa4d47bd.png" max-width="600" /></p>
+<p>耕升RTX 3090标配的是双8Pin供电口，平均功耗也在350W左右，但瞬时功耗可破400W，且因为PCAT采样率低，测不到更详细精确的功耗表现，实际使用也会有达到更高功耗的可能，所以建议使用时配备850W以上足瓦电源。</p>
+<p><strong> 满载温度</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201117/ae7942cc7de44d6d894b950754d12dbd.png" max-width="600" /></p>
+<p class="ql-align-center">无背扇</p>
+<p>无背扇情况下，显卡温度可达79℃，是一个比较高的温度，这就可以解释之前频率跳动较大的表现了。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201117/95bb8a8ede124bda871475bd8c7df2cc.png" max-width="600" /></p>
+<p>安装背扇后温度稳定在77℃，上面测试有背扇的情况下，频率跳动的范围也变小了，背扇对显卡的温度控制会有一定的帮助，不过压低了两度，说多不多说少不少，聊胜于无。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201117/13008cd734e84d54b1da9f2d3e778f7f.png" max-width="600" /></p>
+<p>对比两款公版，耕升的峰值温度与它们相差无几。</p>
+<p><strong> 满载噪音</strong></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201117/cf8fa50890234555ac1994b56c426ac2.jpeg" max-width="600" /></p>
+<p class="ql-align-center">无背扇，52dB</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201117/ff4fb5e46dfd4c8ba332f75e805a1c9d.jpeg" max-width="600" /></p>
+<p class="ql-align-center">有背扇，52.7dB</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201117/4bf26fed564a4cf8a2332ffe74c3d395.png" max-width="600" /></p>
+<p>耕升RTX 3090 炫光的噪音表现还不错，安装背扇后噪音52.7dB，会有点风声，但不会吵。</p>
+<p><strong>关于噪音：</strong></p>
+<p><strong> 0 －20 分贝：很静、几乎感觉不到；20 －40 分贝：安静、犹如轻声絮语；40 －60 分贝：一般普通室内谈话；60 －70 分贝：吵闹：有损神经；70 －90 分贝：很吵、神经细胞受到破坏。90 －100 分贝：吵闹加剧、听力受损；100 －120 分贝：难以忍受、呆一分钟即暂时致聋。120分贝以上：极度聋或全聋；300分贝左右或以上：方圆20km的人不可修复性耳聋。</strong></p>
+<p><strong> PConline 评测室总结：玩灯在行，性能够看</strong></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201117/906e42133e9b42fd8b8c4bb97fb9723d.jpeg" max-width="600" /></p>
+<p>通篇下来，我的第一感觉就是：这张卡会更适合专门去玩灯的人士去选它。它的灯效设计非常全面，覆盖风扇，侧面LOGO，并且一个最大特点就是可以与现在众多主板进行灯效同步，而不用花更多的“溢价”去购买同品牌的显卡产品。苦于主机灯效同步难题的用户，选它搭建自己的RGB主机可以获得非常不错的效果。</p>
+<p>有赞也有弹，这张卡的功耗墙虽然只有350W，但温度方面表现不是很理想，不装背扇的情况下已经临近温度墙了，装背扇的话温度可以压下去，但会对机箱内空间有一定要求，用户选择时就需要考虑好位置是否充裕了。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201117/d7feec3c71614c2c8c3b19e4363fdb6f.png" max-width="600" /></p>
+<p>目前这张卡电商自营售价12999元，比官方建议售价贵了1000元，但一些第三方店铺将价格杀到了11999元，有些还送一套影驰HOF EXTREME 4266 8Gx2套条，这套内存怎么说也值1000元，相当于10899元拿下这张卡，对新装机的朋友来说还算实惠。</p>
+➜尼康更新适用于尼康D6单反相机“C”固件1.11版
+http://www.sohu.com/a/432338754_223764	7192
+<p>近日，尼康发布适用于尼康D6单反相机“C”固件更新1.11版的软件。新版固件主要变更的内容和解决的问题如下：</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201117/68e537491ac443da9381f5b601888b6b.jpeg" max-width="600" /></p>
+<p>△ 使用变焦镜头时,若不存在先前保存的值,在焦距最小值或最大值执行自动AF微调会导致这两者中另一个焦距值无法正确保存。此修复会使工作流程有所变化。</p>
+<p>△ 当无线电控制AWL用于两个或多个遥控闪光灯组件时,i-TTL闪光控制的闪光量将不会根据为以下项目所选的值进行调整：</p>
+<p>闪光补偿；</p>
+<p>曝光补偿(自定义设定菜单中的自定义设定e3闪光曝光补偿选为整个画面)；</p>
+<p>闪光包围增量；</p>
+<p>曝光/闪光包围增量。</p>
+➜欢呼！一款国民软件可在苹果自研芯片Mac上使用
+http://www.sohu.com/a/432359356_223764	8041
+<p>作为一款火遍中国的免费办公应用套件，WPS因其免费的特性，广受用户欢迎。近日从WPS官方了解到，WPS Office已经推出了 Mac尝鲜版，并且已经率先支持苹果自研芯片Apple Silicon。也就是说，WPS Office Mac 尝鲜版适配了苹果上周发布的新款 MacBook Air、13 英寸 MacBook Pro 和 Mac mini。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201117/c193395333314ec591b52b2c4f5828cb.jpeg" /></p>
+<p>M1芯片采用最新的5nm工艺打造，拥有高达160亿个晶体管，集成中央处理器CPU、图形处理器GPU、内存、神经网络引擎、各种连接功能以及其他众多组件。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201117/40711f6b9ead41c180ad4566dd207102.jpeg" /></p>
+<p>据了解，得益于M1芯片与iPhone、iPad中的A系列芯片同为ARM架构，搭载M1芯片的全新Mac产品还可运行iPhone和iPad中的移动APP，在整体平台生态的联动下，应用软件质量、数量与兼容性均不会成为M1芯片Mac产品的短板。想必接下来，将会有更多应用开始支持Apple Silicon。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201117/81e333596c5a437daddfec42daab098f.jpeg" /></p>
+➜一次特殊的进博会 一个特别的柯尼卡美能达理念
+http://www.sohu.com/a/432359702_223764	10670
+<p>2020年受全球疫情的影响，于上海召开的第三届国际进口博览会（下文简称进博会）似乎也笼罩着一层阴霾，在口罩的遮掩下，人们的目光依然不停的寻找各展位上的亮点产品。但即便如此，在本届进博会，柯尼卡美能达将集团战略DX2022中期经营计划的核心概念融入到展位中。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201117/734da15515944cbdb06baac8b6f96fe7.jpeg" /></p>
+<p>柯尼卡美能达作为第一次参加进博会的业界知名企业可谓是诚意满满，不仅在本次进博会期间首次公布了新的企业愿景“Imaging to the People”，发布了业界瞩目的WPH平台产品，更将旗下产品融入到创意改变世界、智联空间、智效印刷、智创质造、智惠医疗五大展区场景中，与会采购团纷纷询问产品和解决方案详情。</p>
+<p>在如此忙碌的进博会中，我们有幸邀请到柯尼卡美能达（中国）投资有限公司、柯尼卡美能达办公系统（中国）有限公司董事长炭谷忠彦先生和柯尼卡美能达办公系统(中国)有限公司市场部部长凌芸女士接受我们的采访，畅谈2020年柯尼卡美能达对中国市场的思考和战略。</p>
+<p>众所周知，受疫情的影响，全球的商用文印市场都属于下滑之态，但为何柯尼卡美能达会在此时参加本次进博会呢？炭谷忠彦董事长认为，首先，虽然全球都在疫情的阴霾下，但中国市场较为特殊，柯尼卡美能达看到中国相比其他国家更早控制住了疫情，而且当前中国经济已经呈正增长趋势，无论是远在日本的总部，还是柯尼卡美能达中国都对未来中国市场十分看好，所以才有这次如此大力度的参加本次进博会。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201117/448016e2b33749adbbcad472e716c55e.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>柯尼卡美能达（中国）投资有限公司、柯尼卡美能达办公系统（中国）有限公司董事长炭谷忠彦先生</p>
+<p>其次，深耕商务办公、数字印刷、IoT创新业务、颜色测量、医疗保健等多元化业务的柯尼卡美能达，与中国政府提出的深化国有企业改革、推动制造业和新兴产业转型升级、提高医疗水平和医疗设备投入，以及加快环保产业发展推动经济发展方式转变四个施政重点方向不谋而合，根植于中国市场的柯尼卡美能达也想借着此次进博会的契机，展现柯尼卡美能达One Konica Minolta多元化业务的强大实力。</p>
+<p>最为关键的是，此次提出的企业愿景“Imaging to the People”柯尼卡美能达将发挥自身特有的Imaging技术，为用户提供能满足其“可视化” 诉求的最佳解决方案，智慧赋能客户的数字化转型。</p>
+<p>在疫情得到有效控制后，根植于中国市场的柯尼卡美能达认识到在疫情后的新常态下，终端用户的使用习惯及采购理念有所变化，这对这一变化柯尼卡美能达抱着积极的心态去迎接这些变化，并顺应终端用户的使用习惯。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201117/0c11ce8fbe1e44ea9aaea66c49959887.jpeg" /></p>
+<p>柯尼卡美能达办公系统(中国)有限公司市场部部长凌芸女士</p>
+<p>“数字经济在大环境中逆势增长，反而给柯尼卡美能达带来了新的机遇”，凌芸女士讲述道。身处变革中，柯尼卡美能达拥有在危机中不断思考的能力以及在逆势中破局突围的勇气，无论是自身的数字化营销创新、内部管理流程的数字化革新，还是面向合作伙伴，用户端的数字化技术应用，柯尼卡美能达旨在全面推进数字化转战略型，支持各行业、各业态客户企业的转型，促进自身、合作伙伴及用户实现商业价值的持续提升。</p>
+<p>确实，作为业内知名品牌，柯尼卡美能达却拥有敢于创新勇于试新的能力，例如在今年年初疫情最为凶勐的时刻，无法正常进行历年的全国经销商大会活动，柯尼卡美能达创业内先河，举办了线上全国经销商大会，还携手甲骨文、ABBYY等合作伙伴开展了一系列线上直播活动，更有线上新品发布会，以及环保主题相关直播活动，备受市场关注的同时也成为了业内的标杆，迫使其它品牌在下半年中纷纷效仿。</p>
+<p>当然，参加本次进博会的柯尼卡美能达也是任务满满，虽然不便透露具体签约数据，但炭谷忠彦董事长却对参与展会的员工予以了极高的肯定。炭谷忠彦董事长认为，进博会不仅是一次提升销售业绩的展台，更是一个柯尼卡美能达面向中国终端用户的一扇窗口，柯尼卡美能达要向中国市场充分展示One Konica Minolta的多元化业务和强大实力，展现柯尼卡美能达数字化转型的丰硕成果，进一步夯实品牌影响力。</p>
+<p>除了是一扇窗口外，本次进博会对柯尼卡美能达来说更是一次难得的听取一线市场的声音舞台，凌云女士表示，通过本届进博会，柯尼卡美能达更进一步了解一线市场的声音和行业新动向，通过这些来自一线市场的反馈，柯尼卡美能达将从产品创新、服务创新，数字化转型等多方面不断完善，力求今后为中国政企用户提供更好的产品、服务，同时为国内企业的数字化转型升级提供强大的助力。</p>
+➜Origin OS即将上线！蒲公英邀请函亮了
+http://www.sohu.com/a/432361576_223764	11922
+<p>近日，vivo正式宣布全新系统Origin OS 将于11月18日在深圳的特别活动中与大家首次见面。而最近，也有许多博主用户陆续收到了Origin OS特别活动的邀请函。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201117/837d70b93e26415bb82fe06958e18b2a.jpeg" max-width="600" /></p>
+<p>根据博主@小白测评的分享，只见这份邀请函有些特殊：除了简约美观的包装盒外，还包含了一张印有发布会相关信息的小卡片和一个采用了亚克力材质做成的<strong>蒲公英标本</strong>；在标本晶体上还刻上了Origin OS特别活动的时间与地点“iADC 设计博物馆”。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201117/94f10b9ab3cc40748784e154d759fcb5.jpeg" max-width="600" /></p>
+<p>在官方微博@Origin OS 发布的预告视频中，还可以看到无数原子汇聚成一朵盛开花朵的画面，并配文“<strong>从独立的原子里，催生绽放的花朵；从微渺的本原中，塑造浩瀚的世界</strong>”。</p>
+<p>早前更有眼尖的网友发现了一个域名为“thisisnotvivoos.com”的神秘网站，该网站的域名翻译成中文是“这不是vivoOS”，在网站里只有一朵随着时间慢慢开放的白花。</p>
+<p class="ql-align-center"><img src="//p6.itc.cn/q_70/images03/20201117/16d9af1454dd44699c82d9cbbc9efa58.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>据此有网友猜测，在viv的o新系统中<strong>植物</strong>（花朵）很可能是一个重要元素，这也符合之前“简约”“轻量化”的爆料。</p>
+<p>值得注意的是，之前网友关注的新系统Origin OS的中文名，也已经确定为“<strong>原OS</strong>”，意在“一切从原开始”。除了革命性的升级外，“原OS”似乎还暗示着vivo想要打造一款更加贴近人们日常生活的操作系统。</p>
+<p>官博@Origin OS的预热文案中表示“谁说习惯一定要被改变”，也可能在预示这一点。也就是说，新系统的<strong>交互功能</strong>会更加全面，根据不同用户的实际体验做出改变与调整，更加人性化，更加纯粹，贴合生活。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201117/2b74f2b0471645d6a45b4c29e320a0c2.png" max-width="600" /></p>
+<p>Origin OS即将登场，相信vivo本次系统大升级在业界将会起到风向标的作用，而新系统究竟还有哪些惊喜，我们活动上见分晓！</p>
+➜一次特殊的进博会 一个特别的柯尼卡美能达理念
+http://www.sohu.com/a/432365412_223764	12707
+<p>2020年受全球疫情的影响，于上海召开的第三届国际进口博览会（下文简称进博会）似乎也笼罩着一层阴霾，在口罩的遮掩下，人们的目光依然不停的寻找各展位上的亮点产品。但即便如此，在本届进博会，柯尼卡美能达将集团战略DX2022中期经营计划的核心概念融入到展位中。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201117/06f229c584e94f41a2e63c6f2e67916c.jpeg" max-width="600" /></p>
+<p>柯尼卡美能达作为第一次参加进博会的业界知名企业可谓是诚意满满，不仅在本次进博会期间首次公布了新的企业愿景“Imaging to the People”，发布了业界瞩目的WPH平台产品，更将旗下产品融入到创意改变世界、智联空间、智效印刷、智创质造、智惠医疗五大展区场景中，与会采购团纷纷询问产品和解决方案详情。</p>
+<p>在如此忙碌的进博会中，我们有幸邀请到柯尼卡美能达（中国）投资有限公司、柯尼卡美能达办公系统（中国）有限公司董事长炭谷忠彦先生和柯尼卡美能达办公系统(中国)有限公司市场部部长凌芸女士接受我们的采访，畅谈2020年柯尼卡美能达对中国市场的思考和战略。</p>
+<p>众所周知，受疫情的影响，全球的商用文印市场都属于下滑之态，但为何柯尼卡美能达会在此时参加本次进博会呢？炭谷忠彦董事长认为，首先，虽然全球都在疫情的阴霾下，但中国市场较为特殊，柯尼卡美能达看到中国相比其他国家更早控制住了疫情，而且当前中国经济已经呈正增长趋势，无论是远在日本的总部，还是柯尼卡美能达中国都对未来中国市场十分看好，所以才有这次如此大力度的参加本次进博会。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201117/84816c4c76be474f962acdc3f3b251ab.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center">柯尼卡美能达（中国）投资有限公司、柯尼卡美能达办公系统（中国）有限公司董事长炭谷忠彦先生</p>
+<p>其次，深耕商务办公、数字印刷、IoT创新业务、颜色测量、医疗保健等多元化业务的柯尼卡美能达，与中国政府提出的深化国有企业改革、推动制造业和新兴产业转型升级、提高医疗水平和医疗设备投入，以及加快环保产业发展推动经济发展方式转变四个施政重点方向不谋而合，根植于中国市场的柯尼卡美能达也想借着此次进博会的契机，展现柯尼卡美能达One Konica Minolta多元化业务的强大实力。</p>
+<p>最为关键的是，此次提出的企业愿景“Imaging to the People”柯尼卡美能达将发挥自身特有的Imaging技术，为用户提供能满足其“可视化” 诉求的最佳解决方案，智慧赋能客户的数字化转型。</p>
+<p>在疫情得到有效控制后，根植于中国市场的柯尼卡美能达认识到在疫情后的新常态下，终端用户的使用习惯及采购理念有所变化，这对这一变化柯尼卡美能达抱着积极的心态去迎接这些变化，并顺应终端用户的使用习惯。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201117/a5314d8350c24636b9a8b95de3ec92da.jpeg" max-width="600" /></p>
+<p class="ql-align-center">柯尼卡美能达办公系统(中国)有限公司市场部部长凌芸女士</p>
+<p>“数字经济在大环境中逆势增长，反而给柯尼卡美能达带来了新的机遇”，凌芸女士讲述道。身处变革中，柯尼卡美能达拥有在危机中不断思考的能力以及在逆势中破局突围的勇气，无论是自身的数字化营销创新、内部管理流程的数字化革新，还是面向合作伙伴，用户端的数字化技术应用，柯尼卡美能达旨在全面推进数字化转战略型，支持各行业、各业态客户企业的转型，促进自身、合作伙伴及用户实现商业价值的持续提升。</p>
+<p>确实，作为业内知名品牌，柯尼卡美能达却拥有敢于创新勇于试新的能力，例如在今年年初疫情最为凶勐的时刻，无法正常进行历年的全国经销商大会活动，柯尼卡美能达创业内先河，举办了线上全国经销商大会，还携手甲骨文、ABBYY等合作伙伴开展了一系列线上直播活动，更有线上新品发布会，以及环保主题相关直播活动，备受市场关注的同时也成为了业内的标杆，迫使其它品牌在下半年中纷纷效仿。</p>
+<p>当然，参加本次进博会的柯尼卡美能达也是任务满满，虽然不便透露具体签约数据，但炭谷忠彦董事长却对参与展会的员工予以了极高的肯定。炭谷忠彦董事长认为，进博会不仅是一次提升销售业绩的展台，更是一个柯尼卡美能达面向中国终端用户的一扇窗口，柯尼卡美能达要向中国市场充分展示One Konica Minolta的多元化业务和强大实力，展现柯尼卡美能达数字化转型的丰硕成果，进一步夯实品牌影响力。</p>
+<p>除了是一扇窗口外，本次进博会对柯尼卡美能达来说更是一次难得的听取一线市场的声音舞台，凌云女士表示，通过本届进博会，柯尼卡美能达更进一步了解一线市场的声音和行业新动向，通过这些来自一线市场的反馈，柯尼卡美能达将从产品创新、服务创新，数字化转型等多方面不断完善，力求今后为中国政企用户提供更好的产品、服务，同时为国内企业的数字化转型升级提供强大的助力。</p>
+➜十代酷睿芯片助力！联想ThinkPad 翼14 Slim轻薄本潜能大释放
+http://www.sohu.com/a/432366722_223764	12961
+<p>小时候，我看的漫画《龙珠》里面的超级赛亚人经过不断修炼后，战力会陆续提升，最终赢得胜利。如今在芯片研发领域，Intel酷睿系列芯片也像超级赛亚人那样不断地升级迭代，整个产品升级凝聚无数工程师的心血，他们将智慧注入了小小的芯片，每逢一次升级换代处理运算能力都能进入一个新的台阶。而搭配第十代英特尔酷睿i3的联想ThinkPad 翼14 Slim 笔记本电脑则性能大幅提升，收获了很多商务办公用户粉丝，甚至是“生产力”的代名词。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201117/38672bd1501d460c992dcd2c1178b1c1.jpeg" max-width="600" /></p>
+<p>作为“生产力”的主角，我们先来了解下它的核心芯片。在众多佼佼者中，i3-10110U虽然作为Intel十代酷睿芯片中的基础型号出现，但依靠更成熟的14nm的生产工艺，配合双核四线程设计，基础频率已经达到了2.1GHz，全核最大睿频甚至可达3.7GHz，单核最大睿频更是突破性达到了4.1GHz，显卡动态加速频率同样也到1.00GHz，内存可以支持最大64GB。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201117/9a7281eb35a3431aa6e059e236a2a140.jpeg" max-width="600" /></p>
+<p>ThinkPad翼14 Slim强大的性能得益于i3-10110U这颗芯片，因为它的优秀表现，才能让厂商更加节约笔记本空间，设计出轻薄的造型，让散热和续航都能表现更好。除了刚才提到的基本参数外，i3-10110U还支持SpeedStep增强型技术，通过降低cpu运行主频来达到降低功耗的技术，是英特尔专为笔记本cpu开发的。同时SpeedStep增强型技术支持动态增强应用性能和电力利用率，当您连接交流电源时，最高性能模式可提供台式机级的性能，而电池在优化模式可提供最长使用时间，进一步降低功耗，提高续航能力，ThinkPad 翼14 Slim的续航能力达到9小时，能够满足一整天的外出工作了。在插电状态下，能让你体验台式机般的功能处理能力，软件运行文档处理快速迅捷，而当它在使用电池情况下，保障最长的运行时间，也能让你持久处理文件。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201117/831e27abc08440e5aad138210b9c3bed.jpeg" max-width="600" /></p>
+<p>另外i3-10110U还具备在之前i5、i7系列才有的超线程技术，以前在同一时间内单核处理器只可以处理一项工作，而超线程技术是让一个单核心的处理器去模拟出双核运行的环境，这样处理效率就能提高约30%。i3-10110U还具备温度监视技术、虚拟化技术、睿频加速技术等等，所以别小看这颗小小的芯片，其背后的科技应用能让联想ThinkPad 翼14 Slim释放无限潜能，对于满足日常的商务办公需求，可不必担心这款低压处理器的性能压力。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201117/eff809d86c004d42b4262ed1405cbda9.jpeg" max-width="600" /></p>
+<p>联想ThinkPad 翼14 Slim笔记本正是拥有i3-10110U这颗强大的内芯，再加上轻薄设计，窄边框等时尚元素，让它受到了众多商务办公用户的欢迎，成为入门级轻薄本的首选。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201117/cc08f5572343480aaa0fd5b3bf2ede2a.jpeg" max-width="600" /></p>
+<p>联想ThinkPad 翼14 Slim采用了4.9mm的窄边框，让视野更广阔。而轻至1.73kg能随身轻松出行，薄至17.9mm让本本放进包包毫不占地方。A/D面采用金属材质，极具质感，提高了笔记本整体的档次。另外还具有杜比环绕音效，配合哈曼卡顿扬声器，开启舒适影音模式一键即达。采用ThinkCool黑酷散热技术的联想ThinkPad 翼14 Slim，在内壁铜粉烧结导热管工艺的作用下，提升芯片热传导效率，多角度风叶设计让有效噪声在34dB以下，让你更专注工作。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201117/4bd1f61a331c466a8284db33e56a60e0.jpeg" max-width="600" /></p>
+<p>总的来说，联想ThinkPad 翼14 Slim轻薄本性价比极高，只要3000多元就可以买到这款搭载十代酷睿处理器、SSD固态硬盘、窄边框屏幕、全功能Type-C接口的轻薄笔记本。它在i3-10110U加持下能满足绝大部分的用户商务需求。如此有颜有料的笔记本，你心动了吗？</p>
+➜还没用上第一部5G手机？赶快来看看它们吧！
+http://www.sohu.com/a/432378105_223764	14638
+<p>[PConline 杂谈]自从5G正式商用以来，5G就成为了一个热门话题，一部分尝鲜的小伙伴已经购买了5G手机，先一步体验到了5G网络的爽快。随着5G基站的逐步建立和5G手机价格的不断下探，5G手机对更多人来说已是触手可及，若是你现在还没用上第一部5G手机，那就得好好看看下面这几款了，它们不但价格优惠，而且在拍照、性能等方面都表现不俗，实在是换机的好选择。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201117/b8576fac8e7443389a0832a062bcf3f3.jpeg" /></p>
+<p>人生当中的每一个第一次都是很重要的，包括第一次换5G手机，今天推荐的几款5G手机分别是一加8、、荣耀30pro＋、，首先来看主要参数表。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201117/188cb68314274f92a124d78d340e1f16.png" /></p>
+<p><strong>外观</strong></p>
+<p>配色方面，一加8有“黑镜、青空、银翼”三种选择，其中青空带来的是沉静内敛，久看不腻的观感。OPPO Ace2色彩艳丽的屏幕和背部的奥利奥镜头设计，不失观感的同时也极具辨识度。荣耀30Pro＋使用超大品牌logo，玻璃后盖，在光影间邂逅万千变化。配色方面有多种可供选择，目前热门的有霓影紫、钛空银以及最新发布的流光幻镜，大胆配色与超薄机身交融，如尤物一般拿在手中，带来极为精妙的握感。 Pro的后盖依旧是3D曲面设计，两侧边缘的弧面恰到好处，持握时的手感非常赞。这款产品提供了黑镜与液氧两种时尚配色，而且引入了全新的AG磨砂工艺，在带来细腻柔和触觉感受的同时还能呈现出平静朦胧的视觉感受。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>一加8</strong>正面的90Hz瞳孔屏，是业内顶级的Fluid AMOLED屏幕。 一加8这块屏幕的分辨率为2400*1080，ppi高达402， 6.5，支持90Hz刷新率，支持DC调光，显示比例为20：9，显示效果细腻通透。这块屏幕还在DisplayMate测试中得到了最高的A+评级，并且通过了HDR10+显示标准及SGS屏幕护眼认证，无论看图片还是看视频，显示效果肉眼可见的出类拔萃。</p>
+<p><strong>OPPO Ace2</strong>并未采用时下流行的双曲面屏设计，而是配备了一块具有2400*1080屏幕分辨率的6.55英寸OLED直屏，这一屏幕也通过了HDR10+认证和德国莱茵TV全局护眼认证，全局最高亮度可达800nit，除此之外，OPPO Ace2还将触控采样率提升至180Hz，为用户带来良好的观看与游戏体验。</p>
+<p><strong>荣耀30 Pro+ </strong>所用的是 6.57 英寸的 OLED 双曲面屏，分辨率是目前比较常见的 2340 x 1080，并且这块屏幕能支持 90Hz 刷新率，在如游戏等场景下能达到 180Hz 的采样率。设计上荣耀将这块屏幕称为「超曲飞瀑屏」，因为它有着 70 度的边缘曲面和延伸到中框的设计，与手机背部的 3D 曲面玻璃形成平衡。</p>
+<p><strong>vivo X50 Pro</strong>的这块6.56英寸AMOLED柔性曲面屏幕，分辨率为2376*1080像素。这块屏幕屏占比达到了92.6%，并采用先进的COP封装技术，提升整机的握持感的同时，还能降低屏幕意外损伤的概率。同时X50 Pro的亮度达到500nit典型值，800nit HBM，在强光下手机屏幕也能清晰可见，而大火的HDR10+技术也被应用到了这块屏幕上，该技术可针对每一个场景进行相应的色彩映射，在暗光场景下更好的保留细节，从而提升画面的色彩丰富度和细节完整度。</p>
+<p><strong>性能和系统</strong></p>
+<p>一加8和OPPO Ace2<span>均搭载了高通今年的旗舰处理器——骁龙865，性能表现极为优秀。</span>荣耀30 Pro+搭载的麒麟990 5G芯片和vivo X50 Pro的高通骁龙765G移动平台，已经经受住了诸多考验，性能表现无须担心。</p>
+<p><strong>一加8</strong>搭载是高通全新骁龙865 5G SoC，全新架构搭配先进的7nm制程工艺，整体综合性能提升了25%，支持NSA+SA 5G双模。除了顶尖性能外，一加8还实现了对于SA&amp;NSA双模5G的支持，此外一加 8全系标配UFS 3.0闪存，读写速度更快。</p>
+<p>UFS 3.0加持，两次测试下来，平均读取速度达到1632.41MB/s，平均写入速度也有734.215MB/s，在UFS 3.0加持下，一加 8在app读写、安装更快，日常运行也都更加畅快。</p>
+<p><i><img src="http://p9.itc.cn/q_70/images03/20201117/89488eb1069d4323ba53f405112c1246.png" /></i></p>
+<p><i><img src="http://p6.itc.cn/q_70/images03/20201117/2e0cc5cf14a949afb606102dd18158da.png" /></i></p>
+<p>在核心配置上，作为一款为超级玩家打造的5G手机，<strong>OPPO Ace2</strong>搭载了高通骁龙865 移动平台，CPU和GPU性能比上一代提升25%，搭配最大12GB+256GB的高速内存组合，UFS3.0+TurboWrite+HPB，进一步提升读写速度，轻松应对多任务处理与超大型游戏。OPPO Ace2还支持 SA/NSA双模5G网络，5G+Wi-Fi 叠加，良好环境下可实现2950Mbps的连接速度，同时360度分布式天线，让手机信号保持最佳状态。</p>
+<p>对于用户而言，最为关注的还是其实际游戏体验。此前，OPPO邀请了超过200位内测玩家打了超过12万局比赛，将最优方案放均衡模式，OPPO 还与PEL选手联合测试，准备了一套专业的感参数，融到电竞模式中。OPPO Ace2与和平精英职业联赛官方的联合优化及全新的Hyper Boost 3.0让游戏功耗更低，实现稳定的90FPS，为玩家构建了一套更完善的90FPS生态圈。</p>
+<p><strong>荣耀30 Pro+</strong>搭载了麒麟990 5G芯片，支持双模5G和WiFi6，配备了LPDDR5内存和UFS 3.0闪存，内置VC液冷散热和双扬声器。</p>
+<p>在与游戏体验息息相关的GPU部分，麒麟990 5G也用上了豪华的16核心Mali-G76，相较于上一代，在性能上有着非常巨大的提升，能效比上提升了20%。针对游戏场景，麒麟990 5G推出Kirin Gaming+ 2.0，将性能和能效强大的CPU、GPU、DDR硬件基础与高性能、高能效、高画质的解决方案相结合，为用户带来更畅快的游戏体验。</p>
+<p><strong>vivo X50 Pro</strong>搭载了高通骁龙765G移动平台，支持NSA+SA双模5G组网，并覆盖了N1、N3、N41、N77、N78和N79等常见的5G频段。智能网络切换、双WLAN网络加速、数据网络加速、系统智能功耗管理和网络功耗优化功能的叠加，让vivo X50 Pro在高速联网之余还更加省电。</p>
+<p>骁龙765G是一款定位中高端的5G SoC，它采用了比骁龙865还先进的7nm EUV工艺，集成了高通第二代5G基带骁龙X52以及配套的射频系统。其CPU部分采用1+1+6的三丛集架构，包含1颗2.4GHz的超级大核，1颗2.2GHz的性能核心以及6颗1.8GHz效率核心。同时，骁龙765还集成Adobe 620 GPU、Spectra 355 ISP、Hexagon 696 DSP、传感器中枢等模块。以接近满帧的速度运行《王者荣耀》和《和平精英》一类的游戏还是不成问题的。</p>
+<p><strong>拍照</strong></p>
+<p>这几款手机的影像系统亮点很多，多摄组合为其带来了更好的成像素质和更多的拍摄玩法，主摄方面也采用了极其成熟的传感器，像荣耀30 Pro+的索尼IMX700图像传感器，夜景拍摄也不会让你失望。</p>
+<p><strong>一加8</strong>后置采用三摄组合，中间为4800万像素主摄，采用索尼IMX586传感器，拥有f/1.75大光圈，同时支持光学防抖和电子防抖，让用户能更稳定的拍出更好的照片。还配有一颗1600万像素超广角摄像头，拥有116度广阔的视野，可以在画面中容纳更多内容，拍出更壮丽的景色，200万像素4cm超微距镜头，让你换一个角度观看这个世界。</p>
+<p>一加8采用了全新的Spectra 480图像处理器，同时软件算法也相应进行升级。总的来说，相教上代产品，输出动态范围更广、噪点更少，与拍摄的体验一致。</p>
+<p><i><img src="http://p7.itc.cn/q_70/images03/20201117/83ef9a18cad74e72a108a9e35ac703d9.jpeg" /></i></p>
+<p><i><img src="http://p7.itc.cn/q_70/images03/20201117/bb0132b948e048518bafc3e3540ddc36.jpeg" /></i></p>
+<p><strong>OPPO Ace2</strong>搭载了包括4800W超清主摄、800W超广角镜头以及复古肖像风格与漏光人像风格镜头在内的后置四摄，4800W主摄可以通过超分辨率算法合成分辨率12032×9024的“亿级像素”照片，1600W前置摄像头支持超清夜景，提供了全面的拍照体验。在视频拍摄方面，OPPO Ace2支持超清视频防抖、超广角视频和智能视频剪辑。</p>
+<p>在夜景模式中，OPPO Ace2超广角模式和正常拍摄模式同样表现出色，夜景模式更是带来拍照速度快、场景清晰色彩明亮的拍照体验，足以满足用户的日常拍摄与录制需求。</p>
+<p><strong>荣耀30 Pro+</strong>采用后置三摄方案：5000万像素主摄+1600万超广角+50倍潜望式长焦镜头，前置为3200万像素自拍镜头+800万像素广角。后置主摄使用的是索尼IMX700图像传感器，拥有1/1.28英寸的超大底，支持Quad Bayer像素四合一、全像素八核对焦技术，以及60FPS 4K视频录制。此外，该主摄采用了RYYB超感光滤镜阵列。50倍潜望式长焦镜头支持5倍光学变焦、10倍混合变焦以及最高50倍的数码变焦，同时它还支持双结构OIS光学防抖、AI防抖和画质增强算法。</p>
+<p>白天光线充足的环境下，开启手机的高像素模式（5000万像素）进行拍摄，直出的照片颜色还原、白平衡较为准确。1600万广角镜头表现同样不俗，作为拍照使用，可以带来极佳视野，拍大景一流。</p>
+<p><strong>vivo X50 Pro</strong>主摄是4800万像素，而亮点就在于其内置了一个支持超强防抖能力的微云台；同时还有一个800万像素的超广角镜头，可视角度能达120°，并且可以兼顾微距镜头使用；一个800万像素的潜望式长焦，能实现最高60倍超级变焦；最后还有一个1300万像素50mm经典人像镜头，轻松拍出质感人像大片。</p>
+<p>vivo X50 Pro这次采用了定制的索尼IMX598传感器，支持F1.6大光圈，搭配120度超广角/2.5厘米超微距镜头、专业人像镜头、5倍光学变焦/60倍混合变焦潜望式长焦镜头，配合微云台进一步提升防抖能力，综合感光性能提升高达39％，画面暗部细节也更丰富。</p>
+<p><i><img src="http://p4.itc.cn/q_70/images03/20201117/b7535894c42149db9441c9db58e27e95.jpeg" /></i></p>
+<p><strong>推荐理由</strong></p>
+<p><strong>推荐产品：一加8</strong></p>
+<p><strong>参考价格：3999元　</strong></p>
+<p>总的来说，外观设计上，一加8在重视设计优先级、屏幕优先级的同时仍坚持采用轻薄化的设计，就是对“Never Settle”的坚守，高规格的AG雾化玻璃以及惊艳配色使得一加8的质感再度提升。配合整机如丝般的柔滑手感，一加8满足了用户对于轻薄旗舰的全面想象。</p>
+<p><strong>推荐产品：OPPO Ace2</strong></p>
+<p><strong>参考价格：3999元</strong></p>
+<p><span>OPPO Ace2延续了该系列在游戏性能、影音体验等方面都达到了行业一流水准，体现出OPPO对于对强劲性能和游戏极致体验的坚持与用心，同时，OPPO Ace2的外观设计与影响能力，也满足了用户对于颜值和日常使用的需求，85g的体重再加上3999元起的售价，对于手机游戏玩家而言，OPPO Ace2成为了不错的选择。</span></p>
+<p><strong>推荐产品：荣耀30 Pro+</strong></p>
+<p><strong>参考价格：4999元</strong></p>
+<p>荣耀30 Pro+出色的颜值、流畅的操作以及强大的拍摄能力，Magic UI 3.1系统的便捷，红外遥控、NFC功能的加入都让这款旗舰用起来格外的舒服与贴心。而总体来讲，作为一款堪称标杆的旗舰产品，荣耀30 Pro＋几乎拥有当前最优秀的工业设计，全面强悍的硬件配置，最细致合理的软件优化以及最出色的影像提升。非常适合喜科技、爱潮品的年轻人及高端人群购入。</p>
+<p><strong>推荐产品：vivo X50 Pro</strong></p>
+<p><strong>参考价格：4298元　　 </strong></p>
+<p>vivo X50 Pro就是这么一款“人有我优”的新品，就在其他竞品还停留在EIS电子防抖、OIS光学防抖或EIS+OIS混合防抖的时代，这款产品却引入了创新的微云台超感光镜头，将手机防抖能力推向了一个新的高度，打造出了全焦段智慧影像新概念。如果你对性能的要求不是特别苛刻，喜欢通过手机随时记录身边的点滴时光，热衷于捕捉黑暗中的精彩瞬间，vivo X50 Pro一定不会让你失望。</p>
+<p><strong>总结</strong></p>
+<p>刚开始，5G手机的价格有点不太“美丽”，不过随着厂商和运营商大力发展多模、多频、多形态的5G终端，5G手机的价格现在终于是降下来了。而今天推荐的几款5G<span>手机在做工、拍照、性能方面都是同价位段的佼佼者。另外，它们支持的5G频段也很全面，可以更好地满足未来的5G需求，若是你现在还没换上</span>5G手机，那不妨从这几款开始你的5G生活吧！</p>
+➜vivo S7e有多轻薄？轻松玩转“轻功水上漂”
+http://www.sohu.com/a/432406073_223764	23647
+<p>5G时代的到来，手机内置的5G基带芯片以及天线、射频、散热等元件对其内部堆叠工艺提出了更高的要求，使得轻薄的机身设计在5G时代愈发难能可贵。极致轻薄的潮流外观设计一直是vivo S系列一以贯之的设计理念，即使是在5G时代，S系列历代产品在机身设计上都表现的相当优秀，最新发布的vivo S7e也不例外。作为S系列的新成员，vivo S7e在搭载4100mAh大电池的机身上，带来仅有7.73mm的机身厚度，重量也仅为171.7g，纤薄机身，让其在众多5G手机中脱颖而出，受到年轻用户广泛关注。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201117/37d9f79eff2f41aeb1e127d64b962e1b.jpeg" max-width="600" /></p>
+<p>那么，怎样才能让大家更直观的体会到它真的很轻薄呢？近日，数码博主@李杰灵做了一场趣味评测实验，竟然脑洞大开的将vivo S7e放到一张漂在水上的A4纸上，手机会不会因此沉下去，看的直叫人捏把汗。从实验可以看到，借助一张A4纸的浮力，vivo S7e竟然真的在水上漂起来了，实力演绎“轻功水上漂”。如此轻薄的手机拿在手上自然不会有负重感，即使单手握持也可以轻松驾驭。不仅机身轻薄，vivo S7e还创新性配备了2.5mm超窄中框，后盖3D弧边设计，带来轻盈圆润的握持手感，让长时间的握持操控也能很舒适。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201117/6a760f8fae274cf6a760ba8b3c98ea18.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201117/2f15e40fdcde4ab591f238b79642ddd6.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>在极致轻薄的机身上，格外抓人眼球的是vivo S7e的时尚配色。本次被用来评测的机器是vivo S7e幻砂星海版，该配色灵感来自自然天象，设计师将星辰大海的奇妙变幻呈现到了手机上。从视频里的真机也可以看到，vivo S7e幻砂星海机身背部蓝紫幻彩渐变，正面看蓝绿、侧看变蓝紫，弧面也是彩色的，每个角度看都相当惊艳。不仅如此，得益于淋涂磨砂银面镀膜工艺的匠心打磨，vivo S7e幻砂星海还具有温润细腻的磨砂触感，配合机身幻彩渐变，意境神秘广远。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201117/ceca65c66a9f4d09a892b18d9561700e.jpeg" max-width="600" /></p>
+<p>当然，拍照方面一直是vivo S系列的拿手好戏。在年轻用户日常拍照必不可少的自拍体验上，vivo S7e搭载3200万摄像头，独家屏幕柔光环配合前置超级夜景模式，可以预判补光色调，自适应冷暖光，更好的提升自拍时人脸亮度，让用户在任何光照环境下都能有优秀的自拍体验。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201117/53ffedff928c46d38523f5a8a3d0e1a3.jpeg" max-width="600" /></p>
+<p>vivo S7e在后置拍摄上带来6400万像素主摄+800万像素超广角镜头+200万像素虚化镜头的镜头组合，满足用户生活中绝大多数场景的拍摄需求。在最考验拍摄实力的夜景拍摄上，vivo S7e配备RAW域降噪和多级曝光融合技术，将多张照片多帧降噪合成一张高品质照片,让用户在光线不足的环境下也能捕捉到清晰、稳定的成像画面。为了让夜拍更好玩，vivo S7e还带来“赛博朋克”、“黑金”、“蓝冰”和“青橙”四种风格化功能，让用户在夜晚创作有更多发挥空间。视频中vivo S7e镜头下的四种风格深圳夜景，每一种风格都别有意境。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201117/e322997ef5f04e668e42b6b4638d520a.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201117/7e66967a410c412a9033586fedc19dfe.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201117/22df093cba3d4775a424e9268c743d4d.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201117/d89bfe04003c4eba9ad6a1dbd23bb597.jpeg" max-width="600" /></p>
+<p>值得一提的是，vivo S7e前后置人像模式还支持风格、美颜、虚化等功能，“自然”、“复古”、“和风”、“时尚”等风格满足不同妆容、场景需要，轻松拍出百变大片；在美颜功能模块还加入了不同场合拍照的“姿势”模板，不在为凹造型而发愁。而专业的虚化算法，让拍出的照片更有层次感。</p>
+<p>综合来看，作为一款面向年轻人群的5G手机，vivo S7e在轻薄外观和拍照体验上都有着不错的表现。5G时代，如果你也想入手一款轻薄拍照手机，vivo S7e将会是个不错的选择。</p>
+➜OPPO未来科技大会2020开幕，卷轴屏概念机等新技术亮相
+http://www.sohu.com/a/432455761_223764	36229
+<p>2020年11月17日-18日，OPPO未来科技大会2020 （OPPO INNO DAY 2020）在深圳如期举行。大家最期待的当然是17日下午4:00开始的发布会演讲。在科技行业耕耘多年的OPPO又能给广大的科技迷们带来怎样的惊喜呢？新概念亮点带大家一看究竟！</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201117/e25b9ca0db6c43ff86482e886201a87a.jpeg" /></p>
+<p>本次OPPO未来科技大会2020最引人瞩目的就是OPPO X 2021卷轴屏概念机，搭载一块最小6.7英寸、最大7.4英寸的无级OLED柔性卷轴屏。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201117/aa102c58e8b34601950421eb30211f01.jpeg" /></p>
+<p>OPPO设计了 “Roll Motor”动力方案：通过机身内置的两个驱动电机输出恒定作用力，直接用于屏幕展开和收起，使屏幕在运动过程中均匀受力，并且能有效防止屏幕在突然受力时受损。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201117/73a81c3acf674066bd7d5acfd829a30d.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>OPPO X 2021机身结构的活动侧内置一根直径约6.8mm的滑轮轴承，屏幕始终沿着中心轴运动，6.8mm更接近OLED柔性屏受力后可弯曲直径，确保柔性屏在弯曲之后几乎不产生折痕；滑轮则确保屏幕在弯曲的过程中平滑、顺畅。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201117/2adb29bde01e4808870e906be50f0b4c.jpeg" /></p>
+<p>为支撑卷轴屏平整、展开不凹陷，OPPO创新性地设计了双矩阵嵌入式离合结构，在机身内部设计左右两块托板，在任何形态下都能有效地支撑屏幕。</p>
+<p>全新“动态外框”可以保证屏幕在展开的状态下依旧得到可靠的保护。在屏幕尺寸变化过程中，滑动外框、背部玻璃电池盖板会随屏幕一起移动，从而更好地保护屏幕。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201117/be33ce797a804bd99edc009a12e37a07.jpeg" /></p>
+<p>OPPO X 2021搭载自研的屏幕动态区骨架叠层，以强度极高的钢为主要材料，最薄处仅为0.1mm，配合叠层表面蚀刻而成的线性图案，在提供足够支撑的前提下不额外增加屏幕弯曲回弹力。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201117/a66b7c07dbcc44b79cf713e0355b8fdd.jpeg" /></p>
+<p>在OPPO X 2021卷轴概念机中，OPPO布局了122项专利，其中卷轴机构相关核心专利12项。</p>
+<p>相比于固定屏幕尺寸的折叠屏，卷轴屏可在最小和最大尺寸之间实现无级调节，为生产力、娱乐、日常使用带来更多可能。</p>
+<p>这次OPPO在AR上也有新的突破，推出了OPPO AR Glass 2021，采用全新的“分体式设计”，整机相比上一代减轻近75%，长时间佩戴也不会有明显重物感。通过C to C有线连接Find X2 Pro，运算依靠骁龙™865，CPU和GPU运算性能分别提升40%以上。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201117/ddd24b5ddfbb41f6abbb779276f92227.jpeg" /></p>
+<p>搭载行业主流的Birdbath光学方案，相比于上一代画面对比度提升53%、亮度均匀性提升98%，每度像素数量提升40%，画面更清晰、细腻。</p>
+<p>光线从0.71英寸超清OLED投幕折射至人眼，等效3米外观看90寸巨幕；配合上定制94平方毫米大振幅扬声器以及半开放后腔的独特声学设计，媲美家庭影院的体验。</p>
+<p>手势交互上OPPO AR Glass 2021搭载一组双目鱼眼摄像头，可对双手实现毫秒级检测和追踪。在手部建模时，对单手做21个关键点标记，单根手指4个关节标记点，可精准识别手势。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201117/3975a395e1124283b0842a8592efe441.jpeg" /></p>
+<p>OPPO AR Glass 2021搭载的ToF镜头、双目鱼眼摄像头和IMU共同组成空间定位系统，实现厘米级、1°以内定位精度。ToF镜头分时进行环境扫描及平面检测，确保6DoF姿态正确、稳定，时刻确保用户所处的空间连续；双目鱼眼摄像头实时扫描环境和局部地图构建，并在毫米级内完成三维空间定位计算。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201117/2843b05eff8d4834a8eb8926740c3f61.jpeg" /></p>
+<p>AR应用场景扩展为：AR观影、AR游戏、AR家居、AR拍摄。</p>
+<p>此外，OPPO AR开发者计划将于2021年正式启动，包含开发者招募、开发者沙龙及开发者支持计划，OPPO将提供支持丰富接口的、完整的端侧SDK及开发工具链，后续将打通OPPO手机AR与OPPO AR Glass平台，帮助开发者打造跨平台、用户级的AR应用。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201117/63b28aa51d4647169b491bee0b5b4ed7.jpeg" /></p>
+<p>OPPO推出了基于全时空间计算的手机AR应用：OPPO CybeReal，可以实现高精度的全时定位和场景识别。突破了三个关键技术点：构建厘米级精度的数字世界模型、全时高精度定位技术、OPPO云。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201117/41b5bd39931c402eba965ff07ee38345.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201117/e0de0226426a4a778b00e0bd7a79c64e.jpeg" /></p>
+<p>并实现比手机导航更直观的导航体验，基于全时高精度定位和AI识景的技术加持也让OPPO CybeReal具备如虚拟乐园、商品展示和门店视觉营销等功能能力。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201117/d01b5b13b7aa44088bb00f19eeb4656b.jpeg" /></p>
+<p>以上就是本次OPPO未来科技大会2020（OPPO INNO DAY 2020）发布会演讲的发布的新概念，我们也期待OPPO会在这次大会上带来更多的惊喜。</p>
+➜5G手机哪款好？最值得入手的5G手机大对决！
+http://www.sohu.com/a/432470318_223764	41586
+<p>[PConline 杂谈]时代在快速发展，生活节奏日益加快，而传输速度极快的5G，正在一步一步融入我们的生活。随着5G时代的到来，智能设备将面临网络更新，我们手中的手机也即将迎来一轮换新浪潮。那么，要换哪台5G手机，你决定好了吗？目前市场上有这么多5G手机，我们又该如何选择呢？ </p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201117/8573279cb07e484bb47b90e4b1adc52b.jpeg" max-width="600" /></p>
+<p>当前，5G技术成本逐步降低，5G手机的价格也已降至合理的范围内，各家厂商都纷纷推出了物美价廉、性价比高的5G新机，但机型众多，很多考虑更换手机的用户手机很是纠结。不过别担心，今天就为大家推荐几款性价比极高的5G手机，选择他们一定不会错。他们分别是一加8、OPPO Ace2、荣耀30 Pro+、vivo X50 Pro，首先来看主要参数表。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201117/8e80d09baba44e9db2a5b2da339f1500.jpeg" max-width="600" /></p>
+<p><strong>外观</strong></p>
+<p>外观方面，不要嫌我啰嗦，他们真的很好看。一加8拥有“黑镜、青空、银翼”三种配色，青空色，在第五代AG玻璃工艺的处理下，映射出金属光泽，如同悠悠碧水，亦是蔚蓝的天空。OPPO Ace2 采用的则是布置在中轴线上的「奥利奥」设计。这块「奥利奥」还是有不少设计小心思的。包括边角的倒角处理，倒角上下左右四个方向的挖槽设计，以及能够反射不同角度光线，形成流光效果的外圈，都让这四颗摄像头显得精致不少。荣耀30 Pro+定制了一块70°超曲OLED屏幕，70°曲率让荣耀30 Pro+视觉观感更加突出，比起直屏更富有美感。vivo X50 Pro共推出黑镜 (黑色) 、 液氧 (蓝金色) 、 引力 (灰蓝色)三种极具现代感的配色，其中"液氧"配色采用了旗舰的AG磨砂工艺，从不同角度看会泛出不同的金色，并且磨砂的背板别具质感。得益于双色云阶的镜头模块的设计，整个背面显得极为干净、轻薄。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>一加8</strong>正面的这块90Hz瞳孔屏，是业内顶级的Fluid AMOLED屏幕。一加8这块屏幕的分辨率为2400*1080，ppi高达402， 6.55英寸，支持90Hz刷新率，支持DC调光，显示比例为20：9，显示效果细腻通透。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201117/6bcdfd8e15fb4ed7bf242fdcd445c95f.jpeg" max-width="600" /></p>
+<p><strong>OPPO Ace2 </strong>配备了一块 6.55 英寸 OLED 屏，分辨率为 2400 × 1080，402ppi，最高亮度为 500nit，局部最高峰值亮度可以达到 1100nit，同时经过了 HDR10+ 认证以及莱茵全局护眼认证。另外，它也依旧延续了之前对游戏玩家们更加友好的直屏设计。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201117/bee58b0126d94ccca2a18e1a91a09b03.jpeg" max-width="600" /></p>
+<p><strong>荣耀30 Pro+</strong>拥有一块6.57英寸双打孔70°超曲面OLED飞瀑屏，分辨率为2340×1080，屏占比高达92.3%，支持屏下指纹、90Hz高刷新率以及180Hz的触控采样率。今年其他旗舰的有的它都有。荣耀30 Pro+与30 Pro的背面3D曲面玻璃与正面超曲屏幕弧面对称，两者相会于采用掐丝工艺精致造制的1.3mm极窄中框。曼妙的曲线与纤细的直线相交，造就了5G手机中难得一遇的温润手感。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201117/8acfbecda6fe410e806d10a746947d72.jpeg" max-width="600" /></p>
+<p><strong>　vivo X50 Pro</strong>正面采用的是一块6.56英寸曲面屏幕，两侧屏幕夸张的曲率也让整个手机看起来更加具有现代主义设计感，挖孔摄像头被安放在了屏幕左上角，而且这枚前置尺寸也异常小巧，看起来显得的很协调。这块6.56英寸AMOLED柔性曲面屏幕，分辨率为2376*1080像素。这块屏幕屏占比达到了92.6%，并采用先进的COP封装技术，提升整机的握持感的同时，还能降低屏幕意外损伤的概率。同时X50 Pro的亮度达到500nit典型值，800nit HBM，在强光下手机屏幕也能清晰可见，而大火的HDR10+技术也被应用到了这块屏幕上，该技术可针对每一个场景进行相应的色彩映射，在暗光场景下更好的保留细节，从而提升画面的色彩丰富度和细节完整度。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201117/b367d9cff6c44a209b110bca845fd9ec.jpeg" max-width="600" /></p>
+<p><strong>性能和系统</strong></p>
+<p>买手机自然是要用两三年的，为了应对后面游戏厂商对游戏的持续升级，手机的处理器必须有极其出众的实力，而这几款手机的处理器恰恰满足这一点。</p>
+<p>一加在性能方面从未让我们失望，<strong>一加8</strong>同样如此，其搭载高通骁龙865移动平台，提供出色的算力，而强悍的性能也支撑起90Hz游戏，让高帧率大型网络游戏得以流畅运行。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201117/5733d66c729843689a4b26d54963b3ca.jpeg" max-width="600" /></p>
+<p>好成绩的背后离不来旗舰级SoC的加持和一加的深度优化，高通骁龙865移动平台采用新一代Qualcomm Kryo 585 CPU，基于ARM最新的Cortex-A77构架和7nm工艺制程，采用八核设计，主频最高可达2.84GHz，CPU性能相较于前代骁龙855提升了25%。同时还搭载了Qualcomm Adreno 650 GPU，整体性能相较于前代平台提升25%，这也是一加8能获得良好成绩的重要基础。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201117/a1c50b46ffa94b1b89011bf084d64e4a.jpeg" max-width="600" /></p>
+<p><strong>OPPO Ace2 </strong>在性能配置上是无需担心的。骁龙 865SoC、LPDDR5、UFS 3.0 这「速度三件套」都配齐了。还提供 8GB+128GB、8GB+256GB 以及 12GB+256GB 三种存储组合可选。相对应的 5G 部分，OPPO Ace2 也采用了高通第二代 5G 基带骁龙 X55，包括移动、联通、电信三大运营商在内，能够覆盖目前全球主流 5G 频段。当然，信号方面它也依旧延续了 OPPO 此前在多款 5G 手机上用到的 360° 环绕天线设计。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201117/0403ccdf1a33404da6ed2775fc326f99.jpeg" max-width="600" /></p>
+<p>游戏环节我们选择以和平精英作为参考测试环境，原因主要有两个方面，其一是这款游戏的用户基数非常大，具有更广泛的参考价值；另外一方面，它也是较早开放高帧率模式的手游之一，比较适合用来测试手机在整个游戏过程中的帧率表现。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201117/0cdedb45b0db4a98831dcc85b6a5ec64.png" max-width="600" /></p>
+<p><strong>荣耀30 Pro+</strong>采用了麒麟990 5G芯片7nm + EUV工艺，配备了两颗2.86GHz的大核A76，两颗2.36GHz处的中核A76和四颗1.95GHz的小核A55，形成了三挡能效架构，GPU使用ARM Mali-G76，麒麟990 5G SoC采用华为自研达芬奇架构NPU，创新设计NPU双大核+NPU微核计算架构，NPU大核展现卓越性能与能效，微核NPU实现超低功耗。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201117/ae76ea7663b04a279ff52cb47570b2c3.jpeg" max-width="600" /></p>
+<p>可以看到，在GeekBench中取得了单核757分，多核2965的好成绩；而在AI BenchMark上荣耀30 Pro+取得了10276分的成绩，获得了“性能怪兽”级别的称号。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201117/6405808dbd7b4f83bfb26e8724c338ef.jpeg" max-width="600" /></p>
+<p><strong>vivo X50 Pro</strong>采用的是7nm高通骁龙八核5G SoC，不仅支持5G双模，还在频段上实现了国内主流5G网络频段全覆盖，符合5G手机的入网标准，所以在未来，不论选择的是哪家运营商，在5G覆盖区域都能体验到vivo X50 Pro的全新5G网速。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201117/c8e126f5d255409c8e709eb4afa3ac4e.jpeg" max-width="600" /></p>
+<p>性能方面，骁龙八核5G SoC在vivo工程师的调教使得vivo在运行速度上有大幅度提升，在配合vivo的游戏魔盒，对于爱玩游戏的年轻群体，vivo X50 Pro是畅玩游戏的不错选择。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201117/e0fd15194171459680410599d40828d8.jpeg" max-width="600" /></p>
+<p><strong>拍照</strong></p>
+<p>手机作为用户记录生活的重要设备，拍照能力的好坏直接影响用户对这部手机的体验。但这几款手机的拍照实力，无论是外出旅游，还是随手自拍，这几款手机都能让你省下买单反的钱啦。</p>
+<p><strong>一加8</strong>后置采用三摄组合，中间为4800万像素主摄，采用索尼IMX586传感器，拥有f/1.75大光圈，同时支持光学防抖和电子防抖，让用户能更稳定的拍出更好的照片。还配有一颗1600万像素超广角摄像头，拥有116度广阔的视野，可以在画面中容纳更多内容，拍出更壮丽的景色，200万像素4cm超微距镜头，让你换一个角度观看这个世界。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201117/634bf6ccd6814b95b4f817447a3ad99e.jpeg" max-width="600" /></p>
+<p>索尼IMX 586这颗1/2.0英寸、2019年旗舰手机必备的传感器，大家都再熟悉不过，搭配高通骁龙865全新的Spectra 480图像处理器与升级后的软件算法，相比上一代产品，一加8在启用这颗4800万像素的镜头时可以输出动态范围更广、噪点更少的超清图片。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201117/aad58bd45fc444b892bfbb851a925733.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201117/0a1c45f50c7b48ac9be47c39217ba8fc.jpeg" max-width="600" /></p>
+<p><strong>OPPO Ace2 </strong>四颗后置摄像头分别是 4800 万像素、传感器为索尼 IMX 586 的主摄像头、800 万像素、视角为 119 度的超广角摄像头、肖像镜头以及一颗漏光定制镜头。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201117/08aca038cd684457968dfe3680e0cd83.jpeg" max-width="600" /></p>
+<p>日间成像上，照片发色倾向会相对较淡一点，十分耐看，细节的呈现也不错。在自动模式下拍摄，OPPO Ace 2 依旧能够获得不错的动态范围。夜间环境里面，拍照表现也符合要求，画面整体亮度足够。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201117/14d2285561424b39ac509da9fe5fae88.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201117/65a42bacb96b4dcb9aa61fc1db1f8950.jpeg" max-width="600" /></p>
+<p><strong>荣耀30 Pro+</strong>摄像头采用了1/1.28英寸大底传感器，在夜拍方面有着不错的提升，在DXO得分中排名第二。荣耀30 Pro+后置采用三摄解决方案：5000万像素的主摄+1600万超广角+ 50倍潜望镜远摄镜头，以及一个前置3200万+800万像素广角。 50倍潜望镜远摄镜头，支持5倍光学变焦，还支持双重结构的OIS光学图像稳定，AI图像稳定和图像质量增强算法。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201117/bd6ddc0e4dbd419892a743bba5ee0bb9.jpeg" max-width="600" /></p>
+<p>IMX700传感器采用RYYB超感光滤镜阵列，将传统RGGB中的绿色像素替换为黄色像素，从而是进光量相比RGGB阵列增加40%。将RYYB带来的感光能力提升计算在内，结合最高支持的ISO 409600，荣耀30 Pro+的感光能力进一步提升。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201117/033fd91559d248808e6ef8315cb8bfe1.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201117/fcb91f1b622c4e8abf56e3dd9a97b3ba.jpeg" max-width="600" /></p>
+<p><strong>vivo X50 Pro</strong>后置影像系统参数为：4800万“高感光微云台”主摄+800万120°超广角+最高60倍变焦的800万潜望式变焦镜头+2400万50mm人像镜头。此外，X50 Pro加入了色温传感器，使得照片的色彩表现更为精准。能够看出的是vivo在延续X系列影像系统优势的基础上进一步上探了移动端影像系统的可能性。我们先看下白天环境下主摄的样张。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201117/c1d21a4c119e4843abaaef20c6eb5399.jpeg" max-width="600" /></p>
+<p>vivo X50 Pro引入色温传感器，通过捕捉可见光波段的光谱，计算当前环境下的色温，使相机的白平衡更加精准，改善在复杂光线环境下，色温偏黄/偏蓝的问题，带来更加真实精准的色彩表现。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201117/8abaeec097094ce7b33dc3db79fd4ec9.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201117/bbc7c457569b403f85eb6332be1013c2.jpeg" max-width="600" /></p>
+<p><strong>推荐理由</strong></p>
+<p><strong>推荐产品：一加8</strong></p>
+<p><strong>参考价格：3999元 </strong></p>
+<p>一加8不但拥有顶尖硬件性能，而且还通过技术革新和不断的调整，让用户获得了轻薄的机身和极佳的握持手感，成为5G时代当之无愧的轻薄旗舰。流畅到夸张的系统，顶级的屏幕，让人爱不释手的手感，这些都是一加8的魅力所在。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201117/190d2a86da4748b3b953b8be109a02ba.jpeg" max-width="600" /></p>
+<p><strong>推荐产品：OPPO Ace2</strong></p>
+<p><strong>参考价格：3999元 </strong></p>
+<p>除了拍照方面和顶级的性能之外，OPPO Ace2 还配备立体声双扬声器、Z 轴线性马达，再配合上近两年备受好评的 ColorOS，OPPO Ace2 完全符合充当一台主力机的要求。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201117/cbdf517a9c364901aac351c1c0583232.jpeg" max-width="600" /></p>
+<p><strong>推荐产品：荣耀30 Pro+</strong></p>
+<p><strong>参考价格：4999元 </strong></p>
+<p>荣耀30 Pro+，绝对是你的的品质之选，细节全面升级，而且摄影方面，5000万主摄带来的拍摄体验，无论是夜拍还是日常拍摄，细节把控绝对能够给你带来惊喜。更有着讨喜的外观和极强的性能体验，你不来一台吗？</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201117/b6239a2df0eb4fcc8cf65d974238206a.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><strong>产品概览</strong></p>
+<p class="ql-align-center">荣耀 | 荣耀30系列 | 更多手机</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201117/404fa730fe914c0ca0bfd1a9f4658dd8.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><strong>荣耀30 Pro+</strong></p>
+<p>DXO后置：</p>
+<p>125分</p>
+<p>操作系统：</p>
+<p>Android,Android 10</p>
+<p>CPU：</p>
+<p>HUAWEI Kirin 990 5G(麒麟990 5G) 八核</p>
+<p>运行内存：</p>
+<p>8GB,12GB</p>
+<p>电池容量：</p>
+<p>4000mAh</p>
+<p>充电：</p>
+<p>支持最大40W超级快充；27W无线快充；10W无线反向充电</p>
+<p>网友评分：</p>
+<p>4.5</p>
+<p>参数 报价 图片 点评 评测 论坛 经销商</p>
+<p><strong>推荐产品：vivo X50 Pro</strong></p>
+<p><strong>参考价格：4298元 </strong></p>
+<p>“微云台”是vivo X50 Pro的最大亮点，并非唯一。vivo X50 Pro上还有“雅致”核心设计理念的大胆突破、60倍的变焦影像系统的使用升级、再度进化的Funtouch OS 10.5，配合90Hz高刷新率带来流畅跟手的使用体验。作为一款定位均衡的旗舰，vivo X50 Pro是一款很全面的机型：颜值、性能、拍照它都能样样兼顾。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201117/83068c2de45e4a88b30b44b47c52907c.jpeg" max-width="600" /></p>
+<p><strong>总结</strong></p>
+<p>5G时代已悄然到来，相比4G手机，5G手机有更快的网络与通信能力，具有高速率、低时延等特点，而且得益于通过网络切片技术，还拥有更精准的定位能力。目前，5G手机的性价比正逐步提升，而今天推荐的几款5G手机就是其中最闪耀的存在。若是你有购机需求，这几款直接闭眼入就是了，不用考虑那么多啦！</p>
+➜索尼Xperia 1 II 5G智能手机评测
+http://www.sohu.com/a/432500063_223764	49739
+<p><span>在数码界索尼一直有着极强的号召力，精致的日系工艺以及让人意想不到的创意黑科技，每推出一款产品总能带来满满的逼格，让众多索粉大呼“索尼大法好”，在智能上，索尼也时常能带给我们不少惊喜，就像今年发售的索尼 1 II 5G智能手机。</span></p>
+<p><span>经历了部门整合后，索尼的智能手机产品近几年有了新的变化，索尼Xperia 1 II 5G智能手机的国行版本也在近期正式上市，该款机型在拍摄、影音体验、游戏等方面皆有很深造诣，并且还是索尼旗下首款支持5G的旗舰手机，因此非常值得把玩。</span></p>
+<p><span><strong>修长造型，不走寻常路</strong></span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201117/ebaa5d82d6e24efd8e0ff0fb2f0310c5.jpeg" /></p>
+<p><span>从前代Xperia 1开始，索尼手机采用了全新的设计理念，采用了21：9的屏幕比让机身变得更为修长，并且收窄了左右两侧的屏幕宽度后，更加适合单手拿握，中框经过磨砂处理后，机身边缘部分形成圆润的过渡。避免了直角“削苹果”的问题。</span></p>
+<p><span>搭配7.9mm的轻薄机身，在无背壳、无手机套的环境下索尼Xperia 1 II 5G智能手机具备一流的手感。对于喜好单手操作手机的人群来说，索尼Xperia 1 II 5G智能手机无疑提供了一个理想的机身尺寸。</span></p>
+<p><span>21:9的比例让屏幕承载更多的显示画面，配上无刘海、无挖孔的4K HDR OLED超高清显示屏则能提供完整且顶尖的视觉体验。这样优质的体验也仅在索尼Xperia 1 II 5G智能手机所独有。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201117/0575392675724bbfb3ea2b52034cdd6b.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span>我们这次拿到的评测机为中国地区独有的“青山绿”配色，在硬件配置上由8G内存提升至12G，带来更稳定的运行环境。与常见的深绿色有所不同的是在绿色中融入了灰色，色彩呈现的更加深邃的感觉，配上镜面处理所带来的通透感，让索尼Xperia 1 II 5G智能手机带有一丝灵动质感。可以骚气，也可以清新灵动，凸显出索尼独到的设计美学。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201117/bb53048ddaa74d6daaba765fa5b5ad22.jpeg" /></p>
+<p><span>时隔一年之后3.5mm耳机接口重新回归到索尼Xperia 1 II 5G智能手机上，虽然广大网友吐槽“极为先进的耳机接口”，不过当你真正使用到后，那种简单、好用的感觉一定会让人表示：“这个可以有”。</span></p>
+<p><span>便利的设计更多的体现在细节上。比如SIM卡插槽。当别家手机依然需要使用卡针的时候，唯独索尼依然坚持插口设计，用手指就能取出卡槽，做到真正的简单快捷。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201117/8984c2b1044f450384345504f4d9a507.jpeg" /></p>
+<p><span>卡槽的设计依旧是microSD和SIM卡三选二的设计，最大的变化是支持了热插拔，省去了每次拔出和插入卡槽手机会自动重启的麻烦。</span></p>
+<p><span>实体按键布置在机身右侧区域，音量按键、电源键以及索尼特色的相机快门按键都集中于此。电源开关和音量按键的位置设计恰到好处，右手大拇指非常轻松的可以触碰到这两组按键，实际操作中提供了极大的便利。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201117/b81acf5399274341a66f1374833581ec.jpeg" /></p>
+<p><span>在屏下指纹解锁已经全面普及的现在，索尼Xperia 1 II 5G智能手机依旧使用与电源按键系统集成在侧面的指纹传感器。从笔者感受来看，侧边大拇指指纹解锁在盲解的情景下使用比屏下指纹更方便。另外国行版增加了微信指纹支付，实用性得到了很大的增强。</span></p>
+<p><span><strong>21:9 4K超高清显示屏 得天独厚的影音娱乐体验</strong></span></p>
+<p><span>索尼在影像技术上有着得天独厚的优势，内置的图像处理引擎能可以给手机屏幕带来别致的画面显示效果。而索尼Xperia 1 II 5G智能手机上我们可以看到索尼依索尼在手机影音娱乐上依然有想当大的投入。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201117/c265419c2eee4eb9972311e26c7c0540.png" /></p>
+<p><span>影音体验的核心就是中间的这块屏幕了。索尼Xperia 1 II 5G智能手机采用了一块3864x1644分辨率的4K超高清HDR OLED屏幕，目前可以说是智能手机中画面精度最高的一款屏幕了，此外它还具备了DCO-P3、BT.2020、D65等标准，利用索尼为手机专门开发的X1移动图像处理引擎，达到专业级的显示效果，还原创作者最真实的创作意图。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201117/0e8d31e5005f4c95ae7fadbaadf360bc.png" /></p>
+<p><span>索尼Xperia 1 II 5G智能手机提供了专门为用户提供了更专业的大师模式，该模式下兼容BT.2020和10bit色彩HDR规格的图像处理。达到更为专业的现实效果。</span></p>
+<p><span>21:9带鱼屏外形修长，更重要是特点是能实现全屏的影视体验，播放21:9的电影在索尼Xperia 1 II 5G智能手机上是完全不会出现黑边的。</span></p>
+<p><span>笔者试着播放了一部21:9比例的电影，更为宽广尺寸让双眼接受到更多的画面内容，从而让感官体验更具有沉浸感。尤其在大场景画面下表现的尤为明显，这是目前主流手机16:9比例的屏幕所无法做到的。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201117/fc18cffa7af343438ea770b5de161967.jpeg" /></p>
+<p><span>良好的影音体验除了画质外，给人带来震撼的音质同样必不可少。实现好音质除了优秀的硬件，匹配的音乐资源也不可少。国内的网络平台提供的“无损音乐”实在不怎么敢恭维，许多音乐顶多达到mp3的音质。而索尼Xperia 1 II 5G智能手机预装了索尼Hi-Res音乐APP，这是国内首个提供Hi-Res流媒体服务的音乐提供商。可提供96kHz/24bit制式的音乐，曲库数量达到10万首，资源相当丰富。不仅仅有古典、爵士等高雅音乐，从去年开始大热的动画片《鬼灭之刃》的主题曲《红莲华》也能下载到高音质版本。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201117/1204a64c5a994ffb99dc918c93294b20.png" /></p>
+<p><span>除了影视资源外，索尼也在游戏方面寻找合作。目前有不少游戏开始对21:9比例的屏幕进行适配。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201117/20500386b0194ae6a1ac2ab9777d0cf6.jpeg" /></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201117/8d79a4918fd2486bb38dc89d57ff31c1.jpeg" /></p>
+<p><span>笔者一直玩的《猫咪大作战》《LoveLive群星闪耀》两款来自国外的手游都已经适配21:9比例。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201117/db3917b7ea394296aef4981811e762ab.jpeg" /></p>
+<p><span>以《LoveLive群星闪耀》为例，开启最高特效后播放LIVE场景，双眼可以享受到一场流畅广阔的音乐盛典，让玩家一次次的沉浸在偶像小姐姐的美妙舞蹈和歌声中。</span></p>
+<p><span>针对国内手机游戏，目前索尼和腾讯达成了深度合作。腾讯旗下大热的几款手机游戏《王者荣耀》《和平精英》等几款游戏也已经适配21:9的屏幕比例。</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201117/18adeebd08a34850815c92c57c805556.jpeg" /></p>
+<p><span>笔者还用索尼Xperia 1 II 5G智能手机体验了几盘《和平精英》，相比16:9的画面，21:9的比例能够展示更多的画面内容。在游戏过程中，借助更宽广的视野笔者总能更快的察觉到游戏中其他玩家的一举一动。在骁龙865平台下轻松的实现满帧率的运行，流畅+大视野，对于玩家而言简直拥有合法的物理“外挂”。游戏体验当然是更爽了。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201117/0a32421bf97a4704ba749bd14e887e3d.jpeg" /></p>
+<p><span>对于音乐发烧友来说，索尼也很好的get到你需求，3.5mm耳机接口让好音质能够100%释放，并且针对耳机接口索尼还精心的实现优化，信号干扰只有20db。</span></p>
+<p><span><strong>3摄系统 搭配专用APP让手机摄影变得更专业</strong></span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201117/9cf26cf44162481aa9375d7d33a88f06.jpeg" /></p>
+<p><span>索尼Xperia 1 II 5G智能手机的影像系统由索尼微单相机团队参与开发，这次配置了16mm、24mm、70mm三颗1200万像素镜头和一颗3D iToF感器，并附有蔡司的T镀膜涂层，可以有效减少反射光，让相机拍摄出更好质量的照片。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201117/0562b563a0944211bd89bd6ff980ccbd.jpeg" /></p>
+<p><span>相机软件应用方面，除了系统自带相机功能外，索尼还为索尼Xperia 1 II 5G智能手机专门开发了一个“摄影大师APP”，应用内操作界面移植了α系列相机的UI，如果你是索尼相机用户的话几乎可以实现0成本上手。</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201117/30d0038dbee2445e95c2097148d14c08.jpeg" /></p>
+<p><span>相机内提供了P档、S档和M档三种调节模式，并且对平衡线、ISO、眼部快门等功能实现可以在界面中直接调节，不用进入二级菜单来调整，功能设置想当方便。三颗镜头可以直接在软件中更换，切换镜头的时候感受到一种仪式感。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201117/ec15c6142a0b44e2862e075b8597e30e.jpeg" /></p>
+<p><span>视频拍摄上，提供了4K HDR和24/120fps视频录制，是目前业界第一款支持4K HDR 120fps慢动作拍摄的智能手机，摄录能力十分出众，本身内置的“电影大师APP”由CineAlta协助开发，实现更为专业的视频录制体验。虽然对于一般人来说这个APP上手需要一定时间，对于专业人士来说可以借助软件的专业性制作出高品质的视频，这在手机中算是独树一帜。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201117/36168cf7330b4601a57b1c7b95e03007.png" /></p>
+<p><span>优秀的影像系统不光看摄像头的数量，对焦性能更为重要，对索尼来说最拿手的实时眼部对焦功能就很好的运用到索尼Xperia 1 II 5G智能手机上。开启眼部对焦后不仅可以追焦人眼和动物眼睛，支持高达20fps每秒高速连拍。在多人物的场景下可以选择想要对焦的对象。非常适合运动场景下的高速抓拍，简直就是为抓拍而存在的。</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201117/0e6f887326c14b2ab8bf6f6649df3ae4.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201117/d4df9629b76d4c989afadc82ffbe5d37.jpeg" /></p>
+<p><span>得益于蔡司T镀膜的帮助，索尼Xperia 1 II 5G智能手机在逆光下拍摄的抗眩光表现出色，让画面有更大的宽容度，展现更好的高光细节。三颗镜头在光线较好的情况下拍摄，成像效果都十分理想，色彩也非常自然，没有过度修饰的失真感。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201117/82773a60b5824eccb8cac586f4b8a122.png" /></p>
+<p><span>在暗光环境下，提供了夜景模式，不过无法手动开启，这个模式主要通过AI来自行检测，成像上较为柔和。</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201117/48ef751e7b91457b8a6a43024323c1a4.jpeg" /></p>
+<p><span>手机在横向拍照的时候左手的手指很容易“钻”到摄像头的取景画面里，稍有不注意拍的照片就会看到自己的手指也“穿帮”进画面了。索尼也注意到了这个问题，在系统自带的拍照软件中，带有提醒功能，当摄像头在一定距离内感知到手指的遮挡后，就会振动机身提示用户，并且显示在屏幕中。直观的给予用户提示。</span></p>
+<p><span><strong>系统原生依旧，但进步明显</strong></span></p>
+<p><span>在国内市场，除了硬件的堆料要足外，系统软件方面的体验有想当重要，深度定制后提供的各种便利功能现在对于消费者来说是越来越重要的选择。</span></p>
+<p><span>在系统方面索尼依旧坚持采用原生Android 10系统，虽然目前国内流行的NFC门禁卡、交通卡等功能还没有得到支持，不过在支付体验上已经有所进展，和腾讯达成深度合作后，索尼Xperia 1 II 5G智能手机已经支持微信的指纹支付功能。对于索尼来说这是一个非常大的突破，让人期待后续功能有更多的发展。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201117/45b46e6bb57b4ef79a271a92f11d6c8f.jpeg" /></p>
+<p><span>索尼Xperia 1 II 5G智能手机第一次开机后，只预装了“百度输入法”“腾讯专属定制的应用商店”“索尼精选音乐”“索尼中国”、“百度地图”“咪咕灵犀定制版”这几款APP，和其余国产多则数十款预装软件来说所，索尼犹如一股清流。</span></p>
+<p><span>从特色功能来说，笔者非常喜欢21:9多窗口功能。</span></p>
+<p><span>这个功能原本Android系统就自带，但是软件分屏比例固定，并且在分屏后APP的界面也被压缩，实用度有限。索尼Xperia 1 II 5G智能手机算是充分利用了21:9修长的屏幕比，可以均匀分出两个16:9的小窗口，在不压缩软件界面的前提下同时享受两个APP，并且可根据自己需要调节窗口的屏占比，让手机在多任务的使用的场景下变得更为快捷。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201117/9e6048bc66f4472a888fdc5bcbe91ad9.jpeg" /></p>
+<p><span>以笔者玩的《碧蓝幻想》为例子，在21:9比例下整个画面被屏幕拉伸，导致界面被过度拉长。我会借助多窗口功能来调节游戏窗口的比例，开启游戏后额外开启一个浏览器，一边游戏一边查看攻略，或者开一个B站的小窗口。游戏、视频两不误，感受双倍的快乐，这，岂不美哉？</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201117/b8d9a27eccb54956acbe1d04a0c0a654.jpeg" /></p>
+<p><span>现在手机游戏成为人们日常使用频率最高的场景之一，索尼在针对游戏场景推出了索尼Xperia 1 II 5G智能手机“游戏增强器”的App，新增H.S.发热抑制优化功能控制机身过热。并且在游戏中可以实现快速截图、录屏、屏蔽消息推送等功能，避免在游戏过程中被其他APP的推送所打扰，对于游戏玩家而言是一个增强游戏体验的“神仙应用”。</span></p>
+<p><span><strong>诚意满满 期待未来</strong></span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201117/51d41928c1264453a34c18489032e828.jpeg" /></p>
+<p><span>整体来说，索尼Xperia 1 II 5G智能手机I在产品体验上得到进一步的提升。对于喜欢用手机追剧或者想用手机拍摄专业的影像体验的话，那么索尼Xperia 1 II 5G智能手机是拍照好工具，追剧好伴侣。对于一般人而言，精致的工艺带来的高颜值设计、强悍的硬件堆料以及索尼品牌效应。也有非常大的吸引力。</span></p>
+<p><span>在软件体验方面也有明显的进步，新增的微信指纹支付功能虽然国内厂商早已实现，但可以看出索尼看到了智能手机的发展趋势，想让自己的产品变得更接地气，让我们看到索尼满满的诚意，未来我们期待有更多便利的功能在索尼手机上实现。索尼Xperia 1 II 5G智能手机带给我们更多的是期待。</span></p>
+➜149元直接用上六热管 现在的百元级风冷太狠了
+http://www.sohu.com/a/432525768_223764	58512
+<p>前段时间，我们对航嘉冰封400R这款百元级散热器进行了评测，这款散热器凭借出色的散热能力和静音效果获得了相当不俗的测试成绩，而今天我们拿到了这款产品的升级款——航嘉冰封600R。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201118/cab57406369c471ab0e6746316e55689.jpeg" /></p>
+<p>航嘉冰封600R炫动版最大的特点就是将原本的4热管配置升级为同价位（百元级）罕见的6热管配置，并且保留了大风量静音风扇和RGB灯效这两大特性，它的理论散热性能将会得到进一步提高。</p>
+<p><span></span><strong>外观赏析：</strong></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201118/eb115ed2c7b44ad597871cb4f8817b4e.jpeg" /></p>
+<p>航嘉冰封600R 炫动版的尺寸为122(长)*78(宽)*`158(高)mm，散热风扇的尺寸已就位120*120*25mm，整体尺寸比400R稍大，体积增长主要集中于散热鳍片模块，不过高度上并没有增长，安装兼容性上依旧非常出色，风扇采用可调节设计，能轻松兼容其他高度较高的硬件（高马甲内存等）。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201118/dc13c58be4d9433ab863dd7f00b3c0d8.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>顶盖采用裸露式设计，热管直接暴露在空气中，在顶部拥有更大空气接触面的同时，也保证了对整体高度的控制。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201118/d53fc9d3085f49bb9b918e8f48a25adb.jpeg" /></p>
+<p>标准尺寸的12cm风扇配备了RGB灯效，最大转速达到1800（±10%）RPM，支持PWM自动调速，最大可提供73.4CFM的风量，这个参数跟冰封400R和同价位的其他产品相比也是比较出色的。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201118/2a7adbef0fdc445b81d801934d13eb1a.jpeg" /></p>
+<p>航嘉冰封600R炫动版配备了同价位中并不常见的纯铜6热管设计，采用热管直触工艺（HDT）设计，CPU直接接触部分被六根热管的接触面完全覆盖，可以更全面地吸收CPU发出的热量。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201118/453251a24b6c45f2927530fc0c22e163.jpeg" /></p>
+<p>从侧面也可以清晰的看到，六根热管紧致得贴合在底部，热管采用交错叠放设计，可以有效提高热管与空气和散热鳍片的接触面积，可以更好地进行热量传递。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201118/1b6beed476304dc6bf683ec2d1b30fd1.jpeg" /></p>
+<p>航嘉冰封600R炫动版的散热鳍片采用穿FIN工艺跟六根纯铜热管进行连接，热量可以高效地传递到鳍片中，有效提升散热器整体的热传导效率。</p>
+<p><img src="//p5.itc.cn/q_70/images03/20201118/c4ab2bbb545c4d5db17daef5ea732b87.jpeg" /></p>
+<p>这款散热器可以完美兼容和英特尔两家的各个主流平台，均采用螺丝固定的方式进行安装，原装标配三套扣具（AMD + LGA775/115X/1200/1366+Intel LGA2011），标称的兼容性上也加入了对最新的LGA1200插槽的支持，大家可以根据的实际需求进行安装。</p>
+<p><span></span><strong>上机测试</strong></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201118/b45af705e5dd43a0bf925b44a1c678d8.jpeg" /></p>
+<p>得益于全新的六热管设计，航嘉冰封600R炫动版在硬件规格上的升级让这款散热器的散热能力拥有更高的上限，但在安装方式上也没有太多变化，依旧保留了极高的安装便捷性，五分钟以内即可快速完成整个散热器的安装。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201118/3f8f415850934e3b996b1526b5398706.jpeg" /></p>
+<p>在散热能力测试环节，我们采用Z490主板搭配最近热门的性价比游戏神U酷睿i9-10850K在默认状态下进行测试，这款处理器在默认状态下满载可以跑到200W左右的功率，可以充分考验这款散热器的散热能力。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201118/237ebc48906b4463b32b665afafe00bd.jpeg" /></p>
+<p>虽然航嘉冰封600R炫动版在整体尺寸上有所放大，但是航嘉对它的整体体积还是控制得非常好，即便在主板占用内存插槽1的情况下也毫无压力，散热风扇的位置恰到好处，完全不用担心高马甲内存的兼容性问题。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201118/6a417fb2a41d4a88a10022d17f24844d.png" /></p>
+<p>航嘉冰封600R 炫动版的设计散热功率为150W，在酷睿i9-10850K的默认状态下，可以全核睿频到4.8GHz，我们使用AIDA64的压力测试环节选择FPU和CPU进行双拷，此时CPU的功耗已经达到了205W。</p>
+<p>进行拷机一小时后CPU的温度稳定在97℃，而且全程都能稳定地保持在4.8GHz的频率下，全程没有出现降频现象，可以稳定地通过压力测试，这意味着这款散热器可以稳定地应对默认状态下酷睿i9-10850K这一级别的处理器，日常进行游戏并不会有这么长时间的满载占用，使用起来自然也不成问题。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201118/5e4914c5ec0448e389c2ab5cc373a6ac.jpeg" /></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201118/8897a146a0bf427aa9b8b774a8af9f34.jpeg" /></p>
+<p>航嘉冰封600R炫动版作为航嘉静音王系列的一员，在噪音控制方面的表现也没让我们失望，在环节噪音约为45分贝(<span>开启中央空调，开暖气好似安静了一点的</span>)的办公室内进行测试。</p>
+<p>待机状态下散热风扇的噪音仅为45.4分贝，基本不会产生额外的噪音，而在AIDA64拷机环节，散热风扇的转速快速拉到1450RPM以上，满载状态下的噪音也仅为54.7分贝，而且这两个成绩还是在非常靠近的距离进行测试，实际环节下几乎无法被明显感知，安装到机箱中静音效果自然会更出色，这个表现对于这款百元级风冷来说还是非常惊艳的。</p>
+<p><span></span><strong>PConline评测室总结</strong></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201118/cd43f8cbb13b4bd48c9cf937e11bd983.jpeg" /></p>
+<p>作为一款百元级六热管风冷散热器，航嘉冰封600R炫动版在散热表现和噪音控制上都有相当不俗的表现，可以满足默认状态下酷睿i9-10850K长时间保持稳定使用的需求，对于同价位产品来说这个表现已经足够惊艳，拥有相当不错的市场竞争力，整体散热性能对于不需要追求极致超频的普通玩家来说已经非常够用，最近准备入手高性价比风冷散热器的朋友可不要错过啦。</p>
+➜长租公寓频频跑路，打工人租个房咋就这么难？
+http://www.sohu.com/a/432526109_223764	58512
+<p>这两天长租公寓的事情又又又上热搜了，网传“蛋壳公寓即将破产跑路”、“<span>蛋壳公寓杭州分公司停止运营</span>”<span>、“</span>数百位业主集体维权<span>”</span>......虽然蛋壳公寓官方很快在微博上澄清，但今年以来，包括蛋壳公寓在内的多家长租公寓倒闭的传闻就没有断过。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201118/682fad52e8b042408d7bdbaa84155675.jpeg" /></p>
+<p>事实上，已经倒闭的长租公寓不在少数，从今年7月的品程优居、优客逸家等，到8月的友客公寓、岚悦公寓、沃客公寓等，再到9月的寓意公寓、适享公寓，以及不久前的小鹰，<strong>长租公寓品牌中能查到信息的破产名单就多达二十余家</strong>。</p>
+<p>而即便蛋壳公寓自称没有破产和跑路，但也向外界透露资金链确实存在一些问题，并且纠纷不断，据天眼查数据显示，蛋壳公寓是紫梧桐（北京）资产管理有限公司旗下产品，截至目前，其主要为房屋租赁合同的法律纠纷就高达数十起。</p>
+<p><strong>资金时间错位管理，长租公寓快速积累资金池</strong></p>
+<p>尽管频频发生“暴雷”，但我们不难发现近几年长租公寓的模式在早期是非常成功的，不过按理说租售房屋是一种投入大、投资回报周期长、扩张困难缓慢的行业，但是自如、蛋壳却能在很短时间获得大量资金来扩张，<strong>原因就在于长租公寓“圈”钱的本质不是房租差价。</strong></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201118/dd3f05a8d37f4e77b952eafecbf6854a.jpeg" /></p>
+<p><strong>大多数长租公寓的房产都是从本地业主那里承包</strong>，可以简单理解为二房东。在一二线城市房价奇高的当下，拿房成本必然也是非常高昂，想要以高很多的价格租出去很难。并且长租公寓的受众群体大多数年轻人，追求便宜实惠，因此即便是转手租出去，一间房也挣不了太多钱。再加上房屋装修、运营的成本，更是剩不下多少。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>如何快速积累大量资金，是长租公寓前期占领市场的关键，为了实现这一目的，长租公寓推行两种方式，<strong>一种是押一付三或押一付十二，另一种就是通过租金贷来支付房租，以租客名义一次性从银行贷走一年租金。</strong></p>
+<p>无论哪种，长租公寓总是倾向于让用户一次性缴纳一年的房租或者去贷款到一年的租金，而面对一房东业主时，一般是一个月或者一季度给房东支付一次房租，这其中<strong>资金的时间错位管理打造了庞大的资金池。有了资金池，就可以用于投资获益、扩大规模占领市场，甚至是作为准备跑路的资金</strong>。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201118/c469fbf87ce34800baa952d8e9e5d685.jpeg" /></p>
+<p>靠资金时间错配产生出来的现金，使得长租公寓有了进一步扩张的筹码，因此我们能看到蛋壳公寓在2017-2019年短短两年间，运营的房间数暴涨了近30倍。但繁荣的背后依然不能掩盖亏损的事实，对于新增房间的前期投入，也使蛋壳亏损额也从2亿多元飙升至了近35亿元。在2020年的第一季度里，蛋壳公寓更是以12.3亿元的亏损创下了其单季亏损的新高度。</p>
+<p>长期的巨额亏损对资金链的可持续性提出了巨大挑战，<strong>这也不得不使得公寓方不断寻求压榨业主和租客的方法，尽可能让租客多交钱、快交钱，而给业主少打款、慢打款，并且从公寓本身的配置等方面抠成本，以降低运营压力。</strong></p>
+<p><strong>公寓倒闭，多方利益受损</strong></p>
+<p>表面上看，长租公寓最大的风险是破产跑路，导致业主方收不到应收的房款，而租客更是交了房租无房可住，直接影响了双方利益。更深入来看，长租公寓倒闭也让配套的家电企业受到了一定损失。</p>
+<p>其中<strong>智能门锁受影响最大</strong>，因为长租公寓基本上100%安装了智能门锁，作为智能门锁最主要的销售渠道，公寓倒闭和市场口碑崩塌必然会极大影响智能门锁企业的未来发展前景。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201118/efaaec5c8fda443fa7638e46f9b55262.jpeg" /></p>
+<p>其次，公寓普遍标配、、，有的还会配备、烟灶等，对这些家电企业来说，虽然公寓不是主要销售对象，但也损失了一个潜在的增长渠道。而且有一些厂商交付家电产品不是一次性付清款项，很有可能在公寓倒闭时还未收到尾款。</p>
+<p>这种情况下，厂商们为了抵抗风险，未来预计将加大预收款比例，更加谨慎地和公寓进行合作。对租房的租客来说，面临两个选择，要么换房，要么和一房东直接签约，不管哪一个，付出的时间成本和金钱成本都是非常大的，这还不算公寓跑路未讨回的钱。</p>
+<p><strong>长租公寓隐患多，破产跑路只是冰山一角</strong></p>
+<p>除了公寓倒闭造成的财产损失，公寓房屋质量问题也值得重视。前几年发生的自如“甲醛房”事件仍然历历在目，遗憾的是，直到今天，长租公寓仍然会时不时发生各种安全隐患。</p>
+<p>前面提到，长租公寓为了降低运营成本、提高扩张速率，无论是<strong>装修还是室内的配套都遵循低价省事儿的原则，售后服务也是能省就省</strong>，如果房屋使用出现了问题，不仅维修难，赔偿也往往不到位。</p>
+<p>比如2019年，一位长租公寓住户发表了一篇租房踩坑经历，他租的一套房间暖气没了，一共打了12次维修电话，每次客服的反馈都是“我们会反馈给维修师傅的，会尽快安排上门维修”，可是在这期间的80天，根本没有维修师傅上门。更惨的是，2019年2月下旬，房间全面停水，同样无人解决，用户要求给予适当补偿，然而公寓方面表示只能退还700元服务费。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201118/d6510a5a87bf42dba615cb556faaf90d.jpeg" /></p>
+<p>再比如，上海某公寓住户反映，入住前后房屋信息完全不符，而且存在严重安全隐患。当他来到住处时，发现原本宣传的电梯变成了楼梯，整个房间断电断水，卫生状况极其糟糕，当他试着打开电闸时，发现电闸竟然“嗞嗞嗞”地冒火星。</p>
+<p>打售后电话投诉后，对方承维修人员赶到看了一眼，说电路问题不在他的负责范围内，归物业管，遂离开。继续多次投诉后，才得以解决。</p>
+<p><strong>写在最后</strong></p>
+<p>总的来说，目前国内租房市场还有很多不足，本该提供更好品质和服务的长租公寓也被一些舍本逐利的人做成了圈钱工具。作为在外打工的租房一族，要时刻擦亮眼睛，看清楚套路，如果遇到损坏自己利益的事情，一定要坚决维权。</p>
+➜三星 Galaxy S21系列或提前发布：支持 S Pen
+http://www.sohu.com/a/432525928_223764	58517
+<p>根据11月13日的外媒报道称，全新的三星Galaxy S21系列旗舰将有望提前至明年1月发布，包括Galaxy S21、Galaxy S21+和Galaxy S21 Ultra三个版本，而其中超大杯的Galaxy S21 Ultra是粉丝用户们最期待的版本。而近日，一贯对三星的消息爆料非常准确的知名数码博主@i冰宇宙确认，该机或将首次引入此前仅为 Galaxy Note 系列上专享的 S Pen 手写笔。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201118/37f01e5422c54425a4a7e2ad1dd4c692.jpeg" /></p>
+<p>三星 Galaxy S21 Ultra 将配备 S Pen 手写笔的消息并不是第一次传出，每一代 Galaxy Note 系列的升级都伴随着 S Pen 玩法的升级，相信此次 S21 Ultra 的 S Pen 势必也会在功能和玩法方面看齐甚至超越 Galaxy Note 20 Ultra。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201118/df65f6e9ff4f4246b0a21f33d2489d56.jpeg" /></p>
+<p>据消息称，三星Galaxy S21 Ultra虽支持S Pen，但是与Galaxy Note 20 Ultra的不同之处在于前者没有专门的S Pen插槽。外媒称三星Galaxy S21 Ultra的S Pen需要单独购买，也可能会为Galaxy S21 Ultra提供专门的保护套，以此来容纳S Pen，防止用户丢失。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201118/99a13dbc2fe545adadb239f34b5c1637.jpeg" /></p>
+<p>全新的三星 Galaxy S21 系列旗舰将有望提前至 2021 年 1 月 14 日正式亮相，将首发搭载高通骁龙 875、三星 Exynos 2100 两款 5nm 旗舰芯片，配备12GB内存+256GB存储，后置主摄为一亿像素，电池容量为5000mAh，并且将会在拍照、快充等方面带来更多的亮点。让我们拭目以待这款三星 Galaxy S21 系列会我们带来的更多惊喜吧！</p>
+➜现在退货还不晚！这些双11智商税家电你踩坑了吗
+http://www.sohu.com/a/432525766_223764	58518
+<p>一年一度的购物狂欢双十一已经落下帷幕，今年的双十一又双叒叕刷新了各种记录，天猫京东两个平台整个双十一期间总共贡献了7697亿人民币的成交额。</p>
+<p>家电产品每年都能在双十一贡献一大波的成交额，家电品类今年双十一销量的增长势头依旧很勐，据数据统计313个小家电品牌的成交额同比去年增长超1000%。厨房小家电方面，免洗破壁机成交额同比增长超200%，厨师机、三明治机、空气炸锅等新兴类目成交额同比增长超150%。还有，大容量的洗碗机成交额同比增长5.5倍....</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201118/4c53d2d61d5844a5a1fc32a957ede23a.jpeg" /></p>
+<p>不过随着狂欢褪去，在这一个个华丽数据的背后，则是一波退货潮，“退货”这个词也登上了微博热搜。家电中也有不少智商税产品，让我们用过后直呼上当，想要退货。今天我们就来聊一聊家电中那些智商税产品。　 </p>
+<p><span></span><strong></strong><strong>什么算智商税产品</strong></p>
+<p>可能大家对智商税各有各的定义，当然最经常被大家成为智商税的产品无非有三种，一种是名不副实，夸大宣传的产品；一种是功能鸡肋，价格虚高的产品；另一种则是功能单一、容易吃灰的产品。今天我们就从这三个角度切入来聊聊家电中的智商税产品。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201118/191494ebc5c0405a86ca3fa5bf0fb499.jpeg" /></p>
+<p><span></span><strong></strong><strong>名不副实，夸大宣传的智商税产品</strong></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>近几年来，健康养生绝对是家电产品中最火爆的卖点，今年的疫情，更是让“健康”成为家电产品的重要诉求。然而，健康养生类的家电产品绝对是智商税的重灾区，各种夸大宣传让消费者信以为真。就比如现在被称为神器的破壁机，曾经也是一个号称能打碎细胞壁，让营养更容易吸收的智商税产品。与破壁机一样因过渡宣传被冠上智商税的产品还有许多，下面我们就来一一列举一下。</p>
+<p><strong>降糖电饭煲</strong></p>
+<p>脱糖电饭煲绝对是最近最为热销的网红产品，其宣称能在煮饭时，有效降低70%葡萄糖的摄入量，协助控制糖分的摄入。脱糖电饭煲的火爆也引起了央视的重视，央视通过邀请志愿者进行实验，得出的结论是：虽然食用脱糖电饭煲米饭的志愿者血糖峰值略低于食用正常米饭，但在医学统计学上是没有显着差异的，也就是没有降低血糖的效果！此外脱糖电饭煲在脱糖的同时还会照成其他营养物质的流失。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201118/1e7e751fc69a44e0940b9fb62445984c.jpeg" /></p>
+<p>脱糖电饭煲的脱糖原理就是将传统的电饭煲的内胆为单层金属改为双层设计，增加了带漏孔的内层锅胆，内层漏孔锅胆就是起到一个过滤作用，当大米煮到半熟的时候，大米周围的米汤从漏孔处流出，脱糖电饭煲再将剩余半熟的大米进一步蒸熟。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201118/a047733499f84588bd13d23c24cc91e8.jpeg" /></p>
+<p>这个脱糖原理在科学上是有一定依据的，米饭的主要成份为淀粉，淀粉分为直链淀粉和支链淀粉，直链淀粉不易被人体吸收，对血糖影响较小；支链淀粉非常容易被人体吸收，且易溶于水，所以脱糖电饭煲通过过滤米汤的作用减少实用米饭中葡萄糖的摄入量是有一定科学依据的。</p>
+<p>但是低糖米饭只是延缓血糖的上升速度，并不能真正的降低血糖。而厂家正是在这一点上偷换概念，夸大宣传，便造就了有意见智商税产品。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201118/42c47027ce0c411f82edb794140d7449.jpeg" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201118/6bb50156ccff46a09c17b0236d407a9a.jpeg" /></p>
+<p>截取自京东评论</p>
+<p><strong>矿物水净水器</strong></p>
+<p>我国自来水水质较差是大家公认的一个事实，于是家家户户都会配备各式各样的净水产品。能过产生可直接饮用的纯水的RO反渗透净水器绝对是大家的首选。但是净水器本身的技术含量就比较低，在出去自身的品牌效应，如何在同质化的净水器市场打出差异化呢？健康、养生便是净水器厂商所想到的。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201118/0da583b1bfd349c39d8c9cc069d32884.jpeg" /></p>
+<p>关于RO反渗透净水器没少听说过，纯水不含矿物质，长期饮用不利于健康的质疑吧。而净水器厂商便抓住这个点，推出各种能保留水中矿物质的反渗透净水器。实际上，一个成年男性每天大概需要800mg的钙、2000mg的钾、350mg的镁，成年男性每天建议饮水1700ml以上，如果按照农夫山泉的矿物质含量来算，能够补充的钙、钾、镁分别是6.8mg、0.595mg、0.85mg，占一天总摄入微量元素的比例为0.85%、0.029%、0.24%。指望从水中补充矿物质简直是无稽之谈。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201118/fc92e863972e4cf1bd71592072ba054b.jpeg" /></p>
+<p>当然，多一些水中多一些矿物质也没有什么不好，问题在于仅仅加上这个功能，一个净水器的价格便可以翻几倍，实际上，要想让纯水中含有矿物质，只需要在出水后级加一个矿化滤芯，这并不需要什么技术含量，成本也就十来块钱（具体可有参考我之前的一篇关于DIY净水器的文章），而这些却要消费者花成倍的价钱，而且所谓的补充矿物质效果也是微乎其微，这无疑是一件不择不扣的智商税产品。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201118/0398d0079c2f4e11a1be2eee7a1e17f0.jpeg" /></p>
+<p><strong>除螨仪</strong></p>
+<p>除螨仪绝对可以算得上近几年十分火爆的一个网红产品，当消费者看到产品宣传图上，除螨仪在看似干净的被褥上吸出一堆令人触目惊心的杂物时，便毫不犹豫的下了单。虽然在实际使用中，确实如同宣传上的一样，能吸出一堆杂物，但是这些里面真的有螨虫吗？</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201118/c620622457de402f9d2927aaf8c59fd6.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201118/c81c1c888dbd437ea78d0c116d69f5b6.jpeg" /></p>
+<p>我们都知道去除螨虫最好的办法就是晒太阳，而除螨仪的原理便是通过电机拍打吸出和紫外线消杀的方式来除螨的。实际上，并非所有紫外线都能杀死螨虫，必须是253.7nm的主波段紫外线灯才能起到杀灭螨虫的效果，其它波段的紫外线并不能达不到这种效果，而且紫外线照射必须联系持续一段时间才能起效果。而用太阳光照射来消灭螨虫，并不是利用太阳的紫外线，而是利用太阳的热能辐射。螨虫的生长温度是20-25℃，在太阳天30℃以上的高温下晒上几个小时，被子里面的螨虫就基本失去活性甚至死亡了。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201118/ab13fee7434d425a8269a63c7241bc50.jpeg" /></p>
+<p>可以说，除螨仪的除螨效果是微乎其微，商家在除螨效果上的大肆宣传，无疑让除螨仪成了一个智商税产品。但是如果把除螨仪当做一个床上吸尘器，用于清洁床上用品、毛绒玩具中的灰尘杂物，倒也是一个还不错的产品。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201118/382b215bad1c4b68835d891c470cc3cf.jpeg" /></p>
+<p>截取自淘宝评论</p>
+<p><span></span><strong></strong><strong>功能鸡肋，价格虚高的智商税产品</strong></p>
+<p>除了以上这些因为各种夸大宣传，名不副实才被成为智商税的产品，还有一些表现上是加入了创新的功能，实际上却相当鸡肋的产品，这些也经常也消费者称为智商税。</p>
+<p><strong>水槽式洗碗机</strong></p>
+<p>要说近年来什么家电产品最能增加生活的幸福感，那么洗碗机绝对能排的上号。水槽式洗碗机作为洗碗机的一个分类，一直都是最受争议的一个。水槽式洗碗机区别与普通的台式、嵌入式洗碗机，它是安装在水槽上的。从安装位置来说，确实是比较符合国人的使用习惯，且创新的加入了果蔬清洗的功能，做到了一机多用。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201118/6c784aae2df945bdb5ae3c55a4d582aa.jpeg" /></p>
+<p>买洗碗机时，一直强调的就是买大不买小，买大顶多是浪费，买小了就只能后悔了。然而，因为水槽式洗碗机是安装在水槽上的，受限于水槽的体积，很难做到想嵌入式洗碗机一样那么大的容量，想要大容量需要付出的价格成本要比嵌入式或台式洗碗机大得多。而这也是水槽式洗碗机一直备受诟病的原因。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201118/63ad0f9b59924303b6a7bc9279756039.jpeg" /></p>
+<p>截取自京东评论</p>
+<p><strong>免手洗破壁机</strong></p>
+<p>在抛去了健康养生等卖点后的破壁机，也已经成为了家电中常见的一件家电产品。但是破壁机最大的痛点便是清洁问题了。各大厂商也都在努力在清洁体验上做出改进。而免手洗破壁机绝对是其中最有吸引力的。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201118/fcc7137ca39248dd972fe496212b8f51.jpeg" /></p>
+<p>免手洗破壁机通过喷淋、高温蒸煮、高速搅拌等方式来清洗破壁机的杯体，有点类似于洗碗机的工作原理。听上去十分美好，时间在使用过程中，因为体积限制，破壁机并不能厂商同洗碗机一样的高压水柱进行冲洗，所以有不少用户反映机器自清洁后，仍然可见一些残留物。此外，想污水盒还有水箱等其他配件，仍然需要手洗。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201118/09d6b20fee97439c8f5e1464e51db3da.jpeg" /></p>
+<p>截取自京东评论</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201118/c9553c88e29447dc8a4bc41cfea7cf2b.jpeg" /></p>
+<p>知乎用户评论</p>
+<p>破壁机免手洗的这个点确实是很好的一个点，只是目前的产品仍然多少有些缺陷，很难给到用户很好的体验。相比较所谓了免手洗，破壁机的杯体可泡洗，可放洗碗机里清洗显得更为实用。美的有一款破壁机便可实现杯体泡洗。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201118/5d0b45052a434784a6f6d954bcb5fc84.jpeg" /></p>
+<p>其实，类似的产品都还有很多，都是在一些常用的家电上加入一些创新功能，或是将多个家电进行融合，实现一机多用，就比如洗烘一体机、集成灶等，虽然看上去十分高大上，但是在实际使用在却存在很多鸡肋的地方，这就难免让消费者觉得厂家是在加入一些鸡肋功能来变相提高售价，是智商税产品。 </p>
+<p><span></span><strong></strong><strong>功能单一、容易吃灰的智商税产品</strong></p>
+<p>第三类被消费者认为是智商税产品的，便是那些买回来就很少用，经常处于吃灰状态的产品。而厨房类小家电绝对是重灾区，像面包机、三明治机、榨汁机、空气炸锅、烤箱等等，经常都能在闲鱼上看到几乎全新的闲置。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201118/62ea60fbc6964c099489cf7660c7117e.jpeg" /></p>
+<p>这类产品之所以容易吃灰，是因为使用成本比较高。当我们有时间的时候，这些厨房小家电确实能帮助我们轻松做出各种赏心悦目的美食，可是当我们赶着时间去上班，楼下早餐店的早餐绝对是最划算的选择，久而久之，这类需要一定时间成本的厨房类小家电就容易吃灰了。</p>
+<p>厨房类小家电在今年疫情最为严重的阶段，却仍出现逆势增长的势头，正是因为疫情宅家，大家需要一些东西来消磨时间，而美食就是最好的东西。如今疫情已经得到了很好的控制，大家想一下家里的厨房类小家电是不是已经闲置很久没用啦。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201118/09f4aa817b96458e8ea49b8ceac7834e.jpeg" /></p>
+<p>截取自闲鱼</p>
+<p>厨房类小家电功能单一，使用需要花费一定的时间成本，再加上消费者对这类产品容易冲动消费，这就导致了这类产品容易吃灰闲置。当然就产品本身来说，其实很难称其为智商税。 </p>
+<p><span></span><strong></strong><strong>写在最后</strong></p>
+<p>对于这些智商税长篇，该如何避免呢？第一种智商税产品需要我们对一些吹得神乎其神的网红产品要有一些自己的判断，不要满目跟风，了解一下相关的知识就能轻松避免这类智商税。第二类智商税产品可能比较难避免，毕竟一些新技术在没使用到的时候很难判断其是实用还是鸡肋，对于这类产品我建议看看是否有线下实体店，去实体店实地体验一下，可以极大的降低踩坑的几率。对于第三类智商税产品，管好自己的手，在购买时先冷静下，看看是否真的会经常使用到，衡量之后再购买。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201118/1ab1a6e76c8d4639878f22d983e1d960.jpeg" /></p>
+<p>今天是11月18号，大多数产品还在7天无理由退货的时效内，如果真的不幸踩到坑，抓紧机会，看看能否退货，及时止损。</p>
+➜轻薄本渲染办公样样行？用完我惊了！
+http://www.sohu.com/a/432525913_223764	58518
+<p>随着移动办公需求的火速增长，轻薄本已经成为广大用户处理日常工作、生活需求的重要工具，因此消费者们对轻薄本的性能有着越来越高的期待。为了满足这一需求，2020年9月，英特尔正式发布了代号为Tiger Lake的第11代酷睿处理器移动版，在制程工艺、处理器微架构、核显、内存控制器、连接性、AI等多个维度进行了全面升级，致力于让轻薄本获得更好的使用体验。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201118/ed7b168ed69e433386000b076c5324ba.jpeg" /></p>
+<p>时至今日，轻薄本市场中已经有大量的OEM开始出货搭载第11代酷睿处理器的产品；为了具体了解第11代酷睿处理器的性能，笔者对华硕灵耀X纵横进行了实测体验，这款产品搭载了11代酷睿i7-1165G7处理器，并通过了EVO平台认证，是目前市场中的热门产品，下面就跟大家聊一聊具体的使用感受。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201118/d55bc671b5ae4d08ba7128d3c24ae719.jpeg" /></p>
+<p>11代酷睿能为轻薄本带来什么？</p>
+<p>第11代酷睿处理器代号为Tiger Lake，采用了10nm SuperFin工艺，旗舰型号酷睿i7-1185G7可提供高达4.8GHz单核睿频、4.3GHz全核睿频，主流型号酷睿i7-1165G7也可拥有4.7GHz单核睿频、4.1GHz全核睿频，弥补了初代10nm产品Ice Lake在频率方面的短板；CPU微架构方面，Tiger Lake也升级为全新的Willow Cove，提高了L2和L3缓存容量，拥有极高的IPC；结合频率提高和微架构改进，Tiger Lake的单核性能非常强劲，甚至超越了很多标压处理器和台式机处理器，可大幅提高日常办公的效率。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><img src="http://p7.itc.cn/q_70/images03/20201118/7d9294bf57224ea6b5bff66e2ecf8def.jpeg" /></p>
+<p>第11代酷睿搭载了Iris Xe核芯显卡，基于Xe LP架构，最多拥有96个EU单元，图形性能也获得了全面增强，可为轻薄本提供绝佳的游戏体验。关于这方面的信息，详情请看：《聊一聊全新lris Xe核显，轻薄本游戏体验的再一次进化》</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201118/d1a250dee39344adb83287527c52d609.jpeg" /></p>
+<p>除了CPU与核显的性能提升，第11代酷睿在规格上也不乏其他亮点，例如全新的内存控制器、专用AI计算引擎GNA 2.0，以及对PCIe 4.0、Thunderbolt 4、Wi-Fi 6（Gig＋）等协议的支持。让轻薄本连接性更强、也更加智能化，全面助力用户日常办公及生产力的效率提升。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201118/30d57ff3e46348b2a1768a73f475f9d7.jpeg" /></p>
+<p>11代酷睿i7-1165G7日常办公及渲染实测</p>
+<p>PCMark 10含有一整套全面的测试项，涵盖现代办公场所中的各种任务。PCMark 10 Extended是PCMark 10套件中测试时间最长的项目，可进行完整的综合性能评估。</p>
+<p>从结果中来看，搭载11代酷睿i7-1165G7的华硕灵耀X纵横综合得分为4765，常用基本功能得分10206、生产力测试得分为6899、数位内容创作为4753；在视频会议帧数、视频编辑帧数、应用程序启动时间等日常使用场景中，均有出色表现。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201118/1fcbc1761cdd4add84d0b528259bc7c4.jpeg" /></p>
+<p>通过PCMark 10的监控，我们可以看到，11代酷睿i7-1165G7在运行测试中，可以长时间将睿频保持在4.5GHz以上，以保持各个应用的快速响应及操作流畅性。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201118/03553a83a0ca464398d574955432340d.jpeg" /></p>
+<p><strong>如果从日常使用和办公的角度来讲，</strong><strong>Microsoft Office</strong><strong>套件中的Word、Excel、PowerPoint，以及Windows 10系统自带的EDGE浏览器，都可谓是每台计算机必不可少的应用；PCMark 10还提供了应用程序基准测试，可通过脚本利用Word、Excel、PowerPoint 和 Edge 进行测试，来为现代工作职场测量实际的、真实的性能。</strong></p>
+<p><strong>从结果上看，凭借着1</strong><strong>1</strong><strong>代酷睿i7-1165G7的强大性能，华硕灵耀X纵横在PCMark 10应用程序基准测试中得分同样出色，达到了9190分。具体来看，Word、Excel、PowerPoint的文件加载、保存、浏览、输入文字等操作均非常迅速。</strong></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201118/a309931bd4df493f9864033225bf44e3.jpeg" /></p>
+<p><strong>7-Zip同样是日常办公中经常用到的软件之一，笔者运行程序自带的基准测试，1</strong><strong>1</strong><strong>代酷睿i7-1165G7总体评分为40848MIPS，压缩速度35170KB/s、解压缩速度466861KB/s，效率同样出色。</strong></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201118/c629dbd5ab564efca6737088c7f6be5b.jpeg" /></p>
+<p>V-Ray是由专业的渲染器开发公司CHAOSGROUP开发的渲染软件，是业界最受欢迎的渲染引擎之一，在行业中有极高的认可度，目前已经更新到了5.0大版本。笔者使用独立的Benchmark进行测试，11代酷睿i7-1165G7得分高达4517vsamples。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201118/0293168e902a4a24af784e183c39235a.jpeg" /></p>
+<p>Blender 是一款开源的跨平台全能三维动画制作软件，提供从建模、动画、材质、渲染、到音频处理、视频剪辑等一系列动画短片制作解决方案，目前已经更新至2.90.1版本。</p>
+<p>测试前，笔者首先导入提前准备好的bmw27素材。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201118/1d84d3f4948445ffb89a0f6def373272.jpeg" /></p>
+<p>使用Blender自带的渲染器进行渲染，下图将展示渲染过程：</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201118/23ab69f5bc6345638735e55dd4c6a721.jpeg" /></p>
+<p>最终完成渲染所需总时间为7分40秒，表现基本符合预期。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201118/9dfaa07a8885475fbbeb72290cbc3957.jpeg" /></p>
+<p>使用X264 Benchmark测试编码能力，11代酷睿i7-1165G7得分为30.22fps。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201118/5431ba117c884a4a859a36225cadf380.jpeg" /></p>
+<p>在选用一段1分30秒左右的短视频，通过Adobe Premiere Pro 2020进行导出。即使在没有独显进行加速的情况下，只凭借11代酷睿i7-1165G7处理器，导出耗时依旧只有40秒左右，效率很不错。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201118/299408b873b14094873756e8c277a1da.jpeg" /></p>
+<p>11代酷睿i7-1165G7处理器除了在日常办公和生产力体验表现出色以外，搭载的Iris Xe核芯显卡同样引人瞩目，辅以双通道LPDDR4X 4267高频内存，3DMark Time Spy实测图形分数1558，处于轻薄本核显中的顶级水平，除了提供媲美独显的游戏性能以外，还可助力生产力效率大幅提高。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201118/851785279431443eaff48aee956bc9db.jpeg" /></p>
+<p>最后，笔者还测试了一下华硕灵耀X纵横的续航能力，由于该款机型通过了英特尔EVO平台认证，所以在测试前，笔者就对它的续航表现有极高的期待。调整屏幕亮度为中等，风扇策略为安静模式，通过PCMark 10来模拟现代日常办公场景，最终华硕灵耀X纵横取得了13小时40分钟的成绩；值得注意的是，在拔掉电源后，纯电池模式下整机现代办公分数依旧保持在7892，可见11代酷睿i7-1165G7在电源管理和性能一致性方面均非常优秀，可完美应对多样化的移动办公场景。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201118/c946644468d34c3a9d739f6792237489.jpeg" /></p>
+<p>总结</p>
+<p>由于现代社会的节奏越来越快，因此对于广大用户来说，对办公效率与体验的追求也愈发强烈。通过制程工艺、架构、互联、AI等多方面的全面增强，第11代酷睿处理器相比前代产品有了飞跃性的改变，也让搭载它的轻薄本拥有了更为强大的综合性能，不但能保障运行诸如Microsoft Office、Windows EDGE等日常办公软件的高流畅性，也可以满足渲染、视频剪辑等生产力内容创作需求，成为真正意义上的全能型多面手！</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201118/c1b2250886f448d7a53aecced41b8293.jpeg" /></p>
