@@ -1,0 +1,17 @@
+➜Ruffle – 互联网档案馆 Internet Archive 发布开源 Flash Player 模拟器，让 Flash 复活
+https://www.appinn.com/ruffle-is-a-flash-player-emulator/	18605
+<p><strong>Ruffle</strong> 是一个用 Rust 编程语言构建的 Flash Player 模拟器，它可以让你继续运行那些遥远的 Flash 内容，开源、跨平台，支持 Windows、macOS、Linux，以及Firefox、Chrome、Edge、Safari 浏览器扩展，也可以让那些纯 Flash 网站再次运作起来，并且不需要用户安装 Flash Player。在安全上，Ruffle 利用现代浏览器的沙箱安全和 Rust 的内存安全保证，能够避免所有 Flash 曾经闻名的安全隐患。@<a href="https://www.appinn.com/ruffle-is-a-flash-player-emulator/" class="rank-math-link">Appinn</a></p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/ruffle.jpg!o" alt="Ruffle - 互联网档案馆 Internet Archive 发布开源 Flash Player 模拟器，让 Flash 复活" title="Ruffle - 互联网档案馆 Internet Archive 发布开源 Flash Player 模拟器，让 Flash 复活 1"></figure></div>
+<p>开发 Ruffle 的缘由很简单，互联网档案馆 Internet Archive 上保存了超过 1000个精选的 Flash 内容合集，在 <a href="https://www.appinn.com/adobe-flash-final-2020/" class="rank-math-link">Flash 退役</a>之后，这些内容该怎么办？</p>
+<h2>Flash 曾经是互联网的一部分</h2>
+<p>毕竟，没人可以否认，Flash 曾经是互联网的一部分，也为互联网带来了繁荣。在 2000 年～2005年间，Flash 达到了高峰，这期间有很多网站甚至是纯 Flash 的。</p>
+<p>但，在没有 Flash 播放器的情况下，Flash 动画就无法工作，它不像图片、视频，可以被广泛的支持，Flash 就会变成了一个个安静的文件。</p>
+<p>对这些创作来说，这是一个悲剧。</p>
+<h2>Ruffle 的未来</h2>
+<p>目前的 Ruffle 还没有 100% 的兼容所有 Flash，但已经做的很好了，现在你就可以在没有 Flash Player 的情况下，直接访问 Internet Archive 的 <a href="https://archive.org/details/softwarelibrary_flash_showcase" class="rank-math-link" target="_blank" rel="noopener">Flash 作品收藏集</a>，并让那些遥远的游戏再次复活。</p>
+<p>由于 Ruffle 开源，并且支持网站自己部署，所以用户可以期待未来会有一些有趣的怀旧网站，比如小游戏什么的，还是打开浏览器就能用，只不过，估计这次就只能停留在电脑上了。</p>
+<h2>使用 Ruffle</h2>
+<p>可以直接从 <a href="https://ruffle.rs/#usage" class="rank-math-link" target="_blank" rel="noopener">Ruffle 官网</a>下载浏览器扩展（目前还未上架应用市场）、以及 Windows、macOS、Linux 程序。网站主还能自己部署。</p>
+<p>当然，最简单的，是直接使用 Ruffle 的官方 DEMO 页面，此时此刻，你就能直接在网页上载入本地的 .swf 文件</p>
+<ul><li><a href="https://ruffle.rs/demo" class="rank-math-link" target="_blank" rel="noopener">https://ruffle.rs/demo</a></li></ul>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202011/screenshot_2020-11-24_at_13_07_17.jpg!o" alt="Ruffle - 互联网档案馆 Internet Archive 发布开源 Flash Player 模拟器，让 Flash 复活 1" title="Ruffle - 互联网档案馆 Internet Archive 发布开源 Flash Player 模拟器，让 Flash 复活 2"></figure></div>
