@@ -27,3 +27,148 @@ http://www.expreview.com/76871.html	9120
 ➜Khronos发布Vulkan光线追踪最终规范：业界的里程碑
 http://www.expreview.com/76874.html	11520
 <p style="text-align: center;"><img src="https://img.expreview.com/news/2020/11/24/Vulkan.png" width="100%"/></p><p>今天<a href="https://www.khronos.org/blog/vulkan-ray-tracing-final-specification-release" target="_blank">Khronos官方发布</a>了Vulkan、GLSL和SPIR-V扩展规范的最终版本，将光线追踪功能无缝集成到现有的Vulkan框架中。</p><p>这是一个重要的里程碑，因为它是业界第一个开放、跨厂商、跨平台的光线追踪加速标准。Vulkan的光线追踪对于在DirectX 12中使用过DirectX Raytracing (DXR)的人来说是很熟悉，但同时也引入了一些高级功能，比如将光线追踪设置操作的负载平衡能力放到CPU上。虽然光线追踪会首先部署在桌面平台上，但这些扩展设计是为了将来让光线追踪也能部署在移动平台上。</p><p>这些扩展规范自2018年1月开始起草，到2020年3月发布了临时版本，我们也曾<a href="https://www.expreview.com/73451.html" target="_blank">报道</a>过。从那时候开始，Khronos接受了来自硬件供应商和软件开发商的反馈，包括Khronos内部和更广泛的相关行业，直到今天确定最终规范。在未来一段时间内，其他生态系统组件将进行更新，以符合对光线追踪功能的支持，以确保开发人员能够在其应用程序中使用这些扩展工具。可以在GitHub上跟踪这些生态系统更新的进展。</p><p>在12月中旬，Khronos会发布支持Vulkan光线追踪功能的Vulkan SDK（1.2.162.0或更新版本）。我们应该很快能看到使用新的Vulkan SDK版本开发的游戏了，加上微软的DirectX 12 DXR API，相信业界内使用光线追踪功能会成为常态。</p><p style="text-align: center;"><img src="https://img.expreview.com/news/2020/11/24/Khronos_Vulkan.jpg" width="100%"/></p><p>从临时版本开始，Vulkan Ray Tracing扩展集提供的所有功能都没有改变。今天发布的最后一组扩展是以下部分：</p><h2>Vulkan扩展规格</h2><p>VK_KHR_acceleration_structure</p><p>VK_KHR_ray_tracing_pipeline</p><p>VK_KHR_ray_query</p><p>VK_KHR_pipeline_library</p><p>VK_KHR_deferred_host_operations</p><h2>SPIR-V扩展规格</h2><p>SPV_KHR_ray_tracing</p><p>SPV_KHR_ray_query</p><h2>GLSL扩展规格</h2><p>GLSL_EXT_ray_tracing</p><p>GLSL_EXT_ray_query</p><p>GLSL_EXT_ray_f--l--a--gs_primitive_culling</p>
+➜影驰B460 GAMER主板评测：五脏俱存的主流主板之选
+http://www.expreview.com/76863.html	27664
+<!-- 热管,热管 --><p>相信近几年来很多首次装机的玩家都会选择组建一套主流级别的平台，最主要是因为现在要组建一套稍为中高端配置的平台都已经所费不菲，动不动就已经要6、7千了。相对来说，配置主流平台的成本并不是很高，比较多人可以负担得起。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/focus.jpg" width="100%"/></p><p>最显而易见的，就是主板了。以Intel这边为例，在最新的400系主板中，一块好点的Z490主板虽然其规格往往比较强大，接口也很多，但是价格动辄需要一千多元。相比之下，定位更加主流的B460主板在满足玩家基本需求的前提下价格通常只要5、6百元左右。而今天这块来自影驰的B460 GAMER主板就正是这样一块麻雀虽小五脏俱全的主板。</p><h1>主板规格</h1><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/k.jpg" width="100%"/></p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var tableid = settableid();
+document.write('<div id="' + tableid + '"></div>');
+Table().init({
+title: "主板规格",
+header: ["影驰 B460 GAMER","参数"],
+width: '60%',
+columnWidth: 'AUTO', //表格宽度，"AVG"平均，"AUTO"自动（默认），指定[15,16,20]
+id: tableid,
+data: [["板型","MATX"],
+["芯片组","INTEL B460"],
+["处理器插槽","LGA 1200"],
+["内存插槽","4 x DDR4 DIMM"],
+["最高内存频率","2933 MHz"],
+["供电规格（相）","6+2+1"],
+["处理器供电插座","8"],
+["PCIe插槽","2 x PCIe 3.0/2.0 x16 <br>1 x PCIe 3.0/2.0 "],
+["M.2接口","2 x PCIe 3.0 x4"],
+["SATA接口","6 x SATA 6Gbps"],
+["背板I/O接口","6 x USB 3.2 Gen 1<br>1 x 1.0 Gbps LAN<br>6 x HD Audio<br>1 x DisplayPort<br>1 x HDMI<br>2 x PS/2"],
+["声卡芯片","Realtek ALC892"],
+["网卡芯片","Realtek 8111H"],
+["配件","使用手册<br>2 x SATA 6.0Gb/s数据线"],
+["售价（元）","599"],
+]
+});</script></div><p>影驰B460 GAMER是一块MATX板型的主板，而MATX也是主流主板的一个最主流的板型，因为MATX相比起ATX来说弹性要更加大，而且只需要在ATX的基础上进行精简就可以了，不需要像ITX那样重新设计，再加上出货量大，使得MATX成为主流主板的热门板形。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/b.jpg" width="100%"/></p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 8; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+// var istart=['1','2','3','4','5','6'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 13; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/review/2020/11/galax-b460/"; //图片目录
+var col = 3; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 14; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+// var istart=['1','2','3','4','5','6'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 17; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/review/2020/11/galax-b460/"; //图片目录
+var col = 4; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><p>影驰B460 GAMER的外观与上一代的B360 GAMER有很大的改变，相比起后者那红银以及RGB灯效的配色，B460 GAMER采用了白银黑，散热片部分为银色，而I/O接口那里的大包围则用了白色塑料，整体观感比较简洁顺眼。</p><h2>内存</h2><p>B460芯片组配合Core i7或者Core i9级别的处理器时，内存频率最高可以达到2933 MHz，而在配合Core i5或以下的处理器时最高则为2666 MHz，影驰这块B460 GAMER也不例外。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/c.jpg" width="100%"/></p><p>主板上有4条内存插槽，每条最高支持32GB的DDR4内存条，可以组成最高128GB的双通道内内存。这个容量以及频率对于主流玩家来说也是够用的了，说实话128GB的内存哪怕是高端的游戏玩家也很少很少用得着。另外内存插槽上每条都有金属加固。</p><h2>PCI-E接口</h2><p>影驰B460 GAMER主板上有2条PCI-E 3.0 ×16插槽以及1条PCI-E 3.0 ×1插槽。不过，虽然最下面的那条PCI-E插槽是做成了×16的形式，针脚也是×16那样，但是实际上只提供×1的通道。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/e.jpg" width="100%"/></p><p>不过这对于实际使用上来说影响是比较小的，因为在主流配置上这条PCI-E插槽也是比较少机会用得上的，一是想插视频采集卡做直播，但是如果要做主播的话那么显然需要配置更高一点的平台才适合。二是扩展USB接口，不过其实影驰B460 GAMER本身自带的USB接口数量也是比较多的，这点之后会提及，因此其实也不是非常需要从这里扩展出去。</p><h2>存储接口</h2><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/d.jpg" width="100%"/></p><p>在存储方面，影驰B460 GAMER提供总共6个SATA 6Gbps接口，以4个直角2个水平的形式呈现。直角SATA接口对于玩家装机而言弹性会更大，因为有时候水平接口与机箱托板离得太近的话就会比较难拔插，而直角接口就没有这个限制。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/n.jpg" width="100%"/></p><p>主板上提供2个M.2 2280插槽，所能够提供的SSD扩展性也是不错。中间的第二条M.2插槽自带一块散热片，可以为SSD降温。不过大多数玩家在只有一条M.2 SSD的情况下都会把其插在第一条M.2插槽上，因此其实这块散热片或许可以放在上面那条M.2插槽，这样会合理一点。</p><h2>前置接口</h2><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/f.jpg" width="100%"/></p><p>影驰B460 GAMER支持前置最多2个USB 3.0接口以及2个USB 2.0接口。这个数量的前置接口看似有点少，因为一般主流级别的主板都会有2个USB 2.0针口，可以给到4个USB 2. 0接口。但是要考虑到，主流级别的机箱一般都只有2个USB 3.0，或者最多再加上2个USB 2.0接口总共4个USB接口，因此主流级主板上最多支持2个USB 3.0以及2个USB 2.0接口其实也是足够的了。</p><h2>后置I/O接口</h2><p>来到了比较多人关心的背部I/O接口，影驰B460 GAMER拥有2个PS/2接口、1个HDMI以及1个DP视频输出接口、6个USB 3.2 Gen 1接口、1个RJ45网线接口以及6个3.5mm音频接口。6个USB 3.2 Gen 1接口在这个级别的主板也不常见，这个数量基本上完全可以满足主流玩家对于USB接口的需求。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/j.jpg" width="100%"/></p><p>整体来说影驰B460 GAMER的I/O接口对于主流玩家来说也是比较全的，该有的都有。</p><h2>风扇水泵接口</h2><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/i.jpg" width="100%"/></p><p>正如前面所述，MATX主板大多是由ATX主板精简而来的，因此在各种接口上都会有一定程度的减少，其中一个最明显的地方肯定就是主板的风扇以及水泵接口了。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/h.jpg" width="100%"/></p><p>影驰B460 GAMER总共有4个风扇接口，分别是主板顶部内存及VRM供2电部分之间的1个CPU风扇接口、位于主板底部以及核心供电VRM下方的总共3个系统风扇接口。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/g.jpg" width="100%"/></p><p>有趣的是，主板右下方以及核心供电VRM下方的2个系统风扇接口的标识是写着「FS_FAN 1/2」，而主板左下方的则是写着「SYS_FAN」。这应该是一个印刷上的小问题而已，相信在之后批次的主板中会修正。</p><h1>主板拆解</h1><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/l.jpg" width="100%"/></p><p>这次影驰B460 GAMER的拆解还是相对容易的，因为主板上没有过多的装甲部份，因此需要卸下来的螺丝也不多，只需要把M.2、芯片组、VRM的散热片以及I/O接口上的大包围拆下来就可以看到主板的全貌了。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 18; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+// var istart=['1','2','3','4','5','6'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 21; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/review/2020/11/galax-b460/"; //图片目录
+var col = 4; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 22; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+// var istart=['1','2','3','4','5','6'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 24; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/review/2020/11/galax-b460/"; //图片目录
+var col = 3; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><h2>主板散热设计</h2><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/s.jpg" width="100%"/></p><p>影驰B460 GAMER的散热共分3部分，分别是供电VRM、第二条M.2插槽以及主板PCH芯片上。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/v.jpg" width="100%"/></p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/u.jpg" width="100%"/></p><p>供电VRM部分的散热片有两块，散热面积还算可以的。顶部的那块相对来说比较小，但是对于压制那里的2相供电来说也是很足够的了。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/t.jpg" width="100%"/></p><p>M.2插槽上的散热片较长，并且是搭在PCH芯片散热片上的，一定程度上可以把SSD的热量传到那一大块金属上。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/w.jpg" width="100%"/></p><p>说起PCH芯片组，上面的那块散热片也是比较大的，比起不少同价位B460主板的都要大一点。</p><h2>6+2相供电</h2><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/m.jpg" width="100%"/></p><p>B460主板本身的定位就是主流级别的，不会像高端的Z490主板那样可以超频，因此供电部分也不需要像Z490那么堆料，够用即可。影驰B460 GAMER使用了6+2相供电，也是一个比较常见的主流供电相数。要知道会以一块B460主流搭建平台的玩家通常也不会选用诸如Core-i9等的发烧级别处理器，最多最多是上到Core-i7级别的处理器，并且不会超频，因此6+2相对于B460主板来说也是很够用的了。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/x.jpg" width="100%"/></p><p>为了能够完全发挥处理器性能，影驰在这块B460 GAMER上还是用了8P供电接口。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/p.jpg" width="100%"/></p><p>核心供电VRM部分每相MOSFET用了1上2下桥的设计，上桥用的是美格纳的MDU1514，下橘用的则是2颗同样来自美格纳的MDU1517。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/q.jpg" width="100%"/></p><p>至于UNCORE供部分则是1上1下桥，用的MOSFET与核心供电部分是一样的，只不过少了一个下桥MOSFET而已。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/r.jpg" width="100%"/></p><p>供电VRM PWM主控芯片则是来自来自Richtek立锜，可最多控制6+2相的RT3609BE。</p><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/o.jpg" width="100%"/></p><h1>主板BIOS介绍</h1><p>影驰B460 GAMER主板的BIOS界面是比较直观的，左边是所有的子目录，右边是详细选项。虽然说进入BIOS后并不能一眼看到CPU以及内存的各种参数，但是对于一块不用超频的主板来说显示基本讯息也是足够的了。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 1; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+// var istart=['1','2','3','4','5','6'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 4; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/review/2020/11/galax-b460/"; //图片目录
+var col = 4; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var istart = 5; //通过编号生成，图片开始的编号，不强求连续，但尽量连续编号，小图+s，如1s；
+// var istart=['1','2','3','4','5','6'];   //通过文件名生成，大图文件名，不含后缀，小图以s结尾
+var ilast = 7; //结束图片的编号，如果是文件名生成，这个数字不用改
+var tips = []; //图片说明，按顺序列，没有就空着
+var iurl = "https://img.expreview.com/review/2020/11/galax-b460/"; //图片目录
+var col = 3; //列数，一排几张图，1 2 3 4可选
+var nomore = 0; //大小图是否一样，1为一样，不需要s后缀的小图，用于列图片
+var gap = 0; //图片间距修正，默认0
+var bd = 0; //描边，0或1，默认0
+var full = 0; //是否全屏，0 或 1
+var pic = ".jpg"; //图片格式
+WaterInit(pic, iurl, col, gap, bd, istart, ilast, full, tips, nomore);</script></div><h1>功耗测试</h1><p>接下来笔者会进行功耗测试。为了配合主板的定位，这次会用一个Core i5-10400来测试其在桌面待机以及满载时的功耗。</p><p>目前绝大部分主板都只通过CPU供电接口为CPU进行供电，因此CPU供电输入的功率变化基本上就是CPU功耗变化所引起的，监测该接口的功率就可以直接反应CPU功耗的高低。</p><p>此外必须说明的是，目前我们以专门的测试仪器测量的是主板上CPU供电接口的输入功率，并非直接的CPU供电功率，因此从该理论上来说应该是略高于CPU的实际供电功率，而且会因为每块主板的不同而产生变化。但是这个测试数据仍然有较高的参考价值，因为电源实际上是对主板进行供电而非直接对CPU进行供电，因此对于电源的选择来说，直接测试CPU供电接口的供电功率更有实际意义。</p><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "功耗测试 | 桌面待机"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "W "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 0; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#eee'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 60; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"平台功耗","Core i5-10400 @4.0GHz 1.052V":"52.4"},
+{"type":"CPU 输入功耗","Core i5-10400 @4.0GHz 1.052V":"16.2"},
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor,xaxismax);</script></div><div class="debug" onclick="window.parent.getdemocode(this.innerHTML)"><button onclick="window.parent.showdemo()" class="previewtable">预览</button><script>var title_text = "功耗测试 | AIDA 64 Stress FPU"; // 标题文字热管
+var subtitle_text = "www.expreview.com | Lower is better  "; // 副标题文字
+var unit_text = "W "; //单位
+var leftside = "8%"; //左边空白
+var topside = 50; //每组间距
+var mblur = 0.05; //模煳效果
+var bgopacity = 0; //背景透明度，0为全透明
+var mysort = 1; //是否排序
+var myper = 0; //是否显示百分比
+var mylengend = true; //是否显示图例
+var toplegend = 50; //图例上端空白
+var labelcolor = '#eee'; // 标签文字颜色
+var legendwidth = '90%'; //图例宽度
+var titlecolor = '#222'; //标题文字颜色
+var barheight = 35; //柱高度
+var bargap = 3; //柱间距,相当于百分值，即2%
+var xaxismax = 140; //指定X轴最大值，null时为自动
+var autocolor = 1; //是否自动判断颜色，0为否，1根据品牌生成颜色 ，如果 >1 则为均AMD NV Intel 标准色,
+var mycolor = []; //自动生成随机颜色 也可ANIColor("NVIDIA",3)可以生成三种NV绿
+//var mycolor = ANIColor('AMD',4);   //这样自动生成4种AMD红色，其它如NVIDIA、Intel同理
+//var mycolor=['#953f61', '#72355f', '#d77169'];      //自定义颜色 AMD红 '#9F1417', NV绿 '#82B41B',  Intel蓝 '#0075C5',
+//var mycolor = ['#0dcc47', '#969696', '#6f7b80','5A94DF'];
+var data_arr = [
+{"type":"平台功耗","Core i5-10400 @4.0GHz 1.052V":"137.6"},
+{"type":"CPU 输入功耗","Core i5-10400 @4.0GHz 1.052V":"92.6"},
+];
+TDInit(title_text, subtitle_text, unit_text, leftside, topside, mblur, bgopacity, mysort, myper, mylengend, toplegend, labelcolor, legendwidth, titlecolor, barheight, bargap, mycolor, data_arr, autocolor,xaxismax);</script></div><p>测试下来，在桌面待机时，Core i5-10400在影驰B460 GAMER主板上的待机功耗为16.2W左右，平台整机功耗则为52.4W。而在进行AIDA 64 单烤FPU测试时，Core i5-10400的满载功耗为92.6W，平台功耗则是达到了137.6W，差距与待机时接近。</p><h1>总结</h1><p style="text-align: center"><img border="0" src="https://img.expreview.com/review/2020/11/galax-b460/a.jpg" width="100%"/></p><p>对于一块不足600元的主板来说，影驰B460 GAMER可以说是非常有性价比的一个选择了。作为一块主流级别主板，它在各方面都十分均衡，包括USB接口、风扇接口以及供电等，都可以满足主流玩家的正常需要，总的来说就是一块再主流不过的主板。</p><p>当然，如果说要改进的地方那还是有的，例如可以为第一条M.2插槽增加散热片，以及可以把其中一个风扇接口移到主板右边方便接驳。除了这两点外，主板上也并没有其他太大的问题。</p><p>目前影驰B460 GAMER主板的价格为599元，对于想组建一套Intel主流级别平台但是预算不多的玩家来说，这或许是一个很合适的选择了。</p>
