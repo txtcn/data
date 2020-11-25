@@ -33,6 +33,128 @@ https://www.uisdc.com/interactive-description-library	58660
 <p>完整示例：<a href="https://whalexplorer.gitee.io/portfolio/onlinebookshelf/">《online小程序设计稿》</a></p>
 <p>欢迎关注作者微信公众号：「Jingwhale Design」</p>
 <p><span class="img-zoom"><img alt="如何快速专业添加交互说明？送你一套高手交互说明库" class="alignnone size-full wp-image-387121" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-wx-20200902-1.jpg" alt="超多案例！移动端横向滑动的设计总结" width="180" height="180" /></span></p>
+➜用起点读书的实战案例，教你从AE制作到落地开发的方案
+https://www.uisdc.com/qidian-read-ae	58837
+<h4><span class="auto_menu">导语</span></h4>
+<p>动画可以辅助视觉制作焦点，引导注意力的方向，越来越为广大视觉设计师青睐。从设计工具上来看，既有Framer.js、Origami， 也有交互原型类 Principle、Flinto，还有 Figma 自带动画演示功能的工具，但是对于一些视觉特效、非逻辑表达类动画，设计师通常会借助 AE 完成。</p>
+<p>遗憾的是，从 AE 制作到落地开发，至今也没有一种完备且成熟的跨平台解决方案。本文将起点读书中使用过的从 AE 到落地经验梳理成文，对比分析不同方案的差异和优劣，辨析其还原程度和性能表现，希望给同行设计师一些参考和借鉴。</p>
+<h4><span class="auto_menu">关键词</span></h4>
+<ul>
+<li>图片格式动画</li>
+<li>跨平台解决方案</li>
+</ul>
+<h4><span class="auto_menu">行业与现状</span></h4>
+<p><strong>1. 视觉设计的转变</strong></p>
+<p>从 Facebook 2019上半年的 All White 的改版来看，传统意义上视觉范畴的 色彩、图形、质感被最大程度的简化和提炼：</p>
+<p><span class="img-zoom"><img alt="用起点读书的实战案例，教你从AE制作到落地开发的方案" class="alignnone size-full wp-image-394890" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-hh-202003-1.jpg" width="920" height="576" /></span></p>
+<p>△ Facebook All White改版</p>
+<p>在 All White 的表象之下，设计师解决的问题不再是如何将页面绘制的更加漂亮，而是着眼于信息本身，思考的是如何通过我们的专业性帮助产品更好的传达内容。</p>
+<p>视觉设计从来不只是解决美丑，它是关于秩序的设计，解决的是如何提炼重点、革除冗余、合理的引导用户的注意力方面的问题。从 拟物 到 扁平 到 All White ，透过现象看本质，视觉在产品设计中的装饰感被逐渐减弱，转向以内容为中心，我们参与和见证着这场转变。</p>
+<p><strong>2. 起点读书中的动效</strong></p>
+<p>起点读书 7.0 之后，我们更加关注内容层面的设计，使用动画辅佐视觉、传递情感。从动画设计到落地，如何在紧张短暂的开发周期内上线一直是一个考验，对此，我们曾尝试过很多方案，走过不少弯路。</p>
+<p>拨开乌云见天日，守得云开见月明。我们将之前的经验梳理出来，予人玫瑰的同时，也是一次自我复盘。</p>
+<h4><span class="auto_menu">图片格式动画</span></h4>
+<p><strong>1. PNG</strong></p>
+<p>PNG 序列帧动画是一种比较原始的动画类型，通过连续切换一组分解的动画序列形成动画。后来为提高性能，发展出雪碧图（精灵图），将所有帧动画合并在一张大图上，通过位移实现动画帧切换。</p>
+<p>起点读书早期使用过序列帧：</p>
+<p><span class="img-zoom"><img alt="用起点读书的实战案例，教你从AE制作到落地开发的方案" class="alignnone size-full wp-image-394891" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-hh-202003-2.jpg" width="1080" height="154" /></span></p>
+<p>△ 起点读书打赏</p>
+<p>PNG 虽然实现方式较为原始，但确是一种最为稳妥的解决方案，除了图片体积太大，没有别的缺点，想必大部分项目中都使用过，这里不多加赘述。</p>
+<p>APNG 是从 PNG 基础上拓展出来的，是一个支持24 位色彩通道和 8 位透明通道的动画格式，对透明通道的支持非常优秀。</p>
+<p>DEMO: <a href="https://tinypng.com/images/apng/panda-waving-2x.png">https://tinypng.com/images/apng/panda-waving-2x.png</a></p>
+<p>美中不足的是，IE 浏览器不支持 APNG，原生尚可，一般项目中用的很少，期待 APNG 未来兼容性能有所改善。</p>
+<p><strong>2. GIF</strong></p>
+<p>GIF 是除 PNG 之外另外一种比较传统的动画格式，仅支持 8bit 彩色，不支持半透明通道，出现的年代久远，压缩技术比较差，动画边界有明显的杂边，一般用在对动画精度要求不高的地方。</p>
+<p><span class="img-zoom"><img alt="用起点读书的实战案例，教你从AE制作到落地开发的方案" class="alignnone size-full wp-image-394892" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-hh-202003-3.jpg" width="1080" height="324" /></span></p>
+<p>△ GIF vs. PNG</p>
+<p>我们比较一下上面 PNG 序列帧转为 GIF 之后的表现。从文件体积上看，GIF 比 PNG 序列小了 76% 。但是，从动画细节上看，GIF 的边界粗糙有锯齿，且无法消除。</p>
+<p>对于比较简单的动画，如果只有2个选择，在没有透明通道的情况下，选择 GIF 好于 PNG 。但是，从开发角度看，一些复杂的 GIF 有时会引起周期性的重绘，占用较多的系统内存，有一定性能风险。</p>
+<p><strong>3. WebP</strong></p>
+<p>WebP 是 Google 开发的一款用于改善 GIF 的新动图格式，支持 24bit 彩色，能够呈现透明通道，兼容性较好，在项目中用的比较多。</p>
+<p><span class="img-zoom"><img alt="用起点读书的实战案例，教你从AE制作到落地开发的方案" class="alignnone size-full wp-image-394893" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-hh-202003-4.jpg" width="1080" height="324" /></span></p>
+<p>△ 动画一：WebP vs. GIF</p>
+<p><span class="img-zoom"><img alt="用起点读书的实战案例，教你从AE制作到落地开发的方案" class="alignnone size-full wp-image-394894" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-hh-202003-5.jpg" width="1080" height="324" /></span></p>
+<p>△ 动画二：WebP vs. GIF</p>
+<p>我们比较一下 WebP 和 GIF 的差异到底在哪里：</p>
+<ul>
+<li>文件体积上，WebP 似乎没有明显的优势，对比以上两组动画，很难讲 WebP 一定更好。</li>
+<li>效果呈现上，WebP 支持了真正的 alpha 通道（8bit），而 GIF 只有 1bit，所以 WebP 的细节一定更好。</li>
+<li>兼容性上，WebP 虽不如 GIF， 但也算支持良好，不影响使用。</li>
+</ul>
+<p>综上，WebP 算是一种更完美的 “GIF” 。如果对文件体积不敏感，且没有更好的动画解决方案时，使用 WebP 是个不错的选择。</p>
+<p>除了 WebP，还有一种 WebM ，多见于游戏类网站，比如《炉石传说》的 Landing Page <a href="https://hs.blizzard.cn/landing">https://hs.blizzard.cn/landing</a> ，WebM 仅支持Web，原生不支持。</p>
+<p>WebP 导出工具：</p>
+<p><a href="https://github.com/bigxixi/webp_apng_exporter_for_AE">https://github.com/bigxixi/webp_apng_exporter_for_AE</a> （文件可以在浏览器预览）</p>
+<p>WebM 导出工具：<a href="https://www.fnordware.com/WebM/ WebP">https://www.fnordware.com/WebM/ WebP</a></p>
+<p><strong>4. 小结</strong></p>
+<p>通过以上对比分析，图片格式动画的体积都比较大。综合的还原效果、兼容性和性能，WebP 最佳，GIF 几乎和质量无缘，PNG 过于原始。</p>
+<h4><span class="auto_menu">跨平台解决方案</span></h4>
+<h5>1. Lottie</h5>
+<p>Lottie 库和插件是 Airbnb 于2017年前后发布的一款跨平台的动画解决方案，设计师通过 bodymovin 从 AE 中将动画导出 json 文件，开发只需将将其导入资源文件夹直接引用即可。</p>
+<p>[link https://www.uisdc.com/lottie-past-and-present]</p>
+<p><strong>为 UI 而生</strong></p>
+<p>Lottie 最早是为了解决矢量图形类动画的问题。从官方社区来看，我们能容易发现 Lottie 的矢量基因，社区作品大多是图形类动画。</p>
+<p><span class="img-zoom"><img alt="用起点读书的实战案例，教你从AE制作到落地开发的方案" class="alignnone size-full wp-image-394895" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-hh-202003-6.gif" width="640" height="640" /></span></p>
+<p>△ Lottie 社区设计师 高冈 圭太 作品</p>
+<p>Lottie 发布之后处于持续更新，从 Github 上主干合并频率来看，大概每周一次，从新版本发布频率来看，每月一个 bug fix，隔月发布一个新版本，任何 issue 都可以很快响应和解决。</p>
+<p><strong>支持部分图片动画</strong></p>
+<p>Lottie 早期的版本是不支持图片类动画的，导出 json 之后会自动生成一个 img 的资源文件夹，播放 .json 文件时，需要解压资源压缩包到本地目录才能正常播放。从 bodymovin V 5.1.15 之后，Lottie 将图片转为 base 64 编码，使用字符代替图像地址，并封装在 json 里，直接播放一个 .json 文件，不用再拖着一个资源文件夹了。</p>
+<p><span class="img-zoom"><img alt="用起点读书的实战案例，教你从AE制作到落地开发的方案" class="alignnone size-full wp-image-394897" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-hh-202003-8.jpg" width="1080" height="442" /></span></p>
+<p>△ Bodymovin 5.5.9 资源文件的设置面板</p>
+<p>Lottie 当前对图片类动画的支持依然会有一些小问题，有时候需要仔细排查出问题的图层，并对照官方文档 <a href="https://airbnb.io/lottie/#/supported-features">https://airbnb.io/lottie/#/supported-features</a>，灵活调整动画替代方案。如果你对 Lottie 开发感兴趣，这里有一段 Lottie 安卓开发工程师 Gabriel Peal 的访谈: <a href="https://fragmentedpodcast.com/episodes/82/">https://fragmentedpodcast.com/episodes/82/</a></p>
+<h5>2. PAG</h5>
+<p>PAG <a href="https://pag.im/">https://pag.im/</a> 是腾讯开发者推出的一款面向原生开发的动画解决方案，为设计师提供 AE 导出插件和桌面预览工具，支持 AE 一切特效。Lottie 当前对图片类动画的支持依然会有一些小问题，有时候需要仔细排查出问题的图层，并对照官方文档 <a href="https://airbnb.io/lottie/#/supported-features">https://airbnb.io/lottie/#/supported-features</a>，灵活调整动画替代方案。如果你对 Lottie 开发感兴趣，这里有一段 Lottie 安卓开发工程师 Gabriel Peal 的访谈: <a href="https://fragmentedpodcast.com/episodes/82/">https://fragmentedpodcast.com/episodes/82/</a></p>
+<p><strong>为 AE 而生</strong></p>
+<p>PAG 将动画渲染成图片序列帧，无论是表达式、粒子动画还是 3D插件，只要 AE 做的出，PAG 都支持。另外，PAG 还完美支持透明通道，动画体积非常小。</p>
+<p>起点读书今年上半年接入了 PAG 的 SDK，最早用于作品荣誉徽章的展示：</p>
+<p><span class="img-zoom"><img alt="用起点读书的实战案例，教你从AE制作到落地开发的方案" class="alignnone size-full wp-image-394898" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-hh-202003-9.jpg" width="1080" height="540" /></span></p>
+<p>△ 起点读书荣誉徽章 PAG 文件对比</p>
+<p>对于位图动画，PAG 有2种导出形式：视频序列帧和位图序列帧，视频序列帧小于位图序列帧，以上图为例，视频序列帧83k，位图序列帧 234k，前者比后者小 64%。</p>
+<p>在使用场景上，视频序列帧适用于展示型、模态型页面，位图序列帧适用于对实时渲染要求较高的 Feeds 型页面，如果用作列表动画，可能会出现卡顿。</p>
+<p><span class="img-zoom"><img alt="用起点读书的实战案例，教你从AE制作到落地开发的方案" class="alignnone size-full wp-image-394899" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-hh-202003-10.jpg" width="1080" height="540" /></span></p>
+<p>△ 起点读书作品徽章 PAG vs. WebP</p>
+<p>我们再比较下 PAG 和 WebP，首先，二者用肉眼几乎看不出显示方面的差异，但是从体积上看，PAG 仅为 WebP 的十分之一，具有碾压优势。</p>
+<p><strong>PAG vs. Lottie</strong></p>
+<p>PAG 除了对特效类动画的支持可圈可点，对矢量动画的支持也是非常优秀，甚至强于 Lottie。以一个生长动画为例，Lottie 文件 14k，而 PAG 文件只有1k。</p>
+<p><span class="img-zoom"><img alt="用起点读书的实战案例，教你从AE制作到落地开发的方案" class="alignnone size-full wp-image-394900" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-hh-202003-11.jpg" width="1080" height="540" /></span></p>
+<p>△ 起点读书投月票提醒</p>
+<p>另外，PAG 的开发者还提供工具方便设计师调整和预览动画参数，不懂 AE 的开发不是好测试：）</p>
+<p><span class="img-zoom"><img alt="用起点读书的实战案例，教你从AE制作到落地开发的方案" class="alignnone size-full wp-image-394901" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-hh-202003-12.jpg" width="1080" height="485" /></span></p>
+<p>△ 强大的桌面预览工具 PAGViewer</p>
+<p>PAG 出现的比较晚，目前仅限 MAC 电脑从 AE 导出，系统只兼容到 Android 4.4 以上，低版本需要有兜底方案。另外，PAG 对 Web 的开发还未完成， 当前也没有正式开源，目前优先腾讯系业务接入，预计明年将正式对外开源。</p>
+<h5>3. SVGA</h5>
+<p>SVGA 是 YY 直播的开发工程师 2017 年发布的一套跨平台动画解决方案。SVGA 不支持复杂矢量图形动画，对位图动画的支持超过 Lottie。</p>
+<p><strong>为改善 Lottie 为生</strong></p>
+<p>SVGA 最初的目标是弥补和改善 Lottie 。笔者通过反复测试发现，SVGA 记录的是动画元素在时间轴上每帧的表现，支持的动画类型比 Lottie 更多， 几乎支持一切 AE 基础类动画。但是更新频率比较慢，今年只发布了3-4个版本。</p>
+<p><strong>SVGA &amp; PAG</strong></p>
+<p>SVGA 对基础类动画的支持非常优秀，但是笔者发现 SVGA 不支持特效类动画。</p>
+<p><span class="img-zoom"><img alt="用起点读书的实战案例，教你从AE制作到落地开发的方案" class="alignnone size-full wp-image-394902" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-hh-202003-13.gif" width="640" height="640" /></span></p>
+<p><span class="img-zoom"><img alt="用起点读书的实战案例，教你从AE制作到落地开发的方案" class="alignnone size-full wp-image-394906" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-hh-202003-17.gif" width="640" height="641" /></span></p>
+<p>△ 起点读书角色送礼 PAG vs. SVGA（by 亚宁）</p>
+<p>以上图为例，SVGA 仅保留了基础的缩放动画，却丢失了光效和粒子效果。</p>
+<p>另外，SVGA 支持动态插入图片，例如下面左图中的用户头像就是动态插入的，在一些直播类、游戏类产品中比较常见。</p>
+<p><span class="img-zoom"><img alt="用起点读书的实战案例，教你从AE制作到落地开发的方案" class="alignnone size-full wp-image-394908" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-hh-202003-19.jpg" width="1080" height="507" /></span></p>
+<p>△ SVGA 和 PAG 对于动态编辑方面的支持演示</p>
+<p>后来，PAG 的开发者受此启发，借鉴并优化了这种动态编辑的功能，在保留动画效果前提下，不仅可以替换图片内容，还可以动态修改文本内容以及字体大小，比 SVGA 更为丰富。</p>
+<p><strong>小结</strong></p>
+<p>通过以上比较分析，如果只接入一套动画库，那么可以考虑 PAG ，PAG 在原生上的表现甚至可以取代 Lottie 和 WebP，但是，在 libpag for Web 开发完成之前，需要借助其他方案协同；非腾讯系产品可以期待明年 PAG 开源，当前可用 WebP、Lottie 和 SVGA 代替。</p>
+<h4><span class="auto_menu">结语</span></h4>
+<p>以上是起点读书一年来在动画落地方案的一点经验，希望对大家有所帮助。从以视觉表现为中心，到以传达内容为中心，我们也在探索、尝试和改变，动画设计只是解决问题的一小步，未来起点读书还会持续为提升用户体验而努力，希望给用户带来更多的惊喜，更好的阅读体验。</p>
+<p>附录</p>
+<ul>
+<li>维基百科，APNG <a href="https://en.wikipedia.org/wiki/APNG">https://en.wikipedia.org/wiki/APNG</a></li>
+<li>凹凸实验室，《探究WebP一些事儿》<a href="https://aotu.io/notes/2016/06/23/explore-something-of-webp/index.html">https://aotu.io/notes/2016/06/23/explore-something-of-webp/index.html</a></li>
+<li>bigxixi ，《BX-WebpApngExporter》 <a href="https://github.com/bigxixi/webp_apng_exporter_for_AE">https://github.com/bigxixi/webp_apng_exporter_for_AE</a></li>
+<li>Lottie 官方 Medium 博客， Introducing Lottie <a href="https://medium.com/airbnb-engineering/introducing-lottie-4ff4a0afac0e">https://medium.com/airbnb-engineering/introducing-lottie-4ff4a0afac0e</a></li>
+<li>Fragmented Podcast，Lottie Android 开发者 Gabriel Peal <a href="https://fragmentedpodcast.com/episodes/82/">https://fragmentedpodcast.com/episodes/82/</a></li>
+<li>西西 ，《Lottie 这次更新你应该了解一下》<a href="https://zhuanlan.zhihu.com/p/37385550">https://zhuanlan.zhihu.com/p/37385550</a></li>
+<li>DreamPiggy，《客户端上动态图格式对比和解决方案》<a href="https://zhuanlan.zhihu.com/p/25598828">https://zhuanlan.zhihu.com/p/25598828</a></li>
+<li>Japho ，《优雅的动画实现方案SVGA、Lottie》 <a href="https://www.jianshu.com/p/60d28d7bab48">https://www.jianshu.com/p/60d28d7bab48</a></li>
+<li>Jfson，《Android 动画库对比（ Lottie 和 SVGA ）》<a href="https://jfson.github.io/2018/01/08/41-anim/">https://jfson.github.io/2018/01/08/41-anim/</a></li>
+<li>SVGA，<a href="http://svga.io/">http://svga.io/</a></li>
+</ul>
+<p>欢迎关注作者的微信公众号：「阅文体验设计YUX」</p>
+<p><span class="img-zoom"><img alt="用起点读书的实战案例，教你从AE制作到落地开发的方案" class="alignnone size-full wp-image-320220" src="https://image.uisdc.com/wp-content/uploads/2019/05/uisdc-jh-20190531-14.jpg" alt="阅读类产品如何做好深色模式？来看起点读书的实战经验！" /></span></p>
 ➜UI 进阶必学系列：需求分析工具 KANO 模型
 https://www.uisdc.com/kano-model	60471
 <p>大家知道，长期以来我们一直在坚持分享一些基础的干货内容，那些看书、看分享很难系统搞得明白的知识点，这和我个人对基本功的执念有密不可分的关系。</p>
