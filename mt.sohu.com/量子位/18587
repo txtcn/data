@@ -1,0 +1,514 @@
+➜北理工校友发明文言文“填词大师”，断句、造词都能做，高考文言文满分靠它了
+http://www.sohu.com/a/433348190_610300	18260
+<p>萧箫 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">都说GPT-3能接人话，补充上下文关系，中文版的“填词大师”你见过没？</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201121/8c55ceca2dcd4f12b6d215fb41ee15c6.jpeg" /></p>
+<p style="text-align: left;">不仅是中文版，这个“填词大师”甚至还是从古代穿越过来的 <strong>文言文版</strong>。 </p>
+<p style="text-align: left;">这是两个来自 <strong>北理工</strong>的小哥做出的模型 <strong>GuwenBERT</strong>，经过训练后的模型，不仅能自动帮助文言文断句，还能帮你思考被遮住的词语到底是什么。 <span>（真没有用原诗骗你）</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201121/2ca0a81c5ac747c09abad86045596230.png" /></p>
+<p style="text-align: left;">要是这个模型去参加高考，文言文断句、诗词背诵部分，岂不是都能拿满分？</p>
+<p style="text-align: left;">来看看它是怎么被做出来的~</p>
+<p>文言文版BERT，填词断句样样通 </p>
+<p style="text-align: left;">GuwenBERT，是在中文BERT-wwm模型的基础上，利用古文数据集训练出来的。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201121/e2666a9088b945d4aba4f0599d97be2f.png" /></p>
+<p style="text-align: left;">中文BERT-wwm <span>（基于全词遮罩技术的中文预训练模型）</span>是哈工大和讯飞联合发表的模型，在中文BERT的基础上，修改了 <strong>预训练阶段</strong>的训练样本生成策略。 </p>
+<blockquote>
+<p style="text-align: left;">全词遮罩 <span>（Whole Word Masking）</span>，指原来的遮罩 <span>（mask）</span>只随机遮一个字，现在则会对一个词的所有字进行遮罩。 </p>
+</blockquote>
+<p style="text-align: left;">全词遮罩 <span>（Whole Word Masking）</span>，指原来的遮罩 <span>（mask）</span>只随机遮一个字，现在则会对一个词的所有字进行遮罩。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201121/6837e74d83ca4b608661c1d6510f2f17.png" /></p>
+<p style="text-align: left;">但中文BERT-wwm，是针对现代汉语训练的模型。 </p>
+<p style="text-align: left;">经受过文言文“毒打”的小伙伴都知道，古文不仅 <strong>词法</strong>与现代汉语中多存在不同，而且 <strong>没有断句</strong>，理解起来费神费力。 </p>
+<p style="text-align: left;">想要在大量古籍中按图索骥，快速查找到想要的资料，更是难上加难。</p>
+<p style="text-align: left;">为此，GuwenBERT横空出世，根据已有的现代汉语模型，用古文数据集训练出了文言文预训练模型。预训练的过程是这样的：</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201121/cef97dff523646c3bd4105abd3f2200f.png" /></p>
+<p style="text-align: left;">目前，这个模型已经给出了样本， <strong>在线</strong>就能一试文言文版BERT的功力。 </p>
+<p style="text-align: left;">调戏Demo的方法是，随便给一句古文，用[MASK]遮住其中一个字、或是一个标点，让GuwenBERT来猜猜看，你遮住的到底是什么。</p>
+<p style="text-align: left;">例如，遮住一个逗号，看文言文会不会断句。BERT在思考了不到一秒后，就给出了自己的答案：</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201121/e605cdc95a94486bbc29226c93407c97.png" /></p>
+<p style="text-align: left;">至于填词方面，文言文BERT的表现也很优秀，在思考了一会后，填上了正确的词语。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201121/d73a317e581f44369231972c7fecc9ba.png" /></p>
+<p style="text-align: left;">是不是感觉有点简单？我们用课文来试一下：</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201121/15c9a7a1a47d4877ba502dbb6698b3a2.png" /></p>
+<p style="text-align: left;">效果竟然也不错，要是这样的理解能力去参加高考，岂不是就能拿个默写部分的满分了？</p>
+<p style="text-align: left;">其实不然，这个文言文BERT，并不是根据记忆来判断如何填词，只是根据训练后的模型，来预测“概率最大的字”。</p>
+<p style="text-align: left;">于是在测试过程中，出现了一些神奇的事情：这个文言文BERT，不仅能接梗造词，甚至还给李白诗中的字“推荐”了更好的替代者。</p>
+<p>接梗造词样样会，李白的诗也能改 </p>
+<p style="text-align: left;">举个例子，即使输入的不是原来的诗句，文言文BERT也同样能预测出被遮住的字，不仅能随便接梗，还面不改色心不跳。</p>
+<p style="text-align: left;">例如，“垂死病中惊坐起，笑问客从何处来”也能接…… <span>（原诗是？）</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201121/89579eaf25504102a33ea8d145272c64.png" /></p>
+<p style="text-align: left;">一旦涉及动词的选取，GuwenBERT的预测就更加难以捉摸，因为可选的范围太大了。 <span>（中文博大精深）</span></p>
+<p style="text-align: left;">例如，将“不及汪伦送我情”的“送”字遮住的话，GuwenBERT就开始感到迷茫，即使是预测率最高的“知”，也只有15.7%的概率。</p>
+<p style="text-align: left;">“不及汪伦知我情”，想必BERT版李白，内心一定认为汪伦是自己高山流水一般难得遇见的知音。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201121/cd10d8640cd34ffa8e0fbd91938ae106.png" /></p>
+<p style="text-align: left;">在断句的情况下，如果并非对仗工整的语句，GuwenBERT也要好好思考一会。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201121/558b67461ecc4f35a7736f91ac860838.png" /></p>
+<p style="text-align: left;">虽然文言文BERT有自己的想法，不过它还是“循规蹈矩”的，目前在测试时，语法上还没有出现太大的问题。</p>
+<p style="text-align: left;">甚至，还能为古人们的写作提供别样的灵感。</p>
+<p style="text-align: left;">但文言文BERT目前还只能遮罩一个字，要是多了几个，它就不跟你玩了。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201121/7ef024f991be48a0b7b2515bfb94bcb8.png" /></p>
+<p style="text-align: left;">不知道作者以后会不会在这方面进一步加上新功能。</p>
+<p>作者介绍 </p>
+<p style="text-align: left;">这个文言文BERT的作者，是两位来自北理工的同学。</p>
+<p style="text-align: left;">阎覃，来自北京理工大学，目前是计算机科学与技术专业的一名硕士生。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201121/55dd84cb76e3451d810e55d84898f8a2.png" /></p>
+<p style="text-align: left;">这位小哥在GitHub的名字是Ethan，他还特意选择了某些日期来contribution，把自己的名字拼了上去。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201121/e9a030bd19984f86b45c7ebe0a56cda1.png" /></p>
+<p style="text-align: left;">迟泽闻，同样来自北京理工大学，目前的研究工作主要是通过预训练来进行跨语言的自然语言生成。</p>
+<p style="text-align: left;"><span style="font-size: 16px;">目前，模型的相关代码已经开源</span><span style="font-size: 16px;">，想要了解的小伙伴，可以在下方试玩模型、或是查看代码。</span></p>
+<p style="text-align: left;">这样的文言文BERT，你觉得还能用在哪些地方呢？</p>
+<p style="text-align: left;">欢迎留言讨论~</p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span>demo在线可玩：</span></span></p>
+<p><span>https://huggingface.co/ethanyt/guwenbert-base</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span>模型地址：</span></span></p>
+<p><span>https://github.com/Ethan-yt/guwenbert</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>「MEET 2021智能未来大会」启幕，</strong></p>
+<p><strong>早鸟票限时抢购中，扫码预定席位！</strong></p>
+<p><strong>李开复</strong>博士、 <strong>尹浩</strong>院士、清华 <strong>唐杰</strong>教授，以及来自 <strong>小米</strong>、 <strong>美团</strong>、 <strong>爱奇艺</strong>、 <strong>小冰</strong>、 <strong>亚信</strong>、 <strong>浪潮</strong>、容联、 <strong>澎思</strong>、 <strong>地平线</strong>、 <strong>G7</strong>等知名AI大厂的大咖嘉宾齐聚，期待关注AI的朋友报名参会、共探新形势下智能产业发展之路。 </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜人民大学的AI学院，教师团队很凡尔赛
+http://www.sohu.com/a/433348397_610300	18260
+<p>金磊 蕾师师 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">最高 <strong>年薪180万</strong>，还有 <strong>400万房补</strong>。 </p>
+<p style="text-align: left;">去年，人民大学高瓴人工智能学院招聘启事一经发布，业内外热议。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201121/d72395d41ca74868876b96bec0358f52.png" /></p>
+<p style="text-align: left;">现在 <strong>时隔一年</strong>之久，在具备如此吸引力的招聘条件之下，人民大学的这个 <strong>「AI教师团队」</strong>，打造的又如何了呢？ </p>
+<p>15位AI教师，确实星光璀璨 </p>
+<p style="text-align: left;">随着人民大学高瓴人工智能学院的 <strong>开学典礼</strong>举行，这支队伍目前的全貌「浮出了水面」。 </p>
+<p style="text-align: left;"><strong>「首批15位青年教师」</strong>，这是高瓴投资创始人兼CEO <strong>张磊</strong>在典礼上所披露的数据。 </p>
+<p style="text-align: left;">而按照去年招聘启事所述，引进的人才团队「将参照世界一流大学教师岗位设置」。</p>
+<p style="text-align: left;">目前，在高瓴人工智能学院的官方网站「师资队伍」中，也有相应的露出。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201121/31c6687ed98546e09936c7d6788517f7.gif" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">在官网上公布的教师团队一共15人，具体如下：</p>
+<ul>
+<li>学术委员会主任 ：潘云鹤</li>
+<li>长聘教授1人 ：文继荣</li>
+<li>拟聘长聘副教授5人 ：窦志成、卢志武、徐君、魏哲巍、赵鑫</li>
+<li>长聘副教授1人 ：宋睿华</li>
+<li>准聘副教授1人 ：苏冰</li>
+<li>准聘助理教5人 ：王子贺、沈蔚然、胡迪、刘勇、毛佳昕</li>
+<li>博士后1人 ：张骁</li>
+</ul>
+<p style="text-align: left;">细看团队人物的履历，各个称得上是「业界精英」。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201121/38bb05a336a44788a978d6bb0bed1961.png" /></p>
+<p><strong>△</strong>潘云鹤 </p>
+<p style="text-align: left;"><strong>潘云鹤</strong>院士可谓是家喻户晓了。长期从事人工智能、CAD等，是中国智能CAD开拓者之一。 </p>
+<p style="text-align: left;">同时，他也是国家新一代人工智能战略咨询委员会组长、中国人工智能产业发展联盟理事长。</p>
+<p style="text-align: left;">潘云鹤院士在高瓴人工智能学院中，担任学术委员会主任。</p>
+<p style="text-align: left;"><strong>院长</strong>一职，由 <strong>文继荣</strong>教授来担任。 </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201121/d97455441a39435eb8100cc857f54100.png" /></p>
+<p><strong>△</strong>文继荣 </p>
+<p style="text-align: left;">文继荣教授长期从事大数据分析和挖掘、信息检索、机器学习等领域的研究，至今已在国际着名学术会议和期刊上发表论文 200余篇，被同行引用总计 14000 多次。</p>
+<p style="text-align: left;">文继荣教授也是人民大学自己培养的大牛，1990年本科考入人大信息学院，2013年开始从微软亚洲研究院返回人大担任信息学院教授。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201121/e8bc935e57db45b5a7c14b4a1990f100.png" /></p>
+<p><strong>△</strong>宋睿华 </p>
+<p style="text-align: left;">团队中还有另一位MSRA老面孔——宋睿华博士，官网在列团队中唯一的一位女性成员。</p>
+<p style="text-align: left;">与此同时，她也是团队在列的唯一一位 <span>（非拟聘）</span>长聘副教授。 </p>
+<p style="text-align: left;">宋睿华本、硕就读于清华大学，博士就读于上海交通大学。2003年加入微软亚洲研究院，从事信息检索与挖掘，推荐和文本生成的研究。</p>
+<p style="text-align: left;">2017年出版的号称人类史上第一本人工智能诗集——《阳光失了玻璃窗》，里面所有的诗歌正是由她主导研发的算法生成。</p>
+<p style="text-align: left;">从 <strong>研究方向</strong>来看，高瓴人工智能学院目前师资团队所涵盖的领域包括： </p>
+<blockquote>
+<p style="text-align: left;">互联网大数据管理，数据挖掘，机器学习，信息检索，自然语言处理，计算机视觉，图神经网络等。</p>
+</blockquote>
+<p style="text-align: left;">互联网大数据管理，数据挖掘，机器学习，信息检索，自然语言处理，计算机视觉，图神经网络等。</p>
+<p style="text-align: left;">除了教授、副教授等职务外，官网所展示的团队信息中，还有一位 <strong>博士后</strong>成员。 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201121/00e9b0be13224ded9c677f68632b316e.png" /></p>
+<p><strong>△</strong>张骁 </p>
+<p style="text-align: left;">他主要从事的研究工作包括，在线机器学习、模型选择、推荐系统等。并且已经在本领域相关的国内外学术期刊和会议上，发表论文 <strong>11篇</strong>。 </p>
+<p style="text-align: left;">而「博士后」这个岗位，是高瓴人工智能学院去年第一次发布招聘信息之后，再次面向社会公开招聘的职务。</p>
+<p style="text-align: left;">薪资依旧是非常亮眼的点—— <strong>30-60万元/年</strong>。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201121/42f5bce4f77f450d8c6f20dc664a81cd.png" /></p>
+<p style="text-align: left;">除了「AI教师团队」外，在这次的开学典礼上，还迎接了2020届40位硕士、博士，这也是高瓴人工智能学院首批学生。</p>
+<p style="text-align: left;">他们分别来自人民大学、武汉大学、复旦大学等各个不同的国内知名高校。</p>
+<p style="text-align: left;">当被问到这些学子为什么要选择一个新建的学院时，他们回答各不相同。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201121/17107120a767459fb9d98dd6178a7d80.png" /></p>
+<p style="text-align: left;">曾同学：「觉得这个学院前景不错。」</p>
+<p style="text-align: left;">周同学：「勇闯科研无人区的目标吸引了我。」</p>
+<p style="text-align: left;">彭同学：「学校投资力度比较大大，引进的导师师资力量比较强。」</p>
+<p style="text-align: left;">说到 <strong>投资力度大</strong>，根据招聘信息和官网信息，现在就可以粗略地算一下，单是团队薪资，高瓴人工智能学院的投入情况。 </p>
+<p style="text-align: left;">若是按照最高年薪来算，薪资投入已超 <strong>1360万元</strong>。 </p>
+<p style="text-align: left;">而这个数字还并没有算入「住房补贴」等福利。</p>
+<p style="text-align: left;">当然，说到 <strong>福利</strong>，根据去年所公布的招聘信息，还能够享受如下待遇。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201121/c039087326c14dbfba4a37f23eaf445d.png" /></p>
+<p style="text-align: left;">嗯……这个投入力度，确实有够硬，够有诚意。</p>
+<p>为什么要重金打造师资队伍？ </p>
+<p style="text-align: left;"><strong>中国人民大学高瓴人工智能学院</strong>正式成立，是在2019年的4月22日。 </p>
+<p style="text-align: left;">学院的定位和目标也非常的明确：</p>
+<blockquote>
+<p style="text-align: left;">属于中国人民大学 <strong>二级学院</strong>，承担人工智能学科的规划与建设，开展本学科和相关交叉学科领域的本、硕、博人才培养和科学研究工作。 </p>
+</blockquote>
+<p style="text-align: left;">属于中国人民大学 <strong>二级学院</strong>，承担人工智能学科的规划与建设，开展本学科和相关交叉学科领域的本、硕、博人才培养和科学研究工作。 </p>
+<p style="text-align: left;">文继荣当时把此举形容为 <strong>「勇闯无人区」</strong>。 </p>
+<p style="text-align: left;">因为在人民大学这样的世界名府，要想打造一个世界一流的AI学院，本身就是一个非常巨大的挑战。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201121/338eef353aec4924bc2c13a82e6c87b0.png" /></p>
+<p style="text-align: left;">为此，他从三个方面进行了介绍：</p>
+<ul>
+<li>体制机制 方面，要做到开拓创新，积极探索科研和人才评价制度、保障人才工作生活环境。</li>
+<li>人才培养 方面，将进行高标准课程建设、加强企业联合培养。</li>
+<li>科学建设 和 科学研究 方面，以建设世界一流人工智能学科为目标，致力于推动人工智能基础性理论和技术研究，并与国际高校建立学术合作。</li>
+</ul>
+<p style="text-align: left;">此处还有一个「小插曲」。</p>
+<p style="text-align: left;">高瓴创始人兼CEO、人大校友 <strong>张磊</strong>，在三年前向母校捐赠了3亿元，他认为： </p>
+<blockquote>
+<p style="text-align: left;">教育不仅是永远不需要退出的投资，也是最具幸福感的投资。</p>
+<p style="text-align: left;">随着高瓴人工智能学院的成立，捐赠得到了最好的安排。</p>
+</blockquote>
+<p style="text-align: left;">教育不仅是永远不需要退出的投资，也是最具幸福感的投资。</p>
+<p style="text-align: left;">随着高瓴人工智能学院的成立，捐赠得到了最好的安排。</p>
+<p style="text-align: left;">从这些介绍中，不难看出人大AI学院开出如此高薪背后的原因：</p>
+<blockquote>
+<p style="text-align: left;">为教师打造国际一流的工作生活环境，提供与国际知名大学和研究机构接轨的学术平台、薪酬水平、住房条件、子女教育、医疗保险、办公环境等综合待遇。</p>
+</blockquote>
+<p style="text-align: left;">为教师打造国际一流的工作生活环境，提供与国际知名大学和研究机构接轨的学术平台、薪酬水平、住房条件、子女教育、医疗保险、办公环境等综合待遇。</p>
+<p style="text-align: left;">毕竟，这是一个 <strong>非常现实的问题</strong>。 </p>
+<p style="text-align: left;">因为成为一个985大学教授的过程，用 <strong>「苦行」</strong>来形容也不足为过。 </p>
+<p style="text-align: left;">先是要考上一所985大学，然后攻读本科、硕士和博士，期间还要在顶级期刊发表论文。</p>
+<p style="text-align: left;">博士毕业不算完，还要做几年博士后，光是论文压力可能就要比之前更大，再加上要学会如何运营课题等等</p>
+<p style="text-align: left;">正如网友对此的看法：</p>
+<blockquote>
+<p style="text-align: left;">给教授这样的待遇，才配得上其毕生所学。</p>
+</blockquote>
+<p style="text-align: left;">给教授这样的待遇，才配得上其毕生所学。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201121/293359ca6ab64a27b7f93bd38f8df466.png" /></p>
+<p>网友：本来就要这样 </p>
+<p style="text-align: left;">当然，对于「高校教授薪资」一直是个热议话题。</p>
+<p style="text-align: left;">既然文继荣要为高瓴人工智能学院的教师，打造国际一流水平工作、生活环境，那么国外较为主流的AI/计算机教授待遇又是怎样的呢？</p>
+<p style="text-align: left;">根据美国知名职业媒体zippia网站的统计，美国大学计算机教授的平均工资大概是 <strong>79000美元</strong>，相当于 <strong>人民币52.3万元</strong>。 </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201121/5134ac7d28ea4b00836085882fdda77a.png" /></p>
+<p style="text-align: left;">而这次高瓴人工智能学院招聘启事，工资的最低标准是准聘助理教授的70万，还没有算上各项福利。</p>
+<p style="text-align: left;">薪资待遇可以说是远高于该网站所统计的「平均标准」。</p>
+<p style="text-align: left;">对于这样的薪资待遇，有网友对人工智能专业表示羡慕：</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201121/18df35b6bd0f4e2ba0dd9c0a5c42fb1f.png" /></p>
+<p style="text-align: left;">也有人认为这是「理所应当」、「会读书有好处」：</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201121/dd0fc88a051b429b960db35bd1e0b43c.png" /></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201121/355de544916847c89aa4e5d547cab826.png" /></p>
+<p style="text-align: left;">但也有网友对认为是人工智能行业太热。</p>
+<p style="text-align: left;">如果更多基础学科也有这样的力度，那才是科研最灿烂的春天。</p>
+<p style="text-align: left;">你怎么看？</p>
+<p style="text-align: left;"><span style="font-size: 16px;">参考链接： </span></p>
+<p><span>— </span><strong>完</strong><span>—</span></p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>量子位年度智能商业大会启幕，大咖已就位！</strong></p>
+<p><strong><span style="font-size: 16px;">李开复</span></strong><span style="font-size: 16px;">博士、 <strong>尹浩</strong>院士、清华 <strong>唐杰</strong>教授，以及来自 <strong>小米</strong>、 <strong>美团</strong>、 <strong>爱奇艺</strong>、 <strong>小冰</strong>、 <strong>亚信</strong>、 <strong>浪潮</strong>、 <strong>容联</strong>、 <strong>澎思</strong>、 <strong>地平线</strong>、 <strong>G7</strong>等知名AI大厂的大咖嘉宾齐聚，期待关注AI的朋友报名参会、共探新形势下智能产业发展之路。 </span></p>
+<p><strong><span>▽</span></strong>早鸟票限时优惠，扫码锁定席位吧~ </p>
+<p><strong>01</strong></p>
+<p><strong>02</strong></p>
+<p><strong>03</strong></p>
+<p><strong>04</strong></p>
+<p>滑动查看更多</p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜图神经网络世界冠军团队手把手授课，7天搞定图神经网络！
+http://www.sohu.com/a/433348472_610300	18260
+<p>允中 发自 凹非寺 </p>
+<p>量子位 编辑 | 公众号 QbitAI </p>
+<p style="text-align: left;">要问这几年一直在逆势而上的技术有哪些？你一定不会忽略它—— <strong>图神经网络</strong>。 </p>
+<p style="text-align: left;">相比传统神经网络，图神经网络的优势非常明显：</p>
+<p style="text-align: left;">1、 <strong>非顺序排序的特征学习</strong>：GNN的输出不以节点的输入顺序为转移的。 </p>
+<p style="text-align: left;">2、 <strong>两个节点之间依赖关系的学习</strong>：传统的神经网络中，这种依赖关系只能通过节点的特征来体现。 </p>
+<p style="text-align: left;">3、 <strong>推理能力</strong>：GNN能够从非结构化数据（例如:场景图片、故事片段等）中生成推理图。 </p>
+<p style="text-align: left;">因此，图神经网络在生物学、地图、金融、搜索、推荐、高能物理学到社会科学和经济学等领域的复杂关系建模和互动系统构建起到重要作用。例如，在社交软件Twitter 和 Facebook 等社交网络上取得了显着的成功。</p>
+<p style="text-align: left;"><img src="http://p3.itc.cn/q_70/images03/20201121/72754c80281b4d3c98311adcf41d4b36.jpeg" /></p>
+<p style="text-align: left;">在实际场景中，有大量的数据是在非欧式空间，限制了深度神经网络的应用。得益于图神经网络在非结构化数据上出色的处理能力，它在学界与工业界上大放光彩。然而，图神经网络模型目前仍处于前期高速发展期，面临着多项方法论和实践挑战。</p>
+<p style="text-align: left;">百度作为AI领域的领头羊企业，在图神经网络领域的研究、产业实践、工业落地方面，积累了丰富的经验！作为百度图神经网络研究的中坚力量，百度PGL团队战绩累累，刷新图神经网络权威榜单OGB三项榜单SOTA以及获得今年COLING协办比赛TextGraph冠军！</p>
+<p style="text-align: left;"><img src="http://p2.itc.cn/q_70/images03/20201121/2b21d0831d7642be9127b2fe653bc779.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">图神经网络技术已被应用在百度内数十个实际项目中，大幅度提升公司效益。为了帮助广大同学入门图学习，百度飞桨PGL团队开发了 <strong>「图神经网络7日打卡营」</strong>。 </p>
+<p style="text-align: left;">面对肆虐全球的新冠疫情，团队还在课程中设置了「实战演练新冠疫苗项目」：由于mRNA结构极不稳定，通常需零下70度保存，带来了冷链存储和运输等众多难题。因此，我们将通过图神经网络算法筛选出结构更加稳定的mRNA，为疫苗的长途运输问题的解决贡献一份力量。一起对抗疫情，让同学们在实战中解决问题！</p>
+<p style="text-align: left;"><img width="677px" src="http://p5.itc.cn/q_70/images03/20201121/9c195a7d27d6461b92a187deba27af15.png" /></p>
+<p style="text-align: left;">11月23日起， <strong>图神经网络世界冠军团队</strong>亲自授课，结合多年经验，7日全直播手把手教学，5大实战，带你实践图神经网络，助力新冠疫情防控，攻克难题！ </p>
+<p style="text-align: left;">你将收获：</p>
+<p style="text-align: left;"><img width="100%" src="http://p1.itc.cn/q_70/images03/20201121/fcdf9e6e2d124c1f87d8e28041584025.png" /></p>
+<p style="text-align: left;">还有超级多的学习福利，等你来挑战！</p>
+<p>讲师介绍 </p>
+<p>小斯妹老师</p>
+<p><img width="100%" src="http://p0.itc.cn/q_70/images03/20201121/253904cc6b4241709a43e896ce530a82.jpeg" /></p>
+<p style="text-align: center;"><strong><span>百度飞桨图学习框架PGL核心人员</span></strong></p>
+<p>百度飞桨图神经网络框架PGL核心人员，所在团队曾获得图学习权威榜单OGB三项榜首以及COLING协办比赛TextGraph冠军，推动图学习技术在百度内部落地数十个项目，大幅度提升公司效益。</p>
+<p>01 图学习初印象 </p>
+<p style="text-align: left;">图神经网络概述、入门路线</p>
+<p style="text-align: left;"><strong>实践</strong>：环境搭建 </p>
+<p style="text-align: left;"><strong>实战作业</strong>： </p>
+<p style="text-align: left;">安装PGL环境，跑通 example 代码</p>
+<p>02 图游走类模型 </p>
+<p style="text-align: left;">DeepWalk、node2vec、metapath2vec、metapath2vec 变种</p>
+<p style="text-align: left;"><strong>实践</strong>：DeepWalk代码解析 </p>
+<p style="text-align: left;"><strong>实战作业</strong>： </p>
+<p style="text-align: left;">以填空的方式完成 node2vec 模型复现</p>
+<p>03 图神经网络算法（一） </p>
+<p style="text-align: left;">GCN、GAT、消息传递机制</p>
+<p style="text-align: left;"><strong>实践</strong>：GCN代码解析、比赛代码讲解 </p>
+<p style="text-align: left;"><strong>实战作业</strong>： </p>
+<p style="text-align: left;">以填空的方式完成 GAT 模型复现</p>
+<p>04 图神经网络算法（二） </p>
+<p style="text-align: left;">图采样技术、图聚合技术</p>
+<p style="text-align: left;"><strong>实践</strong>：讲解 GraphSage 代码 </p>
+<p style="text-align: left;"><strong>实战作业</strong>： </p>
+<p style="text-align: left;">以填空的方式完成GraphSage模型复现</p>
+<p>05 图神经网络进阶模型讲解 </p>
+<p style="text-align: left;">ERNIESage、UniMP</p>
+<p style="text-align: left;"><strong>实践</strong>：ERNIESage代码讲解 </p>
+<p style="text-align: left;"><strong>结业比赛</strong>： </p>
+<p style="text-align: left;">论文引用网络的节点预测</p>
+<p>06 实战演练新冠疫苗项目，助力疫情防控！ 07 结营仪式 </p>
+<p style="text-align: left;">比赛实战经验分享</p>
+<p style="text-align: left;">课程总结与Q&amp;A</p>
+<p style="text-align: left;">颁奖仪式</p>
+<p>学习激励 </p>
+<p style="text-align: left;">担心无法坚持学习？别担心，成长的路上需要鼓励。超多奖励等你来抢！</p>
+<p style="text-align: left;">百度内推资格、官方渠道项目推广、机械键盘、小度在家、 小度音箱、百度网盘会员、纸质证书、算力卡、图书《深度学习》……超多奖品鼓励你学习！</p>
+<p style="text-align: left;"><img src="http://p2.itc.cn/q_70/images03/20201121/df1387a4ced1428fad22f3421e09f8eb.gif" /></p>
+<p style="text-align: left;">学成之后，还有百度官方认证结业证书，让你的学习看得见！</p>
+<p style="text-align: left;"><img src="http://p2.itc.cn/q_70/images03/20201121/196bd93455b945579a173c1c8328f677.jpeg" /></p>
+<p style="text-align: right;">△ 百度飞桨官方认证结业证书</p>
+<p>上课时间 </p>
+<p style="text-align: left;">11月23日—11月30日 每晚20:30—21:30</p>
+<p>我要报名 </p>
+<p style="text-align: left;">图神经网络世界冠军团队授课，7日全直播教学，5次实战打卡，实践图神经网络！</p>
+<p style="text-align: justify;">回复 <span>【量子GNN】</span></p>
+<p style="text-align: justify;">获取专属报名通道</p>
+<p style="text-align: left;">扫码上方二维码，回复【量子GNN】，即可报名，学习路上，就差你了！</p>
+➜苹果M1电脑上还能运行Windows吗？苹果：留了路，看微软
+http://www.sohu.com/a/433348474_610300	18260
+<p>金磊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">不久之前，在苹果的一幢大楼里，一群工程师聚集到了一起。</p>
+<p style="text-align: left;">他们掏出了旧版MacBook Air，将笔记本的内核连接到自己的原型板上。</p>
+<p style="text-align: left;">此次「会晤」的目的非常明确：</p>
+<blockquote>
+<p style="text-align: left;">造出第一台自己定制设计、基于ARM芯片，且能运行MacOS的苹果电脑。</p>
+</blockquote>
+<p style="text-align: left;">造出第一台自己定制设计、基于ARM芯片，且能运行MacOS的苹果电脑。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201121/b51801e8421a4d5aa12bbcb17dfaac54.png" /></p>
+<p style="text-align: left;">而就在本周，苹果终于迈出了这一大步—— <strong>第一批在苹果M1芯片上运行的Mac诞生</strong>。 </p>
+<p style="text-align: left;">这也标志着苹果开始脱离英特尔CPU的「产品转型」。</p>
+<p style="text-align: left;">但一系列问题也随之而来：</p>
+<blockquote>
+<p style="text-align: left;">为什么要这么做？又是何时开始准备的？软件兼容怎么办？Windows方面又如何处理？</p>
+</blockquote>
+<p style="text-align: left;">为什么要这么做？又是何时开始准备的？软件兼容怎么办？Windows方面又如何处理？</p>
+<p style="text-align: left;">外媒ArsTechnica，最近与苹果软件工程高级副总裁 <strong>Craig Federighi</strong>、全球营销高级副总裁 <strong>Greg Joswiak</strong>、硬件技术高级副总裁 <strong>Johny Srouji</strong>的进行了一次访谈。 </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201121/66b0c67f398142e1b67ba76e3072c0d4.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>△</strong>从左至右：Greg Joswiak、Craig Federighi、Johny Srouji </p>
+<p style="text-align: left;">而关于苹果M1芯片背后的故事和与之更多的细节，也就此浮出了水面。</p>
+<p>为什么要造芯片？又为什么是现在？ </p>
+<p style="text-align: left;">2006年时候，苹果选择开始使用英特尔x86架构，因为在此之前所采用的PowerPC似乎已经走到了尽头。</p>
+<p style="text-align: left;">在此后最初的几年时间里，这一选择对于苹果来说是一种福音：英特尔的芯片实现了Mac与Windows及其他平台的互操作，这也让Mac变得更加灵活。</p>
+<p style="text-align: left;">除了苹果台式机外，像笔记本电脑以及手机等产品，也随之受益。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201121/c72a256dd3ba49a781b26e80701182e4.png" /></p>
+<p style="text-align: left;">在很长一段时间里，英特尔的表现可以说是一流的。</p>
+<p style="text-align: left;">但最近几年，英特尔CPU的发展却不是那么乐观，尤其是在性能提高和一致性方面。</p>
+<p style="text-align: left;">不仅是厂商，用户也对此有所发觉，还戏称道「挤牙膏」。</p>
+<p style="text-align: left;">或许你会认为，这是苹果做出如此选择背后的驱动力。</p>
+<p style="text-align: left;"><strong>「但这并不是最根本的原因」</strong>，苹果三位高管的回答却是这样的。 </p>
+<p style="text-align: left;">Joswiak对此解释道：</p>
+<blockquote>
+<p style="text-align: left;">这是关于我们能做什么，不是关于「别人能做或不能做什么」的问题，对吗？</p>
+<p style="text-align: left;">每家公司都有自己的计划：软件公司希望硬件公司这样做，反过来硬件公司又希望软件公司那样做，他们之间是存在竞争的。</p>
+<p style="text-align: left;">而苹果的位置比较特殊，我们设计芯片，不是作为商家、供应商或者解决方案，而是为了让软件、系统和产品紧密结合。</p>
+<p style="text-align: left;">这就是我们所需要的。</p>
+</blockquote>
+<p style="text-align: left;">这是关于我们能做什么，不是关于「别人能做或不能做什么」的问题，对吗？</p>
+<p style="text-align: left;">每家公司都有自己的计划：软件公司希望硬件公司这样做，反过来硬件公司又希望软件公司那样做，他们之间是存在竞争的。</p>
+<p style="text-align: left;">而苹果的位置比较特殊，我们设计芯片，不是作为商家、供应商或者解决方案，而是为了让软件、系统和产品紧密结合。</p>
+<p style="text-align: left;">这就是我们所需要的。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201121/0d40051f6a8146768b0c3fa62433aa1c.png" /></p>
+<p style="text-align: left;">对于这个问题，Federighi给出了一个非常「苹果式」的回答：</p>
+<blockquote>
+<p style="text-align: left;">Mac是苹果的灵魂，是它把我们带入了计算机领域。</p>
+<p style="text-align: left;">Mac仍然是我们在工作中使用的一种工具，将我们所学到的一切，应用到核心系统中，显然是一个长期的抱负，也是一种实现梦想的方式。</p>
+</blockquote>
+<p style="text-align: left;">Mac是苹果的灵魂，是它把我们带入了计算机领域。</p>
+<p style="text-align: left;">Mac仍然是我们在工作中使用的一种工具，将我们所学到的一切，应用到核心系统中，显然是一个长期的抱负，也是一种实现梦想的方式。</p>
+<p style="text-align: left;">Joswiak还回忆道，「刚开始知道这个决定的人很少，但他们知道苹果要走这条路开始，便一直对此面带微笑」。</p>
+<p>设计苹果M1芯片 </p>
+<p style="text-align: left;">苹果要造的芯片，不仅是一种能够吸取多年来，为iPhone、iPad等其他产品设计的移动芯片所累积的经验的芯片，还能满足笔记本电脑或台式电脑不断扩大的需求。</p>
+<p style="text-align: left;">而当苹果今年宣布要打造基于苹果芯片的Mac时，不少旁观者都在猜测，这个芯片很可能类似于A14。</p>
+<p style="text-align: left;">但事实并非如此，Federighi表示：</p>
+<blockquote>
+<p style="text-align: left;">如果你把M1和A14联系起来，它本质上是一个「超集」。并且Mac上的芯片与之有很多不同之处。</p>
+</blockquote>
+<p style="text-align: left;">如果你把M1和A14联系起来，它本质上是一个「超集」。并且Mac上的芯片与之有很多不同之处。</p>
+<p style="text-align: left;">苹果对Mac应用工作负载进行了大量分析：</p>
+<ul>
+<li>运行典型Mac工作负载所需的图形/GPU能力。</li>
+<li>所需的纹理格式。</li>
+<li>对不同类型GPU计算的支持。</li>
+<li>核心数量、驱动Mac尺寸显示器的能力、对虚拟化和Thunderbolt的支持。</li>
+<li>……</li>
+</ul>
+<p style="text-align: left;">这些都是Mac所需要的，但相对于iPhone编译的应用程序，这些功能都是「超集」。</p>
+<p style="text-align: left;">Srouji 进一步阐述道：</p>
+<blockquote>
+<p style="text-align: left;">我们已经建立了许许多多的IP，它们成为M1芯片的基础。</p>
+<p style="text-align: left;">我们开发这些伟大的技术已经超过了10年，然后几年前，我们便说「现在是时候使用我们所谓的可扩展架构，是时候为 Mac 开发一个定制的芯片了」。</p>
+<p style="text-align: left;">因为我们有这些伟大的IP的基础，而且架构是可扩展的UMA。</p>
+<p style="text-align: left;">这是一个完全不同的自定义芯片。</p>
+</blockquote>
+<p style="text-align: left;">我们已经建立了许许多多的IP，它们成为M1芯片的基础。</p>
+<p style="text-align: left;">我们开发这些伟大的技术已经超过了10年，然后几年前，我们便说「现在是时候使用我们所谓的可扩展架构，是时候为 Mac 开发一个定制的芯片了」。</p>
+<p style="text-align: left;">因为我们有这些伟大的IP的基础，而且架构是可扩展的UMA。</p>
+<p style="text-align: left;">这是一个完全不同的自定义芯片。</p>
+<p style="text-align: left;">这里提到的UMA，即 <strong>统一存储体系结构</strong><span>（Unified memory architecture）</span>，是苹果此次成功的关键。 </p>
+<p style="text-align: left;">UMA本质上意味着所有的组件，包括中央处理器 <span>（CPU）</span>、图形处理器 <span>（GPU）</span>、神经处理器 <span>（NPU）</span>、图像信号处理器 <span>（ISP）</span>等等。 </p>
+<p style="text-align: left;">它们共享一个速度极快的内存池，并且位置非常相近，这与常见的台式机模式是相反的。</p>
+<p style="text-align: left;">当用户运行要求比较苛刻的应用时，传统的pipeline 可能会损失大量的时间和效率来移动或复制数据，以便这些不同的处理器都能够访问到它们。</p>
+<p style="text-align: left;">Federighi认为，苹果在M1上的成功，部分原因是在硬件和软件层面， <strong>拒绝了这种低效的模式</strong>： </p>
+<blockquote>
+<p style="text-align: left;">我们不仅获得了GPU原始性能的巨大优势，而且同样重要的是，在统一的内存架构下，我们不用不断地来回移动数据，也不用改变会降低数据速度的格式。我们在性能上有了很大的提高。</p>
+</blockquote>
+<p style="text-align: left;">我们不仅获得了GPU原始性能的巨大优势，而且同样重要的是，在统一的内存架构下，我们不用不断地来回移动数据，也不用改变会降低数据速度的格式。我们在性能上有了很大的提高。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201121/5231fc0f1a1c4fa7b2f94f9b5d854c1a.png" /></p>
+<p style="text-align: left;">而且这并不是苹果M1唯一的优化点。</p>
+<p style="text-align: left;">近几年来，苹果的 Metal graphics API 采用了「基于平铺的延迟渲染」 ，M1的 GPU 就是为了充分利用这一点而设计的。</p>
+<p style="text-align: left;">Federighi解释道：</p>
+<blockquote>
+<p style="text-align: left;">老式的GPU基本上是同时在整个框架上操作，而我们则是在tile上操作，可以将tile移动到极快的片上内存中，然后在tile上与所有不同的执行单元一起执行一个巨大的操作序列。</p>
+<p style="text-align: left;">这是一种令人难以置信的效率，而以往离散的GPU是做不到的。</p>
+</blockquote>
+<p style="text-align: left;">老式的GPU基本上是同时在整个框架上操作，而我们则是在tile上操作，可以将tile移动到极快的片上内存中，然后在tile上与所有不同的执行单元一起执行一个巨大的操作序列。</p>
+<p style="text-align: left;">这是一种令人难以置信的效率，而以往离散的GPU是做不到的。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201121/670f78049d1c4d06a9778de01d07e319.png" /></p>
+<p>Windows怎么办？ </p>
+<p style="text-align: left;">应用新的架构同时，在软件层面也迎来一种新的转型。</p>
+<p style="text-align: left;">Mac 电脑现在将在本地运行新类型的软件，并停止本地运行其他类型，包括现有的所有 Mac 软件系列。</p>
+<p style="text-align: left;">除此之外，苹果在架构上的转变也为iPhone和iPad制作的软件，打开了一道「闸门」。</p>
+<p style="text-align: left;">这是第一次，适用于移动端平台的应用程序可以在Mac上运行。</p>
+<p style="text-align: left;">但对于这样的一个「过度」，用户体验这块必须要拿捏得住。</p>
+<p style="text-align: left;">对此，Federighi表示「大约90%的应用程序运行良好」：</p>
+<blockquote>
+<p style="text-align: left;">一个应用程序无法正常工作的原因有很多。它可能使用的技术在 Mac 上并不适用或不合理。</p>
+<p style="text-align: left;">所以我们对现有的应用做一定数量的自动测试，看看它们是否会崩溃等等。如果他们有这些问题，我们会从商店中自动自动将它们筛选出来。</p>
+<p style="text-align: left;">随着时间的推移，我们很可能会看到一些开发者，为了让他们的应用在Mac上能良好运行而付出努力。</p>
+<p style="text-align: left;">对于苹果公司来说，目前还处于早期，但在几年内，市场上将会有数百万台配备M1或M1系列的Mac。</p>
+<p style="text-align: left;">时间将证明这一进程的发展会有多快。</p>
+</blockquote>
+<p style="text-align: left;">一个应用程序无法正常工作的原因有很多。它可能使用的技术在 Mac 上并不适用或不合理。</p>
+<p style="text-align: left;">所以我们对现有的应用做一定数量的自动测试，看看它们是否会崩溃等等。如果他们有这些问题，我们会从商店中自动自动将它们筛选出来。</p>
+<p style="text-align: left;">随着时间的推移，我们很可能会看到一些开发者，为了让他们的应用在Mac上能良好运行而付出努力。</p>
+<p style="text-align: left;">对于苹果公司来说，目前还处于早期，但在几年内，市场上将会有数百万台配备M1或M1系列的Mac。</p>
+<p style="text-align: left;">时间将证明这一进程的发展会有多快。</p>
+<p style="text-align: left;">接下来的一个问题也比较关键： <strong>What about Windows</strong>？ </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201121/3a2d6cae7b0c447ca172172b766db4e2.png" /></p>
+<p style="text-align: left;">尽管M1的运行现有的 Mac、 iPhone 和 iPad 软件，但是新的架构不能立即运行除了 macOS 之外的 x86操作系统的应用程序。</p>
+<p style="text-align: left;">对此，Federighi指出，M1 Mac 确实使用了支持 Parallels 或 VMWare 等产品的虚拟化框架，但他承认，这些产品通常也会虚拟化其他 ARM 操作系统。</p>
+<p style="text-align: left;">与此同时，Federighi还表示，云端的Windows是一种可能的解决方案，并提到了CrossOver：</p>
+<blockquote>
+<p style="text-align: left;">它能够在这些系统上一种类似WINE的仿真层下，运行32位和64位的x86 Windows二进制文件。</p>
+<p style="text-align: left;">但是 CrossOver 的模拟方法，并不像我们在英特尔 mac 上使用 Parallels 或 VMWare 等虚拟化软件时那样一致，所以可能还有很长的路要走。</p>
+</blockquote>
+<p style="text-align: left;">它能够在这些系统上一种类似WINE的仿真层下，运行32位和64位的x86 Windows二进制文件。</p>
+<p style="text-align: left;">但是 CrossOver 的模拟方法，并不像我们在英特尔 mac 上使用 Parallels 或 VMWare 等虚拟化软件时那样一致，所以可能还有很长的路要走。</p>
+<p style="text-align: left;">至于在Mac上运行Windows系统，Federighi说到：</p>
+<blockquote>
+<p style="text-align: left;">我们有核心技术来运行他们的ARM版Windows，而后者当然支持x86应用程序。</p>
+<p style="text-align: left;">但这是微软必须做出的决定，授权用户在这些Mac上运行这项技术。但Mac电脑确实很有能力做到这一点。</p>
+</blockquote>
+<p style="text-align: left;">我们有核心技术来运行他们的ARM版Windows，而后者当然支持x86应用程序。</p>
+<p style="text-align: left;">但这是微软必须做出的决定，授权用户在这些Mac上运行这项技术。但Mac电脑确实很有能力做到这一点。</p>
+<p style="text-align: left;">最后，Srouji 回顾整个历程时说到：</p>
+<blockquote>
+<p style="text-align: left;">我们一直对这个项目和整个事情充满热情。非常艰难，但却是值得的。</p>
+<p style="text-align: left;">我们喜欢Mac，我们热爱计算机。</p>
+<p style="text-align: left;">我认为我们正在创造历史，这就是我们工程师们的看法。</p>
+</blockquote>
+<p style="text-align: left;">我们一直对这个项目和整个事情充满热情。非常艰难，但却是值得的。</p>
+<p style="text-align: left;">我们喜欢Mac，我们热爱计算机。</p>
+<p style="text-align: left;">我认为我们正在创造历史，这就是我们工程师们的看法。</p>
+<p style="text-align: left;">类似的，Federighi也发表了他的看法：</p>
+<blockquote>
+<p style="text-align: left;">我们付出了大量的汗水和心血，但我想说，在某种程度上，我们知道如何做到这一点。我们知道我们要面对的是什么。</p>
+</blockquote>
+<p style="text-align: left;">我们付出了大量的汗水和心血，但我想说，在某种程度上，我们知道如何做到这一点。我们知道我们要面对的是什么。</p>
+<p style="text-align: left;">Joswiak补充道：</p>
+<blockquote>
+<p style="text-align: left;">我们以前也这样做过 <span>（从PowerPC 向英特尔的过渡）</span>。 </p>
+<p style="text-align: left;">但这一次，这一切都是在「家」里完成的——这让苹果获得了一种不同的胜利。</p>
+</blockquote>
+<p style="text-align: left;">我们以前也这样做过 <span>（从PowerPC 向英特尔的过渡）</span>。 </p>
+<p style="text-align: left;">但这一次，这一切都是在「家」里完成的——这让苹果获得了一种不同的胜利。</p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">参考链接：</span></span></p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">https://arstechnica.com/gadgets/2020/11/we-are-giddy-interviewing-apple-about-its-mac-silicon-revolution/</span></span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>「MEET 2021智能未来大会」启幕，</strong></p>
+<p><strong>早鸟票限时抢购中，扫码预定席位！</strong></p>
+<p><strong>李开复</strong>博士、 <strong>尹浩</strong>院士、清华 <strong>唐杰</strong>教授，以及来自 <strong>小米</strong>、 <strong>美团</strong>、 <strong>爱奇艺</strong>、 <strong>小冰</strong>、 <strong>亚信</strong>、 <strong>浪潮</strong>、容联、 <strong>澎思</strong>、 <strong>地平线</strong>、 <strong>G7</strong>等知名AI大厂的大咖嘉宾齐聚，期待关注AI的朋友报名参会、共探新形势下智能产业发展之路。 </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜2020中国（南京）未来城市创新峰会，暨幕府创新区产业发布会
+http://www.sohu.com/a/433372309_610300	27233
+<p>允中 发自 凹非寺</p>
+<p>量子位 编辑 | 公众号 QbitAI</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201121/bc18af7a8b9d48cca165444f90a9c268.jpeg" max-width="600" /></p>
+<p>创智未来，焕新城市。<strong>2020中国（南京）未来城市创新峰会暨幕府创新区产业发布会</strong>，11月19日在南京举行。南京市市长韩立明，中建集团党组成员、副总经理单广袖，南京市鼓楼区委书记刘军出席大会并致辞。刘军书记表示：“幕府创新区汇聚区位、资源、生态、空间四大优势，孕育生机与活力，蕴藏秀丽与澎湃，是鼓楼乃至南京最具增长性和爆发力的板块。”</p>
+<p>国务院研究室原副主任、国家农业部原党组副书记、常务副部长尹成杰，中国城镇化促进会党委书记、副主席兼理事长陈炎兵，国家信息中心信息化和产业发展部主任单志广，国家住建部村镇建设司原司长李兵弟，国家发改委国土开发与地区经济研究所原所长肖金成，南京市政府秘书长吴炜，南京市发改委、南京市工信局、南京市规资局、南京市建委、南京市商务局主要负责同志，鼓楼区委副书记、代区长洪礼来，鼓楼区政协主席周文中等出席。</p>
+<p>受邀出席此次峰会的重要嘉宾还有：中国工程院院士、东南大学教授王建国，长江学者、同济大学建筑与城市规划学院副院长李翔宁，上海市政府原副秘书长、</p>
+<p>浦东新区原区长孙继伟，京东数字科技集团副总裁姚乃胜，钛媒体集团董事长赵何娟，全球智慧城市大会大中华区首席执行官毛辉东，以及12家央企二级公司负责人、53家上市公司董事会秘书等。</p>
+<h1>创新发展，产业推介机遇无限</h1>
+<p>幕府创新区北依幕府山，南沿津浦铁路，西起大桥南路，东接栖霞玄武，涵盖小市、幕府山街道以及宝塔桥街道大部分，区域面积13.8平方公里，约占鼓楼全区的26%。该片区不仅区位优势明显，而且历史遗存丰厚，自然禀赋优越，但受铁道分割、布局分散、基础薄弱等多重制约，长期以来该片区建设发展不平衡不充分问题较为突出。</p>
+<p>鼓楼区委区政府已明确将幕府创新区作为鼓楼当前和今后一个时期创新发展试验区域。幕府创新区作为中国准一线城市最大规模的主城区城市更新项目，以高位规划为理念，委托国际和国内知名品牌公司对片区城市品牌、空间规划和产业规划进行了重新研究和定位。2020中国（南京）未来城市创新峰会暨幕府创新区产业发布会现场进行了幕府创新区品牌暨城市形象、幕府创新区产业及空间规划、中国城市更新白皮书等多项发布。</p>
+<p>在“十四五”期间，幕府创新区将进入大投入大建设大发展的重要时期，根据鼓楼区委区政府目前初排的重大项目编排计划，幕府创新区“十四五”期间计划投资的重大项目超过40个，计划投资规模超过400亿元，这其中既有政府主导的重大基础设施项目，也有社会资本投资的重大产业项目，还有事关群众利益的民生改善类项目。在此次峰会上，鼓楼区委常委、铁北管委会工委书记王玉春，就面向城市更新和产业发展方向，全面推介了幕府创新区“产城人文”营商环境。现场，还举行了产业集聚区及产业园揭牌仪式。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<h1>大咖云集，探索幕府创新区发展新路径</h1>
+<p>幕府创新区作为南京主城规模最大的老片区，拥有丰富的历史文化资源，成熟的交通条件，优越的自然生态禀赋，是南京主城最具发展潜力的价值区域之一，即将开启城市焕新之路的幕府创新区如何走得既快又稳？受邀而来的重磅级的城市更新与智慧城市领域的院士、专家，以及相关头部企业、独角兽企业负责人在峰会现场展开了精彩论剑，共同碰撞思想的火花。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201121/2d03c7b7a5a4461185cb08200727d821.jpeg" max-width="600" /></p>
+<p>此次峰会以“<strong>创智未来 焕新城市</strong>”为主题，中国工程院院士、东南大学教授王建国，国家信息中心信息化和产业发展部主任、国家信息中心智慧城市发展研究中心主任、区块链服务网络联盟理事长单志广，围绕城市更新和产业发展，分别以《未来城市，智慧转型》《城市更新的工业遗存改造思路》为题，发表了主旨演讲。</p>
+<p>随后进行的两场圆桌论坛中，中国工程院院士、东南大学建筑学院教授王建国，上海市政府原副秘书长上海浦东新区原区长孙继伟，中国城镇化促进会党组书记、副主席兼理事长陈炎兵，住建部村镇建设司原司长李兵弟，南京市规划和自然资源局局长叶斌，南京城市交通规划研究院院长杨涛，同济大学建筑与城市规划学院教授袁峰，围绕《城市更新如何助力产城融合新动能》，从不同维度分享了各自对未来城市发展新趋势，城市更新助力产城融合，以及智慧城市建设的系列观点。</p>
+<p>针对圆桌论坛的另一主题《数字经济如何带动区域经济新发展》，国务院国有重点大型企业监事会原主席刘顺达，国家发改委国土开发与地区经济研究所原所长肖金成，京东集团副总裁姚乃胜， SAP大中华区CTO陈泽平，爱泊车集团副总裁董俊，钛媒体集团、链得得董事长赵何娟，江苏移动高级专家杨鹏，华为智慧城市高级专家苏华刚，纷纷从各自的专业领域出发，积极建言献策，探索数字经济推动区域产业发展的新思路。</p>
+<h1>腾笼换鸟，联手央企打造区域经济新增长极</h1>
+<p>幕府创新区片区曾铸就过南京的工业辉煌，现在依然有一定的产业发展基础，比如片区此前就聚集了中建、中铁、华能、中储、招商局、中能建等多家央企，今年华电又正式入驻。为充分发挥片区央企带动作用，进一步做大做强幕府创新区特色产业生态链，鼓楼区委区政府积极推动片区已有老牌工业企业与相关央企形成产业发展内循环，并在峰会现场举行了电力能源产业企业家联盟成立仪式。</p>
+<p>幕府创新区拟明确以中央北路为城市发展中轴，以滨江沿线、幕府路、和燕路—北祥路为三大特色发展带，着力打造五塘、桥东、幕府、小市四大发展核心极，积极构建“一轴三带四核”城市骨架。与此同时，围绕鼓楼全区主导产业发展方向，立足幕府创新区实际，拟确定以数字经济为引擎，以新型都市工业、现代商贸商务为基础支撑的“2+1”产业体系。</p>
+<p>针对幕府创新区的重点产业发展方向，峰会现场举行了11个产业项目签约，总投资达230亿元。其中重大产业项目2个，总投资为160亿，分别为金陵船厂更新改造项目，以及幕府创新小镇二期产业项目。据悉，“十四五”期间幕府创新区将加快产业载体建设，除了金陵船厂工业遗存改造、幕府创新小镇二期，还有中能建南京能源科技产业园、华能南京滨江总部基地等项目，都将在“十四五”期间逐步建设。这些产业载体全部建成后，预计幕府创新区片区将新增180万平方米的产业发展空间。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201121/a0c99bf639db4b5fb6e2ea6e04e45998.jpeg" max-width="600" /></p>
+<p>资源集聚，助力铁北片区高质量发展 根据《铁北片区发展指导意见》，鼓楼区将力争用八到十年时间，将幕府创新区建设成为滨江活力发展区、生活宜居样板区、产城融合示范区。此次峰会正值幕府创新区片区即将全面进入大投入大建设大发展的关键时期，今后还将结合幕府创新区片区的整体推进，聚焦一个事关幕府创新区发展的不同主题，每年举办一次，以期在幕府创新区未来的城市更新、产业提升中，搭建一个城市更新与产城融合的交流平台，汇聚各方目光，听不多方建议，聚集各种优质要素资源，从而不断助力幕府创新区片区更高质量发展。</p>
+<p>— <strong>完</strong> —</p>

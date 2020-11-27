@@ -1,0 +1,711 @@
+➜PyTorch 1.7发布：支持CUDA 11、Windows分布式训练
+http://www.sohu.com/a/428126364_610300	17020
+<p>木易 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">自从7月份CUDA 11发布以来，就陆陆续续听到了网友类似的吐槽：</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201029/ebd4d681920e41fe8ab0faf171efe1e2.png" /></p>
+<p style="text-align: left;">这正说着，10月27日，PyTorch团队发布了PyTorch 1.7，终于能支持CUDA 11了，可喜可贺（狗头）。</p>
+<p style="text-align: left;">除此之外，这次1.7的版本，也带来了许多功能的更新和稳定。</p>
+<p style="text-align: left;">在更新上，有了许多新的应用编程接口，如支持与NumPy兼容的快速傅立叶变换的操作及性能分析工具。</p>
+<p style="text-align: left;">此外，分布式数据并行（DDP）和基于远程过程调用（RPC）的分布式训练也有了重大的更新，在Windows平台上的分布式训练提供支持。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201029/b6cf56d0ea39401f8c97e52c2ab84b95.jpeg" /></p>
+<p style="text-align: left;">自从PyTorch 1.6开始，PyTorch的功能便分为稳定版（stable），测试版（Beta）和原型版（prototype）。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">那么，这次PyTorch 1.7又具体从哪些方面带来了新的功能，这些功能又进展到哪一版本呢？</p>
+<p style="text-align: left;">接下来让我们来快速盘点一下。</p>
+<p>前端API </p>
+<p style="text-align: left;">前端API共有3项更新，都是处于测试版状态。</p>
+<p><strong>NUMPY兼容的TORCH.FFT模块 [BETA]</strong></p>
+<p style="text-align: left;">PyTorch 1.7版本增加了一个新的 <span>torch.fft</span>模块，该模块使用与NumPy相同的API来实现与FFT相关的功能。 </p>
+<p><strong>对变压器神经网络模块的C++支持 [BETA]</strong></p>
+<p style="text-align: left;">1.7版本更新后，开发人员可以从C++前端直接使用 <span>nn.transformer</span>模块抽象。 </p>
+<p><strong>TORCH.SET_DETERMINISTIC [BETA]</strong></p>
+<p style="text-align: left;">PyTorch 1.7增加了 <span>torch.set_determinative(bool)</span>函数，该函数可以指导PyTorch操作者在可用时选择确定性算法，并在操作可能导致不确定性行为时引发运行时错误。 </p>
+<p>性能&amp;分析 <strong>堆栈跟踪添加至探查器 [BETA]</strong></p>
+<p style="text-align: left;">探查器可以帮助操作者追踪操作符的名称及输入等信息，而在1.7版本更新后，他们还可以追踪操作符在代码中的位置。</p>
+<p>分布式训练&amp;RPC </p>
+<p style="text-align: left;">分布式训练和RPC有着最多的更新数目——7项，这其中有1项稳定版、5项测试版及1项原型版。</p>
+<p><strong>Torchelastic捆绑进PYTORCH DOCKER镜像 [STABLE]</strong></p>
+<p style="text-align: left;">Torchelastic提供了当前 <span>torch.distributed.launch</span>命令行界面的严格超集，并增加了容错和弹性功能。 </p>
+<p style="text-align: left;">通过将 <span>Torchelastic</span>捆绑在与PyTorch相同的docker镜像中，用户可以立即开始试用 <span>TorchElastic</span>而不必单独安装。 </p>
+<p><strong>支持DDP中不均匀的数据集输入 [BETA]</strong></p>
+<p style="text-align: left;">PyTorch 1.7引入了一个新的上下文管理器，该管理器将与使用 <span>torch.nn.parallel.DistributedDataParallel</span>训练的模型结合使用，以便能够在不同的过程中使用不均匀的数据集大小进行训练。 </p>
+<p><strong>NCCL可靠性-异步错误/超时处理 [BETA]</strong></p>
+<p style="text-align: left;">过去由于集合体拥挤，NCCL训练可能会死机。如果检测到潜在的死机，此功能将中止卡住的集合体，并抛离异常或崩溃的程序。</p>
+<p><strong>TORCH RPC_REMOTE &amp; RPC_SYNC [BETA]</strong></p>
+<p style="text-align: left;">PyTorch 1.7将功能将扩展到其余两个核心RPC API，完成针对Torch支持的主要RPC API，它允许用户使用Torch中的现有python RPC API。</p>
+<p><strong>分布式优化器的TORCH支持 [BETA]</strong></p>
+<p style="text-align: left;">在PyTorch 1.7中，启用分布式优化器中的Torch支持来删除GIL，并使在多线程应用程序中运行优化器成为可能。新的分布式优化器与以前有完全相同的接口，但是它自动将每个工作器中的优化器转换成Torch，使每个GIL空闲。</p>
+<p><strong>增强基于RPC的分析 [BETA]</strong></p>
+<p style="text-align: left;">PyTorch 1.6首次引入了对将PyTorch分析器与RPC框架结合使用的支持。在PyTorch 1.7中，进行了以下增强:</p>
+<ul>
+<li>实现了对通过RPC分析Torch函数的更好支持</li>
+<li>在与RPC配合使用的探查器功能方面实现了均等</li>
+<li>在服务器端增加了对异步RPC函数的支持</li>
+</ul>
+<p style="text-align: left;">PyTorch 1.7为Windows平台上的分布式数据并行和集合通信带来了原型支持。</p>
+<p>移动支持 </p>
+<p style="text-align: left;">PyTorch Mobile通过Cocoapods和JCenter中提供的二进制软件包同时支持iOS和Android。</p>
+<p><strong>提高性能的PYTORCH移动缓存分配器 [BETA]</strong></p>
+<p style="text-align: left;">为了减少性能损失，PyTorch 1.7为CPU提供了一个简单的缓存分配器。分配器根据张量大小缓存分配，目前只能通过PyTorch C++ API获得。</p>
+<p>视觉工具包torchvision <strong>变换现在支持张量输入、批量计算、图形处理器和TORCH [STABLE]</strong></p>
+<p style="text-align: left;">PyTorch 1.7 实现了以下新功能:</p>
+<ul>
+<li>支持图形处理器加速</li>
+<li>批量转换，如视频所需</li>
+<li>变换多波段torch张量图像(多于3-4个通道)</li>
+<li>torch将与用户部署的模型一起转换</li>
+</ul>
+<p style="text-align: left;"><span>torchvision 0.8.0</span>引入了针对JPEG和PNG格式的本机图像读取和写入操作。 </p>
+<p><strong>RETINANET检测模型 [STABLE]</strong></p>
+<p style="text-align: left;">该版本为RetinaNet增加了预处理模型。</p>
+<p><strong>新的视频读取API [BETA]</strong></p>
+<p style="text-align: left;">这个版本引入了一个新的视频阅读抽象，它提供了对视频迭代的更细粒度的控制。</p>
+<p style="text-align: left;">它支持图像和音频，并实现了一个迭代器接口，因此它可以与其他python库之间互操作。</p>
+<p>音频工具包torchaudio </p>
+<p style="text-align: left;">在此版本中，torchaudio扩展了对模型和端到端应用程序的支持，增加了wav2letter训练管道、端到端文本到语音和源分离管道。</p>
+<p><strong>语音识别 [STABLE]</strong></p>
+<p style="text-align: left;">在wav2letter模型的基础上，新版本现在添加了一个带有LibriSpeech数据集的wav2letter训练管道示例。</p>
+<p><strong>文字转语音 [STABLE]</strong></p>
+<p style="text-align: left;">新版本添加了一个基于WaveRNN模型的声码器，此外还提供了一个WaveRNN训练管道的例子。</p>
+<p><strong>声源分离 [STABLE]</strong></p>
+<p style="text-align: left;">在论文“Conv-TasNet: Surpassing Ideal Time-Frequency Magnitude Masking for Speech Separation”的基础上，增加了ConvTasNet模型，支持声源分离。</p>
+<p>网友讨论：PyTorch更直观易懂、更新比TF快 </p>
+<p style="text-align: left;">对于PyTorch的更新，在reddit引起了网友其与Tensorflow的讨论。</p>
+<p style="text-align: left;">从网友的讨论来看， <strong>直观、易懂</strong>似乎是PyTorch胜过Tensorflow的一大优势。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201029/856963cfdf2b409c8edbd142b46bd94f.png" /></p>
+<p style="text-align: left;">然而，也有网友指出了PyTorch的不足：PyTorch在边缘计算并没有Tensorflow成熟。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201029/d359e05e618c45ae86a2cda3ed06dfa8.png" /></p>
+<p style="text-align: left;">最后，还有网友发出了灵魂拷问：</p>
+<blockquote>
+<p>PyTorch更新它的官方支持好像比TF更快？稳定性和更新率，你们更喜欢其中哪一种呢？</p>
+</blockquote>
+<p>PyTorch更新它的官方支持好像比TF更快？稳定性和更新率，你们更喜欢其中哪一种呢？</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201029/446c31b30c5a487d9d84bd7ec1518822.png" /></p>
+<p style="text-align: left;">如果是你的话，会更喜欢哪一种呢？ </p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span style="font-size: 16px;">参考链接：</span></span></p>
+<p><span style="font-size: 16px;">https://pytorch.org/blog/pytorch-1.7-released/</span></p>
+<p><span style="font-size: 16px;">https://github.com/pytorch/pytorch/releases</span></p>
+<p><span style="font-size: 16px;">https://www.reddit.com/r/MachineLearning/comments/jj4sr7/d_pytorch_17_released_w_cuda_11_new_apis_for_ffts/?sort=new</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong><span>「百度AI开发系列课」免费报名！</span></strong></p>
+<p>5分钟上手，10分钟定制高精度AI模型，硬核百度EasyDL，小白也能学！ </p>
+<p>10.28日，百度高级工程师带你 <strong><span>轻松学AI开发</span></strong>、 <strong><span>实现AI模型训练与部署</span></strong>！扫码添加量子位小助手（qbitbot12）、加入课程直播群吧~▽ </p>
+<p><span><strong>p.s.</strong></span>参与群互动、完成课堂任务还有机会获得100元京东卡、《智能经济》图书等礼品哦~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜如何0代码、快速定制企业级NLP模型？百度技术大咖在线解析，可报名
+http://www.sohu.com/a/428126366_610300	17020
+<p>位来 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p><span style="font-size: 16px;">近几年以预训练为代表的NLP技术取得了爆发式发展，新技术新模型层出不穷。</span></p>
+<p><span style="font-size: 16px;">在新时代背景下，</span><strong><span style="font-size: 16px;">如何将最先进的NLP领域科研成果，高效地应用到产业实践中并解决实际问题</span></strong><span style="font-size: 16px;">，是NLP产业界的核心痛点。因此，弥合技术与实际应用之间的Gap成为了NLP工程师的核心竞争力。</span></p>
+<p><span style="font-size: 16px;">第三期</span><span style="font-size: 16px;">「百度AI实战营」公开课中，</span><strong><span style="font-size: 16px;">百度</span></strong><span style="font-size: 16px;">资深研发工程师</span><span style="font-size: 16px;">将结合世界领先的</span><span><strong><span style="font-size: 16px;">文心（ERNIE）</span></strong></span><span style="font-size: 16px;">语义理解技术，通过产业实践案例，深入解析技术选型和模型调优的一些方法，以及工程实践中的经验。</span></p>
+<p><span style="font-size: 16px;">直播报名见下文，欢迎对NLP、AI开发感兴趣的个人或企业围观！</span></p>
+<p>分享内容 </p>
+<p style="text-align: left;"><span><strong>主题：</strong></span></p>
+<p style="text-align: left;"><strong><span style="font-size: 16px;">NLP技术解析</span></strong><span style="font-size: 16px;">--百度文心（ERNIE）NLP定制化训练实践</span></p>
+<p style="text-align: left;"><strong><span>分享提纲：</span></strong></p>
+<ul>
+<li>NLP常见任务及应用介绍；</li>
+<li>文心(ERNIE)语义理解技术与平台介绍：文心原理及核心优势；</li>
+<li>实战演示：结合真实场景案例，分享定制化训练NLP模型实践经验。</li>
+</ul>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201029/e571fdae3b7649598fc413680355ecb6.jpeg" /></p>
+<p style="text-align: left;"><span><span><strong><span style="font-size: 16px;">龙心尘，百度自然语言处理部，资深研发工程师。</span></strong></span><span style="font-size: 16px;">北京航空航天大学硕士，专注基于预训练的NLP算法与端到端的推荐算法的研究与应用，目前负责百度文心（ERNIE）平台及相关算法的研发工作。</span></span></p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">知名AI类公众号深度学习专栏主编。在基于海量数据的语义检索、广告推荐、信息抽取、长句预测、智能营销等方向有多年研究与应用经验。</span></span></p>
+<p>直播&amp;报名 </p>
+<p style="text-align: left;"><strong><span>直播时间：</span></strong></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;"><span style="font-size: 16px;">2020年11月4日，19:00-20:30</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">其中Q&amp;A时间为30分钟</span></p>
+<p style="text-align: left;"><strong><span>扫码报名：</span></strong></p>
+<p style="text-align: left;"><span style="font-size: 16px;">欢迎大家与龙心尘老师、更多开发者一起探讨和交流，也欢迎分享海报给需要的朋友：</span></p>
+<p style="text-align: center;"><span style="font-size: 16px;">△ </span><span style="font-size: 16px;">扫码加好友，加入课程直播群</span><span></span></p>
+<p>关于百度文心（ERNIE） </p>
+<p><span style="font-size: 16px;">文心（ERNIE）是依托百度深度学习平台飞桨打造的语义理解技术与平台，集先进的预训练模型、全面的 NLP 算法集、端到端开发套件和平台化服务于一体，为企业和开发者提供一整套 NLP 定制与应用能力。</span></p>
+<p><span style="font-size: 16px;">近日，文心（ERNIE）重磅发布三项功能，新增定制</span><strong><span style="font-size: 16px;">多标签文本分类</span></strong><span style="font-size: 16px;">、</span><strong><span style="font-size: 16px;">情感倾向分析</span></strong><span style="font-size: 16px;">模型等功能，同时</span><span style="font-size: 16px;"><strong>数据管理</strong></span><span style="font-size: 16px;">能力也进一步增强，更好地满足自然语言处理（NLP）领域开发者需求，开发者可通过百度 AI 开发平台 EasyDL 进行使用。</span></p>
+<p>关于百度EasyDL </p>
+<p><span style="font-size: 16px;">EasyDL是基于深度学习平台飞桨、结合业界先进的工程服务技术打造的、简单易用的模型训练和服务平台，具有3大特点：</span></p>
+<ul>
+<li><p><span style="font-size: 16px;">极简的交互和使用流程，最快15分钟即可完成模型训练；</span></p></li>
+<li><p><span style="font-size: 16px;">高精度的训练效果，其中图像分类模型的线上平均准确率在99%以上；</span></p></li>
+<li><p><span style="font-size: 16px;">部署方式丰富，全面支持云、端、边部署。</span></p></li>
+</ul>
+<p><span style="font-size: 16px;">极简的交互和使用流程，最快15分钟即可完成模型训练；</span></p>
+<p><span style="font-size: 16px;">高精度的训练效果，其中图像分类模型的线上平均准确率在99%以上；</span></p>
+<p><span style="font-size: 16px;">部署方式丰富，全面支持云、端、边部署。</span></p>
+<p><span style="font-size: 16px;">EasyDL极大降低了深度学习的应用门槛，把AI开发这件事情，搞得像使用「家用电器」一样简单，而且训练产出的AI模型质量，如同高级工程师产出的一样专业。</span></p>
+<p><strong><span>One More Thing：</span></strong></p>
+<p><span style="font-size: 16px;">为了进一步降低企业应用AI的门槛与成本，EasyDL还重磅推出</span><strong><span style="font-size: 16px;">「万有引力」计划</span></strong><span style="font-size: 16px;">，为有AI应用需求的企业提供专项基金，详情请点击</span><strong><span style="font-size: 16px;">「阅读原文」</span></strong><span style="font-size: 16px;">。</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜AI知识图谱，让我撸到了一只「天山上的雪豹」
+http://www.sohu.com/a/428126374_610300	17020
+<p>金磊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;"><strong>云吸猫</strong>这个词，最近太火了！ </p>
+<p style="text-align: left;">火到有拿「云吸猫」开始变现的，还有用「云吸猫」来写毕业论文的……</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201029/b2ac80c32c5b4725bbbe6cc8abbef0b0.png" /></p>
+<p style="text-align: left;">喵星人可以说打出了一套「可爱组合拳」，攻占了大片互联网江山。</p>
+<p style="text-align: left;">最近，这种流行趋势似乎有了升级—— <strong>云撸国家一级保护动物「雪豹」</strong>，你敢信？ </p>
+<p style="text-align: left;">这是一款由腾讯联合WWF打造、名为 <strong>「神秘雪豹在哪里」</strong>的微信小程序。而且上线2天，便有 <strong>超过10万人</strong>在使用。 </p>
+<p style="text-align: left;">打开后便有一只活灵活现的雪豹映入眼帘：</p>
+<blockquote>
+<p style="text-align: left;">摇晃着小脑袋，无辜的眼神四处打量，还有那柔顺的毛发 <span>（爱了爱了，好想舔屏吸上一口）</span>…… </p>
+</blockquote>
+<p style="text-align: left;">摇晃着小脑袋，无辜的眼神四处打量，还有那柔顺的毛发 <span>（爱了爱了，好想舔屏吸上一口）</span>…… </p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201029/c45e22b43c84420fa0e2bd92a0cbb1c7.gif" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">咳咳，言归正传。</p>
+<p style="text-align: left;">通过首页下方文字的介绍，了解到雪豹是唯一一种分布在中国的大型猫科动物 <span>（大猫）</span>，也是分布海拔最高的一种。 </p>
+<p style="text-align: left;">点击雪豹身上的四个白色点点，还对其「头部结构」、「毛发」、「整体外形」以及「尾巴」等，都有了非常详尽的了解。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201029/0fc9052cabba438bb1ac7bd962b584a8.png" /></p>
+<p style="text-align: left;">看到这里，让人不禁有了想要更深入了解它的冲动。</p>
+<p style="text-align: left;">在第二个模块便对它的 <strong>成长</strong>过程做详尽的描述，包括「幼崽发育」、「亚成体」、「成年」以及「孕期生产」。 </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201029/2a230b2a78db4d49bb013e0ac4805283.png" /></p>
+<p style="text-align: left;">看着雪豹从小小的一只，到长大成年，再到孕育诞生新的小生命，仿佛在短短的几分钟便经历了它的「完整生命过程」。</p>
+<p style="text-align: left;">那它的生存环境如何？是否有天敌？别急，在第三和第四个版块中也有所介绍。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201029/6384a78311344f639f062d23c8e2c146.gif" /></p>
+<p style="text-align: left;">在第三个版块「同域」中，展示了与雪豹相关的 <strong>同域物种生物链图谱</strong>： </p>
+<blockquote>
+<p style="text-align: left;">点击物种的名称，发亮的连线两端联系着食物链中的猎物与捕食者。</p>
+<p style="text-align: left;">与连接线相同颜色的物种，是链中的捕食者；物种颜色一致，表示是同类物种。</p>
+</blockquote>
+<p style="text-align: left;">点击物种的名称，发亮的连线两端联系着食物链中的猎物与捕食者。</p>
+<p style="text-align: left;">与连接线相同颜色的物种，是链中的捕食者；物种颜色一致，表示是同类物种。</p>
+<p style="text-align: left;">同样，在第四个版块「环境」中，也对雪豹生存的环境做了相应的介绍。</p>
+<p style="text-align: left;">不仅如此，在界面下方的「进化与科学发现」以及「研究和保护」版块，对雪豹的起源、研究做了更深入的介绍。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201029/aa11307eaf124122960b683557c5ec8c.gif" /></p>
+<p style="text-align: left;">短短的几分钟时间，通过这样一个小程序，不仅仅是对雪豹这种生物有了非常详尽的科普，更像是伴随着经历了它的「前世今生」。</p>
+<p style="text-align: left;">而在这背后，便是来自 <strong>腾讯云小微AI知识图谱</strong>的硬核技术。 </p>
+<p>知识图谱的「前世今生」 </p>
+<p style="text-align: left;">在体验过「神秘雪豹在哪里」这款小程序之后，一个非常直观的感受就是：</p>
+<blockquote>
+<p style="text-align: left;">它能够围绕着 <strong>雪豹</strong>这个主体，将与它相关的形形色色的资料，都能非常有序地关联到一起。不仅逻辑清晰，而且还一目了然。 </p>
+</blockquote>
+<p style="text-align: left;">它能够围绕着 <strong>雪豹</strong>这个主体，将与它相关的形形色色的资料，都能非常有序地关联到一起。不仅逻辑清晰，而且还一目了然。 </p>
+<p style="text-align: left;">而这就是 <strong>知识图谱</strong>的力量。 </p>
+<p style="text-align: left;">那么，知识图谱的能力为什么如此强悍？这就要从它的起源讲起。</p>
+<p style="text-align: left;">知识图谱的概念并不是非常新，其思路可以追溯到上世纪五六十年代的「知识表示形式」—— <strong>语义网络</strong><span>（Semantic Network）</span>。 </p>
+<p style="text-align: left;">语义网络是由相互连接的「节点」和「边」组成：</p>
+<ul>
+<li>节点表示概念或者对象。</li>
+<li>边表示他们之间的关系。</li>
+</ul>
+<p style="text-align: left;">知识图谱和语义网络较为类似，但语义网络更侧重于表示概念与概念之间的关系，而知识图谱更侧重于表示 <strong>实体之间的关系</strong>。 </p>
+<p style="text-align: left;">再通俗一点的去说，知识图谱其实就是不断挖掘、建立实体之间的关系，而且这种关系必须是客观现实存在的。</p>
+<p style="text-align: left;">那我们熟知的篮球选手姚明来举个例子🌰。</p>
+<p style="text-align: left;">姚明的「队友」是易建联；他的「妻子」是叶莉……知识图谱便将现实世界中的「队友」和「妻子」等关系，变成语义网络中的「边」，凭借关系连接起姚明、易建联、叶莉等代表着人物实体的「节点」。</p>
+<p style="text-align: left;">当然，除此之外，物理世界中还存在很多隐性或复杂的关系。通过不同关系的挖掘，每一个与姚明相关的实体，都能连接更多实体，整个语义网络便得以成倍延伸，知识图谱也愈发丰富庞大。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201029/19e775045a0f49c7853b2e63f7b87eec.png" /></p>
+<p style="text-align: left;">总结来看，知识图谱具有以下特点：</p>
+<ul>
+<li>知识图谱是一种 特殊的图数据 ：是带标记的有向属性图。</li>
+<li></li>
+<li>知识图谱 自带语义、蕴涵逻辑含义和规则 ：结点对应现实世界中的实体或者概念，每条边或属性也对应现实中的一条知识；可以根据人类定义的规则，推导出知识图谱数据中没有明确给出的知识。</li>
+</ul>
+<p style="text-align: left;">那么回到「神秘雪豹在哪里」，知识图谱是如何具体实现其功能的呢？</p>
+<p>腾讯云小微的「AI知识大脑」 </p>
+<p style="text-align: left;">能够让这款小程序展现的知识，如此一目了然、深入人心，离不开 <strong>腾讯云小微AI知识图谱</strong>的强大能力。 </p>
+<p style="text-align: left;">但其实，这种能力在「神秘雪豹在哪里」的展现知识冰山一角。</p>
+<p style="text-align: left;">以今年腾讯全球数字生态大会中与真人一起同台亮相的 <strong>「AI助手」那笙</strong>为例，便可对其更加了解。 </p>
+<p style="text-align: left;">通过视频可以看到，AI助手即便面对「可令怕」这般新型流行词，都能够迅速「猜到」是killing part。</p>
+<p style="text-align: left;">而后再以“夏令营活动”为「中心」，顺着中代表着“可令怕”关系的「边」，找到“回归大自然”、“享受冒险与挑战”、“露营看星星”等「节点」。</p>
+<p style="text-align: left;">就像是 <strong>赋予了AI助手真正的知识大脑</strong>一般。 </p>
+<p style="text-align: left;">在这个过程中，体现了腾讯云小微AI知识图谱的三方面能力。</p>
+<p>首先，是知识抽取。 </p>
+<p style="text-align: left;">知识抽取，是指从半结构/非结构化的文件中，通过自然语言理解 <span>（NLP）</span>的技术，能够抽取出： </p>
+<blockquote>
+<p style="text-align: left;">这段话里所描述的实体是什么？实体的关系是什么？实体的属性是什么？</p>
+</blockquote>
+<p style="text-align: left;">这段话里所描述的实体是什么？实体的关系是什么？实体的属性是什么？</p>
+<p style="text-align: left;">最后，将抽取出的知识要素，以SPO三元组的形式展现出来。</p>
+<p style="text-align: left;"><span>（注：SPO三元组，即主语-谓语-宾语三元组，是用来表示事物的一种方法和形式。）</span></p>
+<p style="text-align: left;">腾讯云小微知识图谱平台，支持从丰富的行业数据中抽取出行业信息，助力行业伙伴构建行业专属的知识图谱。</p>
+<p>其次，是知识融合。 </p>
+<p style="text-align: left;">经历上一个「知识抽取」过程后，实体、关系以及各类属性信息就像是一些杂乱无章的拼图；此外，由于知识的质量不一、来源不同，会存在一些干扰拼图。</p>
+<p style="text-align: left;">在实际应用中，来自各行各业的数据、知识，更是存在这样的问题。</p>
+<p style="text-align: left;">知识融合的作用，就是将这些良莠不齐的知识，分类规整好—— <strong>将来自不同知识库的同一实体融合在一起</strong>。 </p>
+<p style="text-align: left;">为了打破各行业间的知识孤岛，腾讯云小微以自有的海量通用知识为中心，通过实体链接、属性融合等多种「知识融合」技术，连接各行业的知识图谱。</p>
+<p>最后，是关联多源异构的行业数据。 </p>
+<p style="text-align: left;">在经过上述的两个步骤之后，要想实现形成更灵活的知识大脑，还需要经历一个 <strong>关联</strong>的过程。 </p>
+<p style="text-align: left;">这全靠腾讯云小微将多源异构的行业数据，诸如不同行业的文件、表格、音频、视频，全链接到「知识图谱」中，从而赋予AI助手更丰富的能力，例如深度问答、主动推荐等。</p>
+<p style="text-align: left;">此外，大规模知识库的构建与应用，还少不了「知识更新」等技术的支持。</p>
+<p style="text-align: left;">……</p>
+<p style="text-align: left;">这便是腾讯云小微AI知识图谱体现的强悍技术硬实力。</p>
+<p style="text-align: left;">而通过这样的技术，让「神秘雪豹在哪里」和「那笙」在科普和AI助手上应用，也不难看出 <strong>知识图谱</strong>所拥有的潜在且广泛的 <strong>应用价值</strong>。 </p>
+<p>AI知识图谱的价值与未来 </p>
+<p style="text-align: left;">进入互联网时代以来，人类世界所产生的数据量呈现爆炸式增长。</p>
+<p style="text-align: left;">如何将海量、异构、动态的大数据，加以表达、组织、管理、利用，是一个急需且必须解决的问题。</p>
+<p style="text-align: left;">知识图谱，便是一种非常有效的方式，可以让网络的智能化水平更高，更加接近于人类的认知思维。</p>
+<p style="text-align: left;">因此，它的应用前景十分的广泛。</p>
+<p style="text-align: left;">例如在 <strong>智能搜索</strong>中，搜索引擎在面对用户输入的查询时，不仅仅是查找关键词这么简单，而是对查询内容做一个语义理解。 </p>
+<p style="text-align: left;">而后进行归一化、知识库匹配等一系列操作后，再将结果返回给用户。</p>
+<p style="text-align: left;">在此基础上，更加深入的应用就是语音助手，像苹果Siri、谷歌Assistant等，能够以准确简洁的自然语言为用户提供问题的解答。</p>
+<p style="text-align: left;">在 <strong>社交网络</strong>平台也是如此，例如Facebook在2013年推出的Graph Search，可以通过知识图谱，将人、地点、事件等联系在一起，并在海量的社交网络中，寻找和自己有相关性其他事物。 </p>
+<p style="text-align: left;">由此再展开， <strong>推荐系统</strong>也是知识图谱的应用之一。我们在网购、刷短视频等时，经常遇到的「你可能感兴趣的产品」、「你可能认识的人」，都离不开知识图谱的应用。 </p>
+<p style="text-align: left;">更垂直于行业来讲，知识图谱应用于金融、医疗、教育等领域，也可以带来更好的领域知识、更低金融风险等益处。</p>
+<p>科技除了要硬核，更应该「向善」 </p>
+<p style="text-align: left;">其实，在开头介绍「神秘雪豹在哪里」时，故意留下了一个伏笔，就是小程序顶部的第四个版块—— <strong>环境</strong>。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201029/34410b371c834932b0c6c64f97c3f466.png" /></p>
+<p style="text-align: left;">在这个界面的文字介绍中可以了解到，雪豹所生存的家园，正式支撑着我们每个人日常生活的大江大河的源头。</p>
+<p style="text-align: left;">例如长江、黄河，华夏文明的母亲河；湄公河，东南亚的母亲河；雅鲁藏布江，中国西藏和印度东部的母亲河……</p>
+<p style="text-align: left;">因此，雪豹作为我国一级稀有保护动物，我们去守护的它们的同时，也是在守护着我们自己的家园、生态。</p>
+<p style="text-align: left;">利用AI知识图谱，腾讯取代了传统的科普方式，把枯燥、零散的知识以专业的数据结构连接起来，让我们更直观生动的了解各类知识。这是腾讯科技公益互助计划在生态领域公益保护的全新探索。</p>
+<p style="text-align: left;">此外，小程序还提供了体验四川卧龙国家级自然保护区的雪豹「巡护员」工作的功能，可以让我们为保护稀有动物、保护自然生态献一份力。</p>
+<p style="text-align: left;">而这背后，便是腾讯 <strong>「科技向善」</strong>的价值观。 </p>
+<p style="text-align: left;">目前，腾讯云小微AI团队已经通过与行业专家合作 <span>（如中科院昆明植物所）</span>、公司内数据资源整合、线上资源积累等多种方式，建设了数十个通用领域知识图谱，包含亿级实体及十亿级关系。 </p>
+<p style="text-align: left;">相信在不就的未来，腾讯云小微可以让公益变得更加生动、有趣，也可以让吸引更多人参与其中。</p>
+<p style="text-align: left;">最后，要问科技的魅力到底是什么？</p>
+<p style="text-align: left;">或许答案正如腾讯所体现的——造福社会、造福人类。</p>
+<p style="text-align: left;">你说呢？</p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">参考链接：</span></span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜依图三变，“退群”AI四小龙
+http://www.sohu.com/a/428126388_610300	17020
+<p>鱼羊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p>AI四小龙、CV四兽，都是江湖给的并称。</p>
+<p>除了依图，还有旷视、商汤和云从。</p>
+<p>当年深度学习推动AI复兴，率先在视觉 <span>CV</span>领域大放异彩，这4家跑得最快的公司，被以「四小龙」、「四兽」归类并称。 </p>
+<p>不过，其他几家现在对这种并称是否认同不得而知。</p>
+<p>依图，显然是不愿意了——毕竟在最近央视《新闻联播》报道中，他们的自我介绍里，“视觉”定位不再出现。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201029/3837d88d951746e7b027bed7eae5c78f.png" /></p>
+<p>取而代之的是 <strong>算力</strong>，以芯片为核心提供人工智能算力。 </p>
+<p>而且虽然向来行事低调，但如果连点成线，确实也不难发现，依图确实已经变了。</p>
+<p>当初以计算机视觉打响名气的依图，现在随着AI发展进一步落地和深入行业。</p>
+<p>上上下下从实际业务、落地理念，以及战略未来，都发生了质变。</p>
+<p>三大变化，由表及里。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201029/1a48be4d22884e71b403e2aca35c6464.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>依图之变在业务 </p>
+<p>首先，业务布局上的 <strong>重构</strong>。 </p>
+<p>从夯实视觉算法，到决胜AI算力。</p>
+<blockquote>
+<p>另一方面，致力于将人工智能算法和算力耦合设计，充分发挥全栈能力。</p>
+</blockquote>
+<p>另一方面，致力于将人工智能算法和算力耦合设计，充分发挥全栈能力。</p>
+<p>最直观的改变，莫过于依图首款AI芯片 <strong>求索</strong>（questcore TM ）的发布。 </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201029/6ba474c58a9b4309a308fabcab759b3f.png" /></p>
+<p>当时就明确介绍，与英伟达GPU、谷歌TPU和其他AI芯片公司研发的AI加速器产品不同，求索是一款具有均衡的端到端服务能力的AI处理器，不依赖传统x86 CPU，也不需要使用GPU方案。 </p>
+<p>其优势在于，在传统的CPU计算、人工智能计算、存储和片上数据传输之间取得了良好的平衡，灵活可扩展的架构使其能兼顾云端和边缘域的视觉推理需求。</p>
+<p>而自研芯片的正式商用、落地，更是让依图在AI赛道上展现出了差异化的能力。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201029/c5ba237884fd4847b5faf71dac162af7.jpeg" /></p>
+<p>此次《新闻联播》点赞的，就是依图作为上海城市治理金字招牌「一网统管」系统建设中的核心作用。 </p>
+<blockquote>
+<p>依靠自研AI芯片为系统提供高密度人工智能算力，极大地释放了人工智能算力在城市管理中规模化落地的可能性。</p>
+</blockquote>
+<p>依靠自研AI芯片为系统提供高密度人工智能算力，极大地释放了人工智能算力在城市管理中规模化落地的可能性。</p>
+<p>比如，在上海「一网统管」项目中，浦东新区完成了中环内直管公房149个老旧小区智能场景全覆盖，老旧小区智能化改造从盆景到风景到森林正在变为可能。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201029/deac3384652543a8ad5f9bc44a96eab2.jpeg" /></p>
+<p>上海之外，这样的城市「视觉中枢」能力，同样被运用到了在网上被热议的福州、贵阳等城市。 </p>
+<p>在一座城市中，刷脸乘车、刷脸借书、刷脸上医院取号……这种「靠脸生活」的表象背后，依图实现了完整全域AI平台的打造。</p>
+<p>从前端设备到后端算力，包括刷脸终端、服务终端、人脸比对平台、业务系统、用户系统、账户系统、AI大数据平台、算力平台，All in One.</p>
+<p>依图之变在理念 </p>
+<p>相比外显的业务变化，更为本质的变化，在于驱动这家公司向前的使命和理念，变得更加显性。</p>
+<p>需要站到更宏观的——整体谋篇布局——来审视。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201029/73d14b324f85499fb7c7a1e0000b8861.jpeg" /></p>
+<p>一方面，技术层，早已破圈破壁，横向打通了视觉、语音和NLP等AI三大项能力。 </p>
+<p>除了之前在视觉领域的成绩单，语音和NLP的成果，此前也有过公开刷屏：</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201029/8f32ee169140450285feb648bef2f4ac.jpeg" /></p>
+<p>2019年初，依图又在NLP&amp;医疗领域曝出大进展，联合广州妇女儿童医疗中心等机构的研究成果，登上国际知名医学科研期刊《自然医学》（Nature Medicine）。 </p>
+<p>实际上，当时一连串进展，外界只是以为在打破旧边界。</p>
+<p>但等到 <strong>「智能密度」</strong>的认知方法披露，才让人意识到依图正在形成自己的AI落地思想理念和方法论。 </p>
+<blockquote>
+<p>AI普及的关键，在于智能密度。</p>
+</blockquote>
+<p>AI普及的关键，在于智能密度。</p>
+<p>依图联合创始人、CEO朱珑，屡屡在公开演讲中疾呼强调。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201029/72cd32bb2690489fb36fd40d08d26acc.jpeg" /></p>
+<p>核心出发点是过去几年来，算法性能高速发展和机器算力提升缓慢的矛盾正越来越明显。 </p>
+<p>也是基于这种理念和实践认知，最终依图走上一条难而正确的路。</p>
+<p>针对应用场景和业务逻辑定义人工智能芯片。更通俗来讲——自研AI芯片。</p>
+<p>后来芯片流片成功对外发布，依图这样完整解释过逻辑。</p>
+<p>一方面，要满足自身业务和产业需求。</p>
+<p>现有的计算机架构已经无法满足人工智能，尤其是深度学习对算力的需求，工艺制程的提高终将碰到物理极限。摩尔定律濒临终点，但算法性能仍在万倍提升。</p>
+<p>因此，产业已经处于这样的前夜——应该以AI为中心来思考计算机体系结构， <strong>算法即芯片</strong>。 </p>
+<p>在这样的时代，算法和芯片两者紧密耦合，不可分离；只有懂算法的AI公司才能做出更好的AI芯片，才能将算力更高效地转化为智能。</p>
+<p>并且任何一项技术，要实现大规模推广，成本降低，实现高性价比的规模化应用，让绝大多数人都能用得起，是基本前提。</p>
+<p>所以唯有自研芯片，依图才能最大化算法之力，形成软硬件一体化解决方案，为客户提供更高价值。</p>
+<p>放眼更宽泛的全球产业中，特斯拉也做出了和依图相似的判断。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201029/e6b9ca2267ce47b8ae8f0c2d6cbe0cba.jpeg" /></p>
+<p>这家马斯克旗下的电动汽车公司，因为在产品迭代中积累了对自动驾驶算法和软件的深度理解，从而意识到供应商所提供的芯片在算力、功耗、效能上已经无法满足其对于汽车功能的设计要求，也选择自研全自动驾驶硬件HW3.0。 </p>
+<p>更后来，HW3.0的横空出世，确实「不鸣则已，一鸣惊人」：</p>
+<p>采取双神经网络处理器冗余模式，整体性能达到144TOPS，一下子就达到了英伟达Drive Xavier的理论性能值21 TOPS的7倍。</p>
+<p>并且，相比于搭载升级版英伟达Drive PX2计算平台的Autopilot 2.5版本，每辆车的硬件成本降低约20%。</p>
+<p>可以说，特斯拉如今一骑绝尘的市值和产品力成功，就是软硬件一体化、软件重新定义硬件、算法即芯片的成功。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201029/70e9d71ff1ea4f499bd0de376266686e.gif" /></p>
+<p>不过，这还不是依图之变——从算力重塑公司和产业——的全部原因。 </p>
+<p>最后但最重要的原因，这是一个世界级的机会。</p>
+<p>依图之变在未来 </p>
+<p>没错，面向未来，世界级的机会。</p>
+<p>依图认为，智能时代，没有先例可循，中国AI创业公司与世界科技巨头，站在同一起跑线上，完全有机会成为新时代的巨头。</p>
+<p>从芯片设计的角度讲，在算法即芯片时代，重要的是找对芯片的应用场景，并准确预判该场景下最适合的智能算法，然后根据两者定制芯片。</p>
+<p>这种从场景和数据直接到计算系统或芯片架构的「端到端设计」，是未来人工智能计算和高性能计算芯片及系统整体性能提升的关键所在。</p>
+<p>这就涉及到对算法发展趋势、实际应用场景和具体业务逻辑的洞察。</p>
+<p>从这个维度出发，顶尖中国AI公司不一定比外国公司差。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201029/7a5dfd8d152b4cfcb513f383ef058554.jpeg" /></p>
+<p>并且从更直接的经济效益来看，造芯对于依图目前业务和未来前景，都是一次补强。 </p>
+<p>以当前依图业务为例，按照效能用电来计算，替换自研芯片后，能节省1/3以上，三年内可以节省上亿元。</p>
+<p>而面向产业，高通就曾预测，到2025年，单是数据中心推理加速器这一细分市场，规模就可能达到170亿美元。</p>
+<p>所以选择这样的变化，拥抱这样的变化，依图看准的是赢在未来的全局性胜利。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201029/5319227353fd4778a917ac7e19239892.jpeg" /></p>
+<p>归结起来，业务上可以更多元更自主，利用AI引擎打造更大平台。技术上可以更纵深更本质，成为差异化竞争的壁垒所在。 </p>
+<p>有意思的是，如果站在当前时间点，也不难发现当初被江湖以「AI四小龙」、「CV四兽」并称的4家AI创业公司，差别越来越大，走出了不同的路。</p>
+<p>AI创业格局也已大变 </p>
+<p>依图之外，四小龙还有旷视、商汤和云从。</p>
+<p>或是最初，大家都是从AI算法起步，都以视觉为关键落地手段，都曾在智能城市、金融等领域有过竞争。</p>
+<p>但现在，各自公开宣扬的核心，相差甚远。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201029/9f4f8d6d28cf40519f4b864afd1d22ae.jpeg" /></p>
+<p><strong>旷视</strong>，招股书中提及最多的是“解决方案”、“AIoT”，战略重心也侧重于物联网，并在供应链物联网、机器人解决方案中打开新局面。 </p>
+<p><strong>商汤</strong>，200名AI博士的标签仍在，但现在更明确的观感是「算法工厂」，聚焦云端，重视平台和中心产品，把自己的AI能力，推及到千行百业中。 </p>
+<p><strong>云从</strong>，在金融和银行业务版图中被提及的时候越来越多，在地方政府和国家基金合作中被展现的越来越多。 </p>
+<p>所以连旷视CEO印奇都表态说，友商不再是友商。</p>
+<p>背后一方面是4家公司业务方向的变化，也代表着AI发展落地中悄然更改的格局。</p>
+<p>四小龙，再难并称，一切已成往事。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201029/ffb531594c784f708e2f907ec116c31d.jpeg" /></p>
+<p>他们唯一确定的关联，只剩下IPO上市，究竟谁才会是真正的 <strong>「AI第一股」</strong>。 </p>
+<p>向港交所递交过招股书的旷视，相继启动上市的依图和云从，以及时常在坊间传出IPO计划的商汤……</p>
+<p>正在一个意想不到的维度，展开新竞速。</p>
+<p>如何评价（现在的）依图？ </p>
+<p>最后，回到依图之变。</p>
+<p>在AI芯片发布之时，我们就有过 <strong>重估依图</strong>的论断。 </p>
+<p>核心出发点，就在于作为软件算法公司、解决方案公司，和一家拥有芯片的AI算力公司，成长性和潜力截然不同。</p>
+<p>更何况是一家软硬件一体化的公司，至少AI时代里，还没有过这样一家标志性的公司。</p>
+<p>仅从“阴差阳错”成为AI算力公司的英伟达的股价和市场表现，就能对这个领域的稀缺性和高成长性，管窥一二。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201029/1d49df1b244e4c20909921b03a743186.jpeg" /></p>
+<p>而此前中金公司还有过专门市场分析，认为AI芯片的市场规模将从2017年39.1亿美元增长到2022年352.2亿美元，期间年复合增长率55%…… </p>
+<p>此外，随着AI落地的深入，一种行业共识也被更广泛接受：</p>
+<p>算法难于定价，软件方案竞争壁垒不高，只有变重变硬，才能变强。</p>
+<p>在AI落地的传统场景和领域中，也只有软硬件一体化的解决方案，才能一手实现能力上的降本增效，另一手为客户创造最大化营收和成本价值。</p>
+<p>对于AI公司而言，交付完整产品和方案，也才能拥有更关键的议价权和商业空间。</p>
+<p>加之疫情突如其来，新基建政策横空出世，对于一众AI公司更是历史性机遇。</p>
+<p>可以软硬件一体化交付，是不是比被集成更有优势？</p>
+<p>或许可以进一步讨论，但从历史经验来看，答案早已不言自明。</p>
+<p>否则依图也不会笃力造芯，积极“转型”成为AI算力公司。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201029/df24e5481a3d44d3adfc2fbafc1c6bd1.jpeg" /></p>
+<p>所以重估依图，也到了更加明确的时候。 </p>
+<p>现在，这家起于上海的AI明星独角兽，有了最硬的差异化技术和底气、在商业闭环和业务落地上展现竞争力，又始终处在赛道头部和领先……</p>
+<p>围绕依图的评估，虽然从未停止，但这一次到了真正公布成绩和经受检验的时候。</p>
+<p>因为IPO上市计划已经曝光，公开资本市场的评价，只是时间问题。</p>
+<p>有认为依图会成为科创板AI创业第一股，也有消息说直接就是AI创业第一股，或者是全能AI第一股。</p>
+<p>无论如何，依图现在不再需要并称……</p>
+<p>依图，就是依图。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>每天5分钟，抓住行业发展机遇</strong></p>
+<p>如何关注、学习、用好人工智能？ </p>
+<p>每个工作日，量子位AI内参精选全球科技和研究最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。 </p>
+<p>同时，AI内参群为大家提供了交流和分享的平台，更好地满足大家获取AI资讯、学习AI技术的需求。扫码即可订阅： </p>
+<p><strong>加入AI社群，与优秀的人交流</strong></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>一键三连「分享」、「点赞」和「在看」</p>
+<p>科技前沿进展日日相见~</p>
+➜中国高校4篇研究今日同时登上Nature！清华北大上交浙工大等在列
+http://www.sohu.com/a/428126472_610300	17020
+<p>金磊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">最新一期的Nature，可谓是 <strong>「中国高校大爆发」</strong>。 </p>
+<p style="text-align: left;">同一天， <strong>清华大学</strong>、 <strong>北京大学</strong>、 <strong>上海交通大学</strong>和 <strong>浙江工业大学</strong>等中国高校，在学术顶刊Nature上各发表了一篇研究。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201029/be0a14c4dad645dfae833d720978c00b.png" /></p>
+<p>清华大学：小鼠胚胎中RNA聚合酶II的结合情况 </p>
+<p style="text-align: left;">清华大学发表的研究来自生命科学学院 <strong>颉伟</strong>团队。 </p>
+<p style="text-align: left;">发表的研究题为 <strong>《The landscape of RNA Pol II binding reveals a stepwise transition during ZGA》</strong>。 </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201029/6ee801f12d07410bbd7c1f42711736ca.png" /></p>
+<p style="text-align: left;">这项研究主要分析了小鼠胚胎中RNA聚合酶II <span>（Pol II）</span>结合的情况，采用的方法是开发小规模的Tn5辅助染色质切割测序 <span>（Stacc–seq）</span>。 </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">通过研究发现，Pol II在从次要ZGA到主要ZGA的转变过程中，经历了「加载 <span>（loading）</span>」、「预配置 <span>（pre-configuration）</span>」和「生产 <span>（production）</span>」。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201029/371b8e4b12ce4258bc994d8083262d91.png" /></p>
+<p style="text-align: left;">受精后，Pol II优先加载到单细胞胚胎中富含CG的启动子和可接触的远端区域 <span>（加载）</span>，部分是由遗传的亲本表观基因组决定的。 </p>
+<p style="text-align: left;">在基因组激活 <span>（预配置）</span>之前，Pol II会重新定位到未来的基因靶点，在此之后，它会在主要ZGA <span>（生产）</span>上进行完全的转录延伸。 </p>
+<p style="text-align: left;">值得注意的是，对次要ZGA的抑制会损害Pol II的预配置和胚胎发育，并伴随Pol II的异常保留和在主要ZGA上单细胞靶的异位表达。</p>
+<p style="text-align: left;">因此，当哺乳动物生命开始时，Pol II就会发生阶梯性转变，次要ZGA在转录机制和染色质的预配置中对基因组的激活具有关键作用。</p>
+<p>北京大学：来自重复快速射电暴源的不同偏振角波动 </p>
+<p style="text-align: left;">北京大学等高校在Nature发表的文章，题为 <strong>《Diverse polarization angle swings from a repeating fast radio burst source》</strong>。 </p>
+<p style="text-align: left;">共同通讯作者包括北京大学李 <strong>柯伽</strong>、内华达大学 <strong>张冰</strong>及中国科学院国家天文台 <strong>韩金林</strong>。 </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201029/adfd7fa445424703a095b97ba13d7f79.png" /></p>
+<p style="text-align: left;">快速射电暴 <span>（Fast Radio Burst，FRB）</span>是一种持续仅数毫秒的神秘射电暴发现象。 </p>
+<p style="text-align: left;">目前，有两种可能的机制可以从FRB中产生极其相干的辐射。详细的偏振观测，可能有助于科学家了解发射机制。</p>
+<p style="text-align: left;">然而，现有的FRB偏振数据一直令人困惑，因为它们显示了许多偏振特性。</p>
+<p style="text-align: left;">这些突发脉冲的偏振角特征的多样性与射电发射的磁层起源相一致，并且不利于引用相对论冲击的辐射模型。</p>
+<p>上海交通大学：利用肺和结肠类器官鉴定SARS-CoV-2抑制剂 </p>
+<p style="text-align: left;">上海交通大学 <strong>王慧</strong>、威尔康奈尔医学院 <strong>陈水冰</strong>等，作为共同通讯作者，在Nature上发表了题为 <strong>《Identification of SARS-CoV-2 Inhibitors using Lung and Colonic Organoids》</strong>的研究。 </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201029/c396121d15a44e2aa9b96f8c7c372856.png" /></p>
+<p style="text-align: left;">这项研究表明，SARS-CoV-2感染的hPSC-LOs和hPSC-COs，可以用作研究SARS-CoV-2感染的疾病模型。</p>
+<p style="text-align: left;">除此之外，还可以为筛选药物以鉴定候选COVID-19治疗剂提供有价值的资源。</p>
+<p>浙江工业大学：从大气二氧化碳数据估计中国陆地碳汇规模 </p>
+<p style="text-align: left;">最后一篇Nature，来自浙江工业大学和中国科学院大气物理研究所等，共同通讯作者分别为 <strong>方双喜</strong>和 <strong>刘毅</strong>等。 </p>
+<p style="text-align: left;">这项研究的题为 <strong>《Large Chinese land carbon sink estimated from atmospheric carbon dioxide data》</strong>。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201029/456943e9a1104d32a703bea254cb48d4.png" /></p>
+<p style="text-align: left;">这项研究提供了2009年至2016年间从中国六个地点测得的最新大气CO2摩尔分数的数据。</p>
+<p style="text-align: left;">通过使用这些数据，研究人员估计2010年至2016年期间，中国陆地生物圈的平均碳年均排放量为-11.1±3.8亿吨，约等于在此期间估算的中国每年人为排放量的45％。</p>
+<p style="text-align: left;">作者表示，在本研究期内，对植被绿色度的星载观测表明，随着时间的推移，植被的绿色度大大增加，这支持了这些造林地区土地碳汇的增加。</p>
+<p style="text-align: left;">对以上研究感兴趣的读者，可以戳下方链接👇再细细品读。</p>
+<p style="text-align: left;"><span style="font-size: 16px;">参考链接：</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong><span>「百度AI开发系列课」免费报名！</span></strong></p>
+<p>5分钟上手，10分钟定制高精度AI模型，硬核百度EasyDL，小白也能学！ </p>
+<p>10.28日，百度高级工程师带你 <strong><span>轻松学AI开发</span></strong>、 <strong><span>实现AI模型训练与部署</span></strong>！扫码添加量子位小助手（qbitbot12）、加入课程直播群吧~▽ </p>
+<p><span><strong>p.s.</strong></span>参与群互动、完成课堂任务还有机会获得100元京东卡、《智能经济》图书等礼品哦~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜比英伟达便宜4000元、功耗更低、游戏性能相同，AMD发布RX 6900 XT旗舰显卡
+http://www.sohu.com/a/428126809_610300	17020
+<p>晓查 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">AMD全新Radeon RX 6000系列显卡来了！</p>
+<p style="text-align: left;">今天凌晨，苏妈携RX 6800、RX 6800 XT、RX 6900 XT三款新显卡登台亮相，A卡与N卡的新一轮竞争再次拉开序幕。</p>
+<p><img height="auto" width="678" src="http://p3.itc.cn/q_70/images03/20201029/5d80a5990e614aeda982b78899dca8cd.png" /></p>
+<p style="text-align: left;">其中旗舰显卡RX 6900 XT在4K分辨率下和RTX 3090有相同的游戏帧率，售价还比后者低1/3。是不是感觉3090顿时不香了？</p>
+<p><img height="auto" width="1440" src="http://p7.itc.cn/q_70/images03/20201029/e11e891e77144c63818a33a826b291d0.png" /></p>
+<p style="text-align: left;">AMD表示，6900 XT将于12月8日发售，6800和6800 XT将于11月18日正式发售。希望到时候不要出现一卡难求的情况。</p>
+<p style="text-align: left;">那么，这三款新显卡的实际性能究竟如何？我们接着往下看。</p>
+<p>RX 6000系性能参数 </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">今天发布的RX 6000系显卡采用了全新的RDNA 2架构、Navi 21核心，均是台积电的7nm工艺，集成268亿晶体管。</p>
+<p><img height="auto" width="678" src="http://p7.itc.cn/q_70/images03/20201029/b772cfc209d74bcdb2ebd0dd9127cdaf.png" /></p>
+<p style="text-align: left;">RX 6000系列和RTX 3000系列一样，目标都是提供4K60帧的游戏体验，支持DirectX 12 Ultimate，包括硬件加速的实时光线追踪。</p>
+<p style="text-align: left;">新架构显卡相比上代旗舰RX 5700XT在4K分辨率下性能提升一倍多。</p>
+<p><img height="auto" width="1411" src="http://p1.itc.cn/q_70/images03/20201029/2a60bfad02524e0f8bf4d69cb4da4f4e.png" /></p>
+<p style="text-align: left;">AMD与英伟达新一代显卡的具体参数对比如下：</p>
+<p>
+<table>
+<tbody>
+<tr>
+<td></td>
+<td><span style="text-align: center;"><span style="font-size: 16px;">AMD Radeon RX 6900 XT</span></span></td>
+<td><span style="text-align: center;"><span style="font-size: 16px;">AMD Radeon RX 6800 XT</span></span></td>
+<td><span style="text-align: center;"><span style="font-size: 16px;">AMD Radeon RX 6800</span></span></td>
+<td><span style="text-align: center;"><span style="font-size: 16px;">NVIDIA GeForce RTX 3090</span></span></td>
+<td><span style="text-align: center;"><span style="font-size: 16px;">NVIDIA GeForce RTX 3080</span></span></td>
+<td><span style="text-align: center;"><span style="font-size: 16px;">NVIDIA GeForce RTX 3070</span></span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;"><strong>流处理器数量</strong></span></td>
+<td><span style="text-align: center;"><span>5120?</span></span><span style="text-align: center;"><span>(80 CU)</span></span></td>
+<td><span style="text-align: center;"><span>4608?</span></span><span style="text-align: center;"><span>(72 CU)</span></span></td>
+<td><span style="text-align: center;"><span>3840</span></span><span style="text-align: center;"><span>(60 CU)</span></span></td>
+<td><span style="text-align: center;"><span>-</span></span></td>
+<td><span style="text-align: center;"><span>-</span></span></td>
+<td><span style="text-align: center;"><span>-</span></span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;"><strong>游戏频率</strong></span></td>
+<td><span style="text-align: center;"><span>2.015GHz</span></span></td>
+<td><span style="text-align: center;"><span>2.015GHz</span></span></td>
+<td><span style="text-align: center;"><span>1.815GHz</span></span></td>
+<td><span style="text-align: center;"><span>1.5GHz</span></span></td>
+<td><span style="text-align: center;"><span>1.44GHz</span></span></td>
+<td><span style="text-align: center;"><span>1.4GHz</span></span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;"><strong>Boost频率</strong></span></td>
+<td><span style="text-align: center;"><span>2.25GHz</span></span></td>
+<td><span style="text-align: center;"><span>2.25GHz</span></span></td>
+<td><span style="text-align: center;"><span>2.105GHz</span></span></td>
+<td><span style="text-align: center;"><span>1.7GHz</span></span></td>
+<td><span style="text-align: center;"><span>1.71GHz</span></span></td>
+<td><span style="text-align: center;"><span>1.73GHz</span></span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;"><strong>单精度算力 (FP32)</strong></span></td>
+<td><span style="text-align: center;"><span>23.04 TFLOPs</span></span></td>
+<td><span style="text-align: center;"><span>20.74 TFLOPs</span></span></td>
+<td><span style="text-align: center;"><span>16.17 TFLOPs</span></span></td>
+<td><span style="text-align: center;"><span>35.7 TFLOPs</span></span></td>
+<td><span style="text-align: center;"><span>29.8 TFLOPs</span></span></td>
+<td><span style="text-align: center;"><span>20.4 TFLOPs</span></span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;"><strong>显存频率</strong></span></td>
+<td><span style="text-align: center;"><span>16Gbps</span></span></td>
+<td><span style="text-align: center;"><span>16Gbps</span></span></td>
+<td><span style="text-align: center;"><span>16Gbps</span></span></td>
+<td><span style="text-align: center;"><span>19.5Gbps</span></span></td>
+<td><span style="text-align: center;"><span>19Gbps</span></span></td>
+<td><span style="text-align: center;"><span>16Gbps</span></span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;"><strong>显存位宽</strong></span></td>
+<td><span style="text-align: center;"><span>256-bit</span></span></td>
+<td><span style="text-align: center;"><span>256-bit</span></span></td>
+<td><span style="text-align: center;"><span>256-bit</span></span></td>
+<td><span style="text-align: center;"><span>384-bit</span></span></td>
+<td><span style="text-align: center;"><span>320-bit</span></span></td>
+<td><span style="text-align: center;"><span>256-bit</span></span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;"><strong>显存</strong></span></td>
+<td><span style="text-align: center;"><span>16GB</span><span>GDDR6</span></span></td>
+<td><span style="text-align: center;"><span>16GB GDDR6</span></span></td>
+<td><span style="text-align: center;"><span>16GB GDDR6</span></span></td>
+<td><span style="text-align: center;"><span>24GB GDDR6x</span></span></td>
+<td><span style="text-align: center;"><span>10GB GDDR6x</span></span></td>
+<td><span style="text-align: center;"><span>8GB GDDR6</span></span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;"><strong>缓存</strong></span></td>
+<td><span style="text-align: center;"><span>128MB</span></span></td>
+<td><span style="text-align: center;"><span>128MB</span></span></td>
+<td><span style="text-align: center;"><span>128MB</span></span></td>
+<td><span style="text-align: center;"><span>-</span></span></td>
+<td><span style="text-align: center;"><span>-</span></span></td>
+<td><span style="text-align: center;"><span>-</span></span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;"><strong>功耗</strong></span></td>
+<td><span style="text-align: center;"><span>300W</span></span></td>
+<td><span style="text-align: center;"><span>300W</span></span></td>
+<td><span style="text-align: center;"><span>250W</span></span></td>
+<td><span style="text-align: center;"><span>350W</span></span></td>
+<td><span style="text-align: center;"><span>320W</span></span></td>
+<td><span style="text-align: center;"><span>220W</span></span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;"><strong>制程</strong></span></td>
+<td><span style="text-align: center;"><span>台积电 7nm</span></span></td>
+<td><span style="text-align: center;"><span>台积电7nm</span></span></td>
+<td><span style="text-align: center;"><span>台积电7nm</span></span></td>
+<td><span style="text-align: center;"><span>三星</span></span><span style="text-align: center;"><span>8nm</span></span></td>
+<td><span style="text-align: center;"><span>三星</span></span><span style="text-align: center;"><span>8nm</span></span></td>
+<td><span style="text-align: center;"><span>三星</span></span><span style="text-align: center;"><span>8nm</span></span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;"><strong>晶体管数量</strong></span></td>
+<td><span style="text-align: center;"><span>268亿</span></span></td>
+<td><span style="text-align: center;"><span>268亿</span></span></td>
+<td><span style="text-align: center;"><span>268亿</span></span></td>
+<td><span style="text-align: center;"><span>280亿</span></span></td>
+<td><span style="text-align: center;"><span>280亿</span></span></td>
+<td><span style="text-align: center;"><span>?</span></span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;"><strong>架构</strong></span></td>
+<td><span style="text-align: center;"><span>RDNA2</span></span></td>
+<td><span style="text-align: center;"><span>RDNA2</span></span></td>
+<td><span style="text-align: center;"><span>RDNA2</span></span></td>
+<td><span style="text-align: center;"><span>Ampere</span></span></td>
+<td><span style="text-align: center;"><span>Ampere</span></span></td>
+<td><span style="text-align: center;"><span>Ampere</span></span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;"><strong>发售日期</strong></span></td>
+<td><span style="text-align: center;"><span>12月8日</span></span></td>
+<td><span style="text-align: center;"><span>11月18日</span></span></td>
+<td><span style="text-align: center;"><span>11月18日</span></span></td>
+<td><span style="text-align: center;"><span>9月24日</span></span></td>
+<td><span style="text-align: center;"><span>9月17日</span></span></td>
+<td><span style="text-align: center;"><span>10月29日</span></span></td>
+</tr>
+<tr>
+<td><span style="text-align: center;"><strong>售价</strong></span></td>
+<td><span style="text-align: center;">7999元</span></td>
+<td><span style="text-align: center;">5099元</span></td>
+<td><span style="text-align: center;">4599元</span></td>
+<td><span style="text-align: center;"><span>11999元</span></span></td>
+<td><span style="text-align: center;"><span>5499元</span></span></td>
+<td><span style="text-align: center;"><span>3899元</span></span></td>
+</tr>
+</tbody>
+</table></p>
+<p style="text-align: left;">此次AMD <strong>全线</strong>标配16GB GDDR6显存，而英伟达的RTX 3070显存仅为8GB GDDR6。因为显存更大，因此AMD的“入门款”比英伟达高出700元。 </p>
+<p style="text-align: left;">因为RTX 3070今天才正式发售，AMD只能将6800与2080Ti进行对比，而3070与2080Ti性能相近，结果具有一定的参考价值。</p>
+<p style="text-align: left;">6800在4K分辨率下几个主流3A大作下的帧率都明显高于2080Ti。</p>
+<p><img height="auto" width="1407" src="http://p8.itc.cn/q_70/images03/20201029/d1b79020599f42d58390250fe3cce4eb.png" /></p>
+<p style="text-align: left;">另外两款高端的6800 XT和6900 XT也和英伟达竞品打得有来有回。</p>
+<p><img height="auto" width="1411" src="http://p3.itc.cn/q_70/images03/20201029/79892b9fbe9f49619b044f9f8ae50ae3.png" /></p>
+<p><img height="auto" width="1404" src="http://p0.itc.cn/q_70/images03/20201029/7c59829705774d4ba4175054fdb9781e.png" /></p>
+<p style="text-align: left;">不过这两款显卡均采用GDDR6显存，且位宽均为256bit，而英伟达使用的是更快的GDDR6x，纸面数据相差很大，AMD是如何保证性能不被显存拖累呢？</p>
+<p>多项黑科技登场 </p>
+<p style="text-align: left;">原来，AMD在RX 6000系列中首次引入了 <strong>Infinity Cache</strong>（无限缓存）设计来提高效率。AMD希望通过更大、功能更强的缓存代替更高速度的GDDR6x来满足需求。 </p>
+<p style="text-align: left;">显卡中加入的128M缓存与Zen 3 CPU的L3缓存技术相似，它最高可以提供两倍于384bit GDDR6的带宽，这也就解释了RX 6000为何全部使用256bit显存位宽。</p>
+<p><img height="auto" width="1920" src="http://p5.itc.cn/q_70/images03/20201029/ee75033c9e7140a3a2e640b5c94cafa2.png" /></p>
+<p style="text-align: left;">而且GDDR6比GDDR6x功耗更低，如此设计，可以在不显着提高功耗的情况下大大提升性能。因此AMD这一次终于不再是“电老虎”， <strong>功耗反而比英伟达更低</strong>。 </p>
+<p style="text-align: left;">如果使用AMD全家桶（Ryzen 5000系CPU+ AMD 500系主板），还将获得额外的性能提升。</p>
+<p style="text-align: left;">在常规的Windows系统中，CPU一次只能访问一部分显存（256MB），从而限制了系统性能。 <strong>Smart Access Memory</strong>可以扩展数据通道，让CPU访问全部16GB显存，消除了性能的瓶颈。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201029/5a73019f8d954df687ec44488cb14d7d.gif" /></p>
+<p style="text-align: left;">如果你还想进一步压榨显卡性能，AMD这次提供了所谓“ <strong>狂暴模式</strong>”，可以一键超频。狂暴模式是官方认可的超频操作，不会导致保修失效。 </p>
+<p style="text-align: left;">在Smart Access Memory和狂暴模式的加持下，显卡游戏帧率最多还能提高13%。</p>
+<p><img height="auto" width="1920" src="http://p7.itc.cn/q_70/images03/20201029/c4ac9c92e45d443f95cdcd80f5e6bce1.png" /></p>
+<p style="text-align: left;">除了以上几个“开箱即用”的技术外，AMD显卡“战未来”的技术也在本次发布会上宣布。</p>
+<p style="text-align: left;">比如，英伟达有DLSS技术提升超分辨率，而AMD也在加紧开发他们的超分辨率功能。</p>
+<p><img height="auto" width="678" src="http://p1.itc.cn/q_70/images03/20201029/1a00c9505c9144039f433c5ab1b5989e.png" /></p>
+<p style="text-align: left;">明年，AMD显卡也将和英伟达一样支持DirectStorage，该技术允许显卡直接从NVMe硬盘中读取数据，大大缩短游戏加载时间。</p>
+<p>希望AMD发力机器学习 </p>
+<p style="text-align: left;">对于这次的产品发布会，国外科技媒体AnandTech这样评价：</p>
+<p style="text-align: left;">这些新显卡是AMD在过去五年中最好的机会，他们在高端显卡市场的地位终于赶上了英伟达。</p>
+<p style="text-align: left;">这一次，AMD用三分之二的价格实现了和RTX 3090相同的游戏性能，对游戏玩家来说，是个巨大的福音。</p>
+<p style="text-align: left;"><span>但是对于机器学习开发</span>者 <span>说，AMD还有很长的路要走。</span></p>
+<p style="text-align: left;">英伟达的CUDA、张量核心等软硬件生态已经广泛用于机器学习领域。</p>
+<p style="text-align: left;">而AMD的ROCm技术还有差距，甚至连RDNA一代产品还没有做到完美支持。PyTorch和TensorFlow虽然都支持ROCm，但是仍然存在一些错误。</p>
+<p style="text-align: left;">游戏性能追赶上英伟达后，网友也对AMD有了更高的要求：</p>
+<p><img height="auto" width="1292" src="http://p1.itc.cn/q_70/images03/20201029/c05a0ea8bee94c62a0dd7b233ea4045e.png" /></p>
+<p style="text-align: left;">既然AMD现在有钱了，希望他们可以增加软件开发的投入。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong><span>「百度AI开发系列课」免费报名！</span></strong></p>
+<p>5分钟上手，10分钟定制高精度AI模型，硬核百度EasyDL，小白也能学！ </p>
+<p>10.28日，百度高级工程师带你 <strong><span>轻松学AI开发</span></strong>、 <strong><span>实现AI模型训练与部署</span></strong>！扫码添加量子位小助手（qbitbot12）、加入课程直播群吧~▽ </p>
+<p><span><strong>p.s.</strong></span>参与群互动、完成课堂任务还有机会获得100元京东卡、《智能经济》图书等礼品哦~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>

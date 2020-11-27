@@ -1,0 +1,330 @@
+➜用苹果M1电脑，打Windows游戏，是种什么体验？
+http://www.sohu.com/a/433798257_610300	46368
+<p>金磊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">苹果M1芯片火了，各种评测可以说是刷爆全网。</p>
+<p style="text-align: left;">除了CPU、GPU等性能指标外，国外一些极客朋友们，也陆续展开了一些好 <span>（zuo）</span>玩 <span>（yao）</span>的测试： </p>
+<blockquote>
+<p style="text-align: left;">在苹果M1电脑上，运行 <strong>Windows x86程序</strong>，是一种什么体验？ </p>
+</blockquote>
+<p style="text-align: left;">在苹果M1电脑上，运行 <strong>Windows x86程序</strong>，是一种什么体验？ </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201123/9a97eb4ed6cc47dcbb704e5be2a68fb8.png" /></p>
+<p style="text-align: left;">不卖关子，先公布「答案」—— <strong>飞一样的感觉</strong>。 </p>
+<p style="text-align: left;">而且不是简单的Windows程序，是 <strong>游戏</strong>！ </p>
+<p>用苹果M1，打Windows游戏 </p>
+<p style="text-align: left;">这位国外网友名叫Jeremy White，先来介绍一下他的准备工作：</p>
+<ul>
+<li>首先是入手了一台搭载苹果M1芯片的 Macbook Air ，系统是macOS Big Sur测试版。</li>
+<li>其次，准备一款Windows软件模拟器—— CrossOver 。</li>
+</ul>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201123/f9fe73f71ffd4197be537e69c3708db1.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">这里需要简单介绍一下CrossOver，它是建立在开源 <strong>Wine project.</strong>上的产品。 </p>
+<p style="text-align: left;">Wine模仿关键Windows软件库，允Linux或Mac用户运行Windows应用。</p>
+<p style="text-align: left;">与我们熟知的VMware或者Parallels不同的是，Wine不需要用户安装Windows系统，即可运行Windows程序。</p>
+<p style="text-align: left;">准备工作就绪， <strong>上效果</strong>。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201123/5755dba878a14b0e84c75dc426026176.png" /></p>
+<p style="text-align: left;">Jeremy先测试的是一款名为 <strong>Among Us</strong>的策略休闲小游戏，从图中右上角的延迟来看，模拟器的运行效果还算OK。 </p>
+<p style="text-align: left;">但这样的小游戏毕竟不能说明什么问题，于是Jeremy便将这项「挑战」加大了难度。</p>
+<p style="text-align: left;">接下来要运行的是一款射击类游戏 <strong>《军团要塞2》</strong><span>（Team Fortress 2）</span>。 </p>
+<p style="text-align: left;">射击类游戏对于电脑的性能要求还算是较高的，毕竟卡顿的情况若是太厉害，游戏体验就会变得极差。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201123/0e35d96bf45c445ab180395af130f4f8.gif" /></p>
+<p style="text-align: left;">而在搭载苹果M1的CrossOver上运行这类游戏，从效果图中很明显地能够感受到其流畅程度。</p>
+<p style="text-align: left;">这让Jeremy直呼 <strong>「简直难以置信」</strong>： </p>
+<blockquote>
+<p style="text-align: left;">试想一下，一个32位的Windows Intel二进制文件，在模拟x86的ARM CPU上，而且还是在macOS的模拟器中，竟然能够正常工作！</p>
+<p style="text-align: left;">简直太酷了！</p>
+</blockquote>
+<p style="text-align: left;">试想一下，一个32位的Windows Intel二进制文件，在模拟x86的ARM CPU上，而且还是在macOS的模拟器中，竟然能够正常工作！</p>
+<p style="text-align: left;">简直太酷了！</p>
+<p style="text-align: left;">这样的操作也惊艳到了网友，「考虑到这是2层模拟，让人印象深刻」。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201123/3591f4dc81144947b6f533a2bf401d54.png" /></p>
+<p style="text-align: left;">但Jeremy也承认，玩《军团要塞2》的过程中也存在一些卡顿的现象。</p>
+<p style="text-align: left;">现在，他要去测试《巫师3》 <span>（Witcher 3）</span>了…… </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201123/798f3a54efdd404486f865e2e312d021.png" /></p>
+<p>能否运行Windows系统？ </p>
+<p style="text-align: left;">实验到了这一步，好奇的小伙伴们肯定会想到一个更加深入的问题：</p>
+<blockquote>
+<p style="text-align: left;">搭载M1的苹果电脑，能不能直接运行Windows系统？</p>
+</blockquote>
+<p style="text-align: left;">搭载M1的苹果电脑，能不能直接运行Windows系统？</p>
+<p style="text-align: left;">毕竟，相信大家在生活中，大概率见过这样的同事或同学——拿着苹果电脑，桌面却是Windows……</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201123/1b093b6266ca42daa1ca26476c88ce39.png" /></p>
+<p style="text-align: left;">苹果三位高管在此前接受媒体采访 时，对此道出了自己的看法： </p>
+<blockquote>
+<p style="text-align: left;">我们有核心技术来运行他们的ARM版Windows，而后者当然支持x86应用程序。</p>
+<p style="text-align: left;">但这是微软必须做出的决定，授权用户在这些Mac上运行这项技术。但Mac电脑确实很有能力做到这一点。</p>
+</blockquote>
+<p style="text-align: left;">我们有核心技术来运行他们的ARM版Windows，而后者当然支持x86应用程序。</p>
+<p style="text-align: left;">但这是微软必须做出的决定，授权用户在这些Mac上运行这项技术。但Mac电脑确实很有能力做到这一点。</p>
+<p style="text-align: left;">大概的意思就是「留了路，看微软」了。</p>
+<p style="text-align: left;">最后，对于Jeremy的这次测评，也有网友留言了一个更加有趣的想法：</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201123/4ad6309a5df64bb19ed0ddf12df5620c.png" /></p>
+<blockquote>
+<p style="text-align: left;">拿Windows电脑模拟MacOS，又会怎样？</p>
+</blockquote>
+<p style="text-align: left;">拿Windows电脑模拟MacOS，又会怎样？</p>
+<p style="text-align: left;">嗯，确实有点意思。</p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">参考链接：</span></span></p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">https://www.codeweavers.com/blog/jwhite/2020/11/18/okay-im-on-the-bandwagon-apple-silicon-is-officially-cool</span></span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>「MEET 2021智能未来大会」启幕，</strong></p>
+<p><strong>早鸟票限时抢购中，扫码预定席位！</strong></p>
+<p><strong>李开复</strong>博士、 <strong>尹浩</strong>院士、清华 <strong>唐杰</strong>教授，以及来自 <strong>小米</strong>、 <strong>美团</strong>、 <strong>爱奇艺</strong>、 <strong>小冰</strong>、 <strong>亚信</strong>、 <strong>浪潮</strong>、容联、 <strong>澎思</strong>、 <strong>地平线</strong>、 <strong>G7</strong>等知名AI大厂的大咖嘉宾齐聚，期待关注AI的朋友报名参会、共探新形势下智能产业发展之路。 </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜这才是陆奇看重的创业者：最小19岁，开拖拉机的斯坦福毕业生，弃医从文的武大学生……
+http://www.sohu.com/a/433798327_610300	46368
+<p>杨净 蕾师师 发自 中关村 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">陆奇的创业成绩单，来了。</p>
+<p style="text-align: left;">自立门户创办 <strong>奇绩创坛</strong>后，首届「毕业生」亮相。 </p>
+<p style="text-align: left;">有开挖掘机的斯坦福毕业生，有帮人打游戏的清华学子，还有弃医从文的武大医生……</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201123/0413c1c85e8a43759196050cb8a40c98.jpeg" /></p>
+<p style="text-align: left;">这是从“YC中国”更名为“奇绩创坛”后的首届路演日。</p>
+<p style="text-align: left;">会上，陆奇先介绍了首届「生源」情况：</p>
+<ul>
+<li>今年总共录取了30家创业公司，其中87%都是前沿技术驱动型企业，包括芯片、传感器、脑机、生物科技等；</li>
+<li>录取项目的创始人平均年龄33岁，最小的也有00后，19岁；</li>
+<li>其中73%都是硕士及以上的创业者；</li>
+</ul>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201123/6ed8ce8db22140c4bbb197def8b230e7.jpeg" /></p>
+<p style="text-align: left;">演讲的最后，陆奇也讲了从「YC中国」独立出来后的愿景——共同建立一个繁荣的创业者社区。</p>
+<p style="text-align: left;">那么首届「毕业路演」情况如何？他们又利用了什么样的技术创新？</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">我们挑选代表性公司，总结了这样几大类。</p>
+<p>第一类：用技术赋能传统产业 </p>
+<p style="text-align: left;">首先有传统产业，有了前沿技术加持之后「崭新亮相」。</p>
+<p style="text-align: left;">就拿工程挖掘领域——开挖掘机说起。</p>
+<p style="text-align: left;">这家公司位名叫 <strong>拓疆者</strong>，顾名思义，就是帮助后继无人的老司机「开疆拓土」——利用低延时的远程遥控系统，实现现场无人化、实时在线施工。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201123/9d6ff85c91a84664994db0c5d08ee4f2.jpeg" /></p>
+<p style="text-align: left;">创始人是来自斯坦福大学的隋少龙，曾在英伟达、特斯拉、苹果做核心研发。他们自称「工程挖掘领域，技术最棒；技术圈里挖机开的最棒」</p>
+<p style="text-align: left;">嗯，不会开挖掘机的斯坦福学生不是好的创业者！</p>
+<p style="text-align: left;">除此之外，还有一对父子共同打造的「硬库」，主要针对五金行业长尾需求的在线市场。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201123/8765f8bad4334f7cb0a45bb0b1013c1c.jpeg" /></p>
+<p style="text-align: left;">平台主要面向五金机电建材行业中小零售商提供由近及远的全品类货源，他们自称是五金行业里的 <strong>「美团」</strong>。 </p>
+<p>第二类：以开发者为中心 </p>
+<p style="text-align: left;">还有专注于开发者，以开发者为中心的企业。</p>
+<p style="text-align: left;">比如，还有Uber无人驾驶部门早期员工 <strong>崔运凯</strong>，通过专业的SaaS服务和构建以AI开发者为核心的开源数据生态Graviti 格物钛。 </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201123/0866c037f7a94548947aeeaa8ed8cc37.jpeg" /></p>
+<p style="text-align: left;">主要希望解决AI开发过程中因使用非结构化数据带来的不断增长的数据获取、存储、处理和协作难题，加速AI开发流程和AI应用部署，为人工智能赋能百业，驱动以人工智能为核心的创新提供坚实的基础设施。</p>
+<p style="text-align: left;">一句话来说，就是「GitHub for Data」。</p>
+<p style="text-align: left;">再比如，这个白帽子开发平台—— <strong>火线</strong>。 </p>
+<p style="text-align: left;">不熟悉的旁友，先来get下「白帽子」是什么意思。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201123/dd882f33f85443af9e865316d305ea82.jpeg" /></p>
+<p style="text-align: left;">那「火线」就是将白帽子汇集在一起，创建的一个开发者平台，通过产品为中大型企业客户提供安全服务。</p>
+<p style="text-align: left;">作为全球首个白帽子开发者平台，今年4月上线的「火线」，如今已经有 <strong>5000名</strong>白帽子汇集，与字节跳动、百度、中国银行、旷视等客户展开合作。 </p>
+<p style="text-align: left;">创始人邬迪，曾参与创立白帽子社区「乌云网」，相信早期的安全员并不陌生。另外两位联合创始人卢中阳、曾垚也曾是乌云社区的核心成员。</p>
+<p>第三类：00后社交、医疗科普一个不落 </p>
+<p style="text-align: left;">当下流行风向，这些创业者怎么可能放过。</p>
+<p style="text-align: left;">比如00后社交。</p>
+<p style="text-align: left;">「幸识」就是锁定00后用户的开放式社交平台，从找人聊天、约游戏、约学习等场景来切入，目前在安卓应用上已经有160万的播放量，创始人是来自北京大学95后法学硕士王宥人。</p>
+<p style="text-align: left;">现在，00后都不用微信QQ社交了？</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201123/49e125c2bb5d4593a2500acfaf605e4f.jpeg" /></p>
+<p style="text-align: left;">再比如，短视频、直播与当下关注的医疗健康结合以来。</p>
+<p style="text-align: left;">南方健康，这是路演日最后一个创业者项目。</p>
+<p style="text-align: left;">几个弃医从文的武大医生，结束了以前「白天看病，晚上科普」的日常生活，开始打造权威级医疗健康IP矩阵。</p>
+<p><img height="auto" width="1440" src="http://p6.itc.cn/q_70/images03/20201123/feb486fb330d4b0ebb4e0cf1d6e68a65.jpeg" /></p>
+<p style="text-align: left;">利用内容库、形式库、IP库以及产品库，简称AI智能化的「四库全书」，以大数据驱动的方式建设健康IP运行体系。</p>
+<p style="text-align: left;">比如游戏方面。</p>
+<p style="text-align: left;">有一家基于云游戏+RPA的游戏平台——念力云游戏，就像创始人在台上所说，这是一个不「肝」的游戏平台；</p>
+<p style="text-align: left;">由Google云游戏创始成员和NOI金牌得主携手打造。下一步，公司计划构建云原生游戏和云原生应用。</p>
+<p style="text-align: left;">电商方面。</p>
+<p style="text-align: left;">有 <strong>「高鸣信息」</strong>结合短视频内容及社交传播，在拉美地区打造新兴电商平台； </p>
+<p style="text-align: left;">也有24小时虚拟人自动直播带货企业服务商 <strong>「宙予科技」</strong>，服务全国2000万家网店成为全天自动直播店，进行24小时不间断的虚拟主播自动直播、自动问答，每小时自动抽奖等优惠活动。 </p>
+<p>第四类：前沿科技，「马斯克」提得最多 </p>
+<p style="text-align: left;">卫星遥感、电池回收、脑机接口……在专注于前沿科技的创业者们，口中提到最多的一个名字——「马斯克」。</p>
+<p style="text-align: left;">这个项目叫做「星测未来」，是一个基于微纳卫星载荷技术建设的全球在轨实时感知平台。以“上帝视角”，第一时间提供敏感高价值信息。</p>
+<p><img height="auto" width="1600" src="http://p9.itc.cn/q_70/images03/20201123/6212846380254786951a759fb4cfdf57.jpeg" /></p>
+<p style="text-align: left;">两位创始人，是来自两位清华大学工程物理系博士。今年他们已经完成了在轨技术验证。</p>
+<p style="text-align: left;">西安交通大学团队打造的 <strong>「臻泰智能」</strong>，则是专注于非侵入式脑机接口领域。针对脑卒中等脑重大疾病的诊疗应用，提出了以「脑机接口+虚拟现实+机器人」的脑机康复行业的解决方案。 </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201123/729ac3def7804f61b9f0e8575056e4ea.jpeg" /></p>
+<p style="text-align: left;">还有为电动车提供「电池回收」解决方案和装备的 <strong>「博萃循环」</strong>。 </p>
+<p style="text-align: left;">通过回收企业、车企、电池制造商等回收责任主体，能实现 <strong>90%</strong>以上锂、钴、镍等电池金属短程闭路循环。 </p>
+<p style="text-align: left;">除此之外，当下芯片产业的大环境，自然少不了一些借势造 <strong>「芯」</strong>的创业者。 </p>
+<p style="text-align: left;">比如，打造超低功耗感存算一体芯片的 <strong>「九天睿芯」</strong>，主要产品有高性能模数转换器(ADC)，基于模拟计算的超低功耗感存算一体芯片(ADA)；还有制造超高集成热成像传感器芯片的北大微电子团队「安酷智芯」，应用与工业测温、安防监控、医疗健康及车载夜视等领域。 </p>
+<p style="text-align: left;"><img height="auto" width="1600" src="http://p5.itc.cn/q_70/images03/20201123/a1f31d640efc408789338ce66905ecb4.jpeg" /></p>
+<p style="text-align: left;">还有清华电子工程团队打造的，5G通信氮化镓功放芯片 <strong>「优镓科技」</strong>。他们使用先进第三代半导体氮化镓（GaN）材料，致力于自主研发应用于5G基站及下一代无线通信基础设施的射频芯片。 </p>
+<p style="text-align: left;">以及疫情之下，创业者对 <strong>交互方式</strong>的新思考。 </p>
+<p style="text-align: left;"><strong>Zealcomm峰畅科技</strong>为企业打造远程视频服务，比如，就为银行打造了全球首个AI视频贷款面审机器人； </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201123/209439228acd49769dc168010301dd3b.jpeg" /></p>
+<p style="text-align: left;">还有毫米波雷达物联网应用开拓者 <strong>「电目科技」</strong>，已经有非接触式开关、室内人员检测等应用落地。 </p>
+<p style="text-align: left;"><strong>ShowMeBug</strong>，专门为程序员打造的实时协同的面试平台。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201123/d8be903c4dfb4eb88aacc9122efd803f.jpeg" /></p>
+<p style="text-align: left;">当然，除了这些，还有关注生物科技、机器人、大数据等企业，共有30位创业者进行路演。</p>
+<p style="text-align: left;">可以看到，陆奇钦点的初创企业，有涉及当下流行趋势、还是最新前沿科技、抑或是疫情之下的新思考，还有用技术赋能传统产业……</p>
+<p style="text-align: left;">都有一个关键词， <strong>技术</strong>。 </p>
+<p style="text-align: left;">正如他自己所说，现阶段核心工作是加速早期技术驱动的创业公司。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201123/6d7395332c3741558c7fea6d2758b451.jpeg" /></p>
+<p style="text-align: left;">而这种从源头上去帮助创业和创业者，恰好是为了陆奇本人以及奇绩创坛长期推进的使命——驱动中国创新。</p>
+<p style="text-align: left;">这样的目标，着实不小。</p>
+<p style="text-align: left;">有对以上项目感兴趣，想了解更多项目的小伙伴们，可以通过下方传送门了解奇绩创坛更多细节～</p>
+<p style="text-align: left;"><span>传送门：</span></p>
+<p><span>https://mp.weixin.qq.com/s/I-EjW80GuAIzKn9lExPc9w </span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span><span style="font-size: 16px;"></span></p>
+<p><strong>量子位年度智能商业峰会启幕，</strong></p>
+<p><strong>李开复等AI大咖</strong><strong>齐聚，</strong></p>
+<p><strong>邀你共探新形势下智能产业发展之路</strong></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">▽</span><span style="font-size: 16px;">限时早鸟优惠，扫码锁定席位</span><span style="font-size: 16px;">▽</span></span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜百度ACE智能交通能提升最高30%城市通行效率，刚刚拿下世界互联网大会最高荣誉
+http://www.sohu.com/a/433798413_610300	46368
+<p>郭一璞 假装发自 乌镇 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">乌镇的世界互联网大会刚刚开始，就传来了智能交通领域的好消息。</p>
+<p style="text-align: left;">百度ACE智能交通，被世界互联网大会评为了 <strong>世界互联网领先科技成果</strong>。 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201123/0ab0507c7e1d44e1b42f7775ca571d2d.jpeg" /></p>
+<p style="text-align: left;">而且，这已经是Apollo第二次获得该奖项，两年前，Apollo自动驾驶开放平台就已经获得过一次这项荣誉。</p>
+<p style="text-align: left;">历来，获得这个奖的都是互联网科技界的头部产品，比如去年就有清华的「天机」芯片，前年就有大家如今都在用的微信小程序。</p>
+<p style="text-align: left;">甚至，前来领奖的都是马化腾、周鸿祎、张亚勤、沈向洋这种名字写出来就威震互联网江湖的大佬们。</p>
+<p style="text-align: left;">而今年，和百度ACE智能交通一起并列的科技成果，有腾讯会议、阿里云神龙架构等大量互联网科技界的重磅产品和解决方案。</p>
+<p style="text-align: left;">所以，别看年底了，各家互联网公司都在秀奖杯，像ACE智能交通拿到的「世界互联网领先科技成果」这样真正有含金量的大奖，其实屈指可数。</p>
+<p>ACE智能交通，就是未来新交通 </p>
+<p style="text-align: left;">我们知道，百度的自动驾驶在业内鼎鼎大名，那么ACE智能交通，这又是什么？</p>
+<p style="text-align: left;">概括地说，就是百度在交通领域的所有产品服务所形成的生态，不止自动驾驶，也不止车辆网，而是互联网+交通、AI+交通的一切产品和服务。</p>
+<p style="text-align: left;">ACE智能交通引擎的底层，指的是包括车、路、云、图在内的基础设施，比如在车内提供智能交互的小度车载，在云端提供存储计算等功能的百度智能云，在底层提供各种AI技术服务的飞桨平台，还有我们常用的百度地图。</p>
+<p style="text-align: left;">所以，如果你是一个百度地图用户的话，ACE智能交通引擎其实已经在服务你的出行了。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">在这些基础设施之上，则是两大智能引擎，包括Apollo自动驾驶引擎和车路协同引擎，这在技术层面保证了智能出行的能力基础。</p>
+<p style="text-align: left;">我们可以看出，从技术和部署层面的自动驾驶、车路协同，到车和路的应用，以及各类交通服务，都被囊括到了ACE智能交通引擎的框架内。</p>
+<p style="text-align: left;">由此，便可衍生出各种各样场景下的应用：</p>
+<p style="text-align: left;"><img src="http://p4.itc.cn/q_70/images03/20201123/445c471805e94254afc270c63394cdc8.jpeg" /></p>
+<p style="text-align: left;">红绿灯可以借助大数据来判断实现智能控制，帮路上的人和车节约出行时间；</p>
+<p style="text-align: left;">停车场里，AI自动监控视频画面，帮助车主快速找车位；</p>
+<p style="text-align: left;">没有车的朋友也不必担心，智能公交系统可以让手机App、车站站牌、车内屏幕实时同步信息，下一班车什么时候来，无论在哪儿都能心里有数；</p>
+<p style="text-align: left;">选择打车的话，我们知道在长沙、北京和沧州，都可以打到自动驾驶出租车了，而且现在还不收钱；</p>
+<p style="text-align: left;">在车里无聊的时候，借助车联网应用，就可以享受海量的内容服务；</p>
+<p style="text-align: left;">……</p>
+<p style="text-align: left;">这样，无论是开车党、打车党还是公交党，每个人的出行效率都得以提升。</p>
+<p style="text-align: left;">其中的核心在于，智能交通在每个领域的深入落地。</p>
+<p style="text-align: left;">在李彦宏前不久发布的百度第三季度财报内部信中提到，Apollo的商业模式从集成商模式转变为 <strong>运营商模式</strong>，用运营商的思维来思考城市交通运营。在长沙和保定的智能交通项目里，百度一直在持续优化算法，提升整个城市通行的效率，解决过去靠人力、传统基建解决不了的问题。 </p>
+<p style="text-align: left;">可以说，ACE智能交通引擎，既是解决方案，又是生态系统，是百度为未来的新交通，描绘的一张蓝图。</p>
+<p style="text-align: left;">注意，这可不仅仅是一张「图」，它有实质性的「地基」和「材料」，正在建设为一栋史无前例的摩天大厦。</p>
+<p style="text-align: left;">「地基」是当前时代的红利，先有新基建，5G、人工智能都是当前的基建重点；后有十四五，“统筹推进基础设施建设，加快建设交通强国”被写进了政策文件。而整条产业链上也汇集了无数整车厂、算法公司、雷达企业、车路协同设备提供商……大环境有目共睹。</p>
+<p style="text-align: left;">「材料」则是技术能力，是Apollo的L4自动驾驶能力，是飞桨平台上的各类算法，是车载操作系统的视觉感知、语音交互技术。</p>
+<p style="text-align: left;">这些基础能力让ACE智能交通引擎成为了目前中国唯一实现自主可控、车路行全栈技术闭环的下一代智能交通解决方案，既面向未来的自动驾驶时代，又兼容当下能够实现的车联网等功能。</p>
+<p style="text-align: left;">这样的战略，相当于同时押注了智能车时代和自动驾驶时代，自己对冲自己，无论时代的潮流走向哪个方向，都有值得发挥技术能力的空间。</p>
+<p>押中交通赛道 </p>
+<p style="text-align: left;">我们知道，要推进智能交通的发展，一方面要靠技术，另一方面要靠推进落地的业务能力，而这方面的买家是包括政府、交通服务平台等在内的一系列B端、G端客户。</p>
+<p style="text-align: left;">而世界互联网大会，结合其特殊背景和行业影响力，对ACE智能交通引擎的认可，意味着主流业界已经承认了百度智能交通在互联网行业中的领先地位。</p>
+<p style="text-align: left;">目前，百度正与包括保定、长沙、沧州、合肥在内的近20座城市展开智能交通落地实践。</p>
+<p style="text-align: left;">如果你不是个旅行达人，ACE智能交通引擎正在建设落地的城市，可能比很多人去过的地方都多。</p>
+<p style="text-align: left;">而这样的落地，贡献和效能也是十分明显的，百度集团副总裁、智能驾驶事业群组总经理李震宇在颁奖现场提到，“根据测算，以车路协同为基础的智能交通基础设施建设，将能够提升15%-30%的通行效率，这基本上也意味着对于GDP绝对值2.4%-4.8%的增长。” </p>
+<p style="text-align: left;">这个时间点我们可以看到，百度在智能交通领域的赌局，优势已经相当明显，离星火燎原只差一步之遥。</p>
+<p style="text-align: left;">现在，我们或许应该换个视角看百度了。它不再是一个单纯靠App，靠流量，靠用户数的纯互联网公司，而是面向大客户的解决方案公司。</p>
+<p style="text-align: left;">这也是当下to B互联网的浪潮所在。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span><span style="font-size: 16px;"></span></p>
+<p><strong>量子位年度智能商业峰会启幕，</strong></p>
+<p><strong>李开复等AI大咖</strong><strong>齐聚，</strong></p>
+<p><strong>邀你共探新形势下智能产业发展之路</strong></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">▽</span><span style="font-size: 16px;">限时早鸟优惠，扫码锁定席位</span><span style="font-size: 16px;">▽</span></span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜英国兜底卫星互联网项目OneWeb：斥资5亿美元，计划再发36颗卫星；英国网友：凭啥花纳税人钱？
+http://www.sohu.com/a/433798611_610300	46368
+<p>蕾师师 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">马斯克旗下 SpaceX 星链的最大竞争对手， <strong>OneWeb</strong>被收购了。 </p>
+<p style="text-align: left;">收购它的是英国政府和印度通信巨头Bharti Airtel公司，双方各出资5亿美元，把OneWeb从破产中拯救出来。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201123/b34a55cdc80745c2adc48d6c576a281f.jpeg" /></p>
+<p style="text-align: left;">在破产之前，OneWeb已经在全球发射了74颗卫星。</p>
+<p style="text-align: left;">OneWeb被收购后，加大了力度实施「造星」计划，计划在2022年发射完650颗卫星，连接全球任何一个角落，包括非洲、印度等等偏远贫困的山区。</p>
+<p style="text-align: left;"><strong>实现它的全球通网的梦想。</strong></p>
+<p>巨额投资，计划下月就发射36颗卫星 </p>
+<p style="text-align: left;">OneWeb接受收购重组之后，新任执行董事长米塔尔对《金融时报》说：“在融资方面，我认为没有困难。”</p>
+<p style="text-align: left;">据他介绍，有一家卫星网络服务公司愿意投资5000万美元，并且提供技术支持。</p>
+<p style="text-align: left;">还有位投资公司愿意已经出资了7亿美元。</p>
+<p style="text-align: left;">在OneWeb申请破产之前，这家投资公司已经投了 <strong>33亿美元</strong>了。 </p>
+<p style="text-align: left;">OneWeb计划在今年 <strong>12月17日再发射36颗卫星</strong>。 </p>
+<p style="text-align: left;">2021年加快发射速度，争取在完成 <strong>2022年在全球拥有650颗卫星</strong>的目标。 </p>
+<p style="text-align: center;"><img height="auto" width="782" src="http://p2.itc.cn/q_70/images03/20201123/c68d6c7381ca4121a7c0ea4befc7855a.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">OneWeb的愿景是：</p>
+<blockquote>
+<p>我们的愿景是：能够提供连接到任何地方、任何人的高吞吐量和高速的服务，改变将近半数没有网络连接的数十亿人生活。</p>
+</blockquote>
+<p>我们的愿景是：能够提供连接到任何地方、任何人的高吞吐量和高速的服务，改变将近半数没有网络连接的数十亿人生活。</p>
+<p style="text-align: left;">本次收购者是英国政府和印度富商苏尼尔·巴蒂·米塔尔（Sunil Bharti Mittal）。双方五五开，各出资5亿美元，共持股84.4％。</p>
+<p><img height="auto" width="600" src="http://p8.itc.cn/q_70/images03/20201123/94cc5061fb244ab5b15009fbebd9738e.png" /></p>
+<p style="text-align: left;">米塔尔的公司Bharti Airtel是印度第二大、全球最大的电信公司之一，在亚洲和非洲的18个国家和地区运营，客户群超过3.99亿。</p>
+<p style="text-align: left;">他收购OneWeb，是为了促进印度和其他发展中国家（包括非洲国家）的农村宽带连接，借此扩大自己业务。</p>
+<p style="text-align: left;">而另一位收购者是英国政府。</p>
+<p style="text-align: left;">英国政府对OneWeb进行投资一直存在争议，国会议员和英国网民不断发出质疑：</p>
+<p style="text-align: left;"><strong>怎么可以使用纳税人的钱来拯救一家倒闭公司？！</strong></p>
+<p style="text-align: left;">原来英国退出欧盟以后，被禁止使用欧盟的伽利略系统的部分内容。英国就一直致力于发展 <strong>独立的全球卫星导航服务。</strong>由于开发独立导航服务的高昂成本，该项目现一直被搁置。 </p>
+<p><img height="380px" width="379px" src="http://p8.itc.cn/q_70/images03/20201123/bd0734b6adbe4f30b3ab5a1841526b22.png" /></p>
+<p style="text-align: left;">正式批量部署了低轨道通信卫星的公司，只有马斯克的SpaceX和濒临破产的OneWeb。</p>
+<p style="text-align: left;">作为通信系统，OneWeb无法提供与GPS或伽利略相同的导航服务。</p>
+<p style="text-align: left;">但是据专家称，它可能提供了一种灵活的选择。</p>
+<p style="text-align: left;">因此，英国政府抓住机会收购OneWeb，为了 <strong>实现太空航天工业的雄心。</strong></p>
+<p style="text-align: left;">本次收购的特别顾问克里斯·麦克劳林（Chris McLaughlin）说：</p>
+<p style="text-align: left;">“一个主权国家需要拥有太空的主权能力。”</p>
+<p style="text-align: left;">“收购OneWeb，可以确保从一小部分成本开始。”</p>
+<p style="text-align: left;">英国网友觉得，英国政府收购这事，除了对国防有好处，不觉得对英国民众的生活有什么帮助。</p>
+<p><img height="auto" width="1454" src="http://p1.itc.cn/q_70/images03/20201123/4ac538fb88b547d9bc71f51d0c160625.png" /></p>
+<p style="text-align: left;">有网友直接对OneWeb的计划进行嘲讽，说它的竞争对手SpaceX，12个小时内就发了60颗卫星到轨道上了。</p>
+<p><img height="auto" width="1238" src="http://p6.itc.cn/q_70/images03/20201123/895b690af3874b1ebbfa2ab288887932.png" /></p>
+<p style="text-align: left;">有网友说：出于愚蠢脱欧原因，他们试图建立一个能与欧盟的伽利略导航系统竞争的系统，这次收购可能是该计划的一部分。</p>
+<p><img height="auto" width="1378" src="http://p7.itc.cn/q_70/images03/20201123/1cbf12213b6e4e6fab9e995488e3179e.png" /></p>
+<p>OneWeb的前生今世 </p>
+<p style="text-align: left;">OneWeb 成立于2012年，由曾被评为美国“电信领域最具影响力人物”的技术企业家 Gregory Thane Wyler 创办的全球通讯公司。</p>
+<p style="text-align: left;">主要子公司是OneWeb Satellites，这个子公司主要做卫星生产服务。</p>
+<p style="text-align: left;">OneWeb的目标是向“每个地方、每个人”提供卫星上网服务，以将互联网深入到农村和偏远地区及相关的一系列市场。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201123/f4e7b8c3a0bb420282543e0ad1a9e26e.jpeg" /></p>
+<p style="text-align: left;">2019年2月，OneWeb开始发射卫星。</p>
+<p style="text-align: left;">2015年，OneWeb 获得来自高通、维珍集团、空中客车、可口可乐等投资方的 5 亿美元融资。</p>
+<p style="text-align: left;">2020年3月，OneWeb已经发射了初级星座计划中648颗卫星中的74颗。</p>
+<p style="text-align: left;">2020年3月27日OneWeb申请破产。主要原因是流动资金危机导致OneWeb公司难以募集资金来完成剩下90%网络的建设和部署。</p>
+<p style="text-align: left;">还解雇原有雇员531人中的85%，但仍表示将维持卫星的运营。</p>
+<p style="text-align: left;">同时向法院申请重组，为卫星星座寻找新的所有者。</p>
+<p style="text-align: left;">后来，由英国政府与印度富商苏尼尔·巴蒂·米塔尔（Sunil Bharti Mittal）赢得了竞拍而获得了这家公司的所有权。</p>
+<p style="text-align: left;"><span>参考链接：</span></p>
+<p style="text-align: left;"><span>https://zh.wikipedia.org/wiki/%E4%B8%80%E7%BD%91%E5%85%AC%E5%8F%B8</span></p>
+<p style="text-align: left;"><span>https://www.oneweb.world/</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>「MEET 2021智能未来大会」启幕，</strong></p>
+<p><strong>早鸟票限时抢购中，扫码预定席位！</strong></p>
+<p><strong>李开复</strong>博士、 <strong>尹浩</strong>院士、清华 <strong>唐杰</strong>教授，以及来自 <strong>小米</strong>、 <strong>美团</strong>、 <strong>爱奇艺</strong>、 <strong>小冰</strong>、 <strong>亚信</strong>、 <strong>浪潮</strong>、容联、 <strong>澎思</strong>、 <strong>地平线</strong>、 <strong>G7</strong>等知名AI大厂的大咖嘉宾齐聚，期待关注AI的朋友报名参会、共探新形势下智能产业发展之路。 </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>

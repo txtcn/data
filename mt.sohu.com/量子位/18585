@@ -1,0 +1,669 @@
+➜苹果被曝重大系统漏洞：新款MacBook、iPhone 12、iPad Pro统统波及！root权限秒获取，隐私文件随意看
+http://www.sohu.com/a/432864986_610300	18576
+<p>鱼羊 郑集杨 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">这两天，苹果M1爆锤老同志英特尔的测评，刷了屏。</p>
+<p style="text-align: left;">左手一个低功耗，右手一个长续航，性能炸裂到让网友不禁替 <strong>I</strong>姓玩家感叹： </p>
+<p style="text-align: left;">姓 <strong>A</strong>的没有一个好东西。 </p>
+<p style="text-align: left;">不过，你永远不知道年轻人背后有没有下一个「不讲武德」的年轻人。（狗头）</p>
+<p style="text-align: left;">这不，有人刚把搭载M1处理器的MacBook Air拿到手，就来了一手漏洞攻破。</p>
+<p style="text-align: left;">那速度，真是好家伙。</p>
+<p>搭载M1的新款MacBook Air被发现漏洞 </p>
+<p style="text-align: left;">你看这台MacBook Air，搭载苹果自研的基于ARM的M1芯片，并且已经升级到了最新系统。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201119/049f67d580f14b79a284757945e17afc.png" /></p>
+<p style="text-align: left;">查看系统安全设置，可以看到macOS的系统保护正常开启。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201119/4bfd295b183c4fe680e4fa6596ca60ce.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">输入指令查看一下当前的用户权限，显示的是普通用户权限。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201119/d6d624697b34489681d2366a41a1d61d.png" /></p>
+<p style="text-align: left;">接下来，看好了，千万别眨眼。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201119/b498c50e68f64b7a969964d5963ac49d.gif" /></p>
+<p style="text-align: left;">对，你没看错，也就1秒不到的功夫，这次 <strong>提权攻击</strong>已经成功，攻击者取得了系统最高权限root身份！ </p>
+<p style="text-align: left;">不需要密码，只是一个脚本就搞定了。</p>
+<p style="text-align: left;">这也就意味着，攻击者可以任意读写设别中存储的通讯录、照片、文件等用户隐私了。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201119/f64d1723d5344e04bbe1975df1ab8981.png" /></p>
+<p style="text-align: left;">这样一记「突刺」，来自腾讯安全玄武实验室的最新安全尝试。</p>
+<p style="text-align: left;">其负责人TK教主于旸，事后发了一条微博：</p>
+<blockquote>
+<p>不得不说M1处理器性能确实很强，我们的测试程序瞬间就执行完了。</p>
+</blockquote>
+<p>不得不说M1处理器性能确实很强，我们的测试程序瞬间就执行完了。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201119/697ce35736354706bab5b865d5743c09.png" /></p>
+<p style="text-align: left;">看到这一幕，评论区的网友们也纷纷震惊：</p>
+<p style="text-align: left;"><span style="font-size: 16px;"></span><span style="font-size: 16px;">「啪的一下就执行完了，很快啊。」</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">「他说他是测试的，他可不是瞎测试的，终端，脚本，提权，训练有素，后来他说他搞过好几年安全。</span><span style="font-size: 16px;">啊，看来是有备而来…」</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span style="font-size: 16px;">「M1：</span><span style="font-size: 16px;">大意了，没有闪，很快哦很快！」</span></span></p>
+<p style="text-align: left;">你以为这就结束了？</p>
+<p style="text-align: left;">不，更为凡尔赛的是，苹果iPhone 12系列手机同样被这个「测试程序」干翻了。</p>
+<p style="text-align: left;">接着往下看。</p>
+<p>攻破iPhone 12 Pro </p>
+<p style="text-align: left;">同样的画风，同样的最新设备和最新系统，「受害者」iPhone 12 Pro登场了。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201119/fe4c0e44ca544d9cab83baccb0f35c33.png" /></p>
+<p style="text-align: left;">从系统设置中可以看到，用来发起攻击的测试App访问相册和通讯录的权限均已被关闭。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201119/53d949926bc34c4e9bd86c81a8c3a18d.png" /></p>
+<p style="text-align: left;">话不多说，直接打开测试App来看结果。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201119/5de51fab095c4435840374651b10c065.gif" /></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201119/8b832ebbbc754e2b8df6feaafbb9642b.gif" /></p>
+<p style="text-align: left;">就是啪的一下，明明系统说了不，该App仍然读取到了相册和通讯录，并上传到了攻击者的服务器端。</p>
+<p>漏洞意味着什么？ </p>
+<p style="text-align: left;">毫无疑问，这是 <strong>第一个</strong>被发现的能影响苹果Apple Silicon芯片设备的安全漏洞。 </p>
+<p style="text-align: left;">最主要的是，这个漏洞可以轻易调取利用原本不属于App的权限。</p>
+<p style="text-align: left;">通常，苹果的macOS、iOS终端设备对于App的权限，都是进行了严格的限制的，安全和隐私也是最令果粉称道之处。</p>
+<p style="text-align: left;">因此，受限的App不管是「左正蹬」还是「右鞭腿」，安全系统都是可以通通防出去的。</p>
+<p style="text-align: left;">但这次，通过这个漏洞，攻击者完全可以绕过这些限制措施，实现越权访问，读取用户设备上相册、通讯录，甚至是账号密码等隐私数据。</p>
+<p style="text-align: left;">腾讯安全玄武实验室就表示：</p>
+<blockquote>
+<p>理论上，任何恶意的App开发者都可以利用此漏洞。</p>
+</blockquote>
+<p>理论上，任何恶意的App开发者都可以利用此漏洞。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201119/39e960f8a57843638bc275500bba9762.jpeg" /></p>
+<p style="text-align: left;">而且漏洞影响的设备，也不少。 </p>
+<p style="text-align: left;">腾讯安全玄武实验室是这么说的：</p>
+<blockquote>
+<p>M1 MacBook 2020（macOS Big Sur 11.0.1）、iPhone 12 Pro（iOS 14.2）、iPad Pro（iOS 14.2）都存在这个漏洞。</p>
+<p>该漏洞也同样影响以前发布的设备，包括基于Intel芯片的MacBook，以及其它可以从App Store安装App的苹果设备。</p>
+</blockquote>
+<p>M1 MacBook 2020（macOS Big Sur 11.0.1）、iPhone 12 Pro（iOS 14.2）、iPad Pro（iOS 14.2）都存在这个漏洞。</p>
+<p>该漏洞也同样影响以前发布的设备，包括基于Intel芯片的MacBook，以及其它可以从App Store安装App的苹果设备。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201119/40db807c18394d61be69accfddbc5193.png" /></p>
+<p style="text-align: left;">芜湖，牵涉竟然如此之广，看来这波苹果确实是「大意了」，没有闪。 </p>
+<p style="text-align: left;">不过，果粉朋友们倒不要过分担心，「传统功夫，点到为止」。</p>
+<p style="text-align: left;">一方面，腾讯安全玄武实验室是全球顶尖的安全实验室，能发现漏洞也是实力使然；</p>
+<p style="text-align: left;">另一方面，按照江湖规矩，在消息曝光前，玄武实验室早已将漏洞技术细节报告给了苹果安全团队。</p>
+<p style="text-align: left;">所以，恐慌完全没有必要，但也需要战术上重视，及时更新安全补丁和更新系统。</p>
+<p>关于腾讯安全玄武实验室 </p>
+<p style="text-align: left;">最后，还是赘述补充下此次发现漏洞的安全大神团队。</p>
+<p style="text-align: left;">关注安全领域的盆友，对腾讯安全玄武实验室一定不会陌生。</p>
+<p style="text-align: left;">作为腾讯七大专业实验室之一，于2014年成立。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201119/829d3622efbc410892a697bdace262a0.png" /></p>
+<p style="text-align: left;">该实验室有一个光芒四溢的领头人：于旸，Tombkeeper，黑客圈名号「TK教主」，因为学医出身，所以还被尊称为「妇科圣手」。</p>
+<p style="text-align: center;"><img src="//p5.itc.cn/q_70/images03/20201119/8c41c47b1d584f5f8aa39e3c49e3a41b.png" /></p>
+<p><strong>△</strong>图源：腾讯 </p>
+<p style="text-align: left;">TK教主和腾讯安全玄武实验室，技术和武德都很高超，常常能找到别人难以发现的安全漏洞，也始终出现在各大厂商的致谢信中。</p>
+<p style="text-align: left;">这次苹果的漏洞发现，不过只是其光鲜战绩的冰山一角罢了。</p>
+<p style="text-align: left;">此前，玄武实验室还发现过针对条码阅读器的安全研究成果“BadBarcode”，是世界上首次实现通过发射激光入侵系统；</p>
+<p style="text-align: left;">在微软网络协议上，发现影响从Win95到Win10的 “BadTunnel” 超级漏洞，获得了微软专门致谢及5万美元奖励。</p>
+<p style="text-align: left;">玄武实验室，也是腾讯安全乃至业界信息安全力量的核心中坚之一。</p>
+<p style="text-align: left;">这次找到苹果新芯M1的安全漏洞，虽是基本操作，但速度之快，确实牛X.</p>
+<p style="text-align: left;">不说了，我要更新新款MacBook电脑去了（狗头）。</p>
+<p style="text-align: left;">最后，附上完整视频：</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span><span style="font-size: 16px;"></span></p>
+<p><strong>量子位年度智能商业峰会启幕，</strong></p>
+<p><strong>李开复等AI大咖</strong><strong>齐聚，</strong></p>
+<p><strong>邀你共探新形势下智能产业发展之路</strong></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">▽</span><span style="font-size: 16px;">限时早鸟优惠，扫码锁定席位</span><span style="font-size: 16px;">▽</span></span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜Science：导入了人类特有基因后，猴脑有了进化的趋势
+http://www.sohu.com/a/432876682_610300	18576
+<p>木易 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">这，可能是对人脑进化的一次意外。</p>
+<p style="text-align: left;">最近，科学家们将一个人类特有的基因转入到了猴子之中，使其长出了更加强大的头脑。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201119/9ad91c3190114a86bdd92cabbab01b8e.jpeg" /></p>
+<p style="text-align: left;">这项发表在Science的研究向我们揭示了：这个人类特有的基因，可能在人类大脑进化中发挥着重要作用。</p>
+<p style="text-align: left;"><img src="http://p3.itc.cn/q_70/images03/20201119/043316f365a0435e93acf5350aa5402c.png" /></p>
+<p style="text-align: left;">这很可能是人类区别于其他灵长类动物的重要原因。</p>
+<p style="text-align: left;">但是，这个基因的出现，却是一个「美丽的意外」。</p>
+<p style="text-align: left;">那么，这究竟是一项什么样的研究和意外呢？让我们来了解一下。</p>
+<p>特定的基因，让大脑更强大 </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">人类基因与其他灵长类动物只有些许的差别，但是人却有着更大的脑容量，而且更加聪明。</p>
+<p style="text-align: left;">在这些差别中，究竟是哪些基因导致了人的特别？是科学家们一直在研究的问题。</p>
+<p style="text-align: left;">而这次，科学家们便将研究的目光投向了一个人类特有的变量基因：ARHGAP11B。</p>
+<p style="text-align: left;">在研究中，这个人类特有的基因被转入到了普通绒猴之中并成功表达。</p>
+<p style="text-align: left;">经过101天培育后再对比，科学家们发现一些有意思的现象：相对于普通狨猴，转基因猴的脑子更加强大了。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201119/8686d0f0ff094aff8022e90a8601beba.jpeg" /></p>
+<p style="text-align: left;">对于具体的实验结果，研究作者Michael Heide这样描述道：</p>
+<blockquote>
+<p>普通绒猴的大脑新皮层被扩大，大脑表面被折叠，它的皮质板也比正常的厚。</p>
+<p>此外，我们可以看到心室外下区基底桡神经胶质祖细胞的数量增加，以及上层神经元的数量增加，这种神经元类型在灵长类动物进化过程中会增加。</p>
+</blockquote>
+<p>普通绒猴的大脑新皮层被扩大，大脑表面被折叠，它的皮质板也比正常的厚。</p>
+<p>此外，我们可以看到心室外下区基底桡神经胶质祖细胞的数量增加，以及上层神经元的数量增加，这种神经元类型在灵长类动物进化过程中会增加。</p>
+<p style="text-align: left;">总结来说，就是在导入ARHGAP11B基因后，灵长类动物大脑：</p>
+<ul>
+<li>新皮层的大小增加；</li>
+<li>大脑发生了折叠，折叠方式类似于人脑；</li>
+<li>产生神经元的相关生殖细胞类型增加；</li>
+<li>上层神经元数量增加。</li>
+</ul>
+<p style="text-align: left;">这些迹象都表明，转基因猴脑有了更高级进化的趋势。</p>
+<p style="text-align: left;">而在这些之中，新皮层的变化非常值得关注。因为，它与人的「智慧」有着密不可分的关系。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201119/a853767eb0ac45e8a0239e7cbffff41c.jpeg" /></p>
+<p style="text-align: left;">新皮层，是哺乳动物特有的。在进化史上很晚，大约 500 万年前才出现，是最后才出现的脑结构。</p>
+<p style="text-align: left;">虽然进化得晚，但是新皮层却有着极其特殊且强大的能力。</p>
+<p style="text-align: left;">首先，新皮层的体积在进化过程中变得越来越大，同时它还能通过复杂的折叠形成极大的面积。</p>
+<p style="text-align: left;">其次，新皮层承担着越来越关键的功能，比如感觉认知、空间认知、语言等，都由新皮层中的不同区域分担完成。</p>
+<p style="text-align: left;">而仅仅是只增加了一个基因，竟然可以带来如此的变化。</p>
+<p style="text-align: left;">也正因如此，研究人员推断：人类特有的ARHGAP11B基因，很可能在人类进化过程中导致了大脑新皮层的扩展，从而导致了人类大脑的快速进化。</p>
+<p style="text-align: left;">而这项研究，可能是人在进化过程中历史性时刻的复刻。</p>
+<p>「美丽的意外」 </p>
+<p style="text-align: left;">ARHGAP11B 产生于大约五百万年前，该基因产生的时候，人类的祖先和黑猩猩的祖先已经分化。</p>
+<p style="text-align: left;">尼安德特人、丹尼索瓦人及当今人类都拥有该基因。</p>
+<p style="text-align: left;">不过，随着尼安德特人和丹尼索瓦人的灭绝，如今只有人类拥有该基因。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201119/f9aa3e75b10d405795a2c0117c1a5dea.jpeg" /></p>
+<p style="text-align: left;">在2016年，科学家们发现：ARHGAP11B 中的一个C单碱基突变成了G，导致ARHGAP11B的mRNA丢失55个核苷酸，发生了移码突变，从而产生了目前具有关键功能的47个氨基酸序列。</p>
+<p style="text-align: left;">科学家推断，这个碱基替换发生的时间可能要晚得多，约在150万到50万年前出现。</p>
+<p style="text-align: left;">虽然说基因突变并不是稀罕事，但在ARHGAP11B的中，它的突变却是那么的刚好。</p>
+<p style="text-align: left;">一个细微的突变，便让人类形成了更大、更复杂的大脑，导致了人类的特异性，最终影响了人类的进化方向。</p>
+<p style="text-align: left;">这可以说，是一个非常「美丽」的意外了。</p>
+<p>研究团队 </p>
+<p style="text-align: left;">这项研究是由三位科学家带领的团队联手带来的。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201119/920304762f314a6c9cdeee0a8596647e.jpeg" /></p>
+<p style="text-align: left;"><strong>Wieland Huttner</strong>教授，来自德国马克斯·普朗克分子细胞生物学与遗传学研究所，现任该研究所主任。 </p>
+<p style="text-align: left;">团队的主要研究方向是神经干细胞、祖细胞及新皮质的发育和进化。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201119/c9a2b7aa46e1481a9629eee1cdc62905.jpeg" /></p>
+<p style="text-align: left;"><strong>Hideyuki Okano</strong>教授，来自庆应义塾大学医学院生理学系，他还是北京大学的客座教授。 </p>
+<p style="text-align: left;">团队研究方向是分子神经生物学，发育生物学和再生医学。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201119/6d22b54ca4a14d7a8112fee46e691c48.jpeg" /></p>
+<p><strong>△</strong>中间为Erika Sasaki研究员 </p>
+<p style="text-align: left;"><strong>Erika Sasaki</strong>研究员，来自日本川崎实验动物中央研究所（CIEA），现任绒猴研究部应用开发生物学实验室主任。 </p>
+<p style="text-align: left;">其团队的研究方向是使用绒猴诱导多能干细胞建立人类疾病模型。</p>
+<p style="text-align: left;">在动物上进行实验，产生的伦理问题无法避免。该项研究的研究人员也表示自己是完全符合伦理道德的规范。</p>
+<p style="text-align: left;">那么，对于这次转基因猴带来的「进化复刻」，你，是怎么看的呢？</p>
+<p style="text-align: left;">参考链接： </p>
+<p>https://science.sciencemag.org/content/369/6503/546</p>
+<p>https://www.mpi-cbg.de/research-groups/current-groups/wieland-huttner/group-leader/</p>
+<p>http://www.okano-lab.com/okanolab/okano</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span><span style="font-size: 16px;"></span></p>
+<p><strong>量子位年度智能商业峰会启幕，</strong></p>
+<p><strong>李开复等AI大咖</strong><strong>齐聚，</strong></p>
+<p><strong>邀你共探新形势下智能产业发展之路</strong></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">▽</span><span style="font-size: 16px;">限时早鸟优惠，扫码锁定席位</span><span style="font-size: 16px;">▽</span></span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜英伟达RTX 30系列卖得太好，财报业绩创新高，老黄：Arm收购完成时间已确定
+http://www.sohu.com/a/432876886_610300	18576
+<p>杨净 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">教主黄仁勋，最新心情应该很不错。</p>
+<p style="text-align: left;">因为业绩很不错。北京时间11月19日凌晨，英伟达公布了2021财年第三季度财报。</p>
+<blockquote>
+<p style="text-align: left;">第三季度营收47.26亿美元，同比增长 <strong>57%</strong>，比上一季度增长22%； </p>
+<p style="text-align: left;">游戏收入为22.7亿美元，同比增长 <strong>37%</strong>； </p>
+<p style="text-align: left;">数据中心营收达到19亿美元，比去年同期增长 <strong>162%</strong>。 </p>
+</blockquote>
+<p style="text-align: left;">第三季度营收47.26亿美元，同比增长 <strong>57%</strong>，比上一季度增长22%； </p>
+<p style="text-align: left;">游戏收入为22.7亿美元，同比增长 <strong>37%</strong>； </p>
+<p style="text-align: left;">数据中心营收达到19亿美元，比去年同期增长 <strong>162%</strong>。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201119/d9a001d446804eb99931816cc9b23604.png" /></p>
+<p style="text-align: left;">按照他们自己的说法，就是「Record」、「Record」、「Record」，三个都创造了历史新高。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201119/fdc5806a5418485586e49d172b22dfd9.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">此外，第三季度净利润为13.36亿美元，去年同期为8.99亿美元，同比增长49%。上一季度为6.22亿美元，增长115%。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201119/3631aaca8c284697a3246c1126bd867c.png" /></p>
+<p style="text-align: left;">对于这样的结果，老黄表示很满意。</p>
+<blockquote>
+<p style="text-align: left;">英伟达正在全线发力，在游戏、数据中心和整体上实现了创纪录的收入。</p>
+<p style="text-align: left;">全新的RTX 30显卡为我们提供了有史以来最大的代际飞跃，需求非常旺盛。</p>
+</blockquote>
+<p style="text-align: left;">英伟达正在全线发力，在游戏、数据中心和整体上实现了创纪录的收入。</p>
+<p style="text-align: left;">全新的RTX 30显卡为我们提供了有史以来最大的代际飞跃，需求非常旺盛。</p>
+<p style="text-align: left;">财报显示，全新的RTX显卡将促使英伟达收入同比增长 <strong>20%</strong>。 </p>
+<p style="text-align: left;">不过，资本市场似乎不太买账，股价在盘后交易中下跌近 <strong>2%</strong>。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201119/e792f21c500242f1a258bf091fe04216.png" /></p>
+<p style="text-align: left;">除此之外，英伟达还宣布了业内极大关注的「400亿美元收购Arm」进展。</p>
+<p style="text-align: left;">这项交易预计将在 <strong>2022财年第一季度</strong>完成，届时将在英国剑桥建设一个AI实验室，打造一台基于英伟达和Arm技术的人工智能超级计算机。 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201119/e9a2b938de1545d4aab59a327d2c5f35.png" /></p>
+<p>两大「吸金」业务表现 </p>
+<p style="text-align: left;">从营收结构上，这一季度英伟达大部分营收仍然来自于PC游戏业务，占总营收 <strong>48%</strong>。 </p>
+<p style="text-align: left;">尽管在上一季度，数据中心业务首次超过了游戏，成为了最赚钱的业务。但今年9月，英伟达发布最新RTX30系列游戏显卡，就让营收有了大幅提升。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201119/b01339185cc94d1b93adf481a1f02eb1.gif" /></p>
+<p style="text-align: left;">为何如此吸金？</p>
+<p style="text-align: left;">这款GPU，是基于最新安培架构、打造全新RT Core、Tensor Core、DLSS及流式多处理器，可带来逼真的光线追踪效果和先进的AI性能，性能是基于图灵的上一代产品的2倍。</p>
+<p style="text-align: left;">像《Fortnite》、《赛博朋克2077》、《使命召唤：黑色行动》等二十多款游戏都支持NVIDIA RTX实时光线追踪和DLSS人工智能超分辨率。</p>
+<p style="text-align: left;">此外，还推出了NVIDIA Reflex™，一套通过减少系统延迟来提高游戏反应时间的技术；NVIDIA Broadcast™，一款通过RTX加速AI效果提升麦克风、扬声器和网络摄像头质量的插件……</p>
+<p style="text-align: left;">不禁让很多网友直呼，NVIDIA YES！</p>
+<p style="text-align: left;">而老黄也表示，英伟达RTX已经让光线追踪成为游戏的 <strong>新标准</strong>。 </p>
+<p style="text-align: left;">当然，还有一个必不可少的吸金业务——「数据中心」。</p>
+<p style="text-align: left;">虽然这一季度被游戏业务反超，但是营收仍然保持增长，达到了「创纪录」的19亿美元，比去年同比增长 <strong>162%</strong>，与上一季度相比增长8%。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201119/45f195d7228a442aa666a3ccd1538bf9.jpeg" /></p>
+<p style="text-align: left;">从进展上看，「数据中心」业务动力着实不小。</p>
+<p style="text-align: left;">先是受到了亚马逊和甲骨文方面的肯定：继谷歌云平台和微软Azure之后，使用基于英伟达A100™ GPU的云计算平台。</p>
+<p style="text-align: left;">还宣布有五台超级计算机将使用英伟达的数据中心加速器或网络，其中有一台号称将打造「世界上最快的AI超级计算机」—— “Leonardo”。</p>
+<p style="text-align: left;">以及，在用于推理的MLPerf性能基准上继续保持领先，在数据中心和边缘计算系统的所有六个应用领域的所有测试中均获得胜利。</p>
+<p style="text-align: left;">其他业务上，</p>
+<blockquote>
+<p style="text-align: left;">专业可视化部门收入为2.36亿美元，去年同比下降27%，比上季度增长16%；</p>
+<p style="text-align: left;">汽车部门第三季度收入为1.25亿美元，比上一季度增长13％，比去年同期下降23％。</p>
+<p style="text-align: left;">原始设备制造商和知识产权的收入为1.94亿美元。</p>
+</blockquote>
+<p style="text-align: left;">专业可视化部门收入为2.36亿美元，去年同比下降27%，比上季度增长16%；</p>
+<p style="text-align: left;">汽车部门第三季度收入为1.25亿美元，比上一季度增长13％，比去年同期下降23％。</p>
+<p style="text-align: left;">原始设备制造商和知识产权的收入为1.94亿美元。</p>
+<p style="text-align: left;">对于这一结果，老黄表示很满意，</p>
+<blockquote>
+<p style="text-align: left;">英伟达正在全线发力，在游戏、数据中心和整体上实现了创纪录的收入。</p>
+</blockquote>
+<p style="text-align: left;">英伟达正在全线发力，在游戏、数据中心和整体上实现了创纪录的收入。</p>
+<p style="text-align: left;">对于未来的展望，除了财报上说的：</p>
+<blockquote>
+<p style="text-align: left;">下一季度营收将预计为48亿美元，上下浮动2%；GAAP毛利率预计为62.8％。</p>
+</blockquote>
+<p style="text-align: left;">下一季度营收将预计为48亿美元，上下浮动2%；GAAP毛利率预计为62.8％。</p>
+<p style="text-align: left;">老黄说了，将继续提升英伟达AI标准。比如A100计算平台，已经为全球顶级云计算公司部署。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201119/5d74c3ea62a94c1bbe73bb8361d55133.jpeg" /></p>
+<p style="text-align: left;">再比如，Arm的收购计划。</p>
+<blockquote>
+<p style="text-align: left;">这项交易将联合英伟达的AI计算平台和Arm广阔的生态系统，打造AI时代的顶级计算公司。</p>
+</blockquote>
+<p style="text-align: left;">这项交易将联合英伟达的AI计算平台和Arm广阔的生态系统，打造AI时代的顶级计算公司。</p>
+<p style="text-align: left;">时间也基本确定下来，预计在2022财年第一季度完成，按照英伟达的财年计算方式，在明年，也就是2021年即可完成。</p>
+<p style="text-align: left;">有了Arm的技术之后，英伟达就将在英国剑桥构建一个世界级的AI实验室，其中就一台AI超级计算机，还将与当地机构协作，提供研究奖学金。</p>
+<p style="text-align: left;">此外，英伟达还计划打造英国最强大的AI超级计算机Cambridge-1，该计算机基于英伟达DGX SuperPOD™系统，专为医疗和药物发现领域的AI研究而设计。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span><span style="font-size: 16px;"></span></p>
+<p><strong>量子位年度智能商业峰会启幕，</strong></p>
+<p><strong>李开复等AI大咖</strong><strong>齐聚，</strong></p>
+<p><strong>邀你共探新形势下智能产业发展之路</strong></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">▽</span><span style="font-size: 16px;">限时早鸟优惠，扫码锁定席位</span><span style="font-size: 16px;">▽</span></span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜MEET 2021 | 人工智能产业、科研、投资届大咖齐聚，共探智能科技新机会
+http://www.sohu.com/a/432877067_610300	18576
+<p>组委会 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">2019年末，量子位 <strong>「MEET 2020智能未来大会」</strong>成功举办，围绕“新价值、新边界、新格局”主题，中国工程院院士倪光南、创新工场董事长李开复、百度副总裁景鲲等15位顶级产业领袖现场进行了分享、纵论和思辨探讨。 </p>
+<p style="text-align: left;">2020年，黑天鹅来袭，加之经济环境、国际利益纠葛的影响，AI行业面临无数新挑战。</p>
+<p style="text-align: left;">如今，我们期待的2021年即将来临。是时候，给智能产业一个重新解构剖析的机会了！</p>
+<p style="text-align: left;">因此，「MEET 2021智能未来大会」再度启航，将继续携手智能科技 <strong>产业</strong>、 <strong>科研</strong>、 <strong>投资</strong>界领袖嘉宾，于2020年12月16日与大家线下见面。也期待关注智能产业的你，与数百位从业者一起参会，预见智能科技新未来。 </p>
+<p style="text-align: left;">大会将涵盖5G、新基建、智慧城市、自动驾驶、教育、新零售、金融、文娱等多个行业，围绕年度主题— <strong>重启·重塑·重构</strong>，与演讲嘉宾、参会者共同探讨未来智能产业发展之路。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201119/dd2e524aeb344bd2a3e5c5afc0b85882.jpeg" /></p>
+<p>主题：重启·重塑·重构 </p>
+<p style="text-align: left;">作为行业观察者，这是量子位的三大行业洞察和期待。</p>
+<p style="text-align: left;">第一个关键词： <strong>重启</strong></p>
+<p style="text-align: left;">突如其来的疫情，愈加变幻的地缘政治，我们既定的生活、工作和认知都已经被改变。</p>
+<p style="text-align: left;">对医疗健康的关注，线上会议、远程协作的工作方式，数字化与自动化的进展…… 都随着疫情之后的「重启」，有了更强的驱动力。</p>
+<p style="text-align: left;">所以「重启」还在哪些方面发生？重启如何改变我们的生产关系和生产力？</p>
+<p style="text-align: left;">第二个关键词： <strong>重塑</strong></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">生活、工作方式在改变，企业内部结构也面临「重塑」。新形势下，业务形态和结构如何调整？生产、制造与交付流程等如何最大限度「重塑」？</p>
+<p style="text-align: left;">业务、流程在变革，工作形式和大环境在变化，组织又该经历怎样的变革，才能适应新常态？</p>
+<p style="text-align: left;">第三个关键词： <strong>重构</strong></p>
+<p style="text-align: left;">企业面临重塑，行业格局也在变革冲击下「重构」。作为落地中的AI等前沿技术，技术模式、商业模式急需重构，以建立更深厚的竞争壁垒；政治环境的改变、内循环的需求，对供应链提出新要求。</p>
+<p style="text-align: left;">此外，新型基础设施建设带来了新机遇，科技产业的格局，将迎来怎样的「重构」？</p>
+<p style="text-align: left;">一切因2020黑天鹅开始，一切将在2021迎来改变。这也是量子位对于这场盛会的期待。</p>
+<p>确认出席嘉宾 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201119/c3fd981cad804094b361d7ac56710361.jpeg" /></p>
+<p style="text-align: left;">目前，已有十余位嘉宾确认参加大会并带来主题演讲。我们坚信，本次大会不仅能为参会者带来学习机会、开拓视野，更能创造线下交流的舞台，促进行业交流、合作共赢，进一步推动中国AI向前发展。 </p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201119/23da507d06574186b5243ce1435935e4.png" /></p>
+<p style="text-align: left;"><strong>李开复</strong>，创新工场董事长兼CEO。李开复博士于2009年创立创新工场，专注于科技创新型的投资理念与最前沿的技术趋势。曾担任谷歌中国全球副总裁兼大中华区总裁，担任微软全球副总裁期间开创了微软亚洲研究院，并曾服务于苹果、SGI等知名科技企业。 </p>
+<p style="text-align: left;">他被《时代》杂志评选为2013影响全球100位年度人物之一，获得《Wired连线》本世纪推动科技全球25位标杆人物、2018亚洲商界领袖奖等殊荣。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201119/3ee143716aa346a390d06f0e892f3e40.png" /></p>
+<p style="text-align: left;"><strong>尹浩</strong>，中国科学院院士。通信网络领域专家，军事科学院系统工程研究院研究员，中国科学院院士，博士生导师。目前主要研究方向为卫星通信和物联网技术。 </p>
+<p style="text-align: left;">尹浩院士长期从事通信网络理论方法研究、体系结构设计和技术应用等方面研究，主持完成多项国家和国防重点科研与工程建设项目，获国家和省部级科技进步奖多项。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201119/ecf50481c5e846b4823c73a5aa962467.png" /></p>
+<p style="text-align: left;"><strong>崔宝秋</strong>，小米集团副总裁，小米集团技术委员会主席。创立并管理人工智能与云平台团队，为小米所有业务提供平台性技术支撑，并主导了“云计算－大数据－人工智能”这一技术变革主线。 </p>
+<p style="text-align: left;">崔宝秋博士现在所负责的小米集团技术委员会，将重点强化技术文化和工程师文化，着力提升集团的技术方向决策，加大技术人才招聘、培养、任命和激励，带领公司探索未来技术趋势。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201119/6ff265f5335146dca086fdf70d882699.png" /></p>
+<p style="text-align: left;"><strong>夏华夏</strong>，美团副总裁、首席科学家、AI平台总裁。北京智源人工智能研究院理事，中国电动汽车百人会理事，清华大学人工智能国际治理研究院发展与合作委员会副理事长，2020年青年北京学者。 </p>
+<p style="text-align: left;">夏博士本科毕业于清华大学，博士毕业于美国加利福尼亚大学圣地亚哥分校，曾先后任职于谷歌美国总部、百度等企业。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201119/4af88cac92104f39b1f73fdbc5515e7a.png" /></p>
+<p style="text-align: left;"><strong>李笛</strong>，小冰公司首席执行官。他领导一支分布在多个国家的全球团队，负责人工智能小冰框架系统的技术研发、产品革新及商业落地，主持公司的日常经营、行政和业务活动。 </p>
+<p style="text-align: left;">李笛毕业于清华大学，曾任微软（亚洲）互联网工程院常务副院长、微软小冰全球总经理及微软Bing搜索引擎亚洲区总经理。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201119/c52538776b8845b9a8e1eda83f7913ed.png" /></p>
+<p style="text-align: left;"><strong>欧阳晔</strong>，亚信科技CTO、高级副总裁。美国通信业最早致力于通信人工智能与大数据技术领域研究的科学家之一，美国第一大移动通信运营商威瑞森电信(Verizon)历史上最年轻的院士Fellow 。 </p>
+<p style="text-align: left;">欧阳晔在多个国际标准、技术、工业和学术组织任职。获得2017年度美国杰出亚裔工程师大奖、2018-19年度TMForum电信业未来数字领袖大奖、IEEE国际大数据会议最佳论文奖等奖项。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201119/7b91f8037d344dc6b9da18bb290be5a4.png" /></p>
+<p style="text-align: left;"><strong>谢丹铭</strong>，爱奇艺副总裁。毕业于复旦大学，曾任职英特尔并在P2P网络、人机交互、视觉计算等方面主导了诸多创新工作，拥有多年的一线技术研发和大型团队管理经验，在人工智能，云计算，安全和创新等领域有深入的研究。 </p>
+<p style="text-align: left;">谢丹铭就职于爱奇艺后主要聚焦于AI，云服务和创新应用孵化。致力于追求先进技术与产业应用结合，通过技术创新为爱奇艺的业务做深度赋能。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201119/742a942fa1ef43d2a396f7b176fc8092.png" /></p>
+<p style="text-align: left;"><strong>刘军</strong>，浪潮信息副总裁，浪潮AI&amp;HPC 产品线总经理。长期从事人工智能和高性能计算产业创新工作，曾获国家科技进步二等奖及北京市科学技术一等奖。 </p>
+<p style="text-align: left;">参与编着《高效能计算机系统设计与应用》、《超算竞赛导引》、《High Performance Computing on the Intel® Xeon Phi™》等专着。参与全球最大规模平方公里阵列射电望远镜SKA项目的SDP科学数据处理工作组。发起组织ASC世界大学生超级计算机竞赛、人工智能计算大会AICC。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201119/f5ae70d16caa4f8f9d31dd5e3e068d52.png" /></p>
+<p style="text-align: left;"><strong>马原</strong>，澎思科技创始人兼CEO，AIoT生态平台首席设计师。 <span style="font-size: 16px;">致力于将澎思打造为全球领先的AIoT普惠生态平台，驱动尖端AI技术向普惠</span><span style="font-size: 16px;">性的智能服务持续进化，推动AI产业化落地进程。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201119/a2ced754e090425f9fbf247007e95a82.png" /></p>
+<p style="text-align: left;"><strong>熊谢刚</strong>，容联云通讯CPO。在通信和呼叫中心领域有超过16年的市场经营，曾任CISCO中国协作通信产品和WEBEX产品技术总监、AVAYA公司大中华区CTO、工信部国家呼叫中心标准委员会专家组特聘专家。 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201119/17835141116546af94886b7857d0861a.jpeg" /></p>
+<p style="text-align: left;"><strong>唐杰</strong>，清华大学计算机系教授、系副主任，获杰青。研究人工智能、认知图谱、数据挖掘、社交网络和机器学习。发表论文300余篇，引用16000余次，获ACM SIGKDD Test-of-Time Award（十年最佳论文）。 </p>
+<p style="text-align: left;">唐杰主持研发了研究者社会网络挖掘系统AMiner。担任IEEE T. on Big Data、AI OPEN主编以及WWW’21、CIKM’16、WSDM’15的PC Chair。获北京市科技进步一等奖、人工智能学会一等奖、KDD杰出贡献奖。</p>
+<p>邀请中嘉宾 </p>
+<p style="text-align: left;">除了上述确认出席嘉宾，更多AI领域的资深从业者、学者专家，也在陆续沟通确认中。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201119/83f93f357e234546a9dfdc0581ffe127.png" /></p>
+<p>参会报名 </p>
+<p style="text-align: left;"><strong>会议时间</strong>：2020年12月16日，9:00-17:00 </p>
+<p style="text-align: left;"><strong>会议地址</strong>：北京市东城区·金隅喜来登酒店3层 </p>
+<p>榜单发布 </p>
+<p style="text-align: left;">2018年起，量子位发起了 <strong>「中国人工智能年度评选」</strong>，如今已经成为AI行业最具影响力的评选之一。 </p>
+<p style="text-align: left;">现在，「2020中国人工智能年度评选」已启动报名，将从公司、人物、产品、社区等维度，推出升级版榜单，并在MEET 2021大会上正式发布。</p>
+<p style="text-align: left;">今年，我们将继续坚持权威性、公信力、专业性的核心价值，秉持客观、公正的原则，并邀请行业内知名专家参与监督，必将为关注AI的朋友交出一份值得参考的答卷。</p>
+<p style="text-align: left;">评选报名截止于11月20日，欢迎各领域AI企业报名。具体评选标准、参选方式，请参见报名申请表： </p>
+<p>合作联系 </p>
+<p style="text-align: left;">期待更多优秀AI企业、媒体、投资机构参与、合作。有合作意向的小伙伴可以联系量子位：</p>
+<p style="text-align: left;">微信：quxin_summer</p>
+<p style="text-align: left;">邮箱：quxin@qbitai.com</p>
+<p style="text-align: left;"><strong>媒体合作：</strong></p>
+<p style="text-align: left;">邮箱：liming@qbitai.com</p>
+<p>— <strong>完</strong>— </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜4个可以写进简历的京东NLP项目：医疗分诊、营销文案生成、商品图谱、对话系统
+http://www.sohu.com/a/432877250_610300	18576
+<p>允中 发自 凹非寺 </p>
+<p>量子位 编辑 | 公众号 QbitAI </p>
+<p style="text-align: left;">想成为NLP工程师，但是否因为没有实际项目经历而发愁？是否希望丰富简历中的项目经验，从而提高面试的通过率？是否想尝试有技术含量的项目，以后为进大厂而准备？这就是贪心科技设置实战训练营的初衷。</p>
+<p style="text-align: left;"><strong>京东智联云</strong>联合 <strong>贪心科技</strong>推出了《 <strong>京东NLP项目实战训练营</strong>》，让学员通过4个月完成4个非常具有挑战的京东落地应用项目， <strong>智能医疗分诊项目</strong>、 <strong>智能营销文案生成项目</strong>、 <strong>智能对话系统项目</strong>、 <strong>同类商品搜索项目</strong>。完成这些项目的同时，你也会学会使用BERT、GCN、GAT等前沿技术原理和应用。 </p>
+<p style="text-align: left;"><img src="http://p5.itc.cn/q_70/images03/20201119/bf129a021f004e59b23447bb536159dc.png" /></p>
+<p>四大真实京东实战场景 </p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201119/218abc974ab54f188c1659aa6cbd4f2f.jpeg" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201119/ef01076a34504ca8b373bbed68fc99e4.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><img src="http://p8.itc.cn/q_70/images03/20201119/7b22f324cc194701b5e5112dc13d865e.jpeg" /></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201119/d358d323bc9c4d509925d9a5e309e67c.jpeg" /></p>
+<p style="text-align: center;"><strong>《京东NLP企业项目实战训练营3期》</strong></p>
+<p><strong>专注于培养行业TOP10%的NLP工程师</strong></p>
+<p>报名、课程咨询 </p>
+<p>👇👇👇 </p>
+<p>01 课程大纲 第一章：京东健康智能分诊项目 </p>
+<p style="text-align: left;"><strong>Part 01：文本处理与特征工程</strong></p>
+<ul>
+<li>BagofWords模型</li>
+<li>从tf-idf到Word2Vec</li>
+<li>SkipGram与CBOW</li>
+<li>HierarhicalSoftmax与NegativeSampling</li>
+<li>FastText</li>
+<li>N-gram与平滑操作</li>
+<li>文本特征工程</li>
+<li>工具的使用：Gensim、Sklearn、jieba的使用</li>
+<li>论文：SkipGram论文解读&amp;复现</li>
+<li>专题：如果阅读科研论文</li>
+<li>项目：京东健康智能分诊项目讲解（1）</li>
+</ul>
+<p style="text-align: left;"><strong>Part 02：基于统计学习的分类方法</strong></p>
+<ul>
+<li>决策树</li>
+<li>CART模型</li>
+<li>Bagging&amp;Boosting</li>
+<li>随机森林和GBDT</li>
+<li>XGBoost</li>
+<li>精确率、召回率</li>
+<li>F1，AUC</li>
+<li>论文：XGBoost的Paper和代码解读</li>
+<li>实战：LightGBM的解读与实战</li>
+<li>专题：如何处理样本不平衡问题</li>
+<li>项目：京东健康智能分诊项目讲解（2）</li>
+</ul>
+<p style="text-align: left;"><strong>Part 03：基于深度学习的分类方法</strong></p>
+<ul>
+<li>统计学习与深度学习的区别</li>
+<li>深度学习与浅层学习</li>
+<li>从逻辑回归到神经网络</li>
+<li>深度学习的非线性性质</li>
+<li>损失函数与优化器</li>
+<li>神经网络的调参</li>
+<li>实战：Pytorch的基础使用</li>
+<li>实战：使用Pytorch实现神经网络和卷积神经网络</li>
+<li>专题：不同优化器比较：Momentum,AdaGrad,RMSProp,Adam</li>
+<li>项目：京东健康智能分诊项目讲解（3）</li>
+</ul>
+<p style="text-align: left;"><strong>Part 04：CNN与工业界模型部署</strong></p>
+<ul>
+<li>CNN，TextCNN</li>
+<li>模型的部署</li>
+<li>Docker的使用</li>
+<li>Git&amp;Jenkins的使用</li>
+<li>Kubernetes的使用</li>
+<li>Flask的使用</li>
+<li>实战：Neufoundry平台上的模型部署</li>
+<li>专题：智能分诊前沿技术讲解</li>
+<li>京东嘉宾：京东的文本分类部署</li>
+<li>京东嘉宾：京东的特征工程技术方案</li>
+</ul>
+<p style="text-align: left;"><strong>Part 05：递归神经网络RNN与BPTT算法</strong></p>
+<ul>
+<li>BPTT与RNN中的梯度消失、爆炸</li>
+<li>梯度爆炸的处理</li>
+<li>LSTM与GRU</li>
+<li>基于LSTM的文本分类</li>
+<li>Bi-LSTM与DeepBi-LSTM</li>
+<li>RNN与LSTM的可视化</li>
+<li>实战：基于LSTM的情感分类</li>
+<li>实战：利用Pytorch实现多层LSTM</li>
+<li>实战：基于LSTM语言模型的文本生成</li>
+<li>专题：GPU技术详解</li>
+<li>项目：京东智能营销文本生成项目讲解（1）</li>
+</ul>
+<p style="text-align: left;"><strong>Part 06：Seq2Seq模型与营销文本生成</strong></p>
+<ul>
+<li>Encoder-Decoder模型以及各类应用场景</li>
+<li>Seq2Seq模型与注意力机制</li>
+<li>GreedyDecoding</li>
+<li>BeamSearch</li>
+<li>基于Seq2Seq的文本生成</li>
+<li>文本生成的评价指标</li>
+<li>实战：基于Seq2Seq的机器翻译</li>
+<li>论文：LSTM-CNNs论文</li>
+<li>项目：京东智能营销文本生成项目讲解（2）</li>
+</ul>
+<ul>
+<li>抽取式文本摘要和生成式文本摘要</li>
+<li>Pointer-GeneratorNetwork</li>
+<li>BeamSearch优化思路</li>
+<li>LengthNormalization</li>
+<li>CoverageNormalization</li>
+<li>EndofSentenceNormalization</li>
+<li></li>
+<li>实战：PGN+Seq2Seq解读</li>
+<li>论文：京东论文解读</li>
+<li>论文：FasterRCNN解读</li>
+<li>项目：京东智能营销文本生成项目讲解（3）</li>
+</ul>
+<p style="text-align: left;"><strong>Part 08：对话系统技术概览</strong></p>
+<ul>
+<li>对话系统的分类方式</li>
+<li>检索方法和生成方法</li>
+<li>任务导向型系统和非任务导向型系统</li>
+<li>索引的建立</li>
+<li>对话系统中的召回</li>
+<li>对话系统中的排序</li>
+<li>倒排索引和WAND算法</li>
+<li>倒排索引的空间优化</li>
+<li>信息检索系统的评估方式</li>
+<li>实战：倒排索引的实现</li>
+<li>实战：VariableByteCompression的检索系统实现</li>
+<li>项目：京东智能对话系统项目讲解（1）</li>
+</ul>
+<p style="text-align: left;"><strong>Part 09：检索系统中的召回</strong></p>
+<ul>
+<li>ApproximateNearestNeighborSearch</li>
+<li>KD树</li>
+<li>LSH技术</li>
+<li>近似图（ProximityGraph）</li>
+<li>SmallWordGraph</li>
+<li>NSW和HNSW</li>
+<li>论文：HNSW论文解读</li>
+<li>项目：京东智能对话系统项目讲解（2）</li>
+</ul>
+<p style="text-align: left;"><strong>Part10：对话系统中的排序</strong></p>
+<ul>
+<li>LearningtoRank技术介绍</li>
+<li>Point-wiseApproach</li>
+<li>Pair-wiseApproach</li>
+<li>List-wiseApproach</li>
+<li>常用模型的评估指标</li>
+<li>MAP，NDCG</li>
+<li>相似度计算方法</li>
+<li>WordMover’sDistance</li>
+<li>论文：WMD的实现</li>
+<li>项目：京东智能对话系统项目讲解（3）</li>
+</ul>
+<p style="text-align: left;"><strong>Part11：自注意力机制以及Transformer</strong></p>
+<ul>
+<li>从Attention到Self-Attention</li>
+<li>Transformer的应用</li>
+<li>Transformer模型详解</li>
+<li>Transformer的实现</li>
+<li>Reformer</li>
+<li>Synthesizer</li>
+<li>Low-RankBottleneck</li>
+<li>论文：TransformerXL论文解读</li>
+<li>项目：京东智能对话系统项目讲解（4）</li>
+<li>京东嘉宾：工业界的检索模型和L2R</li>
+</ul>
+<p style="text-align: left;"><strong>Part12：基于BERT和Transformer的闲聊引擎</strong></p>
+<ul>
+<li>闲聊引擎技术框架</li>
+<li>预训练模型简介</li>
+<li>AE与VAE</li>
+<li>BERT模型详解</li>
+<li>BERT的不同训练方法</li>
+<li>GPT2</li>
+<li>GPT3</li>
+<li>ALBERT</li>
+<li>实战：BERT的fine-tuning实战讲解</li>
+<li>论文：UniLM解读与复现</li>
+<li>论文：XLNet的解读与复现</li>
+<li>项目：京东智能对话系统项目讲解（5）</li>
+<li>京东嘉宾：工业 界的生成式对话模型</li>
+</ul>
+<p style="text-align: left;"><strong>Part13：基于图的学习</strong></p>
+<ul>
+<li>图表示概论</li>
+<li>图与知识图谱</li>
+<li>基于图表示的应用场景</li>
+<li>关于图的一些特征</li>
+<li>关于图的一些常见算法</li>
+<li>Deepwalk和Node2vec</li>
+<li>TransE图嵌入模型</li>
+<li>DSNE图嵌入模型</li>
+<li>实战：基于人工特征的链接预测实现</li>
+<li>实战：基于Node2Vec的链接预测实现</li>
+<li>项目：京东同类商品搜索项目讲解（1）</li>
+</ul>
+<p style="text-align: left;"><strong>Part14：基于图神经网络的EntityLinking</strong></p>
+<ul>
+<li>什么是实体</li>
+<li>EntityLinking的简单解法</li>
+<li>基于图的EntityLink思路</li>
+<li>卷积神经网络回顾</li>
+<li>在图中的卷积</li>
+<li>图中的信息传递</li>
+<li>图卷积神经网络（GCN）</li>
+<li>基于GCN的EntityLinking</li>
+<li>论文：GCN论文解读和复现</li>
+<li>项目：京东同类商品搜索项目讲解（ 2）</li>
+</ul>
+<p style="text-align: left;"><strong>Part15：GAT、GraphSage与EntityLinking</strong></p>
+<ul>
+<li>注意力机制回顾</li>
+<li>注意力机制与图表示</li>
+<li>GAT模型详解</li>
+<li>GAT与GCN的比较</li>
+<li>GraphSage详解</li>
+<li>GAT与知识图谱应用</li>
+<li>对于Heterogenous数据处理</li>
+<li>论文：GAT论文解读与复现</li>
+<li>论文：GraphSage论文解读与复现</li>
+<li>项目：京东同类商品搜索项目讲解（3）</li>
+</ul>
+<p style="text-align: left;"><strong>Part16：图神经网络与其他应用</strong></p>
+<ul>
+<li>NodeClassification</li>
+<li>GraphClassification</li>
+<li>LinkPrediction</li>
+<li>CommunityDetection</li>
+<li>推荐系统</li>
+<li>文本分类</li>
+<li>图神经网络的未来发展</li>
+<li>论文：图神经网络综述</li>
+<li>项目：京东同类商品搜索项目讲解（4）</li>
+</ul>
+<p><strong><img src="http://p1.itc.cn/q_70/images03/20201119/e17a26cb362a40a0a767b07945e85c98.png" /></strong></p>
+<p style="text-align: center;"><strong>《京东NLP企业项目实战训练营3期》</strong></p>
+<p><strong>专注于培养行业TOP10%的NLP工程师</strong></p>
+<p>报名、课程咨询 </p>
+<p>👇👇👇 </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201119/f0e9ab26aa7b4a3fa495f906f626a8cb.jpeg" /></p>
+<p>01 科学的实战安排 </p>
+<p style="text-align: left;">每一期的训练营都有严谨科学的安排，每周伴随着理论、实战、案例分享、项目讲解等课程一系列课程内容。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201119/3446413a15884a8fad6ac709e67a7850.png" /></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201119/6e42cd4a3bc0465a833cdb5a636224c8.png" /></p>
+<p style="text-align: right;"><span style="font-size: 16px;">△ </span><span style="font-size: 16px;">节选前两周部分课程安排，详细安排请跟咨询师询问</span></p>
+<p>02 项目讲解&amp;实战帮助 </p>
+<p style="text-align: left;">训练营最终的目的是帮助学员完成项目，理解项目中包含核心知识技能，训练营中会花大量的时间帮助学员理解项目以及所涉及到的实战讲解。每一个项目会配套详细的实验手册、工程手册、还有注解的项目代码，所有实战过程都在云端GPU上完成。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201119/d1db860e76b543efb578adbddaffb9a4.png" /></p>
+<p><img height="auto" width="1899" src="http://p2.itc.cn/q_70/images03/20201119/a83af799ff7e445aaa820557d1a3c694.png" /></p>
+<p style="text-align: right;"><span style="font-size: 16px;"><span style="font-size: 16px;">△ </span></span><span style="font-size: 16px;">节选往期部分课程安排</span></p>
+<p>03 最佳工程实战 </p>
+<p style="text-align: left;">来自京东智联云等业界专家来讲述工业界的最佳工程实战，如AI模型的部署、代码编写、模型的调参以及debug等技术。</p>
+<p style="text-align: left;"><img height="auto" width="1229" src="http://p1.itc.cn/q_70/images03/20201119/6adfbaae494a465ea5838384cbf8da25.png" /></p>
+<p style="text-align: right;"><span style="font-size: 16px;">△ </span><span style="font-size: 16px;">源自京东智联云AI某模块架构图</span></p>
+<p>04 专业的论文解读 </p>
+<p style="text-align: left;">作为AI工程师，阅读论文能力是必须要的。在课程里，我们每1-2周会安排一篇经典英文文章供学员阅读，之后由老师帮助解读。</p>
+<p style="text-align: left;"><img src="http://p2.itc.cn/q_70/images03/20201119/f687952919cc4338a600ab5bacd4e0dd.png" /></p>
+<p style="text-align: right;"><span style="font-size: 16px;">△ </span><span style="font-size: 16px;">节选往期部分论文安排</span></p>
+<p>05 行业案例分享 </p>
+<p style="text-align: left;"><img src="http://p3.itc.cn/q_70/images03/20201119/411514d6bac44391be8aa4adfaf26b4d.png" /></p>
+<p style="text-align: right;"><span style="font-size: 16px;">△ </span><span style="font-size: 16px;">专家分享</span></p>
+<p style="text-align: left;">《Google YouTube 基于深度学习的视频推荐》</p>
+<p style="text-align: left;">嘉宾简介：曾博士</p>
+<p style="text-align: left;">计算机视觉，机器学习领域专家</p>
+<p style="text-align: left;">先后在CVPR，ACMMM，TPAMI，SCI 期刊，EI 会议等发表超过30篇论文</p>
+<p>06 日常社群答疑 </p>
+<p style="text-align: left;">为了帮助解决学员遇到的问题，专业助教会提供全天社群答疑服务。我们的助教均来来自于一线AI公司和国内外名校，扎实的理论和工业界应用也是我们选拔助教老师的重要标准，拒绝空谈理论。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201119/82b15708a40145a8a35d4d99558bccf2.png" /></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201119/591ae927437f41958c2e4e15c9ee32e7.png" /></p>
+<p style="text-align: right;"><span style="font-size: 16px;">△ </span><span style="font-size: 16px;">社群内老师专业的解答</span></p>
+<p>07 丰富的线下交流活动 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201119/0f723e34f3e04f03be4eaea04526b670.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201119/c88d8b9f670546ffba1cccb677319242.jpeg" /></p>
+<p style="text-align: right;"><span style="font-size: 16px;">△ </span><span style="font-size: 16px;">参观京东总部，倾听大咖分享</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201119/6a548413a5174609b5e99f249f05f33d.png" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201119/d75386a21477449fb977695103179af2.png" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201119/88f941266ede4aaaae0bc4ecbb8bd8d2.png" /></p>
+<p>报名须知 </p>
+<p style="text-align: left;">1、本课程为收费教学。 </p>
+<p>2、本期训练营 <strong>招生名额有限</strong>。 </p>
+<p>3、品质保障！ <strong>正式开课后7天内，无条件全额退款</strong>。 </p>
+<p>4、学习本课程需要具备一定的机器学习基础。 </p>
+<p style="text-align: center;">《京东NLP企业项目实战训练营3期》 </p>
+<p>专注于培养行业TOP10%的NLP工程师 </p>
+<p>报名、课程咨询 </p>
+<p>👇👇👇 </p>
+<p>— <strong>完</strong>— </p>

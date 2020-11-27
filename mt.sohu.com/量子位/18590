@@ -1,0 +1,351 @@
+➜NeurIPS 2020中国入选论文：新一代算法“鉴黄师”诞生，中科院计算所研究生一作
+http://www.sohu.com/a/433938082_610300	16798
+<p>贾浩楠 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">不知道那位不愿意透露姓名的唐马儒先生，现在看太阳还是不是绿色的？</p>
+<p style="text-align: center;"><img height="242px" width="312px" src="http://p2.itc.cn/q_70/images03/20201124/6fee0889e4464fd1a04d2d1ca09f9ddd.png" /></p>
+<p style="text-align: left;">第一代网络鉴黄师，牺牲小我，造福了千万家。</p>
+<p style="text-align: left;">撇开玩笑不谈，维持健康良好的网络环境，只靠人工鉴黄，根本不现实。</p>
+<p style="text-align: left;">这也是近两年AI在网络安全应用的热门方向。</p>
+<p style="text-align: left;">今年的AI顶会NeurIPS 2020，阿里安全团队一篇名为 <strong>《</strong><strong>启发式领域适应 》</strong><span>（Heuristic Domain Adaptation）</span>的论文入选。 </p>
+<p style="text-align: left;">这项研究的重要之处，在于将 <strong>迁移学习</strong>运用在网络涉黄信息的鉴别，实现了同一模型在不同场景下的低成本训练部署。 </p>
+<p style="text-align: left;"><strong>AI鉴黄师有了通用性</strong>，唐马儒们，终于解放了。 </p>
+<p>从电商到直播：一套架构应对全场景 </p>
+<p style="text-align: left;">AI鉴黄不是新鲜事，2018年，微软、谷歌、亚马逊等等巨头还搞过算法鉴黄大赛，谷歌摘得桂冠。</p>
+<p style="text-align: left;">但是，以往的鉴黄算法，只针对特定场景。</p>
+<p style="text-align: left;">即使同样针对图像的算法，在面对不同的应用案例，比如社交媒体或电商时，也需要重新收集数据进行训练。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201124/f9241c2b993d416d9fa8f84f2b334058.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">忽略某一特定场景下有针对性的训练，直接套用其他现成算法，结果是十分糟糕的。</p>
+<p style="text-align: left;">风险或违规样本收集成本较高，业务存在对抗和变异等特点，使得深度学习模型无以为继，因此研究探索基于小样本和增量学习技术的模型训练与迭代，变得非常重要。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201124/8fc6e4fa6af7488f9f9b3f55683e05e6.jpeg" /></p>
+<p style="text-align: left;">现实的情况是，大部分算法面临着少量训练数据和广泛应用场景的矛盾。</p>
+<p style="text-align: left;">阿里安全的解决方案，是将经典的“启发式搜索”思想，融入到领域适应问题中，来解决在数据不充分情况下的模型训练问题，实现将人工智能从现有数据学习到的知识迁移到未知场景中。</p>
+<p style="text-align: left;">比如，在鉴黄场景下，目前该研究成果技术可直接从电商场景迁移至直播场景中应用。</p>
+<p style="text-align: left;"><img height="auto" width="610" src="http://p3.itc.cn/q_70/images03/20201124/bb235cfc37b64a798b0fe46cac271695.png" /></p>
+<p style="text-align: left;">通过将“启发式搜索”思想融入，研究团队构建了启发式领域适用的基础架构，并通过相似性、独立性、终止点等角度进行约束，使算法模型在相同计算量下，达到最佳效果。</p>
+<p style="text-align: left;">针对复杂任务和场景，迁移学习的鲁棒性与可扩展性主要体现为如何更好地提取领域不变特征。</p>
+<p style="text-align: left;">但阿里安全资深算法专家华棠认为，迁移学习的特性，使得这套原理框架可以移植到其他诸多领域，比如在线教育、文娱行业等等。</p>
+<p>核心：HDAN </p>
+<p style="text-align: center;"><img height="312px" width="322px" src="http://p9.itc.cn/q_70/images03/20201124/3da556faf39145a99ba8513c8f69b379.png" /></p>
+<p style="text-align: center;"><img height="auto" width="726" src="http://p1.itc.cn/q_70/images03/20201124/a34dbb4a9c06428181cec3f3f2bf7c3a.png" /></p>
+<p style="text-align: left;"><span>同时估计的环境信息数量还要加以控制，避免过大，影响物品类别信息的建模。</span></p>
+<p style="text-align: left;">在具体的实现过程中，相似性方面，HDAN强调环境和商品特征应该有区分，但同时也关注容易混淆的特征。</p>
+<p style="text-align: left;"><img height="auto" width="578" src="http://p7.itc.cn/q_70/images03/20201124/08dde6cfea724eb3955ad85c122a5b08.png" /></p>
+<p style="text-align: left;">所以相似性分析最终得到的是初始时相似度的约束，而不是全部训练过程的约束。</p>
+<p style="text-align: left;">在具体的三个领域适应场景中：无监督领域适应（UDA），半监督领域适应（SSDA）和多源域领域适应（MSDA），HDAN都取得了SOTA的结果。</p>
+<p style="text-align: left;"><img height="auto" width="636" src="http://p0.itc.cn/q_70/images03/20201124/8eca19c45c9842f0aa416340753d0548.png" /></p>
+<p style="text-align: left;">据阿里安全方面介绍，目前这项算法现在已经应用到了阿里云的绿网安全产品中。</p>
+<p>作者介绍 </p>
+<p style="text-align: left;">本文的一作，崔书豪，中科院计算所研三在读，指导老师是王树徽。</p>
+<p style="text-align: left;">他的主要研究方向是深度领域适应学习与开放域学习技术。</p>
+<p style="text-align: left;">崔书豪目前在阿里安全团队实习。</p>
+<p style="text-align: center;"><img height="202px" width="202px" src="http://p2.itc.cn/q_70/images03/20201124/efebd623d6fd4ef9b2a476849bcbfd93.png" /></p>
+<p style="text-align: left;"><span>6个月前，量子位介绍过崔书豪同学一作入选CVPR 2020的成果</span>一行代码提升迁移性能 <span>。</span></p>
+<p style="text-align: left;">今年崔书豪以第一作者向CVPR 2020提交了两篇论文，另一篇是Gradually Vanishing Bridge for Adversarial Domain Adaptation，也被接收。</p>
+<p style="text-align: left;"><span style="font-size: 16px;">论文地址：</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>量子位年度智能商业峰会启幕，</strong></p>
+<p><strong>李开复等AI大咖</strong><strong>齐聚，</strong></p>
+<p><strong>邀你共探新形势下智能产业发展之路</strong></p>
+<p><span style="font-size: 16px;"><span>▽</span><span>限时早鸟优惠，扫码锁定席位</span><span>▽</span></span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜去月球“挖土”咯！今天发射的嫦娥五号实现四个“首次”，下个月将样品带回地球
+http://www.sohu.com/a/433938338_610300	16798
+<p>蕾师师 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">“5、4、3、2、1……点火！”</p>
+<p style="text-align: left;">随着一声巨响，烟尘四起，一道闪亮的光芒划破夜空。</p>
+<p style="text-align: left;">嫦娥五号探测器在今日凌晨4时30分成功发射。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201124/e56ecbd0e2a642c28b0e3c62d1056f01.gif" /></p>
+<p style="text-align: left;">嫦娥五号探测器是中国研制的首个月球无人取样，并且将样品带回地球的航天器。</p>
+<p style="text-align: left;">中国成为继美国、前苏联之后，第三个完成月球取样的国家，并且完成了中国航天史上四个“首次”。</p>
+<p style="text-align: left;">这也是人类继 <strong>1976年</strong>后首次发射航天器去月球采集回收样本。 </p>
+<p style="text-align: left;">嫦娥五号整个任务历时大约23天，最终着陆器 <strong>12月17日</strong>左右将降落在内蒙古的四子王旗。 </p>
+<p><img height="auto" width="2260" src="http://p4.itc.cn/q_70/images03/20201124/0f8f1bab22dd4a01b77296c19dff2608.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>完成了中国航天史上四个“首次” </p>
+<p style="text-align: left;">嫦娥五号月球探测器重达8.2吨，是我国目前发射的重量最重的探测器。</p>
+<p style="text-align: left;">嫦娥五号探测器需要进入近地点200公里、远地点41万公里的地月转移轨道，对运载火箭的能力提出了很高的要求。</p>
+<p><img height="auto" width="1100" src="http://p1.itc.cn/q_70/images03/20201124/f4e6181f96044f49b3c5b3c88c58e442.png" /></p>
+<p style="text-align: left;">而这一重任便落到了有“胖五”之称的 <strong>长征五号火箭</strong>。 </p>
+<p style="text-align: left;">它作为我国新一代大推力运载火箭，起飞重量约870吨，地球同步转移轨道（GTO）运载能力可达14吨。</p>
+<p style="text-align: left;">可以说是名副其实的“大力士”。</p>
+<p style="text-align: left;">而嫦娥五号此次的成功发射，也标志着中国航天史上的 <strong>四个首次</strong>。 </p>
+<p>1、首次月面采样返回 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201124/d2c6eac0a35a4b1e8fd42143989d5dd4.gif" /></p>
+<p style="text-align: left;">从月球表面采样样品返回，是这个任务的核心。</p>
+<p style="text-align: left;">嫦娥五号将在月面选定区域着陆并采集月壤，实现中国首次月面自动采样。</p>
+<p style="text-align: left;">本次计划采集约 <strong>2千克</strong>月壤并进行密封封装，经月面起飞、月球轨道交会对接、月地转移和再入回收等过程将月球样品安全送回地球。 </p>
+<p>2、首次月面起飞上升 </p>
+<p style="text-align: left;">完成月球表面样品采集工作后，上升器就要带样品起飞上升，与轨返组合体对接。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201124/413fd7559161473b829065ef0c63efab.gif" /></p>
+<p style="text-align: left;">月球表面环境复杂，着陆器不一定是四平八稳的状态，很有可能落在斜坡上或者凸起、下凹等不同的地形上，给起飞带来了很大的难度。</p>
+<p style="text-align: left;">克服地月环境差异、发动机羽流导流空间受限等是非常棘手的难题，必须依靠航天器“自力更生”，实现起飞时自主定位、定姿。</p>
+<p style="text-align: left;">为了确保上升器能够顺利起飞上升，航天科技集团五院嫦娥研制团队进行了大量的试验验证，并建立了一整套环环相扣的系统保证任务，为嫦娥五号胜利迈出回家一步保驾护航。</p>
+<p>3、首次实现月球交会对接 </p>
+<p style="text-align: left;">当着陆器托举上升器实现月面起飞上升后，仅仅依靠上升器是不可能实现返回地球的。</p>
+<p style="text-align: left;">它需要飞到月球轨道上，在这里与轨返组合体交会对接，把采集到的月壤转移到返回器。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201124/5b1d952577de441caa2883ca65382172.gif" /></p>
+<p style="text-align: left;">嫦娥五号采用具有世界先进水平的月球轨道交会对接技术，实现上升器与返回器等的对接，完成样品的交接。</p>
+<p style="text-align: left;">从上升器进入环月飞行轨道开始，一直到轨返组合体与上升器完成对接与样品转移为止，设计师们为嫦娥五号设计了交会、对接、组合体运行、轨返组合体与对接舱分离等一系列关键动作，助推嫦娥五号实现完美对接。</p>
+<p>4、首次带月壤高速再入返回地球 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201124/800cc932e4a0470aabc5d0edc77454e6.gif" /></p>
+<p style="text-align: left;">月球距离地球有38万公里远，返回器还携带着2千克的月壤样品。</p>
+<p style="text-align: left;">返回时，飞行速度是接近每秒11公里的第二宇宙速度，而一般从近地轨道返回的航天器速度大多为每秒8公里的第一宇宙速度。以这样的速度进入大气层，很容易因高温而被烧毁。</p>
+<p style="text-align: left;">要在进入大气层阶段把速度降下来，所以飞行试验器返回舱选择了半弹道“跳跃式”再入返回技术。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201124/8827e031a3a845d59224e786d00f88d2.jpeg" /></p>
+<p style="text-align: left;">这就像在太空打水漂一样，整个再入返回过程就是让返回器先是高速进入大气层，再借助大气层提供的升力跃出大气层，然后以第一宇宙速度扎入大气层，返回地面。</p>
+<p>中国探月工程第三阶段正式拉开序幕 </p>
+<p style="text-align: left;">中国的探月工程计划，经过10年的酝酿，最终确定分为“绕”、“落”、“回”3个阶段。</p>
+<p style="text-align: left;">而此次嫦娥五号探测器的成功发射，即是第三阶段”回“。</p>
+<p style="text-align: left;">这段工程的结束，将使我国航天技术迈上一个新的台阶。</p>
+<ul>
+<li>第一阶段“绕”： 发射探月卫星“嫦娥一号”、后来又发射了”嫦娥二号“，对月球表面环境、地貌、地形、地质构造与物理场进行探测。</li>
+<li>第二阶段”落”： 发射了”嫦娥三号“、”嫦娥四号“，以软着陆的方式降落在月球上进行探测。</li>
+<li>第三阶段”回“： 发射“嫦娥五号”，目标是月面巡视勘察与采样返回。</li>
+</ul>
+<p style="text-align: left;">事后，美国宇航局 <span>（NASA）</span>在官方社交平台也发布消息，表达了对中国这次发射成功的祝贺。 </p>
+<p><img height="auto" width="1188" src="http://p1.itc.cn/q_70/images03/20201124/cce3d6b1afac4c24b988e539c1e22ce1.png" /></p>
+<p style="text-align: left;">中国网友也纷纷表达了对祖国航天事业的祝福和希冀：</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201124/b3fccad637b243faac5c41128935a4a0.jpeg" /></p>
+<p style="text-align: left;"><span style="font-size: 16px;">参考链接：</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">https://baike.baidu.com/item/%E5%AB%A6%E5%A8%A5%E4%BA%94%E5%8F%B7</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>「MEET 2021智能未来大会」启幕，</strong></p>
+<p><strong>早鸟票限时抢购中，扫码预定席位！</strong></p>
+<p><strong>李开复</strong>博士、 <strong>尹浩</strong>院士、清华 <strong>唐杰</strong>教授，以及来自 <strong>小米</strong>、 <strong>美团</strong>、 <strong>爱奇艺</strong>、 <strong>小冰</strong>、 <strong>亚信</strong>、 <strong>浪潮</strong>、容联、 <strong>澎思</strong>、 <strong>地平线</strong>、 <strong>G7</strong>等知名AI大厂的大咖嘉宾齐聚，期待关注AI的朋友报名参会、共探新形势下智能产业发展之路。 </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜BERT轻量化：最优参数子集Bort，大小仅为BERT-large16%
+http://www.sohu.com/a/433938527_610300	16798
+<p>郑集杨 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">近期，亚马逊 Alexa 团队发布了一项研究成果：研究人员对BERT模型进行参数选择，获得了BERT的最优参数子集——Bort。</p>
+<p style="text-align: left;">研究结果表明，Bort大小仅为BERT-large的16％，但是在CPU上的速度却快了7.9倍，在NLU基准测试上的性能也优于BERT-large。</p>
+<p style="text-align: left;">这是在NLP模型快速“膨胀”，模型轻量化迫切需求的背景下，一次比较成功的结果。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201124/ee163ba3689e4fb59601a4652078266e.png" /></p>
+<p>NLP模型大小 <strong>△</strong>图源：DistilBERT </p>
+<p style="text-align: left;">与ALBERT、MobileBERT进行的模型结构优化不同，Bort是在原本的模型架构上进行最优子集选择。</p>
+<p style="text-align: left;">简单来说就是：「瘦身」。</p>
+<p style="text-align: left;">那么，研究人员又是怎么给BERT「瘦身」的呢？</p>
+<p style="text-align: left;">接下来便让我们带大家来仔细看看。</p>
+<p>FPTAS助力「瘦身」 </p>
+<p style="text-align: left;">首先需要明确的是，这并不是研究人员第一次尝试给BERT「瘦身」了。</p>
+<p style="text-align: left;">因为BERT的规模大，推理速度慢，并且预处理过程复杂，所以先前已经有部分研究人员便尝试对其进行瘦身，取得了一定的成果：保持了其前身的相同性能、简化了预训练过程同时减少了推理时间。</p>
+<p style="text-align: left;">不过，在准确性上，瘦身后的子集总是不太尽如人意——达不到原本BERT的性能。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201124/5758e49a715f42d8962eefab78af7ad5.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">而这次的研究，研究人员使用了 <strong>完全多项式时间近似算法（FPTAS）</strong>进一步优化这个问题，因为该算法最近被证明：在某些条件下，能够有效地提取此类最优子集。 </p>
+<p style="text-align: left;">对此，研究人员说道：</p>
+<blockquote>
+<p>这种条件被称为 <strong>strong AB^nC propert</strong>，我们证明了BERT满足了这一组条件。 </p>
+</blockquote>
+<p>这种条件被称为 <strong>strong AB^nC propert</strong>，我们证明了BERT满足了这一组条件。 </p>
+<p style="text-align: left;">研究人员列举了三个指标： <strong>推理速度</strong>， <strong>参数大小</strong>和 <strong>错误率</strong>，在使用FPTAS下，从一个高性能的BERT中提取一个最优子集，这便是Bort。 </p>
+<p style="text-align: left;">在随后初步的测试中，Bort有着不俗的表现。在CPU上，其执行推理的速度比BERT-large快了7.9倍。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201124/204581d8f1e14cff9037358809d68ecf.png" /></p>
+<p style="text-align: left;">此外，在相同的硬件上，对相同的数据集进行预训练，Bort只花费了288个GPU hours。而相比之下，BERT-large花费了1153个GPU hours，而RoBERTa-large则需要25764个GPU hours。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201124/1f102bd07573493898d52af4d29910f4.png" /></p>
+<p style="text-align: left;">「瘦身」成功！</p>
+<p>变「瘦」了，也变强了 </p>
+<p style="text-align: left;">瘦身后，是不是就像之前类似的研究一样，能力下降了呢？这是一个非常关键的问题。</p>
+<p style="text-align: left;">为了验证Bort的泛化能力，研究人员在GLUE和SuperGLUE基准以及RACE数据集上对Bort同其他模型进行了测试。</p>
+<p style="text-align: left;">首先是在 <strong>GLUE</strong>上测试： </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201124/212f2190382441e0b80b81bcac5b0c5a.png" /></p>
+<p style="text-align: left;">Bort在几乎所有任务中都取得了优异的成绩：除了QQP和QNLI之外，它的性能都比其他几个同样基于BERT的同类模型好得多。</p>
+<p style="text-align: left;">值得一提的是，对于BERT-large而言，Bort的性能提高了0.3％至31％。</p>
+<p style="text-align: left;">其次是在 <strong>SuperGLUE</strong>上的测试： </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201124/9f7a4e805b774678b07e1ad0726a284a.png" /></p>
+<p style="text-align: left;">Bort同样取得了不错的成绩，除了一项任务（ReCoRD）之外，其他所有任务上都展现了优于或等同于BERT-large的性能。</p>
+<p style="text-align: left;">最后，是在RACE上的测试：</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201124/bae9b585c38c499aa90082d3caa7c355.png" /></p>
+<p style="text-align: left;">总的来说，Bort获得了良好的结果，在这两项任务上的性能比BERT-large高出9-10%。</p>
+<p style="text-align: left;">对于NLU测试结果，研究人员总结道：</p>
+<blockquote>
+<p>在GLUE，SuperGLUE和RACE的NLU基准测试上，Bort相对于BERT-large在各个方面的性能都有着提升，范围从0.3％到31％不等。</p>
+</blockquote>
+<p>在GLUE，SuperGLUE和RACE的NLU基准测试上，Bort相对于BERT-large在各个方面的性能都有着提升，范围从0.3％到31％不等。</p>
+<p style="text-align: left;">最后，研究人员还在Github公布了Bort的代码。论文和代码地址如下，需要的读者自取哦。</p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span>论文链接：</span></span></p>
+<p><span>https://arxiv.org/pdf/2010.10499.pdf</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span style="font-size: 16px;">代码地址：</span></span></p>
+<p><span style="font-size: 16px;">https://github.com/alexa/bort</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span><span style="font-size: 16px;"></span></p>
+<p><strong>量子位年度智能商业峰会启幕，</strong></p>
+<p><strong>李开复等AI大咖</strong><strong>齐聚，</strong></p>
+<p><strong>邀你共探新形势下智能产业发展之路</strong></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">▽</span><span style="font-size: 16px;">限时早鸟优惠，扫码锁定席位</span><span style="font-size: 16px;">▽</span></span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜祖传人像玩家，如何把AI秀出新高度
+http://www.sohu.com/a/433938546_610300	16798
+<p>萧箫 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">从今往后，合照不必担心站在边缘会变形了：</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201124/259eb696221c43108a6db0439312b3fd.png" /></p>
+<p style="text-align: left;">如今这种硬件所限的bug，正在被一举解决，且了无痕迹：</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201124/a1cdafd22c4448239ffa701c27831633.png" /></p>
+<p style="text-align: left;">除了拯救变形的人脸，还可以有人性化的素颜级美颜。</p>
+<p style="text-align: left;">比如真实的你 VS 素颜级美颜的你：</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201124/2ac8e554cb8e4b8bbebf909f714715d2.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">从脸到脖子的贴心美白，懂你省心的祛痘P图，但又恰如其分地留下你标志性的泪痣，让分享到朋友圈的你不至于有美颜痕迹的尴尬。</p>
+<p style="text-align: left;">当然，5G时代、短视频时代，人像技术、美颜能力，自然也得与时俱进。</p>
+<p style="text-align: left;">哪怕你的手和过山车一样抖，拍出的视频 <span>（图左）</span>，也可以和用了几千块的稳定器一样清晰。 </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201124/bc1db3426ba34472a6ec7fade275f057.gif" /></p>
+<p style="text-align: left;">而这，就是AI可以带来的最新最前沿人像技术能力。</p>
+<p style="text-align: left;">并且祖传人像玩家，还把一切all in到了手机里，把手机AI人像实现搞出新高度。</p>
+<p style="text-align: left;">没错，说的就是OPPO。</p>
+<p>怎样的AI人像新能力？ </p>
+<p style="text-align: left;">融合了人脸检测、面部关键点检测、超分辨率算法、语义分割、自动补帧等一系列前沿AI技术。</p>
+<p style="text-align: left;">全称：OPPO FDF全维人像视频技术系统。</p>
+<p style="text-align: left;">这也是业内首个针对 <strong>人像视频拍摄</strong>打造的AI影像技术系统。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201124/8dc4dbbcbfd94084910712fffdb69921.png" /></p>
+<p style="text-align: left;">这个由 <strong>感知人像引擎</strong>和 <strong>画质增强引擎</strong>组成的系统，不仅能让照片里的人看起来更好看，画面质感也能得到质的提升。 </p>
+<p style="text-align: left;">具体如何做到的，我们一一详细解构。</p>
+<p style="text-align: left;">所谓 <strong>感知人像引擎</strong>，就是针对拍摄时的人像区域进行优化，其核心技术包括AI人脸检测/关键点检测、AI超清人像 <span>（暗景/长焦拍摄也高清）</span>、OFL肤质优化、人脸畸变矫正四大项。 </p>
+<p style="text-align: left;">这四项技术，都需要很强很稳，不能有偏科。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201124/f48464a0c89d48dba246e6e5b04a15f8.png" /></p>
+<p style="text-align: left;">而在 <strong>人脸关键点检测</strong>上，OPPO以 <strong>296个点</strong>的数量，实现了移动平台上 <strong>每秒检测200次</strong><span>（200fps）</span>的速度，在WFLW数据集上实现了低至 <strong>4.71%</strong>的NME损耗。 </p>
+<p style="text-align: left;">至于 <strong>画质增强引擎</strong>，则是一套能保障用户在绝对多数场景下都能拍出满意的画面的算法合集。 </p>
+<p style="text-align: left;">哪怕画面抖动幅度较大、还是光线不足或过亮，画质增强引擎都能将画面调整到更符合用户偏好的观感。 <span>（你的VLOG必备小能手）</span></p>
+<p style="text-align: left;">除了在开头看到的，加入新一代超级防抖功能以外，画质增强引擎还包括视频多帧HDR和超级夜景视频两项技术。</p>
+<p style="text-align: left;">利用视频多帧HDR拍出来的小姐姐，随便截一帧都是唯美的艺术照：</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201124/1108e5aecef141b4992705bd5c140537.gif" /></p>
+<p style="text-align: left;">就连拍摄的夜景视频，也能得到不输白天的清晰度，甚至比白天有更丰富的色彩度：</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201124/f8fb5d40b8b644a18f362726d7a4331c.gif" /></p>
+<p style="text-align: left;">这些看似不经意的人像拍摄、视频处理效果，却是决定作品细节的关键。 </p>
+<p>如何评价OPPO最新AI人像技术？ </p>
+<p style="text-align: left;">需要更加深入到核心技术之源。</p>
+<p style="text-align: left;">这次OPPO，不仅将人像系统做到了极致，还用软件弥补了硬件上“广角摄像头”带来的不足。</p>
+<p style="text-align: left;">目前AI人像领域，核心技术水平，可以以处理暗光/长焦拍摄所用的 <strong>超分辨率计算</strong>作为参考。 </p>
+<p style="text-align: left;">简单来说，超分辨率 <span>（Super-Resolution）</span>计算，是将一组低质量、低分辨率的图像，通过软硬件，得到一幅高分辨率图像。 </p>
+<p style="text-align: left;">这是当前计算机视觉技术中难度最大的领域之一，需要尽可能地平衡图像的画质与真实性。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201124/460c9cac82ef46f2bc75cdc3a28988bd.png" /></p>
+<p style="text-align: left;">其核心思想，在于用时间带宽 <span>（获取同一场景的多帧图像序列）</span>，来换取空间分辨率，实现时间分辨率向空间分辨率的转换。 </p>
+<p style="text-align: left;">而就在这个领域，OPPO此次展现的技术能力，并非“啪的一下很突然”……</p>
+<p style="text-align: left;">CVPR 2020上，OPPO就提出了独创的神经网络架构 <strong>RFB-ESRGAN</strong>，利用分布式算法提高计算效率、并以多元的采样与计算模型配合，将模煳的图片 <strong>清晰放大了16倍</strong>。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201124/48510acc05ec412e9ccce566c4fb457c.png" /></p>
+<p style="text-align: left;">当时OPPO还从全球280多个顶尖参赛团队中脱颖而出，夺得了“极端超级分辨率感知”的第一名。</p>
+<p style="text-align: left;">有备而来。</p>
+<p style="text-align: left;">效果也人人可见，经过AI处理的人像，眉毛和皮肤都变得更加清晰。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201124/0b220b47dc03456dbea15078f843449e.png" /></p>
+<p style="text-align: left;">但相比软件突破解决软件问题，OPPO的这个AI系统，还需要关注的技术亮点在于——用软件技术 <strong>弥补硬件</strong>的先天不足。 </p>
+<p style="text-align: left;">例如，在用广角摄像头给人拍照的过程中，总有些尴尬之处：</p>
+<p style="text-align: left;">如果不抢C位，你的人脸就可能会变形。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201124/ffedc9a8c6624d5cb83b02cad66757b3.png" /></p>
+<p style="text-align: left;">而且，由于透视投影 <span>（Perspective Projection）</span>的 <strong>近大远小</strong>原理，变形的往往只有人脸，背景看起来反而比较正常。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201124/b1c82a9d46a04bacb1c4571c6705151d.gif" /></p>
+<p style="text-align: left;">以往针对这种变形脸，通常需要一些职业P图大师来处理。</p>
+<p style="text-align: left;">业内也一直在追求——既不会扭曲背景，又能让人物恢复正常的技术。</p>
+<p style="text-align: left;">而这次OPPO的解决思路，运用了 <strong>球极平面投影</strong><span>（Stereographic Projection）</span>。 </p>
+<p style="text-align: left;">其原理是，把一个球面投射到平面上，并不忠实反映距离，却十分忠实地反映角度。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201124/362e5715638747adae68b601eb32a486.gif" /></p>
+<p style="text-align: left;">不过，单这么一项还无法一蹴而就。</p>
+<p style="text-align: left;">这种投影对人脸的拉伸并不大，然而背景看起来却会变得扭曲。</p>
+<p style="text-align: left;"><span>（投影近处变化小，远处变化更大）</span></p>
+<p style="text-align: left;">所以OPPO再用上了另一项工序，用AI将两者结合。</p>
+<p style="text-align: left;">最终经过两次拍摄处理，加上一个AI切割算法，就能将“球平面投影”的部分边缘变形人脸、和“透视投影”的背景结合起来，实现人脸的还原。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201124/bd3965a19e564bd98be2f8b9c0fd2cae.png" /></p>
+<p style="text-align: left;">Anyway，如果你对技术原理本身不是很感冒，其实也没关系。</p>
+<p style="text-align: left;">甚至无需清楚知道OPPO这个AI系统中“感知人像引擎”和“画质增强引擎”的高深之处。</p>
+<p style="text-align: left;">简单直接，所用所得，可以理解 <strong>OPPO FDF全维人像视频技术系统</strong>，就是OPPO放在手机里的 <strong>你的专属化妆师和视频后期</strong>。 </p>
+<p style="text-align: left;">是的， <strong>专属</strong>，体现在结果细节。 </p>
+<p style="text-align: left;">比如开头提到的AI智能消除瑕疵，业内美颜产品和功能中，都算是标配。</p>
+<p style="text-align: left;">然而，将痘痘、皱纹这样的特征，和泪痣这样的先天特征进行区分训练，“分阶采样”的智能模型，却是少之又少。</p>
+<p style="text-align: left;">它体现了技术和产品团队对用户人性的洞察。如今的社交网络发图发视频，确实都会发之前P一下，但所有人追求的，还是让P图痕迹、无迹可寻。</p>
+<p style="text-align: left;">没有谁想在晒照晒视频后，被发现美颜P视频的硬伤。</p>
+<p style="text-align: left;">另外，还有OFL肤质优化所需的 <strong>语义分割</strong>技术，同样体现这种想用户所想。 </p>
+<p style="text-align: left;">为了将皮肤、头发和衣物区分开来，OPPO的模型通过结构特征提取，将人像分割成脸部、脖子、手部、头发、衣物等几部分。</p>
+<p style="text-align: left;">然而，与常见的美颜语义分割不同，OPPO将脸部、脖子、手部统一归类为皮肤，一起进行优化，为的就是避免肤色不均匀的问题。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201124/dd6da0dbd7f548449168841eff2c64b0.png" /></p>
+<p style="text-align: left;">……</p>
+<p style="text-align: left;">所以如此种种，也能知晓为啥OPPO在人像领域一直引领、功力深厚的真正原因。</p>
+<p style="text-align: left;">一方面是最复杂最前沿的技术，另一方面还要有大众真实审美观的洞察，最后交付到用户手中无感使用。</p>
+<p>OPPO的另一面 </p>
+<p style="text-align: left;">OPPO的技术性，通常易于被忽略。</p>
+<p style="text-align: left;">但事实是，包括手机摄影摄像在内的“华山论剑”领域，OPPO产品和功能之所以爆款常有，都源自技术底蕴和支撑。</p>
+<p style="text-align: left;">在世界知识产权组织(WIPO)的专利报告中，OPPO都是全球榜上靠前的企业。</p>
+<p style="text-align: left;">最新可查的2019年数据，OPPO在全球范围内的排名位居韩国三星和美国高通之后，位居全球第六、中国区第二。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201124/3398c97151fa4f4d9ad8fc85c40012a5.png" /></p>
+<p style="text-align: left;">而具体到人像领域，OPPO的技术专利，也能最好诠释这家公司为何在该领域持续创新和领先。</p>
+<p style="text-align: left;">OPPO官方披露，2012年开始就在人像领域在全球范围内开展专利布局，包括中国、美国、德国、法国、英国、印度以及日韩等25个国家地区。OPPO在人像美颜、虚化、防抖、夜景等影像技术的专利申请总数超过700件，其中发明专利占比80%。</p>
+<p style="text-align: left;">然而技术底色的光芒，此前一定程度上被大众消费电子产品的成功而盖过。</p>
+<p style="text-align: left;">这其实也与刚才提及的OPPO的产品理念，密不可分。</p>
+<p style="text-align: left;">讲本分、讲人性、讲用户体验，追求的是：</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201124/917da16dcd3b46c9b958361890ef520b.jpeg" /></p>
+<p style="text-align: left;">在今年OPPO未来科技大会现场，创始人陈明永还分享了OPPO手机的初代往事。</p>
+<p style="text-align: left;">还是功能机时代，2008年，OPPO第一款手机在历时一年半研发后，原型机获得供应链和客户高赞，但最终OPPO团队却决定不发布它，而是花费半年在此基础上重新设计，达到预期想要的最完美效果。</p>
+<p style="text-align: left;">最终， <strong>笑脸手机</strong>问世，一炮而红，用一款功能机的最慢推出纪录，创造了半年破百万台销量的业界佳话。 </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201124/3838086c8d7d44909f87da6cf3934bd7.jpeg" /></p>
+<p style="text-align: left;">同样的理念一以贯之，就有了后来的「充电5分钟通话2小时」的快充领先方案，有了自拍、人像摄影领域的江湖地位。</p>
+<p style="text-align: left;">正是这样的产品理念，从需求、体验，带动了产品的成功。而产品的成功，又让OPPO可以在更大体量规模的用户数、用户反馈反馈上迭代技术和打磨产品。</p>
+<p style="text-align: left;">实现了数据智能背景下，技术-产品-用户之间的正向循环和动势能转换。用户只需得到最好的产品体验和解决方案，而无需关注背后技术的复杂度和实现难度。</p>
+<p style="text-align: left;">这也正是OPPO创始人陈明永强调的 <strong>本分</strong>、 <strong>致善式创新</strong>。 </p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201124/07a5bddee4a045ffb62c74ded99f323a.jpeg" /></p>
+<p style="text-align: left;">他说本分的力量是从自省出发，应该做什么？做了没有？</p>
+<p style="text-align: left;">而且思考问题的本质，做正确的事。</p>
+<p style="text-align: left;">在商业特别是消费电子领域，友商、竞争和各种“欺瞒奸狠”常被关注。</p>
+<p style="text-align: left;">但相信本分和致善式创新，就是相信可以通过解决别人的问题、用户的痛点，实现多赢。</p>
+<p style="text-align: left;">具体到OPPO，就是希望以科技作为手段，实现每一个用户对美、想象力和人性的追求。</p>
+<p style="text-align: left;">陈明永认为，科技创新如果没有自我约束机制，没有更高的理念做支撑，很可能成为一种负担。</p>
+<p style="text-align: left;">通盘思考中国哲学“致良知”和西方人性哲学之后，陈明永提出“科技为人，以善天下”，意以给公司经营和科技创新提供一条校验准绳，以纠偏各种追求短期效益的创新。</p>
+<p style="text-align: left;">同时，他提醒科技创新过程中要注意规避因恐惧落后对手而不关心人的需求的盲目式创新。</p>
+<p style="text-align: left;">所以从技术、产品，上升到企业经营，OPPO之道，实现了一以贯之。</p>
+<p>One more thing </p>
+<p style="text-align: left;">最后，这次OPPO大秀技术和产品实力的大会上，还有其他最前沿技术的一揽子展出。</p>
+<p style="text-align: left;">除了FDF全维人像视频技术系统，还有 <strong>三大</strong>前沿应用。 </p>
+<p style="text-align: left;">一是 <strong>手机</strong>，OPPO X 2021卷轴屏概念机： </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201124/aaf507e8faf5411c9a58f2e647d6f47b.gif" /></p>
+<p style="text-align: left;">二是代表下一代交互终端的 <strong>AR眼镜</strong>，OPPO AR Glass 2021： </p>
+<p style="text-align: left;"><img src="http://p7.itc.cn/q_70/images03/20201124/e886a66cc20043f6aa71e7d99f974411.jpeg" /></p>
+<p style="text-align: left;">另外现场展区，还有包括3D虚拟人像技术、AI眼球控制，UWB空间感知技术等等一系列前沿技术。</p>
+<p style="text-align: left;">不过，在这一系列的前沿技术和创新产品里，最令人期待的还是FDF系统。</p>
+<p style="text-align: left;">因为马上就能让每个人所见所得。</p>
+<p style="text-align: left;">OPPO官宣：2020年12月，也就是下个月，搭载FDF全维人像视频技术系统的新品就会发布。</p>
+<p style="text-align: left;">想直接体验最前沿的AI人像能力和应用，不妨拭目以待~</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>

@@ -1,0 +1,150 @@
+➜2块钱就能买上千张人脸照片？央视曝光AI黑产，产业链太惊人了
+http://www.sohu.com/a/427599398_610300	17610
+<p>贾浩楠 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">「一张人脸照片，只值0.002元，2元钱就能买到上千张」；</p>
+<p style="text-align: left;">「不法分子用公民照片，加上AI换脸技术，直接登录金融app…..」</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201027/c40db70c83564d708bfdbc2d82c19c2e.png" /></p>
+<p style="text-align: left;">捆绑了AI技术的公民隐私泄露风险，普通人该怎么避害？</p>
+<p style="text-align: left;">遏制如此猖獗的违法行为，在技术和立法两方面，各有什么进展？</p>
+<p>用你的脸，刷你的卡 </p>
+<p style="text-align: left;">买卖人脸信息的“产业链”稍后再谈，先了解一下不法分子如何利用人脸图像实施犯罪。</p>
+<p style="text-align: left;">今年8月13日，杭州钱塘新区公安部门抓获两名犯罪嫌疑人，他们在多个网络平台盗取了数千条个人信息准备倒卖。</p>
+<p style="text-align: left;">而今年年初，浙江衢州也破获了一起盗用公民个人信息案，犯罪嫌疑人使用盗取的信息注册某金融平台账号，非法获利数万元。</p>
+<p style="text-align: left;">在这两个案例中，不法分子都是在得到了人脸照片以后，通过 <strong>AI换脸技术</strong>进行预处理，生成一个虚拟的“面部”，再使用照片活化做一个动态视频，这样就能骗过不少核验机制。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201027/dd15ce52ac4e4e9b8cbc4968565935d5.gif" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">不是真人真脸，也能通过核验吗？</p>
+<p style="text-align: left;">不幸的是，真的可以，而且成功率不低。</p>
+<p style="text-align: left;">使用精度尚可的3D打印面具或头套，能很轻松通过核验。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201027/5c30f2bc679b44009c6592b8c0d600d5.gif" /></p>
+<p style="text-align: left;">从另一个角度考虑，这种手法成本极其低廉，也几乎没有技术门槛。</p>
+<p style="text-align: left;">以前，诈骗犯还需要通过电话交谈等手段套取个人信息实施犯罪。</p>
+<p style="text-align: left;">而现在，事主毫无察觉的情况下，一张不知何时拍的照片，就成了别人的犯罪“工具”。</p>
+<p style="text-align: left;">网络上各种开源免费软件也是随处可得，即使没学过编程也能快速上手。</p>
+<p>面部信息从哪来？谁在卖？ </p>
+<p style="text-align: left;">央视新闻记者伪装成购买者，找到了网络上叫卖人脸图片信息的商家摸底。</p>
+<p style="text-align: left;">调查发现，在某网络交易平台上，2元钱就能买到上千张人脸照片。</p>
+<p style="text-align: left;">而5000多张人脸照片标价不到10元。</p>
+<p><img height="262px" width="391px" src="http://p0.itc.cn/q_70/images03/20201027/ae273b12dabf4981a08821fbbb18c498.png" /></p>
+<p style="text-align: left;">商家的素材库里全是真人生活照、自拍照等隐私照片。</p>
+<p style="text-align: left;">记者询问商家这些图片是否有版权隐患，商家否认，却拿不出有关证明：</p>
+<p><img height="258px" width="386px" src="http://p3.itc.cn/q_70/images03/20201027/2555aa81af644747a38f9ac4e3ef9b52.png" /></p>
+<p style="text-align: left;">这些照片的主人有可能遭遇精准诈骗，蒙受财产损失，甚至还有可能因人脸信息被用于洗钱、涉黑等违法犯罪活动，而卷入刑事诉讼。</p>
+<p style="text-align: left;">至于这些照片从哪泄露，专家认为风险最高的环节，还是数据的存储。</p>
+<p><img height="295px" width="437px" src="http://p3.itc.cn/q_70/images03/20201027/35adc59b69e64cdbb90bbb98787e61b1.png" /></p>
+<p style="text-align: left;">数据是否脱敏（指数据是否与个人信息挂钩）、安全是否到位、哪些用于算法训练、哪些会被合作方分享， <strong>外界一概不得而知</strong>。一旦服务器被入侵，人脸数据就会面临泄露风险。 </p>
+<p style="text-align: left;">从技术层面，专家提出应采用分层授权、分布式存储的数据脱敏和加密方式。</p>
+<p style="text-align: left;">在行业标准方面，人脸数据存储应该建立更严格的标准和规范，技术开发方、App运营方不能成为各自为战的数据孤岛，只求技术更迭，忽视隐私风险。</p>
+<p>今后还能不能放心用人脸识别了？ </p>
+<p style="text-align: left;"><img src="http://p9.itc.cn/q_70/images03/20201027/d9fade1b1fb44e619629d6f8bb0d87d6.jpeg" /></p>
+<p style="text-align: left;">从技术角度来说，科研人员正在开发新的技术手段弥补算法漏洞，比如 <strong>活体检测</strong>。 </p>
+<p style="text-align: left;">原理是通过摄像头捕捉到的面部颜色、毛细血管、温度等等细微参数随心跳的的周期变化，来判断镜头前的是不是真实的人类。</p>
+<p style="text-align: left;"><strong>《民法典》规定，收集、处理自然人个人信息的，应当遵循合法、正当、必要原则，征得该自然人或其监护人同意。且被采用者同意后还有权撤回</strong>。 </p>
+<p style="text-align: left;">此时尚未生效的《中华人民共和国个人信息保护法（草案）》，正在面向社会公开征求意见。</p>
+<blockquote>
+<p style="text-align: left;">所收集的个人图像、个人身份特征信息只能用于维护公共安全的目的，不得公开或者向他人提供；取得个人单独同意或者法律、行政法规另有规定的除外。</p>
+</blockquote>
+<p style="text-align: left;">所收集的个人图像、个人身份特征信息只能用于维护公共安全的目的，不得公开或者向他人提供；取得个人单独同意或者法律、行政法规另有规定的除外。</p>
+<p style="text-align: left;">但是，立法本身就具有滞后性，法规的监管执行也很难做到全面到位。</p>
+<p style="text-align: left;">很多企业，尤其是被采集信息的民众，可能根本不清楚这些法规的具体情况。</p>
+<p style="text-align: left;">真正要解决大家的隐私担忧，最后还得落到技术层面。</p>
+<p style="text-align: left;">不光是修补算法漏洞，更重要的是建立完善的行业技术标准和规则。</p>
+<p style="text-align: left;">你的看法呢？</p>
+<p style="text-align: left;">有过人脸信息被泄露遭遇的，也欢迎留言提醒大家~</p>
+<p style="text-align: left;"><span style="font-size: 16px;">https://s.weibo.com/weibo/2%25E5%2585%2583%25E9%2592%25B1%25E5%25B0%25B1%25E8%2583%25BD%25E4%25B9%25B0%25E4%25B8%258A%25E5%258D%2583%25E5%25BC%25A0%25E6%25B6%2589%25E9%259A%2590%25E7%25A7%2581%25E4%25BA%25BA%25E8%2584%25B8%25E7%2585%25A7?topnav=1&amp;wvr=6&amp;b=1</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong><span>「百度AI开发系列课」免费报名！</span></strong></p>
+<p>5分钟上手，10分钟定制高精度AI模型，硬核百度EasyDL，小白也能学！ </p>
+<p>10.28日，百度高级工程师带你 <strong><span>轻松学AI开发</span></strong>、 <strong><span>实现AI模型训练与部署</span></strong>！扫码添加量子位小助手（qbitbot12）、加入课程直播群吧~▽ </p>
+<p><span><strong>p.s.</strong></span>参与群互动、完成课堂任务还有机会获得100元京东卡、《智能经济》图书等礼品哦~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜在网易有道做语音算法工程师是一种怎样的体验？
+http://www.sohu.com/a/427608559_610300	17610
+<p>鱼羊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">一个成立不到两年的团队，两个初入职场的新人，杀入顶会挑战赛能拿下怎样的成绩？</p>
+<p style="text-align: left;">时限是，10天。</p>
+<p style="text-align: left;">参赛选手是这位：</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201027/14739a2e5a6b4611a91fa7a8e6395d05.jpeg" /></p>
+<p><strong>△</strong><span>大耳朵图图本喵</span></p>
+<p style="text-align: left;">啊不，其实来自他们当中。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201027/008fde2e7fa94932a5acf81ede09ad0e.jpeg" /></p>
+<p style="text-align: left;">说起网易有道与AI语音技术相关的产品，大家或许都不陌生，比如丁磊多次安利、上市都带着的有道词典笔……</p>
+<p style="text-align: left;">相比在市场上取得的认可，许多人可能不会想到，有道AI语音背后的团队非常年轻：成立不到两年，大部分都是应届生，来自知名语音实验室，或者海外高校深造项目。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>「参赛其实是验证技术方案」 </p>
+<p style="text-align: left;">此次拿奖的时来和Harry Wu（均为花名），就是今年7月刚刚加入网易有道的应届生。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201027/b90ef55f0ed64f30ab8be16ad0dd6cb0.jpeg" /></p>
+<p style="text-align: left;">事实上，打这场比赛，对于他们而言更像是一次对工作成果的「突击测验」：被通知要参赛时，距离提交测试结果的截至日期只剩下10天了。</p>
+<p style="text-align: left;">时间紧迫，两人临时组队，又是代表团队第一次出征算法赛事，但在心态上他们倒还真一点也不慌。</p>
+<blockquote>
+<p style="text-align: left;">用有道之前积累的技术去参赛，10天也足够了。</p>
+<p style="text-align: left;">攻坚克难了这么久，是时候拿出来检验一下了。</p>
+</blockquote>
+<p style="text-align: left;">用有道之前积累的技术去参赛，10天也足够了。</p>
+<p style="text-align: left;">攻坚克难了这么久，是时候拿出来检验一下了。</p>
+<p style="text-align: left;"><img src="http://p9.itc.cn/q_70/images03/20201027/cf02e7ca9f6f40c886b0a5b060f83dab.jpeg" /></p>
+<p style="text-align: left;">而在口音分类这个比较新颖的任务上，他们正在研究中的多语种技术方案正好能够派上用场：</p>
+<blockquote>
+<p style="text-align: left;">原来会觉得相关的技术方案还处在实验室阶段，要实际应用起来还需要学术界进一步验证。但既然比赛有这个机会，正好可以拿这个方法试验一下。</p>
+</blockquote>
+<p style="text-align: left;">原来会觉得相关的技术方案还处在实验室阶段，要实际应用起来还需要学术界进一步验证。但既然比赛有这个机会，正好可以拿这个方法试验一下。</p>
+<p style="text-align: left;">程序员打比赛，就是直接开干，效率拉满——就在工位上随时讨论。而事后两人回想起来，印象最深的不是时间有多紧、加了多少班，恰恰是设计算法、测试结果的这个过程：</p>
+<p style="text-align: left;">一开始，在口音分类这个全新的任务上，两人想到这会跟说话人的特征有比较强的相关性。而在引入这一信息之后，他们的方案还真在开发集上取得了令人惊喜的效果。</p>
+<p style="text-align: left;">但在测试集开放之后，进一步的验证结果却差强人意。直到比赛结束，测试集公布，他们才发现测试集里说话人的数目，是训练集和开发集加起来的差不多10倍，即一个说话人非常复杂的场景。</p>
+<p style="text-align: left;">虽说碰上了这样那样的小波折，但其实对于两位语音算法工程师而言，这反而更加坚定了他们攻关AI语音技术的决心：语音领域技术相对成熟，但远没有到「做完了」的程度，现实的复杂场景、各种各样的噪音、方言口音，都仍有值得钻研之处。</p>
+<p style="text-align: left;">至于最后的结果，其实可以说是「两全其美」。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201027/d6c23869b8ef4addba58d8381f111282.jpeg" /></p>
+<p style="text-align: left;"><span><strong>虽然准备还是有些仓促，没能拿下冠军，但对初出茅庐的网易有道语音团队而言，面对强劲的业内对手，首次「出击」能拿到顶会挑战赛的二等奖，还是证明了现有技术方案可行、新的设想值得进一步推动。</strong></span></p>
+<p style="text-align: left;">另一方面，团队组长孙艳庆也坦承，参与比赛对整个语音团队来说，学习到了行业中新的想法和技术，打开了后续开发的新思路。</p>
+<p>「秘诀」：技术以落地为导向 </p>
+<p style="text-align: left;">其实比起单纯去打比赛、发论文，如果和一线的开发者们多聊聊，就能明显地感觉到，网易有道的这支语音团队是非常务实的——以技术落地为导向，以用户反馈为指标。</p>
+<p style="text-align: left;">孙艳庆谈到，在内部，技术方案的推动一般有两种途径。</p>
+<p style="text-align: left;">一种是来自业务端的需求。技术团队要做的，是去评估现有的技术是否能够解决问题，并真正落地到产品中，给用户带来优质的体验。</p>
+<p style="text-align: left;">另一种则来自于工程师们对新技术、新用户需求的敏感度。如果判断一种新技术会被大规模地应用，技术团队也会提前进行相应的布局。</p>
+<p style="text-align: left;">而评价成果的指标则更为直接： <span><strong>用户体验</strong></span>。 </p>
+<p style="text-align: left;">这种脚踏实地的作风，也给时来、Harry这样的职场新人留下了深刻的印象。</p>
+<blockquote>
+<p style="text-align: left;">我们大部分的技术，最终都会聚焦到非常具体的产品上面。不会去做在将来一段时间看来，意义不是很大的一些事情。</p>
+<p style="text-align: left;"><span><strong>技术如果只是停留在学术层面上，就没办法真正流行、发展起来。落地对于技术而言是一个非常非常核心的点。</strong></span></p>
+</blockquote>
+<p style="text-align: left;">我们大部分的技术，最终都会聚焦到非常具体的产品上面。不会去做在将来一段时间看来，意义不是很大的一些事情。</p>
+<p style="text-align: left;"><span><strong>技术如果只是停留在学术层面上，就没办法真正流行、发展起来。落地对于技术而言是一个非常非常核心的点。</strong></span></p>
+<p style="text-align: left;">解决用户切实的问题，解决产品中的痛点，或许正是在这样的导向之下，虽然团队仅成立了不到两年的时间，但在产品层面，网易有道在语音方面的许多技术点已经跻身行业前列。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201027/8d1c9699374c4632b32853dda3096d47.jpeg" /></p>
+<p style="text-align: left;">在 <strong>语音合成</strong>（TTS）方面，有道语音合成引擎音色逼近真人，同样支持中、英、日、韩、葡等多种语言。在过硬的技术基础之上，今年9月，有道词典还用TTS技术实现了王源明星语音的上线，效果受到了用户的广泛好评。 </p>
+<p>把「脚踏实地」写进价值观的团队 </p>
+<p style="text-align: left;">事实上，能以一支小而精的团队支撑起复杂业务背后的核心算法，团队内部的氛围是技术实力之外的另一个重要影响因素。</p>
+<p style="text-align: left;">如果你问有道语音团队的工程师们这支团队的特点是什么，就能获得这样几个关键词：年轻、活泼、脚踏实地。</p>
+<p style="text-align: left;">因为年轻、活泼，即使是新人融入起来也完全没有压力，不管是技术的交流还是平时的相处，都可以畅所欲言。</p>
+<p style="text-align: left;">另一方面，虽然团队成员们普遍年纪不大，却个个「身怀绝技」。作为组长，孙艳庆认为，一个脚踏实地的团队，应该给每个人充分的才华施展空间，而在这个空间之下，大家潜心钻研技术，在专注于自己侧重点的情况下，去突破个人的局限。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201027/a2640fef50714873802bb9024a4d3800.jpeg" /></p>
+<p style="text-align: left;">并且，其发力深耕的这些AI技术，都切切实实落在了产品上，让C端用户有了最直观的体验：</p>
+<p style="text-align: left;">NMT翻译准确率行业领先，支持12种语言的中文互译，9种语言的英文互译。</p>
+<p style="text-align: left;">AI行业已经过了“风口飞猪”的时代，愈加务实的市场更加看重技术的落地。当泡沫散去，唯有脚踏实地的团队才能在一代代产品的稳定推出中，扎实生根。</p>
+<p style="text-align: left;">也正是因为这样的氛围，在毕业之际，时来、Harry等人毫不犹豫地拒绝了其他offer，选择加入网易有道。</p>
+<p style="text-align: left;"><span>嗯，一定不是因为这里经常聚众吸猫。</span></p>
+<p>— <strong>完</strong>— </p>
+<p style="text-align: left;"><span style="font-size: 16px;">本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

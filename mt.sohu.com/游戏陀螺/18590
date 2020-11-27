@@ -1,0 +1,290 @@
+➜中手游拟再融资5.37亿港元，用于提升IP游戏发行及开发业务
+http://www.sohu.com/a/434071435_204728	56885
+<p><span style="font-size: 16px;">11月24日，中手游发布公告称，公司拟</span><span style="font-size: 16px;">以“先旧后新”模式配售1.8亿股募资5.37亿港元（约合4.55亿人民币），以期提升IP</span><span style="font-size: 16px;">游戏发行及开发。</span><span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201125/c4687215f45345ad8fb8b80adb88a81f.png" /></p>
+<p><span style="font-size: 16px;">“先旧后新”是港股配售的一种常见模式，多指先由大股东将手头上的“旧股”卖给承配人，然后再进行“新股”的配售。与纯配售新股相比，区别是时间问题，“先旧后新”可以更快的将股份交到承配人手上，后者可对获售股份进行再支配。</span></p>
+<p><span style="font-size: 16px;">中手游在公告中称，公司分别就配售事项及认购事项订立配售协议及认购协议，配售代理有条件同意担任卖方的代理尽最大努力按配售价每股3.02港元配售1.8亿股现有股份。根据认购协议，卖方有条件同意按配售价认购与配售代理所配售的配售股份相同数目的新股份。</span></p>
+<p><span style="font-size: 16px;">配售价较11月23日收盘价3.35港元折让约9.85%，公司将自认购事项收取的所得款项净额(已扣除相关费用及开支)估计将约为5.37亿港元。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201125/f4deeab8b36541ab9768efe6475c1073.png" /></p>
+<p><span style="font-size: 16px;">简而言之，中手游控股股东肖健、冼汉迪控制的SPV公司（中手游兄弟有限公司、Silver Joyce International Limited等）先将1.8亿老股卖予中介机构法国巴黎银行（BNP PARIBAS），法国巴黎银行将股份出售给有意的投资者。而后，中手游再以3.02港元每股的价格向SPV公司配售1.8亿股。此次交易完成，中手游即可定向增发1.8亿新股融资5.37亿港元。</span></p>
+<p><span style="font-size: 16px;">中手游在公告中称，本次认购事项所得款项净额用于进一步提升其IP游戏发行及开发业务。今年以来，中手游持续加码游戏研发，不仅与多家游戏开发商有定制合作，而且也投资超20家游戏开发商。此次募资金额或有助于其在游戏研发和发行上的布局。</span></p>
+<p><span style="font-size: 16px;">至于财务情况，目前中手游暂未发布第三季度财报，中报显示，2020年上半年，中手游营收达17.14亿元，同比增长12.1%，经调整纯利为3.42亿元，同比增长27.6%。</span></p>
+➜西山居工程师：《剑网3：指尖江湖》角色逼真摆动效果如何实现？
+http://www.sohu.com/a/434071744_204728	56885
+<p><span style="font-size: 16px;">近日，在中国Unity线上技术大会游戏专场中，西山居资深引擎开发工程师以“《剑网3：指尖江湖》客户端性能优化案例分享-动态骨骼（DynamicBone）优化”为主题发表演讲，介绍了DynamicBone优化、通过Burst Compiler和Mathematics数学库进行加速、以及动静分离的数据等，帮助各位开发者制作出更逼真的角色摆动效果。 </span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201125/ac7cdf97a7174f14bb156b793f7d64a3.png" /></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">以下是演讲内容，有删减：</span></strong></span></p>
+<p><span style="font-size: 16px;">大家好，我叫苏泰梁，来自西山居，现在主要负责《剑网3：指尖江湖》优化方面的工作。今天主要分享游戏动态骨骼DynamicBone的优化。</span></p>
+<p><span style="font-size: 16px;">什么是动态骨骼？当使用动态骨骼时，拖拽角色左右晃动，头发、衣服的摆动都是比较真实自然的，动态骨骼和动作的融合也非常好。如果禁用所有动态骨骼的效果，在整个转动的过程中，头发、衣服都是硬梆梆的，非常僵硬。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201125/0680171496d8474f9303298a367d53f4.png" /></p>
+<p><span style="font-size: 16px;">动态骨骼是一款名叫DynamicBone的插件，一般用来模拟飘带、衣袖、裙摆、头发等的摆动效果，效果比较逼真，可以大大节省动作K帧的工作量。《剑网3：指尖江湖》的NPC、坐骑、各种挂件等都有用上，是一个使用非常广的功能。</span></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">右图的角色，我把它身上用到动态骨骼的地方都用数字标识了出来，1、2、3、4，有的长，有的短，都有动态的效果。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201125/8edcaafc285e416e9c62b035fff2f5e6.png" /></p>
+<p><span style="font-size: 16px;">假设我们要给角色最长的飘带加上动态骨骼的效果，先找到这根飘带在对象树上的根结点，把它拖到动态骨骼的组件节点上，再配置一下参数就可以了，非常简单。</span></p>
+<p><span style="font-size: 16px;">有很多参数，比如说阻尼系数、弹性系数、干性系数、惯性系数等等。阻尼系数可以理解为一种阻力或者摩擦力，节省速度。弹性系数会把你拉扯到一个目标位置。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201125/28247186d6e94b0592256410a3f1481a.png" /></p>
+<p><span style="font-size: 16px;">接下来看 <strong>动态骨骼模拟简化过程。</strong></span></p>
+<p><span style="font-size: 16px;">还以飘带为例，假设它有5个节点，在上一帧处于垂直的状态，在当前帧稍微往右移了一点，有一点点的偏移、旋转，一般都是由于模型的位移或者动作带来的。除了根结点，其他的节点都会从上一帧的位置模拟，然后根据每个节点的参数，比如惯性系数、弹性系数等，对每个节点进行相关的模拟运算，得出一个最佳的位置。</span></p>
+<p><span style="font-size: 16px;">最后，会把这个位置更新到每个骨骼节点上，同时根据父子节点的关系、位置，来修正这个旋转，这样的话整体上看起来就非常自然了。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201125/f48e3c5c5acc4f8886938d1179e3f96d.png" /></p>
+<p><span style="font-size: 16px;">每根骨骼在这个过程中要做什么事？核心的办法主要集中在组件的Update和LateUpdate。在Update中，每根骨骼需要重置位置，在LateUpdate中要做大量的模拟运算，并且最终会设置到骨骼。这里列出了完整的一个模拟运算。除了阻尼、弹性之类的，还有风力、重力各种模拟运算，印刷量比较大的。</span></p>
+<p><span style="font-size: 16px;">然后，我们假设场景里面有30个角色模型，每个模型有10条骨骼链，每条骨骼链有10根骨骼，那一共有3000根骨骼，在《剑网3：指尖江湖》里20个玩家再加上坐骑、NBC之类的，3000根骨骼，数量是比较正常的。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201125/8c17f7408fff4e199e0e4839df844297.png" /></p>
+<p><span style="font-size: 16px;">这么多根骨骼，每根骨骼还要做这么多事情，性能怎么样？先看看优化前的数据。这是小米Max2在组成动态骨骼中的CPU消耗，占整个CPU消耗大概10%，这是一个非常大的开销。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201125/25ca9ebdb2e2484c883d81c6469f7268.png" /></p>
+<p><strong><span style="font-size: 16px;">动态骨骼为什么会这么耗？</span></strong><span style="font-size: 16px;">首先它的数量非常多，一共有3000根骨骼。二是它的运算很复杂，需要做大量的模拟运算。这里值得一提的是，在整个模拟运算的过程中，需要对每根骨骼进行世界坐标、世界旋转、世界矩阵等世界变化的获取和设置等操作。</span></p>
+<p><span style="font-size: 16px;">说到世界变化相关的操作，在Unity里面要特别注意，因为这是一个非常耗时的操作。比如说获取和设置世界变化，在Unity的顶层并没有世界坐标的属性，只有局部坐标的属性，所以每次获取或者设置都是通过局部坐标一层一层地往上变，非常耗时。</span></p>
+<p><span style="font-size: 16px;">在《剑网3：之间江湖》里面，很多骨骼的层数都是非常深的，比如下图，这里面挂了动态骨骼的效果，所以它的层级很深，大概有20层，它在计算世界坐标、旋转的过程中开销是非常大的。层级越深，消耗就会越大。</span></p>
+<p><span style="font-size: 16px;">最后一点就是它的模拟是在Update和LateUpdate中完成的，每帧都需要做，也就是说这是一个固定的常态性能开销。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201125/db91a62903bb4a1db9acfaa30b5652cf.png" /></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">第一版优化</span></strong></span></p>
+<p><span style="font-size: 16px;">了解了它为什么这么耗，现在介绍一下我们做的 <strong>动态骨骼第一版优化。</strong></span></p>
+<p><span style="font-size: 16px;">下面这三点是我们做优化的过程中经常提起的一个三原则，第一个是能否不做，如果说不做也能达到效果，那肯定开销都没有了。二是必须做的话能否少做一些。最后不得不做的时候，再考虑能否做得更好。</span></p>
+<p><span style="font-size: 16px;">再看看这张图，在1、2、3、4上面用红色标出骨骼的长度。下面还有张小图，已经很小了，4这根飘带还是非常长，看得还比较清晰，但是1和2已经看不大清楚了。所以就有了我们第一版优化思路，根据骨骼链屏幕投影程度，过短的骨骼链直接关闭动态骨骼效果。</span></p>
+<p><span style="font-size: 16px;">投影长度可以使用骨骼链静态的长度。再加上游戏的FOV，一般动态变化比较少，所以计算它的屏幕投影程度可以做到几乎没有消耗。一般手机的宽度都是70毫米，2毫米以下就看不大清楚了。这个长度可以根据机型、机器情况和性能情况分不同的画质进行定制，还可以跟进不同的压力情况，实时调整。</span></p>
+<p><span style="font-size: 16px;">能否少做呢？我们还是利用投影长度，把适中的骨骼，比如说1或者3的骨骼在某些情况下只保持最基础的刚性运算，保留最基本的效果。</span></p>
+<p><span style="font-size: 16px;">再考虑能否做得更好。到了这步就只能死磕算法，在算法层面进行优化，尽可能地减少消耗。我们使用局部坐标，减少世界坐标，使用一些Catche来减少重复运算。最后减少Component数量，一个角色、一个组件就可以支持多条骨骼链的配置。这就是我们第一版的优化。</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201125/af27d01117e0477f9c1fba82e592d072.png" /></p>
+<p><span style="font-size: 16px;">优化后的数据效果还是比较明显的，开销从10%直接降到6.5%，优化了大概35%的CPU开销。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201125/b2f31d9a666541b48efc61fa21598c9a.png" /></p>
+<p><span style="font-size: 16px;">不过，6.5%的CPU开销还是挺多的。既然有第一版优化，那就有第二版，接下来介绍一下我们第二版优化。</span></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">第二版优化</span></strong></span></p>
+<p><span style="font-size: 16px;">第二版的优化最好是不做，或者是少做。这里需要提到一个概念，就是Unity Job System，这是Unity提供的一套多线程编程框架。我们第二版优化的核心思想就是使用多线程，尽可能地减少主线程做的事情。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201125/635cf4d09c5e4b638738e5cc0333883e.png" /></p>
+<p><span style="font-size: 16px;">Job System是Unity提供的一套多线程编承框架，它跟一般的多线程有什么不同呢？为什么Unity需要额外提供一套多线程框架？在Unity中写过多线程的人可能都遇到过一个坑，一般的线程是没办法操作Unity对象的，这是Unity的一个强制限制，并且告诉你这个只能在主线程访问。直到Job System出现，才使得这成为可能。</span></p>
+<p><span style="font-size: 16px;">虽然现在局限还是挺大的，但是它使得多线程中操作Unity对象成为可能。这就是第一个不同。</span></p>
+<p><span style="font-size: 16px;">第二是它有强大的线程安全检测机制。这个是非常重要的，比如说主线程和Job线程之间一些数据的读写安全问题，都有强大的检测机制，保证你的数据不会写坏。</span></p>
+<p><span style="font-size: 16px;">第三点，它有非常高的性能，可以充分地利用多核的CPU。Job System跟Unity引擎顶层的C++共享work线程池，work线程池会通过一个Job队列来减少上下文的切换和竞争问题，这样就可以充分地利用多核CPU的资源，从而提高性能。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201125/6da57d454c4f4f35937524e0b9734534.png" /></p>
+<p><span style="font-size: 16px;">接下来感受一下 <strong>Job System的简化例子</strong>。在这里，并行计算两个数据原始物中的一个值相加，然后复制到另外一个数据。首先我们要声明一个Job，然后集成Unity Job相关的接口，只用特定的数据结构证明自己的数据，就可以在Execute函数中写需要在Job中运行的逻辑了。这个例子也非常简单，Execute里面就是把A和B的数据元素直接相加，然后复制到C的数据中。 </span></p>
+<p><span style="font-size: 16px;">最后，写的Job可以通过Schedule这个函数推到work线程进行执行，使用上还是非常简单和直观的。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201125/9a98c392e8c2426ab76982a7abf5568b.png" /></p>
+<p><span style="font-size: 16px;">再来看看 <strong>动态骨骼Job化的示意</strong>。我这里会将耗时的操作都Job化，比如Update中的Transform操作，还有lateupdate中的各种模拟运算，提取到对应的Job中。但实际上把直接转化成Job是存在不少问题的，我们在直接转换的基础上做了很多的加速优化。 </span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201125/79ce97c797f44094a64802b29e53e20e.png" /></p>
+<p><span style="font-size: 16px;">Job优化后的数据，相对于上一版优化了84%的CPU时间，效果还是非常非常明显的。</span></p>
+<p><span style="font-size: 16px;">左边是优化前，右边是优化后的Profiler数据，我用红线把work线程的执行情况标识出来了。可以看到左侧优化前的work线程一直处于idol状态，什么事都没做。但是，主线程压力是非常大的，所有东西都放在了主线程来做。右边是Job化后的情况，所有的Job都在紧密地连接，紧密地执行，而且很好地分布到了所有work线程，充分利用了多核的并行加速效果。</span></p>
+<p><span style="font-size: 16px;">当然，这两幅图的时间轴单位是不一样的，右侧是我们不断地放大后的数据，主要是为了让大家看清楚Job的执行情况。实际上相对左图的话，按单位来算，大概只有1毫米那么宽。</span></p>
+<p><span style="font-size: 16px;">这个是我们在原本直接转化到Job的基础上经过多版优化后的一个数据。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201125/6c4942c18bd44d939979ccb2b54a9bd4.png" /></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">加速手段1</span></strong></span></p>
+<p><span style="font-size: 16px;">我们用到了一些比较关键的加速手段。</span></p>
+<p><span style="font-size: 16px;">第一个就是 <strong>让Job真正并行起来</strong>。为什么说让Job真正并行起来呢？先看一段我们曾经一版的数据，这一版数据比优化前还差，可以看到上面是主线程，下面是Job线程，主线程一直在等待Job线程执行。为什么？因为Unity有一个问题，Transform相关的Job只要都在同一个根结点下，它都是没办法进行的。这是所有Transform Job绕不开的一个话题。 </span></p>
+<p><span style="font-size: 16px;">可能有点抽象，再看一下我们的使用情况——所有的player都放在了一个PlayerSet的分节点上，在同一个根结点下的Transform，它们之间的操作都是不能并行的。</span></p>
+<p><span style="font-size: 16px;">这会带来什么问题呢？一个是主线程跟Transform Job没办法并行，会出现WaitForJob GroupID。这是因为主线程中有一个跟Transform相关的操作——Transform.Get_hasChange，它的核心是因为Transform和Job中的Transform是属于一个根结点的，这个时候主线程就需要等待相关的Job线程，所以没有在并行。</span></p>
+<p><span style="font-size: 16px;">第二个问题是Transform Job之间也没办法并行。即使你把Transform相关的几个Job推到Job线程来执行，但Job线程之间的Transform如果还是属于一个根结点，它们自己也没有办法并行。</span></p>
+<p><span style="font-size: 16px;">看左下图红框2的Profiler数据，它只在一个Job线程中执行，并没有分散到所有的work线程进行执行，没有充分利用多核的并行，效率非常的。</span></p>
+<p><span style="font-size: 16px;">为什么会有这个限制呢？实际上父子节点Transform操作存在一个关联性，前面提到了Transform的世界坐标、操作指令，它可能存在一些安全问题。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201125/dddd415a56f9458fa798b2f8081d02ec.png" /></p>
+<p><span style="font-size: 16px;">那怎么样让Transform Job并行起来呢？将所有的模型都评估到顶层，比如说可以把PlayerSet去掉，直接把player全部平铺到顶层，这样所有的player之间都可以并行。但是，一个player可能会有十多根骨骼链，每根骨骼连上面还有十几个节点，这些都是没办法并行的。</span></p>
+<p><span style="font-size: 16px;">当然，我们还可以再进一步，将每条骨骼链平铺到顶层。比如说player有个尾巴，直接把这条尾巴拉到顶层，这样即使它有多条骨骼链，所有骨骼链之间每个角色都是可以运行的。当然极限情况是我们还可以把这个骨骼链中的每个节点都平铺到顶层，这样的话所有的骨骼节点在整个过程中都可以并行。</span></p>
+<p><img src="//p3.itc.cn/q_70/images03/20201125/b0944600b1da4e1eb14d519657ca4cb6.png" /></p>
+<p><span style="font-size: 16px;">这是很完美的，但是，骨骼平铺可能会导致关联的骨骼动作失效。</span></p>
+<p><span style="font-size: 16px;">为什么会出现关联动作失效的问题？先来看看下图。左边是角色的对象数，右边是动作文件，这个动作文件绑定的tail4、tail5两根骨骼。Unity在Animator中，会根据动作文件中对应的每根骨骼的名字，在左边的对象数中一层一层往上找，找到对应的节点就可以绑定成功，如果没有找到，就绑定失败。</span></p>
+<p><span style="font-size: 16px;">那怎么解决呢？我们通过源码发现，可以在引擎顶层加用Catche，或者指定映射关系来解决。什么意思呢？通过左侧对象数查找的时候，可以优先使用映射的关系或者是Cache中的数据，这样即使我们把它的骨骼链或者节点平铺到顶层，它重新绑定不会有任何的影响。</span></p>
+<p><span style="font-size: 16px;">最后哪一种平铺策略更合适？具体还是根据实际情况定的。在《剑网3：指尖江湖》模型级别的平铺并行效果已经非常好了。当然，这跟后续各种加速手段的优化也分不开。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201125/87aea70d9a3649f78a05cef860dd5f20.png" /></p>
+<p><span style="font-size: 16px;">再介绍 <strong>让Job真正并行起来的另外两个非常重要的加速手段。</strong></span></p>
+<p><span style="font-size: 16px;">可以看看左侧两个Job代码。上面的Job代码是从Transform中获取局部坐标和局部旋转的代码，下面的Job代码是局部坐标和局部旋转映射回Transform中的代码。这两个Transform就是我们跟Transform相关的Job的代码，已经优化到了一个极其简单的程度了。</span></p>
+<p><span style="font-size: 16px;">为什么要把这两个Transform相关的代码优化到这么简单？前面提到Transform Job在相同的root点下是没办法并行的，很容易跟主线程出现一些wait，所以，我们减少Transform相关Job的逻辑，这个时候它跟主线程出现wait的可能性就会降低。当然，即使出现wait，时间也不会太长，因为它非常简单，执行起来非常快。</span></p>
+<p><span style="font-size: 16px;">还有就是非Transform相关的Job没有Transform并行的限制，我们可以把几乎所有的逻辑全部移出来，放到非Transform一般的Job中执行。一般的Job没有限制，可以充分地利用work多核的性能，充分地并行，这样它就会大大提速，因为它没有一个跟Transform或者是root节点的限制。这就是我们为什么要把这个东西单独拎出来并且把它简化到极致。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201125/a6d8d567ec0d437788405124ce01131d.png" /></p>
+<p><span style="font-size: 16px;">再看看右侧的加速手段。这里主要是利用脚本的执行顺序做到一些真正并行加速的效果。比如上面的1就是让Job在所有脚本最开始执行，Job线程可以跟主线程有最大的并行时间，横宽的话就是update相关的Job，把它放到了所有脚本的最前面。</span></p>
+<p><span style="font-size: 16px;">另外就是我们可以通过脚本执行顺序，决定Job具体和哪些脚本或者哪些模块并行。这样的好处，可以巧妙地避开这个wait。比如说下面的红框，我把动态骨骼放在了UI Pannel的前面，UI Pannel是NGY中管理所有UI组件的一个模块，在它的lateupdate中会做大量的核批和填充的操作，这些操作是非常耗时的。但是，在这个过程中它没有用到动态骨骼的效果。</span></p>
+<p><span style="font-size: 16px;">另外，它有充分的执行时间，动态骨骼跟它并行的话可以完美地错开。因为它不用到动态骨骼的组件，并且在我们游戏中又是独立的根结点，不会跟别的玩家或者NPC组一个同样的根结点，这样它就可以完美地跟DynamicBone并行，不出现wait。</span></p>
+<p><span style="font-size: 16px;">这些加速可以大大地缓解Transform Job可能出现的wait的情况。</span></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">加速手段2</span></strong></span></p>
+<p><span style="font-size: 16px;">接下来再介绍一下加速手段2，它可以 <strong>大大提速Job的代码效率</strong>。 </span></p>
+<p><span style="font-size: 16px;">这里的核心是使用Burst Compiler和Mathematics数学库的加速。Burst是Unity的一个代码编译优化工具，可以针对目标机器进行专门的优化。数学库支持SMD的加速，SMD是一条指令可以同时操作多个数据，一般一条指令只操作一个数据，它可以同时操作多个数据，在3D运算中比如向量或者矩阵运算的加速效果是非常非常明显的。</span></p>
+<p><span style="font-size: 16px;">看一下两者数据的差别。上图是没有开Burst的效果，下面是开了Burst的效果。提升非常的夸张，起码50倍以上的性能差异。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201125/9da161bd012e44999f5aaaaf76154ad1.png" /></p>
+<p><span style="font-size: 16px;">使用上也是非常简单的。Burst和Mathematics都是属于Unity Pacage中的一个包，需要在Package Manager中把这两个导入，Burst Compiler需要优选相应的包，然后在自己的Job上声明一个Burst Compiler。</span></p>
+<p><span style="font-size: 16px;">数学库也只需要把它的库引用进来，然后再使用它的类型就好了。比如说使用Float3来替换我们平时用的Vector3，这两个加速就可以用起来了，效果极其明显。</span></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">最后再介绍一些加速手段。</span></strong></span></p>
+<p><span style="font-size: 16px;">一个是利用面向数据的设计减少Cache Missing。核心还是利用Unity ECS的思想，尽可能让Job操作的数据是连续的。优化前其实每个动态骨骼都是个组件，数据在内存里面都是分散的。每根骨骼更新的时候都需要从不同的内存位置来拿数据，所以Cache Missing非常严重。</span></p>
+<p><span style="font-size: 16px;">用Job的话，可以把游戏中所有动态骨骼数据都存在一个连续的数据中，Job就会逐个处理数字中的数据。因为数字的内存是连续的，可以大大地降低Cache Missing，提高数据访问的性能。</span></p>
+<p><span style="font-size: 16px;">第二点就尽量减少Job的数量，Schedule也需要时间开销。我们曾经拆分了很多的Job，最后发现Schedule的时间也需要很多，有点得不偿失。</span></p>
+<p><span style="font-size: 16px;">第三点是尽可能减少数据拷贝，可拆分动态数据和静态数据。前面也看到了Transform相关的Job拆分到Job之后，所有的数据在主线程做的事情非常少，经验、核心的逻辑和计算都放到了Job上进行，主线程只剩下更新数据，并且把更新数据到Job，把Job推向work线程。但是，在动态骨骼上的一些数据更新还是比较频繁的。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201125/fec23e732b5f4412a68d2bb8611322bb.png" /></p>
+<p><span style="font-size: 16px;">Job只支持Structs数据类型，没办法使用Calsses，就是它只支持子类型，不能支持引用类型。Structs类型的数组没办法单独修改元素中某一项属性，类似于修改Transform.Position一样，只能整体布置。比如直接修改，比如Transform.Position.x，这是没有效果的，因为position返回的是一个Structs。</span></p>
+<p><span style="font-size: 16px;">所以，我们这里只能用Structs存储数据，并且它还需要存在数据中。Structs数据结构如果全部塞在一起，结构是很大的，因为前面各种参数数据量非常大，频繁复制、拷贝需要很多时间，而且这个是实打实的在主线程需要做的事情。</span></p>
+<p><span style="font-size: 16px;">所以，这个就需要做到数据分离，拆动态数据和静态数据，动态数据更新的数据尽可能地少一些，静态数据基本上都不需要更新，就可以大大地提升性能。</span></p>
+<p><span style="font-size: 16px;">这就是我们最核心的一些加速手段。</span></p>
+<p><span style="font-size: 16px;">最后看一下整个Job优化后数据的总结。</span></p>
+<p><span style="font-size: 16px;">假设原版的数据是100%，我们做第一版优化之后能减35%，最后通过Job优化相对原版可以减90%的优化。减90%的话还是非常明显的，它意味着优化前和优化后有10倍的性能差异。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201125/4e3ea3a6bd2e47e0bcfde1beb2087cfe.png" /></p>
+<p><span style="font-size: 16px;">今天的分享就到这儿，谢谢大家。</span></p>
+➜新浪微博关联公司数亿元入股假面科技，后者为《狼人杀》开发商
+http://www.sohu.com/a/434076223_204728	56885
+<p><span style="font-size: 16px;">2020年下半年，全球刮起了“狼人杀”旋风。 </span></p>
+<p><span style="font-size: 16px;">App Annie数据显示，太空背景的狼人杀《Among Us》移动端10月活跃用户数高达2.95亿。10月底，国内厂商发布的《狼人之间》上线两天即登顶国内iOS免费榜。此外，网易《狼人杀官方》推出的“跑跑狼人杀”模式已经开启预约。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201125/65194fcc1f8a4afab5cf8e12753e3696.png" /></p>
+<p><span style="font-size: 16px;">日前消息</span><span style="font-size: 16px;">，《狼人杀》经典版开发商上海假面科技迎来新的控股股东。</span></p>
+<p><span style="font-size: 16px;">企查查显示，新浪微博关联公司北京微梦创科创业投资管理有限公司获得假面科技近69%股权（68.8591%），同一时间，原股东巨人网络科技有限公司等退出。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201125/a2fcdbc623d94e259f8c25e82a295817.png" /></p>
+<p><span style="font-size: 16px;">网上消息称</span><span style="font-size: 16px;">，</span><span style="font-size: 16px;">这笔投资金额达数亿元人民币。</span></p>
+<p><span style="font-size: 16px;">作为游戏行业人士，可能更熟知的是假面科技的《狼人杀》经典版，许多人因游戏logo颜色称之为“红狼”。这款在2016年底上线的产品，风靡全网，2019年用户数已经突破1亿。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201125/f8f219f1c685466a8b3b63b2223ddf9f.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">除了《狼人杀》经典版外，他们还曾推出《天黑请闭眼》《谁是卧底》等社交游戏产品。与此同时，他们旗下品牌娱公互动自研的暗黑童话题材的2D卡牌回合制《才不是童话》在测试阶段获得超高评价—TapTap 9.1分、好游快爆 9.7分。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201125/5653430d2b9f4c1fbec39fed88a2c093.png" /></p>
+<p><span style="font-size: 16px;">实际上，成立于</span><span style="font-size: 16px;">2014年的假面科技是一家以社交为核心驱动的公司。</span><span style="font-size: 16px;">在游戏化产品外，他们还推出了知名的</span><span style="font-size: 16px;">文艺内容</span><span style="font-size: 16px;">向</span><span style="font-size: 16px;">“</span><span style="font-size: 16px;">小独</span><span style="font-size: 16px;">”</span><span style="font-size: 16px;">和</span><span style="font-size: 16px;">唱</span><span style="font-size: 16px;">歌娱乐</span><span style="font-size: 16px;">向的</span><span style="font-size: 16px;">“</span><span style="font-size: 16px;">弹唱达人</span><span style="font-size: 16px;">”</span><span style="font-size: 16px;">这两款</span><span style="font-size: 16px;">内容社交类产品</span><span style="font-size: 16px;">。</span></p>
+<p><span style="font-size: 16px;">2019年10月底，曾经爆红的社交产品“足记”团队加入娱公互动，向着95后年轻人的兴趣突破。</span></p>
+<p><span style="font-size: 16px;">当下，无论是游戏型还是内容型社交产品，如何能做到年轻用户喜欢，让Z世代用户认可，是许多公司布局的方向。显然，强社交基因的新浪是看中了他们在这方面的潜力。</span></p>
+➜小米Q3财报：出货量超苹果位居第三，净利润达41亿元
+http://www.sohu.com/a/434080318_204728	56885
+<p><span style="font-size: 16px;">11</span><span style="font-size: 16px;">月</span><span style="font-size: 16px;">24</span><span style="font-size: 16px;">日，小米集团发布了未经审计的</span><span style="font-size: 16px;">2020</span><span style="font-size: 16px;">年</span><span style="font-size: 16px;">Q3</span><span style="font-size: 16px;">财报，各项业务均表现亮眼。</span><span style="font-size: 16px;">财报显示，当季小米集团总收入</span><span style="font-size: 16px;">722</span><span style="font-size: 16px;">亿元，</span><span style="font-size: 16px;">同比增长</span><span style="font-size: 16px;">34.5%</span><span style="font-size: 16px;">，经调整净利润</span><span style="font-size: 16px;">41</span><span style="font-size: 16px;">亿元，同比增长</span><span style="font-size: 16px;">18.9%</span><span style="font-size: 16px;">，总收入及经调整净利润均创下单季历史新高。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201125/e452c6a50bae49eb9d8d6d562d777f71.png" /></p>
+<p><span style="font-size: 16px;">从财报上看，当季小米智能手机全球出货量达到4660万台，同比增长45.3%，收入476亿元，同比增长47.5%。得益于小米手机出货量的大幅增加，当季小米MIUI月活跃用户达到3.682亿，同比增长26.3%。当季小米互联网服务收入达到58亿元，同比增长8.7%。</span></p>
+<p><span style="font-size: 16px;">根据数据公司统计，保持增速的智能手机品牌仅有三星、小米以及vivo，其中三星同比增长2.9%、vivo同比增长4.2%，而小米则大幅度增长42%。本季度，小米市场占有率重回全球前三，创始人雷军专门发布微博庆贺，称小米是“主流手机品牌中唯一逆势大涨的厂商”。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201125/8aeb132268ae440d923aa49951212e10.png" /></p>
+<p><span style="font-size: 16px;">小米手机能够逆势上涨，原因主要是产品力升级和市场开拓。</span></p>
+<p><span style="font-size: 16px;">产品方面，在中低端市场，小米和红米也推出了众多机型，比如红米 K30至尊纪念版、小米10青春版等，覆盖了各个价位段，同时受到疫情影响，国内外用户消费水平略有下滑，但随着5G网络的到来，用户有着换购机型的需求，而小米在性能以及价格方面的优势，使其成为众多消费者的首选。</span></p>
+<p><span style="font-size: 16px;">在高端市场，采用小米及红米双品牌战略，小米10至尊纪念版上探至5000元价位。小米在财报中表示，受益于高端智能手机占比持续上升，小米在大陆地区智能手机平均售价（ASP）持续提升，同比增长14.7%。</span></p>
+<p><span style="font-size: 16px;">在消费者拓展方面，除了国内，小米这几年还一直在深耕海外市场。财报显示，当季小米海外市场收入达到398亿元，同比增长52.1%，小米称，本季度海外收入及总收入的贡献占比均创下历史新高。小米表示，其在全球主要市场包括欧洲市场、拉美、中东、非洲及印度市场均保持增长。</span></p>
+<p><span style="font-size: 16px;">在产品和营销均实力不俗的情况下，小米出货量才能逆势上涨42.0%。</span><span></span></p>
+➜第五届金陀螺奖线上投票结束，即将进入专家评审阶段！
+http://www.sohu.com/a/434080506_204728	56885
+<p><strong>FBEC2020暨第五届金陀螺奖</strong></p>
+<p><span style="font-size: 16px;">2020未来商业生态链接大会暨第五届金陀螺奖颁奖典礼（简称“FBEC2020”）由陀螺科技主办，将于今年12月11日在深圳大中华喜来登酒店开幕。金陀螺奖颁奖典礼作为年度行业影响力盛会， <strong>伴随行业的进步走向了第五年</strong>。本届金陀螺奖设置 <strong>游戏、电竞、VR/AR、区块链</strong>四大奖项，以行业数据、线上投票、专家评审等年度数据为依据，旨在评选出年度行业优秀企业、个人、团队、作品，鼓励从业者进取突破，推动行业良性可持续发展。 </span></p>
+<p><span style="font-size: 16px;">第五届金陀螺奖线上投票系统将于11月25日0:00正式关闭，即将进入专家评审阶段。</span></p>
+<p><span style="font-size: 16px;">本届金陀螺奖总计有550+企业、个人、项目参评报名，累计投票总数超200W+。作为线上投票环节的最后一天，热度空前，参评项目激烈角逐中。</span></p>
+<p><span style="font-size: 16px;">11月26日，入围作品将进入专家评审阶段。最终第五届金陀螺奖将结合第三方数据和评审结果，获奖名单将于12月11日在深圳大中华喜来登酒店的第五届金陀螺奖颁奖典礼现场公布，敬请期待！</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201125/c774384f808b4a48a545e63d8d194e9e.jpeg" /></p>
+<p>FBEC <span>2020 </span></p>
+<p><span style="font-size: 16px;"><strong>FBEC2020以”远见者稳进“为主题，关注游戏、电竞、新文创、5G、AR/VR、区块链、流量营销等互联网前沿行业</strong>。FBEC2020将携手行业重量级嘉宾及业界从业精英，共同探讨未来商业生态的创新和变革。探讨行业热门话题，呈现国内外一线嘉宾。 </span></p>
+<p><span style="font-size: 16px;">打造第五届金陀螺奖颁奖典礼，全球游戏及数字文创峰会、全球区块链及数字金融峰会、全球XR及5G未来科技峰会、全球流量与数字营销峰会四大主会场，XR企业变现之道 · 商用探秘营 、开发者训练营、云游戏互动体验区、互动展区等精彩内容板块。相信本届将会为参展企业创造良好的合作和洽谈空间，助力参展企业提升品牌价值，让参展企业从大会的商业效应中获益！</span></p>
+<p><span style="font-size: 16px;">乘风破浪的2020</span></p>
+<p><span style="font-size: 16px;">“危”与“机”并存</span></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">这一年</span></p>
+<p><span style="font-size: 16px;">创新者奋发</span></p>
+<p><span style="font-size: 16px;">远见者稳进</span></p>
+<p><span style="font-size: 16px;">在深圳40周年之际</span></p>
+<p><span style="font-size: 16px;">FBEC2020诚挚邀请您</span></p>
+<p><span style="font-size: 16px;">谋定未来</span></p>
+<p><span style="font-size: 16px;">2020年12月11日</span></p>
+<p><span style="font-size: 16px;">深圳大中华喜来登酒店</span></p>
+<p><span style="font-size: 16px;">移动端或PC端均可报名，一键参与</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201125/1d4acc62747c433e8ae11cc2c9e1a8b5.png" /></p>
+<p><span style="font-size: 16px;">PC端：复制下方链接进入官网报名</span></p>
+<p><span style="font-size: 16px;">http://www.fbec.info/</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201125/de85d651a1c748d3804f75dcbabaae16.jpeg" /></p>
+➜颜值即正义！从2020年爆款游戏来看，画风起着多大的作用？
+http://www.sohu.com/a/434080624_204728	56885
+<p><span style="font-size: 16px;">今年以来，几乎每一个爆款游戏都有一个共同的特点，那就是拥有独特的画风，比如只靠一个</span><span style="font-size: 16px;">1</span><span style="font-size: 16px;">3</span><span style="font-size: 16px;">分钟的宣传片便在全球火爆出圈的《黑神话：</span><span style="font-size: 16px;">悟空》，给人的第一印象便是其栩栩如生的画面，而这离不开美术总监杨奇深厚的美术功底。</span><span style="font-size: 16px;">在以杨奇为首的美术团队的努力下，从项目起始阶段的追求极致真实感的概念原画设定到用</span><span style="font-size: 16px;">U</span><span style="font-size: 16px;">E4</span><span style="font-size: 16px;">制作成可以实操的</span><span style="font-size: 16px;">3</span><span style="font-size: 16px;">A</span><span style="font-size: 16px;">级游戏</span><span style="font-size: 16px;">Demo，精细的画面逼真地描绘出游戏中的阴森氛围和黑暗风格。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201125/d4fcf0b15e3344488d5229a497284133.png" /></p>
+<p><span style="font-size: 16px;">如果说游戏科学对《黑神话：悟空》的画面效果精益求精是为了实现主机与PC平台上的国产3A大作的梦想，那么商业化手游上则不必承担这么重大的责任，只要得到自己的目标玩家喜爱与认可便可。我们考察了今年以来先后上线的十多款手游，大多数都取得了良好的成绩，通过调查可以发现他们的画风均有独到之处，笔者在下文也会注入个人看法做相关阐述。</span></p>
+<p><span style="font-size: 16px;">从这些产品来看，走电影级感受画风路线的，如《天涯明月刀手游》，将常以2D画面呈现的策略游戏进行3D化的，如《鸿图之下》，风格独特令人耳目一新的，比如《最强蜗牛》《山海镜花》与《新射雕群侠传之铁血丹心》，美轮美奂堪比艺术作品的，比如《江南百景图》，选择欧美风进而全球受欢迎的，如《剑与远征》与《万国觉醒》，通过二次元风格催动人心的，如《三国志幻想大陆》、《原神》与《高能手办团》。</span></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">画风，只有合适与否</span></strong><strong><span style="font-size: 16px;">！</span></strong></span></p>
+<p><span style="font-size: 16px;">画风，顾名思义，就是作画的风格，但在游戏界，画风是指游戏给人形成的一种整体视觉感受，在玩家眼里形成的一种视觉风格。值得注意的是，不同的画风无法简单粗暴地去比较优劣，比如我们不能说拥有电影画质走写实画风的《天涯明月刀》要比二次元风格的《原神》更好，同样地，我们也不能说用UE4打造的《鸿图之下》的3D画风就一定比《三国志·战略版》或者《率土之滨》的画风更好，而应当根据实际情况的需要来选择使用不同的画风。也就是说，画风只有适合与否，没有高下之分。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201125/c0cc9f4d3f504c43abe194375e8dd3c7.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><img src="http://p4.itc.cn/q_70/images03/20201125/bba656ea95a24d6db272299a982df3e5.png" /></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201125/665d5e5b05c74e5cb445ef7524f3af80.png" /></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201125/4f89146880c1413ebe239c3a0398d431.png" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201125/7f8d920ae89e49f5b940ddab34d63212.png" /></p>
+<p><span style="font-size: 16px;">《最强蜗牛》就采用了一种非常离奇古怪的画风，此前在国内市场上比较稀缺，海外产品中能找到的相对接近的是《王国保卫战》。这种画风虽然看起来不精致，但却带有黑色幽默的搞怪风格，这与游戏本身的题材以及语言风格相当吻合，当两者结合在一起时，才会让人觉得有强烈的效果，对于这款处处充满着惊喜的游戏而言，这种略显粗糙的搞怪画风，比之那些走高技术路线的逼真写实画风更为来劲。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201125/258e1f6c974747708bb74addedd44814.png" /></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201125/90886b45f9fd43b4b814caeb82172b31.png" /></p>
+<p><span style="font-size: 16px;">《剑与远征》是一款独特玻璃彩绘风格的放置游戏，游戏风格跟国内大部分风格都截然不同，偏魔幻和西方文化的欧美风格，它融合了许多元素例如教堂古典的壁画和玻璃彩绘等，在游戏里面大家可以随处看见这种只有中世纪才会出现的元素，这也与其世界观极为吻合。</span></p>
+<p><span style="font-size: 16px;">而且放置游戏有很多静态场景，进一步增强了玩家对“彩绘壁纸”的感受。因此，《剑与远征》成功地做到了不但把游戏在欧美市场发扬光大，还完全征服了欧美玩家的心。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201125/567a5d76793c44d0a5523e7fdadc366a.png" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201125/f279ca1b74c24c6095ee8d6a21c1d85e.png" /></p>
+<p><span style="font-size: 16px;">据《剑与远征》的主美银子透露，因为研发团队是《小冰冰传奇》的原班人马，所以在美术倾向上也继承了它的欧美风。然而《小冰冰传奇》却在欧美不是很成功，所以他们在此基础上做了一些改变和尝试，并且增加了新的元素（比如两三人一组的羁绊系统）。</span></p>
+<p><span style="font-size: 16px;">对于早期角色《剑与远征》的美术团队尝试了几个大方向，有写实的也有卡通的。不过一切都要以玩家的反馈为准，所以他们邀请玩家进行了线上测试，测试反馈卡通风格对玩家的吸引力很高，这使得他们确定了这个大方向。</span></p>
+<p><span style="font-size: 16px;">之后他们又根据自己的审美偏好，在这个风格上做了一些改进，最终呈现出目前大家所看到的这种风格。立绘方面，他们根据最终的角色风格也做了几版尝试，最终选择了现在这钟偏平面装饰风格。</span></p>
+<p><span style="font-size: 16px;">与《剑与远征》不同的是，莉莉丝发行的另一款产品《万国觉醒》，则采取了3D美式卡通画风，通过卡通造型与亮丽色彩，实现了精致明快的效果。这类画风在Supercell的几款全球大爆的产品的教育下，全球玩家都很容易接受，因此这款产品也在全球各个市场攻城略池而无往不利。Supercell新作《荒野乱斗》也是此类画风下代表。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201125/c998a1dd99804c498d1dbd077ef00fde.png" /></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201125/fcd7a7f7999b4ad6b4d4e07808a68815.png" /></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">画风，稀缺性更易出圈！</span></strong></span></p>
+<p><span style="font-size: 16px;">古镇经营模拟游戏《江南百景图》的制作团队最初只有5个人，但在其于2020年7月2日正式上线之后，短短二十四小时内，这款看似“简单”的游戏就收获了超过40万名注册玩家，迅速登上各大免费游戏下载排行榜榜首。后来，《江南百景图》甚至占据App Store下载榜榜首长达3个月之久。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201125/c3bdd25982cd405698cbd2b94c41b4e2.png" /></p>
+<p><span style="font-size: 16px;">为何一个仅5人小团队制作的小品级的独立游戏会如此火爆呢？原因正在于其中国风的水墨画风。因为人力有限，《江南百景图》采用了中式艺术风格的画风，用很质朴很较真的方式，细致的史实参考，用平面手绘与水墨，最终呈现出不输于昂贵3D建模的美感。</span></p>
+<p><span style="font-size: 16px;">在《江南百景图》中，人物立绘飘逸灵动的水墨画风为游戏披上了一层“阳春白雪”的外皮，但更难能可贵的是，游戏中的场景还处处充分体现出古代中国画中工笔画精髓。此前国内手游产品同样采取中国水墨画风格的，还有网易的《绘真·妙笔千山》，不过走的是承袭自北宋王希孟《千里江山图》的青绿山水画的风格，更偏写意一些。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201125/09fe4819ba694115badc17584072cb8c.png" /></p>
+<p><span style="font-size: 16px;">可见，有针对性的稀缺画风使得这款游戏通过画风出圈的关键因素，因为不同的画风具有不同的目标受众，游戏可以针对自身目标群体的喜好，以稀缺性画风成功出圈，例如当初《阴阳师》就以当时市场上比较稀缺的和风引起玩家的关注。今年上线的《阴阳师：妖怪屋》则选择了与IP原作《阴阳师》完全不一样的剪纸画风，力求在保留式神形象特点的同时，在美术风格上进行了一定的创新，同样获得玩家的好评。而此前由玉米游戏开发的《纸片少女》也采取了具手工质感的纸片艺术，让游戏的画面表现与众不同。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201125/2cf596f285814c609a2400936eddb179.png" /></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201125/2f817331c0b24b6cbb64704f4a28d2ad.png" /></p>
+<p><span style="font-size: 16px;">如今市面上大多数的卡牌手游均采用Q版的萌系画风，而《新射雕群侠传之铁血丹心》采用了偏写实的水墨画风，其发行制作人林炳聪认为，坚持写实而非Q版画风更能符合金庸武侠题材，这对于年龄偏大的武侠题材的核心用户来说更为熟悉，因为每一个人心里的武侠梦肯定是各种高手飞来飞去，而不是一批很精致的人偶在他们面前，因此这个写实画风的稀缺性反而成为产品吸量的优势。硬派武侠《我的侠客》则选择用复古画风来切更成熟的用户群。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201125/c32c0fad75f4429db921b3f9c9705447.png" /></p>
+<p style="text-align: center;"><span><span style="font-size: 16px;">（新射雕英雄传</span><span style="font-size: 16px;">之铁血丹心</span><span style="font-size: 16px;">）</span></span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201125/634e972d06844eed96cdcc98b7a32fa6.png" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">（我的侠客）</span></p>
+<p><span style="font-size: 16px;">《三国志幻想大陆》之所以能从卡牌红海中突围，最重要的是其将三国人物的画风进行了保持着高颜值的二次元化，从熟悉题材和ACG文化两个维度打动玩家，因此成功地吸引了诸多泛二次元用户。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201125/46853520225940d2b12b5007bc4315be.png" /></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201125/bd66e7374b8c481a8d4c170455d8bb9d.png" /></p>
+<p><span style="font-size: 16px;">近期成绩不错的《高能手办团》，采用了非常抢眼的潮酷风格的画风，不仅游戏场景极具现代潮酷感，3D定制化PBR工艺下的二次元角色手办渲染风格，更是区别于市面上常见的卡通渲染，让手办看起来与现实中差距不大，因此游戏内玩家在和手办互动的时候也显得非常真实，再加上游戏中玩家可以360°无死角环绕式欣赏手办的细节，让玩家有种云养老婆的感觉。</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201125/6cea9d2d46cd407fb7a13987e14c7dc0.png" /></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201125/1e6f73c3d8f7432c8d2c5946a88a6a18.png" /></p>
+<p><span style="font-size: 16px;">选择从差异化卡牌表现吸量的还有《山海镜花》：以其蒸汽朋克与中国神怪结合的充满东方幻想气息的二次元画风，而在上线之初就受到二次元玩家的关注。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201125/774d989302e4442faa2edbd946b90ab1.png" /></p>
+<p><span style="font-size: 16px;">同样地，近期的一些爆款作品，不论《万国觉醒》《原神》《天涯明月刀》，其精致的画风均给玩家带来良好的第一印象，同样也是这四者迅速俘获海量玩家，取得出圈效果的核心原因。接下来，我们也会看到越来越多有差异化画风的新品诞生。</span></p>
+<p><strong><span style="font-size: 16px;">画风，我们该如何认识？</span></strong></p>
+<p><span style="font-size: 16px;">不久前，国金证券研究所研究消费升级与娱乐研究中心的传媒杨晓峰团队对国产游戏的“画风维度”进行了一番研究。这份报告也进行了一些美术风格化的分类。</span></p>
+<p><strong><span style="font-size: 16px;">1、从2个维度来描绘游戏基本画风：“地域风格&amp;人物设计”</span></strong><span style="font-size: 16px;"></span></p>
+<p><strong><span style="font-size: 16px;">① 地域风格</span></strong><span style="font-size: 16px;">：地域风格是指与游戏题材相对应的地域风格特征，游戏的地域风格能让玩家直观感受到游戏的文化氛围。比如即使处于同一个时代，长城，富士山，自由女神像所带来的场景，人物以及建筑的变化是迥然不同的，因为它们都是具有鲜明地域风格的元素，分别代表着，中国、日本与美国三个不同的地域文化，再如大熊猫象征着中国，而樱花则象征着日本，牛仔象征着美国。具体如中国古风、日本二次元风、韩国时尚风、欧美写实风等。</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201125/7d150d52e64e48e686e9acf280800291.png" /></p>
+<p><strong><span style="font-size: 16px;">② 人物设计</span></strong><span style="font-size: 16px;">：人物设计是游戏策划与美工协作的具体呈现，主要体现出游戏画风是写实风格还是艺术创作风格（如卡通、漫画、绘本插画、工笔画、水彩等）。游戏的世界观、剧情推进大多由人物对话或成长历程体现，因此游戏人物设计是由游戏策划进行具体的文字设定，交由美工进行视觉呈现。关于人物设计，国内手游也呈现多样化的格局，以艺术风格为主有《王者荣耀》、《第五人格》、《阴阳师》等游戏，同时存在少量写实画风如《和平精英》、《天涯明月刀》等游戏。</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201125/0d490ecccc9847f5b3e615d0ad7abba1.png" /></p>
+<p><strong><span style="font-size: 16px;">2、用4个辅助维度对游戏画风进一步归类：时空、维度，色调，美术画法</span></strong><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">不同的画风适用于不同的游戏题材，在判定基本画风后，通过游戏画面体现出的时空、维度、色调氛围以及结合的传统美术画法，可以对游戏画风进行进一步归类，从而进一步体现游戏的文化内涵与艺术格调。</span></p>
+<p><strong><span style="font-size: 16px;">① 时空</span></strong><span style="font-size: 16px;">：时空设定包括现代、古代、未来、穿越、虚构等。时空设定为现代的手游如《QQ飞车》《和平精英》，设定为古代的手游有《天涯明月刀》《阴阳师》，虚构时空设定的手游有《王者荣耀》《原神》，未来时空设定的手游有《明日之后》，穿越设定的手游有《遇见逆水寒》等。</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201125/98b66db60a6646d6a75093184491d196.png" /></p>
+<p><strong><span style="font-size: 16px;">② 游戏维度</span></strong><span style="font-size: 16px;">：游戏维度整体画面效果是平面（2D）或立体（3D）。3D游戏更接近真实世界，2D游戏则显得怀旧复古，但3D在某些方面也存在一定限制，如3D游戏受视线转向的限制，很难像2D游戏一样快速探索场景。比如同为古风类的画风，但《天涯明月刀》属于3D画面，而《江南百景图》属于2D画面，又如同为“暖暖”系列，《闪耀暖暖》属于3D画面，而《奇迹暖暖》属于2D画面。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201125/be331f12f23843e891b7052036f53474.png" /></p>
+<p><strong><span style="font-size: 16px;">③ 游戏色调：</span></strong><span style="font-size: 16px;">游戏色调氛围对游戏风格渲染最为直观。根据游戏策划的需要选取不同的色调，能营造特定的情感氛围，增加玩家的代入感。例如为营造恐怖氛围而设定黑白色调、低饱和度的《第五人格》，为模拟国风、工笔画而设定暖色调的《忘川风华录》。</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201125/498f3343b17d4ff094975b2ca52490e3.png" /></p>
+<p><strong><span style="font-size: 16px;">④ 传统美术画法</span></strong><span style="font-size: 16px;">：传统美术画法是指工笔画、水墨画、现代极简风格等，在国风题材游戏中应用颇多。如《忘川风华录》结合了工笔画法使线条和晕染非常精细；《逆水寒》结合了水墨画法，使山水墨色晕染的感觉更加强烈；而结合了现代极简画法的《隐藏的家伙》则体现了简约、直观明了的特点。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201125/9a98aa0104a74639a6ddf672041fddcd.png" /></p>
+<p><strong><span style="font-size: 16px;">3、游戏画风的具体分类及典型案例</span></strong><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">① 主流画风游戏吸引对应目标群体：欧美地域游戏发展较早，因此分类较多，分为欧美式魔幻、中世纪、哥特等种类，代表作分别为《魔兽世界》《巫师3：狂猎》《鬼泣》系列；日本游戏分为日式二次元、日式现代与日式魔幻，代表作分别为《FGO》《拳皇》和《最终幻想》；韩国游戏则多为混合题材，常融合欧美魔幻或中国武侠元素，如端游《热血传奇》《奇迹》《龙之谷》《剑灵》等；中国游戏大多带有历史元素，中式写实如《天涯明月刀》《一梦江湖》，以及中式艺术风格如《江南百景图》《绘真·妙笔千山》等。</span></p>
+<p><span style="font-size: 16px;">② 主流画风之外的游戏以特色吸引玩家：除上述主流画风游戏外，还有其他具有明显特征的游戏，虽不归于任何主流画风，但仍凭借自己的特色给玩家留下深刻印象。例如荒诞哥特风的《第五人格》，对于人物设计充满了黑暗童话风格；采用低模几何画风的《纪念碑谷》，对于人物设计采用了抽象小人；采用像素画风的《马里奥》，对于人物设计采用了像素Q版小人，而另一个采用像素画风的《我的世界》，对于人物设计则采用了乐高式的方块人的设计。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201125/cf084d20f69649f2af1c63b1681de16f.png" /></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">画风，为何如此重要？</span></strong></span></p>
+<p><span style="font-size: 16px;">从今年上线的多个爆款游戏案例来看，画风已经成为影响产品成功率的重要因素，但奇怪的是，并非美术资源投入越大，产品的成功概率就越高，这是为何呢？如果我们将画风视为构成“美术工艺”的一个维度，就容易理解得多。</span></p>
+<p><span style="font-size: 16px;">国金证券研究所也将衡量游戏“美术工艺”的标准划分为3个维度：针对目标群体的稀缺画风，刻画细节的精致度，美术投入资源规模不同的引擎比较。</span></p>
+<p><span style="font-size: 16px;">1）有针对性的稀缺画风是游戏通过画风出圈的核心。游戏地域风格能让玩家直观感受到游戏的文化氛围，游戏人物设计是游戏策划的具体体现。游戏画面所处时间、维度、色调氛围以及结合的传统美术画法，可以对游戏画风进行进一步归类，从而体现游戏的文化内涵与艺术格调。</span></p>
+<p><span style="font-size: 16px;">2）角色自由度和画面精致度直接体现游戏画面细节的刻画。RPG类型游戏的角色自由度提升玩家游戏体验，三角面数、光源、贴图以及材质4个量化指标可用来衡量画面精致度。</span></p>
+<p><span style="font-size: 16px;">3）从美术投入规模来看，Unity3D开发中等质量产品性价比更高，虚幻引擎开发高质量游戏性价比更高。虚幻4引擎相较于Unity具有优秀的光影和材质渲染效果，基础成本和引擎开发难度较高，但是对于更高质量的游戏而言，虚幻引擎组件更为完备。</span></p>
+<p><span style="font-size: 16px;">针对“美术工艺”的三个维度进行比较，国金证券研究所研究认为中国游戏“美术工艺”已经赶超国外端游，领跑世界手游，理由如下：</span></p>
+<p><span style="font-size: 16px;">1）从画面的精致度来看国产单机端游/主机游戏《黑神话：悟空》展示出的游戏美术品质已经追赶上与国外端游大作。“黑悟空”游戏场景制作精良，3D建模细致，画面引擎应用到位，进而使游戏画质精美细致。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201125/254896514e93444aa7251d9086928dd7.png" /></p>
+<p><span style="font-size: 16px;">2）从色彩运用和画面细节等方面来看《原神》在“美术工艺”上领跑世界手游。在《崩坏3》基础上更进一步，《原神》的游戏画面表现出了高超水准，游戏的色彩运用，画面、交互体现出的高水准体现出主机级别游戏的品质。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201125/51ebd0598c62429ea45c0a620a5df4dd.png" /></p>
+<p><span style="font-size: 16px;">最终，国金证券研究所研究通过调研得出结论： <strong>“美术工艺”影响游戏研发成功率：以系统性成功率较高的品类为例，从ARPG、SLG和卡牌类研发成功率分析看，“美术工艺”平均决定游戏研发40%的成功率。</strong></span></p>
+<p><span style="font-size: 16px;">ARPG、SLG和卡牌类游戏研发成功率相比其他类型游戏而言较高，因此国金证券研究所专门对这几类游戏的研发成功率进行分析，得出这“美术工艺”在这三大品类赛道上的成功概率：</span></p>
+<p><span style="font-size: 16px;">1）ARPG要求游戏制作有较强的美术功底与较好的策划能力，美术占游戏成功率的40%。ARPG对战斗时打击感要求较高，同时对游戏社交功能也有一定需求，因而对战斗画面、角色动作等均有一定要求，美术在游戏研发过程中较为重要。</span></p>
+<p><span style="font-size: 16px;">2）SLG对对策划和程序的依赖程度很高，但可以在美术工艺上形成差异性优势。SLG对游戏生态建设有很高要求，因此对策划和程序的依赖程度更高，但可利用精致的人物设计打开市场，与同行业产品形成差异化表现取得优势。</span></p>
+<p><span style="font-size: 16px;">3）卡牌游戏以角色为核心，对游戏美术工艺依赖度较高，美术占成功率50%。在该类游戏中，由于角色直接决定了用户是否愿意为其付费，因此对于角色美术有很高要求。</span></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">结语：</span></strong></span></p>
+<p><span style="font-size: 16px;">随着用户对游戏产品的审美提升，以及抢夺用户眼球难度提升，包括大厂在内的不少开发者在画风上似乎变得更大胆些了，这或许也和国内版号收紧后，很多游戏选择出海或以全球化作为定位，为了适应海外口味，他们选择如小众新颖、复古经典等游戏画风进行创作，反而让很多吃惯了“大鱼大肉”的玩家看到了一些“凉菜小菜”可以解腻，让产品在吸量上取得了不错的效果。可以预见的是，未来也会有越来越多的产品，会从不同国度、不同朝代和时期所推出的美术技艺特色上做深挖，从复古中找创新，从差异中找亮点，而我们也乐于看到更多元的表现形式诞生，也催生出新的主流审美反哺游戏创作和创新。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201125/98c4df367f164bd4a2f5dbe7e3d043cb.png" /></p>

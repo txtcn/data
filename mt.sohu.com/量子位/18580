@@ -1,0 +1,325 @@
+➜Go语言11岁了，网友：他喵的，终于确定出「泛型」了
+http://www.sohu.com/a/431790572_610300	15413
+<p>金磊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">比Python更快，比Java更简洁，还有C++没有的GC <span>（垃圾收集）</span>。 </p>
+<p style="text-align: left;">谷歌开发的编程语言 <strong>Go</strong>，迎来了它 <strong>11岁</strong>的生日！ </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201114/e6f1918d6ef6445296df0045753c9118.png" /></p>
+<p style="text-align: left;">那么在这一年的时间里，Go经历了怎样的变化？接下来又该如何发展？</p>
+<p style="text-align: left;">为此，Go语言官方网站专门发布了文章 <span>Eleven Years of Go </span>。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201114/4e2b9202a7884104812c4b1a7e21a2e1.png" /></p>
+<p style="text-align: left;">除了表示庆祝之外，也对上述的问题做了一一解答。</p>
+<p>「艰难的一年，依旧保持开发的步伐」 </p>
+<p style="text-align: left;">这就是作者Russ Cox在博客开篇，对这一年来的工作做出的总结。此外还说道：</p>
+<blockquote>
+<p style="text-align: left;">不仅如此，还积累了许多亮点。</p>
+</blockquote>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">不仅如此，还积累了许多亮点。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201114/74641f3628b8401b8606076f18c2ae07.png" /></p>
+<p style="text-align: left;">首先，在去年11月，也就是Go十岁生日不久后，便推出了go.dev和pkg.go.dev。</p>
+<p style="text-align: left;">到了今年 <strong>2月份</strong>，Go 1.14版本发布了第一个正式「生产就绪 」 <span>（production-ready）</span>的Go模块实现。 </p>
+<p style="text-align: left;">与此同时，还进行了许多性能上的改进，包括「更快的defer」和真正「抢占式的goroutine调度」，目的就是为了减少调度和垃圾收集延迟。</p>
+<p style="text-align: left;"><strong>3月初</strong>，Go推出了一个用于协议缓冲的新API，google.golang.org/protobuf，对protobuf reflection和自定义消息的支持，有了大幅度的改善。 </p>
+<p style="text-align: left;">当然， <strong>新冠疫情</strong>在全球的爆发，对于Go的开发团队也带来了一定冲击。 </p>
+<p style="text-align: left;">于是，团队决定暂停春季的所有公开发布或活动。</p>
+<p style="text-align: left;">但期间，Go团队还在继续改进gopls，这让许多编辑器受益，并都启用了高级Go-aware支持。</p>
+<p style="text-align: left;">到了 <strong>6月份</strong>，Go团队开发的火力暴增： </p>
+<ul>
+<li>VSCode Go扩展 正式加入Go项目，现在由从事gopls的同一位开发人员维护。</li>
+<li>根据来自社区的反馈，将pkg.o o.dev背后的代码进行了开源，用来作为Go项目的一部分。</li>
+<li>月底，团队发布了「泛型」 （Go generics） 的最新设计草案，以及原型工具和「泛型」实验语法的playground。</li>
+</ul>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201114/332e7c2c72a54bcd9a843e4412abd8c4.png" /></p>
+<p style="text-align: left;"><strong>7月份</strong>，Go团队为了应对未来的变化，讨论并发布了三种新的设计草案，分别是go:build、文件系统接口、构建时文件嵌入。 </p>
+<p style="text-align: left;">在博客中，团队为此还说道： <strong>将在2021年看到所有新特性</strong>。 </p>
+<p style="text-align: left;">到了 <strong>8月份</strong>，便迎来了Go 1.15版本，但这个版本主要目的是修复bug，并没有过多的新特性。 </p>
+<p style="text-align: left;">其中，比较重要的内容就是「重写链接器」，这就让Go在构建大型项目时，平均运行速度提高了20％，平均使用的内存减少了30％。</p>
+<p style="text-align: left;">除了开发方面的工作外，维护用户、开发者也是必不可少的。</p>
+<p style="text-align: left;"><strong>10月份</strong>，团队对Go用户进行了一年一度的调研，并表示分析结果一旦出炉，便会在官网上进行公示。 </p>
+<p>Go语言的下一步 </p>
+<p style="text-align: left;">正所谓「回顾过去，展望未来」。</p>
+<p style="text-align: left;">Go团队对于即将到来的2021年，也是充满了期待：</p>
+<blockquote>
+<p style="text-align: left;">我们对Go的第十二个年头感到非常兴奋。</p>
+</blockquote>
+<p style="text-align: left;">我们对Go的第十二个年头感到非常兴奋。</p>
+<p style="text-align: left;">并列出即将在GopherCon 2020上展示的8个项目 <span>（感兴趣的读者可详读文末参考链接）</span>。 </p>
+<p style="text-align: left;">但Go团队也「毫无隐藏」的公布了明年2大重要发布计划。</p>
+<p style="text-align: left;"><strong>2021年2月，将发布Go 1.16版本。</strong></p>
+<p style="text-align: left;">据介绍，这个版本将包含新的文件系统接口和构建时文件嵌入。</p>
+<p style="text-align: left;">它将完成链接器的重写，从而带来更多的性能改进，包括对刚刚发布的新苹果Mac的支持。</p>
+<p style="text-align: left;"><strong>2021年8月，将发布Go 1.17版本。</strong></p>
+<p style="text-align: left;">团队对此表示，「尽管细节尚未决定下来，但毫无疑问，会带来更多的功能和改进」。</p>
+<p style="text-align: left;">但在博客中也稍微透露了一些内容。</p>
+<p style="text-align: left;">例如，将包括一个针对x86-64新的基于寄存器的调用约定 <span>（不破坏现有程序集）</span>，这将使程序整体更快。 </p>
+<p style="text-align: left;">除了版本的计划之外，团队还在博客中介绍了 <strong>Go Module</strong>和 <strong>Go generics</strong>的相关信息。 </p>
+<p style="text-align: left;">关于Go Module：</p>
+<blockquote>
+<p style="text-align: left;">我们将继续致力于开发对Go module的支持，并将其很好地集成到整个Go生态系统中。</p>
+<p style="text-align: left;">Go 1.16将包括我们迄今为止最流畅的Go module体验。</p>
+</blockquote>
+<p style="text-align: left;">我们将继续致力于开发对Go module的支持，并将其很好地集成到整个Go生态系统中。</p>
+<p style="text-align: left;">Go 1.16将包括我们迄今为止最流畅的Go module体验。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201114/ba122928048f4ce3b57b37710ccffc4c.png" /></p>
+<p style="text-align: left;">关于Go generics：</p>
+<blockquote>
+<p style="text-align: left;">每个人心中的下一个功能特性当然是「泛型」 <span>（generics）</span>。 </p>
+<p style="text-align: left;">我们将在2021年中继续努力，希望在年底之前为人们提供一些试用的目标。</p>
+<p style="text-align: left;">或许，它会成为Go 1.18 beta中的一部分。</p>
+</blockquote>
+<p style="text-align: left;">每个人心中的下一个功能特性当然是「泛型」 <span>（generics）</span>。 </p>
+<p style="text-align: left;">我们将在2021年中继续努力，希望在年底之前为人们提供一些试用的目标。</p>
+<p style="text-align: left;">或许，它会成为Go 1.18 beta中的一部分。</p>
+<p style="text-align: left;">对此，网友们似乎对「泛型」的发布计划十分感兴趣，并表示：</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201114/0e3db9a9ee104fadbee5858d5ebd22f3.png" /></p>
+<p style="text-align: left;">也有网友对「泛型」可能在1.18版本才会出现表示遗憾：</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201114/3a809f6d137f4edfa3d113d8a8bb4f79.png" /></p>
+<p style="text-align: left;">当然，也有对Go发展速度表示「挤牙膏」的……</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201114/bd3088ca9edc402fac08c7ea3eb7f59f.png" /></p>
+<p style="text-align: left;">那么，这样的Go语言，你怎么看？</p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">参考链接：</span></span></p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">https://blog.golang.org/11years</span></span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>@关注AI行业的朋友，李开复邀你参会啦！</strong></p>
+<p><span style="font-size: 16px;"><strong>▽</strong><span style="font-size: 16px;">扫码查看更多AI大咖 &amp; 马上报名</span><strong>▽</strong></span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜清华最强本科毕业生Top10出炉，「从来没有什么天才学霸」
+http://www.sohu.com/a/431790657_610300	15413
+<p>木易 鱼羊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">一年一度，清华园里的“神仙打架”，投票结果已经出炉。</p>
+<p style="text-align: left;">根据清华大学官方消息，2020年清华大学特等奖学金（本科生）答辩会在11月12日下午举行。15位候选人完成答辩后，现场评委投票，选出了前10名单。</p>
+<p><strong><img src="http://p4.itc.cn/q_70/images03/20201114/ba6eade0e6ce4dd1ac27f888caa9aa87.png" /></strong></p>
+<p><strong>△</strong>名单来自清华大学官方公众号 </p>
+<p style="text-align: left;">这份清华在校生“最高荣誉”名单出炉，也再度在网络上掀起围绕清华学霸们成长历程的热烈讨论。</p>
+<p style="text-align: left;">有人感慨于“种子选手”刘泓、张晨等人学术履历的硬核。</p>
+<p style="text-align: left;">物理系实力与颜值兼具的陈逸贤，则刷屏了清华官微评论区。</p>
+<p style="text-align: left;">另外，也有网友关注到，现如今这一清华本科生最高荣誉的评选标准也发生了一些“变化”——越来越全面了。</p>
+<p style="text-align: left;">但清华招生却官方评价： <strong>从来没有什么天才学霸</strong>。 </p>
+<p style="text-align: left;">怎么回事？不妨一起来从几位候选人的履历里，一探究竟。</p>
+<p>刘泓：三篇一作顶会 </p>
+<p style="text-align: left;">来自电子系的刘泓同学，可能是所有候选人中，学术最「硬核」的。</p>
+<p style="text-align: left;">还是本科生的他，目前在Google Scholar的累计引用已有86次，以一作身份发表的论文达到了5篇。</p>
+<p style="text-align: left;">而这5篇论文，有3篇是 <strong>顶会</strong>。 </p>
+<p style="text-align: left;"><strong>CVPR 2019</strong>、 <strong>ICML 2019</strong>和 <strong>NeurIPS 2020</strong>，都被其尽数收入囊中。 </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201114/ed213c782bea4d879f90fac7abc9e758.png" /></p>
+<p style="text-align: left;">其中，中了ICML 2019的论文引用量最高。这篇论文创新地将对抗训练和迁移学习结合了起来，在CV、NLP各领域任务上推进了可迁移特征的技术水平。</p>
+<p style="text-align: left;">这也是刘泓第一次走出国门，在顶会现场做口头报告。</p>
+<p style="text-align: left;">对于这一段经历，刘泓这样说道：</p>
+<blockquote>
+<p style="text-align: left;">第一次走出国门，对我来说是难忘的经历也是挑战。前往ICML现场做20分钟口头报告，给台下的上百个同行们讲解自己的工作，让我有一种代表清华精神的使命感。</p>
+</blockquote>
+<p style="text-align: left;">第一次走出国门，对我来说是难忘的经历也是挑战。前往ICML现场做20分钟口头报告，给台下的上百个同行们讲解自己的工作，让我有一种代表清华精神的使命感。</p>
+<p style="text-align: left;">交流与合作真是无处不在，不仅是汇报如此，在研究中也是如此。在刘同学的论文合作者中，我们能看到许多熟悉的大牛名字。</p>
+<p style="text-align: left;">比如：微众银行首席人工智能官、香港科技大学讲席教授 <strong>杨强</strong>（CVPR 2019）、机器学习领域着名学者 <strong>Michael I. Jordan</strong>（ICML 2019）等。 </p>
+<p><strong><img src="http://p6.itc.cn/q_70/images03/20201114/3dee94768b5d4175916e8a90f738f525.png" /></strong></p>
+<p><strong>△</strong>图源：清华大学 </p>
+<p style="text-align: left;">而研究之外的刘泓，其实还是一个名副其实的「学霸」。</p>
+<p style="text-align: left;">据清华大学官方介绍，刘泓共有91学分取得了A或A+的优异成绩，推研成绩中排名电子系第二。</p>
+<p style="text-align: left;">目前，刘同学还是清华计算机科学A类学术会议期刊审稿人。</p>
+<p style="text-align: left;">他还曾任电子系无75班学习委员、电子系科协软件部副部长，曾获蒋南翔奖学金、学业优秀奖、科创优秀奖。</p>
+<p>张晨：竞赛学术两不误 </p>
+<p style="text-align: left;">来自计算机系的张晨同学，在学术和竞赛上，有着「神仙」般的履历。</p>
+<p style="text-align: left;">去年，张晨同学作为清华超算团队中的一员参加了国际大学生超级计算机竞赛（SC19）。</p>
+<p style="text-align: left;">SC，既是竞赛也是学术会议，是美国发起的国际超算领域的顶级会议。在过程中，选手不仅要完成竞赛题目，还要完成一篇在国际权威杂志具有发表能力的英文论文。</p>
+<p style="text-align: left;">去年的现场决赛，共有来自7个国家的16支队伍参赛，清华大学学生超算团队最终夺得总冠军。而张晨，是团队6名队员中唯一的女生。</p>
+<p style="text-align: left;">而今年的她，成为了队长。而这，也是清华大学计算机系学生超算团队史上的 <strong>第一位女生队长</strong>。 </p>
+<p><strong><img src="http://p8.itc.cn/q_70/images03/20201114/49a7d60ef4a14444a7589e76307bd817.jpeg" /></strong></p>
+<p><strong>△</strong>右四为张晨，图源：清华大学新闻网 </p>
+<p style="text-align: left;">除此之外，张晨同学在学术和竞赛上还有着这诸多斩获 <span>（整理自清华官方新闻）</span>： </p>
+<ul>
+<li>在CCPC中国大学生程序设计竞赛女生专场上，张晨与队友仅用2/3的规定时间就完成了所有赛题，实现清华大学在该竞赛上的首次夺冠；</li>
+<li>针对“神威·太湖之光”的科研项目，研究结果转化成论文，发表在了顶级国际期刊 IEEE TRANSACTIONS ON COMPUTERS 上。</li>
+</ul>
+<p><img src="http://p5.itc.cn/q_70/images03/20201114/a916712774ec48bd9429f5c7dd4f7d9b.png" /></p>
+<p><strong></strong><strong>△</strong>图源：清华大学 </p>
+<p style="text-align: left;">研究之外的张晨同学，同样也是名副其实的「学霸」。</p>
+<p style="text-align: left;">据清华大学的介绍，张晨成绩优异，推研成绩排名中位列全系第一，学分绩平均3.8，其中由计算机系和数学系开设的课程全部为4.0。</p>
+<p style="text-align: left;">此外，她曾获国家奖学金、中国计算机学会“CCF优秀大学生奖”等奖项。</p>
+<p style="text-align: left;">而且，张晨同学还热衷于体育运动，是校跆拳道队的队员，并在首都高校跆拳道锦标赛上摘得过个人竞技亚军。</p>
+<p>陈逸贤：英语演讲全球六强 </p>
+<p style="text-align: left;">最后，我们来介绍一位来自物理系的「人气选手」——陈逸贤同学。</p>
+<p style="text-align: left;">前天，清华大学官方公布特奖候选人消息之后，评论区则是这样一番景象。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201114/62f60e7d3b3b422ea321ce4ccd2b484f.png" /></p>
+<p style="text-align: left;">确实，毕竟海报上的他，是这样子的：</p>
+<p><strong><img src="http://p6.itc.cn/q_70/images03/20201114/2f0c8e016941413a96444eafc7772806.png" /></strong></p>
+<p><strong>△</strong>图源：清华大学 </p>
+<p style="text-align: left;">确实是很能打的「颜」了。不过，陈逸贤同学的实力，可不能因此小觑。</p>
+<p style="text-align: left;">目前，在天体物理这一研究方向上，陈逸贤同学已经以第一作者身份发表了3篇论文：</p>
+<ul>
+<li>《原行星盘中尘埃扩散对超级地球大气生长的抑制作用》，发表在天文领域四大刊之一的The Astrophysical Journal （ApJ） 上。</li>
+<li>《Lindblad共振点移动对巨行星在原行星盘内迁移的影响》，ApJ。</li>
+<li>潮汐引力作用对巨行星吸积的限制，系外行星南加州2020年会议（ExSoCal 2020）。</li>
+</ul>
+<p><img src="http://p2.itc.cn/q_70/images03/20201114/78d5e84a0f87484982f0f9c21f735059.png" /></p>
+<p><strong></strong><strong>△</strong>图源：清华大学 </p>
+<p style="text-align: left;">陈同学还有着一项为人称道的本领——极强的英语演讲能力。</p>
+<p style="text-align: left;">在国内各类英语演讲比赛中，陈逸贤同学便经常以优异的成绩见诸报道。而在国外的比赛中，其也不遑多让：参加了伦敦举办的50多国冠军同台演讲比赛中，收获了 <strong>全球六强</strong>的荣誉。 </p>
+<p style="text-align: left;">并且，陈同学还积极发挥自身学科优势和语言能力，促进基础科学的研究和交流。仅在大学的3年期间，他有着7次国际会议的参会/展示经历。</p>
+<p style="text-align: left;">值得一提的是，陈逸贤课余积极参与文体活动，3年来跟随集体参加了10余场校级演出。而其本人，还是校艺术团合唱队的一队队员。</p>
+<p>新的评选趋势 </p>
+<p style="text-align: left;">进入名单的候选人中，还有来自自动化系、能进行“基于脑机接口的半机械蜜蜂飞行控制系统”项目研究，同时文理兼备、已出版三本儿童文学作品的蔡烨怡；有来自社科学院，身为文科生却醉心“脑与认知”研究、立志成为认知神经科学家的宫栋宇……</p>
+<p><strong><img src="http://p3.itc.cn/q_70/images03/20201114/62ee3832b40b42acac0d5e0d65464779.png" /></strong></p>
+<p><strong>△</strong>图源：清华大学 </p>
+<p style="text-align: left;">确实，“从来没有什么天才学霸”，更多的是勤奋、全面、综合发展。</p>
+<p style="text-align: left;">据了解，今年是清华大学特等奖学金设立的第21年，也是特奖评选办法修订后实施的第二年。</p>
+<p style="text-align: left;">在以往评选的基础上，清华一方面强调以德为先，引导和培育优良的学风，另一方面也严格评审的流程，充分发挥公示环节的监督作用。目的是希望特等奖学金的获得者，能够充分地体现清华人肩负使命、追求卓越的勇气和担当。</p>
+<p style="text-align: left;">据清华新闻网报道，清华大学党委副书记过勇在答辩现场就谈到，参与答辩的15位同学都是清华“又红又专，全面发展”的人才培养特色的集中体现。</p>
+<p style="text-align: left;">他提出，希望大家关注特等奖学金候选人的学术志趣和成长经历，不要过多关注取得的成绩，要看重特等奖学金的评选导向，鼓励学生 <strong>个性化发展</strong>，成长为更好的自己。 </p>
+<p>清华特奖们现在都在做什么 </p>
+<p style="text-align: left;">但无论是在校内还是校外，作为清华最具代表性的本科生，特奖获得者身上总是被寄托了更多的期许。</p>
+<p style="text-align: left;">在B站上，“学神”陈立杰、韩衍隽等人的答辩视频播放量超过40万，至今仍吸引不少后辈学子“围观”。</p>
+<p><strong><img src="http://p2.itc.cn/q_70/images03/20201114/ffc17ca97eed4faaad8c14edbc476372.png" /></strong></p>
+<p><strong>△</strong>陈立杰特奖答辩 </p>
+<p style="text-align: left;">而在特奖的光环之后，他们的成绩也在不断刷新。</p>
+<p style="text-align: left;">陈立杰，如今在MIT攻读理论计算机方向博士。不仅拿下了理论计算机科学领域顶级会议STOC 2019 DannyLewin最佳学生论文奖，还在FOCS 2019上连中三篇，同样摘下最佳学生论文奖。</p>
+<p style="text-align: left;">韩衍隽，目前在斯坦福大学攻读电气工程博士。同样在不断产出新的学术成果，其身影在COLT、NeurIPS等顶会上亦不鲜见。</p>
+<p style="text-align: left;">有趣的是，特奖之间也存在奇妙的传承。</p>
+<p style="text-align: left;">韩衍隽曾表示，自己在美国交流期间，受到2011年清华特奖得主焦剑涛很大的影响。</p>
+<p style="text-align: left;">而今年入围特奖答辩的姚班学子吕欣，同样对理论计算机科学领域感兴趣，并与师兄陈立杰合作，在FOCS 2020上发表了一篇2作论文。</p>
+<p style="text-align: left;">今年的特奖评选已经告一段落，但对于特奖候选人们而言，相信这只是一个开始。</p>
+<p style="text-align: left;">在这个新技术迸发的时代，还有更多可能性，等待被创造。</p>
+<p style="text-align: left;"><span style="font-size: 16px;">参考链接：</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span style="font-size: 16px;">https://mp.weixin.qq.com/s/sPpt0fUmPgi2dTujhMV3Ww</span></span></p>
+<p><span style="font-size: 16px;">https://news.tsinghua.edu.cn/info/1002/16347.htm</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>@关注AI行业的朋友，李开复邀你参会啦！</strong></p>
+<p><span style="font-size: 16px;"><strong>▽</strong><span style="font-size: 16px;">扫码查看更多AI大咖 &amp; 马上报名</span><strong>▽</strong></span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜2020中国人工智能年度评选报名即将截止！4大类别7大奖项开放申请
+http://www.sohu.com/a/431790777_610300	15413
+<p>编辑部 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201114/c251334d8950448fbec5399773b68d70.jpeg" /></p>
+<p style="text-align: left;">9月23日， <span style="font-size: 16px;">量子位</span><strong>2020年</strong><strong>「中国人工智能年度评选」</strong>正式启动，在过去一个月已经收到上百家公司的申报信息。 </p>
+<p style="text-align: left;">从2018年开始，量子位的「中国人工智能年度评选」已经进行了两年。 <span style="font-size: 16px;">每年的榜单均能引发全行业的巨大关注，近百家媒体的重点报道，深刻影响着百万AI行业从业者的评判抉择，已经成为全行业最具影响力的风向标之一。</span></p>
+<p style="text-align: left;">今年的评选我们将从更多维度来寻找优秀的公司、商业化代表人物、极具创新力的产品和发展的技术社区。</p>
+<p style="text-align: left;"><strong>申报时间截止2020年11月20日</strong>，欢迎更多不同领域不同类型不同阶段的公司参与。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201114/51863bacbee64640bfcea1a692c97c50.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">△ </span><span style="font-size: 16px;">往年部分媒体报道示例</span></p>
+<p style="text-align: left;">今年各项奖项设置如下：</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;"><strong>1、企业榜</strong></p>
+<p style="text-align: left;"><strong>·</strong>2020中国人工智能 <strong>领航企业TOP50</strong></p>
+<p style="text-align: left;"><strong>·</strong>2020中国人工智能 <strong>明星创业公司TOP10</strong></p>
+<p style="text-align: left;"><strong>2、人物榜</strong></p>
+<p style="text-align: left;"><strong>·</strong>2020中国人工智能 <strong>商业领军人物TOP30</strong></p>
+<p style="text-align: left;"><strong>3、产品榜</strong></p>
+<p style="text-align: left;"><strong>·</strong>2020中国人工智能 <strong>最佳产品TOP10</strong></p>
+<p style="text-align: left;"><strong>·</strong>2020中国人工智能 <strong>最佳解决方案TOP10</strong></p>
+<p style="text-align: left;"><strong>·</strong>2020中国人工智能 <strong>社会责任榜样TOP5</strong></p>
+<p style="text-align: left;"><strong>4、技术社区榜</strong></p>
+<p style="text-align: left;"><strong>·</strong>2020中国人工智能 <strong>最佳技术社区TOP5</strong></p>
+<p style="text-align: left;">本次评选，量子位将坚持一贯的权威性、公信力以及专业性的核心价值观，秉承客观公正的原则，以企业提交的真实数据为基础，结合量子位对公司的深入调研及数十位行业知名专家的意见，最终结果将于2020年12月公布。量子位也邀请百万从业者们，共同见证这些优秀企业的荣誉。</p>
+<p>参选条件与评选标准 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201114/dc21172c7251456eb5982cca9313842b.jpeg" /></p>
+<p><span>2020中国人工智能领航企业TOP50</span></p>
+<p style="text-align: left;"><strong>将评选出中国AI最强阵容，</strong><strong>参选条件：</strong></p>
+<p style="text-align: left;">1、公司主体在中国或主营业务在中国； </p>
+<p>2、主营业务是人工智能及相关，或已将人工智能广泛应用于其主营业务，在其所处领域内居于领跑地位； </p>
+<p>3、有成熟的产品或服务，并且已经得到市场验证； </p>
+<p>4、近一年，取得较大技术突破或商业突破。 </p>
+<p style="text-align: left;"><strong>评选标准：</strong></p>
+<p style="text-align: left;">1、业务能力：商业模式、市场占有率、商业化能力、营收情况等； </p>
+<p>2、技术能力：科研实力、研发投入、创新能力等； </p>
+<p>3、资本能力：融资情况、财务状况等； </p>
+<p>4、其他：企业综合情况、品牌影响力等。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201114/8e3583b321044a51bec74dac8820b448.jpeg" /></p>
+<p><span>2020中国人工智能明星创业公司TOP10</span></p>
+<p style="text-align: left;"><strong>将评选出发展迅勐的初创AI公司，参选条件：</strong></p>
+<p style="text-align: left;">1、公司主体在中国或主营业务在中国； </p>
+<p>2、有人工智能相关的产品或服务落地，具有成熟的商业模式； </p>
+<p>3、成立时间不超过3年； </p>
+<p>4、近一年取得较大技术创新或研发成果。 </p>
+<p style="text-align: left;"><strong>评选标准：</strong></p>
+<p style="text-align: left;">1、业务能力：商业模式、市场占有率、商业化能力、营收情况等； </p>
+<p>2、技术能力：科研实力、研发投入、创新能力等； </p>
+<p>3、资本能力：融资情况、财务状况等； </p>
+<p>4、其他：企业综合情况、品牌影响力等。 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201114/1018ff5262594d5eaae5ba42332eebf1.jpeg" /></p>
+<p><span>2020中国人工智能商业领军人物TOP30</span></p>
+<p style="text-align: left;"><strong>将评选出中国AI最强商业领袖，参选条件：</strong></p>
+<p style="text-align: left;">1、国籍是中国或所属组织主体或业务主体在中国； </p>
+<p>2、个人从事领域或所属组织主营业务是人工智能及相关； </p>
+<p>3、带领团队在AI领域取得较大商业化突破或创新发展，极大推动人工智能技术的落地及商业化进程，对行业有突出贡献，能引领行业商业化发展。 </p>
+<p style="text-align: left;"><strong>评选标准：</strong></p>
+<p style="text-align: left;">1、商业化能力：技术转化能力、商业化落地能力、营收情况等； </p>
+<p>2、技术能力：技术成就、创新能力等； </p>
+<p>3、其他：个人背景、行业影响力、组织影响力、管理能力等。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201114/3ec7ed74b0d3456cb31c2d7ee4c2787e.jpeg" /></p>
+<p><span>2020中国人工智能最佳产品TOP10</span></p>
+<p style="text-align: left;"><strong>将评选出最受关注的AI产品，参选条件：</strong></p>
+<p style="text-align: left;">1、人工智能相关的产品； </p>
+<p>2、产品已具备成熟技术，已经投放市场且得到市场验证； </p>
+<p>3、近一年有过重要的技术创新或更新迭代，极大的推动人工智能技术的落地及商业化，并对行业发展有突出的引领作用。 </p>
+<p style="text-align: left;"><strong>评选标准：</strong></p>
+<p style="text-align: left;">1、综合情况：产品功能、应用场景、创新点等； </p>
+<p>2、落地情况：市场占有率、客户情况、营收状况、解决的核心痛点等； </p>
+<p>3、其他：品牌影响力、用户口碑、产品性能、产品生态等。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201114/1170b207630c4307930888b7443a9366.jpeg" /></p>
+<p><span>2020中国人工智能最佳解决方案TOP10</span></p>
+<p style="text-align: left;"><strong>将评选出最创新的AI解决方案，参选条件：</strong></p>
+<p style="text-align: left;">1、人工智能相关的解决方案或行业应用案例，且使用自主创新技术； </p>
+<p>2、具备成熟技术，已经投入市场且得到市场验证； </p>
+<p>3、近一年有重要的技术创新或更新迭代，极大的推动人工智能技术落地及商业化，并对行业发展有突出的引领作用。 </p>
+<p style="text-align: left;"><strong>评选标准：</strong></p>
+<p style="text-align: left;">1、综合情况：主要功能、应用场景、创新能力、技术水平等； </p>
+<p>2、落地情况：市场占有率、客户情况、营收状况、潜在市场规模等； </p>
+<p>3、其他：销售服务能力、品牌影响力、用户口碑、生态等。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201114/45c51779da64443383caa8d1898f88b3.jpeg" /></p>
+<p><span>2020中国人工智能社会责任榜样TOP5</span></p>
+<p style="text-align: left;"><strong>将评选出最佳公益案例，参选条件：</strong></p>
+<p style="text-align: left;">人工智能领域相关的产品、解决方案/应用案例。</p>
+<p style="text-align: left;"><strong>评选标准：</strong></p>
+<p style="text-align: left;">具有社会公益性，已经投入市场，并能够不断推动AI技术在环保、人文等公益领域的落地与发展。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201114/3a086c49c33b4ea5aa536e74ddca10cf.jpeg" /></p>
+<p><span>2020中国人工智能最佳技术社区TOP5</span></p>
+<p style="text-align: left;"><strong>将评选出最佳技术生态，参选条件：</strong></p>
+<p style="text-align: left;">1、公司主体在中国、或主营业务在中国； </p>
+<p>2、具备自研开源能力的AI相关技术社区； </p>
+<p>3、近一年取得较大技术突破创新或更新迭代。 </p>
+<p style="text-align: left;"><strong>评选标准：</strong></p>
+<p style="text-align: left;">1、综合情况：社区运营情况、用户规模、用户活跃度等； </p>
+<p>2、技术实力：技术水平、创新性、行业占有率； </p>
+<p>3、其他：行业影响力、合作生态等。 </p>
+<p>参选报名 </p>
+<p style="text-align: left;">报名表提交将截止于2020年11月20日，企业可以通过以下方式报名：</p>
+<p style="text-align: center;"><span style="font-size: 16px;">△ </span><span style="font-size: 16px;">评选报名表</span></p>
+<p style="text-align: left;">2、 <span>打开</span><span><strong>评选报名表链接</strong></span><span>：http://liangziwei.mikecrm.com/pwtOwRj</span></p>
+<p>如对本次评选有其他疑问，请联系量子位。扫码可添加好友，请备注“评选”哦~ </p>
+<p><span style="font-size: 16px;">△ </span><span style="font-size: 16px;">联系方式</span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>

@@ -1,0 +1,316 @@
+➜NASA科学家联名求撤稿：金星有生命迹象是大乌龙，12阶多项式拟合不靠谱
+http://www.sohu.com/a/430207653_610300	16584
+<p>萧箫 鱼羊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">还记得9月14号那篇“金星上有生命”的Nature子刊论文吗？</p>
+<blockquote>
+<p style="text-align: left;">天文学家在金星“大气层”中观测到了 <strong>磷化氢</strong>的迹象，这是金星上有生命的有力证据。 </p>
+</blockquote>
+<p style="text-align: left;">天文学家在金星“大气层”中观测到了 <strong>磷化氢</strong>的迹象，这是金星上有生命的有力证据。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201107/f6069f3ca2f54c72a7ad941b2ab49364.png" /></p>
+<p style="text-align: left;">这可是轰动天文界的大新闻，很多人不敢相信：磷化氢和生命也不见得有必然联系吧？</p>
+<p style="text-align: left;">然而，科学家们在仔细研读论文后，一个个都坐不住了：这论文，从 <strong>数据处理</strong>开始就有问题啊！ </p>
+<p style="text-align: left;">质疑接踵而至，全球多个团队对这篇论文表示怀疑，也包括 <strong>NASA</strong>在内。 </p>
+<p style="text-align: left;">NASA研究生命、行星等各领域的科学家们“联名上书”Nature：请作者考虑更正或撤稿。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201107/c19748a25d9640858a90c6a8b2fb515f.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">所有的质疑都指向一个问题：所谓的磷化氢信号 <strong>过拟合</strong>了。 </p>
+<p style="text-align: left;">提出质疑的三个团队，从验证结论时所用的 <strong>12阶多项式</strong>，到观测数据处理的方式，全都“炮轰”了一遍。 </p>
+<p style="text-align: left;">他们表示，自己对数据分析的结果与这篇论文并不一致。</p>
+<p style="text-align: left;">也就是说，在金星大气中发现磷化氢的结论可能根本就是错误的。</p>
+<p style="text-align: left;">究竟怎么回事？我们一起来捋一捋。</p>
+<p>金星上的磷化氢是怎么观测到的？ </p>
+<p style="text-align: left;">首先，来看这篇引起轰动的Nature Astronomy论文本身。</p>
+<p style="text-align: left;">天文学家Jane Greaves领导的国际合作研究团队一开始是使用夏威夷的James Clerk Maxwell望远镜（JCMT）发现了金星大气中的磷化氢。</p>
+<p style="text-align: left;">此后，他们又在智利的Atacama毫米/亚毫米阵列（ALMA）射电望远镜上确认了这一结果。</p>
+<p style="text-align: left;">相隔上亿公里的地球人是如何知道金星上有磷化氢的呢？</p>
+<p style="text-align: left;">原来化学分子会吸收某些特定波长的电磁波，就像是这种物质的“身份证”。如果我们把从行星上穿过的电波分析一下，发现哪些被吸收了，就可以推测行星上存在某种气体。</p>
+<p style="text-align: left;">比如磷化氢会吸收频率为 <strong>267GHz</strong>的电磁波。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201107/eaf8eb0c53654530a8593b09aa4ba936.png" /></p>
+<p style="text-align: left;">结果，科学家们在JCMT和ALMA接受的信号中发现，在这个频率上有凹陷，因此认为金星上存在着磷化氢。</p>
+<p style="text-align: left;">而且他们根据吸收这个凹陷的大小算出，金星大气中磷化氢浓度是一亿分之二。</p>
+<p style="text-align: left;">然而想从观测数据中得出结论，并不是像上面说得那样容易。</p>
+<p style="text-align: left;">由于地球大气层、望远镜本身结构等等原因，电磁波难免会受到噪声的影响，自带抖动。如果抖动幅度过大，噪声甚至会把信号淹没。</p>
+<p style="text-align: left;">NASA戈达德太空飞行中心的天体化学家Martin Cordiner就指出，使用ALMA这样强大的望远镜观测金星这样明亮的天体时，这个问题会变得尤其严重。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201107/1046aeff2acc4b40997efd5ceb01f8b4.png" /></p>
+<p style="text-align: left;">对此，Greaves团队首先在ALMA数据成像之前，排除了所有长度小于33m的甚长基线干涉测量结果。因为干涉基线越短，信号中的噪声影响就越大。</p>
+<p style="text-align: left;">另外，NASA还发现，Greaves的研究团队用多项式方程拟合噪声，然后将其从数据中剔除。</p>
+<p style="text-align: left;">最简单的可以是一阶多项式方程，即 y=mx+b。二阶多项式方程则是 y=mx^2+b的形式，n阶多项式方程以此类推。</p>
+<p style="text-align: left;">本来多项式拟合是常规操作，没有什么。但是Greaves团队用了 <strong>8阶多项式</strong>拟合JCMT望远镜的数据，而ALMA望远镜数据，他们居然用到了 <strong>12阶多项式</strong>！ </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201107/f21b1725b8b4454b95f3bc8db57790df.png" /></p>
+<p>数据拟合方式太“疯狂”？ </p>
+<p style="text-align: left;">简单总结一下论文的内容，金星上可能存在生命的推断过程是这样的：①通过JCMT望远镜，发现了磷化氢；②再通过ALMA望远镜，确认了这次观测结果。</p>
+<p style="text-align: left;">最早是4名来自荷兰莱顿大学的天文学家，他们发现ALMA观测数据的处理方式有问题。</p>
+<p style="text-align: left;">火眼金睛的他们，一眼就相中了处理 <span>（频谱通带部分）</span>噪声的 <strong>12阶多项式</strong>。 </p>
+<p style="text-align: left;">12阶多项式，为什么这么离谱？这就要说到实验曲线的拟合问题。</p>
+<p style="text-align: left;">为了让曲线能够尽可能靠近所有实验数据，选择越高阶的多项式来拟合，就越容易实现。但是多项式的阶数越高，曲线振荡得也会越厉害，偏离真实的情况。</p>
+<p style="text-align: left;">比如下面的实验数据，本来都在一条直线附近，如果用高阶多项式拟合，则会出现多处峰谷。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201107/386779f7ddc044b4a9eff21edf42ce8d.png" /></p>
+<p style="text-align: left;">着名数学家 <strong>冯·诺依曼</strong>说过一句名言： </p>
+<blockquote>
+<p style="text-align: left;">给我四个参数，我能拟合出一头大象，给我五个参数，我能让大象鼻子晃起来。</p>
+</blockquote>
+<p style="text-align: left;">给我四个参数，我能拟合出一头大象，给我五个参数，我能让大象鼻子晃起来。</p>
+<p style="text-align: left;">虽然听起来有点不可思议，但这确实是真的，也已经有人用论文实现过了 <span>（下面那幅图，是表示用一个参数就能摆动大象的鼻子）</span>： </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201107/752d85cf61d44290a989a14c1c844d0d.png" /></p>
+<p style="text-align: left;">4个参数已经能达成这样的效果，12阶多项式听起来jo离谱……但天文学家们还是动手又验证了一遍，主要通过两种方法：</p>
+<blockquote>
+<p style="text-align: left;">①对ALMA收集到的金星数据，重新应用相同的降噪方法</p>
+<p style="text-align: left;">②用这种降噪方法，对金星光谱的其他部分进行噪声过滤</p>
+</blockquote>
+<p style="text-align: left;">①对ALMA收集到的金星数据，重新应用相同的降噪方法</p>
+<p style="text-align: left;">②用这种降噪方法，对金星光谱的其他部分进行噪声过滤</p>
+<p style="text-align: left;">从结果来看，得到的光谱数据不仅不符合高斯分布，而且差得还有点大……</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201107/de845e6f02d744a6909c925a23fd9a07.png" /></p>
+<p style="text-align: left;">而且，如果基线选得不同，统计结果可能就会不一样。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201107/0064e4370fc14b6bbfde8f84b2ca93be.png" /></p>
+<p style="text-align: left;">莱顿大学的天文学家又处理了一遍数据，磷化氢吸收频率附近的特征为 <strong>2σ</strong>，低于具有统计学意义的通用阈值，因此不能说明金星大气中有异常含量的磷化氢。 </p>
+<p style="text-align: left;">此外，这篇论文中所发现的磷化氢，有个前提条件： <strong>是在金星的大气层中发现的</strong>。 </p>
+<p style="text-align: left;">巴黎天文台的Thérèse Encrenaz记录了2012-2015年金星三年的观测数据，数据表明，大气层中并没有磷化氢的迹象。</p>
+<p style="text-align: left;">虽然这并不意味着更高的地方没有磷化氢，但Encrenaz认为，论文这种说法值得商榷。</p>
+<p style="text-align: left;">而且，ALMA还只是第一步。</p>
+<p style="text-align: left;">很快又有天文学家发现，JCMT的数据处理，好像也有点问题？</p>
+<p style="text-align: left;">一位来自英国的天文学家，他在对JCMT数据进行再处理时发现，与ALMA一样，相似的情况也同样出现在JCMT中，也就是所谓的“假阳性”。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201107/836026dea7ac472c81b170532d6df4b2.png" /></p>
+<p style="text-align: left;">此前，Villanueva的论文表明，JCMT的吸收线同样可能是二氧化硫，但这篇论文则认为，金星的检测光谱无法证明是否吸收了二氧化硫或是磷化氢。</p>
+<p style="text-align: left;">这件事情，目前仍在发酵中。</p>
+<p>真理越辩越明 </p>
+<p style="text-align: left;">NASA在发表“诚邀撤稿”声明的后一天，忽然去掉了论文中要求撤稿的部分，而是改成了更冷静的“我们所测量的数据，与论文中所展示的数据不符”。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201107/11314a30d6484909bf41c6b750f44c57.png" /></p>
+<p style="text-align: left;">不过，对于此事，网友们已经热议开来。 </p>
+<p style="text-align: left;">有网友调侃这个12阶多项式时表示：我做毕业论文的时候，5阶就已经蒙混过关了……</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201107/245a7d1af0da4647bc3af81584b55378.png" /></p>
+<p style="text-align: left;">还有网友想到了NASA在Nature发表过的主题为“砷可以在DNA中取代磷”的论文，然而最后也是被打脸了。</p>
+<p style="text-align: left;"><img src="http://p1.itc.cn/q_70/images03/20201107/8c0b491a3ff344f4ba927586fd448602.png" /></p>
+<p style="text-align: left;">但也有网友认为，统计学的确是个充满玄学的问题。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201107/3285e1d3d797435d8914319cabbe44c8.png" /></p>
+<p style="text-align: left;">而NASA金星研究组的成员Byrne则认为，这篇论文再一次激起了人们对于金星的热情，而它的存在也说明，人们对金星的了解还很匮乏。他认为：</p>
+<p style="text-align: left;">“获得这些答案的唯一途径，就是到金星上去。”</p>
+<p style="text-align: left;">如果说早前的讨论是，大气中磷化氢的存在是否能证明金星存在生命，那么现在，连磷化氢存在本身都需要更多的探测结果来证明。</p>
+<p style="text-align: left;">不过，也有观点认为，合理质疑是好事，“这就是科学真实的样子”。</p>
+<p style="text-align: left;">不断地探索发现，才会让真理越辩越明。</p>
+<p style="text-align: left;">你的论文不也是在一步步的质疑修改中逐步完善的吗？</p>
+<p style="text-align: left;"><span style="font-size: 16px;"><strong>传送门：</strong></span></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span>三篇质疑：</span></span></p>
+<p><span>https://arxiv.org/abs/2010.09761 </span></p>
+<p><span>https://arxiv.org/abs/2010.14305 </span></p>
+<p><span>https://arxiv.org/abs/2010.15188</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>榜单征集！7大奖项锁定AI TOP企业</strong></p>
+<p><strong>「2020中国人工智能年度评选」</strong>报名中！评选将从公司、人物、产品、社区四大维度共7个奖项寻找优秀的AI企业，欢迎大家扫码报名参与。 </p>
+<p>评选报名截止于11.20，并将于12月16日揭晓，也期待与百万从业者们，共同见证这些优秀企业的荣誉！ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜PonyAI小马智行官宣再获2.67亿美元融资，创办4年累计吸金超10亿美元
+http://www.sohu.com/a/430207929_610300	16584
+<p>允中 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p>新一轮融资，PonyAI小马智行现在官宣了。</p>
+<p><strong>2.67亿美元，投后估值53亿美元</strong>。 </p>
+<p>由加拿大安大略省教师退休基金会（Ontario Teachers’ Pension Plan，OTPP）旗下教师创新平台（Teachers’ Innovation Platform, TIP）领投。</p>
+<p>包含Fidelity China Special Situations PLC、五源资本（原晨兴资本）、锴明投资、斯道资本等在内的老股东，也在此轮进行了加注。</p>
+<p>此前市场传闻的一汽集团，尚未出现在此次官宣消息中。</p>
+<p>OTPP是全球知名的大基金，此前在出行投资领域，还有过Lyft的成功投资。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201107/cc153875aa25459a8cb19515fc28be9d.jpeg" /></p>
+<p>创投各方怎么说？ </p>
+<p>小马智行联合创始人、CEO彭军博士表示：“小马智行致力于打造能自如应对多种路况的虚拟司机，推动自动驾驶真正全面普及。新融资有助于支持我们业务增长，加深与现有投资者合伙关系，迅速推进未来自动驾驶技术研发，将自动驾驶技术推向全球市场。”</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201107/9ce7575f1a6b46ab91b9b8f8870bc965.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>OTPP高级董事总经理Olivia Steedman表示：“在自动驾驶科技上，我们在全球范围看到了巨大的市场机遇。小马智行不仅技术领先，其对行业深入的理解和战略眼光也助其成为行业领先者。” </p>
+<p>OTPP亚太区董事总经理陈伟敏（Ben Chan）表示：“这对于我们TIP的全球团队来讲是一次里程碑意义的投资。能参与小马智行在全球范围的成长故事是非常激动人心的。”</p>
+<p>此次官宣中小马智行如何“自我介绍”？ </p>
+<p>其官宣消息中的表述，也能看出小马智行的最新进展、定位和未来方向。</p>
+<p>我们简单画了下重点：</p>
+<p>自2016年底成立以来，小马智行始终致力于提供安全、可靠的自动驾驶技术，努力实现 <strong>未来交通运输的彻底变革</strong>。小马智行已与 <strong>全球多家顶级整车制造厂</strong>携手，正朝着 <strong>技术的标准化</strong>和 <strong>商业化</strong>的方向努力。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201107/63e5145f7ef949b9bcb7be0a6d565ab8.jpeg" /></p>
+<p>小马智行是 <strong>全球唯一一家在中美两国均推出自动驾驶出租车（Robotaxi）服务的公司</strong>，为乘客提供出行服务，公司目前已在全球范围累积 <strong>350多万公里自动驾驶里程</strong>。同时，小马智行也正与一流的 <strong>车企</strong>、 <strong>一级供应商</strong>和 <strong>物流公司</strong>一起紧密合作打造 <strong>自动驾驶卡车</strong>，以为 <strong>干线物流</strong>、 <strong>长途货运</strong>提供自动驾驶解决方案。 </p>
+<p>最后，这也是小马智行一年之内的第二次融资进展官宣，在这次融资完成后，小马智行的累计融资额已经超过了10亿美元。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201107/dd84e70bc36a4dd484e582c10296e108.jpeg" /></p>
+<p>如何看待小马智行的融资？ </p>
+<p>创办不到4年，融资10亿美元，估值超过53亿美元，小马智行正在成为全球最具资本吸引力和号召力的自动驾驶初创公司。</p>
+<p>至于为什么？一方面是L4自动驾驶行业的当前所处阶段决定，另一方面也有小马智行自身奋斗的原因。</p>
+<p>而从行业层面来看，自动驾驶领域 <strong>追涨杀跌</strong>的马太效应正在加剧，融资和估值，正在成为不断站上新擂台的门槛。 </p>
+<p>今年以来，融资进展喜人的，似乎只剩下Waymo、小马智行和滴滴等公司。当初“百花齐放”的自动驾驶领域，融资正在呈现两极分化。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201107/d4048c35eea44a8396c0ad92cefac971.jpeg" /></p>
+<p>马太效应说： </p>
+<blockquote>
+<p>凡有的，还要加倍给他叫他多余；没有的，连他所有的也要夺过来。</p>
+</blockquote>
+<p>凡有的，还要加倍给他叫他多余；没有的，连他所有的也要夺过来。</p>
+<p>此前自动驾驶融资，可以比demo，比试运营，比车队落地稳定性……</p>
+<p>但如今哪家自动驾驶技术公司，没有上述能力和方案？</p>
+<p>然而，正如2019年行业遭遇的质疑一样，即便代表自动驾驶终极产品形态的RoboTaxi的落地有了案例……到真正展现在公众面前时，用户预期和现阶段技术能交付的产品之间，却存在巨大的预期落差。</p>
+<p>在一个个RoboTaxi项目落地后，几乎所有人都意识到——</p>
+<p>满大街随便跑的无人车，现在是没办法给出明确期限的。</p>
+<p>现阶段谈论无人车和RoboTaxi，不加ODD——限定区域，不加出于安全考虑的一系列保守措施，简直就是天方夜谭。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201107/f3389bbc526340edb7eee17377b5f6a7.jpeg" /></p>
+<p>每一个RoboTaxi项目落地，还必须是技术、车厂、地区和政策等多重作用的结果。 </p>
+<p>营收和盈亏平衡，更别提了。</p>
+<p>外媒The Infomation曾有过报告披露，1500人团队的Waymo，600多辆Waymo One自动驾驶出租，一年要烧掉10亿美元，但RoboTaxi可以带来的收入只有几十万美元——一对比就是杯水车薪。</p>
+<p>这种持续烧钱和投入，也被认为前美国无人车创业头雁Zoox，以10亿美元打折出售的主要原因。</p>
+<p>然而，就能说明自动驾驶又要遇冷吗？</p>
+<p>恰恰相反，硬币另一面，是产业链各方对于自动驾驶未来和前景，更加狂热的坚定。</p>
+<p>无论是一众传统车厂纷纷不计成本投入转型，还是特斯拉在市值和股市上的一骑绝尘。抑或Waymo和小马智行在VC投资中得到的巨额支持……</p>
+<p>都在说明这样一件事：没人再对自动驾驶的未来有异议了。</p>
+<p>但最关键的问题，还是回到那个没有共识的话题：When？究竟何时？</p>
+<p>于是在如此明确的矛盾感中——一方面坚信是未来，另一方面不知未来何时能来，最稳妥的方式，就是“抱团”，用马太效应来消解风险。</p>
+<p>如果未来是明确的，但现在又是有巨大不确定性的，那把投注押在现在领跑的那个玩家，是不是就是最合理的选择？</p>
+<p>经济领域有言：大到不能倒。</p>
+<p>自动驾驶领域，或许也会出现类似的现象。既然都知道是一场投入难计的未来押注，把筹码给拥有最多筹码的那个人，比给其他玩家要有保障得多。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201107/9012723674724e7ab9e19931fc33089e.jpeg" /></p>
+<p>只是这样一来，或许行业就到了一个新阶段。 </p>
+<p>那些融资和估值体量上无法快速跟上，又难以拥有造血能力的玩家，多半就要下这个牌桌了。</p>
+<p>好比一场打擂比赛，之前英雄不问出处，有三拳两脚都可上台PK，但如今需要资质证明、需要定级定性……</p>
+<p>如果资格都不够，哪有机会与其他人同场竞技？</p>
+<p>所以此轮小马智行融资，只是这种讯号的加强，这种趋势已经开始，这种趋势还在继续。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>榜单征集！7大奖项锁定AI TOP企业</strong></p>
+<p><strong>「2020中国人工智能年度评选」</strong>报名中！评选将从公司、人物、产品、社区四大维度共7个奖项寻找优秀的AI企业，欢迎大家扫码报名参与。 </p>
+<p>评选报名截止于11.20，并将于12月16日揭晓，也期待与百万从业者们，共同见证这些优秀企业的荣誉！ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜给AI一张高清照片，分分钟还你细节满满的3D人体模型，GitHub标星3.6k | 在线可玩
+http://www.sohu.com/a/430207934_610300	16584
+<p>鱼羊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">手动对人体进行3D建模并非易事。</p>
+<p style="text-align: left;">但现在，只给AI <strong>一张</strong>高清照片，它还真就能分分钟搞定这件事。 </p>
+<p style="text-align: left;">甚至还挺高清，衣服褶皱、面部表情，细节一点不少。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201107/d83fbc79b6ad46aa853748f7eee3644c.gif" /></p>
+<p style="text-align: left;">这项新研究来自南加州大学和Facebook，中选CVPR 2020。</p>
+<p style="text-align: left;">并且已经在GitHub上开源，标星3.6k，还在一天内就涨了207颗星，登上GitHub热榜。</p>
+<p style="text-align: left;">一起来看看，这究竟是如何实现的。</p>
+<p>多级像素对齐隐式函数 </p>
+<p style="text-align: left;">这只AI名叫 <strong>PIFuHD</strong>，其基础框架是ICCV 2019上已经登场的像素对齐隐式函数PIFu。不过，PIFu以分辨率为512×512的图像作为输入，输出的3D模型分辨率不高。 <span style="font-size: 16px;"></span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201107/525def677ed84e5aaa84a7788b9b5e74.gif" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">为了得到高分辨率的输出，在这项研究中，研究人员在PIFu的基础之上，额外叠加了一个像素对齐的预测模块。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201107/7161e50bc3d449f9b250f6b4a872e593.png" /></p>
+<p style="text-align: left;">如图所示，顶部粗层次像素对齐预测器捕捉全局的3D结构。高分辨率的细节则由下面的Fine模块添加。</p>
+<p style="text-align: left;">具体而言，fine模块将1024×1024的图像作为输入，并将其编码成高分辨率的图像特征（512×512）。</p>
+<p style="text-align: left;">此后，高分辨率特征嵌入和第一个模块中得到的3D嵌入被结合起来，用以预测占位概率场。</p>
+<p style="text-align: left;">为了进一步提高重建的质量和保真度，该方法还会在图像空间中预测正反两面的法线图，并将其作为额外的输入反馈给网络。</p>
+<p>细节捕捉高手 </p>
+<p style="text-align: left;">所以，跟前辈们相比，PIFuHD究竟进步了多少？</p>
+<p style="text-align: left;">研究人员在People Snapshot dataset数据集上将其与此前的SOTA方法进行了定性比较。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201107/8ccae7f9c9564e8fa78265e17f81a549.png" /></p>
+<p style="text-align: left;">可以明显看出，由于PIFuHD充分利用了基础形状和精细形状，能够直接在像素级别上预测3D几何形状，它对输入图像的细节把握更加精准，重建出来的3D人体模型分辨率更高。</p>
+<p>Demo可玩 </p>
+<p style="text-align: left;">论文代码已经开源，并且，研究团队还在Colab上提供了在线试玩。</p>
+<p style="text-align: left;">输入一张你自己的照片，几分钟之内就能收获一个数字3D的你。</p>
+<p style="text-align: left;">真·3D建模师福音。</p>
+<p style="text-align: left;">结合可以让3D模型动起来的Mixamo食用，网友们都玩嗨了。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201107/8116c60faa5a4fb1b1513729ba6a3156.gif" /></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201107/57925a22b8ba42cb87bad78fc852081c.gif" /></p>
+<p style="text-align: left;">赶快上手玩起来吧~</p>
+<p style="text-align: left;">最后，附上作者简介。</p>
+<p style="text-align: left;">论文一作斋藤俊辅 <span>（Shunsuke Saito）</span>，目前在Facebook Reality Labs担任研究科学家，致力于深度人类数字化的有效数据表征研究。 </p>
+<p style="text-align: left;">他在南加州大学工作期间，曾与计算机图形学领域知名华人教授黎颢合作。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201107/f0967727c38d416589bf5555b6b96798.png" /></p>
+<p>传送门 </p>
+<p style="text-align: left;">GitHub地址： </p>
+<p>https://github.com/facebookresearch/pifuhd </p>
+<p style="text-align: left;">Demo地址： </p>
+<p>https://colab.research.google.com/drive/11z58bl3meSzo6kFqkahMa35G5jmh2Wgt?usp=sharing#scrollTo=afwL_-ROCmDf </p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>榜单征集！7大奖项锁定AI TOP企业</strong></p>
+<p><strong>「2020中国人工智能年度评选」</strong>报名中！评选将从公司、人物、产品、社区四大维度共7个奖项寻找优秀的AI企业，欢迎大家扫码报名参与。 </p>
+<p>评选报名截止于11.20，并将于12月16日揭晓，也期待与百万从业者们，共同见证这些优秀企业的荣誉！ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜跑得比TensorBoard快多了，极简可视化工具Aim发布 | Reddit高热
+http://www.sohu.com/a/430273917_610300	16584
+<p>晓查 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">来自加州伯克利的团队开源了 <strong>Aim</strong>，一个号称搜索速度比 <strong>TensorBoard</strong>快好几倍的机器学习可视化工具包，在Reddit上成为高热话题。 </p>
+<p><img height="auto" width="2500" src="http://p3.itc.cn/q_70/images03/20201108/5d14a5138c6a47ad80f05aba9145ad91.png" /></p>
+<p style="text-align: left;">Aim可以在几分钟内记录、搜索和比较100项实验，而在TensorBoard或MLFlow上进行大量实验比较可能需要花费数小时。这对于实验管理非常有用，而且Aim超级容易上手。</p>
+<p><img height="auto" width="1152" src="http://p7.itc.cn/q_70/images03/20201108/bc059c308b464e64ba25db06f4961112.png" /></p>
+<p style="text-align: left;">和TensorBoard/MLFlow相比，Aim的优点主要是支持：</p>
+<ul>
+<li>按参数进行搜索、分组</li>
+<li>分列图表</li>
+<li>汇总大量实验查看趋势</li>
+<li>其他较小的实验指标和参数操作</li>
+</ul>
+<p style="text-align: left;">比如，我们只想看训练集上的试验结果，将context.subset设置为train：</p>
+<p style="text-align: left;"><img height="auto" width="600" src="http://p2.itc.cn/q_70/images03/20201108/21c668baabc042758572938b06d7e0a3.gif" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">如果还想在搜索结果的基础上做进一步的筛选，去掉学习率0.00001的部分，只需再加入一个and条件：</p>
+<p style="text-align: left;"><img height="auto" width="600" src="http://p7.itc.cn/q_70/images03/20201108/9034c0b2a8a545589ca81beeb179e061.gif" /></p>
+<p style="text-align: left;">如果对图中某个数据点感兴趣，点击它即可快速定位到相应表格位置。</p>
+<p style="text-align: left;"><img height="auto" width="600" src="http://p8.itc.cn/q_70/images03/20201108/4a659481b9b44bcd97bd34bc9aa78aa1.gif" /></p>
+<p style="text-align: left;">是不是很方便？虽然界面可能简陋了点，但简洁易用就是Aim的主要特色。有网友表示，Aim看起来非常整洁，搜索语言看起来也很易用。</p>
+<p style="text-align: left;">近年来，AI实验方面诞生了像trains和wandb这类第三方可视化工具。与这类工具比较，Aim在速度和数据隐私方面有很大的优势。</p>
+<p>安装使用 </p>
+<p style="text-align: left;">运行Aim需要安装Docker，Aim本身通过pip方式安装。</p>
+<ul>
+<li></li>
+</ul>
+<p style="text-align: left;">输入以下命令即可运行Aim的UI：</p>
+<ul>
+<li></li>
+</ul>
+<p style="text-align: left;">前提是你要在自己的AI模型里导入Aim</p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p style="text-align: left;">Aim提供的方法有跟踪数据（track）、设置超参数（set_params）、指定自定义目录（session）。</p>
+<p style="text-align: left;">最近，作者又给Aim加入了一项新功能：支持使用Tensorboard日志。方法如下：</p>
+<ul>
+<li></li>
+</ul>
+<p style="text-align: left;">此命令将在TensorFlow摘要日志上启动Aim，并从给定路径递归加载日志。</p>
+<p style="text-align: left;">Aim的开发者承诺未来将提供Pytorch Lightning和Keras集成。</p>
+<p style="text-align: left;"><span style="font-size: 16px;">GitHub地址： </span></p>
+<p><span style="font-size: 16px;">https://github.com/Aimhubio/Aim</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>榜单征集！7大奖项锁定AI TOP企业</strong></p>
+<p><strong>「2020中国人工智能年度评选」</strong>报名中！评选将从公司、人物、产品、社区四大维度共7个奖项寻找优秀的AI企业，欢迎大家扫码报名参与。 </p>
+<p>评选报名截止于11.20，并将于12月16日揭晓，也期待与百万从业者们，共同见证这些优秀企业的荣誉！ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>

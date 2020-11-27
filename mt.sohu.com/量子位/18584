@@ -1,0 +1,455 @@
+➜史上最强音视频下载神器youtube-dl回归，GitHub75k星
+http://www.sohu.com/a/432657669_610300	24169
+<p>蕾师师 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">一个「身价」 <strong>7.5万</strong>颗星的GitHub项目，从受热捧，到被起诉下架，再到引发社区热议。 </p>
+<p style="text-align: left;">故事本已一波三折。</p>
+<p style="text-align: left;">但最近，关于这个项目的最新「剧情」，又有了重大更新。</p>
+<blockquote>
+<p style="text-align: left;">GitHub官方宣布：拒绝投诉内容， <strong>恢复项目存储库</strong>。 </p>
+</blockquote>
+<p style="text-align: left;">GitHub官方宣布：拒绝投诉内容， <strong>恢复项目存储库</strong>。 </p>
+<p style="text-align: left;">除此之外，还追加了一项重要举措——启动 <strong>100万美元</strong>保护基金 <span>（defense fund）</span>。 </p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201118/5983680bd1f341438136d5ce2dacdc0a.png" /></p>
+<p><strong>△</strong>GitHub官方发文 </p>
+<p style="text-align: left;">而这部「连续剧」的主人公，就是大名鼎鼎的 <strong>youtube-dl</strong>。 </p>
+<p style="text-align: left;">关于它的故事，着实精彩，且细细品读。</p>
+<p>youtube-dl：广受欢迎的下载神器 </p>
+<p style="text-align: left;">youtube-dl 已经成为 GitHub 上最受欢迎的项目之一，拥有 7.5万星，人气介于 Node.js 及 Kubernetes 之间。</p>
+<p style="text-align: left;">2006发布，一开始只能从YouTube下载视频和音频，后来经过创作人员的不断完善，下载支持的站点达到了1000多个，成为最受欢迎的下载神器。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201118/dbe911726413492d8c4394f0b2a0045e.gif" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>△</strong>支持下载的网站列表 </p>
+<p style="text-align: left;">从国外的YouTube、BBC、CBS、Twitter、Facebook上的音视频下载，再到国内的爱奇艺、腾讯视频、芒果TV、优酷视频、B站、酷我音乐、网易音乐…… <strong>几乎涵盖了全球各大音视频网站。</strong></p>
+<p style="text-align: center;">截至2020年10月，该项目是GitHub上星级最高的项目之一。 </p>
+<p><img height="auto" width="1206" src="http://p8.itc.cn/q_70/images03/20201118/c5a906207cbc47a89d3c819bc0007f87.png" /></p>
+<p style="text-align: left;">然而，这个强大的神器，可能会侵犯到相关公司的利益。</p>
+<p style="text-align: left;">果不其然， <strong>youtube-dl遭到了投诉，并且被迫下架删除。</strong></p>
+<p>youtube-dl被投诉，遭下架删除 </p>
+<p style="text-align: left;">10月23日，美国唱片业协会（RIAA）根据《数字千年版权法案》（DMCA）向GitHub发布了删除通知，其中要求删除该项目的youtube-dl。</p>
+<p style="text-align: left;">RIAA的要求认为：</p>
+<blockquote>
+<p style="text-align: left;">youtube-dl违反了DMCA的第1201条反规避条款以及德国版权法的规定。</p>
+</blockquote>
+<p style="text-align: left;">youtube-dl违反了DMCA的第1201条反规避条款以及德国版权法的规定。</p>
+<p style="text-align: left;">它规避了YouTube用于生成视频文件本身URL的“滚动密码” （ RIAA被认为是有效的技术保护措施，因为它“旨在禁止直接访问底层的YouTube视频文件，从而防止或禁止视频文件的下载，复制或分发”。</p>
+<p style="text-align: left;">也就是说，youtube-dl能够免费获取各视频平台的付费视频内容。</p>
+<p style="text-align: left;">诉讼结果认为，根据欧盟法律，YouTube的滚动密码是一项有效的技术保护措施。</p>
+<p style="text-align: left;">所以youtube-dl是不合法的。</p>
+<p style="text-align: left;">GitHub针对诉讼做出回应： <strong>下架了youtube-dl</strong>。 </p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201118/8ce674026fc74485aee4dbd7b60b37d1.png" /></p>
+<p>惹怒开发者，youtube-dl代码副本全网传播 </p>
+<p style="text-align: left;">youtube-dl 被下架后不久，许多开发人员便采取了抗议措施，他们复制更多代码发布到了GitHub平台。</p>
+<p style="text-align: left;">在GitHub上搜索youtube-dl，相关结果已经 <strong>高达10582个</strong>。 </p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201118/0901b3db42234a489c279f827a2b8104.png" /></p>
+<p style="text-align: left;">RIAA的起诉适得其反，不仅没有封杀youtube-dl，反而促使这个项目的知名度和使用数量不断增长。</p>
+<ul>
+<li>一方面是开发者疯狂抵制，大量副本的不断涌现。</li>
+<li>一方面是RIAA以法律名义的下架令。</li>
+</ul>
+<p style="text-align: left;">两边的压力使GitHub陷入左右为难的境地。</p>
+<p style="text-align: left;">迫于律法压力，GitHub公司法律团队不得不发出了声明，警告用户不要再发布代码副本至GitHub，否则会对其进行封号处理。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201118/d00a1e97c15e463ca5eefea30e077f36.png" /></p>
+<p><strong>△</strong>GitHub的警告说明 </p>
+<p style="text-align: left;">就在大家觉得被下架已经不能逆转的时候， <strong>局势又出现了反转。</strong></p>
+<p>youtube-dl携100万美金保护基金回归 </p>
+<p style="text-align: left;">11月15日，GitHub收到电子前沿基金（Electronic Frontier Foundation）一封电子文档，文中称youtube-dl并没有违反《美国数字千年版权法案》。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201118/fcf1bc46a6e54f018de3fab1074d5812.png" /></p>
+<p style="text-align: left;">仅1天时间，也就是在11月16日，GitHub 便宣布了youtube-dl的回归。</p>
+<p style="text-align: left;">youtube-dl遭到投诉，理由是因为违反了DMCA的第1201条反规避条款，即避开了网站的密码保护措施，进行文件提取。以这个理由关停youtube-dl。</p>
+<p style="text-align: left;">GitHub 发表言论声明说，youtube-dl并未避开技术保护措施（TPM），即没有违背反规避条款，他们应该站出来保护开发者的权益。</p>
+<p style="text-align: left;">GitHub 负责法务工作的主管 Abby Vollmer 在他的博客中，还对第1201条进行了质疑，表明在合理合法的基础上，才可以进行下架，并且希望法律能够改善，使第201条条款更加完善。</p>
+<p style="text-align: left;">为了避免代码开发者再被大公司起诉，承担个人责任和法律辩护费用的风险。</p>
+<p style="text-align: left;">GitHub将建立开发者防御基金，并捐赠 <strong>100万美元，用来保护开发者权益。</strong></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201118/90bfac9f0909456e99321a5f9e93334c.png" /></p>
+<p style="text-align: left;">youtube-dl强大的功能，令它广受欢迎，让它成为一颗GitHub的一颗明星。起诉封杀遭受低估，在网友的强烈抵制下，再次回归大众视野。</p>
+<p style="text-align: left;">GitHub还设置了100万美金的保护基金保护开发者的权益。这算不算因祸得福呢？</p>
+<p style="text-align: left;">那么开源软件的开发者，应不应该受到版权公司的打击呢？</p>
+<p style="text-align: left;">曾经有人说：“技术无罪，错的是使用技术的人。”</p>
+<p style="text-align: left;">如果youtube-dl侵犯到了一些企业的权利，开源代码开发者应该受到惩罚吗？</p>
+<p style="text-align: left;">评论区说出你的观点。</p>
+<p style="text-align: left;"><span style="font-size: 16px;">参考链接： </span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>量子位年度智能商业峰会启幕，</strong></p>
+<p><strong>李开复等AI大咖</strong><strong>齐聚，</strong></p>
+<p><strong>邀你共探新形势下智能产业发展之路</strong></p>
+<p><span style="font-size: 16px;"><span>▽</span><span>限时早鸟优惠，扫码锁定席位</span><span>▽</span></span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜中国联想和浪潮最能算，雄霸全球超算TOP 500数量榜单
+http://www.sohu.com/a/432657860_610300	24169
+<p>萧箫 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">超级计算机TOP 500，最新一轮排行榜出炉。</p>
+<p style="text-align: left;">接近6个月的时间，性能榜单却基本毫无波动，连官方都调侃：</p>
+<blockquote>
+<p style="text-align: left;">这是自1993年以来排名变化最小的一次。</p>
+</blockquote>
+<p style="text-align: left;">这是自1993年以来排名变化最小的一次。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201118/d1e34f0e6a354b00a0ece438a21a31eb.png" /></p>
+<p style="text-align: left;">不过，这也意味着榜单架构趋于稳定，以ARM为核心处理器的 <strong>富岳（Fugaku）</strong>，依旧排名第一。 </p>
+<p style="text-align: left;">紧随其后的是美国的Summit和Sierra，而中国的神威·太湖之光超级计算机，这次依旧排在第四位。</p>
+<p style="text-align: left;">榜单出来后，ARM高兴地发推祝贺：</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201118/c6daf18abb844490969c9e1890394ede.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">毕竟，这是自6月更新榜单后，以ARM处理器为核心的超级计算机再次拿下第一。</p>
+<p style="text-align: left;">来看看这次榜单都有哪些亮点。</p>
+<p>ARM真的稳了？ </p>
+<p style="text-align: left;"><span>（富岳，原名Fugaku，是日本富士山的别名，寓指其新一代超级计算机性能之高、使用领域之广）</span></p>
+<p style="text-align: left;">而且，这似乎还不是富岳全部的算力。</p>
+<p style="text-align: left;">这使得富岳在HPL（高性能并行计算）测试上实现了 <strong>442 petaflops</strong>的新世界纪录。相比于列表中的第二个超算Summit，整整高出了接近三倍，一时间让后者有点望尘莫及的感觉。 </p>
+<p style="text-align: left;"><img src="http://p5.itc.cn/q_70/images03/20201118/4656944534c04387a1385fe30a41fa72.gif" /></p>
+<p style="text-align: left;">这次以ARM作为核心的富岳超算，无论是在HPCG <span>（高性能共轭梯度基准测试）</span>、还是在HPL-AI基准测试 <span>（人工智能的深度学习中使用的计算指标）</span>上，也同样表现强劲。 </p>
+<p style="text-align: left;">在HPCG上，富岳再次创造了纪录，通过16.0HPCG-petaflops的实力领先第一。</p>
+<p style="text-align: left;">至于HPL-AL测试上，富岳则实现了2.0exaflops的混合精度计算，和第二名的0.55exaflops同样拉开了不少差距。</p>
+<p style="text-align: left;">但事实上，虽然目前排名第一的富岳表现强劲，ARM目前在超算TOP 500占据的地位还很小，采用ARM作为核心的超算，目前还 <strong>只有5台</strong>。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201118/1d8093e4bc61406693222e8510bcac64.jpeg" /></p>
+<p style="text-align: left;">不过，这次采用AMD处理器作为核心、进入TOP 500的超算数量则是翻了一倍，达到了21台。</p>
+<p>英伟达加速器：比绿色更环保 </p>
+<p style="text-align: left;">这次的超算“环保榜单” <span>（Green500）</span>排名上，英伟达的NVIDIA DGX SuperPOD排列第一，在以2.4HPL性能运行的同时，它也实现了26.2 gigaflops/w的功率效率。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201118/bb1ae804c6d54b56ad05561eafb4c837.png" /></p>
+<p><strong>△</strong>真的很绿 </p>
+<p style="text-align: left;">不过，在性能方向上，英伟达的这个超算并非第一，而是排列在TOP 500的第172位。</p>
+<p style="text-align: left;">事实上，除了第二名的MN-3系统外，其余在环保榜单上排名前五的超算系统，都使用的是最新的NVIDIA A100 GPU作为加速器。</p>
+<p style="text-align: left;">至于主CPU，所有这四台超算，使用的都是AMD EPYC。</p>
+<p style="text-align: left;">具体而言，如果将NVIDIA DGX SuperPOD的26.2gigaflops/w线性推算到exaflop单位上，将产生38MW左右的的功耗。</p>
+<p style="text-align: left;">老黄这次成为了环保代言人。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201118/d726c7a792674d408888e151446a232d.png" /></p>
+<p>联想、浪潮超算数量占据榜首 </p>
+<p style="text-align: left;">此外，这次的TOP 500中，中国的厂商表现依旧亮眼，联想和浪潮的入围数量分别达到了180台和66台，在供应商台数上分别夺得第一和第二名。</p>
+<p style="text-align: left;">在这次的TOP 500榜单中，联想以36%的份额，在超算榜单上名列第一。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201118/247c1c50e7084f129e2d53a9044ce9c6.png" /></p>
+<p style="text-align: left;">紧随其后的是浪潮，以13.2%的份额，位列全球高性能计算提供商的第二名。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201118/1e97f53c943647d9b7dbaf57b5b62cd5.png" /></p>
+<p style="text-align: left;">此外，中国继续以212台超级计算机入围数量，位居榜首，在市场占有率上领先于美国 <span>（113台）</span>和日本 <span>（34台）</span>。 </p>
+<p style="text-align: left;">尽管系统数量较少，但美国超算的总体性能较高，目前以668.7 petaflops的总性能超过中国。</p>
+<p style="text-align: left;">日本则由于有了富岳，一台超算的性能就已经达到了442 petaflops，因此这次在整体性能的排行上也排在第三位。</p>
+<p style="text-align: left;">此外，中国和美国都曾经表示，正计划研发新的大型超算，计划在2020年-2021年亮相，但现在2020年11月份的榜单已经更新，较之6月并无更多变化。</p>
+<p style="text-align: left;">或许，国内也会在2021年出现新的超级计算机，在超算性能榜单上重夺榜首。</p>
+<p style="text-align: left;">你怎么看？</p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span>榜单地址：</span></span></p>
+<p><span>https://top500.org/top500/lists/2020/11/</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span style="font-size: 16px;">参考链接：</span></span></p>
+<p><span style="font-size: 16px;">https://top500.org/news/top500-expands-exaflops-capacity-amidst-low-turnover/ </span></p>
+<p><span style="font-size: 16px;">https://top500.org/statistics/list/</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span><span style="font-size: 16px;"></span></p>
+<p><strong>量子位年度智能商业峰会启幕，</strong></p>
+<p><strong>李开复等AI大咖</strong><strong>齐聚，</strong></p>
+<p><strong>邀你共探新形势下智能产业发展之路</strong></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">▽</span><span style="font-size: 16px;">限时早鸟优惠，扫码锁定席位</span><span style="font-size: 16px;">▽</span></span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜华人小哥控诉机器学习「四大Boring」，CS博士：深有同感，正打算退学
+http://www.sohu.com/a/432657904_610300	24169
+<p>杨净 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">机器学习很无聊。</p>
+<p style="text-align: left;">至少这位铁汁是这样认为的。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201118/ab49b066bf624bdbbad8dc08e5d3319b.png" /></p>
+<p style="text-align: left;">甚至还在Reddit上发了帖子，标题就直接这么明晃晃写道：</p>
+<blockquote>
+<p style="text-align: left;">Why machine learning is more boring than you may think？</p>
+</blockquote>
+<p style="text-align: left;">Why machine learning is more boring than you may think？</p>
+<p style="text-align: left;">结果不到15个小时，便引起了 <strong>500+</strong>热度的讨论。 </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201118/354b044a9e6b4152946491c6158300d5.png" /></p>
+<p style="text-align: left;">对此，有网友认为，「因为它是工程技术，而不是基础研究，工程需要满足最低标准和最后期限的，技术上没有什么挑战性」。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201118/ea5c08c536994042a71d45b773564217.png" /></p>
+<p style="text-align: left;">而至于为何要如此强调 <strong>「Boring」</strong>，这位数据科学家肖安讲了如下原因，也给出了自己的解决方式。 </p>
+<p>机器学习「四大Boring」 </p>
+<p style="text-align: left;">首先是 <strong>设计</strong><span>（Designing）</span>的部分，占据5%-10%的时间。 </p>
+<p style="text-align: left;">这时候是群策群力、迸发新想法的时候，包括新的模型体系结构、数据功能和系统设计等。</p>
+<p style="text-align: left;">预期的情况是，在每个项目中应用最新和最出色的算法，可以在知名顶会期刊发布的那种。</p>
+<p style="text-align: left;">但实际情况是，由于「时间限制」和其他优先级事项，只能做到最简单、有效的算法。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201118/3e1edab050f14f01b0b524ff996d199c.jpeg" /></p>
+<p style="text-align: left;">这时候，为了满足作者的「成就感」，就会在附带项目中进行一些「疯狂」的想法，即使这些想法根本不起作用。</p>
+<p style="text-align: left;">接着是 <strong>编码</strong><span>（Coding ）</span>的部分，根据项目的不同，20%到70%的时间占比。 </p>
+<p style="text-align: left;">代码通常分为五类： <span>占代码总行数的百分比。</span></p>
+<ul>
+<li>数据管道，50-70％；</li>
+<li>系统和集成事物，10–20％；</li>
+<li>ML模型：5–10％；</li>
+<li>支持调试和演示分析，5–10％；</li>
+</ul>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201118/960c7ae0a75f41c1b26d5f97f9a7a0bb.png" /></p>
+<p style="text-align: left;">预期的场景是，花费大量的时间在编码ML组件。 </p>
+<p style="text-align: left;">但现在已经有很多现成的框架和编码语言，将很多复杂的东西抽象化，这样工作流已经十分标准化了，根本不需要去开发和完善ML组件。</p>
+<p style="text-align: left;">既然如此，工程师则将更多的时间花在其他低级的优化上，比如系统、数据管道等。</p>
+<p style="text-align: left;">然后是 <strong>质量检查、调试、修复</strong><span>（Debug）</span>，至少要花65%的时间。 <span>（感受到了作者的怨念）</span></p>
+<p style="text-align: left;">一般主要有两种错误，不良结果和传统软件问题。</p>
+<p style="text-align: left;">不良结果，就是模型效果不好、评分较低 <span>（比如准确性）</span>。 </p>
+<p style="text-align: left;">传统软件问题，就包括系统损坏、系统配置问题。</p>
+<p style="text-align: left;">理想的状态，是只需要处理「不良结果」，然后去构建更好的模型。</p>
+<p style="text-align: left;">嗯，展现才能的时间到了！</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201118/149a45c0b279433abcc6af917d5d132a.jpeg" /></p>
+<p style="text-align: left;">然而现实情况是，大概70%-90%都是「传统软件」问题。</p>
+<p style="text-align: left;">而至于不良结果，通常在构建端到端模型训练和数据管道之后，就可以的很快获得很好的结果了。</p>
+<p style="text-align: left;">最后一个部分，就是「灭火」 <span>（Fire-fighting）</span>，处理各种意外情况。 </p>
+<p style="text-align: left;">这大概是所有工程师都不愿意看到的点了吧。</p>
+<p style="text-align: left;">在整个交付过程中，不管是外部、甲方爸爸的要求还是内部沟通不畅、能力不足等各种人为 <strong>Bug</strong>，用作者的话来讲，「就是一场噩梦」。 </p>
+<p style="text-align: left;">这时候，除了 <strong>保持微笑</strong>之外，建议将时间轴延长到2-3倍，在团队里积极交流。 </p>
+<p style="text-align: left;">害，说到这里，归根结底就是理想与现实之间的差距，别人以为的和你自己正在干的区别。</p>
+<p style="text-align: left;">比如，就像这样。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201118/bc256c36017541b0af2181cfa06d9621.jpeg" /></p>
+<p style="text-align: left;">最后，这位小哥还是注入了一些安慰剂。</p>
+<blockquote>
+<p style="text-align: left;">就像从事任何职业一样，最终都会感到无聊和沮丧。</p>
+<p style="text-align: left;">但是没关系，很正常。你应该开发一种应对机制，像玩游戏一样，在过程中获得一些小奖励，然后最终获得胜利。</p>
+</blockquote>
+<p style="text-align: left;">就像从事任何职业一样，最终都会感到无聊和沮丧。</p>
+<p style="text-align: left;">但是没关系，很正常。你应该开发一种应对机制，像玩游戏一样，在过程中获得一些小奖励，然后最终获得胜利。</p>
+<p style="text-align: left;">对于这件事，网友们倒是意见各异。</p>
+<p style="text-align: left;">有学CS学了6年的博士生自述了所遇到的迷茫，并表示打算放弃现在的博士学位。</p>
+<blockquote>
+<p style="text-align: left;">我期望它是酷炫的、知识性、算法性的东西，但一直没有等到可大展拳脚的工程/调试类项目。</p>
+<p style="text-align: left;">因为这个原因，我打算退学。虽然现在还不清楚该申请什么样的工作。</p>
+</blockquote>
+<p style="text-align: left;">我期望它是酷炫的、知识性、算法性的东西，但一直没有等到可大展拳脚的工程/调试类项目。</p>
+<p style="text-align: left;">因为这个原因，我打算退学。虽然现在还不清楚该申请什么样的工作。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201118/8ad602552f664bb49dd2a875d63b98f2.png" /></p>
+<p style="text-align: left;">但有人觉得，作者所说的几个Boring，恰好是喜欢当ML工程师的原因。 </p>
+<p style="text-align: left;">还给出建议：如果你想花费100%的时间用来构建和调试ML模型，那你应该去看看研究岗，而不是工程岗。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201118/397c7d02ea5d4da3b8c8e68dc2cf392b.png" /></p>
+<p style="text-align: left;">还有网友表示，自己很喜欢ML工程师的工作，从构建自运行的端到端模型，到正式投入生产，会有很强烈的成就感。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201118/0ce46cf777d44b05b3149539aaa4211e.png" /></p>
+<p style="text-align: left;">也有人形象的比喻了理想与现实：</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201118/55713b57f4d34b58ad9ae3c24e16f511.png" /></p>
+<p style="text-align: left;">那么，对于这件事你怎么看？如果你的身边也有类似的经历，欢迎与我们分享～ </p>
+<p style="text-align: left;"><span style="font-size: 16px;">参考链接：</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span>https://towardsdatascience.com/data-science-is-boring-1d43473e353e</span></span></p>
+<p><span>https://www.reddit.com/r/MachineLearning/comments/jvq4jw/d_why_machine_learning_is_more_boring_than_you/</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>量子位年度智能商业峰会启幕，</strong></p>
+<p><strong>李开复等AI大咖</strong><strong>齐聚，</strong></p>
+<p><strong>邀你共探新形势下智能产业发展之路</strong></p>
+<p><span style="font-size: 16px;"><span>▽</span><span>限时早鸟优惠，扫码锁定席位</span><span>▽</span></span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜头秃元凶「真面目」首次被揭穿，鹅厂程序员立功了 ｜ Nature子刊
+http://www.sohu.com/a/432657916_610300	24169
+<p>贾浩楠 鱼羊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">好消息，好消息。</p>
+<p style="text-align: left;">打工人的噩梦，脱发的元凶，它的高清大头照现在科学家扒！出！来！了！</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201118/4e5e7ca0b4894e78bf4d18e0e7dbb278.png" /></p>
+<p style="text-align: left;">就是它，脱发之源 <strong>SRD5A2</strong>（II型5a还原酶）↑↑↑ </p>
+<p style="text-align: left;">这是SRD5A2的高分辨率三维蛋白质结构首次被破解，并且分辨率达到了2.8埃 <span>（1埃=10 -7 毫米） </span>。 </p>
+<p style="text-align: left;">也就是说，疗效更好的防脱新药，现在有了研发的关键靶点。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201118/297e597e66d64eae859083dcf70dbe2a.jpeg" /></p>
+<p style="text-align: left;">同时，知名治脱药物「非那雄胺」的防脱机制也在这项研究中被揭示。</p>
+<p style="text-align: left;">这一来自南科大、匹兹堡大学、新加坡A*STAR研究所和腾讯AI Lab的成果已经登上了Nature Communications。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">其中，AI还立下了一桩大功。</p>
+<p style="text-align: left;">具体如何，快来一起围观：</p>
+<p>「秃如其来」的真凶 </p>
+<p style="text-align: left;">熬夜秃，不熬夜的，也秃了。</p>
+<p style="text-align: left;">引起脱发的原因很多。</p>
+<p style="text-align: left;">但对于二三十岁就秃了头的年轻人群来说，攻击范围最广、最顽固的「元凶」，是雄性激素脱发。</p>
+<p style="text-align: left;">引起雄脱的原因，就是毛囊杀手——DHT <span>（二氢睾酮）</span>。 </p>
+<p style="text-align: left;">人体内的睾酮（男女体内都有）在SRD5A2的作用下，可进一步代谢为与毛囊雄激素受体结合能力更强的DHT。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201118/71c4e8042c0c4d6aa8a2a256a658002b.png" /></p>
+<p style="text-align: left;">DHT进入细胞后，会对代谢系统产生作用，使作为能量源的ATP无法产生，从而无法进行毛发的蛋白合成。毛母细胞因此失去活力，角质化形成休止期毛发，大概三个月后就会脱落。</p>
+<p style="text-align: left;">在对抗脱发的斗争中，人们早就了解到 <strong>SRD5A2还原酶是导致雄脱的幕后「真凶」</strong>，也偶然间发现了治疗前列腺增生的 <strong>非那雄胺</strong>有抑制SRD5A2的作用，并将它作为治疗雄脱的主要药物。 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201118/f3333f03ab6f486bad8c195b352f9b55.png" /></p>
+<p style="text-align: left;">但直到最近，SRD5A2的高分辨率蛋白质结构才首次被破解：</p>
+<p style="text-align: left;">与细菌甾醇还原酶MaSR1不同的是，SRD5A2具有独特的七次跨膜结构，由6个环连接：</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201118/f2bc2ade0efa4e51991d4c7772190b5d.png" /></p>
+<p style="text-align: left;">团队根据羟基侧富含的正电荷残基，将羧基末端的环(C-loop)面对细胞质，将氨基末端环(N-loop)面对内质网腔。</p>
+<p style="text-align: left;">此外，氨基末端残基C5N与环4（L4）中的C133L4形成二硫键，这表明氨基端侧面对的正是内置网腔位置，这是因为细胞质部分拥有还原性环境。</p>
+<p style="text-align: left;">至于为什么非那雄胺 <span>（Finasteride）</span>能够抑制SRD5A2，首先要从SRD5A2的作用讲起。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201118/4409451c51154f7a91b21967ae1297e0.png" /></p>
+<p style="text-align: left;">图a表示的是SRD5A2通过还原睾酮的双键，将睾酮转化为二氢睾酮。</p>
+<p style="text-align: left;">而非那雄胺的作用，则是通过本身结构中的侧链 <span>（图b中的R基）</span>，连接到SRD5A2的酰胺基链，形成二氢非那雄胺（DHF），提前「预支」掉SRD5A2的还原作用。 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201118/f0f57e7d229944649e03cc89a1e3f93d.png" /></p>
+<p style="text-align: left;">在蛋白质结构3D示意图中，粉红色标出的部分就是二氢非那雄胺，而与之链接的青色部分，是SRD5A2的酰胺基链，也就是通常还原性辅酶II中的主要功能性结构NADP。</p>
+<p style="text-align: left;">你可能会问，既然已经发现了针对雄性激素脱发的有效治疗药物，再做如此深入的基础研究，有什么重要性？</p>
+<p style="text-align: left;">其实，了解蛋白质的微观结构，能够更好地摸清它的性质，当然就能根据这些性质针对性地利用。</p>
+<p style="text-align: left;">比如，目前的非那雄胺并不是治疗雄性激素脱发的完美方案。</p>
+<p style="text-align: left;">首先，非那雄胺具有一定的副作用风险，比如有概率引起男性阳痿，按照美国FDA记录的数据，这个概率在2%左右。</p>
+<p style="text-align: left;">而且，停药之后，没了「预支」SRD5A2还原作用的非那雄胺，脱发很可能复发。</p>
+<p style="text-align: left;">除了引起阳痿、疗效反弹，非那雄胺还有一个很大的局限性，即女性不能使用，一是因为确实没什么效果，二是会对生理周期产生影响。</p>
+<p style="text-align: left;">而了解了SRD5A2的结构和非那雄胺作用机制，可以让科研人员模仿类似机制研制出副作用更轻的替代药品，或者从基因侧入手，抑制SRD5A2的表达。</p>
+<p style="text-align: left;">不仅如此，对于SRD5A2活性失调引发的各种疾病，这一成果也有着重要的参考价值。</p>
+<p>如何破解SRD5A2「真面目」 </p>
+<p style="text-align: left;">所以，研究人员们具体是如何得到SRD5A2的高分辨率结构信息的呢？</p>
+<p>「从头折叠」 </p>
+<p style="text-align: left;">想要破解SRD5A2的真面目，主要的技术难点在于，它具有独特的7次跨膜结构，与人类全部已知结构的蛋白质差异较大，难以通过常用的「模板建模」方法获得初始构型，来解析晶体数据。</p>
+<p style="text-align: left;">于是，研究人员基于腾讯 AI Lab开发的 <strong>tFold</strong>工具，采用了「 <strong>从头折叠</strong>（de novo folding）」的方法。该方法可以不依赖于模板来预测蛋白质结构。 </p>
+<p style="text-align: left;">具体而言，参照蛋白质结构预测算法 <strong>trRosetta</strong>，首先，根据序列比对文件来预测氨基酸之间的距离和朝向分布，并将其转化为势能。 </p>
+<p style="text-align: left;">然后，用这一结果作为约束条件，与粗粒度的能量优化一起输入蛋白质建模工具Rosetta。</p>
+<p style="text-align: left;">最后，根据Rosetta能量，选择满足约束条件的最佳结构。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201118/30059eb774e64b09883b41718fb11152.png" /></p>
+<p style="text-align: left;">在这个实现过程中，tFold工具提供了三项技术辅助，进一步提高了从头折叠方法蛋白结构预测的精度：</p>
+<p style="text-align: left;">腾讯 AI Lab研发的 <strong>多数据来源融合</strong>（multi-source fusion）技术，用来挖掘多组多序列联配（multiplesequence alignment, MSA）中的共进化信息。 </p>
+<p style="text-align: left;">主要是借助多个不同的MSA <span>（多重序列对比）</span>搜索工具，在不同的参数、不同来源的蛋白序列数据库下，得到的具有多样性的MSA，然后再采用一种深度学习技术将其包含的共进化信息给融合起来。 </p>
+<p style="text-align: left;"><strong>深度交叉注意力残差网络</strong>（deep cross-attention residual network，DCARN），能大幅提高残基对距离、取向矩阵等重要蛋白2D结构信息的预测精度。 </p>
+<p style="text-align: left;">其核心在于利用互相交叉的2D注意力机制，来更有效的捕捉远程的残基对相互作用。这种2D注意力机制的表现能力，比通常的深度卷积神经网络更强。</p>
+<p style="text-align: left;"><strong>模板辅助自由建模</strong>（Template-basedFree Modeling, TBFM）方法，将自由建模（Free Modeling, FM）和模板建模（Template-based Modeling, TBM）生成的3D模型中的结构信息加以有效融合，从而提高最终3D建模的准确性。 </p>
+<p style="text-align: left;">其核心是，将TBM得到的3D模型中的残基对2D结构信息，以一种输入特征的方式，添加到预测2D结构特征的深度交叉注意力残差网络当中去，更好的帮助该网络进行2D结构特征的预测。</p>
+<p style="text-align: left;">这样，即便在某些情况下TBM得到的3D模型精度不高，但其中的部分残基对结构信息 <span>（例如某些很保守的距离，或者取向）</span>依然可以被有效的利用，从而更好的帮助FM进行精确的折叠。 </p>
+<p style="text-align: left;">值得一提的是，预测SRD5A2这个蛋白，tFold只花费了2小时左右的时间。</p>
+<p>X射线数据收集和结构测定 </p>
+<p style="text-align: left;">研究人员还在美国阿贡国家实验室收集到了SRD5A2蛋白质晶体的X射线衍射数据。并使用HKL2000软件对来自5个晶体的数据集进行了处理和合并。</p>
+<p style="text-align: left;">为了确定晶体结构的相位，研究人员采用从头折叠结构模型作为分子置换的搜索模型，使得SRD5A2的结构精度达到了2.8埃。</p>
+<p>One More Thing </p>
+<p style="text-align: left;">现在，tFold公测版本已通过腾讯「云深智药」平台官网对外开放，蛋白质结构预测、虚拟筛选、分子生成、ADMET预测等功能都可以免费使用。</p>
+<p style="text-align: center;"><img src="//p9.itc.cn/q_70/images03/20201118/9966c482b09e4bdbbb71ac1317417373.png" /></p>
+<p style="text-align: left;">量子位已经体验了一把，效果大致是酱婶的，预测速度也挺快：</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201118/ea83a812e4874d05a91721fdb999572a.gif" /></p>
+<p style="text-align: left;">如果你也感兴趣，不妨亲自一试~ </p>
+<p style="text-align: left;">最后，祝各位打工人头发健康 </p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201118/87744d42114549779f841cea8c8a91e2.png" /></p>
+<p style="text-align: left;"><span style="font-size: 16px;">传送门：</span></p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">腾讯云深智药官网： </span></span></p>
+<p>https://drug.ai.tencent.com/cn <span style="font-size: 16px;"></span></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><span style="font-size: 16px;">参考链接：</span></span></p>
+<p><span style="font-size: 16px;">https://mp.weixin.qq.com/s/DQdfJWZKtnGcoYcEpDZn_A</span></p>
+<p><span style="font-size: 16px;">https://yanglab.nankai.edu.cn/trRosetta/</span><span style="font-size: 16px;"></span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>量子位年度智能商业峰会启幕，</strong></p>
+<p><strong>李开复等AI大咖</strong><strong>齐聚，</strong></p>
+<p><strong>邀你共探新形势下智能产业发展之路</strong></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">▽</span><span style="font-size: 16px;">限时早鸟优惠，扫码锁定席位</span><span style="font-size: 16px;">▽</span></span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜“中文版GPT-3”来了：会算术、可续写红楼梦，用64张V100训练了3周
+http://www.sohu.com/a/432658027_610300	24169
+<p>晓查 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">今年，OpenAI推出的自然语言模型GPT-3引起了巨大的轰动。</p>
+<p style="text-align: left;">这是迄今为止最大的NLP模型，包含1750亿参数，光是训练就调用上万块GPU，花费了460万美元的成本。</p>
+<p style="text-align: left;">但GPT-3是基于英语语料库进行训练，而且并不开源，业内一直期待着能有一个中文的超大型NLP模型。</p>
+<p style="text-align: left;">现在，它终于来了！</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201118/930a7567de73478bbd3be2225f11b6e1.png" /></p>
+<p style="text-align: left;">最近，北京智源人工智能研究院和清华大学研究团队，合作开展了一项大规模预训练模型 <strong>开源</strong>计划—— <strong>清源CPM</strong><span>(Chinese Pretrained Models)</span>。 </p>
+<p style="text-align: left;">11 月中旬，CPM将开放第一阶段的26亿参数规模的中文语言模型 (CPM-LM) 和217亿参数规模的结构化知识表示模型 (CPM-KM) 下载，以及相应的Demo。</p>
+<p style="text-align: left;">该项目的源代码和模型已经在GitHub和官网开放下载。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201118/b94cb807d4e6473098e4c88947ea656f.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">CPM中文语言模型与GPT-3模型类似，仅需要通过少次、单次学习甚至零次学习，就能完成不同自然语言处理任务，具备一定的常识和认知的泛化能力。</p>
+<p style="text-align: left;">官方表示，清源CPM计划所有模型免费向学术界和产业界开放下载，供研究使用。</p>
+<p>模型特点 </p>
+<p style="text-align: left;">与已有的中文预训练模型相比，本次发布的清源 CPM 大规模预训练模型具有以下特点：</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201118/520d8bed3fb94deeb7f2ae719396839a.png" /></p>
+<p style="text-align: left;">1、 <strong>语料丰富多样</strong>：收集大量丰富多样的中文语料，包括百科、小说、对话、问答、新闻等类型。 </p>
+<p style="text-align: left;">2、 <strong>模型规模大</strong>：本次发布的 CPM-LM 的参数规模为 26 亿，预训练中文数据规模100 GB，使用了 64 块 V100 GPU 训练时间约为 3 周。 </p>
+<p style="text-align: left;">3、 <strong>学习能力强</strong>：能够在多种自然语言处理任务上，进行零次学习或少次学习达到较好的效果。 </p>
+<p style="text-align: left;">4、 <strong>行文自然流畅</strong>：基于给定上文，模型可以续写出一致性高、可读性强的文本，达到现有中文生成模型的领先效果。 </p>
+<p>Demo展示 </p>
+<p style="text-align: left;">为了更直观地展示清源CPM预训练模型的效果，官方提供了一些文本生成的Demo。</p>
+<p style="text-align: left;">GPT-3能胜任的常识性问答，CPM预训练模型一样可以应对：</p>
+<p><img height="auto" width="1052" src="http://p9.itc.cn/q_70/images03/20201118/da8b6aba92664215bae393e51d4b59e4.png" /></p>
+<p style="text-align: left;">它能够根据真实的天气预报内容，生成天气预报文本模板：</p>
+<p><img height="auto" width="1080" src="http://p5.itc.cn/q_70/images03/20201118/10f5c0483c44451ca5c89e02494f80eb.png" /></p>
+<p style="text-align: left;">除了生成文字外，清源CPM还具有一定的数理推理，根据之前的规律生成计算结果：</p>
+<p><img height="auto" width="1066" src="//p4.itc.cn/q_70/images03/20201118/835498ee6458462398fa528fc2ae253c.png" /></p>
+<p style="text-align: left;">甚至可以续写红楼梦片段：</p>
+<p><img height="auto" width="1054" src="http://p7.itc.cn/q_70/images03/20201118/16c0304840c64120ab7a28639cfa3bb0.png" /></p>
+<p style="text-align: left;">另外，智源和清华团队还在几项基准测试中验证了清源CPM的实际性能。</p>
+<p style="text-align: left;"><strong>1、中文成语填空</strong></p>
+<p style="text-align: left;">ChID 是 2019 年清华大学对话交互式人工智能实验室（CoAI）收集的中文成语填空数据集，其目标是对于给定的段落，在 10 个候选项中选择最符合段意的成语进行填空。</p>
+<p><img height="auto" width="1080" src="http://p5.itc.cn/q_70/images03/20201118/c7be38c9dfc54c2184d8de17642b4961.png" /></p>
+<p style="text-align: left;">表中汇报了预测的准确率，可以看到，CPM(大) 在无监督的设定下甚至达到了比有监督的 CPM (小) 更好的结果，反应了清源 CPM 强大的中文语言建模能力。</p>
+<p style="text-align: left;"><strong>2、对话生成</strong></p>
+<p style="text-align: left;">STC是2015年华为诺亚方舟实验室提出的短文本对话数据集，要求在给定上文多轮对话的条件下预测接下来的回复。</p>
+<p><img height="auto" width="1039" src="http://p7.itc.cn/q_70/images03/20201118/73d4fd0588bb4f41952d4ec3cf01f9bc.png" /></p>
+<p style="text-align: left;">在无监督的设定下，清源 CPM 具有更好的泛化性，在有监督设定下，清源 CPM 能达到比 CDial-GPT 更优的效果，尤其在多样性指标上表现更佳。以下为生成的对话样例。</p>
+<p><img height="auto" width="1038" src="http://p9.itc.cn/q_70/images03/20201118/73dae055533141d080df82a6722560d5.png" /></p>
+<p style="text-align: left;"><strong>3、文本分类</strong></p>
+<p style="text-align: left;">清源 CPM 使用头条新闻标题分类 (TNEWS，采样为4分类)，IFLYTEK应用介绍分类 (IFLYTEK，采样为4分类)，中文自然语言推断 (OCNLI，3分类) 任务作为文本分类任务的基准。</p>
+<p><img height="auto" width="1040" src="http://p8.itc.cn/q_70/images03/20201118/6cc77e8ce0084e8ba1c7be510e598557.png" /></p>
+<p style="text-align: left;">可以看出，清源CPM能够在无监督的设定下达到比随机预测 (TNEWS/IFLYTEK/OCNLI 随机预测精确度分别为0.25/0.25/0.33) 好得多的精确度。</p>
+<p style="text-align: left;"><strong>4、自动问答</strong></p>
+<p style="text-align: left;">CPM 使用 DuReader 和CMRC2018 作为自动问答任务的基准，要求模型从给定的段落中抽取一个片段作为对题目问题的答案。其中DuReader 由百度搜索和百度知道两部分数据组成。</p>
+<p><img height="auto" width="1035" src="http://p3.itc.cn/q_70/images03/20201118/77abbf783e074f0296b3415c1d067819.png" /></p>
+<p style="text-align: left;">在单样本设定下，CPM 能从给定的样本中学习到生成答案的模式，因此效果总是比零样本设定更好。由于模型的输入长度有限，多样本输入的场景将在未来进行探索。</p>
+<p style="text-align: left;"><strong>5、实体生成</strong></p>
+<p style="text-align: left;">CPM 采用 XLORE 中的几种常见的关系三元组作为实体生成任务的基准。在少样本设定 (把少量真实样本拼在待预测样本前作为提示) 下，不同规模的 CPM 模型的 BLEU-1 值如下表所示。</p>
+<p><img height="auto" width="1036" src="http://p9.itc.cn/q_70/images03/20201118/f16a96e696934333900f5b7d308e0da7.png" /></p>
+<p style="text-align: left;">可以看出参数量越大时，模型对于预测实体效果越好。同时，模型在给定 2 个样本时就可以达到不错的效果，大部分时候 N=2 和 N=4 的效果是接近的。</p>
+<p><img height="auto" width="1035" src="http://p1.itc.cn/q_70/images03/20201118/96d9ab4ca47d4b97bef540ab50b81c24.png" /></p>
+<p>64块V100训练3周 </p>
+<p style="text-align: left;">智源和清华本次发布的大规模预训练模型，难以在单块GPU上运行，因此需要将模型在多个 GPU之间分配参数，进行并行化训练。</p>
+<p style="text-align: left;">CPM正是基于英伟达的大规模并行计算训练项目Megatron-LM。</p>
+<p style="text-align: left;">CPM模型预训练过程分布在多块 GPU 上，采用层内并行的方法进行训练，并基于当前已有的成熟技术，减少同步提高通讯速率。</p>
+<p style="text-align: left;">本次发布的CPM-LM的参数规模为26亿，预训练中文数据规模100GB，使用64块英伟达V100 GPU，训练时间约为3周。</p>
+<p style="text-align: left;">而CPM-KG的参数规模为217亿，预训练结构化知识图谱为WikiData全量数据，包含近 1300 个关系、8500万实体、4.8 亿个事实三元组，使用了8块英伟达V100 GPU训练时间约为2周。</p>
+<p>未来计划 </p>
+<p style="text-align: left;">今年年底开源的两个项目只是清源NLP研究计划的第一步，据了解，清源 CPM 未来一年的研究和开源计划是：</p>
+<p><img height="auto" width="2352" src="http://p7.itc.cn/q_70/images03/20201118/fa2fbfbf2be64fdea71ff810ac9f61c6.png" /></p>
+<ul>
+<li>阶段1 (2020年10月-12月) ：中文大规模预训练语言模型，含约 30 亿参数，训练数据包括 100GB 中文数据。</li>
+<li>阶段2 (2021年01月-06月) ：以中文为核心多语言大规模预训练语言模型，含约 200 亿参数，训练数据包括 500GB 以中文为核心的多语言数据。</li>
+<li>阶段3 (2021年07月-09月) ：知识指导的大规模预训练语言模型，含约 1000 亿参数，训练数据包括 1TB 以中文为核心的多语言数据和亿级实体关系图谱。</li>
+</ul>
+<p style="text-align: left;">清源 CPM 计划将积极配备算力、数据和人力，注重开展原创研究，尽早实现与国际顶尖机构在超大规模预训练模型技术方面并跑，提升中文自然语言的深度理解和生成能力。</p>
+<p>关于清源CPM计划 </p>
+<p style="text-align: left;">清源CPM计划是以中文为核心的大规模预训练模型。</p>
+<p style="text-align: left;">首期开源内容包括预训练中文语言模型和预训练知识表示模型，可广泛应用于中文自然语言理解、生成任务以及知识计算应用。</p>
+<p style="text-align: left;">清源CPM计划由北京智源人工智能研究院和清华大学研究团队合作开展。“自然语言处理”是智源研究院重点支持的重大研究方向之一。</p>
+<p style="text-align: left;">智源在该方向上集结了大量国内权威学者，这些学者在NLP领域积累了丰富的研究成果。</p>
+<p style="text-align: left;">如清华大学 <strong>孙茂松</strong>、 <strong>刘知远</strong>团队和 <strong>李涓子</strong>、 <strong>唐杰</strong>团队提出了知识指导的预训练模型 ERNIE 和 KEPLER，循环智能 <strong>杨植麟</strong>团队提出了性能显着优于 BERT 的 XLNet 模型，清华大学 <strong>朱小燕</strong>和 <strong>黄民烈</strong>团队提出了面向情感分析的预训练模型 SentiLARE，融合常识知识的预训练语言生成模型 StoryGPT，面向中文对话生成的 CDial-GPT模型，等等。 </p>
+<p style="text-align: left;">研究团队将在智源研究院大规模算力平台的支持下，开展以中文为核心的超大规模预训练模型研究，包括跨语言学习、文本生成、知识融合、模型并行和压缩等前沿课题，并将相关模型及时通过智源社区开源共享。</p>
+<p>传送门 </p>
+<p style="text-align: left;"><span style="font-size: 16px;">清源CPM项目主页： </span></p>
+<p>https://cpm.baai.ac.cn/ </p>
+<p style="text-align: left;"><span style="font-size: 16px;">清源CPM源代码主页： </span></p>
+<p>https://github.com/TsinghuaAI/CPM-Generate </p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>量子位年度智能商业峰会启幕，</strong></p>
+<p><strong>李开复等AI大咖</strong><strong>齐聚，</strong></p>
+<p><strong>邀你共探新形势下智能产业发展之路</strong></p>
+<p><span style="font-size: 16px;"><span>▽</span><span>限时早鸟优惠，扫码锁定席位</span><span>▽</span></span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
