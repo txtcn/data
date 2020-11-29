@@ -1,0 +1,89 @@
+➜如何从零开始构建B端组件库？来看这份全面总结（附超多大厂组件库）
+https://www.uisdc.com/b-side-component-library	59116
+<p>本文将结合B端项目，从多角度深入细节去解析组件库，帮助大家理解、构建组件库。</p>
+<p>近两年一直都在做B端产品相关的设计工作，深刻的体会到有一套组件库对于B端产品的设计来说是多么的香！</p>
+<p>本文将结合B端项目，从多角度深入细节去解析组件库，帮助我们理解、构建组件库。</p>
+<h4><span class="auto_menu">组件库 UI kit 如何理解</span></h4>
+<p>这个概念对于大家来说应该都不陌生，但是还要总结下自己的理解：</p>
+<p>组件库是可以理解为是一个重复使用的界面设计元素的集合体，它是一个文件库。</p>
+<ul>
+<li>「组」是设计元素的组合方式；</li>
+<li>「件」由不同的元件组成；</li>
+<li>「库」仓库，指储存组件的地方，即一个Sketch文件。</li>
+</ul>
+<p><span class="img-zoom"><img alt="如何从零开始构建B端组件库？来看这份全面总结（附超多大厂组件库）" class="alignnone size-full wp-image-397751" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bd-20201125-1.jpg" width="1200" height="796" /></span></p>
+<p>这里提一下，组件库在整个系统中扮演的是行为层面的对接，是团队内部设计师和开发间的横向协作，是保证产品输出一致的规范基础，设计规范更像是一份说明文档，组件库是设计规范组成里的一部分。</p>
+<h4><span class="auto_menu">组件库的好处</span></h4>
+<p>提高团队效率，保证产品一致的输出。</p>
+<p><span class="img-zoom"><img alt="如何从零开始构建B端组件库？来看这份全面总结（附超多大厂组件库）" class="alignnone size-full wp-image-397752" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bd-20201125-2.jpg" width="1000" height="412" /></span></p>
+<p><strong>1. 统一性</strong></p>
+<p>在团队中，避免多人多风格的现象；新成员加入，可快速接手工作；</p>
+<p>在产品体系内，保证所有产品都呈现一致的设计语言，产品调性，建立产品的连贯性，一致性；</p>
+<p>在用户侧，统一的体验，减少用户学习成本，提升使用体验。</p>
+<p><span class="img-zoom"><img alt="如何从零开始构建B端组件库？来看这份全面总结（附超多大厂组件库）" class="alignnone size-full wp-image-397753" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bd-20201125-3.jpg" width="1200" height="1539" /></span></p>
+<p><strong>2. 高效性</strong></p>
+<p>可以大大缩短设计和开发团队重复开发的时间，提升团队协作效率；</p>
+<p>开发新项目或迭代时，可减少沟通时间，快速适应市场。</p>
+<p><strong>3. 灵活性</strong></p>
+<p>在组件库的基础上，根据产品发展，不断更新维护库，适应变化；</p>
+<p>是规范不是规定，只是搭建基层框架，需根据实际项目在不脱离的基础的情况下，灵活应用。</p>
+<p><span class="img-zoom"><img alt="如何从零开始构建B端组件库？来看这份全面总结（附超多大厂组件库）" class="alignnone size-full wp-image-397754" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bd-20201125-4.jpg" width="1200" height="796" /></span></p>
+<h4><span class="auto_menu">做组件库的时机</span></h4>
+<p>做组件库之前要思考时机是否恰当，那什么时机才适合去做呢？</p>
+<p>在B端产品中，做组件库的时机要需要产品发展到较为稳定的版本，它需要有多个需求沉淀出内容来，毕竟B端的组件库需要结合业务设计出符合业务场景的样式，真正可以组件化的逻辑和样式是不可以凭空想象的，所以前提是要产品有一定的发展，要足够的了解业务逻辑，积累足够的业务场景，再开始着手设计组件库。</p>
+<p><span class="img-zoom"><img alt="如何从零开始构建B端组件库？来看这份全面总结（附超多大厂组件库）" class="alignnone size-full wp-image-397755" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bd-20201125-5.jpg" width="1200" height="736" /></span></p>
+<p>对于我们产品目前已经过了探索阶段，处于向成长阶段过度的时期，整个公司这一季度把系统性提升产品和服务的竞争优势提上了日程，毕竟做出产品差异化的前提需要做好底层架构工作。也是趁着这个机会，我们设计部门又一次全盘复盘了一下组件库，迭代一个新版本，以更好的适应产品的发展。</p>
+<h4><span class="auto_menu">组件库该怎么做</span></h4>
+<p>可以分为三个阶段：</p>
+<p><span class="img-zoom"><img alt="如何从零开始构建B端组件库？来看这份全面总结（附超多大厂组件库）" class="alignnone size-full wp-image-397756" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bd-20201125-6.jpg" width="1000" height="412" /></span></p>
+<p><strong>1. 理解阶段</strong></p>
+<p>我们在制作组件库的过程中应用到了两个概念 原子化设计理论 Atomic Design、结构细分。</p>
+<p>在结构细分之前要了解什么是原子化，有关原子化的文章数不胜数，有心的童鞋可以学习下文：</p>
+<p>[link https://www.uisdc.com/atomic-design-guidelines]</p>
+<p><span class="img-zoom"><img alt="如何从零开始构建B端组件库？来看这份全面总结（附超多大厂组件库）" class="alignnone size-full wp-image-397757" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bd-20201125-7.jpg" width="1200" height="593" /></span></p>
+<p>结构细分其实就是将各个独立的模块（组织）进行打散（原子）、细化、整合、重组。举个例子：</p>
+<p><span class="img-zoom"><img alt="如何从零开始构建B端组件库？来看这份全面总结（附超多大厂组件库）" class="alignnone size-full wp-image-397758" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bd-20201125-8.jpg" width="1200" height="736" /></span></p>
+<p>理解了概念之后需要进入实施阶段。</p>
+<p><strong>2. 拆解阶段</strong></p>
+<p>在结构细分时，需要先从项目中筛选出满足复用性和拓展性的可拆解的模块，对于B端的产品来说我们在筛选的时候根据旧版本内容，把页面穷举罗列出来，分析相似性和可替换的模块，然后利用思维导图的方式罗列出可组件化的内容，做成可替换的组件，使每个原子可独立变化和替换，这种多嵌套组合式的细分方式，让组件最终呈现出来的样式满足多场景的业务需求。</p>
+<p>我们在根据产品类型把组件分为：基础组件、业务组件、数据可视化组件、常用模块四大类别，具体细分见思维导图：</p>
+<p><span class="img-zoom"><img alt="如何从零开始构建B端组件库？来看这份全面总结（附超多大厂组件库）" class="alignnone size-full wp-image-397759" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bd-20201125-9.jpg" width="1200" height="1185" /></span></p>
+<p>具体的组件分类需根据产品类型具体定义。</p>
+<p><strong>3. 设计阶段</strong></p>
+<p>拆解完之后就要进入具体的设计阶段了，在设计组件库时要用产品思维去做，包括从规划、设计、开发、跟踪完成一整个产品闭环。</p>
+<p>具体的设计工作就是需要花费精力和时间去完成了，需要逐个去绘制，在整个设计过程中，我们也踩过一些坑，整理了以下几点需要提前注意的事项，以防出现事后返工行为。</p>
+<p>第一个点是命名规范，举个例子：</p>
+<p>衷心的给做组件库的同学一个建议，鉴于每个人日常工作习惯不同对于一些概念理解会有偏差，做之前一定要和团队内的小伙伴商量好命名格式，十分必要。</p>
+<p><span class="img-zoom"><img alt="如何从零开始构建B端组件库？来看这份全面总结（附超多大厂组件库）" class="alignnone size-full wp-image-397760" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bd-20201125-10.jpg" width="998" height="800" /></span></p>
+<p>在我们第一版的组件库中，由于命名的混乱导致在使用过程中浪费很多时间在找组件上，所以我们又重新针对命名做了一次优化。</p>
+<p><span class="img-zoom"><img alt="如何从零开始构建B端组件库？来看这份全面总结（附超多大厂组件库）" class="alignnone size-full wp-image-397761" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bd-20201125-11.jpg" width="998" height="800" /></span></p>
+<p>修改后模块更清晰了，操作更便捷了，工作效率又提高了。</p>
+<p>第二个点是布局，举个例子：</p>
+<p>比如在项目中会涉及到一些筛选框、输入框等，会出现标题文本右对齐、内容文本左对齐的情况，这时在做组件的时候就要定义不同的布局样式。</p>
+<p><span class="img-zoom"><img alt="如何从零开始构建B端组件库？来看这份全面总结（附超多大厂组件库）" class="alignnone size-full wp-image-397762" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bd-20201125-12.jpg" width="1200" height="622" /></span></p>
+<p>这里还要提一下sketch的一个小问题，虽然内容被布局后，文本框可以根据文本长短自适应长度，但整个组件的选区是固定原组件的大小，它不随内容的长短发生变化，看下图中示例：</p>
+<p><span class="img-zoom"><img alt="如何从零开始构建B端组件库？来看这份全面总结（附超多大厂组件库）" class="alignnone size-full wp-image-397763" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bd-20201125-13.jpg" width="1200" height="600" /></span></p>
+<p>在项目中调用这类组件后，在测量模块间距的时候会发现这个问题，我们暂时没有找到除了手动调整外的更好解决方案，或许sketch再更几个版本这个小Bug就被解决了吧。</p>
+<p>第三个点是业务场景的思考：</p>
+<p>B端产品众所周知它的特点是业务逻辑复杂，场景多，所以我们的产品在进入市场后，都会有专门的前场人员到现场去做示范和讲解产品如何使用。针对不同权限的人员使用产品范围不用，看到的页面也不同，但我们要保证相同业务场景下相同产品功能一致性的输出，降低用户的学习成本。所以我们在做底层组件的时候就要多场景的去考虑，以确保一致性输出。</p>
+<h4><span class="auto_menu">组件库的应用</span></h4>
+<p>组件库构建好之后，应用的时候其实用到的是组件的重组，根据具体场景搭配出合适的组件；特殊情况需分离组件在原基础上做适当调整，组件库的存在只是提供了一个标准，是规范不是规定，所以具体的应用还需具体分析。</p>
+<p><span class="img-zoom"><img alt="如何从零开始构建B端组件库？来看这份全面总结（附超多大厂组件库）" class="alignnone size-full wp-image-397764" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bd-20201125-14.jpg" width="1008" height="800" /></span></p>
+<p>团队内的协作直接用Cloud可以同步文件，具体使用方式官方很详细（丢个链接：<a href="https://www.sketch.com/docs/sketch-cloud/">https://www.sketch.com/docs/sketch-cloud/</a>）文件有更新团队内的成员都会第一时间看到，然后下载组件库文档替换旧版本即可。</p>
+<h4><span class="auto_menu">组件库的维护</span></h4>
+<p>开发完组件库以后，对于它的更新迭代要根据产品的发展不断去维护的。根据需求的多样性组件库最好也要有规定迭代周期，以保证满足需求。</p>
+<p>这里附上有赞的组件库更新机制，感觉对于大部分公司还是蛮通用的：</p>
+<p><span class="img-zoom"><img alt="如何从零开始构建B端组件库？来看这份全面总结（附超多大厂组件库）" class="alignnone size-full wp-image-397765" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bd-20201125-15.jpg" width="2604" height="800" /></span></p>
+<p>组件库需要持续保持简洁清晰的状态，绝不能出现过于臃肿，反而给工作带来负面效果。</p>
+<p>最后附上各大厂组件库地址：</p>
+<ul>
+<li>ANT Desisn（蚂蚁金服UI组件，包含PC和移动端）官网地址：<a href="https://ant.design/index-cn">https://ant.design/index-cn</a></li>
+<li>ANTV Charts（蚂蚁金服数据可视化组件，包含PC和移动端）官网地址：<a href="http://antv-2018.alipay.com/zh-cn/index.html">http://antv-2018.alipay.com/zh-cn/index.html</a></li>
+<li>Alibaba Fusion Design ( Alibaba Fusion Design 的官方 React 实现)官网地址：<a href="https://fusion.design/pc/component/basic/input?themeid=2">https://fusion.design/pc/component/basic/input?themeid=2</a></li>
+<li>Element UI（饿了么PC端组件库）官网地址：<a href="https://element.eleme.cn/#/zh-CN">https://element.eleme.cn/#/zh-CN</a></li>
+<li>Vant（有赞移动端组件库）官网地址：<a href="https://youzan.github.io/vant/#/zh-CN/design">https://youzan.github.io/vant/#/zh-CN/design</a></li>
+<li>Zent（有赞PC端组件库）官网地址：<a href="https://youzan.github.io/zent/zh/guides/install">https://youzan.github.io/zent/zh/guides/install</a></li>
+<li>iview官网地址：<a href="https://www.iviewui.com/">https://www.iviewui.com/</a></li>
+</ul>
+<p>欢迎关注作者的微信公众号：「做设计的小仙草」</p>
+<p><span class="img-zoom"><img alt="如何从零开始构建B端组件库？来看这份全面总结（附超多大厂组件库）" class="alignnone size-full wp-image-398184" src="https://image.uisdc.com/wp-content/uploads/2020/11/zuoshejidexiaoxiancaoqr.png" width="180" height="180" /></span></p>
