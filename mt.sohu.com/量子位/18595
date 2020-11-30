@@ -1,0 +1,305 @@
+➜这个AI能帮你女朋友自拍：从照片生成3D视频，总有个角度让她满意
+http://www.sohu.com/a/435102762_610300	17431
+<p>晓查 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">爱自拍的女生，为了拍一张美照总是需要很久，就是为了找到最美的角度。</p>
+<p style="text-align: left;">比如这位妹子，在自己的书架前拍了4张自拍照，都不太满意。</p>
+<p><img height="auto" width="1252" src="http://p1.itc.cn/q_70/images03/20201129/0057f4cca4124c49b273e805e22e9ddd.png" /></p>
+<p style="text-align: left;">现在可以把选最美角度这件事交给AI了，让妹子不再苦恼。只要几张照片，它能从中生成各种角度的自拍。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201129/33cc45f0b0404fa3b4928f8c8e8e457c.gif" /></p>
+<p style="text-align: left;">然后，你可以在AI生成的视频里，找到一个自认为最美的角度，分享到朋友圈。</p>
+<p style="text-align: left;">这个AI就是华盛顿大学和谷歌联合开发的 <strong>nerfies</strong>。 </p>
+<p style="text-align: left;">这种方法不需要太复杂的设备，只要智能手机的摄像头和CPU就能完成运算和渲染。这可比iPhone 12 Pro用内置激光雷达来生成3D图像的成本低多了。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201129/819ce846d22341119ffb9767a6bc3180.gif" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>原理 </p>
+<p style="text-align: left;">看到nerfies这个名字是不是有种似曾相识的感觉？nerfies其实就是NeRF+Selfies两个单词合并而来。</p>
+<p style="text-align: left;"><strong>NeRF</strong>（神经辐射场）是谷歌最近开发的一种2D图像转3D的模型，但NeRF要求拍摄对象在整个过程保持完全静止。 </p>
+<p style="text-align: left;">比如，上面的妹子在自拍4张照片的时候，头部姿势不可避免地会发生变化，如果直接套用NeRF，效果惨不忍睹。</p>
+<p style="text-align: center;"><img height="auto" width="470" src="http://p7.itc.cn/q_70/images03/20201129/e4b99fdb01664ac0881034a70fb20df7.png" /></p>
+<p style="text-align: left;">而nerfies则是 <strong>可变性神经辐射场</strong>（Deformable NeRF），它能够重建非刚性变形的场景。 </p>
+<p style="text-align: left;">在NeRF的基础上，作者从几何和物理模拟的原理出发，提出了NeRF的弹性正则化，进一步提高了2D转3D的鲁棒性。</p>
+<p style="text-align: left;">在可变性NeRF中，作者引入了弹性正则化、背景正则化以及一种可避免不良的局部最小值退火技术。</p>
+<p><img height="auto" width="2164" src="http://p0.itc.cn/q_70/images03/20201129/e9c07f55b4b84838ad8691df3383c22c.png" /></p>
+<p style="text-align: left;">作者将潜在变形码（ω）和外观码（ψ）与每个图像关联。在观测帧中对摄像机光线进行追踪，并使用变形场将样本沿光线转换到规范帧，变形场由变形码ω编码为MLP。</p>
+<p style="text-align: left;">另外使用转换后的样本位置(x0，y0，z0)、观察方向(θ，φ)和外观码ψ作为MLP的输入，来查询模板NeRF模块，并沿着光线对样本进行积分。</p>
+<p>更多玩法 </p>
+<p style="text-align: left;">可变性NeRF不仅可以用于自拍，还有更多好玩的用途。</p>
+<p style="text-align: left;">比如创建“希区柯克变焦”的效果，过去需要专门的摄影技巧，或者是通过由远及近的拍摄视频再后期处理。现在只要几张照片就可以了。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201129/6c32c10132884a6bb3a4354b8aace878.gif" /></p>
+<p style="text-align: left;">如果不需要场景角度变化，而是需要人物姿势变化呢？</p>
+<p style="text-align: left;">可变性NeRF能在头向左和向右之间线性插入任意姿势的照片。</p>
+<p><img height="auto" width="2728" src="http://p4.itc.cn/q_70/images03/20201129/61aa690bd14b4529b8cd68dabc19a5ef.png" /></p>
+<p style="text-align: left;">最后还有一个用途是生成防抖视频。既然可变性NeRF可以生成任意角度的图像，那么现在可以让手负责抖，而让它负责稳了。</p>
+<p style="text-align: left;"><img src="http://p8.itc.cn/q_70/images03/20201129/9a7fabf6f0a84f2083fc30002bfcefed.gif" /></p>
+<p style="text-align: left;">目前作者还没有公布源代码，不过他们的项目主页上已经放上了GitHub的按钮，看来他们已经准备开源了。你是不是迫不及待想试一下呢？</p>
+<p style="text-align: left;"><span style="font-size: 16px;">项目地址： </span></p>
+<p>https://nerfies.github.io/ </p>
+<p style="text-align: left;"><span style="font-size: 16px;">论文地址： </span></p>
+<p>https://arxiv.org/abs/2011.12948 </p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>量子位年度智能商业大会启幕，大咖已就位！</strong></p>
+<p><span style="font-size: 16px;">12月16日，</span><strong><span style="font-size: 16px;">李开复</span></strong><span style="font-size: 16px;">博士、 <strong>尹浩</strong>院士、清华 <strong>唐杰</strong>教授，以及来自 <strong>小米</strong>、 <strong>美团</strong>、 <strong>爱奇艺</strong>、 <strong>小冰</strong>、 <strong>亚信</strong>、 <strong>浪潮</strong>、 <strong>容联</strong>、 <strong>澎思</strong>、 <strong>地平线</strong>、 <strong>G7</strong>等知名AI大厂的大咖嘉宾将齐聚MEET2021大会，期待关注AI的朋友报名参会、共探新形势下智能产业发展之路。 </span></p>
+<p><strong><span>▽</span></strong>早鸟票限时优惠，扫码锁定席位吧~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜特斯拉被曝低级漏洞：用树莓派DIY车钥匙，开锁仅需90秒
+http://www.sohu.com/a/435110582_610300	17431
+<p>贾浩楠 木易 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">一辆售价80-90万的特斯拉Model X，只用2000块就能开走？？？</p>
+<p style="text-align: left;">这不是特斯拉在搞什么购车金融方案，而是比利时鲁汶大学的研究人员攻破了高端车型 <strong>Model X的安全漏洞</strong>！ </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201129/ec921067f0d24592bd6d12465651c9c5.jpeg" /></p>
+<p style="text-align: left;">他们只用2000元左右，拿树莓派电脑DIY了一个「车钥匙」，90秒打开车门，不到几分钟，就能把车开走了。</p>
+<p style="text-align: left;">无钥匙进入，真正变成了字面意义上的「无钥匙进入」。</p>
+<p style="text-align: left;">那么，问题出在哪里？特斯拉自己又是怎么解释的？</p>
+<p>第一个漏洞：怎么进入汽车？ </p>
+<p style="text-align: left;">复制这把车钥匙的方法，就是偷偷坐在你旁边。当你和朋友谈笑风生的时候，你的车钥匙已经在神不知鬼不觉中被复制了。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201129/b5421da47ca94c7dbe7846d11bbb85d3.gif" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">这是攻击者在演示如何接近车主，在近距离（15米内）中，用自己在网上购买的车身控制模块（BCM）去唤醒车主智能钥匙的蓝牙。</p>
+<p style="text-align: left;">现实中，黑客当然不可能手捧着开发板从你旁边招摇走过，但是把它藏在背包里是完全没问题的。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201129/6b23610de22f41e6a967bb5a6f461009.gif" /></p>
+<p style="text-align: left;">通过这串数字，攻击者便可以为他们的盗版BCM创建一个代码，用于证明其身份。</p>
+<p style="text-align: left;">相当于「再造」一个车机系统。</p>
+<p style="text-align: left;">然后，拿着这一套克隆BCM，唤醒靠近的车钥匙，执行下一步的破解步骤。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201129/15259073fbbd4cc4832df3c8e01fc4bc.gif" /></p>
+<p style="text-align: left;">而这一步的关键，就是重写车主钥匙上的固件程序。</p>
+<p style="text-align: left;">Model X的密钥卡，通过蓝牙与Model X内部的计算机连接，然后无线接收固件更新。</p>
+<p style="text-align: left;">但是，这其中存在一个重大漏洞：Model X密钥的固件更新缺乏 <strong>加密签名</strong>，以证明更新固件更新来源的安全性。 </p>
+<p style="text-align: left;">通俗来说，就是证明更新来源是官方的、安全的，而Model X的车钥匙并不具备验证这一步。</p>
+<p style="text-align: left;">所以黑客记录下挡风玻璃的后五位数，就能把树莓派伪装成Model X，诱骗你的车钥匙更新固件。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201129/d518f2dc3d1540269260357932471a06.jpeg" /></p>
+<p style="text-align: left;">这个固件是黑客镜像设计的，它可以查询车钥匙里的安全芯片，为车辆生成解锁代码。</p>
+<p style="text-align: left;">于是，攻击者便非常顺利地通过蓝牙，连接上目标车辆的密钥卡，重写固件。</p>
+<p style="text-align: left;">当固件被更新为攻击者的版本后，便可以用它来查询密钥卡内的安全芯片（secure enclave chip）。</p>
+<p style="text-align: left;">取得解锁代码之后，通过蓝牙将代码发送回你的车，就这样「门户大开」了。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201129/c34ad374f3e440be933eb2502cca9a57.gif" /></p>
+<p style="text-align: left;">整个过程，只需要90秒，是不是有「谍战大片」那味了。</p>
+<p>第二个漏洞：怎么启动汽车？ </p>
+<p style="text-align: left;">坐进车里，「偷车」只算完成了一半。</p>
+<p style="text-align: left;">将特斯拉Model X启动并开走，还需要一些「体力活」。</p>
+<p style="text-align: left;">上一步重写钥匙固件、破解安全芯片的方式，相当于用DIY主板上的蓝牙装置，复制了一把钥匙，目的是破解车门。</p>
+<p style="text-align: left;">现在要做的就是让真正的车机系统认可这把假钥匙，从而启动车辆。</p>
+<p><img height="auto" width="1600" src="http://p4.itc.cn/q_70/images03/20201129/8a037f7e75634b579ed941036144fb74.png" /></p>
+<p style="text-align: left;">首先是拆下车内的屏幕下方的储物盒，在操作台内部有一个接口 <span>（物理接口）</span>，直接连接到车辆控制系统的核心部分，即CAN总线，其中包括了车辆本身的BCM。 </p>
+<p style="text-align: left;">把DIY电脑直接插在接口上，就可以直接向车辆本身的BCM发送指令。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201129/57a4106a82c04c31a7da91c22c843d9f.gif" /></p>
+<p style="text-align: left;">发送的指令，是让车辆本身的电脑跟黑客自己生成的钥匙匹配，这样就能轻松的启动车辆。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201129/20ccce2c96be48adb62b0f34cc54184e.gif" /></p>
+<p style="text-align: left;">问题出在哪里呢？DIY生成的的假钥匙，为什么毫无障碍的就匹配上了车载系统？</p>
+<p style="text-align: left;">其实，特斯拉的车钥匙上本来是带有独特的密码证书，以此来验证真实性。</p>
+<p style="text-align: left;">但是，车上的BCM从头到尾都没有检查过证书。</p>
+<p style="text-align: left;">手脚利索的老哥，从拆储物盒到开走汽车，也就几分钟时间。</p>
+<p>这不是第一次了 </p>
+<p style="text-align: left;">而这，已经不是特斯拉第一次在无线密钥上被攻破了。</p>
+<p style="text-align: left;">之前，特斯拉Model S也在密钥问题上被研究人员攻破过。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201129/d17a52c23a1a48d4b27273e6267b6e2d.gif" /></p>
+<p style="text-align: left;">先前的特斯拉Model S，是基于加密的密钥卡代码来控制车内设备，触发解锁并禁用其防盗锁。</p>
+<p style="text-align: left;">2017年夏天，来自KU Leuven的研究团队发现：由一家名为Pektron的制造商所生产的特斯拉Model S无线密钥卡，只使用了一个弱的40位密码进行加密。</p>
+<p style="text-align: left;">研究人员发现，一旦他们从任何给定的密钥卡中获得了两个代码，他们就可以以此类推进行尝试猜测，直到找到解锁汽车的密钥。</p>
+<p style="text-align: left;">之后，他们计算可能组合，并整理成表。</p>
+<p style="text-align: left;">有了这张表和这两个代码，研究者表示，他们可以在1.6秒内找到正确的密钥来「偷」你的车。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201129/2d73e3a53fdf49adae95730b14fb6dd0.gif" /></p>
+<p style="text-align: left;">研究人员在2017年8月将漏洞的研究发现告诉给了特斯拉。特斯拉对他们的研究表示了感谢，并向他们支付了10000美元的“赏金”。</p>
+<p style="text-align: left;">但是，直到2018年下半年的加密升级和添加PIN码，这个加密隐患才得以解决。</p>
+<p>特斯拉怎么说？ </p>
+<p style="text-align: left;">鲁汶大学的研究人员已于今年8月17号通知了特斯拉公司该安全问题，特斯拉在确认安全漏洞之后已经开始着手对安全漏洞进行修复。</p>
+<p style="text-align: left;">本周开始，特斯拉将着手进行漏洞的更新修补推送。</p>
+<p style="text-align: left;">这些措施包括两个方面，一是车钥匙本身对于固件更新的来源验证。</p>
+<p style="text-align: left;">第二部分是车辆BCM对钥匙安全证书的漏检问题修复。</p>
+<p style="text-align: left;">这些更新会在一个月内陆续覆盖所有有风险的车型。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201129/336210f2666246a68df4d0a471d2e999.jpeg" /></p>
+<p style="text-align: left;">发现了此漏洞的研究人员说，特斯拉的无钥匙进入技术与其他车相比，并没本质区别。</p>
+<p style="text-align: left;">都是用低频无线电波（NFC）发送或接受解锁码来解锁车辆。</p>
+<p style="text-align: left;">特斯拉的独特之处，在于设计了能让车钥匙固件接受OTA更新的蓝牙部分。</p>
+<p style="text-align: left;">正式在OTA这个节点上的安全漏洞，让黑客可以轻松改写固件，从而获取访问底层安全芯片的权限，生成对应解锁码。</p>
+<p style="text-align: left;">而在启动阶段，也缺乏对无线射频信号来源的有效身份核验。</p>
+<p style="text-align: left;">同时，在链接车辆控制模块的物理接口上，特斯拉做的，也未免太随意了。</p>
+<p style="text-align: left;">那么，没有蓝牙OTA环节的无钥匙进入，就没有风险吗？</p>
+<p style="text-align: left;">也不是。</p>
+<p style="text-align: left;">此前，特斯拉安全部门曾表示， <strong>NFC中继攻击</strong>，几乎是无解的。 </p>
+<p style="text-align: left;">这种方法简单粗暴，就是在一定范围内放大车钥匙的NFC信号，从而解锁和启动车辆。</p>
+<p style="text-align: left;">所以，不光是特斯拉，所有采用NFC无钥匙进入技术的车型，都面临风险。</p>
+<p style="text-align: left;">以后，还能放心使用无钥匙进入吗？</p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">参考链接： </span></span></p>
+<p><span style="font-size: 16px;">https://www.wired.com/story/tesla-model-x-hack-bluetooth/</span></p>
+<p><span><span style="font-size: 16px;">https://www.wired.com/story/hackers-steal-tesla-model-s-seconds-key-fob/</span></span></p>
+<p><span><span style="font-size: 16px;">https://mashable.com/article/model-s-tesla-relay-attack/</span></span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>量子位年度智能商业大会启幕，大咖已就位！</strong></p>
+<p><span style="font-size: 16px;">12月16日，</span><strong><span style="font-size: 16px;">李开复</span></strong><span style="font-size: 16px;">博士、 <strong>尹浩</strong>院士、清华 <strong>唐杰</strong>教授，以及来自 <strong>小米</strong>、 <strong>美团</strong>、 <strong>爱奇艺</strong>、 <strong>小冰</strong>、 <strong>亚信</strong>、 <strong>浪潮</strong>、 <strong>容联</strong>、 <strong>澎思</strong>、 <strong>地平线</strong>、 <strong>G7</strong>等知名AI大厂的大咖嘉宾将齐聚MEET2021大会，期待关注AI的朋友报名参会、共探新形势下智能产业发展之路。 </span></p>
+<p><strong><span>▽</span></strong>早鸟票限时优惠，扫码锁定席位吧~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜机器学习博士自曝：实验室「阉割」我的创造力，劝你别读！
+http://www.sohu.com/a/435110587_610300	17431
+<p>贾浩楠 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">「我博士第五年在读，但我不建议你来读博士，因为这是个骗局……」</p>
+<p style="text-align: left;">一位外国网友在Reddit上发帖这么说，他自述研究方向是 <strong>机器学习</strong>。 </p>
+<p style="text-align: left;">而且他还说，所谓「骗局」只是劝退博士的一个次要原因，还有更残酷的事实。</p>
+<p style="text-align: left;">这个帖子在一天之内冲上热榜第一，已经有800多回复讨论。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201129/e6410e5bc34f4494a1601692064d3e27.png" /></p>
+<p style="text-align: left;">AI博士，真的不能读吗？</p>
+<p style="text-align: left;">纵身跳进博士生涯的科研党们，都遭遇了什么？</p>
+<p>博士生涯，让我失去了什么？ </p>
+<p style="text-align: left;">博士皆苦，这一点似乎放之中外皆准。</p>
+<p style="text-align: left;">Reddit楼主所说的「骗局」，一针见血地指出了很多博士面临的困境。</p>
+<p style="text-align: left;">地狱难度的博士生涯，原因是 <strong>导师故意卡毕业</strong>，用学位、工作机会等等东西将学生劫持为「人质」。 </p>
+<p style="text-align: center;"><img height="auto" width="1492" src="http://p1.itc.cn/q_70/images03/20201129/84b50e17cdfe4029beeb80d8716b39d9.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">这一点，相信不少有博士经历的人都有体会。</p>
+<p style="text-align: left;"><strong>读博时间长、机会成本高、导师太坑</strong>，但这还只是楼主抱怨机器学习读博的次要原因。 </p>
+<p style="text-align: left;">真正恐怖的，是几年博士读下来，热情、创造力、野心…….都没有了。</p>
+<p style="text-align: left;">有创意、有野心的博士新生，尽管有些想法很天真，但是他们通常带着独特新颖的思路去解决问题。</p>
+<p style="text-align: left;">但现实的大棒很快就会「纠正」他们。</p>
+<p style="text-align: left;"><img src="http://p5.itc.cn/q_70/images03/20201129/e3e84752883745a8b0398688058dded9.jpeg" /></p>
+<p style="text-align: left;">你的导师或是前辈会告诉你，这种方法行不通，然后抛出来一个「最先进」的解决方法，要求学生按照这个思路来解决问题。</p>
+<p style="text-align: left;">一般来说，项目结束时，绝大部分新生都会被改造成相同的机器。</p>
+<p style="text-align: left;">若是能在现有的方法上稍微做出改进，就已经算学有所成，十分幸运。</p>
+<p style="text-align: left;">但大部分的人很难用高度成熟的平台或方法做出出彩的成果。</p>
+<p style="text-align: left;">对于楼主来说，他直到现在都会有很多新颖大胆的构思，但他已经条件反射般的否决自己，因为这和实验室教的XX原则不一样。</p>
+<p style="text-align: left;">他「咆哮」道：</p>
+<blockquote>
+<p style="text-align: left;">研究应该是一种创造性的、狂野的冒险。博士项目把那些有潜力产生巨大影响的学生完全 <strong>阉割掉</strong>。 </p>
+<p style="text-align: left;">这就像当一个明星大学运动员被一个糟糕的教练团队选中，他们最终会成为比以前更糟糕的运动员。</p>
+</blockquote>
+<p style="text-align: left;">研究应该是一种创造性的、狂野的冒险。博士项目把那些有潜力产生巨大影响的学生完全 <strong>阉割掉</strong>。 </p>
+<p style="text-align: left;">这就像当一个明星大学运动员被一个糟糕的教练团队选中，他们最终会成为比以前更糟糕的运动员。</p>
+<p style="text-align: left;">此帖一出，立刻引发了网友的激烈讨论。</p>
+<p style="text-align: left;">一天时间内800多回帖，而且大多是长篇论证输出。</p>
+<p style="text-align: left;">可以看出，这个话题刺中了博士们的痛点。</p>
+<p style="text-align: left;">在讨论中，很多网友都感同身受，并且指出，博士生涯的成功与否，很大程度在于导师的选择。</p>
+<p style="text-align: left;">他们提出了这样一个有趣的观点：</p>
+<blockquote>
+<p style="text-align: left;">爱因斯坦读读博士时，也没有取得拿得出手的成果。</p>
+</blockquote>
+<p style="text-align: left;">爱因斯坦读读博士时，也没有取得拿得出手的成果。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201129/8359640e5107452ca6c5f08f5ed0accc.jpeg" /></p>
+<p style="text-align: left;">爱因斯坦当年确实是在博士论文 <span>（《分子大小新的确定方法》，其内容是通过糖溶液的扩散与粘滞系数确定分子的大小。）</span>已经通过之后，才陆续发表了光电效应、相对论等等重要成果。 </p>
+<p style="text-align: left;">而爱因斯坦本人也曾表达过对博士教育方法的批评：</p>
+<blockquote>
+<p style="text-align: left;">在我看来，最糟糕的事情是学校主要以恐惧、胁迫和人为权威的方式来进行教育。这种做法摧毁了学生健康的生活态度、正直和自信。</p>
+<p style="text-align: left;">学校教育最重要的任务是唤醒和加强年轻人的对工作价值的感知。</p>
+<p style="text-align: left;">激发这些潜在的创造性的心理力量，当然比采取强制手法或唤醒个人野心更不容易，但它更有价值。</p>
+</blockquote>
+<p style="text-align: left;">在我看来，最糟糕的事情是学校主要以恐惧、胁迫和人为权威的方式来进行教育。这种做法摧毁了学生健康的生活态度、正直和自信。</p>
+<p style="text-align: left;">学校教育最重要的任务是唤醒和加强年轻人的对工作价值的感知。</p>
+<p style="text-align: left;">激发这些潜在的创造性的心理力量，当然比采取强制手法或唤醒个人野心更不容易，但它更有价值。</p>
+<p style="text-align: left;">连爱因斯坦都批评的博士教育，是不是没必要读了？</p>
+<p style="text-align: left;">有网友从另一个角度提出了不同的看法。</p>
+<p style="text-align: left;"><img height="auto" width="1402" src="http://p9.itc.cn/q_70/images03/20201129/6a83264afd1a4972a503965663eafe0c.png" /></p>
+<p style="text-align: left;">他认为爱因斯坦在他的博士期间确实没有革命性的成果，但他学会了与科研圈交流的技能。</p>
+<p style="text-align: left;">从学生的角度来看，读博士的唯一目的是学习如何进行研究，如何向学界发表成果。</p>
+<p style="text-align: left;">在5年博士生涯结束时，这是一个人最应该从博士学位中得到的东西。其他的都是附加价值。</p>
+<p style="text-align: center;"><img src="//p5.itc.cn/q_70/images03/20201129/caa8761da1ef48b4aeee8d5091fc4690.jpeg" /></p>
+<p style="text-align: left;">当然，如果你的导师有雄心壮志，希望你尝试一些有创意或狂野的东西，你是幸运的。</p>
+<p style="text-align: left;">但是，这不是主要目的：你需要掌握的是如何说服学界相信你的想法有价值。</p>
+<p style="text-align: left;">一旦你完成了博士学业，这些技能就会一直伴随着你，这些技能迟早会带来重大的发现。</p>
+<p style="text-align: left;">所以，他认为，博士期间不应强求在学术上出成果，而是要加强自己与科研圈的联系，学会与业内专业人士沟通，为将来的科研生涯打好基础。</p>
+<p style="text-align: left;">此外，在原帖「读博无用」热议之后，很快就有人发帖反驳：</p>
+<p style="text-align: left;"><img height="auto" width="1458" src="http://p6.itc.cn/q_70/images03/20201129/5f6db539bce446f6b655819c0bf5f411.png" /></p>
+<p style="text-align: left;">他认为，读了博士，至少让他在这几点获益：</p>
+<p style="text-align: left;">1、学会与导师建立良好关系。由此获得学术方面的建议和帮助。</p>
+<p style="text-align: left;">2、有机会学习有趣课题，并且不期望具体成果。</p>
+<p style="text-align: left;">3、日常工作和自我提高相辅相成。</p>
+<p style="text-align: left;">4、独立主持项目、实习机会、同行交流。</p>
+<p style="text-align: left;">5、顶刊发文。</p>
+<p style="text-align: left;">而要真正从博士生涯中获益，这些Tips不能少：</p>
+<p style="text-align: left;">1、 <strong>好好选导师</strong>。看看他的最近的研究成果，和他手下的学生聊一聊。 </p>
+<p style="text-align: left;">2、 <strong>调查实验室的研究方向发论文难度</strong>，做的东西是否够创新。 </p>
+<p style="text-align: left;">3、调查实验室论文发顶刊多不多。</p>
+<p style="text-align: left;">4、认真思考自己希望从博士生涯中学到什么技能。</p>
+<p style="text-align: left;">5、留心导师布置的题目，是具体而狭义，还是一个大的方向。通常来说，大课题容易出创新。</p>
+<p style="text-align: left;">6、抓住实习机会，对于机器学习专业，实习尤为重要。</p>
+<p style="text-align: left;">当然，人生起起伏伏，能凑齐上面所有条件，读一个「完美」的博士，真的很难。</p>
+<p style="text-align: left;">但是争取所有好的情况，与不读博的机会、成本比较权衡，再决定是否要读，这是一种比较科学理智的方法。</p>
+<p style="text-align: left;">怎么样？你同意他的观点吗？</p>
+<p style="text-align: left;">欢迎你留言分享自己的看法~</p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">参考链接https://www.reddit.com/r/MachineLearning/comments/k28qgr/d_why_you_shouldnt_get_your_phd/</span></span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>量子位年度智能商业大会启幕，大咖已就位！</strong></p>
+<p><span style="font-size: 16px;">12月16日，</span><strong><span style="font-size: 16px;">李开复</span></strong><span style="font-size: 16px;">博士、 <strong>尹浩</strong>院士、清华 <strong>唐杰</strong>教授，以及来自 <strong>小米</strong>、 <strong>美团</strong>、 <strong>爱奇艺</strong>、 <strong>小冰</strong>、 <strong>亚信</strong>、 <strong>浪潮</strong>、 <strong>容联</strong>、 <strong>澎思</strong>、 <strong>地平线</strong>、 <strong>G7</strong>等知名AI大厂的大咖嘉宾将齐聚MEET2021大会，期待关注AI的朋友报名参会、共探新形势下智能产业发展之路。 </span></p>
+<p><strong><span>▽</span></strong>早鸟票限时优惠，扫码锁定席位吧~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜人工智能时代，怎样高效关注行业趋势、了解AI技术与落地？
+http://www.sohu.com/a/435110615_610300	17431
+<p>位来 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p><span style="font-size: 16px;">AI is the new electricity。近年来，人工智能正在深刻影响着各行各业，也给我们的工作和生活带来精彩的变化。在这场突如其来的疫情中，AI技术、机器人等更是发挥了巨大价值。</span></p>
+<p><span style="font-size: 16px;">毋容置疑，这是人工智能快速发展的时代。而科技浪潮之下，我们每个人都需要倍加关注新技术的发展与产业落地。</span></p>
+<p><span style="font-size: 16px;">但是，</span><span style="font-size: 16px;">忙碌的工作之余，我们</span><span style="font-size: 16px;"><strong>如何高效获取有价值的内容？如何有效学习、用好新技术？</strong></span></p>
+<p>为什么要订阅AI内参？ </p>
+<p style="text-align: left;"><span style="font-size: 16px;"><strong>一、五大内容板块</strong></span><strong></strong></p>
+<p><span style="font-size: 16px;">每个工作日，量子位编辑团队从全球范围内精选</span><span style="font-size: 16px;"><strong>人工智能&amp;前沿科技</strong></span><span style="font-size: 16px;">产业和科研最新动态，汇总新技术、新产品和新应用，梳理当日最热行业趋势和政策，搜索有价值的论文、教程、研究等。</span></p>
+<p><span style="font-size: 16px;">精选内容，独家解读，形</span><span style="font-size: 16px;">成</span><span style="font-size: 16px;"><strong>五大内容板块</strong></span><span style="font-size: 16px;">，</span><span style="font-size: 16px;">帮助读者高效利用碎片化</span><span style="font-size: 16px;">时间、且不错过AI行业重要动态与</span><span style="font-size: 16px;">发展机</span><span style="font-size: 16px;">遇：</span><span style="font-size: 16px;"></span></p>
+<ul>
+<li><p><strong><span style="font-size: 16px;">新技术、新产品和新应用：</span></strong><span style="font-size: 16px;">每天精选4-5条最重要的产业或研究新动态，进行简评与解读，提供独家观点，帮助用户抓住核心内容与背后价值；</span></p></li>
+<li>行业趋势： 每天关注一个细分市场，结合相关市场研究报告、三方数据做出简要分析；</li>
+<li>政策聚焦： 每天关注国内外最新政策导向，帮助用户及时抓住利好与机遇；</li>
+<li>论文推荐： 每天精选3篇论文，传递国内外高校、顶尖 科研团队、AI大厂等的最新科研动态；</li>
+<li>教程及其他研究： 每天推荐一些有趣的开源、资源、经验等。</li>
+</ul>
+<p><strong><span style="font-size: 16px;">新技术、新产品和新应用：</span></strong><span style="font-size: 16px;">每天精选4-5条最重要的产业或研究新动态，进行简评与解读，提供独家观点，帮助用户抓住核心内容与背后价值；</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;"><strong>二、优</strong><strong>质</strong><strong>AI学习交流社群</strong></span></p>
+<p><span style="font-size: 16px;">为了提醒大家每日及时查阅AI内参，也为了给大家提供一个学习交流、分享知识的圈子，量子位采取</span><span style="font-size: 16px;"><strong>社群陪伴式阅读方式</strong></span><span>，</span><span style="font-size: 16px;">每日内参更新后，</span><span style="font-size: 16px;">会及时发布到</span><strong>AI内参群</strong><span>。</span></p>
+<p><span style="font-size: 16px;">在这里，来自各行业的好友一起畅聊，互相解答疑问、分享学习资源，共同进步。也期待你的加入~</span></p>
+<p style="text-align: left;"><span style="font-size: 16px;">社群内分享的相关资料文件都会汇总、上传至网盘，进群或私信小助手即可获取~</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201129/ba4ebd0d502b41879381c271021fda43.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;"><span style="font-size: 16px;"><strong>三、量子位活动优先参与&amp;购票折扣</strong></span></p>
+<p><span style="font-size: 16px;">量子位不定期举办AI技术、产业相关的沙龙、闭门会议、峰会等，年度大会</span><span style="font-size: 16px;"><strong>「MEET智能未来大会」</strong></span><span style="font-size: 16px;">曾经一票难求；也会为大家推荐更多优秀的人工智能大会。群内的AI内参用户可第一时间获悉各种活动，并享优先报名、购票折扣等权益。</span></p>
+<p><span style="font-size: 16px;">更多权益，敬请期待~</span></p>
+<p>如何订阅AI内参？ </p>
+<p>如何查阅AI内参？ </p>
+<p style="text-align: left;">1、 <strong>关注“量子位”</strong>公众号（ID：qbitai）并 <strong>星标</strong>，在后台菜单栏点击“学习干货-AI内参”获取连接，或在聊天框发送“AI内参”获取。 </p>
+<p style="text-align: left;">2、加入量子位 <strong>AI内参社群</strong>：每日内参更新后，量子位小助手将及时发布到群里，提醒大家查阅。 </p>
+<p style="text-align: left;"><span><span style="font-size: 16px;">添加“量子位·小十”，记得</span><strong>备注“内参”</strong>哦~ </span></p>
+<p style="text-align: left;">3、 <strong>邮箱</strong><span style="font-size: 16px;">↑↑</span>，私信您常用的 <strong>邮箱</strong>，每天内参更新后，将发送到您的邮箱，便于查阅、搜索往期内容~ </p>
+<p>订阅须知 </p>
+<p style="text-align: left;"><strong>Q：AI内参的内容跟每日微信推送的内容一样吗？</strong></p>
+<p style="text-align: left;">不一样哦，内参内容是量子位编辑团队从当天国内外全网数百条资讯中精选出来的内容，除了行业资讯，还有高价值论文、教程推荐，挑选最重要的内容呈现给用户，并进行独家解读；</p>
+<p style="text-align: left;">AI内参为知识类产品，暂不支持退订，如您有任何意见或建议，可通过上述联系方式反馈给我们，我们会尽力完善改进，提供更有意义的知识产品。</p>
+<p style="text-align: center;"><span style="font-size: 16px;">— </span><strong>完</strong><span style="font-size: 16px;">—</span></p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p>喜欢就点「在看」吧 !</p>

@@ -1,0 +1,258 @@
+➜王者荣耀「绝悟」完全体上线：解禁全英雄，在线约你来战
+http://www.sohu.com/a/434925797_610300	17586
+<p>木易 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">腾讯AI Lab与王者荣耀联合研发的策略协作型 AI「绝悟」，全英雄池解禁，升级成「完全体」了。</p>
+<p style="text-align: left;">11月28日到30日，将限时开放三天公众体验。</p>
+<p style="text-align: left;">这次的升级，带来了新算法，除了突破了 <strong>可用英雄限制</strong>，还优化了 <strong>禁选英雄</strong>博弈策略。 </p>
+<p style="text-align: left;">而与此次升级相关的研究，也在近期被 <strong>NeurIPS 2020</strong>和 <strong>TNNLS</strong>分别收录。 </p>
+<p style="text-align: left;">在这两篇研究中，分别介绍了「绝悟」进行 <strong>强化训练</strong>和 <strong>监督训练</strong>具体细节。 </p>
+<p style="text-align: center;"><img src="//p3.itc.cn/q_70/images03/20201128/691769396d9d4d3daeecffb2e9abc190.png" /></p>
+<p style="text-align: left;">那么，「完全体绝悟」是如何训练出来的呢？</p>
+<p style="text-align: left;">就让我们顺着这次的论文，好好来了解一下。</p>
+<p>新的MOBA AI强化学习范式 </p>
+<p style="text-align: left;">这次更新带来的最大亮点便是： <strong>全英雄池更新</strong>。但是AI来说，英雄数增多，意味着的是阵容组合数量将呈多项式增长。 </p>
+<p style="text-align: left;">这对于使用自对弈强化学习进行训练的AI来说，不甚友好，也是必须面对的问题。</p>
+<p style="text-align: left;">在NeurIPS 2020中，腾讯实验室提出了一种基于深度强化学习的学习范式，来尝试解决这个问题。</p>
+<p style="text-align: left;">首先，基于Actor-Learner框架，建立一个分布式的RL架构，并使用离策略（off-policy）的方式产生训练数据。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201128/ab6b5ece4c354d4c9921e2c23f45777b.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">之后在进行强化学习中，采用了统一的Actor-Critic网络结构来诠释不同英雄的游戏机制以及动作。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201128/55da91c78cfc4133b1699cc93f00ab09.png" /></p>
+<p style="text-align: left;">另外，研究者还受到神经网络工作中课程学习的启发，在训练设计了一套课程学习方法：先从小任务开始学，然后逐渐增加难度。</p>
+<p style="text-align: left;">具体来讲，就是先用固定阵容来训练多个teacher模型，然后进行蒸馏，把所有teacher的知识蒸馏到一个模型中。</p>
+<p style="text-align: left;">利用了student-driven的策略蒸馏方法，便可以将从简单任务中学习到的知识转移到复杂的任务中。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201128/480dd5419d0e41868cd090a965a83b2e.png" /></p>
+<p style="text-align: left;">此外，对于完整的游戏来说，禁选英雄（BanPick，BP）也是其中重要的一环。</p>
+<p style="text-align: left;">常见的BP方法有Minimax算法，不过受限于计算难度，只适用于小英雄池。因此，随着可用英雄数量的增加，便会带来新的问题。</p>
+<p style="text-align: left;">而腾讯实验室给出的方案是：基于蒙特卡洛树搜索（MCTS）和神经网络进行BP的方法。</p>
+<p style="text-align: left;">在最后的测试中，这个AI展现出了惊人的胜率：</p>
+<p style="text-align: left;">在对抗职业选手中，实现了 <strong>95.2%</strong>的胜率(42局)；而对抗高水平的玩家中，则实现了 <strong>97.7%</strong>的胜率(642,047局)。 </p>
+<p>监督学习，让AI达到人类高手水平 </p>
+<p style="text-align: left;">另外，便是监督学习了。在今年11月14日起开放的「绝悟」第1到19级，就有多个关卡由监督学习训练而成。</p>
+<p style="text-align: left;">而TNNLS中的论文，便详细介绍了「绝悟」智能体，是如何进行监督学习的。</p>
+<p style="text-align: left;">监督学习成功的关键之一，便是设计好 <strong>特征</strong>和 <strong>标签</strong>，对于MOBA游戏，腾讯实验室是这么设计的： </p>
+<ul>
+<li>特征中，包括两部分：矢量特征，代表游戏状态；图像特征，代表地图信息。</li>
+<li>标签设计也分两部分：意图标签，代表大局观；行动标签，表征微操策略。</li>
+</ul>
+<p style="text-align: left;"><strong>大局观对应的多视角意图</strong></p>
+<p style="text-align: left;">研究人员设计了多视角意图标签，包括全局意图和局部意图标签，以对大局观进行建模。</p>
+<p style="text-align: left;">整个地图被划分成24*24的区域块，然后全局意图标签被定义为地图上发生下一系列攻击的编号区域。</p>
+<p style="text-align: left;">局部小地图被划分为12*12的区域块，局部意图标签是从两次攻击事件之间玩家的中途位置提取的，为学习大局观提供了中间信息。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201128/938ca332cf7f4f439156e50947d4099c.png" /></p>
+<p style="text-align: left;"><strong>微操策略的层级动作设计</strong></p>
+<p style="text-align: left;">研究人员设计了分层的动作标签，用以控制英雄的微操策略。</p>
+<p style="text-align: left;">这其中包括两层。第一层代表动作类型，比如移动、技能、回城等。第二层代表选定动作的参数，比如方向、位置、目标等。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201128/71ea20c387174e2fa4567362aba472ba.png" /></p>
+<p style="text-align: left;"><strong>多模态特征</strong></p>
+<p style="text-align: left;">同时使用了矢量特征和类图像特征，它们分别表征的是游戏状态和地图信息。</p>
+<p style="text-align: left;">其中矢量特征包括血量，技能冷却，金币，等级等及时序信息等。</p>
+<p style="text-align: left;">类图像特征包括局部类图像特征和全局类图像特征。</p>
+<p style="text-align: left;">局部类图像特征的范围是英雄的局部小地图，全局类图像特征的范围是全局地图。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201128/0c5f4f70f98c45c2bb3797696e37b2e0.png" /></p>
+<p style="text-align: left;">在设计好特征和标签的基础上，AI建模任务便被定义成了一个层级的多分类问题，之后通过神经网络模型来解决。</p>
+<p style="text-align: left;">模型简单来看就是：全局和局部图像特征经过卷积神经网络处理，矢量特征通过全连接网络处理，两者连接到一起去预测全局和局部的宏观意图。</p>
+<p style="text-align: center;"><img src="//p3.itc.cn/q_70/images03/20201128/c5b169a6dc874176bfbb772b34094dbf.png" /></p>
+<p style="text-align: left;">之后进一步的，嵌入大局观的预测结果，和原有的隐层编码连接在一起，经过输出层输出微操策略对应的标签。 </p>
+<p style="text-align: left;">此外，在大局观和微操策略间，使用了加权的 <strong>多任务损失函数</strong>进行学习。 </p>
+<p style="text-align: left;">而在本研究中的最后测试中，结果也表明：在监督学习后，该AI系统在5V5模式中，能达到人类顶尖业余高手水平。</p>
+<p>关于「绝悟」 </p>
+<p style="text-align: left;">「绝悟」，是由腾讯AI Lab与王者荣耀联合研发的策略协作型 AI。名字寓意绝佳领悟力。</p>
+<p style="text-align: left;">其技术研发始于2017年12月，并在2018年12月通过了顶尖业余水平测试。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201128/ad6810eb700d4a82b2414feafcd1e251.png" /></p>
+<p style="text-align: left;">从去年开始，「绝悟」开始被训练使用英雄，今年1月AI可以职业水平的英雄达到20名，而4月达到了40名。</p>
+<p style="text-align: left;">技术团队一年内让 AI 掌握的英雄数从1个增加到100+个，完全解禁英雄池。因此，此版本得名「绝悟完全体」。</p>
+<p style="text-align: left;">不说了，我要打开王者荣耀去会会这个「完全体」了。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>「MEET 2021智能未来大会」启幕，</strong></p>
+<p><strong>早鸟票限时抢购中，扫码预定席位！</strong></p>
+<p><strong>李开复</strong>博士、 <strong>尹浩</strong>院士、清华 <strong>唐杰</strong>教授，以及来自 <strong>小米</strong>、 <strong>美团</strong>、 <strong>爱奇艺</strong>、 <strong>小冰</strong>、 <strong>亚信</strong>、 <strong>浪潮</strong>、容联、 <strong>澎思</strong>、 <strong>地平线</strong>、 <strong>G7</strong>等知名AI大厂的大咖嘉宾齐聚，期待关注AI的朋友报名参会、共探新形势下智能产业发展之路。 </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜新一届CMO获奖名单公布：人大附中、上海中学霸榜，深圳中学选手夺魁
+http://www.sohu.com/a/434933754_610300	17586
+<p>鱼羊 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">今天，第36届中国数学奥林匹克竞赛 <span>（CMO）</span>在长沙闭幕，获奖名单已经公布。 </p>
+<p style="text-align: left;">今年共有144位选手摘得金牌，195人获得银牌，110人获得铜牌。</p>
+<p style="text-align: left;">其中，来自深圳中学高二年级的 <strong>彭也博</strong>发挥出色，夺得第一名。 </p>
+<p style="text-align: left;"><img src="http://p6.itc.cn/q_70/images03/20201128/138b33944e014c2193097bd99d4c4dff.png" /></p>
+<p style="text-align: left;">按照惯例，竞赛前60名将进入国家集训队，争取代表中国征战国际数学奥林匹克竞赛 <span>（IMO）</span>的资格。 </p>
+<p style="text-align: left;">具体到集训队名额的省市分布方面，排名前五的省市分别是北京（9人）、上海（8人）、浙江（7人）、湖北（6人）、四川（6人）。</p>
+<p style="text-align: left;">在学校分布方面，成都第七中学和中国人民大学附属中学各有6名选手进入前60，紧随其后的是上海市上海中学（4人），浙江省宁波市镇海中学、南京外国语学校、华中师范大学第一附属中学、华东师范大学第二附属中学（各3人）。</p>
+<p style="text-align: left;">而在完整金牌名单中，来自浙江省和北京市的选手占比最高，各有20人夺金，其后是上海市（18人）、湖北省（17人）、湖南省（10人）、四川省（10人）。</p>
+<p style="text-align: left;">人大附、上海中学、华中师范大学第一附属中学等竞赛强校同样刷榜，分别有15人、13人和11人拿下金牌。紧随其后的是成都七中（8人），长沙市雅礼中学、深圳中学、浙江省诸暨海亮高级中学、浙江省宁波市镇海中学、浙江省乐清市知临中学、南京外国语学校、华南师范大学附属中学（各4人）。</p>
+<p style="text-align: left;">一等奖（金牌）完整名单如下：</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201128/6218d701f0414256a133b1605060b842.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201128/e9f1c051a2584a98806868279e4cf98e.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201128/a4766da161c04e7288c452faf50f7ff5.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201128/41ed94b185b745bdbdea50105a873ea2.jpeg" /></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>「MEET 2021智能未来大会」启幕，</strong></p>
+<p><strong>早鸟票限时抢购中，扫码预定席位！</strong></p>
+<p><strong>李开复</strong>博士、 <strong>尹浩</strong>院士、清华 <strong>唐杰</strong>教授，以及来自 <strong>小米</strong>、 <strong>美团</strong>、 <strong>爱奇艺</strong>、 <strong>小冰</strong>、 <strong>亚信</strong>、 <strong>浪潮</strong>、容联、 <strong>澎思</strong>、 <strong>地平线</strong>、 <strong>G7</strong>等知名AI大厂的大咖嘉宾齐聚，期待关注AI的朋友报名参会、共探新形势下智能产业发展之路。 </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜两位清华校友闪耀NeurIPS2020！各9篇入选，华人之最，“不意外，哪个顶会近就投哪个”
+http://www.sohu.com/a/434933761_610300	17586
+<p>杨净 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">NeurIPS 2020即将开幕。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201128/1cdc7914af074cc582d0121b17a98053.jpeg" /></p>
+<p style="text-align: left;">两位训练有素的年轻一代AI科学家，如何评价他们的有备而来？</p>
+<p style="text-align: left;"><strong>杨林</strong>和 <strong>汪昭然</strong>，两位清华毕业生，都以9篇之数，成为今年NeurIPS入选论文最多的华人学者。 </p>
+<p style="text-align: left;">但对于这样的成绩，两位表示并不意外，其中一位还说：「只是看哪个顶会比较近，就投哪个。」</p>
+<p style="text-align: left;">嗯，所以其他科研萌新也能不能「哪个近投哪个」嘞？</p>
+<p style="text-align: left;">他们也分享了一些过来人经验。</p>
+<p>NeurIPS2020 </p>
+<p style="text-align: left;">从整体接收情况上看，今年共有9454篇论文提交，1900篇总接收，录取率仅为20.09%。</p>
+<p style="text-align: left;">虽然接收率逐年偏低，但依旧有国内外AI大牛大放异彩。</p>
+<p style="text-align: left;">吴恩达老师、2020年IEEE冯诺依曼奖获得者、知名学者 <strong>Michael Jordan</strong>团队有 <strong>7篇</strong>论文被接收。 </p>
+<p style="text-align: left;">李飞飞团队有一篇论文被接受。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201128/8f3ec92ab62a4e729d85f8d11d902c7d.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">深度学习三巨头， <strong>Hinton</strong>、 <strong>Lecun</strong>、 <strong>Bengio</strong>也都有论文接收。 </p>
+<p><img height="auto" width="3264" src="http://p8.itc.cn/q_70/images03/20201128/d6a9b29c7ed440ec870405ee24500d04.jpeg" /></p>
+<p style="text-align: left;">而国内的学术大牛也表现不错。</p>
+<p style="text-align: left;">清华大学教授 <strong>朱军</strong>有8篇文章被接收。 </p>
+<p style="text-align: left;">悉尼大学教授兼优必选首席科学家 <strong>陶大程</strong>、港科大和创新工场联合实验室主任 <strong>张潼</strong>，也都有7篇文章接收。 </p>
+<p style="text-align: left;">南京大学周志华团队有3篇论文被接受。</p>
+<p style="text-align: left;">当然，也AI届的 <strong>「新秀」</strong>们～ </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201128/311a3d4dff844f3ba383b50668f205e3.png" /></p>
+<p style="text-align: left;">在机器学习科学家Sergey Ivanov整理出来的 <strong>「Top authors」</strong>榜单中，论文接受数最高的，是来自加州伯克利分校的助理教授Sergey Levine，任职于电气工程与计算机科学系，今年共有 <strong>12篇</strong>论文被接收。 </p>
+<p style="text-align: left;">值得一提的是，去年他同样也有 <strong>12篇</strong>论文被NeurIPS接收，同样位列榜单的第一位。 </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201128/92a1946f29424efc91afa2b933492c8a.jpeg" /></p>
+<p style="text-align: left;">而汪昭然、杨林以 <strong>9篇</strong>论文数位于榜单第二位。 </p>
+<p style="text-align: left;">德克萨斯大学奥斯汀分校的汪张扬、普林斯顿大学的杨卓然则有8篇论文接收数。</p>
+<p style="text-align: left;">除此之外，在本次榜单中，共有31位学者入选，而华人学者就占据了12个席位，占比38%。</p>
+<p style="text-align: left;">而国内高校清华大学、北京大学以 <strong>63篇</strong>论文、 <strong>20篇</strong>论文接收数分别位于全球机构榜单中的第7位和第20位。 </p>
+<p style="text-align: left;">中国此次总体论文接收数为259篇，位于全球第二位。</p>
+<p style="text-align: left;">可以看到，此次榜单结果有很多年轻中国科学家脱颖而出。</p>
+<p style="text-align: left;">量子位就对话了其中代表性的两位，杨林和汪昭然，来做进一步的分享。</p>
+<p>加州洛杉矶分校助理教授杨林 </p>
+<p style="text-align: left;">首先介绍的这一位是来自加州洛杉矶分校的助理教授 <strong>杨林</strong>，任职于电子与计算机工程系。 </p>
+<p style="text-align: left;">除此NeurIPS有9篇论文接收之外，今年ICML也有 <strong>4篇</strong>论文接收。 </p>
+<p style="text-align: left;">他还被聘为ICLR2021的区域主席，入选AAAI 2021高级计划委员会，曾获得 <strong>西蒙斯学者</strong>奖。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201128/0685859fd1be4203b1b9e2c20daeb026.jpeg" /></p>
+<p style="text-align: left;">他本科毕业于清华大学数学物理基础科学实验班，随后前往约翰·霍普金斯大学攻读「计算机科学」和「物理和天文学」的博士学位。</p>
+<p style="text-align: left;">接着，在普林斯顿大学做博士后研究，师从 <strong>王梦迪</strong>教授。 </p>
+<p style="text-align: left;">嗯，就是14岁上清华，24岁从MIT博士毕业，29岁就成普林斯顿大学终身教授的那位。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201128/c584b1aae1f2415884529cb7328c3bd8.jpeg" /></p>
+<p style="text-align: left;">他的研究方向是开发和应用机器学习和数据科学的快速算法、理解不同ML问题的基础理论和优化的计算极限。</p>
+<p style="text-align: left;">当前，他的研究重点是强化学习理论和应用、控制学习、非凸优化和流式算法。</p>
+<p style="text-align: left;">而此次NeurIPS接收的论文也主要集中在对强化学习的理解上。</p>
+<blockquote>
+<p style="text-align: left;">虽然这些年强化学习在实践上取得了令人称赞的结果，但我们对强化学习的理解并不深刻。</p>
+</blockquote>
+<p style="text-align: left;">虽然这些年强化学习在实践上取得了令人称赞的结果，但我们对强化学习的理解并不深刻。</p>
+<p style="text-align: left;">比如，这两篇就分别理解了每局游戏的长度对「强化学习」和「模仿学习」的复杂度的影响。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201128/b257769d4c2147808eeac776a4e07704.png" /></p>
+<p style="text-align: left;">而这两篇则是设计了高效算法，不依赖于基本模型，且可以直接套用在神经网络上。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201128/1726900220ab4e6db8c2945ac28ceb61.png" /></p>
+<p style="text-align: left;">其他的文章都是在不同设定下对强化学习理论做出了一些非平凡的理解。</p>
+<blockquote>
+<p style="text-align: left;">我个人认为这些结果可以加深人们对强化学习的理解，实践人员可以在这些算法基础上设计出更多强化学习的方法。</p>
+</blockquote>
+<p style="text-align: left;">我个人认为这些结果可以加深人们对强化学习的理解，实践人员可以在这些算法基础上设计出更多强化学习的方法。</p>
+<p style="text-align: left;">由于自己的研究是篇理论的，杨林告诉我们，疫情期间并没有受到太大的影响。即使没有疫情，也是远程讨论。</p>
+<p>西北大学助理教授汪昭然 </p>
+<p style="text-align: left;">同样有9篇论文接收的，还有西北大学助理教授 <strong>汪昭然</strong>，任职于工业工程与管理科学系和计算机科学系。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201128/68dea827025d4ed1aab3f809937c92d5.jpeg" /></p>
+<p style="text-align: left;">他本科毕业于 <strong>清华大学电子工程系</strong>，随后前往普林斯顿大学运筹与金融工程系攻读博士学位。 </p>
+<p style="text-align: left;">值得一提的是，当时 <strong>杨林</strong>教授正在王梦迪教授那里做博士后研究。 </p>
+<p style="text-align: left;">对于此次杨林教授也有9篇论文接收，汪昭然向量子位表示：</p>
+<blockquote>
+<p style="text-align: left;">林哥 <span>（杨林）</span>最近一系列论文解决了很多强化学习最本质的基础问题。 </p>
+<p style="text-align: left;">我们很多研究工作都是基于林哥的这些论文。如何评价？唯有膜拜。</p>
+</blockquote>
+<p style="text-align: left;">林哥 <span>（杨林）</span>最近一系列论文解决了很多强化学习最本质的基础问题。 </p>
+<p style="text-align: left;">我们很多研究工作都是基于林哥的这些论文。如何评价？唯有膜拜。</p>
+<p style="text-align: left;">毕业后，他就前往西北大学担任助理教授，同时也获得芝加哥大学Booth商学院、康奈尔大学ECE、卡内基梅隆大学Tepper商学院等教职机会。</p>
+<p style="text-align: left;">今年，他也同样以「增强学习理论项目」获得了 <strong>西蒙斯学者奖</strong>。 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201128/292581ed8d5a47de8f2f66a8abd49c9b.png" /></p>
+<p style="text-align: left;">他向量子位介绍了他主要的 <strong>两大</strong>研究方向。 </p>
+<p style="text-align: left;">首先是，通过建立「深度增强学习的理论框架」，让深度增强学习在计算复杂度和样本复杂度层面更有效率。</p>
+<p style="text-align: left;">在很多领域，比如医疗、金融领域，深度增强学习在安全性、可信性、数据消耗层面与现实所需相距甚远。</p>
+<p style="text-align: left;">因此，团队就试图提出一系列安全性、可信性、数据消耗量都有保障算法，帮助深度增强学习落地这些关键领域。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201128/3909a6576abc47a3bac4cc7cd82c8697.png" /></p>
+<p style="text-align: left;">还有是通过「拓展深度增强学习的算法框架」，设计和优化社会规模的多智能体系统。在很多关键系统里，比如供应链和出行系统，广泛存在着多种主体的合作和竞争。这些动态博弈的主体既可能是人类也可能是算法。</p>
+<p style="text-align: left;">团队就试图提出一系列基于动态博弈论的多智能体深度增强学习算法，以帮助深度增强学习落地这些大规模社会系统。</p>
+<p style="text-align: left;">就像此前 <strong>AI大牛叶杰平</strong><span>（此次合作者之一）</span>在滴滴做的智能调度系统。 </p>
+<p style="text-align: left;">除此之外，本次接收的论文中还提出了一个新的研究问题，那就是结合经典的控制论和深度学习是不是可以完全绕过强化学习？</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201128/d7ab83286d0a48b8bc3c9706c9cb44dd.png" /></p>
+<p style="text-align: left;">通过列举很多例子，比如 <strong></strong>模拟 <strong>SpaceX火箭</strong>降落，来证明设计的这个基础框架要比强化学习有效数万倍。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201128/63cf9499e4314b72bd538585cc30d72a.gif" /></p>
+<p style="text-align: left;">至于此次NeurIPS的准备过程，汪昭然坦然表示，</p>
+<blockquote>
+<p style="text-align: left;">我们一般不会为某个会议专门准备文章，而是等一个研究项目成熟了找最近的会议投稿。</p>
+<p style="text-align: left;">有合作者团队加持，截稿之前并不是特别慌。</p>
+</blockquote>
+<p style="text-align: left;">我们一般不会为某个会议专门准备文章，而是等一个研究项目成熟了找最近的会议投稿。</p>
+<p style="text-align: left;">有合作者团队加持，截稿之前并不是特别慌。</p>
+<p style="text-align: left;">跟杨林教授一样，科研并没有受到疫情的影响，远程讨论反而提高了合作效率。</p>
+<p>9篇论文接收数的秘诀？ </p>
+<p style="text-align: left;">至于有9篇论文数被接收的秘诀，杨林表示：</p>
+<blockquote>
+<p style="text-align: left;">不要追求文章的篇数，踏踏实实做科研，实打实的解决问题才是最重要的。有了好的结果，就好好的写出来，肯定都能发表的。</p>
+</blockquote>
+<p style="text-align: left;">不要追求文章的篇数，踏踏实实做科研，实打实的解决问题才是最重要的。有了好的结果，就好好的写出来，肯定都能发表的。</p>
+<p style="text-align: left;">还对学术科研的萌新们提出了一些建议：</p>
+<blockquote>
+<p style="text-align: left;">目前科研领域还是比较浮躁的，NeurIPS的投稿数每一年都大幅地增长。这并不是一个好的事情。</p>
+<p style="text-align: left;">我还是希望新人还是要踏踏实实地做研究。不要以文章数为目标。做了好的结果，学好了会讲故事的能力，文章自然会有的。</p>
+</blockquote>
+<p style="text-align: left;">目前科研领域还是比较浮躁的，NeurIPS的投稿数每一年都大幅地增长。这并不是一个好的事情。</p>
+<p style="text-align: left;">我还是希望新人还是要踏踏实实地做研究。不要以文章数为目标。做了好的结果，学好了会讲故事的能力，文章自然会有的。</p>
+<p style="text-align: left;">而汪昭然也向我们表示了「写好故事」的重要性。</p>
+<blockquote>
+<p style="text-align: left;">最近审稿质量下滑尤其严重，论文接收与否带有一些随机性。我个人认为，在质量让自己满意的基础上，可能写作能让审稿人看懂比较重要。</p>
+</blockquote>
+<p style="text-align: left;">最近审稿质量下滑尤其严重，论文接收与否带有一些随机性。我个人认为，在质量让自己满意的基础上，可能写作能让审稿人看懂比较重要。</p>
+<p style="text-align: left;">最后，也帮有心读者问了两位年轻教授招研究生的标准。</p>
+<p style="text-align: left;">简洁但关乎本质。</p>
+<p style="text-align: left;">杨林教授的是，数学好、Self-motivated，勤奋，对科研有很大的热情。</p>
+<p style="text-align: left;">而汪昭然教授招收研究生的标准，则是数学/算法/系统有一项擅长即可——都熟悉的话最好。</p>
+<p style="text-align: left;">怎么样，不难吧？（手动狗头）</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>量子位年度智能商业大会启幕，大咖已就位！</strong></p>
+<p><strong><span style="font-size: 16px;">李开复</span></strong><span style="font-size: 16px;">博士、 <strong>尹浩</strong>院士、清华 <strong>唐杰</strong>教授，以及来自 <strong>小米</strong>、 <strong>美团</strong>、 <strong>爱奇艺</strong>、 <strong>小冰</strong>、 <strong>亚信</strong>、 <strong>浪潮</strong>、 <strong>容联</strong>、 <strong>澎思</strong>、 <strong>地平线</strong>、 <strong>G7</strong>等知名AI大厂的大咖嘉宾齐聚，期待关注AI的朋友报名参会、共探新形势下智能产业发展之路。 </span></p>
+<p><strong><span>▽</span></strong>早鸟票限时优惠，扫码锁定席位吧~ </p>
+<p><strong>01</strong></p>
+<p><strong>02</strong></p>
+<p><strong>03</strong></p>
+<p><strong>04</strong></p>
+<p>滑动查看更多</p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>

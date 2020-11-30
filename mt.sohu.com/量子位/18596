@@ -1,0 +1,121 @@
+➜搭载M1芯片的MacBook能不能当开发主力机？程序员半个月的亲身体验都在这里
+http://www.sohu.com/a/435314743_610300	21369
+<p>晓查 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">MacBook换成ARM芯片后，它还是程序员的开发利器吗？</p>
+<p style="text-align: left;">经过国外程序员半个多月来的尝试，一些常见开发工具的兼容状况也得到披露。</p>
+<p><img height="auto" width="1312" src="http://p4.itc.cn/q_70/images03/20201130/e8a34ba2e71041608548038983f323f5.png" /></p>
+<p style="text-align: left;">Xcode、VS Code、Homebrew……等常用工具能够完美运行吗？如果你还在因为这些问题犹豫要不要买，那么看了这篇文章或许能得到答案。</p>
+<p>代码编辑器 </p>
+<p style="text-align: left;">Vim是通用二进制文件，因此它已经能在M1上直接运行。</p>
+<p style="text-align: left;">VS Code可以通过Rosetta 2转换来运行，而insider版已经原生支持ARM平台的MacBook，相信正式版也不会太遥远。</p>
+<p><img height="auto" width="1416" src="http://p4.itc.cn/q_70/images03/20201130/12e2c76a874c4c87b31582d7e61a9de5.png" /></p>
+<p>Xcode </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">苹果第一方开发工具Xcode自然不必担心兼容性，而且它在M1芯片上的运行效率很高。</p>
+<p style="text-align: left;">编译PSPDFKit PDF SDK，在2019年16英寸MacBook Pro上耗时7分31秒，在M1版MacBook Air上则耗时8分49秒，而后者是无风扇的。</p>
+<p style="text-align: left;">不过Xcode在测试低于iOS 14版的应用程序时，会出现一些问题。WebKit会在内存分配器中崩溃，Xcode有时会定期卡死。</p>
+<p><img height="auto" width="3504" src="http://p0.itc.cn/q_70/images03/20201130/ee8625c55d784231b2c8a0d6a9b9e8d2.png" /></p>
+<p style="text-align: left;">因此如果你要测试较低iOS版本程序，还是在Intel版的MacBook上运行，或者希望下一次Xcode更新时，苹果能解决这个问题。</p>
+<p>Docker </p>
+<p style="text-align: left;">现在Docker无法在M1芯片上运行，也无法通过Rosetta 2转换的方式使用Docker Desktop。</p>
+<p style="text-align: left;">但是同样使用ARM芯片的树莓派却能做到。</p>
+<p><img height="auto" width="1184" src="http://p4.itc.cn/q_70/images03/20201130/b8882183a79946089ec0e0c4e55d50df.png" /></p>
+<p style="text-align: left;">所以在MacBook上运行Docker最好的方法是：运行ARM版Linux虚拟机，在虚拟机中运行Docker。</p>
+<p style="text-align: left;">具体操作方法请参照这篇教程： </p>
+<p>https://finestructure.co/blog/2020/11/27/running-docker-on-apple-silicon-m1 </p>
+<p style="text-align: left;">至于Docker官方何时将提供支持，可以注册Docker ID来获取最新进展。</p>
+<p>Homebrew </p>
+<p style="text-align: left;">Homebrew可以通过Rosetta 2转换的方式进行安装，方法也很简单，只需在过去的安装命令前加上arch -x86_64即可。</p>
+<p>$ arch -x86_64 /bin/bash -c <span>" <span>$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)</span>" </span></p>
+<p style="text-align: left;">这种通过转制的Homebrew在某些软件上可能有一些兼容性问题，因此建议安装另一个手动编译版： </p>
+<p>$ sudo mkdir -p /opt/homebrew </p>
+<p>$ sudo chown -R $(whoami):staff /opt/homebrew </p>
+<p>$ <span>cd</span>/opt </p>
+<p>$ curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew </p>
+<p style="text-align: left;">第一种方式安装的Homebrew在/usr/local/bin目录下，而第二种方式安装的在/opt/homebrew目录下，后者不会自动添加到PATH环境变量中，因此需要手动设置：</p>
+<p><span>export</span>PATH= <span>"/opt/homebrew/bin: <span>$PATH</span>" </span></p>
+<p style="text-align: left;">这样，你的Mac里就有了两个Homebrew：一个是 <strong>Rosetta转换</strong>的，一个是 <strong>原生</strong>的。原生的目录在前面，那么brew命令将默认运行这个版本。 </p>
+<p style="text-align: left;">如果想运行Rosetta转换版怎么办？我们可以单独设置一个ibrew命令：</p>
+<p><span>alias</span>ibrew= <span>'arch -x86_64 /usr/local/bin/brew'</span></p>
+<p style="text-align: left;">目前，Homebrew尚未提供用于ARM Mac的预编译软件包，因此最好使用 <span>brew install -s </span>命令进行安装。 </p>
+<p style="text-align: left;">具体有哪些软件包不兼容，可以到GitHub项目页的issue中查询：</p>
+<p style="text-align: left;"><span>https://github.com/Homebrew/brew/issues/7857</span></p>
+<p>其他常用软件 </p>
+<p style="text-align: left;">说到编程必备，怎么能少得了Chrome，现在Chrome 87版已经开始支持M1版的MacBook。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201130/934df69279ff490489b20c9f18587e33.png" /></p>
+<p style="text-align: left;">还有微软的Office三件套，若使用Rosetta 2转译，启动时间可能需要20秒。官方建议安装针对macOS Big Sur优化的16.43版。 </p>
+<p style="text-align: left;">微软官方表示，已经开始将Mac应用程序迁移到通用二进制文件，未来Office三件套的兼容性不成问题。</p>
+<p style="text-align: left;">如果是基于Electron的应用程序，经过Rosetta 2转译后速度会变得很慢。原因可能是V8 Java编译器似乎阻止了提前翻译。</p>
+<p style="text-align: left;">现在最新版的Electron（Version 11）已经支持了M1芯片，还需要等其他开发者更新软件。</p>
+<p style="text-align: left;">由于Rosetta 2转译的程序会变成只读文件，因此自动更新将被禁止，此类程序需要用户手动更新。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201130/df0f24afcf3a4da7b66c436f480cb0c3.png" /></p>
+<p>虚拟机和Windows </p>
+<p style="text-align: left;">虽然VMware和Parallels可以在M1芯片的MacBook上使用，但是所有Mac虚拟化解决方案均不支持Apple Silicon。免费开源的虚拟机Virtualbox更是无法运行。</p>
+<p style="text-align: left;">现在ARM版Windows可以仿真x86应用程序，而微软正在研究x64仿真。</p>
+<p style="text-align: left;">最近模拟器软件CrossOver展示了 在Mac上运行Windows软件的能力 ，但这只是运行单个程序，而非运行虚拟机和整个系统。 </p>
+<p style="text-align: left;">而且M1最高只支持16GB内存，对虚拟机来说显得有些捉襟见肘。</p>
+<p><img height="auto" width="1704" src="http://p3.itc.cn/q_70/images03/20201130/02ab111c42954e508631549d67fcb0b1.png" /></p>
+<p style="text-align: left;">在运行并行测试时，Mac开始大量在硬盘和内存之间进行数据交换，性能确实下降了。对于运行的虚拟机，这会带来更多的问题。</p>
+<p>结论 </p>
+<p style="text-align: left;">新款搭载M1芯片的MacBook速度快、运行安静，但是在软件方面还需要做很多工作，才能赶上搭载Intel芯片的MacBook。</p>
+<p style="text-align: left;">你可以拿它作为第二台开发电脑使用，如果作为主力开发机，可能会遇到这样那样的问题。想要更好的兼容性需要等到明年软件厂商更新，或者是M2发布。</p>
+<p style="text-align: left;">另外，最高16GB的内存对程序员来说可能还是不够，希望未来的Mac有32GB内存可选。</p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>量子位年度智能商业大会启幕，大咖已就位！</strong></p>
+<p><span style="font-size: 16px;">12月16日，</span><strong><span style="font-size: 16px;">李开复</span></strong><span style="font-size: 16px;">博士、 <strong>尹浩</strong>院士、清华 <strong>唐杰</strong>教授，以及来自 <strong>小米</strong>、 <strong>美团</strong>、 <strong>爱奇艺</strong>、 <strong>小冰</strong>、 <strong>亚信</strong>、 <strong>浪潮</strong>、 <strong>容联</strong>、 <strong>澎思</strong>、 <strong>地平线</strong>、 <strong>G7</strong>等知名AI大厂的大咖嘉宾将齐聚MEET2021大会，期待关注AI的朋友报名参会、共探新形势下智能产业发展之路。 </span></p>
+<p><strong><span>▽</span></strong>早鸟票限时优惠，扫码锁定席位吧~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜腾讯微视AI新技术曝光：斩获VCR榜单第一
+http://www.sohu.com/a/435311384_610300	25725
+<p>近日，视觉常识推理任务VCR（Visual Commonsense Reasoning）榜单又被刷新了。</p>
+<p>VCR是华盛顿大学研究人员2018年提出的推理任务，是多模态理解领域最权威的排行榜之一。它不仅要求模型识别出图中人物的属性和关系，还需要在此基础上，去进一步推理人物的意图等。</p>
+<p>腾讯微视视频理解团队在多模态领域长期耕耘，此次以<strong>BLENDer单模型</strong>，夺得高分<strong>「81.6，86.4，70.8」</strong>，占领榜首。据团队介绍，BLENDer研发时间不到3个月。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201130/1c35777c32704d0bbbb62fac3c90bb4c.jpeg" max-width="600" /></p>
+<h1>百度微软曾称霸的VCR榜单被微视刷新</h1>
+<p>传统的视觉问答（VQA）任务主要面向识别(recognition)层面的问题，例如，「一张图里有几个橘子？」</p>
+<p>而VCR的目标是将识别提升到认知(cognition)，例如「为什么人物4指向人物1？」，更进一步，计算机在第一步做出答案选择之后，还要在第二步解释选择这个答案的理由（rationale）。如下图分别展示了这两步的问题和答案选项。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201130/606d22826fca4a4cb07e2b7f2689d3ea.jpeg" max-width="600" /></p>
+<p>这就要求机器同时理解图像中的视觉内容以及问题对应的文本内容。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>目前，VCR榜单上的任务给出的场景图片有11万张，问题一共有29万个。而给出的问题，都需要对图片中的人物和场景进行一定程度的理解和推理，才能得到正确的答案。</p>
+<p>正因如此，VCR任务对机器的多模态理解和推导能力提出了相当大的挑战，是当前图像理解和多模态领域<strong>层次最深、门槛最高</strong>的任务之一。</p>
+<p>在此之前，包括谷歌、Facebook、微软、百度在内的很多企业和团队曾参与VCR竞赛，但以往最好效果都是基于多模型融合，包括百度（15个模型）、微软（10个模型）。腾讯微视的BLENDer单模型超越了此前榜单上的多模型提交结果，让这项技术有了更强的应用价值。</p>
+<h1>腾讯微视如何凭单模型霸榜？</h1>
+<p>团队参赛成员介绍到，BLENDer是在流行的视觉-语言Bert模型的基础上进行了改进。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201130/9ac00b19bac54f66a86554bfe6d1f1c3.jpeg" max-width="600" /></p>
+<h1>△BLENDer第一阶段算法模型</h1>
+<p>训练主要分为三个阶段：</p>
+<ul>
+<li>以NLP BERT为起点，采用150万张图像+文本，采用词语/物体掩膜等技术，进行预训练，使模型能够学习到图像和文本两个模态的语义信息和关联。</li>
+<li>在VCR数据集上进行类似第一阶段的预训练，使模型熟悉VCR的图像和语料，为第三阶段的特定任务训练做准备。</li>
+<li>针对最终的视觉常识推理任务，进行微调训练。</li>
+</ul>
+<p>为了同时在VCR榜单要求的三个任务上做到性能最优，腾讯微视在模型中额外加入了人物-物体的关系推理部分。该模型的速度和大小都很优秀：BLENDer模型在运算速度方面，每秒钟可以推理50-60张图片。而且，这一个模型的大小约为<strong>1.3G</strong>，只相当于其他团队多融合模型中的单个模型。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201130/42de3fb274d241de9041a8b3d0c9964c.jpeg" max-width="600" /></p>
+<p>在模型训练的过程中，该团队也解决了很多难题。</p>
+<p>例如，在第一和第二阶段的预训练，团队为每一个子任务设计了权重和训练参数能够自动调节的算法机制。让模型能够有效地从各个任务中学到有价值信息。</p>
+<p>为了让模型能够更加有的放矢地训练，团队设计了更有针对性的文本和图像的掩膜技术，提升了重要词汇和物体的预测精度。</p>
+<p>而只是预训练效果好，还不够。在最终的任务训练时，模型又出现了过拟合现象。为了解决过拟合的问题，团队用反向翻译技术对文本进行了扩增，还加入了对抗噪声进行训练。</p>
+<p>腾讯微视团队还透露，目前团队还在对模型进行优化，也是为了日后更好地将模型应用到业务中。而BLENDer模型，还不是该团队的最优模型。</p>
+<p>本次竞赛夺得榜首，得益于技术方案的创新、以及团队长期基于短视频业务场景所积累的海量跨模态数据。</p>
+<p>微视语义理解团队输出的多项技术，已经应用在包括审核、推荐、多媒体信息挖掘等多个微视业务场景中，此次的BLENDer方案赋予了机器更强大的理解和认知能力，将进一步推动AI技术在短视频业务中智能交互场景的落地。</p>
+<p>在更好地服务产品的同时，团队也计划向业界开源相关技术方案，助力多模态语义理解领域的技术研究和落地，进一步提高AI能力的通用性。</p>
