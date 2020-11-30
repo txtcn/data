@@ -10,9 +10,8 @@ http://www.ruanyifeng.com/blog/2020/11/weekly-issue-135.html	2105
 <p><a href="https://acrowdedspace.com/post/116567620957/vertical-or-horizontal">一个美国风险投资家</a>解释他如何选择风投项目，我觉得很新奇。</p>
 <p>他画了一个坐标系，然后把项目的行业放在里面。</p>
 <p><img src="https://www.wangbase.com/blogimg/asset/202011/bg2020111409.jpg" alt="" title="" /></p>
-<p>上图的坐标系，竖轴是交易规模，位置越向上，表示交易金额越高；横轴是交易频率，位置越向右，表示交易次数越多。
-这里可以不用 return，因为没有用到累积变量。而且，每一轮 async 函数不管有没有 return，总是返回一个 Promise 对象。
-根据这两个坐标轴，所有行业可以分成四类。</p>
+<p>上图的坐标系，竖轴是交易规模，位置越向上，表示交易金额越高；横轴是交易频率，位置越向右，表示交易次数越多。</p>
+<p>根据这两个坐标轴，所有行业可以分成四类。</p>
 <blockquote>
 <ul>
 <li>交易价格高、交易频率低的行业（汽车、房地产、婚纱摄影、高端体检）</li>
