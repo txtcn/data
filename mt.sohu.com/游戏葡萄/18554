@@ -1,0 +1,624 @@
+➜全球第一款UE4回合手游背后，是一支死磕品类十几年的团队
+http://www.sohu.com/a/425850786_204824	57540
+<p>
+<table>
+<tbody>
+<tr>
+<td><span>《梦想新大陆》或许打响了回合制品类升级的第一枪。</span></td>
+</tr>
+</tbody>
+</table></p>
+<p><span style="font-size: 16px;">文/安德鲁</span></p>
+<p><span style="font-size: 16px;">“谁说回合制就一定得是仙侠，一定是画面粗糙、玩法过时的呢？”</span></p>
+<p><span style="font-size: 16px;">今年腾讯的新品发布会上，祖龙娱乐第一次公布了用虚幻引擎4开发的回合制MMO《梦想新大陆》。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/b657d805e31c474eb7678bc5d8214610.jpeg" /></p>
+<p><span style="font-size: 16px;">国内厂商中，祖龙一直以技术优势见长，他们在2016~2017年</span>转型虚幻引擎 <span style="font-size: 16px;">（UE）</span><span style="font-size: 16px;">，建立起了一套基于UE4的工具链、美术制作方式和技术标准，将应用到主流品类的，在UE4支持下，游戏画面等外在表现，成了产品明显的加分项。</span></p>
+<p><span style="font-size: 16px;">《梦想新大陆》公布后，最先得到的关注也集中在这一侧。不过也有很多玩家，对游戏选择了回合制玩法表示不解。</span><span style="font-size: 16px;">拿UE4来做一款回合制，会不会有点“大材小用”？或是“画面这么好的游戏，竟然是回合制？”</span><span style="font-size: 16px;">换句话说，不少玩家眼里的回合制，多少都和品类老旧、画面过时这样的印象挂钩。</span></p>
+<p><span style="font-size: 16px;">于是也就有了文章开头执行制作人孙义翔的那句灵魂拷问。</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201020/0515b357ad9a4bf98ad176af939fa6e3.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: center;"><span style="font-size: 16px;">游戏实际画面展示</span></p>
+<p><span style="font-size: 16px;">的确，《梦想新大陆》是国内市面上第一款用UE4研发的回合手游，放在全球范围内应该也是首款。可是，回合制已经有较长一段时间没有强力新品出现了，</span><span style="font-size: 16px;">榜</span><span style="font-size: 16px;">单头部始终是大家熟悉的几个老IP，看起来品类已然固化，市场风向、玩家的口味也已经转变。</span></p>
+<p><span style="font-size: 16px;">祖龙研发、腾讯发行的组合，用上UE4的技术配置，有这样一个豪华的班底，项目组为什么要逆着市场潮流，选择一个看上去前景不那么明朗的方向？甚至还要自建IP？</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201020/6a0ed03b620e487fa06c0b741ebf8a3e.jpeg" /></p>
+<p><span style="font-size: 16px;">赶在游戏第二次测试——也是第一次面向大众开测的节点，我们采访了制作人孙义翔和主策兰小皮，他们向我们复盘了一个用UE4死磕回合制的过程。</span></p>
+<p style="text-align: center;"><span style="font-size: 16px;"><strong><span style="font-size: 16px;">【“逆流而上做”回合制，还要自建IP】</span></strong></span></p>
+<p><span style="font-size: 16px;">“老实说，当时看来做回合制的确有风险，我们也不是没考虑过做卡牌。”孙义翔说。</span></p>
+<p><span style="font-size: 16px;">《梦想新大陆》之前，孙义翔带领的团队已经做了十几年的回合制游戏，先后做过《梦幻诛仙》等几款品类市场里很成功的回合制产品。”</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/d91082762ae5469297d6b4eac544e29f.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;"></span><span style="font-size: 16px;">游戏实际画面展</span><span style="font-size: 16px;">示</span><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">在他看来，当前市面上的回合制品类有不少亟待优化的地方：比如</span><span style="font-size: 16px;">题材几乎是清一色的仙侠、武侠；游戏画面表现往往都相对粗糙；再加上玩法框架一直是同一套模式</span><span style="font-size: 16px;">，长期以来玩家审美疲劳。这些因素的叠加，导致近几年品类市场，缺少能满足新一代玩家的有力产品，传统玩家也对典型的回合制游戏意兴阑珊。</span></p>
+<p><span style="font-size: 16px;">但这同样也是市场的缺口</span><span style="font-size: 16px;">。</span></p>
+<p><span style="font-size: 16px;">《梦想新大陆》立项是在2018年前后，MOBA、FPS等竞技性玩法，早已占据了端游、手游相当一部分的市场份额。传统回合制元素，要么是更多见于卡牌，要么就像前面说到的那样，在新生代玩家眼里成了落后的代名词。</span></p>
+<p><span style="font-size: 16px;">这也是孙义翔和团队不愿看到的局面。几经纠结后，团队最终还是决定做自己最擅长也最热爱的品类。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201020/295ea306057349fcbf89cae5fae44398.jpeg" /></p>
+<p><span style="font-size: 16px;">除了确立玩法品类，接下来IP又成了一个至关重要的抉择。孙义翔坦言，游戏并没有从一开始就敲定要走原创IP这条路。不过在看了一些IP、讨论了一些设计改编方向之后，团队内部始终觉得，</span><span style="font-size: 16px;">使用既有IP会很受限</span><span style="font-size: 16px;">。</span></p>
+<p><span style="font-size: 16px;">因为《梦想新大陆》的核心用户画像，典型的回合制产品稍有不同，</span><span style="font-size: 16px;">游戏划定的人群更偏向大众</span><span style="font-size: 16px;">，主要由过去的回合制流失用户和当前新生代玩家组成。这就决定了，</span><span style="font-size: 16px;">游戏要和当前市面上的同类做出较大的区分，才能改变人们固有的印象</span><span style="font-size: 16px;">。</span></p>
+<p><span style="font-size: 16px;">此外，团队此前“做成”的产品几乎全是仙侠，孙义翔也想挑战一次非仙侠题材的回合游戏。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/3967b8a7a2a54a54959a3e6542aad83f.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;"></span><span style="font-size: 16px;">游戏实际画面展</span><span style="font-size: 16px;">示</span><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">“</span><span style="font-size: 16px;">我特别想去做一个不是仙侠的产品</span><span style="font-size: 16px;">，让玩过很多仙侠的玩家眼前一亮，发现回合制里出现了一个世界观截然不同的游戏。</span></p>
+<p><span style="font-size: 16px;">当时公司正在开发《龙族幻想》，看到UE4在游戏里实现的效果，我们非常心动。因为过去做回合基本都是2D的。我们想，如果能达到这种效果，画面上会是巨大的提升。我们也想让这些出现在自己的游戏里。</span></p>
+<p><span style="font-size: 16px;">我们是凭借这些想法给自己打气的。所以虽然做回合算是逆流而上，但是通过世界观设计、玩法创新，再加上UE4的效果，我们相信自己可以做出一款成功的回合制产品。”</span></p>
+<p><span style="font-size: 16px;">于是，团队一番纠结、反复推敲后，选择了“七大古文明之间，机械文明与魔法文明间的冲突”作为核心世界观，构建了《梦想新大陆》的背景故事。</span></p>
+<p><span style="font-size: 16px;">“逆流而上”坚持做回合、自建IP，还要做市面上没有的题材和玩法。就这样，从一开始，团队就给《梦想新大陆》项目加上了额外的难度系数。</span></p>
+<p style="text-align: center;"><span style="font-size: 16px;"><strong><span style="font-size: 16px;">【颠覆创新不能急，一步一步慢慢来】</span></strong></span></p>
+<p><span style="font-size: 16px;">《梦想新大陆》想要做成“和市面上的回合制都不一样”的游戏，但具体是怎么不一样？</span></p>
+<p><span style="font-size: 16px;">其实如果你进到游戏中玩上一小会儿，除了画质上有明显的提升，前期能看到一些细节代入感上的差异，相比以往的回合制手游，《梦想新大陆》看起来似乎没什么特别明显的差异。好像更多的新内容都还留在后面。</span></p>
+<p><span style="font-size: 16px;">起初《梦想新大陆》并不是现在的样子。项目组做了不少激进的、颠覆性的尝试。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/87ad2f7b2cf7403e8d807b003d0e985a.png" /></p>
+<p><span style="font-size: 16px;">比如战斗中，重要技能有复杂且华丽的演出效果，来凸显打击感——这是孙义翔看来传统回合制过分轻视的地方。当然，单局战斗时间也由此拉长。他们也尝试过设计“局内自由移动”的回合制战斗。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/7c443c330fab4995adcad5e34d60da0c.jpeg" /></p>
+<p style="text-align: center;"><img src="//p9.itc.cn/q_70/images03/20201020/4da7c44794b646f3af3cd6c81e8a221f.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">一些大招性质的技能在施放时会有特写</span></p>
+<p><span style="font-size: 16px;">再如地图机制上，《梦想新大陆》做了一整套结合地理要素的采集系统：资源采集没有固定刷新点，完全融入到场景中。玩家可以用采集的到的材料来生产装备、道具，在彼此之间流通。同时采集还要依据地理环境</span><span style="font-size: 16px;">（比如海滩、森林）</span><span style="font-size: 16px;">和天气变化而衍生出众多的变数。</span></p>
+<p><span style="font-size: 16px;">装备系统上，受《怪物猎人》《暗黑破坏神》等游戏的启发，团队试着加入了套装技能+特效珠子一类的组合，让可以搭配出数十种主流的build。</span></p>
+<p><span style="font-size: 16px;">相信只看描述你也能感觉到——颠覆设计的步子迈得有点大。内部测试、讨论过几轮后，大家觉得，实装的内容可能不得不往回收缩。</span></p>
+<p><span style="font-size: 16px;">“如果说要做彻底的创新，其实是我们擅长的，也是策划最愿意做的事。从师门系统、日常活动到战斗机制，我们能改得和传统回合制完全不一样。腾讯也支持我们做‘翻天覆地’的改动。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/8115f32dba5f480a8590772026ecf030.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;"></span><span style="font-size: 16px;">游戏实际画面展</span><span style="font-size: 16px;">示</span><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">我们有过很多版方案，其中有些方案都已经落实到游戏内，全都做完了。但后来经过不少内部讨论之后，我们又一一推翻了。”</span></p>
+<p><span style="font-size: 16px;">推翻的原因在于，连团队自己也觉得，</span><span style="font-size: 16px;">一些设定比较颠覆，大众玩家接受起来可能需要时间</span><span style="font-size: 16px;"><strong>。</strong>此前就曾有同类游戏在战斗机制上做了大幅度的改动，加入了从未有过的创新，但市场反馈却不甚理想。这让团队有所顾虑。 </span></p>
+<p><span style="font-size: 16px;">当然，《梦想新大陆》并没有因此变成一款传统回合制。团队去掉了一些过于激进的创新，并且</span><span style="font-size: 16px;">尽可能地把一些不常规的设计后置了，来延长上手阶段、提升前期平滑度</span><span style="font-size: 16px;">。孙义翔也由此也敲定了“</span><span style="font-size: 16px;">看着差不多，但玩下去很不一样”的大体原则。一步一步引导玩家进入到《梦想新大陆》设定的新元素中</span><span style="font-size: 16px;">。</span></p>
+<p><span style="font-size: 16px;">随着游戏进程推进下去，玩家还是会发现很多新鲜的设定。</span></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201020/bee83aad581c4e40a0dbe326735effeb.png" /></p>
+<p><span style="font-size: 16px;">比如“纵横战场”。传统回合制中，不论是PVE还是PVP，玩家-敌人的方向、视角都是固定的。无非再有一些类似观战/旁观的位置《梦想新大陆》中纵横战场的设定，让玩家可以从多个方向、视角来审视观察战场，并且从4个不同的方向发起进攻。这让战斗体验更有临场感，也给中后期的战斗增加了策略维度。</span></p>
+<p><span style="font-size: 16px;">再如，团队依然很重视战斗中的技能特效，和由此表现出的打击感。调整后的对应设置，只是把时间过长的技能演出效果缩短了。</span></p>
+<p><span style="font-size: 16px;">同时，天气系统也是《梦想新大陆》一个主打的策略核心，每个职业的技能会受到相应天气环境的影响，游戏里不同天气也会影响到属性的相克</span><span style="font-size: 16px;">（比如雷电系技能在雨天的增强）</span><span style="font-size: 16px;">。</span></p>
+<p><span style="font-size: 16px;">这些内容，既保留了传统回合制玩家对的基本认知，也尽可能加入了新的玩法元素，照顾到了新一代对回合制有不同期待的玩家。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/e546c6c1fc43472e8e480de2c8d993a4.png" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;"></span><span style="font-size: 16px;">游戏实际画面展示</span></p>
+<p><span style="font-size: 16px;">在这里颠覆一些，还是稍微保守一点？这是《梦想新大陆》项目组日常工作中一直要面对的抉择。但团队并未因此急躁，始终秉持着“慢慢来”的原则，反复磨着每一个设计细节。</span></p>
+<p style="text-align: center;"><strong><span style="font-size: 16px;">【无数次推翻重建，只为了磨出一个更好的回合制】</span></strong></p>
+<p><span style="font-size: 16px;">“反复”其实也是横亘在《梦想新大陆》整体研发进度上的一大障碍。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201020/bbfc3c0faa1e4b14a79e139edfde2ce3.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">游戏实际画面展示</span></p>
+<p><span style="font-size: 16px;">这不单纯是前面谈到的，玩法方案上的纠结取舍。还有很多困难，来自那些开发组在立项之初就给自己加码的难题，这让他们相当于选择了一条几乎最难走的回合研制发路线。比如坚持要原创IP、不做仙侠，带来的取材“困境”。选择用虚幻引擎，伴随着一系列优化挑战等等。</span></p>
+<p><span style="font-size: 16px;">回合制产品里， <strong>市面上基本没有非仙侠类题材，相关的文本撰写缺少参考，这就意味着世界观设定等需要反复推敲</strong>。《梦想新大陆》早期版本的背景故事、门派介绍，一度过于热血武侠风。反复修改了几个版本后才达到理想的程度。 </span></p>
+<p><span style="font-size: 16px;">类似的困难也出现在UE4的引擎调教、美术设计上。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/96aae0b9b7c446ef989d9636738ef47c.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;"></span><span style="font-size: 16px;">游戏实际画面展</span><span style="font-size: 16px;">示</span><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">“实在是太难了。”讲到硬件适配，孙义翔比谈其他难点的时候都要更激动一些。“不是说没想到用UE4做回合有这些困难。但是，</span><span style="font-size: 16px;">实现高画质就意味着发热、费电，把功耗降下来效果就很难看，都想做就得告别低端机。这几乎是个不可能三角</span><span style="font-size: 16px;">。”</span></p>
+<p><span style="font-size: 16px;">用UE4很难的另一点在于，决定用UE4，也让开发团队“心气儿提上来了”，想要去突破更多上限。</span><span style="font-size: 16px;">技术上更多的可能性起到了反哺策划的作用</span><span style="font-size: 16px;">。</span></p>
+<p><span style="font-size: 16px;">有了更逼真的天气效果，就不该只是展示出来，而是要试着把它和游戏性联动起来。</span></p>
+<p><span style="font-size: 16px;">能够做出效果更好的海底，也不应该只当成一个场景，而是借此把坐骑拆分成了天空、陆地和海洋三系，并且设置了需要海里骑乘坐骑，分成上下层的战斗。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/d0689eefdca04a878a1c9c6114e0896c.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">在海底，角色移动的方式会变成游泳</span></p>
+<p><span style="font-size: 16px;">像这样的额外投入，贯穿整个研发历程。再加上一些玩法系统不时也会有推翻重来的情况，有时候内部隔一段时间就会大量内容需要返工。</span></p>
+<p><span style="font-size: 16px;">“没什么好的办法，只能是一遍遍地磨。磨到满意为止。”孙义翔说。</span></p>
+<p style="text-align: center;"><strong><span style="font-size: 16px;">【初见成效】</span></strong></p>
+<p><span style="font-size: 16px;">“我们团队成员都是十几年、二十几年的回合制玩家，如果是自己不满意的产品，绝对不会拿出来给玩家。”</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201020/e5d60ecc1b744288a3b7b7b0345a37c3.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;"></span><span style="font-size: 16px;">游戏实际画面展</span><span style="font-size: 16px;">示</span><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">今年CJ上，孙义翔接受群访时也向外界表达过态度，这听起来可能会有一点公关辞令，但结合团队的数次推翻重建来看，他显然没有在这件事上说空话。团队坚持了下来，明确了颠覆与保守之间的界限，摸清了UE做回合制的流程</span><span style="font-size: 16px;">。</span></p>
+<p><span style="font-size: 16px;">孙义翔表示，</span><span style="font-size: 16px;">除了坚持做回合品类的热情，用实际产品回馈一直陪伴他们的回合制玩家，也是团队一直以来的一大动力</span><span style="font-size: 16px;">。</span></p>
+<p><span style="font-size: 16px;">历经多次打破重建、内部调整，也经历了两次玩家测试之后，团队“逆流而上”的选择得到了积极的反馈。产品正朝着乐观的方向发展。</span></p>
+<p><span style="font-size: 16px;">TapTap的留言当中，能看到不止一个玩家称赞项目组“有勇气”，“在2020年敢做一款回合制手游”。</span></p>
+<p><span style="font-size: 16px;">的确，浏览应用商店的榜单，下载榜、畅销榜都还是几年前的那些老面孔，提起回合制，大家最先想到的也是这些熟悉的图标、游戏名。</span></p>
+<p><span style="font-size: 16px;">而这样的背景下，《梦想新大陆》的团队提出了一些不太一样的理念，选择了一个看上去与市场潮流相反的方向立项研发，表示要用UE4做一款不一样的产品，还要从零开始自建IP。不得不说，这都是很大胆的决定。</span></p>
+<p><span style="font-size: 16px;">就像我在前面提到的那样，这其中每一个决定，都给项目添加了额外的难度系数，也增加了一层风险。如今经过多次推翻、改版的游戏终于开测了。此次测试参与的玩家规模上万，TapTap评分9.1分。从现阶段的表现来看，《梦想新大陆》团队“逆流而上”的选择得到了玩家的认可。</span></p>
+<p><span style="font-size: 16px;">对于回合制手游，这个许久没有明显变化的品类来说，这是一个让人乐观的开端。有人不满足于现状，想要去做颠覆性的尝试，对品类发展来说显然是正向的推动。带着这种目标产出的游戏，也有机会成为带领品类升级的先行者。</span></p>
+➜重磅！未成年人保护法修订，游戏行业如何合规？
+http://www.sohu.com/a/425855601_204824	57540
+<p>
+<table>
+<tbody>
+<tr>
+<td><span style="font-size: 16px;">本文首发于诺诚游戏法，游戏葡萄已获转载授权。</span></td>
+</tr>
+</tbody>
+</table></p>
+<p><span style="font-size: 16px;">10月17日，未成年人保护法修订案经十三届全国人大常委会第二十二次会议表决通过，该法自2021年6月1日起施行。</span><span style="font-size: 16px;">未成年人保护法是未成年人保护领域的综合性法律，新修订的未成年人保护法增加、完善多项规定，着力解决社会关注的涉未成年人侵害问题，包括监护人监护不力、学生欺凌、性侵害未成年人、未成年人沉迷网络等问题。</span><span style="font-size: 16px;">此次修订案充分吸纳各方意见建议，在强化法律责任、加强未成年人权益保护等方面亮点颇多。</span></p>
+<p><span style="font-size: 16px;">此次未成年人保护法的新修订将对网络游戏产业带来哪些变化？网游企业应着重哪些方面的未成年保护合规？</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/b7cbf9cbdeca40f38ce1764e49f40ed9.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201020/cbfd61d7808e4222814741367123f4e0.png" /></p>
+<p><span style="font-size: 16px;"><strong>未成年人数据处理</strong></span></p>
+<p><span style="font-size: 16px;">第七十二条 信息处理者通过网络处理未成年人个人信息的，应当遵循合法、</span><span style="font-size: 16px;">正当和必要</span><span style="font-size: 16px;">的原则。</span><span style="font-size: 16px;">处理不满十四周岁未成年人个人信息的，应当征得未成年人的父母或者其他监护人同意</span><span style="font-size: 16px;">，但法律、行政法规另有规定的除外。</span><span style="font-size: 16px;">未成年人、父母或者其他监护人要求信息处理者更正、删除未成年人个人信息的，信息处理者应当及时采取措施予以更正、删除，但法律、行政法规另有规定的除外。</span></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong><span style="font-size: 16px;">诺诚合规建议：</span></strong></p>
+<p><span style="font-size: 16px;">游戏公司应当设置合规的隐私政策并针对未满十四岁的儿童制作《儿童隐私保护声明》。有需求的游戏企业，可扫描本文最末二维码添加本律师团队微信索取。</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201020/ce97c7f29cd6493ea5d0de7503eab812.png" /></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">实名认证及防沉迷</span></strong></span></p>
+<p><span style="font-size: 16px;">第七十四条 网络产品和服务提供者不得向未成年人提供诱导其沉迷的产品和服务。</span><span style="font-size: 16px;">网络游戏、网络直播、网络音视频、网络社交等网络服务提供者应当针对未成年人使用其服务设置相应的时间管理、权限管理、消费管理等功能</span><span style="font-size: 16px;">。</span><span style="font-size: 16px;">以未成年人为服务对象的在线教育网络产品和服务，不得插入网络游戏链接，不得推送广告等与教学无关的信息。</span></p>
+<p><span style="font-size: 16px;">第七十五条 网络游戏经依法审批后方可运营。</span><span style="font-size: 16px;">国家建立统一的未成年人网络游戏电子身份认证系统。网络游戏服务提供者应当要求未成年人以真实身份信息注册并登录网络游戏</span><span style="font-size: 16px;">。 网络游戏服务提供者应当按照国家有关规定和标准，</span><span style="font-size: 16px;">对游戏产品进行分类，作出适龄提示，并采取技术措施，不得让未成年人接触不适宜的游戏或者游戏功能</span><span style="font-size: 16px;">。网络游戏服务提供者</span><span style="font-size: 16px;">不得在每日二十二时至次日八时向未成年人提供网络游戏服务。</span></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">诺诚合规建议：</span></strong></span></p>
+<p><span style="font-size: 16px;">1. 落实强制实名认证制度，在游戏注册登录场景即加入实名认证。</span></p>
+<p><span style="font-size: 16px;">2. 落实防沉迷制度，不得在每日二十二时至次日八时向未成年人提供网络游戏服务。</span></p>
+<p><span style="font-size: 16px;">3. 要求设置防沉迷功能，在游戏中可设置未成年人的时间管理、权限管理、消费管理等功能，参考腾讯的家长保护系统。</span></p>
+<p><span style="font-size: 16px;">3. 适龄提示，可在游戏登录窗口以及用户协议告知，可参考王者荣耀的适龄提示。</span></p>
+<p><span style="font-size: 16px;">4. 不得通过在线教育网络产品（如Vipkid）买量。不得在类似产品中插入网络游戏链接。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/6d50fb269a664d228d1b15487fce9ad5.png" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">王者荣耀的适龄提示：适合年满16周岁以上的用户</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201020/d50d054efd4948e5a48ed09b349b1cd4.png" /></p>
+<p><strong><span style="font-size: 16px;">网络直播</span></strong></p>
+<p><span style="font-size: 16px;">第七十六条 网络直播服务提供者</span><span style="font-size: 16px;">不得为未满十六周岁的未成年人提供网络直播发布者账号注册服务</span><span style="font-size: 16px;">；为年满十六周岁的未成年人提供网络直播发布者账号注册服务时，应当对其身份信息进行认证，并征得其父母或者其他监护人同意。</span></p>
+<p><strong><span style="font-size: 16px;">诺诚合规建议：</span></strong></p>
+<p><span><span style="font-size: 16px;">1. 未满十六周岁的儿童，不得成为游戏主播。</span><strong><span style="font-size: 16px;"></span></strong></span></p>
+<p><span><span style="font-size: 16px;">2. 满十六周岁的未成年人，成为游戏主播应当经过父母或者其他监护人同意。</span><strong><span style="font-size: 16px;"></span></strong></span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201020/23fb04fd312e402fa3cdae3b345da3c5.jpeg" /></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201020/1a75183dd37b4942872a45afc56859eb.png" /></p>
+<p style="text-align: center;"><strong><span style="font-size: 16px;">网络欺凌</span></strong></p>
+<p><span style="font-size: 16px;">第七十七条 任何组织或者个人不得通过网络以文字、图片、音视频等形式，对未成年人实施侮辱、诽谤、威胁或者恶意损害形象等网络欺凌行为。</span></p>
+<p><span style="font-size: 16px;">遭受网络欺凌的未成年人及其父母或者其他监护人有权通知网络服务提供者采取删除、屏蔽、断开链接等措施。</span><span style="font-size: 16px;">网络服务提供者接到通知后，应当及时采取必要的措施制止网络欺凌行为，防止信息扩散</span><strong><span style="font-size: 16px;">。</span></strong></p>
+<p><span style="font-size: 16px;">第七十八条　网络产品和服务提供者应当建立便捷、合理、有效的投诉和举报渠道，公开投诉、举报方式等信息，及时受理并处理涉及未成年人的投诉、举报。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/9e3f67d7f39a4642a94a3bda4363479b.png" /></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/7fdbda3b92344f33968973946e34fa86.png" /></p>
+<p style="text-align: center;"><strong><span style="font-size: 16px;">网络服务提供者的其他义务</span></strong></p>
+<p><span style="font-size: 16px;">第八十条 网络服务提供者发现用户发布、传播可能影响未成年人身心健康的信息且未作显着提示的，</span><span style="font-size: 16px;">应当作出提示或者通知用户予以提示；未作出提示的，不得传输相关信息。</span></p>
+<p><span style="font-size: 16px;">网络服务提供者发现用户发布、传播含有危害未成年人身心健康内容的信息的，</span><span style="font-size: 16px;">应当立即停止传输相关信息，采取删除、屏蔽、断开链接等处置措施，保存有关记录，并向网信、公安等部门报告。</span></p>
+<p><span style="font-size: 16px;">网络服务提供者发现用户利用其网络服务对未成年人实施违法犯罪行为的，</span><span style="font-size: 16px;">应当立即停止向该用户提供网络服务，保存有关记录，并向公安机关报告。</span><strong><span style="font-size: 16px;"></span></strong></p>
+<p style="text-align: center;"><span style="font-size: 16px;"><strong><span style="font-size: 16px;">诺诚合规建议：</span></strong></span></p>
+<p><span style="font-size: 16px;">1.游戏公司应该建立健全的内容监控机制，对游戏内容尤其是用户发布内容进行审核。</span></p>
+<p><span style="font-size: 16px;">2、对于发布、传播含有危害未成年人身心健康内容的信息的，或者涉嫌犯罪的，应该及时删除、屏蔽、断开链接，保存有关记录，并向网信、公安等部门报告。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/8327ffafa6704f30a8009e22f1743217.png" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;"><strong><span style="font-size: 16px;">违法后果</span></strong></span></p>
+<p><span style="font-size: 16px;">第一百二十七条　信息处理者违反本法第七十二条规定，或者网络产品和服务提供者违反本法第七十三条、第七十四条、第七十五条、第七十六条、第七十七条、第八十条规定的，</span><span style="font-size: 16px;">由公安、网信、电信、新闻出版、广播电视、文化和旅游等有关部门按照职责分工责令改正，给予警告，没收违法所得，违法所得一百万元以上的，并处违法所得一倍以上十倍以下罚款，没有违法所得或者违法所得不足一百万元的，并处十万元以上一百万元以下罚款，对直接负责的主管人员和其他责任人员处一万元以上十万元以下罚款；拒不改正或者情节严重的，并可以责令暂停相关业务、停业整顿、关闭网站、吊销营业执照或者吊销相关许可证。</span></p>
+<p style="text-align: center;"><strong><span style="font-size: 16px;">违法后果解读：</span></strong></p>
+<p><span style="font-size: 16px;">网络游戏企业违反未成年保护法的，可能面临游戏下架、吊销文网文/ICP/营业执照、游戏流水1-10倍的罚款及公司负责人个人1-10万罚款等法律后果。</span></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">写在最后</span></span></p>
+<p><span style="font-size: 16px;">随着社会的高速发展和未成年人触网年龄降低等社会现实的发展，对于未成年人提供网络服务也应更注重未成年人的保护。随着我国对未成年人的保护更深入及更细致，本次未成年人保护法的修订单独辟出网络保护板块，对各方保护未成年人上网行为做出了更明确的要求，网络游戏厂商应根据修订后的未成年人保护法做好未成年人保护工作，为我国未成年人上网撑起“保护伞”。</span></p>
+➜通过自学，这个女孩创造出了《Hades》《堡垒》《晶体管》的视觉宇宙
+http://www.sohu.com/a/425866122_204824	57540
+<p>
+<table>
+<tbody>
+<tr>
+<td><span style="font-size: 16px;">本文章首发于公众号“游点艺术”，原作者猫腩Monet，游戏葡萄已获转载授权。</span></td>
+</tr>
+</tbody>
+</table></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201020/cbca390e65174910ba6c864a79b55bca.png" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">Jen Zee</span></p>
+<p style="text-align: center;"><span style="font-size: 16px;">Supergiant Games艺术总监</span></p>
+<p style="text-align: center;"><span style="font-size: 16px;">https://www.deviantart.com/jenzee</span></p>
+<p><span style="font-size: 16px;">我看了很多对于《Hades》的评价，在游戏玩法和系统之外，出现频率最高的词是美术、配乐、配音。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/c0f15536a292457d8b9d0a9f2af33bed.gif" /></p>
+<p><span style="font-size: 16px;">经过11年的发展，Supergiant开发的游戏已经呈现出一些标志性的特征，其中最重要的便是其独特的视觉风格。</span></p>
+<p><span style="font-size: 16px;">他们曾这样形容自己：“正因这种视觉风格的重要性，所以不是任何一个艺术家都能轻松的在这里工作，他们不仅要保留我们过去作品的风格和感觉，而且还需要帮助我们创造出比以往更有活力、想象力和梦幻的世界。”</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201020/f63f92188a39498d93cf45de2ac4f66e.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: center;"><span style="font-size: 16px;">Supergiant10周年Jen Zee绘制的贺图</span></p>
+<p><span style="font-size: 16px;">从Supergiant开发的第一款《堡垒》到现在的《Hades》，能看到的海外媒体对这四款游戏的褒奖无不是首先对艺术风格发出赞叹。对大多数玩家而言，在不了解一款游戏的内核前，美术的确是最重要的初映象。</span></p>
+<p><span style="font-size: 16px;">在上篇文章</span>《Hades》美术全览，这区区20人的团队开发的游戏个个好评 - idartist <span style="font-size: 16px;">中，我提到了Supergiant Games的艺术总监Jen Zee，正是她缔造出了Supergiant所拥有的这一视觉宝藏。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/554c5a3402f246a4919e9fc48901364a.jpeg" /></p>
+<p><span style="font-size: 16px;">Jen Zee在西雅图长大，从小就非常喜欢玩游戏，《合金装备》、《恶魔城月下夜想曲》、《最终幻想战略版》是她的最爱。而她也曾表示《罪恶装备》的艺术家石渡太辅是自己最喜欢的游戏开发者之一，似乎也能从作品中感受到一丝《罪恶装备》的影响。</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201020/8a3c52bcaf814336b6385a68aea45a45.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">《罪恶装备》</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/41d327a1b4e14be9a386e84ecbfefbb8.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">《哈迪斯》</span></p>
+<p><span style="font-size: 16px;">和大部分游戏公司艺术总监的履历不同，Jen Zee并非科班出身而是自学成才，她2007年毕业于华盛顿大学信息专业，而绘画却是她从小的爱好。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/e83e0a6c77d64259afddc82a6be94156.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">Jen Zee在1996年涂鸦的“角色设计”</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/6c0eeafa585044eeac58d8041290af5b.png" /></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201020/fdccda1f996e4ceea3aac7196c0479b2.png" /></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201020/2f79ab2089ab4a01bd1f267c1db026ac.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">©Jen Zee 日常作品</span></p>
+<p><span style="font-size: 16px;">因为一些原因，Zee于2010年加入了创立初期的Supergiant Games，在这里遇到了志同道合的同事们</span><span style="font-size: 16px;">（资深游戏玩家）</span><span style="font-size: 16px;">，并成为了其第一款游戏《堡垒》的唯一2D美术师，负责了所有的原画、UI等工作。</span></p>
+<p><span style="font-size: 16px;">精美的手绘、丰富而鲜艳的色彩不仅没有让玩家视觉疲劳，反而每一帧都像幅画，给了大家耳目一新的感觉。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/88450a35307f44a6ae4f8481ce2933c1.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/10db9c08141b484ca5dd48643fcfaee5.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/7b06fb1a77ba42ac8ab7075eb53626fc.png" /></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/727584bfbf5842bd9a5b062fa62246fc.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201020/38d900ab90634317a941337b0ed4ba58.png" /></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/fc3223f2bc7d4754b52df0020bccb3b2.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">《堡垒》原画</span></p>
+<p><span style="font-size: 16px;">没有专业理论的束缚，Zee在艺术创作上天马行空，无拘无束，极具辨识度的画风也为Supergiant独树一帜的艺术世界奠定了基础。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/a9a89bad52b94d8480d7395b5c0acb22.jpeg" /></p>
+<p><span style="font-size: 16px;">加入Supergiant前，Jen Zee曾在Gaia Interactive工作了三年，做过概念设计和Flash编程，参与旗下网页游戏《zOMG！》和《街头霸王3：三度冲击 在线版》，并为Fantasy Flight Games做过兼职。</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201020/5f87ad55ea964812bc442d4e399e1ca6.png" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">zOMG！</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201020/ae08fe743dc64e34a409f27b520e8896.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">街头霸王3：三度冲击主视觉（非Jen Zee绘制）</span></p>
+<p><span style="font-size: 16px;">在《堡垒》成功发行之后，Zee还兼职参与过《Gone Home》和《骷髅女孩》，都是大家比较熟悉的游戏。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/800a5bb08b924e878b3d1e4b19b3906d.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/6070c29232004670876b69fa0e3b3353.jpeg" /></p>
+<p><span style="font-size: 16px;">2014年《晶体管》发行，可以看出它和《堡垒》的一些共同点，采用等距视角的方式和霓虹般的色彩依然吸引人，此时团队已经多了一名艺术家。 </span></p>
+<p><span style="font-size: 16px;">Zee很享受在艺术中创造出一个强大的、令人喜爱的主角的挑战，在创作Supergiant Games世界的特色时也是如此。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/9090f3a25217484ab03d99077d3708c1.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/e0b026dd7e764a05b362b8012ffb5993.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/dce9086de45341338ccc56d3acb4df07.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">《晶体管》原画</span></p>
+<p><span style="font-size: 16px;">Zee对自己所创作的《晶体管》女主角Red非常自豪：她很强大，很有吸引力，但不是传统电子游戏文化中普遍存在的那种女性性感角色。</span></p>
+<p><span style="font-size: 16px;">“ </span></p>
+<p><span style="font-size: 20px;">“</span></p>
+<p><span><span style="font-size: 16px;">我个人很喜欢创作女性角色，因为我发现有更多的方法可以让一个女人对各种取向的男人和女人都有吸引力。</span></span></p>
+<p><span style="font-size: 20px;">”</span></p>
+<p><span style="font-size: 16px;">Zee在接受Nerdy But Flirty创始人Sarah The Rebel采访时谈到她在《晶体管》中的工作时表示。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/b199f1e1eede49f1b7266a81df6271bd.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/06620fd85946466c92c6ad5acafc66ec.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/501ccbf418d84c5fa66a0cc53e2c43ca.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">《晶体管》原画</span></p>
+<p><span style="font-size: 16px;">虽然没有明确这种方法，但这对所有媒介的艺术家来说都是一门学问：绘画、写作、电影制作等等。</span></p>
+<p><span style="font-size: 16px;">"我发现很难克制对色彩的热爱"，Zee告诉Nerdy-but-Flirty。"但我绝对相信柔和的色调也有其作用，并产生一种情绪，可以为一个更个性化，更严肃的故事服务。"</span></p>
+<p><span style="font-size: 16px;">她的创作确实与众不同，但很大程度可以看出，强烈的漫画影响是非常明显的，以及她丰富的绘画技巧和戏剧性的打光给了作品一种引人入胜的电影感。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/c20648533efd471fb52cc5deecff2e9e.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/9c946837effd4b0d84c8ffbaf5240519.png" /></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201020/d5c329f81ffa402d88f29061b9005165.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/32ac409a383049aa9df5b08f266f49e4.png" /></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/430343158e1d470dafc4f8afce80960c.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201020/b0db938407ce40b2ae9ed34fd34ba4c6.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">《晶体管》原画</span></p>
+<p><span style="font-size: 16px;">为了做出自己想要的那种赛博朋克感而又有独特光芒的《晶体管》，Zee从很多地方找到了创作灵感：</span></p>
+<p><span style="font-size: 20px;">“</span></p>
+<p><span style="font-size: 16px;">包括以用鲜明的色彩描绘女性人物着称的着名画家John William Waterhouse的作品，他那种柔和的色调与活跃的氛围带给Zee巨大的灵感；</span></p>
+<p><span style="font-size: 16px;">奥地利知名象征主义画家Gustav Klimt的作品也是如此，这位艺术家有趣的形状设计和对戏剧性表现的天赋似乎自然而然地与赛博朋克美学合成了一体。</span></p>
+<p><span style="font-size: 20px;">”</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201020/4184ba630b304e8fab89a042e27f96c5.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/639345dfecac46e0b6e62c9f706e5284.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">©John William Waterhouse</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201020/b0ecedab1fb74b44a76a0f316ff5ebf0.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201020/cd9621962dca4c29ace9bc8527bdb672.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">©Gustav Klimt</span></p>
+<p><span style="font-size: 16px;">而在2017年发行的《Pyre》中，Jen Zee一如既往地为角色们设计出了独特的造型，游戏的奇幻设定也让她的风格走向狂野，这一点从人类头上的各种角，或者是两脚站立的动物上就能看出来。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201020/59f84423b51748fcb1af2408c1683007.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">《Pyre》插画</span></p>
+<p><span style="font-size: 16px;">插句题外话，在这款游戏开发时，Supergiant Games团队总共只有12人，现在《Hades》也不过20人左右，很难想象这是一家成立了11年的成功独立游戏开发商，我甚至闻到了项目分红的金钱味儿</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201020/311023e3a60346e8892f39add7520bbb.png" /></p>
+<p>。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/8837152a68ba4dbbbdadf50d16dd1551.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/0ed169a9c0b74ff7826758bd6f6c8c5b.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201020/12d5c05d96d240238e34c7a417914471.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">《Pyre》游戏截图</span></p>
+<p><span style="font-size: 16px;">虽然美术灵感来源于无数个方面，但Zee说，意大利漫画家Sergio Toppi和美国艺术家Franklin Booth的墨水作品在一开始就在她脑海里存在。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201020/1f5c8443ca7349f9a410a9e632cf55e6.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">©Sergio Toppi</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201020/14abc3486b274f548d8b4cdd4e14e023.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">©Franklin Booth</span></p>
+<p><span style="font-size: 16px;">"我喜欢传统作品的外形设计，并将它们带入我们创作的游戏中，"Zee补充道。</span></p>
+<p><span style="font-size: 20px;">“</span></p>
+<p><span><span style="font-size: 16px;">《圣斗士星矢》也是我非常喜欢的——女圣斗士魔铃和莎尔娜营造神秘感的面具是我一直想尝试的一个非常酷的想法。</span><span style="font-size: 16px;">游戏《Pyre》中的祭祀仪式长袍和面具，就是将这个想法应用到游戏中的一个例子。</span><span style="font-size: 16px;"></span></span></p>
+<p><span style="font-size: 20px;">”</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/a2fc537167f64833beb304409750cddb.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">《Pyre》插画</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/44c21520967f43bd958038bf4bf3fcf3.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">《Pyre》黑胶封面</span></p>
+<p><span style="font-size: 16px;">直到如今的《Hades》，有不少人说风格像“JOJO”和荒木飞吕彦，虽然目前Jen Zee还没有分享她的灵感来源，但通过前作可以发现，传统艺术、日系游戏动漫和欧美动漫一直较大的影响着她的创作。（Hades美术作品可以翻阅上篇文章）</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/237596381f7a4ebcbf74917d254cf5a3.png" /></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201020/76415bfc03324b4fa0aa641849873d0b.png" /></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201020/a9a25f515b5a4586b9ef7953202ef447.png" /></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/6a33a9f495d844dfaffbd6d21db39bc3.png" /></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201020/c2c6a8da1c4e4f7f9eba3843513dfbb1.png" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">《Hades》概设</span></p>
+<p><span style="font-size: 16px;">在曾谈起自己创作历程中的灵感和榜样时她表示灵感太多了，无法一一列举，但有一些是能够影响她很久的，包括阿尔丰斯·穆夏、Lawrence Alma-Tadema、John Singer Sargent、吉田明彦、小岛文美、电影《Red Sonja》、柯南、《宇宙的巨人希曼》中的Dolph Lundgren；而自己最大的榜样则是父母和悟空。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201020/cf4597e215d74c1793138218c3854cdf.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201020/9dd18a34d40d4a4a8e1aebb8d45ff6e1.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/b8f5ee69ce404c2b8a5bd8ee36fd6d1f.png" /></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/850943bcffc843a0867b2b000555a651.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">©Jen Zee 日常作品</span></p>
+<p><span style="font-size: 16px;">不少玩家对Jen Zee的美术风格赞不绝口，但她这种这种多元化的表现也并非一蹴而就，而是不断练习和积累来的。虽然“不够专业”，但是也让Jen Zee可以不受条条框框的约束，同时在体验更多的爱好、感受丰富的世界、提升更广的眼界后，在艺术上实现了自我提升。</span></p>
+<p><span style="font-size: 16px;">或许，不拘泥于理论在艺术上的表现才让创作有了更多的想象空间。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/f895a3faa2c54ed3bf008e153666e455.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/2d6be13cb05d42deb35a2987172d3295.png" /></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201020/4cfff52b02fa4efb9543d8a0d9c6c364.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201020/b29bde262d3c4ccc9f7e8a1684011a41.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">©Jen Zee 日常作品</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/b8fd0c5a2c8144e59b4b6c9365ce92ad.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/f53f93080c4947559c8d792f816ac356.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">©Jen Zee 同人作品</span></p>
+<p><span style="font-size: 16px;">经历Supergiant四款游戏的开发和接连成功，Jen Zee的美术功不可没，她也已然成为游戏业最有代表性的女性艺术家之一。从业余爱好到职业巅峰，Zee的故事同时也激励着更多向往游戏艺术行业的“业余画手”们。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201020/4f5633bb99fa446595c1856aa6228ed8.jpeg" /></p>
+<p><span style="font-size: 20px;">“</span></p>
+<p><span><span style="font-size: 16px;">我</span><span style="font-size: 16px;">会给任何想要进入电子游戏艺术行业的人同样的建议--花时间做你喜欢的事情！</span><span style="font-size: 16px;">多玩电子游戏，画画，练习！</span><span style="font-size: 16px;">如果你创作出优秀的艺术作品，人们会认识到这一点。</span><span style="font-size: 16px;">你只需要把你的作品展现在人们眼前。</span><span style="font-size: 16px;">不要害怕接受与你计划或目标完全不同的工作，你会从每一份工作中学到一些新东西。</span><span style="font-size: 16px;">条条大路通罗马，而我与Supergiant合作的道路绝不是直接的。</span><span style="font-size: 16px;">——Jen Zee</span></span></p>
+<p><span style="font-size: 20px;">”</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/090d890718db4bdabef99bdad806363f.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/f53209e03f06429792e52f7892083d21.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/2c57a8237f814c99bd260c827593fb04.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">©Jen Zee 日常作品</span></p>
+<p><span style="font-size: 16px;">那么，Jen Zee是不是华裔呢？我到底在纠结什么</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201020/9123415662654f00979af40f62162660.png" /></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/a721363bb434429a9448b98652a77f98.png" /></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/c561d8520e0f4f699dd5fda9fff7882c.jpeg" /></p>
+<p style="text-align: left;"><span style="font-size: 16px;">部分参考编译来源：Nerdy But Flirty/Gadgets360/illustrators lounge</span></p>
+➜七年磨一剑的任天堂，如何用美术诠释游戏？
+http://www.sohu.com/a/425866126_204824	57540
+<p style="text-align: left;"><span style="font-size: 16px;"><span style="font-size: 16px;"></span><span style="font-size: 16px;">译/</span><span style="font-size: 16px;">手残志坚，整理/依光流</span></span></p>
+<p><span style="font-size: 16px;">花七年半的时间做一款游戏，是一种怎样的体验？对任天堂《动物之森》团队来说，他们面对的可能是极大量的细节，以及如何用一个简单明了的方式，去串联这些细节。</span></p>
+<p><span style="font-size: 16px;">就好比，这款游戏的官方攻略本足足有1000多页，甚至比一般的字典还厚，可在游戏里呈现给玩家的，只有简单的一座小岛、周遭的风景，和几名岛上的动物朋友。而就是这个简单的环境，延伸出玩家们充满想象力的独特岛屿。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/5240260a923448a3ba62eacc5f96353c.png" /></p>
+<p style="text-align: left;"><span style="font-size: 16px;">在前些日子日本CEDEC游戏开发者大会上，任天堂《动物之森》开发团队以“《集合啦！动物之森》的美术构成：充满想象力的设计符号，可爱并不是一切”为题的演讲，详细讲解了该系列的最新作《集合啦！动物森友会》的美术设计。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201020/7323fe569e714eeebc9ffec7bac52c42.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/fd8ec2224d9b4b30abc116a1467b24ac.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: center;"><span style="font-size: 16px;">图中三人分别是美术总监（左），美术组成员（中，右）</span></p>
+<p><span style="font-size: 16px;">自《动物之森》系列的第一作发售以来，已经过了19个年头，据美术总监高桥幸嗣所说，这还是第一次有机会能够仔细讲解游戏中的美术部分。</span></p>
+<p><span style="font-size: 16px;">初代角色的脸部图片分辨率仅为32x16，随着时代发展和游戏机硬件的进步，动物之森系列的开发流程也逐步在进化。但是，本系列的主题却始终保持未变，那就是“人与人的交流”。</span></p>
+<p><span style="font-size: 16px;">在这个主题的基础上，来看本作《集合啦！动物森友会》的美术工作，以下分为“动森的美术”、“动物的设计”、“家具的设计”这3个主题进行介绍。</span></p>
+<p><span style="font-size: 16px;">以下内容来源于日媒4Gamer，游戏葡萄编译整理。</span></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">《动物之森》的美术设计</span></span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201020/e8be71e299554e5786be6fa72a1393ac.jpeg" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">在动物之森的世界里，充满大量的可玩要素。比如钓鱼，购物，和小动物们说话，甚至是快乐的摸鱼，玩家们可以随心所欲想到哪里玩到哪里。人与人之间的交流，与这些繁多的可玩要素息息相关。因此，游戏中准备了大量的“玩耍的暗示”。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/271804c9b5d044c481b3a0e05e854215.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/523b9b1f8a2f4bcdb33cccd25a251490.jpeg" /></p>
+<p><span style="font-size: 16px;">请看上图，河里有鱼，可以供玩家钓鱼。河对面有一只狗狗角色，可以与他对话或者去他家里面玩，身边的水桶就是家具物品可以带去他家。遍地的杂草可以采摘或者种植，树木可以用斧头砍倒，会掉落苹果供玩家拾取。草地上可以挖洞，在本作中甚至可以对河流进行填埋。当然，对玩家角色自身也准备了换装功能。</span></p>
+<p><span style="font-size: 16px;">对这些可玩要素的部分进行涂色，结果如下。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/5fc6313f1c9548d99e90178c8a5ced3e.jpeg" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">说白了，除了天空以外都是可玩部分。像这样让可玩部分充满整个画面，对动物之森来说非常重要。因此，如何让屋外场景中的可玩要素能够迅速抓住玩家的眼球，也成为了制作组需要克服的难题。</span></p>
+<p><span style="font-size: 16px;">请注意看图中的上半部分，本作中特意将画面上半部的地平线做成略微弯曲的形状。以此使得远处的可玩要素能更好地进入玩家视野内。而在下半部分的近景，则采用俯视角使得玩家更方便地移动与交互。画面后方可以看到别的角色和建筑物，更后方是天空可以提供时间和天气等环境变化的信息。</span></p>
+<p><span style="font-size: 16px;">也就是说，玩家在前往某个可玩要素的同时，不论你走得快还是慢，总会有其他的可玩要素自然地进入玩家视野。这就是本作采用这种画面构成的理由。</span></p>
+<p style="text-align: center;"><img src="//p4.itc.cn/q_70/images03/20201020/84caf19607534fd8bdfc421524e1bfb8.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201020/6934fd782c7a45faae41eea1a4384fa9.jpeg" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">然而，由于本作的分辨率相比以往大幅提升，画面中的可玩要素太多反而会使得某些可玩部分被掩盖，因此如何控制好数量上的平衡也成了关键的一步。可玩要素要设计得不过分显眼，对玩家来说只相当于暗示一般的存在，让玩家在选择可玩要素时觉得“哪一种都可以选，哪一种都可以不选”，这种程度是最好的。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201020/6236bbe1395f4fcbab682f15470c51a2.jpeg" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">因此，本作的美术设计宗旨是“在保证物体不走形的前提下，选择最符合游戏内功能的要素”，也就是符号化。这是因为，如果把现实中的图像不经修改直接用在游戏里，反而会让玩家们注意力与游戏功能无关的部分。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/9294d5d180564094a9e578f7283d83ec.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/31d8dfda46104dfeb0575549f279b670.jpeg" /></p>
+<p><span style="font-size: 16px;">而对物体进行适当的符号化，可以使画面更整洁，同时让玩家们更直观地察觉到可玩要素。但是，物体符号化的程度也要根据各自在游戏内的作用做出变化。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/bab125c71d2b4e2dafd5fa44f9f2cfe8.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/bf64b18aeec74951acf3f6893047eb72.jpeg" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">上图表示了本作中的设计尺度，往右是写实化，往左是符号化。举个例子，昆虫和鱼类只进行了少量的符号化。这是因为这类物品会被捐赠至博物馆，或是被展示给其他玩家看，或是成为与下个可玩要素之间的过渡，在这些情况下，越对物品写实化，越能给玩家们带来更多的信息量，也能使玩家们得到更大的喜悦。</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201020/7ecb69a596d7422d913c827cbf59a549.jpeg" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">对于玩家的角色形象，则在符号化与写实化之间取了差不多各占一半的程度。玩家们在游戏中的代入程度和游玩追求因人而异。因此，需要对脸部和四肢进行符号化，使其能够对应各式各样的玩家们的同时，不会拥有过多的信息量对代入感产生影响。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/9c86cfe76c17443bb8b3af8cef1312da.jpeg" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">草木类需要进一步的符号化。在游戏中，这类物件在同一画面大量同时出现的场景比较多，因此需要对此类物品的信息量进行控制。同时要使其排列时不显得单调，花朵和水果以3个为一组作为最基本的单位。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201020/fdf6a290e09b41fca066b55fabe3c468.jpeg" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">用来给角色进行装扮的衣物类，虽然本身需要很大程度的符号化，但是衣物之间的复杂程度不等，需要单独对每一件衣服的外观进行设计，将不必要的细节省去，使得每一件衣服的信息量不会太大。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/762c1fb42104424fb6fe6ca92dded5aa.jpeg" /></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">墙壁和地板类则根据设计理念的不同，有偏符号化的也有偏写实的。在表达一定信息量的同时，要起到衬托家具和人物的作用。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/6eba2603b80d4f76ac6711bacd32e774.jpeg" /></p>
+<p><span style="font-size: 16px;">像这样，物体在游戏内的信息量由其功能来决定，通过符号化减去的信息量又被称为“舍弃信息”。在进行高清画面下的信息减量时，有些美术人员表示还是有些难以取舍。但是制作组最终还是坚持这个决定的原因是，减去的这部分信息，会为玩家们带来“想象的空间”。</span></p>
+<p><span style="font-size: 16px;">通过留给玩家想象的空间，可以让玩家们根据自己的记忆来补足图像中缺少的信息。而一旦玩家们自发地将想象的空间进行补完，则会进一步激发玩家们游玩的欲望。如下图所示，红色箭头所指出的部分是否能激发玩家自发脑补，在本作中被视为非常重要的设计点。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201020/95860b4a69684ad3a5388c1746c01a25.jpeg" /></p>
+<p><span style="font-size: 16px;">也就是说，肉眼看不见的地方也属于图像设计的一部分。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/c6b3c59d29b3435d92abaac071e2aa4f.jpeg" /></p>
+<p><span style="font-size: 16px;">高桥先生等人曾就“画面是否包含信息太多”这一题目进行激烈讨论。画面包含的信息量太多会抹杀玩家们想象的空间，是玩家们在游玩过程中变得更消极被动。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/baf59e8f0ab0458dbd74d113abcda187.jpeg" /></p>
+<p><span style="font-size: 16px;">与之相对，如果信息量过少会导致想象空间过大，导致玩家脑补起来太累。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/b9d8815c9e2c44b1b285f7a5f8a35737.jpeg" /></p>
+<p><span style="font-size: 16px;">美术人员在工作时不仅需要视觉上的设计，还要考虑事物背后所包含的各种信息，以及在游戏中承担的功能。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/499d8ad989de4a2cbef2bff652bb2ece.jpeg" /></p>
+<p><span style="font-size: 16px;">人类在接受视觉信息的时候，会同时产生对事物的理解，感觉，会产生特定的印象。因此，游戏美术并不单纯是把现实中物体画到游戏中，而要考虑到玩家们在看到这件物体时产生的感觉。例如，上图中的图像就进行了让人感觉“河面闪闪发亮”的符号化。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/c66f77ba75b141d0a6a72b6d9828764d.jpeg" /></p>
+<p><span style="font-size: 16px;">通过以上方法，在注重想象的空间的同时，把符号化后的图像集中在画面中展现，这就是动物之森的美术理念。</span></p>
+<p><span style="font-size: 16px;">接下来，以“草地”为例，介绍一下在进行符号化时对信息的筛选过程。显而易见动物之森中的草地是进行图案填充之后产生的，而这种独特的图案究竟代表了什么含义呢？</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/5259fbca7bbb4f7788d5dcde05ba77ac.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/02e7dde5017e404197a2af2689cd6158.jpeg" /></p>
+<p><span style="font-size: 16px;">以下照片是高桥先生经常去的一家神社。仔细观察此处草地的照片，会发现虽然整体是绿色的，但是其中混杂了大量植物和落叶。对此进行几何化和色块化，比较接近于由三角形排列的图案。动物之森中的森林和草地，正是像这样对植被和落叶等构成草地的要素进行符号化所表现的。通过改变整体颜色，也能对一年四季的变化进行符号化。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201020/41c5f3c13e88467a954681484aa54655.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201020/44fb4709af1040f3b454e48cfa1ea4ab.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/80c24ded9940474b8a44208220596d28.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/b7b07f0d460a479d9267827a7637708e.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/069d2f003d9340499133fa65280d5022.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/a2fad4378d074d08b3711c8a16165f05.jpeg" /></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">动物们的美术设计</span></span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/582eb23d3bf341308b59620853602534.jpeg" /></p>
+<p><span style="font-size: 16px;">动物之森的设计目标是为玩家们带来每日持续性的长时间游戏体验。因此，游戏中的动物们，是与玩家们一起生活，共度游戏内时光的好伙伴。</span></p>
+<p><span style="font-size: 16px;">动物角色的总数约为400个，通过庞大的数量来实现每个玩家的岛上居住的动物不尽相同，同时也促进了“希望别人也能看到自己家可爱的动物们”这一想法所产生的的交流互动。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201020/2a12260ea73349f2bc190ef171dc5bd1.jpeg" /></p>
+<p><span style="font-size: 16px;">关于动物的设计，采用了以“不知不觉间就能成为玩家心目中重要的存在”为中心的理念。因此，对动物们来说，令人产生“想要与其互动”，“想要更常见到”这样的想法，这才是魅力的体现。角色设计组长柴田女士称，本作的两个角色设计关键点分别是令人容易产生感情的外表，以及栩栩如生的行动。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201020/2b45c56320174d5da64620ae2d48b91a.jpeg" /></p>
+<p><span style="font-size: 16px;">首先讲解下容易令人产生感情的外表。每一种动物都拥有符号化的轮廓形象，使得在游戏生活中，即使远远地望见角色也能轻易分辨谁是谁。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/2fc36878d9bb48788806d5851328e0d1.jpeg" /></p>
+<p><span style="font-size: 16px;">通过和动物们进行对话，可以知道他们喜欢什么，现在的想法等等。为了使这个设计得以实现，以“猫”为例，需要在设计动物角色轮廓时，去除“猫”以外的信息。像这样玩家在事前能够获取的信息越少，越能够激发玩家的想象，成为玩家们去了解这只猫的性格和喜好的动机。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/15353ee7895d4fe3a1b7b1ddf71ec902.jpeg" /></p>
+<p><span style="font-size: 16px;">在制作变体形象时，需要做成能够最大程度激发玩家想象力的样子。比如，在轮廓的脸颊部分加上额外的毛发，会限制玩家们想象的空间，没有任何附加情报的轮廓形象，反而会使玩家联想到更多种类的喵星人。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201020/80996532df3548dba64cb8c67bf54b6d.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/8fa502f1b7814284a9812d6bbffb7e52.jpeg" /></p>
+<p><span style="font-size: 16px;">本作中的角色们，就是像这样，基于同一个轮廓，加上不同的纹理素材来制作的。由于动物们只是正常地在岛上生活，因此同种动物使用相同轮廓可以一定程度上降低他们多余的存在感。</span></p>
+<p><span style="font-size: 16px;">与之相对的，有一些在游戏流程中起到关键作用的动物们，他们的轮廓就必须与众不同，强调他们在玩家们眼中的存在感。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201020/f92fdb0c6f294660ae01a8e911b4fde9.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201020/b53fc860b4c24048a83c9acb211f15c4.jpeg" /></p>
+<p><span style="font-size: 16px;">统一轮廓形象看上去会限制画面表现力，实际上却能一定程度上增加动物角色的个性。还是以猫为例，游戏中出现的三色猫，喜马拉雅猫和暹罗猫形象都是基于现实中存在的猫种，而化歌舞伎妆的猫和长得像橘子的猫虽然有些奇怪，却也能够作为猫被玩家认知。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/0913fbc57425487085f68170dc2448a9.jpeg" /></p>
+<p><span style="font-size: 16px;">在设计动物们的性格时，也以现实中人类的性格为基准。既有对一部分极具魅力的性格进行脸谱化设定，也有让人产生亲切感的现实存在的性格。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/b85ed1fd4ea241569667e7e5ea579133.jpeg" /></p>
+<p><span style="font-size: 16px;">动物角色的种族共计35种，在轮廓的处理上，通过大小和形状的区别，来强调种族间的差异，同时，为了让玩家们对角色更容易产生共情，在诸如高兴辱悲伤时的感情表现上也做了一定的符号化。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/53855f243e7146459251179eb96bd061.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/c67ee7dec8424a11bfdedfaef9644e6a.jpeg" /></p>
+<p><span style="font-size: 16px;">游戏中所有的角色都采用同一套骨骼设定和动作动画。通过将动物们的动作动画符号化，故意消去了动物角色们种族间的差异，进而让玩家们更容易对角色们产生感情。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/40484879995e46a1997ad5c66eb25e5d.jpeg" /></p>
+<p><span style="font-size: 16px;">如上所述，将符号化的动物轮廓，与栩栩如生的细节相结合，不断加入能让玩家产生感情的要素，这就是本作的制作流程。一味地堆砌信息量只会让图像失去想象的空间，刻意地省去一些多余的细节才是本作美术工作的要点。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/d45bcba882dd40bc9da3948c03f0d024.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/8e2224edb813431bac922aa91968ef95.jpeg" /></p>
+<p><span style="font-size: 16px;">信息量的增加用该控制在何种程度，角色美术们至今还在摸索的过程之中。区别于以往的设计理念，探索着哪些要素才是多余的细节。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201020/4f26eaf55a9649919ed4aad0fcd18857.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/caec96420a4f49ffb5e1b3d1373789c5.jpeg" /></p>
+<p><span style="font-size: 16px;">上为信息量过多的案例。虽然眼睛加上高光会使其更有质感，但是改变了企鹅原本“不知道在想什么的深不可测”和猫的“活泼的偶像”等印象。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/d53b55c5aa1c4fe492775cd103320b18.jpeg" /></p>
+<p><span style="font-size: 16px;">虽然仅仅是眼部有没有高光的区别，却会影响到角色的整体性格甚至使得与玩家心目中角色性格产生错位。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/7000c599e1fd45e1a11e8362631dfb4d.jpeg" /></p>
+<p><span style="font-size: 16px;">上为增加细节的案例。由于分辨率上升，制作组通过着重刻画角的部分，以及对线条进行强弱区别，使得角色形象更柔软。</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201020/f32476511d5a4a6195d117b9c26dbc1c.jpeg" /></p>
+<p><span style="font-size: 16px;">上肢是表达感情时重要的一部分。通过由前作中圆柱形改成法棍面包形，做出了手臂与手掌的区别。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/2384b23c610b4b96aadb80744601e2bb.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/f048e82cf50f4b25931c4f41047f5210.jpeg" /></p>
+<p><span style="font-size: 16px;">通过将腹部做成鸡蛋型，使得背部呈现更为柔软的S形。在脚的部分额外加粗做出了脚趾的感觉，在走路时更显得活灵活现。</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201020/b3634802d0fb4e998d2df26d9c803e7b.jpeg" /></p>
+<p><span style="font-size: 16px;">上图为在不改变原来形象的前提下，为了让玩家增加亲近感而升级了细节的波斯。在脚底增加了肉球。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/d3a58922539049608775cfde598027c5.jpeg" /></p>
+<p><span style="font-size: 16px;">波斯的表情也做了细节提升。为了更好地传达感情，通过改变纹理素材来做出不同表情。通过增加眼部的“视线”，和口部的“什么也不是的嘴型”，能过作出发呆的表情和装傻的表情。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/6b79b8ae692a4cd19064b684d7599edd.jpeg" /></p>
+<p><span style="font-size: 16px;">接下来对于让人一直想看下去的栩栩如生的行动进行说明。为了创作出令人感到亲近的角色，不能让动作显得机械化，而需要用栩栩如生的行动让玩家们在岛上共同生活时产生亲近感。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/06cf3f6b68fb42918c9091b41e7bf887.jpeg" /></p>
+<p><span style="font-size: 16px;">那么，应该如何创作栩栩如生的行动呢？以下列举了三个要点。</span></p>
+<ul>
+<li>让角色自发选择符合其动物性的动作</li>
+<li>临机应变，根据周围的情况做出反应</li>
+<li>让人感觉不到是随机的行动模式</li>
+</ul>
+<p><span style="font-size: 16px;">本作在遵守了以上要点的前提下，为各种动物们设计了“自发的动作”和“遭遇时的动作”两种行动。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/0ced29e7433b4171944a81607b07e8f5.jpeg" /></p>
+<p><span style="font-size: 16px;">动物角色们在吃饭，做瑜伽，做打扫，去钓鱼等生活上的行动，都属于“自发的动作”。由于本作中有兴趣爱好的要素存在，喜欢唱歌的角色会频繁地唱歌，喜欢读书的角色会更多地读书。像这样进行角色间不同的行动规则设计，可以使角色们看上去就像拥有自己的意识，自发地进行行动。</span></p>
+<p><span style="font-size: 16px;">此外，动物们会在运动前穿运动服等，根据行动和状况进行换装的系统，也是“自发的动作”的一部分。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/041363e667624c6fbc01a32a84216d89.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/e0cc76e6279747e3b39d978d75cc77f5.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201020/7011377439a44be09959bbacdce3d95a.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/a0e2596ef7d540d4a7fe93aa5196906a.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/1387d8ea32374a1190a4f5bf4fab1ec8.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201020/1dca00a1c7bd4e67b661a82b4b0adb62.jpeg" /></p>
+<p><span style="font-size: 16px;">“遭遇时的动作”则是对进入视野范围内的物体进行反应的行动。比如说，看见了虫子去抓虫，遇到了玩家放置的家具会去使用等等。</span></p>
+<p><span style="font-size: 16px;">在“自发的动作”进行的途中，时常会发生转变为“遭遇时的动作”的情况，此时如果突然切换行动会显得有些机械化。在本作中，通过设定“烦恼”的时间来过渡前后动作的交替，也为玩家们留下想象的空间。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/af42b4b83cc748a09cf2cb8199801f04.jpeg" /></p>
+<p><span style="font-size: 16px;">在日常生活中，玩家们通过日复一日与动物们交互，观察他们的行动等，就会产生每个玩家与各自动物们独特的回忆。而通过不断积累这样的回忆，就能在不知觉中，使动物角色们成为玩家心目中不可替代的存在。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/8603c4133cad40fe80578c5f4a65e68c.jpeg" /></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">家具的美术设计</span></span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/a49b597ed6ab4cffb2fb0ef048e6aeb8.jpeg" /></p>
+<p><span style="font-size: 16px;">接下来，由家具设计师组长杉本裕美女士来介绍本作中家具是如何设计出来的。玩家们通过创造自己的世界，与其他玩家进行交流分享，然后更加享受在动物之森中的体验，由此形成循环。为了达成这种良性循环，需要设计出令人觉得“想要的”家具。这就是本作家具设计的初衷。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/92c0028260314c1e92301b4676646143.jpeg" /></p>
+<p><span style="font-size: 16px;">为了创作出令人想要的家具，“相似程度”表现十分重要。只要能让人觉得“这个做得很像”，自然就能让玩家们去用来装饰自己的家。那么“相似程度”从何而来呢？</span></p>
+<p><span style="font-size: 16px;">此处以老式电风扇为例进行“相似程度”的介绍。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201020/72768a1e0cfe442fbe61dae2d391458f.jpeg" /></p>
+<p><span style="font-size: 16px;">在建模之前，必须要进行“相似程度”的调查。比方说，电风扇的防护栏是为了防止手和异物与扇片接触而设计的，也就是说，防护栏的间隙需要设计成符合角色们的手伸不进去的程度。另外，仔细观察按钮会发现，按钮上有方便按下去的凹陷设计。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/d788fd6935b0400f8630efa2d913804e.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/fa29773acb8a48dfa2fcb9461e4c5a6c.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/e277d33622dc405182075a6d5997efb5.jpeg" /></p>
+<p><span style="font-size: 16px;">同时还要仔细确认风扇的结构，使摇摆功能正常实现。此外，为了防止风扇的本体会损伤地板，还把底座的边角曲线做得更为平缓。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/e147815a8de34cc7a5d13109acfea3e2.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/209cd8afc3da4226b802716797cc2e68.jpeg" /></p>
+<p><span style="font-size: 16px;">像这样把电风扇设计中共通的细节特征融合到设计中，就能产生令人信服的“相似程度”。当然除此以外，不仅要在游戏中再现电风扇的各种细节，还需要令人产生“对对，好像以前的电风扇就是这个样子的”这种怀旧的想法，为玩家们的想象留下空间。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/766f526ebc934a928e0db522538e8c8d.jpeg" /></p>
+<p><span style="font-size: 16px;">在完成建模工作后，也要时刻注意“相似程度”并进行调整。还是以电风扇为例，现实中的电风扇防护栏的前方比后方大，因此也做了位置调整。而游戏中电风扇相对角色有些矮小，所以也要调整支撑部分的长度使得游戏中风能够吹到游戏角色。</span></p>
+<p><span style="font-size: 16px;">最后，对于电风扇最显眼的“脸部”，由于调整前的模型是以前保护栏作为“脸部”的，但实际上电风扇使用时最影响的观感的是扇叶，因此针对扇叶的颜色和亮度进行了调整，还贴了一张“禁止伸手指”的警告增加存在感。就这样一台以扇叶为“脸部”的电风扇就完成了。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/4eae41b04eff441693a04b3997b21bc1.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/469a46acb6e6445fafc5147aeac0d405.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/d792033dfec9492d8357ce8434e9d022.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/381c363c5b5d4775b42128dab5ab1a65.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/bd357d16924f4127b1face09fb5f6762.jpeg" /></p>
+<p><span style="font-size: 16px;">在设计中仅留下表现“相似程度”的部分，换言之对家具的美术设计来说，最重要的还是符号化。</span></p>
+<p><span style="font-size: 16px;">看上去对区区一台电风扇就准备了这么多的设计图，还进行了这么多的细节调整，但实际上在本作中，所有的家具都是通过这样的过程设计出来的。这么做的原因是家具类是本作中设计幅度最广的种类。从偏写实化的到偏符号化的，各式各样的家具需要在同一画面下进行展示，那么这种程度的细节调整就是必不可少的。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201020/ff933a41dd894139a3b3304f21453fd1.jpeg" /></p>
+<p><span style="font-size: 16px;">那么，既然在本作中，玩家们通过自己设计家具配置来实现创造自己的世界，那么如果使用的家具和别人一样就不好了。因此，为了每个玩家都能选用独特的家具，本作中准备了非常大量的家具。</span></p>
+<p><span style="font-size: 16px;">但这也不是一味增加家具种类就能解决的，而是使一种家具具有多种功能来实现的。即便是相同的配置，只需改变家具的纹理，就能展现完全不一样的氛围。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201020/ea73ec30fe064ea3a0cd8498e8ca8e9c.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201020/8a3f2658ea6b42419ae1ed60f9d79f1b.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/dda53843f9ad41dab92f3a7d54cb4df8.jpeg" /></p>
+<p><span style="font-size: 16px;">以上是3个完全相同的房间配置，通过改变家具纹理来展现不同氛围的例子。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/793777d58c7c4d3d953e8f6eeac8269d.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/33de8c0011e24dbe99a54d90be4714d5.jpeg" /></p>
+<p><span style="font-size: 16px;">相同种类的家具也有不同的款式，可以根据使用场景进行变换。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201020/d2109991639e4b8c9fa3882614467bc4.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/e6666e689e5449cd9634b554105e588a.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/13bb6ab0df9d46d2b83b9451f776a492.jpeg" /></p>
+<p><span style="font-size: 16px;">如图，洗脸盆的多种款式可以适应各种装饰风格。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201020/a457340395ad42e9a597e38392236c4f.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/ec755788574b4d6d9fb85b6eb8346662.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201020/a987ef4ffde84689812a5529ec7aeb5c.jpeg" /></p>
+<p><span style="font-size: 16px;">如图，白板的内容可以根据装饰场景进行调整。</span></p>
+<p><span style="font-size: 16px;">由于本作中有大量的家具，而玩家们的装修风格各异，因此家具间的组合往往无法预料，甚至可能出现不同家具风格上的冲突。为了防止这种情况出现，制作组在不同家具之间寻找“折衷点”，并以此为重点设计出了适应各种组合的家具。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201020/3a45c5ec55eb402aa2ed95b61b66a9e7.jpeg" /></p>
+<p><span style="font-size: 16px;">家具中既有直径10cm左右的茶杯和人偶，也有数十米的灯塔和泳池</span><span style="font-size: 16px;">（虽然很难说这算不算家具）</span><span style="font-size: 16px;">，尺寸上可以说是应有尽有。如果全按照现实中的尺寸做进游戏肯定不现实。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/2068bf45acd5446f8de67dcf20837569.jpeg" /></p>
+<p><span style="font-size: 16px;">如上图所示，按现实尺寸对灯塔和人偶进行摆放，确实不大现实。</span></p>
+<p><span style="font-size: 16px;">如下图所示，在本作中茶杯和人偶被做成1格大小，灯塔是4格，而泳池是9格。再考虑到天花板的部分，高度也被设定为最高4格。通过这种做法，终于能够让人偶和灯塔摆放在同一空间。</span></p>
+<p><span style="font-size: 16px;">能够像这样把违和感降到最低，靠的就是上面提到的“折衷点”。人偶的模型即使在1格大小的家具中也属于小型的。但是，在制作模型时也应用了上面制作电风扇时所采用的同等的细节构造。而对于巨大的灯塔，为了使构造更令人信服，通过加大了护栏的间隙，去掉了门上的细节等等，对要素做了“减法”，使其与小型家具之间的差别更小。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/218a9508d4cc4ef5b2d00641ee4e9834.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201020/8a93fc2c494643ff878cd3086583a084.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/86a1ca7e8d244a2fb2cda6a4518c946b.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201020/a7a32624372d45f1a4ba9ff5c4c0c4a5.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201020/7a6d28ecea9c4a53a55aaf82294810e7.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201020/1159a4fc797747a082020d863c3d094f.jpeg" /></p>
+<p><span style="font-size: 16px;">前文提到了人偶属于小型家具，那么所谓小型是相对什么而言的呢？根据玩家的性格不同，在人偶周围放置的家具也会不同，大小上难免会产生违和感。</span></p>
+<p><span style="font-size: 16px;">因此，杉本女士在寻找适合作为大小基准的家具时，发现最适合的就是床。因为玩家们平时睡觉时最常使用的道具就是床，因此如果床的尺寸与人物的大小不相符，会产生强烈的违和感。</span></p>
+<p><span style="font-size: 16px;">最适合玩家人物大小的床，尺寸正好是2格，由于是正好符合人物大小和格子大小的家具，因此最适合用来作为调整大小的基准。通过配合床的大小来调整各种家具，可以使不同家具的大小感觉趋于自然，而大小感自然的家具，又可以作为下一个家具调整大小的基准，以此类推。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/0e6e8f0469f943f29b81e1542846a326.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201020/fbebe1c4e46c4aa1b51f7932bde05a8a.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201020/72835e82aeba49dd82faa124e279d8d2.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201020/2d1ac1f266474b8888ae6a4ed7011984.jpeg" /></p>
+<p><span style="font-size: 16px;">上图为对家具进行大小调整前后的比较效果图，可以直观地感觉到违和感的差异。</span></p>
+<p><span style="font-size: 16px;">综上所述，通过自己创造独特的世界，给其他玩家观赏，从而产生交流，此时交流的中心就是各色家具。而对于这些家具，制作组们也加入了许多令人心动的要素。</span></p>
+<p><span style="font-size: 16px;">比如说，洗衣机有长达10分钟的动画，包括洗涤，漂洗，脱水等过程，玩家们如果注意到这一点，一定会不自觉地赞叹。这就是心动的瞬间，通过增加这种心动的瞬间，游戏性将会大幅提升，也可以促进玩家之间的交流对话。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201020/9c6974b55315427b878b1b6f9d06cb71.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201020/2f02d02174f6440b924e428db239634f.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201020/6b24e6832c784aef9dcfe516adadce1c.jpeg" /></p>
+<p><span style="font-size: 16px;">上图为“竹制整人盒”，在玩家触摸之后，会从里面飞出辉夜姬。制作组成员经常会提出建议，制作这种小捏他。通过准备这种具有意外性的可玩要素，可以令玩家们在游玩过程中不断体会到刺激感。</span></p>
+<p><span style="font-size: 16px;">制作组在制作家具的过程中，需要经常“想象玩家们游玩时的状态”。在制作家具时，通常会不自觉地想要把图像变得更漂亮，当然这点也很重要，但是同时也要时刻注意如何让玩家们能更投入地游玩。</span></p>
+<p><span style="font-size: 16px;">这里的关键点在于，制作组制作的只是供人游玩的设施，而真正进行游玩这个动作的，始终是广大玩家们。最终看到玩家们通过超出制作者们的想象的游玩方式来使用这些家具，也是家具制作的乐趣之一。</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201020/74701d66679f4f7e8c1e8b2750051b65.jpeg" /></p>
+<p><span style="font-size: 16px;">在演讲的最后，高桥先生作为代表进行了总结，由于内容十分简练，以下直接引用不做概括与删减。</span></p>
+<p><span style="font-size: 16px;">在动物之森的世界中，充满了各种可玩要素，每一种都具有独自的价值。各种要素通过各自平衡的存在感，令玩家完全凭自己喜好去游玩。</span></p>
+<p><span style="font-size: 16px;">“哪一个都可以选择，哪一个都可以不选择”。为了玩家能够有这种想法，我们才会不断用符号化的方式，努力实现“不做多余描述的日常”。</span></p>
+<p><span style="font-size: 16px;">现实生活中，我们通常被身边各种事物包围，通过调整自己的焦点，才能进一步看到事物的细节。我们所追求的画面正是这种感觉的体现。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201020/8678bf4a19f7498bb9b367d960ea99c7.jpeg" /></p>
+<p><span style="font-size: 16px;">如今回头展望，在开发的初期，我们也不知道该怎样选择。只是感觉不能单纯地堆砌信息量，对于自己创作的原点是什么，必要的信息量是多少，都是在后来的制作过程中逐渐摸索出来的。</span></p>
+<p><span style="font-size: 16px;">我们也曾担心一味地追求对生活细节的模拟，可能就创造不出一个利于玩家们之间交流互动的世界了。</span></p>
+<p><span style="font-size: 16px;">也正是以“人与人之间的交流”为创作宗旨不断努力，最终才能创作出像本作这样，能让玩家们简单上手，实现不做多余描述的日常的目标。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201020/d39cd41123964f34ae7319cc7b20d8d9.jpeg" /></p>
+<p><span style="font-size: 16px;">如今的游戏制作行业，表现的范围十分宽广。但正因为如此，对游戏中的内容进行选择也变得尤为重要。这种选择越多，游戏的体验会变得越好，玩家们进行想象的可能性也会越大。</span></p>
+<p><span style="font-size: 16px;">我相信只要还存在想象的可能性，游戏的可能性就不会消失。我们游戏设计师，也需要用自己的设计去应对充满可能性的未来。</span></p>
+<p><span style="font-size: 16px;">文章来源：</span></p>
+<p><span style="font-size: 16px;">游戏葡萄编译整理</span></p>
+➜三年收入25亿元，我们看清了MMO的关键点
+http://www.sohu.com/a/425883154_204824	57540
+<p>
+<table>
+<tbody>
+<tr>
+<td><span style="font-size: 16px;"><span style="font-size: 16px;">时代和玩家都在变，但总有一些东西不会</span><span style="font-size: 16px;">变。</span></span></td>
+</tr>
+</tbody>
+</table></p>
+<p><span style="font-size: 16px;">文/以撒</span></p>
+<p><span style="font-size: 16px;">《魔域》作为一款老IP端游，运营至今已有十四年。10月18日《魔域手游》上线三周年，其累计收入已超过25亿人民币。</span></p>
+<p><span style="font-size: 16px;">最近，金山世游《魔域手游》运营负责人林一接受了媒体采访，他认为MMO讲究整体的平衡和节奏。同时，也需要努力和玩家做朋友，在运营层面打造平等的价值观。</span></p>
+<p><span style="font-size: 16px;">以下为经过删减的专访内容。</span></p>
+<p><span><strong><span style="font-size: 16px;">《魔域手游》运营现状如何？</span></strong></span></p>
+<p><strong><span style="font-size: 16px;">林一：</span></strong><span style="font-size: 16px;">《魔域手游》在2017年10月公测，19天流水破亿。现在虽然竞争激烈，但是各项数据都比较稳定。截止今年9月，《魔域手游》仍然有近百万的月活跃玩家数量。三年累计收入已经突破25亿人民币。</span></p>
+<p><span><strong><span style="font-size: 16px;">《魔域》的IP加成，对手游有多大影响？</span></strong></span></p>
+<p><strong><span style="font-size: 16px;">林一：</span></strong><span style="font-size: 16px;">IP加成是《魔域手游》成功最不能忽略的一点。经典MMO端游IP对于手游来说意味着品牌，这在国内手游市场发展时间较短的情况下，是一种稀缺资源。</span></p>
+<p><span style="font-size: 16px;">当下MMO面临严重同质化的问题，如果没有IP吸量和推广，一个缺少品牌的MMO手游很难被关注。魔域IP成功运营了14年，用户基础非常扎实。用户对魔域IP有一定认知，推广也容易做出效果。</span></p>
+<p><strong><span style="font-size: 16px;">如果去掉IP加成，《魔域手游》靠什么取胜？</span></strong></p>
+<p><strong><span style="font-size: 16px;">林一：</span></strong><span style="font-size: 16px;">MMO本身并不复杂，但是要做好其实很难。在现在的市场环境下即便拿了IP，没有成熟的团队操刀也很难成功。MMO游戏的运营，更讲究整体的平衡和节奏，不仅仅是数值、玩法，还包括技术、美术、社交、用户运营等多个方面。</span></p>
+<p><span style="font-size: 16px;">网龙和金山世游都是中国老牌游戏企业，在MMO方面积累了很多经验，我们都把最精锐的团队用在了这款游戏上，保证了游戏品质这一点。</span></p>
+<p><span style="font-size: 16px;"><strong>金山世游最初拿到《魔域手游》时是怎么做的？</strong></span></p>
+<p><strong><span style="font-size: 16px;">林一：</span></strong><span style="font-size: 16px;">在技术层面，我们做了一些不易感知的底层优化，让玩家体验变得更加顺畅。</span></p>
+<p><span style="font-size: 16px;">在设计层面，我们大幅简化了整体流程。一般MMO会卡等级，而《魔域手游》限制极低。游戏中等级上限是150级，玩家第一天就能到120级左右，不需要花大量时间做任务，而是着重于体验养成、战斗等内容。</span></p>
+<p><span style="font-size: 16px;">在运营层面，《魔域手游》在当时的MMO手游中算比较激进的一款。首周我们为了让用户体验平滑，所有游戏内容全部免费赠送了，包括养成材料、核心道具等等。</span></p>
+<p><span><strong><span style="font-size: 16px;">三年时间里，《魔域手游》的数据表现有没有经历过比较大的波动？</span></strong></span></p>
+<p><strong><span style="font-size: 16px;">林一：</span></strong><span style="font-size: 16px;">《魔域手游》的月流水在2018年初开始出现下跌，我们做了一些反思，结论是当时我们发行思路比较传统，和魔域运营生态不够匹配。</span></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">之后我们在用户运营和生态维护上大量投入，最终在18年年底时取得了近亿流水收入。这在“游戏寒冬”的2018年算是不错的成绩，也证明了我们的方向和战略是正确的。</span></p>
+<p><span><strong><span style="font-size: 16px;">具体做了什么？</span></strong></span></p>
+<p><strong><span style="font-size: 16px;">林一：</span></strong><span style="font-size: 16px;">说实话，因为我们第一次操盘魔域IP，对整套生态体系都比较陌生，因此对玩家需求也把握不准，我们做的改变主要有三点。</span></p>
+<p><span style="font-size: 16px;">第一是运营，从18年初开始，我们把玩家需求作为运营的核心需求，建立了覆盖玩家多个维度内容的数据库，据此制定方向和战略。根据魔域产品的特殊性，我们在制定活动过程中，以“保守消耗”作为主要策划方向。</span></p>
+<p><span style="font-size: 16px;">第二是服务，因为《魔域手游》的游戏生态完全开放，道具被骗也时有发生。在18年之前，我们对这件事情并没有特别在意，所以当时可能延迟两三天处理都觉得很正常。</span></p>
+<p><span style="font-size: 16px;">但在下滑之后，我们有一套相对严格的流程来保证用户的顺畅体验：必须在5分钟之内答复客户问题，两个小时之内给予处理，24小时之内处理完成。</span></p>
+<p><span style="font-size: 16px;">第三是付费，我们搭建了一套“心橙”返利体系，玩家在游戏内每一笔消耗都会按照一定比例折合积分，兑换虚拟和实物奖励。</span></p>
+<p><span style="font-size: 16px;">我个人认为，我们的运营其实不算出色。用现在的理念来看，我们缺乏“炒作”思维。但也正因为我们“保守”，才让《魔域手游》一直都在做自己，而不是成为其他换皮产品。</span></p>
+<p><span><strong><span style="font-size: 16px;">魔域作为运营十几年的老IP，会不会套路化？</span></strong></span></p>
+<p><strong><span style="font-size: 16px;">林一：</span></strong><span style="font-size: 16px;">其实不管是吸量时代还是存量时代，游戏行业有很多精神都不变。旧的套路之所以受到挑战，无非是因为市场变了，或者玩家变了。</span></p>
+<p><span style="font-size: 16px;">但是，市场再变，优秀的产品和运营是不变的。玩家再变，也终究会有新人进场，老人们没有告别，他们只是换了一种方式来玩游戏。</span></p>
+<p><span style="font-size: 16px;">明确这两点，在设定所谓套路的同时，我们会发现很多东西其实一直没有变过——玩家运营就是要打造平等的价值观，就是要努力和玩家做朋友；魔域也一定不会做那些“浓妆艳抹”的营销。</span></p>
+<p><span style="font-size: 16px;">所以我觉得有些东西不会改变，比如根据环境制定内容、保持初心、让玩家感受诚意，继而拉升口碑和品牌知名度等等。</span></p>
+<p><span><strong><span style="font-size: 16px;">为什么不能做“浓妆艳抹”的营销？</span></strong></span></p>
+<p><strong><span style="font-size: 16px;">林一：</span></strong><span style="font-size: 16px;">《魔域手游》营销以稳健为主，很少做非常规操作。通过用户运营，我们很清楚玩家不喜欢这样，所以我们一直非常谨慎、克制。</span></p>
+<p><span><strong><span style="font-size: 16px;">克制什么？</span></strong></span></p>
+<p><strong><span style="font-size: 16px;">林一：</span></strong><span style="font-size: 16px;">既要顾及现有玩家的观感和想法，也要把握潜在玩家的诉求。他们到底为什么会来看《魔域手游》的营销内容？是出于好奇还是被强制推送？主动观看和被动搜索各占多少？面对不同范围和等级的玩家，我们都需要做什么？如此种种，我们都要关注。</span></p>
+<p><span style="font-size: 16px;">我们希望营销不仅仅局限在游戏里，也能走进玩家的生活和思维里——对《魔域手游》来说，要避免“为了营销而营销”，尽可能做到有效、有新意，打造记忆点。</span></p>
+<p><strong><span style="font-size: 16px;">有例子吗？</span></strong></p>
+<p><strong><span style="font-size: 16px;">林一：</span></strong><span style="font-size: 16px;">其实魔域系列整体的品牌调性和同类游戏就不太一样。比如我们喜欢找一些老牌音乐人合作，像伍佰老师、窦唯老师。我们觉得老艺术家的内涵和精神，虽然独立于这个流量时代，但让人记忆深刻。我们希望魔域也能这样“真金不怕火炼”。</span></p>
+<p><span><strong><span style="font-size: 16px;">后续几款产品如何计划？</span></strong></span></p>
+<p><strong><span style="font-size: 16px;">林一：</span></strong><span style="font-size: 16px;">在后续计划中，金山世游还将推出2-3款网龙产品。这些产品无论在画面和内容上都有着较大差异，我们想用不同产品面向不同玩家。在确定当前市场和用户群的基础上，我们必须进一步优化产品，打造个性化服务，做区别化营销，才能收获不同用户群，扩大玩家群体。</span></p>

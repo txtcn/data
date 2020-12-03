@@ -1,0 +1,173 @@
+➜谈一谈《英雄联盟手游》渲染技术与画面
+http://www.sohu.com/a/430265474_204824	53252
+<p>
+<table>
+<tbody>
+<tr>
+<td><span>本文首发于知乎，作者Lute Li，游戏葡萄已获转载授权。</span></td>
+</tr>
+</tbody>
+</table></p>
+<p><span style="font-size: 16px;">经过千难万险我终于在第一时间玩上了《英雄联盟》的手游，专门开一篇，谈谈 <span style="font-size: 16px;">《</span><span style="font-size: 16px;">英雄联盟</span>手游》的画面。 </span></p>
+<p><span style="font-size: 16px;">先看看PC版本《英雄联盟》的问题</span></p>
+<p><span style="font-size: 16px;">《</span><span style="font-size: 16px;">英雄联盟》</span>作为一个上帝视角游戏，人物在战斗画面里占比极小，拿一张截图为例。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201107/1a9defcc5f66483a8b6281c9caa234ab.jpeg" /></p>
+<p><span style="font-size: 16px;">1080p分辨率标准，4个角色加起来占比3%！平均一个角色才0.75%左右。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201107/278efea01b064255b2138b336f94ba27.jpeg" /></p>
+<p><span style="font-size: 16px;">按画面贡献来排序，优先级应该是：</span><span style="font-size: 16px;">地图＞UI＞特效＞人物。</span></p>
+<p><span style="font-size: 16px;">回想 <span style="font-size: 16px;">《</span><span style="font-size: 16px;">英雄联盟》</span>以往的更新，也的确是按照这个顺序在优化内容。 </span></p>
+<p><span style="font-size: 16px;">常看Riot技术分享的人应该清楚，他往往是讨论人物设计，特效制作等。之口不谈渲染相关内容，因为Riot知道这是自己短板，没什么可以说的。</span></p>
+<p><span style="font-size: 16px;">几年前有人公布过第一人称 <span style="font-size: 16px;">《</span><span style="font-size: 16px;">英雄联盟》</span>视频，近距离看人物模型，来看一组对比图。 </span></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201107/c807951f11d04f70a3573fd78180dd0a.jpeg" /></p>
+<p><span style="font-size: 16px;">PC《英雄联盟》原画和游戏模型对比（近几年的做好了不少）</span></p>
+<p><span style="font-size: 16px;">所以在玩家群体里，常把英雄皮肤叫“付费PPT"。买的只是一张图片和技能特效，游戏内的人物只能自己脑补。</span></p>
+<p><span style="font-size: 16px;">画面渲染的提升</span></p>
+<p><span style="font-size: 16px;">先说下一个词：</span><span style="font-size: 16px;">unlit。</span><span style="font-size: 16px;">无光模型。</span></p>
+<p><span style="font-size: 16px;">很好理解，在模型上画画，涂啥色最终就是啥色，没有灯光，没有亮暗面，想要影子就自己画黑点。</span></p>
+<p><span style="font-size: 16px;">unlit几乎没有计算量，兼容各种低端设备，早期手机游戏常使用unlit来渲染模型。这也是 <span style="font-size: 16px;">《</span><span style="font-size: 16px;">英雄联盟》</span>常被人诟病"就是个手机游戏"的原因。 </span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201107/265f67526f54477eb60f0d2d7f898663.jpeg" /></p>
+<p style="text-align: center;"><span></span><span style="font-size: 16px;">Riot已经把unlit做到了极限</span></p>
+<p><span style="font-size: 16px;">对比下 <span style="font-size: 16px;">《</span><span style="font-size: 16px;">英雄联盟》</span>的竞品，《Dota2》和《风暴英雄》。 </span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201107/e6a6e03342e24c49ab03da814766fd49.jpeg" /></p>
+<p><span style="font-size: 16px;">不像《英雄联盟》人物展示是一张图片，他们都是用3D模型，所以对渲染要求较高。其中Dota2使用魔改BlinnPhong来渲染。</span><span style="font-size: 16px;">（有兴趣的可以看下我之前写的dota2渲染）</span></p>
+<p><span style="font-size: 16px;">常用技术按年份来排：</span><span style="font-size: 16px;">Unlit→Lambert→Blinn-Phong→各种PBR。</span></p>
+<p><span style="font-size: 16px;">而这次 <span style="font-size: 16px;">《</span><span style="font-size: 16px;">英雄联盟</span><span style="font-size: 16px;">手游》</span>，是直接从Unlit跳到了成熟的PBR渲染。 </span><span style="font-size: 16px;">(可能还是魔改BlinnPhong？等抓帧老哥文章)</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201107/49d27b7fd0254ceba236a3eb02cc8070.jpeg" /></p>
+<p><span style="font-size: 16px;">打个比方，类似于小学里的第一名，突然跳级高考进大学，而且大学成绩还名列前茅。</span></p>
+<p><span style="font-size: 16px;">下面是游戏内截图。</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201107/58a27c14c5444e6792a5380772f83e05.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">法线和漂亮的亚光高光（注意看眼睛下的一抹泪水）</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201107/1fe283ed61ce4bf6a16cc3fb946c9c98.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">金属</span></p>
+<p style="text-align: center;"><img src="//p5.itc.cn/q_70/images03/20201107/e80df7668c174e0ab3aa279433d1be79.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;"><span style="font-size: 16px;">3S皮肤（像蜡一样）</span></span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201107/4e4f46e162624b39a85a4caf15b0d989.gif" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">霓虹反射（我也不确定是反射球就这么花哨，还是加了张ramp图）</span></p>
+<p style="text-align: center;"><span style="font-size: 16px;">顺着发丝的各向异性高光</span></p>
+<p><span style="font-size: 16px;">制作过游戏的伙伴应该清楚，单看每个技术都不难。</span><span style="font-size: 16px;">但是想让一直做unlit材质的美术，能一口气做出这么完备的效果，可不是一件易事，很考验团队能力。</span></p>
+<p><span style="font-size: 16px;">人物展示界面的特写镜头</span></p>
+<p>每个角色都有自己的特效镜头，甚至于特殊皮肤特效镜头还不一样。 </p>
+<p><span style="font-size: 16px;">普通镜头5秒左右，像kda的镜头有接近10秒。</span><span style="font-size: 16px;">（这次手游简直是kda专场）</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201107/9bad0d6fdc774dc8a5e0d96469ca58e9.gif" /></p>
+<p><span style="font-size: 16px;">‍</span><span style="font-size: 16px;">每个角色！每个特殊皮肤！都有一个单独的特写镜头！</span></p>
+<p><span style="font-size: 16px;">想想这个复杂程度。</span></p>
+<p><span style="font-size: 16px;"><span>‍</span></span></p>
+<p><span style="font-size: 16px;">物理模拟 <span>‍</span><span>‍</span></span></p>
+<p><span>‍</span><span>‍</span></p>
+<p><span style="font-size: 16px;">裙摆，头发，在展示界面都有着相当精准的摆动。</span></p>
+<ul>
+<li>摆动起来形状很好看。</li>
+<li>除大幅度摆动外，少有穿帮现象。</li>
+</ul>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201107/7ee4107619df41b5811a09139640f956.gif" /></p>
+<p><span style="font-size: 16px;">资源无缝加载卸载</span></p>
+<p><span style="font-size: 16px;">每个角色和皮肤，都有自己的 模型/贴图/背景/音效/特效/动画 等一系列美术资</span><span style="font-size: 16px;">源。</span></p>
+<p><span style="font-size: 16px;">正常加载下一个模型，需要三步：加载下个资源，显示内容，卸载上个资源。</span></p>
+<p><span style="font-size: 16px;">这一来二去难免会卡一下，</span><span style="font-size: 16px;">但在《英雄联盟手游》里，随意切换皮肤和角色，几乎是瞬间加载。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201107/bc7dee6e558d4262a1679d271e270d6c.gif" /></p>
+<p><span style="font-size: 16px;">同样是unity，为什么你这么不合理。</span><span style="font-size: 16px;">嘛时候官方发文章讲讲啊，急死了。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201107/65256df5e9224d58893fc70401f7d022.jpeg" /></p>
+<p>顶尖的UI设计</p>
+<p><span style="font-size: 16px;">《英雄联盟》的UI设计，水平绝对是第一梯队。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201107/4d122d3ae2834b50866e11ae1ac0f437.jpeg" /></p>
+<p><span style="font-size: 16px;">ui更新</span></p>
+<p><span style="font-size: 16px;">《英雄联盟》的UI风格整整改过4版。</span></p>
+<p><span style="font-size: 16px;"></span><span style="font-size: 16px;">从最初模仿《魔兽争霸》，到具象的碉堡形状，到逐渐扁平化，到现代风格。</span><span style="font-size: 16px;">不是修补，是整个风格推倒重来4次。</span></p>
+<p><span style="font-size: 16px;"></span><span style="font-size: 16px;">试问还有哪个游戏有这种魄力，《</span><span style="font-size: 16px;">英雄联盟手游》完美继承了整套UI。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201107/04148867850c4e60be5456ca761b1402.gif" /></p>
+<p><span style="font-size: 16px;">注意看</span><span style="font-size: 16px;">（压缩太勐，建议看视频，原版比这好一万倍）</span></p>
+<ul>
+<li>每个元素出场和入场都有自己的顺序和动画</li>
+<li>前置菜单出现会模煳后面的画面 （类似于景深）</li>
+<li>UI的不同材质感，金属镶边/宝石/雾气/布料等</li>
+<li>UI上的光效</li>
+</ul>
+<p><span style="font-size: 16px;">动画，缩放，深度，材质，光线。</span></p>
+<p><span style="font-size: 16px;">这不正是微软发的设计风格：Fluent Design，有兴趣的可以了解下。此前我只在《</span><span style="font-size: 16px;">明日方舟》中见过这么高级的UI设计。</span></p>
+<p><span style="font-size: 16px;">再打开某款moba游戏看看，有没有感觉这两个，一个是工艺品一个是儿童玩具。</span></p>
+<p><span style="font-size: 16px;">感兴趣的可以看下官方发的ui设计视频。顺便关注一下这个官方号，太可怜了才8w粉。</span></p>
+<p>新的业界标杆已经出现</p>
+<p><span style="font-size: 16px;">《英雄联盟》另一个很惊人的成就，是在美术风格上，让全世界达成了统一。</span><span style="font-size: 16px;">邀请各国的美术家去设计角色，最终撮合成大众风格。</span><span style="font-size: 16px;">不至于局限在亚洲。</span></p>
+<p><span style="font-size: 16px;">受众广，手游，还在渲染技术上补齐了自己的短板。</span></p>
+<p><span style="font-size: 16px;">相反，很多公司该紧一紧，过去还能说《英雄联盟》渲染还不如我的手机游戏，现在Riot不仅进入了手机市场，还直接拔高了业界标杆。</span></p>
+<p><span style="font-size: 16px;">财大气粗的拳头这次着实让我震撼到了，给每个角色皮肤重置模型贴图，又把命给续上了。</span></p>
+<p><span style="font-size: 16px;">流水的流行游戏，铁打的《英雄联盟》。</span></p>
+<p><span style="font-size: 16px;">对了，你问我游戏内的战斗画面？战斗和人物展示界面是两套资源。</span></p>
+<p><span style="font-size: 16px;">还是原汁原味，原汁原味。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201107/814ee46068214324acc0165b9019c4db.jpeg" /></p>
+➜​半年收入超10亿，这家靠女性向游戏低调赚钱的公司10年了
+http://www.sohu.com/a/430265722_204824	53252
+<p>
+<table>
+<tbody>
+<tr>
+<td><span><span style="font-size: 16px;">「女性向游戏第一股」。</span></span></td>
+</tr>
+</tbody>
+</table></p>
+<p><span style="font-size: 16px;">文/托马斯之颅</span></p>
+<p><span style="font-size: 16px;">今年年初，看到iOS畅销榜Top5的《浮生为卿歌》，很多人才发现友谊时光（</span><span style="font-size: 16px;">原玩友时代）</span><span style="font-size: 16px;">的实力超过了自己的想象。</span></p>
+<p><span style="font-size: 16px;">这家公司地处苏州，很少抛头露面，旗下的游戏却总能在榜单上出现，例如《熹妃传》《熹妃Q传》《精灵食肆》等等。去年10月，他们还赴港IPO，成了「女性向游戏第一股」。据公告显示，今年上半年他们的收入约为10.5亿。</span></p>
+<p><span style="font-size: 16px;">11月7日，友谊时光在苏州奥体中心举办了10周年庆典。借此机会，葡萄君也复盘了他们10年的创业历程，试着解码这家低调赚钱的公司。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201107/771eb45d081949dba190994aee9b26d3.jpeg" /></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">「女儿国」与页游时代</span></span></p>
+<p><span style="font-size: 16px;">2008年，决定创业的蒋孝黄创办了一个叫做「女儿国」的网站。</span></p>
+<p><span style="font-size: 16px;">那时在互联网的浪潮下，虚拟社区、交友网站、垂直类应用类的项目如火如荼。反复推敲之后，蒋孝黄决定瞄准女性群体，建立一个女性向的社交资讯平台，并鼓励用户建立自己的兴趣圈子和粉丝社群。</span></p>
+<p><span style="font-size: 16px;">这个定位帮“女儿国”积累了不少用户，团队也试着代理了几款页游。然而女性用户对市面上常见的三国游戏不感兴趣，数据并不好看。于是他们决定亲自上阵，自研一款女性向游戏试试。</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201107/d1737d1505934942a532f5a7bf488151.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: center;"><span style="font-size: 16px;">友谊时光董事长蒋孝黄</span></p>
+<p><span style="font-size: 16px;">经过一番调查，团队发现了一个潜在的机会：当时《穿越时空的爱恋》《宫锁心玉》等古风小说和影视剧很火；不少90后还会在QQ群和论坛用古腔古调的台词玩角色扮演，甚至有两个女生在一个帖子下面聊了2年。于是他们聘请了一位历史专业、熟悉传统文化的负责人，准备做一款古风游戏。</span></p>
+<p><span style="font-size: 16px;">为了组建研发团队，蒋孝黄发动了自己的人脉资源，开始四处寻找人才，组建团队。由于担心坐落在居民楼里的办公室面积太小，显得寒酸，他往往要到旁边的咖啡馆面试。而且在人手紧张，团队缺乏经验的情况下，他还兼任了Linux服务器安装，技术运维，DBA等方面的工作。</span></p>
+<p><span style="font-size: 16px;">2010年10月，在公司账面资金只能撑3-4个月的情况下，页游《宫廷计》上线，首月流水达到了30万——虽然不多，但他们终于有了稳定的盈利，也打出了名气。几款产品联运下来，公司也扩展到了近百人的规模。</span></p>
+<p><span style="font-size: 16px;">账上的钱多了之后，团队陆续研发了几款SLG、SNS和战棋RPG页游。SLG的数据不错，但技术框架出了问题，为了重构服务端程序，错过了腾讯游戏大厅的免费推广；后两款的数据也比较一般。而从长期来看，女儿国的用户数量并不大，大部分产品都要和外部平台联运，公司的发展遇到了瓶颈。</span></p>
+<p><span style="font-size: 16px;">2011年底，看到iPhone4的崛起，蒋孝黄觉得手游是个机会。</span></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">手游时代的研发转型与升级</span></span></p>
+<p><span style="font-size: 16px;">对于刚刚跑通页游开发流程的团队来说，技术显然是最难搞定的事情。</span></p>
+<p><span style="font-size: 16px;">友谊时光第一款手游的客户端主程三丰从没接触过手游研发，接到任务之后，他先从淘宝上买了本《C++Primer》，开始自学脚本语言Lua，「第一次用Lua还真不习惯，这下标怎么还不是从0开始，而是从1开始呢？」</span></p>
+<p><span style="font-size: 16px;">据程序谪鹄回忆，公司刚刚开发手游的时候用的是Cocos一代，它没有编辑器，大家要学习xml去手动调整界面；不能发布到移动平台，每修改一处，就要运行一次查看。由于经常工作到晚上10点以后，个别技术人员甚至带着睡袋上班。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201107/f14ea644bc444935b5875ea5a9fa7243.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">《宫廷风云》</span></p>
+<p><span style="font-size: 16px;">2012年底，《宫廷风云》上线，友谊时光看到了女性向古风游戏的红利，开始研发各个品类的同类题材产品，积累数值，战斗系统的研发经验。2015年，在数次登门拜访隐居浙江的作家解语，并签下《熹妃传》的永久版权之后，他们推出了第一款月流水超千万的手游《熹妃传》，也打响了发行品牌玩友时代的名头。</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201107/9cd599185ac1442a8a20fc2e8e9b64e6.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">《熹妃传》</span></p>
+<p><span style="font-size: 16px;">不过同样是在这个时期，友谊时光意识到了自己的短板。谪鹄说，他们的第一代编辑器不太完善，使用C++极其容易崩溃，安卓机型适配问题不断。而且越来越多厂商开始进入女性古风领域，他们需要提升技术实力，建立更高的竞争壁垒。</span></p>
+<p><span style="font-size: 16px;">于是在接下来的时间，友谊时光开始改善研发流程，引进相关人才，建设技术和美术中台，试着提升自己的3D制作能力。</span></p>
+<p><span style="font-size: 16px;">2017年初，友谊时光成立了引擎开发部，并推出了引擎技术平台FTEngine，用其实现了资源监测，性能检测，剧情编辑器，捏脸等功能。美术中心也开始使用分镜设计+编辑器的方法来制作剧情动画——后来它被应用到了Q版+写实的《熹妃Q传》当中。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201107/39dab12968924b628412ad038d6b84cd.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">《熹妃Q传》</span></p>
+<p><span style="font-size: 16px;">据招股书显示，2018年，《熹妃Q传》为友谊时光贡献了6.92亿的收入，成了公司新的支柱产品。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201107/6b5fa1ed3ae84db1865a21e8fb10807c.jpeg" /></p>
+<p><span style="font-size: 16px;">而到了年初，几款3D产品的积累终于在《浮生为卿歌》上体现了出来。根据名城苏州网的报道，《浮生为卿歌》的研发时间超过两年，成本超过3000万。它采用了3D开放视角，实现了实时天气和无缝大场景衔接——这种逼近主流MMO的美术品质大大降低了它的买量成本，这才有了文章开头iOS畅销榜Top 5的成绩。 <span>‍</span></span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201107/c96037c7b75843e0bcbed94dcb7e259b.gif" /></p>
+<p><span style="font-size: 16px;">用 <span style="font-size: 16px;">10年打造的「女性向游戏第一股」</span></span></p>
+<p><span style="font-size: 16px;">在我眼中，友谊时光肯定不是最顶尖的研发/发行公司，但它可能是市面上短板最不明显的女性向游戏厂商。</span></p>
+<p><span style="font-size: 16px;">与这条赛道上工业制作能力最强的厂商相比，他们的优势在于对大众圈层的理解，以及在玩法和系统上的优势——玩过《浮生为卿歌》的话不难发现，它有点儿像是卡牌回合制与MMO的融合，这种设计显然更接地气。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201107/ff369e8269b846199c965a4eb0e74a81.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">今年上半年友谊时光几款产品的收入情况（来自半年报）</span></p>
+<p><span style="font-size: 16px;">如果与那些刚刚试水女性向的中小公司相比，友谊时光的研发和发行实力又成了它的竞争壁垒。除了中台和3D研发管线，他们在2016年就成立了海外发行团队，在中国港澳台，日韩和北美都打过胜仗，还在中国香港和韩国组建了子公司。而《浮生为卿歌》又让他们有了大预算投放的经验。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201107/d65dfb46939e4654834e9e47e0ce4a9c.png" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">《浮生为卿歌》买量素材</span></p>
+<p><span style="font-size: 16px;">而现在，除了古风女性向这一优势赛道，友谊时光还推出了二次元模拟经营《精灵食肆》，并计划推出职场题材的《杜拉拉升职记》，仙侠题材的《此生无白》等产品。另外，他们还在探索非女性向的卡牌和SLG，并试着进入文创行业，打造IP生态——作为一家10年的公司，他们有这个底气。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201107/23434c8b93794bffbe2f6ec6322ccb82.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">在半年报中出现的在研新品</span></p>
+<p><span style="font-size: 16px;">在10周年庆典上，友谊时光董事长蒋孝黄回忆了公司的历程，一遍又一遍地感谢大家，几度哽咽得说不出话。而在为八年以上老员工颁奖的环节，人事行政中心的张静怡回忆，2011年她第一次主办年会的时候现场只有4桌人；而今天是她办的第九场年会，现场有2000人——讲到这儿她泣不成声。</span></p>
+<p><span style="font-size: 16px;">在演讲快结束的时候，蒋孝黄说在今年和未来的2年，他个人将拿出8000万股，奖励给公司的业务骨干和后起之秀。他还说希望有一天，当步履蹒跚，年华老去的时候，同事们还能记得大家在一起的友谊时光。</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201107/3ed36cb9a0104f7588b5b98609cda1f1.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">现场还抽奖送出了汽车的一年使用权</span></p>
+<p><span style="font-size: 16px;">（本文资料主要来自友谊时光十周年特刊）</span></p>

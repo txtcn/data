@@ -1,0 +1,266 @@
+➜英雄互娱3.41亿增资入股《战双帕弥什》开发商，将占股46.98%
+http://www.sohu.com/a/434069179_204824	56503
+<p><span style="font-size: 16px;">游戏葡萄11月24日消息，英雄互娱昨日发布公告，称其全资子公司天津英雄金控科技有限公司</span><span style="font-size: 16px;">（以下简称“英雄金控”）</span><span style="font-size: 16px;">拟以购买股权及增资入股的方式增加持有参股公司，广州库洛科技有限公司</span><span style="font-size: 16px;">（以下简称“广州库洛”）</span><span style="font-size: 16px;">的股权。在本次交易完成后，英雄金控将总计持有广州库洛46.9857%的股权，总计花费3.41亿元。</span></p>
+<p><span style="font-size: 16px;">广州库洛是一家专注于游戏研发的公司，其代表作是二次元3D动作手游《战双帕弥什》，该游戏发行前的全平台预约量达到200万左右，在开服后第二天便登上了畅销榜第三的位置。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201124/dc32e6773d3b4cff83c458eda6f2d227.jpeg" /></p>
+<p><span style="font-size: 16px;">英雄互娱总裁吴旦曾告诉葡萄君，2017年最早谈投资的时候，为了消除库洛的顾虑，他直接把定好的投资一笔全部打了过去。而在研发阶段，英雄互娱也帮他们解决了服务器技术、TA、运营团队建设等问题。截至年初，库洛的团队从接受投资时的30多人扩大到了150多人。</span></p>
+<p><span style="font-size: 16px;">按照吴旦的说法，2020年，英雄互娱要彻底转型成产品型的公司：「行业下半场的机会就这一次，今年还做不起来就不用做了。」增资库洛或许也是这一理念的证明。</span></p>
+➜我想白嫖《Dota2》模型制作demo，谁知竟成了一周的噩梦
+http://www.sohu.com/a/434069450_204824	56503
+<p>
+<table>
+<tbody>
+<tr>
+<td><span>本文首发于知乎，作者Lute Li，原标题《Dota2角色渲染，用unity重现其shader》，游戏葡萄已获转载授权。</span></td>
+</tr>
+</tbody>
+</table></p>
+<p><span style="font-size: 16px;">制作demo时有没有遇到过，急需大量角色资源，但又无从下手的烦恼？</span></p>
+<p><span style="font-size: 16px;">www.dota2.com/workshop/requirements </span></p>
+<p><span style="font-size: 16px;">V社早已公开《Dota2 <span style="font-size: 16px;">》</span>的模型，模型骨骼贴图一应俱全，可以直接用他的资源来进行demo制作。 </span></p>
+<p><span style="font-size: 16px;">左边是unity内渲染，右边是 <span style="font-size: 16px;">《Dota2》</span>展示界面。 </span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201124/e7e2cb4f9d5240409fe99b58836a5677.jpeg" /></p>
+<p><span style="font-size: 16px;">看似一切美好，下载模型贴图，扔到unity，网上找个DotaShader，贴图一贴，转为人形骨骼，就可以随意套动作库。</span></p>
+<p><span style="font-size: 16px;">然而这个想法，让我经历了一周的噩梦。</span></p>
+<p><strong><span style="font-size: 16px;">先总结下我这一周的感想：</span></strong></p>
+<p><span style="font-size: 16px;">下面开始正文。</span></p>
+<p><span style="font-size: 16px;">|1.《Dota2》贴图问题</span></p>
+<p><span style="font-size: 16px;">先看一下原始贴图资源。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201124/e9dfdf90cecf42fb9462982ae66b85c5.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">一个材质球有接近20张贴图。平均一个角色3个材质球，多的时候有6个。</span></p>
+<p><span style="font-size: 16px;">首先检查一下贴图，你会发现一堆问题。</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201124/08e03417b1234acea68610c81ec6bf7e.jpeg" /></p>
+<ul>
+<li>法线上有某个uv的水印 （大概是2u，但是模型内没有2u）。</li>
+<li>某些贴图uv是反过来的 （红圈处） ，而且不是每个角色都这样。</li>
+<li>你以为这就完了？下了多个角色后会发现，有些法线是DX有些是OpenGL。</li>
+</ul>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201124/3f3bdcd80ff54cd09e72cf24949b0aa6.png" /></p>
+<p><span style="font-size: 16px;">贴图上有乱七八糟的信息？uv有问题？不同人物的贴图命名规范还不一样？</span></p>
+<p><span style="font-size: 16px;">怕不是valve派实习生用截帧工具抓出来的资源，真有你的啊G胖。</span></p>
+<p>|2.国内网站上关于《Dota2》渲染文章的错误</p>
+<p><span style="font-size: 16px;">官方提供的文档</span><span style="font-size: 16px;">只有一个</span><span style="font-size: 16px;">。</span></p>
+<p><span style="font-size: 16px;">http://wiki.polycount.com/w/images/8/85/Dota2ShaderMaskGuide.pdf</span><span style="font-size: 16px;"><span style="font-size: 16px;"></span></span></p>
+<p><span style="font-size: 16px;">后来</span><span style="font-size: 16px;"><span>修</span><span>改了一版</span></span><span style="font-size: 16px;">。</span></p>
+<p><span style="font-size: 16px;">https://support.steampowered.com/kb/3081-QUXN-6209/dota-2-workshop-item-shader-masks </span></p>
+<p><span style="font-size: 16px;">很多人写的文章只包含四五张图片，对几张不理解的mask和warp图绝口不提。</span></p>
+<p><span style="font-size: 16px;">更有甚者能毫无根据得脑补一套算法，也是厉害。</span></p>
+<p><span style="font-size: 16px;">关键最终渲染不好看。</span></p>
+<p><span style="font-size: 16px;">我在了解到网上没有现成shader后，揭开了SubstancePainter 和 Marmoset Toolbag的Dota2Shader。兴致冲冲，以为找到了光明。结果看了两宿后才知道，他们只是为自家软件做的，很多参数上来就power个256次，而且还缺很多贴图。</span></p>
+<p><span style="font-size: 16px;">所以我根据以往经验来推断Dota2Shader。</span><span style="font-size: 16px;"></span></p>
+<p>|3.我来拼凑shader</p>
+<p><span style="font-size: 16px;">先把熟悉的贴图拿出来</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201124/4afa25b9433445b2a145bd5f4610e4e6.jpeg" /></p>
+<p>
+<table>
+<tbody>
+<tr>
+<th><span style="font-size: 16px;">color</span></th>
+<th><span style="font-size: 16px;">固有色（不是漫反射，漫反射金属为黑色）</span></th>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">cubemap</span></td>
+<td><span style="font-size: 16px;">天空球</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">detail * detailMask</span></td>
+<td><span style="font-size: 16px;">细节图(单独调节缩放) * 细节遮罩 <span>→加到固有色上 </span></span></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">metalnessMask</span></td>
+<td><span style="font-size: 16px;">金属度</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">normal</span></td>
+<td><span style="font-size: 16px;">法线</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">SelfillumMask</span></td>
+<td><span style="font-size: 16px;">发光遮罩 <span>→遮罩 * 固有色 = 自发光图 </span></span></td>
+</tr>
+<tr>
+<td><span style="font-size: 16px;">translucency</span></td>
+<td><span style="font-size: 16px;">透明度</span></td>
+</tr>
+</tbody>
+</table></p>
+<p><span style="font-size: 16px;">然后把Warp和条状贴图拿出来，这些贴图之后再说。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201124/da449de56a0045358399f9bd605525d9.jpeg" /></p>
+<p><span style="font-size: 16px;">剩下四个。</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201124/b5833eba10f743ccb0a437b470ff89fb.jpeg" /></p>
+<p><span style="font-size: 16px;">分别是</span><span style="font-size: 16px;">RimMask，specularExponent ，specularMask，tintByBaseMask。 </span></p>
+<p><span style="font-size: 16px;">从名字可以看出来，他们分别和</span><span style="font-size: 16px;">菲涅尔，高光形状，高光颜色</span><span style="font-size: 16px;">有关。Mask是乘上去，Exponent是指数</span><span style="font-size: 16px;">（power的幂）</span><span style="font-size: 16px;">。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201124/9e215c37f2e1410dbc9c139447ec4bfd.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">菲涅尔 * RimMask</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201124/3f54102033aa445c90f49998aa050468.jpeg" /></p>
+<p style="text-align: center;"><span style="font-size: 16px;">BlinnPhong^Exponent * SpecularMask</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201124/35742340b1d6463a8e04b7e39a8ab163.jpeg" /></p>
+<p style="text-align: left;"><span style="font-size: 16px;">Lerp</span><span style="font-size: 16px;">(固有色,自选高光颜色,Tint)</span><span style="font-size: 16px;">，相当于在制造pbr的specular贴图。</span></p>
+<p><span style="font-size: 16px;">specular贴图在standard里用的是Lerp</span><span style="font-size: 16px;">(0.04, 固有色, 金属度)</span><span style="font-size: 16px;">，有兴趣的可以试一试，长的差不多。不过这个颜色可以自己调。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201124/c3a17715b5f640b184263919123bd66d.jpeg" /></p>
+<p><span style="font-size: 16px;">左边是金属度转的，右边是tint转的</span></p>
+<p><span style="font-size: 16px;">好，大部分素材都集齐，回头看一下我印象里光照模型。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201124/686854e33be6465fba099d0beca10de3.jpeg" /></p>
+<p><span style="font-size: 16px;">直射光 / 环境光的漫反射 / 镜面反射</span><span style="font-size: 16px;">一共四项。</span></p>
+<p><span style="font-size: 16px;">先看directDiffuse也就是直射光漫反射。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201124/9afb8c57c5284f89993c9b213457795c.jpeg" /></p>
+<p><span style="font-size: 16px;">他用到了halfLambert + DiffuseWarp，具体效果如上图。</span></p>
+<p><span style="font-size: 16px;">用这个方法可以实现一点点假3s效果。</span></p>
+<p><span style="font-size: 16px;">其次，他使用DiffuseWarpMask当作UV的V，用于在一个材质球内使用多种颜色的DiffuseWarp。</span></p>
+<p><span style="font-size: 16px;">注意DiffuseWarp要改为sRGB和UVClamp。</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201124/3516ef9d9e3f4c039e3e8cf9f937fb92.jpeg" /></p>
+<p><span style="font-size: 16px;">看蓝胖皮肤侧面偏紫，土猫更是有红绿两层颜色。</span></p>
+<p><span style="font-size: 16px;">indirectDiffuse就当一个颜色，加上去解决。</span></p>
+<p><span style="font-size: 16px;">最麻烦的是两个specular。</span></p>
+<p><span style="font-size: 16px;">我在游戏内一直想找光滑度特别高，能反射旁边环境的材质，也就是反射球indirect specular。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201124/68a7855f65554dec956dc665eba0f9d7.gif" /></p>
+<p><span style="font-size: 16px;">在unity内，长这样。</span></p>
+<p><span style="font-size: 16px;">然后我对比了下游戏内，没有发现任何一个角色有反射球内容。 <span style="font-size: 16px;">《Dota2》</span>最接近黑色光滑金属的龙骑，也没有反射球内容。 </span></p>
+<p><span style="font-size: 16px;">而且打开角色资源内的CubeMap会发现，他只有周边和底部有亮色。</span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201124/fec1d64f04764c609b1c4043b021c016.jpeg" /></p>
+<p><span style="font-size: 16px;">于是我推断，《Dota2》内是不是没有传统的direct specular和indirect specular，而是一个魔改的DOTASpecular!</span></p>
+<p><span style="font-size: 16px;">依靠这个想法，我在substance的 <span style="font-size: 16px;">《Dota2》</span>中寻找线索。 </span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201124/5476782ed6fe47eab538598529c15bb4.jpeg" /></p>
+<p><span style="font-size: 16px;">菲涅尔 * 法线朝上的面 * 自选颜色</span><span style="font-size: 16px;">，这不就是indirect specular吗。</span></p>
+<p><span style="font-size: 16px;">moba游戏内，必然存在朝上的面对着天空，朝下的面对着地面。</span></p>
+<p><span style="font-size: 16px;">妙啊，靠rim来模拟环境光。</span></p>
+<p><span style="font-size: 16px;">cubemap不用在反射球，我猜测是加到directSpecular的灯光颜色内，让高光颜色更加丰富一些。</span></p>
+<p><span style="font-size: 16px;">整理一下，dota光照模型。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201124/d439fcc0696e487a8ac21b80c7a39b5e.jpeg" /></p>
+<p><span style="font-size: 16px;">其中有一段</span><span style="font-size: 16px;">max(Fresnel(外黑内白)，DiffuseWarpMask)。</span></p>
+<p><span style="font-size: 16px;">我的理解是让主光的高光在模型边缘处减少，避免高亮的边缘出现，是一个很主观的参数。</span></p>
+<p><span style="font-size: 16px;">剩下的几张warp。</span></p>
+<p><span style="font-size: 16px;">fresnelWarpColor，fresnelWarpRim，fresnelWarpSpec这三张必然和NdotV有关。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201124/d298a479b58d481bbd2cafe3151ad045.jpeg" /></p>
+<p><span style="font-size: 16px;">颜色很像PBR常用到的F0公式。OneMinus，Pow5 和 带F0的Fresnel，分别对应三张贴图，大概吧。</span></p>
+<p><span style="font-size: 16px;">bloom和selfIllumMask1，我猜测和后处理bloom有关。reflectance实在没猜出和什么有关。</span></p>
+<p>|4.我的感想</p>
+<p><span style="font-size: 16px;">本来想白嫖 <span style="font-size: 16px;">《Dota2》</span>模型制作demo，结果折腾这么久的幺蛾子。 </span></p>
+<p><span style="font-size: 16px;">真想快速使用，套standard材质，把固有色法线金属度光滑度自发光一贴，啥事没有。</span></p>
+<p><span style="font-size: 16px;">既然都自定义渲染，就不要太纠结具体过程</span><span style="font-size: 16px;">（说的就是我）</span><span style="font-size: 16px;">，只要制作软件和游戏内达成一致就好，画面好坏的最后还是得看美术。</span></p>
+<p><span style="font-size: 16px;"><span style="font-size: 16px;">《Dota2》</span>作为一个2013年的游戏，为了兼容当年低端电脑，使用了很多trick技术。放在现在看，贴图分辨率/模型面数/渲染技术，比手机游戏标准还低，但是画面表现还算不错。 </span></p>
+<p><span style="font-size: 16px;">这让我不禁感慨科技发展。</span></p>
+<p><span><strong><span style="font-size: 16px;">1.这套渲染不适用于什么</span></strong></span></p>
+<p><span style="font-size: 16px;">想模拟现实中的材质，PBR还是有无可比拟的优势。</span><span style="font-size: 16px;">（主要是高光）</span></p>
+<p><span style="font-size: 16px;">PBR材质不等于写实风格游戏。同理，卡通风格游戏也可以用PBR材质。</span></p>
+<p><span style="font-size: 16px;">枪火重生，守望先锋等一系列游戏都是用PBR渲染。只是在模型设计和配色上偏卡通。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201124/873175775f9c4583a1ab17392bad53c4.jpeg" /></p>
+<p><span style="font-size: 16px;">枪火重生</span></p>
+<p><span><strong><span style="font-size: 16px;">2.这套渲染适用于什么</span></strong></span></p>
+<p><span style="font-size: 16px;">物理材质无法满足你，想使用风格化渲染，就可以尝试各种warp贴图来定制渲染。</span></p>
+<p><span style="font-size: 16px;">如二次元的渲染。</span></p>
+<p><span style="font-size: 16px;">不过在制作贴图的软件上，得配套完善工作流，要不然面对20来张不知所谓的贴图，任何美术都得崩溃。</span></p>
+<p><img width="720" src="http://p8.itc.cn/q_70/images03/20201124/b53ebd74afc74e64a391afc23f1c592b.jpeg" /></p>
+<p><span style="font-size: 16px;">最后来一张蓝胖镇楼。</span></p>
+➜《魔兽世界》9.0来了，可能已经是你认不出的样子了
+http://www.sohu.com/a/434069646_204824	56503
+<p>
+<table>
+<tbody>
+<tr>
+<td><span>每个《魔兽世界》玩家心里都有一个自己觉得最好玩的版本。</span></td>
+</tr>
+</tbody>
+</table></p>
+<p><span style="font-size: 16px;">文/安德鲁</span></p>
+<p><span style="font-size: 16px;">你今天请假去玩《魔兽世界》9.0 了吗？</span></p>
+<p><span style="font-size: 16px;">对于魔兽这样一款老游戏，每次大版本发布都是玩家们的狂欢，但对已经AFK玩家和非魔兽玩家来说，却像是两个隔绝的世界。</span></p>
+<p><span style="font-size: 16px;">即便如此，《魔兽世界》正式服的第8个资料片《暗影国度》还是打破了以往历代的预购纪录。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201124/77947a55a8094a309079525c026e55e8.png" /></p>
+<p><span style="font-size: 16px;">原因很简单，这一次关于暗影界的剧情，是过去游戏内外都几乎从未涉及的。对于绝大多数玩家来说，这都是全新的、不了解的故事背景。</span></p>
+<p><span style="font-size: 16px;">外在呈现上，新地图的“晋升堡垒”“法夜”等几个区域，表现出了一些以往《魔兽世界》里极少见到的风格。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201124/aa9ebe80239b46fd867317df4343e0e0.jpeg" /></p>
+<p><span style="font-size: 16px;">同时，核心玩法上的调整，也表现出了暴雪一些新的设计思路，比如明显带有Roguelike要素的“罪魂之塔”。</span></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">再加上捏脸、光追这些细节上的增补、改动，《魔兽世界》呈现出了很不一样的面貌。</span></p>
+<p><span style="font-size: 16px;">我从德拉诺后期6.3版本入坑，经历过7.0和8.0开服前几天的盛况。虽然自诩是比较理性的玩家，但也能切实体会到，这一次新版本带来的直观感受“很新”。</span></p>
+<p><span style="font-size: 16px;">甚至可以说，经过16年的发展演变，到现在9.0版本的《魔兽世界》已经是很多人认不出的样子了。</span></p>
+<p><span style="font-size: 16px;">“</span><span style="font-size: 16px;">这还是魔兽吗”？</span></p>
+<p><span style="font-size: 16px;">假如你有很长一段时间没碰过《魔兽世界》了，那么几乎可以肯定，《暗影国度》看起来一切都是全新的。</span></p>
+<p><span style="font-size: 16px;">首先，游戏主线故事继续推进，开启了一片新区域的冒险，随之而来的，是字面意义上的画风巨变。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201124/789bc08a422244008190f22fc7cd3a00.jpeg" /></p>
+<p><span style="font-size: 16px;">之前7.0和8.0两个版本，讲的是《魔兽世界》长久以来的两大剧情主题：打燃烧军团，还有联盟部落间的冲突。对于老玩家来说，不管是军团的“绿油油”，还是部落与联盟的红蓝对比，都是熟悉的场面。</span></p>
+<p><span style="font-size: 16px;">而9.0《暗影国度》，则第一次把故事的舞台放在了此前没出现过的暗影界里。设定上，暗影国度是魔兽世界观里死者往生的领域，所有生灵灵魂的汇集地。不过如果单凭这一点，而把它想象成阴森恐怖的世界，那可能会被实际的画风惊掉下巴。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201124/a8412d96d2d444bcada6ceaeef02e189.png" /></p>
+<p><span style="font-size: 16px;">只从这个Loading页面的风格，你大概也能感觉到，这跟以往熟悉的《魔兽世界》画风不太一样。具体看几个主要的主线故事区域，可能会有更明显的陌生感。</span></p>
+<p><span style="font-size: 16px;">上周暴雪发布了《暗影国度》的预告CG《帷幕彼岸》，用1分多钟的视频展示了《暗影国度》整体上的几种新视觉风格。如果留意B站的弹幕上，你能看到各种跳戏的调侃，或是对这几种画风表露出的惊讶。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201124/7a84cd3635f74d42a775fe804c4599d9.png" /></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201124/27cdbdb6e08949499ea2c485e6c53c84.png" /></p>
+<p><span style="font-size: 16px;">比如有人觉得温西尔的哥特风，很有些《暗黑破坏神》的观感，吸血鬼相关的元素，也带着一点恶魔城的调调。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201124/507686ebbd244a32b9f895297b912bc8.png" /></p>
+<p><span style="font-size: 16px;">晋升堡垒一些NPC展翅高飞的画面，让一些观众跳戏到了《暗黑破坏神》里的天使议会；看着金光灿灿的铠甲风格，也有人在弹幕里打出了《星际争霸》里神族的台词；还有一些人调侃会飞的NPC“看着像国产大翅膀游戏”。</span></p>
+<p><span style="font-size: 16px;">抛开玩笑，《魔兽世界》在一些新内容风格上，的确表现出了一些和以往不同的元素，比如8.0里，德鲁斯瓦关于女巫会的几个故事，总能让人联想到《巫师3》的一些桥段。</span></p>
+<p><span style="font-size: 16px;">开服前官方发布的各个区域前瞻信息，也能看到各片新地图的样子：</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201124/ec5a98c5b2464acdb2eba548552b7f65.png" /></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201124/39a6be60b5344253803012dd43d3192a.png" /></p>
+<p><span style="font-size: 16px;">如果用过去的眼光来审视当前的游戏场景，对一些老玩家来说，现在《魔兽世界》可能会稍显陌生。</span></p>
+<p><span style="font-size: 16px;">其次，细节呈现上，游戏也多了一些大大小小的改变。</span></p>
+<p><span style="font-size: 16px;">比如重构了角色创建方式之后，《魔兽世界》这个古老MMORPG，终于可以算得上“能捏脸”了。</span></p>
+<p style="text-align: center;"><img src="//p4.itc.cn/q_70/images03/20201124/9d93db0acc49433298ec11ca5e35497a.png" /></p>
+<p><span style="font-size: 16px;">暴雪甚至用了版本亮点四分之一的版面，来提醒你“快去理发店捏脸”。平心而论，如果和主流MMORPG对比，现在这些角色自定义选项依然不算特别丰富，但相比过去还是有明显的进步。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201124/0beb66b780844627aa6853ef716cb614.png" /></p>
+<p><span style="font-size: 16px;">此外，还有一些细微的改良，比如主线剧情战役用了更明显的任务标志，有高亮的轮廓来标注NPC。主线任务和支线任务在列表里也有了更明显的区隔。这些明显都是向着便捷和人性化的方向做出的改动。</span></p>
+<p><span style="font-size: 16px;">玩起来依然是魔兽</span></p>
+<p><span style="font-size: 16px;">尽管画风变化不小，但《暗影国度》玩起来并没有什么明显的不一样。</span></p>
+<p><span style="font-size: 16px;">去A地击杀10个怪物，去B地收集6个道具，协助NPC进行一些仪式。这些《魔兽世界》一以贯之的模式，仍然填满了主线进程。当然，这也是传统MMORPG固定下来的范式，不太可能有什么颠覆性的改变。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201124/7598014b70f345efb99c61cd3f6c8239.png" /></p>
+<p><span style="font-size: 16px;">《暗影国度》的前夕版本，《魔兽世界》正式服等级上限压缩到了50级。这也就意味着9.0又回到了“60级满级”，就像《魔兽世界》最初那样。宣传物料上，网易暴雪也打出了“崭新的60级魔兽世界”的标语。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201124/f6445e0786724c1baac9f41df0b489e7.png" /></p>
+<p><span style="font-size: 16px;">同时，在等级压缩的基础上，每一个资料片版本的剧情任务经验，也调整到了足够从头升到满级的程度，并且新增了面向新人“手把手教学”的流放者海岛。再加上早些时候上线的“小队同步”功能，能让高等级玩家在带小号做任务的时候同步到相应等级，以便更沉浸地组队冒险。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201124/1f5a46019c2545308320348cabfced0f.png" /></p>
+<p><span style="font-size: 16px;">这一系列改动都传递了一个明显的信号：把现有内容整合成更好的升级体验。</span></p>
+<p><span style="font-size: 16px;">新版本9.0也在贯彻这个设计理念，主线战役变成了纯线性的剧情流程，不再是自选区域式的推进方式。</span></p>
+<p><span style="font-size: 16px;">在玩家吐槽了两个版本后，暴雪取消了不少需要绕山坡、钻地洞的任务设置。新地图近乎一马平川的布局，也让一边做任务一边看风景这种系列传统，有了更好的体现。这几张我在升级路上随手截的图应该会让你有直观的感受：</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201124/de6cedbc376c4a08a306f85334b1faa9.jpeg" /></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201124/433e9f3f30c945cea4cde38e4ba174da.jpeg" /></p>
+<p><span style="font-size: 16px;">同时，我依然能体会得到一些玩家之间不必言说的默契。比如一些需要击杀多个小怪的任务，大家会有意识地把怪拉倒一起。</span></p>
+<p><span style="font-size: 16px;">世界频道里，聊起新的剧情NPC总是开口闭口“凡人”，大家也都其乐融融地吐槽着“当年我拳打泰坦脚踢古神，你们不要随便看不起人”。</span></p>
+<p><span style="font-size: 16px;">推进第二章剧情的时候，我在一个搜集型的支线任务卡住了，世界频道里一句喊话之后，我瞬间就收到了3条私信告诉我“去打XX怪物”。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201124/8b2c4d4f59f94c83ace03eab076e42b2.png" /></p>
+<p><span style="font-size: 16px;">这些都让我感觉到了久违的亲切。</span></p>
+<p><span style="font-size: 16px;">至于满级后，要面对的又是这几个版本玩下来一些熟悉又陌生的内容模式。</span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201124/eaeb02ddff1744aab012c4101cdcde38.png" /></p>
+<p><span style="font-size: 16px;">带有鲜明Roguelike要素的罪魂之塔，是设计团队投入了较大精力的新增内容，再加上绑定橙装等强力装备的制造材料，让这个可重复的玩法以较强的存在感植入了游戏。此前外媒和参加测试的玩家，普遍给出了较高的评价。</span></p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201124/b755f3f9ce6c49f0baefc312986eec0d.png" /></p>
+<p><span style="font-size: 16px;">除此之外，类似于前两个版本神器圣物、特质装备的盟约和魂契机制，也都是满级后需要玩家长期投入养成线。</span></p>
+<p><span style="font-size: 16px;">最近几个版本，设定什么样的日常内容比例，让玩家花多少内容去肝，大概一直是暴雪在反复纠结、平衡的点：</span></p>
+<p><span style="font-size: 16px;">谈起《熊猫人之谜》很多人会想起略显繁重的日常；《德拉诺之王》中后期的玩法匮乏一度让魔兽的活跃玩家人数跌至冰点；《军团再临》新增了大秘境等大量的重复消耗内容，再加上各种渠道掉落的橙装，免不了一部分玩家觉得“逼肝”；而上个版本《争霸艾泽拉斯》又因为创新幅度小、新增的海岛探险和战争前线缺乏吸引力而遭到诟病。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201124/c8ccf98ad2e24455a41079eaac4cbd46.png" /></p>
+<p><span style="font-size: 16px;">于是新的版本里，橙装从过去的随机掉落改成按需锻造。《暗影国度》宣布跳票之后的这段时间，开发团队也一直在反复平衡几个势力盟约的数值，以便避免出现单个最优解的情况。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201124/15da4397f4a744688e46e83892547221.png" /></p>
+<p><span style="font-size: 16px;">从整体的玩法变化来看，大体上看得出“弥补上个版本的弱项”的设计思路。就像此前 7.0对6.0的挽救那样 。 </span><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">7.0前后，暴雪官方推出了《魔兽世界编年史》，开始修订、重构各类世界观设定。尽管难免被玩家调侃“吃书”，但也为后续的故事发展做好了铺垫。</span></p>
+<p><span style="font-size: 16px;">现在《暗影国度》开始把剧情推进到此前绝少涉足的领域，在世界观塑造上又开了新坑。对大多数玩家来说，暗影界的故事都很陌生，也多少会让人好奇后续的情节展开。</span></p>
+<p><span style="font-size: 16px;">一个高龄MMORPG的周而复始</span></p>
+<p><span style="font-size: 16px;">今天是开服首日，在死亡之翼、安苏几个大服，不出意料地又出现了服务器拥挤、排队的状况了。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201124/1c1b81b00c414db39c616aab2848b7e7.png" /></p>
+<p><span style="font-size: 16px;">开服火爆，几个月后逐渐平静下来，中间X.1, X.2一类的小版本迎来回流，到版本末期备战下一个资料片时又热闹起来。这俨然已经成了《魔兽世界》多年来十分固定的曲线。</span></p>
+<p><span style="font-size: 16px;">最近几天，我的几个公会群又重新活跃了起来。上午开服，战网好友里正在玩魔兽的人也回到了两位数。</span></p>
+<p><span style="font-size: 16px;">世界频道里，大家都在讨论新的剧情、玩法，各个公会都在积极地喊话找人，为后面的团本开荒做准备，又一片欣欣向荣的景象。</span></p>
+<p><span style="font-size: 16px;">但与此同时，也有一些容易被忽略的是，新版本的内容变化，总会有玩家觉得不满。</span></p>
+<p><span style="font-size: 16px;">比如前段时间，《魔兽世界》前设计师鬼蟹在Twitter简单谈了谈自己</span><span style="font-size: 16px;">（A</span><span style="font-size: 16px;">FK一段时间后）</span><span style="font-size: 16px;">对《暗影国度》测试服的“玩后感”。</span></p>
+<p><span style="font-size: 16px;">他提到了一些自己不太适应的变化，像大秘境设置下，副本组队过于注重AOE伤害，让人眼花缭乱的坐骑、幻化等等。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201124/d3af2a61fd8d444e85e07bfa97a0af34.jpeg" /></p>
+<p><span style="font-size: 16px;">但有趣的是，这也恰恰是正式服活跃玩家相对热衷的玩法——注重AOE的副本环境，意味着一波一波的小怪，让群伤强势的职业获得了很正向的反馈（当然弱势职业进组难的问题就要另论了）。坐骑、幻化则意味着，在副本、装备等核心内容之外，有了更多的周边游戏目标可以追求。</span></p>
+<p><span style="font-size: 16px;">这也是《魔兽世界》玩家内部，无意识的群体分化。</span></p>
+<p><span style="font-size: 16px;">就像@老刀99微博的感慨那样，正式服的新版本，似乎并没有对怀旧服造成明显的冲击。一些老玩家对正式服的各种玩法要素感到陌生，没兴趣尝试新版本的内容。</span></p>
+<p><span style="font-size: 16px;">面对版本号开到了9.0的《魔兽世界》，每个玩家心里自然都有一个自己认为最好玩的版本。</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201124/98b7d52bfecd4e7d9444889cee650ee7.png" /></p>
+<p><span style="font-size: 16px;">前些年，被问及《魔兽世界》会运营多久时，暴雪官方曾经表态称，只要还有玩家愿意玩，《魔兽世界》就会一直更新下去。最近动视暴雪的财报也提到，《暗影国度》的预购人数又创下了新的记录。</span></p>
+<p><span style="font-size: 16px;">能够预见到的是，未来几年里，这个虽然古老，但用户量级数以百万的MMORPG，一定会把版本号更新到10.0乃至更大的数字。每隔几个版本，也总会发生一些打破玩家认知的变化，就像《暗影国度》目前表现出种种熟悉又陌生的观感那样。</span></p>
+<p><span style="font-size: 16px;">那么作为玩家，你更愿意看到《魔兽世界》保持一些固定的风格，还是愿意看到游戏随版本积攒小的变化，最终形成和过去巨大的差异——尽管可能是颠覆性的、你不喜欢的变化？</span></p>
