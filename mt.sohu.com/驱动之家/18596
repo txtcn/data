@@ -1,0 +1,218 @@
+➜M1 Mac成功安装Win10后：网卡、声卡已正常 多款x86软件稳定运行
+http://www.sohu.com/a/435226083_163726	2107
+<p>上周我们报道了，国外网友Alexander Graf借助一批ARM64补丁，成功使用QEMU模拟运行了Windows 10系统。</p>
+<p>不过，当时的截图显示，网络、声音等都不工作，似乎仅仅是花拳绣腿。</p>
+<p>没想到，Graf表示已经修复了网卡、声卡问题，而且他还晒出最新截图，<strong>其中显示无论是一方软件YourPhone、OneDrive还是三方软件7-zip、Spotify等，都完全工作正常。</strong></p>
+<p>他还表示，远程桌面等功能也能用。</p>
+<p>可以看到，作者手头是一台M1处理器、8GB内存版本的Mac mini。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201130/1712c633c4274fc79504bc5805c4eac6.jpeg" /></p>
+<p>另外，从Geekbench跑分来看，在M1 Mac上虚拟化运行的Win10，跑分成绩居然超过了微软自家的ARM Win10笔记本Surface Pro X，格外好用了。</p>
+<p>考虑到QEMU的特点，恐怕M1 Mac虚拟运行Linux发行版也不在话下，就看有没有人愿意折腾了。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201130/7023b9b739c14329b55c12b5b1f457e0.jpeg" /></p>
+➜3GHz是个坎儿！AMD RX 6900 XT过不去了
+http://www.sohu.com/a/435320018_163726	27870
+<p>AMD RDNA 2架构不但规模庞大、能效很高，频率也是相当之高，官方标称加速频率就有2.25GHz，实际运行中更是可以轻松超过2.4GHz，RX 6800 XT的极限超频已达2.8GHz，似乎突破3GHz指日可待。</p>
+<p>不过根据着名极限超频玩家Roman "der8auer" Hartung的最新发现，AMD其实给RX 6000系列各款型号都设下了频率上限，而且是写死在硬件中的，无论是AIB品牌厂商还是超频玩家，都不可能突破。</p>
+<p><strong>RX 6800 XT的核心频率极限正好就是目前所能达到的最高值2.8GHz，显存频率最大则限制在17.2GHz</strong>(默认为16GHz)。</p>
+<p><span><strong>RX 6900 XT的核心频率最高允许到3.0GHz，显存则也是17.2GHz。</strong></span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201130/0958c470dc64472fac5a1ce73346f6e1.png" /></p>
+<p>RX 6800 XT为何控制得更低？大概是不想冲击到RX 6900 XT，尽管这都是极限超频才会达到的高度。</p>
+<p>尽管有这些限制，RX 6000系列的超频空间依然非常大，无论是普通游戏玩家还是极限超频玩家，都可以尽情发挥。</p>
+<p>PS：RX 6900 XT已经到手，12月8日晚上见！</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201130/00d90b334e7d47b9a51fd087247cddb0.jpeg" /></p>
+➜RX 6700 XT核心频率极限2.95GHz：超过RX 6800 XT
+http://www.sohu.com/a/435351917_163726	35923
+<p>AMD处理器崛起了，显卡也终于停止了腰杆。RX 6000系列已经可以和NVIDIA RTX 30系列在各个价位段上硬罡，还能占据不少优势，这自然得益于RDNA 2架构的优秀设计。</p>
+<p>RDNA 2架构的一个显着特点就是能效、频率都非常高，在控制住功耗的同事，RX 6800/6900系列标称加速频率就达到2.25GHz，实际测试中经常超过2.4GHz。</p>
+<p>而根据挖掘，RX 6800 XT的极限核心频率可达2.8GHz，RX 6900 XT更是设定在了惊人的3GHz。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201130/989632868fca42bcb6f292cdebef55ec.jpeg" /></p>
+<p>到了明年初，AMD还将发布基于Navi 22中等规模核心的RX 6700系列，已知包括RX 6700 XT、RX 6700两款型号。</p>
+<p>从目前掌握的情报看，RX 6700 XT将有2560个流处理器、192个纹理单元、64个ROP光栅单元、40个光追单元、3MB二级缓存，搭配192-bit 12GB GDDR6显存，等效频率16GHz，带宽384GB/s，整卡功耗预计186-211W，单8针供电。</p>
+<p>RX 6700则会精简到2304个流处理器，整卡功耗预计146-156W。</p>
+<p>频率方面，有<strong>外媒拿到了RX 6700 XT的两份BIOS，分析发现频率极限被设定在2.95GHz，也就是说大大超过了RX 6800 XT，依然接近RX 6900 XT。</strong></p>
+<p>与此同时，显存频率最高依然是17.2GHz。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201130/571c69fab166430c880eaf09a7105e15.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>功耗方面，<strong>RX 6700 XT的两份BIOS设定不同，一个186W，一个211W，正好是此前传闻的高低极限值，而后者已经超过了公版RX 6800 203W的设定。</strong></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201130/35b88b1a93f340bcbadf5d4797818a45.png" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201130/64f8aea0c31d436290b2cd50da895a43.png" /></p>
+➜再见了 热管直触！酷冷至尊新版暴雪T610P散热器评测：风更大灯更炫
+http://www.sohu.com/a/435369343_163726	41485
+<p><strong>一、 前言：双风扇+六热管的豪华散热还能有新升级？这次终无遗憾</strong></p>
+<p>对于喜爱风冷散热器的玩家来说，在挑选散热器时可不仅仅在意颜值，散热性能也同样重要。</p>
+<p>3年前，酷冷至尊就推出了一款性能和颜值兼备的风冷散热器——暴雪T610P。双风扇+六热管，以及RGB灯效和个性顶盖的组合，让它拥有了不俗的降温表现，炫酷的外观和亲民的售价，在当时也收获了无数玩家的亲睐。</p>
+<p>不过到如今来看，这款产品也并非完美。由于它采用了热管直触的接触面设计，外加仅支持RGB灯效，所以在今天来看，这款产品已经稍显落伍，一次全面升级迫在眉睫。</p>
+<p>因此，在近日，酷冷至尊就推出了全新的暴雪T610P ARGB散热器来接替它的衣钵。在前代的基础上，暴雪T610P ARGB散热器进行了多处改良，让它变得更加完美。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201130/5d02a2e02c31498587e91d593762b8a6.jpeg" /></p>
+<p><strong>全新的暴雪T610P ARGB散热器采用了更为平整的铜底设计</strong>，与前代采用的6热管直触，在接触面直接将热管压扁并行放置的方案相比，表面更加光滑平整，不用担心缝隙和毛糙的凸起，保证散热器和CPU顶层接触面始终最大，导热效率最高。</p>
+<p>此外，<strong>暴雪T610P ARGB散热器还优化了风扇扇叶曲面的设计</strong>。从参数表来看优化风扇曲面的效果。<strong>在噪音进一步降低的前提下，暴雪T610P ARGB散热器扇叶的风量和风压都有所提升</strong>。</p>
+<p>从数据来看，在相同的体积下，风量上新款从53.38CFM提升至62CFM，增幅接近10%；而风压则从1.65mm水柱增加到2.52mm水柱，增幅接近50%，可以说这一代的风扇性能大大增强。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201130/a3e717db14bb4876bca081879b960200.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>在风扇灯效上，<strong>暴雪T610P ARGB散热器也是紧跟潮流，完成了从RGB到ARGB的过渡升级</strong>。和前代相比可以实现流水灯等流光溢彩的灯光效果。</p>
+<p>接下来，就让我们一起来体验一下暴雪T610P ARGB散热器的散热效果究竟如何。</p>
+<p><strong>购买链接：</strong>天猫</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201130/88458d523a4d4cf4a7d38000be834bf3.png" /></p>
+<p><strong>二、 外观及上机效果：铜管直触终于升级变铜底 ARGB灯效更炫酷</strong></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201130/f1fc6bd16ff645cbbffee4a155071fdc.jpeg" /></p>
+<p>包装上，暴雪T610P ARGB与上一代产品十分相似，最大的区别就是渲染图中的灯效替换成了ARGB的炫彩样式。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201130/9cf9a4e7f510410a923dffffd00eabce.jpeg" /></p>
+<p>包装侧面，印有暴雪T610P ARGB的几个主要卖点：6热管铜底散热、独特的顶盖设计以及简易控制器。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201130/7c0f83176b844dd8a2c9cc1573a90f02.jpeg" /></p>
+<p>取出本体，暴雪T610P ARGB的块头相当大。120mm风扇的曲面经过优化设计，可以保持转速、噪音与上代相比不变的前提下，将风速和风压都进一步提高。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201130/558c6c8406734ecd825b14e851efe65b.jpeg" /></p>
+<p>顶部盖板有独特的酷冷至尊标志，四周缝隙隐隐约约可见到导光板，通电后应该也会有一圈环绕的ARGB光效。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201130/3bc073932bd64ef29228eb596c88b224.jpeg" /></p>
+<p>从侧面看，暴雪T610P ARGB拥有6根热管，风扇采用卡扣式安装在两侧。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201130/c4444cc8b5214731a0d656f6c9eb8481.jpeg" /></p>
+<p>与上一代的热管直触式设计不同，这一次暴雪T610P ARGB更换为铜底散热，底面更加平整，可以与CPU表面更好的贴合。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201130/69095943253a4cfd95122d2759950252.jpeg" /></p>
+<p>两个风扇各有一个接口，而灯光接口仅有一个。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201130/33b4ed4e209442cc94f221318bcfb234.jpeg" /></p>
+<p>54片铝制散热鳍片，可以增加散热的面积，提高散热效率。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201130/a88350a0067e4e6497221ff3a46617a2.jpeg" /></p>
+<p>提供的扣具和安装件兼容AMD及Intel平台，还有一个简易控制器，切换灯效十分方便。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201130/93936899450e4c53beaff69d1fdb7302.jpeg" /></p>
+<p>虽然体积较大，但是暴雪T610P ARGB安装并不算麻烦。拆下两侧的风扇后再安装就可以方便不少。对于内存、M.2 SSD的安装也没有造成阻挡。</p>
+<p>不过唯一值得注意的是，暴雪T610P ARGB较上一代变高了一些，170mm的高度对于一些机箱来说，可能会刚好顶住侧板，只能侧面大开来使用。</p>
+<p>灯效方面，酷冷至尊暴雪T610P ARGB散热器的灯珠升级为了ARGB，所以除了原来的单色、呼吸灯和关闭模式外，他还支持了流水灯特效。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201130/50d4075e22464d3c8a2624504dd68b48.jpeg" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201130/b86bdc39f0494d42bd0e5061c1c738b3.jpeg" /></p>
+<p>仅就灯效来说，增加了ARGB灯效的暴雪T610P ARGB可以展现出更为绚丽的色彩，让机箱内部更加好看。</p>
+<p><strong>三、 散热测试：风量及风压均有提升 温度比上一代直降10℃</strong></p>
+<p>在散热性能上，暴雪T610P ARGB相较上一代无论在接触面还是风扇设计上都有了改进。从热管直触升级到铜底接触，风扇曲面也经过优化，无论是风量还是风压都有了进一步的提升。</p>
+<p>那么，实际效果究竟如何呢？接下来，就让我们实际上机测试一下两款散热器之间的区别。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201130/2bcaf7898fb440d79a6c0c0d2e441f20.png" /></p>
+<p>首先要说明的是，由于测试机箱选取的较小，因此暴雪T610P ARGB的高度恰好超标，为了统一变量，在测试时我们均采用侧板未安装的形式进行测试，着重对比二者在散热效果上的区别。</p>
+<p><strong>——旧款暴雪T610P RGB散热测试</strong></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201130/fc641e82fa294166b59345bd69ffadda.jpeg" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201130/9cd79cdc01cb41148ae8de18a620b3b4.jpeg" /></p>
+<p>先测试的为旧款暴雪T610P RGB，由于灯光色调为纯色，所以风扇为全透明的样式，接触面热管直触，6根热管均压扁排列在一起。</p>
+<p><strong>1、3900X默频</strong></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201130/1daa7d862514498ca5838ac6363d6e71.jpeg" /></p>
+<p>在不做任何设置的前提下使用AIDA64的系统稳定测试单烤CPU，烤机40分钟后，CPU的温度为81℃，全核频率3.8GHz，功耗为129.96W。</p>
+<p><strong>2、全核锁频至4.1</strong></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201130/8b89929ff73c4bc2bb08c0a8ea49c1e3.jpeg" /></p>
+<p>在BIOS中锁定全核频率为4.1GHz，再度烤机40分钟，这一次温度上升到了88℃，并且一直有继续上升的趋势，功耗为147.76W。</p>
+<p><strong>——暴雪T610P ARGB散热测试</strong></p>
+<p><strong>1、3900X默频</strong></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201130/8339f084f22c40ad8c3ada691525cf15.jpeg" /></p>
+<p>在默频状态下烤机40分钟左右，暴雪T610P ARGB可以保证3900X的温度仅有72℃，全核频率为3.9GHz，功率为131.54W。</p>
+<p><strong>2、全核锁频4.1GHz</strong></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201130/8286abb3b0e44f6285cb98fa1f0ce353.jpeg" /></p>
+<p>全核频率锁定4.1GHz，烤机40分钟，温度仅有83℃，功耗144.61W。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201130/f446149d01934f3e9e6cd12e295bc585.png" /></p>
+<p>通过对比可以发现，新版的暴雪T610P ARGB可不仅仅是灯效进行了设计，散热效果上也有着实打实的提升。无论哪种情况下的烤机温度都下降了不少。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201130/5ccc9aea6ab9430a97e22ecdae810141.jpeg" /></p>
+<p>此外，在测试过程中可以感受到散热鳍片并不算烫。测温枪显示顶部的温度也就不过30℃出头，可见对于3900X来说，内部积热对于烤机的影响更大，我们使用的散热器的性能都没有被充分被发挥。在热传递更为顺畅的平台上使用时，暴雪T610P ARGB也能够充分发挥双风扇+大面积散热的优势，适用于更高功率下的使用。</p>
+<p><strong>——噪音测试</strong></p>
+<p>在官方参数表中，暴雪T610P ARGB的风扇噪音比起旧款更小，我们也测试了一下实际使用时的差距。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201130/b9570f39f52c44c988aa67dd0fe6afa8.jpeg" /></p>
+<p>办公室的环境噪音为40dB左右</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201130/0b5f2b9ffff04c2ba76b3cddc5da26ad.jpeg" /></p>
+<p>暴雪T610P RGB全速运行时噪音60dB</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201130/b967e6789fad4bb290a99de8f0fc8448.jpeg" /></p>
+<p>暴雪T610P ARGB全速运行时56.4dB</p>
+<p>由于没有专业的静音房，测试时有中央空调的噪音等干扰。从测试结果和实际听感来看，新版的暴雪T610P ARGB在噪音上的表现确实会更好一些。</p>
+<p>不过考虑两款风扇都是大面积散热鳍片+双大直径风扇的方案，并且我们测试时侧板并未安装，实际使用时两款的噪音控制应该都属于优秀水准。只不过，暴雪T610P ARGB的噪音控制会更加优秀一点而已。</p>
+<p><strong>四、 总结：灯效进步稳压旗舰U 值得一试的高档风冷</strong></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201130/72caf8f71b5f4041b7cfb7fafb1296e7.jpeg" /></p>
+<p>在升级了铜底散热+全新风扇之后，酷冷至尊暴雪T610P ARGB散热器作为一款定位面向高端玩家同时价格相较旗舰更为亲民的产品可以说再度焕发起了活力。</p>
+<p>在各档位下，酷冷至尊暴雪T610P ARGB散热器在长时间烤机后的温度相较于上一代直接降低了有10℃，并且鳍片温度并不高，可以说如果不是3900X的积热问题的话，它会有着更高的上限和性能表现，稳压旗舰U绝对不成问题。</p>
+<p>外观方面，ARGB现在几乎已经成了许多电脑配件的标配，酷冷至尊暴雪T610P ARGB散热器升级了灯效之后也算是满足了玩家对于流水灯效的追求。即便你是“光污染的鉴定反对者，酷冷至尊暴雪T610P ARGB散热器也支持关闭灯效的设置，还你一个安静且低调的机箱”环境。</p>
+<p>在安装上，虽然酷冷至尊暴雪T610P ARGB散热器的体积较大，不过因为风扇支持快拆，所以固定在主板上并不麻烦。兼容性方面，对于小主板可能会遮挡1号内存槽位，但是更为常用的2、4槽位都不会受到影响。</p>
+<p>比较值得注意的则是高度，酷冷至尊暴雪T610P ARGB散热器由于在热管底部增加了铜底设计，使之散热更迅速、更均匀，但因此它的整体安装高度比上一代多了5mm，170mm的高度会导致部分机箱的侧板无法安装，所以如果介意侧板全开时的噪音和灰尘，一定要选择合适的机箱才好。</p>
+➜联想发布拯救者Y9000X/R9000X 2021游戏本：8核CPU、售价7999元起
+http://www.sohu.com/a/435371200_163726	42319
+<p>11月30日晚，联想正式推出了拯救者Y9000X 2021及R9000X 2021款游戏笔记本，重量只有1.9千克左右，15.6寸144Hz电竞屏，RTX 2060 Max-Q显卡，分别可选Intel酷睿8核标压或者AMD锐龙7 8核标压CPU，售价8699、7999元起。</p>
+<p>联想的拯救者Y9000X/R9000X 2021游戏本是主打轻薄电竞笔记本的，<strong>主打内容创作者、重度办公人群和中度游戏爱好，所以厚度、重量控制的很出色。</strong></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201130/ee80600a4ed74374843f67b7cb749fc7.png" /></p>
+<p>与市场上其他15.6寸笔记本相比，Y9000X 2021款厚度15.9mm，重量1.86千克，R9000X 2021版则是1.92千克，厚度15.9mm，只比办公本略重一些，厚度基本相当。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201130/5a206c5e4b5e4f11816456687e00e31c.png" /></p>
+<p>轻薄的同时，散热也是个关键，拯救者Y9000X/R9000X 2021游戏本配备了TSI霜刃Pro散热系统，大亮使用了纯铜散热鳍片、高性能热管及增压风扇2.0等先进技术，支持全区进风涉及，还有智能温度传感器可以动态控制散热，降低噪音。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201130/5a43f7b6126446c6883093fb60c8070b.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>从官方的介绍来看，以R9000X 2021游戏本为例，半小时双拷负载下，CPU依然能维持45W功耗，GPU功耗也有75W，同时温度分别是85°、65°C。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201130/020f2e8f0ef8445e93643964f23d5b90.png" /></p>
+<p>显卡方面，拯救者Y9000X/R9000X 2021游戏本配备了NVIDIA的RTX 2060 Max-Q显卡，性能上非常接近RTX 2060，号称60%的功耗实现了90%的性能，同时还支持Dual-Direct GFX双模显示，可以在独显及集显中切换。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201130/25a4e3b94f38479a91fd97b0325c62d6.png" /></p>
+<p>屏幕方面，拯救者Y9000X/R9000X 2021游戏本配备了15.6寸IPS显示屏，144Hz高刷新率，响应时间只有5ms，同时还支持100% sRGB色域，支持杜比视界，还有DC调光护眼，色彩及高刷同时满足游戏及办公人群的需求。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201130/5710751a7e974c15a06e254abfea3ea2.png" /></p>
+<p>扩展性方面，拯救者Y9000X/R9000X 2021游戏本支持板载+扩展内存，容量16GB，还有512GB SSD，双M.2接口。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201130/cd5bdf6e294a4e09b19c2fb767c29b5b.png" /></p>
+<p>电池方面，拯救者Y9000X/R9000X 2021游戏本配备了71WH电池，适配器功率最高超大230W，支持100W快充。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201130/6d3de1fcf70b4d25945742c49477eb2b.png" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201130/9fadcc4836ac420b9beb690da5e1ca58.png" /></p>
+<p>最后是售价，<strong>Y9000X 2021版配备了酷睿i7-10875H处理器、16GB内存及512GB SSD、RTX 2060 Max-Q显卡，售价9299元，首发优惠8699元。</strong></p>
+<p>R9000X 2021款配备了锐龙7 4800H处理器，其他配置基本相同，首发优惠价7999元。</p>
+<p>这两款游戏本12月1日0点预售，200元定金预售，12月12日正式上市，支持3期免息，晒单还赠送一年整机延保。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201130/73c60c43720d4d2b9b5320631e936bbb.png" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201130/acff12e0d436427ea6b988d36123891e.jpeg" /></p>
+➜一图看懂联想拯救者游戏本Y9000X/R9000X 2021：价格还是AMD YES
+http://www.sohu.com/a/435402274_163726	56097
+<p>11月30日晚，联想正式发布了2021年新款拯救者Y9000X、R9000X游戏本，分别对应Intel酷睿、AMD锐龙平台，首发价格分别为8699元(原价9299元)、7999元起。</p>
+<p>联想拯救者Y9000X/R9000X 2021号称轻薄电竞本，耀石灰色金属机身，厚度控制在<strong>15.9毫米</strong>，重量轻至<strong>1.92千克(锐龙)或1.86千克(酷睿)</strong>，支持180度开合，A面装饰有白色可控的Y字形拯救者LOGO。</p>
+<p>搭载15.6英寸高色域电竞屏，微边全面屏，雾面防眩光，1080p分辨率，<strong>144Hz高刷新率，100% sRGB高色域，8-bit原生色深</strong>，5ms响应时间，300nits典型亮度，Dolby Vision高动态显示。</p>
+<p>为释放性能，内部搭载了<strong>TSI霜刃Pro散热系统2.0</strong>，采用两个85×85毫米的涡轮增压风扇，拥有0.2毫米超薄LCP扇叶、82pain高密度叶片，搭配<strong>4根(锐龙)或3根(酷睿)复合式热管</strong>、212片纯铜散热鳍片，<strong>导热模组覆盖面积27760平方毫米(锐龙)或24900平方毫米(酷睿)</strong>，鳍片总面积47626平方毫米，另外D面、开机键两侧、键盘区域三个区域均可进风，出风口更是达到四个。</p>
+<p>备受好评的Fn+Q性能切换依然支持野兽、均衡、安静三种模式<strong>，并在电源键上增加了指示灯，分别对应红色、白色、蓝色。</strong></p>
+<p><strong>处理器是酷睿i7-10875H或者锐龙7 4800H，突破45W TDP，最高释放分别可达80W、65W。</strong></p>
+<p>独立显卡为<strong>RTX 2060 Max-Q</strong>，支持<strong>DDG双模显示切换</strong>，可以独显直连或者混合模式(<strong>酷睿版切换无需重启</strong>)，还支持NVIDIA Dynamic Boost动态加速技术，显卡性能释放可达90W。</p>
+<p>存储方面，16GB DDR4-3200双通道内存，板载+插槽组合可升级，512GB PCIe NVMe TLC固态硬盘，预留第二个M.2插槽可扩展，而且均支持PCIe x4、M.2 2280。</p>
+<p>电池容量达<strong>71Whr</strong>，支持Legion超能快充，半小时可充入50％，一小匙可充入超80％，搭配便携PD充电器，最高充电功率100W。</p>
+<p>Legion TrueStrike原感键盘，特别拥有标准数字小键盘、全尺寸方向键，支持全键无冲、两档白色背光、有机硅耐磨防无涂层，还有一体式AG玻璃触控板。</p>
+<p>杜比全景声双扬声器，<strong>Smart AMP智能功放(酷睿)</strong>，以及按压开机+解锁、触摸唤醒+解锁、物理防窥摄像头。</p>
+<p>接口方面，酷睿版是<strong>两个雷电3</strong>(DP1.4/100W充电)，锐龙版则是<strong>两个全功能USB-C</strong>(DP1.4/USB3.1/100W充电)，另有两个USB-A 3.1(其一支持关机充电)、SD读卡器、3.5mm耳麦接口。</p>
+<p><strong>拯救者Y9000X 2021定价9299元，首发价8699元，3期免息，晒单送一年整机延保，开卖时间待定。</strong></p>
+<p><strong>拯救者R9000X 2021首发价7999元，3期免息，晒单送一年整机延保，12月1日0点200元定金预售，12月12日0点开卖。</strong></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><img src="http://p1.itc.cn/q_70/images03/20201130/1a68292de39a444c91eeab2d96cb5ecb.jpeg" /></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201130/ff6f168a54b945089334443b1d5a767c.jpeg" /></p>
+➜技嘉500系列主板升级BIOS：3A平台打鸡血 性能白捡17％
+http://www.sohu.com/a/435404107_163726	57202
+<p><strong>技嘉宣布为旗下X570、B550、A520主板全线发布新版BIOS，搭配锐龙5000系列处理器、RX 6000系列新卡，可开启AMD SAM智能存取技术、Rage Mode狂暴模式，获得额外性能提升。</strong></p>
+<p>SAM技术可以让锐龙5000处理器访问RX 6000系列显卡的全部显存，彻底消除带宽瓶颈，Rage Mode则可以让RX 6000显卡一键超频，释放性能潜力。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201201/48e4f5d817ee40a094341ffdbc484e7d.png" /></p>
+<p>技嘉宣称，经过实测，500系列主板开启这两项技术后，<strong>1080p游戏性能可提升最多达17％，2K、4K分辨率下最高也可达15％、10％。</strong></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201201/ea61fd106d984778865c0fbae42b3812.jpeg" /></p>
+<p>若要开启SAM技术，需要在主板BIOS设定中启用<strong>Above 4G Decoding、Re-Size BAR Support</strong>两个选项，并确保系统运行于UEFI模式。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201201/d8e789eb595a46338abdf714804e8aab.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><img src="http://p1.itc.cn/q_70/images03/20201201/291c8af6129f42468a700b8ffeb7a58f.jpeg" /></p>
+<p>若要确认SAM是否开启，可以在设备管理器的显卡属性中，切换到资源标签页，只要能看到“<strong>Large Memory Range</strong>”(大内存范围)，就证明成功了。</p>
+<p>Rage Mode则可以在显卡驱动中打开。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201201/084438944a4444399df8cf635092064b.jpeg" /></p>

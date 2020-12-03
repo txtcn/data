@@ -1,0 +1,541 @@
+➜Win10新预览版20262推送：修复大量BUG更稳定
+http://www.sohu.com/a/432813525_163726	6820
+<p>今晨，微软面向Dev通道的Insider会员推送新预览版，操作系统版本号Build 20262，隶属于fe_release分支。</p>
+<p>在更新日志中，微软并没有提到任何新功能特性，而是将注意力集中在BUG修复上，以便系统更稳定。</p>
+<p>解决的问题具体包括：</p>
+<p><strong>部分程序打开后出现透明界面、第一次点击笔触后由于潜在的崩溃而没有响应、使用CTRL+W关闭标签后触摸板滑动失灵、Wi-Fi和蜂窝同时打开时Wi-Fi断开后无法上网、尝试打开存储感知功能时设置崩溃、严重的DWM事故。</strong></p>
+<p>不过，遗留问题仍有一些，比如设置中的磁盘管理看不到分区、暗色模式下部分黑色背景出现黑色文字等。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201119/e6508f570a89482f80b23c38fd69b117.jpeg" /></p>
+➜苹果M1是全球首款支持USB4的商用芯片：领先Intel Tiger Lake
+http://www.sohu.com/a/432834079_163726	11392
+<p>随着跑分、实测越来越多，苹果自研M1芯片近期被“吹爆”。除了性能、功耗以及兼容性等优势之外，<span><strong>M1还拿了个世界第一——全球首款支持USB4规范的商用芯片。</strong></span></p>
+<p>据外媒报道，<strong>苹果为M1芯片提供了首个USB4和Thunderbolt 3定制主控，提供了全球第一个符合全新USB规范的新系统。</strong></p>
+<p>在适用于笔记本电脑的Intel第 11 代 Tiger Lake 处理器发售之前，苹果率先将其推出市场。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201119/b098f7e7835c472e8fa1e548b98d8fac.jpeg" /></p>
+<p>目前最快的接口是雷电3，传输速度是40Gbps/s。<strong>去年，USB4标准发布，物理接口依然是Type-C，吸收了雷电3协议，速度达到40Gbps/s，是USB3.2 Gen2X2协议的2倍。</strong></p>
+<p>与一般的USB标准不同，雷电3接口采用了PCIe 3.0 x4通道，拥有超大的带宽，可以支持外接显卡，外接显示器等，而吸收雷电3的USB4接口自然也拥有了这样的功能。</p>
+<p>同时，<strong>新接口会继承向下兼容的优秀传统，旧的USB标准（U盘、键盘、鼠标、USB耳机等设备可以通过Typc-C接口接入）。</strong></p>
+<p>总结一下USB 4的特性：1、40Gbps大带宽（双通道）。2、100W供电接入。3、兼容旧USB标准。4、4K 60Hz画面传输能力。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201119/607e3364dad2492698ce9c18449a796b.jpeg" /></p>
+➜一颗CPU便宜1300元：IBM估算苹果从Intel换用M1将节省164亿成本
+http://www.sohu.com/a/432841168_163726	12537
+<p>苹果之所以决绝地要从Intel切换都自研处理器，除了可以更细致地做软硬件适配调教，成本似乎也是其中的原因。</p>
+<p>IBM AI战略副总裁Sumit Gupta饶有兴致地替苹果算了一笔账，他假设苹果2020年累计出货860万台13寸MacBook Pro和540万台MacBook Air。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201119/f2d41c588ed44b66b2a0475dc08fd16b.jpeg" /></p>
+<p>一颗M1处理器的成本大概40~50美元，而MBA上的Intel双核酷睿i5（整套芯片组）则是175~200美，MBP上的四核酷睿i5更是225~250美元，也就是换用M1处理器，一颗就能省最多200多美元。</p>
+<p>Gupta得出苹果花在为MacBook采购Intel处理器的花费是32亿美元，M1处理器则仅需要6.97亿美元，<strong>一来二去省了25亿美元（约合164亿元）。</strong></p>
+<p>显然，计算很粗略，但可以作为一种新的角度来审视苹果毅然决然要从Intel切换到ARM的秘辛。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201119/8afefbddebd146438c4f3e17ff6f28c2.png" /></p>
+➜三方模拟软件上线：M1处理器Mac已可运行Windows程序及游戏
+http://www.sohu.com/a/432848067_163726	14432
+<p>M1处理器的Mac目前有个遗憾，苹果停止了Boot Camp支持，导致安装Windows 10成为奢望。</p>
+<p>不过，日前CodeWeavers宣布，CrossOver 20已经可以在Appl Silicon版的Mac上工作，从而方便用户运行Windows应用程序。</p>
+<p>CrossOver是一款基于开源Wine项目打造的Windows模拟器，面向macOS和Linux提供。需要指出的是，<strong>CrossOver 20.0.2最新版依然要靠Rosetta 2进行转译，再套上模拟器的话，等于有双重的效率损失。</strong></p>
+<p>好在从开发者的演示来看，《Among Us》《Team Fortress 2（军团要塞2）》这些游戏都能顺利运行，尽管《军团要塞2》中会有一些偶发卡顿出现。</p>
+<p>另外，使用CrossOver 20.0.2前，建议更新到macOS Big Sur 11.1 beta系统，测试版修复了不少Rosetta 2转译方面的问题。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201119/cbbf9691c0f44010848c24b2ff8fe3eb.jpeg" /></p>
+<p>图为《军团要塞2》画面</p>
+➜性能强悍价更香！AMD RX 6800拆解图赏
+http://www.sohu.com/a/432852880_163726	15910
+<p>10月29日，AMD正式发布了新一代Radeon RX 6000系列显卡，首批包括RX 6800、RX 6800 XT、RX 6900 XT三款型号。</p>
+<p>昨晚，RX 6800、RX 6800 XT首发开售，售价分别为4599元、5099元。看过RX 6800 XT后，我们再来看RX 6800。</p>
+<p>AMD RX 6800正面采用一体感极强，前后铝合金外壳。<strong>同样三个风扇设计，同样双8Pin供电接口，不过顶部Logo取消了发光设计，换成了更加醒目的红色。</strong></p>
+<p>RX 6800采用RDNA 2 GPU架构，台积电7nm工艺，AMD表示，RDNA 2架构有四大亮点，分别是高性能的计算单元(CU)、革命性的Infinity Cace、突破性的高速设计、先进的技术特性。</p>
+<p>核心参数方面，<strong>RX 6800采用60组计算单元，3840个流处理器，核心游戏频率1815MHz、最高加速频率2105MHz</strong>，Infinity Cache保持完整的128MB。</p>
+<p>GPU核心周围有8颗三星GDDR6显存，总容量16GB。<strong>与RX 6800 XT一样，RX 6800同样也是整块均热板设计，没有热管，17相供电电路。</strong></p>
+<p>接口方面，提供2个DP1.4、1个HDMI 2.1以及Type-C接口。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201119/339b3ffdeba74193a0f1dde5f805bab7.jpeg" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201119/5afd2ebae0434f5cb5a035399f1cd6dc.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><img src="http://p3.itc.cn/q_70/images03/20201119/d2f4e542b2014a2290fa1ad3a2bd964e.jpeg" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201119/72fe97c961a24991b8d3a8c6b205c6b3.jpeg" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201119/9284f6f323554e0fa74bc0c76f04b255.jpeg" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201119/bf82cd61dc584965bb1940920e6bf60c.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201119/b1ce88df02324c4f94c48cd4aeec73c1.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201119/d5d7d7b36429430eacea0c653a0d5ef9.jpeg" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201119/347c443a306d4501991ca3d22678e7c0.jpeg" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201119/26a2f85314954ccb8e9b07db68545f44.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201119/13ff00c495ce443e80141905918772a9.jpeg" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201119/d7f2b34aaaf548b7a0b6ab61d140c456.jpeg" /></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201119/6b059be55dfe4c87bbb2cfb0cc8b64e8.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201119/94fac4368bc74256838ea035574829ab.jpeg" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201119/2a8c16ae26ac4220ba9f414d43563b01.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201119/31138f128b8545398edf96702a10258f.jpeg" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201119/23ca5385efe749628962698fa1c0ab3a.jpeg" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201119/3c8071af694d465790c071057302d679.jpeg" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201119/7d328174e2fd4156abda4ae3ce4a7ea5.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201119/f6605e9d7a734a8cb871653b55382f6a.jpeg" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201119/1e6c64bc35a443bdb0ddfa9994378293.jpeg" /></p>
+➜2020年的笔记本怎么选？真香组合要看这两点
+http://www.sohu.com/a/432851501_163726	16169
+<p>9月初，一年一度的秋季升级大会开始了，这一次Intel推出了十一代酷睿处理器，代号Tiger Lake，这代产品也真的人如其名，犹如勐虎下山，性能及架构升级幅度堪称历年之最。</p>
+<p>去年的十代酷睿Ice Lake处理器已经升级了CPU、GPU、AI及10nm工艺，现在的十一代酷睿升级幅度有过之而无不及，处理器中几乎所有设计都全面换新架构了。</p>
+<p>同时，随着处理器越来越强，平台配置也在不断演进，不少用户选择笔记本时就有点纠结，不清楚什么样的配置组合才算得上真香。</p>
+<p>这个问题不是一句两句就能说清楚的，但是对于普通消费者来说，如果想要获得足够好的性能，重点关注处理器、内存就能找到适合自己的配置，这一点在十一代酷睿上尤为明显。</p>
+<p><strong>十一代酷睿大改：架构、工艺全都不一样了</strong></p>
+<p>首先是工艺，去年首发的10nm工艺是第一代，现在的十一代酷睿是第二代10nm工艺——10nm SuperFin了，其中的SuperFin指的就是全新的增强型FinFET晶体管与Super MIM(金属-绝缘体-金属)电容器两种技术结合的超级晶体管，使得10nm SuperFin工艺的性能更强，功耗更低。</p>
+<p>具体来说，在之前的10nm工艺上，同样功耗下CPU频率只能做到3.9GHz左右，而十一代酷睿处理器加速频率可达4.8GHz，提升20%还多，而且功耗更低。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201119/9625819f8ad747689419a462269a061c.png" max-width="600" /></p>
+<p>在10nm工艺之外，十一代酷睿的CPU、GPU、AI单元的架构也升级了，CPU升级到全新的Willow Cove架构，最多4核心8线程。</p>
+<p>GPU则升级到了Xe LP架构，这是全新高性能Xe架构首次进入核显，集成多达96个EU单元，比上代提升50%，同时内部架构大改，使得浮点性能翻倍到1.8TFLOPS，堪比入门级独显了。</p>
+<p>AI单元也集成新的高斯网络加速器GNA 2.0，低功耗状态下也能提供优秀的AI加速性能，总体性能比前代处理器提升4倍多。</p>
+<p>其他方面，十一代酷睿还首次支持了PCIe 4.0，相比PCIe 3.0带宽翻倍，SSD性能可以轻松达到7GB/s的速度。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201119/65a8926b646240c18955db177764c2e3.png" max-width="600" /></p>
+<p>另外，速度高达40Gbps的Thunderbolt 4接口、2.4Gbps的Wi-Fi 6网络也是必备的，这些接口及网络也提升了十一代酷睿笔记本的效率。</p>
+<p>总之，在升级幅度上，十一代酷睿是从内到外焕然一新，变化非常大。</p>
+<p><strong>十一代酷睿处理器怎么选？实用第一</strong></p>
+<p>十一代酷睿处理器升级很大，不过这一代的产品线倒是简单了许多，目前主要上市的是酷睿i7、酷睿i5系列，都是4核8线程的，酷睿i3系列以及更高端的6核、8核版十一代酷睿要等明年才能上市。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201119/2ae31aaf568a4c9ab5af07ab57ab79ed.png" max-width="600" /></p>
+<p>现在可选的主要是这三款处理器：</p>
+<p>·酷睿i7-1185G7，基准频率3.0GHz，全核睿频4.3GHz，单核睿频达到了4.8GHz，核显96EU，频率也有1.35GHz，支持DDR4-3200、LPDDR4X-4266内存。</p>
+<p>·酷睿i7-1165G7，基准频率2.8GHz，全核睿频4.1GHz，单核睿频达到了4.7GHz，核显96EU，频率也有1.3GHz，支持DDR4-3200、LPDDR4X-4266内存。</p>
+<p>·酷睿i5-1135G7，基准频率2.4GHz，全核睿频3.8GHz，单核睿频达到了4.2GHz，核显80EU，频率1.3GHz，支持DDR4-3200、LPDDR4X-4266内存。</p>
+<p>三者都是4核8线程，差别主要是CPU频率及核显，高配酷睿i7-1185G7肯定是最好的，但是笔记本厂商一般会在高配型号上采选这款处理器，价格会比较贵，适合高需求用户。</p>
+<p>酷睿i7-1165G7及酷睿i5-1135G5的差距更小，前者核显性能更强一些，毕竟96组EU，通常用在高配版上，而酷睿i5-1135G5则是目前最大众的选择，5000-6000元左右的十一代酷睿基本都是这款处理器。</p>
+<p>考虑到CPU动态频率的问题，<strong>日常使用中酷睿i7-1165G7与酷睿i5-1135G7的CPU差距不大，从实用角度来说肯定是后者优先。</strong></p>
+<p>CPU选定之后，大家还要关注下核显性能的问题，因为核显性能越强，不仅EU单元多少重要，搭配的内存也很重要，频率越高越好，所以很多笔记本直接上了LPDDR4X-4266顶配款内存。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201119/105303f90c984a3eb30f07b8bb0afd0f.png" max-width="600" /></p>
+<p>与DDR4-3200或者LPDDR4X-3733的内存组合相比，<strong>十一代酷睿搭配LPDDR4X-4266内存的组合已经被网友实测证实是最能发挥Xe核显性能的</strong>，所以综合考虑下来，<strong>酷睿i5-1135G7处理器、16GB LPDDR4X-4266内存的组合才是真香的。</strong></p>
+<p>事实上，这也是5000-6000多元的十一代酷睿轻薄本的常见组合，也是大多数人的主流选择，CPU性能足够日常使用，核显性能也能发挥到极致，没有瓶颈，价格也是非常适中的。</p>
+<p>当然了，如果是追求极致性价比，那么酷睿i5+DDR4-3200的组合也是可以接受的选择，这是在前面两种选择都没有的情况下才考虑的，适合对游戏性能没什么要求的普通消费者。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201119/42e8e7678f564e46a5f82c1595261fbc.jpeg" max-width="600" /></p>
+➜899元！联想发布B2412Q显示器：24英寸/2K/三窄边
+http://www.sohu.com/a/432896595_163726	27442
+<p>11月19日，<strong>联想发布了来酷B2412Q显示器，售价999元，将2K超清屏普及到了千元档位以下</strong>，号称打造年轻人的第一台显示器。</p>
+<p>目前，这款显示器已经在京东开启预售，定金10元可抵110元，而且前100名抢20元E卡，到手价879元，价保30天。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201119/ddfbd754915f40d5a6ca0fb03b541a1c.png" /></p>
+<p><strong>来酷B2412Q配备23.8英寸的屏幕，拥有2560×1440高分辨率，最大亮度300cd/㎡。</strong>采用IPS面板，拥有178°的垂直和水平视角，72%NTSC广色域，色彩表现饱满。</p>
+<p>其采用微边全面屏设计，边框窄至2mm，内黑边也仅2-3mm。支架支持俯仰调节，调节范围为-5°~18°。</p>
+<p>该显示器还<strong>拥有不闪屏、滤蓝光、低反射、少衰减这四项爱眼功能</strong>，可以有效缓解长时间观看屏幕造成的眼疲劳。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201119/85ebea54f8904ab286ba761efa4ad7f1.png" /></p>
+<p>虽然是一款不足千元的显示器，B2412Q外观设计却可圈可点，拥有<strong>时尚的纤薄机身，与圆润的金属黑色喷漆底座</strong>，比较符合当下年轻人的审美。</p>
+<p>接口方面，提供了DP 1.2+HDMI 1.4高清接口，还有一组音频输出接口，无论是连接主机、游戏机都够用了。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201119/ac5076c9f2254f2596b837094dd19cae.png" /></p>
+➜鸿蒙分布式技术初显身手！华为Watch GT2 Pro ECG款评测：腕上心电伴侣
+http://www.sohu.com/a/432901410_163726	28703
+<p><strong>一、前言：拿下腕上穿戴市场全球第一之后 华为去往高处</strong></p>
+<p>和智能手机一样，华为在腕上穿戴领域也早已成为领军者。自首款以“Watch GT”命名的智能手表诞生之后，该系列手表一直都是表现不俗。倚仗极为持久的续航和专业精准的数据监测还有与华为手机的联动，受到用户和市场的欢迎。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201119/4d29dc6bac4d45be923f8ef5bf561e3f.png" max-width="600" /></p>
+<p><strong>按照华为消费者业务CEO余承东在发布会上所援引的IDC2020第二季度报告数据，华为的腕上穿戴式设备在市场份额上排名全球第一。</strong></p>
+<p>值得一提的是，从具体的数据来看，2020年Q2全球智能手表、手环销量要比2019年同期减少了4.4%，华为却实现了逆势反升，向上攀登至世界第一，占比24%。就在一年前，苹果还处于遥遥领先的位置，但随着华为Watch GT系列的爆发，局面彻底扭转。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201119/3ea52ca6a3fd445ba317b2a3901f12b7.jpeg" max-width="600" /></p>
+<p>在市场上夺得优势地位之后，华为Watch GT2系列还要继续向高端进化，华为Watch GT2 Pro系列由此诞生。</p>
+<p>该系列当中，除了运动款和时尚款这两个基本款之外，华为首次将保时捷设计的经典基因注入手表当中，带来华为Watch GT2保时捷设计款；健康管理领域再下一城，心电检测迎来突破，带来又一款重磅款型——华为Watch GT2 Pro ECG款。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201119/a7fe01251e804cff84a68b1ed5d05120.jpeg" max-width="600" /></p>
+<p>它们都升级到了蓝宝石玻璃镜面、钛金属表壳、陶瓷底盖；新增了无线充电功能、轨迹返航功能、滑雪和高尔夫练习场模式，以及月相、星象、潮汐表盘等适合户外运动的功能。</p>
+<p>全新的升TruSeen 4.0+让此作支持全天候血氧饱和度监测、房颤风险预测研究功能。ECG款还有ECG心电图，血管健康研究功能。</p>
+<p>所以推出如此多的款型类别主要是用于满足不同人群对于智能手表的需求，让每个人都能找到适合自己的产品，其聚焦于高端精品策略以获得口碑和产品忠诚度的路线并未改变。</p>
+<p>快科技日前对华为Watch GT2 Pro ECG款进行了多日的体验，以下是我们的详细评测。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201119/7b3d7bd12481443984b2d2fc5e33d80e.png" max-width="600" /></p>
+<p><strong>二、外观欣赏：这颜值越来越接近高端的传统腕表了</strong></p>
+<p>手表有很强的饰品属性，华为Watch GT2 Pro首先对外观颜值进行升级。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201119/c4aba88f780e4644b45f5d7e70fe1c7a.jpeg" max-width="600" /></p>
+<p>此次的华为Watch GT2 Pro采用钛金属表壳，这种金属的主要属性是质量轻、耐腐蚀，为相当多的名表选用。不过可能是因为陶瓷底盖的加入以及尺寸略微增加，华为Watch GT2 Pro相比上一代重量略微有所增加，达到52克。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201119/6f0c93bfc8304e66a41c05acc5f68311.jpeg" max-width="600" /></p>
+<p>材质升级的不止表壳，蓝宝石玻璃镜面也是外观用料的核心升级之处。相比较前代作品，其镜面的通透感和光泽度明显许多。值得一提的是，蓝宝石玻璃硬度仅次于金刚石，极难被磨花，耐用程度相比过去也会有提升。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201119/867b51c61b6b4d34bed4eab66e95e54f.jpeg" max-width="600" /></p>
+<p class="ql-align-center">物理按键依然为两枚</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201119/1962d48941414b4cb8edf699b3deebda.jpeg" max-width="600" /></p>
+<p>华为Watch GT2 Pro大面积采用陶瓷底盖，只是透镜部分还是有蓝宝石玻璃（需要降低透光损耗以提升传感器的监测准确度）。</p>
+<p>陶瓷后盖会带来更光滑、温润的触感，而且陶瓷底盖的凸起部分弧度R角增大，对硌手感和摩擦感有所减小，即便手表绑得很紧也不影响佩戴体验。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201119/49ecf7e0ad5342268e9288fcc3b7de1c.jpeg" max-width="600" /></p>
+<p>在此可以看到华为Watch GT2 Pro的光路部分使用的是6合1透镜LED与4个光电二极管，光线穿透力应该会变强，结合第四代TruSeen 4.0+心率监测技术，为用户连续、快速、精准地提供心率监测。</p>
+<p>上一代Watch上用于充电的金属触点在华为Watch GT2 Pro已经不见了。这是因为华为Watch GT2 Pro升级换装了无线充电方案，从此电量告急的时候，摘下手表往无线充电器上轻轻一放即可了。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201119/8bceeaa81a3a464cad73afe3aa48ccf3.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201119/2044a0ca40444f75b4ad77b64210f7ee.jpeg" max-width="600" /></p>
+<p>华为Watch GT2 Pro的表带有两种，一种是牛皮质地，适合搭配正装以及各种正式场合。还有一种是氟橡胶材质，适合户外、运动使用。值得一提的是，此番华为Watch GT2 Pro的氟橡胶表带这次做了磨砂纹处理。</p>
+<p><strong>三、使用体验：腕上就能测心电 鸿蒙分布式技术初显身手</strong></p>
+<p><strong>——运动</strong></p>
+<p>华为Watch GT 2 Pro全面提升运动功能，提供达100多种运动类型，并在原有15种专业运动模式基础之上，新增滑雪模式和高尔夫练习场模式。</p>
+<p>具体些来说，此作支持17种专业运动模式，其中包含户外运动10种（滑雪、高尔夫、跑步、步行、登山、徒步、越野跑、骑行、开放水域、铁人三项），室内运动7种（步行、跑步、骑行、泳池游泳、自由训练、椭圆机、划船机），基本包含了时下最为主流且常见的运动，用户可以自由选择。</p>
+<p>同时，该表还覆盖了85种自定义运动记录，包括瑜伽、动感单车、爵士舞等极限、休闲、健身、水上项目、球类、冰雪项目等六大运动类型。每一次运动，手表都会记录下运动时间、热量、心率区间、运动效果、恢复时间等数据，还能一键生成长图分享社交平台。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201119/d8d93ea8ab7c4cddb40779f358660ce6.jpeg" max-width="600" /></p>
+<p>值得注意的是，华为Watch GT 2 Pro是首个在登山/徒步/越野跑/户外步行/户外跑步/户外骑行模式下支持轨迹返航功能的华为手表，主要用于户外运动荒野迷路自救以及陌生城市迷路应对。</p>
+<p>在体验当中我们发现，华为Watch GT 2 Pro只能提供轨迹显示，无法展示地图。所以陌生环境下只能照着轨迹提示缓慢回程。同时在领航返回的途中没有语音提示，骑行或者开车时并不算方便，适合于步行返航的用户。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201119/d9b9ed47d5494e7b86e1d33ae4d10efb.jpeg" max-width="600" /></p>
+<p><strong>——健康管理</strong></p>
+<p>这些年华为在智能穿戴产品的健康管理领域所付出的努力算是有目共睹。从2018年的血氧监测，到2019年的睡眠呼吸暂停筛查，再到今年ECG款的心电图采集以及血管健康研究，这一路走来，华为几乎都走在行业的最前头，是行业的引领者。</p>
+<p>华为Watch GT 2 Pro在健康功能方面带来的升级相当多，不再一一展开详述，主要说说是华为首款通过国家药品监督管理局（NMPA）二类医疗器械注册证的智能穿戴设备——华为Watch GT2 Pro ECG款，所带来的心电相关的功能应用。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201119/5497b4629cf942ac8cd662e0773d4b1a.jpeg" max-width="600" /></p>
+<p>这里简单介绍一下，ECG即“Electro Cardio Graphy”，意思是心电图。自然，华为Watch GT2 Pro ECG款即“具备心电图检测和心血管健康研究检测功能”的智能手表。</p>
+<p>24小时动态心电图是医疗机构诊断心脏病流程当中的一项常见检测，需要疑似病患随身携带检测仪，相当麻烦。而华为Watch GT2 Pro ECG款则是通过与301医院合作，让用户可以通过佩戴该表获取自己的心电图状况，数据还会通过“心脏健康研究”App上传到301医院的心脏健康研究中心数据库。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201119/1d1511b5ac9d43ccbf72cd3f2f21c556.jpeg" max-width="600" /></p>
+<p>华为Watch GT2 Pro ECG款相比其它版本会在表壳右侧多出一个凸块，就是供给心电检测使用。用户伸出与佩戴手表相反的一只手的手指触摸此凸块，30秒后就会生成心电图，相关数据图在手机“健康运动”App里面查看。</p>
+<p>综合来看，对已经确诊心脏病和潜在心脏病的用户而言有相当大的便捷、实用价值。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201119/ea98ff25446c4ecfa32bb41d658acbd8.png" max-width="600" /></p>
+<p class="ql-align-center">一键检测</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201119/75320adfd174437595d0a7bf5049dd5a.png" max-width="600" /></p>
+<p class="ql-align-center">可选择添加症状</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201119/c08095b996b44f8197183151075f70d5.png" max-width="600" /></p>
+<p class="ql-align-center">心电图详细分析报告</p>
+<p><strong>——鸿蒙分布式技术初显身手</strong></p>
+<p>华为旗下的智能手表很早就弃用了常见的Wear OS系统，算是相当明智之举。Wear OS 是谷歌当年基于Android 系统推出的针对智能手表定制的系统，确实曾红极一时，包括三星、Moto、LG等一线品牌纷纷响应。</p>
+<p>然而Wear OS的界面设计逻辑不利于第三方应用程序迅速完成适配，导致安卓智能手表应用相对匮乏，另一方面，谷歌近几年对Wear OS也是心不在焉，厂商想对系统进行优化与改进依然要看谷歌的脸色，相关设备想要得到改善要大费周章。</p>
+<p>华为Watch GT2 Pro是基于Lite OS进行开发定制，将手表系统的掌控权彻底握在自己手中，免去了很多麻烦，有足够空间定制和优化手表端的功能以及体验。</p>
+<p>这一次，该系统再次向前迈进，越发完善——应用市场终于加入，有了更多拓展空间。目前华为Watch GT2 Pro的手表应用商店当中已经上线百度地图、滴滴出行、Fit健身等诸多APP，可以通过华为运动健康APP安装、卸载。</p>
+<p>一个掌控在华为自己手中的手表应用生态初具雏形。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201119/6e595b447c2c457c83cddac24bfd2e5c.jpeg" max-width="600" /></p>
+<p>值得一提的是，不同于安卓手表或者Wear OS手表需要让所有软件实打实地在手表终端上运行并处理数据。</p>
+<p>在鸿蒙分布式技术的加持之下，面对一些能耗较高的软件需求（比如地图导航），华为Watch GT2 Pro会将原本需要借助于手表自身算力完成的任务转移到手机端处理，然后手表仅仅作为信息流展现的出口以及提供简易的输入等纯交互操作，算力压力陡降。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201119/6afd125da3374efeb68c3b5f2fe8773b.jpeg" max-width="600" /></p>
+<p>在面对一些能耗较小的软件需求，比如心脏健康研究、小番茄等，可以直接在手表本地处理。</p>
+<p>这样就充分兼顾了应用生态和功耗续航，无需再像其它智能手表那样只能在应用生态与续航之间二选一。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201119/02d2916f96a04f108fadb81fd87bf396.jpeg" max-width="600" /></p>
+<p><strong>——关于续航</strong></p>
+<p>受限于物理尺寸以及芯片功耗，续航一直是智能手表的痛点，包括Apple Watch在内的众多优秀产品同样表现不佳，重度使用下普遍只能撑一个白天，基本上是一天一充的水平。频繁的充电频次，让智能手表很多情况下不再是“帮手”，而成了负担。</p>
+<p>长续航一直都是华为手表产品在该领域标志性差异化卖点之一。这其中，自研的麒麟A1芯片和智能节电算法功不可没，在提升续航能力的同时，兼顾功耗的降低。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201119/d1cb4344e1904efeb46c04de3878bf35.jpeg" max-width="600" /></p>
+<p class="ql-align-center">接近整整3天又7个小时的时间之后，电量仅消耗24%</p>
+<p>实测了一下，华为Watch GT2 Pro在续航上的表现非常良好。开启心率监测、信息推送等正常使用情况下，3天又7个小时之后，华为Watch GT2 Pro的电量仅消耗24%，这样看起来折腾两个星期毫无问题。</p>
+<p><strong>四、总结：无出其右的腕上“健康专家”</strong></p>
+<p>自诞生以来，以两周超长续航为核心DNA的华为Watch GT系列满足了用户对于可穿戴产品的个性化、多元化需求，并在运动和健康功能基础之上，提供更具专业性的指导功能和更便捷的智控功能。</p>
+<p>在前辈表款取得成功之后，这一代的华为Watch GT2 Pro系列承担起了向更高处冲击的高端使命，升级进化的幅度相当大。</p>
+<p>无论是高端蓝宝石玻璃镜面、钛金属表体、陶瓷背壳的应用，还是更加专业的专业运动模式以及更专业的健康管理功能，甚至是更无线充电、鸿蒙分布式技术融入拓展智能手表应用生态，华为Watch GT2 Pro全系表款都可以看作是Watch GT系列的完美升级，也让用户的可选项之丰富前所未有。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201119/20e38e0348c94e94a2ef9a81a87db71c.jpeg" max-width="600" /></p>
+<p><strong>值得一提的是，华为Watch GT2 Pro ECG款关于心电检测的功能目前看来已经十分完善，结合简单易上手的操作方法，以及算法以及医疗机构带来的专业分析和建议，该功能可以更好地帮助用户进行自我健康管理。</strong></p>
+<p>摆脱了Wear OS的束缚，华为Watch GT2 Pro能够在基于自我定制的手表系统上大展身手，对UI设计、性能调度、电量管理有更深入的优化。甚至还能自主融入鸿蒙分布式技术，可以将能耗较高的软件需求转移到手机端处理，然后手表仅仅作为信息流展现出口的玩法，在应用生态与功耗之间寻求到了完美平衡。</p>
+<p>如果说华为Watch GT2 Pro是Watch GT系列迈向高端的专业选手，它将材质、设计以及功能应用等都做到了顶尖水准，那么 面向精英人群的华为Watch GT2保时捷设计款是华为手表奢华质感的集大成之作。</p>
+<p>而华为Watch GT2 Pro ECG款则是专业选手中难得的“健康专家”，它不仅完整保留了Watch GT2 Pro的高端蓝宝石玻璃镜面、陶瓷背壳和钛金属表体等高端属性门面，还以心电图采集功能，以及血管健康研究等独具的功能成为目前罕见能够提供完善健康管理+运动指导的长续航智能手表，在华为品牌内外均无出其右。</p>
+➜缺货不耽误赚钱：NVIDIA第三季度净利润大涨49％
+http://www.sohu.com/a/432904647_163726	29308
+<p>NVIDIA今天公布了截止2020年10月25日的第三季度财报，收入、净利润同步大涨，看起来RTX 30系列严重缺货并未影响老黄继续赚钱。</p>
+<p>按照美国通用会计准则(GAAP)，NVIDIA第三季度取得收入47.26亿美元，同比增长57％，环比增长22％，毛利率62.6％，同比下降1.0个百分点，环比提高3.8个百分点，<strong>净利润13.36亿美元，同比增长49％，环比增长115％。</strong></p>
+<p>具体来说，<strong>GeForce显卡为代表的游戏业务收入22.7亿美元，同比、环比增长均为37％</strong>；数据中心业务收入达到创纪录的19.0亿美元，同比增长162％，环比增长8％；专业视觉业务收入2.36亿美元，同比增长27％，环比增长16％；汽车业务收入1.25亿美元，同比增长23％，环比增长13％。</p>
+<p>NVIDIA预计第四季度收入48.0亿美元(上下浮动2％)，毛利率62.8％(上下浮动0.5个百分点)。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201119/53ecc48d3afa4e9497685aa9eabd9c69.png" /></p>
+<p><img src="//p1.itc.cn/q_70/images03/20201119/d6b7745f5e74490b90dd85af5b075e10.jpeg" /></p>
+➜夜晚开车必备 百度地图iOS深色模式终于上线
+http://www.sohu.com/a/432909369_163726	30020
+<p>经过了多年的等待之后，苹果终于在去年9月发布的iOS 13中加入了深色模式，OLED屏的iPhone续航得到了一定的提升。</p>
+<p>不过iOS发布后许久，国内的地图APP并没有及时的适配深色模式，夜晚开车时，车内环境昏暗，白色的地图导航背景显得非常刺眼。</p>
+<p>终于，<strong>今天下午，百度地图宣布上线iOS端的深色模式，有效降低在暗光环境下的视觉疲劳，提升驾驶安全。</strong></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201119/a79246afa6c4454fb897b234dabc498d.png" /></p>
+<p>从官方晒出的截图来看，<strong>百度地图深色模式进行了全局适配，无论是地图界面、还是功能菜单界面，都变成了深色。</strong></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201119/cb4f694f0f644f52b55da579a9c311ea.jpeg" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201119/7b2cdaf5b5c1435197b647d61cf44814.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>众所周知，地图APP因为一直亮屏及调用GPS，导致耗电极高，暗色模式下，屏幕大半部分变成纯黑色，相信能够省电不少。</p>
+<p>目前，百度地图已覆盖全球超1.5亿的地点数据信息，并与权威机构共建地图数据生态，海量用户上报，数据实时更新。</p>
+<p>基于百度地图人工智能大脑，实现了路况秒级更新，实时推荐更优路线，提供智能避堵方案。导航上，支持全面屏导航、路口放大图、路线历史用时、夜间模式等，为驾车出行提供决策参考和服务保障。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201119/0761cfa766e14f93922ae202f4223be8.jpeg" /></p>
+➜RX 6800 XT风冷超频2.65GHz：创纪录掀翻RTX 3090
+http://www.sohu.com/a/432913131_163726	31499
+<p>RX 6800最终兑现了当初“吹的牛”，多年来首次重返顶级市场，和NVIDIA站在了同一水平线上，RX 6800 XT可以小胜RTX 3080，RX 6800则轻松完成RTX 3070。</p>
+<p>这都得益于RDNA 2架构的精良设计，工艺不变的前提下，核心规模翻了一番，加入了全新的Infinity Cache无限缓存，运行频率也比上代提升多达30％，标称加速频率2.25GHz，实际运行可达2.45GHz。</p>
+<p>超频方面，根据我们的测试，RX 6800可以跑到2.5GHz，RX 6800 XT甚至可以冲到2.65GHz。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201119/47025f29ee1947148d0b53c41732de36.jpeg" /></p>
+<p><strong>超频玩家Lucky_n00b也将一块RX 6800 XT样卡超到了2.65GHz，而且同样是原装风冷散热器，同时搭配液冷超频到5.4GHz的锐龙9 5950X，3DMark Fire Strike跑分为47932，创下新的世界纪录。</strong></p>
+<p><strong>此前的记录是47708分，来自RTX 3090</strong>，确切地说是华硕ROG STRIX RTX 3090 OC。</p>
+<p>不过很可惜，这块超频的RX 6800 XT没能跑完3DMark Time Spy。</p>
+<p>不要忘了，RX 6800 XT还只是小弟，真正的老大哥RX 6900 XT还没出场呢……</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201119/8520d39b51c24ff78afb5d8547f94ef7.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><img src="http://p1.itc.cn/q_70/images03/20201119/3415b20db2d546dbba6f0dcf810db291.jpeg" /></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201119/c2d6f9da3e0e478e8bb759c28e6d4513.jpeg" /></p>
+➜RX 6800系列国内首发备货量公布：六大品牌仅720块XT
+http://www.sohu.com/a/432935444_163726	35418
+<p>RTX 30系列上市两个月了，依然处于明显的缺货状态，最新开卖的RX 6800系列也好不到哪里去，昨晚22点开卖没几分钟就被抢光了。</p>
+<p>RX 6800、RX 6800 XT首发上市的只有公版型号，包括AMD自有品牌和蓝宝石、迪兰、讯景、华硕、技嘉、撼迅、微星、华擎、盈通九家AIB合作品牌，唯一区别就品牌贴纸不同，非公版将在本月底陆续到来。</p>
+<p>据消息人士透露，<strong>RX 6800系列公版卡针对中国大陆市场的<span>首批货源不到3000块</span>，而且AMD自有品牌就分掉了一大部分，留给其他AIB厂商的数量寥寥无几。</strong></p>
+<p>据不完全统计，RX 6800 XT各品牌首批参与京东自营平台的数量如下：</p>
+<p><strong>蓝宝石：280块</strong></p>
+<p><strong>讯景：150块</strong></p>
+<p><strong>华硕：100块</strong></p>
+<p><strong>迪兰：80块</strong></p>
+<p><strong>技嘉：60块</strong></p>
+<p><strong>盈通：50块</strong></p>
+<p><strong>合计：720块</strong></p>
+<p>之前就有说法称，AIB厂商首批拿到的RX 6800系列货源只有三位数，结果比预期得更惨，有的甚至都不到三位数。</p>
+<p>另外在昨晚的首发活动中，<strong>几乎所有AIB厂商都以线上销售为主。</strong></p>
+<p>其中，RX 6800 XT中有AMD、蓝宝石、讯景、华硕、技嘉、盈通参与了京东首发，RX 6800的则只有个别品牌放在京东首发，大多数都选择了在直播平台销售。</p>
+<p><strong>RX 6800系列购买链接：</strong>京东(4599元起)、天猫(4599元起)</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201119/19f7a7ac061248f9a5a4d5be92963c4f.jpeg" /></p>
+➜M1处理器MacBook Air：成功运行Windows版《巫师3》
+http://www.sohu.com/a/432937808_163726	35479
+<p>苹果出品的Boot Camp不支持Apple Silicon、知名模拟软件Parallels也尚在适配中，对于那些已经拿到M1处理器Mac的用户来说，想跑Windows软件有什么方法呢？</p>
+<p>CodeWeavers出品的CrossOver似乎是不错的选择，官方实测，最新的20.0.2版本软件可在macOS Big Sur 11.1 Beta环境中运行财务软件《Quicken》、网游《Team Fortress 2（军团要塞2）》。</p>
+<p>甚至，3A大作《巫师3》也可以。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201119/65ccf288b7d3435f9c27ae7850e3ae07.jpeg" /></p>
+<p>目前，仅《巫师1》和《巫师2》有macOS版本，《巫师3》只能借助Windows模拟器来实现。<strong>不过需要注意的是，《巫师3》实际运行起来的帧率并不稳定，演示的笔记本是13寸最低配MacBook Air（7核GPU）。</strong></p>
+<p>未来，CrossOver针对ARM 64位优化后，在不需要Rosetta 2转译后效率可能会更高些。</p>
+<p>PS：有些朋友可能提到Parallels，它和CrossOver区别很多，前者主要面向商用、需安装Win10以及购买序列号、要求16GB内存环境和128GB硬盘空间等，起步价69.99美元。后者则是39.95美元起售，不需要配置Win10环境，2GB内存+550MB硬盘即可。</p>
+➜透过Mate40 RS保时捷设计剖析麒麟9000：华为最强芯一骑绝尘
+http://www.sohu.com/a/432957503_163726	42272
+<p><strong>一、前言：海思十年风雨回首 麒麟9000一骑绝尘</strong></p>
+<p>不知不觉当中，海思手机芯片的故事，我们已经讲了有十年了。</p>
+<p>2009年，蹒跚学步的海思K3V1诞生，它是华为试水手机AP芯片的一小步，虽然未得到华为自家的手机终端搭载，但所谓万事开头难，仍极具意义。</p>
+<p>接着是青涩的K3V2，华为手机搭载的第一款自研芯片，它随华为Ascend P6/D2一同到来，在彼时以拥有前沿的64bit双通道内存带宽和作为当时“世界面积最小的四核芯片”而闻名。由于受到兼容性、功耗和发热表现等制约，K3V2并不算成功，但为后续手机芯片研发积累了宝贵的经验。</p>
+<p>两次受挫未改变华为坚持自主芯片设计的既定路线。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201119/6f5c9600415240e0b3d86129fcadc8f4.png" max-width="600" /></p>
+<p><strong>2013年海思手机芯托名“麒麟”涅槃新生，作为第一枪的麒麟910吸取过往教训，换装Arm Mali的GPU，内存带宽收窄至32bit单通道，自研基带Balong 710首次与CPU、GPU集于SoC，加之28nm工艺解决过往顽疾，正式开启历史转折。</strong></p>
+<p>踩在麒麟920肩膀上的麒麟925助力Ascend Mate 7让华为手机第一次真正站上高端，尤其是自研Balong 720基带开始展现华为通讯领域的技术势能，当时能够支持峰值300Mbps的LTE Cat.6蔚为可观。</p>
+<p>2015年的麒麟930和麒麟935让业界意识到了自研芯片的优势所在，这两个SoC帮助华为手机成功避开同期安卓阵营所深陷的骁龙810困局。</p>
+<p>海思手机芯到了麒麟950这代终于“成年”，它是业界首款16nm FinFET+的旗舰SoC，凭借Cortex-A72与Cortex-A53的4+4大小核、Mali T880MP4GPU的强劲性能结合16nm FinFET+赋予的能效，正式进入全球手机芯片第一阵营，值得注意的是，此作的"PrimISP"成为华为发力手机影像的伏笔。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201119/e2d14f33bc7941b6a620ce62caa161d6.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>而后的麒麟960继续高歌勐进，至2017年的麒麟970突然另辟赛道，先于业界其它对手在手机SoC中引入NPU，并服务于为解决GPU图形计算效率问题而生的GPU Turbo，在游戏中实现功耗降低与性能提升。</p>
+<p>2018年麒麟980臻于完美，集齐7nm工艺、2*A76大核心+2*A76中核心+4*A55小核心，以及作为GPU的Mali G76 MP10，综合各方面同期最接近苹果的A系列，达成完整旗舰形态。</p>
+<p>2019年的麒麟990系列踩着5G风口完成了从与对手并驾齐驱、胶着厮杀到开始领先的本质飞跃，堪称划时代的一记重拳，全球范围内首次超前实现集成5G基带，自研的达芬奇架构NPU首次亮相。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201119/b0576877bedc4be4ab4d30c31de7faa8.png" max-width="600" /></p>
+<p>到了2020年，前不久随华为Mate 40系列手机一起到来的，是最新的麒麟9000 芯片——这颗芯片被许多媒体、行业人士冠以“绝版”“绝唱”甚至是“最后一颗子弹”的名号。无论以上词汇是否言过其实，就当前的大环境来看，麒麟9000的确非常特殊。</p>
+<p>今年8月份，余承东在中国信息化百人会2020年峰会曾公开说过，其芯片到9月15号生产就停止了，所以Mate40系列所搭载的麒麟高端芯片数量相对会比较有限。</p>
+<p><strong>值得一提的是，此前麒麟高端芯片几乎都被归纳在“麒麟900”系列，按照此前预期，接棒麒麟990的应该是“麒麟1000”，而现实是直接从“麒麟900”跨越到“麒麟9000”，这样终极的命名显现的似乎是一种放手一搏的决绝。</strong></p>
+<p>困局之中，麒麟9000就此诞生，成为全球首款量产商用的5nm集成式5G旗舰SoC，相比较同为5nm、外挂基带的苹果A14在体积、性能、散热等方面都更占优势，对技术挑战的解决完成度更高，在整个移动SoC领域都具有相当的领先优势。</p>
+<p>接下来，我们就通过华为最顶级的旗舰机皇Mate40 RS保时捷设计，来体验一下麒麟9000的各种能力。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201119/01de22dbcac54cbe977bcf7890d695dd.png" max-width="600" /></p>
+<p><strong>二、外观欣赏：感受顶奢机皇的华丽风采</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201119/31f7a9a2d53941f9ae43be708b02e45b.jpeg" max-width="600" /></p>
+<p class="ql-align-center">Mate40 RS保时捷设计外包装</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201119/6b2139c0ebd14e8b8c2a4a4a2d242cf7.jpeg" max-width="600" /></p>
+<p class="ql-align-center">附带充电器、有线耳机、卡针等诸多配件</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201119/31ed3f31f2814b8ab498bf45d34b8489.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201119/36f7d020d66744aa9a76292bc29f8d35.jpeg" max-width="600" /></p>
+<p>和Mate40 Pro一样，华为Mate40 RS保时捷设计同样是一部采用6.76英寸的88°曲面率大屏手机。双挖孔设计，只是UI方面继续了保时捷系列的红黑配色主题，相当深邃典雅。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201119/de87e06e9f0049128a96fd3abe77b5e0.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201119/15d563b9ff114ca3b0d92e9fc4e50221.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201119/e472532b698d492281ff0c9684725df5.jpeg" max-width="600" /></p>
+<p>不同于Mate40系列的其它机型，华为Mate40 RS保时捷设计的陶瓷机身背部走的仍然还是奢侈路线，它具备标志性的跑道元素，镭射而出的“PORSCHE DESIGN”与哑光陶瓷和两面陶瓷排布有序、凹凸有致。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201119/47a02473279842feaf498b729b4b06da.jpeg" max-width="600" /></p>
+<p>机身的背部采用了独占的星钻摄像头设计，5个摄像头外加一个闪光灯，形成了一个八边形。八边形的中间区域是徕卡认证标识。能够将华为+保时捷+徕卡的三重logo同时置于一面的机型，也就只有历代保时捷设计了，最大限度凸显出用户身份。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201119/1384d5ce806b4e3eb614d765a306280c.jpeg" max-width="600" /></p>
+<p>预置的手机壳采用皮质，质地、手感与前代保时捷设计的机身后背相似。这样来看是为不同喜好的用户提供了两个选择——喜欢陶瓷手感可以裸机使用，喜欢皮质手感可以戴上原装手机壳，握感、品质与前代保时捷设计相一致。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201119/00799da2811b42e0a0663cc5306daae2.jpeg" max-width="600" /></p>
+<p class="ql-align-center">标志性红色电源键</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201119/ae3f235aa72d4b4d861de67508c21bb3.jpeg" max-width="600" /></p>
+<p class="ql-align-center">机身顶部</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201119/e4ca42a74f374c73abc01e96af000783.jpeg" max-width="600" /></p>
+<p class="ql-align-center">机身底部</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201119/8d92b3b680b6411d9aaf41b1ef371746.jpeg" max-width="600" /></p>
+<p class="ql-align-center">66W充电器</p>
+<p><strong>三、麒麟9000性能及能效测试：GPU拉满24核心！大翻身</strong></p>
+<p><strong>——麒麟9000规格一览</strong></p>
+<p>麒麟9000系列SoC的一大创举便是集成153亿个晶体管，苹果最新的A14也只不过集成118亿晶体管。晶体管的多少，直接影响芯片性能发挥。一般一个芯片上集成的晶体管越多，即电流在一个时间单位上流动的分支越多，那么该芯片的功能越复杂，性能也就越高，同一时间内处理的数据也就越多。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201119/70d590da79eb463fbeb1f848c8551813.png" max-width="600" /></p>
+<p class="ql-align-center">麒麟9000规格一览</p>
+<p><strong>——CPU</strong></p>
+<p>麒麟9000的CPU部分采用的是1+3+4的组合方式，其中的那颗Cortex-A77超大核心的3.13GHz主频，甚至比被奉为骁龙865超频版的骁龙865 Plus的3.1GHz主频还要更高一些，从这一点来看，CPU部分算是有着在过去难以想象的激进。</p>
+<p>值得提的是，麒麟9000上协助CPU工作的存储子系统有了相当大的升级，这是从麒麟980时代就开辟的一大侧重方向。</p>
+<p>华为海思早在麒麟980时期就给它用上了DSU 4MB L3缓存；麒麟990在前者基础上采用新的系统级别的缓存，同时降低存储子系统的延迟，该芯在当时的性能表现比麒麟980有所提升且功耗更低的原因除了先进制程加持，与华为海思在存储子系统的投入是分不开的。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201119/7a6ccff9ef4948bca44efb2b7209cd9f.jpeg" max-width="600" /></p>
+<p>到了麒麟9000这一代，按照华为Fellow艾伟对Smart Cache 2.0关于“相对直接访问内存来说，带宽提升了一倍”的表述，系统级别的缓存很有可能是提升到了8MB，也就是相比较上代容量翻番，对于性能、能效的提升有着相当大的助力。</p>
+<p>多说无益，接下来让我们跑个分。</p>
+<p>注意Mate40系列手机提供有性能模式，开启后可以让麒麟9000一直处于满血状态释放自己的能力，在跑分过程当中笔者将一直开启性能模式。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201119/25e7bf4ae57747fda1472e248e2a998a.jpeg" max-width="600" /></p>
+<p>GeekBench考察的是CPU单核心、多核心性能，权威性毋庸置疑。华为Mate40 RS保时捷设计凭借麒麟9000的智能多核心调度，在性能模式下可以达到单核跑分1012和多核跑分3713的成绩，多线程性能有明显改进。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201119/1a281b3df65843c8978985f9e2f86e82.png" max-width="600" /></p>
+<p class="ql-align-center">GeekBench单核心对比</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201119/391ed354906e4173b3cc1aa955698910.png" max-width="600" /></p>
+<p class="ql-align-center">GeekBench多核心对比</p>
+<p>按照Geekbench5的衡量标准，麒麟9000单核性能大概比骁龙865 Plus提升3.1%，多核性能比骁龙865 Plus提升13%。值得一提的是，二者都是基于ARM A77架构，可以看出麒麟对于此代架构的设计与优化已经得心应手，无论是体现绝对性能的单核心，还是考验调度配合的多核心都达到了极高水准。</p>
+<p>对比有代际差异的麒麟990 5G，麒麟9000的提升幅度更是明显，单核性能提升达29%，多核性能提升15%。5nm工艺带来的红利以及ARM A77架构的优势尽显。</p>
+<p><strong>——GPU</strong></p>
+<p>无论是苹果A系列还是安卓阵营的GPU，前些时间都开始呈现小碎步式的前进。</p>
+<p>天赋Adreno的图形能力“带头大哥”高通没有大步快跑的跃进，本该趁着Mali G77大爆发时迎头追上高通的三星Exynos 990与联发科天玑1000都不约而同地采取了保守策略，前者使用Mali G77 MP11（11个核心），后者更甚使用规模更小的Mali G77 MP9（9个核心），而麒麟990 5G因为时间差或者是其它原因，使用的是Mali G76，算是错失良机。</p>
+<p>终于轮到麒麟9000上场了，它一出手就意外地跳过G77，直接用上了Mali G78。Mali G78 GPU算是Mali G77的升级版，两者都采用Valhall图形架构，最突出的是首次支持到24个核心，相比Mali-G77的设计上限16个核心增加了有一半。</p>
+<p>而且不同于猎户座或者联发科只能将G76的核心数拉至9到11个，麒麟9000拉满到Mali G78的设计上限，即24核，一改过去GPU方面高频少核的保守行进路线，大有放手一搏的意味。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201119/9377287088b7466dbdccb59069698cb5.jpeg" max-width="600" /></p>
+<p>GFXBench考量的是GPU图形核心游戏性能，可以看到麒麟9000相较于高通骁龙865 Plus甚至是苹果A13都已经难得的显露了领先势头，拉满24核心的Mali G78在此功不可没。</p>
+<p class="ql-align-center">|</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201119/18677f0426074098bd1669a492ae5d62.png" max-width="600" /></p>
+<p class="ql-align-center">阿兹特克废墟(Normal) OpenGL</p>
+<p>按照GFXBench的衡量标准，在阿兹特克废墟(Normal) OpenGL的测试项目当中，麒麟9000相比较骁龙865 Plus的领先幅度达50%，相当夸张。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201119/930bcabecaa44a4f8dbb71e0f59570d4.png" max-width="600" /></p>
+<p class="ql-align-center">阿兹特克废墟(Normal) Vulkan</p>
+<p>在阿兹特克废墟(Normal)Vulkan的测试项目当中，麒麟9000相比较A13的领先达12%，相比较骁龙865 Plus的领先幅度更是达到了38%。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201119/d5dbd3c4be3c4fe9bba0cc8de30e23ed.png" max-width="600" /></p>
+<p class="ql-align-center">赛车追逐</p>
+<p>在赛车追逐的测试项目当中，只有A13能够追上麒麟9000，而麒麟9000相比较骁龙865 Plus的提升幅度仍然比较大，达到了20%。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201119/522138443bf44e9c95d3259b2dc80522.png" max-width="600" /></p>
+<p class="ql-align-center">曼哈顿3.1</p>
+<p>在曼哈顿3.1测试项目当中，麒麟9000相比较A13的领先幅度达17%，相比较骁龙865 Plus的领先幅度达到了27%。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201119/88d18b4993d0460eba70a3ec3924d18f.png" max-width="600" /></p>
+<p class="ql-align-center">曼哈顿</p>
+<p>终于到曼哈顿测试项目，A13取得了不大的优势，此项当中麒麟9000相比较骁龙865 Plus的领先幅度达到26%。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201119/2602f650ed954407b4aebfd6680c6865.png" max-width="600" /></p>
+<p class="ql-align-center">霸王龙</p>
+<p>霸王龙测试项目当中，麒麟9000相比较A13还有着19%的差距，但是相比较骁龙865 Plus仍能保持4%的领先优势。</p>
+<p>综合以上测试数据来看，麒麟9000能够实现对骁龙865 Plus的全面压制，以及从26%到50%不等的测试子项领先。</p>
+<p>即便是面对苹果A13，两者只存在不到20%的互有胜负。从GFXbench的测试结果来看，可以肯定麒麟9000的图形处理能力已经不逊苹果A13，考虑到A14（我们在撰写此文时未拿到iPhone12系列机器，无法获得详细数据）相比较A13提升不大，麒麟9000的图形性能与之硬碰硬也有相当的可能。</p>
+<p><strong>——能效测试</strong></p>
+<p>所谓“开源”、“节流”。</p>
+<p>在电池技术难以取得根本性突破的大背景下，延长手机续航只能从“节流”方面入手，以缓解续航焦虑。</p>
+<p>由此，当前最先进的5纳米工艺制程成为了Mate40系列的节能必选项。</p>
+<p>前文我们所看到的1个超大核+3个大核+4个小核的三档能效架构，也是在为能效做充分考虑：用户轻度使用时主要依靠小核减少能量消耗，看视频或者多任务时，大核动身，玩大型游戏时火力全开，呈现出梯度运行的路线，以实现最佳能效。</p>
+<p>图形显示方面，麒麟9000集成了迄今安卓阵营最为强劲的24核Mali-G78 GPU集群，还有着诸如GPU Turbo等均衡高性能、高能效、高画质的解决方案加成。</p>
+<p>不仅如此，麒麟9000还将巴龙5G基带集成在SoC内部，规避外挂处理所带来的额外能量消耗。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201119/f6d60b0f75234ede930ba12fd942a0df.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201119/7153ee1ed6c642908df70f815e5c0736.jpeg" max-width="600" /></p>
+<p>我们清空除监测软件之外的手机后台，将两部手机的屏幕亮度拉高到最大亮度，开启静音，调至FHD+分辨率，HDR 60FPS场景，然后用它们去观战同一场《和平精英》的游戏对局。</p>
+<p>然后发现，搭载麒麟9000的华为Mate40系列旗舰与某骁龙865 Plus机型发挥出同样的性能表现的时候：</p>
+<p>Mate40系列旗舰整机电流值记录为773mA，某骁龙865 Plus旗舰的整机电流值记录为890mA。</p>
+<p>为了进一步了解芯片功耗情况，我们测试了两部手机的idle电流值，均在290mA左右。用整机电流值-idle电流值的计算方式，可以大致得出芯片的电流值： 麒麟9000电流值为483mA，骁龙865+电流值为600mA。意味着在我们的测试场景中，相同性能下，麒麟9000芯片的功耗可能要比865+优20%左右。</p>
+<p>显然Mate40旗舰所搭载麒麟9000的能效要更高一些，所以综合性能与能效比等多个维度来看，麒麟9000如今的表现堪称突飞勐进。</p>
+<p><strong>四、影像体验：麒麟9000平台成就影像机皇</strong></p>
+<p><strong>——Mate40 RS保时捷设计影像规格一览</strong></p>
+<p>华为Mate40 RS保时捷设计的背部是八边形星钻设计的超感知徕卡电影五摄，具体包括：</p>
+<p>——5000万像素超感知主摄，1/1.28英寸传感器，光圈F1.9，支持OIS光学防抖；</p>
+<p>——800万像素潜望式长焦镜头，支持10x光学变焦、20x混合变焦、100x双目变焦，光圈F4.4；</p>
+<p>——1200万像素长焦镜头，支持3x光学变焦、OIS光学防抖，光圈F2.4；</p>
+<p>——2000万像素电影镜头，超广角，光圈F1.8，1/1.53英寸，比IMX586和IMX708这两款顶尖超广角镜头还要大；</p>
+<p>——3D深感摄像头，支持渐进式景深。</p>
+<p>值得一提的是，这五摄还支持XD Fusion硬件实时HDR视频、AIS超级运动防抖等功能。前置则是双摄，包括1300万像素超感知镜头(广角+F2.4)、3D深感镜头，支持3D人脸识别、4K分辨率录像。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201119/b900696afa3842e983ce2a8e7b1b2df6.jpeg" max-width="600" /></p>
+<p>笔者在初上手Mate40 RS保时捷设计之时，首先被该系列强大的影像系统硬件所吸引，关注重点自然也一直停留在此。而随着体验的深入，我们渐渐发现，硬件之外的ISP、NPU与算法机制是华为Mate40系列的影像能力迥异于过去的灵魂核心，也是关键所在。</p>
+<p>现今，随着定制传感器、重金堆料的泛滥，大多数厂商又重回同质化宿命。在这种情况下，算法、以及驱动算法的处理器平台的地位越来越重要。随着P40系列伴生的XD Fusion、华为Mate40系列伴生的麒麟9000平台到来，华为的影像体系进化到新高度。</p>
+<p><strong>——麒麟9000为强悍影像带来了什么？</strong></p>
+<p>华为早在Mate10手机上就引入当时业界首款移动AI处理器Kirin970的强大NPU，参与ISP图像处理流程。</p>
+<p>到了这一代的华为Mate 40系列，麒麟9000 5G SoC芯片更是内置了目前华为最先进的ISP 6.0，带来50%的吞吐率提升，以及在噪声消除方面48%等提升，麒麟9000在业界首次实现了ISP+NPU融合架构，带来超强的细节还原和降噪能力，可以被运用到手机摄影，尤其是暗光、弱光条件下的影像记录，助力Mate40系列再次夺得DXO影像排行榜第一名的霸主地位。</p>
+<p>顺便提一下，大家现在熟知的类似IMX600、IMX700等图像传感器，实际不能独立获得色彩信息，它们都是“色盲”，需要色彩滤波器协助，否则拍出来的照片就是黑白的。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201119/a8e1fe973c9f40418e7c765c7d22c07d.png" max-width="600" /></p>
+<p class="ql-align-center">拜耳阵列RGB色彩滤波器</p>
+<p>上图是比较典型的拜耳阵列RGB颜色滤波器。最下面一层灰色色块是一个个感光PD部分，光子在这里转换成电信号；上面一层R/G/B（红/绿/蓝）三种颜色的马赛克色块就是颜色滤波器，白光透过RGB色彩滤波器后，分别滤出红/绿/蓝光，在灰色PD部分被吸收。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201119/690d58c4f3b74320b1da4be35d6786a1.jpeg" max-width="600" /></p>
+<p>华为从P30系列开始就将RYB色彩滤波器引入，凭借着覆盖更多光谱、捕获更多光子的特殊能力一直传延至今，进光量相比RGB色彩滤波器可以提升30%-40%左右，让Mate系列、P40系列的暗光拍摄能力一骑绝尘。</p>
+<p>而且，这套方案至今没有其它任何一家手机厂商能够跟进。</p>
+<p>如果探究此中因果的话，会发现有一项因素就是传统的手机处理器SoC中的ISP只能支持RGB算法，无法同时支持RGB传感器和RYB超感光传感器。ISP pipeline中各个模块无法应对Y像素所蕴含的颜色信息量，也无法对RYB传感器精准的插值。</p>
+<p>正是凭借自研平台的优势，华为的技术演进路线是掌握自己手中的。基于以上复杂的需求，海思将全新的AI去马赛克算法、全新的AI色彩自动白平衡和全新的颜色管理算法一起整合进麒麟ISP Pipeline图像处理的框架当中。各模块的神经网络模型经过大量的RYYB sensor RAW数据训练后，能有效找到物体细节和色彩分量之间的映射关系，在传统ISP处理架构上用计算摄影的方法，实现RYYB的支持。</p>
+<p>值得注意的是，ISP-NPU融合架构已经能将ISP处理流水线和NPU矩阵计算结合，解决了带宽问题，提升了神经网络算法的运行性能。麒麟9000的SoC内部甚至设计有硬件直连，将NPU计算直接融入ISP的Pipeline中，利用SmartCache 2.0的大容量、大带宽能力，形成硬件级的帧内和帧间信息直通，在一帧33ms时间内，多个算法无缝切换，首次实现端侧AI实时像素级视频处理。</p>
+<p>简而言之，造就强大的影像系统，并不是单纯依靠纸面参数强大的图像传感器便能一蹴而就，色彩滤波器和ISP算法pipeline作为最终成像的物理和算法基础至关重要。</p>
+<p>而且从华为的影像技术演进来看，要想在此领域构建起高壁垒，其中基于SoC平台发挥的算法基础可能才是关键的法门所在。</p>
+<p><strong>——样张展示</strong></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201119/e50b0cb7de164a30adbcc20221b81c4e.jpeg" max-width="600" /></p>
+<p class="ql-align-center">主摄微距</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201119/0254560cc9a6481abb5950d9c5498a2d.jpeg" max-width="600" /></p>
+<p class="ql-align-center">主摄 夜间拍摄</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201119/6f9bdd8faa0e4530886122f8f8bd201c.jpeg" max-width="600" /></p>
+<p class="ql-align-center">超广角逆光HDR</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201119/a3a5db504309432392edb5a7322588d6.jpeg" max-width="600" /></p>
+<p class="ql-align-center">超广角 夜间拍摄</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201119/bd4c538a5e134b1887bb91a15aa84ccb.jpeg" max-width="600" /></p>
+<p class="ql-align-center">3X变焦夜间拍摄（添加怀旧滤镜）</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201119/057c632a8bb543af9bc420b0bc7c74e8.jpeg" max-width="600" /></p>
+<p class="ql-align-center">3X变焦夜间拍摄雕塑</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201119/3a2dc16e75a3423694685ce5cb462c38.jpeg" max-width="600" /></p>
+<p class="ql-align-center">10X变焦拍摄</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201119/2df2b3009f904084b4814cee91c33597.jpeg" max-width="600" /></p>
+<p class="ql-align-center">10X变焦 抓拍悬于风中、垂直地面的落叶</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201119/70cfbb31b1ec498f8633469927d406a9.jpeg" max-width="600" /></p>
+<p class="ql-align-center">10X变焦微距</p>
+<p>总的来看，麒麟9000芯片的ISP、NPU结合XD Fusion，对Mate40 RS保时捷设计全焦段的优化十分显着。特别是针对暗处细节的优化、复杂光线下的色彩纠正以及必要的HDR优化都相当出色。</p>
+<p><strong>五、总结：向上攀登的故事仍在继续</strong></p>
+<p>华为Mate40 RS保时捷设计为用户带来了相较以往更加高端商务的外观设计，更优秀的屏幕观感和握持体验。不止于外观，该机无论是在影像、还是其它体验的表现，都足以撑起华为顶级奢侈旗舰的地位。</p>
+<p>这背后，是与之相配的麒麟9000为其高筑起平台基底。</p>
+<p>而且，关于麒麟芯片目前所遭遇的来自外部环境的困难，相信大家都有所耳闻。在这样的困局之下，麒麟9000却依然能够在技术上超越以往5G芯片的精密与强大，以一个非常高的完成度出现在消费者面前，帮助夯实Mate系列5G旗舰性能巅峰的行业地位，难能可贵。</p>
+<p><strong>通过测试体验，我们发现：</strong></p>
+<p>首先是CPU部分，得益于5nm制程红利以及海思团队的核心调配优化能力，麒麟9000相比较同为A77架构的骁龙865 Plus，在Geekbench评判体系当中单核性能比之提升3.1%，多核性能比之提升13%，达到了极高水准。</p>
+<p>GPU曾经是海思平台的一块短板，也正是因此倒逼华为推出GPU Turbo等各种软件方案强化图形处理能力。而今短板不再，反而成为麒麟9000的一大亮点所在，华为史无前例地将GPU的核心数堆到设计上限，所有人第一次看到24核心的GPU在麒麟平台满血释放，蔚为壮观。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201119/110e40205ee34d388b13c7c0770a1cd0.png" max-width="600" /></p>
+<p>超大规模的GPU带来了性能和能效的巨大提升。在我们的GFXbench测试当中，阿兹特克废墟(Normal) OpenGL的测试子项，麒麟9000相比较骁龙865 Plus的领先幅度达到了50%！即便是面对苹果A13，两者综合起来只存在不到20%的互有胜负。</p>
+<p>从GFXbench的测试结果来看，可以肯定麒麟9000的图形处理能力已经不逊苹果A13，可以想象打着时间差在明年上场的骁龙875压力会陡升得多么大。</p>
+<p>综合5nm制程工艺、CPU三挡能效架构以及集成式5G基带设计等，能效方面，我们仅仅是打开一个手游进行简单测试，就能发现搭载麒麟9000的华为Mate40系列手机与某骁龙865 Plus机型在维持同一性能表现的前提下，显现了20%左右的效率提升，综合性能与能效比等多个维度来看，麒麟9000如今的表现堪称突飞勐进。</p>
+<p>影像更无需多言，这是华为的基本盘，华为Mate40 RS保时捷设计能够集齐这世上仅有的超感知徕卡电影五摄，又有麒麟9000芯片强悍的ISP、NPU结合XD Fusion，对全焦段、暗处细节、复杂光线下的色彩纠正、必要的HDR优化十分显着，进一步巩固影像霸主的地位。</p>
+<p><strong>Mate40 RS保时捷设计作为年度顶奢旗舰、麒麟9000 5G SoC作为年度旗舰顶级芯片，确实都做到了不负众望。</strong>而且它们是在重重困境之中，遭外力束手束脚之后，仍能交出如此完美答卷，一如前言回首的十年逆风之旅，华为、海思向上攀登的故事仍在继续。</p>
+➜技嘉BRIX S迷你机升级：Zen3都来了 才上Zen2
+http://www.sohu.com/a/432960353_163726	42395
+<p>技嘉今天升级了旗下BRIX S系列迷你机，采用最新的AMD锐龙4000U系列平台，终于用上了7nm Zen2架构，整体性能焕然一新。当然，7nm Zen3架构的锐龙5000U系列明年初就要来了……</p>
+<p>技嘉BRIX S提供两种版本，高度分别为46.8毫米、34.7毫米，前者多了一个2.5英寸SATA硬盘插槽，和一张带有一个RJ-45网口、两个COM串口的扩展子卡。</p>
+<p>处理器都可选<strong>锐龙7 4700U/4700U、锐龙5 4500U、锐龙3 4300U</strong>，<strong>通过两个USB-C/DP、一个HDMI、一个miniDP，可以输出四路4K显示</strong>，另外还有五个USB-A 3.0、一个RJ-45。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201119/c48baf3f567d48f18633cb7739aea97b.jpeg" /></p>
+<p>内部标配一个M.2 2280硬盘插槽(PCIe/SATA)、两条DDR4-3200 SO-DIMM内存插槽(64GB)、Realtek RTL8125 2.5G网卡、Intel Wi-Fi 6网卡、Realtek ALC255声卡。</p>
+<p>系统工作环境温度0℃到35℃，待机环境温度-20℃到60℃，支持VESA壁挂。</p>
+<p>价格和上市时间暂未公布。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201119/fb1436ae0b93435aa4bde0d6d99fd201.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><img src="http://p5.itc.cn/q_70/images03/20201119/fee8746e87b24c0bb66109096f8df224.jpeg" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201119/3a4cd9c00ca547deb739045d2d9089b6.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201119/f69b7237e7d749ffa69df73e65fee774.jpeg" /></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201119/af81d754c7c9403e976fc2817c907e84.jpeg" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201119/823af1a07fff49f7a20a7f7a81385494.jpeg" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201119/d52d5fc599b34a23ab858100595d366c.jpeg" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201119/7b3d42fa13e441dca254db71d9278af9.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201119/dac11b6d6f4e4c4db616c1d861384ea8.jpeg" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201119/e66d8dca9630413f92deb6488f390f21.jpeg" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201119/3b23e08310524b7ca5270de807320154.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201119/a96cc0882f3f4c11a983fa4126bd7d77.jpeg" /></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201119/8368e628ec4e4cc9b03b63f01fc247fe.jpeg" /></p>
+➜第一家：华擎B450主板全线支持锐龙5000
+http://www.sohu.com/a/433000690_163726	58139
+<p>在此之前，各家厂商已经陆续为旗下X570、B550、A520主板放出了升级版BIOS，可以完美兼容最新的锐龙5000系列。</p>
+<p>与此同时，AMD也早早承诺，上一代X470、B450主板同样能支持锐龙5000系列，但要到明年1月才会有正式版BIOS。</p>
+<p>不过眼下，多家厂商都为X470、B450主板更新了测试版BIOS，以支持锐龙5000系列，但都很低调。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201120/2366fbfa6e794afa9bee82dff2033829.jpeg" /></p>
+<p><strong>华擎，华擎第一个官方宣布，旗下15款B450主板都已经获得BIOS更新，全部兼容锐龙5000系列！</strong></p>
+<p>比较有趣的是，华擎的X470系列还没有全部获得新BIOS，更主流的B450反而抢先了一步。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201120/164f9139cef1439d9d07ee3dd59db20e.jpeg" /></p>
+<p><strong>详细主板型号和BIOS版本号如下：</strong></p>
+<p>B450 Steel Legend：P3.70</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>B450 Pro4：P4.50</p>
+<p>B450 Pro4 R2.0：P4.50</p>
+<p>Fatal1ty B450 Gaming K4：P4.50</p>
+<p>B450M Steel Legend：P3.60</p>
+<p>B450M Steel Legend (Pink Edition)：P3.60P</p>
+<p>B450M Pro4：P4.60</p>
+<p>B450M Pro4 R2.0：P4.60</p>
+<p>B450M Pro4-F：P2.40</p>
+<p>B450M Pro4-F R2.0：P2.40</p>
+<p>B450M/ac：P2.30</p>
+<p>B450M/ac R2.0：P2.30</p>
+<p>B450M-HDV：P4.20</p>
+<p>B450M-HDV R4.0：P4.10</p>
+<p>Fatal1ty B450 Gaming-ITX/ac：P4.20</p>
+<p>不过需要注意的是，<strong>这些新BIOS有的还是测试版，建议用户谨慎体验，正式版会在后续放出。</strong></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201120/4d3580736dfc4ae6b4a2a7b852b6513a.png" /></p>

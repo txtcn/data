@@ -1,0 +1,288 @@
+➜网游碾压性优势！锐龙7 5800X/锐龙5 5600X评测：现在轮到AMD越级虐对手了
+http://www.sohu.com/a/432029783_163726	50131
+<p class="ql-align-justify"><strong>一、前言：15年的轮回 Zen3终成最强游戏处理器</strong></p>
+<p class="ql-align-justify">在游戏玩家眼中，AMD上一次辉煌耀眼产品应该是2005年Athlon 64 FX-57。彼时，Intel正痴迷于冲击4GHz频率大关，但“高贵”的FX-57仅凭2.8GHz的频率就轻松击溃了3.8GHz的奔腾4 670。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/c9f03f8059bf49e9a18eb3605b5d1e63.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">还有多少记得这个曾经的王者（Athlon 64 FX-57）</p>
+<p class="ql-align-justify">2006年，Intel低调地拿出了“Conroe”处理器，正式宣告了奔腾时代的终结。其实Conroe（谐称“扣肉”）并不是什么新东西，就只是迅驰平台奔腾M处理器的桌面版，而奔腾M的处理器构架则是基于2001年图拉丁奔腾III-S。</p>
+<p class="ql-align-justify">“扣肉”到底有多强呢？即便是最低端型号E6300，也能秒杀上代顶级奔腾D，让后者一夜之间被扫进了历史的“垃圾堆”，就连此前大放异彩的AMD Athlon X2在它面前也变得黯淡无光。</p>
+<p class="ql-align-justify">在此之后，AMD打造了 “推土机”、“压路机”、“打桩机”等一系列处理器构架，虽然整数性能出色，但是却在浮点单元方面做了一些牺牲，导致游戏性能根本无法与酷睿系列抗衡。AMD也就此在桌面市场上沉沦了十年之久，在FX-57之后，丢失的王座似乎再也回不来了！</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201115/f0085ef82f9d4e42afb56d4a62f8f66c.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">2017年，AMD凭借Zen架构和锐龙处理器高调回来，强悍的性能、足够多的核心、超高的性价比，开始一点一点的给对手施加压力，也让玩家买到了更加便宜性能更强的Intel处理器。不过在游戏性能方面，锐龙始终差了那么一点点。</p>
+<p class="ql-align-justify">2020年11月5日，新一代的Zen3构架处理器解禁， IPC再次提升19%的。根据我们首发评测的数据显示，在网络游戏中，锐龙9 5900X/5900X呈现出碾压性的优势，在3A大作中也不逊色于i9-10900K。</p>
+<p class="ql-align-justify">时隔15年，锐龙9 5900X/5900X也终于从i9-10900K手上抢回了最强游戏处理器的宝座。</p>
+<p class="ql-align-justify">今天为大家带来的则是锐龙7 5800X与锐龙5 5600X的评测。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201115/d651c6893d9141f29be37a660967650f.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">如果光从参数上来看，新一代的锐龙5000系列处理器与锐龙3000似乎并没有太大的区别。比如锐龙7 5800X与锐龙7 3800X都是8核心16线程，7nm制程工艺、32MB三级缓存，105W TDP，仅仅是最大加速频率从4.5GHz提升到了4.7GHz。</p>
+<p class="ql-align-justify">事实上AMD再一次震撼了我们，Zen3相比Zen2的改进绝不是参数上看到的那么简单！</p>
+<p class="ql-align-justify"><strong>1、CPU频率</strong></p>
+<p class="ql-align-justify">Zen3处理器可以轻易达到甚至超越标称的加速频率。锐龙9 5950X的加速频率是4.9GHz，但在实际运行中可以很轻松地保持5.05GHz甚至更高的运行频率。而上代锐龙9 3950X虽然加速频率也有4.7GHz，不过多数时候只能跑到4.5GHz。</p>
+<p class="ql-align-justify">在加速频率之外，Zen3的全核频率也相当惊人，已发布的4颗锐龙5000系列处理器在高负载下都能达到全核4.6GHz的频率，而锐龙9 3900X大致只能到4.1GHz。</p>
+<p class="ql-align-justify"><strong>2、三级缓存</strong></p>
+<p class="ql-align-justify">Zen3构架的单个CCX拥有8个核心和32MB三级缓存，单CCX的设计让每个核心都能访问全部的32MB三级缓存。</p>
+<p class="ql-align-justify">相比之下Zen2虽然单个CCD虽然是8个核心32M L3缓存，但是分成了2个CCX，单个CCX是4个核心16MB缓存，不同的CCX之间L3缓存是不能共用的，也就是说每个核心最多只能调用16MB L3缓存。</p>
+<p class="ql-align-justify">也就是说Zen3处理器每个核心能够利用的三级缓存容量是Zen2的2倍。</p>
+<p class="ql-align-justify"><strong>3、内存频率与延迟</strong></p>
+<p class="ql-align-justify">AMD已经明确说明了Zen3处理器可以完美支持4000MHz频率的内存，各家主板厂商也在积极优化新版本的BIOS。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201115/d45d2063594349f7a3e93d517ee45dd5.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">根据我们首测的数据来看，在北桥频率保持1:1的时候，Zen3处理器的内存延迟要比Zen2低10%。</p>
+<p class="ql-align-justify">Zen2处理器发布初期最佳内存频率是3600MHz，后面经过BIOS的改进可以稳定到3800MHz。</p>
+<p class="ql-align-justify">新一代的Zen3处理器在发布时就能达到4000MHz的最佳频率（北桥不降频），在新BIOS的进行优化之后，甚至能够达到4133MHz、4200MHz。</p>
+<p class="ql-align-justify"><strong>二、外观：锐龙5 5600X自带幽灵Spire散热器</strong></p>
+<p class="ql-align-justify">首先是锐龙5 5600X的图赏，这款处理器包装与上代的锐龙5 3600X没有太大区别，它也是目前上市的4款锐龙5000处理器中唯一一款自带散热器的（幽灵Spire）。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201115/01ab0409c9a0419b880c1d670bea1297.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201115/a61a39364e334da1bfd40c70ab0ee555.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201115/9495ecf8fe8f49edbd84cd011241e172.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201115/aaba23ee71074aa3bfc945c881a2e07c.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201115/ee9d01eaec974339baa43b5487906b32.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">幽灵Spire散热器。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201115/81da38af04cd4d609cd3140601ff6709.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">下面是锐龙7 5800X的图赏。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201115/c5db655f41574221951315e5ff4ba1fe.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201115/ed25b76c604d4da3a1a82346ce45ee9c.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201115/f7cd655486dd4e2e9f4cb607e9ac3907.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/37765421f7d9478eb27a9886797b16f4.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>三、理论性能测试：八核Zen3战平10核i9</strong></p>
+<p class="ql-align-justify">测试平台如下：</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201115/1cbba299ea8f43d180e55eb4302b811a.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>1、CineBench R20</strong></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201115/76f89f2a4bb84f2498f783af5a644b4f.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙7 5800X单线程分数为625cb，多线程成绩则为6076cb。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201115/7d218a042b7a418aa754b5f6607d04be.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X单线程分数为602cb，多线程则为4484cb。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201115/0b092a5660704565b69c1880b1ff8517.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙7 5800X的单线程分数能比i7-10400K多19%，多线程分数领先22%；锐龙5 5600X打单线程分数比i5-10600K多了足足24%，多线程则能领先25%。</p>
+<p class="ql-align-justify">2款Zen3处理器的单线程分数都远超5.3GHz的i9-10900K。</p>
+<p class="ql-align-justify"><strong>2、CineBench R15</strong></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201115/9221dbe1dfbb4f41a940f29fbec1696f.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙7 5800X单线程分数为264cb，多线程成绩则为2581cb。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/d43694060131466bae78931089b83e72.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X单线程分数为248cb，多线程则为1921cb。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/0c3ad796e8294580a01adb69920fa385.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">CineBench R15中，锐龙7 5800X的单线程分数比i7-10700K高了41分，领先幅度达到了18%，多线程也能领先26%。</p>
+<p class="ql-align-justify">锐龙5 5600X的单线程分数比i5-10600K多了19%，多线程则能领先30%。</p>
+<p class="ql-align-justify">同样的即便是锐龙5 5600X在单线程性能方面也能比最强的i9-10900K强10%以上。</p>
+<p class="ql-align-justify"><strong>3、CPU-Z</strong></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201115/b0b4dad2e9ec434583c6283d32c5f67a.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙7 5800X单线程分数为664，多线程分数为6660。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201115/05d61270c0d6441496c0f10e9798d1fe.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X单线程分数为636，多线程分数为4954。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201115/78c61064c8ac427285a0d5569329f0d8.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>4、wPrime</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/13b6fd7bab304801a78d2dbabd21c0da.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">在wPrime 32M单线程性能测试中，锐龙7 5800X耗时31.4秒；多线程跑完wPrime 1024M则用掉了86.7秒。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201115/55274b63cfb846a58300be7f6abf3133.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X单线程跑完wPrime 32M耗时31.7秒；使用多线程在wPrime 1024M则用掉了115秒。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201115/e7412bca07f7422e801c7b7cafbc0f46.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">wPrime的测试结果很奇怪，不论是单线程成绩还是多线程成绩，Zen3的表现都不如上代的Zen2处理器，单线程差距在9%左右，多线程差距约为5%。怀疑是wPrime对于锐龙500</p>
+<p class="ql-align-justify">0的优化支持还不到位，可以暂时忽略。</p>
+<p class="ql-align-justify"><strong>5、POV-Ray</strong></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201115/64ab3e6c1d5a43a6a00e3a473e80ed91.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙7 5800X的多线程成绩为5457PPS，单线程则为592PPS。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/a88f0674e4e94166a52f5710483eeef6.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X的多线程成绩为4039PPS，单线程则为559PPS。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/34b7cdcc59224d88a911b57864d0af7f.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>6、7-zip</strong></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201115/476ec48b870f4fe39c72ca8d97c3715e.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙7 5800X的多线程成绩为91891MIPS，单线程则为8303MIPS。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201115/7b97ca8c7dff4a81b9d864a17647fac0.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X的多线程成绩为76661MIPS，单线程则为8184MIPS。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201115/ef0205698186467883ad2063cea6f07d.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">压缩解压缩这种测试对于三级缓存的容量尤其敏感，玩家当然也会经常用到，比如下载游戏之后进行解压缩和安装。</p>
+<p class="ql-align-justify">锐龙7 5800X的多线程分数甚至超越了i9-10900K 6%之多，比i7-10700K快了28%；锐龙5 5600X的多线程成绩超越了i5-10600K 40%之多，比i7-10700K也快了7%。</p>
+<p class="ql-align-justify"><strong>7、X264 FHD Benchmark</strong></p>
+<p class="ql-align-justify">X264 FHD Benchmark是一款视频转换类测试工具，通过转换自带的一部影视作品来测试CPU的编解码能力并得出相应的分数。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201115/eb4ecd8e267d45cb87a75df85d709459.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙7 5800X的成绩为71FPS。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201115/a34c003ca89f489e8adfe99ece175e06.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X的成绩为60FPS。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201115/50b806254dd042bbae1621a729a6961d.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙7 5800X的编码速度比i7-10700K快了17%，锐龙5 5600X的表现也非常接近i7-10700K。</p>
+<p class="ql-align-justify"><strong>8、X265 FHD Benchmark</strong></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201115/b8b8ccbe9d0b49d0ab810e289ec2ab34.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙7 5800X的成绩为82FPS。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201115/a767d5837c2b46ee9ddcc7521da52a96.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X的成绩为62FPS。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201115/ff43d1edbba54a74aa2a9a8d4fead8c4.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙7 5800X超越了i9-10900K，比i7-10700K快了19%；锐龙5 5600X比i5-10600K快了25%。</p>
+<p class="ql-align-justify"><strong>9、3DMark</strong></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201115/47df73e74d614eca8d0bd46fd67b37d2.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">在3DMark Fire Strike Extreme中，锐龙7 5800X的物理分数为30125。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201115/aa4383c825ae4bd584afcfbc48d37093.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X的物理分数为24808。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201115/3bacd224cdfb4ed0a8aaabc7a9a371f8.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">在3DMark Fire Strike Extreme测试中，锐龙7 5800X再次超越了i9-10900K；锐龙5 5600X同样也超越了i7-10700K，也能大幅度领先于i5-10600K。</p>
+<p class="ql-align-justify"><strong>10、FritzChess Benchmark</strong></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201115/1d01275ec6d04f4495575f00dbcf7e6f.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙7 5800X在默频下也突破了40000，达到了40429千步。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201115/ad9261034cfa4b3bbe9c38da24f193ac.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X也有31803千步。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201115/fa3b8d6cf8674418b125cd43a74ae4d6.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">在锐龙9 5950X之后，锐龙7 5800X的成绩也突破了40000分，比i9-10900K快了12%；锐龙5 5600X比i5-10600K则要强了25%。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201115/9522d98494da411184bcea53fc386de1.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">与i5-10600K相比，锐龙5 5600X的单核性能可以领先12.1%，多核性能更是有24%的优势。</p>
+<p class="ql-align-justify">另外一边，锐龙7 5800X的单核性能比i7-10700K快了9.3%，多核性能则强了21.4%。</p>
+<p class="ql-align-justify">如果越级来对比，锐龙7 5800X的单核性能已经领先i9-10900K 6%，多核性能则只有3%的差距，整体来说，二者在同一水准。锐龙5 5600X的单核性能也超越了i7-10700K，多核性能的差距也不是太大。</p>
+<p class="ql-align-justify"><strong>四、网络游戏测试：锐龙5 5600X比对手快20%</strong></p>
+<p class="ql-align-justify"><strong>1、剑灵</strong></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201115/e03288167a9f4ad29324f5f25b0ecc7c.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X的帧率是71FPS。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/ed909af8b3fc4758ad1eac1afb52c048.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">在相同的场景i5-10600K只有64FPS。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201115/b23c6b91add34c4cba83eaa6803c768f.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">《剑灵》没有固定的帧率测试软件，以上帧率是通过在同样的测试场景下对比换算获得。</p>
+<p class="ql-align-justify">锐龙7 5800X与锐龙5 5600X只有1帧的差异，前者领先i7-10700K 7帧，后者比i5-10600K快了10帧。</p>
+<p class="ql-align-justify"><strong>2、LOL</strong></p>
+<p class="ql-align-justify">《英雄联盟》同样也是没有测试程序，比较公平的测试方法就是对比开局后在出生地的帧率。我们选择的是“召唤师峡谷”地图，5V5人机对战模式，开非常高画质，分辨率为1920*1080。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/35ef39fa3d3042799bc5d3443e92bede.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙7 5800X的帧率可以达到590FPS。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201115/72184af7e9dd4b73b4fe16173ed5c9f0.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X的帧率是557FPS。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/29ce08c1d5b44b99a4462c91ebf030b6.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">i5-10600K测试了数次，帧率都在430FPS附近。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201115/60ad24ccdd21435a9701230c96015342.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">本来我们对这个结果并不是太能接受，反复测试了多次，i5-10600K都是无法在LOL中获得450FPS以上的帧率，和锐龙5 5600X差了123帧。</p>
+<p class="ql-align-justify">锐龙7 5800X也比i7-10700K快了101帧。2款Zen3处理器的领先优势都超过了20%。</p>
+<p class="ql-align-justify"><strong>3、坦克世界</strong></p>
+<p class="ql-align-justify">《坦克世界》是一款经典的战争网游，最新的版本对多核处理器也有着较好的优化。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201115/738f6bc0ae194baa8439ee57ad6f4309.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙7 5800X的分数为57795，换算成帧率是348FPS。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201115/f04f71b3317f473da6ba3430e5e4b2f6.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X的分数为54709，换算成帧率是330FPS。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201115/59f9c8243b954c0397d56ad3d0aa703e.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">《坦克世界》与《LOL》类似，Zen3处理器的优势巨大！</p>
+<p class="ql-align-justify">锐龙7 5800X比i7-10700K快了50帧，锐龙5 5600X比i5-10600K快了59帧。</p>
+<p class="ql-align-justify"><strong>4、CS：GO</strong></p>
+<p class="ql-align-justify">我们直接用的“创意者工坊”总的FPS BENCHMARK地图进行测试，手动选择最高画质。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201115/96994d1159b045cb80401a0566e0984c.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙7 5800X实测664FPS。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201115/af332337688447caab2edff7c8e749a9.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X实测635FPS。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201115/664f14eb32fc4614a3a336c9f9dd8b34.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">在《CS：GO》中，锐龙7 5800X比i7-10700K多了73帧，锐龙5 5600X比i5-10600K快了将近100帧。</p>
+<p class="ql-align-justify"><strong>五、单机游戏测试：锐龙5胜i7、锐龙7胜i9</strong></p>
+<p class="ql-align-justify"><strong>1、古墓丽影：暗影</strong></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201115/b0175991993f49a7972b8e467d61907a.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201115/f8c8c6065b0747daa17a702f484b60d4.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201115/8fd935447f464d6f927129dce82bc0bc.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">虽然锐龙5 5600X与i5-10600K核心频率相近，同样都是6核12线程，但是前者的帧率却足足多了24帧。锐龙7 5800X也比i7-10700K快了10帧。</p>
+<p class="ql-align-justify"><strong>2、GTA V</strong></p>
+<p class="ql-align-justify">以下是我们在《GTA V》中的参数设置（进阶影像也拉到了最大值），1080P分辨率下，显存占用为3442MB。另外，在进阶影像设定中，所有设置项都调到了最高值。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201115/f2890d0c201f415eb17a1b3ee0b6d8ee.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/3496549cbbc0454aac7cf43e1a1f303b.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">在《GTA V》中，2款Zen3处理器都有不同幅度的领先优势，锐龙5 5800X比i7-10700K快了8帧，锐龙5 5600X比i5-10600K快了13帧。</p>
+<p class="ql-align-justify"><strong>3、孤岛惊魂5</strong></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201115/e7a3663a986d4eddb95532ced73a8d8e.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201115/277604b931e84807a9d6d8f90cae8c1e.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">《孤岛惊魂5》中，锐龙7 5800X比i7-10700K多了5帧，锐龙5 5600X也比i5-10600K快了9帧。</p>
+<p class="ql-align-justify"><strong>4、刺客信条：奥德赛</strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201115/d7bd2a0924f944209a1a109cd60a3aa7.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201115/f615c166884d4e8489a03760634b4fcb.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201115/f970ebbd57944499b7792d759dfe9944.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">《刺客信条：奥德赛》是为数不多的Intel处理器能够稍微领先锐Zen3的游戏之一。i7-10700K的帧率比锐龙7 5800X高了5帧，i5-10600K也比锐龙5 5600X快了3帧。</p>
+<p class="ql-align-justify"><strong>5、刺客信条：起源</strong></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201115/9fc1919c74ae41f39b7998185590ca69.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201115/036f414da1a948cd9f01f01ba9bb4ed1.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201115/89c8983a5f4f44ee8a139b160b2f4dc2.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">《刺客信条：起源》的情况也类似于《刺客信条：奥德赛》，i7-10700K要强于锐龙7 5800X；不过i5-10600K则大幅度落后于锐龙5 5600X，差了11帧。</p>
+<p class="ql-align-justify"><strong>5、德军总部：新血脉</strong></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201115/79238bf0a4c6428e9d926581e90b2670.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">在《德军总部：新血脉》中，锐龙7 5800X的帧率与i7-10700K相同，锐龙5 5600X比i5-10600K多了27帧。</p>
+<p class="ql-align-justify"><strong>6、地平线：零之曙光</strong></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201115/4695125c956a4073b9992dde0ec0c875.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201115/ed95a062df944665ad7c9a2bb7ff0f41.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201115/d91842702ed74c02998598c4487d910b.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙7 5800X比i7-10700K快了1帧，锐龙5 5600X比i5-10600K快了10帧。</p>
+<p class="ql-align-justify"><strong>7、绝地求生</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/56dd2e0aec6d43799d99434b7818c841.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201115/d7f134ef91e84bff8ab8ea46eb43d767.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">Zen3处理器在《绝地求生》中处于绝对领先的地位，锐龙7 5800X比i7-10700K快了39帧，锐龙5 5600X比i5-10600K快了51帧之多。这样的表现绝对是超级惊喜，毕竟很难想到锐龙5 5600X也能跑出如此高的帧数，i7都被完全碾压。</p>
+<p class="ql-align-justify"><strong>8、微软模拟飞行2020</strong></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201115/7a6555a820544765b090ef8b628852ef.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201115/c43235e3f38d40ba9a46fce267d24351.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">这是i5-10600K处理器器的帧率，101FPS。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201115/0ae3602926754a23a29ad971be5a9172.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">《模拟飞行2020》更加吃CPU频率一些，锐龙7 5800X比i7-10700K要快了4帧；而锐龙5 5600X比i5-10600K则快了11帧。</p>
+<p class="ql-align-justify"><strong>9、奇点灰烬</strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201115/a42cb7764c844d5da13b3405e9029425.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201115/43e89a3abf8c45c482be3e6588b45e97.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/30a6faf598fc443799cc144fadf319d4.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">Zen3构架的IPC性能优势在《奇点灰烬》中得到了很好的展示，锐龙7 5800X比i7-10700K快了12帧；而锐龙5 5600X不仅比i5-10600K快了19帧，也比i7-10700K快了8帧。</p>
+<p class="ql-align-justify"><strong>10、全面战争：三国</strong></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201115/f177c49577b14de89f21e4f2bc5f5fa6.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/0a68c4f8826949d1abf5b8a53d02d457.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">《全面战争：三国》中，八核处理器更有优势一些。锐龙7 5800X比i7-10700K快了2帧，锐龙5 5600X比i5-10600K快了5帧。</p>
+<p class="ql-align-justify"><strong>10、死亡搁浅</strong></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201115/94fef4f918bf47cfa4f03e38489f9bf1.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙7 5800X和锐龙5 5600X都是237FPS。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201115/77313624c6df43bb9fca9cd761e60092.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">二款Zen3处理器都是237FPS，比i7-10700K快了12帧，比i5-10600K快了25帧。</p>
+<p class="ql-align-justify"><strong>11、战争机器5</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/fc9cd68ad8eb4ac0b34086b28fd534b0.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201115/254a011ab9bc4371af1f1d1e0d73cc60.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">i5-10600K的158FPS有点有点让人惊讶。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201115/b7a5716d9a0042859656278853ba62fc.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">除了i5-10600K的帧率稍低之外，其他三款处理器的帧率都超过了180FPS，锐龙7 5800X最高，达到了187FPS。</p>
+<p class="ql-align-justify">以下是游戏测试数据汇总：</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201115/0d90230c934d4155b6c9c23c611dd3f5.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X相比i5-10600K几乎是压倒性的优势，特别是在网游中领先幅度都在20%左右，在一些比较需求CPU性能的单机游戏中，也能快10%。要知道在以往，网游一直都不是锐龙的强项，这一代本来也没有抱太高的期望，结果完全是冲击性的，网游玩家终于可以放心地上锐龙了。</p>
+<p class="ql-align-justify">令人没想到的是，锐龙5 5600X竟然比i7-10700K还要强一些，想不到风水轮流转，现在轮到AMD越级战胜对手的更高阶处理器了。</p>
+<p class="ql-align-justify">锐龙7 5800X就更不用说了，与自家的旗舰只有1%的差距，总体上要强于i9-10900K，比i7-10700K也快了4%。</p>
+<p class="ql-align-justify">Zen3处理器在网络游戏中的优势已经不用多说了，这也是得益于Zen3架构三级缓存的改进。不同于单机游戏看重GPU能力，网游更依赖大量的数据计算，而且参与人数越多，数据计算量越大，而更大容量的三级缓存有利于提高命中率，进而在网游中带来立竿见影的效果。</p>
+<p class="ql-align-justify"><strong>六、超频与功耗测试：1.31V上4.75GHz 积热现象依然存在</strong></p>
+<p class="ql-align-justify">测试时环境温度为26度，使用的酷冷至尊P360 ARGB水冷散热器。</p>
+<p class="ql-align-justify"><strong>1、烤机测试</strong></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201115/35ce59cb8b214a869046cd047848fd22.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">首先是锐龙7 5800X处理器，使用AIDA64 FPU程序持续烤机5分钟，处理器的功耗稳定在123W，全核运行频率4.5GHz，自动电压1.312V，温度为79度。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/9c3e42cad85e4fee84bb4909e8fa25de.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X的烤机频率要更高一些。使用AIDA64 FPU烤机13分钟之后，处理器的全核频率达到了4.575~4.6GHz，电压1.32V，烤机温度81度，CPU功耗是98W。</p>
+<p class="ql-align-justify"><strong>2、CPU超频测试</strong></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201115/940b7d44ad4c4fef9651a32388bedeb6.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X可以在1.33V的电压下超频到4.75GHz并通过AIDA64 FPU烤机测试，此时处理器的功耗时105W，比默频高了10W，烤机温度88度。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201115/4e4d6394e5b84d6eb71ebffcd4dca4c2.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙7 5800X同样也能超频到4.75GHz，不过电压只需要1.31V，烤机功耗133W，比默频高了10W，烤机温度89度。</p>
+<p class="ql-align-justify">2颗处理器都能在1.31V~1.33V的电压上超频到4.75GHz并通过AIDA64 FPU稳定性测试，不过由于处理器DIE面积只有76mm2，锐龙7 5800X在功耗超过130W之后温度就会难以控制，而锐龙5 5600X在105W的功耗上温度也有88度。</p>
+<p class="ql-align-justify"><strong>七、新BIOS体验；AMD兑现承诺 完美支持4200MHz内存频率</strong></p>
+<p class="ql-align-justify">我们首测的时候，并不是只有ROG C8DH主板可以完美支持4000MHz，其他的几块主板最高只能达到3800MHz。AMD告知很快会有新BIOS能让更多的主板支持4000MHz的内存。</p>
+<p class="ql-align-justify"><strong>1、内存超频测试</strong></p>
+<p class="ql-align-justify">在进行锐龙7 5800X测试的过程中，我们收到了微星送过来的X570 GODLIKE超神板最新版BIOS。在我们这里，原来只能上3800MHz的X570 GODLIKE，刷了新BIOS之后现在可以轻松支持4200MHz，AMD也兑现了自己的承诺</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/2d285461b79947d49d3d793bc0519d19.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">这是使用老BIOS的测试数据，当时最高只能上到3800MHz。延迟也不低，达到了58.5ns。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201115/04c24be9f0044ffe81deb39fb94bfaf5.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">新BIOS可以让Zen3处理器在4133MHz频率下保持北桥同频，延迟进一步降低到了53.9ns，如果继续调整小参，或许能将延迟压到50ns以下。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201115/a3b122d8c9894b05999afde90624d7bf.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">将内存电压加到1.55V，SOC电压设置为1.15V，适当压低时序小参，经测试可以在4200MHz 15-15-15-25 CR1这里稳定下来，北桥同频2100MHz。最终内存延迟突破了50ns，为49.2ns。</p>
+<p class="ql-align-justify">内存我们试了3款，美商海盗船DDR4 4266MHz套装、芝奇皇家戟F4-4000C15D 8GBx4套装、影驰HOF OC Lab皑钻DDR4-4400套装，在新BIOS的支持下他们都能上到4200MHz。</p>
+<p class="ql-align-justify"><strong>2、PCIe 4.0测试</strong></p>
+<p class="ql-align-justify">我们使用了三星最新推出的980 PRO 1TB来测试主板的磁盘性能。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201115/4ac1e4a4f5cb4080b5ce76499f110122.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">在AS SSD中，最高顺序读写速率分别超过了5400MB/s、3900MB/s。</p>
+<p class="ql-align-justify">在CrystalDiskMark中，三星980 PRO 1TB最大读取速度可以达到6661MB/s，写入速度可以达到4947MB/s。</p>
+<p class="ql-align-justify">超过6600MB/s的读取速度、接近5000MB/s写入的极速体验目前也只能在AMD平台上体验到，Intel平台还需要等下一代桌面处理器。</p>
+<p class="ql-align-justify"><strong>八、总结：锐龙5000满满的诚意 能否打醒执迷不悟的Intel</strong></p>
+<p class="ql-align-justify">锐龙5 5600X的游戏性能远远超过了我们的预期！i5-10600K处理器的游戏性能与自家顶级i9-10900K之间差了12%之多，而锐龙5 5600X与锐龙9 5900X之间游戏性能竟然只差了3%。</p>
+<p class="ql-align-justify">更加令人匪夷所思的是，锐龙5 3600X的游戏竟然能够越级战胜i7-10700K，甚至与对手顶级的i9-10900K打得有来有往！</p>
+<p class="ql-align-justify">不论是个人用户还是网吧，如果装机需求偏向于网络竞技游戏，Zen3都能带来远强于其他处理器的表现，它也是目前在网络游戏中拥有最好体验的处理器构架。锐龙5 5600X领先i5-10600K 20%以上，甚至还要稍强于对手最顶级的i9-10900K。</p>
+<p class="ql-align-justify">大家也都知道，在游戏领域内，国内外有着不同的国情。欧美玩家更钟情于3A单机大作，而国内则是网游更加风行，LOL、吃鸡的需求明显高得多。</p>
+<p class="ql-align-justify">以往锐龙在网游上性能不占优势，再加上友商在游戏方面不遗余力的宣传，让大量国内游戏玩家产生了“锐龙不适合玩游戏”的误解，而这一次，锐龙5000系列用无可争议的数据，狠狠地回击了一把，彻底扬眉吐气，从此无论单机大作还是网游，在锐龙面前都是小菜一碟。</p>
+<p class="ql-align-justify">如此看来即便是定价2199元，锐龙5 5600X也比对手的产品更有购买价值，这颗处理器也体现了AMD对于用户和市场的诚意！</p>
+<p class="ql-align-justify">首先是锐龙5 5600X虽然少了2个核心，但是完整的32MB三级缓存得到了保留，与锐龙9 5900X、锐龙7 5800X一样都是单CCX 32MB三级缓存，也就是每个核心都能利用到全部的32MB三级缓存。</p>
+<p class="ql-align-justify">其次就是锐龙5 5600X的全核运行频率可以轻易达到4.65GHz，甚至比锐龙5 5900X还要更高。</p>
+<p class="ql-align-justify">基于以上2点，锐龙5 5600X的游戏性能能够如此强大也就很好理解了。</p>
+<p class="ql-align-justify">而相比之下，Intel的i5-10600K处理器的三级缓存只有12MB，全核运行频率为4.5GHz。而i9-10900K的三级缓存是20MB，全核运行频率能到4.9GHz。i5-10600K做了如此之多的阉割，游戏性能自然也会遭受到相当程度的削弱。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201115/29389ce10b8e473a9b9a27ba20bf11c2.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">至于锐龙7 5800X处理器，他的对手已经不是i7-10700K，而是i9-10900K。</p>
+<p class="ql-align-justify">与锐龙9 10900K相比，锐龙7 5800X的单核性能要强上6%，游戏性能强1%，多核性能弱了3%，综合来看这2款处理器的性能是在同一水平线上。</p>
+<p class="ql-align-justify">如果说15年前被AMD的FX-57打压的时候还有压箱底的奔腾M处理器可以从容应对，而如今的Intel似乎让人看不到任何希望。更离谱的是，现在的Intel痴迷于频率提升，这与当年奔腾4处理器何其相似！</p>
+<p class="ql-align-justify">为了高频率，Intel坚持了使用14nm工艺长达7年之久，就连下一代的Rocket Lake-S处理器依然会坚持使用14nm++++工艺，据说要冲击5.5GHz的频率。然而由于14nm工艺在功耗与发热方面的限制，核心数要从i9-10900K的10核退回到8核。</p>
+<p class="ql-align-justify">即便Rocket Lake-S能够短暂的夺回最强游戏处理器的宝座，但是面对下一代的5nm Zen4处理器似乎也看不到胜算和希望（2者都将在2021年上市）。</p>
+<p class="ql-align-justify">更低的功耗、更多的晶体管、更多的核心数、更大的缓存容量都需要更先进的制程工艺才能实现。可以预知的是，Intel为了频率死守14nm还将会付出更加惨痛的代价！</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201115/62d3945aff6c4355bdd505b457cc2250.jpeg" max-width="600" /></p>

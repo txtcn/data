@@ -1,0 +1,145 @@
+➜不止是性价比！A/I中端处理器的对决：i5-10600K与锐龙5 3600X谁更值得购买
+http://www.sohu.com/a/412098412_163726	17240
+<h1><strong>一、前言：锐龙5 3600X与酷睿i5-10600K规格对比</strong></h1>
+<p>7月28日，Intel正式公布了酷睿i5-10600K的国内售价，1999元被很多网友称为良心价。的确是如此，这款处理器海外售价为262美元，按照Intel一贯的定价策略，国内的售价应该在2299元左右。</p>
+<p>我们经常说，有竞争的存在才会让消费者享受到更加合理的价格，这一“真理”再次得到了验证。</p>
+<p>i5-10600K之所以能如此良心，很大程度上是因为AMD锐龙的压力所在，尤其是7月初发布的锐龙5 3600XT，核心频率以及超频能力大大提升之后，更进一步让Intel感受到了前所未有的巨大压力，于是就有了i5-10600K这样令人意想不到的低价。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200808/63e105d00cb24e57bd3ab85d2a74303a.jpeg" max-width="600" /></p>
+<p>另一方面，锐龙5 3600XT虽然已经发布，但是对于不追求极限超频，更注重性价比的用户来说，锐龙5 3600X依然有着极高的价值。</p>
+<p>那么对于普通玩家而言，Intel酷睿i5-10600K与AMD锐龙5 3600X这两款处理器到底谁才更适合自己呢？</p>
+<p>Intel酷睿i5-10600K处理器为6核心12线程设计，基础频率4.1GHz，最高睿频4.8GHz，全核频率4.5GHz，TDP为125W。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200808/3adce8a8f66f4879988f406e688e7b73.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>AMD锐龙5 3600处理器，同样也是6核心12线程，基础频率3.8GHz，加速频率4.4GHz，全核频率4.15GHz，TDP 95W。</p>
+<p>从频率上面来说，i5-10600K不论是加速频率还是全核频率都比锐龙5 3600X高了不少。不过非常可惜的是，如果这款处理器搭配B460主板，内存最高只能支持DDR4 2666MHz，非常影响处理器的性能发挥。</p>
+<p>锐龙5 3600X的主要优势就是支持PCIe 4.0，具备更大的缓存容量，主板配套的价格也更亲民。</p>
+<p>PCIe 4.0的支持可以让我们用上更快的固态硬盘，另外未来对于高端显卡的支持也更好一些。 AMD的当前的RNDA GPU以及下一代的RDNA2 GPU、NVIDIA的下一代RTX 3000系列安培构架GPU都会支持PCIe 4.0。</p>
+<p>相比PCIe 3.0，PCIe 4.0技术可以将CPU于GPU之间的数据交换速率提升整整一倍，能够最大化的发挥出高端显卡的性能。</p>
+<p>至于三级缓存的重要性，相信大家多少都知道一些。高性能CPU在高负荷运算时数据吞吐量都是几百GB/s甚至可以达到TB/s级别，内存区区数十GB/s的带宽根本无法满足需求。如果让CPU直接从内存从存取数据，会导致处理器在大多数时候处于等待的状态，运算效率会跌到惨不忍睹。</p>
+<p>而高速缓存的加入可以让数据暂时先存放在缓存里面，CPU需要使用的时候直接从缓存里面读取数据，只有在缓存里面找不到的数据，才会直接从内存中读取。缓存容量越大，CPU读取数据的命中率就越高，运算效率也就越高。</p>
+<p>锐龙5 3600X的三级缓存容量高达32MB，将近是i5-10600K的三倍，这也是它的IPC性能强大的重要原因之一。</p>
+<p>本次测试的平台配置如下：</p>
+<p><strong>二、理论测试：单核性能差距只有1% 锐龙5 3600X多线程更强</strong></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200808/ea434fa1fc884cd2bfb55314b07ad7ee.jpeg" max-width="600" /></p>
+<p><strong>1、CPU-Z</strong></p>
+<p>锐龙5 3600X单线程分数为534.7，多线程分数4220。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200808/e3d128e20d02412894ebb886cf9b1330.jpeg" max-width="600" /></p>
+<p>i5-10600K单核分数为557，多线程分数为4142。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200808/4ac2ee2687b246a98bebc8544f384797.jpeg" max-width="600" /></p>
+<p>在CPU-Z中，i5-10600K的单线程分数比锐龙5 3600X多了22分，差距为4%；到了多线程，锐龙5 3600X能够比i5-10600K强2%左右。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200808/74671bf8af904286b3b913e61b904aa7.jpeg" max-width="600" /></p>
+<p><strong>2、CineBench R15</strong></p>
+<p>锐龙5 3600X单线程分数为207cb，多线程成绩则为1617cb。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200808/ab06e8a9404f4d6f811e781a8ea3b959.jpeg" max-width="600" /></p>
+<p>i5-10600K单线程分数为209cb，多线程成绩则为1470cb。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200808/f2fbd2b9c4ca4b80913d8deb2651e540.jpeg" max-width="600" /></p>
+<p>在CineBench R15的测试中，单线程测试2者的成绩较为接近，仅有1%的差距；不过在多线程，锐龙5 3600X能够领先i5-10600K 9%。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200808/39bab00f2e184bfc95628b57ad0a9217.jpeg" max-width="600" /></p>
+<p><strong>3、CineBench R20</strong></p>
+<p>锐龙5 3600X单线程分数为509cb，多线程成绩则为3772cb。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200808/b939400a99ab4552ab2447e6c793614c.jpeg" max-width="600" /></p>
+<p>i5-10600K单线程分数为486cb，多线程成绩则为3594cb。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200808/94b4d29d066d4d868586372a2089b515.jpeg" max-width="600" /></p>
+<p>在CineBench R20的测试中，锐龙5 3600X的成绩反倒超过了i5-10600K，多出了23cb，领先幅度为5%；在多线程测试中，锐龙5 3600X能够比i5-10600K多178cb，领先幅度为5%。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200808/89c724c9b37c4ade85bdfc3b00f9c6ef.jpeg" max-width="600" /></p>
+<p><strong>4、wPrime</strong></p>
+<p>在wPrime 32M单线程性能测试中，锐龙5 3600X耗时29秒；多线程跑完wPrime 1024M则用掉了109.3秒。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200808/6c927d9e74cd4fb88ee8aeecbd0a6e9a.jpeg" max-width="600" /></p>
+<p>i5-10600K的wPrime 32M单线程耗时为30.2秒，wPrime 1024M多线程则用掉了119秒。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200808/af415f50c6d7418699b8825513df6d68.jpeg" max-width="600" /></p>
+<p>wPrime 32M单线程测试中锐龙5 3600X继续领先i5-10600K，用时比对手少1.2秒。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20200808/875906690e0542748d29eabf590342f2.jpeg" max-width="600" /></p>
+<p>在多线程测试中，锐龙5 3600X则比i5-10600K少用了将近10秒，领先幅度9%。</p>
+<p><strong>5、POV-Ray</strong></p>
+<p>锐龙5 3600X的多线程成绩为3338PPS，单线程则为479PPS。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200808/cbc2c6e142894767a267d5395d406273.jpeg" max-width="600" /></p>
+<p>i5-10600K的多线程成绩为3134PPS，单线程则为486PPS。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200808/ede893e0b987448c954a79714d83c591.jpeg" max-width="600" /></p>
+<p>在单线程性能方面，i5-10600K比锐龙5 3600X多了7pps，领先1.5%；到了多线程这里，锐龙5 3600X能够领先对手7%。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200808/a86a06b2ce23419689f1681d670a306e.jpeg" max-width="600" /></p>
+<p><strong>6、X265 FHD Benchmark</strong></p>
+<p>锐龙5 3600X编码的帧率为51.2FPS。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200808/b7dd99baaa064f8f8b0e49c62861e340.jpeg" max-width="600" /></p>
+<p>i5-10600K的帧率为49.8FPS。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200808/a714ff06756d42f0bb974b7f32563496.jpeg" max-width="600" /></p>
+<p>在X265 FHD Benchmark中，锐龙5 3600X能够领先i5-10600K 2%的样子。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200808/164520a688cd43428c45e70a2b73ff21.jpeg" max-width="600" /></p>
+<p>在将Windows 10升级到最新的2004版之后，搭配B550主板，锐龙5 3600X的成绩有了较为明显的改善，特别是单核性能提升明显，与i5-10600K仅有1%的差异。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200808/fe68aeb50f7246818505bab149d26bbd.jpeg" max-width="600" /></p>
+<p>至于多核性能，虽然i5-10600K的全核频率更高，但是锐龙5 3600X能比对手强7%左右。</p>
+<p><strong>三、游戏性能测试：棋逢对手</strong></p>
+<p><strong>1、绝地求生</strong></p>
+<p>新一代的锐龙处理器在《绝地求生》中的表现并不弱于同级别的酷睿处理器，锐龙5 3600X的帧率比i5-10600K高了一帧。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200808/9fdce1a78114422183f5d73b8225d335.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200808/6999e1d472644de780ca5073c7f0d217.jpeg" max-width="600" /></p>
+<p><strong>2、GTA V</strong></p>
+<p>《GTA V》一向是Intel的优势项目，不过在搭配RX 5700显卡时，锐龙5 3600X与i55-10600K只有2帧的差距。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200808/9efe1da2194f4ad4a62e39263a3b642c.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200808/8d3a7103f92d4fbabebf1cce28cb4911.jpeg" max-width="600" /></p>
+<p><strong>3、刺客信条：奥德赛</strong></p>
+<p>《刺客信条：奥德赛》中，2块处理器的帧率完全一样，都是61FPS。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200808/8ed65d0c0ed24b9b809677069c918509.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200808/114fbe2e200749138caf83afdc42e70b.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200808/28cf22bef9684a8f8829a9258cc5d6c4.jpeg" max-width="600" /></p>
+<p><strong>4、古墓丽影：暗影</strong></p>
+<p>《古墓丽影：暗影》也同样如此，RX 5700全程瓶颈，2块处理器的帧率一模一样，都是106FPS。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20200808/d72d838de8ec4d8f91142be285dfdf83.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200808/9b83be87214048b380a99d6a95c64777.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200808/bde27486a2c04dd297a78ae848f60fdb.jpeg" max-width="600" /></p>
+<p><strong>5、巫师3</strong></p>
+<p>二款处理器在《巫师3》中的表现也一模一样。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200808/55608603ad2c49a08269da0a3fc853d6.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200808/c37a4db3464e4b09871c3d3ca1c33161.jpeg" max-width="600" /></p>
+<p><strong>6、战争机器5</strong></p>
+<p>《战争机器5》中，2款处理器的有2帧的差异，i5-10600K稍强一些。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200808/49ae0bfc8bfd41b4b6360aa4186ce73f.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200808/faada375c12a4047bdcc547328b13a87.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200808/5886c0ab0f26448884c74c484e4ffb65.jpeg" max-width="600" /></p>
+<p><strong>7、孤岛惊魂5</strong></p>
+<p>《孤岛惊魂5》是所测试的项目最终唯一一个帧率有明显差距的游戏，i5-10600K比锐龙5 3600X快了9帧。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200808/501a098292454fd892856a6252d13210.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200808/d81bbdb9a9354022b08e715b005532f5.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200808/e066a29b3f2048ebb7466b263b27b743.jpeg" max-width="600" /></p>
+<p>在大部分游戏中，锐龙5 3600X与i5-10600K的表现相当甚至完全相同，唯一差距比较大的就是《孤岛惊魂5》，如果剔除这款游戏，2款处理器的游戏性能的差异基本上可以忽略掉。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200808/da728c6903a84ba4be1e83ee854162c4.jpeg" max-width="600" /></p>
+<p><strong>四、磁盘性能与温度测试：PCIe 4.0优势明显 i5-10600K功耗高温度低</strong></p>
+<p><strong>1、磁盘性能测试：</strong></p>
+<p>B550主板能够支持PCIe 4.0，是由CPU直出而非是由PCH提供，不过锐龙5 3600X能提供24条PCIe 4.0通道数（可用数20条），足够满足绝大部分玩家的使用需求。</p>
+<p>我们使用了影驰最新推出的HOF PRO PCIe 4.0 SSD 2TB来做B550主板的测试磁盘性能。</p>
+<p>在AS SSD中，最高顺序读写速率分别超过了4200MB/s、3900MB/s。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200808/71544f8fb0df40c891af0f855f9c25d3.jpeg" max-width="600" /></p>
+<p>在CrystalDiskMark中，HOF PRO PCIe 4.0 SSD 2TB最大读取速度可以达到4900MB/s，写入速度可以达到4227MB/s，远远超越了目前所有的PCIe 3.0 SSD，整体表现与X570主板并无差异。</p>
+<p>相比之下，在i5-10600K平台上，HOF PRO PCIe 4.0 SSD 2TB SSD的读写性能都出现了大幅度的缩水。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200808/12e705344095459ab5ff16d6a37bec29.jpeg" max-width="600" /></p>
+<p><strong>2、温度与功耗测试：</strong></p>
+<p>我们使用AIDA64 FPU进行烤机测试，测试时室温27度。</p>
+<p>经过了11分钟的烤机测试，锐龙5 3600X的烤机功耗在87W附近，全核频率4.75GHz，烤机温度稳定在74度。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20200808/8bb5c47870f3434bb021646aba380a62.jpeg" max-width="600" /></p>
+<p>i5-10600K也经过了10分钟的烤机测试，烤机时全核频率为4.5GHz，功耗105W，烤机温度63度。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20200808/f010c52d12d04c7f8bb66204e386d0ac.jpeg" max-width="600" /></p>
+<p>从烤机的情况来看，i5-10600K的功耗比锐龙5 3600X要高了20W，但是温度却要低10度左右。14nm虽然功耗很高，但是由于核心面积更大，在温度散热方面存在一定的优势。</p>
+<p><strong>五、总结：平台价格差异达到了千元 锐龙性价比依然无敌</strong></p>
+<p>测试的结果是我们开始没有想到的！</p>
+<p>一直以来，单核性能都不是锐龙处理器的强项，此前在Windows 10 v1903系统上，搭配高端的X570主板，锐龙5 3600X与i5-10600K之间至少存在着3~4%的单核性能差距。而此次二者的差距仅剩下1%，而且在多个测试项目中，锐龙5 3600X的单核成绩甚至更好一些。</p>
+<p>首要原因就在于最新的Windows 10 2004系统优化了CPPC调用，可以更好地释放锐龙处理器原有的性能。</p>
+<p>其次就是B550主板，此前我们测试过多块不同型号的B550主板，在很多场合下它的性能表现比X570还要更好，而价格却要便宜不少。</p>
+<p>现在千元以下已经不少用料和做工都相当不错的B550主板了，比如技嘉B550M AORUS PRO与微星MAG B550M MORTAR。</p>
+<p>至于游戏性能，如果搭配RTX 2080 Ti和顶级超频主板的话，i5-10600K的游戏性能要比锐龙5 3500X强53%~6%左右，但相信没有谁会用万元的RTX 2080 Ti来搭配锐龙5 3600X与i5-10600K这样的千元处理器。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200808/105f6cf28c9d47b68174978313f67150.jpeg" max-width="600" /></p>
+<p>更加贴近实际需求的是锐龙5 3600X/i5-10600K搭配RX 5700或者RTX 2070这样的2000~3000元级别的中高端独立显卡。</p>
+<p>根据实际测试，锐龙5 3600X/i5-10600K这两款处理器都能充分发挥RX 5700的全部性能，在搭配这个级别的显卡时，它俩的表现几乎并没有差异（《孤岛惊魂5》例外），因为瓶颈在于显卡。想要有更好的游戏体验，最直接的办法就是升级更强的显卡。</p>
+<p>虽然在《孤岛惊魂5》中，i5-10600K的表现要强于锐龙5 3600X，不过那是在使用DDR4 3600MHz高频内存的情况下测得的数据。</p>
+<p>如果将主板换成B460，i5-10600K最高就只能上到2666MHz频率的内存，这个时候很多游戏的帧率都会出现不同幅度的降低，比如《孤岛惊魂5》就从原来的127帧掉到了117帧，比锐龙5 3600X + DDR4 3600MHz还要低了一帧。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20200808/9b68599ed8d644ed95820655c2adefc0.jpeg" max-width="600" /></p>
+<p>也就是说想要发挥i5-10600K的游戏性能方面的优势，还必须搭配能上高频内存的Z490主板才行，平台成本陡然增加。</p>
+<p>要知道， i5-10600K本身就比锐龙5 3600X贵了450元，再算上主板的差价，选择锐龙5 3500X平台要比i5-10600K节省1000元左右。</p>
+<p>下面，提供两套7000元价位的攒机方案以供大家参考，性价比差异一目了然：</p>
+<p>当然，并不一定要按照上面的配置，不过很明显的一点，由于板U在价格上的优势，即便是锐龙5 3600X平台配备了性能更强的RX 5700XT显卡，整机价格还是要比i5-10600K+ RX 5700便宜了700元之多。而对于绝大部分3A大作而言，更好的GPU可以获得更为明显的帧率提升。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200808/df763d71f4d44ce0b75af4f184dbf6f9.jpeg" max-width="600" /></p>
