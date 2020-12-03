@@ -1,0 +1,137 @@
+➜APP裂变指南：如何设计产品化拉新机制实现用户增长？
+http://www.sohu.com/a/432823502_386633	33300
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201119/0ed99decc29f47d8af638a3884fd7088.png" max-width="600" /></p>
+<p class="ql-align-justify">说到产品化拉新，它的逻辑是利用自身产品机制来激活现有用户实现增长，也就是刺激老用户带动新用户。</p>
+<p class="ql-align-justify">个人认为，微信生态里能完美践行产品化老带新的载体一定是小程序，典型案例是微信读书，它开发了很多基于小程序和APP的产品化玩法，比如每日一答、读书小队、组队抽卡、免费图书馆、翻一翻、集赞得卡、免费听书馆、飙升榜等。</p>
+<p class="ql-align-justify">除了微信生态，产品化拉新的最主要应用场景就是APP了，我最欣赏的就是拼多多，尤其是它的“天天领现金”活动，分享细节做到了极致，本篇就专门分析一下APP如何做老带新。</p>
+<p class="ql-align-justify"><strong>01</strong></p>
+<p class="ql-align-justify"><strong>APP拉新路径与底层逻辑</strong></p>
+<p class="ql-align-justify">依靠产品化拉新机制实现用户自增长，是互联网产品最希望的，而运营人在做拉新的时候也需要这种产品化工具，全靠运营进行流量转化并非高效的模式，尤其在工业化获客体系里，产品化拉新的重要性不言而喻。</p>
+<p class="ql-align-justify">基于APP的产品化拉新设计，常用到一个模型：MGM模型，即member get member，该模型涉及到两种类型用户：M1（发起邀请用户）和M2（被邀请用户）。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201118/98f27918464146e292fee518d0983f60.png" max-width="600"><span class="img-desc" style="font-size: 16px;">云朵课堂-网校系统</span></img></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify"><strong>1、M1端</strong></p>
+<p class="ql-align-justify">所谓M1端，就是发起邀请的用户，也是我们通常所说的老用户，但这个老用户并非绝对的，因为对于一个裂变闭环来说，新用户一定会成为新的“老用户”。</p>
+<p class="ql-align-justify">回到M1端，M1用户发起APP裂变的路径是这样的：打开APP--开屏弹窗或首页banner吸引参与活动--进入活动页面--按指引生成海报或直接分享--进入传播渠道页面并发表--以海报/网页/小程序等形式完成传播--成功邀请好友被提醒--再次分享并循环。</p>
+<p class="ql-align-justify">比如滴滴新推出的非常火的花小猪APP，它的M1端路径就是下载APP后签到，签到页弹一个醒目的5折红包券，分享形式为小程序，分享完之后在APP可以看到邀请进度。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201119/4d7f06ac3daf446a83e7fd4ab6325822.png" max-width="600" /></p>
+<p class="ql-align-justify">在这个流程中，有如下关键点值得注意：</p>
+<blockquote class="ql-align-justify">
+利益刺激、高频弹窗、游戏化体验，是M1用户首次参与并分享的三大前提；
+</blockquote>
+<blockquote class="ql-align-justify">
+分享会降低M1的社交信任强度，分享内容尽可能符合甚至强化M1的身份形象；
+</blockquote>
+<blockquote class="ql-align-justify">
+分享内容诱惑力越强，M1吸引M2用户的概率越高，一般红包优惠类诱饵应用较多；
+</blockquote>
+<blockquote class="ql-align-justify">
+为了提升整体转化，借助用户画像标签，个性化推送给M1用户不同类型裂变活动；
+</blockquote>
+<blockquote class="ql-align-justify">
+针对M1用户的裂变活动介绍要简洁明了，主题和落地页尽可能突出利益；
+</blockquote>
+<blockquote class="ql-align-justify">
+M1用户参与裂变可获得阶梯式、低成本、高包装的奖励，既提升分享率，又提高ROI；
+</blockquote>
+<blockquote class="ql-align-justify">
+每完成一次邀请要及时提醒M1用户，并制造紧迫感，比如动态时间和提醒到期消息。
+</blockquote>
+<p>拼多多的APP裂变非常注重上面提到的关键点，比如其非常经典的拉新玩法“天天领现金”，就把利益刺激、高频弹窗、游戏化体验三者应用到了极致，不断提醒用户分享，就差一点就能领到钱了，让你轻易”离不开“。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201119/889eff7e5586439fb24e1a2c971f6dac.png" max-width="600" /></p>
+<p><strong>2、M2端</strong></p>
+<p>很多人会以为M2表示的是新用户，这就大错特错，M2是M1邀请来的用户，它可能是新用户，也可能是老用户，如果要变成新用户，就需要整个MGM路径对新老用户做技术上的识别区分。</p>
+<p>如果不考虑区分M2是否为新老用户，则有两个细分的裂变模式：老促老和老拉新。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201118/50513004821845c58425e2574a4c743a.png" max-width="600" /></p>
+<p>所谓老促老，就是M1和M2都是APP的老用户（不考虑有效性和活跃度，只考虑注册），最常用助力的形式，经常发生在好友间，比如M1想拿到某个奖励，于是发起助力邀请M2帮助点一下（实际可能是砍价、点赞等形式），M2点完之后可以转换成M1也发起助力，这样的话整个APP就被激活，留存也有明显提升。</p>
+<p>实际上，老促老存在两个主要目的，第一是借助裂变促活，把其他平台的APP沉默用户召回，利用奖励转化为活跃用户，第二是扩大曝光量和参与率，借助召回用户的社交渠道吸引新用户。</p>
+<p>至于老拉新，则是M1邀请M2必须为新用户（主要指未注册APP），邀请这类用户获得的奖励往往比老促老高很多，因为激活一个老用户的价值比不上增长一个新用户的价值。</p>
+<p>M2新用户参与MGM的路径有两个，一个是“APP下载--弹窗吸引--注册--参与活动”，另一个是在传播平台点击网页或小程序完成注册，然后被引导下载APP再参与活动，或者直接参与活动但有下载APP的广告提示。</p>
+<p>当然，并非所有APP下载都遵循上述两个路径，还以拼多多为例，发给好友邀请链接之后，点击红包触发APP下载机制，直接完成APP的获取，并在内部继续拉新流程。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201119/d3cfcfead975438c8b05a48bf08147f6.png" max-width="600" /></p>
+<p>接下来梳理下M2端的关键点：</p>
+<blockquote class="ql-align-justify">
+M2新用户的参与链路和转化流程是否顺畅，弹窗是否明确，以用户无感为标准；
+</blockquote>
+<blockquote class="ql-align-justify">
+M2新用户常规路径：H5展示-弹窗-下载APP-注册-领福利/参与活动；
+</blockquote>
+<blockquote class="ql-align-justify">
+M2新用户下载APP，如果是被福利引诱，需要有类似红包弹窗的指引接触核心产品；
+</blockquote>
+<blockquote class="ql-align-justify">
+M2接触核心产品后或离开时，利用弹窗吸引其参与活动，将M2转化成M1形成闭环；
+</blockquote>
+<blockquote class="ql-align-justify">
+如果M2新用户接触的是邀请活动页，也要有弹窗或浮窗指引M2接触核心产品；
+</blockquote>
+<blockquote class="ql-align-justify">
+借助大数据和AB测试，丰富APP页面礼品，多样化展示活动页，提升M2的参与和转化。
+</blockquote>
+<p>举一个K12教育APP的例子，笔者觉得其M2参与路径很值得分析。</p>
+<p>它引导下载APP的链路很长，以”付费购课+关联账号“为第一优先级，要求关注公众号，在关联账号之后才跳转下载APP，之所以M2用户能被这样转化，原因是提分需求、产品低价以及推荐者背书，显然先购课再下载APP是合理路径，也是多数在线教育APP的选择。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201119/8607aeac50df4e1fb459a888d14f9574.png" max-width="600" /></p>
+<p>通过梳理M1和M2的关键点可以发现，MGM模型的重点首先是如何刺激M1用户主动分享，只有足够多的M1用户传播才有机会让更多的M2用户参与裂变循环，其次是M2用户的促活和转化，以及如何转换M2用户成为新的M1用户。</p>
+<p><strong>02</strong></p>
+<p><strong>结语</strong></p>
+<p>所以，笔者总结了对APP产品化拉新的三点思考：</p>
+<p><strong>（1）M1和M2参与路径要清晰，操作体验要流畅，符合自然分享习惯；</strong></p>
+<p><strong>（2）仅依靠产品机制就能实现M2新用户的自然转化，比如红包下单、试听购课；</strong></p>
+<p><strong>（3）有稳定流量，有丰富奖励，有游戏化体验，有高频弹窗，维持MGM的长期闭环。</strong></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201119/8e4b67a9268b427886ed7ba09aff1390.jpeg" max-width="600" /></p>
+➜线下机构频频暴雷，行业监管越来越严……然而，最惨的还是他们
+http://www.sohu.com/a/432911148_386633	35580
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201119/48aa83eda45f4a80b84f87dc7eaf30a1.png" max-width="600" /></p>
+<p>受疫情影响，今年不少线下培训机构资金链断裂，频频爆雷，最近的一起是——老牌教育连锁机构优胜教育，全国多所校区接连关闭，众多家长遭遇退费难题。 </p>
+<p><strong>一、北京：优胜教育关门 家长遭遇退费难</strong></p>
+<p>就在不久前，大批学生家长和老师来到北京优胜教育总部，要求退还剩余学费以及拖欠的工资。该公司于近期被列入经营异常名录，总部人去楼空。 </p>
+<p>据相关媒体报道，仅北京广渠门校区应退学费总额已超过900万元。若以此估算，优胜教育的资金窟窿恐怕比想象中要大。</p>
+<p>学生家长：为了让孩子上大学，唯一的房卖了交学费，从头到尾交了三四十万元，承诺随时退，最后谁都不退。 </p>
+<p>当天晚上优胜教育的创始人陈昊开直播向家长们道歉。陈昊在直播中表示，在疫情期间受到很大冲击，以北京为例，疫情期间北京的营收只有过去的四分之一。</p>
+<p>由于前期野蛮发展，近期监管趋严，众多培训机构接连陷入困局。2018年，国务院办公厅曾印发《意见》，要求预付费不得一次性收取时间跨度超过3个月的费用。今年疫情期间大面积停课，更进一步导致培训机构生存艰难。</p>
+<p>2020年，真的太难了！</p>
+<p>不光是优胜教育这样的知名教育机构，某调研机构通过问卷走访，调研了全国几千家教培机构发现：20%破产，41%裁员，60%转战线上……</p>
+<p><strong>二、新模式新体验，在线教育迎来春天</strong></p>
+<p>近日，一项全球学习者调查显示，在全球范围内，超过四分之三的人认为，教育会因新冠肺炎疫情而彻底改变。从我国线上教育行业目前的发展态势来看，预测2020-2025年线上教育的销售规模复合年均增长率将达到43.35%。</p>
+<p>调查显示，2017年选择线上教育的家长仅有14%，2019年选择线上教育的家长增长到了31%，我国家长选择线上教育的偏好性持续上涨。其中，三四线城市家庭对线上教育的支持度更高。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>因此，今年几乎所有的在线教育品牌都在逆势增长，就连电梯广告曝光最多的，都是在线教育！</p>
+<p>在线教育市场因为疫情影响，在今、明两年，将爆发巨额红利！</p>
+<p>一款既专业又好用的网课工具变得不可或缺！</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201119/fb3f2183efa14e2e9abdcd6f66a81142.jpeg" max-width="600" /></p>
+<p>以云朵课堂为例：</p>
+<p>云朵课堂是最懂教育行业的在线教育技术提供商，为一线教育机构提供超过十年的技术支撑，成功打造了多个业内知名的在线教育平台。</p>
+<p><strong>一、全方位运营支持，解决培训机构招生难题</strong></p>
+<p class="ql-align-justify">提供包括独立网校系统、宽带、服务器、运维托管等在内的一站式服务，功能包括在线直播教学、高清录播课程、考试题库、智能排课、教学管理、问答社区、名师管理、会员积分等。</p>
+<p class="ql-align-justify">1、独立域名，个性化网校，全面提升培训机构的品牌影响力。个性化界面以便企业形象更加突出，且系统配置多套精美模板可供选择，仅需一键更换应用模板，即可分模块进行自定义修改。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201119/7303574303834af6ab2e55d33808dd9f.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">2、多终端教学</p>
+<p class="ql-align-justify">简洁易用的 界面，强大的功能+极强的稳定性，手机访问域名即可自动切换为wap网校、轻松嵌入微信公众号，可以通过微信公众号上课、做题等学习任务。</p>
+<p class="ql-align-justify">3、多样化教学运营管理</p>
+<p class="ql-align-justify">能够合理、有序安排教师、教室、学员资源、统筹时间和计划，实现教学资源利用效率最大化，同时提供多维度报表和分析，更好的辅助培训机构的教务管理需求，保障机构教务运转准确、高效、智能。</p>
+<p class="ql-align-justify"><strong>二、还原教学场景，极佳网校体验</strong></p>
+<p class="ql-align-justify">学生在课堂上可进行视频互动、连麦问答、线上答题及表扬等，充分调动学生积极性，原汁原味还原线下课堂场景。</p>
+<p class="ql-align-justify">无需专业的技术和购买昂贵的设备，软件和宽带，注册即可使用，通过直播教室将老师和学生的语音、视频、讲稿、板书、提问把授课过程逼真的搬到网络上。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201119/281711bc159841e780682f1f9f6a99a9.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>三、数据明晰一键导出报表，校长轻松管理</strong></p>
+<p class="ql-align-justify">完善的数据分析与统计功能，为您提供决策支持。</p>
+<p class="ql-align-justify">从注册、付费购买、教师教学、学员上课等多维度进行数据分析，为管理人员提供决策支持，提高招生运营效率的同时也能提高教学效果，获得更好的口碑。</p>
+<p class="ql-align-justify">运营数据统计：视频流量及直播人数、学员访问量及注册量、课程流量及购买数量；</p>
+<p class="ql-align-justify">财务数据统计：线上支付、线下转账、订单统计；</p>
+<p class="ql-align-justify">学习数据统计：上课记录、学习轨迹、做题记录。</p>
+<p class="ql-align-justify">一款低成本+高效能在线教育工具轻松搞定，让教育机构从混乱繁杂的教务工作中解放出来！</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201119/0356189e8bb34f0d89db4f125c350673.jpeg" max-width="600" /></p>
