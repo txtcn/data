@@ -1,0 +1,270 @@
+➜Zen3架构基础款单核锤爆10900K？AMD 锐龙5 5600X评测
+http://www.sohu.com/a/435566735_100058492	28437
+<p class="ql-align-justify">从四年前AMD Zen架构处理器发布以来，“AMD Yes！”口号的喊声就没有停过，不得不承认，AMD打出了一场漂亮的翻身仗。今年10月，不讲武德的AMD Zen 3 CPU以更优秀的设计，带着性能上的巨大提升和架构更新亮相在了发布会上，引起了广泛关注。如今，聚牛科技搞到了AMD首批上市的Zen3架构5000系列CPU中的基础款——AMD 锐龙 5 5600X，下面给大家分享一下AMD 锐龙5 5600X在实际装机中的体验。</p>
+<p class="ql-align-justify"><strong>Zen 3架构与特性</strong></p>
+<p class="ql-align-justify">在开始正式的评测之前，我们还是来聊聊Zen 3架构的事情。</p>
+<p class="ql-align-justify">Zen一代架构的起点就相当高，做到了同核心同频率时，与当年的Intel 6代酷睿单核单核效能接近，多核效能反超的可喜进步。可以说，核心数越多，AMD的优势会越明显。Zen是单芯片原生8核心设计，但其内核依然是由两颗独立的4核CCX组成的，灵活的CCX架构设计可以轻而易举的以更低的成本提供更多的核心数量，从而在需要绝对多核性能的高端CPU市场站稳了阵地。Zen把主流桌面级CPU带入了8核心时代，并且它们还拥有着极高的性价比。</p>
+<p class="ql-align-justify">AMD随后推出的Zen+改用了台积电的12nm工艺，随之带来的是频率提升了100-300MHz。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201201/d1af52fb40a04a4c8fe54ef8edaf426e.png" max-width="600" /></p>
+<p class="ql-align-justify">到了Zen2时代，有了台积电7nm工艺的加持，单CCX内部4核心所搭配的L3缓存得以翻倍至16MB，再加上一级缓存、指令集、分支预测、整数运算单元的改进，综合效能提升了15%左右。另一方面，Zen2把原本北桥的功能（内存控制器+PCIE控制器）又从CPU内核中拆分了出来，不仅可以使用便宜且成熟的上代工艺来制造，多颗芯片的组合也将会更加灵活，64核心128线程的“怪物”也就此诞生，从此在多核心高端CPU市场所向无敌。当然由于竞争对手也没有站直了等着挨打，所以遗憾的是，单核效能依然没有实现反超，还是不能充分满足游戏玩家的胃口。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201201/3ea1e357914642cb8639f83c7783042d.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">Zen3架构更新被认为是逆转战局的关键，首先是重新设计CCD，只含一组CCX，从4+4核变成真正的8核，整合L3缓存，从4和共享16MB变为8核共享32MB。由于每颗核心可访问的L3缓存容量翻倍，大幅减少了核心对内存的访问，整块L3缓存池可以有效降低核心与核心之间的延迟。重新设计的环形通信结构，也降低了核心与缓存之间的延迟。其实大家比较重视的游戏，正是对此最敏感的应用，一般会有一条主导进程，它会频繁调用缓存。因此Zen3相对Zen2在游戏性能上的提升巨大，1080p分辨率下，有些游戏最大提升幅度甚至达到了40-50%。另外，原本Zen2在应用调用核心超过4颗后可能会发生的跨CCX通信造成的延迟也因为Zen3的架构完美的避免掉了，这对于效能的提升也很有帮助。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201201/121ca4d14a504893a2d4ee25bcfc76a4.png" max-width="600" /></p>
+<p class="ql-align-justify">Zen3是全方位的、跨越软件与硬件上的进步，其中涉及到了端到端的优化、缓存、载入/存储、执行单元、预取、调度、解码等，甚至包括比如IPC效率高达19%的全面提升，同时L1缓冲区容量翻倍，多达到1024个，分支预测带宽增加，延迟降低，且分支预测失败后恢复更快。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201201/12e8d9ebbdfb44e78d690389270d96cc.png" max-width="600" /></p>
+<p class="ql-align-justify">由于复用Zen2的12nm IOD，Zen3保证了完美的主板兼容性。比如最佳芯片组X570，额外提供PCI-E 4.0支持，CPU连接芯片组的4条通道带宽自然也受益于PCI-E 4.0而翻倍了，万兆有线网卡、Wi-Fi 6无线网卡、USB3.1 Gen2、SATA6等都将受益，总带宽的提升可以大幅缓解存储设备并发传输数据时的拥堵情况。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201201/b8f82a7308754679873f86313b2fe5ce.png" max-width="600" /></p>
+<p class="ql-align-justify">其实，最需要PCI-E 4.0通道的不只是显卡，还有比如新一代4.0的M.2 SSD。我们特地借到了一块4.0的M.2 SSD——AORUS Gen4 SSD 1TB，通过<strong>CrystalDiskInfo信息识别我们可以大致了解到它的运行情况，</strong>这款AORUS Gen4 SSD 1TB固件为ECFM11.3，走PCIe 4.0×4通道，NVMe 1.3标准。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201201/2897b9919faf47e6997a0a6b6e4f85dc.png" max-width="600" /></p>
+<p class="ql-align-justify">在AS SSD Benchmark测试中，该SSD在1G文件的测试中持续读写速度分别高达4261.29MB/s、4030.89MB/s。而在10GB文件的测试中持续读写速度也分别达到了4329.22MB/s、3993.77MB/s。</p>
+<p class="ql-align-justify">CrystalDiskMark针对1GB和32GB不同容量的测试中，1GB文件的测试顺序读写速度高达4987.7<strong>.7MB/s、4288.4MB/s</strong>，4K随机读写性能，可达到<strong>61.83MB/s、220.1MB/s，</strong>32GB的成绩也十分稳定。</p>
+<p class="ql-align-justify">更稳定快速的读写在处理大量读写的设计类应用时，可以发挥更高的性能，让大家的搬砖效率得到有效地提升。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201201/a63539c0536a49b3a4f620a29154b21c.png" max-width="600" /></p>
+<p class="ql-align-justify">除去X570，其实B550和A520芯片组也可以支持Zen3处理器，同样通过简单的BIOS更新就可以支持。明年一月开始，AMD 400系列主板也将可以通过BIOS更新的方式提供对Zen3处理器的支持，如果对PCI-E 4.0没有执念，用旧主板换新CPU的组合方式也是个省钱的好方法。</p>
+<p class="ql-align-justify"><strong>测试平台</strong></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201201/107ee5ab723d44dbb504fac277f85d42.png" max-width="600" /></p>
+<p class="ql-align-justify">作为AMD首批上市的Zen3架构5000系列CPU中的基础款，AMD 锐龙 5 5600X拥有6核心12线程，基础频率3.7GHz、Boost频率4.6GHz，TDP 65W。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201201/7cc41e0723304b038a54e2e193fd729c.png" max-width="600" /></p>
+<p class="ql-align-justify">我们也为测试其性能，围绕其搭建了一整套平台，使其性能可以得到充分地释放。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201201/f9bb31b754924427833bb6cce146396b.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">首先，主板我们选择了MSI MEG X570 GODLIKE，其依旧保持了MSI GODLIKE系列的众多传统，比如全套Killer网卡，双Codec的集成音频，四条x16型的PCIe插槽以及采用容量增加的双BIOS设计，在SATA与M.2的数量上也均无偏废。主板采用E-ATX板型，依然是偏硬朗的设计风格，Dynamic Dashboard(龙魂动态面板)作为GODLIKE的灵魂也保留了下来，芯片组散热器外框的龙图腾图案也藏有RGB灯效。其还直接捆绑了两款扩展卡，其一是MSI 10G Super LAN独立万兆网卡、其二是名为M.2 Xpander-Z Gen 4的PCIe 4.0 x16(x8)转双M.2存储转接卡。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201201/1a769b01c5394e64bb185445db0a9c78.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">显卡方面，一如既往采用AMD同平台的自家显卡——ROG TUF3 RX 5700XT。其基于最新的7nm工艺设计，GPU核心内集成有103亿晶体管，8GB GDDR6显存，拥有2560个流处理器、64个ROP单元、256个纹理单元，最大带宽448GB/s，性能平均提升超过40%。</p>
+<p class="ql-align-justify">在此基础上，ROG TUF3 RX 5700XT为之进行了用料方面的升级。包括使用航空级润滑油提升风扇轴承耐用度，利用2.7槽设计增加散热片面积，通过直触式热管直接为GPU进行导热，强化PCB铝制背板加强硬度等。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201201/71a620c9561d4ded922828ef665988f2.png" max-width="600" /></p>
+<p class="ql-align-justify">内存的选择上，我们选择的是2条3600MHz的16GB HyperX FURY DDR4 RGB雷电流光系列骇客神条。作为HyperX内存家族中的旗舰产品，拥有极佳的稳定性、兼容性。由于支持Plug N Play功能，HyperX FURY DDR4 RGB可自动超频至系统BIOS允许的最高速度。而由于XMP技术的加持，选择一个预设的配置文件，就可以躲开各种头疼的参数，小白也能轻松实现超频。内存表面覆盖了金属散热马甲，采用导热硅胶固定，外观整体较为时尚。散热片上印有厂商名称的浮雕LOGO以及产品所属系列名称，右上角的DDR4也标明了此款内存为新一代的内存规格。背面则是带有产品信息的贴纸。外部散热马甲设计也延续HyperX FURY雷电系列骇客神条家族风格，不仅能增加整体的美感，也能提供更大的散热面积。配合金属棱角的前卫风格，RGB灯条部分提供的流光溢彩更是彰显硬核气质，借助HyperX红外同步技术，可以保证各种设备之间的光效同步，轻松玩转“光污染”。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201201/e983f1456f35455c982e403af03c5932.png" max-width="600" /></p>
+<p class="ql-align-justify">SSD选用的上述提到的AORUS Gen4 SSD 1TB，也就是大家常说的黑雕硬盘。其强大的读写速度大家也在上面看到了，动辄4000-5000MB/s的读写速度用起来确实是起飞的感觉。其拥有高达1GB的缓存容量，并且通过优化电路和架构，将颗粒堆叠增加到96层，以获得更高的性能和单位面积存储空间，其吞吐量为800MT/s，远远超过PCI-E 3.0设备的存储性能。其还支持磨损均衡和冗余容量技术，以及TRIM &amp; S.M.A.R.T。并且，其还拥有SSD Tool Box应用程序，可以让我们非常直观地去全面了解SSD的状态以及型号名称、FW版本、健康状况和传感器温度等情况，也可以进行清除所有数据和安全擦除操作。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201201/55de85b6795143bba472794c311bcf65.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201201/604c2968342240a9bdd4821e802d8cb8.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">安钛克Frigus Air 400 ARGB风冷散热器可以在高转速与低噪音中达到平衡，800-1600RPM±10%的转速下，可以保证20-36db（A）的噪音。可拆卸的风扇更加便于我们的日常清理维护，全金属螺丝扣具使得散热器的安装更加牢固。顶部鳍片、散热片、通热管全部黑化设计，带来了更加高端的视觉效果。由于搭配了独立控制器，我们可以更加方便地进行对于多种光效模式的控制。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201201/70de096d311f4291b32919568e82deeb.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">电源笔者选择的是安钛克Neo Eco 650W，金牌全模组化设计，采用全日系电容。最大转换效率能够达到88%，整体额定功率达到650W。双滚珠轴承静音风扇尺寸为12cm，并配有格栅状保护罩，在保障高稳定可靠性能的同时，减少了不必要的噪音污染。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201201/fafa95076d3c4502a6c0602d2b209c77.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">笔者选择的机箱是安钛克 P82 FLOW，经典黑色的硬朗外观在这款机箱上得到了完美进化，机箱拥有前、后、顶部三面140mm大型风扇位共6个（标配自带4个），配合3面悬浮式进风，可以实现更高效的散热。3mm钢化玻璃、多方位可水洗防尘网、大面积电源减震棉、两面侧板金属卡槽设计，用料考究的同时，更显简约的气质。</p>
+<p class="ql-align-justify"><strong>理论测试：超越i9-10900K的单核能力</strong></p>
+<p class="ql-align-justify">接下来我们要进行的是理论测试，为了方便大家理解，我们主要拿Intel的同档竞品i5-10600K在相同平台下跑出的数据进行对比。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201201/b1557a4acb164963964c0a14f455874e.png" max-width="600" /></p>
+<p class="ql-align-justify">首先，使用CPU-Z给大家看一下5600X的规格信息，顺便跑一下CPU-Z的处理器测试。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201201/a409399b140a4cfb9f8f323f538f256c.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">这里锐龙5 5600X的单线程成绩为644.4、多线程成绩为5106.9，i5-10600K的成绩为单线程564.3、多线程4146.6。5600X在单线程和多线程成绩上都处于领先水平，单线程成绩领先了大约14%，多线程更加夸张一些，领先了23%。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201201/0ddbd3b1dbcf4a8a84a9f55990224552.png" max-width="600" /></p>
+<p class="ql-align-justify">以单核进行高斯勒让德算法计算圆周率的SuperPi上，计算小数点后100万位的时间，锐龙5 5600X成绩约7.655秒，i5-10600K成绩约7.767秒，这里的成绩是越快越好，所以可以看出性能上还是锐龙5 5600X略胜一筹。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201201/4c12b0a0b1b2471bbc3a6f595d48bed6.png" max-width="600" /></p>
+<p class="ql-align-justify">Fritz Chess Benchmark是一款国际象棋测试软件，通过AI模拟思考国际象棋的算法，我们通常也会用它来做计算机的科学计算。锐龙5 5600X成绩为32060步，i5-10600K成绩为25667步，这里5600X的性能还是与i5-10600拉开了将近25%的差距。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201201/d3f382e424a4488c9a9f256ff6c0fdc7.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201201/b051ddf1096744ed88c906a4a5a58e46.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201201/df4590c711974f9ba607051a571fd733.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">7-Zip在国内市场的知名度可能并不如WinRAR或是一些国产压缩软件要高，但在全球范围内仍然非常受人追捧。原因很简单，安全免费且开源，基于GNU LGPL协议使得压缩比非常高，还可以打开一些WinRAR无法打开的分卷。在这款我们会经常使用到的工具里，内置的BenchMark可以很好的帮我们对这些处理器进行测试。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201201/5dc1ab91f53d46858f73372e2e5a9091.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X单线程成绩为8258 MIPS，多线程成绩为72176MIPS；i5-10600K单线程成绩为7223 MIPS，多线程成绩为53318 MIPS。这个环节，锐龙5 5600X的成绩不仅仅是超越了i5-10600K，事实上，单线程的成绩已经超越了i9-10900K的7698 MIPS，多线程成绩也仅仅比10核20线程的i9-10900K的79252 MIPS低上一些，这性能确实强大到有些出乎意料。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201201/477c6a63cdc54eca93bb248edf1ac2e1.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201201/77fd39fe88d4436794e08b80700bc4a5.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201201/2065dd92186146808a929793b0becd7c.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">CineBench系列采用的是与Cinema 4D相同的特效引擎，相比使用过C4D的玩家能够从Cinebench系列的渲染中看出些许相似，这也是行业内公认的渲染类基准测试软件。对于经典的R15，不仅加强了着色器、抗锯齿、阴影、灯光、反射模煳等方面的渲染考察，更是最多能够支持256颗逻辑核心。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201201/5fdb693a8acf4f77a08ddad36b89dc88.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X单核成绩为256，多核成绩为1950；i5-10600K单核成绩为208，多核为1485；i9-10900K单核成绩为217，多核为2176。这里i5-10600K依然完全不是锐龙5 5600X的对手，锐龙5 5600X的单核成绩也依然奇迹般地超越了i9-10900K一头。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201201/9c639263a94c44e0b64e90fac8d5dc49.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201201/0f40b589386945fd94594977795d595e.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201201/bfde611def9f408ba90acd0b4ac76b71.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">R20针对下一代CPU采用了与R15完全不同的全新渲染架构，但实际上在渲染测试成绩上与R15并没有太多区别。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201201/3f3dbb4e599148628ce86fd1c2c21691.png" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X单核成绩为602，多核成绩为4531；i5-10600K单核成绩为497，多核为3571；i9-10900K单核成绩为515，多核为4976。与R15结果类似，i5-10600K完全不是对手，锐龙5 5600X的单核成绩再次锤爆了i9-10900K，多核成绩也十分接近i9-10900K。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201201/968fb7c6b4f949228766f3dfc32de6cd.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201201/d54dbfe9cd13414eaf4587f9b8af1654.png" max-width="600" /></p>
+<p class="ql-align-justify">X264和X265转码我们还是放在一起说，都是我们身边经常接触到的格式，常见于视频文件的压缩编码。在视频内容上，X265会比X264的压缩编码格式更节省空间，尤其对视频压制需求较大的玩家，即使X265的编码时间略长，但更小的视频体积无疑更加吸引人。尤其是对移动视频存储设备来说，是否支持X265将会直接意味着所能存储视频的时长。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201201/0eaf72e866d347129731caa94ade8430.png" max-width="600" /></p>
+<p class="ql-align-justify">通过X264 FHD Benchmark和X265 HD Benchmark这两种压缩编码格式转换的测试，我们得到了具体的测试数据，X264 锐龙5 5600X成绩为60.53fps，i5-10600K成绩为47.04fps，i9-10900K成绩为58.18fps；X265 锐龙5 5600X成绩为36.33fps，i5-10600K成绩为28.04fps，i9-10900K成绩为36.82fps。这里我们可以发现，i5-10600K跟此前大部分的测试一样，就像是一个在旁边看神仙打架的吃瓜群众，没有什么参与感。锐龙5 5600X与i9-10900K的成绩则非常接近，完全在一个水平线上。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201201/903e27527ce44677a57134a763625836.png" max-width="600" /></p>
+<p class="ql-align-justify">在3DMark推出的测试组件Time Spy系列中，仅就CPU得分而言，锐龙5 5600X依然要比i5-10600K领先出不少，虽然这已经比上面的测试差距小一些。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201201/5b753d85fa57459f9fefe9fb9c98a1b8.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201201/11b5e630825a4c1db7f5d7c27cb891bc.png" max-width="600" /></p>
+<p class="ql-align-justify">使用PCMark 10针对现代办公所设计的基准测试进行测试，锐龙5 5600X成绩为7205，i5-10600K成绩为6487，i9-10900K成绩为6982。这代表着作为生产力工具，锐龙5 5600X可能也要比i9-10900K还要给力，是不是很出乎意料呢？</p>
+<p class="ql-align-justify"><strong>游戏实测：强悍的游戏体验</strong></p>
+<p class="ql-align-justify">游戏实测环节，我们进行了多款游戏的实测，大家玩得比较多电竞、RPG网游和3A游戏都有涉及。所有被测试的游戏均在1080P分辨率下进行，且画质、视频等相关设置全部拉满。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201201/2cf3484573a04a279e48a342b44ca0a0.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201201/7663da9526d547ef9e45bac9e89e74e0.png" max-width="600" /></p>
+<p class="ql-align-justify">首先是宿舍游戏《DOTA2》，全局的平均帧率上，锐龙5 5600X与i5-10600K差距不大，锐龙5 5600X帧率略高一点点。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201201/822cab88cc2a4b44b1f5ab741edd6b94.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201201/74bc126df3ea4f9d8fa8780f7ec91e46.png" max-width="600" /></p>
+<p class="ql-align-justify">《英雄联盟》的游戏平均帧率上，两者的差距巨大，i5-10600K仅能维持在平均225帧左右，240帧的默认封顶线都没有被冲破。锐龙5 5600X则直接突破了300大关，并且偶尔顶到400以上，有点耀武扬威的感觉。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201201/8be9c2cbf1c94de3acaa1673ffa79b36.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201201/0e4c98b4c3384db7aba4d3baf044d6ea.png" max-width="600" /></p>
+<p class="ql-align-justify">同样全部画质、特效拉满会后，RPG网游《天涯明月刀》的平均帧率差距就比较大了。在游戏战斗或者主城中复杂场景的加载时，两款CPU的实际游戏体验完全不同，锐龙5 5600X要爽快得多。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201201/7117516ea8da4f74921cec7493752c8a.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201201/7f0efcd268c04b22b66a2ac701c65b40.png" max-width="600" /></p>
+<p class="ql-align-justify">对于笔者来讲非常难操控的硬核网游《坦克世界》中，两款CPU在平均帧率的表现上也是有一定的差距，不过实际游玩中，直观感受并没有《天涯明月刀》那么明显。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201201/e3431b5975ad462e873f3fe702f0c202.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201201/26a72d0673a74b898b042caaf949a39d.png" max-width="600" /></p>
+<p class="ql-align-justify">老朋友3A游戏《古墓丽影·暗影》的表现上，两款CPU基本也是平手的水平，不论是帧率数据还是实际游戏体验上，都没有太大的差距。</p>
+<p class="ql-align-justify">综合来讲，锐龙5 5600X在游戏方面的性能，相较前代产品和竞品都有着不小的优势，Zen 3架构确实有两把刷子。</p>
+<p class="ql-align-justify"><strong>平台稳定性测试</strong></p>
+<p class="ql-align-justify">林林总总说了这么多，我们也来通过烤机测试一下锐龙5 5600X平台是否足够稳定。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201201/6cd2672d382a47bf9a7d877b6ec1a674.png" max-width="600" /></p>
+<p class="ql-align-justify">通过AIDA 64进行单烤CPU的FPU测试，在室温18℃的环境下烤机30分钟，锐龙5 5600X的CPU平均温度稳定在87.9℃，最高的时候也没有超过90℃。总体而言，功耗与温度表现控制的算是相当成熟。</p>
+<p class="ql-align-justify"><strong>结语</strong></p>
+<p class="ql-align-justify">不要因为锐龙5 5600X是AMD首批上市的Zen3架构5000系列CPU中的基础款而小看它，在我们的实测中，其释放出了令人惊讶的性能表现。单核跑赢i9-10900K，游戏表现大幅度吊锤同档竞品，这样的表现不仅仅让人记忆犹新，也宣示着Zen3更大的野心。在生产力和游戏场景下都没有短板的一款CPU，你还有什么理由不选择它呢？</p>
+<p class="ql-align-justify"><strong>精彩资讯报道，专业视频评测，尽在聚牛科技</strong></p>
+➜Zen3架构基础款单核锤爆10900K？AMD 锐龙5 5600X评测
+http://www.sohu.com/a/435566851_100058492	28437
+<p class="ql-align-justify">从四年前AMD Zen架构处理器发布以来，“AMD Yes！”口号的喊声就没有停过，不得不承认，AMD打出了一场漂亮的翻身仗。今年10月，不讲武德的AMD Zen 3 CPU以更优秀的设计，带着性能上的巨大提升和架构更新亮相在了发布会上，引起了广泛关注。如今，聚牛科技搞到了AMD首批上市的Zen3架构5000系列CPU中的基础款——AMD 锐龙 5 5600X，下面给大家分享一下AMD 锐龙5 5600X在实际装机中的体验。</p>
+<p class="ql-align-justify"><strong>Zen 3架构与特性</strong></p>
+<p class="ql-align-justify">在开始正式的评测之前，我们还是来聊聊Zen 3架构的事情。</p>
+<p class="ql-align-justify">Zen一代架构的起点就相当高，做到了同核心同频率时，与当年的Intel 6代酷睿单核单核效能接近，多核效能反超的可喜进步。可以说，核心数越多，AMD的优势会越明显。Zen是单芯片原生8核心设计，但其内核依然是由两颗独立的4核CCX组成的，灵活的CCX架构设计可以轻而易举的以更低的成本提供更多的核心数量，从而在需要绝对多核性能的高端CPU市场站稳了阵地。Zen把主流桌面级CPU带入了8核心时代，并且它们还拥有着极高的性价比。</p>
+<p class="ql-align-justify">AMD随后推出的Zen+改用了台积电的12nm工艺，随之带来的是频率提升了100-300MHz。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201201/d1af52fb40a04a4c8fe54ef8edaf426e.png" max-width="600" /></p>
+<p class="ql-align-justify">到了Zen2时代，有了台积电7nm工艺的加持，单CCX内部4核心所搭配的L3缓存得以翻倍至16MB，再加上一级缓存、指令集、分支预测、整数运算单元的改进，综合效能提升了15%左右。另一方面，Zen2把原本北桥的功能（内存控制器+PCIE控制器）又从CPU内核中拆分了出来，不仅可以使用便宜且成熟的上代工艺来制造，多颗芯片的组合也将会更加灵活，64核心128线程的“怪物”也就此诞生，从此在多核心高端CPU市场所向无敌。当然由于竞争对手也没有站直了等着挨打，所以遗憾的是，单核效能依然没有实现反超，还是不能充分满足游戏玩家的胃口。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201201/3ea1e357914642cb8639f83c7783042d.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">Zen3架构更新被认为是逆转战局的关键，首先是重新设计CCD，只含一组CCX，从4+4核变成真正的8核，整合L3缓存，从4和共享16MB变为8核共享32MB。由于每颗核心可访问的L3缓存容量翻倍，大幅减少了核心对内存的访问，整块L3缓存池可以有效降低核心与核心之间的延迟。重新设计的环形通信结构，也降低了核心与缓存之间的延迟。其实大家比较重视的游戏，正是对此最敏感的应用，一般会有一条主导进程，它会频繁调用缓存。因此Zen3相对Zen2在游戏性能上的提升巨大，1080p分辨率下，有些游戏最大提升幅度甚至达到了40-50%。另外，原本Zen2在应用调用核心超过4颗后可能会发生的跨CCX通信造成的延迟也因为Zen3的架构完美的避免掉了，这对于效能的提升也很有帮助。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201201/121ca4d14a504893a2d4ee25bcfc76a4.png" max-width="600" /></p>
+<p class="ql-align-justify">Zen3是全方位的、跨越软件与硬件上的进步，其中涉及到了端到端的优化、缓存、载入/存储、执行单元、预取、调度、解码等，甚至包括比如IPC效率高达19%的全面提升，同时L1缓冲区容量翻倍，多达到1024个，分支预测带宽增加，延迟降低，且分支预测失败后恢复更快。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201201/12e8d9ebbdfb44e78d690389270d96cc.png" max-width="600" /></p>
+<p class="ql-align-justify">由于复用Zen2的12nm IOD，Zen3保证了完美的主板兼容性。比如最佳芯片组X570，额外提供PCI-E 4.0支持，CPU连接芯片组的4条通道带宽自然也受益于PCI-E 4.0而翻倍了，万兆有线网卡、Wi-Fi 6无线网卡、USB3.1 Gen2、SATA6等都将受益，总带宽的提升可以大幅缓解存储设备并发传输数据时的拥堵情况。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201201/b8f82a7308754679873f86313b2fe5ce.png" max-width="600" /></p>
+<p class="ql-align-justify">其实，最需要PCI-E 4.0通道的不只是显卡，还有比如新一代4.0的M.2 SSD。我们特地借到了一块4.0的M.2 SSD——AORUS Gen4 SSD 1TB，通过<strong>CrystalDiskInfo信息识别我们可以大致了解到它的运行情况，</strong>这款AORUS Gen4 SSD 1TB固件为ECFM11.3，走PCIe 4.0×4通道，NVMe 1.3标准。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201201/2897b9919faf47e6997a0a6b6e4f85dc.png" max-width="600" /></p>
+<p class="ql-align-justify">在AS SSD Benchmark测试中，该SSD在1G文件的测试中持续读写速度分别高达4261.29MB/s、4030.89MB/s。而在10GB文件的测试中持续读写速度也分别达到了4329.22MB/s、3993.77MB/s。</p>
+<p class="ql-align-justify">CrystalDiskMark针对1GB和32GB不同容量的测试中，1GB文件的测试顺序读写速度高达4987.7<strong>.7MB/s、4288.4MB/s</strong>，4K随机读写性能，可达到<strong>61.83MB/s、220.1MB/s，</strong>32GB的成绩也十分稳定。</p>
+<p class="ql-align-justify">更稳定快速的读写在处理大量读写的设计类应用时，可以发挥更高的性能，让大家的搬砖效率得到有效地提升。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201201/a63539c0536a49b3a4f620a29154b21c.png" max-width="600" /></p>
+<p class="ql-align-justify">除去X570，其实B550和A520芯片组也可以支持Zen3处理器，同样通过简单的BIOS更新就可以支持。明年一月开始，AMD 400系列主板也将可以通过BIOS更新的方式提供对Zen3处理器的支持，如果对PCI-E 4.0没有执念，用旧主板换新CPU的组合方式也是个省钱的好方法。</p>
+<p class="ql-align-justify"><strong>测试平台</strong></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201201/107ee5ab723d44dbb504fac277f85d42.png" max-width="600" /></p>
+<p class="ql-align-justify">作为AMD首批上市的Zen3架构5000系列CPU中的基础款，AMD 锐龙 5 5600X拥有6核心12线程，基础频率3.7GHz、Boost频率4.6GHz，TDP 65W。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201201/7cc41e0723304b038a54e2e193fd729c.png" max-width="600" /></p>
+<p class="ql-align-justify">我们也为测试其性能，围绕其搭建了一整套平台，使其性能可以得到充分地释放。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201201/f9bb31b754924427833bb6cce146396b.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">首先，主板我们选择了MSI MEG X570 GODLIKE，其依旧保持了MSI GODLIKE系列的众多传统，比如全套Killer网卡，双Codec的集成音频，四条x16型的PCIe插槽以及采用容量增加的双BIOS设计，在SATA与M.2的数量上也均无偏废。主板采用E-ATX板型，依然是偏硬朗的设计风格，Dynamic Dashboard(龙魂动态面板)作为GODLIKE的灵魂也保留了下来，芯片组散热器外框的龙图腾图案也藏有RGB灯效。其还直接捆绑了两款扩展卡，其一是MSI 10G Super LAN独立万兆网卡、其二是名为M.2 Xpander-Z Gen 4的PCIe 4.0 x16(x8)转双M.2存储转接卡。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201201/1a769b01c5394e64bb185445db0a9c78.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">显卡方面，一如既往采用AMD同平台的自家显卡——ROG TUF3 RX 5700XT。其基于最新的7nm工艺设计，GPU核心内集成有103亿晶体管，8GB GDDR6显存，拥有2560个流处理器、64个ROP单元、256个纹理单元，最大带宽448GB/s，性能平均提升超过40%。</p>
+<p class="ql-align-justify">在此基础上，ROG TUF3 RX 5700XT为之进行了用料方面的升级。包括使用航空级润滑油提升风扇轴承耐用度，利用2.7槽设计增加散热片面积，通过直触式热管直接为GPU进行导热，强化PCB铝制背板加强硬度等。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201201/71a620c9561d4ded922828ef665988f2.png" max-width="600" /></p>
+<p class="ql-align-justify">内存的选择上，我们选择的是2条3600MHz的16GB HyperX FURY DDR4 RGB雷电流光系列骇客神条。作为HyperX内存家族中的旗舰产品，拥有极佳的稳定性、兼容性。由于支持Plug N Play功能，HyperX FURY DDR4 RGB可自动超频至系统BIOS允许的最高速度。而由于XMP技术的加持，选择一个预设的配置文件，就可以躲开各种头疼的参数，小白也能轻松实现超频。内存表面覆盖了金属散热马甲，采用导热硅胶固定，外观整体较为时尚。散热片上印有厂商名称的浮雕LOGO以及产品所属系列名称，右上角的DDR4也标明了此款内存为新一代的内存规格。背面则是带有产品信息的贴纸。外部散热马甲设计也延续HyperX FURY雷电系列骇客神条家族风格，不仅能增加整体的美感，也能提供更大的散热面积。配合金属棱角的前卫风格，RGB灯条部分提供的流光溢彩更是彰显硬核气质，借助HyperX红外同步技术，可以保证各种设备之间的光效同步，轻松玩转“光污染”。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201201/e983f1456f35455c982e403af03c5932.png" max-width="600" /></p>
+<p class="ql-align-justify">SSD选用的上述提到的AORUS Gen4 SSD 1TB，也就是大家常说的黑雕硬盘。其强大的读写速度大家也在上面看到了，动辄4000-5000MB/s的读写速度用起来确实是起飞的感觉。其拥有高达1GB的缓存容量，并且通过优化电路和架构，将颗粒堆叠增加到96层，以获得更高的性能和单位面积存储空间，其吞吐量为800MT/s，远远超过PCI-E 3.0设备的存储性能。其还支持磨损均衡和冗余容量技术，以及TRIM &amp; S.M.A.R.T。并且，其还拥有SSD Tool Box应用程序，可以让我们非常直观地去全面了解SSD的状态以及型号名称、FW版本、健康状况和传感器温度等情况，也可以进行清除所有数据和安全擦除操作。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201201/55de85b6795143bba472794c311bcf65.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201201/604c2968342240a9bdd4821e802d8cb8.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">安钛克Frigus Air 400 ARGB风冷散热器可以在高转速与低噪音中达到平衡，800-1600RPM±10%的转速下，可以保证20-36db（A）的噪音。可拆卸的风扇更加便于我们的日常清理维护，全金属螺丝扣具使得散热器的安装更加牢固。顶部鳍片、散热片、通热管全部黑化设计，带来了更加高端的视觉效果。由于搭配了独立控制器，我们可以更加方便地进行对于多种光效模式的控制。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201201/70de096d311f4291b32919568e82deeb.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">电源笔者选择的是安钛克Neo Eco 650W，金牌全模组化设计，采用全日系电容。最大转换效率能够达到88%，整体额定功率达到650W。双滚珠轴承静音风扇尺寸为12cm，并配有格栅状保护罩，在保障高稳定可靠性能的同时，减少了不必要的噪音污染。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201201/fafa95076d3c4502a6c0602d2b209c77.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">笔者选择的机箱是安钛克 P82 FLOW，经典黑色的硬朗外观在这款机箱上得到了完美进化，机箱拥有前、后、顶部三面140mm大型风扇位共6个（标配自带4个），配合3面悬浮式进风，可以实现更高效的散热。3mm钢化玻璃、多方位可水洗防尘网、大面积电源减震棉、两面侧板金属卡槽设计，用料考究的同时，更显简约的气质。</p>
+<p class="ql-align-justify"><strong>理论测试：超越i9-10900K的单核能力</strong></p>
+<p class="ql-align-justify">接下来我们要进行的是理论测试，为了方便大家理解，我们主要拿Intel的同档竞品i5-10600K在相同平台下跑出的数据进行对比。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201201/b1557a4acb164963964c0a14f455874e.png" max-width="600" /></p>
+<p class="ql-align-justify">首先，使用CPU-Z给大家看一下5600X的规格信息，顺便跑一下CPU-Z的处理器测试。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201201/a409399b140a4cfb9f8f323f538f256c.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">这里锐龙5 5600X的单线程成绩为644.4、多线程成绩为5106.9，i5-10600K的成绩为单线程564.3、多线程4146.6。5600X在单线程和多线程成绩上都处于领先水平，单线程成绩领先了大约14%，多线程更加夸张一些，领先了23%。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201201/0ddbd3b1dbcf4a8a84a9f55990224552.png" max-width="600" /></p>
+<p class="ql-align-justify">以单核进行高斯勒让德算法计算圆周率的SuperPi上，计算小数点后100万位的时间，锐龙5 5600X成绩约7.655秒，i5-10600K成绩约7.767秒，这里的成绩是越快越好，所以可以看出性能上还是锐龙5 5600X略胜一筹。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201201/4c12b0a0b1b2471bbc3a6f595d48bed6.png" max-width="600" /></p>
+<p class="ql-align-justify">Fritz Chess Benchmark是一款国际象棋测试软件，通过AI模拟思考国际象棋的算法，我们通常也会用它来做计算机的科学计算。锐龙5 5600X成绩为32060步，i5-10600K成绩为25667步，这里5600X的性能还是与i5-10600拉开了将近25%的差距。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201201/d3f382e424a4488c9a9f256ff6c0fdc7.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201201/b051ddf1096744ed88c906a4a5a58e46.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201201/df4590c711974f9ba607051a571fd733.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">7-Zip在国内市场的知名度可能并不如WinRAR或是一些国产压缩软件要高，但在全球范围内仍然非常受人追捧。原因很简单，安全免费且开源，基于GNU LGPL协议使得压缩比非常高，还可以打开一些WinRAR无法打开的分卷。在这款我们会经常使用到的工具里，内置的BenchMark可以很好的帮我们对这些处理器进行测试。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201201/5dc1ab91f53d46858f73372e2e5a9091.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X单线程成绩为8258 MIPS，多线程成绩为72176MIPS；i5-10600K单线程成绩为7223 MIPS，多线程成绩为53318 MIPS。这个环节，锐龙5 5600X的成绩不仅仅是超越了i5-10600K，事实上，单线程的成绩已经超越了i9-10900K的7698 MIPS，多线程成绩也仅仅比10核20线程的i9-10900K的79252 MIPS低上一些，这性能确实强大到有些出乎意料。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201201/477c6a63cdc54eca93bb248edf1ac2e1.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201201/77fd39fe88d4436794e08b80700bc4a5.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201201/2065dd92186146808a929793b0becd7c.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">CineBench系列采用的是与Cinema 4D相同的特效引擎，相比使用过C4D的玩家能够从Cinebench系列的渲染中看出些许相似，这也是行业内公认的渲染类基准测试软件。对于经典的R15，不仅加强了着色器、抗锯齿、阴影、灯光、反射模煳等方面的渲染考察，更是最多能够支持256颗逻辑核心。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201201/5fdb693a8acf4f77a08ddad36b89dc88.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X单核成绩为256，多核成绩为1950；i5-10600K单核成绩为208，多核为1485；i9-10900K单核成绩为217，多核为2176。这里i5-10600K依然完全不是锐龙5 5600X的对手，锐龙5 5600X的单核成绩也依然奇迹般地超越了i9-10900K一头。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201201/9c639263a94c44e0b64e90fac8d5dc49.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201201/0f40b589386945fd94594977795d595e.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201201/bfde611def9f408ba90acd0b4ac76b71.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">R20针对下一代CPU采用了与R15完全不同的全新渲染架构，但实际上在渲染测试成绩上与R15并没有太多区别。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201201/3f3dbb4e599148628ce86fd1c2c21691.png" max-width="600" /></p>
+<p class="ql-align-justify">锐龙5 5600X单核成绩为602，多核成绩为4531；i5-10600K单核成绩为497，多核为3571；i9-10900K单核成绩为515，多核为4976。与R15结果类似，i5-10600K完全不是对手，锐龙5 5600X的单核成绩再次锤爆了i9-10900K，多核成绩也十分接近i9-10900K。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201201/968fb7c6b4f949228766f3dfc32de6cd.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201201/d54dbfe9cd13414eaf4587f9b8af1654.png" max-width="600" /></p>
+<p class="ql-align-justify">X264和X265转码我们还是放在一起说，都是我们身边经常接触到的格式，常见于视频文件的压缩编码。在视频内容上，X265会比X264的压缩编码格式更节省空间，尤其对视频压制需求较大的玩家，即使X265的编码时间略长，但更小的视频体积无疑更加吸引人。尤其是对移动视频存储设备来说，是否支持X265将会直接意味着所能存储视频的时长。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201201/0eaf72e866d347129731caa94ade8430.png" max-width="600" /></p>
+<p class="ql-align-justify">通过X264 FHD Benchmark和X265 HD Benchmark这两种压缩编码格式转换的测试，我们得到了具体的测试数据，X264 锐龙5 5600X成绩为60.53fps，i5-10600K成绩为47.04fps，i9-10900K成绩为58.18fps；X265 锐龙5 5600X成绩为36.33fps，i5-10600K成绩为28.04fps，i9-10900K成绩为36.82fps。这里我们可以发现，i5-10600K跟此前大部分的测试一样，就像是一个在旁边看神仙打架的吃瓜群众，没有什么参与感。锐龙5 5600X与i9-10900K的成绩则非常接近，完全在一个水平线上。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201201/903e27527ce44677a57134a763625836.png" max-width="600" /></p>
+<p class="ql-align-justify">在3DMark推出的测试组件Time Spy系列中，仅就CPU得分而言，锐龙5 5600X依然要比i5-10600K领先出不少，虽然这已经比上面的测试差距小一些。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201201/5b753d85fa57459f9fefe9fb9c98a1b8.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201201/11b5e630825a4c1db7f5d7c27cb891bc.png" max-width="600" /></p>
+<p class="ql-align-justify">使用PCMark 10针对现代办公所设计的基准测试进行测试，锐龙5 5600X成绩为7205，i5-10600K成绩为6487，i9-10900K成绩为6982。这代表着作为生产力工具，锐龙5 5600X可能也要比i9-10900K还要给力，是不是很出乎意料呢？</p>
+<p class="ql-align-justify"><strong>游戏实测：强悍的游戏体验</strong></p>
+<p class="ql-align-justify">游戏实测环节，我们进行了多款游戏的实测，大家玩得比较多电竞、RPG网游和3A游戏都有涉及。所有被测试的游戏均在1080P分辨率下进行，且画质、视频等相关设置全部拉满。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201201/2cf3484573a04a279e48a342b44ca0a0.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201201/7663da9526d547ef9e45bac9e89e74e0.png" max-width="600" /></p>
+<p class="ql-align-justify">首先是宿舍游戏《DOTA2》，全局的平均帧率上，锐龙5 5600X与i5-10600K差距不大，锐龙5 5600X帧率略高一点点。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201201/822cab88cc2a4b44b1f5ab741edd6b94.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201201/74bc126df3ea4f9d8fa8780f7ec91e46.png" max-width="600" /></p>
+<p class="ql-align-justify">《英雄联盟》的游戏平均帧率上，两者的差距巨大，i5-10600K仅能维持在平均225帧左右，240帧的默认封顶线都没有被冲破。锐龙5 5600X则直接突破了300大关，并且偶尔顶到400以上，有点耀武扬威的感觉。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201201/8be9c2cbf1c94de3acaa1673ffa79b36.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201201/0e4c98b4c3384db7aba4d3baf044d6ea.png" max-width="600" /></p>
+<p class="ql-align-justify">同样全部画质、特效拉满会后，RPG网游《天涯明月刀》的平均帧率差距就比较大了。在游戏战斗或者主城中复杂场景的加载时，两款CPU的实际游戏体验完全不同，锐龙5 5600X要爽快得多。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201201/7117516ea8da4f74921cec7493752c8a.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201201/7f0efcd268c04b22b66a2ac701c65b40.png" max-width="600" /></p>
+<p class="ql-align-justify">对于笔者来讲非常难操控的硬核网游《坦克世界》中，两款CPU在平均帧率的表现上也是有一定的差距，不过实际游玩中，直观感受并没有《天涯明月刀》那么明显。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201201/e3431b5975ad462e873f3fe702f0c202.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201201/26a72d0673a74b898b042caaf949a39d.png" max-width="600" /></p>
+<p class="ql-align-justify">老朋友3A游戏《古墓丽影·暗影》的表现上，两款CPU基本也是平手的水平，不论是帧率数据还是实际游戏体验上，都没有太大的差距。</p>
+<p class="ql-align-justify">综合来讲，锐龙5 5600X在游戏方面的性能，相较前代产品和竞品都有着不小的优势，Zen 3架构确实有两把刷子。</p>
+<p class="ql-align-justify"><strong>平台稳定性测试</strong></p>
+<p class="ql-align-justify">林林总总说了这么多，我们也来通过烤机测试一下锐龙5 5600X平台是否足够稳定。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201201/6cd2672d382a47bf9a7d877b6ec1a674.png" max-width="600" /></p>
+<p class="ql-align-justify">通过AIDA 64进行单烤CPU的FPU测试，在室温18℃的环境下烤机30分钟，锐龙5 5600X的CPU平均温度稳定在87.9℃，最高的时候也没有超过90℃。总体而言，功耗与温度表现控制的算是相当成熟。</p>
+<p class="ql-align-justify"><strong>结语</strong></p>
+<p class="ql-align-justify">不要因为锐龙5 5600X是AMD首批上市的Zen3架构5000系列CPU中的基础款而小看它，在我们的实测中，其释放出了令人惊讶的性能表现。单核跑赢i9-10900K，游戏表现大幅度吊锤同档竞品，这样的表现不仅仅让人记忆犹新，也宣示着Zen3更大的野心。在生产力和游戏场景下都没有短板的一款CPU，你还有什么理由不选择它呢？</p>
+<p class="ql-align-justify"><strong>精彩资讯报道，专业视频评测，尽在聚牛科技</strong></p>
+➜粹典范，大师作 联想YOGA Pro系列三款新品正式发布
+http://www.sohu.com/a/435604185_100058492	36726
+<p class="ql-align-justify">2020年12月1日下午4时，联想在北京798园区木木美术馆举办了主题为“粹典范 大师作”的联想YOGA Pro x 莫兰迪艺术展新品轻享会，联想体验设计中心高级总监胡亦挺、木木美术馆联合创始人雷宛萤出席了此次新品发布会。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201201/e4152bca2519470cb08548d82893b957.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">此次莫兰迪艺术展由木木美术馆举办，是乔治·莫兰迪在中国的首次美术馆个人回顾展，将展出意大利着名画家乔治·莫兰迪先生的80件重要作品。木木美术馆联合创始人雷宛萤表示：“现代的艺术创作中，科技的前进也不断赋能，木木与联想的这次合作，正是这样的互相赋能与理念契合。我们也希望通过这次的合作，来展现艺术的理性面与科技的感性面，带领我们从艺术与科技的⻆度向外探索，不断突破边界的限制。”</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201201/5dbf7b09b02346c38b9de425ad5742b0.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">谈到艺术与科技的关联，联想体验设计中心高级总监胡亦挺结合YOGA的产品设计，表达了他的看法：“YOGA的设计师在研究产品外观时，更多是把它当作一件日常生活中的精致工艺品，而不是一件简单的生产力工具来看。”在现场，联想带来了YOGA Pro系列三款最新产品，分别是联想YOGA Pro 13s Carbon 2021、联想YOGA Pro 14s 2021、联想YOGA Pro 14c 2021。</p>
+<p class="ql-align-justify">作为联想旗下高端品牌，YOGA集合了联想的优势研发资源和科技创新成果。2012年，酝酿长达8年之久的YOGA初代产品发布，自主研发的“触控屏+360°翻转”模式，带来了一机多模的创新体验，开创了笔记本电脑新形态。经过层层迭代，如今的YOGA家族已经细分为主打高科技的致享轻薄本YOGA S系列，和代表品质与经典的360°翻转触控本YOGA C系列这两大产品序列。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">本次亮相的三款新品全部搭载了全新英特尔EVO平台，均采用搭载英特尔锐炬Xe显卡的第11代智能英特尔酷睿处理器，并根据实际使用方式对响应能力、电池续航、连接能力、音频和显示进行设计与测试，严苛反映真实工作方式，致力于实现更高效的使用体验。一起来看看这次的新品都有哪些亮点——</p>
+<p class="ql-align-justify"><strong>·随心翻转，挥洒灵感——YOGA Pro 14c 2021</strong></p>
+<p class="ql-align-justify">YOGA C系列的最新旗舰——联想YOGA Pro 14c 2021正式发布。这款机型提供了金属、皮质两个版本，通过定制材质精雕细琢，带来优雅细腻的质感。</p>
+<p class="ql-align-justify">其中，皮质版A面采用雅黑粒面真皮顶盖，甄选欧洲头层牛皮手工雕琢，并通过严苛老化测试。真皮与金属之间过渡自然，不仅外观更具辨识度，还带来了温润舒适的触感。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201201/bd0be0b18d8c410bb677d90d7887d313.png" max-width="600" /></p>
+<p class="ql-align-justify">金属版由航空级6系列铝材打造金属外壳，配以Unibody CNC一体成型工艺，带来高强度、高精度的精密机身。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201201/8f4b095cb75348b5ba95c679ba34b300.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">屏幕方面，全新的YOGA Pro 14c 2021搭载微边框设计4K屏，色域覆盖高达90% DCI-P3，并具备500nits高亮显示，无惧强光环境，视觉体验更细腻。它传承了YOGA开创的平行双转轴设计，屏幕支持360°翻转，同时机身内置4096级压感手写笔，实现了一机多模的使用体验。外加DisplayHDR 400和杜比视界双认证，无论是挥洒创意还是娱乐影音，都能轻松胜任。</p>
+<p class="ql-align-justify">机身配置方面，YOGA Pro 14c 2021搭载了第11代英特尔酷睿处理器i7-1185G7，内置英特尔锐炬Xe显卡，16GB内存+1TB SSD存储组合，强悍性能保证极速高效办公。60Wh大容量电池配合新一代平台节能特性，带来约10小时持久续航，可轻松满足每天的工作及娱乐需求。</p>
+<p class="ql-align-justify"><strong>·智享创新，质感倾心——YOGA Pro 14s 2021</strong></p>
+<p class="ql-align-justify">接下来是YOGA Pro 14s 2021。作为YOGA S系列的旗舰机型，这款产品兼顾了出色的做工与全面的性能。其A面甄选欧洲头层牛皮，历经20多道工序，由多位匠人手工打造出柔软奢华皮面，手感温润舒适，质地细腻考究；机身则经过27道复杂工艺，辅以CNC一体成型技术，钻石切边，打磨精致细节。整机薄至约13.9mm、轻至约1.3kg，优雅随行，一见倾心。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201201/9923b92c0b34481e861289b4ab03152e.png" max-width="600" /></p>
+<p class="ql-align-justify">整体配置上，YOGA Pro 14s 2021配备4K分辨率显示屏，同样是90% DCI-P3色域覆盖与500nits高亮度显示，独特之处在于其采用了业界首创的大尺寸3D玻璃全覆盖，精致打磨抛光，让屏幕更清晰，同时屏幕还支持10点触控，操作交互更简单。搭载第11代英特尔酷睿处理器i7-1165G7，内置英特尔锐炬Xe显卡，16GB内存+1TB SSD存储组合，专业显示+全能表现，带来极致生产力。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201201/11f1f4c72971458e8321534757d991b1.png" max-width="600" /></p>
+<p class="ql-align-justify">YOGA Pro 14s 2021配备63.5Wh大容量电池，续航基准测试下能够提供约13小时的出色“体力”，助你随时随地，创意满格。此外，借助联想独有的“轩辕AI”芯片，它还实现了开盖即开机、屏幕亮度及键盘背光自适应环境、人走自动锁屏等智能体验，最大限度解放双手，为效率而生。</p>
+<p class="ql-align-justify"><strong>·颜值抢眼，极致轻便——YOGA Pro 13s Carbon</strong></p>
+<p class="ql-align-justify">本次亮相的另一款重磅产品便是联想YOGA Pro 13s Carbon，它创新运用了航空级低密度、高强度的碳纤维材质，结合高刚性的镁铝合金，实现了仅有966克的极致轻量化机身。再加上纯白的碳纤维外壳和整机配色，既轻巧，又好看。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201201/b8016f63a72c4e87beddad6ede244e0b.png" max-width="600" /></p>
+<p class="ql-align-justify">外观漂亮，性能同样能打。YOGA Pro 13s Carbon 2021采用2.5K高分辨率显示屏，100% sRGB色域覆盖，呈现真实准确的色彩画面；约91%屏占比、16:10的黄金比例屏幕，能够同时满足办公、娱乐双重需求；其屏幕还具备DC调光无屏闪设计和莱茵低蓝光认证，进一步保护使用者的视力，好用不伤眼。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201201/1e3cd244f3fe48ffbdfbba55decc2980.png" max-width="600" /></p>
+<p class="ql-align-justify">配置方面，它搭载英特尔Evo平台，配备第11代英特尔酷睿处理器和英特尔锐炬Xe显卡，相比上一代酷睿，处理器性能提升约24%，图形性能更是飙升近87%，再加上16GB+512GB SSD的组合，保证强悍而高效的使用体验。极致的轻便，均衡的性能，YOGA Pro 13s Carbon 2021可以说是移动办公的理想之选。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201201/5c48a3566a684416b4d71bb39353976e.png" max-width="600" /></p>
+<p class="ql-align-justify">不仅YOGA Pro系列集体上新，现场还迎来了另一款神秘新品——联想小新Pro 14 2021核显版。它搭载第11代英特尔酷睿i5处理器和英特尔锐炬Xe显卡，整体性能强劲；屏幕规格同样出彩：16:10黄金比例，纵向视野更宽广；2.2K高分辨率，纤毫毕现更细腻；莱茵护眼 + eyesafe双认证，不用切换模式即可护眼，色彩无需妥协。</p>
+<p class="ql-align-justify">新品如约而至，最后就是令人期待的价格揭晓环节。在发布会现场，YOGA Pro系列及小新Pro 14 2021这三款产品的价格均已公布，其中YOGA Pro 13s Carbon 2021日常价6599元，秒杀价6299元；YOGA Pro 14s 2021日常价13499元，首发价12999元；YOGA Pro 14c 2021，黑色皮革款日常价13499元，首发价12999元；慧眼识金金属款日常价12499元，首发价11999元；小新Pro 14 2021核显版日常价5499元，首发价4999元。以上新品即将在全网开售，敬请期待！</p>
