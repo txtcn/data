@@ -15,3 +15,16 @@ SAM技术的本质是PCI-SIG开发的Resizable Base-Address Register功能，它
 3架构的锐龙5000系列处理器的PCI-E控制器才导入了全速率_pdep_u32/64的PCI-E物理层功能，这是执行Resizable
 Base-Address Register所必须的。</p><p style="text-align:left;">有趣的是Intel在Haswell架构处理器以来一直支持此功能，也就是说只要主板厂商肯提供BIOS支持，自2014年以来的Intel平台都可以开启AMD RX
 6000系列显卡的SAM功能，也就是Intel 8系列主板及以后的主板都支持，当然由于那些年代的主板都EOL了，哪些主板会提供新BIOS支持完全是看主板厂心情。</p><p style="text-align: left;">此外由于这是一项PCI-SIG的功能，所以NVIDIA要用也是没啥问题的，其实NVIDIA也在开发类似的功能，计划在目前某些GPU上增加该功能的支持。</p>
+➜Core i9-11900K现身《奇点灰烬》数据库，比Ryzen 9 5950X慢10%
+http://www.expreview.com/77018.html	13446
+<p>没啥意外的话，Intel会在明年3月份发布Rocket
+Lake-S处理器，随着发布时间的逐渐接近，它出现在各个测试数据库的频率就越来越高，而且最近出现的是带有正式商品名的样品，不是早期工程样品了，前些时间Core
+i7-11700K才出现在GeekBench数据库里面，现在Core i9-11900K也出现在《奇点灰烬》的数据库里了。</p><p style="text-align: center"><img src="https://img.expreview.com/news/2020/12/05/Core_i9-11900K.jpg" width="100%" border="0"/></p><p>这是由推特用户<a target="_blank" href="https://twitter.com/TUM_APISAK/status/1334669804330860544">@TUM_APISAK</a>发现的，和之前的Core
+i7-11700K一样，Core i9-11900K也是8核16线程的，而前者的基础频是3.4GHz，睿频频率5GHz，而Core
+i9-11900K的基础频率是3.5GHz，睿频频率暂且未知，不过可以确定的是肯定会比5GHz高，根据此前的消息可能会达到5.5GHz。</p><p>和目前10核20线程的Core i9-10900K相比，Core
+i9-11900K的核心线程数确实更少了，但由于内核架构从Skylake升级到Cypress
+Cove，IPC会有两位数的提升，整体性能，特别是游戏方面会比现在的10代酷睿好得多。从《奇点灰烬》的测试结果来看，在1440p分辨率下是62.7fps，而1080p时则是64.7fps，均是在Crazy设置下运行的。</p><p>不过呢，下面有会回复了Ryzen 9 5950X在1080p
+Crazy设置下能跑71.9fps的结果，当然了《奇点灰烬》是个DX12的即时战略游戏，挺吃CPU多线程性能的，在其他游戏中的表现可能就不这样了。</p><p>关于Rocket Lake，其实之前Intel自己也放出了解构解析，大概就是Ice Lake的CPU内核与Tiger
+Lake的Xe核显的混合体，并且工艺从10nm变成了14nm，当然了，和Skylake相比IPC依然有两位数的提升。新一代处理器将支持PCI-E
+4.0，而且CPU所提供的PCI-E通道数量提升到了20条，可以多划分出一个直连CPU的M.2接口，Xe核显的性能也会比现在的Gen
+9.5核显性能提升了50%。PL1是125W，PL2是250W，Tau时间56秒，这些都和现在的Comet Lake是一样的。</p>

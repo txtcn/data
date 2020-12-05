@@ -496,3 +496,63 @@ http://www.woshipm.com/marketing/4289510.html	9853
 <p>作者：Vivian薇薇安，美国顶级名校MBA毕业，近10年工作经验，现供职于腾讯，前联合利华负责新零售业务，包括品牌推广、新媒体运营、全域营销活动等。</p>
 <p>本文由 @Vivian薇薇安 原创发布于人人都是产品经理，未经作者许可，禁止转载。</p>
 <p>题图来自Unsplash，基于CC0协议</p>
+➜设计沉思录 | 助力业务之PC端微聊改版总结
+http://www.woshipm.com/pd/4286743.html	12798
+<blockquote><p>编辑导读：在产品的迭代升级过程中，改版设计是常常会遇到的问题。文章对58集团内部即时通讯工作——微聊的升级改版进行了详细的梳理，对遇到的一些问题进行了分析总结，供大家参考学习。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/R7fXm32pYa88fqXssm7H.jpg" alt="" width="900" height="420" /></p>
+<h2>01 前言</h2>
+<p>如今，社交产品根据不同的需求和定位，已深入互联网更多细分领域。按功能属性可被划分为通讯工具和社交平台。除了能满足人们日常生活中即时聊天的需求，最主要的是可以将网站信息与聊天用户直接联系在一起，满足人们的公共社交需求。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/12/OMCop7EjXmPTlzrq0CFj.png" width="900" /></p>
+<h2>02 背景</h2>
+<p>微聊是集团内部的高效即时通讯工具，连接了用户、商家、客服等不同角色。最为接入业务数最多的中台能力，是实现业务连接 、商业转化的有力支撑。</p>
+<p>微聊接入业务近几年，随着公司业务的不断增长、产品结构复杂化，微聊在承接业务过程中收到用户及业务方的反馈：微聊风格陈旧、各端体验不一致，且微聊回复率低，扩展性较差。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/12/W10GEG9ciiKEHPt0lq2i.png" width="900" /></p>
+<p>目前同城业务已经覆盖包括App端、M端、小程序等平台，但仍有大量用户习惯使用网页端58，这些用户的使用体验仍是我们需要重点关注的。</p>
+<h2>03 重新定义</h2>
+<p>58同城正在从“流量型”平台转向“服务型”平台。新技术的应用加大了用户与商户之间的连接数量和连接效率，促进交易的发生。我们的产品目标是打造体验一流、生态完善的全链接服务，帮助集团全业务发展。面对现有的诉求点 ，我们发起了对网页端微聊改版项目。</p>
+<p><strong>那么对于此次改版，我们除了满足基本聊天需求外是不是可以做的更多？</strong></p>
+<p>结合中台业务特点，我们重新定义微聊，微聊不仅仅是轻量聊天工具，也是助力各业务的全链接服务生态；作为中台能力，除了为集团各业务提供标准化服务，高复用性、快速接入以外，还具备扩展性，支持业务自定义。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/12/UaswDFV2ke1UTtCT9wtg.png" width="900" /></p>
+<h2>04 设计目标</h2>
+<p>为了让产品更符合用户预期，最大化满足业务需求，针对PC端微聊方案改版，我们确定本次改版设计目标。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/12/hOVgGTfxkMQCg5IvNJDj.png" width="900" /></p>
+<ul>
+<li><strong>在业务层面</strong>：提高微聊连接率，进一步实现商业转化；</li>
+<li><strong>从用户角度</strong>：提升使用体验，沟通更高效；</li>
+<li><strong>从设计内部角度</strong>：提升微聊品质感，让微聊更具包容性和扩展性</li>
+</ul>
+<h2>05 设计实施</h2>
+<p>设计流程中 我们通过洞察问题点并挖掘多方诉求来寻找机会点，确定设计目标后并进行拆解落地，通过对数据验证，从而展开后续的迭代规划。</p>
+<p>在改版前期 ，针对旧版页面进行问题梳理，主要包括三个方面：</p>
+<ul>
+<li>在<strong>视觉层界面</strong>-风格陈旧；图标样式不精细；干扰元素过多；</li>
+<li>在<strong>交互层页面</strong>信息结构不明确；信息获取不够高效；</li>
+<li>在<strong>产品层页面</strong>功能单一，易用性不足；产品缺少记忆点。</li>
+</ul>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/12/uCBIXScemtTOlQKAypxn.png" width="900" /></p>
+<p>我们对设计目标进行拆解，从以下4个点切入设计目标并进行落地：</p>
+<h3><strong>1. </strong>视觉语言升级，强化品牌感知</h3>
+<p>视觉升级中，在保持微聊原有图形不变的前提下，对微聊品牌色进行升级，在原有蓝色系基础上进行加深，使其更符合高效、工具性特点；</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/12/9on2swoOFNcoFr1SX62F.png" width="900" /></p>
+<p>同时为了强化品牌，利用微聊图形的特征，在功能图标设计中使用相同的元素，加强品牌记忆点。在微聊界面头部位置， 将图形放大化作为背景，在潜移默化中加强用户对微聊产品的感知。</p>
+<h3><strong>2. </strong>聚焦用户场景<strong> 优化信息结构</strong></h3>
+<p>在优化信息层级中，对原有信息层级进行梳理，并优化信息结构展示。减少沟通中干扰元素，增加信息强弱对比，强化重点内容。固定了消息通知模块，使用户浏览更聚焦；同时压缩帖子信息和输入区，来增加消息浏览空间，使阅读更有效率；</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/12/TviyAFNy8yS6G2NvssX6.png" width="900" /></p>
+<h3><strong>3. </strong>组件化设计，提升一致性</h3>
+<p>为保证业务接入更高效，我们对通用功能卡片组件化，增加亲和力的同时兼顾信息主次对比，强化主体信息和视觉一致性。</p>
+<p>如在文件发送卡片中，固定卡片信息结构，并列出文件缩略图合集，方便适配各种文件发送场景；</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/12/AQSeurrbIqfkkUB5e3jn.png" width="900" /></p>
+<p>同时在帖子信息卡片中， 通用视觉元素的合并抽离，形成丰富的组件库，方便业务直接复用，有效控制视觉输出的一致性。将卡片划分为5个区域：标题、次要信息、价格、图片、标签 ；同时列举出各种字段空缺时的正常展示样式，保证视觉设计统一性，提高了模块的易用性及后期延展性。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/12/ZycLsRXkWPMY3n7tKKsL.png" width="900" /></p>
+<h3><strong>4. </strong>支持自定义，打造沉浸式体验</h3>
+<p>在产品层面，为满足多业务的个性化需求、丰富多场景的沟通需求，在微聊布局中，我们创新提出预留自定义区域，在网页端右侧新增第三栏的布局结构，通过打造沉浸式体验，让用户浏览更专注，沟通更高效；业务方可根据自身业务需求，选择两栏或三栏的展示形式，方便实现快速接入；</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/12/ELSrR0I8KLddetsLXQxH.gif" /></p>
+<h2>06 数据总结</h2>
+<p>改版上线后微聊<strong>回复阅读比</strong>提升了3.95%，表明相比于之前的单向发送，上线后双方建立链接率有提升。</p>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/12/NXe1Euvd7dcOGAs2tzIF.png" width="900" /></p>
+<p>本次PC端微聊改版是由设计侧主动推动并落地的项目，我们通过体验的视角去洞见机会点，以体验设计的方案为业务赋能，在协同中台业务全流程中，实现设计价值的最大化。</p>
+<p>最后感谢全体项目组成员的辛苦付出：孙巧玲、李洋、刘静颐、汪洋、刘辰</p>
+<p>&nbsp;</p>
+<p>作者：张华，视觉设计师</p>
+<p>本文来源于人人都是产品经理合作媒体@58用户体验设计中心（微信公众号@58UXD），作者@张华</p>
+<p>题图来自 Unsplash，基于CC0协议。</p>
