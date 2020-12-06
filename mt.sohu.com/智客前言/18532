@@ -1,0 +1,87 @@
+➜云主机的13G内存去哪里了？聊聊Hugepages大页内存管理
+http://www.sohu.com/a/421179807_99933683	20721
+<p>一、云主机13G内存被无故占用</p>
+<p>今天群里的小伙伴在巡检云主机时发现一台云主机的内存监控报警了，登陆该云主机系统后发现系统内存被莫名占用了13G，空闲内存为“0”，所以导致监控报警，如图一所示：</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200927/19329764aff24fe58c576117a12c5c57.jpeg" max-width="600" /></p>
+<p>图一 内存使用截图</p>
+<p>接着小伙伴查看了进程相关信息，如图二所示，发现所有进程占用都是零点几，没有超过1G的，13G的内存去哪里了？</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200927/f3b98f278ef84910ba3559470599ae81.jpeg" max-width="600" /></p>
+<p>图二 系统进程截图</p>
+<p>怀疑是系统缓存占用，于是重启了该云主机；但在重启云主机后还是一样的现象，查看内存使用的used项还是13G，空闲变为17G，如图三所示，。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20200927/355be96e402a4066abe14aba38e1d6d2.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>图三 重启云主机后内存使用截图</p>
+<p>这证明不是缓存占用，那该云主机的13G被谁用了？</p>
+<p>二、揭秘云主机的13G内存</p>
+<p>从上面的进程信息中我们可以看出，这台云主机主要运行的是oracle数据库，稍后有oracle经验的人都有所了解，在oracle部署和使用时往往需要配置HugePages，HugePages对于Linux上提升Oracle数据库性能是至关重要的。在系统中执行：grep HugePages /proc/meminfo命令，结果如图四所示，看到了HugePages _Total是6708，这个数字同13G还有差距，但感觉离答案进了一步！</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20200927/089c70495ff54f4491a822e1f1a6652f.jpeg" max-width="600" /></p>
+<p>图四 查看HugePages的信息</p>
+<p>继续学习一下相关参数</p>
+<p>HugePages_Total是指系统总共预留了多少HugePages，HugePages_Free指当前还有多少HugePages未分配(allocate)，HugePages_Rsvd是指有多少HugePages是系统承诺了会分配给程序(commitment to allocate)，但实际并未分配，HugePages_Surp指超分的页。</p>
+<p>2.1大页内存示例数据解析</p>
+<p>下面用实际的数据来进行说明，示例如图五所示。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20200927/b5e42b40fe424c1482a40e9d7128084c.jpeg" max-width="600" /></p>
+<p>图五 示例HugePages的信息</p>
+<p>从上面的信息可以得出以下结论：当前hugepages一共实际使用了13007-11813=1194个pages（不包括预留的），预留了3372个pages。永远不会使用达到了11813-3372=8841个pages。每个page大小为2M，也就是说有接近16.5G的hugepages内存被浪费了（因为hugepages无法swap，所以不能被其它程序所使用）。换句话说：当前系统使用中或者即将被使用的hugepages的总和为HugePages_Total-HugePages_Free+HugePages_Rsvd=13007-11813+3372=4566个pages。</p>
+<p>2.2终于找到13G内存</p>
+<p>回到先前的云主机，Total是6708，每个page大小为2M，那6708*2M/1024≈13G,哇！终于找到13G内存了！原来是被系统的大页内存占用了，群里的小伙伴也确认了，如图六所示。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20200927/e7eaceae730f4d95a93f9c4ec535241c.jpeg" max-width="600" /></p>
+<p>图六 小伙伴确认截图</p>
+<p>群里的小伙伴们也都学到“HugePages”这一招，群主觉得有必须同大家分享一下，也欢迎大家加入华云的技术群，请关注华云官方公众号，来一起交流学习吧！</p>
+<p>三、大页内存扩展学习</p>
+<p>在Linux中大页分为两种：Huge pages(标准大页)和Transparent Huge pages(透明大页)。内存是以块即页的方式进行管理的，当前大部分系统默认的页大小为4096bytes即4K。1MB内存等于256页；1GB内存等于256000页。</p>
+<p>3.1Huge pages</p>
+<p>Huge pages是从Linux Kernel2.6后被引入的，目的是通过使用大页内存来取代传统的4kb内存页面，以适应越来越大的系统内存，让操作系统可以支持现代硬件架构的大页面容量功能。</p>
+<p>Huge pages有两种格式大小：2MB和1GB，2MB页块大小适合用于GB大小的内存，1GB页块大小适合用于TB级别的内存；2MB是默认的页大小。</p>
+<p>3.2Transparent Huge Pages</p>
+<p>Transparent Huge Pages缩写THP，这个是RHEL6开始引入的一个功能，在Linux6上透明大页是默认启用的。</p>
+<p>由于Huge pages很难手动管理，而且通常需要对代码进行重大的更改才能有效的使用，因此RHEL6开始引入了Transparent Huge Pages（THP），THP是一个抽象层，能够自动创建、管理和使用传统大页。</p>
+<p>THP为系统管理员和开发人员减少了很多使用传统大页的复杂性,因为THP的目标是改进性能,因此其它开发人员(来自社区和红帽)已在各种系统、配置、应用程序和负载中对THP进行了测试和优化。这样可让THP的默认设置改进大多数系统配置性能。但是,不建议对数据库工作负载使用THP。</p>
+<p>这两者最大的区别在于：标准大页管理是预分配的方式，而透明大页管理则是动态分配的方式。</p>
+<p>如果云主机跑的是oracle数据，建议大家还是系统去学习一下oracle的文档，会有相关的说明。</p>
+<p>3.3大页内存常用相关指令</p>
+<p>查看大页内存使用情况</p>
+<p>#grep Huge /proc/meminfo</p>
+<p>查看系统numa架构，cpu分配情况</p>
+<p>#numactl --hradware</p>
+<p>挂载大页，重启后失效</p>
+<p>#mkdir -p /mnt/huge</p>
+<p>#mount -t hugetlbfs nodev /mnt/huge</p>
+<p>永久挂在大页内存</p>
+<p>#vim /etc/fstab</p>
+<p>#nodev /mnt/huge hugetlbfs defaults 0 0 #挂载2M大页</p>
+<p>#nodev /mnt/huge_1GB hugetlbfs pagesize=1GB 0 0 #挂载1G的大页</p>
+<p>查看大页内存挂载情况</p>
+<p>#cat /proc/mounts</p>
+<p>查找正在使用大页的进程</p>
+<p>#find /proc/*/smaps | xargs grep -ril "anon_hugepage"</p>
+<p>取消挂载</p>
+<p>#umount /dev/hugepages</p>
+<p>#umount /mnt/huge</p>
+<p>四、参考文档：</p>
+<p>HugePages on Oracle Linux 64-bit</p>
+<p>https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/performance_tuning_guide/s-memory-transhuge#s-memory-configure_hugepages</p>
+<p>https://blog.csdn.net/g__hk/article/details/44955587</p>
+➜华云数据与联想携手发力超融合 推动中国政企用户实现数字化转型升级
+http://www.sohu.com/a/421180149_99933683	20971
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20200927/daeb4eeee80a493c892ca2011b9c976a.jpeg" max-width="600" /></p>
+<p>2020年9月25日，华云数据与联想主办的超融合解决方案及应用场景研讨会顺利召开。本次研讨会围绕超融合技术发展、应用场景、实际案例等方面，探讨如何利用超融合技术提升业务效率，重塑商业价值。</p>
+<p>从目前来看，在企业用户拥抱数字化转型过程中，超融合正在成为现代化数据中心的主流技术。其能够简化IT基础架构的部署和管理，帮助企业构建现代化的数据中心，加速企业向云迁移，从而更快的带来业务的可持续发展。</p>
+<p>根据Gartner的2019年超融合魔力象限报告预测，截止到2033年，全球超融合市场仍可拥有高达23%的增长速度，届时70％的全球政府和企业用户都将采用超融合技术。而根据IDC的最新报告，2019年仅在上半年中国超融合市场增长率就达到了56.7%。</p>
+<p>那是什么原因使得超融合如此受到市场追捧？究其原因，传统IT架构中计算、存储、网络等部分各自独立，而超融合架构通过将计算与存储合二为一，再用软件定义将其打通，组成了超融合一体机。三者合为一体不仅为企业节约了TCO，快速部署、易于运维等特点也把IT运维人员从日常繁琐枯燥的运维工作中解放出来，能够更专注的开展业务创新工作。</p>
+<p>在本次研讨会上，华云数据联合联想向行业用户解析了超融合技术的前沿趋势与产业实践，让更多行业用户能够以一种新的云基础设施运营方式，更便捷地开展各类数字化工作负载，从而保持更具优势的核心竞争力。</p>
+<p>这并非华云数据与联想的第一次携手。华云数据与联想长久以来一直保持紧密合作，双方不仅完成产品兼容互认证，是重要的生态、战略合作伙伴，还展开深入合作，基于各自软硬件技术，联合发布联想AH超融合一体机。</p>
+<p>联想AH超融合一体机以华云数据的通用型云操作系统安超OS 2020为核心，采用联想服务器，为政府和企业提供了一款全栈兼容、强劲可靠、高性价比的一站式上云解决方案，满足了用户软硬件深度优化、按需灵活扩容的需求，实现了IT管理的简化。</p>
+<p>联想AH超融合一体机采用了应用定义存储平台，可以根据不同的应用定制不同的数据块存储大小，从4K到32K，为每类应用定制不同的存储数据块大小，优化应用读写效率，提供更高的业务性能支持能力。</p>
+<p>联想AH超融合一体机还可以支持主流处理器架构，支持主流服务器固件及主流操作系统。如用户有需求，联想AH超融合一体机还可以提供架构感知支持，支持机架和站点故障恢复能力，全面保障数据安全和业务连续性，能实现简单容灾环境。</p>
+<p>为了向企业客户提供显着的投资保护，降低企业IT成本，联想AH超融合一体机可以实现软件授权可移植，将软件移植到新的服务器上继续使用。此外，联想AH超融合一体机采用非开源软件，可以保证100%掌控产品代码，可以充分保障其安全性，广泛适用支持各类应用包括办公、核算、财务系统等。</p>
+<p>目前，联想AH超融合一体机在众多应用场景中发挥作用，推动政企用户业务转型发展。以某省政府部门为例，通过采用AH超融合平台，促进了互联网+政务服务系统的快速融合发展，提升了业务系统的可用性和可靠性，实现业务系统的持续稳定运行，提升了企业和群众办事的便捷度和满意度。同时，还实现了运维上的统一管理和监控，降低对运维人员的要求，同时资源统一规划后，避免了重复采购，降低运营成本。最重要的是，AH超融合平台软件完全知识产权，符合政务系统未来的发展方向。</p>
+<p>在新基建加速推进的背景下，华云数据与联想合作推出的AH超融合一体机不仅为政企用户带来了云化演进所需的云产品和云服务，也为双方合作打下的更为坚实的基础。</p>
+<p>未来，华云数据与联想将取长补短，共同推进超融合技术发展，将更多应用和硬件平台进行测试和适配，同时双方将致力于从底层芯片到操作系统、数据库、以及上层应用，打造一体化的国产生态体系，推动中国政企用户完美实现数字化转型。</p>
