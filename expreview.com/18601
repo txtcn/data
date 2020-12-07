@@ -5,13 +5,13 @@ http://www.expreview.com/77015.html	5882
 http://www.expreview.com/77016.html	7504
 <p>高通骁龙近日正式发布了骁龙888处理器，这是一个很”接地气“的名称，看样子它将成为明年上半年绝大多数旗舰手机的SoC。但是别忘了高通的8cx系列处理器，高通高管在Snapdragon峰会上发表了一些间接声明，谈到了苹果的ARM M1芯片在业界的影响。这位高管表示ARM M1芯片的诞生验证了他们与微软合作ARM Windows的正确性。</p><p style="text-align: center;"><img src="https://img.expreview.com/news/2020/12/05/g8.jpg" width="100%"/></p><blockq><p>我们很早就与微软进行合作，探寻ARM Windows的可行性，我们也确实这么做了，我们将继续与微软一起构建以及维护这个生态系统。苹果公司自主研发的M1芯片的诞生就是对我们这项业务的最大肯定。<br/></p></blockq><p>事实上，高通在这一领域的性能还不能让人满意，我们前几天看到了搭载M1芯片的Mac Mini与搭载高通SQ2的Surface Pro X的GeekBench跑分对比，M1芯片在有性能损失的情况下依旧大幅度领先高通，这其实让人有点尴尬的。不过这位高管对此表示高通的优势还是比较大的，比如5G基带技术、先进的ISP算法等，改善笔记本用户在续航，上网乃至视频聊天的体验。最后他还表示，未来在成本以及售价上，高通也更具备优势。</p><p>未来ARM处理器在笔记本上的前景肯定是光明的，这一点毋庸置疑。只不过ARM能走多远，走得远的人是苹果还是高通？这个答案恐怕只有经过漫长的市场检验才能说得清。</p>
 ➜由于硬件上的原因，Zen 3之前的AMD处理器均无法开启RX 6000系列的SAM功能
-http://www.expreview.com/77017.html	7940
+http://www.expreview.com/77017.html	7920
 <!-- haswell --><p style="text-align:left;">AMD新一代Radeon RX 6000系列显卡支持Smart Access
 Memory智能寻址显存技术可以让CPU一次性访问显卡的全部显存，大大提升了数据传输效率，消除了之前的传输瓶颈以提升性能，开启后RX
 6800系列显卡的性能可以提高1%到9%不等。但首发的时候AMD宣布只有锐龙5000系列处理器支持这项技术，但目前大多数使用Zen
 2架构处理器的玩家也想升级RX 6000系列显卡，他们希望AMD把SAM的支持下放到旧的锐龙处理器上，但目前来看这是不可能了，因为是硬件上的原因导致不支持。</p><p style="text-align:center;"><img src="https://img.expreview.com/news/2020/12/04/MSI_Smart_Access_Memory.jpg" border="0"/></p><p style="text-align:left;">估计有人认为Zen 2架构的锐龙3000系列处理器也是支持PCI-E
 4.0的，应该不存在硬件上的问题才对，其实这和PCI-E版本无关，大家看现在只有PCI-E 3.0的Intel 400系列主板也支持SAM就知道。根据<a target="_blank" href="https://www.techpowerup.com/275565/amd-ryzen-3000-and-older-zen-chips-dont-support-sam-due-to-hardware-limitation-intel-chips-since-haswell-support-it">Techpowerup</a>的报道，AMD
-SAM技术的本质是PCI-SIG开发的Resizable Base-Address Register功能，它能让处理器把显卡的所有现存视为单个可寻址区域。</p><p style="text-align:left;">问题在于AMD只有Zen
+SAM技术的本质是PCI-SIG开发的Resizable Base-Address Register功能，它能让处理器把显卡的所有显存视为单个可寻址区域。</p><p style="text-align:left;">问题在于AMD只有Zen
 3架构的锐龙5000系列处理器的PCI-E控制器才导入了全速率_pdep_u32/64的PCI-E物理层功能，这是执行Resizable
 Base-Address Register所必须的。</p><p style="text-align:left;">有趣的是Intel在Haswell架构处理器以来一直支持此功能，也就是说只要主板厂商肯提供BIOS支持，自2014年以来的Intel平台都可以开启AMD RX
 6000系列显卡的SAM功能，也就是Intel 8系列主板及以后的主板都支持，当然由于那些年代的主板都EOL了，哪些主板会提供新BIOS支持完全是看主板厂心情。</p><p style="text-align: left;">此外由于这是一项PCI-SIG的功能，所以NVIDIA要用也是没啥问题的，其实NVIDIA也在开发类似的功能，计划在目前某些GPU上增加该功能的支持。</p>
