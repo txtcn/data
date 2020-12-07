@@ -1,0 +1,59 @@
+➜搞懂「通用图灵机」的第一站——康托尔的「无限乐园」  │《电脑简史》数位时代（十二）
+https://pansci.asia/archives/201903	3600
+<blockquote class="wp-block-quote"><p>本文为系列文章，上一篇请见<strong>：</strong><a href="https://pansci.asia/archives/194219">现代电脑从此展开——冯纽曼与冯纽曼架构 │《电脑简史》数位时代（十一）</a></p></blockquote>
+<h2>数学能不能判定？图灵机的源起</h2>
+<p>在美国那些电脑先驱着手设计电脑之前，英国剑桥大学有位研究所新生已经发表论文，率先指出通用型电脑的可能性。这位学生就是后来有「电脑之父」、「人工智慧之父」等美誉，还在二战期间发明电脑破解德军密码的天才——图灵。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="461" height="628" src="https://pansci.asia/wp-content/uploads/2020/12/Alan_Turing_Aged_16-461x628.jpg" alt="" class="wp-image-201908" srcset="https://pansci.asia/wp-content/uploads/2020/12/Alan_Turing_Aged_16-461x628.jpg 461w, https://pansci.asia/wp-content/uploads/2020/12/Alan_Turing_Aged_16-375x510.jpg 375w, https://pansci.asia/wp-content/uploads/2020/12/Alan_Turing_Aged_16-105x143.jpg 105w, https://pansci.asia/wp-content/uploads/2020/12/Alan_Turing_Aged_16.jpg 675w" sizes="(max-width: 461px) 100vw, 461px" /><figcaption>38 岁的图灵。图：<a href="https://zh.wikipedia.org/wiki/%E8%89%BE%E4%BC%A6%C2%B7%E5%9B%BE%E7%81%B5#/media/File:Alan_Turing_Aged_16.jpg">Wikipedia</a></figcaption></figure></div>
+<p>图灵撰写那篇论文的初衷极为特殊，与实际计算毫无关联。之前介绍过的那些电脑先驱，若不是因为在就学期间经历计算之苦，就是工作上遇到瓶颈，才会一头栽入计算机的研究，希望透过机械化与自动化让计算更快速、更准确。但图灵都没遇到这些状况，他也没想要解决实务上的技术问题。事实上，他的论文根本无关乎计算，而是要回答一个极为抽象的大哉问：数学是否可以判定？</p>
+<p>什麼叫可以判定？这与计算机有什麼关係？要说清楚这来龙去脉，也为了搞懂图灵所设想出来的通用图灵机是什麼，得先探究另一个数学问题——「无限」。</p><div class="pansc-content"></script>
+<!-- leaderboard -->
+<ins class="adsbygoogle"
+style="display:inline-block;width:300px;height:250px"
+data-ad-client="ca-pub-4485239425924787"
+data-ad-slot="泛科学\/MW_300x250_内文文中_泛科学"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="495" height="330" src="https://pansci.asia/wp-content/uploads/2020/12/495px-Infinite.svg_.png" alt="" class="wp-image-201904" srcset="https://pansci.asia/wp-content/uploads/2020/12/495px-Infinite.svg_.png 495w, https://pansci.asia/wp-content/uploads/2020/12/495px-Infinite.svg_-215x143.png 215w" sizes="(max-width: 495px) 100vw, 495px" /><figcaption>象徵无限的符号。图：<a href="https://en.wikipedia.org/wiki/Infinity#/media/File:Infinite.svg">Wikipedia</a></figcaption></figure></div>
+<h2>无限是什麼？康托尔挑战数学界千年共识</h2>
+<p>从亚里斯多德以降，无限向来被视为一种潜无限 (potential infinity)，是进行中的未完成状态，不能当成实体看待，更不能比较大小，否则就会出现矛盾。</p>
+<p>例如伽利略便曾举出一个悖论：自然数 (1、2、3、……) 与平方数 (1、4、9、……) 哪个比较多？照理说自然数当然远比平方数还多，可是如果用一个萝蔔一个坑来想的话，每个自然数都有个平方数与之对应 (1🡪1<sup>2</sup>、2🡪2<sup>2</sup>、3🡪3<sup>2</sup>、……)，表示有多少自然数，就有多少平方数，两者一样多，这不就前后矛盾了吗？因此伽利略主张等于、大于、小于这些关係不能应用于无限。数学王子高斯也严正表示：「<em>我反对将无限量看成真实的实体来运用，这在数学之中是永远不被允许的。无限只是一种说法而已。</em>」这句话可以说代表了所有数学家的共同看法。</p>
+<p>没想到 1874 年，不到 30 岁的德国数学家康托尔 (Georg Cantor) 竟然跳出来说：不对，无限大可以当成实体做比较，而且可区分大小，例如实数的集合就比自然数的集合大！</p>
+<p>康托尔当然有所本才敢公然挑战数学界长久以来的信念，不过他所提出的证明是用集合论的方法，不好解释，我们改用他后来在 1891 年提出的「<strong>对角线法</strong>」来做说明。这不只是因为这个方法更简洁易懂，更因为它影响深远，启发图灵解决了判定问题，也才诞生出极具开创意义的「通用图灵机」。</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="465" height="628" src="https://pansci.asia/wp-content/uploads/2020/12/Georg_Cantor_Portrat-465x628.jpg" alt="" class="wp-image-201906" srcset="https://pansci.asia/wp-content/uploads/2020/12/Georg_Cantor_Portrat-465x628.jpg 465w, https://pansci.asia/wp-content/uploads/2020/12/Georg_Cantor_Portrat-377x510.jpg 377w, https://pansci.asia/wp-content/uploads/2020/12/Georg_Cantor_Portrat-106x143.jpg 106w, https://pansci.asia/wp-content/uploads/2020/12/Georg_Cantor_Portrat.jpg 1184w" sizes="(max-width: 465px) 100vw, 465px" /><figcaption>德国数学家康托尔 (Georg Cantor，1845-1918)。图：<a href="https://upload.wikimedia.org/wikipedia/commons/0/0e/Georg_Cantor_%28Portr%C3%A4t%29.jpg">Wikipedia</a></figcaption></figure></div>
+<h2>骗肖ㄟ，有理数和自然数一样多？</h2>
+<p>首先让我们重温一下怎麼比较集合的大小。基本上只要集合所含的元素一样多，它们就是一样大，例如A={1,2,3}，B={2,4,6}，两者的元素都是 3 个，所以 A 与 B 大小相等。问题是无限数列没有止尽，要怎麼数有几个？没关係，同样用一个萝蔔一个坑的概念，只要两个集合的元素彼此一一对应，就代表这两个集合大小相等。所以按照这个定义，伽利略悖论就解决了：自然数的集合与平方数的集合一样大。</p>
+<p>那麼自然数与有理数呢？可以用分数表示的数就是有理数，而光在 0 和 1 之间就有无限个分数，当然是有理数远多于自然数啊！等等，且看康托尔怎麼巧妙地列出所有有理数：</p>
+<p>1/1</p>
+<p>1/2、2/1</p>
+<p>1/3、2/2、3/1</p>
+<p>1/4、2/3、3/2、4/1</p>
+<p>…………以此类推</p>
+<p>第一行是分子与分母相加为 2 的有理数，第二行是分子与分母相加为 3 的有理数，第三行相加为 4、第四行相加为 5，……以此类推，便可以列出全部的有理数，一个都不漏。然后我们再由上往下，一行一行的由左向右依序为每个有理数编号：1、2、3、4、……，如此一来，有理数不就与自然数一一对应了吗？所以有理数的集合与自然数的集合也是一样大。（如果要涵盖负的有理数，只要依样放在这个三角形列表的右半部就行了）</p>
+<p>到目前为止，我们看到自然数、平方数、有理数这些集合，虽然乍看明明大小不同，结果却证明无限是不分轩轾的。那麼同样是无限多的实数，凭什麼就比它们都来得大呢？</p>
+<h2>比无限大还大？康托尔祭出对角线法</h2>
+<p>实数除了有理数，还包括无理数，也就是无法用分数表示的数，例如 2、π、……等等，所以我们得用小数来列举实数。先来看 0 与 1 之间的所有实数，也就是纯小数。绝大部分的数字小数点后有无限多位数，所以没办法像有理数那样依序一一列举，不过没关係，我们就不按大小顺序而是任意列举，例如：</p>
+<ol><li>0.<span class="has-inline-color has-luminous-vivid-orange-color">5</span>41592653……</li><li>0.0<span class="has-inline-color has-luminous-vivid-orange-color">4</span>1719652……</li><li>0.86<span class="has-inline-color has-luminous-vivid-orange-color">2</span>235975……</li><li>0.640<span class="has-inline-color has-luminous-vivid-orange-color">1</span>94231……</li><li>0.2341<span class="has-inline-color has-luminous-vivid-orange-color">7</span>8276……</li></ol>
+<p>……</p>
+<p>反正我们姑且假设所有纯小数都在这张无限长的表格裡了，因此都有个自然数与它对应。现在对角线法要上场了。我们从第一行取小数点后第一个位数，第二行取第二位数，以此类推，可以得到一个小数：0.54217……。然后我们将每个位数都加上 1，会得到一个新的小数：0.65328……。</p>
+<p>这个新的小数很特别喔，因为它和每一行的数字都有一个位数不符，表示它绝对不在这张表裡面，也就是这个小数没被自然数对应到，前面假设所有纯小数都在这张表并不成立。</p>
+<p>你可能会说：那还不简单，再把这个新的小数加进去这张表就好啦。可是加了之后，我们仍然可以用刚刚的对角线法，又产生一个不在表中的新数字，因此永远有自然数对应不到的小数，足以证明小数的集合比自然数还要大。</p>
+<p>康托尔把自然数、有理数这类可列举的数称为「<strong>可数无限</strong>」，是最初级的无限，算是第 0 级。小数则是「<strong>不可数无限</strong>」，是第 1 级无限，比第 0 级无限还要大（註一）。就这样，长达两千年的普遍信念，一夕之间被康托尔彻底颠覆了，无限不再是无从比较的概念，而是可以明确区辨的实体。</p>
+<p>现在你知道什麼是对角线法，已经可以直接到下一站，看看图灵如何构思出计算机。不过康托尔还有许多令人惊奇的把戏，何不继续往下一探究竟，看看自己有多少错误的迷思？</p>
+<h2>无限的无限的无限……——幂集合的威力</h2>
+<p>我们已经知道无限有分等级，而纯小数的无限等级比自然数或有理数还大。那有比纯小数更大的无限吗？例如 0 到 100 之间的实数？既然实数属于特殊的不可数无限，不能用前面证明有理数与自然数一样多的列举对应方式，那麼范围更大的实数是不是无限等级就比较大？&nbsp;</p>
+<p>直接宣布答案：不，都一样大。即使是从负无限大到正无限大，涵盖所有实数的集合仍然与 0 与 1 之间的纯小数一样大。怎麼证明？如下图，我们画一个直径为 1 的半圆，在它下方画一条代表往两端无限延伸的直线。从这条直线上的任一点画一条线与圆心相连，会与半圆相交于一点。这个点对应到直线上的位置一定会落在 0 与 1 之间，表示任一实数都会有一个纯小数与之对应，所以所有实数的集合与纯小数的集合一样大。</p>
+<figure class="wp-block-image"><img src="https://lh3.googleusercontent.com/kHGS6cOgiGzyjUY_9yt1-rHSMLioWgXI9P_gpk0lHw5NNa6s_wM2yQW5mqoy9SnGJay3QU6dPlpUvuSl-v26oSlqL8Qpy1OCqV7qGlvsn-59zA6Hy9Adi0BH26EzBkE8BtpyNfMsOWF2n1MJkw" alt=""/></figure>
+<p>讲到这裡，你大概会以为无限就分两种：自然数、有理数这类可数无限属于第 0 级无限，小数、实数这类不可数无限属于第 1 级无限。往上不会有更大的无限，毕竟实数都已经涵盖所有数字了。没想到康托尔就像魔术师从空无一物的帽子变出兔子般，竟然端出了比第 1 级无限更大的无限：<strong>幂集合</strong>。</p>
+<p>幂是次方的意思。一个包含 n 个元素的集合，它的子集合个数为 2<sup>n</sup>，把这些子集合当成元素全部集合在一起，就成为原来那个集合的幂集合。例如集合 A={1,2,3}，那麼 A 的幂集合就是由空集合、{1}、{2}、{3}、{1,2}、{1,3}、{2,3}、{1,2,3}，这 8 个集合为元素所构成的集合。</p>
+<p>康托尔于 1891 年证明无限集合的幂集合是更大的无限（註二），例如自然数的集合是第 0 级无限，它的幂集合就是第 1 级无限；同理，实数的幂集合则是第 2 级无限。还没完喔，实数的幂集合又可以组成更大的幂集合（就像上面举例的 A 集合，它的幂集合的幂集合就有 2<sup>8</sup> =256 个元素），而诞生出第 3 级无限。</p>
+<p>你会想这样不是没完没了吗？没错，新的幂集合不断衍生，无限的等级也越来越大，永无止尽。</p>
+<h2>康托尔掀起巨浪，自己却反遭吞噬</h2>
+<p>原本一片浑沌的无限，经康托尔大刀一挥，不但有大小之分，而且宛如侏儸纪公园裡的恐龙，一隻比一隻巨大，更可怕的是完全没有极限。不过康托尔革命性的创见并未获得当时的主流认同，尤其他的老师公开严厉批判，不但造成康托尔谋求教职不顺，更重创他的心灵。</p>
+<p>1884 年开始，康托尔数度精神崩溃住院治疗。出院后他曾一度放弃数学，转而研究历史与神学，但后来还是「虽千万人吾往矣」，继续打破无限的迷思，发明出影响深远的对角线法。1900 年代初期，康托尔的研究成果终于逐渐获得肯定，无奈 1917 年他最后一次进入疗养院时，德国因为一次世界大战战情吃紧，实施食物配给。康托尔因此营养不良而健康恶化，隔年就在院内过世，享年73岁。</p>
+<p>好了，无限乐园的导览到此告一段落，下一章我们就要介绍图灵。他的悲惨命运不下于康托尔，也是做出了无与伦比的贡献，最后却以悲剧结束一生。</p>
+<p>註一：康托尔相信并不存在大小介于第 0 级与第 1 级之间的无限。但这至今仍无法证明，因此称为「连续统假设」。</p>
+<p>註二：康托尔就是为此而发明对角线法。证明方式与前面证明纯小数比自然数多的做法类似，先假设幂集合可以与原来的集合完全对应，再证明幂集合中永远有对应不到的元素，所以幂集合的无限等级又大一级。</p>
+<p style="text-align: center;"><a href="https://taai2020.github.io/"><img class="aligncenter wp-image-197601 size-large" src="http://pansci.asia/wp-content/uploads/2020/09/078c71828b33a297fb55f5603f8e2ef4-1-560x292.jpg" alt="" width="560" height="292" /></a></p>
+<p style="text-align: center;"><a href="https://donate.pansci.asia/"><img class="wp-image-192158 size-large" src="http://pansci.asia/wp-content/uploads/2020/09/fb378e5ba748e7db9c5152a1a663f573-560x293.jpg" alt="" width="560" height="293" /></a></p>
+<p style="text-align: center;"><a href="https://donate.pansci.asia/" target="_blank" rel="noopener noreferrer">斗内泛科学，支持好科学！</a></p>
