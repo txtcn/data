@@ -22,3 +22,12 @@ https://www.solidot.org/story?sid=66296	40372
 ➜国际空间站将迎来第二艘 Dragon 飞船
 https://www.solidot.org/story?sid=66297	48203
 SpaceX 周日在佛罗里达的肯尼迪太空中心<a href="https://www.nasa.gov/press-release/nasa-science-new-airlock-heads-to-space-station-on-spacex-cargo-spacecraft" target="_blank">发射了</a>货运飞船 Cargo Dragon，执行 CRS-21 空间站补给任务，为空间站送去约三吨重的食物、水、科学仪器，以及新的气闸等物质。新的飞船被称为 Cargo Dragon 2，是载人飞船 Crew Dragon 的修改版本，主要是移除了座位、驾驶控制、生命支持系统和紧急逃生系统。相比旧的货运飞船，新版本能更快重复飞行，能自动对接空间站，不再需要空间站用机械臂抓住飞船。这次任务使用的火箭 Falcon 9 其第一级已经<a href="https://arstechnica.com/science/2020/12/spacexs-new-cargo-spacecraft-may-make-its-debut-on-saturday/">使用了三次</a>。<p>
+➜RMS 在 EmacsConf 2020 上回答提问
+https://www.solidot.org/story?sid=66298	51048
+67 岁的 Richard Stallman（RMS）出席了 EmacsConf 2020 虚拟大会，<a href="https://emacsconf.org/2020/talks/39/">发表了演讲</a>并回答了观众的提问。RMS 说他大部分时间使用 Emacs，偶尔用一下 libre office 和媒体播放器，偶尔还会用 SSH 连到运行 Emacs 的机器。他阅读了很多 PDF，用 <a href="http://xournal.sourceforge.net/" target="_blank">Xournal</a> 给PDF 做注解。对于 Emacs 的未来，RMS 说他看不见未来，但根据过去的经验未来将会富有挑战性。有观众说假设他被巴士撞了不得不离开，对于项目的未来他留下什么建议？他说，捍卫自由维持强大的社区，如果要在吸引更多开发者和捍卫自由做选择，选择后者，“小心守护你的灵魂”。他的用 GNU/Linux 发行版是 <a href="https://trisquel.info/" target="_blank">Trisquel</a>，不用 Emacs 的邪恶模式（Evil 是 Vi 扩展层）或 Vi(m)。<p>
+➜Chrome 的新缓存分区系统影响 Google Fonts 性能
+https://www.solidot.org/story?sid=66299	51947
+10 月份释出的 Chrome 86 改变了缓存系统，引入了缓存分区去储存不同网站的缓存，防止利用缓存共享资源的攻击方法。但新的缓存系统影响到了设计使用缓存的 Web 服务如 Google Fonts。Google Fonts 被数百万网站广泛使用，它允许网站使用一行代码加载托管在  Google 服务器里的任意字体。当字体下载到缓存之后，用户无需访问每个网站重新下载一遍字体。但新的缓存分区系统事实上<a href="https://wicki.io/posts/2020-11-goodbye-google-fonts/" target="_blank">让 Google Fonts 变得无用</a>，因为新系统强迫用户访问一个网站后需要重新下载一遍字体，网站在自己的服务器上托管字体将比 Google 托管更高效。<p>
+➜现代数学发源于一座已经消失的伊斯兰图书馆
+https://www.solidot.org/story?sid=66300	54714
+几个世纪前，着名的伊斯兰图书馆 The House of Wisdom <a href="https://www.bbc.com/future/article/20201204-lost-islamic-library-maths" target="_blank">将阿拉伯数字带给了全世界</a>。虽然这座古老的图书馆没有留下任何痕迹，但它掀起的数学革命彻底改变了我们的世界。The House of Wisdom 最早是作为哈里发 Harun Al-Rashid 的私人收藏而在 8 世纪后期成立的，在大约 30 年后成为了一座公共学院，将世界各地的科学家吸引到巴格达。图书馆的规模不下于今天的大英图书馆或巴黎国家图书馆，它成为了一个人文和科学研究中心。它是在 1258 年蒙古对巴格达的围攻中毁灭的，传说中丢弃到河流中的手稿将水染成了黑色。但 The House of Wisdom 发展出的阿拉伯数字最终被全世界所采用。在欧洲文艺复兴前，Leonardo da Pisa 曾是欧洲数学的代名词，他在死后被尊称为斐波那契。斐波那契于 1170 年出生于意大利比萨，在他 20 多岁时去了中东，回到意大利之后写下了《计算之数（Liber Abbaci）》，这是最早描述印度阿拉伯数字的数学作品之一。 <p>
