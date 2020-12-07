@@ -32,8 +32,8 @@ data-ad-slot="泛科学\/MW_300x250_内文文中_泛科学"></ins>
 <p>第一行是分子与分母相加为 2 的有理数，第二行是分子与分母相加为 3 的有理数，第三行相加为 4、第四行相加为 5，……以此类推，便可以列出全部的有理数，一个都不漏。然后我们再由上往下，一行一行的由左向右依序为每个有理数编号：1、2、3、4、……，如此一来，有理数不就与自然数一一对应了吗？所以有理数的集合与自然数的集合也是一样大。（如果要涵盖负的有理数，只要依样放在这个三角形列表的右半部就行了）</p>
 <p>到目前为止，我们看到自然数、平方数、有理数这些集合，虽然乍看明明大小不同，结果却证明无限是不分轩轾的。那麼同样是无限多的实数，凭什麼就比它们都来得大呢？</p>
 <h2>比无限大还大？康托尔祭出对角线法</h2>
-<p>实数除了有理数，还包括无理数，也就是无法用分数表示的数，例如根号 2、π、……等等，所以我们得用小数来列举实数。先来看 0 与 1 之间的所有实数，也就是纯小数。绝大部分的数字小数点后有无限多位数，所以没办法像有理数那样依序一一列举，不过没关係，我们就不按大小顺序而是任意列举，例如：</p>
-<ol><li>0.<span class="has-inline-color has-luminous-vivid-orange-color">5</span>41592653……</li><li>0.0<span class="has-inline-color has-luminous-vivid-orange-color">4</span>1719652……</li><li>0.86<span class="has-inline-color has-luminous-vivid-orange-color">2</span>235975……</li><li>0.640<span class="has-inline-color has-luminous-vivid-orange-color">1</span>94231……</li><li>0.2341<span class="has-inline-color has-luminous-vivid-orange-color">7</span>8276……</li></ol>
+<p>实数除了有理数，还包括无理数，也就是无法用分数表示的数，例如 \(\sqrt{2}\)、π、……等等，所以我们得用小数来列举实数。先来看 0 与 1 之间的所有实数，也就是纯小数。绝大部分的数字小数点后有无限多位数，所以没办法像有理数那样依序一一列举，不过没关係，我们就不按大小顺序而是任意列举，例如：</p>
+<ol><li>　0.<span class="has-inline-color has-luminous-vivid-orange-color">5</span>41592653……</li><li>　0.0<span class="has-inline-color has-luminous-vivid-orange-color">4</span>1719652……</li><li>　0.86<span class="has-inline-color has-luminous-vivid-orange-color">2</span>235975……</li><li>　0.640<span class="has-inline-color has-luminous-vivid-orange-color">1</span>94231……</li><li>　0.2341<span class="has-inline-color has-luminous-vivid-orange-color">7</span>8276……</li></ol>
 <p>……</p>
 <p>反正我们姑且假设所有纯小数都在这张无限长的表格裡了，因此都有个自然数与它对应。现在对角线法要上场了。我们从第一行取小数点后第一个位数，第二行取第二位数，以此类推，可以得到一个小数：0.54217……。然后我们将每个位数都加上 1，会得到一个新的小数：0.65328……。</p>
 <p>这个新的小数很特别喔，因为它和每一行的数字都有一个位数不符，表示它绝对不在这张表裡面，也就是这个小数没被自然数对应到，前面假设所有纯小数都在这张表并不成立。</p>
