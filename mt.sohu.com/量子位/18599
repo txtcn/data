@@ -1,0 +1,461 @@
+➜华为北大等联手打造的Transformer竟在CV领域超过了CNN：多项底层视觉任务达到SOTA
+http://www.sohu.com/a/436061335_610300	33549
+<p>杨净 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">提起Transformer，就会想到BERT、GPT-3。</p>
+<p style="text-align: left;">但其实，这个在各种自然语言处理任务中「混迹」，强大的无监督预训练模型，现在已经在「计算机视觉」的道路上越走越远了。</p>
+<p style="text-align: left;">这不最近，北京大学，联合华为诺亚方舟实验室、悉尼大学、鹏城实验室提出了一个图像处理Transformer <span>（IPT）</span>。 </p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201203/a98606a0edff4de58e3fa8b4f03d0ea4.png" /></p>
+<p style="text-align: left;">它是一种处理底层视觉任务（如降噪、超分、去雨）的全新预训练模型。</p>
+<p style="text-align: left;">为了最大化挖掘模型的能力，研究人员使用 ImageNet 数据集对模型进行预训练，结果经过预训练的模型只需要做一些简单微调即可适用于多种下游任务。</p>
+<p style="text-align: left;">最终，IPT模型在多个底层视觉任务中的表现都达到了SOTA的水准。</p>
+<p>图像处理Transformer </p>
+<p style="text-align: left;">从IPT的结构上看，它具备「多头多尾」结构，对于不同的视觉任务，只需要改变头和尾部的结构即可，多种任务共享同一个Transformer 模块。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201203/397de233dc62491fbe7e2c5182890d1c.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">我们知道Transformer在自然语言处理任务中，输入是单词序列。那么在图像处理任务中，输入输出的都是图像。 </p>
+<p style="text-align: left;">除了处理超分辨率任务之外，其他视觉任务图片输入输出的维度 <strong>相同</strong>。Transformer模块在这当中负责特征图处理的任务，头部和尾部的结构则负责图像维度匹配。 </p>
+<p style="text-align: left;">具体来说，IPT整体架构由四个部分组成：</p>
+<p style="text-align: left;"><strong>头部</strong>，采用多头架构，每个头由三个卷积层组成来分别处理每个任务。 </p>
+<p style="text-align: left;">这部分主要负责从输入的损坏图像中提取特征，比如低分辨率、需降噪的图像。</p>
+<p style="text-align: left;"><strong>Transformer 编码器</strong>，在特征输入Transformer模块前，将给定的特征分割成特征块，每个特征块被视作一个「word」。 </p>
+<p style="text-align: left;"><strong>Transformer 解码器</strong>，与编码器采用了同样的架构。将解码器的输出作为Transformer的输入。 </p>
+<p style="text-align: left;">为了适应多任务，研究人员还加入了一个可学习的任务编码。</p>
+<p style="text-align: left;">总的来说，这两部分用于恢复输入数据中的缺失信息。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201203/9acc0341450b48f7992f962e477d45c2.png" /></p>
+<p><strong>△</strong>去雨任务上的视觉效果 </p>
+<p style="text-align: left;"><strong>尾部</strong>，与头部结构相同，用于将特征映射到重建图像中。 </p>
+<p style="text-align: left;">随后，研究人员使用 <strong>ImageNet </strong>数据集对模型进行预训练。最终，该模型只需要在特定任务的数据集上进行 <strong>「微调」</strong>，即可在此任务上达到很好的效果。 </p>
+<p style="text-align: left;">在微调阶段，只有特定任务所对应的头尾结构以及 Transformer 模块被激活训练，与此任务无关的头尾模块会被暂时冻结。</p>
+<p>在多个底层视觉任务中达到SOTA </p>
+<p style="text-align: left;">IPT与HAN、RDN、RCDNet在超分辨率、降噪、去雨任务上的性能对比中，均取得了0.4到2.0dB不等的性能提升。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201203/0d99b2ee133f476592bcfc03e9ee5285.png" /></p>
+<p style="text-align: left;">具体到超分任务上，在 Set5、Set14、B100 以及 Urban100 四个数据集上的结果，IPT 模型在所有设定下均取得了最好的结果。 </p>
+<p style="text-align: left;">尤其是在 Urban100 数据集上，和当前最好的超分辨率算法相比，IPT 模型展现出了大幅度的优势。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201203/3cacc94eb3354660ad3271696efcb497.png" /></p>
+<p style="text-align: left;">而在降噪任务上，IPT也都表现出了类似的性能。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201203/80932c116da34d2b97a2ed97963b36e4.png" /></p>
+<p><strong>△</strong>降噪任务上的性能对比 </p>
+<p style="text-align: left;">从实验结果看到，Transformer在底层视觉任务上的表现似乎还不错，甚至超过了CNN的实力。</p>
+<p style="text-align: left;">想要了解更多论文细节的旁友，点击下方链接即可研读。欢迎与我们分享你的「读后感」哦～</p>
+<p style="text-align: left;"><span>论文链接：</span></p>
+<p><span>https://arxiv.org/abs/2012.00364</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>量子位年度智能商业大会启幕，大咖已就位！</strong></p>
+<p><span style="font-size: 16px;">12月16日，</span><strong><span style="font-size: 16px;">李开复</span></strong><span style="font-size: 16px;">博士、 <strong>尹浩</strong>院士、清华 <strong>唐杰</strong>教授，以及来自 <strong>小米</strong>、 <strong>美团</strong>、 <strong>爱奇艺</strong>、 <strong>小冰</strong>、 <strong>亚信</strong>、 <strong>浪潮</strong>、 <strong>容联</strong>、 <strong>澎思</strong>、 <strong>地平线</strong>、 <strong>G7</strong>等知名AI大厂的大咖嘉宾将齐聚MEET2021大会，期待关注AI的朋友报名参会、共探新形势下智能产业发展之路。 </span></p>
+<p><strong><span>▽</span></strong>早鸟票限时优惠，扫码锁定席位吧~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜睡眠不足，记忆力还有救吗？Nature：饿着
+http://www.sohu.com/a/436093040_610300	33549
+<p>萧箫 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p style="text-align: left;">大半夜复习饿了，想要大吃一顿然后接着复习？</p>
+<p style="text-align: left;">你的身体只会告诉你：想睡觉。</p>
+<p style="text-align: left;">事实上，这与意志力无关，而是你「进化」的结果——吃饱要睡觉，是为了更好地巩固记忆。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201203/409d8360858541da92c15b576b45add0.gif" /></p>
+<p style="text-align: left;">来自Nature的最新研究表明，即使不吃东西，在饥饿状态下也能形成记忆；但如果吃饱了，就 <strong>必须睡觉</strong>才能巩固记忆。 </p>
+<p style="text-align: left;">也就是说，只要吃了，就得睡上更多时间，否则记忆力就会变差。</p>
+<p style="text-align: left;">而「饥饿」，则是判断记忆是否需要用睡眠来巩固的“电路开关”。</p>
+<p style="text-align: left;">是不是听起来有点不敢相信？</p>
+<p style="text-align: left;">科学家们已经拿果蝇做了个实验，证明了这一结论的存在，一起来看看。</p>
+<p>果蝇：要是吃饱，就得睡好 </p>
+<p style="text-align: left;">通常认为，睡眠是巩固长期记忆的必要条件。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201203/77340f256d5848f9b40f3f3d7c7655dd.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: left;">然而研究者们发现，饥饿的 <strong>果蝇</strong>仍然可以巩固与食物有关的记忆，保存的记忆能力也与食物有关。 </p>
+<p style="text-align: left;">那么，在饥饿情况下，睡眠对于长期记忆是否可有可无？又或者说，在吃得饱的情况下，记忆会如何被巩固呢？</p>
+<p style="text-align: left;">第一项实验，以琼脂 <span>（果蝇不吃）</span>和蔗糖 <span>（果蝇的食物）</span>作为实验对照组，用来测试果蝇在饥饿和吃饱的情况下，形成记忆是否需要更多的睡眠时间。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201203/7e38be53ecc340ef9ebd699b70434862.png" /></p>
+<p style="text-align: left;">实验发现，果蝇在饥饿时，无论受不受训练 <span>（通过嗅觉反射训练，强制形成某种记忆）</span>，睡眠时间都没有明显变化。 </p>
+<p style="text-align: left;">但果蝇在吃饱之后，受训比未受训所需要的睡眠时间明显变多。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201203/61ad95edea0e48d49adb4456786b8ef5.png" /></p>
+<p style="text-align: left;">也就是说，吃饱了后，为了记忆某种东西，果蝇需要更多的时间来睡觉以加强记忆。这与我们的认知是无异的。</p>
+<p style="text-align: left;">但这也说明，在饥饿状态下，果蝇并不需要更多的睡眠时间来巩固记忆。</p>
+<p style="text-align: left;">接下来这项实验，则会在果蝇进行记忆、刚吃完东西后，剥夺它的睡眠时间，以测试吃饱了的果蝇，是否真的需要睡眠来加强记忆。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201203/e0641b9173db4e62bdeadcc1d410873b.png" /></p>
+<p style="text-align: left;">在P值＜0.01 <span>（统计学上P值越小，表明测试结果越可信）</span>的结果下，科学家们发现，吃饱的果蝇的确需要更多睡眠来形成记忆。 </p>
+<p style="text-align: left;">如上图所示，如果在训练 <span>（强制形成记忆）</span>后，立即对吃饱的果蝇进行6小时的睡眠剥夺，会 <strong>显着损伤它的长期记忆</strong>。 </p>
+<p style="text-align: left;">说人话，就是吃饱了不睡，记忆力衰退。</p>
+<p style="text-align: left;">相比之下，饿着肚子的果蝇，无论睡不睡，都不会对记忆产生太大的影响。 <span>（反正都已经饿着肚子，睡眠就显得没有那么重要了？）</span></p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201203/7b234068c6174dbfa1f74c72b6afcaa2.png" /></p>
+<p style="text-align: left;">那么，为什么在饥饿状态下，睡眠时间对果蝇的记忆效果没有影响？与之相反，吃饱却不睡觉的话，果蝇的记忆效果为何会大打折扣？</p>
+<p style="text-align: left;">科学家们探索了一通果蝇用来记忆的神经元，找到了答案。</p>
+<p>进食前后，记忆用的神经元不同 </p>
+<p style="text-align: left;">事实上，在饥饿和吃饱两种状态下，果蝇的记忆神经元活动大有不同。</p>
+<p style="text-align: left;">科学家们对几种有明显变化的物质采取了排除法，发现在饥饿状态下，神经元产生的信号 <span>（图中蓝色）</span>和在吃饱状态下，神经元产生的信号 <span>（图中红色）</span>，会对睡眠产生完全不同的影响。 </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201203/e848aadbe7134c53ad37941653183e63.png" /></p>
+<p style="text-align: left;">神经元产生的信号不同 <span>（R35B12、R26E01）</span>，对细胞的影响就会非常大。一旦吃饱，神经元就会产生“想睡觉”的信号。 </p>
+<p style="text-align: left;">但在饥饿状态下，神经元反而不会产生这种信号。</p>
+<p style="text-align: left;">科学家们进一步研究了果蝇的蘑菇体 <span>（昆虫脑部一个重要的中枢神经，对高级记忆等具有重要的调控作用）</span>。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201203/270e06da1595422aa9272c1201e47eea.png" /></p>
+<p style="text-align: left;">研究发现，在吃饱时，果蝇的记忆由蘑菇体前后α’/β’神经元介导，而饥饿时的记忆则由蘑菇体中间的α’/β’神经元介导。</p>
+<p style="text-align: left;">科学家们进一步剔除了果蝇体内负责参与性报偿的神经肽F <span>（Neuropeptide F）</span>，这种物质有点像是“奖赏行为的分子标记”，发现没有神经肽F的饥饿果蝇，也会表现出与睡眠有关的记忆。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201203/a3b6489eb11f43a4a4f0325d0ce45929.png" /></p>
+<p style="text-align: left;">研究者们推测，由于吃东西反而会导致分解代谢废物的积累，从而产生能量需求，触发睡眠需求、以及依赖睡眠的记忆巩固。 </p>
+<p style="text-align: left;">这种 <strong>睡眠依赖记忆</strong>所需要的神经回路，也会在记忆后促进睡眠，将睡眠和记忆结合起来。 </p>
+<blockquote>
+<p style="text-align: left;">所以记忆转换，也许 <strong>并不需要实际的营养摄入</strong>，甜味就足够了。 </p>
+</blockquote>
+<p style="text-align: left;">所以记忆转换，也许 <strong>并不需要实际的营养摄入</strong>，甜味就足够了。 </p>
+<p style="text-align: left;">睡眠时间与记忆力是否存在相关关系，还真得靠「饥饿」来决定。 <span></span></p>
+<p style="text-align: left;">听起来总觉得有点细思极恐……</p>
+<p style="text-align: left;">那么，你觉得这项研究还可以用在哪里呢？</p>
+<p>作者介绍 </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201203/3eed7c4136f74001a11d627194e83afd.png" /></p>
+<p style="text-align: left;">Nitin S. Chouhan，来自宾大，目前是一名博士后研究员，研究方向是生物体通过经验改变行为的能力。 </p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201203/2ef2359e876b4ed58abea543e240b361.png" /></p>
+<p style="text-align: left;">论文二作 Leslie C. Griffith，布兰戴斯大学的神经科学教授，主要的研究内容是行为生物化学。</p>
+<p style="text-align: left;">论文三作Paula Haynes，来自宾大，研究方向是果蝇与记忆电路之间的相互作用。共同三作Amita Sehgal，是来自宾大的神经科学教授。</p>
+<p style="text-align: left;">最后，附上论文链接。不过，读之前先吃饱睡一觉？ </p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>量子位年度智能商业大会启幕，大咖已就位！</strong></p>
+<p><span style="font-size: 16px;">12月16日，</span><strong><span style="font-size: 16px;">李开复</span></strong><span style="font-size: 16px;">博士、 <strong>尹浩</strong>院士、清华 <strong>唐杰</strong>教授，以及来自 <strong>小米</strong>、 <strong>美团</strong>、 <strong>爱奇艺</strong>、 <strong>小冰</strong>、 <strong>亚信</strong>、 <strong>浪潮</strong>、 <strong>容联</strong>、 <strong>澎思</strong>、 <strong>地平线</strong>、 <strong>G7</strong>等知名AI大厂的大咖嘉宾将齐聚MEET2021大会，期待关注AI的朋友报名参会、共探新形势下智能产业发展之路。 </span></p>
+<p><strong><span>▽</span></strong>早鸟票限时优惠，扫码锁定席位吧~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜骁龙888打开“新象限” ，专业相机和游戏机直呼不讲武德
+http://www.sohu.com/a/436099284_610300	33549
+<p>允中 假装发自 夏威夷 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p>高通骁龙888，它来了它来了。</p>
+<p>一如既往，作为地表最强芯片一年一度迭代，发布当晚就吸引了上百万中国网友“熬夜”打榜。</p>
+<p>发布后更是因为其性能、变革和充满东方神秘智慧的“骁龙888”命名，被进一步热议，甚至冲上各种热搜。</p>
+<p>你敢信吗？</p>
+<p>反正完整围观，全面接化发之后，我相信这些网友可不是乱看的。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201204/fd2f01e928214b2ba897f298a122fce9.jpeg" /></p>
+<p>一个个有备而来，骁龙888，新一代安卓旗舰争着第一批上车的最强旗舰芯片，决定着很多人手里的手机还香不香，也决定者下一步手机能干些什么…… </p>
+<p>当然，骁龙888确实也在性能、影像、游戏和AI等目前最受关注的终端能力上交出答卷。</p>
+<blockquote>
+<p>“你值得拥有一部搭载高通骁龙888 5G移动平台的旗舰智能手机。”</p>
+</blockquote>
+<p>“你值得拥有一部搭载高通骁龙888 5G移动平台的旗舰智能手机。”</p>
+<p>这句一次次在骁龙技术峰会上响起，简直洗脑。</p>
+<p>高通这次不是冲其他芯片而去，不是跟其他手机终端竞争，而是直接变革手机摄影和游戏体验，还有会让专业相机和游戏机眼红内味儿——没错，光带个骁龙888 5G的手机就行，All in One。</p>
+<p>不过真的行不行，一文看完，由你评价~</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201204/e153d1d90bde409fb741843a8640898c.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>骁龙888怎么样？ </p>
+<p>先宏观看 <strong>性能提升</strong>。 </p>
+<p><strong>5nm工艺制程</strong>，集成5G基带，搭载高通第三代调制解调器及射频系统——骁龙X60 5G调制解调器及射频系统。 </p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201204/0583dd68579a4237a2553315cf66f6f4.jpeg" /></p>
+<p><strong>CPU：</strong>搭载高通Kryo 680 CPU，整体性能提升高达25%，支持高达2.84GHz的主频，同时是 <strong>首个</strong>基于Arm Cortex-X1打造的商用CPU子系统。 </p>
+<p><strong>GPU：</strong>搭载高通Adreno 660 GPU，图形渲染速度较骁龙865提升达35%，实现了迄今为止最显着的性能提升。 </p>
+<p><span>（作用和效果，大招在游戏）</span></p>
+<p>此外，高通还强调，Kryo 680和Adreno 660能够提供持续稳定的高性能，又强又持久。</p>
+<p>接着展开，可以从连接、人工智能和安全，来审视骁龙888的具体性能。</p>
+<p><strong>连接</strong>，高通的立身之本能力，一个字就是 <strong>快</strong>。 </p>
+<p>集成式5G，第三代5G调制解调器及射频系统——骁龙X60支持5G Sub-6GHz载波聚合和毫米波，能够提供高达7.5Gbps商用网络速度——全球最快速度。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201204/26f5ec7dbeac4996a6cffd8fde5b8e60.gif" /></p>
+<p>虽然现在全球旅行不流行了（手动狗头），但骁龙888还支持全球5G多SIM卡功能，从而实现国际漫游，还能在一部手机上同时管理个人和工作号码。</p>
+<p>另外，快快快……还依靠 <strong>FastConnect 6900移动连接系统</strong>。 </p>
+<p>可以提供目前移动Wi-Fi业界最快的Wi-Fi 6速度（高达3.6Gbps），并且支持Wi-Fi 6E的全新6GHz频段。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201204/3f5eacb094a84c8bb88e51f879517117.gif" /></p>
+<p>还通过支持蓝牙5.2、蓝牙双天线、高通aptX 套件、广播音频和先进的调制及编码技术优化，能够提供清晰、可靠且响应迅速的全新蓝牙音频体验。</p>
+<p><strong>AI，则在整体架构上实现了大更新，本次骁龙888最易忽略的大亮点。</strong></p>
+<p><span>（为什么？后面“看疗效”时细讲）</span></p>
+<p>骁龙888，搭载了全新设计的 <strong>第六代高通AI引擎</strong>，核心是 <strong>高通Hexagon 780处理器</strong>。 </p>
+<p>光看“跑分”，每瓦特性能较骁龙865提升高达3倍，并实现每秒26万亿次运算（26 TOPS）的强大算力。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201204/4f64551377494d788dd9ca5cd6a06916.jpeg" /></p>
+<p>但骁龙888中，还有第二代高通传感器中枢集成的 <strong>专用低功耗AI处理器</strong>，能够利用情境感知，并结合来自5G、Wi-Fi和蓝牙等新增的数据源，有了收集和理解额外的数据流的能力。 </p>
+<p>而且这次高通还在AI开发上来了浓墨重彩的一笔，开放了全新的 <strong>高通AI引擎Direct软件</strong>。 </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201204/87a6c241626a4a7a9d318024da3966e0.jpeg" /></p>
+<p>通过这个软件解决方案，开发者有了直接访问骁龙硬件的途径，可以充分利用Hexagon 780处理器、Adreno GPU和高通Kryo CPU，意味着OEM厂商，如果有实力和想法，能做的可以更多了。 </p>
+<p>也难怪很多开发者盆友看到这里就high了，什么拍照影像、游戏体验大提升，对他们“如浮云”。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201204/3e108922bbbf4c75a54ebce828cd2735.gif" /></p>
+<p>与此同时， <strong>安全隐私</strong>方面的努力，在骁龙888上也展现得淋漓尽致。 </p>
+<p>两大新应用。</p>
+<p>第一， <strong>Type-1 Hypervisor</strong>首次被应用于骁龙移动平台，这是之前流行于台式机的应用，可以在各自独立的安全空间中运行多个操作系统。 </p>
+<p>有些手机厂商也在自己OS中应用过，所谓“系统分身”、“防老婆”功能，此之谓也。</p>
+<p style="text-align: center;"><img src="//p9.itc.cn/q_70/images03/20201204/5bf62ee1f09c4df19baa8d06ad6e05af.png" /></p>
+<p>但现在在骁龙888上，成为了标配，自然也会成为安卓旗舰的标配。 </p>
+<p>Hypervisor可以在智能手机上启用同一操作系统的多个实例，并可在它们之间即时切换，一个用于工作，一个用于个人生活，相互独立，应用程序和数据也都完全隔离。</p>
+<p>第二， <strong>照片隐身衣</strong>。由于AI在图像和视频虚构和造假方面已经登峰造极、真伪难辨，Deepfake之类的防不胜防，所以如果从拍照之时就穿件“隐身衣”，判别后期真假就容易多了。 </p>
+<p>高通提供的方法是源头“打码”认证原创，比如与Truepic合作，利用安全技术、Spectra ISP和高通无线边缘云服务，在摄像头拍摄的照片上制作加密印记。</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201204/9e6bd23fc6264fc9bc6e7ae992a812b8.jpeg" /></p>
+<p>加密印记可以保护像素、日期、时间、位置和深度图。 </p>
+<p>总之，从性能提升出发，连接、AI和安全，是参数上就可以窥见的变革。</p>
+<p>但对于骁龙888，更“偷懒”的围观方式，是直接看“疗效”。</p>
+<p>这也是大部分网友——绝大多数手机用户最为期待的提升。</p>
+<p>影像、游戏和AI应用，一个都不能少。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201204/ed023f723d0d453db9c33cf6e76ad60f.gif" /></p>
+<p>骁龙888疗效如何？ </p>
+<p>首先， <strong>影像</strong>。 </p>
+<p>一句话观感： <strong>能</strong>专业相机之 <strong>所能</strong>，还要 <strong>能</strong>专业相机 <strong>所不能</strong>。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201204/70c638844b734e7ba06dd9f652a4d6bd.gif" /></p>
+<p>轻松一按，1秒内就可以捕获120帧，且每帧都是1200万像素。</p>
+<p style="text-align: center;"><img src="//p1.itc.cn/q_70/images03/20201204/e83b870b8bfb408daaf13715ac64a475.gif" /></p>
+<p>4K HDR视频实时达成，而且是一边录制4K HDR视频一边拍摄6400万像素照片。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201204/03b6a8f123bf45748622ea18838ec5d1.gif" /></p>
+<p>还支持捕捉高达2亿像素的照片、8K视频拍摄、不限时慢动作视频拍摄……</p>
+<p>逆光、实时视频会议背景优化，画面更为丰富清晰。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201204/cf37c07bc1c5445aadcc2d7942aca026.gif" /></p>
+<p>暗光场景，更丰富的细节和更少的伪影。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201204/f8288111bd8a47e4874150a9a849e482.gif" /></p>
+<p>林林总总，更像是一场相机技术公司的发布会。</p>
+<p>但再专业的单反，不可能“傻瓜级”使用，也不能前置和后置摄像头之间灵活切换，或者拍完即分享到社交网络，更缺乏AI加持下的“辅助成片”，以及需要背着相机和沉重的镜头。</p>
+<p>那一部高通骁龙888的智能手机，又是凭何实现上述疗效？</p>
+<p>这次是硬件和软件双剑合璧。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201204/bda5781063064f5e8c83e65a9596a369.jpeg" /></p>
+<p>硬件， <strong>Qualcomm Spectra 580 ISP</strong>，比上一代ISP的处理速度快35%。 </p>
+<p>而且这次一上就是3个！</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201204/549cf1a05b534d69a9bccff30f777287.gif" /></p>
+<p>于是结果上，3 ISP让骁龙888能够以 <strong>每秒处理27亿像素</strong>的速度，支持三个摄像头的并发拍摄——而这种十亿像素级的处理速度，正是拍出专业质量图像的关键。 </p>
+<p>用户还可以通过120fps捕捉超高速运动状态的高分辨率图像，或同时拍摄三个4K HDR视频。</p>
+<p>软件，主要指 <strong>计算HDR</strong>和 <strong>AI技术</strong>加持。 </p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201204/776f0bb285b642299c04bc2e8de7d6e5.jpeg" /></p>
+<p>所谓计算HDR，是指ISP把来自图像传感器的多重曝光组合在一起，使最终输出的图像获得巨大动态范围的过程。 </p>
+<p>而配合3 ISP，三重并行处理使每一次曝光，都能在一帧时间内同时拍摄并合成，实现单帧逐行HDR。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201204/a6aedde34f9e4ad8866638e946645a3e.gif" /></p>
+<p>最后用户得到的就是全新的4K HDR影像视频拍摄体验，能够实现色彩、对比度和画面细节方面的显着提升。 </p>
+<p>而AI技术，这次展现为 <strong>3A算法</strong>——自动对焦、自动曝光和自动白平衡。 </p>
+<p>骁龙888里是高通第10代3A算法，也是第一代AI加持的3A算法，使得其拍摄和成像水平上到了一个全新台阶。</p>
+<p>这种近乎没光线的场景，还能拍出这样细节的照片，就是证明：</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201204/396293858db946bfbc666cf78a43168c.gif" /></p>
+<p>怎么样，这个“专业相机”，可不可？</p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201204/b5e4d75b2d9244aa8f5dc3265f100918.png" /></p>
+<p>其次，需要专门谈谈 <strong>游戏</strong>。 </p>
+<p>不知道你关不关心手机的游戏体验，但全世界有 <strong>27亿</strong>的用户翘首期盼。 </p>
+<p>没错，援引骁龙技术峰会上的数据，全世界有27亿的手机游戏用户。</p>
+<p>所以游戏的体验还能怎么提升？</p>
+<p>骁龙888的解法是支持完整的 <strong>高通Snapdragon Elite Gaming特性</strong>。 </p>
+<p>既有首次在移动端搭载的可变分辨率渲染（Variable Rate Shading），使游戏渲染性能提升了 <strong>30%</strong>，并提升能效。 </p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201204/8261e0e06ce44e8f897d167e6a996d73.gif" /></p>
+<p>值得一提的是，可变分辨率渲染之前只出现在高端PC和旗舰级专业游戏机上。</p>
+<p>还有高通Game Quick Touch将触控响应速度提升20%，减少操作渣的借口。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201204/07dae34fd1fa4a7dae02c943df9e085a.gif" /></p>
+<p>另外，利用5G和Wi-Fi 6支持的高速率、低时延，多人游戏可以玩得更爽。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201204/31e2991722084c2e87a1c0662898b75d.gif" /></p>
+<p>而文章开始讲到的GPU性能提升，自然对游戏玩家是福音中的福音。</p>
+<p>可变分辨率渲染首次在移动端实现，幕后功臣就是高通全新移动端GPU——Adreno 660。</p>
+<p>当渲染每一帧时，GPU为每个像素执行一个着色程序来计算它的颜色。这意味着360万像素被着色。可变分辨率渲染允许开发人员指定着色器程序以2个或4个像素为一组仅运行一次，然后将这些颜色结果重新复用于周围的像素着色。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201204/eb263ec88b924426939c13046e51325f.jpeg" /></p>
+<p>通过可变分辨率渲染，可以仅使用140万像素对整个帧画面进行着色。这将会使整体着色的总像素数减少40%，从而大大降低GPU工作负载。 </p>
+<p>这一新特性，可以让开发者在不牺牲视觉逼真度的情况下，创造更具有沉浸感的游戏体验。</p>
+<p>此外，GPU工作负载的减少也能降低功耗，用户玩家也能开黑的时间更长……</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201204/32ed5eb140474a9e9e0b999dc285bf57.gif" /></p>
+<p>最后， <strong>人工智能</strong>。 </p>
+<p>之前移动端的AI能力，其实有点吃亏，都是赋能型能力。</p>
+<p>比如上面“专业相机”介绍的效果，以及在游戏中的实时渲染，也有AI加持。</p>
+<p>但这次骁龙888中，AI能力不仅更强，而且日渐 <strong>统筹全局</strong>。 </p>
+<p>为你智能优化具体场景下的收声降噪：</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201204/cc2ef6f8294a45358fc11fc98ae42196.gif" /></p>
+<p>以及综合手机上的传感器数据，在没有信号的多层停车场，也能准确追踪停车位置——实时构建了地图路线。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201204/2a20aa1bd6ed4954ad2d8e5ef7c5804d.gif" /></p>
+<p>甚至这一次，内置的AI助手真的可以7×24小时随时待命——无需唤起，减少算法负载。</p>
+<p>实现上述一切，高通骁龙888主要依仗 <strong>Hexagon 780处理器</strong>，它是高通第六代AI引擎的关键所在。 </p>
+<p>以更高性能但不增加功耗为目标，高通对Hexagon进行了架构重塑。</p>
+<p>不同AI加速器——标量、张量和向量加速器，现已融合在一起，可作为一个单元一起工作。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201204/5d20fbb2df5549cebe947cb8b90e7fad.jpeg" /></p>
+<p>最重要的是，高通为这些加速器增加了一层共享内存，其大小是前代产品的16倍。</p>
+<p>增加的内存还允许许多神经网络在Hexagon内部运行，无需利用外部内存。</p>
+<p>与骁龙865相比，可将响应时间降低到纳秒，每瓦特性能提高至3倍以上。</p>
+<p>所以实时融合不同传感器数据流，4K视频里实时无缝换人……都得益于Hexagon 780处理器的全新架构设计。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201204/ecd0e910ca554e90855f196709b00e0e.jpeg" /></p>
+<p>当然，在骁龙888中，还专门有了一颗专用的始终开启、低功耗的 <strong>AI处理器</strong>，其AI性能有了5倍之高的提升。 </p>
+<p>最后整体上，骁龙888实现了每秒26万亿次运算，上一代骁龙865只有15TOPS。</p>
+<p>在基准测试数据中，基于行业标准的AI模型，骁龙888的峰值性能由此遥遥领先。</p>
+<p>也是骁龙有史以来性能上的最大飞跃，所以在高通中国的线下活动上，最吸引眼球的一句话是 <strong>有龙则灵</strong>，在某种程度而言，灵，几乎指向的就是AI引擎推动的巨大进步。 </p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201204/cddd7a20eb3d40a1940ab3c560b5fb44.gif" /></p>
+<p>而且更准确来说，是 <strong>有灵则龙</strong>。 </p>
+<p>高通第六代AI引擎的价值，可不止于移动端，不止于骁龙平台。</p>
+<p>凭借第六代AI引擎，高通正式推出了 <strong>AI引擎Direct</strong>。 </p>
+<p>这是AI软件方面，带来新的、面向开发者的解决方案。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201204/d21cb75b71f144e7b0c60d1599482456.jpeg" /></p>
+<p>刚才也说了，这是一个直接可以访问硬件的软件途径。OEM公司工程师可以更灵活打造自己的AI解决方案。 </p>
+<p>但不止于此，高通这次扩展了用于AI加速器的开源编译器 <strong>TVM</strong>，支持Hexagon。 </p>
+<p>今后，可以用几行简短的Python代码编写自定义算子，为Hexagon编译，并直接插入高通AI引擎Direct框架。</p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201204/a5fda30fc76e4449a5c7b40b5f18c700.gif" /></p>
+<p>去年首次公布的AI模型增效工具包，这次也有了 <strong>重要更新</strong>。 </p>
+<p>一方面，增加了更多支持以实现更好的网络量化，通过使用诸如Adaround等训练后量化技术以及带有范围学习的量化感知训练，实现极少或几乎没有的精度损失。</p>
+<p>另一方面，还增加了对循环神经网络（RNN）和长短时记忆神经网络（LSTM）的支持。随着对混合精度运算支持的增加，开发者将能够在保持准确性的同时，最大限度地提高功耗与性能的平衡。</p>
+<p>想必这个AI模型增效工具包霸榜GitHub趋势热榜，只是时间问题。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201204/52703a5204a44ca5ad75b21e0fcfe10a.png" /></p>
+<p>在发布会现场，高通也展示了一些具体合作应用。 </p>
+<p>比如利用AI模型增效工具包，有开发者打造了手机拍照就能扫描皮肤健康的应用；</p>
+<p>所以如果你是抖音、快手或其他可以利用这一AI模型增效工具包的工程师，看到这里就赶紧移步GitHub吧。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201204/911b2b5798b546a4a528f4362874bc1a.gif" /></p>
+<p>总之，骁龙888实现了一次性能上的极大飞跃，而其中最具长远潜力和价值，可以说来自第六代AI引擎及其展现的AI能力。 </p>
+<p><strong>如果是影像和游戏，会是智能手机基础象限，那AI才是打开和重新定义智能终端新象限的钥匙。</strong></p>
+<p>AI在骁龙888中的功力，与5G一起，把连接、数据收集和使用发挥到了当前极致，手机与人的交互，甚至发生了质变。</p>
+<p>之前是人找手机、人用手机。</p>
+<p>现在开始，手机在主动找人，通过AI综合各方传感器的数据，主动得出最佳决策依据。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201204/aa3ed4c49c5742888215ddd0e02b6cd6.gif" /></p>
+<p>并且这种变化，也不会止于手机——毕竟手机如此具有代表性，是因为对于人来说如此高频。 </p>
+<p>那在其他相对低频的产业和领域里，如PC、汽车、工业、城市，甚至下一代计算平台XR等等，路线和演进模式，应该也会类似。</p>
+<p>这才是为啥说AI在骁龙888发布里如此易于忽略，却又格外重要的真正原因——即便它并不如拍照和游戏那样直观。</p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201204/1fdac5365e4b41bdb2564529a9d56cc6.jpeg" /></p>
+<p>如何评价骁龙888？ </p>
+<p>以上，就是2020高通骁龙技术峰会的核心内容。</p>
+<p>作为移动领域最具技术前瞻性和成果集大成展现的活动，这是每年窥见移动、通信、芯片和AI等前沿技术进展的最佳方式之一，见微知着，见骁龙而知创新最前沿。</p>
+<p>所以在文章最后，也是时候对骁龙888作一个言简意赅的总结。</p>
+<p>第一，如果你是手机，特别是安卓手机用户，影像（拍照+视频）和游戏方面的提升，确实巨大，其确实让手机有了与专业相机和专业游戏机相提并论的底气。</p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201204/82c5ee8c0e6e433789899e7336dd10cc.gif" /></p>
+<p>第二，AI性能和方向上的提升，易于忽略却反而格外重要，也是高通在AI基础科研和技术领域积淀多年后，厚积薄发的印证，一些新应用和新能力，正在打开智能终端和智能产业的新象限。 </p>
+<p>比如全天候都待命的AI，可能在健康安全等领域，就会有新应用爆发。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201204/e3ef7eff34804c798adf629ad31b2a35.jpeg" /></p>
+<p>第三，数据和隐私安全，被提到了新高度，包括如何打击应对AI造假，被集成到了基础和底层硬件的程度，对于用户和产业来说，无疑都是好事。 </p>
+<p>最后，绕不过去的 <strong>888</strong>命名。按照过往传统，这一代会被叫作“875”，但正是中国在5G领域巨大的商用速度、成绩和推进力，让高通作出改变，有了这个迅速登顶各类热搜热榜，暗含神秘东方智慧的“骁龙888”命名。 </p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201204/c6625f189f9843d6a84dc2b38aa369d0.jpeg" /></p>
+<p>高通中国区董事长 <strong>孟朴</strong>说，“888”代表着“旗舰中的旗舰”，能体现全新旗舰产品的优越性，也是对中国5G速度的认可，同时高通也希望和中国消费者、中国合作伙伴、5G从业者一起沾沾骁龙888的喜气，一路发发发。 </p>
+<p>OK，最后的最后，你需要拥有一部搭载高通骁龙888 5G移动平台的旗舰智能手机吗？</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201204/62c49190449c40f0815e804864f4cde6.jpeg" /></p>
+<p>问题就留给各位了。 </p>
+<p style="text-align: center;">— 完 — </p>
+➜AutoX“真无人”车队驶上繁忙街头，中国正式跨入无人驾驶时代
+http://www.sohu.com/a/436099367_610300	33549
+<p>允中 发自 凹非寺 </p>
+<p>量子位 编辑 | 公众号 QbitAI </p>
+<p style="text-align: left;">12月3日消息，AutoX正式公布中国首批 <strong>车内全无人</strong>、 <strong>无远程遥控</strong>的RoboTaxi车队，并发布了其在深圳市繁华公开道路完全无人驾驶的视频。 </p>
+<p style="text-align: left;">视频中，AutoX的25台无人车在深圳繁忙街道上自主行驶，灵巧绕过路障、斑马线前礼让行人，真正做到了规模化无人驾驶，实现了该领域内中国企业零的突破。</p>
+<p><iframe allowfullscreen="" src="https://v.qq.com/iframe/preview.html?width=500&amp;height=375&amp;auto=0&amp;vid=x3208ayoijr"></iframe></p>
+<p style="text-align: right;"><strong>△ </strong><span style="font-size: 16px;">AutoX推出中国首款真正全无人RoboTaxi：车内全无人，无远程遥控</span></p>
+<p style="text-align: left;">视频中，AutoX全无人汽车内无驾驶员或安全员，全程无任何人工接管、无远程遥控，完全依靠其无人驾驶系统“ <strong>AutoX Driver</strong>” 驾驶。驾驶途中，无人车遇到了大量中国大城市中常见的路况变化，如路边停放车辆挡道、骑手小哥突现、夜间施工修路等。针对这些突发状况以及掉头、并道汇流等行驶需求，无人车处理平稳流畅，并且保持高达40公里每小时的平均速度。 </p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201204/6f301c5051cb46588f128338b8ba30b1.gif" /></p>
+<p style="text-align: left;">据悉，AutoX发布的首批全无人RoboTaxi车队共25台，皆采用FCA克莱斯勒大捷龙车型，与Waymo在美国实现大规模全无人驾驶面向公众运营的车型同款。这也是中国首批从车硬件到无人驾驶系统都能全面符合无人安全要求、能够进行大规模无人化部署的自动驾驶车队。</p>
+<p style="text-align: left;">自今年年初，基于对彼此技术和实力的认可，AutoX与国际车企FCA克莱斯勒达成深度战略合作，将成熟的、世界顶尖的国际车企经验与先进的无人驾驶技术深度耦合。今年7月，AutoX获得了全球第二张、中国唯一一张加州全无人驾驶牌照，该牌照代表全球最高技术安全要求级别的无人驾驶认证。</p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201204/e5cdab9dbf344a8d890fdefe0cef91ac.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: right;"><strong>△ </strong><span style="font-size: 16px;">AutoX全无人驾驶车队</span></p>
+<p>软硬件一体化设计，真正达到“Hardware Ready”全无人标准 </p>
+<p style="text-align: left;">此次AutoX发布的RoboTaxi车队集成了AutoX全新第五代传感器系统，搭载目前国内最高分辨率激光雷达和摄像头，通过超高分辨率感知能力应对中国复杂都市路况。</p>
+<p style="text-align: left;">对比美国地广人稀的路况，国内城市道路的特色对于无人驾驶技术有着更高的要求和挑战：大部分街道上物体数目繁多、遮挡严重，普通分辨率的传感器难以满足在中国特色路况下达到全无人驾驶的感知需求。</p>
+<p style="text-align: left;">正是因此，AutoX第五代传感器系统融合了高分辨率激光雷达与摄像头，从软硬件层面同时保证超高精准度感知能力，保证对严重遮挡的行人、体积极小的物体等有足够的感知精度，满足全无人的技术需求。</p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201204/65331b5bd1ee4b348ec27a5b4b4727bc.gif" /></p>
+<p style="text-align: left;">同时，车内集成了AutoX自主研发的多传感器硬件级同步融合模块等核心安全硬件模块，做到软硬件一体化设计，借鉴了车规级硬件设计标准和开发流程，经过严格硬件在环与车辆在环测试，从EVT、DVT、 PVT、并经过最终全无人质量检测。</p>
+<p style="text-align: left;">值得一提的是，AutoX自主研发的中国首款L4/L5全无人驾驶级别的域控制器AutoX XCU，填补了中国市场在高性能、高级别车载域控制器上的空白，为无人驾驶AI提供了稳定又强大的计算平台。</p>
+<p style="text-align: left;">该批车队是中国首款具备了全栈系统性安全冗余的无人驾驶车队。无人车提供了首个具备可应对刹车失灵等的软硬件冗余系统，全方位针对全无人驾驶过程中可能发生的各种事件作出了安全冗余解决方案。</p>
+<p style="text-align: left;">通过软硬件一体化设计、量产级别质检、自主研发计算平台及全栈系统性安全冗余等多层次的技术保障，AutoX最终才得以负责任地去掉安全员。</p>
+<p style="text-align: center;"><img src="http://p3.itc.cn/q_70/images03/20201204/e1f18246f8734098ab4ab2ddc8df60e4.png" /></p>
+<p style="text-align: right;"><strong>△ </strong><span style="font-size: 16px;">AutoX全无人车队集成第五代传感器系统</span></p>
+<p>大量高质量的闹市区数据积累，成就处理中国都市复杂道路的能力 </p>
+<p style="text-align: left;">另一方面，AutoX做到全无人的基础也在于其从数年前起在中国闹市区积累的大量行驶数据。</p>
+<p style="text-align: left;">自2018年起，AutoX在深圳中心地区展开大规模路测，通过积累海量市中心复杂路况数据，获得了海量高质量、高难度的L4级自动驾驶数据，以数据驱动AutoX Driver学习驾驶的能力。</p>
+<p style="text-align: center;"><img src="http://p0.itc.cn/q_70/images03/20201204/97b72b2accf546c5ad4d0d5077526c40.gif" /></p>
+<p style="text-align: left;">由于AutoX处理多变、复杂的城市路况能力和通用性，AutoX已经成功实现多城市运营，在包括深圳、上海、芜湖、武汉等多个城市迅速复制。</p>
+<p style="text-align: left;">目前，AutoX已同时获得深圳、上海、武汉、广州等多个主要城市的自动驾驶牌照，同时跨全球5个城市开展规模化测试运营。</p>
+<p style="text-align: left;">迄今为止，AutoX提供国内唯一支持任意点停车的RoboTaxi，无固定上下车站点，实现了车找人而不是人找车的真正打车体验。AutoX无人驾驶系统从软件算法、硬件设计同时入手，稳定处理深圳、上海等地常见的大暴雨天气情况，支持恶劣天气下长时间稳定安全运营。</p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201204/90b29d79fa5c4c53a5e3ff345f26361c.png" /></p>
+<p style="text-align: right;"><strong>△ </strong><span style="font-size: 16px;">积累海量复杂城市中心路况</span></p>
+<p>真正全无人驾驶，不靠遥控靠AI </p>
+<p style="text-align: left;">今年7月份，AutoX获得了全球第二张加州全无人驾驶载人牌照。该牌照是全球公认含金量最高、技术难度最大的权威认证，截止目前为止仅有Waymo、AutoX、Zoox和Cruise四家牌照持有者(可载人的)，AutoX为其中唯一中国自动驾驶公司。</p>
+<p style="text-align: left;">该牌照是无人驾驶的最高含金量牌照，允许AutoX在加州公开道路上去掉安全员，实现没有任何安全员的真正无人驾驶，车速可达每小时72公里，可以处理下雨等天气状况。</p>
+<p style="text-align: left;">自创立以来，AutoX以强大的技术积累、处理都市复杂路况的AI能力闻名，在去年加州政府DMV的MPI排名中，AutoX名列全球第四，紧跟在Waymo和Cruise之后。</p>
+<p style="text-align: left;">AutoX表示，真正安全的无人驾驶系统，必须依托于非常稳定的AI驾驶能力，而非依赖远程遥控。这也是AutoX技术研发的核心方向。</p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201204/4150ff94e7a5423caaf6b93a3e6ad449.gif" /></p>
+<p style="text-align: left;">众所周知，即使先进的无线通讯协议，例如4G、5G或者WiFi，在城市大面积核心区域，均可能出现暂时信号不稳定的问题，无法保证RoboTaxi场景运营区域内任何地点、任意时间的信号强度都做到完美覆盖。</p>
+<p style="text-align: left;">在城市道路上，动态路况则更不可控，无人车所能接收到的信号可能会被临时发生的路况干扰或屏蔽。并且，远程控制的数据传送仍然需要通过互联网的主干网络，民用级别主干网带宽没有带宽保证，可能因为用户群体行为而发生变化（如突发事件占据流量等）。一旦无线信号强度出现不稳定或互联网传送带宽不稳定，那么远程遥控或者5G云代驾将非常危险，对乘客和道路上其他人造成安全威胁。</p>
+<p style="text-align: left;">在国际上，依托遥控的云代驾被一致认为是不安全的技术，Waymo和Cruise等公司均不允许能通过远程遥控来控制车辆的方向盘和油门刹车。</p>
+<p style="text-align: left;">成熟安全的无人驾驶系统，要求将车辆控制模块完全与联网的模块进行彻底的隔离，彻底杜绝远程遥控可能带来严重的网络安全问题，防止黑客攻击系统，获得控制方向盘、油门、刹车的权利，实现远程遥控，是严重风险漏洞。基于安全考量，AutoX的系统架构实现了车载控制模块与网联模块彻底隔离，即使黑客入侵系统，仍无法直接遥控AutoX车辆，杜绝可能因此造成的交通事故和人员伤害。</p>
+<p>安全第一的价值观，驱动AutoX追求极致技术 </p>
+<p style="text-align: left;">“安全是无人驾驶RoboTaxi能落地的前提条件，AutoX一直将安全作为核心价值观，坚持做正确的事，坚持做长期有价值的事，用国际最高的安全标准来严格要求自己。”AutoX创始人及CEO肖健雄表示。</p>
+<p style="text-align: left;">此前，AutoX的进展体现了其在无人驾驶安全领域的重视及投入：</p>
+<ul>
+<li>通过与国际车企深度合作，将首台经过大规模无人驾驶验证的车辆引入中国；</li>
+<li>通过自主研发中国首款L4无人驾驶级别域控制器AutoX XCU，实现车规级别功能安全的多重冗余，以及多传感器的硬件同步，真正实现软硬件一体化设计；</li>
+<li>通过强大的AI，对付都市城区繁华道路的各种突发现象，同时避免远程遥控带来的交通和网络安全风险；</li>
+<li>通过完善的高分辨率感知系统，实现对所有物体的精确感知，对复杂大都市路况的道路使用者的安全负责任。</li>
+</ul>
+<p style="text-align: left;">“AutoX将始终在技术上追求极致，以高度使命感，来推动RoboTaxi无人驾驶在中国的安全高效地大规模商业化。”肖健雄说道。</p>
+<p>— <strong>完</strong>— </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>
+➜TypeScript超越C++成第四大语言，GitHub这份年度报告有太多“意想不到”
+http://www.sohu.com/a/436099568_610300	33549
+<p>晓查 发自 凹非寺 </p>
+<p>量子位 报道 | 公众号 QbitAI </p>
+<p>今天，GitHub一年一度的Octoverse报告发布啦，大家最关心的编程语言排行榜也一并出炉。</p>
+<p><img height="auto" width="1728" src="http://p1.itc.cn/q_70/images03/20201204/82844c792eb54d428672819fa6639b64.png" /></p>
+<p>微软设计的编程语言、Java的超集、还不到10岁的 <strong>Type</strong>表现亮眼，一举超过C#、PHP、C++，跃升为 <strong>第四大</strong>受欢迎编程语言，仅次于Java、Python和Java。 </p>
+<p>因为新冠疫情的爆发，对科技行业影响极大，也让2020年的报告多了一重特殊含义。从数据上看，社交隔离和在家办公的确促进了开源社区的快速发展。</p>
+<p>无论是开发者人数，还是创建的开源项目数量，相比去年都有大幅增加。</p>
+<p><img height="auto" width="1616" src="http://p4.itc.cn/q_70/images03/20201204/785399ccf81547fab08655c64e414e65.png" /></p>
+<p>可以看出，新冠疫情到来后，活跃用户创建的开源项目数量出现了阶梯式增长，一下子比去年同期多出40%。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>今年GitHub的开发者数量达 <strong>5600万</strong>，去年为4000万，增长了四成。新建repo数量 <strong>6000万</strong>，去年为4400万。GitHub预计到2025年用户将超过一亿。 </p>
+<p><img height="auto" width="2188" src="http://p4.itc.cn/q_70/images03/20201204/a65eedba299f4be094df224a61f190c7.png" /></p>
+<p>过去一年，美国对开源的贡献比例进一步减小，降至22.7%，但仍是全球第一，紧随其后的是中国（9.76%）和印度（5.2%）。预计到2030年，中国对开源的贡献比例将超过美国。</p>
+<p><img height="auto" width="2508" src="http://p1.itc.cn/q_70/images03/20201204/f3d59e0ba1f54e75928400efed6f109c.png" /></p>
+<p>除了以上几点外，这份报告还有很多看点。</p>
+<p>TensorFlow用户很“冷淡” </p>
+<p>GitHub发现，在提交代码这件事上，TensorFlow用户表现得很冷淡。</p>
+<p>这主要体现在TensorFlow用户使用GitHub的方式和其他用户存在明显差异。</p>
+<p>在其他开源社区，比如热门的新冠肺炎项目上，新手和老司机都经常push代码。而在TensorFlow社区里，这种现象几乎不存在，甚至连老司机也不经常push代码。</p>
+<p>大多数新手（50％~75％）会在issue里发表评论，25％~30％的新手会创建issue，少数新手（5%）会审查pull request，而有push代码记录的新人少之又少。</p>
+<p><img height="auto" width="966" src="http://p3.itc.cn/q_70/images03/20201204/7689f25e486243f99c136d156edac5f7.png" /></p>
+<p>GitHub认为，TensorFlow用户交互的主要方式就是issue。</p>
+<p>值得一提的是，亚洲用户过去一年对TensorFlow项目的贡献最大。</p>
+<p><img height="auto" width="1354" src="http://p8.itc.cn/q_70/images03/20201204/5c19b71e136e49c9a1b0a65365ffb1a5.png" /></p>
+<p>告别996，周末“充电” </p>
+<p>今年还有一个有趣的趋势：企业开发人员周末和节假日的活动持续下降。同时，开源代码活动在周末和节假日多了起来。</p>
+<p>这表明程序员们越来越多地放下工作，将精力转移到开源上。 </p>
+<p><img height="auto" width="1204" src="http://p3.itc.cn/q_70/images03/20201204/ffb2199a451147ba80ca7ffa7ccefed0.png" /></p>
+<p>自4月以来，开源项目的创建量同比增长了25％。</p>
+<p>GitHub认为，这可能意味着开源既是学习和创新的地方，也是逃避工作的重要场所。GitHub建议公司应该保证员工有时间参与学习，并且在政策范围内允许员工开展外部项目。</p>
+<p>新冠项目进GitHub </p>
+<p>开发者不仅关注技术，也对社会话题表现出极大的兴趣。他们通过创建GitHub项目来实时关注新冠疫情（COVID）最新动向。</p>
+<p><img height="auto" width="958" src="http://p6.itc.cn/q_70/images03/20201204/4f9a1ba9682d4debad7f33d79e8ce7ad.png" /></p>
+<p>在COVID项目上，开发者做出大约一半的贡献，甚至超出了学界和数据科学的用户贡献占比。</p>
+<p>很多新人注册GitHub也是奔着COVID项目，在第一个月里，COVID社区新人数量一度超过了TensorFlow，不过热度很快褪去。</p>
+<p><img height="auto" width="1032" src="http://p3.itc.cn/q_70/images03/20201204/bc56ed0354e4403ea46df9483f995ddb.png" /></p>
+<p>为何Type快速攀升 </p>
+<p>分析公司RedMonk的联合创始人James Governor认为，Type近年来的迅速普及是因为它满足了Java开发人员对“类型安全”的需求。另外，Adobe Flash的消亡也刺激了Type语言的使用。</p>
+<p>像Slack、Airbnb和Bloomberg等大公司的Web开发人员都在使用Type。今年GitHub五大热门话题第三的angular9背后的创始人也是Type的忠实拥趸。</p>
+<p>最后，附上GitHub Octoverse 2020年报告地址： </p>
+<p>https://github.blog/2020-12-02-the-state-of-the-octoverse-2020/ </p>
+<p><span style="font-size: 16px;">参考资料： </span></p>
+<p><span style="font-size: 16px;">https://venturebeat.com/2020/12/02/github-python-and-type-gain-popularity-among-programming-languages/</span></p>
+<p><span style="font-size: 16px;">https://www.zdnet.com/article/programming-languages-microsoft-type-leaps-ahead-of-c-php-and-c-on-github/</span></p>
+<p><span style="font-size: 16px;">https://developer-tech.com/news/2020/dec/02/state-of-octoverse-2020-devs-productivity-despite-pandemic/</span></p>
+<p>— <strong>完</strong>— </p>
+<p><span>本文系网易新闻•网易号特色内容激励计划签约账号【量子位】原创内容，未经账号授权，禁止随意转载。</span></p>
+<p><strong>量子位年度智能商业大会启幕，大咖已就位！</strong></p>
+<p><span style="font-size: 16px;">12月16日，</span><strong><span style="font-size: 16px;">李开复</span></strong><span style="font-size: 16px;">博士、 <strong>尹浩</strong>院士、清华 <strong>唐杰</strong>教授，以及来自 <strong>小米</strong>、 <strong>美团</strong>、 <strong>爱奇艺</strong>、 <strong>小冰</strong>、 <strong>亚信</strong>、 <strong>浪潮</strong>、 <strong>容联</strong>、 <strong>澎思</strong>、 <strong>地平线</strong>、 <strong>G7</strong>等知名AI大厂的大咖嘉宾将齐聚MEET2021大会，期待关注AI的朋友报名参会、共探新形势下智能产业发展之路。 </span></p>
+<p><strong><span>▽</span></strong>早鸟票限时优惠，扫码锁定席位吧~ </p>
+<p><span style="font-size: 16px;"><strong>量子位 </strong></span><span style="font-size: 16px;">QbitAI · 头条号签约作者</span></p>
+<p>վ'ᴗ' ի 追踪AI技术和产品新动态</p>
+<p><span>一键三连「分享」、「点赞」和「在看」</span></p>
+<p><span>科技前沿进展日日相见~</span></p>

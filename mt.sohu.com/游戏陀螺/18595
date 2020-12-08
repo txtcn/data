@@ -1,0 +1,172 @@
+➜原力CEO赵锐：除了参与《美末》项目，我们还用UE做了电影
+http://www.sohu.com/a/435183036_204728	53003
+<p><span style="font-size: 16px;">11月28日，在Epic Games举办的“UnrealOpenDay”大会上，原力CEO赵锐分享了公司用UE做《美国末日》、《荒野大镖客》等大作的一些心得体会。 </span></p>
+<p style="text-align: center;"><img src="http://p2.itc.cn/q_70/images03/20201129/6bb9f1490c48445e83132192b5284df8.png" /></p>
+<p><strong><span style="font-size: 16px;">以下为演讲内容（有节选）： </span></strong></p>
+<p><span style="font-size: 16px;">大家好！我是原力的CEO赵锐，非常高兴能够参加这次虚幻引擎技术开放日的活动。今天跟大家做的分享的题目叫“原力的UE之路”，其实也是希望把过去几年里面我们在搭建UE流程的一些心得，跟大家做一些交流和分享。</span></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">原力用UE参与了《美国末日》，还用它做了影视剧</span></strong></span></p>
+<p><span style="font-size: 16px;">我给大家简单地介绍下我们公司。原力其实有好几个事业部，有一个比较大的事业部叫做互动数字事业部，主要是为世界上着名的一些游戏公司提供游戏里面的美术动画等各方面的服务。我们参与的项目包括像《神秘海域》、《美国末日》、《荒野大镖客》这样的很多国外着名的3A游戏。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201129/14f27243806d4bcd8436f333f1a7591e.png" /></p>
+<p><span style="font-size: 16px;">另外一个就是我们的影视事业部，我们做了很多影视方面的内容，主要是集中在全CG的动画片、动画电影方面。大家可能比较知道的是前几年我们做的《斗战神》，和梦工厂合作的</span><span style="font-size: 16px;">《驯龙记》动画剧集，我们自己的动画电影《妈妈咪鸭》，还有像《捉妖》这样的真人影视剧，所以影视部门也是公司一个非常重要的核心业务部门。</span></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201129/96ec9d064cee4f95a6aa5b8c848ea118.png" /></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">能做出多个爆款3A，靠的是UE的开放能力</span></strong></span></p>
+<p><span style="font-size: 16px;">我现在说一下为什么我们选择了Unreal Engine。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201129/975f8a2035c34c94b26413e5be00a5c1.png" /></p>
+<p><span style="font-size: 16px;">其实在六、七年前我们有好几个选择，主要是在Crytech Engine和Unreal Engine当中来做最终的选择，为什么选择Unreal Engine，其实有几个原因。</span></p>
+<p><span style="font-size: 16px;">一个最重要的原因是 <strong>Unreal Engine更趋向于开放</strong>，它社群的人也更多，包括到现在它已经做了一些开源的，让更多的人一起用Unreal Engine来做开发，这是一个很核心的原因。 </span></p>
+<p><span style="font-size: 16px;">现在来看我们的选择其实还是对了。Unreal Engine已经发展成为最popular的一个安全。而且在过去的几年当中，在视频开发这一块的流程和工具越来越完善。</span></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">做写实动画，UE虚拟拍摄的并行操作比传统影视流程更有效率</span></strong></span></p>
+<p><span style="font-size: 16px;">给大家看一下我们自己搭建的叫UE的虚拟拍摄的生产流程。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201129/e6a3927502cb4f89a43853f12c91d60e.png" /></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201129/45acce47317c4958829e02967a0234b7.png" /></p>
+<p><span style="font-size: 16px;">从流程图上就已经看出来，和传统的影视流程有一个很大的区别是在右侧。大家可以看到就很多的流程其实都可以并行，这是一个非常大的特点。另外一个特点就是我们在前期会有大量的更接近于实拍的虚拟拍摄过程，最后组成了一个我们自己特有的UE虚拟拍摄和内容生产的流程。</span></p>
+<p><span style="font-size: 16px;">现在南京我们有一个非常大的动捕棚，大概有多平方米，我们的虚拟拍摄都在我们自己的动捕棚里面来做。我们在现场捕捉的时候，UE的画面里面直接看到我们接近成品质量的画面。</span></p>
+<p><span style="font-size: 16px;">为了配合整个的流程，我们还搭建了扫描的系统。我们有大量的用真人扫描的方式，包括动作采集，来实现写实的风格。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201129/10fe1c36c4bc4056a0b7be7ee27bd48a.png" /></p>
+<p><span style="font-size: 16px;">我们部门用这种方式做的第一个项目是杨洋出演的《全职高手》的这部剧集。因为剧集里面有大量的从现实世界穿到游戏世界里面的画面，所以我们也是觉得用游戏引擎是非常非常合适，也是希望通过这样的项目来完善我们整个的流程。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201129/ac5c66bea4144a81b9856c5a58b1f3ba.png" /></p>
+<p><span style="font-size: 16px;">这项目也是我们第一次用引擎来完成更偏写实效果的内容。像在项目里面做一些角色，Unreal引擎有一个非常大的好处就是已经做了很多对于这种超写实的人物的渲染和人物动画所需要的一些工具，所以我们在这次的项目里面能够把写实的人作为我们最主要的一个特点。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201129/b5c0ec84f3e9414d89f1bb3ebbb29c6c.png" /></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">UE的光线追踪，在《凡人修仙传》中模拟出了真实的灯光效果</span></strong></span></p>
+<p><span style="font-size: 16px;">大家应该知道灯光，特别是有光能传递的这种渲染效果在游戏引擎里面其实还是比较困难的。而我们使用 Unreal引擎的光线追踪做的《凡人修仙传》，彻底解决了这个问题，也就是光线的问题。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201129/5cdd0029fdbf4b5cb415ebc3e55edabf.png" /></p>
+<p><span style="font-size: 16px;">UE的光线追踪，其实可以模拟非常好的室内和室外的灯光的效果，在片子里面我们采用了更接近于实拍的方式，所以整体的呈现效果它会更像一个传统的真人的电视剧的效果。</span></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">渲染功能只是发挥了UE的20%～30%的能力</span></strong></span></p>
+<p><span style="font-size: 16px;">我觉得 <strong>千万不要把UE只作为渲染的工具</strong>，的确现在有些同行用UE是为了解决渲染速度的问题，但是我觉得如果是只做渲染的话，只是发挥了UE可能只有 <strong>20%至30%</strong>的作用。其实UE是一个非常好的整体的动画工具，比如说它的并行能力。 </span></p>
+<p><span style="font-size: 16px;">因为UE是一个以游戏开发为主要目标的这样的一个工具，在游戏开发过程当中其实是非常讲究并行的工作，其实可以极大的加快我们传统流程的速度。</span></p>
+<p><span style="font-size: 16px;">从根本上来讲，就要把UE作为一个核心工具来看，而不只是当做渲染工具，比如说场景的整合、动画的整合以及特效等等方面。我们包括所有数据的中转也是以UE作为核心的。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201129/b01b93e632ef4c2e926807703e0799fb.png" /></p>
+<p><span style="font-size: 16px;">最后再简单地说一下我们对于UE流程未来的规划。我们的目标非常明确，即将用UE的实时流程来替代公司所有的离线的、非实时的传统动画流程。我们越来越相信不管是速度的提升，并行的好处，成本的节约，还是可期的视觉质量，UE都可以成为一个核心工具。</span></p>
+<p><span style="font-size: 16px;">我们下一步是正在准备用UE来规划我们的一部电影，当然目前的UE版本还有一些限制，但是我想大家都看到了UE的Demo，新的技术我觉得已经完全可以实现所有离线流程能达到的效果。</span></p>
+<p><span style="font-size: 16px;">今天就分享这么多，谢谢大家！</span></p>
+➜拿下UOD年度最佳游戏，《鸿图之下》为SLG品类带来的新突破
+http://www.sohu.com/a/435187127_204728	53003
+<p><span style="font-size: 16px;">11月27-28日，Epic Game在线上举办了一年一度的Unreal Open Day虚幻引擎开放日，在虚幻引擎中国年度颁奖典礼上，由祖龙娱乐研发、腾讯游戏发行的《鸿图之下》荣获年度最佳游戏奖。 </span></p>
+<p style="text-align: center;"><img src="http://p1.itc.cn/q_70/images03/20201129/7198c42dbb764df1a9cbee19468bf301.png" /></p>
+<p><span style="font-size: 16px;">作为由Epic Games中国倾力打造面向虚幻引擎开发者的技术分享活动，UOD已经成长为引擎行业的标杆活动。而《鸿图之下》能在众多产品中脱颖而出，摘得年度游戏奖，表明《鸿图之下》在游戏创新及打磨方面，已经位居行业前列。</span></p>
+<p style="text-align: center;"><img src="http://p6.itc.cn/q_70/images03/20201129/47c37c294b0a45838c8bac353035e96a.png" /></p>
+<p><span style="font-size: 16px;">在开放日分享环节，祖龙娱乐创始人、董事长 李青表示，“我们想要做一款尖端品质的SLG的产品，给热爱SLG的玩家还原一个真实的三国战场。” 同时，李青也与从业人员分享了《鸿图之下》研发过程中虚幻4引擎的实际运用经验。</span></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">运用虚幻4引擎，《鸿图之下》在SLG品类中做了哪些创新？</span></strong></span></p>
+<p><span style="font-size: 16px;">《鸿图之下》能一举拿下UOD的年度最佳游戏，成为唯一获奖的大型手游，很大程度源于它对策略体验立体而细致打磨，通过在游戏中对“天时”、“地利”、“人和”等多个方面的精细化打磨，让战斗的趣味性超脱于常规SLG枯燥的数值游戏体验。</span></p>
+<p><strong><span style="font-size: 16px;">“天时”</span></strong><span style="font-size: 16px;"></span></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">《鸿图之下》凭借着虚幻引擎4出色的拟真表现，塑造出高度拟真的天气系统，天气、昼夜、四季的变换尽在其中。这里的拟真不单单是指画面效果的高度还原，更是直接将“天时”完美融入到战术之中。</span></p>
+<p style="text-align: center;"><img src="http://p4.itc.cn/q_70/images03/20201129/10fbc9c3940e4a7ead1ff1f25fc23219.gif" /></p>
+<p><span style="font-size: 16px;">李青说道，“在游戏设计上，天气效果和战斗紧密结合，天气的变化也会对战斗的结果产生重要的影响。”例如，大雪会减少弓箭手的射程；大风会减弱弓箭手的伤害；晴天会让火系武将有一定的控制效果……</span></p>
+<p><span style="font-size: 16px;">因此玩家们在战争之前，定然要提前观测天气变化的方向，以此来做出最有利的阵容搭配与兵种使用。</span></p>
+<p><strong><span style="font-size: 16px;">“地利”</span></strong><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">得益于虚幻4引擎的加持，《鸿图之下》实现了PBR渲染、全局光照、自然风场、模拟HDR等技术。《鸿图之下》以400万格的大沙盘地图，相当于现实世界400万平方公里的世界，逼真重造了三国八州。</span></p>
+<p style="text-align: center;"><img src="http://p8.itc.cn/q_70/images03/20201129/82b14c194b804661b8b66bac2a238176.png" /></p>
+<p><span style="font-size: 16px;">20多种地形地貌与精致的建模为高品质的视觉效果增添细节，丰富的地形地貌也给予玩家更多战略考虑变量，例如，可以在森林地貌的地格“伪装”成青葱树木，在路遇敌军之时使用“金蝉脱壳”脱战战略性撤退等等。</span></p>
+<p><strong><span style="font-size: 16px;">“人和”</span></strong><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">UE4对于《鸿图之下》的提升不仅体现在美术品质上，还有实时操作体验上。区别于传统SLG以一纸战报浓缩一场战争，《鸿图之下》一举跃进真实战斗画面，让玩家能够从视觉层面直观地感受战争。</span></p>
+<p style="text-align: center;"><img src="http://p7.itc.cn/q_70/images03/20201129/74b9945986ac40c8b7ab5d9ec740983b.gif" /></p>
+<p><span style="font-size: 16px;">《鸿图之下》的美术画风确实不同于市面上的SLG，武将模型精致又不失国风韵味。《鸿图之下》为了能有更细致的动态效果还用上了动捕技术，在UE4的还原下让武将跃然纸上。同时，在战场画面表现上，《鸿图之下》精确呈现每一个士兵、每一块落石、每一支箭簇的碰撞与动作。当玩家拉近镜头，甚至可以看到丢盔弃甲的逃兵，穷追勐打的追兵。</span></p>
+<p style="text-align: center;"><img src="http://p9.itc.cn/q_70/images03/20201129/a624a55207524bf98705b4997b0e0b30.gif" /></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">高品质、高表现力的《鸿图之下》，代表着游戏行业的未来走向</span></strong></span></p>
+<p><span style="font-size: 16px;">随着游戏市场进入“精品时代”，玩家游戏品味在逐渐提升，传统依靠买量打“一波流”的游戏已经在当前市场中难以生存，高质量、长线运营的产品能更容易获得当前主流玩家的青睐。</span></p>
+<p><span style="font-size: 16px;">在这种情况下，以长线、精细化运营着称的SLG品类在最近一段时间成为“香饽饽”般的存在。不仅仅是祖龙游戏的《鸿图之下》，国内众多知名厂商在前段时间都纷纷上线SLG品类产品，甚至于游戏陀螺也了解到，众多大厂正在放眼未来，手握多款SLG产品的立项项目。</span></p>
+<p><span style="font-size: 16px;">如此一来，在SLG品类竞争进入“持久战”的情境下，如何保证产品自身的核心竞争力成为众多厂商需要思考的方向。基于这一层面考虑，《鸿图之下》选择为玩家提供“身临其境”的做法，是值得众多布局SLG品类的厂商借鉴学习的。</span></p>
+<p><span style="font-size: 16px;">首先，根据伽马数据的统计，95后的“Z世代”年轻人是当前游戏市场中规模最大的人群，这批用户是见证着国家互联网科技的飞速发展，物质生活的富足程度普遍强过前几代人。在众多文艺作品的影响下，潜移默化的培养了“Z世代”用户对高颜值内容的追求。</span></p>
+<p><span style="font-size: 16px;">显然，虚幻4引擎在画面表现力提供的加持，更能在“颜值”层面吸引到“Z世代”用户的眼光。《鸿图之下》就是一个经典的案例，在社交论坛的讨论中，众多玩家纷纷对《鸿图之下》在美术层面的打磨报以好评。</span></p>
+<p><span style="font-size: 16px;">甚至于，《鸿图之下》并不仅限于做一款美术好的产品，而是依托于游戏的画面表现力，高度拟真了一个三国战场环境，给玩家提供了足够自由的三国氛围与环境。</span></p>
+<p><span style="font-size: 16px;">其次，对于SLG玩家而言，游戏在策略层面的部署是其游戏核心所在。而《鸿图之下》的环境系统极大丰富了沙盒游戏的自由策略体验，譬如，在天气系统影响下，玩家出征前的兵种搭配、阵型选择等都将受到影响、在战斗之中，游戏地形的多样性也让玩家有更多的策略选择。在这些要素的加持下，《鸿图之下》让玩家仿佛化身为三国时期的诸侯一般。</span></p>
+<p style="text-align: center;"><img src="http://p5.itc.cn/q_70/images03/20201129/41df56684ba04608a8e1c45b90138e23.gif" /></p>
+<p><span style="font-size: 16px;">最后，在游戏的战场画面中，《鸿图之下》依托于虚幻4引擎的计算力，通过动捕技术让三国武将得以高度还原，同时玩家也可以看到《鸿图之下》战场细节之处的打磨，士兵的碰撞、箭矢的飞行轨迹等，令玩家仿若恢宏古战场上的一员。</span></p>
+<p><span style="font-size: 16px;">环环相扣之下，《鸿图之下》有着“战争大片”的既视感，这些都构成了《鸿图之下》在当前市场中的产品竞争力。可以想象，在未来，若有厂商尝试用虚幻4引擎研发一个SLG产品以求更好切入用户群，《鸿图之下》在这个品类及方向的经验，或将能为同行提供到一定帮助。</span></p>
+➜“精英冒险俱乐部”亮相，造飞机的《和平精英》又抬高了线下IP体验门槛
+http://www.sohu.com/a/435187133_204728	53003
+<p><strong><span style="font-size: 16px;">导语：</span></strong><span style="font-size: 16px;"></span></p>
+<p><span style="font-size: 16px;">11月19日，TGC2020腾讯数字文创节（以下简称TGC）在海南省海口市拉开帷幕，《和平精英》IP线下窗口“精英冒险俱乐部”正式亮相，“真的造了架飞机”当作见面礼。</span></p>
+<p><span style="font-size: 16px;">飞机是《和平精英》的重要符号，象征着一次新开始，无限的可能性。《和平精英》此次打造的这架飞机，是非常有代入感的IP外在呈现，为到场用户带去了深刻的惊喜和体验。</span></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201129/0a5840a3295743b38556aeaf8a987f22.png" /></p>
+<p><span style="font-size: 16px;">而如果研究《和平精英》在TGC中展示的全部内容，就会发现，“精英冒险俱乐部”作为《和平精英》现实生活中的IP外显呈现，他们对IP内容、对玩家情感的把控，以及打造线下品牌的能力和野心，远不止我们从飞机中感受到的那么简单。</span></p>
+<p><span style="font-size: 16px;">“精英冒险俱乐部”正在将游戏经典元素与各种新颖形式相结合，去承载与体现IP内容，给予玩家多元又统一、新鲜且有代入感的线下IP体验。他们还想借助丰富的竞技冒险体验和社交故事，调动玩家情绪，构筑线性IP的无限生命力，最终实现IP拓展与构建“全球玩家的竞技冒险世界”的正耦合。</span></p>
+<p><span style="font-size: 16px;">那他们具体是怎么做的呢？</span></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">人潮：巧思设计，打造海南TGC C位俱乐部，现场人潮汹涌</span></strong></span></p>
+<p><span style="font-size: 16px;">首先，“精英冒险俱乐部”打造的这架等比例飞机，是开启本次惊喜之旅的起点。玩家穿过机舱，就正式实现了从现实世界到游戏世界的“穿越”。</span></p>
+<p><span style="font-size: 16px;">在我看来，《和平精英》深知飞机所承载的情感，想完美还原游戏里的飞机，为玩家带去更有代入感的线下体验......于是自己造了一架飞机。他们对玩家的喜好有着精准的把握。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201129/b61b1e3f656342d0996b0d1ce2e358d2.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><span style="font-size: 16px;">设计师严密计算，各职能工人分工制作；钢筋和铁板被有条不紊地焊接成框架，闪耀着金属光泽的面板一片片隆起飞机的形状。最后，上色打磨，一架等比例飞机就凭空而起了，前后耗时四个多月。这背后是无数手艺人的匠心和心血，也是《和平精英》掏给玩家的诚意和真心。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201129/f4482ae736dd46c696d7e869d5fd4833.png" /></p>
+<p><span style="font-size: 16px;">随后，这架飞机跨越半个中国，被送到了玩家眼前。它甚至因为体积太大，特地找来一辆17米长的车体才成功从青岛运到海南。它也因为机身庞大，巧妙地改动了“翅膀”才被放进TGC展区里。</span></p>
+<p><span style="font-size: 16px;">飞机之外，“精英冒险俱乐部”在TGC现场，也别出心裁地将IP经典内容做了还原和创新呈现，吸引用户、满足用户、呈现IP属性的同时，为用户送上更完善的IP线下体验。</span></p>
+<p><span style="font-size: 16px;">比如在互动展区中，“空降平台”被设计为集合大厅，玩家可以在此集合拍照打卡。“对决空间”重现了紧张刺激的游戏氛围，玩家可以坐进吉普车，获得4D海岛飙车射击体验。“空投吧台”以空投箱为主视觉设计，玩家能品尝到限定饮料，恢复体力。而在“吉利舞池”，玩家将伴随着Coser乐队极具感染力的live版本游戏音乐，欢快开趴。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201129/734ad930f35446588d086729b5359b18.png" /></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201129/011d65a54b064383a520c44cc918aa9d.png" /></p>
+<p><span style="font-size: 16px;">这些互动展区不仅集结了游戏经典符号，还与潮流科技相结合，比如绿幕摄影、震动反馈等数字化互动装置，为玩家打造了一个喜闻乐见、魅力多元的IP新文创展区。</span></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201129/d2d32a2edc3341f2aeda3738f150e281.png" /></p>
+<p><span style="font-size: 16px;">常见的IP线下展台，大部分都是游戏场景从线上到线下的单纯移植，“精英冒险俱乐部”则实打实地建造飞机，通过将游戏中玩家喜爱的各种标志性元素与现实潮流科技结合，提高线下IP体验门槛。由此，每个玩家都能充分感受到《和平精英》的诚意，也能体会到他们不断赋予玩家新体验的创新精神。</span></p>
+<p><span style="font-size: 16px;">而当玩家的需求被满足时，他们的情感也被充分调动——就像歌手的粉丝们去看演唱会，总是很大方地在脸上、身上、在一切能看得见的地方贴上、穿戴上明星相关周边那样，《和平精英》玩家在“精英冒险俱乐部”现场，也乐意并积极用各种周边标注自己的特种兵身份，成为行走的广告牌。</span></p>
+<p><span style="font-size: 16px;">值得一提的是，现场的周边设计极具创意，平底锅是要充气的，信号枪被设计成了水枪，玩家们直接在海岛打起水仗，为TGC现场带去了许多欢乐。</span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201129/720aaa32603042638a1f636dc9decdbc.png" /></p>
+<p><span style="font-size: 16px;">这一番别出心裁的设计，不出所料得到了大家关注和点赞：</span><span style="font-size: 16px;">在线上，“和平精英造了架真飞机”微博话题阅读量达2.2亿，网友们自发分享打卡飞机截图；</span><span style="font-size: 16px;">在“精英冒险俱乐部”现场，“空降平台”单把枪3天扣动扳机次数超过10万次，“把枪都玩坏了”。</span><span style="font-size: 16px;">甚至有玩家得知打造真飞机的故事，连续两天去到展台打卡。</span></p>
+<p><span style="font-size: 16px;">“自来水”的关注，络绎不绝的人潮，是对“精英冒险俱乐部”最大的褒奖。它是当之无愧的TGC C位。</span></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">人情味：复刻线上社交魅力，感受《和平精英》的独特情感羁绊</span></strong></span></p>
+<p><span style="font-size: 16px;">有人的地方就有情感的交织折射。《和平精英》中的经典元素和社交场景，为玩家提供了包括射击冒险和社交等多元乐趣，承载了玩家丰富、深厚的感情。</span></p>
+<p><span style="font-size: 16px;">因此，《和平精英》也从单纯的娱乐工具，升级为了用户量庞大的社交平台，成为了玩家工作生活之余获得放松与快乐的Neverland。在这里，玩家可以体验到多维的情感羁绊，收获关于爱情、亲情、友情等丰富的社交故事。</span></p>
+<p><span style="font-size: 16px;">而当这些经典元素和社交场景被复刻到TGC现场，玩家滋长已久的感情终于能得到具象化的释放，这些社交故事也得以被我们看到并听到。</span></p>
+<p><span style="font-size: 16px;">说来也巧，一周前我在逛社交软件时，被某博主粉丝投稿的一则“黄昏恋”故事狠狠撒了一波狗粮。狗粮的发生地，恰好就在此次TGC“精英冒险俱乐部”展台。</span></p>
+<p><span style="font-size: 16px;">这是一对排队体验“精英冒险俱乐部”的老年夫妻。老奶奶对《和平精英》周边情有独钟，老爷爷就认真地体验游戏，打卡完成各个项目，帮他的爱人赢到了“一大袋子奖品”。在排队的过程中，老爷爷甚至还体贴地帮老奶奶遮挡太阳，让人感慨和羡慕。</span></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201129/133115bf2a004566851434b07cbed60e.png" /></p>
+<p><span style="font-size: 16px;">另一个故事，则是一对在“精英冒险俱乐部”拍婚纱照的情侣。</span></p>
+<p><span style="font-size: 16px;">这是一对因《和平精英》相识相恋的年轻人：“他在游戏里可厉害了，经常带我吃鸡......就留了联系方式，再后来就在一起了。”刚成为新娘的女孩子在采访中回忆道。</span></p>
+<p><span style="font-size: 16px;">而通过游戏结缘的年轻情侣，决定走入婚姻的殿堂时，理所当然地将TGC《和平精英》展台当作了最佳举办地。他们在各位玩家同好的见证和羡慕里，拍摄了“和平精英”主题婚纱照，完成了一场充满仪式感的婚礼。新娘当然也特别满意，“这样的经历比常规那种（结婚）更有意义”。</span></p>
+<p><span style="font-size: 16px;">这场婚礼声势浩大——#情侣蹭展会飞机结婚#事件被网友传到网络上之后，就引发多方关注，央视网、光明网，人民日报海外版、澎湃新闻等媒体纷纷转载传播，网友们也对这对和平精英玩家新人送上祝福。</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201129/0b99228fb9894a6689e1ba8173179fca.png" /></p>
+<p><span style="font-size: 16px;">不过，能通过游戏收获爱情的玩家毕竟是少数。在央视网新闻评论区，一位玩家的留言道出了大多数人玩游戏的现状——“对象没有，兄弟有（龇牙笑）”。这些兄弟可能是现实兄弟，也可能是网络兄弟，但这些兄弟之间的情谊殊途同归——在《和平精英》每一局的协作配合中得到升华。</span></p>
+<p><span style="font-size: 16px;">当然，这些兄弟也因着“精英冒险俱乐部”的机会，聚在一起，组成4人小队，在线下抢空投，飙车射击，体验到了和线上如出一辙的游戏及社交快乐。</span></p>
+<p><span style="font-size: 16px;">事实上，《和平精神》游戏本身就具备很强的社交属性，有了IP线下窗口的补充，这一属性也将被更深刻地感知到——玩家通过“精英冒险俱乐部”，能够延伸在线上积累的情感，找到认同感，也能在线下发生一些更有人情味的故事，碰撞出与线上殊途同归的社交火花。</span></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">人设：彰显潮流人设，打造一脉相承的IP体验</span></strong></span></p>
+<p><span style="font-size: 16px;">《和平精英》究竟为什么能得到玩家始终如一的喜爱？线下IP展台“精英冒险俱乐部”又为什么能让我们感受到同线上一脉相承的竞技和社交魅力？此次TGC，“精英冒险俱乐部”提供了一种解题思路：保持人设。</span></p>
+<p><span style="font-size: 16px;">《和平精英》作为IP构建者，用游戏中大大小小的具象或意象元素形成了自己的IP人设，这个人设承载了玩家对IP的认知和情感，也代表了玩家心中对IP的印象和期望。因此，在各种IP拓展项目中，他们都需要始终遵循IP人设，玩家才能感受到专属于《和平精英》的特质和魅力， <span style="font-size: 16px;">不会有割裂感和违和感</span>。 </span></p>
+<p><span style="font-size: 16px;">一直以来， <span style="font-size: 16px;">《和平精英》</span>都给人一种潮流、会玩儿的印象，他们总能通过与各种潮流元素碰撞，强化IP人设和象征物，从而烘托IP潮流文化氛围，给予玩家从一而终的、连贯性的人设呈现。 </span></p>
+<p><span style="font-size: 16px;">比如在线上，《和平精英》多款皮肤设计紧跟潮流，尽显潮酷风范。不久之前，《和平精英》还邀请了四名娱乐圈各领域的头部明星做代言人，向玩家和泛娱乐用户再一次传递了他们的潮流属性。</span></p>
+<p><img src="//p9.itc.cn/q_70/images03/20201129/01cf76e3a4ba4275b4577052f9c6c6da.png" /></p>
+<p><span style="font-size: 16px;">此次TGC，《和平精英》长期形成的潮流文化印象也得以体现——单是音乐派对就办了两场，玩家可以在“吉利舞池”和“心跳之夜”中，随音乐一起舞动。</span></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201129/c8d9f8c83b374788b298d03657f9461a.png" /></p>
+<p><span style="font-size: 16px;">值得一提的是，“心跳之夜”邀请到了《明日之子》乐团季高人气乐团“水果星球”前来助力。该乐团成员本身也是《和平精英》玩家，“私底下会在一起打游戏”。吉他手张旸甚至在微博上晒出了以“精英冒险俱乐部”周边为原型创作的简笔画，并配文“PDGYYDS（平底锅永远的神）”；闫永昌则用唢呐演绎了游戏语音“救救我”，与全场用户来了场“唢呐蹦迪”。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201129/4497d85e04d0403393e439e11f66625c.png" /></p>
+<p><span style="font-size: 16px;">没有人能否定这场音乐派对呈现出的IP人设，也没有人能抵抗用音乐营造出的“竞技冒险世界”——“心跳之夜”吸引近4000人到场，规模堪比小型音乐节。在微博上，#和平精英心跳之夜#的话题也收获了2.6亿阅读量。</span></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201129/d38cf349a01441fd8196c77bb9b69a48.png" /></p>
+<p><span style="font-size: 16px;">除潮流化地彰显IP人设外，“精英冒险俱乐部”对《和平精英》IP人设的承袭，在现场很多小细节中也体现地淋漓尽致。</span></p>
+<p><span style="font-size: 16px;">比如展馆里面的装饰地面上，放置了与游戏建模完全相同的草丛，地面各角落里还散落着装饰木盒，玩家看到这个布置的瞬间，脑海里很轻易就能联想起在游戏中落地成盒的场景。再比如现场四人小队Coser遵循角色细节，即使在炎热的天气下，ok绷也一直贴在脸上。四人小队中甚至还有外籍Coser来呈现角色，严格还原IP的设定。</span></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201129/af0500192c3f40babf92f2afb2119e5c.png" /></p>
+<p><span style="font-size: 16px;">“精英冒险俱乐部”现场甚至还布置了黑话墙，玩家在《和平精英》中常用的黑话被铺满墙面，并用类似街头涂鸦的形式呈现——这也是IP人设的一种体现。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201129/53cb3c16359446ec8d222354a2ca0b24.png" /></p>
+<p><span style="font-size: 16px;">由此可见，《和平精英》非常珍视游戏沉淀的IP资产，在每一次线上或线下的的IP内容拓展中，他们都会谨慎对待、合理使用这些IP资产，给予玩家统一且流畅的IP体验的同时，保持创新，打造调性统一且多元的“竞技冒险世界”。</span></p>
+<p><span style="font-size: 16px;">而有了线下IP品牌“精英冒险俱乐部”的《和平精英》可谓是如虎添翼，毕竟这打破了IP拓展的时空局限。往后的日子里，玩家能感受到《和平精英》用潮流人设打造的多维竞技冒险和社交体验。</span></p>
+<p><span style="font-size: 16px;"><strong><span style="font-size: 16px;">结语：</span></strong></span></p>
+<p><span style="font-size: 16px;">“精英冒险俱乐部”作为《和平精英》现实生活里的IP外显呈现，能持续用创新的方式承载与体现IP内容，让玩家获得统一、线性的IP体验，可以说在各个层面都扩大了《和平精英》IP发展的想象力和可能性。</span></p>
+<p><span style="font-size: 16px;">可预见的，“精英冒险俱乐部”未来可以用各种文创落地、BD合作等，把竞技冒险世界带到线下，丰富玩家的冒险途径，打造玩家在现实中与《和平精英》IP世界以及其他玩家沟通的平台，实现IP拓展与构建“全球玩家的竞技冒险世界”的正耦合。</span></p>
+<p><span style="font-size: 16px;">同时，基于《和平精英》一直以来「在游戏中看到更多用户喜欢的东西，在用户喜欢的地方看到更多游戏内容」的IP发展理念，以及「会玩儿」的潮流文化属性，在各种IP布局加持下，“精英冒险俱乐部”、《和平精英》、甚至是他们所传递的竞技冒险世界理念，在玩家及泛用户中的认同感和影响力，都将得到显而易见的提升。</span></p>
+<p><span style="font-size: 16px;">毕竟，它通过对经典元素的复刻，实实在在构建出了统一人设的IP线下场景——玩家不再只是在游戏中体验，而是拓展到线下场景亲自成为特种兵，这种新鲜感和沉浸感非比寻常。同时，以往游戏中的IP潮流资产，也终于可以在现实中潮流化地展现。</span></p>
+<p><span style="font-size: 16px;">比如本次还原潮流电音元素，邀请水果星球乐团呈现出了一场堪比小型音乐节的live表演，以及邀请调酒师为到场玩家调“和平精英”主题饮料等等，这些都是时下流行的“潮”体验，既能使年轻用户从中获得新鲜感，也贯彻了IP一直以来的潮酷人设，一箭双雕。</span></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201129/0558bb97abc548a6bcdb577b62d45b78.png" /></p>
+<p><span style="font-size: 16px;">综上所述，《和平精英》线下IP窗口构建思路一目了然：贯彻IP属性，构筑线性IP无限生命力；用创新形式丰富玩家线下竞技冒险与社交体验，以及线下场景“可触达，可触摸，实体化”的体验路径，给予用户统一却又富有新鲜感的IP体验感受，吸引更多的玩家和泛用户。</span></p>
+<p><span style="font-size: 16px;">目前，“精英冒险俱乐部”作为《和平精英》游戏文化结晶，已经通过TGC2020的亮相得到了大家认可，也提高了线下IP体验的门槛。</span></p>
+<p><span style="font-size: 16px;">未来，《和平精英》还将围绕“竞技冒险世界”精神内核，从用户喜好角度出发，多维度、多领域构建IP线上和线下内容，向大家展示包括但不限于“科技冒险”、“潮流冒险”、“艺术冒险”等IP拓展案例，持续创造既拥有多元乐趣、又耳目一新的“竞技冒险世界”体验。</span></p>
+<p><span style="font-size: 16px;">我们也期待着“精英冒险俱乐部”作为IP资产沉淀，给行业和玩家带来更多惊喜和故事。</span></p>
