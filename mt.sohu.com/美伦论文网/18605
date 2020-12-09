@@ -1,0 +1,97 @@
+➜批判性思维：推理形式之演绎推理
+http://www.sohu.com/a/437167713_490529	11000
+<p><strong>演绎推理的基本目的是从一些假设或前提起步，并从中提取一个结论——一个逻辑结论。</strong>这个结论虽然是隐藏的，但它被蕴含在前提之中。因此，举个最简单的例子，假设我们作出以下断言：</p>
+<p>1a. 与化石燃料相比，核电对环境造成的风险更大。</p>
+<p>那么很简单的通过演绎推理可以得到的结论是</p>
+<p>1b. 与核电相比，化石燃料对环境造成的风险更小。</p>
+<p>任何能理解句子意思的人都会同意1b是1a的推论，也即1b可以从1a由<strong>演绎推理</strong>得出。因为无论两个对象A和B是什么，如果A比B多，那么肯定B比A少。</p>
+<p>因此，在一般情况下，<strong>有效的</strong>演绎推理的定义是：（1）结论可以从前提中推断出来，或者说，（2）前提中蕴含着结论中的论断。要注意的是，演绎推理的<strong>有效性</strong>与结论（和前提）是否为真无关。例如从(1a)到(1b)的推理，不需要关心(1a)和(1b)本身的真实性。只要有人（可能是错误地）声称，核电会带来更多的风险，那么听众就可以合理地推断出，此人认为化石燃料会造成更少的风险。因此，无论1a是否为真，1b是1a的推论。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201209/f11acd94eaba43c0a739081f0a0c8872.png" max-width="600" /></p>
+<p><strong>在演绎推理中，我们的目标是对前提中的某些信息（或所有信息）进行转换、重新表述或转述。关于转述的运用方法，大家可以参考：</strong>http://www.lxws.net/ask.php?id=2164</p>
+<p>请记住，即使一个命题或语句是另一个命题或语句的推论，这两个语句也不需要为真。我们可以考虑另一个例子。假设有人断言</p>
+<p>2a. 葛底斯堡演说比《独立宣言》篇幅更长。</p>
+<p>上过美国历史课的每个学生都知道2a是错误的。但是，无论2a是否错误，我们都可以据此有效推论出2a的一个推论</p>
+<p>2b. 《独立宣言》比葛底斯堡演说短。</p>
+<p>该推论是有效的（即使结论是不正确的），因为该结论逻辑上（更准确地说是演绎地）从2a得出：正如我们所知，2b中出现的“ A比B短”的含义无非只是2a中的“ B比A长”的换一种说法。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>2a和2b之间的演绎关系再次提醒我们，对演绎至关重要的<strong>有效性</strong>概念与真理概念不同。假命题也可以有自己的逻辑推论，就像真命题一样。</p>
+<p>那么，既然推理有效性不依赖于命题的真假，那么它依赖于什么呢？我们可以看看每种情况下的推理；<strong>这些推理过程其实依赖于普通的语法规则，依赖于诸如长短、大小这些词的公认含义。</strong></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201209/51b2bf03d78449a1aaebc28ff6b3c3ee.png" max-width="600" /></p>
+<p>当然，在许多情况下，演绎推理及模式比我们已经看到的例子要复杂得多。这是另一个例子：</p>
+<p>3. 德克萨斯州比加利福尼亚州大；加利福尼亚州比亚利桑那州大。因此，德克萨斯州比亚利桑那州大。</p>
+<p>这种例子被称为<strong>三段论。</strong>在三段论中，结论是从两个前提得出的。也就是说，承认两个前提正确性的任何人也必须承认结论的正确性。</p>
+<p>再次注意，结论的真实性并非仅通过推断的有效性来确定。(3)中三段论的结论碰巧是正确的。但这依赖于两件事情：1、三段论本身是有效的，2、三段论中的两个前提也是正确的。即使是加利福尼亚人也会承认，得克萨斯州比加利福尼亚州大，而加利福尼亚州又比亚利桑那州大。这时候我们说，推理(3)是一个<strong>可靠的</strong>推理，因为它是有效的并且所有前提都成立。所有真实证明其结论的论点都具有这两个特征。</p>
+<p>我们如何提取出保证(3)中论证<strong>有效性</strong>的东西？一个策略是通过分析其中“大于”关系的固有性质。因为无论A，B和C是什么，如果A大于B，并且B大于C，则A将大于C。最后一步是用“Texas”，“California”和“Arizona”替换A，B，和C。</p>
+<p>第二种策略是用图形。因此，(3)的第一个前提看起来像这样：</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201209/9373fb9265c140d5a325d85d49e3dc86.png" max-width="600" /></p>
+<p>TX: 德克萨斯州，CA：加利福尼亚州</p>
+<p>第二个前提看起来像是：</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201209/995c6d57263d41cfaf86e612aa7afc59.png" max-width="600" /></p>
+<p>CA：加利福尼亚州，AZ：亚利桑那州</p>
+<p>结论将如下所示：</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201209/1c60612d319e431bbc2cf438a9f7a8f5.png" max-width="600" /></p>
+<p>我们可以看到，这个结论是从前提得出的，因为它只不过是通过将两个前提相互叠加而得到的结论。因此，整个论证可以这样表示：</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201209/d2142ffd4f8347e096f9ac067ef582b0.png" max-width="600" /></p>
+<p>所谓的中项——这里是加州——从结论中消失了。它的作用仅限于建立其他两个项（德克萨斯州和亚利桑那州）之间的联系。这里用到的图示法在形式逻辑中被称为文式图。通过这种方式，可以直观地看出，结论是从两个前提中得出的。</p>
+<p>这两种策略都表明，<strong>演绎推理的有效性是论证的纯粹形式性质</strong>。每种策略都从所涉及的命题内容中抽象出形式，以表明前提中的概念与结论中的概念如何相关。</p>
+<p>但是，并非所有演绎推理都发生在三段论中。考虑以下论证：</p>
+<p>4.</p>
+<p>如果一个人过去是黑人奴隶，那么他可能比普通工人待遇更差。</p>
+<p>这个人过去是黑人奴隶。</p>
+<p>因此，他可能比普通工人待遇更差。</p>
+<p>这里的推理模式具有以下形式：如果A，那么B；已知A，因此，B。由A和B代表的命题的内容无关紧要；任何具有相同形式或结构的命题都将符合这个推理形式。包括使用无意义的词语建立的断言，如本例所示：</p>
+<p>5.</p>
+<p>如果琴瑟琵琶，那么魑魅魍魉。</p>
+<p>琴瑟琵琶。</p>
+<p>因此，魑魅魍魉。</p>
+<p>论证5也具有形式：如果A，那么B；已知A，因此，B。所以，作为一个推理，它的有效性并不比(6)中推理要差。它只是前提和结论都毫无意义。换言之，除非前提和结论是真实的，否则您不能使用有效的演绎论证来证明任何事情，但要前提和结论为真，首先也得要它们有意义。</p>
+➜生物Paper写作IMRAD结构介绍
+http://www.sohu.com/a/437195702_490529	19855
+<p class="ql-align-justify"> Paper其实类似于八股文，它是以科学方法为基础的，并且使读者能够迅速理解研究的要点。生物paper一般采用IMRAD（Introduction，Methods，result and discussion）的格式，包括标题、摘要、引言、方法、结果、讨论和参考文献部分等。当然每个杂志都略有变化，具体以各个杂志的投稿说明为准。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201209/9e9b3321b159426ba3bcfc3987e91132.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>Title</strong></p>
+<p class="ql-align-justify">文章题目应该在手稿第一页的顶端。题目应该和你的名字一起放在第一页。你还应该列出参与研究项目的其他同学或研究团队成员的名字。这些名字应该在你的名字后面。</p>
+<p class="ql-align-justify">科学文章的题目应该总能聚焦研究结果，并包含其核心信息，让读者能一眼看出来你这篇paper做了什么或者你的核心结论是什么。</p>
+<p class="ql-align-justify">例如像“A Biology Lab Report”这样的题目，读者不知道这项工作是涉及动物、植物还是微生物，也不知道测量了哪些指标。以下是本人的一篇paper，仅供参考哈:</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201209/560ef1a56c9c4f3c831512d01dc4f930.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">另外，注意title 中最好不要有a/an这种冠词，这些是没有任何信息的废词。 </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify"><strong>Abstract</strong></p>
+<p class="ql-align-justify">摘要是对研究内容的简短总结。摘要应该是一个段落，一般不超过250字（具体以各个杂志的投稿说明为准）。摘要通常包含一个背景、对假设和预测的清晰陈述、一个方法和一个结果。最后一句话应该传达你研究的big picture。<strong>注意细节的凝练和准确，因为一般大家只读title和abstract。</strong></p>
+<p class="ql-align-justify"><strong>Introduction</strong></p>
+<p class="ql-align-justify">引言简要描述了研究的目的，并应该告诉读者为什么要做这项工作。你应该简要描述一下前人对这个问题的研究，并提供足够的背景信息来引导读者。</p>
+<p class="ql-align-justify">把引言想象成一个漏斗。首先陈述一个非常宽泛的话题、问题、研究领域等。你可以先讨论与你正在研究的问题相关的一般问题或理论。从这个广泛的介绍，集中到你的具体研究课题和项目。</p>
+<p class="ql-align-justify">引言的最后一段应该包括对你所从事研究的假说和对预测的陈述。在这一段中通常以“我们假设x影响y…”或“假设x影响y…”这样的句子作为开头。这个假设通常是无方向性的，通常陈述一个普遍的“效应”，而不是某个东西“增加”或“减少”还应包括具体的预测陈述。</p>
+<p class="ql-align-justify"><strong>Methods and Materials</strong></p>
+<p class="ql-align-justify">在这一节中，你要充分详细地描述所收集到的数据的类型或实验步骤，以便实验能过重复进行。避免不必要的细节，只包括完成实验或收集数据所必需的信息。如果使用标准流程，引用参考文献并仅描述所做的修改(如果有)。关于引用参考文献的方法，大家可以参考：http://www.baydue.com/news/writingskills/393.html</p>
+<p class="ql-align-justify"><strong>用过去式和被动语态书写方法部分。</strong>不应该像在写实验室手册中的说明那样写它。相反，你应该专注于实验设计。</p>
+<p class="ql-align-justify">例如，不要写成：</p>
+<p class="ql-align-justify">For this experiment，you will need the following equipment: six petri plates, one liter of agar,and one inoculating loop. First pour agar into the six petri plates, theninoculate the plates with a fungus using the inoculating loop. Then you put theplates into the incubator.</p>
+<p class="ql-align-justify">传达上述相同思想的一种可接受的方式是：</p>
+<p class="ql-align-justify">Six petri plates were prepared with agar, inoculated with an inoculating loop, and placed in the incubator for 10 hours at 37℃.</p>
+<p class="ql-align-justify"><strong>Results</strong></p>
+<p class="ql-align-justify">在本节中，你要以最直接的方式展现数据，而不要对由此产生的结果或生物学意义进行分析（这些分析保留到“讨论”部分）。但是，你应该解释数据（最好是统计数据），着重展示重要数据，并指出数据中出现的模式、相关性和概括性。<strong>当然，本节要用过去式进行书写。</strong></p>
+<p class="ql-align-justify">数据通常被做成表格或图形。表格必须有标题（表格上方），并且图形必须带有标题（图形下方）。表格和图形都必须在文本中提及（以下面“怎样在文中提及你的图形与表格”为例）。“结果”部分仅包含表格或图形而没有描述性的话是不能被接受的。<strong>本部分有冗余的数据是不合适的，并且表格和图形形式均不应包含相同的数据；而是应以用最简洁的格式来展示数据。</strong></p>
+<p class="ql-align-justify">“结果”部分应描述表格和图中展示的结果，请注意在论文中稍后讨论重要数据。不要重复表格和图形中已经向读者展示清楚的内容，如果本部分结构合理，则可以同时展示实验结果和实验设计。“结果”中的一部分可能如下所示：</p>
+<p class="ql-align-justify">The number of bacterial colonies increased up to 40ºC, but decreased at higher temperatures (Figure 1).The greatest amount of growth occurred between 35° and 40°C.</p>
+<p class="ql-align-justify">在这个示例中，图1指的是其中展示数据的图形。在同一句话中，作者说了一些有关数据的信息，并向读者介绍了恰当的图形。该图形可能包含许多数据的重点（例如，从0℃到60ºC的区间中每间隔1ºC的细菌菌落数之差），但是作者并没有为读者提供对于每一个菌落的描述。</p>
+<p class="ql-align-justify"><strong>Discussion</strong></p>
+<p class="ql-align-justify">你的”讨论”部分应该被构建成一个倒漏斗形状。首先用一两段话囊括你的具体研究结果，以及你的假设是否得到支持。在你叙述了你的结果之后，你应该通过比较你的结果和发表的研究来扩大你的讨论。将你的结果与以前的研究结果进行比较，确保能够正确引用它们。你应该解释与其他研究者完成的任何相关实验的不同或相似之处。</p>
+<p class="ql-align-justify"><strong>如果你的结果与之前发表的研究结果不同，你应该讨论一下它们在生物学上的区别。</strong>在构建“讨论”的过程中，你会得出相关结果的结论，用合理的论据和科学文献来支持这些结论。实际上，你是在讨论区陈述和辩护一个观点。<strong>不要东拉西扯地谈论潜在的错误，或者把意想不到的结果归咎于你的研究团队。</strong></p>
+<p class="ql-align-justify">你应该以最后一段来描述你的结果如何应用到一些更广泛的话题上(很可能是你最开始介绍的话题)。这就应该将你的结果范围扩大（所有的树、所有的植物、甚至是地球等）以获得广泛的主题结论。<strong>这应该和你摘要的最后一句“big picture”在同一个主题上。</strong></p>
+<p class="ql-align-justify"><strong>Reference：</strong></p>
+<p class="ql-align-justify">最好引用原始文献，不要二次引用；注意文献编排格式，与你要投的刊物要一致，endnote有些默认格式是错的，要手动检查一遍。<strong>领域内重要的文献都要引用上，防止reviewer有意见。</strong></p>
