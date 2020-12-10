@@ -1,0 +1,618 @@
+➜从4个方面，深度解析App中的卡片切换与交互手势
+https://www.uisdc.com/card-exchange-and-interactive-gestures	58587
+<p>最近收到小伙伴的一个问题，以下两种卡片切换怎么用。</p>
+<p>以下是我收到的两个不同案例，第一眼给我们的感受就是这两个case不都是可以通过手指左右滑动嘛？</p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-398930" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-jx-20201204-1.png" width="979" height="600" /></span></p>
+<p>好像有区别，但是具体有什么区别，分别可以怎么用，一下子又说不上来，那么大家可以来听听我的理解！</p>
+<h4><span class="auto_menu">形态、手势与预期</span></h4>
+<p>不知道大家家里是否有两种门，一种是转动把手可以向内或者向外打开的，另一种是拽动把手进行左右移动的，就像下面这个样子。</p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-398931" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-jx-20201204-2.png" width="979" height="600" /></span></p>
+<p>我们可以通过把手和门的样式判断出如何对其进行操作，所以两种卡片，首先在形态上就有区别，一种是平铺一种是叠加，也就是一个是二维一个是三维。所以有小伙伴问要问，那又怎样，实质上都是卡片切换，为什么在banner上不可以用叠加态呢？</p>
+<p>除了在形态上的区别外，还有交互手势的区别，大家以为叠加和平铺都是轻扫切换吗，首先这两种形态都有通过轻扫手势可以进行状态切换的过程，但实质上，叠加状态控制的是当前卡片与下层卡片，而平铺状态控制的则是一整个轮播容器，并且叠加卡片除了轻扫以外还可以拖拽。</p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-398932" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-jx-20201204-3.png" width="1280" height="530" /></span></p>
+<p>这里再说一个交互手势的区别：轻扫（swipe）、甩动（flick）、拖拽（Drag）的区别，拖拽和前两者比较好区别，大家应该都玩过地摊游戏像套圈圈，轻扫和甩动就像你站在原地往目标一扔，而拖拽就像是你探出半个身子，把圈放到最近的一个玩具头顶上再放手，是不是很形象</p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-398933" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-jx-20201204-4.png" width="860" height="570" /></span></p>
+<p>那么轻扫和甩动的区别是什么呢，我们这里简单的描述两者在可见范围内的区别，比如：</p>
+<p><strong>1. 惯性</strong></p>
+<p>比如我们操作移动端信息列表的时候，大拇指对于内容界面的滚动进行的是甩动，上滑后页面不会马上停下，而会滚动一会再停下。这就相当于给了一个物理世界的摩擦力的效果，但是轻扫则几乎不明显。</p>
+<p><strong>2. 位移</strong></p>
+<p>轻扫所经过的位移较短，基本上在该容器中发生位移变化，虽然两者其实都可以不限制方向，但是位移的距离是有区别的，轻扫更短，甩动更长。</p>
+<p><strong>3. 力量</strong></p>
+<p>轻扫无论你的初速度还是力量多大，都只能完成稳定的动作与状态，例如侧滑删除，不管再怎么用力和加速都只能让对象在指定的范围内呈现。</p>
+<p><strong>4. 范围</strong></p>
+<p>这个其实很有意思，不知道大家最近是否更新了iOS，更新的同学可能在编辑闹钟页面会觉得想要原地爆炸，因为我们看下图</p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-398934" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-jx-20201204-5.png" width="1043" height="800" /></span></p>
+<p>无论是轻扫还是甩动，我们都需要有一个明确的范围，在老版本中的时间切换，轻扫和滚动都能很快速的选择到时间，因为我们可以同时看到上下文并且做出预判，但是新版本就变得有点阿西吧的感觉，为了更精准的选择到时间我们必须从轻扫/甩动换成滑动，甚至类似于拨动的手势，难用至极。所以轻扫的范围也会比甩动的视觉范围更小。</p>
+<p>那么轻扫和甩动怎么区别呢，大家可以理解为，轻扫是在甩动的基础上给被拖动对象增加了稳定效果，所以既然增加了稳定效果，那么惯性和位移都被固定、稳定化了，比如列表左滑删除，tab左右滑动的切换。</p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-398935" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-jx-20201204-6.gif" width="800" height="170" /></span></p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-398936" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-jx-20201204-7.gif" width="800" height="277" /></span></p>
+<p>另外，大家可能觉得甩动和轻扫可以控制我们界面中大部分对象，可以帮助我们高效浏览，而且要精确我们可以将甩动进行稳定的轻扫控制。但并非那么简单，我举两个糖炒栗子，例如音量和进度的调节，我们是不可以用甩动或者轻扫，因为无法准确控制，只能使用拖拽。</p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-398937" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-jx-20201204-8.png" width="979" height="600" /></span></p>
+<p><strong>5. 知乎的悬浮按钮</strong></p>
+<p>另外在知乎的话题切换中有个悬浮按钮，这个按钮不知道大家是否操作过，他既可以拖拽，也可以甩动，问题来了，如果对其甩动会出现两种情况，第一种，返回屏幕一侧吸附，第二种吸附到屏幕另一侧。</p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-398938" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-jx-20201204-9.gif" width="500" height="602" /></span></p>
+<p>两种情况取决于你是否甩动过了某一条“边界”，也就是说你的手指在控制这个“圆形”对象时，何时进行了“关闭”（也就是何时手指离开了屏幕），所以这里咱们要说的是，如何选用手势进行对象控制，要取决于具体的场景和需求，这里的圆形控制器并不需要非常精准位置，所以对其赋予了拖拽和甩动两个手势，那当然这里轻扫也可以啦，只是没什么卵用。</p>
+<p><strong>6. QQ的未读气泡</strong></p>
+<p>还有比如qq的未读气泡，拖拽和甩动都可以删除它，但是轻扫不行。</p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-398939" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-jx-20201204-10.gif" width="800" height="645" /></span></p>
+<p>其实这些规则我们在交互动效的工具中都可以很好的体现，比如拖拽开始-拖拽结束，对应的就是手指的接触拖动-手指的离开。</p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-398940" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-jx-20201204-11.png" width="1280" height="784" /></span></p>
+<p>所以做个小总结，轻扫是甩动的稳定化效果，并且适合距离较短的进行操作，轻扫和甩动都是非精确化操作。</p>
+<p>我们再回到这个案例本身，叠加和平铺卡片的交互手势，叠加卡片利用的是轻扫，并且还具有拖拽的手势属性，而平铺的卡片可以轻扫，相当于单张浏览，类似banner切换，并且也可以具有甩动的可能，比如淘票票的热映卡片，不过平铺的时候一般单张卡片不适用甩动，轻扫即可，因为单张卡片使用甩动，信息基本看不清楚，多张卡片使用甩动更容易提高检索的效率。</p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-398941" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-jx-20201204-12.gif" width="448" height="347" /></span></p>
+<p>另外用过探探的老司机们都知道，喜欢哪个美女帅哥就往右边“扔”卡片，为什么是扔呢，因为这个“扔”包含了选择的意思，就像性感的荷官在发牌一样，这张卡牌就是你的了！当然，既然发给你了，你也不能退，再想找回来就难咯</p>
+<p>所以其实在手势上，叠加态的卡片切换在我们的预期和常规使用中，有着选择、不可逆的属性，那这就和平铺的二维卡片切换就完全不同了。</p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-398942" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-jx-20201204-13.gif" width="544" height="733" /></span></p>
+<h4><span class="auto_menu">对比</span></h4>
+<p>叠加态的卡片更不方便信息对比，而平铺卡片则可以，例如腾讯视频的vip等级卡片切换。没有对比就没有伤害，不造成伤害，就促进不了买卖。所以你看非诚勿扰都是排一排给你选的而不是一个出来不行换另一个，因为你不知道下一个会不会更不喜欢。</p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-398943" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-jx-20201204-14.png" width="1043" height="800" /></span></p>
+<h4><span class="auto_menu">神秘性</span></h4>
+<p>叠加态的卡片就像是德州扑克一样，不知道大家是否all in过，是否赌赢过最后一张牌，在没有发出那张牌的时候，我们总是抱着期望，所以叠加的卡片，在我们普通人的预期中是潜意识的提高的，而平铺的卡片就像已经发在你手里的卡片，你可以观察、对比，但是没有了未知感和神秘感，所以抖音是如何让你上瘾的，让你沉浸在其中的，大家现在可以理解了吗。</p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-398944" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-jx-20201204-15.png" width="800" height="464" /></span></p>
+<h4><span class="auto_menu">有限与无限性</span></h4>
+<p>叠加态的卡片在展示上会给你一些样式，告诉你这里有好多张，并且是永远切换不完的，而平铺卡片则通常需要告知用户外这里有几张，你看到了第几张，所以又多了一个轮播指示器来帮你记忆。</p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-398945" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-jx-20201204-16.png" width="933" height="600" /></span></p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-398946" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-jx-20201204-17.png" width="933" height="600" /></span></p>
+<p>综上所述，方案没有好坏，只有适不适合当前的场景。所以，在什么场景下用什么样的切换大家学废了吗？</p>
+<p>欢迎关注作者的微信公众号：「应谋鬼计」</p>
+<p><span class="img-zoom"><img alt="从4个方面，深度解析App中的卡片切换与交互手势" class="alignnone size-full wp-image-315703" src="https://image.uisdc.com/wp-content/uploads/2019/04/ymgjqr.jpg" alt="求职必看！设计师晋升答辩全面指南" /></span></p>
+➜从易读性和易操作性两大方面，教你做好表格设计
+https://www.uisdc.com/form-design-4	59789
+<p>导语：​提起中后台，除了高效、灵活和强大之外，不可忽视的还有它的海量数据。海量数据的筛选与呈现，直接决定决策人员的效率高低。本文作者主要是结合自己在实际工作中遇到的表格设计问题，针对Web端数据呈现方式之一，表格的设计进行探讨。</p>
+<p>表格，是一种常见的信息组织整理手段。常用来展示、保存、对比分析、排序、筛选 、归纳等，是最清晰、高效的数据展现形式之一，由内、外两部分组成。</p>
+<ul>
+<li>内部：由表头、表体、表尾共3部分组成；</li>
+<li>外部：由筛选区域、操作按钮区、分页区共3大类组成。</li>
+</ul>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399275" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-1.jpg" width="1469" height="763" /></span></p>
+<p>说完表格的组成，接下来将会从易读性和易操作性两个方面来分析下表格设计。</p>
+<h4><span class="auto_menu">易读性</span></h4>
+<h5>1. 行与列</h5>
+<p>表格的组成，也可以看作行与列的自由组合，这种组合赋予了表格多样性的特点。行与列构成了单元格的长与高，不同的长高会有疏密之分，充实与透气之感。</p>
+<p>B端中后台通常会对应不同的角色及场景需求，根据目的及信息主体的不同，让用户根据自己的需求来定义表格的展示列及列的顺序，也可以通过行与列的显隐变化，来更好的满足信息的传达。</p>
+<p>但需要注意的是系统应记住用户上一次的自定义列设置，减少用户重复操作。对于列的选择，应尽量减少列的数量，既要展示用户必要信息，又要避免出现用户无关数据，以免信息冗余，影响信息阅读效率性。对于用户需要的非重点、辅助性信息可以通过入口提供的方式来解决。</p>
+<p>默认排序，应从用户目的出发，遵循用户查看数据的习惯，尊重数据之间的关联性，设计用户查看、操作数据的路径，而非随机排列。</p>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399276" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-2.jpg" width="1282" height="1381" /></span></p>
+<h5>2. 数据展示</h5>
+<p>B端中后台中的表格展示的数据多且杂，这就要为用户先一步对数据进行梳理归纳，提高用户获取信息速度。</p>
+<p>为便于对数据进行对比分析，一般需要在原始数据的基础上给出差值、升降变化、平均值、总计等数据处理结果，减少用户二次加工数据的过程，提升用户阅读信息的效率。</p>
+<p><strong>数据汇总展示</strong></p>
+<p>在表头或者表尾分别提供了总计的数据，方便用户进行快速查阅。</p>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399277" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-3.jpg" width="1282" height="1381" /></span></p>
+<p><strong>数据对齐展示</strong></p>
+<p>常用对齐方式有数字右对齐，文字左对齐，混合型文本左对齐，列标签的对齐方式与数据的对齐方式保持一致。这样能形成的视觉边界线，便于视线的流动，从而快速提升数据的浏览、对比效率。</p>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399278" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-4.jpg" width="1282" height="1372" /></span></p>
+<p><strong>空数据展示</strong></p>
+<p>B端中后台数据类型较多，对于空数据，切忌不要与数据为“０”进行混淆，对于空数据通用做法是用“－”表示，而不是什么都不显示，会让用户误以为是没有数据还是“0”数据。</p>
+<p>最好做法就是为空数据做出释义，可以加在“列标签”的名词解释文案中。</p>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399279" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-5.jpg" width="1282" height="1386" /></span></p>
+<p><strong>数据的关键属性标识展示</strong></p>
+<p>对于用户重点关注的数据状态、上升和下降等，可以用符号进行标识，帮助用户快速定位到目标信息。</p>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399280" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-6.jpg" width="1282" height="1386" /></span></p>
+<h5>3. 固定表头、固定列和固定分页</h5>
+<p>在有限屏幕内，有限的内容展示区域内，阅读丰富且繁多的表格时，用户不得不拖动横向或纵向滚动条来阅读信息。</p>
+<p>固定表头、固定列和固定分页，能够让用户明白当前单元格内信息的属性而不至于不知道该信息的意思。</p>
+<p><strong>固定表头</strong></p>
+<p>在固定的小区域内滚动会非常局促，而且区域滚动和全屏滚动同时存在时体验也很不好。固定表头可帮助用户识别信息，在全屏滚动上去后固定表头，有利于用户向下翻屏时能够便利的阅读数据。</p>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399281" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-7.jpg" width="1534" height="2158" /></span></p>
+<p><strong>固定列</strong></p>
+<p>固定列的内容可视业务及目标用户的诉求而定，一般采用方法是固定比较重要信息，方便用户进行数据定位与对比，最好可以让用户自定义，满足不同用户诉求。</p>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399282" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-8.jpg" width="1534" height="2158" /></span></p>
+<p><strong>固定分页</strong></p>
+<p>分页处理目前有放在上部、下部或上下部均有，需要根据场景来选择。分页固定目的是为了省去用户需要翻到顶部或底部进行操作的麻烦。</p>
+<p>特别是可以自定义每页的数量和需要横向拖动数据查看，这就需要把分页固定在底部，方便用户横向拖动滑条查看信息和进行翻页操作。</p>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399283" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-9.jpg" width="1534" height="2158" /></span></p>
+<h5>4. 分页</h5>
+<p>在Web端中的表格，涉及到跨页的数据操作时，分页会带来不便。</p>
+<p>但往往受限于数据加载的压力，这种情况在大厂中尤其突出，加载数据都是亿量级别的，在Web端和手机端都需要实时下载数据的终端，我们通常做法就是提供分页展示数据来缓解服务器的压力。</p>
+<p>表格中的的数据内容超过一定“数量”时需要提供翻页功能，而这个“数量”是由表头的数据的高度、表格的行间距、目标用户群体的显示设备的配置等因素来决定。</p>
+<p>原则上整张表不要超过一屏，考虑到每个用户的使用习惯，我们一般提供可以让用户自定义每页的显示的数量，相比于跨屏翻页而言，向下滚屏会更便利，也更符合浏览信息路径。</p>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399284" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-10.jpg" width="1440" height="900" /></span></p>
+<h5>5. 全屏查阅</h5>
+<p>表格全屏展示是非常有必要的：</p>
+<ul>
+<li>特别是在小屏设备上，全屏模式下可以直接屏蔽掉左侧导航栏、上方的报表区域和顶部的导航栏，可为用户提供更多可视区域。</li>
+<li>在大量数据前面，可为用户提供沉浸式阅读体验，让用户更加专注，可减少与表格无关的视觉干扰。</li>
+<li>用户可通过ESC键或关闭按钮随时退出全屏模式，操作成本低。</li>
+</ul>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399285" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-11.jpg" width="1524" height="2213" /></span></p>
+<h4><span class="auto_menu">易操作性</span></h4>
+<h5>1. 筛选</h5>
+<p>在大量的表格信息中，如果没有筛选查找信息简直犹如大海捞针，而表格跟筛选是不分家的。</p>
+<p>说到表格一定会说到筛选，筛选也就是数据过滤，常在数据量较大的场景中使用，其目的是通过关键字搜索和条件筛选能够帮助用户快速的找到所需要的信息内容。</p>
+<p>对于表格外部筛选，如果有时间会单独出一篇详情介绍。这里不展开详细说。</p>
+<p>筛选根据筛选功能的位置不同，可分为表外筛选和表内筛选。</p>
+<ul>
+<li>表外筛选：筛选功能位于表格上方，与表内筛选的不同之处是过滤值可以不限“表格列”的内容、可单次进行多列的交叉筛选。</li>
+<li>表内筛选：筛选功能位于表格内，也就是放置在列标签上的筛选，受“表格列”内容的限制，仅能做单次单列的筛选。</li>
+</ul>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399286" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-12.jpg" width="1242" height="570" /></span></p>
+<h5>2. 数据选择</h5>
+<p>在信息列数较多的情况下，数据的选择就尤为重要。当鼠标指针悬停在表格列或行时，给予视觉状态的变化提示，可以让用户捕捉到所在的位置，而不至于视觉上的错行，能够降低人的心理压力和增加掌控感。根据数据选择功能分为单个选择和批量选择。</p>
+<p><strong>单个选择</strong></p>
+<p>鼠标指针悬停在整行时应与默认态有所区分。当标识选中行或选中行的数量，选中行可操作的命令状态须同步，明示当前行可操作的命令或反馈当前已选行的数量。</p>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399287" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-13.jpg" width="1244" height="690" /></span></p>
+<p><strong>批量选择</strong></p>
+<p>提供选择当前页部分行、选择全部行、取消选择全部行三种功能；状态反馈分为半选态 、未选态、全选态共三种。</p>
+<ul>
+<li>当用户未进行选择时，表头的选择框的状态是未选态；</li>
+<li>当用户选择一行数据时，此时表头的选择框的状态切换为半选态，同时反馈此行的数量；</li>
+<li>当用户在表头勾选“当前页所有行”时，表头的选择框切换成了全选态，且给出了选择“全部所有行”的操作。</li>
+</ul>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399288" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-14.jpg" width="1258" height="2193" /></span></p>
+<h5>3. 数据操作</h5>
+<p>对于数据的操作，主要针对表格内部来说。表格操作大体可分为显性操作和隐形操作。</p>
+<p><strong>显性操作</strong></p>
+<p>指操作选项显示在行内，优点是明显直观，可以根据列表上的信息做出快速的判断并且高频发生的操作。</p>
+<p>适用列数较少的列表。但弊端是信息过载，尤其是列数较多，可展示列数会随操作数增加而减少，同时误操作率较高。对于危险系数比较高的操作，也不建议采用这种设计。</p>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399290" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-16.jpg" width="1242" height="570" /></span></p>
+<p><strong>隐性操作</strong></p>
+<p>当鼠标悬停或点击时才显示其他低频、高危的操作选项，优点是界面简洁明快，信息密度低，可以帮助页面突出更加重要的信息，可减轻空间压力，减少干扰。</p>
+<p>弊端是增加用户的点击次数和提高了操作门槛。列数较少的表格不适用隐性操作。</p>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399290" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-16.jpg" width="1242" height="570" /></span></p>
+<h5>4. 数据下载</h5>
+<p>为方便用户对数据进行再次整合分析、统计分析等，可提供数据下载功能及多种下载格式。</p>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399291" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-17.jpg" width="1238" height="1228" /></span></p>
+<h5>5. 空表</h5>
+<p>对于B端中后台来说，表格显示最多就是两种情况：一种就是表格有数据，这种最容易解决，有数据就显示相应数据；还有一种表格是没有数据，也就是空表状态，这也是让很多设计师容易忽略掉的页面。</p>
+<p>空表分两种：可创建和纯展示</p>
+<p><strong>可创建</strong></p>
+<p>是用户有创建诉求，数据是由用户或系统产生的，可创建分两种：</p>
+<ul>
+<li>比较轻量的方式，是直接示意用户创建数据，无须给出表格样式。</li>
+<li>在表格的空白内容处加入创建的快捷入口，引导用户新建。</li>
+</ul>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399292" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-18.jpg" width="1238" height="1325" /></span></p>
+<p><strong>纯展示</strong></p>
+<p>没有创建诉求的，数据是系统产生的，不是由用户创建的，直接告之暂无数据。</p>
+<p><span class="img-zoom"><img alt="从易读性和易操作性两大方面，教你做好表格设计" class="alignnone size-full wp-image-399293" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ww-20201206-19.jpg" width="1920" height="878" /></span></p>
+<h4><span class="auto_menu">写在最后</span></h4>
+<p>看上去平淡无奇的数据表格，其实是非常重要的，通过合理的组织架构和呈现方式，使原本枯燥的数据呈现出生命力，这是一件很神奇的事。</p>
+<p>而围绕用户目的与实际使用场景，为用户准确高效的筛选信息，反映隐藏在数据背后的秘密，促进信息的理解，降低用户的决策成本。设计一个准确、高效、易用的表格，更是一件考验设计师功底的事。</p>
+<p>[link https://www.uisdc.com/form-design-guidelines]</p>
+➜晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文
+https://www.uisdc.com/form-follows-function-2	61001
+<p>在过去的故事里，史太浓经常提到一句设计哲学：“形式追随功能”（Form follows function），并且在我自身设计工作中，一直信奉此话。</p>
+<p>说此话的人其实来自建筑界，被誉为“摩天大楼之父”，是本期故事的主人公——路易斯·沙利文（Louis Sullivan）。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="size-full wp-image-399429 alignnone" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-1.jpg" width="800" height="550" /></span></p>
+<p>△ 路易斯·沙利文</p>
+<p>路易斯·沙利文有个着名门生，就是专爱给甲方带绿帽子的弗兰克·赖特（‎Frank Lloyd Wright），毫不夸张的说，师徒两人撑起了美国现代建筑半边天，其故事详见：</p>
+<p>[link https://www.uisdc.com/franklloyd-wright]</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399430" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-2.jpg" width="800" height="550" /></span></p>
+<p>△ 弗兰克·赖特</p>
+<p>在老师沙利文的基础上，赖特后来也形成自己一句设计哲学：“功能就是形式”。（Function is form），师徒一唱一和，还真的把设计本质说得透彻。</p>
+<p>所谓名师出高徒，今天我们一起来了解下大神背后的大神——路易斯·沙利文。</p>
+<h4><span class="auto_menu">麻省理工辍学生 </span></h4>
+<p>沙利文1856年出生于美国波士顿，父亲是爱尔兰人，母亲则是瑞士人。</p>
+<p>沙利文还有一个哥哥，因为父母去了芝加哥工作的关系，无人照料，小时候两人都在祖父母家生活，祖父母有一个农场，所以沙利文与哥哥每天除了上学就是野在外头跟邻居玩耍。</p>
+<p>在沙利文17岁时候考入了美国历史上第一所有建筑学的“麻省理工”，当时是1872年，麻省理工建校也不过7年。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399431" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-3.jpg" width="800" height="550" /></span></p>
+<p>△ 19世纪的麻省理工</p>
+<p>沙利文从小好动，习惯自由自在，对于当时麻省理工那种严谨但教条的教学方式非常不耐烦，经常迟到旷课，学习一年之后实在继续不下去决定辍学。</p>
+<p>当时正值法国印象派兴起，他希望去巴黎的美术学院看看，顺带在那边找一份建筑学徒类的工作。</p>
+<p>如此这般，他到了巴黎，而且还真的找到一所愿意雇佣他的建筑事务所，叫“弗莱斯与惠特建筑事务所“（Furness and Hewit）。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399432" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-4.jpg" width="800" height="550" /></span></p>
+<p>△ 弗莱斯</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399433" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-5.jpg" width="800" height="550" /></span></p>
+<p>△ 弗莱斯与惠特建筑事务所作品</p>
+<p>在这里沙利文其实也呆得不久，仅仅一年之后又离开了，但此处让他真正接触与学习到建筑技术，所谓实践一年胜读三年，但成效自然因人而异，史太浓一直认为学院教育不是最好的，但也许是最保险的。</p>
+<p>在沙利文离开美国前往巴黎的前一年，也就是1871年，其父母所在的城市芝加哥发生过一场惨烈大火，起火原因据闻只是因为一名妇人在照料生病奶牛时打翻马灯，仅仅几分钟演变为熊熊烈火。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399434" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-6.jpg" width="800" height="550" /></span></p>
+<p>△ 美术作品记述了芝加哥这场大火</p>
+<p>因为当时芝加哥的木质房子数量居然多达60000栋，这次大火历史有名，整个城市烧了足足30多个小时，变成了一堆废墟。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399435" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-7.jpg" width="800" height="550" /></span></p>
+<p>△ 大火之后的芝加哥</p>
+<p>所以此后几年芝加哥都一直在努力重建，沙利文既然学习建筑自然是一个机会，所以在父母亲的建议下，他从巴黎回到美国芝加哥发展。</p>
+<p>虽然沙利文不爱读书，个性倔强，但在建筑上确实富有天赋与灵性，很快他在芝加哥就被“威廉·詹尼“事务所聘用，在这里他开始进入到芝加哥建筑界主流。</p>
+<h4><span class="auto_menu">芝加哥建筑学派 </span></h4>
+<p>所谓时势造英雄，1871年的这场大火让芝加哥聚合了不少优秀建筑师，慢慢形成所谓的“芝加哥建筑学派“（Chicago School of Architeture）。</p>
+<p>这个学派史太浓会找机会专门说，本次我们要清楚的就是该学派是“围绕高层建筑设计研究“为主的松散团体，说白了就是学者与评论家弄出来的称谓，并不存在什么具体负责人或者组织者。</p>
+<p>为啥要围绕高层建筑展开研究呢？原因是因为那时候芝加哥的地开始变得很贵，而地贵的唯一原因就是人口的大量及快速流入，芝加哥在美国而言地理位置优越，所以19世纪期间人口从建市时候的4千人勐增到后来的170万人。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399436" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-8.jpg" width="800" height="550" /></span></p>
+<p>△ 建市不久的芝加哥</p>
+<p>因此将楼房建高一些是节省土地的最佳方式之一，1871年这一场大火一下子荡平城市，似乎倒是解决了他们旧城改造的困难，“摩天大楼”就首先在芝加哥出现了。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399437" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-9.jpg" width="800" height="550" /></span></p>
+<p>△ 后来摩天大楼林立的芝加哥</p>
+<p>而核心人物之一就是沙利文，他被视为“芝加哥建筑学派”的带头大哥。</p>
+<p>此时已经来到1875年，沙利文中间曾回去过巴黎一次，他对巴黎美术学院一直抱有浓厚情怀，所以他在巴黎接受了学院派建筑的教育，了解到很多古典建筑精华，后来还先后到过意大利罗马及佛罗伦萨旅行，亲身观察古典建筑的核心魅力。</p>
+<p>所以后来在沙利文的建筑中，我们总会看到古典主义的装饰与现代几何的和谐结合。</p>
+<p>回到芝加哥的沙利文正式自己创业，合伙人叫艾德勒（Dankmar Adler），两人从1881正式开展合作，持续了16年之久，一共设计建造了100多栋重要的高层建筑。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399438" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-10.jpg" width="800" height="550" /></span></p>
+<p>△ 艾德勒 Dankmar Adler</p>
+<p>艾德勒是一个非常善于企业管理的人，精于项目预算及处理诸多商务问题，同时还是一名跟甲方谈判的好手，所以刚好弥补了沙利文刚愎自用的性格，两人一个主外一个主内，相互补充，所以才能一起合作那么久。</p>
+<p>史太浓也开设计公司，假设自身特点善于创作为主，那么则需要一位精于市场的伙伴来补充，这个伙伴可以是合伙的，可以是外聘的，将会分担很多麻烦，提高创业成功率，因为我身边太多仅仅作品做得很棒的设计师其实开公司的路子都不太顺，包括沙利文后来单飞后也是如此，此为后话，先按下不表。</p>
+<p>沙利文第一个成名作品是“芝加哥大会堂”（ AuditoriumBuilding in Chicago），这其实是个综合性的商业建筑，也叫“芝加哥会议中心”，大楼本身有10层（当时而言属于高楼了），另外还有一个17层高的附属塔楼。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399439" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-11.jpg" width="800" height="550" /></span></p>
+<p>△ 芝加哥会议中心大楼</p>
+<p>建筑整体是一个U型布局，结构设计其实是艾德勒为主，当时用的还是旧式的墙承力结构，如果大家看过史太浓过去的分享，就知道世界上第一个柱承力的建筑（未必最早，但最着名）是1911年时候包豪斯创始人格罗皮乌斯做的法格斯鞋楦工厂，此前大部分建筑都是墙承力或者钢铁承力。</p>
+<p>[link https://www.uisdc.com/bauhaus-originator-walter-gropius]</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399440" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-12.jpg" width="800" height="550" /></span></p>
+<p>△ “芝加哥会议中心”模型</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399441" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-13.jpg" width="800" height="550" /></span></p>
+<p>△ “芝加哥会议中心”平面图</p>
+<p>外墙沙利文用了花岗石与石灰石两种材料为主，外部整理是简洁的，完全摒弃了当时美国还在流行的“新古典折中主义”手法（起源与特点详见「风格列传」），而且一些装饰细节没有用历史中那些经典纹样，反而借鉴于自然，这种手法其实源自当时已经在英国及法国流行起来的“工艺美术运动”及“新艺术运动”。（详见「现代设计简史」）。</p>
+<p>[link https://www.uisdc.com/graphic-design-development-biography-2]</p>
+<p>[link https://www.uisdc.com/what-is-modern-design]</p>
+<p>“芝加哥会议中心”更精彩的设计其实还有内部的大会堂，同样运用借鉴自然界的方式做了不少精致细节，比如墙面有浮雕，局部地方还进行镀金处理，灯饰的布局也非常考究，给当时人们耳目一新的感觉。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399442" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-14.jpg" width="800" height="550" /></span></p>
+<p>△ 芝加哥会议中心内部</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399443" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-15.jpg" width="800" height="550" /></span></p>
+<p>△ 芝加哥会议中心内部</p>
+<p>沙利文的建筑设计有一个很重要的特点，就是喜欢在现代简洁的造型基础上进行布局区域的“类古典”形式装饰，后来学习他手法的人不少，但似乎只有他能驾驭到最和谐最统一。</p>
+<p>所谓不破不立，沙利文这样的新颖做法让事务所很快收获到名声，继而又再推动自己的设计业务。</p>
+<h4><span class="auto_menu">代表作与理念 </span></h4>
+<p>沙利文一生中最重要的作品可以说就是1891年设计的温莱特大楼（Wainwright Building），相信大家只要看相关沙利文的讲述都必提及此楼。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399444" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-16.jpg" width="800" height="550" /></span></p>
+<p>△ 温莱特大楼</p>
+<p>这个作品最牛逼的地方就是开创了商业楼的“三段式”设计，就是底部做商业空间，中间做写字楼，顶部做机房。这种模式一直流行100多年直到如今还是高层商业楼宇的主流设计方式。</p>
+<p>这栋楼其实不高，就10层，但在当时而言已经是所在地“圣路易市”的最高建筑，这个作品还有三个有意思的地方：</p>
+<p>其一是：使用钢铁承力结构，当时而言属于领先技术。</p>
+<p>其二是：整栋大楼都采用了类似赤陶质感的红砖，非常显眼，让人联想到威廉莫里斯的红屋，也让我想到深圳某栋据闻曾不断发生“超自然事件”的“某银大厦”。</p>
+<p>其三是：楼顶段落与中间段落的水平部分有非常典雅的“新艺术”风格装饰纹样，跟大楼整体呈现的简洁形成强烈对比，有点类似平面设计中的“粗中有细”，这也是前面谈的沙利文惯用手法，温莱特大楼就是典型代表。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399445" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-17.jpg" width="800" height="550" /></span></p>
+<p>△ 温莱特大楼顶段局部</p>
+<p>另外，我们发现沙利文这种三段式设计创造出建筑立面的一种“韵律感”，底部段落强调水平横向布局，面积最大的中部段落则弱化与缩小横向部分，从而突出竖向元素，顶部段落装饰带跟飞檐再突出水平横向，整体显得横竖错落有致，奠定了日后摩天大楼结构与形式基础。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399446" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-18.jpg" width="800" height="550" /></span></p>
+<p>△ 温莱特大楼整体</p>
+<p>沙利文的代表作品当然不止我们本次谈的两个，例如还有1893年芝加哥国际博览会的交通运输馆，此馆为他博得一些国际名声，另外还有跟温莱特大楼双胞胎一样的保信大楼（Guaranty Building），大家可以自行多多了解。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399447" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-19.jpg" width="800" height="550" /></span></p>
+<p>△ 1893年国际博览会的交通运输馆</p>
+<p>沙利文本人其实也有着书立说，除了着名的“形式追随功能”理念外，他还有一个“建筑进化论”的说法，这个说法基于达尔文的进化论，其实当时达尔文的进化论还直接影响了“新艺术运动”的诞生。（详见史太浓「现代设计简史」）。</p>
+<p>这个论调具体是：沙利文认为建筑设计的发展也是有机的，美国建筑是欧洲建筑生物进化过程的延续，所以假设大家生搬硬套西方古典风格就是生物倒退的过程，是不合理与不明智的，这是一个“拟物”的比喻，他也是以此为一个基点来思考自己建筑的设计。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399448" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-20.jpg" width="800" height="550" /></span></p>
+<p>△ 如日中天时的路易斯·沙利文</p>
+<p>这个观点在当时美国颇受推崇，主张在继承中创新，也因此确定了他在现代建筑历史中重要的地位。</p>
+<h4><span class="auto_menu">惨淡晚年 </span></h4>
+<p>美国除了大家熟知的1929年华尔街崩盘引发的大萧条之外，其实在1893年也发生过一次严重经济危机，危机主要由欧洲撤回在美国的证券投资而触发。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399449" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-21.jpg" width="800" height="550" /></span></p>
+<p>△ 1893年美国经济危机</p>
+<p>当时有为数众多的银行与企业相继倒闭，房地产行业一下子滑到谷底，此时沙利文跟搭档多年的艾德勒也开始拆伙，因为1895年时候艾德勒提出想退出公司，沙利文因此暴跳如雷，指责艾德勒不忠不义，两人因此翻脸。</p>
+<p>就这样沙利文开始单干，没有了艾德勒协助，沙利文跟客户关系处得不好，他傲慢自大，显得目中无人，活像《侠客行》里的白自在，新工作变得越来越少，而合作的客户都验收得不太愉快。</p>
+<p>其实在艾德勒离开半年的时候，没有了沙利文他也过得不太好，所以曾经提出希望重建公司，但是被倔强的沙利文一口回绝，真是一个愚蠢的决定，艾德勒则在1900年时候因病去世。</p>
+<p>最后曾有人统计过沙利文生命中最后三十年的业务量，一共才20个委托，真是惨不忍睹。</p>
+<p>其实沙利文的设计水平完全没有下降，只是情商不高，这个期间他还是产生了佳作，比如施莱辛格梅耶百货公司（Schlesinger &amp; Mayer department store）。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399450" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-22.jpg" width="800" height="550" /></span></p>
+<p>△ 施莱辛格梅耶百货公司</p>
+<p>也因为这个项目发明出所谓的“芝加哥窗”，就是宽度大于高度的金属大窗，每扇窗都是一块巨大固定玻璃，两侧是可移动的窗框，让建筑外部看起来更加简洁大气。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399451" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-23.jpg" width="800" height="550" /></span></p>
+<p>△ 芝加哥窗</p>
+<p>沙利文这种情况其实史太浓认识类似的人，就是大神级水平，但脾气不好，那时候我跟其交流说过一句话：“客户会承认你牛逼，就是下次不找你而已。”。</p>
+<p>所以商业设计跟艺术创作有时候还是泾渭分明，就算艺术圈而言，善于交际也一直不是坏事，史太浓后面会跟大家聊一聊这类艺术家。</p>
+<p>除了事业失意，沙利文的婚姻也不太好，1906年跟太太分居，1917年离婚，两人也没有孩子，而沙利文的收入越来越少，他后期需要变卖自己的藏书及房子来维持生活。</p>
+<p>到了1920年时候，64岁的他甚至连办公室都没有了，搬到越来越便宜的酒店居住跟工作，最后一个作品是1922年的“芝加哥克劳斯音乐商店”。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399452" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-24.jpg" width="800" height="550" /></span></p>
+<p>△ 芝加哥克劳斯音乐商店</p>
+<p>其余时间则主要在写作自己的自传《一个想法》，最后到了1924年，收到自传样书仅仅一周，沙利文就去世了，终年68岁，晚年过得相当的不如意。</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-399453" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-wn-20201207-25.jpg" width="800" height="550" /></span></p>
+<p>△ 沙利文自传《一个想法》</p>
+<p>直到1946年时候美国建筑师协会才追授了他金质奖章。</p>
+<p>欢迎关注作者的微信公众号「设计史太浓」：</p>
+<p><span class="img-zoom"><img alt="晚年惨淡的摩天大楼之父：顶尖建筑设计师路易斯·沙利文" class="alignnone size-full wp-image-366265" src="https://image.uisdc.com/wp-content/uploads/2020/03/qrdesignhistory.jpg" alt="用一篇文章，帮你了解设计史上的「维多利亚风格」" width="180" height="180" /></span></p>
+➜从平凡生活里，设计师们创作出108张天才般的电影海报
+https://www.uisdc.com/108-movie-poster	68199
+<p>2020年对于我们是魔幻现实的一年，但是苦难并不影响我们热爱生活和认真的去生活。在豆瓣话题“用现实场景创作一幅电影海报”下，有3800多万次浏览的目光落在3500+个回答上，在仔细观看每个人作品的时候，你能感知到有趣的思维和设计的艺术。</p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399762" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-1.jpg" width="978" height="449" /></span></p>
+<p>在所拍摄的现实生活场景中，有些没有经过设计都能够看出其中的故事，有些平平无奇经过设计焕然新生。戏如人生，我们不如人生入戏，用自己的创意让普普通通的现实生活场景变成电影海报，有才华的人儿就在身边，让生活有趣的方法就掌握在你手中。接下来，插上耳机，找一首自己喜欢的歌曲，随着我在生活的艺术中一起畅游。</p>
+<p>这里精选108张海报作品进行展现，还有很多让人妙不可言的作品，可以自行前往：<a href="https://www.douban.com/gallery/topic/145969/?sort=hot">https://www.douban.com/gallery/topic/145969</a> 进行观看。一定要看到最后，压轴的大牛放在最后了~</p>
+<p><strong>豆瓣：你大毫爷</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399763" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-2.jpg" width="1200" height="668" /></span></p>
+<p>把高级和接地气都展现在了自己的创作中。</p>
+<p><strong>豆瓣：安达鲁萨浪漫狗</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399765" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-4.jpg" width="600" height="800" /></span></p>
+<p><strong>豆瓣：辣条本条</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399766" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-5.jpg" width="544" height="800" /></span></p>
+<p><strong>豆瓣：网上冲浪选手</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399767" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-6.jpg" width="1200" height="800" /></span></p>
+<p>《请以你的名字呼唤我》是非常经典的一部电影，以此为创作灵感的人也很多，有维他版、百事可乐&amp;可口可乐版和鸽子版。</p>
+<p><strong>豆瓣：zerione</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399768" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-7.jpg" width="600" height="800" /></span></p>
+<p><strong>豆瓣：小玩同学</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399769" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-8.jpg" width="450" height="800" /></span></p>
+<p>平平无奇的原图，加上恰到好处的字体和配色，让人眼前一亮。</p>
+<p><strong>豆瓣：七号边城</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399770" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-9.jpg" width="534" height="800" /></span></p>
+<p>这一看就是资深的广场舞（旁观者）玩家。</p>
+<p><strong>豆瓣：喵喵酱</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399771" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-10.jpg" width="521" height="800" /></span></p>
+<p>艺术源于生活，生活处处是巧合。</p>
+<p><strong>豆瓣：风火</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399772" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-11.jpg" width="533" height="800" /></span></p>
+<p><strong>豆瓣：魔都李荣浩</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399773" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-12.jpg" width="600" height="800" /></span></p>
+<p>打工人也不要忘记抬头欣赏月亮。</p>
+<p><strong>豆瓣：茶底</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399774" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-13.jpg" width="799" height="600" /></span></p>
+<p>善于观察生活的人幸福感会很高，创作者在约拍的时候发现这一幕很像《过春天》的场景，就有了上面这一幅作品。</p>
+<p><strong>豆瓣：Lajambo</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399775" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-14.jpg" width="450" height="800" /></span></p>
+<p><strong>豆瓣：oyixicoral</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399776" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-15.jpg" width="600" height="800" /></span></p>
+<p>简约又高级。</p>
+<p><strong>豆瓣：晨冉</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399777" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-16.jpg" width="566" height="800" /></span></p>
+<p><strong>豆瓣：ZZZ</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399778" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-17.jpg" width="551" height="800" /></span></p>
+<p>原图源于《乘风破浪的姐姐》的一次路演，设计之后韵味十足。</p>
+<p><strong>豆瓣：小鸡米花的门牙</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399779" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-18.jpg" width="420" height="800" /></span></p>
+<p>看到这张图，你能脑补出多少故事呢？其实只是在休息室缝补自己的裤子。</p>
+<p><strong>豆瓣：红中是个科学家</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399780" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-19.jpg" width="1080" height="648" /></span></p>
+<p>无聊的时候，不如拿玩具和盆栽玩一场游戏。</p>
+<p><strong>豆瓣：窒息鳄鱼</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399781" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-20.jpg" width="1080" height="615" /></span></p>
+<p>大片的暗色和零星的暖色，本就意蕴十足。</p>
+<p><strong>豆瓣：困在slin</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399782" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-21.jpg" width="533" height="800" /></span></p>
+<p>弟弟和海边，少年和夏天。</p>
+<p><strong>豆瓣：小桂圆之父</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399783" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-22.jpg" width="545" height="800" /></span></p>
+<p>给自己女儿拍的一张照片，莫名觉得跟电影海报很相像，就有了这样一幅治愈人心的作品。</p>
+<p><strong>豆瓣：Poooopeeee</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399784" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-23.jpg" width="600" height="800" /></span></p>
+<p><strong>豆瓣：鱼粥粥</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399785" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-24.jpg" width="965" height="800" /></span></p>
+<p>《隐秘的角落》和《阳光普照》也是颇能勾起大家创作意愿的作品。</p>
+<p><strong>豆瓣：71.</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399786" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-25.jpg" width="600" height="800" /></span></p>
+<p>长沙的超级文和友，排不到武汉的察颜悦色没关系，不如去长沙玩一趟吧。</p>
+<p><strong>豆瓣：米叩</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399787" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-26.jpg" width="600" height="800" /></span></p>
+<p><strong>豆瓣：佩小文</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399788" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-27.jpg" width="1690" height="800" /></span></p>
+<p><strong>豆瓣：你说什么</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399789" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-28.jpg" width="533" height="800" /></span></p>
+<p>因为原海报倍受人关注的《一直游到海水变蓝》，让贾樟柯导演“客串”在了许多创作者的“电影”中。</p>
+<p><strong>豆瓣：漆师傅</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399790" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-29.jpg" width="1080" height="678" /></span></p>
+<p>等车来的一瞬间，抓拍的照片，调一调色感觉有电影那味儿了。</p>
+<p><strong>豆瓣： 氽江浮尸</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399791" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-30.jpg" width="517" height="800" /></span></p>
+<p><strong>豆瓣：淡画</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399792" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-31.jpg" width="534" height="800" /></span></p>
+<p><strong>豆瓣：九粥</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399793" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-32.jpg" width="533" height="800" /></span></p>
+<p><strong>豆瓣：知寿</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399794" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-33.jpg" width="539" height="800" /></span></p>
+<p><strong>豆瓣：勉</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399795" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-34.jpg" width="478" height="800" /></span></p>
+<p><strong>豆瓣：今天吃什么</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399796" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-35.jpg" width="450" height="800" /></span></p>
+<p><strong>豆瓣：二十多淼</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399797" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-36.jpg" width="600" height="800" /></span></p>
+<p><strong>豆瓣：北野菊次郎</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399798" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-37.jpg" width="545" height="800" /></span></p>
+<p>热爱生活和善于发掘生活乐趣的人，无论在什么样的处境，都幽默可爱。</p>
+<p><strong>豆瓣：村上春笋</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399799" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-38.jpg" width="561" height="800" /></span></p>
+<p>创作者是模仿的电影《寄生虫》，也顺便在这里推荐这一部现实题材的韩国电影。</p>
+<p><strong>豆瓣：亻辶</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399800" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-39.jpg" width="533" height="800" /></span></p>
+<p>原图普通的不能再普通了，加工处理完成之后太棒了。</p>
+<p><strong>豆瓣：袁放</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399801" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-40.jpg" width="1775" height="800" /></span></p>
+<p>虽然不是现实生活场景，但确实每天打开微信都会看到的场景，加上自己的设计之后好有趣。</p>
+<p><strong>豆瓣：周口</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399802" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-41.jpg" width="1111" height="800" /></span></p>
+<p>色调和字体的搭配，对于作品像不像电影海报来说是十分关键的因素。</p>
+<p><strong>豆瓣：方枪枪的小红花</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399803" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-42.jpg" width="571" height="800" /></span></p>
+<p><strong>豆瓣：芝士年糕_i</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399804" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-43.jpg" width="542" height="800" /></span></p>
+<p><strong>豆瓣：</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399805" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-44.jpg" width="1186" height="800" /></span></p>
+<p>根据照片自行创作了插画，设计成了电影海报，更高一手。</p>
+<p><strong>豆瓣：尿裤侠</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399806" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-45.jpg" width="600" height="800" /></span></p>
+<p><strong>豆瓣：Y、YS胜</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399807" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-46.jpg" width="450" height="800" /></span></p>
+<p><strong>豆瓣：厦世</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399808" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-47.jpg" width="450" height="800" /></span></p>
+<p><strong>豆瓣：藏橡子的树洞</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399809" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-48.jpg" width="565" height="800" /></span></p>
+<p>创作者说：爱是最好的造物者。</p>
+<p><strong>豆瓣：大猫先生爱吃鱼</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399810" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-49.jpg" width="619" height="800" /></span></p>
+<p><strong>豆瓣：赵冠宇</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399811" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-50.jpg" width="565" height="800" /></span></p>
+<p>每个人都是“无名之辈”，善待他人善待自己。</p>
+<p><strong>豆瓣：Org</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399812" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-51.jpg" width="800" height="800" /></span></p>
+<p>创作者说是中年版的两小无猜，可爱极了。</p>
+<p><strong>豆瓣：三景清野</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399813" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-52.jpg" width="600" height="800" /></span></p>
+<p>感受到好天气带来的元气了嘛！</p>
+<p><strong>豆瓣：牛不听</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399814" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-53.jpg" width="600" height="800" /></span></p>
+<p><strong>豆瓣：昙华</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399815" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-54.jpg" width="533" height="800" /></span></p>
+<p>只要你相信，童话场景时常在身边。</p>
+<p><strong>豆瓣：Vitaliux</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399816" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-55.jpg" width="542" height="800" /></span></p>
+<p><strong>豆瓣：寂静深不可测</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399817" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-56.jpg" width="540" height="800" /></span></p>
+<p><strong>豆瓣：年华不等</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399818" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-57.jpg" width="1080" height="707" /></span></p>
+<p>再也吃不到好吃的捞面了，不过那家店和捞面大叔会一直在美好的记忆里。</p>
+<p><strong>豆瓣：萌萌哒的木子君</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399819" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-58.jpg" width="600" height="800" /></span></p>
+<p>你以为这是珊瑚吗？其实是铜池墙上析出的硫酸铜~</p>
+<p><strong>豆瓣：404</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399820" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-59.jpg" width="524" height="800" /></span></p>
+<p><strong>豆瓣：剪刀手戴手套</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399821" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-60.jpg" width="551" height="800" /></span></p>
+<p>原图就是北京的一处空楼，是不是太妙了！</p>
+<p><strong>豆瓣：NO ONE</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399822" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-61.jpg" width="800" height="589" /></span></p>
+<p>看到这个笑容，就能感觉到幸福，她会有什么样的故事呢？</p>
+<p><strong>豆瓣：黑头发樱木</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399823" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-62.jpg" width="400" height="600" /></span></p>
+<p><strong>豆瓣：无用一图</strong></p>
+<p><span class="img-zoom"><img alt="从平凡生活里，设计师们创作出108张天才般的电影海报" class="alignnone size-full wp-image-399824" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-db-20201209-63.jpg" width="1200" height="2997" /></span></p>
+<p>回帖作品千千万，大牛作品占一半。用这样夸张的句子来形容“无用一图”再合适不过了，按创作者的说法，主要是为了让大家欣赏自己的照片，随便P的，几乎每天一张。这样的练习和创作频率，想要不产出好的作品都很难。</p>
+<p>[link https://www.uisdc.com/space-type-generator]</p>
+➜如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）
+https://www.uisdc.com/white-space-between-characters	69215
+<p>字间留空是近年来非常流行的一种排版设计技巧，这种排版设计方式大多应用于海报、Banner图、H5，同时，在动画设计、视频当中也有相当多的应用。今天，我们来深入梳理总结一下这种排版设计技法。</p>
+<h4><span class="auto_menu">字间留空排版的核心特征</span></h4>
+<p>在设计的时候，将标题、短句或者单词中间的字间距放大，变为充满呼吸感的留白，借此将文本变成疏松、分散的字符片，化线为面。</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj1.jpg" /></span></p>
+<p>逻辑上，只要你能保证对比度，字间留空可以随意使用衬线和无衬线字体，无论粗细都可以，不过为了保证形式感和识别度，多数的设计当中，加粗的无衬线字体是首选。在具体的排版应用上，字间留空可以搭配的手法非常之多，我们后续会详细说明。</p>
+<p>值得一提的是，最近2年在油管上超级火的频道 The First Take ，就将字间留空和纯白简约的布景设计结合到一起，形成了极具识别度的频道特色：</p>
+<div style="width:100%;"><iframe class="video_pc" src="//player.bilibili.com/player.html?bvid=BV1FC4y1a78a&#038;as_wide=1"  width="100%" frameborder="0" allowfullscreen="true"></iframe></p>
+<style type="text/css">
+.video_pc {
+width: 100%;
+height: 585px;
+}
+@media (max-width:767px) {
+.video_pc {
+height: 50vw;
+}
+}
+</style>
+</div>
+<div class="show-mobile show-mobile-mobile show-mobile-ios">
+<div class="video_info">当视频无法加载时请刷新页面，<br />或前往PC获得最佳体验。</div>
+</div>
+<div style="width:100%;"><iframe class="video_pc" src="//player.bilibili.com/player.html?bvid=BV1Ck4y197WQ&#038;as_wide=1"  width="100%" frameborder="0" allowfullscreen="true"></iframe></p>
+<style type="text/css">
+.video_pc {
+width: 100%;
+height: 585px;
+}
+@media (max-width:767px) {
+.video_pc {
+height: 50vw;
+}
+}
+</style>
+</div>
+<div class="show-mobile show-mobile-mobile show-mobile-ios">
+<div class="video_info">当视频无法加载时请刷新页面，<br />或前往PC获得最佳体验。</div>
+</div>
+<div style="width:100%;"><iframe class="video_pc" src="//player.bilibili.com/player.html?bvid=BV1HT4y1L7rQ&#038;as_wide=1"  width="100%" frameborder="0" allowfullscreen="true"></iframe></p>
+<style type="text/css">
+.video_pc {
+width: 100%;
+height: 585px;
+}
+@media (max-width:767px) {
+.video_pc {
+height: 50vw;
+}
+}
+</style>
+</div>
+<div class="show-mobile show-mobile-mobile show-mobile-ios">
+<div class="video_info">当视频无法加载时请刷新页面，<br />或前往PC获得最佳体验。</div>
+</div>
+<p>The First Take 讲究的是开放空间，一镜到底，话筒、乐器和表演者大多和镜头呈90度角，大量的留白和这种侧面视角充满了强烈的平面感，可以说是和字间留空形成了堪称完美的搭配。</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj2.jpg" /></span></p>
+<h4><span class="auto_menu">字间留空排版的4个优点</span></h4>
+<p>字间留空这一设计手法的优点可以归结为4点：</p>
+<ul>
+<li>特点显着，执行方便</li>
+</ul>
+<p>超大的字间距让这种设计手法极具识别度，而且执行起来上手也很快，只要把字间距拉开，将每个字母或者文字快速地重新排布，就可以呈现出极具视觉识别度的版式。</p>
+<ul>
+<li>风格百变，样式百搭</li>
+</ul>
+<p>字间留空本身只是诸多排版技巧中的一种，多数时候它会呈现出一种整饬的平面感，不带有明显的情绪，这使得它可以搭配各种不同版式，对称或不对称，规整或错落，都问题不大。</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj3.jpg" /></span></p>
+<ul>
+<li>化线为面，层级增加</li>
+</ul>
+<p>将留白填充进词汇、短句、标题之后，原本在视觉上类似单一线条的文本元素，就变成了一片富有呼吸感的视觉层，由于它本身的强烈呼吸感，这个层可以清晰透出底下的视觉信息。</p>
+<ul>
+<li>几何感强，构建骨架</li>
+</ul>
+<p>在重新排列字母和文字的时候，可以构成紧凑的「点」，完全铺开则是「面」，如果沿着特定的轨迹排布还能凸显一些特定的「路径」，在视觉上，它可以作为一个框架来使用。</p>
+<h4><span class="auto_menu">字间留空排版的3大缺陷</span></h4>
+<p>字间留空这种手法也是有缺陷的，使用的时候要注意下面3点：</p>
+<ul>
+<li>不支持长单词和长句子</li>
+</ul>
+<p>太长的句子和单词，被拆分开之后，要么是留白不足，显得呼吸感不足，要么是信息量太大，显得形式感不足。只有短句和短单词更容体现它的特征。</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj4.jpg" /></span></p>
+<ul>
+<li>文本识别度会降低</li>
+</ul>
+<p>这种排版方式和日常阅读习惯相左，太长的单词被留白分割、又被跳转分段之后，基本就不存在什么识别度了，而如果是中文短句使用字间留空，阅读也不会像原本那么顺畅。</p>
+<ul>
+<li>过多视觉层级下会显得混乱</li>
+</ul>
+<p>由于字间留空这种技法涉及大量「留白」，如果底层的背景元素太复杂了，或者层级太多了，会很容易和前景的文字杂糅到一起，无法分辨。</p>
+<h4><span class="auto_menu">字间留空排版的8种玩法技巧</span></h4>
+<p>由于字间留空的玩法很多，我们这里将最为典型的几种字间留空排版方式总结梳理出来</p>
+<h4><span class="auto_menu">1、居中矩形平铺展示</span></h4>
+<p>采用笔触超粗的字体，将文本拆散，拉宽间隙，居中均匀平铺成一片整齐的矩形，作为视觉主体，同时，控制好前景和背景之间的对比度，就能呈现出不错的效果：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj5.jpg" /></span></p>
+<p>下面是排版范例：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj6.jpg" /></span></p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj7.jpg" /></span></p>
+<h4><span class="auto_menu">2、倾斜透视居中展示</span></h4>
+<p>将留空的文本以倾斜或带透视的方式来排布，能够让整体更加富有动感和空间感，营造出具有倾向性和趋势感：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj8.jpg" /></span></p>
+<p>下面是范例：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj9.png" /></span></p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj10.jpg" /></span></p>
+<h4><span class="auto_menu">3、结合辅助线条展示</span></h4>
+<p>在字间留空的排版中加入辅助线，能够让排版的形体感、结构感更强，让视觉上更加饱满，装饰性更强。辅助线的呈现方式通常分3种，一种是在行列之间强化分割：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj11.jpg" /></span></p>
+<p>参考范例：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj12.jpeg" /></span></p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj13.jpg" /></span></p>
+<p>一种是在文字中「穿针引线」作为视觉引导：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj14.jpg" /></span></p>
+<p>参考范例：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj15.jpg" /></span></p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj16.jpg" /></span></p>
+<p>最后一种是在外边缘，强调框架和边界：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj17.jpg" /></span></p>
+<p>参考范例：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj18.jpg" /></span></p>
+<h4><span class="auto_menu">4、结合色块背景来呈现</span></h4>
+<p>为文本添加或大或小的色块背景，可以更好地控制文本的对比度。加入纯色的背景可以让文本完全不受背景影响，而用半透明的色块则可以更好地调和前后关系，又确保对比度：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj19.jpg" /></span></p>
+<p>参考范例：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj20.jpg" /></span></p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj21.jpg" /></span></p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj22.jpg" /></span></p>
+<h4><span class="auto_menu">5、压角到出血位来呈现</span></h4>
+<p>这种呈现方式更加具有张力，将整个版式纳入到字里行间的「留白」当中，这个时候还可以结合更加具有性格的字体风格来呈现：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj23.jpg" /></span></p>
+<p>参考范例：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj24.jpg" /></span></p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj25.jpg" /></span></p>
+<h4><span class="auto_menu">6、和其他元素互相穿插</span></h4>
+<p>让分散的文字元素和其他的元素，互相穿插交叠，形成彼此交叠、融入的感觉，这样的排版方式也非常的有趣：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj26.jpg" /></span></p>
+<p>参考范例：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj27.jpg" /></span></p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj28.jpg" /></span></p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj29.jpg" /></span></p>
+<h4><span class="auto_menu">7、多组文本组合穿插</span></h4>
+<p>将多个采用字间留空排版的文本，有主次地组合起来使用，也可能让整体风格统一又层次丰富，可以说是一种进阶玩法：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj30.jpg" /></span></p>
+<p>参考范例：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj31.jpg" /></span></p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj32.jpg" /></span></p>
+<h4><span class="auto_menu">8、结合不同的样式风格</span></h4>
+<p>除了版式上的花样之外，还可以在字体样式和风格上玩出更多花样，比如可以制作出失真的效果：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj33.jpg" /></span></p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj34.jpg" /></span></p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj35.jpg" /></span></p>
+<p>可以将填充样式的文本改成描边样式：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj36.jpg" /></span></p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj37.jpg" /></span></p>
+<p>还可以针对笔触进行处理，比如缺省，或者进行修饰，强化设计感：</p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj38.jpg" /></span></p>
+<p><span class="img-zoom"><img alt="如何学会2021年最流行的字间留空排版？我总结了这8个方法！（附超多案例）" class="aligncenter size-full wp-image-399891" src="https://image.uisdc.com/wp-content/uploads/2020/12/zj39.jpg" /></span></p>
+<h4><span class="auto_menu">结语</span></h4>
+<p>字间留空是一种泛用性很强的排版设计手法，这里所列举的案例花样已经很多，下一期，我们可以梳理总结一些别的排版技巧，敬请期待。</p>
+<p>延伸阅读：</p>
+<p>[link https://www.uisdc.com/layout-design-design-2]</p>
+<p>[link https://www.uisdc.com/15-level-skills]</p>
+<p>[link https://www.uisdc.com/typography-guidelines]</p>
+<p>&nbsp;</p>
