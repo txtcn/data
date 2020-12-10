@@ -13,3 +13,15 @@ https://www.solidot.org/story?sid=66317	25561
 ➜为什么大熊猫喜欢抹马粪
 https://www.solidot.org/story?sid=66318	34066
 外表可爱的大熊猫被发现在嗅到新鲜马粪后会躺下然后在上面打滚，用爪子确保自己从毛绒绒的耳朵尖到尾巴都能抹上马粪，直到黑白分明的毛皮完全变成另一个颜色。根据发表在 PNAS 期刊上的<a href="https://www.pnas.org/cgi/doi/10.1073/pnas.2004640117">一项研究</a>，中国研究人员<a href="https://cn.nytimes.com/science/20201208/pandas-horse-poop/">提出</a>，这种行为也许能帮助大熊猫忍受寒冷，马粪中的某种成分可能导致某种体温调节细胞短路，而这种细胞原本会让大熊猫对寒冷敏感。2007 年，中科院生物学家魏辅文领导的科研小组首次注意到一只熊猫在一堆马粪里快活的样子。由于不确定是否属于偶然现象，他们花费多年用数十个相机陷阱追踪这些大熊猫，最终认定，这种行为是“绝对常见且典型”的。在2016年7月到2017年7月期间，他们记录下了38起类似行为。<p>
+➜Cloudflare 和苹果等合作推出 ODoH  改进 DNS 隐私保护
+https://www.solidot.org/story?sid=66319	37864
+传统的 DNS 查询是明文的，其隐私问题越来越引起关注。为了保护用户隐私 IETF 标准化了两种协议 DNS over HTTPS (DoH) 和 DNS over TLS (DoT)去加密 DNS。Firefox 等已经加入了对 DoH 的支持，而云服务商 Cloudflare 是一个主要的公共 DoH/DoT 服务商。但 DoH/DoT 的推出也引发了两个问题，其一是 DNS 的中心化引入了单点故障，其二是解析器仍然可以将所有查询关联到客户 IP 地址。为了更好的保护用户隐私，Cloudflare、Fastly 和苹果的工程师<a href="https://blog.cloudflare.com/oblivious-dns/" target="_blank">合作开发了新的协议 ODoH（</a>代表 Oblivious DNS over HTTPS）。ODoH 加入了一个公钥加密层以及客户端和 DoH 服务器之间的网络代理，确保只有用户才能访问 DNS 信息及其 IP 地址。工程师们用 Rust、Go 等语言实现了互操作 ODoH 实现并将其开源，Cloudflare 的公共 DNS 服务器 1.1.1.1 已经能支持 ODoH 查询。Firefox 已经表达了支持 ODoH 的意愿。<p>
+➜SpaceX 打破其年度发射记录
+https://www.solidot.org/story?sid=66320	40584
+在上周日向国际空间站发射补给飞船之后，SpaceX 今年已经<a href="https://arstechnica.com/science/2020/12/despite-the-pandemic-spacex-is-crushing-its-annual-launch-record/#p3" target="_blank">完成了</a> 24 次发射，包括 23 次轨道飞行和一次载人飞船 Crew Dragon 的紧急逃生演示飞行。SpaceX 今年还有三次发射任务，它在今年的发射次数已经打破之前的记录，此前年发射记录为 21 次。美国时间 12 月 8 日 SpaceX 最新的重型火箭原型 Starship SN8 的发射<a href="https://www.space.com/spacex-starship-sn8-launch-abort">在最后一秒中止</a>，目前还不清楚导致发射突然中止的原因。<p>
+➜Google Fuchsia 项目欢迎外部贡献者
+https://www.solidot.org/story?sid=66321	49310
+过去几年，Google 一直在开发一个全新的开源操作系统 <a href="https://fuchsia.googlesource.com/">Fuchsia</a>，没有使用 Linux 内核，而是使用名叫 Zircon 的微内核。现在，Google <a href="https://opensource.googleblog.com/2020/12/expanding-fuchsias-open-source-model.html">宣布</a>它欢迎外部程序员向 Fuchsia 项目贡献代码。Fuchsia 目前由 Google 的 Fuchsia 团队活跃开发中，为了让外部开发者更好的参与 Fuchsia 项目，Google 创建了新的讨论用的<a href="https://fuchsia.dev/fuchsia-src/contribute/community/get-involved" target="_blank">公共邮件列表</a>，加入了进行决策的<a href="https://fuchsia.dev/fuchsia-src/contribute/governance/governance" target="_blank">治理模式</a>，发布了项目<a href="https://fuchsia.dev/fuchsia-src/contribute/roadmap">路线图</a>帮助外界更好的了解项目的方向和优先任务。<p>
+➜CentOS 8 将在明年底结束支持
+https://www.solidot.org/story?sid=66322	52614
+企业级付费用户用 Red Hat 的企业级发行版，而免费用户则使用基于 Red Hat Enterprise Linux（RHEL） 的社区发行版 CentOS。但在 Red Hat 拥有 CentOS 项目的情况下，社区发行版的重要性日益降低。CentOS 项目宣布 CentOS 8 <a href="https://lists.centos.org/pipermail/centos-announce/2020-December/048208.html">将到 2021 年底终止维护</a>，而上一代 CentOS 7 仍然会一直维护到 2024 年。CentOS 项目将重心转移到了作为 RHEL 上游的开发分支 CentOS Stream。现有的 CentOS 8 用户被鼓励迁移到 CentOS Stream 8。Red Hat 的这一做法遭到了很多人的<a href="https://news.ycombinator.com/item?id=25345428" target="_blank">批评</a>。<p>
