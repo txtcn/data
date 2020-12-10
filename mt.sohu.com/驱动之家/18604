@@ -1,0 +1,1010 @@
+➜群晖DSM 7.0正式发布：RAID性能提升70% 换硬盘无需停服
+http://www.sohu.com/a/436927133_163726	6194
+<p>12月7日晚，群晖举办2021线上大会，带来了全新升级的DSM 7.0，并优化了数据管理解决方案。</p>
+<p>为了减少权限申请流程，<strong>群晖推出二级权限，可以将部分权限开放给指定人员，从而减少权限申请的流程</strong>。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/d753a927139b47a9bd0b3d916da0d84d.png" /></p>
+<p>二级权限</p>
+<p>而通过对存储空间管理员进行全新改版，图形化的操作界面，让使用者直观了解每块硬盘对应的插槽，避免更换或升级硬盘时产生混淆。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/345b023539e64d8b81a2da57aceae7f3.png" /></p>
+<p>存储空间管理员界面</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/1204805e110442fbae58a0e6a4b40b9e.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>直观了解存储空间使用信息</p>
+<p>针对稳定性与效能要求更高的企业来说，需要更完整且高效的数据保护机制。<span><strong>针对特定机型，RAID6读写性能将大幅提升80%，即使在RAID降级状态下，仍有70%的提升。</strong></span></p>
+<p>海量数据的存储和传输，对硬盘压力尤为明显。以往当硬盘发生故障需要进行替换时，不仅容易有降级风险，而且正在运行的业务也会被迫停止。</p>
+<p><span><strong>群晖提供全新硬盘更换机制，在替换硬盘时，无需停止运行的服务，同时确保存储空间不会在更换过程中降级。</strong></span>省下数据重新校验的时间，也进一步保护数据的安全与完整性。</p>
+<p>通过全新的数据洞察服务——Active Insight，让用户能通过云端实时监测所有管理中的群晖服务器，并通过可视化的监测仪表了解设备的效能和资源使用情况。并且当服务器发生异常时，可以主动发出预警并提供详细的解决方法。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/eb6987455f8341319b5e5f24196905d0.png" /></p>
+<p>Active Insight监测仪表</p>
+<p>群晖SSD缓存不仅可以精确的帮助使用者推荐SSD容量大小，还可以通过元数据固定功能，效能提升近3倍。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/20e93293cbeb4fefaebe655c1082e16a.png" /></p>
+<p>SSD缓存推荐容量</p>
+<p>不同的业务需求，会部署不同的IT架构，有一部分企业会通过iSCSI/NFS协议，部署IP SAN架构；而有一些企业则会选择FC架构。</p>
+<p>为了满足企业不同的需求，群晖通过支持FC协议，集成NAS和SAN，提供统一的存储平台。并且将原先的iSCSI Manager升级为SAN Manager，简化LUN权限管理。</p>
+<p>2020年勒索病毒愈发活跃，恶意攻击事件不断，为了提升系统安全，<strong>群晖推出了全新的登录验证方式，并进一步符合相关安全制度，提升安全等级。</strong></p>
+<p>弱口令是造成安全事件最大的潜在隐患之一，针对传统密码安全性不足的问题，群晖将加入国际数据安全标准FIDO 2，通过支持FIDO 2安全认证，让使用者避免因忘记密码而无法登录NAS。</p>
+<p>通过FIDO 2，无需密码即可以使用USB密钥、以及具有指纹识别的MacOS Touch ID、Windows Hello进行登录。</p>
+<p>除此之外，通过<strong>全新的手机App：Secure SignIn，可以将手机作为登录凭证。</strong>不论是FIDO 2 还是 Secure SignIn，这两种登录方式都提高了便捷性以及安全级别。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201208/e1b82c773ada48b2a2869b291a47ed17.png" /></p>
+<p>Secure SignIn手机验证界面</p>
+<p>而为了避免遭受勒索病毒攻击导致数据丢失，群晖的Active Backup for Business可以为包括Windows PC、物理服务器和虚拟机进行整机备份，而为了能支持更多元化的系统平台，<strong>群晖将新增支持Linux系统备份</strong>，可以保护Linux系统版本，包括：CentOS、RHEL、Ubuntu、Fedora、Debian。</p>
+<p>除此之外，<strong>未来还将会支持MacOS的电脑备份。</strong></p>
+<p>另外，Active Backup for Business 也将新增支持备份压缩功能，带给企业更完善的数据备份保护。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/82a4bb80b80e48db82a4b33bd2115a3b.png" /></p>
+<p><strong>DSM 7.0 Beta于12月8日开放下载</strong>，由于更新之后不能降级，企业用户请在测试环境中试用或等待明年正式版发布后再进行升级。如有特殊需求，升级前请务必使用Hyper Backup备份您的群晖服务器数据。</p>
+<p>下载地址：点此。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/1e47426a43e946a195debf2d12df112e.png" /></p>
+➜集成5nm基带 骁龙888带你飙车：5G、Wi-Fi速度起飞了
+http://www.sohu.com/a/436940993_163726	10231
+<p>2019年6月份国内发放了5G牌照，正式开启了5G时代，比预期中提前了至少一年，5G手机也随之浮出水面，骁龙845时有5G原型机，骁龙855时5G手机趋于完善，骁龙865时迅速爆发。</p>
+<p>如今又到了升级换代的时候了，高通本月初发布了骁龙888，这是新一代5G平台，而且首次在旗舰级移动平台上集成了骁龙X60，<strong>这也是高通的第三代5G调制解调器及射频系统，不仅带来了高达7.5Gbps的全球最快的商用5G网络速度</strong>，还在Wi-Fi 6、蓝牙5.2等新一代无线通信技术上全面升级。</p>
+<p>骁龙888在连接技术上到底带来了什么样的新变化？今天我们就来详细解读下骁龙888带你起飞的两大关键升级。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201208/6c8ce2416a254f1aacb7e5a20b794218.png" max-width="600" /></p>
+<p><strong>骁龙888同步升级5nm骁龙X60 集成基带功耗更低</strong></p>
+<p>与去年的骁龙865 5G平台相比，骁龙888在5G上的最大变化就是升级了集成式5G基带，成为真正的5G SoC。</p>
+<p>独立式和集成式没有孰优孰劣的必然划分，不过集成式确实能带来多方面的好处，而且相比骁龙X55使用7nm工艺，<strong>骁龙X60是5nm工艺，核心面积会更小，有助于手机厂商涉及更轻薄的5G旗舰机。</strong></p>
+<p>但更重要的一点优势就是5G功耗更低，5nm工艺的发热量和功耗上都会有非常明显的改善，因此耗电量会大幅减少，5G手机的续航时间可以进一步提升，出门在外也不怕手机5G耗电过快，治愈了续航焦虑症。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201208/944b283df32444e498ffd118667c2360.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>速率7.5Gbps 骁龙888的5G速率再进一步：首发5G载波聚合</strong></p>
+<p>5G网络带给大家最大的印象就是网速更快，目前商用的是1Gbps而已，实际速度已经数倍于当前水平，骁龙888集成的骁龙X60带来了7.5Gbps的峰值下行、3Gbps的峰值上行速度。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201208/d8ed2b2975ed49d0b64e3e192a46e7d5.png" max-width="600" /></p>
+<p>不仅速度狂飙，骁龙888还是一个真正意义上的全球5G移动平台，可以支持世界各个国家和地区、各家运营商的移动网络方案，尤其是首个支持Sub-6GHz载波聚合，首个支持FDD、TDD 5G载波聚合，可以给全球运营商带来极大的灵活性，也支持厂商通过单一设计支持全球范围的发布。</p>
+<p>具体包括：</p>
+<p>－ 支持5G FDD-TDD 6GHz以下频段载波聚合，可充分利用频谱资源，重新规划LTE频谱，从而提升网络容量、峰值速率。</p>
+<p>－ 支持5G TDD-TDD 6GHz以下频段载波聚合，相比于非载波聚合的峰值速率翻倍。</p>
+<p>－ 支持Sub-6GHz以下频段聚合，为运营商提供更丰富的选择，兼顾实现最优网络容量、覆盖，峰值吞吐速率也超过5.5Gbps。</p>
+<p>可以看出，骁龙888不仅追求当前最快的5G速度，<strong>同时还支持全面的5G频谱，从Sub-6G到毫米波都有完善的解决方案，方便运营灵活部署</strong>，也包括利用动态频谱共享（DSS）技术实现全国范围的5G网络覆盖，方便手机厂商推出全球制式的5G手机，支持5G双卡双待，全球漫游。</p>
+<p>网络连接能力的重要性已经不言而喻，现在的5G网络也已经完成了第一波布局，全国主要城市都已经覆盖5G，接下来的重点是提高5G的质量，不仅是网速，还有续航、发热等。</p>
+<p>骁龙888集成了5nm工艺的骁龙X60基带，有效降低了5G下的功耗，减少了发热，5G手机的续航时间有望得到明显的改善，用户不用再为省电而关闭5G网络。</p>
+<p><strong>Wi-Fi 6E加入战场 网速狂飙3.6Gbps</strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201208/8eaf2722c2ae45a087ce5020f611ba0a.png" max-width="600" /></p>
+<p>5G网速越来越快，Wi-Fi网络也不能掉链子，在骁龙888上高通除了支持3.6Gbps网速的Wi-Fi 6之外，还带来了Wi-Fi 6E支持，实现布局6GHz频段，减少干扰，进一步提高Wi-Fi网络的稳定、高速连接体验。</p>
+<p><strong>这一切都要得益于骁龙888的FastConnect 6900移动连接系统</strong>，相比骁龙865上的FastConnect 6800移动连接系统，它不仅速度更快，能够提供目前移动Wi-Fi业界最快的高达3.6Gbps 的Wi-Fi 6速度，还整合支持了蓝牙5.2、蓝牙双天线、高通aptX套件、广播音频和先进的调制及编码技术优化，能够提供清晰稳定且响应迅速的全新蓝牙音频体验。</p>
+<p>Wi-Fi、蓝牙等方面也有类似的提升，骁龙888的FastConnect 6900移动连接系统提供了一揽子的解决方案，带来了3.6Gbps的Wi-Fi 6网速，还提前支持了Wi-Fi 6E，未来一两年都够用了。</p>
+<p>值得一提的是，<strong>骁龙888是业内首个通过6GHz信道支持先进调制技术，如4K QAM和4路双频并发的平台</strong>。通过将信道数量从两个增加到三个，可以进一步缓解Wi-Fi网络的拥堵，从而为家庭带来最快、最稳定的连接。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201208/da49c712008e43b391288eeadb3281c8.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201208/62b8b605efca47f4bc58738136079656.png" max-width="600" /></p>
+➜小白也能闭着眼买！宏碁非凡S5评测：能抗菌的11代酷睿轻薄本
+http://www.sohu.com/a/436951080_163726	11968
+<p><strong>一、 前言：全新EVO认证！这是一款日常使用足够“快”的笔记本</strong></p>
+<p>在去年，英特尔就联合500多家业界厂商，共同推出了“雅典娜计划”，用一套严格的性能指标来把控、认证高端笔记本产品。用户即便没有专业知识，也能够通过雅典娜认证，来快速挑选出拥有快速响应、自适应性能、长续航、可靠高速链接、轻薄外观/触控操作等特征的高端笔记本。 </p>
+<p>英特尔11代酷睿处理器以及Iris Xe核显平台自然必不可少，更好的单核、图形性能让轻薄本的整体表现跨越了一大步，整体更加流畅，玩一些热门游戏也不成问题。Thunderbolt4接口成为标配，可以提供更高的传输速率和更好的扩展能力。</p>
+<p>英特尔还设置了25项以上的真实性能及响应时间测试，要求产品必须一一通过，才能拿到EVO认证。此外像熟悉的Wi-Fi 6网络、快速响应/瞬间唤醒、长续航等特性也都得到延续。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/9398002f10e54925bbe59e3729c7bd6d.png" /></p>
+<p>本次，我们收到的产品，宏碁非凡S5就是一款拥有英特尔 EVO认证的笔记本。<strong>它采用了i5-1135G7处理器(也有i7版本可选)，拥有高色域触控全面屏、Wi-Fi6连接、全天候续航等特点，以及轻薄、时尚的外观</strong>。</p>
+<p>在材质上，它在A、D面采用了特别的镁锂合金材质，让整体机身更加轻薄的同时，依然足够坚固，<strong>并且创新性地引入了抗菌的设计</strong>，在机身表面、键盘、指纹读取器、橡胶脚垫等处均使用了银离子抗菌成分，甚至是屏幕和触摸板，也使用了具有抗菌效果的康宁大猩猩屏幕。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/7c0373f3c5944a13a3613cb3ca551b69.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>性能方面，<strong>采用i5-1135G7的它可以提供最高28W的睿频功耗，本身也提供了3种性能模式和翘臀式设计来提高进风量</strong>，保证性能的发挥。英特尔Iris Xe核显的性能更值得期待，理论上可以让轻薄本凭借核显也能流畅游戏。</p>
+<p>接下来，就让我们一起来看一看，拥有EVO认证的宏碁非凡S5，究竟表现如何。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/128f27619b2a4da187dfe9addafa2d14.jpeg" /></p>
+<p><strong>二、 外观：亲肤抗菌外壳+全面屏设计 两个USB3.2+Thunderbolt4 扩展性优秀</strong></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/e5353cb664ae4323bb69c8380d97318a.jpeg" /></p>
+<p>宏碁非凡S5的A\D面均采用镁锂合金锻造而成，此外还含有银离子成分使其外壳拥有了抗菌的效果。我们收到的是绿色版，整机色调为绿色外加金色的点缀。</p>
+<p><img src="//p4.itc.cn/q_70/images03/20201208/11b68f4574984904810d1c7874aeba8a.jpeg" /></p>
+<p>宏碁非凡S5的屏幕采用了全面屏的设计，表面玻璃同样拥有抗菌设计。屏幕素质优秀，拥有100% sRGB色域和340nit亮度。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/577f24be536647df819e876993ae8789.jpeg" /></p>
+<p>屏幕顶端有一个720P摄像头和双麦克风。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/f53862d4841b4814a933098be006927a.jpeg" /></p>
+<p>键盘除了方向键外均为全尺寸设计，拥有单色背光，键程适中，拥有良好的手感。键盘右下角有一个指纹识别器，用于指纹识别解锁。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/9f90cf42ea554ec5a6a9637e557b243f.jpeg" /></p>
+<p>C面边角可见脚垫以及DTS认证的标识。前者可以保护合盖时屏幕不被磨损，后者则是对于其喇叭音质的保证。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/1b0614bab02d4d8a895a833a2d759259.jpeg" /></p>
+<p>EVO认证标签，证明宏碁非凡S5满足搭载11代酷睿、快速响应、9小时以上真实应用续航、Wi-Fi 6等指标要求。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/5f0e6f7658864244ad9c2f83b7f20a24.jpeg" /></p>
+<p>宏碁非凡S5采用了抗菌设计，金属表面、屏幕、触控板乃至橡胶脚垫都拥有抗菌功能。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/cf088d972f4b4793b190371eb1c2267d.jpeg" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/95c1757921e0499d9d19d9ecd666bac9.jpeg" /></p>
+<p>接口方面，宏碁非凡S5在轻薄的同时保留了优秀的扩展性。2个USB 3.2接口外加一个Thunderbolt4接口，1个HDMI 2.0接口和1个3.5mm音频接口，可以满足各种外设需求。此外，能看出笔记本采用翘臀式设计，打开屏幕时转轴会被抬升,提高进气效率。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/5fa2069635354f9ba50b4a65553a2c52.jpeg" /></p>
+<p>底面，宏碁非凡S5有着多达5个进风口。此外右侧还有一个断电按钮以备不时之需。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/a0f8695531bb4a548839f15de39d489c.jpeg" /></p>
+<p>电源适配器为传统样式，功率仅有65W。</p>
+<p><strong>三、 常规性能测试：i5-1135G7性能同样优秀 图像性能可以满足网游要求</strong></p>
+<p><strong>——CPU性能测试</strong></p>
+<p><strong>1、POV-Ray</strong></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/36c61993df07487caebbc27f5fd133b4.png" /></p>
+<p>单线程</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/f548ae96ccdf49c0b5f3a594b1b90369.png" /></p>
+<p>多线程</p>
+<p>i5-1135G7的单线程分数为485.47pps，多线程成绩则为1739pps。</p>
+<p><strong>2、X264 FHD Benchmark</strong></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/5648ff24487447698e90bac42f5e0beb.png" /></p>
+<p>i5-1135G7的成绩为28.48FPS。</p>
+<p><strong>3、X265 FHD Benchmark</strong></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/b26b684ca78f4f9b81ece5cda548bc6a.png" /></p>
+<p>i5-1135G7的成绩为33.51 FPS。</p>
+<p><strong>4、V-Ray</strong></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/ee1e230e18534b988641edeae863bd2a.png" /></p>
+<p>在VRay的测试中，i5-1135G7的成绩为6172 ksamples。</p>
+<p><strong>5、Blender Benchmark</strong></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/a06083028ffa448dbd3c79bd47ba286e.png" /></p>
+<p>在Blender Benchmark中，完成宝马和教室两个测试耗时46分18.75秒。</p>
+<p>我们收到的宏碁非凡S5为搭载i5-1135G7的版本，4核8线程，其默频2.4GHz，单核睿频最高4.2GHz。和更高端的i7-1165G7相比，二者规格十分相近，主要的差距在于缓存大小以及频率略有差距，i7-1165G7在单核睿频的优势较为明显，可以达到4.7GHz。</p>
+<p>从跑分结果也能看出，和高一级的i7-1165G7相比，i5-1135G7的多核性能和单核性能都十分接近，表现出色，当然这也得益于宏碁非凡S5在散热、性能释放方面的优秀设计。</p>
+<p><strong>——图像性能测试</strong></p>
+<p>英特尔Iris Xe核显性能有了不小的提升，采用了全新设计的Xe LP微架构，同时i5-1035G7有80个执行单元，实力不容小觑。</p>
+<p><strong>1、3DMark</strong></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/f1ae7e15daae433a80ce3a95bbb7c826.png" /></p>
+<p>在3DMark Time Spy测试中，宏碁非凡S5的Iris Xe核显取得了1415分的成绩。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/6310d444053d4f0db9766299c921c352.png" /></p>
+<p>在3DMark Fire Strike测试中，宏碁非凡S5的英特尔Iris Xe核显的成绩为4987分。</p>
+<p><strong>3、英雄联盟</strong></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/f2a1693169f24c289d95f743dd5fe7e3.png" /></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/7157619432df43cdb4974e14462ffb65.png" /></p>
+<p>1080P最高画质下，游玩《英雄联盟》的帧率为134FPS。</p>
+<p><strong>3、守望先锋</strong></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/389bea8843a74d608205fa1db5309bf1.png" /></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/4afd96953b0c40a5aca7cd44133f39a4.png" /></p>
+<p>高画质、1080P以及75%解析度下，《守望先锋》在训练场静止不动的帧率稳定在58FPS，移动起来时帧率会更加不稳定，如果想要顺畅游玩，需要继续降低画质。</p>
+<p>宏碁非凡S5的内存为LPDDR4X-4266MHz双通道，这也是目前搭配11代酷睿的最佳内存配置，可以满足英特尔Iris Xe核显的带宽要求，充分释放其性能，玩玩《英雄联盟》之类的游戏十分轻松。</p>
+<p><strong>四、 屏幕及磁盘：100% sRGB色域覆盖 色彩准确度达0.78</strong></p>
+<p><strong>——屏幕素质</strong></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/18e3d92b218a4c5ea6a9682906f7e43f.png" /></p>
+<p>屏幕色域高达100% sRGB，几乎和sRGB标准色域相重合，不必担心图像显示过饱和的问题。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/3d81685e3c6b4d059a4ad5e2f07f6e08.png" /></p>
+<p>屏幕伽马值为2.2。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/6ba6bd3bd3d24f1c8ca9e784d986a929.png" /></p>
+<p>最大亮度可达408nit，对比度为1650 : 1。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/f21b89b8bb194ee8a6ec788b953afef5.jpeg" /></p>
+<p>平均色彩准确度为0.78，可以精准显示颜色，已经达到了用于专业作图的色准要求。</p>
+<p><strong>——内存测试</strong></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/b6fc067def13434f80bbb0988cb79be8.png" /></p>
+<p>宏碁非凡S5搭载了板载16GB LPDDR4X 4266MHz 双通道内存，读取速度63566MB/s，写入速度66848MB/s，拷贝速度64612B/s，延迟为83.1ns。</p>
+<p><strong>——硬盘测试</strong></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/7ccab5ffd08e4d78a43731508ce6289b.png" /></p>
+<p>使用的固态型号为1TB的美光2210，在AS SSD Benchmark中，持续读取速度1983MB/s，持续写入速度1894MB/s。随机读取速度62.16MB/s，随机写入速度181.21MB/s。</p>
+<p>在CrystalDiskMark中，持续读取速度2095MB/s，持续写入速度1957MB/s，随机读取速度65.91MB/s，随机写入速度92.9MB/S。</p>
+<p><strong>五、 续航及烤机：接近13小时办公续航 烤机温度控制在73℃</strong></p>
+<p><strong>——续航测试</strong></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/4a55114365ec4d49a053fce4be482f69.png" /></p>
+<p>使用PCMark 10中的现代办公模式测试续航，设定电池模式为偏向性能，50%亮度，关闭Wi-Fi、蓝牙等。测试可知宏碁非凡S5的续航可达12小时52分钟，保持亮屏日常使用13小时没有问题。</p>
+<p><strong>——烤机测试</strong></p>
+<p>宏碁非凡S5提供了静音、平衡和性能三种模式，在性能模式下使用AIDA64的系统稳定性测试来看看其散热和性能释放如何。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/b28cffff613c45c4ab7ae9616bfdcb63.png" /></p>
+<p>宏碁非凡S5在烤机开始的数秒，功耗可以直接飙到42W，此时温度也飙升到93℃，而后降到28W上下浮动。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201208/2615ed6a6a724aa5ba39c623e8ff46f6.png" /></p>
+<p>烤机20分钟，宏碁非凡S5可以保证i5-1135G7的温度在73℃，全核频率为2.75GHz左右。从功耗统计可知，维持10秒的短时睿频后就会逐级降低，核心功率可以长时间稳定在16W上下浮动。</p>
+<p><strong>六、 总结：EVO认证品质担保 近乎完美的笔记本</strong></p>
+<p>笔记本尤其是轻薄本在2020年取得了飞跃式的发展，新平台、新产品层出不穷，市面上的产品也是五花八门。对于熟悉硬件知识的用户来说，这当然是一场盛宴，可以尽情挑选自己最心仪的产品，但更多的用户并没有太多专业知识，尤其是如果想买一款在外观设计、配置性能、扩展续航等各方面都能让人称心如意的好本本，面对海量的产品自然就犯上了“选择困难症”。</p>
+<p>这，正是英特尔创建雅典娜计划、EVO严苛认证的一个初衷。</p>
+<p>英特尔EVO严苛认证很大程度上就是对笔记本产品的出色使用体验来背书。经过严格的测试、认证表，英特尔EVO能保证笔记本符合快速响应/瞬间唤醒的性能，足够轻薄炫酷的外观，9小时以上的现实续航以及Wi-Fi 6等指标要求。</p>
+<p>这样经过重重考验出炉的产品绝对不只是“好用”，而对于用户来说，比起抽象的数字、核心等话术，EVO认证也是更具信服力的对于使用体验的参考。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/ebbcdf97d0a24ec292747e16f0dc9235.png" /></p>
+<p>回到我们测试的对象——宏碁非凡S5，它在达成EVO认证要求的同时也确实有不少出彩之处。比如抗菌的设计，能够满足一些特殊人士的要求需要，日常使用也更加放心。优秀的屏幕素质且支持触控，日常使用更加方便。镁锂合金的引入，也让它的质感更为独特，轻薄的同时也十分坚固。</p>
+<p>性能方面，虽然没有极限的性能释放，但是它应付日常使用还有轻度娱乐也已经绰绰有余。11代酷睿和LPDDR4X 4266MHz内存的组合可以最大程度保证日常软件应用使用的流畅，休眠状态瞬间唤醒，也可以带来更为流畅的使用体验。还有Thunderbolt4接口，带来更快更强的扩展可能。</p>
+<p>拥有EVO认证的宏碁非凡S5起价为6599元，考虑到它不仅仅有着11代酷睿加持，还提供了LPDDR4X 高频内存、优秀的屏幕、轻薄的手感、满速USB3.2以及Thunderbolt4接口等不缩水的周边配置，这样的价格也算物有所值。如果你想要一台无可挑剔的笔记本，它就是那个可以闭着眼买的选择，体验绝对不会让你失望。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/3b5d9ad536d24de8bb7078d283ac0f24.png" /></p>
+➜华为首款商用台式机发布：7nm AMD处理器、搭载Windows 10
+http://www.sohu.com/a/437000055_163726	27132
+<p><span><strong>在今天下午举办的华为商用PC新品发布会上，华为首款商用台式机MateStation B515正式发布。</strong></span>其目标用户为企业客户，致力于打造更灵活、更高效的智慧办公体验。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/4a35d43149a94c8f805c0989882c5575.png" /></p>
+<p>此前，MateStation B515已经上架华为官网。<strong>其机箱设计小巧（高293mm、深315.5mm、宽93mm），重量约4.2kg，</strong>可灵活放置。前置USB-C接口支持快充，内置双天线Wi-Fi，蓝牙5.0等模块。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201208/f8908cd9186643b88fa44209a9a4544c.png" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/bc09d5510ecb4c7f8ed3904d77260e26.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>核心配置方面，<strong>可选 AMD锐龙5 4600G处理器或AMD锐龙7 4700G处理器，搭配8GB/16 GB DDR4 3200 MHz内存，内置256GB/512GB PCIe NVMe固态硬盘或1TB机械硬盘，</strong>同时支持DDR4双通道内存扩展，方便后续升级。搭载Windows 10家庭版系统。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/5c5082d5af09470082ee810499e51cd3.png" /></p>
+<p><strong>标配一台23.8英寸1080p全面屏显示器，16:9比例，拥有及窄边框和90%屏占比</strong>，支持德国莱茵TÜV国际认证，科学护眼，缓解长时间看屏幕带来的视觉疲劳。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201208/18192e0f0a7a4c579d9317220a6ccead.png" /></p>
+<p>MateStation B515还支持华为独家的多屏协同功能，<strong>配套键盘内置了NFC，支持手机电脑一碰即连。手机贴到Shift区域，即可把手机屏幕镜像到显示器上，支持双向拖拽，文件互传。</strong></p>
+<p>此外，在键盘的右上角还设计有一枚指纹开机键二合一键，开机更便捷的同时，也保证了安全性。键盘采用超薄设计，金属质感，2.5mm键程。</p>
+<p>MateStation B515还支持华为云空间，无需拿出手机，只需登录华为账号，就能在电脑上管理手机平板等终端的个人文件，并且在多设备上保持同步更新。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/79010566786549f7a5c6f1bbbed42f66.png" /></p>
+➜华硕首发非公版RX 6900 XT：三风扇、2.9插槽
+http://www.sohu.com/a/437008467_163726	28506
+<p>AMD RX 6800/6900系列发布之初，曾有消息称，RX 6900 XT只会有公版而不会有非公版。AMD当时的说法是仍在研究之中，会适时公布消息，而各家AIB厂商也并未放弃，一直在与AMD沟通。</p>
+<p>现在，RX 6900 XT正式解禁上市的前夕，<strong>华硕发布了第一款非公版的RX 6900 XT，隶属于其TUF GAMING电竞特工家族，而且是OC超频版。</strong></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201208/2fc2960fac514ce482e2b4ca47bfb3d4.jpeg" /></p>
+<p>华硕这款TUF GAMING RX 6900 XT OC采用了当下最流行的三风扇散热设计，搭配全金属背板，不过<strong>厚度是似乎从未见过的2.9插槽，而公版是2.5插槽。</strong></p>
+<p>风扇支持<strong>智能启停</strong>，核心温度低于55℃时自动停转，同时内部采用<strong>镜面直触设计</strong>，提高GPU散热效率。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/d8119ef5ba264933a9168a7f2d42c8e1.jpeg" /></p>
+<p>输出接口有<strong>三个DisplayPort 1.4、一个HDMI 2.1</strong>，取消了公版上的USB USB-C而增加了一个DisplayPort。</p>
+<p>具体频率未披露，但肯定高于公版的2015-2250MHz，而辅助供电依然是双8针。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>价格可能会和公版一样999美元，但就是不知道会有多少货……</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/5f58d6465a3e4d2eb7bfd726b3ad5829.jpeg" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/8169ed51d178416fa306aac7f2804550.jpeg" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/5224177e1de044b4bca599bb0013dd68.jpeg" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/9757a40d0f9c4166a7c0b18b2958094a.jpeg" /></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/89e0df4dd434475e8a8ce391592eca6c.jpeg" /></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/c0aa9733453346eb90664d0b182bb166.jpeg" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/37e1b6a8961b4c17b53e036881fcd47b.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/3da0329c38d746e895313948fdb4b98c.jpeg" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/1d32206144af470690e861e5a3382ce1.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/fe572de8d77f495b9b48d9bfd91f0646.jpeg" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/7023be0224524d1f94ef74dfd0358e57.jpeg" /></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/1b1e177873e24e1283a223fe268ad4bc.jpeg" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/7d7cb7e7002343f080cb9f886dffc72b.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/eba78c2522634b2fb8c8a4f72d11711b.jpeg" /></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/d9fc8f4ff63d49aa920d5a45d91b6dee.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/e8e3ec67e87c49db9b6448ca8c3fdc20.jpeg" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/f9bf2e2631864668811ed30c6b2f97c9.jpeg" /></p>
+➜华为推出首款商用台式机HUAWEI MateStation B515：从办公工具变身智能平台
+http://www.sohu.com/a/437018611_163726	30626
+<p>在进军笔记本PC市场四年之后，华为又进入了另一个蓝海市场——商用PC，今年8月份推出了MateBook B系列商用笔记本，现在则要扩大地盘，进军商用台式机市场。</p>
+<p>与MateBook B系列针对商用笔记本市场不同，HUAWEI MateStation B515主要面向政府、企业等商用台式机领域，主打高性能智慧计算，而华为有着万物互联的宏大愿景，商用PC这一次也要被华为带入智能时代了。</p>
+<p><strong>MateStation B515商用PC之巧：商务气息浓重 仅为传统机箱1/3大小</strong></p>
+<p>商用PC跟家用PC是有很大不同的，后者以玩游戏、上网、影音娱乐为主，外观设计追求炫酷、时尚，商用PC主要以商务办公为主，设计上以小巧、质感为重点。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/8b714a84c5cc4c2bacc7f323bc5ab50d.png" /></p>
+<p>HUAWEI MateStation B515台式机就是如此，<strong>它的机箱只有8L容量，设计紧凑，仅为传统机箱1/3大小，</strong>同时配以经典的哑光黑，有着强烈的金属质感，商务气息浓郁，给人以低调、专业的感觉。</p>
+<p>难得的是，HUAWEI MateStation B515在保持机身紧凑的同时，散热系统依然保持了高效运行，独特的垂直桨叶+大面积散热翅片设计降低了噪音，还获得了国家计算机噪声一级认证，高速运转下也能保持静音，不干扰正常工作。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/ec627b84ae1440f3895006ca3d4717dd.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>与此同时，HUAWEI MateStation B515还搭配华为的全面屏显示器，23.8寸大小尺寸合适，1080p全高清分辨率也能满足当前的办公、视频需要，而且屏占比高达90%，视觉效果出色，同样也减少了空间占用。</p>
+<p>此外，华为显示器还重点加强了护眼功能，办公一族需要长时间盯着屏幕，容易眼睛疲劳，而<strong>华为显示器通过了德国莱茵TÜV国际认证，有效降低蓝光，长时间使用能够减少对眼睛的伤害。</strong></p>
+<p><strong>HUAWEI MateStation B515之强：7nm 8核CPU、智慧键盘、指纹开机</strong></p>
+<p>HUAWEI MateStation B515虽然体积只有传统机箱1/3大小，但它依然是一台不折不扣的高性能台式机，并且有着华为独特的设计及功能。</p>
+<p>硬件方面，HUAWEI MateStation B515配备AMD新一代锐龙处理器，7nm工艺、8核架构，同时内置集成Radeon™ Graphics，还有最多16GB DDR4内存、512GB PCIe 3.0 SSD硬盘及1TB HDD机械硬盘。</p>
+<p>考虑到AMD 7nm锐龙CPU的性能，HUAWEI MateStation B515的硬件配置可以保证非常流畅的办公能力，<span><strong>不论是简单的Office办公，还是图像处理，或者3D加速都毫无压力，同时还保留强大的扩展能力，方便未来几年的升级。</strong></span></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/febba53cb28a47e08cea5cf4d898dc5c.png" /></p>
+<p>除了性能流畅，HUAWEI MateStation B515还有很多华为专为办公设计的功能，比如前置USB-C接口，支持9V/2A快充，方便给智能手机充电。</p>
+<p>HUAWEI MateStation B515配套的键盘也与众不同，内置了NFC芯片，支持了华为特色的Huawei Share、多屏协同等智慧交互等功能，让电脑与手机等设备有了跨系统连接的可能。</p>
+<p>最后，对商用PC来说，安全是非常重要的一部分，<strong>HUAWEI MateStation B515支持了指纹识别开机，开机瞬间就可以完成安全验证</strong>，直接登陆到桌面，方便的同时也极为安全，防止资料泄密，确保重要消息的安全。</p>
+<p><strong>HUAWEI MateStation B515之智：Huawei Share、多屏协同及云端同步</strong></p>
+<p>用过华为MateBook笔记本电脑的用户一定会对Huawei Share、多屏协同等功能印象深刻，这是华为PC与其他品牌最大的不同，华为打通了PC与手机之间的藩篱，让两种不同的平台也可以智慧互动。</p>
+<p>在HUAWEI MateStation B515上，华为的智能连接技术也普及到商用PC上了，并且有了更强的云能力，使得商用PC真正变成了智慧平台。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/979b22e8d8e843aaae6c7236a2f9f719.png" /></p>
+<p>首先是Huawei Share华为分享技术，它让PC和手机智能互联，改变了以往只能用蓝牙、数据线等连接的方式，只要碰一碰就可以通过NFC连接手机、PC，快速高效率传输文档、图片、视频等资料。</p>
+<p>其次，HUAWEI MateStation B515也支持华为的多屏协同，可以在PC中虚拟一个手机界面，然后在PC上同步操控手机，它不仅是方便了数据共享，<span><strong>同时也让手机与PC融合到一个屏幕中，让PC的键盘、鼠标成为手机的外设，打通了Windows与安卓之间的鸿沟。</strong></span></p>
+<p>有了华为分享及多屏协同，在智能手机上接收到的数据及工作任务可以随时同步到HUAWEI MateStation B515电脑上来，利用强大的性能快速处理，然后及时回复给客户、老板、同事，随时高效率完成工作任务。</p>
+<p><strong>华为的多屏协同功能还支持企业用户根据自身安全性进行定制，让用户无需担心安全性问题。</strong></p>
+<p>除了强大的智慧交互能力，HUAWEI MateStation B515还集成了华为的云空间，不论手机、平板还是PC电脑，登陆华为账号之后就可以同步各种工作数据，并且在云端管理数据，包括图片、视频、备忘录等，任何改动也会实时同步。</p>
+<p><strong>笔记本之后 HUAWEI MateStation B515要变革商用PC了</strong></p>
+<p>与数年前MateBook笔记本带给人的惊艳类似， HUAWEI MateStation B515电脑也让人感受到了华为在商用PC市场上“不走寻常路‘的决心，<strong>一是让人惊讶于这台商用PC的“精干”，二是全新的智能交互功能开创了商用台式机的先河。</strong></p>
+<p>在紧凑小巧的同时，HUAWEI MateStation B515依然有着强劲的性能，同时更注重与智能手机、平板电脑的互动，改变了以往繁琐的连接方式，华为分享可以快速共享各种数据，多屏协同则让PC与安卓设备合二为一，专注一个屏幕，提高了工作效率。</p>
+<p>在IDC的《未来企业效率白皮书》中，他们指出了企业数字化转型之后的商用PC的发展趋势，除了小型化、个性化之外，最重要的升级就是智能化、连接协同，打破地域、平台的限制，随时随地都能高效工作，智能、快速完成工作任务。</p>
+<p>随着HUAWEI MateStation B515的到来，华为全场景智慧体验将得到进一步丰富——日常通信使用华为手机，出差使用华为MateBook笔记本，办公使用HUAWEI MateStation B515台式机，得益于华为全平台的优势，数据可以互联互通，任何地点、任何时间都能高效率办公。</p>
+➜华为推出首款商用台式机HUAWEI MateStation B515：从办公工具变身智能平台
+http://www.sohu.com/a/437018438_163726	31451
+<p>在进军笔记本PC市场四年之后，华为又进入了另一个蓝海市场——商用PC，今年8月份推出了MateBook B系列商用笔记本，现在则要扩大地盘，进军商用台式机市场。</p>
+<p>与MateBook B系列针对商用笔记本市场不同，HUAWEI MateStation B515主要面向政府、企业等商用台式机领域，主打高性能智慧计算，而华为有着万物互联的宏大愿景，商用PC这一次也要被华为带入智能时代了。</p>
+<p><strong>MateStation B515商用PC之巧：商务气息浓重 仅为传统机箱1/3大小</strong></p>
+<p>商用PC跟家用PC是有很大不同的，后者以玩游戏、上网、影音娱乐为主，外观设计追求炫酷、时尚，商用PC主要以商务办公为主，设计上以小巧、质感为重点。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201208/5329222174124ab498d0082800ee3f3b.png" max-width="600" /></p>
+<p>HUAWEI MateStation B515台式机就是如此，<strong>它的机箱只有8L容量，设计紧凑，仅为传统机箱1/3大小，</strong>同时配以经典的哑光黑，有着强烈的金属质感，商务气息浓郁，给人以低调、专业的感觉。</p>
+<p>难得的是，HUAWEI MateStation B515在保持机身紧凑的同时，散热系统依然保持了高效运行，独特的垂直桨叶+大面积散热翅片设计降低了噪音，还获得了国家计算机噪声一级认证，高速运转下也能保持静音，不干扰正常工作。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201208/42b34aea114a49b197960991a97ec23e.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>与此同时，HUAWEI MateStation B515还搭配华为的全面屏显示器，23.8寸大小尺寸合适，1080p全高清分辨率也能满足当前的办公、视频需要，而且屏占比高达90%，视觉效果出色，同样也减少了空间占用。</p>
+<p>此外，华为显示器还重点加强了护眼功能，办公一族需要长时间盯着屏幕，容易眼睛疲劳，而<strong>华为显示器通过了德国莱茵TÜV国际认证，有效降低蓝光，长时间使用能够减少对眼睛的伤害。</strong></p>
+<p><strong>HUAWEI MateStation B515之强：7nm 8核CPU、智慧键盘、指纹开机</strong></p>
+<p>HUAWEI MateStation B515虽然体积只有传统机箱1/3大小，但它依然是一台不折不扣的高性能台式机，并且有着华为独特的设计及功能。</p>
+<p>硬件方面，HUAWEI MateStation B515配备AMD新一代锐龙处理器，7nm工艺、8核架构，同时内置集成Radeon™ Graphics，还有最多16GB DDR4内存、512GB PCIe 3.0 SSD硬盘及1TB HDD机械硬盘。</p>
+<p>考虑到AMD 7nm锐龙CPU的性能，HUAWEI MateStation B515的硬件配置可以保证非常流畅的办公能力，<strong>不论是简单的Office办公，还是图像处理，或者3D加速都毫无压力，同时还保留强大的扩展能力，方便未来几年的升级。</strong></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201208/d826bdd42ee746f090102ef4afff5fe8.png" max-width="600" /></p>
+<p>除了性能流畅，HUAWEI MateStation B515还有很多华为专为办公设计的功能，比如前置USB-C接口，支持9V/2A快充，方便给智能手机充电。</p>
+<p>HUAWEI MateStation B515配套的键盘也与众不同，内置了NFC芯片，支持了华为特色的Huawei Share、多屏协同等智慧交互等功能，让电脑与手机等设备有了跨系统连接的可能。</p>
+<p>最后，对商用PC来说，安全是非常重要的一部分，<strong>HUAWEI MateStation B515支持了指纹识别开机，开机瞬间就可以完成安全验证</strong>，直接登陆到桌面，方便的同时也极为安全，防止资料泄密，确保重要消息的安全。</p>
+<p><strong>HUAWEI MateStation B515之智：Huawei Share、多屏协同及云端同步</strong></p>
+<p>用过华为MateBook笔记本电脑的用户一定会对Huawei Share、多屏协同等功能印象深刻，这是华为PC与其他品牌最大的不同，华为打通了PC与手机之间的藩篱，让两种不同的平台也可以智慧互动。</p>
+<p>在HUAWEI MateStation B515上，华为的智能连接技术也普及到商用PC上了，并且有了更强的云能力，使得商用PC真正变成了智慧平台。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201208/8f3bfa7648084d5abcbabde369140862.png" max-width="600" /></p>
+<p>首先是Huawei Share华为分享技术，它让PC和手机智能互联，改变了以往只能用蓝牙、数据线等连接的方式，只要碰一碰就可以通过NFC连接手机、PC，快速高效率传输文档、图片、视频等资料。</p>
+<p>其次，HUAWEI MateStation B515也支持华为的多屏协同，可以在PC中虚拟一个手机界面，然后在PC上同步操控手机，它不仅是方便了数据共享，<strong>同时也让手机与PC融合到一个屏幕中，让PC的键盘、鼠标成为手机的外设，打通了Windows与安卓之间的鸿沟。</strong></p>
+<p>有了华为分享及多屏协同，在智能手机上接收到的数据及工作任务可以随时同步到HUAWEI MateStation B515电脑上来，利用强大的性能快速处理，然后及时回复给客户、老板、同事，随时高效率完成工作任务。</p>
+<p><strong>华为的多屏协同功能还支持企业用户根据自身安全性进行定制，让用户无需担心安全性问题。</strong></p>
+<p>除了强大的智慧交互能力，HUAWEI MateStation B515还集成了华为的云空间，不论手机、平板还是PC电脑，登陆华为账号之后就可以同步各种工作数据，并且在云端管理数据，包括图片、视频、备忘录等，任何改动也会实时同步。</p>
+<p><strong>笔记本之后 HUAWEI MateStation B515要变革商用PC了</strong></p>
+<p>与数年前MateBook笔记本带给人的惊艳类似， HUAWEI MateStation B515电脑也让人感受到了华为在商用PC市场上“不走寻常路‘的决心，<strong>一是让人惊讶于这台商用PC的“精干”，二是全新的智能交互功能开创了商用台式机的先河。</strong></p>
+<p>在紧凑小巧的同时，HUAWEI MateStation B515依然有着强劲的性能，同时更注重与智能手机、平板电脑的互动，改变了以往繁琐的连接方式，华为分享可以快速共享各种数据，多屏协同则让PC与安卓设备合二为一，专注一个屏幕，提高了工作效率。</p>
+<p>在IDC的《未来企业效率白皮书》中，他们指出了企业数字化转型之后的商用PC的发展趋势，除了小型化、个性化之外，最重要的升级就是智能化、连接协同，打破地域、平台的限制，随时随地都能高效工作，智能、快速完成工作任务。</p>
+<p>随着HUAWEI MateStation B515的到来，华为全场景智慧体验将得到进一步丰富——日常通信使用华为手机，出差使用华为MateBook笔记本，办公使用HUAWEI MateStation B515台式机，得益于华为全平台的优势，数据可以互联互通，任何地点、任何时间都能高效率办公。</p>
+➜6999元的最强小金刚！AORUS FI27Q-X 240雕皇机电竞显示器评测
+http://www.sohu.com/a/437033711_163726	34995
+<p><strong>一、前言：最强小金刚新升级 这次240Hz+2K+10bit+HDR 400火力全开</strong></p>
+<p>在去年，技嘉旗下高端电竞品牌AORUS首度进军显示器领域，一出手就是一款堪称小金刚天花板的AORUS FI27Q-P，优秀的面板和成熟的功能调教，再加上独特的“大雕”造型和HBR3加持下2K/165Hz/10bit/HDR 400全开的傲人表现，给人留下了深刻的印象，堪称玩家的梦幻神器。</p>
+<p>一年过去，乘着6800 XT/RTX 3080等新一代显卡推出的东风，PC游戏正式进入了2K高刷时代，技嘉也趁这个机会为自己的AORUS旗舰显示器产品升级换代，在上一代的基础上，保留诸多优点，同时升级为新一代顶配面板，在参数上不留遗憾。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/4416b0a5dea141fe9ae72292b60e1e4e.jpeg" /></p>
+<p>全新的旗舰电竞显示器AORUS FI27Q-X，<span><strong>采用了夏普27寸IPS电竞产品线中规格最高的一款面板</strong></span>，由此带来了显示效果的全面升级。<span><strong>240Hz的极高刷新率，最低可到0.3ms的动态画面响应时间，100%的AdobeRGB色域覆盖</strong>，</span>无论是画质还是流畅度，都能提供最好的体验。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/97528997751e4668aa7e7a414d2f7ae9.png" /></p>
+<p>除此之外，之前特色的HBR3属性这次在AORUS FI27Q-X显示器上也依然存在。没有带宽缩水的担忧，AORUS FI27Q-X显示器从接口到配套的DP线材都符合HBR3认证的最大带宽标准，<strong>能够完美发挥DP1.4接口的全部性能，实现2K+240Hz+10bit+HDR 400全部开启</strong>，再也不会出现因为带宽不够而损失面板规格的遗憾。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>外观上， AORUS FI27Q-X还接着延续了前代的外观ID设计，<strong>无论灯效还是炫酷度都堪称满分</strong>，同时还提供了方便移动的提手和理线器，兼顾了美观和实用性。<strong>特色的AORUS战术功能也继续保留</strong>，黑平衡、超级分辨率、计数器/计时器、性能监控面板，玩家的各种需要都可以解决。</p>
+<p>接下来，就让我们一同来体验一下， AORUS FI27Q-X究竟有何实力。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/e52062d78f0e457386cb90b776eddb62.png" /></p>
+<p><strong>二、外观：电竞战鹰机甲后壳设计 RGB灯效和金属材质极富质感</strong></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/696d54f8370043fb87f015521689d3f3.jpeg" /></p>
+<p>AORUS FI27Q-X电竞显示器的包装符合电竞产品一如既往的酷炫风格。纯黑包装上印有产品渲染图、型号名称及LOGO等。HBR3的标识还有27寸的注明则印在左下角。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/68235b8de3c6428a9404e4800f0330a9.jpeg" /></p>
+<p>包装的顶部可以看到技嘉AORUS FI27Q-X的诸多特性说明。比如2K分辨率240Hz刷新率、SS IPS快速液晶面板、1ms GTG响应时间、10bit色深等。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/bbe2200170e54065b3d152535d0f2528.jpeg" /></p>
+<p>拿出本体，AORUS系列电竞显示器在外观设计上保持着极高的延续性，特色的支架、正面窄边框设计、背部机甲造型和鹰翼灯效，拥有很高的辨识度。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/0dbb7d4abd054d9984522ca07d50c9d6.jpeg" /></p>
+<p>正面下边框的中央，有着AORUS的LOGO，电源指示灯，显示器自带麦克风的开孔也设置于此。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/34048d17fbda4080a846ff1b673a9525.jpeg" /></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/48ba467bacf9430086c285431036dd2a.jpeg" /></p>
+<p>背面，三块黑色透明区域都隐藏有RGB灯条，支架与显示器采用快装卡扣的方式固定和连接，省去了不少拆装的麻烦。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/5d8245ab79d24b49ac94a02139625d22.jpeg" /></p>
+<p>支架不仅顶部有方便搬运的提手合集，底部还有线材收纳的开孔。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/dc36533743e54e1db77de98c442db96f.jpeg" /></p>
+<p>支架和底座采用一颗螺丝固定。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/9fd8c9a843dc430ba1272e3bb4edc424.jpeg" /></p>
+<p>底部接口，耳机和麦克风分别有两个3.5mm接口，方便进行降噪处理，另有两个HDMI 2.0接口、一个DP 1.4接口、一个USB 3.0 IN接口和两个USB 3.0接口。</p>
+<p>控制方面，仅有一枚五维摇杆作为开关和功能控制按钮，放置在屏幕正下方，操作起来非常灵活</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/c22058b4f2aa4495a17c7135aac542e5.jpeg" /></p>
+<p>随包装赠送的线材，分别是一根USB线，一根DP1.4 HBR3认证连接线和一根HDMI 线，此外还有一根电源线并未展示在图中。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/5bc2bd375ee44b6cb52d067ba0f35f3e.jpeg" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/427e6d58560349fc918089ab9b7a5beb.gif" /></p>
+<p>AORUS FI27Q-X显示器的背部有着独特的鹰之翼灯效，提供波浪、色彩变幻、色彩循环、闪烁、双重闪烁、脉搏和静态多种灯效选择，搭配RGB FUSION 2.0软件，与其他AORUS的产品可以做灯效同步。</p>
+<p><strong>三、屏幕素质：原生100% AdobeRGB广色域！更有100% sRGB模式</strong></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201208/b1a81fe1f922441ab8409c1c3a56c129.jpeg" /></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/37619b62976e443bbbb690606b799cb6.png" /></p>
+<p>AORUS FI27Q-X显示器采用了夏普LQ270T1JG04作为其面板，作为夏普27寸面板产品中最强的存在，它拥有101%的NTSC色域容积、240Hz的刷新率支持、HDR 400显示、10bit画面输出等多项特性。有顶级面板相搭配，屏幕素质相当值得期待。</p>
+<p>虽然一块显示器的面板素质不会改变，但是由于厂商会做不同的软件调教，所以显示器在不同模式下的色域并不相同。比如在HDR模式下，色域往往会相较于原生色域有一定的收缩；或是在专门的色域缩限模式下，色域也会被限制在相应的色彩空间中。</p>
+<p>因此，我们对于技嘉AORUS FI27Q-X显示器的各种模式，都需要进行详尽的测试。</p>
+<p><strong>——原生屏幕素质</strong></p>
+<p><strong>1、色域</strong></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/973075b18f464ea18f942eda8264a94b.png" /></p>
+<p>显示器原生色域为100%AdobeRGB，色域范围基本与AdobeRGB的色彩空间相一致，因此实现了100%的sRGB覆盖、94%的DCI-P3色域覆盖和96%的NTSC色域覆盖。可以说是一块名副其实的广色域屏幕。</p>
+<p><strong>2、亮度及对比度</strong></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/f32f5b4f10d64214abfd1ea382f884d5.jpeg" /></p>
+<p>最高亮度可以达到442nit，完美满足VESA Display HDR400的要求，对比度最高可达1000 : 1，在不同亮度下的数值略有波动。</p>
+<p><strong>3、色调响应</strong></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/fe9fadd4b4e4465d9542a9b18770abc8.png" /></p>
+<p>AORUS FI27Q-X拥有6档伽马调节，默认为伽马三，也就是我们常用的2.2伽马值。</p>
+<p><strong>4、屏幕均匀度</strong></p>
+<p><strong>——亮度均匀度</strong></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/07d5e5c134a44d778f91e47a77a66de6.png" /></p>
+<p>100%亮度下亮度的均匀度</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/5666aa707b664ca0b2067ddc905344af.png" /></p>
+<p>50%亮度下亮度的均匀度</p>
+<p><strong>——色温均匀度</strong></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/86ac111c23ea4695a0164061da70c9b0.png" /></p>
+<p>100%亮度下色温的均匀度</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/ed6d1893920c4f37ab6a5fe8cfe30008.png" /></p>
+<p>50%亮度下色温的均匀度</p>
+<p>AORUS FI27Q-X采用的是侧入式背光，因此不难发现，屏幕周边的亮度都明显较高。不过亮度差异最大也不过14%，屏幕亮度均匀度在IPS中还是属于较为优秀的，但色温在100%亮度时屏幕左下角略高于一般水平。</p>
+<p><strong>——色彩精确度</strong></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/a72f65f438ce45a892227afea3f0eb9e.png" /></p>
+<p>在24种标准颜色的色准测试中， AORUS FI27Q-X显示器的平均色准仅有0.63，最大值也仅有1.10，这块显示器在色准方面极其优秀，说它可用于专业用途也毫不为过。</p>
+<p><strong>——sRGB模式/HDR模式</strong></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/682180a68aef4b28bc08715913d3d2be.jpeg" /></p>
+<p>在显示器预设的sRGB模式或是开启HDR模式后，显示器的色域都会发生变化，色彩空间被限制在100%sRGB的范围之中。这样做的好处就是可以保证显示器显示画面的颜色更加还原，不用担心广色域显示器出现的过饱和情况。</p>
+<p><strong>四、OSD菜单：旗舰级的齐全功能 支持多项自定义预设</strong></p>
+<p>有了素质优秀的屏幕，作为品牌显示器，OSD菜单自然是与DIY显示器拉开差距最大的地方。菜单的美观、选项的丰富度、功能调教是否成熟，都会对实际体验造成较大的影响。</p>
+<p>AORUS FI27Q-X显示器在操控上与前代一致，只有一颗全向摇杆，按下后朝上按即可进入熟悉的显示器设置菜单页面。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/2fd958066df74539bda898b1e684266c.jpeg" /></p>
+<p>第一项为游戏功能，里面提供了稳定瞄准、Amd Freesync Prenium、黑平衡、超级分辨率等功能。这些功能都跟游戏比较相关，通过调整可以对游戏的体验起到不小的作用。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/981d9b98f0c94c66a2b91cb4d94742f1.jpeg" /></p>
+<p>第二项为图像功能，在这里可以调节画面的亮度、对比度等设置。不过需要预先选择一种画面预设才能开始具体的调整。其中sRGB模式可以将色域缩限在sRGB色彩空间中，如果不喜欢广色域显示器的过饱和显示，这个模式会是不错的选择。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/cd50c8a327c840c1b0a29c35e773e002.jpeg" /></p>
+<p>图像功能中还提供了三个用户预设，用来存储用户自己喜好的方案。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/99050e1256e34a929d17ed7316f0b91a.jpeg" /></p>
+<p>显示功能中主要是选择信号输入的端口等设置，使用HDMI线时，还可以选择HDMI RGB范围为0——255还是16——255。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/a40407dee4c24aecb082f2fc1c16cd12.jpeg" /></p>
+<p>PIP/PBP即多画面的设定，可以选择左右同屏或者画中画模式，每个都可以对信号源、大小、窗口位置进行详细的调整。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/388511d28a22455da3fbb9654833e4a7.jpeg" /></p>
+<p>系统功能设定，可以改变菜单的语言、显示器RGB灯效、音频接口接入的耳机调节、快捷键等。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/0b90d58335554a7d999734afd9d19108.png" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/358f938e656a41dab3a71da539519713.png" /></p>
+<p>除了设置菜单外，按下五向摇杆时还可以调出战术辅助窗口，不仅可以实现显示器硬件端的资源监控窗口，还可以调用出计时器、计数器、屏幕准心等实用功能。当然，这些功能中的大部分都需要用USB线连接显示器和电脑才可使用。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/1f804826dfda4b76853f789de551253a.png" /></p>
+<p>在使用USB线连接显示器和电脑后，甚至可以直接通过PC端的软件完成对显示器功能的设置。相较于按键一个选项一个选项的设置，这种平铺式的菜单要方便得多。</p>
+<p><strong>五、SS快速液晶： 240Hz/0.3ms游戏体验更流畅 HBR3高宽带参数全开</strong></p>
+<p><strong>——HBR3</strong></p>
+<p>现在大多数电竞显示器上，DP1.4接口都成为了标配。而DP 1.4接口标准，理论上最大拥有32.4Gbit/s的带宽，可以实现最大8K/60Hz HDR 或者4K/120Hz HDR画面的传输，常规2K/240Hz HDR的画面自然不在话下。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/2f1e80b7b05a4aa2a578048c0437bbf2.png" /></p>
+<p>不过实际上，很多显示器虽然支持DP 1.4的传输标准，但是对于HBR3的传输规范却避而不谈。这就意味着，它们在最大带宽上做了手脚，实际使用时往往还是只能达到DP 1.2的表现。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/be65b48c7f67453c90c5aaacbbad3212.png" /></p>
+<p>市售的DP1.4线材 价格落差如此之大也是因为规格并不相同</p>
+<p>并非所有的接口和线缆都能实现DP接口的所有性能，因此VESA对于线缆也有着自己的一套认证标准。只有拥有HBR3认证的产品，才能达到32.4Gbps的最大带宽，充分发挥DP 1.4的全部性能。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201208/271ed8b1b68246b5868399d0d043018a.png" /></p>
+<p>在上一代的AORUS FI27Q-P上，技嘉就将HBR3作为卖点之一，它更是当时少有的支持2K、165Hz、HDR、10bits色深全开的电竞显示器之一。在这一代的技嘉AORUS FI27Q-X显示器上，更是将HBR3的带宽消耗殆尽，做到了2K、240Hz、HDR 400、10bit全开的极限。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/8772fcd440ba48c8bdffbccfde7c355f.jpeg" /></p>
+<p>使用AORUS FI27Q-X显示器连接主机，在显卡驱动中可见，单条带宽达到了8.1Gbps，总带宽达到了32.4Gpbs的最高值。此时显示器可以在输出HDR信号的同时，在2K、240Hz、10bit的模式下运行。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/224bb52bfca64c77885a17de33515253.jpeg" /></p>
+<p>此时检测10bit的真实情况，显示器确实在以10bit色深的模式输出画面，而非许多入门显示器在最高画面规格下仅仅驱动识别为10bit，但实际画面依然为8bit色深。。</p>
+<p>不过值得一提的是，做到全开时，显示器显示的颜色格式会与我们一般常用的RGB有所不同，为了保证实际带宽不溢出最大带宽，会选择有一定压缩的YCbCr422颜色格式输出画面。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/cf764733804e4417838e735a8f8492b8.png" /></p>
+<p>如果在意颜色有一定的压缩，也可以采用2K、240Hz、8bit、HDR 400的画面输出，此时颜色格式就可以选择RGB的无损模式。</p>
+<p><strong>——240H</strong></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/9feb62482c2d42b2a4a42c7cf1aa7a46.jpeg" /></p>
+<p>AORUS FI27Q-X显示器支持最高240Hz的刷新率，使用程序测试，可以看到240Hz刷新率货真价实，没有出现跳帧的情况。</p>
+<p>240Hz相较于传统的60Hz显示器，在刷新率上有着4倍的差距，即使是我们常见的144Hz显示器，也有着近1倍的提升。日常使用还有游戏时，画面显示都会更加的流畅，对于FPS游戏的提升更是巨大。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/903ea7c930ba45b29a9096384e28a994.gif" /></p>
+<p>240Hz</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/68235b1edd074c8c8c4f02da2702fa8d.gif" /></p>
+<p>60Hz</p>
+<p>在游戏中，240Hz下人物的移动更为流畅，这意味着瞄准射击跟枪的手感也会更好。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/a6c135ec96a347c88cee45be7f530c58.gif" /></p>
+<p>60Hz</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/b304aec2906147eaa1d6e74f7d77d3e3.gif" /></p>
+<p>240Hz</p>
+<p>举个极端例子，在狙击窄缝经过的对手时，低刷新率下的人物几乎只会显现几帧，即便射击也只能跟随残影但并非人物的真实位置。在高刷新率下，人物的显示更加平顺，不会出现“感觉射击到了却没有伤害”这种奇怪的感觉。</p>
+<p><strong>——0.3ms响应</strong></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/0a577831ff744e83a8f2440278fb192a.jpeg" /></p>
+<p>AORUS FI27Q-X显示器拥有最新的夏普SS IPS面板，响应速度上可以达到1ms GTG,0.3ms MPRT。在反应时间设定中，提供了画质优先、平衡、速度优先三个选项，还有一项稳定瞄准功能，可以实现0.3ms MPRT的响应速度。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/5987feec90a94af4871957bcda762579.jpeg" /></p>
+<p>反应时间：画质优先</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/f8c067c426a24615bc5a9fefdefcfb3d.jpeg" /></p>
+<p>反应时间：速度优先</p>
+<p>使用相机在1/1000的快门下拍摄，能看到AORUS FI27Q-X显示器的图形拖影相当短，即便是画质优先模式，拖影都已经达到了一般显示器的极限水准。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/b30ce390188f4f648ae6ecb00d151bf4.png" /></p>
+<p>从左到右：速度、均衡、画质</p>
+<p>使用相机追踪拍摄，可以更加真实的反映肉眼所见的拖影情况。SS IPS的响应速度已经可以保证浅色背景下的拖影天然不可见。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/c787148bc22042a783012349b5525703.png" /></p>
+<p>当开启瞄准稳定功能后，显示器此时会将OD档位拉到最高，同时以极高的频率插入黑帧来使画面绝对清晰，达到0.3ms的MPRT响应速度。这个模式下虽然残影不能保证消失，但是一定会十分清晰。</p>
+<p>不过，也许是因为我们这台技嘉AORUS FI27Q-X显示器为工程机的缘故，残影都出现了过冲的现象，拖影表现为反色的状态。</p>
+<p><strong>六、其它功能：黑平衡功能堪比夜视仪 超级分辨率增强细节</strong></p>
+<p>作为一款电竞显示器，技嘉还为AORUS FI27Q-X显示器准备了多个功能，可以在游戏时根据需要调节，产生合适的画面。</p>
+<p><strong>——HDR 400</strong></p>
+<p>AORUS FI27Q-X显示器拥有VESA Display HDR400认证，可以提供入门级的HDR效果。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/b600f187c6c2477c9ce7b4117a6c393f.png" /></p>
+<p>HDR开启</p>
+<p><img src="//p4.itc.cn/q_70/images03/20201208/d19686fd24a74ff48d7cfb9365fe6038.png" /></p>
+<p>HDR关闭</p>
+<p>在开启HDR后，显示器的画面会拥有更大的动态范围，同时细节和层次感都大大增加，有明有暗，同时显示出所有部分的细节，呈现出更具真实感的画面。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/2a638d54001d4bfea5fa2fb093d02109.jpeg" /></p>
+<p>HDR开启</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/451c914711f84de8adbb87f23d33f5ab.jpeg" /></p>
+<p>HDR关闭</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/69c94e80b560454cb297e50f16fff572.jpeg" /></p>
+<p>HDR开启</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/bf148afc0216411ca41c870eff5aa1fb.jpeg" /></p>
+<p>HDR关闭</p>
+<p>通过特写可以进一步看出HDR画面的特点，有明有暗，同时拥有更优秀的细节和画面层次感。</p>
+<p><strong>——AMD FreeSync Premium</strong></p>
+<p><img src="//p5.itc.cn/q_70/images03/20201208/4adbb169995949d6b115ca54af4ce1de.jpeg" /></p>
+<p><img src="//p9.itc.cn/q_70/images03/20201208/4263cae95cc640139f77ac3852a2cd18.jpeg" /></p>
+<p>技嘉AORUS FI27Q-X显示器拥有AMD FreeSync Premium认证，搭配A卡使用可以享受自动同步无撕裂还有LFC补帧等多种福利，而搭配N卡也可以利用G-Sync Compatible享受无撕裂的画面。</p>
+<p><strong>——黑平衡</strong></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/1ce4a47c49374b6d818e69467378338a.png" /></p>
+<p>黑平衡2.0对比传统黑平衡</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/b1019503389849a6a0b924bf089611e4.jpeg" /></p>
+<p>技嘉AORUS FI27Q-X显示器提供了两种黑平衡方式，一种是传统黑平衡，增强暗部亮度的同时，亮部会不可避免地出现过曝等问题。同时它还有更为先进的黑平衡2.0，可以将屏幕分为1296个分区，每个区域单独进行黑平衡运算，保证增强暗部细节和亮度的同时让亮部不会有过曝出现。</p>
+<p><strong>——超级分辨率</strong></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/257bc4a9a4254dbab13e53d0e7423211.png" /></p>
+<p>超级分辨率可以通过调节画面锐度和对比度，让细小物体在屏幕上显示的更加清晰。像游戏中远处的敌人，开启此功能后轮廓会更加的明显，不借助高倍镜也能实现辨认和瞄准。</p>
+<p><strong>——音频降噪</strong></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/8c2dd1eed93f4223b909b4c83275c4f0.png" /></p>
+<p>不仅是显示器，技嘉AORUS FI27Q-X显示器还能提供堪比外置声卡的降噪能力。它的音频接口最高拥有600Ω的推力，足以带动一些高端监听耳机，双麦克风硬件降噪技术，也可以消除周围环境的噪音。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/4cd050576358412ab52305ea517a641e.gif" /></p>
+<p>最后，技嘉AORUS FI27Q-X的支架也拥有很高的自由度，支持升降、旋转、俯仰等操作，可以满足各种姿态下使用的需要。</p>
+<p><strong>七、总结：2K+240Hz+10Bit+HDR 400火力全开 一款完美的电竞神器</strong></p>
+<p>没有夸张花哨的特性，AORUS FI27Q-X电竞显示器作为一款旗舰电竞产品可以说在硬件设计上相当的脚踏实地。它着重于玩家游戏时的痛点，针对性的采用了SS IPS的面板方案，240Hz的高刷新率和0.3ms（MPRT）的动态画面响应时间/1ms （GTG）的灰阶响应时间，就是它最大的卖点。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/68a22ef1fb244c2183cb77b4a1573fcf.jpeg" /></p>
+<p>此外，延续自上一代的HBR3认证，也让它能够拥有面板规格火力全开的资本。无需牺牲任何参数，玩家可以做到精致的画面和流畅的高刷新率两全，这种“我全都要”的气势，才是一款旗舰显示器应有的表现。</p>
+<p>除了这些之外，电竞显示器往往有着很多的附加特性，像炫酷的灯效和外形、各种各样诸如黑平衡、战术菜单的额外功能加持、HDR等，都能成为不错的卖点。</p>
+<p>这些部分，AORUS FI27Q-X的表现也丝毫不限落后。菜单里给足了各种功能，HDR效果也十分令人满意，特色的灯效和独特的支架设计，兼顾了美观和实用性。</p>
+<p>甚至它还别出心裁的在音频方面留了一手，高推力的音频接口和降噪功能，节省了玩家挑选音频设备的时间，无需专业游戏耳机也能享受高标准的游戏音频和通话质量。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/910f6de439394c6394c005003d2debb8.jpeg" /></p>
+<p>AORUS FI27Q-X电竞显示器的其售价高达6999元，在体验了它优越的性能之后这个售价也确实物有所值。</p>
+<p>如果是追求高刷新率的流畅游戏体验，技嘉AORUS FI27Q-X无论是刷新速度还是响应速度的优秀表现都称得上是你最合适的选择。毕竟目前来看，4K依然停留在60流畅的时代，而且价格依然吓人。2K高刷新率，作为一个甜点级的存在，它的魅力依旧不减。而技嘉AORUS FI27Q-X，就是2K电竞显示器中，堪称完美的存在。</p>
+➜Intel 9代酷睿全部退役！30款一个不留
+http://www.sohu.com/a/437062878_163726	45769
+<p><strong>Intel今天发布产品变更通知，代号Coffee Lake-S Refresh的第9代桌面级酷睿家族处理器全部进入停产退市进程，包括酷睿、奔腾、赛扬，包括盒装版和散片，一个不留。</strong></p>
+<p>要知道，Rocket Lake-S 11代桌面酷睿明年一季度末才会发布，这样一来Intel在市场上的主力就只剩下Comet Lake-S 10代酷睿，这种产品换代节奏之快。</p>
+<p>本次退役的是Intel 9代酷睿家族中的全部型号，包括<strong>i9 4款、i7 5款、i5 9款、i3 6款、奔腾3款、赛扬3款</strong>，i9-9900K、i5-9600F/9400F这样的爆款也全部离去。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/302908bf135546ac867c7d89fff94a8d.jpeg" /></p>
+<p>当然，它们不会立刻在市场上消失，按惯例还有个过渡期。按照计划，<strong>这些处理器2021年6月25日之后不再接受新订单，已下达的订单也不可取消、不可退回，2021年12月24日停止出货。</strong></p>
+<p>完整名单如下：</p>
+<p>酷睿i9-9900K、9900KF、9900、9900T</p>
+<p>酷睿i7-9700K、9700KF、9700、9700F、97000T</p>
+<p>酷睿i5-9600K、9600KF、9600T、9500、9500F、9500T、9400、9400F、9400T</p>
+<p>酷睿i3-9350K、9320、9300、9300T、9100、9100T</p>
+<p>奔腾金牌G5620、G5420、G5420T</p>
+<p>赛扬G4950、G4930、G4930T</p>
+<p><strong>至于全核5GHz频率的i9-9900KS，因为本来就是限量版，早已提前退役。</strong></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/77e8b0375c654b3e8752ff9d456b4643.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>散片</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/9c70dba769234d8bbc096038c899bb33.png" /></p>
+<p>盒装一</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/01246523a60c451889d31259e3344ed1.png" /></p>
+<p>盒装二</p>
+➜vivo公布S7新代言人 潮流女神LISA来了
+http://www.sohu.com/a/437066859_163726	47926
+<p>vivo发布了S7，而除了代言人刘昊然外，他们这次还带来了新的面孔，相信大家都不陌生。</p>
+<p><strong>没错，新的代言人正是潮流女神LISA，而在官方没有宣布前，就有多个消息显示，这位潮红的人气女神将会成为vivo的新代言人。</strong></p>
+<p>其实之前S7的谍照已经显示，LISA身穿浅蓝色牛仔吊带裙，纤纤手指捧握着一款蓝紫渐变色的手机，机身色彩与其衣服颜色相得益彰。</p>
+<p>：vivo S7的8+128G版售价2798元，8+256GB版售价3098元，今天天猫、京东等线上各大平台、线下所有vivo门店开启预售，8月8日线上线下全线开售！</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201208/7d05c4f2a4924c36a7e0903387e68e25.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201208/591f2573f12540d0a249855d60d2d7c6.png" max-width="600" /></p>
+➜170g最轻薄5G手机 vivo S7月光白开箱图赏
+http://www.sohu.com/a/437066948_163726	47952
+<p>vivo新机S7正式发布，8+128G版售价2798元，8+256GB版售价3098元。</p>
+<p>新机提供月光白、爵士黑、莫奈漫彩三种配色，我们快科技已经拿到了月光白版本，下面为大家带来图赏。</p>
+<p><strong>vivo S7配备了6.44寸AMOLED屏幕，刘海屏设计，前置4400万像素双摄像头</strong>，主摄支持PDAF对焦及人眼追焦技术，支持前置4K视频。副摄800万像素，支持105度超广角，取景范围是普通手机前置镜头的2倍，适合集体自拍。</p>
+<p><strong>vivo S7背面采用AG玻璃工艺，重量仅170克，厚度仅为7.39mm，是目前最轻薄的5G手机。</strong></p>
+<p>性能方面，<strong>vivo S7搭载骁龙765G处理器，支持5G双模，全系8GB内存，UFS 2.1闪存，全功能NFC。</strong>后置6400万像素三摄，分别是6400万主摄、800万像素广角及200万像素微距。</p>
+<p>续航方面，vivo S7配备了4000mAh电池，支持33W FlashCharge超快闪充，15分钟冲入36%的电量。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201208/a3e603374f4644e78844e30e24119482.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201208/7b47e8ef84fb43b5b2aa494a87dcd625.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201208/b2696e344d0349a1a936546f74fbfaa1.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201208/0cc3db417aa041bc81500111ec2feffc.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201208/8e9375352a124a4183d48d462b54dd48.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201208/2882068de5e0434ead8eecaca9dec64f.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201208/ce917ed50b874eb6b35f977f50472d74.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201208/1fa78711dc0e45c783eae201ce307c6c.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201208/1428bfc4156547acaa940b86f3d52d18.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201208/ab6f264cce844152b980b709a9f5e98b.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201208/a3fc97076efc45559e03788b3b16a785.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201208/c7133e17776b4f48922343c957aed532.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201208/538e8a25f1eb46c08c70283e7ec371ef.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201208/e4d8a1bc932e4633a5c7718eaa7ee4cb.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201208/aa80ab34f78e4f50b70995ac5f2903a7.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201208/94c9d084fee845108edbf74b69595d5e.jpeg" max-width="600" /></p>
+➜171.3g手机塞进4100mAh电池 vivo S7e宣布
+http://www.sohu.com/a/437066788_163726	47967
+<p>今天，vivo宣布S系列即将迎来新成员vivo S7e。</p>
+<p>vivo S7e亮点之一是轻薄设计，<strong>其厚度仅有7.73mm，重量为171.3g，</strong>在这样的轻薄机身下，vivo S7e塞进了4100mAh大容量电池。</p>
+<p>不仅如此，vivo S7e延续了S系列自拍的基因，<strong>它前置3200万像素超清摄像头。</strong></p>
+<p>这次vivo在自拍美颜算法上下足了功夫，根据不同性别定制化优秀的HSV算法，结合AI技术对人像进行全面优化。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201208/68f0afdd631c42d998d4930a212d0993.jpeg" max-width="600" /></p>
+<p>这里的HSV中的<strong>H表示色度，S表示饱和度，V表示亮度。</strong></p>
+<p>该算法的原理是通过学习上万张肤色自拍，得出整体肤色分布的HSV值表，<strong>在判断自拍时输出图片肤色与目标肤色差异后，智能地将不同光线下的肤色调至最贴近真实状态。</strong></p>
+<p>核心配置上，vivo S7e采用水滴屏，分辨率为FHD+，搭载联发科天玑800U处理器，后置6400万超清主摄。</p>
+<p>该机将于11月11日上市发售，届时将公布首销价格。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201208/d974fb45020f4903b017e28444e7d963.jpeg" max-width="600" /></p>
+➜白色艺术的华丽蜕变 vivo S7月光白掀起白色风潮
+http://www.sohu.com/a/437068449_163726	48326
+<p>现代艺术视角之下，许多人认为艺术本该与白色绝缘，往往出佻的、玄妙的色彩风格来更能够迎合世人的感官神经。然而，纵观艺术发展历史，从古典时期、浪漫主义、到写实风格，再到后现代主义，白色风潮似乎在每一时期都留有痕迹。到了当代，罗伯特·莱曼的一幅全白《无题》油画更是被估至1.2亿天价，让白色艺术迎来了一次“蜕变”，由此开启艺术圈内的一股“白色效应”风潮。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201208/9e2f737e238c42c1a92d1096a94e71ee.jpeg" max-width="600" /></p>
+<p>白色极简主义的现代品味也一直是科技圈的主流，追求极致的单色艺术成为了科技审美的标准之一。白色干净、简洁又有深度，与当今的审美与生活方式十分易于融合，“动人的白色”正在变得更加流行。8月初，vivo S7带着月光白清新亮世，展现出惊艳于世人的白色科技艺术。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201208/ff6c511abd6a4d4ea2fc64d5d63c8186.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201208/5f80cd5535a74f8fabce42cda233adf6.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><strong>华丽蜕变，vivo S7月光白诠释白色艺术</strong></p>
+<p>在摄影师的艺术手法之下，vivo S7月光白经历了一次艺术的“蜕变”。摄影师以雪为创意意象，通过讲述从雪到冰块的状态转变，表现出vivo S7月光白“蜕变”的主题。在视觉方面，摄影师通过“碎冰块“、“冰雪裂纹”等细节，体现出一种“突破”的视觉张力。雪、冰块在色彩上的统一性及光影的衬托下，让vivo S7月光白更显艺术气质。在vivo S7的后盖上，白色宁静、无声、纯粹，仿佛时间万物都在此静止。它时而幻化成回忆中的浮世万千；时而化作永恒时间里的诗，优雅圣洁；时而化作无暇的梦，似有若无，撩拨心弦……</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201208/a5d5c20d3d12450b82b771412b328fb3.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201208/ce7491d15d0c47df8ab05eaef641326a.png" max-width="600" /></p>
+<p><strong>灵感源于画作颜料，精致工艺成就月光白艺术新生</strong></p>
+<p>在此前的vivo S6机身之上，设计师将音乐的旋律融入其中，展现优雅与治愈。而对于vivo S7，设计师持续于艺术之境探索，将成就不朽画作的颜料白垩元素应用于色彩设计灵感。vivo S7的设计师在欣赏过白垩历经蜕变的色彩后，发现了它的无象亦是万象。设计师将这种包罗万象的白复刻到vivo S7手机上，也将无数的情感与故事一起囊括其中。光影变幻之下，vivo S7月光白机身通透纯洁，呈现白色艺术之美。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201208/f59586c7bdd94b6a91ffb451f8e8a59c.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201208/1ce6c128785b4b419f1692574ceb4d17.png" max-width="600" /></p>
+<p>在工艺设计方面，vivo S7设计师使用了珍珠白镀膜和溅射镀膜工艺精细打磨，让色彩过渡更加通透、纯净，呈现至纯至臻的动态之美。同时，AG微纳大光柱纹理工艺使原本哑光的表面有了动态的光变效果，特别是在单一有影光源下，这种光柱的变化效果更加明显。通过透光感与纯净感结合的AG工艺，vivo S7月光白演绎纯净而浪漫的质感美学。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201208/f570f426d0ea42c1bd76258d6f32b237.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201208/e5c15a1f0c0a4f71b038522c4ded72d7.png" max-width="600" /></p>
+<p><strong>极致纤薄机身设计，vivo S7成就独有“白色诱惑”</strong></p>
+<p>白色艺术蔓延的机身之上，vivo S7的轻薄属性更显珍贵。170g的机身重量，7.39mm的机身厚度，配合圆润的曲面中框，vivo S7机身整体温润如玉，获得视觉与触觉的双重柔美之悦。轻薄机身搭配白色极简艺术，vivo S7可以让人产生无数的艺术联想。此外，vivo S7的后置摄像头设计延续了vivo行业首创的“双色云阶”的设计方案，并针对 S系列的美学理念做了相应的优化，整体简明、精致、有秩序感。简洁的线条进一步衬托出vivo S7月光白的极简主义，至简至洁，让人心生涟漪。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201208/2708dffee82544038a92bb090cd2a9da.png" max-width="600" /></p>
+<p>无论是美术、设计、建筑、还是音乐、文学、电影，当某一艺术类别开始崇拜白色，其态势便将迅速蔓延至他类，最终风行于艺术整体。全新的vivo S7月光白重新定义科技界的白色设计，让白色艺术与科技结合。vivo S7当前正在热销中，喜欢的小伙伴可以关注一下。</p>
+➜vivo自拍旗舰S7：2798元起买刘昊然、LISA同款
+http://www.sohu.com/a/437068815_163726	48424
+<p>据vivo官方消息，旗下自拍旗舰S7已经全面开售，用户有奈漫彩、爵士黑与月光白三款配色可选，售价方面是：8GB+128GB售价2798元，8GB+256GB售价3098元。</p>
+<p>vivo S7采用6.44英寸全面屏，分辨率为2400×1080，搭载高通骁龙765G芯片，后置6400万超清主摄+800万超广角+200万艺术风格黑白镜头，电池容量为4000mAh，支持33W闪充。</p>
+<p>自拍是这款手机亮点之一，vivo S7前置4400万AF双摄自拍，包括一颗4400万主摄+800万超广角，其中4400万主摄为旗舰传感器GH1，光圈为f/2.0，对此官方表示，屏幕采用Panel打穿，进一步提升传感器进光量，支持AF疾速自动对焦，画面能快速定格。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201208/7f9283185d7b4334a2c14b8ac7bb241b.jpeg" max-width="600" /></p>
+<p>此外，<strong>vivo S7前置还支持超级慢动作视频拍摄，最高支持240fps慢动作，而超级夜景自拍升级到2.0，通过识别环境亮度，自动触发AI极夜模式，同时配合多帧降噪和AI人像增强技术，使自拍更加明亮、噪点更少、人像细节更均匀准确。</strong></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201208/a1f5be8f9bd5439385b9345b9df1aac5.jpeg" max-width="600" /></p>
+<p>这段时间，刘昊然和性感潮流女神LISA都在疯狂带货这款手机，如果想要跟偶像用上同款手机，可以关注下。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201208/60ae10d9974d4bfaa3e834eb4dfa8218.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201208/b75396a855514733add26a1d405838cc.jpeg" max-width="600" /></p>
+➜前置摄像头支持4K 60帧的手机效果如何？刘昊然晒vivo S7自拍照
+http://www.sohu.com/a/437068745_163726	48488
+<p class="ql-align-justify">vivo公布了更多S7的细节，比如这款手机后置主摄采用1/1.7"的GW1传感器，像素高达6400万，同时S7还配备一颗800万像素的超广角微距镜头和艺术黑白镜头。</p>
+<p class="ql-align-justify">为了突出S7的夜拍能力，vivo还为其搭载全新后置超级夜景4.0算法，智能识别拍摄场景，调整曝光策略，夜景能力更加出色。</p>
+<p class="ql-align-justify">处理器方面，vivo S7还搭载了7nm制程的高通骁龙765G。</p>
+<p class="ql-align-justify">按照之前vivo的说法，S7前置主摄像头采用先进的旗舰传感器GH1，光圈高达F2.0（支持4K·60帧模式，还支持4K+EIS超级防抖2.0功能，通过全新人像防抖算法，可有效减轻人在运动行走中产生的抖动），那么它的自拍照到底怎么样呢？</p>
+<p class="ql-align-justify">一起来看看代言人刘昊然晒出的自拍图吧：</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201208/c77edbfec0674542899f7731b40bd301.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201208/0fb99aa77b8d4187abf8316cd45c8a61.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201208/341a9a23d5d34be4933981aa32a2b968.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201208/8fd8844fec2b4c25839eeb4925c85815.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201208/4f73fabd1c084220b5b27bb9a9057015.jpeg" max-width="600" /></p>
+➜仅重907克 ThinkPad X1 Nano笔记本发布：9999元起、可选5G
+http://www.sohu.com/a/437069896_163726	48563
+<p>12月8日晚，联想在2020黑FUN礼发布会上正式推出了ThinkPad X1 Nano笔记本，这是一款13寸的旗舰级商务本，重量仅有907克，配备了十一代酷睿处理器，售价9999元起，还有5G版，送120GB流量。</p>
+<p>作为X1家族的新成员，ThinkPad X1 Nano笔记本依然采用了标志性的航空级碳纤维材质，而且内部结构重新设计，因此它的重量只有907克，厚度13.83mm，非常轻薄，发布会现场都是无人机吊送过去的，<strong>是有史以来最轻的ThindPad X1笔记本。</strong></p>
+<p>屏幕方面，ThinkPad X1 Nano配备了13寸微边屏幕，16：10比例，分辨率为2160x1350，亮度450尼特，支持100% sRGB色域。</p>
+<p>配置方面，ThinkPad X1 Nano使用的是十一代酷睿处理器，三个版本分别是酷睿i5-1130G7、酷睿i5-1160G7、酷睿i5-1160G7，同时还有16GB内存、512GB/1TB SSD等。</p>
+<p>续航方面，ThinkPad X1 Nano塞下了48Whr大容量电池，续航长达13.6小时，同时支持快充，1小时可以冲入80%电量。</p>
+<p>其他方面，ThinkPad X1 Nano还有经典的小红帽键盘、双雷电4接口、按压式指纹识别人脸识别等等功能。</p>
+<p>售价方面，<span><strong>ThinkPad X1 Nano的酷睿i5-1130G7版为9999元，ThinkPad X1 Nano酷睿i7-1160G7版位10999元，ThinkPad X1 Nano酷睿i7-1160G7+1TB硬盘版售价13999元。</strong></span></p>
+<p>另外，ThinkPad X1 Nano还有5G版可选，赠送6个月120GB流量。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/cb011f73ff554063a8b12aa92bdb9c19.png" /></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/fb52ac5d5fb24760bd5643f43d06ba99.png" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/c0f9134a9bd540fcabb4b8bcf4b319f9.png" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/3a0cf1aa3beb4c399f9a574d31467a2d.png" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/28a91e1aabec484eb82cdffcbe9227fc.png" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/6c37a18299934b749f3aa3203c033c5e.png" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/66ca380dc8ab455da652d79f92980b65.png" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/444dbbe1bdd748e99d2f656f3ee2b959.jpeg" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/fab2a696f3f54425a0fcee3ca2d85f0b.jpeg" /></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/1bc9e3e4b5624ab18e1f65e484ee2726.jpeg" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/7ccf90c97e5f4543b169f06824a55f29.jpeg" /></p>
+➜vivo晒S7前置摄像头：支持4K·60帧模式、240帧超级慢动作
+http://www.sohu.com/a/437068784_163726	48564
+<p>很显然，作为S家族的新成员，S7的自拍一定不能差了，而新机配备的前置方案，甚至要比一些手机的后置镜头还要强大。</p>
+<p>按照vivo官方公布的细节看，<strong>S7前置主摄像头采用先进的旗舰传感器GH1，光圈高达F2.0（支持4K·60帧模式，还支持4K+EIS超级防抖2.0功能，通过全新人像防抖算法，可有效减轻人在运动行走中产生的抖动）。屏幕采用Panel打穿，进一步提升传感器进光量，夜晚自拍依然清晰。</strong></p>
+<p>vivo S7还采用超级夜景自拍2.0，通过识别环境亮度，自动触发AI极夜模式，同时配合多帧降噪和AI人像增强技术，使自拍更加明亮、噪点更少、人像细节更均匀准确。</p>
+<p>此外，S7前置镜头配备AF-自动对焦马达，让镜头能够前后移动，从而实现自动对焦功能，保证近景与远景都清晰呈现。</p>
+<p>按照vivo的说法，<strong>S7配备前置超级慢动作功能，达到行业领先的240帧，同时S7前置副摄采用800万像素超广角镜头，视场角高达105度，同时针对前置广角配备了畸变矫正算法，能够显着改善畸变问题。</strong>多人自拍，再也不怕变形。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201208/be3c96233a5e48cbb63710eb4bf29b04.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201208/bb24a81fbe834fce83f4288a7baeb700.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201208/c9c250faed324c509da522a4adbdc78e.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201208/2b1f0363d6ff43d2b41210b5124e9eaa.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201208/2976b3d9e987458abe90880cc444352e.png" max-width="600" /></p>
+➜AMD RX 6900 XT卡皇正式开卖：华擎纯公版涨价2000元
+http://www.sohu.com/a/437074009_163726	49917
+<p><strong>12月8日晚21点整，AMD新一代卡皇RX 6900 XT在京东平台开启独家预约。22点整，京东、天猫平台同步正式发售。</strong></p>
+<p><span><strong>首发上市的都是纯公版，包括AMD、蓝宝石、撼迅、讯景、华硕、华擎等品牌，价格方面AMD、蓝宝石、撼迅都已公布坚持建议零售价7999元，意外的是华擎居然要9999元，平白多了2000块钱，不知从何而来。</strong></span></p>
+<p>首发期间，京东没有提供任何优惠，天猫方面按规则晒单返价值<strong>100元天猫超市卡</strong>，购买RX 6900 XT显卡、锐龙处理器、主板套装，按规则晒单返价值<strong>200元天猫超市卡。</strong></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/26331e14b2bd49d3b247f05d358c3055.png" /></p>
+<p>RX 6900 XT作为新卡皇，基于7nm工艺、RDNA 3架构，支持SAM显存智取、Infinity Cache无限缓存、DXR光线追踪、Radeon Anti-Lag抗延迟、Radeon Boost性能加速、FreeSync同步显示等技术。</p>
+<p>它拥有80组计算单元、5120个流处理器，相比于RX 6800 XT多了8组、512个，除此之外几乎一模一样：核心频率2015-2250MHz、128MB无限缓存、256-bit 16GB GDDR6显存、热设计功耗300W。</p>
+<p>京东购买链接：</p>
+<p>https://pro.jd.com/mall/active/2sU3Tx2yqbK3co1FFpWnMCQinf6V/index.html</p>
+<p>天猫购买链接：</p>
+<p>http://amd.tmall.com/p/rd212252.htm</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/d4ad623c7e9946ef9149050eb9d8bea5.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/edcbbff946c749e79a792b0450517a0b.jpeg" /></p>
+➜超频潜力逆天！RX 6900 XT首发评测：可与RTX 3090扳手腕了
+http://www.sohu.com/a/437074660_163726	50400
+<p><strong>一、前言:AMD重回高端市场， RX 6900 XT能否扳倒RTX 3090！</strong></p>
+<p>由于众所周知的原因（没钱），2011面世的GCN构架缝缝补补一直坚持用到了2019年。在这8年的时间内，NVIDIA的GPU构架从开普勒、到麦克斯、到帕斯卡再到图灵，每次升级都能带来令人惊叹的性能提升！</p>
+<p>古老的GCN构架在能效比方面巨大的差距使得AMD从在R9 3900X之后就放弃了高端领域的竞争。2019年初的Radeon 7也只是昙花一现，出生还不满半年就死了。</p>
+<p>2018年1月24日，当年一手缔造GCN架构的传奇大佬David Wang（王启尚）正式回归AMD，并主导RDNA2构架的研发。2年半之后的今天，AMD以及AMD粉丝也等到了他们想要的。</p>
+<p><img src="//p5.itc.cn/q_70/images03/20201208/214cc05018864a57a5d4e07fd597fa38.jpeg" /></p>
+<p>全新的RDNA2构架通过加入Infinity Cache（无限缓存技术）以及其他诸多技术，成功的让DNA 2架构显卡在性能方面超过前代产品2倍、在功耗方面却仍保持300W（与7nm的Radeon 7），在相同的制程工艺下，能效比相较RDNA提升了50%以上。</p>
+<p>RDNA2构架的到来，让AMD在高端市场终于有了与NVIDIA扳手腕的资格。11月18日上市的RX 6800/6800 XT已经让我们足够惊喜，对比RTX 3080、RTX 3070战得有声有色。</p>
+<p>而今天解禁的RX 6900 XT则是针对NVIDIA最顶级的RTX 3090！</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/090936e0af84497792728c345b888fa8.jpeg" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>从规格上来看，RX 6900XT拥有完整的80个CU单元，5120个流处理器、80个Ray Accelerator单元以及320个纹理单元。其他参数方面则完全等同于RX 6800 XT，甚至连TDP都是同样的300W。</p>
+<p>部分规格方面10%的提升是否能让RX 6900 XT拥有挑战RTX 3090的资格呢?</p>
+<p>今天我们将会告诉大家结果!</p>
+<p><strong>二、外观：与RX 6800 XT几乎一模一样</strong></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/94435eb7777a40cab951ff346fe7a1d0.jpeg" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/bebb25f625bd450f86ab48b8d786f9ea.jpeg" /></p>
+<p>赠送一个RADEON鼠标垫，鼠标垫里面包着的是RX 6900 XT显卡。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/1d1d1e62afde4657992ad53083601347.jpeg" /></p>
+<p>外形与RX 6800 XT一模一样，正面有3个风扇，53mm 2.5槽厚度。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/9bef0bdcaf0f451fa23169a65a7c5a14.jpeg" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/447405caa08e4ca382e8109feccba90a.jpeg" /></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/88915759104746ccb71d049552b33056.jpeg" /></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/6960fb45d6d841ccb29b020baa014903.jpeg" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/2e0f8d416b8e4e6c8052fc3b250b02af.jpeg" /></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/de31d1b8d3514c44b46b56ab4151d97b.jpeg" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/9430a67198974c2ab2bd5a291a64ce66.jpeg" /></p>
+<p>散热底座是大面积的均热板，理论上效率要强于热管，不过均热板挡同时住了散热器的风道，使得风扇难以吹透散热片，实际散热效能还是不及堆料的非公版。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/25bc8586b9b74af58eceb4ec89b389e3.jpeg" /></p>
+<p>14层PCB板设计，15+2相供电电路，理论上应付500W的功耗都没问题。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/54b6d062a77a4b6895fd83b5a89cc079.jpeg" /></p>
+<p>供电电路的钽电容在PCB板背面。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/8841946eb6f247d9af19598532faa8f8.jpeg" /></p>
+<p>Navi 21 GPU核心，芯片面积519mm2，268亿个晶体管。</p>
+<p>旁边是三星GDDR6显存颗粒，频率16GHz，单颗容量2GB，一共8颗组成256Bit 16GB，显存带宽达到了512GB/s。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/fbd80ba912784dbdb9299fd83bc616e5.jpeg" /></p>
+<p>纯铜均热板底座。</p>
+<p><strong>三、测试平台：1200W白金牌电源助力GPU极限超频</strong></p>
+<p>测试平台如下：</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/6cafe78b00c142b39fe3df69fabc79a8.jpeg" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/a7385aac9c894df09534c9f47079a74d.jpeg" /></p>
+<p>暂时我们还是选择了i9-10900K处理器平台。为了降低CPU的瓶颈效应，我们将i9-10900K的核心频率超频到了5.2GHz，Ring频率超频到了4.8GHz。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/0184927745894a1caae6f0cc127b5695.jpeg" /></p>
+<p>主板用的是ROG MAXIMUS XII EXTREME。这款主板采用16+0供电，16相供电全部给了CPU核心，0相给核显。MosFET升级为TDA21490，这是目前最高规格的一体化MOSFET，导通电流也从55A提高到了90A，可以轻易提供超过1000W的输出功率。</p>
+<p>ROG MAXIMUS XII EXTREME新版BIOS可以支持Intel版的显存智取技术，不过只对RX 6800/6900 XT有效，N卡还需要等待驱动的支持。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/095bc53fbeb34e26bd72f5b2e7250df9.jpeg" /></p>
+<p>内存必须32GB了，目前很多3A大作在16GB内存下运行时会出现各种问题。</p>
+<p>芝奇皇家戟F4-4000C15D 8GBx4套装，不仅拥有4000MHz的频率，15-16-16-36的时序也是低的吓人，比绝大部分3000MHz频率的内存都要低，不过默认电压1.5V也算是比较高的了。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/7e6e3d6358a64873af5819cbba0aa88d.jpeg" /></p>
+<p>长江存储致钛PC005 Active 512GB SSD，顺序读写速度分别为3500MB/s，2900MB/s。不依赖模拟SLC缓存也能保持550MB/s的稳定写入速度，同时寿命远远高于市面上绝大多数TLC SSD。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/545bb76d69a54ddca6913be71db281de.jpeg" /></p>
+<p>酷冷至尊P360 ARGB水冷散热器，应该是市面上颜值最高也最易安装的水冷散热器，可以很轻松的压制5.2GHz的i9-10900K处理器。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/7ceb6338de3c445c897bc385881a06a3.jpeg" /></p>
+<p>ROG THOR 1200W白金牌电源。</p>
+<p>此次将会做RX 6900 XT解锁400W功耗的极限超频测试，一款顶级电源是必须的。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/5ae9288d01724e40980c8d3aaece5c33.jpeg" /></p>
+<p>全模块化设计，单路12V输出电流100A，12V输出功率达到了1200W。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/a9cf0889ebca45f0b5e6b36e6ef8bde5.jpeg" /></p>
+<p>华硕玩家国度PG27UQ ROG 27英寸IPS电竞显示器。</p>
+<p>4K UHD（3840*2160）分辨率、4ms响应时间、144Hz刷新率、G-Sync 技术、IPS+量子点面板、10bit色彩、DisPlay HDR1000认证。依旧是目前市面上顶级的电竞显示器。</p>
+<p>四、理论性能测试：3DMark Fire Strike Extreme跑到了27000</p>
+<p>1、3DMark</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/0f3216f33afc488ab98e1f1e22cfee52.jpeg" /></p>
+<p>在2K分辨率3DMark Fire Strike Extreme测试中，RX 6900 XT图形分数达到了27057分，核心温度最高78℃，核心运行最高频率为2361MHz，显卡最大功耗达到了256W。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/ffabc9e1d0c2441f8ddc0fc307fe9ab2.jpeg" /></p>
+<p>在3DMark Fire Strike Ultra测试中，RX 6900 XT图形分数为13581分，核心温度最高68℃，核心运行最高频率为2238MHz，显卡最大功耗达到了206W。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/5df3e900dfce42f58e785de2e8599fe3.jpeg" /></p>
+<p>3DMark Fire Strike是RDNA2的天下，即便是RX 6800 XT都要比RTX 3090强不少。</p>
+<p>2K分辨率下，RX 6900 XT比RX 6800 XT快了6%，比RTX 3090快了16%。</p>
+<p>4K分辨率下，RX 6900 XT相比RX 6800 XT的优势扩大到了8%，但是和RTX 3090 XT相比领先幅度缩小到了12%。</p>
+<p>2、3DMark Time Spy</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/4b71f9c2986a41a68971f137b1d2c831.jpeg" /></p>
+<p>在3DMark Time Spy测试中，RX 6900 XT图形分数达到了18516分，核心温度最高77℃，核心运行最高频率为2305MHz，显卡最大功耗达到了255W。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/0cecf51bacc94290b4409a5840844a39.jpeg" /></p>
+<p>4K分辨率3DMark Time Spy Extreme测试中，RX 6900 XT图形分数为8876分，核心温度最高79℃，核心运行最高频率为2261MHz，稳定运行频率是2220MHz左右，显卡最大功耗达到了255W。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/110449bcb9664b71bb9ef6718a2e9a68.jpeg" /></p>
+<p>RX 6900 XT在3DMark Time Spy测试中的表现不太令人满意。</p>
+<p>2K分辨率下，RX 6900 XT仅比RX 6800 XT快了4%，与RTX 3090之间则有6%的差距。</p>
+<p>4K分辨率下，RX 6900XT要比RX 6800 XT快了5%，但是与RTX 3090之间的差距扩大到了11%。</p>
+<p>虽然3MDark的成绩并不不能很好的展示不同GPU构架之间的性能差距，但是也能说明一些问题--RX 6900 XT在4K分辨率下性能的损失稍微有些严重。</p>
+<p>五、2K游戏测试：持平RTX 3090</p>
+<p>1、APEX英雄</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/38f3fe0ffcf0436893ff149b9c194f6d.jpeg" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/6871584c33ab405c9d9711702ee7d3f2.jpeg" /></p>
+<p>2、使命召唤16：战区</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/31e1882b13284f00b3301149ae9184c2.jpeg" /></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201208/9642181cbf704536a5a1182e4c060ecd.jpeg" /></p>
+<p>3、GTA V</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/efb27f19c0d9479091a82416251861ee.jpeg" /></p>
+<p>4、刺客信条：奥德赛</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/61c370aa2ebb4a69abb300c047e53706.jpeg" /></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201208/15b79c683a3a4f43ad2e16c26b84aa2e.jpeg" /></p>
+<p>5、德军总部：新血脉</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/fa4d32a177394368b9cfc6815c503834.jpeg" /></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/9bfe0b0a50404e0ca74671c76ea79121.jpeg" /></p>
+<p>6、地平线：零之曙光</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/f6543a3105d644c29897bbcf15cc7ccf.jpeg" /></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201208/266c2c9f57fc4dd9b7045a2c85f63867.jpeg" /></p>
+<p>7、孤岛惊魂5</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/62aa27aa131a4123a3cf8557f83ffd3f.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/cf6f720ed1364d20a08af63ef5752991.jpeg" /></p>
+<p>8、古墓丽影：暗影</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/9995dd33dda5431c930ef69433e927b8.jpeg" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/0cd953cd477545d9ae00f4ae81415326.jpeg" /></p>
+<p>9、绝地求生</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/9780adf51f774efca4b48f3e60419098.jpeg" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/b6dbbd0f6fda4edf9dcad1f1752520ab.jpeg" /></p>
+<p>10、死亡搁浅</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/81ee4a3bb0ac4bab8187774590e21912.jpeg" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/56147f96dd734bafaa1772232a5f684c.jpeg" /></p>
+<p>11、微软模拟飞行2020</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/fec2b06b38e34483aecb8f430379f751.jpeg" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/6fd308690ef64827be71a2568e10a4d1.jpeg" /></p>
+<p>12、巫师3</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/89195fab1a6d4ba49d994902613ef44c.jpeg" /></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/e8415799b45b47ee8c3c24fba097dddd.jpeg" /></p>
+<p>13、无主之地3</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/8b9084d93c34425eb7782390095c9f0d.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/11abc4d5a427455daed6bf197234f683.jpeg" /></p>
+<p>14、战地5</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/e8709d3cf0f84332838fe81e2c2ae883.jpeg" /></p>
+<p>15、战争机器5</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/1a6715617e684d8fb04bcf7a98ca248c.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/e35919783a364a6ea13aace075fa8cd8.jpeg" /></p>
+<p>RX 6900XT这样的显卡定位是2K和4K，不过我们还是测试了他们在1080P下的帧率，数据汇总如下：</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/8ff735cf8f6b40948fad295bb7b397e9.jpeg" /></p>
+<p>在1080P分辨率下，RX 6900 XT比RX 6800 XT快了4%，比RX 6800快了17%，相比RTX 3090也有1%的领先优势。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/3b8aea79dab740b88f88c21c7dc975e9.jpeg" /></p>
+<p>2K分辨率下，RX 6900 XT相比RX 6800 XT的领先优势扩大到了6%，比RX 6800快了21%。和RTX 3090相比，二者的表现是在同一水平线上。</p>
+<p>六、4K游戏测试：不出所料</p>
+<p>1、APEX英雄</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/5b4a863f698941a7a9e192a2082f40e5.jpeg" /></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/334f858c81aa478a99d0b45fc8b30c8d.jpeg" /></p>
+<p>2、使命召唤16：战区</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/69bcb46761314e3cb02ad2343984d907.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/db67603c50934948b7ac8daa840d4a1f.jpeg" /></p>
+<p>3、GTA V</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/c5fc11181eba41f3989e3491a44f6d4d.jpeg" /></p>
+<p>4、刺客信条：奥德赛</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/62e03d1cb0bd4273b4e79957a4e1565c.jpeg" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/70f1d49219e8460c8ad6a75468b0abb6.jpeg" /></p>
+<p>5、德军总部：新血脉</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/1c0f9f2a826d4ceea07c5d59da3207c4.jpeg" /></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/3be16bb9766d42109ce5528b2422e95b.jpeg" /></p>
+<p>6、地平线：零之曙光</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/07c45c2b2767436abaf0c9818c583be1.jpeg" /></p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/87bc8df6a00947d3ba64aa93c96aeefa.jpeg" /></p>
+<p>7、孤岛惊魂5</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/27dbb94a8cdf46bf8985ab8ddb6e7838.jpeg" /></p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/4defb2fb78b946268d73d51897347678.jpeg" /></p>
+<p>8、古墓丽影：暗影</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201208/9df7a7faf935457c8462f46f7c7d105e.jpeg" /></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/27f83e86912840bc876fc4ece1b483c4.jpeg" /></p>
+<p>9、绝地求生</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/29a757398d4448fa9bd1f5bf5bf81234.jpeg" /></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/eb63c539afac48c891f96c61a7753d05.jpeg" /></p>
+<p>10、死亡搁浅</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/c081a8486a964fd195605c900872e61d.jpeg" /></p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/28708f9e2c6f4da2bcb066d09026b9f3.jpeg" /></p>
+<p>11、微软模拟飞行2020</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/d9ffe24288284a778b6bd024be121012.jpeg" /></p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201208/da3caf6de7e94ce385b30496a2ab4226.jpeg" /></p>
+<p>12、巫师3</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/b412fc32065b4a40b152316d0967b5ce.jpeg" /></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/dd336bd0471743ae96168fdbb7695bba.jpeg" /></p>
+<p>13、无主之地3</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/06a68b8aef50484ba763da596c7f6547.jpeg" /></p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/73e94e4e5950428495fbfaf4761e2baa.jpeg" /></p>
+<p>14、战地5</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/e20d5487c00a48beb2a61bd4f466ad0c.jpeg" /></p>
+<p>《战地5》中，此前RX 6900 XT在2K分辨率下帧率要高于RTX 3090，到了4K分辨率下，则大幅落后13%。</p>
+<p>15、战争机器5</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201208/ed72272fc78d49088d0cbc112c0b16c1.jpeg" /></p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201208/c7d00623a3454f4f881c0fb50cd1d9a7.jpeg" /></p>
+<p>《战争机器5》的情况也像是，此前在1080P与2K分辨率下RX 6900 XT的帧率比RTX 3090都要高一些，到了4K分辨率时，反而还落后对手5%。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201208/55a5810c14c44ff79c31b8209a4e3265.jpeg" /></p>
+<p>对于4K分辨率而言，128MB Infinity Cache会显得有点捉襟见肘，RX 6900 XT虽然还比比RX 6800 XT快7%，比RTX 3080也快了3%，不过和RTX 3090相比却差了不少，落后对手7%。</p>
+<p>七、超频测试：可以稳定在2.72GHz运行频率</p>
+<p>AMD对公版RX 6900 XT的功耗做了严格的限制，在默频的情况下GPU功率上限是255W。如果是超频的话，玩家可以手动拉功耗墙，不过最高也就只有300W。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/4ac7af65f7da41dc8a1d57545b6c6295.jpeg" /></p>
+<p>在电压方面，RX 6800 XT默认电压是1.025V，RX 6800 XT是1.15V，而RX 6900 XT的电压继续提升到了1.175V。</p>
+<p>核心频率最高可以拉到3000MHz，基本上1.175V的电压连显示桌面都非常困难，实测比较容易到达的频率是2800MHz。</p>
+<p>显存频率的上限依旧是2150MHz（等效17400MHz）。</p>
+<p>1、降压拉功耗墙超频测试</p>
+<p>每一颗RX 6900 XT都是特挑过的芯片，体质远好于RX 6800/6800 XT。此前RX 6800 XT可以超频到2.7GHz，此次我们直接将频率拉到2.8GHz，并反复测试了这个频率下的稳定电压，最终测得只需1.05V的电压即可。</p>
+<p>在功耗墙被限制在300W的情况下，更低的电压可以让GPU的运行频率更高。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201208/4b25069f9c80405f9fa5f626bc153a44.jpeg" /></p>
+<p>在3DMark Fire Strike Extreme中，超频后的RX 6900 XT拿到了29311分，比默频高了2254分，提升幅度约为8%。在运行中，最高频率可达2720MHz，不过在功耗的限制下，实际稳定运行的频率是2.5GHz，最高温度83度，最高功耗296W。</p>
+<p>2、破解400W功耗墙超频测试</p>
+<p>对于RX 6900 XT来说，300W的功耗肯定是不够的，我们将功耗破解到400W看看会有什么情况发生。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/3947e144ae524e3096b0ba5b0977ddd4.jpeg" /></p>
+<p>实测在400W功耗时，RX 6900 XT在3DMark Fire Strike Extreme中的图形分数为31202，相比300W的功耗有高了1900分，比默频更是高了4145分，提升幅度为15%。</p>
+<p><img src="http://p6.itc.cn/q_70/images03/20201208/5d144a168a1848e9aed8cf8e2c0ff09d.jpeg" /></p>
+<p>3DMark Fire Strike Ultra的图形分数也有15550，比默频的13581高了15%左右。最高运行频率2734MHz，最高温度83度，最高功耗也到了400W。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201208/f4698f35d62e483c852fc50bb23db369.jpeg" /></p>
+<p>上图是运行3DMark Fire Strike Ultra时GPU的频率曲线，可以看到，在400W功耗下，频率可以稳定在2720MHz，几乎呈一条直线。</p>
+<p>同时我们也测试了超频后的显卡在《古墓丽影：暗影》中的表现。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/221ca188730048f39c78ff7df75f24a1.jpeg" /></p>
+<p>在2560*1440分辨率下开启最高特效，解锁了400W的RX 6900 XT在《古墓丽影：暗影》中跑出了178FPS，比默频的159FPS高了19帧，提升幅度是12%。</p>
+<p>而RTX 3090的帧率是156帧，二者之间有22FPS的差距。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/a7ef2bb8ba0c4b16a44848b0c67d4893.jpeg" /></p>
+<p>虽然4K不是RX 6900 XT的强项，不过在解锁400W功耗后在3840*2160分辨率下运行《古墓丽影：暗影》时，RX 6900 XT也拿到了96FPS的帧率，比默频的85FPS高了13%。同时也反超了RTX 3090，后者的帧率是91FPS，领先幅度为5%。</p>
+<p>九、光线追踪性能测试测试：待游戏优化</p>
+<p>以下测试均是在4K分辨率下运行，并开启最高画质。</p>
+<p>1、堡垒之夜</p>
+<p>为了尽量避免变量干扰，我们选择了嗨皮岛的一个单人场景进行测试。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201208/5163e917e38d41a5b725cc731f36fdf1.jpeg" /></p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/8d9bad5734f84dc399122b240d7a9892.jpeg" /></p>
+<p>RX 6900XT在开启DXR技术之后，帧率会从107FPS掉到38FPS，跌幅为64%；而RTX 3090在开启DXR之后，帧率从104FPS降为48FPS，跌幅为54%。</p>
+<p>2、古墓丽影：暗影</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201208/1943b7efa4f240df9d743bae4dc2804c.jpeg" /></p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/a66b5b63c29a441f9d45b1d1c44c384f.jpeg" /></p>
+<p>在4K分辨率下，RX 6900 XT开启DXR技术之后，帧率从85FPS掉到了46FPS，不及RTX 3090的56FPS，与RTX 3080相比也有4帧的差距。</p>
+<p>3、控制</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/672e5110474f4c56aa6cc3f7a16acdc9.jpeg" /></p>
+<p>不开启DXR时，RX 6800 XT的帧率为56FPS。</p>
+<p><img src="http://p8.itc.cn/q_70/images03/20201208/a790976f0ddc41f6b0a4ab3957d50d44.jpeg" /></p>
+<p>开启DXR技术之后，地面以及墙壁上产生了非常真实的光影效果，同时画面看上也去更加明亮。不过代价就是帧率跌到了27FPS，下降了一半还多。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/b720edb6cc3f47e68b2376499bf16e00.jpeg" /></p>
+<p>RX 6900 XT在开启DXR技术之后，帧率下降了55%。相比之下，RTX 3090在开启DXR技术之后，帧率只下降了37%。</p>
+<p>十、功耗与温度测试：功耗比RTX 3080更低</p>
+<p>1、温度测试：</p>
+<p>使用Furmark来对RX 6900 XT进行烤机测试，测试是室温为26度。</p>
+<p><img src="http://p9.itc.cn/q_70/images03/20201208/fdd240decc4d4049b65c9e3e86ea6bd9.jpeg" /></p>
+<p>Furmark的参数设定为1920*1080分辨率、0AA。运行7分钟之后，RX 6800的温度稳定在79度，Hot Sport温度是94度（这个没到110度都不用怕），运行频率则为1976Hz，GPU功耗255W，风扇转速只有1452RPM。</p>
+<p>2、功耗测试</p>
+<p>我们使用ROG THOR 1200W白金牌电源重新测试了所有显卡的功耗，分别测试待机、游戏以及FurMark烤机时整机功耗表现。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201208/ba910eda62dd47df969e12bb5ef90a29.jpeg" /></p>
+<p>待机功耗是AMD显卡的优势所在，RDNA2 GPU的整机待机功耗要低于参与测试的NVIDIA GPU。</p>
+<p>烤机功耗方面，RX 6900 XT要稍高于RX 6800 XT，但是远低于RX 3080的446W，比RTX 3090的501W更是低了将近100W。</p>
+<p>至于游戏功耗，一直以来A卡的游戏功耗要稍高于烤机功耗，而N卡则相反。不过RX 6900 XT运行《巫师3》时整机功耗也只有425W，比RTX 3090的492W低了67W左右。</p>
+<p>十一、总结：未来值得期待 非公或将有惊喜</p>
+<p>虽然性能不及RTX 3090，但是如果在能效比方面，RX 6900 XT要远比RTX 3090更加优秀。</p>
+<p>RX 6900 XT标称了300W TDP，但实际上AMD将其功耗限制在255W，只有手动超频时才能将功耗上限拉到300W。而RTX 3090默频下核心功耗就高达350W，二者之间相差了将近100W。</p>
+<p>以下是测试结果的汇总：</p>
+<p>1、游戏性能</p>
+<p>与RX 6800 XT相比，RX 6900 XT在2K分辨率下有6%的优势；在4K分辨率下，则能领先7%。</p>
+<p>与对手顶级的RTX 3090相比，RX 6900 XT在1080P分辨率下还能略微胜出1%；在2K分辨率时，2者刚好可以持平；不过到了4K分辨率下，RX 6900 XT就大幅落后对手7%。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201208/dfd5b4bb09204cceac955da8d8008f14.jpeg" /></p>
+<p>就目前而言，128MB Infinity Cache只能满载1080P与2K的需求。而在4K分辨率下，128MB Infinity Cache的命中率会大幅度下降，RX 6900 XT显存的512GB/s的带宽也难以满足4K分辨率的需求，因此导致了它在4K分辨率下性能表现不尽如人意。</p>
+<p>下一代RDNA3 GPU在5nm制程工艺的加持下，能够塞入更多的晶体管，256MB Infinity Cache也不是没有可能。再配合更高频率的GDDR6x显存，届时AMD将有机会彻底扭转4K分辨率下不利的局面。</p>
+<p>2、功耗</p>
+<p>在功耗方面，RX 6900 XT的表现比RTX 3090更好！二者的整机烤机功耗相差100W，游戏功耗也有70W的差距。</p>
+<p>不客气的说，如果RX 6900 XT将默频下的功耗墙设置为RTX 3090相同的350W，4K性能应该也能实现反超。</p>
+<p>3、温度</p>
+<p>RX 6900 XT的温度表现与RX 6800 XT基本一致。开放平台下的烤机温度可以超过80度。只能说大型均热板的散热设计是得失参半。虽然在导热效率方面均热板远远强于热管，但也因此挡住了散热器上的风道，似的散热片无法被吹透。</p>
+<p>建议AMD下一代RDNA3 GPU采用热管导热，也可以借鉴RTX 30系的均热板 + 镂空背板散的设计方案。</p>
+<p>当然，各家AIC的非公版也可以期待下，毕竟RX 6900 XT的功耗并不高，至少是远远低于</p>
+<p>4、Smart Access Memory (SAM)显存智取技术</p>
+<p>现在Intel平台也支持SAM技术了，只是在优化方面还稍有欠缺。根据我们在M12E主板 + i9-10900K平台上的测试结果，《刺客信条：英灵殿》、《战争机器5》在开启SAM之后有非常明显的提升。特别是《刺客信条：英灵殿》，RX 6900 XT的帧率比 RTX 3090甚至高了70%。</p>
+<p>不过大部分游戏的帧率波动很小，《德军总部：新血脉》还出现了帧率大跌的情况（AMD平台正常）。</p>
+<p>5、实时光线追踪</p>
+<p>和对手相比，目前RDNA2 GPU在光线追踪计算效率方面还存在比较明显的差距。不过索尼以及微软的次世代主机都采用了RDNA2构架，AMD相信未来会有越来越多的光追游戏针对RDNA 2架构进行优化，因此在光追性能方面RDNA 2架构仍有很大的发展空间和潜力。</p>
+<p>PS：关于光线追踪计算效率，硬件支持占50%，游戏的优化占50%。</p>
+<p>6、超频能力</p>
+<p>特挑体质的RX 6900 XT在超频性能方面要比RX 6800/6800 XT强不少！</p>
+<p>如果解锁400W TDP，RX 6900 XT几乎可以全程运行在2720MHz的频率上，性能相比默频提升13%左右。此时在不仅在2K分辨率下可以大幅度领先RTX 3090，即便是在4K分辨率可能反超对手。</p>
+<p>关于超频可以看看市面上的非公能做到什么程度。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201208/1041e72f9a8a425fafb7191147f88ae5.jpeg" /></p>
