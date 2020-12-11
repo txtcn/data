@@ -1,0 +1,279 @@
+➜PCIe 3.0x4高速存取 科赋CRAS C710 SSD评测
+http://www.sohu.com/a/437383845_115088	13317
+<p><strong>科赋CRAS C710 M.2固态硬盘评测</strong></p>
+<p>以往由于成本问题，SSD固态硬盘价格相对较高，小容量SSD+大容量机械硬盘的存储组合在PC上非常常见，以兼顾速度与容量的双重要求。近几年，随着固态硬盘成本的快速下降，在笔记本、游戏主机等PC产品中，大容量SSD已经被广泛应用，成为市场主流。尤其是传输速度更快、性能更强的M.2接口SSD，相比SATA接口的产品更是受到用户的欢迎。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201210/187fd8f6d54d41a294fa0b6581bf6a69.jpeg" max-width="600" /></p>
+<p>在消费级SSD市场，KLEVV科赋这个名字大家可能有点陌生，但科赋在存储市场耕耘已有数年。科赋是来自ESSENCORE爱思德有限公司旗下的内存与存储产品品牌，于2014年9月成立，目前产品已经覆盖内存、闪存、硬盘等。今天来到我们评测室的是科赋CRAS C710 M.2固态硬盘，为512GB容量版本，使用3D TLC NAND闪存，支持PCIe Gen 3.0 x4通道，官方标称连续读取速度最高为2050MB/s，连续写入速度最高1650MB/s，具体的性能表现请参看下面的详细测试。</p>
+<p><strong>单面3D TLC闪存 慧荣SM2263XT主控</strong></p>
+<p>科赋CRAS C710 M.2固态硬盘的规格为标准的M.2 2280（80mm*22mm*2.mm），广泛适用于配备M.2插槽的台式电脑及笔记本产品。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201210/079eb2d02ac14f8080432d5082ca2f97.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>科赋CRAS C710 M.2固态硬盘采用黑色PCB板，单面闪存颗粒布置，我们测试的512GB版本采用4颗闪存颗粒，单颗容量为128GB。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201210/f0e1672589ca49d984de37f79a5732e2.jpeg" max-width="600" /></p>
+<p>主控方面，科赋CRAS C710 M.2固态硬盘使用了慧荣SMI SM2263XT，隶属于慧荣第二代PCIe SSD主控，支持PCIe 3.0 x4通道与NVMe 1.3协议，对于主要闪存制造商的最新3D NAND支持良好，并且特别的一点是，支持无DRAM缓存的解决方案，可以在SSD运行的过程中，调用一部分内存作为SSD的缓存，这有助于提升4K读写方面的表现。</p>
+<p><strong>基准性能测试 顺序写入2070MB/s</strong></p>
+<p>具体的性能方面，科赋CRAS C710 M.2固态硬盘提供256GB\512GB\1TB三种容量版本，官方标称的连续读取/写入速度为：1950\1250 MB/s（256GB）；2050\1650MB/s（512GB）；2100\1650MB/s（1TB）。接下来我们使用几款专业测试软件来衡量512GB版的性能。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201210/5b5fa7a7fe3e4b29890d31d79d014e50.png" max-width="600"><span class="img-desc" style="font-size: 16px;">CrystalDiskInfo磁盘信息</span></img></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201210/41a39cb90b52481b9634d30617f7bb6d.png" max-width="600"><span class="img-desc" style="font-size: 16px;">CrystalDiskMark 7.0测试结果</span></img></p>
+<p>首先，在CrystalDiskMark的测试中，科赋CRAS C710 M.2固态硬盘在8队列深度（Q8T1）下的顺序读取速度为2070.06 MB/s，顺序写入速度为1666.25 MB/s，均超过了官方标称的最高速度，表现不错。单队列单线程（Q1T1）的4K随机读取速度为55.24 MB/s，4K随机写入速度为159.63 MB/s，也是非常优秀的水准。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201210/3b842fc5c3814bdbb9bb43d735ca3af5.png" max-width="600"><span class="img-desc" style="font-size: 16px;">AS SSD Benchmark测试结果</span></img></p>
+<p>接下来是AS SSD Benchmark，这是一个专门为SSD测试而设计的标准检测程序，它涵盖了持续性读写、单线程4KB随机读写、64线程4KB随机读写以及磁盘寻道时间等关键数据的测试，尤其是4K方面的测试比较准确，可以比较科学的反映固态硬盘的真实性能。在AS SSD Benchmark 4K-64Thrd的测试中，科赋CRAS C710 M.2固态硬盘的读取iops高达215,247，写入iops高达245,753，也属于目前PCIe 3.0x4固态硬盘产品中的主流成绩。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201210/28ac284fad1b4693bd8503d071029a3d.png" max-width="600"><span class="img-desc" style="font-size: 16px;">ATTO Disk Benchmark测试</span></img></p>
+<p>我们继续采用ATTO Disk Benchmark来进行测试，主要测试硬盘对不同大小文件的传输速度，其中红色条为写入速度，灰色条为读取速度，文件大小从512B-64MB依次向上增加。从测试结果可以看出，科赋CRAS C710 M.2固态硬盘在文件读写方面的表现还是非常稳定的，读取最高速度可达1.92 GB/s、写入速度最高可达1.59 GB/s。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201210/7795b03f7b234c7d9cc4166b6c374f79.png" max-width="600"><span class="img-desc" style="font-size: 16px;">HD Tune Pro磁盘文件基准测试</span></img></p>
+<p>而从HD Tune Pro的文件基准测试情况来看，科赋CRAS C710 M.2固态硬盘的整体表现也不错：顺序读取速度为1661.76 MB/s，写入速度为1434.51 MB/s；4K单线程随机读取IOPS13,813，写入IOPS39,440；4K多线程随机读取IOPS123,521，写入IOPS105,368。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201210/ddc5d4e9f64140fbb5215ed548ea0c5b.png" max-width="600"><span class="img-desc" style="font-size: 16px;">TxBench存储测试</span></img></p>
+<p>在TxBench专业磁盘性能测试软件中，在32队列单线程下科赋CRAS C710 M.2固态硬盘的顺序读取速度高达2073.35 MB/s，顺序写入速度为1681.19 MB/s；4K随机读写方面，单线程单队列读取速度为43.10 MB/s，写入速度为151.69 MB/s，整体表现非常稳定，完全达到了官方标定的数据。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201210/ac583557b7fa43aba1045890f34b0f57.png" max-width="600"><span class="img-desc" style="font-size: 16px;">PCMark 8 Storage测试</span></img></p>
+<p>最后，我们使用PCMark 8的存储测试来做个总结。这是经典的磁盘性能测试项目，涵盖了丰富多样的负载，可以模拟真实使用环境以衡量硬盘性能。科赋CRAS C710 M.2固态硬盘在测试中取得了5045分的成绩，平均测试带宽达到491.14 MB/s，已经属于当前主流M.2 NVMe固态硬盘的优秀水准。</p>
+<p><strong>KLEVV SSD 资料备份软件方便快捷</strong></p>
+<p>最后，还要说一说软件。对于用户来说，无论什么介质的硬盘都只是数据的载体，而数据本身是无价的，为此，KLEVV科赋为旗下的SSD产品提供了一款功能强大的磁盘管理软件：Acronis True Image HD。Acronis是业内知名的数据备份、恢复与管理软件，购买科赋SSD产品的用户可以免费获得Acronis True Image HD 2018版官方软件激活码。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201210/dc2496f785cf4f0fa04da32a0c104989.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201210/4c995a68f5244e0992e350d16003a3b1.png" max-width="600"><span class="img-desc" style="font-size: 16px;">Acronis True Image HD</span></img></p>
+<p>安装Acronis True Image HD 之后，用户就能轻松快速地将原本的硬盘内容复制到科赋CRAS C710 M.2固态硬盘上，可以将旧硬盘内的数据完整、无缝迁移，并保留操作系统启动信息，简化换装新硬盘所需的流程，还是非常实用的。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201210/0e6f20d9b5c2432ba9e79d9b563eb949.jpeg" max-width="600" /></p>
+<p>综合来看，科赋CRAS C710 M.2固态硬盘的整体表现还是符合预期的。当前主流的PCIe 3.0x4、NVMe规格，超过2000MB/s的顺序读取速度，1600 MB/s左右的顺序写入速度，高效稳定，在日常使用中无论是辅助转存文件、加载Adobe等大型应用程序，还是畅玩3A级游戏大作，都可以带来更极致的使用体验。对于游戏玩家、硬件发烧友及专业工作者来说，科赋CRAS C710 M.2固态硬盘是一个值得推荐的选择。</p>
+➜网易有道词典笔3体验：拼多多百亿补贴超值
+http://www.sohu.com/a/437416410_115088	24140
+<p>12月1日，网易有道正式发布了全新的网易有道词典笔3，作为一款翻译类学习神器，这款产品也在第一时间登陆拼多多平台并享受百亿补贴，瞬间成为拼多多平台学习工具品类中的明星产品。作为有道词典笔的第三款产品，网易有道词典笔3在外观设计、屏幕大小、功能等方面有着更完善的体验，并且更适用于全年龄段使用，具体表现如何我们一点点来详细介绍。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201210/d9b11f54eeb744919f985277192dd83f.jpeg" max-width="600" /></p>
+<p><strong>更精致的外观</strong></p>
+<p>首先是外观设计，网易有道词典笔3与前代最大的差别就是在正面位置取消了手指的握持触点，转而将屏幕尺寸增加至了2.97英寸，在日常使用的时候单屏可以显示更多的内容，对于阅读体验感受提升有着非常巨大的帮助。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201210/2a909625926e4e7bb931c2b0b04eb1da.jpeg" max-width="600" /></p>
+<p>另外就是在侧边位置增加了一枚物理按键，红色按键依旧负责开关机和开关屏幕，而前端位置的按键则是负责长按呼出语音助手、双击呼出控制中心以及单机回到主页面，增加了操作的便利性。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201210/c6f3838003d843aa83bac26973ad4a51.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>正面全局覆盖的2.5D水滴玻璃让手指在机身滑动的触感更好，也使得产品本身的质感更为优秀，即便是在职场环境中也可以作为一件精致的工具单品。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201210/1d20624199eb4450be09cdc90d1a2dd3.jpeg" max-width="600" /></p>
+<p><strong>满足不同年龄段的不同需求</strong></p>
+<p>接下来我们就来细致体验网易有道词典笔3的功能，根据一段时间的体验，我们将网易有道词典笔3的功能大致分为三个年龄区间，分别是3-7岁学龄前阶段、8-19岁学龄阶段以及20-60岁的职场阶段。</p>
+<p>这三个年龄段有着不同的功能需求，例如3-7岁以互动点读、绘本读物为主，为小孩子养成主动学习习惯以及扩展知识读物内容。8-19岁学龄儿童则着重点读翻译、正确发音以及单词记忆为主。20-60岁职场人群则倾向一些复杂句式翻译和专业词汇翻译功能，适应职场工作、交流需求。</p>
+<p>以上这些，网易有道词典笔3都可以完美满足。</p>
+<p><strong>学龄前：互动点读</strong></p>
+<p>对于学龄前儿童，需要以寓教于乐为核心，更多的是要让孩子在娱乐中感受语言氛围，同时以一些他们喜欢的方式来吸引注意力，所以在这一环节中网易带来了互动点读功能。</p>
+<p>为此，网易与Scholastic美国学乐出版集团合作，定制了有道点读版经典绘本系列，包括有三套绘本的几十册图书。而此次我们体验的则是其中的《大红狗》绘本。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201210/12dd93b7938b41da88c1bb2305509192.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201210/1c825164bdff49ce8582c0a38076bfd8.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201210/dec38ce64daf4b09ac2cf6e5027a69cd.gif" max-width="600" /></p>
+<p>我们在图书点读中下载好《大红狗》系列绘本之后，只需要将词典笔轻轻按压在就会唤醒互动点读功能，可以实现动画点读、词句跟读以及互动答题。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201210/331029b303fd471698b72414cc7cac23.gif" max-width="600" /></p>
+<p>动画点读可以以动画的形式在屏幕上展现当前书页的内容，更好的吸引小孩子的注意力，从而学习英语。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201210/81fa52bed0b64cf48cfb07d676a0a5be.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201210/1e3f6cf4d39c41cda542e721b0fa14c9.gif" max-width="600" /></p>
+<p>词句跟读则是以单词动画的形式前进，在一句话读完之后可以让小孩子跟读重复，从而获得奖励勋章，以激励的形式增加小孩子的学习欲望。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201210/4f140d9570dd4ac789c48c21c16fc499.jpeg" max-width="600" /></p>
+<p>面对一些小孩子奇奇怪怪的问题，长按呼出的语音助手也都可以完美应对，再也不用让家长有尴尬的时候，好像孩子身边多了一个全能百科。</p>
+<p><strong>学龄：强化发音/记忆</strong></p>
+<p>对于学龄阶段的孩子来说，强化单词记忆和纠正发音是重中之重。在网易有道词典笔3中，涵盖了从小学英语到CET6、日常应用英语教材内容和275万个专业词汇组成的词库，满足日常学习、考级需求。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201210/9a23a82ade754b1281ba46e1f8dfa8d6.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201210/da04e47819d24f1f820ac901e5c27c83.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201210/ae8986257f604d30a3a2fc71c74ef0af.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201210/d3daff71f7aa42d2993564553ab38534.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201210/08f8e6ddddc946048cd499cb7a327bd8.gif" max-width="600" /></p>
+<p>在主页面中的听力练习环节，可以听取有道准备的各个不同等级的听力内容，从最基础的单句英语到日常交流口语内容都有涉及，甚至还有历年的考试听力试题，帮助使用者一步步成长，逐渐熟悉语言环境。甚至用户还可以与网易有道词典App进行联动，自定义想要进行听力练习的单元片段，给与了极高的使用自由度。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201210/9f1dadf4fcee44418aba3f06870656b5.gif" max-width="600" /></p>
+<p><strong>职场：解决生僻词汇</strong></p>
+<p>对于职场人士来说，解决工作中的专业词汇和复杂句式的快速翻译是其使用产品的重点。网易有道词典笔3的扫描翻译功能可以实现整句翻译和折行翻译，即便是大段内容也可以通过扫描进行快速、专业地翻译。并且连接蓝牙耳机的功能出现之后也可以避免外放翻译带来的办公室小尴尬，这一点属实贴心。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201210/32c0582309a5414a977413ca5bd19c3b.jpeg" max-width="600" /></p>
+<p>综合体验下来，网易有道词典笔3确实是一款更为全面的辅助工具，尤其是对于牙牙学语阶段的学龄前儿童来说，动画绘本形式的加入极大地增加了他们对于新语言学习的兴趣，从小养成良好的语言习惯。而对于学龄儿童和职场人士，庞大的教材库以及单词库也可以解决他们在学习、工作中的困惑，成为学习、工作中一款极为有效的辅助类工具。加之语音助手、听力练习库以及与有道翻译词典App的联动，更能够增加词典笔的使用场景和功能。</p>
+<p>前不久有道词典笔3发布的时候，拼多多成为首发同步预售平台，并给予了同步直播。数据显示，截至发布会直播结束，拼多多百亿补贴联合有道新品发布会的直播间共吸引近十万网友驻足观看，在有道线上经销商管理经理李鸿的带动下，大量拼多多用户咨询和预约新品。</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201210/112b6cc930b94ae2a5aeba523304d66b.jpeg" max-width="600" /></p>
+<p>本次拼多多首发同步预售有道词典笔3，拼多多APP百亿补贴频道中也给予了巨大的流量支持。目前网易有道词典笔3在拼多多平台全面开启预售，百亿补贴补贴价1099元并享受终生质保，是所有平台中最优惠的，在拼多多购机还赠送超值大礼包，有需要的朋友们一定要到品牌官方店看看哦。</p>
+<p>不久前北京师范大学喻国明教授课题组发布了《2020新青年新国货消费趋势报告》，报告显示目前三大电商平台中拼多多的年轻人占比最高，其中95后用户比例达到了32%，比阿里（淘宝+天猫）高出了3个点。拼多多平台的全流量互动，无疑为有道词典笔3的销售提供了强大的平台支持。</p>
+<p>不论你是孩童家长，还是职场青年。只要你有英语学习和工作的需求，有道词典笔3都可以完美胜任。</p>
+➜苹果或将在手表表带中内置电池 不用再愁续航了
+http://www.sohu.com/a/437441536_115088	30569
+<p>12月20号消息，据外媒报道表示苹果申请了一项新专利，可以在Apple Watch表带中内置电池组，为用户的Apple Watch带来额外的续航，减少用户的电量焦虑。</p>
+<p>根据专利图来看，在手表表带中内置了一组圆柱形电池，包括多个电池，电池用连接器连接在一起固定，防止用户弯曲表带的时候对电池造成影响，苹果采用高强度柔性材料的内部框架来支撑电池，以此保障电池安全。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201210/46c5463491294513a02c34f91ce076d0.png" max-width="600" /></p>
+<p>值得注意的是，虽然在表带上增加了电池组，但是并不会增加表体的尺寸，保证手表的佩戴感。</p>
+<p>对于很多用户来说，佩戴苹果手表的时候希望可以有更长的续航，苹果的这项专利虽然还没有落实在手表上，但是也意味着苹果意识到了用户对于续航的需求。</p>
+<p>Apple Watch Series 6于9月16号凌晨正式发布，加入了全新的配色、更多表盘（包括时钟、赛车仪表、拟我表情等等）。其搭载苹果A13 Bionic处理器打造的处理芯片，处理速度相比上代提升了20%，性能更强。在健康表现方面，Apple Watch Series 6最引人注意的就是加入了血氧饱和度检测，其每15秒即可进行一次血氧测量，并可定时进行后台测量。</p>
+<p>价格方面，GPS版人民币3199元起，蜂窝网络版3999元起。</p>
+➜国产高端PCIe 3.0 SSD 龟甲T3000 M.2固态硬盘评测
+http://www.sohu.com/a/437447216_115088	31929
+<p>近年来，SSD固态硬盘在PC中的应用愈加广泛，继SATA接口之后，M.2已经成为当下的主流产品，成为主流笔记本、游戏电脑、高性能工作站等产品的标配。尤其是对于游戏玩家、专业工作者等中高端用户来说，他们对于硬盘的响应速度要求更高，那么一款PCIe 3.0x4通道、支持NVMe协议的旗舰级M.2固态硬盘产品就成为了必要选项。今天来到我们评测室的正是一款这样的产品：龟甲T3000 NVMe PCIe固态硬盘。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201210/b981fde743ec4b85bc198434fd50ac28.jpeg" max-width="600" /></p>
+<p>龟甲（Turtle Armor）这个品牌大家会比较陌生，这是今年10月23日，由江苏芯盛智能科技有限公司正式推出的国产存储新品牌，旨在为消费级市场用户提供更具竞争力的存储产品。龟甲T3000 NVMe PCIe固态硬盘便是龟甲品牌旗下首款产品，定位旗舰，采用PCIe 3.0x4通道、兼容NVMe1.3协议、最高4TB容量，官方标称最高顺序读取速度可达3400MB/s。本次我们测试的版本为1TB版本，下面为大家带来详细测试内容。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201210/f912f6d9d4364dd68e1c0b2f3c712667.jpeg" max-width="600" /></p>
+<p>龟甲T3000 NVMe PCIe固态硬盘采用标准的M.2 2280板型（22*80*2.15mm），适用于配备标准M.2插槽的台式机及笔记本电脑。龟甲T3000 NVMe PCIe固态硬盘采用蓝色PCB板，由于采用单面闪存颗粒布置，因此背部非常干净，整体非常纤薄，厚度仅有2.15mm多点。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201210/5f7e73a401c047bc8fe86e314f8843d1.jpeg" max-width="600" /></p>
+<p>龟甲T3000 NVMe PCIe固态硬盘采用铠侠BiCS3/4 TLC 3D NAND闪存，此次测试的1GB版本还采用了一颗来自金士顿的缓存，拥有1280TBW的惊人写入总量。性能方面，官方标称龟甲T3000 NVMe PCIe固态硬盘1TB版本的最高顺序读取、写入速度分别为3400MB/s、2400MB/s，下面我们来进行测试。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201210/fa6287de0a98455db3739f125f4942fa.jpeg" max-width="600" /></p>
+<p>主控方面，龟甲T3000 NVMe PCIe固态硬盘采用群联的PS5012-E12S，群联PS5012-E12S主控推出时间较早，非常成熟，市面上多款SSD产品都在采用。此次龟甲使用的-E12S为联合定制版本，节能效率与运行速度均有所提升。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201210/561a7183233848c5ab5099e89d4c19e3.png" max-width="600"><span class="img-desc" style="font-size: 16px;">CrystalDiskInfo磁盘信息</span></img></p>
+<p>通过CrystalDiskInfo软件，我们可以看到龟甲T3000 NVMe PCIe固态硬盘1TB版的基础信息，支持NVMe 1.3协议，使用PCIe 3.0 x4通道。具体的性能方面我们使用几款专门测试软件来进行。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201210/5001cf2207754e53a0f2d0b40020a1bb.png" max-width="600"><span class="img-desc" style="font-size: 16px;">CrystalDiskMark 6.0测试</span></img></p>
+<p>首先在CDM 6.0的测试中，顺序读写速度方面，龟甲T3000 NVMe PCIe固态硬盘1TB版本的读取速度达到了3468.1 MB/s，写入速度为2741.4 MB/s，均超过了官方标称值，表现优秀；4K随机读取方面，单队列单线程下的读取速度为46.01 MB/s、写入162.8 MB/s，整体算是不错的一个表现。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201210/f094716ebdcc4c649d637c0b7fd3bfb7.jpeg" max-width="600"><span class="img-desc" style="font-size: 16px;">AS SSD Benchmark测试</span></img></p>
+<p>接下来使用ASSD Benchmark来进行测试，这也是一个专门为SSD测试而设计的标准检测程序，它涵盖了持续性读写、单线程4KB随机读写、64线程4KB随机读写以及磁盘寻道时间等关键数据的测试，可以比较科学的反映固态硬盘的真实性能。顺序读写速度方面，龟甲T3000 NVMe PCIe固态硬盘1TB版本的读取达到约为2884.02 MB/s，写入速度约为2890.10 MB/s；写入速度甚至超过了读取速度；4K随机读取方面，读取iops为472,143、写入iops为456,098，表现出色。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201210/9412b774c3fe4ffdb1b34bf3e3ad3811.png" max-width="600"><span class="img-desc" style="font-size: 16px;">ATTO Disk Benchmark</span></img></p>
+<p>我们继续采用ATTO Disk Benchmark来进行测试，这款软件主要测试硬盘对不同大小文件的传输速度，其中红色条为写入速度，灰色条为读取速度，文件大小从512B-64MB依次向上增加。从测试结果可以看出，龟甲T3000 NVMe PCIe固态硬盘1TB版本在文件读写方面的表现还是非常不错，读取最高速度可达3.25 GB/s、写入速度最高可达2.88 GB/s。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201210/7c1d5ddee30d464c92a8cda166fca86e.png" max-width="600"><span class="img-desc" style="font-size: 16px;">HD Tune Pro磁盘文件基准测试</span></img></p>
+<p>而从HD Tune Pro的文件基准测试情况来看，龟甲T3000 NVMe PCIe固态硬盘1TB版本的整体表现也不错：顺序读取速度为2375.92 MB/s，写入速度为2283.87 MB/s；4K单线程随机读取IOPS24,872，写入IOPS34,110；4K多线程随机读取IOPS85,776，写入IOPS74,243。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201210/26e070761fec481e8b9562b924027c34.png" max-width="600"><span class="img-desc" style="font-size: 16px;">TxBench测试</span></img></p>
+<p>在TxBench专业磁盘性能测试软件中，顺序读写方面，在32队列单线程下龟甲T3000 NVMe PCIe固态硬盘1TB版本的顺序读取速度高达3205.96 MB/s，顺序写入速度为2782.28 MB/s，同样与官方标称数值吻合。4K随机读写方面，读取速度约为32.89 MB/s，写入速度为125.08 MB/s，表现中规中矩。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201210/6ed76278297c45798647709bfddc1dae.png" max-width="600"><span class="img-desc" style="font-size: 16px;">PCMark 8 Storage测试</span></img></p>
+<p>最后，我们使用PCMark 8的存储测试来做个总结。这是经典的磁盘性能测试项目，涵盖了丰富多样的负载，可以模拟真实使用环境以衡量硬盘性能。龟甲T3000 NVMe PCIe固态硬盘1TB版本在测试中取得了5068分的优秀成绩，平均测试带宽超过600 MB/s，属于当前旗舰级PCIe 3.0x4 NVMe固态硬盘的水准。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201210/919b80aac79d48ffaede3d894cbc7b3a.jpeg" max-width="600" /></p>
+<p>纵观目前国内高端存储市场，其主要市场份额仍然由国外几大品牌把控，国产品牌仍处于突破“层层围剿”的局面，而有志于在存储行业深耕、进行品牌建设的企业更是少之又少。江苏芯盛经过十余年的发展，拥有自研发、测试及制造等全面能力，技术覆盖了存储产业链中大部分关键环节。虽然现在闪存颗粒依托外采，但是龟甲坚持使用原厂颗粒，并与铠侠电子、长江存储、群联电子以及国科微等厂商建立了良好的合作关系，在产品品质上毫不妥协，此次推出的龟甲T3000 NVMe PCIe固态硬盘正是一个代表。</p>
+<p>相信在未来的存储市场上，我们一定能够看到龟甲品牌的绽放，为消费者带来更多存储产品，成为用户承载数据、享受美好生活的驱动力。</p>
+➜28年持续以思考进化时代 专访ThinkPad 王忠
+http://www.sohu.com/a/437462595_115088	36305
+<p><strong>·科技创新是ThinkPad 28年经久不衰的密码</strong></p>
+<p>从1992年的首款产品ThinkPad 700C开始，到今年ThinkPad已经走过了28年。28年来ThinkPad以极致的品牌文化和领先的产品在商用笔记本市场成就了一段传奇。28年间，一个PC品牌能够持续保持活力，在PC行业甚至是整个数码行业都并不多见。</p>
+<p>28年来，ThinkPad不断探索前沿科技，与粉丝同行，始终坚持以专业致敬专业，用思考成就思考，引领每个时代的进化。</p>
+<p>ThinkPad的成功密码是什么？</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201210/c01a0289b6bd4baf9b4850f76c028635.jpeg" max-width="600"><span class="img-desc" style="font-size: 16px;">联想集团副总裁、中国区中小企业事业部总经理王忠</span></img></p>
+<p>联想集团副总裁、中国区中小企业事业部总经理王忠说到：“28年来，在整个PC行业的发展当中，很多友商伴随我们走，有的还在继续，而有的已经消失不见。我觉得ThinkPad之所以28年以来仍然活跃在整个PC领域，并且成为佼佼者，核心的密码就是不断的科技创新，因为ThinkPad一直秉承着“以人为本，科技创新，匠心品质”三大品牌基因，其中最核心的就是科技创新，PC产品从原本的厚重变化到如今的轻薄，越来越鲜活越来越有生命力，正是科技创新的力量，科技创新就是我们成功的密码。”</p>
+<p><strong>·更成熟的产品 更细分的市场 更极致的体验</strong></p>
+<p>作为ThinkPad X系列商用笔记本中的顶级旗舰，ThinkPad X1已经走过八个年头，大家熟悉的ThinkPad X1 Carbon已经成为高端、极致商用笔记本的代名词。但事实上，整个ThinkPad X1家族的成员数量并不少，包括ThinkPad X1 Yoga、ThinkPad X1 Tablet以及前不久新推出的全球首款折叠屏笔记本ThinkPad X1 Fold等，ThinkPad为用户提供了丰富的选择。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201210/a14f38de771242498f9f412dbcd34819.png" max-width="600"><span class="img-desc" style="font-size: 16px;">ThinkPad X1 Nano</span></img></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>12月8日，ThinkPad X1家族又迎来一位新成员：ThinkPad X1 Nano。一直以来，笔记本的轻薄设计与高性能之间都存在着矛盾，但ThinkPad X1 Nano却做到了完美的平衡，在12寸大小的机身中放置了13英寸的屏幕，同时在性能、电池、键盘等用户最看重的地方没有丝毫妥协。</p>
+<p>ThinkPad首席产品官周秋昊说到：“ThinkPad X1家族的各个不同型号产品，代表着不同的形态，也代表着不同的细分人群。ThinkPad X1 Carbon是超轻薄的集大成制作，但是我们认为在超轻薄的领域里还可以进一步细分，此次推出的ThinkPad X1 Nano就是非常具有代表性的一款产品。和ThinkPad X1 Carbon相比，ThinkPad X1 Nano机身尺寸更小，仅有907g的机身重量更加轻薄，便携性能更加出色。Nano的后缀也表明了产品“更小”的特点，对于笔记本产品尺寸敏感的用户，尤其是女性用户，如果觉得ThinkPad X1 Carbon还不够极致，那么选择ThinkPad X1 Nano是非常合适的。</p>
+<p>另外，ThinkPad X1 Nano在设计之初时就定义为一台全功能、全天候使用的产品，通过了英特尔Evo平台的严苛认证，性能方面大家丝毫不用担心。全新的电池密度高达780瓦时/L，保证了长达13.6小时的续航时间。”</p>
+<p>王忠还表示：“其实客户在选择产品的时候总有一定的侧重性，因为任何一个产品都不可能照顾到每个方面，否则就容易失去特色。笔记本电脑最近这些年的发展越来越科技化，越来越一体化，使用体验也越来越好。屏幕是笔记本电脑的核心参数，用户对于屏幕最合适的大小或许看法不同，但是对于屏幕素质的要求是都在提高的。ThinkPad X1 Nano在小巧的机身内配置了13英寸的2K分辨率高色域屏幕，会带给用户很好的体验。”</p>
+<p>ThinkPad 充分考虑到了各个行业、各个类型的用户需求，精细打磨产品、真正细分产品，日益壮大的ThinkPad X1家族为用户带来了更极致的使用体验，与ThinkPad以人为本的品牌基因是一脉相承的。</p>
+<p><strong>·以思考进化时代 ThinkPad与粉丝共创共生</strong></p>
+<p>“以思考进化时代”是ThinkPad的品牌主张，这代表的不是产品本身，更是代表的ThinkPad的用户。ThinkPad的用户大多都是所在领域的专家，代表着创新、代表着前行，他们在用自己的专业能力推动这个时代的进步，每一位ThinkPad的用户都有很强的自豪感和自我认同感，因此长久以来，ThinkPad和用户之间的关系不能简单用“电脑用户”来理解，ThinkPad和粉丝之间形成了一种长久的共创共生的精神，ThinkPad和用户一道在推动时代的进展，这也是ThinkPad一直所遵循的理念。</p>
+<p>王忠：“ThinkPad始终把粉丝、把用户放在第一位，这体现出了我们的品牌精神，刚才谈到的以人为本，对我们来说就是以客户和粉丝为本，他们是我们这个品牌生存的最重要的土壤和基础。2020年度的黑FUN礼，我们强调致敬时代先锋，粉丝在我们的活动中是焦点，我们都是在向他们致敬，最高级别的致敬莫过于推出极致的创新产品来回馈他们。ThinkPad和粉丝之间已经形成了共同的品牌价值和共鸣。未来我们仍然会坚持以这样的思路，粉丝是我们的核心所在，我们所有的产品，我们所有的服务都是为了他们，这是我们最朴素的一个想法。” </p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201210/ec028e7a867c4a79984a628c5109a7df.jpeg" max-width="600"><span class="img-desc" style="font-size: 16px;">ThinkPad黑匠分享产品故事</span></img></p>
+<p>最后，周秋昊说到：“对粉丝的尊重或者尊敬，最好的表现就是倾听他们的声音，不断的推出最有诚意的产品，全新的ThinkPad X1 Nano产品其实就是几年前我们与粉丝的交流互动中产生的想法，经过三四年的打磨，最终呈现出来的产品。粉丝们对于ThinkPad的认同归根结底还是要用好的产品来说话。”</p>
+➜米家互联网对开门冰箱540L现货开售 首发价仅2999元
+http://www.sohu.com/a/437466163_115088	37304
+<p>12月10号消息，此前开启预售的米家互联网对开门冰箱540L于今日正式全渠道现货开售，正式售价为3699元，首发价仅2999元。</p>
+<p>米家互联网对开门冰箱540L拥有540升储物空间，其中冷冻室容量为189L，冷藏室容量为351L，可以满足全家一周食材的贮存需求，用户无需频繁采购，食材可以放心囤在冰箱。其内置双排直开大抽屉，肉类和果蔬可以分开放置，不易串味。在门上有超宽8格置物门搁架，门上的空间利用率更高。此外，搁物架的高度可以上下调节，大件汤锅也可以轻松放入。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201210/d9104a0c792742928e6a54a174593902.png" max-width="600" /></p>
+<p>米家互联网对开门冰箱540L的箱体设计依然十分纤薄，整机厚度仅660mm，箱体宽度和高度分别为905mm和1770mm，可轻松嵌入橱柜。此外，米家互联网对开门冰箱540L采用LED触控面板，更加简洁直观，家中的老人也可以轻松操作。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201210/75c6f091ab19424982532a63d4bfe32f.png" max-width="600" /></p>
+<p>米家互联网对开门冰箱540L采用了风冷无霜技术，通过瀑布式下沉出风，将冷气输送到每个角落，避免直吹食材，果蔬水润不干瘪。米家互联网对开门冰箱540L配置4枚温度传感器，可以根据不同使用场景智能调节温度，保证食材不变质。</p>
+<p>此外，米家互联网对开门冰箱540L采用双变频机组，强劲内核节能运转，更加持久耐用。</p>
+➜炫彩渐变夜光呈现 OPPO Reno5 Pro星河入梦版图赏
+http://www.sohu.com/a/437491241_115088	48285
+<p>OPPO Reno5 Pro不仅延续了上代产品的轻薄特征，还是OPPO Reno系列在工艺设计方面的最新力作。OPPO Reno5 Pro创新性升级了Reno Glow星钻工艺，开发出了星河入梦、极光蓝和月夜黑三种时尚配色。新年版还推出了星愿红配色版本。我们拿到的正是星河入梦版本以及黑色版本。</p>
+<p>其中，星河入梦版本能够在不同角度映衬出不同的渐变色彩，将橙、黄、蓝、青、紫、粉等颜色熔于一炉。手机背板通过工艺层叠结构，对炫彩层、纹理层和反光层进行有效叠加。其中，炫彩层加入了Picasus炫彩膜以及上千层折射率不同的PET聚合物，在叠加与拉伸工艺处理下，形成纤薄的光学反光膜。三层相互叠加，最终形成了幻彩颜色。你在任何角度，都能感受到不一样的OPPO Reno5 Pro。</p>
+<p>星钻工艺则是OPPO Reno5 Pro的另一大亮点，不仅视觉更闪亮，颜色更通透，闪亮度也提升了35%，其结构由金字塔状的多面锥体构成。在透光性强大的同时，其优秀的疏水能力也能够有效防止水渍、指纹甚至油污沾染。OPPO Logo以及Reno Glow标识则在灯光照耀下熠熠生辉。</p>
+<p>与此同时，星河入梦版本甚至首发夜光材质，相机模组以及顶部区域能够在亮光条件下蓄光，并在暗处自发光，不仅能够方便寻找手机，视觉效果也相当惊艳。黑色版本则与传统的手机设计差别不大，显得神秘深邃，风格百搭，反光效果和一体化视觉观感强势拉满。</p>
+<p>OPPO Reno5 Pro手机正面为6.55英寸双曲面柔性打孔屏，屏幕与机身均采用了曲面设计，握持手感异常出色。机身厚度约为7.6mm，重量则约在173g左右。手机本身结构紧凑，各种要素布局得当，顶部的“Designed for Reno”以及电源键上的绿色标志，无不映衬着整部手机的精致观感。由此可见，OPPO Reno5 Pro的颜值，相比上代进步还是非常大的。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201210/8d8c746faed14febaae707efb300eedb.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201210/9493b81460d64ea3b7793b8bf26238b8.jpeg" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201210/9b863de77e4749c18c3db8ec5df84c66.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201210/e0366be89f714f95b27cc7990b30b53d.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201210/713da6bf52cc4ec0954fafedb195460e.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201210/11388fc087ed4ac5a18f8482fd8864ca.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201210/b64adaaebbfa495f994bf5112595e7e2.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201210/028577c1bbbc4a828a6546aff0fa83d2.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201210/f59054982bdb4dfb8c32f6d5f29db3c5.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201210/8839db16180245409453f7fd532d9901.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201210/50ae54ddaf3845e29295d0f3b58a4644.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201210/2a3cf5e8e9f34512ba8308d189809ef7.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201210/d713a7afde9646c88eb61ce93c023c34.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201210/f0485dc4b79a4b2da36ab41d51452458.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201210/03e8f4b3aee44c73bf8f76c0cae1ca92.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201210/e1f6660848df4af4a32e7112741b56be.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201210/91d889d5ad1e41acaca8565ad456d836.jpeg" max-width="600" /></p>
+➜OPPO Reno5系列闪亮登场 2699起价人像摄影新贵
+http://www.sohu.com/a/437495013_115088	50142
+<p><strong>【PChome手机频道资讯报道】</strong>OPPO在12月10日晚举办了一场全明星繁星大秀，在两部微电影以及OPPO STAR全明星阵容的穿插介绍之下，OPPO Reno5系列新机就此登场。该系列新机保持了Reno系列一贯的纤薄设计，并在人像视频摄影上升级显着，开创了手机视频创作的新篇章。</p>
+<p>OPPO Reno5系列提供了数款机型，定位丰富价格跨度大，能满足不同用户群体的需要。其中Reno5 Pro 8GB+128GB版本售价3399元，12GB+256GB版本售价3799元。Reno5 8GB+128GB版本售价2699元，12GB+256GB版本售价2999元。Reno5系列星河入梦、极光蓝、月夜黑版本将于2020年12月18日在欢太商城、京东、天猫、苏宁等线上渠道以及OPPO体验店、专卖店、三大运营商合作营业厅、苏宁、国美、迪信通、顺电等线下卖场同步开售，Reno5 Pro星愿红版将于12月29日在线上线下全渠道开售，售价3399元。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201210/d2c1e94edcbf4037ab2bfea495846ea7.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201210/fdffca9c9a994c1aab88851973e032af.png" max-width="600" /></p>
+<p><strong>焕采人像视频 科技美妆千人千面</strong></p>
+<p>OPPO Reno5系列将功能创新聚焦于人像视频的拍摄体验，搭载FDF全维人像视频技术系统，拥有前置3200万水光镜，后置6400万水光人像四摄，支持AI焕采视频美颜、AI视频增强和视频超级防抖3.0。实现真实自然的个性化人像拍摄，同时实现对人像环境的整体优化。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201210/8bc269a15451429195ca3e2e1bd67782.jpeg" max-width="600" /></p>
+<p>AI焕采视频美颜以智能AI算法对人种、性别、年龄、肤色等进行准确识别，并进行差异化美化。同时还能智能识别后天瑕疵和天生特征，处理掉瑕疵，保留美人痣等天生特征，保留用户的“真实美”。以数字化的方式在视频人像上达到和真实妆容几乎一致自然的效果。</p>
+<p>AI焕采视频美颜通过AI检测可对脸部标记296个特征点，让镜头前的你时刻保持匀称的脸部轮廓和立体自然的五官。同时，还能实现对脸部、脖子和手部皮肤的精准识别，确保这3个区域的皮肤表现一致。不仅如此，AI焕采视频美颜还提供八重100级的自定义选项，通过磨皮、瘦脸、大眼等8个维度定制，打造定制的美化方案。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201210/c29ffce5e1a6426883ef9746531bab36.jpeg" max-width="600" /></p>
+<p>AI视频增强将视频超级夜景和Live HDR进行融合升级，根据环境亮度智能调用夜景和HDR算法，提升暗光下画面亮度和细节表现，打造全场景的自拍神器。OPPO将这一能力向第三方APP开放，目前已接入了抖音和快手。视频超级防抖3.0加入了场景判断和运动趋势判断算法，基于不同场景匹配相应的防抖策略，实现更精细、全天候的防抖效果。</p>
+<p><strong>轻薄闪耀，定义Reno系列化设计语言</strong></p>
+<p>“星河入梦”作为Reno5系列主打的全新配色，在上一代晶钻工艺基础上升级为星钻工艺，晶体升级为规则的金字塔结构，颗粒更大，覆盖比例更高，排列更紧密。让Reno5系列的后盖更通透，闪亮度相比上一代提升了35%。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201210/a12a0cb627474441a928b0b02d70a2f8.jpeg" max-width="600" /></p>
+<p>Reno5系列还对膜片叠层工艺进行创新，通过炫彩层、纹理层、反光层的叠加效果，实现变幻多彩，让用户不再纠结买哪款颜色的手机。Reno5系列星河入梦版还首次采用月光镜圈，经过光线照射之后，相机模组区域和顶部装饰件在暗处便可发出黄绿色向的荧光，更具个性趣味。轻薄机身也是Reno5系列化设计语言的重要部分，Reno5系列电池容量增大到4350mAh，VC液冷散热面积增加了372.82mm2，机身厚度控制在与Reno4系列同样纤薄的7.6mm，重量仅173g。</p>
+<p><strong>全民游戏快速体验全面反馈</strong></p>
+<p>Reno5系列注重游戏体验，通过算法预测能让使用频率高的游戏常态性进入热启动状态，大幅降低下次打开游戏的加载时间。五维超感游戏体验从操控感、趣味感、画面感、氛围感和沉浸感提供独家优化方案，并与王者荣耀联合技术调试，开放多达10种振感波形，“天下无双”、“五连绝世”等场景都有个性化震动反馈。全新升级的手感调节2.0，灵敏度和跟手性支持五档位可调节，同时还有防误触设置功能。游戏结束后， “超玩战报”让游戏局内表现，击杀、装备甚至是APM、操作热区、性能评分等数据一目了然，一键分享用户的游戏战绩。</p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201210/568cf7ced6314cfdb3573b768de2b3f6.jpeg" max-width="600" /></p>
+<p>全链路的游戏体验优化离不开HyperBoost 4.0的底层支持，全新升级的游戏AI调频方案：GPA—AI变频技术， 让CPU频点控制粒度更细，更加精准且快速，当系统有丢帧风险时极速提频保性能，而普通场景下控制频率节省功耗，张弛有度，游刃有余。不再出现版本更新完，游戏体验反而变差的情况。经过GPA优化，Reno5 Pro可以更好的控制游戏的性能与功耗，包括王者荣耀在内的多款游戏，最高可降低8%的功耗，温度平均也能降低 1°C。</p>
+<p><strong>30个月流畅护航，定义流畅新标准</strong></p>
+<p>OPPO Reno5及Reno5 Pro均获得泰尔实验室抗老化性能测试认证，达到五级抗老化性能要求。其中Reno5 Pro在实验室老化测试环境下连续使用30个月，流畅度下降仅2.27%，响应速度下降71ms，达到泰尔实验室目前最高流畅标准。</p>
+<p>OPPO Reno5系列获得了汇顶科技创新方案组合实力加持，全系采用汇顶科技屏下光学指纹方案，带来流畅解锁体验；采用汇顶科技智能音频放大器，让醇美音效萦绕耳旁；加上汇顶科技智能语音增强解决方案，即使周围环境再嘈杂，也能确保你的通话清晰不受打扰。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201210/2efc38296bb44d5cab1fde0a169e751e.jpeg" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201210/7560da27d3324baeb4542a15eaf0a4d1.jpeg" max-width="600" /></p>
+<p>Reno5系列搭载ColorOS 11.1，能够联动电视、耳机、手表等智能设备，打造了无缝互联体验，其中屏幕共享功能可以帮助远在千里之外的父母解决操作难题。蓝牙车钥匙功能让Reno5系列一次配对即可无感解锁，这一功能将在本月内陆续上线长安汽车、理想汽车、广汽新能源，未来还将接入超过10家汽车品牌。同时，侧边栏还增加了Breeno识屏，不仅能够同款比价，一键领取优惠券、查看历史价格走势，还可在短视频平台上智能识别背景音乐。</p>
+➜星愿之红喜迎2021 Reno5 Pro新年版年内开售
+http://www.sohu.com/a/437494883_115088	50389
+<p><strong>【PChome手机频道资讯报道】</strong>12月10日19:40，OPPO正式发布了OPPO Reno5和OPPO Reno5 Pro。其中，OPPO Reno5 Pro搭载了天玑1000+处理器，支持SA/NSA 5G双模组网，凭借轻薄称手的设计、以“星河入梦”配色为代表的创新Reno Glow2.0星钻工艺，依托“专人专美，人美景美”的FDF全维人像视频技术系统，能够拍摄幻彩人像视频。可以说，OPPO Reno5 Pro是本次发布会的重头戏，也是现阶段最值得购买的5G机型之一。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201210/d6df724f836c4586be85484e7e205bc3.jpeg" max-width="600" /></p>
+<p>值得一提的是，OPPO Reno5 Pro在星河入梦、极光蓝、月夜黑三种配色外，还独自开发了新年版产品。OPPO Reno5 Pro新年版采用了创新性的星愿红配色，与星河入梦配色版本一起构成了OPPO Reno5 Pro的冷暖色调双碧。</p>
+<p>相比于OPPO Reno5 Pro的三种默认配色，星愿红配色更加符合传统中国年的氛围底色，象征着希望与团圆。也正因为如此，我们可以看到，在手机背面的“Reno Glow”标识旁，还刻画有一个专属的新年版logo，不仅看上去更特别，也显得十分温馨。</p>
+<p>据悉，OPPO Reno5 Pro共有星河入梦、极光蓝、月夜黑三种配色，8+128GB版本售3399元，12+256GB版本售3799元，目前已开启预订，12月18日在欢太商城、各大电商平台以及OPPO体验店、专卖店、运营商合作营业厅等线下渠道正式开售。OPPO Reno5 Pro新年版 8+128GB版本售价3399元，将于12月29日跨年之际闪光开售。感兴趣的朋友可以前往指定渠道了解一下。</p>
+➜与故宫联名 OPPO多款定制款IoT新品惊喜到来
+http://www.sohu.com/a/437495741_115088	50659
+<p>12月10号消息，今晚除了OPPO Reno5系列5G手机的到来之外，OPPO也为我们带来了一系列焕然一些的智能硬件产品。OPPO与故宫博物院携手，推出了一系列融合故宫元素的OPPO智能家族的手表、无线耳机。其中包括OPPO Watch故宫新禧版和OPPO Enco X故宫福启版。此外，OPPO智能电视也拥有了展现故宫风貌的主题和壁纸。新年即将来临，相信这一系列意义不凡的以红色为主题的硬件产品会得到非常多用户的喜爱。</p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201210/99189a097854403f9431cdaf3a6487e6.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p5.itc.cn/images01/20201210/8aade066a81749dea67591b39d19bdde.png" max-width="600" /></p>
+<p>售价方面，OPPO Watch故宫新禧版售价1999元，OPPO Enco X故宫福启版售价999元 ，将于12月10日开启预定，12月29日线上线下正式开售，故宫版主题和壁纸也将于29日全面上线OPPO智能电视。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201210/61c398bd4e3a41259094a08eaac6ed0f.png" max-width="600" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>据了解，OPPO Watch故宫新禧版定制礼盒在外观、表盘、充电动画等方面进行了深度合作，礼盒选用了喜庆的宫墙红作为底色，盒盖正中印刻着烫金祥云，内包装采用传统日晷元素与传统折页式设计。礼盒中的OPPO Watch手表外观也有着故宫元素，设计团队精选了紫禁城中经典的祥云纹，将其复刻在OPPO Watch手表的表带、底壳以及充电底座上，并且以宫墙红作为手表的主色调，朱墙琉璃瓦在表壳等细节处体现。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201210/3355a34cf74f498f8fa6ec8e6770d12c.png" max-width="600" /></p>
+<p>OPPO Watch故宫新禧版特别定制了四大主题表盘，分别为白鹤紫霄、海错世界、流金岁月、繁花似锦，其中白鹤紫霄为动态表盘，四款表盘灵感均来源于故宫的典藏文物。OPPO Watch故宫新禧版还将太和殿宝座正上方的蟠龙藻井做成了手表充电动画，融入诸多吉祥元素。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201210/ac0e6c8ba6ad41ccbc63154173ff4a10.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p2.itc.cn/images01/20201210/b473343ff7674f64a5e73335e15cc010.png" max-width="600" /></p>
+<p>OPPO Watch故宫新禧版手表在配置和功能上和之前没有什么变化。搭载自主研发的双擎动力续航架构，智能模式下续航可达40小时，长续航模式下可达21天，同时配备了3D双曲面柔性屏，搭载了Watch VOOC闪充技术，支持eSIM功能，可随时随地接打电话、回复消息。并有专业的运动健康相关功能，提供专业科学的运动健康体验。</p>
+<p>OPPO同时发布了首款与故宫联名的无线耳机——OPPO Enco X 故宫福启版。以“宫墙红”为主色调，轻盈、灵气，同时还有祥云元素.</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201210/cad0893a5d77458f8927e75aae8dc053.png" max-width="600" /></p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201210/f5b2e6f5a5994973b58a83fed40b28dd.png" max-width="600" /></p>
+<p>作为OPPO首款旗舰级TWS真无线降噪耳机，OPPO Enco X采用了创新的DBEE 3.0声学系统，同时与北欧品牌丹拿联手进行调音。拥有四档降噪模式，带来了全场景降噪体验，更有便捷的操控体验。</p>
