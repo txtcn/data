@@ -1,0 +1,56 @@
+➜如何搭建一个企业级数据分析体系？
+http://www.woshipm.com/pd/4296972.html	4573
+<blockquote><p>编辑导读：增长是企业最重要的工作之一，如何用数据驱动企业增长呢？这就需要企业搭建一套数据分析体系。本文立足于企业实际情况，对构建企业级数据分析体系的步骤进行了详细梳理说明，希望对你有帮助。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/za3eiX189cs3Ki63D1gU.jpg" alt="" width="900" height="420" /></p>
+<h2>最佳实践</h2>
+<p>一个企业级数据分析体系的最佳实践应该是这样的：</p>
+<ul>
+<li>内部感知系统：及时告知各项内部运营参数；</li>
+<li>外部感知系统：及时反馈外部竞争、机会状况；</li>
+<li>报警系统：及时发现并报告各项异常，并指明故障点；</li>
+<li>导航系统：根据设定的目标，提供可到达的若干方案，根据当前方案和位置，指明下一步行动方向，对目标进行合理预测，实时反馈当前执行情况。</li>
+</ul>
+<p><img data-action="zoom" class=" aligncenter" src="http://image.woshipm.com/wp-files/2020/12/6FsBT2OZ7twUwYAz07Dz.png" /></p>
+<p>但是企业有大小，业务流程有粗细，产业链有长短，企业所处阶段有不同，如何构架一个符合企业实际情况的数据分析体系呢？</p>
+<h2>构建企业级数据分析体系的步骤</h2>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/12/vjNh5gFv2ec0t2JbnM5D.png" /></p>
+<p>当你接手公司/部门/小组数据分析工作时，可以按照上图所示的流程，建设一套完整的数据分析体系。</p>
+<h3>Step1：理清业务线</h3>
+<p>首要的工作是理清公司/部门的业务线，这些内容可以从企业战略地图中获得。不同的业务线的目标不一样，场景不一样，数据量也不一样，使用的人员和技术自然也都不一样。此时需要画出业务流程图。</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/12/x1T3dCx4OgiDBzyvGWXW.png" /></p>
+<p>例如，自营业务线更偏向生产企业，需要做财务分析，涉及各个自营产品的收入、各种费用、利润的分析，还必须有固定资产折旧管理成本摊销的财务专业知识，不同的方法核算出来的成本和利润会有质的区别，影响最终的决策。</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/12/xFy9h0AkSSCZcDwOdowL.png" /></p>
+<h3>Step2：明确内外部客户</h3>
+<p>其次，根据Step1画出的业务流程图，整理出所需服务的内外部客户，以及他们在各个环节中的数据诉求，并绘制成表格：</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/12/05dHDO7tJQzWDHeb65an.png" /></p>
+<h3>Step3：规划数据服务</h3>
+<p>根据Step1、2梳理的业务流程、各客户诉求，结合公司战略导向以及数据部门现有资源，绘制战略执行地图，预设准备建设的数据服务内容。</p>
+<p>以用户运营为例，其业务目标主要为了解用户总体现状、提升用户总量、提升留存、提升日活、提升付费等，再进一步细化至可以提供的数据服务以及简单梳理数据来源。</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/12/3rs5aytDDTxm86GdkfWt.png" /></p>
+<p>如上表所示，各种数据服务的内容对技术的要求不一样，同时根据企业数据量和业务复杂程度，所需要的底层数据技术也不一样。</p>
+<p>公司各条业务线所需的数据服务梳理完之后，就可以进行技术的选型了。</p>
+<p>数据少，业务流程简单，比如商品贸易企业，只需要一个强力的数据分析师，协同财务和业务，共同做几个业务分析，固化为excel报表，每月更新报表即可，平时对上月的数据进行专题分析，发现问题及时预警，就足够了。</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/12/u4OWQkBDHUf77rpwSgaX.png" /></p>
+<p>但如果是电商平台，商业模式复杂，数据量又大，首要考虑的就是能够服务于核心指标，提升效率，然后全局规划，分布实施。</p>
+<p>技术上满足大数据量选用Hadoop体系，应对业务快速变化则需要建设数据仓库，进行业务和数据的解耦，解放数据分析人员的时间则需要搭建多维分析如Kylin、impala等等。</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/12/H6rYXsYVqgnHEV4aBrWG.png" /></p>
+<p>请注意，这里的紧急和重要程度都是相对而言的。</p>
+<h3>Step4：搭建数据团队</h3>
+<p>数据部门所需支撑的工作已经整理清楚了，业务方对数据的要求也很清晰，也已经根据公司的情况进行了大致的技术选型，那么需要什么样的人员就非常清楚了，遵循“因事定岗，因岗定人”的原则，我们就可以搭建数据团队的组织结构。</p>
+<p>组织架构并不一定是大而全的，在创业初期，基本上是老板自己担任了数据分析师的角色，凭着对业务的深刻理解，作出各种决策判断。</p>
+<p>但是随着业务的不断扩大，业务线增多，业务流程复杂，业务变化快，数据量大，对数据部门的各种要求也就越来越多，因此数据部门承担的任务会越来越复杂，服务的对象也越来越多，基于降本增效的考虑，就需要不断丰富数据部门的职能，拓展技术能力。</p>
+<h3>Step5：设定制度标准</h3>
+<p>设立制度、规范和标准，是数据工作的基础，与公司大小，数据量的多少无关。</p>
+<p>统一全公司口径的是公司指标体系及统计口径标准；对外协作需要数据安全管理制度、数据提取审批流程；对内管理需要报表出具流程、专题分析报告制作标准；技术管理则有M有SQL开发规范、数据仓库设计标准等等。</p>
+<p>预先设定规则，严格执行流程，时刻监督，惩前毖后，切不可让规则成为一纸空文。</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/12/EXP1F9tudcPdnp4uKLXZ.png" /></p>
+<h3>Step6：补全技术、完善工具</h3>
+<p>此时，才正式进入纯技术阶段。按照之前的需求及设定的方案，遵照执行即可。如果你正在开荒，那就必须要小心不要被细节缠住，陷入无尽的任务。哪怕资源再少，都要分兵，一部分应对日常需求，一部分搞建设，快速将各种工作自动化，提升效率，腾出功夫做更有价值的事情。</p>
+<p><img data-action="zoom" class="rich_pages aligncenter" src="http://image.woshipm.com/wp-files/2020/12/EsMxlRePIpxCvLx8eBro.png" /></p>
+<h3>Step7：长期规划、快速迭代</h3>
+<p>优秀的架构师、管理者，都不能满足于现状，但又不能盲目的追求新技术，应该进行合理的超前。无论是所提供的数据服务，还是新技术的引入，只需满足企业未来1年所用即可。</p>
+<p>迟于进度，则不能满足内外部业务需要，过度超前，则投入太大，ROI不成正比，2019年诸多数据中台项目失败就是这个原因，与诸君共勉。</p>
+<p>&nbsp;</p>
+<p>作者：大数据架构师，国药国华大数据总监，擅长BI、数仓、数据中台产品规划领域，公众号：大数据架构师</p>
+<p>本文由 @大数据架构师 原创发布于人人都是产品经理。未经许可，禁止转载</p>
+<p>题图来自Unsplash，基于 CC0 协议</p>
