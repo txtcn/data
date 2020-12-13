@@ -1,0 +1,18 @@
+➜通过DLNA让Windows电脑成为媒体存储设备
+https://www.williamlong.info/archives/6283.html	45028
+<p>　　由于电视盒子和智能电视的种种限制，导致很多视频无法在电视上播放，需要使用外部存储设备，例如U盘、移动硬盘、NAS等等，对于多个电视终端设备来说，移动硬盘等插拔起来不方便，使用起来易损坏，NAS搭建较为麻烦，需要额外成本，实际上，Windows电脑通过一些操作和设置，可以实现类似NAS的相同功能，而无需再购买额外设备，这里就介绍以下设置和使用的方法。</p>
+<p>　　DLNA（Digital Living Network Alliance/数字生活网络联盟）是由索尼、英特尔、微软等发起成立的一套解决电脑、移动设备、消费电器之间互联互通的协议。它们的宗旨是&ldquo;随时随地享受音乐、照片和视频&rdquo;。它们的目标在于创建一套可以使得各厂商的产品互相连接，互相适应的工业标准，从而为消费者实现数字化生活。</p>
+<p>　　DLNA与苹果的AirPlay功能比较类似，协议也大体相同，他们都可以让用户电脑或其他设备中的媒体内容连接到电视屏幕里，用户只要智能电视支持AirPlay或DLNA，即在智能电视上观看同一个局域网下的某个设备上的视频。</p>
+<p style="text-align:center"><img alt="通过DLNA让Windows电脑成为媒体存储设备" src="/upload/6283_1.jpg" /></p>
+<p>　　先要保证电脑和智能电视或电视盒子同处于一个局域网下，智能电视要支持DLNA功能，例如小米电视和小米盒子就支持DLNA功能，在其内置应用&ldquo;高清播放器&rdquo;里，可以看到同一个网络下的DLNA设备。</p>
+<p>　　接着，我们需要在电脑上安装DLNA服务器，实际上，目前微软的Windows 10操作系统已经集成了DLNA服务器，也就是Windows Media Player软件，只需要做一些简单的设置接口。</p>
+<p>　　在&ldquo;设置&rdquo;-&ldquo;网络和Internet&rdquo;-&ldquo;共享选项&rdquo;-&ldquo;网络和共享中心&rdquo;里，如果媒体流未启用，则点击&ldquo;启用媒体流&rdquo;。</p>
+<p>　　第一，首先保证系统为Windows7以上系统的Windows Media Player，打开&ldquo;网络和共享中心&rdquo;，点击左边的&ldquo;更改高级共享设置&rdquo;，在&ldquo;流媒体&rdquo;那一栏中点击&ldquo;选择流媒体选项&rdquo;然后点击&ldquo;启用&rdquo;。在弹出来的窗口中保持列表中的设备都是处于&ldquo;已允许&rdquo;的状态，然后点击&ldquo;确定&rdquo;。</p>
+<p style="text-align:center"><img alt="通过DLNA让Windows电脑成为媒体存储设备" src="/upload/6283_2.jpg" /></p>
+<p>　　第二，接下来打开Windows自带的Windows Media Player播放器，点击&ldquo;媒体流&rdquo;，勾选&ldquo;自动允许设备播放我的媒体&rdquo;，点&ldquo;组织&rdquo;-&ldquo;管理媒体库&rdquo;-&ldquo;视频&rdquo;，将电脑上的视频文件都集中在一个文件夹里，然后将这个文件夹添加到库中。</p>
+<p style="text-align:center"><img alt="通过DLNA让Windows电脑成为媒体存储设备" src="/upload/6283_3.jpg" /></p>
+<p>　　完成以上两步后，就可以将Windows Media Player的&ldquo;媒体库&rdquo;中视频通过DLNA分享到处于同一个无线WIFI网络环境中智能电视或电视盒子了。</p>
+<p>　　在智能电视或电视盒子端，打开&ldquo;高清播放器&rdquo;，电视会自动搜索DLNA设备，如果设置都正常，会看到提示&ldquo;1个DLNA设备&rdquo;，点进去，选择&ldquo;视频&rdquo;-&ldquo;文件夹&rdquo;，即可看到电脑端的共享文件，点击视频文件即可播放。</p>
+<p style="text-align:center"><img alt="通过DLNA让Windows电脑成为媒体存储设备" src="/upload/6283_4.jpg" /></p>
+<p style="text-align:center"><img alt="通过DLNA让Windows电脑成为媒体存储设备" src="/upload/6283_5.jpg" /></p>
+<p>　　经过上面的设置，我们的电脑就会变成一个类似NAS的设备，可以共享指定文件夹的视频，我们只要电脑硬盘足够大，里面放多少视频都可以在电视上播放。</p>
