@@ -1,0 +1,38 @@
+➜本该提高效率的组件库，最后为什么成了效率杀手？
+https://www.uisdc.com/component-library	61012
+<p><span class="img-zoom"><img alt="本该提高效率的组件库，最后为什么成了效率杀手？" class="alignnone size-full wp-image-399712" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc、-zj-20201209-1.jpg" width="940" height="400" /></span></p>
+<p>年中的时候作为评委参加了公司设计通道晋升评审，完整的听了10位同学的工作汇报和个人总结，果然不出所料，每个同学汇报里都或多或少涉及到“设计规范”或“组件库”的这么一个模块。</p>
+<p>本想着平静的听完打个酱油就完事了，但还是没忍住问了其中一个同学：“你们平时是怎么用组件库协作的？”具体答案记不清了，我转译一下，大概的意思是他会约束几个元素，比如按钮 / 圆角 / 字体字号规范设计稿，其余的地方需要就自由发挥。</p>
+<p>显然这个答案我是不买单的，反而带来了关于组件库的几个问题和思考：</p>
+<p><span class="img-zoom"><img alt="本该提高效率的组件库，最后为什么成了效率杀手？" class="alignnone size-full wp-image-399714" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc、-zj-20201209-3.jpg" width="940" height="300" /></span></p>
+<p>设计管理是门学问（对设计工作的管理，不是对人的管理哈），一定程度上细节是不影响大局的，这就好比地球上的人分白种人 / 黄种人 / 黑种人，尽管每一个白种人的长相各不相同，但放在亚洲的任何一个国家你都能第一时间分辨出来种族的不同，他们的特征是肤色（品牌色），身材（造型）跟发型 / 手饰是否统一基本没有关系，可不要拿了芝麻丢了西瓜。</p>
+<p><span class="img-zoom"><img alt="本该提高效率的组件库，最后为什么成了效率杀手？" class="alignnone size-full wp-image-399715" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc、-zj-20201209-4.jpg" width="940" height="300" /></span></p>
+<p>大多数同学都有患得患失的心理，认为准备足够多的组件就可以应对所有问题，像乐高的零件一样可以快速拼装完成各类需求，同时保证了一致性。</p>
+<p>但理想终归是理想。试想一下家里，是否堆砌了各种看似有用实则没卵用的东西以备不时之需？以我自己为例，家里的购物袋堆满了一个橱柜，我对这些袋子的规划有2方面，一部用途是装垃圾，另外一部分用途是外出装些杂物。结局跟你想的一样，购物袋占据了我家2平方米的位置，也就是说我用价值10w的体积容纳了不足20块钱的垃圾…</p>
+<p><span class="img-zoom"><img alt="本该提高效率的组件库，最后为什么成了效率杀手？" class="alignnone size-full wp-image-399716" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc、-zj-20201209-5.jpg" width="940" height="300" /></span></p>
+<p>这件事情让我明白一个道理，具备再生或持续发展能力的事或物，不要留恋。毕竟不是稀有资源，囤积真没必要，该清理就清理，组件库也是这样。</p>
+<p>进入正题前，容我再啰嗦一下基本规范，UI设计本质无非就是对信息的编排 ，只需要想清楚“信息”和“编排”，整个UI的规则也能明确很多。所以试着去拆解下这两个key word：</p>
+<p><span class="img-zoom"><img alt="本该提高效率的组件库，最后为什么成了效率杀手？" class="alignnone size-full wp-image-399717" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc、-zj-20201209-6.jpg" width="940" height="540" /></span></p>
+<p>信息这块不需要废话了，重点说下排布中的间距。间距的设置往往是屯余的引子，大毛病从来都是小事积累出来的，要想治标还得治下本，如下图：</p>
+<p><span class="img-zoom"><img alt="本该提高效率的组件库，最后为什么成了效率杀手？" class="alignnone size-full wp-image-399718" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc、-zj-20201209-7.jpg" width="940" height="973" /></span></p>
+<p>通常的间距是按照线性增长的方式，遵循NX的公式（N为最小单元）。坦诚地讲线性增长的方式有点像温水煮青蛙，递进的元素太小，所以感觉加一个就加一个了，让人滋生了无所谓的念头。打消这个念头的方式就是用指数增长去取代线性增长，合理的控制间距梯度，一定程度上会节制屯余。</p>
+<p>另外要运用好 design token （设计编码 / 密钥）的方式去帮助我们管理元素，这个概念是2014年Salesforce提出来的，token已经成为了许多设计系统中必不可少的部分。常用的方式就是按照衣服号去编码，通过“S”“L”“M”的代号赋予界面呼吸感。同理，其他的小微组件也同样可以用编码的方式去管理。不用担心不够用，毕竟这些尺码满足着全球70亿人的穿衣需求，你的间距还能多过70亿人的身材么？</p>
+<p>基础说完了，开始进入正题，如果你也遇到了上述类似的问题，那么可以带着审视的目光来看待组件库，我建议可以从以下两个方面重新思考：</p>
+<p><strong>1. 增加仓库类型，强化临时仓库</strong></p>
+<p>像 Ant Design / Salesforce 这种重量级的组件库一般是开放通用型组件，不一定完全贴合我们自身业务，所以做好组件库的分类是对基础的夯实。</p>
+<p><span class="img-zoom"><img alt="本该提高效率的组件库，最后为什么成了效率杀手？" class="alignnone size-full wp-image-399719" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc、-zj-20201209-8.jpg" width="940" height="774" /></span></p>
+<p>区分这三个类型非常的简单，只要你玩过王者荣耀就可以轻而易举的明白：</p>
+<p><span class="img-zoom"><img alt="本该提高效率的组件库，最后为什么成了效率杀手？" class="alignnone size-full wp-image-399720" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc、-zj-20201209-9.jpg" width="940" height="1094" /></span></p>
+<p>这个图应该都用不着我再解释了哈哈哈哈，重点说下临时型组件分类吧，这种组件定位是针对突发状况的应对策略，属于定制型组件，只针对你当前遇到场景，未必是可以有复用价值。所以这种组件虽然价值不低，但恰恰是组件库的癌细胞，特殊场景永远不会少，如果草率的归类到业务型组件，会越积越多，越积越庞大，严重的时候甚至会影响整个组件库的迭代升级。放在临时型分类里有需求再召唤也不失是一种办法。</p>
+<p><strong>2. 封装workflow，降低操作精度</strong></p>
+<p>组件颗粒度太细会导致操作的精度无限度的加大，提高效率的同时又在折损效率，莫不如精进一步，把封装组件变成封装工作流（workflow），从另一个角度来看是从交互设计的思路去做UI设计组件，这种做法会极大的解放生产力，特别是针对多端设备做设计的时候，可真是一键适配iOS / android / 小程序 / H5等等。</p>
+<p><span class="img-zoom"><img alt="本该提高效率的组件库，最后为什么成了效率杀手？" class="alignnone size-full wp-image-399721" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc、-zj-20201209-10.jpg" width="940" height="1762" /></span></p>
+<p>上图是以登录为例，同样的流程封装可以用在电商应用的“账号管理”“地址管理”“城市选择” / 社交应用的“评论回复”等等场景里。</p>
+<p>这块我推荐体验下苹果的“捷径”，workflow的历史也很久了，可以通过这款APP去再次理解一下极致的生产力。</p>
+<p><span class="img-zoom"><img alt="本该提高效率的组件库，最后为什么成了效率杀手？" class="alignnone size-full wp-image-399722" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc、-zj-20201209-11.jpg" width="940" height="1007" /></span></p>
+<p>封装workflow的做法也是避免微观管理的措施之一，还是那个观点分的太细很容易造成精力不聚焦，手忙脚乱的去拼每一个细节，稍微宏观的东西反而被搁置了。</p>
+<h4><span class="auto_menu">总结一下</span></h4>
+<p>丘吉尔曾经说过，“改变就是改善”，而“完美就是经常改变”。如果我们过于严格的一致性实施“非一既二”可能会导致更大的麻烦，甚至会让我们将停止创新。组件库也是相同的道理，定制化组件没有类别就没必要硬塞到通用或者业务里面，单独拎出来放着让需求证明价值也是一个办法。</p>
+<p>[link https://www.uisdc.com/b-side-component-library]</p>
+<p>欢迎关注作者微信公众号：「负能量补给站」</p>
+<p><span class="img-zoom"><img alt="本该提高效率的组件库，最后为什么成了效率杀手？" class="alignnone size-full wp-image-397377" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-vi-20201122-1.jpg" alt="钉钉对沟通效率的执着，为什么让人反感？" width="180" height="179" /></span></p>
