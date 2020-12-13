@@ -5,9 +5,9 @@ https://www.williamlong.info/archives/6283.html	45028
 <p>　　DLNA与苹果的AirPlay功能比较类似，协议也大体相同，他们都可以让用户电脑或其他设备中的媒体内容连接到电视屏幕里，用户只要智能电视支持AirPlay或DLNA，即在智能电视上观看同一个局域网下的某个设备上的视频。</p>
 <p style="text-align:center"><img alt="通过DLNA让Windows电脑成为媒体存储设备" src="/upload/6283_1.jpg" /></p>
 <p>　　先要保证电脑和智能电视或电视盒子同处于一个局域网下，智能电视要支持DLNA功能，例如小米电视和小米盒子就支持DLNA功能，在其内置应用&ldquo;高清播放器&rdquo;里，可以看到同一个网络下的DLNA设备。</p>
-<p>　　接着，我们需要在电脑上安装DLNA服务器，实际上，目前微软的Windows 10操作系统已经集成了DLNA服务器，也就是Windows Media Player软件，只需要做一些简单的设置接口。</p>
+<p>　　接着，我们需要在电脑上安装DLNA服务器，实际上，目前微软的Windows操作系统已经集成了DLNA服务器，也就是Windows Media Player软件，只需要做一些简单的设置接口。</p>
 <p>　　在&ldquo;设置&rdquo;-&ldquo;网络和Internet&rdquo;-&ldquo;共享选项&rdquo;-&ldquo;网络和共享中心&rdquo;里，如果媒体流未启用，则点击&ldquo;启用媒体流&rdquo;。</p>
-<p>　　第一，首先保证系统为Windows7以上系统的Windows Media Player，打开&ldquo;网络和共享中心&rdquo;，点击左边的&ldquo;更改高级共享设置&rdquo;，在&ldquo;流媒体&rdquo;那一栏中点击&ldquo;选择流媒体选项&rdquo;然后点击&ldquo;启用&rdquo;。在弹出来的窗口中保持列表中的设备都是处于&ldquo;已允许&rdquo;的状态，然后点击&ldquo;确定&rdquo;。</p>
+<p>　　第一，首先保证系统为Windows 7以上系统的Windows Media Player，打开&ldquo;网络和共享中心&rdquo;，点击左边的&ldquo;更改高级共享设置&rdquo;，在&ldquo;流媒体&rdquo;那一栏中点击&ldquo;选择流媒体选项&rdquo;然后点击&ldquo;启用&rdquo;。在弹出来的窗口中保持列表中的设备都是处于&ldquo;已允许&rdquo;的状态，然后点击&ldquo;确定&rdquo;。</p>
 <p style="text-align:center"><img alt="通过DLNA让Windows电脑成为媒体存储设备" src="/upload/6283_2.jpg" /></p>
 <p>　　第二，接下来打开Windows自带的Windows Media Player播放器，点击&ldquo;媒体流&rdquo;，勾选&ldquo;自动允许设备播放我的媒体&rdquo;，点&ldquo;组织&rdquo;-&ldquo;管理媒体库&rdquo;-&ldquo;视频&rdquo;，将电脑上的视频文件都集中在一个文件夹里，然后将这个文件夹添加到库中。</p>
 <p style="text-align:center"><img alt="通过DLNA让Windows电脑成为媒体存储设备" src="/upload/6283_3.jpg" /></p>
