@@ -1,0 +1,38 @@
+➜芯片研发过程中为什么要做HAST测试？
+http://www.sohu.com/a/423384867_99953098	14482
+<p>HAST测试【Highly Accelerated Stress Test】可检测芯片封装的耐湿能力，待测产品被置于严苛的温度、湿度及压力下测试，湿气是否会沿者胶体或胶体与导线架之接口渗入封装体从而损坏芯片。</p>
+<p>1. HAST测试流程</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201009/c604601dc9e84712a589d714f1c2516b.png" max-width="600"><span class="img-desc" style="font-size: 16px;">HAST测试流程</span></img></p>
+<p>2. HAST测试条件</p>
+<p>2.1 温度、湿度、气压、测试时间 HAST试验条件如下表所示：</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201009/584b3d9cc07b490a9d0b54f57a55d662.png" max-width="600"><span class="img-desc" style="font-size: 16px;">HAST测试条件</span></img></p>
+<p>➢ 通常选择瑞凯HAST高压加速老化试验箱RK-HAST-350，即：130℃、85%RH、230KPa大气压，96hour测试时间。</p>
+<p>➢ 测试过程中，建议调试阶段监控芯片壳温、功耗数据推算芯片结温，要保证结温不能过 高，并在测试过程中定期记录。结温推算方法参考《HTOL测试技术规范》。</p>
+<p>➢ 如果壳温与环温差值或者功耗满足下表三种关系时，特别是当壳温与环温差值超过 10℃时，需考虑周期性的电压拉偏策略。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201009/72ff036f315c4f8e9d32751c2f1328bc.png" max-width="600" /></p>
+<p>➢ 注意测试起始时间是从环境条件达到规定条件后开始计算；结束时间为开始降温降压操 作的时间点。</p>
+<p>3. HAST设备</p>
+<p>➢ 高温、高压、湿度控制试验箱（HAST高压加速老化试验箱）——温度、湿度、气压强度范围可控，测试时间可控。</p>
+<p>4. 失效判据</p>
+<p>➢ ATE\功能筛片有功能失效、性能异常。</p>
+<p>5. HAST测试注意事项</p>
+<p>➢ 测试过程要求每天记录电源电压、电流、环境温度、壳温(推算结温)等关键数据。</p>
+<p>➢ 注意芯片内部模拟电路是否有上电默认开启的模块，这样的模块会导致静态电流太大，引起其他机制的失效。</p>
+<p>➢ 调试过程注意，考虑到较大的电流引起压降，电压等的记录应该是到板电压，而不是电源源端电压。</p>
+<p>➢ 调试过程注意，室温条件下的电源电压与规定要求下的电源电压不同，可以在室温下初调，待试验环境到达HAST设定条件后做最终调试。</p>
+<p>东莞市瑞凯环境检测仪器有限公司是生产销售HAST试验设备的厂家，在20余年发展过程中不断开拓创新的HAST测试设备，为芯片行业提供高品质的产品。</p>
+➜HAST为什么能代替THB做微电路失效测试？
+http://www.sohu.com/a/423410248_99953098	21735
+<p>近几年THB对微电路没那么有用了，因为芯片的封装质量提高了：要获得有用的结果，可能要经过数千小时的可靠性试验，因此需要高加速应力试验。</p>
+<p>高加速应力试验(HAST)是在湿度环境中评价固态器件的非气密性封装。这一试验用高温(通常为130℃)、高相对湿度(约85%)、 高大气压条件(达2-4atm)来加速潮气通过外部保护材料或芯片引线周围的密封。这一试验是要加速有关金属化腐蚀、材料界面处的分层、线焊失效和绝缘电阻下降等的失效机理。</p>
+<p>HAST发现的失效机理类似于THB，但其加速速率更快。有些器件生产厂对已知潮湿敏感度的批次进行了比较，确定失效是由相同的失效模式引起，对这些批次用HAST试验代替THB。用加速度因数根据HAST试验结果推导出等效的THB失效结果。</p>
+<p>进行加速试验时，最关心的话题就是加速系数的问题。比如进行THB试验条件为85"C 85%RH的试验，如果改用采用HAST试验时的加速系数为多少。选择适用于阿伦纽斯模型的失效现象进行耐湿性试验，湿度采用同样的相对湿度(85%RH)， 这样可以假定反应速度只与温度变化有相关关系。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201009/11a717f40bf349bc92134e0373bb5f18.jpeg" max-width="600"><span class="img-desc" style="font-size: 16px;">瑞凯仪器-HAST试验箱</span></img></p>

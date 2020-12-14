@@ -1,0 +1,24 @@
+➜PCB电路板温度循环测试原理与标准
+http://www.sohu.com/a/428880882_99953098	8151
+<p>1、测试原理</p>
+<p>通常温度循环的测试模块为孔链路设计，通过蚀刻导线将多个孔串联构成一个阻值在0.5欧姆左右的回路，测试时测量链路两端的电阻，来监控测试后电阻变化。更为简易的测试方法是直接用PCB板子进行测试，测试结束后切片取样确认样品是否合格。</p>
+<p>2、测试条件</p>
+<p><strong>温度循环试验箱</strong>通过电加热和液氮冷却来实现高低温循环，按照IPC-TM650-2.6.7.2的测试条件见表1，要注意温度循环试验箱需在两分钟内完成升温及降温。通常根据所使用的板材类型来选择测试条件，最常用的是条件D，温度范围为-55℃~ 125℃。</p>
+<p>3、温度循环测试步骤</p>
+<p class="ql-align-center"><img src="http://p7.itc.cn/images01/20201102/e48db8c7b2fa43e595e54e1d65585202.jpeg" max-width="600"><span class="img-desc" style="font-size: 16px;">温度循环测试步骤</span></img></p>
+<p>4、温度循环的接收标准</p>
+<p>IPC默认的标准是冷热循环测试100循环，前后的电阻变化(增加)不超过10%，并且冷热循环后切片满足IPC Table 3-9。温度循环测试后常见的缺陷表现为镀铜裂纹，IPC6012C 2级、3级标准不允许出现镀层裂纹。</p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201102/fae0292c02294b98b78253befc43754b.jpeg" max-width="600"><span class="img-desc" style="font-size: 16px;">E型及F型镀层裂纹示意图</span></img></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>通常温度循环测试的接受标准会根据客户的需求制定，表2是两个不同的终端客户对于温度循环测试标准，由此可见，不同的客户对温度循环测试的接受标准差异很大。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201102/4283aa671aa54c289664dea9b95ffd51.jpeg" max-width="600"><span class="img-desc" style="font-size: 16px;">冷热循环测试条件</span></img></p>
+<p class="ql-align-center"><img src="http://p1.itc.cn/images01/20201102/281d6ec56cab4bb79cc0d741dae3b7a3.jpeg" max-width="600"><span class="img-desc" style="font-size: 16px;">冷热循环测试标准</span></img></p>
+<p>5、温度循环测试的特点</p>
+<p>温度循环测试的特点是与常规的热应力测试相比，能够测试产品的长期使用可靠性，测试结果也有较好的一致性，但是这种方法不易检测内层铜与电镀铜连接点的失效，但是测试一个循环需要约35分钟，如果需要测试500循环，需要近20天的时间，无疑不利于快速响应客户的要求。</p>
