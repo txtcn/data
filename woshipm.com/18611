@@ -323,3 +323,1073 @@ http://www.woshipm.com/zhichang/4302006.html	6581
 <p>菜根老谭，微信公众号：CGLT_TAN，人人都是产品经理专栏作家。经历程序员、技术Leader、产品经理、研发Leader等多种岗位。关注医疗，早教领域，擅长企业IT架构及互联网产品架构。</p>
 <p>本文原创发布于人人都是产品经理。未经许可，禁止转载</p>
 <p>题图来自Unsplash，基于CC0协议</p>
+➜B端设计指南05——图标
+http://www.woshipm.com/pd/4301218.html	7549
+<blockquote><p>编辑导语：在B端设计中，往往离不开图标的设计。那么，设计图标都有哪些内容呢？关于B端图标设计的设计难点是什么？B端图标的搭建规范又是什么？带着这些疑问我们一起来看本篇文章，希望作者能够为你解答这些疑惑。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4301843" src="http://image.woshipm.com/wp-files/2020/12/EZI0LC6e9N9xRcIZn37h.jpg" alt="" width="900" height="420" /></p>
+<p>目前我主要深耕于B端设计中，深知B端图标设计与C端有很大的不同，无论是应用的场景、设计的理念，都有非常大的差异。</p>
+<p>而现在网上有不少关于C端图标如何图标绘制的文章，对于B端的方向少之又少，因此我们今天就来聊聊图标，聊聊B端图标究竟应该如何设计？</p>
+<p>在我们的设计元素中由 色彩 color、文字 font、图标 icon、图形 shape、空间 space 这五个部分组成，而图标的影响是整个产品的形象与气质，起着画龙点睛的作用。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/8dUavjHF3CDPqR9RwSiy.jpeg" alt="B端设计指南05-图标" width="801" height="348" /></p>
+<p>在图标的设计中，它既需要具备严谨的设计态度，同时还要兼顾设计效率。</p>
+<p>前者是提升产品的视觉表现，后者是节约企业开发成本，无论是我之前一篇文章讲到按钮，又或者是每个B端产品中的导航，都涉及到了图标。今天我就和大家来聊聊如何严谨高效的设计B端图标。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/5Q3vEg3EADgAWlMCozkp.png" alt="B端设计指南05-图标" width="803" height="116" /></p>
+<p>在设计系统中，基础组件与业务组件遍布系统的各个角落。</p>
+<p>因为大多数B端设计系统都是采取这样的核心思想去构建，这样更能够满足B端系统的实际工作需求，同时又能让设计系统真正落地，符合B端产品“复用”的设计理念，使每条产品线都能够高效的搭建。之后我会单独出一期设计系统的文章，咱们之后单独细讲。</p>
+<p>聊聊它们两的定义：</p>
+<ul>
+<li>基础组件：每一个产品中都可以进行复用，是搭建整个系统的基础；</li>
+<li>业务组件：需要满足特定产品的需求，同时在功能上，不会进行多场景复用，作为单独的模块进行分类。</li>
+</ul>
+<p>这种思维方式在我们团队中，被称为基础业务拆分法，运用到我们的每一个产品线中。</p>
+<p>还没理解到？我举一个例子，在Teambition Clarity Design，就按照相同的思路构建的设计系统。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/zKLPbsqIeJIGiG6KJor8.jpeg" alt="B端设计指南05-图标" width="1003" height="659" /></p>
+<p>在Teambition Clarity Design设计系统当中，所有组件都分为：基础组件、业务组件，我猜测正是通过这样的划分，才使得Teambition的设计系统能够适用于更多的业务场景，满足飞流、行云、thoughts、甘特图、协作全景等多条产品线的设计需求。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/c9oRgJ0DtQoNVlWBM8Ib.jpeg" alt="B端设计指南05-图标" width="1002" height="422" /></p>
+<p>回到图标当中，我们可以使用相同的思维方式，对图标进行相应的拆解分析。</p>
+<ul>
+<li>基础图标：属于整个B端图标当中的基石，主要是页面中最为基础的图标组成。</li>
+</ul>
+<p>比如：设置、编辑、搜索、时间日期等都属于基础图标，每个系统都必须有的基础图标，所以在绘制图标库的过程中，基础图标可以确定整个图标的性格[1]。</p>
+<p>[1] 图标性格：为图标整体给人的视觉感受（在本文第二章会着重讲到）</p>
+<ul>
+<li>业务图标：属于B端图标设计中的业务分支，和我们每个产品的业务模块都保持一致，通常是每个系统都会有一套独有的业务系统图标。</li>
+</ul>
+<p>比如：公海池、线索池、归属人管理、商机管理、客户管理等，都属于业务图标。业务图标主要是要求设计师能够进行快速拓展。</p>
+<p>当然基础图标与业务图标之间也并不是一尘不变的，很多业务图标在产品中频繁的使用会被提升到基础图标当中，同理使用减少也会进行相应的剥离。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/mn0T6rNmNkhxPAlAfonu.jpeg" alt="B端设计指南05-图标" width="996" height="455" /></p>
+<h2><span style="font-size: 16px;">一、B端的图标与C端平台图标的差异</span></h2>
+<h3>1. 图标内容不同</h3>
+<p><strong>1）B端图标求同</strong></p>
+<p>B端产品要与同类型的图标尽量保持表意一致，在图标表达形式上差距不要太大，相似性要高。</p>
+<p>因为B端产品的本质是满足客户对于工作、效率的需求，因而在B端图标中，需要与行业中的设计语言和思路保持高度的一致，做到图标之间 “形似”，这样用户在多个B端软件进行切换过程中，会减小用户的切换成本。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/K4DA8RemwepVAsIZRU4z.jpeg" alt="B端设计指南05-图标" width="800" height="361" /></p>
+<p><strong>2）C端图标存异</strong></p>
+<p>C端产品是要在同样的文字上进行形式上的求变，与别的产品形成个性差异。因为在目前的C端市场中，图标的同质化异常严重。</p>
+<p>想要图标独具一格，就必须突出自己的设计理念，让用户快速记住你这个品牌。因此需要考虑的是怎么样在同样的内容情况下，设计出更独特的图标风格。</p>
+<p>比如在下面的例子中，就是因为C端追求风格的原因，追赶者都会紧贴行业头部的设计风格，在设计风格上做到 “神似”，但是在每一个图标的内容上，他们都会存在巨大差异。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/M5y14UdVJjfZHyLr1ZF7.jpeg" alt="B端设计指南05-图标" width="801" height="1001" /></p>
+<h3>2. 设计难点不同</h3>
+<p><strong>1）B端变化多</strong></p>
+<p>B端图标的设计难点在于业务名称复杂且多变，在B端图标的设计场景中，会与各种业务名称进行关联，因而需要去思考每个业务所表达的特殊含义，遇到各种生僻字与英文缩写时，图标往往是需要去多维度的探究与思考。</p>
+<p>比如：在B端云产品当中，MySQL、MongoDB、SQL Server 是常见的云产品，如果你是第一次接触，需要去深入理解业务才能够准确去表达图标的含义，去理解每一个图标在行业当中设计的形式并加以设计。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/ZlH313XmSsWZCoeSHe2f.jpeg" alt="B端设计指南05-图标" width="801" height="334" /></p>
+<p><strong>2）C端趣味强</strong></p>
+<p>C端图标更多偏向与趣味性的表达，比如大多数的图标会采用去做图标视觉上的优化，而不会去考虑业务层面的东西，也因此两者的难点也存在不同的差异。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/cYvGDQ3sO58zC20Lmmb6.jpeg" alt="B端设计指南05-图标" width="812" height="478" /></p>
+<p><strong>3）设计侧重点不同</strong></p>
+<ul>
+<li>B端讲究扩展性</li>
+</ul>
+<p>由于B端产品使用图标场景较少，但在图标的数量上会比C端图标多上好几倍，同时你还需要使用图标去表达不同业务间的关系，因此B端图标更讲究 扩展性。</p>
+<p>比如同样是流程申请，在快递信息流程申请、采购备料流程申请、采购流程申请的图标之间，需要存在一些相同点与不同点，这就需要你多去思考，在同时来了多个图标设计需求时，如果通过分区实现图标的快速设计。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/4ozI8bQrxrGY42qPP75l.jpeg" alt="B端设计指南05-图标" width="804" height="327" /></p>
+<ul>
+<li>C端讲究整体性</li>
+</ul>
+<p>C端图标虽然图标数量较少，但是使用图标的场景却又十分复杂。</p>
+<p>比如品类区、我的页面中、各种功能图标以及二级页面图标，因此需要通过整体性的考虑，将多场景的图标进行串联，形成一整套视觉图标体系。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/fv1oYiD5aQxB9QQJNEHu.jpeg" alt="B端设计指南05-图标" width="806" height="493" /></p>
+<p><strong>4）设计风格不同</strong></p>
+<ul>
+<li>B端更直接</li>
+</ul>
+<p>B端产品因为用户的屏幕显示参差不齐，会直接影响设计师对于颜色的直接判断，较细的图标会直接影响用户的阅读体验，因此图标形式建议多采取面性图标或者2px的线条图标，能够增加图形的识别度。</p>
+<p>图标的对比度需要满足W3C的AA、AAA原则，用户才能更好的识别。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/5drUiK0ool4CzEarJyhd.jpeg" alt="B端设计指南05-图标" width="803" height="570" /></p>
+<ul>
+<li><strong>C端更多元</strong></li>
+</ul>
+<p>C端产品因为手机屏幕分辨率的不断进步，已经进入高分辨率时代，手机屏幕色彩也更加地准确，因此图标的视觉风格会更加多元，更能让视觉设计师得到一个很好的发挥。</p>
+<h2>二、B端图标规范</h2>
+<p>在B端图标设计中，我们一直在追求系统、高效、高质量地输出。</p>
+<p>一方面对于B端产品而言，往往优先聚焦于主要流程的核心体验， 图标往往是低优先级的需求；另一方面，出现不统一、不美观的图标，无一例外都是在损耗着用户对于产品的体验与感受。</p>
+<p>比如最近设计圈的 “有赞审美缺失部”事件，也从正面反应了B端设计师对于图标的认识不够清晰，但透过现象看本质，是有赞部门对于图标规范的缺失。因此，B端的图标规范就显得尤为重要。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/eovjyp14egjdIAgLbVBe.jpeg" alt="B端设计指南05-图标" width="507" height="1106" /></p>
+<p>我们再从图标出发，从宏观上讲，图标是一门全球通用的“符号语言”，而在每一种语言当中，必定会有它的“语法”以及“单词”，图标中的“语法”与“单词”一般包含有那些呢？</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/6HXcVfriOWILFp8mDiYq.jpeg" alt="B端设计指南05-图标" width="1002" height="406" /></p>
+<h3>1. 图标中的“语法”</h3>
+<p>它就是我们常见的图标规范文档。一般需要包含：设计原则、轮廓模版、操作热区、命名规则。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/LMxXbeBuzfdpltO2x2QJ.jpeg" alt="B端设计指南05-图标" width="1004" height="343" /></p>
+<p><strong>1）设计原则</strong></p>
+<p>在设计原则中，一般是贯穿整个产品的始终，因此需要设计师深入提炼，设计原则能够帮助我们确定产品方向，通过设计原则的落地，有利于我们高效做出决策。</p>
+<p>在图标的设计原则中，主要通过设计的核心理念进行传达，例如在Antdesign中，确定了图标设计的四条原则。</p>
+<ul>
+<li>准确：设计造型准确的图标（保持偶数原则，去小数点）；选择表意准确的图标，不对用户的认知造成困扰；</li>
+<li>简单：在表意清晰准确的基础上，尽量保持图形的简洁，不做多余的修饰；</li>
+<li>节奏：挖掘构图中的秩序之美；</li>
+<li>愉悦：赋予适度的情感。</li>
+</ul>
+<p><strong>2）轮廓模版</strong></p>
+<p>轮廓模版是为了明确图标视觉尺寸。我们通过 Keyline作为形状的基础，去规范我们图标的核心形状，这样能够帮助我们设计出大小统一的图标，在多条产品线之间也能保证统一的视觉重量。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/wzPUXQijWH6VZfMPfT7V.jpeg" alt="B端设计指南05-图标" width="1002" height="568" /></p>
+<p><strong>3）操作热区</strong></p>
+<p>这是经常被B端设计师忽略的的细节：</p>
+<p>一方面操作热区最开始兴起于移动端，不知道大家还记得一句很经典的话吗？“iOS的最小操作热区为44px，安卓则为48px”；另一方面到了桌面端后，因为屏幕分辨率的不同，没有规定最小操作热区。</p>
+<p>但受到文字落地方式[2]的限制，12px渐渐成为大家公认图标操作热区的最小值。</p>
+<p>[2]落地方式：因为在Chrome浏览器中，文字受到浏览器大小的限制，最小的字体为12px，而在12px中的文字，与12px的图标搭配最为合适，图标都会与文字进行搭配使用，所以12px为PC端图标最小尺寸。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/Efn6q11eHBtOj786jRyP.jpeg" alt="B端设计指南05-图标" width="995" height="409" /></p>
+<p><strong>4）命名规则</strong></p>
+<p>命名规则是属于一项最为基础的技能，一般有经验的设计师都会有他自己的一套命名规则，而在图标规范中，需要明确多项目之间有哪些不同。</p>
+<p>比如每个产品项目有自己单独的后缀，在公共的基础图标部分又使用相同的命名规则，这样既能够让图标应用到各个产品，同时每个图标之间也能追寻到最终的源头。</p>
+<p>比如常见的命名规则：组件_类别_功能_状态，但是在B端产品中通常为：组件_类别_状态，这里将大量的组件、类别、状态的英文命名都集合到一起，建议收藏。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/Il9bHjotn59qK1iE9e11.jpeg" alt="B端设计指南05-图标" width="804" height="1312" /></p>
+<h3>2. 图标中的“单词”</h3>
+<p>它是我们常见的图标资源。一般由：图标性格、图标场景两部分组成。</p>
+<p><strong>1）图标性格</strong></p>
+<p>在图标的设计中，图标性格尤为重要。我们要根据自身产品特性，选择与特性相匹配的图标性格。</p>
+<p>我将图标的所有性格罗列出一个坐标轴，通过图标的粗细以及图标圆滑程度的不同，将图标分为四种不同的风格：粗旷、可爱、精致、商务。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/RAZlDfzxEaVPpCFFjiO0.gif" alt="B端设计指南05-图标" width="640" /></p>
+<p>在B端图标设计中，粗旷与商务是更适合的图标性格。在图标性格的选择中，我们要与产品的设计理念相融合。通过对图标性格的确立，我们也能更好的缩小范围减少设计资源浪费。</p>
+<p>ps：当然你应该根据自身产品的视觉表现进行相应优化，拒绝生搬硬套。</p>
+<p><strong>2）场景不同含义不同</strong></p>
+<p>图标是一门全球通用的“符号语言”，所以也具有多语意的特性，一些语言在不同的场景有着截然不同的意思。图标也一样，我们需要根据不同的场景去表达不同图标的含义，因此就需要对B端图标的场景进行一个系统梳理。</p>
+<p>先来看一个例子：</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/NJZQCx2GFcgawpl9qTIo.jpeg" alt="B端设计指南05-图标" width="809" height="218" /></p>
+<p>在这个例子中，相同的五角星在不同的场景对应着不同的意思，比如在淘宝详情页中星星代表着收藏；在美团点评中代表着每一个评价的评分，这样场景的不同含义也不同也，因此我们需要去梳理B端图标的场景：</p>
+<ul>
+<li>基础组件场景 &#8211; 象形图标</li>
+</ul>
+<p>在文章开始“咱们老规矩”中讲到：基础组件与业务组件之间的差距，这里就不再赘述两者区别。</p>
+<p>B端产品中，基础组件需要涉及很多图标，比如：日期组件中，需要有日期图标作为组件的属性展示；下拉菜单中，需要有一个下拉箭头来代表。而这些基础组件中都使用基础图标，又因为这些图标都采取象形的手法简化而来，因此基础图标大多数为象形图标。</p>
+<p>象形图标：象形图标是根据实际生活中物体的提炼所得，比如我们说的编辑，是通过铅笔象形而来，经过大家对于铅笔编辑的不断理解，久而久之形成；筛选是通过漏斗象形而来；在象形图标的设计中，需贴合真实使用场景。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/6p8xGWEA4A9URJSVWln8.jpeg" alt="B端设计指南05-图标" width="901" height="464" /></p>
+<ul>
+<li>运营模块场景 &#8211; 表意图标</li>
+</ul>
+<p>通常出现在各种插件市场以及运营商城的页面中。也是B端产品盈利的一个关键所在，在行业内常说的一句话：“Saas产品基本不挣钱，就是交个朋友，挣钱全靠后期运营与维护”。</p>
+<p>因此，在运营模块使用的图标也格外被重视，比如我举几个例子，他们在运营模块中，都采取了“表意图标”进行展示。</p>
+<p>表意图标：</p>
+<p>表意图标是生活中原本不存在的物体，通过不断发展，大家将某类东西约定俗成创造出的一个图标，通常表示某类事物或某类行为比如：砍价、社群等等。</p>
+<p>要提醒大家的一点，这类图标基本都是约定俗成，所以在设计上不要有过多变动，以免让用户感到疑惑。</p>
+<ul>
+<li>专业性场景 &#8211; 文字图标</li>
+</ul>
+<p>在B端图标场景中，还存在一类特别专业性的图标，这类图标在行业中往往没有约定俗成的表达形式，而在设计表达上，也无法去使用简单的图形，因此使用图标存在很大认知成本。比如：拼团、清仓。</p>
+<p>这时最好的解决办法就是将相应的专业词汇文字化，使用“文字图标“将关键词表示出来。</p>
+<p>文字图标是使用文字化的图标直接表达含义，在一些垂直专业领域，常用文字的缩写形式进行表达。比如美团外卖中的“打折”作为大众都需要使用的一个图标，很难去使用图形符号去描述。</p>
+<p>因此使用“折”就能够准确直接的表达，文字图标虽然使用起来过于简单粗暴，但是它的信息传达比其他形式要高，因此在B端环境复杂的图标生态中，是常用的方式。</p>
+<p>而在现在很火的下沉市场中，也多采取文字图标的形式，这样不会因为用户的认知水平的高低产生立即上的偏差。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/1Tze7bUqFGUdY21DfMKx.jpeg" alt="B端设计指南05-图标" width="808" height="407" /></p>
+<ul>
+<li>导航菜单场景 &#8211; 组合图标</li>
+</ul>
+<p>组合图标在B端场景中经常存在，因业务复杂，常常需要将图标进行公用，同时进行相应的思考，关于组合图标与场景我会在第三章讲到，这里就不细细展开。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/jzyiT02SfShvYWwEhpJC.jpeg" alt="B端设计指南05-图标" width="807" height="2445" /></p>
+<h2>三、B端图标如何搭建规范</h2>
+<h3>1. 根据公司不同阶段进行搭建</h3>
+<p>在团队中建立一整套图标规范通常会有两种模式：开源与自主搭建，我会从效率、品牌、完整度三个方面来进行分析与评价：</p>
+<p>开源图标：站在巨人的肩膀上，能够为自身产品建立一套快速的图标规范。</p>
+<p>通过图标库的引用，减少公司的设计成本，能够有较高的设计质量与效率，但使用开源图标主要针对的是公共业务，对于一些特定业务而言，会有相应的局限性，我会在第四章与大家独家分享一些开源高质量的B端图标库。</p>
+<ul>
+<li>效率：★★★★★</li>
+<li>品牌：★★★☆☆</li>
+<li>完整度：★★★☆☆</li>
+</ul>
+<p>自主搭建：自主搭建会拥有自己独特的视觉风格与表达形式，但需要耗费一定的设计成本，自主搭建是一个循序渐进、反复打磨的过程，也常会推翻重来，因此需要大量的时间人力成本。</p>
+<p>对于公司而言独特的符号语言更有利于产品的对外营销。但自助搭建更考验设计师的能力，如果能力欠佳，会得不偿失。</p>
+<ul>
+<li>效率：★★★☆☆</li>
+<li>品牌：★★★★★</li>
+<li>完整度：★★★★★</li>
+</ul>
+<p>明白了两种搭建方式后，在我们搭建B端图标规范之前，需要明确自身的产品的“定位”，根据产品的不同阶段，我们会采取不同方式进行规范的搭建。</p>
+<p>在我了解的产品阶段中，一般分为三种：初创期、成长期、成熟期</p>
+<ul>
+<li>初创期的产品：因为处于试探阶段，产品需要经常迭代，所以处于一个变化的节奏中。为了应对这种变化，引用开源图标库便成为一种较好的解决方式；</li>
+<li>成长期的产品：成长期的产品会从混乱到逐渐的稳定。设计师也会逐渐意识到产品的整体形态以及后续的规划方向。这时候就需要整体考虑，去优化掉初创期所遗留下的问题，同时提升产品的设计竞争力；</li>
+<li>成熟期的产品：成熟期的产品需要构建一套自己的方法论。并且要脱离图标这个单一维度。去多维度多层次的思考，通过自主搭建，形成多条产品线的统一，建立完整成熟的设计系统来满足业务发展的需要。</li>
+</ul>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/9jUqYwjci07cema1LDs5.jpeg" alt="B端设计指南05-图标" width="1008" height="481" /></p>
+<h3>2. 图标资源如何设计</h3>
+<p>在图标资源设计当中，我把图标分为基础图标与业务图标的分类进行讲解，让大家能够更好理解。</p>
+<p><strong>1）基础图标</strong></p>
+<p>在我们的基础图标中，保证图标性格一致的前提下，又牵涉到直角拐角以及图标粗细等设计细节，因此在这里和大家细讲这方面的内容。</p>
+<p>形大角大、形小角小。</p>
+<p>在基础图形设计中，圆角是一个经常被忽略的细节，我们要根据图形的面积大小去设计我们圆角的大小，而不是拿到图标就是2x的圆角，这时候就需要讲到图形与圆角之间的关系。</p>
+<p>当基础图形占的面积过大同时为正方形时，建议使用3x的圆角；当基础图形变小时，比如满高(宽)矩形时，建议使用2x的圆角。当基础图形为较小(小于1/2宽高)矩形时，建议使用1x的圆角。</p>
+<p>* 这里的3x是指与描边的大小比例</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/mMJsV2oLlKCda6lIesYR.jpeg" alt="B端设计指南05-图标" width="1007" height="414" /></p>
+<p style="text-align: center;">透视正确</p>
+<p>在图标的透视中，优先选用正视的图标进行绘制，这样能够保证图标库的风格一致但对于有些图标不能通过正视角度进行表达时，使用立体图标表示，一样符合透视一致性的原理，但需要极力避免。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/Vr0uY52t4WMQY5ad8uHs.jpeg" alt="B端设计指南05-图标" width="801" height="329" /></p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/eSsY6iOL3hwexZA8u4eB.jpeg" alt="B端设计指南05-图标" width="802" height="1196" /></p>
+<p><strong>2）业务图标</strong></p>
+<p>业务图标因其特殊性，一般都为组合图标，通常组合形式为A+B+C的模式，如果采取单个图标绘制，难以保证图标的一致性，同时产出效率极低，因此业务图标会采取模块化的方式进行设计。</p>
+<p>业务图标在B端产品的菜单导航最为常见：比如在我接手到的CRM产品中，一共有50多个业务图标，你是单一思考还是全局思考，就显得尤为重要。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/7qvKFfIW50aAI9EZvwb1.jpeg" alt="B端设计指南05-图标" width="806" height="362" /></p>
+<p>我将图标模块化的方法分为以下几步：</p>
+<p>第一步：拆解整理</p>
+<p>当我们拿到需求时，因为图标数量庞大，所以需要寻找到图标中的共性与个性。</p>
+<p>举个例子：销售简报管理、销售订单管理、销售权限管理、销售公海池管理、业务销售插件、商机销售阶段，他们基本都是头部以销售开头，最后都会跟一个管理进行动作的描述。而中部的描述不同，也会在产品中的其他部分找到与之对应的文案。</p>
+<p>因此我们就发现了图标当中的一个共性，而在一个庞大的B端图标库中，有这样的共性的地方还有很多，我们通过一点点的拆解整理，整理出一个图标间共性表格，完成拆解整理的工作。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/Z6Hjyzk90mpqEELvVAmN.gif" alt="B端设计指南05-图标" width="992" height="558" /></p>
+<p>第二步：模块分区</p>
+<p>通过模块分区，了解到图标的结构，模块分区的思路来源于Ant Design 图标规范2.2 中讲到的图标韵律。</p>
+<p>在一次偶然的机会，看到Ant Design对于相同类型的图标给出想类似的展现形式，因此想到我们图标对于自身应该采取模块的方式进行分区。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/i9DzDeVhF93fSpEmQlbL.jpeg" alt="B端设计指南05-图标" width="997" height="377" /></p>
+<p>通过一周的时间总结，对于市面上大多数B端图标进行的拆解，我将整个模块分为三个区域：一个主分区与两个次分区。</p>
+<p>通过主次分区间的不同组合，能够满足绝大多数B端图标的使用场景。</p>
+<ul>
+<li>主图标：主要表达图标的主要功能，会根据业务不同产生不同的主图标；</li>
+<li>次图标：代表与主图标相对应的功能，比如常见的：管理、权限、规则。</li>
+</ul>
+<p>这样通过主、次图标的组合，就能够将组合图标进行高效的绘制。</p>
+<p>第三步：分区绘制</p>
+<p>使用分区绘制，落地分区的图标形式。</p>
+<p>在一个图标中，如果让你单一绘制例如销售、审批、数据等图标时，难度比杂糅到一起的组合图标要低，因此分区绘制会时图标的难度降低，可以让团队中其他水平较低的设计师一同参与。</p>
+<p>在绘制中，我们以24px大小的图标为例：</p>
+<ul>
+<li>主图标的大小为：16px</li>
+<li>次图标的大小为：8px</li>
+</ul>
+<p>按照相对应的大小尺寸，主图标在图形上要设计得更明确，因为外部还要与次图标进行叠加，同时需要在多个图标中出现同样的图形，也因此在造型上不能过于复杂。</p>
+<p>次图标以简洁为主，因为较小的面积，更多状态的展示，需要它能够简洁易识别，这样才使图标在叠加的过程中，使两者图标更具代表性。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/1GsfNwpyYB3uVWrL1FyH.jpeg" alt="B端设计指南05-图标" width="998" height="782" /></p>
+<p>第四步：细节调整</p>
+<p>因为是多个图标进行重叠形成，所以也会存在许多图标连接间细节毫无规律的情况，因此保留相应的细节，比如图标间的间距、图标未来的扩展性等。</p>
+<h2>四、市面上的图标规范、图标库与图标</h2>
+<h3>1. 图标规范</h3>
+<p><strong>1）Lightning</strong></p>
+<p>https://www.lightningdesignsystem.com/guidelines/iconography/</p>
+<p>salesforce是一个值得仰望的B端产品，而伴随着salesforce的不断发展，Lightning设计系统也不停地在迭代，Lightning中的图标规范不仅全面，而且落地，同时它也拥有500+个图标资源。</p>
+<p>关于图标规范，Lightning系统一直做到十分落地，因为Salesforce已经成型多年，设计规范一直十分稳定，关于它规范当中的每一个细节，都值得细细品味，感兴趣还可以去多研究设计系统的迭代更新记录，里面有宝藏～</p>
+<p><strong>2）ATLASSIAN</strong></p>
+<p>https://atlassian.design/foundations/iconography/</p>
+<p>ATLASSIAN在我心中一直是B端行业的头部产品，无论是产品还是设计，它旗下的Jira、Confluence、Trello，都有着很高的设计水准，同时作为多个产品的设计系统，它的包容性也值得大家去学习，可以多去实际页面去深入体验，会有很多不一样的收获。</p>
+<p><strong>3）Material Design</strong></p>
+<p>https://material.io/design/iconography/system-icons.html#icon-themes</p>
+<p>在B端产品中，为什么我不推荐apple又或者其他的设计语言，相比而言，Google的Material Design一直拥有着很高的水平。</p>
+<p>与实际情况相比，Material Desgin 设计的背景与B端实际情况十分类似，同样拥有着混乱的屏幕分辨率，亟待解决的页面层次，卡片化的设计思路，因为MD设计设计在对这些特殊情况都有深入的考虑。</p>
+<h3>2. 图标库</h3>
+<p><strong>1）REMIXICON</strong></p>
+<p>https://remixicon.com/</p>
+<p>Remix Icon是国人设计师章萧醇开源的一款图标库，目前这个图标库里共有2271个图标。图标涵盖建筑、商业、通讯、设计、文档编辑、财务、健康等十多种图标类型，可以直接下载SVG或PNG版本或者复制SVG代码。</p>
+<p>从图标质量上来看，Remix Icon的质量算是我见过开源图标库中最高，拥有线性和面性两种不同版本，两千多个的图标里，一定有你需要的～</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/G9ntq1q6ODx767FsSmCt.jpeg" alt="B端设计指南05-图标" width="1000" height="758" /></p>
+<p><strong>2）Fearher</strong></p>
+<p>https://feathericons.com/</p>
+<p>https://www.figma.com/file/dyJRSFTIajik4cdkcXN8yA3K/Feather-Component-Librar</p>
+<p>Feathericons是一个漂亮和简单的开源图标库，每个图标均以24&#215;24网格设计，它包含282个SVG图标，你可以使用右侧的设置去调整图标的粗细以及图标大小，你还可以通过单击网站右上角的月亮图标来切换明暗模式。</p>
+<p>如果你是Figma的用户，作者也提供了Figma插件，在使用上的体验会更加的友好。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/OO95MJ5hf6z67EpRgDFS.jpeg" alt="B端设计指南05-图标" width="1000" height="758" /></p>
+<p><strong>3）EVA Icons</strong></p>
+<p>https://akveo.github.io/eva-icons/#/</p>
+<p>Eva Icons是Eva Design System中的图标部分，一共有480个开源图标，分别以SVG和PNG格式展示。</p>
+<p>在图标类型上，你可以选线性和面形两种风格图标，很有趣的一点，你可以将鼠标Hover图标上去，你可以自己设定图标的动画效果，如：放大、晃动、翻转，这大概就是设计师的情怀吧～</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/oKGwmQeoOCOnFXMWAlZ8.jpeg" alt="B端设计指南05-图标" width="1005" height="762" /></p>
+<p><strong>4）heroicons</strong></p>
+<p>https://heroicons.dev/</p>
+<p>Heroicons是由Tailwind CSS的创建者构建的另一个很棒的开源图标库。它具有超过165个具有填充和轮廓样式的独立图标，但每个元素也提供深色和白色版本，图标的外观非常优质且制作精良。</p>
+<p>这些图标的入门非常简单，他们还提供了Figma中的库。如果你想包含所有的图标，你可以从公共资源库中下载所有的SVG文件。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/VKBYk78sQxmCkTdCuwSL.jpeg" alt="B端设计指南05-图标" width="1011" height="766" /></p>
+<p><strong>5）Ikonate</strong></p>
+<p>https://ikonate.com/</p>
+<p>最后但并非最不重要的是，Ikonate是另一个令人敬畏的开源图标库，它拥有约100个基于平面设计的高级图标。它是根据非常宽松的MIT许可证慷慨授权的。</p>
+<p>导出之前，你可以轻松配置图标的大小，边框宽度，边框和边角以及颜色。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/TJTkFGLoA25n0KJelEPI.jpeg" alt="B端设计指南05-图标" width="992" height="753" /></p>
+<p><strong>6）IconPark</strong></p>
+<p>http://iconpark.bytedance.com/</p>
+<p>字节跳动在9月3日开放的图标库，很大多数人都不知道，图标风格有线性、填充、双色、多色可选，图标质量也十分的高，支持批量下载，网站还处于初期，感觉目前还是针对内部人员使用，只是目前将其开源出来，效果还不错。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/NEBfBxXseZPBRY0tp0Fh.jpeg" alt="B端设计指南05-图标" width="1001" height="759" /></p>
+<p>因为篇幅关系，还有几十个图标资源网站放在http://youthce.com，这里就不做过多展示。</p>
+<h3>3. Iconfont上优质的图标资源</h3>
+<p>先说一句，由于iconfont的链接放到公众号后老是打不开，因此大家可以通过我提供的作者名称，进行iconfont 用户搜索找到。</p>
+<p><strong>1）阿里云设计中心</strong></p>
+<p>先这个是阿里云的账号，很多B端同学做云产品的可以多多参考：</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/yD5XHOu0ADtK1uoEZSp4.jpeg" alt="B端设计指南05-图标" width="1016" height="724" /></p>
+<p><strong>2）musongtao</strong></p>
+<p>他的OA办公系列图标给我留下了很深刻印象，之前也尝试过临过一些。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/DoeeF3abdCS5xMsi7JFR.jpeg" alt="B端设计指南05-图标" width="1002" height="714" /></p>
+<p><strong>3）Mokki</strong></p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/tL1ZAxd1vNFKl6Wzd0Mp.jpeg" alt="B端设计指南05-图标" width="1000" height="713" /></p>
+<p><strong>4）Hi刘老爷</strong></p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/VzdjKWNNvpyEo4BV3dYC.jpeg" alt="B端设计指南05-图标" width="993" height="708" /></p>
+<p><strong>5）iconfont 官方图标库</strong></p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/qDS5FZYKM94hu7hVjqZ1.jpeg" alt="B端设计指南05-图标" width="1005" height="716" /></p>
+<h2>五、图标发展史</h2>
+<h3>1. 远古时期-图片与雪碧图</h3>
+<p>之前，在与一些设计前辈聊天时，谈到过这个话题，那时候的图标还原都采取图片的形式，随着网站页面不断增加，大家就会发现图片十分占据请求资源：</p>
+<p>一方面网页中每当有一个图标都会去请求一次请求频率十分的高，另一方面图标本身体积很小，这样频繁请求后台服务器会成承受更大的压力，这样显然是不划算的，随后雪碧图就出现了。</p>
+<p>雪碧图：就是将多个图标合成成为一个图表，然后前端利用 css 的 background-position 定位去显示不同的 icon 图标。虽然解决频繁请求的问题，但还是存在一个巨大的痛点，难以维护。</p>
+<p><img data-action="zoom" class="origin_image zh-lightbox-thumb aligncenter" title="B端设计指南05-图标" src="http://image.woshipm.com/wp-files/2020/12/c7mgfqeKPjvvfSxJ5BJC.jpeg" alt="B端设计指南05-图标" width="1003" height="631" /></p>
+<p>因为当设计师每增加一个图标，都需要修改原始图片，而且通常雪碧图是前端使用工具生成，工具稍稍不对就会影响前面定位好的图片，同时雪碧图的修改直接影响到之前的缓存，长此以往就会变得难以维护。</p>
+<h3>2. 发展时期-字体图标</h3>
+<p>因为使用图片落地图标还是会有种种问题，字体图标便开始问世，第三章刚讲到图标本质也是一种“文字符号”，所以在属性上是极为符合的。</p>
+<p>在前端CSS开始支持@font-face引入web font中后，字体图标就来到了高速发展的时期，比如Font Awesome就在这时候崛起，这时候国内出现了一个图标托管网站：iconfont。</p>
+<h3>3. 成长时期-iconfont的兴起</h3>
+<p>Iconfont已经陪伴我们7年，它集合了图标托管、共享、管理平台，算是解决了国内大多数设计师图标管理的需求，iconfont是“阿里爸爸”旗下的产品，主要是有很多图标资源提供给大家下载。</p>
+<p>当然强烈建议iconfont能够拥有排序功能，对于我这种强迫症来说，不能忍受图标类型是混乱的。</p>
+<h3>4. 崛起时期-svg</h3>
+<p>svg源本就是图标的最好归属，一方面svg本身就是拥有伸缩的特性，能够满足图标任意放大缩小的功能；另一方面在众多编辑绘图软件中，都支持svg的任意编辑，非常适合设计师再修改。</p>
+<p>同时svg可以直接使用，也会避免字体图标那样需要需要通过管理平台进行维护。</p>
+<p>svg真正的崛起还是在内联svg的出现，在2016年Github全面启用了内联图标，可以将图标直接嵌入到HTML的内容中，是它的文档模型能够被JS/CSS访问操作，前端就可以通过CSS的控制实现图标颜色、样式，满足图标的多种需求。</p>
+<p>如果大家感兴趣，可以出个番外篇与大家聊聊font icon 与 svg的对比，想要的就在下面讨论区留言～（待定）。</p>
+<p>在图标的设计中，我崇拜过Susan的细腻，能够在如此低的分辨率中做着设计，而对于后续的mac图标的设计中，都有着深远的意义。</p>
+<p>我也敬佩锤子，将具象的图标刻画的细致到位，以至于很多时候看着图标发呆，细细研究它的技法。希望B端的图标不要因为门槛而困扰着大家，我曾经深受图标困惑，希望这篇文章你会有所收获。</p>
+<p>参考文献：</p>
+<p>[1] https://www.zcool.com.cn/article/ZOTU1OTMy.html</p>
+<p>[2] https://www.zhangxiaochun.com/icon-style-guide-1/</p>
+<p>[3]https://www.uisdc.com/b-end-illustration-system</p>
+<p>[4]https://www.dazhuanlan.com/2019/10/06/5d99a15b097fd/</p>
+<p>&nbsp;</p>
+<p>作者：CE，2B行业的2B设计师～公众号：CeDesign</p>
+<p>本文由 @CE 原创发布于人人都是产品经理。未经许可，禁止转载</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
+➜万亿市场的直播电商，还能创造哪些价值？
+http://www.woshipm.com/it/4301480.html	7618
+<blockquote><p>编辑导读：直播电商是今年的一大风口，它通过直播展示商品的功能、特性、价格等，从而引导用户下单。而在短时间内迅速增长的直播电商，未来还能继续保持这样的势头吗？它还能创造哪些价值呢？本文作者对此展开了四个方面的分析，希望对你有帮助。</p></blockquote>
+<p><img data-action="zoom" class="size-full wp-image-4302395 aligncenter" src="http://image.woshipm.com/wp-files/2020/12/vZLoxEl7a1tqvzj5AZbu.jpg" alt="" width="900" height="420" /></p>
+<p>直播电商是对传统商业模式的创新，直播电商通过直播，替代传统图文、社区等形式，进行商品品牌、功能、特性的介绍展示，并引导用户进行下单的商业模式。</p>
+<ul>
+<li>“货”是关键的因素，包括供应链的宽度和深度，商品质量和安全的保障机制等；</li>
+<li>电商发展的方向是在“货”的基础上，使“人”的需求在特定场景下能得到更充分的满足和释放；</li>
+<li>直播是“场”的承载形式之一，具有实时性突出、互动性强、展现方式丰富、信息密度高等特点；</li>
+<li>直播发展的方向是在“场”的基础上，激发“人”的多样化需求，并融合高效率和长期化的变现方式。</li>
+</ul>
+<p><img data-action="zoom" class="aligncenter" src="https://p9-tt-ipv6.byteimg.com/img/pgc-image/e5ca033b7019413ead0f6988e8dd9933~tplv-tt-shrink:640:0.image" /></p>
+<p>直播电商的市场规模在短时间内快速增长，体现在以下两方面：</p>
+<p><strong>渗透率快速提高：</strong></p>
+<p>随着参与到直播电商中主体的范围和数量逐渐增多，大众对于直播电商的接受程度也明显提高。从B端来看，直播电商能明显提高转化效率，所以商家有使用的积极性；从C端来看，直播电商能较好的降低信息不对称所带来的弊端，因此用户也有体验的动力。B端与C端的共同推进，使直播电商的市场规模在短短几年内迅速扩大，并使其渗透率快速提高。</p>
+<p><strong>发展质量明显提升：</strong></p>
+<p>自2016年直播电商作为单独的形态出现以来，其市场规模的增长一直保持了较高的速度。而在市场规模不断扩大的同时，直播电商的发展理念也逐渐从“流量价值交换”进化到“挖掘流量内在价值”的阶段。在整体用户规模增速达到极限高值时，每用户为商家和平台带来的价值却不会到顶，而是在内生动力的促进下继续提高。</p>
+<p><img data-action="zoom" class="aligncenter" src="https://p6-tt-ipv6.byteimg.com/img/pgc-image/8d623832960a4b9fa2716c403f599407~tplv-tt-shrink:640:0.image" /></p>
+<h2>01 直播电商的发展现状</h2>
+<h3>1. 将用户导入私域是社交平台直播电商模式中的先决条件</h3>
+<p>社交平台的直播，是商家/主播引流、进行私域流量运营后促成转化的综合过程。流程开始，由商家通过各项举措吸引用户的关注，使已有关注行为的用户成为商家/主播的私域流量，商家/主播可通过直播的形式在一定时间段内进行多次触达用户并促成销售转化。</p>
+<p>社交平台为商家与用户搭建起了信息交互、直播互动、交易协同的系统，可支持商家在本平台内实现交易全流程；如交易环节跳出社交平台，而转向第三方平台，则可能会由于实际交易之前的跳转、搜索等流程而流失部分用户。</p>
+<p><img data-action="zoom" class="aligncenter" src="https://p9-tt-ipv6.byteimg.com/img/pgc-image/a027e723fbcb48388cc66dd27aef4f58~tplv-tt-shrink:640:0.image" /></p>
+<h3>2. 高流量和高黏性是内容平台直播电商模式的特点</h3>
+<p>内容平台的主播依靠高质量以及与目标用户相匹配的内容吸引关注，并通过流量投放、挂榜等模式扩大用户覆盖面；同时商家会根据主播的热度、影响力等维度进行相关投放的选择；内容平台中的部分用户并未进行过线上消费，通过直播购物是其首次接触电商购物。</p>
+<p>内容平台普遍有着较高的流量水平和用户黏性，可以为品牌方不断的进行导流，但平台方已越来越倾向于将其引导至内部小店，打造自身体系内的商业闭环，逐渐将开放至电商平台的流量收紧。</p>
+<p><img data-action="zoom" class="aligncenter" src="https://p26-tt.byteimg.com/img/pgc-image/0fd78d761eeb4b9886877ff3d6e416d2~tplv-tt-shrink:640:0.image" /></p>
+<h3>3. 电商平台的直播是其提高交易效率的重要手段</h3>
+<p>MCN机构、主播等电商交易中的新因素，改变了电商平台之前用户自主搜索、商家图文介绍的传统模式，加强了人、货、场三者的有机融合，使流量的分配机制得以重构，提高了交易效率，并有利于更多的中小商家增加曝光量，增强商业环境活力。</p>
+<p>电商平台直播所引导的交易一般都在本平台内完成，流量转化率相对较高，流失率相对较低，并且其用户购物目的较为明确，也相对更容易形成交易转化；而在直播引导交易的同时，用户得以在店铺和主播中沉淀，成为店铺、主播私域流量的来源。</p>
+<p><img data-action="zoom" class="aligncenter" src="https://p1-tt-ipv6.byteimg.com/img/pgc-image/fd09005db6b94ae099bbb902bcf8d3e0~tplv-tt-shrink:640:0.image" /></p>
+<h2>02 直播电商良性发展的关键因素</h2>
+<p>直播平台的良性发展，离不开主播、商家、用户数量的增加。</p>
+<h3>1. 主播数量的增加，有利于直播电商生态的健康发展</h3>
+<ul>
+<li>在直播电商体系中，主播连接着卖家和用户，其数量的增加是体系规模扩大的关键。因为每一位主播都有自己重点覆盖的行业、商品品类以及某一类用户，因此其连接的商家和用户相对有限，只有在主播数量增加的情况下，更多的商家和用户才能建立起有效的连接。</li>
+<li>更多的主播还能在一定程度上减小平台的运营风险。因为一个平台的运营如果过分依靠少数头部主播的影响力，则这些少数主播在工作、生活中的失误就有可能给平台带来较大的负面影响，同时这些少数主播在合作平台选择上的改变也可能使部分资源流失，从而给平台的正常运营造成一定的障碍。</li>
+</ul>
+<h3>2. 商家与户在主播的连接下，有较明显的跨边网络效应</h3>
+<ul>
+<li>主播对接的商家和商品构成了以自己为中心的供应体系，而更多的商家和商品对此体系有明显的增强作用，因为数量更多的商家和商品既能吸引更多的用户，也能使已覆盖的用户有更大的转化机会。</li>
+<li>主播所覆盖的用户越多就越能吸引上游商家与其进行合作，也能促进以主播为中心的供应体系进一步完善。</li>
+<li>由下侧的“交易连接”公式可知，商家和用户的基数在很大程度上决定了由主播促成的交易转化增长空间，因此发展高质量的初始合作商家与初始用户，对主播来说较为重要。</li>
+</ul>
+<p><img data-action="zoom" class="aligncenter" src="https://p1-tt-ipv6.byteimg.com/img/pgc-image/8beae2d9385e457fbca8ac58af6fc04a~tplv-tt-shrink:640:0.image" /></p>
+<h3>3. 平台支持主播端健康发展的关键要素：标准、竞争、生态</h3>
+<p><strong>健全主播规范标准：</strong></p>
+<p>而如果平台在制定出合理的主播规范标准基础上，还对其进行细致的定期更新，就能在很大程度上降低由于主播的不可控因素而给平台、主播群体、行业，以及合作伙伴在声誉、商业运作等方面带来的不确定风险。同时，在最基础的规则层面过滤掉不合格的主播，还能为发展高质量的主播群体奠定基础。</p>
+<p><strong>建立多层次的适度竞争机制：</strong></p>
+<p>如果主播群体处于相对的固化状态，将不利于直播电商在创新、能力扩展等层面上的发展，因此有必要引入竞争机制。但同时，又需要注意不同层级主播的过度竞争，这样才能避免马太效应过分放大，使大量中部、腰部主播失去更多的发展机会。平台应按照一定标准进行主播层级的划分，并定期进行更新，主播间的竞争应首先并主要在层级内部开展，之后再涉及到主播层级的上升与下降。在此过程中，平台应为中小主播及其MCN机构提供足够的资源支持，对专注于小众品类的达人主播、自播店铺给予一定的资源倾斜，这样才能营造出更有活力的直播电商环境。</p>
+<p><strong>构建数字化服务生态：</strong></p>
+<p>主播及其MCN机构主要的精力和职责需要一直聚焦于直播，因此周边工作就需要专业的机构来支持。平台可依据自身的技术实力、对业务的熟悉程度，搭建出一套服务于主播及MCN机构的综合支撑环境，并将相关接口开放给第三方服务商。同时，由平台内部团队与第三方服务商共同竞争，甚至可以完全由第三方服务商竞争相关机会。而服务商需要打造出不断演进更新的直播运营工具，为主播及MCN机构在选品、内容制作、拉新、互动、售后等环节全面接入统一的数字化运营中台，并与平台的数字化流程深度融合。</p>
+<h3>4. 平台支持供应端健康发展的关键要素：扶持、控制、多元化</h3>
+<p><strong>注重对小微供应源的扶持：</strong></p>
+<p>小微供应源，特别是农民、小微工厂往往资源有限，得不到消费者和供应链的关注，在传统的商业环境中较难获得商业机会，也较难建立起与用户的联系。同时，因为其很难从市场和消费端得到反馈，因此也难以持续推出与市场需求相匹配的商品，但小微供应源又是为平台增强活力的有效方式，因此平台也有必要支持其发展。而直播作为灵活的方式，相对更容易协助小微供应源与用户建立双向联系，因此平台可对主播对接小微供应源给予必要的资源扶持。</p>
+<p><strong>建立多元化的供应模式：</strong></p>
+<p>随着直播电商的规模不断扩大，其供应体系在传统模式以外，还加入了由MCN机构、第三方服务商、平台方等不同主体建立的主播专供商品池模式。这对供应端主要由品牌方与商家主导的传统模式是不小的改变。虽然传统模式较为接近用户、较为直接，但供应方却是相对单一化的、孤岛式的，与用户需求的匹配度相对不高。而主播可以根据自己覆盖用户的特点与需求，灵活选择供应方，灵活选择商品，从而达到较好的匹配效果。同时，因为上游供应方在大批量走货的背景下对品牌方有更强的谈判力，因此可以为主播提供在价格、SKU宽度和深度等方面较有优势的商品。</p>
+<p><strong>加强质量控制体系：</strong></p>
+<p>由于直播能带来相对更快、更直接的转化，所以会使部分低价低质的商品有了生存的空间。但这类型的商品会使用户对主播、对直播购物产生抵触，进而影响用户的购物心智及其长期转化，不利于直播电商的健康发展。因此，平台方有必要为直播建立供应源头的防火墙，对接入平台的商品供应方进行严格管理，建立入围标准和淘汰机制。通过交易前的抽检、交易后的调查，及时清理不符合标准的商品以及信誉较差的供应方。</p>
+<h3>5. 平台支持用户端健康发展的关键要素：保障、多样化、获得感</h3>
+<p><strong>提供完善的用户基础保障：</strong></p>
+<p>一方面，平台需要利用自身的技术能力为用户提供直播、交易、支付、信息安全等环节上的支撑和保障；一方面，平台还需要从交易流程的架构设计上保障直播购物的顺利进行，并且为用户提供非直播时段的商品咨询功能及入口，提供客观全面的评价信息作为参考，同时设置售后保障机制解决用户的后顾之忧。另外，因为单一的用户始终处于相对的弱势地位，因此在发生用户与主播的争端时，需要平台有及时介入的机制，而不能基于成本和流量的考虑而无视争端的存在。</p>
+<p><strong>给用户长期的获得感：</strong></p>
+<p>相较传统的电商模式，由于主播与用户信息交互效率更高、短时间内主播对用户注意力独占性等因素，直播能更快的促成交易转化。并且因为直播能创造出这样的有利条件，店铺和主播就有持续促成快速成交的冲动。为了达成这一目的，店铺和主播往往采用低价的策略，吸引部分用户进行冲动型消费。但是这样的消费，其实往往是对用户长期价值的伤害，因为没有对接用户真正的需求，用户可能会因为冲动消费后的反思而使后期的消费更趋谨慎。平台在竞争规则制定上，可以引导商家和主播更关注复购率、复购次数等长期性指标，而不仅仅是转化率和交易额，以使用户可以保有长期的消费欲望以及获得感。</p>
+<p><strong>提供多样化的直播内容：</strong></p>
+<p>用户对于商品的需求偏好是多种多样的，对于主播及其风格的喜好也各有不同，因此需要平台提供多样化的内容供用户选择。同时，不能仅仅依靠用户当前表现出的偏好去一味取悦用户，一味推荐相似的直播内容。因为一方面用户在类似的直播中进行重复消费的可能性不高，另一方面用户潜藏的需求可能并没有在之前的购物和浏览等行为中表现出来，因此相似的直播就并不能产生明显的交易增量。而平台一旦为用户提供了形式各异的直播，就或许能触达用户更多样化的需求，为今后的转化开启更多的可能性。</p>
+<h2>03 直播电商在不同梯级品牌中的运用与价值</h2>
+<h3>1. 直播电商在高端品牌中的运用与价值</h3>
+<p><img data-action="zoom" class="aligncenter" src="https://p9-tt-ipv6.byteimg.com/img/pgc-image/80d526e5bab44c6f8f7127844bbaaab4~tplv-tt-shrink:640:0.image" /><br />
+策略：</p>
+<ul>
+<li>选择头部主播，并且选择与品牌内涵一致的主播，以维持高端形象。</li>
+<li>在直播中谨慎使用降价手段，以送赠品和服务为主，以此维护价格体系。</li>
+<li>严格控制直播中商品的供应量，以此作为与大众消费品牌的区分。</li>
+</ul>
+<p>价值：</p>
+<ul>
+<li>以多种渠道和模式增加与老客户互动的机会，维护与其的关系。</li>
+<li>吸引有转化潜力的目标人群，特别是其中的年轻人。</li>
+<li>为新品上市做好精准触达的准备。</li>
+<li>以直播保持品牌影响力。</li>
+</ul>
+<h3>2. 直播电商在成熟品牌中的运用与价值</h3>
+<p><img data-action="zoom" class="aligncenter" src="https://p9-tt-ipv6.byteimg.com/img/pgc-image/e907b8f484924ab5a8b3f4782817163b~tplv-tt-shrink:640:0.image" /><br />
+策略：</p>
+<ul>
+<li>衡量主播投入产出效果，选择性价比较高的头部、腰部主播。</li>
+<li>用爆品、热销商品主打直播热门位，吸引用户关注、提高转化效果。</li>
+<li>高溢价商品在直播中适当降价，但幅度不宜过大。</li>
+<li>注重将公域直播中的用户引流至私域，并用店播的形式多次触达、提升复购</li>
+</ul>
+<p>价值：</p>
+<ul>
+<li>维持、提升日常销量，以大流量、高转化增加搜索权重、展现机会。</li>
+<li>以高流量、高销量换取更高额总利润。</li>
+<li>巩固既有用户群，提高品牌影响力。</li>
+<li>快速处理库存、回收资金，减轻经营压力。</li>
+</ul>
+<h3>3. 直播电商在新兴品牌中的运用与价值</h3>
+<p><img data-action="zoom" class="aligncenter" src="https://p9-tt-ipv6.byteimg.com/img/pgc-image/962d6096235b4cc9b72a64fb36165a92~tplv-tt-shrink:640:0.image" /><br />
+策略：</p>
+<ul>
+<li>以直播的形式迅速回收市场反馈，促进商品在包装、宣传等方面的低程度快速改进。</li>
+<li>前期选择能覆盖目标受众的多个主播进行测试，确定主播与品牌的契合度，避免在无效主播上有过多的资源投入。</li>
+<li>基于定价，直播中需要有明显降价动作，以较大的降幅吸引用户的关注。</li>
+<li>搭建自身的店播体系，注意培养、引入相关的人才。</li>
+</ul>
+<p>价值：</p>
+<ul>
+<li>借用直播的快递迭代方式能以相对较低的代价去匹配用户的需求。</li>
+<li>能明显减少传统广告宣传中的无效传播，使关键的品牌、商品信息直达潜在用户，使品宣资源利用率更高。</li>
+<li>在品牌宣传的同时，还能实现较短的转化路径，达到品销合一的效果。</li>
+</ul>
+<h2>04 直播电商的发展趋势</h2>
+<h3>1. 用户对于直播电商的认知逐渐深化、客观</h3>
+<p><strong>价格：</strong>随着国民整体收入水平的不断提高，大部分用户的购买力进一步增强，其价格敏感度随之逐渐降低，因此与直播刚起步阶段的情况不同，用户不再一味追求极致低价，而是基于主播的服务能力、诚信度，以及商品的性价比、品牌、设计、调性等方面因素综合做出判断。</p>
+<p><strong>服务：</strong>主播及其MCN机构的服务能力在用户购买决策中占据了越来越重要的地位，用户对其选品的标准、范围、精准度，以及售后处理的速度、效果等要素有了更高的要求，同时个性化的服务项目，如小批量定制、独家赠品、节假日关怀等也将成为用户逐渐关注的因素。</p>
+<p><strong>习惯：</strong>在平台、商家向直播电商逐渐加大投入的促进下，将会有越来越多的用户将直播视为自己较为寻常的购物方式，并且还会有不少用户将直播作为购物的第一选择，并且随着对直播购物认识的加深，用户激情化消费的情况会逐步减少，理性的消费习惯将成为直播购物的主流。</p>
+<h3>2. 直播在电商生态中将逐渐工具化、常规化</h3>
+<p><strong>供应链：</strong>为更好的为主播服务、增强主播的带货能力，MCN机构、平台方还将搭建直接对接全国甚至全球范围内的品牌方、工厂，且有完善选品、售后能力的供应链体系，主播则只需要与其进行对接，而不需要再分散精力分别进行一对一的商谈。</p>
+<p><strong>流程分工：</strong>在直播电商热度不断增加的环境下，相关的人才也在不断的涌入，并且他们不是彼此职能的简单相加，而是随着对直播电商理解的加深，主播、副播、文案、场控、设计、客服等工种多方面能力的有机融合，并进行合理的流程规划安排。</p>
+<p><strong>营销：</strong>店铺直播间作为重要的宣传推广渠道将被纳入至品牌方的整合营销方案之中，作为其不可缺少的营销方向之一。而MCN机构、平台方则将独立发展或引入营销经纪机构，并以宣传主播为重点在不同渠道进行形式各异的立体式联合推广，以吸引更多用户的关注。</p>
+<p><strong>管理：</strong>平台方将基于公平、效率、正面效应等原则不断完善规则对MCN机构和主播进行管理，并建立优胜劣汰的机制，及时清退不合格的MCN机构和主播，同时建立第三方介入机制，以解决直播过程中产生的纠纷。</p>
+<h3>3. 各项新技术的出现和运用将明显促进直播电商的发展</h3>
+<p>5G的广泛使用，能支持更高清晰度、更低延时、更流畅的直播，使直播中展示出商品更丰富、微小的细节，也能使主播与用户有更好的互动性，还能使用户购物的过程更加顺畅。同时，用户的购物意愿将会随着各方面体验的提升而增加。</p>
+<p>人工智能技术的成熟，使其被大量应用在直播中成为可能，一方面它可以承担主播的部分职能，以拟人化的形象出现，进行全天候不间断的直播；另一方面，它还能担当客服，实时与用户沟通。它对部分人员的替代，能起到降本增效的作用。</p>
+<p>随着直播的各个环节引入数字化相关技术，与直播相关的工作流程将不再以人为的经验为主，而是全面以数据为基础，并且此流程并不仅仅局限于单独的主播和MCN机构之内，其还能与平台方、商家方进行即时的信息互通，从而进一步提高直播的效率。</p>
+<p>&nbsp;</p>
+<p>作者：易观分析，微信公众号：yiguanguoji</p>
+<p>本文由 @Analysys易观 原创发布于人人都是产品经理。未经许可，禁止转载</p>
+<p>题图来自 Pexels，基于 CC0 协议</p>
+➜这篇文章把数据讲透了（四）：数据挖掘
+http://www.woshipm.com/data-analysis/4294362.html	7625
+<blockquote><p>编辑导读：随着“数智化”时代的到来,我们生活中的方方面面都离不开数据,而你真的了解数据吗？本文将为你重新解读数据的概念和价值，以及数据的价值是如何在“数智化”时代下一步一步得到运用与升华的；因内容颇多，笔者将分几期为大家进行讲解。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4302404" src="http://image.woshipm.com/wp-files/2020/12/kwNm0bVEsyuCBCNCXJnA.jpg" alt="" width="900" height="420" /></p>
+<h2>一、前言</h2>
+<p>上一期文章中，我们已经了解到“数据”是一个庞大的体系（如下图所示）；并用了“洗菜、择菜”的例子，为大家讲解数据清洗的含义；而今天笔者主要给大家讲解当净菜备好后，如何对净菜进行加工烹饪，让它变成有价值、有意义的美味佳肴，即数据挖掘的过程。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/11/0lCy81hnnVr5LxcfS6tC.jpg" alt="" width="720" height="480" /></p>
+<h2>二、数据挖掘（烹饪）</h2>
+<p>数据挖掘是对既定的“净数据”进行加工利用的过程，我们可以把它看作是烹饪加工的过程。</p>
+<p>而数据挖掘是有一定规则和相应模型的，这一点我们也可以通过一个类比进行理解。</p>
+<p>清洗后的高质量数据就像是“净菜”，而数据挖掘模型就像是各种“菜系”，我们知道，就算“净菜”材料一致，但菜系（数据挖掘模型）不同，最终得到的成品也是截然不同的！</p>
+<p>下面是数据挖掘中较为常见的几个“菜系”（模型），下面我们配合模型对应的使用场景逐一阐述</p>
+<p>总的来说，数据挖掘模型可以通过“监督模式”进行大致分类，分类为监督模型、非监督模型：</p>
+<ul>
+<li>监督模型：简单的说，就是让机器学会举一反三，它好比学生在学习时已知题目和答案，去学习分析如何解题一样，下次遇到一样的或者类似的题目就会做了；监督模型内的数据分为训练集和测试集，常见模型有决策树、LOGISTIC线性回归等。</li>
+<li>非监督模型：简单的说，就是略去了监督模型中”举一反三“的过程，输入的仅仅是一堆数据，没有标签，也没有训练集和验证集之分，让算法根据数据本身的特征去学习，常见模型一般有clustering。</li>
+</ul>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/bpjKNIOucruWSwCjDNJH.png" alt="" width="1027" height="613" /></p>
+<p>了解了数据挖掘的基本类别，下面我们来切入场景，看一看这些具体的算法模型如何帮助我们在现实场景中进行数据挖掘。</p>
+<p>聚类分析——其中以K-Means算法最为典型。</p>
+<p>原理与步骤：</p>
+<ol>
+<li>选取K个中心点，代表K个类别；</li>
+<li>计算N个样本点和K个中心点之间的欧氏距离；</li>
+<li>将每个样本点划分到最近的（欧氏距离最小的）中心点类别中——迭代1；</li>
+<li>计算每个类别中样本点的均值，得到K个均值，将K个均值作为新的中心点——迭代2；</li>
+<li>重复234；</li>
+<li>得到收敛后的K个中心点（中心点不再变化）——迭代4；</li>
+</ol>
+<p>使用场景：商业领域，聚类分析常结合（RMF模型）被用来进行客户细分；生科领域，聚类分析常被对动植物分类和基因进行分类，进行种群研究。</p>
+<p>实操案例：运用K-Means算法对航空业客户进行价值衡量和细分。</p>
+<h3>1. 参考RMF模型与数据集，自定义聚类类别</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/ZmRrmokrBhoebuVqKpWL.png" alt="" width="840" height="558" /></p>
+<p>得到数据集后删除不相关、弱相关或冗余属性，如会员卡号、性别等，可以得到与RMF模型相关的5个属性分别是：C（平均折扣率较高、仓位等级较高）、F（乘坐次数）、M（总里程），R（最近乘坐航班）低、L（入会时长），我们根据属性更够对客户群进行分类，鉴别出重要挽留客户、重要保持客户、低价值客户等。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/lWVEnQwUIt1QiaxD3lid.png" alt="" width="816" height="238" /></p>
+<h3>2. 已确定5个聚类类别，套入代码进行聚类即可（代码如下）</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/bZqUFMCCdODHgHyjBFt7.jpg" alt="" width="935" height="454" /></p>
+<h3>3. 针对结果进行可视化分析，并对每一个customer进行标识</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/CDD8QbBmTY0dF1SCff6o.png" alt="" width="519" height="300" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/36S83jK3Q2z482dqln4I.png" alt="" width="273" height="236" /></p>
+<p>回归分析——具体分为两大类（逻辑回归、线性回归）。</p>
+<p>那么，有同学就会问了，逻辑回归和线性回归究竟有什么区别呢？</p>
+<p>其实，两者属于同一个家族（广义线性模型），但它们面向的因变量类型不同，逻辑回归的因变量是分类变量（男女、职业&#8230;），线性回归的因变量是连续型数字变量（如1000人的工资，单位元）。</p>
+<p>实操演练：最小二乘法OLS回归（属于线性回归的一种）——例如，下方，我们对工资与各项贷款余额的关系进行研究。</p>
+<p>STEP1. 导入数据后，画出散点图，观察数据大致趋势，并画拟合曲线：</p>
+<ul>
+<li>x=data[&#8216;各项贷款余额&#8217;]</li>
+<li>y=data[&#8216;工资&#8217;]</li>
+<li>z1 = np.polyfit(x, y, 1) # 1表示用1次多项式拟合</li>
+<li>p1 = np.poly1d(z1)#拟合方程</li>
+<li>f=p1(x)</li>
+<li>plt.scatter(data[&#8216;各项贷款余额&#8217;],data[&#8216;工资&#8217;])</li>
+<li>plot2=plt.plot(x, f, &#8216;r&#8217;,label=&#8217;polyfit values&#8217;)#画拟合线</li>
+</ul>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/xfQVihGMsM63Dfeqajnz.png" alt="" width="412" height="263" /></p>
+<p>STEP2. 导出相关回归数据参考指标，如拟合R方（越接近1越好，一般来说0.7以上已经算相关性比较强，拟合效果较好）、P值（一般情况&lt;0.05为理想拟合）等，对回归方程进行检验。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/KXxzoRIsYUuyHuM0CCOR.jpg" alt="" width="720" height="281" /></p>
+<p>综上，我们可以得到Y（工资）=0.0379X（各项贷款余额）-0.8295。</p>
+<h2>三、结语</h2>
+<p>本期，笔者通过一个“烹饪和菜系”的例子，带着大家了解了数据挖掘的常用模型，相信大家有所收获！</p>
+<p>下期，笔者将在数据挖掘的基础上，讲解数据可视化，看看我们如何简单易懂的把数据故事讲懂、讲透！</p>
+<p>往期文章：</p>
+<p><a href="http://www.woshipm.com/data-analysis/4270587.html" target="_blank" rel="noopener">这篇文章把数据讲透了（一）：数据来源</a></p>
+<p><a href="http://www.woshipm.com/data-analysis/4273762.html" target="_blank" rel="noopener">这篇文章把数据讲透了（二）：数据采集</a></p>
+<p><a href="http://www.woshipm.com/data-analysis/4293282.html" target="_blank" rel="noopener">这篇文章把数据讲透了（三）：数据清洗</a></p>
+<p>持续更新&#8230;</p>
+<p>&nbsp;</p>
+<p>本文由 @小陈同学ing. 原创发布于人人都是产品经理，未经作者许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
+➜运营思维：让你更有条理地提升工作关键指标KPI
+http://www.woshipm.com/operate/4302061.html	8475
+<blockquote><p>编辑导语：在我们进行运营任务的时候，我们应该如何提升最终的关键指标呢？不同的人可能会有不同的方法，本文作者基于自己的经验，为我们总结了如下六种方法，希望能帮你有条理地提升工作关键指标KPI。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4302424" src="http://image.woshipm.com/wp-files/2020/12/Yf2Rhhcyrb8rJ8GXN385.jpg" alt="" width="900" height="420" /></p>
+<p>当你在接到一项运营任务时，你会如何思考来提升最终的关键指标？可以停留几分钟，结合自己当下或者过往的工作经历，想一想你是如何行动的？</p>
+<p>先有一个模煳的答案，再来看下面的分享，可能会更有碰撞产生更多想法。</p>
+<p>讲讲我的思考：</p>
+<h2>01 理解目标</h2>
+<p>第一步也是最重要的一步，便是理解这个目标，理解清楚这项任务的最终目的，任务安排人的期望。</p>
+<p>最好的情况下，把自己的理解与任务安排人进行复述确认，或者是产出很粗略的实施计划，保证自己的理解和行动，能与安排人达成一致。</p>
+<p>注意这里是达成一致，也就是说不仅仅是单向的接受（当然这是交流的基础）。你也需要发挥主观能动性，输出自己的想法，双方形成互动，最后良好地达成一致。</p>
+<p>理解了目标之后，确定一个数字，这个数字是北极星指标。你的一切行动，都是围绕着提升北极星指标来的。</p>
+<p>别偷懒，没数字，很容易自己打动（pian）自己。</p>
+<h2>02 运营设计</h2>
+<p>在这一步，就需要思考为了完成任务、实现目标，我该如何做运营的设计，该怎么一步步地落地。</p>
+<p>也就是让想法，变成一份可执行的运营方案。它包含了目的目标、想法简述、运营策略设计（具体的方式方法）、分工安排、资源支持（人事物）、补充等。</p>
+<p>而在策略设计中，整个的流程是至关重要的，它既影响着外部用户的体验，也关系到了内部同事的协作。我们以一场微信体系的直播活动为例，用户的基本使用流程便是这样的：</p>
+<ol>
+<li>宣传触达用户</li>
+<li>用户被吸引</li>
+<li>进入社群</li>
+<li>进入直播间</li>
+<li>直播间内转化</li>
+<li>社群内转化</li>
+<li>社群内运营维系（长期转化时可采用）</li>
+</ol>
+<h2>03 拆解目标</h2>
+<p>根据运营流程，公式化一步步地拆解北极星指标。让一个总的指标，由各个环节的分支指标组成。</p>
+<p>目标的拆解细分，有很多的好处，最大的好处便是可以实现精细化的运营。</p>
+<p>关注每一个重点环节，针对重点环节进行更深地研究和操作，提升各个环节的指标，最终达到提升整个北极星指标的目的。</p>
+<p>还是上面的例子，如果以最终的转化人数作为北极星指标，那可以拆解为：转化人数 = 宣传触达用户数 * 入群率 * （直播观看率 * 直播间转化率 + 社群转化率）。</p>
+<h2>04 穷举影响因素</h2>
+<p>拆解好了目标，这一步做起来就很简单了，就是想，各种的想。想出对于拆解指标会有影响的因素，先别管作用大小，先想了记下来。是穷举，不是筛选。</p>
+<p>当然除了自己想，还可以让同事帮你想，让竞品帮你想（竞品研究），让专业的运营网站帮你想（优秀案例）。</p>
+<p>但有的时候，大家是没有那么多时间去收集去想的，所以这也从侧面说明了，平时做项目总结、竞品研究、优秀案例学习的重要性。</p>
+<p>平时做好收集和分析，真到用时才觉轻松。多学多看多记录，总是不会错滴~这里也依旧是举上面的例子，要提升入群率，怎么做？</p>
+<p>我的理论经验：</p>
+<h3>1. 频繁的提醒</h3>
+<p>多频次地提醒，让你的宣传曝光在足够多的人群中，同时有足够多地次数进行曝光。</p>
+<p>只有一两次的曝光，有的人可能之前没看到就错过了，有的人可能第一次想参与但忘了，有的人可能第一次没想法后面又有了参与的想法。</p>
+<p>可能的“漏网之鱼”很多，频繁的提醒便是多重下网，拒绝遗漏。</p>
+<h3>2. 低门槛的动作</h3>
+<p>大多人都是懒的，且没有足够耐心的。所以把流程设计得足够简短，没必要的步骤坚决砍掉。把行动指引讲明白，让小白都能操作的会。</p>
+<h3>3. 奖励的促动刺激</h3>
+<p>奖励我会分为两类：一类是给到用户的软价值，一类是硬价值。</p>
+<ul>
+<li>软价值，是我们期望用户参与后能收获的最重要的价值，比如意识的唤醒、知识的科普、解决方案的提供、情感的慰藉。</li>
+<li>硬价值，则是依附于软价值之上的，虚拟类、实物类福利。</li>
+</ul>
+<p>把奖励做强，也是一条很好地刺激用户参与的办法。</p>
+<h2>05 优先级排序</h2>
+<p>穷举各环节，各个影响因素后，要做的便是做两个优先级的排序。</p>
+<ul>
+<li>第一：环节优先级的排序，哪些环节重要，要先优化落地？</li>
+<li>第二：影响因素的排序，重要的环节，哪些影响因素重要，要先优化落地？</li>
+</ul>
+<p>一步步地细分，找到重要的变量，在这个变量上投入有限的资源，提升达成目标的概率。</p>
+<h2>06 逐个优化</h2>
+<p>最后便是执行落地 &#8211; 反馈循环。</p>
+<p>针对重要的影响因素，首先完成执行落地，拿出“成品v1”，内部做一轮意见反馈，再根据反馈调整出“成品v2”，在限定的时间下，做充分的内部反馈和优化。</p>
+<p>在有条件时，更好的情况下，可以把“成品v1”触达给部分用户，观察用户参与数据、反馈。或者是多个“成品v1”“成品v2”“成品v3”做AB测试，得到最好的用户体验版本。</p>
+<p>不过如果用户反馈暂时做不到，先做好内部的反馈优化，对于结果而言，也是会有帮助的。毕竟，专业人士的建议，大多偏不了。</p>
+<p>当然这里还有一个大的反馈，那便是每次项目迭代之间的反馈，项目v1的经验，反馈到v2上进行优化，如此循环。</p>
+<p>所以这也从侧面说明了，平时做项目总结，很重要。当你在接到一项运营任务时，你会如何思考来提升最终的关键指标？</p>
+<p>我的答案是：</p>
+<ol>
+<li>理解目标</li>
+<li>运营设计</li>
+<li>拆解目标</li>
+<li>穷举影响因素</li>
+<li>优先级排序</li>
+<li>逐个优化反馈</li>
+</ol>
+<p>&nbsp;</p>
+<p>运营 + 理财投资双buff加成的人儿，喜欢分享自己的运营心得，与你一同成长，求关注~</p>
+<p>本文由 @每天赚杯快乐水 原创发布于人人都是产品经理，未经许可，禁止转载</p>
+<p>题图来自 <a href="https://unsplash.com">Unsplash</a>，基于 CC0 协议</p>
+➜不要让你的职场输给了习惯性反驳
+http://www.woshipm.com/zhichang/4301875.html	8513
+<blockquote><p>编辑导语：在职场中，我们会看到一些人在遇到问题时第一时间是反驳，这其实是一种不自信的表现；在职场中要学会找到自己的问题，听从他人的意见等，由此成长；本文作者分享了关于职场上习惯性反驳的思考，我们一起来看一下。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4302456" src="http://image.woshipm.com/wp-files/2020/12/8YppUDAnCVnPR13HsrcW.jpg" alt="" width="900" height="420" /></p>
+<p>那些习惯性反驳的人，不过是用言语上的投机取巧掩盖了行动上的懒惰和思维上的不思进取而已。</p>
+<p>习惯性反驳最常见的表现，就是到处找理由和借口，尤其是从别人身上找原因，以此来掩盖自己的过失。</p>
+<p>身在职场，身边总是不乏这样的同事，和他们沟通不仅费神费时，而且往往聊到最后实在无法继续，让人忍不住想大呼“我太难了！”。</p>
+<h2>一、为什么有些人总是习惯性反驳他人？</h2>
+<h3>1. 自我价值感低</h3>
+<p>职场里缺乏自信心的人往往就会有习惯性反驳他人的行为；假设有同事说：“你的项目怎么做得这么糟？”多数人听完后会感到失落，有些人在失落后会找出问题所在，化作下次项目的经验。</p>
+<p>但还有些人则会将对方的负面评论和“我没能力”联系在一起，将别人对某件事的判断和质疑，理解成对自我的否定，随后反驳对方，“你也没好到哪去啊”。</p>
+<p>正因为不够自信，自我价值感低，所以他们试图通过反驳来获得优越感，就怕在别人面前暴露自己的不足和弱点。</p>
+<p>在着名精神分析学家弗洛伊德看来，这种行为其实是为了缓解自己的焦虑和痛苦。</p>
+<h3>2. 不愿承担责任</h3>
+<p>我在工作初期也有过习惯性反驳的坏习惯，被同事诟病了很久；例如同事反馈“这次的活动推广效果不太好”，我会嘟囔着说这都是因为某某外部因素造成的，然后弱化自己在活动推广过程中不够积极的原因。</p>
+<p>初入职场的人，总会担心由于自己的错误会降低在领导心目中的好感度，而不愿承担责任；殊不知这其实是很愚蠢的一种做法，不仅获得了相反的效果，还丢失了自我成长的机会。</p>
+<p>这种做法在职场上屡见不鲜，看似轻松方便，但也不过是一种逃避承担责任的障眼法罢了，结果只会导致自己变成一个原地踏步没有进步的人。</p>
+<h3>3. 认知囿于“红灯思维”</h3>
+<p>我们公司日常工作讨论有一个原则，即不要反驳，这个原则的设置就是为了避免有些人的“红灯思维”。</p>
+<p>所谓的“红灯思维”，作家成甲在《好好学习》这本书里提到，听到建议就排斥、指摘的处事方式称为“红灯思维”；这是一种针对外界提出的不同意见时表现出来的消极处理方式，即将它们阻挡在自己思维之外；具有“红灯思维”的人，往往不愿意尝试新东西，不愿意做出改变，如此的结果只会是让自己的思想长久被禁锢。</p>
+<p>在职场，你不可避免会遇到，当一个人提出一个观点或做法的时候，总是会有人立马反驳说：“这样行不通的”、“我们之前没人这么做过”、“预算不够，操作难度也很大”。</p>
+<p>这些人习惯性对反对意见“亮红灯”，一旦有“障碍”出现，他们就会产生应激反应，陷入狭隘的认知。</p>
+<h2>二、如何改掉你的习惯性反驳？</h2>
+<h3>1. 在显眼位置贴上便签提醒自己</h3>
+<p>坏习惯的改正和好习惯的培养都需要时间，当你意志不够坚定或是在培养新习惯的前期，不如通过一些便签来提醒自己。</p>
+<p>可以在纸条上写上一句自我提醒的话，贴在你的办公桌上、电脑边、家里的化妆镜上，甚至可以设置成你的手机壁纸。</p>
+<p>总之，让自己每天都能看到这句话，不断做自我暗示。</p>
+<h3>2. 先在口语上把“不”改为“是的”</h3>
+<p>有句话说得好，“言语会成为行动，行动会成为习惯”；也就是说，改变言语，最终可以改变习惯。</p>
+<p>习惯性反驳的人不妨从言语上先做出一些小改变，日常听到同事或领导的评论或指责时，不要急于用“不、不是、怎么会”这样否定或反问的字词，而是换成“是的、没错、你说得对”等。</p>
+<p>比如上面提到的事例，当同事说“你的项目怎么做得这么糟？”，你可以尝试这么回答“是的，这次确实效果不好/确实是我做得不够好。”先在言语上停止反驳，或许能让对方感受到你的真诚和谦虚。</p>
+<h3>3. 培养“绿灯思维”</h3>
+<p>既然我们说到习惯性反驳的人常常在沟通中囿于“红灯思维”，那么要改变这种状况，就要培养“绿灯思维”。</p>
+<p>“绿灯思维”指的是，当遇到不同意见时，人的第一反应不是反驳，而是倾听、接受、思考：它对不对？我是不是可以利用它来帮助自己成长？像很多公司信奉的“头脑风暴”，其实就是一种典型的“绿灯思维”模式。</p>
+<p>想要培养这种思维？成甲在《好好学习》中表示，我们需要明确“我”和“我的观点/行为”是不一样的。</p>
+<p>在职场里，我们的每一次成长其实都是来自“我的观点/行为”的改进和提升，而别人对“我的观点/行为”提出意见，正是在帮我们从不同角度获得启发和成长的机会。</p>
+<h3>4. 提高认知水平</h3>
+<p>李开复曾提出“多读不同意见的书”，而不只是读那些自己同意的、符合自己观点的书，如此一来便可以培养我们多方面看待同一件事情；即便是我们读完后还是坚持自己原来的想法，也可以了解别人是怎么想的。</p>
+<p>读书能帮我们解决很多职场问题，比如通过阅读职场管理类书籍，你或许会发现自己在管理模式上的缺点和不足，并发现另外一种更有效的模式。</p>
+<p>如果这和你的想法产生了冲突，可以尝试去实践对比两种模式的优劣，又或是等下次和别人谈到相关话题的时候拿出来交流、探讨。</p>
+<p>总之，通过书籍获取到不同角度的观点和看法，可以培养自己对反对意见的接受程度；等到下次别人再对你提出不同意见时，你便不会再那么害怕和抗拒，而是能将其视为一种认知的补充工具。</p>
+<p>你对不同意见的接受程度和处理方式，决定了你能够在职场上走多远多广；你的习惯性反驳，只会让职场沟通变得低效和不悦，使同事们孤立你远离你，也会因此而失去获得启发的机会。</p>
+<p>给自己一个机会，让不同的观点成为你成长的进阶石！</p>
+<p>&nbsp;</p>
+<p>本文由 @黑眼镜的猫 原创发布于人人都是产品经理。未经许可，禁止转载</p>
+<p>题图来自Unsplash，基于CC0协议</p>
+➜明星代言、IP合作、粉丝经济…联合利华怎么打造爆品？
+http://www.woshipm.com/it/4301954.html	8869
+<blockquote><p>导语：“现在我们产品已经准备好了，并且已经筛选好明星了，那我们的明星怎么去进行活动推广，让消费者产生购买呢？” 本篇文章，作者以联合利华清扬男士沐浴露为例，讲述品牌与消费者沟通的6个利器，希望对你有帮助。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4302457" src="http://image.woshipm.com/wp-files/2020/12/50SWOjNrWqAhVdkgidMw.jpg" alt="" width="900" height="420" /></p>
+<p>新的栏目，我将以真实商业case为例为大家讲解【新品上市推广计划】。由于内容较多，将分成五期连载。</p>
+<p>目录：</p>
+<ul>
+<li>第一章：行业背景调查（上）：选取联合利华的清扬男士沐浴露作为新品推广案例，并使用SWOT分析清扬男士沐浴露。</li>
+<li>第二章：行业背景调查（下）：利用详实的数据分析行业和市场机会点，进一步解释为什么选择中国男士沐浴露作为清扬新品上市的方向。</li>
+<li>第三章：新品的规划：当下市场更着重的是品类的细分，那么怎么做到行业的细分以及产品的呈现？</li>
+<li>第四章：产品创新和明星筛选：创新是什么？如何通过当下最受消费者认可的创新来进行突破，让消费者真的愿意为我们的产品买单？</li>
+<li>第五章：品牌与消费者沟通的6个利器：现在我们产品已经准备好了，并且已经筛选好明星了，那我们的明星怎么去进行活动推广，让消费者产生购买呢？</li>
+</ul>
+<p>本篇为第五章，我们一起来看一下：</p>
+<p>在前几期的栏目中，我为大家分成不同篇目讲解了联合利华新品上市推广计划的不同流程（本篇文章文末可以查看往期内容）~</p>
+<p>今天，我们进入case分解的最后一篇——《品牌与消费者沟通的6个利器》。</p>
+<p>现在我们产品已经准备好了，并且已经筛选好明星了，我们的明星怎么去进行活动推广，让消费者产生购买呢？</p>
+<p>这部分其实联合利华会用到6个利器和消费者沟通，这6个利器其实对于任何品牌都是可以去使用的，因为它是方向性的选择，里面的内容也只是会根据不同的品牌和不同的渠道进行变化和优化。</p>
+<p>大家先把6个点跟我一起理一下：</p>
+<ol>
+<li>重量级媒体投放</li>
+<li>精准化消费者沟通</li>
+<li>现象级IP合作</li>
+<li>大规模产品派样</li>
+<li>超给力的终端促销支持</li>
+<li>不断档路演支持</li>
+</ol>
+<h2>一、利器1：重量级媒体投放</h2>
+<p>那我们挨着来看一下，首先看一下重量级媒体投放。对投放我们会有三个KPI来进行考察，一是范围，二是时间，三是人群。</p>
+<p>那么当我们公司已经对站外进行的social media的投放，需要需要被严格把控时，我们是希望它能够覆盖更多的省份，并且和关联省份进行宣传，比如男士沐浴露对于重庆的重要性。</p>
+<p>其次，在投放时间上也是希望选择旺季进行持续投放，什么时候是旺季？夏天就是旺季，男士需要洗澡的时候就是旺季。</p>
+<p>第三，触达人群，这里有一个关键词叫有效触达，就是找到目标人群才叫有效触达。</p>
+<p>那我们举个例子：如果今天我和你说我喜欢吃苹果，但是你给我了一箱梨，虽然你给了一箱的梨，但是并没有满足我的需求。所以说这里的有效触达就是还是要找到目标消费者，潜在男性购买客户进行更广的更长时间的触达，进行更好的转换，让费用更高效。</p>
+<h2>二、利器2：精准化沟通</h2>
+<p>其次，精准化沟通，直击目标消费者的痛点。</p>
+<p>当我们找到了消费者，那么我们需要去着重他的痛点才能提高转换。大家还记得最开始我们说过，沐浴露的市场为什么在持续增长吸收几个因素？</p>
+<p>那么这里其实就会关联到说哪些人是会被转换和提升的，第1个部分，过去购买男士清扬洗发水的消费者，那他对清扬品牌有认知，就很容易被转换成清扬男士沐浴露的消费者，这个毋庸置疑。</p>
+<p>第2个部分，大家还记得之前讲到从过去三瓶沐浴露，其中只有一瓶是男士沐浴露，转换成三瓶都是男士沐浴露，那这部分消费者其实也是我们目前要去抓住过去仅购买通用版沐浴露的消费者，进行教育和转换。</p>
+<p>那么第3个部分是男士洁面消费者，也就是最开始强调的，男士洁面消费者其实对男性专属商品有认知的，那么我们的目标也是希望能够转换男士洁面消费者来带动整个消费者认知。</p>
+<p>第4刚才是讲到过到现消费升级，皂转液，那么我们会精准的去触达香皂的消费者，让它转换成沐浴露的消费者，来提升销量表现。</p>
+<h2>三、利器3：现象级IP合作</h2>
+<p>第三个现象级IP合作，联合利华针对于清扬男士沐浴露，选择了两个IP，一个是漫威，一个是灌篮高手。</p>
+<p>这里可能有人会问，为什么会选择漫威和灌篮高手呢？</p>
+<p>其实我们会从2个点去考察IP的选择，时间和影响力。IP是不是在我们需要新品上市的时候，有新的动作，并且有流量和曝光，这是互相流量引流的一个方式。</p>
+<p>5月份漫威进行回归，那么当联合利华推出相关类型商品时就会和大的流量档期进行捆绑造势。</p>
+<p>而灌篮高手作为男性非常热爱的动画片，那他也是首次开放IP合作，也就是第1次一定是会被期待的，那这部分联合利华也选择和他进行合作，借助灌篮高手第1次开放IP的流量。</p>
+<p>当我们选择好了IP，我们就要把IP发挥它最大的作用。</p>
+<p>一般品牌方和IP签署合约，会从几个维度去进行合作，第一线下主题陈列，利用IP的形象，在线下堆头进行宣传，吸引消费者眼球。</p>
+<p>第二，正版IP动漫手办，这个会作为附属品去和产品进行关联，提高产品的价值感。</p>
+<p>第三，把IP呈现在产品上来吸引消费者购买，这个部分就是，把刚才最开始产品只是放置元素和配方升级为放置IP，来在货架陈列中进行凸显。</p>
+<p>这个部分大家只要记住，IP的受众是否和品牌目标消费者一致，且如何去呈现IP和消费者互动，让他能够感受到品牌方和IP的融合，就可以满足IP的最大化使用。</p>
+<h2>四、利器4：大规模产品派样</h2>
+<p>第四，大规模产品派样强势拉升。</p>
+<p>当我们找到目标消费者，其实如果你只是单纯的和他宣传联合利华和明星合作了，推出了男士们的新款，或者说和IP合作，进行一轮造势，还是不能够足以吸引它，因为它并没有迈进购买这个行为的门槛。</p>
+<p>所以说我们也会通过一些精准推送，像9块9、劲爆尝鲜的形式来让他进入新品的门槛。除了机制以外，也会和其他的平台进行合作，争取更多的曝光资源来进行宣传，让消费者随时都可以看到我们的商品。</p>
+<h2>五、利器5：超给力的终端促销支持</h2>
+<p>继续借助男士清扬发水的影响力，去进行转换，让过去购买男士清扬发水消费者开始使用男士清扬沐浴露，从头发到身体，都能够洁净干爽。产品解决了，曝光解决了，明星和IP合作以及如何曝光也解决了。</p>
+<p>但是这个部分其实更像是品牌方，从上到下去和消费者沟通，但或许还不能够直接转换成消费者。</p>
+<p>阿里提出了人货场的概念，这里还差了一个什么？人！</p>
+<p>这里的人指的是促销员，促销员才会帮助我们真正的去提升转换。所以，清扬男士沐浴露的新品推广计划中，也包含促销员宣传推广，去提升销售的转换。</p>
+<p>千家门店用销售奖励去激励促销员与促销员，也是需要有激励政策，才会更愿意主动去推新品，并且我们去提高促销员的覆盖率，让更多的地方可有促销员进行宣传推广，消费者在清扬男士沐浴露上市的时候就能够一触即发立马被宣传到位。</p>
+<h2>六、利器6：不断档路演支持</h2>
+<p>按照之前的5大步骤，一个新品已经可以很好的在市场上进行销售和售卖，但是生意是做长期的，而不是短期利益。</p>
+<p>我们也会在未来的不同时间进行不同的活动主题投放，让消费者随时都可以看到清扬的爆发和宣传，那么就会有第6个点——路演活动的加强和消费者互动。</p>
+<p>从5月清扬和漫威的结合，展现无惧油腻，尽显英雄本色的主题，再到清扬7月男士节去创造一个节庆，让消费者进行购买。</p>
+<p>再到9月份灌篮高手IP首度和品牌方合作，去体现无惧油腻控油高手的主题，都是对之前IP很好的呈现，并且做到了持续影响和持续宣传。</p>
+<p>新品上市推广计划是一个完整且具有很强专业性的知识，通过5期的连载目前已经正式完结啦。如果我写的对你有一点帮助，欢迎订阅、收藏、点赞哦！</p>
+<p>我们一起来回顾一下内容：</p>
+<p>从最开始进行行业背景调查，了解消费者痛点，再到通过创新技术和包装和消费者进行互动，再到通过制定营销活动方案进行宣传，打爆商品——这就是品牌方在制定商品计划的所有步骤。</p>
+<p>相信大家已经通过清扬男士沐浴露更好的对新品上市推广计划进行了解，也希望大家有机会去推出自己的商品，让消费者喜欢。</p>
+<h3>相关阅读：</h3>
+<p>《<a href="http://www.woshipm.com/marketing/4249559.html" target="_blank" rel="noopener">10年市场人，带你了解新品上市推广计划全流程</a>》</p>
+<p><a href="http://www.woshipm.com/it/4269256.html" target="_blank" rel="noopener">《根据市场趋势，品牌是如何选择新品上市方向的？》</a></p>
+<p><a href="http://www.woshipm.com/marketing/4289510.html" target="_blank" rel="noopener">《深度解析针对品类细分的市场，联合利华是怎么做的？》</a></p>
+<p><a href="http://www.woshipm.com/marketing/4289954.html" target="_blank" rel="noopener">《如何通过创新产品和筛选明星来打造爆品？看完这篇你就知道了！》</a></p>
+<p>&nbsp;</p>
+<p>作者：Vivian薇薇安，美国顶级名校MBA毕业，近10年工作经验，现供职于腾讯，前联合利华负责新零售业务，包括品牌推广、新媒体运营、全域营销活动等。</p>
+<p>本文由 @Vivian薇薇安 原创发布于人人都是产品经理，未经作者许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议</p>
+➜从0到1建立数据分析指标体系的底层逻辑
+http://www.woshipm.com/data-analysis/4300825.html	9227
+<blockquote><p>编辑导语：在我们日常工作中会遇到很多数据，比如在活动运营时的一些相关数据，这些数据增加后需要的数据指标也越来越多，所以建立数据分析指标体系是非常重要的；本文作者分享了关于从0到1建立数据分析指标体系的底层逻辑，我们一起来看一下。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4302472" src="http://image.woshipm.com/wp-files/2020/12/BRgYqEOcfK7PMi6LiONF.jpg" alt="" width="900" height="420" /></p>
+<p>随着公司业务规模扩大，各类相关的数据量增加，数据指标也越来越多；<strong>如果缺乏数据指标体系和分析方案</strong>，就会难以判断整体业务发展状况、难以衡量产品/活动效果、等等。</p>
+<p>如今，各行各业都在说，“我们要数字化管理”，脱离“拍脑袋”时代；但是，到底怎么落地？数据指标怎么建立合理？不同的公司业务大相径庭，就算是同一个行业，也有不同规模，不同细分客户群，很难一概而论；有时候，看到竞品公司有哪些指标，虽然不知道有没有用，我们也急着“跟风”。</p>
+<p>什么才是适合自己公司或部门的数据体系？“人、货、场” 理论似乎很有用，但不是每个公司都有实体店，5W2H好像也很有道理，每个步骤都要套用这个理论么？SWOT好像也很有道理……</p>
+<p>今天，我们就来抛开所有这些看起来高大上的理论，从底层逻辑出发，<strong>梳理建立数据指标体系和分析方案的底层逻辑。</strong></p>
+<p>首先，我们来了解一下指标是什么？</p>
+<p>百度百科解释指标为：<strong>预期中打算达到的指数、规格、标准，一般用数据表示。</strong></p>
+<p>比如，Boss开年会时说：“我们今年新增的几个指标：员工流失率、门店客流量、客单价……（balabala）成果丰硕，收益明显！”。</p>
+<p>发言中所提到的“员工流失率”、“门店客流量”、“客单价”，就是指标，是对结果的数据化描述。</p>
+<p><strong>那么，什么是数据指标体系？</strong></p>
+<p><strong>即将零散的数据指标串联起来，成为一整套体系使其具备业务参考价值。</strong></p>
+<p>在商业中，数据只有一个目的“<strong>解决问题，创造价值</strong>”。</p>
+<p>但是“解决问题，创造价值”，对不同立场的人来说不一样；对研发部，出多少bug和做多少功能的比例很重要；对于销售，多少订单很重要。要是订单销售数据给研发部，对日常工作并没有参考作用，bug的比例给销售也没用；但是这些数据对总裁部都很有用，可以综合得知成本和利润比例。</p>
+<p>为了解决这个问题，<strong>引出第一条底层逻辑</strong>：</p>
+<h2>一、逻辑一：多维度视角</h2>
+<p><strong>先要确定数据指标体系的目标受众，“他”看数据的视角和维度</strong>：职位侧重点在哪里，业务阶段是初期还是成熟期？越是初期数据越少，越是成熟期数据积累越多，要考虑的点也越多。</p>
+<p>知道“他”的视角之后，去看“他”的业务是什么？</p>
+<ul>
+<li>对于门店经常提到“人、货、场”：分析哪些人，场地面积，货物种类。</li>
+<li>对于网页商城经常提到“转化漏斗”：多少个商品点击量，多少个加入购物车，多少个订单，转化率多少。</li>
+</ul>
+<p>似乎，不同业务要分析的“东西”完全不一样，到底一致性在哪里？</p>
+<p><strong>引出第二条底层逻辑</strong>：</p>
+<h2>二、逻辑二：业务场景关键元素分类</h2>
+<p>门店经营成交的场景“我在门店付钱给售货员，他收钱给我商品”。</p>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4302465" src="http://image.woshipm.com/wp-files/2020/12/6DjojLkhTYfB34hjKLFR.jpg" alt="" width="1048" height="492" /></p>
+<p>网页商城成交场景 “我点击商品，访问页面，（也许会咨询），点击提交订单。”</p>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4302466" src="http://image.woshipm.com/wp-files/2020/12/ejaJnpwXdCgevFWgiJ2K.jpg" alt="" width="1108" height="542" /></p>
+<p>虽然各个行业，分析的具体事项不一样，但都是围绕，<strong>业务场景关键元素分类，进行的。</strong></p>
+<p>那么问题又来了，这些“元素”怎样更好？例如，我想在门店挣多点钱，我的货怎么分配？客户怎样更多？店员怎样卖得更好？搞个网站，我也知道点击，访问，订单，那怎样更多点击？为什么点击A不点击B? 怎样多点订单？围绕着刚刚的元素问下去，似乎有“十万个为什么”，我们怎么知道这些元素”从哪里来“ ？</p>
+<p><strong>引出第三条底层逻辑：</strong></p>
+<h2>三、逻辑三：追踪业务过程</h2>
+<ul>
+<li>门店零售业，客户从哪里出发，什么时段来到商城，进入门店的概率多大……</li>
+<li>网页商城，从哪里点击进来，进来之后浏览过多少页面，有多少链接引导他点击下一个链接……</li>
+</ul>
+<p>但是，这样梳理完成后，<strong>围绕关键元素追踪出来的业务过程，似乎不是相互独立的。</strong></p>
+<ul>
+<li>零售业的逻辑 “人，货，场”，但是“我”这个人，经过门店，会不会进去，和这个门店摆放的“货”关联性很大。</li>
+<li>网页商城，我访问产品页，遇到问题能找到咨询页会很开心，但是我没想提问咨询的时候咨询按钮主动跳出来挡住视线，我可能会出于厌烦直接离开。</li>
+</ul>
+<p>思考到这里，引申出第四条底层逻辑：</p>
+<h2>四、逻辑四：梳理业务逻辑关系（强关联，弱关联，互斥关系）</h2>
+<p>先有访问才会下订单，访问和订单是强关联。网页不需登录可以浏览商品，登录和浏览是弱关联；投诉的次数越多，复购的概率越低，复购量和投诉量是互斥关系。</p>
+<p>这样，<strong>我们已经通过梳理业务考虑到很多节点的数据；说到用处，这些数据都有用，</strong>但是，全部都关注，看完一遍，都要花很多时间；尤其是忙起来，就只想知道 “一个” 数据结果。</p>
+<p>为了解决这个问题，引出下一条底层逻辑：</p>
+<h2>五、逻辑五：重要性过滤</h2>
+<p>我们未必能马上说出a，b，c，d……里面哪个重要，哪个次等重要，梳理思路的时候，可以用一个小工具，对比记分卡。</p>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4302467" src="http://image.woshipm.com/wp-files/2020/12/LMEAOaxsiY5FhSDCnLn6.jpg" alt="" width="1002" height="350" /></p>
+<p>用每一行和列的项目对比，例如第一个格子，订单数和订单数，自己对比自己，没有可比性，格子放黑色；第二个格子，订单数和线索数，订单数更重要，写1；第三个格子，订单数和客户数，客户数更重要，那么订单数不得分，写0；以此类推，最后得出每一行的总分数。</p>
+<p><strong>在这个记分卡里，重要指标是订单数和客户数，次要指标是线索数和套餐数。</strong></p>
+<p>那么问题又来了，要是“我”也是刚进入这个领域，并不确定，哪些重要哪些不重要，该怎么办？标准是什么？</p>
+<p>那我们引出第六条逻辑：</p>
+<h2>六、逻辑六：对比出标准（时间，指标，比率）</h2>
+<p>重要不重要，参照物，标准，这些都不是“拍脑袋”出来的，都是靠“对比”出来的，怎么对比？这里有三个原则，从时间上对比，从指标上对比，从比率上对比。</p>
+<p>从时间上，这个月完成得好不好，要和上个月对比，和去年对比。具体对比什么，要比较同一个指标；但有时候，同一个指标直接对比并不能说明问题，</p>
+<p>例如，今年付费用户90个，去年付费用户80个，今年一看上去就是更好。</p>
+<p>但是去年没有做推广，总用户只有100个，其中付费就有80个。今年花大钱推广，总用户有300个，其中付费只有90个。</p>
+<p>这样看，推广费都赔进去了！这里应该用 “付费率” 做对比，去年付费率80/100= 80% ， 今年付费率90/300= 30% ，明显去年比今年好很多。</p>
+<p>不比不知道，一比吓一跳，通过对比，真相大白。</p>
+<p>运用以上六条底层逻辑，完成了从0到1梳理和建立数据指标体系。</p>
+<p>我们通过“数据”去发现问题，分析问题，并且解决问题。而通过这套搭建基本数据分析指标体系的底层逻辑可以让这件事情变得事半功倍，从源头发现问题；借助体系化的工具，在日常工作中可以监控业务，发现问题，科学的制定业务目标，在追踪业务过程找到改进的切入点。</p>
+<p>但是，后续的实际工作中，建立数据指标体系需要各部门紧密沟通，还需要对公司业务和各部门职能的深刻理解，更<strong>要针对业务痛点，做细分板块的深入数据分析等等。</strong></p>
+<p>&nbsp;</p>
+<p>作者：李启方，专注数据分析和企业数据化管理；公众号：数据分析不是个事儿</p>
+<p>本文由 @李启方 原创发布于人人都是产品经理。未经许可，禁止转载</p>
+<p>题图来自Unsplash，基于CC0协议</p>
+➜万恶之源KPI｜B端产品业务专家之路
+http://www.woshipm.com/zhichang/4300113.html	9691
+<blockquote><p>编辑导读：说到KPI，是不是感觉到一阵头疼，当代职场人的“紧箍咒”非它莫属了。身为产品经理，在梳理业务场景及设计功能时，也必须要结合使用者的KPI，具体问题具体分析。本文以客服业务为例，分析KPI是如何影响业务的，产品经理又该怎么使用它？</p></blockquote>
+<p><img data-action="zoom" class="size-full wp-image-4302471 aligncenter" src="http://image.woshipm.com/wp-files/2020/12/zZz3z2vc3x348vOkHV9v.jpg" alt="" width="900" height="420" /></p>
+<p>讲到KPI，大家可能就会闻风丧胆。每天的撕逼，每周的996，每个月的熬夜写报告，不就是为了达成所谓的KPI，进而拿到更好的回报，也可能残忍地只是因为怕被优化。所以说，KPI真的是万恶之源，驱动着企业每个员工往预设方向匍匐前进。也就是说，员工的行为很大程度上是受KPI控制的。</p>
+<p>在TOB场景中，产品经理在梳理业务场景及设计功能时，也必须要结合使用者的KPI，确定场景是否为KPI主线，否则很可能设计的功能压根没人用。大家只关心自己的绩效，谁会那么好心关心产品经理的绩效呢？（扎心一刀）</p>
+<p>既然KPI如此重要，身为产品经理，必须全面了解其影响，并利用好KPI，才不会被使用者骂傻x，做的功能毛用没有。所以今天以客服业务为例，我们来掰扯掰扯KPI是怎么影响业务的，产品经理又该如何用好它。</p>
+<h2>一、成也KPI</h2>
+<p>KPI的形成最终是为了辅助业务更好地服务用户，所以需要根据业务的发展阶段遇到的问题，不断完善KPI，最终相辅相成，形成良好的服务流程。</p>
+<h3>1. 客服接待少</h3>
+<p>现在有一个创业公司，业务发展很快，随之而来是用户的各种售后问题。老板迅速成立客服团队，第一个任务是要求进来咨询的用户都能得到问题解答。</p>
+<p>客服主管临危受命，KPI拔刀相助！淦！</p>
+<p>要让接通率居高不下，就得让每个客服接待用户越多越好。因此主管给了客服第一个KPI：接待量，即每天客服接待的用户总量。客服每天必须完成接通量的目标值，比如200个用户。当然，不只是目标值，否则客服每天达标之后，就可以舒舒服服地划水等下班了。所以除了目标值，还得有完成值，让客服每天接待量达标后依然有动力继续解答问题。</p>
+<h3>2. 客服接待差</h3>
+<p>接着，当管理者重点关注接待量，随之而来另一个问题，部分客服会囫囵吞枣地一通解答完事，但其实用户的问题并没有被解决，甚至引起很多投诉。</p>
+<p>数量之外，要保证质量。淦！</p>
+<p>为了激励客服好好接待，要有一些服务质量的KPI，比如满意度。满意度是由用户在咨询结束后做的评价，用户给越多好评，客服对应的KPI分数就越高。这样，客服才能用心服务好每个用户，并在结束时提醒用户：亲，给个好评。如果没有帮用户解决问题，随便一句“亲，给个好评”，用户随手给个差评。</p>
+<p>然后，为了避免投诉这样的严重事件，会制定惩罚的KPI，每次投诉，可以让客服当月的满意度分值直接变为0，甚至整体KPI都可能砍掉。就如同法律的底线一样，不允许客服去得罪客户，触碰投诉底线。</p>
+<h3>3. 客服接待慢</h3>
+<p>有了这些指标，客服已经可以接待很多用户，每一个问题也会认认真真地去回复。但用户还是不满意，深究了原因发现，客服虽然能否给出答案，但响应太慢了，有时候用户等久了，就离开了，还是没能解决人家问题。</p>
+<p>老板一怒，KPI再堵。淦！</p>
+<p>管理者赶紧制定下一个KPI，响应及时率。这个指标要求客服对用户的问题都及时响应，行业通常要求是30秒响应。如果客服30秒内没有回复，用户可能不只是不鸟客服，甚至不鸟该平台了，转而去其他平台，造成用户流失。所以这个KPI就是为了这30秒黄金时间，所谓吾之用户，分秒必争！在客服这里也一样！</p>
+<h3>4. 客服接待啥</h3>
+<p>好了，业务已经正常运转了，老板这时候突然想了解用户进来咨询哪些问题，用于反哺上游部门做业务优化。</p>
+<p>管理者迟疑了，哪来的数据，难道要一个个聊天记录去查吗？</p>
+<p>遇事不决，KPI玄学！淦！</p>
+<p>管理者制定了下一个KPI，通话总结率。这个KPI要求客服对每个用户的咨询做总结，选择对应问题标签，只有达到100%的总结率，才是达标的。</p>
+<p>之所以需要制定KPI，是因为单纯要求的话，客服不会认真执行的，他们只会把自己的绩效要求做好，就算天塌下来，也不能让他们去帮忙顶，最终极有可能导致数据缺失。</p>
+<p>有了这些标签，管理者就可以轻松跑出一份月度数据报告，完美呈现给老板。淦！</p>
+<h2>二、败也KPI</h2>
+<p>当然，咱不能听风就是雨，KPI虽好，但也不要贪杯，否则就会引起“恶心呕吐”现象。当管理者由于考虑不周全（简称：脑抽），推出了奇奇怪怪的指标，就可能产生奇奇怪怪的现象，影响用户体验。</p>
+<p>客服有了满意度的指标之后，管理者在执行过程中发现，很多用户都不评价的，这就导致有的客服虽然都是好评，但因为参评的基数很少，导致好评率显得意义不大。</p>
+<p>趁老板没发现这个问题，管理者快速出了一个策略，参评数少，那就让用户多参评不就行了？然后就有了参评率这个KPI指标。管理者的想法是，只要客服背了这个指标，就会想更多办法去让用户给好评，比如提升服务质量？</p>
+<p>的确，客服会想办法，但万万没想到，客服会比管理者更粗暴。当客服每次回复用户问题之后，就带上一句：“亲，如果觉得解答你的问题，请给我一个好评哦！”这样子说可能感受不出来绝望，我们来模拟场景细品一下。</p>
+<blockquote><p>用户：这个电器坏了，我要申请维修。</p>
+<p>客服：您可以在官网XX地方提单直接申请哦。</p>
+<p>客服：亲，如果觉得解答你的问题，请给我一个好评哦！</p>
+<p>用户：那我需要提交什么资料吗？</p>
+<p>客服：只需要上传电器坏了的照片即可哈。</p>
+<p>客服：亲，如果觉得解答你的问题，请给我一个好评哦！</p>
+<p>用户：尼玛，我问题还没问完，你这么着急让我给好评，你到底有没有心解决我的问题啊！</p>
+<p>用户：不行，我要投诉。</p>
+<p>客服：亲，你听我狡辩，我不是故意的&#8230;</p></blockquote>
+<p>瞧瞧，当一线所有员工都在这么邀评的时候，那可真是热情过售楼大厅，热闹非凡。确实，邀评是上去了，老板可能也会来要命吧。</p>
+<p>诸如此类KPI，有时候还并不是管理者不会决策，而是无奈之举。公司上游业务发展可能很快，只要能拉到用户，只要能成单，其他就交给售后去搞定了。这就可能让客服管理者每天接到很多来自上游的意外通知，比如发现很多用户刷单，采取封号，但有误杀率，要客服帮忙审核，为用户解封。审核解封不在客服日常工作范围内的，管理者需要调整KPI，临时加入该工作项的指标，根本来不及考虑是整体服务流程的影响面。</p>
+<p>瞧瞧，老板来要命，管理者只能喊冤。淦！</p>
+<h2>三、KPI与产品的成败</h2>
+<p>了解这些KPI，对产品经理有什么用？</p>
+<p><strong>首先，产品经理在思考需求的时候，一定要结合使用者的KPI。</strong></p>
+<p>产品经理设计的功能是给业务人员使用的，在客服领域自然是给客服用的。如果功能不仅帮不了他们更好地达到绩效，还产生负面影响，那产品经理就别想走出业务大门了。</p>
+<p>听过一个例子，产品经理为了让客服对信息页面一目了然，采用了所有内容收起的方式，只展示标题，客服想要看哪块内容，就点击展开。这个功能上线后，所有客服人员激动不已，纷纷迫不及待想找到产品经理，表达自己的敬畏之情！“求你不要再做我们的需求了！”</p>
+<p>后来复盘才知道，客服最终是希望快速查询到信息回复用户，保证响应时长和接待量的KPI，而现在每次查询都要点一遍，增加了时间成本，南辕北辙了，且容易被打。</p>
+<p><strong>其次，利用好KPI，可以提升产品的功能使用率。</strong></p>
+<p>当产品经理新上线了功能，客服可能在使用习惯上面有所不适应，然后不想用，甚至故意反馈说不好用。如果在TOC领域，用户不愿意用，基本都是产品经理没有考虑用户习惯的问题。在TOB领域却不是这样，业务使用场景往往是领导层决策的，所以根据决策场景设计的功能，即使客服不愿意用，也可以通过制定【使用率】的KPI指标，强行推广。</p>
+<p>说句现实的话，在KPI面前，没有习惯，只有“从心”。最后，观察KPI体系，可以了解业务发展的趋势和重点。</p>
+<p>KPI体系有很多指标，除了上述，还有质检分数、工单完单率、工时利用率等。指标多了，就有权重之分。</p>
+<p>同时，业务发展是动态的，落到客服的指标、指标权重也不是一成不变。管理者在每个月的月末就需要制定下个月的KPI规划。</p>
+<p>如果公司下个月是订单高峰期，相应咨询量会达到高峰，客服就需要保证接通率，接待量的指标权重会有所提升；如果公司下个月是淡季，咨询量少了，那可能客服还得负责一部分防止用户流失的工作，每个用户进来咨询都需要从头跟到尾，保证服务体验，满意度/响应率的指标权重就有所提升。</p>
+<p>如果产品经理能够关注KPI的趋势变化，也可以了解到业务部门的不同阶段关注点，在合适的时间让他们遇到对的需求，成就如期而至的缘分。</p>
+<h2>四、写在最后</h2>
+<p>总结起来，KPI的作用可以总结成一句话：“一提升二避免三激励四保证”，也就是提升用户体验、避免服务失控、激励员工、保证功能使用率。同时，KPI是一把双刃剑，无论是产品经理，还是业务管理者，用好它，它就是倚天剑；用歪了，它就是撕逼的杀猪刀。</p>
+<p>最后用一句诗来结尾：别人笑我接地气，我笑他人看不穿；不见业务KPI，无用无夸易被打。</p>
+<p>&nbsp;</p>
+<p>作者：七侠   微信号：steseven  公众号：小七侠    欢迎交流！</p>
+<p>本文由 @steseven 原创发布于人人都是产品经理，未经作者许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
+➜竞品分析报告 | 百词斩、墨墨背单词、扇贝单词在线教育
+http://www.woshipm.com/evaluating/4300714.html	10625
+<blockquote><p>编辑导语：本文以百词斩作为主要分析对象，选取扇贝单词英语版和墨墨背单词作为竞品进行对比分析，旨在从竞品中寻找差异点与创新点，结合百词斩的产品定位主线和产品阶段性目标主线，寻找其在下一版本中的优化与迭代路径。</p></blockquote>
+<p><img data-action="zoom" class="aligncenter size-full wp-image-4302460" src="http://image.woshipm.com/wp-files/2020/12/435KmRPbUAelrIjnQnPE.jpg" alt="" width="900" height="420" /></p>
+<h2>一、行业背景</h2>
+<h3>1. 行业环境</h3>
+<p>百词斩属于在线教育行业-在线英语教育-单词、工具类app，本节通过在线教育宏观环境的PEST分析法对其所处的行业环境进行简要分析。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/p0aNRhpiIE3uZEk6GjsP.png" alt="" width="646" height="736" /></p>
+<h3>2. 市场现状及趋势</h3>
+<p>百词斩目标市场以成人应试英语为主，K12教育中的英语市场为辅；由于K12英语教育更多以线下教育为主，市场波动较小并且非核心目标市场，因此本节重在对在线成人英语市场现状进行分析。</p>
+<p><strong>1）在线教育市场现状</strong></p>
+<p>在线教育市场规模及趋势：</p>
+<p>根据艾瑞咨询数据显示，2019年中国在线教育市场规模3225.7亿元，同比增长28.1%，预计未来3年市场规模增速保持在19-24%之间。</p>
+<p>2019年，素质教育、在线K12大班和高等学历教育的迅速发展进一步贡献了在线教育规模的提升；此外，用户对在线教育的接受度不断提升、在线付费意识逐渐养成以及线上学习体验和效果的提升是在线教育市场规模持续增长的主要原因。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/s2p6p0zRrSKYH3FQLgeo.png" alt="" width="639" height="291" /></p>
+<p style="text-align: center;">（数据来源：艾瑞咨询）</p>
+<p>在线教育市场结构：</p>
+<p>高等学历教育及职业培训一直是中国在线教育的市场主体，占整个在线教育市场规模的80%左右，尤其在提升学历、求职、考证等场景中，教育培训需求更加强烈；而K12教育市场，虽然市场刚需性强，但是该阶段的学习存在着试错成本高的特点，K12家长和学生对在线教育持谨慎态度；因此在发展初期占比较低，2012年占比仅9%。</p>
+<p>随着新一代80后/90后父母教育意识的升级和消费能力的提高、新一代00后/10后孩子对互联网的天然熟悉，叠加2020年年初的新冠疫情加快了在线教育的宣传推广，K12家长及学生群体对在线教育的接受度正在快速增长；2019年，K12教育的占比已提升到21.3%，而高等教育及职业培训的占比下降到75%的水平。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/Bv6sNH7ndfNSTUcpXyQ2.png" alt="" width="1255" height="483" /></p>
+<p style="text-align: center;">（数据来源：艾瑞咨询）</p>
+<p><strong>2）在线英语教育市场现状</strong></p>
+<p>在线英语教育按照教育阶段与年龄层次主要分为成人英语、K12教育英语；按照适用场景可以分为应试英语和实用英语。</p>
+<p>成人英语市场规模及趋势：</p>
+<p>2019年成人英语市场规模在953亿元左右，同比增速10.5%；COVID-19疫情对应试类英语培训及线下实用英语培训都造成一定冲击，预计2020年市场规模将缩水37.6%左右降至595亿元，随后逐步恢复，预期2021-2024的CAGR（Compound Annual Growth Rate，复合年均增长率）为11.7%。</p>
+<p>市场结构上，实用英语培训2019年占比为62.7%，随着线上课程品类增多及服务和教学效果改善，更多的实用英语学习需求将被挖掘，预计2021-2024的CAGR在11.3%左右；另外，随着企业出海需求的增加，企业培训需求增速有望提升，机构业务未来几年或将有较快增长，预计2021-2024的CAGR达20.3%。</p>
+<p>应试英语培训预计2021-2024的CAGR在8.9%左右，考研英语培训将成为应试英语培训规模上升的重要驱动力之一。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/vYCU2n1fxdk4H6oucWJ9.png" alt="" width="626" height="227" /></p>
+<p style="text-align: center;">（数据来源：艾瑞咨询）</p>
+<p>成人应试英语市场规模及趋势：</p>
+<p>2019年成人应试英语市场规模292.9亿元，受新冠疫情影响，2020年市场规模同比下降24.4%至221.5亿元，其中托福、雅思等海外考试受影响最大，预计2020年市场规模将下降45.5%；考研英语市场受影响相对较小，预计2020年市场规模仍有一定增长。</p>
+<p>英语作为考研中最重要的科目之一，随着考研人群不断增多、参培率不断提升，其市场规模正不断扩大并逐步成为继海外英语考试外的第二大成人英语培训市场。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/vrFYg78dsMEkeOt2MXHj.png" alt="" width="621" height="281" /></p>
+<p style="text-align: center;">（数据来源：艾瑞咨询）</p>
+<p>成人应试英语细分市场现状及趋势：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/hvvVJRTA5NDoNKiRNDHu.png" alt="" width="587" height="584" /></p>
+<p><strong>3）用户需求</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/HeuedHxQ7Zd5EFPnmFvB.png" alt="" width="647" height="480" /></p>
+<p><strong>4）使用场景</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/9oPrpjVpzcW0Jav9VgCi.png" alt="" width="651" height="727" /></p>
+<h3>3. 市场机会</h3>
+<p><strong>1）考研和海外考试仍有较大空间</strong></p>
+<p>海外考试和考研英语市场是成人应试英语市场规模最大且最具有增长潜力的两大细分领域，是较好的布局赛道；但二者也各有其挑战，如考研赛道需求分散，且对机构的经验沉淀和后台体系要求高；海外考试赛道行业门槛低，机构市场份额容易被个体及小机构蚕食。</p>
+<p><strong>2）少儿英语培训火爆</strong></p>
+<p>“全面二胎”的实施促使2016年新生儿出生率达12.95‰，为2002以来最高值；2017年新生儿数量为1723万，同比略有下降，但二孩比例同比提高了10个百分点；成长于信息化时代的80后、90后新生代家长对互联网和在线教育的接受度高，并已日渐普遍地认识到低龄化英语启蒙的重要性。</p>
+<p>2016年，青少儿英语培训融资额大增，主做线上成人英语培训的机构也纷纷转型或拓展青少儿英语业务，希望以此扭转收入遇到瓶颈及难盈利的困境。</p>
+<p>以51Talk为例，其以成人实用英语培训业务起家，但受高额的销售费用拖累，一直处于亏损状态，2014-2016年期间获客成本一直高于客单价。</p>
+<p>2015年，51Talk把主业务转向少儿英语培训，客单价才开始逐步提升并能够覆盖获客成本。</p>
+<p>2019年，少儿英语培训已经贡献51Talk93.7%的流水（Gross Billings）；此外，美联英语、英孚英语等传统实用英语培训机构也纷纷发力少儿英语业务，据美联英语招股书资料，自2018年推出青少儿英语以来，其在营收中占比不断提高，由2018年的4.6%提升至2019年的18%。</p>
+<p><strong>3）实用英语有待重新激活</strong></p>
+<p>成人实用英语培训有大量未被激活需求，在线教育及其配套基础设施的完善将帮助开拓更大规模的市场。</p>
+<p>传统实用英语培训高昂的价格只圈定了对实用英语有刚需的核心圈层，还有大量有学习意愿但受制于价格、时间等因素而迟迟未动的人群；线下实用英语培训课程动辄上万元，即使引入消费贷、分期还款的模式也是“饮鸩止渴”，难以解决本质问题。</p>
+<p>而线上的实用英语培训机构也遇到了盈利难题，成人通用英语培训需求往往是非刚需性需求，获客困难，线上成人通用英语培训获客更是难上加难，获客成本高企且用户生命周期短，商业模式难以跑通；但这并不代表线上成人实用英语就沦为了夕阳行业，现实的矛盾是供给无法很好的满足用户需求，导致市场空间没有被释放。</p>
+<p>近年来，信息技术的发展一定程度缓解了供需矛盾，如提供更低价格纯线上英语培训服务的有道精品课其实用英语业务就取得了较高速增长；此外，一些轻服务知识付费 类产品也大量涌现，如借助AI实现千人千面的流利说、主打真人情景对话的开言英语、创建英文短视频社区的鲜榨口语等产品；抖音、快手内更是出现了一大批英语宝藏教师，低廉的价格、碎片化的学习方式将有助于转化更多的非刚需用户。</p>
+<h2>二、竞品选择</h2>
+<p>在英语单词背诵产品中，根据 ASO、论坛热度、下载排行等综合因素，初步选取了【扇贝单词英语版】、【墨墨背单词】、【不背单词】、【金山词霸】五个竞品进行深度使用、分析。</p>
+<p>其中，【墨墨背单词】最近较为火爆，功能比较单一，专注于单词背诵，整个界面较为简洁，这一点与百词斩比较契合；而【扇贝单词英语版】业务体系庞大，除了最核心的背单词功能，还有平台电商以及各类咨询、玩法等，比如单词对战；同样，【百词斩】也推出了斩家活动和单词对战功能，在这一点上二者有相似之处。</p>
+<p>因此，本文选取【墨墨背单词】和【扇贝单词英语版】作为竞品进行对比分析。</p>
+<h2>三、竞品分析</h2>
+<h3>1. 产品定位</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/yNyn83omlzms8fE905kL.png" alt="" width="603" height="390" /></p>
+<h3>2. 迭代历程</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/bhCKgI0rxiEkqcuHzTfV.png" alt="" width="672" height="819" /></p>
+<p>百词斩于2012年以“图文模式”背单词切入教育行业细分市场，之后逐渐的拓展了自己产品个性化的学习模式，比如单词TV、单词电台等，增加了背单词的趣味性。</p>
+<p>从版本迭代来看百词斩有倾向于社区发展，社区业务很丰富，新增了圈子、好友PK等功能，激励用户，增强了用户粘性；但其在发展社区业务时始终坚持最核心的学习功能，因此社区业务也完全围绕学习展开，并且几乎没有融入社交属性，保持着产品的初心。</p>
+<p>墨墨背单词于2014年进入市场，是三款app中最晚的一个；从初创到现在一直专注做纯粹的单词记忆APP，有着丰富的单词记忆方法。</p>
+<p>从迭代记录来看，墨墨的迭代全部围绕着背单词这项核心业务，没有过多的功能拓展，在2018年底推出精益PK；当用户发现某个例句或助记有瑕疵的时候，可以发起“精益”对原内容进行修正与原创作者进行PK，因此到现在例句或助记内容已经渐渐得到完善。</p>
+<p>最近墨墨背单词在签到页面新增了“墨墨官方淘宝店”链接，可以看出其正在寻找新的盈利模式，但墨墨墨墨仍然坚持最简洁的界面和最核心的功能。</p>
+<p>扇贝单词2013年进入市场，在初创时就做学习与社区社交结合的模式；随着版本的不断迭代，扇贝开始倾向于课程业务发展，新增了四六级、考研等训练营和课程，还将python编程课也引入进来，拓宽了盈利渠道；扇贝还发展了自己的会员业务并与keep进行会员合作，从最初的一款单词记忆工具开始多方向发展，提高用户粘性和用户活跃度。</p>
+<h3>3. 用户分析</h3>
+<p><strong>1）用户画像</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/oEwzCOzS53IzWnq7kvZY.png" alt="" width="1887" height="498" /></p>
+<p style="text-align: center;">（数据来源：百度指数）</p>
+<p>首先从年龄分布来看，总体上三款APP的用户年龄主要集中于30岁以下。</p>
+<p>【墨墨背单词】与【扇贝单词】的分布较为一致，用户年龄更集中于20-29岁，集中度更强，30岁以下用户占比约80%，其中20-29岁用户占比超过60%；而【百词斩】用户年龄分布与另外两款存在差异，用户年龄更加分散，19岁及以下的用户占比28.39%，20-29岁用户占比38.16%，而30岁以上用户占到了三成。</p>
+<p>从性别分布来看，三款APP基本一致，男性用户数均高于女性用户数，这种男女比例的差异在【扇贝单词】中更为凸显。</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/AnC25P4XL4V9DB52mYe7.png" alt="" width="648" height="284" /></p>
+<p style="text-align: center;">（数据来源：百度指数）</p>
+<p>从地域分布来看，三款APP用户多处于广东、北京、山东、江苏、四川、河南、浙江、上海等地；其中广东用户数最多，而由于【百词斩】地处成都，因此百词斩在四川的用户也相对较多。</p>
+<p>最后再从用户的职业来看，背单词APP的用户以在校大学生为主，这一类用户主要以应试为目的，包括大学英语四六级、考研英语、出国留学英语等；另一部分用户是年轻的职场白领，这一类用户更希望学习到实用型英语，能够满足工作需求；最后就是部分处于中学阶段的学生用户，但由于学校禁止携带手机，因此这一类用户数量较少、活跃度也较低。</p>
+<p><strong>2）用户需求</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/pfSZByOc8M25urYA6PeP.png" alt="" width="622" height="482" /></p>
+<p><strong>3）使用场景</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/9pTe9QlBEPEdvlXSPwe4.png" alt="" width="647" height="748" /></p>
+<h3>4. 产品功能</h3>
+<p><strong>1）功能拆解</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/uoWYLechcY3CbjVI1sYV.png" alt="" width="658" height="912" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/OBHcOVbOKEbGdWjupbWt.png" alt="" width="631" height="413" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/a6BgfVaxjHlbyCgJWUmC.png" alt="" width="640" height="879" /></p>
+<p><strong>2）功能分析</strong></p>
+<p>功能模块对比：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/G2QasXJ3Psw3nKrJqJ4S.png" alt="" width="558" height="522" /></p>
+<p>从以上的功能交集图中我们可以看到，百词斩和扇贝单词都有许多自己的独特功能，而墨墨背单词功能模块最少。</p>
+<p>功能亮点与缺陷：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/qetUziLFN4J3xsU8jQLh.jpg" alt="" width="575" height="1846" /></p>
+<p><strong>3）背单词流程</strong></p>
+<p>百词斩背单词流程：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/3I070Tm8up50CIH1P4Jr.png" alt="" width="1286" height="828" /></p>
+<p>墨墨背单词流程：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/yrD31oMR54Ztp9bkTWN1.png" alt="" width="1269" height="606" /></p>
+<p>扇贝单词背词流程：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/oXiymcFQjFUnacHc2ltR.png" alt="" width="1328" height="594" /></p>
+<h3>5. 视觉与体验</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/AJplNjiUiuhbfruzBob3.png" alt="" width="613" height="120" /></p>
+<p><strong>1）背词起始页</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/OuqOCfwRIGh5qC1dqpjc.png" alt="" width="551" height="378" /></p>
+<p>百词斩和扇贝单词背词起始页都展示了每日的学习计划，点击开始背词button就可以进入单词页面；并且在首页展示正在学习的单词书，用户可以点击进入，更换词书或是调整学习计划，该页面二者较为相似。</p>
+<p>单从布局、配色和图形的视觉体验来讲，笔者更喜欢百词斩的界面风格，并且百词斩没有任何广告位，观感舒适；而墨墨背单词则将界面做到了极致的简洁，没有过多的信息展示，直接就进入到背词模块，具体学习计划通过红色消息提示的样式在底部tab栏展示；而如果要更换词书，需要在选词模块中调整，若要调整单词的学习上限则需要在设置中调整。</p>
+<p>墨墨背单词最为轻量，仅保留最核心的背词和相关功能模块，将极简主义做到极致；但笔者认为底部的红色单词数提示让人很难受，更像是未读消息提醒。</p>
+<p><strong>2）背词模块</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/LRaNFwR378KvDZQJpti4.png" alt="" width="356" height="396" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/LBnRGBazKDaHg4V1b08U.png" alt="" width="356" height="390" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/3iXbN24RdSpNaeHTdRmJ.png" alt="" width="352" height="409" /></p>
+<p>从背单词的页面来看，百词斩在自己特色的图背单词上做了改进，将单词释义也在图中进行展示，弥补了图片与单词实际意思不够符合的缺陷；对于简单的单词，用户可以选择“斩”去，对于难度较高的单词，用户可以选择提示，根据提示再选择答案，但提示不得超过3次，当超过三次时直接跳转到单词详情页。</p>
+<p>墨墨背单词是让用户做“填空题”而非“选择题”，用户思考单词的意思，然后点屏幕查看单词详情，再选择是认识、模煳还是不认识，系统根据用户的熟悉度智能给用户推送复习单词；墨墨背单词的一大特色是用户可以自行创建或者引用例句/助记，并且提供了大量的权威性词典，比如必应、柯林斯、剑桥等。</p>
+<p>扇贝单词的背词机制与墨墨较为相似，也是让用户事先思考单词的含义，如果认识可以直接点击查看单词详情，如果不认识可以点击提示，提示后可以选择想起来了或者仍然不知道，这个时候会跳转到单词详情页；但笔者发现一个问题，如果某个单词用户以为自己认识，因此点击“我认识”button，但实际却记错了，这时系统也将单词识别为认识，导致后续出现频率低；另外，与墨墨类似，扇贝也提供派生联想和单词笔记的自主创建和引用。</p>
+<p><strong>3）搜词页面</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/UjjleW0bFJ4fxMrurMG1.png" alt="" width="518" height="384" /></p>
+<p>百词斩搜词页面的内容包括图文例句、详细释义、近义词、反义词、形近词、词根词缀和英文释义，用户可以收藏单词。</p>
+<p>墨墨背单词的搜索框位置与另外两款不同，其摆放位置在选词栏的顶部，相比另外两款app不太显眼；墨墨搜单词的页面内容包含单词释义、单词数据、例句、助记和词典，这里我们可以看出墨墨对于数据的执着及其产品的特色，展示的那次词频排名、难度等级、学习人数和认知比例，将数据的运用发挥到了极致。</p>
+<p>扇贝单词搜词页面内容包含释义、例句、智慧词根、派生联系和单词笔记，用户可以将单词添加到生词本中。</p>
+<p><strong>4）单词复习</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/UIy2WOtSsRqRfXwbAGwt.png" alt="" width="576" height="414" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/65I7QXU9nmpfjDUv53eA.png" alt="" width="576" height="411" /></p>
+<p>从单词复习来看，百词斩的单词复习功能是最为全面的，在单词训练模块中，包含了快速复习和深度复习两大板块，快速复习包含了单词速听和单词自检；而深度复习中包含了英文选义、中文选词、听音选义、填空拼写、组合拼写、全拼默写和读词填空；整个单词训练涵盖了阅读、听力、写作、口语，全方位为用户提供服务。</p>
+<p>扇贝单词的单词复习也比较全面，当用户学习完当日的单词后，可以点击单词测试，在单词测试页面中包含了两大复习板块：今日回顾和阶段测试，他们分别都包含了看英选中、听音辨义、看中选英和拼写测试。</p>
+<p>最后是墨墨背单词，笔者认为其单词复习是设计最不合理的，首先用户需要学习玩今日的单词，然后在首页中点击日历中的logo，进入到今日学习详情；再点击查看详情进入今日回顾界面；最后点击右上角的再次复习，选择复习模式后才能成功进入到复习中；墨墨将单词复习隐藏的如此之深，导致部分新用户很难发现复习功能。</p>
+<p><strong>5）官方商城</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/eQGKN1q0ORvZb6Tm8cU4.png" alt="" width="438" height="481" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/jrvYRiod4Kr1bYdaYhrS.png" alt="" width="436" height="476" /></p>
+<p>从商城购物来看，百词斩的商城主要分为两块，平台商城和淘宝商城，从淘宝商城我们可以看到百词斩现在淘宝粉丝119万，粉丝数比较庞大；而不管是平台还是淘宝，百词斩的商品都让人充满了购买欲，主打原创商品，内容涵盖学习用具、考试书籍、生活周边等，商品设计简约清新，非常符合年轻人的审美。</p>
+<p>墨墨背单词也在发展自己的淘宝店，但是目前看来还处于初始阶段，点击app上的店铺入口跳转到的是淘宝网页版，非常不方便，并且其商品类目太少，目前只有单词实体书；因此，墨墨背单词的淘宝商城还有待发展。</p>
+<p>扇贝单词的商城与另外两款app不同，其主打的不是实体商品而是系列网课，通过设计和售卖网课来盈利，网课类型包括了四六级考研、阅读、听力口语、编程等内容。</p>
+<p><strong>6）单词对战</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/VdZxVN8YVmUI1XAdcQbh.png" alt="" width="556" height="403" /></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/WzQyXT03Q7flkOTEnDwh.png" alt="" width="544" height="388" /></p>
+<p>百词斩的单词对战有两种模式，排位赛与练习赛，抽取单词的机制是对战双方曾经学过的单词的交集；每场比赛总共七个单词，每个单词有10s的时间考虑选出正确答案，最终综合考虑耗时、正确率判断胜利方；在排位赛中，用户每输掉一次比赛则消耗10点能量，能量不足以支持比赛则必须等待能量恢复，每40s恢复一点能量，系统会根据用户等级来匹配同等级的选手。</p>
+<p>扇贝单词中，用户首先只能邀请第三方社交平台 的好友进行对战，邀请完毕后跳转到等待对手加入页面，此时才能点击随机匹配；如此不便捷的pk流程或许也是扇贝牺牲用户体验来拉新的与促活的策略；进入游戏中，同样是七个单词，用户有8s时间做出选择，最终同样是根据时间和正确率判断胜负。</p>
+<h3>6. 运营与商业化</h3>
+<p>本节采用AARRR漏斗模型，通过五个维度进行分析，包括了Acquisition（获取用户）、Activation（提高活跃度）、Retention（提高留存率）、Revenue（获取收入）、Refer（自传播）。</p>
+<p>本节将Revenue作为盈利模式的分析维度，Acquisition、Activation和Retention作为运营模式的分析维度。</p>
+<p><strong>1）运营模式</strong></p>
+<p>这里主要分析对比百词斩与扇贝单词的运营策略：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/X5dTuxJzjoc7GuUgBEBY.png" alt="" width="667" height="780" /></p>
+<p><strong>2）盈利模式</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/1QUOdWCJabqYGjJyOzvq.png" alt="" width="632" height="196" /></p>
+<p>通过分析各app的盈利模式我们可以发现，该类app均不含内置广告的盈利模式：</p>
+<p>百词斩整个界面非常干净整洁，功能划分清晰，诞生之初便是一款高效的学习工具，其平台本身是不通过背单词盈利的，主要通过产品推广以及引流到旗下其他付费产品盈利。</p>
+<p>而墨墨的盈利模式更为单一，主要就是通过出售单词上限数量盈利，另外，其产品类目过少，目前主要销售词汇书籍。</p>
+<p>扇贝单词的盈利模式最为多样化，平台内置课程种类丰富，还搭建了双层会员体制：单词会员和大会员大会员年卡，最后，扇贝本身就有完善的产品体系，平台还可以将流量引导到其他平台变现。</p>
+<p>下面，我们来对比看看三款app付费产品的定价策略：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/560k4lbSuB1xUiOTwe1x.png" alt="" width="623" height="684" /></p>
+<h3>7. 用户数据</h3>
+<p><strong>1）下载量</strong></p>
+<p>截至目前，百词斩、墨墨背单词、扇贝单词英语版在安卓市场的总下载量分别为：602,754,839、103,493,038、151,200,091，百词斩的下载量远高于另外两款app。（数据来源：蝉大师）</p>
+<p>百词斩：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/JzWrCoxmQMvYdWfE8Ovc.png" alt="" width="530" height="333" /></p>
+<p>墨墨背单词：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/rRbssIFFqVp4Xr1TPev6.png" alt="" width="507" height="335" /></p>
+<p>扇贝单词英语版：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/aFNFIKlja1V7rHOKKBIw.png" alt="" width="475" height="313" /></p>
+<p><strong>2）数据表现</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/9pl4B6N21DKqWiZUgosr.png" alt="" width="563" height="180" /></p>
+<p style="text-align: center;">2019年6月 数据来源：易帆千观</p>
+<p>从2019年六月的数据表现来看，百词斩的活跃用户数是占绝对优势的，而在人均单日启动次数、人均日均使用时长以及次月留存率上面，扇贝单词表现最佳，墨墨背单词数据最低；笔者认为该项数据受app社交属性影响较大，社交属性强的app会让用户有更多猎奇，浏览的心理，从而增加用户的使用时长。</p>
+<p><strong>3）用户评论</strong></p>
+<p>根据三种产品的最新版本评分统计，百词斩、墨墨背单词、扇贝单词在IOS上用户评论为五星好评的数量分别是：450702，232303和2579；用户评论为负面差评（一星）的数量分别是：6247，3936和97个；总评论数分别是493631，251417和3050。好评率分别是91.3%，92.4%和84.6%，而差评率分别是1.3%，1.6%和3.2%。</p>
+<p>需要注意的是，扇贝单词英语版的原版本为扇贝单词，由于改版不久，因此当前版本的评论较少，这或许也是导致当前版本评分相较更低的原因，用户面对突然的大改版需要时间去适应；而扇贝单词所有版本的评分中，五星好评率达92.1%，一星差评率为1.3%；因此，从历史版本看来，三者的评分实际并无太大差异，百词斩的评分极差更小，差评率最低但好评率同样也最低。（数据来源：蝉大师）</p>
+<p>百词斩用户评论：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/N54eI8elX7syEK1SFixK.png" alt="" width="397" height="212" /></p>
+<p>墨墨背单词用户评论：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/n7MFN8MjBeyIFsN7LwOm.png" alt="" width="395" height="214" /></p>
+<p>扇贝单词英语版用户评论：</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/lKAtF2gROWdbpE9th7Ge.png" alt="" width="389" height="208" /></p>
+<p><strong>4）应用排名</strong></p>
+<p>截至2020年双十二，百词斩、墨墨背单词和扇贝单词英语版在IOS应用排行占总排行榜名次分别是：316、937和962，在教育类榜单的排名分别为：16、56和61；可以看出百词斩在排名是依然占据绝对优势。</p>
+<p>从ASO和关键词覆盖数来看，百词斩ASO指数处于绝对的优势地位，也再次正式百词斩的热度与下载量更大；另一方面，扇贝单词关键词覆盖数最高，达到13833，墨墨背单词排名第二为8367，而百词斩关键词覆盖最低为7088。</p>
+<p>从关键词覆盖历史记录来看，百词斩的关键词覆盖近年来稳步增加，墨墨背单词和扇贝单词英语版在今年8月12日到13日，关键词覆盖突然飙升，分别从6310跳跃到8082，8702跳跃到12769，之后便趋于平稳。（数据来源：蝉大师）</p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/7mjCvYSdpCxKNqp8XvFn.png" alt="" width="645" height="204" /></p>
+<p><strong>5）对比总结</strong></p>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/tDxUh6ALYMA9taYWSPwl.png" alt="" width="543" height="583" /></p>
+<p style="text-align: center;">注：括号中标红数字为扇贝单词英语版<strong>所有版本</strong>的数据</p>
+<h2>四、分析结论</h2>
+<h3>1. 产品优劣势分析</h3>
+<p><img data-action="zoom" class="aligncenter" src="http://image.woshipm.com/wp-files/2020/12/AKkUdOWRgUSyKcuVgJke.png" alt="" width="635" height="203" /></p>
+<h3>2. 产品迭代策略</h3>
+<p>本节主要宏观描述百词斩的迭代方向并提出建议，具体优化方案以及原型设计等将在以后的需求文档中做详细说明，本节不过多赘述。</p>
+<p><strong>1）丰富词书类目</strong></p>
+<p>相比于墨墨背单词的几百本词书、扇贝单词的各类细分专业词书，百词斩词书类目与数量最为薄弱；尤其是在应试英语词书方面是首要解决的问题，比如大学词汇中，没有大学英语教科书词汇。</p>
+<p>另外就是增加各类目的词书版本，百词斩现有的词书中基本都是收录的单词，一类考试的单词对应一本词书，比如四六级词汇只包含三本词书；而对比墨墨背单词，四级词书26本，六级词书28本，在词书版本方面差别甚远；可以引入目前市面上火爆的词书，作为补充，比如朱伟恋恋有词、星火英语各类词汇等。</p>
+<p><strong>2）优化单词PK功能</strong></p>
+<p>百词斩单词对战主要有以下几个问题：</p>
+<ul>
+<li>对战单词过于简单，在排位赛中，英语水平较高的用户也要从最低level的单词开始pk，导致用户浪费大量时间，可能失去对该模块的兴趣；</li>
+<li>与扇贝单词相比，扇贝单词首先是邀请好友对战，但百词斩不支持好友对战功能，而该功能即能引流也能增强用户粘性；</li>
+</ul>
+<p>对于第一个问题，百词斩的游戏对战、段位升级功能与一页网页游戏模式相似，因此可以<strong>新增定位赛模式</strong>；当用户首次进入游戏时，提示进行词汇量测试，然后跳转到现有的词汇量测试功能模块，用户初测完成词汇量后，方可进入游戏；前五局游戏为定位赛，系统为用户匹配词汇量相当的对手，五局之后根据战绩与词汇量确定用户段位，以后直接匹配同段位的对手即可。</p>
+<p>对于第二个问题，<strong>新增好友对战模式</strong>，一方面通过链接分享到第三方聊天平台邀请好友，另一方面支持邀请百词斩好友对战。</p>
+<p><strong>3）新增学习数据功能</strong></p>
+<p>百词斩可以单独进行各种类型的单词复习，但是除了进行单词量测试外，用户对于自己的学习效果难以得到其他的评估与反馈。</p>
+<p>墨墨背单词和扇贝单词都有学习数据统计与可视化功能，尤其是墨墨背单词，数据是其业务亮点。</p>
+<p>百词斩可以新增数据统计，比如用户的记忆曲线，每日的学习情况等，让用户能直观看到自己的学习效果和学习进度。</p>
+<p><strong>4）丰富铜板玩法</strong></p>
+<p>当前铜板的作用主要包括兑换优惠券、兑换一些虚拟物品、补签打卡和创建小班，铜板的获取途径包括参加斩家活动和加入小班每日打卡领取。</p>
+<p>不论是铜板的获取渠道还是使用渠道都比较单一且缺乏吸引力——在增加铜板的获取途径方面，可以增加每日登录获取铜板、邀请好友获取铜板、分享打卡获取铜板、单词pk获取铜板等；要让增加了铜板获取的途径后，需铜板的花费对用户带来吸引力，可以设置部分词书为付费词书，用户需利用铜板解锁，增加铜板抵扣付费课程价格的用途、利用铜板购买单词pk的能量等。</p>
+<p><strong>5）优化小班功能</strong></p>
+<p>小班功能的目的是通过铜板奖励、排名激励、相互监督等形式督促用户学习，但事实上，小班功能并没有取得明显的成效，用户进入小班后仍依靠自我意志坚持学习；因此，一方面可以增加小班得奖励机制，另一方面可以突出小班得督促学习机制，最后可以适当给出一些惩罚机制。</p>
+<p>在奖励方面，可以设置连续打卡奖励、每日学霸奖励等；在学习促进方面，可以展示小班排名、个人排名、个人打卡签到情况以及打卡提醒消息推送等功能；在惩罚方面，增加扣除铜板惩罚、踢出小班惩罚等功能。</p>
+<p>另外，在同一个小班学习的同学应该具备共同的兴趣或者目标，因此可以新增小班词书功能，用户进入小班后需要选择小班规定的词书进行学习打卡；新增小班测试和小班任务功能，小班管理员可以设置测试题目与每日小班背词的底线任务，并设置相应的奖惩机制。</p>
+<p><strong>6）优化好友功能</strong></p>
+<p>百词斩好模块中，主要有请求消息、添加好友、好友动态和排行榜功能，也许是百词斩不想在社交方面过于拓展，目前的好友功能不支持聊天，也不支持任何的互动；点击好友列表，只有删除好友功能，显得比较鸡肋，似乎该功能存在与否不会带来任何影响，因此笔者认为应该适度增加好友互动功能。</p>
+<p>首先，增加邀请好友进行单词pk与提醒好友学习功能，用户点击好友列表不再只有删除好友功能，还可以邀请pk和发送学习提醒；第二，新增查看好友学习情况功能，前面的迭代优化中题到新增学习数据功能，这里可以将好友的学习数据公开展示，让好友之间可以互相了解彼此的学习情况，也能更好的监督学习；当然，该功能应当支持设置为私密。</p>
+<h2>五、总结</h2>
+<p>本文以百词斩为分析对象，选取墨墨背单词和扇贝单词英语版为竞品进行分析，分别从行业背景、用户特征与数据、产品定位、产品功能、视觉与体验、运营及商业化等方面进行分析，最后提出了六点优化迭代方向。</p>
+<p>后续将继续从产品体验、用户调研、竞品分析等角度提出需求，将迭代方向转化为迭代方案，将用户需求转化为产品需求，并输出为详细PRD，文中存在的不足还望批评指正。</p>
+<p>&nbsp;</p>
+<p>作者：leone，正在成为产品经理的道路上努力！</p>
+<p>本文由 @leone 原创发布于人人都是产品经理，未经作者许可，禁止转载。</p>
+<p>题图来自Unsplash，基于CC0协议。</p>
