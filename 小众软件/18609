@@ -1,13 +1,13 @@
 ➜群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网
 https://www.appinn.com/dsm7-zerotier-docker/	34072
 <p><a href="https://www.appinn.com/zerotier-one/" class="rank-math-link">Zerotier</a> 是一款非常便利的创建个人局域网的免费工具，它能让你在办公室、学校出差在外时也能像在家中一样访问家中局域网的资源。不过在群晖升级至 DSM7 测试版系统后，Zerotier 官方群晖套件暂时失效，无法继续使用。但 DSM 支持 <strong><a href="https://www.appinn.com/tag/docker/" class="rank-math-link">Docker</a></strong>，意味着我们可以使用 Zerotier 的通用版本，继续让群晖接入自己的 Zerotier 网络，设置也算简单，会用群晖就能设置。@<a href="https://www.appinn.com/dsm7-zerotier-docker/" class="rank-math-link">Appinn</a></p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202012/zerotier-use-docker-in-synology-dsm7.jpg!o" alt="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网" title="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 12"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202012/zerotier-use-docker-in-synology-dsm7.jpg!o" alt="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网" title="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 13"></figure></div>
 <p>青小蛙写过一个简单的教程：</p>
 <ul><li><a href="https://www.appinn.com/zerotier-one/" class="rank-math-link">ZeroTier – 无配置，零基础「内网穿透」随时随地连回家/学校/办公室 [跨平台]</a></li></ul>
 <h2>群晖 DSM 7 安装 Zerotier 教程</h2>
 <h3>在 DSM7 中安装 Docker 套件</h3>
 <p>这个过程就和所有的群晖套件一样，直接进入<strong>套件中心</strong>进行安装即可。不过注意在 DSM 7 测试版中，所有的套件也被归类为 <strong>Beta 套件</strong>，直接安装即可：</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202012/screen-appinn2020-12-13-15-15-04.jpg!o" alt="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 11" title="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 13"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202012/screen-appinn2020-12-13-15-15-04.jpg!o" alt="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 11" title="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 14"></figure></div>
 <h3>下载 Zerotier 镜像</h3>
 <p>可以把 Docker 想象成一台微型计算机，那么 Zerotier 镜像就是别人在 Docker 里配置好的 Zerotier 运行环境，我们只需要下载来用即可。</p>
 <p>由于任何人都可以创建镜像，所有在镜像市场中就会有很多的 Zerotier 镜像，青小蛙挑选了一个更新频率、下载数量都比较好的：<a href="https://hub.docker.com/r/henrist/zerotier-one" class="rank-math-link" target="_blank" rel="noopener">henrist/zerotier-one</a>，下面就是具体教程啦。</p>
@@ -15,29 +15,29 @@ https://www.appinn.com/dsm7-zerotier-docker/	34072
 <p>顺便说一句，在 Docker 的可视化设置上，其实群晖套件做的还不错。</p>
 <h3>1. 下载 henrist/zerotier-one 镜像：</h3>
 <p>Docker &gt; 注册表 &gt; 搜搜 henrist &gt; 右键 henrist/zerotier-one 下载此映像 &gt; latest &gt; 选择，具体如图：</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202012/screen-appinn2020-12-13_15_34_35.jpg!o" alt="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 12" title="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 14"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202012/screen-appinn2020-12-13_15_34_35.jpg!o" alt="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 12" title="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 15"></figure></div>
 <h3>2. 创建容器</h3>
 <p>先进入 映像，找到 henrist/zerotier-one，双击它，在新出现的窗口中，勾选“<strong>使用高权限执行容器</strong>”，最后点击<strong>高级设置</strong>：</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202012/screen-appinn2020-12-13_16_42_10.jpg!o" alt="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 13" title="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 15"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202012/screen-appinn2020-12-13_16_42_10.jpg!o" alt="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 13" title="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 16"></figure></div>
 <h3>3. 高级设置</h3>
 <p>在高级设置中，只需要设置三个地方，即可：</p>
 <ol><li>「高级设置」：<strong>启用自动重新启动</strong></li><li>「卷」：设置一个保存数据的文件夹，左侧为群晖中的一个文件夹，右侧则填写：<strong>/var/lib/zerotier-one</strong>（如图所示）</li><li>「网络」：启用“<strong>使用与 Docker Host 相同的网络</strong>”</li></ol>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202012/screen-appinn2020-12-13_16_50_37.jpg!o" alt="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 14" title="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 16"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202012/screen-appinn2020-12-13_16_50_37.jpg!o" alt="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 14" title="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 17"></figure></div>
 <p>最后，点击<strong>应用</strong>，Zerotier 就已经在后台运行了。</p>
 <h2>加入 Zerotier 网络</h2>
 <p>这里假设你已经拥有了 Zerotier 的 Network ID，如果没有请前往<a href="https://www.appinn.com/zerotier-one/" class="rank-math-link">阅读 Zerotier 创建网络教程</a>。</p>
 <h3>难点</h3>
 <p>这个操作需要敲入命令，所以也是整个教程唯一的难点。如图，具体步骤：</p>
 <ol><li>进入 Docker 套件的<strong>容器</strong></li><li>找到正在运行中的 <strong>henrist-zerotier-one1</strong>，右键选择<strong>详情</strong></li><li>在新页面中点击<strong>终端机</strong>，</li><li>在<strong>新增</strong>旁小三角中<strong>点击通过命令启动</strong></li><li>请输入一个命令：“ash”，点击确定：</li></ol>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202012/screen-appinn2020-12-13_17_01_211.jpg!o" alt="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 15" title="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 17"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202012/screen-appinn2020-12-13_17_01_211.jpg!o" alt="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 15" title="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 18"></figure></div>
 <p>在一切正常的情况下，你应该能看到下面这个界面，此时输入加入网络命令：</p>
 <pre class="brush: bash; title: ; notranslate">
 zerotier-cli join 你的网络ID
 </pre>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202012/screen-appinn2020-12-13-17-09-43.jpg!o" alt="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 16" title="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 18"></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202012/screen-appinn2020-12-13-17-09-43.jpg!o" alt="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 16" title="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 19"></figure></div>
 <h3>最后一件事情</h3>
 <p>加入网络后，最后一件事情就是去 Zerotier 后台，确认这台设备的加入，依旧在那篇教程中，在后台勾选新设备即可：</p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/201711/zerotier_demo.jpg!o" alt="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 17" title="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 19"><figcaption>Zerotier 后台</figcaption></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/201711/zerotier_demo.jpg!o" alt="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 17" title="群晖 DSM 7 安装 Zerotier 教程，进行内网穿，透组建局域网 20"><figcaption>Zerotier 后台</figcaption></figure></div>
 <p>然后，你运行 DSM 7 测试版的群晖设备，就已经成功加入了只属于你自己的全球局域网，结束。</p>
 <p>如果你还有任何疑问，请留言告诉我们。</p>
 <h2>最后的最后</h2>
