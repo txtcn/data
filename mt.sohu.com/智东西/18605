@@ -1,0 +1,202 @@
+➜AI如何破解内存带宽瓶颈？Rambus技术专家详解IP产品战略
+http://www.sohu.com/a/437265815_115978	39278
+<p><img src="http://p8.itc.cn/q_70/images03/20201209/119053ce97554592b522aa32289fe647.png" /></p>
+<p><strong>芯东西（公众号：aichip001）</strong></p>
+<p><strong>作者 | 温淑</strong></p>
+<p><strong>编辑 | 心缘</strong></p>
+<p>芯东西12月9日消息，今天上午，美国IP设计商、芯片提供商Rambus举办的2020年中国线上技术峰会开幕，这是Rambus首次面向中国市场举办技术峰会。</p>
+<p>Rambus大中华区总经理苏雷、资深应用工程师曹汪洋、资深现场工程师张岩，分享了Rambus在安全IP、接口IP方面的最新产品进展，并阐述内存和系统接口对于下一代AI/ML硬件的重要作用。</p>
+<p><strong>安全IP方面</strong>，目前Rambus提供两大类产品，可满足从轻量IoT到高端车载等应用场景的需求；<strong>接口IP方面，</strong>Rambus采用台积电7nm制程的HBM2E内存接口方案可达到4 Gbps性能，其GDDR6解决方案可提供高达18 Gbit/s/pin的速率。</p>
+<p>成立于上世纪九十年代，Rambus持续开发现代片上系统（SoC）和计算系统必不可少的基础技术，其中包括高速物理和数字控制器接口IP核，安全性IP核等。</p>
+<p>一、安全IP：保护半导体产业链全流程安全 </p>
+<p>当今，许多半导体企业专注在芯片IP、设计、代工、封装等单一产业链环节中发展业务，产业链中各个环节在一定程度上彼此分离。</p>
+<p>这就导致，对于某一产业链环节中的特定玩家来说，其上游产品由第三方供应商提供，有可能为产品引入不可控的安全隐患。</p>
+<p>因此，Rambus资深现场工程师张岩认为，为保护整个半导体生命周期的安全，从芯片架构阶段起，芯片安全问题就需要被考虑在内。</p>
+<p>目前，<strong>Rambus已推出两大类安全IP，分别为Vaultlp IP（安全服务&amp;密钥管理IP）和CryptoManager Root of Trust IP（系统安全管理IP）。</strong></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>其中，<strong>Vaultlp IP适用于IoT、工业、网关等轻量应用场景</strong>，具备安全引导、安全管理等功能。</p>
+<p><strong>CryptoManager Root of Trust IP面向更高端的使用场景，致力于为云端、AI/ML、车载、国防等场景打造安全环境。</strong></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201209/dcbc8b8cdf3843838eea3ba370f1caf9.png" width="1000" height="512" /></p>
+<p>▲Rambus硬件信任根产品</p>
+<p>在芯片落地于设备之后，两个设备间或服务器间传递的数据被称为“流动的数据”。由于传输介质位于公共区域，这部分“流动的数据”可能在多个位置遭受攻击。</p>
+<p>面对这一隐患，使用安全通信协议，构建加密传输通道必不可少。目前，Rambus可提供Rambus MACsec等多种安全通信协议产品。</p>
+<p>据张岩讲解，MACsec是一种二层网络的安全标准，已经广泛部署于PHY、交换机、防火墙、网关、网卡及5G设备中。</p>
+<p>Rambus MACsec产品方案包括单端口IP、多通道（TDM）的MACses引擎等，亦提供MACsec工具包IEEE 802.1X（EAP+MKA），其中包含研发所需软件的数据面工具。</p>
+<p>此外，Rambus还提供非MACsec的多通道半导体IP等，可支持1Tpbs以上的AES-GCM加解密。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201209/ae17e8ba1ea9496f8f7a25d98dd16e0e.png" width="1000" height="511" /></p>
+<p>张岩亦分享了其对保护半导体产业基础设施安全的看法。他认为，保护半导体产业基础设施安全，需要<strong>从芯片/设备安全、供应链安全、生命周期安全三方面入手</strong>，对应芯片设计、生产、应用的各个流程。</p>
+<p><strong>1、保护芯片/设备的安全：打造硬件信任根</strong></p>
+<p>随着复杂性增加，芯片安全漏洞呈指数级增长。以CPU为例，目前，人们为CPU引入乱序执行、多线程执行等许多功能。CPU功能日益丰富，越来越多安全隐患随之出现，比如Metaldown、Specre等攻击手段涌现出来。</p>
+<p>因此，真正与安全相关的敏感代码，并不应该被设计在主CPU上，而应在专门为安全设计的区域中运行，<strong>这一区域被称为信任根（root of trust）</strong>。</p>
+<p>在硬件实现中，信任根不仅要保证芯片硬件安全，而且要保证在遭遇恶意攻击时，算法仍是可信的。</p>
+<p>信任根有多种密码学算法，可安全存储密钥，还能作为上层软件所需的信任链条的基础。</p>
+<p>大多数情况下，信任根基于硬件不可修改的特性进行设计。可以说，<strong>信任根是SoC和上层应用构建安全的基石</strong>。</p>
+<p>举例来说，IP设计商可在IP上提供多信任根支持、secure debug等安全功能。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201209/b2a1d5917f6a4cb49898dab594637079.png" width="1594" height="862" /></p>
+<p>要指出的是，在很多情况下，一些信任根只能在某些攻击手段下提供保护，而无法针对提供更多种类、更高等级的攻击提供保护。</p>
+<p>在选择信任根时，应根据芯片的最终使用场景、需考虑的威胁模型、设备安全/成本/性能排名等因素，进行综合考虑和评估。</p>
+<p><strong>2、保护供应链&amp;生命周期安全：部署设备密钥，提供密钥管理服务</strong></p>
+<p>张岩称，<strong>为保证芯片生产流程的安</strong>全，需为其引入安全认证的环节，而这一环节通过自动化的安全密钥/ID/数据注入来实现。这一解决方案中，系统可在可信或不可信的环境中完成自动化写入，过程无需人为干预。</p>
+<p><strong>为保护芯片生命周期安全</strong>，需在生产环节建立设备唯一标识（ID）的安全部署方案；在运营环节中，该方案需具备基于云服务的设备认证、功能管理、设备安全退役等功能。</p>
+<p>二、接口IP：带宽成为解锁更高AI、ML性能的关键 </p>
+<p>近年来数据规模指数增长，各类AI/ML应用应运而生，许多为AI/ML任务设计的专用处理器涌现出来。</p>
+<p>据Rambus大中华区总经理苏雷，Rambus评估了Google TPU v1、NVIDIA K80、Intel Haswell三种处理器的性能。运行多种算法的结果显示，三种处理器性能均受到内存带宽的限制。</p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201209/d43bab40e61d40f18d5576c3581bc3f8.png" width="1000" height="568" /></p>
+<p>Rambus资深应用工程师曹汪洋称，在带宽成为AI系统性能瓶颈的背景下，HBM2E、GDDR6技术成为两种流行的带宽解决方案。最初，HBM2E、GDDR6均为图形市场开发，但在AI训练、推理应用中亦表现出优势。</p>
+<p>HBM2E能够提供高达3686 Gbps的带宽。相比于HBM2E解决方案，GDDR6提供的带宽较低（512 Gbps），但具备成本优势。</p>
+<p>曹汪洋讲解了Rambus HBM2E、GDDR6解决方案的性能特点。</p>
+<p><strong>1、HBM2E解决方案可提供4 Gbps性能</strong></p>
+<p>今年10月15日，Ranbus宣布，<strong>在台积电的7nm制程上，其HBM2E内存接口方案可达到4 Gbps性能。</strong></p>
+<p>搭配SK海力士的3.6 Gbps运行速度的HBM2E DRAM，该解决方案<strong>可为单个HAM2E设备提供460 GB/s的带宽，满足TB级带宽需求。</strong></p>
+<p>4 Gbps速度的7nm HBM2E产品集成完备的硬核PHY（包括IO和Decap）和控制器，可为客户降低集成难度。</p>
+<p>另外，该解决方案提供包括内插板和封装参考设计在内的系统级设计支持。</p>
+<p>去年，Rambus宣布，燧原科技已选择Rambus HBM2 PHY和内存控制器IP作为其下一代AI培训芯片。</p>
+<p>曹汪洋称，至今，Rambus已为50多位客户提供了带宽解决方案，其GF12LP节点的HBM2E解决方案速率可达3.2 Gbps，正处于预投产阶段。同时，Rambus正在开发12LP+工艺节点上的HBM2E解决方案。</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201209/c18997e1482748cb8671d76d84331b48.png" width="1000" height="457" /></p>
+<p><strong>2、GDDR6解决方案可提供高达18 Gbit/s/pin速率</strong></p>
+<p><strong>Rambus GDDR6解决方案能实现高达18 Gbit/s/pin的速率。</strong>曹汪洋称，目前，这是业界GDDR6解决方案能提供的最大速率。</p>
+<p>带宽方面，Rambus GDDR6解决方案可提供高达576 Gbps带宽；总线速度方面，Rambus GDDR6解决方案能达到12、14、16或18 Gbps；此外，该解决方案支持8、12、16Gbit DRAM。</p>
+<p>此外，Rambus GDDR6解决方案还提供经过验证的PHY和内存控制器。用户使用时无需花费时间进行调试，Rambus可提供多于100个测试序列。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201209/bb6cba7bc5654bcd82381e9d88b14163.png" width="1694" height="886" /></p>
+<p>结语：AI芯片IP面临高安全性/高带宽两大需求 </p>
+<p>随着技术向前发展，AI走出实验室，成为驱动千行百业智能化变革的一大引擎，而芯片是实现AI应用落地的重要基础硬件设施。据市场研究机构德勤预测，2020年全球人工智能市场规模将达到6800亿元人民币，复合增长率达26%。</p>
+<p>这一过程中，AI应用对产业链上游环节的芯片IP，提出全新的安全性和带宽需求。据此，Rambus推出两大类安全IP及HBM2E、GDDR6等接口IP解决方案。</p>
+<p>此外，芯东西了解到，除了HBM2E和GDDR6产品，Rambus还提供DDR4、PCIe其他带宽解决方案。我们了解到，目前Rambus正为50多位客户提供PCIe解决方案。</p>
+<p>未来，<span>AI</span>、<span>5G</span>等全新技术还将为芯片IP业滋生出怎样的需求？以<span>Rambus</span>为代表的产业链玩家又将拿出怎样的解决方案？我们将持续关注。</p>
+➜Imagination刘国军：用“GPU+AI加速器”破局AI算力需求 ｜ GTIC2020
+http://www.sohu.com/a/437275490_115978	43824
+<p><img src="http://p3.itc.cn/q_70/images03/20201209/186ff0a65ccf4024b5832d11f451f6c7.png" /></p>
+<p><strong>芯东西（ID：aichip001</strong><strong>）</strong></p>
+<p><strong>编辑 | 温淑</strong></p>
+<p>2020全球创新峰会刚刚在北京圆满收官！在这场全天座无虚席、全网直播观看人数逾150万次的高规格AI芯片产业峰会上，19位产学界重磅嘉宾从不同维度分享了对中国AI芯片自主创新和应用落地的观察与预判。</p>
+<p>在峰会下午场， Technologies公司副总裁&amp;中国区总经理刘国军，发表了题为《多核GPU与专用NNA推动从云到端侧智能应用》的演讲。</p>
+<p><img src="http://p5.itc.cn/q_70/images03/20201209/08caaeb4f9644692b370a45f2973b63b.jpeg" width="1000" height="671" /></p>
+<p>▲Imagination Technologies公司副总裁&amp;中国区总经理刘国军</p>
+<p>刘国军讲解了Imagination的产品设计思路。随着AI赋能的时代来临，从互联网到物联网、从指纹解锁到高性能计算，各个领域对算力的需求高涨。后摩尔时代，异构加速计算成为满足全球各领域算力需求的可行解决方案。CPU、GPU、FPGA、ASIC、专用AI加速器的异构融合，为提高算力开辟了新的方向。</p>
+<p>面向算力需求，<strong>Imagination打造GPU IP和神经网络加速器（NNA）IP的产品组合</strong>，分别着眼于AI计算的灵活性，以及高计算密度、低功耗需求。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>Imagination分别于今年10月和11月，发布了采用多核架构的最新B系列GPU IP和第四代NNA IP。在GTIC AI芯片创新峰会上，刘国军亦分享了这两款重磅新品的性能特点，其中B系列GPU IP包含四款产品，功耗较前代产品降低30%，面积缩减25%，算力可达6TFLOPS，能满足从移动终端到自动驾驶应用的不同需求；而最新第四代NNA IP产品拥有全新多核架构，可提供600TOPS甚至更高的性能，能为大型神经网络工作负载提供极低的带宽和延迟。</p>
+<p><span>以下为刘国军演讲实录整理：</span></p>
+<p>一、 <span>Imagination</span>所有知识产权没有源自美国 </p>
+<p><span>Imagination Technologies</span>是一家全球领先的战略性独立的<span>IP</span>供应商。</p>
+<p><span>1994</span>年，<span>Imagination</span>在伦敦交易所上市。NEC和ST micro的PC以及世嘉Dreamcast游戏机，都采用过PowerVR 3D技术。后期公司GPU技术转向移动端，并获得了巨大成功。因为公司运营的成功，<span>Imagination</span>创始人和当时的<span>CEO</span>被英国伊丽莎白女王授予勋章。</p>
+<p>基于GPU方面的成就<span>，</span>近十年Imagination一直致力于研发人工智能IP技术，并开发了人工智能产品线。</p>
+<p>2017年，在失去了最大客户后，Imagination被中资背景的凯桥基金会全资收购。</p>
+<p>去年年底，Imagination曾经的最大客户重新回归，与Imagination达成新的多年期授权协议。</p>
+<p><span>Imagination</span>有最核心的关键专利，公司专利技术多达1500多项。采用<span>Imagination IP</span>的芯片发货量超过<span>110</span>亿。在全球很多地方，<span>Imagination设</span>有研发人员和销售机构。</p>
+<p><span>还有一点很特别，目前</span><span>Imagination</span><span>所有的知识产权没有源自美国，这在当前的形势下很关键。</span></p>
+<p>二、用 <span>“GPU+AI</span>加速器 <span>”</span>破解算力需求 </p>
+<p><span>Imagination</span>现有产品分两大类。</p>
+<p>一类是<span>GPU</span>图形处理<span>IP，</span>可用于移动设备、物联网、微控制器、数字电视和汽车等众多市场领域。目前Imagination在全球移动GPU IP市场占有率为36%，在汽车GPU IP领域占到43%。Imagination今年刚推出的多核架构IMG BXT产品，能够达到数据中心的性能水平。</p>
+<p>同时在图形渲染方面，Imagination是全球为数不多发布了硬件光线追踪技术的高科技公司。</p>
+<p><span>Imagination</span>还有一类产品是神经网络加速器<span>NNA IP</span>。神经网络加速器，简单来讲就是<span>AI</span>计算加速。</p>
+<p><span>Imagination</span>构建了一个通用的计算平台和专用的人工智能网络加速的平台。此外还有以太网的数据处理器，这是汽车整体解决方案中的一个重要技术。</p>
+<p><span>Imagination</span>的<span>GPU IP</span>和<span>NNA IP</span>应用范围很广，可应用在移动、汽车、物联、云游戏等各个领域。</p>
+<p><span>GTIC AI</span>芯片创新峰会的讨论离不开算力。在信息与数据的社会，从互联网上的几十亿数据，到物联网上数万亿的设备互相连接，这其中的<span>AI</span>应用需要强大算力的支撑。应用端也是一样，从一个指纹的识别到最高性能的计算，都需要算力来支撑。</p>
+<p>传统的<span>CPU</span>远远不能满足当前从云到端的算力需求。从云端到边端，到<span>2024</span>年，数据中心市场可以达到约<span>1000</span>亿美元。在这当中，<span>AI推理</span>芯片在边缘计算市场占据了很大份额，达到约<span>63.6%</span>。</p>
+<p>随着<span>AI</span>边缘推理应用向前发展，大家可以看到，移动互联、工业、安防、物联网、多媒体、自动驾驶等领域中的相关应用逐渐落地。</p>
+<p><strong>算力需求怎么满足？<span>Imagination</span>选取的是<span>“GPU+AI</span>加速器<span>”</span>的解决方案</strong>，用“GPU+NNA”面向自动驾驶和数据中心应用。</p>
+<p>在边缘计算场景，AI 芯片主要承担推理任务。由于边缘侧场景多种多样、各不相同，对于计算硬件平台的算力和能耗等性能需求也不同。因此，不同于云端AI芯片需具备“高端、通用”的性能特点，应用于边缘侧的AI芯片需要针对特殊场景进行针对性设计，以实现最优的解决方案。</p>
+<p>IMG的边缘侧推理解决方案将GPU和NNA相结合，灵活地将不同的工作负荷分配到最适合的硬件单元，最大限度地发挥不同硬件单元的性能。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201209/14054a4dc0c74725acbd1f9a21cc8514.png" width="1000" height="560" /></p>
+<p><span>三、全新B系列GPU IP &amp; 4系列 NNA IP均采用多核架构</span></p>
+<p>今年十月份，<span>Imagination</span>在北京发布<span>B</span>系列的<span>GPU</span>。随后在<span>11</span>月，<span>Imagination</span>发布第四代<span>NNA IP</span>。最新一代<span>GPU IP</span>和<span>NNA IP</span>有什么特点？在<span>AI</span>芯片获取算力方面，做出哪些提升？</p>
+<p><span>刘国军分享，B</span>系列<span>GPU IP</span>共包含<span>BXE</span>、<span>BXM</span>、<span>BXT</span>、<span>BXS</span>四款产品，从低到高提供不同的性能。</p>
+<p>其中，<span><strong>BXS是符合ISO 26262标准的汽车GPU IP内核</strong>，采用虚拟化技术及分块区域保护技术，</span>具备全新的功能和安全机制。这些功能都集成在硬件中，对于汽车GPU和自动驾驶应用而言，这种设计有利于提升安全性。</p>
+<p><span>BXT</span>采用多核架构，算力可达6TFLOPS、192Gigapixel/s，且具备可扩展性，可以去中心化。针对<span>7nm</span>、<span>5nm</span>制程，<span>BXT可</span>做特定优化，以满足从移动终端到数据中心的使用需求。</p>
+<p>新的架构在多核配置的时候，与传统的配置有所不同。针对<span>memory</span>多核算力增加时的效率问题、<span>memory</span>的读取存储问题，<span>Imagination</span>也有比较好的解决方案。</p>
+<p>对比市场上使用同样半导体制造工艺的PCIe显卡，IMG BXT具有更高的计算密度。这意味<strong>在同样的硅片面积下，BXT可以提供更高的单精度（FP32）运算能力。</strong></p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201209/e05c5a382505415b86dce7a3e208b983.png" width="1000" height="560" /></p>
+<p>Imagination最新<span>的</span>4系列NNA IP<span>也采用</span><span>多核架构，这是</span>NNA IP<span>系列的第四代产品。</span></p>
+<p><span>NNA IP</span>系列第一代产品没有发布。第二代NNA IP产品PowerVR 2NX于<span>2017</span>年在深圳发布。PowerVR 2NX单核IP运行在保守频率800 MHz，能提供2048 MACs/cycle（行业标准性能指标）操作，即可达到每秒3.2万亿次推理操作。</p>
+<p>紫光展锐采用这款<span>IP</span>开发的虎贲<span>T710</span>芯片，在去年的<span>Benchmark</span>跑分中拿到第一名。</p>
+<p>今年最新发布的第四代<span>NNA IP</span>计算效率和计算密度都十分杰出。<span>4NX-MC4一个</span>四核方案可提供<span>50TOPS</span>算力，由于具备可扩展性，基于最新<span>NNA IP</span>的解决方案可将算力扩展至<span>200</span>甚至<span>500TOPS</span>。</p>
+<p><img src="http://p0.itc.cn/q_70/images03/20201209/a7b2c41fc8994a89bc20c0b8cfc237d7.png" width="1000" height="560" /></p>
+<p>多核的特点是什么？是可扩展。在整个计算过程中，多核架构可以做到近<span>memory</span>计算，降低延迟。另外，多核架构的各种调度和分配方式都十分灵活且可预测。</p>
+<p><span>NNA IP</span>可以多网络运行，也就是说一个核可同时运行多个网络，同一个网络也可以切分到不同的核上去运行，这样就可以预测计算的时间。<span>Imagination</span>有一个离线工具，来对特定应用作分配和调度。</p>
+<p>根据各类实验结果，<span>Imagination</span>的<strong>Tensor</strong><strong>Tiling</strong><strong>技术（ITT）</strong>平均可以降低<span>90%</span>的带宽。</p>
+<p>目前，Imagination正在为ITT技术申请专利，这项技术也被应用于4系列NNA IP。</p>
+<p>ITT技术可以通过对计算任务进行tiling，充分利用片上存储，提升数据处理效率，并节省访问外部存储的带宽。利用本地数据的依赖性，ITT技术可将中间数据保存在片上存储器中，最大限度地减少将数据传输至外部存储器，从而将带宽降低多达90％。作为一种可扩展的算法，ITT在拥有大量输入数据的网络上具有显着优势。</p>
+<p>在<span>Imagination</span>的解决方案里，<span>GPU</span>承担计算任务，同时承担渲染的任务；<span>NNA</span>承担神经网络计算任务。</p>
+<p><span>GPU</span>的渲染能力基于<span>Imagination</span>已经出货多年的专利技术<span>——</span>硬件虚拟化。</p>
+<p>借助硬件虚拟化技术，一个<span>GPU</span>可以承担多个屏的计算渲染任务，支持多个操作系统。同时，多个<span>GPU</span>之间有物理隔离，不会相互干扰。</p>
+<p>这样就实现了结合<span>GPU</span>的灵活性和<span>NNA</span>的效率，再加上<span>memory</span>，形成一个异构的计算平台。</p>
+<p>这个异构计算平台具备非常灵活的任务分配和配置功能，上面是两个<span>GPU</span>，下面是<span>NNA</span>，中间有内部的总线。这是一种非常有效的算力配置方法，能满足从ADAS到自动驾驶的功能需求。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201209/68b2ba04e6cb432690f457789711da19.png" width="1000" height="554" /></p>
+<p>同时，<span>Imagination</span>提供统一的<span>API</span>，可以给开发者提供统一的接口去支持各种不同的网络。对工作量和网络类型的适配，都可以由统一的<span>API</span>支持。另外，<span>GPU IP</span>和<span>NNA IP</span>支持同一个开发工具，这方便了广大开发者的使用。</p>
+<p><strong>以上是刘国军演讲内容的完整整理。</strong>除刘国军外，在本届GTIC 2020 AI芯片创新峰会期间，微纳电子系尹首一教授，、、、、壁仞科技、光子算数、知存科技、亿智电子、豪微科技等芯片创企，全球FPGA领先玩家，知名IP供应商安谋中国，全球EDA巨头Cadence，以及北极光创投、中芯聚源等知名投资机构，分别分享了对AI芯片产业的观察与思考。<strong>如感兴趣更多嘉宾演讲的核心干货，欢迎关注芯东西后续推送内容。</strong></p>
+➜亚马逊越拨越快的AI算盘：立足四种受众，开发17项新服务
+http://www.sohu.com/a/437277784_115978	45268
+<p><img src="http://p2.itc.cn/q_70/images03/20201209/5ba06b725af1410fb4584faccb86c5ec.png" /></p>
+<p><strong>智东西（公众号：zhidxcom）</strong></p>
+<p><strong>作者 |<span></span>子佩</strong></p>
+<p><strong>编辑 |<span></span>Panken</strong></p>
+<p>智东西12月9日报道，北京时间今天凌晨零点，<span>AWS</span>全球副总裁<span>Swami Sivasubramanian在re:invent全球线上大会上分四个板块介绍了AWS在机器学习方面的新进展：基础架构、SageMaker新功能、数据库ML（Machine Learning）和工业ML，分别为机器学习架构者、数据科学家、业务人员和工业制造提供便捷工具。</span></p>
+<p><img src="http://p1.itc.cn/q_70/images03/20201209/2d24faf8841141f6b22b73c039c14080.png" width="1000" height="667" /></p>
+<p>▲AWS大中华区云服务产品管理总经理顾凡</p>
+<p>今天下午，AWS大中华区云服务产品管理总经理顾凡、AWS大中华区机器学习产品总监代闻也围绕着“如何为不同用户提供具有针对性的产品”这一条主线，对今年发布机器学习服务和产品进行了重点解读。</p>
+<p>一、框架、算力并重，AWS主打性价 </p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>机器学习的基础分为两个部分：机器学习的框架和底层算力的基础架构。</p>
+<p>AWS目前支持Tensorflow、PyTorch、MXNet三个主流的机器学习框架，未来也将会支持新出现的算法框架，让用户可以在AWS上任意选择最适合的框架，不需要受到任何限制。</p>
+<p><img src="http://p3.itc.cn/q_70/images03/20201209/759f5bdbd30c45f68efdb96c9425cccf.png" width="1000" height="499" /></p>
+<p>▲顾凡讲述Mask-RCNN和T5-3B模型在不同算力下的训练速度</p>
+<p>“越是成功的算法模型，预测部分就占比越大，这也就意味着更大的成本。”顾凡说道，“AWS要做的，就是降低算法模型的训练和预测成本，也就是做性价比最高的芯片。”</p>
+<p>所以在算力方面，AWS公布了基于Habana Gaudi的EC2实例和自研机器学习训练的芯片Trainium。</p>
+<p>前者将于2021年推出，基于EC2实例性价比将比基于GPU的EC2机器学习训练实例高出40%；后者比起标准的AWS GPU可以提升30%的吞吐量，成本上也降低45%的单位成本。</p>
+<p>二、SageMaker八大新功能：解决特征提取痛点 </p>
+<p>在硬件方面提供足够选择后，AWS在软件方面上也想要降低用户的使用门槛。</p>
+<p>顾凡说道，AWS面对的主要痛点就是如何快速从海量格式不同、来源不同的原始数据中提取出特征值，以及如何在不同的模型使用同一份特征。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201209/725163be37154f76a1c74a9b0f97a698.png" width="1000" height="577" /></p>
+<p>▲SageMaker功能流程图</p>
+<p>顾凡说道，AWS面对的主要痛点就是如何快速从海量格式不同、来源不同的原始数据中提取出特征值，以及如何在不同的模型使用同一份特征。</p>
+<p>特征提取工具Data Wrangler和特征数据库Feature Store就是AWS给出的答案，两者结合通过找到与目标关联度最大的特征以及按用户设定格式存储进特征数据库，帮助数据科学家们大大缩短了数据预处理的时间，以及数据利用率。</p>
+<p>除此之外，SageMaker本次还发布了其他七项新功能：</p>
+<p>1、专为机器学习而构建方便易用的CI/CD（持续集成和持续交付）服务：SageMaker Pipelines</p>
+<p>2、为开发人员实现了训练数据可视化，以便有效控制机器学习模型的偏差、对预测作出解释：SageMaker Clarify</p>
+<p>3、帮助开发人员更快地训练模型、监控机器学习训练任务：Deep profiling for Amazon SageMaker Debugger</p>
+<p>4、用于大型模型训练的并行式计算：Distributed Training on Amazon SageMaker</p>
+<p>5、监控和管理部署在边缘设备上的机器学习模型，以确保模型正确运行：Edge Manager<span></span></p>
+<p>6、用于查看和检索预训练模型和预构建工作流：Amazon SageMaker JumpStart</p>
+<p>三、数据库ML：让所有人用上机器学习 </p>
+<p>如果说前两项工具针对的是机器学习开发者和数据科学家等专业人员，那么数据库ML就是为一切有好奇心的人量身打造的。</p>
+<p><img src="http://p7.itc.cn/q_70/images03/20201209/292c036e42b94a029de6c09a498f51ae.png" width="1000" height="514" /></p>
+<p>▲在Aurora、Athena、Redshift以及Neptune数据库中加入机器学习</p>
+<p>AWS通过将机器学习方法融入自身的Aurora、Athena、Redshift以及Neptune数据库，实现对机器学习的一键式“傻瓜”操作。</p>
+<p>例如，出海电商公司的商业分析师可以在Aurora ML里输入一个SQL语句，查询某个产品在全球的评价，Aurora ML自动就会触发机器学习模型，将各种语言的评价统一转化为一种，再基于转换后的语言，对评价建立模型，分析用户的感情色彩，从而回答分析师提出的问题。</p>
+<p>加上了机器学习的数据库不仅仅能对SQL语句进行响应，也能对输入的文字问题进行理解，通过已有的数据训练模型得到预测结果，真正地实现有问必答。</p>
+<p>四、工业ML五项：为智能制造搭积木 </p>
+<p>承接AWS总裁Andy Jassy在re:Invent大会首日对工业ML的开局，今天re:Invent大会在机器学习部分的主题演讲也进一步掀开了AWS在工业制造中的规划版图，发布了五项全新的机器学习服务：</p>
+<p>1、包括传感器、网关、机器学习等端到端工业监控解决方案：Monitron</p>
+<p>2、无硬件的AWS机器学习检测异常工具：Lookout for Equipment</p>
+<p>3、在相机中配备CV程序监控工厂环境的:AWS Panorama Appliance</p>
+<p>4、AWS Panorama Appliance的软件开发套件：AWS Panorama（SDK）</p>
+<p>5、检测工业产品检测的CV模型：Amazon Lookout for Vision</p>
+<p><img src="http://p4.itc.cn/q_70/images03/20201209/1c84f8fa8f9c46289bc1479df491cfbe.png" width="1000" height="615" /></p>
+<p>▲机器学习产品总监代闻以Monitron举例</p>
+<p>这五项服务目标只有一个：那就是把工业中的<i>“</i>智慧积木<i>”</i>搭起来，再让企业自己用这些积木搭出自己想要的形状，端对端地解决实际商业问题，而目前将套“积木”投入使用的有西门子、首汽、德勤等。</p>
+<p>结语：全球ML需求见长，中国市场潜力无限 </p>
+<p>在问及AWS在中国市场的发展规划时，顾凡提到，世界各地对机器学习的需求是大势所趋，而论起发展和落地，中国一点也不慢。原因有三，中国不缺机器学习的应用场景和数据，中国制造业庞大体量，以及国家对先进技术的政策扶持。</p>
+<p>在这样的内外部环境的共同加持下，国内无论是传统制造业还是AI初创企业都乐于将先进的技术应用到自身的业务场景，实现业务升级。</p>
+<p>顾凡也相信在未来，会有更多的中国厂商将机器学习纳入运营体系，创造更多的价值。</p>

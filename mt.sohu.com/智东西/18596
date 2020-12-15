@@ -1,0 +1,204 @@
+➜南京理工大学博士李翔：单阶段目标检测器的高效表示学习 | 公开课预告
+http://www.sohu.com/a/435273867_115978	14682
+<p>CV前沿讲座，是智东西公开课针对计算机视觉推出的一档讲座，聚焦于计算机视觉前沿领域研究成果与进展。我们将持续邀请研究者、专家与资深开发者，为大家带来直播讲解。</p>
+<p>目标检测虽然是计算机视觉领域中的一项基本任务，但因为其大量的应用需求而一直受到研究者们的关注。如何设计更高性能的网络结构、如何提升现有检测模型的性能成为了研究者们研究的热点。</p>
+<p>单阶段目标检测的基本任务是分类与定位。分类任务通常会使用Focal Loss函数进行优化，而位置回归通常是在一个狄拉克分布上进行学习。同时大家也通过在单阶段检测器上额外添加一个分支用来评估位置回归的质量优劣。比如在FCOS中，模型除了预测目标分类和位置回归，还有一个center-ness分支用户评估监测点是否在bbox中心。因此网络最终输出就是三个representation：分类表示、检测框表示和检测框的质量估计。</p>
+<p>在NeurIPs 2020中，来自南京理工大学的李翔博士，针对现有representation中出现的两个问题：1）classification score和center-ness score在训练和推断时不一致；2）bbox regression采用的representation不够灵活（单一狄拉克分布），无法建模复杂场景,提出了一种新的respresentations-GFL（Generalized Focal Loss）。</p>
+<p>什么是GFL？一句话总结就是：基于任意one-stage 检测器上，调整框本身与框质量估计的表示，同时用泛化版本的GFocal Loss训练该改进的表示，无cost涨点（一般1个点出头）AP。这还只是GFL的第一个版本，在GFLV2中，作者首次引入用边界框的不确定性的统计量来高效地指导检测领域中的定位质量估计，从而实现基本无cost（包括在训练和测试阶段）地提升one-stage的检测器性能，涨幅在1～2个点AP。是一项非常良心的技术。</p>
+<p><strong>12月2日晚8点</strong>，智东西公开课邀请到GFL一作、南京理工大学博士李翔参与到「CV前沿讲座」第24讲，带来主题为《单阶段目标检测器的高效表示学习》的直播讲解。李翔博士将会从单阶段目标检测的定义出发，并对现有表示学习存在的问题进行分析，最后深度解析GFLV1与GFLV2的设计思路与应用。</p>
+<p>李翔是南京理工大学博士，导师为杨健教授，入选2020年度博士后创新人才计划。他曾是商汤科技研究院、微软亚洲研究院实习生、Momenta访问学者。他的团队曾获得阿里巴巴天池首届大数据竞赛冠军(7186支团队中排名第一)，滴滴首届大数据算法竞赛冠军(7664支团队中排名第一)，并以第一或共同第一作者身份发表CVPR、NeurIPs、AAAI、IJCAI、T-ITS等10余篇论文，谷歌Scholar citation 760+，代表作有选择性核网络(SKNets)、Generalized Focal Loss (GFL)和“Understanding the Disharmony”系列。</p>
+<p><strong>课程内容</strong></p>
+<p><strong>课程主题</strong></p>
+<p>《单阶段目标检测器的高效表示学习》</p>
+<p><strong>课程提纲</strong></p>
+<p>1、单阶段目标检测的定义与现有表示学习存在的问题</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>2、GFLV1：对于分类、回归表示学习的高效改进及优化</p>
+<p>3、GFLV2：对于质量估计表示学习的高效改进</p>
+<p><strong>讲师介绍</strong></p>
+<p>李翔，南京理工大学博士，导师为杨健教授，入选2020年度博士后创新人才计划；曾是商汤科技研究院、微软亚洲研究院实习生、Momenta访问学者。他的团队曾获得阿里巴巴天池首届大数据竞赛冠军(7186支团队中排名第一)，滴滴首届大数据算法竞赛冠军(7664支团队中排名第一)；以第一或共同第一作者身份发表CVPR、NeurIPs、AAAI、IJCAI、T-ITS等10余篇论文，谷歌Scholar citation 760+；代表作有选择性核网络(SKNets)、Generalized Focal Loss (GFL)和“Understanding the Disharmony”系列。</p>
+<p><strong>直播信息</strong></p>
+<p>直播时间：12月2日20:00</p>
+<p>直播地点：智东西公开课小程序</p>
+<p><strong>加入讨论群</strong></p>
+<p>加入讨论群，除了可以免费收看直播之外，还能认识讲师，与更多同行和同学一起学习，并进行深度讨论。</p>
+<p>添加小助手小开（ID：hikai19）即可申请，备注“姓名-公司/学校/单位-职位/专业”的朋友将会优先审核通过哦~</p>
+➜直播链接激情预告！GTIC 2020 AI芯片创新峰会明日见，18位产学研大牛干货满满
+http://www.sohu.com/a/435348773_115978	26441
+<p><img src="http://p5.itc.cn/q_70/images03/20201130/6c55f912fd3a427895168ac7b9aefcc8.jpeg" /></p>
+<p><strong>智东西（公众号：zhidxcom）</strong></p>
+<p><strong>作者 | 韦世玮</strong></p>
+<p><strong>编辑 | 心缘</strong></p>
+<p>距智东西发起主办的GTIC 2020 AI芯片创新峰会正式开幕已不足24小时！本届峰会将于明日（12月1日）在北京国家会议中心正式举行。</p>
+<p>本次AI芯片创新峰会与中国光学工程学会举办的2020第十二届光电子产业博览会同期进行，将围绕<strong>AI芯片自主创新和产业落地两个核心方向，</strong>探讨AI芯片的创新与自主可控、AI芯片在新基建风口下的落地，以及AI芯片新机遇与未来趋势等话题。</p>
+<p>该峰会还汇集18位来自国内外半导体巨头、国产AI芯片企业的创业者、决策者和技术大牛，以及顶级VC的合伙人，他们来自<strong>全球EDA（电子设计自动化）巨头Cadence、我国明星自动驾驶芯片创企黑芝麻智能、AI芯片新锐玩家壁仞科技、知名投资机构北极光创投、撑起中国芯片产业半壁江山的清华大学</strong>等，以<strong>“拥抱芯世界 开创新未来”</strong>为主题，共同探讨AI芯片在中国半导体黄金时代的创新与发展。</p>
+<p>明日，GTIC 2020 AI芯片创新峰会在<strong>12大直播平台同步直播，直播链接如下：</strong></p>
+<p>https://gtic.zhidx.com/2020/aichip/</p>
+<p>点击<strong>阅读原文</strong>或可直达直播页面。</p>
+<p><img src="http://p2.itc.cn/q_70/images03/20201130/959e1b55380344afb32f264b12e96ad4.png" width="1000" height="914" /></p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p>同时，大会相关信息将覆盖<strong>智东西以及行业垂直合作伙伴的4000多个行业社群。</strong></p>
+<p>届时，不管是新媒体平台，还是直播及社群，大家都能够进行随时互动，一睹各赛道产、学、研精英人士同台演讲与激辩，从AI芯片自主创新到资本市场机遇等方面的思考、从自动驾驶到智慧城市等领域的落地，一同享受AI芯片创新峰会思想火花的碰撞与高峰。</p>
+<p><strong>本次GTIC 2020 AI芯片创新峰会将分为上午场和下午场，共五个版块进行。</strong></p>
+<p>上午场议程主要包括：“AI芯片引领中国半导体黄金时代”、“AI芯片创新与自主可控之路”、“与创新长跑：资本盛宴下的冷思考”，分别探讨AI芯片的未来发展、自主创新、投资热潮。</p>
+<p>下午场议程主要为：“云端AI芯片站上新基建风口”、“边缘端AI芯片加速规模化落地”，将各自聚焦云端AI芯片的新机遇，以及边缘端AI芯片的落地探索。</p>
+<p>议程安排上，GTIC 2020 AI芯片创新峰会将围绕AI芯片自主创新和产业落地两个核心方向进行。除了圆桌论坛外，其余四大版块一共包括15个主题演讲，来自产业链各环节、各赛道公司的负责人将为大家带来面向AI芯片最前沿的观点与思考。</p>
+<p>作为2020年备受期待的AI芯片创新峰会，GTIC 2020 AI芯片峰会将一如既往地专注技术推动产业变革，将“高度专业”、“大牛云集”的传统发挥到新高度。同时，18位来自AI芯片相关产业界的学界领袖和企业高层、创业领军人物、投资大佬已经备好满满干货，将在明日为大家激情呈现！</p>
+➜苹果三星都离不开，中国手机镜头用20年征服全球
+http://www.sohu.com/a/435378947_115978	45912
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201130/4841d9a3cc6d45e5ab873cad82640da7.jpeg" max-width="600" /></p>
+<p class="ql-align-justify"><strong>智东西（公众号：zhidxcom）</strong></p>
+<p class="ql-align-justify"><strong>作者 |</strong> 云鹏</p>
+<p class="ql-align-justify"><strong>编辑 |</strong> 漠影</p>
+<p class="ql-align-justify">手机厂牌们嘴上说着拍照之争就是算法之争，但私底下还是硬件升级“真香”！</p>
+<p class="ql-align-justify">前不久手机镜头模组一哥欧菲光推出了据称是全球首款潜望式连续变焦镜头模组，且厚度仅为5.9mm。而小米则在开发者大会上秀出了概念产品伸缩式变焦镜头，据称单是进光量就提升了300%。</p>
+<p class="ql-align-justify">在手机发布会浓墨重彩地描绘各种拍照功能的背后，我们看到手机相机硬件也在迅速地升级迭代，而这背后有一股中国力量正在快速崛起。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201130/dec588ef6a67433999fd1fb7f510444f.png" max-width="600" /></p>
+<p class="ql-align-justify">在这场智能手机拍照大战中，能够看到不少大陆光学企业的身影，比如舜宇光学、欧菲光、瑞声科技、丘钛科技等，甚至如舜宇、欧菲光等厂商已经在各自擅长的领域成为了头部玩家之一。</p>            <div class="lookall-box">
+<div class="lookall-shadow"></div>
+<section class="lookall">
+<a href="javascript:;" class="show-all" id="showMore">
+<em>展开全文</em>
+</a>
+</section>
+</div>
+<div class="hidden-content control-hide">
+<p class="ql-align-justify">在中国智能手机产业链中，手机镜头产业的核心玩家有哪些，他们与中国台湾大立光这样的与苹果公司深度绑定的龙头之间还有多大差距？在台湾科技产业年创造200亿美元贸易顺差背后，光学产业能否率先突破实现大陆产业链的替代升级？</p>
+<p class="ql-align-justify">一、两个硬件核心：镜头是利润大头，模组是营收大头</p>
+<p class="ql-align-justify">把一部手机拆开来看，其实相机部分就是一个一个的“小盒子”，这些小盒子就是手机的镜头模组。</p>
+<p class="ql-align-justify">之所以称之为模组，是因为它包括了CMOS图像传感器（CIS）、镜头、对焦马达和一些电路元器件。</p>
+<p class="ql-align-justify">在这些零部件中，最核心的部件就是CIS和镜头，他们分别占据了整个镜头模组成本的50%和20%左右，而模组工艺这部分占成本的20%。</p>
+<p class="ql-align-justify">也就是说，两个关键部件和模组工艺共占据了手机镜头90%左右的成本。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201130/01b10a4740b34865b152c05feb5d9617.png" max-width="600" /></p>
+<p class="ql-align-justify">不过比较有意思的是，镜头和模组的营收体量和利润情况恰恰相反。</p>
+<p class="ql-align-justify">镜头模组的售价较高，因此主营业务为镜头模组的厂商，如欧菲光，其营收总体体量较大，2019年能达到520亿左右，但由于模组生产的附加值较低，因此利润更薄，净利润仅为0.9%。</p>
+<p class="ql-align-justify">而以生产镜头本身为主业的厂商，如大立光和舜宇光学，其营收的绝对体量稍小，但由于镜头本身技术壁垒高，产品附加值高，其净利润情况会更好，舜宇光学2019年的净利润就超过了10.5%。</p>
+<p class="ql-align-justify">也正因如此，在手机镜头和模组市场中，大部分玩家都是两条腿走路，镜头和模组兼顾，虽然各有侧重，但是基本上都不会单纯的做某一类产品。</p>
+<p class="ql-align-justify">目前手机CIS市场主要被三星、索尼把控了八成以上市场，豪威和格科微等中国企业也分吃了一小部分。</p>
+<p class="ql-align-justify">而在手机镜头和模组市场中，中国企业，尤其是大陆企业就有了比较大的发挥空间，也多有亮眼表现。</p>
+<p class="ql-align-justify">在这个领域，实现自主研发、国产化替代的希望也是最大的。</p>
+<p class="ql-align-justify">二、舜宇光学紧追台湾大立光，技术代差缩至1-2年</p>
+<p class="ql-align-justify">在手机镜头产业的两个大头：光学镜头和镜头模组里面，光学镜头是技术壁垒相对更高的，而且行业集中度较高。</p>
+<p class="ql-align-justify">大立光、舜宇光学和玉晶光这前三位头部玩家占据了近55%的市场份额。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201130/7eff8def8f0142cc9ae26957574ab4ce.png" max-width="600" /></p>
+<p class="ql-align-justify">▲2018年全球手机镜头市场份额，数据来源：中国产业信息网</p>
+<p class="ql-align-justify">大立光和玉晶光均为台湾企业，而大立光是行业中的龙头，一家就占据了35%以上市场，同时值得注意的是，大立光一直牢牢掌握着苹果这个核心客户，玉晶光也有一定出货。</p>
+<p class="ql-align-justify">在镜头领域，中国大陆企业一直没能跻身苹果的核心供应商之列。</p>
+<p class="ql-align-justify">苹果对于零部件的要求一直以严苛着称，并且产能要求极高。因此在光学镜头领域打入苹果核心供应链应是大陆企业下一个发力点。</p>
+<p class="ql-align-justify">目前舜宇光学在这条赛道上已经跑到了全球市场份额第二的位置，2019年总共出货了13.4亿颗镜头，目前在安卓阵营中，舜宇光学的市场占有率接近三分之一。</p>
+<p class="ql-align-justify">虽然舜宇光学也将研发重心放在了中高端产品上，但目前来看，其平均单价仍然约为大立光的三分之一，不过6P、7P等高端镜头的营收占比都在提升。</p>
+<p class="ql-align-justify">去年舜宇的营收为379亿元，营收规模已经接近大立光的三分之二，净利润达到40亿元，这里面，手机镜头占据了6成以上的利润。</p>
+<p class="ql-align-justify">镜头之所以利润高，也源自于其高技术壁垒的特性。例如镜头设计、设备模具、制程等方面，都有很高的技术难度。</p>
+<p class="ql-align-justify">目前高端的镜头已经发展到8P甚至9P，也就是一个镜头中有8到9片镜片，镜片层数越多，成像质量通常而言会更好，而光线在其中折射产生的光路是极其复杂的，如何设计光路也成为一大难题。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201130/8af4f56b32b14c249ef8cd9e5f2aee42.png" max-width="600" /></p>
+<p class="ql-align-justify">▲iPhone 12中使用的7P镜头</p>
+<p class="ql-align-justify">诚然，就像半导体行业中有EDA设计软件，光学镜头产业也有自己的光路设计软件，但是其工作量和难度依然巨大。</p>
+<p class="ql-align-justify">不要小看这一枚小小的镜片，多加一片，难度就是几何级提升。</p>
+<p class="ql-align-justify">另外，镜片越多，对于公差的要求就越高，也就对于设备模具的精度有极高的要求，目前在设备端国内企业一直处于弱势，顶级的生产设备多来自台湾和日本等地。</p>
+<p class="ql-align-justify">并且大立光由于其出货量大，并且在产业链中积累深厚，许多设备厂商甚至可以为其专门定制化生产设备。</p>
+<p class="ql-align-justify">目前手机由于机身重量、成本限制，普遍采用的是树脂镜片，台湾大立光就是最早研发生产树脂镜片的厂商之一，他们也为此建立了很多专利壁垒。</p>
+<p class="ql-align-justify">有业内专家告诉智东西，其实最简单高效的光路设计，大家都能想到，但是大立光已经注册了专利，其他厂商就只能转而寻找更复杂的方案来达到接近的效果，来绕过大立光的专利。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201130/da84d19ea8a841578a8fefa23acd019b.png" max-width="600" /></p>
+<p class="ql-align-justify">最后在整个镜片的生产流程中，其实需要工程师做大量的人工调节工作，在这其中，高度自动化的设备就会极大提升产能和精度，这些都是台湾大立光等企业具有优势的地方。</p>
+<p class="ql-align-justify">提到工程师，其实光学镜头的研发生产需要大量专业性人才，这类人才既要懂光学，又要懂精密制造，还要对产业链上下游也比较熟悉。</p>
+<p class="ql-align-justify">人才的相对匮乏，也是大陆光学技术追赶台湾企业的掣肘之处之一。</p>
+<p class="ql-align-justify">2013年，通过收购柯尼卡美能达的手机镜头生产基地，舜宇也掌握了大量关键专利，一跃成为了光学镜头领域专利全球第二。</p>
+<p class="ql-align-justify">舜宇光学目前已经完成了7P镜头的量产，8P镜头已经在路上，目前主流的潜望式5倍光学变焦镜头，就有很大一部分都出自舜宇之手。</p>
+<p class="ql-align-justify">根据产业链信息来看，他们已经完成了10倍光学变焦镜头的研发。目前与龙头大立光之间的技术代差已经缩小到1-2年内。</p>
+<p class="ql-align-justify">大像面镜头也是舜宇的优势项目之一，6400万像素的大像面镜头目前已经实现量产，在镜头模组的封装工艺方面，舜宇把主要精力放在了中高端模组上。</p>
+<p class="ql-align-justify">他们的MOB/MOC封装工艺已经研发至第二代，据称可以比较明显的减小模组尺寸和公差尺寸面，同时在这个基础上保证结构强度、增加散热效率。</p>
+<p class="ql-align-justify">这些特性都是手机终端厂商所迫切需要的。</p>
+<p class="ql-align-justify">国内的主流手机厂商，如华为、OPPO、vivo和小米是其镜头产品的下游合作厂商，2018年舜宇开始逐步拿下一些三星手机镜头的订单。</p>
+<p class="ql-align-justify">到2019年，舜宇已经成为韩国三星的第一大手机镜头供应商。</p>
+<p class="ql-align-justify">三、欧菲光模组出货问鼎全球，潜望式模组探寻新思路</p>
+<p class="ql-align-justify">提到镜头模组，可能不了解的人都会把做这个产品的厂商简单理解为“组装厂”。也就是把其他厂商生产的零部件组装成一个整体，一个手机摄像头模组。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201130/cfc63cbe05f743659169df86918b8fdc.png" max-width="600" /></p>
+<p class="ql-align-justify">▲手机镜头模组大致结构</p>
+<p class="ql-align-justify">其实，这只是冰山一角，这其中也有很多技术难题需要解决，比如如何将模组设计的既轻薄又兼顾散热、如何将来自不同厂商的产品以极高的精度装配在一起？</p>
+<p class="ql-align-justify">结构设计、电路设计等等都是他们需要考虑的问题。</p>
+<p class="ql-align-justify">不过相比纯粹的光学镜头设计生产，镜头模组产业的壁垒还是要低得多，也因此造成了集中度较低的市场格局。</p>
+<p class="ql-align-justify">市场份额排名前五的厂商之间，其份额差距在1-2%左右，目前LG Innotek、三星电机、富士康为前三，国内的欧菲光排名第四，舜宇光学排名第五，丘钛科技也在前十名之中。</p>
+<p class="ql-align-justify">可以看出，在消费电子代工领域比较擅长的企业，在模组生产方面都有一定优势。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201130/383fd3cb92954341846e894edd2cebcc.png" max-width="600" /></p>
+<p class="ql-align-justify">▲2019年全球手机镜头模组市场份额，数据来源：Sigmaintell</p>
+<p class="ql-align-justify">大陆厂商欧菲光单从镜头模组的出货量上来讲，已经在2019年做到了全球第一，出货量已经达到了6.6亿组，占据其营收的6成。</p>
+<p class="ql-align-justify">就在前不久欧菲光释放出信息，称他们已经成功研发出了全球首款超薄潜望式连续变焦镜头模组，并放出了模组实拍图。</p>
+<p class="ql-align-justify">要知道，其实目前的智能手机所使用的变焦镜头，无论是潜望式还是普通长焦镜头，从原理上来讲都是定焦镜头的组合。</p>
+<p class="ql-align-justify">通常只有在3倍、5倍、10倍等整倍数上是真正的光学变焦，而在1-3倍之间，3-5倍之间，都是通过数码变焦来实现的“接力”。</p>
+<p class="ql-align-justify">而单反相机那种镜头则是真正通过镜头的伸缩来实现连续的光学变焦。可以说，在智能手机中，对于连续变焦镜组的需求是很强烈的。</p>
+<p class="ql-align-justify">欧菲光无疑在抓住了这个机遇，而其落地产品的实际表现，则决定了他能否在连续变焦镜组战场上一战成名。</p>
+<p class="ql-align-justify">同时我们也可以看到，在智能手机厂商大秀拍照实力，用各种漂亮的参数和样张做营销的时候，背后是这些中国的光学镜头企业在埋头苦干。</p>
+<p class="ql-align-justify">漂亮产品的背后，需要坚实的硬件技术做支撑。</p>
+<p class="ql-align-justify">四、大陆企业逆袭：冰冻三尺非一日之寒</p>
+<p class="ql-align-justify">放眼整个光学镜头行业，其实直到20世纪末，才开始进入放量发展的阶段。</p>
+<p class="ql-align-justify">光学技术早期与军事的联系是非常紧密的，很多光学技术都是战后由军方逐渐下放民用而来。</p>
+<p class="ql-align-justify">在光学这条赛道上，日本和德国一直是跑在最前面的，以日本佳能、尼康为代表的相机技术，以德国徕卡、蔡司为代表的相机和镜头技术，都处于世界领先的地位。</p>
+<p class="ql-align-justify">直到今天，“地球上最平整”的镜面，仍然是只有德国蔡司可以造出来，而这样的镜头被用在了最先进的5nm EUV光刻机上。</p>
+<p class="ql-align-justify">这样的镜片有多平整？据说相当于在地球表面大小的平面上放一根头发丝。</p>
+<p class="ql-align-center"><img src="http://p3.itc.cn/images01/20201130/ea93d53a0b25413e937ea4a05974c2a9.png" max-width="600" /></p>
+<p class="ql-align-justify">不过，随着二十一世纪初期日本工业日趋成熟，光学镜头产品成本逐渐降低，产业转移也就随之发生，韩国、中国大陆、中国台湾等国家和地区都是理想的落脚点。</p>
+<p class="ql-align-justify">这时候，中国广大劳动人民吃苦耐劳的精神又凸显了出来，由于成本优势，中国大陆逐渐成为光学镜头的主要生产地。</p>
+<p class="ql-align-justify">熟悉的路又来了：从给别人代工，到自己生产，再到自主创新。在光学产业上，中国企业开始了自己的崛起、逆袭。</p>
+<p class="ql-align-justify">舜宇光学起家其实可以追溯到1984年，其前身是余姚第二光学仪器厂，是由创始人王文鉴带着7名高中生一同创办的。</p>
+<p class="ql-align-justify">1995年，舜宇开始入局图像数码领域，12年后，它成为了首个在在香港联交所上市的大陆光学企业。</p>
+<p class="ql-align-justify">创业早年，王文鉴曾为了拿到天津照相机公司订单从余姚亲自跑到天津，对方因为他的真诚给了这个“小厂”一个机会，1000套合格镜片成功交付，王文鉴的名字开始被更多人知晓。</p>
+<p class="ql-align-justify">后来舜宇曾为海燕、海鸥相机提供镜片，可以说在光学镜头制造方面，舜宇的积累从很早就开始了。</p>
+<p class="ql-align-center"><img src="http://p0.itc.cn/images01/20201130/4a628486ebc945e9ad345da25fe532b9.png" max-width="600" /></p>
+<p class="ql-align-justify">20世纪90年代，舜宇靠着产品研发设计和生产工艺方面的改进，不断优化镜头的成像分辨率和成像质量，跻身全球光学镜头产业并成为了重要参与者之一。</p>
+<p class="ql-align-justify">如果用性格来形容舜宇，可能就是“低调、务实”，这在他们的企业文化中就有所体现</p>
+<p class="ql-align-justify">其实它们的战略一直是做“名配角”，也就是做全球知名企业的核心供应商，扮演“幕后英雄”的角色。</p>
+<p class="ql-align-justify">同时，舜宇为了防止家族化经营，其实一直践行着员工持股的理念。目前舜宇光学最大的持股人是舜宇员工信托，持股比例为35%。</p>
+<p class="ql-align-justify">2012年，叶辽宁接过王文鉴手中的接力棒，出任公司董事长，而叶辽宁，正是二十多年前的那七名高中生之一。</p>
+<p class="ql-align-justify">叶辽宁的接任，也是舜宇的关键转折点之一。当时他看到主流手机厂商越来越重视拍照功能，而手机上的一枚小小摄像头，背后可能蕴藏着巨大的机遇。</p>
+<p class="ql-align-center"><img src="http://p9.itc.cn/images01/20201130/6acea6c4591340b98fe453f2a0fef6dc.png" max-width="600" /></p>
+<p class="ql-align-justify">▲叶辽宁</p>
+<p class="ql-align-justify">当时他坚定的提出要做手机上的光学镜头，我们都知道，2011年之后，中国智能手机市场迎来了爆发式增长，互联网模式更是让各种新鲜功能快速传遍消费市场，就比如拍照。</p>
+<p class="ql-align-justify">有业内专家告诉智东西，其实舜宇就是乘着那一波智能手机爆发的浪潮而崛起的，最终成为手机光学镜头龙头玩家之一。</p>
+<p class="ql-align-justify">再看镜头模组大厂欧菲光，其经历不免有相似之处。虽然它相对舜宇要年轻许多，但也在光学产业中征战了近20年，也是老兵一枚。</p>
+<p class="ql-align-justify">欧菲光是由两家企业共同出资成立的，而由于经营持续陷入困境，2001年的时候找来了蔡荣军接管经营，他接手后，将业务转向消费电子光元器件。</p>
+<p class="ql-align-justify">但经过三年艰难前行，企业经营仍不见好转，2004年9月，这两大股东直接将欧菲光卖给了蔡荣军，至此，欧菲光正式进入了蔡荣军时代，这也就是我们今天看到的欧菲光。</p>
+<p class="ql-align-justify">自始至终，欧菲光都没有放弃光元器件业务，一直全力攻克红外截止滤光片的技术研发，最后终于掌握了滤光片的关键镀膜技术。</p>
+<p class="ql-align-justify">经过几年努力，欧菲光一跃成为了当时全球最大的红外截止滤光片厂商，市场份额一度占据了三分之一。</p>
+<p class="ql-align-justify">一位在光学镜头产业打拼多年的“老炮”告诉智东西，“老蔡是做财务出身，所以对于资本的运作还是玩的很转的。”</p>
+<p class="ql-align-justify">2010年8月3日，欧菲光在深交所中小板上市，发行了2400万股，共募集资金7.2亿元。</p>
+<p class="ql-align-justify">也同样是在2012年，叶辽宁接棒舜宇的那一年，欧菲光开始入局手机摄像头。</p>
+<p class="ql-align-justify">2016年11月，欧菲光抓准时机用2.34亿美元拿下了索尼华南厂工厂，一举跻身苹果供应商之列。在稍有风吹草动都能引起波澜的A股，进入苹果供应链也为欧菲光赚足了眼球。</p>
+<p class="ql-align-center"><img src="http://p6.itc.cn/images01/20201130/66ca8ad30dac41aab5d4278b393ec1af.jpeg" max-width="600" /></p>
+<p class="ql-align-justify">▲库克与蔡荣军</p>
+<p class="ql-align-justify">二十一世纪初期，中国互联网快速发展，2010年之后的十年，又是智能手机市场快速崛起的十年，舜宇光学和欧菲光等大陆光学企业都抓住了这个机遇，从市场中找到了自己的一席之地。</p>
+<p class="ql-align-justify">但我们也能看到，这背后，是二十年、三十年的积累，从给人代工到自主研发，都需要持续的投入和坚定的意志力。</p>
+<p class="ql-align-justify">五、手机镜头市场天花板还有多高？</p>
+<p class="ql-align-justify">放眼整个光学镜头产业，企业的营收状况和利润状况都呈现稳步提升的态势，一些净亏损的企业也在近两年扭亏为盈并逐步扩大利润面。</p>
+<p class="ql-align-justify">智能手机市场的总体规模虽然已经趋于饱和，但智能手机产品硬件升级迭代的速度却没有放缓，拍照从800万像素发展到1亿像素。摄像头的数量也从1颗、2颗增加到5颗甚至6颗。</p>
+<p class="ql-align-center"><img src="http://p4.itc.cn/images01/20201130/67faf46897964f3b914c4053003bbc07.png" max-width="600" /></p>
+<p class="ql-align-justify">▲诺基亚9 PureView</p>
+<p class="ql-align-justify">对于中国大陆光学企业来说，这既是机遇也是挑战，庞大的市场给了厂商们一定的生存空间，但竞争激烈的市场也需要用硬核技术说话。</p>
+<p class="ql-align-justify">手机厂商尚且可以靠营销和渠道补足技术的短板，但镜头厂商却玩的是100%的纯技术博弈。</p>
+<p class="ql-align-justify">面对多摄趋势，能否给出稳定性高、功耗低、成像质量好的模组，如何保证多摄之间的协同联动高效？</p>
+<p class="ql-align-justify">面对越来越复杂的镜头光路和组合，生产设备的精度能否达到要求，在高端设备上能否摆脱台湾、日本企业的控制，实现自研突破，都是非常现实且亟待破局的问题。</p>
+<p class="ql-align-justify">同时为了拿下如苹果这样的海外大客户，产能的扩张也势在必行。</p>
+<p class="ql-align-justify">现在手机镜头和模组的平均单价都呈现增加的趋势，这就意味着产业在向着高技术、高利润方向发展，这对于企业的研发能力和技术创新能力都提出了更高的要求。</p>
+<p class="ql-align-justify">不过在手机镜头市场火爆背后，大立光、玉晶光、舜宇光学、欧菲光等厂商也都在积极布局新的市场，例如3D Sensing所主打的AR市场以及车载镜头市场，都还是一片“蓝海”。</p>
+<p class="ql-align-center"><img src="http://p8.itc.cn/images01/20201130/913961fac60a4d928ae83084138a191e.png" max-width="600" /></p>
+<p class="ql-align-justify">有业内专家告诉智东西，其实手机镜头产业可能距离触到天花板也不远了，所以厂商们都在积极开拓新的“生态平台”，“用口嫌体直来形容非常恰当。”</p>
+<p class="ql-align-justify">结语：二十年完成追赶，新的战场已经开启</p>
+<p class="ql-align-justify">从市场份额和绝对出货量上来看，中国大陆企业的确已经赶上了以中国台湾、韩国企业为代表的行业龙头，并且在高端产品中，技术代差缩小到了1-2年。</p>
+<p class="ql-align-justify">但我们也能看，产品怎么样，市场的认可和采纳是重要判断标准，目前国内光学企业仍然很难打入到像苹果这样的海外头部手机厂商的核心供应商之中。</p>
+<p class="ql-align-justify">在光学镜头的核心成像质量上，大陆企业与行业龙头之间仍然存在一定差距，在专利积累和人才团队的建设上，仍然需要大量的投入，而产能的爬坡也需要时间。</p>
+<p class="ql-align-justify">未来智能手机市场中对于光学镜头及模组等相关产品的需求仍会呈现爆发式增长，有机构预测2021年四摄及以上机型将占据90%以上的市场。而明年更是潜望式镜头遍地开花、伸缩式镜头出露锋芒的一年。</p>
+<p class="ql-align-justify">实现赶超，需要市场和技术创新，我们不缺市场，也在努力进行技术创新。甚至只需要5年，光学镜头行业或许将成为中国科技产业实现国产化并对海外企业形成优势的重要产业之一。</p>
+<p class="ql-align-justify">而在手机镜头市场之外，AR、车载市场的快速爆发，似乎已经吹响了一场新大战的号角。</p>
