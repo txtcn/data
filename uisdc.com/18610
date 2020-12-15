@@ -1,0 +1,525 @@
+➜翻阅一篇论文后，我发现「游戏化设计」的真正玩法（附案例）
+https://www.uisdc.com/gamification-design	60219
+<h4><span class="auto_menu">前言</span></h4>
+<p>今天想跟大家聊聊如何实现一款好的游戏化作品。</p>
+<p>前些时候网上冲浪时发现一篇 19 年的 Paper [1]，文中提到一个不错的方法论，在此结合一些个人理解与大家分享。</p>
+<p>文章篇幅长，碎片时间不宜阅读，朋友们做好准备哈。本文分4部分，涵盖「理论 &#8211; 方法 -实践」完整的知识闭环：</p>
+<ul>
+<li>土壤/水/空气: 正确的游戏观</li>
+<li>树根: 游戏化的背景知识</li>
+<li>树干: 游戏化设计方法论</li>
+<li>树枝: 游戏化设计实践</li>
+</ul>
+<p><span class="img-zoom"><img alt="翻阅一篇论文后，我发现「游戏化设计」的真正玩法（附案例）" class="alignnone size-full wp-image-397617" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cx-20201124-1.jpg" width="600" height="600" /></span></p>
+<h4><span class="auto_menu">正确的游戏观：如何看待游戏决定游戏化设计的视角</span></h4>
+<p>游戏化顾名思义是将游戏设计中的理论和原理应用到「非游戏」场景中。游戏化是基于「游戏」理解进行设计，因此<span style="color: #ff6600;">对游戏的正确认识是游戏化设计的根基。</span></p>
+<p>「上瘾机制」的流行证明了部分人对游戏理解的不充分，直接导致了功利性游戏、公式化游戏等糟糕的游戏化设计。</p>
+<p>[link https://www.uisdc.com/learn-addicted-model-with-qzone]</p>
+<p>游戏不是电子海洛因，那它为什么会让人感觉「上瘾」呢？</p>
+<p><strong>1. 重新认识游戏</strong></p>
+<p>赫伊津哈[2]在其着作《游戏的人》中，对人游戏的行为做出了深刻的探讨，指出「游戏本身具备意义，游戏不需要依赖任何生物性目的而存在」。</p>
+<blockquote><p>进行游戏时，有某些超越了生活所需并赋予游戏意义的东西在游戏中发生…所有的游戏都具备某种意涵</p></blockquote>
+<p>当人们在玩一场「真正」的游戏时，就好像进入一个独立于现实生活的空间，赫伊津哈将其称为「魔圈」。「魔圈」中的人就像来到了一个自给自足的丰富精神世界，这也是为什么游戏的人会表现出废寝忘食的状态。</p>
+<p><span class="img-zoom"><img alt="翻阅一篇论文后，我发现「游戏化设计」的真正玩法（附案例）" class="alignnone size-full wp-image-397618" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cx-20201124-2.jpg" width="800" height="511" /></span></p>
+<p>唯有「真正」的游戏才能让玩家步入「魔圈」内的世界，「真正」游戏的特征表现为：</p>
+<ul>
+<li>游戏是人自愿而非强迫的行为</li>
+<li>游戏目的是非功利性的</li>
+<li>游戏不受现实规则而受「魔圈」内规则限制</li>
+<li>游戏存在于特定空间和时间中，在此范围内开始和终结</li>
+<li>游戏由「魔圈」内的人的行为共同建立</li>
+</ul>
+<h4><span class="auto_menu">游戏化的背景知识</span></h4>
+<p><strong>1. Play&amp;Game</strong></p>
+<p>当我们提到游戏时，会注意到两种明显不同状态的「游戏」[3]：</p>
+<ul>
+<li>Paidia(Play/游玩)： 无明确组织结构，本能自发的活动，如过家家；</li>
+<li>Ludus(Game/游戏)： 清晰的规则、目标和有组织结构的活动，如足球赛</li>
+</ul>
+<p>表面上我们将游戏完美区分，但实际情况「游玩 Play」和「游戏 Game」之间的界限却并不清晰。比如小孩玩过家家时会交流默契达成一套临时规则，某人扮演父亲，某人扮演母亲一起完成某项家庭活动。</p>
+<p>尽管「游玩 Play」和「游戏 Game」之间存在差异，但两者都具备「魔圈」内的游戏特征。这也引出了我认为对游戏化设计重要的第一原则:</p>
+<blockquote><p>好的游戏化设计同样遵循「魔圈」内规则，即玩家是自愿参与，游戏目的是非功利性的原则。</p></blockquote>
+<p><strong>2. 日常生活与游戏的交汇</strong></p>
+<p>很多游戏都是从自发、即兴的游玩活动发展成规则、目标清晰游戏，篮球的发明是个很好的例子。</p>
+<p>奈史密斯从加拿大儿童用球投入桃子筐，被称之为“Duck-on-a-Rock”的游戏中受到启发并改进为最初的篮球游戏，后续一百年期间篮球游戏的规则在不断完善和进步，成为了现今篮球比赛的样子。</p>
+<p>Play 能发展成 Game 的重要原因是，Play 活动本身具备游戏性。“Duck-on-a-Rock” 发展成篮球游戏，核心的游戏性让 Play to Game 成为可能。</p>
+<p>游戏性带来的「乐趣」吸引了玩家，引出了玩家自愿的姿态以及对「玩」的「严肃」态度，激发了玩家内在驱动力。这也引出游戏化设计的第二原则:</p>
+<blockquote><p>游戏化作品必须具备游戏性。</p></blockquote>
+<p>那些自发的、自娱自乐的和具备游戏性的活动往往从各类日常情境中自然出现。让我们想想，小时候的弹珠、跳格子游戏，无一例外是基于情景灵光乍现的想法，有些游戏并没有完整的规则，但不妨碍凭借其游戏性、可行性在那个信息传播并不发达的时代风靡地区，乃至全国。玩家所处情景是游戏性发现的最大诱因，因此引出游戏化设计的第三原则:</p>
+<blockquote><p>从玩家情景中来，到玩家情景中去。</p></blockquote>
+<p><span class="img-zoom"><img alt="翻阅一篇论文后，我发现「游戏化设计」的真正玩法（附案例）" class="alignnone size-full wp-image-397619" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cx-20201124-3.jpg" width="800" height="511" /></span></p>
+<h4><span class="auto_menu">游戏化设计方法论</span></h4>
+<p>游戏化设计是个比较新的设计分支。游戏化设计至今没有成熟可靠的方法论，一方面人们对游戏的片面理解导致功利游戏化的设计很多，以至于被相当部分人认为游戏化设计是简单的，只需套用技巧、公式即可，导致缺乏群众力量推动正确游戏化设计理论和实践的发展；另一方面，游戏化过度依赖对玩家、情景的前置调研，而游戏化的服务对象往往多为商业目标，在当今讲究效率与收益的商业市场，长时间深入的调研显得并不讨好。</p>
+<p><strong>1. 定义</strong></p>
+<p>以前我会把游戏化设计定义为，使用游戏元素/技巧应用在非游戏的场景，以达到某种目的方法。</p>
+<p>现在我会倾向定义为，设计重塑日常活动和情境，使之更具有游戏性、吸引力和趣味性。</p>
+<p>前后者定义并无对错，但叙述角度的不同或多或少会影响设计思考，前者会让我们过度关注于目的，而后者会让我们回归于游戏化作品本身的游戏性及其带来的趣味。当然，游戏化设计为目的服务，但前者对目的过度关注，会让我们做出滥用外在动机技巧的设计，而后者让设计师的注意力回归到内在驱动力的设计上，满足这一点的设计，自然而然会达成游戏化的目的。</p>
+<p>总之，游戏化设计重点聚焦在如何产生内在驱动力的引人注目的体验，而不是基于任务和奖励的方法，使用可能产生外在动机来执行不那么吸引人的任务的游戏元素。</p>
+<p>有没有以上理论支撑的一种设计方法、流程呢？有的。</p>
+<p>Situated Play Design（SPD），情景游戏设计。</p>
+<p><strong>2. 情景游戏设计（SPD）</strong></p>
+<p>情景游戏设计（SPD）灵感来源于「参与式设计」(PD)，情景游戏设计主要关注游玩（Play）、游戏性，而非专注于可用性、无障碍或民主化解决方案。因此，情景游戏设计对比参与式设计多了一步重要的设计策略，用于捕捉情景中自然浮现的游戏性潜力（Play potentials）。</p>
+<p>「情景游戏设计」和「游戏设计」一样，都主要聚焦游玩（Play）和游戏性，但是「情景游戏设计」并不关注玩家的游戏偏好问题。「情景游戏设计」亮眼之处在于捕捉、提炼出日常生活中自然浮现出，可能对用户有内在意义的游玩（Play）活动（即游戏性潜力），以此作为设计起点，增强和发展。</p>
+<p><strong>3. 情景游戏设计方法: 探寻（Chasing）、增强（Enhancing）和部署（Deploying）</strong></p>
+<p>通过 4 点特性快速把握 SPD 设计方法:</p>
+<p>1. 专注于发现和利用基于情景游玩互动中自发有趣的表现形式；</p>
+<p>2. 用户作为创意提供伙伴在一开始时即卷入；</p>
+<p>3. 在情景中构思活动；</p>
+<p>4. 并将游戏性的运用作为设计目标和设计方法。</p>
+<p>情景游戏设计方法主要概括为以下 3 个步骤：</p>
+<p>首先，设计师在半自然环境（尽可能保持用户感到舒适的环境）中与用户互动，并发现、捕捉互动中自发出现具备游戏性潜力的游戏形式；</p>
+<p>其次，利用设计方法补充、增强这些游戏形式，设计输出一套相对完整可玩的游戏（Play）；</p>
+<p>最后，在真实环境中和用户进行测试，获得反馈。持续迭代直到令用户满意的设计。</p>
+<p><span class="img-zoom"><img alt="翻阅一篇论文后，我发现「游戏化设计」的真正玩法（附案例）" class="alignnone size-full wp-image-397620" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cx-20201124-4.jpg" width="800" height="511" /></span></p>
+<p><strong>4. 美食游戏案例演示</strong></p>
+<p>Paper 中一个真实案例「美食游戏」为大家简单介绍这套方法论的实际运用。</p>
+<p>该案例目的在于探索和增强饮食中的游戏体验。设计师们邀请了 2 位美食爱好者参与其中， 设计主要分为 3 部分，正如以上描述的 3 个步骤。首先，设计师们观察参与者的日常饮食习惯，发现和捕捉情景中可能出现的游戏性表现；然后，确定一个具备游戏性潜力（Play potentials）的活动，以此作为设计的核心机制；最后落地进行实景用户测试，获得优化反馈。</p>
+<p><span class="img-zoom"><img alt="翻阅一篇论文后，我发现「游戏化设计」的真正玩法（附案例）" class="alignnone size-full wp-image-397623" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cx-20201124-7.jpg" width="939" height="800" /></span></p>
+<p><strong>第一步: 探寻（Chasing）</strong></p>
+<p>首先在用餐时对美食爱好者进行访谈，重点发现他们日常饮食习惯中已有的游戏性互动，这将为设计阶段提供重要参考。为了发现、捕捉有「游戏性潜力」（Play potentials）的互动，设计师结合了两种设计方法：</p>
+<p>「设计民族志」来研究参与者在用餐时的行为；</p>
+<p>「实体对话工具」来促进餐后关于游玩和美食的对话。</p>
+<p>有趣的是，美食爱好者们一再表示，他们认为任何形式的游戏都会破坏美食体验。然而，他们的行为却传达了相反的信息。结合访谈和对他们用餐时行为的观察，我们能够确定一种不断出现并吸引他们的游戏性互动：相互挑战和嘲讽。他们自发使用了不同的方式来进行这样的互动，其中一个特别的挑战「猜食物的成分」表现尤为突出，让参与者在享受美食的同时玩的开心。</p>
+<p><strong>第二步: 增强（Enhancing）</strong></p>
+<p>为了增强该游戏性的互动使其成为一个完整游戏，设计师从上一步中发现的核心游戏机制「猜测食物成分」出发，设计了一个具备游戏性的饮食游戏。</p>
+<p>这个阶段不会卷入美食爱好者，以此保留该互动方式对他们的惊喜。设计师受「PLEX」框架理论启发:「发现」「创造」「合作」「竞争」，设计了一个 4 道菜的餐点，其中每道菜都在「猜测食物成分」基础上设计成不同玩法的游戏。</p>
+<p>例如，「发现」形式的玩法是面包和橄榄油（图1）。设计师将会发给每位美食爱好者 6 个小盘子，并在其中一个盘子里倒入一些食用油。这些食用油被注入某些其他的食物成分，美食爱好者必须猜测这些成分，猜对者将获得一种新的食用油。另外，该游戏设计一个重要之处，即游戏规则和策略是半开放的，它允许每位玩家找到自己的参与方式，例如，玩家可以选择是否分享他们发现的成分，或者比谁猜对的更多。</p>
+<p><span class="img-zoom"><img alt="翻阅一篇论文后，我发现「游戏化设计」的真正玩法（附案例）" class="alignnone size-full wp-image-397621" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cx-20201124-5.jpg" width="633" height="252" /></span></p>
+<p>△ 图1.「发现」形式的玩法。左图：一个装有样品的盘子，玩家使用样品沾食用油并食用，以此猜测油中的成分。右图：一位玩家正在品尝其中一种食用油</p>
+<p><strong>第三步：部署（Deploying）</strong></p>
+<p>来到部署测试阶段，设计师为了营造真实的饮食场景，特意请美食爱好者们吃了一顿饭，并端出了设计好的美食游戏。</p>
+<p>体验结束后，设计师使用了「实体对话工具」进行体验反馈收集，比如，设计师给参与者们发放的一份食物化的问卷（图2），让参与者通过吃小甜品的形式，选择 4 种不同玩法中喜欢和不喜欢的餐点。统计后发现，参与者喜欢设计师设计的所有不同玩法的餐点游戏，同时对游玩体验表示赞赏。</p>
+<p>他们在享受食物的同时主动参与了所有不同玩法的游戏，但早先访谈中他们明确表示游戏会对他们的用餐体验产生负面影响，结果令人惊讶。</p>
+<p>最后复盘阶段，他们解释说，这些体验让他们能以自己喜欢的方式围绕食物互动。这种游戏性互动并不会破坏用餐体验，反而能顺利融入他们对食物的期待，为他们提供彼此随意玩闹的机会，从而增强了用餐体验。</p>
+<p><span class="img-zoom"><img alt="翻阅一篇论文后，我发现「游戏化设计」的真正玩法（附案例）" class="alignnone size-full wp-image-397622" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-cx-20201124-6.jpg" width="586" height="427" /></span></p>
+<p>△ 图2. 食物问卷。盘周围：你喜欢什么？什么好玩？什么感到不舒服？盘中心：源于游戏理论的 16 种情绪选择</p>
+<h4><span class="auto_menu">小结</span></h4>
+<p>正确的游戏观让我们知道，游戏令人着迷是游戏本身具备意义，它给人带来纯粹的乐趣。舒兹[4]在其着作中用一句话将游戏精妙总结，</p>
+<blockquote><p>玩一场游戏，意味着自愿去克服非必要的障碍。</p></blockquote>
+<p>「自愿」是个很有意思的词，它表达了游戏是非强迫、非工作任务。克服「非必要障碍」首先声明了活动的非功利性，它凭借人的内在驱动力而非外在刺激完成，其中最重要的因素就是「乐趣」。「乐趣」由哪来？由游戏性来。</p>
+<p>因此，我认为游戏化设计中缺一不可的三原则：</p>
+<ul>
+<li>玩家自愿原则</li>
+<li>游戏性原则</li>
+<li>游戏情景原则</li>
+</ul>
+<p>SPD 的游戏化方法背后遵循的原理与三原则相同。SPD 的设计三阶段覆盖了整个设计流程：探寻（Chasing） &#8211; 增强（Enhancing） &#8211; 部署（Deploying）。</p>
+<p>探寻（Chasing）。该阶段与上述三原则呼应，在场景中观察用户互动时自发产生的游玩（Play）活动，从中发现具备游戏性潜力的游戏形式；</p>
+<p>增强（Enhancing）。对发现的游戏形式进行设计，丰富和增强核心游戏性的部分，经过设计后成为一个完整的游戏（Game）；</p>
+<p>部署（Deploying）。因为核心游戏的部分来源于用户互动的情景，因此在测试阶段更注重在相同情景中进行测试和接收反馈。</p>
+<p>美食游戏化的案例中，成功的关键因素在于设计师发现、捕捉到了具备「游戏性潜力」互动方式，它是启发后续设计的基础。</p>
+<p>在增强阶段，虽然设计师使用了游戏理论（如 PLEX）来指导设计决策，即通过理论驱动的游戏形式来增强现有互动的游戏性。但核心机制、玩法是通过观察，发现得到的「游戏性潜力」互动方式，它不是凭空出现的。</p>
+<p>其中重要的是，在前期访谈过程中，将访谈对象放入情景中进行访谈是非常必要的。通过现场边体验边对话的方式能够观察到参与者言语与行为相矛盾的地方。如果一开始的访谈脱离情景，设计师可能永远无法发现参与者围绕主题自发的互动方式，同时也就错过导致游戏化设计成功的核心，具备游戏性潜力的活动。</p>
+<ul>
+<li>[1]: Ferran Altarriba Bertran, Elena Márquez Segura, Jared Duval, Katherine Isbister, Chasing Play Potentials: Towards an Increasingly Situated and Emergent Approach to Everyday Play Design</li>
+<li>[2]: 约翰·赫伊津哈 Johan Huizinga, 《游戏的人》</li>
+<li>[3]: 罗杰·凯洛斯 Roger Caillois, 《Man, Play and Games》</li>
+<li>[4]: 伯尔纳德·舒兹 Bernard Suits, 《蚱蜢:游戏、生命与乌托邦》</li>
+</ul>
+<p>欢迎关注作者微信公众号：「设计的人」</p>
+<p><span class="img-zoom"><img alt="翻阅一篇论文后，我发现「游戏化设计」的真正玩法（附案例）" class="alignnone size-full wp-image-397624" src="https://image.uisdc.com/wp-content/uploads/2020/11/uisdc-bc-20201124-66.jpg" width="180" height="181" /></span></p>
+➜如何量化用户体验？试试阿里这个新出的「两章一分法」！
+https://www.uisdc.com/two-chapters-and-one-point	61258
+<p>互联网下半场，所有的比拼都在产品体验；然而“体验”是一个非常抽象的词，我们怎么把一个抽象的概念拆解成可落地执行的策略，作用到企业中后台产品上，怎么衡量策略的有效性，这一直是我们团队面临的重大课题。</p>
+<h4><span style="color: #3366ff;"><span class="auto_menu">1.</p>
+<p>业界关于体验度量的经验</span></span></h4>
+<p>目前关于“体验度量”比较成熟的理论模型当属 Google 的 HEART 模型：</p>
+<p>[link https://www.uisdc.com/google-heart-frame]</p>
+<p>另外还有 ISO 9126 软件质量模型和Davis 的 TAM 技术接受模型。后人在此基础上进行了很多实践，譬如 SAP 的用户体验问卷（UEQ）、Oracle 的客户体验价值公式（CX）等。公司内部各个 BU 也在不断的尝试和探索，譬如新零售技术团队的 TES 模型：</p>
+<p>[link https://www.uisdc.com/ali-metric-model]</p>
+<p>技术团队研发效能的 DEVA 模型，国际 UED 语音设计的 HII 模型，阿里云的 QoUE 模型。纵观这些模型和实践，大多是主观数据和客观数据的结合。</p>
+<p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400031" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-1.jpg" width="1600" height="900" /></span></p>
+<p>我们团队也曾提出过 TECH 、PTECH 模型，但由于模型的操作门槛较高、对埋点数据有不少要求，难以推广到各条业务线。痛定思痛后，我们决定重新回归业务，回归“体验度量”的初心，去繁从简，提高通用性。</p>
+<h4><span style="color: #3366ff;"><span class="auto_menu">2.</p>
+<p>企业中后台产品的特点</span></span></h4>
+<p>企业级中后台产品最大的特点是任务性质非常明确；用户使用这类产品通常是为了解决某个确定的问题点，期待用新的解决方式降本增效。</p>
+<p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400032" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-2.jpg" width="1600" height="900" /></span></p>
+<p>桌面研究也表明：可用性问题是软件行业的普遍问题：在英国，一般商用计算机用户只有30%-40%的有效生产率；软件缺陷中，48%是可用性问题。</p>
+<p>正是基于上述原因，我们尝试提出了“两章一分”的标准，分别从设计验收、可用性测试、易用度分数等三个维度对产品体验进行体检和把关。</p>
+<h4><span style="color: #3366ff;"><span class="auto_menu">3.</p>
+<p>什么是「两章一分」</span></span></h4>
+<p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400033" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-3.jpg" width="1600" height="900" /></span></p>
+<p><span style="color: #3366ff;"><strong>1. 设计验收章</strong></span></p>
+<p>“设计验收章”主要有 3 个维度：产品还原度、任务流程跑通率、单页面加载时间。</p>
+<p>产品还原度：指技术同学的最终产出与设计稿之间的差异；</p>
+<p>汇总人工智能线、技术风险线等 5 个产品近 1 年的可用性测试结果。除功能、性能问题外，高频体验问题主要集中在“帮助引导”、“操作反馈”、“任务流程”、“概念术语”、“功能入口”这 5 个方面。同时，结合之前项目沉淀的设计经验和设计工具，我们最终将“产品还原度”的子维度定为“信息导航”、“帮助引导”、“操作反馈”、“文案名词”；每个子维度用 2-3 句描述来进行评分。</p>
+<p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400034" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-4.jpg" width="1600" height="900" /></span></p>
+<p>任务流程跑通率：验收确认能跑通的主干任务流程数，在所有主干任务流程数中的占比；举个例子，设计稿中枚举了 10 条主干任务流程，验收发现其中 9 条已跑通，那么任务流程跑通率就是 9/10*100%=90%。</p>
+<p>单页面加载时间：接入雨燕性能指标数据的产品看“首次有效渲染时长 fmp”这个指标；未接入的产品直接主观判断，超过 3 秒的视为不合格。</p>
+<p><span style="color: #3366ff;"><strong>2. 可用性测试章</strong></span></p>
+<p>“可用性测试章”也在验收阶段执行，同样有三个参评维度：最终完成率、人均求助次数和高阻碍页面。</p>
+<p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400035" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-5.jpg" width="1600" height="900" /></span></p>
+<p>我们没有考虑将可用性测试的常用指标——操作时长作为参评维度，主要原因是企业中后台产品类型多、使用场景复杂程度各自不同：用语雀创建企业空间只需要 5 分钟；用云凤蝶搭建一个后台页面可能需要 60 分钟，用 sofa stack 创建并发布一个应用可能需要 2-3 个小时&#8230;&#8230;难以确定可以作为标准的具体操作时长。</p>
+<p><span style="color: #3366ff;"><strong>3. 易用度分数</strong></span></p>
+<p>“易用度分数”标准为 5.5 分。</p>
+<h4><span style="color: #3366ff;"><span class="auto_menu">4.</p>
+<p>「两章一分」的实践</span></span></h4>
+<h5><span style="color: #3366ff;">1. 案例实践现状</span></h5>
+<p>截至 2020 年 9 月，已有 58 个 产品实践过“两章一分”系列方法，基本覆盖平台设计团队支撑的重点项目及 UV 超过 100 的产品。详细数据如下图：</p>
+<p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400036" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-6.jpg" width="1600" height="900" /></span></p>
+<p>完整体验“两章一分”的 18 个产品，仅可用性测试就帮助发现 364 个问题，平均每个产品发现 20 个问题；其中，“九州2.0 发布部署”发现问题数多达 53 个。</p>
+<p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400037" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-7.jpg" width="1600" height="901" /></span></p>
+<h5><span style="color: #3366ff;">2. 实操经验提炼</span></h5>
+<p><strong>设计验收：共创式验收</strong></p>
+<p>企业中后台产品生产阶段中，由于一般没有专门的测试同学，因此设计验收都是由设计师或 PD 单独执行，没有作为必选环节，有时候甚至会因为开发周期紧张而直接略过；既没有方法论，又缺乏仪式感。</p>
+<p>“两章一分”的实践中，我们首次践行“共创式验收”，以项目组会议的方式，邀请各个角色共同参与到验收环节中：如果产品没有什么技术门槛，那么各个角色分别独立操作核心流程；如果产品有一定的技术门槛，则由技术同学操作核心流程，同时共享屏幕，其他同学从旁观察。操作完毕后，项目组内共同讨论发现的体验问题，并将问题落地到 Aone 中进行排期管理落地。</p>
+<p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400038" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-8.jpg" width="1600" height="900" /></span></p>
+<p><strong>可用性测试：引入“技术支持”+圈定最低测试人数+ 线上测试降成本</strong></p>
+<ul>
+<li>引入“技术支持”</li>
+</ul>
+<p>企业中后台产品通常有一定的技术门槛，以 SOFAstack的测试任务为例：</p>
+<p>使用 sofaboot 技术栈，创建 “hello world” 应用，通过“经典版”发布部署模式发布成功。</p>
+<p>测试过程中经常会出现一些涉及到底层技术系统的问题，非设计同学能解决，因此我们建议做企业中后台产品的可用性测试时，需要配备至少一名技术支持同学，以备不时之需。</p>
+<ul>
+<li>圈定最低测试人数</li>
+</ul>
+<p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400039" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-9.jpg" width="631" height="377" /></span></p>
+<p>Jakob Nielsen 在 2000年提出测试 5 人就能发现 85%的可用性问题；结合我们的实际业务场景：有些产品真实客户非常难找；前期“共创式验收”已跑通核心主干流程；因此我们将最低测试人数限制为 3 人。</p>
+<ul>
+<li>线上测试降成本</li>
+</ul>
+<p>我们开始实操案例时，恰逢疫情期间，于是就引入了线上远程测试的方式；后续实践下来，发现远程测试能在观察、分析阶段显着降低执行成本。</p>
+<p>通过钉钉或阿里郎发起视频会议，邀请参加测试和观察的同学入会，请测试用户共享操作屏幕，主持人录屏捕捉用户操作轨迹，PD、技术等项目组成员从旁观察。测试结束后，使用语音转文本工具，快速将音频转成文字。这种模式最大的好处有两点：</p>
+<ul>
+<li>突破了距离和观察人数的限制；从实践来看，现场测试结合远程测试的模式，至少能同时对 2-3 人进行测试，执行成本减半；</li>
+<li>语音转文本后，显着提升了分析效率。</li>
+</ul>
+<p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400040" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-10.jpg" width="1600" height="900" /></span></p>
+<p><span style="color: #3366ff;"><strong>执行阶段的多样化</strong></span></p>
+<p>最开始提出“两章一分”的时候，我们原本希望这套标准能被作为判断产品体验是否好用，能否上线的标准之一；但实际并未推动成功。这里面有很多原因，其中一个非常实际的问题是很多产品需要调用线上数据库才能跑通核心流程，在测试阶段没法跑通；这就导致在测试阶段做可用性测试无法真实还原用户场景。</p>
+<p>此外，设计师或 PD 新接手某款产品时，也希望能通过可用性测试的方式来快速了解产品问题。回归到“两章一分”的初心——帮助产品发现体验问题，因此，我们拓展了方法的执行阶段，不再局限于测试或验证阶段，只要场景适合，都可以用。</p>
+<h5><span style="color: #3366ff;">3. 典型案例：LinkE 研发运维中心一期</span></h5>
+<p><span style="color: #3366ff;"><strong>产品简介</strong></span></p>
+<p>LinkE 研发运维中心是云通未来 Serverless 战场的重要产品；业务方希望用该产品来整合研发同学日常高频使用的研发、运维、中间件平台，大幅减少平台割裂和跳转，提供沉浸式的产品体验。</p>
+<p>目前该产品还处于 0-1 建设的阶段。</p>
+<p><span style="color: #3366ff;"><strong>实践过程</strong></span></p>
+<ul>
+<li>为了确保产品体验良好，设计师在验收阶段引入“两章一分”，进行共创验收和可用性测试；</li>
+<li>共创验收阶段，邀请 PD、技术 等 8 名同学一起参与，最终结果为“通过”；</li>
+<li>可用性测试阶段，设计师根研发通用场景，招募 6 名研发同学参与两个可用性测试任务，分别为：任务 1，基于代码变更完成研发自测联调；任务 2，基于发布完成分支的集成、预发、灰度、生产</li>
+</ul>
+<p>结果用户在任务 2 遇到高阻碍页面，导致可用性测试结果为“不通过”，任务 2 的易用度分为仅 4.4 分，显着低于 5.5 分的参考标准；最终发现 30+ 问题点，并推动 PD 思考产品逻辑设置是否合理。</p>
+<p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400041" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-11.jpg" width="1600" height="900" /></span></p>
+<p><span style="color: #3366ff;"><strong>实践效果</strong></span></p>
+<ul>
+<li>经过两次完整实践，LinkE 设计师已能完全独立操作执行“两章一分”；</li>
+<li>业务方的参与度 &amp; 认知度提升明显：已开始习惯将“两章一分”设为项目里程碑，并全员参与进来。</li>
+</ul>
+<p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400042" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-12.jpg" width="1600" height="900" /></span></p>
+<h5><span style="color: #3366ff;">4. 实践总结</span></h5>
+<p>在实践过程中，我们发现企业中后台产品的典型场景大致可以分为 4 个场景；不同场景面临的设计项目有所偏重；不同设计项目在体验度量方面的切入点也有所不同。譬如：云凤蝶是一个典型的沉浸式画布页面，所有操作几乎都是通过编辑器属性面板来调整，那么如何来评估编辑器的效率呢？通过一系列实践和思考，我们提出可以通过“高频属性查找、配置的步骤数和时间”、“设置相同组件属性的耗时变化”等指标进行衡量。以下是我们根据不同典型场景、设计项目提出的体验度量切入点。</p>
+<p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400043" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-13.jpg" width="1600" height="944" /></span></p>
+<h4><span style="color: #3366ff;"><span class="auto_menu">5.</p>
+<p>「两章一分」的未来</span></span></h4>
+<p>经过 S1 长达几个月的探索：我们制定了“两章一分”的标准；对 30+ 产品进行了易用度分数的测试，捕捉分数基线；提炼实操方法技巧，并赋能给各位设计师；联合设计师和业务方跑通近 20 个案例。不管是问题发现数量，还是设计师、业务方的主观反馈，都让我们坚定“两章一分”在企业中后台产品体验优化中是一个相对有效的模式。为此，S2 我们打算继续深化。</p>
+<p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400044" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-14.jpg" width="1600" height="900" /></span></p>
+<ul>
+<li>落标准：在关键业务线将“两章一分”落地到业务生产环节中，不过“两章一分”就不能上线；</li>
+<li>分基线：区分不同产品类型和迭代大小，制定不同的易用度分数基线；</li>
+<li>升方法：针对跨产品、跨域等难以推动的横向体验项目，我们考虑升级方法，如将可用性测试升级为“用户体验日”，以便更好地推动问题落地；</li>
+<li>闭案例：针对 S1 已跑通的业务，我们会在 S2 进行案例闭环测试，以验证优化效果是否真的能在“两章一分”上体现出来；</li>
+<li>始运营：我们会挑选一些案例在公司内外发声，找相关业务领域的团队进行交流和探讨；并从案例中总结和提炼设计技巧，帮助业务成长。</li>
+</ul>
+<h4><span class="auto_menu">总结</span></h4>
+<p>我们团队当前支持的企业中后台产品以 0-1 阶段产品为主，PD 通常缺少用户意识和体验优化手段，这就导致了设计稿还原度较差、产品上手门槛较高。针对这一现状，我们尝试性地提出了“两章一分”这个评价标准，从设计验收、可用性测试、易用度分数 3 个维度来评价产品当前的体验现状。</p>
+<p>通过 S1 50+ 产品的实操，我们一边不断完善评价标准和实操经验，一边总结体验度量经验；共帮助 18 个产品发现 364 个产品，并在 link 、sofa 等重点产品线中落地到业务生产环节中，在业务方层面收到良好反馈。</p>
+<p>在这过程中，我们总结了适合不同场景、不同设计项目的体验度量切入点，验证了这种方式在当前企业中后台产品中确实有效。后续我们将尝试细化标准，闭环案例，对内对外发声等方式，更好地推动体验思维在企业中后台产品生根发芽；同时，也期待能跟对这块感兴趣的同行朋友们多多交流。</p>
+<p>欢迎关注作者的微信公众号：「AlibabaDesign」</p>
+<p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone wp-image-302727 size-full" src="https://image.uisdc.com/wp-content/uploads/2019/01/albbqr.jpg" alt="可视化设计如何打动人心？我总结了这4个方法" width="180" height="180" /></span></p>
+➜原来设计规范不需要死记硬背！腾讯设计师是这么理解和运用的！
+https://www.uisdc.com/normative-understanding	62453
+<p>Hi，我是彩云。经常在读者群里看到有人讨论，面试时被问到设计规范相关问题，不知道怎么回答才好。是不是要回答设计规范的具体尺寸，再把各种适配规则全背下来呢？今天彩云就和大家一起探讨下，到底要如何理解并运用设计规范。</p>
+<h4><span class="auto_menu">什么是设计规范？</span></h4>
+<p>设计规范是一个老生常谈的话题了，网上相关的文章也非常多，但我相信有很多设计师对设计规范的理解还是比较模煳，认为设计规范指的就是字体，颜色，控件规范那些，这种理解其实是比较狭隘的。</p>
+<p>于我而言，设计规范用一句话总结就是：设计规范是针对特定产品所制定出来的一整套产品标准，包括流程标准，技术标准，设计规则等等。通过这套标准，能减少错误发生率并提高设计质量和输出稳定性。</p>
+<p>举个例子，我在做QQ的3D厘米秀项目的时候，一开始合作方提交的设计资源正确率很低，风格也各不相同。然后为了解决这个问题，我在项目中定义了流程标准，资源标准，cp合作标准等等。通过这些规范让多个不同设计团队能合作到一起，提升了整体协作的效率和质量，这些标准就成了设计规范的一部分。</p>
+<p>[link https://www.uisdc.com/isux-qq-kapu]</p>
+<p><span class="img-zoom"><img alt="原来设计规范不需要死记硬背！腾讯设计师是这么理解和运用的！" class="alignnone size-full wp-image-400472" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-gg-20201214-1.jpg" width="1080" height="667" /></span></p>
+<p>可以说，每个项目因合作方式，人员习惯，落地形式的不同，所形成的规范是有区别的。所以，设计规范更应该是针对项目来说的，除非是问你Android或iOS这种已经广泛适用的平台级规范。不然是很难有标准答案的，回答更应该是一种思路的描述，比如你会如何定义一套规范、解决了哪些问题以及如何验证这套规范真的助力了产品的体验提升。</p>
+<h4><span class="auto_menu">设计规范的作用</span></h4>
+<p><strong>1. 遵守用户习惯，减少认知成本</strong></p>
+<p>Don&#8217;t make me think。大家都知道，好用得产品都是尽可能的减少用户思考，不断去贴近用户的使用习惯。比如在iOS系统里想返回上一个页面时，你会熟悉的去左上角找返回操作，但如果把返回操作放在右上角就会很不习惯；再比如对国内用户来说，他们习惯正确按钮用绿色，错误按钮用红色，如果你非要反过来制造所谓的差异化，用户就会感到困惑，误操作的概率也可能会大量增加。</p>
+<p><span class="img-zoom"><img alt="原来设计规范不需要死记硬背！腾讯设计师是这么理解和运用的！" class="alignnone size-full wp-image-400473" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-gg-20201214-2.jpg" width="1080" height="667" /></span></p>
+<p><strong>2. 统一品牌性格</strong></p>
+<p>品牌性格不论是大到公司层面，还是小到具体某一个产品，都需要有一套品牌识别体系来约束，只有统一得视觉印象才能更好的让用户记住。那这些品牌识别体系其实也是设计规范的一部分，在具体执行中，可以根据一些品牌核心概念规范快速做一些风格决策。</p>
+<p>比如腾讯QQ的品牌影像风格关键词是青春、互动，叙事和干净，那么在选择画面配色的时候就可以根据关键词指导画面的选择，使得整体的画风得到统一。</p>
+<p><span class="img-zoom"><img alt="原来设计规范不需要死记硬背！腾讯设计师是这么理解和运用的！" class="alignnone size-full wp-image-400474" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-gg-20201214-3.jpg" width="1080" height="667" /></span></p>
+<p><strong>3. 降低新人学习成本</strong></p>
+<p>这里所说的新人不单纯指刚入职场的设计新人，也包括刚参与到一个新项目的设计老手，设计规范是能够以最低的沟通成本实现快速上手。有成熟的控件资源和标杆的设计参考，就算是之前完全没做过的设计师也能搭建出一个还不错的页面。</p>
+<p><span class="img-zoom"><img alt="原来设计规范不需要死记硬背！腾讯设计师是这么理解和运用的！" class="alignnone size-full wp-image-400475" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-gg-20201214-4.jpg" width="1080" height="667" /></span></p>
+<p><strong>4. 提高开发效率</strong></p>
+<p>有了好的设计规范，开发就能把一些常用的样式进行封装，在需要复用的场景中直接调用。这样做，一方面可以通过调用的方式减少样式代码的复制使用，提升效率的同时降低软件包体积，另一方面也可以减少不必要的工作量，方便后期维护。</p>
+<p><span class="img-zoom"><img alt="原来设计规范不需要死记硬背！腾讯设计师是这么理解和运用的！" class="alignnone size-full wp-image-400476" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-gg-20201214-5.jpg" width="1080" height="667" /></span></p>
+<p><strong>5. 保证设计的一致性</strong></p>
+<p>有设计规范的约束，能让团队在一个既定的框架内做设计，统一大家的输出质量，从而保证设计的一致性。</p>
+<h4><span class="auto_menu">怎么学习设计规范</span></h4>
+<p>设计规范的学习肯定不是靠死记硬背，而是要讲究方法，从我自身的经验来说，我觉得大致可以有以下2个步骤：</p>
+<p>在新手期，多去看一些大厂的设计规范，先建立认知，不要求全部记住。把这些规范当成字典，先大致了解一遍，等真正做的时候拿不准再去查阅就好了。这里推荐几个必看的大厂设计规范官网，建议收藏。</p>
+<ul>
+<li>苹果iOS设计官网：<a href="https://developer.apple.com/design/human-interface-guidelines">https://developer.apple.com/design/human-interface-guidelines</a></li>
+<li>谷歌Material Design设计官网：<a href="https://material.io/design">https://material.io/design</a></li>
+<li>微软Fluent Design System设计官网：<a href="https://www.microsoft.com/design/fluent">https://www.microsoft.com/design/fluent</a></li>
+<li>IBM设计官网：<a href="https://www.ibm.com/design/language">https://www.ibm.com/design/language</a></li>
+<li>Facebook设计官网：<a href="https://design.facebook.com">https://design.facebook.com</a></li>
+<li>蚂蚁金服设计官网：<a href="https://ant.design/index-cn">https://ant.design/index-cn</a></li>
+</ul>
+<p><span class="img-zoom"><img alt="原来设计规范不需要死记硬背！腾讯设计师是这么理解和运用的！" class="alignnone size-full wp-image-400477" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-gg-20201214-6.jpg" width="1080" height="667" /></span></p>
+<p>其实网上很多设计规范，原理之类的文章，源头都来自于这些大厂规范，想获得一手信息，最好是自己去这些网站多看看。</p>
+<p>这也就是我为什么不写具体规范数值的原因，因为网上的资料实在是太多太详细了，写一些重复的知识实在是没多少价值。学知识的路上一定不要什么都等别人喂给自己，需要更多的主动性，这样才能提升自己的学习能力和解决问题的能力。</p>
+<p>针对自己要做的模块，有针对性的找市面上大厂的应用作为参考，直接截图标注，自己总结规律印象会更加深刻。</p>
+<p>我开始做UI的时候就这样学习的，不知道字体该用多大，间距用多大，颜色怎么用，就直接去找相类似的界面截图参考，量它们的尺寸，吸它们的颜色，然后就这样一步步的把规范经验积累起来了。</p>
+<p>比如从QQ的动态tab页面中，我们可以借鉴到很多信息，比如列表的高度，列表左侧的图标尺寸和圆角，间隔线高度和配色，右侧的箭头大小和配色，列表文字的字号和配色，用户头像大小和结合的样式，图标与文字的间距等等。这些借鉴并非是抄袭，要你做的跟这个界面一模一样，只是参考这里面的某几个属性然后结合自己的产品综合运用，减少出错。</p>
+<p><span class="img-zoom"><img alt="原来设计规范不需要死记硬背！腾讯设计师是这么理解和运用的！" class="alignnone size-full wp-image-400478" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-gg-20201214-7.jpg" width="1080" height="667" /></span></p>
+<p>发现了吗？一个优秀的界面设计，上面的任何信息其实都可以拿来参考，就看你会不会用了。</p>
+<p>需要强调的是，这些参考来的标准，并非是标准答案，还是要根据自己的实际项目需要做调整，只是至少知道一个范围，在这个范围内不大会犯错。</p>
+<p>这就像刚开始做设计时一样，去参考这些规范相当于做临摹的练习，这种临摹是需要的，临摹的过程中不断加入自己的思考，然后通过总结，变成自己的知识体系。</p>
+<h4><span class="auto_menu">怎样定义出设计规范</span></h4>
+<p>随着对设计规范理解的加深，自身设计能力的不断提高，就要开始从设计规范的使用者转变为规范的制定者了。如何制定针对项目的设计规范呢？我的经验是在项目过程中把做的好的和踩坑后的正确解法进行总结，并形成文字，积累多了就形成了规范。要把每一次遇到的问题都当成是一次改进流程和规范的机会。</p>
+<p>我自己是有随时记录的习惯，项目中一旦发现问题就会赶紧把它记录下来。有时候甚至还蛮期待出现问题的，因为出了问题才能找到优化的机会，自己也能从中找到解决问题的成就感。</p>
+<p>曾经在QQ的3D厘米秀项目中遇到过非常多的坑，然后从填坑的过程中慢慢总结出各种设计规范，去帮助项目减少错误率，提升设计质量。从最终的产出和结果来看，自身的进步是可观的，对产品的帮助也比较大，所以很值得去做。</p>
+<p><span class="img-zoom"><img alt="原来设计规范不需要死记硬背！腾讯设计师是这么理解和运用的！" class="alignnone size-full wp-image-400479" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-gg-20201214-8.jpg" width="1080" height="667" /></span></p>
+<h4><span class="auto_menu">使用规范会影响设计的创意性吗？</span></h4>
+<p>刚掌握设计规范的时候，干活是特别舒服的一件事，因为做需求可以很快，好像拼拼组件就能完成。但稍微做久一点时间，又会觉得好像没啥进步，天天拼组件，担心影响设计的创意性，真是挺矛盾的。</p>
+<p>其实，规范也是要在遵守和引领用户习惯中不断迭代的。既要保持大的设计规范框架不变化，又要在设计的过程中给用户制造惊喜。比如，整个UI的配色和字体需要保持统一，但在一些图形，动效上可以做出亮点，让用户在整个使用体验中既是沉浸的又能有些小惊喜。规范的打破与重建一定是需要一个动态平衡的过程。</p>
+<h4><span class="auto_menu">总结</span></h4>
+<p>设计规范绝对不需要死记硬背，而是要充分理解并灵活使用，才能发挥它的价值。随着UI行业的不断成熟，设计工具的简单化，各种组件化资源和思维越来越普及，可以预见的是未来一般的UI界面会高度组件化，设计师单纯在界面上花费的时间可能会越来越少。</p>
+<p>这从行业的发展来说，减少了很多体力劳动，让设计和开发有更多的时间去打磨产品细节，肯定是好事。但对设计师自身来说，省下了以前那种常规设计需求的时间后还能做些什么，设计师的价值又在哪？值得每个设计师去思考。</p>
+<p>欢迎关注译者的微信公众号：「彩云译设计」</p>
+<p><span class="img-zoom"><img alt="原来设计规范不需要死记硬背！腾讯设计师是这么理解和运用的！" class="alignnone size-full wp-image-263083" src="https://image.uisdc.com/wp-content/uploads/2018/03/uisdc-dh-20180313-9.jpg" alt="做好这4个细节，帮你快速提升卡片设计效果！" /></span></p>
+➜超5亿用户的蚂蚁森林，是如何做好体验设计的？
+https://www.uisdc.com/ant-forest	63919
+<p>蚂蚁森林是一款让设计师幸福感爆棚的产品，毕竟这个朋友们都在用、不为消费娱乐、让世界变得更好。顺便，还得了个联合国“地球卫士奖”。</p>
+<p>四年前蚂蚁森林正式上线，无数用户在其中践行自己的“ 低碳美学 ”。如今，当产品使用用户数已超5亿，在这样的高度和广度，需要给到用户一些更新的体验。</p>
+<p>那么，设计在其中能做些什么呢？</p>
+<p>今年蚂蚁森林升级之初，设计团队就定下了三个关键目标：</p>
+<ul>
+<li>「真实」：建立更多真实世界的映射，让用户更有沉浸感；</li>
+<li>「细节」：融入更多故事和彩蛋，让场景活起来，传递“天更蓝，心更暖”的体验；</li>
+<li>「高效」：让用户体验更轻松。</li>
+</ul>
+<h4><span style="color: #339966;"><span class="auto_menu">风格，让蚂蚁森林更真实</span></span></h4>
+<p>每一个蚂蚁森林的设计师，在做设计前都被要求到真正的森林地块去走访。</p>
+<p>初到蚂蚁森林时，“ 荒芜 ” 是对大环境的第一印象，代表着造林所面对恶劣条件。“有序” 是迈入林地后对蚂蚁森林的又一感受，代表着人类在其中稳步推进。</p>
+<p>然而真实世界的天空、地面和植物与手机屏幕相比，有着更多细节，也意味着巨大的视觉差异：</p>
+<p><span class="img-zoom"><img alt="超5亿用户的蚂蚁森林，是如何做好体验设计的？" class="alignnone size-full wp-image-400269" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ux-20201213-1.jpg" width="900" height="500" /></span></p>
+<p>上面两张图是很好的对比案例，那么，通过设计语言怎么表达真实还是虚拟？我们在抽象和真实之间，到底选择谁？</p>
+<p>为了便于描述画面，我们可以用图形、配色、质感和视角这样四个要素来进行设计：</p>
+<p><span class="img-zoom"><img alt="超5亿用户的蚂蚁森林，是如何做好体验设计的？" class="alignnone size-full wp-image-400270" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ux-20201213-2.jpg" width="900" height="500" /></span></p>
+<p>如上图所示，图形、配色和质感越往右边走，我们的视觉感官就会愈发真实。</p>
+<p>但100%的真实往往细节过多、成本高昂，对产品设计来说未必是好事。因此，经过多版本尝试，我们把改版的视觉风格定位在了“微质感”上。</p>
+<p>用最焦点的主树及主场景来说，是这样的：</p>
+<p><span class="img-zoom"><img alt="超5亿用户的蚂蚁森林，是如何做好体验设计的？" class="alignnone size-full wp-image-400271" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ux-20201213-3.jpg" width="900" height="500" /></span></p>
+<p>通过减少大面积几何色块，并合理增加阴影、高光反射面，可以有效塑造层次感和真实感。同样的手法还被应用在界面中的其他视觉元素：</p>
+<p><span class="img-zoom"><img alt="超5亿用户的蚂蚁森林，是如何做好体验设计的？" class="alignnone size-full wp-image-400272" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ux-20201213-4.jpg" width="900" height="500" /></span></p>
+<p>除了这些场景元素以外，产品中还有很多功能以按钮的形式出现。</p>
+<p>作为画面的一员，他们同样需要在不影响固有认知的前提下，配合做一些视觉改变，使得界面中所有元素互相配合，形成统一的视觉感官。</p>
+<p><span class="img-zoom"><img alt="超5亿用户的蚂蚁森林，是如何做好体验设计的？" class="alignnone size-full wp-image-400273" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ux-20201213-5.jpg" width="900" height="500" /></span></p>
+<p>在阿拉善，设计师一路坐着吉普车从沙漠边缘进入，穿过层叠的沙丘之后又突然来到一片绿洲，可能是对蚂蚁森林演变的一种最好的体验。</p>
+<p>因此，运用“时间”和“空间”技巧，我们想把这种真实感受送到用户面前。首先在构图和透视上，我们使用更具纵深感的平行透视，将用户目光焦点送到远方。</p>
+<p><span class="img-zoom"><img alt="超5亿用户的蚂蚁森林，是如何做好体验设计的？" class="alignnone size-full wp-image-400274" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ux-20201213-6.gif" width="900" height="500" /></span></p>
+<p>随着用户种树的进度，画面会从沙漠慢慢变成绿地。</p>
+<p>大色块的做法只能通过颜色表达变化，差异性有限，给人的视觉冲击并不够强。通过由近及远的视觉变化，搭配微质感，可以让用户明显感受到种树如何为沙漠带来绿色，同时白天和夜晚的差别也会更大。</p>
+<p><span class="img-zoom"><img alt="超5亿用户的蚂蚁森林，是如何做好体验设计的？" class="alignnone size-full wp-image-400275" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ux-20201213-7.jpg" width="900" height="500" /></span></p>
+<h4><span style="color: #339966;"><span class="auto_menu">细节，让蚂蚁森林更有趣</span></span></h4>
+<p>在最初设计页面时，就有构想一只可爱的小青蛙。</p>
+<p>想当然地，我们认为绿地里会有青蛙。但当实地去蚂蚁森林地块探访后（是的，每个蚂蚁森林的设计师都必须要去现场走访一次），才发现沙漠环境里那么干燥，完全不可能出现青蛙。</p>
+<p>虽然被现实打了脸，不过在最终的方案里，我们还是保留了这只青蛙，并且还为它配上了一只白色的蝴蝶， 许愿在蚂蚁森林将沙漠真正变成绿洲的时候，这些小动物都能自由自在地生活在其中。</p>
+<p><span class="img-zoom"><img alt="超5亿用户的蚂蚁森林，是如何做好体验设计的？" class="alignnone size-full wp-image-400280" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ux-20201213-12.gif" width="900" height="500" /></span></p>
+<p>未来，也许保护地的小伙伴们也可以来这里做客：藏狐、黑颈鹤、菲氏叶猴&#8230;&#8230;毕竟，有树、有动物、有鸡，才是我们热闹的蚂蚁森林。</p>
+<p>随着视觉纵深的扩展，横向能否也给用户更多探索的空间？</p>
+<p>常见的交互方式是“左滑右滑”，但实验下来因为不容易被用户发现和误操作概率高，所以最终选用了“ 陀螺仪 ”这种更有趣的交互方式来实现横向场景的用户感知。与此同时，还为其他的彩蛋留出了余地。</p>
+<p><span class="img-zoom"><img alt="超5亿用户的蚂蚁森林，是如何做好体验设计的？" class="alignnone size-full wp-image-400276" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ux-20201213-8.gif" width="900" height="500" /></span></p>
+<p>白天，通过左右晃动陀螺仪可以在页面最左侧发现一对放风筝的小朋友。而在晚上，页面的右上角还能看到沙漠的银河。大家可以自行打开支付宝，点进蚂蚁森林里面去体验一番。</p>
+<p>我们希望通过这些有趣的小彩蛋，为用户营造出更多开放性故事感，让整个产品“活”起来。</p>
+<p><span class="img-zoom"><img alt="超5亿用户的蚂蚁森林，是如何做好体验设计的？" class="alignnone size-full wp-image-400277" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ux-20201213-9.gif" width="900" height="500" /></span></p>
+<h4><span style="color: #339966;"><span class="auto_menu">整合，让蚂蚁森林更高效</span></span></h4>
+<p>除了视觉升级之外，此次蚂蚁森林改版还对产品功能进行了整合。四年来，不断迭代的功能已经让我们的森林变得“不堪重负”：6个能量球、能量保护罩、好友浇水、红包、营销资源位……</p>
+<p>当极限情况下，可能连基础的用户体验都无法保障。为了给界面减负，我们从数据出发，首先将一些不常用的功能进行收纳整合。</p>
+<p>比如放话被挪到了与好友互相收能量的模块附近，更符合用户动线；攻略更适合作为新人引导融入在产品试用过程中，因此收纳起来让出了宝贵的空间。</p>
+<p><span class="img-zoom"><img alt="超5亿用户的蚂蚁森林，是如何做好体验设计的？" class="alignnone size-full wp-image-400278" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ux-20201213-10.jpg" width="900" height="500" /></span></p>
+<p>现在森林主页就有“ 蚂蚁庄园 ”的入口，并采用了场景化（非功能化）的方式来呈现。</p>
+<p>我们相信游戏化产品更适合把事物融入场景中，并不会影响点击率。所以，我们把“合种”从icon按钮拿了下来，当作画面里的一部分去展示。经过线上测试，合种的点击率提升非常明显。</p>
+<p><span class="img-zoom"><img alt="超5亿用户的蚂蚁森林，是如何做好体验设计的？" class="alignnone size-full wp-image-400279" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ux-20201213-11.jpg" width="900" height="500" /></span></p>
+<p>细心的小伙伴肯定已经对界面右下角的“找能量”功能很熟悉了。</p>
+<p>当观察了无数位用户每天反复穿梭在好友列表和好友主见之间，少则数十次多则上百次点击后，我们就在思考有没有更高效的用户互访方式。</p>
+<p>通过“找能量”，用户可以快速访问一个有“行动点”的好友主页：有能量可收、有能量快消失、有红包未领取……借助算法，整个体验过程变得更加 “傻瓜” 和 “快捷”。从数据上来看，用户活跃度和使用深度都有了明显的提升。</p>
+<h4><span style="color: #339966;"><span class="auto_menu">回归公益初心，给用户更好的体验</span></span></h4>
+<p>游戏化的方式做产品，不代表要做一个真的游戏。</p>
+<p>公益产品是互联网环境中难得的一片净土，让设计，给它更好的用户体验。因为蚂蚁森林，我们选择每天早起收能量，选择骑共享单车而不开车，又结识了一个个一起种树的人，在蚂蚁森林的每一秒，每一克能量，都因设计变得真实、有价值。视觉化的升级并不单纯只有感官的改善，进而也会带来产品体验和业务数据的提升。</p>
+<p>当然，新的视觉风格上线后，是不是所有人都喜欢？</p>
+<p>答案是否定的，我们也收到了不少用户的宝贵建议，到现在也依然在持续优化颜色、细节。所以，屏幕前的你，对蚂蚁森林有什么好的建议？欢迎在文末留言板写写&#8230;</p>
+<p>[link https://www.uisdc.com/pay-treasure-design-interview]</p>
+<p>欢迎关注作者的<a class="tag_a" href="https://www.uisdc.com/topic/%e5%be%ae%e4%bf%a1" target="_blank" rel="noopener noreferrer">微信</a>公众号：「AlibabaDesign」</p>
+<p><span class="img-zoom"><span class="img-zoom"><img alt="超5亿用户的蚂蚁森林，是如何做好体验设计的？" class="alignnone wp-image-302727 size-full" src="https://image.uisdc.com/wp-content/uploads/2019/01/albbqr.jpg" alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" width="180" height="180" /></span></span></p>
+➜如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式
+https://www.uisdc.com/strangers-socializing	64325
+<p>互联网提供丰富的物质与信息让我们尽情享受自己的空间，让世界近到我们可以触手可及。但没有人是一座孤岛，繁忙的工作让我们接触到的人和圈子是非常有限的，陌生人社交是人们获得陪伴的一剂“良药”，但那个对的人又往往远到遥不可及。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400188" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-1.jpg" width="1200" height="400" /></span></p>
+<p>约会是陌生人社交中最大的诉求，从1995年有互联网开始，就已经有了线上交友网站，我们在一个做了25年的领域尝试了一些新的探索，通过「轻聊」让人们遇见对的人。</p>
+<p>《他人的力量》将人分成四种连接：</p>
+<ul>
+<li>第一种是连不上的人；</li>
+<li>第二种是连上了但是是坏的连接。比方说女生经常在社交网站上受到骚扰，刚认识就聊“鼓掌”，或者一上来就直接约。</li>
+<li>第三种是虚假的“好连接”。很多男生加了女生的微信后，就找你卖茶叶卖酒。</li>
+<li>第四种是真正的连接。轻聊的目标是帮助用户找到真正的连接。</li>
+</ul>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400189" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-2.jpg" width="1200" height="675" /></span></p>
+<h4><span class="auto_menu">引力公式</span></h4>
+<p>现实中大部分恋爱养成都是从发现一个吸引你的异性开始，跟她第一次搭讪建立连接，通过不断的交流产生兴趣和情感共鸣，从中进行关系的亲密升级。</p>
+<p>线上交友路径与线下基本差不多：</p>
+<ul>
+<li>男女双方发现心仪对象；</li>
+<li>通过配对让双方建立连接；</li>
+<li>连接之后，进行沟通交流，直到建立社交关系，两个人就会从陌生人社交平台进行社交转移，会到QQ或微信上继续深化关系。</li>
+</ul>
+<p>而互联网让社交不断提速，让男女更快找到感兴趣的人。在发现、连接和交流这三步中，男生的时间是0.04秒+3天，女生的时间是2秒+7天。如何来的呢？</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400190" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-3.jpg" width="1200" height="675" /></span></p>
+<p>现实中男女恋爱的特点是：“男人第一次见女人，如果关注时间超过8.5s，那么他很有可能陷入爱河；而女人则需要15天才会陷入爱河。”</p>
+<p>恋爱从生物角度来说其实是为了繁衍，男性繁衍成本极低，只消耗了一点蛋白质和能量。而女性，特别是在远古时期，繁衍会对自己捕猎、养育后代都有影响，所以成本极高。</p>
+<p>男性就是要广撒网，那就要缩短时间，所以越来越短，短到8.5s。而女性就是要精准定位，遇到可以依靠的人，所以越看越长，要看15天。用两个成语来形容，男人就是一见钟情，女人就是日久生情。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400191" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-4.jpg" width="1200" height="675" /></span></p>
+<p><strong>1. 0.04秒 VS 2秒</strong></p>
+<p>来看下互联网真实用户的操作行为：</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400192" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-5.gif" width="800" height="450" /></span></p>
+<p>左边是男看女，是这种速度。右边是女看男，就会好很多，因为相对来说需要精挑细选。</p>
+<p>《看脸》一书中说到：“40毫秒足以让美被感知，足以让你判断对方是谁。”在互联网男性发现女性只需要0.04s，而女性相对慢一些，要2s。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400193" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-6.jpg" width="1200" height="675" /></span></p>
+<p><strong>2. 3天 VS 7天</strong></p>
+<p>在双方交流过程中，男性一般采取主动行动，约女性出去吃饭、看电影，希望通过事情本身的乐趣来吸引女性。而女性虽然用2s看到了这个男性，但她需要用更多时间去了解。同开始提到的一样，这是写在基因里的代码，因为繁衍的投资回报率男女非常不平等。男性会用很短的时间去看大量的对象，女性会用大量时间去认真的精选一个对象。在用研中，会有女性反馈和男性连续聊了7天，才会对对方有安全感。而男性一般聊3天就会约女性线下见。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400194" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-7.jpg" width="1200" height="675" /></span></p>
+<p>“进入凡人的一切强大之物无不具有弊端。”—索福克勒斯。社交的提速也带来了人类最原始本能的提速，无处安放躁动不安的“荷尔蒙”，让陌生人社交污名化愈演愈烈。轻聊需要帮助用户进行深入的自我展示，构建优质的陌生人社交体验。基于陌生人社交引力公式来看看我们是如何解决核心路径中的痛点以及针对性别进行深入设计的。</p>
+<h4><span class="auto_menu">发现</span></h4>
+<p>先来看看陌生人社交第一步：发现心仪对象。</p>
+<p>发现从遵从本能、保证真实、引导用户提升自己来帮助用户快速引起别人的兴趣。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400195" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-8.jpg" width="1200" height="675" /></span></p>
+<h5>1. 遵从本能</h5>
+<p>对于个体而言，是由两方面价值组成。一个是生物价值，就是肉体；一个是社会价值，就是除肉体以外的价值，包括金钱、地位、工作、才华等。</p>
+<p>首先来看生物价值，生物价值的展现随着硬件水平不断发展。从报纸的单色印刷，到网吧摄像头，到功能机摄像头，到现在几千万像素前置摄像头加上美颜，一切技术的革新都是让人越来越清晰的展示生物价值。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400196" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-9.jpg" width="1200" height="675" /></span></p>
+<p>生物价值绝大多数是通过视觉进行感知的，我们在设计的时候更加清晰的去展现用户的生物价值。我们用了大照片，只要你的屏幕够大，就能铺满屏幕。其实现在手机屏幕也是越来越大的，这样的设计更好的利用了硬件的一个发展。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400197" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-10.jpg" width="1200" height="675" /></span></p>
+<p>单看一个瞬间是不够的，如果有哪位男性脑回路长一些，或者交友更走心一些，还有每秒24帧的视频更加全方位展现你的生物价值。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400198" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-11.gif" width="800" height="450" /></span></p>
+<p>通过男女视力表，来看下男女关注点的区别：</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400199" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-12.jpg" width="1200" height="675" /></span></p>
+<p>男女都很看重生物价值，也是写在我们基因里的。为什么男性重腰臀比，因为腰臀比直接体现了女性的生育能力。而女性会通过男生的外表判断其职业和社会地位，通常会被能提供资源的男性所吸引，是因为女性十月怀胎需要男性资源的保障。</p>
+<p>所以我们在生物价值和社会价值的呈现上做了平衡。在一屏之内除了用大照片或视频清晰展现用户的生物价值，还展示了用户的社会价值，公司、职业和学校。男性突出身高，女性展示家乡。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400200" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-13.jpg" width="1200" height="900" /></span></p>
+<p>在页面层级和浏览操作上，也要保证更快的浏览体验。用户只需上下滑动，就可以浏览整个资料。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400201" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-14.gif" width="800" height="600" /></span></p>
+<h5>2. 保证真实</h5>
+<p>真实性是线上交友备受关注的一点。有的人在线上聊的很好，面基的时候发现跟本人差距很大。随着科技的发展，照片让我们越来越清晰的呈现生物价值，也越来越过度包装和美化了生物价值，渐渐失真。既然以交友为目的，我们希望用户能尽量真实展现自己。过度包装会适得其反。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400202" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-15.jpg" width="1200" height="675" /></span></p>
+<p>轻聊中，建立了一套完整的认证系统，包括真人认证、公司认证和学校认证，来进行层层筛查和保障用户的真实性。每一个认证能让安全感增强，但也同样提升了用户的认证门槛，用户使用认证资料的戒备心大大提高。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400203" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-16.jpg" width="1200" height="675" /></span></p>
+<p>如何让用户感觉到平台的安全和可靠？在匹配中会优先推荐已认证的用户，并有明确的认证标识，强化真实氛围。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400204" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-17.jpg" width="1200" height="810" /></span></p>
+<p>在认证过程中，提供多种认证方式，降低认证的门槛；并且在认证资料的隐私性上会强调对资料严格保密，仅拍照认证防止用户盗图。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400205" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-18.jpg" width="1200" height="900" /></span></p>
+<h5>3. 提升自己</h5>
+<p>陌生人社交产品的特性是用户消费用户，男多女少的现状导致男性曝光度低，交友成功率低。并且男用户资料在质和量上有缺陷：认为上传的照片不错，由于平时不爱拍照，照片也较少。而女性爱拍照，也懂得如何展现自己。我们需要帮助用户特别是男用户提升自己，让对方感兴趣。</p>
+<p>改变用户行为有两种方式：让用户收益大于操作成本和直接降低用户操作成本。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400206" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-19.jpg" width="1200" height="675" /></span></p>
+<p><strong>收益大于操作成本</strong></p>
+<p>质的提升。有时候，自己看自己和别人看自己是天差地别的。这种认知偏差在约会交友中是非常致命的。你以为你上传的照片像上面这张图这样，但在异性眼中，却是下面这样的。进化学中提到，男性往往会高估自己。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400207" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-20.jpg" width="1200" height="675" /></span></p>
+<p>那如何去纠正这种进化造成的认知偏差呢？</p>
+<p>开始古人给了我们一个方案—镜子，让我们好好照照自己。但经过技术的发展，美颜相机的盛行，镜子已经不再起作用了。</p>
+<p>俗话说没有对比就没有伤害，所以我们采用对比的手段，把你的照片和竞争对手的照片放在一起，看看自己和他们的对比，也同时激励你上传更好看的照片。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400208" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-21.jpg" width="1200" height="900" /></span></p>
+<p>我们分别收集了男女用户优质照片和不合适的照片作为范例，让用户“避坑”。可能有的男生会觉得自己对着镜子拍照很酷，或者女生美颜大脸照很萌，但其实在异性看来这些照片都没有获得喜欢。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400209" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-22.jpg" width="1200" height="900" /></span></p>
+<p>个人主页也会对用户进行激励，建立推荐值等级，展示高等级用户与自己等级进行对比，让用户产生注意。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400210" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-23.jpg" width="1200" height="900" /></span></p>
+<p>在等级设计中文案使用向上比较，让用户感受到被很多人超越，激励用户升级。升级后给到积极反馈，产生满足的情绪。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400211" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-24.gif" width="800" height="600" /></span></p>
+<p><strong>量的提升</strong></p>
+<p>资料完善度也很重要。完善度越高，吸引力因素就越多。我们在不同场景根据用户想要达到的目标，引导用户完善资料。</p>
+<p>注册时，想认识优质的单身小姐姐么？那就上传个人封面吧。在上传封面的入口下面也会展示一些优质异性的照片，方便用户在进入轻聊前可以查看里面的人，同时也会展示一些同性的照片，刺激用户上传更好看的封面。</p>
+<p>匹配时，想喜欢这位小姐姐？请完善更多的资料。</p>
+<p>匹配后，如果想要你喜欢的人也喜欢你，或者想要被更多人喜欢，请完善资料。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400212" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-25.jpg" width="1200" height="900" /></span></p>
+<p><strong>降低成本</strong></p>
+<p>在降低用户完善资料的成本上，把要填写的资料进行分类聚合，然后按照吸引力强弱和填写的成本高低进行布局。可以看到资料编辑页内容很多，页面很长。希克定律说：“界面选项越多，用户做出决定时间越长。”</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400213" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-26.gif" width="800" height="450" /></span></p>
+<p>因此把编辑内容设计成卡片，用户进行连贯的分步填写，减少众多选项带来的填写压力，也减少了操作步骤。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400214" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-27.jpg" width="1200" height="675" /></span></p>
+<h4><span class="auto_menu">连接</span></h4>
+<p>连接分表态和撮合。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400215" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-28.jpg" width="1200" height="675" /></span></p>
+<h5>1. 表态</h5>
+<p>互相喜欢才能配对。</p>
+<p>探探的左滑无感，右滑喜欢手势更像把看到的人进行分类，右边一堆卡片是喜欢的，左边一堆卡片是不喜欢的。我们想要打造更加认真恋爱交友的态度，用点击操作更像是对对方表达自己的态度，让对方和屏幕前的用户更加的平等，而不是一堆照片进行分类。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400216" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-29.gif" width="800" height="450" /></span></p>
+<h5>2. 撮合</h5>
+<p>每个人都想找条件好的，面对挑剔，我们如何提升配对？</p>
+<p><strong>今日限定</strong></p>
+<p>男生每天可以看15人，女生看22人。最佳复杂性理论说到：“人需要的资讯并不是越多越好，当用户承受认知过载和决策疲乏时，选择能力会变差。”在现实生活中，这个数量已经远远超过你每天能认识的异性了，所以有限的选择能让用户更认真的看，做出更好的选择。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400217" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-30.gif" width="800" height="600" /></span></p>
+<p><strong>后悔药</strong></p>
+<p>后悔药是现实中不具备的。当你看到你错过的人，你可以选择购买后悔药进行表白。布局用宫格的形式展示。拉拉队效应表明，有的人单独看，不吸引人，但把他和其他的人放到一起的时候，那些不吸引人的特质会被“平均”得较具有吸引力。研究发现，无论男女，合照要比独照的吸引力提升大约2%。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400218" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-31.jpg" width="1200" height="900" /></span></p>
+<p><strong>表白</strong></p>
+<p>大家知道为什么大多是男性进行表白么？当男性看到自己喜欢的女性或者漂亮女性的时候，大脑的奖赏回路会特别活跃。奖赏回路会刺激男性增加追求的动机。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400219" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-32.jpg" width="1200" height="675" /></span></p>
+<p>现实中表白的方式有很多，比如送礼物、写情书、上课传小纸条、送花。</p>
+<p>轻聊里的表白强调了喜欢的程度，你对她越多的喜欢，小心动就会越多，还可以传个小纸条，写上你想表白的一句话。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400220" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-33.gif" width="800" height="600" /></span></p>
+<p>收到的小心动会根据送的人喜欢的不同程度来展示，就像现实中收到一朵玫瑰和99朵玫瑰的感受是不一样的。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400221" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-34.gif" width="800" height="600" /></span></p>
+<p>轻聊的表白成功率比双向喜欢成功率要高，这就是恋爱补偿效应：“当表白对象自身还过的去，你会不自觉的寻找对方的长处，容易喜欢上对方。”因为表白的人给了你认同感，以及让你加深了解对方的欲望。</p>
+<h4><span class="auto_menu">交流</span></h4>
+<p>当用户建立了连接后，如何让用户更好的交流？</p>
+<p>配对后先让两个人聊起来，然后要平衡男女的时间差，让双方能持续聊。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400222" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-35.jpg" width="1200" height="675" /></span></p>
+<h5>1. 聊起来</h5>
+<p>现实中男女交流，大多数男生先主动，得到女生的正反馈后，男生才会进行下一步行动。整个过程可以看到男生主动，女生被动。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400223" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-36.jpg" width="1200" height="675" /></span></p>
+<p>男生主动，但很多还没开始就已经结束。总结起来有三种尬聊型。</p>
+<ul>
+<li>直男开场型：配对后只说hi或在吗，导致对方无话可说，隔着屏幕都感觉尴尬；</li>
+<li>查户口型：一上来就连续发问，你在哪上班？你做什么的？你是哪里人？内心就会OS，明明资料都有写；</li>
+<li>把天聊死型：还没说话，就要加微信。</li>
+</ul>
+<p>这就是男女交流困境。男性主动，但很多尬聊；女生聊天走心，但被动。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400224" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-37.jpg" width="1200" height="675" /></span></p>
+<p>如何让男生避免尬聊？从制造紧迫感、3句话和话题的引子去解决。如何让女生主动？从制造紧迫感和提供话题的引子去解决。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400225" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-38.jpg" width="1200" height="675" /></span></p>
+<p><strong> 紧迫感</strong></p>
+<p>匹配后开始72小时倒计时，不聊天就会解除匹配。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400226" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-39.jpg" width="1200" height="900" /></span></p>
+<p><strong>男生3句话</strong></p>
+<p>男生在女生回复前只能说3句话，让男生在有限的时间和发言机会里好好说话、拒绝废话。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400227" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-40.jpg" width="1200" height="900" /></span></p>
+<p><strong>话题的引子</strong></p>
+<p>匹配后不知道聊什么。用研中，女生会反馈男生经常问自己资料里已有的信息，认为对方没有仔细看过自己的资料。因此我们提取对方有话题性的资料，包括兴趣爱好和双方的共同点引导用户聊天。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400228" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-41.jpg" width="1200" height="675" /></span></p>
+<p><strong>女性主动</strong></p>
+<p>现实中的恋爱有研究表明：“大约三分之二的浪漫邂逅都是由女性发起的。”从进化学来说，也会有雌性主动性：“为了繁衍后代，雌性会主动散发一股特定气味的化学物质来求偶。”</p>
+<p>匹配后，女生可以设置女生考验来开启聊天。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400229" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-42.jpg" width="1200" height="900" /></span></p>
+<p>男生收到后，会引导男生回答女生的考验。考验本身自带话题，且双方交流时，如果女生处于主动和在聊天状态时，聊天的效果往往更好。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400230" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-43.jpg" width="1200" height="900" /></span></p>
+<h5>2.  持续聊</h5>
+<p>当双方聊起来后，如何平衡男女的时间差，让双方持续聊呢？</p>
+<p>动态持续开启话题。用户在动态的留言会展示在聊天中，引导双方聊更多。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400231" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-44.jpg" width="1200" height="675" /></span></p>
+<p>当男生过早要微信时，也会给到不同的提示，告诉男生过早加微信容易引起女生反感，建议撤回。如果男生没有真人认证，会提示女生对方没有真人认证，要谨慎添加微信，防止被骚扰欺诈。对方有真人认证，提示女生建议多了解对方，再添加微信。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400232" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-45.jpg" width="1200" height="675" /></span></p>
+<h4><span class="auto_menu">结尾</span></h4>
+<p>最后，我们复盘下陌生人社交的设计方法。轻聊是如何帮助用户找到真正的连接呢？</p>
+<p>在发现中，更好的展示自己，前提是真实。</p>
+<p>根据男女本能关注点不同如何去展示生物价值和社会价值；如何帮助用户提升自己；多维度认证保证用户真实性。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400233" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-46.jpg" width="1200" height="675" /></span></p>
+<p>在连接中，更快的发现他，前提是认真。</p>
+<p>有限的选择、后悔药、表白让用户更加认真表态。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400234" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-47.jpg" width="1200" height="675" /></span></p>
+<p>在交流中，更多的互相沟通，前提是主动。</p>
+<p>通过紧迫感的营造、女生考验和话题性资料让用户更主动以及聊起来。</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-400235" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-tx-20201211-48.jpg" width="1200" height="675" /></span></p>
+<p>在科技的帮助下，人们能更精准的找到合适的对象，减少自身的金钱成本和时间成本，但用户找到合适的对象还是如此不易，因为现实中人的感情和心理比网络世界要复杂的多。期望在轻聊的助攻下，能让人们“网络轻聊牵，珍惜这段缘”。</p>
+<p>[link https://www.uisdc.com/tencent-social-function-design-dov]</p>
+<p>[link https://www.uisdc.com/qq-hongbao]</p>
+<p>欢迎关注作者微信公众号：「腾讯ISUX」</p>
+<p><span class="img-zoom"><img alt="如何做好陌生人社交产品设计？来看腾讯高手总结的引力公式" class="alignnone size-full wp-image-388630" src="https://image.uisdc.com/wp-content/uploads/2020/09/uisdc-tx-20200913-93.jpg" alt="7000字超多神器！腾讯设计师也在用的高效设计工具" width="180" height="184" /></span></p>
