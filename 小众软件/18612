@@ -1,0 +1,19 @@
+➜Firefox 84 发布，原生支持 Apple M1 芯片，最后一个支持 Flash 的版本，Linux 极速渲染引擎
+https://www.appinn.com/firefox-84/	11797
+<p>Firefox 84 在<a href="https://www.mozilla.org/en-US/firefox/84.0/releasenotes/" class="rank-math-link" target="_blank" rel="noopener">今日</a>发布，带来了最后一个支持 Flash 的版本，原生支持 Apple M1 芯片，以及首次为 Linux、GNOME、X11 用户带来了极速渲染引擎 WebRender。@<a href="https://www.appinn.com/firefox-84/" class="rank-math-link">Appinn</a></p>
+<figure class="wp-block-image size-large"><img src="https://img3.appinn.net/images/202012/firefox-84.jpg!o" alt="Firefox 84 发布，原生支持 Apple M1 芯片，最后一个支持 Flash 的版本" title="Firefox 84 发布，原生支持 Apple M1 芯片，最后一个支持 Flash 的版本，Linux 极速渲染引擎 1"></figure>
+<p>先说个题外话，前天青小蛙把电脑里的 Chrome 删除了（之前只弃用并没删除），然后电脑风扇不转了，电池待机也增加了，系统也不卡顿了，效果立竿见影，差不多相当于换了台新电脑&#8230;</p>
+<h2>Firefox 84 支持 M1 芯片</h2>
+<p>Firefox 84 最重要的更新就是原生支持了 Apple M1 芯片，启动速度提升了 2.5 倍，不过需要完全退出并重新启动：</p>
+<ol><li>打开屏幕顶部的 Firefox 菜单。</li><li>选择 退出 Firefox。</li><li>重启 Firefox 之后，它就运行在新架构之上。</li></ol>
+<h3>确认运行在苹果 M1 芯片上</h3>
+<p>在地址栏上打卡 &#8220;about:support&#8221;，看到 Rosetta Translated 显示为 <strong>false</strong> 就没问题了</p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://img3.appinn.net/images/202012/2020-12-09-13-58-17-943359.jpg!o" alt="Firefox 84 发布，原生支持 Apple M1 芯片，最后一个支持 Flash 的版本，Linux 极速渲染引擎 1" title="Firefox 84 发布，原生支持 Apple M1 芯片，最后一个支持 Flash 的版本，Linux 极速渲染引擎 2"></figure></div>
+<h2>最后一个支持 Flash 的版本</h2>
+<p>Firefox 将在2020年底结束对 Adobe Flash 的支持，2017年<a href="https://www.appinn.com/adobe-flash-final-2020/" class="rank-math-link">就有宣布</a>。</p>
+<h3>换个浏览器能让我使用 Flash 吗？</h3>
+<p>不能，各大浏览器都会在年底结束对 Flash 的支持，Adobe 等浏览器厂商也将在 2020 年底结束支持 Flash。会有一些第三方的项目比如 <a href="https://www.appinn.com/ruffle-is-a-flash-player-emulator/" class="rank-math-link">Ruffle</a> 可以让旧的 Flash 安全的运行在浏览器中。</p>
+<h2>极速渲染引擎 WebRender 支持 Linux</h2>
+<p>WebRender 是 Firefox 的极速渲染引擎，可以更快的渲染网页（以每秒 60 帧（FPS）乃至更快的速度运行），在此之前，macOS Big Sur 与 Windows 设备都支持了，这次为 Linux、GNOME、X11 用户也带来了 WebRender。</p>
+<h2>最后</h2>
+<p>只需要打开 Firefox 的关于页面就可以自动更新。青小蛙最近一段时间感觉到，浏览器真的是在变快，不是以前那种需要更新硬件才会变快，而是在现有设备上，打开网页的速度变快了。当然像 Chrome 这样用力消耗系统资源的浏览器，换掉也罢。</p>
