@@ -121,23 +121,23 @@ https://www.uisdc.com/gamification-design	60219
 ➜如何量化用户体验？试试阿里这个新出的「两章一分法」！
 https://www.uisdc.com/two-chapters-and-one-point	61258
 <p>互联网下半场，所有的比拼都在产品体验；然而“体验”是一个非常抽象的词，我们怎么把一个抽象的概念拆解成可落地执行的策略，作用到企业中后台产品上，怎么衡量策略的有效性，这一直是我们团队面临的重大课题。</p>
-<h4><span style="color: #3366ff;"><span class="auto_menu">1.</p>
-<p>业界关于体验度量的经验</span></span></h4>
+<h4><span style="color: #3366ff;"><span class="auto_menu">1.</span></h4>
+<p>业界关于体验度量的经验</span></p>
 <p>目前关于“体验度量”比较成熟的理论模型当属 Google 的 HEART 模型：</p>
 <p>[link https://www.uisdc.com/google-heart-frame]</p>
-<p>另外还有 ISO 9126 软件质量模型和Davis 的 TAM 技术接受模型。后人在此基础上进行了很多实践，譬如 SAP 的用户体验问卷（UEQ）、Oracle 的客户体验价值公式（CX）等。公司内部各个 BU 也在不断的尝试和探索，譬如新零售技术团队的 TES 模型：</p>
+<p>另外还有 ISO 9126 软件质量模型和Davis 的 TAM 技术接受模型。后人在此基础上进行了很多实践，譬如 SAP 的用户体验问卷（UEQ）、Oracle 的客户体验价值公式（CX）等。公司内部各个 BU 也在不断的尝试和探索，譬如新零售技术团队的 UES 模型：</p>
 <p>[link https://www.uisdc.com/ali-metric-model]</p>
 <p>技术团队研发效能的 DEVA 模型，国际 UED 语音设计的 HII 模型，阿里云的 QoUE 模型。纵观这些模型和实践，大多是主观数据和客观数据的结合。</p>
 <p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400031" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-1.jpg" width="1600" height="900" /></span></p>
 <p>我们团队也曾提出过 TECH 、PTECH 模型，但由于模型的操作门槛较高、对埋点数据有不少要求，难以推广到各条业务线。痛定思痛后，我们决定重新回归业务，回归“体验度量”的初心，去繁从简，提高通用性。</p>
-<h4><span style="color: #3366ff;"><span class="auto_menu">2.</p>
-<p>企业中后台产品的特点</span></span></h4>
+<h4><span style="color: #3366ff;"><span class="auto_menu">2.</span></h4>
+<p>企业中后台产品的特点</span></p>
 <p>企业级中后台产品最大的特点是任务性质非常明确；用户使用这类产品通常是为了解决某个确定的问题点，期待用新的解决方式降本增效。</p>
 <p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400032" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-2.jpg" width="1600" height="900" /></span></p>
 <p>桌面研究也表明：可用性问题是软件行业的普遍问题：在英国，一般商用计算机用户只有30%-40%的有效生产率；软件缺陷中，48%是可用性问题。</p>
 <p>正是基于上述原因，我们尝试提出了“两章一分”的标准，分别从设计验收、可用性测试、易用度分数等三个维度对产品体验进行体检和把关。</p>
-<h4><span style="color: #3366ff;"><span class="auto_menu">3.</p>
-<p>什么是「两章一分」</span></span></h4>
+<h4><span style="color: #3366ff;"><span class="auto_menu">3.</span></h4>
+<p>什么是「两章一分」</span></p>
 <p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400033" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-3.jpg" width="1600" height="900" /></span></p>
 <p><span style="color: #3366ff;"><strong>1. 设计验收章</strong></span></p>
 <p>“设计验收章”主要有 3 个维度：产品还原度、任务流程跑通率、单页面加载时间。</p>
@@ -152,8 +152,8 @@ https://www.uisdc.com/two-chapters-and-one-point	61258
 <p>我们没有考虑将可用性测试的常用指标——操作时长作为参评维度，主要原因是企业中后台产品类型多、使用场景复杂程度各自不同：用语雀创建企业空间只需要 5 分钟；用云凤蝶搭建一个后台页面可能需要 60 分钟，用 sofa stack 创建并发布一个应用可能需要 2-3 个小时&#8230;&#8230;难以确定可以作为标准的具体操作时长。</p>
 <p><span style="color: #3366ff;"><strong>3. 易用度分数</strong></span></p>
 <p>“易用度分数”标准为 5.5 分。</p>
-<h4><span style="color: #3366ff;"><span class="auto_menu">4.</p>
-<p>「两章一分」的实践</span></span></h4>
+<h4><span style="color: #3366ff;"><span class="auto_menu">4.</span></h4>
+<p>「两章一分」的实践</span></p>
 <h5><span style="color: #3366ff;">1. 案例实践现状</span></h5>
 <p>截至 2020 年 9 月，已有 58 个 产品实践过“两章一分”系列方法，基本覆盖平台设计团队支撑的重点项目及 UV 超过 100 的产品。详细数据如下图：</p>
 <p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400036" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-6.jpg" width="1600" height="900" /></span></p>
@@ -210,8 +210,8 @@ https://www.uisdc.com/two-chapters-and-one-point	61258
 <h5><span style="color: #3366ff;">4. 实践总结</span></h5>
 <p>在实践过程中，我们发现企业中后台产品的典型场景大致可以分为 4 个场景；不同场景面临的设计项目有所偏重；不同设计项目在体验度量方面的切入点也有所不同。譬如：云凤蝶是一个典型的沉浸式画布页面，所有操作几乎都是通过编辑器属性面板来调整，那么如何来评估编辑器的效率呢？通过一系列实践和思考，我们提出可以通过“高频属性查找、配置的步骤数和时间”、“设置相同组件属性的耗时变化”等指标进行衡量。以下是我们根据不同典型场景、设计项目提出的体验度量切入点。</p>
 <p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400043" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-13.jpg" width="1600" height="944" /></span></p>
-<h4><span style="color: #3366ff;"><span class="auto_menu">5.</p>
-<p>「两章一分」的未来</span></span></h4>
+<h4><span style="color: #3366ff;"><span class="auto_menu">5.</span></h4>
+<p>「两章一分」的未来</span></p>
 <p>经过 S1 长达几个月的探索：我们制定了“两章一分”的标准；对 30+ 产品进行了易用度分数的测试，捕捉分数基线；提炼实操方法技巧，并赋能给各位设计师；联合设计师和业务方跑通近 20 个案例。不管是问题发现数量，还是设计师、业务方的主观反馈，都让我们坚定“两章一分”在企业中后台产品体验优化中是一个相对有效的模式。为此，S2 我们打算继续深化。</p>
 <p><span class="img-zoom"><img alt="如何量化用户体验？试试阿里这个新出的「两章一分法」！" class="alignnone size-full wp-image-400044" src="https://image.uisdc.com/wp-content/uploads/2020/12/uisdc-ty-20201210-14.jpg" width="1600" height="900" /></span></p>
 <ul>
