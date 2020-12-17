@@ -224,3 +224,77 @@ https://www.ifanr.com/1386072?utm_source=rss&utm_medium=rss&utm_campaign=	29953
 </div>
 </div>
 </div>
+➜苹果造芯，拯救 iPhone 信号 | 硬哲学
+https://www.ifanr.com/1386781?utm_source=rss&utm_medium=rss&utm_campaign=	35799
+<p><img class="aligncenter size-full wp-image-1386939" src="https://s3.ifanr.com/wp-content/uploads/2020/12/iPhone-12-Rouge-Logo-5G.jpg" alt="" width="1400" height="844" srcset="https://s3.ifanr.com/wp-content/uploads/2020/12/iPhone-12-Rouge-Logo-5G.jpg 1400w, https://s3.ifanr.com/wp-content/uploads/2020/12/iPhone-12-Rouge-Logo-5G-360x217.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2020/12/iPhone-12-Rouge-Logo-5G-768x463.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2020/12/iPhone-12-Rouge-Logo-5G-1024x617.jpg 1024w" sizes="(max-width: 1400px) 100vw, 1400px" /></p>
+<p>2017 年，时任英特尔 CEO 的布莱恩·科再奇（Brian Krzanich）在 Code 大会<a href="https://www.axios.com/intel-ceo-says-apple-would-be-foolish-not-to-consider-using-own-chips--2429230660.html">受访</a>时，曾对当时盛传的苹果自研 Mac 处理器发表了观点。</p>
+<p>他说：「身为一个工程师，如果他们不去做这方面的尝试，那一定是傻了。」言下之意也是认为，苹果迟早会自己做电脑芯片，如今他的预判也得到了印证。</p>
+<p>对苹果来说，芯片是构成硬件差异化最重要的后盾。不管是 iPhone、iPad，还是 AirPods 以及最新发售的 M1 芯 Mac，这些苹果设备上的诸多卖点，都是由不同系列的自研芯片所驱动的。</p>
+<p>然而，M1 芯之后，苹果的自研生意并未结束，他们也已经定好了下一个目标。</p>
+<p><img class="aligncenter size-full wp-image-1386928" src="https://s3.ifanr.com/wp-content/uploads/2020/12/iphone-12-5g.jpg" alt="" width="800" height="451" srcset="https://s3.ifanr.com/wp-content/uploads/2020/12/iphone-12-5g.jpg 800w, https://s3.ifanr.com/wp-content/uploads/2020/12/iphone-12-5g-360x203.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2020/12/iphone-12-5g-768x433.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>来自<a href="https://www.bloomberg.com/news/articles/2020-12-10/apple-starts-work-on-its-own-cellular-modem-chip-chief-says">彭博社</a>的报道称，最近苹果在内部启动了自研基带芯片的项目，以便在未来取代目前 iPhone 所搭载的高通基带。</p>
+<p>和我们熟知的手机处理器不同，基带芯片，关系到的是手机通话、联网速率等方面的体验，也直接决定了手机基础通信性能的好坏。</p>
+<p><img class="aligncenter size-full wp-image-1386933" src="https://s3.ifanr.com/wp-content/uploads/2020/12/x55.jpg" alt="" width="1486" height="1502" srcset="https://s3.ifanr.com/wp-content/uploads/2020/12/x55.jpg 1486w, https://s3.ifanr.com/wp-content/uploads/2020/12/x55-360x364.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2020/12/x55-768x776.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2020/12/x55-1013x1024.jpg 1013w" sizes="(max-width: 1486px) 100vw, 1486px" /></p>
+<div class="editor-image-source">
+<p style="text-align: center;">▲ iPhone 12 搭载的高通 SDR865 射频收发器（黄色区域），以及高通 X55 基带芯片（绿色区域）。图片来自：<a href="https://www.ifixit.com/Teardown/iPhone+12+and+12+Pro+Teardown/137669">iFixit</a></p>
+</div>
+<p>虽说苹果自研的芯片已经有不少了，但基本都不涉及基带这类偏通信的细分领域，此前 iPhone 所用的基带芯片，也一直都是由英特尔、高通等厂商提供。</p>
+<p>如今基带却成了苹果最头疼的问题之一。前几代 iPhone 便因为信号弱、联网稳定性差而饱受指责，当时很多人把矛头指向了英特尔基带上，也是从那时候起，几乎每一代 iPhone 都会被人吐槽信号差。</p>
+<p>今年，iPhone 12 重新用回了高通基带，但对苹果来说也只是「没有选择中的选择」。按照苹果的风格，走自研，开发出自己的基带，才是最彻底的解决手段。</p>
+<p>哪怕这并不是一件容易的事。</p>
+<h3>基带开发，九死一生</h3>
+<p>一颗基带芯片，主要看什么？平时我们拿 Speedtest 测个速，对比上下行速率，这是偏性能的部分，但频段、制式的完整性，以及支持力度，则关系到你的手机能否正常接收到信号。</p>
+<p><img class="aligncenter size-full wp-image-1386944" src="https://s3.ifanr.com/wp-content/uploads/2020/12/cls.jpg" alt="" width="2144" height="1690" srcset="https://s3.ifanr.com/wp-content/uploads/2020/12/cls.jpg 2144w, https://s3.ifanr.com/wp-content/uploads/2020/12/cls-360x284.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2020/12/cls-768x605.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2020/12/cls-1024x807.jpg 1024w" sizes="(max-width: 2144px) 100vw, 2144px" /></p>
+<p>如今，你随便点开一款手机的介绍页，都能在网络制式一栏看到好几排的频段号。虽然现在我们都是把 5G 挂在嘴边，但这并不意味着手机就能抛弃掉之前的 2/3/4G 网络，所以对于基带，它们也要对之前 GSM、WCDMA 和 LTE 分支下的频段做兼容。</p>
+<p>如何确保手机去到哪都能打通电话，接收到信号？最保险的做法，肯定就是尽可能多的支持各个地区，各个国家的频段组合，来实现无缝切换，甚至是全球漫游。数量多不说，而且一个都不能落下。</p>
+<p>我们经常听到的 5 模、7 模、17 频、19 频等术语，指的就是一台手机所支持的网络制式和频段数量，现在 5G 来了，模式和频段又大幅增加，还分 Sub-6 和毫米波，显然也给芯片设计带来更多挑战。</p>
+<p><img class="aligncenter size-full wp-image-1386946" src="https://s3.ifanr.com/wp-content/uploads/2020/12/qualcomm_snapdragon_865_5g_mobile_platform_-_chip_back1_0.jpg" alt="" width="2353" height="1559" srcset="https://s3.ifanr.com/wp-content/uploads/2020/12/qualcomm_snapdragon_865_5g_mobile_platform_-_chip_back1_0.jpg 2353w, https://s3.ifanr.com/wp-content/uploads/2020/12/qualcomm_snapdragon_865_5g_mobile_platform_-_chip_back1_0-360x239.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2020/12/qualcomm_snapdragon_865_5g_mobile_platform_-_chip_back1_0-768x509.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2020/12/qualcomm_snapdragon_865_5g_mobile_platform_-_chip_back1_0-1024x678.jpg 1024w" sizes="(max-width: 2353px) 100vw, 2353px" /></p>
+<p>这还没完，接下来是基站设备的问题。不同地区，不同国家的电信运营商，都会有不同的布网策略，一来基站设备的品牌不止一家，可能会涉及到爱立信、华为、诺基亚等多个品牌，这就需要解决基带与不同组网设备间的兼容性问题。</p>
+<p>二来，运营商的网络。全球一百多家的商用移动网络，可能都要芯片厂商亲自去测试，再根据数据慢慢调优，那又是庞大的人力物力投入。</p>
+<p><img class="aligncenter size-full wp-image-1386971" src="https://s3.ifanr.com/wp-content/uploads/2020/12/a6a8fde0-0d11-400d-9840-e2929dbfeaaa.jpg" alt="" width="1000" height="562" srcset="https://s3.ifanr.com/wp-content/uploads/2020/12/a6a8fde0-0d11-400d-9840-e2929dbfeaaa.jpg 1000w, https://s3.ifanr.com/wp-content/uploads/2020/12/a6a8fde0-0d11-400d-9840-e2929dbfeaaa-360x202.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2020/12/a6a8fde0-0d11-400d-9840-e2929dbfeaaa-768x432.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></p>
+<p>繁杂的通信标准，加上数量越来越多的频段，都间接增加了基带芯片的开发难度和复杂性。简而言之，它不止考验的是工艺制程或是后期量产，更看重长时间经验的积累。假如无法一次性拿出完整的解决方案，影响的终究是手机体验。</p>
+<p>这也是为什么，像华为、三星等自研基带的厂商，都是花了 8-10 年时间才跟上了第一梯队的进度，如今这些槛，苹果都要亲自迈过去。</p>
+<h3>掌握在少数人手里的专利</h3>
+<p>基带芯片涉及到的另一个问题，在于专利。</p>
+<p>这在 3G 时代的 CDMA 上就有过充分体现。当时，几乎每一家做基带芯片的厂商，都要向高通或威睿电通（之后卖给了英特尔）购买授权，因为大部分 CDMA 的相关技术专利都在它们手上，而没有 CDMA 支持，就无法实现手机的全网通，导致当年我们买手机，经常会看到移动版、联通版或是电信版等单网版本。</p>
+<p><img class="aligncenter size-full wp-image-1386973" src="https://s3.ifanr.com/wp-content/uploads/2020/12/guaolcom.jpg" alt="" width="2610" height="1000" srcset="https://s3.ifanr.com/wp-content/uploads/2020/12/guaolcom.jpg 2610w, https://s3.ifanr.com/wp-content/uploads/2020/12/guaolcom-360x138.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2020/12/guaolcom-768x294.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2020/12/guaolcom-1024x392.jpg 1024w" sizes="(max-width: 2610px) 100vw, 2610px" /></p>
+<div class="editor-image-source">
+<p style="text-align: center;">▲ 图片来自：方正证券-半导体行业专题报告</p>
+</div>
+<p>方正证券的一份报告也指出，尽管高通在 3G 时代进入 WCDMA 市场略晚，但它更注重专利的质量而非数量，所以在仅占据 WCDMA 27% 的专利份额下，就获得了约 55% 的 WCDMA 的市场；到了 4G，高通仅拥有 LTE 16% 的专利份额，却最多占据了 96% 的 LTE 市场。</p>
+<p>在这种强势的专利池面前，现在的手机厂商自然也都倾向于使用「高通芯」。过硬的芯片技术力肯定是一方面，但另一方面，买芯片也等于是获得高通的专利授权，进而获得进入手机行业的入场券。</p>
+<p>也就是说，如果苹果要自研基带，也很难绕过高通。</p>
+<p><img class="aligncenter size-full wp-image-1386974" src="https://s3.ifanr.com/wp-content/uploads/2020/12/6-formatOriginal.jpg" alt="" width="2048" height="1365" srcset="https://s3.ifanr.com/wp-content/uploads/2020/12/6-formatOriginal.jpg 2048w, https://s3.ifanr.com/wp-content/uploads/2020/12/6-formatOriginal-360x240.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2020/12/6-formatOriginal-768x512.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2020/12/6-formatOriginal-1024x683.jpg 1024w" sizes="(max-width: 2048px) 100vw, 2048px" /></p>
+<p>今天的基带芯片市场，已经完全是寡头垄断的市场。包括德仪、英伟达、Marvell 在内的多家半导体厂商，都迫于这种专利竞争的压力，或是盈利问题逐渐退出，要不就是被收购兼并。</p>
+<p>最后能留下来的，除了占据了半壁江山的高通，以及做中低端生意的联发科、紫光展锐外，就只有华为、三星这类有着雄厚财力的手机厂商了。</p>
+<p><img class="aligncenter size-full wp-image-1386977" src="https://s3.ifanr.com/wp-content/uploads/2020/12/Balong-5000.jpeg" alt="" width="2560" height="1706" srcset="https://s3.ifanr.com/wp-content/uploads/2020/12/Balong-5000.jpeg 2560w, https://s3.ifanr.com/wp-content/uploads/2020/12/Balong-5000-360x240.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2020/12/Balong-5000-768x512.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2020/12/Balong-5000-1024x682.jpeg 1024w" sizes="(max-width: 2560px) 100vw, 2560px" /></p>
+<div class="editor-image-source">
+<p style="text-align: center;">▲ 2019 年，华为发布了面向 5G 的巴龙 5000 基带</p>
+</div>
+<p>华为的基带芯片也是从 4G 时代开始发力的。它在 2010 年自研出第一颗 TD-LTE 基带芯片：巴龙 700，摆脱了对高通基带的依赖，加上华为对于 4/5G 专利的重视，做到现在也是全球数一数二的水准。</p>
+<p>但前文也说了，做 5G 基带不是只做 5G，也要做前几代兼容，所以只要部分 3/4G 专利还在高通手中，那华为就还是要向高通支付一定量的专利许可费，换成是小厂商，费用还会更高。</p>
+<p>至于苹果，当初它会选择英特尔，同样是不想受制于高通，所以才会在 iPhone 4G 末期采取双供应商策略，在一部分手机上换用英特尔基带，再发展到全部换用，并寄希望于在 5G 培养出一个坚实的盟友。</p>
+<p>但真正让苹果放弃英特尔基带的，也是 5G，我也只能说英特尔心有余而力不足了。</p>
+<p><img class="aligncenter size-full wp-image-1386978" src="https://s3.ifanr.com/wp-content/uploads/2020/12/intel-5g-b-e1563891604804.jpg" alt="" width="1200" height="675" srcset="https://s3.ifanr.com/wp-content/uploads/2020/12/intel-5g-b-e1563891604804.jpg 1200w, https://s3.ifanr.com/wp-content/uploads/2020/12/intel-5g-b-e1563891604804-360x203.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2020/12/intel-5g-b-e1563891604804-768x432.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2020/12/intel-5g-b-e1563891604804-1024x576.jpg 1024w" sizes="(max-width: 1200px) 100vw, 1200px" /></p>
+<p><a href="https://www.ifanr.com/1123071">2018 年就有报道称</a>，英特尔在 5G 基带研发上进展缓慢，无法满足苹果的功耗要求，最糟糕的结果，就是苹果无法按计划量产 5G 版 iPhone，这可是非常致命的问题。</p>
+<p>结果我们也看到了，在与高通争斗了 3 年后，苹果还是选择了妥协，与高通签订了 6 年的专利授权协议和芯片供应协议，同时支付了一大笔费用。因为现阶段无论是从性能，还是专利来看，高通基带都是苹果最好的选择，同时也是唯一选择。</p>
+<p>也只有这样，苹果才能让 iPhone 在 5G 初期，不落后于其它厂商，长期来看，想要脱离高通，自研仍然是最适合苹果的出路。</p>
+<h3>苹果的机会</h3>
+<p>苹果和高通重归于好，也让英特尔基带失去了它最大的客户，当天，英特尔就宣布退出 5G 基带芯片市场。到了 2019 年 7 月，英特尔将相关团队和资产整体打包，以 10 亿美元卖给了苹果。</p>
+<p><img class="aligncenter size-full wp-image-1386979" src="https://s3.ifanr.com/wp-content/uploads/2020/12/iphone3gteardown-20080712-1.jpg" alt="" width="800" height="515" srcset="https://s3.ifanr.com/wp-content/uploads/2020/12/iphone3gteardown-20080712-1.jpg 800w, https://s3.ifanr.com/wp-content/uploads/2020/12/iphone3gteardown-20080712-1-360x232.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2020/12/iphone3gteardown-20080712-1-768x494.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<div class="editor-image-source">
+<p style="text-align: center;">▲ 当年 iPhone 3G 的拆解图，可以看到英飞凌供应的基带芯片</p>
+</div>
+<p>事实上，英特尔这支团队也和苹果有着不少渊源。</p>
+<p>在最早几代 iPhone 上，苹果都是使用英飞凌公司的基带芯片，之后才转向性能更好的高通，而英飞凌失去了金主，则被英特尔斥资 14 亿美元收购。现如今，这支整合了英飞凌和英特尔两家公司的团队，又到了苹果手上，也不知道是缘分还是巧合。</p>
+<p>但也正因有了这支团队，苹果才能迅速切入到自研基带的研发中。经验丰富的人才，可以增加苹果的标准制定上的话语权，而超过 17000 项的基带专利，则有望让苹果跳过起点，直接进入到 5G 基带芯片的研发上，缩短上市的时间。</p>
+<p>另外，苹果的商业模式也不同于英特尔和高通。它自研芯片的目的，主要还是自用，而非外销，这其实和华为、三星的情况很类似，他们都是在借助自家庞大的硬件销量，抹平研发成本，再将盈利投入到下一代芯片研发中，形成良性循环。</p>
+<p><img class="aligncenter size-full wp-image-1386983" src="https://s3.ifanr.com/wp-content/uploads/2020/12/tsmc-wafer-image-100855531-large.jpg" alt="" width="1200" height="800" srcset="https://s3.ifanr.com/wp-content/uploads/2020/12/tsmc-wafer-image-100855531-large.jpg 1200w, https://s3.ifanr.com/wp-content/uploads/2020/12/tsmc-wafer-image-100855531-large-360x240.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2020/12/tsmc-wafer-image-100855531-large-768x512.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2020/12/tsmc-wafer-image-100855531-large-1024x683.jpg 1024w" sizes="(max-width: 1200px) 100vw, 1200px" /></p>
+<p>那么最关键的问题，苹果的基带什么能落地？假如按照彭博社所说，苹果内部的研发工作才刚起步，那我们可能还要等上 3-5 年才会看到结果，甚至说以苹果的风格，在自研基带没达到高通同代产品性能的情况下，苹果都不会贸然让 iPhone 用上它。</p>
+<p>我们不妨参考下苹果 M1 芯片的发展路径。最早传出苹果要做 Mac 芯片消息是在 2011 年，到了 2014 年，MacRumors 透露苹果正在测试基于 ARM 架构的电脑原型；到了 2017 年，彭博社的 Mark Gurman 则透露了较为准确的信息，他称苹果的 Mac 处理器项目已经开展了快一年时间了。</p>
+<p>保守点估计，从苹果提出要做 Mac 芯片的想法，到立项，再到芯片落地，至少花费了 4-6 年的时间，而基带芯片很可能也会遵循类似的时间线，保不准要等到 5G 末期，甚至是 6G 商用时，我们才有机会看到苹果自研基带的模样。</p>
+<p><img class="aligncenter size-full wp-image-1386985" src="https://s3.ifanr.com/wp-content/uploads/2020/12/152384-250340-250339_rc.jpg" alt="" width="832" height="468" srcset="https://s3.ifanr.com/wp-content/uploads/2020/12/152384-250340-250339_rc.jpg 832w, https://s3.ifanr.com/wp-content/uploads/2020/12/152384-250340-250339_rc-360x203.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2020/12/152384-250340-250339_rc-768x432.jpg 768w" sizes="(max-width: 832px) 100vw, 832px" /></p>
+<p>不过，自研芯片的回报向来都是十分积极的。不管是降成本，还是降功耗，最终都将让 iPhone 等一系列苹果硬件受益，如今 M1 芯片对新一代 Mac 功耗的改善，便是最好的例证，今后更是有极大的发展空间。</p>
+<p>一些业界分析师还认为，假如苹果能够完成在 SoC 中集成基带的任务，那么不仅是 iPhone，未来像 Apple Watch、AirPods 等各类小型化的可穿戴产品，也有机会迈向独立运作，实现直接联网，而非一直依赖 iPhone。</p>
+<p>自研芯有多重要，可见一斑，基带也一样。或许唯有时间才会告诉苹果，这笔投入到底划不划算。</p>
+<p>题图来源：<a href="https://www.google.com.hk/url?sa=i&amp;url=https%3A%2F%2Fgalusaustralis.com%2F2020%2F11%2F1043414%2Fthe-iphone-12-5g-will-wait-a-few-weeks-in-france%2F&amp;psig=AOvVaw25LfeOBWEGym4l5DzyX1nn&amp;ust=1608259588315000&amp;source=images&amp;cd=vfe&amp;ved=0CAMQjB1qFwoTCJDElZOB1O0CFQAAAAAdAAAAABAK">Galus Australis</a></p>

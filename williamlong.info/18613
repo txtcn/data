@@ -1,0 +1,12 @@
+➜Windows IIS日志文件分析神器
+https://www.williamlong.info/archives/6287.html	34397
+<p>　　Windows Server具有事件日志记录的功能，其IIS日志文件里记录了包括下列信息：谁访问了您的站点，访问者查看了哪些内容等等。通过定期检查这些日志文件，网站管理员可以检测到服务器或站点的哪些方面易受攻击或存在其他安全隐患。</p>
+<p>　　不过，目前的日志分析工具并不是很完善，有些功能并不具备，特别是针对特定需求的分析难以实现，这里就介绍一个日志分析神器，可以像使用SQL软件一样个性化分析日志。</p>
+<p>　　LogParser 是一个命令行工具，可以通过SQL语句对日志进行分析统计。可以定期对生产服务器的IIS日志进行分析，以便了解生产系统的使用情况以及访问量，及时发现系统存在的问题。不过LogParser是命令行格式，于是就有了图形化界面的Log Parser Studio日志分析软件。</p>
+<p>　　首先下载Log Parser Studio软件，<a href="https://gallery.technet.microsoft.com/office/Log-Parser-Studio-cd458765">下载地址</a>，下载完成后直接解压缩，运行文件夹里的文件LPS.exe程序。</p>
+<p>　　运行后会给出LogParser的下载地址，之后下载LogParser并安装到系统里，然后再次运行LPS.exe即可。</p>
+<p>　　运行后需要先指定下IIS日志文件路径，可以选择整个目录，也可选择单独文件。</p>
+<p>　　选定好了以后，点击&ldquo;Create a new query&rdquo;按钮，可以单独执行一个查询，查询语句和SQL的语法一样，非常方便。</p>
+<p>　　设置Log Type，对于网站来说，用的是IISW3CLOG。</p>
+<p>　　之后点击点击&ldquo;Execute active query&rdquo;按钮来执行查询，日志文件比较大的话，查询速度会慢，需要优化下SQL语句。</p>
+<p>　　总的来说，Log Parser Studio是一个强大的IIS图形分析工具，值得网站管理员使用。</p>
